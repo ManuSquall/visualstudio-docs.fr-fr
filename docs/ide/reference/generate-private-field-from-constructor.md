@@ -1,20 +1,21 @@
 ---
 title: Générer un champ privé à partir d’un constructeur
-ms.date: 02/19/2020
+ms.date: 03/10/2020
 ms.topic: reference
 author: mikadumont
 ms.author: midumont
 manager: jillfra
 dev_langs:
 - CSharp
+- VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 8ef4188216b669b30b7af9bd725ec432bcd0a774
-ms.sourcegitcommit: 3c105990656cd509062ce60e52e776c794f6305d
+ms.openlocfilehash: 4eb5dd39d0fb2d4cd9ba8ade0d0408d6e36a4854
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "77527660"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79094017"
 ---
 # <a name="generate-private-field-from-constructor"></a>Générer un champ privé à partir d’un constructeur
 
@@ -22,19 +23,21 @@ Cette refactorisation s’applique à :
 
 - C# 
 
-**Ce qui suit :** Génère un champ privé à partir d’un constructeur. 
+- Visual Basic
 
-Dans les **cas suivants :** Vous souhaitez ajouter rapidement un champ privé à partir d’un constructeur.
+**Quoi :** Générer un champ privé à partir d’un constructeur. 
 
-**Pourquoi :** L’écriture de champs privés peut être longue et répétitive. L’utilisation de cette refactorisation est rapide et rend le programme plus robuste.
+**Quand :** Vous souhaitez rapidement ajouter un champ privé à partir d’un constructeur.
+
+**Pourquoi:** Écrire des champs privés peut prendre beaucoup de temps et répétitif. L’utilisation de cette refactorisation est rapide et rend le programme plus robuste.
 
 ## <a name="how-to"></a>Procédures 
 
-1. Placez le curseur sur le nom du paramètre dans le constructeur.
+1. Placez votre curseur sur le nom du paramètre dans le constructeur.
 
-2. Appuyez sur **Ctrl**+ **.** pour afficher le menu **Actions rapides et refactorisations**.
+2. Appuyez **sur Ctrl**+**.** pour afficher le menu **Actions rapides et refactorisations**.
    
-3. Sélectionnez l’option permettant de **créer et d’initialiser le champ**.
+3. Sélectionnez l’option pour **créer et initialiser le champ**.
 
    ![Générer un champ privé à partir d’un constructeur](media/generate-private-field-from-constructor.png)
 

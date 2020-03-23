@@ -7,11 +7,11 @@ ms.date: 03/09/2020
 ms.topic: conceptual
 description: Découvrez comment tirer le meilleur parti de vos abonnements Visual Studio.
 ms.openlocfilehash: 97220a64c72d37d53eccbaba5c8e79697f2f25ab
-ms.sourcegitcommit: 514f0f7d1a61d292c7dbc80ec73a36bda960d6ce
+ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/10/2020
-ms.locfileid: "78968105"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "79303371"
 ---
 # <a name="managing-subscriptions"></a>Gestion des abonnements
 
@@ -51,7 +51,7 @@ Dans la page Avantages, l’abonnement actif est affiché en surbrillance dans l
 **Abonnements achetés via des programmes :** si vous obtenez votre abonnement via un programme, votre abonnement est lié à votre participation au programme. Vous pouvez obtenir plus d’informations auprès des contacts désignés pour les différents programmes.
 
 - [Imagine](https://imagine.microsoft.com/about)
-- [BizSpark](https://bizspark.microsoft.com/About/Offers)
+- [Bizspark](https://bizspark.microsoft.com/About/Offers)
 - [Microsoft Partner Network](https://partner.microsoft.com)
 - [Microsoft Certified Trainer](https://www.microsoft.com/learning/mct-certification.aspx)
 
@@ -70,7 +70,7 @@ Vous pouvez facilement modifier les informations de contact et les préférences
 
 1. Cliquez sur votre nom dans le coin supérieur droit du portail de l’abonné.
 2. Cliquez sur le bouton **Modifier le profil**.
-3. Sous l’onglet **À propos de**, vous pouvez modifier votre nom, votre adresse e-mail, votre pays/région, votre image de profil et vos préférences de contact. Sous l’onglet **Préférences**, vous pouvez sélectionner la langue par défaut, le modèle de date et d’heure, le fuseau horaire et le thème de l’interface utilisateur.
+3. Sous l’onglet **À propos de**, vous pouvez modifier votre nom, votre adresse e-mail, votre pays/région, votre image de profil et vos préférences de contact. Sur l’onglet Préférences, vous pouvez sélectionner votre langue, vos habitudes de date et d’heure **préférées,** votre fuseau horaire et votre thème d’interface utilisateur.
 4. Quand vous avez effectué toutes les modifications souhaitées, cliquez sur **Enregistrer**.
 5. Cliquez sur le bouton **Précédent** dans votre navigateur pour revenir à la page Avantages.
 
@@ -114,15 +114,15 @@ R : En fonction du canal d’achat, Microsoft conserve les données des clients
 > - Nous ne supprimons pas entièrement toutes vos données personnelles si vous avez des abonnements actifs.
 
 ## <a name="see-also"></a>Voir aussi
-- [Documentation de Visual Studio](https://docs.microsoft.com/visualstudio/)
+- [Documentation Visual Studio](https://docs.microsoft.com/visualstudio/)
 - [Documentation Azure DevOps](https://docs.microsoft.com/azure/devops/)
 - [Documentation Azure](https://docs.microsoft.com/azure/)
 - [Documentation Microsoft 365](https://docs.microsoft.com/microsoft-365/)
 
 ## <a name="next-steps"></a>Étapes suivantes
-Gérez-vous les abonnements de votre organisation ?  En savoir plus sur la gestion des abonnements Visual Studio :
-- [Affecter des abonnements individuels](assign-license.md)
+Gérez-vous les abonnements pour votre organisation ?  En savoir plus sur la gestion des abonnements Visual Studio :
+- [Attribuer des abonnements individuels](assign-license.md)
 - [Attribuer plusieurs abonnements](assign-license-bulk.md)
 - [Modifier des abonnements](edit-license.md)
-- [Supprimer des abonnements](delete-license.md)
+- [Supprimer les abonnements](delete-license.md)
 - [Déterminer l’utilisation maximale](maximum-usage.md)

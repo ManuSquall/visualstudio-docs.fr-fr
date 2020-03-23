@@ -16,10 +16,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: c7725108fd71f4292a8d3fa4dfe68ca29d3dcd90
-ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/26/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77634446"
 ---
 # <a name="common-msbuild-project-items"></a>Éléments communs des projets MSBuild
@@ -30,7 +30,7 @@ Dans MSBuild, un élément est une référence nommée à un ou plusieurs fichie
  Voici une liste de tous les éléments de projet communs.
 Voici une liste de tous les éléments de projet communs.
 
-### <a name="reference"></a>Référence
+### <a name="reference"></a>Informations de référence
 
  Représente une référence (managée) d'assembly dans le projet.
 
@@ -50,10 +50,10 @@ Voici une liste de tous les éléments de projet communs.
 |Nom des métadonnées de l’élément|Description|
 |---------------|-----------------|
 |Nom|Chaîne facultative. Nom complet du composant.|
-|Guid|Chaîne requise. GUID du composant sous la forme {12345678-1234-1234-1234-1234567891234}.|
-|VersionMajor|Chaîne requise. Partie principale du numéro de version du composant. Par exemple, « 5 » si le numéro de version complet est « 5.46 ».|
-|VersionMinor|Chaîne requise. Partie secondaire du numéro de version du composant. Par exemple, « 46 » si le numéro de version complet est « 5.46 ».|
-|LCID.|Chaîne facultative. LocaleID du composant.|
+|Guid|Chaîne obligatoire. GUID du composant sous la forme {12345678-1234-1234-1234-1234567891234}.|
+|VersionMajor|Chaîne obligatoire. Partie principale du numéro de version du composant. Par exemple, « 5 » si le numéro de version complet est « 5.46 ».|
+|VersionMinor|Chaîne obligatoire. Partie secondaire du numéro de version du composant. Par exemple, « 46 » si le numéro de version complet est « 5.46 ».|
+|LCID|Chaîne facultative. LocaleID du composant.|
 |WrapperTool|Chaîne facultative. Nom de l'outil wrapper utilisé sur le composant, par exemple, « tlbimp ».|
 |Isolé|Valeur booléenne facultative. Indique si le composant est un composant sans inscription.|
 
@@ -71,8 +71,8 @@ Voici une liste de tous les éléments de projet communs.
 
 |Nom des métadonnées de l’élément|Description|
 |---------------|-----------------|
-|Nom|Chaîne requise. Nom de base du fichier manifeste.|
-|HintPath|Chaîne requise. Chemin d'accès relatif du fichier manifeste.|
+|Nom|Chaîne obligatoire. Nom de base du fichier manifeste.|
+|HintPath|Chaîne obligatoire. Chemin d'accès relatif du fichier manifeste.|
 
 ### <a name="projectreference"></a>ProjectReference
 
@@ -85,17 +85,17 @@ Voici une liste de tous les éléments de projet communs.
 |Package|Chaîne facultative. Chemin d'accès du fichier projet référencé.|
 |ReferenceOutputAssembly|Valeur booléenne facultative. Si sa valeur est `false`, n’inclut pas la sortie du projet référencé comme [Référence](#reference) de ce projet, mais fait quand même en sorte que l’autre projet se génère avant celui-ci. La valeur par défaut est `true`.|
 
-### <a name="compile"></a>Compile
+### <a name="compile"></a>Compiler
 
  Représente les fichiers sources du compilateur.
 
 | Nom des métadonnées de l’élément | Description |
 |-----------------------| - |
 | DependentUpon | Chaîne facultative. Spécifie le fichier dont dépend ce fichier pour une compilation correcte. |
-| AutoGen | Valeur booléenne facultative. Indique si le fichier a été généré pour le projet par l’environnement de développement intégré (IDE) de Visual Studio. |
+| AutoGen | Valeur booléenne facultative. Indique si le fichier a été généré pour le projet par l’environnement de développement intégré visual Studio (IDE). |
 | Lien | Chaîne facultative. Chemin d’accès codifiable à afficher quand le fichier se trouve physiquement en dehors de l’influence du fichier projet. |
-| Visible | Valeur booléenne facultative. Indique si le fichier doit être affiché dans **Explorateur de solutions** dans Visual Studio. |
-| CopyToOutputDirectory | Chaîne facultative. Détermine si le fichier doit être copié dans le répertoire de sortie. Valeurs possibles :<br /><br /> 1. jamais<br />2. toujours<br />3. PreserveNewest |
+| Visible | Valeur booléenne facultative. Indique s’il y a à afficher le fichier dans **Solution Explorer** dans Visual Studio. |
+| CopyToOutputDirectory | Chaîne facultative. Détermine si le fichier doit être copié dans le répertoire de sortie. Les valeurs sont les suivantes :<br /><br /> 1. Jamais<br />2. Toujours<br />3. PreserveNewest |
 
 ### <a name="embeddedresource"></a>EmbeddedResource
 
@@ -104,13 +104,13 @@ Voici une liste de tous les éléments de projet communs.
 | Nom des métadonnées de l’élément | Description |
 |-----------------------| - |
 | DependentUpon | Chaîne facultative. Spécifie le fichier dont dépend ce fichier pour une compilation correcte. |
-| Generator | Chaîne requise. Nom du générateur de fichier exécuté sur cet élément. |
-| LastGenOutput | Chaîne requise. Nom du fichier créé par le générateur de fichier qui a été exécuté sur cet élément. |
-| CustomToolNamespace | Chaîne requise. Espace de noms dans lequel le générateur de fichier s'exécutant sur cet élément doit créer du code. |
+| Générateur | Chaîne obligatoire. Nom du générateur de fichier exécuté sur cet élément. |
+| LastGenOutput | Chaîne obligatoire. Nom du fichier créé par le générateur de fichier qui a été exécuté sur cet élément. |
+| CustomToolNamespace | Chaîne obligatoire. Espace de noms dans lequel le générateur de fichier s'exécutant sur cet élément doit créer du code. |
 | Lien | Chaîne facultative. Le chemin d’accès codifiable s’affiche si le fichier se trouve physiquement en dehors de l’influence du projet. |
-| Visible | Valeur booléenne facultative. Indique si le fichier doit être affiché dans **Explorateur de solutions** dans Visual Studio. |
-| CopyToOutputDirectory | Chaîne facultative. Détermine si le fichier doit être copié dans le répertoire de sortie. Valeurs possibles :<br /><br /> 1. jamais<br />2. toujours<br />3. PreserveNewest |
-| LogicalName | Chaîne requise. Nom logique de la ressource incorporée. |
+| Visible | Valeur booléenne facultative. Indique s’il y a à afficher le fichier dans **Solution Explorer** dans Visual Studio. |
+| CopyToOutputDirectory | Chaîne facultative. Détermine si le fichier doit être copié dans le répertoire de sortie. Les valeurs sont les suivantes :<br /><br /> 1. Jamais<br />2. Toujours<br />3. PreserveNewest |
+| LogicalName | Chaîne obligatoire. Nom logique de la ressource incorporée. |
 
 ### <a name="content"></a>Contenu
 
@@ -119,53 +119,53 @@ Voici une liste de tous les éléments de projet communs.
 | Nom des métadonnées de l’élément | Description |
 |-----------------------| - |
 | DependentUpon | Chaîne facultative. Spécifie le fichier dont dépend ce fichier pour une compilation correcte. |
-| Generator | Chaîne requise. Nom du générateur de fichier qui s'exécute sur cet élément. |
-| LastGenOutput | Chaîne requise. Nom du fichier créé par le générateur de fichier qui a été exécuté sur cet élément. |
-| CustomToolNamespace | Chaîne requise. Espace de noms dans lequel le générateur de fichier s'exécutant sur cet élément doit créer du code. |
+| Générateur | Chaîne obligatoire. Nom du générateur de fichier qui s'exécute sur cet élément. |
+| LastGenOutput | Chaîne obligatoire. Nom du fichier créé par le générateur de fichier qui a été exécuté sur cet élément. |
+| CustomToolNamespace | Chaîne obligatoire. Espace de noms dans lequel le générateur de fichier s'exécutant sur cet élément doit créer du code. |
 | Lien | Chaîne facultative. Chemin d'accès codifiable à afficher si le fichier se trouve physiquement en dehors de l'influence du projet. |
-| PublishState | Chaîne requise. État de publication du contenu, à savoir :<br /><br /> -   Default<br />-   Included<br />-   Excluded<br />-   DataFile<br />-   Prerequisite |
+| PublishState | Chaîne obligatoire. État de publication du contenu, à savoir :<br /><br /> -   Default<br />-   Included<br />-   Excluded<br />-   DataFile<br />-   Prerequisite |
 | IsAssembly | Valeur booléenne facultative. Indique si le fichier est un assembly. |
-| Visible | Valeur booléenne facultative. Indique si le fichier doit être affiché dans **Explorateur de solutions** dans Visual Studio. |
-| CopyToOutputDirectory | Chaîne facultative. Détermine si le fichier doit être copié dans le répertoire de sortie. Valeurs possibles :<br /><br /> 1. jamais<br />2. toujours<br />3. PreserveNewest |
+| Visible | Valeur booléenne facultative. Indique s’il y a à afficher le fichier dans **Solution Explorer** dans Visual Studio. |
+| CopyToOutputDirectory | Chaîne facultative. Détermine si le fichier doit être copié dans le répertoire de sortie. Les valeurs sont les suivantes :<br /><br /> 1. Jamais<br />2. Toujours<br />3. PreserveNewest |
 
-### <a name="none"></a>Aucune
+### <a name="none"></a>None
 
  Représente les fichiers qui ne doivent avoir aucun rôle dans le processus de génération.
 
 | Nom des métadonnées de l’élément | Description |
 |-----------------------| - |
 | DependentUpon | Chaîne facultative. Spécifie le fichier dont dépend ce fichier pour une compilation correcte. |
-| Generator | Chaîne requise. Nom du générateur de fichier exécuté sur cet élément. |
-| LastGenOutput | Chaîne requise. Nom du fichier créé par le générateur de fichier qui a été exécuté sur cet élément. |
-| CustomToolNamespace | Chaîne requise. Espace de noms dans lequel le générateur de fichier s'exécutant sur cet élément doit créer du code. |
+| Générateur | Chaîne obligatoire. Nom du générateur de fichier exécuté sur cet élément. |
+| LastGenOutput | Chaîne obligatoire. Nom du fichier créé par le générateur de fichier qui a été exécuté sur cet élément. |
+| CustomToolNamespace | Chaîne obligatoire. Espace de noms dans lequel le générateur de fichier s'exécutant sur cet élément doit créer du code. |
 | Lien | Chaîne facultative. Chemin d'accès codifiable à afficher si le fichier se trouve physiquement en dehors de l'influence du projet. |
-| Visible | Valeur booléenne facultative. Indique si le fichier doit être affiché dans **Explorateur de solutions** dans Visual Studio. |
-| CopyToOutputDirectory | Chaîne facultative. Détermine si le fichier doit être copié dans le répertoire de sortie. Valeurs possibles :<br /><br /> 1. jamais<br />2. toujours<br />3. PreserveNewest |
+| Visible | Valeur booléenne facultative. Indique s’il y a à afficher le fichier dans **Solution Explorer** dans Visual Studio. |
+| CopyToOutputDirectory | Chaîne facultative. Détermine si le fichier doit être copié dans le répertoire de sortie. Les valeurs sont les suivantes :<br /><br /> 1. Jamais<br />2. Toujours<br />3. PreserveNewest |
 
 ### <a name="assemblymetadata"></a>AssemblyMetadata
 
- Représente les attributs d’assembly à générer comme `[AssemblyMetadata(key, value)]`.
+ Représente les attributs d’assemblage à générer en tant que `[AssemblyMetadata(key, value)]`.
 
 | Nom des métadonnées de l’élément | Description |
 |-----------------------| - |
-| Inclut | Devient le premier paramètre (la clé) dans le constructeur d’attribut `AssemblyMetadataAttribute`. |
-| Valeur | Chaîne requise. Devient le deuxième paramètre (la valeur) dans le constructeur d’attribut `AssemblyMetadataAttribute`. |
+| Inclure | Devient le premier paramètre (la clé) dans le constructeur d’attributs. `AssemblyMetadataAttribute` |
+| Valeur | Chaîne obligatoire. Devient le deuxième paramètre (la valeur) dans le constructeur d’attributs. `AssemblyMetadataAttribute` |
 
 > [!NOTE]
-> Cela s’applique uniquement aux projets qui utilisent l’kit SDK .NET Core.
+> Cela s’applique aux projets utilisant le .NET Core SDK seulement.
 
 ### <a name="baseapplicationmanifest"></a>BaseApplicationManifest
 
- Représente le manifeste d’application de base pour la génération et contient des informations de sécurité du déploiement ClickOnce.
+ Représente le manifeste d’application de base pour la construction, et contient des informations de sécurité de déploiement ClickOnce.
 
 ### <a name="codeanalysisimport"></a>CodeAnalysisImport
 
  Représente le projet FxCop à importer.
 
-### <a name="import"></a>Import
+### <a name="import"></a>Importer
 
- Représente les assemblys dont les espaces de noms doivent être importés par le compilateur Visual Basic.
+ Représente les assemblages dont les espaces nom doivent être importés par le compilateur Visual Basic.
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Propriétés communes des projets MSBuild](../msbuild/common-msbuild-project-properties.md)
+- [Propriétés communes du projet MSBuild](../msbuild/common-msbuild-project-properties.md)

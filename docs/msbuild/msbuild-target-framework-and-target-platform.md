@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: c3cccb9bb87d03d1fb285babe2a02cf30cfb9ed9
-ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/26/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77633198"
 ---
 # <a name="msbuild-target-framework-and-target-platform"></a>Version cible de .NET Framework et plateforme cible MSBuild
@@ -30,13 +30,13 @@ Un projet peut être généré pour s’exécuter sur un *framework cible*, qui 
 
 - .NET Framework 2.0 (inclus dans Visual Studio 2005)
 
-- Le .NET Framework 3,0 (inclus dans Windows Vista)
+- Le cadre .NET 3.0 (inclus dans Windows Vista)
 
-- .NET Framework 3,5 (inclus dans Visual Studio 2008)
+- Le cadre .NET 3.5 (inclus dans Visual Studio 2008)
 
 - .NET Framework 4.5.2
 
-- .NET Framework 4,6 (inclus dans Visual Studio 2015)
+- Le cadre .NET 4.6 (inclus dans Visual Studio 2015)
 
 - .NET Framework 4.6.1
 
@@ -61,7 +61,7 @@ La version cible du .NET Framework est spécifiée dans la propriété `TargetFr
  Un *profil cible* est un sous-ensemble d’un framework cible. Par exemple, le profil Client .NET Framework 4 n'inclut pas de références aux assemblys MSBuild.
 
  > [!NOTE]
- > Les profils cibles s’appliquent uniquement aux [bibliothèques de classes portables](/dotnet/standard/cross-platform/cross-platform-development-with-the-portable-class-library).
+ > Les profils cibles ne s’appliquent qu’aux [bibliothèques de classe portables.](/dotnet/standard/cross-platform/cross-platform-development-with-the-portable-class-library)
 
  Le profil cible est spécifié dans la propriété `TargetFrameworkProfile` d'un fichier projet. Vous pouvez changer le profil cible en utilisant le contrôle de la version cible du .NET Framework dans les pages des propriétés du projet dans l'IDE.
 
@@ -101,4 +101,4 @@ Une *configuration cible* est un sous-ensemble d’une plateforme cible. Par exe
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Multiciblage](../msbuild/msbuild-multitargeting-overview.md)
+- [Multitargeting](../msbuild/msbuild-multitargeting-overview.md)

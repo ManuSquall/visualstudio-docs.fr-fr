@@ -12,11 +12,11 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: 7707d993ac5fb6f73060d0f862c828e67c833872
-ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "78409833"
+ms.lasthandoff: 03/20/2020
+ms.locfileid: "79302846"
 ---
 # <a name="tutorial-get-started-with-the-flask-web-framework-in-visual-studio"></a>Tutoriel : Bien démarrer avec le framework web Flask dans Visual Studio
 
@@ -50,19 +50,19 @@ Le développement Python n’est actuellement pas pris en charge dans Visual Stu
 
 ## <a name="step-1-1-create-a-visual-studio-project-and-solution"></a>Étape 1-1 : créer un projet et une solution Visual Studio
 
-1. Dans Visual Studio, sélectionnez **Fichier** > **Nouveau** > **Projet**, recherchez « Flask », puis sélectionnez le modèle**Projet web Flask vide**. (Le modèle se trouve également sous **Python** > **Web** dans la liste de gauche.)
+1. Dans Visual Studio, sélectionnez **File** > **New** > **Project**, recherchez "Flask", et sélectionnez le modèle De Projet Web **Blank Flask.** (Le modèle se trouve également sous **Python** > **Web** dans la liste de gauche.)
 
     ![Boîte de dialogue Nouveau projet dans Visual Studio pour le projet web Flask vide](media/flask/step01-new-blank-project.png)
 
 1. Dans les champs en bas de la boîte de dialogue, entrez les informations suivantes (comme indiqué dans le graphique précédent), puis sélectionnez **OK** :
 
-    - **Nom** : définissez le nom du projet Visual Studio sur **BasicProject**. Ce nom est également utilisé pour le projet Flask.
+    - **Nom**: définissez le nom du projet Visual Studio à **BasicProject**. Ce nom est également utilisé pour le projet Flask.
     - **Emplacement** : spécifiez un emplacement où créer la solution et le projet Visual Studio.
     - **Nom de la solution** : défini sur **LearningFlask**, qui convient pour la solution en tant que conteneur pour plusieurs projets de ce tutoriel.
     - **Créer un répertoire pour la solution** : laissez cette option activée (par défaut).
     - **Créez un référentiel Git** : sélectionnez cette option (qui est clairement par défaut), afin que Visual Studio crée un référentiel Git local lorsqu’il crée la solution. Si vous ne voyez pas cette option, exécutez le programme d’installation de Visual Studio et ajoutez **Git pour Windows** et **Extension GitHub pour Visual Studio** sous l’onglet **Composants individuels** sous **Outils de code**.
 
-1. Au bout d’un moment, Visual Studio affiche une boîte de dialogue indiquant **Des packages externes sont nécessaires pour ce projet** (voir plus bas). Cette boîte de dialogue s’affiche, car le modèle inclut un fichier *requirements.txt* référençant le dernier package Flask 1.x. (Sélectionnez **Afficher les packages requis** pour voir les dépendances exactes.)
+1. Après un moment, Visual Studio vous invite avec un dialogue disant que **ce projet nécessite des paquets externes** (voir ci-dessous). Cette boîte de dialogue s’affiche, car le modèle inclut un fichier *requirements.txt* référençant le dernier package Flask 1.x. (Sélectionnez **Afficher les packages requis** pour voir les dépendances exactes.)
 
     ![Invite indiquant que le projet requiert des packages externes](media/tutorials-common/step01-requirements-prompt-install-myself.png)
 
@@ -85,7 +85,7 @@ Le développement Python n’est actuellement pas pris en charge dans Visual Stu
 
     ![Fenêtre Team Explorer à la page Modifications](media/flask/step01-team-explorer-changes.png)
 
-1. Dans la barre d’état de Visual Studio, sélectionnez le bouton des validations n’ayant pas fait l’objet d’un Push (flèche haut avec **2**) pour ouvrir la page **Synchronisation** dans **Team Explorer**. Étant donné que vous avez uniquement un référentiel local, la page fournit des options simples pour publier le référentiel sur les différents référentiels à distance.
+1. Sur la barre d’état Visual Studio, sélectionnez le bouton commits non bouilli (la flèche vers le haut avec **2**) pour ouvrir la page **de synchronisation** dans **Team Explorer**. Étant donné que vous avez uniquement un référentiel local, la page fournit des options simples pour publier le référentiel sur les différents référentiels à distance.
 
     ![La fenêtre Team Explorer affiche les options de référentiels disponibles pour le contrôle de code source.](media/flask/step01-team-explorer.png)
 
@@ -100,7 +100,7 @@ Le développement Python n’est actuellement pas pris en charge dans Visual Stu
 1. Au cours de ce tutoriel, prenez l’habitude d’utiliser périodiquement les contrôles dans Visual Studio pour valider et envoyer des modifications. Ce tutoriel vous le rappellera aux endroits appropriés.
 
 > [!Tip]
-> Pour naviguer rapidement dans **Team Explorer**, sélectionnez l’en-tête (qui s’appelle **Modifications** ou **Push** dans les images ci-dessus) pour afficher un menu contextuel des pages disponibles.
+> Pour naviguer rapidement au sein **de Team Explorer**, sélectionnez l’en-tête (qui lit **Changements** ou **Push** dans les images ci-dessus) pour voir un menu pop-up des pages disponibles.
 
 ### <a name="question-what-are-some-advantages-of-using-source-control-from-the-beginning-of-a-project"></a>Question : Quels sont les avantages de l’utilisation du contrôle de code source dès le début d’un projet ?
 
@@ -120,7 +120,7 @@ Maintenant que vous avez configuré le contrôle de code source pour votre proje
 
     ![Ajouter la commande Environnement virtuel dans l’Explorateur de solutions](media/flask/step01-add-virtual-environment-command.png)
 
-1. Une boîte de dialogue **Ajouter un environnement virtuel** s’affiche avec un message indiquant **Nous avons trouvé un fichier requirements.txt.** Ce message indique que Visual Studio utilise ce fichier pour configurer l’environnement virtuel.
+1. Un **dialogue Add Virtual Environment** apparaît, avec un message disant que nous avons trouvé un fichier **requirements.txt.** Ce message indique que Visual Studio utilise ce fichier pour configurer l’environnement virtuel.
 
     ![Ajouter un environnement virtuel avec un message de requirements.txt](media/tutorials-common/step01-add-virtual-environment-found-requirements.png)
 
@@ -128,7 +128,7 @@ Maintenant que vous avez configuré le contrôle de code source pour votre proje
 
 1. Donnez votre consentement aux privilèges d’administrateur si vous y êtes invité, puis patientez quelques minutes pendant que Visual Studio télécharge et installe les packages, ce qui pour Flask et ses dépendances signifie décompresser environ un millier de fichiers dans plus de 100 sous-dossiers. Vous pouvez consulter la progression dans la fenêtre **Sortie** de Visual Studio. Pendant que vous patientez, réfléchissez aux sections de questions ci-dessous. Vous pouvez également voir une description des dépendances de Flask dans la page [Installation de Flask](https://flask.palletsprojects.com/en/1.0.x/installation/#installation) (flask.pcocoo.org).
 
-1. Sur les contrôles Git de Visual Studio (dans la barre d’état), sélectionnez l’indicateur de modifications (affichant **99&#42;** ), ce qui ouvre la page **Modifications** de **Team Explorer**.
+1. Sur les contrôles Git de Visual Studio (sur la barre d’état), sélectionnez l’indicateur de modifications (affichant **99&#42;**), ce qui ouvre la page **Modifications** de **Team Explorer**.
 
     La création de l’environnement virtuel a entraîné des centaines de modifications, mais il n’est pas nécessaire de les inclure dans le contrôle de code source, car vous (ou toute autre personne clonant le projet) pouvez toujours recréer l’environnement à partir de *requirements.txt*.
 
@@ -146,9 +146,9 @@ Réponse : Un environnement virtuel est un excellent moyen d’isoler les dépe
 
 ### <a name="question-how-do-i-remove-a-virtual-environment-thats-already-committed-to-source-control"></a>Question : Comment supprimer un environnement virtuel déjà validé par le contrôle de code source ?
 
-Réponse : tout d’abord, modifiez votre fichier *.gitignore* pour exclure le dossier : recherchez la section à la fin avec le commentaire `# Python Tools for Visual Studio (PTVS)` et ajoutez une nouvelle ligne pour le dossier d’environnement virtuel, par exemple `/BasicProject/env`. (Étant donné que Visual Studio n’affiche pas le fichier dans l’**Explorateur de solutions**, ouvrez-le directement avec la commande de menu **Fichier** > **Ouvrir** >  **Fichier**. Vous pouvez également ouvrir le fichier à partir de **Team Explorer** : dans la page **Paramètres**, sélectionnez **Paramètres du dépôt**, accédez à la section**Ignorer et fichiers d’attributs**, puis sélectionnez le lien **Modifier** situé en regard de **.gitignore**.)
+Réponse : tout d’abord, modifiez votre fichier *.gitignore* pour exclure le dossier : recherchez la section à la fin avec le commentaire `# Python Tools for Visual Studio (PTVS)` et ajoutez une nouvelle ligne pour le dossier d’environnement virtuel, par exemple `/BasicProject/env`. (Étant donné que Visual Studio n’affiche pas le fichier dans l’**Explorateur de solutions**, ouvrez-le directement avec la commande de menu **Fichier** > **Ouvrir** > ** Fichier**. Vous pouvez également ouvrir le fichier à partir de **Team Explorer** : dans la page **Paramètres**, sélectionnez **Paramètres du dépôt**, accédez à la section**Ignorer et fichiers d’attributs**, puis sélectionnez le lien **Modifier** situé en regard de **.gitignore**.)
 
-Ensuite, ouvrez une fenêtre de commande, accédez au dossier, par exemple *BasicProject*, qui contient le dossier d’environnement virtuel, par exemple *env* et exécutez `git rm -r env`. Validez ensuite ces modifications depuis la ligne de commande (`git commit -m 'Remove venv'`), ou depuis la page **Modifications** de **Team Explorer**.
+Ensuite, ouvrez une fenêtre Commande, accédez au dossier, par exemple *BasicProject*, qui contient le dossier d’environnement virtuel, par exemple *env*, et exécutez `git rm -r env`. Validez ensuite ces modifications depuis la ligne de commande (`git commit -m 'Remove venv'`), ou depuis la page **Modifications** de **Team Explorer**.
 
 ## <a name="step-1-4-examine-the-boilerplate-code"></a>Étape 1-4 : examiner le code réutilisable
 
@@ -228,7 +228,7 @@ Réponse : Oui. Développez le nœud **Environnements Python**, cliquez avec le
 
 ## <a name="step-1-5-run-the-project"></a>Étape 1-5 : Exécuter le projet
 
-1. Dans Visual Studio, sélectionnez **Déboguer** > **Démarrer le débogage** (**F5**) ou utilisez le bouton **Serveur Web** dans la barre d’outils (le navigateur affiché peut varier) :
+1. Dans Visual Studio, sélectionnez **Debug** > **Start Debugging** (**F5**) ou utilisez le bouton **Web Server** sur la barre d’outils (le navigateur que vous voyez peut varier):
 
     ![Exécuter le bouton de la barre d’outils du serveur Web dans Visual Studio](media/tutorials-common/run-web-server-toolbar-button.png)
 
@@ -238,11 +238,11 @@ Réponse : Oui. Développez le nœud **Environnements Python**, cliquez avec le
 
     ![Vue par défaut du projet Flask](media/flask/step01-first-run-success.png)
 
-1. Lorsque vous avez terminé, arrêtez le serveur en fermant la fenêtre de console, ou à l’aide de la commande **Déboguer** > **Arrêter le débogage** dans Visual Studio.
+1. Lorsque vous avez terminé, arrêtez le serveur en fermant la fenêtre de la console, ou en utilisant la commande **Debug** > **Stop Debugging** dans Visual Studio.
 
 ### <a name="question-whats-the-difference-between-using-the-debug-menu-commands-and-the-server-commands-on-the-projects-python-submenu"></a>Question : Quelle est la différence entre les commandes de menu Déboguer et les commandes de serveur dans le sous-menu Python du projet ?
 
-Réponse : en plus des commandes de menu **Déboguer** et des boutons de barre d’outils, vous pouvez également lancer le serveur avec les commandes **Python** > **Exécuter le serveur** ou **Python** > **Exécuter le serveur de débogage** dans le menu contextuel du projet. Les deux commandes ouvrent une fenêtre de console dans laquelle vous voyez l’URL locale (localhost:port) du serveur en cours d’exécution. Toutefois, vous devez ouvrir manuellement un navigateur avec cette URL, et l’exécution du serveur de débogage n’entraîne pas le démarrage automatique du débogueur Visual Studio. Vous pourrez attacher un débogueur au processus en cours d’exécution plus tard si vous le souhaitez, avec la commande **Déboguer** > **Attacher au processus**.
+Réponse : en plus des commandes de menu **Déboguer** et des boutons de barre d’outils, vous pouvez également lancer le serveur avec les commandes **Python** > **Exécuter le serveur** ou **Python** > **Exécuter le serveur de débogage** dans le menu contextuel du projet. Les deux commandes ouvrent une fenêtre de console dans laquelle vous voyez l’URL locale (localhost:port) du serveur en cours d’exécution. Toutefois, vous devez ouvrir manuellement un navigateur avec cette URL, et l’exécution du serveur de débogage n’entraîne pas le démarrage automatique du débogueur Visual Studio. Vous pouvez attacher un débbugger au processus d’exécution plus tard, si vous le souhaitez, en utilisant la commande **Debug** > **Attach to Process.**
 
 ## <a name="next-steps"></a>Étapes suivantes
 

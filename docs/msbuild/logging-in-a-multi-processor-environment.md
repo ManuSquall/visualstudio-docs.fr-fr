@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 0c332fb67e96bdfea0059de11441da7c32871633
-ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/26/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77633562"
 ---
 # <a name="logging-in-a-multi-processor-environment"></a>Journalisation dans un environnement multiprocesseur
@@ -30,7 +30,7 @@ Vous pouvez améliorer l’efficacité de la journalisation en créant un journa
 
 ### <a name="central-logging-model"></a>Modèle de journalisation centralisé
 
-Pour les générations multiprocesseurs, MSBuild utilise un « modèle de journalisation centralisé ». Dans le modèle de journalisation centralisé, une instance de *MSBuild.exe* agit comme processus de génération principal, ou « nœud central ». Les instances secondaires de *MSBuild.exe*, ou « nœuds secondaires », sont attachées au nœud central. Tous les journaux ILogger attachés au nœud central sont appelés « journaux centraux » et les journaux attachés à des nœuds secondaires sont appelés « journaux secondaires ».
+Pour les générations multiprocesseurs, MSBuild utilise un « modèle de journalisation centralisé ». Dans le modèle central d’exploitation forestière, un exemple de *MSBuild.exe* agit comme le processus de construction primaire, ou « nœud central ». Des cas secondaires de *MSBuild.exe*, ou « nœuds secondaires », sont attachés au nœud central. Tous les journaux ILogger attachés au nœud central sont appelés « journaux centraux » et les journaux attachés à des nœuds secondaires sont appelés « journaux secondaires ».
 
 Quand une génération se produit, les journaux secondaires routent leur trafic vers les journaux centraux. Comme les événements proviennent de plusieurs nœuds secondaires, les données arrivent au nœud central simultanément mais entrelacés. Pour résoudre les références d’événement à projet et d’événement à cible, les arguments des événements incluent des informations de contexte d’événement de génération supplémentaires.
 
@@ -77,5 +77,5 @@ Un astérisque (*) sépare les deux noms de journaux dans le commutateur `-dl`.
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Enregistreurs d’événements de génération](../msbuild/build-loggers.md)
+- [Construire des bûcherons](../msbuild/build-loggers.md)
 - [Créer des journaux de transfert](../msbuild/creating-forwarding-loggers.md)

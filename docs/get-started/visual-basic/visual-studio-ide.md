@@ -12,11 +12,11 @@ dev_langs:
 ms.workload:
 - dotnet
 ms.openlocfilehash: 5cf5f8d3660abcf941eb5cc429b8f190459d9c56
-ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "78410479"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79301978"
 ---
 # <a name="welcome-to-the-visual-studio-ide--visual-basic"></a>Bienvenue dans l’IDE Visual Studio | Visual Basic
 
@@ -30,13 +30,13 @@ ms.locfileid: "78410479"
 
 ::: moniker range=">=vs-2019"
 
-[![IDE de Visual Studio 2019](media/vs-2019/ide-overview.png)](media/vs-2019/ide-overview.png#lightbox)
+[![Le Studio Visuel 2019 IDE](media/vs-2019/ide-overview.png)](media/vs-2019/ide-overview.png#lightbox)
 
 ::: moniker-end
 
 Cette image montre Visual Studio avec un projet ouvert et plusieurs fenêtres Outil principales dont vous êtes susceptible de vous servir :
 
-- L’[Explorateur de solutions](../../ide/solutions-and-projects-in-visual-studio.md) (en haut à droite) vous permet d’afficher, de parcourir et de gérer vos fichiers de code. L’**Explorateur de solutions** peut vous aider à organiser votre code en regroupant les fichiers dans des [projets et des solutions](tutorial-projects-solutions.md).
+- L’[Explorateur de solutions](../../ide/solutions-and-projects-in-visual-studio.md) (en haut à droite) vous permet d’afficher, de parcourir et de gérer vos fichiers de code. **Solution Explorer** peut vous aider à organiser votre code en groupant les fichiers en [solutions et projets](tutorial-projects-solutions.md).
 
 - La [fenêtre de l’éditeur](../../ide/writing-code-in-the-code-and-text-editor.md) (au centre), où vous passerez sans doute la plupart de votre temps, affiche le contenu des fichiers. C’est là que vous pouvez modifier le code ou concevoir une interface utilisateur telle qu’une fenêtre avec des boutons et des zones de texte.
 
@@ -107,7 +107,7 @@ Voici quelques-unes des fonctionnalités populaires de Visual Studio qui vous ai
    La maîtrise de Visual Studio peut sembler insurmontable parfois, avec autant de menus, d’options et de propriétés. La zone de recherche est un excellent moyen de trouver rapidement ce dont vous avez besoin dans Visual Studio. Quand vous commencez à taper le nom d’un élément que vous recherchez, Visual Studio affiche des résultats qui vous mènent exactement où vous devez accéder. Pour ajouter des fonctionnalités à Visual Studio, par exemple la prise en charge d’un langage de programmation supplémentaire, la zone de recherche fournit des résultats qui ouvrent Visual Studio Installer afin d’installer une charge de travail ou un composant spécifique.
 
    > [!TIP]
-   > Appuyez sur **Ctrl**+**Q** comme raccourci vers la zone de recherche.
+   > Appuyez sur **Ctrl**+**Q** comme un raccourci vers la boîte de recherche.
 
    ::: moniker range="vs-2017"
 
@@ -127,7 +127,7 @@ Voici quelques-unes des fonctionnalités populaires de Visual Studio qui vous ai
 
    Modifiez et déboguez de manière collaborative avec d’autres utilisateurs en temps réel, quel que soit le type de votre application ou le langage de programmation. Vous pouvez partager instantanément et en toute sécurité votre projet puis partager au besoin des sessions de débogage, des instances de terminal, des applications web localhost, des appels vocaux, etc.
 
-- [Hiérarchie d’appels](../../ide/reference/call-hierarchy.md)
+- [Hiérarchie des appels](../../ide/reference/call-hierarchy.md)
 
    La fenêtre **Hiérarchie d’appels** affiche les méthodes qui appellent une méthode sélectionnée. Ces informations peuvent être utiles quand vous envisagez de changer ou de supprimer la méthode, ou quand vous essayez de repérer un bogue.
 
@@ -175,7 +175,7 @@ Voici quelques-unes des fonctionnalités populaires de Visual Studio qui vous ai
 
    ::: moniker-end
 
-- [Aperçu de définition](../../ide/how-to-view-and-edit-code-by-using-peek-definition-alt-plus-f12.md)
+- [Définition de Peek](../../ide/how-to-view-and-edit-code-by-using-peek-definition-alt-plus-f12.md)
 
    La fenêtre **Aperçu de définition** montre la définition d’une méthode ou d’un type sans réellement ouvrir un fichier distinct.
 
@@ -235,9 +235,9 @@ Pour remplacer le thème par **Sombre** :
 
 ::: moniker-end
 
-2. Dans la barre de menus, choisissez **Outils** > **Options** pour ouvrir la boîte de dialogue **Options**.
+2. Sur la barre de menu, choisissez **des options d’outils** > **Options** pour ouvrir le dialogue **Options.**
 
-3. Dans la page d’options **Environnement** > **Général**, remplacez la sélection du **Thème de couleur** par **Sombre**, puis choisissez **OK**.
+3. Sur la page **d’options Environnement** > **Général,** changer la sélection **de thème couleur** à **Dark**, puis choisir **OK**.
 
    ![Basculer vers le thème de couleur sombre dans Visual Studio](media/change-color-theme.png)
 
@@ -259,7 +259,7 @@ Pour remplacer le thème par **Sombre** :
 
 Ensuite, nous allons configurer Visual Studio pour utiliser les paramètres d’environnement adaptés aux développeurs Visual Basic.
 
-1. Dans la barre de menus, choisissez **Outils** > **Importation et exportation de paramètres**.
+1. Sur la barre de menu, choisissez **Outils** > **Import and Export Settings**.
 
 2. Dans l’Assistant **Importation et exportation de paramètres**, sélectionnez **Réinitialiser tous les paramètres** dans la première page, puis **Suivant**.
 
@@ -277,13 +277,13 @@ Nous allons aller plus loin en créant un programme simple.
 
 ::: moniker range="vs-2017"
 
-1. Dans la barre de menus de Visual Studio, choisissez **fichier** > **nouveau projet**.
+1. Dans la barre de menus de Visual Studio, choisissez **Fichier** > **Nouveau Projet**.
 
    ![Fichier > Nouveau projet sur la barre de menus](media/file-new-project-menu.png)
 
-   La boîte de dialogue **Nouveau projet** affiche plusieurs *modèles* de projet. Un modèle contient les fichiers et les paramètres de base nécessaires pour un type de projet donné.
+   La boîte de dialogue **du nouveau projet** montre plusieurs modèles de *projet.* Un modèle contient les fichiers et les paramètres de base nécessaires pour un type de projet donné.
 
-1. Choisissez la catégorie **.NET Core** sous **Visual Basic**, puis choisissez le modèle **Application console (.NET Core)** . Dans la zone de texte **Nom**, tapez **HelloWorld**, puis cliquez sur le bouton **OK**.
+1. Choisissez la catégorie **.NET Core** sous **Visual Basic**, puis choisissez le modèle **Application console (.NET Core)**. Dans la zone de texte **Nom**, tapez **HelloWorld**, puis cliquez sur le bouton **OK**.
 
    ![Modèle d’application .NET Core](media/overview-npd.png)
 
@@ -294,7 +294,7 @@ Nous allons aller plus loin en créant un programme simple.
 
    Quelque chose qui ressemble à ce qui suit doit s’afficher :
 
-   ![IDE de Visual Studio](media/overview-ide-console-app.png)
+   ![IDE Visual Studio](media/overview-ide-console-app.png)
 
    Le code Visual Basic de l’application apparaît dans la fenêtre d’éditeur, qui occupe la majeure partie de l’espace. Notez que le texte est colorisé automatiquement pour indiquer les différentes parties du code, comme les mots clés et les types. En outre, les petites lignes en pointillés verticales du code indiquent les accolades correspondant entre elles et les numéros de ligne vous aident à localiser le code. Vous pouvez cliquer sur les signes moins encadrés pour réduire ou développer des blocs de code. Cette fonctionnalité de surlignage de code vous permet de masquer le code dont vous n’avez pas besoin, ce qui contribue à réduire l’encombrement à l’écran. Vos fichiers projet sont répertoriés sur le côté droit dans une fenêtre appelée **Explorateur de solutions**.
 
@@ -306,7 +306,7 @@ Nous allons aller plus loin en créant un programme simple.
 
    ![Menu Déboguer > Démarrer sans débogage](../media/overview-start-without-debugging.png)
 
-   Visual Studio génère l’application, et une fenêtre de console s’ouvre avec le message **Hello World!** . Maintenant, votre application fonctionne !
+   Visual Studio génère l’application, et une fenêtre de console s’ouvre avec le message **Hello World!**. Maintenant, votre application fonctionne !
 
    ![Fenêtre de console](../media/overview-console-window.png)
 
@@ -327,7 +327,7 @@ Nous allons aller plus loin en créant un programme simple.
    Console.WriteLine("Hello " + name + "!")
    ```
 
-1. Réexécutez l’application en appuyant sur **Ctrl**+**F5**.
+1. Exécutez l’application à nouveau en appuyant sur **Ctrl**+**F5**.
 
    Visual Studio régénère l’application et une fenêtre de console s’ouvre et vous demande votre nom.
 
@@ -341,7 +341,7 @@ Nous allons aller plus loin en créant un programme simple.
 
 ::: moniker range=">=vs-2019"
 
-1. Dans la barre de menus de Visual Studio, choisissez **fichier** > **nouveau projet**.
+1. Dans la barre de menus de Visual Studio, choisissez **Fichier** > **Nouveau Projet**.
 
    ![Fichier > Nouveau projet sur la barre de menus](media/vs-2019/file-new-project.png)
 
@@ -349,7 +349,7 @@ Nous allons aller plus loin en créant un programme simple.
 
 1. Pour rechercher le modèle souhaité, tapez ou entrez **console .net core** dans la zone de recherche. La liste des modèles disponibles est automatiquement filtrée en fonction des mots clés que vous avez entrés. Vous pouvez filtrer davantage les résultats de modèles en choisissant **Visual Basic** dans la liste déroulante **Langage**.
 
-1. Sélectionnez le modèle **Application console (.NET Core)** , puis choisissez **Suivant**.
+1. Sélectionnez le modèle **Application console (.NET Core)**, puis choisissez **Suivant**.
 
    ![Création d'un projet dans Visual Studio](media/vs-2019/create-new-project.png)
 
@@ -361,7 +361,7 @@ Nous allons aller plus loin en créant un programme simple.
 
    Quelque chose qui ressemble à ce qui suit doit s’afficher :
 
-   ![IDE de Visual Studio](media/overview-ide-console-app.png)
+   ![IDE Visual Studio](media/overview-ide-console-app.png)
 
    Le code Visual Basic de l’application apparaît dans la fenêtre d’éditeur, qui occupe la majeure partie de l’espace. Notez que le texte est colorisé automatiquement pour indiquer les différentes parties du code, comme les mots clés et les types. En outre, les petites lignes en pointillés verticales du code indiquent les accolades correspondant entre elles et les numéros de ligne vous aident à localiser le code. Vous pouvez cliquer sur les signes moins encadrés pour réduire ou développer des blocs de code. Cette fonctionnalité de surlignage de code vous permet de masquer le code dont vous n’avez pas besoin, ce qui contribue à réduire l’encombrement à l’écran. Vos fichiers projet sont répertoriés sur le côté droit dans une fenêtre appelée **Explorateur de solutions**.
 
@@ -373,7 +373,7 @@ Nous allons aller plus loin en créant un programme simple.
 
    ![Menu Déboguer > Démarrer sans débogage](media/vs-2019/start-without-debugging.png)
 
-   Visual Studio génère l’application, et une fenêtre de console s’ouvre avec le message **Hello World!** . Maintenant, votre application fonctionne !
+   Visual Studio génère l’application, et une fenêtre de console s’ouvre avec le message **Hello World!**. Maintenant, votre application fonctionne !
 
    ![Fenêtre de console](../media/vs-2019/overview-console-window.png)
 
@@ -394,7 +394,7 @@ Nous allons aller plus loin en créant un programme simple.
    Console.WriteLine("Hello " + name + "!")
    ```
 
-1. Réexécutez l’application en appuyant sur **Ctrl**+**F5**.
+1. Exécutez l’application à nouveau en appuyant sur **Ctrl**+**F5**.
 
    Visual Studio régénère l’application et une fenêtre de console s’ouvre et vous demande votre nom.
 
@@ -418,7 +418,7 @@ Tout d’abord, renommons la variable `name` :
 
    Notez qu’une zone grisée apparaît autour de la variable et qu’une ampoule s’affiche dans la marge.
 
-3. Sélectionnez l’icône d’ampoule pour afficher les [Actions rapides](../../ide/quick-actions.md) disponibles. Sélectionnez **Renommer « name » en « username »** .
+3. Sélectionnez l’icône d’ampoule pour afficher les [Actions rapides](../../ide/quick-actions.md) disponibles. Sélectionnez **Renommer « name » en « username »**.
 
    ![Renommer une action dans Visual Studio](media/rename-quick-action.png)
 
@@ -459,7 +459,7 @@ Tout d’abord, renommons la variable `name` :
 
 ::: moniker range="vs-2017"
 
-10. Réexécutez le programme en appuyant sur **CTRL**+**F5**. La sortie ressemble à ceci :
+10. Exécuter le programme à nouveau en appuyant sur **Ctrl**+**F5**. La sortie ressemble à ceci :
 
     ![Fenêtre de console avec la sortie du programme](../media/overview-console-final.png)
 
@@ -467,7 +467,7 @@ Tout d’abord, renommons la variable `name` :
 
 ::: moniker range=">=vs-2019"
 
-10. Réexécutez le programme en appuyant sur **CTRL**+**F5**. La sortie ressemble à ceci :
+10. Exécuter le programme à nouveau en appuyant sur **Ctrl**+**F5**. La sortie ressemble à ceci :
 
     ![Fenêtre de console avec la sortie du programme](../media/vs-2019/overview-console-final.png)
 
@@ -485,7 +485,7 @@ Définissons un point d’arrêt pour voir la valeur de la variable `username` q
 
    ![Point d’arrêt sur une ligne de code dans Visual Studio](media/breakpoint.png)
 
-1. Démarrez le débogage en sélectionnant **Déboguer** > **Démarrer le débogage** ou en appuyant sur **F5**.
+1. Commencez à débogage en sélectionnant **Debug** > **Start Debugging** ou en appuyant sur **F5**.
 
 1. Quand la fenêtre de console apparaît et vous demande votre nom, tapez-le, puis appuyez sur **Entrée**.
 
@@ -499,7 +499,7 @@ Définissons un point d’arrêt pour voir la valeur de la variable `username` q
 
 Pour en savoir plus sur le processus de débogage de Visual Studio, consultez [Visite guidée des fonctionnalités de débogage](../../debugger/debugger-feature-tour.md).
 
-## <a name="next-steps"></a>Étapes suivantes :
+## <a name="next-steps"></a>Étapes suivantes
 
 Explorez davantage Visual Studio en suivant l’un de ces articles d’introduction :
 

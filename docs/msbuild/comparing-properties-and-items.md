@@ -11,19 +11,19 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 6a86365ffe839b45fcd09862040fb88f0d4148bc
-ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/26/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77634407"
 ---
 # <a name="compare-properties-and-items"></a>Comparer des propriétés et des éléments
 
 Les propriétés et les éléments MSBuild permettent de transmettre des informations aux tâches, d’évaluer des conditions et de stocker les valeurs qui peuvent être référencées dans le fichier projet.
 
-- Les propriétés sont des paires nom-valeur. Pour plus d’informations, consultez [Propriétés MSBuild](../msbuild/msbuild-properties.md).
+- Les propriétés sont des paires nom-valeur. Pour plus d’informations, voir [propriétés MSBuild](../msbuild/msbuild-properties.md).
 
-- Les éléments sont des objets qui représentent généralement des fichiers. Des collections de métadonnées peuvent être associées aux objets d’élément. Les métadonnées sont des paires nom-valeur. Pour plus d’informations, consultez l’article [Éléments](../msbuild/msbuild-items.md).
+- Les éléments sont des objets qui représentent généralement des fichiers. Des collections de métadonnées peuvent être associées aux objets d’élément. Les métadonnées sont des paires nom-valeur. Pour plus d’informations, consultez l’article [Éléments MSBuild](../msbuild/msbuild-items.md).
 
 ## <a name="scalars-and-vectors"></a>Scalaires et vecteurs
 

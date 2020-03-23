@@ -10,10 +10,10 @@ author: ghogen
 ms.author: ghogen
 manager: jillfra
 ms.openlocfilehash: 9899b7367e6ae9255755ae04fe06d8c8733043ae
-ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/26/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77633822"
 ---
 # <a name="how-to-ignore-errors-in-tasks"></a>Guide pratique pour ignorer des erreurs dans des tâches
@@ -26,7 +26,7 @@ L’attribut `ContinueOnError` de l’élément `Task` contrôle si une généra
 
 L’attribut `ContinueOnError` peut contenir l’une des valeurs suivantes :
 
-- **WarnAndContinue** ou **true**. En cas d’échec d’une tâche, l’exécution des tâches suivantes de l’élément [Target](../msbuild/target-element-msbuild.md) et de la génération se poursuit, et toutes les erreurs de la tâche sont considérées comme des avertissements.
+- **WarnAndContinue** ou **true**. Lorsqu’une tâche échoue, les tâches ultérieures de [l’élément Cible](../msbuild/target-element-msbuild.md) et de la build continuent d’être exécutées, et toutes les erreurs de la tâche sont traitées comme des avertissements.
 
 - **ErrorAndContinue**. En cas d’échec d’une tâche, l’exécution des tâches suivantes de l’élément `Target` et de la génération se poursuit, et toutes les erreurs de la tâche sont considérées comme des erreurs.
 
@@ -44,7 +44,7 @@ Utilisez l’attribut `ContinueOnError` de la tâche. Par exemple :
 <Delete Files="@(Files)" ContinueOnError="WarnAndContinue"/>
 ```
 
-## <a name="example"></a>Exemple
+## <a name="example"></a> Exemple
 
 L’exemple de code suivant montre que la cible `Build` continue de s’exécuter, et la génération est considérée comme un succès, même en cas d’échec de la tâche `Delete`.
 
@@ -68,4 +68,4 @@ L’exemple de code suivant montre que la cible `Build` continue de s’exécute
 
 - [MSBuild](../msbuild/msbuild.md)
 - [Informations de référence sur les tâches](../msbuild/msbuild-task-reference.md)
-- [Tâches :](../msbuild/msbuild-tasks.md)
+- [Tâches](../msbuild/msbuild-tasks.md)

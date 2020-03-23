@@ -10,10 +10,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 90c3cbdee722c4cf12c515f06659cc03f3179e1e
-ms.sourcegitcommit: 3ed59ce39692124fe61c484df4348c0b9abee9b9
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/05/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "78289852"
 ---
 # <a name="get-started-with-unit-testing"></a>Bien démarrer avec les tests unitaires
@@ -22,11 +22,11 @@ Utilisez Visual Studio pour définir et exécuter des tests unitaires afin de ma
 
 ## <a name="create-unit-tests"></a>Créer des tests unitaires
 
-Cette section décrit comment créer un projet de test unitaire.
+Cette section décrit comment créer un projet d’essai unitaire.
 
 1. Ouvrez le projet que vous souhaitez tester dans Visual Studio.
 
-   Dans le cadre de la démonstration d’un exemple de test unitaire, cet article teste un projet « Hello World » simple nommé **HelloWorldCore**. L’exemple de code pour un tel projet est comme suit :
+   Pour démontrer un test d’unité d’exemple, cet article teste un simple projet "Hello World" nommé **HelloWorldCore**. L’exemple de code pour un tel projet est comme suit :
 
    ```csharp
    namespace HelloWorldCore
@@ -40,7 +40,7 @@ Cette section décrit comment créer un projet de test unitaire.
       }
    ```
 
-1. Dans l’**Explorateur de solutions**, sélectionnez le nœud de la solution. Ensuite, dans la barre de menus supérieure, sélectionnez **Fichier** > **Ajouter** > **Nouveau projet**.
+1. Dans l’**Explorateur de solutions**, sélectionnez le nœud de la solution. Ensuite, à partir de la barre de menu haut, sélectionnez **File** > **Ajouter** > **nouveau projet**.
 
 1. Dans la boîte de dialogue Nouveau projet, recherchez un modèle de projet de test unitaire pour le framework de test que vous voulez utiliser, puis sélectionnez-le.
 
@@ -136,17 +136,17 @@ Cette section décrit comment créer un projet de test unitaire.
    ```
 
 > [!TIP]
-> Pour plus d’informations sur la création de tests unitaires, consultez [créer et exécuter des tests unitaires pour le code managé](walkthrough-creating-and-running-unit-tests-for-managed-code.md).
+> Pour plus de détails sur la création de tests unitaires, voir [Créer et exécuter des tests unitaires pour le code géré](walkthrough-creating-and-running-unit-tests-for-managed-code.md).
 
 ## <a name="run-unit-tests"></a>Exécuter des tests unitaires
 
-1. Ouvrez [l’Explorateur de tests](../test/run-unit-tests-with-test-explorer.md).
+1. Open [Test Explorer](../test/run-unit-tests-with-test-explorer.md).
 
    ::: moniker range=">=vs-2019"
-   Pour ouvrir l’Explorateur de tests, choisissez **tester** > l' **Explorateur de tests** dans la barre de menus supérieure.
+   Pour ouvrir Test Explorer, choisissez **Test** > **Explorer** dans la barre de menu du haut.
    ::: moniker-end
    ::: moniker range="vs-2017"
-   Pour ouvrir l’Explorateur de tests, choisissez **test** > **Windows** > l' **Explorateur de tests** dans la barre de menus supérieure.
+   Pour ouvrir Test Explorer, choisissez **Test** > **Windows** > **Test Explorer** à partir de la barre de menu supérieure.
    ::: moniker-end
 
 1. Exécutez vos tests unitaires en cliquant sur **Tout exécuter**.
@@ -202,7 +202,7 @@ Quand vous exécutez IntelliTest, vous pouvez identifier les tests qui échouent
 
 ## <a name="analyze-code-coverage"></a>Analyser la couverture du code
 
-Pour déterminer la proportion de code de votre projet qui sera réellement testée par des tests codés, par exemple des tests unitaires, recourez à la fonctionnalité de couverture du code de Visual Studio. Pour assurer une protection efficace contre les bogues, les tests doivent porter sur une part importante du code. Pour savoir comment procéder, voir [Utiliser la couverture du code pour déterminer la quantité de code testé](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md).
+Pour déterminer la proportion de code de votre projet qui sera réellement testée par des tests codés, par exemple des tests unitaires, recourez à la fonctionnalité de couverture du code de Visual Studio. Pour assurer une protection efficace contre les bogues, les tests doivent porter sur une part importante du code. Pour savoir comment, consultez [la couverture du code pour déterminer la quantité de code testée.](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md)
 
 ## <a name="use-a-third-party-test-framework"></a>Utiliser un framework de tests tiers
 
@@ -246,7 +246,7 @@ Pour créer des tests unitaires qui utilisent [NUnit](https://nunit.org/) :
 
 ## <a name="see-also"></a>Voir aussi
 
-* [Procédure pas à pas : créer et exécuter des tests unitaires pour le code managé](walkthrough-creating-and-running-unit-tests-for-managed-code.md)
+* [Procédure pas à pas : créer et exécuter des tests unitaires pour le code managé](walkthrough-creating-and-running-unit-tests-for-managed-code.md)
 * [Créer des tests unitaires, commande](create-unit-tests-menu.md)
 * [Générer des tests avec IntelliTest](generate-unit-tests-for-your-code-with-intellitest.md)
 * [Exécuter des tests avec l’Explorateur de tests](run-unit-tests-with-test-explorer.md)

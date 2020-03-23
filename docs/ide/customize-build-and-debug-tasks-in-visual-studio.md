@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: e912459f45086b1bf5f96a9458f006354e982ffd
-ms.sourcegitcommit: 7b07e7b5e06e2e13f622445c568b78a284e1a40d
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "76542683"
 ---
 # <a name="customize-build-and-debug-tasks-for-open-folder-development"></a>Personnaliser des tâches de génération et de débogage pour le développement « Ouvrir le dossier »
@@ -28,7 +28,7 @@ Si le code base utilise des outils de génération personnalisés que Visual Stu
 
 Personnalisez votre code base sans projet en utilisant les fichiers *.json* suivants :
 
-|Nom du fichier|Fonction|
+|Nom de fichier|Objectif|
 |-|-|
 |*tasks.vs.json*|Spécifiez des commandes de génération personnalisée, des commutateurs de compilation ainsi que des tâches arbitraires (non liées à la génération).<br>Accessible par l’élément de menu contextuel (clic droit) **Configurer les tâches** de **l’Explorateur de solutions**.|
 |*launch.vs.json*|Spécifiez les arguments de ligne de commande pour le débogage.<br>Accessible par l’élément de menu contextuel (clic droit) **Paramètres de débogage et de lancement** de **l’Explorateur de solutions**.|
@@ -46,11 +46,11 @@ Vous pouvez automatiser les scripts de génération ou d’autres opérations ex
 
 Permet de créer (ou d’ouvrir) le fichier *tasks.vs.json* dans le dossier *.vs*. Vous pouvez définir une tâche de build ou n’importe quelle tâche dans ce fichier, puis l’appeler en utilisant le nom que vous lui avez attribué dans le menu contextuel (clic droit) de **l’Explorateur de solutions**.
 
-Des tâches personnalisée peuvent être ajoutées à chaque fichier ou à l’ensemble des fichiers d’un type spécifique. Par exemple, les fichiers du package NuGet peuvent être configurés de manière à obtenir une tâche « Restaurer les packages », ou tous les fichiers sources peuvent être configurés afin d’obtenir une tâche d’analyse statique, par exemple un linter pour tous les fichiers *.js*.
+Des tâches personnalisée peuvent être ajoutées à chaque fichier ou à l’ensemble des fichiers d’un type spécifique. Par exemple, les fichiers de paquets NuGet peuvent être configurés pour avoir une tâche "Restore Packages", ou tous les fichiers source peuvent être configurés pour avoir une tâche d’analyse statique, comme un linter pour tous les fichiers *.js.*
 
 ### <a name="define-custom-build-tasks"></a>Définir des tâches de génération personnalisées
 
-Si votre code base utilise des outils de génération personnalisés que Visual Studio ne reconnaît pas, vous ne pourrez pas exécuter et déboguer le code dans Visual Studio tant que vous n’aurez pas effectué certaines étapes de configuration. Visual Studio fournit des *tâches de génération* dans lesquelles vous pouvez indiquer à Visual Studio comment générer, regénérer et nettoyer votre code. Le fichier de la tâche de génération *tasks.vs.json* associe la boucle de développement interne de Visual Studio aux outils de génération personnalisée utilisés par le code de base.
+Si votre code base utilise des outils de génération personnalisés que Visual Studio ne reconnaît pas, vous ne pourrez pas exécuter et déboguer le code dans Visual Studio tant que vous n’aurez pas effectué certaines étapes de configuration. Visual Studio fournit des *tâches de génération* dans lesquelles vous pouvez indiquer à Visual Studio comment générer, regénérer et nettoyer votre code. Les *tâches.vs.json* construisent des couples de fichiers de tâches la boucle de développement intérieur Visual Studio aux outils de construction personnalisés utilisés par votre base de code.
 
 Prenons un code base composé d’un seul fichier cC# appelé *hello.cs*. Le fichier *makefile* d’un tel code base pourrait se présenter comme ceci :
 
@@ -130,7 +130,7 @@ Lorsque vous sélectionnez une de ces options, la tâche s’exécute. La sortie
 
 Vous pouvez définir des tâches arbitraires dans le fichier *tasks.vs.json* et faire ainsi à peu près tout ce que vous voulez. Par exemple, vous pouvez définir une tâche afin d’afficher le nom du fichier actuellement sélectionné dans la fenêtre **Sortie**, ou pour répertorier les fichiers d’un répertoire spécifié.
 
-L’exemple suivant montre un fichier *tasks.vs.json* qui définit une tâche unique. Lorsqu’elle est appelée, la tâche affiche le nom de fichier de fichier *.js* actuellement sélectionné.
+L’exemple suivant montre un fichier *tasks.vs.json* qui définit une seule tâche. Lorsqu’elle est appelée, la tâche affiche le nom de fichier de fichier *.js* actuellement sélectionné.
 
 ```json
 {
@@ -220,12 +220,12 @@ Vous pouvez créer des tâches pour tout fichier ou dossier en spécifiant son n
 |`${file}`| Le chemin complet du fichier ou du dossier sur lequel exécuter cette tâche (par exemple *C:\sources\hello\src\hello.js*)|
 |`${relativeFile}`| Le chemin relatif du fichier ou du dossier (par exemple *src\hello.js*)|
 |`${fileBasename}`| Le nom du fichier sans chemin ni extension (par exemple *hello*)|
-|`${fileDirname}`| Le chemin complet du fichier, sans le nom de fichier (par exemple *C:\sources\hello\src*)|
+|`${fileDirname}`| Le chemin complet vers le fichier, à l’exclusion du nom de fichier (par exemple, *C: 'sources’hello’src*)|
 |`${fileExtname}`| L’extension du fichier sélectionné (par exemple *.js*)|
 
 ## <a name="configure-debugging-with-launchvsjson"></a>Configurer le débogage avec launch.vs.json
 
-Pour configurer des projets CMake pour le débogage, consultez [configurer des sessions de débogage cmake](/cpp/build/configure-cmake-debugging-sessions).
+Pour configurer les projets CMake pour le débogage, voir [configurer les sessions de débogage de CMake](/cpp/build/configure-cmake-debugging-sessions).
 
 1. Afin de configurer votre code base pour le débogage, dans **l’Explorateur de solutions** choisissez l’élément de menu contextuel **Paramètres de débogage et de lancement** en cliquant avec le bouton droit sur votre fichier exécutable.
 
@@ -260,7 +260,7 @@ Pour configurer des projets CMake pour le débogage, consultez [configurer des s
    Lorsque vous choisissez **F5**, le débogueur démarre et s’arrête au point d’arrêt que vous avez déjà défini. Toutes les fenêtres du débogueur habituelles sont disponibles et opérationnelles.
 
    > [!IMPORTANT]
-   > Pour plus d’informations sur les tâches de génération et C++ de débogage personnalisées dans les projets de dossiers ouverts, consultez [ouvrir la prise en charge des dossiers pour les C++ systèmes de génération dans Visual Studio](/cpp/build/open-folder-projects-cpp).
+   > Pour plus de détails sur les tâches de construction et de débagé personnalisées dans les projets de dossiers ouverts de C, consultez [le support Open Folder pour les systèmes de construction de CMD dans Visual Studio](/cpp/build/open-folder-projects-cpp).
 
 ### <a name="specify-arguments-for-debugging"></a>Spécifier des arguments pour le débogage
 

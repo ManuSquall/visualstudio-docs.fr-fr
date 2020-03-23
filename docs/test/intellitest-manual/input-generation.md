@@ -10,11 +10,11 @@ ms.workload:
 - multiple
 author: mikejo5000
 ms.openlocfilehash: e5a3248d3f081bcab08c08110d305f0aa6235817
-ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "78409569"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79302622"
 ---
 # <a name="input-generation-using-dynamic-symbolic-execution"></a>Génération d’entrées à l’aide de l’exécution symbolique dynamique
 
@@ -34,10 +34,10 @@ Les étapes de la boucle sont :
 
 Le [solveur de contrainte](#constraint-solver) d’IntelliTest peut gérer les valeurs de tous les types pouvant apparaître dans les programmes .NET :
 
-* [Nombres entiers](#integers-and-floats) et [à virgule flottante](#integers-and-floats)
+* [Integers](#integers-and-floats) et [Flotteurs](#integers-and-floats)
 * [Objets](#objects)
-* [Structures](#structs)
-* [Tableaux](#arrays-and-strings) et [chaînes](#arrays-and-strings)
+* [Structs](#structs)
+* [Arrays](#arrays-and-strings) et [cordes](#arrays-and-strings)
 
 IntelliTest filtre les entrées qui ne respectent pas les hypothèses indiquées.
 
@@ -68,7 +68,7 @@ IntelliTest peut [créer des instances de classes .NET existantes](#existing-cla
 <a name="existing-classes"></a>
 ## <a name="instantiate-existing-classes"></a>Instancier les classes existantes
 
-**Quel est le problème ?**
+**Quel est le problème?**
 
 IntelliTest surveille les instructions exécutées quand il exécute un test et le programme testé. Il surveille en particulier tous les accès aux champs. Il utilise ensuite un [solveur de contrainte](#constraint-solver) pour déterminer les nouvelles entrées de test, notamment les objets et leurs valeurs de champ qui entraînent d’autres comportements intéressants du test et du programme testé.
 

@@ -12,11 +12,11 @@ ms.topic: conceptual
 ms.date: 11/11/2017
 ms.author: ghogen
 ms.openlocfilehash: b959d411f0f574b03729d8016feb6efc531ae171
-ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
+ms.sourcegitcommit: 95f26af1da51d4c83ae78adcb7372b32364d8a2b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "78408528"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79302559"
 ---
 # <a name="publishing-a-cloud-service-using-visual-studio"></a>Publication d'un service cloud avec Visual Studio
 
@@ -35,11 +35,11 @@ Lorsque vous publiez votre application Azure, vous pouvez effectuer l'une des t�
 
 - Créer un package de services : vous pouvez utiliser ce package et le fichier de configuration de service pour publier votre application dans un environnement de déploiement à partir du [portail Azure](https://portal.azure.com).
 
-- Publier votre projet Azure à partir de Visual Studio : Pour publier votre application directement dans Azure, utilisez l'Assistant Publication. Pour plus d’informations, consultez [Assistant Publication d’application Azure](vs-azure-tools-publish-azure-application-wizard.md).
+- Publier votre projet Azure à partir de Visual Studio : pour publier votre application directement dans Azure, vous utilisez l'Assistant Publication. Pour plus d’informations, consultez [Assistant Publication d’application Azure](vs-azure-tools-publish-azure-application-wizard.md).
 
 ### <a name="to-create-a-service-package-from-visual-studio"></a>Pour créer un package de services à partir de Visual Studio
 
-1. Lorsque vous êtes prêt à publier votre application, ouvrez l'Explorateur de solutions, puis le menu contextuel du projet Windows Azure qui contient vos rôles et sélectionnez Publier.
+1. Lorsque vous êtes prêt à publier votre application, ouvrez l'Explorateur de solutions, ouvrez le menu contextuel du projet Azure qui contient vos rôles, puis choisissez Publier.
 
 1. Pour créer un package de services uniquement, procédez comme suit :
 
@@ -69,13 +69,13 @@ Si l'infrastructure principale de votre application est stable, mais que les rô
 
 ### <a name="requirements-for-using-web-deploy"></a>Configuration requise pour l’utilisation de Web Deploy
 
-- **À des fins de développement et de test uniquement :** les modifications sont apportées directement à la machine virtuelle sur laquelle le rôle web est en cours d'exécution. Si cette machine virtuelle doit être recyclée, les modifications sont perdues car le package d'origine que vous avez publié sert à recréer la machine virtuelle pour le rôle. Republiez votre application afin d’obtenir les dernières modifications pour le rôle web.
+- **Pour le développement et les tests seulement**: Les modifications sont apportées directement à la machine virtuelle où le rôle web est en cours d’exécution. Si cette machine virtuelle doit être recyclée, les modifications sont perdues car le package d'origine que vous avez publié sert à recréer la machine virtuelle pour le rôle. Republiez votre application afin d’obtenir les dernières modifications pour le rôle web.
 
-- **Seuls les rôles web peuvent être mis à jour :** les rôles de travail ne peuvent pas être mis à jour. En outre, vous ne pouvez pas mettre à jour `RoleEntryPoint` dans `web role.cs`.
+- **Seuls les rôles web peuvent être mis à jour**: les rôles des travailleurs ne peuvent pas être mis à jour. En outre, vous ne pouvez pas mettre à jour `RoleEntryPoint` dans `web role.cs`.
 
-- **Peut prendre en charge une seule instance d'un rôle web :** vous ne pouvez pas avoir plusieurs instances d'un rôle web dans votre environnement de déploiement. Toutefois, plusieurs rôles web, chacun avec une seule instance, sont pris en charge.
+- **Ne peut prendre en charge qu’une seule instance d’un rôle web**: vous ne pouvez pas avoir plusieurs instances d’un rôle web dans votre environnement de déploiement. Toutefois, plusieurs rôles web, chacun avec une seule instance, sont pris en charge.
 
-- **Activer les connexions Bureau à distance :** cette exigence permet que le Web Deploy utilise le nom d'utilisateur et le mot de passe pour se connecter à la machine virtuelle pour déployer les modifications sur le serveur qui exécute Internet Information Services (IIS). En outre, vous devrez peut-être vous connecter à la machine virtuelle pour ajouter un certificat approuvé à IIS sur cette machine virtuelle. (Ce certificat assure la sécurité de la connexion à distance pour IIS utilisée par Web Deploy.)
+- **Activez les connexions de bureau à distance**: Cette exigence permet à Web Deploy d’utiliser l’utilisateur et le mot de passe pour se connecter à la machine virtuelle pour déployer les modifications apportées au serveur en cours d’exécution des services d’information Internet (IIS). En outre, vous devrez peut-être vous connecter à la machine virtuelle pour ajouter un certificat approuvé à IIS sur cette machine virtuelle. (Ce certificat assure la sécurité de la connexion à distance pour IIS utilisée par Web Deploy.)
 
 La procédure suivante suppose que vous utilisiez l’Assistant **Application de publication Azure**.
 
@@ -138,16 +138,16 @@ Vous devrez peut-être inclure des fichiers spécifiques dans votre package de s
    c. Choisissez la référence que vous souhaitez ajouter, puis sélectionnez **OK**. La référence est ajoutée à la liste sous le dossier **Références**.
    d. Ouvrez le menu contextuel de l'assembly que vous venez d'ajouter et sélectionnez **Propriétés**. La fenêtre **Propriétés** s'affiche.
 
-      Pour inclure cet assembly dans le package de services, dans la **liste de copie locale**, choisissez **True**.
+      Pour inclure cette assemblée dans le forfait de service, dans la **liste Copy Local** choisir **True**.
 1. Dans l'**Explorateur de solutions**, ouvrez le nœud de projet auquel manque l'assembly référencé.
 
-1. Pour ajouter l'assembly au projet, ouvrez le menu contextuel du dossier **Références** et sélectionnez **Ajouter une référence**. La boîte de dialogue **Ajouter une référence** s'affiche.
+1. Pour ajouter l'assembly au projet, ouvrez le menu contextuel du dossier **Références** et sélectionnez **Ajouter une référence**. Le dialogue **Add Reference** apparaît.
 
 1. Sélectionnez la référence à ajouter, puis cliquez sur le bouton **OK**.
 
     La référence est ajoutée à la liste sous le dossier **Références**.
 
-1. Ouvrez le menu contextuel de l'assembly que vous venez d'ajouter et sélectionnez **Propriétés**. La fenêtre Propriétés s'affiche.
+1. Ouvrez le menu contextuel de l'assembly que vous venez d'ajouter et sélectionnez **Propriétés**. La fenêtre Propriétés apparaît.
 
 1. Pour inclure cet assembly dans le package de services, dans la **liste de copie locale**, choisissez **True**.
 
@@ -155,6 +155,6 @@ Vous devrez peut-être inclure des fichiers spécifiques dans votre package de s
 
 1. Pour inclure des fichiers dans le package de service ajouté à votre projet de rôle de travail, ouvrez le menu contextuel du fichier, puis sélectionnez **Propriétés**. Dans la fenêtre **Propriétés**, sélectionnez **Copier si plus récent** dans la zone de liste **Copier dans le répertoire de sortie**.
 
-## <a name="next-steps"></a>Étapes suivantes :
+## <a name="next-steps"></a>Étapes suivantes
 
 Pour en savoir plus sur la publication sur Azure depuis Visual Studio, consultez [Assistant Publication d’application Azure](vs-azure-tools-publish-azure-application-wizard.md).

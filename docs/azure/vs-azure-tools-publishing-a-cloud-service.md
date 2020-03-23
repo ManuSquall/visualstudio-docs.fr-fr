@@ -10,11 +10,11 @@ ms.topic: conceptual
 ms.date: 11/11/2017
 ms.author: ghogen
 ms.openlocfilehash: d8257e0833da470554ce331c30cd0edf74122093
-ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
+ms.sourcegitcommit: 95f26af1da51d4c83ae78adcb7372b32364d8a2b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "78408679"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79301740"
 ---
 # <a name="publishing-a-cloud-service-using-visual-studio"></a>Publication d'un service cloud avec Visual Studio
 
@@ -41,13 +41,13 @@ Lorsque vous publiez votre application Azure, vous pouvez effectuer l'une des t�
 
 1. Pour créer un package de services uniquement, procédez comme suit :
 
-   a. Dans le menu contextuel du projet Azure, choisissez **Package**.
+   a. Dans le menu contextuel du projet Azure, sélectionnez **Package**.
 
-   b. Dans la boîte de dialogue **Package Azure Application** , choisissez la configuration du service pour lequel vous souhaitez créer un package, puis la configuration de la version.
+   b. Dans la boîte de dialogue **Application de package Azure**, choisissez la configuration de service pour laquelle vous souhaitez créer un package, puis la configuration de build.
 
    c. (facultatif) Pour activer le Bureau à distance pour le service cloud après sa publication, activez la case à cocher **Activer le Bureau à distance pour tous les rôles**, puis sélectionnez **Paramètres** pour configurer les informations d’identification le Bureau à distance. Pour plus d’informations, consultez la page [Activer la Connexion Bureau à distance pour un rôle dans Azure Cloud Services avec Visual Studio](/azure/cloud-services/cloud-services-role-enable-remote-desktop-visual-studio).
 
-      Si vous souhaitez déboguer votre service cloud après sa publication, activez le débogage à distance en sélectionnant **Activer le débogueur distant pour tous les rôles**.
+      Si vous voulez déboguer votre service cloud après l'avoir publié, activez le débogage distant en sélectionnant **Activer le débogueur distant pour tous les rôles**.
 
    d. Pour créer le package, choisissez le lien **Package** .
 
@@ -67,21 +67,21 @@ Si l'infrastructure principale de votre application est stable, mais que les rô
 
 ### <a name="requirements-for-using-web-deploy"></a>Configuration requise pour l’utilisation de Web Deploy
 
-- **À des fins de développement et de test uniquement :** les modifications sont apportées directement à la machine virtuelle sur laquelle le rôle web est en cours d'exécution. Si cette machine virtuelle doit être recyclée, les modifications sont perdues car le package d'origine que vous avez publié sert à recréer la machine virtuelle pour le rôle. Republiez votre application afin d’obtenir les dernières modifications pour le rôle web.
+- **Pour le développement et les tests seulement**: Les modifications sont apportées directement à la machine virtuelle où le rôle web est en cours d’exécution. Si cette machine virtuelle doit être recyclée, les modifications sont perdues car le package d'origine que vous avez publié sert à recréer la machine virtuelle pour le rôle. Republiez votre application afin d’obtenir les dernières modifications pour le rôle web.
 
-- **Seuls les rôles web peuvent être mis à jour :** les rôles de travail ne peuvent pas être mis à jour. En outre, vous ne pouvez pas mettre à jour `RoleEntryPoint` dans `web role.cs`.
+- **Seuls les rôles web peuvent être mis à jour**: les rôles des travailleurs ne peuvent pas être mis à jour. En outre, vous ne pouvez pas mettre à jour `RoleEntryPoint` dans `web role.cs`.
 
-- **Peut prendre en charge une seule instance d'un rôle web :** vous ne pouvez pas avoir plusieurs instances d'un rôle web dans votre environnement de déploiement. Toutefois, plusieurs rôles web, chacun avec une seule instance, sont pris en charge.
+- **Ne peut prendre en charge qu’une seule instance d’un rôle web**: vous ne pouvez pas avoir plusieurs instances d’un rôle web dans votre environnement de déploiement. Toutefois, plusieurs rôles web, chacun avec une seule instance, sont pris en charge.
 
-- **Activer les connexions Bureau à distance :** cette exigence permet que le Web Deploy utilise le nom d'utilisateur et le mot de passe pour se connecter à la machine virtuelle pour déployer les modifications sur le serveur qui exécute Internet Information Services (IIS). En outre, vous devrez peut-être vous connecter à la machine virtuelle pour ajouter un certificat approuvé à IIS sur cette machine virtuelle. (Ce certificat assure la sécurité de la connexion à distance pour IIS utilisée par Web Deploy.)
+- **Activez les connexions de bureau à distance**: Cette exigence permet à Web Deploy d’utiliser l’utilisateur et le mot de passe pour se connecter à la machine virtuelle pour déployer les modifications apportées au serveur en cours d’exécution des services d’information Internet (IIS). En outre, vous devrez peut-être vous connecter à la machine virtuelle pour ajouter un certificat approuvé à IIS sur cette machine virtuelle. (Ce certificat assure la sécurité de la connexion à distance pour IIS utilisée par Web Deploy.)
 
-La procédure suivante suppose que vous utilisez l’Assistant **Publication d’application Azure** .
+La procédure suivante suppose que vous utilisiez l’Assistant **Application de publication Azure**.
 
 ### <a name="enable-web-deploy-when-you-publish-your-application"></a>Activez Web Deploy lorsque vous publiez votre application
 
 1. Afin d’activer l’option **Activer Web Deploy** pour tous les rôles web, vous devez d'abord configurer les connexions Bureau à distance. Sélectionnez **Activer le Bureau à distance** pour tous les rôles, puis fournissez les informations d’identification qui seront utilisées pour se connecter à distance dans le champ **Configuration Bureau à distance** qui s’affiche. Consultez [Activer une connexion Bureau à distance pour un rôle dans Azure Cloud Services avec PowerShell](/azure/cloud-services/cloud-services-role-enable-remote-desktop-visual-studio).
 
-1. Afin d’activer Web Deploy pour tous les rôles web dans votre application web, sélectionnez **Activer Web Deploy pour tous les rôles web**.
+1. Pour activer Web Deploy pour tous les rôles Web dans votre application, sélectionnez **Activer Web Deploy pour tous les rôles Web**.
 
     Un triangle d'avertissement jaune s'affiche. Web Deploy utilise par défaut un certificat non fiable et auto-signé, ce qui n'est pas recommandé pour télécharger des données sensibles. Si vous devez sécuriser ce processus pour des données sensibles, vous pouvez ajouter un certificat SSL à utiliser pour les connexions Web Deploy. Ce certificat doit être un certificat approuvé. Pour plus d’informations, consultez [Sécuriser Web Deploy](#make-web-deploy-secure).
 
@@ -94,9 +94,9 @@ La procédure suivante suppose que vous utilisez l’Assistant **Publication d�
 
 ### <a name="update-your-web-role-by-using-web-deploy"></a>Mettre à jour votre rôle web à l'aide de Web Deploy
 
-1. Pour utiliser Web Deploy, apportez des modifications au code du projet pour un des rôles web de Visual Studio que vous souhaitez publier, puis cliquez sur ce nœud de projet dans votre solution et pointez sur **Publier**. La boîte de dialogue **Publier le site Web** s’affiche.
+1. Pour utiliser Web Deploy, dans Visual Studio, modifiez le code du projet pour chaque rôle web que vous souhaitez publier, puis cliquez avec le bouton droit sur le nœud de ce projet et pointez sur **Publier**. La boîte de dialogue **Publier le site web** s'affiche.
 
-1. (Facultatif) Si vous avez ajouté un certificat SSL approuvé à utiliser pour les connexions à distance pour IIS, vous pouvez désactiver la case à cocher **Autoriser les certificats non approuvés** . Pour plus d’informations sur l’ajout d’un certificat afin de sécuriser Web Deploy, consultez la section **Pour sécuriser Web Deploy** plus loin dans cet article.
+1. (Facultatif) Si vous avez ajouté un certificat SSL approuvé à utiliser pour les connexions distantes pour IIS, vous pouvez désactiver la case à cocher **Autoriser les certificats non approuvés**. Pour plus d’informations sur l’ajout d’un certificat afin de sécuriser Web Deploy, consultez la section **Pour sécuriser Web Deploy** plus loin dans cet article.
 
 1. Pour utiliser Web Deploy, le mécanisme de publication a besoin du nom d'utilisateur et du mot de passe que vous définissez pour votre connexion Bureau à distance lors de la publication initiale du package.
 
@@ -108,7 +108,7 @@ La procédure suivante suppose que vous utilisez l’Assistant **Publication d�
 
 1. Pour publier les modifications apportées à votre rôle web, choisissez **Publier**.
 
-    La ligne d'état indique que la **publication a démarré**. Une fois la publication terminée, un message indique que la **publication a réussi** . Les modifications ont maintenant été déployées sur le rôle web de votre machine virtuelle. Vous pouvez désormais démarrer votre application Azure dans l'environnement Azure pour tester vos modifications.
+    La ligne d'état affiche **Démarrage de la publication**. Une fois la publication terminée, un message indique que la **publication a réussi** . Les modifications ont maintenant été déployées sur le rôle web de votre machine virtuelle. Vous pouvez désormais démarrer votre application Azure dans l'environnement Azure pour tester vos modifications.
 
 ### <a name="make-web-deploy-secure"></a>Sécuriser Web Deploy
 
@@ -120,10 +120,10 @@ La procédure suivante suppose que vous utilisez l’Assistant **Publication d�
 
    a. Pour vous connecter à la machine virtuelle qui exécute le rôle web, sélectionnez l’instance du rôle web dans **Cloud Explorer** ou l’**Explorateur de serveurs**, puis choisissez la commande **Connexion à l’aide de Bureau à distance**. Pour plus de détails sur les étapes de connexion à la machine virtuelle, consultez [Activer une connexion Bureau à distance pour un rôle dans Azure Cloud Services avec PowerShell](/azure/cloud-services/cloud-services-role-enable-remote-desktop-visual-studio). Votre navigateur vous invite à télécharger un `.rdp` fichier.
 
-   b. Pour ajouter un certificat SSL, ouvrez le service de gestion dans le Gestionnaire des services IIS. Dans le Gestionnaire des services IIS, activez SSL en ouvrant le lien **Liaisons** dans le volet **Action**. La boîte de dialogue **Ajouter la liaison de Site** s'affiche. Choisissez **Ajouter**, puis sélectionnez HTTPS dans la liste déroulante **Type**. Dans la liste **Certificat SSL**, sélectionnez le certificat SSL signé par une autorité de certification et que vous avez téléchargé sur le portail Azure. Pour plus d'informations, consultez [Configurer des paramètres de connexion pour le service de gestion](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc770458(v=ws.10)).
+   b. Pour ajouter un certificat SSL, ouvrez le service de gestion dans le Gestionnaire des services IIS. Dans IIS Manager, activez SSL en ouvrant le lien **Liaisons** dans le volet **Action**. La boîte de dialogue **Ajouter la liaison de Site** s'affiche. Choisissez **Ajouter**, puis sélectionnez HTTPS dans la liste déroulante **Type**. Dans la liste **Certificat SSL**, sélectionnez le certificat SSL signé par une autorité de certification et que vous avez téléchargé sur le portail Azure. Pour plus d'informations, consultez [Configurer des paramètres de connexion pour le service de gestion](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc770458(v=ws.10)).
 
       > [!NOTE]
-      > Si vous ajoutez un certificat SSL approuvé, le triangle d'avertissement jaune n'apparaît plus dans l’ **Assistant Publication**.
+      > Si vous ajoutez un certificat SSL approuvé, le triangle d'avertissement jaune ne s'affiche plus dans l'**Assistant Publication**.
 
 ## <a name="include-files-in-the-service-package"></a>Inclure des fichiers dans le package de services
 
@@ -132,26 +132,26 @@ Vous devrez peut-être inclure des fichiers spécifiques dans votre package de s
 1. Pour ajouter un assembly à un package de services, procédez comme suit :
 
    a. Dans **l'Explorateur de solutions**, ouvrez le nœud de projet pour le projet auquel il manque l'assembly référencé.
-   b. Pour ajouter l’assembly au projet, ouvrez le menu contextuel du dossier **Références**, puis choisissez **Ajouter une référence**. La boîte de dialogue Ajouter une référence s'affiche.
-   c. Choisissez la référence que vous souhaitez ajouter, puis sélectionnez **OK**. La référence est ajoutée à la liste sous le dossier **Références** .
-   d. Ouvrez le menu contextuel pour l'assembly que vous avez ajouté, puis choisissez **Propriétés**. La fenêtre **Propriétés** s'affiche.
+   b. Pour ajouter l'assembly au projet, ouvrez le menu contextuel du dossier **Références** et sélectionnez **Ajouter une référence**. La boîte de dialogue Ajouter une référence s'affiche.
+   c. Choisissez la référence que vous souhaitez ajouter, puis sélectionnez **OK**. La référence est ajoutée à la liste sous le dossier **Références**.
+   d. Ouvrez le menu contextuel de l'assembly que vous venez d'ajouter et sélectionnez **Propriétés**. La fenêtre **Propriétés** s'affiche.
 
-      Pour inclure cet assembly dans le package de services, dans la **liste de copie locale**, choisissez **True**.
-1. Dans **l'Explorateur de solutions** , ouvrez le nœud de projet pour le projet auquel il manque l'assembly référencé.
+      Pour inclure cette assemblée dans le forfait de service, dans la **liste Copy Local** choisir **True**.
+1. Dans l'**Explorateur de solutions**, ouvrez le nœud de projet auquel manque l'assembly référencé.
 
-1. Pour ajouter l’assembly au projet, ouvrez le menu contextuel du dossier **Références**, puis choisissez **Ajouter une référence**. La boîte de dialogue **Ajouter une référence** s'affiche.
+1. Pour ajouter l'assembly au projet, ouvrez le menu contextuel du dossier **Références** et sélectionnez **Ajouter une référence**. Le dialogue **Add Reference** apparaît.
 
-1. Choisissez la référence que vous souhaitez ajouter, puis cliquez sur le bouton **OK** .
+1. Sélectionnez la référence à ajouter, puis cliquez sur le bouton **OK**.
 
-    La référence est ajoutée à la liste sous le dossier **Références** .
+    La référence est ajoutée à la liste sous le dossier **Références**.
 
-1. Ouvrez le menu contextuel pour l'assembly que vous avez ajouté, puis choisissez **Propriétés**. La fenêtre Propriétés apparaît.
+1. Ouvrez le menu contextuel de l'assembly que vous venez d'ajouter et sélectionnez **Propriétés**. La fenêtre Propriétés apparaît.
 
 1. Pour inclure cet assembly dans le package de services, dans la **liste de copie locale**, choisissez **True**.
 
-1. Pour inclure dans le package de services des fichiers qui ont été ajoutés à votre projet de rôle web, ouvrez le menu contextuel du fichier, puis choisissez **Propriétés**. Dans la fenêtre **Propriétés**, choisissez **Contenu** dans la liste déroulante **Action de génération**.
+1. Pour inclure des fichiers dans le package de service ajouté à votre projet de rôle web, ouvrez le menu contextuel du fichier, puis sélectionnez **Propriétés**. Dans la fenêtre **Propriétés**, sélectionnez **Contenu** dans la zone de liste **Action de génération**.
 
-1. Pour inclure dans le package de services des fichiers qui ont été ajoutés à votre projet de rôle web, ouvrez le menu contextuel du fichier, puis choisissez **Propriétés**. Dans la fenêtre **Propriétés**, choisissez **Copier si plus récent** dans la liste déroulante **Copier dans le répertoire de sortie**.
+1. Pour inclure des fichiers dans le package de service ajouté à votre projet de rôle de travail, ouvrez le menu contextuel du fichier, puis sélectionnez **Propriétés**. Dans la fenêtre **Propriétés**, sélectionnez **Copier si plus récent** dans la zone de liste **Copier dans le répertoire de sortie**.
 
 ## <a name="next-steps"></a>Étapes suivantes
 

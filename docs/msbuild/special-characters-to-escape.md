@@ -17,10 +17,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: d1b17ded468e262d4f636ed5494081adab7b8c5f
-ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/26/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77632249"
 ---
 # <a name="special-characters-to-escape"></a>Caractères d’échappement spéciaux
@@ -43,9 +43,9 @@ Les caractères spéciaux doivent être échappés uniquement s'ils ont une sign
 |*|Astérisque. Caractère générique pour la description d'une spécification de fichier dans la section Include/Exclude d'un élément.|
 
 > [!NOTE]
-> Dans certains scénarios, vous devrez peut-être placer des caractères de guillemet double ("), par exemple lors de l’utilisation d’une tâche de `Exec`.
+> Dans certains scénarios, vous devrez peut-être échapper à des caractères `Exec` de double citation («) comme lors de l’utilisation dans une tâche.
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Comment : échapper des caractères spéciaux dans MSBuild](../msbuild/how-to-escape-special-characters-in-msbuild.md)
-- [Informations de référence sur MSBuild](../msbuild/msbuild-reference.md)
+- [Comment: Échapper à des personnages spéciaux dans MSBuild](../msbuild/how-to-escape-special-characters-in-msbuild.md)
+- [Référence MSBuild](../msbuild/msbuild-reference.md)

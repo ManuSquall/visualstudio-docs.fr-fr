@@ -1,6 +1,6 @@
 ---
 title: Techniques et outils de débogage
-description: Écrivez un meilleur code avec moins de bogues à l’aide de Visual Studio pour corriger les exceptions, corriger les erreurs et améliorer votre code
+description: Écrivez un meilleur code avec moins de bogues en utilisant Visual Studio pour corriger les exceptions, corriger les erreurs et améliorer votre code
 ms.custom:
 - debug-experiment
 - seodec18
@@ -14,54 +14,54 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 2ac595098d793e44d65312a09fc8857225f150ef
-ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
+ms.sourcegitcommit: 95f26af1da51d4c83ae78adcb7372b32364d8a2b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "78409202"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79302027"
 ---
-# <a name="debugging-techniques-and-tools-to-help-you-write-better-code"></a>Techniques et outils de débogage pour vous aider à écrire du code plus performant
+# <a name="debugging-techniques-and-tools-to-help-you-write-better-code"></a>Techniques et outils de débogage pour vous aider à écrire un meilleur code
 
-La résolution de bogues et d’erreurs dans votre code peut être une tâche longue et parfois frustrante. Il faut du temps pour apprendre à déboguer efficacement, mais un IDE puissant tel que Visual Studio peut simplifier considérablement votre travail. Un IDE peut vous aider à corriger les erreurs et à déboguer votre code plus rapidement, mais pas seulement cela, mais il peut également vous aider à écrire du code plus performant avec moins de bogues. Notre objectif dans cet article est de vous fournir une vue holistique du processus de « résolution des bogues ». vous saurez donc quand utiliser l’analyseur de code, quand utiliser le débogueur, comment corriger les exceptions et comment coder pour l’intention. Si vous savez déjà que vous devez utiliser le débogueur, consultez [tout d’abord le débogueur](../debugger/debugger-feature-tour.md).
+La correction des bogues et des erreurs dans votre code peut prendre beaucoup de temps - et parfois frustrant - tâche. Il faut du temps pour apprendre à déboiser efficacement, mais un IDE puissant comme Visual Studio peut rendre votre travail beaucoup plus facile. Un IDE peut vous aider à corriger les erreurs et déboquer votre code plus rapidement, et pas seulement cela, mais il peut également vous aider à écrire un meilleur code avec moins de bugs. Notre but dans cet article est de vous donner une vue holistique du processus de "bug-fixing", de sorte que vous saurez quand utiliser l’analyseur de code, quand utiliser le débbugger, comment corriger les exceptions, et comment coder pour l’intention. Si vous savez déjà que vous avez besoin d’utiliser le débbugger, voir [d’abord regarder le débbugger](../debugger/debugger-feature-tour.md).
 
-Dans cet article, nous nous penchons sur l’utilisation de l’IDE pour rendre vos sessions de codage plus productives. Nous nous appuyons sur plusieurs tâches, telles que :
+Dans cet article, nous parlons de tirer parti de l’IDE pour rendre vos sessions de codage plus productives. Nous abordons plusieurs tâches, telles que :
 
-* Préparer votre code pour le débogage en tirant parti de l’analyseur de code de l’IDE
+* Préparez votre code pour débogage en tirant parti de l’analyseur de code de l’IDE
 
-* Comment résoudre les exceptions (erreurs d’exécution)
+* Comment corriger les exceptions (erreurs de temps d’exécution)
 
-* Comment réduire les bogues en codant pour l’intention (à l’aide d’Assert)
+* Comment minimiser les bogues en codant pour l’intention (en utilisant assert)
 
-* Quand utiliser le débogueur
+* Quand utiliser le débbugger
 
-Pour illustrer ces tâches, nous présentons quelques-uns des types d’erreurs et de bogues les plus courants que vous rencontrerez lors de la tentative de débogage de vos applications. Bien que l’exemple de C#code soit, les informations conceptuelles s' C++appliquent généralement à, Visual Basic, JavaScript et d’autres langages pris en charge par Visual Studio (sauf indication contraire). Les captures d’écran sont en C#.
+Pour démontrer ces tâches, nous montrons quelques-uns des types les plus courants d’erreurs et de bogues que vous rencontrerez lorsque vous essayez de déboiffer vos applications. Bien que le code de l’échantillon soit C, les informations conceptuelles s’appliquent généralement aux langues C, Visual Basic, JavaScript et autres langues prises en charge par Visual Studio (sauf lorsqu’elles sont notées). Les captures d’écran sont en C#.
 
-## <a name="create-a-sample-app-with-some-bugs-and-errors-in-it"></a>Créer un exemple d’application contenant des bogues et des erreurs
+## <a name="create-a-sample-app-with-some-bugs-and-errors-in-it"></a>Créez une application d’échantillon avec quelques bogues et erreurs en elle
 
-Le code suivant présente des bogues que vous pouvez corriger à l’aide de l’IDE de Visual Studio. L’application ici est une application simple qui simule l’obtention de données JSON à partir d’une opération, la désérialisation des données vers un objet et la mise à jour d’une liste simple avec les nouvelles données.
+Le code suivant a quelques bogues que vous pouvez corriger à l’aide de l’IDE Visual Studio. L’application ici est une application simple qui simule l’obtention de données JSON à partir d’une opération, déséialiser les données à un objet, et la mise à jour d’une liste simple avec les nouvelles données.
 
 Pour créer l’application :
 
-1. Vous devez avoir installé Visual Studio et le **développement .net Core multiplateforme** ou la charge de travail **développement .net Desktop** , selon le type d’application que vous souhaitez créer.
+1. Vous devez avoir Visual Studio installé et soit le développement de la **plate-forme cross .NET Core** ou la charge de travail **de développement de bureau .NET** installé, selon le type d’application que vous souhaitez créer.
 
-    Si vous n’avez pas encore installé Visual Studio, accédez à la page  [Téléchargements Visual Studio](https://visualstudio.microsoft.com/downloads/)  pour l’installer gratuitement.
+    Si vous n’avez pas encore installé Visual Studio, rendez-vous sur la page [de téléchargements](https://visualstudio.microsoft.com/downloads/) Visual Studio pour l’installer gratuitement.
 
-    Si vous devez installer la charge de travail, mais que vous avez déjà installé Visual Studio, cliquez sur **Outils** > **Obtenir des outils et fonctionnalités**. Visual Studio Installer est lancé. Choisissez la charge de travail développement **multiplateforme .net Core** ou **développement bureautique .net** , puis choisissez **modifier**.
+    Si vous avez besoin d’installer la charge de travail, mais ont déjà Visual Studio, cliquez sur **Outils** > **Obtenez des outils et des fonctionnalités**. Visual Studio Installer est lancé. Choisissez le **développement de la plate-forme transversale .NET Core** ou la charge de travail de développement de bureau **.NET,** puis choisissez **Modifier**.
 
 1. Ouvrez Visual Studio.
 
     ::: moniker range=">=vs-2019"
-    Dans la fenêtre de démarrage, choisissez **Créer un projet**. Tapez **console** dans la zone de recherche, puis choisissez **application console (.net Core)** ou **application console (.NET Framework)** . Sélectionnez **Suivant**. Tapez un nom de projet comme **Console_Parse_JSON** , puis cliquez sur **créer**.
+    Sur la fenêtre de départ, choisissez **Créer un nouveau projet**. Type **console** dans la boîte de recherche, puis choisissez soit **Console App (.NET Core)** ou **Console App (.NET Framework)**. Choisissez **La prochaine**. Tapez un nom de projet comme **Console_Parse_JSON** et cliquez sur **Créer**.
     ::: moniker-end
     ::: moniker range="vs-2017"
-    Dans la barre de menus supérieure, choisissez **Fichier** > **Nouveau** > **Projet**. Dans le volet gauche de la boîte de dialogue **nouveau projet** , **sous C#Visual** , choisissez **application console**, puis dans le volet central, choisissez **application console (.net Core)** ou **application console (.NET Framework)** . Tapez un nom comme **Console_Parse_JSON** , puis cliquez sur **OK**.
+    De la barre de menu haut, choisissez **File** > **New** > **Project**. Dans le volet gauche de la nouvelle boîte de dialogue **de projet,** sous **Visual C ,** choisissez Console **App**, puis dans le volet moyen choisir soit Console **App (.NET Core)** ou **Console App (.NET Framework)**. Tapez un nom comme **Console_Parse_JSON** et cliquez **sur OK**.
     ::: moniker-end
 
-    Si vous ne voyez pas le modèle de projet **application console (.net Core)** ou **application console (.NET Framework)** , accédez à **Outils** > **obtenir outils et fonctionnalités**pour ouvrir le Visual Studio installer. Choisissez la charge de travail **développement multiplateforme .net Core** ou **développement bureautique .net** , puis choisissez **modifier**.
+    Si vous ne voyez pas le modèle de projet **Console App (.NET Core)** ou **Console App (.NET Framework),** rendez-vous sur **Tools** > **Get Tools and Features**, qui ouvre l’installateur visual Studio. Choisissez soit le **développement de la plate-forme transversale .NET Core** ou la charge de travail de développement de bureau **.NET,** puis choisissez **Modifier**.
 
     Visual Studio crée le projet de console, qui apparaît dans l’Explorateur de solutions dans le volet droit.
 
-1. Remplacez le code par défaut dans le fichier *Program.cs* du projet par l’exemple de code ci-dessous.
+1. Remplacez le code par défaut dans le fichier *Program.cs* du projet avec le code de l’échantillon ci-dessous.
 
 ```csharp
 using System;
@@ -184,37 +184,37 @@ namespace Console_Parse_JSON
 }
 ```
 
-## <a name="find-the-red-and-green-squiggles"></a>Trouvez les tildes rouges et verts !
+## <a name="find-the-red-and-green-squiggles"></a>Trouvez les gribouillis rouges et verts!
 
-Avant d’essayer de démarrer l’exemple d’application et d’exécuter le débogueur, vérifiez le code dans l’éditeur de code pour les tildes rouges et verts. Celles-ci représentent les erreurs et les avertissements identifiés par l’analyseur de code de l’IDE. Les tildes rouges sont des erreurs au moment de la compilation, que vous devez résoudre avant de pouvoir exécuter le code. Les tildes verts sont des avertissements. Bien que vous puissiez souvent exécuter votre application sans corriger les avertissements, il peut s’agir d’une source de bogues et vous économisez souvent du temps et des problèmes en les recherchant. Ces avertissements et erreurs s’affichent également dans la fenêtre **liste d’erreurs** , si vous préférez un mode liste.
+Avant d’essayer de démarrer l’application d’échantillon et d’exécuter le débbugger, vérifiez le code dans l’éditeur de code pour les gribouillis rouges et verts. Il s’agit d’erreurs et d’avertissements identifiés par l’analyseur de code de l’IDE. Les gribouillis rouges sont des erreurs de compilation- temps, que vous devez corriger avant que vous puissiez exécuter le code. Les gribouillis verts sont des avertissements. Bien que vous puissiez souvent exécuter votre application sans corriger les avertissements, ils peuvent être une source de bugs et vous économisez souvent du temps et des ennuis en enquêtant sur eux. Ces avertissements et erreurs apparaissent également dans la fenêtre **Error List,** si vous préférez une vue de liste.
 
-Dans l’exemple d’application, vous voyez plusieurs tildes rouges que vous devez corriger et un plus vert que vous allez examiner. Voici la première erreur.
+Dans l’application d’échantillon, vous voyez plusieurs gribouillis rouges que vous devez fixer, et un vert que vous regarderez. Voici la première erreur.
 
-![Erreur d’illustration sous forme de tilde rouge](../debugger/media/write-better-code-red-squiggle.png)
+![Erreur montrant comme un calmar rouge](../debugger/media/write-better-code-red-squiggle.png)
 
-Pour corriger cette erreur, vous allez voir une autre fonctionnalité de l’IDE, représentée par l’icône d’ampoule.
+Pour corriger cette erreur, vous examinerez une autre fonctionnalité de l’IDE, représentée par l’icône de l’ampoule.
 
-## <a name="check-the-light-bulb"></a>Vérifiez l’ampoule !
+## <a name="check-the-light-bulb"></a>Vérifie l’ampoule !
 
-Le premier tilde rouge représente une erreur au moment de la compilation. Pointez dessus pour voir le message ```The name `Encoding` does not exist in the current context```.
+Le premier calmar rouge représente une erreur de compilation. Planer au-dessus et ```The name `Encoding` does not exist in the current context```vous voyez le message .
 
-Notez que cette erreur affiche une icône d’ampoule en bas à gauche. En plus de l’icône de tournevis ![icône de tournevis](../ide/media/screwdriver-icon.png), l’icône d’ampoule ![icône d’ampoule](../ide/media/light-bulb-icon.png) représente des actions rapides qui peuvent vous aider à corriger ou à refactoriser du code en ligne. L’ampoule représente des problèmes que vous *devez* corriger. Le tournevis est destiné aux problèmes que vous pouvez choisir de corriger. Utilisez le premier correctif suggéré pour résoudre cette erreur en cliquant sur **en utilisant System. Text** sur la gauche.
+Notez que cette erreur montre une icône d’ampoule en bas à gauche. Avec l’icône ![tournevis icône](../ide/media/screwdriver-icon.png)tournevis icône ![, l’icône](../ide/media/light-bulb-icon.png) de l’ampoule d’ampoule représente actions rapides qui peuvent vous aider à fixer ou refactor code en ligne. L’ampoule représente les problèmes que vous *devez* résoudre. Le tournevis est pour les problèmes que vous pourriez choisir de fixer. Utilisez le premier correctif suggéré pour résoudre cette erreur en cliquant sur **l’utilisation de System.Text** sur la gauche.
 
-![Utiliser l’ampoule pour corriger le code](../debugger/media/write-better-code-missing-include.png)
+![Utilisez l’ampoule pour corriger le code](../debugger/media/write-better-code-missing-include.png)
 
-Lorsque vous cliquez sur cet élément, Visual Studio ajoute l’instruction `using System.Text` en haut du fichier *Program.cs* et le tilde rouge disparaît. (Lorsque vous n’êtes pas sûr de ce qu’il faut résoudre, choisissez le lien **aperçu des modifications** à droite avant d’appliquer le correctif.)
+Lorsque vous cliquez sur cet `using System.Text` élément, Visual Studio ajoute la déclaration en haut du fichier *Program.cs,* et le calmar rouge disparaît. (Lorsque vous n’êtes pas sûr de ce qu’un correctif suggéré fera, choisissez le lien **de modifications Aperçu** sur la droite avant d’appliquer le correctif.)
 
-L’erreur précédente est une erreur courante que vous résolvez généralement en ajoutant une nouvelle `using` instruction à votre code. Il existe plusieurs erreurs courantes similaires à celles-ci, telles que les ```The type or namespace `Name` cannot be found.``` ces types d’erreurs peuvent indiquer une référence d’assembly manquant (cliquez avec le bouton droit sur le projet, choisissez **Ajouter** une **référence** > ), un nom mal orthographié ou une bibliothèque manquante C#que vous devez ajouter (pour, cliquez avec le bouton droit sur le projet et choisissez **gérer les packages NuGet**).
+L’erreur précédente est courante que vous corrigez habituellement en ajoutant une nouvelle `using` déclaration à votre code. Il existe plusieurs erreurs courantes et ```The type or namespace `Name` cannot be found.``` similaires à celle-ci, comme ces types d’erreurs, peuvent indiquer une référence d’assemblage manquante (clic droit du projet, choisissez **Add** > **Reference**), un nom mal orthographié, ou une bibliothèque manquante que vous devez ajouter (pour C, clic droit du projet et choisissez **Manage NuGet Packages**).
 
 ## <a name="fix-the-remaining-errors-and-warnings"></a>Corriger les erreurs et avertissements restants
 
-Il y a quelques tildes à examiner dans ce code. Ici, vous voyez une erreur de conversion de type commun. Quand vous pointez sur le tilde, vous constatez que le code tente de convertir une chaîne en int, ce qui n’est pas pris en charge, sauf si vous ajoutez du code explicite pour effectuer la conversion.
+Il ya un peu plus de gribouillis à regarder dans ce code. Ici, vous voyez une erreur de conversion de type commun. Lorsque vous planez au-dessus de l’échiquage, vous voyez que le code essaie de convertir une chaîne en une int, qui n’est pas pris en charge à moins que vous ajoutez du code explicite pour faire la conversion.
 
 ![Erreur de conversion de type](../debugger/media/write-better-code-conversion-error.png)
 
-Étant donné que l’analyseur de code ne peut pas deviner votre intention, il n’y a pas d’ampoules pour vous aider. Pour corriger cette erreur, vous devez connaître l’objectif du code. Dans cet exemple, il n’est pas trop difficile de voir que `points` doit être une valeur numérique (entier), puisque vous essayez d’ajouter des `points` à `totalpoints`.
+Parce que l’analyseur de code ne peut pas deviner votre intention, il n’y a pas d’ampoules pour vous aider cette fois. Pour corriger cette erreur, vous devez connaître l’intention du code. Dans cet exemple, il n’est `points` pas trop difficile de voir que devrait être une `points` `totalpoints`valeur numérique (integer), puisque vous essayez d’ajouter à .
 
-Pour corriger cette erreur, modifiez le `points` membre de la classe `User` à partir de ce qui suit :
+Pour corriger cette erreur, changez le `points` membre de la `User` classe de ceci :
 
 ```csharp
 [DataMember]
@@ -228,13 +228,13 @@ par ceci :
 internal int points;
 ```
 
-Les lignes ondulées rouges de l’éditeur de code disparaissent.
+Les lignes rouges squiggly dans l’éditeur de code disparaissent.
 
-Ensuite, pointez sur le tilde vert dans la déclaration du membre de données `points`. L’analyseur de code vous indique qu’une valeur n’est jamais assignée à la variable.
+Ensuite, planez au-dessus de l’échiquage vert dans la déclaration du membre des `points` données. L’analyseur de code vous indique que la variable n’est jamais attribuée à une valeur.
 
-![Message d’avertissement pour une variable non assignée](../debugger/media/write-better-code-warning-message.png)
+![Message d’avertissement pour la variable non assignée](../debugger/media/write-better-code-warning-message.png)
 
-En règle générale, il s’agit d’un problème qui doit être résolu. Toutefois, dans l’exemple d’application, vous stockez en fait des données dans la variable `points` pendant le processus de désérialisation, puis vous ajoutez cette valeur au membre de données `totalpoints`. Dans cet exemple, vous connaissez l’objectif du code et vous pouvez ignorer l’avertissement en toute sécurité. Toutefois, si vous souhaitez éliminer l’avertissement, vous pouvez remplacer le code suivant :
+En règle générale, cela représente un problème qui doit être résolu. Toutefois, dans l’application d’échantillon, `points` vous stockez en fait des données dans la `totalpoints` variable pendant le processus de désétérialisation, puis ajoutez cette valeur au membre des données. Dans cet exemple, vous connaissez l’intention du code et pouvez ignorer l’avertissement en toute sécurité. Toutefois, si vous souhaitez éliminer l’avertissement, vous pouvez remplacer le code suivant :
 
 ```csharp
 item.totalpoints = users[i].points;
@@ -247,27 +247,27 @@ item.points = users[i].points;
 item.totalpoints += users[i].points;
 ```
 
-Le tilde vert disparaît.
+Le calmar vert s’en va.
 
-## <a name="fix-an-exception"></a>Corriger une exception
+## <a name="fix-an-exception"></a>Fixer une exception
 
-Une fois que vous avez corrigé tous les tildes rouges et résolus, ou au moins examiné--tous les tildes verts, vous êtes prêt à démarrer le débogueur et à exécuter l’application.
+Lorsque vous avez réparé tous les gribouillis rouges et résolu - ou du moins étudié - tous les gribouillis verts, vous êtes prêt à démarrer le débbugger et exécuter l’application.
 
-Appuyez sur **F5** (**déboguer > Démarrer le débogage**) ou sur le bouton **Démarrer** le débogage ![Démarrer le débogage](../debugger/media/dbg-tour-start-debugging.png "Démarrer le débogage") dans la barre d’outils déboguer.
+Appuyez sur **F5** (**Debug > Start Debugging**) ou le bouton **Start Debugging** ![Démarrer Debugging](../debugger/media/dbg-tour-start-debugging.png "Démarrer le débogage") dans la barre d’outils Debug.
 
-À ce stade, l’exemple d’application lève une exception `SerializationException` (une erreur d’exécution). Autrement dit, l’application s’amaigrissement sur les données qu’elle tente de sérialiser. Étant donné que vous avez démarré l’application en mode débogage (débogueur attaché), le programme d’assistance de l’exception du débogueur vous amène directement sur le code qui a levé l’exception et vous donne un message d’erreur utile.
+À ce stade, l’application `SerializationException` d’échantillon jette une exception (une erreur de temps d’exécution). Autrement dit, l’application s’étouffe sur les données qu’elle essaie de sérialiser. Parce que vous avez commencé l’application en mode débogé (débbugger attaché), l’aide d’exception du débbuggeur vous emmène droit au code qui a jeté l’exception et vous donne un message d’erreur utile.
 
-![Un SerializationException se produit](../debugger/media/write-better-code-serialization-exception.png)
+![Une sérialisationException se produit](../debugger/media/write-better-code-serialization-exception.png)
 
-Le message d’erreur vous indique que la valeur `4o` ne peut pas être analysée comme un entier. Ainsi, dans cet exemple, vous savez que les données sont incorrectes : `4o` doit être `40`. Toutefois, si vous n’avez pas le contrôle des données dans un scénario réel (par exemple, si vous les obtenez à partir d’un service Web), que faites-vous de votre part ? Comment résoudre ce problème ?
+Le message d’erreur vous `4o` indique que la valeur ne peut pas être analysée comme un intégrant. Donc, dans cet exemple, vous savez `4o` que `40`les données sont mauvaises: devrait être . Cependant, si vous n’êtes pas en contrôle des données dans un scénario réel (disons que vous les obtenez à partir d’un service Web), que faites-vous à ce sujet? Comment pouvez-vous résoudre ce problème?
 
-Quand vous avez rencontré une exception, vous devez poser (et répondre) à quelques questions :
+Lorsque vous atteignez une exception, vous devez poser (et répondre) à quelques questions :
 
-* S’agit-il simplement d’un bogue que vous pouvez résoudre ? Ou,
+* Cette exception n’est-elle qu’un bug que vous pouvez corriger ? Ou,
 
-* S’agit-il d’une exception que vos utilisateurs peuvent rencontrer ?
+* Cette exception est-elle quelque chose que vos utilisateurs pourraient rencontrer ?
 
-Si c’est le premier, corrigez le bogue. (Dans l’exemple d’application, cela signifie corriger les données incorrectes.) S’il s’agit de ce dernier, vous devrez peut-être gérer l’exception dans votre code à l’aide d’un bloc de `try/catch` (nous examinons d’autres stratégies possibles dans la section suivante). Dans l’exemple d’application, remplacez le code suivant :
+Si c’est le premier, répare le bogue. (Dans l’application d’échantillon, cela signifie fixer les mauvaises données.) Si c’est ce dernier, vous devrez peut-être `try/catch` gérer l’exception dans votre code à l’aide d’un bloc (nous examinons d’autres stratégies possibles dans la section suivante). Dans l’application d’échantillon, remplacez le code suivant :
 
 ```csharp
 users = ser.ReadObject(ms) as User[];
@@ -287,13 +287,13 @@ catch (SerializationException)
 }
 ```
 
-Un bloc de `try/catch` a un coût de performance, donc vous ne souhaiterez les utiliser que lorsque vous en avez vraiment besoin, c’est-à-dire, où (a) ils peuvent se produire dans la version Release de l’application, et où (b) la documentation de la méthode indique que vous devez vérifier l’exception (en supposant que la documentation est terminée !). Dans de nombreux cas, vous pouvez gérer une exception de manière appropriée et l’utilisateur n’a jamais besoin de la connaître.
+Un `try/catch` bloc a un certain coût de performance, de sorte que vous ne voudrez les utiliser quand vous en avez vraiment besoin, c’est-à-dire, où (a) ils pourraient se produire dans la version de sortie de l’application, et où (b) la documentation pour la méthode indique que vous devriez vérifier l’exception (en supposant que la documentation est complète!). Dans de nombreux cas, vous pouvez gérer une exception de manière appropriée et l’utilisateur n’aura jamais besoin de le savoir.
 
-Voici quelques conseils importants pour la gestion des exceptions :
+Voici quelques conseils importants pour la gestion des exceptions :
 
-* Évitez d’utiliser un bloc catch vide, comme `catch (Exception) {}`, qui ne prend pas l’action appropriée pour exposer ou gérer une erreur. Un bloc catch vide ou non instructif peut masquer des exceptions et peut rendre votre code plus difficile à déboguer au lieu de le déboguer plus facilement.
+* Évitez d’utiliser un `catch (Exception) {}`bloc de capture vide, comme, qui ne prend pas les mesures appropriées pour exposer ou gérer une erreur. Un bloc de capture vide ou non informatif peut masquer des exceptions et peut rendre votre code plus difficile à déboiffer au lieu de plus facile.
 
-* Utilisez le bloc `try/catch` autour de la fonction spécifique qui lève l’exception (`ReadObject`, dans l’exemple d’application). Si vous l’utilisez dans un plus grand segment de code, vous finissent par masquer l’emplacement de l’erreur. Par exemple, n’utilisez pas le bloc `try/catch` autour de l’appel à la fonction parente `ReadToObject`, indiqué ici, ou vous ne saurez pas exactement où l’exception s’est produite.
+* Utilisez `try/catch` le bloc autour de la fonction`ReadObject`spécifique qui jette l’exception (, dans l’application échantillon). Si vous l’utilisez autour d’un plus grand morceau de code, vous finissez par cacher l’emplacement de l’erreur. Par exemple, n’utilisez `try/catch` pas le bloc autour `ReadToObject`de l’appel à la fonction parent, montré ici, ou vous ne saurez pas exactement où l’exception s’est produite.
 
     ```csharp
     // Don't do this
@@ -306,19 +306,19 @@ Voici quelques conseils importants pour la gestion des exceptions :
     }
     ```
 
-* Pour les fonctions non familières que vous incluez dans votre application, en particulier celles qui interagissent avec les données externes (par exemple, une requête Web), consultez la documentation pour connaître les exceptions susceptibles d’être levées par la fonction. Il peut s’agir d’informations essentielles pour gérer correctement les erreurs et pour déboguer votre application.
+* Pour les fonctions inconnues que vous incluez dans votre application, en particulier celles qui interagissent avec des données externes (comme une demande Web), vérifiez la documentation pour voir quelles exceptions la fonction est susceptible de jeter. Cela peut être des informations critiques pour le traitement des erreurs appropriées et pour débogage de votre application.
 
-Pour l’exemple d’application, corrigez les `SerializationException` dans la méthode `GetJsonData` en remplaçant `4o` par `40`.
+Pour l’application d’échantillon, `SerializationException` fixer la méthode dans la `GetJsonData` méthode en changeant `4o` de `40`.
 
-## <a name="clarify-your-code-intent-by-using-assert"></a>Clarifier votre intention de code à l’aide d’Assert
+## <a name="clarify-your-code-intent-by-using-assert"></a>Clarifiez votre intention de code en utilisant assert
 
-Cliquez sur le bouton **redémarrer l'** ![application de redémarrage](../debugger/media/dbg-tour-restart.png "RestartApp") dans la barre d’outils déboguer (**CTRL** + **MAJ** + **F5**). L’application est redémarrée en moins d’étapes. La sortie suivante s’affiche dans la fenêtre de console.
+Cliquez sur le bouton **Redémarrer** ![l’application](../debugger/media/dbg-tour-restart.png "RedémarrerApp") de redémarrage dans la barre d’outils Debug (**Ctrl** + **Shift** + **F5**). Cela redémarre l’application en moins d’étapes. Vous voyez la sortie suivante dans la fenêtre de la console.
 
-![Valeur null dans la sortie](../debugger/media/write-better-code-using-assert-null-output.png)
+![Valeur nulle dans la sortie](../debugger/media/write-better-code-using-assert-null-output.png)
 
-Vous pouvez voir quelque chose dans cette sortie qui n’est pas tout à fait correct. **Name** et **LastName** pour le troisième enregistrement sont vides.
+Vous pouvez voir quelque chose dans cette sortie qui n’est pas tout à fait raison. **nom** et **nom de famille** pour le troisième album sont vides!
 
-C’est un bon moment pour parler d’une pratique de codage utile, souvent sous-exploitée, qui consiste à utiliser des instructions `assert` dans vos fonctions. En ajoutant le code suivant, vous incluez une vérification à l’exécution pour vous assurer que `firstname` et `lastname` ne sont pas `null`. Remplacez le code suivant dans la méthode `UpdateRecords` :
+C’est le bon moment pour parler d’une pratique de codage `assert` utile, souvent sous-utilisée, qui est d’utiliser des instructions dans vos fonctions. En ajoutant le code suivant, vous incluez `firstname` une `lastname` vérification `null`du temps d’exécution pour vous assurer que et ne sont pas . Remplacer le code `UpdateRecords` suivant dans la méthode :
 
 ```csharp
 if (existingUser == false)
@@ -341,28 +341,28 @@ if (existingUser == false)
     user.lastname = users[i].lastname;
 ```
 
-En ajoutant `assert` instructions de ce type à vos fonctions pendant le processus de développement, vous pouvez vous aider à spécifier l’objectif de votre code. Dans l’exemple précédent, nous spécifions ce qui suit :
+En `assert` ajoutant des instructions comme celle-ci à vos fonctions pendant le processus de développement, vous pouvez vous aider à spécifier l’intention de votre code. Dans l’exemple précédent, nous spécifions ce qui suit :
 
 * Une chaîne valide est requise pour le prénom
 * Une chaîne valide est requise pour le nom de famille
 
-En spécifiant l’intention de cette manière, vous appliquez vos exigences. Il s’agit d’une méthode simple et pratique que vous pouvez utiliser pour exposer des bogues pendant le développement. (les instructions`assert` sont également utilisées en tant qu’élément principal dans les tests unitaires.)
+En spécifiant l’intention de cette façon, vous appliquez vos exigences. Il s’agit d’une méthode simple et pratique que vous pouvez utiliser pour les bogues de surface pendant le développement. (`assert` les énoncés sont également utilisés comme élément principal dans les tests unitaires.)
 
-Cliquez sur le bouton **redémarrer l'** ![application de redémarrage](../debugger/media/dbg-tour-restart.png "RestartApp") dans la barre d’outils déboguer (**CTRL** + **MAJ** + **F5**).
-
-> [!NOTE]
-> Le code `assert` est actif uniquement dans une version Debug.
-
-Lorsque vous redémarrez, le débogueur s’arrête sur l’instruction `assert`, car l’expression `users[i].firstname != null` prend la valeur `false` au lieu de `true`.
-
-![L’assertion est résolue en false](../debugger/media/write-better-code-using-assert.png)
-
-Le `assert` erreur vous indique qu’il y a un problème que vous devez examiner. `assert` peut couvrir de nombreux scénarios dans lesquels vous ne voyez pas nécessairement une exception. Dans cet exemple, l’utilisateur ne voit pas d’exception et une valeur `null` est ajoutée en tant que `firstname` dans votre liste d’enregistrements. Cela peut entraîner des problèmes plus tard (comme vous pouvez le voir dans la sortie de la console) et peut être plus difficile à déboguer.
+Cliquez sur le bouton **Redémarrer** ![l’application](../debugger/media/dbg-tour-restart.png "RedémarrerApp") de redémarrage dans la barre d’outils Debug (**Ctrl** + **Shift** + **F5**).
 
 > [!NOTE]
-> Dans les scénarios où vous appelez une méthode sur la valeur `null`, un `NullReferenceException` résultats. Normalement, vous souhaitez éviter d’utiliser un bloc de `try/catch` pour une exception générale, autrement dit, une exception qui n’est pas liée à la fonction de bibliothèque spécifique. Tout objet peut lever une `NullReferenceException`. Si vous n’êtes pas sûr, consultez la documentation relative à la fonction de bibliothèque.
+> Le `assert` code n’est actif que dans une version Debug.
 
-Pendant le processus de débogage, il est préférable de conserver une instruction `assert` particulière jusqu’à ce que vous sachiez que vous devez la remplacer par un correctif de code réel. Supposons que vous décidiez que l’utilisateur peut rencontrer l’exception dans une version Release de l’application. Dans ce cas, vous devez refactoriser le code pour vous assurer que votre application ne lève pas d’exception fatale ou qu’une autre erreur se produit. Par conséquent, pour corriger ce code, remplacez le code suivant :
+Lorsque vous redémarrez, le débbuggeur s’arrête sur `assert` la déclaration, parce que l’expression `users[i].firstname != null` évalue au `false` lieu de `true`.
+
+![Assert se résout au faux](../debugger/media/write-better-code-using-assert.png)
+
+L’erreur `assert` vous indique qu’il y a un problème que vous devez étudier. `assert`peut couvrir de nombreux scénarios où vous ne voyez pas nécessairement une exception. Dans cet exemple, l’utilisateur ne verra `null` pas d’exception, et une valeur est ajoutée comme `firstname` dans votre liste d’enregistrements. Cela peut causer des problèmes plus tard (comme vous le voyez dans la sortie de la console) et pourrait être plus difficile à déboiffer.
+
+> [!NOTE]
+> Dans les scénarios où vous `null` appelez `NullReferenceException` une méthode sur la valeur, un résultat. Vous voulez normalement éviter `try/catch` d’utiliser un bloc pour une exception générale, c’est-à-dire une exception qui n’est pas liée à la fonction spécifique de la bibliothèque. N’importe quel `NullReferenceException`objet peut jeter un . Vérifiez la documentation pour la fonction de bibliothèque si vous n’êtes pas sûr.
+
+Pendant le processus de débogage, il `assert` est bon de garder une instruction particulière jusqu’à ce que vous savez que vous devez le remplacer par un correctif de code réel. Supposons que vous décidiez que l’utilisateur pourrait rencontrer l’exception dans une version de l’application. Dans ce cas, vous devez refactor code pour s’assurer que votre application ne jette pas une exception fatale ou entraîner une autre erreur. Donc, pour corriger ce code, remplacez le code suivant :
 
 ```csharp
 if (existingUser == false)
@@ -378,9 +378,9 @@ if (existingUser == false && users[i].firstname != null && users[i].lastname != 
     User user = new User();
 ```
 
-En utilisant ce code, vous répondez à vos besoins en matière de code et vous vous assurez qu’un enregistrement avec une `firstname` ou `lastname` valeur de `null` n’est pas ajouté aux données.
+En utilisant ce code, vous répondez à vos `firstname` exigences `lastname` en `null` matière de code et assurez-vous qu’un enregistrement avec une ou une valeur de n’est pas ajouté aux données.
 
-Dans cet exemple, nous avons ajouté les deux instructions `assert` à l’intérieur d’une boucle. En général, lors de l’utilisation de `assert`, il est préférable d’ajouter des instructions `assert` au point d’entrée (à partir de) d’une fonction ou d’une méthode. Vous examinez actuellement la méthode `UpdateRecords` dans l’exemple d’application. Dans cette méthode, vous savez que vous rencontrez des problèmes si l’un des arguments de méthode est `null`, donc vérifiez-les tous deux avec une instruction `assert` au niveau du point d’entrée de la fonction.
+Dans cet exemple, nous `assert` avons ajouté les deux déclarations à l’intérieur d’une boucle. Typiquement, lors `assert`de l’utilisation `assert` , il est préférable d’ajouter des déclarations au point d’entrée (début) d’une fonction ou une méthode. Vous êtes actuellement `UpdateRecords` à la recherche de la méthode dans l’application échantillon. Dans cette méthode, vous savez que vous êtes `null`en difficulté si l’un des arguments de la méthode est , alors vérifiez-les tous les deux avec une déclaration au point d’entrée `assert` de la fonction.
 
 ```csharp
 public static void UpdateRecords(List<User> db, User[] users)
@@ -389,37 +389,37 @@ public static void UpdateRecords(List<User> db, User[] users)
     Debug.Assert(users != null);
 ```
 
-Pour les instructions précédentes, votre objectif est de charger les données existantes (`db`) et de récupérer les nouvelles données (`users`) avant de mettre à jour quoi que ce soit.
+Pour les instructions précédentes, votre intention`db`est que vous`users`chargez les données existantes ( ) et de récupérer de nouvelles données ( ) avant de mettre à jour quoi que ce soit.
 
-Vous pouvez utiliser `assert` avec n’importe quel type d’expression résolu en `true` ou `false`. Par exemple, vous pouvez ajouter une instruction `assert` comme celle-ci.
+Vous pouvez `assert` utiliser avec n’importe `true` quel `false`type d’expression qui se résout à ou . Ainsi, par exemple, vous `assert` pouvez ajouter une déclaration comme celle-ci.
 
 ```csharp
 Debug.Assert(users[0].points > 0);
 ```
 
-Le code précédent est utile si vous souhaitez spécifier l’intention suivante : une nouvelle valeur de point supérieure à zéro (0) est nécessaire pour mettre à jour l’enregistrement de l’utilisateur.
+Le code précédent est utile si vous souhaitez spécifier l’intention suivante : une nouvelle valeur de point supérieure à zéro (0) est nécessaire pour mettre à jour l’enregistrement de l’utilisateur.
 
-## <a name="inspect-your-code-in-the-debugger"></a>Inspecter votre code dans le débogueur
+## <a name="inspect-your-code-in-the-debugger"></a>Inspectez votre code dans le débbuggeur
 
-Maintenant que vous avez résolu tous les problèmes critiques avec l’exemple d’application, vous pouvez passer à d’autres choses importantes !
+OK, maintenant que vous avez réparé tout ce qui est critique qui ne va pas avec l’application échantillon, vous pouvez passer à d’autres choses importantes!
 
-Nous vous avons montré l’assistance sur l’exception du débogueur, mais le débogueur est un outil bien plus puissant qui vous permet également d’effectuer d’autres opérations, telles que parcourir votre code et inspecter ses variables. Ces fonctionnalités plus puissantes sont utiles dans de nombreux scénarios, notamment les suivants :
+Nous vous avons montré l’aide d’exception du débbugger, mais le débbugger est un outil beaucoup plus puissant qui vous permet également de faire d’autres choses comme passer à travers votre code et inspecter ses variables. Ces capacités plus puissantes sont utiles dans de nombreux scénarios, en particulier les suivants:
 
-* Vous essayez d’isoler un bogue au moment de l’exécution dans votre code, mais vous ne pouvez pas le faire à l’aide des méthodes et des outils abordés précédemment.
+* Vous essayez d’isoler un bogue de temps d’exécution dans votre code, mais êtes incapable de le faire en utilisant des méthodes et des outils précédemment discutés.
 
-* Vous souhaitez valider votre code, c’est-à-dire le regarder pendant qu’il s’exécute pour vous assurer qu’il se comporte comme vous le souhaitez et faire ce que vous voulez.
+* Vous voulez valider votre code, c’est-à-dire le regarder pendant qu’il s’exécute pour vous assurer qu’il se comporte comme vous vous y attendez et faire ce que vous voulez.
 
-    Il est intéressant de surveiller votre code pendant son exécution. Vous pouvez en savoir plus sur votre code de cette façon et vous pouvez souvent identifier les bogues avant de manifester des symptômes évidents.
+    Il est instructif de regarder votre code pendant qu’il s’exécute. Vous pouvez en apprendre davantage sur votre code de cette façon et peut souvent identifier les bogues avant qu’ils ne manifestent des symptômes évidents.
 
-Pour savoir comment utiliser les fonctionnalités essentielles du débogueur, consultez [débogage pour les débutants absolus](../debugger/debugging-absolute-beginners.md).
+Pour apprendre à utiliser les caractéristiques essentielles du débogage, voir [Debugging pour les débutants absolus](../debugger/debugging-absolute-beginners.md).
 
 ## <a name="fix-performance-issues"></a>Résoudre les problèmes de performances
 
-Les bogues d’un autre genre incluent du code inefficace qui entraîne un ralentissement de l’exécution de votre application ou l’utilisation d’une trop grande quantité de mémoire. En général, l’optimisation des performances est une opération que vous effectuez plus tard dans le développement de vos applications. Toutefois, vous pouvez rencontrer des problèmes de performances plus tôt (par exemple, vous constatez que certaines parties de votre application s’exécutent lentement) et vous devrez peut-être tester votre application avec les outils de profilage au début. Pour plus d’informations sur les outils de profilage, tels que l’outil utilisation de l’UC et l’analyseur de mémoire, consultez [tout d’abord les outils de profilage](../profiling/profiling-feature-tour.md).
+Les bogues d’un autre type incluent le code inefficace qui fait fonctionner votre application lentement ou pour employer trop de mémoire. En général, l’optimisation des performances est quelque chose que vous faites plus tard dans le développement de votre application. Cependant, vous pouvez rencontrer des problèmes de performances tôt (par exemple, vous voyez qu’une partie de votre application est en cours d’exécution lente), et vous devrez peut-être tester votre application avec les outils de profilage dès le début. Pour plus d’informations sur les outils de profilage tels que l’outil d’utilisation du processeur et l’analyseur de mémoire, voir [d’abord les outils de profilage](../profiling/profiling-feature-tour.md).
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-Dans cet article, vous avez appris comment éviter et résoudre de nombreux bogues courants dans votre code et quand utiliser le débogueur. Ensuite, en savoir plus sur l’utilisation du débogueur Visual Studio pour corriger les bogues.
+Dans cet article, vous avez appris à éviter et à corriger de nombreux bogues courants dans votre code et quand utiliser le débbugger. Ensuite, en savoir plus sur l’utilisation du débbuggeur Visual Studio pour corriger les bogues.
 
 > [!div class="nextstepaction"]
-> [Débogage pour les grands débutants](../debugger/debugging-absolute-beginners.md)
+> [Débogage pour grands débutants](../debugger/debugging-absolute-beginners.md)

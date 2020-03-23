@@ -12,11 +12,11 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: 5befdfb5f6974ff7b042319121a27c3628757b6e
-ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "78409416"
+ms.lasthandoff: 03/20/2020
+ms.locfileid: "79302860"
 ---
 # <a name="step-2-create-a-django-app-with-views-and-page-templates"></a>Étape 2 : Créer une application Django avec des vues et des modèles de pages
 
@@ -51,15 +51,15 @@ Une application Django commence généralement par un ensemble standard de fichi
 | Élément | Description |
 | --- | --- |
 | **\_\_init\_\_.py** | Le fichier qui identifie l’application en tant que package. |
-| **migrations** | Un dossier dans lequel Django stocke les scripts qui mettent à jour la base de données pour s’aligner avec les modifications apportées aux modèles. Les outils de migration de Django s’appliquent alors aux modifications nécessaires apportées à toute version précédente de la base de données afin qu’elle corresponde aux modèles actuels. À l’aide des migrations, restez concentré sur vos modèles et laissez Django gérer le schéma de la base de données sous-jacente. Les migrations sont présentées à l’étape 6. Pour l’instant, le dossier contient simplement un fichier *\_\_init\_\_.py* (indiquant que le dossier définit son propre package Python). |
-| **modèles** | Dossier pour les modèles de page Django contenant un seul fichier *index.html* dans un dossier correspondant au nom de l’application. (Dans Visual Studio 2017 15,7 et versions antérieures, le fichier est contenu directement sous *modèles* et étape 2-4 vous demande de créer le sous-dossier.) Les modèles sont des blocs de code HTML dans lesquels des vues peuvent ajouter des informations pour afficher dynamiquement une page. Les « variables » du modèle de page, comme `{{ content }}` dans *index.html*, sont des espaces réservés pour des valeurs dynamiques, comme expliqué plus loin dans cet article (étape 2). Les applications Django créent généralement un espace de noms pour les modèles en les plaçant dans un sous-dossier qui correspond au nom de l’application. |
+| **migrations** | Un dossier dans lequel Django stocke les scripts qui mettent à jour la base de données pour s’aligner avec les modifications apportées aux modèles. Les outils de migration de Django s’appliquent alors aux modifications nécessaires apportées à toute version précédente de la base de données afin qu’elle corresponde aux modèles actuels. À l’aide des migrations, restez concentré sur vos modèles et laissez Django gérer le schéma de la base de données sous-jacente. Les migrations sont discutées à l’étape 6; pour l’instant, le * \_ \_\_\_* dossier contient simplement un fichier init .py (indiquant que le dossier définit son propre paquet Python). |
+| **Modèles** | Dossier pour les modèles de page Django contenant un seul fichier *index.html* dans un dossier correspondant au nom de l’application. (Dans Visual Studio 2017 15.7 et plus tôt, le fichier est contenu directement sous *les modèles* et l’étape 2-4 vous demande de créer le sous-plieur.) Les modèles sont des blocs de HTML dans lesquels les vues peuvent ajouter des informations pour rendre dynamiquement une page. Les « variables » du modèle de page, comme `{{ content }}` dans *index.html*, sont des espaces réservés pour des valeurs dynamiques, comme expliqué plus loin dans cet article (étape 2). Les applications Django créent généralement un espace de noms pour les modèles en les plaçant dans un sous-dossier qui correspond au nom de l’application. |
 | **admin.py** | Le fichier Python dans lequel vous étendez l’interface d’administration de l’application (reportez-vous à l’étape 6), utilisée pour initialiser une base de données et modifier ses données. Au départ, ce fichier contient uniquement l’instruction, `from django.contrib import admin`. Par défaut, Django inclut une interface administrative standard à partir des entrées dans le fichier *settings.py* du projet Django, que vous pouvez activer en décommentant les entrées existantes dans *urls.py*. |
 | **apps.py** | Un fichier Python qui définit une classe de configuration de l’application (voir ci-après, après cette table). |
 | **models.py** | Les modèles sont des objets de données, identifiés par des fonctions, grâce auxquels les affichages interagissent avec la base de données sous-jacente de l’application (consultez l’étape 6). Django fournit le calque de connexion de base de données afin que les applications n’aient pas à se préoccuper de ces détails. Le fichier *models.py* est l’emplacement par défaut dans lequel créer vos modèles et contient initialement uniquement l’instruction, `from django.db import models`. |
 | **tests.py** | Un fichier Python qui contient la structure de base des tests unitaires. |
 | **views.py** | Les affichages sont en général ce que vous appelez pages Web, qui prennent une requête HTTP et retournent une réponse HTTP. Les affichages affichent généralement en langage HTML que les navigateurs Web savent comment afficher, mais un affichage ne doit pas nécessairement être visible (par exemple, un formulaire intermédiaire). Un affichage est défini par une fonction Python dont la responsabilité est d’afficher le langage HTML à envoyer au navigateur. Le fichier *views.py* est l’emplacement par défaut dans lequel créer des affichages et contient initialement uniquement l’instruction, `from django.shortcuts import render`. |
 
-Le contenu de *apps.py* se présente comme suit quand vous utilisez le nom « HelloDjangoApp » :
+Le contenu de *apps.py* apparaît comme suit lors de l’utilisation du nom "HelloDjangoApp":
 
 ```python
 from django.apps import AppConfig
@@ -70,11 +70,11 @@ class HelloDjangoAppConfig(AppConfig):
 
 ### <a name="question-is-creating-a-django-app-in-visual-studio-any-different-from-creating-an-app-on-the-command-line"></a>Question : la création d’une application Django dans Visual Studio diffère-t-elle de la création d’une application sur la ligne de commande ?
 
-Réponse : l’exécution de la commande **Ajouter** > **application Django** ou l’utilisation de **Ajouter** > **un nouvel élément** avec un modèle d’application Django produit les mêmes fichiers que la commande Django `manage.py startapp <app_name>`. L’avantage de la création de l’application dans Visual Studio est que le dossier de l’application et tous ses fichiers sont automatiquement intégrés dans le projet. Vous pouvez utiliser la même commande de Visual Studio pour créer toutes les applications que vous désirez dans votre projet.
+Réponse : L’exécution de la commande**de l’application** **Add** > Django ou l’utilisation **d’Add** > **New Item** avec un modèle d’application Django produit les mêmes fichiers que la commande `manage.py startapp <app_name>`Django . L’avantage de la création de l’application dans Visual Studio est que le dossier de l’application et tous ses fichiers sont automatiquement intégrés dans le projet. Vous pouvez utiliser la même commande de Visual Studio pour créer toutes les applications que vous désirez dans votre projet.
 
 ## <a name="step-2-2-run-the-app-from-the-django-project"></a>Étape 2-2 : exécuter l’application à partir du projet Django
 
-À ce stade, si vous exécutez à nouveau le projet dans Visual Studio (à l’aide du bouton de la barre d’outils ou **Déboguer** > **Démarrer le débogage**), vous voyez toujours la page par défaut. Aucun contenu de l’application ne s’affiche, car vous devez définir une page spécifique à l’application et ajouter l’application au projet Django :
+À ce stade, si vous exécutez le projet à nouveau dans Visual Studio (en utilisant le bouton barre d’outils ou **Debug** > **Start Debugging**), vous voyez toujours la page par défaut. Aucun contenu de l’application ne s’affiche, car vous devez définir une page spécifique à l’application et ajouter l’application au projet Django :
 
 1. Dans le dossier *HelloDjangoApp*, modifiez *views.py* pour faire correspondre le code ci-dessous, qui définit un affichage nommé « index » :
 
@@ -101,7 +101,7 @@ Réponse : l’exécution de la commande **Ajouter** > **application Django** o
 
     Chaque modèle d’URL décrit les affichages pour lesquels Django achemine les URL relatives au site spécifiques (autrement dit, la partie qui suit `https://www.domain.com/`). La première entrée dans `urlPatterns` qui commence par l’expression régulière `^$` est le routage pour la racine du site, « / ». La deuxième entrée, `^home$` achemine en particulier « /home ». Vous pouvez avoir plusieurs routages pour le même affichage.
 
-1. Réexécutez le projet pour afficher le message **Hello, Django!** tel que défini par l'utilisateur. Arrêtez le serveur lorsque vous avez terminé.
+1. Exécutez le projet à nouveau pour voir le message **Bonjour, Django!** tel que défini par l'utilisateur. Arrêtez le serveur lorsque vous avez terminé.
 
 ### <a name="commit-to-source-control"></a>Valider pour le contrôle de code source
 
@@ -111,7 +111,7 @@ Réponse : l’exécution de la commande **Ajouter** > **application Django** o
 
     ![Le contrôle de code source modifie le bouton sur la barre d’état de Visual Studio](media/django/step02-source-control-changes-button.png)
 
-1. Dans **Team Explorer**, entrez un message de validation comme « Créer une application Django initiale » et sélectionnez **Valider tout**. Une fois la validation terminée, vous voyez un message **commit \<hash > créé localement. Synchronisez pour partager vos modifications avec le serveur.** Si vous souhaitez envoyer les modifications vers votre référentiel distant, sélectionnez **Synchronisation**, puis sélectionnez **Envoyer** sous **Validations sortantes**. Vous pouvez également accumuler plusieurs validations locales avant d’envoyer à distance.
+1. Dans **Team Explorer**, entrez un message de validation comme « Créer une application Django initiale » et sélectionnez **Valider tout**. Lorsque le commit est terminé, vous voyez un message **Commit \<hachage> créé localement. Synchronisez pour partager vos modifications avec le serveur.** Si vous souhaitez envoyer les modifications vers votre référentiel distant, sélectionnez **Synchronisation**, puis sélectionnez **Envoyer** sous **Validations sortantes**. Vous pouvez également accumuler plusieurs validations locales avant d’envoyer à distance.
 
     ![Envoyer des validations à distance dans Team Explorer](media/django/step02-source-control-push-to-remote.png)
 
@@ -149,7 +149,7 @@ def index(request):
 Exécutez le projet à nouveau pour afficher le message tel que «**Bonjour, Django !** le lundi 16 avril 2018 à 16:28:10 ». Actualisez la page pour mettre à jour l’heure et confirmer que le contenu est généré à chaque requête. Arrêtez le serveur lorsque vous avez terminé.
 
 > [!Tip]
-> Il existe un raccourci pour arrêter et redémarrer le projet. Il consiste à utiliser la commande de menu **Déboguer** > **Redémarrer** (**Ctrl**+**Maj**+**F5**) ou le bouton **Redémarrer** de la barre d’outils de débogage :
+> Un raccourci pour arrêter et redémarrer le projet est d’utiliser la commande de menu **Debug** > **Restart** (**Ctrl**+**Shift**+**F5**) ou le bouton **Redémarrer** sur la barre d’outils de débogage :
 >
 > ![Bouton Redémarrer de la barre d’outils de débogage dans Visual Studio](media/debugging-restart-toolbar-button.png)
 
@@ -247,7 +247,7 @@ Les étapes suivantes illustrent l’utilisation de modèles de page :
 
     ![Exécution de l’application à l’aide du modèle](media/django/step02-result.png)
 
-1. <a name="template-namespacing"></a>Visual Studio 2017 version 15.7 et versions antérieures : pour finir, déplacez vos modèles dans un sous-dossier portant le même nom que votre application, ce qui permet de créer un espace de noms et d’éviter les conflits potentiels avec d’autres applications que vous pouvez éventuellement ajouter au projet. (Les modèles dans VS 2017 15.8 + le font automatiquement pour vous.) Autrement dit, créez un sous-dossier dans les *modèles* nommés *HelloDjangoApp*, déplacez *index. html* dans ce sous-dossier, puis modifiez la fonction d’affichage `index` pour faire référence au nouveau chemin d’accès du modèle, *HelloDjangoApp/index.html*. Puis exécutez le projet, vérifiez que la page s’affiche correctement et arrêtez le serveur.
+1. <a name="template-namespacing"></a>Visual Studio 2017 version 15.7 et versions antérieures : pour finir, déplacez vos modèles dans un sous-dossier portant le même nom que votre application, ce qui permet de créer un espace de noms et d’éviter les conflits potentiels avec d’autres applications que vous pouvez éventuellement ajouter au projet. (Les modèles de VS 2017 15.8md le font automatiquement.) C’est-à-dire, créer un sous-plieur dans *les modèles nommés* *HelloDjangoApp*, déplacer *index.html* dans ce sous-pli, et modifier la `index` fonction de vue pour se référer à la nouvelle voie du modèle, *HelloDjangoApp/index.html*. Puis exécutez le projet, vérifiez que la page s’affiche correctement et arrêtez le serveur.
 
 1. Validez vos modifications du contrôle de code source et mettez à jour votre référentiel distant, si vous le souhaitez, comme indiqué sous [l’étape 2-2](#commit-to-source-control).
 

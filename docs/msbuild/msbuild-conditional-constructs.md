@@ -23,15 +23,15 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 0a06849c2aa0f4ec0203a7209ffc78be438dba9e
-ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/26/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77633380"
 ---
 # <a name="msbuild-conditional-constructs"></a>Constructions conditionnelles MSBuild
 
-MSBuild fournit un mécanisme de traitement de type/ou avec les éléments [Choose](../msbuild/choose-element-msbuild.md), [When](../msbuild/when-element-msbuild.md)et [otherwise](../msbuild/otherwise-element-msbuild.md) .
+MSBuild fournit un mécanisme pour l’un ou l’autre / ou le traitement avec le [Choisir](../msbuild/choose-element-msbuild.md), [Quand](../msbuild/when-element-msbuild.md), et [autrement](../msbuild/otherwise-element-msbuild.md) des éléments.
 
 ## <a name="use-the-choose-element"></a>Utiliser l’élément Choose
 
@@ -39,7 +39,7 @@ MSBuild fournit un mécanisme de traitement de type/ou avec les éléments [Choo
 
  Les éléments `Choose` peuvent être utilisés comme des éléments enfants des éléments `Project`, `When` et `Otherwise`. Les éléments `When` et `Otherwise` peuvent avoir des éléments enfants `ItemGroup`, `PropertyGroup` ou `Choose`.
 
-## <a name="example"></a>Exemple
+## <a name="example"></a> Exemple
 
  L’exemple suivant utilise les éléments `Choose` et `When` pour un traitement de type « soit/soit ». Les propriétés et les éléments du projet sont définis en fonction de la valeur de la propriété `Configuration`.
 
@@ -81,7 +81,7 @@ MSBuild fournit un mécanisme de traitement de type/ou avec les éléments [Choo
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Choose, élément (MSBuild)](../msbuild/choose-element-msbuild.md)
-- [When, élément (MSBuild)](../msbuild/when-element-msbuild.md)
+- [Choisissez l’élément (MSBuild)](../msbuild/choose-element-msbuild.md)
+- [Lorsque l’élément (MSBuild)](../msbuild/when-element-msbuild.md)
 - [Otherwise, élément (MSBuild)](../msbuild/otherwise-element-msbuild.md)
-- [Informations de référence sur MSBuild](../msbuild/msbuild-reference.md)
+- [Référence MSBuild](../msbuild/msbuild-reference.md)

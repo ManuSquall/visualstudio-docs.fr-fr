@@ -1,5 +1,5 @@
 ---
-title: Outils de conteneur Visual Studio avec ASP.NET
+title: Outils de conteneurs de studio visuel avec ASP.NET
 author: ghogen
 description: Découvrir comment utiliser les outils de conteneur Visual Studio et le client Docker pour Windows
 ms.author: ghogen
@@ -7,13 +7,13 @@ ms.date: 01/24/2020
 ms.technology: vs-azure
 ms.topic: include
 ms.openlocfilehash: 775abc2699bf3cef2dd360df701ab12b69a49496
-ms.sourcegitcommit: b2fc9ac7d73c847508f6ed082bed026476bb3955
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/05/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77027315"
 ---
-# <a name="quickstart-docker-in-visual-studio"></a>Démarrage rapide : docker dans Visual Studio
+# <a name="quickstart-docker-in-visual-studio"></a>Quickstart: Docker dans Visual Studio
 
 ::: moniker range="vs-2017"
 

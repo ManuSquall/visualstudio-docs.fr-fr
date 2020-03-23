@@ -27,33 +27,33 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: a37d4fa5dc92253b94dc64590c9df5fec7703ceb
-ms.sourcegitcommit: b016ea260856264eee730ee8cbcab198314a7ece
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/28/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77904163"
 ---
 # <a name="understand-build-configurations"></a>Présentation des configurations de build
 
-Vous avez besoin de configurations de build lorsque vous devez générer vos projets avec des paramètres différents. Par exemple, **Debug** et **Release** sont des configurations et des options de compilateur différentes sont utilisées en conséquence lors de leur génération.  Une configuration est active et est indiquée dans la barre de commandes en haut de l’IDE.
+Vous avez besoin de configurations de construction lorsque vous avez besoin de construire vos projets avec des paramètres différents. Par exemple, **Debug** et **Release** sont des configurations et différentes options de compilateur sont utilisées en conséquence lors de leur construction.  Une configuration est active et est indiquée dans la barre de commande en haut de l’IDE.
 
 ![Configuration active](media/understanding-build-configurations/active-config.png)
 
 > [!NOTE]
 > Cette rubrique s’applique à Visual Studio sur Windows. Pour Visual Studio pour Mac, consultez [Créer des configurations dans Visual Studio pour Mac](/visualstudio/mac/configurations).
 
-La configuration et le contrôle de plateforme où sont stockés les fichiers de sortie générés. Normalement, lorsque Visual Studio génère votre projet, la sortie est placée dans un sous-dossier de projet nommé avec la configuration active (par exemple, *bin/debug/x86*), mais vous pouvez le modifier.
+La configuration et le contrôle de la plate-forme où les fichiers de sortie intégrés sont stockés. Normalement, lorsque Visual Studio construit votre projet, la sortie est placée dans un sous-plieur de projet nommé avec la configuration active (par exemple, *bin/Debug/x86),* mais vous pouvez changer cela.
 
-Vous pouvez créer vos propres configurations de build au niveau de la solution et du projet. La configuration de la solution détermine quels projets sont inclus dans la build lorsque cette configuration est active. Seuls les projets spécifiés dans la configuration de solution active seront générés. Si plusieurs plateformes cibles sont sélectionnées dans Configuration Manager, tous les projets qui s’appliquent à cette plateforme sont générés. La configuration du projet détermine quels paramètres de génération et options du compilateur sont utilisés lorsque vous générez le projet.
+Vous pouvez créer vos propres configurations de construction au niveau de la solution et du projet. La configuration de la solution détermine quels projets sont inclus dans la construction lorsque cette configuration est active. Seuls les projets spécifiés dans la configuration de la solution active seront construits. Si plusieurs plates-formes cibles sont sélectionnées dans Configuration Manager, tous les projets qui s’appliquent à cette plate-forme sont construits. La configuration du projet détermine les paramètres de construction et les options de compilateur qui sont utilisées lorsque vous construisez le projet.
 
-Pour créer, sélectionner, modifier ou supprimer une configuration, vous pouvez utiliser le **Gestionnaire de configurations**. Pour l’ouvrir, dans la barre de menus, choisissez **Générer** > **Gestionnaire de configurations**, ou tapez simplement **Configuration** dans la zone de recherche. Vous pouvez également utiliser la liste **Configurations de solutions** dans la barre d’outils **Standard** pour sélectionner une configuration ou ouvrir le **Gestionnaire de configurations**.
+Pour créer, sélectionner, modifier ou supprimer une configuration, vous pouvez utiliser le **Gestionnaire de configurations**. Pour l’ouvrir, sur la barre de menu, choisissez **Build** > **Configuration Manager**, ou tout simplement **tapez configuration** dans la boîte de recherche. Vous pouvez également utiliser la liste **Configurations de solutions** dans la barre d’outils **Standard** pour sélectionner une configuration ou ouvrir le **Gestionnaire de configurations**.
 
-![Gestionnaire de configurations](media/understanding-build-configurations/config-manager.png)
+![Gestionnaire de configuration](media/understanding-build-configurations/config-manager.png)
 
 > [!NOTE]
-> Si les paramètres de configuration de solution ne figurent pas dans la barre d’outils et si vous ne pouvez pas accéder au **Gestionnaire de configurations**, les paramètres de développement de [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] peuvent être appliqués. Pour plus d’informations, consultez [Guide pratique pour gérer les configurations de build en appliquant les paramètres du développeur Visual Basic](../ide/how-to-manage-build-configurations-with-visual-basic-developer-settings-applied.md).
+> Si vous ne trouvez pas de paramètres de configuration de solution [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] sur la barre d’outils et que vous ne pouvez pas accéder au Gestionnaire de **configuration,** des paramètres de développement peuvent être appliqués. Pour plus d’informations, consultez [Guide pratique pour gérer les configurations de build en appliquant les paramètres du développeur Visual Basic](../ide/how-to-manage-build-configurations-with-visual-basic-developer-settings-applied.md).
 
-Par défaut, les configurations **Debug** et **Release** sont incluses dans les projets créés à l’aide de modèles de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Une configuration **Debug** prend en charge le débogage d’une application, et une configuration **Release** génère une version de l’application qui peut être déployée. Pour plus d’informations, consultez [Guide pratique pour définir des configurations Debug et Release](../debugger/how-to-set-debug-and-release-configurations.md). Vous pouvez également créer des configurations de solution et des configurations de projet personnalisées. Pour plus d’informations, consultez [Guide pratique pour créer et modifier des configurations](../ide/how-to-create-and-edit-configurations.md).
+Par défaut, les configurations **Debug** et **Release** sont [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] incluses dans les projets créés à l’aide de modèles. Une configuration **Debug** prend en charge le débogage d’une application, et une configuration **De Release** construit une version de l’application qui peut être déployée. Pour plus d’informations, consultez [Guide pratique pour définir des configurations Debug et Release](../debugger/how-to-set-debug-and-release-configurations.md). Vous pouvez également créer des configurations de solution et des configurations de projet personnalisées. Pour plus d’informations, consultez [Guide pratique pour créer et modifier des configurations](../ide/how-to-create-and-edit-configurations.md).
 
 ## <a name="solution-configurations"></a>Configurations de solution
 
@@ -67,21 +67,21 @@ La configuration de solution active fournit également le contexte à l'IDE. Par
 
 ## <a name="project-configurations"></a>Configurations de projet
 
-La configuration et la plateforme ciblées par un projet sont utilisées ensemble pour spécifier les paramètres de build et les options du compilateur à utiliser lors de sa génération. Un projet peut avoir des paramètres différents pour chaque combinaison de configuration et de plateforme. Pour modifier les propriétés d’un projet, ouvrez le menu contextuel du projet dans **Explorateur de solutions**, puis choisissez **Propriétés**.  En haut de l’onglet **générer** du concepteur de projet, choisissez une configuration active pour modifier ses paramètres de génération.
+La configuration et la plate-forme qu’un projet cible sont utilisées ensemble pour spécifier les paramètres de construction et les options de compilateur à utiliser lors de sa construction. Un projet peut avoir des paramètres différents pour chaque combinaison de configuration et de plate-forme. Pour modifier les propriétés d’un projet, ouvrez le menu raccourci pour le projet dans **Solution Explorer**, puis choisissez **Propriétés**.  En haut de l’onglet **Build** du concepteur du projet, choisissez une configuration active pour modifier ses paramètres de construction.
 
-![Configurations du concepteur de projets](media/understanding-build-configurations/project-designer-configuration.png)
+![Configurations de concepteur de projets](media/understanding-build-configurations/project-designer-configuration.png)
 
-## <a name="building-multiple-configurations"></a>Génération de plusieurs configurations
+## <a name="building-multiple-configurations"></a>Construire plusieurs configurations
 
-Lorsque vous générez une solution à l’aide de la commande **générer** > **générer la solution** , Visual Studio génère uniquement la configuration active. Tous les projets spécifiés dans cette configuration de solution sont générés, et la seule configuration de projet créée est celle spécifiée dans la configuration de solution active et la plateforme de solution active, qui est affichée dans la barre d’outils de Visual Studio. Par exemple, **Debug** et **x86**. D’autres configurations et plateformes définies ne sont pas générées.
+Lorsque vous construisez une solution à l’aide de la commande **Build** > **Build Solution,** Visual Studio ne construit que la configuration active. Tous les projets spécifiés dans cette configuration de solution sont construits, et la seule configuration de projet qui est construite est celle spécifiée dans la configuration de solution active et la plate-forme de solution active, qui est indiquée dans la barre d’outils de Visual Studio. Par exemple, **Debug** et **x86**. D’autres configurations et plates-formes définies ne sont pas construites.
 
-Si vous souhaitez générer plusieurs configurations et plateformes en une seule action, vous pouvez utiliser l’option de **génération** **de build > ** batch dans Visual Studio. Pour accéder à cette fonctionnalité, appuyez sur **Ctrl**+**Q** pour ouvrir la zone de recherche, puis entrez `Batch build`. La génération de lots n’est pas disponible pour tous les types de projets. Consultez [Comment : générer plusieurs configurations simultanément](how-to-build-multiple-configurations-simultaneously.md).
+Si vous souhaitez créer plusieurs configurations et plates-formes en une seule action, vous pouvez utiliser l’option **Build** > **Batch Build** dans Visual Studio. Pour accéder à cette fonctionnalité, appuyez sur **Ctrl**+**Q** pour ouvrir la boîte de recherche, et entrez `Batch build`. La construction par lots n’est pas disponible pour tous les types de projets. Voir [comment : Construire plusieurs configurations simultanément](how-to-build-multiple-configurations-simultaneously.md).
 
 ## <a name="how-visual-studio-assigns-project-configurations"></a>Comment Visual Studio affecte des configurations de projet
 
 Lorsque vous définissez une nouvelle configuration de solution sans copier les paramètres d'une configuration existante, Visual Studio utilise les critères ci-après pour assigner des configurations de projet par défaut. Les critères sont évalués dans l'ordre indiqué.
 
-1. Si un projet a un nom de configuration ( *\<nom de la configuration> \<nom de la plateforme>* ) qui correspond exactement au nom de la nouvelle configuration de solution, cette configuration est attribuée. Les noms de configuration ne respectent pas la casse.
+1. Si un projet a un nom de configuration*\<(nom de configuration> nom de \<plate-forme>*) qui correspond exactement au nom de la nouvelle configuration de solution, cette configuration est attribuée. Les noms de configuration ne respectent pas la casse.
 
 1. Si le projet a un nom de configuration dont une partie indique un nom de configuration identique à la nouvelle configuration de solution, cette configuration est assignée, même si l'autre partie du nom indique une plateforme différente.
 
@@ -93,15 +93,15 @@ Quand vous créez une configuration de projet (dans le **Gestionnaire de configu
 
 Visual Studio utilise les critères ci-après pour assigner des configurations de solution.
 
-- Si une configuration de projet ne spécifie pas de plateforme ou spécifie seulement une plateforme, une configuration de solution portant le même nom que la nouvelle configuration de projet est utilisée si elle existe déjà, ou ajoutée dans le cas contraire. Le nom par défaut de cette configuration de solution n’inclut pas le nom d’une plateforme ; il prend la forme *\<nom de la configuration de projet*.
+- Si une configuration de projet ne spécifie pas de plateforme ou spécifie seulement une plateforme, une configuration de solution portant le même nom que la nouvelle configuration de projet est utilisée si elle existe déjà, ou ajoutée dans le cas contraire. Le nom par défaut de cette configuration de solution n’inclut pas un nom de plate-forme ; il prend le nom de configuration du * \<projet *de forme>.
 
-- Si un projet prend en charge plusieurs plateformes, une configuration de solution est trouvée ou ajoutée pour chaque plateforme prise en charge. Le nom de chaque configuration de solution comprend le nom de la configuration de projet et celui de la plateforme, et se présente sous la forme *\<nom de la configuration de projet> \<nom de la plateforme*.
+- Si un projet prend en charge plusieurs plateformes, une configuration de solution est trouvée ou ajoutée pour chaque plateforme prise en charge. Le nom de chaque configuration de solution inclut à la fois le nom de configuration du projet et le nom de la plate-forme, et a le nom de configuration du projet de formulaire * \<> nom \<de plate-forme>*.
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Procédure pas à pas : générer une application](../ide/walkthrough-building-an-application.md)
-- [Compiler et générer](../ide/compiling-and-building-in-visual-studio.md)
+- [Procédure pas à pas : générer une application](../ide/walkthrough-building-an-application.md)
+- [Compilation et génération](../ide/compiling-and-building-in-visual-studio.md)
 - [Solutions et projets](../ide/solutions-and-projects-in-visual-studio.md)
 - [Informations de référence sur les builds C/C++](/cpp/build/reference/c-cpp-building-reference)
-- [Fonctionnement des plateformes de génération](understanding-build-platforms.md)
+- [Comprendre les plates-formes de construction](understanding-build-platforms.md)
 - [Créer des configurations (Visual Studio pour Mac)](/visualstudio/mac/configurations)

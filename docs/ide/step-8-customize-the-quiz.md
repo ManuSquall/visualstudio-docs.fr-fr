@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: e568a9fa844802ddab934264cbc316d3514fe577
-ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/25/2020
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "77579371"
 ---
 # <a name="step-8-customize-the-quiz"></a>Étape 8 : personnaliser le questionnaire
@@ -25,11 +25,11 @@ ms.locfileid: "77579371"
 Dans la dernière partie du didacticiel, vous allez découvrir quelques méthodes permettant de personnaliser le questionnaire et développer ce que vous avez déjà appris. Par exemple, pensez à la façon dont le programme crée des problèmes de division aléatoire pour laquelle la réponse n’est jamais une fraction. Pour en savoir plus, définissez le contrôle `timeLabel` sur une couleur différente et donnez un indice à la personne interrogée.
 
 > [!NOTE]
-> Cette rubrique fait partie d'une série de didacticiels sur les concepts de codage de base. Pour obtenir une vue d’ensemble du tutoriel, consultez [Tutoriel 2 : créer un questionnaire mathématique chronométré](../ide/tutorial-2-create-a-timed-math-quiz.md).
+> Cette rubrique fait partie d'une série de didacticiels sur les concepts de codage de base. Pour un aperçu du tutoriel, voir [Tutorial 2: Créer un quiz de mathématiques chronométrés](../ide/tutorial-2-create-a-timed-math-quiz.md).
 
 ## <a name="to-customize-the-quiz"></a>Pour personnaliser le questionnaire
 
-- Lorsque seulement cinq secondes sont conservées dans un quiz, désactivez le contrôle **timeLabel** en définissant sa propriété **BackColor** .
+- Quand il ne reste que cinq secondes dans un quiz, tournez le **tempsLabel** contrôle rouge en fixant sa propriété **BackColor.**
 
   ```csharp
   timeLabel.BackColor = Color.Red;
@@ -47,6 +47,6 @@ Dans la dernière partie du didacticiel, vous allez découvrir quelques méthode
 
 ## <a name="to-continue-or-review"></a>Pour continuer ou examiner
 
-- Pour passer au didacticiel suivant, consultez **[didacticiel 3 : créer un jeu de combinaisons](../ide/tutorial-3-create-a-matching-game.md)** .
+- Pour aller au tutoriel suivant, voir **[Tutorial 3: Créer un jeu correspondant](../ide/tutorial-3-create-a-matching-game.md)**.
 
-- Pour revenir à l’étape précédente du tutoriel, consultez [Étape 7 : ajouter des problèmes de multiplication et de division](../ide/step-7-add-multiplication-and-division-problems.md).
+- Pour revenir à l’étape tutoriel précédente, voir [Étape 7: Ajouter la multiplication et les problèmes de division](../ide/step-7-add-multiplication-and-division-problems.md).

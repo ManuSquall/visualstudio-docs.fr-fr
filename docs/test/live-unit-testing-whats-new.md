@@ -12,10 +12,10 @@ ms.workload:
 - dotnet
 monikerRange: vs-2017
 ms.openlocfilehash: 7f7ab0c257bfed4521e95d9da12eaa0b9e25a71e
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/16/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "76114273"
 ---
 # <a name="whats-new-in-live-unit-testing-for-visual-studio-2017"></a>Nouveautés de Live Unit Testing pour Visual Studio 2017
@@ -26,7 +26,7 @@ Cette rubrique liste les nouvelles fonctionnalités ajoutées à Live Unit Testi
 
 À compter de Visual Studio 2017 version 15.4, Live Unit Testing présente des améliorations dans plusieurs domaines :
 
-- **Découvrabilité améliorée** Pour les utilisateurs qui ne connaissent pas l’existence de la fonctionnalité Live Unit Testing, l’IDE Visual Studio affiche une barre jaune qui fait mention de Live Unit Testing quand l’utilisateur ouvre une solution qui inclut des tests unitaires alors que Live Unit Testing n’est pas activé. Les informations présentées dans la barre jaune permettent à l’utilisateur d’en savoir plus sur Live Unit Testing et de l’activer. La barre jaune affiche également des informations quand les prérequis de Live Unit Testing ne sont pas satisfaits. Elles incluent notamment :
+- **Découvrabilité améliorée** Pour les utilisateurs qui ne connaissent pas l’existence de la fonctionnalité Live Unit Testing, l’IDE Visual Studio affiche une barre jaune qui fait mention de Live Unit Testing quand l’utilisateur ouvre une solution qui inclut des tests unitaires alors que Live Unit Testing n’est pas activé. Les informations présentées dans la barre jaune permettent à l’utilisateur d’en savoir plus sur Live Unit Testing et de l’activer. La barre jaune affiche également des informations quand les prérequis de Live Unit Testing ne sont pas satisfaits. notamment :
 
   - Des adaptateurs de test sont manquants.
   - Des versions plus anciennes des adaptateurs de test sont présentes.
@@ -38,7 +38,7 @@ Cette rubrique liste les nouvelles fonctionnalités ajoutées à Live Unit Testi
 
 - **Fiabilité et performances** : Live Unit Testing garantit maintenant que le système peut mieux détecter quand les projets ne sont pas complètement chargés et ne se bloque donc plus dans ces circonstances. Des améliorations des performances de la génération évitent aussi la réévaluation des projets MSBuild quand le système détecte que rien n’a changé dans le fichier projet.
 
-- **Différentes améliorations de l’interface utilisateur** : l’option **Live Test Set – Inclure/Exclure** accessible d’un clic droit prêtait à confusion, elle a donc été renommée **Live Unit Testing Inclure/Exclure**. L’option **Réinitialiser** du menu **Test** > **Live Unit Testing** a été supprimée. Elle est désormais accessible en sélectionnant **Outils** > **Options** > **Live Unit Testing** et en sélectionnant **Supprimer les données persistantes**.
+- **Différentes améliorations de l’interface utilisateur** : l’option **Live Test Set – Inclure/Exclure** accessible d’un clic droit prêtait à confusion, elle a donc été renommée **Live Unit Testing Inclure/Exclure**. L’option **Réinitialiser** du menu **Test** > **Live Unit Testing** a été supprimée. Il est maintenant accessible en sélectionnant **outils** > **Options** > **Live Unit Testing** et en sélectionnant Delete **Persisted Data**.
 
 ## <a name="version-153"></a>Version 15.3
 

@@ -20,10 +20,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 82462ae5052150da7761dfcd855e5339e1b7d821
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74779049"
 ---
 # <a name="how-to-choose-sampling-events"></a>Guide pratique pour choisir des événements d’échantillonnage
@@ -60,8 +60,8 @@ Par défaut, les outils de profilage de [!INCLUDE[vsprvs](../code-quality/includ
 5. Lorsque vous sélectionnez un événement d’échantillon, une valeur d’intervalle d’échantillonnage par défaut s’affiche dans la zone de texte **Intervalle d’échantillonnage**. Si nécessaire, vous pouvez entrer la valeur de votre choix dans la zone de texte.
 
 ## <a name="see-also"></a>Voir aussi
-- [Configurer des sessions de performances](../profiling/configuring-performance-sessions.md)
-- [Guide pratique pour choisir des méthodes de collecte](../profiling/how-to-choose-collection-methods.md)
+- [Configurer des sessions de performance](../profiling/configuring-performance-sessions.md)
+- [Comment : Choisissez des méthodes de collecte](../profiling/how-to-choose-collection-methods.md)
 - [Compteurs UC et Windows](../profiling/cpu-and-windows-counters.md)
-- [Fonctionnement des valeurs de données d’échantillonnage](../profiling/understanding-sampling-data-values.md)
+- [Comprendre le fonctionnement des valeurs de données d’échantillonnage](../profiling/understanding-sampling-data-values.md)
 - [Profiler à partir de la ligne de commande](../profiling/using-the-profiling-tools-from-the-command-line.md)

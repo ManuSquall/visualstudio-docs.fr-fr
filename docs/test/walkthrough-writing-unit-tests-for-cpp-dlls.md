@@ -8,10 +8,10 @@ ms.workload:
 - cplusplus
 author: corob-msft
 ms.openlocfilehash: 752a2bb53e25954824a1400ee178cd0cbf4adcf2
-ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77275426"
 ---
 # <a name="how-to-write-unit-tests-for-c-dlls"></a>Guide pratique pour écrire des tests unitaires pour des DLL C++
@@ -34,12 +34,12 @@ Cette procédure pas à pas décrit comment développer une DLL C++ native en ut
 
 8. [Isoler les unités des ressources externes](using-stubs-to-isolate-parts-of-your-application-from-each-other-for-unit-testing.md). En règle générale, une DLL dépend des autres composants du système que vous développez, tels que les autres DLL, les bases de données ou les sous-systèmes à distance. Il est utile de tester chaque unité isolément de ses dépendances. Les composants externes peuvent ralentir les tests. Pendant le développement, les autres composants peuvent ne pas être achevés.
 
-## <a name="create_test_project"></a> Créer un projet de test unitaire natif
+## <a name="create-a-native-unit-test-project"></a><a name="create_test_project"></a> Créer un projet de test unitaire natif
 
-1. Dans le menu **Fichier** , choisissez **Nouveau** > **Projet**.
+1. Dans le menu **Fichier**, choisissez **Nouveau** > **Projet**.
 
-     **Visual Studio 2017 et versions antérieures**: développez les **modèles** de > **installés** >  **C++ Visual** > **test**.
-     **Visual Studio 2019**: définissez **Language** sur C++ , puis tapez « test » dans la zone de recherche.
+     **Visual Studio 2017 et plus tôt**: Expand **Installed** > **Templates** > **Visual CM .** > **Test**
+     **Visual Studio 2019**: Définissez **la langue** en C et tapez « test » dans la boîte de recherche.
 
      Choisissez le modèle **Projet de test unitaire natif** ou un autre framework installé de votre choix. Si vous choisissez un autre modèle, comme Google Test ou Boost.Test, les principes de base sont les mêmes, bien que certains détails diffèrent.
 
@@ -61,7 +61,7 @@ Cette procédure pas à pas décrit comment développer une DLL C++ native en ut
 
 3. Vérifiez que les tests s'exécutent dans l'Explorateur de tests :
 
-    1. Insérez du code de test :
+    1. Insérez le code de test :
 
         ```cpp
         TEST_METHOD(TestMethod1)
@@ -82,13 +82,13 @@ Cette procédure pas à pas décrit comment développer une DLL C++ native en ut
 
          ![Explorateur de tests unitaires avec un test réussi](../test/media/utecpp04.png)
 
-## <a name="create_dll_project"></a> Créer un projet DLL
+## <a name="create-a-dll-project"></a><a name="create_dll_project"></a>Créer un projet DLL
 
 ::: moniker range="vs-2019"
 
 Les étapes suivantes montrent comment créer un projet DLL dans Visual Studio 2019.
 
-1. Créez un C++ projet à l’aide de l' **Assistant de bureau Windows**: cliquez avec le bouton droit sur le nom de la solution dans **Explorateur de solutions** et choisissez **Ajouter** > **nouveau projet**. Définissez le **Langage** sur C++, puis tapez « windows » dans la zone de recherche. Choisissez **Assistant Windows Desktop** dans la liste des résultats.
+1. Créez un projet CMD en utilisant le **Windows Desktop Wizard**: Cliquez à droite sur le nom de la solution dans Solution **Explorer** et choisissez **Add** > **New Project**. Définissez le **Langage** sur C++, puis tapez « windows » dans la zone de recherche. Choisissez **Assistant Windows Desktop** dans la liste des résultats.
 
      Dans cette procédure pas à pas, le projet se nomme `RootFinder`.
 
@@ -148,11 +148,11 @@ Les étapes suivantes montrent comment créer un projet DLL dans Visual Studio 2
 
 ::: moniker-end
 
-## <a name="make_functions_visible"></a> Associer le projet de test au projet DLL
+## <a name="couple-the-test-project-to-the-dll-project"></a><a name="make_functions_visible"></a> Associer le projet de test au projet DLL
 
 1. Ajoutez le projet DLL aux références de projet du projet de test :
 
-   1. Cliquez avec le bouton droit sur le nœud du projet de test dans **l’Explorateur de solutions**, puis choisissez **Ajouter** >  **Référence**.
+   1. Cliquez avec le bouton droit sur le nœud du projet de test dans **l’Explorateur de solutions**, puis choisissez **Ajouter** > ** Référence**.
 
    2. Dans la boîte de dialogue **Ajouter une référence** , sélectionnez le projet DLL et choisissez **Ajouter**.
 
@@ -188,15 +188,15 @@ Les étapes suivantes montrent comment créer un projet DLL dans Visual Studio 2
 
     Le nouveau test s’affiche dans **l’Explorateur de tests**.
 
-5. Dans **l’Explorateur de tests**, choisissez **Exécuter tout**.
+5. Dans **Test Explorer**, choisissez Run **All**.
 
     ![Explorateur de tests unitaires &#45; Test de base réussi](../test/media/utecpp10.png)
 
-   Vous avez configuré le test et les projets de code, et vérifié qu'il est possible d'exécuter des tests qui exécutent des fonctions dans le projet de code. Vous pouvez maintenant commencer à écrire des tests et du code réels.
+   Vous avez configuré le test et les projets de code, et vérifié que vous pouviez exécuter des tests exécutant les fonctions du projet de code. Maintenant, vous pouvez commencer à écrire le code et les tests réels.
 
-## <a name="iterate"></a> Augmenter itérativement les tests et les faire réussir
+## <a name="iteratively-augment-the-tests-and-make-them-pass"></a><a name="iterate"></a>Iteratively augmenter les tests et les faire passer
 
-1. Ajoutez un nouveau test :
+1. Ajoutez un nouveau test :
 
     ```cpp
     TEST_METHOD(RangeTest)
@@ -211,9 +211,9 @@ Les étapes suivantes montrent comment créer un projet DLL dans Visual Studio 2
     ```
 
     > [!TIP]
-    > Nous vous recommandons de ne pas modifier les tests qui ont réussi. Ajoutez à la place un nouveau test, mettez à jour le code afin que le test réussisse, puis ajoutez un autre test, et ainsi de suite.
+    > Nous vous recommandons de ne pas modifier les tests ayant réussi. Ajoutez à la place un nouveau test, mettez à jour le code afin que le test réussisse, puis ajoutez un autre test, et ainsi de suite.
     >
-    > Quand les utilisateurs modifient leurs spécifications, désactivez les tests qui ne sont plus corrects. Écrivez de nouveaux tests et exécutez-les individuellement, de la même façon incrémentielle.
+    > Lorsque vos utilisateurs modifient leurs spécifications, désactivez les tests qui ne sont plus corrects. Écrivez de nouveaux tests et utilisez-les l'un après l'autre, de la même façon incrémentielle.
 
 2. Générez la solution, puis choisissez **Exécuter tout** dans **l’Explorateur de tests**.
 
@@ -222,7 +222,7 @@ Les étapes suivantes montrent comment créer un projet DLL dans Visual Studio 2
      ![RangeTest a échoué](../test/media/ute_cpp_testexplorer_rangetest_fail.png)
 
     > [!TIP]
-    > Vérifiez que chaque test échoue immédiatement après l'avoir écrit. Cela permet d'éviter l'erreur facile qui consiste à écrire un test qui n'échoue jamais.
+    > Vérifiez que chaque test échoue immédiatement après que vous l'avez écrit. Vous évitez ainsi de commettre l'erreur d'écrire un test qui n'échoue jamais.
 
 3. Améliorez le code de votre DLL afin que le nouveau test réussisse :
 
@@ -243,16 +243,16 @@ Les étapes suivantes montrent comment créer un projet DLL dans Visual Studio 2
     }
     ```
 
-4. Générez la solution, puis, dans **l’Explorateur de tests**, choisissez **Exécuter tout**.
+4. Construire la solution, puis dans **Test Explorer**, choisissez **Run All**.
 
      Les deux tests réussissent.
 
      ![Explorateur de tests unitaires &#45; Réussite du test de plage](../test/media/utecpp12.png)
 
     > [!TIP]
-    > Développez le code en ajoutant les tests l'un après l'autre. Vérifiez que tous les tests réussissent après chaque itération.
+    > Développez le code en ajoutant les tests individuellement. Assurez-vous que tous les tests réussissent après chaque itération.
 
-## <a name="debug"></a> Déboguer un test ayant échoué
+## <a name="debug-a-failing-test"></a><a name="debug"></a>Debug un test défaillant
 
 1. Ajoutez un autre test :
 
@@ -291,17 +291,17 @@ Les étapes suivantes montrent comment créer un projet DLL dans Visual Studio 2
 
 3. Ouvrez le test ayant échoué (ou double-cliquez dessus).
 
-     L'échec d'assertion est mis en surbrillance. Le message d’échec est visible dans le volet de détails de **l’Explorateur de tests**.
+     L'échec d'assertion est mis en surbrillance. Le message d’échec est visible dans le volet détail de **Test Explorer**.
 
      ![NegativeRangeTests, échec](../test/media/ute_cpp_testexplorer_negativerangetest_fail.png)
 
-4. Pour comprendre pourquoi le test échoue, parcourez la fonction :
+4. Pour voir pourquoi le test échoue, parcourez la fonction :
 
     1. Définissez un point d'arrêt au début de la fonction SquareRoot.
 
     2. Dans le menu contextuel du test ayant échoué, choisissez **Déboguer les tests sélectionnés**.
 
-         Quand l'exécution s'arrête au point d'arrêt, parcourez le code.
+         Lorsque l'exécution s'arrête au point d'arrêt, parcourez le code.
 
 5. Insérez le code de la fonction que vous développez :
 
@@ -319,7 +319,7 @@ Les étapes suivantes montrent comment créer un projet DLL dans Visual Studio 2
 
     ```
 
-6. Maintenant, tous les tests réussissent.
+6. Toutes les tests réussissent maintenant.
 
    ![Tous les tests sont concluants](../test/media/ute_ult_alltestspass.png)
 
@@ -337,7 +337,7 @@ Les étapes suivantes montrent comment créer un projet DLL dans Visual Studio 2
 
 ::: moniker-end
 
-## <a name="refactor"></a> Refactoriser le code sans modifier les tests
+## <a name="refactor-the-code-without-changing-tests"></a><a name="refactor"></a>Refactor le code sans changer les tests
 
 1. Simplifiez le calcul central de la fonction SquareRoot :
 
@@ -356,7 +356,7 @@ Les étapes suivantes montrent comment créer un projet DLL dans Visual Studio 2
     >
     > Maintenez la refactorisation distincte des autres modifications.
 
-## <a name="next-steps"></a>Étapes suivantes :
+## <a name="next-steps"></a>Étapes suivantes
 
 - **Isolement.** La plupart des DLL dépendent d'autres sous-systèmes tels que des bases de données et d'autres DLL. Ces autres composants sont souvent développés en parallèle. Pour permettre que le test unitaire soit exécuté pendant que les autres composants ne sont pas encore disponibles, vous devez remplacer
 
@@ -372,4 +372,4 @@ Les étapes suivantes montrent comment créer un projet DLL dans Visual Studio 2
 - [Utilisation de Microsoft.VisualStudio.TestTools.CppUnitTestFramework](how-to-use-microsoft-test-framework-for-cpp.md)
 - [Déboguer du code natif](../debugger/debugging-native-code.md)
 - [Procédure pas à pas : création et utilisation d’une bibliothèque de liens dynamiques (C++)](/cpp/build/walkthrough-creating-and-using-a-dynamic-link-library-cpp)
-- [Importation et exportation](/cpp/build/importing-and-exporting)
+- [Importer et exporter](/cpp/build/importing-and-exporting)

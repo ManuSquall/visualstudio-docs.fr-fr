@@ -12,11 +12,11 @@ ms.topic: conceptual
 ms.date: 11/11/2017
 ms.author: ghogen
 ms.openlocfilehash: 59996180661806eee60d18ab4b7b5fd26f4a2e7b
-ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
+ms.sourcegitcommit: 95f26af1da51d4c83ae78adcb7372b32364d8a2b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "78410055"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79302573"
 ---
 # <a name="configuring-your-azure-project-in-visual-studio-to-use-multiple-service-configurations"></a>Configuration de votre projet Azure dans Visual Studio pour utiliser plusieurs configurations de service
 
@@ -41,19 +41,19 @@ Sélectionne le `ServiceConfiguration.*.cscfg` affecté par les modifications. P
 
 Définir la propriété count de l’ **Instance** au nombre d'instances que le service doit exécuter pour ce rôle.
 
-Définir la propriété **Taille de la machine virtuelle** sur **Très petite**, **Petite**, **Moyenne**, **Grande** ou **Très grande**.  Pour en savoir plus, consultez la rubrique [Tailles de services cloud](/azure/cloud-services/cloud-services-sizes-specs).
+Définir la propriété **Taille de la machine virtuelle** sur **Très petite**, **Petite**, **Moyenne**, **Grande** ou **Très grande**.  Pour plus d’informations, voir [Tailles pour les services cloud](/azure/cloud-services/cloud-services-sizes-specs).
 
 ### <a name="startup-action-web-role-only"></a>Action de démarrage (rôle web uniquement)
 
 Définissez cette propriété pour spécifier que Visual Studio doit lancer un navigateur web pour les points de terminaison HTTP, les points de terminaison HTTPS, ou les deux lorsque vous commencez le débogage.
 
-L'option **Point de terminaison HTTPS** est disponible uniquement si vous avez déjà défini un point de terminaison HTTPS pour votre rôle. Vous pouvez définir un point de terminaison HTTPS sur la page Propriétés des **Points de terminaison** .
+**L’option de point de terminaison HTTPS** n’est disponible que si vous avez déjà défini un critère d’évaluation HTTPS pour votre rôle. Vous pouvez définir un point de terminaison HTTPS sur la page Propriétés des **Points de terminaison** .
 
 Si vous avez déjà ajouté un point de terminaison HTTPS, l'option point de terminaison HTTPS est activée par défaut et Visual Studio lance un navigateur pour ce point de terminaison lorsque vous démarrez le débogage, ainsi qu'un navigateur pour votre point de terminaison HTTP, à condition d'activer les deux options de démarrage.
 
 ### <a name="diagnostics"></a>Diagnostics
 
-Par défaut, les diagnostics sont activés pour le rôle web. Le projet de service cloud Azure et le compte de stockage sont configurés pour utiliser l'émulateur de stockage local. Lorsque vous êtes prêt à déployer sur Azure, vous pouvez sélectionner le bouton de génération ( **...** ) pour utiliser plutôt Stockage Azure. Vous pouvez transférer les données de diagnostic au compte de stockage à la demande ou à intervalles planifiés automatiquement. Pour plus d'informations sur les diagnostics Azure, consultez la page [Activation de Diagnostics dans Azure Cloud Services et Azure Virtual Machines](/azure/cloud-services/cloud-services-dotnet-diagnostics).
+Par défaut, les diagnostics sont activés pour le rôle web. Le projet de service cloud Azure et le compte de stockage sont configurés pour utiliser l'émulateur de stockage local. Lorsque vous êtes prêt à déployer sur Azure, vous pouvez sélectionner le bouton de génération (**...**) pour utiliser plutôt Stockage Azure. Vous pouvez transférer les données de diagnostic au compte de stockage à la demande ou à intervalles planifiés automatiquement. Pour plus d'informations sur les diagnostics Azure, consultez la page [Activation de Diagnostics dans Azure Cloud Services et Azure Virtual Machines](/azure/cloud-services/cloud-services-dotnet-diagnostics).
 
 ## <a name="settings-page"></a>Page Paramètres
 
@@ -70,7 +70,7 @@ Vous pouvez définir la chaîne de connexion pour utiliser un stockage local si 
 
 Pour créer une chaîne de connexion, sélectionnez **Ajouter un paramètre** et définissez **Type** sur « Chaîne de connexion ».
 
-Pour les chaînes de connexion nouvelles ou existantes, sélectionnez **...** * à droite du champ **Valeur** pour ouvrir la boîte de dialogue **Créer une chaîne de connexion de stockage** :
+Pour les chaînes de connexion nouvelles ou existantes, sélectionnez **...*** à droite du champ **Valeur** pour ouvrir la boîte de dialogue **Créer une chaîne de connexion de stockage** :
 
 1. Sous **Se connecter en utilisant**, sélectionnez l'option **Votre abonnement** pour sélectionner un compte de stockage à partir d'un abonnement. Visual Studio obtient ensuite automatiquement les informations d'identification du compte de stockage à partir du fichier `.publishsettings`.
 1. L'option **Informations d'identification entrées manuellement** vous permet de spécifier directement le nom et la clé du compte à l'aide des informations du portail Azure. Pour copier la clé du compte :

@@ -1,5 +1,5 @@
 ---
-title: 'Étape 5 : déploiement de votre application ASP.NET Core sur Azure'
+title: 'Étape 5 : Déployer votre application de base ASP.NET à Azure'
 description: Déployez votre application web ASP.NET Core sur Azure avec ce tutoriel vidéo et des instructions détaillées.
 ms.custom: get-started
 ms.date: 03/31/2019
@@ -17,13 +17,13 @@ ms.workload:
 - aspnet
 - dotnetcore
 ms.openlocfilehash: dc13dbdadb0c9bca25a816b15c5a99039bff454c
-ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/25/2020
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "77580030"
 ---
-# <a name="step-5-deploy-your-aspnet-core-app-to-azure"></a>Étape 5 : déploiement de votre application ASP.NET Core sur Azure
+# <a name="step-5-deploy-your-aspnet-core-app-to-azure"></a>Étape 5 : Déployez votre application ASP.NET Core à Azure
 
 Suivez ces étapes pour déployer votre application ASP.NET Core et sa base de données sur Azure.
 
@@ -57,7 +57,7 @@ Une fois le service App Service créé, le site se lance dans un navigateur. Pen
 
 ### <a name="scalability"></a>Extensibilité
 
-Vous pouvez examiner les options pour augmenter ou diminuer l’échelle de l’application. La montée en puissance fait référence à l’augmentation des ressources fournies à chaque instance hébergeant votre application. Avec la montée en charge (scale out), il s’agit d’accroître le nombre d’instances hébergeant l’application. Vous pouvez configurer la mise à l’échelle automatique de votre application, afin d’augmenter automatiquement le nombre d’instances utilisées pour héberger votre application en réponse à une charge, puis de le réduire une fois que la charge a diminué.
+Vous pouvez examiner les options pour mettre l’application à l’échelle ainsi que sur. L’intensification se réfère à l’augmentation des ressources données à chaque instance hébergeant votre application. Avec la montée en charge (scale out), il s’agit d’accroître le nombre d’instances hébergeant l’application. Vous pouvez configurer la mise à l’échelle automatique de votre application, afin d’augmenter automatiquement le nombre d’instances utilisées pour héberger votre application en réponse à une charge, puis de le réduire une fois que la charge a diminué.
 
 ### <a name="security-and-compliance"></a>Sécurité et conformité
 

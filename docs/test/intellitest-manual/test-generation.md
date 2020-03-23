@@ -10,11 +10,11 @@ ms.workload:
 - multiple
 author: mikejo5000
 ms.openlocfilehash: c251a1539b42da2b4e92c2996457075f3c3be135
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75591552"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79302608"
 ---
 # <a name="test-generation"></a>Génération de tests
 
@@ -116,7 +116,7 @@ public partial class ListTest {
 
 IntelliTest fournit de nombreux attributs de validation pour aider au triage des exceptions en exceptions attendues et en exceptions inattendues.
 
-Les exceptions attendues génèrent des cas de test négatifs avec l’annotation appropriée, par exemple **ExpectedException(typeof(*xxx*))** , alors que les exceptions inattendues génèrent des cas de test non réussis.
+Les exceptions attendues génèrent des cas de test négatifs avec l’annotation appropriée, par exemple **ExpectedException(typeof(*xxx*))**, alors que les exceptions inattendues génèrent des cas de test non réussis.
 
 ```csharp
 [PexMethod, PexAllowedException(typeof(ArgumentNullException))]
@@ -168,7 +168,7 @@ public void Test2([PexAssumeNotNull] object o)
 ```
 
 <a name="precondition"></a>
-## <a name="precondition"></a>Condition préalable
+## <a name="precondition"></a>Precondition
 
 Une condition préalable d’une méthode exprime les conditions sous lesquelles la méthode réussit.
 
@@ -235,7 +235,7 @@ namespace MyTests
 ```
 
 <a name="further-reading"></a>
-## <a name="further-reading"></a>Informations supplémentaires
+## <a name="further-reading"></a>Lectures supplémentaires
 
 * [Test to code binding](https://devblogs.microsoft.com/devops/smart-unit-tests-test-to-code-binding-test-case-management/)
 * [One test to rule them all](https://devblogs.microsoft.com/devops/intellitest-one-test-to-rule-them-all/)

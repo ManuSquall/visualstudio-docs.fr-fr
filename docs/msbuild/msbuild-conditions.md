@@ -17,15 +17,15 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 2e69e5c8fc7404c0c313774271fd07b6315e5270
-ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/26/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77633367"
 ---
 # <a name="msbuild-conditions"></a>Conditions MSBuild
 
-MSBuild prend en charge un ensemble spécifique de conditions qui peuvent être appliquées partout où un attribut `Condition` est autorisé. Le tableau suivant décrit ces conditions.
+MSBuild prend en charge un ensemble spécifique `Condition` de conditions qui peuvent être appliquées partout où un attribut est autorisé. Le tableau suivant décrit ces conditions.
 
 |Condition|Description|
 |---------------|-----------------|
@@ -36,12 +36,12 @@ MSBuild prend en charge un ensemble spécifique de conditions qui peuvent être 
 |HasTrailingSlash (« `stringA` »)|A la valeur `true` si la chaîne spécifiée contient une barre oblique inverse finale (\\) ou une barre oblique (/).<br /><br /> Par exemple :<br /><br /> `Condition="!HasTrailingSlash('$(OutputPath)')"`<br /><br /> Les guillemets simples ne sont pas requis pour les chaînes alphanumériques simples ou les valeurs booléennes, mais ils le sont pour les valeurs vides.|
 |!|A la valeur `true` si l’opérande a la valeur `false`.|
 |and|A la valeur `true` si les deux opérandes ont la valeur `true`.|
-|Ou|A la valeur `true` si l’un des opérandes au moins a la valeur `true`.|
+|ou|A la valeur `true` si l’un des opérandes au moins a la valeur `true`.|
 |()|Mécanisme de regroupement qui prend la valeur `true` si les expressions qu’il contient ont la valeur `true`.|
-|$if$ ( %expression% ), $else$, $endif$|Vérifie si la condition `%expression%` spécifiée correspond à la valeur de chaîne du paramètre de modèle personnalisé transmis. Si la condition `$if$` prend la valeur `true`, ses instructions sont exécutées ; dans le cas contraire, la condition `$else$` est vérifiée. Si la condition `$else$` a la valeur `true`, ses instructions sont exécutées. Dans le cas contraire, la condition `$endif$` met fin à l’évaluation de l’expression.<br /><br /> Pour obtenir des exemples d’utilisation, consultez [Logique des paramètres de modèles de projet/d’élément Visual Studio](https://stackoverflow.com/questions/6709057/visual-studio-project-item-template-parameter-logic).|
+|$if$ ( %expression% ), $else$, $endif$|Vérifie si la condition `%expression%` spécifiée correspond à la valeur de chaîne du paramètre de modèle personnalisé transmis. Si la condition `$if$` prend la valeur `true`, ses instructions sont exécutées ; dans le cas contraire, la condition `$else$` est vérifiée. Si la condition `$else$` a la valeur `true`, ses instructions sont exécutées. Dans le cas contraire, la condition `$endif$` met fin à l’évaluation de l’expression.<br /><br /> Pour des exemples d’utilisation, voir [Visual Studio projet / élément modèle de logique de paramètre](https://stackoverflow.com/questions/6709057/visual-studio-project-item-template-parameter-logic).|
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Informations de référence sur MSBuild](../msbuild/msbuild-reference.md)
+- [Référence MSBuild](../msbuild/msbuild-reference.md)
 - [Constructions conditionnelles](../msbuild/msbuild-conditional-constructs.md)
-- [Procédure pas à pas : création d’un fichier projet MSBuild en partant de zéro](../msbuild/walkthrough-creating-an-msbuild-project-file-from-scratch.md)
+- [Procédure pas à pas : Création d’un fichier de projet MSBuild à partir de zéro](../msbuild/walkthrough-creating-an-msbuild-project-file-from-scratch.md)

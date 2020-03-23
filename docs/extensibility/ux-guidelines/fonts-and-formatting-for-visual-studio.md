@@ -1,5 +1,5 @@
 ---
-title: Polices et mise en forme pour Visual Studio | Microsoft Docs
+title: Fonts et formatage pour Visual Studio (fr) Microsoft Docs
 ms.date: 04/26/2017
 ms.topic: conceptual
 ms.assetid: c3c3df69-83b4-4fd0-b5b1-e18c33f39376
@@ -9,43 +9,43 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 8634ab15a10b59fc21de390e0633d6d91793616d
-ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
+ms.sourcegitcommit: 95f26af1da51d4c83ae78adcb7372b32364d8a2b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "78409079"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79303133"
 ---
 # <a name="fonts-and-formatting-for-visual-studio"></a>Polices et mise en forme pour Visual Studio
-## <a name="BKMK_TheEnvironmentFont"></a>Police de l’environnement
- Toutes les polices dans Visual Studio doivent être exposées à l’utilisateur pour la personnalisation. Cela s’effectue principalement via la page **polices et couleurs** de la boîte de dialogue **Outils > Options** . Les trois principales catégories de paramètres de police sont les suivantes :
+## <a name="the-environment-font"></a><a name="BKMK_TheEnvironmentFont"></a>La police de l’environnement
+ Toutes les polices de Visual Studio doivent être exposées à l’utilisateur pour la personnalisation. Ceci est principalement fait par le biais de la page **Fonts et Couleurs** dans le dialogue **Tools > Options.** Les trois principales catégories de paramètres de police sont les :
 
-- **Police** de l’environnement-la police principale de l’IDE (environnement de développement intégré), utilisée pour tous les éléments d’interface, y compris les boîtes de dialogue, les menus, les fenêtres outil et les fenêtres de document. Par défaut, la police d’environnement est liée à une police système qui s’affiche sous la forme 9 PT Segoe UI dans les versions actuelles de Windows. L’utilisation d’une police pour tous les éléments d’interface permet de garantir un aspect cohérent des polices dans l’IDE.
+- **Police de l’environnement** - la police principale pour l’IDE (environnement de développement intégré), utilisé pour tous les éléments d’interface, y compris les dialogues, menus, fenêtres d’outils, et les fenêtres de documents. Par défaut, la police de l’environnement est liée à une police système qui apparaît comme 9 pt Segoe interface utilisateur dans les versions actuelles de Windows. L’utilisation d’une police pour tous les éléments d’interface permet d’assurer une apparence de police cohérente tout au long de l’IDE.
 
-- **Éditeur de texte** -les éléments qui se trouvent dans le code et d’autres éditeurs textuels peuvent être personnalisés dans la page éditeur de texte dans **Outils > Options**.
+- **Éditeur de texte** - éléments qui font surface dans le code et d’autres éditeurs basés sur le texte peuvent être personnalisés dans la page de l’éditeur de texte dans **Tools > Options**.
 
-- **Regroupements spécifiques** -les fenêtres du concepteur qui permettent la personnalisation par l’utilisateur de leurs éléments d’interface peuvent exposer des polices spécifiques à leur aire de conception dans leur propre page de paramètres dans **Outils > Options**.
+- **Collections spécifiques** - fenêtres de concepteur qui offrent la personnalisation de leurs éléments d’interface peut exposer des polices spécifiques à leur surface de conception dans leur propre page de paramètres dans **Tools > Options**.
 
-### <a name="editor-font-customization-and-resizing"></a>Personnalisation et redimensionnement des polices de l’éditeur
- Les utilisateurs vont souvent agrandir ou zoomer la taille et/ou la couleur du texte dans l’éditeur en fonction de leurs préférences, indépendamment de l’interface utilisateur générale. Étant donné que la police d’environnement est utilisée sur les éléments qui peuvent apparaître dans ou dans le cadre d’un éditeur/concepteur, il est important de noter le comportement attendu quand l’une de ces classifications de police est modifiée.
+### <a name="editor-font-customization-and-resizing"></a>Personnalisation et resizing de police d’éditeur
+ Les utilisateurs agrandissent ou zooment souvent la taille et/ou la couleur du texte dans l’éditeur en fonction de leur préférence, indépendamment de l’interface utilisateur générale. Étant donné que la police de l’environnement est utilisée sur des éléments qui peuvent apparaître à l’intérieur ou dans le cadre d’un éditeur/concepteur, il est important de noter le comportement attendu lorsque l’une de ces classifications de police est modifiée.
 
- Lorsque vous créez des éléments d’interface utilisateur qui s’affichent dans l’éditeur, mais qui ne font pas partie du *contenu*, il est important d’utiliser la police de l’environnement et non la police du texte afin que les éléments se redimensionnent de manière prévisible.
+ Lors de la création d’éléments d’interface utilisateur qui apparaissent dans l’éditeur, mais ne font pas partie du *contenu,* il est important d’utiliser la police de l’environnement et non pas la police de texte de sorte que les éléments resize d’une manière prévisible.
 
-1. Pour le texte de code dans l’éditeur, redimensionnez avec le paramètre de police de texte du code et répondez au niveau de zoom du texte de l’éditeur.
+1. Pour le texte de code dans l’éditeur, resize avec le réglage de police de texte de code et répondre au niveau de zoom du texte de l’éditeur.
 
-2. Tous les autres éléments de l’interface doivent être liés au paramètre de police d’environnement et répondre à toutes les modifications globales dans l’environnement. Cela comprend (mais n’est pas limité à) :
+2. Tous les autres éléments de l’interface doivent être liés au réglage de la police de l’environnement et répondre à tout changement global dans l’environnement. Cela comprend (mais ne se limite pas à):
 
-    - Texte dans les menus contextuels
+    - Textes dans les menus contextuels
 
-    - Texte dans un ornement d’éditeur, comme le texte de menu de l’ampoule, le volet de recherche rapide et le volet naviguer vers
+    - Texte dans une parure d’éditeur, comme le texte de menu d’ampoule, rapide trouver la vitre d’éditeur, et naviguer à la vitre
 
-    - Texte de l’étiquette dans les boîtes de dialogue, par exemple **Rechercher dans les fichiers** ou **Refactoriser**
+    - Étiquette texte dans les boîtes de dialogue, comme **Trouver dans les fichiers** ou **Refactor**
 
 ### <a name="accessing-the-environment-font"></a>Accès à la police de l’environnement
- Dans le code natif ou WinForms, la police d’environnement est accessible en appelant la méthode `IUIHostLocale::GetDialogFont` après l’interrogation de l’interface du service `SID_SUIHostLocale`.
+ Dans le code Native ou WinForms, la police `IUIHostLocale::GetDialogFont` de l’environnement peut `SID_SUIHostLocale` être consultée en appelant la méthode après avoir interrogé l’interface à partir du service.
 
- Par Windows Presentation Foundation (WPF), dérivez votre classe de fenêtre de boîte de dialogue à partir de la classe de `DialogWindow` du Shell au lieu de la classe `Window` de WPF.
+ Pour Windows Presentation Foundation (WPF), retirez votre classe `DialogWindow` de fenêtre de `Window` dialogue de la classe de la coquille au lieu de la classe de WPF.
 
- En XAML, le code ressemble à ceci :
+ Dans XAML, le code ressemble à ceci:
 
 ```xaml
 <ui:DialogWindow
@@ -59,7 +59,7 @@ ms.locfileid: "78409079"
 </ui:DialogWindow>
 ```
 
-Code-behind :
+Code derrière :
 
 ```csharp
 internal partial class WebConfigModificationWindow : DialogWindow
@@ -67,57 +67,57 @@ internal partial class WebConfigModificationWindow : DialogWindow
 }
 ```
 
- (Remplacez `Microsoft.VisualStudio.Shell.11.0` par la version actuelle de la dll MPF.)
+ (Remplacer `Microsoft.VisualStudio.Shell.11.0` par la version actuelle de la dll MPF.)
 
- Pour afficher la boîte de dialogue, appelez «`ShowModal()`» sur la classe sur `ShowDialog()`. `ShowModal()` définit l’État modal correct dans l’interpréteur de commandes, garantit que la boîte de dialogue est centrée dans la fenêtre parente, et ainsi de suite.
+ Pour afficher le dialogue,`ShowModal()`appelez " `ShowDialog()`sur la classe plus . `ShowModal()`définit l’état modal correct dans la coquille, assure que le dialogue est centré dans la fenêtre parente, et ainsi de suite.
 
- Le code est le suivant :
+ Le code est le suivant :
 
 ```csharp
 MyWindow window = new MyWindow();
 window.ShowModal()
 ```
 
- `ShowModal` retourne une valeur booléenne ? (valeur booléenne Nullable) avec le `DialogResult`, qui peut être utilisé si nécessaire. La valeur de retour est true si la boîte de dialogue a été fermée avec la valeur **OK**.
+ `ShowModal`retourne un bool? (Boolean nul) avec `DialogResult`le , qui peut être utilisé si nécessaire. La valeur de retour est vraie si le dialogue a été fermé avec **OK**.
 
- Si vous avez besoin d’afficher une interface utilisateur WPF qui n’est pas une boîte de dialogue et qui est hébergée dans son propre `HwndSource`, telle qu’une fenêtre contextuelle ou une fenêtre enfant WPF d’une fenêtre parente Win32/WinForms, vous devez définir le `FontFamily` et `FontSize` sur l’élément racine de l’élément WPF. (L’interpréteur de commandes définit les propriétés dans la fenêtre principale, mais elles ne seront pas héritées après un `HWND`). L’interpréteur de commandes fournit des ressources auxquelles les propriétés peuvent être liées, comme suit :
+ Si vous avez besoin d’afficher une interface utilisateur WPF qui `HwndSource`n’est pas un dialogue et est hébergé dans son propre , comme une fenêtre popup ou une fenêtre enfant WPF d’une fenêtre parente Win32/WinForms, vous aurez besoin de définir l’élément `FontFamily` racine et `FontSize` sur l’élément WPF. (La coquille définit les propriétés sur la fenêtre principale, mais elles ne seront pas héritées du passé). `HWND` La coquille fournit des ressources auxquelles les propriétés peuvent être liées, comme ceci :
 
 ```xaml
 <Setter Property="FontFamily" Value="{DynamicResource VsFont.EnvironmentFontFamily}" />
 <Setter Property="FontSize" Value="{DynamicResource VsFont.EnvironmentFontSize}" />
 ```
 
-### <a name="BKMK_Formatting"></a>Référence de mise en forme (mise à l’échelle/mise en gras)
- Certaines boîtes de dialogue nécessitent un texte en gras ou une taille différente de la police de l’environnement. Auparavant, les polices plus volumineuses que la police de l’environnement étaient codées comme «`environment font +2`» ou similaires. L’utilisation des extraits de code fournis prend en charge les moniteurs haute résolution et garantit que le texte affiché apparaît toujours à la taille et au poids corrects (par exemple, Light ou Semilight).
+### <a name="formatting-scalingbolding-reference"></a><a name="BKMK_Formatting"></a>Référence de mise en forme (mise à l’échelle/bolding)
+ Certains dialogues exigent que le texte particulier soit audacieux ou une taille autre que la police de l’environnement. Auparavant, les polices plus grandes que`environment font +2`la police de l’environnement étaient codées comme « ou similaires . L’utilisation des extraits de code fournis prendra en charge les moniteurs À haute teneur en DPI et s’assurera que le texte d’affichage apparaît toujours à la bonne taille et poids (comme Light ou Semilight).
 
 > [!NOTE]
-> Avant d’appliquer la mise en forme, vérifiez que vous suivez les instructions fournies dans [style du texte](../../extensibility/ux-guidelines/fonts-and-formatting-for-visual-studio.md#BKMK_TextStyle). * *
+> Avant d’appliquer le formatage, assurez-vous de suivre les conseils trouvés dans le [style texte](../../extensibility/ux-guidelines/fonts-and-formatting-for-visual-studio.md#BKMK_TextStyle).
 
- Pour mettre à l’échelle la police de l’environnement, définissez le style de TextBlock ou de l’étiquette comme indiqué. Chacun de ces extraits de code, correctement utilisé, génère la police correcte, y compris les variations de taille et de poids appropriées.
+ Pour mettre à l’échelle la police de l’environnement, définissez le style du TextBlock ou de l’Étiquette tel qu’indiqué. Chacun de ces extraits de code, correctement utilisés, générera la police correcte, y compris la taille appropriée et les variations de poids.
 
- Où «`vsui`» est une référence à l’espace de noms `Microsoft.VisualStudio.Shell`:
+ Où`vsui`" est une référence `Microsoft.VisualStudio.Shell`à l’espace de nom :
 
 ```xaml
 xmlns:vsui="clr-namespace:Microsoft.VisualStudio.Shell;assembly=Microsoft.VisualStudio.Shell.14.0"
 ```
 
-#### <a name="375-environment-font--light"></a>police d’environnement 375% + clair
+#### <a name="375-environment-font--light"></a>375% Police de l’environnement - Lumière
 
-**Apparaît comme suit :** 34 PT Segoe UI clair
+**Apparaît comme:** 34 pt Segoe UI Light
 
 ::: moniker range="vs-2017"
 
-**À utiliser pour :** (rare) une interface utilisateur de personnalisation unique, comme dans la page de démarrage
+**Utilisation pour :** (rare) interface utilisateur de marque unique, comme dans la page De démarrage
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-**À utiliser pour :** (rare) interface utilisateur de personnalisation unique
+**Utilisation pour :** (rare) interface utilisateur de marque unique
 
 ::: moniker-end
 
-**Code procédural :** Où `textBlock` est un TextBlock précédemment défini et `label` est une étiquette précédemment définie :
+**Code de procédure:** Où `textBlock` est un TextBlock précédemment défini et `label` est une étiquette précédemment définie:
 
 ```csharp
 textBlock.SetResourceReference(TextBlock.StyleProperty,  
@@ -126,17 +126,17 @@ label.SetResourceReference(Label.StyleProperty,  
         VsResourceKeys.LabelEnvironment375PercentFontSizeStyleKey);
 ```
 
-**Code XAML :** Définissez le style de TextBlock ou de l’étiquette comme indiqué.
+**XAML:** Définissez le style du TextBlock ou de l’Étiquette tel qu’il est indiqué.
 
 ```xaml
 <TextBlock Style="{DynamicResource {x:Static vsui:VsResourceKeys.TextBlockEnvironment375PercentFontSizeStyleKey}}">TextBlock: 375 Percent Scaling</TextBlock> 
 <Label Style="{DynamicResource {x:Static vsui:VsResourceKeys.LabelEnvironment375PercentFontSizeStyleKey}}">Label: 375 Percent Scaling</Label>
 ```
 
-#### <a name="310-environment-font--light"></a>police d’environnement 310% + clair
- **S’affiche sous la forme :** 28 PT Segoe UI légère **utilisation pour :** titres de boîte de dialogue de signature volumineux, en-tête principal dans les rapports
+#### <a name="310-environment-font--light"></a>310% Police de l’environnement - Lumière
+ **Apparaît comme:** 28 pt Segoe UI Light **Use for:** large signature dialog titles, main heading in reports
 
- **Code procédural :** Où `textBlock` est un TextBlock précédemment défini et `label` est une étiquette précédemment définie :
+ **Code de procédure:** Où `textBlock` est un TextBlock précédemment défini et `label` est une étiquette précédemment définie:
 
 ```csharp
 textBlock.SetResourceReference(TextBlock.StyleProperty,  
@@ -145,17 +145,17 @@ label.SetResourceReference(Label.StyleProperty,  
         VsResourceKeys.LabelEnvironment310PercentFontSizeStyleKey);
 ```
 
- **Code XAML :** Définissez le style de TextBlock ou de l’étiquette comme indiqué.
+ **XAML:** Définissez le style du TextBlock ou de l’Étiquette tel qu’il est indiqué.
 
 ```xaml
 <TextBlock Style="{DynamicResource {x:Static vsui:VsResourceKeys.TextBlockEnvironment310PercentFontSizeStyleKey}}">TextBlock: 310 Percent Scaling</TextBlock> 
 <Label Style="{DynamicResource {x:Static vsui:VsResourceKeys.LabelEnvironment310PercentFontSizeStyleKey}}">Label: 310 Percent Scaling</Label>
 ```
 
-#### <a name="200-environment-font--semilight"></a>200% police d’environnement + Semilight
- **Apparaît comme suit :** 18 PT Segoe UI Semilight **utiliser pour :** sous-titres, titres dans les boîtes de dialogue petites et moyennes
+#### <a name="200-environment-font--semilight"></a>200% Police de l’environnement - Semilight
+ **Apparaît comme:** 18 pt Segoe UI Semilight **Use for:** subheadings, titles in small and medium dialogs
 
- **Code procédural :** Où `textBlock` est un TextBlock précédemment défini et `label` est une étiquette précédemment définie :
+ **Code de procédure:** Où `textBlock` est un TextBlock précédemment défini et `label` est une étiquette précédemment définie:
 
 ```csharp
 textBlock.SetResourceReference(TextBlock.StyleProperty,  
@@ -164,17 +164,17 @@ label.SetResourceReference(Label.StyleProperty,  
         VsResourceKeys.LabelEnvironment200PercentFontSizeStyleKey);
 ```
 
- **Code XAML :** Définissez le style de TextBlock ou de l’étiquette comme indiqué ci-dessous :
+ **XAML:** Définissez le style du TextBlock ou de l’Étiquette tel qu’il est indiqué :
 
 ```xaml
 <TextBlock Style="{DynamicResource {x:Static vsui:VsResourceKeys.TextBlockEnvironment200PercentFontSizeStyleKey}}">TextBlock: 200 Percent Scaling</TextBlock> 
 <Label Style="{DynamicResource {x:Static vsui:VsResourceKeys.LabelEnvironment200PercentFontSizeStyleKey}}">Label: 200 Percent Scaling</Label>
 ```
 
-#### <a name="155-environment-font"></a>police d’environnement 155%
- **S’affiche sous la forme :** 14 PT Segoe UI **utiliser pour :** en-têtes de section dans l’interface utilisateur ou les rapports du document
+#### <a name="155-environment-font"></a>155% Police de l’environnement
+ **Apparaît comme:** 14 pt Segoe UI **Utilisation pour:** titres de section dans document bien l’interface utilisateur ou des rapports
 
- **Code procédural :** Où `textBlock` est un TextBlock précédemment défini et `label` est une étiquette précédemment définie :
+ **Code de procédure:** Où `textBlock` est un TextBlock précédemment défini et `label` est une étiquette précédemment définie:
 
 ```csharp
 textBlock.SetResourceReference(TextBlock.StyleProperty,  
@@ -183,17 +183,17 @@ label.SetResourceReference(Label.StyleProperty,  
         VsResourceKeys.LabelEnvironment155PercentFontSizeStyleKey);
 ```
 
- **Code XAML :** Définissez le style de TextBlock ou de l’étiquette comme indiqué ci-dessous :
+ **XAML:** Définissez le style du TextBlock ou de l’Étiquette tel qu’il est indiqué :
 
 ```xaml
 <TextBlock Style="{DynamicResource {x:Static vsui:VsResourceKeys.TextBlockEnvironment155PercentFontSizeStyleKey}}">TextBlock: 155 Percent Scaling</TextBlock> 
 <Label Style="{DynamicResource {x:Static vsui:VsResourceKeys.LabelEnvironment155PercentFontSizeStyleKey}}">Label: 155 Percent Scaling</Label>
 ```
 
-#### <a name="133-environment-font"></a>police d’environnement 133%
- **S’affiche sous la forme :** 12 pt Segoe UI **utilisez pour :** sous-titres plus petits dans les boîtes de dialogue de signature et interface utilisateur de document
+#### <a name="133-environment-font"></a>133% Police de l’environnement
+ **Apparaît comme:** 12 pt Segoe UI **Utilisation pour:** sous-têtes plus petits dans les dialogues signature et documenter bien l’interface utilisateur
 
- **Code procédural :** Où `textBlock` est un TextBlock précédemment défini et `label` est une étiquette précédemment définie :
+ **Code de procédure:** Où `textBlock` est un TextBlock précédemment défini et `label` est une étiquette précédemment définie:
 
 ```csharp
 textBlock.SetResourceReference(TextBlock.StyleProperty,  
@@ -202,17 +202,17 @@ label.SetResourceReference(Label.StyleProperty,  
         VsResourceKeys.LabelEnvironment133PercentFontSizeStyleKey);
 ```
 
- **Code XAML :** Définissez le style de TextBlock ou de l’étiquette comme indiqué ci-dessous :
+ **XAML:** Définissez le style du TextBlock ou de l’Étiquette tel qu’il est indiqué :
 
 ```xaml
 <TextBlock Style="{DynamicResource {x:Static vsui:VsResourceKeys.TextBlockEnvironment133PercentFontSizeStyleKey}}">TextBlock: 133 Percent Scaling</TextBlock> 
 <Label Style="{DynamicResource {x:Static vsui:VsResourceKeys.LabelEnvironment133PercentFontSizeStyleKey}}">Label: 133 Percent Scaling</Label>
 ```
 
-#### <a name="122-environment-font"></a>police d’environnement 122%
- **S’affiche sous la forme :** 11 PT Segoe UI **utilisez pour :** les en-têtes de section dans les boîtes de dialogue de signature, les nœuds supérieurs dans l’arborescence, la navigation verticale avec onglets
+#### <a name="122-environment-font"></a>122% Police de l’environnement
+ **Apparaît comme:** 11 pt Segoe UI **Utilisation pour:** titres de section dans les dialogues signature, noeuds supérieurs dans la vue des arbres, navigation onglet vertical
 
- **Code procédural :** Où `textBlock` est un TextBlock précédemment défini et `label` est une étiquette précédemment définie :
+ **Code de procédure:** Où `textBlock` est un TextBlock précédemment défini et `label` est une étiquette précédemment définie:
 
 ```csharp
 textBlock.SetResourceReference(TextBlock.StyleProperty,  
@@ -221,17 +221,17 @@ label.SetResourceReference(Label.StyleProperty,  
         VsResourceKeys.LabelEnvironment122PercentFontSizeStyleKey);
 ```
 
- **Code XAML :** Définissez le style de TextBlock ou de l’étiquette comme indiqué ci-dessous :
+ **XAML:** Définissez le style du TextBlock ou de l’Étiquette tel qu’il est indiqué :
 
 ```xaml
 <TextBlock Style="{DynamicResource {x:Static vsui:VsResourceKeys.TextBlockEnvironment122PercentFontSizeStyleKey}}">TextBlock: 122 Percent Scaling</TextBlock> 
 <Label Style="{DynamicResource {x:Static vsui:VsResourceKeys.LabelEnvironment122PercentFontSizeStyleKey}}">Label: 122 Percent Scaling</Label>
 ```
 
-#### <a name="environment-font--bold"></a>Police d’environnement + gras
- **S’affiche sous la forme :** 9 PT en gras Segoe UI **utiliser pour :** étiquettes et sous-titres dans les boîtes de dialogue de signature, les rapports et l’interface utilisateur du document
+#### <a name="environment-font--bold"></a>Police de l’environnement et gras
+ **Apparaît comme:** audacieux 9 pt Segoe UI **Utilisation pour:** étiquettes et sous-têtes dans les dialogues signature, rapports, et document bien l’interface utilisateur
 
- **Code procédural :** Où `textBlock` est un TextBlock précédemment défini et `label` est une étiquette précédemment définie :
+ **Code de procédure:** Où `textBlock` est un TextBlock précédemment défini et `label` est une étiquette précédemment définie:
 
 ```csharp
 textBlock.SetResourceReference(TextBlock.StyleProperty,  
@@ -240,7 +240,7 @@ label.SetResourceReference(Label.StyleProperty,  
         VsResourceKeys.LabelEnvironmentBoldStyleKey);
 ```
 
- **Code XAML :** Définissez le style de TextBlock ou de l’étiquette comme indiqué ci-dessous :
+ **XAML:** Définissez le style du TextBlock ou de l’Étiquette tel qu’il est indiqué :
 
 ```xaml
 <TextBlock Style="{DynamicResource {x:Static vsui:VsResourceKeys.TextBlockEnvironmentBoldStyleKey}}"> Bold TextBlock</TextBlock> 
@@ -248,9 +248,9 @@ label.SetResourceReference(Label.StyleProperty,  
 ```
 
 ### <a name="localizable-styles"></a>Styles localisables
- Dans certains cas, les localisateurs doivent modifier les styles de police pour des paramètres régionaux différents, par exemple en supprimant le gras du texte pour les langues d’Extrême-Orient. Pour rendre possible la localisation des styles de police, ces styles doivent se trouver dans le fichier. resx. La meilleure façon de procéder et de modifier les styles de police dans le concepteur de formulaires de Visual Studio consiste à définir explicitement les styles de police au moment du Design. Bien que cela crée un objet de police complète et peut sembler rompre l’héritage des polices parentes, seule la propriété FontStyle est utilisée pour définir la police.
+ Dans certains cas, les localisateurs devront modifier les styles de police pour différents endroits, tels que l’élimination de l’audace du texte pour les langues d’Asie de l’Est. Pour rendre possible la localisation des styles de police, ces styles doivent être dans le fichier .resx. La meilleure façon d’accomplir cela et encore modifier les styles de police dans le concepteur de formulaire Visual Studio est de définir explicitement les styles de police au moment de la conception. Bien que cela crée un objet de police complète et peut sembler briser l’héritage des polices parent, seule la propriété FontStyle est utilisé pour définir la police.
 
- La solution consiste à raccorder l’événement `FontChanged` du formulaire de boîte de dialogue. Dans l’événement `FontChanged`, Parcourez tous les contrôles et vérifiez si leur police est définie. S’il est défini, remplacez-le par une nouvelle police en fonction de la police du formulaire et du style de police précédent du contrôle. Voici un exemple de ce code :
+ La solution est d’accrocher l’événement du formulaire de `FontChanged` dialogue. Dans `FontChanged` le cas où, marchez tous les contrôles et vérifiez si leur police est définie. Si elle est réglée, changez-la en nouvelle police en fonction de la police du formulaire et du style de police précédent du contrôle. Un exemple de ceci dans le code est :
 
 ```csharp
 private void Form1_FontChanged(object sender, System.EventArgs e)
@@ -286,145 +286,145 @@ protected static void SetFontStyles(Control topControl, Control parent, Font ref
 }
 ```
 
- L’utilisation de ce code garantit que lorsque la police du formulaire est mise à jour, les polices des contrôles sont également mises à jour. Cette méthode doit également être appelée à partir du constructeur du formulaire, car la boîte de dialogue peut ne pas parvenir à recevoir une instance de `IUIService` et l’événement `FontChanged` ne se déclenchera jamais. Le raccordement `FontChanged` permet aux boîtes de dialogue de sélectionner dynamiquement la nouvelle police même si la boîte de dialogue est déjà ouverte.
+ L’utilisation de ce code garantit que lorsque la police du formulaire est mise à jour, les polices de contrôles seront également mises à jour. Cette méthode devrait également être appelée à partir du constructeur du formulaire, `IUIService` parce `FontChanged` que le dialogue pourrait ne pas obtenir un exemple de et l’événement ne sera jamais tirer. Le `FontChanged` crochet permettra aux dialogues de reprendre dynamiquement la nouvelle police même si le dialogue est déjà ouvert.
 
 ### <a name="testing-the-environment-font"></a>Test de la police de l’environnement
- Pour vous assurer que votre interface utilisateur utilise la police d’environnement et respecte les paramètres de taille, ouvrez **outils > Options > environnement > polices et couleurs** , puis sélectionnez « police d’environnement » dans le menu déroulant « Afficher les paramètres de : ».
+ Pour vous assurer que votre interface utilisateur utilise la police de l’environnement et respecte les paramètres de taille, ouvrez **des outils > options > environnement > fontes et couleurs** et sélectionnez « Police de l’environnement » dans le cadre du menu « Afficher » le menu d’abandon.
 
- ![Paramètres des polices et des couleurs dans la boîte de dialogue Outils &gt; options](../../extensibility/ux-guidelines/media/0201-a_optionsfonts.png "0201-a_OptionsFonts")<br />Paramètres des polices et des couleurs dans la boîte de dialogue Outils &gt; options
+ ![Paramètres de polices et &gt; de couleurs dans le dialogue Tools Options](../../extensibility/ux-guidelines/media/0201-a_optionsfonts.png "0201-a_OptionsFonts")<br />Paramètres de polices et &gt; de couleurs dans le dialogue Tools Options
 
- Définissez la police sur une valeur très différente de celle par défaut. Pour que l’interface utilisateur ne soit pas mise à jour, choisissez une police avec empattements (comme « Times New Roman ») et définissez une très grande taille. Testez ensuite votre interface utilisateur pour vous assurer qu’elle respecte l’environnement. Voici un exemple d’utilisation de la boîte de dialogue de licence :
+ Définissez la police à quelque chose de très différent de la valeur par défaut. Pour rendre évident que l’interface utilisateur ne met pas à jour, choisissez une police avec serifs (comme "Times New Roman") et définir une très grande taille. Ensuite, testez votre interface utilisateur pour vous assurer qu’elle respecte l’environnement. Voici un exemple utilisant le dialogue de licence :
 
  ![Exemple de texte d’interface utilisateur qui ne respecte pas la police de l’environnement](../../extensibility/ux-guidelines/media/0201-b_wrongfontdialog.png "0201-b_WrongFontDialog")<br />Exemple de texte d’interface utilisateur qui ne respecte pas la police de l’environnement
 
- Dans ce cas, les informations « utilisateur » et « informations sur le produit » ne respectent pas la police. Dans certains cas, il peut s’agir d’un choix de conception explicite, mais il peut s’agir d’un bogue si la police explicite n’est pas spécifiée dans les spécifications de ligne rouge.
+ Dans ce cas, les « informations utilisateur » et « informations sur les produits » ne respectent pas la police. Dans certains cas, cela peut être un choix de conception explicite, mais il peut être un bug si la police explicite n’est pas spécifiée dans le cadre des spécifications redline.
 
- Pour réinitialiser la police, cliquez sur « utiliser les valeurs par défaut » sous **outils > Options > environnement > polices et couleurs**.
+ Pour réinitialiser la police, cliquez sur « Utilisez par défaut » sous **Outils > Options > environnement > fontes et couleurs**.
 
-## <a name="BKMK_TextStyle"></a>Style de texte
- Le style texte fait référence à la taille de police, au poids et à la casse. Pour obtenir des conseils d’implémentation, consultez [la police de l’environnement](../../extensibility/ux-guidelines/fonts-and-formatting-for-visual-studio.md#BKMK_TheEnvironmentFont).
+## <a name="text-style"></a><a name="BKMK_TextStyle"></a>Style de texte
+ Le style de texte se réfère à la taille de police, le poids, et le boîtier. Pour obtenir des conseils en matière de mise en œuvre, voir [La police de l’environnement](../../extensibility/ux-guidelines/fonts-and-formatting-for-visual-studio.md#BKMK_TheEnvironmentFont).
 
-### <a name="text-casing"></a>Casse du texte
+### <a name="text-casing"></a>Boîtier de texte
 
-#### <a name="all-caps"></a>Tout en majuscules
- N’utilisez pas toutes les majuscules pour les titres ou les étiquettes dans Visual Studio.
+#### <a name="all-caps"></a>Toutes les casquettes
+ N’utilisez pas toutes les casquettes pour les titres ou les étiquettes de Visual Studio.
 
-#### <a name="all-lowercase"></a>Tout en minuscules
- N’utilisez pas tout en minuscules pour les titres ou les étiquettes dans Visual Studio.
+#### <a name="all-lowercase"></a>Tous les lowercase
+ N’utilisez pas toutes les minuscules pour les titres ou les étiquettes dans Visual Studio.
 
-#### <a name="sentence-and-title-case"></a>Casse des phrases et du titre
- Le texte dans Visual Studio doit utiliser la casse du titre ou le cas de phrase, en fonction de la situation.
+#### <a name="sentence-and-title-case"></a>Cas de peine et de titre
+ Le texte de Visual Studio doit utiliser soit le cas de titre, soit le cas de phrase, selon la situation.
 
-|Utiliser la casse du titre pour :|Utiliser la casse en phrases pour :|
+|Utilisez le cas de titre pour :|Utilisez le boîtier de phrase pour :|
 |-------------------------|----------------------------|
-|Titres de boîtes de dialogue|Étiquettes|
-|Zones de groupe|Cases à cocher|
+|Titres Dialog|Étiquettes|
+|Boîtes de groupe|Cases à cocher|
 |Éléments de menu|Cases d’option|
-|Éléments de menu contextuel|Éléments de zone de liste|
+|Éléments de menu contextuel|Liste des articles de boîte|
 |Boutons|Barres d'état|
 |Étiquettes de table||
 |En-têtes de colonne||
 |Info-bulles||
 
 ##### <a name="title-case"></a>Première lettre des mots en majuscule
- Le titre est un style dans lequel les premières lettres de la plupart ou de la totalité des mots d’une expression sont en majuscules. Dans Visual Studio, le titre de la casse est utilisé pour de nombreux éléments, notamment :
+ Le cas de titre est un style dans lequel les premières lettres de la plupart ou de la totalité des mots dans une phrase sont capitalisées. Dans Visual Studio, le boîtier titre est utilisé pour de nombreux articles, y compris:
 
-- **Info-bulles.** Exemple : « aperçu des éléments sélectionnés »
+- **Tooltips.** Exemple : « Aperçu des éléments sélectionnés »
 
-- **En-têtes de colonne.** Exemple : « réponse du système »
+- **En-têtes de colonne.** Exemple : « Réponse du système »
 
-- **Éléments de menu.** Exemple : « enregistrer tout »
+- **Articles de menu.** Exemple : « Sauvez tous »
 
-  Lors de l’utilisation de la casse du titre, il s’agit des indications pour mettre en majuscules les mots et quand les mettre en minuscules :
+  Lors de l’utilisation du cas de titre, ce sont les lignes directrices pour savoir quand capitaliser les mots et quand les laisser minuscules:
 
 |Majuscules|Commentaires et exemples|
 |---------------|---------------------------|
 |Tous les noms||
-|All verbs|Y compris « is » et d’autres formes de « à faire »|
-|Toutes les adverbes|Y compris « de » et « When »|
-|Tous les adjectifs|Y compris « this » et « This »|
-|Tous les pronoms|Y compris la possession « son », ainsi que « c’est », une pronom « it » et le verbe « is »|
-|Premier et dernier mots, indépendamment des parties de la parole||
-|Prépositions qui font partie d’une expression verbale|« Fermeture de toutes les fenêtres » ou « arrêt du système »|
-|Toutes les lettres d’un acronyme|HTML, XML, URL, IDE, RVB|
-|Le deuxième mot d’un mot composé s’il s’agit d’un nom ou d’un adjectif approprié, ou si les mots ont le même poids|Références croisées, logiciels pré-Microsoft, accès en lecture/écriture, Runtime|
+|All verbs|Y compris "Est" et d’autres formes de "être"|
+|Tous les adverbes|Y compris "Than" et "Quand"|
+|Tous les adjectifs|Y compris "Ceci" et "That"|
+|Tous les pronoms|Y compris le possessif "Its" ainsi que "It’s", une contraction du pronom "il" et le verbe "est"|
+|Premiers et derniers mots, quelles que soient les parties de la parole||
+|Prépositions qui font partie d’une phrase verbe|"Closing Out All Windows" ou "Shutting Down the System"|
+|Toutes les lettres d’un acronyme|HTML, XML, URL, IDE, RGB|
+|Le deuxième mot dans un mot composé s’il s’agit d’un nom ou d’un adjectif approprié, ou si les mots ont le poids égal|Cross-Reference, Logiciel Pré-Microsoft, Lire/Écrire l’accès, Run-Time|
 
 |Minuscules|Exemples|
 |---------------|--------------|
-|Le deuxième mot d’un mot composé s’il s’agit d’une autre partie de la parole ou d’un participe modifiant le premier mot|Procédure, prise en charge|
-|Articles, sauf s’il s’agit du premier mot du titre|un, un, le|
-|Conjonctions de coordonnées|et, mais, pour, ou|
-|Prépositions avec des mots de quatre lettres ou moins en dehors d’une expression verbale|into, to, As pour, out of, en plus de|
-|« To » lorsqu’il est utilisé dans une expression infinitive|« Comment formater votre disque dur »|
+|Le deuxième mot dans un mot composé s’il s’agit d’une autre partie de la parole ou d’un participant modifiant le premier mot|Comment faire, Décollage|
+|Articles, sauf si l’on est le premier mot dans le titre|a, an, the|
+|Coordonner les conjonctions|et, mais, pour, ni, ou|
+|Prépositions avec des mots de quatre lettres ou moins en dehors d’une phrase de verbe|dans, sur, comme pour, hors de, sur le dessus de|
+|"To" lorsqu’il est utilisé dans une phrase infinitive|"Comment formater votre disque dur"|
 
-##### <a name="sentence-case"></a>Casse de la phrase
- La casse en phrases est la méthode de mise en majuscules standard pour l’écriture dans laquelle seul le premier mot de la phrase est capitalisé, avec les noms appropriés et le pronom « I ». En général, la lecture des phrases est plus facile pour un public mondial, en particulier lorsque le contenu est traduit par une machine. Utiliser la casse en phrases pour :
+##### <a name="sentence-case"></a>Affaire de condamnation
+ Le cas de la peine est la méthode de capitalisation standard pour l’écriture dans laquelle seul le premier mot de la phrase est capitalisé, avec tous les noms appropriés et le pronom "je.". En général, le cas de phrase est plus facile à lire pour un public mondial, en particulier lorsque le contenu sera traduit par une machine. Utilisez le boîtier de phrase pour :
 
-1. **Messages de la barre d’État.** Ils sont simples, courts et fournissent uniquement des informations d’État. Exemple : « chargement du fichier projet »
+1. **Messages de barre d’état.** Ceux-ci sont simples, courts, et ne fournissent que des informations sur l’état. Exemple : « Fichier de projet de chargement »
 
-2. **Tous les autres éléments d’interface utilisateur**, y compris les étiquettes, les cases à cocher, les cases d’option et les éléments de zone de liste. Exemple : « sélectionner tous les éléments dans la liste »
+2. **Tous les autres éléments de l’interface utilisateur,** y compris les étiquettes, les cases à cocher, les boutons radio et les articles de la boîte de liste. Exemple : « Sélectionnez tous les éléments de liste »
 
 ### <a name="text-formatting"></a>Mise en forme de texte
- La mise en forme du texte par défaut dans Visual Studio 2013 est contrôlée par [la police de l’environnement](../../extensibility/ux-guidelines/fonts-and-formatting-for-visual-studio.md#BKMK_TheEnvironmentFont). Ce service permet de garantir un aspect cohérent des polices dans l’environnement de développement intégré (IDE), et vous devez l’utiliser pour garantir une expérience cohérente pour vos utilisateurs.
+ Le formatage de texte par défaut dans Visual Studio 2013 est contrôlé par [La police de l’environnement](../../extensibility/ux-guidelines/fonts-and-formatting-for-visual-studio.md#BKMK_TheEnvironmentFont). Ce service permet d’assurer une apparence de police cohérente tout au long de l’IDE (environnement de développement intégré), et vous devez l’utiliser pour garantir une expérience cohérente pour vos utilisateurs.
 
- La taille par défaut utilisée par le service de police de Visual Studio provient de Windows et apparaît sous la forme 9 PT.
+ La taille par défaut utilisée par le service de police Visual Studio provient de Windows et apparaît comme 9 pt.
 
- Vous pouvez appliquer une mise en forme à la police de l’environnement. Cette rubrique explique comment et où utiliser les styles. Pour plus d’informations sur l’implémentation, reportez-vous à [la police de l’environnement](../../extensibility/ux-guidelines/fonts-and-formatting-for-visual-studio.md#BKMK_TheEnvironmentFont).
+ Vous pouvez appliquer le formatage à la police de l’environnement. Ce sujet couvre comment et où utiliser les styles. Pour obtenir des informations sur la mise en œuvre, consultez [la police de l’environnement](../../extensibility/ux-guidelines/fonts-and-formatting-for-visual-studio.md#BKMK_TheEnvironmentFont).
 
-#### <a name="bold-text"></a>Texte en gras
- Le texte en gras est utilisé avec modération dans Visual Studio et doit être réservé pour :
+#### <a name="bold-text"></a>Texte audacieux
+ Le texte audacieux est utilisé avec parcimonie dans Visual Studio et doit être réservé à :
 
-- étiquettes de question dans les assistants
+- étiquettes d’interrogation dans les sorciers
 
-- désignation du projet actif dans Explorateur de solutions
+- désigner le projet actif dans Solution Explorer
 
-- valeurs remplacées dans la fenêtre de l’outil Propriétés
+- valeurs dépassées dans la fenêtre d’outils Properties
 
-- certains événements dans les listes déroulantes de l’éditeur de Visual Basic
+- certains événements dans les listes d’abandon de l’éditeur Visual Basic
 
-- contenu généré par le serveur dans la structure du document pour les pages Web
+- contenu généré par le serveur dans le document pour les pages Web
 
-- en-têtes de section dans une interface utilisateur de concepteur ou de boîte de dialogue complexe
+- en-têtes de section dans le dialogue complexe ou l’interface utilisateur de concepteur
 
 #### <a name="italics"></a>Italique
- Visual Studio n’utilise pas de texte en italique ou en gras.
+ Visual Studio n’utilise ni le texte italique ni le texte italique audacieux.
 
 #### <a name="color"></a>Couleur
 
-- Le bleu est réservé aux liens hypertexte (navigation et commande) et ne doit jamais être utilisé pour l’orientation.
+- Le bleu est réservé aux hyperliens (navigation et commandement) et ne doit jamais être utilisé pour l’orientation.
 
-- Les en-têtes plus grands (police d’environnement x 155% ou plus) peuvent être colorés dans les cas suivants :
+- Les titres plus grands (police de l’environnement x 155 % ou plus) peuvent être colorés à ces fins :
 
-  - Pour fournir un attrait visuel à la signature de l’interface utilisateur de Visual Studio
+  - Pour attirer visuellement l’interface utilisateur Visual Studio signature
 
-  - Pour attirer l’attention sur une zone spécifique
+  - Attirer l’attention sur un domaine spécifique
 
-  - Pour offrir une déchirure de la couleur de texte de l’environnement gris foncé standard/noir
+  - Pour offrir un soulagement de la couleur standard de texte gris foncé/noir
 
-- Les couleurs des en-têtes doivent tirer parti des couleurs existantes de la personnalisation de Visual Studio, principalement la #FF68217A principale violette.
+- La couleur dans les rubriques devrait tirer parti des couleurs existantes de la marque Visual Studio, principalement le violet principal, #FF68217A.
 
-- Lorsque vous utilisez des couleurs dans les en-têtes, vous devez respecter les [instructions de couleurs Windows](/windows/desktop/uxguide/vis-color), notamment le taux de contraste et d’autres considérations relatives à l’accessibilité.
+- Lorsque vous utilisez la couleur dans les rubriques, vous devez adhérer aux [directives de couleur Windows](/windows/desktop/uxguide/vis-color), y compris le rapport de contraste et d’autres considérations d’accessibilité.
 
 ### <a name="font-size"></a>Taille de la police
- La conception de l’interface utilisateur de Visual Studio offre une apparence plus claire avec davantage d’espace blanc. Lorsque cela est possible, les barres de chrome et de titre ont été réduites ou supprimées. Alors que la densité des informations est une exigence dans Visual Studio, la typographie continue d’être importante, en mettant l’accent sur davantage d’espacement entre les lignes ouvertes et sur une variation des tailles et des poids des polices.
+ Visual Studio UI conception dispose d’un aspect plus léger avec plus d’espace blanc. Dans la mesure du possible, les barres de chrome et de titre ont été réduites ou supprimées. Bien que la densité de l’information soit une exigence dans Visual Studio, la typographie continue d’être importante, en mettant l’accent sur un espacement plus ouvert des lignes et une variation de la taille et des poids des polices.
 
- Les tableaux ci-dessous incluent des détails de conception et des exemples visuels pour les polices d’affichage utilisées dans Visual Studio. Certaines variations de police d’affichage ont à la fois la taille et le poids, par exemple Semilight ou Light, codées dans leur apparence.
+ Les tableaux ci-dessous comprennent des détails de conception et des exemples visuels pour les polices d’affichage utilisées dans Visual Studio. Certaines variations de police d’affichage ont à la fois la taille et le poids, tels que Semilight ou Light, codés dans leur apparence.
 
- Les extraits de code d’implémentation pour toutes les polices d’affichage se trouvent dans la [référence de mise en forme (mise à l’échelle/mise en gras)](../../extensibility/ux-guidelines/fonts-and-formatting-for-visual-studio.md#BKMK_Formatting).
+ Des extraits de code d’implémentation pour toutes les polices d’affichage peuvent être trouvés dans [la référence De formatage (mise à l’échelle/bolding).](../../extensibility/ux-guidelines/fonts-and-formatting-for-visual-studio.md#BKMK_Formatting)
 
-#### <a name="375-environment-font--light"></a>police d’environnement 375% + clair
+#### <a name="375-environment-font--light"></a>375% Police de l’environnement - Lumière
 
 |||
 |-|-|
-|**Utilisation :** Rares. Interface utilisateur personnalisée uniquement.<br /><br /> **Ne**<br /><br /> -Utiliser la casse en majuscules<br />-Toujours utiliser l’épaisseur légère<br /><br /> **Ne pas:**<br /><br /> -À utiliser pour l’interface utilisateur autre que la signature (page de démarrage)<br />-Gras, italique ou italique gras<br />-À utiliser pour le corps du texte<br />-À utiliser dans les fenêtres outil|**Apparaît comme suit :** 34 PT Segoe UI clair<br /><br /> **Exemple visuel :**<br /><br /> *Actuellement non utilisé. Peut être utilisé dans la page de démarrage de Visual Studio 2017.*|
+|**Utilisation:** Rare. Interface utilisateur de marque unique seulement.<br /><br /> **faire:**<br /><br /> - Utiliser l’affaire de la peine<br />- Utilisez toujours le poids léger<br /><br /> **Ne pas:**<br /><br /> - Utilisation de l’interface utilisateur autre que l’interface utilisateur signature telle que La page De démarrage<br />- Audacieux, italique ou gras italique<br />- Utilisation pour le texte du corps<br />- Utilisation dans les fenêtres d’outils|**Apparaît comme:** 34 pt Segoe UI Light<br /><br /> **Exemple visuel :**<br /><br /> *Actuellement non utilisé. Peut être utilisé dans la page de démarrage Visual Studio 2017.*|
 
-#### <a name="310-environment-font--light"></a>police d’environnement 310% + clair
+#### <a name="310-environment-font--light"></a>310% Police de l’environnement - Lumière
 
 ::: moniker range="vs-2017"
 
 |||
 |-|-|
-|**Utilisation :**<br /><br /> -Plus grand en-tête dans les boîtes de dialogue de signature<br />-Titre du rapport principal<br /><br /> **Ne**<br /><br /> -Utiliser la casse en majuscules<br />-Toujours utiliser l’épaisseur légère<br /><br /> **Ne pas:**<br /><br /> -À utiliser pour l’interface utilisateur autre que la signature (page de démarrage)<br />-Gras, italique ou italique gras<br />-À utiliser pour le corps du texte<br />-À utiliser dans les fenêtres outil|**Apparaît comme :** 28 PT Segoe UI clair<br /><br /> **Exemple visuel :**<br /><br /> ![Exemple de titre de police &#43; d’environnement de 310% en clair](../../extensibility/ux-guidelines/media/0202-a_ef310.png "0202-a_EF310")|
+|**Usage :**<br /><br /> - Plus grand cap dans les dialogues signature<br />- Direction du rapport principal<br /><br /> **faire:**<br /><br /> - Utiliser l’affaire de la peine<br />- Utilisez toujours le poids léger<br /><br /> **Ne pas:**<br /><br /> - Utilisation de l’interface utilisateur autre que l’interface utilisateur signature telle que La page De démarrage<br />- Audacieux, italique ou gras italique<br />- Utilisation pour le texte du corps<br />- Utilisation dans les fenêtres d’outils|**Apparaît comme:** 28 pt Segoe UI Light<br /><br /> **Exemple visuel :**<br /><br /> ![Exemple de police 310% Environnement &#43; tête de lumière](../../extensibility/ux-guidelines/media/0202-a_ef310.png "0202-a_EF310")|
 
 ::: moniker-end
 
@@ -432,56 +432,56 @@ protected static void SetFontStyles(Control topControl, Control parent, Font ref
 
 |||
 |-|-|
-|**Utilisation :**<br /><br /> -Plus grand en-tête dans les boîtes de dialogue de signature<br />-Titre du rapport principal<br /><br /> **Ne**<br /><br /> -Utiliser la casse en majuscules<br />-Toujours utiliser l’épaisseur légère<br /><br /> **Ne pas:**<br /><br /> -À utiliser pour l’interface utilisateur autre que la signature<br />-Gras, italique ou italique gras<br />-À utiliser pour le corps du texte<br />-À utiliser dans les fenêtres outil|**Apparaît comme :** 28 PT Segoe UI clair<br /><br /> **Exemple visuel :**<br /><br /> ![Exemple de titre de police &#43; d’environnement de 310% en clair](../../extensibility/ux-guidelines/media/0202-a_ef310.png "0202-a_EF310")|
+|**Usage :**<br /><br /> - Plus grand cap dans les dialogues signature<br />- Direction du rapport principal<br /><br /> **faire:**<br /><br /> - Utiliser l’affaire de la peine<br />- Utilisez toujours le poids léger<br /><br /> **Ne pas:**<br /><br /> - Utilisation de l’interface utilisateur autre que l’interface utilisateur signature<br />- Audacieux, italique ou gras italique<br />- Utilisation pour le texte du corps<br />- Utilisation dans les fenêtres d’outils|**Apparaît comme:** 28 pt Segoe UI Light<br /><br /> **Exemple visuel :**<br /><br /> ![Exemple de police 310% Environnement &#43; tête de lumière](../../extensibility/ux-guidelines/media/0202-a_ef310.png "0202-a_EF310")|
 
 ::: moniker-end
 
-#### <a name="200-environment-font--semilight"></a>200% police d’environnement + Semilight
+#### <a name="200-environment-font--semilight"></a>200% Police de l’environnement - Semilight
 
 |||
 |-|-|
-|**Utilisation :**<br /><br /> -En-têtes<br />-Titres dans les boîtes de dialogue petites et moyennes<br /><br /> **Ne**<br /><br /> -Utiliser la casse en majuscules<br />-Toujours utiliser le poids de Semilight<br /><br /> **Ne pas:**<br /><br /> -Gras, italique ou italique gras<br />-À utiliser pour le corps du texte<br />-À utiliser dans les fenêtres outil|**S’affiche sous la forme :** 18 PT Segoe UI Semillight<br /><br /> **Exemple visuel :**<br /><br /> ![Exemple de police &#43; d’environnement 200% Semilight](../../extensibility/ux-guidelines/media/0202-b_ef200.png "0202-b_EF200")|
+|**Usage :**<br /><br /> - Sous-titrages<br />- Titres en petits et moyens dialogues<br /><br /> **faire:**<br /><br /> - Utiliser l’affaire de la peine<br />- Utilisez toujours le poids Semilight<br /><br /> **Ne pas:**<br /><br /> - Audacieux, italique ou gras italique<br />- Utilisation pour le texte du corps<br />- Utilisation dans les fenêtres d’outils|**Apparaît comme:** 18 pt Segoe UI Semillight<br /><br /> **Exemple visuel :**<br /><br /> ![Exemple de police 200% Environnement &#43; Semilight](../../extensibility/ux-guidelines/media/0202-b_ef200.png "0202-b_EF200")|
 
-#### <a name="155-environment-font"></a>police d’environnement 155%
-
-|||
-|-|-|
-|**Utilisation :**<br /><br /> -En-têtes de section dans l’interface utilisateur du document<br />-Rapports<br /><br /> **Procédez comme suit :** Utiliser la casse des phrases<br /><br /> **Ne pas:**<br /><br /> -Gras, italique ou italique gras<br />-À utiliser pour le corps du texte<br />-À utiliser dans les contrôles Visual Studio standard<br />-À utiliser dans les fenêtres outil|**S’affiche sous la forme :** 14 PT Segoe UI<br /><br /> **Exemple visuel :**<br /><br /> ![Exemple de titre de police d’environnement 155%](../../extensibility/ux-guidelines/media/0202-c_ef155.png "0202-c_EF155")|
-
-#### <a name="133-environment-font"></a>police d’environnement 133%
+#### <a name="155-environment-font"></a>155% Police de l’environnement
 
 |||
 |-|-|
-|**Utilisation :**<br /><br /> -Sous-titres plus petits dans les boîtes de dialogue de signature<br />-Sous-titres plus petits dans l’interface utilisateur du document<br /><br /> **Procédez comme suit :** Utiliser la casse des phrases<br /><br /> **Ne pas:**<br /><br /> -Gras, italique ou italique gras<br />-À utiliser pour le corps du texte<br />-À utiliser dans les contrôles Visual Studio standard<br />-À utiliser dans les fenêtres outil|**S’affiche sous la forme :** 12 pt Segoe UI<br /><br /> **Exemple visuel :**<br /><br /> ![Exemple de titre de police d’environnement 133%](../../extensibility/ux-guidelines/media/0202-d_ef133.png "0202-d_EF133")|
+|**Usage :**<br /><br /> - Section des rubriques dans le document bien l’interface utilisateur<br />- Rapports<br /><br /> **Faire:** Utiliser le cas de phrase<br /><br /> **Ne pas:**<br /><br /> - Audacieux, italique ou gras italique<br />- Utilisation pour le texte du corps<br />- Utilisation dans les commandes standard visual Studio<br />- Utilisation dans les fenêtres d’outils|**Apparaît comme:** 14 pt Segoe UI<br /><br /> **Exemple visuel :**<br /><br /> ![Exemple de titre de police d'environnement 155 %](../../extensibility/ux-guidelines/media/0202-c_ef155.png "0202-c_EF155")|
 
-#### <a name="122-environment-font"></a>police d’environnement 122%
-
-|||
-|-|-|
-|**Utilisation :**<br /><br /> -En-têtes de section dans les boîtes de dialogue de signature<br />-Nœuds supérieurs en mode arborescence<br />-Navigation de tabulation verticale<br /><br /> **Procédez comme suit :** Utiliser la casse des phrases<br /><br /> **Ne pas:**<br /><br /> -Gras, italique ou italique gras<br />-À utiliser pour le corps du texte<br />-À utiliser dans les contrôles Visual Studio standard<br />-À utiliser dans les fenêtres outil|**S’affiche sous la forme :** 11 PT Segoe UI<br /><br /> **Exemple visuel :**<br /><br /> ![Exemple de titre de police d’environnement 122%](../../extensibility/ux-guidelines/media/0202-e_ef122.png "0202-e_EF122")|
-
-#### <a name="environment-font--bold"></a>Police d’environnement + gras
+#### <a name="133-environment-font"></a>133% Police de l’environnement
 
 |||
 |-|-|
-|**Utilisation :**<br /><br /> -Étiquettes et sous-titres dans les boîtes de dialogue de signature<br />-Étiquettes et sous-titres dans les rapports<br />-Étiquettes et sous-titres dans l’interface utilisateur du document<br /><br /> **Ne**<br /><br /> -Utiliser la casse en majuscules<br />-Utiliser le poids gras<br /><br /> **Ne pas:**<br /><br /> -Italique ou italique gras<br />-À utiliser pour le corps du texte<br />-À utiliser dans les contrôles Visual Studio standard<br />-À utiliser dans les fenêtres outil|**S’affiche sous la forme :** 9 PT en gras Segoe UI<br /><br /> **Exemple visuel :**<br /><br /> ![Exemple de titre de &#43; police en gras d’environnement](../../extensibility/ux-guidelines/media/0202-f_efb.png "0202-f_EFB")|
+|**Usage :**<br /><br /> - Sous-titrages plus petits dans les dialogues signature<br />- Sous-titrages plus petits dans le document bien l’interface utilisateur<br /><br /> **Faire:** Utiliser le cas de phrase<br /><br /> **Ne pas:**<br /><br /> - Audacieux, italique ou gras italique<br />- Utilisation pour le texte du corps<br />- Utilisation dans les commandes standard visual Studio<br />- Utilisation dans les fenêtres d’outils|**Apparaît comme:** 12 pt Segoe UI<br /><br /> **Exemple visuel :**<br /><br /> ![Exemple de titre de police d'environnement 133 %](../../extensibility/ux-guidelines/media/0202-d_ef133.png "0202-d_EF133")|
 
-#### <a name="environment-font"></a>Police d’environnement
+#### <a name="122-environment-font"></a>122% Police de l’environnement
 
 |||
 |-|-|
-|**Utilisation :** Tout le reste du texte<br /><br /> **Procédez comme suit :** Utiliser la casse des phrases<br /><br /> **Ne pas :** Italique ou italique gras|**S’affiche sous la forme :** 9 PT Segoe UI<br /><br /> **Exemple visuel :**<br /><br /> ![Exemple de police d’environnement](../../extensibility/ux-guidelines/media/0202-g_ef.png "0202-g_EF")|
+|**Usage :**<br /><br /> - Titres de section dans les dialogues signature<br />- Top nœuds dans la vue d’arbre<br />- Navigation verticale de l’onglet<br /><br /> **Faire:** Utiliser le cas de phrase<br /><br /> **Ne pas:**<br /><br /> - Audacieux, italique ou gras italique<br />- Utilisation pour le texte du corps<br />- Utilisation dans les commandes standard visual Studio<br />- Utilisation dans les fenêtres d’outils|**Apparaît comme:** 11 pt Segoe UI<br /><br /> **Exemple visuel :**<br /><br /> ![Exemple de titre de police d'environnement 122 %](../../extensibility/ux-guidelines/media/0202-e_ef122.png "0202-e_EF122")|
 
-### <a name="padding-and-spacing"></a>Remplissage et espacement
- Les en-têtes nécessitent de l’espace pour leur apporter l’accent approprié. Cet espace varie en fonction de la taille du point et de ce qui se trouve à proximité de l’en-tête, par exemple une règle horizontale ou une ligne de texte dans la police de l’environnement.
+#### <a name="environment-font--bold"></a>Police de l’environnement et gras
 
-- Le remplissage idéal pour un en-tête en lui-même doit être de 90% de l’espace de hauteur de caractère majuscule. Par exemple, une en-tête 28 PT Segoe UI clair a une hauteur de l’extrémité de 26 PT, et la marge intérieure doit être d’environ 23 PT, ou environ 31 pixels.
+|||
+|-|-|
+|**Usage :**<br /><br /> - Étiquettes et sous-têtes dans les dialogues signature<br />- Étiquettes et sous-têtes dans les rapports<br />- Étiquettes et sous-têtes dans le document bien l’interface utilisateur<br /><br /> **faire:**<br /><br /> - Utiliser l’affaire de la peine<br />- Utiliser un poids gras<br /><br /> **Ne pas:**<br /><br /> - Italique ou gras italique<br />- Utilisation pour le texte du corps<br />- Utilisation dans les commandes standard visual Studio<br />- Utilisation dans les fenêtres d’outils|**Apparaît comme:** audacieux 9 pt Segoe UI<br /><br /> **Exemple visuel :**<br /><br /> ![Exemple de police de l’environnement &#43; tête audacieuse](../../extensibility/ux-guidelines/media/0202-f_efb.png "0202-f_EFB")|
 
-- L’espace minimal autour d’une en-tête doit être de 50% de la hauteur du caractère majuscule. Moins d’espace peut être utilisé lorsqu’un en-tête est accompagné d’une règle ou d’un autre élément d’ajustement étroit.
+#### <a name="environment-font"></a>Police de l’environnement
 
-- Le texte de police d’environnement en gras doit suivre l’espacement et le remplissage de la hauteur de ligne par défaut.
+|||
+|-|-|
+|**Utilisation:** Tous les autres textes<br /><br /> **Faire:** Utiliser le cas de phrase<br /><br /> **Ne pas:** Italique ou audacieux italique|**Apparaît comme:** 9 pt Segoe UI<br /><br /> **Exemple visuel :**<br /><br /> ![Exemple de police d'environnement](../../extensibility/ux-guidelines/media/0202-g_ef.png "0202-g_EF")|
+
+### <a name="padding-and-spacing"></a>Padding et espacement
+ Les rubriques ont besoin d’espace autour d’eux pour leur donner l’accent approprié. Cet espace varie en fonction de la taille du point et de ce qui se trouve près du cap, comme une règle horizontale ou une ligne de texte dans la police de l’environnement.
+
+- Le rembourrage idéal pour un cap par lui-même devrait être 90% de l’espace de hauteur de caractère de capital. Par exemple, un cap Segoe UI Light de 28 pt a une hauteur de capuchon de 26 pt, et le rembourrage doit être d’environ 23 pt, soit environ 31 pixels.
+
+- L’espace minimum autour d’un titre devrait être de 50% de la hauteur de caractère de la capitale. Moins d’espace peut être utilisé lorsqu’un titre est accompagné d’une règle ou d’un autre élément moulant.
+
+- Le texte de police d’environnement audacieux devrait suivre l’espacement et le rembourrage par défaut de la hauteur de la ligne.
 
 ## <a name="see-also"></a>Voir aussi
 
-- [MSDN : polices (Windows)](/windows/desktop/uxguide/vis-fonts)
-- [MSDN : texte de l’interface utilisateur (Windows)](/windows/desktop/uxguide/text-ui)
+- [MSDN: Fonts (Windows)](/windows/desktop/uxguide/vis-fonts)
+- [MSDN: Texte d’interface utilisateur (Windows)](/windows/desktop/uxguide/text-ui)

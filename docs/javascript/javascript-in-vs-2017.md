@@ -13,10 +13,10 @@ author: bowdenk7
 ms.author: wilkelly
 manager: jillfra
 ms.openlocfilehash: 2a0d3657843dcf282e5c9aab8609efe5f9611965
-ms.sourcegitcommit: 9eff8371b7a79a637ebb6850f775dd3eed343d8b
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/03/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "78234954"
 ---
 # <a name="javascript-in-visual-studio-2017"></a>JavaScript dans Visual Studio 2017
@@ -26,7 +26,7 @@ JavaScript est un langage de premier ordre dans Visual Studio. Vous pouvez utili
 > [!NOTE]
 > Nous nous sommes joints aux efforts de la communauté afin de faire de [MDN web docs](https://developer.mozilla.org/en-US/) la ressource de développement unique et de premier plan du web, en redirigeant la totalité de la documentation de référence sur les API JavaScript de Microsoft (plus de 500 pages) depuis docs.microsoft.com vers les supports MDN équivalents. Pour plus d’informations, consultez cette [annonce](https://blogs.windows.com/msedgedev/2018/06/26/chakra-docs-mdn-web-docs/).
 
-## <a name="ES6"></a> Prise en charge d’ECMAScript 2015 (ES6) et ultérieur
+## <a name="support-for-ecmascript-2015-es6-and-beyond"></a><a name="ES6"></a> Prise en charge d’ECMAScript 2015 (ES6) et ultérieur
 
 Visual Studio prend désormais en charge la syntaxe des mises à jour de langage ECMAScript, par exemple ECMAScript 2015/2016.
 
@@ -118,7 +118,7 @@ exports.default = Subscription_1.Subscription;
 
 JavaScript IntelliSense dans [!include[vs_dev15](../../docs/misc/includes/vs_dev15_md.md)] affiche désormais beaucoup plus d’informations sur les listes de paramètres et de membres. Ces nouvelles informations sont fournies par le service de langage TypeScript, qui utilise l’analyse statique en arrière-plan pour mieux comprendre votre code. Vous trouverez plus d’informations sur la nouvelle expérience IntelliSense et son fonctionnement [ici](/visualstudio/ide/javascript-intellisense/).
 
-## <a name="JSX"></a> Prise en charge de la syntaxe JSX
+## <a name="jsx-syntax-support"></a><a name="JSX"></a> Prise en charge de la syntaxe JSX
 
 JavaScript dans [!include[vs_dev15](../../docs/misc/includes/vs_dev15_md.md)] offre une prise en charge étendue de la syntaxe JSX. JSX est un ensemble de syntaxes qui autorise les balises HTML dans les fichiers JavaScript.
 

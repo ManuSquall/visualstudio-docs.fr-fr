@@ -16,10 +16,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 248bb5e5e01b8209f826478e90b2c60b70922987
-ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/26/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77632496"
 ---
 # <a name="resumetracking"></a>ResumeTracking
@@ -34,11 +34,11 @@ HRESULT WINAPI ResumeTracking();
 
 ## <a name="return-value"></a>Valeur retournée
 
- Un **HRESULT** avec le bit **SUCCEEDED** défini si le suivi a été repris. **E_FAIL** est retourné si le suivi ne peut pas être repris, car le contexte n’était pas disponible.
+ Un **HRESULT** avec l’ensemble **de bits SUCCEEDED** si le suivi a été repris. **E_FAIL** est retourné si le suivi ne peut être repris parce que le contexte n’était pas disponible.
 
-## <a name="requirements"></a>Configuration requise
+## <a name="requirements"></a>Spécifications
 
- **En-tête :** *FileTracker. h*
+ **En-tête :** *FileTracker.h*
 
 ## <a name="see-also"></a>Voir aussi
 

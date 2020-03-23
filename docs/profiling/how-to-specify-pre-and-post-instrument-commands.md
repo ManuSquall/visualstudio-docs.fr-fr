@@ -16,10 +16,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 22ad5558ed01e5bb1b8d12b7a4cc65b4d677d0cd
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74778711"
 ---
 # <a name="how-to-specify-pre--and-post-instrument-commands"></a>Guide pratique pour spécifier des commandes de pré-instrumentation et de post-instrumentation
@@ -30,11 +30,11 @@ Vous pouvez spécifier des commandes pour tous les fichiers binaires instrument�
 
 Le répertoire de travail dans lequel les commandes sont exécutées dépend du système d’exploitation où vous exécutez [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] et de la plateforme cible de l’application profilée.
 
-Pour obtenir le chemin d’accès des outils de profilage, voir [Spécifier le chemin d’accès des outils en ligne de commande](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md).
+Pour obtenir le chemin des outils de profilage, consultez [Spécifier le chemin des outils en ligne de commande](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md).
 
 ## <a name="to-specify-pre-instrument-commands"></a>Pour spécifier des commandes de pré-instrumentation
 
-1. Effectuez l'une des étapes suivantes :
+1. Effectuez l’une des opérations suivantes :
 
     - Pour spécifier des commandes de pré-instrumentation pour l’ensemble des fichiers binaires dans une session de performance, sélectionnez le nœud de la session de performance dans l’**Explorateur de performances**, puis cliquez avec le bouton droit et sélectionnez **Propriétés**.
 
@@ -45,7 +45,7 @@ Pour obtenir le chemin d’accès des outils de profilage, voir [Spécifier le c
 3. Tapez la commande dans la zone de texte **Ligne de commande** sous **Événements de pré-instrumentation**.
 
     > [!NOTE]
-    > Vous pouvez cliquer sur le bouton de sélection  **(...)** à côté de la zone **Ligne de commande** pour rechercher et sélectionner le fichier .exe, .cmd ou .bat approprié.
+    > Vous pouvez cliquer sur le bouton ellipsis **(...)** qui est adjacent à la boîte **de ligne de commande** pour naviguer et sélectionner le fichier approprié .exe, .cmd, ou .bat.
 
 4. Cliquez sur **OK**.
 
@@ -53,7 +53,7 @@ Pour obtenir le chemin d’accès des outils de profilage, voir [Spécifier le c
 
 ## <a name="to-specify-post-instrument-commands"></a>Pour spécifier des commandes de post-instrumentation
 
-1. Effectuez l'une des étapes suivantes :
+1. Effectuez l’une des opérations suivantes :
 
     - Pour spécifier des commandes de post-instrumentation pour l’ensemble des fichiers binaires dans une session de performance, sélectionnez le nœud de la session de performance dans l’**Explorateur de performances**, puis cliquez avec le bouton droit et sélectionnez **Propriétés**.
 
@@ -64,7 +64,7 @@ Pour obtenir le chemin d’accès des outils de profilage, voir [Spécifier le c
 3. Tapez la commande dans la zone de texte **Ligne de commande** sous **Événements de post-instrumentation**.
 
     > [!NOTE]
-    > Vous pouvez cliquer sur le bouton de sélection  **(...)** à côté de la zone **Ligne de commande** pour rechercher et sélectionner le fichier .exe, .cmd ou .bat approprié.
+    > Vous pouvez cliquer sur le bouton ellipsis **(...)** qui est adjacent à la boîte **de ligne de commande** pour naviguer et sélectionner le fichier approprié .exe, .cmd, ou .bat.
 
 4. Cliquez sur **OK**.
 
@@ -72,4 +72,4 @@ Pour obtenir le chemin d’accès des outils de profilage, voir [Spécifier le c
 
 ## <a name="see-also"></a>Voir aussi
 
-[Configurer des sessions de performances](../profiling/configuring-performance-sessions.md)
+[Configurer des sessions de performance](../profiling/configuring-performance-sessions.md)

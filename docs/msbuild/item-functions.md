@@ -11,15 +11,15 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: af4fb872206611ea5eb1aa93b7aa759615b56e41
-ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/26/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77633679"
 ---
 # <a name="item-functions"></a>fonctions d'élément
 
-Le code des tâches et des cibles peut appeler des fonctions d’élément pour obtenir des informations sur les éléments du projet (dans MSBuild 4,0 et versions ultérieures). Ces fonctions simplifient l’obtention d’éléments distincts et sont plus rapides que l’itération dans les éléments.
+Le code dans les tâches et les cibles peut appeler les fonctions de l’élément pour obtenir des informations sur les éléments du projet (dans MSBuild 4.0 et plus tard). Ces fonctions simplifient l’obtention d’éléments distincts et sont plus rapides que les boucles à travers les éléments.
 
 ## <a name="string-item-functions"></a>Fonctions d’élément de type chaîne
 
@@ -54,7 +54,7 @@ L’exemple suivant montre comment utiliser ces méthodes d’élément de type 
 
 Le tableau ci-dessous liste les fonctions intrinsèques disponibles pour les éléments.
 
-|Fonction|Exemple|Description|
+|Fonction| Exemple|Description|
 |--------------|-------------|-----------------|
 |`Count`|`@(MyItem->Count())`|Retourne le nombre d’éléments.|
 |`DirectoryName`|`@(MyItem->DirectoryName())`|Retourne l’équivalent de `Path.DirectoryName` pour chaque élément.|

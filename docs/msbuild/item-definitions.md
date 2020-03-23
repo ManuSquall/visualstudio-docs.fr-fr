@@ -11,15 +11,15 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 18d6a2a30af4fb29a8d9e924c44c1570ff1efe29
-ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/26/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77633705"
 ---
 # <a name="item-definitions"></a>Définitions d’éléments
 
-MSBuild 2,0 active la déclaration statique d’éléments dans les fichiers projet à l’aide de l’élément [ItemGroup](../msbuild/itemgroup-element-msbuild.md) . Les métadonnées ne peuvent cependant être ajoutées qu’au niveau de l’élément, même si elles sont identiques pour tous les éléments. À compter de MSBuild 3,5, un élément de projet nommé [ItemDefinitionGroup](../msbuild/itemdefinitiongroup-element-msbuild.md) se limite à cette limitation. *ItemDefinitionGroup* vous permet de définir un ensemble de définitions d’élément, qui ajoutent des valeurs de métadonnées par défaut à tous les éléments dans le type d’élément nommé.
+MSBuild 2.0 permet la déclaration statique des éléments dans les fichiers de projet en utilisant l’élément [ItemGroup.](../msbuild/itemgroup-element-msbuild.md) Les métadonnées ne peuvent cependant être ajoutées qu’au niveau de l’élément, même si elles sont identiques pour tous les éléments. À partir de MSBuild 3.5, un élément de projet nommé [ItemDefinitionGroup](../msbuild/itemdefinitiongroup-element-msbuild.md) surmonte cette limitation. *ItemDefinitionGroup* vous permet de définir un ensemble de définitions d’élément, qui ajoutent des valeurs de métadonnées par défaut à tous les éléments dans le type d’élément nommé.
 
 L’élément *ItemDefinitionGroup* apparaît immédiatement après l’élément [Project](../msbuild/project-element-msbuild.md) du fichier projet. Les définitions d’élément offrent les fonctionnalités suivantes :
 
@@ -72,7 +72,7 @@ Les valeurs pour les métadonnées définies dans un ItemDefinitionGroup peuvent
 
 - Transformation d’élément sur un élément ItemDefinitionGroup
 
-- Variable d'environnement
+- Variable d’environnement
 
 - Propriété globale (de la ligne de commande *MSBuild.exe*)
 
@@ -195,7 +195,7 @@ Dans l’exemple ci-dessus, « m » est défini sur la valeur « m1 », car 
 
 ## <a name="override-and-delete-metadata"></a>Remplacer et supprimer des métadonnées
 
-Les métadonnées définies dans un élément ItemDefinitionGroup peuvent être substituées dans un élément ItemDefinitionGroup ultérieur en affectant à la valeur de métadonnées une autre valeur. Vous pouvez aussi supprimer un élément de métadonnées en lui attribuant une valeur vide. Par exemple :
+Les métadonnées définies dans un élément ItemDefinitionGroup peuvent être remplacées dans un élément de groupe ItemDefinition ultérieure en définissant la valeur des métadonnées à une autre valeur. Vous pouvez aussi supprimer un élément de métadonnées en lui attribuant une valeur vide. Par exemple :
 
 ```xml
 <ItemDefinitionGroup>
@@ -247,7 +247,7 @@ L’exemple suivant n’est cependant pas valide :
 </ItemDefinitionGroup>
 ```
 
-À compter de MSBuild 3,5, ItemGroup enfants peut également être auto-référentielle. Par exemple :
+À partir de MSBuild 3.5, ItemGroups peut également être autoréférentiel. Par exemple :
 
 ```xml
 <ItemGroup>
@@ -260,4 +260,4 @@ L’exemple suivant n’est cependant pas valide :
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Traitement par lots](../msbuild/msbuild-batching.md)
+- [Dosage](../msbuild/msbuild-batching.md)

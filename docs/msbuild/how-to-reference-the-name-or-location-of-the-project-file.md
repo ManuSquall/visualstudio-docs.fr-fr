@@ -17,19 +17,19 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 2b54a63b135f844ff20b45ffac430662c4df1f19
-ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/26/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77633835"
 ---
 # <a name="how-to-reference-the-name-or-location-of-the-project-file"></a>Guide pratique pour référencer le nom ou l’emplacement du fichier projet
 
-Vous pouvez utiliser le nom ou l’emplacement du projet dans le fichier projet sans avoir à créer votre propre propriété. MSBuild fournit des propriétés réservées qui référencent le nom du fichier projet et d’autres propriétés relatives au projet. Pour plus d’informations sur les propriétés réservées, consultez [MSBuild, propriétés réservées et connues](../msbuild/msbuild-reserved-and-well-known-properties.md).
+Vous pouvez utiliser le nom ou l’emplacement du projet dans le fichier projet sans avoir à créer votre propre propriété. MSBuild fournit des propriétés réservées qui font référence au nom du fichier du projet et à d’autres propriétés liées au projet. Pour plus d’informations sur les propriétés réservées, consultez [MSBuild, propriétés réservées et connues](../msbuild/msbuild-reserved-and-well-known-properties.md).
 
 ## <a name="use-the-project-properties"></a>Utiliser les propriétés du projet
 
- MSBuild fournit des propriétés réservées que vous pouvez utiliser dans vos fichiers projet sans les définir à chaque fois. Par exemple, la propriété réservée `MSBuildProjectName` fournit une référence au nom du fichier projet. La propriété réservée `MSBuildProjectDirectory` fournit une référence à l’emplacement du fichier projet.
+ MSBuild fournit certaines propriétés réservées que vous pouvez utiliser dans vos fichiers de projet sans les définir à chaque fois. Par exemple, la propriété réservée `MSBuildProjectName` fournit une référence au nom du fichier projet. La propriété réservée `MSBuildProjectDirectory` fournit une référence à l’emplacement du fichier projet.
 
 #### <a name="to-use-the-project-properties"></a>Pour utiliser les propriétés du projet
 
@@ -43,12 +43,12 @@ Vous pouvez utiliser le nom ou l’emplacement du projet dans le fichier projet 
 
   L’un des avantages liés à l’utilisation d’une propriété réservée est que les modifications apportées au nom du fichier projet sont incorporées automatiquement. À la prochaine génération du projet, le fichier de sortie dispose du nouveau nom sans aucune intervention supplémentaire de votre part.
 
-  Pour plus d’informations sur l’utilisation de caractères spéciaux dans les références de fichier ou de projet, consultez [caractères spéciaux MSBuild](../msbuild/msbuild-special-characters.md).
+  Pour plus d’informations sur l’utilisation de caractères spéciaux dans les références de fichiers ou de projet, voir [msBuild caractères spéciaux](../msbuild/msbuild-special-characters.md).
 
 > [!NOTE]
 > Les propriétés réservées ne peuvent pas être redéfinies dans le fichier projet.
 
-## <a name="example"></a>Exemple
+## <a name="example"></a> Exemple
 
  L’exemple de fichier projet suivant référence le nom du projet en tant que propriété réservée pour spécifier le nom de la sortie.
 
@@ -77,7 +77,7 @@ Vous pouvez utiliser le nom ou l’emplacement du projet dans le fichier projet 
 </Project>
 ```
 
-## <a name="example"></a>Exemple
+## <a name="example"></a> Exemple
 
  L’exemple de fichier projet suivant utilise la propriété réservée `MSBuildProjectDirectory` pour créer le chemin complet à un fichier à l’emplacement du fichier projet.
 
@@ -91,9 +91,9 @@ Vous pouvez utiliser le nom ou l’emplacement du projet dans le fichier projet 
 </Project>
 ```
 
-L’exemple utilise la syntaxe de [fonction de propriété](property-functions.md) pour appeler la méthode .NET Framework statique <xref:System.IO.Path.Combine*?displayProperty=fullName>.
+L’exemple utilise la syntaxe de fonction <xref:System.IO.Path.Combine*?displayProperty=fullName>de [propriété](property-functions.md) pour appeler la méthode statique .NET Framework .
 
 ## <a name="see-also"></a>Voir aussi
 
 - [MSBuild](../msbuild/msbuild.md)
-- [Propriétés réservées et connues de MSBuild](../msbuild/msbuild-reserved-and-well-known-properties.md)
+- [MSBuild, propriétés réservées et connues](../msbuild/msbuild-reserved-and-well-known-properties.md)
