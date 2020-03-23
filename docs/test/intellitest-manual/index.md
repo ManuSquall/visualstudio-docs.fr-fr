@@ -10,15 +10,15 @@ ms.workload:
 - multiple
 author: mikejo5000
 ms.openlocfilehash: b1c40412da096db63da87e04711cdc1a95b5cc84
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/21/2020
 ms.locfileid: "75591617"
 ---
 # <a name="intellitest-reference-manual"></a>Manuel de référence IntelliTest
 
-## <a name="contents"></a>Sommaire
+## <a name="contents"></a>Contents
 
 * **[Vue d’ensemble d’IntelliTest](introduction.md)**
   - [Hello World dans IntelliTest](introduction.md#the-hello-world-of-intellitest)
@@ -27,7 +27,7 @@ ms.locfileid: "75591617"
     * [Concurrence](introduction.md#concurrency)
     * [Code natif](introduction.md#native-code)
     * [Plateforme](introduction.md#platform)
-    * [Language](introduction.md#language)
+    * [Langage](introduction.md#language)
     * [Raisonnement symbolique](introduction.md#symbolic-reasoning)
     * [Traces de pile incorrectes](introduction.md#incorrect-stack-traces)
   - [Compléments de lecture](introduction.md#further-reading)
@@ -57,7 +57,7 @@ ms.locfileid: "75591617"
   - [Instanciation de classes existantes](input-generation.md#existing-classes)
   - [Visibilité](input-generation.md#visibility)
   - [Objets fictifs paramétrés](input-generation.md#parameterized-mocks)
-  - [Structs](input-generation.md#structs)
+  - [Structures](input-generation.md#structs)
   - [Tableaux et chaînes](input-generation.md#arrays-and-strings)
   - [Obtention d’entrées supplémentaires](input-generation.md#additional-inputs)
   - [Compléments de lecture](input-generation.md#further-reading)

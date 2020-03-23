@@ -76,7 +76,7 @@
               href: analyzing-code-coverage-in-build-verification-tests.md
             - name: Dépannage de la couverture du code
               href: troubleshooting-code-coverage.md
-        - name: "Utilisation d’émulateurs pour isoler des tests unitaires Sharepoint\_2010"
+        - name: Utilisation d'émulateurs pour isoler des tests unitaires Sharepoint 2010
           href: using-emulators-to-isolate-unit-tests-for-sharepoint-2010-applications.md
     - name: Utiliser UI Automation pour tester votre code
       items:
@@ -132,7 +132,7 @@
                   href: sample-excel-extension-technologymanager-class.md
                 - name: Classe PropertyProvider
                   href: sample-excel-extension-propertyprovider-class.md
-                - name: Classes d’éléments
+                - name: Classes d'éléments
                   href: sample-excel-extension-element-classes.md
                 - name: Classe ActionFilter
                   href: sample-excel-extension-actionfilter-class.md
@@ -158,7 +158,7 @@
               href: create-and-run-unit-tests-for-a-store-app-in-visual-studio.md
             - name: Test unitaire d’une DLL C++
               href: unit-testing-a-visual-cpp-dll-for-store-apps.md
-            - name: 'Test unitaire du code C#'
+            - name: 'Test unitaire de code C#'
               href: unit-testing-visual-csharp-code-in-a-store-app.md
             - name: Exécuter des tests unitaires dans l'Explorateur de tests
               href: run-unit-tests-for-store-apps-in-visual-studio.md
@@ -168,5 +168,5 @@
               href: analyze-the-code-quality-of-store-apps-using-visual-studio-static-code-analysis.md
             - name: 'Analyser la qualité du code Visual Basic et C#'
               href: analyze-visual-basic-and-csharp-code-quality-in-store-apps-using-visual-studio-static-code-analysis.md
-            - name: Analyser la qualité du code C++
+            - name: "Analyser la qualité du code\_C++"
               href: analyze-cpp-code-quality-of-store-apps-using-visual-studio-static-code-analysis.md

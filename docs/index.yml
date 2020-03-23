@@ -15,10 +15,10 @@ metadata:
   monikerRange: '>=vs-2017'
   hide_bc: true
   ms.openlocfilehash: b36b1835f38a4ce6fe46d72935dc8cfc144561c3
-  ms.sourcegitcommit: 890ae10c8ea3bff8306ed25b06256578dee08397
+  ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
   ms.translationtype: HT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 11/15/2019
+  ms.lasthandoff: 03/21/2020
   ms.locfileid: "74118951"
 productDirectory:
   items:
@@ -28,9 +28,9 @@ productDirectory:
     - url: /visualstudio/windows?view=vs-2019
       text: Visual Studio 2019 (version actuelle)
     - url: /visualstudio/windows?view=vs-2017
-      text: Visual Studio 2017
+      text: Visual Studio 2017
     - url: https://docs.microsoft.com/previous-versions/visualstudio/
-      text: Versions antérieures
+      text: Versions précédentes
     - url: https://docs.microsoft.com/visualstudio/releases/2019/release-notes
       text: Notes de publication
     - url: https://visualstudio.microsoft.com/
@@ -72,4 +72,4 @@ productDirectory:
     - url: https://my.visualstudio.com
       text: Portail
     - url: https://manage.visualstudio.com
-      text: la base de données
+      text: Administration

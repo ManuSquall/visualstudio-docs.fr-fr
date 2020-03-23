@@ -34,9 +34,9 @@
   items:
     - name: Créer des modèles pour votre application
       href: create-models-for-your-app.md
-    - name: 'Diagrammes de dépendance : Référence'
+    - name: "Diagrammes de dépendance\_: référence"
       href: layer-diagrams-reference.md
-    - name: 'Diagrammes de dépendance : Recommandations'
+    - name: "Diagrammes de dépendance\_: recommandations"
       href: layer-diagrams-guidelines.md
     - name: Partager des modèles
       items:
@@ -81,7 +81,7 @@
       href: add-custom-properties-to-layer-diagrams.md
 - name: Kit de développement logiciel de modélisation pour Visual Studio - Langages spécifiques à un domaine
   items:
-    - name: Vue d'ensemble
+    - name: Vue d’ensemble
       displayName: Modeling SDK for Visual Studio
       href: modeling-sdk-for-visual-studio-domain-specific-languages.md
     - name: Bien démarrer avec les langages spécifiques à un domaine
@@ -214,16 +214,16 @@
           href: updating-shapes-and-connectors-to-reflect-the-model.md
     - name: Générer du code à partir d’un langage spécifique à un domaine
       items:
-        - name: Vue d'ensemble
+        - name: Vue d’ensemble
           displayName: Generate Code from a Domain-Specific Language
           href: generating-code-from-a-domain-specific-language.md
         - name: Accéder aux modèles à partir de modèles de texte
           href: accessing-models-from-text-templates.md
         - name: Utiliser Visual Studio ModelBus dans un modèle de texte
           href: using-visual-studio-modelbus-in-a-text-template.md
-        - name: "Procédure pas à pas\_: Déboguer un modèle de texte accédant à un modèle"
+        - name: "Procédure pas à pas\_: déboguer un modèle de texte qui accède à un modèle"
           href: walkthrough-debugging-a-text-template-that-accesses-a-model.md
-        - name: "Procédure pas à pas\_: Connecter un hôte à un processeur de directive généré"
+        - name: "Procédure pas à pas\_: connecter un hôte à un processeur de directive généré"
           href: walkthrough-connecting-a-host-to-a-generated-directive-processor.md
         - name: La commande DslTextTransform
           href: the-dsltexttransform-command.md
@@ -270,14 +270,14 @@
       href: api-reference-for-modeling-sdk-for-visual-studio.md
 - name: Génération de code et modèles de texte T4
   items:
-    - name: Vue d'ensemble
+    - name: Vue d’ensemble
       displayName: Code Generation and T4 Text Templates
       href: code-generation-and-t4-text-templates.md
     - name: Génération de code durant la conception à l'aide de modèles de texte T4
       items:
         - name: Présentation et procédure
           href: design-time-code-generation-by-using-t4-text-templates.md
-        - name: "Procédure pas à pas\_: Générer du code à l’aide de modèles de texte"
+        - name: "Procédure pas à pas\_: générer du code à l’aide de modèles de texte"
           href: walkthrough-generating-code-by-using-text-templates.md
         - name: Génération de code dans un processus de génération
           href: code-generation-in-a-build-process.md
@@ -289,7 +289,7 @@
       href: run-time-text-generation-with-t4-text-templates.md
     - name: "Écrire un modèle de texte\_T4"
       items:
-        - name: Vue d'ensemble
+        - name: Vue d’ensemble
           displayName: Write a T4 Text Template
           href: writing-a-t4-text-template.md
         - name: Directives de modèles de texte T4
@@ -317,7 +317,7 @@
           href: text-template-utility-methods.md
         - name: Accéder à Visual Studio ou d’autres hôtes à partir d’un modèle de texte
           href: accessing-visual-studio-or-other-hosts-from-a-text-template.md
-        - name: Séquences d'échappement
+        - name: Séquences d’échappement
           items:
             - name: Utiliser des séquences d’échappement dans des modèles de texte
               href: using-escape-sequences-in-text-templates.md
@@ -342,7 +342,7 @@
               href: creating-custom-t4-text-template-directive-processors.md
             - name: Déployer un processeur de directive personnalisé
               href: deploying-a-custom-directive-processor.md
-            - name: "Procédure pas à pas\_: Créer un processeur de directive personnalisé"
+            - name: "Procédure pas à pas\_: créer un processeur de directive personnalisé"
               href: walkthrough-creating-a-custom-directive-processor.md
         - name: Appeler une transformation de texte dans une extension Visual Studio
           href: invoking-text-transformation-in-a-vs-extension.md
@@ -350,7 +350,7 @@
           items:
             - name: Traiter des modèles de texte à l’aide d’un hôte personnalisé
               href: processing-text-templates-by-using-a-custom-host.md
-            - name: "Procédure pas à pas\_: Créer un hôte de modèle de texte personnalisé"
+            - name: "Procédure pas à pas\_: créer un hôte de modèle de texte personnalisé"
               href: walkthrough-creating-a-custom-text-template-host.md
     - name: Référence API pour les modèles de texte T4
       href: api-reference-for-t4-text-templates.md

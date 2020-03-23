@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - data-science
 ms.openlocfilehash: 1132a7a0363e2d508d6eff1026192aad3407fca4
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2019
+ms.lasthandoff: 03/21/2020
 ms.locfileid: "73189243"
 ---
 # <a name="work-with-r-in-visual-studio"></a>Utiliser R dans Visual Studio

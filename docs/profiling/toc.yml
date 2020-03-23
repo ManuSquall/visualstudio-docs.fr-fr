@@ -1,6 +1,6 @@
 - name: Documentation sur le profilage
   href: index.yml
-- name: Vue d'ensemble
+- name: Vue d’ensemble
   href: profiling-overview.md
 - name: Démarrages rapides
   items:
@@ -26,6 +26,8 @@
   items:
     - name: Utilisation du processeur
       href: cpu-usage.md
+    - name: Utiliser les conseils sur les performances
+      href: perftips.md
     - name: Utilisation de la mémoire
       items:
         - name: Analyser l’utilisation de la mémoire
@@ -42,8 +44,6 @@
       href: gpu-usage.md
     - name: Analyser la consommation des ressources
       href: application-timeline.md
-    - name: Utiliser les conseils sur les performances
-      href: perftips.md
     - name: Analyser l’utilisation du réseau
       href: network-usage.md
     - name: Analyser la mémoire JavaScript
@@ -92,7 +92,7 @@
               href: how-to-manually-create-performance-sessions.md
         - name: Configurer
           items:
-            - name: Configurer des sessions de performance
+            - name: Configurer des sessions de performances
               href: configuring-performance-sessions.md
             - name: Référencer les informations de symboles Windows
               href: how-to-reference-windows-symbol-information.md
@@ -192,71 +192,71 @@
                           href: da0005-frequent-gc2-collections.md
                         - name: "DA0006\_: Remplacer Equals() pour les types valeur"
                           href: da0006-override-equals-parens-for-value-types.md
-                        - name: "DA0007\_: Ne pas utiliser d’exceptions pour le flux de contrôle"
+                        - name: 'DA0007 : Ne pas utiliser d''exceptions pour le flux de contrôle'
                           href: da0007-avoid-using-exceptions-for-control-flow.md
-                        - name: "DA0010\_: Fonction GetHashCode coûteuse"
+                        - name: "DA0010\_: GetHashCode coûteux"
                           href: da0010-expensive-gethashcode.md
-                        - name: "DA0011\_: Fonction CompareTo coûteuse"
+                        - name: "DA0011\_: CompareTo coûteux"
                           href: da0011-expensive-compareto.md
                         - name: "DA0012\_: Quantité importante de réflexion"
                           href: da0012-significant-amount-of-reflection.md
                         - name: "DA0013\_: Utilisation intensive de String.Split ou de String.Substring"
                           href: da0013-high-usage-of-string-split-or-string-substring.md
-                        - name: "DA0018\_: Application 32\_bits s’exécutant aux limites de la mémoire managée du processus"
+                        - name: "DA0018\_: Application 32\_bits s'exécutant aux limites de la mémoire managée du processus"
                           href: da0018-32-bit-application-running-at-process-managed-memory-limits.md
-                        - name: "DA0021\_: Taux élevé de garbage collection Gen\_1"
+                        - name: 'DA0021 : Taux élevé de garbage collection Gen 1'
                           href: da0021-high-rate-of-gen-1-garbage-collections.md
-                        - name: "DA0022\_: Taux élevé de garbage collection Gen 2"
+                        - name: 'DA0022 : taux élevé de garbage collection Gen 2'
                           href: da0022-high-rate-of-gen-2-garbage-collections.md
-                        - name: "DA0023\_: Temps processeur GC élevé"
+                        - name: "DA0023\_: Temps processeur\_GC élevé"
                           href: da0023-high-gc-cpu-time.md
-                        - name: "DA0024\_: Temps processeur GC excessif"
+                        - name: "DA0024\_: Temps CPU GC excessif"
                           href: da0024-excessive-gc-cpu-time.md
-                        - name: "DA0038\_: Taux élevé de conflits de verrou"
+                        - name: 'DA0038 : taux élevé de conflits de verrouillage'
                           href: da0038-high-rate-of-lock-contentions.md
-                        - name: "DA0039\_: Taux très élevé de conflits de verrou"
+                        - name: 'DA0039 : taux très élevé de conflits de verrouillage'
                           href: da0039-very-high-rate-of-lock-contentions.md
                     - name: Règles de performance de mémoire et de pagination
                       items:
                         - name: Vue d’ensemble des règles de performance de mémoire et de pagination
                           href: memory-and-paging-performance-rules.md
-                        - name: "DA0014\_: Taux très élevés de pagination de la mémoire active sur le disque"
+                        - name: 'DA0014 : Taux élevés de pagination de la mémoire active sur le disque'
                           href: da0014-extremely-high-rates-of-paging-active-memory-to-disk.md
-                        - name: "DA0017\_: Taux élevés de pagination de la mémoire active sur le disque"
+                        - name: 'DA0017 : taux élevés de pagination de la mémoire active sur le disque'
                           href: da0017-high-rates-of-paging-active-memory-to-disk.md
                     - name: Règles d'utilisation des outils de profilage
                       items:
                         - name: Vue d’ensemble des règles d'utilisation des outils de profilage
                           href: profiling-tools-usage-rules.md
-                        - name: "DA0002\_: VSPerfCorProf.dll est manquant"
+                        - name: "DA0002\_: VSPerfCorProf.dll manquant"
                           href: da0002-vsperfcorprof-dll-is-missing.md
                         - name: "DA0003\_: Nombreux échantillons de noyau"
                           href: da0003-many-kernel-samples.md
-                        - name: "DA0004\_: Utilisation intensive du processeur"
+                        - name: 'DA0004 : Utilisation intensive du processeur'
                           href: da0004-high-processor-usage.md
-                        - name: "DA0008\_: Peu d’échantillons collectés"
+                        - name: 'DA0008 : Peu d''échantillons collectés'
                           href: da0008-few-samples-collected.md
-                        - name: "DA0026\_: Traitement temps CPU noyaux excessif"
+                        - name: 'DA0026 : traitement du temps processeur noyau excessif'
                           href: da0026-excessive-kernel-cpu-time-processing.md
-                        - name: "DA0029\_: Version CLR non prise en charge"
+                        - name: "DA0029\_: version\_CLR non prise en\_charge"
                           href: da0029-unsupported-clr-version.md
-                        - name: "DA0030\_: Collecter les mesures d’interaction de couche pour les projets de base de données"
+                        - name: "DA0030\_: Collecter les mesures d'interaction de couche pour les projets de base de données"
                           href: da0030-gather-tier-interaction-measurements-for-database-projects.md
                     - name: Règles de performance de l'analyse de ressource
                       items:
                         - name: Vue d’ensemble des règles de performance de l'analyse de ressource
                           href: resource-monitoring-performance-rules.md
-                        - name: "DA0501\_: Consommation UC moyenne par le processus en cours de profilage"
+                        - name: "DA0501\_: consommation processeur moyenne par le processus en cours de profilage"
                           href: da0501-average-cpu-consumption-by-the-process-being-profiled.md
-                        - name: "DA0502\_: Consommation CPU maximale par le processus en cours de profilage"
+                        - name: 'DA0502 : consommation processeur maximale par le processus en cours de profilage'
                           href: da0502-maximum-cpu-consumption-by-the-process-being-profiled.md
                         - name: "DA0503\_: Jeu de travail moyen en octets pour le processus en cours de profilage"
                           href: da0503-average-working-set-in-bytes-for-the-process-being-profiled.md
-                        - name: "DA0504\_: jeu de travail maximal en octets pour le processus en cours de profilage"
+                        - name: "DA0504\_: Jeu de travail maximal en octets pour le processus en cours de profilage"
                           href: da0504-maximum-working-set-in-bytes-for-the-process-being-profiled.md
-                        - name: "DA0505\_: Octets privés alloués en moyenne au processus en cours de profilage"
+                        - name: 'DA0505 : nombre moyen d''octets privés alloués pour le processus en cours de profilage'
                           href: da0505-average-private-bytes-allocated-for-the-process-being-profiled.md
-                        - name: "DA0506\_: Octets privés alloués au maximum au processus en cours de profilage"
+                        - name: "DA0506\_: Octets privés alloués maximum au processus en cours de profilage"
                           href: da0506-maximum-private-bytes-allocated-for-the-process-being-profiled.md
             - name: Vues du rapport de performances
               items:
@@ -572,7 +572,7 @@
                   items:
                     - name: VSPerfCmd
                       href: vsperfcmd.md
-                    - name: Start
+                    - name: Démarrer
                       href: start.md
                     - name: CrossSession
                       href: crosssession.md
@@ -604,13 +604,13 @@
                       href: gc-vsperfcmd.md
                     - name: Lancer
                       href: launch.md
-                    - name: Attach
+                    - name: Joindre
                       href: attach.md
                     - name: Args
                       href: args.md
                     - name: Marque
                       href: mark.md
-                    - name: Detach
+                    - name: Détacher
                       href: detach.md
                     - name: PF
                       href: pf.md
@@ -622,7 +622,7 @@
                       href: lineoff.md
                     - name: Console
                       href: console.md
-                    - name: Status
+                    - name: État
                       href: status.md
                     - name: TargetCLR
                       href: targetclr.md
@@ -634,7 +634,7 @@
                   href: vsperfclrenv.md
                 - name: VSPerfASPNetCmd
                   href: vsperfaspnetcmd.md
-        - name: Profilage sur des clusters HPC (High Performance Computing)
+        - name: "Profilage sur des clusters\_HPC (High Performance Computing)"
           href: profiling-on-hpc-high-performance-computing-clusters.md
         - name: API des outils de profilage
           items:
@@ -662,7 +662,7 @@
                   href: suspendprofile.md
                 - name: PROFILE_CURRENTID
                   href: profile-currentid.md
-            - name: "Procédure pas à pas\_: Utiliser les API du profileur"
+            - name: "Procédure pas à pas\_: utilisation des API du profileur"
               href: walkthrough-using-profiler-apis.md
         - name: Profilage des tests de charge ASP.NET
           href: profiling-aspnet-load-tests.md
@@ -694,7 +694,7 @@
               href: gpu-activity-this-process.md
             - name: Activité GPU (autres processus)
               href: gpu-activity-other-processes.md
-        - name: vue Threads (niveau de performance parallèle)
+        - name: Vue Threads (Performances parallèles)
           items:
             - name: Vue d’ensemble de la vue Threads (niveau de performance parallèle)
               href: threads-view-parallel-performance.md
@@ -702,11 +702,11 @@
               href: blocking-time-profile-report.md
             - name: Canaux (vue Threads)
               href: channels-threads-view.md
-            - name: Copier la sélection
+            - name: Copier une sélection
               href: copy-selection.md
-            - name: Onglet actif
+            - name: Onglet Actuel
               href: current-tab.md
-            - name: Rapport sur les opérations sur le disque (Vue Threads)
+            - name: Rapport Opérations sur le disque (Vue Threads)
               href: disk-operations-report-threads-view.md
             - name: Segment de chronologie vide
               href: empty-timeline-segment.md
@@ -736,7 +736,7 @@
               href: no-thread-activity-to-show-threads-view.md
             - name: Pourcentage de réduction du bruit
               href: noise-reduction-percentage.md
-            - name: Résumé par thread (rapport)
+            - name: 'Résumé par thread, rapport'
               href: per-thread-summary-report.md
             - name: Durée de préemption
               href: preemption-time.md
@@ -782,9 +782,9 @@
               href: message-markers.md
             - name: Marqueurs Span
               href: span-markers.md
-            - name: Visualisation des événements EventSource en tant que marqueurs
+            - name: Visualisation des événements EventSource comme marqueurs
               href: visualizing-eventsource-events-as-markers.md
-        - name: Kit de développement logiciel (SDK) du visualiseur concurrentiel
+        - name: Kit SDK du visualiseur concurrentiel
           items:
             - name: Vue d’ensemble du SDK du visualiseur concurrentiel
               href: concurrency-visualizer-sdk.md
@@ -828,7 +828,7 @@
                               href: marker-series-write-message-method.md
                         - name: 'marker_importance, énumération'
                           href: marker-importance-enumeration.md
-            - name: Informations de référence sur la bibliothèque C
+            - name: "Informations de référence sur la bibliothèque\_C"
               items:
                 - name: Vue d’ensemble des informations de référence sur la bibliothèque C
                   href: c-library-reference.md
@@ -858,7 +858,7 @@
                   href: cvwritemessage-function.md
         - name: Utilitaire en ligne de commande du visualiseur concurrentiel (CVCollectionCmd)
           href: concurrency-visualizer-command-line-utility-cvcollectioncmd.md
-    - name: "Analyser l'utilisation de l'énergie dans les applications du Windows\_Store"
+    - name: Analyser l'utilisation de l'énergie dans les applications du Windows Store
       href: analyze-energy-use-in-store-apps.md
 - name: Ressources
   items:

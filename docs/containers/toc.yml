@@ -13,20 +13,20 @@
           href: container-tools-react.md
         - name: Développement Kubernetes avec Azure Dev Spaces > >
           href: /azure/dev-spaces/quickstart-netcore-visualstudio
-    - name: Tutoriels
+    - name: Didacticiels
       expanded: true
       items:
         - name: Application à plusieurs conteneurs avec Docker Compose
           href: tutorial-multicontainer.md
         - name: Kubernetes dans Visual Studio
           href: tutorial-kubernetes-tools.md
-    - name: Procédures
+    - name: Procédure
       items:
         - name: Déboguer une application dans un conteneur Docker local
           href: edit-and-refresh.md
         - name: Déployer sur un registre de conteneurs
           href: hosting-web-apps-in-docker.md
-        - name: Déployer dans Azure App Service
+        - name: Déployer sur Azure App Service
           href: deploy-app-service.md
         - name: Déployer sur Docker Hub
           href: deploy-docker-hub.md
@@ -38,9 +38,9 @@
       items:
         - name: Comment Visual Studio génère des applications conteneurisées
           href: container-build.md
-    - name: Dépannage
+    - name: Résolution des problèmes
       href: troubleshooting-docker-errors.md
-    - name: Informations de référence
+    - name: Reference
       items:
         - name: Propriétés MSBuild pour les projets de conteneur
           href: container-msbuild-properties.md

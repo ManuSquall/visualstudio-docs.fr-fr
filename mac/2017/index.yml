@@ -102,7 +102,7 @@ sections:
             html: <p>Exécutez votre application sous le débogueur pour examiner les problèmes.</p>
             image:
               src: 'https://docs.microsoft.com/media/common/i_debug.svg'
-            title: Débogage
+            title: Déboguer
           - href: version-control.md
             html: '<p>Accédez à des dépôts sources Azure DevOps, Git ou Subversion.</p>'
             image:

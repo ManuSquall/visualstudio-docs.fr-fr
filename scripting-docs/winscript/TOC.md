@@ -1,4 +1,4 @@
-# [Windows Script, interfaces](windows-script-interfaces.md)
+# [Interfaces de script Windows](windows-script-interfaces.md)
 # [Hôtes de script Windows](windows-script-hosts.md)
 # [Moteurs de script Windows](windows-script-engines.md)
 # [Présentation du débogage de script actif](active-script-debugging-overview.md)

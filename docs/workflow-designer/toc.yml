@@ -164,7 +164,7 @@
           href: migration-activity-designers.md
         - name: Concepteur d'activités Interop
           href: interop-activity-designer.md
-- name: Débogage
+- name: Déboguer
   items:
     - name: Déboguer des workflows
       href: debugging-workflows-with-the-workflow-designer.md

@@ -1,8 +1,8 @@
-- name: Visual Studio Tools pour IA
+- name: Visual Studio Tools pour l’IA
   items:
-    - name: Visual Studio Tools pour IA
+    - name: Visual Studio Tools pour l’IA
       href: index.yml
-    - name: Vue d'ensemble
+    - name: Vue d’ensemble
       href: about-ai-tools.md
     - name: Installation
       href: installation.md
@@ -16,7 +16,7 @@
           href: tensorflow-vm.md
     - name: Guides pratiques
       items:
-        - name: Créer un projet
+        - name: Création d’un projet
           items:
             - name: Créer un projet à partir d’un exemple de galerie
               href: create-project-gallery.md
@@ -26,7 +26,7 @@
               href: create-project.md
             - name: Créer un projet à partir du référentiel GitHub
               href: create-project-repo.md
-        - name: Entraîner un modèle
+        - name: Entraîner votre modèle
           href: train-model.md
         - name: Afficher les détails du travail
           href: job-details.md

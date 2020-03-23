@@ -50,7 +50,7 @@
               href: dowhile-activity-designer.md
             - name: ForEach\<T>
               href: foreach-t-activity-designer.md
-            - name: If
+            - name: Si
               href: if-activity-designer.md
             - name: Parallèle
               href: parallel-activity-designer.md
@@ -82,7 +82,7 @@
               href: state-machine-activity-designers.md
             - name: StateMachine
               href: statemachine-activity-designer.md
-            - name: État
+            - name: State
               href: state-activity-designer.md
             - name: FinalState
               href: finalstate-activity-designer.md
@@ -110,7 +110,7 @@
           items:
             - name: Runtime
               href: runtime-activity-designers.md
-            - name: Persist
+            - name: Persister
               href: persist-activity-designer.md
             - name: TerminateWorkflow
               href: terminateworkflow-activity-designer.md
@@ -138,7 +138,7 @@
               href: compensableactivity-activity-designer.md
             - name: Compensate
               href: compensate-activity-designer.md
-            - name: Confirm
+            - name: Confirmer
               href: confirm-activity-designer.md
             - name: TransactionScope
               href: transactionscope-activity-designer.md
@@ -286,7 +286,7 @@
               items:
                 - name: Aide de l'interface utilisateur du concepteur hérité pour Windows Workflow Foundation
                   href: legacy-designer-for-windows-workflow-foundation-ui-help.md
-                - name: Lier à la boîte de dialogue des propriétés d’une activité (héritée)
+                - name: 'Lier à la propriété d''une activité, boîte de dialogue (héritée)'
                   href: bind-to-an-activity-s-property-dialog-box-legacy.md
                 - name: 'Rechercher et sélectionner un type .NET, boîte de dialogue (héritée)'
                   href: browse-and-select-a-dotnet-type-dialog-box-legacy.md

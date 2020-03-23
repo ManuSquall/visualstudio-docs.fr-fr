@@ -228,7 +228,7 @@
         - name: Vue d'ensemble
           displayName: Test controllers and test agents
           href: configure-test-agents-and-controllers-for-load-tests.md
-        - name: Configuration requise
+        - name: Spécifications
           href: test-controller-and-test-agent-requirements-for-load-testing.md
         - name: Gérer les contrôleurs de test et les agents de test
           href: manage-test-controllers-and-test-agents.md
