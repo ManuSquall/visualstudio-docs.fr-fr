@@ -794,6 +794,8 @@
               href: deploying-an-office-solution-by-using-clickonce.md
             - name: Déploiement d'une solution Office à l'aide de Windows Installer
               href: deploying-an-office-solution-by-using-windows-installer.md
+            - name: Déploiement d’une solution Office en utilisant des projets d’installation Visual Studio
+              href: deploying-a-vsto-solution-by-using-windows-installer.md
             - name: Dépannage du déploiement de solutions Office
               items:
                 - name: Dépannage du déploiement de solutions Office
