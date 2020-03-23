@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 0566078c7f90faf204c35024e2c308b5ef881c01
-ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/26/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77633809"
 ---
 # <a name="how-to-select-the-files-to-build"></a>Guide pratique pour sélectionner des fichiers dans une build
@@ -27,7 +27,7 @@ Quand vous générez un projet contenant plusieurs fichiers, vous pouvez lister 
 
 Les éléments représentent les entrées d’une build. Pour plus d’informations sur les éléments, consultez [Éléments](../msbuild/msbuild-items.md).
 
-Pour inclure des fichiers pour une build, ceux-ci doivent être inclus dans une liste d’éléments dans le fichier projet MSBuild. Plusieurs fichiers peuvent être ajoutés aux listes d’éléments : soit un à un, soit à l’aide de caractères génériques.
+Pour inclure les fichiers pour une build, ils doivent être inclus dans une liste d’éléments dans le fichier du projet MSBuild. Plusieurs fichiers peuvent être ajoutés aux listes d’éléments : soit un à un, soit à l’aide de caractères génériques.
 
 #### <a name="to-declare-items-individually"></a>Pour déclarer des éléments un à un
 
@@ -40,7 +40,7 @@ Pour inclure des fichiers pour une build, ceux-ci doivent être inclus dans une 
     `<VBFile Include="form1.vb"/>`
 
     > [!NOTE]
-    > Si les éléments d’une collection d’éléments ne sont pas dans le même répertoire que le fichier projet, vous devez spécifier le chemin complet ou relatif de l’élément. Par exemple : `Include="..\..\form2.cs"`.
+    > Si les éléments d’une collection d’éléments ne sont pas dans le même répertoire que le fichier projet, vous devez spécifier le chemin complet ou relatif de l’élément. Par exemple : `Include="..\..\form2.cs"`.
 
 #### <a name="to-declare-multiple-items"></a>Pour déclarer plusieurs éléments
 
@@ -101,11 +101,11 @@ Dans un fichier projet, vous pouvez utiliser la notation @() dans les tâches p
     `<VBC Sources="@(VBFile)">...</VBC>`
 
 > [!NOTE]
-> Vous devez utiliser des caractères génériques avec des éléments pour spécifier les entrées d’une build. vous ne pouvez pas spécifier les entrées à l’aide de l’attribut `Sources` dans des tâches MSBuild telles que [CSC](../msbuild/csc-task.md) ou [vbc](../msbuild/vbc-task.md). L’exemple suivant n’est pas valide dans un fichier projet :
+> Vous devez utiliser des wildcards avec des éléments pour spécifier les entrées pour une construction; vous ne pouvez pas `Sources` spécifier les entrées en utilisant l’attribut dans les tâches MSBuild telles que [Csc](../msbuild/csc-task.md) ou [Vbc](../msbuild/vbc-task.md). L’exemple suivant n’est pas valide dans un fichier projet :
 >
 > `<CSC Sources="*.cs">...</CSC>`
 
-## <a name="example"></a>Exemple
+## <a name="example"></a> Exemple
 
 L’exemple de code suivant affiche un projet qui inclut séparément tous les fichiers d’entrée.
 
@@ -140,7 +140,7 @@ L’exemple de code suivant affiche un projet qui inclut séparément tous les f
 </Project>
 ```
 
-## <a name="example"></a>Exemple
+## <a name="example"></a> Exemple
 
 L’exemple de code suivant utilise un caractère générique pour inclure tous les fichiers *.cs*.
 
@@ -177,5 +177,5 @@ L’exemple de code suivant utilise un caractère générique pour inclure tous 
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Comment : exclure des fichiers de la Build](../msbuild/how-to-exclude-files-from-the-build.md)
+- [Comment : Exclure les fichiers de la construction](../msbuild/how-to-exclude-files-from-the-build.md)
 - [Éléments](../msbuild/msbuild-items.md)

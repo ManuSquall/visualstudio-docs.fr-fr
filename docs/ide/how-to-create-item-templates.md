@@ -8,10 +8,10 @@ author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.openlocfilehash: 62004c5c96fa708f98ab49f4810ec2fc1c38eadc
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75594719"
 ---
 # <a name="how-to-create-item-templates"></a>Guide pratique pour créer des modèles d’élément
@@ -26,7 +26,7 @@ Cet article vous montre comment créer un modèle d’élément à l’aide de l
 
 1. Modifiez le fichier de code pour indiquer où le remplacement de paramètres doit avoir lieu. Pour plus d’informations, consultez [Guide pratique pour substituer des paramètres dans un modèle](../ide/how-to-substitute-parameters-in-a-template.md).
 
-1. Dans le menu **Projet**, choisissez **Exporter le modèle**.
+1. Sur le menu du **projet,** choisissez **Export Template**.
 
 1. Dans la page **Choisir un type de modèle** choisissez **Modèle d’élément**, sélectionnez le projet qui contient l’élément, puis choisissez **Suivant**.
 
@@ -42,7 +42,7 @@ Cet article vous montre comment créer un modèle d’élément à l’aide de l
 
 1. Fermez Visual Studio, puis rouvrez-le.
 
-1. Créez un projet ou ouvrez un projet existant, puis choisissez **Projet** > **Ajouter un nouvel élément**, ou appuyez sur **Ctrl**+**Maj**+**A**.
+1. Créez un nouveau projet ou ouvrez un projet existant, puis choisissez **le projet** > **Ajouter un nouvel article** ou appuyer sur **Ctrl**+**Shift**+**A**.
 
    Le modèle d’élément apparaît dans la boîte de dialogue **Ajouter un nouvel élément**. Si vous avez ajouté une description dans l’**Assistant Exportation de modèle**, la description s’affiche dans la partie droite de la boîte de dialogue.
 
@@ -78,7 +78,7 @@ Vous pouvez spécifier que votre modèle doit uniquement apparaître pour certai
 
 1. Affectez au texte de l'élément l'une des valeurs suivantes :
 
-    - Portail
+    -  Windows
     - Office
     - Base de données
     - Web
@@ -119,7 +119,7 @@ Dans certains cas, vous pouvez avoir envie de créer un modèle d’élément ma
 
 6. Enregistrez le fichier *.vstemplate*, puis fermez-le.
 
-7. Dans l’**Explorateur Windows**, sélectionnez les fichiers à inclure dans votre modèle. Cliquez avec le bouton droit sur la sélection, puis choisissez **Envoyer vers** > **Dossier compressé**. Les fichiers que vous avez sélectionnés sont compressés dans un fichier *.zip*.
+7. Dans l’**Explorateur Windows**, sélectionnez les fichiers à inclure dans votre modèle. Cliquez à droite sur la sélection, et choisissez **Envoyer à** > **Compressed (zipped) dossier**. Les fichiers que vous avez sélectionnés sont compressés dans un fichier *.zip.*
 
 ::: moniker range="vs-2017"
 
@@ -135,6 +135,6 @@ Dans certains cas, vous pouvez avoir envie de créer un modèle d’élément ma
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Créer des modèles de projet et d’élément](../ide/creating-project-and-item-templates.md)
+- [Créer des modèles de projets et d’objets](../ide/creating-project-and-item-templates.md)
 - [Guide pratique pour créer des modèles d’élément multifichiers](../ide/how-to-create-multi-file-item-templates.md)
 - [Informations de référence sur les schémas de modèles Visual Studio (extensibilité)](../extensibility/visual-studio-template-schema-reference.md)

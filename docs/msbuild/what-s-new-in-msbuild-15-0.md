@@ -10,10 +10,10 @@ ms.workload:
 - multiple
 monikerRange: '>=vs-2017'
 ms.openlocfilehash: 2503040e074a62422d4c7c904f5ad3a2bd84d6c1
-ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/26/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77631027"
 ---
 # <a name="whats-new-in-msbuild-15"></a>Nouveautés de MSBuild 15
@@ -32,7 +32,7 @@ MSBuild fait désormais partie intégrante du [Kit de développement logiciel (S
 
 - `MSBuildToolsVersion` pour cette version des outils présente la valeur 15.0. La version de l’assembly est 15.1.0.0.
 
-- `MSBuildToolsPath` n’a plus d’emplacement fixe. Par défaut, il se trouve dans le dossier *MSBuild\15.0\Bin* relatif à l’emplacement d’installation de Visual Studio, mais cet emplacement est modifiable pendant l’installation.
+- `MSBuildToolsPath` n’a plus d’emplacement fixe. Par défaut, il est situé dans le dossier *MSBuild-15.0-Bin* par rapport à l’emplacement d’installation Visual Studio, mais l’emplacement de l’installation Visual Studio peut être changé au moment de l’installation.
 
 - Les valeurs `ToolsVersion` ne sont plus définies dans le Registre.
 
@@ -40,10 +40,10 @@ MSBuild fait désormais partie intégrante du [Kit de développement logiciel (S
 
 ## <a name="updates"></a>Mises à jour
 
-- [L’élément Project](../msbuild/project-element-msbuild.md) comporte un nouvel attribut `SDK`. Par ailleurs, l’attribut `Xmlns` est désormais facultatif. Pour plus d’informations sur l’attribut `SDK`, voir [Guide pratique pour utiliser les kits SDK de projet MSBuild](../msbuild/how-to-use-project-sdk.md), [Packages, métapaquets et frameworks](/dotnet/core/packages) et [Ajouts au format csproj pour .NET Core](/dotnet/core/tools/csproj).
-- [L’élément Item](../msbuild/item-element-msbuild.md) à l’extérieur des cibles comporte un nouvel attribut `Update`. En outre, la restriction sur l’attribut `Remove` a été supprimée.
-- *Directory.Build.props* est un fichier défini par l’utilisateur qui fournit des personnalisations aux projets situés dans un répertoire. Ce fichier est importé automatiquement à partir de *Microsoft.Common.props*, sauf si la propriété `ImportDirectoryBuildTargets` est définie sur **false**. *Directory.Build.targets* est importé par *Microsoft.Common.targets*.
-- Toutes les métadonnées dont le nom n’entre pas en conflit avec la liste d’attributs actuelle peuvent être exprimées en option sous la forme d’un attribut. Pour plus d’informations, voir [Élément Item](../msbuild/item-element-msbuild.md).
+- [L’élément](../msbuild/project-element-msbuild.md) du `SDK` projet a un nouvel attribut. Par ailleurs, l’attribut `Xmlns` est désormais facultatif. Pour plus d’informations sur l’attribut `SDK`, voir [Guide pratique pour utiliser les kits SDK de projet MSBuild](../msbuild/how-to-use-project-sdk.md), [Packages, métapaquets et frameworks](/dotnet/core/packages) et [Ajouts au format csproj pour .NET Core](/dotnet/core/tools/csproj).
+- [L’élément de l’élément](../msbuild/item-element-msbuild.md) extérieur des cibles a un nouvel `Update` attribut. En outre, la restriction sur l’attribut `Remove` a été supprimée.
+- *Directory.Build.props* est un fichier défini par l’utilisateur qui fournit des personnalisations aux projets sous un répertoire. Ce fichier est automatiquement importé de *Microsoft.Common.props* sauf si la propriété `ImportDirectoryBuildTargets` est configurée à **faux**. *Directory.Build.targets* est importé par *Microsoft.Common.targets*.
+- Toutes les métadonnées dont le nom n’entre pas en conflit avec la liste d’attributs actuelle peuvent être exprimées en option sous la forme d’un attribut. Pour plus d’informations, voir [élément élément](../msbuild/item-element-msbuild.md).
 
 ## <a name="new-property-functions"></a>Nouvelles fonctions de propriété
 

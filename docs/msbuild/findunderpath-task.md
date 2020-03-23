@@ -19,10 +19,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 4d97b727dcba8cd16fe97ee33764947797c36db7
-ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/26/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77634134"
 ---
 # <a name="findunderpath-task"></a>FindUnderPath (tâche)
@@ -31,7 +31,7 @@ Détermine quels éléments de la collection d’éléments spécifiée ont des 
 
 ## <a name="parameters"></a>Paramètres
 
-Le tableau ci-dessous décrit les paramètres de la tâche `FindUnderPath`.
+Le tableau ci-dessous décrit les paramètres de la tâche `FindUnderPath` .
 
 |Paramètre|Description|
 |---------------|-----------------|
@@ -41,11 +41,11 @@ Le tableau ci-dessous décrit les paramètres de la tâche `FindUnderPath`.
 |`Path`|Paramètre <xref:Microsoft.Build.Framework.ITaskItem> requis.<br /><br /> Spécifie le chemin du dossier à utiliser comme référence.|
 |`UpdateToAbsolutePaths`|Paramètre `Boolean` facultatif.<br /><br /> Si true, les chemins des éléments de sortie sont changés en chemins absolus.|
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Notes 
 
-En plus des paramètres énumérés ci-dessus, cette tâche hérite des paramètres de la classe <xref:Microsoft.Build.Tasks.TaskExtension>, qui elle-même hérite de la classe <xref:Microsoft.Build.Utilities.Task>. Pour obtenir la liste de ces paramètres supplémentaires et leurs descriptions, consultez [Classe de base TaskExtension](../msbuild/taskextension-base-class.md).
+En plus des paramètres énumérés ci-dessus, cette tâche hérite des paramètres de la classe <xref:Microsoft.Build.Tasks.TaskExtension> , qui elle-même hérite de la classe <xref:Microsoft.Build.Utilities.Task> . Pour une liste de ces paramètres supplémentaires et leurs descriptions, voir [TaskExtension classe de base](../msbuild/taskextension-base-class.md).
 
-## <a name="example"></a>Exemple
+## <a name="example"></a> Exemple
 
 L’exemple suivant utilise la tâche `FindUnderPath` pour déterminer si les fichiers contenus dans l’élément `MyFiles` ont des chemins qui existent sous le chemin spécifié par la propriété `SearchPath`. Une fois la tâche terminée, l’élément `FilesNotFoundInPath` contient le fichier *File1.txt* et l’élément `FilesFoundInPath` contient le fichier *File2.txt*.
 
@@ -79,5 +79,5 @@ L’exemple suivant utilise la tâche `FindUnderPath` pour déterminer si les fi
 ## <a name="see-also"></a>Voir aussi
 
 - [Informations de référence sur les tâches](../msbuild/msbuild-task-reference.md)
-- [Tâches :](../msbuild/msbuild-tasks.md)
+- [Tâches](../msbuild/msbuild-tasks.md)
 - [Concepts MSBuild](../msbuild/msbuild-concepts.md)

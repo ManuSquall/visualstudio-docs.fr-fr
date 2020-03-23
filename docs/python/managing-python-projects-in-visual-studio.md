@@ -11,11 +11,11 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: d50cbfbd517073544ebd172627d24bd7c3878fa5
-ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "78409048"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79302811"
 ---
 # <a name="python-projects-in-visual-studio"></a>Projets Python dans Visual Studio
 
@@ -31,7 +31,7 @@ Visual Studio fournit divers modèles de projet Python pour configurer rapidemen
 
 ::: moniker range=">=vs-2019"
 > [!Tip]
-> Visual Studio 2019 prend en charge l’ouverture d’un dossier contenant le code Python et l’exécution de ce code sans créer de fichiers projet et solution Visual Studio. Pour plus d’informations, consultez [démarrage rapide : ouvrir et exécuter du code python dans un dossier](quickstart-05-python-visual-studio-open-folder.md). L’utilisation d’un fichier projet présente toutefois des avantages, comme expliqué dans cette section.
+> Visual Studio 2019 prend en charge l’ouverture d’un dossier contenant le code Python et l’exécution de ce code sans créer de fichiers projet et solution Visual Studio. Pour plus d’informations, voir [Quickstart: Open and run Python code in a folder](quickstart-05-python-visual-studio-open-folder.md). L’utilisation d’un fichier projet présente toutefois des avantages, comme expliqué dans cette section.
 ::: moniker-end
 
 > [!Tip]
@@ -41,18 +41,18 @@ Visual Studio fournit divers modèles de projet Python pour configurer rapidemen
 
 |   |   |
 |---|---|
-| ![Icône représentant une caméra pour les vidéos](../install/media/video-icon.png "Regarder une vidéo") | [Approfondissement : utilisez le contrôle de code source avec les projets python](https://youtu.be/Aq8eqApnugM) (YouTube.com, 8 Mo 55s). |
+| ![Icône représentant une caméra pour les vidéos](../install/media/video-icon.png "Regarder une vidéo") | [Plongée profonde : Utilisez le contrôle des sources avec les projets Python](https://youtu.be/Aq8eqApnugM) (youtube.com, 8m 55s). |
 
 ## <a name="add-files-assign-a-startup-file-and-set-environments"></a>Ajouter des fichiers, attribuer un fichier de démarrage et définir des environnements
 
-Quand vous développez votre application, vous devez généralement ajouter de nouveaux fichiers de différents types au projet. Vous pouvez les ajouter en cliquant avec le bouton droit sur le projet et en sélectionnant **Ajouter** > **Élément existant** pour rechercher un fichier à ajouter, ou en sélectionnant **Ajouter** > **Nouvel élément**, qui affiche une boîte de dialogue avec un large éventail de modèles d’élément. Comme décrit dans la référence [Modèle d’élément](python-item-templates.md), les options incluent des fichiers Python vides, une classe Python, un test unitaire et divers fichiers associés aux applications web. Vous pouvez explorer ces options avec un projet de test pour savoir ce qui est disponible dans votre version de Visual Studio.
+Quand vous développez votre application, vous devez généralement ajouter de nouveaux fichiers de différents types au projet. L’ajout de ces fichiers se fait en cliquant à droite sur le projet et en sélectionnant **Ajouter** > **l’élément existant** avec lequel vous naviguez pour un fichier à ajouter, ou **ajouter** > un nouvel**élément**, ce qui apporte un dialogue avec une variété de modèles d’éléments. Comme décrit dans la référence [Modèle d’élément](python-item-templates.md), les options incluent des fichiers Python vides, une classe Python, un test unitaire et divers fichiers associés aux applications web. Vous pouvez explorer ces options avec un projet de test pour savoir ce qui est disponible dans votre version de Visual Studio.
 
-Chaque projet Python comprend un fichier de démarrage attribué, indiqué en gras dans **l’Explorateur de solutions**. Le fichier de démarrage est le fichier exécuté quand vous démarrez le débogage (**F5** ou **Déboguer** > **Démarrer le débogage**), ou quand vous exécutez le projet dans la fenêtre **Interactive** (**Maj**+**Alt**+**F5** ou **Déboguer** > **Exécuter le projet en mode interactif Python**). Pour le modifier, cliquez avec le bouton droit sur le nouveau fichier et sélectionnez **Définir comme élément de démarrage** (ou **Définir comme fichier de démarrage** dans les versions antérieures de Visual Studio).
+Chaque projet Python comprend un fichier de démarrage attribué, indiqué en gras dans **l’Explorateur de solutions**. Le fichier de démarrage est le fichier qui est exécuté lorsque vous commencez à débogage (**F5** ou **Debug** > **Start Debugging**) ou lorsque vous exécutez votre projet dans la fenêtre **Interactive** (**Shift**+**Alt**+**F5** ou **Debug** > **Execute Project dans Python Interactive**). Pour le modifier, cliquez avec le bouton droit sur le nouveau fichier et sélectionnez **Définir comme élément de démarrage** (ou **Définir comme fichier de démarrage** dans les versions antérieures de Visual Studio).
 
 > [!Tip]
 > Si vous supprimez le fichier de démarrage sélectionné d’un projet et que vous n’en sélectionnez pas un autre, Visual Studio ne sait pas avec quel fichier Python démarrer lorsque vous essayez d’exécuter le projet. Dans ce cas, Visual Studio 2017 versions 15.6 et ultérieures présente une erreur ; les versions antérieures ouvrent une fenêtre de sortie avec l’interpréteur Python en cours d’exécution, ou la fenêtre de sortie s’affiche mais disparaît presque immédiatement. Si vous rencontrez l’un de ces comportements, vérifiez que vous avez un fichier de démarrage assigné.
 >
-> Si vous voulez maintenir la fenêtre de sortie ouverte pour une raison quelconque, cliquez avec le bouton droit sur le projet, sélectionnez **Propriétés**, sélectionnez l’onglet **Déboguer**, puis ajoutez `-i` au champ **Arguments de l’interpréteur**. Avec cet argument, l’interpréteur passe en mode interactif à la fin d’un programme, maintenant ainsi la fenêtre ouverte jusqu’à ce que vous entriez **Ctrl**+**Z** > **Entrée** pour quitter.
+> Si vous voulez maintenir la fenêtre de sortie ouverte pour une raison quelconque, cliquez avec le bouton droit sur le projet, sélectionnez **Propriétés**, sélectionnez l’onglet **Déboguer**, puis ajoutez `-i` au champ **Arguments de l’interpréteur**. Cet argument provoque l’interprète à entrer en mode interactif après un programme terminé, gardant ainsi la fenêtre ouverte jusqu’à ce que vous entrez **Ctrl**+**Z** > **Entrez** à la sortie.
 
 ::: moniker range="vs-2017"
 Un nouveau projet est toujours associé à l’environnement Python global par défaut. Pour associer le projet à un autre environnement (y compris les environnements virtuels), cliquez avec le bouton droit sur le nœud **Environnements Python** du projet, sélectionnez **Add/Remove Python Environments** (Ajouter/supprimer des environnement Python) et sélectionnez ceux que vous souhaitez.
@@ -63,7 +63,7 @@ Un nouveau projet est toujours associé à l’environnement Python global par d
 ![Ajouter une commande d’environnement dans la barre d’outils Python](media/environments/environments-toolbar-2019.png)
 ::: moniker-end
 
-Pour modifier l’environnement actif, cliquez avec le bouton droit sur l’environnement souhaité dans l’**Explorateur de solutions** et sélectionnez **Activer l’environnement** comme indiqué ci-dessous. Pour plus d’informations, consultez [Sélectionner un environnement pour un projet](selecting-a-python-environment-for-a-project.md).
+Pour modifier l’environnement actif, cliquez avec le bouton droit sur l’environnement souhaité dans l’**Explorateur de solutions** et sélectionnez **Activer l’environnement** comme indiqué ci-dessous. Pour plus d’informations, consultez [Sélection d’un environnement pour un projet](selecting-a-python-environment-for-a-project.md).
 
 ![Activation d’un environnement pour un projet Python](media/projects-activate-environment.png)
 
@@ -71,7 +71,7 @@ Pour modifier l’environnement actif, cliquez avec le bouton droit sur l’envi
 
 ## <a name="project-templates"></a>Modèles de projet
 
-Visual Studio vous propose diverses méthodes pour configurer un projet Python, que ce soit à partir de zéro ou en utilisant du code existant. Pour utiliser un modèle, sélectionnez la commande de menu **Fichier** > **Nouveau** > **Projet** ou cliquez avec le bouton droit sur la solution dans **l’Explorateur de solutions**, puis sélectionnez **Ajouter** > **Nouveau projet**. Ces deux options permettent d’afficher la boîte de dialogue **Nouveau projet** ci-dessous. Pour afficher les modèles propres à Python, effectuez une recherche sur « Python » ou sélectionnez le nœud **Installé** > **Python** :
+Visual Studio vous propose diverses méthodes pour configurer un projet Python, que ce soit à partir de zéro ou en utilisant du code existant. Pour utiliser un modèle, sélectionnez la commande **de** > menu File**New** > **Project** ou cliquez à droite sur la solution dans **Solution Explorer** et **sélectionnez Add** > **New Project**, qui font tous deux le dialogue du **nouveau projet** ci-dessous. Pour voir les modèles spécifiques à Python, recherchez sur «Python» ou sélectionnez le nœud**Python** **installé** > :
 
 ![Boîte de dialogue Nouveau projet avec les modèles Python](media/projects-new-project-dialog.png)
 
@@ -82,7 +82,7 @@ Le tableau suivant récapitule les modèles disponibles dans Visual Studio 2017
 | [**À partir de code Python existant**](#create-project-from-existing-files) | Crée un projet Visual Studio à partir du code Python existant dans une structure de dossiers.  |
 | **Application Python** | Une structure de projet de base pour une nouvelle application Python avec un fichier source unique et vide. Par défaut, le projet s’exécute dans l’interpréteur de la console de l’environnement global par défaut, que vous pouvez modifier en [attribuant un autre environnement](selecting-a-python-environment-for-a-project.md). |
 | [**Service cloud Azure**](python-azure-cloud-service-project-template.md) | Un projet pour un service cloud Azure écrit en langage Python. |
-| [**Projets web**](python-web-application-project-templates.md) | Projets pour les applications web basées sur différents frameworks, notamment Bottle, Django et Flask. |
+| [**Projets Web**](python-web-application-project-templates.md) | Projets pour les applications web basées sur différents frameworks, notamment Bottle, Django et Flask. |
 | **Application IronPython** | Semblable au modèle Python Application (Application Python), mais utilise IronPython par défaut pour l’activation de l’interopérabilité .NET et le débogage en mode mixte avec les langages .NET. |
 | **Application WPF IronPython** | Une structure de projet utilisant IronPython avec les fichiers XAML Windows Presentation Foundation pour l’interface utilisateur de l’application. Visual Studio fournit un concepteur d’interface utilisateur XAML, code-behind peut être écrit en langage Python et l’application s’exécute sans affichage d’une console. |
 | **Page web Silverlight IronPython** | Un projet IronPython qui s’exécute dans un navigateur à l’aide de Silverlight. Le code Python de l’application est inclus dans la page web en tant que script. Une balise de script réutilisable extrait du code JavaScript qui initialise IronPython s’exécutant dans Silverlight, à partir duquel votre code Python peut interagir avec DOM. |
@@ -106,7 +106,7 @@ Le tableau suivant récapitule les modèles disponibles dans Visual Studio 2017
 
 Les fichiers liés sont les fichiers placés dans un projet, mais qui se trouvent généralement en dehors des dossiers du projet de l’application. Ils apparaissent dans **l’Explorateur de solutions** en tant que fichiers normaux avec une icône de raccourci superposée : ![Icône de fichier lié](media/projects-linked-file-icon.png)
 
-Les fichiers liés sont spécifiés dans le fichier *.pyproj* à l’aide de l’élément `<Compile Include="...">`. Les fichiers liés sont implicites s’ils utilisent un chemin relatif en dehors de la structure de répertoires, ou explicites s’ils utilisent des chemins dans **l’Explorateur de solutions** :
+Les fichiers liés sont spécifiés dans le fichier *.pyproj* à l’aide de l’élément `<Compile Include="...">`. Les fichiers liés sont implicites s’ils utilisent un chemin relatif en dehors de la structure de l’annuaire, ou explicites s’ils utilisent des chemins dans **Solution Explorer**:
 
 ```xml
 <Compile Include="..\test2.py">
@@ -123,9 +123,9 @@ Les fichiers liés sont ignorés si l’une des conditions suivantes se présent
 
 ### <a name="work-with-linked-files"></a>Utiliser des fichiers liés
 
-Pour ajouter un élément existant en tant que lien, cliquez avec le bouton droit sur le dossier du projet dans lequel vous souhaitez ajouter le fichier, puis sélectionnez **Ajouter** > **Élément existant**. Dans la boîte de dialogue qui s’affiche, sélectionnez un fichier et choisissez **Ajouter en tant que lien** dans la liste déroulante du bouton **Ajouter**. Si aucun fichier n’est en conflit, cette commande crée un lien dans le dossier sélectionné. Toutefois, le lien n’est pas ajouté s’il existe déjà un fichier portant le même nom ou si un lien vers ce fichier existe déjà dans le projet.
+Pour ajouter un élément existant comme lien, cliquez à droite sur le dossier du projet où vous souhaitez ajouter le fichier, puis sélectionnez Ajouter > **l’élément existant**. **Add** Dans la boîte de dialogue qui s’affiche, sélectionnez un fichier et choisissez **Ajouter en tant que lien** dans la liste déroulante du bouton **Ajouter**. Si aucun fichier n’est en conflit, cette commande crée un lien dans le dossier sélectionné. Toutefois, le lien n’est pas ajouté s’il existe déjà un fichier portant le même nom ou si un lien vers ce fichier existe déjà dans le projet.
 
-Si vous tentez de créer un lien vers un fichier qui existe déjà dans les dossiers du projet, il est ajouté en tant que fichier normal et non en tant que lien. Pour convertir un fichier en lien, sélectionnez **Fichier** > **Enregistrer sous** pour enregistrer le fichier à un emplacement en dehors de l’arborescence du projet ; Visual Studio le convertit automatiquement en lien. De même, un lien peut être reconverti en fichier à l’aide de **Fichier** > **Enregistrer sous** pour enregistrer le fichier quelque part dans l’arborescence du projet.
+Si vous tentez de créer un lien vers un fichier qui existe déjà dans les dossiers du projet, il est ajouté en tant que fichier normal et non en tant que lien. Pour convertir un fichier en lien, sélectionnez **l’enregistrement de fichiers** > **afin** d’enregistrer le fichier à un emplacement en dehors de la hiérarchie du projet ; Visual Studio le convertit automatiquement en lien. De même, un lien peut être converti en utilisant **File** > **Save As** pour enregistrer le fichier quelque part dans la hiérarchie du projet.
 
 Si vous déplacez un fichier lié dans **l’Explorateur de solutions**, le lien est déplacé, mais le fichier en lui-même n’est pas affecté. De même, la suppression d’un lien supprime le lien sans affecter le fichier.
 
@@ -143,7 +143,7 @@ En général, les références d’extension indiquent les dépendances entre le
 
 Une référence à un fichier *.pyd* permet d’activer IntelliSense pour le module généré. Visual Studio charge le fichier *.pyd* dans l’interpréteur Python et pratique une introspection de ses types et fonctions. Il essaie également d’analyser les chaînes de document des fonctions, afin de fournir l’assistance pour la signature.
 
-Si le module d’extension est mis à jour sur le disque, Visual Studio réanalyse le module en arrière-plan. Cette action n’a aucun effet sur le comportement au moment de l’exécution, mais certaines saisies semi-automatiques ne sont pas disponibles tant que l’analyse n’est pas terminée.
+Si le module d’extension est mis à jour sur le disque, Visual Studio réanalyse le module en arrière-plan. Cette action n’a aucun effet sur le comportement en temps de course, mais certains achèvements ne sont pas disponibles jusqu’à ce que l’analyse soit terminée.
 
 En outre, vous devrez peut-être ajouter un [chemin de recherche](search-paths.md) dans le dossier qui contient le module.
 

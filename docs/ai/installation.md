@@ -10,13 +10,13 @@ ms.topic: conceptual
 ms.workload:
 - multiple
 ms.openlocfilehash: c1160c68c79dd595e82ecf761c6e441ecc906f62
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/13/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75915814"
 ---
-# <a name="installation"></a>Installation de
+# <a name="installation"></a>Installation
 
 Visual Studio Tools pour IA peut être installé sur les systèmes d’exploitation Windows 64 bits.
 
@@ -26,7 +26,7 @@ Cette extension fonctionne avec Visual Studio 2015 et Visual Studio 2017 Commu
 
 Vous pouvez télécharger les outils sur [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=ms-toolsai.vstoolsai-vs2017) ou dans Visual Studio :
 
-1. Sélectionnez **Outils** > **Extensions et mises à jour**.
+1. Sélectionnez **outils** > **Extensions et mises à jour**.
 
    ![Menu Extensions et mises à jour dans Visual Studio](media/installation/extensions.png)
 
@@ -82,11 +82,11 @@ Python a représenté le langage de programmation principal pour les application
 
 Les frameworks deep learning s’appuient sur pip pour leur propre installation.
 
-![Installer Python sous Windows](media/installation/install_python_win.png)
+![Installer Python sur Windows](media/installation/install_python_win.png)
 
 Ensuite, nous devons vérifier si Python 3.5 est installé correctement, et mettre à niveau pip vers la dernière version en exécutant les commandes suivantes dans un terminal :
 
-- **Fenêtres**
+- **Windows**
 
   ```cmd
   C:\Users\test>python -V
@@ -130,7 +130,7 @@ pip3.5 install -U numpy scipy
 > [!NOTE]
 > La commande ci-dessus met à niveau les packages NumPy et SciPy anciens ou non officiels (par exemple, les packages tiers de http://www.lfd.uci.edu/~gohlke/pythonlibs/ pour Windows) avec les packages officiels les plus récents.
 
-### <a name="microsoft-cognitive-toolkit-cntk"></a>CNTK (Microsoft Cognitive Toolkit)
+### <a name="microsoft-cognitive-toolkit-cntk"></a>Microsoft Cognitive Toolkit (CNTK)
 
 [Microsoft Cognitive Toolkit](https://cntk.ai) est une boîte à outils deep learning unifiée qui décrit les réseaux neuronaux comme une série d’étapes de calculs via un graphique orienté. CNTK prend en charge les langages de programmation Python et BrainScript.
 
@@ -156,7 +156,7 @@ Rendez-vous [ici](https://caffe2.ai/docs/getting-started.html) pour une généra
 
 ### <a name="mxnet"></a>MXNet
 
-[Apache MXNet (en développement)](https://mxnet.incubator.apache.org/) est un framework deep learning conçu pour l’efficacité et la flexibilité. Elle vous permet de **mélanger** [des symboles et des programmations impératives](http://mxnet.io/architecture/index.html#deep-learning-system-design-concepts) pour optimiser l’efficacité et la productivité.
+[Apache MXNet (en développement)](https://mxnet.incubator.apache.org/) est un framework deep learning conçu pour l’efficacité et la flexibilité. Il vous permet de **mélanger une ** [programmation symbolique et impérative](http://mxnet.io/architecture/index.html#deep-learning-system-design-concepts) afin d’optimiser l’efficacité et la productivité.
 
 Pour installer MXNet, exécutez la commande suivante dans un terminal :
 
@@ -201,7 +201,7 @@ pip3.5 install Theano==0.9.0
 
 Pour installer PyTorch, exécutez la commande suivante dans un terminal :
 
-- **Fenêtres**
+- **Windows**
 
   Il n’existe encore aucun package wheel officiel. Vous pouvez télécharger un package tiers à partir d’[Anaconda](https://anaconda.org/pytorch/repo?type=all) ou [University of California](https://www.lfd.uci.edu/~gohlke/pythonlibs/#pytorch).
 

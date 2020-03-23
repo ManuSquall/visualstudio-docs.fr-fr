@@ -10,10 +10,10 @@ dev_langs:
 ms.workload:
 - cplusplus
 ms.openlocfilehash: db6ea1e233d32872322926a4d75b847ee6a49ba3
-ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77277826"
 ---
 # <a name="visual-c-code-snippets"></a>Extraits de code Visual C++
@@ -24,13 +24,13 @@ Vous pouvez ajouter un extrait de code à un emplacement particulier dans votre 
 
 ## <a name="insert-a-code-snippet"></a>Insérer un extrait de code
 
-Pour insérer un extrait de code, ouvrez un fichier de code C++ ( *.cpp* ou *.h*), cliquez n’importe où dans le fichier et effectuez une des opérations suivantes :
+Pour insérer un extrait de code, ouvrez un fichier de code CMD *(.cpp* ou *.h*), cliquez quelque part à l’intérieur du fichier, et faites l’un des éléments suivants :
 
 - Effectuez un clic droit pour afficher le menu contextuel et sélectionnez **Insérer un extrait**
 
 - Dans le menu **Edition / IntelliSense**, sélectionnez **Insérer un extrait**
 
-- Utilisez les touches d’accès rapide **Ctrl**+**K**+**X**
+- Utilisez les hotkeys: **Ctrl**+**K**+**X**
 
 Vous devez voir une liste de choix commençant par **#if**. Quand vous sélectionnez **#if**, vous devez voir le code suivant ajouté au fichier :
 
@@ -40,17 +40,17 @@ Vous devez voir une liste de choix commençant par **#if**. Quand vous sélectio
 #endif // 0
 ```
 
-Vous pouvez alors remplacer le **0** par la condition correcte.
+Vous pouvez ensuite remplacer le **0** par la bonne condition.
 
 ## <a name="use-a-code-snippet-to-surround-selected-code"></a>Utiliser un extrait de code pour entourer du code sélectionné
 
 Pour utiliser un extrait de code pour entourer du code sélectionné, sélectionnez une ligne (ou plusieurs lignes) et effectuez l'une des opérations suivantes :
 
-- Cliquez avec le bouton droit pour afficher le menu contextuel, puis sélectionnez **Entourer de**.
+- Cliquez à droite pour obtenir le menu contextuelle, et **sélectionnez Surround With**
 
-- Dans le menu **Edition** > **IntelliSense**, sélectionnez **Entourer de**.
+- À partir du menu **Edit** > **IntelliSense,** **sélectionnez Surround With**
 
-- Si vous préférez utiliser le clavier, appuyez sur **Ctrl**+**K**+**S**.
+- À l’aide d’un clavier, appuyez sur: **Ctrl**+**K**+**S**
 
 Sélectionnez **#if**. Le résultat suivant devrait s'afficher :
 
@@ -64,7 +64,7 @@ Vous pouvez alors remplacer le 0 par la condition correcte.
 
 ## <a name="where-can-i-find-a-complete-list-of-the-c-code-snippets"></a>Où puis-je trouver la liste complète des extraits de code C++ ?
 
-Vous pouvez trouver la liste complète des extraits de code C++ en accédant au **Gestionnaire des extraits de code** (dans le menu **Outils**) et en définissant le **langage** sur **Visual C++** . Dans la fenêtre ci-dessous, développez **Visual C++** . Vous devez voir les noms de tous les extraits de code C++ dans l'ordre alphabétique.
+Vous pouvez trouver la liste complète des extraits de code C++ en accédant au **Gestionnaire des extraits de code** (dans le menu **Outils**) et en définissant le **langage** sur **Visual C++**. Dans la fenêtre ci-dessous, développez **Visual C++**. Vous devez voir les noms de tous les extraits de code C++ dans l'ordre alphabétique.
 
 Les noms de la plupart des extraits de code sont explicites, mais certains noms peuvent prêter à confusion.
 
@@ -115,7 +115,7 @@ private:
 
 Il existe trois extraits de code **for** différents qui fournissent des types différents de boucles `for`.
 
-L’extrait de code **rfor** fournit une boucle for [basée sur une plage](/cpp/cpp/range-based-for-statement-cpp) (lien). Cette construction est préférable aux boucles `for` basées sur un index.
+L’extrait **rfor** fournit une [gamme basée sur](/cpp/cpp/range-based-for-statement-cpp) la boucle (lien). Cette construction est préférable aux boucles `for` basées sur un index.
 
 ```cpp
 for (auto& i : v)
@@ -124,7 +124,7 @@ for (auto& i : v)
 }
 ```
 
-L’extrait de code **for** fournit une boucle `for` dans laquelle la condition est basée sur la longueur (valeur `size_t`) d’un objet.
+L’extrait de **for** `for` fournit une boucle dans laquelle la `size_t`condition est basée sur la longueur (dans ) d’un objet.
 
 ```cpp
 for (size_t i = 0; i < length; i++)
@@ -133,7 +133,7 @@ for (size_t i = 0; i < length; i++)
 }
 ```
 
-L’extrait de code **forr** fournit une boucle `for` inverse dans laquelle la condition est basée sur la longueur (valeur int) d’un objet.
+L’extrait **de forr** fournit `for` une boucle inverse dans laquelle la condition est basée sur la longueur (dans les intégrages) d’un objet.
 
 ```cpp
 for (int i = length - 1; i >= 0; i--)
@@ -144,7 +144,7 @@ for (int i = length - 1; i >= 0; i--)
 
 ## <a name="the-destructor-snippet-"></a>Extrait de code du destructeur (~)
 
-L’extrait de code destructeur ( **~** ) présente un comportement différent dans des contextes différents. Si vous insérez cet extrait dans une classe, il fournit un destructeur pour cette classe. Examinons, par exemple, le code suivant :
+L’extrait destructeurs (**~**) montre un comportement différent dans différents contextes. Si vous insérez cet extrait dans une classe, il fournit un destructeur pour cette classe. Examinons, par exemple, le code suivant :
 
 ```cpp
 class SomeClass {

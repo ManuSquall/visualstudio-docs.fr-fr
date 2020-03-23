@@ -19,10 +19,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 793500faf217c74772506b4b7394d926447ffd40
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75585295"
 ---
 # <a name="miscellaneous-files"></a>Fichiers divers
@@ -33,12 +33,12 @@ L’ouverture de fichiers indépendamment d’un projet ou d’une solution est 
 
 ![Projets de solutions](../../ide/reference/media/projects_solutions_misc.gif)
 
-L’Explorateur de solutions peut afficher un dossier **Fichiers divers** si les options pour le dossier sont activées. Les options peuvent être définies dans [Documents, Environnement, boîte de dialogue Options](../../ide/reference/documents-environment-options-dialog-box.md). Une fois que vous fermez un fichier divers, il n’est associé à aucune solution ou projet particulier, sauf si une option est activée dans ce but.
+Solution Explorer peut afficher un dossier **de fichiers divers** pour les fichiers si les options pour le dossier sont activées. Les options peuvent être définies dans [Documents, Environnement, boîte de dialogue Options](../../ide/reference/documents-environment-options-dialog-box.md). Une fois que vous fermez un fichier divers, il n’est associé à aucune solution ou projet particulier, sauf si une option est activée dans ce but.
 
-Le dossier **Fichiers divers** représente les fichiers sous forme de liens. Bien que ce dossier ne fasse pas partie d’une solution, quand vous ouvrez une solution, tout ou partie des fichiers divers qui étaient ouverts lors de la dernière fermeture de la solution sont rouverts, selon les paramètres définis pour le dossier.
+Le **dossier Divers Fichiers** représente les fichiers en tant que liens. Bien que ce dossier ne fasse pas partie d’une solution, quand vous ouvrez une solution, tout ou partie des fichiers divers qui étaient ouverts lors de la dernière fermeture de la solution sont rouverts, selon les paramètres définis pour le dossier.
 
 > [!NOTE]
-> Certains fichiers qui n’apparaissent pas dans le dossier **Fichiers divers** sont des fichiers que vous ne pouvez pas modifier dans l’IDE, comme des fichiers .zip et des fichiers .doc. L’IDE n’effectue pas le suivi des fichiers qui ne peuvent être modifiés que par un éditeur externe.
+> Certains des fichiers qui n’apparaissent pas dans le dossier **De fichiers divers** sont des fichiers que vous ne pouvez pas modifier dans l’IDE, tels que les fichiers .zip et les fichiers .doc. L’IDE n’effectue pas le suivi des fichiers qui ne peuvent être modifiés que par un éditeur externe.
 
 ## <a name="commands-available-in-the-ide"></a>Commandes disponibles dans l’IDE
 
@@ -51,5 +51,5 @@ Vous pouvez définir les options d’affichage du dossier **Fichiers divers** po
 ## <a name="see-also"></a>Voir aussi
 
 - [Développer du code dans Visual Studio sans projets ni solutions](../develop-code-in-visual-studio-without-projects-or-solutions.md)
-- [Projets et solutions](../../ide/solutions-and-projects-in-visual-studio.md)
-- [Documents, Environnement, boîte de dialogue Options](../../ide/reference/documents-environment-options-dialog-box.md)
+- [Solutions et projets](../../ide/solutions-and-projects-in-visual-studio.md)
+- [Documents, Environnement, Options Dialog Box](../../ide/reference/documents-environment-options-dialog-box.md)

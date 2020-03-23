@@ -8,10 +8,10 @@ ms.workload:
 - uwp
 author: mikejo5000
 ms.openlocfilehash: 51e16dcaa48a08ae97bc80be1d33163c6f3af875
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75590447"
 ---
 # <a name="set-a-unique-automation-property-for-uwp-controls-for-testing"></a>Définir une propriété Automation unique pour les contrôles UWP à des fins de test
@@ -22,7 +22,7 @@ Si vous voulez exécuter des tests codés de l’interface utilisateur pour vos 
 
 ## <a name="static-xaml-definition"></a>Définition XAML statique
 
-Pour spécifier une propriété Automation unique pour un contrôle défini dans votre fichier XAML, vous pouvez définir **AutomationProperties.AutomationId** ou **AutomationProperties.Name** implicitement ou explicitement, comme indiqué dans les exemples suivants. La définition de l’une ou l’autre de ces valeurs affecte au contrôle une propriété Automation unique qui peut être utilisée pour identifier ce contrôle lorsque vous créez un test codé de l’interface utilisateur ou un enregistrement des actions.
+Pour spécifier une propriété d’automatisation unique pour un contrôle défini dans votre fichier XAML, vous pouvez définir **l’AutomationProperties.AutomationId** ou **AutomationProperties.Name** implicitement ou explicitement, comme le montrent les exemples qui suivent. La définition de l’une ou l’autre de ces valeurs affecte au contrôle une propriété Automation unique qui peut être utilisée pour identifier ce contrôle lorsque vous créez un test codé de l’interface utilisateur ou un enregistrement des actions.
 
 ### <a name="set-the-property-implicitly"></a>Définir la propriété implicitement
 
@@ -56,11 +56,11 @@ Affectez à **AutomationProperties.Name** la valeur **ButtonY** de façon explic
 
 Dans Blend pour Visual Studio, vous pouvez sélectionner une option pour affecter des noms uniques à des éléments interactifs, comme des boutons, des zones de liste, des zones de liste modifiable et des zones de texte, ce qui permet d’affecter aux contrôles des valeurs uniques pour **AutomationProperties.Name**.
 
-Pour affecter des noms uniques à des contrôles existants, sélectionnez **Outils** > **Nommer les éléments interactifs**.
+Pour attribuer des noms uniques aux contrôles existants, sélectionnez **Tools** > **Name Interactive Elements**.
 
 ![Nommer des éléments interactifs dans Blend pour Visual Studio](../test/media/cuit_windowsstoreproperty_blend_1.png)
 
-Pour accorder automatiquement des noms uniques aux nouveaux contrôles que vous ajoutez, sélectionnez **Outils** > **Options** pour ouvrir la boîte de dialogue **Options**. Sélectionnez **Concepteur XAML**, puis **Nommer automatiquement les éléments interactifs lors de la création**. Sélectionnez **OK** pour fermer la boîte de dialogue.
+Pour donner automatiquement des noms uniques aux nouveaux contrôles que vous ajoutez, sélectionnez des options **d’outils** > **Options** pour ouvrir le dialogue **Options.** Sélectionnez **Concepteur XAML**, puis **Nommer automatiquement les éléments interactifs lors de la création**. puis cliquez sur **OK** pour fermer la boîte de dialogue.
 
 ## <a name="use-a-data-template"></a>Utiliser un modèle de données
 
@@ -99,7 +99,7 @@ Vous pouvez également utiliser un modèle avec **ItemContainerStyle** pour lier
 </ListBox>
 ```
 
-Pour ces deux exemples, vous devez remplacer la méthode **ToString()** de la méthode **ItemSource** en utilisant l’exemple de code suivant. Ce code vérifie que la valeur pour **AutomationProperties.Name** est définie et unique, car vous ne pouvez pas définir une propriété Automation unique pour chaque élément de liste lié aux données à l’aide de la liaison. Dans ce cas, la définition d’une valeur unique pour **Automation Properties.Name** est suffisante.
+Pour ces deux exemples, vous devez ensuite passer outre à la méthode **ToString ()** **d’ItemSource**, comme indiqué à l’aide de l’exemple de code qui suit. Ce code vérifie que la valeur pour **AutomationProperties.Name** est définie et unique, car vous ne pouvez pas définir une propriété Automation unique pour chaque élément de liste lié aux données à l’aide de la liaison. Dans ce cas, la définition d’une valeur unique pour **Automation Properties.Name** est suffisante.
 
 > [!NOTE]
 > Cette approche permet également d’affecter au contenu interne de l’élément de liste une chaîne dans la classe Employee via la liaison. Comme indiqué dans l’exemple, un ID Automation unique (ID d’employé) est affecté au contrôle de bouton situé au sein de chaque élément de la liste.
@@ -165,4 +165,4 @@ private void CreateCheckBox(string txt, StackPanel panel)
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Tester des applications UWP avec des tests codés de l’interface utilisateur](../test/test-uwp-app-with-coded-ui-test.md)
+- [Testez les applications UWP avec des tests d’interface utilisateur codés](../test/test-uwp-app-with-coded-ui-test.md)

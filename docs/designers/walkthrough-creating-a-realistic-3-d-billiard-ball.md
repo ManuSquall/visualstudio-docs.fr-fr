@@ -9,17 +9,17 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 866f91303c224f8330a4d2be76f3d29331fcb346
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75589914"
 ---
 # <a name="walkthrough-create-a-realistic-3d-billiard-ball"></a>Procédure pas à pas : créer une boule de billard 3D réaliste
 
 Cette procédure pas à pas montre comment créer une boule de billard 3D réaliste en utilisant le concepteur Shader et l’Éditeur d’images dans Visual Studio. L’apparence 3D de la boule de billard s’obtient en combinant plusieurs techniques de nuanceur avec les ressources de texture appropriées.
 
-## <a name="prerequisites"></a>Configuration requise
+## <a name="prerequisites"></a>Conditions préalables requises
 
 Pour exécuter cette procédure pas à pas, vous aurez besoin des composants et compétences suivants :
 
@@ -161,15 +161,15 @@ La première étape consiste à créer une texture de carte cubique . Dans de no
 
 ### <a name="to-assemble-a-cube-map-by-using-the-directx-texture-tool"></a>Pour assembler une carte cubique à l’aide de l’outil DirectX Texture
 
-1. Dans l’outil DirectX Texture, dans le menu principal, choisissez **File** > **New Texture**. La boîte de dialogue **New Texture** s’affiche.
+1. Dans l’outil de texture DirectX, sur le menu principal, choisissez **File** > **New Texture**. La boîte de dialogue **New Texture** s’affiche.
 
 2. Dans le groupe **Texture Type**, choisissez **Cubemap Texture**.
 
 3. Dans le groupe **Dimensions**, entrez la valeur correcte pour **Width** et **Height**, puis choisissez **OK**. Un nouveau document de texture apparaît. Par défaut, la texture affichée en premier dans le document de texture correspond à la face de cube **Positive X**.
 
-4. Chargez la texture que vous avez créée pour le côté du cube de texture sur la face de cube. Dans le menu principal, choisissez **File** > **Open Onto This Cubemap Face**, sélectionnez la texture que vous avez créée pour le côté du cube, puis choisissez **Open**.
+4. Chargez la texture que vous avez créée pour le côté du cube de texture sur la face de cube. Sur le menu principal, choisissez **File** > **Open Onto This Cubemap Face**, sélectionnez la texture que vous avez créée pour le côté du cube, puis choisissez **Open**.
 
-5. Répétez l’étape 4 pour les faces de cube **Negative X**, **Positive Z** et **Negative Z**. Pour cela, vous devez afficher la face à charger. Pour afficher une face de carte cubique différente, dans le menu principal, choisissez **View** > **Cube Map Face**, puis sélectionnez la face que vous souhaitez afficher.
+5. Répétez l’étape 4 pour les faces de cube **Negative X**, **Positive Z** et **Negative Z**. Pour cela, vous devez afficher la face à charger. Pour afficher un visage de carte cube différent, sur le menu principal, choisissez **View** > **Cube Map Face**, puis sélectionnez le visage que vous voulez voir.
 
 6. Pour la face de cube **Positive Y**, chargez la texture que vous avez créée pour le haut du cube de texture.
 
@@ -209,8 +209,8 @@ La première étape consiste à créer une texture de carte cubique . Dans de no
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Guide pratique pour exporter un nuanceur](../designers/how-to-export-a-shader.md)
-- [Guide pratique pour appliquer un nuanceur à un modèle 3D](../designers/how-to-apply-a-shader-to-a-3-d-model.md)
+- [Comment: Exporter un ombrageur](../designers/how-to-export-a-shader.md)
+- [Comment : Appliquer un ombrageur à un modèle 3D](../designers/how-to-apply-a-shader-to-a-3-d-model.md)
 - [Concepteur de nuanceur](../designers/shader-designer.md)
 - [Image Editor](../designers/image-editor.md)
 - [Nœuds du concepteur Shader](../designers/shader-designer-nodes.md)

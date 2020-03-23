@@ -16,10 +16,10 @@ ms.workload:
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.openlocfilehash: 9dfdf504378dafd7d71288cae1927dd8d6bb9e56
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/16/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "76115000"
 ---
 # <a name="troubleshoot-visual-studio-installation-and-upgrade-issues"></a>Résolution des problèmes d’installation et de mise à niveau de Visual Studio
@@ -112,16 +112,16 @@ En dernier recours, vous pouvez [désinstaller Visual Studio](remove-visual-stud
 
 Si aucune des étapes précédentes ne vous permet d’installer ou de mettre à niveau Visual Studio correctement, contactez-nous via notre option de support [**Conversation en direct**](https://visualstudio.microsoft.com/vs/support/#talktous) (en anglais uniquement) pour obtenir une assistance supplémentaire.
 
-## <a name="offline-installations"></a>Installations hors connexion
+## <a name="offline-installations"></a>Installations hors ligne
 
-Voici un tableau des problèmes connus et des solutions de contournement qui peuvent vous aider lors de la création d’une [installation hors connexion](create-an-offline-installation-of-visual-studio.md) , puis l’installation à partir d’une disposition locale.
+Voici un tableau de problèmes connus et quelques solution de contournement qui pourraient vous aider lorsque vous créez une [installation hors ligne,](create-an-offline-installation-of-visual-studio.md) puis installer à partir d’une disposition locale.
 
 | Problème       | Élément                   | Solution |
 | ----------- | ---------------------- | -------- |
-| Les utilisateurs n’ont pas accès aux fichiers. | autorisations (ACL) | Vérifiez que vous ajustez les autorisations (ACL) de sorte qu’elles accordent un accès en lecture aux autres utilisateurs *avant* de partager l’installation hors connexion. |
+| Les utilisateurs n’ont pas accès aux fichiers. | autorisations (ACL) | Assurez-vous d’ajuster les autorisations (ACL) afin qu’ils accordent l’accès Read à d’autres utilisateurs *avant* de partager l’installation hors ligne. |
 | L’installation des nouvelles charges de travail, langues et des nouveaux composants a échoué.  | `--layout`  | Assurez-vous d’avoir un accès Internet si vous installez depuis une disposition partielle et sélectionnez des charges de travail, composants ou langues non téléchargés préalablement dans cette disposition partielle. |
 
-Pour plus d’informations sur la résolution des problèmes liés à une [installation réseau](create-a-network-installation-of-visual-studio.md), consultez [résoudre les erreurs liées au réseau lorsque vous installez ou utilisez Visual Studio](troubleshooting-network-related-errors-in-visual-studio.md).
+Pour plus d’informations sur la façon de résoudre les problèmes avec une [installation réseau](create-a-network-installation-of-visual-studio.md), voir les erreurs liées au [réseau Troubleshoot lorsque vous installez ou utilisez Visual Studio](troubleshooting-network-related-errors-in-visual-studio.md).
 
 ## <a name="installation-logs"></a>Journaux d’installation
 

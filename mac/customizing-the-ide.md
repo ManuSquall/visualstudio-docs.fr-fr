@@ -1,27 +1,27 @@
 ---
 title: Personnalisation de l’IDE
-description: Visual Studio pour Mac peut être personnalisé de plusieurs façons, permettant aux utilisateurs de développer des applications dans un environnement qui répond à leurs besoins en matière d’efficacité et d’esthétique. Cet article explore les différentes façons dont les Visual Studio pour Mac peuvent être adaptées à vos besoins.
+description: Visual Studio pour Mac peut être personnalisé de plusieurs façons, permettant aux utilisateurs de développer des applications dans un environnement qui répond à leurs besoins en matière d’efficacité et d’esthétique. Cet article explore la variété des façons dont Visual Studio pour Mac peut être adapté à vos besoins.
 author: alanjclark
 ms.author: dominicn
 ms.date: 05/06/2018
 ms.assetid: F7C2A28C-0759-4E0D-A28E-B72D5AB73DB6
 ms.custom: video
 ms.openlocfilehash: d35cd7ebc5534cd49f18db794b5fdeb5f62f4758
-ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "74984194"
+ms.lasthandoff: 03/20/2020
+ms.locfileid: "79303266"
 ---
 # <a name="customizing-the-ide"></a>Personnalisation de l’IDE
 
-Les Visual Studio pour Mac peuvent être personnalisées, ce qui permet aux utilisateurs de développer des applications dans un environnement qui répond à leurs besoins en termes d’efficacité et d’esthétiques. Cet article explore les différentes façons dont Visual Studio pour Mac peut être adapté à vos besoins.
+Visual Studio pour Mac peut être personnalisé, permettant aux utilisateurs de développer des applications dans un environnement qui répond à leurs besoins à la fois pour l’efficacité et l’esthétique. Cet article explore les différentes façons dont Visual Studio pour Mac peut être adapté à vos besoins.
 
 ## <a name="dark-theme"></a>Thème foncé
 
 ![Vue du thème foncé](media/customizing-the-ide-image7a.png)
 
-Vous pouvez changer de thème dans Visual Studio pour Mac en accédant à **Visual Studio > Préférences > Environnement > Style visuel** et en sélectionnant le thème de votre choix dans la liste déroulante **Thème de l’interface utilisateur**, comme illustré dans l’image suivante :
+Vous pouvez changer de thème en Visual Studio pour Mac en naviguant vers **Visual Studio > Préférences > Environnement > Style Visuel** et en sélectionnant votre thème désiré à partir de **l’interface utilisateur Thème** drop-down, comme illustré dans l’image suivante:
 
 ![Sélection du thème foncé](media/customizing-the-ide-image7b.png)
 
@@ -29,8 +29,8 @@ Vous pouvez changer de thème dans Visual Studio pour Mac en accédant à **Visu
 
 Visual Studio pour Mac est localisé dans les 14 langues suivantes, ce qui lui permet d’être accessible à un plus grand nombre de développeurs :
 
-* Chinois – Chine
-* Chinois – Taïwan
+* Chinois - Chine
+* Chinois - Taïwan
 * Tchèque
 * Français
 * Allemand
@@ -39,12 +39,12 @@ Visual Studio pour Mac est localisé dans les 14 langues suivantes, ce qui lui 
 * Japonais
 * Coréen
 * Polonais
-* Portugais – Brésil
+* Portugais - Brésil
 * Russe
 * Espagnol
 * Turc
 
-Pour changer la langue affichée par Visual Studio pour Mac, accédez à **Visual Studio > Préférences > Environnement > Style visuel**, puis sélectionnez la langue souhaitée dans la liste déroulante **Langue de l’interface utilisateur**, comme illustré dans l’image suivante :
+Pour modifier la langue affichée par Visual Studio pour Mac, consultez **Visual Studio > Préférences > Environnement > Style visuel** et sélectionnez votre langue désirée à partir de la langue **d’interface utilisateur** drop-down, comme illustré dans l’image suivante:
 
 ![Sélection de la langue](media/customizing-the-ide-image11a.png)
 
@@ -58,21 +58,21 @@ Ces informations sont utilisées pour remplir les en-têtes de fichier standard,
 
 ![Options d’en-tête standard](media/customizing-the-ide-image8a.png)
 
-Les champs **Nom** et **E-mail** sont utilisés dans les validations effectuées via la gestion de versions dans Visual Studio pour Mac. Si vous n’avez pas rempli ces champs, Visual Studio pour Mac vous invite à le faire lorsque vous essayez d’utiliser le contrôle de version.
+Les champs **Nom** et **E-mail** sont utilisés dans les validations effectuées via la gestion de versions dans Visual Studio pour Mac. Si vous n’avez pas peuplé ces champs, Visual Studio pour Mac vous incitera à le faire lorsque vous essayez d’utiliser Le contrôle de version.
 
 ## <a name="key-bindings"></a>Combinaisons de touches
 
-Les combinaisons de touches, ou raccourcis clavier, vous permettent d’adapter votre environnement de développement afin de pouvoir vous déplacer plus efficacement tout au long de Visual Studio pour Mac. Il fournit des combinaisons de touches courantes pour de nombreux IDE répandus, tels que Visual Studio (sur Windows), ReSharper, Visual Studio Code et Xcode.
+Les reliures clés, ou raccourcis clavier, vous permettent d’adapter votre environnement de développement afin que vous puissiez vous déplacer plus efficacement tout au long de Visual Studio pour Mac. Il fournit des combinaisons de touches courantes pour de nombreux IDE répandus, tels que Visual Studio (sur Windows), ReSharper, Visual Studio Code et Xcode.
 
-Vous pouvez définir les combinaisons de touches en accédant à **Visual Studio > Préférences > Environnement > Combinaisons de touches**, comme illustré dans l’image suivante :
+Les reliures clés peuvent être définies en naviguant vers **Visual Studio > Préférences > Environnement > Liaisons clés,** comme l’illustre l’image suivante :
 
 ![Définir des combinaisons de touches](media/customizing-the-ide-image10a.png)
 
 À partir d’ici, vous pouvez rechercher des combinaisons de touches, afficher les combinaisons en conflit, ajouter de nouvelles combinaisons et modifier les combinaisons existantes.
 
-Ces liaisons peuvent également être définies lors de la configuration initiale de Visual Studio pour Mac, par le biais de l’écran de **sélection du clavier** :
+Ces fixations peuvent également être définies lors de la configuration initiale de Visual Studio pour Mac, via l’écran **Keyboard Selection** :
 
-![Définir des combinaisons de touches, première exécution](media/ide-tour-2019-keyboard-shortcut.png)
+![Définir les liaisons clés, première exécution](media/ide-tour-2019-keyboard-shortcut.png)
 
 ## <a name="workspace-layout"></a>Disposition de l'espace de travail
 
@@ -112,7 +112,7 @@ L’état des panneaux ouverts est représenté par une *disposition*. Vous pouv
 
 Il n’existe qu’une seule disposition active à un moment donné, et toute modification apportée à une disposition, comme ajouter ou repositionner un panneau, change seulement la disposition active. Quand vous fermez Visual Studio pour Mac, les modifications que vous avez apportées ne seront pas enregistrées.
 
-Toutefois, vous pouvez créer une disposition en utilisant l’élément de menu **Affichage > Enregistrer la disposition active**. Cette commande ajoute la disposition actuelle au menu pour que vous puissiez la sélectionner à tout moment :
+Toutefois, vous pouvez créer une disposition en utilisant l’élément de menu **Affichage > Enregistrer la disposition active**. Cette commande ajoutera votre mise en page actuelle au menu afin que vous puissiez le sélectionner à tout moment :
 
 ![Enregistrer la disposition active](media/customizing-the-ide-image6a.png)
 
@@ -120,7 +120,7 @@ Toutefois, vous pouvez créer une disposition en utilisant l’élément de menu
 
 Visual Studio pour Mac vous permet d’ouvrir des éditeurs de texte côte à côte, ou d’avoir un éditeur dans une fenêtre flottante détachée.
 
-Le mode à deux colonnes peut être activé via l’élément de menu Affichage en sélectionnant Afficher les colonnes de l' **éditeur de > > 2 colonnes**, ou en faisant glisser l’onglet d’un éditeur vers l’un des bords de la zone de l’éditeur :
+Le mode à deux colonnes peut être activé à travers l’élément du menu View en sélectionnant **View > Editor Columns > 2 colonnes,** ou en faisant glisser un onglet d’éditeur sur l’un des bords de la zone de l’éditeur :
 
 ![Mode deux colonnes côte à côte](media/customizing-the-ide-sbs.png)
 

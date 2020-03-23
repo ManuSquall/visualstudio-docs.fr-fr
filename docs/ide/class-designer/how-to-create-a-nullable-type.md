@@ -1,5 +1,5 @@
 ---
-title: 'Comment : créer un type Nullable (Concepteur de classes)'
+title: Guide pratique pour créer un type Nullable (Concepteur de classes)
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -15,10 +15,10 @@ dev_langs:
 ms.workload:
 - multiple
 ms.openlocfilehash: 5be8b553dfead4b8c05f29bbd18c16fcef847130
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75592228"
 ---
 # <a name="how-to-create-a-nullable-type-in-class-designer"></a>Guide pratique pour créer un type Nullable dans le Concepteur de classes
@@ -88,7 +88,7 @@ Pour plus d’informations sur les types Nullable dans C#, consultez [Types Null
 ## <a name="see-also"></a>Voir aussi
 
 - <xref:System.Nullable%601>
-- [Types Nullable](/dotnet/csharp/programming-guide/nullable-types/index)
+- [Types nuls](/dotnet/csharp/programming-guide/nullable-types/index)
 - [Utilisation de types Nullable](/dotnet/csharp/programming-guide/nullable-types/using-nullable-types)
 - [Comment : identifier un type Nullable](/dotnet/csharp/programming-guide/nullable-types/how-to-identify-a-nullable-type)
-- [Types valeur Nullable](/dotnet/visual-basic/programming-guide/language-features/data-types/nullable-value-types)
+- [Types de valeur nuls](/dotnet/visual-basic/programming-guide/language-features/data-types/nullable-value-types)

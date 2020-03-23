@@ -7,10 +7,10 @@ ms.date: 03/09/2020
 ms.topic: conceptual
 description: Comment attribuer des abonnements Visual Studio à vos utilisateurs finaux, pour les partenaires du réseau MPN.
 ms.openlocfilehash: 5fbd69d3d50364f331a0529c51877fba25f83a84
-ms.sourcegitcommit: 514f0f7d1a61d292c7dbc80ec73a36bda960d6ce
+ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/10/2020
+ms.lasthandoff: 03/21/2020
 ms.locfileid: "78947142"
 ---
 # <a name="manage-visual-studio-subscriptions-offered-through-the-microsoft-partner-network-mpn"></a>Gérer les abonnements Visual Studio offerts via le réseau MPN
@@ -28,9 +28,9 @@ Abonné Microsoft Action Pack et abonnements Visual Studio
 6. Sélectionnez **Privilèges**
 7. Sélectionnez **Abonnements Visual Studio** (remarque : mise à jour de l’abonnement Visual Studio en attente)
 8. Sélectionnez la **personne** souhaitée
-9. Cliquez sur **Envoyer**
+9. Cliquez **sur Soumettre**
 10. La personne reçoit un e-mail
-11. La personne assignée accède à [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs) pour se connecter
+11. La personne affectée [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs) aura accès à la connexion
 12. Une page de profil Visual Studio peut s’afficher, notamment :
     - Prénom
     - Nom
@@ -42,9 +42,9 @@ Abonné Microsoft Action Pack et abonnements Visual Studio
 2. Sélectionnez **Privilèges**
 3. Sélectionnez **Abonnements MSDN** (Remarque : cette option sera prochainement renommée « Abonnements Visual Studio »)
 4. Recherchez la **personne** souhaitée
-5. Cliquez sur **Envoyer**
+5. Cliquez **sur Soumettre**
 6. La personne reçoit un e-mail
-7. La personne assignée accède à [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs) pour se connecter
+7. La personne affectée [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs) aura accès à la connexion
 8. Une page de profil Visual Studio peut s’afficher
     - Prénom
     - Nom
@@ -60,7 +60,7 @@ Abonné Microsoft Action Pack et abonnements Visual Studio
   - Pg 8 - Attribution d’abonnements Visual Studio pour les partenaires de compétence
 
 ## <a name="see-also"></a>Voir aussi
-- [Documentation de Visual Studio](https://docs.microsoft.com/visualstudio/)
+- [Documentation Visual Studio](https://docs.microsoft.com/visualstudio/)
 - [Documentation Azure DevOps](https://docs.microsoft.com/azure/devops/)
 - [Documentation Azure](https://docs.microsoft.com/azure/)
 - [Documentation Microsoft 365](https://docs.microsoft.com/microsoft-365/)

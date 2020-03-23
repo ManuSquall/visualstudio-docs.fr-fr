@@ -7,10 +7,10 @@ ms.date: 03/09/2020
 ms.topic: conceptual
 description: Découvrez comment les partenaires gèrent les abonnements Visual Studio pour leurs clients.
 ms.openlocfilehash: 53f19b76d79bb7f2e6246c9f5b2866bbf9262dfe
-ms.sourcegitcommit: 514f0f7d1a61d292c7dbc80ec73a36bda960d6ce
+ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/10/2020
+ms.lasthandoff: 03/21/2020
 ms.locfileid: "78947074"
 ---
 # <a name="partners-managing-subscriptions-on-behalf-of-customers"></a>Partenaires gérant des abonnements pour le compte de clients
@@ -20,7 +20,7 @@ Pour gérer des abonnements dans le [portail d’administration des abonnements 
 - Pour que les partenaires puissent gérer les abonnements au nom des clients, ils doivent s’inscrire sur le portail d’administration. Les différents modes d’accès sont listés ci-dessous (similaires au processus ajouter/ouvrir).
 
 ## <a name="existing-partners-adding-a-new-license"></a>Partenaires existants ajoutant une nouvelle licence
-Ceci s’applique aux partenaires qui ont déjà accès au [portail d’administration des abonnements Visual Studio](https://manage.visualstudio.com), mais qui ont passé commande pour des programmes Open License avec des abonnements Visual Studio qu’ils vont devoir gérer.  Étapes à suivre par les partenaires pour ajouter une nouvelle licence :
+Cela s’applique aux partenaires qui ont déjà accès au [portail d’administration des abonnements Visual Studio](https://manage.visualstudio.com), mais ont passé une commande de licences ouvertes avec des abonnements Visual Studio qu’ils devront gérer.  Étapes à suivre par les partenaires pour ajouter une nouvelle licence :
 - Connectez-vous à https://manage.visualstudio.com.
 - Sélectionnez la liste déroulante des contrats et faites-la défiler vers le bas, où se trouve une option **+Nouvelle licence Open**.
 - Dans le panneau contextuel, entrez le numéro d’autorisation, le numéro de licence et l’adresse e-mail du client figurant sur le contrat, cochez la case, puis cliquez sur **Envoyer**.
@@ -29,7 +29,7 @@ Ceci s’applique aux partenaires qui ont déjà accès au [portail d’administ
 > Le client reçoit un e-mail de notification lui indiquant qu’un partenaire a été ajouté au programme Open License. Ils peuvent choisir de supprimer l’accès du partenaire.
 
 ## <a name="new-partners-who-register-on-the-volume-licensing-service-center-vlsc"></a>Nouveaux partenaires qui s’inscrivent sur le Centre de gestion des licences en volume
-Ceci s’applique aux nouveaux partenaires qui passent de nouvelles commandes Open License, mais qui s’inscrivent sur le [Centre de gestion des licences en volume](https://www.microsoft.com/Licensing/servicecenter/default.aspx) via le flux ajouter/ouvrir avant d’essayer d’accéder au [portail d’administration des abonnements Visual Studio](https://manage.visualstudio.com). Les partenaires doivent suivre ces étapes :
+Cela s’applique aux nouveaux partenaires qui passent de nouvelles commandes de licence ouverte, mais qui s’inscrivent sur le [VLSC](https://www.microsoft.com/Licensing/servicecenter/default.aspx) par le biais du flux add-open avant de tenter d’accéder au [portail d’administration des abonnements](https://manage.visualstudio.com)Visual Studio . Les partenaires doivent suivre ces étapes :
 - Connectez-vous au Centre de gestion des licences en volume et accédez au « Résumé de la relation ».
 - Sélectionnez la licence Open souhaitée.
 - Ensuite, dans « Détails de la licence », sous « Abonnements Visual Studio », sélectionnez l’option de gestion des abonnements via le lien **cliquez ici**.
@@ -41,7 +41,7 @@ Ceci s’applique aux nouveaux partenaires qui passent de nouvelles commandes Op
 
 
 ## <a name="new-partners-visiting-the-visual-studio-subscriptions-administration-portal-directly"></a>Nouveaux partenaires visitant directement le portail d’administration des abonnements Visual Studio
-Ce scénario s’applique aux nouveaux partenaires qui ont déjà passé de nouvelles commandes Open License, mais qui ne sont pas inscrits sur le [Centre de gestion des licences en volume](https://www.microsoft.com/Licensing/servicecenter/default.aspx), et qui accèdent directement au [Portail d’administration des abonnements Visual Studio](https://manage.visualstudio.com).  Procédez comme suit :
+Ce scénario s’applique aux nouveaux partenaires, qui ont déjà passé de nouvelles commandes de licence ouverte, mais qui ne se sont pas inscrits sur le [VLSC](https://www.microsoft.com/Licensing/servicecenter/default.aspx) et vont directement au [portail d’administration des abonnements Visual Studio](https://manage.visualstudio.com).  Procédez comme suit :
 - Visitez https://manage.visualstudio.com.
 - Vous recevez une erreur indiquant que vous n’êtes pas un utilisateur reconnu.
 - Sélectionnez l’option d’inscription **Partenaires OLP** et entrez le numéro d’autorisation, le numéro de licence et l’adresse e-mail du client utilisée dans la commande, cochez la case, puis cliquez sur **Envoyer**.
@@ -51,11 +51,11 @@ Ce scénario s’applique aux nouveaux partenaires qui ont déjà passé de nouv
 
 ## <a name="resources"></a>Ressources
 - [Livre blanc des contrats de licence Visual Studio](https://visualstudio.microsoft.com/wp-content/uploads/2019/06/Visual-Studio-Licensing-Whitepaper-May-2019.pdf)
-- [Prise en charge des abonnements et de l’administration de Visual Studio](https://visualstudio.microsoft.com/support/support-overview-vs)
-- [Termes du programme de licence en volume](https://www.microsoft.com/licensing/product-licensing/products.aspx)
+- [Prise en charge des abonnements et de l’administration Visual Studio](https://visualstudio.microsoft.com/support/support-overview-vs)
+- [Conditions du programme de licence en volume](https://www.microsoft.com/licensing/product-licensing/products.aspx)
 
 ## <a name="see-also"></a>Voir aussi
-- [Documentation de Visual Studio](https://docs.microsoft.com/visualstudio/)
+- [Documentation Visual Studio](https://docs.microsoft.com/visualstudio/)
 - [Documentation Azure DevOps](https://docs.microsoft.com/azure/devops/)
 - [Documentation Azure](https://docs.microsoft.com/azure/)
 - [Documentation Microsoft 365](https://docs.microsoft.com/microsoft-365/)

@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: fbf540056318e092db13521dc80478cc7eb91948
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75590369"
 ---
 # <a name="how-to-create-inheritance-between-types-in-class-designer"></a>Guide pratique pour créer un héritage entre les types dans le Concepteur de classes
@@ -28,7 +28,7 @@ Pour créer une relation d’héritage entre deux types sur un diagramme de clas
 
 1. À partir de votre projet affiché dans **l’Explorateur de solutions**, ouvrez le fichier du diagramme de classes (.cd).
 
-     Si vous n'avez pas de diagramme de classes, créez-en un. Consultez [Guide pratique pour ajouter des diagrammes de classes aux projets](how-to-add-class-diagrams-to-projects.md).
+     Si vous n'avez pas de diagramme de classes, créez-en un. Voir [comment : Ajouter des diagrammes de classe aux projets](how-to-add-class-diagrams-to-projects.md).
 
 2. Dans la **boîte à outil**, sous **Concepteur de classes**, cliquez sur **Héritage**.
 

@@ -18,10 +18,10 @@ dev_langs:
 ms.workload:
 - multiple
 ms.openlocfilehash: adb0415e926bba9a1809c77f0f35b43d78263f43
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75597293"
 ---
 # <a name="walkthrough-create-a-code-snippet"></a>Procédure pas à pas : créer un extrait de code
@@ -61,7 +61,7 @@ Le code XML suivant est le modèle d’extrait de code de base :
 
 4. Ajoutez le code de l’extrait de code dans la section **CDATA** de l’élément **Code**.
 
-   Pour C# :
+   Pour C# :
 
    ```xml
    <Code Language="CSharp">
@@ -84,7 +84,7 @@ Le code XML suivant est le modèle d’extrait de code de base :
 
 ## <a name="import-a-code-snippet"></a>Importer un extrait de code
 
-1. Vous pouvez importer un extrait de code dans votre installation Visual Studio en utilisant le **Gestionnaire des extraits de code**. Ouvrez-le en choisissant **Outils** > **Gestionnaire des extraits de Code**.
+1. Vous pouvez importer un extrait de code dans votre installation Visual Studio en utilisant le **Gestionnaire des extraits de code**. Ouvrez-le en choisissant **Tools** > **Code Snippets Manager**.
 
 2. Cliquez sur le bouton **Importer**.
 
@@ -96,19 +96,19 @@ Le code XML suivant est le modèle d’extrait de code de base :
 
    ::: moniker range="vs-2017"
 
-   *%USERPROFILE%\Documents\Visual Studio 2017\Code Snippets\Visual C#\My Code Snippets*
-    *%USERPROFILE%\Documents\Visual Studio 2017\Code Snippets\Visual Basic\My Code Snippets*
+   *%USERPROFILE % -Documents-Visual Studio 2017-Code Snippets-Visual C-My Code Snippets*
+    *%USERPROFILE% -Documents-Visual Studio 2017-Code Snippets-Visual Basic-My Code Snippets*
 
    ::: moniker-end
 
    ::: moniker range=">=vs-2019"
 
-   *%USERPROFILE%\Documents\Visual Studio 2019\Code Snippets\Visual C#\My Code Snippets*
-    *%USERPROFILE%\Documents\Visual Studio 2019\Code Snippets\Visual Basic\My Code Snippets*
+   *%USERPROFILE % -Documents-Visual Studio 2019-Code Snippets-Visual C-My Code Snippets*
+    *%USERPROFILE% -Documents-Visual Studio 2019-Code Snippets-Visual Basic-My Code Snippets*
 
    ::: moniker-end
 
-6. Testez votre extrait de code en ouvrant un projet C# ou Visual Basic. Avec un fichier de code ouvert dans l’éditeur, choisissez **Extraits de code** > **Insérer un extrait de code** dans le menu contextuel, puis **Mes extraits de code**. Vous devez voir un extrait de code nommé **Square Root**. Double-cliquez dessus.
+6. Testez votre extrait de code en ouvrant un projet C# ou Visual Basic. Avec un fichier de code ouvert dans l’éditeur, choisissez **Snippets** > **Insert Snippet** à partir du menu à clic droit, puis **My Code Snippets**. Vous devez voir un extrait de code nommé **Square Root**. Double-cliquez dessus.
 
    L’extrait de code est inséré dans le fichier de code.
 
@@ -129,9 +129,9 @@ Le code XML suivant est le modèle d’extrait de code de base :
    > [!TIP]
    > Comme vous modifiez le fichier dans le répertoire où Visual Studio l’a placé, vous n’avez pas besoin de le réimporter dans Visual Studio.
 
-2. Ajoutez les éléments **Author** et **Description** à l’élément **Header**, puis renseignez-les.
+2. Ajoutez des éléments **d’auteur** et **de description** à l’élément **d’en-tête** et remplissez-les.
 
-3. L’élément **Header** doit ressembler à ceci :
+3. **L’élément d’en-tête** devrait ressembler à ceci:
 
    ```xml
    <Header>
@@ -141,7 +141,7 @@ Le code XML suivant est le modèle d’extrait de code de base :
    </Header>
    ```
 
-4. Ouvrez le **Gestionnaire des extraits de code** et sélectionnez votre extrait de code. Dans le volet droit, notez que les champs **Description** et **Author** sont maintenant renseignés.
+4. Ouvrez le **Gestionnaire de Code Snippets** et sélectionnez votre extrait de code. Dans le volet droit, notez que les champs **Description** et **Author** sont maintenant renseignés.
 
    ![Description de l’extrait de code dans le Gestionnaire des extraits de code](media/code-snippet-description-author.png)
 

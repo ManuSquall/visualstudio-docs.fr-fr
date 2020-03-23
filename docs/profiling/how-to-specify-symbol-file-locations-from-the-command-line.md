@@ -10,10 +10,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 604863cbef5e42b31450ea09dffa56a1a00ae992
-ms.sourcegitcommit: 374f5ec9a5fa18a6d4533fa2b797aa211f186755
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/20/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77476889"
 ---
 # <a name="how-to-specify-symbol-file-locations-from-the-command-line"></a>Guide pratique pour spécifier les emplacements du fichier de symboles à partir de la ligne de commande
@@ -48,18 +48,18 @@ Pour pouvoir afficher des informations de symboles telles que les noms de foncti
 
     `srv*<LocalStore>*https://msdl.microsoft.com/download/symbols`
 
-    où *<LocalStore>* est le chemin d’accès du répertoire local que vous avez créé.
+    où *<LocalStore>* se trouve le parcours de l’annuaire local que vous avez créé.
 
 ## <a name="specify-component-symbol-files"></a>Spécifier des fichiers de symboles de composants
  Les Outils de profilage recherchent les fichiers .*pdb* des composants que vous souhaitez profiler dans leurs emplacements d’origine, qui sont stockés dans les composants ou dans le dossier contenant le fichier de données de profilage. Vous pouvez spécifier d’autres emplacements dans lesquels effectuer la recherche en ajoutant un ou plusieurs chemins à **_NT_SYMBOL_PATH** ou à l’option **/SymbolPath**. Séparez les chemins par des points-virgules.
 
-## <a name="example"></a>Exemple
+## <a name="example"></a> Exemple
  La ligne de commande suivante définit le serveur de symboles Windows comme valeur de la variable d’environnement **_NT_SYMBOL_PATH** et **C:\Symbols** comme répertoire local.
 
  ```cmd
   set  _NT_SYMBOL_PATH=srv*C:\symbols*https://msdl.microsoft.com/download/symbols
  ```
 
- La ligne de commande VSPerfReport suivante ajoute le répertoire *C:\Projects\Symbols* au chemin de recherche à l’aide de l’option **/SymbolPath**.
+ La ligne de commande VSPerfReport suivante ajoute le répertoire *C: 'Projects’Symbols* au chemin de recherche en utilisant l’option **/SymbolPath.**
 
- **VSPerfReport**  *MyApp* **. exe/SymbolPath : C:\Projects\Symbols/Summary : All**
+ **VSPerfReport**  *MyApp* **.exe /SymbolPath:C:\Projects\Symbols /summary:all**

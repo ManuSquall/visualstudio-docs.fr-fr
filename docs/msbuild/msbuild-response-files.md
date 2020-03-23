@@ -19,15 +19,15 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 44d6e3c77fee53b15ec8d18cb74fd7355ee101a8
-ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "78410026"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79302895"
 ---
 # <a name="msbuild-response-files"></a>Fichiers réponse MSBuild
 
-Les fichiers réponse ( *.rsp*) sont des fichiers texte qui contiennent des commutateurs de ligne de commande *MSBuild.exe*. Les commutateurs peuvent se trouver chacun sur une ligne distincte ou se trouver tous sur une même ligne. Les lignes de commentaire sont précédées d’un symbole **#** . Le commutateur **@** est utilisé pour passer un autre fichier réponse à *MSBuild.exe*.
+Les fichiers réponse (*.rsp*) sont des fichiers texte qui contiennent des commutateurs de ligne de commande *MSBuild.exe*. Les commutateurs peuvent se trouver chacun sur une ligne distincte ou se trouver tous sur une même ligne. Les lignes de commentaires **#** sont préfacées avec un symbole. Le **@** commutateur est utilisé pour passer un autre fichier de réponse à *MSBuild.exe*.
 
 ## <a name="msbuildrsp"></a>MSBuild.rsp
 
@@ -39,5 +39,5 @@ Dans les versions 15.6 et ultérieures, MSBuild recherche dans les répertoires 
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Informations de référence sur MSBuild](../msbuild/msbuild-reference.md)
-- [Informations de référence sur la ligne de commande](../msbuild/msbuild-command-line-reference.md)
+- [Référence MSBuild](../msbuild/msbuild-reference.md)
+- [Référence de la ligne de commandement](../msbuild/msbuild-command-line-reference.md)

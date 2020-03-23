@@ -1,5 +1,5 @@
 ---
-title: Utilisation de la légende de la vue Graphiques pour analyser des tests de charge
+title: Utilisation de la légende de la vue Graphes pour analyser des tests de charge
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,10 +10,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 1455c67c3cb6d8dc99aeab91a7bfa63cce009c51
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75590798"
 ---
 # <a name="use-the-graphs-view-legend-to-analyze-load-tests"></a>Utiliser la légende de la vue Graphiques pour analyser des tests de charge
@@ -42,7 +42,7 @@ Les informations suivantes sont contenues dans la légende :
     > [!NOTE]
     > La colonne Dernier s'affiche uniquement dans la légende de l'outil Analyseur de test de charge pendant l'exécution du test de charge.
 
-     Pour plus d’informations, consultez [Guide pratique pour faire un zoom avant sur une région du graphique](../test/how-to-zoom-in-on-a-region-of-the-graph-in-load-test-results.md).
+     Pour plus d’informations, voir [Comment : Zoom sur une région du graphique.](../test/how-to-zoom-in-on-a-region-of-the-graph-in-load-test-results.md)
 
 La sélection d'un élément dans la légende effectue les opérations suivantes :
 
@@ -59,5 +59,5 @@ La sélection d'un élément dans la légende effectue les opérations suivantes
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Guide pratique pour faire un zoom avant sur une région du graphique](../test/how-to-zoom-in-on-a-region-of-the-graph-in-load-test-results.md)
+- [Comment: Zoom sur une région du graphique](../test/how-to-zoom-in-on-a-region-of-the-graph-in-load-test-results.md)
 - [Analyser les résultats des tests de charge dans la vue Graphiques](../test/analyze-load-test-results-in-the-graphs-view.md)

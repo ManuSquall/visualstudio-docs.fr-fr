@@ -11,11 +11,11 @@ manager: crdun
 ms.workload:
 - unity
 ms.openlocfilehash: c22b9c25f95ea26f2cdaf5c2035fb7a373123241
-ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "78408798"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79302272"
 ---
 # <a name="get-started-with-visual-studio-tools-for-unity"></a>Bien démarrer avec Outils Visual Studio pour Unity
 
@@ -41,7 +41,7 @@ Lors de l’installation, vérifiez que Visual Studio est coché dans la liste d
 
 La version de Visual Studio fournie avec l’installation de Unity n’est pas toujours la plus récente. Nous vous recommandons de rechercher les mises à jour pour être sûr d’avoir accès aux tout derniers outils et fonctionnalités.
 
-- [Mettre à jour Visual Studio](../install/update-visual-studio.md)
+- [Mettre à jour Visual Studio 2017](../install/update-visual-studio.md)
 
 ### <a name="manual-installation"></a>Installation manuelle
 
@@ -67,7 +67,7 @@ Si Visual Studio 2017 est déjà installé ou si vous préférez l’installer 
 
 2. Dans la boîte de dialogue Préférences, sélectionnez l’onglet **Outils externes**.
 
-3. Dans la liste déroulante **Éditeur de scripts externe**, choisissez la version de Visual Studio de votre choix si elle apparaît ; sinon, sélectionnez **Parcourir…** .
+3. Dans la liste déroulante **Éditeur de scripts externe**, choisissez la version de Visual Studio de votre choix si elle apparaît ; sinon, sélectionnez **Parcourir…**.
 
    ![Sélectionner Visual Studio](media/vstu_unity-external-tools.png)
 

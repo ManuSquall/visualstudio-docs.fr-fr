@@ -10,11 +10,11 @@ ms.workload:
 - multiple
 author: mikejo5000
 ms.openlocfilehash: 2a57d79fb64675f90edf50e6a0d7d50b8a3c6fd7
-ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "78410169"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79302636"
 ---
 # <a name="exploration-bounds"></a>Limites de l’exploration
 
@@ -35,7 +35,7 @@ public partial class FooTest {...}
   * [MaxCalls](#maxcalls) : nombre maximal d’appels qui peuvent être passés pendant le parcours d’un chemin d’exécution.
   * [MaxStack](#maxstack) : taille maximale de la pile pendant le parcours d’un chemin d’exécution, mesurée en nombre de frames d’appels actifs.
   * [MaxConditions](#maxconditions) : nombre maximal de conditions sur les entrées qui peuvent être vérifiées pendant le parcours d’un chemin d’exécution.
-* **Limites de l’exploration**
+* **Limites d’exploration**
   * [MaxRuns](#maxruns) : nombre maximal d’exécutions qui seront tentées au cours d’une exploration.
   * [MaxRunsWithoutNewTests](#maxrunswithoutnewtests) : nombre maximal d’exécutions consécutives sans émettre un nouveau test.
   * [MaxRunsWithUniquePaths](#maxrunswithuniquepaths) : nombre maximal d’exécutions avec des chemins d’exécution uniques qui seront tentées au cours d’une exploration.
@@ -48,7 +48,7 @@ public partial class FooTest {...}
 <a name="maxconstraintsolvertime"></a>
 ## <a name="maxconstraintsolvertime"></a>MaxConstraintSolverTime
 
-Nombre de secondes pendant lesquelles le [solveur de contrainte](input-generation.md#constraint-solver) doit calculer les entrées qui vont inciter à suivre un chemin d’exécution nouveau et différent. Il s’agit d’une option de **PexSettingsAttributeBase** et ses types dérivés.
+Nombre de secondes pendant lesquelles le [solveur de contrainte](input-generation.md#constraint-solver) doit calculer les entrées qui vont inciter à suivre un chemin d’exécution nouveau et différent. Il s’agit d’une option de la **PexSettingsAttributeBase** et ses types dérivés.
 
 Plus IntelliTest explore les chemins d’exécution d’un programme, plus les systèmes de contraintes créés par IntelliTest à partir du flux de contrôle et du flux de données du programme deviennent complexes. Selon le temps dont vous disposez, vous pouvez définir cette valeur pour permettre à IntelliTest de prendre plus ou moins de temps pour découvrir de nouveaux chemins d’exécution.
 
@@ -145,7 +145,7 @@ La motivation derrière cette limite de l’exploration est que tout code conten
 
 Les deux paramètres **MaxRuns** et **MaxRunsWithUniquePaths** sont liés de la manière suivante :
 
-* IntelliTest appelle une méthode de test paramétrable jusqu’à **MaxRuns** fois avec des entrées de test différentes.
+* IntelliTest appellera une méthode de test paramétrée jusqu’à des temps **MaxRuns** avec différentes entrées de test.
 * Si le code exécuté est déterministe, IntelliTest prend chaque fois un chemin d’exécution différent. Toutefois, sous certaines conditions, le code exécuté peut suivre un chemin d’exécution qu’il a déjà pris auparavant, avec des entrées différentes.
 * IntelliTest compte le nombre de chemins d’exécution uniques qu’il trouve ; ce nombre est limité par l’option **MaxRunsWithUniquePaths**.
 

@@ -11,10 +11,10 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: cbb06ac800fd21e2354b04fb2e7e46306da7ed72
-ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
-ms.translationtype: HT
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/30/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "70180342"
 ---
 # <a name="quickstart-create-your-first-python-web-app-using-visual-studio"></a>Démarrage rapide : créer votre première application web Python à l’aide de Visual Studio
@@ -38,7 +38,7 @@ Si vous n’avez pas encore installé Visual Studio, accédez à la page [Télé
 Les étapes suivantes créent un projet vide qui sert de conteneur pour l’application :
 
 ::: moniker range="vs-2017"
-1. Ouvrez Visual Studio 2017.
+1. Ouvrez Visual Studio 2017.
 
 2. Dans la barre de menus supérieure, choisissez **Fichier > Nouveau > Projet**.
 
@@ -75,11 +75,11 @@ Les étapes suivantes créent un projet vide qui sert de conteneur pour l’appl
     ![Explorateur de solutions affichant le projet vide](media/quickstart-python-01-empty-project-2019.png)
 ::: moniker-end
 
-**Question : Quel avantage présente la création d’un projet dans Visual Studio pour une application Python ?**
+**Question: Quel est l’avantage de créer un projet en Visual Studio pour une application Python?**
 
-**Réponse** : Les applications Python sont généralement définies à l’aide de fichiers et de dossiers uniquement, mais cette structure simple peut se révéler fastidieuse pour des applications de plus grande envergure, qui impliquent éventuellement des fichiers générés automatiquement, du code JavaScript pour les applications web, etc. Un projet Visual Studio permet de gérer cette complexité. Le projet (un fichier *.pyproj*) identifie tous les fichiers sources et de contenu associés à votre projet, contient des informations de génération pour chaque fichier, conserve les informations pour l’intégration aux systèmes de contrôle de code source et vous permet d’organiser votre application en composants logiques.
+**Réponse** : Les applications Python sont généralement définies à l’aide de fichiers et de dossiers uniquement, mais cette structure simple peut se révéler fastidieuse pour des applications de plus grande envergure, qui impliquent éventuellement des fichiers générés automatiquement, du JavaScript pour les applications web, etc. Un projet Visual Studio permet de gérer cette complexité. Le projet (un fichier *.pyproj*) identifie tous les fichiers sources et de contenu associés à votre projet, contient des informations de génération pour chaque fichier, conserve les informations pour l’intégration aux systèmes de contrôle de code source et vous permet d’organiser votre application en composants logiques.
 
-**Question : Quelle est la « solution » indiquée dans l’Explorateur de solutions ?**
+**Question : Quelle est la « solution » indiquée dans l’Explorateur de solutions ?**
 
 **Réponse** : Une solution Visual Studio est un conteneur permettant de gérer de façon groupée un ou plusieurs projets apparentés. Il stocke les paramètres de configuration qui ne sont pas propres à un projet. Les projets d’une même solution peuvent également faire référence les uns aux autres ; ainsi, l’exécution de l’un d’entre eux (une application Python) en génère automatiquement un deuxième (par exemple, une extension C++ utilisée dans l’application Python).
 
@@ -105,7 +105,7 @@ Suivez les étapes ci-dessous pour installer la bibliothèque Flask dans l’« 
 
     ![Explorateur de solutions montrant l’environnement Python](media/quickstart-python-02-default-environment-2019.png)
 
-2. Cliquez avec le bouton droit sur l’environnement et sélectionnez **Gérer les packages Python...** . Cette commande ouvre la fenêtre **Environnements Python** sous l’onglet **Packages (PyPI)** .
+2. Cliquez à droite sur l’environnement et **sélectionnez Manage Python Packages...**. Cette commande ouvre la fenêtre **Python Environments** sur l’onglet **Paquets (PyPI).**
 
 3. Entrez « flask » dans le champ de recherche. Si **Flask** apparaît sous la zone de recherche, vous pouvez ignorer cette étape. Sinon, sélectionnez **Exécuter la commande : installation pip de flask**. Acceptez les invites de privilèges d’administrateur et observez la progression dans la fenêtre **Sortie** de Visual Studio. (Une invite d’élévation se produit lorsque le dossier des packages de l’environnement global se situe dans une zone protégée comme *C:\Program Files*.)
 
@@ -126,7 +126,7 @@ Suivez les étapes ci-dessous pour installer la bibliothèque Flask dans l’« 
 
 **Question : Où peut-on se renseigner sur les autres packages Python disponibles ?**
 
-**Réponse** : Accédez à l’[index des packages Python](https://pypi.org/).
+**Réponse** : Accédez à [Python Package Index](https://pypi.org/).
 
 ## <a name="add-a-code-file"></a>Ajouter un fichier de code
 
@@ -163,11 +163,11 @@ Vous êtes maintenant prêt à ajouter un peu de code Python pour implémenter u
 
 1. Vous avez peut-être remarqué que la boîte de dialogue **Ajouter > Nouvel élément** présente de nombreux autres types de fichiers qu’il est possible d’ajouter à un projet Python, notamment une classe Python, un package Python, un test unitaire Python, des fichiers *web.config*, etc. En règle générale, ces modèles d’élément, comme on les appelle, sont un excellent moyen de créer rapidement des fichiers avec du code réutilisable et utile.
 
-**Question : Où peut-on se renseigner sur Flask ?**
+**Question : Où peut-on se renseigner sur Flask ?**
 
 **Réponse** : Reportez-vous à la documentation de Flask, en commençant par le [Guide de démarrage rapide Flask](https://flask.palletsprojects.com/en/1.1.x/quickstart/#quickstart).
 
-## <a name="run-the-application"></a>Exécuter l'application
+## <a name="run-the-application"></a>Exécuter l’application
 
 1. Cliquez avec le bouton droit sur *app.py* dans l’**Explorateur de solutions** et sélectionnez **Définir comme fichier de démarrage**. Cette commande identifie le fichier de code à lancer dans Python à l’exécution de l’application.
 
@@ -178,7 +178,7 @@ Vous êtes maintenant prêt à ajouter un peu de code Python pour implémenter u
     ![Définition du fichier de démarrage d’un projet dans l’Explorateur de solutions](media/quickstart-python-05-set-as-startup-file-2019.png)
     ::: moniker-end
 
-2. Cliquez avec le bouton droit sur le projet dans **l’Explorateur de solutions**, puis sélectionnez **Propriétés**. Ensuite, sélectionnez l’onglet **Déboguer** et affectez la valeur `4449` à la propriété **Numéro de port**. Cette étape permet de s’assurer que Visual Studio lance un navigateur avec `localhost:4449`, par cohérence avec les arguments `app.run` du code.
+2. Cliquez à droite sur le projet dans **Solution Explorer** et sélectionnez **propriétés**. Ensuite, sélectionnez l’onglet **Déboguer** et affectez la valeur `4449` à la propriété **Numéro de port**. Cette étape permet de s’assurer que Visual Studio lance un navigateur avec `localhost:4449`, par cohérence avec les arguments `app.run` du code.
 
 3. Sélectionnez **Déboguer > Démarrer sans débogage** (**Ctrl**+**F5**) pour enregistrer les modifications apportées aux fichiers et exécuter l’application.
 
@@ -194,7 +194,7 @@ Vous êtes maintenant prêt à ajouter un peu de code Python pour implémenter u
 
 **Question : Quelle est la différence entre les commandes Démarrer sans débogage et Démarrer le débogage ?**
 
-**Réponse** : On utilise **Démarrer le débogage** pour exécuter l’application dans le contexte du [Débogueur Visual Studio](../python/debugging-python-in-visual-studio.md), qui permet de définir des points d’arrêt, d’examiner les variables et de parcourir le code ligne par ligne. Les applications risquent de s’exécuter plus lentement dans le débogueur à cause des hooks qui permettent le débogage. **Démarrer sans débogage**, à l’inverse, exécute directement l’application comme si elle était lancée en ligne de commande, sans contexte de débogage ; par ailleurs, il ouvre automatiquement un navigateur et accède à l’URL spécifiée dans l’onglet **Déboguer** des propriétés du projet.
+**Réponse** : On utilise **Démarrer le débogage** pour exécuter l’application dans le contexte du [Débogueur Visual Studio](../python/debugging-python-in-visual-studio.md), qui permet de définir des points d’arrêt, d’examiner les variables et de parcourir le code ligne par ligne. Les applications risquent de s’exécuter plus lentement dans le débogueur à cause des hooks qui permettent le débogage. **Démarrer sans débogage**, à l’inverse, exécute directement l’application comme si elle était lancée en ligne de commande, sans contexte de débogage ; par ailleurs, il ouvre automatiquement un navigateur et accède à l’URL spécifiée dans l’onglet **Déboguer** des propriétés du projet.
 
 ## <a name="next-steps"></a>Étapes suivantes
 

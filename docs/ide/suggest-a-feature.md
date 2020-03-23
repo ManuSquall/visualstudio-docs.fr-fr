@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 3af6d0b7b9f211fb9d0aa0a4b9a96b618081b89e
-ms.sourcegitcommit: 2148f3fd69569d8ec54fd21a66370932ce610ce4
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/05/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74853514"
 ---
 # <a name="suggest-a-feature-for-visual-studio"></a>Proposer une fonctionnalité pour Visual Studio
@@ -27,7 +27,7 @@ Vous pouvez également démarrer une suggestion de fonctionnalité directement �
 
 Choisissez **Fournir une suggestion** pour accéder à [Communauté de développeurs](https://developercommunity.visualstudio.com), où vous pouvez entrer votre suggestion.
 
-## <a name="user-voice"></a>UserVoice
+## <a name="user-voice"></a>User Voice
 
 Jusqu’à présent, les utilisateurs de Visual Studio proposaient des idées de nouvelles fonctionnalités sur UserVoice. En ajoutant la fonctionnalité *Suggérer une fonctionnalité* sur la Communauté des développeurs, tous vos commentaires à l’équipe produit Visual Studio se trouvent désormais au même endroit.
 
@@ -101,7 +101,7 @@ Vous avez trouvé les informations que nous recherchions ? Vous pouvez à ce mo
 
 - - -
 
-## <a name="faq"></a>Forum aux questions
+## <a name="faq"></a>Questions fréquentes (FAQ)
 
 ### <a name="why-cant-i-see-my-user-voice-idea-in-developer-community"></a>Pourquoi mon idée UserVoice n’apparaît-elle pas dans la Communauté des développeurs ?
 

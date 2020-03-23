@@ -10,10 +10,10 @@ ms.workload:
 - multiple
 author: mikejo5000
 ms.openlocfilehash: bd6e9b2d9ea408e451b7032a00c3c96fb0ef2b58
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75566824"
 ---
 # <a name="use-azure-test-plans-instead-of-lab-management-for-automated-testing"></a>Utiliser Azure Test Plans au lieu de Lab Management pour les tests automatisés
@@ -26,7 +26,7 @@ Microsoft Test Manager et Lab Management se basent sur une définition de build 
 
 | Étapes | Avec une build XAML | Dans une build ou une mise en production |
 |-------|----------------------|-----------------|
-| Identifiez les machines sur lesquelles déployer la build et exécutez les tests. | Créez un environnement lab standard dans Microsoft Test Manager avec ces machines. | N/A |
+| Identifiez les machines sur lesquelles déployer la build et exécutez les tests. | Créez un environnement lab standard dans Microsoft Test Manager avec ces machines. | n/a |
 | Identifiez les tests à exécuter. | Créez une suite de tests dans Microsoft Test Manager, créez des cas de test et associez une automatisation à chaque cas de test. Créez des paramètres de test dans Microsoft Test Manager en identifiant le rôle des machines dans l’environnement lab dans lequel les tests doivent être exécutés. | Créez de la même façon une suite de tests automatisés dans Microsoft Test Manager si vous prévoyez de gérer vos tests via des plans de test. Vous pouvez aussi ignorer cette étape si vous voulez exécuter des tests directement à partir des fichiers binaires de test produits par vos générations. Il n’est pas nécessaire de créer des paramètres de test dans les deux cas. |
 | Automatisez le déploiement et les tests. | Créez une définition de build XAML en utilisant LabDefaultTemplate.*.xaml. Spécifiez la build, les suites de tests et l’environnement lab dans la définition de build. | Créez un [pipeline de build ou de mise en production](/azure/devops/pipelines/index?view=vsts) avec un seul environnement. Exécutez le même script de déploiement (à partir de la définition de build XAML) en utilisant la tâche de ligne de commande, et exécutez les tests automatisés en utilisant les tâches Déploiement de l’agent de test et Exécuter les tests fonctionnels. Spécifiez la liste des machines et leurs informations d’identification comme entrées pour ces tâches. |
 

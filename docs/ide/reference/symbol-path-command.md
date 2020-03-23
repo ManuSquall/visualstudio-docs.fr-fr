@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: ed8ec8e7f990a4a2c5d943a15a105faa5ab23572
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75589381"
 ---
 # <a name="symbol-path-command"></a>Chemin d’accès aux symboles, commande
@@ -33,19 +33,19 @@ Debug.SymbolPath pathname1;pathname2;... pathnameN
 ## <a name="arguments"></a>Arguments
 `pathname`
 
-Option facultative. Liste de chemins délimités par des points-virgules dans laquelle le débogueur doit rechercher des symboles.
+facultatif. Liste de chemins délimités par des points-virgules dans laquelle le débogueur doit rechercher des symboles.
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Notes 
 Si aucun `pathname` n’est spécifié, la commande répertorie les chemins des symboles actuels.
 
-## <a name="example"></a>Exemple
+## <a name="example"></a> Exemple
 Cet exemple ajoute deux chemins à la liste des répertoires de symboles.
 
 ```
 Debug.SymbolPath C:\Symbol Path 1;C:\Symbol Path 2
 ```
 
-## <a name="example"></a>Exemple
+## <a name="example"></a> Exemple
 Cet exemple affiche une liste de chemins des symboles actuels délimités par des points-virgules.
 
 ```
@@ -54,5 +54,5 @@ Debug.SymbolPath
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Fenêtre Commande](../../ide/reference/command-window.md)
-- [Visual Studio, commandes](../../ide/reference/visual-studio-commands.md)
+- [Commande, fenêtre](../../ide/reference/command-window.md)
+- [Commandes de studio visuel](../../ide/reference/visual-studio-commands.md)

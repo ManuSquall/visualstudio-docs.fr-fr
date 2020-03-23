@@ -7,10 +7,10 @@ ms.date: 03/09/2020
 ms.topic: conceptual
 description: Découvrir comment utiliser les clés de produit pour prendre en charge les démonstrations Internet via les services Terminal Server et activer l’accès des Services Bureau à distance
 ms.openlocfilehash: c02bce8fe098c75f0405fdd4e9ba5f0f143401fa
-ms.sourcegitcommit: 514f0f7d1a61d292c7dbc80ec73a36bda960d6ce
+ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/09/2020
+ms.lasthandoff: 03/21/2020
 ms.locfileid: "78937460"
 ---
 # <a name="internet-demonstrations-via-terminal-services"></a>Démonstrations Internet via les services Terminal Server
@@ -19,7 +19,7 @@ Avec un abonnement Visual Studio, vous pouvez fournir un accès aux démonstrati
 Cela s’ajoute aux autorisations de développement et de test, qui permettent aux abonnés Visual Studio d’utiliser un nombre illimité de connexions aux services Terminal Server ou Bureau à distance.
 
 ## <a name="enabling-rds-access"></a>Activation de l’accès aux services Bureau à distance
-Les abonnés Visual Studio peuvent augmenter le nombre d’utilisateurs autorisés à accéder à Windows Server par le biais des services Bureau à distance en entrant une clé de produit fournie sous l’onglet [Clés de produit](https://my.visualstudio.com/productkeys?wt.mc_id=o~msft~docs) dans le [portail Abonné](https://my.visualstudio.com?wt.mc_id=o~msft~docs). Pour obtenir une clé de produit, connectez-vous à la page Clés de produit et faites défiler la page jusqu’à la version Windows Server que vous utilisez. Recherchez « Connexions < utilisateur ou appareil > aux services Bureau à distance Windows Server < version> R2 », puis cliquez sur le lien {3}Demander une clé{4}. Par exemple, si vous utilisez les services Bureau à distance sur Windows Server 2012 R2 et que votre déploiement utilise des CAL utilisateur, choisissez « Connexions utilisateurs aux services Bureau à distance Windows Server 2012 (50) ».
+Les abonnés Visual Studio peuvent augmenter le nombre d’utilisateurs autorisés à accéder à Windows Server par le biais des services Bureau à distance en entrant une clé de produit fournie sous l’onglet [Clés de produit](https://my.visualstudio.com/productkeys?wt.mc_id=o~msft~docs) dans le [portail Abonné](https://my.visualstudio.com?wt.mc_id=o~msft~docs). Pour obtenir une clé de produit, connectez-vous à la page Clés de produit et faites défiler la page jusqu’à la version Windows Server que vous utilisez. Recherchez « Connexions < utilisateur ou appareil > aux services Bureau à distance Windows Server < version> R2 », puis cliquez sur le lien Demander une clé. Par exemple, si vous utilisez les services Bureau à distance sur Windows Server 2012 R2 et que votre déploiement utilise des CAL utilisateur, choisissez « Connexions utilisateurs aux services Bureau à distance Windows Server 2012 (50) ».
 Cinq clés de chaque type sont disponibles pour Windows Server 2008 R2, et chaque clé prend en charge 20 connexions. Pour Windows Server 2012 R2, quatre clés de chaque type sont disponibles, et chaque clé prend en charge 50 connexions.
 
 ## <a name="to-enable-additional-connections-in-windows-server"></a>Pour activer des connexions supplémentaires dans Windows Server :
@@ -35,8 +35,8 @@ Les utilisateurs finaux peuvent utiliser les services Bureau à distance pour se
 - Les clés de produit permettant d’activer les connexions utilisateur doivent être obtenues par un abonné Visual Studio.
 
 ## <a name="see-also"></a>Voir aussi
-- [Documentation de Windows Server](https://docs.microsoft.com/windows-server/)
-- [Documentation de Visual Studio](https://docs.microsoft.com/visualstudio/)
+- [Documenation Windows Server](https://docs.microsoft.com/windows-server/)
+- [Documentation Visual Studio](https://docs.microsoft.com/visualstudio/)
 - [Documentation Azure DevOps](https://docs.microsoft.com/azure/devops/)
 - [Documentation Azure](https://docs.microsoft.com/azure/)
 - [Documentation Microsoft 365](https://docs.microsoft.com/microsoft-365/)

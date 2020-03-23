@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 4f13df00059523ca87e720a999c596e203b20e49
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75593679"
 ---
 # <a name="manage-assembly-and-manifest-signing"></a>Gérer la signature d’assemblys et de manifestes
@@ -29,7 +29,7 @@ Un nom fort est constitué de l’identité de l’assembly (simple nom textuel,
 
 Pour plus d’informations sur la signature d’assemblys dans les projets Visual Basic et C#, consultez [Créer et utiliser des assemblys avec nom fort](/dotnet/framework/app-domains/create-and-use-strong-named-assemblies).
 
-Pour plus d’informations sur la C++ signature d’assemblys dans les projets, consultez [assemblys avec nom fortC++(/CLI)](/cpp/dotnet/strong-name-assemblies-assembly-signing-cpp-cli).
+Pour plus d’informations sur la signature d’assemblages dans les projets C, voir [assemblées nommées par Strong (C/CLI).](/cpp/dotnet/strong-name-assemblies-assembly-signing-cpp-cli)
 
 > [!NOTE]
 > La signature avec nom fort ne protège pas l’assembly contre l’ingénierie à rebours. Pour se protéger de l’ingénierie à rebours, consultez [Dotfuscator Community](dotfuscator/index.md).
@@ -38,13 +38,13 @@ Pour plus d’informations sur la C++ signature d’assemblys dans les projets, 
 
 Vous pouvez signer les manifestes d’application et les assemblys .NET :
 
-- Exécutables ( *.exe*)
+- Exécutables (*.exe*)
 
-- Manifestes d’application ( *.exe.manifest*)
+- Manifestes d’application (*.exe.manifest*)
 
-- Manifestes de déploiement ( *.application*)
+- Manifestes de déploiement (*.application*)
 
-- Assemblys de composants partagés ( *.dll*)
+- Assemblys de composants partagés (*.dll*)
 
 Signez les types de composants suivants :
 
@@ -73,5 +73,5 @@ Pour plus d’informations sur la signature des manifestes, consultez [Guide pra
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Assemblys avec nom fort](/dotnet/framework/app-domains/strong-named-assemblies)
+- [Assemblées de bien-être](/dotnet/framework/app-domains/strong-named-assemblies)
 - [Assemblys avec nom fort (C++/CLI)](/cpp/dotnet/strong-name-assemblies-assembly-signing-cpp-cli)

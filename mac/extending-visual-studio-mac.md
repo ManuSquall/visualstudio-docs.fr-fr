@@ -7,10 +7,10 @@ ms.date: 12/20/2019
 ms.technology: vs-ide-sdk
 ms.assetid: D5245AB0-8404-426B-B538-F49125E672B2
 ms.openlocfilehash: 30826f68be1ef2f29940c8f9c95b2b79435e0a2a
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "75852037"
 ---
 # <a name="extending-visual-studio-for-mac"></a>Extension de Visual Studio pour Mac
@@ -23,12 +23,12 @@ Pour personnaliser Visual Studio pour Mac, vous pouvez créer un package d’ext
 
 ![Architecture des compléments](media/extending-visual-studio-mac-addin1.png)
 
-Pour qu’un package d’extension soit créé à partir de Visual Studio pour Mac, il doit avoir des extensions qui sont créées à partir de points d’extension préexistants dans l’IDE Visual Studio pour Mac. Quand un package d’extension s’appuie sur un point d’extension défini dans un hôte de compléments, il a une _dépendance_ par rapport au package d’extension.
+Pour qu’un package d’extension soit créé à partir de Visual Studio pour Mac, il doit avoir des extensions qui sont créées à partir de points d’extension préexistants dans l’IDE Visual Studio pour Mac. Lorsqu’un paquet d’extension repose sur un point d’extension défini dans un hôte add-in, il est dit avoir une _dépendance_ à ce paquet d’extension.
 
 L’avantage de cette conception modulaire est que Visual Studio pour Mac est extensible : il existe de nombreux points d’extension sur lesquels peuvent être créés des packages d’extension personnalisés. La prise en charge de C# et de F#, des outils de débogage et des modèles de projet sont des exemples de packages d’extension existants.
 
 > [!NOTE]
-> Si vous avez un projet de création de compléments qui a été créé avant Add-in Maker 1,2, vous devez migrer votre projet comme indiqué dans les étapes [ci-dessous](https://mhut.ch/addinmaker/1.2).
+> Si vous avez un projet Add-in Maker créé avant Add-in Maker 1.2, vous devez migrer votre projet comme indiqué dans les étapes décrites [ici](https://mhut.ch/addinmaker/1.2).
 
 <!---The [Walkthrough](~/extending-visual-studio-mac-walkthrough.md) topic explains how to build an extension package that uses a *Command* to insert the date and time into an open text document.--->
 
@@ -36,7 +36,7 @@ Cette section présente les différents fichiers générés par Add-in Maker et 
 
 ## <a name="attribute-files"></a>Fichiers d’attributs
 
-Les packages d’extension stockent des métadonnées sur leur nom, leur version, leurs dépendances et d’autres informations dans des attributs C#. Add-in Maker crée deux fichiers, `AddinInfo.cs` et `AssemblyInfo.cs`, pour stocker et organiser ces informations. Les packages d’extension doivent avoir un ID et un espace de noms uniques spécifiés dans leur *attribut `Addin`*  :
+Les packages d’extension stockent des métadonnées sur leur nom, leur version, leurs dépendances et d’autres informations dans des attributs C#. Add-in Maker crée deux fichiers, `AddinInfo.cs` et `AssemblyInfo.cs`, pour stocker et organiser ces informations. Les paquets d’extension doivent avoir * `Addin` *un ID unique et un espace de nom spécifiés dans leur attribut :
 
 ```csharp
 [assembly:Addin (
@@ -155,7 +155,7 @@ Pour plus d’informations sur l’étendue de ce qui peut faire l’objet de d�
 * Versions cibles de .NET Framework
 * Runtime cible
 * Back-ends de système de contrôle de version
-* Refactoring
+* Refactorisation
 * Gestionnaires d’exécution
 * Mise en surbrillance de la syntaxe
 
@@ -180,13 +180,13 @@ Avant de nous pencher sur les détails de l’extension spécifique à Visual St
 * [Points d’extension du service de langage et de l’éditeur](/visualstudio/extensibility/language-service-and-editor-extension-points)
 * [Une vidéo de présentation de l’architecture de l’éditeur](https://www.youtube.com/watch?v=PkYVztKjO9A)
 
-Avec ces ressources à portée de main, les principaux concepts avez lesquels vous devez vous familiariser sont [`ITextBuffer`](/dotnet/api/microsoft.visualstudio.text.itextbuffer) et [`ITextView`](/dotnet/api/microsoft.visualstudio.text.editor.itextview) :
+Avec ces ressources en main, les concepts primaires que [`ITextBuffer`](/dotnet/api/microsoft.visualstudio.text.itextbuffer) vous [`ITextView`](/dotnet/api/microsoft.visualstudio.text.editor.itextview)devez connaître sont un et un :
 
 * Un `ITextBuffer` est une représentation de texte en mémoire qui peut être modifiée au fil du temps. La propriété `CurrentSnapshot` sur `ITextBuffer` retourne une représentation *immuable* du contenu actuel de la mémoire tampon, une instance de `ITextSnapshot`. Lorsqu’une modification est effectuée sur la mémoire tampon, la propriété CurrentSnapshot est mise à jour vers la dernière version. Les analyseurs peuvent inspecter l’instantané de texte sur n’importe quel thread et son contenu a l’assurance de ne jamais changer.
 
 * Un `ITextView` est la représentation de l’interface utilisateur de la façon dont `ITextBuffer` est rendu sur un écran dans le contrôle d'édition. Il contient une référence à sa mémoire tampon de texte, ainsi que `Caret`, `Selection` et d’autres concepts liés à l’interface utilisateur.
 
-Pour un [`MonoDevelop.Ide.Gui.Document`](http://source.monodevelop.com/#MonoDevelop.Ide/MonoDevelop.Ide.Gui/Document.cs,4e960d4735f089b5) donné, vous pouvez récupérer les `ITextBuffer` et `ITextView` sous-jacents associés via `Document.GetContent<ITextBuffer>()` et `Document.GetContent<ITextView>()` respectivement.
+Pour une [`MonoDevelop.Ide.Gui.Document`](http://source.monodevelop.com/#MonoDevelop.Ide/MonoDevelop.Ide.Gui/Document.cs,4e960d4735f089b5)donnée, vous pouvez `ITextBuffer` `ITextView` récupérer `Document.GetContent<ITextBuffer>()` `Document.GetContent<ITextView>()` le sous-jacent associé et via et respectivement.
 
 ## <a name="additional-information"></a>Informations supplémentaires
 

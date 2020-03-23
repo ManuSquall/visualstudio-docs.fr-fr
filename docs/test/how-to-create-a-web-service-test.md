@@ -11,21 +11,21 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 7a6e42d6d92a74a0fc8be96c966b9146b7888b9e
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75589095"
 ---
 # <a name="how-to-create-a-web-service-test"></a>Guide pratique pour créer un test de service web
 
-Vous pouvez utiliser un test de performances web pour tester des services web. À l’aide des options **Insérer une requête** et **Insérer une requête de service web**, vous pouvez personnaliser les requêtes individuelles dans **l’éditeur de test de performances web** pour localiser des pages de service web. En général, vous n'affichez pas ces pages dans l'application web. Par conséquent, vous devez personnaliser la requête pour accéder à ces pages.
+Vous pouvez utiliser un test de performances web pour tester des services web. En utilisant les options **De demande d’insertion** et **d’insérer** sur les demandes de service Web, vous pouvez personnaliser les demandes individuelles dans l’éditeur **de tests de performance Web** pour localiser les pages de service Web. En général, vous n'affichez pas ces pages dans l'application web. Par conséquent, vous devez personnaliser la requête pour accéder à ces pages.
 
 [!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 Les procédures suivantes utilisent un service web contenu dans le Starter Kit Commerce. Vous pouvez le télécharger à partir du lien [Starter Kit ASP.NET Commerce](https://sourceforge.net/projects/ppcsk/).
 
-**Spécifications**
+**Configuration requise**
 
 Visual Studio Enterprise
 
@@ -33,9 +33,9 @@ Visual Studio Enterprise
 
 1. Créez un test de performances web. Dès que le navigateur s’ouvre, choisissez **Arrêter**.
 
-2. Dans **l’éditeur de test de performances web**, cliquez avec le bouton droit sur le test de performances web et sélectionnez **Ajouter une requête de service web**.
+2. Dans **l’éditeur de test de performance Web**, cliquez à droite sur le test de performance web et **sélectionnez Ajouter la demande de service Web**.
 
-3. Dans la propriété **Url** de la nouvelle requête, tapez le nom du service web, par exemple **http://localhost/storecsvs/InstantOrder.asmx** .
+3. Dans la propriété **Url** de la nouvelle requête, tapez le nom du service web, par exemple **http://localhost/storecsvs/InstantOrder.asmx**.
 
 4. Ouvrez une session distincte du navigateur et tapez l’URL de la page *.asmx* dans la barre d’outils **Adresse**. Sélectionnez la méthode à tester et examinez le message SOAP. Il contient un `SOAPAction`.
 
@@ -64,15 +64,15 @@ Visual Studio Enterprise
 
 10. Vous devez remplacer toutes les valeurs d'espace réservé par des valeurs valides pour que le test réussisse. Dans l'exemple précédent, vous devez remplacer les deux instances de `string` et un `int`. Cette opération de service web ne se termine que si un utilisateur inscrit passe une commande.
 
-11. Cliquez avec le bouton droit sur la requête de service web et sélectionnez **Ajouter un paramètre QueryString d’URL**.
+11. Cliquez à droite sur la demande de service Web et **sélectionnez Ajouter url QueryString Paramètre**.
 
 12. Assignez un nom et une valeur au paramètre de chaîne de requête. Dans l’exemple précédent, le nom est `op` et la valeur `CheckStatus`. Cela identifie l'opération de service web à exécuter.
 
     > [!NOTE]
     > Vous pouvez utiliser la liaison de données dans le corps SOAP pour remplacer n'importe quelle valeur d'espace réservé par des valeurs liées aux données à l'aide de la syntaxe `{{DataSourceName.TableName.ColumnName}}`.
 
-13. Exécuter le test. Dans le volet supérieur de l'**Afficheur des résultats des tests de performances web**, sélectionnez la requête de service web. Dans le volet inférieur, sélectionnez l’onglet navigateur Web. Le code XML retourné par le service Web, ainsi que les résultats de toutes les opérations, s’affichent.
+13. Exécutez le test. Dans le volet supérieur de l'**Afficheur des résultats des tests de performances web**, sélectionnez la requête de service web. Dans la vitre inférieure, sélectionnez l’onglet Navigateur Web. Le XML qui est retourné par le service Web, et les résultats de toutes les opérations, seront affichés.
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Créer du code et des plug-ins personnalisés pour les tests de charge](../test/create-custom-code-and-plug-ins-for-load-tests.md)
+- [Créer un code et des plug-ins personnalisés pour les tests de charge](../test/create-custom-code-and-plug-ins-for-load-tests.md)

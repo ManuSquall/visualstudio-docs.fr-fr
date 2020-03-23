@@ -25,10 +25,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 77f224a6e3a1b12ed17799ddf6a2fc5c23f5d4cc
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75591032"
 ---
 # <a name="how-to-manage-editor-modes"></a>Guide pratique pour gérer les modes de l’éditeur
@@ -36,15 +36,15 @@ ms.locfileid: "75591032"
 Vous pouvez afficher l’éditeur de code Visual Studio dans différents modes d’affichage.
 
 > [!NOTE]
-> Les boîtes de dialogue et les commandes de menu qui s’affichent peuvent être différentes de celles qui sont décrites dans cet article, en fonction de vos paramètres actifs ou de l’édition utilisée. Pour modifier vos paramètres, par exemple pour définir les paramètres **Général** ou **Visual C++** , choisissez **Outils** > **Importation et exportation de paramètres**, puis choisissez **Réinitialiser tous les paramètres**.
+> Les boîtes de dialogue et les commandes de menu qui s’affichent peuvent être différentes de celles qui sont décrites dans cet article, en fonction de vos paramètres actifs ou de l’édition utilisée. Pour modifier vos paramètres, par exemple pour définir les paramètres **Général** ou **Visual C++**, choisissez **Outils** > **Importation et exportation de paramètres**, puis choisissez **Réinitialiser tous les paramètres**.
 
 ## <a name="enable-full-screen-mode"></a>Activer le mode Plein écran
 
-Vous pouvez choisir de masquer toutes les fenêtres Outil et d’afficher uniquement les fenêtres de document en activant le mode **Plein écran**.
+Vous pouvez choisir de masquer toutes les fenêtres d’outils et de ne visualiser que les fenêtres de documents en activant le mode **Plein Écran.**
 
-- Appuyez sur **Alt**+**Maj**+**Entrée** pour activer ou désactiver le mode **Plein écran**.
+- Appuyez **sur Alt**+**Shift**+**Entrez** ou sortez du mode **Plein Écran.**
 
-     – ou –
+     - ou -
 
 - Exécutez la commande `View.Fullscreen` dans la fenêtre **Commande**.
 
@@ -54,7 +54,7 @@ En mode **Espace virtuel**, des espaces sont insérés à la fin de chaque ligne
 
 1. Sélectionnez **Options** dans le menu **Outils**.
 
-2. Développez le dossier **Éditeur de texte** et choisissez **Tous les langages** pour définir cette option globalement, ou choisissez un dossier de langage spécifique. Par exemple, pour activer les numéros de ligne uniquement dans Visual Basic, choisissez le nœud **Basic** > **Éditeur de texte**.
+2. Développez le dossier **Éditeur de texte** et choisissez **Tous les langages** pour définir cette option globalement, ou choisissez un dossier de langage spécifique. Par exemple, pour activer les numéros de ligne uniquement dans Visual Basic, choisissez le nœud **Basic** > **Text Editor.**
 
 3. Sélectionnez les options **Général**, puis, sous **Paramètres**, sélectionnez **Activer l’espace virtuel**.
 
@@ -64,4 +64,4 @@ En mode **Espace virtuel**, des espaces sont insérés à la fin de chaque ligne
 ## <a name="see-also"></a>Voir aussi
 
 - [Personnalisation des dispositions de fenêtres dans Visual Studio](../ide/customizing-window-layouts-in-visual-studio.md)
-- [Polices et couleurs, Environnement, boîte de dialogue Options](../ide/reference/fonts-and-colors-environment-options-dialog-box.md)
+- [Fonts and Colors, Environment, Options dialog box](../ide/reference/fonts-and-colors-environment-options-dialog-box.md)

@@ -29,10 +29,10 @@ manager: jillfra
 ms.workload:
 - uwp
 ms.openlocfilehash: cec66cdb2de3f89358cd0ee90867154cc374a7fd
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75568202"
 ---
 # <a name="options-text-editor-xaml-miscellaneous"></a>Options, Éditeur de texte, XAML, Divers
@@ -46,8 +46,8 @@ Ce paramètre permet de contrôler à quel moment les balises et les guillemets 
 |||
 |-|-|
 |**Balises de fermeture**|Spécifie si la balise de fermeture d’un élément est générée automatiquement quand vous fermez la balise d’ouverture avec le signe supérieur à (>).|
-|**Guillemets d’attribut**|Spécifie si les guillemets de fermeture sont générés quand vous sélectionnez une valeur d’attribut dans la liste déroulante de saisie semi-automatique de l’instruction.|
-|**Accolades fermantes pour MarkupExtensions**|Spécifie si l’accolade fermante d’une extension de balisage ( **}** ) est générée automatiquement quand vous tapez le caractère d’accolade ouvrante ( **{** ).|
+|**Guillemets d'attribut**|Spécifie si les guillemets de fermeture sont générés quand vous sélectionnez une valeur d’attribut dans la liste déroulante de saisie semi-automatique de l’instruction.|
+|**Accolades fermantes pour MarkupExtensions**|Précise si l’accolade de clôture d’une extension de balisage**est**générée automatiquement lorsque vous tapez le caractère d’accolade d’ouverture **(**.|
 |**Virgules pour séparer les paramètres MarkupExtension**|Spécifie si des virgules sont générées quand vous tapez plusieurs paramètres dans une extension de balisage.|
 
 ## <a name="errors-and-warnings"></a>Erreurs et avertissements

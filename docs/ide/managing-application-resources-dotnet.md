@@ -18,10 +18,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: e53c3701e31733c54869c71820956d674ed4fb8b
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75593692"
 ---
 # <a name="manage-application-resources-net"></a>Gérer les ressources d’une application (.NET)
@@ -31,17 +31,17 @@ Les fichiers de ressources sont des fichiers qui font partie d’une application
 > [!NOTE]
 > Cette rubrique s’applique à Visual Studio sur Windows. Pour Visual Studio pour Mac, consultez [Gestion des ressources d’application (Visual Studio pour Mac)](/visualstudio/mac/managing-app-resources).
 
-Pour plus d’informations sur les ressources des applications de bureau .NET, consultez [Ressources dans des applications de bureau](/dotnet/framework/resources/index).
+Pour plus d’informations sur les ressources dans les applications de bureau .NET, voir [Ressources dans les applications de bureau](/dotnet/framework/resources/index).
 
 ## <a name="work-with-resources"></a>Utiliser des ressources
 
 Dans un projet de code managé, ouvrez la fenêtre de propriétés du projet. Vous pouvez ouvrir la fenêtre de propriétés en procédant de l’une des façons suivantes :
 
-- En cliquant avec le bouton droit sur le nœud du projet dans l’**Explorateur de solutions**, puis en sélectionnant **Propriétés**
+- En cliquant à droite sur le nœud du projet dans **Solution Explorer** et en sélectionnant les **propriétés**
 - En tapant **propriétés de projet** dans la zone de recherche **Ctrl**+**Q**
-- En choisissant **Alt**+**Entrée** dans **Explorateur de solutions**
+- Choisir **Alt**+**Entrez** dans **Solution Explorer**
 
-Sélectionnez l’onglet **ressources** . Vous pouvez ajouter un fichier *. resx* si votre projet n’en contient pas déjà un, ajouter et supprimer différents types de ressources, et modifier des ressources existantes.
+Sélectionnez l’onglet **Ressources.** Vous pouvez ajouter un fichier *.resx* si votre projet ne contient pas déjà un, ajouter et supprimer différents types de ressources, et modifier les ressources existantes.
 
 ## <a name="resources-in-other-project-types"></a>Ressources dans d’autres types de projets
 

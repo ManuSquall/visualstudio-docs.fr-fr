@@ -18,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2d977892956c90fd88ff913b9c9300b0176323a4
-ms.sourcegitcommit: 3ed59ce39692124fe61c484df4348c0b9abee9b9
+ms.openlocfilehash: 22d61fe30e9eb68697f073ca0bcfbcc515e513dd
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/04/2020
-ms.locfileid: "78263121"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79431447"
 ---
 # <a name="usingtask-element-msbuild"></a>Élément UsingTask (MSBuild)
 
@@ -41,7 +41,7 @@ Mappe la tâche référencée dans un élément [Task](../msbuild/task-element-m
 ```
 
 > [!NOTE]
-> Contrairement aux propriétés et aux éléments, le *premier* élément `UsingTask` qui s’applique à un `TaskName` est utilisé ; pour remplacer des tâches, vous devez définir une nouvelle `UsingTask` *avant* celle existante.
+> Contrairement aux propriétés et aux articles, le *premier* `UsingTask` élément qui s’applique à un `TaskName` sera utilisé; pour remplacer les tâches, `UsingTask` vous devez définir un nouveau *avant* l’existant.
 
 ## <a name="attributes-and-elements"></a>Attributs et éléments
 
@@ -68,9 +68,9 @@ Mappe la tâche référencée dans un élément [Task](../msbuild/task-element-m
 
 | Élément | Description |
 | - | - |
-| [Projet](../msbuild/project-element-msbuild.md) | Élément racine requis d’un fichier projet MSBuild. |
+| [Projet](../msbuild/project-element-msbuild.md) | Élément racine requis d’un fichier de projet MSBuild. |
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Notes 
 
  Les variables d'environnement, propriétés de ligne de commande, propriétés au niveau du projet et éléments au niveau du projet peuvent être référencés n'importe où dans les éléments `UsingTask` inclus dans le fichier projet, directement ou via un fichier projet importé. Pour plus d’informations, consultez l’article [Tâches MSBuild](../msbuild/msbuild-tasks.md).
 
@@ -79,7 +79,9 @@ Mappe la tâche référencée dans un élément [Task](../msbuild/task-element-m
 
  Dans MSBuild 4.0, les tâches peuvent être chargées à partir de fichiers *.overridetask*.
 
-## <a name="example"></a>Exemple
+L’assemblage contenant la tâche `Task` personnalisée est chargé lorsque l’est utilisé pour la première fois.
+
+## <a name="example"></a> Exemple
 
  L'exemple suivant montre comment utiliser l'élément `UsingTask` avec un attribut `AssemblyName`.
 
@@ -96,7 +98,7 @@ Mappe la tâche référencée dans un élément [Task](../msbuild/task-element-m
 </UsingTask>
 ```
 
-## <a name="example"></a>Exemple
+## <a name="example"></a> Exemple
 
  L'exemple suivant montre comment utiliser l'élément `UsingTask` avec un attribut `AssemblyFile`.
 
@@ -107,6 +109,6 @@ Mappe la tâche référencée dans un élément [Task](../msbuild/task-element-m
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Tâches :](../msbuild/msbuild-tasks.md)
+- [Tâches](../msbuild/msbuild-tasks.md)
 - [Informations de référence sur les tâches](../msbuild/msbuild-task-reference.md)
-- [Informations de référence sur le schéma de fichier projet](../msbuild/msbuild-project-file-schema-reference.md)
+- [Référence du schéma de fichier de projet](../msbuild/msbuild-project-file-schema-reference.md)

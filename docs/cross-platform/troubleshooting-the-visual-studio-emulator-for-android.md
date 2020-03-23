@@ -13,10 +13,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 85a7748f25e284a7c746d5779b3d177a15e1d37b
-ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77272072"
 ---
 # <a name="troubleshoot-the-visual-studio-emulator-for-android"></a>Résoudre les problèmes de l’émulateur Visual Studio pour Android
@@ -29,54 +29,54 @@ Cette rubrique contient des informations pour vous aider à résoudre les probl�
 
 - [Avant de commencer](#BeforeYouStart)
 
-- [L’installation de l’émulateur échoue](#NoInstall)
+- [Emulateur ne parvient pas à installer](#NoInstall)
 
-- [Impossible de se connecter à des destinations réseau sur un domaine ou un réseau d'entreprise](#DomainNetwork)
+- [Impossible de se connecter à des destinations réseau sur un domaine ou un réseau d’entreprise](#DomainNetwork)
 
-- [Impossible de se connecter à des destinations réseau quand des paramètres réseau nécessitent une configuration manuelle](#ManualNetworkConfig)
+- [Impossible de se connecter à des destinations réseau lorsque les paramètres du réseau nécessitent une configuration manuelle](#ManualNetworkConfig)
 
-- [L'émulateur démarre lentement, son démarrage échoue à cause d'un dépassement de délai d'attente ou le déploiement d'application échoue](#SlowStart)
+- [Emulateur commence lentement, ne parvient pas à démarrer en raison d’un délai d’attente, ou le déploiement de l’application échoue](#SlowStart)
 
 - [Le démarrage de l'émulateur échoue](#NoStart2)
 
-- [Emulator fails to start (first use)](#NoStart)
+- [Emulateur ne démarre pas (première utilisation)](#NoStart)
 
-- [Le démarrage de l'ordinateur échoue après l'installation de l'émulateur](#NoBoot)
+- [Ordinateur ne démarre pas après l’installation de l’émulateur](#NoBoot)
 
-- [Visual Studio se bloque en essayant de déployer l’application sur l’émulateur, ou l’émulateur n’apparaît pas comme cible de débogage dans d’autres IDE](#ADB)
+- [Visual Studio est coincé en essayant de déployer l’application à l’émulateur ou l’émulateur n’apparaît pas comme une cible de débogé dans d’autres IDE](#ADB)
 
 - [L’émulateur se bloque, car il n’a pas pu configurer le port UDP](#XamarinPlayer)
 
 - [Impossible d’attacher le débogueur à un projet Xamarin](#Skylake)
 
-- [L’émulateur ne parvient pas à exécuter une application qui utilise Google Play Services](#GooglePlay)
+- [L'émulateur ne parvient pas à exécuter une application qui utilise les services Google Play](#GooglePlay)
 
 - [Le glisser-déplacer de fichier, APK ou fichier zip pouvant être flashé ne fonctionne pas](#DragAndDrop)
 
-- [La résolution de capture d'écran est incorrecte](#Resolution)
+- [La résolution de la capture d’écran est incorrecte](#Resolution)
 
 - [L'émulateur ne parvient pas à afficher le contenu OpenGL](#OpenGL)
 
-- [L'émulateur ne répond pas aux entrées tactiles multipoints](#Multitouch)
+- [L’émulateur ne répond pas aux gestes multi-touch](#Multitouch)
 
-- [Ressources de support technique](#Support)
+- [Ressources de soutien](#Support)
 
-## <a name="BeforeYouStart"></a> Avant de commencer
+## <a name="before-you-start"></a><a name="BeforeYouStart"></a>Avant de commencer
  Avant de commencer le dépannage, il peut être utile de consulter les rubriques suivantes :
 
-- [Configuration requise pour l’Émulateur Visual Studio pour Android](../cross-platform/system-requirements-for-the-visual-studio-emulator-for-android.md)
+- [Exigences système pour l’émulateur visual studio pour Android](../cross-platform/system-requirements-for-the-visual-studio-emulator-for-android.md)
 
-## <a name="NoInstall"></a> L’installation de l’émulateur échoue
+## <a name="emulator-fails-to-install"></a><a name="NoInstall"></a> L’installation de l’émulateur échoue
  Si vous n’avez pas installé Hyper-V, le message suivant s’affiche quand vous essayez d’installer l’émulateur. Effectuez l’installation sur une machine qui prend en charge Hyper-V et sur laquelle Hyper-V est activé.
 
- ![Problème&#95;d'&#95;installation&#95;d’Android u.m.e.](../cross-platform/media/android_emu_install_issue.png "Android_Emu_Install_Issue")
+ ![Android&#95;Emu&#95;installer&#95;problème](../cross-platform/media/android_emu_install_issue.png "Android_Emu_Install_Issue")
 
 > [!NOTE]
 > Ce message concerne à la fois l’émulateur Visual Studio pour Android et l’émulateur Windows Phone. Windows 8.1 et Windows 10 prennent en charge l’émulateur.
 
- Si vous voyez ce message, consultez [System requirements for the Visual Studio Emulator for Android](../cross-platform/system-requirements-for-the-visual-studio-emulator-for-android.md) pour vérifier si vous pouvez exécuter l’émulateur.
+ Si vous voyez ce message, vérifiez les [exigences du système pour l’émulateur visual studio pour Android pour](../cross-platform/system-requirements-for-the-visual-studio-emulator-for-android.md) voir si vous pouvez exécuter l’émulateur.
 
-## <a name="DomainNetwork"></a> Impossible de se connecter à des destinations réseau sur un domaine ou un réseau d'entreprise
+## <a name="cannot-connect-to-network-destinations-on-a-domain-or-corporate-network"></a><a name="DomainNetwork"></a> Impossible de se connecter à des destinations réseau sur un domaine ou un réseau d'entreprise
  L'Émulateur Visual Studio pour Android apparaît sur le réseau comme une unité distincte avec sa propre adresse IP. Il n'est pas joint à un domaine Windows et ne partage pas d'informations d'identification de domaine ou de groupe de travail avec l'ordinateur hôte.
 
  Si votre réseau nécessite une autorisation de domaine ou de groupe de travail pour la connectivité réseau de base et Internet, contactez votre administrateur informatique pour créer une exception. Cette exception permet à votre ordinateur de développement de servir d'ordinateur de limite et d'accepter les connexions en provenance de périphériques réseau non liés à un domaine, comme l'émulateur.
@@ -93,16 +93,16 @@ Cette rubrique contient des informations pour vous aider à résoudre les probl�
 
 4. Dans la page Réseau, recherchez les entrées d'adresses physiques.
 
-## <a name="ManualNetworkConfig"></a> Impossible de se connecter à des destinations réseau quand des paramètres réseau nécessitent une configuration manuelle
+## <a name="cannot-connect-to-network-destinations-when-network-settings-require-manual-configuration"></a><a name="ManualNetworkConfig"></a> Impossible de se connecter à des destinations réseau quand des paramètres réseau nécessitent une configuration manuelle
  Pour vous connecter à des destinations réseau à partir de l'émulateur, votre réseau doit remplir les conditions suivantes :
 
-- DHCP. L’émulateur nécessite le protocole DHCP, car il se configure lui-même comme périphérique distinct sur le réseau avec sa propre adresse IP.
+- DHCP. L'émulateur nécessite le protocole DHCP, car il se configure lui-même comme périphérique distinct sur le réseau avec sa propre adresse IP.
 
 - Paramètres DNS et de passerelle configurés automatiquement. Vous ne pouvez pas configurer les paramètres DNS et de passerelle manuellement pour l’émulateur.
 
   Si votre réseau nécessite des paramètres configurés manuellement, contactez votre administrateur informatique pour déterminer comment activer la connectivité réseau pour l'émulateur.
 
-## <a name="SlowStart"></a> L’émulateur démarre lentement, son démarrage échoue en raison d’un dépassement de délai d’attente ou d’un échec de déploiement d’application
+## <a name="emulator-starts-slowly-fails-to-start-due-to-a-timeout-or-app-deployment-fails"></a><a name="SlowStart"></a> L'émulateur démarre lentement, son démarrage échoue à cause d'un dépassement de délai d'attente ou le déploiement d'application échoue
  Dans certaines conditions, le démarrage de l'émulateur prend plusieurs minutes ou échoue à cause d'un dépassement de délai d'attente. Quand le démarrage de l'émulateur échoue, le message suivant s'affiche : `App deployment failed. Please try again`. Les conditions suivantes peuvent provoquer cette erreur.
 
 - Exécution de l'Émulateur Visual Studio pour Android à partir d'un disque dur virtuel démarrable. Cette configuration n’est pas prise en charge.
@@ -117,7 +117,7 @@ Cette rubrique contient des informations pour vous aider à résoudre les probl�
 
 - En règle générale, tout facteur qui contribue à de mauvaises performances sur le système. Commencez le dépannage par le composant dont le sous-score est le plus faible dans l'Indice de performance Windows, que vous trouverez dans la page Informations et outils de performances du Panneau de configuration.
 
-## <a name="NoStart2"></a> Le démarrage de l'émulateur échoue
+## <a name="emulator-fails-to-start"></a><a name="NoStart2"></a>Emulateur ne démarre pas
  Si l’émulateur ne démarre pas alors qu’il fonctionnait auparavant, effectuez les étapes suivantes. Si vous utilisez l’émulateur pour la première fois, consultez [Emulator fails to start (first use)](#NoStart) avant d’essayer ces étapes.
 
 - Supprimez toutes les autres instances Hyper-V de l’émulateur.
@@ -134,13 +134,13 @@ Cette rubrique contient des informations pour vous aider à résoudre les probl�
 
 - Dans le Gestionnaire Hyper-V, ouvrez le Gestionnaire de commutateur virtuel et vérifiez que vous disposez de deux commutateurs réseau. Vérifiez aussi que le premier correspond au commutateur interne et le second au commutateur externe.
 
-     ![Android&#95;UME&#95;V&#95;-&#95;changer Man](../cross-platform/media/android_emu_v_switch_man.png "Android_Emu_V_Switch_Man")
+     ![Android&#95;Emu&#95;V&#95;Switch&#95;Man](../cross-platform/media/android_emu_v_switch_man.png "Android_Emu_V_Switch_Man")
 
      Si le programme d’installation ne fonctionne pas correctement sur Windows 10, essayez de [réinstaller les périphériques réseau à l’aide de la commande netcfg -d](https://support.microsoft.com/help/10741/windows-fix-network-connection-issues) (section 6).
 
 - Si ces étapes ne résolvent pas le problème, consultez [Emulator fails to start (first use)](#NoStart) pour obtenir des informations sur les logiciels tiers susceptibles d’interférer avec l’émulateur.
 
-## <a name="NoStart"></a> Emulator fails to start (first use)
+## <a name="emulator-fails-to-start-first-use"></a><a name="NoStart"></a> Emulator fails to start (first use)
  Si l'émulateur ne démarre pas, effectuez les tâches suivantes pour identifier et résoudre le problème.
 
 - Assurez-vous que la configuration matérielle requise est satisfaite et que les paramètres du BIOS sont corrects.
@@ -181,7 +181,7 @@ Cette rubrique contient des informations pour vous aider à résoudre les probl�
 
   6. Vérifiez que vous exécutez Windows 8 Professionnel ou mieux (Windows Server 2008 n'est pas pris en charge). Windows Server 2012 est pris en charge, mais vous devez activer la fonctionnalité Expérience utilisateur.
 
-     Vous pouvez inspecter l'Observateur d'événements pour voir s'il existe des erreurs liées à l'hyperviseur. Pour cela, ouvrez l’observateur d’événements (**touche Windows**+**R**, puis tapez `eventvwr`), puis sélectionnez **Journaux Windows**, **Système**. Ensuite, filtrez le journal par source d'événements, en définissant **Hyperviseur Hyper-V**comme source. Recherchez les erreurs pour aider à identifier la cause initiale.
+     Vous pouvez inspecter l'Observateur d'événements pour voir s'il existe des erreurs liées à l'hyperviseur. Pour ce faire, ouvrez Event Viewer `eventvwr`( Démarrer la**clé**+**R**, puis tapez ) puis sélectionnez **Windows Logs**, **Système**. Ensuite, filtrez le journal par source d'événements, en définissant **Hyperviseur Hyper-V**comme source. Recherchez les erreurs pour aider à identifier la cause initiale.
 
      Si votre processeur satisfait à la configuration requise mais que l'hyperviseur échoue encore, vérifiez si une mise à niveau du BIOS est disponible pour votre ordinateur. Si c'est le cas et que vous choisissez de mettre à niveau, veillez à respecter toutes les précautions du fabricant lors de la mise à niveau du BIOS (par exemple, assurez-vous que la mise à niveau du microprogramme BIOS n'est pas interrompue par une panne de courant, ce qui peut altérer définitivement le BIOS).
 
@@ -195,7 +195,7 @@ Cette rubrique contient des informations pour vous aider à résoudre les probl�
 
    Les produits suivants peuvent nécessiter une mise à niveau pour la compatibilité avec Windows 8 : VirtualBox, Virtual PC 7, VMWare, certains clients VPN, pare-feu logiciels, versions de clients VPN Cisco et autres systèmes de virtualisation. Collaborez avec le développeur du logiciel de virtualisation en question pour l'inciter à mettre à niveau le logiciel pour le rendre compatible avec Windows 8 et Hyper-V.
 
-   En guise de *solution de contournement*, vous pouvez désactiver tous les pilotes et applications tiers susceptibles d’interférer avec le réseau virtuel utilisé par l’émulateur pour communiquer avec Visual Studio. Parmi celles-ci :
+   En tant que *solution de contournement,* vous pouvez désactiver tous les pilotes tiers et les applications qui peuvent interférer avec le réseau virtuel utilisé par l’émulateur pour communiquer avec Visual Studio. Parmi celles-ci :
 
   - d'applications antivirus (qui se raccordent à la pile réseau) ;
 
@@ -211,7 +211,7 @@ Cette rubrique contient des informations pour vous aider à résoudre les probl�
 
   2. Pour la carte vEthernet (port Ethernet interne - commutateur interne de l'émulateur Windows Phone), choisissez **Propriétés** dans le menu contextuel.
 
-      ![Carte virtuelle utilisée par Hyper&#45;-V](../cross-platform/media/android_emu_virtual_adapter.png "Android_Emu_Virtual_Adapter")
+      ![Adaptateur virtuel utilisé par Hyper&#45;V](../cross-platform/media/android_emu_virtual_adapter.png "Android_Emu_Virtual_Adapter")
 
       Les propriétés de la carte sont présentées ici.
 
@@ -227,13 +227,13 @@ Cette rubrique contient des informations pour vous aider à résoudre les probl�
 
      - Pilote de protocole LLDP Microsoft
 
-     - Pilote E/S de mappage de découverte de topologie de la couche de liaison
+     - Pilote E/S Mappage de découverte de couche liaison
 
-     - Pilote E/S de mappage de découverte de topologie de la couche de liaison
+     - Répondeur de découverte de la topologie de la couche de liaison
 
-     - Protocole IPv6 (TCP/IPv6)
+     - Protocole Internet version 6 (TCP/IPv6)
 
-     - Protocole IPv4 (TCP/IPv4)
+     - Protocole Internet version 4 (TCP/IPv4)
 
   4. Désactivez tous les autres éléments.
 
@@ -247,7 +247,7 @@ Cette rubrique contient des informations pour vous aider à résoudre les probl�
 
     Maintenant, lancez l'émulateur. Il devrait fonctionner.
 
-## <a name="NoBoot"></a> Le démarrage de l'ordinateur échoue après l'installation de l'émulateur
+## <a name="computer-fails-to-boot-after-installing-the-emulator"></a><a name="NoBoot"></a> Le démarrage de l'ordinateur échoue après l'installation de l'émulateur
  Ce problème peut se produire quand les conditions suivantes sont remplies :
 
 - Votre ordinateur dispose d'une carte mère Gigabyte.
@@ -258,18 +258,18 @@ Cette rubrique contient des informations pour vous aider à résoudre les probl�
 
   Pour plus d’informations, consultez l’article suivant de la Base de connaissances : [Échec de démarrage après l’installation du rôle Hyper-V sur les systèmes Gigabyte](https://support.microsoft.com/en-us/kb/2693144).
 
-## <a name="ADB"></a> Visual Studio se bloque en essayant de déployer l’application sur l’émulateur, ou l’émulateur n’apparaît pas comme cible de débogage dans d’autres IDE
+## <a name="visual-studio-gets-stuck-trying-to-deploy-the-app-to-the-emulator-or-the-emulator-does-not-appear-as-a-debug-target-in-other-ides"></a><a name="ADB"></a> Visual Studio se bloque en essayant de déployer l’application sur l’émulateur, ou l’émulateur n’apparaît pas comme cible de débogage dans d’autres IDE
  Si l’émulateur est en cours d’exécution mais ne semble pas être connecté à ADB (Android Debug Bridge) ou s’il ne figure pas parmi les outils Android qui utilisent ADB (par exemple, Android Studio ou Eclipse), vous devrez peut-être ajuster l’emplacement où l’émulateur recherche ADB. L'émulateur utilise une clé de Registre pour identifier l'emplacement de base de votre Kit de développement logiciel Android et il recherche le fichier \platform-tools\adb.exe sous ce répertoire. Pour modifier le chemin d'accès du Kit de développement logiciel Android utilisée par l'émulateur
 
 - Ouvrez l'Éditeur du Registre en sélectionnant **Exécuter** dans le menu contextuel du bouton Démarrer, en tapant `regedit` dans la boîte de dialogue et en choisissant **OK**.
 
-- Accédez à *HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Android SDK Tools* dans l’arborescence des dossiers sur la gauche.
+- Naviguez vers *HKEY_LOCAL_MACHINE-SOFTWARE-Wow6432Node-Android SDK Tools* dans l’arbre de dossier sur la gauche.
 
 - Modifiez la variable de Registre **Path** pour qu'elle corresponde au chemin d'accès à votre Kit de développement logiciel Android.
 
   Redémarrez l'émulateur. Il doit maintenant être connecté à ADB et aux outils Android associés.
 
-## <a name="XamarinPlayer"></a> L’émulateur se bloque, car il n’a pas pu configurer le port UDP
+## <a name="emulator-hangs-because-it-couldnt-set-up-the-udp-port"></a><a name="XamarinPlayer"></a>Emulateur pend parce qu’il ne pouvait pas mettre en place le port UDP
  Ce problème peut se produire à cause d’une incompatibilité avec Xamarin Player. Si l’émulateur ne répond plus ou si vous voyez s’afficher le message d’erreur « L’émulateur ne peut pas se connecter au système d’exploitation du périphérique : impossible de définir le port UDP.  Certaines fonctionnalités peuvent être désactivées. », il peut s’agir d’un problème de compatibilité. Effectuez les étapes suivantes.
 
 1. Désinstallez Xamarin Player.
@@ -280,14 +280,14 @@ Cette rubrique contient des informations pour vous aider à résoudre les probl�
 
 4. Après avoir supprimé toutes les cartes réseau (autres que les cartes réseau physiques), essayez de désinstaller/réinstaller Hyper-V.
 
-## <a name="Skylake"></a> Impossible d’attacher le débogueur à un projet Xamarin
+## <a name="cannot-attach-debugger-to-a-xamarin-project"></a><a name="Skylake"></a>Impossible d’attacher debugger à un projet Xamarin
  Si vous utilisez Windows 10 avec des processeurs Intel Skylake, il arrive que les applications Xamarin ne puissent pas s’exécuter dans l’émulateur ou que le débogueur Visual Studio ne puisse pas s’y attacher. Cela est dû à un problème entre Hyper-V et les processeurs Skylake. Pour résoudre le problème, procédez comme suit.
 
 1. Ouvrez le Gestionnaire Hyper-V et sélectionnez la machine virtuelle correspondant au profil d’émulateur utilisé.
 
 2. Sélectionnez **Supprimer l’état de mise en mémoire** (en bas à droite).
 
-3. Choisissez **Paramètres**
+3. Choisissez **Paramètres...**
 
 4. Développez le nœud du processeur et choisissez **Compatibilité**.
 
@@ -295,22 +295,22 @@ Cette rubrique contient des informations pour vous aider à résoudre les probl�
 
 6. Redémarrez le service (sous **Actions**), puis réessayez.
 
-## <a name="GooglePlay"></a> L’émulateur ne parvient pas à exécuter une application qui utilise Google Play Services
+## <a name="emulator-fails-to-run-app-that-uses-google-play-services"></a><a name="GooglePlay"></a>Emulator ne parvient pas à exécuter l’application qui utilise Google Play Services
  L'émulateur n'est pas fourni avec les bibliothèques nécessaires pour les services Google Play. En revanche, il prend en charge l'installation par glisser-déplacer des fichiers zip pouvant être flashés.
 
-## <a name="DragAndDrop"></a> Le glisser-déplacer de fichier, APK ou fichier zip pouvant être flashé ne fonctionne pas
+## <a name="drag-and-drop-of-a-file-apk-or-flashable-zip-file-does-not-work"></a><a name="DragAndDrop"></a>Drag and Drop d’un fichier, APK, ou fichier zip flashable ne fonctionne pas
  L'émulateur utilise ADB.exe pour faciliter le transfert de fichier quand vous glissez-déplacez un fichier à l'écran. Si vous rencontrez une erreur quand vous essayez de glisser-déplacer un fichier, cela indique probablement que l'émulateur n'est pas connecté à ADB.exe. Pour résoudre le problème, suivez les étapes décrites dans [Visual Studio se bloque en essayant de déployer l’application sur l’émulateur, ou l’émulateur n’apparaît pas comme cible de débogage dans d’autres IDE](#ADB).
 
-## <a name="Resolution"></a> La résolution de capture d'écran est incorrecte
+## <a name="resolution-of-screenshot-is-incorrect"></a><a name="Resolution"></a> La résolution de capture d'écran est incorrecte
  Si vous prenez une capture d'écran à l'aide de l'onglet Capture d'écran de la fenêtre **Outils supplémentaires** et que l'image résultante a une taille inattendue, vous devrez peut-être ajuster le niveau de zoom de l'écran avant de choisir **Capturer**. L'émulateur prend des captures d'écran à la résolution de l'écran sur votre moniteur d'ordinateur hôte.
 
-## <a name="OpenGL"></a> L’émulateur ne parvient pas à afficher le contenu OpenGL
+## <a name="emulator-fails-to-render-opengl-content"></a><a name="OpenGL"></a>Emulator ne parvient pas à rendre le contenu OpenGL
  L’émulateur affiche le contenu OpenGL à l’aide du GPU de votre ordinateur hôte et utilise le projet ANGLE pour convertir ces appels vers et à partir de DirectX. Si votre application s'affiche correctement sur un appareil mais de façon incorrecte sur l'émulateur, il est probable que l'appareil atténue un appel OpenGL incorrect (par exemple, à l'aide de variables de nuanceur qui ne correspondent pas).
 
-## <a name="Multitouch"></a> L'émulateur ne répond pas aux entrées tactiles multipoints
+## <a name="emulator-does-not-respond-to-multi-touch-gestures"></a><a name="Multitouch"></a> L'émulateur ne répond pas aux entrées tactiles multipoints
  Dans certains cas, l'émulateur démarre mais ne répond pas aux entrées tactiles multipoints effectuées par interaction directe par le biais de votre écran tactile ou à l'aide de l'outil multipoint dans la barre d'outils de l'émulateur. Dans ce cas, choisissez le bouton **Pivoter** dans la barre d'outils de l'émulateur et réessayez d'utiliser la fonctionnalité multipoint. Si le problème persiste, consultez la section [L'émulateur ne parvient pas à afficher le contenu OpenGL](#OpenGL) .
 
-## <a name="Support"></a> Ressources de support
+## <a name="support-resources"></a><a name="Support"></a>Ressources de soutien
  Si votre ordinateur hôte satisfait à la configuration système requise et que vous rencontrez un problème non couvert dans ce guide de dépannage :
 
 - Posez une question sur StackOverflow en utilisant les balises [android-emulator](https://stackoverflow.com/questions/tagged/android-emulator) et visual-studio.

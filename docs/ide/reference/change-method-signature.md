@@ -15,10 +15,10 @@ dev_langs:
 ms.workload:
 - dotnet
 ms.openlocfilehash: 97c03c798732b5d722b2dc49f3ec7ffa490b4f06
-ms.sourcegitcommit: 3e74ec49a54e5c3da7631f4466128cdf4384af6b
-ms.translationtype: HT
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/01/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "68711265"
 ---
 # <a name="change-a-method-signature-refactoring"></a>Changer une signature de méthode (refactorisation)
@@ -29,13 +29,13 @@ Cette refactorisation s’applique à :
 
 - Visual Basic
 
-**Quoi :** Vous permet de supprimer ou de modifier l’ordre des paramètres d’une méthode.
+**Quoi :** vous permet de supprimer ou de modifier l’ordre des paramètres d’une méthode.
 
-**Quand :** Vous souhaitez déplacer ou supprimer un paramètre de méthode actuellement utilisé dans différents emplacements.
+**Quand :** vous souhaitez déplacer ou supprimer un paramètre de méthode actuellement utilisé dans différents emplacements.
 
-**Pourquoi :** Vous pouvez manuellement supprimer et réorganiser les paramètres, puis rechercher tous les appels à cette méthode et les modifier un par un, mais cela peut entraîner des erreurs.  Cet outil de refactorisation effectuera automatiquement cette tâche.
+**Pourquoi :** vous pouvez manuellement supprimer et réorganiser les paramètres, puis rechercher tous les appels à cette méthode et les modifier un par un, mais cela peut entraîner des erreurs.  Cet outil de refactorisation effectuera automatiquement cette tâche.
 
-## <a name="how-to"></a>Procédure
+## <a name="how-to"></a>Procédures
 
 1. Mettez en surbrillance ou placez le curseur dans le nom de la méthode à modifier ou dans l’une de ses utilisations :
 
@@ -51,7 +51,7 @@ Cette refactorisation s’applique à :
 
    - **Clavier**
       - Appuyez sur **Ctrl+R**, puis **Ctrl+V**.  (Notez que le raccourci clavier peut varier en fonction du profil que vous avez sélectionné.)
-      - Appuyez sur **Ctrl**+ **.** pour afficher le menu **Actions rapides et refactorisations**, puis sélectionnez **Modifier la signature** dans la fenêtre contextuelle d’aperçu.
+      - Appuyez **sur Ctrl**+**.** pour afficher le menu **Actions rapides et refactorisations**, puis sélectionnez **Modifier la signature** dans la fenêtre contextuelle d’aperçu.
    - **Souris**
       - Sélectionnez **Modifier > Refactoriser > Supprimer les paramètres**.
       - Sélectionnez **Modifier > Refactoriser > Réorganiser les paramètres**.
@@ -65,10 +65,10 @@ Cette refactorisation s’applique à :
    | ------ | ---
    | **Haut/bas** | Déplacer le paramètre sélectionné vers le haut ou le bas de la liste
    | **Supprimer** | Supprimer le paramètre sélectionné de la liste
-   | **Restauration** | Restaurer le paramètre barré sélectionné dans la liste
+   | **Restaurer** | Restaurer le paramètre barré sélectionné dans la liste
 
    > [!TIP]
-   > Utilisez la case à cocher **Afficher un aperçu des modifications de la référence** pour [prévisualiser le résultat](../../ide/preview-changes.md) avant de le valider.
+   > Utilisez la case à **cocher des modifications de référence Preview** pour [voir quel sera le résultat](../../ide/preview-changes.md) avant de s’y engager.
 
 4. Lorsque vous avez terminé, appuyez sur le bouton **OK** pour appliquer les modifications.
 

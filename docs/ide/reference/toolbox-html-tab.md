@@ -14,15 +14,15 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 0489f534466149a437384d4f21e34f1fa9e98c5b
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75596435"
 ---
 # <a name="toolbox-html-tab"></a>Boîte à outils, onglet HTML
 
-L’onglet **HTML** de la boîte à outils comporte des composants utiles sur les pages web et les formulaires web. Pour afficher cet onglet, ouvrez d’abord un document pour le modifier dans le concepteur HTML. Dans le menu **Affichage**, cliquez sur **Boîte à outils**, puis sur l’onglet **HTML** de la boîte à outils.
+**L’onglet HTML** de la boîte à outils fournit des composants qui sont utiles sur les pages Web et les formulaires Web. Pour afficher cet onglet, ouvrez d’abord un document pour le modifier dans le concepteur HTML. Dans le menu **Affichage**, cliquez sur **Boîte à outils**, puis sur l’onglet **HTML** de la boîte à outils.
 
 Pour créer une instance d’un outil sous l’onglet **HTML**, double-cliquez sur l’outil pour l’ajouter à votre document au point d’insertion actuel, ou sélectionnez l’outil et faites-le glisser à la position souhaitée dans la surface d’édition.
 
@@ -50,7 +50,7 @@ Quand vous faites glisser **Input (Button)** sur la surface en mode Design, une 
 
 **Input (Reset)**
 
-![Capture d'écran de HTMLpageResetButton](../../ide/reference/media/vxreset.gif)
+![Capture d'écran HTMLpageResetButton](../../ide/reference/media/vxreset.gif)
 
 Insère un élément `input` tel que `type="reset"`. Pour changer le texte affiché, modifiez la propriété `name`. Par défaut, `id="Reset1"` est inséré pour le premier bouton de réinitialisation, `id="Reset2"` pour le deuxième, etc.
 
@@ -62,7 +62,7 @@ Quand vous faites glisser **Input (Reset)** sur la surface en mode Design, une b
 
 **Input (Submit)**
 
-![Capture d'écran de HTMLpageToolbarSubmitButton](../../ide/reference/media/vxsubmit.gif)
+![Capture d'écran HTMLpageToolbarSubmitButton](../../ide/reference/media/vxsubmit.gif)
 
 Insère un élément `input` tel que `type="submit"`. Pour changer le texte affiché, modifiez la propriété `name`. Par défaut, `id="Submit1"` est inséré pour le premier bouton d’envoi, `id="Submit2"` pour le deuxième, etc.
 
@@ -74,7 +74,7 @@ Quand vous faites glisser **Input (Submit)** sur la surface en mode Design, une 
 
 **Input (Text)**
 
-![Capture d'écran de HTMLpageToolbarTextField](../../ide/reference/media/vxtextfield.gif)
+![Capture d'écran HTMLpageToolbarTextField](../../ide/reference/media/vxtextfield.gif)
 
 Insère un élément `input` tel que `type="text"` dans votre document. Pour changer le texte affiché par défaut, modifiez l’attribut `value`. Par défaut, `id="Text1"` est inséré pour le premier champ de texte, `id="Text2"` pour le deuxième, etc.
 
@@ -87,7 +87,7 @@ Quand vous faites glisser **Input (Text)** sur la surface en mode Design, une ba
 > [!IMPORTANT]
 >Il est recommandé de valider toutes les entrées d’utilisateur. Pour plus d’informations, consultez [Validation des entrées d’utilisateur sur des sites de pages web ASP.NET (Razor)](/aspnet/web-pages/overview/ui-layouts-and-themes/validating-user-input-in-aspnet-web-pages-sites).
 
-**Input (File)**
+**Entrée (Fichier)**
 
 ![Champ Fichier de page HTML](../../ide/reference/media/vxfilefield.gif)
 
@@ -131,7 +131,7 @@ Quand vous faites glisser **Input (Check box)** sur la surface en mode Design, 
 
 **Input (Radio)**
 
-![Capture d'écran de VisualStudioHTMLpageRadioButton](../../ide/reference/media/vxradio.gif)
+![Capture d'écran VisualStudioHTMLpageRadioButton](../../ide/reference/media/vxradio.gif)
 
 Insère un élément `input` tel que `type="radio"`. Pour changer le texte affiché, modifiez la propriété `name`. Par défaut, `id="Radio1"` est inséré pour la première case d’option, `id="Radio2"` pour la deuxième, etc.
 
@@ -170,7 +170,7 @@ Quand vous faites glisser **Textarea** sur la surface en mode Design, une balise
 
 **Table**
 
-![Capture d'écran de HTMLpageToolbarTable](../../ide/reference/media/vxtable.gif)
+![Capture d'écran HTMLpageToolbarTable](../../ide/reference/media/vxtable.gif)
 
 Insère un élément `table`.
 
@@ -192,7 +192,7 @@ Quand vous faites glisser **Image** sur la surface en mode Design, une balise HT
 <img alt="" src="">
 ```
 
-**Sélectionner**
+**Sélectionnez**
 
 ![Liste déroulante de boîte à outils de page HTML](../../ide/reference/media/vxdropdown.gif)
 
@@ -206,7 +206,7 @@ Quand vous faites glisser **Select** sur la surface en mode Design, une balise H
 
 Vous pouvez créer un élément `select` multiligne en augmentant la valeur de la propriété size.
 
-**Horizontal Rule**
+**Règle horizontale**
 
 ![Élément de règle horizontale de page HTML](../../ide/reference/media/vxhorizontal.gif)
 
@@ -232,4 +232,4 @@ Quand vous faites glisser **Div** sur la surface en mode Design, une balise HTML
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Boîte à outils](../../ide/reference/toolbox.md)
+- [Toolbox](../../ide/reference/toolbox.md)

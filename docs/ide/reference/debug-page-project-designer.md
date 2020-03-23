@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: a2c3e7813e5e07a0fbb8f4ebf5838c883faa0fb8
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75595720"
 ---
 # <a name="debug-page-project-designer"></a>Page Déboguer, Concepteur de projets
@@ -60,13 +60,13 @@ Choisissez cette option pour spécifier qu’une URL particulière doit être ac
 
 ## <a name="start-options"></a>Options de démarrage
 
-**Arguments de la ligne de commande**
+**Arguments de ligne de commande**
 
 Dans cette zone de texte, entrez les arguments de la ligne de commande à utiliser pour le débogage.
 
-**Répertoire de travail**
+**Annuaire de travail**
 
-Dans cette zone de texte, entrez le répertoire à partir duquel le projet sera lancé. Vous pouvez aussi cliquer sur le bouton Parcourir ( **...** ) pour sélectionner un répertoire.
+Dans cette zone de texte, entrez le répertoire à partir duquel le projet sera lancé. Vous pouvez aussi cliquer sur le bouton Parcourir (**...**) pour sélectionner un répertoire.
 
 **Utiliser l’ordinateur distant**
 
@@ -76,16 +76,16 @@ Pour déboguer l’application à partir d’un ordinateur distant, cochez cette
 
 **Activer le débogage du code natif**
 
-Cette option spécifie si le débogage de code natif est pris en charge. Cochez cette case si vous effectuez des appels vers les objets COM ou si vous démarrez un programme personnalisé écrit en code natif qui appelle votre projet et que vous devez déboguer le code natif. Décochez cette case pour désactiver le débogage de code non managé. Cette case est décochée par défaut.
+Cette option spécifie si le débogage de code natif est pris en charge. Cochez cette case si vous effectuez des appels vers les objets COM ou si vous démarrez un programme personnalisé écrit en code natif qui appelle votre projet et que vous devez déboguer le code natif. Décochez cette case pour désactiver le débogage de code non managé. Cette case à cocher est désactivée par défaut.
 
 **Activer le débogage SQL Server**
 
-Cochez ou décochez cette case pour activer ou désactiver le débogage des procédures SQL de votre application Visual Basic. Cette case est décochée par défaut.
+Cochez ou décochez cette case pour activer ou désactiver le débogage des procédures SQL de votre application Visual Basic. Cette case à cocher est désactivée par défaut.
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Présentation du débogueur](../../debugger/debugger-feature-tour.md)
-- [Paramètres de projet pour des configurations de débogage C#](../../debugger/project-settings-for-csharp-debug-configurations.md)
-- [Paramètres de projet pour une configuration Debug Visual Basic](../../debugger/project-settings-for-a-visual-basic-debug-configuration.md)
-- [Guide pratique pour déboguer une application ClickOnce avec des autorisations restreintes](../../deployment/how-to-debug-a-clickonce-application-with-restricted-permissions.md)
+- [Premier regard sur le débbugger](../../debugger/debugger-feature-tour.md)
+- [Paramètres de projet pour les configurations de débbug de C](../../debugger/project-settings-for-csharp-debug-configurations.md)
+- [Paramètres de projet pour une configuration visuelle de base de débbug](../../debugger/project-settings-for-a-visual-basic-debug-configuration.md)
+- [Comment: Debug une application ClickOnce avec autorisations restreintes](../../deployment/how-to-debug-a-clickonce-application-with-restricted-permissions.md)
 - [Guide pratique pour créer et modifier des configurations](../../ide/how-to-create-and-edit-configurations.md)

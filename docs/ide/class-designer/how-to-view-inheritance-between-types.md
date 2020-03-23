@@ -15,15 +15,15 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 47907493451841b631d561bfddb74676a460ff29
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75591773"
 ---
 # <a name="how-to-view-inheritance-between-types-in-class-designer"></a>Guide pratique pour afficher l’héritage entre les types dans le Concepteur de classes
 
-Dans le **Concepteur de classes**, vous pouvez rechercher la relation d’héritage éventuellement existante entre un type de base et ses types dérivés dans un diagramme de classes. Pour créer une relation d’héritage entre deux types, s’il n’en n’existe aucune, consultez [Guide pratique pour créer un héritage entre des types](how-to-create-inheritance-between-types.md).
+Vous pouvez trouver la relation d’héritage, si elle existe, entre un type de base et ses types dérivés sur un diagramme de classe dans **Class Designer**. Pour créer une relation d’héritage entre deux types, s’il n’en n’existe aucune, consultez [Guide pratique pour créer un héritage entre des types](how-to-create-inheritance-between-types.md).
 
 ## <a name="to-find-the-base-type"></a>Pour rechercher le type de base
 
@@ -48,4 +48,4 @@ Vous pouvez également cliquer avec le bouton droit sur le type dont vous souhai
 ## <a name="see-also"></a>Voir aussi
 
 - [Guide pratique pour créer des associations entre des types](how-to-create-associations-between-types.md)
-- [Affichage des types et des relations](designing-and-viewing-classes-and-types.md)
+- [Types et relations d’affichage](designing-and-viewing-classes-and-types.md)

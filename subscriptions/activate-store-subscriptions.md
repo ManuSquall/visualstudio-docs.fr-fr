@@ -7,10 +7,10 @@ ms.date: 02/17/2020
 ms.topic: conceptual
 description: Découvrez comment activer les abonnements Visual Studio achetés dans le Microsoft Store.
 ms.openlocfilehash: c872dd738b1b27620bf988e74bcc03631ce8b037
-ms.sourcegitcommit: c8b979a56c95e43cf8ae92b6c3c9570db59a8e58
+ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/07/2020
+ms.lasthandoff: 03/21/2020
 ms.locfileid: "78894398"
 ---
 # <a name="how-do-i-activate-a-subscription-acquired-from-the-microsoft-store"></a>Comment activer un abonnement acheté auprès du Microsoft Store ?
@@ -21,7 +21,7 @@ Si vous avez acheté un abonnement Visual Studio dans le Microsoft Store, vous p
 
 ## <a name="activate-your-subscription"></a>Activer votre abonnement
 1. Cliquez sur **Cliquez ici pour vous connecter** dans la page de confirmation d’achat ou l’e-mail de confirmation.
-2. Vous êtes redirigé vers [https://my.visualstudio.com/subscriptions/activate](https://my.visualstudio.com/subscriptions/activate?wt.mc_id=o~msft~docs).
+2. Vous serez redirigé vers [https://my.visualstudio.com/subscriptions/activate](https://my.visualstudio.com/subscriptions/activate?wt.mc_id=o~msft~docs).
 3. Entrez l’adresse e-mail qui nécessite l’accès à l’abonnement Visual Studio, puis cliquez sur **Continuer**.
 4. Vous êtes redirigé vers l’une des deux pages de connexion suivantes en fonction du type de compte que vous utilisez :
     - Les abonnés utilisant leur « compte Microsoft » (MSA) personnel sont redirigés vers la page du mot de passe du compte Microsoft.
@@ -32,7 +32,7 @@ Si vous avez acheté un abonnement Visual Studio dans le Microsoft Store, vous p
 8. L’abonnement doit maintenant être visible sur la page [Abonnements](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs), et vous devriez désormais avoir accès à tous les avantages de votre abonnement.
 
 ## <a name="see-also"></a>Voir aussi
-- [Documentation de Visual Studio](https://docs.microsoft.com/visualstudio/)
+- [Documentation Visual Studio](https://docs.microsoft.com/visualstudio/)
 - [Documentation Azure DevOps](https://docs.microsoft.com/azure/devops/)
 - [Documentation Azure](https://docs.microsoft.com/azure/)
 - [Documentation Microsoft 365](https://docs.microsoft.com/microsoft-365/)

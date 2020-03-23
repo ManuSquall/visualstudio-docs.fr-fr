@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 852b783129f130316de88580020e0139925ffb37
-ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/26/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77634303"
 ---
 # <a name="create-forwarding-loggers"></a>Créer des journaux de transfert
@@ -36,14 +36,14 @@ Les journaux de transfert améliorent l’efficacité de la journalisation en vo
 
 ## <a name="specify-a-forwarding-logger"></a>Spécifier un journal de transfert
 
- Une fois que le journal de transfert a été compilé dans un assembly, vous devez indiquer à MSBuild de l’utiliser pendant les builds. Pour cela, utilisez les commutateurs `-FileLogger`, `-FileLoggerParameters` et `-DistributedFileLogger` avec *MSBuild.exe*. Le commutateur `-FileLogger` indique à *MSBuild.exe* que le journal est directement attaché. Le commutateur `-DistributedFileLogger` signifie qu’il existe un fichier journal par nœud. Pour définir des paramètres sur le journal de transfert, utilisez le commutateur `-FileLoggerParameters`. Pour plus d’informations sur ces commutateurs et sur d’autres commutateurs de *MSBuild.exe*, consultez [Informations de référence sur la ligne de commande](../msbuild/msbuild-command-line-reference.md).
+ Une fois que l’enregistreur de mise en route a été compilé dans un assemblage, vous devez dire à MSBuild de l’utiliser pendant les builds. Pour ce faire, `-FileLogger` `-FileLoggerParameters`utilisez `-DistributedFileLogger` le , , et change avec *MSBuild.exe*. L’interrupteur `-FileLogger` indique *MSBuild.exe* que le bûcheron est directement attaché. Le commutateur `-DistributedFileLogger` signifie qu’il existe un fichier journal par nœud. Pour définir des paramètres sur le journal de transfert, utilisez le commutateur `-FileLoggerParameters`. Pour plus d’informations sur ces commutateurs et d’autres *commutateurs MSBuild.exe,* voir [référence de la ligne de commandement](../msbuild/msbuild-command-line-reference.md).
 
 ## <a name="multi-processor-aware-loggers"></a>Enregistreurs d’événements prenant en charge plusieurs processeurs
 
- Quand vous générez un projet sur un système multiprocesseur, les messages de génération provenant de chaque processeur ne sont pas automatiquement entrelacés dans une séquence unifiée. Vous devez donc établir une priorité de regroupement des messages avec la classe <xref:Microsoft.Build.Framework.BuildEventContext> qui est attachée à chaque message. Pour plus d’informations sur la génération multiprocesseur, consultez [Journalisation dans un environnement multiprocesseur](../msbuild/logging-in-a-multi-processor-environment.md).
+ Quand vous générez un projet sur un système multiprocesseur, les messages de génération provenant de chaque processeur ne sont pas automatiquement entrelacés dans une séquence unifiée. Vous devez donc établir une priorité de regroupement des messages avec la classe <xref:Microsoft.Build.Framework.BuildEventContext> qui est attachée à chaque message. Pour plus d’informations sur le bâtiment multi-processeur, voir [l’enregistrement dans un environnement multi-processeur](../msbuild/logging-in-a-multi-processor-environment.md).
 
 ## <a name="see-also"></a>Voir aussi
 
 - [Obtenir des journaux de génération](../msbuild/obtaining-build-logs-with-msbuild.md)
-- [Enregistreurs d’événements de génération](../msbuild/build-loggers.md)
-- [Journalisation dans un environnement multiprocesseur](../msbuild/logging-in-a-multi-processor-environment.md)
+- [Construire des bûcherons](../msbuild/build-loggers.md)
+- [Enregistrement dans un environnement multi-processeur](../msbuild/logging-in-a-multi-processor-environment.md)

@@ -7,10 +7,10 @@ ms.date: 07/19/2018
 ms.assetid: 592BA4E3-8DEF-4FCD-8BA0-519A4CEEE03E
 ms.custom: video
 ms.openlocfilehash: 3568ab8dd68deb83d668c6e46f556516e29a81ae
-ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/10/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "74985000"
 ---
 # <a name="open-multiple-solutions-or-instances-of-visual-studio-for-mac"></a>Ouvrir plusieurs solutions ou instances de Visual Studio pour Mac
@@ -31,7 +31,7 @@ open -n "/Applications/Visual Studio.app"
 
 Pour ouvrir une autre solution à côté de votre première solution, effectuez les étapes suivantes :
 
-1. Dans la première solution déjà ouverte, sélectionnez **Fichier** > **Ouvrir**.
+1. Avec votre première solution déjà ouverte, sélectionnez **File** > **Open**.
 2. Parcourez le système de fichiers pour trouver la solution existante.
 3. Sélectionnez le fichier **.sln** et **Options** :
 
@@ -45,7 +45,7 @@ Pour ouvrir une autre solution à côté de votre première solution, effectuez 
 
 Autre possibilité, si vous avez récemment ouvert la solution, vous pouvez suivre les étapes ci-dessous :
 
-1. Accédez à **Fichier** > **Solutions récentes**.
+1. Allez **déposer des** > **solutions récentes**.
 
     ![Capture d’écran du menu Solutions récentes](media/open-multiple-solutions-image2.png)
 

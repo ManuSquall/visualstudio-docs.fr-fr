@@ -18,10 +18,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 90752fd8e34769530f1b95dd439a46c71fe985a0
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74779829"
 ---
 # <a name="analyze-performance-tools-data"></a>Analyser les données des outils d’analyse des performances
@@ -31,12 +31,12 @@ Les rapports de performances des outils de profilage [!INCLUDE[vsprvs](../code-q
 
 |Tâche|Contenu associé|
 |----------|---------------------|
-|**Utiliser des règles de performance pour identifier rapidement les problèmes** : les règles de performance des outils de profilage permettent d’identifier les problèmes courants et vous aident à accéder au code source qui contient le problème. Les rubriques d’aide détaillées peuvent bien souvent apporter une solution.|-   [Utiliser des règles de performance pour analyser des données](../profiling/using-performance-rules-to-analyze-data.md)|
-|**Comprendre les informations des vues de rapport** : les vues de rapport des outils de profilage fournissent des données de performances agrégées concernant les processus, les threads, les modules et les fonctions d’une exécution de profilage. Les données qui s’affichent dépendent de la méthode de profilage utilisée pour collecter les données.|-   [Vues du rapport des performances](../profiling/performance-report-views.md)|
-|**Configurer, trier et filtrer les vues de rapports** : vous pouvez spécifier et organiser les colonnes de données à afficher dans un rapport, trier les lignes du rapport et filtrer les données pour n’inclure qu’un segment de temps spécifique.|-   [Personnaliser les vues des rapports des outils d’analyse des performances](../profiling/customizing-performance-tools-report-views.md)|
+|**Utiliser des règles de performance pour identifier rapidement les problèmes** : les règles de performance des outils de profilage permettent d’identifier les problèmes courants et vous aident à accéder au code source qui contient le problème. Les rubriques d’aide détaillées peuvent bien souvent apporter une solution.|-   [Utiliser les règles de performance pour analyser les données](../profiling/using-performance-rules-to-analyze-data.md)|
+|**Comprendre les informations des vues de rapport** : les vues de rapport des outils de profilage fournissent des données de performances agrégées concernant les processus, les threads, les modules et les fonctions d’une exécution de profilage. Les données qui s’affichent dépendent de la méthode de profilage utilisée pour collecter les données.|-   [Points de vue du rapport sur le rendement](../profiling/performance-report-views.md)|
+|**Configurer, trier et filtrer les vues de rapports** : vous pouvez spécifier et organiser les colonnes de données à afficher dans un rapport, trier les lignes du rapport et filtrer les données pour n’inclure qu’un segment de temps spécifique.|-   [Personnaliser les points de vue du rapport sur les outils de performance](../profiling/customizing-performance-tools-report-views.md)|
 
-## <a name="related-sections"></a>Rubriques connexes
-- [Comparer des fichiers de données de performances](../profiling/comparing-performance-data-files.md)
+## <a name="related-sections"></a>Sections connexes
+- [Comparer les fichiers de données de performance](../profiling/comparing-performance-data-files.md)
 
 - [Enregistrer et exporter les données des outils d’analyse des performances](../profiling/saving-and-exporting-performance-tools-data.md)
 

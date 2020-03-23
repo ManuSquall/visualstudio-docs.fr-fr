@@ -8,10 +8,10 @@ ms.workload:
 - multiple
 author: mikejo5000
 ms.openlocfilehash: 13f5da784a43df5146a66ca868bb6add9a702906
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75585585"
 ---
 # <a name="using-html5-controls-in-coded-ui-tests"></a>Utilisation de contrôles HTML5 dans des tests codés de l’interface utilisateur
@@ -20,7 +20,7 @@ Les tests codés de l'interface utilisateur incluent la prise en charge d'une pa
 
 [!INCLUDE [coded-ui-test-deprecation](includes/coded-ui-test-deprecation.md)]
 
-**Spécifications**
+**Configuration requise**
 
 - Visual Studio Enterprise
 
@@ -38,7 +38,7 @@ Les tests codés de l'interface utilisateur incluent la prise en charge d'une pa
 
 |Action|Enregistrement|Code généré|
 |-|---------------|-|
-|**Lire un fichier audio**<br /><br /> Directement à partir du contrôle ou dans le menu contextuel (clic droit) du contrôle.|Play \<nom> Audio from 00:00:00|HtmlAudio.Play(TimeSpan)|
+|**Lire audio**<br /><br /> Directement à partir du contrôle ou dans le menu contextuel (clic droit) du contrôle.|Play \<nom> Audio from 00:00:00|HtmlAudio.Play(TimeSpan)|
 |**Rechercher un moment précis dans le fichier audio**|Seek \<nom> Audio to 00:01:48|HtmlAudio.Seek(TimeSpan)|
 |**Suspendre la lecture du fichier audio**<br /><br /> Directement à partir du contrôle ou dans le menu contextuel (clic droit) du contrôle.|Pause \<nom> Audio at 00:01:53|HtmlAudio.Pause(TimeSpan)|
 |**Désactiver le son**<br /><br /> Directement à partir du contrôle ou dans le menu contextuel (clic droit) du contrôle.|Mute \<nom> Audio|HtmlAudio.Mute()|
@@ -47,9 +47,9 @@ Les tests codés de l'interface utilisateur incluent la prise en charge d'une pa
 
 Consultez [HTMLAudioElement](https://developer.mozilla.org/docs/Web/API/HTMLAudioElement) pour obtenir une liste de propriétés sur lesquelles vous pouvez ajouter une assertion.
 
-**Propriétés de recherche** : les propriétés de recherche pour `HtmlAudio` sont `Id`, `Name` et `Title`.
+**Propriétés de recherche :** Les propriétés `HtmlAudio` `Id`de `Name` `Title`recherche pour sont , et .
 
-**Propriétés de filtre :** les propriétés de filtre pour `HtmlAudio` sont `Src`, `Class`, `ControlDefinition` et `TagInstance`.
+**Propriétés de filtre :** Les propriétés `HtmlAudio` `Src`de `Class` `ControlDefinition` filtre `TagInstance`pour sont , , et .
 
 > [!NOTE]
 > La durée de Seek et Pause peut être considérable. Lors de la lecture, le test codé de l'interface utilisateur attend que la durée spécifiée dans `(TimeSpan)` soit écoulée avant de suspendre l'audio. Si dans certaines circonstances particulières, la durée spécifiée s'est écoulée avant l'activation de la commande Pause, une exception est levée.
@@ -61,7 +61,7 @@ Consultez [HTMLAudioElement](https://developer.mozilla.org/docs/Web/API/HTMLAudi
 
 |Action|Enregistrement|Code généré|
 |-|---------------|-|
-|**Lire un fichier vidéo**<br /><br /> Directement à partir du contrôle ou dans le menu contextuel (clic droit) du contrôle.|Play \<nom> Video from 00:00:00|HtmlVideo.Play(TimeSpan)|
+|**Lecture vidéo**<br /><br /> Directement à partir du contrôle ou dans le menu contextuel (clic droit) du contrôle.|Play \<nom> Video from 00:00:00|HtmlVideo.Play(TimeSpan)|
 |**Rechercher un moment précis dans le fichier vidéo**|Seek \<nom> Video to 00:01:48|HtmlVideo.Seek(TimeSpan)|
 |**Suspendre la lecture du fichier vidéo**<br /><br /> Directement à partir du contrôle ou dans le menu contextuel (clic droit) du contrôle.|Pause \<nom> Video at 00:01:53|HtmlVideo.Pause(TimeSpan)|
 |**Désactiver le son de la vidéo**<br /><br /> Directement à partir du contrôle ou dans le menu contextuel (clic droit) du contrôle.|Mute \<nom> Video|HtmlVideo.Mute()|
@@ -70,14 +70,14 @@ Consultez [HTMLAudioElement](https://developer.mozilla.org/docs/Web/API/HTMLAudi
 
 Consultez [HTMLVideoElement](https://developer.mozilla.org/docs/Web/HTML/Element/video) pour obtenir une liste de propriétés sur lesquelles vous pouvez ajouter une assertion.
 
-**Propriétés de recherche** : les propriétés de recherche pour `HtmlVideo` sont `Id`, `Name` et `Title`.
+**Propriétés de recherche :** Les propriétés `HtmlVideo` `Id`de `Name` `Title`recherche pour sont , et .
 
-**Propriétés de filtre :** les propriétés de filtre pour `HtmlVideo` sont `Src`, `Poster`, `Class`, `ControlDefinition` et `TagInstance`.
+**Propriétés de filtre :** Les propriétés `HtmlVideo` `Src`de `Poster` `Class`filtre `ControlDefinition` `TagInstance`pour sont , , , et .
 
 > [!NOTE]
 > Si vous rembobinez ou avancez rapidement la vidéo à l'aide d'étiquettes-30s ou +30s, celle-ci est agrégée pour rechercher le moment précis.
 
-## <a name="progressbar"></a>ProgressBar
+## <a name="progressbar"></a>Barre de progression
 **Contrôle ProgressBar :** ProgressBar est un contrôle sur lequel il n’est pas possible d’interagir. Vous pouvez ajouter des assertions sur les propriétés `Value` et `Max` de ce contrôle. Pour plus d’informations, consultez [HTMLProgressElement](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/progress).
 
 ![Contrôle de barre de progression HTML5](../test/media/codedui_html5_progressbar.png)
@@ -85,6 +85,6 @@ Consultez [HTMLVideoElement](https://developer.mozilla.org/docs/Web/HTML/Element
 ## <a name="see-also"></a>Voir aussi
 
 - [Éléments HTML](https://developer.mozilla.org/docs/Web/HTML/Element)
-- [Utiliser l’automatisation de l’interface utilisateur pour tester votre code](../test/use-ui-automation-to-test-your-code.md)
+- [Utilisez l’automatisation de l’interface utilisateur pour tester votre code](../test/use-ui-automation-to-test-your-code.md)
 - [Créer des tests codés de l’interface utilisateur](../test/use-ui-automation-to-test-your-code.md)
-- [Plateformes et configurations prises en charge pour les tests codés de l’interface utilisateur et les enregistrements des actions](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)
+- [Configurations et plates-formes prises en charge pour les tests d’interface utilisateur codés et les enregistrements d’action](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)

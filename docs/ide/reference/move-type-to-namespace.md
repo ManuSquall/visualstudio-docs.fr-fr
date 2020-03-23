@@ -10,10 +10,10 @@ dev_langs:
 ms.workload:
 - dotnet
 ms.openlocfilehash: 821e915a0b66f25c5b89a83b31e93b01aea6f400
-ms.sourcegitcommit: b593bb889f049fcbdff502c30b73178ed17dbdf0
-ms.translationtype: HT
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/20/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "67292710"
 ---
 # <a name="move-type-to-namespace"></a>Déplacer un type vers un espace de noms
@@ -22,16 +22,16 @@ Cette refactorisation s’applique à :
 
 - C#
 
-**Quoi :** Déplacez un type vers un espace de noms.
+**Quoi :** Déplacez type dans l’espace de nom.
 
-**Quand :** Vous souhaitez déplacer un type vers un autre espace de noms ou dossier. 
+**Quand :** Vous voulez déplacer un type vers un autre namespace ou dossier. 
 
-**Pourquoi :** Vous souhaitez refactoriser des parties de votre solution et vous avez un moyen rapide de déplacer un type vers un autre espace de noms ou dossier. 
+**Pourquoi:** Vous souhaitez refactorer des parties de votre solution et avoir un moyen rapide de déplacer un type vers un espace de nom ou un dossier différent. 
 
-## <a name="how-to"></a>Procédure
+## <a name="how-to"></a>Procédures
 
 1. Placez votre curseur dans le nom de la classe.
-2. Appuyez sur **Ctrl**+ **.** pour afficher le menu **Actions rapides et refactorisations**.
+2. Appuyez **sur Ctrl**+**.** pour afficher le menu **Actions rapides et refactorisations**.
 3. Sélectionnez **Déplacer vers l’espace de noms**.
 
    ![Refactorisation avec Déplacer vers l’espace de noms](media/move-to-namespace.png)

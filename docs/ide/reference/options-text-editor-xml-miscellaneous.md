@@ -9,51 +9,51 @@ author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.openlocfilehash: dd468945b1ab9ac83b219b9c8c396f017065e2be
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75568124"
 ---
 # <a name="options-text-editor-xml-miscellaneous"></a>Options, Éditeur de texte, XML, Divers
 
-Utilisez la page d’options **Divers** pour modifier les paramètres de saisie semi-automatique et de schéma pour l’éditeur XML. Pour accéder aux options XML diverses, choisissez **Outils** > **Options** > **Éditeur de texte** > **XML**, puis **Divers**.
+Utilisez la page d’options **Divers** pour modifier les paramètres de saisie semi-automatique et de schéma pour l’éditeur XML. Pour accéder à des options XML diverses, choisissez **Tools** > **Options** > **Text Editor** > **XML**, puis choisissez **Miscellaneous**.
 
 ## <a name="auto-insert"></a>Insertion automatique
 
 **Balises de fermeture**
 
-L’éditeur de texte ajoute des balises de fermeture lors de la création des éléments XML. Si une balise de début d’un élément est sélectionnée, l’éditeur insère la balise de fermeture correspondante, avec un préfixe d’espace de noms correspondant. Cette case à cocher est sélectionnée par défaut.
+L’éditeur de texte ajoute des balises de fermeture lors de la création des éléments XML. Si la balise de début d'un élément est sélectionnée, l'Éditeur insère la balise de fin correspondante avec un préfixe d'espace de noms équivalent. Cette case à cocher est activée par défaut.
 
-**Guillemets d’attribut**
+**Guillemets d'attribut**
 
-Quand vous créez des attributs XML, l’éditeur insère les caractères `="` et `"`, et place le caret ( **^** ) à l’intérieur des guillemets doubles. Cette case à cocher est sélectionnée par défaut.
+Lors de la rédaction des attributs `="` XML, l’éditeur insère le et `"` les personnages et positionne le caret (**^**) à l’intérieur des guillemets. Cette case à cocher est activée par défaut.
 
-**Déclarations d’espaces de noms**
+**Déclarations d'espace de noms**
 
-L'éditeur insère automatiquement des déclarations d'espaces de noms chaque fois qu'elles sont nécessaires. Cette case à cocher est sélectionnée par défaut.
+L'Éditeur insère automatiquement les déclarations d'espace de noms là où elles sont requises. Cette case à cocher est activée par défaut.
 
-**Autre balisage (commentaires, CDATA)**
+**Autre balisage (Commentaires, CDATA)**
 
-Les commentaires, CDATA, DOCTYPE, les instructions de traitement et les autres éléments de balisages sont complétés automatiquement. Cette case à cocher est sélectionnée par défaut.
+Les éléments CDATA, DOCTYPE, les commentaires, les instructions de traitement et autre balisage sont entrés automatiquement. Cette case à cocher est activée par défaut.
 
 ## <a name="network"></a>Réseau
 
 **Télécharger automatiquement les DTD et les schémas**
 
-Les schémas et les DTD (définitions de type de document) sont automatiquement téléchargés à partir d'emplacements HTTP. Cette fonctionnalité utilise System.Net avec la détection automatique de serveur proxy activée. Cette case à cocher est sélectionnée par défaut.
+Les schémas et les définitions de type de document (DTD) sont automatiquement téléchargés à partir d'emplacements HTTP. Cette fonctionnalité utilise System.Net avec détection de serveur de proxy automatique. Cette case à cocher est activée par défaut.
 
-## <a name="outlining"></a>mode Plan
+## <a name="outlining"></a>Mode Plan
 
-**Passer en mode Plan à l’ouverture des fichiers**
+**Passer en mode Plan à l'ouverture des fichiers**
 
-Active le mode plan à l'ouverture d'un fichier. Cette case à cocher est sélectionnée par défaut.
+Active la fonctionnalité mode Plan lorsqu'un fichier est ouvert. Cette case à cocher est activée par défaut.
 
 ## <a name="caching"></a>Mise en cache
 
 **Schémas**
 
-Spécifie l'emplacement du cache de schéma. Le bouton **Parcourir** permet d’ouvrir l’emplacement du cache de schéma actuel dans une nouvelle fenêtre. L’emplacement par défaut est *%VsInstallDir%\xml\Schemas*.
+Indique l'emplacement du cache des schémas. Le bouton **Parcourir** permet d’ouvrir l’emplacement du cache de schéma actuel dans une nouvelle fenêtre. L’emplacement par défaut est *%VsInstallDir%\xml\Schemas*.
 
 ## <a name="see-also"></a>Voir aussi
 

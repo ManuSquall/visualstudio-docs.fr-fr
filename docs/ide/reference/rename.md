@@ -13,10 +13,10 @@ dev_langs:
 ms.workload:
 - dotnet
 ms.openlocfilehash: 4dbccd4732f56d671fd74f59916885ea338136f8
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75565459"
 ---
 # <a name="rename-a-code-symbol-refactoring"></a>Renommer un symbole de code (refactorisation)
@@ -25,7 +25,7 @@ Cette refactorisation s’applique à :
 
 - C#
 
-- Visual Basic
+- Visual Basic
 
 **Quoi :** vous permet de renommer des identificateurs pour des symboles de code, tels que des champs, variables locales, méthodes, espaces de noms, propriétés et types.
 
@@ -33,7 +33,7 @@ Cette refactorisation s’applique à :
 
 **Pourquoi :** un copier-coller du nouveau nom dans un projet entier entraînera probablement des erreurs. Cet outil de refactorisation effectuera avec précision le changement de nom.
 
-## <a name="how-to"></a>Procédure
+## <a name="how-to"></a>Procédures
 
 1. Mettez en surbrillance ou placez le curseur de texte dans l’élément à renommer :
 
@@ -68,17 +68,17 @@ Cette refactorisation s’applique à :
 
 4. Quand vous êtes satisfait du changement, appuyez sur le bouton **Appliquer** ou sur la touche **Entrée** pour valider les changements.
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Notes 
 
-- À compter de Visual Studio 2019 version 16,3, lorsque vous renommez un type qui correspond au nom du fichier dans lequel il se trouve, une case à cocher s’affiche pour vous permettre de renommer le fichier en même temps. Cette option apparaît lorsque vous renommez une classe, une interface ou une énumération. Cette option n’est pas prise en charge pour les types partiels avec plusieurs définitions.
+- À partir de Visual Studio 2019 version 16.3, lorsque vous renommez un type qui correspond au nom du fichier dans lequel il se trouve, une case à cocher apparaît qui vous permet de renommer le fichier en même temps. Cette option apparaît lorsque vous renommez une classe, une interface ou un énumération. Cette option n’est pas prise en charge pour les types partiels avec des définitions multiples.
 
-   ![Renommer l’animation avec le fichier-C#](media/rename-with-file-animated-cs.gif)
+   ![Renommer l’animation avec fichier - C #](media/rename-with-file-animated-cs.gif)
 
 - Si vous utilisez un nom qui existe déjà, ce qui provoquerait un conflit, la boîte de dialogue **Renommer** vous avertit.
 
    ![Conflit de changement de nom](media/rename-conflict-cs.png)
 
-- Une autre façon de renommer un symbole consiste à modifier son nom dans l’éditeur. Ensuite, placez le curseur dans le nom du symbole et appuyez sur **Ctrl**+ **.** ou développez simplement le menu de l’icône Ampoule qui s’affiche et choisissez **Renommer \<ancien nom> par \<nouveau nom>** .
+- Une autre façon de renommer un symbole consiste à modifier son nom dans l’éditeur. Puis, avec le curseur dans le nom du symbole, appuyez sur **Ctrl**+**.** ou développez simplement le menu de l’icône Ampoule qui s’affiche et choisissez **Renommer \<ancien nom> par \<nouveau nom>**.
 
 ## <a name="see-also"></a>Voir aussi
 

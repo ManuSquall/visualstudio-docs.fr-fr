@@ -8,10 +8,10 @@ ms.workload:
 - multiple
 author: mikejo5000
 ms.openlocfilehash: 104bdcc7a3f609456d521e710ac6ec2aeda2bb75
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75585572"
 ---
 # <a name="use-different-web-browsers-with-coded-ui-tests"></a>Utiliser différents navigateurs web avec des tests codés de l’interface utilisateur
@@ -20,7 +20,7 @@ Les tests codés de l'interface utilisateur peuvent automatiser le test des appl
 
 [!INCLUDE [coded-ui-test-deprecation](includes/coded-ui-test-deprecation.md)]
 
-Installez d’abord les [composants Selenium pour les tests codés de l’interface utilisateur sur plusieurs navigateurs](https://marketplace.visualstudio.com/items?itemName=AtinBansal.SeleniumcomponentsforCodedUICrossBrowserTesting).
+Tout d’abord, installer les [composants Sélénium pour coded UI test de navigateur croisé](https://marketplace.visualstudio.com/items?itemName=AtinBansal.SeleniumcomponentsforCodedUICrossBrowserTesting).
 
 ## <a name="whats-supported-across-all-web-browsers"></a>Quelles sont les opérations prises en charge par tous les navigateurs web ?
 
@@ -38,7 +38,7 @@ Lorsque vous testez votre application web à l'aide de divers types de navigateu
 
 ## <a name="how-do-i-record-and-play-back-coded-ui-tests-on-web-applications-using-the-supported-web-browsers"></a>Comment enregistrer et lire les tests d'interface utilisateur codés des applications web à l'aide des navigateurs web pris en charge ?
 
-**Enregistrement :** vous devez utiliser le générateur de test codé de l’interface utilisateur pour enregistrer le test de votre application web à l’aide d’Internet Explorer. Vous pouvez éventuellement ajouter un code de validation personnalisé pour les contrôles testés à l’aide d’un jeu prédéfini de propriétés, de la même manière que pour les tests codés de l’interface utilisateur. Pour plus d’informations, consultez [Utiliser l’automatisation de l’interface utilisateur pour tester votre code](../test/use-ui-automation-to-test-your-code.md).
+**Enregistrement :** vous devez utiliser le générateur de test codé de l’interface utilisateur pour enregistrer le test de votre application web à l’aide d’Internet Explorer. Vous pouvez éventuellement ajouter un code de validation personnalisé pour les contrôles testés à l’aide d’un jeu prédéfini de propriétés, de la même manière que pour les tests codés de l’interface utilisateur. Pour plus d’informations, consultez [l’automatisation de l’interface utilisateur pour tester votre code](../test/use-ui-automation-to-test-your-code.md).
 
 > [!NOTE]
 > Vous ne pouvez pas enregistrer des tests codés de l'interface utilisateur à l'aide des navigateurs Google Chrome ou Mozilla Firefox.
@@ -120,9 +120,9 @@ Pour plus d’informations, consultez [Analyse des tests codés de l’interface
 
 ## <a name="video-resources"></a>Ressources vidéo
 
-[Enregistrement dans IE et lecture dans tous les navigateurs](https://skydrive.live.com/redir?resid=AE5CD7309CCCC43C!183&authkey=!ANqaLtCZbtJrImU)
+[Enregistrement sur IE et lecture partout](https://skydrive.live.com/redir?resid=AE5CD7309CCCC43C!183&authkey=!ANqaLtCZbtJrImU)
 
-[Créer des tests multinavigateurs avec le générateur de test codé de l’interface utilisateur](https://skydrive.live.com/redir?resid=AE5CD7309CCCC43C!184&authkey=!AKG8CSow_qmeTq8)
+[Auteur tests de navigateur croisé avec le constructeur de test d’interface utilisateur codé](https://skydrive.live.com/redir?resid=AE5CD7309CCCC43C!184&authkey=!AKG8CSow_qmeTq8)
 
 [Créer des tests multi-navigateurs avec du code brut sans mapper l’interface utilisateur](https://skydrive.live.com/redir?resid=AE5CD7309CCCC43C!186&authkey=!AJaEvxJnsefyAT4)
 
@@ -132,6 +132,6 @@ Pour plus d’informations, consultez [Analyse des tests codés de l’interface
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Utiliser l’automatisation de l’interface utilisateur pour tester votre code](../test/use-ui-automation-to-test-your-code.md)
-- [Plateformes et configurations prises en charge pour les tests codés de l’interface utilisateur et les enregistrements des actions](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)
-- [Analyser des tests codés de l’interface utilisateur à l’aide des journaux de tests codés de l’interface utilisateur](../test/analyzing-coded-ui-tests-using-coded-ui-test-logs.md)
+- [Utilisez l’automatisation de l’interface utilisateur pour tester votre code](../test/use-ui-automation-to-test-your-code.md)
+- [Configurations et plates-formes prises en charge pour les tests d’interface utilisateur codés et les enregistrements d’action](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)
+- [Analyser les tests d’interface utilisateur codés à l’aide de journaux de test d’interface utilisateur codés](../test/analyzing-coded-ui-tests-using-coded-ui-test-logs.md)

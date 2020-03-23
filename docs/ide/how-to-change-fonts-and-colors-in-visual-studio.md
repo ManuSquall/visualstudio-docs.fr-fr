@@ -1,5 +1,5 @@
 ---
-title: Changer les polices et les couleurs
+title: Changer les polices et couleurs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 592b8bb11fa5ea9cf18cfbd5f28aad4c487bedee
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75588874"
 ---
 # <a name="how-to-change-fonts-and-colors-in-visual-studio"></a>Guide pratique pour changer les polices et les couleurs utilisées dans Visual Studio
@@ -27,9 +27,9 @@ Vous pouvez personnaliser la couleur des fenêtres d'outils et du cadre de l'env
 
 ## <a name="change-the-color-theme-of-the-ide"></a>Modifier le thème de couleur de l’environnement IDE
 
-1. Dans la barre de menus, choisissez **Outils** > **Options**.
+1. Sur la barre de menu, choisissez **Tools** > **Options**.
 
-1. Dans la liste d’options, choisissez **Environnement** > **Général**.
+1. Dans la liste des options, choisissez **Environnement** > **Général**.
 
 1. Dans la liste **Thème de couleur**, choisissez le thème **Bleu** (par défaut), **Sombre** ou **Clair**.
 
@@ -41,7 +41,7 @@ Vous pouvez personnaliser la couleur des fenêtres d'outils et du cadre de l'env
 
 ## <a name="use-windows-high-contrast-colors"></a>Utilisez les couleurs Windows à contraste élevé
 
-Choisissez les touches **Alt gauche**+**Maj gauche**+**Imp. écr**.
+Choisissez les clés **de gauche Alt**+**Left Shift**+**PrtScn.**
 
 > [!WARNING]
 > Cette option définit un contraste élevé pour toutes les applications et l'interface utilisateur de l'ordinateur actif.
@@ -52,9 +52,9 @@ Vous pouvez modifier la police et la taille du texte pour toutes les fenêtres e
 
 ### <a name="to-change-the-font-and-size-of-all-text-in-the-ide"></a>Pour modifier la police et la taille de tout le texte dans l'environnement IDE
 
-1. Dans la barre de menus, choisissez **Outils** > **Options**.
+1. Sur la barre de menu, choisissez **Tools** > **Options**.
 
-1. Dans la liste d’options, choisissez **Environnement** > **Polices et couleurs**.
+1. Dans la liste des options, choisissez **Environment** > **Fonts and Colors**.
 
 1. Dans la liste **Afficher les paramètres de**, choisissez **Police d’environnement**.
 
@@ -67,5 +67,5 @@ Vous pouvez modifier la police et la taille du texte pour toutes les fenêtres e
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Fonctionnalités d’accessibilité de Visual Studio](../ide/reference/accessibility-features-of-visual-studio.md)
-- [Guide pratique pour changer les polices et les couleurs utilisées dans l’éditeur](../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md)
+- [Caractéristiques d’accessibilité de Visual Studio](../ide/reference/accessibility-features-of-visual-studio.md)
+- [Comment: Changer les polices et les couleurs dans l’éditeur](../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md)

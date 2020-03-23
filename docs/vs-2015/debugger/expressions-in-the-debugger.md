@@ -1,5 +1,5 @@
 ---
-title: Expressions dans le débogueur | Microsoft Docs
+title: Expressions dans le Debugger (fr) Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -28,11 +28,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 3999737a2fad04c9b513722ae11608574a72c410
-ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
+ms.sourcegitcommit: 95f26af1da51d4c83ae78adcb7372b32364d8a2b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "78406325"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79302524"
 ---
 # <a name="expressions-in-the-debugger"></a>Expressions dans le débogueur
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -94,7 +94,7 @@ int main()
   
 ```  
   
-### <a name="BKMK_Using_debugger_intrinisic_functions_to_maintain_state"></a> Utilisation de fonctions intrinsèques du débogueur pour maintenir l’état  
+### <a name="using-debugger-intrinsic-functions-to-maintain-state"></a><a name="BKMK_Using_debugger_intrinisic_functions_to_maintain_state"></a>Utilisation de fonctions intrinsèques de débbugger pour maintenir l’état  
  Les fonctions intrinsèques du débogueur vous permettent d’appeler certaines fonctions C/C++ dans les expressions sans modifier l’état de l’application.  
   
  Fonctions intrinsèques du débogueur :  
@@ -214,8 +214,8 @@ int main()
   
 - Mots clés de niveau espace de noms ou module, comme `End Sub` ou `Module`.  
   
-## <a name="see-also"></a>Voir aussi  
- [Spécificateurs de format en C++](../debugger/format-specifiers-in-cpp.md)   
- [Context Operator (C++)](../debugger/context-operator-cpp.md)   
- [Spécificateurs de format en C#](../debugger/format-specifiers-in-csharp.md)   
+## <a name="see-also"></a> Voir aussi  
+ [Spécifications de format dans C](../debugger/format-specifiers-in-cpp.md)   
+ [Opérateur de contexte (CMD)](../debugger/context-operator-cpp.md)   
+ [Spécifications de format en C #](../debugger/format-specifiers-in-csharp.md)   
  [Pseudo-variables](../debugger/pseudovariables.md)

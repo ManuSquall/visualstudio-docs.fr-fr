@@ -10,16 +10,16 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: bf5e0fdf478e067f61b1d0e259cb1624380e4f02
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74778243"
 ---
-# <a name="status"></a>Status
-L’option **Status** de *VSPerfCmd.exe* affiche des informations sur l’état du profileur et sur tous les processus qui sont en cours de profilage.
+# <a name="status"></a>Statut
+*L’option STATUT VSPerfCmd.exe* **Status** affiche des informations sur l’état du profileur et tous les processus qui sont actuellement profilés.
 
- L’option **Status** doit être la seule option spécifiée sur la ligne de commande. Le profileur doit être initialisé avec l’option **Start** de *VSPerfCmd.exe* avant l’affichage d’un état.
+ L’option **Status** doit être la seule option spécifiée sur la ligne de commande. Le profileur doit être paralé de l’option *VSPerfCmd.exe* **Start** avant qu’un statut ne puisse être affiché.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -27,10 +27,10 @@ L’option **Status** de *VSPerfCmd.exe* affiche des informations sur l’état 
 VSPerfCmd.exe /Status
 ```
 
-#### <a name="parameters"></a>Parameters
- Aucun
+#### <a name="parameters"></a>Paramètres
+ None
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Notes 
  L’option **Status** affiche les informations d’état suivantes pour le profileur.
 
  **Nom du fichier de sortie** Chemin et nom du fichier de données du profileur actif.
@@ -60,7 +60,7 @@ VSPerfCmd.exe /Status
  **Utilisateurs avec droits d’accès au gestionnaire** Liste les noms des utilisateurs qui ont accès au profileur. Vous pouvez accorder l’accès à des utilisateurs supplémentaires en utilisant l’option **Admin** de VSPerfCmd.exe
 
 ## <a name="see-also"></a>Voir aussi
-- [VSPerfCmd](../profiling/vsperfcmd.md)
+- [Vsperfcmd](../profiling/vsperfcmd.md)
 - [Profiler des applications autonomes](../profiling/command-line-profiling-of-stand-alone-applications.md)
-- [Profiler des applications web ASP.NET](../profiling/command-line-profiling-of-aspnet-web-applications.md)
+- [Profil ASP.NET applications Web](../profiling/command-line-profiling-of-aspnet-web-applications.md)
 - [Profiler des services](../profiling/command-line-profiling-of-services.md)

@@ -15,15 +15,15 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: c7347ba6bf599e34d9555f6acaeb03cf396a5855
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75595564"
 ---
-# <a name="how-to-change-fonts-and-colors-for-the-editor-in-visual-studio"></a>Comment : modifier les polices et les couleurs de l’éditeur dans Visual Studio
+# <a name="how-to-change-fonts-and-colors-for-the-editor-in-visual-studio"></a>Comment: Changer les polices et les couleurs pour l’éditeur dans Visual Studio
 
-Vous pouvez changer le type de police par défaut, ajuster la taille de police et changer les couleurs de premier plan et d’arrière-plan de divers **éléments d’affichage** texte dans l’éditeur de code. Quand vous changez les paramètres de police, gardez à l’esprit les informations suivantes :
+Vous pouvez modifier le visage de police par défaut, ajuster la taille de la police et modifier les couleurs de premier plan et de fond pour divers **éléments d’affichage** de texte dans l’éditeur de code. Quand vous changez les paramètres de police, gardez à l’esprit les informations suivantes :
 
 - Les paramètres **Police** et **Taille** s’appliquent à l’ensemble des éléments texte de tous les éditeurs Visual Studio.
 
@@ -33,7 +33,7 @@ Vous pouvez changer le type de police par défaut, ajuster la taille de police e
 
 ## <a name="change-the-default-font-face-size-and-colors"></a>Changer le type, la taille et les couleurs de police par défaut
 
-1. Sélectionnez **Options** dans le menu **Outils**. Sous **environnement**, sélectionnez [polices et couleurs](../../ide/reference/fonts-and-colors-environment-options-dialog-box.md).
+1. Sélectionnez **Options** dans le menu **Outils**. Sous **l’environnement**, sélectionnez [Fonts et Couleurs](../../ide/reference/fonts-and-colors-environment-options-dialog-box.md).
 
 2. Dans **Afficher les paramètres de**, sélectionnez **Éditeur de texte**.
 

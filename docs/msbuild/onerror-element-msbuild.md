@@ -19,10 +19,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 18edfe06a4f2cb98fcb41e93c920b03c53daea8c
-ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/26/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77633081"
 ---
 # <a name="onerror-element-msbuild"></a>Élément OnError (MSBuild)
@@ -51,23 +51,23 @@ Provoque l’exécution d’une ou de plusieurs cibles si l’attribut `Continue
 
 ### <a name="child-elements"></a>Éléments enfants
 
- None.
+ Aucun.
 
 ### <a name="parent-elements"></a>Éléments parents
 
 | Élément | Description |
 | - | - |
-| [Cible](../msbuild/target-element-msbuild.md) | Élément conteneur pour les tâches MSBuild. |
+| [Target](../msbuild/target-element-msbuild.md) | Élément de conteneur pour les tâches MSBuild. |
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Notes 
 
- MSBuild exécute l’élément `OnError` si l’une des tâches de l’élément `Target` échoue avec l’attribut `ContinueOnError` défini sur `ErrorAndStop` (ou `false`). Lorsque la tâche échoue, les cibles spécifiées dans l’attribut `ExecuteTargets` sont exécutées. S’il existe plusieurs éléments `OnError` dans la cible, les éléments `OnError` sont exécutés séquentiellement lorsque la tâche échoue.
+ MSBuild exécute `OnError` l’élément si `Target` l’une des `ContinueOnError` tâches de `ErrorAndStop` l’élément échoue avec l’attribut défini à (ou `false`). Lorsque la tâche échoue, les cibles spécifiées dans l’attribut `ExecuteTargets` sont exécutées. S’il existe plusieurs éléments `OnError` dans la cible, les éléments `OnError` sont exécutés séquentiellement lorsque la tâche échoue.
 
  Pour plus d’informations sur l’attribut `ContinueOnError`, voir [Élément Task (MSBuild)](../msbuild/task-element-msbuild.md). Pour plus d’informations sur les cibles, consultez l’article [MSBuild Targets](../msbuild/msbuild-targets.md) (Cibles MSBuild).
 
-## <a name="example"></a>Exemple
+## <a name="example"></a> Exemple
 
- Le code suivant exécute les tâches `TaskOne` et `TaskTwo`. Si `TaskOne` échoue, MSBuild évalue l’élément `OnError` et exécute la cible `OtherTarget`.
+ Le code suivant exécute les tâches `TaskOne` et `TaskTwo`. En `TaskOne` cas d’échec, MSBuild évalue l’élément `OnError` et exécute la `OtherTarget` cible.
 
 ```xml
 <Target Name="ThisTarget">
@@ -81,5 +81,5 @@ Provoque l’exécution d’une ou de plusieurs cibles si l’attribut `Continue
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Informations de référence sur le schéma de fichier projet](../msbuild/msbuild-project-file-schema-reference.md)
+- [Référence du schéma de fichier de projet](../msbuild/msbuild-project-file-schema-reference.md)
 - [Cibles](../msbuild/msbuild-targets.md)

@@ -11,10 +11,10 @@ ms.devlang: python
 ms.workload:
 - multiple
 ms.openlocfilehash: 9cb06220c99abb86c24808f6831cf98280133f2e
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/13/2020
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "75915827"
 ---
 # <a name="train-a-tensorflow-model-in-the-cloud"></a>Former un modèle TensorFlow dans le cloud
@@ -23,7 +23,7 @@ Dans ce didacticiel, nous allons apprendre à former un modèle TensorFlow avec 
 
 La base de données MNIST a un jeu d’apprentissage constitué de 60 000 exemples et un jeu de test de 10 000 exemples de chiffres manuscrits.
 
-## <a name="prerequisites"></a>Configuration requise
+## <a name="prerequisites"></a>Conditions préalables requises
 Avant de commencer, vérifiez que les composants suivants sont installés et configurés :
 
 ### <a name="setup-azure-deep-learning-virtual-machine"></a>Configurer la machine virtuelle Azure Deep Learning
@@ -39,17 +39,17 @@ Des instructions de configuration de la machine virtuelle Deep Learning sont acc
 echo -e ". /etc/profile\n$(cat ~/.bashrc)" > ~/.bashrc
 ```
 
-### <a name="download-sample-code"></a>Télécharger un exemple de code
+### <a name="download-sample-code"></a>Télécharger l’exemple de code
 
 Téléchargez ce [référentiel GitHub](https://github.com/Microsoft/samples-for-ai) contenant des exemples pour démarrer le deep learning sur TensorFlow, CNTK, Theano et bien plus encore.
 
-## <a name="open-project"></a>Ouvrir un projet
+## <a name="open-project"></a>Ouvrir le projet
 
 - Lancez Visual Studio et sélectionnez **Fichier > Ouvrir > Projet/Solution**.
 
 - Sélectionnez le dossier **Exemples TensorFlow** dans le dépôt des exemples téléchargé et ouvrez le fichier **TensorflowExamples.sln**.
 
-   ![Ouvrir un projet](media/tensorflow-local/open-project.png)
+   ![Ouvrir le projet](media/tensorflow-local/open-project.png)
 
    ![Ouvrir une solution](media/tensorflow-local/open-solution.png)
 
@@ -68,9 +68,9 @@ Dans la fenêtre d’envoi :
 
 - Dans la liste **Cluster to use** (Utiliser le cluster), sélectionnez l’ordinateur distant (avec le préfixe « rm: ») auquel envoyer la tâche.
 
-- Entrez un **nom de la tâche**.
+- Entrez un **nom d’emploi**.
 
-- Cliquez sur **Envoyer**.
+- Cliquez sur **Submit**.
 
 ## <a name="check-status-of-job"></a>Vérifier l’état de la tâche
 Pour afficher l’état et les détails relatifs aux tâches : développez la machine virtuelle à laquelle vous avez envoyé la tâche dans **l’Explorateur de serveurs**. Double cliquez sur **Tâches**.

@@ -13,22 +13,22 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: bb39f1d395e48351aeacb587556224b0f86aac3e
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75593783"
 ---
 # <a name="find-code-using-go-to-commands"></a>Rechercher du code à l’aide des commandes Atteindre
 
 Les commandes **Atteindre** de Visual Studio vous permettent d’effectuer une recherche ciblée dans votre code pour trouver rapidement des éléments spécifiques. Vous pouvez atteindre une ligne, un type, un symbole, un fichier ou un membre spécifique à partir d’une interface unifiée simple.
 
-## <a name="how-to-use-it"></a>Utilisation
+## <a name="how-to-use-it"></a>Comment l’utiliser ?
 
-Input | Fonction
+Entrée | Fonction
 ------------ | ---
-**Clavier** | Appuyez sur **Ctrl**+**T** ou **Ctrl**+ **,**
-**Souris** | Sélectionnez **Modifier** > **Atteindre** > **Atteindre tout**
+**Clavier** | Appuyez sur **Ctrl**+**T** ou **Ctrl**+**,**
+**Souris** | Sélectionnez **Modifier** > **Go To** > **Go To All To All**
 
 Une petite fenêtre s’affiche en haut à droite de votre éditeur de code.
 
@@ -38,13 +38,13 @@ Une petite fenêtre s’affiche en haut à droite de votre éditeur de code.
 
 ![Fenêtre Naviguer vers](../ide/media/vside_navigatetowindow.png)
 
-Vous pouvez aussi entrer un point d’interrogation ( **?** ) pour obtenir une aide supplémentaire.
+Vous pouvez aussi entrer un point d’interrogation (**?**) pour obtenir une aide supplémentaire.
 
 ![Aide sur Atteindre tout](media/go-to-all-help.png)
 
 ## <a name="filtered-searches"></a>Recherches filtrées
 
-Par défaut, l’élément spécifié est recherché dans tous les éléments de solution. Toutefois, vous pouvez limiter votre recherche de code à des types d’éléments spécifiques en faisant précéder les termes de recherche de certains caractères. Vous pouvez aussi changer rapidement le filtre de recherche en choisissant des boutons dans la barre d’outils de la boîte de dialogue **Atteindre**. Les boutons qui changent les filtres de type se trouvent à gauche, et les boutons qui changent l’étendue de recherche se trouvent à droite.
+Par défaut, l’élément spécifié est recherché dans tous les éléments de solution. Toutefois, vous pouvez limiter votre recherche de code à des types d’éléments spécifiques en faisant précéder les termes de recherche de certains caractères. Vous pouvez également changer rapidement le filtre de recherche en choisissant des boutons sur la barre d’outils de la boîte de dialogue **Go To.** Les boutons qui changent les filtres de type se trouvent à gauche, et les boutons qui changent l’étendue de recherche se trouvent à droite.
 
 ![Atteindre des membres](../ide/media/vside_navigation_toolbar.png)
 
@@ -72,13 +72,13 @@ Icône | Description
 
 ## <a name="camel-casing"></a>Casse mixte
 
-Si vous utilisez une [casse mixte](https://en.wikipedia.org/wiki/Camel_case) dans votre code, vous pouvez trouver plus rapidement des éléments de code en entrant uniquement les lettres majuscules de leur nom. Par exemple, si votre code a un type appelé `CredentialViewModel`, vous pouvez affiner la recherche en choisissant le filtre **Type** (**t**), puis en entrant simplement les lettres majuscules du nom (`CVM`) dans la boîte de dialogue Atteindre. Cette fonctionnalité peut être particulièrement utile si votre code contient des noms longs.
+Si vous utilisez une [casse mixte](https://en.wikipedia.org/wiki/Camel_case) dans votre code, vous pouvez trouver plus rapidement des éléments de code en entrant uniquement les lettres majuscules de leur nom. Par exemple, si votre code `CredentialViewModel`a un type appelé , vous pouvez réduire la recherche en choisissant le`CVM`filtre **type** (**t**) et en entrant ensuite seulement les lettres majuscules du nom ( ) dans la boîte de dialogue Go To. Cette fonctionnalité peut être particulièrement utile si votre code contient des noms longs.
 
 ![Fenêtre Naviguer vers - recherche en lettres capitales](../ide/media/vside_capitalsearch.png)
 
 ## <a name="settings"></a>Paramètres
 
-Sélectionnez l’icône d’engrenage ![Icône d’engrenage](media/gotoall_gear.png) si vous souhaitez changer le comportement de cette fonctionnalité :
+Sélectionnez l’icône d’engrenage ![icône Engrenage](media/gotoall_gear.png) si vous souhaitez changer le comportement de cette fonctionnalité :
 
 Paramètre | Description
 ------- | ---
@@ -89,5 +89,5 @@ Centrer la fenêtre | Déplacer cette fenêtre pour qu’elle s’affiche en hau
 ## <a name="see-also"></a>Voir aussi
 
 - [Naviguer dans le code](../ide/navigating-code.md)
-- [Atteindre la ligne (boîte de dialogue)](../ide/reference/go-to-line.md)
-- [Atteindre la définition et l’aperçu de définition](../ide/go-to-and-peek-definition.md)
+- [Boîte de dialogue Go To Line](../ide/reference/go-to-line.md)
+- [Atteindre la définition et Aperçu de la définition](../ide/go-to-and-peek-definition.md)

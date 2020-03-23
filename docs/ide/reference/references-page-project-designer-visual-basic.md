@@ -16,10 +16,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: b80427999ad841c493e61cd704b64435f81c3914
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75565602"
 ---
 # <a name="references-page-project-designer-visual-basic"></a>Page Références, Concepteur de projets (Visual Basic)
@@ -28,11 +28,11 @@ Utilisez la page **Références** du **Concepteur de projet** pour gérer des r�
 
 Pour accéder à la page **Références**, choisissez un nœud de projet (pas le nœud **Solution**) dans l’**Explorateur de solutions**. Ensuite, choisissez **Projet**, **Propriétés** dans la barre de menus. Quand le Concepteur de projet apparaît, cliquez sur l’onglet **Références**.
 
-## <a name="uielement-list"></a>Liste des éléments d’interface
+## <a name="uielement-list"></a>Liste des éléments de l'interface utilisateur
 
 Les options suivantes vous permettent de sélectionner ou supprimer des références et des espaces de noms importés dans votre projet.
 
-**Chemins des références**
+**Chemins d'accès des références**
 
 Cliquez sur ce bouton pour accéder à la boîte de dialogue **Chemins des références**.
 
@@ -52,7 +52,7 @@ Cette liste affiche toutes les références dans le projet, utilisées ou non.
 
 Cliquez sur ce bouton pour ajouter une référence ou une référence web à la liste **Références**.
 
-Choisissez **Référence**  pour ajouter une référence à votre projet à l’aide de la boîte de dialogue Ajouter une référence.
+Choisissez **Référence ** pour ajouter une référence à votre projet à l’aide de la boîte de dialogue Ajouter une référence.
 
 Choisissez **Référence web** pour ajouter une référence web à votre projet à l’aide de la boîte de dialogue **Ajouter une référence web**.
 
@@ -68,7 +68,7 @@ Sélectionnez une référence web dans la liste **Références** et cliquez sur 
 
 Vous pouvez taper votre propre espace de noms dans cette zone et cliquer sur **Ajouter une importation utilisateur** pour l’ajouter à la liste d’espaces de noms.
 
-Vous pouvez créer des alias pour les espaces de noms importés par l’utilisateur. Pour ce faire, entrez l’alias et l’espace de noms au format *alias*=*espace de noms*. C’est utile si vous utilisez des espaces de noms longs, par exemple `Http= MyOrg.ObjectLib.Internet.WebRequestMethods.Http`.
+Vous pouvez créer des alias pour les espaces de noms importés par l’utilisateur. Pour ce faire, entrez le pseudonyme et l’espace nom dans le format *alias*=*namespace*. C’est utile si vous utilisez des espaces de noms longs, par exemple `Http= MyOrg.ObjectLib.Internet.WebRequestMethods.Http`.
 
  **Ajouter une importation utilisateur**
 

@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: 3eb813dc5d4389b002851a904d61219b0d5c316e
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75593640"
 ---
 # <a name="how-to-add-an-application-configuration-file-to-a-c-project"></a>Guide pratique pour ajouter un fichier de configuration d’application à un projet C#
@@ -29,11 +29,11 @@ Quand vous générez votre projet, l’environnement de développement copie aut
 
 ## <a name="to-add-an-application-configuration-file-to-a-c-project"></a>Pour ajouter un fichier de configuration d’application à un projet C#
 
-1. Dans la barre de menus, choisissez **Projet** > **Ajouter un nouvel élément**.
+1. Sur la barre de menu, choisissez **Project** > **Ajouter un nouvel article**.
 
-     La boîte de dialogue **Ajouter un nouvel élément** s’affiche.
+     La boîte de dialogue **Ajouter un nouvel élément** s'affiche.
 
-1. Développez **Installé** > **Éléments Visual C#** , puis choisissez le modèle **Fichier de configuration de l’application**.
+1. Élargissez**les éléments visuels installés CMD,** puis choisissez le modèle **de fichier de configuration d’application.** **Installed** > 
 
 1. Dans la zone de texte **Nom**, entrez un nom, puis choisissez le bouton **Ajouter**.
 

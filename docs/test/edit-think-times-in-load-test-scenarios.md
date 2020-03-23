@@ -11,10 +11,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 887d2af9e60be914bd74141041ecc375cfea4f00
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75590031"
 ---
 # <a name="edit-think-times-to-simulate-website-human-interaction-delays-in-load-tests-scenarios"></a>Modifier les temps de réflexion pour simuler les délais d’interaction humaine avec un site web dans les scénarios de tests de charge
@@ -29,11 +29,11 @@ Les options **Profil de réflexion** sont décrites dans la liste suivante :
 
 [!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
-**Off**
+**Hors tension**
 
 Les temps de réflexion sont ignorés. Utilisez ce paramètre si vous souhaitez générer une charge maximale afin de soumettre votre serveur web à une contrainte importante. Si vous essayez de créer des interactions plus réalistes entre l’utilisateur et un serveur web, ne vous en servez pas.
 
-**On**
+**Activé**
 
 Les temps de réflexion sont utilisés exactement tels qu’ils ont été enregistrés dans le test de performances web. Ils simulent plusieurs utilisateurs qui exécutent des tests de performances web. Un test de charge simulant plusieurs utilisateurs, l'utilisation du même temps de réflexion pourrait créer un modèle de charge d'utilisateurs virtuels synchronisés anormal.
 
@@ -42,7 +42,7 @@ Les temps de réflexion sont utilisés exactement tels qu’ils ont été enregi
 Les temps de réflexion sont utilisés, mais varient sur une courbe normale. Fournit une simulation d'utilisateurs virtuels plus réaliste en variant légèrement le temps de réflexion entre les demandes.
 
 > [!NOTE]
-> Pour obtenir une liste complète des propriétés des scénarios de test de charge et leurs descriptions, consultez [Propriétés du scénario de test de charge](../test/load-test-scenario-properties.md).
+> Pour une liste complète des propriétés du scénario de test de charge et de leurs descriptions, voir [propriétés de scénario de test de charge](../test/load-test-scenario-properties.md).
 
 ## <a name="change-the-think-profile"></a>Modifier le profil de réflexion
 
@@ -50,9 +50,9 @@ Les temps de réflexion sont utilisés, mais varient sur une courbe normale. Fou
 
 1. Dans le projet de test de performances web et de charge, ouvrez un test de charge.
 
-2. Dans **l’éditeur de test de charge**, choisissez le nœud de scénario où vous souhaitez changer le **Profil de réflexion**. Le **Profil de réflexion** s’affiche dans la fenêtre **Propriétés**. Appuyez sur **F4** pour afficher la fenêtre **Propriétés**.
+2. Dans **l’éditeur de test de charge**, choisissez le nœud de scénario où vous souhaitez changer le **Profil de réflexion**. Le **profil Think** est affiché dans la fenêtre **Propriétés.** Appuyez sur **F4** pour afficher la fenêtre **Propriétés**.
 
-3. Modifiez la propriété **Profil de réflexion** dans la fenêtre **Propriétés**.
+3. Modifier la propriété **Think Profile** dans la fenêtre **Propriétés.**
 
 4. Quand vous avez fini de changer les propriétés, choisissez **Enregistrer** dans le menu **Fichier**. Vous pouvez ensuite exécuter votre test de charge avec le nouveau profil de réflexion.
 

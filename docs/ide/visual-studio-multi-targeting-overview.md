@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: ec81b38ab68c327f25c9f94b6329a700e2662383
-ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "78409428"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79303420"
 ---
 # <a name="framework-targeting-overview"></a>Vue d’ensemble du ciblage des frameworks
 
@@ -85,7 +85,7 @@ Dans un projet Visual Basic, C# ou F# existant, vous pouvez changer la version d
 
 1. Dans l’**Explorateur de solutions**, ouvrez le menu du projet que vous souhaitez modifier avec un clic droit, puis choisissez **Propriétés**.
 
-1. Dans la colonne gauche de la fenêtre **Propriétés**, choisissez l’onglet **Application**.
+1. Dans la colonne gauche de la fenêtre **Propriétés,** choisissez l’onglet **Application.**
 
    ![Onglet Application des propriétés du projet](../ide/media/vs_slnexplorer_properties_applicationtab.png)
 
@@ -112,7 +112,7 @@ Dans un projet Visual Basic, C# ou F# existant, vous pouvez changer la version d
 
 Pour cibler une version de .NET, vous devez d’abord installer les références d’assembly appropriées. Vous pouvez télécharger des packs de développeur pour différentes versions de .NET à partir de la page de [Téléchargements .NET](https://www.microsoft.com/net/download/windows).
 
-Pour les projets .NET Framework, la boîte de dialogue **Ajouter une référence** désactive les assemblys système qui n’appartiennent pas à la version du .NET Framework cible, de façon à ce qu’ils ne puissent pas être ajoutés à un projet par inadvertance. (Les assemblys système sont des fichiers *. dll* inclus dans une version .NET Framework.) Les références qui appartiennent à une version de Framework supérieure à la version ciblée ne seront pas résolues, et les contrôles qui dépendent d’une telle référence ne peuvent pas être ajoutés. Si vous voulez activer une telle référence, réinitialisez la cible du .NET Framework du projet sur une cible qui inclut la référence.
+Pour les projets .NET Framework, la boîte de dialogue **Ajouter une référence** désactive les assemblys système qui n’appartiennent pas à la version du .NET Framework cible, de façon à ce qu’ils ne puissent pas être ajoutés à un projet par inadvertance. (Les assemblages système sont des fichiers *.dll* qui sont inclus dans une version cadre .NET.) Les références qui appartiennent à une version-cadre supérieure à la version ciblée ne se résoudront pas, et les contrôles qui dépendent d’une telle référence ne peuvent pas être ajoutés. Si vous voulez activer une telle référence, réinitialisez la cible du .NET Framework du projet sur une cible qui inclut la référence.
 
 Pour plus d’informations sur les références d’assembly, consultez [Résoudre les assemblys au moment du design](../msbuild/resolving-assemblies-at-design-time.md).
 
@@ -122,6 +122,6 @@ Quand vous ciblez .NET Framework 3.5 ou ultérieur, une référence à **System.
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Frameworks cibles](/dotnet/standard/frameworks)
+- [Cadres cibles](/dotnet/standard/frameworks)
 - [Multiciblage (MSBuild)](../msbuild/msbuild-multitargeting-overview.md)
-- [Guide pratique pour modifier le framework cible et l’ensemble d’outils de plateforme (C++)](/cpp/build/how-to-modify-the-target-framework-and-platform-toolset)
+- [Comment modifier le cadre cible et l’outil de plate-forme (CMD)](/cpp/build/how-to-modify-the-target-framework-and-platform-toolset)
