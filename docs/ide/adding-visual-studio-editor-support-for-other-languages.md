@@ -17,10 +17,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: d4fafaf9356d8862808e1ac6ad125207d71769b5
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75590876"
 ---
 # <a name="add-visual-studio-editor-support-for-other-languages"></a>Ajouter la prise en charge de l’éditeur Visual Studio pour d’autres langages
@@ -37,12 +37,12 @@ Actuellement, Visual Studio fournit la prise en charge de la coloration syntaxiq
 
 |||||||
 |-|-|-|-|-|-|
-|Bat|F#|Java|Markdown|Rust|Visual Basic|
-|Clojure|Aller|JavaDoc|Objective-C|ShaderLab|C#|
+|Bat|F#|Java|Markdown|Rust|Visual Basic|
+|Clojure|Go|JavaDoc|Objective-C|ShaderLab|C#|
 |CMake|Groovy|JSON|Perl|ShellScript|Visual C++|
 |CoffeeScript|HTML|LESS|Python|SQL|VBNet|
 |CSS|INI|LUA|R|Swift|XML|
-|Docker|Jade|Make|Ruby|TypeScript|YAML|
+|Docker|Jade|Marque|Ruby|TypeScript|YAML|
 
 Outre la coloration syntaxique et la saisie semi-automatique des instructions de base, Visual Studio propose également une fonctionnalité appelée [Naviguer vers](https://blogs.msdn.microsoft.com/benwilli/2015/04/09/visual-studio-tip-3-use-navigate-to/). Elle permet de rechercher rapidement des fichiers de code, des chemins de fichier et des symboles de code. Visual Studio fournit la prise en charge de Naviguer vers pour les langages suivants.
 
@@ -54,9 +54,9 @@ Outre la coloration syntaxique et la saisie semi-automatique des instructions de
 
 - JavaScript
 
-- Visual Basic
+- Visual Basic
 
-- Aller
+- Go
 
 - Java
 
@@ -70,17 +70,17 @@ Visual Studio assure la prise en charge des langages dans l’éditeur avec des 
 
 Ajoutez les nouvelles grammaires TextMate pour Visual Studio dans le dossier suivant :
 
-*%userprofile%\\.vs\Extensions*
+*% d’utilisateursprofile%\\.vs’Extensions*
 
 Sous ce chemin de base, ajoutez les dossiers suivants s’ils s’appliquent à votre situation :
 
-|Folder Name|Description|
+|Nom du dossier|Description|
 |-----------------|-----------------|
-|\\ *\<nom_langage>*|Dossier du langage. Remplacez *\<nom_langage>* par le nom du langage. Par exemple, *\Matlab*.|
-|*\Syntaxes*|Dossier de la grammaire. Contient les fichiers *.json* de grammaire du langage, tels que *Matlab.json*.|
-|*\Extraits de code*|Dossier des extraits de code. Contient les extraits de code du langage.|
+|\\*\<nom de langue>*|Dossier du langage. Remplacez le * \<nom de langue>* par le nom de la langue. Par exemple, *\Matlab*.|
+|*\Syntaxes*|Dossier de la grammaire. Contient les fichiers *.json* grammaire pour la langue, tels que *Matlab.json*.|
+|*Snippets*|Dossier des extraits de code. Contient les extraits de code du langage.|
 
-Dans Windows, la résolution de *%userprofile%* donne le chemin suivant : *c:\Users\\\<nom_utilisateur>* . Si le dossier *Extensions* n’existe pas sur votre système, vous devrez le créer. Si le dossier existe déjà, il est masqué.
+Dans Windows, la résolution de *%userprofile%* donne le chemin suivant : *c:\Users\\\<nom_utilisateur>*. Si le dossier *Extensions* n’existe pas sur votre système, vous devrez le créer. Si le dossier existe déjà, il est masqué.
 
 > [!TIP]
 > S’il y a des fichiers ouverts dans l’éditeur, vous devrez les fermer et les rouvrir pour afficher la coloration syntaxique après avoir ajouté les grammaires TextMate.

@@ -10,13 +10,13 @@ ms.workload:
 - multiple
 author: mikejo5000
 ms.openlocfilehash: 65b1de58f195b957d080bd21144c22479b1aafed
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75589589"
 ---
-# <a name="how-to-generate-unit-tests-by-using-intellitest"></a>Comment : générer des tests unitaires à l’aide de IntelliTest
+# <a name="how-to-generate-unit-tests-by-using-intellitest"></a>Comment : Générer des tests unitaires en utilisant IntelliTest
 
 IntelliTest explore votre code .NET pour générer des données de test et une suite de tests unitaires. Pour chaque instruction dans le code, une entrée de test est générée pour exécuter cette instruction. Une analyse de cas est effectuée pour chaque branche conditionnelle dans le code. Par exemple, les instructions `if`, les assertions et toutes les opérations susceptibles de lever des exceptions sont analysées. Cette analyse vous permet de générer des données de test pour établir un test unitaire paramétré pour chacune de vos méthodes et de bénéficier d'une couverture de code élevée.
 
@@ -48,7 +48,7 @@ Pour générer des tests unitaires, vos types doivent être publics.
 
    ![Fenêtre Résultats de l'exploration affichée avec des tests](../test/media/pexexplorationresults.png)
 
-Pour générer des tests unitaires pour toutes les méthodes publiques d’une classe, cliquez simplement avec le bouton droit sur la classe au lieu de le faire sur une méthode spécifique, puis choisissez **Exécuter IntelliTest**. Utilisez la liste déroulante dans la fenêtre **Résultats de l'exploration** pour afficher les tests unitaires et les données d'entrée pour chaque méthode dans la classe.
+Pour générer des tests unitaires pour toutes les méthodes publiques d’une classe, cliquez simplement avec le bouton droit sur la classe au lieu de le faire sur une méthode spécifique, puis choisissez **Exécuter IntelliTest**. Utilisez la liste d’abandon dans la fenêtre **résultats d’exploration** pour afficher les tests unitaires et les données d’entrée pour chaque méthode de la classe.
 
 ![Sélectionner les résultats des tests à afficher dans la liste](../test/media/selectpextest.png)
 
@@ -60,7 +60,7 @@ Pour les tests réussis, vérifiez que les résultats indiqués dans la colonne 
 
      ![Sélectionner des tests, puis cliquer avec le bouton droit et choisir Enregistrer](../test/media/savepextests.png)
 
-     Vous pouvez afficher le projet de test et le test unitaire paramétré qui a été créé. Les tests unitaires individuels correspondant à chacune des lignes sont enregistrés dans le fichier *.g.cs* dans le projet de test, et un test unitaire paramétré est enregistré dans son fichier *.cs* correspondant. Vous pouvez exécuter les tests unitaires et afficher les résultats dans l'Explorateur de tests au même titre qu'un autre test unitaire que vous avez créé manuellement.
+     Vous pouvez voir le projet de test et le test unitaire paramétré qui a été créé - les différents tests unitaires, correspondant à chacune des lignes, sont enregistrés dans le fichier *.g.cs* dans le projet de test, et un test unitaire paramétré est enregistré dans son fichier *correspondant .cs.* Vous pouvez exécuter les tests unitaires et afficher les résultats dans l'Explorateur de tests au même titre qu'un autre test unitaire que vous avez créé manuellement.
 
      ![Ouvrir le fichier de classe dans la méthode de test pour afficher le test unitaire](../test/media/testmethodpex.png)
 
@@ -80,7 +80,7 @@ Pour les tests réussis, vérifiez que les résultats indiqués dans la colonne 
 
      ![Cliquer avec le bouton droit sur l’avertissement et choisir Corriger](../test/media/pexfixwarning.png)
 
-     Ce choix est ajouté au fichier *PexAssemblyInfo.cs*.
+     Ce choix est ajouté dans le fichier *PexAssemblyInfo.cs.*
 
      `[assembly: PexUseType(typeof(Camera))]`
 
@@ -92,7 +92,7 @@ Pour les tests réussis, vérifiez que les résultats indiqués dans la colonne 
 
 Spécifiez la relation générale entre les entrées et les sorties que les tests unitaires générés doivent valider. Cette spécification est encapsulée dans une méthode qui ressemble à une méthode de test, mais qui est quantifiée de façon universelle. Il s'agit de la méthode de test unitaire paramétré, et les assertions que vous faites doivent contenir toutes les valeurs d'entrée possibles qu'IntelliTest peut générer.
 
-## <a name="q--a"></a>Q et R
+## <a name="q--a"></a>Questions et réponses
 
 ### <a name="q-can-you-use-intellitest-for-unmanaged-code"></a>Q : Pouvez-vous utiliser IntelliTest pour du code non managé ?
 
@@ -128,7 +128,7 @@ Si vous ajoutez une hypothèse et que vous relancez IntelliTest, les données de
 
 Si vous ajoutez une assertion et que vous relancez IntelliTest, ce dernier vérifie que votre assertion est valide et le test échoue si elle ne l’est pas.
 
-### <a name="NoRun"></a> Q : Puis-je générer des tests unitaires paramétrables sans auparavant exécuter IntelliTest ?
+### <a name="q-can-i-generate-parameterized-unit-tests-without-running-intellitest-first"></a><a name="NoRun"></a>Q: Puis-je générer des tests unitaires paramétrés sans exécuter IntelliTest en premier?
 
 **R :** Oui, cliquez avec le bouton droit sur la classe ou la méthode, puis choisissez **Créer IntelliTest**.
 
@@ -142,13 +142,13 @@ Acceptez le format par défaut pour générer vos tests ou modifiez la façon do
 ### <a name="q-can-i-use-other-unit-test-frameworks-with-intellitest"></a>Q : Puis-je utiliser d’autres infrastructures de tests unitaires avec IntelliTest ?
 
 **R :** Oui, suivez ces étapes pour [rechercher et installer d’autres frameworks](../test/install-third-party-unit-test-frameworks.md).
-Les extensions de Framework de test sont également disponibles dans Visual Studio Marketplace, par exemple, [nunit Test Generator](https://marketplace.visualstudio.com/items?itemName=NUnitDevelopers.TestGeneratorNUnitextension-18371).
+Des extensions de cadre de test sont également disponibles dans Visual Studio Marketplace, par exemple, [NUnit Test Generator](https://marketplace.visualstudio.com/items?itemName=NUnitDevelopers.TestGeneratorNUnitextension-18371).
 
 Après avoir redémarré Visual Studio et rouvert votre solution, cliquez avec le bouton droit sur la classe ou la méthode, puis choisissez **Créer IntelliTest**. Sélectionnez l’infrastructure installée ici :
 
 ![Sélectionner un autre framework de test unitaire pour IntelliTest](../test/media/pexcreateintellitestextensions.png)
 
-Exécutez ensuite IntelliTest pour générer des tests unitaires individuels dans leurs fichiers *.g.cs* correspondants.
+Ensuite, exécutez IntelliTest pour générer des tests unitaires individuels dans leurs fichiers *.g.cs* correspondants.
 
 ### <a name="q-can-i-learn-more-about-how-the-tests-are-generated"></a>Q : Puis-je en savoir plus sur la façon dont les tests sont générés ?
 

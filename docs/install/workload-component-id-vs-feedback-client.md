@@ -17,10 +17,10 @@ ms.prod: visual-studio-windows
 ms.technology: vs-installation
 monikerRange: vs-2017
 ms.openlocfilehash: 5cba73bd7ea3e0251174ea7a702cd80509fbd954
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/16/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "76113846"
 ---
 # <a name="visual-studio-feedback-client-component-directory"></a>Répertoire des composants Visual Studio Feedback Client
@@ -46,7 +46,7 @@ Pour plus d’informations sur l’utilisation de ces ID, consultez la page [Uti
 
 ### <a name="components-included-by-this-workload"></a>Composants inclus par cette charge de travail
 
-ID de composant | Name | Version | Type de dépendance
+ID de composant | Nom | Version | Type de dépendance
 --- | --- | --- | ---
 Microsoft.VisualStudio.Component.TestTools.FeedbackClient | Outil de Feedback Microsoft | 15.6.27406.0 | Obligatoire
 
@@ -54,9 +54,9 @@ Microsoft.VisualStudio.Component.TestTools.FeedbackClient | Outil de Feedback Mi
 
 Il s’agit de composants qui ne sont inclus dans aucune charge de travail, mais qui peuvent être sélectionnés de manière individuelle.
 
-ID de composant | Name | Version
+ID de composant | Nom | Version
 --- | --- | ---
-N/A | N/A | N/A
+n/a | n/a | n/a
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
@@ -66,4 +66,4 @@ N/A | N/A | N/A
 * [Guide de l’administrateur Visual Studio](visual-studio-administrator-guide.md)
 * [Utiliser les paramètres de ligne de commande pour installer Visual Studio](use-command-line-parameters-to-install-visual-studio.md)
   * [Exemples de paramètres de ligne de commande](command-line-parameter-examples.md)
-* [Créer une installation hors connexion de Visual Studio](create-an-offline-installation-of-visual-studio.md)
+* [Créer une installation hors ligne de Visual Studio](create-an-offline-installation-of-visual-studio.md)

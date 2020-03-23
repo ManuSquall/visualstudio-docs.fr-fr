@@ -19,10 +19,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 90fbd517608c9c36db0b1035f296b9d9402abddd
-ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/26/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77633029"
 ---
 # <a name="output-element-msbuild"></a>Élément Output (MSBuild)
@@ -54,7 +54,7 @@ Stocke les valeurs de sortie d’une tâche dans les éléments et les propriét
 
 ### <a name="child-elements"></a>Éléments enfants
 
- None.
+ Aucun.
 
 ### <a name="parent-elements"></a>Éléments parents
 
@@ -62,7 +62,7 @@ Stocke les valeurs de sortie d’une tâche dans les éléments et les propriét
 | - | - |
 | [Tâche](../msbuild/task-element-msbuild.md) | Crée et exécute une instance d’une tâche MSBuild. |
 
-## <a name="example"></a>Exemple
+## <a name="example"></a> Exemple
 
  L’exemple de code ci-après présente l’exécution de la tâche `Csc` au sein d’un élément `Target`. Les éléments et propriétés transmis aux paramètres de la tâche sont déclarés en dehors de la portée de cet exemple. La valeur du paramètre de sortie `OutputAssembly` est stockée dans l’élément `FinalAssemblyName`, et la valeur du paramètre de sortie `BuildSucceeded` est stockée dans la propriété `BuildWorked`. Pour plus d’informations, consultez l’article [Tâches MSBuild](../msbuild/msbuild-tasks.md).
 
@@ -85,5 +85,5 @@ Stocke les valeurs de sortie d’une tâche dans les éléments et les propriét
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Informations de référence sur le schéma de fichier projet](../msbuild/msbuild-project-file-schema-reference.md)
-- [Tâches :](../msbuild/msbuild-tasks.md)
+- [Référence du schéma de fichier de projet](../msbuild/msbuild-project-file-schema-reference.md)
+- [Tâches](../msbuild/msbuild-tasks.md)

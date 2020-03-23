@@ -18,26 +18,26 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 996c863612907593ce2c198d4910cda150737c3c
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/16/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "76115062"
 ---
 # <a name="understand-build-platforms"></a>Présentation des plateformes de build
 
 Vous pouvez stocker différentes versions de propriétés de solution et de projet qui s’appliquent à diverses plateformes cibles. Par exemple, vous pouvez créer une configuration de débogage qui cible une plateforme x86 et une autre qui cible une plateforme x64. Vous pouvez rapidement changer la plateforme active et ainsi générer facilement plusieurs configurations.
 
-## <a name="in-this-section"></a>Dans cette section
+## <a name="in-this-section"></a>Contenu de cette section
 
-[Comment : configurer des projets pour cibler des plateformes](../ide/how-to-configure-projects-to-target-platforms.md)\
+[Comment : Configurer des projets pour cibler les plates-formes](../ide/how-to-configure-projects-to-target-platforms.md)\
 Explique comment configurer un projet pour cibler une plateforme spécifique.
 
-[Comment : configurer des projets pour cibler plusieurs plateformes](../ide/how-to-configure-projects-to-target-multiple-platforms.md)\
+[Comment configurer les projets pour cibler plusieurs plates-formes](../ide/how-to-configure-projects-to-target-multiple-platforms.md)\
 Explique comment configurer un projet pour cibler plusieurs plateformes.
 
 ## <a name="see-also"></a>Voir aussi
 
 - [Procédure pas à pas : générer une application](../ide/walkthrough-building-an-application.md)
 - [Générer et nettoyer des solutions et des projets dans Visual Studio](../ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md)
-- [Compiler et générer](../ide/compiling-and-building-in-visual-studio.md)
+- [Compilation et génération](../ide/compiling-and-building-in-visual-studio.md)

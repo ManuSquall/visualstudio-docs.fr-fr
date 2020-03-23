@@ -14,24 +14,24 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 440bc01b52269c477d9d2f2194fd831041f1d20d
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75596318"
 ---
 # <a name="specify-counter-sets-and-threshold-rules-for-computers-in-a-load-test"></a>Spécifier des ensembles de compteurs et des règles de seuil pour les ordinateurs dans un test de charge
 
-Les tests de charge fournissent des ensembles de compteurs nommés, qui sont utiles lorsque vous analysez des données de compteur de performance. Les ensembles de compteurs sont organisés par technologie et incluent Application, ASP.NET, .NET Application, IIS et SQL. Quand vous créez un test de charge avec **l’Assistant Nouveau test de charge**, vous ajoutez un ensemble initial de compteurs. Ceux-ci vous offrent un groupe d'ensembles de compteurs prédéfinis et importants pour votre test de charge. Vous gérez vos compteurs dans l’**éditeur de test de charge**.
+Les tests de charge fournissent des ensembles de compteurs nommés, qui sont utiles lorsque vous analysez des données de compteur de performance. Les ensembles de compteurs sont organisés par technologie et incluent Application, ASP.NET, .NET Application, IIS et SQL. Quand vous créez un test de charge avec **l’Assistant Nouveau test de charge**, vous ajoutez un ensemble initial de compteurs. Ceux-ci vous offrent un groupe d'ensembles de compteurs prédéfinis et importants pour votre test de charge. Vous gérez vos compteurs dans **l’éditeur de test de charge**.
 
 [!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 > [!NOTE]
-> Si vos tests de charge sont répartis entre des ordinateurs distants, les compteurs de contrôleur et d'agent sont automatiquement mappés au contrôleur et aux ensembles de compteurs de l'agent. Pour plus d’informations sur l’utilisation d’ordinateurs distants dans votre test de charge, consultez [Contrôleurs de test et agents de test](configure-test-agents-and-controllers-for-load-tests.md).
+> Si vos tests de charge sont répartis entre des ordinateurs distants, les compteurs de contrôleur et d'agent sont automatiquement mappés au contrôleur et aux ensembles de compteurs de l'agent. Pour plus d’informations sur l’utilisation de machines distantes dans votre test de charge, consultez [Contrôleurs de test et agents de test](configure-test-agents-and-controllers-for-load-tests.md).
 
 Les ensembles de compteurs sont recueillis sur les ordinateurs que vous spécifiez. L’association entre un ensemble de compteurs et un ordinateur qui est utilisé pendant un test de charge porte le nom de *mappage d’ensemble de compteurs*. Par exemple, le serveur web que vous testez peut avoir des mappages d’ensembles de compteurs ASP.NET, IIS et .NET.
 
-Par défaut, les compteurs de performance sont rassemblés sur le contrôleur et les agents. Pour plus d’informations, consultez [Contrôleurs de test et agents de test](configure-test-agents-and-controllers-for-load-tests.md).
+Par défaut, les compteurs de performance sont rassemblés sur le contrôleur et les agents. Pour plus d’informations, consultez [les contrôleurs de test et les agents d’essai](configure-test-agents-and-controllers-for-load-tests.md).
 
 Il est important que vous ajoutiez les serveurs sous test à la liste des ordinateurs sur lesquels rassembler des compteurs. De cette manière, toutes les données système importantes sont rassemblées et surveillées pendant le test de charge.
 
@@ -39,9 +39,9 @@ Il est important que vous ajoutiez les serveurs sous test à la liste des ordina
 
 |Tâches|Rubriques associées|
 |-|-----------------------|
-|**Gérer les ensembles de compteurs pour votre test de charge :** Après avoir créé votre test de charge, vous pouvez modifier l’ensemble de compteurs dans l’éditeur de test de charge. La gestion d'ensembles de compteurs implique le choix du jeu d'ordinateurs à partir duquel vous souhaitez collecter des données de performance et l'assignation d'un jeu d'ensembles de compteurs à collecter à partir de chaque ordinateur individuel. Vous gérez vos compteurs dans l'Éditeur de test de charge.|-   [Guide pratique pour gérer des ensembles de compteurs](../test/how-to-manage-counter-sets-using-the-load-test-editor.md)|
+|**Gérer les ensembles de compteurs pour votre test de charge :** Après avoir créé votre test de charge, vous pouvez modifier l’ensemble de compteurs dans l’éditeur de test de charge. La gestion d'ensembles de compteurs implique le choix du jeu d'ordinateurs à partir duquel vous souhaitez collecter des données de performance et l'assignation d'un jeu d'ensembles de compteurs à collecter à partir de chaque ordinateur individuel. Vous gérez vos compteurs dans l'éditeur de test de charge.|-   [Comment : Gérer les ensembles de compteurs](../test/how-to-manage-counter-sets-using-the-load-test-editor.md)|
 |**Ajouter des ensembles de compteurs à votre test de charge :** quand vous créez un test de charge avec l’**Assistant Nouveau test de charge**, vous ajoutez un ensemble initial de compteurs. Ceux-ci vous offrent un groupe d'ensembles de compteurs prédéfinis pour votre test de charge. Après avoir créé un test de charge, vous pouvez ajouter de nouveaux compteurs aux ensembles de compteurs existants à l'aide de l'éditeur de test de charge.|-   [Guide pratique pour ajouter des compteurs à des ensembles de compteurs](../test/how-to-add-counters-to-counter-sets-using-the-load-test-editor.md)<br />-   [Guide pratique pour ajouter des ensembles de compteurs personnalisés](../test/how-to-add-custom-counter-sets-using-the-load-test-editor.md)|
-|**Spécifier une règle de seuil à l’aide de compteurs pour votre test de charge :** Une règle de seuil est une règle définie sur un compteur de performances individuel pour monitorer l’utilisation des ressources système pendant un test de charge. Les définitions d'ensembles de compteurs contiennent des règles de seuil prédéfinies pour de nombreux compteurs de performance clés. Les règles de seuil contenues dans des tests de charge comparent une valeur de compteur de performance à une valeur de constante ou une autre valeur de compteur de performance.|-   [Guide pratique pour ajouter une règle de seuil](../test/how-to-add-a-threshold-rule-using-the-load-test-editor.md)|
+|**Spécifier une règle de seuil à l’aide de compteurs pour votre test de charge :** Une règle de seuil est une règle définie sur un compteur de performances individuel pour monitorer l’utilisation des ressources système pendant un test de charge. Les définitions d'ensembles de compteurs contiennent des règles de seuil prédéfinies pour de nombreux compteurs de performance clés. Les règles de seuil contenues dans des tests de charge comparent une valeur de compteur de performance à une valeur de constante ou une autre valeur de compteur de performance.|-   [Comment : Ajouter une règle de seuil](../test/how-to-add-a-threshold-rule-using-the-load-test-editor.md)|
 |**Assigner des noms conviviaux aux ordinateurs auxquels les ensembles de compteurs sont mappés :** Vous pouvez ajouter des balises d’ordinateur qui vous permettent d’appliquer un nom reconnu facilement par un ordinateur. Les balises s’affichent dans le nœud **Mappages des ensembles de compteurs** de l’arborescence dans l’éditeur de test de charge. Plus important, les balises s'affichent dans les rapports Excel qui permettent aux parties prenantes d'identifier le rôle de l'ordinateur dans le test de charge, par exemple, « ServerWeb1 dans lab2 » ou « SQL Server2 dans le bureau de Phoenix ».<br /><br /> Pour plus d’informations, voir [Créer des rapports sur les résultats des tests de charge à des fins de comparaison ou d’analyse des tendances](../test/compare-load-test-results.md).||
 
 ## <a name="use-counter-sets"></a>Utiliser des ensembles de compteurs
@@ -68,10 +68,10 @@ Voici certaines indications pour les taux d'échantillonnage.
 
 |Durée du test de charge|Taux d'échantillonnage recommandé|
 |-|-----------------------------|
-|\< 1 heure|5 secondes|
-|1 à 8 heures|15 secondes|
+|\< 1 heure|5 secondes|
+|1 à 8 heures|15 secondes|
 |8 à 24 heures|30 secondes|
-|> 24 heures|60 secondes|
+|> 24 heures|60 secondes|
 
 ## <a name="store-performance-data"></a>Stocker les données de performances
 
@@ -79,7 +79,7 @@ Durant une série de tests de charge, les données des compteurs de performances
 
 ## <a name="about-threshold-rules"></a>À propos des règles de seuil
 
-Une *règle de seuil* est une règle définie sur un compteur de performances individuel pour monitorer l’utilisation des ressources système pendant un test de charge. Les définitions d'ensembles de compteurs contiennent des règles de seuil prédéfinies pour de nombreux compteurs de performance clés. Pour plus d’informations, consultez [Utiliser des ensembles de compteurs pour analyser les données des compteurs de performances dans les tests de charge](../test/specify-counter-sets-and-threshold-rules-for-load-testing.md).
+Une *règle de seuil* est une règle qui est fixée sur un compteur de performance individuel pour surveiller l’utilisation des ressources du système pendant un test de charge. Les définitions d'ensembles de compteurs contiennent des règles de seuil prédéfinies pour de nombreux compteurs de performance clés. Pour plus d’informations, consultez [Utiliser des ensembles de compteurs pour analyser les données des compteurs de performances dans les tests de charge](../test/specify-counter-sets-and-threshold-rules-for-load-testing.md).
 
 ## <a name="threshold-rules-and-levels"></a>Règles de seuil et niveaux
 

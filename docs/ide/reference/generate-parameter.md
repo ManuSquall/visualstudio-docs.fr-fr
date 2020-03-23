@@ -1,20 +1,21 @@
 ---
 title: Générer la refactorisation des paramètres
-ms.date: 06/19/2019
+ms.date: 03/10/2020
 ms.topic: reference
 author: mikadumont
 ms.author: midumont
 manager: jillfra
 dev_langs:
 - CSharp
+- VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: e95e76c35afdb8cdbe38c8b33329734ba68361b1
-ms.sourcegitcommit: 7eb2fb21805d92f085126f3a820ac274f2216b4e
-ms.translationtype: HT
+ms.openlocfilehash: 372a3f705e5e85c0edb31a754105f61056402b9f
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/22/2019
-ms.locfileid: "67329038"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79094341"
 ---
 # <a name="generate-parameter"></a>Générer un paramètre
 
@@ -22,15 +23,17 @@ Cette refactorisation s’applique à :
 
 - C#
 
-**Quoi :** Génère automatiquement un paramètre de méthode.
+- Visual Basic
 
-**Quand :** Vous référencez une variable dans une méthode qui n’existe pas dans le contexte actuel et recevez une erreur ; vous pouvez générer un paramètre comme correctif de code. 
+**Quoi :** Génère automatiquement un paramètre de méthode.
 
-**Pourquoi :** Vous pouvez rapidement modifier une signature de méthode sans perdre le contexte.
+**Quand :** Vous faites référence à une variable dans une méthode qui n’existe pas dans le contexte actuel et recevez une erreur; vous pouvez générer un paramètre comme un correctif de code. 
 
-## <a name="how-to"></a>Procédure
+**Pourquoi:** Vous pouvez rapidement modifier une signature de méthode sans perdre de contexte.
 
-1. Placez votre curseur sur le nom de la variable, puis appuyez sur **Ctrl**+ **.** pour afficher le menu **Actions rapides et refactorisations**.
+## <a name="how-to"></a>Procédures
+
+1. Placez votre curseur dans le nom variable et appuyez sur **Ctrl**+**.** pour afficher le menu **Actions rapides et refactorisations**.
 1. Sélectionnez **Générer un paramètre**.
 
    ![Générer un paramètre](media/generate-parameter.png) 

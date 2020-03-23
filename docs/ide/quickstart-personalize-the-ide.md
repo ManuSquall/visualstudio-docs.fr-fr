@@ -8,10 +8,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 11cd73574f42fffb7bcfcda5ab47496fe92565c7
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "75596942"
 ---
 # <a name="personalize-the-visual-studio-ide-and-editor"></a>Personnaliser l’éditeur et l’IDE de Visual Studio
@@ -36,7 +36,7 @@ Le thème de couleur par défaut de l’interface utilisateur de Visual Studio s
 
 1. Dans la barre de menus, qui est la rangée de menus tels que **Fichier** et **Edition**, choisissez **Outils** > **Options**.
 
-1. Dans la page **Environnement** > **Options générales**, remplacez la sélection du **Thème de couleur** par **Sombre**, puis choisissez **OK**.
+1. Sur la page **d’options Environnement** > **Général,** changer la sélection **de thème couleur** à **Dark**, puis choisir **OK**.
 
    Le thème de couleur de tout l’environnement de développement (IDE) Visual Studio change et devient **Sombre**.
 
@@ -53,13 +53,13 @@ Le thème de couleur par défaut de l’interface utilisateur de Visual Studio s
    ::: moniker-end
 
 > [!TIP]
-> Vous pouvez installer d’autres thèmes prédéfinis en téléchargeant et en installant **l’éditeur de thème de couleur de Visual Studio** à partir de la [Place de marché Visual Studio](https://marketplace.visualstudio.com/items?itemName=VisualStudioPlatformTeam.VisualStudio2017ColorThemeEditor). Une fois cet outil installé, d’autres thèmes de couleurs apparaissent dans la liste déroulante des **thèmes de couleurs**.
+> Vous pouvez installer d’autres thèmes prédéfinis en téléchargeant et en installant **l’éditeur de thème de couleur de Visual Studio** à partir de la [Place de marché Visual Studio](https://marketplace.visualstudio.com/items?itemName=VisualStudioPlatformTeam.VisualStudio2017ColorThemeEditor). Après avoir installé cet outil, d’autres thèmes de couleur apparaissent dans la liste d’abandon du **thème couleur.**
 
 ## <a name="change-text-color"></a>Modifier la couleur du texte
 
 Nous allons maintenant personnaliser des couleurs de texte dans l’éditeur. Tout d’abord, créons un fichier XML pour voir les couleurs par défaut.
 
-1. Dans la barre de menus, choisissez **Fichier** > **Nouveau** > **Fichier**.
+1. De la barre de menu, choisissez **File** > **New** > **File**.
 
 1. Dans la boîte de dialogue **Nouveau fichier**, sous la catégorie **Général**, choisissez **Fichier XML**, puis **Ouvrir**.
 
@@ -118,4 +118,4 @@ Nous avons seulement exploré deux façons de personnaliser les couleurs dans Vi
 ## <a name="see-also"></a>Voir aussi
 
 - [Personnaliser l’éditeur](../ide/how-to-change-text-case-in-the-editor.md)
-- [Vue d’ensemble de l’IDE Visual Studio](../get-started/visual-studio-ide.md)
+- [Visual Studio IDE Aperçu](../get-started/visual-studio-ide.md)

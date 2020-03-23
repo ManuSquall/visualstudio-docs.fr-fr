@@ -14,10 +14,10 @@ ms.workload:
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.openlocfilehash: 53049d37f23a72adb337cdad629f4c689c83707e
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/16/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "76114606"
 ---
 # <a name="install-build-tools-into-a-container"></a>Installer Build Tools dans un conteneur
@@ -136,7 +136,7 @@ Enregistrez l’exemple Dockerfile suivant dans un nouveau fichier sur votre dis
    ::: moniker-end
    
    > [!NOTE]
-   > Le code d’erreur `3010` est utilisé pour indiquer la réussite d’un redémarrage requis. pour plus d’informations, consultez [les messages d’erreur de MsiExec. exe](/windows/win32/msi/error-codes) .
+   > Le `3010` code d’erreur est utilisé pour indiquer le succès avec un redémarrage requis, voir [les messages d’erreur MsiExec.exe](/windows/win32/msi/error-codes) pour plus d’informations.
 
 1. Exécutez la commande suivante dans ce répertoire.
 

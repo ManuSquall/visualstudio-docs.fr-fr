@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 6b7848189c866481e6e97d05d95b5fb97a3d4893
-ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/26/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77633913"
 ---
 # <a name="how-to-clean-a-build"></a>Guide pratique pour nettoyer une build
@@ -51,15 +51,15 @@ Quand vous nettoyez une build, tous les fichiers intermédiaires et de sortie so
 
      `<RemoveDir Directories="$(builtdir)" />`
 
-## <a name="example"></a>Exemple
+## <a name="example"></a> Exemple
 
  L’exemple de projet de code suivant contient une nouvelle cible `Clean`, qui utilise la tâche `RemoveDir` pour supprimer un répertoire, ainsi que tous les fichiers et répertoires qu’il contient. De plus, dans cet exemple, la cible `Compile` crée un répertoire distinct pour les éléments de sortie qui sont supprimés quand la build est nettoyée.
 
- `Compile` est défini comme cible par défaut et est donc utilisée automatiquement, sauf si vous spécifiez une ou plusieurs cibles différentes. Vous utilisez le commutateur de ligne de commande **-target** pour spécifier une autre cible. Par exemple :
+ `Compile` est défini comme cible par défaut et est donc utilisée automatiquement, sauf si vous spécifiez une ou plusieurs cibles différentes. Vous utilisez le commutateur de ligne **de commande-cible** pour spécifier une cible différente. Par exemple :
 
  `msbuild <file name>.proj -target:Clean`
 
- Le commutateur **-target** peut être abrégé en **-t** et vous pouvez spécifier plusieurs cibles. Par exemple, pour utiliser la cible `Clean`, puis la cible `Compile`, tapez :
+ Le **commutateur-cible** peut être raccourci à **-t** et peut spécifier plus d’une cible. Par exemple, pour utiliser la cible `Clean`, puis la cible `Compile`, tapez :
 
  `msbuild <file name>.proj -t:Clean;Compile`
 
@@ -105,7 +105,7 @@ Quand vous nettoyez une build, tous les fichiers intermédiaires et de sortie so
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Tâche MakeDir](../msbuild/makedir-task.md)
-- [Tâche RemoveDir](../msbuild/removedir-task.md)
+- [MakeDir, tâche](../msbuild/makedir-task.md)
+- [Supprimer la tâcheDir](../msbuild/removedir-task.md)
 - [Tâche Csc](../msbuild/csc-task.md)
 - [Cibles](../msbuild/msbuild-targets.md)

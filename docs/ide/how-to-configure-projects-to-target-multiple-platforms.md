@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 5b86a5c95131a4dcb2e6af199b57e9c8302790b5
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/16/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "76114454"
 ---
 # <a name="how-to-configure-projects-to-target-multiple-platforms"></a>Guide pratique pour configurer des projets et cibler plusieurs plateformes
@@ -37,7 +37,7 @@ Si vous constatez que vous n’avez pas besoin d’une plateforme, vous pouvez l
 
 1. Dans le menu **Générer**, cliquez sur **Gestionnaire de configuration**.
 
-2. Dans la **zone Plateforme de la solution active**, sélectionnez **\<Modifier>** . La boîte de dialogue **Modifier les plateformes de solution** s’affiche.
+2. Dans la **zone Plateforme de la solution active**, sélectionnez **\<Modifier>**. La boîte de dialogue **Modifier les plateformes de solution** s’affiche.
 
 3. Cliquez sur la plateforme à supprimer, puis sur **Supprimer**.
 
@@ -63,6 +63,6 @@ Si vous constatez que vous n’avez pas besoin d’une plateforme, vous pouvez l
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Guide pratique pour créer et modifier des configurations](../ide/how-to-create-and-edit-configurations.md)
+- [Comment : Créer et modifier des configurations](../ide/how-to-create-and-edit-configurations.md)
 - [Présentation des configurations de build](../ide/understanding-build-configurations.md)
 - [Générer et nettoyer des solutions et des projets dans Visual Studio](../ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md)

@@ -15,17 +15,17 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: e636969164c4cf2526bb85add95e7cfe02ce6176
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75593328"
 ---
 # <a name="how-to-add-or-remove-imported-namespaces-visual-basic"></a>Guide pratique pour ajouter ou supprimer des espaces de noms importés (Visual Basic)
 
 L’importation d’un espace de noms vous permet d’utiliser des éléments issus de cet espace de noms dans votre code sans avoir à qualifier complètement l’élément. Par exemple, pour accéder à la méthode `Create` dans la classe `System.Messaging.MessageQueue`, vous pouvez importer l’espace de noms `System.Messaging` et simplement référencer l’élément dont vous avez besoin dans le code sous la forme `MessageQueue.Create`.
 
-Les espaces de noms importés sont gérés dans la page **Références** du **Concepteur de projet**. Les importations que vous spécifiez dans cette boîte de dialogue sont passées directement au compilateur ( */imports*) et s’appliquent à tous les fichiers de votre projet. Utilisez l’instruction `Imports` pour utiliser un espace de noms dans un fichier de code source unique.
+Les espaces de noms importés sont gérés dans la page **Références** du **Concepteur de projet**. Les importations que vous spécifiez dans cette boîte de dialogue sont passées directement au compilateur (*/imports*) et s’appliquent à tous les fichiers de votre projet. Utilisez l’instruction `Imports` pour utiliser un espace de noms dans un fichier de code source unique.
 
 ### <a name="to-add-an-imported-namespace"></a>Pour ajouter un espace de noms importé
 

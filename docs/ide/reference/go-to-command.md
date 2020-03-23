@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 535906d8b8d7f8ba0c2984d22ceead18a0d47c2d
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75569203"
 ---
 # <a name="go-to-command"></a>Atteindre, commande
@@ -31,16 +31,16 @@ Edit.GoTo [linenumber]
 
 ## <a name="arguments"></a>Arguments
 `linenumber`\
-Option facultative. Nombre entier représentant le numéro de la ligne à atteindre.
+facultatif. Nombre entier représentant le numéro de la ligne à atteindre.
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Notes 
 La numérotation des lignes débute à 1. Si la valeur de `linenumber` est inférieure à 1, la première ligne est affichée. Si la valeur de `linenumber` est supérieure au numéro de la dernière ligne, la dernière ligne est affichée.
 
 Si aucune valeur n’est spécifiée pour `linenumber`, la boîte de dialogue **Atteindre la ligne** s’affiche.
 
 L’alias de cette commande est GoToLn.
 
-## <a name="example"></a>Exemple
+## <a name="example"></a> Exemple
 
 ```cmd
 >Edit.GoTo 125
@@ -48,7 +48,7 @@ L’alias de cette commande est GoToLn.
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Visual Studio, commandes](../../ide/reference/visual-studio-commands.md)
-- [Fenêtre Commande](../../ide/reference/command-window.md)
-- [Rechercher/Commande, zone](../../ide/find-command-box.md)
-- [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)
+- [Commandes de studio visuel](../../ide/reference/visual-studio-commands.md)
+- [Commande, fenêtre](../../ide/reference/command-window.md)
+- [Boîte de recherche/commande](../../ide/find-command-box.md)
+- [Alias de commande de studio visuel](../../ide/reference/visual-studio-command-aliases.md)

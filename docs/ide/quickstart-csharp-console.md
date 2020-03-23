@@ -16,10 +16,10 @@ dev_langs:
 ms.workload:
 - multiple
 ms.openlocfilehash: 20b2cf2bf12e9b24ca12d0a73b43e4a56e8246f4
-ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/25/2020
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "77579490"
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-c-console-app"></a>Démarrage rapide : Utiliser Visual Studio pour créer une première application console C#
@@ -46,19 +46,19 @@ Vous allez d’abord créer un projet d’application C#. Le type de projet incl
 
 1. Ouvrez Visual Studio 2017.
 
-2. Dans la barre de menus supérieure, choisissez **fichier** > **nouveau** > **projet**.
+2. Dans la barre de menus supérieure, choisissez **Fichier** > **Nouveau** > **Projet**.
 
-3. Dans le volet gauche de la boîte de dialogue **Nouveau projet**, développez **C#** , puis choisissez **.NET Core**. Dans le volet central, choisissez **Application console (.NET Core)** . Ensuite, nommez le projet *HelloWorld*.
+3. Dans le volet gauche de la boîte de dialogue **Nouveau projet**, développez **C#**, puis choisissez **.NET Core**. Dans le volet central, choisissez **Application console (.NET Core)**. Ensuite, nommez le projet *HelloWorld*.
 
    ![Modèle de projet d’application console (.NET Core) dans la boîte de dialogue Nouveau projet dans l’IDE de Visual Studio](../ide/media/new-project-csharp-dotnetcore-helloworld-console-app.png)
 
-     Si vous ne voyez pas le modèle de projet **Application console (.NET Core)** , cliquez sur le lien **Ouvrir Visual Studio Installer** dans le volet gauche de la boîte de dialogue **Nouveau projet**.
+     Si vous ne voyez pas le modèle de projet **Application console (.NET Core)**, cliquez sur le lien **Ouvrir Visual Studio Installer** dans le volet gauche de la boîte de dialogue **Nouveau projet**.
 
    ![Cliquer sur le lien Ouvrir Visual Studio Installer dans la boîte de dialogue Nouveau projet](../ide/media/csharp-open-visual-studio-installer-hello-world.png)
 
      Visual Studio Installer est lancé. Choisissez la charge de travail **Développement multiplateforme .NET Core**, puis choisissez **Modifier**.
 
-     ![Charge de travail Développement multiplateforme .Net Core dans Visual Studio Installer](../ide/media/dot-net-core-xplat-dev-workload.png)
+     ![Charge de travail Développement multiplateforme .Net Core dans le programme d’installation de Visual Studio](../ide/media/dot-net-core-xplat-dev-workload.png)
 
 ::: moniker-end
 
@@ -66,28 +66,28 @@ Vous allez d’abord créer un projet d’application C#. Le type de projet incl
 
 1. Ouvrez Visual Studio 2019.
 
-1. Dans la fenêtre de démarrage, choisissez **Créer un projet**.
+1. Sur la fenêtre de départ, choisissez **Créer un nouveau projet**.
 
    ![Fenêtre « Créer un projet »](../get-started/media/vs-2019/create-new-project-dark-theme.png)
 
 1. Dans la fenêtre **Créer un projet**, entrez ou tapez *console* dans la zone de recherche. Ensuite, choisissez **C#** Dans la liste des langages, puis choisissez **Windows** dans la liste des plateformes. 
 
-   Après avoir appliqué les filtres de langage et de plateforme, choisissez le modèle **Application console (.NET Core)** , puis choisissez **Suivant**.
+   Après avoir appliqué les filtres de langage et de plateforme, choisissez le modèle **Application console (.NET Core)**, puis choisissez **Suivant**.
 
    ![Choisissez le modèle C# pour l’application console (.NET Framework).](../get-started/csharp/media/vs-2019/csharp-create-new-project-search-console-net-core-filtered.png)
 
    > [!NOTE]
-   > Si vous ne voyez pas le modèle **Application console (.NET Core)** , vous pouvez l’installer à partir de la fenêtre **Créer un projet**. Dans le **Vous ne trouvez pas ce que vous cherchez ?** , choisissez le lien **Installer plus d’outils et de fonctionnalités**.
+   > Si vous ne voyez pas le modèle **Application console (.NET Core)**, vous pouvez l’installer à partir de la fenêtre **Créer un projet**. Dans le **Vous ne trouvez pas ce que vous cherchez ?**, choisissez le lien **Installer plus d’outils et de fonctionnalités**.
    >
    > ![Le lien « Installer plus d’outils et de fonctionnalités » du message « Vous ne trouvez pas ce que vous cherchez ? » dans la fenêtre « Créer un projet »](../get-started/media/vs-2019/not-finding-what-looking-for.png) 
    > 
    > Ensuite, dans Visual Studio Installer, choisissez la charge de travail **Développement multiplateforme .NET Core**.
    >
-   > ![Charge de travail Développement multiplateforme .Net Core dans Visual Studio Installer](./media/dot-net-core-xplat-dev-workload.png)
+   > ![Charge de travail Développement multiplateforme .Net Core dans le programme d’installation de Visual Studio](./media/dot-net-core-xplat-dev-workload.png)
    >
    > Après cela, choisissez le bouton **Modifier** dans Visual Studio Installer. Vous pouvez être invité à enregistrer votre travail ; le cas échéant, faites-le. Ensuite, choisissez **Continuer** pour installer la charge de travail. Ensuite, revenez à l’étape 2 de cette procédure « [Créer un projet](#create-a-project) ».
 
-1. Dans la fenêtre **Configurer votre nouveau projet**, tapez ou entrez *HelloWorld* dans la zone **Nom du projet**. Choisissez ensuite **Créer**.
+1. Dans la fenêtre **Configurer votre nouveau projet**, tapez ou entrez *HelloWorld* dans la zone **Nom du projet**. Ensuite, choisissez **Créer**.
 
    ![Dans la fenêtre « Configurer votre nouveau projet », nommez votre projet « HelloWorld »](../get-started/csharp/media/vs-2019/csharp-name-your-helloworld-project.png)
 
@@ -131,9 +131,9 @@ Nous allons ajouter du code pour suspendre l’application afin que la fenêtre 
 
    ![Ajouter du code pour suspendre l’application Hello World](../ide/media/csharp-console-helloworld-add-code.png)
 
-## <a name="run-the-application"></a>Exécution de l'application
+## <a name="run-the-application"></a>Exécuter l’application
 
-1. Cliquez sur le bouton **HelloWorld** dans la barre d’outils pour exécuter l’application en mode débogage. (Vous pouvez également appuyer sur **F5**.)
+1. Cliquez sur le bouton **HelloWorld** dans la barre d’outils pour exécuter l’application en mode débogage. (Ou, vous pouvez appuyer sur **F5**.)
 
    ![Cliquer sur le bouton Hello World pour exécuter l’application à partir de la barre d’outils](../ide/media/csharp-console-hello-world-button.png)
 
@@ -145,7 +145,7 @@ Nous allons ajouter du code pour suspendre l’application afin que la fenêtre 
 
 1. Appuyez sur **Entrée** pour fermer la fenêtre de console.
 
-1. Fermez le volet **Sortie** dans Visual Studio.
+1. Fermez la vitre **de sortie** dans Visual Studio.
 
    ![Fermer le volet Sortie dans Visual Studio](../ide/media/csharp-hello-world-close-output-pane.png)
 

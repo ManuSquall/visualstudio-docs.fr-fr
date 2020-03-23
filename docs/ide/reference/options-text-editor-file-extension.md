@@ -16,10 +16,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 3711a87d84e25fd6f790cee62ecb71b2b046d0be
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75596201"
 ---
 # <a name="options-text-editor-file-extension"></a>Options, Éditeur de texte, Extension de fichier
@@ -28,7 +28,7 @@ Cette boîte de dialogue Options permet de spécifier comment tous les fichiers 
 
 Quand vous sélectionnez une option « avec encodage », une boîte de dialogue s’affiche chaque fois que vous ouvrez un document de ce type et vous permet de sélectionner un schéma de codage pour le document. Ce comportement peut être utile si vous préparez des versions de vos documents de projet pour les utiliser sur différentes plateformes ou dans des langages cibles différents.
 
-## <a name="uielement-list"></a>Liste UIElement
+## <a name="uielement-list"></a>Liste des éléments de l'interface utilisateur
 
 **Extension**
 

@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 2ae04f4cc0afb1c24f391d140081040efe9db50e
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/16/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "76112756"
 ---
 # <a name="how-to-apply-a-shader-to-a-3d-model"></a>Guide pratique pour appliquer un nuanceur à un modèle 3D
@@ -25,7 +25,7 @@ Vous pouvez appliquer un effet de nuanceur à un modèle 3D pour lui donner une 
 
 Avant de commencer, assurez-vous que la fenêtre **Propriétés** est affichée.
 
-1. Commencez par une scène 3D contenant un ou plusieurs modèles. Si vous ne disposez pas d’une scène 3D appropriée, créez-en une comme décrit dans l’article [Guide pratique pour créer un modèle 3D de base](../designers/how-to-create-a-basic-3-d-model.md). Vous devez également disposer d’un nuanceur DGSL que vous pouvez appliquer au modèle. Si vous ne disposez pas d’un nuanceur approprié, créez-en un en suivant la description de l’article [Guide pratique pour créer un nuanceur de couleur de base](../designers/how-to-create-a-basic-color-shader.md) et veillez à l’enregistrer dans un fichier avant de continuer.
+1. Commencez par une scène 3D contenant un ou plusieurs modèles. Si vous n’avez pas une scène 3D appropriée, créez-en une comme décrit dans [Comment : Créer un modèle 3D de base.](../designers/how-to-create-a-basic-3-d-model.md) Vous devez également disposer d’un nuanceur DGSL que vous pouvez appliquer au modèle. Si vous ne disposez pas d’un nuanceur approprié, créez-en un en suivant la description de l’article [Guide pratique pour créer un nuanceur de couleur de base](../designers/how-to-create-a-basic-color-shader.md) et veillez à l’enregistrer dans un fichier avant de continuer.
 
 2. En mode **Sélection**, sélectionnez le modèle que vous souhaitez appliquer au nuanceur puis, dans la fenêtre **Propriétés**, dans la propriété **Nom de fichier** du groupe de propriétés **Effet**, spécifiez le nuanceur DGSL à appliquer au modèle.
 
@@ -33,11 +33,11 @@ Exemple de modèle auquel l’effet de couleur de base est appliqué :
 
 ![Scène 3D montrant l’effet de couleur de base](../designers/media/digit-3d-model-effect.png)
 
-Après avoir appliqué un nuanceur à un modèle, vous pouvez l’ouvrir dans le Concepteur de nuanceur en sélectionnant le modèle, puis, dans la fenêtre **Propriétés**, dans la propriété **(Avancé)** du groupe de propriétés **Effet**, en choisissant le bouton de sélection ( **...** ).
+Après avoir appliqué un nuanceur à un modèle, vous pouvez l’ouvrir dans le Concepteur de nuanceur en sélectionnant le modèle, puis, dans la fenêtre **Propriétés**, dans la propriété **(Avancé)** du groupe de propriétés **Effet**, en choisissant le bouton de sélection (**... **).
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Guide pratique pour créer un modèle 3D de base](../designers/how-to-create-a-basic-3-d-model.md)
-- [Guide pratique pour créer un nuanceur de couleur de base](../designers/how-to-create-a-basic-color-shader.md)
-- [Éditeur de modèles](../designers/model-editor.md)
+- [Comment : Créer un modèle 3D de base](../designers/how-to-create-a-basic-3-d-model.md)
+- [Comment: Créer un shader couleur de base](../designers/how-to-create-a-basic-color-shader.md)
+- [Éditeur modèle](../designers/model-editor.md)
 - [Concepteur Shader](../designers/shader-designer.md)

@@ -10,10 +10,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 3eb001d2022bb57981f21fd99c051c54aeb08301
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75844319"
 ---
 # <a name="create-unit-test-method-stubs-with-the-create-unit-tests-command"></a>Créer des stubs de méthodes de tests unitaires avec la commande Créer des tests unitaires
@@ -26,7 +26,7 @@ La commande **Créer des tests unitaires** permet de créer des stubs de méthod
 ::: moniker-end
 ::: moniker range=">=vs-2019"
 > [!NOTE]
-> La commande de menu **créer des tests unitaires** est uniquement disponible pour le code managé.
+> La commande de menu **Create Unit Tests** n’est disponible que pour le code géré.
 ::: moniker-end
 
 La commande de menu **Créer des tests unitaires** est extensible et peut servir à générer des tests pour MSTest, MSTest V2, NUnit et xUnit.
@@ -58,5 +58,5 @@ Toutefois, cette fonctionnalité est également applicable quand un développeur
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Creating unit test method stubs with "Create Unit Tests"](https://devblogs.microsoft.com/devops/creating-unit-test-method-stubs-with-create-unit-tests/) (Créer des stubs de méthodes de tests unitaires avec la commande « Créer des tests unitaires »)
+- [Créer des stubs de méthodes de tests unitaires avec la commande « Créer des tests unitaires »](https://devblogs.microsoft.com/devops/creating-unit-test-method-stubs-with-create-unit-tests/)
 - [Billets de blog sur les tests unitaires](https://devblogs.microsoft.com/devops/?s=unit+testing)

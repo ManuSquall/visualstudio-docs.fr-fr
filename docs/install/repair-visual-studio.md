@@ -13,10 +13,10 @@ ms.workload:
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.openlocfilehash: 368ca6619a2fcff48cc3bcc7eb70913247b631b2
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/16/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "76114734"
 ---
 # <a name="repair-visual-studio"></a>Réparer Visual Studio
@@ -36,7 +36,7 @@ Il peut arriver que votre installation Visual Studio soit endommagée ou corromp
 
 1. Dans le programme d’installation, choisissez **Plus**, puis choisissez **Réparer**.
 
-    ![Réparez Visual Studio à partir de l’Visual Studio Installer](media/repair-visual-studio.png "Réparez Visual Studio à partir de l’Visual Studio Installer")
+    ![Réparer Visual Studio de l’installateur Visual Studio](media/repair-visual-studio.png "Réparer Visual Studio de l’installateur Visual Studio")
 
    > [!NOTE]
    > La réparation de Visual Studio réinitialisera l’environnement. Les personnalisations locales comme les extensions par utilisateur installées sans élévation, les paramètres utilisateurs et les profils seront supprimées. Vos paramètres synchronisés tels que les thèmes, les couleurs et les combinaisons de touches seront restaurés.
@@ -53,7 +53,7 @@ Il peut arriver que votre installation Visual Studio soit endommagée ou corromp
 
      Par exemple, sur un ordinateur exécutant Windows 10, sélectionnez **Démarrer**, puis faites défiler jusqu’à la lettre **V** où il est répertorié comme **Visual Studio Installer**.
 
-     ![Ouvrez le Visual Studio Installer](media/vs-2019/vs-installer-windows-start.png "Ouvrez le Visual Studio Installer")
+     ![Ouvrez l’installateur visual studio](media/vs-2019/vs-installer-windows-start.png "Ouvrez l’installateur visual studio")
 
      > [!NOTE]
      > Vous trouverez également Visual Studio Installer à l’emplacement suivant :
@@ -64,7 +64,7 @@ Il peut arriver que votre installation Visual Studio soit endommagée ou corromp
 
 1. Dans le programme d’installation, recherchez l’édition de Visual Studio que vous avez installée. Cliquez ensuite sur **Plus**, puis choisissez **Réparer**.
 
-     ![Réparer Visual Studio 2019](media/vs-2019/vs-installer-repair.png "Réparer Visual Studio 2019")
+     ![Réparation Visual Studio 2019](media/vs-2019/vs-installer-repair.png "Réparation Visual Studio 2019")
 
    > [!NOTE]
    > La réparation de Visual Studio réinitialisera l’environnement. Les personnalisations locales comme les extensions par utilisateur installées sans élévation, les paramètres utilisateurs et les profils seront supprimées. Vos paramètres synchronisés tels que les thèmes, les couleurs et les combinaisons de touches seront restaurés.
@@ -80,6 +80,6 @@ Il peut arriver que votre installation Visual Studio soit endommagée ou corromp
 ## <a name="see-also"></a>Voir aussi
 
 * [Installer Visual Studio](install-visual-studio.md)
-* [Mettre à jour Visual Studio](update-visual-studio.md)
+* [Mettre à jour Visual Studio 2017](update-visual-studio.md)
 * [Désinstaller Visual Studio](uninstall-visual-studio.md)
 * [Résolution des problèmes d’installation et de mise à niveau de Visual Studio](troubleshooting-installation-issues.md)

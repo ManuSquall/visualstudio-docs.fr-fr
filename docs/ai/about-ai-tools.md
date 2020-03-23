@@ -11,13 +11,13 @@ ms.topic: conceptual
 ms.workload:
 - multiple
 ms.openlocfilehash: 0c16a51381a1ef22d780f7d3c2b26821d7029e8f
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/13/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75915971"
 ---
-# <a name="visual-studio-tools-for-ai"></a>Visual Studio Tools pour l’IA
+# <a name="visual-studio-tools-for-ai"></a>Visual Studio Tools pour IA
 
 Visual Studio Tools pour IA est une extension permettant de générer, tester et déployer des solutions de deep learning/IA. Il s’intègre de manière fluide à Azure Machine Learning pour offrir de puissantes fonctionnalités d’expérimentation, notamment mais pas exclusivement pour l’envoi des tâches de préparation des données et d’apprentissage des modèles en toute transparence à différentes cibles de calcul. En outre, il assure la prise en charge des métriques personnalisées et du suivi de l’historique d’exécution, ce qui permet l’audit et la reproductibilité de science des données. La collaboration d’entreprise permet de travailler en toute sécurité sur un projet avec d’autres personnes.
 
@@ -42,8 +42,8 @@ Cette extension facilite la formation des modèles sur votre ordinateur local. V
 
 [En savoir plus sur les modèles d’apprentissage dans le cloud](tensorflow-vm.md)
 
-## <a name="supported-operating-systems"></a>Supported Operating Systems
+## <a name="supported-operating-systems"></a>Systèmes d’exploitation pris en charge
 Pour l’instant, cette extension prend en charge les systèmes d’exploitation Windows 64 bits.
 
-## <a name="support"></a>Prise en charge de
+## <a name="support"></a>Support
 La prise en charge de cette extension est assurée sur le [suivi des problèmes GitHub](https://github.com/Microsoft/vs-tools-for-ai/issues). Vous pouvez envoyer un rapport de bogue ou une suggestion de fonctionnalité et participer aux discussions.

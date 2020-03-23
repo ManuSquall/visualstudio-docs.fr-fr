@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: c0d1c8cfb94b74f54eaaddd6b8d6d0fd17216b94
-ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/25/2020
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "77577949"
 ---
 # <a name="overview-of-tools-for-measuring-performance-in-visual-studio"></a>Vue d’ensemble des outils de mesure des performances dans Visual Studio
@@ -27,4 +27,4 @@ Les outils de profilage et de diagnostic vous aident à diagnostiquer l’utilis
 
 * [Analyser l’utilisation de la mémoire](../profiling/memory-usage.md) pour identifier les goulots d’étranglement de performances.
 
-* [Analyser l’utilisation de la mémoire à l’aide de l’outil d’allocation d’objets .net](../profiling/dotnet-alloc-tool.md) pour identifier les goulots d’étranglement dans les applications .net.
+* [Analyser l’utilisation de la mémoire à l’aide de l’outil .NET Object Allocation](../profiling/dotnet-alloc-tool.md) pour identifier les goulots d’étranglement des performances dans les applications .NET.

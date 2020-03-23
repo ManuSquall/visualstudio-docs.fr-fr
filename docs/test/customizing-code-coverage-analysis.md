@@ -8,10 +8,10 @@ ms.workload:
 - multiple
 author: mikejo5000
 ms.openlocfilehash: bce7a6b9369f33e6fa5248821f58d9903172415c
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/13/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75918647"
 ---
 # <a name="customize-code-coverage-analysis"></a>Personnaliser l’analyse de la couverture du code
@@ -24,11 +24,11 @@ Pour inclure des assemblys qui ne font pas partie de votre solution, obtenez les
 
 ## <a name="run-settings-file"></a>Fichier de paramètres d’exécution
 
-Le [fichier de paramètres d’exécution](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md) est le fichier de configuration utilisé par les outils de test unitaire. Les paramètres avancés de la couverture du code sont spécifiées dans un fichier *.runsettings*.
+Le [fichier des paramètres d’exécution](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md) est le fichier de configuration utilisé par les outils de test unitaire. Les paramètres de couverture de code avancés sont spécifiés dans un fichier *.runsettings.*
 
 Pour personnaliser la couverture du code, effectuez les étapes suivantes :
 
-1. Ajoutez un fichier de paramètres d’exécution à votre solution. Dans **l’Explorateur de solutions**, dans le menu contextuel de votre solution, choisissez **Ajouter** > **Nouvel élément**, puis sélectionnez **Fichier XML**. Enregistrez le fichier sous un nom comme *CodeCoverage.runsettings*.
+1. Ajoutez un fichier de paramètres d’exécution à votre solution. Dans **Solution Explorer**, sur le menu raccourci de votre solution, choisissez **Ajouter** > **un nouvel article**, et sélectionnez **XML Fichier**. Enregistrez le fichier sous un nom comme *CodeCoverage.runsettings*.
 
 2. Ajoutez le contenu de l’exemple de fichier à la fin de cet article, puis personnalisez-le selon vos besoins comme décrit dans les sections qui suivent.
 
@@ -40,7 +40,7 @@ Pour personnaliser la couverture du code, effectuez les étapes suivantes :
 
 ::: moniker range=">=vs-2019"
 
-3. Pour sélectionner le fichier de paramètres d’exécution, dans le menu **test** , choisissez **Sélectionner le fichier de paramètres**. Pour spécifier un fichier de paramètres d’exécution afin d’exécuter des tests depuis la ligne de commande, consultez [Configurer des tests unitaires](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md#command-line).
+3. Pour sélectionner le fichier des paramètres d’exécution, sur le menu **Test,** choisissez **Select Paramètres Fichier**. Pour spécifier un fichier de paramètres d’exécution afin d’exécuter des tests depuis la ligne de commande, consultez [Configurer des tests unitaires](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md#command-line).
 
 ::: moniker-end
 
@@ -51,7 +51,7 @@ Pour personnaliser la couverture du code, effectuez les étapes suivantes :
 
 ::: moniker range="vs-2017"
 
-Pour activer et désactiver les paramètres personnalisés, désélectionnez ou sélectionnez le fichier dans le menu **test** > les **paramètres de test** .
+Pour activer ou désactiver les paramètres personnalisés, désélectionnez ou sélectionnez le fichier dans le menu **Test** > **Paramètres de test**.
 
 ![Menu Paramètres de test avec le fichier de paramètres de test dans Visual Studio 2017](../test/media/codecoverage-settingsfile.png)
 
@@ -59,13 +59,13 @@ Pour activer et désactiver les paramètres personnalisés, désélectionnez ou 
 
 ::: moniker range=">=vs-2019"
 
-Pour activer et désactiver les paramètres personnalisés, désélectionnez ou sélectionnez le fichier dans le menu **test** .
+Pour désactiver et allumer les paramètres personnalisés, désélectionner ou sélectionner le fichier sur le menu **Test.**
 
 ::: moniker-end
 
-## <a name="symbol-search-paths"></a>Chemins de recherche de symboles
+## <a name="symbol-search-paths"></a>Chemins de recherche de symbole
 
-La couverture du code requiert des fichiers de symboles (fichiers *.pdb*) pour les assemblys. Pour les assemblys générés par votre solution, les fichiers de symboles sont généralement présents à côté des fichiers binaires, et la couverture du code s’exécute automatiquement. Dans certains cas, vous voulez inclure des assemblys référencés dans votre analyse de couverture du code. Dans ce cas, les fichiers *.pdb* peuvent ne pas être adjacents aux fichiers binaires, mais vous pouvez spécifier le chemin de recherche de symboles dans le fichier *.runsettings*.
+La couverture du code requiert des fichiers de symboles (fichiers *.pdb*) pour les assemblys. Pour les assemblys générés par votre solution, les fichiers de symboles sont généralement présents à côté des fichiers binaires, et la couverture du code s’exécute automatiquement. Dans certains cas, vous voulez inclure des assemblys référencés dans votre analyse de couverture du code. Dans de tels cas, les fichiers *.pdb* peuvent ne pas être adjacents aux binaires, mais vous pouvez spécifier le chemin de recherche de symbole dans le fichier *.runsettings.*
 
 ```xml
 <SymbolSearchPaths>
@@ -75,13 +75,13 @@ La couverture du code requiert des fichiers de symboles (fichiers *.pdb*) pour l
 ```
 
 > [!NOTE]
-> La résolution des symboles peut prendre du temps, surtout quand vous utilisez un emplacement de fichier distant avec de nombreux assemblys. Ainsi, envisagez de copier les fichiers *.pdb* au même emplacement local que les fichiers binaires ( *.dll* et *.exe*).
+> La résolution des symboles peut prendre du temps, surtout quand vous utilisez un emplacement de fichier distant avec de nombreux assemblys. Ainsi, envisagez de copier les fichiers *.pdb* au même emplacement local que les fichiers binaires (*.dll* et *.exe*).
 
-## <a name="include-or-exclude-assemblies-and-members"></a>Inclure ou exclure des assemblys et des membres
+## <a name="include-or-exclude-assemblies-and-members"></a>Inclure ou exclure les assemblées et les membres
 
-Vous pouvez inclure ou exclure des assemblys ou des types et des membres spécifiques de l’analyse de couverture du code. Si la section **include** est vide ou omise, tous les assemblys chargés et ayant des fichiers PDB associés sont inclus. Si un assembly ou un membre correspond à une clause dans la section **Exclude** , il est exclu de la couverture du code. La section **Exclude** est prioritaire sur la section **include** : si un assembly est répertorié dans **include** et **Exclude**, il n’est pas inclus dans la couverture du code.
+Vous pouvez inclure ou exclure des assemblages ou des types spécifiques et les membres de l’analyse de la couverture du code. Si la section **Inclure** est vide ou omise, alors tous les assemblages qui sont chargés et ont associés fichiers PDB sont inclus. Si une assemblée ou un membre correspond à une clause de la section **Exclure,** elle est exclue de la couverture du code. La section **Exclure** a préséance sur la section **Inclure** : si une assemblée est inscrite à la fois dans **Inclure** et **exclure,** elle ne sera pas incluse dans la couverture du code.
 
-Par exemple, le code XML suivant exclut un assembly unique en spécifiant son nom :
+Par exemple, le XML suivant exclut une seule assemblée en précisant son nom :
 
 ```xml
 <ModulePaths>
@@ -92,7 +92,7 @@ Par exemple, le code XML suivant exclut un assembly unique en spécifiant son no
 </ModulePaths>
 ```
 
-L’exemple suivant spécifie qu’un seul assembly doit être inclus dans la couverture du code :
+L’exemple suivant précise qu’une seule assemblée doit être incluse dans la couverture du code :
 
 ```xml
 <ModulePaths>
@@ -103,34 +103,34 @@ L’exemple suivant spécifie qu’un seul assembly doit être inclus dans la co
 </ModulePaths>
 ```
 
-Le tableau suivant montre les différentes façons dont les assemblys et les membres peuvent être mis en correspondance pour l’inclusion dans ou l’exclusion de la couverture du code.
+Le tableau suivant montre les différentes façons dont les assemblées et les membres peuvent être appariés pour l’inclusion ou l’exclusion de la couverture du code.
 
-| Élément XML | Ce qu’il correspond |
+| Élément XML | Qu’est-ce qu’il correspond |
 | - | - |
-| ModulePath | Correspond aux assemblys spécifiés par le nom de l’assembly ou le chemin d’accès du fichier. |
-| CompanyName | Correspond aux assemblys par l’attribut **Company** . |
-| PublicKeyToken | Correspond aux assemblys signés par le jeton de clé publique. |
-| Source | Met en correspondance les éléments par le nom de chemin d’accès du fichier source dans lequel ils sont définis. |
-| Attribute | Met en correspondance les éléments qui ont l’attribut spécifié. Spécifiez le nom complet de l’attribut, par exemple `<Attribute>^System\.Diagnostics\.DebuggerHiddenAttribute$</Attribute>`.<br/><br/>Si vous excluez l’attribut <xref:System.Runtime.CompilerServices.CompilerGeneratedAttribute>, le code qui utilise des fonctionnalités du langage comme `async`, `await` et `yield return`, et des propriétés implémentées automatiquement, est exclu de l’analyse de couverture du code. Pour exclure le code réellement généré, excluez seulement l’attribut <xref:System.CodeDom.Compiler.GeneratedCodeAttribute>. |
-| Fonction | Met en correspondance des procédures, des fonctions ou des méthodes par nom qualifié complet, y compris la liste de paramètres. Vous pouvez également faire correspondre une partie du nom à l’aide d’une [expression régulière](#regular-expressions).<br/><br/>Exemples :<br/><br/>`Fabrikam.Math.LocalMath.SquareRoot(double);` (C#)<br/><br/>`Fabrikam::Math::LocalMath::SquareRoot(double)` (C++) |
+| ModulePath | Correspondances assemblées spécifiées par nom d’assemblage ou chemin de fichier. |
+| CompanyName | Correspond aux assemblages de l’attribut de la **Société.** |
+| PublicKeyToken | Matchs signés par le jeton de clé publique. |
+| Source | Correspond aux éléments par le nom de voie du fichier source dans lequel ils sont définis. |
+| Attribut | Correspond aux éléments qui ont l’attribut spécifié. Spécifiez le nom complet de l’attribut, par exemple `<Attribute>^System\.Diagnostics\.DebuggerHiddenAttribute$</Attribute>`.<br/><br/>Si vous excluez l’attribut <xref:System.Runtime.CompilerServices.CompilerGeneratedAttribute>, le code qui utilise des fonctionnalités du langage comme `async`, `await` et `yield return`, et des propriétés implémentées automatiquement, est exclu de l’analyse de couverture du code. Pour exclure le code réellement généré, excluez seulement l’attribut <xref:System.CodeDom.Compiler.GeneratedCodeAttribute>. |
+| Fonction | Correspond aux procédures, aux fonctions ou aux méthodes par nom entièrement qualifié, y compris la liste des paramètres. Vous pouvez également faire correspondre une partie du nom en utilisant une [expression régulière](#regular-expressions).<br/><br/>Exemples :<br/><br/>`Fabrikam.Math.LocalMath.SquareRoot(double);` (C#)<br/><br/>`Fabrikam::Math::LocalMath::SquareRoot(double)`(C) |
 
 ### <a name="regular-expressions"></a>Expressions régulières
 
-Les nœuds Inclure et Exclure utilisent des expressions régulières, qui ne sont pas identiques à des caractères génériques. Les correspondances ne respectent pas la casse. Voici quelques exemples :
+Les nœuds Inclure et Exclure utilisent des expressions régulières, qui ne sont pas identiques à des caractères génériques. Les correspondances ne respectent pas la casse. Quelques exemples :
 
-- **\*** correspond à une chaîne de n’importe quels caractères
+- **. \* ** correspond à une chaîne de tous les personnages
 
 - **\\.** correspond à un point « . »
 
-- **\\(   \\)** correspond à des parenthèses « (  ) »
+- ( ) correspond entre parenthèses ") ** \\ \\**
 
-- **\\\\** correspond à un séparateur de chemin de fichier « \\ »
+- **\\\\**correspond à un delimiter chemin de fichier "\\"
 
 - **^** correspond au début de la chaîne
 
-- **$** correspond la fin de la chaîne
+- **$** correspond à la fin de la chaîne
 
-Le code XML suivant montre comment inclure et exclure des assemblys spécifiques à l’aide d’expressions régulières :
+Le XML suivant montre comment inclure et exclure des assemblages spécifiques en utilisant des expressions régulières :
 
 ```xml
 <ModulePaths>
@@ -147,7 +147,7 @@ Le code XML suivant montre comment inclure et exclure des assemblys spécifiques
 </ModulePaths>
 ```
 
-Le code XML suivant montre comment inclure et exclure des fonctions spécifiques à l’aide d’expressions régulières :
+Le XML suivant montre comment inclure et exclure des fonctions spécifiques en utilisant des expressions régulières :
 
 ```xml
 <Functions>
@@ -167,7 +167,7 @@ Le code XML suivant montre comment inclure et exclure des fonctions spécifiques
 > [!WARNING]
 > S’il existe une erreur dans une expression régulière, telle qu’une séquence d’échappement ou une parenthèse sans correspondance, l’analyse de couverture du code ne fonctionne pas.
 
-Pour plus d’informations sur les expressions régulières, consultez [utiliser des expressions régulières dans Visual Studio](../ide/using-regular-expressions-in-visual-studio.md).
+Pour plus d’informations sur les expressions régulières, voir [Utilisez des expressions régulières dans Visual Studio](../ide/using-regular-expressions-in-visual-studio.md).
 
 ## <a name="sample-runsettings-file"></a>Fichier d'exemple .runsettings
 
@@ -292,4 +292,4 @@ Included items must then not match any entries in the exclude list to remain inc
 
 - [Configurer des tests unitaires à l’aide d’un fichier .runsettings](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md)
 - [Utiliser la couverture du code pour déterminer la quantité de code testé](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md)
-- [Tests unitaires sur votre code](../test/unit-test-your-code.md)
+- [Test unitaire de votre code](../test/unit-test-your-code.md)

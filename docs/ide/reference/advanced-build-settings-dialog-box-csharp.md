@@ -14,15 +14,15 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: f25f9d96cd8de8dcb140c79c7dfb3a7a5981986c
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75595850"
 ---
-# <a name="advanced-build-settings-dialog-box-c"></a>Paramètres de build avancés, boîteC#de dialogue ()
+# <a name="advanced-build-settings-dialog-box-c"></a>Boîte de dialogue Advanced Build Settings (C)
 
-Utilisez la boîte de dialogue **Paramètres de génération avancés** du **Concepteur de projet** pour spécifier les propriétés avancées de configuration de build du projet. Cette boîte de dialogue s' C# applique aux projets uniquement.
+Utilisez la boîte de dialogue **Paramètres de génération avancés** du **Concepteur de projet** pour spécifier les propriétés avancées de configuration de build du projet. Cette boîte de dialogue ne s’applique qu’aux projets C.
 
 ## <a name="general"></a>Général
 
@@ -32,7 +32,7 @@ Les options suivantes permettent de définir des paramètres généraux avancés
 
 ::: moniker range=">=vs-2019"
 
-Renvoie à [/langversion (C# options du compilateur)](/dotnet/csharp/language-reference/compiler-options/langversion-compiler-option), qui fournit des informations sur la façon dont une version de langage par défaut est choisie en fonction du Framework cible d’un projet.
+Liens vers [/langversion (options de compilation de C)](/dotnet/csharp/language-reference/compiler-options/langversion-compiler-option), qui fournit des informations sur la façon dont une version linguistique par défaut est choisie en fonction du cadre cible d’un projet.
 
 ::: moniker-end
 
@@ -40,21 +40,21 @@ Renvoie à [/langversion (C# options du compilateur)](/dotnet/csharp/language-re
 
 Spécifie la version du langage à utiliser. L’ensemble de fonctionnalités est différent pour chacune des versions. Cette option peut donc être utilisée pour forcer le compilateur à autoriser uniquement un sous-ensemble des fonctionnalités implémentées, ou à activer uniquement les fonctionnalités conformes à une norme existante.
 
-La valeur par défaut C# est 7,0.
+La valeur par défaut est de 7,0 C.
 
 ::: moniker-end
 
 **Rapport d’erreurs du compilateur interne**
 
-Spécifie s’il faut signaler les erreurs du compilateur à Microsoft. Si la valeur est **prompt** (valeur par défaut), une invite s’affiche en cas d’erreur interne du compilateur, et vous donne la possibilité d’envoyer un rapport d’erreurs par voie électronique à Microsoft. Si la valeur est **send**, un rapport d’erreurs est envoyé automatiquement. Si la valeur est **queue**, les rapports d’erreurs sont mis en file attente. Si la valeur est **none**, l’erreur est signalée uniquement dans la sortie de texte du compilateur. Pour plus d’informations, consultez l’article [/errorreport (C# Compiler Options) (/errorreport [Options du compilateur C#])](/dotnet/csharp/language-reference/compiler-options/errorreport-compiler-option).
+Spécifie s’il faut signaler les erreurs du compilateur à Microsoft. Si la valeur est **prompt** (valeur par défaut), une invite s’affiche en cas d’erreur interne du compilateur, et vous donne la possibilité d’envoyer un rapport d’erreurs par voie électronique à Microsoft. Si la valeur est **send**, un rapport d’erreurs est envoyé automatiquement. Si la valeur est **queue**, les rapports d’erreurs sont mis en file attente. Si la valeur est **none**, l’erreur est signalée uniquement dans la sortie de texte du compilateur. Pour plus d’informations, voir [/errorreport (Options de compilateur C)](/dotnet/csharp/language-reference/compiler-options/errorreport-compiler-option).
 
 **Vérifier les dépassements de capacité arithmétiques positifs et négatifs**
 
-Spécifie si une instruction arithmétique entière hors de portée des mots clés [checked](/dotnet/csharp/language-reference/keywords/checked) ou [unchecked](/dotnet/csharp/language-reference/keywords/unchecked), dont la valeur n’est pas comprise dans la plage du type de données, doit provoquer la levée d’une exception à l’exécution. Pour plus d’informations, consultez l’article [/checked (C# Compiler Options) (/checked [Options du compilateur C#])](/dotnet/csharp/language-reference/compiler-options/checked-compiler-option).
+Spécifie si une instruction arithmétique entière hors de portée des mots clés [checked](/dotnet/csharp/language-reference/keywords/checked) ou [unchecked](/dotnet/csharp/language-reference/keywords/unchecked), dont la valeur n’est pas comprise dans la plage du type de données, doit provoquer la levée d’une exception à l’exécution. Pour plus d’informations, voir [/vérifié (Options compilateur C)](/dotnet/csharp/language-reference/compiler-options/checked-compiler-option).
 
 **Ne pas référencer mscorlib.dll**
 
-Spécifie si mscorlib.dll doit être importé dans votre programme, en définissant l’intégralité de l’espace de noms <xref:System>. Cochez cette case pour définir ou créer vos propres objets et espaces de noms <xref:System>. Pour plus d’informations, consultez l’article [/nostdlib (C# Compiler Options) (/nostdlib [Options du compilateur C#])](/dotnet/csharp/language-reference/compiler-options/nostdlib-compiler-option).
+Spécifie si mscorlib.dll doit être importé dans votre programme, en définissant l’intégralité de l’espace de noms <xref:System>. Cochez cette case pour définir ou créer vos propres objets et espaces de noms <xref:System>. Pour plus d’informations, voir [/nostdlib (Options compilateur C)](/dotnet/csharp/language-reference/compiler-options/nostdlib-compiler-option).
 
 ## <a name="output"></a>Output
 
@@ -62,13 +62,13 @@ Les options suivantes permettent de spécifier des options de sortie avancées.
 
 **Informations de débogage**
 
-Indique le type d'informations de débogage générées par le compilateur. Pour plus d’informations sur la configuration des performances de débogage d’une application, consultez [Simplification du débogage d’une image](/dotnet/framework/debug-trace-profile/making-an-image-easier-to-debug). Ce paramètre est assorti des options suivantes :
+Indique le type d'informations de débogage générées par le compilateur. Pour plus d’informations sur la configuration des performances de débogage d’une application, consultez [Simplification du débogage d’une image](/dotnet/framework/debug-trace-profile/making-an-image-easier-to-debug). Ce paramètre a les options suivantes :
 
-- **none**
+- **aucun**
 
    Spécifie que les informations de débogage ne doivent pas être générées.
 
-- **full**
+- **Plein**
 
    Permet d’attacher un débogueur au programme en cours d’exécution.
 
@@ -80,21 +80,21 @@ Indique le type d'informations de débogage générées par le compilateur. Pour
 
    Génère un fichier .PDB, un fichier de symboles portable non spécifique à la plateforme qui fournit d’autres outils, notamment des débogueurs, des informations sur les éléments dans le fichier exécutable principal et la façon dont il a été produit. Pour plus d’informations, consultez [PDB portable](https://github.com/dotnet/core/blob/master/Documentation/diagnostics/portable_pdb.md).
 
-- **embedded**
+- **affichage incorporé**
 
    Incorpore les informations de symboles portables dans l’assembly. Aucun fichier .PDB externe n’est produit.
 
-Pour plus d’informations, consultez l’article [/debug (C# Compiler Options) (/debug [Options du compilateur C#])](/dotnet/csharp/language-reference/compiler-options/debug-compiler-option).
+Pour plus d’informations, voir [/debug (Options de compilateur C)](/dotnet/csharp/language-reference/compiler-options/debug-compiler-option).
 
 **Alignement des fichiers**
 
-Spécifie la taille des sections dans le fichier de sortie. Les valeurs valides sont **512**, **1024**, **2048**, **4096** et **8192**. Ces valeurs sont mesurées en octets. Chaque section est alignée sur une limite qui est un multiple de cette valeur, affectant ainsi la taille du fichier de sortie. Pour plus d’informations, consultez [/filealign (options du compilateur C#)](/dotnet/csharp/language-reference/compiler-options/filealign-compiler-option).
+Spécifie la taille des sections dans le fichier de sortie. Les valeurs valides sont **512**, **1024**, **2048**, **4096**, et **8192**. Ces valeurs sont mesurées en octets. Chaque section est alignée sur une limite qui est un multiple de cette valeur, affectant ainsi la taille du fichier de sortie. Pour plus d’informations, voir [/filealign (Options compilateur C)](/dotnet/csharp/language-reference/compiler-options/filealign-compiler-option).
 
 **Adresse de base de la bibliothèque**
 
-Spécifie l'adresse de base préférée à laquelle charger une DLL. L’adresse de base par défaut d’une DLL est définie par le Common Language Runtime (CLR) .NET Framework. Pour plus d’informations, consultez [/baseaddress (options du compilateur C#)](/dotnet/csharp/language-reference/compiler-options/baseaddress-compiler-option).
+Spécifie l'adresse de base préférée à laquelle charger une DLL. L’adresse de base par défaut d’une DLL est définie par le Common Language Runtime (CLR) .NET Framework. Pour plus d’informations, voir [/baseaddress (Options compilateur C)](/dotnet/csharp/language-reference/compiler-options/baseaddress-compiler-option).
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Options du compilateur C#](/dotnet/csharp/language-reference/compiler-options/index)
-- [Générer, page du Concepteur de projets (C#)](../../ide/reference/build-page-project-designer-csharp.md)
+- [Options de compilateur C](/dotnet/csharp/language-reference/compiler-options/index)
+- [Page de construction, Concepteur de projets (C)](../../ide/reference/build-page-project-designer-csharp.md)

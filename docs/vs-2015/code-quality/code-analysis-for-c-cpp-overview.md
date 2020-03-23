@@ -23,10 +23,10 @@ author: corob-msft
 ms.author: corob
 manager: jillfra
 ms.openlocfilehash: 1ce41cd1c0dabc94658b83aa5e2bcdc08d005fdb
-ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2020
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "77275359"
 ---
 # <a name="code-analysis-for-cc-overview"></a>Vue d'ensemble de l'analyse du code C/C++
@@ -38,10 +38,10 @@ L'outil d'analyse du code C/C++ fournit aux développeurs des informations sur d
  Pour permettre aux développeurs d’utiliser l’outil d’analyse de façon naturelle, celui-ci est entièrement intégré à l’IDE [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Durant le processus de génération, tous les avertissements générés pour le code source s’affichent dans la liste d’erreurs. Vous pouvez accéder au code source à l’origine de l’avertissement, et afficher des informations supplémentaires sur la cause et les solutions possibles du problème.  
   
 ## <a name="pragma-support"></a>Prise en charge de #pragma  
- Les développeurs peuvent utiliser la directive `#pragma` pour traiter les avertissements comme des erreurs, activer ou désactiver les avertissements et supprimer les avertissements liés à des lignes de code individuelles. Pour plus d’informations, consultez [Comment : activer et désactiver l’analyse du code pour desC++ avertissements C/Warnings spécifiques](https://msdn.microsoft.com/910b8518-71f1-4b2e-b012-70647795642a).  
+ Les développeurs peuvent utiliser la directive `#pragma` pour traiter les avertissements comme des erreurs, activer ou désactiver les avertissements et supprimer les avertissements liés à des lignes de code individuelles. Pour plus d’informations, voir [Comment : Activer et désactiver l’analyse du code pour les avertissements spécifiques de C/C.](https://msdn.microsoft.com/910b8518-71f1-4b2e-b012-70647795642a)  
   
 ## <a name="annotation-support"></a>Prise en charge des annotations  
- Les annotations améliorent la précision de l’analyse du code. Les annotations fournissent des informations supplémentaires sur les conditions préalables et postérieures des paramètres de fonction et des types de retour. Pour plus d’informations, consultez [Comment : spécifier des informations de code supplémentaires à l’aide de __analysis_assume](../code-quality/how-to-specify-additional-code-information-by-using-analysis-assume.md)  
+ Les annotations améliorent la précision de l’analyse du code. Les annotations fournissent des informations supplémentaires sur les conditions préalables et postérieures des paramètres de fonction et des types de retour. Pour plus d’informations, voir [comment : Spécifier des informations supplémentaires sur le code en utilisant __analysis_assume](../code-quality/how-to-specify-additional-code-information-by-using-analysis-assume.md)  
   
 ## <a name="run-analysis-tool-as-part-of-check-in-policy"></a>Exécuter l’outil d’analyse dans le cadre d’une stratégie d’archivage  
  Vous pouvez être amené à imposer que tous les archivages de code source respectent certaines stratégies. En particulier, vous souhaitez vérifier que l’analyse a été exécutée en tant qu’étape de la build locale la plus récente. Pour plus d’informations sur l’activation d’une stratégie d’archivage de l’analyse du code, consultez [Création et utilisation de stratégies d’archivage de l’analyse du code](../code-quality/creating-and-using-code-analysis-check-in-policies.md)  

@@ -32,13 +32,13 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 7813a2e7686bef5a146e7472bce7f2c24baf9cd2
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75570061"
 ---
-# <a name="options-dialog-box-environment--documents"></a>Boîte de dialogue Options : documents de \> d’environnement
+# <a name="options-dialog-box-environment--documents"></a>Boîte de dialogue \> d’options : Documents sur l’environnement
 
 Utilisez cette page de la boîte de dialogue **Options** pour contrôler l’affichage des documents dans l’environnement de développement intégré (IDE) et pour gérer les modifications externes apportées aux documents et aux fichiers. Vous pouvez accéder à cette boîte de dialogue en cliquant sur **Options** dans le menu **Outils**, puis en sélectionnant **Environnement** > **Documents**.
 
@@ -71,7 +71,7 @@ Sélectionnez cette option pour afficher une boîte de message lorsque la comman
 Sélectionnez cette option pour afficher le nœud **Fichiers divers** dans l’**Explorateur de solutions**. Les fichiers divers sont des fichiers qui ne sont pas associés à un projet ou une solution, mais qui peuvent apparaître dans l’**Explorateur de solutions** à toutes fins utiles.
 
 > [!NOTE]
-> Sélectionnez cette option pour activer la commande **Afficher dans le navigateur** dans le menu **Fichier** pour les documents web non inclus dans l’application web active.
+> Sélectionnez cette option pour activer la commande **View in Browser** sur le menu **Fichier** pour les documents Web non inclus dans l’application Web active.
 
 **Éléments enregistrés dans le projet Fichiers divers**
 

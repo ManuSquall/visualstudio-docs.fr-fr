@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: c7decdb80cd06b1af3230b2926c4ebd37b48e422
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75596448"
 ---
 # <a name="toolbox"></a>Boîte à outils
@@ -67,10 +67,10 @@ Vous pouvez créer des contrôles **Boîte à outils** personnalisés en commen�
 
 Les rubriques suivantes fournissent davantage d’informations sur les différents onglets **Boîte à outils** disponibles :
 
-- [Boîte à outils, Onglet Données](../../ide/reference/toolbox-data-tab.md)
-- [Boîte à outils, Onglet Composants](../../ide/reference/toolbox-components-tab.md)
+- [Boîte à outils, onglet de données](../../ide/reference/toolbox-data-tab.md)
+- [Boîte à outils, onglet Composants](../../ide/reference/toolbox-components-tab.md)
 - [Boîte à outils, onglet HTML](../../ide/reference/toolbox-html-tab.md)
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Choisir des éléments de boîte à outils, composants WPF](choose-toolbox-items-wpf-components.md)
+- [Choisissez des articles de boîte à outils, des composants WPF](choose-toolbox-items-wpf-components.md)

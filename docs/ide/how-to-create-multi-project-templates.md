@@ -10,10 +10,10 @@ author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.openlocfilehash: 6da7464f5e22e186edff7671744c2605bee3c9ad
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75591084"
 ---
 # <a name="how-to-create-multi-project-templates"></a>Guide pratique pour créer des modèles à plusieurs projets
@@ -30,9 +30,9 @@ Les modèles à plusieurs projets se comportent différemment des modèles à pr
 
 Un modèle à plusieurs projets doit inclure les éléments suivants, compressés dans un fichier *.zip* :
 
-- Un fichier *vstemplate* racine pour l’ensemble du modèle à plusieurs projets. Ce fichier *vstemplate* racine contient des métadonnées qui s’affichent dans la boîte de dialogue où vous créez un projet. Il spécifie également où trouver les fichiers *vstemplate* pour les projets du modèle. Ce fichier doit se trouver à la racine du fichier *.zip*.
+- Un fichier *de vstemplate* racine pour l’ensemble du modèle multi-projet. Ce fichier *vstemplate* racine contient des métadonnées qui s’affichent dans la boîte de dialogue où vous créez un projet. Il spécifie également où trouver les fichiers *vstemplate* pour les projets du modèle. Ce fichier doit se trouver à la racine du fichier *.zip*.
 
-- Deux dossiers ou plus contenant les fichiers exigés pour un modèle de projet complet sont nécessaires. Les dossiers incluent tous les fichiers de code du projet, ainsi qu’un fichier *vstemplate* pour le projet.
+- Deux dossiers ou plus contenant les fichiers exigés pour un modèle de projet complet sont nécessaires. Les dossiers comprennent tous les fichiers de code pour le projet, ainsi qu’un fichier *vstemplate* pour le projet.
 
 Par exemple, le fichier *.zip* d’un modèle à plusieurs projets contenant deux projets peut comporter les fichiers et répertoires suivants :
 
@@ -44,7 +44,7 @@ Par exemple, le fichier *.zip* d’un modèle à plusieurs projets contenant deu
 - *\Project2\Project2.vbproj*
 - *\Project2\Class.vb*
 
-Le fichier *vstemplate* racine d’un modèle à plusieurs projets présente les différences suivantes par rapport à un modèle à projet unique :
+Le fichier *de vstemplate* racine pour un modèle multi-projet diffère d’un modèle d’un seul projet de la manière suivante :
 
 - L’attribut **Type** de l’élément **VSTemplate** a la valeur **ProjectGroup** au lieu de **Project**. Par exemple :
 
@@ -88,19 +88,19 @@ Le fichier *vstemplate* racine d’un modèle à plusieurs projets présente les
 2. Personnalisez les projets jusqu’à ce qu’ils soient prêts à être exportés dans un modèle.
 
    > [!TIP]
-   > Si vous utilisez des [paramètres de modèle](template-parameters.md) et que vous voulez référencer des variables du modèle parent, préfixez le nom du paramètre avec `ext_`. Par exemple, `$ext_safeprojectname$`. Par ailleurs, définissez l’attribut **CopyParameters** de l’élément **ProjectTemplateLink** sur **true**.
+   > Si vous utilisez des [paramètres de modèle](template-parameters.md) et que vous voulez référencer des variables du modèle parent, préfixez le nom du paramètre avec `ext_`. Par exemple : `$ext_safeprojectname$`. Par ailleurs, définissez l’attribut **CopyParameters** de l’élément **ProjectTemplateLink** sur **true**.
    >
    > ```xml
    > <ProjectTemplateLink ProjectName="MyProject" CopyParameters="true">...</ProjectTemplateLink>
    > ```
 
-3. Dans le menu **Projet**, choisissez **Exporter le modèle**.
+3. Sur le menu du **projet,** choisissez **Export Template**.
 
    L’Assistant **Exportation de modèle** s’ouvre.
 
 4. Dans la page **Choisir un type de modèle**, sélectionnez **Modèle de projet**. Sélectionnez un des projets que vous voulez exporter vers un modèle, puis choisissez **Suivant**. (Vous répétez ces étapes pour chaque projet de la solution.)
 
-5. Dans la page **Sélectionner les options du modèle**, entrez un nom et éventuellement une description, une icône et une image d’aperçu pour votre modèle. Choisissez **Terminer**.
+5. Dans la page **Sélectionner les options du modèle**, entrez un nom et éventuellement une description, une icône et une image d’aperçu pour votre modèle. Cliquez sur **Terminer**.
 
    Le projet est exporté dans un fichier *.zip* et placé à l’emplacement de sortie spécifié.
 
@@ -111,19 +111,19 @@ Le fichier *vstemplate* racine d’un modèle à plusieurs projets présente les
 
 7. Extrayez le contenu du fichier *.zip* de chaque projet dans le sous-répertoire correspondant que vous avez créé.
 
-8. Dans le répertoire de base, créez un fichier XML portant une extension *.vstemplate*. Ce fichier contient les métadonnées du modèle à plusieurs projets. Consultez l’exemple qui suit pour la structure du fichier. Veillez à spécifier le chemin relatif du fichier *vstemplate* de chaque projet.
+8. Dans le répertoire de base, créez un fichier XML portant une extension *.vstemplate*. Ce fichier contient les métadonnées du modèle à plusieurs projets. Consultez l’exemple qui suit pour la structure du fichier. Assurez-vous de spécifier le chemin relatif vers le fichier *vstemplate* de chaque projet.
 
-9. Sélectionnez tous les fichiers dans le répertoire de base, puis cliquez avec le bouton droit pour faire apparaître un menu contextuel et choisissez **Envoyer vers** > **Dossier compressé**.
+9. Sélectionnez tous les fichiers dans l’annuaire de base, et à partir du bon clic ou du menu contextuelle, choisissez **Envoyer à** > **compressé (zippé) dossier**.
 
    Les fichiers et dossiers sont compressés dans un fichier *.zip*.
 
 10. Copiez le fichier *.zip* dans le répertoire des modèles de projet utilisateur. Par défaut, ce répertoire est : *%USERPROFILE%\Documents\Visual Studio \<version\>\Templates\ProjectTemplates*.
 
-11. Dans Visual Studio, choisissez **Fichier** > **Nouveau** > **Projet** et vérifiez que votre modèle apparaît.
+11. Dans Visual Studio, choisissez **File** > **New** > **Project** et vérifiez que votre modèle apparaît.
 
 ## <a name="two-project-example"></a>Exemple avec deux projets
 
-Cet exemple montre un fichier *vstemplate* racine de base pour un modèle à plusieurs projets. Dans cet exemple, le modèle a deux projets, **My Windows Application** et **My Class Library**. L’attribut **ProjectName** de l’élément **ProjectTemplateLink** spécifie le nom donné au projet.
+Cet exemple montre un fichier de base *de vstemplate* racine multi-projet. Dans cet exemple, le modèle a deux projets, **My Windows Application** et **My Class Library**. L’attribut **ProjectName** de l’élément **ProjectTemplateLink** spécifie le nom donné au projet.
 
 > [!TIP]
 > Si l’attribut **ProjectName** n’est pas spécifié, le nom du fichier *vstemplate* est utilisé comme nom de projet.
@@ -188,8 +188,8 @@ Cet exemple utilise l’élément **SolutionFolder** pour diviser les projets en
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Création de modèles de projets et d’éléments](../ide/creating-project-and-item-templates.md)
-- [Guide pratique pour créer des modèles de projet](../ide/how-to-create-project-templates.md)
+- [Création de modèles de projets et d’objets](../ide/creating-project-and-item-templates.md)
+- [Comment : Créer des modèles de projet](../ide/how-to-create-project-templates.md)
 - [Informations de référence sur les schémas de modèles Visual Studio (extensibilité)](../extensibility/visual-studio-template-schema-reference.md)
-- [Élément SolutionFolder (modèles Visual Studio)](../extensibility/solutionfolder-element-visual-studio-templates.md)
-- [Élément ProjectTemplateLink (modèles Visual Studio)](../extensibility/projecttemplatelink-element-visual-studio-templates.md)
+- [Élément SolutionFolder (modèles Visual Studio)](../extensibility/solutionfolder-element-visual-studio-templates.md)
+- [Élément ProjectTemplateLink (modèles Visual Studio)](../extensibility/projecttemplatelink-element-visual-studio-templates.md)

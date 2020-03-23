@@ -33,17 +33,17 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 54ce07537adc436f719de8596657d1367afcb87d
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75588796"
 ---
 # <a name="options-text-editor-all-languages-scroll-bars"></a>Options, Éditeur de texte, Tous les langages, Barres de défilement
 Cette boîte de dialogue vous permet de modifier le comportement par défaut de la barre de défilement de l’éditeur de code. Pour afficher ces options, sélectionnez **Options** dans le menu **Outils**. Dans le dossier **Éditeur de texte**, développez le sous-dossier **Tous les langages**, puis choisissez **Barres de défilement**.
 
 > [!CAUTION]
-> Cette page définit des options par défaut pour tous les langages de développement. La réinitialisation d’une option dans cette boîte de dialogue entraîne la réinitialisation des options de barres de défilement dans tous les langages, quels que soient les choix effectués. Pour modifier les options de l’éditeur de texte pour un seul langage, développez le sous-dossier de ce langage et sélectionnez ses pages d’options.
+> Cette page définit les options par défaut pour tous les langages de développement. La réinitialisation d’une option dans cette boîte de dialogue entraîne la réinitialisation des options de barres de défilement dans tous les langages, quels que soient les choix effectués. Pour modifier les options de l’éditeur de texte pour un seul langage, développez le sous-dossier de ce langage et sélectionnez ses pages d’options.
 
 ## <a name="show-horizontal-scroll-bar"></a>Afficher la barre de défilement horizontale
 
@@ -53,7 +53,7 @@ Quand cette option est sélectionnée, une barre de défilement horizontale s’
 
 Quand cette option est sélectionnée, une barre de défilement verticale s’affiche, ce qui vous permet de faire défiler verticalement les éléments situés hors de la zone d’affichage de l’éditeur. Si des barres de défilement verticales ne sont pas disponibles, vous pouvez faire défiler le contenu de l’éditeur à l’aide des touches du curseur et des touches Page précédente et Page suivante.
 
-## <a name="display"></a>Affichage
+## <a name="display"></a>Afficher
 
 ### <a name="show-annotations-over-vertical-scroll-bar"></a>Afficher les annotations au-dessus de la barre de défilement verticale
 

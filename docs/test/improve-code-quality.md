@@ -11,10 +11,10 @@ ms.workload:
 - multiple
 author: mikejo5000
 ms.openlocfilehash: e6dd0f0df6dde5c1f3553ab86374e71dfef82384
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75594362"
 ---
 # <a name="testing-tools-in-visual-studio"></a>Outils de test dans Visual Studio
@@ -24,7 +24,7 @@ Les outils de test de Visual Studio peuvent vous aider vous et votre équipe à 
 > [!NOTE]
 > Les tests unitaires sont disponibles dans toutes les éditions de Visual Studio. D’autres outils de test, comme Live Unit Testing, IntelliTest et les tests codés de l’interface utilisateur, sont disponibles seulement dans l’édition Visual Studio Enterprise. Pour plus d’informations sur les éditions, consultez le [comparatif des IDE Visual Studio](https://visualstudio.microsoft.com/vs/compare/).
 
-## <a name="test-explorer"></a>Explorateur de test
+## <a name="test-explorer"></a>Explorateur de tests
 
 La fenêtre **Explorateur de tests** permet aux développeurs de créer, gérer et exécuter des tests unitaires. Vous pouvez utiliser l'infrastructure de test unitaire Microsoft ou une des infrastructures tierces et ouvertes.
 
@@ -37,9 +37,9 @@ La fenêtre **Explorateur de tests** permet aux développeurs de créer, gérer 
 ::: moniker-end
 
 * [Bien démarrer avec les tests unitaires](unit-test-your-code.md)
-* [Exécuter des tests unitaires avec l’Explorateur de tests](run-unit-tests-with-test-explorer.md)
+* [Exécuter des tests unitaires avec Test Explorer](run-unit-tests-with-test-explorer.md)
 * [Questions fréquentes (FAQ) sur l’Explorateur de tests](test-explorer-faq.md)
-* [Installer des infrastructures de tests unitaires tierces](install-third-party-unit-test-frameworks.md)
+* [Installer des frameworks de tests unitaires tiers](install-third-party-unit-test-frameworks.md)
 
 Visual Studio est également extensible et accepte les adaptateurs de tests unitaires tiers comme NUnit et xUnit.net. En outre, la fonctionnalité de clonage de code va de pair avec des logiciels de haute qualité en vous aidant à identifier les blocs de code sémantiquement similaires qui peuvent faire l’objet d’une refactorisation ou de correctifs de bogues courants.
 
@@ -67,7 +67,7 @@ L’analyse de couverture du code peut être appliquée à du code managé et no
 
 Vous pouvez avoir recours à la couverture du code lorsque vous exécutez des méthodes de test à l'aide de l'Explorateur de tests. La table des résultats affiche le pourcentage de code exécuté dans chaque assembly, classe et méthode. En outre, l'éditeur de code source vous indique quel code a été testé.
 
-* [Utiliser la couverture du code pour déterminer la quantité de code testé](using-code-coverage-to-determine-how-much-code-is-being-tested.md)
+* [Utiliser la couverture du code pour déterminer la quantité de code testée](using-code-coverage-to-determine-how-much-code-is-being-tested.md)
 * [Tests unitaires, couverture du code et analyse des clones de code avec Visual Studio (laboratoire)](https://www.boost.org/doc/libs/1_71_0/libs/test/doc/html/index.html)
 * [Personnaliser l’analyse de la couverture du code](customizing-code-coverage-analysis.md)
 
@@ -83,14 +83,14 @@ Que vous choisissiez les meilleurs tests codés de l’interface utilisateur ou 
 
 ![Tests codés de l’interface utilisateur](media/devtest-codeduitest.png)
 
-* [Utiliser l’automatisation de l’interface utilisateur pour tester votre code](use-ui-automation-to-test-your-code.md)
-* [Bien démarrer avec la création, la modification et la gestion d’un test codé de l’interface utilisateur](walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md)
-* [Tester des applications UWP avec des tests codés de l’interface utilisateur](test-uwp-app-with-coded-ui-test.md)
+* [Utilisez l’automatisation de l’interface utilisateur pour tester votre code](use-ui-automation-to-test-your-code.md)
+* [Commencer à créer, modifier et maintenir un test d’interface utilisateur codé](walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md)
+* [Testez les applications UWP avec des tests d’interface utilisateur codés](test-uwp-app-with-coded-ui-test.md)
 * [Introduction aux tests codés de l’interface utilisateur avec Visual Studio Enterprise (laboratoire)](https://www.boost.org/doc/libs/1_71_0/libs/test/doc/html/index.html)
 
 ## <a name="load-testing"></a>Test de charge
 
-Les [tests de charge](../test/quickstart-create-a-load-test-project.md) simulent la charge sur une application serveur en exécutant des tests unitaires et des tests de performances web.
+[Le test de charge](../test/quickstart-create-a-load-test-project.md) simule la charge sur une application de serveur en exécutant des tests unitaires et des tests de performance Web.
 
 ## <a name="related-scenarios"></a>Scénarios connexes
 

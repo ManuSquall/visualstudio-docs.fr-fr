@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - data-science
 ms.openlocfilehash: 686f98aaaade035f1632139d255ccff8b37eddf3
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75850064"
 ---
 # <a name="set-up-remote-workspaces"></a>Configurer des espaces de travail distants
@@ -26,7 +26,7 @@ Cet article explique comment configurer un serveur distant avec SSL et un servic
 
 ## <a name="install-an-ssl-certificate"></a>Installer un certificat SSL
 
-RTVS nécessite que toutes les communications avec un serveur distant s’effectuent sur HTTP, ce qui implique un certificat SSL sur le serveur. Vous pouvez utiliser un certificat signé par une autorité de certification approuvée (recommandée) ou un certificat auto-signé. (Un certificat auto-signé oblige RTVS à émettre des avertissements lors de la connexion.) Dans l’un ou l’autre, vous devez l’installer sur l’ordinateur et autoriser l’accès à sa clé privée.
+RTVS nécessite que toutes les communications avec un serveur distant s’effectuent sur HTTP, ce qui implique un certificat SSL sur le serveur. Vous pouvez utiliser un certificat signé par une autorité de certification approuvée (recommandée) ou un certificat auto-signé. (Un certificat autosigné amène RTVS à émettre des avertissements lorsqu’il est connecté.) Avec l’un ou l’autre, vous devez alors l’installer sur l’ordinateur et permettre l’accès à sa clé privée.
 
 ### <a name="obtain-a-trusted-certificate"></a>Obtenir un certificat approuvé
 
@@ -76,7 +76,7 @@ Pour installer le certificat sur l’ordinateur distant, exécutez *certlm.msc* 
 Une fois le certificat importé, accordez des autorisations au compte `NETWORK SERVICE` pour lire la clé privée, comme indiqué dans les instructions suivantes. `NETWORK_SERVICE` est le compte utilisé pour exécuter le répartiteur R Services, qui est le service qui met fin aux connexions SSL entrantes sur le serveur.
 
 1. Exécutez *certlm.msc* (le gestionnaire de certificats) à partir d’une invite de commandes administrateur.
-1. Développez **Personnel** > **Certificats**, cliquez avec le bouton droit sur votre certificat, puis sélectionnez **Toutes les tâches** > **Gérer les clés privées**.
+1. Élargissez les**certificats** **personnels** > , cliquez à droite sur votre certificat et sélectionnez **Toutes les tâches** > **gérer les clés privées**.
 1. Cliquez avec le bouton droit sur le certificat et sélectionnez la commande **Gérer les clés privées** sous **Toutes les tâches**.
 1. Dans la boîte de dialogue qui s’affiche, sélectionnez **Ajouter** et entrez `NETWORK SERVICE` comme nom de compte :
 
@@ -138,7 +138,7 @@ Pour exécuter le code R, l’ordinateur distant doit avoir un interpréteur R
 
 1. Téléchargez et installez l’un des programmes suivants :
 
-   - [Microsoft R Open](https://mran.microsoft.com/open/)
+   - [Microsoft R Open](https://mran.microsoft.com/open/)
    - [CRAN R pour Windows](https://cran.r-project.org/bin/windows/base/)
 
      Ces deux programmes ont les mêmes fonctionnalités, mais Microsoft R Open bénéficie de bibliothèques d’algèbre linéaire à accélération matérielle, fournies par la bibliothèque [Intel Math Kernel Library](https://software.intel.com/intel-mkl).
@@ -163,7 +163,7 @@ Pour exécuter le code R, l’ordinateur distant doit avoir un interpréteur R
 
 1. Téléchargez et installez l’un des programmes suivants :
 
-   - [Microsoft R Open](https://mran.microsoft.com/open/)
+   - [Microsoft R Open](https://mran.microsoft.com/open/)
    - [CRAN R pour Windows](https://cran.r-project.org/bin/linux/ubuntu/)
 
      Ces deux programmes ont les mêmes fonctionnalités, mais Microsoft R Open bénéficie de bibliothèques d’algèbre linéaire à accélération matérielle, fournies par la bibliothèque [Intel Math Kernel Library](https://software.intel.com/intel-mkl).
@@ -184,7 +184,7 @@ Une fois que R Services est en cours d’exécution sur l’ordinateur distant,
 
     Toutefois, si vous installez votre certificat sur un serveur accessible sur Internet (par exemple, une machine virtuelle Azure), utilisez le nom de domaine complet (FQDN) de votre serveur, car le nom de domaine complet d’un serveur accessible sur Internet n’est jamais le même que son nom NETBIOS.
 
-    Pour utiliser le nom de domaine complet, accédez à l’emplacement où est installé R Services ( *%PROGRAM FILES%\R Remote Service for Visual Studio\1.0* par défaut), ouvrez le fichier *Microsoft.R.Host.Broker.Config.json* dans un éditeur de texte et remplacez son contenu par ce qui suit, en attribuant à CN le nom de domaine complet de votre serveur, par exemple `foo.westus.cloudapp.azure.com` :
+    Pour utiliser le nom de domaine complet, accédez à l’emplacement où est installé R Services (*%PROGRAM FILES%\R Remote Service for Visual Studio\1.0* par défaut), ouvrez le fichier *Microsoft.R.Host.Broker.Config.json* dans un éditeur de texte et remplacez son contenu par ce qui suit, en attribuant à CN le nom de domaine complet de votre serveur, par exemple `foo.westus.cloudapp.azure.com` :
 
     ```json
     {
@@ -197,13 +197,13 @@ Une fois que R Services est en cours d’exécution sur l’ordinateur distant,
 
     Enregistrez le fichier et redémarrez l’ordinateur pour appliquer les modifications.
 
-## <a name="troubleshooting"></a>Résolution des problèmes
+## <a name="troubleshooting"></a>Dépannage
 
-**Q. l’ordinateur R Server ne répond pas, que dois-je faire ?**
+**Q. L’ordinateur serveur R ne répond pas, que dois-je faire?**
 
 Essayez d’envoyer un test ping à l’ordinateur distant à partir de la ligne de commande : `ping remote-machine-name`. Si le test ping échoue, vérifiez que l’ordinateur est en cours d’exécution.
 
-**Q. la fenêtre interactive R indique que l’ordinateur distant est allumé, mais pourquoi le service n’est-il pas en cours d’exécution ?**
+**Q. La fenêtre interactive R indique que l’ordinateur distant est allumé, mais pourquoi le service ne fonctionne-t-il pas?**
 
 Il existe trois raisons possibles :
 
@@ -213,21 +213,21 @@ Il existe trois raisons possibles :
 
 Redémarrez l’ordinateur après avoir apporté l’une des modifications ci-dessus. Vérifiez que `RHostBrokerService` et `RUserProfileService` sont en cours d’exécution par le biais du Gestionnaire des tâches (onglet Services) ou *services.msc*.
 
-**Q. pourquoi la fenêtre interactive R indique-t-elle « 401 accès refusé » lors de la connexion au serveur R ?**
+**Q. Pourquoi la fenêtre interactive R dit-elle « Accès 401 refusé » lors de la connexion au serveur R ?**
 
-Deux raisons possibles :
+Il existe deux raisons possibles :
 
 - Il est très probable que le compte `NETWORK SERVICE` n’ait pas accès à la clé privée du certificat SSL. Suivez les instructions précédentes pour accorder au compte `NETWORK SERVICE` l’accès à la clé privée.
 - Vérifiez que le service `seclogon` est en cours d’exécution. Utilisez *services.msc* pour configurer `seclogon` pour qu’il démarre automatiquement.
 
-**Q. pourquoi la fenêtre interactive R indique-t-elle « 404 introuvable » lors de la connexion au serveur R ?**
+**Q. Pourquoi la fenêtre interactive R dit-elle « 404 Pas trouvé » tout en se connectant au serveur R ?**
 
 Cette erreur est probablement due à l’absence de bibliothèques redistribuables Visual C++. Consultez la fenêtre interactive R pour voir s’il existe un message concernant une bibliothèque (DLL) manquante. Ensuite, vérifiez que le package redistribuable VS 2015 est installé, ainsi que R.
 
-**Q. je ne peux pas accéder à Internet/Resource à partir de la fenêtre interactive R, que dois-je faire ?**
+**Q. Je ne peux pas accéder à Internet/ressource à partir de la fenêtre interactive R, que dois-je faire?**
 
 Vérifiez que les règles de pare-feu pour `Microsoft.R.Host.Broker` et `Microsoft.R.Host` autorisent l’accès sortant sur le port 5444. Redémarrez l’ordinateur après avoir appliqué les modifications.
 
-**Q. j’ai essayé toutes ces solutions et cela ne fonctionne toujours pas. Quoi encore?**
+**Q. J’ai essayé toutes ces solutions, et cela ne fonctionne toujours pas. Quoi encore?**
 
-Examinez les fichiers journaux dans *C:\Windows\ServiceProfiles\NetworkService\AppData\Local\Temp*. Ce dossier contient des fichiers journaux distincts pour chaque instance du service R Broker qui a été exécuté. Un autre fichier journal est créé chaque fois que le service redémarre. Examinez le fichier journal le plus récent pour obtenir des indices sur ce qui pourrait ne pas fonctionner.
+Regardez dans les fichiers journaux dans *C: 'Windows’ServiceProfiles’NetworkService’AppData’Local’Temp*. Ce dossier contient des fichiers journaux distincts pour chaque cas du R Broker Service qui a été exécuté. Un autre fichier journal est créé chaque fois que le service redémarre. Examinez le fichier journal le plus récent pour obtenir des indices sur ce qui pourrait ne pas fonctionner.

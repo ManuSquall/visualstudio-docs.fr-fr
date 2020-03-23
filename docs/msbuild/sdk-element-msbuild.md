@@ -18,15 +18,15 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 8a704744032c5dea70246463a816ba8e1f5c84e8
-ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/26/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77632470"
 ---
 # <a name="sdk-element-msbuild"></a>Élément Sdk (MSBuild)
 
-Référence un kit de développement logiciel (SDK) de projet MSBuild.
+Références d’un projet MSBuild SDK.
 
  \<Project> \<Sdk>
 
@@ -50,16 +50,16 @@ Référence un kit de développement logiciel (SDK) de projet MSBuild.
 
 ### <a name="child-elements"></a>Éléments enfants
 
- None.
+ Aucun.
 
 ### <a name="parent-elements"></a>Éléments parents
 
 | Élément | Description |
 | - | - |
-| [Projet](../msbuild/project-element-msbuild.md) | Élément racine requis d’un fichier projet MSBuild. |
+| [Projet](../msbuild/project-element-msbuild.md) | Élément racine requis d’un fichier de projet MSBuild. |
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Guide pratique pour référencer un kit de développement logiciel (SDK) de projet MSBuild](../msbuild/how-to-use-project-sdk.md)
-- [Informations de référence sur le schéma de fichier projet](../msbuild/msbuild-project-file-schema-reference.md)
+- [Guide pratique : Faire référence à un kit SDK de projet MSBuild](../msbuild/how-to-use-project-sdk.md)
+- [Référence du schéma de fichier de projet](../msbuild/msbuild-project-file-schema-reference.md)
 - [MSBuild](../msbuild/msbuild.md)

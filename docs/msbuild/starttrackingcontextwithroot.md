@@ -16,10 +16,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 68d585361b9797bf1df9c8b0b31f8a089e9de025
-ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/26/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77632093"
 ---
 # <a name="starttrackingcontextwithroot"></a>StartTrackingContextWithRoot
@@ -48,11 +48,11 @@ HRESULT WINAPI StartTrackingContextWithRoot(LPCTSTR intermediateDirectory, LPCTS
 
 ## <a name="return-value"></a>Valeur retournée
 
- **HRESULT** avec le bit **SUCCEEDED** défini si le contexte de suivi a été créé.
+ Un **HRESULT** avec l’ensemble de bits **SUCCEEDED** si le contexte de suivi a été créé.
 
-## <a name="requirements"></a>Configuration requise
+## <a name="requirements"></a>Spécifications
 
- **En-tête :** *FileTracker. h*
+ **En-tête :** *FileTracker.h*
 
 ## <a name="see-also"></a>Voir aussi
 

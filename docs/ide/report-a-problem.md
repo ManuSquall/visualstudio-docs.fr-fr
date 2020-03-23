@@ -1,5 +1,5 @@
 ---
-title: 'Signaler un problème : États et FAQ'
+title: 'Rapport un problème : États et FAQ'
 description: Fournit une vue d’ensemble de l’outil Signaler un problème et inclut des définitions et états de problèmes
 ms.date: 11/15/2018
 ms.custom: seodec18
@@ -10,13 +10,13 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: d024e28d696a60a9fc77c290283382dcd0e0ede8
-ms.sourcegitcommit: 2148f3fd69569d8ec54fd21a66370932ce610ce4
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/05/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74853501"
 ---
-# <a name="report-a-problem-states-and-faq"></a>Signaler un problème : États et FAQ
+# <a name="report-a-problem-states-and-faq"></a>Rapport un problème : États et FAQ
 
 L’outil Signaler un problème permet à la Communauté des développeurs Visual Studio de soumettre des problèmes. Chacun de vos signalements de problème devient un élément de travail dans notre système d’ingénierie, ce qui vous permet d’interagir directement avec nos équipes de produit pour nous aider à identifier et à résoudre les problèmes à fort impact. Les commentaires que vous soumettez avec des informations de diagnostics complètes sont essentiels pour améliorer la famille de produits Visual Studio. Nous vous sommes très reconnaissants de prendre le temps de signaler des problèmes.
 
@@ -104,7 +104,7 @@ L’état **Fermé - Ne sera pas résolu** indique que nous ne suivons pas le pr
 
 - - -
 
-## <a name="faq"></a>Forum aux questions
+## <a name="faq"></a>Questions fréquentes (FAQ)
 
 ### <a name="how-can-i-increase-the-chance-of-my-problem-getting-resolved-quickly"></a>Comment accroître les chances d’une résolution rapide de mon problème ?
 

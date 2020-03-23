@@ -18,26 +18,26 @@ ms.author: ghogen
 ms.workload:
 - multiple
 ms.openlocfilehash: d66a7be3751e74ff75787ef194f90da1dcd1d3ce
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75593289"
 ---
 # <a name="getoutputfilename-task"></a>Tâche GetOutputFileName
 
 Tâche d’assistance visant à obtenir le nom du fichier de sortie pour cl et d’autres outils, qui permet de ne spécifier que le répertoire de sortie, le nom de fichier complet, ou rien du tout.
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>Paramètres
 
 Le tableau ci-dessous décrit les paramètres de la tâche **GetOutputFileName**.
 
 |Paramètre|Description|
 |---------------|-----------------|
-|**OutputExtension**|Paramètre **String** obligatoire.|
-|**OutputFile**|Paramètre de sortie de **chaîne** facultatif.|
-|**OutputPath**|Paramètre de **chaîne** facultatif.|
-|**SourceFile**|Paramètre **String** obligatoire.|
+|**OutputExtension**|Paramètre **de chaîne** requis.|
+|**Outputfile**|Paramètre de sortie de **chaîne** facultatif.|
+|**Outputpath**|Paramètre **de chaîne** facultatif.|
+|**SourceFile (en)**|Paramètre **de chaîne** requis.|
 
 ## <a name="see-also"></a>Voir aussi
 
