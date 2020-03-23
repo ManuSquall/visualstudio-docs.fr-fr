@@ -13,10 +13,10 @@ monikerRange: vs-2017
 ms.workload:
 - aspnet
 ms.openlocfilehash: 4941e9fde651e9274eeafeffc4aefa27483f3730
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74779660"
 ---
 # <a name="collect-concurrency-data-for-an-aspnet-web-application-using-the-profiler-command-line"></a>Collecter des données d’accès concurrentiel d’une application web ASP.NET en utilisant la ligne de commande du profileur
@@ -26,12 +26,12 @@ La méthode d’accès concurrentiel des outils de profilage [!INCLUDE[vsprvs](.
 
 |Tâche|Contenu associé|
 |----------|---------------------|
-|Attacher le profileur à une application ASP.NET en cours d’exécution|-   [Guide pratique pour attacher le profileur à une application ASP.NET pour collecter des données concurrentielles](../profiling/how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-concurrency-data-by-using-the-command-line.md)|
+|Attacher le profileur à une application ASP.NET en cours d’exécution|-   [Comment : Joindre le profileur à une application ASP.NET pour recueillir des données de concordance](../profiling/how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-concurrency-data-by-using-the-command-line.md)|
 
-## <a name="reference"></a>Reference
-- [Informations de référence sur les outils de profilage de ligne de commande](../profiling/command-line-profiling-tools-reference.md)
+## <a name="reference"></a>Informations de référence
+- [Référence des outils de profilage de la ligne de commandement](../profiling/command-line-profiling-tools-reference.md)
 
-## <a name="related-tasks"></a>Tâches connexes
+## <a name="related-tasks"></a>Tâches associées
 
 ### <a name="profile-aspnet-applications"></a>Profiler des applications ASP.NET
 
@@ -45,13 +45,13 @@ La méthode d’accès concurrentiel des outils de profilage [!INCLUDE[vsprvs](.
 
 |Tâche|Contenu associé|
 |----------|---------------------|
-|**Profiler des applications autonomes (clientes)**|-   [Collecter des données concurrentielles](../profiling/collecting-concurrency-data-for-stand-alone-applications.md)|
-|**Profiler des services**|-   [Collecter des données concurrentielles](../profiling/collecting-concurrency-data-for-a-service-by-using-the-profiler-command-line.md)|
+|**Profiler des applications autonomes (clientes)**|-   [Recueillir des données de concurrence](../profiling/collecting-concurrency-data-for-stand-alone-applications.md)|
+|**Profiler des services**|-   [Recueillir des données de concurrence](../profiling/collecting-concurrency-data-for-a-service-by-using-the-profiler-command-line.md)|
 
 ### <a name="analyze-concurrency-data-views-and-reports"></a>Analyser des vues et des rapports de données concurrentielles
-- [Vues de données de conflit de ressources](../profiling/resource-contention-data-views.md)
+- [Vues de données sur la contention des ressources](../profiling/resource-contention-data-views.md)
 
 - [Visualiseur concurrentiel](../profiling/concurrency-visualizer.md)
 
-## <a name="reference"></a>Reference
-- [Informations de référence sur les outils de profilage de ligne de commande](../profiling/command-line-profiling-tools-reference.md)
+## <a name="reference"></a>Informations de référence
+- [Référence des outils de profilage de la ligne de commandement](../profiling/command-line-profiling-tools-reference.md)

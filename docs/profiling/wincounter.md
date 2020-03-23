@@ -10,10 +10,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 9455d596e27526f6075ad3b667ac441b12511d58
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74779842"
 ---
 # <a name="wincounter"></a>WinCounter
@@ -31,20 +31,20 @@ L’option **WinCounter** spécifie un compteur de performances Windows ou d’a
 VSPerfCmd.exe /Start:Method /Wincounter:Path [/WinCounter:Path] [AutoMark:Milliseconds] [Options]
 ```
 
-#### <a name="parameters"></a>Parameters
+#### <a name="parameters"></a>Paramètres
  `Path` Compteur de performances Windows au format de chemin de compteur PDH.
 
 ## <a name="required-options"></a>Options obligatoires
  L’option **WinCounter** peut être utilisée seulement avec l’option **Start**.
 
- **Start :** `Method` l’option **Start** Initialise le profileur avec la méthode de profilage spécifiée.
+ **Démarrage :** `Method` **L’option Démarrer** initialise le profileur à la méthode de profilage spécifiée.
 
 ## <a name="exclusive-options"></a>Options exclusives
  L’option **AutoMark** peut être utilisée seulement avec l’option **WinCounter**.
 
- **AutoMark :** `Milliseconds` spécifie le nombre de millisecondes entre la collecte des données du compteur de performance Windows.
+ **AutoMark :** `Milliseconds` Specifie le nombre de millisecondes entre la collecte de données du compteur de performances Windows.
 
-## <a name="example"></a>Exemple
+## <a name="example"></a> Exemple
  Dans l’exemple suivant, deux compteurs de performance Windows sont configurés être collectés à un intervalle de 1 000 millisecondes.
 
 ```cmd
@@ -52,7 +52,7 @@ VSPerfCmd.exe /Start:Sample /Output:TestApp.exe.vsp /WinCounter:"\Processor(0)\%
 ```
 
 ## <a name="see-also"></a>Voir aussi
-- [VSPerfCmd](../profiling/vsperfcmd.md)
+- [Vsperfcmd](../profiling/vsperfcmd.md)
 - [Profiler des applications autonomes](../profiling/command-line-profiling-of-stand-alone-applications.md)
-- [Profiler des applications web ASP.NET](../profiling/command-line-profiling-of-aspnet-web-applications.md)
+- [Profil ASP.NET applications Web](../profiling/command-line-profiling-of-aspnet-web-applications.md)
 - [Profiler des services](../profiling/command-line-profiling-of-services.md)

@@ -21,17 +21,17 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: f2d3949194dedab6d7e7ea2faa1aea304d889bc4
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74772118"
 ---
 # <a name="profile-on-hpc-high-performance-computing-clusters"></a>Profiler sur des clusters HPC (High Performance Computing)
 
 Vous pouvez effectuer un profilage sur des nœuds de calcul de clusters HPC Microsoft Windows suivant la méthode par échantillonnage des Outils de profilage de Visual Studio. Pour plus d’informations sur HPC, consultez [Windows HPC](https://azure.microsoft.com/solutions/big-compute/) sur le site web de Microsoft.
 
-## <a name="prerequisites"></a>Configuration requise
+## <a name="prerequisites"></a>Conditions préalables requises
 
 Pour effectuer un profilage sur un nœud de calcul HPC, vous devez effectuer les opérations suivantes :
 
@@ -47,7 +47,7 @@ Pour effectuer un profilage sur un nœud de calcul HPC, vous devez effectuer les
 
     1. `clusrun /all /scheduler:` *%HeadNode% %FxPath%* `/q /norestart`
 
-    2. `clusrun /all /scheduler:` *%HeadNode%* `shutdown /r /t 0 /d u:4:2 /c "Microsoft .NET Framework install required restart"`
+    2. `clusrun /all /scheduler:`*%HeadNode%*`shutdown /r /t 0 /d u:4:2 /c "Microsoft .NET Framework install required restart"`
 
     3. `clusrun /all /scheduler:` *%HeadNode% %ProfilerPath%* `/q /norestart`
 
@@ -69,9 +69,9 @@ Pour configurer une session de profilage, spécifiez le cluster HPC et les infor
 
    - Pour profiler un projet actuellement ouvert dans [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)], sélectionnez l’option **Un ou plusieurs projets disponibles**, puis sélectionnez le nom du projet dans la liste.
 
-   - Pour profiler un fichier binaire qui ne se trouve pas dans un projet ouvert, sélectionnez l’option **Exécutable (fichier .EXE)** .
+   - Pour profiler un fichier binaire qui ne se trouve pas dans un projet ouvert, sélectionnez l’option **Exécutable (fichier .EXE)**.
 
-4. Cliquez sur **Next**.
+4. Cliquez sur **Suivant**.
 
 5. Dans la troisième page de l’Assistant :
 
@@ -83,7 +83,7 @@ Pour configurer une session de profilage, spécifiez le cluster HPC et les infor
 
     - Dans **Emplacement de déploiement**, spécifiez le chemin du répertoire utilisé par le serveur HPC pour organiser des images pour le déploiement.
 
-6. Cliquez sur **Next**.
+6. Cliquez sur **Suivant**.
 
 7. Dans la quatrième page de l’Assistant :
 
@@ -97,13 +97,13 @@ Pour configurer une session de profilage, spécifiez le cluster HPC et les infor
 
          Pour profiler le ou les processus exécutés sur un nœud spécifique du cluster HPC, sélectionnez l’option **Profil sur le nœud**, puis sélectionnez le nœud dans la liste déroulante.
 
-8. Cliquez sur **Next**.
+8. Cliquez sur **Suivant**.
 
 9. Dans la cinquième page de l’Assistant, vous pouvez choisir de démarrer immédiatement le profileur et le processus de profilage, ou de démarrer le profilage ultérieurement à l’aide de l’Explorateur de performances.
 
     - Cochez la case **Lancer le profilage une fois l’Assistant terminé** pour démarrer immédiatement le profilage, ou décochez-la pour démarrer le profilage manuellement.
 
-10. Cliquez sur **Finish**.
+10. Cliquez sur **Terminer**.
 
 ## <a name="set-hpc-profiling-properties-by-using-performance-session-property-pages"></a>Définir des propriétés de profilage HPC à l’aide des pages de propriétés d’une session de performance
 
@@ -125,9 +125,9 @@ Pour modifier les propriétés de session de performance définies dans l’Assi
 
 ### <a name="hpc-launch-properties"></a>Propriétés de lancement HPC
 
-|Property|Description|
+|Propriété|Description|
 |--------------|-----------------|
-|**Nœud principal**|Spécifie l’ordinateur qui joue le rôle du nœud principal HPC dans l’exécution du profilage.|
+|**Nœud de tête**|Spécifie l’ordinateur qui joue le rôle du nœud principal HPC dans l’exécution du profilage.|
 |**Nombre de processus**|Spécifie le nombre d’instances de l’application à exécuter dans l’application profilée.|
 |**Profil sur le rang**|Pour profiler un processus spécifique dans le cluster, sélectionnez l’option **Profil sur le rang**, puis sélectionnez le rang du processus dans la liste déroulante.|
 |**Profil sur le nœud**|Pour profiler le ou les processus exécutés sur un nœud spécifique du cluster HPC, sélectionnez l’option **Profil sur le nœud**, puis sélectionnez le nœud dans la liste déroulante.|
@@ -136,11 +136,11 @@ Pour modifier les propriétés de session de performance définies dans l’Assi
 
 ### <a name="advanced-properties"></a>Propriétés avancées
 
-| Property | Description |
+| Propriété | Description |
 |---------------------------------------| - |
 | **Nom du projet** | Nom du projet ou de la solution [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] actuels. |
 | **Nettoyer après l’arrêt du profileur** | Quand la valeur est true, supprime les fichiers binaires déployés dans le répertoire d’exécution. Les fichiers et répertoires créés par le programme utilisateur ne sont pas supprimés au cours de cette étape. Si le répertoire d’exécution et le répertoire de déploiement ont été créés par l’IDE, ce dernier tente de les supprimer. Cependant, il n’effectue aucune suppression si ces répertoires contiennent des fichiers qu’il n’a pas déployés. |
-| **Fichiers supplémentaires à déployer** | Spécifie une liste séparée par des points-virgules de tous les fichiers supplémentaires à déployer sur le nœud de calcul. Vous pouvez cliquer sur le bouton de sélection ( **...** ) pour sélectionner plusieurs fichiers à l’aide d’une boîte de dialogue. |
+| **Fichiers supplémentaires à déployer** | Spécifie une liste séparée par des points-virgules de tous les fichiers supplémentaires à déployer sur le nœud de calcul. Vous pouvez cliquer sur le bouton de sélection (**... **) pour sélectionner plusieurs fichiers à l’aide d’une boîte de dialogue. |
 | **Commande Mpiexec** | Spécifie l’application qui démarre l’application MPI. La valeur par défaut est **mpiexec.exe**. |
 | **Arguments Mpiexec** | Spécifie les arguments à passer à la commande mpiexec.exe. |
 | **Nœuds demandés sur le cluster** | Spécifie le nombre de nœuds sur le cluster sur lequel l’application doit être exécutée. |

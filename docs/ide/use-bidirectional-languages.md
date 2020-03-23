@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 57bccfccb77c5a80fd2630680564f88f08d7ca5b
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75591994"
 ---
 # <a name="support-for-bidirectional-languages-in-visual-studio"></a>Prise en charge des langues bidirectionnelles dans Visual Studio
@@ -58,7 +58,7 @@ Les éléments suivants peuvent être nommés en arabe et en hébreu, et sont g�
 
 - Valeurs de propriétés.
 
-   Vous pouvez utiliser du texte en arabe ou en hébreu dans la fenêtre **Propriétés**. Elle permet de basculer entre l’ordre de lecture de droite à gauche et celui de gauche à droite en utilisant des séquences de touches Windows standard (**Ctrl**+**Maj droite** pour l’ordre de droite à gauche et **Ctrl**+**Maj gauche** pour l’ordre de gauche à droite).
+   Vous pouvez utiliser du texte arabe ou hébreu dans la fenêtre **Propriétés.** La fenêtre vous permet de basculer entre droite-gauche et de gauche à droite commande de lecture en utilisant des frappes Windows standard **(Ctrl**+**RightShift** pour droite à gauche, et **Ctrl**+**LeftShift** pour de gauche à droite).
 
 - Code et texte littéral.
 
@@ -72,13 +72,13 @@ Les éléments suivants peuvent être nommés en arabe et en hébreu, et sont g�
 
 - Commentaires de code. Vous pouvez créer des commentaires en arabe ou en hébreu. Vous pouvez également utiliser ces langues dans le générateur de commentaires.
 
-### <a name="file-encoding"></a>Encodage des fichiers
+### <a name="file-encoding"></a>Encodage de fichier
 
-Vous pouvez enregistrer et ouvrir des fichiers avec un encodage Unicode ou spécifique à une langue. Pour plus d’informations, consultez la page [Guide pratique pour enregistrer et ouvrir des fichiers avec encodage](../ide/how-to-save-and-open-files-with-encoding.md).
+Vous pouvez enregistrer et ouvrir des fichiers avec un encodage Unicode ou spécifique à une langue. Pour plus d’informations, voir [Comment : Enregistrer et ouvrir des fichiers avec codage](../ide/how-to-save-and-open-files-with-encoding.md).
 
 ## <a name="right-to-left-reading-order"></a>Ordre de lecture de droite à gauche
 
-Visual Studio a une prise en charge limitée de l’ordre de lecture de droite à gauche. Par défaut, les contrôles de d’entrée de texte dans Visual Studio utilisent l’ordre de lecture de gauche à droite. Dans la plupart des cas, vous pouvez utiliser des méthodes Windows standard pour changer l’ordre de lecture. Par exemple, vous pouvez appuyer sur **Ctrl**+**Maj droite** pour que la fenêtre **Propriétés** gère l’ordre de lecture de droite à gauche pour les valeurs de propriété.
+Visual Studio a une prise en charge limitée de l’ordre de lecture de droite à gauche. Par défaut, les contrôles de d’entrée de texte dans Visual Studio utilisent l’ordre de lecture de gauche à droite. Dans la plupart des cas, vous pouvez utiliser des méthodes Windows standard pour changer l’ordre de lecture. Par exemple, vous pouvez appuyer sur **Ctrl**+**RightShift** pour changer la fenêtre **Propriétés** pour prendre en charge l’ordre de lecture de droite à gauche pour les valeurs de propriété.
 
 L’ordre de lecture de droite à gauche n’est pas pris en charge aux endroits suivants dans Visual Studio :
 
@@ -88,4 +88,4 @@ L’ordre de lecture de droite à gauche n’est pas pris en charge aux endroits
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Développer des applications mondialisées et localisées](globalizing-and-localizing-applications.md)
+- [Développer des applications mondialisées et traduites](globalizing-and-localizing-applications.md)

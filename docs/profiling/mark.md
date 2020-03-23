@@ -10,14 +10,14 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 4bf89469c4137052247b5a1fdfee7f8dc694fbcc
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74773992"
 ---
-# <a name="mark"></a>Mark
-L’option **Mark** de *VSPerfCmd.exe* insère les informations spécifiées dans le fichier de données de profilage. Une marque peut apparaître dans un rapport VSPerfReport distinct ou dans la vue Rapport de marques de l’interface utilisateur du profileur. L’option **Mark** peut être utilisée pour spécifier des points de début et fin dans les filtres des rapports et des vues.
+# <a name="mark"></a>Marque
+*L’option VSPerfCmd.exe* **Mark** insère les informations spécifiées dans le fichier de données de profilage. Une marque peut apparaître dans un rapport VSPerfReport distinct ou dans la vue Rapport de marques de l’interface utilisateur du profileur. L’option **Mark** peut être utilisée pour spécifier des points de début et fin dans les filtres des rapports et des vues.
 
  L’option **Mark** doit être la seule option spécifiée sur la ligne de commande.
 
@@ -27,12 +27,12 @@ L’option **Mark** de *VSPerfCmd.exe* insère les informations spécifiées dan
 VSPerfCmd.exe /Mark:MarkID,[MarkName]
 ```
 
-#### <a name="parameters"></a>Parameters
+#### <a name="parameters"></a>Paramètres
  `MarkID` Entier défini par l’utilisateur, qui est listé en tant qu’ID de marque dans les vues et les rapports du profileur. `MarkID` ne doit pas nécessairement être unique.
 
  `MarkName` (Facultatif) Chaîne définie par l’utilisateur, qui est listée en tant que nom de marque dans les vues et les rapports du profileur. Si `MarkName` n’est pas spécifié, le champ Nom de marque de la liste des marques est vide. Placez entre guillemets les chaînes qui contiennent des espaces ou des barres obliques (« / »).
 
-## <a name="example"></a>Exemple
+## <a name="example"></a> Exemple
  Cet exemple insère une marque avec l’ID 123 et le nom de marque « TestMark ».
 
 ```cmd
@@ -42,7 +42,7 @@ VSPerfCmd.exe /Mark:123,TestMark
 ```
 
 ## <a name="see-also"></a>Voir aussi
-- [VSPerfCmd](../profiling/vsperfcmd.md)
+- [Vsperfcmd](../profiling/vsperfcmd.md)
 - [Profiler des applications autonomes](../profiling/command-line-profiling-of-stand-alone-applications.md)
-- [Profiler des applications web ASP.NET](../profiling/command-line-profiling-of-aspnet-web-applications.md)
+- [Profil ASP.NET applications Web](../profiling/command-line-profiling-of-aspnet-web-applications.md)
 - [Profiler des services](../profiling/command-line-profiling-of-services.md)

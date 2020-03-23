@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 5828fb114a4df559c46dd6ae7f64887ab48e7429
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
-ms.translationtype: HT
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/09/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "68919522"
 ---
 # <a name="accessibility-tips-and-tricks-for-visual-studio"></a>Conseils et astuces d’accessibilité pour Visual Studio
@@ -35,13 +35,13 @@ Vous pouvez personnaliser votre expérience IDE en enregistrant la disposition d
 
 Pour certaines personnes, quelques couleurs sont plus difficiles à voir. Si vous souhaitez plus de contraste quand vous codez mais que vous ne souhaitez pas utiliser les thèmes « Contraste élevé » classiques, nous proposons désormais un thème « Bleu (contraste supplémentaire) ».
 
-  ![Comparer le thème Bleu et le thème Bleu (contraste supplémentaire)](media/blue-extra-contrast-theme.png "Capture d’écran montrant une comparaison entre le thème Bleu et le thème Bleu (contraste supplémentaire)")
+  ![Comparer le thème Bleu et le thème Bleu (contraste supplémentaire)](media/blue-extra-contrast-theme.png "Capture d’écran qui montre une comparaison du thème bleu et le thème Blue Extra Contrast")
 
 ## <a name="use-annotations-to-reveal-useful-information-about-your-code"></a>Utiliser des annotations pour révéler des informations utiles sur votre code
 
 L’éditeur Visual Studio inclut de nombreux « ornements » de texte, qui vous donnent des informations sur des caractéristiques et des fonctionnalités à des endroits spécifiques d’une ligne de code, par exemple des icônes de tournevis et d’ampoule, des « lignes ondulées » d’erreur et d’avertissement, des signets, etc. Vous pouvez utiliser l’ensemble de commandes « Afficher les annotations de ligne » pour découvrir et parcourir ces ornements.
 
-  ![Utiliser le jeu de commandes Afficher les annotations de ligne](media/show-line-annotations-command-set.png "Capture d’écran de l’élément de menu Afficher les annotations de ligne")
+  ![Utiliser le jeu de commandes Afficher les annotations de ligne](media/show-line-annotations-command-set.png "Capture d’écran de l’élément du menu Show Line Annotations")
 
 ## <a name="access-toolbars-by-using-keyboard-shortcuts"></a>Accéder aux barres d’outils à l’aide de raccourcis clavier
 
@@ -50,8 +50,8 @@ L’IDE Visual Studio possède des barres d’outils comme de nombreuses fenêtr
 |Fonctionnalité|Description|Raccourci clavier|
 |-------------|-----------------| - |
 |Barres d’outils IDE|Sélectionner le premier bouton de la barre d’outils Standard.|**Alt**, **Ctrl**+**Tab**|
-|Barres d’outils des fenêtres Outil|Déplacer le focus sur les barres d’outils dans une fenêtre Outil. <br> <br> **REMARQUE :** Cela fonctionne pour la plupart des fenêtres Outil, mais uniquement quand le focus se trouve dans une fenêtre Outil. En outre, vous devez choisir la touche Maj avant la touche Alt. Dans certaines fenêtres Outil, comme Team Explorer, vous devez maintenir la touche Maj enfoncée pendant un moment avant de choisir la touche Alt.|**Maj**+**Alt**|
-|Barres d'outils|Accéder au premier élément dans la barre d’outils suivante (quand une barre d’outils a le focus).|**Ctrl**+**Tab**|
+|Barres d’outils des fenêtres Outil|Déplacer le focus sur les barres d’outils dans une fenêtre Outil. <br> <br> **REMARQUE :** Cela fonctionne pour la plupart des fenêtres Outil, mais uniquement quand le focus se trouve dans une fenêtre Outil. En outre, vous devez choisir la touche Maj avant la touche Alt. Dans certaines fenêtres Outil, comme Team Explorer, vous devez maintenir la touche Maj enfoncée pendant un moment avant de choisir la touche Alt.|**Alt De décalage**+**Alt**|
+|Barres d'outils|Accéder au premier élément dans la barre d’outils suivante (quand une barre d’outils a le focus).|**Tab Ctrl**+**Tab**|
 
 ### <a name="other-useful-keyboard-shortcuts"></a>Autres raccourcis clavier utiles
 
@@ -59,15 +59,15 @@ Voici d’autres raccourcis clavier utiles.
 
 |Fonctionnalité|Description|Raccourci clavier|
 |-------------|-----------------| - |
-|IDE|Activer et désactiver le contraste élevé. <br> <br> **REMARQUE :** Raccourci clavier Windows standard|**Alt gauche**+**Maj gauche**+**Imp. écr**|
-|Boîte de dialogue|Cocher ou décocher une case dans une boîte de dialogue. <br> <br> **REMARQUE :** Raccourci clavier Windows standard|**Barre d’espace**|
-|Menus contextuels|Ouvrir un menu contextuel (clic droit). <br> <br> **REMARQUE :** Raccourci clavier Windows standard|**Maj**+**F10**|
-|Menus|Accéder rapidement à un élément de menu à l’aide de ses touches accélérateur. Choisissez la touche **Alt** suivie des lettres soulignées dans un menu pour activer la commande. Par exemple, pour afficher la boîte de dialogue Ouvrir un projet dans Visual Studio, choisissez **Alt**+**F**+**O**+**P**.  <br><br> **REMARQUE :** Raccourci clavier Windows standard|**Alt** +  **[lettre]**|
+|IDE|Activer et désactiver le contraste élevé. <br> <br> **REMARQUE:** Raccourci clavier Windows standard|**Gauche Alt**+**Left Shift**+**PrtScn**|
+|Boîte de dialogue|Cocher ou décocher une case dans une boîte de dialogue. <br> <br> **REMARQUE:** Raccourci clavier Windows standard|**Espace**|
+|Menu contextuels|Ouvrir un menu contextuel (clic droit). <br> <br> **REMARQUE:** Raccourci clavier Windows standard|**Quart de travail**+**F10**|
+|Menus|Accéder rapidement à un élément de menu à l’aide de ses touches accélérateur. Choisissez la touche **Alt** suivie des lettres soulignées dans un menu pour activer la commande. Par exemple, pour voir la boîte de dialogue Open Project dans Visual Studio, vous choisiriez **Alt**+**F**+**O**+**P**.  <br><br> **REMARQUE:** Raccourci clavier Windows standard|**Alt** + **[lettre]**|
 |Zone de recherche|Utiliser la fonctionnalité de recherche dans Visual Studio.|**Ctrl**+**Q**|
-|Fenêtre Boîte à outils|Se déplacer entre les onglets de la boîte à outils.|**Ctrl**+**Haut**<br /><br /> et<br /><br /> **Ctrl**+**Bas**|
-|Fenêtre Boîte à outils|Ajouter un contrôle à partir de la boîte à outils à un formulaire ou un concepteur.|**Entrée**|
-|Boîte de dialogue Options : Environnement > Clavier|Supprimer une combinaison de touches entrée dans l’option **Appuyer sur les touches de raccourci**.|**Retour arrière**|
-|Fenêtre Outil Notifications|Ouvrez la fenêtre Outil Notifications à l’aide de deux combinaisons de touches de raccourci clavier, l’une après de l’autre. Affichez ensuite une notification en utilisant les touches de direction pour la sélectionner.| **Ctrl**+ **&#92;** , **Ctrl**+**N**|
+|Fenêtre Boîte à outils|Se déplacer entre les onglets de la boîte à outils.|**Flèche de Ctrl**+**Up**<br /><br /> and<br /><br /> **Flèche de Ctrl**+**Down**|
+|Fenêtre Boîte à outils|Ajouter un contrôle à partir de la boîte à outils à un formulaire ou un concepteur.|**Entrer**|
+|Boîte de dialogue d’options : Environnement > clavier|Supprimer une combinaison de touches entrée dans l’option **Appuyer sur les touches de raccourci**.|**Backspace**|
+|Fenêtre Outil Notifications|Ouvrez la fenêtre Outil Notifications à l’aide de deux combinaisons de touches de raccourci clavier, l’une après de l’autre. Affichez ensuite une notification en utilisant les touches de direction pour la sélectionner.| **Ctrl** + **&#92;**, **Ctrl**+**N**|
 
 > [!NOTE]
 > Selon vos paramètres actifs ou votre édition, les boîtes de dialogue et les commandes de menu affichées peuvent différer de celles qui sont décrites dans l'aide.
@@ -76,11 +76,11 @@ Voici d’autres raccourcis clavier utiles.
 
 Quand une notification apparaît dans l’IDE, voici comment accéder à la fenêtre Notifications à l’aide des raccourcis clavier :
 
-1. À partir de n’importe quel emplacement dans l’IDE, appuyez successivement sur les deux raccourcis clavier suivants : **Ctrl**+ **&#92;** , puis **Ctrl**+**N**.
+1. De n’importe où dans l’IDE, appuyez sur les deux raccourcis clavier suivants dans l’ordre, l’un après l’autre: **Ctrl** + **&#92;** puis **Ctrl**+**N**.
 
    La fenêtre **Notifications** s’ouvre.
 
-   ![Fenêtre Outil Notifications dans l’IDE Visual Studio](media/toast-notification.png "Capture d’écran de la fenêtre Notifications dans l’IDE Visual Studio")
+   ![Fenêtre d’outil de notification dans l’IDE Visual Studio](media/toast-notification.png "Capture d’écran de la fenêtre Notifications dans le Visual Studio IDE")
 
 1. Utilisez la touche **Tab** ou les touches de direction pour sélectionner une notification.
 
@@ -91,25 +91,25 @@ Vous pouvez utiliser l’applet Sound (Son) dans Windows pour affecter un son au
 * Accès à un point d’arrêt
 * Build annulée
 * Échec de la build
-* Build réussie
+* Génération réussie
 
-Voici comment :
+Voici comment faire :
 
 1. Dans la zone de **recherche** sur un ordinateur exécutant Windows 10, tapez **Modifier les sons système**.
 
-   ![Zone de recherche dans Windows 10](media/type-here-to-search.png "Capture d’écran de la zone de recherche dans Windows 10")
+   ![Zone de recherche dans Windows 10](media/type-here-to-search.png "Capture d’écran de la boîte de recherche dans Windows 10")
 
    (Sinon, si Cortana est activé, dites « Hey Cortana », puis « Modifier les sons système ».)
 
 1. Double-cliquez sur **Modifier les sons système**.
 
-   ![Résultats de la recherche dans Windows 10](media/change-system-sounds.png "Capture d’écran des résultats de la recherche « Modifier les sons système » dans Windows 10")
+   ![Résultats de recherche dans Windows 10](media/change-system-sounds.png "Capture d’écran des résultats de recherche « Changer les sons du système » dans Windows 10")
 
 1. Dans la boîte de dialogue **Sound** (Son), cliquez sur l’onglet **Sons**.
 
 1. Dans **Événements**, faites défiler la liste jusqu’à **Microsoft Visual Studio**, puis sélectionnez les sons à appliquer aux événements de votre choix.
 
-   ![Onglet Sons de l’applet Son dans Windows 10](media/sound-applet.png "Onglet Sons de l’applet Son dans Windows 10")
+   ![Onglet Sons de l’applet Son dans Windows 10](media/sound-applet.png "Onglet Sons de l’applet Son dans Windows 10")
 
 1. Cliquez sur **OK**.
 
@@ -122,8 +122,8 @@ Voici comment :
 
 ## <a name="see-also"></a>Voir aussi
 
-* [Fonctionnalités d’accessibilité de Visual Studio](../../ide/reference/accessibility-features-of-visual-studio.md)
-* [Guide pratique pour personnaliser des menus et des barres d’outils dans Visual Studio](../../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md)
+* [Caractéristiques d’accessibilité de Visual Studio](../../ide/reference/accessibility-features-of-visual-studio.md)
+* [Comment : Personnaliser les menus et les barres d’outils dans Visual Studio](../../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md)
 * [Personnaliser l’IDE Visual Studio](../../ide/personalizing-the-visual-studio-ide.md)
 * [Accessibilité (Visual Studio pour Mac)](/visualstudio/mac/accessibility)
 * [Accessibilité Microsoft](https://www.microsoft.com/Accessibility)

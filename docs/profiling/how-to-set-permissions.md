@@ -15,10 +15,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: c1ab7705c7ab46b07b08b707ce447f37c581036a
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74774587"
 ---
 # <a name="how-to-set-permissions"></a>Guide pratique pour définir les autorisations
@@ -36,7 +36,7 @@ Les membres du groupe Utilisateurs peuvent exécuter les outils de profilage si 
 
 ## <a name="to-create-a-user-account-that-has-user-permissions"></a>Pour créer un compte d’utilisateur disposant d’autorisations utilisateurs
 
-1. Cliquez avec le bouton droit sur **Poste de travail**, puis cliquez sur **Gérer**.
+1. Cliquez à droite **mon ordinateur,** puis cliquez sur **Gérer**.
 
      La fenêtre **Gestion de l’ordinateur** s’ouvre.
 
@@ -46,9 +46,9 @@ Les membres du groupe Utilisateurs peuvent exécuter les outils de profilage si 
 
      La boîte de dialogue **Nouvel utilisateur** s’affiche.
 
-4. Renseignez les champs de cette boîte de dialogue avec les informations du compte d’utilisateur que vous créez. Spécifiez un mot de passe. Cochez éventuellement la case qui exige que l’utilisateur modifie le mot de passe à la prochaine connexion.
+4. Renseignez les champs de cette boîte de dialogue avec les informations du compte d’utilisateur que vous créez. Permet de spécifier un mot de passe. Cochez éventuellement la case qui exige que l’utilisateur modifie le mot de passe à la prochaine connexion.
 
-5. Cliquez sur **Créer**, puis sur **Fermer**.
+5. Cliquez **sur Créer** et ensuite cliquez sur **Fermer**.
 
      Le nouvel utilisateur apparaît dans le groupe Utilisateurs, un groupe d’utilisateurs qui ne disposent pas d’autorisations d’administrateur.
 
@@ -64,13 +64,13 @@ Les membres du groupe Utilisateurs peuvent exécuter les outils de profilage si 
 
 2. Cliquez avec le bouton droit sur le dossier, puis cliquez sur **Propriétés**.
 
-     La boîte de dialogue**Propriétés de \<nom_dossier>** s’affiche.
+     Le ** \<nom du dossier>** boîte de dialogue Properties apparaît.
 
-3. Cliquez sur l'onglet **Sécurité** .
+3. Cliquez sur l’onglet **Sécurité**.
 
 4. Cliquez sur le nom du compte de l’utilisateur dans la zone **Noms de groupes ou d’utilisateurs**.
 
-5. Dans la zone **Autorisations pour \<nom_utilisateur>** , cochez la case en regard de **Contrôle total**.
+5. Dans la zone **Autorisations pour \<nom_utilisateur>**, cochez la case en regard de **Contrôle total**.
 
 6. Cliquez sur **OK**.
 
@@ -78,7 +78,7 @@ Les membres du groupe Utilisateurs peuvent exécuter les outils de profilage si 
 
 ## <a name="to-grant-access-to-the-profiling-driver"></a>Pour accorder l’accès au pilote de profilage
 
-1. Ouvrez une invite de commandes en tant qu'administrateur.
+1. Ouvrez une invite de commandes en tant qu’administrateur.
 
 2. Remplacez le répertoire par :
 
@@ -86,7 +86,7 @@ Les membres du groupe Utilisateurs peuvent exécuter les outils de profilage si 
     <drive>:\Program Files\Microsoft Visual Studio 14\Team Tools\Performance Tools
     ```
 
-3. Exécutez la commande suivante : .
+3. Exécutez la commande suivante :
 
     ```cmd
     vsperfcmd /admin:driver,start /admin:service,start
@@ -122,6 +122,6 @@ Les membres du groupe Utilisateurs peuvent exécuter les outils de profilage si 
 
 ## <a name="see-also"></a>Voir aussi
 
-[Configurer des sessions de performances](../profiling/configuring-performance-sessions.md)
-[VSPerfCmd](../profiling/vsperfcmd.md)
-[Profilage et sécurité Windows Vista](../profiling/profiling-and-windows-vista-security.md)
+[Configurer les sessions de](../profiling/configuring-performance-sessions.md)
+performance[VSPerfCmd](../profiling/vsperfcmd.md)
+[Profiling et Windows Vista Security](../profiling/profiling-and-windows-vista-security.md)

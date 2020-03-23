@@ -15,10 +15,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 6a297e6bfbed5023db97cabd370679b0de6caaab
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74778971"
 ---
 # <a name="how-to-customize-report-view-columns"></a>Guide pratique pour personnaliser les colonnes de la vue de rapport
@@ -26,23 +26,23 @@ Les outils d’analyse des performances de Visual Studio Team System Development
 
 - [Vue Modules](../profiling/modules-view.md)
 
-- [Mode Fonctions](../profiling/functions-view.md)
+- [Vue Fonctions](../profiling/functions-view.md)
 
 - [Vue Lignes](../profiling/lines-view.md)
 
-- [Vue Pointeurs d’instruction (IP)](../profiling/instruction-pointers-ips-view.md)
+- [Pointeurs d’instruction (IP), vue](../profiling/instruction-pointers-ips-view.md)
 
 - [Vue Appelant/Appelé](../profiling/caller-callee-view.md)
 
-- [Mode Arborescence des appels](../profiling/call-tree-view.md)
+- [Afficher l’arbre d’appel](../profiling/call-tree-view.md)
 
-- [Allocations, vue](../profiling/dotnet-memory-allocations-view.md)
+- [Vue Allocations](../profiling/dotnet-memory-allocations-view.md)
 
 - [Vue Durée de vie de l’objet](../profiling/object-lifetime-view.md)
 
 - [Marques, vue](../profiling/marks-view.md)
 
-- [Processus, vue](../profiling/process-view.md)
+- [Vue Processus](../profiling/process-view.md)
 
 ### <a name="to-customize-a-report-view"></a>Pour personnaliser une vue de rapport
 
@@ -50,7 +50,7 @@ Les outils d’analyse des performances de Visual Studio Team System Development
 
 2. Cliquez avec le bouton droit sur la vue Rapport, puis cliquez sur **Ajouter/Supprimer des colonnes**.
 
-     La boîte de dialogue **Ajouter/Supprimer des colonnes** s’affiche.
+     La boîte de dialogue **Ajout/Suppression de colonnes** s'affiche.
 
 3. Sélectionnez les colonnes que vous voulez ajouter.
 

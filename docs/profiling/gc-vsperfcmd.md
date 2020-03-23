@@ -10,10 +10,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: e14fef1cfdc2dfc5f0d737ac09a08d90ab1de309
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74776977"
 ---
 # <a name="gc-vsperfcmd"></a>GC (VSPerfCmd)
@@ -29,7 +29,7 @@ L’option **GC** active la collecte des données d’allocation mémoire et de 
 VSPerfCmd.exe /Launch:AppName /GC[:{Allocation|Lifetime}] [Options]
 ```
 
-#### <a name="parameters"></a>Parameters
+#### <a name="parameters"></a>Paramètres
  **Allocation** Valeur par défaut. Collecte les données d’allocation mémoire de .NET Framework.
 
  **Lifetime** Collecte les données d’allocation de mémoire du .NET Framework et les données de durée de vie des objets du .NET Framework.
@@ -37,9 +37,9 @@ VSPerfCmd.exe /Launch:AppName /GC[:{Allocation|Lifetime}] [Options]
 ## <a name="required-options"></a>Options obligatoires
  L’option **GC** peut être utilisée seulement avec l’option **Launch**.
 
- **Launch :** `AppName` démarre l’application spécifiée et commence le profilage à l’aide de la méthode d’échantillonnage.
+ **Lancement :** `AppName` Démarre l’application spécifiée et commence à profiler avec la méthode d’échantillonnage.
 
-## <a name="example"></a>Exemple
+## <a name="example"></a> Exemple
  L’exemple suivant lance une application et collecte les données d’allocation mémoire de .NET Framework.
 
 ```cmd
@@ -47,7 +47,7 @@ VSPerfCmd.exe /Launch:TestApp.exe /gc
 ```
 
 ## <a name="see-also"></a>Voir aussi
-- [VSPerfCmd](../profiling/vsperfcmd.md)
+- [Vsperfcmd](../profiling/vsperfcmd.md)
 - [Profiler des applications autonomes](../profiling/command-line-profiling-of-stand-alone-applications.md)
-- [Profiler des applications web ASP.NET](../profiling/command-line-profiling-of-aspnet-web-applications.md)
+- [Profil ASP.NET applications Web](../profiling/command-line-profiling-of-aspnet-web-applications.md)
 - [Profiler des services](../profiling/command-line-profiling-of-services.md)

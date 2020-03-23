@@ -1,5 +1,5 @@
 ---
-title: Gestion de version
+title: Contrôle de version
 description: Utilisation de Git et de Subversion dans Visual Studio pour Mac.
 ms.topic: overview
 author: jmatthiesen
@@ -7,13 +7,13 @@ ms.author: jomatthi
 ms.date: 05/06/2018
 ms.assetid: 49917483-28AA-4598-A847-71F1F2E0DCB5
 ms.openlocfilehash: 9206ab892ef125706ab16f9a739fe88a52f5c242
-ms.sourcegitcommit: cf8c0fef2b9690595e99ce3802586cdd55fd37c2
-ms.translationtype: HT
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/28/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "70108095"
 ---
-# <a name="version-control"></a>Gestion de version
+# <a name="version-control"></a>Gestion de versions
 
 La gestion de version est un système de gestion de fichiers sur plusieurs versions auquel contribuent de nombreux développeurs, notamment dans le cadre du développement de logiciels. L’objectif principal d’un système de gestion de version (_VCS_ (Version Control System) est de trouver une solution qui permet à tous les utilisateurs de travailler sur le codebase en même temps.
 
@@ -30,7 +30,7 @@ Git est un système de gestion de versions distribué qui permet aux équipes de
 Visual Studio pour Mac prend en charge les systèmes de gestion de version Git et Subversion. Les articles suivants explorent la configuration des dépôts Git et Subversion dans Visual Studio pour Mac, ainsi que des fonctionnalités simples comme l’examen, la validation et la transmission des modifications.
 
 * [Configuration d’un dépôt Git](set-up-git-repository.md)
-* [Utilisation de Git](working-with-git.md)
+* [Travailler avec Git](working-with-git.md)
 * [Configuration d’un dépôt Subversion](set-up-subversion-repository.md)
 * [Utilisation de Subversion](working-with-subversion.md)
 

@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: fa9d6658ae14c4b84aae9361f73e4701e758f975
-ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/25/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "72911220"
 ---
 # <a name="advanced-settings-dialog-box-concurrency-visualizer"></a>Paramètres avancés, boîte de dialogue (visualiseur concurrentiel)
@@ -28,10 +28,10 @@ La boîte de dialogue **Paramètres avancés** du visualiseur concurrentiel vous
 
  Les chemins des fichiers .*exe* et .*dll* sont stockés dans le fichier de trace quand la trace est collectée.  La modification de ce paramètre n’affecte pas les traces déjà collectées.
 
-## <a name="buffering"></a>Mise en mémoire tampon
+## <a name="buffering"></a>des réponses
  Le visualiseur concurrentiel utilise le suivi d’événements pour Windows (ETW) quand il collecte une trace.  ETW utilise plusieurs mémoires tampons quand il stocke des événements.  Les paramètres de mémoire tampon ETW par défaut peuvent ne pas être optimaux dans tous les cas. Ils peuvent même provoquer des problèmes tels que la perte d’événements dans certaines situations.  Vous pouvez utiliser l’onglet Mise en mémoire tampon pour configurer les paramètres de mémoire tampon ETW. Pour plus d’informations, consultez [Traçage d’événements](/windows/win32/etw/event-tracing-portal) et [Structure d’EVENT_TRACE_PROPERTIES](/windows/win32/api/evntrace/ns-evntrace-event_trace_properties).
 
-## <a name="filter"></a>Filtre
+## <a name="filter"></a>Filtrer
  Sous l’onglet Filtre, vous pouvez sélectionner le jeu d’événements collecté par le visualiseur concurrentiel. La sélection d’un sous-ensemble d’événements limite les types de données qui s’affichent dans les rapports, réduit la taille de chaque trace et accélère le traitement des traces.
 
 ### <a name="clr-events"></a>événements CLR
@@ -52,13 +52,13 @@ La boîte de dialogue **Paramètres avancés** du visualiseur concurrentiel vous
 ### <a name="file-io-events"></a>Événements d’E/S de fichier
  Les événements d’E/S de fichier représentent les accès au disque pour le compte du processus actuel.  Si vous désactivez les événements d’E/S de fichier, vous réduisez la taille de la trace, mais la vue Threads ne signale aucune information sur les canaux de disque ou des opérations de disque.
 
-## <a name="markers"></a>Markers
+## <a name="markers"></a>Marqueurs
  Sous l’onglet **Marqueurs**, vous pouvez configurer l’ensemble des fournisseurs ETW affichés en tant que marqueurs dans le visualiseur concurrentiel.  Vous pouvez également filtrer la collection de marqueurs selon le niveau d’importance et la catégorie ETW.  Si vous utilisez le [kit SDK du visualiseur concurrentiel](../profiling/concurrency-visualizer-sdk.md) et votre propre fournisseur de marqueurs, vous pouvez l’inscrire ici pour qu’il apparaisse dans la vue Threads.
 
 ### <a name="add-a-new-provider"></a>Ajouter un nouveau fournisseur
  Si votre code utilise le [SDK du visualiseur concurrentiel](../profiling/concurrency-visualizer-sdk.md) ou génère des événements ETW qui respectent la convention <xref:System.Diagnostics.Tracing.EventSource>, vous pouvez afficher ces événements dans le visualiseur concurrentiel en les inscrivant dans cette boîte de dialogue.
 
- Dans le champ **Nom**, entrez un nom qui décrit les types d’événement générés par le fournisseur.  Dans le champ **GUID**, entrez le GUID associé à ce fournisseur. (Un GUID est associé à chaque fournisseur ETW.)
+ Dans le champ **Nom,** entrez un nom qui décrit les types d’événements générés par le fournisseur.  Dans le champ **GUID**, entrez le GUID associé à ce fournisseur. (Un GUID est associé à chaque fournisseur ETW.)
 
  Vous pouvez éventuellement indiquer si vous souhaitez filtrer les événements de ce fournisseur selon la catégorie ou le niveau d’importance.  Vous pouvez utiliser le champ Catégorie pour filtrer les événements en fonction des catégories du kit SDK du visualiseur concurrentiel.  Pour cela, entrez une chaîne délimitée par des virgules de catégories ou de plages de catégories.  Cela permet de spécifier les catégories d’événements dans le fournisseur actif à afficher.  Si vous ajoutez un fournisseur <xref:System.Diagnostics.Tracing.EventSource>, vous pouvez utiliser le champ Catégorie pour filtrer les événements par mot clé ETW.  Étant donné que le mot clé est un masque de bits, vous pouvez utiliser une chaîne d’entiers délimitée par des virgules pour spécifier les bits définis dans le masque. Par exemple, « 1,2 » définit les premier et deuxième bits, ce qui se traduit par 6 au format décimal.
 

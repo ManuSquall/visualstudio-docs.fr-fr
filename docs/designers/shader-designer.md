@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 85ce7b0f270f0da8728b17610a683dcc17d06189
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75589927"
 ---
 # <a name="shader-designer"></a>Concepteur Shader
@@ -26,7 +26,7 @@ Le **Concepteur de nuanceur** permet de créer des effets visuels personnalisés
 
 ## <a name="supported-formats"></a>Formats pris en charge
 
-Le **Concepteur de nuanceur** prend en charge les formats de nuanceur suivants :
+Le **concepteur Shader** prend en charge ces formats d’ombrageur :
 
 |Nom de format|Extension de fichier|Opérations prises en charge (afficher, modifier, exporter)|
 |-----------------| - | - |
@@ -46,20 +46,20 @@ Cette section explique comment ajouter un nuanceur DGSL à un projet C++ Visual 
 
 1. Vérifiez que le composant Visual Studio dont vous avez besoin pour travailler avec les graphismes est installé. Il s’appelle **Éditeurs d’images et de modèles 3D**.
 
-   Pour l’installer, ouvrez Visual Studio Installer en sélectionnant **outils** > **Afficher outils et fonctionnalités** dans la barre de menus, puis sélectionnez l’onglet **composants individuels** . Sélectionnez le composant **éditeurs d’images et de modèles 3D** sous la catégorie **jeux et graphismes** , puis sélectionnez **modifier**.
+   Pour l’installer, ouvrez Visual Studio Install en sélectionnant **tools** > **Get Tools and Features** à partir de la barre de menu, puis sélectionnez **l’onglet Composants individuels.** Sélectionnez le composant **d’éditeurs d’images et de modèles 3D** dans la catégorie Jeux et **Graphiques,** puis **sélectionnez Modifier**.
 
    ![Composant Éditeurs d’images et de modèles 3D](media/image-3d-model-editors-component.png)
 
 2. Dans **l’Explorateur de solutions**, ouvrez le menu contextuel du projet C++ auquel vous voulez ajouter le nuanceur, puis choisissez **Ajouter** > **Nouvel élément**.
 
-3. Dans la boîte de dialogue **Ajouter un nouvel élément**, sous **Installé**, sélectionnez **Graphiques**, puis **Graphe de nuanceur visuel (.dgsl)** .
+3. Dans la boîte de dialogue **Ajouter un nouvel élément**, sous **Installé**, sélectionnez **Graphiques**, puis **Graphe de nuanceur visuel (.dgsl)**.
 
    > [!NOTE]
    > Si la catégorie **Graphismes** n’apparaît pas dans la boîte de dialogue **Ajouter un nouvel élément** alors que le composant **Éditeurs d’images et de modèles 3D** est installé, cela signifie que les éléments graphiques ne sont pas pris en charge pour votre type de projet.
 
 4. Spécifiez le **Nom** du fichier du nuanceur, ainsi que l’**Emplacement** où vous souhaitez le créer.
 
-5. Choisissez le bouton **Ajouter** .
+5. Choisissez le bouton **Ajouter**.
 
 ### <a name="the-default-shader"></a>Nuanceur par défaut
 
@@ -83,10 +83,10 @@ Ce tableau décrit les éléments de la barre d’outils **Mode du concepteur de
 
 |Élément de la barre d'outils|Description|
 |------------------|-----------------|
-|**Sélectionner**|Permet l’interaction avec des nœuds et des bords dans le graphique. Dans ce mode, vous pouvez sélectionner des nœuds et les déplacer ou les supprimer. Vous pouvez également créer des bords ou les couper.|
-|**Panoramique**|Permet de déplacer un graphe de nuanceur par rapport au cadre de la fenêtre. Pour effectuer un mouvement panoramique, sélectionnez un point dans l’aire de conception et déplacez-le.<br /><br /> En mode **Sélection**, vous pouvez maintenir enfoncée la touche **Ctrl** pour activer temporairement le mode **Panoramique**.|
+|**Sélectionnez**|Permet l’interaction avec des nœuds et des bords dans le graphique. Dans ce mode, vous pouvez sélectionner des nœuds et les déplacer ou les supprimer. Vous pouvez également créer des bords ou les couper.|
+|**Pan**|Permet de déplacer un graphe de nuanceur par rapport au cadre de la fenêtre. Pour effectuer un mouvement panoramique, sélectionnez un point dans l’aire de conception et déplacez-le.<br /><br /> En mode **Select,** vous pouvez appuyer et tenir **Ctrl** pour activer temporairement le mode **Pan.**|
 |**Zoom**|Permet d’afficher un graphique de nuanceur avec plus ou moins de détails par rapport au cadre de la fenêtre. En mode **Zoom**, sélectionnez un point dans l’aire de conception et déplacez-le vers la droite ou le bas pour effectuer un zoom avant, ou vers la gauche ou le haut pour effectuer un zoom arrière.<br /><br /> En mode **Sélection**, vous pouvez maintenir enfoncée la touche **Ctrl** pour effectuer un zoom avant ou arrière à l’aide de la roulette de la souris.|
-|**Zoom pour ajuster**|Affiche le graphe de nuanceur complet dans le cadre de la fenêtre.|
+|**Zoom vers l’ajustement**|Affiche le graphe de nuanceur complet dans le cadre de la fenêtre.|
 |**Mode de rendu en temps réel**|Quand le rendu en temps réel est activé, Visual Studio redessine l’aire de conception, même quand aucune action utilisateur n’est effectuée. Ce mode est utile lorsque vous travaillez avec des nuanceurs qui évoluent avec le temps.|
 |**Aperçu avec la sphère**|Si cette option est activée, un modèle de sphère est utilisé pour afficher un aperçu du nuanceur. Une seule forme d’aperçu peut être activée à la fois.|
 |**Aperçu avec le cube**|Si cette option est activée, un modèle de cube est utilisé pour afficher un aperçu du nuanceur. Une seule forme d’aperçu peut être activée à la fois.|
@@ -94,9 +94,9 @@ Ce tableau décrit les éléments de la barre d’outils **Mode du concepteur de
 |**Aperçu avec le cône**|Si cette option est activée, un modèle de cône est utilisé pour afficher un aperçu du nuanceur. Une seule forme d’aperçu peut être activée à la fois.|
 |**Aperçu avec Teapot**|Si cette option est activée, un modèle de théière est utilisé pour afficher un aperçu du nuanceur. Une seule forme d’aperçu peut être activée à la fois.|
 |**Aperçu avec le plan**|Si cette option est activée, un modèle de plan est utilisé pour afficher un aperçu du nuanceur. Une seule forme d’aperçu peut être activée à la fois.|
-|**Boîte à outils**|Affiche ou masque la **Boîte à outils**.|
+|**Toolbox**|Affiche ou masque la **Boîte à outils**.|
 |**Propriétés**|Affiche ou masque la fenêtre **Propriétés**.|
-|**Avancé**|Contient des commandes et des options avancées.<br /><br /> **Exporter** : permet l’exportation d’un nuanceur dans plusieurs formats.<br /><br /> **Exporter en tant que** : exporte le nuanceur soit en tant que code source HLSL ou en tant que bytecode de nuanceur compilé. Pour plus d’informations sur la façon d’exporter des nuanceurs, consultez [Guide pratique pour exporter un nuanceur](../designers/how-to-export-a-shader.md).<br /><br /> **Moteurs Graphics** : permet de sélectionner le renderer utilisé pour afficher l’aire de conception.<br /><br /> **Render with D3D11 (Afficher avec D3D11)**  : utilise Direct3D 11 pour afficher l’aire de conception du concepteur de nuanceur.<br /><br /> **Render with D3D11WARP (Afficher avec D3D11WARP)**  : utilise la plateforme WARP (Windows Advanced Rasterization Platform) D3D11 WARP pour afficher l’aire de conception du concepteur de nuanceur.<br /><br /> **Vue** : permet de sélectionner des informations supplémentaires sur le concepteur de nuanceur.<br /><br /> **Fréquence d’images** : si cette option est activée, affiche la fréquence d’images actuelle dans l’angle supérieur droit de l’aire de conception. La fréquence d'images est le nombre d'images dessinées par seconde. Cette option est utile lorsque vous activez l’option **Mode de rendu en temps réel**.|
+|**Avancé**|Contient des commandes et des options avancées.<br /><br /> **Exporter** : permet l’exportation d’un nuanceur dans plusieurs formats.<br /><br /> **Exporter en tant que** : exporte le nuanceur soit en tant que code source HLSL ou en tant que bytecode de nuanceur compilé. Pour plus d’informations sur la façon d’exporter des ombrageurs, voir [Comment: Exporter un ombrageur](../designers/how-to-export-a-shader.md).<br /><br /> **Moteurs Graphics** : permet de sélectionner le renderer utilisé pour afficher l’aire de conception.<br /><br /> **Render with D3D11 (Afficher avec D3D11)**  : utilise Direct3D 11 pour afficher l’aire de conception du concepteur de nuanceur.<br /><br /> **Render with D3D11WARP (Afficher avec D3D11WARP)**  : utilise la plateforme WARP (Windows Advanced Rasterization Platform) D3D11 WARP pour afficher l’aire de conception du concepteur de nuanceur.<br /><br /> **Vue** : permet de sélectionner des informations supplémentaires sur le concepteur de nuanceur.<br /><br /> **Fréquence d’images** : si cette option est activée, affiche la fréquence d’images actuelle dans l’angle supérieur droit de l’aire de conception. La fréquence d'images est le nombre d'images dessinées par seconde. Cette option est utile lorsque vous activez l’option **Mode de rendu en temps réel**.|
 
 > [!TIP]
 > Vous pouvez choisir le bouton **Avancé** pour réexécuter la dernière commande.
@@ -107,7 +107,7 @@ Utilisez le mode **Sélection** pour ajouter, supprimer, repositionner, connecte
 
 #### <a name="to-perform-basic-operations-in-select-mode"></a>Pour effectuer des opérations de base en mode Sélection
 
-- Voici comment :
+- Voici comment faire :
 
   - Pour ajouter un nœud au graphique, sélectionnez-le dans la **boîte à outils**, puis déplacez-le vers l’aire de conception.
 
@@ -145,12 +145,12 @@ Le tableau suivant présente les paramètres modifiables du nuanceur :
 
 |Paramètre|Propriétés|
 |---------------|----------------|
-|**Texture 1** - **Texture 8**|**Accès** :                             **Public** pour que la propriété puisse être définie dans l’éditeur de modèle. **Privé** dans le cas contraire.<br /><br /> **Nom de fichier** : chemin d’accès complet au fichier de texture associé à ce registre de texture.|
-|**Matériau ambiant**|**Accès** :                             **Public** pour que la propriété puisse être définie dans l’éditeur de modèle. **Privé** dans le cas contraire.<br /><br /> **Valeur** : couleur diffuse du pixel actuel qui est due à l’éclairage indirect, ou ambiant.|
+|**Texture 1** - **Texture 8**|**Accès**: **Public** pour permettre au bien d’être fixé à partir de l’éditeur modèle ; autrement, **privé**.<br /><br /> **Nom de fichier** : chemin d’accès complet au fichier de texture associé à ce registre de texture.|
+|**Matériau ambiant**|**Accès**: **Public** pour permettre au bien d’être fixé à partir de l’éditeur modèle ; autrement, **privé**.<br /><br /> **Valeur**: La couleur diffuse du pixel actuel en raison de l’éclairage indirect - ou ambiant ..|
 |**Matériau diffus**|**Accès** : **Public** pour que la propriété puisse être définie dans l’éditeur de modèle. **Privé** dans le cas contraire.<br /><br /> **Valeur** : couleur qui décrit la manière dont le pixel actuel diffuse la lumière directe.|
-|**Matériau émissif**|**Accès** :                              **Public** pour que la propriété puisse être définie dans l’éditeur de modèle. **Privé** dans le cas contraire.<br /><br /> **Valeur** : contribution de couleur du pixel actuel, basée sur l’auto-éclairage.|
-|**Matériau spéculaire**|**Accès** :                              **Public** pour que la propriété puisse être définie dans l’éditeur de modèle. **Privé** dans le cas contraire.<br /><br /> **Valeur** : couleur qui décrit la manière dont le pixel actuel reflète la lumière directe.|
-|**Puissance spéculaire du matériau**|**Accès** :                             **Public** pour que la propriété puisse être définie dans l’éditeur de modèle. **Privé** dans le cas contraire.<br /><br /> **Valeur** : exposant qui définit l’intensité des surbrillances spéculaires sur le pixel actuel.|
+|**Matériau émissif**|**Accès**: **Public** pour permettre au bien d’être fixé à partir de l’éditeur modèle ; autrement, **privé**.<br /><br /> **Valeur** : contribution de couleur du pixel actuel, basée sur l’auto-éclairage.|
+|**Matériau spéculaire**|**Accès**: **Public** pour permettre au bien d’être fixé à partir de l’éditeur modèle ; autrement, **privé**.<br /><br /> **Valeur** : couleur qui décrit la manière dont le pixel actuel reflète la lumière directe.|
+|**Puissance spéculaire du matériau**|**Accès**: **Public** pour permettre au bien d’être fixé à partir de l’éditeur modèle ; autrement, **privé**.<br /><br /> **Valeur** : exposant qui définit l’intensité des surbrillances spéculaires sur le pixel actuel.|
 
 #### <a name="time-based-effects"></a>Effets à durée définie
 
@@ -168,13 +168,13 @@ Pour faire pivoter la forme, appuyez et maintenez enfoncée la touche **Alt**, p
 
 Avant de pouvoir utiliser un nuanceur dans votre application, vous devez l’exporter dans un format pris en charge par DirectX.
 
-Vous pouvez exporter des nuanceurs en tant que code source HLSL ou bytecode de nuanceur compilé. Le code source HLSL est exporté dans un fichier texte ayant l’extension de nom de fichier  *.hlsl*. Le bytecode de nuanceur peut être exporté dans un fichier binaire brut ayant l’extension de nom de fichier  *.cso* ou dans un fichier d’en-tête ( *.h*) en C++, qui encode le bytecode de nuanceur dans un tableau.
+Vous pouvez exporter des nuanceurs en tant que code source HLSL ou bytecode de nuanceur compilé. Le code source HLSL est exporté vers un fichier texte qui a une extension de nom de fichier *.hlsl.* Le bytecode de nuanceur peut être exporté dans un fichier binaire brut ayant l’extension de nom de fichier  *.cso* ou dans un fichier d’en-tête (*.h*) en C++, qui encode le bytecode de nuanceur dans un tableau.
 
-Pour plus d’informations sur la façon d’exporter des nuanceurs, consultez [Guide pratique pour exporter un nuanceur](../designers/how-to-export-a-shader.md).
+Pour plus d’informations sur la façon d’exporter des ombrageurs, voir [Comment: Exporter un ombrageur](../designers/how-to-export-a-shader.md).
 
-## <a name="keyboard-shortcuts"></a>raccourcis clavier
+## <a name="keyboard-shortcuts"></a>Raccourcis clavier
 
-|Command|raccourcis clavier|
+|Commande|Raccourcis clavier|
 |-------------| - |
 |Passer en mode **Sélection**|**Ctrl**+**G**, **Ctrl**+**Q**<br /><br /> **S**|
 |Passer en mode **Zoom**|**Ctrl**+**G**, **Ctrl**+**Z**<br /><br /> **Z**|
@@ -182,25 +182,25 @@ Pour plus d’informations sur la façon d’exporter des nuanceurs, consultez [
 |Sélectionner tout|**Ctrl**+**A**|
 |Supprimer la sélection actuelle|**Supprimer**|
 |Annuler la sélection actuelle|**Séquence d’échappement** (**Échap**)|
-|Zoom avant.|**Ctrl**+**Roulette de la souris vers l’avant**<br /><br /> Signe plus ( **+** )|
-|Zoom arrière|**Ctrl**+**Roulette de la souris vers l’arrière**<br /><br /> Signe moins ( **-** )|
-|Mouvement panoramique vers le haut de l’aire de conception|**Roulette de la souris vers l’arrière**<br /><br /> **Pg. suiv**|
-|Mouvement panoramique vers le bas de l’aire de conception|**Roulette de la souris vers l’avant**<br /><br /> **Pg. préc**|
-|Mouvement panoramique vers la gauche de l’aire de conception|**Maj**+**Roulette de la souris vers l’arrière**<br /><br /> **Roulette de la souris vers la gauche**<br /><br /> **Maj**+**Pg. suiv**|
-|Mouvement panoramique vers la droite de l’aire de conception|**Maj**+**Roulette de la souris vers l’avant**<br /><br /> **Roulette de la souris vers la droite**<br /><br /> **Maj**+**Pg. préc**|
+|Faire un zoom avant|**Roue de souris de Ctrl**+**vers l’avant**<br /><br /> Signe plus**+**( )|
+|Faire un zoom arrière|**Roue de souris de Ctrl**+**vers l’arrière**<br /><br /> Signe de**-** moins ( )|
+|Mouvement panoramique vers le haut de l’aire de conception|**Roulette de la souris vers l’arrière**<br /><br /> **Pg suiv**|
+|Mouvement panoramique vers le bas de l’aire de conception|**Roulette de la souris vers l’avant**<br /><br /> **Pg préc**|
+|Mouvement panoramique vers la gauche de l’aire de conception|**Déplacer la**+**roue de la souris vers l’arrière**<br /><br /> **Roulette de la souris vers la gauche**<br /><br /> **Pagedown de décalage**+**PageDown**|
+|Mouvement panoramique vers la droite de l’aire de conception|**Déplacer la**+**roue de la souris vers l’avant**<br /><br /> **Roulette de la souris vers la droite**<br /><br /> **Changement**+**PageUp**|
 |Déplacer le focus clavier vers un autre nœud|**Touches de direction**|
-|Sélectionner le nœud ayant le focus clavier (ajoute le nœud au groupe de sélection)|**Maj**+**Espace**|
-|Activer la sélection du nœud ayant le focus clavier|**Ctrl**+**Espace**|
-|Activer la sélection actuelle (si aucun nœud n’est sélectionné, sélectionner le nœud ayant le focus clavier)|**Barre d’espace**|
-|Déplacer la sélection actuelle vers le haut|**Maj**+**Flèche haut**|
-|Déplacer la sélection actuelle vers le bas|**Maj**+**Flèche bas**|
-|Déplacer la sélection actuelle vers la gauche|**Maj**+**Flèche gauche**|
-|Déplacer la sélection actuelle vers la droite|**Maj**+**Flèche droite**.|
+|Sélectionner le nœud ayant le focus clavier (ajoute le nœud au groupe de sélection)|**Déplacer**+**la barre d’espace**|
+|Activer la sélection du nœud ayant le focus clavier|**Barre**+**de l’espace** Ctrl|
+|Activer la sélection actuelle (si aucun nœud n’est sélectionné, sélectionner le nœud ayant le focus clavier)|**Espace**|
+|Déplacer la sélection actuelle vers le haut|**Déplacer**+**vers le haut de la flèche**|
+|Déplacer la sélection actuelle vers le bas|**Déplacer**+**vers le bas Flèche**|
+|Déplacer la sélection actuelle vers la gauche|**Flèche**+**gauche** de décalage|
+|Déplacer la sélection actuelle vers la droite|**Shift**+**Right Arrow**.|
 
 ## <a name="related-topics"></a>Rubriques connexes
 
-|Titre|Description|
+|Intitulé|Description|
 |-----------|-----------------|
-|[Utilisation de composants 3D pour les jeux et les applications](../designers/working-with-3-d-assets-for-games-and-apps.md)|Présente les outils Visual Studio permettant de travailler avec les textures et les images, les modèles 3D et les effets de nuanceur.|
+|[Travailler avec des actifs 3D pour les jeux et les applications](../designers/working-with-3-d-assets-for-games-and-apps.md)|Présente les outils Visual Studio permettant de travailler avec les textures et les images, les modèles 3D et les effets de nuanceur.|
 |[Image Editor](../designers/image-editor.md)|Décrit comment utiliser l’éditeur d’images Visual Studio pour travailler avec des textures et des images.|
 |[Éditeur de modèle](../designers/model-editor.md)|Décrit comment utiliser l’éditeur de modèle Visual Studio pour travailler avec des modèles 3D.|

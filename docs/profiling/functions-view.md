@@ -17,10 +17,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 7f066d6c9476f0a44a23e59ff2b715a6df9975ba
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74779192"
 ---
 # <a name="functions-view"></a>Vue Fonctions
@@ -28,12 +28,12 @@ La vue Fonctions répertorie les fonctions appelées lors du profilage.
 
  Par défaut, les fonctions sont listées par nom. Pour afficher les fonctions par module, cliquez avec le bouton droit dans la fenêtre Vue Fonctions, puis sélectionnez **Afficher en mode Module**. Cette action fait apparaître la vue Module.
 
- Pour ajouter ou supprimer des colonnes, cliquez avec le bouton droit dans la fenêtre du rapport, puis sélectionnez **Ajouter/Supprimer des colonnes**. De plus, vous pouvez trier les données en cliquant sur un nom de colonne. Pour plus d’informations, consultez [Guide pratique pour personnaliser les colonnes de la vue Rapport](../profiling/how-to-customize-report-view-columns.md).
+ Pour ajouter ou supprimer des colonnes, cliquez avec le bouton droit dans la fenêtre du rapport, puis sélectionnez **Ajouter/Supprimer des colonnes**. De plus, vous pouvez trier les données en cliquant sur un nom de colonne. Pour plus d’informations, voir [Comment personnaliser les colonnes De vue de rapport](../profiling/how-to-customize-report-view-columns.md).
 
  Les colonnes qui sont disponibles dans la vue Fonctions dépendent de la méthode de profilage (échantillonnage ou instrumentation) utilisée pour collecter les données, mais également de la présence de données de mémoire .NET parmi les données collectées lors de l’exécution du profilage.
 
 ## <a name="see-also"></a>Voir aussi
-- [Mode Fonctions](../profiling/functions-view-sampling-data.md)
-- [Mode Fonctions](../profiling/functions-view-instrumentation-data.md)
-- [Fonctions, vue - instrumentation](../profiling/functions-view-dotnet-memory-instrumentation-data.md)
-- [Fonctions, vue - échantillonnage](../profiling/functions-view-dotnet-memory-sampling-data.md)
+- [Vue Fonctions](../profiling/functions-view-sampling-data.md)
+- [Vue Fonctions](../profiling/functions-view-instrumentation-data.md)
+- [Fonctions Vue - instrumentation](../profiling/functions-view-dotnet-memory-instrumentation-data.md)
+- [Vue des fonctions - échantillonnage](../profiling/functions-view-dotnet-memory-sampling-data.md)
