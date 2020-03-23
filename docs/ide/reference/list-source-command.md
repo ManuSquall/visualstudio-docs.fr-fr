@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 6c211773f20ab4643b62c8c71fc6ae6581a91987
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "72747903"
 ---
 # <a name="list-source-command"></a>Afficher la source, commande
@@ -34,25 +34,25 @@ Debug.ListSource [/Count:number] [/Current] [/File:filename]
 ## <a name="switches"></a>Commutateurs
 /Count:`number`
 
-Optionnel. Spécifie le nombre de lignes à afficher.
+facultatif. Spécifie le nombre de lignes à afficher.
 
 /Current
 
-Optionnel. Affiche la ligne active.
+facultatif. Affiche la ligne active.
 
 /File:`filename`
 
-Optionnel. Chemin du fichier à afficher. Si aucun nom de fichier n’est spécifié, la commande affiche le code source de la ligne de l’instruction actuelle.
+facultatif. Chemin du fichier à afficher. Si aucun nom de fichier n’est spécifié, la commande affiche le code source de la ligne de l’instruction actuelle.
 
 /Line:`number`
 
-Optionnel. Affiche un numéro de ligne spécifique.
+facultatif. Affiche un numéro de ligne spécifique.
 
 /ShowLineNumbers:`yes|no`
 
-Optionnel. Spécifie s’il faut afficher les numéros de ligne.
+facultatif. Spécifie s’il faut afficher les numéros de ligne.
 
-## <a name="example"></a>Exemple
+## <a name="example"></a> Exemple
 Cet exemple affiche le code source à partir de la ligne 4 du fichier Form1.vb, avec les numéros de ligne.
 
 ```
@@ -61,5 +61,5 @@ Debug.ListSource /File:"C:\Visual Studio Projects\Form1.vb" /Line:4 /ShowLineNum
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Commandes Visual Studio](../../ide/reference/visual-studio-commands.md)
+- [Commandes de studio visuel](../../ide/reference/visual-studio-commands.md)
 - [Commande, fenêtre](../../ide/reference/command-window.md)

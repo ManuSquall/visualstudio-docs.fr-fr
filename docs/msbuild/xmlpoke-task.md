@@ -17,17 +17,17 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: f44ce4736900fde35716ca3ec9dabb2d55c6df51
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75588380"
 ---
 # <a name="xmlpoke-task"></a>XmlPoke (tâche)
 
 Définit les valeurs comme spécifié par une requête XPath dans un fichier XML.
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>Paramètres
 
  Le tableau ci-dessous décrit les paramètres de la tâche `XmlPoke` .
 
@@ -38,11 +38,11 @@ Définit les valeurs comme spécifié par une requête XPath dans un fichier XML
 |`Value`|Paramètre <xref:Microsoft.Build.Framework.ITaskItem> requis.<br /><br /> Spécifie la valeur à insérer dans le chemin spécifié.|
 |`XmlInputPath`|Paramètre <xref:Microsoft.Build.Framework.ITaskItem> facultatif.<br /><br /> Spécifie l’entrée XML sous forme de chemin de fichier.|
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Notes 
 
- En plus des paramètres répertoriés dans le tableau, cette tâche comprend des paramètres qu’elle hérite de la classe <xref:Microsoft.Build.Tasks.TaskExtension>, qui elle-même hérite de la classe <xref:Microsoft.Build.Utilities.Task>. Pour obtenir la liste de ces paramètres supplémentaires et leurs descriptions, consultez [Classe de base TaskExtension](../msbuild/taskextension-base-class.md).
+ En plus des paramètres répertoriés dans le tableau, cette tâche comprend des paramètres qu’elle hérite de la classe <xref:Microsoft.Build.Tasks.TaskExtension>, qui elle-même hérite de la classe <xref:Microsoft.Build.Utilities.Task>. Pour une liste de ces paramètres supplémentaires et leurs descriptions, voir [TaskExtension classe de base](../msbuild/taskextension-base-class.md).
 
-## <a name="example"></a>Exemple
+## <a name="example"></a> Exemple
 
 Voici un fichier sample.xml à modifier :
 
@@ -81,5 +81,5 @@ Dans cet exemple, si vous souhaitez modifier `/Package/mp:PhoneIdentity/PhonePub
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Tâches MSBuild](../msbuild/msbuild-tasks.md)
+- [Tâches](../msbuild/msbuild-tasks.md)
 - [Informations de référence sur les tâches](../msbuild/msbuild-task-reference.md)

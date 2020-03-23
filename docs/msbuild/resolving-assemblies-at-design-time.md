@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 69f5ba2627e2d659665fa0bd3fbf706f9cad5573
-ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/26/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77632561"
 ---
 # <a name="resolve-assemblies-at-design-time"></a>Résoudre des assemblys au moment du design
@@ -23,17 +23,17 @@ Quand vous ajoutez une référence à un assembly par l’intermédiaire de l’
 
 ## <a name="multi-targeting"></a>Multi-ciblage
 
- Visual Studio vous permet de cibler des versions du .NET Framework qui s’exécutent sur plusieurs versions du .NET Framework. Quand une nouvelle version de .NET Framework est publiée, l’infrastructure peut être installée à l’aide d’un pack de ciblage, et elle apparaît automatiquement en tant que cible dans Visual Studio.
+ Visual Studio vous permet de cibler les versions du cadre .NET qui s’exécutent sur plusieurs versions du cadre .NET. Lorsqu’une nouvelle version cadre .NET est publiée, le Cadre peut être installé à l’aide d’un pack de ciblage, et il apparaît automatiquement comme une cible dans Visual Studio.
 
 ## <a name="how-type-resolution-works"></a>Fonctionnement de la résolution de type
 
- Au moment de l’exécution, le CLR résout les types dans l’assembly en recherchant dans le GAC, le répertoire *bin* et dans tous les chemins d’accès de détection. Ceci est géré par le chargeur de fusion. Mais comment le chargeur de fusion sait-il ce qu’il doit rechercher ? Cela dépend d’une résolution effectuée au moment du design, lors de la génération de l’application.
+ Au moment de l’exécution, le CLR résout les types dans l’assemblage en regardant dans le GAC, le *répertoire des bacs,* et dans tous les chemins de sondage. Ceci est géré par le chargeur de fusion. Mais comment le chargeur de fusion sait-il ce qu’il doit rechercher ? Cela dépend d’une résolution effectuée au moment du design, lors de la génération de l’application.
 
  Pendant la génération, le compilateur résout les types d’applications à l’aide d’assemblys de référence. Dans les versions 2.0, 3.0, 3.5, 4, 4.5 et 4.5.1 de .NET Framework, les assemblys de référence sont installés lors de l’installation de .NET Framework.
 
  Les assemblys de référence sont fournis par le pack de ciblage fourni avec la version correspondante du SDK .NET Framework. Le Framework lui-même fournit uniquement les assemblys runtime. Pour générer des applications, vous devez installer le .NET Framework et le SDK .NET Framework correspondant.
 
- Quand vous ciblez un .NET Framework spécifique, le système de génération résout tous les types en utilisant les assemblys de référence dans le pack de ciblage. Au moment de l’exécution, le chargeur de fusion résout ces mêmes types sur les assemblys de Runtime, qui se trouvent généralement dans le GAC.
+ Quand vous ciblez un .NET Framework spécifique, le système de génération résout tous les types en utilisant les assemblys de référence dans le pack de ciblage. Au moment de l’exécution, le chargeur de fusion résout ces mêmes types aux assemblages de temps d’exécution, qui sont généralement situés dans le GAC.
 
  Si les assemblys de référence ne sont pas disponibles, le système de génération résout les types d’assemblys à l’aide des assemblys runtime. Les assemblys runtime du GAC n’étant pas différenciés par des numéros de version mineure, il peut arriver que la résolution soit effectuée avec le mauvais assembly. Cela peut se produire par exemple si une nouvelle méthode introduite dans le .NET Framework version 3.5 est référencée alors que vous ciblez la version 3.0. La génération réussira et l’application s’exécutera sur l’ordinateur de build, mais elle échouera lors du déploiement sur un ordinateur sur lequel la version 3.5 n’est pas installée.
 

@@ -13,10 +13,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: ad451c6146593713b02901ac43423c76174d0684
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74778087"
 ---
 # <a name="understand-performance-collection-methods"></a>Présenter les méthodes de collecte des performances
@@ -31,12 +31,12 @@ Les outils de profilage Visual Studio fournissent cinq méthodes que vous pouvez
 |[Échantillonnage](#sampling)|Collecte des données statistiques sur le travail effectué par une application.|
 |[Instrumentation](#instrumentation)|Collecte des informations de minutage détaillées sur chaque appel de fonction.|
 |[Concurrence](#concurrency)|Collecte des informations détaillées sur les applications multithreads.|
-|[Mémoire .NET](#net-memory)|Collecte des informations détaillées sur l’allocation et la garbage collection de la mémoire .NET.|
+|[.MÉMOIRE NET](#net-memory)|Collecte des informations détaillées sur l’allocation et la garbage collection de la mémoire .NET.|
 |[Interaction de couche](#tier-interaction)|Collecte des informations sur les appels de fonction ADO.NET synchrones à une base de données SQL Server.<br /><br /> Pour collecter des données de profilage d’interaction de couche, vous pouvez utiliser n’importe quelle édition de Visual Studio. Cependant, ces données ne sont consultables que dans Visual Studio Enterprise.|
 
 À l’aide de certaines méthodes de profilage, vous pouvez également collecter des données supplémentaires, comme les compteurs de performances matérielles et logicielles. Pour plus d’informations, consultez [Collecte des données de performances supplémentaires](../profiling/collecting-additional-performance-data.md).
 
-## <a name="sampling"></a>Échantillonnage
+## <a name="sampling"></a>échantillonnage
 
 La méthode de profilage par échantillonnage collecte des données statistiques sur le travail effectué par une application pendant l’exécution d’un profilage. La méthode d’échantillonnage est légère et a peu d’effet sur l’exécution des méthodes de l’application.
 
@@ -51,7 +51,7 @@ Par défaut, le profileur définit l’intervalle d’échantillonnage sur la ba
 
 [Collecter les statistiques de performances à l’aide de l’échantillonnage](../profiling/collecting-performance-statistics-by-using-sampling.md)
 
-[Fonctionnement des valeurs de données d’échantillonnage](../profiling/understanding-sampling-data-values.md)
+[Comprendre le fonctionnement des valeurs de données d’échantillonnage](../profiling/understanding-sampling-data-values.md)
 
 [Vues de données de la méthode d’échantillonnage](../profiling/profiler-sampling-method-data-views.md)
 
@@ -74,13 +74,13 @@ La méthode d’instrumentation injecte du code dans un fichier binaire, qui cap
 
 Vous pouvez également collecter des compteurs de performances de l’UC et des logiciels à l’aide de la méthode d’instrumentation.
 
-[Comprendre les valeurs de données d’instrumentation](../profiling/understanding-instrumentation-data-values.md)
+[Comprendre le fonctionnement des valeurs de données d’instrumentation](../profiling/understanding-instrumentation-data-values.md)
 
 [Collecter les données temporelles détaillées à l’aide de l’instrumentation](../profiling/collecting-detailed-timing-data-by-using-instrumentation.md)
 
-[Vues de données de la méthode d'instrumentation](../profiling/instrumentation-method-data-views.md)
+[Vues de données de méthode d’instrumentation](../profiling/instrumentation-method-data-views.md)
 
-## <a name="concurrency"></a>Concurrency
+## <a name="concurrency"></a>Accès concurrentiel
 
 Le profilage d’accès concurrentiel collecte des informations sur les applications multithreads. Le profilage de conflit de ressources collecte les informations détaillées de la pile des appels chaque fois que des threads en concurrence sont forcés d’attendre pour accéder à une ressource partagée. La visualisation concurrentielle collecte également des informations plus générales sur la façon dont votre application multithread interagit avec elle-même, avec le matériel, avec le système d’exploitation et avec d’autres processus sur l’ordinateur hôte :
 
@@ -92,7 +92,7 @@ Le profilage d’accès concurrentiel collecte des informations sur les applicat
 
 [Collecter les données concurrentielles de threads et de processus](../profiling/collecting-thread-and-process-concurrency-data.md)
 
-[Vues de données de conflit de ressources](../profiling/resource-contention-data-views.md)
+[Vues de données sur la contention des ressources](../profiling/resource-contention-data-views.md)
 
 [Visualiseur concurrentiel](../profiling/concurrency-visualizer.md)
 
@@ -116,21 +116,21 @@ Le profilage de mémoire .NET peut être utilisé en mode d’échantillonnage o
 
 [Collecter les données liées à l’allocation et à la durée de vie de la mémoire .NET](../profiling/collecting-dotnet-memory-allocation-and-lifetime-data.md)
 
-[Vues des données de la mémoire .NET](../profiling/dotnet-memory-data-views.md)
+[vues de données de mémoire .NET](../profiling/dotnet-memory-data-views.md)
 
 ## <a name="tier-interaction"></a>Interaction de couche
 
 Le profilage d’interaction de couche ajoute des informations à un fichier de données de profilage sur les appels [!INCLUDE[vstecado](../data-tools/includes/vstecado_md.md)] synchrones entre une page [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] ou une autre application et une base de données [!INCLUDE[ssNoVersion](../data-tools/includes/ssnoversion_md.md)]. Les données incluent le nombre et la durée des appels, ainsi que la durée maximale et minimale. Les données d’interaction de couche peuvent être ajoutées aux données de profilage collectées avec les méthodes d’échantillonnage, d’instrumentation, de mémoire .NET ou d’accès concurrentiel.
 
-![Données de profil d’interaction de couche](../profiling/media/tierinteraction_profilingtools.png "TierInteraction_ProfilingTools")
+![Données de profil d’interaction de niveau](../profiling/media/tierinteraction_profilingtools.png "TierInteraction_ProfilingTools")
 
 Données d’interaction de couche collectées par les outils de profilage
 
 [Collecter les données d’interaction de couche](../profiling/collecting-tier-interaction-data.md)
 
-[Interaction de couche, vues](../profiling/tier-interaction-views.md)
+[Vues d’interaction de niveau](../profiling/tier-interaction-views.md)
 
 ## <a name="see-also"></a>Voir aussi
 
-[Comment : collecter les données de performances d’un site web](../profiling/how-to-collect-performance-data-for-a-web-site.md)
-[Guide du débutant en profilage des performances](../profiling/beginners-guide-to-performance-profiling.md)
+[Comment : Recueillir des données de performance pour un site](../profiling/how-to-collect-performance-data-for-a-web-site.md)
+Web[Guide de débutant sur le profilage des performances](../profiling/beginners-guide-to-performance-profiling.md)

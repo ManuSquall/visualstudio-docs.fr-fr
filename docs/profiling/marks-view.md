@@ -15,10 +15,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: c9a0537e146ead1c163941a0f552bdea7a28b89c
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74773966"
 ---
 # <a name="marks-view"></a>Marques, vue
@@ -26,7 +26,7 @@ La vue Marques affiche l’échantillonnage et les événements ETW qui ont ét�
 
  Les marques par défaut qui sont préremplies dans le rapport indiquent le démarrage du programme et la fin du programme.
 
- Les données des compteurs Windows provenant de marques générées automatiquement sont également présentées dans cette vue. Pour plus d’informations, consultez [Guide pratique pour collecter les données des compteurs Windows](../profiling/how-to-collect-windows-counter-data.md).
+ Les données des compteurs Windows provenant de marques générées automatiquement sont également présentées dans cette vue. Pour plus d’informations, voir [Comment : Collecter des données de compteur Windows](../profiling/how-to-collect-windows-counter-data.md).
 
  Pour créer un filtre entre deux marques, sélectionnez les marques, cliquez avec le bouton droit puis cliquez sur **Ajouter un filtre par marques** ou **Ajouter un filtre par horodatage**.
 
@@ -41,6 +41,6 @@ La vue Marques affiche l’échantillonnage et les événements ETW qui ont ét�
  Données du compteur de performances Quand des données de compteur de performances Windows sont collectées, les valeurs sont affichées dans une colonne portant le même nom que le compteur.
 
 ## <a name="see-also"></a>Voir aussi
-- [Vue d’ensemble du rapport Performances](../profiling/performance-report-overview.md)
-- [Guide pratique pour collecter les données des compteurs Windows](../profiling/how-to-collect-windows-counter-data.md)
-- [&#91;NIB&#93; Fenêtre de contrôle de la collecte de données](https://msdn.microsoft.com/98d740d8-459f-4605-bf04-fb17aafaaa8f)
+- [Aperçu du rapport sur le rendement](../profiling/performance-report-overview.md)
+- [Comment : Collecter des données de compteur Windows](../profiling/how-to-collect-windows-counter-data.md)
+- [&#91;fenêtre de contrôle de la collecte de données&#93; de la NIB](https://msdn.microsoft.com/98d740d8-459f-4605-bf04-fb17aafaaa8f)

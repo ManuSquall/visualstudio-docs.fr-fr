@@ -9,10 +9,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 94d8fdc2765b3a073ca481d09bc38dfbc9b38f2c
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75589017"
 ---
 # <a name="how-to-include-recordings-of-the-screen-and-voice-during-tests-using-test-settings"></a>Guide pratique pour inclure des enregistrements d’écran et des enregistrements vocaux pendant des tests à l’aide des paramètres de test
@@ -56,7 +56,7 @@ L'enregistreur à l'écran et vocal peut être utilisé avec des tests manuels o
 
     3. **Qualité (1-100) :** vous pouvez spécifier la qualité de l’enregistrement à l’écran et vocal en sélectionnant une plage de valeurs comprise entre 1 et 100. La valeur par défaut est 50 (moyenne).
 
-7. Cliquez sur **OK**. Les paramètres du collecteur de traces de diagnostic sont maintenant configurés et enregistrés pour les paramètres de test.
+7. Choisissez **OK**. Les paramètres du collecteur de traces de diagnostic sont maintenant configurés et enregistrés pour les paramètres de test.
 
     > [!TIP]
     > Pour réinitialiser la configuration de cet adaptateur de données de diagnostic, choisissez **Rétablir la configuration par défaut** pour Visual Studio et **Rétablir les valeurs par défaut** pour Microsoft Test Manager.
@@ -65,5 +65,5 @@ L'enregistreur à l'écran et vocal peut être utilisé avec des tests manuels o
 
 - [Collecter les données de diagnostic pendant les tests (Azure Test Plans)](/azure/devops/test/collect-diagnostic-data?view=vsts)
 - [Collecter les données de diagnostic dans des tests manuels (Azure Test Plans)](/azure/devops/test/mtm/collect-more-diagnostic-data-in-manual-tests?view=vsts)
-- [Collecter des informations de diagnostic à l’aide des paramètres de test](../test/collect-diagnostic-information-using-test-settings.md)
+- [Collecter des informations de diagnostic avec des paramètres de test](../test/collect-diagnostic-information-using-test-settings.md)
 - [Exécuter des tests manuels (Azure Test Plans)](/azure/devops/test/run-manual-tests?view=vsts)

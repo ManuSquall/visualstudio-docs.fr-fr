@@ -8,10 +8,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: f16a518542e8acab636da6e395fdfee8d7a25085
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "62969812"
 ---
 # <a name="gpu-usage"></a>Utilisation du GPU
@@ -20,7 +20,7 @@ L’outil Utilisation du GPU dans le hub Performances et diagnostics de Visual S
 
 Cette capture d’écran montre la fenêtre **Rapport d’utilisation du GPU** :
 
-![Rapport d’utilisation du GPU, avec les chronologies GPU et UC](media/gfx_diag_gpu_usage_report.png "gfx_diag_gpu_usage_report")
+![Rapport d'utilisation du GPU, avec les chronologies GPU et UC](media/gfx_diag_gpu_usage_report.png "gfx_diag_gpu_usage_report")
 
 ## <a name="requirements"></a>Spécifications
 
@@ -37,7 +37,7 @@ Voici les conditions requises pour l’outil Utilisation du GPU, qui s’ajouten
 
  Quand vous exécutez votre application dans l’outil Utilisation du GPU, Visual Studio crée une session de diagnostic qui représente sous forme de graphiques en temps réel des informations générales relatives aux performances du rendu et à l’utilisation du GPU de votre application.
 
-**Pour démarrer l’outil Utilisation du GPU :**
+**Pour démarrer l'outil Utilisation du GPU :**
 
 1. Dans le menu principal, choisissez **Déboguer**, puis **Performances et diagnostics** (clavier : appuyez sur Alt+F2).
 
@@ -58,7 +58,7 @@ Voici les conditions requises pour l’outil Utilisation du GPU, qui s’ajouten
 
    Quand vous souhaitez examiner plus attentivement un problème de performances ou d'utilisation, arrêtez de collecter les informations de performances pour que le rapport puisse être généré.
 
-**Pour générer et afficher le rapport d’utilisation du GPU :**
+**Pour générer et afficher le rapport d'utilisation du GPU :**
 
 1. Dans la partie inférieure de la fenêtre de session de diagnostic, choisissez le lien **Arrêter la collecte** ou appuyez sur **Arrêter** en haut à gauche.
 
@@ -66,11 +66,11 @@ Voici les conditions requises pour l’outil Utilisation du GPU, qui s’ajouten
 
 2. Dans la partie supérieure du rapport, sélectionnez une section dans l'un des graphiques qui illustre le problème à examiner. Votre sélection peut durer jusqu'à 3 secondes. Le début des sections plus longues est tronqué.
 
-   ![Postcollection, sélectionner une plage pour afficher les détails](media/gfx_diag_gpu_usage_select1.png "gfx_diag_gpu_usage_select1")
+   ![Postez&#45;collection, sélectionnez une gamme pour afficher les détails](media/gfx_diag_gpu_usage_select1.png "gfx_diag_gpu_usage_select1")
 
 3. Dans la partie inférieure du rapport, choisissez le lien **Afficher les détails** du message **...cliquez ici pour afficher les détails de l’utilisation du GPU pour cette plage** afin d’afficher une chronologie détaillée de votre sélection.
 
-   ![Postcollection, avec la plage sélectionnée](media/gfx_diag_gpu_usage_select2.png "gfx_diag_gpu_usage_select2")
+   ![Collection post&#45;, avec une gamme sélectionnée](media/gfx_diag_gpu_usage_select2.png "gfx_diag_gpu_usage_select2")
 
    Cette sélection ouvre un nouveau document avec onglets qui contient le rapport. Le rapport Utilisation du GPU vous aide à identifier le moment où un événement graphique démarre sur l’UC et où il atteint le GPU, ainsi que sa durée d’exécution par le GPU. Ces informations peuvent vous aider à identifier les goulots d’étranglement et les opportunités d’augmentation du parallélisme dans votre code.
 
@@ -90,32 +90,32 @@ La partie inférieure affiche une liste des événements graphiques qui se sont 
 
 Voici la fenêtre **Rapport d’utilisation du GPU** :
 
-![Rapport d’utilisation du GPU, avec les chronologies GPU et UC](media/gfx_diag_gpu_usage_report.png "gfx_diag_gpu_usage_report")
+![Rapport d'utilisation du GPU, avec les chronologies GPU et UC](media/gfx_diag_gpu_usage_report.png "gfx_diag_gpu_usage_report")
 
 Quand vous sélectionnez un événement dans la partie inférieure du rapport, un marqueur apparaît pour les événements correspondants dans les chronologies concernées. En règle générale, un événement sur un thread d’UC montre l’appel de l’API, tandis qu’un autre événement sur une des chronologies du GPU apparaît quand le GPU a terminé la tâche. De même, quand vous sélectionnez un événement dans une chronologie, le rapport met en évidence l’événement correspondant dans la partie inférieure du rapport. Quand vous effectuez un zoom arrière des chronologies dans la partie supérieure du rapport, seuls les événements les plus longs sont visibles. Pour afficher les événements qui ont une durée plus courte, effectuez un zoom avant des chronologies en appuyant sur la touche Ctrl et en utilisant la roulette de votre dispositif de pointage, ou via le contrôle de mise à l'échelle situé dans le coin inférieur gauche du panneau supérieur. Vous pouvez également faire glisser le contenu du panneau de chronologie pour parcourir les événements enregistrés.
 
 Pour trouver plus facilement ce que vous cherchez, filtrez le rapport Utilisation du GPU sur les noms de processus, les ID de thread et le nom d’événement. En outre, vous pouvez choisir la fréquence d’actualisation de l’affichage qui détermine les lignes de VSync. Vous pouvez trier les événements hiérarchiquement si votre application utilise l’interface [ID3DUserDefinedAnnotation](/windows/desktop/api/d3d11_1/nn-d3d11_1-id3duserdefinedannotation) pour regrouper les commandes de rendu.
 
- Voici des détails supplémentaires :
+ Voici plus de détails :
 
 |Contrôle de filtre|Description|
 |--------------------|-----------------|
-|**Process**|Nom du processus qui vous intéresse. Tous les processus qui ont utilisé le GPU pendant la session de diagnostic sont inclus dans cette liste déroulante. La couleur associée au processus dans cette liste déroulante est la couleur de l’activité du thread dans les chronologies ci-dessous.|
-|**Thread**|ID de thread qui vous intéresse. Dans une application multithread, ces informations peuvent vous aider à isoler des threads particuliers qui appartiennent au processus qui vous intéresse. Les événements associés au thread sélectionné sont mis en surbrillance dans chaque chronologie.|
-|**Afficher**|Numéro de l’affichage dont la fréquence de rafraîchissement est indiquée.**Remarque  :**  Certains pilotes peuvent être configurés pour présenter plusieurs affichages physiques sous forme d'un affichage virtuel unique, de grande taille. Vous ne verrez peut-être qu'un seul affichage dans la liste, même si l'ordinateur possède plusieurs affichages attachés.|
-|**Filtrer**|Mots clés qui vous intéressent. Les événements de la partie inférieure du rapport incluent seulement ceux qui correspondent complètement ou partiellement à un mot clé. Vous pouvez spécifier plusieurs mots clés en les séparant par des virgules.|
+|**Processus**|Nom du processus qui vous intéresse. Tous les processus qui ont utilisé le GPU pendant la session de diagnostic sont inclus dans cette liste déroulante. La couleur associée au processus dans cette liste déroulante est la couleur de l’activité du thread dans les chronologies ci-dessous.|
+|**Fil**|ID de thread qui vous intéresse. Dans une application multithread, ces informations peuvent vous aider à isoler des threads particuliers qui appartiennent au processus qui vous intéresse. Les événements associés au thread sélectionné sont mis en surbrillance dans chaque chronologie.|
+|**Affichage**|Numéro de l’affichage dont la fréquence de rafraîchissement est indiquée **Remarque :** Certains pilotes peuvent être configurés pour présenter plusieurs affichages physiques sous forme d’un affichage virtuel unique, de grande taille. Vous ne verrez peut-être qu'un seul affichage dans la liste, même si l'ordinateur possède plusieurs affichages attachés.|
+|**Filtre**|Mots clés qui vous intéressent. Les événements de la partie inférieure du rapport incluent seulement ceux qui correspondent complètement ou partiellement à un mot clé. Vous pouvez spécifier plusieurs mots clés en les séparant par des virgules.|
 |**Tri des hiérarchies**|Case à cocher qui indique si les hiérarchies d'événements (définies via des marqueurs utilisateur) sont conservées ou ignorées.|
 
  La liste des événements dans la partie inférieure du rapport d'utilisation du GPU affiche les détails de chaque événement.
 
 |Colonne|Description|
 |------------|-----------------|
-|**Nom de l’événement**|Nom de l'événement graphique. Un événement correspond généralement à un événement dans une chronologie de threads de l’UC et à un événement d’une chronologie du GPU.<br /><br /> Des noms d'événements peuvent être « non attribués » si la fonctionnalité d'utilisation du GPU n'a pas pu déterminer le nom d'un événement. Pour plus d'informations, voir la remarque sous ce tableau.|
+|**Nom d'événement**|Nom de l'événement graphique. Un événement correspond généralement à un événement dans une chronologie de threads de l’UC et à un événement d’une chronologie du GPU.<br /><br /> Des noms d'événements peuvent être « non attribués » si la fonctionnalité d'utilisation du GPU n'a pas pu déterminer le nom d'un événement. Pour plus d'informations, voir la remarque sous ce tableau.|
 |**Début UC (ns)**|Heure à laquelle l'événement a débuté sur l'UC en appelant une API Direct3D. Le temps est mesuré en nanosecondes, par rapport au moment où l'application a démarré.|
 |**Début GPU (ns)**|Heure à laquelle l'événement a débuté sur le GPU. Le temps est mesuré en nanosecondes, par rapport au moment où l'application a démarré.|
 |**Durée GPU (ns)**|Durée d'exécution de l'événement sur le GPU, en nanosecondes.|
 |**Nom du processus**|Nom de l'application d'où provient l'événement.|
-|**ID de thread**|ID de thread d'où provient l'événement.|
+|**ID du thread**|ID de thread d'où provient l'événement.|
 
 > [!IMPORTANT]
 > Si votre GPU ou pilote ne prend pas en charge les fonctionnalités d’instrumentation nécessaires, tous les événements s’affichent comme étant « non attribués ». Veillez à mettre à jour votre GPU/pilote, puis réessayez si vous rencontrez ce problème. Pour plus d’informations, consultez [Prise en charge du matériel et des pilotes](#hwsupport) ci-dessous.
@@ -124,7 +124,7 @@ Pour trouver plus facilement ce que vous cherchez, filtrez le rapport Utilisatio
 
 Vous pouvez configurer l'outil Utilisation du GPU pour reporter la collecte des informations de profilage, au lieu de commencer à collecter les informations dès le démarrage de l'application. Dans la mesure où la taille des informations de profilage peut être significative, cette action est utile quand vous savez que des ralentissements des performances de votre application n’apparaîtront pas avant longtemps.
 
-**Pour différer le profilage à partir du démarrage de l’application :**
+**Pour reporter le profilage au démarrage de l'application :**
 
 1. Dans le menu principal, choisissez **Déboguer**, puis **Performances et diagnostics** (clavier : appuyez sur Alt+F2).
 
@@ -132,14 +132,14 @@ Vous pouvez configurer l'outil Utilisation du GPU pour reporter la collecte des 
 
 3. Sous **Configuration du profilage GPU**, dans la page de propriétés **Général**, décochez la case **Commencer le profilage au démarrage de l’application** pour reporter le profilage.
 
-   ![Configurer le moment du démarrage de la collecte de données d’utilisation du GPU](media/gfx_diag_gpu_usage_config.png "gfx_diag_gpu_usage_config")
+   ![Configurer le moment du démarrage de la collecte d'utilisation du GPU](media/gfx_diag_gpu_usage_config.png "gfx_diag_gpu_usage_config")
 
 > [!IMPORTANT]
 > Le report du profilage n’est actuellement pas pris en charge pour les applications Direct3D 12.
 
 Après l’exécution de votre application dans l’outil Utilisation du GPU, un lien supplémentaire devient disponible dans la partie inférieure de la fenêtre de l’outil Utilisation du GPU. Pour commencer à collecter des informations de profilage, choisissez le lien **Démarrer** dans le message **Commencer à collecter des données détaillées d’utilisation GPU supplémentaires**.
 
-## <a name="hwsupport"></a> Prise en charge du matériel et des pilotes
+## <a name="hardware-and-driver-support"></a><a name="hwsupport"></a> Prise en charge du matériel et des pilotes
 
 Le matériel et les pilotes GPU suivants sont pris en charge :
 

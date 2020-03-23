@@ -13,10 +13,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 3c633e12b2e0bf157ffd94ef06a5898fdc3ec830
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74776343"
 ---
 # <a name="how-to-choose-collection-methods"></a>Guide pratique pour choisir des méthodes de collecte
@@ -92,6 +92,6 @@ Vous pouvez utiliser la propriété **Method** de session de performance pour sp
 
 ## <a name="see-also"></a>Voir aussi
 
-[Configurer des sessions de performances](../profiling/configuring-performance-sessions.md)
-[Comprendre le fonctionnement des valeurs de données d’échantillonnage](../profiling/understanding-sampling-data-values.md)
-[Propriétés d’une session de performance](../profiling/performance-session-properties.md)
+[Configurer des sessions de](../profiling/configuring-performance-sessions.md)
+performance[Comprendre les valeurs de données d’échantillonnage Propriétés](../profiling/understanding-sampling-data-values.md)
+[de session de performance](../profiling/performance-session-properties.md)

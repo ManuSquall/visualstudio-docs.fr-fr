@@ -12,10 +12,10 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: 96c067d4c55a5df4d9343e60360142466e8f218f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "62431300"
 ---
 # <a name="install-python-support-in-visual-studio"></a>Installer la prise en charge de Python dans Visual Studio
@@ -35,17 +35,17 @@ ms.locfileid: "62431300"
 
     ![Charge de travail de développement Python dans le programme d’installation de Visual Studio](media/installation-python-workload.png)
 
-1. Pour tester rapidement la prise en charge de Python, lancez Visual Studio, appuyez sur **Alt**+**I** pour ouvrir la fenêtre **Mode interactif Python**, puis entrez `2+2`. Si vous ne voyez pas la sortie **4**, revérifiez les étapes.
+1. Pour tester rapidement le support Python, lancez Visual Studio, appuyez sur **Alt**+**I** pour ouvrir la fenêtre **Python Interactive,** et entrez `2+2`. Si vous ne voyez pas la sortie **4**, revérifiez les étapes.
 
     ![Test de Python via la fenêtre interactive](media/installation-interactive-test.png)
 
 ## <a name="next-step"></a>Étape suivante
 
 > [!div class="nextstepaction"]
-> [Étape 1 : Créer un projet Python](tutorial-working-with-python-in-visual-studio-step-01-create-project.md)
+> [Étape 1 : Créer un projet Python](tutorial-working-with-python-in-visual-studio-step-01-create-project.md)
 
 ## <a name="see-also"></a>Voir aussi
 
 - [Identifier manuellement un interpréteur Python existant](managing-python-environments-in-visual-studio.md#manually-identify-an-existing-environment)
-- [Installer la prise en charge de Python dans Visual Studio 2015 et antérieur](installing-python-support-in-visual-studio.md)
+- [Installer la prise en charge de Python dans Visual Studio 2015 et les versions antérieures](installing-python-support-in-visual-studio.md)
 - [Emplacements d’installation](installing-python-support-in-visual-studio.md#install-locations)

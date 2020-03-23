@@ -12,10 +12,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 826d16fa316340226df042b0d762d923c43d39c9
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75594771"
 ---
 # <a name="how-to-collect-intellitrace-data-to-help-debug-difficult-issues"></a>Guide pratique pour collecter des données IntelliTrace pour aider au débogage des problèmes difficiles
@@ -55,7 +55,7 @@ Avant d’effectuer les opérations décrites dans cette procédure, vous devez 
 
 2. Sélectionnez **IntelliTrace**.
 
-3. Si vous ajoutez IntelliTrace pour un rôle de client web ou pour une application web ASP.NET, vous devez également sélectionner **Proxy client ASP.NET pour IntelliTrace et l’impact de test**.
+3. Si vous ajoutez IntelliTrace pour un rôle de client web ou pour une application web ASP.NET, vous devez également sélectionner **ASP.NET proxy client pour IntelliTrace et Test Impact**.
 
      Ce proxy vous permet de collecter des informations sur les appels http d’un client à un serveur web pour les adaptateurs de données de diagnostic d’impact de test et IntelliTrace.
 
@@ -71,34 +71,34 @@ Avant d’effectuer les opérations décrites dans cette procédure, vous devez 
     > [!WARNING]
     > Si vous activez la collecte de données IntelliTrace, la collecte des données de couverture du code ne fonctionnera pas.
 
-5. Choisissez l’onglet **général** . Sélectionnez **événements IntelliTrace uniquement** pour enregistrer des événements de diagnostic significatifs qui ont un impact minimal sur les performances lorsque vous testez.
+5. Choisissez l’onglet **Général.** Sélectionnez les **événements IntelliTrace uniquement** pour enregistrer des événements diagnostiques importants qui ont un impact minimal sur les performances lorsque vous testez.
 
-     \- ou -
+     -ou-
 
      Sélectionnez **Événements IntelliTrace et informations d’appels** pour enregistrer des événements de diagnostic et le traçage au niveau de la méthode affichant des informations sur les appels. Ce niveau de traçage peut avoir un impact sur les performances lorsque vous exécutez vos tests.
 
 6. Pour collecter des données à partir de votre application ASP.NET qui s’exécute sur Internet Information Services, sélectionnez **Collecter des données à partir d’une application ASP.NET exécutée sur Internet Information Services**. Installez et configurez votre agent de test sur le rôle serveur web. Consultez [Installer et configurer des agents de test](../test/lab-management/install-configure-test-agents.md).
 
-7. Choisissez l’onglet **modules** . Sélectionnez **collecter les données de tous les modules à l’exception des suivants** et utilisez **Ajouter** pour ajouter à la liste des modules et **supprimer** pour supprimer un module. Cette option vous permet d'inclure tous les modules en cours d'exécution sur le système, à l'exception des modules que vous spécifiez.
+7. Choisissez l’onglet **Modules.** Sélectionnez les **données collecter de tous les modules à l’exception de ce qui suit** et utilisez **Ajouter** pour ajouter à la liste des modules et **supprimer** pour supprimer un module. Cette option vous permet d'inclure tous les modules en cours d'exécution sur le système, à l'exception des modules que vous spécifiez.
 
-     \- ou -
+     -ou-
 
      Sélectionnez **Collecter les données des modules suivants uniquement**, et utilisez **Ajouter** pour ajouter un module à la liste et **Supprimer** pour supprimer un module. Cette option vous permet de spécifier quels modules doivent être utilisés.
 
     > [!NOTE]
     > Si possible, sélectionnez les processus spécifiques que vous souhaitez surveiller. Cela est recommandé pour une performance optimale.
 
-8. Choisissez l’onglet **processus** . Sélectionnez **collecter les données de tous les processus à l’exception des éléments suivants** et utilisez **Ajouter** pour ajouter à la liste des processus et **supprimer** pour supprimer un processus. Cette option vous permet d'inclure tous les processus qui s'exécutent sur le système, à l'exception des processus que vous spécifiez.
+8. Choisissez l’onglet **Processus.** Sélectionnez **les données collecter de tous les processus, sauf les suivants** et utilisez **Ajouter** à la liste des processus et **supprimer** pour supprimer un processus. Cette option vous permet d'inclure tous les processus qui s'exécutent sur le système, à l'exception des processus que vous spécifiez.
 
-     \- ou -
+     -ou-
 
      Sélectionnez **Collecter les données des processus spécifiés uniquement**, et utilisez **Ajouter** pour ajouter un processus à la liste et **Supprimer** pour supprimer un processus. Cette option vous permet de spécifier quels processus doivent être utilisés.
 
-9. Facultatif Choisissez l’onglet **événements IntelliTrace** . Sélectionnez ou désactivez chaque catégorie d’événement IntelliTrace que vous souhaitez inclure ou exclure lorsque vous collectez des événements de diagnostic.
+9. (Facultatif) Choisissez l’onglet **Événements IntelliTrace.** Sélectionnez ou effacez chaque catégorie d’événements IntelliTrace que vous souhaitez inclure ou exclure lorsque vous collectez des événements diagnostiques.
 
 10. (Facultatif) Développez chaque catégorie d'événement IntelliTrace et activez ou désactivez chaque événement spécifique à inclure ou exclure dans les événements IntelliTrace.
 
-11. Facultatif Choisissez l’onglet **avancé** . Ensuite, cliquez sur la flèche en regard de **quantité maximale d’espace disque pour l’enregistrement** , puis sélectionnez la taille maximale que vous souhaitez activer pour le fichier IntelliTrace à utiliser.
+11. (Facultatif) Choisissez l’onglet **Advanced.** Ensuite, choisissez la flèche à côté **de la quantité maximale d’espace disque pour l’enregistrement** et sélectionnez la taille maximale que vous souhaitez activer pour le fichier IntelliTrace à utiliser.
 
     > [!NOTE]
     > Si vous augmentez la taille de l'enregistrement, un problème de délai d'expiration peut se produire lorsque vous enregistrez cet enregistrement avec vos résultats de test.
@@ -112,5 +112,5 @@ Avant d’effectuer les opérations décrites dans cette procédure, vous devez 
 
 - [Collecter les données de diagnostic pendant les tests (Azure Test Plans)](/azure/devops/test/collect-diagnostic-data?view=vsts)
 - [Collecter les données de diagnostic dans des tests manuels (Azure Test Plans)](/azure/devops/test/mtm/collect-more-diagnostic-data-in-manual-tests?view=vsts)
-- [Collecter des informations de diagnostic à l’aide des paramètres de test](../test/collect-diagnostic-information-using-test-settings.md)
+- [Collecter des informations de diagnostic avec des paramètres de test](../test/collect-diagnostic-information-using-test-settings.md)
 - [Collecter les données IntelliTrace](../test/how-to-collect-intellitrace-data-to-help-debug-difficult-issues.md)

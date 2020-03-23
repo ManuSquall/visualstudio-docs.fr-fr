@@ -1,13 +1,13 @@
 ---
 ms.topic: include
 ms.openlocfilehash: 47c390fbc7a6f84c25d4bde0317985bd149cae2f
-ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
-ms.translationtype: HT
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/15/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "68159602"
 ---
-1. Lancez Visual Studio et sélectionnez **Fichier** > **Nouveau** >  **Projet**.
+1. Lancez Visual Studio et sélectionnez **File** > **New** > **Project**.
 
 1. Dans la boîte de dialogue **Nouveau projet**, recherchez « Python », sélectionnez le modèle **À partir de code Python existant**, spécifiez un nom et un emplacement pour le projet, puis sélectionnez **OK**.
 
@@ -15,7 +15,7 @@ ms.locfileid: "68159602"
 
     ![Nouveau projet à partir du code existant, étape 1](../media/projects-from-existing-1.png)
 
-1. Dans la boîte de dialogue suivante, sélectionnez le fichier de démarrage pour votre projet, puis sélectionnez **Suivant**. (Si vous le souhaitez, sélectionnez un environnement ; sinon, acceptez les valeurs par défaut.) Notez que la boîte de dialogue affiche uniquement les fichiers du dossier racine ; si le fichier que vous voulez utiliser se trouve dans un sous-dossier, laissez le champ correspondant au fichier de démarrage vide et définissez-le ultérieurement dans **l’Explorateur de solutions** (décrit ci-dessous).
+1. Dans la boîte de dialogue suivante, sélectionnez le fichier de démarrage pour votre projet, puis sélectionnez **Suivant**. (Si vous le souhaitez, sélectionnez un environnement; acceptez autrement les défauts.) Notez que le dialogue n’affiche que des fichiers dans le dossier racine; si le fichier que vous voulez est dans un sous-pli, laissez le fichier de démarrage vide et définissez-le plus tard dans **Solution Explorer** (décrit ci-dessous).
 
     ![Nouveau projet à partir du code existant, étape 2](../media/projects-from-existing-2.png)
 

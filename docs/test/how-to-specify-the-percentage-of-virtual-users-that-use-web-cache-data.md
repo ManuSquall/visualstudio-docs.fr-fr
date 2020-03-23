@@ -1,5 +1,5 @@
 ---
-title: 'Test de charge : définir le pourcentage d’utilisateur virtuel à l’aide des données du cache Web'
+title: 'Test de charge : Définissez le pourcentage d’utilisateurs virtuels à l’aide des données de cache Web'
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,10 +9,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 8cac3368d0f03c268e086cc8636f1175a15effdd
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/16/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "76113356"
 ---
 # <a name="how-to-specify-the-percentage-of-virtual-users-that-use-web-cache-data"></a>Guide pratique pour spécifier le pourcentage des utilisateurs virtuels qui utilisent les données du cache web
@@ -21,9 +21,9 @@ Après avoir créé votre test de charge avec **l’Assistant Nouveau test de ch
 
 [!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
-La propriété **Pourcentage de nouveaux utilisateurs** est définie dans la fenêtre **Propriétés**. Vous modifiez des propriétés du scénario de test de charge dans **l’Éditeur de test de charge**.
+Le **pourcentage de la propriété des nouveaux utilisateurs** est situé dans la fenêtre **Propriétés.** Vous modifiez des propriétés du scénario de test de charge dans **l’Éditeur de test de charge**.
 
-La propriété **Pourcentage de nouveaux utilisateurs** définit le mode de simulation par le test de charge de la mise en cache qui serait exécutée par un navigateur web. Par défaut, la propriété **Pourcentage de nouveaux utilisateurs** est définie sur 0 %. Si la valeur de la propriété **Pourcentage de nouveaux utilisateurs** est définie sur 100 %, chaque test de performances web exécuté dans un test de charge est traité comme un utilisateur accédant au site web pour la première fois et qui n’a aucun contenu du site web dans le cache de son navigateur provenant de visites antérieures. Par conséquent, toutes les requêtes dans le test web, y compris toutes les requêtes dépendantes telles que les images, sont téléchargées.
+Le **pourcentage de la propriété des nouveaux utilisateurs** affecte la façon dont le test de charge simule la mise en cache qui serait effectuée par un navigateur Web. Par défaut, la propriété **Pourcentage de nouveaux utilisateurs** est définie sur 0 %. Si la valeur de la propriété **Pourcentage de nouveaux utilisateurs** est définie sur 100 %, chaque test de performances web exécuté dans un test de charge est traité comme un utilisateur accédant au site web pour la première fois et qui n’a aucun contenu du site web dans le cache de son navigateur provenant de visites antérieures. Par conséquent, toutes les requêtes dans le test web, y compris toutes les requêtes dépendantes telles que les images, sont téléchargées.
 
 > [!NOTE]
 > Lorsque la même ressource pouvant être mise en cache est demandée plus d'une fois dans un test web, les requêtes ne sont pas téléchargées.
@@ -42,14 +42,14 @@ Si vous exécutez un test de charge sur un site web présentant un nombre signif
 
      Les catégories et les propriétés du scénario sont affichées dans la fenêtre **Propriétés**.
 
-4. Définissez la valeur de la propriété **Pourcentage de nouveaux utilisateurs** en entrant un nombre pour le pourcentage de nouveaux utilisateurs.
+4. Définissez la valeur pour le pourcentage de la propriété **des nouveaux utilisateurs** en entrant un numéro pour le pourcentage de nouveaux utilisateurs.
 
-5. Après avoir changé la propriété, choisissez **Enregistrer** dans le menu **Fichier**. Vous pouvez ensuite exécuter votre test de charge en utilisant la nouvelle valeur de **Pourcentage de nouveaux utilisateurs**.
+5. Après avoir changé la propriété, choisissez **Enregistrer** dans le menu **Fichier**. Vous pouvez ensuite exécuter votre test de chargement en utilisant la nouvelle valeur **pourcentage de nouveaux utilisateurs.**
 
 ## <a name="see-also"></a>Voir aussi
 
 - [Modifier les scénarios de test de charge](../test/edit-load-test-scenarios.md)
-- [Procédure pas à pas : Créer et exécuter un test de charge](../test/walkthrough-create-and-run-a-load-test.md)
+- [Procédure pas à pas : créer et exécuter un test de charge](../test/walkthrough-create-and-run-a-load-test.md)
 - [Contrôleurs de test et agents de test](configure-test-agents-and-controllers-for-load-tests.md)
 - [Propriétés des scénarios de test de charge](../test/load-test-scenario-properties.md)
-- [Modifier les modèles de charge en modèle d’activités des utilisateurs virtuels](../test/edit-load-patterns-to-model-virtual-user-activities.md)
+- [Modifier les modèles de chargement pour modéliser les activités virtuelles de l’utilisateur](../test/edit-load-patterns-to-model-virtual-user-activities.md)

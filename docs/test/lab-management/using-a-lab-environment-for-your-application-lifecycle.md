@@ -10,10 +10,10 @@ ms.workload:
 - multiple
 author: mikejo5000
 ms.openlocfilehash: b02f8bf9542b5de4737d173835c011f59c3fdc86
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75847287"
 ---
 # <a name="use-a-lab-environment-for-your-devops"></a>Utiliser un environnement lab pour votre DevOps
@@ -63,7 +63,7 @@ Si vous utilisez Lab Management conjointement à System Center Virtual Machine M
 
 * **Reproduire rapidement des configurations d’ordinateurs** : vous pouvez stocker des collections de machines virtuelles qui sont configurées pour recréer des environnements de production classiques. Vous pourrez ensuite exécuter chaque série de tests sur une nouvelle copie d’un environnement stocké.
 
-* **Reproduire les conditions exactes d’un bogue** : quand une série de tests échoue, vous pouvez stocker une copie de l’état de votre environnement lab, et y accéder à partir des résultats de votre build ou d’un élément de travail.
+* **Reproduisez les conditions exactes d’un bogue** - Lorsqu’une exécution de test échoue, vous pouvez stocker une copie de l’état de votre environnement de laboratoire et y accéder à partir de vos résultats de construction ou d’un élément de travail.
 
 * **Exécuter simultanément plusieurs copies d’un environnement lab** : il est possible d’exécuter simultanément plusieurs copies d’un environnement lab sans conflits de noms.
 
@@ -92,23 +92,23 @@ Pour plus d’informations sur SCVMM, consultez [Virtual Machine Manager](/azure
 
 Les environnements standard et SCVMM prennent en charge une grande partie de ces fonctionnalités. Il existe cependant des différences importantes. Le tableau ci-dessous permet de comparer les fonctionnalités qui sont disponibles pour les environnements standard et les environnements SCVMM.
 
-|Capability|Environnement SCVMM|Environnements standard|
+|Fonctionnalité|Environnement SCVMM|Environnements standard|
 |-|------------------------|-|
 |**Test**|||
-|Exécuter des tests manuels|pris en charge|pris en charge|
-|Exécuter des tests codés de l'interface utilisateur et autres tests automatisés|pris en charge|pris en charge|
-|Signaler des bogues riches à l'aide des adaptateurs de diagnostics|pris en charge|pris en charge|
+|Exécuter des tests manuels|Prise en charge|Prise en charge|
+|Exécuter des tests codés de l'interface utilisateur et autres tests automatisés|Prise en charge|Prise en charge|
+|Signaler des bogues riches à l'aide des adaptateurs de diagnostics|Prise en charge|Prise en charge|
 |**Déploiement de build**|||
-|Flux de travail Création-Déploiement-Test automatisés|pris en charge|pris en charge|
+|Flux de travail Création-Déploiement-Test automatisés|Prise en charge|Prise en charge|
 |**Création et gestion d’environnements**|||
-|Utiliser des ordinateurs physiques en plus des ordinateurs virtuels|Non pris en charge|pris en charge|
-|Utiliser des ordinateurs virtuels tiers|Non pris en charge|pris en charge|
-|Installer automatiquement des agents de test sur les ordinateurs d'un environnement lab|pris en charge|pris en charge|
-|Enregistrer et déployer l'état d'un environnement lab à l'aide d'instantanés d'environnement|pris en charge|Non pris en charge|
-|Créer des environnements lab à partir de modèles d'ordinateurs virtuels|pris en charge|Non pris en charge|
-|Démarrage, arrêt et prise d'instantané d'environnement|pris en charge|Non pris en charge|
-|Se connecter à l'environnement à l'aide de la visionneuse d'environnement|pris en charge|pris en charge|
-|Exécuter simultanément plusieurs copies d'un environnement grâce à l'isolement réseau|pris en charge|Non pris en charge|
+|Utiliser des ordinateurs physiques en plus des ordinateurs virtuels|Non pris en charge|Prise en charge|
+|Utiliser des ordinateurs virtuels tiers|Non pris en charge|Prise en charge|
+|Installer automatiquement des agents de test sur les ordinateurs d'un environnement lab|Prise en charge|Prise en charge|
+|Enregistrer et déployer l'état d'un environnement lab à l'aide d'instantanés d'environnement|Prise en charge|Non pris en charge|
+|Créer des environnements lab à partir de modèles d'ordinateurs virtuels|Prise en charge|Non pris en charge|
+|Démarrage, arrêt et prise d'instantané d'environnement|Prise en charge|Non pris en charge|
+|Se connecter à l'environnement à l'aide de la visionneuse d'environnement|Prise en charge|Prise en charge|
+|Exécuter simultanément plusieurs copies d'un environnement grâce à l'isolement réseau|Prise en charge|Non pris en charge|
 
 ### <a name="lab-management-concepts"></a>Terminologie Lab management
 
@@ -126,7 +126,7 @@ Pour plus d'informations sur Lab Management, consultez :
 * [Planifier votre lab](https://msdn.microsoft.com/library/ff756575%28v=vs.140%29.aspx)
 * [Administrer votre lab](https://msdn.microsoft.com/library/dd936084%28v=vs.140%29.aspx)
 * [Configuration de Lab Management pour les environnements SCVMM](https://msdn.microsoft.com/library/dd380687%28v=vs.140%29.aspx)
-* [Gestion des autorisations utilisateur pour Lab Management](https://msdn.microsoft.com/library/dd380760%28v=vs.140%29.aspx)
+* [Gérer les autorisations](https://msdn.microsoft.com/library/dd380760%28v=vs.140%29.aspx)
 * [Modification des configurations Lab Management existantes](https://msdn.microsoft.com/library/ee704508%28v=vs.140%29.aspx)
 * [Résolution des problèmes](https://msdn.microsoft.com/library/ee853230%28v=vs.140%29.aspx)
 
@@ -141,4 +141,4 @@ Pour plus d’informations sur la configuration des environnements, consultez :
 
 * [Installer et configurer des agents de test](../../test/lab-management/install-configure-test-agents.md)
 * [Visual Studio Lab Management Guide](https://blogs.msdn.microsoft.com/visualstudioalmrangers/2015/04/22/library-of-tooling-and-guidance-solutions-aka-msvsarsolutions/)
-* [Microsoft DevOps Blog](https://devblogs.microsoft.com/devops/)
+* [Blog Microsoft DevOps](https://devblogs.microsoft.com/devops/)

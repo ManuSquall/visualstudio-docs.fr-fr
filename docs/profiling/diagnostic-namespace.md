@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 03671f314dca3c016f9524bcb246b74e0eb1f837
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "62970081"
 ---
 # <a name="diagnostic-namespace"></a>diagnostic, espace de noms
@@ -32,21 +32,21 @@ namespace diagnostic;
 
 ### <a name="classes"></a>Classes
 
-|Name|Description|
+|Nom|Description|
 |----------|-----------------|
-|[marker_series, classe](../profiling/marker-series-class.md)|Représente un canal série d’événements générés par un fournisseur unique.|
+|[Classe marker_series](../profiling/marker-series-class.md)|Représente un canal série d’événements générés par un fournisseur unique.|
 |[span, classe](../profiling/span-class.md)|Définit une phase de l’application.|
 
 ### <a name="enumerations"></a>Énumérations
 
-|Name|Description|
+|Nom|Description|
 |----------|-----------------|
 |[marker_importance, énumération](../profiling/marker-importance-enumeration.md)|Représente le niveau d’importance d’un marqueur du visualiseur concurrentiel.|
 
 ## <a name="requirements"></a>Spécifications
  **En-tête :** *cvmarkersobj.h*
 
- **Espace de noms :** Concurrence
+ **Espace de noms :** Concurrency
 
 ## <a name="see-also"></a>Voir aussi
-- [Concurrency, espace de noms (visualiseur concurrentiel)](../profiling/concurrency-namespace-concurrency-visualizer.md)
+- [Espace de nom de concurrency (Visuel de concurrency)](../profiling/concurrency-namespace-concurrency-visualizer.md)

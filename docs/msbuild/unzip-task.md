@@ -23,10 +23,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: d331fda05e8655be0536a1e83d8309ae8c060b1f
-ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/26/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77631508"
 ---
 # <a name="unzip-task"></a>Tâche Unzip
@@ -38,7 +38,7 @@ Décompresse une archive *.zip* à l’emplacement spécifié.
 
 ## <a name="parameters"></a>Paramètres
 
- Le tableau ci-dessous décrit les paramètres de la tâche `Unzip`.
+ Le tableau ci-dessous décrit les paramètres de la tâche `Unzip` .
 
 |Paramètre|Description|
 |---------------|-----------------|
@@ -47,11 +47,11 @@ Décompresse une archive *.zip* à l’emplacement spécifié.
 |`SkipUnchangedFiles`|Paramètre `Boolean` facultatif.<br /><br /> Si la valeur est `true`, ignore la décompression des fichiers qui sont inchangés. La valeur par défaut est `true`. La tâche `Unzip` considère que les fichiers sont inchangés s’ils ont la même taille et la même heure de dernière modification.|
 |`SourceFiles`|Paramètre <xref:Microsoft.Build.Framework.ITaskItem>`[]` obligatoire.<br /><br /> Spécifie un ou plusieurs fichiers à décompresser. Quand vous spécifiez plusieurs fichiers, ils sont décompressés dans l’ordre dans le même dossier.|
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Notes 
 
- En plus des paramètres énumérés ci-dessus, cette tâche hérite des paramètres de la classe <xref:Microsoft.Build.Tasks.TaskExtension>, qui elle-même hérite de la classe <xref:Microsoft.Build.Utilities.Task>. Pour obtenir la liste de ces paramètres supplémentaires et leurs descriptions, consultez [Classe de base TaskExtension](../msbuild/taskextension-base-class.md).
+ En plus des paramètres énumérés ci-dessus, cette tâche hérite des paramètres de la classe <xref:Microsoft.Build.Tasks.TaskExtension> , qui elle-même hérite de la classe <xref:Microsoft.Build.Utilities.Task> . Pour une liste de ces paramètres supplémentaires et leurs descriptions, voir [TaskExtension classe de base](../msbuild/taskextension-base-class.md).
 
-## <a name="example"></a>Exemple
+## <a name="example"></a> Exemple
 
  L’exemple suivant décompresse une archive et remplace tous les fichiers en lecture seule.
 
@@ -71,5 +71,5 @@ Décompresse une archive *.zip* à l’emplacement spécifié.
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Tâches :](../msbuild/msbuild-tasks.md)
+- [Tâches](../msbuild/msbuild-tasks.md)
 - [Informations de référence sur les tâches](../msbuild/msbuild-task-reference.md)

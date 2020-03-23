@@ -11,10 +11,10 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: bf503cff7d8de2c00a93385113de05de00059390
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "62956804"
 ---
 # <a name="use-pylint-to-check-python-code"></a>Utiliser PyLint pour vérifier le code Python
@@ -50,11 +50,11 @@ Par exemple, pour supprimer les avertissements de type « missing docstring »
    pylint --generate-rcfile > .pylintrc
    ```
 
-1. Dans l’Explorateur de solutions de Visual Studio, cliquez avec le bouton droit sur le projet, sélectionnez **Ajouter** > **Élément existant**, accédez au nouveau fichier *.pylintrc*, sélectionnez-le, puis sélectionnez **Ajouter**.
+1. Dans Visual Studio Solution Explorer, cliquez à droite sur votre projet, sélectionnez **Ajouter** > **l’élément existant,** naviguer vers le nouveau fichier *.pylintrc,* sélectionnez-le et **sélectionnez Ajouter**.
 
 1. Ouvrez le fichier. Celui-ci contient plusieurs paramètres que vous pouvez changer. Pour désactiver un avertissement, recherchez la section `[MESSAGES CONTROL]`, puis localisez le paramètre `disable` dans cette section. Il existe une longue chaîne de messages spécifiques auxquels vous pouvez ajouter les avertissements de votre choix. Dans cet exemple, ajoutez `,missing-docstring` (y compris la virgule de délimitation).
 
 1. Enregistrez le fichier *.pylintrc*, puis réexécutez PyLint pour vérifier que les avertissements sont désormais supprimés.
 
 > [!Tip]
-> Pour utiliser un fichier *.pylintrc* à partir d’un partage réseau, créez une variable d’environnement nommée `PYLINTRC` avec la valeur du nom de fichier sur le partage réseau, en utilisant un chemin UNC ou une lettre de lecteur mappée. Par exemple, `PYLINTRC=\\myshare\python\.pylintrc`.
+> Pour utiliser un fichier *.pylintrc* à partir d’un partage réseau, créez une variable d’environnement nommée `PYLINTRC` avec la valeur du nom de fichier sur le partage réseau, en utilisant un chemin UNC ou une lettre de lecteur mappée. Par exemple : `PYLINTRC=\\myshare\python\.pylintrc`.

@@ -11,17 +11,17 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: eb3e3ca5d18429c60894c42bda12328836dc6fc8
-ms.sourcegitcommit: bb5425b9c6d8fd7135d9584c2963831754071347
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/29/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "73024722"
 ---
 # <a name="edit-python-code"></a>Modifier le code Python
 
 Comme vous passez beaucoup de votre temps de développement dans l’éditeur de code, la [prise en charge de Python dans Visual Studio](installing-python-support-in-visual-studio.md) fournit plusieurs fonctionnalités pour améliorer la productivité. Ces fonctionnalités comprennent la mise en surbrillance de la syntaxe IntelliSense, la saisie semi-automatique, l’aide de signature, les substitutions de méthode, la recherche et la navigation.
 
-L’éditeur est également intégré à la **fenêtre interactive** dans Visual Studio, ce qui facilite l’échange de code entre les deux. Pour plus d’informations, consultez [Étape 3 du tutoriel : Utiliser la fenêtre REPL interactive](tutorial-working-with-python-in-visual-studio-step-03-interactive-repl.md) et [Utiliser la fenêtre interactive - Commande Envoyer vers Interactive](python-interactive-repl-in-visual-studio.md#send-to-interactive-command).
+L’éditeur est également intégré à la fenêtre **Interactive** de Visual Studio, ce qui facilite l’échange de code entre les deux. Pour plus d’informations, consultez [Étape 3 du tutoriel : Utiliser la fenêtre REPL interactive](tutorial-working-with-python-in-visual-studio-step-03-interactive-repl.md) et [Utiliser la fenêtre interactive - Commande Envoyer vers Interactive](python-interactive-repl-in-visual-studio.md#send-to-interactive-command).
 
 Pour vous documenter sur la modification de code dans Visual Studio, consultez [Fonctionnalités de l’éditeur de code](../ide/writing-code-in-the-code-and-text-editor.md). Consultez également [Mode Plan](../ide/outlining.md), qui vous permet de rester concentré sur certaines sections de votre code.
 
@@ -37,7 +37,7 @@ Visual Studio 2017 version 15.6 et ultérieure utilise un autre moyen pour fourn
 
 ### <a name="completions"></a>Saisies semi-automatiques
 
-Les saisies semi-automatiques s’affichent sous forme d’instructions, d’identificateurs et d’autres mots qui peuvent tout à fait être saisis à l’emplacement actuel dans l’éditeur. Ce qui apparaît dans la liste est basé sur le contexte et est filtré pour omettre les options inappropriées ou inexactes. Les saisies semi-automatiques sont souvent déclenchées en tapant diverses instructions (comme `import`) et différents opérateurs (dont un point), mais vous pouvez les afficher à tout moment en tapant **Ctrl**+**J** > **espace**.
+Les saisies semi-automatiques s’affichent sous forme d’instructions, d’identificateurs et d’autres mots qui peuvent tout à fait être saisis à l’emplacement actuel dans l’éditeur. Ce qui apparaît dans la liste est basé sur le contexte et est filtré pour omettre les options inappropriées ou inexactes. Les achèvements sont souvent déclenchés par `import`la saisie de différentes déclarations (telles que ) et les opérateurs (y compris une période), mais vous pouvez les faire apparaître à tout moment en tapant **Ctrl**+**J** > **Space**.
 
 ![Saisie semi-automatique de membres dans l’éditeur Visual Studio](media/code-editing-completions-simple.png)
 
@@ -47,7 +47,7 @@ Lorsqu’une liste de saisies semi-automatiques est ouverte, vous pouvez recherc
 - Taper uniquement des lettres qui sont au début des mots, tel que « abc » pour rechercher « AbstractBaseClass » ou « air » pour rechercher « as_integer_ratio ».
 - Ignorer des lettres, tel que « b64 » pour rechercher « base64 ».
 
-Voici quelques exemples :
+Exemples :
 
 ![Saisie semi-automatique de membres avec filtrage dans l’éditeur Visual Studio](media/code-editing-completion-filtering.png)
 
@@ -72,11 +72,11 @@ Taper @ lance un décorateur et affiche les décorateurs potentiels. La plupart 
 ![Saisie semi-automatique de décorateurs dans l’éditeur Visual Studio](media/code-editing-completion-decorator.png)
 
 > [!Tip]
-> Vous pouvez configurer le comportement des saisies semi-automatiques via **Outils** > **Options** > **Éditeur de texte** > **Python** > **Avancé**. Parmi les options proposées, **Filter list based on search string** (Filtrer la liste en fonction de la chaîne de recherche) applique un filtre aux propositions de saisie semi-automatique à mesure que vous tapez (option sélectionnée par défaut) et **La saisie semi-automatique des membres affiche l’intersection des membres** affiche uniquement les saisies semi-automatiques prises en charge par tous les types possibles (option non sélectionnée par défaut). Consultez [Options - Résultats de la saisie semi-automatique](python-support-options-and-settings-in-visual-studio.md#completion-results).
+> Vous pouvez configurer le comportement des achèvements grâce à **Tools** > **Options** > **Text Editor** > **Python** > **Advanced**. Parmi ceux-ci, **la liste de filtre basée sur la chaîne** de recherche applique le filtrage des suggestions d’achèvement pendant que vous tapez (par défaut est vérifié), et **l’intersection des écrans d’achèvement des membres** montre que les achèvements qui sont pris en charge par tous les types possibles (par défaut n’est pas contrôlé). Consultez [Options - Résultats de la saisie semi-automatique](python-support-options-and-settings-in-visual-studio.md#completion-results).
 
 ### <a name="type-hints"></a>Affinages de type
 
-*Visual Studio 2017 versions 15.7 et ultérieures.*
+*Visual Studio 2017 version 15.7 et plus tard.*
 
 Les « affinages de type » dans Python 3.5+ ([PEP 484](https://www.python.org/dev/peps/pep-0484/), python.org) font référence à une syntaxe d’annotation pour les fonctions et classes qui indiquent les types des arguments, des valeurs de retour et des attributs de classe. IntelliSense affiche des affinages de type quand vous pointez sur des appels de fonctions, des arguments et des variables dotés de ces annotations.
 
@@ -88,7 +88,7 @@ Dans l’exemple suivant, vous pouvez voir comment les attributs annotés de la 
 
 ![Complétion IntelliSense illustrant les affinages de type](media/code-editing-type-hints2.png)
 
-De plus, il s’avère utile de valider les affinages de type tout au long de votre projet, car ce n’est normalement qu’au moment de l’exécution que les erreurs apparaissent. Pour cela, Visual Studio intègre l’outil standard MyPy par le biais de la commande de menu contextuel **Python** > **Exécuter Mypy** dans **l’Explorateur de solutions** :
+De plus, il s’avère utile de valider les affinages de type tout au long de votre projet, car ce n’est normalement qu’au moment de l’exécution que les erreurs apparaissent. À cette fin, Visual Studio intègre l’outil MyPy standard de l’industrie à travers la commande de menu **contexte Python** > **Run Mypy** dans **Solution Explorer**:
 
 ![Exécuter la commande de menu contextuel MyPy dans l’Explorateur de solutions](media/code-editing-type-hints-run-mypy.png)
 
@@ -111,27 +111,27 @@ L’utilisation de la commande **Exécuter Mypy** sur ce code génère l’erreu
 
 ::: moniker range="vs-2017"
 > [!Tip]
-> Pour les versions de Python antérieures à la version 3.5, Visual Studio affiche également les affinages de type que vous fournissez par le biais de *fichiers stub* Typeshed ( *.pyi*). Vous pouvez utiliser des fichiers stub chaque fois que vous ne souhaitez pas inclure d’indicateurs de type directement dans votre code, ou que vous souhaitez créer des affinages de type pour une bibliothèque qui ne les utilise pas directement. Pour plus d’informations, consultez [Create Stubs for Python Modules](https://github.com/python/mypy/wiki/Creating-Stubs-For-Python-Modules) (Créer des stubs pour des modules Python) dans le wiki du projet mypy.
+> Pour les versions de Python antérieures à la version 3.5, Visual Studio affiche également les affinages de type que vous fournissez par le biais de *fichiers stub* Typeshed (*.pyi*). Vous pouvez utiliser des fichiers stub chaque fois que vous ne souhaitez pas inclure d’indicateurs de type directement dans votre code, ou que vous souhaitez créer des affinages de type pour une bibliothèque qui ne les utilise pas directement. Pour plus d’informations, voir [Créer des talons pour les modules Python](https://github.com/python/mypy/wiki/Creating-Stubs-For-Python-Modules) dans le wiki projet mypy.
 >
 > Visual Studio ne prend pas en charge les affinages de type dans les commentaires.
 ::: moniker-end
 ::: moniker range=">=vs-2019"
 > [!Tip]
-> Pour les versions de Python antérieures à la version 3.5, Visual Studio affiche également les affinages de type que vous fournissez par le biais de *fichiers stub* Typeshed ( *.pyi*). Vous pouvez utiliser des fichiers stub chaque fois que vous ne souhaitez pas inclure d’indicateurs de type directement dans votre code, ou que vous souhaitez créer des affinages de type pour une bibliothèque qui ne les utilise pas directement. Pour plus d’informations, consultez [Create Stubs for Python Modules](https://github.com/python/mypy/wiki/Creating-Stubs-For-Python-Modules) (Créer des stubs pour des modules Python) dans le wiki du projet mypy.
+> Pour les versions de Python antérieures à la version 3.5, Visual Studio affiche également les affinages de type que vous fournissez par le biais de *fichiers stub* Typeshed (*.pyi*). Vous pouvez utiliser des fichiers stub chaque fois que vous ne souhaitez pas inclure d’indicateurs de type directement dans votre code, ou que vous souhaitez créer des affinages de type pour une bibliothèque qui ne les utilise pas directement. Pour plus d’informations, voir [Créer des talons pour les modules Python](https://github.com/python/mypy/wiki/Creating-Stubs-For-Python-Modules) dans le wiki projet mypy.
 >
-> Visual Studio inclut un ensemble de groupes de fichiers Typeshed pour Python 2 et 3, des téléchargements supplémentaires ne sont donc pas nécessaires. Toutefois, si vous souhaitez utiliser un autre ensemble de fichiers, vous pouvez spécifier le chemin d’accès dans les options **Outils** > **Options** > **Python**  >  **Serveur de langage**. Consultez [Options - Serveur de langage](python-support-options-and-settings-in-visual-studio.md#language-server-options).
+> Visual Studio inclut un ensemble de groupes de fichiers Typeshed pour Python 2 et 3, des téléchargements supplémentaires ne sont donc pas nécessaires. Toutefois, si vous souhaitez utiliser un ensemble différent de fichiers, vous pouvez spécifier le chemin dans les options **outils** > **Options** > **Python** > **Language Server** options options options options. Consultez [Options - Serveur de langage](python-support-options-and-settings-in-visual-studio.md#language-server-options).
 >
 > Visual Studio ne prend pas en charge les affinages de type dans les commentaires.
 ::: moniker-end
 
 ### <a name="signature-help"></a>Assistance pour la signature
 
-Quand vous écrivez du code qui appelle une fonction, l’aide de signature apparaît lorsque vous tapez le caractère `(` ouvrant et affiche les informations sur le paramètre et la documentation disponibles. Vous pouvez également les faire apparaître avec **Ctrl**+**Maj**+**Espace** à l’intérieur d’un appel de fonction. Les informations affichées dépendent des chaînes de documentation du code source de la fonction, mais elles incluent toutes les valeurs par défaut.
+Quand vous écrivez du code qui appelle une fonction, l’aide de signature apparaît lorsque vous tapez le caractère `(` ouvrant et affiche les informations sur le paramètre et la documentation disponibles. Vous pouvez également le faire apparaître avec **Ctrl**+**Shift**+**Space** à l’intérieur d’un appel de fonction. Les informations affichées dépendent des chaînes de documentation du code source de la fonction, mais elles incluent toutes les valeurs par défaut.
 
 ![Assistance pour la signature dans l’éditeur Visual Studio](media/code-editing-signature-help.png)
 
 > [!Tip]
-> Pour désactiver l’assistance pour la signature, accédez à **Outils** > **Options** > **Éditeur de texte** > **Python** > **Général** et désactivez **Saisie semi-automatique des instructions** > **Informations sur les paramètres**.
+> Pour désactiver l’aide de signature, rendez-vous > sur **l’éditeur** > **de** > texte Tools**Options** > **Python** > **General** et des informations claires sur les paramètres d’achèvement**de** **l’énoncé.**
 
 ### <a name="quick-info"></a>Info express
 
@@ -145,12 +145,12 @@ La coloration du code utilise les informations issues de l’analyse du code pou
 
 ![Coloration du code et de la syntaxe dans l’éditeur Visual Studio](media/code-editing-code-coloring.png)
 
-Pour personnaliser les couleurs, accédez à **Outils** > **Options** > **Environnement** > **Polices et couleurs** et modifiez les entrées **Python** dans la liste **Afficher les éléments** :
+Pour personnaliser les couleurs, rendez-vous sur **Tools** > **Options** > **Environment** > **Fonts and Colors** et modifiez les entrées **Python** dans la liste des éléments **Display** :
 
 ![Options Polices et Couleurs dans Visual Studio](media/code-editing-customize-colors.png)
 
 > [!Tip]
-> Pour désactiver la coloration du code, accédez à **Outils** > **Options** > **Éditeur de texte** > **Python** > **Avancé** et désactivez **Options diverses** > **Color names based on type** (Colorer les noms en fonction du type). Consultez [Options - Options diverses](python-support-options-and-settings-in-visual-studio.md#miscellaneous-options).
+> Pour désactiver la coloration de code, allez à **Tools** > **Options** > **Text Editor** > **Python** > **Advanced** et effacer les noms de couleur **Options** > Divers**basés sur le type**. Voir [Options - Options diverses](python-support-options-and-settings-in-visual-studio.md#miscellaneous-options).
 
 ## <a name="code-snippets"></a>Extraits de code
 
@@ -166,11 +166,11 @@ Appuyez sur **Tab** pour générer le reste de la classe. Vous pouvez ensuite ta
 
 ### <a name="menu-commands"></a>Commandes de menu
 
-Quand vous utilisez la commande de menu **Modifier** > **IntelliSense** > **Insérer un extrait de code**, sélectionnez d’abord **Python**, puis un extrait de code :
+Lorsque vous utilisez la commande de menu **Edit** > **IntelliSense** > **Insert Code Snippet,** vous sélectionnez d’abord **Python,** puis sélectionnez un extrait :
 
 ![Sélection d’un extrait de code via la commande Insérer un extrait de code](media/code-editing-code-snippet-insert.png)
 
-De la même façon, la commande **Modifier** > **IntelliSense** > **Entourer de** place la sélection actuelle dans l’éditeur de texte au sein d’un élément structurel choisi. Par exemple, supposons que vous ayez un peu de code comme suit :
+**L’Edit** > **IntelliSense** > **Surround With** commande, de même, place la sélection actuelle dans l’éditeur de texte à l’intérieur d’un élément structurel choisi. Par exemple, supposons que vous ayez un peu de code comme suit :
 
 ```python
 sum = 0
@@ -194,7 +194,7 @@ Si vous écrivez un extrait de code de qualité et que vous souhaitez le partage
 
 ## <a name="navigate-your-code"></a>Parcourir votre code
 
-La prise en charge de Python dans Visual Studio fournit plusieurs options pour naviguer rapidement dans votre code, notamment des bibliothèques pour lesquelles le code source est disponible : la [barre de navigation](#navigation-bar), [**Atteindre la définition**](#go-to-definition), [**Naviguer vers**](#navigate-to) et [**Rechercher toutes les références**](#find-all-references). Vous pouvez également utiliser [**l’Explorateur d’objets**](../ide/viewing-the-structure-of-code.md#BKMK_ObjectBrowser) de Visual Studio.
+Python support in Visual Studio fournit plusieurs moyens de naviguer rapidement dans votre code, y compris les bibliothèques pour lesquelles le code source est disponible: la [barre de navigation](#navigation-bar), Go To [**Definition**](#go-to-definition), [**Naviguer vers**](#navigate-to), et trouver toutes [**les références**](#find-all-references). Vous pouvez également utiliser le [**navigateur d’objets**](../ide/viewing-the-structure-of-code.md#BKMK_ObjectBrowser)Visual Studio .
 
 ### <a name="navigation-bar"></a>Barre de navigation
 
@@ -203,25 +203,25 @@ La barre de navigation s’affiche en haut de chaque fenêtre de l’éditeur et
 ![Barre de navigation dans l’éditeur Visual Studio](media/code-editing-navigation-bar.png)
 
 > [!Tip]
-> Pour masquer la barre de navigation, accédez à **Outils** > **Options** > **Éditeur de texte** > **Python** > **Général** et désactivez **Paramètres** > **Barre de navigation**.
+> Pour masquer la barre de navigation, rendez-vous sur **Tools** > **Options** > **Text Editor** > **Python** > **General** et effacer la barre**de navigation** **Paramètres** > .
 
 ### <a name="go-to-definition"></a>Atteindre la définition
 
-**Atteindre la définition** permet de passer rapidement de l’utilisation d’un identificateur (p. ex. un nom de fonction, une classe ou une variable) au code source dans lequel il est défini. Pour l’appeler, vous devez cliquer avec le bouton droit sur un identificateur et sélectionner **Atteindre la définition** ou placer le signe insertion dans l’identificateur et appuyer sur **F12**. Cela fonctionne dans l’ensemble de votre code et des bibliothèques externes sous réserve que ce code source soit disponible. Si le code source de la bibliothèque n’est pas disponible, **Atteindre la définition** passe à l’instruction `import` appropriée pour une référence de module ou affiche une erreur.
+**Atteindre la définition** permet de passer rapidement de l’utilisation d’un identificateur (p. ex. un nom de fonction, une classe ou une variable) au code source dans lequel il est défini. Vous l’invoquez en cliquant à droite sur un identifiant et en sélectionnant **Go To Definition** ou, en plaçant le caret dans l’identifiant et en appuyant sur **F12**. Cela fonctionne dans l’ensemble de votre code et des bibliothèques externes sous réserve que ce code source soit disponible. Si le code source de la bibliothèque n’est pas disponible, **Atteindre la définition** passe à l’instruction `import` appropriée pour une référence de module ou affiche une erreur.
 
 ![Commande Atteindre la définition dans Visual Studio](media/code-editing-go-to-definition.png)
 
-### <a name="navigate-to"></a>Boîte de dialogue Naviguer vers
+### <a name="navigate-to"></a>Naviguer vers
 
-La commande **Modifier** > **Naviguer vers** (**Ctrl**+ **,** ) affiche une zone de recherche dans l’éditeur dans laquelle vous pouvez taper n’importe quelle chaîne et voir les correspondances possibles dans votre code qui définit une fonction, une classe ou une variable contenant cette chaîne. Cette fonctionnalité permet de bénéficier d’une fonction similaire à **Atteindre la définition**, mais sans avoir à localiser une utilisation d’un identificateur.
+La **commande Edit** > **Navigate To** (**Ctrl**+**,**) affiche une boîte de recherche dans l’éditeur où vous pouvez taper n’importe quelle chaîne et voir les correspondances possibles dans votre code qui définit une fonction, une classe ou une variable contenant cette chaîne. Cette fonctionnalité permet de bénéficier d’une fonction similaire à **Atteindre la définition**, mais sans avoir à localiser une utilisation d’un identificateur.
 
-Vous pouvez accéder à la définition de cet identificateur en double-cliquant sur n’importe quel nom ou en effectuant une sélection avec les touches de direction et en appuyant sur **Entrée**.
+Double-cliquer sur n’importe quel nom, ou de sélectionner avec des touches fléchées et **Entrez**, navigue à la définition de cet identifiant.
 
 ![Commande Naviguer vers dans Visual Studio](media/code-editing-navigate-to.png)
 
 ### <a name="find-all-references"></a>Rechercher toutes les références
 
-**Rechercher toutes les références** est une option utile pour déterminer où un identificateur donné est à la fois défini et utilisé, y compris les importations et les affectations. Pour l’appeler, vous devez cliquer avec le bouton droit sur un identificateur et sélectionner **Rechercher toutes les références** ou placer le signe insertion dans l’identificateur et appuyer sur **Maj**+**F12**. Double-cliquer sur un élément de la liste permet d’accéder à son emplacement.
+**Rechercher toutes les références** est une option utile pour déterminer où un identificateur donné est à la fois défini et utilisé, y compris les importations et les affectations. Vous l’invoquez en cliquant à droite sur un identifiant et en sélectionnant **Localiser toutes les références,** ou en plaçant le caret dans l’identifiant et en appuyant sur **Shift**+**F12**. Double-cliquer sur un élément de la liste permet d’accéder à son emplacement.
 
 ![Résultats de Rechercher toutes les références](media/code-editing-find-all-references.png)
 

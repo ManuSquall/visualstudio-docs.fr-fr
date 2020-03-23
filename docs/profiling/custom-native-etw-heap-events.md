@@ -11,10 +11,10 @@ dev_langs:
 ms.workload:
 - cplusplus
 ms.openlocfilehash: 1bb6f906cbfb715d67f6e10ddcecf094bc25821f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "62552969"
 ---
 # <a name="custom-native-etw-heap-events"></a>Événements de tas ETW natifs personnalisés
@@ -61,7 +61,7 @@ Cette bibliothèque peut facilement être utilisée en C et C++.
    #include <VSCustomNativeHeapEtwProvider.h>
    ```
 
-1. Ajoutez l’élément décoratif `__declspec(allocator)` à toute fonction dans votre gestionnaire de tas personnalisé qui retourne un pointeur vers la mémoire de tas nouvellement allouée.  Cet élément décoratif permet à l’outil d’identifier le type de la mémoire retournée.  Par exemple :
+1. Ajoutez l’élément décoratif `__declspec(allocator)` à toute fonction dans votre gestionnaire de tas personnalisé qui retourne un pointeur vers la mémoire de tas nouvellement allouée.  Cet élément décoratif permet à l’outil d’identifier le type de la mémoire retournée.  Par exemple :
 
    ```cpp
    __declspec(allocator) void *MyMalloc(size_t size);
@@ -90,7 +90,7 @@ Cette bibliothèque peut facilement être utilisée en C et C++.
    pHeapTracker->AllocateEvent(memPtr, size);
    ```
 
-   ou
+   or
 
    ```C
    VSHeapTrackerAllocateEvent(hHeapTracker, memPtr, size);
@@ -156,5 +156,5 @@ Comme avec le tas Windows standard, vous pouvez également utiliser cet outil po
 > Visual Studio contient également un outil **Utilisation de la mémoire** dans l’ensemble d’outils de **profilage des performances**, que vous pouvez activer à l’aide de l’option de menu **Déboguer** > **Profileur de performances** ou de la combinaison de touches **Alt**+**F2**.  Cette fonctionnalité n’inclut pas le suivi de tas et n’affiche pas votre tas personnalisé comme décrit ici.  Cette fonctionnalité est uniquement disponible dans la fenêtre **Outils de diagnostic**, que vous pouvez activer avec le menu **Déboguer** > **Fenêtres** > **Afficher les outils de diagnostic** ou la combinaison de touches **Ctrl**+**Alt**+**F2**.
 
 ## <a name="see-also"></a>Voir aussi
-[Découvrir les Outils de profilage](../profiling/profiling-feature-tour.md)
-[Utilisation de la mémoire](../profiling/memory-usage.md)
+[Premier regard sur les outils](../profiling/profiling-feature-tour.md)
+de profilage[Utilisation de la mémoire](../profiling/memory-usage.md)

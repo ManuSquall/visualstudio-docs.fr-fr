@@ -7,13 +7,13 @@ ms.date: 04/13/2019
 ms.technology: vs-ide-install
 ms.assetid: 8825BBAD-65C0-480F-9868-A01E64F28250
 ms.openlocfilehash: 2ff0703171f5854baed2dd9be3767571a930bcb7
-ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/10/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "74983483"
 ---
-# <a name="troubleshooting-updater-has-errors-retrieving-information"></a>Résolution des problèmes : la mise à jour contient des erreurs lors de la récupération des informations
+# <a name="troubleshooting-updater-has-errors-retrieving-information"></a>Dépannage : Updater a des erreurs de récupération d’informations
 
 Dans de rares cas, le message d’erreur « Erreur lors de la récupération des informations de mise à jour » peut s’afficher lorsque vous tentez de [mettre à jour Visual Studio pour Mac](update.md). Si cela se produit, essayez de corriger le problème en effectuant les étapes suivantes :
 

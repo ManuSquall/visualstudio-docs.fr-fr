@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 13c33f0ef43707390aa32d4c26c0380a8a32883e
-ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/26/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77633016"
 ---
 # <a name="override-toolsversion-settings"></a>Écraser les paramètres ToolsVersion
@@ -36,7 +36,7 @@ Vous pouvez changer l’Ensemble d’outils pour les projets et solutions de tro
 msbuild.exe someproj.proj -tv:12.0 -p:Configuration=Debug
 ```
 
- Dans cet exemple, tous les projets sont générés à l’aide de ToolsVersion 12.0. (Voir cependant la section [Ordre de priorité](#order-of-precedence) plus loin dans cette rubrique.)
+ Dans cet exemple, tous les projets sont générés à l’aide de ToolsVersion 12.0. (Toutefois, voir la section [Ordre de la préséance](#order-of-precedence) plus tard dans ce sujet.)
 
  Quand vous utilisez le commutateur `-tv` sur la ligne de commande, vous pouvez éventuellement utiliser la propriété `$(ProjectToolsVersion)` dans des projets pour les générer avec une autre valeur de ToolsVersion que les autres projets dans la solution.
 
@@ -113,9 +113,9 @@ msbuild.exe someproj.proj -tv:12.0 -p:Configuration=Debug
 
     1. L’attribut `ToolsVersion` de l’élément [Project](../msbuild/project-element-msbuild.md) du fichier projet. Si cet attribut n’existe pas, il est supposé être égal à la version actuelle.
 
-    2. La version des outils par défaut dans le fichier *MSBuild.exe.config*.
+    2. La version par défaut des outils dans le fichier *MSBuild.exe.config.*
 
-    3. La version des outils par défaut dans le Registre. Pour plus d’informations, voir [Configurations standard et personnalisées des ensembles d’outils](../msbuild/standard-and-custom-toolset-configurations.md).
+    3. La version des outils par défaut dans le Registre. Pour plus d’informations, voir [configurations Standard et Toolset personnalisés](../msbuild/standard-and-custom-toolset-configurations.md).
 
 6. Si la variable d’environnement `MSBUILDLEGACYDEFAULTTOOLSVERSION` n’est pas définie, l’ordre de priorité est le suivant :
 
@@ -129,7 +129,7 @@ msbuild.exe someproj.proj -tv:12.0 -p:Configuration=Debug
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Multiciblage](../msbuild/msbuild-multitargeting-overview.md)
+- [Multitargeting](../msbuild/msbuild-multitargeting-overview.md)
 - [Concepts MSBuild](../msbuild/msbuild-concepts.md)
 - [Ensemble d’outils (ToolsVersion)](../msbuild/msbuild-toolset-toolsversion.md)
-- [Configurations standard et personnalisées des ensembles d’outils](../msbuild/standard-and-custom-toolset-configurations.md)
+- [Configurations Toolset standard et personnalisées](../msbuild/standard-and-custom-toolset-configurations.md)

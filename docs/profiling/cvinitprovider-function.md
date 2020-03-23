@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: a97be63cd782397e984fd8dbce7da844efa07540
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "62552665"
 ---
 # <a name="cvinitprovider-function"></a>CvInitProvider, fonction
@@ -32,15 +32,15 @@ HRESULT CvInitProvider(
 ```
 
 #### <a name="parameters"></a>Paramètres
- `pGuid` GUID du fournisseur. Ne peut pas être Null.
+ `pGuid` GUID du fournisseur. Ne peut pas avoir la valeur NULL.
 
- `ppProvider` Adresse d’une variable de sortie qui doit stocker le contexte du fournisseur. Ne peut pas être Null.
+ `ppProvider` Adresse d’une variable de sortie qui doit stocker le contexte du fournisseur. Ne peut pas avoir la valeur NULL.
 
-## <a name="return-value"></a>Valeur de retour
+## <a name="return-value"></a>Valeur retournée
  S_OK lorsque le fournisseur est correctement initialisé, ou code d’erreur en cas d’erreur. Utilisez les macros SUCCEEDED/FAILED pour vérifier la condition d’erreur.
 
 ## <a name="requirements"></a>Spécifications
  **En-tête :** *cvmarkers.h*
 
 ## <a name="see-also"></a>Voir aussi
-- [Informations de référence sur la bibliothèque C++](../profiling/cpp-library-reference.md)
+- [Référence de la bibliothèque de CMD](../profiling/cpp-library-reference.md)

@@ -25,10 +25,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 8d501f7c1e75f5b63c82c34f2dc0a4913d7a88c7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "62552630"
 ---
 # <a name="cventerspan-function"></a>CvEnterSpan, fonction
@@ -108,9 +108,9 @@ HRESULT CvEnterSpanExVA(
 
  `level` Niveau d’importance de l’intervalle.
 
- `pMarkerSeries` Contexte valide de la série de marqueurs. Ne peut pas être Null.
+ `pMarkerSeries` Contexte valide de la série de marqueurs. Ne peut pas avoir la valeur NULL.
 
- `pMessage` Chaîne de format de message. Ne peut pas être Null.
+ `pMessage` Chaîne de format de message. Ne peut pas avoir la valeur NULL.
 
  `ppSpan` Adresse de la variable qui doit contenir l’objet d’intervalle résultant. L’adresse ne peut pas être Null et la variable peut avoir n’importe quelle valeur.
 
@@ -120,9 +120,9 @@ HRESULT CvEnterSpanExVA(
 ## <a name="requirements"></a>Spécifications
  **En-tête :** *cvmarkers.h*
 
- **Unicode :** CvEnterSpanW, CvEnterSpanVW, CvEnterSpanExW, CvEnterSpanExVW
+ **Unicode** : CvEnterSpanW, CvEnterSpanVW, CvEnterSpanExW, CvEnterSpanExVW
 
- **ANSI :** CvEnterSpanA, CvEnterSpanVA, CvEnterSpanExA, CvEnterSpanExVW
+ **ANSI** : CvEnterSpanA, CvEnterSpanVA, CvEnterSpanExA, CvEnterSpanExVW
 
 ## <a name="see-also"></a>Voir aussi
-- [Informations de référence sur la bibliothèque C++](../profiling/cpp-library-reference.md)
+- [Référence de la bibliothèque de CMD](../profiling/cpp-library-reference.md)

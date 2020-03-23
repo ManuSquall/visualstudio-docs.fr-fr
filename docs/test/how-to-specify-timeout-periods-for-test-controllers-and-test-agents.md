@@ -12,10 +12,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 64ce566369f2c60a52e9026e8f92fc30836d523c
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75594758"
 ---
 # <a name="how-to-specify-timeout-periods-for-test-controllers-and-test-agents"></a>Guide pratique pour spécifier les délais d’expiration des contrôleurs de test et des agents de test
@@ -28,7 +28,7 @@ Pour modifier les divers paramètres de délai d'attente d'un contrôleur de tes
 
 - Contrôleur de test : *QTController.exe.config*
 
-    |Nom de la clé|Description|Value|
+    |Nom de clé|Description|Valeur|
     |-|-----------------|-|
     |AgentConnectionTimeoutInSeconds|Nombre de secondes du délai d'attente de la demande de la commande ping de l'agent avant que la connexion ne soit perdue.|"n" secondes.|
     |AgentSyncTimeoutInSeconds|Lorsque vous démarrez une série de tests de synchronisation, nombre de secondes d'attente de la synchronisation de tous les agents avant d'abandonner l'exécution.|"n" secondes.|
@@ -37,7 +37,7 @@ Pour modifier les divers paramètres de délai d'attente d'un contrôleur de tes
 
 - Agent de test : *QTAgentService.exe.config*
 
-    |Nom de la clé|Description|Value|
+    |Nom de clé|Description|Valeur|
     |-|-----------------|-|
     |ControllerConnectionPeriodInSeconds|Nombre de secondes séparant deux tentatives de connexion au contrôleur.|"n" secondes. Valeur par défaut : "30" (trente secondes).|
     |RemotingTimeoutSeconds|Durée maximum d'un appel à distance en secondes.|"n" secondes. Valeur par défaut : "600" (dix minutes).|
@@ -46,7 +46,7 @@ Pour modifier les divers paramètres de délai d'attente d'un contrôleur de tes
 
 ## <a name="to-specify-agent-timeout-options-for-a-test-controller"></a>Pour spécifier les options d’expiration de l’agent d’un contrôleur de test
 
-1. Ouvrez le fichier de configuration XML *QTCcontroller.exe.config* qui se trouve sous *%ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE*.
+1. Ouvrez le fichier de configuration *QTCcontroller.exe.config* XML situé dans *%ProgramFiles (x86)% -Microsoft Visual Studio-2017-Enterprise-Common7-IDE*.
 
 2. Recherchez l’étiquette `<appSettings>`.
 
@@ -68,7 +68,7 @@ Pour modifier les divers paramètres de délai d'attente d'un contrôleur de tes
     <add key="AgentConnectionTimeoutInSeconds" value="180"/>
     ```
 
-    \- ou -
+    -ou-
 
     Ajoutez une clé supplémentaire et spécifiez une valeur de délai d'attente. Par exemple, vous pouvez ajouter la clé `AgentInitializeTimeout` dans la section `<appSettings>` et spécifier une valeur de cinq minutes :
 
@@ -80,7 +80,7 @@ Pour modifier les divers paramètres de délai d'attente d'un contrôleur de tes
 
 ## <a name="to-specify-agent-timeout-options-for-a-test-agent"></a>Pour spécifier les options d’expiration de l’agent d’un agent de test
 
-1. Ouvrez le fichier de configuration XML *QTAgentService.exe.config* qui se trouve sous *%ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE*.
+1. Ouvrez le fichier de configuration *QTAgentService.exe.config* XML situé dans *%ProgramFiles (x86)% -Microsoft Visual Studio-2017-Enterprise-Common7-IDE*.
 
 2. Recherchez l’étiquette `<appSettings>`.
 
@@ -102,7 +102,7 @@ Pour modifier les divers paramètres de délai d'attente d'un contrôleur de tes
     <add key="ControllerConnectionPeriodInSeconds" value="60"/>
     ```
 
-    \- ou -
+    -ou-
 
     Ajoutez une clé supplémentaire et spécifiez une valeur de délai d'attente. Par exemple, vous pouvez ajouter la clé `RemotingTimeoutSeconds` dans la section `<appSettings>` et spécifier une valeur de quinze minutes :
 
@@ -116,5 +116,5 @@ Pour modifier les divers paramètres de délai d'attente d'un contrôleur de tes
 
 - [Installer et configurer des agents de test](../test/lab-management/install-configure-test-agents.md)
 - [Modifier les paramètres de journalisation du test de charge](../test/modify-load-test-logging-settings.md)
-- [Configurer les ports des contrôleurs de test et des agents de test](../test/configure-ports-for-test-controllers-and-test-agents.md)
+- [Configurer les ports pour les contrôleurs d’essai et les agents d’essai](../test/configure-ports-for-test-controllers-and-test-agents.md)
 - [Guide pratique pour lier un contrôleur de test ou un agent de test à une carte réseau](../test/how-to-bind-a-test-controller-or-test-agent-to-a-network-adapter.md)

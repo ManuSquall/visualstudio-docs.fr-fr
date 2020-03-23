@@ -11,10 +11,10 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: db1a551e20c597f98052471910bcb696c878675f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "62429848"
 ---
 # <a name="refactor-python-code"></a>Refactoriser du code Python
@@ -42,7 +42,7 @@ Visual Studio fournit plusieurs commandes pour transformer et nettoyer automatiq
 ## <a name="extract-method"></a>Extraire la méthode
 
 1. Sélectionnez les lignes de code ou l’expression à extraire dans une méthode distincte.
-2. Sélectionnez la commande de menu **Modifier** > **Refactoriser** > **Extraire la méthode**, ou tapez **Ctrl**+**R** > **M**.
+2. Sélectionnez la commande de menu de méthode **Edit** > **Refactor** > **Extract** ou le type **Ctrl**+**R** > **M**.
 3. Dans la boîte de dialogue qui s’affiche, entrez un nouveau nom de méthode, indiquez vers où l’extraire, puis sélectionnez toutes les variables de fermeture. Les variables qui ne sont pas sélectionnées pour la fermeture sont transformées en arguments de méthode :
 
    ![Boîte de dialogue Extraire la méthode](media/code-refactor-extract-method-1.png)

@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 87a6c1e996d820724138b6bf38c6440193a4c26b
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75588835"
 ---
 # <a name="how-to-add-class-diagrams-to-projects"></a>Guide pratique pour ajouter des diagrammes de classes aux projets
@@ -42,11 +42,11 @@ Si vous n’avez pas installé le composant **Concepteur de classes**, effectuez
 
 ## <a name="add-a-blank-class-diagram-to-a-project"></a>Ajouter un diagramme de classes vide à un projet
 
-1. Dans **l’Explorateur de solutions**, cliquez avec le bouton droit sur le nœud de projet, puis choisissez **Ajouter** > **Nouvel élément**. Vous pouvez aussi appuyer sur **Ctrl**+**Maj**+**A**.
+1. Dans **l’Explorateur de solutions**, cliquez avec le bouton droit sur le nœud de projet, puis choisissez **Ajouter** > **Nouvel élément**. Ou, appuyez sur **Ctrl**+**Shift**+**A**.
 
    La boîte de dialogue **Ajouter un nouvel élément** s’ouvre.
 
-2. Développez **Éléments communs** > **Général**, puis sélectionnez **Diagramme de classes** dans la liste de modèles. Pour les projets Visual C++, examinez la catégorie **Utilitaire** afin de rechercher le modèle **Diagramme de classes**.
+2. Élargissez **les éléments** > **communs généraux,** puis sélectionnez **le diagramme** de classe de la liste de modèles. Pour les projets Visual C++, examinez la catégorie **Utilitaire** afin de rechercher le modèle **Diagramme de classes**.
 
    > [!NOTE]
    > Si vous ne voyez pas le modèle **Diagramme de classes**, [effectuez les étapes](#install-the-class-designer-component) pour installer le composant **Concepteur de classes** pour Visual Studio.
@@ -59,16 +59,16 @@ Pour ajouter plusieurs diagrammes de classes, répétez les étapes de la procé
 
 Dans **l’Explorateur de solutions**, ouvrez le menu contextuel d’un fichier de classe (clic droit), puis choisissez **Afficher le diagramme de classes**.
 
-\- ou -
+-ou-
 
 Dans **Affichage de classes**, ouvrez le menu contextuel de l’espace de noms ou du type, puis choisissez **Afficher le diagramme de classes**.
 
 > [!TIP]
-> Si **l’Affichage de classes** n’est pas ouvert, ouvrez **l’Affichage de classes** à partir du menu **Affichage**.
+> Si **Class View** n’est pas ouvert, ouvrez la vue de **classe** depuis le menu **View.**
 
 ## <a name="to-display-the-contents-of-a-complete-project-in-a-class-diagram"></a>Pour afficher le contenu d'un projet complet dans un diagramme de classes
 
-Dans **l’Explorateur de solutions** ou dans Affichage de classes, cliquez avec le bouton droit sur le projet et choisissez **Afficher**, puis choisissez **Afficher le diagramme de classes**.
+Dans **Solution Explorer** ou Class View, cliquez à droite sur le projet et choisissez **View**, puis choisissez View **Class Diagram**.
 
 Un diagramme de classes est alors créé et rempli automatiquement.
 
@@ -78,5 +78,5 @@ Un diagramme de classes est alors créé et rempli automatiquement.
 ## <a name="see-also"></a>Voir aussi
 
 - [Guide pratique pour créer des types à l’aide du Concepteur de classes](how-to-create-types.md)
-- [Guide pratique pour afficher les types existants](how-to-view-existing-types.md)
-- [Concevoir et afficher des classes et des types](designing-and-viewing-classes-and-types.md)
+- [Comment : Afficher les types existants](how-to-view-existing-types.md)
+- [Concevoir et visualiser les classes et les types](designing-and-viewing-classes-and-types.md)

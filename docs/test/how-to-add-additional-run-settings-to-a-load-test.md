@@ -10,10 +10,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: adcb50d2c6800c5ce64ab2b7cf16ce9d2a25aaaa
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75584502"
 ---
 # <a name="how-to-add-additional-run-settings-to-a-load-test"></a>Guide pratique : Ajouter des paramètres d’exécution supplémentaires à un test de charge
@@ -38,16 +38,16 @@ Vous pouvez ajouter davantage de paramètres d'exécution à votre test de charg
 
      La fenêtre **Propriétés** s’affiche avec les propriétés du paramètre d’exécution sélectionné.
 
-5. Dans la fenêtre **Propriétés**, utilisez la zone de texte de la propriété **Nom** pour donner au nouveau paramètre d’exécution un nom qui décrit sa finalité (par exemple, **Paramètre d’exécution : exécution de cinq minutes**).
+5. Dans la fenêtre **Propriétés,** utilisez la boîte de texte pour la propriété **Name** pour donner au nouveau nom de réglage de la course qui décrit l’intention du paramètre d’exécution (par exemple, **Run Setting: Five minute run**).
 
 6. Utilisez la fenêtre **Propriétés** pour modifier les paramètres d’exécution. Par exemple, remplacez la durée d’exécution par **00:05:00** pour exécuter votre test pendant cinq minutes.
 
     > [!NOTE]
     > Pour obtenir la liste complète des propriétés des paramètres et leur description, voir [Propriétés des paramètres de série de tests de charge](../test/load-test-run-settings-properties.md).
 
-     Vous pouvez maintenant indiquer que vous souhaitez utiliser le paramètre d'exécution ajouté en l'activant. Pour plus d’informations, voir [Guide pratique : Sélectionner le paramètre d’exécution actif d’un test de charge](../test/how-to-select-the-active-run-setting-for-a-load-test.md).
+     Vous pouvez maintenant indiquer que vous souhaitez utiliser le paramètre d'exécution ajouté en l'activant. Pour plus d’informations, voir [Comment : Sélectionnez le paramètre d’exécution actif pour un test de charge](../test/how-to-select-the-active-run-setting-for-a-load-test.md).
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Configurer les paramètres de série de tests de charge](../test/configure-load-test-run-settings.md)
+- [Configurer les paramètres d’exécution de test de charge](../test/configure-load-test-run-settings.md)
 - [Spécifier les ensembles de compteurs et les règles de seuil des ordinateurs dans un test de charge](../test/specify-counter-sets-and-threshold-rules-for-load-testing.md)

@@ -6,10 +6,10 @@ author: heiligerdankgesang
 ms.author: dominicn
 ms.date: 05/06/2018
 ms.openlocfilehash: 45e00869e8393b0b074e3eefc403b95c5498377e
-ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/10/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "74983239"
 ---
 # <a name="azure"></a>Azure
@@ -17,5 +17,5 @@ ms.locfileid: "74983239"
 Visual Studio pour Mac vous permet de vous connecter à Azure de plusieurs façons :
 
 - [Azure Functions](azure-functions.md)
-- [Publication sur Azure](publish-app-svc.md)
+- [Publier sur Azure](publish-app-svc.md)
 - [Mobile App Services](connected-services.md)

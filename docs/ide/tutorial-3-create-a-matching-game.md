@@ -10,10 +10,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 619c21f4878f2e421ee5ac5ea76a68cd6e6bc337
-ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/25/2020
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "77579705"
 ---
 # <a name="tutorial-3-create-a-matching-game"></a>Tutoriel 3 : créer un jeu de combinaisons
@@ -21,13 +21,13 @@ ms.locfileid: "77579705"
 Dans ce didacticiel, vous générez un jeu de combinaisons dans lequel le joueur doit associer des paires d'icônes masquées.
 
 > [!NOTE]
-> Ce didacticiel couvre à C# la fois et Visual Basic. vous devez donc vous concentrer sur les informations spécifiques au langage de programmation que vous utilisez.
+> Ce tutoriel couvre à la fois C et Visual Basic, alors concentrez-vous sur les informations spécifiques au langage de programmation que vous utilisez.
 
-Ce didacticiel vous guide tout au long des tâches suivantes :
+Ce tutoriel vous guide à travers les tâches suivantes:
 
 - stocker des objets, tels que des icônes, dans un objet <xref:System.Collections.Generic.List%601> ;
 
-- Utilisez une boucle `foreach` dans C# ou une boucle `For Each` dans Visual Basic pour itérer au sein des éléments d’une liste.
+- Utilisez `foreach` une boucle en `For Each` C ou une boucle dans Visual Basic pour itérer à travers des éléments d’une liste.
 
 - effectuer le suivi de l'état d'un formulaire à l'aide de variables de référence ;
 
@@ -35,7 +35,7 @@ Ce didacticiel vous guide tout au long des tâches suivantes :
 
 - créer un minuteur qui effectue un calcul à rebours, puis déclenche un événement une seule fois après avoir été démarré.
 
-Lorsque vous avez terminé, votre application doit ressembler à l’image suivante :
+Lorsque vous avez terminé, votre application doit ressembler à l’image suivante :
 
 ![Jeu créé dans ce didacticiel](../ide/media/express_finishedgame.png)
 
@@ -43,24 +43,24 @@ Lorsque vous avez terminé, votre application doit ressembler à l’image suiva
 
 |Intitulé|Description|
 |-----------|-----------------|
-|[Étape 1 : créer un projet et ajouter une table à votre formulaire](../ide/step-1-create-a-project-and-add-a-table-to-your-form.md)|Commencez par créer le projet et ajouter un contrôle `TableLayoutPanel` pour maintenir un bon alignement des contrôles.|
-|[Étape 2 : ajouter un objet aléatoire et une liste d’icônes](../ide/step-2-add-a-random-object-and-a-list-of-icons.md)|Ajoutez un objet `Random` et un objet `List` pour créer une liste d'icônes.|
-|[Étape 3 : affecter une icône aléatoire à chaque étiquette](../ide/step-3-assign-a-random-icon-to-each-label.md)|Affectez de façon aléatoire les icônes aux contrôles `Label` afin que chaque jeu soit différent.|
-|[Étape 4 : ajouter un gestionnaire d’événements Click à chaque étiquette](../ide/step-4-add-a-click-event-handler-to-each-label.md)|Ajoutez un gestionnaire d'événements `Click` pour modifier la couleur de l’étiquette sur laquelle le joueur clique.|
-|[Étape 5 : ajouter des références d’étiquettes](../ide/step-5-add-label-references.md)|Ajoutez des variables de référence pour suivre les contrôles Label sur lesquels clique le joueur.|
-|[Étape 6 : ajouter une minuterie](../ide/step-6-add-a-timer.md)|Ajoutez une horloge au formulaire pour assurer le suivi du temps écoulé dans le jeu.|
-|[Étape 7 : garder les paires visibles](../ide/step-7-keep-pairs-visible.md)|Laissez des paires d'icônes visibles, si une paire identique est sélectionnée.|
-|[Étape 8 : ajouter une méthode pour vérifier si le joueur a gagné](../ide/step-8-add-a-method-to-verify-whether-the-player-won.md)|Ajoutez une méthode `CheckForWinner()` pour vérifier si le joueur a gagné.|
-|[Étape 9 : tester d’autres fonctionnalités](../ide/step-9-try-other-features.md)|Essayez d'autres fonctionnalités (par exemple, la modification des icônes et des couleurs, l'ajout d'une grille et l'ajout de sons). Essayez d'agrandir le plateau et d'ajuster la minuterie.|
+|[Étape 1 : Créez un projet et ajoutez une table à votre formulaire](../ide/step-1-create-a-project-and-add-a-table-to-your-form.md)|Commencez par créer le projet et ajouter un contrôle `TableLayoutPanel` pour maintenir un bon alignement des contrôles.|
+|[Étape 2 : Ajouter un objet aléatoire et une liste d’icônes](../ide/step-2-add-a-random-object-and-a-list-of-icons.md)|Ajoutez un objet `Random` et un objet `List` pour créer une liste d'icônes.|
+|[Étape 3 : Attribuer une icône aléatoire à chaque étiquette](../ide/step-3-assign-a-random-icon-to-each-label.md)|Affectez de façon aléatoire les icônes aux contrôles `Label` afin que chaque jeu soit différent.|
+|[Étape 4 : Ajoutez un gestionnaire d’événements de clic à chaque étiquette](../ide/step-4-add-a-click-event-handler-to-each-label.md)|Ajoutez un gestionnaire d'événements `Click` pour modifier la couleur de l’étiquette sur laquelle le joueur clique.|
+|[Étape 5 : Ajouter des références d’étiquettes](../ide/step-5-add-label-references.md)|Ajoutez des variables de référence pour suivre les contrôles Label sur lesquels clique le joueur.|
+|[Étape 6 : Ajouter une minuterie](../ide/step-6-add-a-timer.md)|Ajoutez une horloge au formulaire pour assurer le suivi du temps écoulé dans le jeu.|
+|[Étape 7 : Gardez les paires visibles](../ide/step-7-keep-pairs-visible.md)|Laissez des paires d'icônes visibles, si une paire identique est sélectionnée.|
+|[Étape 8 : Ajoutez une méthode pour vérifier si le joueur a gagné](../ide/step-8-add-a-method-to-verify-whether-the-player-won.md)|Ajoutez une méthode `CheckForWinner()` pour vérifier si le joueur a gagné.|
+|[Étape 9 : Essayez d’autres fonctionnalités](../ide/step-9-try-other-features.md)|Essayez d'autres fonctionnalités (par exemple, la modification des icônes et des couleurs, l'ajout d'une grille et l'ajout de sons). Essayez d'agrandir le plateau et d'ajuster la minuterie.|
 
-D’autres ressources de formation vidéo gratuites sont également disponibles. Pour en savoir plus sur la C#programmation dans, consultez [ C# notions de base : développement pour les débutants](https://channel9.msdn.com/Series/C-Sharp-Fundamentals-Development-for-Absolute-Beginners). Pour en savoir plus sur la programmation en Visual Basic, consultez [Notions de base de Visual Basic : développement pour grands débutants](https://channel9.msdn.com/Series/Visual-Basic-Development-for-Absolute-Beginners).
+Il ya aussi d’excellentes ressources d’apprentissage vidéo gratuit à votre disposition. Pour en savoir plus sur la programmation dans le domaine de la programmation, consultez [les principes fondamentaux de CMD : Développement pour les débutants absolus.](https://channel9.msdn.com/Series/C-Sharp-Fundamentals-Development-for-Absolute-Beginners) Pour en savoir plus sur la programmation en Visual Basic, consultez [Notions de base de Visual Basic : développement pour grands débutants](https://channel9.msdn.com/Series/Visual-Basic-Development-for-Absolute-Beginners).
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-Pour commencer le didacticiel, commencez à l' **[étape 1 : créer un projet et ajouter une table à votre formulaire](../ide/step-1-create-a-project-and-add-a-table-to-your-form.md)** .
+Pour commencer le tutoriel, commencez par **[l’étape 1: Créer un projet et ajouter une table à votre formulaire](../ide/step-1-create-a-project-and-add-a-table-to-your-form.md)**.
 
 ## <a name="see-also"></a>Voir aussi
 
-* [Autres C# didacticiels](/visualstudio/get-started/csharp/)
-* [Didacticiels de Visual Basic](/visualstudio/get-started/visual-basic/)
-* [C++gratuits](/cpp/get-started/tutorial-console-cpp)
+* [Plus de tutoriels C](/visualstudio/get-started/csharp/)
+* [Tutoriels Visual Basic](/visualstudio/get-started/visual-basic/)
+* [Tutoriels CMD](/cpp/get-started/tutorial-console-cpp)

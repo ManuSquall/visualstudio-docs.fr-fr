@@ -12,10 +12,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 30c938088538bcecc71e3a7e37d5ae403dd476e1
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74778399"
 ---
 # <a name="process-view---contention-data"></a>Processus, vue - données de conflit
@@ -33,12 +33,12 @@ La vue Processus affiche les données de conflit pour les processus et les threa
 |**Conflits**|Nombre de fois où l’exécution des fonctions du processus ou du thread a été bloquée.|
 |**% de conflits**|Pourcentage de tous les conflits dans l’exécution du profilage qui étaient des conflits du processus ou du thread.|
 |**Heure de fin**|Nombre de millisecondes ou de cycles processeur entre le début du profilage et la fin du processus ou du thread.|
-|**ID**|Identificateur du processus ou du thread généré par le système.|
+|**Id**|Identificateur du processus ou du thread généré par le système.|
 |**Durée de vie**|Nombre de millisecondes ou de cycles processeur entre le début du processus ou du thread et soit la fin du processus ou du thread, soit la fin du profilage.|
 |**Type**|Type de ligne (processus ou thread).<br /><br /> Uniquement dans les rapports en ligne de commande **VSReport**. Pour plus d’informations, consultez [VSPerfReport](../profiling/vsperfreport.md).|
-|**Nom**|Nom du processus ou du thread.|
+|**Nom   **|Nom du processus ou du thread.|
 |**ID unique**|Identificateur généré par le profileur unique pour le processus ou le thread.|
 
 ## <a name="see-also"></a>Voir aussi
-- [Comment : personnaliser les colonnes de la vue rapport](../profiling/how-to-customize-report-view-columns.md)
-- [Processus, vue](../profiling/process-view.md)
+- [Guide pratique pour personnaliser les colonnes de la vue de rapport](../profiling/how-to-customize-report-view-columns.md)
+- [Vue Processus](../profiling/process-view.md)

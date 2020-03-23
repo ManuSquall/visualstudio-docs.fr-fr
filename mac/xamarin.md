@@ -6,10 +6,10 @@ ms.author: johmil
 ms.date: 06/18/2019
 ms.assetid: 339F6051-5F90-48DC-8237-EBBC8A03A32B
 ms.openlocfilehash: 31fb7fa4c2a87820285809d24b98fe8e59a6be01
-ms.sourcegitcommit: ba0fef4f5dca576104db9a5b702670a54a0fcced
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/07/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "73714480"
 ---
 # <a name="xamarin-mobile-app-development"></a>Développement d’applications mobiles Xamarin
@@ -18,11 +18,11 @@ La prise en charge poussée de [Xamarin](/xamarin) permet de développer des exp
 
 ## <a name="xamarinforms"></a>Xamarin.Forms
 
-Le rechargement à chaud XAML pour Xamarin. Forms est intégré à Visual Studio pour Mac dans la version 8,3 et les versions ultérieures. Lorsque cette fonctionnalité est activée, les modifications sont instantanément reflétées dans votre application en cours d’exécution chaque fois que vous enregistrez le fichier.
+XAML Hot Reload pour Xamarin.Forms est intégré dans Visual Studio pour Mac dans la version 8.3 et plus tard. Avec cette fonctionnalité, les modifications activées sont instantanément reflétées dans votre application en cours d’exécution chaque fois que vous enregistrez le fichier.
 
-Vous pouvez activer le rechargement à chaud XAML en activant la case à cocher **activer le rechargement à chaud Xamarin** dans **Visual Studio > préférences > Projets > le rechargement à chaud Xamarin**.
+XAML Hot Reload peut être activé en vérifiant la case **à cocher Enable Xamarin Hot Reload** à **Visual Studio > Préférences > Projets > Xamarin Hot Reload**.
 
-Pour plus d’informations sur le rechargement à chaud, consultez le [Guide de rechargement à chaud XAML pour Xamarin. Forms](/xamarin/xamarin-forms/xaml/hot-reload) dans la documentation.
+Pour plus d’informations sur Hot Reload, consultez le [guide XAML Hot Reload for Xamarin.Forms](/xamarin/xamarin-forms/xaml/hot-reload) dans la documentation.
 
 ## <a name="android"></a>Android
 
@@ -53,7 +53,7 @@ Pour plus d’informations sur l’écriture d’applications Mac avec Visual St
 > [!Note]
 > Ces produits peuvent être utilisés seulement avec un abonnement Visual Studio Enterprise.
 
-### <a name="profiler"></a>Profiler
+### <a name="profiler"></a>Profileur
 
 Xamarin Profiler a trois instruments disponibles pour le profilage. Le guide [Introduction to the Xamarin Profiler](/xamarin/tools/profiler/index?tabs=macos) explore ce que ces instruments mesurent et comment ils analysent votre application, et explique la signification des données présentées sur chaque écran.
 

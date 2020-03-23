@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: c1134fb5bb02bd8c78f347ef582f12da35074c36
-ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/25/2020
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "77579922"
 ---
 # <a name="step-1-create-a-project-and-add-a-table-to-your-form"></a>Étape 1 : créer un projet et ajouter une table à votre formulaire
@@ -25,33 +25,33 @@ La première étape pour créer un jeu de combinaisons consiste à créer le pro
 
 ::: moniker range="vs-2017"
 
-1. Dans la barre de menus, choisissez **fichier** > **nouveau** **projet**>.
+1. Sur la barre de menu, choisissez **File** > **New** > **Project**.
 
 1. Choisissez **Visual C#** ou **Visual Basic** dans la partie gauche de la boîte de dialogue **Nouveau projet**, puis, choisissez **Windows Desktop**.
 
-1. Dans la liste des modèles, choisissez le modèle **Application Windows Forms (.NET Framework)** , nommez-le *MatchingGame*, puis choisissez le bouton **OK**.
+1. Dans la liste des modèles, choisissez le modèle **Application Windows Forms (.NET Framework)**, nommez-le *MatchingGame*, puis choisissez le bouton **OK**.
 
     Un formulaire nommé *Form1.cs* ou *Form1.vb* apparaît, selon le langage de programmation que vous avez choisi.
 
    > [!NOTE]
-   > Si vous ne voyez pas le modèle **Application Windows Forms (.NET Framework)** , utilisez Visual Studio Installer pour installer la charge de travail **Développement .NET Desktop**.<br/><br/>![Charge de travail de développement .NET Desktop dans Visual Studio Installer](../ide/media/dot-net-desktop-dev-workload.png)<br/><br/> Pour plus d’informations, consultez la page [Installer Visual Studio](../install/install-visual-studio.md).
+   > Si vous ne voyez pas le modèle **Application Windows Forms (.NET Framework)**, utilisez Visual Studio Installer pour installer la charge de travail **Développement .NET Desktop**.<br/><br/>![Charge de travail de développement .NET Desktop dans Visual Studio Installer](../ide/media/dot-net-desktop-dev-workload.png)<br/><br/> Pour plus d’informations, consultez la page [Installer Visual Studio](../install/install-visual-studio.md).
 
 ::: moniker-end
 
 ::: moniker range="vs-2019"
 
-1. Dans la fenêtre de démarrage, choisissez **Créer un projet**.
+1. Sur la fenêtre de départ, choisissez **Créer un nouveau projet**.
 
    ![Afficher la fenêtre « Créer un projet »](../get-started/media/vs-2019/create-new-project-dark-theme.png)
 
-1. Dans la fenêtre **Créer un projet**, entrez ou tapez *Windows Forms* dans la zone de recherche. Ensuite, choisissez **Bureau** dans la liste **type de projet** .
+1. Dans la fenêtre **Créer un projet**, entrez ou tapez *Windows Forms* dans la zone de recherche. Ensuite, choisissez **Desktop** parmi la liste **de type Projet.**
 
-   Après avoir appliqué le filtre de **type de projet** , choisissez le modèle d' **application Windows Forms (.NET Framework)** pour C# ou Visual Basic, puis choisissez **suivant**.
+   Après avoir appliqué le filtre **de type Projet,** choisissez le modèle **Windows Forms App (.NET Framework)** pour C ou Visual Basic, puis choisissez **Next**.
 
-   ![Choisissez le modèle C# ou Visual Basic pour l’application Windows Forms (.NET Framework)](./media/create-new-project-search-winforms-filtered.png)
+   ![Choisissez le modèle de base visuel ou Cmd pour l’application formulaires Windows (.NET Framework)](./media/create-new-project-search-winforms-filtered.png)
 
    > [!NOTE]
-   > Si vous ne voyez pas le modèle **Windows Forms (.NET Framework)** , vous pouvez l’installer à partir de la fenêtre **Créer un projet**. Dans le **Vous ne trouvez pas ce que vous cherchez ?** , choisissez le lien **Installer plus d’outils et de fonctionnalités**.
+   > Si vous ne voyez pas le modèle **Windows Forms (.NET Framework)**, vous pouvez l’installer à partir de la fenêtre **Créer un projet**. Dans le **Vous ne trouvez pas ce que vous cherchez ?**, choisissez le lien **Installer plus d’outils et de fonctionnalités**.
    >
    > ![Le lien « Installer plus d’outils et de fonctionnalités » du message « Vous ne trouvez pas ce que vous cherchez ? » dans la fenêtre « Créer un projet »](../get-started/media/vs-2019/not-finding-what-looking-for.png)
    >
@@ -61,7 +61,7 @@ La première étape pour créer un jeu de combinaisons consiste à créer le pro
    >
    > Après cela, choisissez le bouton **Modifier** dans Visual Studio Installer. Vous pouvez être invité à enregistrer votre travail ; le cas échéant, faites-le. Ensuite, choisissez **Continuer** pour installer la charge de travail.
 
-1. Dans la fenêtre **Configurer votre nouveau projet**, saisissez ou entrez *MatchingGame* dans la boîte **Nom du projet**. Choisissez ensuite **Créer**.
+1. Dans la fenêtre **Configurer votre nouveau projet**, saisissez ou entrez *MatchingGame* dans la boîte **Nom du projet**. Ensuite, choisissez **Créer**.
 
 ::: moniker-end
 
@@ -90,7 +90,7 @@ La première étape pour créer un jeu de combinaisons consiste à créer le pro
 
    5. Dans la barre des tâches, choisissez deux fois **Ajouter une ligne** pour ajouter deux lignes supplémentaires, puis choisissez deux fois **Ajouter une colonne** pour ajouter deux colonnes supplémentaires.
 
-   6. Dans la barre des tâches, choisissez **Modifier les lignes et les colonnes** pour afficher la fenêtre **Styles de ligne et de colonne**. Choisissez chacune des colonnes, choisissez la case d’option **Pour cent**, puis affectez à chaque colonne une largeur égale à 25 % de la largeur totale. Sélectionnez ensuite **Lignes** dans la zone de liste déroulante en haut de la fenêtre et affectez une hauteur de 25 pour cent à chaque ligne. Lorsque vous avez terminé, choisissez le bouton **OK** .
+   6. Dans la barre des tâches, choisissez **Modifier les lignes et les colonnes** pour afficher la fenêtre **Styles de ligne et de colonne**. Choisissez chacune des colonnes, choisissez la case d’option **Pour cent**, puis affectez à chaque colonne une largeur égale à 25 % de la largeur totale. Sélectionnez ensuite **Lignes** dans la zone de liste déroulante en haut de la fenêtre et affectez une hauteur de 25 pour cent à chaque ligne. Lorsque vous avez terminé, cliquez sur le bouton **OK**.
 
       Votre TableLayoutPanel doit désormais correspondre à une grille 4x4 de seize cellules carrées de même taille. Les images des icônes apparaîtront ultérieurement dans ces lignes et colonnes.
 
@@ -106,7 +106,7 @@ La première étape pour créer un jeu de combinaisons consiste à créer le pro
 
    4. Affectez la valeur **MiddleCenter** à la propriété **TextAlign** en choisissant le bouton de liste déroulante en regard de la propriété, puis le bouton central. Cela garantit l'affichage de l'icône au milieu de la cellule.
 
-   5. Choisissez la propriété **Font**. Un bouton de sélection ( **…** ) doit s’afficher.
+   5. Choisissez la propriété **Font**. Un bouton de sélection (**…**) doit s’afficher.
 
    6. Choisissez le bouton de sélection, puis affectez la valeur **Webdings** à **Font**, la valeur **Bold** à **Font Style** et la valeur **48** à **Size**.
 
@@ -117,12 +117,12 @@ La première étape pour créer un jeu de combinaisons consiste à créer le pro
        > [!NOTE]
        > La police Webdings est une police d'icônes fournie avec le système d'exploitation Windows. Dans votre jeu de combinaisons, cette police vous permet d'afficher les icônes que le joueur doit associer par paires. Au lieu de mettre **c** dans la propriété **Text**, essayez d’entrer des lettres différentes pour voir quelles icônes sont affichées. Un point d'exclamation est une araignée, un N majuscule est un œil et une virgule un piment rouge.
 
-5. Choisissez le contrôle d’étiquette et copiez-le dans la cellule suivante du TableLayoutPanel. (Appuyez sur les touches **Ctrl**+**C** ou, dans la barre de menus, choisissez **modifier** > **copier**.) Puis collez-le. (Appuyez sur les touches **Ctrl**+**V** , ou dans la barre de menus, choisissez **Edition** > **coller**.) Une copie de la première étiquette apparaît dans la deuxième cellule du TableLayoutPanel. Collez-le à nouveau, et une autre étiquette s'affiche dans la troisième cellule. Continuez à coller des contrôles Label jusqu'à ce que toutes les cellules soient remplies.
+5. Choisissez le contrôle d’étiquette et copiez-le dans la cellule suivante du TableLayoutPanel. (Choisissez les touches **Ctrl**+**C,** ou sur la barre de menu, choisissez **Edit** > **Copy**.) Alors collez-le. (Choisissez les touches **Ctrl**+**V,** ou sur la barre de menu, choisissez **Edit** > **Paste**.) Une copie du premier label apparaît dans la deuxième cellule de la TableLayoutPanel. Collez-le à nouveau, et une autre étiquette s'affiche dans la troisième cellule. Continuez à coller des contrôles d’étiquette jusqu'à ce que toutes les cellules soient remplies.
 
    > [!NOTE]
-   > Si vous effectuez un trop grand nombre de collages, l'IDE ajoute une nouvelle ligne au TableLayoutPanel pour qu'il puisse insérer votre nouveau contrôle Label. Vous pouvez l'annuler. Pour supprimer la nouvelle cellule, appuyez sur **Ctrl**+**Z** ou, dans la barre de menus, choisissez **Modification** > **Annuler**.
+   > Si vous effectuez un trop grand nombre de collages, l'IDE ajoute une nouvelle ligne au TableLayoutPanel pour fournir la place nécessaire à l'ajout de votre nouveau contrôle d’étiquette. Vous pouvez l'annuler. Pour supprimer la nouvelle cellule, choisissez les touches **Ctrl**+**Z,** ou sur la barre du menu, choisissez **Edit** > **Undo**.
 
-    Votre formulaire est maintenant disposé. Elle doit ressembler à l’image suivante.
+    Maintenant, votre formulaire est exposé. Il devrait ressembler à l’image suivante.
 
     ![Formulaire de jeu de combinaisons initial](../ide/media/express_tut4step1.png)<br/>*Formulaire de jeu de combinaisons initial*
 

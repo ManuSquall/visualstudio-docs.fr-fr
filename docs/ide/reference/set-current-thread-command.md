@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 0d782a507d57e459aa5735cf34717f13e41d4cde
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "72748612"
 ---
 # <a name="set-current-thread-command"></a>Définir le thread en cours, commande
@@ -32,9 +32,9 @@ Debug.SetCurrentThread index
 ## <a name="arguments"></a>Arguments
 `index`
 
-Requis. Sélectionne un thread par son index.
+Obligatoire. Sélectionne un thread par son index.
 
-## <a name="example"></a>Exemple
+## <a name="example"></a> Exemple
 
 ```
 >Debug.SetCurrentThread 1
@@ -42,7 +42,7 @@ Requis. Sélectionne un thread par son index.
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Commandes Visual Studio](../../ide/reference/visual-studio-commands.md)
+- [Commandes de studio visuel](../../ide/reference/visual-studio-commands.md)
 - [Commande, fenêtre](../../ide/reference/command-window.md)
-- [Rechercher/Commande, zone](../../ide/find-command-box.md)
-- [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)
+- [Boîte de recherche/commande](../../ide/find-command-box.md)
+- [Alias de commande de studio visuel](../../ide/reference/visual-studio-command-aliases.md)

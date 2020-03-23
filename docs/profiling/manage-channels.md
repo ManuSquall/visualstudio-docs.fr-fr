@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 0b1480bab2f52383a8ca3a5b0ac22fd56acb5e01
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63435627"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "64779241"
 ---
 # <a name="manage-channels"></a>Gérer les canaux
 Dans la **vue Threads** du visualiseur concurrentiel, vous pouvez organiser les canaux pour votre processus afin de pouvoir examiner des modèles particuliers. Vous pouvez trier les canaux, les déplacer vers le haut et vers le bas, ainsi que les masquer ou les afficher.
@@ -27,10 +27,10 @@ Dans la **vue Threads** du visualiseur concurrentiel, vous pouvez organiser les 
 
 |Critères|Définition|
 |--------------|----------------|
-|Heure de début|Trie les threads sur leur heure de début. Il s’agit de l’ordre de tri par défaut.|
+|Start Time|Trie les threads sur leur heure de début. Il s’agit de l’ordre de tri par défaut.|
 |Heure de fin|Trie les threads sur leur heure de fin.|
 |Exécution|Trie les threads sur le pourcentage de temps consacré à l’exécution.|
-|Synchronisation|Trie les threads sur le pourcentage de temps consacré à la synchronisation.|
+|Synchronization|Trie les threads sur le pourcentage de temps consacré à la synchronisation.|
 |E/S|Trie les threads sur le pourcentage de temps consacré aux E/S (lecture et écriture de données).|
 |Veille|Trie les threads sur le pourcentage de temps passé en veille.|
 |Pagination|Trie les threads sur le pourcentage de temps consacré à la pagination.|
@@ -59,6 +59,6 @@ Dans la **vue Threads** du visualiseur concurrentiel, vous pouvez organiser les 
  Si une trace contient des événements de marqueur, vous pouvez utiliser cette commande pour regrouper des canaux de marqueurs sous le thread qui a généré les événements de marqueur.  Les canaux de disques sont déplacés en haut de la liste de canaux, et les canaux GPU sont déplacés en bas.
 
 ## <a name="see-also"></a>Voir aussi
-- [Contrôle Zoom (vue Threads)](../profiling/zoom-control-threads-view.md)
+- [Zoom, contrôle (vue Threads)](../profiling/zoom-control-threads-view.md)
 - [Mode Mesure activé/désactivé](../profiling/measure-mode-on-off.md)
-- [vue Threads](../profiling/threads-view-parallel-performance.md)
+- [Vue Threads](../profiling/threads-view-parallel-performance.md)

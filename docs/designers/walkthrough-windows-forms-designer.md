@@ -8,13 +8,13 @@ author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.openlocfilehash: 07526637f2d8083f37f55aa3da36bb01479db087
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75589836"
 ---
-# <a name="walkthrough-get-started-with-windows-forms-designer"></a>Procédure pas à pas : prise en main de Concepteur Windows Forms
+# <a name="walkthrough-get-started-with-windows-forms-designer"></a>Procédure pas à pas: Démarrer avec Windows Forms Designer
 
 Le Concepteur Windows Forms fournit de nombreux outils pour la création d’applications Windows Forms. Cet article explique comment créer une application à l’aide des différents outils fournis par le concepteur, y compris les tâches suivantes :
 
@@ -69,7 +69,7 @@ Le contrôle DemoCalculator contient plusieurs contrôles Windows Forms. Dans ce
     Le contrôle `SplitContainer` s’ancre sur les limites du contrôle DemoCalculator.
 
     > [!NOTE]
-    > Plusieurs contrôles offrent des balises actives pour faciliter la conception. Pour plus d’informations, consultez [procédure pas à pas : effectuer des tâches courantes à l’aide de balises actives sur des contrôles Windows Forms](/dotnet/framework/winforms/controls/performing-common-tasks-using-smart-tags-on-wf-controls).
+    > Plusieurs contrôles offrent des balises actives pour faciliter la conception. Pour plus d’informations, voir [Procédure pas à pas : effectuez des tâches courantes à l’aide de balises intelligentes sur les commandes de formulaires Windows](/dotnet/framework/winforms/controls/performing-common-tasks-using-smart-tags-on-wf-controls).
 
 5. Sélectionnez la bordure verticale entre les panneaux et faites-la glisser vers la droite, afin que la plus grande partie de l’espace soit prise par le panneau gauche.
 
@@ -91,7 +91,7 @@ Le contrôle DemoCalculator contient plusieurs contrôles Windows Forms. Dans ce
 
 12. À partir de **Boîte à outils** pour le nœud **Conteneurs**, faites glisser un contrôle `TableLayoutPanel` dans le panneau gauche du contrôle `SplitContainer`.
 
-    Le contrôle `TableLayoutPanel` apparaît sur l’aire du concepteur avec son panneau des balises actives ouvert. Le contrôle `TableLayoutPanel` réorganise ses contrôles enfants dans une grille. Le contrôle `TableLayoutPanel` contiendra l’affichage et les boutons du contrôle DemoCalculator. Pour plus d’informations, consultez [procédure pas à pas : Organisation des contrôles à l’aide d’un TableLayoutPanel](/dotnet/framework/winforms/controls/walkthrough-arranging-controls-on-windows-forms-using-a-tablelayoutpanel).
+    Le contrôle `TableLayoutPanel` apparaît sur l’aire du concepteur avec son panneau des balises actives ouvert. Le contrôle `TableLayoutPanel` réorganise ses contrôles enfants dans une grille. Le contrôle `TableLayoutPanel` contiendra l’affichage et les boutons du contrôle DemoCalculator. Pour plus d’informations, voir [Procédure pas à pas : Organisez des commandes à l’aide d’un TableLayoutPanel](/dotnet/framework/winforms/controls/walkthrough-arranging-controls-on-windows-forms-using-a-tablelayoutpanel).
 
 13. Sélectionnez **Modifier les lignes et les colonnes** dans le panneau des balises actives.
 
@@ -135,9 +135,9 @@ Maintenant que la disposition du contrôle est configurée, vous pouvez remplir 
 
 8. Dans **Boîte à outils**, double-cliquez sur l’icône `Button` quatre fois pour remplir la deuxième ligne du contrôle `TableLayoutPanel`.
 
-9. Sélectionnez les cinq contrôles `Button` en les sélectionnant tout en maintenant la touche **Maj** enfoncée. Appuyez sur **Ctrl**+**C** pour copier les contrôles `Button` dans le presse-papiers.
+9. Sélectionnez les cinq contrôles `Button` en les sélectionnant tout en maintenant la touche **Maj** enfoncée. Appuyez sur **Ctrl**+**C** pour copier les `Button` commandes du presse-papiers.
 
-10. Appuyez sur **Ctrl**+**V** trois fois pour coller les copies des contrôles `Button` dans les lignes restantes du contrôle `TableLayoutPanel`.
+10. Appuyez trois fois sur **Ctrl**+ `Button` **V** pour coller des `TableLayoutPanel` copies des commandes dans les rangées restantes du contrôle.
 
 11. Sélectionnez les 20 contrôles `Button` en les sélectionnant tout en maintenant la touche **Maj** enfoncée.
 
@@ -157,7 +157,7 @@ Maintenant que la disposition du contrôle est configurée, vous pouvez remplir 
 
 Lorsque votre contrôle ou formulaire est rempli avec plusieurs contrôles, il peut s’avérer plus facile de naviguer dans votre disposition avec la fenêtre Structure du document.
 
-1. Dans la barre de menus, choisissez **Affichage** > **Autres fenêtres** > **Structure du document**.
+1. Sur la barre de menu, choisissez **Voir** > **d’autres contours** > **de documents**Windows .
 
    La fenêtre Structure du document affiche une arborescence du contrôle DemoCalculator et de ses contrôles constitutifs. Les contrôles de conteneur comme `SplitContainer` affichent leurs contrôles enfants comme sous-nœuds dans l’arborescence. Vous pouvez également renommer les contrôles en place à l’aide de la fenêtre Structure du document.
 
@@ -209,7 +209,7 @@ Lorsque votre contrôle ou formulaire est rempli avec plusieurs contrôles, il p
 
    - Remplacez la propriété texte du contrôle nineButton par **9**
 
-   - Remplacez la propriété texte du contrôle divisionButton par **/** (barre oblique avant)
+   - Modifier la propriété de texte **/** de contrôle de divisionButton à (slash vers l’avant)
 
    - Remplacez la propriété texte du contrôle clearButton par **Clear**
 
@@ -219,7 +219,7 @@ Lorsque votre contrôle ou formulaire est rempli avec plusieurs contrôles, il p
 
    - Remplacez la propriété texte du contrôle sixButton par **6**
 
-   - Remplacez la propriété texte du contrôle multiplicationButton par **\*** (astérisque)
+   - Modifier la propriété de texte de **\*** contrôle multiplicationButton à (astérisque)
 
    - Remplacez la propriété texte du contrôle oneButton par **1**
 
@@ -227,17 +227,17 @@ Lorsque votre contrôle ou formulaire est rempli avec plusieurs contrôles, il p
 
    - Remplacez la propriété texte du contrôle threeButton par **3**
 
-   - Remplacez la propriété texte du contrôle subtractionButton par **-** (trait d’union)
+   - Modifier la propriété de texte de **-** contrôle de soustractionButton à (trait d’union)
 
-   - Remplacez la propriété texte du contrôle equalsButton par **=** (signe égal)
+   - Modifier la propriété de texte **=** de contrôle d’égal à (signe égal)
 
    - Remplacez la propriété texte du contrôle zeroButton par **0**
 
-   - Remplacez la propriété texte du contrôle changeSignButton par **+/-**
+   - Modifier la propriété de texte de contrôle de changeSignButton pour**+/-**
 
    - Remplacez la propriété texte du contrôle decimalButton par **.** (point)
 
-   - Remplacez la propriété texte du contrôle additionButton par **+** (signe plus)
+   - Modifier la propriété de texte **+** de contrôle additionButton à (plus signe)
 
 5. Dans l’aire du concepteur, sélectionnez tous les contrôles `Button` en les sélectionnant tout en maintenant la touche **Maj** enfoncée.
 
@@ -257,7 +257,7 @@ Les boutons du contrôle DemoCalculator ont des gestionnaires d’événements q
 
 ## <a name="test-the-control"></a>Tester le contrôle
 
-Étant donné que le contrôle DemoCalculator hérite de la classe <xref:System.Windows.Forms.UserControl>, vous pouvez tester son comportement avec le **Conteneur de test UserControl**. Pour plus d’informations, consultez [Comment : tester le comportement d’un UserControl au moment de l’exécution](/dotnet/framework/winforms/controls/how-to-test-the-run-time-behavior-of-a-usercontrol).
+Étant donné que le contrôle DemoCalculator hérite de la classe <xref:System.Windows.Forms.UserControl>, vous pouvez tester son comportement avec le **Conteneur de test UserControl**. Pour plus d’informations, voir [Comment : Tester le comportement en temps d’exécution d’un UserControl](/dotnet/framework/winforms/controls/how-to-test-the-run-time-behavior-of-a-usercontrol).
 
 1. Appuyez sur **F5** pour générer et exécuter le contrôle DemoCalculator dans le **Conteneur de test UserControl**.
 
@@ -291,7 +291,7 @@ Pour utiliser le contrôle DemoCalculator dans une application, vous devez le pl
 
 2. Faites glisser le contrôle **DemoCalculator** de **Boîte à outils** vers votre formulaire. Déplacez le contrôle dans le coin supérieur gauche du formulaire. Lorsque le contrôle est proche des bordures du formulaire, des *lignes d’alignement* s’affichent. Les lignes d’alignement indiquent la distance entre la propriété `Padding` du formulaire et la propriété `Margin` du contrôle. Positionnez le contrôle à l’emplacement indiqué par les lignes d’alignement.
 
-   Pour plus d’informations, consultez [procédure pas à pas : Organisation des contrôles à l’aide des lignes d’alignement](/dotnet/framework/winforms/controls/walkthrough-arranging-controls-on-windows-forms-using-snaplines).
+   Pour plus d’informations, voir [Procédure pas à pas : Organisez des commandes à l’aide de snaplines](/dotnet/framework/winforms/controls/walkthrough-arranging-controls-on-windows-forms-using-snaplines).
 
 3. Faites glisser un contrôle `Button` à partir de **Boîte à outils** et déposez-le sur le formulaire.
 
@@ -307,12 +307,12 @@ Pour utiliser le contrôle DemoCalculator dans une application, vous devez le pl
 
 8. Redimensionnez le formulaire en faisant glisser les diverses poignées de redimensionnement à différentes positions. Observez comment le contrôle DemoCalculator est redimensionné pour s’adapter.
 
-## <a name="next-steps"></a>Étapes suivantes :
+## <a name="next-steps"></a>Étapes suivantes
 
 Cet article a montré comment construire l’interface utilisateur pour une calculatrice simple. Pour continuer, vous pouvez étendre ses fonctionnalités en implémentant la logique de calculatrice, puis [publier l’application à l’aide de ClickOnce](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md). Ou passez à un autre tutoriel dans lequel vous [créez une visionneuse d’images à l’aide de Windows Forms](../ide/tutorial-1-create-a-picture-viewer.md).
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Contrôles Windows Forms](/dotnet/framework/winforms/controls/)
+- [Contrôles des formulaires Windows](/dotnet/framework/winforms/controls/)
 - [Accessibilité des contrôles Windows Forms](/dotnet/framework/winforms/controls/providing-accessibility-information-for-controls-on-a-windows-form)
 - [Publier à l’aide de ClickOnce](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)

@@ -9,10 +9,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 350640a4db6a81d19801aedb03d0d490895f97ef
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75589212"
 ---
 # <a name="how-to-configure-network-emulation-using-test-settings-in-visual-studio"></a>Guide pratique pour configurer l’émulation réseau à l’aide de paramètres de test dans Visual Studio
@@ -85,5 +85,5 @@ Avant d’effectuer les étapes de cette procédure, vous devez ouvrir les param
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Collecter des informations de diagnostic à l’aide des paramètres de test](../test/collect-diagnostic-information-using-test-settings.md)
+- [Collecter des informations de diagnostic avec des paramètres de test](../test/collect-diagnostic-information-using-test-settings.md)
 - [Exécuter des tests manuels (Azure Test Plans)](/azure/devops/test/run-manual-tests?view=vsts)

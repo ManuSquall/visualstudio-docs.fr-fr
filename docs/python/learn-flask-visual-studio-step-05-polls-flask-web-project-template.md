@@ -12,15 +12,15 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: c540dfef9d2d46bb621432b3e37438e0b6b07298
-ms.sourcegitcommit: 3cda0d58c5cf1985122b8977b33a171c7359f324
-ms.translationtype: HT
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/29/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "70154896"
 ---
-# <a name="step-5-use-the-polls-flask-web-project-template"></a>Étape 5 : Utiliser le modèle de projet web Flask Sondage
+# <a name="step-5-use-the-polls-flask-web-project-template"></a>Étape 5 : Utiliser le modèle de projet web Flask de sondage
 
-**Étape précédente : [Utiliser le modèle de projet web Flask complet](learn-flask-visual-studio-step-04-full-flask-project-template.md)**
+**Étape précédente : [Utiliser le modèle Projet web Flask complet](learn-flask-visual-studio-step-04-full-flask-project-template.md)**
 
 Une fois que vous avez compris le modèle « Projet web Flask » de Visual Studio, vous pouvez passer au troisième modèle Flask, « Projet web Flask de sondage », qui est créé à partir de la même base de code.
 
@@ -34,17 +34,17 @@ Dans cette section, vous apprenez comment :
 
 Visual Studio fournit aussi un projet à partir du modèle « Projet web Flask/Jade de sondage » qui produit une application identique, mais utilise l’extension Jade pour le moteur de création de modèles Jinja. Pour plus d’informations, consultez [Étape 4 - Le modèle de projet web Flask/Jade](learn-flask-visual-studio-step-04-full-flask-project-template.md#the-flaskjade-web-project-template).
 
-## <a name="step-5-1-create-the-project"></a>Étape 5-1 : Créer le projet
+## <a name="step-5-1-create-the-project"></a>Étape 5-1 : Créer le projet
 
-1. Dans Visual Studio, accédez à **Explorateur de solutions**, cliquez avec le bouton droit sur la solution **LearningFlask** créée précédemment dans ce tutoriel, puis sélectionnez **Ajouter** > **Nouveau projet**. (Ou bien, si vous souhaitez utiliser une nouvelle solution, sélectionnez **Fichier** > **Nouveau** > **Projet** à la place.)
+1. Dans Visual Studio, allez à **Solution Explorer**, cliquez à droite sur la solution **LearningFlask** créée plus tôt dans ce tutoriel, et **sélectionnez Ajouter** > **nouveau projet**. (Alternativement, si vous voulez utiliser une nouvelle solution, sélectionnez **Fichier** > **Nouveau** > **Projet** à la place.)
 
-1. Dans la boîte de dialogue Nouveau projet, recherchez et sélectionnez le modèle **Projet web Flask de sondage**, appelez le projet « FlaskPolls » et sélectionnez **OK**.
+1. Dans le nouveau dialogue du projet, recherchez et sélectionnez le modèle **du projet Web Polls Flask,** appelez le projet «FlaskPolls», et sélectionnez **OK**.
 
 1. Comme les autres modèles de projet dans Visual Studio, le modèle « Projet web Flask de sondage » inclut un fichier *requirements.txt*. Visual Studio vous demande où installer ces dépendances. Choisissez l’option, **Installer dans un environnement virtuel** et dans la boîte de dialogue **Ajouter un environnement virtuel**, sélectionnez **Créer** pour accepter les valeurs par défaut. (Ce modèle nécessite Flask, ainsi que les packages azure-storage et pymongo ; le modèle « Projet web Flask/Jade de sondage » nécessite aussi pyjade.)
 
-1. Définissez le projet **FlaskPolls** comme projet par défaut pour la solution Visual Studio en cliquant avec le bouton droit sur ce projet dans **l’Explorateur de solutions** et en sélectionnant **Définir comme projet de démarrage**. Le projet de démarrage affiché en gras est ce qui est exécuté lorsque vous démarrez le débogueur.
+1. Définissez le projet **FlaskPolls** comme étant la valeur par défaut de la solution Visual Studio en cliquant à droite sur ce projet dans **Solution Explorer** et en sélectionnant Set comme **startup Project**. Le projet de start-up, affiché en gras est ce qui est exécuté lorsque vous démarrez le débogueur.
 
-1. Sélectionnez **Déboguer** > **Démarrer le débogage** (**F5**) ou utilisez le bouton **Serveur web** dans la barre d’outils pour exécuter le serveur :
+1. Sélectionnez **Debug** > **Start Debugging** (**F5**) ou utilisez le bouton **Serveur Web** sur la barre d’outils pour faire fonctionner le serveur :
 
     ![Exécuter le bouton de la barre d’outils du serveur Web dans Visual Studio](media/django/run-web-server-toolbar-button.png)
 
@@ -74,9 +74,9 @@ Visual Studio fournit aussi un projet à partir du modèle « Projet web Flask/J
 
 Comme mentionné précédemment. la majorité de ce qui se trouve dans un projet créé à partir du modèle « Projet web Flask de sondage » (et du modèle « Projet web Flask/Jade de sondage ») devrait vous être familière si vous avez exploré les autres modèles de projet dans Visual Studio. Les étapes supplémentaires dans cet article résument les modifications plus importantes et les ajouts, à savoir les modèles de données et les vues supplémentaires.
 
-## <a name="step-5-2-understand-the-data-models"></a>Étape 5-2 : Comprendre les modèles de données
+## <a name="step-5-2-understand-the-data-models"></a>Étape 5-2 : Comprendre les modèles de données
 
-Les modèles de données pour l’application sont des classes Python nommées Poll et Choice, qui sont définies dans *models/\_\_init\_\_.py*. Une instance de Poll représente une question, pour laquelle une collection d’instances de Choice représente les réponses disponibles. Une instance de Poll gère également le nombre total de voix (pour tous les choix) et une méthode pour calculer des statistiques qui sont utilisées pour générer des vues :
+Les modèles de données pour l’application sont des classes Python nommés Poll and Choice, qui sont définis dans *les modèles /\_\_init\_\_.py*. Une instance de Poll représente une question, pour laquelle une collection d’instances de Choice représente les réponses disponibles. Une instance de Poll gère également le nombre total de voix (pour tous les choix) et une méthode pour calculer des statistiques qui sont utilisées pour générer des vues :
 
 ```python
 class Poll(object):
@@ -110,7 +110,7 @@ class Choice(object):
 
 Ces modèles de données sont des abstractions génériques qui permettent aux vues de l’application d’utiliser différents types de magasins de données sous-jacents, qui sont décrits dans l’étape suivante.
 
-## <a name="step-5-3-understand-the-backing-data-stores"></a>Étape 5-3 : Comprendre les magasins de données sous-jacents
+## <a name="step-5-3-understand-the-backing-data-stores"></a>Étape 5-3 : Comprendre les magasins de données sous-jacents
 
 L’application créée par le modèle « Projet web Flask de sondage » peut s’exécuter sur une banque de données en mémoire, sur Stockage Table Azure ou sur une base de données MongoDB.
 
@@ -187,7 +187,7 @@ Les étapes suivantes ajoutent la prise en charge d’un magasin de données aut
 
 ### <a name="seed-the-data-store-from-samplesjson"></a>Amorcer le magasin de données à partir de samples.json
 
-Au départ, aucun des magasins de données choisis ne contient de sondages : la page d’accueil de l’application affiche donc le message **No polls available** (Pas de sondages disponibles) ainsi que le bouton **Create Sample Polls** (Créer des exemples de sondages). Cependant, une fois que vous avez sélectionné le bouton, la vue change et montre les sondages disponibles. Ce changement se produit via des balises conditionnelles dans *templates\index.html* (certaines lignes vides sont omises par souci de concision) :
+Initialement, tout magasin de données choisi ne contient pas de sondages, de sorte que la page d’accueil de l’application affiche le message **Aucun sondage disponible** avec le bouton Créer des **sondages d’échantillon.** Cependant, une fois que vous avez sélectionné le bouton, la vue change et montre les sondages disponibles. Ce changement se produit via des balises conditionnelles dans *templates\index.html* (certaines lignes vides sont omises par souci de concision) :
 
 ```html
 {% extends "layout.html" %}
@@ -228,15 +228,15 @@ def seed():
     return redirect('/')
 ```
 
-L’appel à `repository.add_sample_polls()` aboutit à une des implémentations de `Repository` spécifique au magasin de données choisi. Chaque implémentation appelle la méthode `_load_samples_json` qui se trouve dans *models\_\_init\_\_.py* pour charger le fichier *models\samples.json* en mémoire, puis boucle sur ces données pour créer les objets `Poll` et `Choice` nécessaires dans le magasin de données.
+L’appel à `repository.add_sample_polls()` aboutit à une des implémentations de `Repository` spécifique au magasin de données choisi. Chaque implémentation `_load_samples_json` appelle la méthode trouvée dans les modèles `Poll` `Choice` *\_\_init\_\_.py* pour charger le fichier *models.samples.json* dans la mémoire, puis itère à travers ces données pour créer les objets nécessaires et dans le magasin de données.
 
 Une fois ce processus terminé, l’instruction `redirect('/')` de la méthode `seed` revient à la page d’accueil. Comme `repository.get_polls` retourne maintenant un objet de données, les balises conditionnelles dans *templates\index.html* affichent maintenant une table contenant les sondages.
 
-### <a name="question-how-does-one-add-new-polls-to-the-app"></a>Question : J'utilise un certificat X.509 avec mon service et j'obtiens une System.Security.Cryptography.CryptographicException. Comment ajouter de nouveaux sondages à l’application ?
+### <a name="question-how-does-one-add-new-polls-to-the-app"></a>Question : Comment ajouter de nouveaux sondages à l’application ?
 
-Réponse : L’application telle qu’elle est fournie via le modèle de projet n’inclut pas de fonctionnalité pour ajouter ou modifier des sondages. Vous pouvez modifier *models\samples.json* pour créer des données d’initialisation, mais cela signifierait une réinitialisation du magasin de données. Pour implémenter des fonctionnalités de modification, vous devez étendre l’interface de la classe `Repository` avec des méthodes pour créer les instances nécessaires de `Choice` et de `Poll`, puis implémenter une interface utilisateur dans des pages supplémentaires qui utilisent ces méthodes.
+Réponse : L’application telle qu’elle est fournie via le modèle de projet n’inclut pas de fonctionnalité pour ajouter ou modifier des sondages. Vous pouvez modifier *models\samples.json* pour créer des données d’initialisation, mais cela signifierait une réinitialisation du magasin de données. Pour implémenter des fonctionnalités de modification, vous devez étendre l’interface de la classe `Repository` avec des méthodes pour créer les instances nécessaires de `Choice` et de `Poll`, puis implémenter une interface utilisateur dans des pages supplémentaires qui utilisent ces méthodes.
 
-## <a name="step-5-4-understand-the-poll-detail-and-results-views"></a>Étape 5-4 : Comprendre les vues des détails et des résultats des sondages
+## <a name="step-5-4-understand-the-poll-detail-and-results-views"></a>Étape 5-5-4 : Comprendre les vues des détails et des résultats des sondages
 
 La plupart des vues générées par les modèles « Projet web Flask de sondage » et « Projet web Flask/Jade de sondage », comme les vues des pages About et Contact, sont très similaires aux vues créées par le modèle « Projet web Flask » (ou « Projet web Flask/Jade ») avec lequel vous avez travaillé précédemment dans ce tutoriel. Dans la section précédente, vous avez également découvert comment la page d’accueil est implémentée pour afficher le bouton d’initialisation ou la liste des sondages.
 
@@ -346,7 +346,7 @@ Le modèle *results.html* boucle quant à lui simplement dans les choix du sonda
 ## <a name="next-steps"></a>Étapes suivantes
 
 > [!Note]
-> Si vous validez votre solution Visual Studio lors du contrôle de code source pendant ce tutoriel, c’est le bon moment pour effectuer une autre validation. Votre solution doit correspondre au code source du tutoriel sur GitHub : [Microsoft/python-sample-vs-learning-flask](https://github.com/Microsoft/python-sample-vs-learning-flask).
+> Si vous validez votre solution Visual Studio lors du contrôle de code source pendant ce tutoriel, c’est le bon moment pour effectuer une autre validation. Votre solution doit correspondre au code source du tutoriel sur GitHub : [Microsoft/python-sample-vs-learning-flask](https://github.com/Microsoft/python-sample-vs-learning-flask).
 
 Vous avez maintenant parcouru l’intégralité des modèles « Projet web Flask vide », « Projet web Flask[/Jade] » et « Projet web Flask[/Jade] de sondage » dans Visual Studio. Vous avez découvert tous les concepts de base de Flask, comme l’utilisation de vues, de modèles et du routage, et vous avez vu comment utiliser des magasins de données sous-jacents. Vous devez maintenant être en mesure de commencer à créer vous-même une application web avec les vues et les modèles dont vous avez besoin.
 

@@ -10,23 +10,23 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: ed4fef32c04d68f37df71101447a4e24f39eecba
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74772075"
 ---
 # <a name="profiling-tools-apis"></a>API des outils de profilage
 
 Vous pouvez insérer des méthodes managées ou natives des API des outils de profilage [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] pour contrôler la collecte de données lors d’une exécution du profilage. Cette section décrit les méthodes des API et explique comment les utiliser.
 
-## <a name="in-this-section"></a>Dans cette section
+## <a name="in-this-section"></a>Contenu de cette section
 
 [Informations de référence sur l’API du profileur Visual Studio (native)](../profiling/visual-studio-profiler-api-reference-native.md)
 
 Décrit les méthodes des outils de profilage C++.
 
-[Profiler](/previous-versions/ms242704(v=vs.140))
+[Profileur](/previous-versions/ms242704(v=vs.140))
 
 Décrit les méthodes des outils de profilage .NET.
 
@@ -34,7 +34,7 @@ Décrit les méthodes des outils de profilage .NET.
 
 Découvrez comment utiliser les méthodes des outils de profilage .NET dans cet exemple complet.
 
-## <a name="related-sections"></a>Rubriques connexes
+## <a name="related-sections"></a>Sections connexes
 
 [Contrôler la collecte des données](../profiling/controlling-data-collection.md)
 

@@ -13,14 +13,14 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 967e99102f3b88e82a5466e7ce8d2cac2412d286
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75585676"
 ---
 # <a name="advanced-settings-for-services-dialog-box"></a>Paramètres avancés pour les services, boîte de dialogue
-Les services d’application cliente fournissent un accès simplifié aux services de connexion, de rôles et de profil [!INCLUDE[ajax_current_short](../../ide/reference/includes/ajax_current_short_md.md)] à partir des applications Windows Forms et WPF (Windows Presentation Foundation). Vous pouvez utiliser la page **Services** du **Concepteur de projet** pour configurer les services d’application cliente. Pour plus d’informations sur la page **Services**, consultez [Services, page du Concepteur de projet](../../ide/reference/services-page-project-designer.md).
+Les services d’application cliente fournissent un accès simplifié aux services de connexion, de rôles et de profil [!INCLUDE[ajax_current_short](../../ide/reference/includes/ajax_current_short_md.md)] depuis les applications Windows Forms et WPF (Windows Presentation Foundation). Vous pouvez utiliser la page **Services** du **Concepteur de projet** pour configurer les services d’application cliente. Pour plus d’informations sur la page **Services**, consultez [Services, page du Concepteur de projet](../../ide/reference/services-page-project-designer.md).
 
 Utilisez la boîte de dialogue **Paramètres avancés pour les services** de la page **Services** dans le **Concepteur de projet** pour configurer les paramètres avancés des services d’application cliente. Ces paramètres vous permettent de remplacer certains comportements de service d’application par défaut pour activer des scénarios moins courants. Pour plus d’informations, consultez [Services d’application cliente](/dotnet/framework/common-client-technologies/client-application-services).
 
@@ -28,9 +28,9 @@ Pour accéder à la boîte de dialogue **Paramètres avancés pour les services*
 
 ## <a name="task-list"></a>Liste des tâches
 
-- [Comment : configurer les services d’application cliente](/dotnet/framework/common-client-technologies/how-to-configure-client-application-services)
+- [Comment : configurer les services d'application cliente](/dotnet/framework/common-client-technologies/how-to-configure-client-application-services)
 
-## <a name="uielement-list"></a>Liste des éléments d’interface
+## <a name="uielement-list"></a>Liste des éléments de l'interface utilisateur
 
  **Enregistrer le hachage de mot de passe localement pour activer la connexion hors connexion** Indique si le mot de passe de l’utilisateur est mis en cache localement sous une forme chiffrée pour permettre à l’utilisateur de se connecter quand l’application est en mode hors connexion. Cette option est activée par défaut.
 
@@ -45,5 +45,5 @@ Le fournisseur de rôles accède aux valeurs de rôle mises en cache ou au servi
 ## <a name="see-also"></a>Voir aussi
 
 - [Services d’application cliente](/dotnet/framework/common-client-technologies/client-application-services)
-- [Page Services, Concepteur de projet](../../ide/reference/services-page-project-designer.md)
-- [Comment : configurer les services d’application cliente](/dotnet/framework/common-client-technologies/how-to-configure-client-application-services)
+- [Services, page du Concepteur de projet](../../ide/reference/services-page-project-designer.md)
+- [Comment : configurer les services d'application cliente](/dotnet/framework/common-client-technologies/how-to-configure-client-application-services)

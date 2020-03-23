@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: a46ad971fa9b68de25b55c6c4c882f29c71d6b68
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75592254"
 ---
 # <a name="how-to-add-comments-to-class-diagrams"></a>Guide pratique pour ajouter des commentaires aux diagrammes de classes
@@ -38,4 +38,4 @@ Vous pouvez redimensionner une zone de commentaire. Toutefois, vous ne pouvez pa
 ## <a name="see-also"></a>Voir aussi
 
 - [Utiliser des diagrammes de classes](designing-and-viewing-classes-and-types.md)
-- [Guide pratique pour personnaliser des diagrammes de classes](how-to-customize-class-diagrams.md)
+- [Comment : Personnaliser les diagrammes de classe](how-to-customize-class-diagrams.md)

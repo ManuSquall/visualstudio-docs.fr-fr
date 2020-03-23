@@ -8,10 +8,10 @@ author: evanwindom
 ms.author: lank
 manager: lank
 ms.openlocfilehash: b78126d44922fefebbb86bad24788ba6a28e8e04
-ms.sourcegitcommit: 8a699df154464387f327691dce507d7c3d0e2aab
-ms.translationtype: HT
+ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2019
+ms.lasthandoff: 03/21/2020
 ms.locfileid: "70060405"
 ---
 # <a name="what39s-new-in-visual-studio-subscriptions"></a>Nouveautés des abonnements Visual Studio
@@ -39,7 +39,7 @@ Si votre organisation possède déjà Visual Studio avec abonnements GitHub Ente
 
 ## <a name="2019-q1-january-march"></a>Q1 2019 (janvier à mars)
 
-### <a name="maximum-usage-added-to-subscriptions-administration-portalhttpsmanagevisualstudiocom"></a>Utilisation maximale ajoutée au [Portail d’administration des abonnements](https://manage.visualstudio.com)
+### <a name="maximum-usage-added-to-subscriptions-administration-portal"></a>Utilisation maximale ajoutée au [Portail d’administration des abonnements](https://manage.visualstudio.com)
 Une nouvelle fonctionnalité du portail d’administration des abonnements Visual Studio vous permet de suivre le nombre d’abonnements que vous avez achetés et attribués. Elle permet également d’identifier le nombre maximal d’abonnements de chaque niveau que vous avez attribués au cours de l’année précédente et pendant la durée de votre ou vos contrats. Cela peut vous aider à comprendre votre utilisation actuelle de l’abonnement et planifier de futurs achats. 
 
   > [!div class="mx-imgBorder"]

@@ -19,10 +19,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 3a5a388c8f838f182d2f1f3d3f56f84b8fbf10e6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "62936678"
 ---
 # <a name="cvwriteflag-function"></a>CvWriteFlag, fonction
@@ -69,19 +69,19 @@ HRESULT CvWriteFlagExVA(
 
  `level` Niveau d’importance.
 
- `pMarkerSeries` Contexte valide de la série de marqueurs. Ne peut pas être Null.
+ `pMarkerSeries` Contexte valide de la série de marqueurs. Ne peut pas avoir la valeur NULL.
 
- `pMessage` Chaîne de format de message. Ne peut pas être Null.
+ `pMessage` Chaîne de format de message. Ne peut pas avoir la valeur NULL.
 
-## <a name="return-value"></a>Valeur de retour
+## <a name="return-value"></a>Valeur retournée
  S_OK lorsque le message est correctement écrit. Code d’erreur en cas d’erreur. Utilisez les macros SUCCEEDED/FAILED pour vérifier la condition d’erreur.
 
 ## <a name="requirements"></a>Spécifications
  **En-tête :** *cvmarkers.h*
 
- **Unicode :** CvWriteFlagExW, CvWriteFlagExVW
+ **Unicode** : CvWriteFlagExW, CvWriteFlagExVW
 
  <strong>ANSI</strong> : CvWriteFlagExA, CvWriteFlagExVA
 
 ## <a name="see-also"></a>Voir aussi
-- [Informations de référence sur la bibliothèque C++](../profiling/cpp-library-reference.md)
+- [Référence de la bibliothèque de CMD](../profiling/cpp-library-reference.md)

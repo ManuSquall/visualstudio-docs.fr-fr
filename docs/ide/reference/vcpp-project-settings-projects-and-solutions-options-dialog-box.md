@@ -19,10 +19,10 @@ manager: markl
 ms.workload:
 - cplusplus
 ms.openlocfilehash: c7acd0d8f9c6d15f9f20c42f59c3bd5562884ac3
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
-ms.translationtype: HT
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/09/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "68918886"
 ---
 # <a name="vc-project-settings-projects-and-solutions-options-dialog-box"></a>Paramètres du projet VC++, Projets et solutions, boîte de dialogue Options
@@ -33,7 +33,7 @@ Cette boîte de dialogue vous permet de définir les paramètres du projet et de
 
 1. Dans le menu **Outils** , cliquez sur **Options**.
 
-2. Sélectionnez **Projets et solutions**, puis **Paramètres de projet VC++** .
+2. Sélectionnez **Projets et solutions**, puis **Paramètres de projet VC++**.
 
 ## <a name="build-logging"></a>Journalisation de la génération
 
@@ -104,4 +104,4 @@ N’utilise pas les données de projet mises en cache. Analyse les fichiers proj
 ## <a name="see-also"></a>Voir aussi
 
 - [Génération de programmes C/C++](/cpp/build/projects-and-build-systems-cpp)
-- [Référence de la génération C/C++](/cpp/build/reference/c-cpp-building-reference)
+- [Référence à la génération C/C++](/cpp/build/reference/c-cpp-building-reference)

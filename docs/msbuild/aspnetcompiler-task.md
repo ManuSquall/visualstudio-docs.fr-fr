@@ -19,44 +19,44 @@ manager: jillfra
 ms.workload:
 - aspnet
 ms.openlocfilehash: 8707371fac876586d38f12a797aaee7228b5f729
-ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/26/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77634576"
 ---
 # <a name="aspnetcompiler-task"></a>AspNetCompiler (tâche)
 
-La tâche `AspNetCompiler` inclut *aspnet_compiler. exe*, un utilitaire permettant de précompiler des applications ASP.net.
+La `AspNetCompiler` tâche enveloppe *aspnet_compiler.exe*, un utilitaire pour précompte ASP.NET applications.
 
 ## <a name="task-parameters"></a>Paramètres de tâche
 
-Le tableau ci-dessous décrit les paramètres de la tâche `AspNetCompiler`.
+Le tableau ci-dessous décrit les paramètres de la tâche `AspNetCompiler` .
 
 |Paramètre|Description|
 |---------------|-----------------|
 |`AllowPartiallyTrustedCallers`|Paramètre `Boolean` facultatif.<br /><br /> Si ce paramètre a la valeur `true`, l’assembly à nom fort autorise les appelants partiellement fiables.|
-|`Clean`|Paramètre `Boolean` facultatif.<br /><br /> Si ce paramètre a la valeur `true`, l’application précompilée est générée après nettoyage. Tout composant précédemment compilé est recompilé. La valeur par défaut est `false`. Ce paramètre correspond au commutateur **-c** dans *aspnet_compiler.exe*.|
-|`Debug`|Paramètre `Boolean` facultatif.<br /><br /> Si ce paramètre a la valeur `true`, des informations de débogage (fichier .PDB) sont émises pendant la compilation. La valeur par défaut est `false`. Ce paramètre correspond au commutateur **-d** dans *aspnet_compiler.exe*.|
+|`Clean`|Paramètre `Boolean` facultatif.<br /><br /> Si ce paramètre a la valeur `true`, l’application précompilée est générée après nettoyage. Tout composant précédemment compilé est recompilé. La valeur par défaut est `false`. Ce paramètre correspond à l’interrupteur **-c** sur *aspnet_compiler.exe*.|
+|`Debug`|Paramètre `Boolean` facultatif.<br /><br /> Si ce paramètre a la valeur `true`, des informations de débogage (fichier .PDB) sont émises pendant la compilation. La valeur par défaut est `false`. Ce paramètre correspond à **l’interrupteur -d** sur *aspnet_compiler.exe*.|
 |`DelaySign`|Paramètre `Boolean` facultatif.<br /><br /> Si ce paramètre a la valeur `true`, l’assembly n’est pas complètement signé quand il est créé.|
 |`FixedNames`|Paramètre `Boolean` facultatif.<br /><br /> Si ce paramètre a la valeur `true`, des noms fixes sont attribués aux assemblys compilés.|
-|`Force`|Paramètre `Boolean` facultatif.<br /><br /> Si ce paramètre a la valeur `true`, la tâche remplace le répertoire cible s’il existe déjà. Le contenu existant est perdu. La valeur par défaut est `false`. Ce paramètre correspond au commutateur **-f** dans *aspnet_compiler.exe*.|
+|`Force`|Paramètre `Boolean` facultatif.<br /><br /> Si ce paramètre a la valeur `true`, la tâche remplace le répertoire cible s’il existe déjà. Le contenu existant est perdu. La valeur par défaut est `false`. Ce paramètre correspond à l’interrupteur **-f** sur *aspnet_compiler.exe*.|
 |`KeyContainer`|Paramètre `String` facultatif.<br /><br /> Spécifie un conteneur de clé de nom fort.|
 |`KeyFile`|Paramètre `String` facultatif.<br /><br /> Spécifie le chemin physique au fichier de clé de nom fort.|
-|`MetabasePath`|Paramètre `String` facultatif.<br /><br /> Spécifie le chemin complet à la métabase IIS de l’application. Vous ne pouvez pas combiner ce paramètre avec les paramètres `VirtualPath` ou `PhysicalPath`. Ce paramètre correspond au commutateur **-m** dans *aspnet_compiler.exe*.|
-|`PhysicalPath`|Paramètre `String` facultatif.<br /><br /> Spécifie le chemin physique de l’application à compiler. Si ce paramètre est manquant, la métabase IIS est utilisée pour localiser l’application. Ce paramètre correspond au commutateur **-p** dans *aspnet_compiler.exe*.|
-|`TargetFrameworkMoniker`|Paramètre `String` facultatif.<br /><br /> Spécifie le TargetFrameworkMoniker indiquant la version .NET Framework *d’aspnet_compiler.exe* à utiliser. Accepte uniquement des monikers .NET Framework.|
+|`MetabasePath`|Paramètre `String` facultatif.<br /><br /> Spécifie le chemin complet à la métabase IIS de l’application. Vous ne pouvez pas combiner ce paramètre avec les paramètres `VirtualPath` ou `PhysicalPath`. Ce paramètre correspond à l’interrupteur **-m** sur *aspnet_compiler.exe*.|
+|`PhysicalPath`|Paramètre `String` facultatif.<br /><br /> Spécifie le chemin physique de l’application à compiler. Si ce paramètre est manquant, la métabase IIS est utilisée pour localiser l’application. Ce paramètre correspond à l’interrupteur **-p** sur *aspnet_compiler.exe*.|
+|`TargetFrameworkMoniker`|Paramètre `String` facultatif.<br /><br /> Spécifie le TargetFrameworkMoniker indiquant quelle version cadre .NET de *aspnet_compiler.exe* doit être utilisée. Accepte uniquement des monikers .NET Framework.|
 |`TargetPath`|Paramètre `String` facultatif.<br /><br /> Spécifie le chemin physique à l’emplacement dans lequel l’application est compilée. S’il n’est pas spécifié, l’application est précompilée sur place.|
-|`Updateable`|Paramètre `Boolean` facultatif.<br /><br /> Si ce paramètre a la valeur `true`, l’application précompilée peut être mise à jour.  La valeur par défaut est `false`. Ce paramètre correspond au commutateur **-u** dans *aspnet_compiler.exe*.|
-|`VirtualPath`|Paramètre `String` facultatif.<br /><br /> Chemin virtuel de l’application à compiler. Si `PhysicalPath` est spécifié, le chemin physique est utilisé pour localiser l’application. Sinon, la métabase IIS est utilisée et l’application se trouve théoriquement dans le site par défaut. Ce paramètre correspond au commutateur **-v** dans *aspnet_compiler.exe*.|
+|`Updateable`|Paramètre `Boolean` facultatif.<br /><br /> Si ce paramètre a la valeur `true`, l’application précompilée peut être mise à jour.  La valeur par défaut est `false`. Ce paramètre correspond à l’interrupteur **-u** sur *aspnet_compiler.exe*.|
+|`VirtualPath`|Paramètre `String` facultatif.<br /><br /> Chemin virtuel de l’application à compiler. Si `PhysicalPath` est spécifié, le chemin physique est utilisé pour localiser l’application. Sinon, la métabase IIS est utilisée et l’application se trouve théoriquement dans le site par défaut. Ce paramètre correspond à l’interrupteur **-v** sur *aspnet_compiler.exe*.|
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Notes 
 
-En plus des paramètres énumérés ci-dessus, cette tâche hérite des paramètres de la classe <xref:Microsoft.Build.Tasks.ToolTaskExtension>, qui elle-même hérite de la classe <xref:Microsoft.Build.Utilities.ToolTask>. Pour obtenir la liste de ces paramètres supplémentaires et leurs descriptions, consultez [Classe de base ToolTaskExtension](../msbuild/tooltaskextension-base-class.md).
+En plus des paramètres énumérés ci-dessus, cette tâche hérite des paramètres de la classe <xref:Microsoft.Build.Tasks.ToolTaskExtension> , qui elle-même hérite de la classe <xref:Microsoft.Build.Utilities.ToolTask> . Pour une liste de ces paramètres supplémentaires et leurs descriptions, voir [ToolTaskExtension classe de base](../msbuild/tooltaskextension-base-class.md).
 
-## <a name="example"></a>Exemple
+## <a name="example"></a> Exemple
 
-L’exemple de code suivant utilise la tâche `AspNetCompiler` pour précompiler une application ASP.NET.
+L’exemple de `AspNetCompiler` code suivant utilise la tâche pour pré-compiler une application ASP.NET.
 
 ```xml
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -74,5 +74,5 @@ L’exemple de code suivant utilise la tâche `AspNetCompiler` pour précompiler
 
 ## <a name="see-also"></a>Voir aussi
 
-* [Tâches :](../msbuild/msbuild-tasks.md)
+* [Tâches](../msbuild/msbuild-tasks.md)
 * [Informations de référence sur les tâches](../msbuild/msbuild-task-reference.md)

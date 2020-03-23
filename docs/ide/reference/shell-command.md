@@ -19,10 +19,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 5bf13c7624d6c9d8e64b79f653eb83a0c5f3b3f0
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75565875"
 ---
 # <a name="shell-command"></a>Shell, commande
@@ -37,26 +37,26 @@ Tools.Shell [/command] [/output] [/dir:folder] path [args]
 ## <a name="arguments"></a>Arguments
 `path`
 
-Requis. Chemin et nom du fichier à exécuter ou du document à ouvrir. Un chemin complet est requis si le fichier spécifié ne se trouve pas dans l’un des répertoires figurant dans la variable d’environnement PATH.
+Obligatoire. Chemin et nom du fichier à exécuter ou du document à ouvrir. Un chemin complet est requis si le fichier spécifié ne se trouve pas dans l’un des répertoires figurant dans la variable d’environnement PATH.
 
 `args`
 
-Option facultative. Arguments à passer au programme appelé.
+facultatif. Arguments à passer au programme appelé.
 
 ## <a name="switches"></a>Commutateurs
 /commandwindow [ou] /command [ou] /c [ou] /cmd
 
-Option facultative. Spécifie que la sortie pour l’exécutable doit s’afficher dans la fenêtre **Commande**.
+facultatif. Spécifie que la sortie pour l’exécutable doit s’afficher dans la fenêtre **Commande**.
 
 /dir:`folder` [ou] /d: `folder`
 
-Option facultative. Spécifie le répertoire de travail à définir quand le programme est exécuté.
+facultatif. Spécifie le répertoire de travail à définir quand le programme est exécuté.
 
 /outputwindow [ou] /output [ou] /out [ou] /o
 
-Option facultative. Spécifie que la sortie pour l’exécutable doit s’afficher dans la fenêtre **Sortie**.
+facultatif. Spécifie que la sortie pour l’exécutable doit s’afficher dans la fenêtre **Sortie**.
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Notes 
 Les commutateurs /dir /o /c doivent être spécifiés immédiatement après `Tools.Shell`. Toute syntaxe spécifiée après le nom de l’exécutable est transmise en tant qu’argument de la ligne de commande.
 
 L’alias prédéfini `Shell` peut être utilisé à la place de `Tools.Shell`.
@@ -77,7 +77,7 @@ Chaque groupe de trois guillemets (""") est interprété par le processeur `Shel
 > [!CAUTION]
 > Si vous ne mettez pas la chaîne de chemin entre guillemets ("""), Windows utilisera uniquement la partie de la chaîne jusqu’au premier espace. Par exemple, si la chaîne de chemin ci-dessus n’a pas été correctement mise entre guillemets, Windows recherche un fichier nommé « Program » situé dans le répertoire racine C:\. Si un fichier exécutable C:\Program.exe est effectivement disponible, même installé de manière illicite, Windows essaie d’exécuter ce programme à la place du programme « C:\Program Files\SomeFile.exe » voulu.
 
-## <a name="example"></a>Exemple
+## <a name="example"></a> Exemple
 La commande suivante utilise xcopy.exe pour copier le fichier `MyText.txt` dans le dossier `Text`. La sortie de xcopy.exe s’affiche à la fois dans la fenêtre **Commande** et dans la fenêtre **Sortie**.
 
 ```cmd
@@ -86,8 +86,8 @@ La commande suivante utilise xcopy.exe pour copier le fichier `MyText.txt` dans 
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Visual Studio, commandes](../../ide/reference/visual-studio-commands.md)
-- [Fenêtre Commande](../../ide/reference/command-window.md)
-- [Sortie (fenêtre)](../../ide/reference/output-window.md)
-- [Rechercher/Commande, zone](../../ide/find-command-box.md)
-- [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)
+- [Commandes de studio visuel](../../ide/reference/visual-studio-commands.md)
+- [Commande, fenêtre](../../ide/reference/command-window.md)
+- [Fenêtre Sortie](../../ide/reference/output-window.md)
+- [Boîte de recherche/commande](../../ide/find-command-box.md)
+- [Alias de commande de studio visuel](../../ide/reference/visual-studio-command-aliases.md)

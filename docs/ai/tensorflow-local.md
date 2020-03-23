@@ -11,10 +11,10 @@ ms.devlang: python
 ms.workload:
 - multiple
 ms.openlocfilehash: 43ce126baeb96efcaab3c40bac912274ee1cd8c7
-ms.sourcegitcommit: 57bc1c3887838d707c13feff72a677b3bad3be4b
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "72777431"
 ---
 # <a name="train-a-tensorflow-model-locally"></a>Former un modèle TensorFlow localement
@@ -23,7 +23,7 @@ Dans ce démarrage rapide, nous allons former un modèle TensorFlow avec le jeu 
 
 La base de données MNIST a un jeu d’apprentissage constitué de 60 000 exemples et un jeu de test de 10 000 exemples de chiffres manuscrits.
 
-## <a name="prerequisites"></a>Configuration requise
+## <a name="prerequisites"></a>Conditions préalables requises
 
 Avant de commencer, vérifiez que les composants suivants sont installés :
 
@@ -38,7 +38,7 @@ C:\>pip.exe install tensorflow
 ### <a name="numpy-and-scipy"></a>NumPy et SciPy
 Installez [NumPy](https://www.lfd.uci.edu/~gohlke/pythonlibs/#numpy) et [SciPy](https://www.lfd.uci.edu/~gohlke/pythonlibs/#scipy).
 
-### <a name="download-sample-code"></a>Télécharger un exemple de code
+### <a name="download-sample-code"></a>Télécharger l’exemple de code
 Téléchargez ce [dépôt GitHub](https://github.com/Microsoft/samples-for-ai) contenant des exemples pour démarrer le deep learning sur TensorFlow, CNTK, Theano et bien plus encore.
 
 ## <a name="open-solution-and-train-model"></a>Ouvrir une solution et former un modèle
@@ -47,7 +47,7 @@ Téléchargez ce [dépôt GitHub](https://github.com/Microsoft/samples-for-ai) c
 
 - Sélectionnez le dossier **Exemples TensorFlow** dans le dépôt des exemples téléchargé et ouvrez le fichier **TensorflowExamples.sln**.
 
-   ![Ouvrir un projet](media/tensorflow-local/open-project.png)
+   ![Ouvrir le projet](media/tensorflow-local/open-project.png)
 
    ![Ouvrir une solution](media/tensorflow-local/open-solution.png)
 

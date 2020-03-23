@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - data-science
 ms.openlocfilehash: af6c6156b1d88c1d015f7700fc7bed061bbe9a76
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "62950591"
 ---
 # <a name="help-in-r-tools-for-visual-studio"></a>Aide dans Outil R pour Visual Studio
@@ -24,7 +24,7 @@ L’aide R est intégrée directement à la fenêtre interactive de Visual Stud
 > [!Tip]
 > À l’instar des autres fenêtres dans Visual Studio, vous pouvez réorganiser et ancrer la fenêtre d’aide comme bon vous semble. Consultez [Personnaliser les dispositions de fenêtres dans Visual Studio](../ide/customizing-window-layouts-in-visual-studio.md).
 >
-> Pour ouvrir les résultats de l’aide dans un navigateur, sélectionnez le menu **Outils R** > **Options** et définissez la propriété **Navigateur de l’aide R** sur `External`. Consultez [Options](options-for-r-tools-in-visual-studio.md).
+> Pour ouvrir les résultats d’aide dans un navigateur, sélectionnez `External`le menu R **Tools** > **Options** et définissez la propriété R Help **Browser** à . Voir [Options](options-for-r-tools-in-visual-studio.md).
 
 Pour lancer une recherche dans l’aide, utilisez la commande `??` suivie du terme de recherche. Utilisez des guillemets si le terme de recherche contient des espaces :
 
@@ -42,21 +42,21 @@ La fenêtre d’aide comprend également un champ d’entrée de recherche qui v
 
 Les développeurs recherchent souvent de l’aide sur les noms de fonctions, les datasets et d’autres éléments dans la documentation R. Les outils R pour Visual Studio (RTVS) simplifient le processus en intégrant des fonctions de recherche directement dans l’éditeur et les fenêtres interactives.
 
-- Appuyez sur **F1** pendant une opération de complétion automatique pour générer une liste de rubriques d’aide correspondant à la sous-chaîne.
+- Appuyer sur **la F1** lors d’une opération auto-complète produit une liste de résultats d’aide qui correspondent à la sous-corde.
 - Cliquez avec le bouton droit sur un terme de recherche (comme une fonction) et sélectionnez la commande **Aide sur** pour ouvrir la rubrique d’aide de cette fonction. Vous pouvez également appeler **Aide sur** pour n’importe quelle sélection.
 
     ![Appel de l’aide par le biais du menu contextuel](media/help-right-click.png)
 
 > [!Tip]
-> Pour ouvrir l’aide intégrée dans un navigateur, sélectionnez **Outils R** > **Options** et définissez **Navigateur web (F1)** sur `External`. Consultez [Options](options-for-r-tools-in-visual-studio.md).
+> Pour ouvrir une aide intégrée dans un navigateur, sélectionnez **R Tools** > **Options** et définissez **F1 Web Browser** à `External`. Voir [Options](options-for-r-tools-in-visual-studio.md).
 
 ## <a name="integrated-stackoverflow-search"></a>Recherche dans StackOverflow intégrée
 
-Outre la documentation R, les développeurs consultent souvent StackOverflow quand ils écrivent du code. RTVS simplifie également ce processus. Cliquez avec le bouton droit sur un terme ou une sélection et sélectionnez la commande **Rechercher sur le web** (**Ctrl**+**F1**). Visual Studio ouvre alors une fenêtre avec les résultats de la recherche limités à StackOverflow :
+Outre la documentation R, les développeurs consultent souvent StackOverflow quand ils écrivent du code. RTVS simplifie également ce processus. Cliquez à droite sur un terme ou une sélection, sélectionnez le **Web de recherche pour** la commande (**Ctrl**+**F1**), et Visual Studio ouvre une fenêtre avec des résultats de recherche scoped à StackOverflow:
 
 ![Résultats d’une recherche web dans Visual Studio](media/help-web-search-results.png)
 
-Vous pouvez modifier la chaîne de délimitation ajoutée, `R site:stackoverflow` via l’option **Outils R** > **Options** > **Chaîne de recherche web (F1)** :
+Vous pouvez modifier la chaîne de `R site:stackoverflow`portée appendice, par le biais de l’option de chaîne de recherche Web **R Tools** > **Options** > **F1** :
 
 ![Changement de l’option de chaîne de recherche web (F1)](media/options-dialog.png)
 

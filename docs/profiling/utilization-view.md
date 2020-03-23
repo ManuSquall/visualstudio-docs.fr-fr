@@ -13,20 +13,20 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 926c67261f91aa8787d9be4a33dadbd3a890c568
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "62823520"
 ---
 # <a name="utilization-view"></a>Vue Utilisation
-La **vue Utilisation** affiche des informations sur le processeur, le GPU et d’autres ressources système utilisées par le processus en cours (choisissez **Analyser** > **Visualiseur concurrentiel** pour démarrer le visualiseur concurrentiel). Il montre l’utilisation moyenne des cœurs par le processus analysé, le processus inactif, le processus système et d’autres processus qui s’exécutent sur le système au fil du temps. Il ne montre pas quel cœur spécifique est actif à un moment donné. Par exemple, si deux cœurs s’exécutent chacun à 50 % de leur capacité pendant une période de temps donnée, cette vue ne montre qu’un seul cœur logique en cours d’utilisation. La vue est générée en décomposant la durée du profilage en petits segments de temps. Pour chaque segment, le graphique indique le nombre moyen de threads du processus qui s’exécutent sur les cœurs logiques pendant cet intervalle.
+La **vue d’utilisation** affiche des informations sur le processeur, le GPU et d’autres ressources système qui sont utilisées par le processus actuel (choisissez **Analyze** > **Concurrency Visualizer** pour démarrer le visualiseur de concurrence). Il montre l’utilisation moyenne des cœurs par le processus analysé, le processus inactif, le processus système et d’autres processus qui s’exécutent sur le système au fil du temps. Il ne montre pas quel cœur spécifique est actif à un moment donné. Par exemple, si deux cœurs s’exécutent chacun à 50 % de leur capacité pendant une période de temps donnée, cette vue ne montre qu’un seul cœur logique en cours d’utilisation. La vue est générée en décomposant la durée du profilage en petits segments de temps. Pour chaque segment, le graphique indique le nombre moyen de threads du processus qui s’exécutent sur les cœurs logiques pendant cet intervalle.
 
- ![Vue Utilisation de l’UC](../profiling/media/vsts_ppacpuutil.png "VSTS_PPAcpuUtil")
+ ![Utilisation de l’UC, vue](../profiling/media/vsts_ppacpuutil.png "VSTS_PPAcpuUtil")
 
- Le graphique affiche le temps (sur l’axe des X) et les cœurs logiques moyens utilisés par le processus cible, le processus inactif et le processus système. (Le processus inactif montre des cœurs inactifs. Le processus système est un processus dans Windows qui peut exécuter un travail pour le compte d’autres processus.) Les autres processus qui s’exécutent sur système comptent pour l’utilisation des cœurs restants.
+ Le graphique affiche le temps (sur l’axe des X) et les cœurs logiques moyens utilisés par le processus cible, le processus inactif et le processus système. (Le processus inactif montre des cœurs inactifs. Le processus système est un processus dans Windows qui peut effectuer des travaux pour le compte d’autres processus.) Les autres processus qui s’exécutent sur le système expliquent l’utilisation des noyaux restants.
 
- Le nombre de cœurs logiques est indiqué sur l’axe des Y. Windows traite la prise en charge du multithreading simultané dans le matériel comme des cœurs logiques (par exemple Hyper-Threading). Ainsi, un système avec un processeur à quatre cœurs qui prend en charge deux threads matériels par cœur apparaît comme un système avec huit cœurs logiques. Ceci s’applique également à la vue Cœurs. Pour plus d’informations, consultez [Vue Cœurs](../profiling/cores-view.md).
+ Le nombre de cœurs logiques est indiqué sur l’axe des Y. Windows traite la prise en charge du multithreading simultané dans le matériel comme des cœurs logiques (par exemple Hyper-Threading). Ainsi, un système avec un processeur à quatre cœurs qui prend en charge deux threads matériels par cœur apparaît comme un système avec huit cœurs logiques. Ceci s’applique également à la vue Cœurs. Pour plus d’informations, voir [Cores view](../profiling/cores-view.md).
 
  Le graphique Activité GPU montre le nombre de moteurs de DirectX utilisés au fil du temps.  Un moteur est utilisé s’il traite un paquet DMA.  Le graphique ne montre pas un moteur DirectX spécifique (par exemple le moteur 3D, le moteur vidéo, etc.).
 
@@ -46,8 +46,8 @@ La **vue Utilisation** affiche des informations sur le processeur, le GPU et d�
  Si vous utilisez le GPU via AMP C++ ou DirectX, vous pouvez être intéressé par la détermination du nombre de moteurs GPU utilisés ou les zones où, de façon inattendue, le GPU est inactif.
 
 ## <a name="zoom"></a>Zoom
- Pour effectuer un zoom avant sur le graphique Utilisation de l’UC ou sur le graphique Activité du GPU, sélectionnez une section ou utilisez le curseur de zoom au-dessus du graphique. La valeur du zoom est conservée quand vous passez à d’autres vues. Pour refaire un zoom arrière, utilisez le curseur de zoom. Vous pouvez également effectuer un zoom avec **Ctrl**+**Défilement**.
+ Pour effectuer un zoom avant sur le graphique Utilisation de l’UC ou sur le graphique Activité du GPU, sélectionnez une section ou utilisez le curseur de zoom au-dessus du graphique. La valeur du zoom est conservée quand vous passez à d’autres vues. Pour refaire un zoom arrière, utilisez le curseur de zoom. Vous pouvez également zoomer en utilisant **Ctrl**+**scroll**.
 
 ## <a name="see-also"></a>Voir aussi
 - [Visualiseur concurrentiel](../profiling/concurrency-visualizer.md)
-- [Affichage Cœurs](../profiling/cores-view.md)
+- [Vue de noyaux](../profiling/cores-view.md)

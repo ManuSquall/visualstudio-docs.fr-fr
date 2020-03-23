@@ -15,10 +15,10 @@ ms.workload:
 - uwp
 monikerRange: vs-2017
 ms.openlocfilehash: 0fc78a84d0c2f86e8db6c4703cc7404a32508d72
-ms.sourcegitcommit: bdccab4c2dbd50ea8adaaf88c69c9ca32db88099
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/30/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "73144733"
 ---
 # <a name="analyze-energy-use-in-uwp-apps"></a>Analyser la consommation d’énergie dans les applications UWP
@@ -42,7 +42,7 @@ Le profileur de consommation d'énergie utilise les définitions de *puissance* 
 
 - L'*énergie* mesure la puissance totale, comme une capacité ou un potentiel, telle la capacité de puissance d'une batterie, ou comme la puissance totale consommée au cours d'une période donnée. L'unité d'énergie est le watt-heure, la quantité de puissance d'un watt constamment appliquée à une heure. Dans le **Résumé d'énergie**, les unités sont affichées sous forme de milliwatts heure **mW-h**.
 
-![Capacité d'énergie, énergie utilisée, énergie totale utilisée](../profiling/media/energyprof_capcitypowerused.png)
+![Capacité d’énergie, énergie utilisée, énergie totale utilisée](../profiling/media/energyprof_capcitypowerused.png)
 
 Par exemple, la batterie entièrement chargée d'une tablette stocke une certaine quantité d'énergie. Lorsque l'énergie est utilisée pour effectuer des tâches telles que la communication sur un réseau, le calcul de valeurs, ou l'affichage de graphiques, la puissance de la batterie se dissipe à des taux différents. Pour une période définie, le total de puissance consommé est également mesuré en énergie.
 
@@ -91,7 +91,7 @@ if (performance && performance.mark) {
 
 1. Dans le menu **Déboguer** , choisissez **Démarrer les diagnostics sans débogage**.
 
-     ![Choisir la consommation d’énergie dans le hub de diagnostic](../profiling/media/energyprof_diagnosticshub.png "ENERGYPROF_DiagnosticsHub")
+     ![Choisir Consommation d'énergie dans le concentrateur de diagnostic](../profiling/media/energyprof_diagnosticshub.png "ENERGYPROF_DiagnosticsHub")
 
 2. Choisissez **Consommation d'énergie** puis **Démarrer**.
 
@@ -122,13 +122,13 @@ if (performance && performance.mark) {
 ## <a name="analyze-energy-profile-data"></a>Analyser des données de profil d'énergie
  Les données de profil d'énergie s'affichent dans la fenêtre de document de Visual Studio :
 
- ![Page de rapport du profileur d’énergie](../profiling/media/energyprof_all.png "ENERGYPROF_All")
+ ![Page du rapport du profileur d'énergie](../profiling/media/energyprof_all.png "ENERGYPROF_All")
 
 |||
 |-|-|
-|![Étape 1](../profiling/media/procguid_1.png "ProcGuid_1")|Le fichier de rapport est nommé Report*AAAAMMJJ-HHMM*.diagsession. Vous pouvez modifier le nom du rapport si vous décidez de l'enregistrer.|
-|![Étape 2](../profiling/media/procguid_2.png "ProcGuid_2")|La chronologie indique la durée de la session de profilage, les événements d'activation du cycle de vie de l'application et les marques utilisateur.|
-|![Étape 3](../profiling/media/procguid_3.png "ProcGuid_3")|Vous pouvez limiter le rapport à une partie de la chronologie en faisant glisser les barres bleues pour sélectionner une zone de la chronologie.|
+|![Étape 1](../profiling/media/procguid_1.png "ProcGuid_1")|Le fichier de rapport est nommé Report*AAAAMMJJ-HHMM*.diagsession. Vous pouvez modifier le nom du rapport si vous décidez de l'enregistrer.|
+|![Étape 2](../profiling/media/procguid_2.png "ProcGuid_2")|La chronologie indique la durée de la session de profilage, les événements d'activation du cycle de vie de l'application et les marques utilisateur.|
+|![Étape 3](../profiling/media/procguid_3.png "ProcGuid_3")|Vous pouvez limiter le rapport à une partie de la chronologie en faisant glisser les barres bleues pour sélectionner une zone de la chronologie.|
 |![Étape 4](../profiling/media/procguid_4.png "ProcGuid_4")|Le graphique **Consommation d'énergie** est un graphique à courbes qui affiche la modification de la puissance de sortie provoquée par une ressource de l'appareil pendant une session de profilage. Le profileur Consommation d'énergie suit l'énergie utilisée par le processeur, l'activité réseau et l'écran.|
 |![Étape 5](../profiling/media/procguid_6.png "ProcGuid_6")|Le graphique **Ressources (activées/désactivées)**  fournit des détails sur les coûts d'énergie de réseau. La barre **Réseau** représente la durée d'ouverture de la connexion réseau. La barre enfant **Transfert de données** est la durée pendant laquelle l'application a reçu ou envoyé des données via le réseau.|
 |![Étape 6](../profiling/media/procguid_6a.png "ProcGuid_6a")|Le **Résumé de la consommation d'énergie** montre le montant proportionnel de l'énergie totale utilisée dans la chronologie sélectionnée par le processeur, l'activité réseau et l'écran.|
@@ -140,11 +140,11 @@ if (performance && performance.mark) {
 ## <a name="optimize-energy-use"></a>Optimiser l'utilisation d'énergie
  Outre la transmission des données, les connexions réseau entraînent des coûts énergétiques pour initialiser, gérer, et arrêter la connexion. Certains réseaux maintiennent la connexion un certain temps après l'envoi ou la réception des données pour permettre la transmission de données supplémentaires sur une connexion unique. Vous pouvez utiliser le volet **Ressources (activées/désactivées)** pour examiner la façon dont votre application interagit avec la connexion.
 
- ![Volet &#40;des&#47;ressources&#41; sur OFF](../profiling/media/energyprof_resources.png "ENERGYPROF_Resources")
+ ![Ressources &#40;sur&#47;hors&#41; vitre](../profiling/media/energyprof_resources.png "ENERGYPROF_Resources")
 
  Si les barres **Réseau** et **Transfert de données** indiquent que la connexion est ouverte pendant de longues périodes pour transmettre par intermittence une série de petits paquets de données, vous pouvez traiter les données par lots pour les envoyer en une seule transmission, réduire la durée d'ouverture du réseau et économiser ainsi un coût énergétique.
 
- ![Volet Résumé de la consommation d’énergie](../profiling/media/energyprof_summary.png "ENERGYPROF_Summary")
+ ![Volet Résumé de la consommation d'énergie](../profiling/media/energyprof_summary.png "ENERGYPROF_Summary")
 
  Vous avez moins de contrôle sur les coûts d'énergie de l'écran. La plupart des écrans requièrent davantage d'énergie pour afficher les couleurs claires que les couleurs sombres, l'utilisation d'un arrière-plan foncé est un moyen de réduire ces coûts.
 
@@ -154,7 +154,7 @@ if (performance && performance.mark) {
 
    Le simulateur Visual Studio pour les applications UWP vous permet de simuler les propriétés de connexion aux données des API d’informations réseau. Consultez [Exécuter des applications UWP dans le simulateur](../debugger/run-windows-store-apps-in-the-simulator.md)
 
-- Les outils **Utilisation de l’UC** peuvent vous aider à réduire la charge processeur quand elle est due à des fonctions inefficaces. Voir [Analyser l’utilisation de l’UC](../profiling/beginners-guide-to-performance-profiling.md).
+- Les outils **Utilisation de l’UC** peuvent vous aider à réduire la charge processeur quand elle est due à des fonctions inefficaces. Voir [Analysez l’utilisation du processeur](../profiling/beginners-guide-to-performance-profiling.md).
 
 ## <a name="see-also"></a>Voir aussi
 

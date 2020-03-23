@@ -7,10 +7,10 @@ ms.date: 03/06/2020
 ms.topic: conceptual
 description: Découvrir en quoi consiste la responsabilité des administrateurs pour l’exécution des inventaires de préproduction
 ms.openlocfilehash: 722c72acde9ff0b1f7bcfc0c394a1e016c84b719
-ms.sourcegitcommit: 514f0f7d1a61d292c7dbc80ec73a36bda960d6ce
+ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/09/2020
+ms.lasthandoff: 03/21/2020
 ms.locfileid: "78937473"
 ---
 # <a name="inventory-of-pre-production-environment"></a>Inventaire de l’environnement de préproduction
@@ -26,11 +26,11 @@ Voici plusieurs façons de simplifier l’inventaire de votre environnement de p
 
 ## <a name="resources"></a>Ressources
 - [Livre blanc sur la gestion des licences Visual Studio](https://visualstudio.microsoft.com/wp-content/uploads/2019/06/Visual-Studio-Licensing-Whitepaper-May-2019.pdf)
-- [Prise en charge des abonnements et de l’administration de Visual Studio](https://visualstudio.microsoft.com/support/support-overview-vs)
-- [Conditions du programme de licence en volume](https://www.microsoft.com/licensing/product-licensing/products.aspx)
+- [Prise en charge des abonnements et de l’administration Visual Studio](https://visualstudio.microsoft.com/support/support-overview-vs)
+- [Conditions de licence de volume](https://www.microsoft.com/licensing/product-licensing/products.aspx)
 
 ## <a name="see-also"></a>Voir aussi
-- [Documentation de Visual Studio](https://docs.microsoft.com/visualstudio/)
+- [Documentation Visual Studio](https://docs.microsoft.com/visualstudio/)
 - [Documentation Azure DevOps](https://docs.microsoft.com/azure/devops/)
 - [Documentation Azure](https://docs.microsoft.com/azure/)
 - [Documentation Microsoft 365](https://docs.microsoft.com/microsoft-365/)
@@ -38,8 +38,8 @@ Voici plusieurs façons de simplifier l’inventaire de votre environnement de p
 ## <a name="next-steps"></a>Étapes suivantes
 En savoir plus sur les responsabilités des administrateurs :
 - [Responsabilités de l’administrateur](admin-responsibilities.md)
-- [Gérer des grandes équipes et des prestataires externes](manage-teams.md)
-- [Suivre l’attribution des utilisateurs et traiter les commandes](assignments-orders.md)
+- [Gérer de grandes équipes et des fournisseurs externes](manage-teams.md)
+- [Suivre les affectations d’utilisateurs et traiter les commandes](assignments-orders.md)
 - Utiliser le rapport [Utilisation maximale](maximum-usage.md) pour suivre les engagements d’achat
 
 

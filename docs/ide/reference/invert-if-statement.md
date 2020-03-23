@@ -11,10 +11,10 @@ dev_langs:
 ms.workload:
 - dotnet
 ms.openlocfilehash: a0419100cbc5fcd543eb250fa85cbfe2ebd1c97f
-ms.sourcegitcommit: 614d5b99576ea27a41957cd94062dc95cbd29c1c
-ms.translationtype: HT
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/10/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "65531588"
 ---
 # <a name="invert-if-statement"></a>Inverser une instruction if
@@ -24,11 +24,11 @@ Cette refactorisation s’applique à :
 - C#
 - Visual Basic
 
-**Quoi :** Permet d’inverser une instruction `if` ou `if else` sans changer la signification du code.
+**Quoi :** Vous permet d’inverser `if else` une ou une `if` déclaration sans modifier le sens du code.
 
-**Quand :** Vous avez une instruction `if` ou `if else` qui serait plus facile à comprendre si elle était inversée.
+**Quand :** Lorsque vous `if` avez `if else` une déclaration ou une déclaration qui serait mieux comprise lorsqu’elle est inversée.
 
-**Pourquoi :** L’inversion manuelle d’une instruction `if` ou `if else` peut prendre beaucoup plus de temps et introduire des erreurs. Ce correctif de code vous permet de faire cette refactorisation automatiquement.
+**Pourquoi:** Inverser un `if` ou `if else` une déclaration à la main peut prendre beaucoup plus de temps et éventuellement introduire des erreurs. Ce correctif de code vous permet de faire cette refactorisation automatiquement.
 
 ## <a name="invert-if-statement-refactoring"></a>Inverser une instruction if (refactorisation)
 
@@ -36,7 +36,7 @@ Cette refactorisation s’applique à :
 
     ![Inverser if else](media/invert-if.png)
 
-2. Appuyez sur **Ctrl**+**.** pour afficher le menu **Actions rapides et refactorisations**.
+2. Appuyez **sur Ctrl**+**.** pour afficher le menu **Actions rapides et refactorisations**.
 
     ![Inverser if else (correctif de code)](media/invert-if-codefix.png)
 

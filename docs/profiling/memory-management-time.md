@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 442973edb18e75bafda8a9397eac799286c69dfa
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "62963779"
 ---
 # <a name="memory-management-time"></a>Période de gestion de la mémoire
@@ -25,4 +25,4 @@ Ces segments de la chronologie sont associés aux temps de blocage classés dans
  Examinez les piles d’appels et les rapports de profils associés pour mieux comprendre les raisons sous-jacentes des blocages classés dans la catégorie Gestion de mémoire.
 
 ## <a name="see-also"></a>Voir aussi
-- [vue Threads](../profiling/threads-view-parallel-performance.md)
+- [Vue Threads](../profiling/threads-view-parallel-performance.md)

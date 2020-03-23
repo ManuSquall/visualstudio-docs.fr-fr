@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: ccc0c7aa3386e906ad13331a596953db70240701
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "62969945"
 ---
 # <a name="flag-markers"></a>Marqueurs indicateurs
@@ -23,25 +23,25 @@ Un marqueur indicateur représente un événement qui s’est produit à un inst
 ## <a name="flag-importance"></a>Importance des indicateurs
  La taille des indicateurs dépend de leur importance. Comme pour tout autre type de marqueur, leur niveau d’importance peut être bas, normal, élevé ou critique.  Cette illustration montre l’apparence des marqueurs selon leur niveau d’importance :
 
- ![Marqueurs d’importance Basse, Normale, Élevée et Critique](../profiling/media/cvmarkerimportance.png "CVMarkerImportance") Marqueurs montrant les indicateurs d’importance
+ ![Marqueurs d’importance faible, normal, élevé et critique](../profiling/media/cvmarkerimportance.png "CVMarkerImportance") Marqueurs affichant l’importance du drapeau
 
 ## <a name="flag-category"></a>Catégories des indicateurs
  Les indicateurs sont de cinq couleurs différentes, selon leur catégorie. Les couleurs sont réutilisées lorsqu’il y a plus de cinq catégories. Vous ne pouvez pas choisir la couleur. Comme pour tout autre marqueur, la catégorie peut correspondre à n’importe quel entier. L’illustration suivante montre les couleurs des cinq premières catégories.
 
- ![Cinq couleurs de marqueurs de catégorie](../profiling/media/cvmarkercategory.png "CVMarkerCategory") Marqueurs montrant les catégories
+ ![Cinq couleurs de marqueurs de catégorie](../profiling/media/cvmarkercategory.png "CVMarkerCategory (en)") Marqueurs montrant des catégories
 
 ## <a name="alerts"></a>Alertes
  Une alerte est un indicateur rouge qui représente un événement d’application critique, tel qu’une exception.  Voici un exemple d’alerte :
 
- ![Marqueur d’alerte du visualiseur concurrentiel](../profiling/media/cvmarkeralert.png "CVMarkerAlert") Marqueur d’alerte
+ ![Le marqueur d’alerte d’observation](../profiling/media/cvmarkeralert.png "CVMarkerAlert (en)") de la concordance Un marqueur d’alerte
 
 ## <a name="aggregation-flags"></a>Indicateurs d’agrégation
  Parfois, les indicateurs sont générés de manière si rapprochée dans le visualiseur concurrentiel qu’ils ne peuvent pas être affichés individuellement. Lorsque cela se produit, un *indicateur d’agrégation* de couleur grise s’affiche pour représenter les indicateurs sous-jacents. Lorsque vous placez le pointeur sur l’une de ces icônes, une info-bulle affiche le nombre d’indicateurs sous-jacents qui sont représentés. Pour afficher les indicateurs, faites un zoom avant. Si vous zoomez au maximum et obtenez toujours un indicateur d’agrégation, vous pouvez afficher les indicateurs sous-jacents dans le [rapport Marqueurs](../profiling/markers-report.md).
 
  Les indicateurs d’agrégation peuvent avoir différentes tailles. La taille varie selon le niveau d’importance de l’indicateur le plus important de l’agrégation. L’illustration suivante montre les indicateurs d’agrégation, par ordre croissant d’importance.
 
- ![Indicateurs d’agrégation montrant quatre niveaux d’importance](../profiling/media/cvmarkeraggregate.png "CVMarkerAggregate") Indicateurs d’agrégation par niveau d’importance
+ ![Drapeaux agrégés montrant quatre niveaux d’importance](../profiling/media/cvmarkeraggregate.png "CVMarkerAggregate (en)") Drapeaux d’agrégation par niveau d’importance
 
 ## <a name="see-also"></a>Voir aussi
 - [Marqueurs du visualiseur concurrentiel](../profiling/concurrency-visualizer-markers.md)
-- [Kit SDK du visualiseur concurrentiel](../profiling/concurrency-visualizer-sdk.md)
+- [SDK du visualiseur concurrentiel](../profiling/concurrency-visualizer-sdk.md)

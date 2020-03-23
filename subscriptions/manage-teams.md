@@ -5,12 +5,12 @@ ms.author: lank
 manager: lank
 ms.date: 03/09/2020
 ms.topic: conceptual
-description: En savoir plus sur la responsabilité des administrateurs pour gérer les abonnements pour les équipes de grande taille, ainsi que pour les prestataires externes.
+description: Renseignez-vous sur la responsabilité des administrateurs de gérer les abonnements pour les grandes équipes ainsi que pour les entrepreneurs externes.
 ms.openlocfilehash: 2f51febfa3cab6f3200b364cce1cc02e438a0384
-ms.sourcegitcommit: 514f0f7d1a61d292c7dbc80ec73a36bda960d6ce
+ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/10/2020
+ms.lasthandoff: 03/21/2020
 ms.locfileid: "78947062"
 ---
 # <a name="large-teams-and-external-contractors"></a>Grandes équipes et prestataires externes
@@ -30,11 +30,11 @@ Les prestataires externes peuvent apporter des licences pour prendre part à vot
 
 ## <a name="resources"></a>Ressources
 - [Livre blanc sur la gestion des licences Visual Studio](https://visualstudio.microsoft.com/wp-content/uploads/2019/06/Visual-Studio-Licensing-Whitepaper-May-2019.pdf)
-- [Prise en charge des abonnements et de l’administration de Visual Studio](https://visualstudio.microsoft.com/support/support-overview-vs)
-- [Conditions du programme de licence en volume](https://www.microsoft.com/licensing/product-licensing/products.aspx)
+- [Prise en charge des abonnements et de l’administration Visual Studio](https://visualstudio.microsoft.com/support/support-overview-vs)
+- [Conditions de licence de volume](https://www.microsoft.com/licensing/product-licensing/products.aspx)
 
 ## <a name="see-also"></a>Voir aussi
-- [Documentation de Visual Studio](https://docs.microsoft.com/visualstudio/)
+- [Documentation Visual Studio](https://docs.microsoft.com/visualstudio/)
 - [Documentation Azure DevOps](https://docs.microsoft.com/azure/devops/)
 - [Documentation Azure](https://docs.microsoft.com/azure/)
 - [Documentation Microsoft 365](https://docs.microsoft.com/microsoft-365/)
@@ -43,5 +43,5 @@ Les prestataires externes peuvent apporter des licences pour prendre part à vot
 En savoir plus sur les responsabilités des administrateurs :
 - [Responsabilités de l’administrateur](admin-responsibilities.md)
 - [Inventaire de l’environnement de préproduction](admin-inventory.md)
-- [Suivre l’attribution des utilisateurs et traiter les commandes](assignments-orders.md)
+- [Suivre les affectations d’utilisateurs et traiter les commandes](assignments-orders.md)
 - Utiliser le rapport [Utilisation maximale](maximum-usage.md) pour suivre les engagements d’achat

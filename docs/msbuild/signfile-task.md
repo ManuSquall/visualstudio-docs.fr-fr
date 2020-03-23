@@ -18,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 133048a5bb8103c681d8e2b84e68033c486109e1
-ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
+ms.openlocfilehash: ee018b42fc23b0a520b510235117cb74729fd4b6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/26/2020
-ms.locfileid: "77632288"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79094518"
 ---
 # <a name="signfile-task"></a>SignFile (tâche)
 
@@ -31,7 +31,7 @@ Signe le fichier spécifié à l'aide du certificat spécifié.
 
 ## <a name="parameters"></a>Paramètres
 
- Le tableau ci-dessous décrit les paramètres de la tâche `SignFile`.
+ Le tableau ci-dessous décrit les paramètres de la tâche `SignFile` .
 
  Notez que les certificats SHA-256 ne sont autorisés que sur les ordinateurs où est installé le .NET 4.5 et version ultérieure.
 
@@ -45,13 +45,13 @@ Signe le fichier spécifié à l'aide du certificat spécifié.
 |`TimestampUrl`|Paramètre `String` facultatif.<br /><br /> Spécifie l'URL d'un serveur d'horodatage.|
 |`TargetFrameworkVersion`|Version du .NET Framework utilisée pour la cible.|
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Notes 
 
- En plus des paramètres énumérés ci-dessus, cette tâche hérite des paramètres de la classe <xref:Microsoft.Build.Utilities.Task>. Pour obtenir la liste de ces paramètres supplémentaires et leurs descriptions, consultez [Classe de base de tâche](../msbuild/task-base-class.md).
+ En plus des paramètres énumérés ci-dessus, cette tâche hérite des paramètres de la classe <xref:Microsoft.Build.Utilities.Task>. Pour une liste de ces paramètres supplémentaires et de leurs descriptions, voir [Classe de base de tâche](../msbuild/task-base-class.md).
 
-## <a name="example"></a>Exemple
+## <a name="example"></a> Exemple
 
- L'exemple suivant utilise la tâche `SignFile` pour signer les fichiers spécifiés dans la collection d'éléments `FilesToSign` avec le certificat spécifié par la propriété `Certificate`.
+ L'exemple suivant utilise la tâche `SignFile` pour signer les fichiers spécifiés dans la collection d'éléments `FilesToSign` avec le certificat spécifié par la propriété `CertificateThumbprint`.
 
 ```xml
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -76,4 +76,4 @@ Signe le fichier spécifié à l'aide du certificat spécifié.
 ## <a name="see-also"></a>Voir aussi
 
 - [Informations de référence sur les tâches](../msbuild/msbuild-task-reference.md)
-- [Tâches :](../msbuild/msbuild-tasks.md)
+- [Tâches](../msbuild/msbuild-tasks.md)

@@ -11,10 +11,10 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: ec53a67980866ed6422fae5764bbf6a9313ef91e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "62957662"
 ---
 # <a name="define-custom-commands-for-python-projects"></a>Définir des commandes personnalisées pour les projets Python
@@ -40,11 +40,11 @@ Chaque commande personnalisée peut faire référence à un fichier Python, un m
 >
 > Quand vous développez une commande personnalisée, tous ces clics peuvent devenir fastidieux. Pour améliorer l’efficacité de votre workflow, chargez le projet dans Visual Studio et ouvrez également le fichier *.pyproj* dans un éditeur distinct (par exemple, une autre instance de Visual Studio, Visual Studio Code, le Bloc-notes, etc.). Quand vous enregistrez vos changements dans l’éditeur et que vous passez à Visual Studio, ce dernier détecte les changements apportés et vous demande s’il faut recharger le projet (**Le projet \<nom> a été modifié en dehors de l’environnement.**). Sélectionnez **Recharger**. Vos changements sont alors appliqués immédiatement en une seule étape.
 
-## <a name="walkthrough-add-a-command-to-a-project-file"></a>Procédure pas à pas : ajouter une commande à un fichier projet
+## <a name="walkthrough-add-a-command-to-a-project-file"></a>Procédure pas à pas : ajouter une commande dans un fichier projet
 
-Pour vous familiariser avec les commandes personnalisées, cette section décrit un exemple simple qui exécute directement le fichier de démarrage d’un projet avec *python.exe*. (Cette commande revient à utiliser **Déboguer** > **Démarrer sans débogage**.)
+Pour vous familiariser avec les commandes personnalisées, cette section décrit un exemple simple qui exécute directement le fichier de démarrage d’un projet avec *python.exe*. (Une telle commande est effectivement la même que l’utilisation **de Debug** > **Start sans Debugging**.)
 
-1. Créez un projet nommé « Python-CustomCommands » en utilisant le modèle **Application Python**. (Consultez [Démarrage rapide : créer un projet Python à partir d’un modèle](quickstart-02-python-in-visual-studio-project-from-template.md) pour obtenir des instructions si vous ne connaissez pas encore le processus.)
+1. Créez un projet nommé « Python-CustomCommands » en utilisant le modèle **Application Python**. (Consultez [Démarrage rapide : créer un projet de Python à partir d’un modèle](quickstart-02-python-in-visual-studio-project-from-template.md) pour obtenir des instructions si vous ne connaissez pas encore le processus.)
 
 1. Dans *Python_CustomCommands.py*, ajoutez le code `print("Hello custom commands")`.
 
@@ -127,15 +127,15 @@ La forme générale de l’élément `<Target>` est indiquée dans le pseudo-cod
   </Target>
 ```
 
-Pour faire référence aux propriétés du projet ou aux variables d’environnement dans les valeurs d’attribut, utilisez le nom au sein d’un jeton `$()`, tel que `$(StartupFile)` et `$(MSBuildProjectDirectory)`. Pour plus d’informations, consultez [Propriétés MSBuild](../msbuild/msbuild-properties.md).
+Pour faire référence aux propriétés du projet ou aux variables d’environnement dans les valeurs d’attribut, utilisez le nom au sein d’un jeton `$()`, tel que `$(StartupFile)` et `$(MSBuildProjectDirectory)`. Pour plus d’informations, voir [propriétés MSBuild](../msbuild/msbuild-properties.md).
 
 ### <a name="target-attributes"></a>Attributs Target
 
 | Attribut | Obligatoire | Description |
 | --- | --- | --- |
-| Name | Oui | Identificateur de la commande dans le projet Visual Studio. Ce nom doit être ajouté au groupe de propriétés `<PythonCommands>` pour que la commande apparaisse dans le sous-menu Python. |
-| Etiquette | Oui | Nom d’affichage d’interface utilisateur qui apparaît dans le sous-menu Python. |
-| Returns (Retours) | Oui | Doit contenir `@(Commands)`, qui identifie la cible en tant que commande. |
+| Nom | Oui | Identificateur de la commande dans le projet Visual Studio. Ce nom doit être ajouté au groupe de propriétés `<PythonCommands>` pour que la commande apparaisse dans le sous-menu Python. |
+| Étiquette | Oui | Nom d’affichage d’interface utilisateur qui apparaît dans le sous-menu Python. |
+| Retours | Oui | Doit contenir `@(Commands)`, qui identifie la cible en tant que commande. |
 
 ### <a name="createpythoncommanditem-attributes"></a>Attributs CreatePythonCommandItem
 
@@ -143,10 +143,10 @@ Toutes les valeurs d’attribut sont insensibles à la casse.
 
 | Attribut | Obligatoire | Description |
 | --- | --- | --- |
-| TargetType | Oui | Spécifie ce que contient l’attribut Target et comment il est utilisé avec l’attribut Arguments :<ul><li>**executable** : exécute l’exécutable nommé dans Target, en ajoutant la valeur dans Arguments, comme si vous l’entriez directement sur la ligne de commande. La valeur doit contenir uniquement un nom de programme sans arguments.</li><li>**script** : exécute *python.exe* avec le nom de fichier dans Target, suivi de la valeur dans Arguments.</li><li>**module** : exécute `python -m`, suivi du nom du module dans Target, suivi de la valeur dans Arguments.</li><li>**code** : exécute le code inline contenu dans Target. La valeur Arguments est ignorée.</li><li>**pip** : exécute `pip` avec la commande dans Target, suivi d’Arguments ; toutefois, si ExecuteIn a la valeur « output », pip se base sur la commande `install` et utilise Target comme nom de package.</li></ul> |
-| une cible | Oui | Nom de fichier, nom du module, code ou commande pip à utiliser selon le TargetType. |
+| TargetType | Oui | Spécifie ce que contient l’attribut Target et comment il est utilisé avec l’attribut Arguments :<ul><li>**executable** : exécute l’exécutable nommé dans Target, en ajoutant la valeur dans Arguments, comme si vous l’entriez directement sur la ligne de commande. La valeur doit contenir uniquement un nom de programme sans arguments.</li><li>**script** : exécute *python.exe* avec le nom de fichier dans Target, suivi de la valeur dans Arguments.</li><li>**module** : exécute `python -m`, suivi du nom du module dans Target, suivi de la valeur dans Arguments.</li><li>**code** : exécute le code inline contenu dans Target. La valeur Arguments est ignorée.</li><li>**pip** : exécute `pip` avec la commande dans Target, suivi d’Arguments ; toutefois, si ExecuteIn a la valeur « output », pip suppose la commande `install` et utilise Target comme nom de package.</li></ul> |
+| Cible | Oui | Nom de fichier, nom du module, code ou commande pip à utiliser selon le TargetType. |
 | Arguments | Facultatif | Spécifie une chaîne d’arguments (le cas échéant) à donner à la cible. Quand le TargetType a la valeur `script`, notez que les arguments sont fournis au programme Python, et non à *python.exe*. Ignoré pour le TargetType `code`. |
-| ExecuteIn | Oui | Spécifie l’environnement dans lequel exécuter la commande :<ul><li>**console** : (par défaut) exécute Target et les arguments comme si vous les entriez directement sur la ligne de commande. Une fenêtre de commande s’affiche durant l’exécution de Target, puis se ferme automatiquement.</li><li>**consolepause** : identique à console, mais attend l’appui sur une touche avant de fermer la fenêtre.</li><li>**output** : exécute Target et affiche ses résultats dans la fenêtre **Sortie** de Visual Studio. Si TargetType a la valeur « pip », Visual Studio utilise Target comme nom du package et ajoute les arguments.</li><li>**repl** : exécute Target dans la fenêtre [Mode interactif Python](python-interactive-repl-in-visual-studio.md) ; le nom d’affichage facultatif est utilisé pour le titre de la fenêtre.</li><li>**none** : se comporte comme console.</li></ul>|
+| ExecuteIn | Oui | Spécifie l’environnement dans lequel exécuter la commande :<ul><li>**console** : (par défaut) exécute Target et les arguments comme si vous les entriez directement sur la ligne de commande. Une fenêtre de commande s’affiche durant l’exécution de Target, puis se ferme automatiquement.</li><li>**consolepause** : identique à console, mais attend l’appui sur une touche avant de fermer la fenêtre.</li><li>**output** : exécute Target et affiche ses résultats dans la fenêtre **Sortie** de Visual Studio. Si TargetType a la valeur « pip », Visual Studio utilise Target comme nom du package et ajoute les arguments.</li><li>**repl** : exécute Target dans la [fenêtre interactive Python](python-interactive-repl-in-visual-studio.md) ; le nom d’affichage facultatif est utilisé pour le titre de la fenêtre.</li><li>**none** : se comporte comme console.</li></ul>|
 | WorkingDirectory | Facultatif | Dossier dans lequel exécuter la commande. |
 | ErrorRegex<br>WarningRegEx | Facultatif | Utilisé uniquement quand ExecuteIn a la valeur `output`. Les deux valeurs spécifient une expression régulière avec laquelle Visual Studio analyse le résultat de la commande pour afficher les erreurs et les avertissements dans sa fenêtre **Liste d’erreurs**. Si rien n’est spécifié, la commande n’affecte pas la fenêtre **Liste d’erreurs**. Pour plus d’informations sur ce que Visual Studio attend, consultez [Groupes de capture nommés](#named-capture-groups-for-regular-expressions). |
 | RequiredPackages | Facultatif | Liste de spécifications de package pour la commande au même format que [*requirements.txt*](https://pip.readthedocs.io/en/1.1/requirements.html) (pip.readthedocs.io). Par exemple, la commande **Exécuter PyLint** spécifie `pylint>=1.0.0`. Avant d’exécuter la commande, Visual Studio vérifie que tous les packages répertoriés dans la liste sont installés. Visual Studio utilise pip pour installer les packages manquants. |
@@ -156,11 +156,11 @@ Toutes les valeurs d’attribut sont insensibles à la casse.
 
 Lors de l’analyse des erreurs et des avertissements à partir de la sortie d’une commande, Visual Studio s’attend à ce que les expressions régulières dans les valeurs `ErrorRegex` et `WarningRegex` utilisent les groupes nommés suivants :
 
-- `(?<message>...)`: Texte de l’erreur
-- `(?<code>...)`: Code d'erreur
-- `(?<filename>...)`: Nom du fichier pour lequel l’erreur est signalée
-- `(?<line>...)`: Numéro de ligne de l’emplacement où l’erreur a été signalée dans le fichier.
-- `(?<column>...)`: Numéro de colonne de l’emplacement où l’erreur a été signalée dans le fichier.
+- `(?<message>...)` : texte de l’erreur.
+- `(?<code>...)` : code de l’erreur.
+- `(?<filename>...)` : nom du fichier pour lequel l’erreur est signalée.
+- `(?<line>...)` : numéro de ligne de l’emplacement où l’erreur a été signalée dans le fichier.
+- `(?<column>...)` : numéro de colonne de l’emplacement où l’erreur a été signalée dans le fichier.
 
 Par exemple, PyLint produit des avertissements semblables à ce qui suit :
 
@@ -306,7 +306,7 @@ Pour explorer comment les commandes **Démarrer le serveur** et **Démarrer le s
   </Target>
 ```
 
-*À partir de [fxthomas/Example.pyproj.xml](https://gist.github.com/fxthomas/5c601e3e0c1a091bcf56aed0f2960cfa) (GitHub), utilisé avec autorisation.*
+*De [fxthomas/Example.pyproj.xml](https://gist.github.com/fxthomas/5c601e3e0c1a091bcf56aed0f2960cfa) (GitHub), utilisé avec permission.*
 
 ### <a name="generate-windows-installer"></a>Générer le programme d’installation Windows
 
@@ -325,7 +325,7 @@ Pour explorer comment les commandes **Démarrer le serveur** et **Démarrer le s
   </Target>
 ```
 
-*À partir de [fxthomas/Example.pyproj.xml](https://gist.github.com/fxthomas/5c601e3e0c1a091bcf56aed0f2960cfa) (GitHub), utilisé avec autorisation.*
+*De [fxthomas/Example.pyproj.xml](https://gist.github.com/fxthomas/5c601e3e0c1a091bcf56aed0f2960cfa) (GitHub), utilisé avec permission.*
 
 ### <a name="generate-wheel-package"></a>Générer un package de roue
 
@@ -345,11 +345,11 @@ Pour explorer comment les commandes **Démarrer le serveur** et **Démarrer le s
 </Target>
 ```
 
-*À partir de [fxthomas/Example.pyproj.xml](https://gist.github.com/fxthomas/5c601e3e0c1a091bcf56aed0f2960cfa) (GitHub), utilisé avec autorisation.*
+*De [fxthomas/Example.pyproj.xml](https://gist.github.com/fxthomas/5c601e3e0c1a091bcf56aed0f2960cfa) (GitHub), utilisé avec permission.*
 
-## <a name="troubleshooting"></a>Résolution des problèmes
+## <a name="troubleshooting"></a>Dépannage
 
-### <a name="message-the-project-file-could-not-be-loaded"></a>Message : « Impossible de charger le fichier projet »
+### <a name="message-the-project-file-could-not-be-loaded"></a>Message : « Impossible de charger le fichier projet. »
 
 Indique que le fichier projet comprend des erreurs de syntaxe. Le message inclut l’erreur spécifique avec un numéro de ligne et la position du caractère.
 
@@ -372,7 +372,7 @@ Par exemple, dans les éléments suivants, le nom « Example » dans le groupe d
   </Target>
 ```
 
-### <a name="message-an-error-occurred-while-running-command-name-failed-to-get-command-target-name-from-project"></a>Message : « Une erreur s’est produite lors de l’exécution de \<nom de la commande>. Échec de l’obtention de la commande \<nom de la cible> du projet ».
+### <a name="message-an-error-occurred-while-running-command-name-failed-to-get-command-target-name-from-project"></a>Message : « Une erreur s’est produite lors de l’exécution de \<nom de la commande>. Échec de l’obtention de la commande \<nom de la cible> du projet ».
 
 Indique que le contenu de l’élément `<Target>` ou `<CreatePythonCommandItem>` est incorrect. Raisons possibles :
 
@@ -386,7 +386,7 @@ Les valeurs d’attribut peuvent être vides si vous faites référence à une p
 
 ### <a name="visual-studio-hangs-and-crashes-when-running-the-command"></a>Visual Studio se bloque durant l’exécution de la commande
 
-Vous tentez probablement d’exécuter une commande de console avec `ExecuteIn="output"`, auquel cas Visual Studio peut se bloquer quand il tente d’analyser la sortie. Utilisez plutôt `ExecuteIn="console"`. (Consultez le [problème 3682](https://github.com/Microsoft/PTVS/issues/3681).)
+Vous tentez probablement d’exécuter une commande de console avec `ExecuteIn="output"`, auquel cas Visual Studio peut se bloquer quand il tente d’analyser la sortie. Utilisez `ExecuteIn="console"` à la place. (Consultez le [problème 3682](https://github.com/Microsoft/PTVS/issues/3681).)
 
 ### <a name="executable-command-is-not-recognized-as-an-internal-or-external-command-operable-program-or-batch-file"></a>La commande executable « n’est pas reconnue en tant que commande interne ou externe, un programme exécutable ou un fichier de commandes »
 

@@ -12,10 +12,10 @@ ms.workload:
 - data-science
 - azure
 ms.openlocfilehash: 551cff18849f0e8ad9fcd6f2c1e08561291b177f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "62957370"
 ---
 # <a name="configure-python-web-apps-for-iis"></a>Configurer des applications web Python pour IIS
@@ -25,7 +25,7 @@ Si vous utilisez Internet Information Services (IIS) comme serveur web sur un or
 > [!Note]
 > Cet article était auparavant une aide à la configuration de Python sur Azure App Service sous Windows. Les extensions Python et les hôtes Windows utilisés dans ce scénario sont maintenant déconseillés au profit d’Azure App Service sous Linux. Pour plus d’informations, voir [Publier des applications Python sur Azure App Service (Linux)](publishing-python-web-applications-to-azure-from-visual-studio.md). L’article précédent, cependant, est toujours disponible sur [Gérer App Service sous Windows avec les extensions Python](managing-python-on-azure-app-service.md).
 
-## <a name="install-python-on-windows"></a>Installer Python sous Windows
+## <a name="install-python-on-windows"></a>Installer Python sur Windows
 
 Pour exécuter une application web, commencez par installer directement la version requise de Python sur l’ordinateur hôte Windows (voir [Installer des interpréteurs Python](installing-python-interpreters.md)).
 
@@ -86,7 +86,7 @@ Ensuite, modifiez le fichier *web.config* votre application en ajoutant les chem
     </system.webServer>
     ```
 
-1. Dans la section `<appSettings>` de *web.config*, ajoutez les clés de `WSGI_HANDLER`, `WSGI_LOG` (facultatif) et `PYTHONPATH` :
+1. Dans `<appSettings>` la section de *web.config* `WSGI_LOG` , ajouter `PYTHONPATH`des clés pour `WSGI_HANDLER`, (facultatif), et :
 
     ```xml
     <appSettings>
@@ -112,7 +112,7 @@ Ensuite, modifiez le fichier *web.config* votre application en ajoutant les chem
         <add key="WSGI_HANDLER" value="app.wsgi_app()"/>
         ```
 
-    - **Flask** : changez la valeur de `WSGI_HANDLER` en `<project_name>.app`, où `<project_name>` correspond au nom de votre projet. Vous pouvez trouver l’identificateur exact en examinant l’instruction `from <project_name> import app` dans *runserver.py*. Par exemple, si le projet est nommé « FlaskAzurePublishExample », l’entrée apparaît comme suit :
+    - **Flask** : changez la valeur de `WSGI_HANDLER` en `<project_name>.app`, où `<project_name>` correspond au nom de votre projet. Vous pouvez trouver l’identificateur exact en examinant l’instruction `from <project_name> import app` dans *runserver.py*. Par exemple, si le projet est nommé « FlaskAzurePublishExample », l’entrée apparaît comme suit :
 
         ```xml
         <!-- Flask apps only: change the project name to match your app -->
@@ -132,14 +132,14 @@ Ensuite, modifiez le fichier *web.config* votre application en ajoutant les chem
         <add key="DJANGO_SETTINGS_MODULE" value="django_iis_example.settings" />
         ```
 
-1. **Applications Django uniquement** : dans le fichier *settings.py* du projet Django, ajoutez votre domaine d’URL de site ou votre adresse IP à `ALLOWED_HOSTS`, comme indiqué ci-dessous, en remplaçant bien sûr « 1.2.3.4 » par votre URL ou votre adresse IP :
+1. **Applications Django uniquement** : dans le fichier *settings.py* du projet Django, ajoutez votre domaine d’URL de site ou votre adresse IP à `ALLOWED_HOSTS`, comme ci-dessous, en remplaçant bien sûr « 1.2.3.4 » par votre URL ou votre adresse IP :
 
     ```python
     # Change the URL or IP address to your specific site
     ALLOWED_HOSTS = ['1.2.3.4']
     ```
 
-    Si vous ne parvenez pas à ajouter votre URL au tableau, vous obtenez l’erreur suivante : **DisallowedHost pour / En-tête HTTP_HOST non valide : « \<URL du site\> ». Vous devrez peut-être ajouter « \<URL du site\> » à ALLOWED_HOSTS.**
+    L’échec d’ajouter votre URL au tableau entraîne l’erreur **DisallowedHost\<à\>/ Invalid HTTP_HOST en-tête: ' URL du site '. Vous devrez peut-être\>ajouter «\<URL du site » à ALLOWED_HOSTS.**
 
     Remarque : lorsque le tableau est vide, Django autorise automatiquement « localhost » et « 127.0.0.1 », mais le fait d’ajouter votre URL de production a pour effet de retirer ces autorisations. C’est la raison pour laquelle vous pouvez souhaiter conserver des copies de développement et de production distinctes de *settings.py*, ou utiliser des variables d’environnement pour contrôler les valeurs d’exécution.
 

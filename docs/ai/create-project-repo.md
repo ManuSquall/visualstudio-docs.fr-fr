@@ -8,23 +8,23 @@ ms.topic: conceptual
 ms.workload:
 - multiple
 ms.openlocfilehash: 73f1595e0e6c8f182f0bedcece51011390964ed2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "62539617"
 ---
 # <a name="clone-a-repository-of-python-code-in-visual-studio"></a>Cloner un dépôt de code Python dans Visual Studio
 
 Une fois que vous avez [installé Visual Studio Tools pour IA](installation.md), vous pouvez facilement cloner un dépôt de code Python et créer un projet à partir de celui-ci.
 
-1. Pour vous connecter à des dépôts GitHub, exécutez le programme d’installation de Visual Studio, sélectionnez **Modifier**, puis sélectionnez l’onglet **Composants individuels**. Faites défiler jusqu’à la section **Outils de code**, sélectionnez **Extension GitHub pour Visual Studio**, puis sélectionnez **Modifier**.
+1. Pour vous connecter aux référentiels GitHub, exécutez l’installateur Visual Studio, **sélectionnez Modifier**et sélectionnez **l’onglet Composants individuels.** Faites défiler vers le bas vers la section **des outils de code,** sélectionnez **l’extension GitHub pour Visual Studio**, et sélectionnez **Modifier**.
 
     ![Sélection de l’extension GitHub dans le programme d’installation de Visual Studio](media/create-project-repo/installation-github-extension.png)
 
 2. Lancez Visual Studio.
 
-3. Sélectionnez **Affichage > Team Explorer** pour ouvrir la fenêtre **Team Explorer** dans laquelle vous pouvez vous connecter à GitHub ou Azure DevOps, ou bien cloner un dépôt.
+3. Sélectionnez **View > Team Explorer** pour ouvrir la fenêtre Team **Explorer** dans laquelle vous pouvez vous connecter à GitHub ou Azure DevOps, ou cloner un référentiel.
 
     ![Fenêtre Team Explorer montrant Azure DevOps Services, GitHub et le clonage d’un dépôt](media/create-project-repo/team-explorer-devops.png)
 
@@ -37,13 +37,13 @@ Une fois que vous avez [installé Visual Studio Tools pour IA](installation.md),
 
     ![Fenêtre Team Explorer, création d’un projet à partir d’un clone](media/create-project-repo/team-explorer-new-project.png)
 
-6. Dans la boîte de dialogue **Nouveau projet** qui s’affiche, sélectionnez « **À partir de code Python existant** », spécifiez un nom pour le projet, définissez **Emplacement** sur le même dossier que le dépôt, puis sélectionnez **OK**. Dans l’Assistant qui apparaît, sélectionnez **Terminer**.
+6. Dans le dialogue **new Project** qui apparaît, sélectionnez " From Existing**Python Code**", spécifier un nom pour le projet, définir **l’emplacement** au même dossier que le dépôt, et sélectionnez **OK**. Dans l’Assistant qui apparaît, sélectionnez **Terminer**.
 
 7. Sélectionnez **Affichage > Explorateur de solutions** dans le menu.
 
-8. Dans l’Explorateur de solutions, développez le nœud `TensorFlow Examples> MNIST`, cliquez avec le bouton droit sur `convolutional.py`, puis sélectionnez **Définir comme fichier de démarrage**. Cette étape indique à Visual Studio quel fichier utiliser quand vous exécutez le projet.
+8. Dans Solution Explorer, `TensorFlow Examples> MNIST` étendre le nœud, clic `convolutional.py`droit et sélectionnez Set comme startup **File**. Cette étape indique à Visual Studio quel fichier utiliser quand vous exécutez le projet.
 
-9. Appuyez sur **Ctrl**+**F5** ou sélectionnez **Déboguer > Démarrer sans débogage** pour exécuter le programme. Si vous voyez une erreur, vérifiez le paramètre du répertoire de travail défini à l’étape précédente.
+9. Appuyez sur **Ctrl**+**F5** ou sélectionnez **Debug > Start Without Debugging** pour exécuter le programme. Si vous voyez une erreur, vérifiez le paramètre du répertoire de travail défini à l’étape précédente.
 
 10. Lorsque le programme s’exécute correctement, vous le voyez commencer à télécharger votre jeu de données d’apprentissage et de test, puis effectuer l’apprentissage du modèle et générer votre taux d’erreur. Vous voulez que le taux d’erreur diminue au fil du temps
 

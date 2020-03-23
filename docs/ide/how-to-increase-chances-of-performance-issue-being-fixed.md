@@ -1,77 +1,77 @@
 ---
-title: Comment pouvez-vous augmenter les chances de résolution d’un problème de performances
-description: Informations supplémentaires et meilleures pratiques pour envoyer des problèmes de performances dans Visual Studio
+title: Comment pouvez-vous augmenter les chances d’un problème de performance
+description: Informations supplémentaires et pratiques exemplaires pour soumettre des questions de performance dans Visual Studio
 author: seaniyer
 ms.author: seiyer
 ms.date: 11/19/2019
 ms.topic: reference
 ms.openlocfilehash: 119de27298acafee7dc563a30246b18da42f9f29
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/13/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75918161"
 ---
-# <a name="how-to-increase-the-chances-of-a-performance-issue-being-fixed"></a>Comment augmenter les chances de résolution d’un problème de performances
+# <a name="how-to-increase-the-chances-of-a-performance-issue-being-fixed"></a>Comment augmenter les chances de fixer un problème de performance
 
-L’outil «[signaler un problème](/visualstudio/ide/how-to-report-a-problem-with-visual-studio?view=vs-2019)» est largement utilisé par les utilisateurs de Visual Studio pour signaler une série de problèmes. L’équipe Visual Studio parvient à faire face aux tendances de blocage et de lenteur des commentaires des utilisateurs et à résoudre les problèmes qui ont un impact sur un large SWATH d’utilisateurs. Plus un ticket de commentaires spécifique est exploitable, plus il est probable qu’il sera diagnostiqué et résolu rapidement par l’équipe du produit. Ce document décrit les meilleures pratiques lors de la création de rapports sur les incidents ou les problèmes de lenteur afin de les rendre plus exploitables.
+L’outil «[Report a problem](/visualstudio/ide/how-to-report-a-problem-with-visual-studio?view=vs-2019)» est largement utilisé par les utilisateurs de Visual Studio pour signaler une série de problèmes. L’équipe Visual Studio repère les tendances de l’accident et de la lenteur dans la rétroaction des utilisateurs et aborde les problèmes ayant un large nombre d’utilisateurs. Plus un billet de rétroaction spécifique est exploitable, plus il sera susceptible d’être diagnostiqué et résolu rapidement par l’équipe du produit. Ce document décrit les meilleures pratiques tout en signalant des problèmes d’accident ou de lenteur pour les rendre plus exploitables.
 
-## <a name="general-best-practices"></a>Meilleures pratiques générales
+## <a name="general-best-practices"></a>Bonnes pratiques générales
 
-Visual Studio est une plateforme importante et complexe qui prend en charge une multitude de langages, de types de projets, de plateformes et bien plus encore. Son fonctionnement est une fonction des composants qui sont installés et actifs dans une session, les extensions installées, les paramètres de Visual Studio, la configuration de l’ordinateur et enfin la forme du code en cours de modification. Étant donné le nombre de variables, il est difficile de savoir si le rapport de problème d’un utilisateur présente le même problème sous-jacent qu’un rapport de problème d’un autre utilisateur, même si le symptôme visible est le même. Dans ce cas, voici quelques meilleures pratiques pour vous assurer que votre rapport de problèmes spécifique est susceptible de faire l’objet d’un diagnostic plus probable.
+Visual Studio est une grande plate-forme complexe qui prend en charge une multitude de langues, types de projets, plates-formes, et plus encore. La façon dont il fonctionne est une fonction des composants installés et actifs dans une session, les extensions installées, les paramètres Visual Studio, la configuration de la machine, et enfin la forme du code qui est en cours d’édition. Étant donné le nombre de variables, il est difficile de dire si le rapport de problème d’un utilisateur a le même problème sous-jacent qu’un rapport de problème d’un autre utilisateur, même si le symptôme visible est le même. Étant donné que, voici quelques pratiques exemplaires pour s’assurer que votre rapport de problème spécifique a plus de chances d’être diagnostiqué.
 
-**Fournir le titre le plus spécifique possible**
+**Fournir un titre aussi spécifique que possible**
 
-Recherchez des signatures distinctes pour le problème signalé et incluez le plus grand nombre possible dans le titre. Si le titre est descriptif, il est moins probable que les utilisateurs avec des problèmes non liés (mais même symptôme superficiel) votent ou commentent votre ticket, ce qui complique le diagnostic de *votre* problème.
+Recherchez des signatures distinctes pour le problème signalé et incluez autant que possible dans le titre. Si le titre est descriptif, il est moins probable que les utilisateurs ayant des problèmes sans rapport (mais même symptôme superficiel) voteront ou commentent votre billet, ce qui rend le diagnostic de *votre* problème plus difficile.
 
-**En cas de doute, consigner un nouveau rapport de problème**
+**En cas de doute, enregistrez un nouveau rapport de problème**
 
-De nombreux problèmes peuvent ne pas avoir de signature distinctive ou de étapes à reproduire. Dans ce cas, un nouveau rapport est mieux adapté qu’un vote ou un commentaire sur un autre rapport, qui signale un *symptôme*extérieur similaire. Selon le type de rapport, incluez des fichiers de diagnostic supplémentaires dans votre rapport, comme décrit plus loin dans ce document.
+De nombreux problèmes peuvent ne pas avoir de signature distinctive ou des étapes à reproduire. Dans de tels cas, un nouveau rapport vaut mieux qu’un upvote ou un commentaire sur un autre rapport, qui signale un *symptôme*extérieur similaire . Selon le type de rapport, inclure des dossiers diagnostiques supplémentaires à votre rapport tel que décrit plus tard dans ce document.
 
-**Meilleures pratiques spécifiques au problème**
+**Pratiques exemplaires spécifiques aux problèmes**
 
-Vous trouverez ci-dessous des problèmes difficiles à diagnostiquer sans bons fichiers de diagnostic. Après avoir identifié le cas qui décrit le mieux votre problème, suivez les étapes de commentaires spécifiques à ce cas.
+Décrit ci-dessous sont des problèmes qui sont difficiles à diagnostiquer sans bons fichiers diagnostiques. Après avoir identifié le cas qui décrit le mieux votre problème, suivez les étapes de rétroaction spécifiques à ce cas.
 
--   [Incidents :](#crashes) Un incident se produit lorsque le processus (Visual Studio) se termine de manière inattendue.
+-   [Crashs:](#crashes) Un accident se produit lorsque le processus (Visual Studio) se termine de façon inattendue.
 
--   Absence de [réponse :](#unresponsiveness) VS ne répond pas pendant une période prolongée.
+-   [Insension :](#unresponsiveness) VS devient insensible pendant une période prolongée.
 
--   [Problèmes de lenteur :](#slowness-and-high-cpu-issues) Toute action spécifique dans VS est plus lente que souhaitée
+-   [Problèmes de lenteur :](#slowness-and-high-cpu-issues) Toute action spécifique en VS est plus lente que souhaitée
 
--   [UC élevée :](#slowness-and-high-cpu-issues) Périodes étendues d’utilisation intensive de l’UC de manière inattendue
+-   [CPU élevé:](#slowness-and-high-cpu-issues) Périodes prolongées d’utilisation inattendue élevée du processeur
 
--   [Problèmes hors processus :](#out-of-process-issues) Un problème provoqué par un processus satellite Visual Studio
+-   [Questions hors-processus :](#out-of-process-issues) Un problème causé par un processus satellite Visual Studio
 
 ## <a name="crashes"></a>Crashes
-Un incident se produit lorsque le processus (Visual Studio) se termine de manière inattendue.
+Un accident se produit lorsque le processus (Visual Studio) se termine de façon inattendue.
 
-**Blocages directement reproductibles**
+**Crashs directement reproductibles**
 
-Les blocages directement reproductibles sont des cas qui présentent toutes les caractéristiques suivantes :
+Les plantages directement reproductibles sont des cas qui ont toutes les caractéristiques suivantes :
 
-- Peut être observé en suivant un ensemble d’étapes connu
+- Peut être observé en suivant un ensemble connu d’étapes
 
-- Peut être observé sur plusieurs ordinateurs (le cas échéant)
+- Peut être observé sur plusieurs ordinateurs (si disponible)
 
-- Peut être reproduit dans un exemple de code ou un projet qui peut être lié ou fourni dans le cadre des commentaires (si les étapes impliquent l’ouverture d’un projet ou d’un document)
+- Peut être reproduit dans le code de l’échantillon ou dans un projet qui peut être lié ou fourni dans le cadre de la rétroaction (si les étapes impliquent l’ouverture d’un projet ou d’un document)
 
-Pour ces problèmes, suivez les étapes de la section «[Comment signaler un problème](/visualstudio/ide/how-to-report-a-problem-with-visual-studio-2017)» et veillez à inclure les éléments suivants :
+Pour ces questions, suivez les étapes de «[Comment signaler un problème](/visualstudio/ide/how-to-report-a-problem-with-visual-studio-2017)» et assurez-vous d’inclure :
 
--   Étapes à suivre pour reproduire le problème
+-   Les étapes pour reproduire le problème
 
--   Un projet de reproduction autonome comme décrit ci-dessus. Si la reproduction autonome n’est pas possible, veuillez inclure :
+-   Un projet de répro autonome tel que décrit ci-dessus. Si la répro autonome n’est pas possible, alors s’il vous plaît inclure:
 
-    -   Langue des projets ouverts (C\#, C++, etc.)
+    -   La langue des projets\#ouverts (C, C, etc.)
 
-    -   Genre de projet (application console, ASP.NET, etc.)
+    -   Le type de projet (Application Console, ASP.NET, etc.)
 
 
 > [!NOTE]
-> **Commentaires les plus importants :** Dans ce cas, les commentaires les plus précieux sont l’ensemble des étapes permettant de reproduire le problème, ainsi que l’exemple de code source.
+> **Commentaires les plus précieux :** Pour ce cas, la rétroaction la plus précieuse est l’ensemble des étapes pour reproduire le problème avec le code source de l’échantillon.
 
-**Incidents inconnus**
+**Accidents inconnus**
 
-Si vous n’êtes pas sûr de ce qui est à l’origine de vos incidents ou s’ils semblent aléatoires, vous pouvez capturer des vidages localement chaque fois que Visual Studio se bloque et les joindre à des éléments de commentaires distincts. Pour enregistrer des dumps localement lorsque Visual Studio se bloque, exécutez les commandes suivantes dans une fenêtre de commande d’administrateur :
+Si vous n’êtes pas sûr de ce qui cause vos accidents ou ils semblent aléatoires, alors vous pouvez capturer des décharges localement chaque fois que Visual Studio s’écrase et les joindre à des éléments de rétroaction distincts. Pour enregistrer les décharges localement lorsque Visual Studio s’écrase, exécutez les commandes suivantes dans une fenêtre de commande d’administrateur :
 
 ```
 reg add "HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows\\Windows Error
@@ -87,114 +87,114 @@ reg add "HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows\\Windows Error
 Reporting\\LocalDumps\\devenv.exe" /v DumpFolder /t REG_SZ /d "C:\\CrashDumps"
 ```
 
-Personnalisez le nombre de vidages et le dossier de vidage, le cas échéant. Pour plus d’informations sur ces [paramètres,](/windows/win32/wer/collecting-user-mode-dumps)consultez.
+Personnalisez le nombre de décharges et le dossier de décharge, le cas échéant. Retrouvez plus d’informations sur ces paramètres [ici](/windows/win32/wer/collecting-user-mode-dumps).
 
 > [!NOTE]
-> Les vidages capturés à l’aide du gestionnaire des tâches sont susceptibles d’avoir un nombre de bits incorrect, ce qui les rend moins utilisables. La procédure décrite ci-dessus est la méthode recommandée pour capturer un dump de tas. Si vous ne souhaitez pas utiliser le gestionnaire des tâches, fermez celui qui est en cours d’exécution, lancez le gestionnaire des tâches 32 bits (% windir%\\SysWOW64\\taskmgr. exe) et collectez un vidage du tas à partir de là.
+> Les décharges capturées à l’aide de Task Manager sont susceptibles d’être de la mauvaise mordant, ce qui les rend moins utilisables. La procédure décrite ci-dessus est la façon préférée de capturer un dépotoir de tas. Si vous voulez utiliser Task Manager, fermez celui qui est actuellement en cours d’exécution, lancez le gestionnaire de tâches 32bit (%windir%\\syswow64\\taskmgr.exe) et de recueillir un tas de décharge à partir de là.
 
 > [!NOTE] 
-> Chaque fichier dump produit par cette méthode aura une taille maximale de 4 Go. Veillez à définir DumpFolder sur un emplacement avec un espace disque suffisant ou à ajuster le DumpCount de manière appropriée.
+> Chaque fichier de décharge produit par cette méthode sera jusqu’à 4 Go de taille. Assurez-vous de régler DumpFolder à un endroit avec un espace d’entraînement adéquat ou ajuster le DumpCount de manière appropriée.
 
-Chaque fois que Visual Studio se bloque, il crée un fichier de vidage **devenv. exe. [ numéro]. dmp** à l’emplacement configuré.
+Chaque fois que Visual Studio s’écrase, il va créer un fichier de décharge **devenv.exe.[ numéro].dmp** fichier dans l’emplacement configuré.
 
-Utilisez ensuite la section « signaler un problème... » de Visual Studio. fonctionnalité. Cela vous permettra d’attacher le vidage approprié.
+Ensuite, utilisez Visual Studio "Report a Problem..." Fonction. Il vous permettra d’attacher le dépotoir approprié.
 
-1.  Recherchez le fichier de vidage pour l’incident que vous signalez (recherchez un fichier avec l’heure de création correcte)
+1.  Localiser le fichier de décharge pour l’accident que vous signalez (recherchez un fichier avec le bon temps de création)
 
-2.  Si possible, compressez le fichier (\*. zip) pour réduire sa taille avant de soumettre des commentaires
+2.  Si possible, zip\*le fichier ( .zip) pour réduire sa taille avant de soumettre des commentaires
 
-3.  Suivez les étapes décrites dans la section «[Comment signaler un problème](/visualstudio/ide/how-to-report-a-problem-with-visual-studio-2017)», puis attachez le dump du tas à un nouvel élément de commentaires.
+3.  Suivez les étapes de "[Comment signaler un problème](/visualstudio/ide/how-to-report-a-problem-with-visual-studio-2017)", et attachez le dépotoir de tas à un nouvel élément de rétroaction.
 
 > [!NOTE] 
-> **Commentaires les plus importants :** Dans ce cas, les commentaires les plus précieux sont le vidage du tas capturé au moment de l’incident.
+> **Commentaires les plus précieux :** Pour ce cas, la rétroaction la plus précieuse est la décharge de tas capturé au moment de l’accident.
 
-## <a name="unresponsiveness"></a>Absence
-VS ne répond pas pendant une période prolongée.
+## <a name="unresponsiveness"></a>Insension
+VS devient insensible pendant une période prolongée.
 
-**Inactivité directement reproductible**
+**Unrésensivité directement reproductible**
 
-Comme décrit dans la section correspondante sur les incidents, pour les problèmes qui peuvent être facilement reproduits, vus sur plusieurs ordinateurs et qui peuvent être illustrés dans un petit exemple, les rapports de commentaires les plus précieux sont ceux qui incluent des étapes pour reproduire le problème et incluent exemple de code source qui illustre le problème.
+Comme décrit dans la section correspondante sur les accidents, pour les problèmes qui peuvent être facilement reproduits, vus sur plusieurs machines et peuvent être démontrés dans un petit échantillon, les rapports de rétroaction les plus précieux sont ceux qui comprennent des étapes pour reproduire le problème, et inclure code source de l’échantillon qui démontre le problème.
 
-**Absence de réponse inconnue**
+**Indétabilité inconnue**
 
-Si une absence de réponse se manifeste de manière imprévisible, à l’occurrence suivante, lancez une nouvelle instance de Visual Studio et signalez un problème à partir de cette instance.
-Dans l' [écran « enregistrement »](/visualstudio/ide/how-to-report-a-problem-with-visual-studio?view=vs-2019#record-a-repro), veillez à sélectionner la session Visual Studio qui ne répond pas.
+Si un non-réponse se manifeste de façon imprévisible, sur la prochaine occurrence, lancez une nouvelle instance de Visual Studio et signalez un problème à partir de cette instance.
+Dans [l’écran "Record",](/visualstudio/ide/how-to-report-a-problem-with-visual-studio?view=vs-2019#record-a-repro)assurez-vous de sélectionner la session Visual Studio qui ne répond pas.
 
-Si l’instance de Visual Studio qui ne répond pas a été lancée en mode administrateur, la deuxième instance doit également être lancée en mode administrateur.
+Si l’instance Visual Studio qui ne répond pas a été lancée en mode Administrateur, alors la deuxième instance devrait également être lancée en mode Administrateur.
 
 >[!NOTE] 
-> **Commentaires les plus importants :** Dans ce cas, les commentaires les plus précieux sont le vidage du tas capturé au moment de l’absence de réponse.
+> **Commentaires les plus précieux :** Pour ce cas, la rétroaction la plus précieuse est le dépotoir de tas capturé au moment de l’unresponsivité.
 
-## <a name="slowness-and-high-cpu-issues"></a>Problèmes de lenteur et d’UC
+## <a name="slowness-and-high-cpu-issues"></a>Slowness et High CPU Issues
 
-Ce qui rend la lenteur de l’utilisation de l’UC ou le plus actionnable est une trace des performances capturée lorsque l’opération lente ou un événement d’UC élevé est en cours.
+Ce qui rend un problème de lenteur ou d’utilisation élevée de processeur le plus actionnable est une trace de performance capturée tandis que le fonctionnement lent ou l’événement de processeur élevé est en cours.
 
 >[!NOTE] 
-> Dans la mesure du possible, isolez chaque scénario dans un rapport de commentaires distinct et spécifique.
-Par exemple, si la saisie et la navigation sont lentes, suivez les étapes ci-dessous une fois par problème. Cela permet à l’équipe de produit d’isoler la cause de problèmes spécifiques.
+> Dans la mesure du possible, isolez chaque scénario dans un rapport de rétroaction distinct et spécifique.
+Par exemple, si la dactylographie et la navigation sont lentes, suivez les étapes ci-dessous une fois par problème. Cela aide l’équipe du produit à isoler la cause de problèmes spécifiques.
 
-Pour obtenir les meilleurs résultats lors de la capture des performances, procédez comme suit :
+Pour obtenir de meilleurs résultats dans la capture des performances, suivez ces étapes :
 
-1.  S’il n’est pas déjà en cours d’exécution, une copie de Visual Studio s’ouvre et vous permet de reproduire le problème.
+1.  Si vous n’êtes pas déjà en cours d’exécution, ayez une copie de Visual Studio ouverte où vous reproduirez le problème
 
-    -   Que tout soit configuré pour reproduire le problème. Par exemple, si vous avez besoin d’un projet particulier à charger avec un fichier spécifique ouvert, assurez-vous que ces deux étapes sont terminées avant de continuer.
+    -   Faites tout mettre en place pour reproduire le problème. Par exemple, si vous avez besoin d’un projet particulier pour être chargé avec un fichier spécifique ouvert, alors assurez-vous que ces deux étapes sont terminées avant de procéder.
 
-    -   Si vous ne signalez *pas* de problème spécifique au chargement d’une solution, essayez d’attendre 5-10 minutes (ou plus, en fonction de la taille de la solution) après avoir ouvert la solution avant d’enregistrer le suivi des performances. Le processus de chargement de la solution produit une grande quantité de données. l’attente de quelques minutes nous aide à nous concentrer sur le problème spécifique que vous signalez.
+    -   Si vous ne signalez *pas* un problème spécifique au chargement d’une solution, essayez d’attendre 5-10 minutes (ou plus, selon la taille de la solution) après l’ouverture de la solution avant d’enregistrer la trace de performance. Le processus de chargement de la solution produit une grande quantité de données, donc attendre quelques minutes nous aide à nous concentrer sur le problème spécifique que vous signalez.
 
-2.  Démarrer une seconde copie de Visual Studio sans *ouvrir de solution*
+2.  Démarrer une deuxième copie de Visual Studio *sans solution ouverte*
 
-3.  Dans la nouvelle copie de Visual Studio, ouvrez l’outil **signaler un problème** .
+3.  Dans la nouvelle copie de Visual Studio, ouvrez l’outil **Report a Problem**
 
-4.  Suivez les étapes de la section [Comment signaler un problème](/visualstudio/ide/how-to-report-a-problem-with-visual-studio-2017) jusqu’à ce que vous atteigniez l’étape « fournir une trace et un dump de tas (facultatif) ».
+4.  Suivez les étapes de [la façon de signaler un problème jusqu’à](/visualstudio/ide/how-to-report-a-problem-with-visual-studio-2017) ce que vous atteigniez l’étape « Fournir une trace et un tas de décharge (facultatif) ».
 
-5.  Choisissez d’enregistrer la première copie de Visual Studio (qui rencontre un problème de performances) et de démarrer l’enregistrement.
+5.  Choisissez d’enregistrer la première copie de Visual Studio (celui qui rencontre un problème de performance) et de commencer à enregistrer.
 
-    -   L’application d’enregistrement des étapes s’affiche et commence l’enregistrement.
+    -   L’application Steps Recorder apparaîtra et commencera l’enregistrement.
 
-    -   **Pendant l’enregistrement,** effectuez l’action problématique dans la première copie de Visual Studio. Il est difficile pour nous de corriger des problèmes de performances spécifiques s’ils n’apparaissent pas dans le temps enregistré.
+    -   **Pendant l’enregistrement,** effectuer l’action problématique dans la première copie de Visual Studio. Il est difficile pour nous de corriger des problèmes de performance spécifiques s’ils n’apparaissent pas dans les délais enregistrés.
 
-    -   Si l’action est plus petite que 30 secondes et peut être répétée facilement, répétez l’action pour mieux illustrer le problème.
+    -   Si l’action est inférieure à 30 secondes et peut être facilement répétée, répétez l’action pour démontrer davantage le problème.
 
-    -   Dans la plupart des cas, une trace de 60 secondes suffit pour démontrer les problèmes, en particulier si l’action problématique a été retardée (ou a été répétée) pendant plus de 30 secondes. La durée peut être ajustée si nécessaire pour capturer le comportement que vous souhaitez corriger.
+    -   Dans la plupart des cas, une trace de 60 secondes est suffisante pour démontrer les problèmes, surtout si l’action problématique a duré (ou a été répétée) pendant plus de 30 secondes. La durée peut être ajustée au besoin pour capturer le comportement que vous souhaitez corriger.
 
-6.  Cliquez sur « arrêter l’enregistrement » dans l’enregistreur d’actions dès que l’opération lente ou l’événement d’UC élevé que vous souhaitez signaler est terminé. Le traitement de la trace des performances peut prendre quelques minutes.
+6.  Cliquez sur "Stop Record" dans Steps Recorder dès que le fonctionnement lent ou l’événement CPU élevé que vous souhaitez signaler est terminé. Il peut prendre quelques minutes pour traiter la trace de performance.
 
-7.  Une fois l’opération terminée, il y aura plusieurs pièces jointes à vos commentaires. Joignez tous les fichiers supplémentaires susceptibles de vous aider à reproduire le problème (un exemple de projet, des captures d’écran, des vidéos, etc.).
+7.  Une fois terminé, il y aura plusieurs pièces jointes à vos commentaires. Fixez tous les fichiers supplémentaires qui peuvent aider à reproduire le problème (un projet d’échantillon, des captures d’écran, des vidéos, etc.).
 
-8.  Envoyez les commentaires.
+8.  Soumettez les commentaires.
 
-Lors de l’enregistrement d’un suivi des performances, si la lenteur de l’opération ou du processeur que vous signalez est en fin de compte, arrêtez immédiatement l’enregistrement. Si un trop grand nombre d’informations sont collectées, les informations les plus anciennes sont remplacées. Si le suivi n’est pas arrêté peu de temps (en quelques secondes) après l’opération intéressante, les données de trace utiles seront remplacées.
+Lors de l’enregistrement d’une trace de performances, si le fonctionnement lent ou le processeur élevé que vous signalez prend fin, puis arrêtez immédiatement l’enregistrement. Si trop d’informations sont recueillies, les informations les plus anciennes sont écrasées. Si le tracé n’est pas arrêté rapidement (en quelques secondes) après l’opération intéressante, les données utiles de trace seront écrasées.
 
-N’attachez pas directement les traces de performances aux éléments de commentaires existants sur le site Web de la communauté des développeurs. Demander/fournir des informations supplémentaires est un flux de travail pris en charge dans l’outil signaler un problème intégré de Visual Studio. Si un suivi des performances est nécessaire pour résoudre un élément de commentaires précédent, nous allons définir l’état de l’élément de commentaires sur « besoin d’informations supplémentaires », qui peut être répondu de la même façon que pour signaler un nouveau problème. Pour obtenir des instructions détaillées, reportez-vous à la [section « besoin d’informations supplémentaires »](/visualstudio/ide/how-to-report-a-problem-with-visual-studio-2017?view=vs-2017#when-further-information-is-needed-need-more-info) dans le document signaler un problème de l’outil.
+N’attachez pas directement des traces de performance aux éléments de rétroaction existants sur le site Web de Developer Community. Demander/fournir des informations supplémentaires est un flux de travail pris en charge dans l’outil De rapport un problème intégré de Visual Studio. Si une trace de performance est nécessaire afin de résoudre un élément de rétroaction précédent, nous définirons l’état de l’élément de rétroaction à "Need More Info", qui peut être répondu de la même manière que la déclaration d’un nouveau problème. Pour obtenir des instructions détaillées, veuillez consulter [la section « Besoin de plus d’informations »](/visualstudio/ide/how-to-report-a-problem-with-visual-studio-2017?view=vs-2017#when-further-information-is-needed-need-more-info) dans le document d’un outil de signalement d’un problème.
 
 > [!NOTE] 
-> **Commentaires les plus importants :** Pour presque tous les problèmes de lenteur ou de processeur, les commentaires les plus précieux sont une description de haut niveau de ce que vous tentiez de faire, ainsi que la trace de performances (\*. etl. zip) qui capture le comportement pendant ce temps.
+> **Commentaires les plus précieux :** Pour presque toutes les lenteurs / problèmes de processeur élevé, la rétroaction la plus précieuse est une\*description de haut niveau de ce que vous essayiez de faire, avec la trace de performance (.etl.zip) qui capture le comportement pendant ce temps.
 
-**Suivis de performances avancés**
+**Traces de performance avancées**
 
-Les fonctionnalités de collecte de trace de l’outil rapport-a-problem sont suffisantes pour la plupart des scénarios. Toutefois, il existe des cas où un plus grand contrôle de la collection de suivis est nécessaire (par exemple, trace avec une plus grande taille de mémoire tampon), auquel cas PerfView est un excellent outil à utiliser. Les étapes pour l’enregistrement manuel des traces de performances à l’aide de l’outil PerfView se trouvent dans la page [enregistrement des traces de performances avec PerfView](https://github.com/dotnet/roslyn/wiki/Recording-performance-traces-with-PerfView) .
+Les capacités de collecte de traces dans l’outil Report-a-problem sont suffisantes pour la plupart des scénarios. Mais il ya des moments où plus de contrôle sur la collecte de traces est nécessaire (par exemple, tracer avec une plus grande taille de tampon), auquel cas PerfView est un excellent outil à utiliser. Les étapes pour enregistrer manuellement la trace de performance à l’aide de l’outil PerfView peuvent être trouvées sur les [traces de performances d’enregistrement avec la page PerfView.](https://github.com/dotnet/roslyn/wiki/Recording-performance-traces-with-PerfView)
 
-## <a name="out-of-process-issues"></a>Problèmes hors processus
+## <a name="out-of-process-issues"></a>Questions hors-processus
 
 > [!NOTE]
-> À compter de Visual Studio 2019 version 16,3, les journaux hors processus sont automatiquement joints aux commentaires envoyés à l’aide de l’outil signaler un problème. Toutefois, si le problème est directement reproductible, le fait de suivre les étapes ci-dessous peut vous aider à ajouter des informations supplémentaires pour mieux diagnostiquer le problème.
+> À partir de la version 16.3 de Visual Studio 2019, les journaux hors processus sont automatiquement attachés aux commentaires soumis à l’aide de l’outil Rapport a Problem. Toutefois, si le problème est directement reproductible, suivre les étapes ci-dessous pourrait tout de même aider à ajouter des informations supplémentaires pour aider à mieux diagnostiquer le problème.
 
-Il existe un certain nombre de processus satellites qui s’exécutent parallèlement à Visual Studio et fournissent différentes fonctionnalités à partir de l’extérieur du processus principal de Visual Studio. Si une erreur se produit dans l’un de ces processus satellites, elle est généralement visible côté Visual Studio sous la forme d’un « StreamJsonRpc. RemoteInvocationException » ou d’un « StreamJsonRpc. ConnectionLostException ».
+Il existe un certain nombre de processus satellitaires qui fonctionnent parallèlement à Visual Studio et fournissent diverses fonctionnalités de l’extérieur du processus principal Visual Studio. Si une erreur se produit dans l’un de ces processus satellitaires, elle est généralement vue du côté visual Studio comme une «StreamJsonRpc.RemoteInvocationException» ou un «StreamJsonRpc.ConnectionLostException».
 
-Ce qui rend ces types de problèmes les plus exploitables consiste à fournir des journaux supplémentaires qui peuvent être collectés en procédant comme suit :
+Ce qui rend ces types de questions les plus exploitables, c’est de fournir des journaux supplémentaires qui peuvent être collectés en suivant ces étapes :
 
-1.  S’il s’agit d’un problème directement reproductible, commencez par supprimer le dossier **% temp%/servicehub/logs** . Si vous ne pouvez pas reproduire ce problème, conservez ce dossier intact et ignorez les puces suivantes :
+1.  S’il s’agit d’une question directement reproductible, commencez par supprimer le dossier **%temp%/servicehub/logs.** Si vous ne pouvez pas reproduire ce problème s’il vous plaît garder ce dossier intact et ignorer les balles suivantes:
 
-    -   Définir la variable d’environnement globale **ServiceHubTraceLevel** sur **All**
+    -   Définir la variable de l’environnement mondial **ServiceHubTraceLevel** à **tous**
     -   Reproduisez le problème.
 
-2.  Téléchargez le Microsoft Visual Studio et .NET Framework outil de collecte de journaux [ici](https://www.microsoft.com/download/details.aspx?id=12493).
-3.  Exécutez l'outil. Cela génère un fichier zip dans **% temp%/vslogs.zip**. Veuillez joindre ce fichier à vos commentaires.
+2.  Téléchargez le Microsoft Visual Studio et .NET Framework Log Collection Tool [ici](https://www.microsoft.com/download/details.aspx?id=12493).
+3.  Exécutez l’outil. Cela produit un fichier zip à **%temp%/vslogs.zip**. Veuillez joindre ce fichier à vos commentaires.
 
 ## <a name="see-also"></a>Voir aussi
 
 * [Options de commentaires de Visual Studio](../ide/feedback-options.md)
-* [Signaler un problème avec Visual Studio pour Mac](/visualstudio/mac/report-a-problem)
+* [Signalez un problème avec Visual Studio pour Mac](/visualstudio/mac/report-a-problem)
 * [Signaler un problème avec C++](/cpp/how-to-report-a-problem-with-the-visual-cpp-toolset)
 * [Communauté des développeurs Visual Studio](https://developercommunity.visualstudio.com/)
 * [Confidentialité des données de la communauté des développeurs](developer-community-privacy.md)

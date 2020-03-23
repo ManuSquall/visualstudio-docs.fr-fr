@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 91b2e157ee64f5e4d91bc75a5d6f8d65d4312862
-ms.sourcegitcommit: 3ed59ce39692124fe61c484df4348c0b9abee9b9
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/04/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "78263147"
 ---
 # <a name="msbuild-best-practices"></a>Bonnes pratiques pour MSBuild
@@ -30,7 +30,7 @@ Nous vous recommandons les meilleures pratiques suivantes pour l'écriture de sc
 </MyProperty>
 ```
 
-- En général, évitez d’utiliser des caractères génériques lorsque vous sélectionnez des éléments. Spécifiez plutôt les fichiers de manière explicite. En effet, dans la plupart des types de projets, MSBuild développe des caractères génériques à différents moments, par exemple lors de l’ajout ou de la suppression d’éléments, ce qui peut entraîner un comportement inattendu. Une exception est dans les projets de style kit SDK .NET Core, qui traitent correctement les caractères génériques.
+- En général, évitez l’utilisation de wildcards lorsque vous sélectionnez des éléments. Spécifiez plutôt les fichiers de manière explicite. C’est parce que dans la plupart des types de projet, MSBuild élargit wildcards à divers moments, comme lors de l’ajout ou la suppression des éléments, ce qui peut conduire à un comportement inattendu. Une exception à cela est dans .NET Core SDK-style projets, qui ne traitent wildcards correctement.
 
 ## <a name="see-also"></a>Voir aussi
 

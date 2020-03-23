@@ -10,10 +10,10 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: 44906d70be05891fe52096adec2f61f2261b5db5
-ms.sourcegitcommit: 3cda0d58c5cf1985122b8977b33a171c7359f324
-ms.translationtype: HT
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/29/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "70154879"
 ---
 # <a name="install-data-science-support-in-visual-studio"></a>Installer la prise en charge de la science des données dans Visual Studio
@@ -22,13 +22,13 @@ La charge de travail Applications de science et analyse des données, que vous s
 
 ::: moniker range="vs-2017"
 - [Python et Anaconda](../python/overview-of-python-tools-for-visual-studio.md)
-- [F# avec le .NET Framework](/dotnet/fsharp/)
+- [F# avec .NET Framework](/dotnet/fsharp/)
 - [R et Microsoft R Client](../rtvs/index.md)
 ::: moniker-end
 
 ::: moniker range="vs-2019"
 - [Python](../python/overview-of-python-tools-for-visual-studio.md)
-- [F# avec le .NET Framework](/dotnet/fsharp/)
+- [F# avec .NET Framework](/dotnet/fsharp/)
 ::: moniker-end
 
 ![Charge de travail Applications de science et analyse des données dans le programme d’installation de Visual Studio](media/workload/data-science-workload.png)
@@ -50,19 +50,19 @@ Par défaut, la charge de travail installe les options suivantes, que vous pouve
 
 ::: moniker range="vs-2019"
 - Prise en charge du langage F# pour poste de travail
-- Python :
+- Python :
   - Prise en charge du langage Python
   - Prise en charge de Python web
 ::: moniker-end
 
 ::: moniker range="vs-2017"
 - Prise en charge du langage F#
-- Python :
+- Python :
   - Prise en charge du langage Python
-  - [Anaconda3 64 bits](https://www.continuum.io), distribution de Python qui inclut des bibliothèques étendues de science des données et un interpréteur Python.
+  - [Anaconda3 64 bits](https://www.continuum.io), un démon Python qui comprend de vastes bibliothèques de science des données et un interprète Python.
   - Prise en charge de Python web
   - Prise en charge des modèles Cookiecutter
-- R :
+- R :
   - Prise en charge du langage R
   - Prise en charge du runtime pour les outils de développement R
   - [Microsoft R Client](/machine-learning-server/r-client/what-is-microsoft-r-client) (interpréteur R de Microsoft entièrement compatible, supporté par une communauté, avec des bibliothèques ScaleR permettant un calcul plus rapide sur des nœuds individuels ou des clusters. Vous pouvez également utiliser n’importe quelle implémentation de R du réseau [CRAN](https://cran.r-project.org/).)
@@ -80,19 +80,19 @@ SQL Server prend en charge l’utilisation de Python pour effectuer de l’analy
 
 Vous profitez des avantages suivants en exécutant votre code là où sont déjà vos données :
 
-- **Élimination des déplacements des données** : au lieu de déplacer les données de la base de données vers votre application ou votre modèle, vous pouvez générer des applications dans la base de données. Cette fonctionnalité élimine les barrières en matière de sécurité, de conformité, de gouvernance, d’intégrité et de nombreux problèmes similaires liés au déplacement de quantités importantes de données. Vous pouvez aussi consommer des jeux de données qui ne tiendraient pas dans la mémoire d’un ordinateur client.
+- **Élimination du mouvement des données**: Au lieu de déplacer les données de la base de données vers votre application ou modèle, vous pouvez créer des applications dans la base de données. Cette fonctionnalité élimine les barrières en matière de sécurité, de conformité, de gouvernance, d’intégrité et de nombreux problèmes similaires liés au déplacement de quantités importantes de données. Vous pouvez aussi consommer des jeux de données qui ne tiendraient pas dans la mémoire d’un ordinateur client.
 
-- **Déploiement facile** : une fois que votre modèle est prêt, son déploiement en production consiste juste à l’incorporer dans un script T-SQL. Toute application cliente SQL écrite dans n’importe quel langage peut alors tirer parti des modèles et de l’analyse décisionnelle via un appel de procédure stockée. Aucune intégration spécifique au langage n’est nécessaire.
+- **Déploiement facile**: Une fois que vous avez un modèle prêt, le déployer à la production est une simple question de l’intégrer dans un script T-SQL. Toute application cliente SQL écrite dans n’importe quel langage peut alors tirer parti des modèles et de l’analyse décisionnelle via un appel de procédure stockée. Aucune intégration spécifique au langage n’est nécessaire.
 
-- **Performances et scalabilité de niveau entreprise** : vous pouvez utiliser des fonctionnalités avancées de SQL Server, comme les tables en mémoire et les index columnstore, avec des API scalables à hautes performances dans les packages RevoScale. L’élimination du déplacement des données signifie également que vous évitez les contraintes de mémoire des clients quand la taille de vos données augmente ou quand vous voulez accroître les performances de l’application.
+- **Performances et échelle de qualité entreprise**: Vous pouvez utiliser les capacités avancées de SQL Server comme les index de table et de magasin de colonnes avec les API évolutives haute performance des forfaits RevoScale. L’élimination du déplacement des données signifie également que vous évitez les contraintes de mémoire des clients quand la taille de vos données augmente ou quand vous voulez accroître les performances de l’application.
 
-- **Extensibilité enrichie** : vous pouvez installer et exécuter les derniers packages open source dans SQL Server pour créer des applications d’apprentissage profond et d’intelligence artificielle sur de très grandes quantités de données dans SQL Server. L’installation d’un package dans SQL Server est aussi simple que l’installation d’un package sur votre ordinateur local.
+- **Riche extensibility**: Vous pouvez installer et exécuter l’un des derniers paquets open source dans SQL Server pour construire des applications d’apprentissage profond et d’IA sur d’énormes quantités de données dans SQL Server. L’installation d’un package dans SQL Server est aussi simple que l’installation d’un package sur votre ordinateur local.
 
-- **Disponibilité élevée sans coût supplémentaire** : les intégrations de langage sont disponibles dans toutes les éditions de SQL Server 2017 et ultérieur, notamment l’édition Express.
+- **Grande disponibilité sans frais supplémentaires**: Les intégrations linguistiques sont disponibles dans toutes les éditions de SQL Server 2017 et plus tard, y compris l’édition Express.
 
 Pour tirer pleinement parti de l’intégration de SQL Server, utilisez le programme d’installation de Visual Studio pour installer la charge de travail **Stockage et traitement des données** avec l’option **SQL Server Data Tools**. Cette option active SQL IntelliSense, la mise en surbrillance de la syntaxe et le déploiement.
 
-![Charge de travail Stockage et traitement des données](media/workload/data-storage-workload.png) &nbsp;&nbsp;&nbsp;&nbsp; ![Options de la charge de travail Stockage et traitement des données](media/workload/data-storage-workload-options.png)
+![Charge de travail de stockage et traitement des données](media/workload/data-storage-workload.png) &nbsp;&nbsp;&nbsp;&nbsp; ![Options de la charge de travail Stockage et traitement des données](media/workload/data-storage-workload-options.png)
 
 Pour plus d'informations :
 

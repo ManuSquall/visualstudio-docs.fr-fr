@@ -1,5 +1,5 @@
 ---
-title: Options, Éditeur de texte, JavaScript, Mise en forme
+title: Options, Text Editor, JavaScript, Formatting
 ms.date: 10/29/2018
 ms.technology: vs-javascript
 ms.topic: reference
@@ -17,15 +17,15 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 957dbd557a15c4c1df6028672f204a06936767c1
-ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
-ms.translationtype: HT
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/29/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "68605985"
 ---
-# <a name="options-dialog-box-text-editor--javascript--formatting"></a>Boîte de dialogue Options : Éditeur de texte \> JavaScript \> Mise en forme
+# <a name="options-dialog-box-text-editor--javascript--formatting"></a>Boîte de dialogue d’options : Éditeur de \> texte JavaScript \> Formatting
 
-Utilisez la page **Mise en forme** de la boîte de dialogue **Options** pour définir les options de mise en forme du code dans l’éditeur de code. Pour accéder à cette page, dans la barre de menus, choisissez **Outils** > **Options**, puis développez **Éditeur de texte** > **JavaScript/TypeScript** > **Mise en forme**.
+Utilisez la page **Mise en forme** de la boîte de dialogue **Options** pour définir les options de mise en forme du code dans l’éditeur de code. Pour accéder à cette page, sur la barre de menu, choisissez **Tools** > **Options**, puis développez Text **Editor** > **JavaScript/TypeScript** > **Formatting**.
 
 [!INCLUDE[note_settings_general](../../data-tools/includes/note_settings_general_md.md)]
 
@@ -33,7 +33,7 @@ Utilisez la page **Mise en forme** de la boîte de dialogue **Options** pour dé
 
 Ces options déterminent à quel moment la mise en forme se produit dans la vue **Source**.
 
-### <a name="uielement-list"></a>Liste des éléments d’interface
+### <a name="uielement-list"></a>Liste des éléments de l'interface utilisateur
 
 |Option|Description|
 |------------|-----------------|
@@ -47,7 +47,7 @@ Ces options déterminent à quel moment la mise en forme se produit dans la vue 
 
 Ces options déterminent si l’éditeur de code place une accolade ouvrante sur une nouvelle ligne pour les fonctions et les blocs de contrôle.
 
-### <a name="uielement-list"></a>Liste UIElement
+### <a name="uielement-list"></a>Liste des éléments de l'interface utilisateur
 
 |Option|Description|
 |------------|-----------------|
@@ -58,7 +58,7 @@ Ces options déterminent si l’éditeur de code place une accolade ouvrante sur
 
 Ces options déterminent la façon dont les espaces sont insérés dans la vue **Source**.
 
-### <a name="uielement-list"></a>Liste UIElement
+### <a name="uielement-list"></a>Liste des éléments de l'interface utilisateur
 
 |Option|Description|
 |------------|-----------------|
@@ -71,4 +71,4 @@ Ces options déterminent la façon dont les espaces sont insérés dans la vue *
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Général, Environnement, boîte de dialogue Options](../../ide/reference/general-environment-options-dialog-box.md)
+- [Général, Environnement, Options Dialog Box](../../ide/reference/general-environment-options-dialog-box.md)

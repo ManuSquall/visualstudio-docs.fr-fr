@@ -17,13 +17,13 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 0b932d5f9e4a178c94f3e490c66cec64648ce4f6
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74773333"
 ---
-# <a name="call-tree-view"></a>Vue Arborescence des appels
+# <a name="call-tree-view"></a>Mode Arborescence des appels
 La vue Arborescence des appels affiche les chemins d’exécution de la fonction empruntés dans l’application profilée. La racine de l’arborescence correspond au point d’entrée de l’application ou du composant. Chaque nœud de fonction liste toutes les fonctions appelées par la fonction et les données de performances liées à ces appels de fonction.
 
  La vue Arborescence des appels peut également être développée et mettre en surbrillance le chemin d’exécution d’une fonction qui a exigé le plus de temps ou qui a fait l’objet du plus grand nombre d’échantillonnages. Pour faire apparaître le chemin le plus coûteux en matière de performances, cliquez avec le bouton droit sur la fonction, puis cliquez sur **Développer le chemin réactif**.
@@ -45,11 +45,11 @@ La vue Arborescence des appels affiche les chemins d’exécution de la fonction
 
 - [Mode Arborescence des appels](../profiling/call-tree-view-instrumentation-data.md)
 
-- [Vue Arborescence des appels - Échantillonnage](../profiling/call-tree-view-dotnet-memory-sampling-data.md)
+- [Vue d’arbre d’appel - échantillonnage](../profiling/call-tree-view-dotnet-memory-sampling-data.md)
 
 - [Mode Arborescence des appels](../profiling/call-tree-view-contention-data.md)
 
 ## <a name="see-also"></a>Voir aussi
 - [Vues du rapport des performances](../profiling/performance-report-views.md)
-- [Présentation des valeurs de données d’instrumentation](../profiling/understanding-instrumentation-data-values.md)
-- [Présentation des valeurs de données d’échantillonnage](../profiling/understanding-sampling-data-values.md)
+- [Comprendre les valeurs de données d’instrumentation](../profiling/understanding-instrumentation-data-values.md)
+- [Comprendre les valeurs des données d’échantillonnage](../profiling/understanding-sampling-data-values.md)

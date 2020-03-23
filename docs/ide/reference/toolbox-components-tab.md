@@ -14,19 +14,19 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: e5eb8c320a3190121d95395f7b359aa9ed978408
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75597306"
 ---
 # <a name="toolbox-components-tab"></a>Boîte à outils, onglet Composants
 
 Affiche les composants que vous pouvez ajouter aux concepteurs Visual Basic et C# pour Windows Forms. En plus des composants .NET inclus avec Visual Studio, comme les composants <xref:System.Messaging.MessageQueue> et <xref:System.Diagnostics.EventLog>, vous pouvez ajouter vos propres composants ou des composants de tiers à cet onglet.
 
-Pour afficher cet onglet, ouvrez un concepteur Windows Forms. Sélectionnez **Affichage** > **Boîte à outils**. Dans **Boîte à outils**, sélectionnez l’onglet **Composants**.
+Pour afficher cet onglet, ouvrez un concepteur Windows Forms. Sélectionnez **View** > **Toolbox**. Dans **Boîte à outils**, sélectionnez l’onglet **Composants**.
 
-## <a name="components"></a>Composants
+## <a name="components"></a>Components
 
 **BackgroundWorker**
 
@@ -56,7 +56,7 @@ Crée une instance du composant <xref:System.IO.FileSystemWatcher> que vous pouv
 
 Crée une instance du composant <xref:System.Windows.Forms.HelpProvider> qui fournit une aide contextuelle ou en ligne pour les contrôles. Pour plus d’informations, consultez [HelpProvider, composant](/dotnet/framework/winforms/controls/helpprovider-component-windows-forms).
 
-**ImageList**
+**Imagelist**
 
 Crée une instance du composant <xref:System.Windows.Forms.ImageList> qui fournit des méthodes pour gérer une collection d’objets <xref:System.Drawing.Image>. Pour plus d’informations, consultez [ImageList, composant](/dotnet/framework/winforms/controls/imagelist-component-windows-forms).
 
@@ -64,11 +64,11 @@ Crée une instance du composant <xref:System.Windows.Forms.ImageList> qui fourni
 
 Crée une instance du composant <xref:System.Messaging.MessageQueue> que vous pouvez utiliser pour interagir avec les files d’attente de messages, notamment pour lire des messages à partir de files d’attente et écrire des messages dans ces dernières, traiter des transactions et effectuer des tâches d’administration de files d’attente.
 
-**PerformanceCounter**
+**PerformanceCounter (performance)**
 
 Crée une instance du composant <xref:System.Diagnostics.PerformanceCounter> que vous pouvez utiliser pour interagir avec les compteurs de performance Windows, notamment pour créer des catégories et des instances, lire des valeurs à partir de compteurs et effectuer des calculs sur des données de compteurs.
 
-**Process**
+**Processus**
 
 Crée une instance du composant <xref:System.Diagnostics.Process> que vous pouvez utiliser pour arrêter, démarrer et manipuler les données associées à des processus sur votre système.
 
@@ -82,7 +82,7 @@ Crée une instance du composant <xref:System.ServiceProcess.ServiceController> q
 
 **Minuterie**
 
-Crée une instance du composant <xref:System.Windows.Forms.Timer> que vous pouvez utiliser pour ajouter une fonctionnalité à durée définie à vos applications Windows. Pour plus d’informations, consultez [Timer, composant](/dotnet/framework/winforms/controls/timer-component-windows-forms).
+Crée une instance du composant <xref:System.Windows.Forms.Timer> que vous pouvez utiliser pour ajouter une fonctionnalité à durée définie à vos applications Windows. Pour plus d’informations, voir [le composant Minuter](/dotnet/framework/winforms/controls/timer-component-windows-forms).
 
 > [!NOTE]
 > Il existe également un composant <xref:System.Timers.Timer> basé sur le système que vous pouvez ajouter à la **boîte à outils**. Ce <xref:System.Timers.Timer> est optimisé pour les applications serveur. Le <xref:System.Windows.Forms.Timer> Windows Forms, quant à lui, convient mieux à une utilisation sur les Windows Forms.
@@ -90,5 +90,5 @@ Crée une instance du composant <xref:System.Windows.Forms.Timer> que vous pouve
 ## <a name="see-also"></a>Voir aussi
 
 - [Contrôles à utiliser dans les Windows Forms](/dotnet/framework/winforms/controls/controls-to-use-on-windows-forms)
-- [Choisir des éléments de boîte à outils, composants WPF](choose-toolbox-items-wpf-components.md)
-- [Boîte à outils](../../ide/reference/toolbox.md)
+- [Choisissez des articles de boîte à outils, des composants WPF](choose-toolbox-items-wpf-components.md)
+- [Toolbox](../../ide/reference/toolbox.md)

@@ -1,5 +1,5 @@
 ---
-title: 'Procédure : Définir les options d’accessibilité de l’IDE'
+title: Guide pratique pour définir les options d’accessibilité IDE
 description: Découvrez comment définir les options d’accessibilité dans Visual Studio qui facilitent l’utilisation de son environnement de développement intégré (IDE) pour tout le monde, y compris pour les personnes ayant des difficultés à lire ou à écrire.
 ms.date: 08/23/2019
 ms.prod: visual-studio-windows
@@ -14,20 +14,20 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 63bba4e8defcd727f05dbc209aa2f48f7d5f2c92
-ms.sourcegitcommit: cf8c0fef2b9690595e99ce3802586cdd55fd37c2
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/28/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "70107782"
 ---
-# <a name="how-to-set-ide-accessibility-options"></a>Procédure : Définir les options d’accessibilité de l’IDE
+# <a name="how-to-set-ide-accessibility-options"></a>Guide pratique pour définir les options d’accessibilité IDE
 
 Visual Studio contient des fonctionnalités qui facilitent la lecture pour les personnes à acuité visuelle réduite et l’écriture pour celles dont la dextérité manuelle est réduite. Par exemple, vous pouvez modifier la taille et la couleur du texte dans les éditeurs, modifier la taille du texte et des boutons sur les barres d’outils et modifier les paramètres pour vous aider à exécuter une fonction ou une instruction.
 
 En outre, Visual Studio prend en charge les dispositions de clavier Dvorak, qui rendent plus accessibles les caractères les plus fréquemment tapés. Vous pouvez également personnaliser les raccourcis clavier par défaut disponibles dans Visual Studio. Pour plus d’informations, consultez [Identifier et personnaliser les raccourcis clavier](../../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md).
 
 > [!NOTE]
-> Les boîtes de dialogue et les commandes de menu qui s'affichent peuvent être différentes de celles qui sont décrites ici, en fonction de vos paramètres actifs ou de l'édition utilisée. Pour modifier vos paramètres, choisissez **Importation et exportation de paramètres** dans le menu **Outils** . Pour plus d’informations, consultez [Réinitialiser les paramètres](../environment-settings.md#reset-settings).
+> Les boîtes de dialogue et les commandes de menu qui s'affichent peuvent être différentes de celles qui sont décrites ici, en fonction de vos paramètres actifs ou de l'édition utilisée. Pour modifier vos paramètres, choisissez **Paramètres d'importation et d'exportation** dans le menu **Outils** . Pour plus d’informations, consultez [Réinitialiser les paramètres](../environment-settings.md#reset-settings).
 
 ::: moniker range="vs-2017"
 
@@ -38,7 +38,7 @@ En outre, Visual Studio prend en charge les dispositions de clavier Dvorak, qui 
 
 ## <a name="editors-dialogs-and-tool-windows"></a>Éditeurs, boîtes de dialogue et fenêtres d’outils
 
-Par défaut, les boîtes de dialogue et les fenêtres d’outils de Visual Studio utilisent les mêmes taille de police et couleurs que le système d’exploitation. Les paramètres de couleur pour le cadre de l’IDE, les boîtes de dialogue, les barres d’outils et les fenêtres d’outils sont basés sur un modèle de couleurs : clair ou sombre. Vous pouvez changer le thème de couleurs actuel dans la [boîte de dialogue Options : Environnement > Général](../../ide/reference/general-environment-options-dialog-box.md).
+Par défaut, les boîtes de dialogue et les fenêtres d’outils de Visual Studio utilisent les mêmes taille de police et couleurs que le système d’exploitation. Les paramètres de couleur pour le cadre de l’IDE, les boîtes de dialogue, les barres d’outils et les fenêtres d’outils sont basés sur un modèle de couleurs : clair ou sombre. Vous pouvez modifier le thème de couleur actuel dans la [boîte de dialogue Options: Environnement > général](../../ide/reference/general-environment-options-dialog-box.md).
 
 Vous pouvez également afficher des fenêtres indépendantes dans le mode Code de l’éditeur. Ces fenêtres peuvent vous demander de fournir des membres disponibles sur l’objet en cours et les paramètres pour exécuter une fonction ou une instruction. Ces fenêtres peuvent être utiles si vous avez des difficultés à taper. Toutefois, elles interfèrent avec le focus dans l’éditeur de code, ce qui peut être problématique pour certains utilisateurs.
 
@@ -46,7 +46,7 @@ Voici comment désactiver les fenêtres indépendantes :
 
 1. Dans le menu **Outils** , choisissez **Options**.
 
-1. Choisissez **Éditeur de texte** > **Tous les langages** > **Général**.
+1. Choisissez **Text Editor** > **All Languages** > **General**.
 
 1. Désactivez les cases à cocher **Répertorier automatiquement les membres** et **Informations sur les paramètres**.
 
@@ -58,17 +58,17 @@ Vous pouvez modifier les paramètres des fenêtres Outil de texte, telles que la
 
 Lorsque l’option **[Toutes les fenêtres Outil de texte]** est sélectionnée dans la liste déroulante **Afficher les paramètres de**, le paramètre par défaut est répertorié en tant que **Par défaut** dans les listes déroulantes **Premier plan de l’élément** et **Arrière plan de l’élément**. Choisissez le bouton **Personnalisé** pour modifier ces paramètres.
 
-Vous pouvez également modifier les paramètres d’affichage du texte dans l’éditeur. Voici comment procéder.
+Vous pouvez également modifier les paramètres d’affichage du texte dans l’éditeur. Voici comment faire.
 
 1. Dans le menu **Outils** , choisissez **Options**.
 
-1. Choisissez **Environnement** > **Polices et couleurs**.
+1. Choisissez **Environment** > **Fonts and Colors**.
 
 1. Sélectionnez une option dans le menu déroulant **Afficher les paramètres de**.
 
     Pour modifier la taille de police du texte dans un éditeur, choisissez **Éditeur de texte**.
 
-    Pour modifier la taille de police du texte dans les fenêtres Outil de texte, choisissez **[Toutes les fenêtres Outil de texte]** .
+    Pour modifier la taille de police du texte dans les fenêtres Outil de texte, choisissez **[Toutes les fenêtres Outil de texte]**.
 
     Pour modifier la taille de police du texte des info-bulles dans un éditeur, choisissez **Info-bulle de l’éditeur**.
 
@@ -83,11 +83,11 @@ Vous pouvez également modifier les paramètres d’affichage du texte dans l’
     > [!TIP]
     > Pour rétablir la taille du texte pour les éditeurs et les fenêtres Outil de texte, choisissez **Par défaut**.
 
-7. Cliquez sur **OK**.
+7. Choisissez **OK**.
 
 ### <a name="change-the-colors-that-are-used-in-the-ide"></a>Changer les couleurs utilisées dans l’IDE
 
-Vous pouvez choisir de modifier les couleurs par défaut pour le texte, les indicateurs en marge, l’espace blanc et les éléments de code dans l’éditeur. Voici comment procéder.
+Vous pouvez choisir de modifier les couleurs par défaut pour le texte, les indicateurs en marge, l’espace blanc et les éléments de code dans l’éditeur. Voici comment faire.
 
 1. Dans le menu **Outils** , choisissez **Options**.
 
@@ -97,12 +97,12 @@ Vous pouvez choisir de modifier les couleurs par défaut pour le texte, les indi
 
 1. Dans **Afficher les éléments**, sélectionnez un élément dont vous avez besoin de modifier l’affichage, tel que **Texte brut**, **Marge des indicateurs**, **Espaces blancs visibles**, **Nom d’attribut HTML** ou **Attribut XML**.
 
-1. Sélectionnez les paramètres d’affichage parmi les options suivantes : **Premier plan de l’élément**, **Arrière plan de l’élément** et **Gras**.
+1. Sélectionnez les paramètres d’affichage parmi les options suivantes : **Premier plan de l’élément**, **Arrière-plan de l’élément** et **Gras**.
 
-1. Cliquez sur **OK**.
+1. Choisissez **OK**.
 
 > [!TIP]
-> Pour utiliser des couleurs à contraste élevé pour toutes les fenêtres d’application dans votre système d’exploitation, appuyez sur **Alt gauche**+**Maj gauche**+**Impr. écran**. Si Visual Studio est ouvert, fermez-le et rouvrez-le pour implémenter complètement les couleurs à contraste élevé.
+> Pour utiliser des couleurs de contraste élevé pour toutes les fenêtres d’application sur votre système d’exploitation, appuyez sur **Left Alt**+**Left Shift**+**PrtScn**. Si Visual Studio est ouvert, fermez-le et rouvrez-le pour implémenter complètement les couleurs à contraste élevé.
 
 ## <a name="toolbars"></a>Barres d'outils
 
@@ -130,6 +130,6 @@ Pour améliorer l’accessibilité et la facilité d’utilisation de la barre d
 
 ## <a name="see-also"></a>Voir aussi
 
-* [Fonctionnalités d’accessibilité de Visual Studio](../../ide/reference/accessibility-features-of-visual-studio.md)
+* [Caractéristiques d’accessibilité de Visual Studio](../../ide/reference/accessibility-features-of-visual-studio.md)
 * [Accessibilité de Visual Studio pour Mac](/visualstudio/mac/accessibility/)
-* [Ressources pour la conception d’applications accessibles](../../ide/reference/resources-for-designing-accessible-applications.md)
+* [Ressources pour concevoir des applications accessibles](../../ide/reference/resources-for-designing-accessible-applications.md)

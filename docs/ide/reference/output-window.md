@@ -1,5 +1,5 @@
 ---
-title: Sortie (fenêtre)
+title: Fenêtre Sortie
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -17,17 +17,17 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: be028af8ab9f458c1fadad6f8b2fcbd6aaa49a04
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75567981"
 ---
-# <a name="output-window"></a>fenêtre Sortie
+# <a name="output-window"></a>Fenêtre Sortie
 
 La fenêtre **Sortie** affiche des messages d’état pour diverses fonctionnalités dans l’environnement de développement intégré (IDE). Pour ouvrir la fenêtre **Sortie**, dans la barre de menus, choisissez **Affichage** > **Sortie**, ou appuyez sur **Ctrl**+**Alt**+**O**.
 
-## <a name="toolbar"></a>ToolBar
+## <a name="toolbar"></a>Barre d'outils
 
 Les commandes suivantes sont affichées dans la barre d’outils de la fenêtre **Sortie**.
 
@@ -55,7 +55,7 @@ Efface tout le texte du volet **Sortie**.
 
 Active et désactive la fonctionnalité de retour automatique à la ligne dans le volet **Sortie**. Quand cette option est activée, le texte des longues entrées qui s’étend au-delà de la zone d’affichage apparaît sur la ligne suivante.
 
-## <a name="output-pane"></a>Volet Sortie
+## <a name="output-pane"></a>Volet de sortie
 
 Le contenu du volet **Sortie** sélectionné dans la liste **Afficher la sortie à partir de** provient de la source indiquée.
 
@@ -71,12 +71,12 @@ En C++, vous pouvez créer des étapes de génération personnalisées et des é
 
 ## <a name="scroll-behavior"></a>Comportement de défilement
 
-Si vous utilisez le défilement automatique dans la fenêtre **Sortie**, puis que vous naviguez à l’aide de la souris ou des touches de direction, le défilement automatique s’arrête. Pour reprendre le défilement automatique, appuyez sur **Ctrl**+**Fin**.
+Si vous utilisez le défilement automatique dans la fenêtre **Sortie**, puis que vous naviguez à l’aide de la souris ou des touches de direction, le défilement automatique s’arrête. Pour reprendre l’autoscrolling, appuyez sur **Ctrl**+**End**.
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Messages de diagnostic dans la fenêtre Sortie](../../debugger/diagnostic-messages-in-the-output-window.md)
+- [Messages diagnostiques dans la fenêtre de sortie](../../debugger/diagnostic-messages-in-the-output-window.md)
 - [Guide pratique pour contrôler la fenêtre Sortie](https://msdn.microsoft.com/Library/91aebd15-8854-4a7a-9f7d-57376fb4e858)
-- [Compiler et générer](../../ide/compiling-and-building-in-visual-studio.md)
+- [Compilation et génération](../../ide/compiling-and-building-in-visual-studio.md)
 - [Présentation des configurations de build](../../ide/understanding-build-configurations.md)
 - [Vue d’ensemble des bibliothèques de classes .NET](/dotnet/standard/class-library-overview)

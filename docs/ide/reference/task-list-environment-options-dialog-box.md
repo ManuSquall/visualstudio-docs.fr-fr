@@ -23,17 +23,17 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 05c337a6e809f85490e651fecf405b44e9f28930
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75592007"
 ---
-# <a name="options-dialog-box-environment--task-list"></a>Boîte de dialogue Options : \> de l’environnement Liste des tâches
+# <a name="options-dialog-box-environment--task-list"></a>Boîte de dialogue \> d’options : Liste des tâches de l’environnement
 
 Cette page Options vous permet d’ajouter, de supprimer et de modifier les jetons de commentaire qui génèrent des rappels de la **liste des tâches**. Pour afficher ces paramètres, sélectionnez **Options** dans le menu **Outils**, développez le dossier **Environnement**, puis choisissez **Liste des tâches**.
 
-## <a name="task-list-tokens"></a>Jetons de la liste des tâches
+## <a name="task-list-tokens"></a>Jetons de la Liste des tâches
 
 Quand vous insérez un commentaire dans votre code dont le texte commence par un jeton de la **liste des jetons**, la **Liste des tâches** affiche votre commentaire comme nouvelle entrée chaque fois que le fichier est ouvert pour modification. Cliquez sur une entrée de la **Liste des tâches** pour accéder directement à la ligne de commentaire dans votre code. Pour plus d’informations, consultez [Utilisation de la liste des tâches](../../ide/using-the-task-list.md).
 

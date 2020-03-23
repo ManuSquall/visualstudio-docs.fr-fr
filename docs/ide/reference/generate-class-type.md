@@ -13,10 +13,10 @@ dev_langs:
 ms.workload:
 - dotnet
 ms.openlocfilehash: 94786ef10e427a0deb4f80471305509124f1638b
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75595629"
 ---
 # <a name="generate-a-class-or-type-in-visual-studio"></a>Générer une classe ou un type dans Visual Studio
@@ -25,7 +25,7 @@ Cette génération de code s’applique à :
 
 - C#
 
-- Visual Basic
+- Visual Basic
 
 **Quoi :** vous permet de générer immédiatement le code pour une classe ou un type.
 
@@ -33,7 +33,7 @@ Cette génération de code s’applique à :
 
 **Pourquoi :** vous pouvez déclarer la classe ou le type avant de l’utiliser, mais cette fonctionnalité générera automatiquement la classe ou le type.
 
-## <a name="how-to"></a>Procédure
+## <a name="how-to"></a>Procédures
 
 1. Placez votre curseur sur la ligne présentant un trait rouge ondulé. Celui-ci indique une classe qui n’existe pas encore.
 
@@ -48,19 +48,19 @@ Cette génération de code s’applique à :
 2. Effectuez ensuite l'une des opérations suivantes :
 
    - **Clavier**
-      - Appuyez sur **Ctrl**+ **.** pour afficher le menu **Actions rapides et refactorisations**.
+      - Appuyez **sur Ctrl**+**.** pour afficher le menu **Actions rapides et refactorisations**.
    - **Souris**
       - Cliquez avec le bouton droit et sélectionnez le menu **Actions rapides et refactorisations**.
       - Placez le curseur sur la ligne ondulée rouge, puis cliquez sur l’icône ![ampoule d’erreur](media/error-bulb.png) qui apparaît.
-      - Cliquez sur l'onglet ![ampoule d’erreur](media/error-bulb.png) qui apparaît dans la marge de gauche si le curseur de texte se trouve déjà sur la ligne ondulée rouge.
+      - Cliquez sur le bouton ![ampoule d’erreur](media/error-bulb.png) qui apparaît dans la marge de gauche si le curseur de texte se trouve déjà sur la ligne ondulée rouge.
 
       ![Aperçu de l’action Générer la classe](media/class-preview-cs.png)
 
 3. Sélectionnez l’une des options dans le menu déroulant :
 
    - Générer la classe '*TypeName*' dans un nouveau fichier&mdash;Crée une classe nommée *TypeName* dans un fichier nommé *TypeName*.cs/.vb.
-   - Générer la classe '*TypeName*'&mdash;Crée une classe nommée *TypeName* dans le fichier actif.
-   - Générer la classe imbriquée '*TypeName*'&mdash;Crée une classe nommée *TypeName* imbriquée dans le fichier actif.
+   - Générer la classe '&mdash;*TypeName*' Crée une classe nommée *TypeName* dans le fichier actuel.
+   - Générer classe imbriquée&mdash;'*TypeName*' Crée une classe nommée *TypeName* niché à l’intérieur de la classe actuelle.
    - Générer un nouveau type...&mdash;Crée une classe ou un struct avec toutes les propriétés que vous spécifiez.
 
    > [!TIP]
@@ -73,10 +73,10 @@ Cette génération de code s’applique à :
    Sélection | Description
    --- | ---
    Accès | Définissez un accès *Par défaut*, *Interne* ou *Public* pour le type.
-   Kind | Peut être défini sur *classe* ou *structure*.
-   Name | Ce paramètre ne peut pas être modifié et affichera le nom que vous avez déjà tapé.
+   Type | Peut être défini sur *classe* ou *structure*.
+   Nom | Ce paramètre ne peut pas être modifié et affichera le nom que vous avez déjà tapé.
    Projet | Si votre solution contient plusieurs projets, vous pouvez choisir l’emplacement souhaité pour la classe/structure à utiliser.
-   Nom du fichier | Vous pouvez créer un nouveau fichier, ou ajouter le type à un fichier existant.
+   Nom de fichier | Vous pouvez créer un nouveau fichier, ou ajouter le type à un fichier existant.
 
 La classe ou le struct est créé. Pour C#, un constructeur est également créé.
 
@@ -84,11 +84,11 @@ La classe ou le struct est créé. Pour C#, un constructeur est également cré�
 
    ![Résultat de l’action Générer la classe (C#)](media/class-result-cs.png)
 
-- Visual Basic
+- Visual Basic
 
    ![Résultat de l’action Générer la classe (Visual Basic)](media/class-result-vb.png)
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Génération de code](../code-generation-in-visual-studio.md)
+- [Génération de codes](../code-generation-in-visual-studio.md)
 - [Aperçu des modifications](../../ide/preview-changes.md)

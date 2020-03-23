@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 931ce20ee872a37b8ca7ccccc18714abc7a0e41f
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75593757"
 ---
 # <a name="how-to-use-surround-with-code-snippets"></a>Guide pratique pour utiliser des extraits de code Entourer de
@@ -27,9 +27,9 @@ Les procédures suivantes expliquent comment utiliser des extraits de code Entou
 
 1. Dans l’**Éditeur de code**, sélectionnez le texte à entourer.
 
-1. Appuyez sur **Ctrl**+**K**, **Ctrl**+**S**.
+1. Type **Ctrl**+**K**, **Ctrl**+**S**.
 
-1. Sélectionnez l’extrait de code dans la liste d’extraits de code à l’aide de la souris ou en entrant son nom et en appuyant sur **Tab** ou **Entrée**.
+1. Sélectionnez l’extrait de code de la liste d’extrait de code à l’aide de la souris, ou en tapant le nom de l’extrait de code et en appuyant sur **Tab** or **Enter**.
 
 ## <a name="to-use-surround-with-code-snippets-through-the-edit-menu"></a>Pour utiliser des extraits de code Entourer de via le menu Edition
 
@@ -39,9 +39,9 @@ Les procédures suivantes expliquent comment utiliser des extraits de code Entou
 
 1. Dans le menu **Edition**, sélectionnez **IntelliSense**, puis sélectionnez la commande **Entourer de**.
 
-1. Sélectionnez l’extrait de code dans l’outil d’insertion d’extraits de code, puis appuyez sur **Tab** ou **Entrée**.
+1. Sélectionnez l’extrait de code de l’inserter extrait de code, puis appuyez sur **Tab** or **Enter**.
 
-     Vous pouvez également taper le nom de l’extrait de code, puis appuyer sur **Tab** ou **Entrée**.
+     Alternativement, vous pouvez taper le nom de l’extrait de code, puis appuyez sur **Tab** ou **Enter**.
 
 ## <a name="to-use-surround-with-code-snippets-through-the-context-menu"></a>Pour utiliser des extraits de code Entourer de via le menu contextuel
 
@@ -49,13 +49,13 @@ Les procédures suivantes expliquent comment utiliser des extraits de code Entou
 
 1. Dans l’**Éditeur de code**, sélectionnez le texte à entourer.
 
-1. Cliquez avec le bouton droit sur le texte sélectionné, puis sélectionner la commande **Entourer de** dans le menu contextuel.
+1. Cliquez à droite sur le texte sélectionné, puis sélectionnez **l’Surround Avec** commande à partir du menu contextuel.
 
-1. Sélectionnez l’extrait de code dans l’outil d’insertion d’extraits de code, puis appuyez sur **Tab** ou **Entrée**.
+1. Sélectionnez l’extrait de code de l’inserter extrait de code, puis appuyez sur **Tab** or **Enter**.
 
-     Vous pouvez également taper le nom de l’extrait de code, puis appuyer sur **Tab** ou **Entrée**.
+     Alternativement, vous pouvez taper le nom de l’extrait de code, puis appuyez sur **Tab** ou **Enter**.
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Extraits de code C#](../ide/visual-csharp-code-snippets.md)
-- [Sélecteur d’extraits de code](../ide/reference/code-snippet-picker.md)
+- [Extraits de code CMD](../ide/visual-csharp-code-snippets.md)
+- [Cueilleur d’extrait de code](../ide/reference/code-snippet-picker.md)

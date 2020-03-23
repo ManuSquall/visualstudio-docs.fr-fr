@@ -13,11 +13,11 @@ author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.openlocfilehash: a2a0e25779df1e0b91a69518dc2257119e33cca4
-ms.sourcegitcommit: 3ed59ce39692124fe61c484df4348c0b9abee9b9
+ms.sourcegitcommit: 95f26af1da51d4c83ae78adcb7372b32364d8a2b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/04/2020
-ms.locfileid: "78263354"
+ms.lasthandoff: 03/12/2020
+ms.locfileid: "79190341"
 ---
 # <a name="create-a-ui-by-using-xaml-designer"></a>Créer une IU à l’aide du concepteur XAML
 
@@ -26,7 +26,7 @@ Le concepteur XAML dans Visual Studio et Blend pour Visual Studio fournit une i
 Les utilisateurs expérimentés peuvent même [personnaliser le concepteur XAML](https://github.com/microsoft/xaml-designer-extensibility/blob/master/documents/xaml-designer-extensibility-migration.md).
 
 > [!NOTE]
-> Xamarin. Forms ne prend pas en charge un concepteur XAML. Pour afficher vos interfaces utilisateur XAML Xamarin. Forms et les modifier pendant que l’application est en cours d’exécution, utilisez le rechargement à chaud XAML pour Xamarin. Forms. Pour plus d’informations, consultez la page [chargement à chaud XAML pour Xamarin. Forms (version préliminaire)](/xamarin/xamarin-forms/xaml/hot-reload/) .
+> Xamarin.Forms ne prend pas en charge un designer XAML. Pour afficher vos URI Xamarin.Forms XAML et les modifier pendant que l’application est en cours d’exécution, utilisez XAML Hot Reload pour Xamarin.Forms. Pour plus d’informations, consultez la page [XAML Hot Reload pour Xamarin.Forms (Preview).](/xamarin/xamarin-forms/xaml/hot-reload/)
 
 ## <a name="xaml-designer-workspace"></a>Espace de travail du concepteur XML
 
@@ -90,7 +90,7 @@ Affiche ou masque la grille d'accrochage qui indique le quadrillage. Le quadrill
 
 **Activer/Désactiver l'alignement sur le quadrillage**
 
-Si l' **alignement sur le quadrillage** est activé, un élément tend à s’aligner sur les lignes de quadrillage horizontales et verticales les plus proches quand vous le faites glisser sur la planche graphique.
+Si **le claquement vers les lignes de grille** est activé, un élément a tendance à s’aligner avec les grilles horizontales et verticales les plus proches lorsque vous le faites glisser sur le tableau d’art.
 
 **Activer/Désactiver l’arrière-plan de la planche graphique**
 
@@ -116,26 +116,26 @@ Dans Visual Studio, la fenêtre Structure du document est similaire à la fenêt
 
 - Afficher la structure hiérarchique de tous les éléments de la planche graphique.
 
-- Sélectionnez les éléments afin de pouvoir les modifier. Par exemple, vous pouvez les déplacer dans la hiérarchie ou définir leurs propriétés dans la Fenêtre Propriétés. Pour plus d’informations, consultez [Utiliser des éléments dans le concepteur XAML](../xaml-tools/working-with-elements-in-xaml-designer.md).
+- Sélectionnez les éléments afin que vous puissiez les modifier. Par exemple, vous pouvez les déplacer dans la hiérarchie ou définir leurs propriétés dans la fenêtre Propriétés. Pour plus d’informations, consultez [Utiliser des éléments dans le concepteur XAML](../xaml-tools/working-with-elements-in-xaml-designer.md).
 
 - Créer et modifier les modèles des éléments qui sont des contrôles.
 
 - [Créer des animations](animate-objects-in-xaml-designer.md) (Blend pour Visual Studio uniquement).
 
-Pour afficher la fenêtre Structure du document dans Visual Studio, dans la barre de menus, sélectionnez **Affichage** > **Autres fenêtres** > **Structure du document**.
-Pour afficher la fenêtre Objets et chronologie dans Blend pour Visual Studio, dans la barre de menus, sélectionnez **Afficher** > **Structure du document**.
+Pour afficher la fenêtre Document Outline dans Visual Studio, sur la barre de menu **sélectionnez Voir** > **d’autres** > **contours de documents**Windows .
+Pour voir la fenêtre Objets et Chronologie dans Blend for Visual Studio, sur la barre de menu **sélectionnez Afficher le** > **contour du document**.
 
 ![Fenêtre Structure du document dans Visual Studio](media/document-outline-window.png)
 
-Dans la fenêtre Structure du document/Objets et chronologie, la vue principale montre le niveau hiérarchique d’un document dans une arborescence. Vous pouvez utiliser la nature hiérarchique de la structure du document pour consulter le document à des niveaux de détail différents, ainsi que pour verrouiller et masquer des éléments séparément ou par groupes. Les options suivantes sont disponibles dans la fenêtre structure du document/Objets et chronologie :
+Dans la fenêtre Structure du document/Objets et chronologie, la vue principale montre le niveau hiérarchique d’un document dans une arborescence. Vous pouvez utiliser la nature hiérarchique de la structure du document pour consulter le document à des niveaux de détail différents, ainsi que pour verrouiller et masquer des éléments séparément ou par groupes. Les options suivantes sont disponibles dans la fenêtre Document Outline/Objects et Timeline :
 
-**Afficher/Masquer**
+**Afficher/cacher**
 
-Affiche ou masque les éléments de la planche graphique. Un symbole représentant un œil s’affiche lorsque l’option est activée. Vous pouvez également appuyer sur **Ctrl**+**H** pour masquer un élément, et sur **Maj**+**Ctrl**+**H** pour l’afficher.
+Affiche ou masque les éléments de la planche graphique. Un symbole représentant un œil s’affiche lorsque l’option est activée. Vous pouvez également appuyer sur **Ctrl**+**H** pour cacher un élément et **Shift**+**Ctrl**+**H** pour le montrer.
 
 **Verrouiller/Déverrouiller**
 
-Verrouille ou déverrouille les éléments de la planche graphique. Les éléments verrouillés ne peuvent pas être modifiés. Un symbole de cadenas s’affiche lorsque les éléments sont verrouillés. Vous pouvez également appuyer sur **Ctrl**+**L** pour verrouiller un élément, et sur **Maj**+**Ctrl**+**L** pour le déverrouiller.
+Verrouille ou déverrouille les éléments de la planche graphique. Les éléments verrouillés ne peuvent pas être modifiés. Un symbole de cadenas s’affiche lorsque les éléments sont verrouillés. Vous pouvez également appuyer sur **Ctrl**+**L** pour verrouiller un élément et **le Shift**+**Ctrl**+**L** pour le déverrouiller.
 
 **Rétablir l'étendue à pageRoot**
 
@@ -163,6 +163,6 @@ Pour plus d’informations sur l’utilisation des propriétés et la gestion de
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Utiliser des éléments dans le Concepteur XAML](../xaml-tools/working-with-elements-in-xaml-designer.md)
-- [Comment créer et appliquer une ressource](../xaml-tools/how-to-create-and-apply-a-resource.md)
+- [Travailler avec des éléments dans le concepteur XAML](../xaml-tools/working-with-elements-in-xaml-designer.md)
+- [Guide pratique pour créer et appliquer une ressource](../xaml-tools/how-to-create-and-apply-a-resource.md)
 - [Procédure pas à pas : effectuer une liaison de données dans le Concepteur XAML](../xaml-tools/walkthrough-binding-to-data-in-xaml-designer.md)

@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 86fd5a9b2d179a27ec0cf34f5388b30ebb563ad4
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "72637356"
 ---
 # <a name="constant-nodes"></a>Nœuds de constantes
@@ -29,19 +29,19 @@ Même si chaque instance de nuanceur de pixels ne reçoit qu’un ensemble de va
 
 |Nœud|Détails|Propriétés|
 |----------|-------------|----------------|
-|**Vecteur d’appareil photo**|Vecteur qui s’étend du pixel actuel à l’appareil photo dans l’espace universel.<br /><br /> Vous pouvez l’utiliser pour calculer les réflexions dans l’espace universel.<br /><br /> **Sortie**<br /><br /> `Output`: `float3`<br /> Vecteur du pixel actuel à l’appareil photo.|aucune.|
+|**Vecteur d’appareil photo**|Vecteur qui s’étend du pixel actuel à l’appareil photo dans l’espace universel.<br /><br /> Vous pouvez l’utiliser pour calculer les réflexions dans l’espace universel.<br /><br /> **Sortie**<br /><br /> `Output`: `float3`<br /> Vecteur du pixel actuel à l’appareil photo.|None|
 |**Constante de couleur**|Valeur de constante de couleur.<br /><br /> **Sortie**<br /><br /> `Output`: `float4`<br /> Valeur de la couleur.|**Sortie**<br /> Valeur de la couleur.|
 |**Constante**|Valeur scalaire de constante.<br /><br /> **Sortie**<br /><br /> `Output`: `float`<br /> Valeur scalaire.|**Sortie**<br /> Valeur scalaire.|
 |**Constante 2D**|Constante vectorielle à deux composants.<br /><br /> **Sortie**<br /><br /> `Output`: `float2`<br /> Valeur vectorielle.|**Sortie**<br /> Valeur vectorielle.|
 |**Constante 3D**|Constante vectorielle à trois composants.<br /><br /> **Sortie**<br /><br /> `Output`: `float3`<br /> Valeur vectorielle.|**Sortie**<br /> Valeur vectorielle.|
 |**Constante 4D**|Constante vectorielle à quatre composants.<br /><br /> **Sortie**<br /><br /> `Output`: `float4`<br /> Valeur de la couleur.|**Sortie**<br /> Valeur vectorielle.|
-|**Position normalisée**|Position du pixel actuel, exprimée en coordonnées normalisées de l’appareil.<br /><br /> Les valeurs de l’axe des abscisses et de l’axe des ordonnées sont comprises dans la plage [-1, 1], la valeur de la coordonnée z est comprise dans la plage [0, 1], et le composant w contient la valeur de profondeur de point dans l’espace d’affichage ; w n’est pas normalisé.<br /><br /> **Sortie**<br /><br /> `Output`: `float4`<br /> Position du pixel actuel.|aucune.|
-|**Couleur du point**|Couleur diffuse du pixel actuel, qui est une combinaison des attributs de couleur diffuse de matériau et de couleur de sommet.<br /><br /> **Sortie**<br /><br /> `Output`: `float4`<br /> Couleur diffuse du pixel actuel.|aucune.|
-|**Profondeur de point**|Profondeur du pixel actuel dans l’espace d’affichage.<br /><br /> **Sortie**<br /><br /> `Output`: `float`<br /> Profondeur du pixel actuel.|aucune.|
-|**Profondeur de point normalisée**|Profondeur du pixel actuel, exprimée en coordonnées normalisées de l’appareil.<br /><br /> La valeur du résultat est comprise dans la plage [0, 1].<br /><br /> **Sortie**<br /><br /> `Output`: `float`<br /> Profondeur du pixel actuel.|aucune.|
-|**Position à l’écran**|Position du pixel actuel, exprimée en coordonnées d’écran.<br /><br /> Les coordonnées d’écran sont basées sur la fenêtre d’affichage actuelle. Les composants x et y contiennent les coordonnées d’écran, le composant z contient la profondeur normalisée dans la plage [0, 1], et le composant w contient la valeur de profondeur dans l’espace d’affichage.<br /><br /> **Sortie**<br /><br /> `Output`: `float4`<br /> Position du pixel actuel.|aucune.|
-|**Normale de surface**|Normale de surface du pixel actuel dans l’espace d’objets.<br /><br /> Vous pouvez l’utiliser pour calculer les contributions de l’éclairage et les réflexions dans l’espace d’objets.<br /><br /> **Sortie**<br /><br /> `Output`: `float3`<br /> Normale de surface du pixel actuel.|aucune.|
-|**Vecteur d’appareil photo de l’espace tangent**|Vecteur qui s’étend du pixel actuel à l’appareil photo dans l’espace tangent.<br /><br /> Vous pouvez l’utiliser pour calculer les réflexions dans l’espace tangent.<br /><br /> **Sortie**<br /><br /> `Output`: `float3`<br /> Vecteur du pixel actuel à l’appareil photo.|aucune.|
-|**Direction de la lumière de l’espace tangent**|Vecteur qui définit la direction dans laquelle la lumière est diffusée depuis une source de lumière dans l’espace tangent du pixel actuel.<br /><br /> Vous pouvez l’utiliser pour calculer les contributions spéculaires et d’éclairage dans l’espace tangent.<br /><br /> **Sortie**<br /><br /> `Output`: `float3`<br /> Vecteur du pixel actuel à une source de lumière.|aucune.|
-|**Normale universelle**|Normale de surface du pixel actuel dans l’espace universel.<br /><br /> Vous pouvez l’utiliser pour calculer les contributions de l’éclairage et les réflexions dans l’espace universel.<br /><br /> **Sortie**<br /><br /> `Output`: `float3`<br /> Normale de surface du pixel actuel.|aucune.|
-|**Position universelle**|Position du pixel actuel dans l'espace universel.<br /><br /> **Sortie**<br /><br /> `Output`: `float4`<br /> Position du pixel actuel.|aucune.|
+|**Position normalisée**|Position du pixel actuel, exprimée en coordonnées normalisées de l’appareil.<br /><br /> Les valeurs de l’axe des abscisses et de l’axe des ordonnées sont comprises dans la plage [-1, 1], la valeur de la coordonnée z est comprise dans la plage [0, 1], et le composant w contient la valeur de profondeur de point dans l’espace d’affichage ; w n’est pas normalisé.<br /><br /> **Sortie**<br /><br /> `Output`: `float4`<br /> Position du pixel actuel.|None|
+|**Couleur du point**|Couleur diffuse du pixel actuel, qui est une combinaison des attributs de couleur diffuse de matériau et de couleur de sommet.<br /><br /> **Sortie**<br /><br /> `Output`: `float4`<br /> Couleur diffuse du pixel actuel.|None|
+|**Profondeur de point**|Profondeur du pixel actuel dans l’espace d’affichage.<br /><br /> **Sortie**<br /><br /> `Output`: `float`<br /> Profondeur du pixel actuel.|None|
+|**Profondeur de point normalisée**|Profondeur du pixel actuel, exprimée en coordonnées normalisées de l’appareil.<br /><br /> La valeur du résultat est comprise dans la plage [0, 1].<br /><br /> **Sortie**<br /><br /> `Output`: `float`<br /> Profondeur du pixel actuel.|None|
+|**Position à l’écran**|Position du pixel actuel, exprimée en coordonnées d’écran.<br /><br /> Les coordonnées d’écran sont basées sur la fenêtre d’affichage actuelle. Les composants x et y contiennent les coordonnées d’écran, le composant z contient la profondeur normalisée dans la plage [0, 1], et le composant w contient la valeur de profondeur dans l’espace d’affichage.<br /><br /> **Sortie**<br /><br /> `Output`: `float4`<br /> Position du pixel actuel.|None|
+|**Normale de surface**|Normale de surface du pixel actuel dans l’espace d’objets.<br /><br /> Vous pouvez l’utiliser pour calculer les contributions de l’éclairage et les réflexions dans l’espace d’objets.<br /><br /> **Sortie**<br /><br /> `Output`: `float3`<br /> Normale de surface du pixel actuel.|None|
+|**Vecteur d’appareil photo de l’espace tangent**|Vecteur qui s’étend du pixel actuel à l’appareil photo dans l’espace tangent.<br /><br /> Vous pouvez l’utiliser pour calculer les réflexions dans l’espace tangent.<br /><br /> **Sortie**<br /><br /> `Output`: `float3`<br /> Vecteur du pixel actuel à l’appareil photo.|None|
+|**Direction de la lumière de l’espace tangent**|Vecteur qui définit la direction dans laquelle la lumière est diffusée depuis une source de lumière dans l’espace tangent du pixel actuel.<br /><br /> Vous pouvez l’utiliser pour calculer les contributions spéculaires et d’éclairage dans l’espace tangent.<br /><br /> **Sortie:**<br /><br /> `Output`: `float3`<br /> Vecteur du pixel actuel à une source de lumière.|None|
+|**Normale universelle**|Normale de surface du pixel actuel dans l’espace universel.<br /><br /> Vous pouvez l’utiliser pour calculer les contributions de l’éclairage et les réflexions dans l’espace universel.<br /><br /> **Sortie**<br /><br /> `Output`: `float3`<br /> Normale de surface du pixel actuel.|None|
+|**Position universelle**|Position du pixel actuel dans l'espace universel.<br /><br /> **Sortie**<br /><br /> `Output`: `float4`<br /> Position du pixel actuel.|None|

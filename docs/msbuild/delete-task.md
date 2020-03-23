@@ -19,10 +19,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: c9effb00c613c5a61a5a8d4d89cbbe5b785601d8
-ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/26/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77634277"
 ---
 # <a name="delete-task"></a>Delete (tâche)
@@ -31,7 +31,7 @@ Supprime les fichiers spécifiés.
 
 ## <a name="parameters"></a>Paramètres
 
-Le tableau ci-dessous décrit les paramètres de la tâche `Delete`.
+Le tableau ci-dessous décrit les paramètres de la tâche `Delete` .
 
 |Paramètre|Description|
 |---------------|-----------------|
@@ -39,14 +39,14 @@ Le tableau ci-dessous décrit les paramètres de la tâche `Delete`.
 |`Files`|Paramètre <xref:Microsoft.Build.Framework.ITaskItem>`[]` obligatoire.<br /><br /> Spécifie les fichiers à supprimer.|
 |`TreatErrorsAsWarnings`|Paramètre `Boolean` facultatif.<br /><br /> Si `true`, les erreurs sont consignées en tant qu’avertissements. La valeur par défaut est `false`.|
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Notes 
 
-En plus des paramètres énumérés ci-dessus, cette tâche hérite des paramètres de la classe <xref:Microsoft.Build.Tasks.TaskExtension>, qui elle-même hérite de la classe <xref:Microsoft.Build.Utilities.Task>. Pour obtenir la liste de ces paramètres supplémentaires et leurs descriptions, consultez [Classe de base TaskExtension](../msbuild/taskextension-base-class.md).
+En plus des paramètres énumérés ci-dessus, cette tâche hérite des paramètres de la classe <xref:Microsoft.Build.Tasks.TaskExtension> , qui elle-même hérite de la classe <xref:Microsoft.Build.Utilities.Task> . Pour une liste de ces paramètres supplémentaires et leurs descriptions, voir [TaskExtension classe de base](../msbuild/taskextension-base-class.md).
 
 > [!WARNING]
-> Soyez prudent lorsque vous utilisez des caractères génériques avec la tâche `Delete`. Vous pouvez facilement supprimer les fichiers incorrects à l’aide d’expressions telles que `$(SomeProperty)\**\*.*` ou `$(SomeProperty)/**/*.*`, en particulier si la propriété a la valeur d’une chaîne vide, auquel cas le paramètre `Files` peut prendre la valeur de la racine de votre lecteur et être supprimé bien plus que ce que vous souhaitiez supprimer.
+> Soyez prudent lorsque vous utilisez `Delete` des wildcards avec la tâche. Vous pouvez facilement supprimer les `$(SomeProperty)\**\*.*` fichiers `$(SomeProperty)/**/*.*`erronés avec des expressions comme ou , `Files` surtout si la propriété évalue à une chaîne vide, auquel cas le paramètre peut évaluer à la racine de votre lecteur et supprimer beaucoup plus que vous vouliez supprimer.
 
-## <a name="example"></a>Exemple
+## <a name="example"></a> Exemple
 
 L’exemple suivant supprime le fichier *MyApp.pdb*.
 
@@ -65,5 +65,5 @@ L’exemple suivant supprime le fichier *MyApp.pdb*.
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Tâches :](../msbuild/msbuild-tasks.md)
+- [Tâches](../msbuild/msbuild-tasks.md)
 - [Informations de référence sur les tâches](../msbuild/msbuild-task-reference.md)

@@ -16,19 +16,19 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 24ba5bbf34ecc12c2508c538e74909ee0a10aef4
-ms.sourcegitcommit: 85d66dc9fea3fa49018263064876b15aeb6f9584
-ms.translationtype: HT
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/24/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "68461394"
 ---
-# <a name="options-dialog-box-projects-and-solutions--build-and-run"></a>Boîte de dialogue Options : Projets et solutions \> Générer et exécuter
+# <a name="options-dialog-box-projects-and-solutions--build-and-run"></a>Boîte de dialogue d’options : Projets et solutions \> Construisent et exécutent
 
-Dans cette boîte de dialogue, vous pouvez spécifier le nombre maximal de projets C++ ou C# pouvant être générés simultanément, certains comportements de génération par défaut et certains paramètres du journal de génération. Pour accéder à ces options, sélectionnez **Outils** > **Options**, développez **Projets et solutions** et sélectionnez **Générer et exécuter**.
+Dans cette boîte de dialogue, vous pouvez spécifier le nombre maximal de projets C++ ou C# pouvant être générés simultanément, certains comportements de génération par défaut et certains paramètres du journal de génération. Pour accéder à ces options, sélectionnez **Outils** > **Options d’élargir** les **projets et les solutions,** puis sélectionnez **Build and Run**.
 
 **Nombre maximal de générations de projets en parallèle**
 
-Spécifie le nombre maximal de projets C++ et C# qui peuvent être générés en même temps. Pour optimiser le processus de génération, le nombre maximal de générations de projets en parallèle est automatiquement défini par rapport au nombre de processeurs équipant votre ordinateur. Le nombre maximal est 32.
+Spécifie le nombre maximal de projets C++ et C# qui peuvent être générés en même temps. Pour optimiser le processus de génération, le nombre maximal de générations de projets en parallèle est automatiquement défini par rapport au nombre de processeurs équipant votre ordinateur. La valeur maximale est de 32.
 
 **Générer uniquement des projets de démarrage et des dépendances à l'exécution**
 
@@ -44,7 +44,7 @@ Lors de l’exécution d’un projet avec **F5** ou la commande **Déboguer** > 
 
 *S’applique aux projets C++ uniquement.*
 
-Lors de l’exécution d’un projet avec **F5** ou la commande **Déboguer** >  **Démarrer le débogage**, le paramètre par défaut **Inviter à générer** affiche un message si un projet doit être exécuté même si la génération a échoué. Sélectionnez **Lancer l’ancienne version** pour lancer automatiquement la dernière build correcte, ce qui peut entraîner des incompatibilités entre le code en cours d’exécution et le code source. Sélectionnez **Ne pas lancer** pour supprimer le message.
+Lors de l’exécution d’un projet avec **F5** ou la commande **Déboguer** > ** Démarrer le débogage**, le paramètre par défaut **Inviter à générer** affiche un message si un projet doit être exécuté même si la génération a échoué. Sélectionnez **Lancer l’ancienne version** pour lancer automatiquement la dernière build correcte, ce qui peut entraîner des incompatibilités entre le code en cours d’exécution et le code source. Sélectionnez **Ne pas lancer** pour supprimer le message.
 
 **Pour les nouvelles solutions, utiliser le projet sélectionné actuellement comme projet de démarrage**
 
@@ -58,10 +58,10 @@ Détermine la quantité d’informations du processus de génération qui s’af
 
 *S’applique aux projets C++ uniquement.*
 
-Détermine quelles informations sont écrites dans le fichier journal de build, qui se trouve dans *\\\<Nom_Projet>\Debug\\\<Nom_Projet>.log*.
+Détermine la quantité d’informations écrites sur le fichier de journal de construction, qui est situé à * \\ \<ProjectName\\\<>-Debug ProjectName>.log*.
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Compilation et génération](../../ide/compiling-and-building-in-visual-studio.md)
+- [Compilation et construction](../../ide/compiling-and-building-in-visual-studio.md)
 - [Boîte de dialogue Options, Projets et solutions](projects-and-solutions-options-dialog-box.md)
 - [Boîte de dialogue Options, Projets et solutions, Projets web](options-dialog-box-projects-and-solutions-web-projects.md)

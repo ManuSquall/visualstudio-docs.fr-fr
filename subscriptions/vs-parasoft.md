@@ -7,10 +7,10 @@ ms.date: 11/18/2019
 ms.topic: conceptual
 description: Découvrez comment activer l’abonnement Virtualize/SOA Test Professional inclus dans votre abonnement Visual Studio.
 ms.openlocfilehash: 036b265f9ca1accc7027477abfc27ce4e66c4033
-ms.sourcegitcommit: 5c9ca18eadc7ed0ed095cc5a3e1df40bbc13e70c
+ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/18/2019
+ms.lasthandoff: 03/21/2020
 ms.locfileid: "74161926"
 ---
 # <a name="parasoft-virtualizesoatest-professional-desktop-in-visual-studio-subscriptions"></a>Avantages de Parasoft Virtualize/SOAtest Professional Desktop dans les abonnements Visual Studio
@@ -19,7 +19,7 @@ Effectuez des tests plus tôt et plus souvent.  Simulez et testez le comportemen
 
 ## <a name="activation-steps"></a>Étapes d’activation
 
-1. Pour utiliser votre avantage Parasoft Virtualize/SOAtest Professional Desktop, connectez-vous à [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
+1. Pour utiliser votre avantage Parasoft Virtualize/SOAtest [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs)Professional Desktop, connectez-vous à .
 
 2. Recherchez la vignette Parasoft dans la section Outils et cliquez sur le lien **Obtenir le code** en bas de la vignette de l’avantage.   Vous recevez une notification confirmant l’envoi du code.  Cliquez sur **Activer**.
    > [!div class="mx-imgBorder"]
@@ -46,7 +46,7 @@ Effectuez des tests plus tôt et plus souvent.  Simulez et testez le comportemen
 
 9. Choisissez la langue à utiliser, puis cliquez sur **OK**.
 
-10. L’Assistant Parasoft SOAtest & Virtualize Setup Wizard démarre.  Cliquez sur **Next**.
+10. L’Assistant Parasoft SOAtest & Virtualize Setup Wizard démarre.  Cliquez sur **Suivant**.
     > [!div class="mx-imgBorder"]
     > ![Avantage Parasoft, Démarrage de l’installation](_img/vs-parasoft/vs-parasoft-start-install.png)
 
@@ -70,28 +70,28 @@ Effectuez des tests plus tôt et plus souvent.  Simulez et testez le comportemen
 
 ## <a name="eligibility"></a>Éligibilité
 
-| Niveau d'abonnement                                                 |     Canaux                                            | Avantage                                                          | Renouvelable ?    |
+| Niveau de l’abonnement                                                 |     Canaux                                            | Avantage                                                          | Renouvelable ?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
-| Visual Studio Enterprise (Standard)   | Licences en volume, Azure, Détail, NFR sélectif<sup>1</sup> | 6 mois       |  Oui       |
-| Visual Studio Enterprise avec GitHub Enterprise | LV | 6 mois       |  Oui       |
-| Visual Studio Professional (Standard) | Licences en volume, Azure, Détail                                       | Non disponible                                                           |NA         |
-| Visual Studio Professional avec GitHub Enterprise | LV                                      | Non disponible                                                           |NA         |
-| Visual Studio Test Professional (Standard)                         | Licences en volume, Détail                                              | Non disponible                                                           |NA         |
-| Plateformes MSDN (Standard)                                          | Licences en volume, Détail                                              | Non disponible                                                           |NA         |
-| Visual Studio Enterprise, Visual Studio Professional (cloud mensuel) | Azure                                       | Non disponible                                                           |NA|
+| Visual Studio Enterprise (Standard)   | VL, Azure, Retail, sélectionné NFR<sup>1</sup> | 6 mois       |  Oui       |
+| Visual Studio Enterprise avec GitHub Enterprise | Vl | 6 mois       |  Oui       |
+| Visual Studio Professional (Standard) | Licences en volume, Azure, Détail                                       | Non disponible                                                           |N/D         |
+| Visual Studio Professional avec GitHub Enterprise | Vl                                      | Non disponible                                                           |N/D         |
+| Visual Studio Test Professional (Standard)                         | Licences en volume, Détail                                              | Non disponible                                                           |N/D         |
+| Plateformes MSDN (Standard)                                          | Licences en volume, Détail                                              | Non disponible                                                           |N/D         |
+| Visual Studio Enterprise, Visual Studio Professional (cloud mensuel) | Azure                                       | Non disponible                                                           |N/D|
 ||
 
-<sup>1</sup>  *comprend : Microsoft Partner Network (Enterprise).  Exclut : la revente interdite (not for Resale), VSIP (Visual Studio Industry Partner), FTE, MCT Software & Services Developer, BizSpark, imagine, le MVP (Most Valuable Professional), Bureau régional.  Services de & de logiciel MCT.*
+<sup>1</sup>  *Comprend: Microsoft Partner Network (Enterprise).  Exclut: Not for Resale (NFR), Visual Studio Industry Partner (VSIP), FTE, MCT Software & Services Developer, BizSpark, Imagine, Most Valuable Professional (MVP), Regional Director (RD).  MCT Software & Services.*
 
 > [!NOTE]
-> Microsoft ne propose plus d’abonnements annuels Visual Studio Professional et Visual Studio Enterprise dans les abonnements cloud. L’expérience des clients n’en sera pas altérée ; il leur sera par ailleurs toujours possible de renouveler, d’augmenter, de diminuer ou d’annuler leur abonnement. Nous encourageons les nouveaux clients à consulter [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) pour explorer les différentes options d’achat de Visual Studio.
+> Microsoft ne propose plus d’abonnements annuels Visual Studio Professional et Visual Studio Enterprise dans les abonnements cloud. L’expérience des clients n’en sera pas altérée ; il leur sera par ailleurs toujours possible de renouveler, d’augmenter, de diminuer ou d’annuler leur abonnement. Les nouveaux clients sont [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) encouragés à aller explorer différentes options pour acheter Visual Studio.
 
 ## <a name="support-resources"></a>Ressources de support
 - Besoin d’aide sur les produits Parasoft ?  Consultez les ressources suivantes :
   - Support technique : https://www.parasoft.com/support/
   - Centre de ressources Parasoft : https://www.parasoft.com/resources/
-- Pour obtenir de l’aide concernant les ventes, les abonnements, les comptes et la facturation des abonnements Visual Studio, contactez le [support des abonnements](https://visualstudio.microsoft.com/subscriptions/support/) Visual Studio.
+- Pour obtenir de l’aide pour les ventes, les abonnements, les comptes et la facturation des abonnements Visual Studio, contactez Visual Studio [Subscriptions Support](https://visualstudio.microsoft.com/subscriptions/support/).
 - Vous avez des questions concernant l’IDE Visual Studio, Azure DevOps Services, ou d’autres produits ou services Visual Studio ?  Consultez le [support Visual Studio](https://visualstudio.microsoft.com/support/).
 
 ## <a name="next-steps"></a>Étapes suivantes
-Tirez parti de votre propre bac à sable (sandbox) de développement en activant votre [crédit individuel Azure DevTest](vs-azure.md). 
+Profitez de votre propre bac à sable de développement en activant votre [crédit individuel Azure DevTest](vs-azure.md). 

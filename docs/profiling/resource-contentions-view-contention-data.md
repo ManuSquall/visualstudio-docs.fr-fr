@@ -14,10 +14,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 1607e594b6456d4da4396069d589160230b39680
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74778334"
 ---
 # <a name="resource-contentions-view---contention-data"></a>Mode Conflits de ressources - Données de conflit
@@ -42,9 +42,9 @@ Le mode Conflits de ressources répertorie des données de conflit pour les ress
 
 |Colonne|Description|
 |------------|-----------------|
-|**Nom**|Nom de la ressource ou de la fonction.|
+|**Nom   **|Nom de la ressource ou de la fonction.|
 |**Temps bloqué exclusif**|-   Pour une ressource, durée totale pendant laquelle l’accès à la ressource a été bloqué et a provoqué l’attente d’un thread.<br />-   Pour une fonction, durée pendant laquelle ces instances de la fonction n’ont pas pu accéder à la ressource parente quand la fonction exécutait le code dans le corps de la fonction. Le temps bloqué dans les fonctions qui ont été appelées par la fonction n’est pas inclus.|
-|**% de temps bloqué exclusif**|-   Pour une ressource, pourcentage de tout le temps bloqué dans les données de profilage qui était du temps bloqué de cette ressource.<br />-   Pour une fonction, pourcentage de tout le temps bloqué dans les données de profilage qui était du temps bloqué exclusif de ces instances de fonction.|
+|**% de temps bloqué exclusif**|-   Pour une ressource, pourcentage de tout le temps bloqué dans les données de profilage qui était du temps bloqué de cette ressource.<br />-   Pour une fonction, pourcentage de tout le temps bloqué dans les données de profilage qui était du temps bloqué exclusif de ces instances de fonction.|
 |**Conflits exclusifs**|-   Pour une ressource, nombre total de fois où l’accès à la ressource a été bloqué et a provoqué l’attente d’un thread.<br />-   Pour une fonction, nombre de fois où ces instances de la fonction n’ont pas pu accéder à la ressource parente quand la fonction exécutait le code dans le corps de la fonction. Les événements bloquants dans les fonctions qui ont été appelées par la fonction ne sont pas inclus.|
 |**% de conflits exclusifs**|-   Pour une ressource, pourcentage de tous les événements de conflit dans les données de profilage qui étaient des événements de conflit pour l’accès à cette ressource.<br />-   Pour une fonction, pourcentage de tous les événements de conflit dans les données de profilage qui étaient des événements de conflit exclusifs de ces instances de fonction pour la ressource parente.|
 |**Temps bloqué inclusif**|-   Pour une ressource, durée totale pendant laquelle l’accès à la ressource a été bloqué et a provoqué l’attente d’un thread.<br />-   Pour une fonction, durée pendant laquelle ces instances de la fonction ou de toute fonction appelée par les instances n’ont pas pu accéder à la ressource parente quand la fonction exécutait le code dans le corps de la fonction.|
@@ -53,8 +53,8 @@ Le mode Conflits de ressources répertorie des données de conflit pour les ress
 |**% de conflits inclusifs**|-   Pour une ressource, pourcentage de tous les événements de conflit au cours de l’exécution de profilage qui étaient des événements de conflit pour l’accès à cette ressource.<br />-   Pour une fonction, nombre de fois où ces instances de la fonction n’ont pas pu accéder à la ressource parente quand la fonction exécutait le code dans le corps de la fonction. Les événements bloquants dans les fonctions qui ont été appelées par la fonction ne sont pas inclus.|
 |**Niveau**|Niveau d’imbrication de cette fonction dans l’arborescence des appels. Uniquement dans les rapports en ligne de commande [VSPerfReport](../profiling/vsperfreport.md).|
 |**Numéro de ligne de fonction**|Numéro de ligne du début de cette fonction dans le fichier source.|
-|**Nom de module**|Nom du module qui contient la fonction.|
-|**Chemin de module**|Chemin d’accès du module qui contient la fonction.|
+|**Nom du module**|Nom du module qui contient la fonction.|
+|**Chemin du module**|Chemin d’accès du module qui contient la fonction.|
 |**ID du processus**|ID du processus (PID) dans lequel la fonction s’exécutait.|
-|**Nom du processus**|nom du processus.|
+|**Nom du processus**|Nom du processus.|
 |**Fichier source**|Fichier source contenant la définition pour cette fonction.|

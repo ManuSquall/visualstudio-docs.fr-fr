@@ -10,10 +10,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 8caa1a4976da39b155edde36d538ca193bd1addd
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74779491"
 ---
 # <a name="create-portable-profiling-data-files-from-the-command-line"></a>Créer des fichiers de données de profilage portables à partir de la ligne de commande
@@ -40,6 +40,6 @@ Pour faciliter le partage des données de profilage, vous pouvez utiliser l’ou
 
 - Dans une fenêtre d’invite de commandes, tapez la commande suivante :
 
-   \<Chemin><strong>VSPerfReport \<</strong>Fichier VSP> **/SummaryFile** [ **/Output:** \<Nom de fichier>]
+   \<Chemin><strong>VSPerfReport \<</strong>Fichier VSP> **/SummaryFile** [**/Output:**\<Nom de fichier>]
 
    Par défaut, le fichier .*vsps* est nommé à partir du nom de base du fichier .*vsp*. Vous pouvez spécifier un autre nom avec l’option **Output**.

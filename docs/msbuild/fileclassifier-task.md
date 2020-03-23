@@ -18,10 +18,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 46ed1b1f94cd2ef23ff0704912cb2a2194ba7dab
-ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/26/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77634186"
 ---
 # <a name="fileclassifier-task"></a>FileClassifier, tâche
@@ -32,20 +32,20 @@ La tâche <xref:Microsoft.Build.Tasks.Windows.FileClassifier> classifie un ensem
 
 |Paramètre|Description|
 |---------------|-----------------|
-|`CLREmbeddedResource`|Non utilisé.|
-|`CLRResourceFiles`|Non utilisé.|
-|`CLRSatelliteEmbeddedResource`|Non utilisé.|
-|`Culture`|Paramètre **String** facultatif.<br /><br /> Spécifie la culture de la build. Cette valeur peut être **null** si la build n’est pas localisable. Si la valeur est **null**, la valeur par défaut est la valeur en minuscules retournée par **CultureInfo.InvariantCulture**.|
+|`CLREmbeddedResource`|Inutilisé.|
+|`CLRResourceFiles`|Inutilisé.|
+|`CLRSatelliteEmbeddedResource`|Inutilisé.|
+|`Culture`|Paramètre **de chaîne** facultatif.<br /><br /> Spécifie la culture de la build. Cette valeur peut être **null** si la build n’est pas localisable. Si la valeur est **null**, la valeur par défaut est la valeur en minuscules retournée par **CultureInfo.InvariantCulture**.|
 |`MainEmbeddedFiles`|Paramètre de sortie **ITaskItem[]** facultatif.<br /><br /> Spécifie les ressources non localisables incorporées dans l’assembly principal.|
-|`OutputType`|Paramètre **String** obligatoire.<br /><br /> Spécifie le type de fichier dans lequel incorporer les fichiers sources spécifiés. Les valeurs valides sont **exe**, **winexe** et **library**.|
+|`OutputType`|Paramètre **de chaîne** requis.<br /><br /> Spécifie le type de fichier dans lequel incorporer les fichiers sources spécifiés. Les valeurs valides sont **exe**, **winexe** et **library**.|
 |`SatelliteEmbeddedFiles`|Paramètre de sortie **ITaskItem[]** facultatif.<br /><br /> Spécifie les fichiers localisables incorporés dans l’assembly satellite pour la culture spécifiée par le paramètre **Culture**.|
-|`SourceFiles`|Paramètre **ITaskItem[]** obligatoire.<br /><br /> Spécifie la liste des fichiers à classifier.|
+|`SourceFiles`|Paramètre **ITaskItem[]** requis.<br /><br /> Spécifie la liste des fichiers à classifier.|
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Notes 
 
 Si le paramètre **Culture** n’est pas défini, toutes les ressources spécifiées à l’aide du paramètre **SourceFiles** sont non localisables ; sinon, elles sont localisables, sauf si elles sont associées à un attribut **Localizable** dont la valeur est **false**.
 
-## <a name="example"></a>Exemple
+## <a name="example"></a> Exemple
 
 L’exemple suivant classifie un fichier source unique en tant que ressource, puis l’incorpore dans un assembly satellite pour la culture Français-Canadien (fr-CA).
 
@@ -68,8 +68,8 @@ L’exemple suivant classifie un fichier source unique en tant que ressource, pu
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Informations de référence sur MSBuild WPF](../msbuild/wpf-msbuild-reference.md)
+- [WPF MSBuild référence](../msbuild/wpf-msbuild-reference.md)
 - [Informations de référence sur les tâches](../msbuild/wpf-msbuild-task-reference.md)
-- [Informations de référence sur MSBuild](../msbuild/msbuild-reference.md)
+- [Référence MSBuild](../msbuild/msbuild-reference.md)
 - [Informations de référence sur les tâches](../msbuild/msbuild-task-reference.md)
 - [Générer une application WPF (WPF)](/dotnet/framework/wpf/app-development/building-a-wpf-application-wpf)

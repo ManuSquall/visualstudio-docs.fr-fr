@@ -16,15 +16,15 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 513dd884f65e041e7ad90dda1483633fec57e100
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75589004"
 ---
 # <a name="how-to-select-a-load-test-results-repository"></a>Guide pratique pour sélectionner un référentiel de résultats des tests de charge
 
-Vous n'êtes pas limité à un magasin de résultats local. Souvent, les tests de charge sont exécutés sur un jeu distant d'ordinateurs agents. Les agents, utilisés conjointement avec un contrôleur, peuvent générer une charge simulée plus importante qu'un ordinateur unique. Pour plus d’informations, consultez [Contrôleurs de test et agents de test](configure-test-agents-and-controllers-for-load-tests.md).
+Vous n'êtes pas limité à un magasin de résultats local. Souvent, les tests de charge sont exécutés sur un jeu distant d'ordinateurs agents. Les agents, utilisés conjointement avec un contrôleur, peuvent générer une charge simulée plus importante qu'un ordinateur unique. Pour plus d’informations, consultez [les contrôleurs de test et les agents d’essai](configure-test-agents-and-controllers-for-load-tests.md).
 
 Vous pouvez enregistrer les résultats des tests de vos agents ou de votre ordinateur local sur un serveur SQL sur lequel vous avez créé un magasin de résultats de tests de charge. Dans les deux cas, vous devez identifier l’emplacement auquel stocker les résultats de votre test de charge à l’aide de la fenêtre **Administrer le contrôleur de test**.
 
@@ -38,7 +38,7 @@ Vous pouvez enregistrer les résultats des tests de vos agents ou de votre ordin
 
      ![Propriétés de connexion du magasin des résultats du test de charge](../test/media/loadtestconnectionproperties.png) Propriétés de connexion du magasin des résultats du test de charge
 
-3. Dans le **Magasin des résultats des tests de charge**, cliquez sur **(…)** pour afficher la boîte de dialogue **Propriétés de connexion**.
+3. Dans le **magasin de résultats de test de charge**, cliquez **(...)** pour afficher la boîte de dialogue **Connection Properties.**
 
 4. Dans **Nom du serveur**, tapez le nom du serveur où vous avez exécuté les scripts `LoadTest`.
 
@@ -49,11 +49,11 @@ Vous pouvez enregistrer les résultats des tests de vos agents ou de votre ordin
 
 6. Sous **Connexion à la base de données**, choisissez **Sélectionner ou entrer un nom de base de données**. Sélectionnez **LoadTest** dans la zone de liste déroulante.
 
-7. Cliquez sur **OK**. Vous pouvez tester la connexion en cliquant sur **Tester la connexion**.
+7. Choisissez **OK**. Vous pouvez tester la connexion en cliquant sur **Tester la connexion**.
 
 8. Choisissez **Fermer** dans la boîte de dialogue **Gérer le contrôleur de test**.
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Gérer des résultats des tests de charge dans le référentiel des résultats des tests de charge](../test/manage-load-test-results-in-the-load-test-results-repository.md)
+- [Gérer les résultats des tests de charge dans le dépôt des résultats des tests de charge](../test/manage-load-test-results-in-the-load-test-results-repository.md)
 - [Contrôleurs de test et agents de test](configure-test-agents-and-controllers-for-load-tests.md)

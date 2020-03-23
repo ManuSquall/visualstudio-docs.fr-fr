@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 713e7319618b42e2cdc4b8c0951bd79c225ac1b6
-ms.sourcegitcommit: f9f389e72787de30eb869a55ef7725a10a4011f0
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/06/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "73636589"
 ---
 # <a name="first-look-at-the-visual-studio-ide"></a>Premier aperçu de l’IDE Visual Studio
@@ -37,7 +37,7 @@ Si vous n’avez pas encore installé Visual Studio, accédez à la page [Télé
 
 Quand vous lancez Visual Studio, la première chose que vous voyez est la fenêtre de démarrage. La fenêtre de démarrage est conçue pour vous aider à « accéder au code » plus rapidement. Elle contient des options pour fermer ou extraire du code, ouvrir une solution ou un projet existant, créer un projet ou simplement ouvrir un dossier qui contient des fichiers de code.
 
-[![La fenêtre de démarrage dans Visual Studio 2019](media/vs-2019/start-window.png)](media/vs-2019/start-window.png)
+[![La fenêtre de départ de Visual Studio 2019](media/vs-2019/start-window.png)](media/vs-2019/start-window.png)
 
 Si vous utilisez Visual Studio pour la première fois, votre liste des derniers projets est vide.
 
@@ -51,17 +51,17 @@ L’option **Continuer sans code** ouvre simplement l’environnement de dévelo
 
 ## <a name="start-page"></a>Page de démarrage
 
-Quand vous lancez Visual Studio, la première chose qui s’affiche en général est la **Page de démarrage**. La **Page de démarrage** est conçue comme un « hub » pour vous aider à trouver plus rapidement les commandes et fichiers projet dont vous avez besoin. La section **Récent** affiche les projets et dossiers que vous avez utilisés récemment. Sous **Nouveau projet**, vous pouvez cliquer sur un lien pour afficher la boîte de dialogue **Nouveau projet**, ou sous **Ouvrir**, vous pouvez ouvrir un projet ou dossier de code existant. Vous trouverez à droite un flux des dernières informations pour les développeurs.
+La première chose que vous verrez après le lancement de Visual Studio est très probablement la **page de démarrage**. La **page de démarrage** est conçue comme un « hub » pour vous aider à trouver les commandes et les fichiers de projet dont vous avez besoin plus rapidement. La section **Récent** affiche les projets et dossiers que vous avez utilisés récemment. Sous **Nouveau projet**, vous pouvez cliquer sur un lien pour afficher la boîte de dialogue **Nouveau projet**, ou sous **Ouvrir**, vous pouvez ouvrir un projet ou dossier de code existant. Vous trouverez à droite un flux des dernières informations pour les développeurs.
 
 ![Page de démarrage dans Visual Studio](media/start-page.png)
 
-Si vous fermez la **Page de démarrage** et souhaitez la revoir, vous pouvez la rouvrir à partir du menu **Fichier**.
+Si vous fermez la **page de démarrage** et que vous souhaitez la revoir, vous pouvez la rouvrir à partir du menu **Fichier.**
 
 ![Menu Fichier dans Visual Studio](media/quickstart-IDE-file-menu-large.png)
 
 ::: moniker-end
 
-## <a name="create-a-project"></a>Créer un projet
+## <a name="create-a-project"></a>Création d’un projet
 
 Pour continuer à explorer les fonctionnalités de Visual Studio, nous allons créer un projet.
 
@@ -90,13 +90,13 @@ Pour continuer à explorer les fonctionnalités de Visual Studio, nous allons cr
 1. Dans la boîte de dialogue **Nouveau projet** qui apparaît, acceptez le nom de projet par défaut et sélectionnez **OK**.
 ::: moniker-end
 
-   Le projet est créé et un fichier nommé *Server. js* s’ouvre dans la fenêtre de l' **éditeur** . **L’Éditeur** affiche le contenu des fichiers. C’est là que vous effectuez la majeure partie de votre travail de codage dans Visual Studio.
+   Le projet est créé et un fichier nommé *server.js s’ouvre* dans la fenêtre **de l’éditeur.** **L’éditeur** affiche le contenu des fichiers, et c’est là que vous ferez la plupart de votre travail de codage dans Visual Studio.
 
    ![Éditeur dans Visual Studio](media/editor.png)
 
-## <a name="solution-explorer"></a>l'Explorateur de solutions
+## <a name="solution-explorer"></a>Explorateur de solutions
 
-L’**Explorateur de solutions**, qui se trouve généralement sur le côté droit de Visual Studio, affiche une représentation graphique de la hiérarchie des fichiers et des dossiers dans votre projet, solution ou dossier de code. Vous pouvez parcourir la hiérarchie et atteindre un fichier dans **l’Explorateur de solutions**.
+L’**Explorateur de solutions**, qui se trouve généralement sur le côté droit de Visual Studio, affiche une représentation graphique de la hiérarchie des fichiers et des dossiers dans votre projet, solution ou dossier de code. Vous pouvez parcourir la hiérarchie et naviguer vers un fichier dans **Solution Explorer**.
 
 ![Explorateur de solutions dans Visual Studio](media/quickstart-IDE-solution-explorer.png)
 
@@ -106,11 +106,11 @@ La barre de menus en haut de la fenêtre de Visual Studio regroupe les commandes
 
 ![Barre de menus dans Visual Studio](media/quickstart-IDE-menu-bar.png)
 
-Ouvrons la fenêtre **Liste d’erreurs** en sélectionnant le menu **Afficher**, puis **Liste d’erreurs**.
+Ouvrons la fenêtre de la **liste d’erreurs** en choisissant le menu **View,** puis **la liste d’erreurs**.
 
 ## <a name="error-list"></a>Liste d'erreurs
 
-La **Liste d’erreurs** affiche les erreurs, avertissements et messages concernant l’état actuel de votre code. S’il existe des erreurs (par exemple, une accolade ou un point-virgule manquant) dans votre fichier, ou n’importe où dans votre projet, elles sont répertoriées ici.
+La **liste d’erreurs** vous montre des erreurs, des avertissements et des messages concernant l’état actuel de votre code. S’il existe des erreurs (par exemple, une accolade ou un point-virgule manquant) dans votre fichier, ou n’importe où dans votre projet, elles sont répertoriées ici.
 
 ![Liste d’erreurs dans Visual Studio](media/quickstart-IDE-error-list.png)
 
@@ -118,7 +118,7 @@ La **Liste d’erreurs** affiche les erreurs, avertissements et messages concern
 
 La fenêtre **Sortie** affiche les messages de sortie après la génération de votre projet et les messages retournés par votre fournisseur de contrôle de code source.
 
-Générons le projet pour afficher une sortie de génération. Dans le menu **Générer** , cliquez sur **Générer la solution**. La fenêtre **Sortie** obtient automatiquement le focus et affiche un message de génération réussie.
+Générons le projet pour afficher une sortie de génération. Dans le menu **Build,** choisissez **Build Solution**. La fenêtre **De sortie** obtient automatiquement la mise au point et affiche un message de construction réussi.
 
 ![Fenêtre Sortie dans Visual Studio](media/build-output-minimal.png)
 
@@ -136,7 +136,7 @@ La zone de recherche permet d’effectuer rapidement et facilement presque n’i
 
 1. Regénérez le projet en cliquant avec le bouton droit sur le projet **NodejsWebApp1** dans l’**Explorateur de solutions** et en choisissant **Regénérer** dans le menu contextuel.
 
-   Cette fois, la fenêtre **Sortie** affiche une journalisation de commentaires plus importante à partir du processus de génération, notamment quels fichiers ont été copiés et où.
+   Cette **fois,** la fenêtre output montre plus de connexion verbeuse à partir du processus de construction, y compris les fichiers ont été copiés où.
 
    ![Sortie de génération avec commentaires dans Visual Studio](media/build-output-verbose.png)
 

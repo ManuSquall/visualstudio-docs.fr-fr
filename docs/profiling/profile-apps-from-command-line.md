@@ -1,6 +1,6 @@
 ---
-title: Mesurer les performances à partir de la ligne de commande
-description: Mesurez les performances de l’UC et l’utilisation de la mémoire managée dans votre application à partir de la ligne de commande.
+title: Mesurer les performances de la ligne de commande
+description: Mesurez les performances du processeur et gérez l’utilisation de la mémoire dans votre application à partir de la ligne de commande.
 ms.custom: ''
 ms.date: 02/21/2020
 ms.topic: conceptual
@@ -15,10 +15,10 @@ monikerRange: '>= vs-2019'
 ms.workload:
 - multiple
 ms.openlocfilehash: c109e2ae1db28f8e08ed7c34a7ee0871a6efe670
-ms.sourcegitcommit: bf2e9d4ff38bf5b62b8af3da1e6a183beb899809
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77558119"
 ---
 # <a name="measure-application-performance-from-the-command-line"></a>Mesurer les performances d’une application à partir de la ligne de commande
@@ -65,7 +65,7 @@ Pour profiler une application à l’aide des outils CLI de diagnostics Visual S
 
 1. Accédez à la sortie du fichier de la commande précédente et ouvrez-la dans Visual Studio pour examiner les informations collectées.
 
-## <a name="config_file"></a> Fichiers de configuration des agents
+## <a name="agent-configuration-files"></a><a name="config_file"></a> Fichiers de configuration des agents
 
 Les agents de collecte sont des composants interchangeables qui collectent différents types de données en fonction de ce que vous essayez de mesurer.
 

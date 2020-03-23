@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - cplusplus
 ms.openlocfilehash: 9b71679e460b904138cb0bf922da9d157f0a91c9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "62552978"
 ---
 # <a name="c-library-reference"></a>Informations de référence sur la bibliothèque C++
@@ -24,10 +24,10 @@ Cette section contient des informations de référence sur le kit SDK du visuali
 > [!NOTE]
 > La norme du langage C++ réserve l’utilisation des identificateurs commençant par un caractère de soulignement (`_`) aux implémentations telles que les bibliothèques. N’utilisez donc pas de noms commençant par un trait de soulignement dans votre code. Le comportement des éléments de code, dont les noms suivent cette convention n'est pas garanti et est susceptible de changer dans les futures mises à jour. Pour ces raisons, ces éléments de code ont été omis de cette documentation.
 
-## <a name="in-this-section"></a>Dans cette section
+## <a name="in-this-section"></a>Contenu de cette section
 
-[Concurrency, espace de noms (visualiseur concurrentiel)](../profiling/concurrency-namespace-concurrency-visualizer.md)
+[Espace de nom de concurrency (Visuel de concurrency)](../profiling/concurrency-namespace-concurrency-visualizer.md)
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Kit SDK du visualiseur concurrentiel](../profiling/concurrency-visualizer-sdk.md)
+- [SDK du visualiseur concurrentiel](../profiling/concurrency-visualizer-sdk.md)

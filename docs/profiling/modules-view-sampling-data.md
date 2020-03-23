@@ -13,10 +13,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 7ead219ddf482af5917842118d386c6fefe67973
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74772712"
 ---
 # <a name="modules-view---sampling-data"></a>Modules, vue - données d’échantillonnage
@@ -29,19 +29,19 @@ La vue Modules des données d’échantillonnage affiche les données de perform
 
 |Colonne|Description|
 |------------|-----------------|
-|**Nom**|Nom du module, de la fonction, du numéro de ligne ou de l’adresse du pointeur d’instruction.|
+|**Nom   **|Nom du module, de la fonction, du numéro de ligne ou de l’adresse du pointeur d’instruction.|
 |**ID du processus**|ID du processus (PID) de l'exécution du profilage.|
-|**Nom du processus**|nom du processus.|
-|**Nom de module**|Nom du module qui contient la fonction, la ligne ou le pointeur d’instruction.|
-|**Chemin de module**|Chemin du module qui contient le module, la fonction, la ligne ou le pointeur d’instruction.|
+|**Nom du processus**|Nom du processus.|
+|**Nom du module**|Nom du module qui contient la fonction, la ligne ou le pointeur d’instruction.|
+|**Chemin du module**|Chemin du module qui contient le module, la fonction, la ligne ou le pointeur d’instruction.|
 |**Fichier source**|Fichier source contenant la définition pour cette fonction.|
 |**Numéro de ligne de fonction**|Numéro de ligne du début de cette fonction dans le fichier source.|
 |**Échantillons inclusifs**|-   Pour une fonction, nombre d’échantillons dans lesquels cette fonction ou une fonction appelée par cette fonction s’exécutait ; autrement dit, nombre d’échantillons de pile des appels qui ont contenu cette fonction.<br />-   Pour un module, nombre d’échantillons dans lesquels au moins une fonction du module s’exécutait.<br />-   Pour une ligne ou une instruction, nombre d’échantillons dans lesquels cette ligne ou cette instruction s’exécutait.|
-|**% d’échantillons inclusifs**|-   Pour une fonction ou un module, pourcentage de tous les échantillons de l’exécution du profilage qui étaient des échantillons inclusifs de cette fonction ou de ce module.<br />-   Pour une ligne ou une instruction, pourcentage de tous les échantillons de l’exécution du profilage dans lesquels cette ligne ou cette instruction s’exécutait.|
+|**% des échantillons inclusifs**|-   Pour une fonction ou un module, pourcentage de tous les échantillons de l’exécution du profilage qui étaient des échantillons inclusifs de cette fonction ou de ce module.<br />-   Pour une ligne ou une instruction, pourcentage de tous les échantillons de l’exécution du profilage dans lesquels cette ligne ou cette instruction s’exécutait.|
 |**Échantillons exclusifs**|-   Pour une fonction, nombre d’échantillons de pile des appels dans lesquels cette fonction s’exécutait directement ; autrement dit, nombre d’échantillons dans lesquels cette fonction se trouvait en haut de la pile des appels.<br />-   Pour un module, somme des échantillons exclusifs des fonctions présentes dans le module.<br />-   Pour une ligne ou une instruction, nombre d’échantillons dans lesquels cette ligne ou cette instruction s’exécutait.|
-|**% d’échantillons exclusifs**|-   Pour une fonction ou un module, pourcentage de tous les échantillons de l’exécution du profilage qui étaient des échantillons exclusifs de cette fonction ou de ce module.<br />-   Pour une ligne ou une instruction, pourcentage de tous les échantillons de l’exécution du profilage dans lesquels cette ligne ou cette instruction s’exécutait.|
+|**% d’échantillons exclusifs**|-   Pour une fonction ou un module, pourcentage de tous les échantillons de l’exécution du profilage qui étaient des échantillons exclusifs de cette fonction ou de ce module.<br />-   Pour une ligne ou une instruction, pourcentage de tous les échantillons de l’exécution du profilage dans lesquels cette ligne ou cette instruction s’exécutait.|
 
 ## <a name="see-also"></a>Voir aussi
-- [Modules, vue - échantillonnage](../profiling/modules-view-dotnet-memory-sampling-data.md)
-- [Vue des modules - Instrumentation](../profiling/modules-view-dotnet-memory-instrumentation-data.md)
+- [Modules Vue - échantillonnage](../profiling/modules-view-dotnet-memory-sampling-data.md)
+- [Modules Vue - instrumentation](../profiling/modules-view-dotnet-memory-instrumentation-data.md)
 - [Vue Modules](../profiling/modules-view-instrumentation-data.md)

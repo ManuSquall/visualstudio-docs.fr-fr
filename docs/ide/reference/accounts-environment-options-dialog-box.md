@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 9ff457523024db49502ae982a390d9a7be6ba9dd
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75595902"
 ---
 # <a name="accounts-environment-options-dialog-box"></a>Comptes, Environnement, boîte de dialogue Options
@@ -29,11 +29,11 @@ Utilisez cette option pour spécifier s’il faut synchroniser vos paramètres s
 
 ### <a name="enable-device-code-flow"></a>Activer le flux de code de l’appareil
 
-Lorsque cette option est sélectionnée, le comportement de Visual Studio change lorsque vous sélectionnez **Ajouter un compte** dans la page **Fichier** > **Paramètres du compte**. Au lieu de la page **Se connecter à votre compte**, vous voyez une boîte de dialogue contenant une URL et un code à coller dans un navigateur web pour vous connecter. Cette option est utile dans les cas où vous ne pouvez pas vous connecter à Visual Studio de manière classique, par exemple, si vous utilisez une version antérieure d’Internet Explorer, ou si votre pare-feu limite l’accès. Pour plus d'informations, consultez [Utiliser plusieurs comptes d'utilisateur](../work-with-multiple-user-accounts.md#add-an-account-using-device-code-flow).
+Lorsque cette option est sélectionnée, le comportement de Visual Studio change lorsque vous sélectionnez **Ajouter un compte** dans la page **Fichier** > **Paramètres du compte**. Au lieu de la page **Se connecter à votre compte**, vous voyez une boîte de dialogue contenant une URL et un code à coller dans un navigateur web pour vous connecter. Cette option est utile dans les cas où vous ne pouvez pas vous connecter à Visual Studio de manière classique, par exemple, si vous utilisez une version antérieure d’Internet Explorer, ou si votre pare-feu limite l’accès. Pour plus d'informations, consultez [Work with multiple user accounts](../work-with-multiple-user-accounts.md#add-an-account-using-device-code-flow).
 
 ## <a name="registered-azure-clouds"></a>Clouds Azure inscrits
 
-Cette section montre les instances de cloud Azure auxquelles vous avez accès via un ou plusieurs des comptes que vous utilisez pour vous connecter à Visual Studio. Par exemple, vous avez peut-être accès à une instance privée d’Azure dans le centre de données de votre entreprise. Ou bien, vous pouvez avoir accès à une instance souverain ou gouvernementale d’Azure, par exemple Azure China 21 VIANET ou Azure US Government. L’instance de cloud Azure globale s’affiche par défaut dans la liste, et vous ne pouvez pas la supprimer.
+Cette section montre les instances de cloud Azure auxquelles vous avez accès via un ou plusieurs des comptes que vous utilisez pour vous connecter à Visual Studio. Par exemple, vous avez peut-être accès à une instance privée d’Azure dans le centre de données de votre entreprise. Ou, vous pourriez avoir accès à un cas souverain ou gouvernemental d’Azure comme Azure China 21 Vianet ou Azure U.S. Government. L’instance de cloud Azure globale s’affiche par défaut dans la liste, et vous ne pouvez pas la supprimer.
 
 Inscrivez un cloud Azure supplémentaire en choisissant le bouton **Ajouter**. La boîte de dialogue **Ajouter un nouveau cloud Azure** répertorie plusieurs instances de cloud Azure connues auxquelles vous pouvez vous connecter, ou vous pouvez entrer l’URL d’un point de terminaison Azure privé.
 
@@ -44,6 +44,6 @@ Après avoir inscrit un cloud Azure supplémentaire, vous pouvez choisir le clou
 ## <a name="see-also"></a>Voir aussi
 
 - [Synchroniser les paramètres sur plusieurs ordinateurs](../synchronized-settings-in-visual-studio.md)
-- [Se connecter à Visual Studio](../signing-in-to-visual-studio.md)
+- [Connexion à Visual Studio](../signing-in-to-visual-studio.md)
 - [Utiliser plusieurs comptes d’utilisateur](../work-with-multiple-user-accounts.md)
-- [Paramètres d’environnement](../environment-settings.md)
+- [Paramètres d'environnement](../environment-settings.md)

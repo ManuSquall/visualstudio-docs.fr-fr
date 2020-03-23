@@ -7,10 +7,10 @@ ms.date: 11/13/2019
 ms.topic: conceptual
 description: Découvrez l’avantage Concierge Chat inclus dans les abonnements Visual Studio.
 ms.openlocfilehash: 83fdb9a21528e00db1ef8652846c6b852c5c6067
-ms.sourcegitcommit: ca3bb6db949f5e405f6ffe1afa5f430662c1173f
+ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/15/2019
+ms.lasthandoff: 03/21/2020
 ms.locfileid: "74099583"
 ---
 # <a name="concierge-chat-in-visual-studio-subscriptions"></a>Concierge Chat dans les abonnements Visual Studio
@@ -26,7 +26,7 @@ Vous pouvez obtenir facilement de l’aide à travers le service Concierge Chat.
     > [!div class="mx-imgBorder"]
     > ![Vignette de Concierge Chat](_img/vs-concierge-chat/vs-concierge-chat-tile.png)
 
-3. Cliquez sur **Continue**(Continuer).
+3. Cliquez sur **Continuer**.
 
 4. Une fenêtre de conversation s’ouvre et un compteur indique votre position dans la file d’attente.
 
@@ -35,29 +35,29 @@ Vous pouvez obtenir facilement de l’aide à travers le service Concierge Chat.
     > ![Concierge Chat, Session](_img/vs-concierge-chat/vs-concierge-chat-session.png)
 
 ## <a name="eligibility"></a>Éligibilité
-| Niveau d'abonnement                                                 |     Canaux                                            | Avantage                                                          | Renouvelable ?    |
+| Niveau de l’abonnement                                                 |     Canaux                                            | Avantage                                                          | Renouvelable ?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
-| Visual Studio Enterprise (Standard)   | Licences en volume, Azure, Détail, NFR sélectif<sup>1</sup> | Disponible       |  Oui          |
-| Visual Studio Enterprise avec GitHub Enterprise | LV| Disponible       |  Oui          |
+| Visual Studio Enterprise (Standard)   | VL, Azure, Retail, sélectionné NFR<sup>1</sup> | Disponible       |  Oui          |
+| Visual Studio Enterprise avec GitHub Enterprise | Vl| Disponible       |  Oui          |
 | Visual Studio Professional (Standard) | Licences en volume, Azure, Détail                                       | Disponible                                                            |  Oui          |
-| Visual Studio Professional avec GitHub Enterprise | LV | Disponible                                                            |  Oui          |
+| Visual Studio Professional avec GitHub Enterprise | Vl | Disponible                                                            |  Oui          |
 | Visual Studio Test Professional (Standard)                         | Licences en volume, Détail                                              | Disponible                                             |  Oui          |
 | Plateformes MSDN (Standard)                                          | Licences en volume, Détail                                              | Disponible                                              |  Oui          |
 | Visual Studio Enterprise, Visual Studio Professional (cloud mensuel) | Azure | Non disponible | N/A |
 
-<sup>1</sup>  *comprend : non pour la revente (NFR), VSIP (Visual Studio Industry Partner), Microsoft Certified Trainer, BizSpark.  Exclut : FTE, MVP (Most Valuable Professional), le directeur régional (RD), Microsoft Partner Network (MPN), imaginez.*
+<sup>1</sup>  *Inclut : Pas pour la revente (NFR), Visual Studio Industry Partner (VSIP), Microsoft Certified Trainer, BizSpark.  Exclut: FTE, Most Valuable Professional (MVP), Regional Director (RD), Microsoft Partner Network (MPN), Imagine.*
 
 > [!NOTE]
-> Microsoft ne propose plus d’abonnements annuels Visual Studio Professional et Visual Studio Enterprise dans les abonnements cloud. L’expérience des clients n’en sera pas altérée ; il leur sera par ailleurs toujours possible de renouveler, d’augmenter, de diminuer ou d’annuler leur abonnement. Nous encourageons les nouveaux clients à consulter [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) pour explorer les différentes options d’achat de Visual Studio.
+> Microsoft ne propose plus d’abonnements annuels Visual Studio Professional et Visual Studio Enterprise dans les abonnements cloud. L’expérience des clients n’en sera pas altérée ; il leur sera par ailleurs toujours possible de renouveler, d’augmenter, de diminuer ou d’annuler leur abonnement. Les nouveaux clients sont [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) encouragés à aller explorer différentes options pour acheter Visual Studio.
 
-Vous n’êtes pas sûr de l’abonnement que vous utilisez ?  Connectez-vous à [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) pour voir tous les abonnements attribués à votre adresse e-mail. Si vous ne retrouvez pas tous vos abonnements, certains ont peut-être été attribués à une autre adresse e-mail.  Dans ce cas, vous devez vous connecter via l’adresse e-mail correspondante pour afficher ces abonnements.
+Vous n’êtes pas sûr de l’abonnement que vous utilisez ?  Connectez-vous [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) pour voir tous les abonnements attribués à votre adresse e-mail. Si vous ne retrouvez pas tous vos abonnements, certains ont peut-être été attribués à une autre adresse e-mail.  Dans ce cas, vous devez vous connecter via l’adresse e-mail correspondante pour afficher ces abonnements.
 
-## <a name="frequently-asked-questions"></a>FAQ
+## <a name="frequently-asked-questions"></a>Forum aux questions
 ### <a name="q--is-the-chat-service-available-in-multiple-languages"></a>Q : Le service de conversation est-il disponible dans plusieurs langues ?
    R : L’assistance pour les questions relatives aux comptes, à la facturation et aux abonnements est disponible dans plusieurs langues.  L’assistance pour la recherche de documentation technique et d’informations sur les produits est uniquement disponible en anglais.
 
 ## <a name="support-resources"></a>Ressources de support
-- Pour obtenir de l’aide concernant les ventes, les abonnements, les comptes et la facturation des abonnements Visual Studio, contactez le [support des abonnements](https://visualstudio.microsoft.com/subscriptions/support/) Visual Studio.
+- Pour obtenir de l’aide pour les ventes, les abonnements, les comptes et la facturation des abonnements Visual Studio, contactez Visual Studio [Subscriptions Support](https://visualstudio.microsoft.com/subscriptions/support/).
 - Vous avez des questions concernant l’IDE Visual Studio, Azure DevOps Services, ou d’autres produits ou services Visual Studio ?  Consultez le [support Visual Studio](https://visualstudio.microsoft.com/support/).
 
 ## <a name="next-steps"></a>Étapes suivantes
@@ -66,4 +66,4 @@ Pour plus d’informations sur les outils et services Microsoft, consultez la do
 - [Azure DevOps](/azure/devops/)
 - [IDE Visual Studio](/visualstudio/)
 
-Si vous n’avez pas encore activé l’avantage de crédit DevTest Azure fourni avec votre abonnement, visitez [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) et cliquez sur la vignette Azure dans la catégorie outils pour configurer votre abonnement Azure et échanger votre crédit Azure DevTest individuel.
+Si vous n’avez pas déjà activé l’avantage de crédit individuel [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) Azure DevTest qui vient avec votre abonnement, visitez et cliquez sur la tuile Azure dans la catégorie Outils pour configurer votre abonnement Azure et échanger votre crédit individuel Azure DevTest.

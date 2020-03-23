@@ -7,10 +7,10 @@ ms.date: 09/18/2019
 ms.technology: vs-ide-install
 ms.assetid: 4EB95F75-BC2E-4982-9564-2975805712D8
 ms.openlocfilehash: 348a6ad1bde58c17b2bbb1ef4868fcfa6835ef9f
-ms.sourcegitcommit: 6375001ab26786af8d4d449f5846f8a49779ed18
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2020
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "76892166"
 ---
 # <a name="uninstalling-visual-studio-for-mac"></a>Désinstallation de Visual Studio pour Mac
@@ -35,9 +35,9 @@ Vous pouvez désinstaller Visual Studio et les composants Xamarin en une seule f
 
 Ce script de désinstallation contient la plupart des commandes que vous pouvez trouver dans l’article. Le script omet trois éléments centraux en raison de possibles dépendances externes. Pour éviter cela, accédez à la section correspondante ci-dessous et supprimez-les manuellement :
 
-- **[Désinstaller Mono](#uninstall-mono-sdk-mdk)**
-- **[Désinstaller Android AVD](#uninstall-android-avd)**
-- **[Désinstaller Android SDK et Java SDK](#uninstall-android-sdk-and-java-sdk)**
+- **[Désinstallation de Mono](#uninstall-mono-sdk-mdk)**
+- **[Désinstallation d’Android AVD](#uninstall-android-avd)**
+- **[Désinstallation du kit Android SDK et du SDK Java](#uninstall-android-sdk-and-java-sdk)**
 
 Pour exécuter le script, effectuez les étapes suivantes :
 

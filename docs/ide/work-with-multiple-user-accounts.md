@@ -1,5 +1,5 @@
 ---
-title: Utiliser plusieurs comptes d'utilisateur
+title: Utiliser plusieurs comptes d’utilisateur
 ms.date: 07/23/2019
 ms.topic: conceptual
 author: ornellaalt
@@ -8,13 +8,13 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 872089158b6e4dc0b55c26ad187e3b68d0501f26
-ms.sourcegitcommit: b2fc9ac7d73c847508f6ed082bed026476bb3955
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/05/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77027607"
 ---
-# <a name="work-with-multiple-user-accounts"></a>Utiliser plusieurs comptes d'utilisateur
+# <a name="work-with-multiple-user-accounts"></a>Utiliser plusieurs comptes d’utilisateur
 
 Si vous avez plusieurs comptes Microsoft et/ou comptes professionnels ou scolaires, vous pouvez les ajouter à Visual Studio. Vous avez ainsi accès aux ressources de n'importe quel compte sans avoir à vous y connecter séparément. Azure, Application Insights, Azure DevOps et les services Office 365 prennent tous en charge l’expérience de connexion simplifiée.
 
@@ -33,7 +33,7 @@ Connectez-vous à Visual Studio avec un compte Microsoft ou un compte profession
 
 ### <a name="access-your-azure-account-in-server-explorer"></a>Accès à votre compte Azure dans l'Explorateur de serveurs
 
-Pour ouvrir l’Explorateur de serveurs, choisissez **Afficher** > **Explorateur de serveurs** (ou, si vous utilisez les [paramètres d’environnement](../ide/environment-settings.md) « Généraux », appuyez sur **Ctrl**+**Alt**+**S**). Développez le nœud **Azure**. Il contient les ressources disponibles dans le compte Azure associé au compte que vous avez utilisé pour vous connecter à Visual Studio, comme sur l’illustration suivante :
+Pour ouvrir Server Explorer, choisissez **View** > **Server Explorer** (ou, si vous utilisez les paramètres de l’environnement « général », appuyez sur **Ctrl**+**Alt**+ [environment settings](../ide/environment-settings.md)**S**). Développez le nœud **Azure**. Il contient les ressources disponibles dans le compte Azure associé au compte que vous avez utilisé pour vous connecter à Visual Studio, comme sur l’illustration suivante :
 
 ![Explorateur de serveurs avec nœud Azure développé](../ide/media/work-with-multiple-user-accounts/server-explorer.png)
 
@@ -75,7 +75,7 @@ Pour plus d’informations sur les différents types d’authentification dans A
 
 ### <a name="access-your-azure-devops-organization"></a>Accéder à une organisation Azure DevOps
 
-Dans le menu principal, choisissez **Équipe** > **Gérer les connexions** pour ouvrir la fenêtre **Team Explorer – Se connecter**. Choisissez **Gérer les connexions** > **Se connecter à un projet**. Dans la boîte de dialogue **Se connecter à un projet**, sélectionnez un projet dans la liste (ou sélectionnez **Ajouter un serveur TFS** et entrez l’URL de votre serveur). Lorsque vous sélectionnez une URL, la connexion s’établit sans qu’il soit nécessaire d’entrer de nouveau les informations d'identification.
+Parmi le menu principal, choisissez **Team** > **Manage Connections** pour ouvrir la fenêtre Team Explorer - **Connect.** Choisissez **Gérer les connexions** > **Connect to a Project**. Dans la boîte de dialogue **Se connecter à un projet**, sélectionnez un projet dans la liste (ou sélectionnez **Ajouter un serveur TFS** et entrez l’URL de votre serveur). Lorsque vous sélectionnez une URL, la connexion s’établit sans qu’il soit nécessaire d’entrer de nouveau les informations d'identification.
 
 Pour plus d’informations, voir [Se connecter à des projets dans Team Explorer](connect-team-project.md).
 
@@ -83,13 +83,13 @@ Pour plus d’informations, voir [Se connecter à des projets dans Team Explorer
 
 Pour ajouter un compte supplémentaire dans Visual Studio :
 
-1. Choisissez **Fichier** > **Paramètres du compte**.
+1. Choisissez les paramètres **du** > **compte de fichiers**.
 
 1. Sous **Tous les comptes**, choisissez **Ajouter un compte**.
 
 1. Sur la page **Connectez-vous à votre compte**, sélectionnez le compte ou choisissez **Utiliser un autre compte**. Suivez les instructions pour entrer les nouvelles informations d'identification du compte.
 
-(Facultatif) Vous pouvez maintenant accéder à **l’Explorateur de serveurs** et voir les services Azure associés au compte que vous venez d’ajouter. Dans **l’Explorateur de serveurs**, cliquez avec le bouton droit sur le nœud **Azure**, puis choisissez **Gérer et filtrer les abonnements**. Choisissez le nouveau compte en cliquant sur la flèche déroulante vers le bas située à côté du compte actif, puis choisissez les abonnements que vous voulez afficher dans **l’Explorateur de serveurs**. Vous devez voir tous les services associés à l’abonnement spécifié. Même si vous n’avez pas ouvert de session Visual Studio avec le deuxième compte, la connexion est établie avec les services et les ressources de ce compte. Il en va de même pour **Projet** > **Ajouter un service connecté** et **Équipe** > **Se connecter à Team Foundation Server**.
+(Facultatif) Vous pouvez maintenant accéder à **l’Explorateur de serveurs** et voir les services Azure associés au compte que vous venez d’ajouter. Dans **l’Explorateur de serveurs**, cliquez avec le bouton droit sur le nœud **Azure**, puis choisissez **Gérer et filtrer les abonnements**. Choisissez le nouveau compte en cliquant sur la flèche déroulante vers le bas située à côté du compte actif, puis choisissez les abonnements que vous voulez afficher dans **l’Explorateur de serveurs**. Vous devez voir tous les services associés à l’abonnement spécifié. Même si vous n’avez pas ouvert de session Visual Studio avec le deuxième compte, la connexion est établie avec les services et les ressources de ce compte. Il en va de même pour **Project** > **Add Connected Service** et **Team** > Connect to Team Foundation**Server**.
 
 ### <a name="add-an-account-using-device-code-flow"></a>Ajouter un compte avec le flux de code d’appareil
 
@@ -99,7 +99,7 @@ Pour vous connecter avec le flux de code d’appareil :
 
 1. Ouvrez la page [**Comptes**](reference/accounts-environment-options-dialog-box.md) sous **Outils** > **Options** > **Environnement**, puis sélectionnez **Activer le flux de code d’appareil à l’ajout ou la réauthentification d’un compte**. Choisissez **OK** pour fermer les pages d’options.
 
-1. Choisissez **Fichier** > **Paramètres des comptes** pour ouvrir la page de gestion des comptes.
+1. Choisissez les paramètres de compte **de** > **fichier** pour ouvrir la page de gestion de compte.
 
 1. Choisissez **Ajouter un compte** sous **Tous les comptes**.
 
@@ -107,7 +107,7 @@ Pour vous connecter avec le flux de code d’appareil :
 
    ![URL et code de flux de code d’appareil](media/work-with-multiple-user-accounts/device-login-code.png)
 
-1. Appuyez sur **Ctrl**+**C** pour copier le texte de la boîte de dialogue, puis choisissez **OK** pour la fermer. Collez le texte que vous avez copié dans un éditeur de texte comme le Bloc-notes, pour pouvoir copier plus facilement le code à l’étape suivante.
+1. Appuyez sur **Ctrl**+**C** pour copier le texte du dialogue, puis choisissez **OK** pour fermer le dialogue. Collez le texte que vous avez copié dans un éditeur de texte comme le Bloc-notes, pour pouvoir copier plus facilement le code à l’étape suivante.
 
 1. Accédez à l’URL de connexion de l’appareil sur l’ordinateur ou le navigateur web que vous souhaitez utiliser pour vous connecter à Visual Studio, puis collez ou entrez le code que vous avez copié dans la zone intitulée **Code**.
 
@@ -127,5 +127,5 @@ Pour vous connecter avec le flux de code d’appareil :
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Se connecter à Visual Studio](signing-in-to-visual-studio.md)
+- [Connexion à Visual Studio](signing-in-to-visual-studio.md)
 - [Se connecter à Visual Studio pour Mac](/visualstudio/mac/signing-in)

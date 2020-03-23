@@ -1,5 +1,5 @@
 ---
-title: 'Démarrage rapide : Créer un service web ASP.NET Core en F#'
+title: 'Démarrage rapide : créer un service web ASP.NET Core en F#'
 description: Découvrez comment créer un service web ASP.NET Core dans Visual Studio en F#, pas à pas.
 ms.date: 08/24/2018
 ms.topic: quickstart
@@ -12,13 +12,13 @@ ms.workload:
 - aspnet
 - dotnetcore
 ms.openlocfilehash: 990106f7f3ca97ae38a20170ca6ed2e1d699d4e4
-ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
-ms.translationtype: HT
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/30/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "70180315"
 ---
-# <a name="quickstart-use-visual-studio-to-create-your-first-aspnet-core-web-service-in-f"></a>Démarrage rapide : Utiliser Visual Studio pour créer votre premier service web ASP.NET Core en F\#
+# <a name="quickstart-use-visual-studio-to-create-your-first-aspnet-core-web-service-in-f"></a>Quickstart: Utilisez Visual Studio pour créer votre premier service web ASP.NET Core en F\#
 
 Dans cette présentation de 5 à 10 minutes de F# dans Visual Studio, vous allez créer une application web ASP.NET Core en F#.
 
@@ -34,7 +34,7 @@ Si vous n’avez pas encore installé Visual Studio, accédez à la page [Télé
 
 ::: moniker-end
 
-## <a name="create-a-project"></a>Créer un projet
+## <a name="create-a-project"></a>Création d’un projet
 
 Vous allez d’abord créer un projet d’API web ASP.NET Core. Le type de projet est fourni avec des fichiers de modèles qui constituent un service web opérationnel, avant même que vous ajoutiez quoi que ce soit !
 
@@ -44,13 +44,13 @@ Vous allez d’abord créer un projet d’API web ASP.NET Core. Le type de proje
 
 2. Dans la barre de menus supérieure, choisissez **Fichier** > **Nouveau** > **Projet**.
 
-3. Dans la boîte de dialogue **Nouveau projet**, dans le volet gauche, développez **Visual F#** , puis choisissez **Web**. Dans le volet central, choisissez **Application web ASP.NET Core**, puis **OK**.
+3. Dans la boîte de dialogue **Nouveau projet**, dans le volet gauche, développez **Visual F#**, puis choisissez **Web**. Dans le volet central, choisissez **Application web ASP.NET Core**, puis **OK**.
 
      Si vous ne voyez pas la catégorie du modèle de projet **.NET Core**, cliquez sur le lien **Ouvrir Visual Studio Installer** dans le volet gauche. Visual Studio Installer est lancé. Choisissez la charge de travail **Développement web et ASP.NET**, puis **Modifier**.
 
      ![Charge de travail ASP.NET dans Visual Studio Installer](../ide/media/quickstart-aspnet-workload.png)
 
-4. Dans la boîte de dialogue **Nouvelle application web ASP.NET Core**, sélectionnez **ASP.NET Core 2.1** dans le menu déroulant supérieur. (Si **ASP.NET Core 2.1** ne figure pas dans la liste, installez-le en suivant le lien **Télécharger** qui doit s’afficher dans une barre jaune située en haut de la boîte de dialogue.) Cliquez sur **OK**.
+4. Dans la boîte de dialogue **Nouvelle application web ASP.NET Core**, sélectionnez **ASP.NET Core 2.1** dans le menu déroulant supérieur. (Si vous ne voyez pas **ASP.NET Core 2.1** dans la liste, installez-le en suivant le lien **Télécharger** qui devrait apparaître dans une barre jaune près du haut de la boîte de dialogue.) Choisissez **OK**.
 
 ::: moniker-end
 
@@ -58,9 +58,9 @@ Vous allez d’abord créer un projet d’API web ASP.NET Core. Le type de proje
 
 1. Ouvrez Visual Studio.
 
-2. Dans la fenêtre de démarrage, choisissez **Créer un projet**.
+2. Sur la fenêtre de départ, choisissez **Créer un nouveau projet**.
 
-3. Sur la page **Créer un projet**, tapez **f# web** dans la zone de recherche, puis choisissez le modèle de projet **Application web ASP.NET Core**. Sélectionnez **Suivant**.
+3. Sur la page **Créer un projet**, tapez **f# web** dans la zone de recherche, puis choisissez le modèle de projet **Application web ASP.NET Core**. Choisissez **La prochaine**.
 
 4. Sur la page **Configurer votre nouveau projet**, entrez un nom, puis choisissez **Créer**.
 
@@ -89,7 +89,7 @@ Le résultat doit ressembler à ceci dans l’éditeur :
 
 ![Membre Get modifié](../ide/media/hello-world-fs-get-member.png)
 
-## <a name="run-the-application"></a>Exécuter l'application
+## <a name="run-the-application"></a>Exécuter l’application
 
 1. Appuyez sur **Ctrl**+**F5** pour exécuter l’application et l’ouvrir dans un navigateur web.
 

@@ -9,15 +9,15 @@ manager: jillfra
 ms.workload:
 - data-science
 ms.openlocfilehash: 854f7d410e327ca92d0c5156d89bc21765e13cc7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "62999126"
 ---
 # <a name="intellisense"></a>IntelliSense
 
-La fonctionnalité IntelliSense de Visual Studio affiche des informations sur les fonctions que vous pouvez appeler, les membres des objets, les arguments de fonction et les [extraits de code](code-snippets-for-r.md) directement dans votre champ de vision à mesure que vous écrivez du code. Elle affiche également les complétions possibles à mesure que vous tapez, et complète votre frappe quand vous appuyez sur les touches **Tab** ou **Entrée** (consultez [Options de l’éditeur](editing-r-code-in-visual-studio.md#editor-options) pour l’onglet **Avancé**). La fonctionnalité IntelliSense est disponible à la fois dans l’éditeur et dans la [fenêtre interactive](interactive-repl-for-r-in-visual-studio.md).
+La fonctionnalité IntelliSense de Visual Studio affiche des informations sur les fonctions que vous pouvez appeler, les membres des objets, les arguments de fonction et les [extraits de code](code-snippets-for-r.md) directement dans votre champ de vision à mesure que vous écrivez du code. Il affiche également les achèvements possibles au fur et à mesure que vous tapez, et se termine lorsque vous appuyez sur **l’onglet** ou **enterz** les clés (voir [les options d’éditeur](editing-r-code-in-visual-studio.md#editor-options) pour l’onglet **Advanced).** La fonctionnalité IntelliSense est disponible à la fois dans l’éditeur et dans la [fenêtre interactive](interactive-repl-for-r-in-visual-studio.md).
 
 ![IntelliSense affichant une signature de fonction](media/intellisense-function-signature.png)
 
@@ -25,22 +25,22 @@ Quand vous tapez une fonction ou une autre instruction, IntelliSense fournit un 
 
 ![Menu de saisie semi-automatique IntelliSense](media/intellisense-auto-complete-menu.png)
 
-Quand vous appuyez sur **Tab** (ou **Entrée** ou **Barre d’espace**, selon la façon dont les options sont définies), l’élément sélectionné dans la liste déroulante est inséré. Vous pouvez changer la sélection avec les touches de direction.
+Appuyer sur **l’onglet** (ou **entrer,** ou **l’espace**, selon la façon dont les options sont définies), insère l’élément sélectionné dans le dropdown. Vous pouvez changer la sélection avec les touches de direction.
 
 IntelliSense fournit également des suggestions pour les membres des objets R :
 
 ![Suggestions IntelliSense pour les membres d’objet](media/intellisense-auto-complete-r-objects.png)
 
-Appuyez sur **Échap** pour fermer le menu. Vous pouvez le rappeler en appuyant sur **Ctrl**+**Barre d’espace**.
+Presser **ESC** rejette complètement le menu. Vous pouvez le ramener avec **Ctrl**+**Space**.
 
 Le fait de taper la parenthèse ouvrante `(` pour un appel de fonction insère la parenthèse fermante `)` et affiche l’aide de la signature comme indiqué plus haut :
 
 ![Aide de la signature IntelliSense pour une fonction](media/intellisense-function-signature.png)
 
-Là encore, la touche **Échap** permet de fermer la fenêtre contextuelle. Pour les signatures de fonction, vous pouvez la rappeler avec **Ctrl**+**Maj**+**Barre d’espace**.
+Encore une fois, **l’ESC** rejette le popup; pour les signatures de fonction, vous pouvez l’évoquer à nouveau avec **Ctrl**+**Shift**+**Space**.
 
 > [!Tip]
-> Si l’aide du paramètre dissimule le texte situé en dessous, vous pouvez appuyer de façon prolongée sur la touche **Ctrl** pour rendre translucide le texte d’aide du paramètre.
+> Si le paramètre aide à obscurcir le texte en dessous, appuyez et maintenez la clé **Ctrl** pour rendre le paramètre aider le texte translucide.
 
 ## <a name="intellisense-for-user-defined-functions-and-variables"></a>IntelliSense pour les fonctions définies par l’utilisateur et les variables
 
