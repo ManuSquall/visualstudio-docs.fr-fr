@@ -1,17 +1,18 @@
 ---
 title: Office 365 Pro Plus Benefit (fr) Microsoft Docs
 author: evanwindom
-ms.author: lank
+ms.author: v-evwin
 manager: lank
-ms.date: 08/02/2019
+ms.assetid: 9c70adf7-7d1b-4322-8e34-9149e8735a13
+ms.date: 03/26/2020
 ms.topic: conceptual
 description: Renseignez-vous sur l’avantage Office 365 Pro Plus inclus dans certains abonnements Visual Studio.
-ms.openlocfilehash: 4f8ad514cae626e824171937cd627b110980dbca
-ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
+ms.openlocfilehash: ce0527fbf4912ed55ed99f9368c8f10dde68a091
+ms.sourcegitcommit: 104d75ade6f48538620743d1c836fb26bdd0ade5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "77904150"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "80301917"
 ---
 # <a name="office-365-pro-plus-in-visual-studio-subscriptions"></a>Office 365 Pro Plus dans les abonnements Visual Studio
 
@@ -84,7 +85,7 @@ Vous n’êtes pas sûr de l’abonnement que vous utilisez ?  Connectez-vous [h
 
 ## <a name="next-steps"></a>Étapes suivantes
 Veillez à activer ces avantages intéressants pour tirer le meilleur parti de votre abonnement Visual Studio :
-- [Studio visuel](vs-ide-benefit.md)
+- [Visual Studio](vs-ide-benefit.md)
 - [Azure DevOps](vs-azure-devops.md)
 - [Azure DevTest crédit individuel](vs-azure.md) Si vous envisagez de développer des applications pour Office, vous souhaitez activer votre [abonnement aux développeurs de bureau](vs-office-dev.md)
 
