@@ -1,17 +1,18 @@
 ---
 title: Utilisation du portail des abonnés - https://my.visualstudio.com | Microsoft Docs
 author: evanwindom
-ms.author: lank
+ms.author: v-evwin
 manager: lank
+ms.assetid: 8470f035-2a82-4052-9a12-6f24ce796861
 ms.date: 07/19/2019
 ms.topic: conceptual
 description: Découvrez plus d’informations sur la gamme complète des avantages disponibles sur le portail des abonnements Visual Studio
-ms.openlocfilehash: 13266e018f122ae2b890e8c92bff71ce3016de75
-ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
+ms.openlocfilehash: 5403880dc5a2ac62cd23800cea5acacd2766bc6f
+ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "75546224"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "80232183"
 ---
 # <a name="using-the-subscriber-portal---myvisualstudiocom"></a>Utilisation du portail des abonnés- my.visualstudio.com
 
@@ -51,6 +52,12 @@ Outre les avantages individuels figurant dans la catégorie Support de la page A
 ## <a name="marketplace"></a>[Place de marché](https://marketplace.visualstudio.com/)
 
 Vous avez besoin de renouveler un abonnement cloud Visual Studio ?  Vous souhaitez télécharger les dernières extensions de la famille de produits Visual Studio ?  La Place de marché permet aux utilisateurs de rechercher des extensions, des outils et des services pour améliorer Azure DevOps, Azure DevOps Server et Visual Studio Code. Vous pouvez même devenir un serveur de publication et publier vos propres extensions sur Marketplace.
+
+## <a name="see-also"></a>Voir aussi
+- [Documentation Visual Studio](https://docs.microsoft.com/visualstudio/)
+- [Documentation Azure DevOps](https://docs.microsoft.com/azure/devops/)
+- [Documentation Azure](https://docs.microsoft.com/azure/)
+- [Documentation Microsoft 365](https://docs.microsoft.com/microsoft-365/)
 
 ## <a name="next-steps"></a>Étapes suivantes
 Connectez-vous au [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs) portail et consultez vos avantages.  Vous pouvez également en savoir plus sur la connexion au portail avec votre [compte Microsoft](sign-in-msa.md) (MSA), votre [compte professionnel ou scolaire](sign-in-work.md), et même votre [compte GitHub](sign-in-github.md). 

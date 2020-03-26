@@ -3,15 +3,16 @@ title: Connexion aux abonnements Visual Studio avec votre compte Microsoft (MSA)
 author: evanwindom
 ms.author: lank
 manager: lank
+ms.assetid: 19038bb0-2858-49df-9624-cbf8bfbb5d39
 ms.date: 03/11/2020
 ms.topic: conceptual
 description: Guide pratique pour vous connecter à votre abonnement Visual Studio avec votre compte Microsoft (MSA)
-ms.openlocfilehash: 49a20e5c34d81e7b5437ff48e749e322c6c57828
-ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
+ms.openlocfilehash: 6bc71eac42ac582b7d714706567be69e78dfa383
+ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "79508724"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "80233216"
 ---
 # <a name="signing-in-to-your-visual-studio-subscriptions-with-your-microsoft-account-msa"></a>Connexion à vos abonnements Visual Studio avec votre compte Microsoft (MSA)
 
@@ -48,4 +49,4 @@ Si le problème persiste, vous pouvez contacter notre équipe de [support des ab
 - [Documentation Microsoft 365](https://docs.microsoft.com/microsoft-365/)
 
 ## <a name="next-steps"></a>Étapes suivantes
-Une fois que vous avez réussi à vous connecter au portail des abonnements, nous vous recommandons de consulter la page Avantages à l’adresse https://my.visualstudio.com/benefits, et d’explorer les outils, services et offres disponibles.  
+Après avoir signé avec succès le portail d’abonnements, nous https://my.visualstudio.com/benefits vous recommandons de visiter la page Avantages et d’explorer les grands outils, services et offres à votre disposition.  

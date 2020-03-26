@@ -1,17 +1,18 @@
 ---
 title: Avantage Azure PAYG (Pay-As-You-Go)
 author: evanwindom
-ms.author: lank
+ms.author: v-evwin
 manager: lank
+ms.assetid: 5dc7f57e-883a-4cc1-a914-06245a8cb1ff
 ms.date: 07/30/2019
 ms.topic: conceptual
 description: Découvrez comment créer votre compte Azure avec paiement à l’utilisation.
-ms.openlocfilehash: 23ea1f76fabfa2e9240e040e879f3a497b36f4c3
-ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
+ms.openlocfilehash: b05f8a051a47d150b1c6670c54941820fcc73c47
+ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "79550323"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "80231981"
 ---
 # <a name="azure-devtest-pay-as-you-go-subscriptions"></a>Azure DevTest Abonnements Pay-As-You-Go
 Collaborez avec votre équipe dans le cloud.  Créez plusieurs abonnements Dev/Test - Paiement à l’utilisation, pour vous permettre de collaborer avec d’autres abonnés tout en garantissant une séparation entre les équipes et les environnements.  Vous bénéficiez de tarifs horaires préférentiels exclusifs pour les droits d’utilisation Dev/Test et cloud des logiciels de votre abonnement sur Azure.

@@ -1,18 +1,18 @@
 ---
 title: Définir un thème de couleurs et des polices
-ms.date: 11/20/2017
+ms.date: 03/23/2020
 ms.topic: quickstart
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 11cd73574f42fffb7bcfcda5ab47496fe92565c7
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: 2c0b7b4e439f33e4e2eed8609d7e85e098068aea
+ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "75596942"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "80233152"
 ---
 # <a name="personalize-the-visual-studio-ide-and-editor"></a>Personnaliser l’éditeur et l’IDE de Visual Studio
 
@@ -52,8 +52,19 @@ Le thème de couleur par défaut de l’interface utilisateur de Visual Studio s
 
    ::: moniker-end
 
+::: moniker range="vs-2017"
+
 > [!TIP]
 > Vous pouvez installer d’autres thèmes prédéfinis en téléchargeant et en installant **l’éditeur de thème de couleur de Visual Studio** à partir de la [Place de marché Visual Studio](https://marketplace.visualstudio.com/items?itemName=VisualStudioPlatformTeam.VisualStudio2017ColorThemeEditor). Après avoir installé cet outil, d’autres thèmes de couleur apparaissent dans la liste d’abandon du **thème couleur.**
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+> [!TIP]
+> Vous pouvez créer vos propres thèmes en installant le **Visual Studio Color Theme Designer** à partir du Visual Studio [Marketplace](https://marketplace.visualstudio.com/items?itemName=ms-madsk.ColorThemeDesigner).
+
+::: moniker-end
 
 ## <a name="change-text-color"></a>Modifier la couleur du texte
 

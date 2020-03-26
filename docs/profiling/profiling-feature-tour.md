@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 688a446fbbaf1c2c56b9304576224a70f71064d8
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: a2d23620a1861396971c79551088b898c9b77c86
+ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "79550115"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "80233093"
 ---
 # <a name="quickstart-first-look-at-profiling-tools"></a>Démarrage rapide : découvrir les outils de profilage
 
@@ -74,9 +74,9 @@ Les PerfTips montrent les mêmes événements qui apparaissent également dans l
 
 ## <a name="analyze-memory-usage"></a>Analyser l’utilisation de la mémoire
 
-La fenêtre **Outils diagnostiques** vous permet également d’évaluer l’utilisation de la mémoire dans votre application. Par exemple, vous pouvez consulter le nombre et la taille des objets sur le tas. Pour des instructions plus détaillées pour analyser la mémoire, voir [Analyser l’utilisation de la mémoire](../profiling/memory-usage.md).
+La fenêtre **Outils diagnostiques** vous permet également d’évaluer l’utilisation de la mémoire dans votre application à l’aide de **l’outil d’utilisation de** la mémoire. Par exemple, vous pouvez consulter le nombre et la taille des objets sur le tas. Pour des instructions plus détaillées pour analyser la mémoire, voir [Analyser l’utilisation de la mémoire](../profiling/memory-usage.md). Un autre outil d’analyse de mémoire, [l’outil d’allocation d’objets .NET](../profiling/dotnet-alloc-tool.md), vous aide à identifier les modèles d’allocation et les anomalies dans votre code .NET.
 
-Pour analyser l’utilisation de la mémoire lors du débogage, vous devez prendre au moins un instantané de mémoire. Souvent, la meilleure façon d’analyser la mémoire consiste à prendre deux instantanés, le premier juste avant un problème de mémoire suspecté et le second juste après. Ensuite, vous pouvez visualiser une comparaison des deux instantanés et voir exactement ce qui a changé.
+Pour analyser l’utilisation de la mémoire avec l’utilisation de mémoire intégrée au débbugger également, vous devez prendre au moins un instantané de mémoire. Souvent, la meilleure façon d’analyser la mémoire consiste à prendre deux instantanés, le premier juste avant un problème de mémoire suspecté et le second juste après. Ensuite, vous pouvez visualiser une comparaison des deux instantanés et voir exactement ce qui a changé.
 
 ![Prenez un instantané dans les outils de diagnostic](../profiling/media/prof-tour-take-snapshots.gif "Les outils diagnostiques prennent des instantanés")
 

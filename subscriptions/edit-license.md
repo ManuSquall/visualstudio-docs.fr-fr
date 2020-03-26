@@ -3,15 +3,16 @@ title: Modifier les abonnements dans le portail d’administration | Microsoft D
 author: evanwindom
 ms.author: lank
 manager: lank
+ms.assetid: 97ac8e4d-7a03-42f8-98cb-15bcaa90ef65
 ms.date: 03/03/2020
 ms.topic: conceptual
 description: Découvrez comment les administrateurs peuvent modifier des attributions d’abonnement.
-ms.openlocfilehash: cd4bb40599ff242e20ba0e38fb561bde7d3f1823
-ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
+ms.openlocfilehash: d145d556467b4eecec787fe409b4faa45945bec0
+ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "78263272"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "80232551"
 ---
 # <a name="edit-visual-studio-subscription-assignments"></a>Modifier des attributions d’abonnements Visual Studio
 En tant qu’administrateur des abonnements, vous pouvez apporter des modifications aux abonnements attribués à des personnes au sein de votre organisation.  Cet article décrit les types de modifications que vous pouvez apporter et indique les étapes à suivre.

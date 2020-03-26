@@ -3,15 +3,16 @@ title: Recherche et réclamation de clés de produit dans les abonnements Visual
 author: evanwindom
 ms.author: lank
 manager: lank
+ms.assetid: da8df006-4896-4ff9-b487-698d78deabc3
 ms.date: 03/09/2020
 ms.topic: conceptual
 description: Découvrir comment rechercher, réclamer et exporter des clés de produit dans les abonnements Visual Studio
-ms.openlocfilehash: 984a89f5085867ea7b23735d05d0e22ef51dcfdb
-ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
+ms.openlocfilehash: 3946388669533a59176dc79cd72f238994a0a01b
+ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "78937506"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "80232484"
 ---
 # <a name="finding-and-claiming-product-keys-in-visual-studio-subscriptions"></a>Recherche et réclamation de clés de produit dans les abonnements Visual Studio
 Cet article explique comment localiser, réclamer et exporter des clés de produit à partir de https://my.visualstudio.com/productkeys.  Pour plus d’informations sur l’activation d’un produit avec une clé, sur les versions commerciales et de licence en volume des clés ainsi que sur les limites quotidiennes de réclamations de clés de produit, consultez la [vue d’ensemble des clés de produit](product-keys.md).

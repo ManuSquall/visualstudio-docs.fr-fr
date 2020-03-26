@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: eaf853cd19a44af4cb8510fde11da95bfa7de5c1
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: b05787802b72eb4d14e1b2b56765bb246b9ada51
+ms.sourcegitcommit: ee12b14f306ad8f49b77b08d3a16d9f54426e7ca
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77578345"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "80256242"
 ---
 # <a name="analyze-memory-usage-without-the-debugger"></a>Analyser l’utilisation de la mémoire sans débogage
 
@@ -89,13 +89,13 @@ Dans un rapport d’instantané, vous pouvez développer les entrées **Type d�
 
 Si un **Type d’objet** est bleu, vous pouvez le sélectionner pour accéder à l’objet dans le code source, dans une fenêtre distincte.
 
-Les types que vous ne pouvez pas identifier ou dont vous ne comprenez pas l’implication dans votre code sont probablement des objets du compilateur, du .NET Framework ou du système d’exploitation. L’ outil **Utilisation de la mémoire** affiche ces objets s’ils sont impliqués dans les chaînes de propriétés de vos objets.
+Les types que vous ne pouvez pas identifier ou dont l’implication dans votre code que vous ne comprenez pas sont probablement .NET, système d’exploitation, ou objets compilateur. L’ outil **Utilisation de la mémoire** affiche ces objets s’ils sont impliqués dans les chaînes de propriétés de vos objets.
 
 Dans le rapport d’instantané :
 
 - L’arborescence **Tas managé** montre les types et instances du rapport. La sélection d’un type ou d’une instance affiche les arborescences **Chemins d’accès à la racine** et **Objets référencés** pour l’élément sélectionné.
 
-- **L’arbre Chemins à la Racine** montre la chaîne d’objets qui font référence à un type ou une instance. Le récupérateur de mémoire .NET Framework nettoie la mémoire d’un objet uniquement quand toutes les références à cet objet ont été libérées.
+- **L’arbre Chemins à la Racine** montre la chaîne d’objets qui font référence à un type ou une instance. Le collecteur d’ordures .NET nettoie la mémoire d’un objet seulement lorsque toutes les références à celui-ci ont été libérés.
 
 - L’arborescence **Types référencés** ou **Objets référencés** montre les objets référencés par le type ou l’instance sélectionné.
 
@@ -135,7 +135,7 @@ L’arborescence **Tas managé** dans un rapport détaillé d’instantané comp
 |**Module**|Module qui contient l’objet.|
 
 ### <a name="paths-to-root-tree-snapshot-details-reports"></a><a name="BKMK_Paths_to_Root_tree__Snapshot_details_"></a> Arborescence Chemins d’accès à la racine (rapports de détails de l’instantané)
-L’arborescence **Chemins d’accès à la racine** montre la chaîne d’objets qui référencent un type ou une instance. Le récupérateur de mémoire .NET Framework nettoie la mémoire d’un objet uniquement quand toutes les références à cet objet ont été libérées.
+L’arborescence **Chemins d’accès à la racine** montre la chaîne d’objets qui référencent un type ou une instance. Le collecteur d’ordures .NET nettoie la mémoire d’un objet seulement lorsque toutes les références à celui-ci ont été libérés.
 
 Pour un type dans l’arborescence **Chemins d’accès à la racine**, le nombre d’objets qui comportent des références à ce type est affiché dans la colonne **Nombre de références**.
 
@@ -185,7 +185,7 @@ L’arborescence **Tas managé** dans un rapport différentiel d’instantanés 
 
 ### <a name="paths-to-root-tree-snapshot-diff-reports"></a><a name="BKMK_Paths_to_Root_tree__Snapshot_diff_"></a> Arborescence Chemins d’accès à la racine (rapports différentiels d’instantanés)
 
-L’arborescence **Chemins d’accès à la racine** montre la chaîne d’objets qui référencent un type ou une instance. Le récupérateur de mémoire .NET Framework nettoie la mémoire d’un objet uniquement quand toutes les références à cet objet ont été libérées.
+L’arborescence **Chemins d’accès à la racine** montre la chaîne d’objets qui référencent un type ou une instance. Le collecteur d’ordures .NET nettoie la mémoire d’un objet seulement lorsque toutes les références à celui-ci ont été libérés.
 
 Pour un type dans l’arborescence **Chemins d’accès à la racine**, le nombre d’objets qui comportent des références à ce type est affiché dans la colonne **Nombre de références**. La différence de nombre par rapport à l’instantané précédent se trouve dans la colonne **Différence au niveau du nombre de références**.
 

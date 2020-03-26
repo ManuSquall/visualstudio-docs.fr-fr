@@ -3,15 +3,16 @@ title: Utilisation de clés de produit pour la prise en charge des démonstratio
 author: evanwindom
 ms.author: lank
 manager: lank
+ms.assetid: 1c5ede60-cb5a-4d5f-a6a2-a1f536f6c4ad
 ms.date: 03/09/2020
 ms.topic: conceptual
 description: Découvrir comment utiliser les clés de produit pour prendre en charge les démonstrations Internet via les services Terminal Server et activer l’accès des Services Bureau à distance
-ms.openlocfilehash: c02bce8fe098c75f0405fdd4e9ba5f0f143401fa
-ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
+ms.openlocfilehash: 2d5f23f0d161ee9f50569e0ff7f8ce585c8c49ff
+ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "78937460"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "80232442"
 ---
 # <a name="internet-demonstrations-via-terminal-services"></a>Démonstrations Internet via les services Terminal Server
 Avec un abonnement Visual Studio, vous pouvez fournir un accès aux démonstrations Internet de vos programmes aux utilisateurs finaux par le biais des services Terminal Server (Windows Server 2003 ou Windows Server 2008) ou des services Bureau à distance (Windows Server 2008 R2 ou versions ultérieures). Jusqu’à 200 utilisateurs anonymes peuvent ainsi accéder simultanément à votre démonstration. Votre démonstration ne doit pas utiliser de données de production. Les abonnés Visual Studio sont autorisés à démontrer leurs applications aux utilisateurs finaux. Les services Terminal Server ou Bureau à distance sont les seuls moyens pour les utilisateurs finaux sans abonnement Visual Studio d’interagir avec l’application démontrée quand le logiciel est concédé sous licence par le biais d’abonnements Visual Studio.

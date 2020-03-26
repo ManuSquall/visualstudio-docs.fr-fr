@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 16ba88a11acd488ba70096e0b394a734e65011f5
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: cad3a644935e14a605dbef02bddc1f9337c1f5e9
+ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "79549911"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "80233086"
 ---
 # <a name="configure-unit-tests-by-using-a-runsettings-file"></a>Configurer les tests unitaires à l’aide d’un fichier *.runsettings*
 
@@ -259,6 +259,7 @@ L’élément **RunConfiguration** peut inclure les éléments suivants :
 |**TestAdaptersPaths**||Un ou plusieurs chemins du répertoire où se trouvent les TestAdapters|
 |**MaxCpuCount**|1|Ce paramètre permet de contrôler le degré d’exécution des tests parallèles lors des tests unitaires, en utilisant les cœurs disponibles sur la machine. Le moteur d’exécution des tests démarre en tant que processus distinct sur chaque cœur disponible et donne à chaque cœur un conteneur de tests à exécuter. Un conteneur peut être un assembly, une DLL ou un artefact approprié. Le conteneur de test est l’unité de planification. Dans chaque conteneur, les tests sont exécutés en fonction du framework de test configuré. S’il y a beaucoup de conteneurs, chaque processus reçoit le conteneur disponible suivant dès qu’il a terminé l’exécution des tests d’un conteneur.<br /><br />Valeur possible pour MaxCpuCount :<br /><br />n, où 1 < = n < = nombre de cœurs : jusqu’à n processus peuvent être lancés.<br /><br />n, où n n ' toute autre valeur: le nombre de processus lancés peut être à la hauteur du nombre de cœurs disponibles. Par exemple, définissez n'0 pour permettre à la plate-forme de décider automatiquement du nombre optimal de processus à lancer en fonction de l’environnement.|
 |**TestSessionTimeout**||Permet aux utilisateurs de mettre fin à une session de test lorsque celle-ci dépasse le délai spécifié. La définition d’un délai d’expiration garantit que les ressources sont consommées et que les sessions de test sont limitées à une durée spécifique. Le paramètre est disponible dans **Visual Studio 2017 versions 15.5** et ultérieures.|
+|**Sentier DotnetHost**||Spécifier un chemin personnalisé à l’hôte dotnet qui est utilisé pour exécuter le testhost. Ceci est utile lorsque vous construisez votre propre dotnet, par exemple lors de la construction du référentiel pointnet/runtime. Spécifier cette option sautera la recherche de testhost.exe, et utilisera toujours le testhost.dll. 
 
 ### <a name="diagnostic-data-adapters-data-collectors"></a>Diagnostic des adaptateurs de données (collecteurs de données)
 

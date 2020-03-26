@@ -3,15 +3,16 @@ title: Guide pratique pour activer les abonnements Visual Studio achetés dans l
 author: evanwindom
 ms.author: lank
 manager: lank
+ms.assetid: 4183a0f4-6f0b-42f4-8460-0d000e21bb16
 ms.date: 02/17/2020
 ms.topic: conceptual
 description: Découvrez comment activer les abonnements Visual Studio achetés dans le Microsoft Store.
-ms.openlocfilehash: c872dd738b1b27620bf988e74bcc03631ce8b037
-ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
+ms.openlocfilehash: e0a43b203ad47da83b7734cf7a3eb6465b5e9b37
+ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "78894398"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "80232774"
 ---
 # <a name="how-do-i-activate-a-subscription-acquired-from-the-microsoft-store"></a>Comment activer un abonnement acheté auprès du Microsoft Store ?
 Si vous avez acheté un abonnement Visual Studio dans le Microsoft Store, vous pouvez initier les étapes d’activation à partir de « la page de confirmation » ou de « l’e-mail de confirmation » que vous avez reçu suite à votre achat.

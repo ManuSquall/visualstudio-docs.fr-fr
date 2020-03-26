@@ -3,15 +3,16 @@ title: Suivre les affectations d’utilisateurs et traiter les commandes | Visua
 author: evanwindom
 ms.author: lank
 manager: lank
+ms.assetid: 83a9162a-b9e7-43a4-b07f-6c1fd8580f78
 ms.date: 03/02/2020
 ms.topic: conceptual
 description: Découvrez en quoi consiste la responsabilité des administrateurs pour le suivi des affectations d’utilisateurs et le traitement des commandes.
-ms.openlocfilehash: c7dc2b55b3e9d1d1aea6b2712dbeb96316f48e7a
-ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
+ms.openlocfilehash: 200a6d5f83e762bb91451a0d8d7a1871afab4304
+ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "78235223"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "80232697"
 ---
 # <a name="track-user-assignment-and-process-orders"></a>Effectuer le suivi de l’attribution des utilisateurs et traiter les commandes
 Les administrateurs d’abonnements Visual Studio sont censés effectuer le suivi de l’utilisation de Visual Studio et traiter les commandes de toute augmentation d’utilisation selon la planification indiquée dans leur contrat de licence en volume ou dans leur Contrat de Fourniture de Produits et de Services Microsoft. Le nouveau portail d’administration des abonnements Visual Studio facilite cette opération grâce à un dispositif de suivi utile qui affiche vos licences disponibles et utilisées.

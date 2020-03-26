@@ -10,21 +10,21 @@ dev_langs:
 ms.assetid: 74dca14c-5071-416f-a92b-d09f95e3dfb8
 caps.latest.revision: 1
 author: bowdenk7
-ms.author: wilkelly
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 2a0d3657843dcf282e5c9aab8609efe5f9611965
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 75b2a336cf9a229b4834b68e0f7bed5d6b1174f4
+ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "78234954"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "80233069"
 ---
 # <a name="javascript-in-visual-studio-2017"></a>JavaScript dans Visual Studio 2017
 
 JavaScript est un langage de premier ordre dans Visual Studio. Vous pouvez utiliser la plupart ou toutes les aides standard de modification (extraits de code, IntelliSense, etc.) lorsque vous écrivez du code JavaScript dans l'IDE de Visual Studio. Vous pouvez écrire du code JavaScript pour de nombreux types d'applications et services.
 
 > [!NOTE]
-> Nous nous sommes joints aux efforts de la communauté afin de faire de [MDN web docs](https://developer.mozilla.org/en-US/) la ressource de développement unique et de premier plan du web, en redirigeant la totalité de la documentation de référence sur les API JavaScript de Microsoft (plus de 500 pages) depuis docs.microsoft.com vers les supports MDN équivalents. Pour plus d’informations, consultez cette [annonce](https://blogs.windows.com/msedgedev/2018/06/26/chakra-docs-mdn-web-docs/).
+> Nous avons rejoint l’effort à l’échelle de la communauté pour faire [des documents Web MDN](https://developer.mozilla.org/en-US/) de la web un-stop, première ressource de développement, en redirigeant tous (500 pages) de Microsoft JavaScript API référence de docs.microsoft.com à leurs homologues MDN. Pour plus d’informations, consultez cette [annonce](https://blogs.windows.com/msedgedev/2018/06/26/chakra-docs-mdn-web-docs/).
 
 ## <a name="support-for-ecmascript-2015-es6-and-beyond"></a><a name="ES6"></a> Prise en charge d’ECMAScript 2015 (ES6) et ultérieur
 

@@ -3,15 +3,16 @@ title: Mise en place d’administrateurs pour les abonnements mensuels . Microso
 author: evanwindom
 ms.author: lank
 manager: lank
+ms.assetid: 8b30e2bc-2ac3-4fcc-b296-128731471032
 ms.date: 03/03/2020
 ms.topic: conceptual
 description: Mise en place d’administrateurs pour les abonnements mensuels
-ms.openlocfilehash: a5d7c6e9442efd70ea3e7c2b7e7da4239e226aa2
-ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
+ms.openlocfilehash: c9a1303d4111f0ec4a0c1249a25e49fc40cf26de
+ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "78289839"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "80232661"
 ---
 # <a name="set-up-administrators-for-visual-studio-monthly-subscriptions"></a>Configurer des administrateurs pour les abonnements mensuels Visual Studio
 

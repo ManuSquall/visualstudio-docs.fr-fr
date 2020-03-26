@@ -1,17 +1,18 @@
 ---
 title: L’avantage de CODE Magazine dans les abonnements Visual Studio (fr) Microsoft Docs
 author: evanwindom
-ms.author: lank
+ms.author: v-evwin
 manager: lank
-ms.date: 10/13/2019
+ms.assetid: e5768153-2758-46d3-a323-3272def213ee
+ms.date: 03/25/2020
 ms.topic: conceptual
 description: Renseignez-vous sur l’avantage code Magazine inclus dans votre abonnement Visual Studio.
-ms.openlocfilehash: 341e21d3411afdd8402d223b455f60bcf39a4a40
-ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
+ms.openlocfilehash: f3b8c7c10cc8995e05b0e0da7da5e85226e131a3
+ms.sourcegitcommit: dfa9476b69851c28b684ece66980bee735fef8fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "74491657"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "80274009"
 ---
 # <a name="code-magazine-included-in-visual-studio-subscriptions"></a>CODE Magazine inclus dans les abonnements Visual Studio
 
@@ -74,6 +75,12 @@ R : CODE Magazine collecte votre adresse, que l’abonnement soit pour un abonne
 - Vous avez des questions sur votre abonnement CODE Magazine ?  Contactez [CODE Magazine](https://www.codemag.com/contact) par e-mail ou par téléphone, ou soumettez une demande de support en ligne.
 - Pour obtenir de l’aide pour les ventes, les abonnements, les comptes et la facturation des abonnements Visual Studio, contactez Visual Studio [Subscriptions Support](https://visualstudio.microsoft.com/subscriptions/support/).
 - Vous avez des questions concernant l’IDE Visual Studio, Azure DevOps Services, ou d’autres produits ou services Visual Studio ?  Consultez le [support Visual Studio](https://visualstudio.microsoft.com/support/).
+
+## <a name="see-also"></a>Voir aussi
+- [Documentation Visual Studio](https://docs.microsoft.com/visualstudio/)
+- [Documentation Azure DevOps](https://docs.microsoft.com/azure/devops/)
+- [Documentation Azure](https://docs.microsoft.com/azure/)
+- [Documentation Microsoft 365](https://docs.microsoft.com/microsoft-365/)
 
 ## <a name="next-steps"></a>Étapes suivantes
 Découvrez le reste des grands avantages inclus avec votre abonnement. Visite [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).

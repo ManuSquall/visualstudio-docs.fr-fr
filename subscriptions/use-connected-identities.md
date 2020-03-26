@@ -1,18 +1,19 @@
 ---
 title: Comment utiliser les identités de compte Microsoft connectées et Azure Active Directory Microsoft Docs
 author: evanwindom
-ms.author: lank
+ms.author: v-evwin
 manager: lank
+ms.assetid: 50ce0445-ef1a-4e92-b9d0-aebb2155a111
 ms.date: 03/11/2020
 ms.topic: conceptual
 robots: noindex, nofollow
 description: Découvrez comment travailler avec des comptes Microsoft connectés et des identités Azure Active Directory
-ms.openlocfilehash: 3dcb41a26f27e5135962edf7ff933de40ccefe5e
-ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
+ms.openlocfilehash: b88c978f330520af62f51e372db93475b71caa36
+ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "79508977"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "80233174"
 ---
 # <a name="how-to-use-connected-identities-in-visual-studio-subscriptions"></a>Comment utiliser les identités connectées dans les abonnements Visual Studio
 Si vous recevez un abonnement Visual Studio par le biais de votre travail ou de votre école, et que vous utilisez votre compte Microsoft (MSA) pour vous connecter, votre administrateur d’abonnements peut connecter votre MSA à votre identité dans l’annuaire actif Azure de votre organisation (Azure AD).  Cela changera la façon dont vous accédez à certains des avantages inclus dans votre abonnement. 

@@ -3,15 +3,16 @@ title: Exporter des informations sur les abonnements | Microsoft Docs
 author: evanwindom
 ms.author: lank
 manager: lank
+ms.assetid: 14e4cffb-a695-436c-b269-7820f7411f4e
 ms.date: 03/03/2020
 ms.topic: conceptual
 description: Découvrez comment exporter une liste d’abonnés et des informations de leurs attributions d’abonnement.
-ms.openlocfilehash: a7e6f6040daca541a689f1e4ad6297e17014dbed
-ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
+ms.openlocfilehash: dd24e9deb6225b3a8b88a461904fefb42ba4a912
+ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "78263216"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "80232497"
 ---
 # <a name="export-subscription-information"></a>Exporter les informations d’abonnement
 Dans le portail [d’administration](https://manage.visualstudio.com)des abonnements Visual Studio , vous pouvez exporter une liste de vos abonnés et des détails sur leurs affectations. Ces informations comprennent : nom, adresse e-mail, adresse e-mail alternative, niveau d’abonnement, date d’attribution, état d’activation, date d’expiration, champ de référence, si les téléchargements sont activés, pays, langue, état de l’abonnement et GUID d’abonnement.  La liste est exportée sous forme de fichier CSV qui peut facilement être ouvert dans Microsoft Excel pour la création de graphiques, pivots et autres artefacts.

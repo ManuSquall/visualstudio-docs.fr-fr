@@ -7,12 +7,12 @@ ms.assetid: c2853359-18fd-4be4-97a6-02230c862f92
 ms.date: 03/02/2020
 ms.topic: conceptual
 description: Découvrez comment les administrateurs peuvent attribuer des licences à plusieurs abonnés en utilisant soit la fonctionnalité d’ajout en vrac, soit les groupes Microsoft Azure Active Directory
-ms.openlocfilehash: 3a4a6c400a17d52cdd67391a45ba088cdbb7af01
-ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
+ms.openlocfilehash: 5a1327e497a48b6173afd4a7ad095dfcabacd098
+ms.sourcegitcommit: dfa9476b69851c28b684ece66980bee735fef8fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "79988489"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "80274061"
 ---
 # <a name="assign-subscriptions-to-multiple-users"></a>Attribuer des abonnements à plusieurs utilisateurs
 Le portail d’administration des abonnements vous permet d’ajouter des utilisateurs un à la fois ou dans des grands groupes.  Pour ajouter des utilisateurs individuels, consultez [Ajouter des utilisateurs uniques](assign-license.md).
@@ -104,6 +104,10 @@ L’utilisation de cette fonctionnalité permet de rester facilement au top de v
 7. Pour voir le groupe ajouté, faites défiler vers le bas de votre liste d’utilisateurs.  
 
 8. Sélectionnez **les abonnés View** pour afficher les membres du groupe. Vous pouvez consulter les détails sur les abonnés du groupe, mais vous ne pouvez pas faire de modifications aux abonnés ou aux abonnements qui leur sont attribués.    
+
+> [!NOTE]
+> Si vous avez déjà attribué des abonnements individuellement aux utilisateurs qui sont ensuite ajoutés dans le cadre d’un groupe Azure AD, ils seront ajoutés dans le cadre du groupe et ne seront plus répertoriés individuellement. Toutefois, si l’abonnement individuel est pour un niveau d’abonnement différent, ils auront deux abonnements.  Exemple : Si un utilisateur a un abonnement Visual Studio Professional individuel, et qu’il est membre d’un groupe auquel vous attribuez des abonnements Visual Studio Enterprise, il aura les deux.  
+
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4rvvW]
 
