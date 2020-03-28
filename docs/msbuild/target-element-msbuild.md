@@ -18,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 79686132adce043b4864d545f0912564709cfe2c
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 472d4c9c4c44176048a1bfd8c0791a1a406b95bd
+ms.sourcegitcommit: 8ff6c6975148ce43bdac21c8995fbab910c312fe
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77631976"
+ms.lasthandoff: 03/28/2020
+ms.locfileid: "80375551"
 ---
 # <a name="target-element-msbuild"></a>Élément Target (MSBuild)
 
@@ -59,7 +59,7 @@ Contient un ensemble de tâches pour MSBuild à exécuter séquentiellement.
 
 |Attribut|Description|
 |---------------|-----------------|
-|`Name`|Attribut requis.<br /><br /> Nom de la cible.|
+|`Name`|Attribut requis.<br /><br /> Nom de la cible. Un nom cible peut `$@()%*?.`contenir n’importe quel personnage sauf .|
 |`Condition`|Attribut facultatif.<br /><br /> Condition à évaluer. Si la condition a la valeur `false`, la cible n’exécute pas le corps de la cible ni les cibles définies dans l’attribut `DependsOnTargets`. Pour plus d’informations sur les conditions, voir [Conditions](../msbuild/msbuild-conditions.md).|
 |`Inputs`|Attribut facultatif.<br /><br /> Fichiers qui constituent les entrées dans cette cible. Plusieurs fichiers sont séparés par des points-virgules. Les horodateurs des fichiers doivent être comparés à ceux des fichiers dans `Outputs` pour déterminer si la `Target` est à jour. Pour plus d’informations, voir [Générations incrémentielles](../msbuild/incremental-builds.md), [Guide pratique : Effectuer des générations incrémentielles](../msbuild/how-to-build-incrementally.md) et [Transformations](../msbuild/msbuild-transforms.md).|
 |`Outputs`|Attribut facultatif.<br /><br /> Fichiers qui constituent les sorties dans cette cible. Plusieurs fichiers sont séparés par des points-virgules. Les horodateurs des fichiers doivent être comparés à ceux des fichiers dans `Inputs` pour déterminer si la `Target` est à jour. Pour plus d’informations, voir [Générations incrémentielles](../msbuild/incremental-builds.md), [Guide pratique : Effectuer des générations incrémentielles](../msbuild/how-to-build-incrementally.md) et [Transformations](../msbuild/msbuild-transforms.md).|
@@ -103,7 +103,7 @@ Contient un ensemble de tâches pour MSBuild à exécuter séquentiellement.
 
  Avant MSBuild 4, chaque fois qu’une `Target` contenait plusieurs références au même élément dans son attribut `Outputs`, ces éléments en double étaient enregistrés. Dans les générations très volumineuses pourvues d’un grand nombre de sorties et de nombreuses interdépendances de projets, cela provoquait la perte d’une grande quantité de mémoire, car les éléments en double n’étaient d’aucune utilité. Si l’attribut `KeepDuplicateOutputs` est défini sur `true`, ces doublons sont enregistrés.
 
-## <a name="example"></a> Exemple
+## <a name="example"></a>Exemple
 
  L’exemple de code suivant présente un élément `Target` qui exécute la tâche `Csc`.
 
