@@ -1,5 +1,5 @@
 ---
-title: La structure du fichier [Content_Types]. Xml | Microsoft Docs
+title: La structure du fichier [Content_types].xml (en anglais seulement) Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,69 +13,69 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: aac250053f90d99e7db27a9862d2dc1b33fadbfb
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: 957958cd930620734d09c592ea07bfb0919d0145
+ms.sourcegitcommit: d6828e7422c8d74ec1e99146fedf0a05f757245f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72983040"
+ms.lasthandoff: 03/30/2020
+ms.locfileid: "80395314"
 ---
 # <a name="the-structure-of-the-content_typesxml-file"></a>Structure du fichier [Content_types].xml
-Contient des informations sur les genres de contenu dans un package VSIX. Visual Studio utilise le fichier [Content_Types]. xml pour installer le package, mais il n’installe pas le fichier lui-même.
+Contient des informations sur les types de contenu dans un paquet VSIX. Visual Studio utilise le fichier [Content_Types].xml pour installer le paquet, mais il n’installe pas le fichier lui-même.
 
 > [!NOTE]
-> Bien que cette rubrique s’applique uniquement aux fichiers [Content_Type]. XML utilisés dans les packages VSIX, le type de fichier [Content_Types]. xml fait partie de la norme *OPC (Open Packaging Conventions)* . Pour plus d’informations, consultez [OPC : nouvelle norme pour l’empaquetage de vos données](https://msdn.microsoft.com/magazine/cc163372.aspx) sur le site Web MSDN.
+> Bien que ce sujet ne s’applique qu’aux fichiers [Content_Type].xml qui sont utilisés dans les paquets VSIX, le type de fichier [Content_Types].xml fait partie de la norme *Des conventions d’emballage ouvert (CPVP).* Pour plus d’informations, voir [OPC: A New Standard For Packaging Your Data](https://msdn.microsoft.com/magazine/cc163372.aspx) sur le site Web msDN.
 
 ## <a name="attributes-and-elements"></a>Attributs et éléments
- Les sections suivantes décrivent l’élément racine et ses attributs et éléments enfants.
+ Les sections suivantes décrivent l’élément racine et ses attributs et les éléments pour enfants.
 
 ### <a name="root-element"></a>Élément racine
 
 |Élément|Description|
 |-------------|-----------------|
-|`Types`|Contient des éléments enfants qui énumèrent les types de fichiers dans le package VSIX.|
+|`Types`|Contient des éléments pour enfants qui énumèrent les types de fichiers dans le paquet VSIX.|
 
 ### <a name="attributes"></a>Attributs
 
 |Attribut|Description|
 |---------------|-----------------|
-|`Xmlns`|(Obligatoire.) Emplacement du schéma utilisé pour ce fichier [Content_Types]. Xml.|
+|`Xmlns`|(Requis.) L’emplacement du schéma utilisé pour ce fichier [Content_Types].xml.|
 
-### <a name="attribute-name-attribute"></a>{Nom de l’attribut} Attribut
+### <a name="attribute-name-attribute"></a>Nom d’attribut Attribut
 
-| valeur | Description |
+| Valeur | Description |
 | - | - |
-| http://schemas.openformats.org/package/2006/content-types | Emplacement du schéma des types de contenu. |
+| `http://schemas.openformats.org/package/2006/content-types` | L’emplacement du schéma des types de contenu. |
 
 ### <a name="child-elements"></a>Éléments enfants
- L’élément `Types` peut contenir un nombre quelconque d’éléments `Default`.
+ L'élément `Types` peut contenir un nombre illimité d'éléments `Default`.
 
 |Élément|Description|
 |-------------|-----------------|
-|`Default`|Décrit un type de contenu dans le package VSIX. Chaque type de fichier du package doit avoir son propre élément `Default`.|
+|`Default`|Décrit un type de contenu dans le paquet VSIX. Chaque type de fichier dans `Default` le paquet doit avoir son propre élément.|
 
 ### <a name="attributes"></a>Attributs
 
 |Attribut|Description|
 |---------------|-----------------|
-|`Extension`|Extension de nom de fichier d’un fichier dans le package VSIX.|
-|`ContentType`|Décrit le type de contenu associé à l’extension de nom de fichier.|
+|`Extension`|L’extension du nom de fichier d’un fichier dans le paquet VSIX.|
+|`ContentType`|Décrit le type de contenu associé à l’extension du nom de fichier.|
 
-### <a name="attribute-name-attribute"></a>{Nom de l’attribut} Attribut
- Visual Studio reconnaît les valeurs de `ContentType` suivantes pour les types de `Extension` associés.
+### <a name="attribute-name-attribute"></a>Nom d’attribut Attribut
+ Visual Studio reconnaît `ContentType` les valeurs `Extension` suivantes pour les types associés.
 
-|Extension|Indiquez|
+|Extension|ContentType|
 |---------------|-----------------|
 |txt|texte/brut|
-|fichier pkgdef|texte/brut|
-|xml|texte/XML|
-|vsixmanifest|texte/XML|
+|pkgdef (pkgdef)|texte/brut|
+|Xml|text/xml|
+|vsixmanifest (en)|text/xml|
 |htm ou html|texte/html|
-|RTF|application/RTF|
-|formats|application/pdf|
-|formats|image/GIF|
-|jpg ou JPEG|image/jpg|
-|TIFF|image/TIFF|
+|Rtf|application/rtf|
+|pdf|application/pdf|
+|GIF|image/gif|
+|jpg ou jpeg|image/jpg|
+|tiff|image/tiff|
 |vsix|application/zip|
 |zip|application/zip|
 |dll|application/octet-stream|
@@ -84,7 +84,7 @@ Contient des informations sur les genres de contenu dans un package VSIX. Visual
 ## <a name="example"></a>Exemple
 
 ### <a name="description"></a>Description
- Le fichier [Content_Types]. XML suivant décrit un package VSIX classique.
+ Le fichier suivant [Content_Types].xml décrit un paquet VSIX typique.
 
 ### <a name="code"></a>Code
 
@@ -101,5 +101,5 @@ Contient des informations sur les genres de contenu dans un package VSIX. Visual
 
 ## <a name="see-also"></a>Voir aussi
 - [Anatomie d’un package VSIX](../extensibility/anatomy-of-a-vsix-package.md)
-- [Informations de référence sur le schéma d’extension VSIX 1,0](https://msdn.microsoft.com/library/76e410ec-b1fb-4652-ac98-4a4c52e09a2b)
-- [OPC : nouvelle norme pour l’empaquetage de vos données](https://msdn.microsoft.com/magazine/cc163372.aspx)
+- [VSIX Extension Schema 1.0 Référence](https://msdn.microsoft.com/library/76e410ec-b1fb-4652-ac98-4a4c52e09a2b)
+- [OPC : une nouvelle norme pour l’emballage de vos données](https://msdn.microsoft.com/magazine/cc163372.aspx)
