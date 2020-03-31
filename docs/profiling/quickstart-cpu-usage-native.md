@@ -13,18 +13,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 58c91590e751970f9291c8e13ccb9fc2abcc8728
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: 602a185b598410de47dc9d3c98ca2b0ae3c45633
+ms.sourcegitcommit: 0ba0cbff77eac15feab1a73eeee3667006794b29
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "79550088"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "80412006"
 ---
 # <a name="quickstart-analyze-cpu-usage-data-in-visual-studio-c"></a>Démarrage rapide : analyser les données d’utilisation de l’UC dans Visual Studio (C++)
 
 Visual Studio fournit de nombreuses fonctionnalités puissantes qui vous permettent d’analyser les problèmes de performances dans votre application. Cette rubrique vous offre un moyen rapide de vous familiariser avec quelques-unes des fonctionnalités de base. Ici, nous allons examiner l’outil pour identifier les goulots d’étranglement de performances liés à une utilisation élevée de l’UC. Les outils de diagnostics sont pris en charge pour le développement .NET dans Visual Studio (y compris ASP.NET) et pour le développement natif/C++.
 
-Le hub de diagnostic propose de nombreuses autres options pour exécuter et gérer votre session de diagnostic. Si l’outil **Utilisation de l’UC** décrit ici ne vous fournit pas les données dont vous avez besoin, les [autres outils de profilage](../profiling/profiling-feature-tour.md) fournissent des types d’informations différents qui peuvent vous être utiles. Dans de nombreux cas, le goulot d’étranglement des performances de votre application peut ne pas provenir de votre processeur, mais de la mémoire, de l’interface utilisateur de rendu ou du temps de requête réseau. Le hub de diagnostic vous offre de nombreuses autres options pour enregistrer et analyser ce type de données.
+Le hub de diagnostic propose de nombreuses autres options pour exécuter et gérer votre session de diagnostic. Si l’outil **Utilisation de l’UC** décrit ici ne vous fournit pas les données dont vous avez besoin, les [autres outils de profilage](../profiling/profiling-feature-tour.md) fournissent des types d’informations différents qui peuvent vous être utiles. Dans de nombreux cas, le goulot d’étranglement des performances de votre application peut ne pas provenir de votre processeur, mais de la mémoire, de l’interface utilisateur de rendu ou du temps de requête réseau. Le hub de diagnostic vous offre de nombreuses autres options pour enregistrer et analyser ce type de données. [PerfTips](../profiling/perftips.md), un autre outil de profilage intégré de débbugger, vous permet également de passer à travers le code et d’identifier combien de temps il faut des fonctions particulières ou des blocs de code pour remplir.
 
 Windows 8 et les versions ultérieures sont nécessaires pour exécuter les Outils de profilage avec le débogueur (fenêtre **Outils de diagnostic**). Sur Windows 7 et les versions ultérieures, vous pouvez utiliser l’outil post mortem [Profileur de performances](../profiling/profiling-feature-tour.md).
 
@@ -143,9 +143,6 @@ Windows 8 et les versions ultérieures sont nécessaires pour exécuter les Out
      ![Définir des points d’arrêt pour le profilage](../profiling/media/quickstart-cpu-usage-breakpoints-cplusplus.png "Définir des points d’arrêt pour le profilage")
 
     En définissant deux points d’arrêt, vous limitez la collecte de données aux sections de code que vous souhaitez analyser.
-
-    >[!TIP]
-    > En cas de pause à un point d’arrêt ou à une opération de code, vous pouvez également analyser les performances à l’aide [de PerfTips](../profiling/perftips.md).
 
 3. La fenêtre **Outils de diagnostic** est déjà visible, sauf si vous l’avez désactivée. Pour retouaître la fenêtre, cliquez sur **Debug** > **Windows** > **Show Diagnostic Tools**.
 

@@ -17,16 +17,16 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d106b15a94e00915f8cd0fd2e69c2918f9fbead9
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: 1ac7d23c1d4cb245366ecf03c1a8a0e67b11cb55
+ms.sourcegitcommit: 0ba0cbff77eac15feab1a73eeee3667006794b29
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "79549845"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "80412026"
 ---
 # <a name="measure-application-performance-by-analyzing-cpu-usage"></a>Mesurer les performances d’application en analysant l’utilisation de l’UC
 
-Vous pouvez utiliser les outils de profilage de Visual Studio pour analyser les problèmes de performances dans votre application. Cet article montre comment utiliser **l’onglet D’utilisation du processeur** des outils de diagnostic pour obtenir des données de performance pour votre application, et fournit également des informations sur l’utilisation de PerfTips.
+Vous pouvez utiliser les outils de profilage de Visual Studio pour analyser les problèmes de performances dans votre application. Cet article montre comment utiliser **l’onglet Utilisation CPU** des outils de diagnostic pour obtenir des données de performance pour votre application.
 
 Quand le débogueur est suspendu, l’outil **Utilisation de l’UC** collecte les informations relatives aux fonctions qui s’exécutent dans votre application. L’outil répertorie les fonctions qui ont effectué un travail et fournit un graphique chronologique que vous pouvez utiliser pour examiner des segments spécifiques d’une session d’échantillonnage.
 
@@ -35,7 +35,7 @@ Le hub de diagnostic propose de nombreuses autres options pour exécuter et gér
 > [!Important]
 > Les outils de diagnostics sont pris en charge pour le développement .NET dans Visual Studio (y compris ASP.NET) et pour le développement natif/C++.
 
-Dans cet article, nous allons décrire l’analyse de l’utilisation de l’UC dans un flux de travail de débogage normal. Vous pouvez également analyser l’utilisation et l’UC sans débogueur ou en ciblant une application en cours d’exécution. Pour plus d’informations, consultez la section [Recueillir des données de profilage sans débogage](../profiling/running-profiling-tools-with-or-without-the-debugger.md#collect-profiling-data-without-debugging) sur la page [Exécuter des outils de profilage avec ou sans débogueur](../profiling/running-profiling-tools-with-or-without-the-debugger.md).
+Dans cet article, nous allons décrire l’analyse de l’utilisation de l’UC dans un flux de travail de débogage normal. Vous pouvez également analyser l’utilisation et l’UC sans débogueur ou en ciblant une application en cours d’exécution. Pour plus d’informations, consultez la section [Recueillir des données de profilage sans débogage](../profiling/running-profiling-tools-with-or-without-the-debugger.md#collect-profiling-data-without-debugging) sur la page [Exécuter des outils de profilage avec ou sans débogueur](../profiling/running-profiling-tools-with-or-without-the-debugger.md). Vous pouvez également utiliser un autre outil de profilage, [PerfTips](../profiling/perftips.md), pour passer à travers le code et identifier combien de temps il faut des fonctions particulières ou des blocs de code pour remplir.
 
 Vous pouvez utiliser les Outils de profilage sans débogueur avec Windows 7 et les versions ultérieures. Windows 8 et les versions ultérieures sont nécessaires pour exécuter les Outils de profilage avec le débogueur (fenêtre **Outils de diagnostic**).
 
@@ -77,15 +77,9 @@ Ce didacticiel présente les procédures suivantes :
 
      Quand vous choisissez **Enregistrer le profil du processeur**, Visual Studio commence à enregistrer vos fonctions, ainsi que la durée de leur exécution. Vous pouvez uniquement afficher les données collectées lorsque votre application s’interrompt à un point d’arrêt.
 
-     > [!TIP]
-     > Pour aider à analyser les performances, vous pouvez également utiliser [PerfTips](../profiling/perftips.md) pour passer à travers le code et identifier combien de temps il faut des fonctions particulières ou des blocs de code pour remplir.
-
 8. Appuyez sur F5 pour exécuter l’application jusqu’au deuxième point d’arrêt.
 
      Vous disposez maintenant de données de performances pour votre application, et plus spécifiquement pour la région de code qui s’exécute entre les deux points d’arrêt.
-
-     >[!TIP]
-     > En cas de pause à un point d’arrêt ou à une opération de code, vous pouvez également analyser les performances à l’aide [de PerfTips](#analyze-performance-using-perftips).
 
      Le profileur commence la préparation des données de thread. Attendez qu’elle se termine.
 
@@ -163,12 +157,6 @@ Nous vous recommandons de commencer à analyser vos données en examinant la lis
 
     > [!NOTE]
     > Si vous voyez du code dans l’arborescence des appels marqués comme du code « interrompu » ou « pile intraitable », cela signifie que les événements de suivi d’événements pour Windows (ETW) ont probablement été supprimés. Essayez de collecter la même trace une deuxième fois pour résoudre le problème.
-
-## <a name="analyze-performance-using-perftips"></a>Analyser les performances à l’aide de PerfTips
-
-Tout en exécutant du code dans le débbugger, vous pouvez également utiliser [PerfTips](../profiling/perftips.md) pour une analyse approfondie des performances. À l’aide de PerfTips, vous pouvez afficher des informations de performances tout en interagissant avec votre code. Vous pouvez consulter des informations telles que la durée de l’événement (mesurée à partir de la dernière suspension du débogueur ou du démarrage de l’application). Par exemple, si vous passez par le code (F10, F11), PerfTips vous montre la durée d’exécution de l’application de l’opération étape précédente à l’étape actuelle.
-
-![Analyser avec PerfTips](../profiling/media/diag-tools-perftips.png "Analyseravec lespaves")
 
 ## <a name="view-external-code"></a>Afficher le code externe
 
