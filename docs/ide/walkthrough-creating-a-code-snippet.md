@@ -1,5 +1,5 @@
 ---
-title: 'Procédure pas à pas : créer un extrait de code'
+title: 'Procédure pas à pas : Créer un extrait de code'
 ms.date: 06/10/2019
 ms.topic: conceptual
 helpviewer_keywords:
@@ -17,14 +17,14 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: adb0415e926bba9a1809c77f0f35b43d78263f43
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 2554729be8f3b9697d1407befd68cbb21fac10dd
+ms.sourcegitcommit: 992dd075e65b5f3adefc1ff758975298c47381e7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75597293"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "80435036"
 ---
-# <a name="walkthrough-create-a-code-snippet"></a>Procédure pas à pas : créer un extrait de code
+# <a name="walkthrough-create-a-code-snippet"></a>Procédure pas à pas : Créer un extrait de code
 
 Vous pouvez créer un extrait de code en quelques étapes seulement. Il vous suffit de créer un fichier XML, de le remplir avec les éléments appropriés et d’y ajouter votre code. Vous pouvez utiliser des paramètres de remplacement et des références de projet. Importez l’extrait de code dans votre installation Visual Studio en utilisant le bouton **Importer** dans le **Gestionnaire des extraits de code** (**Outils** > **Gestionnaire des extraits de code**).
 
@@ -54,7 +54,7 @@ Le code XML suivant est le modèle d’extrait de code de base :
 
 2. Entrez un titre pour l’extrait de code dans l’élément **Title**. Utilisez le titre **Square Root**.
 
-3. Indiquez le langage de l’extrait dans l’attribut **Languages** de l’élément **Code**. Pour C#, utilisez **CSharp**, et pour Visual Basic, utilisez **VB**.
+3. Indiquez le langage de l’extrait dans l’attribut **Languages** de l’élément **Code**. Pour le C, utilisez **CSharp**, pour Visual Basic, utilisez **VB**, et pour C, utilisez **le RPC**.
 
    > [!TIP]
    > Pour voir toutes les valeurs de langue disponibles, parcourez la [section Attributs de l’élément de code](code-snippets-schema-reference.md#attributes) dans la page [Référence de schéma des extraits de code](code-snippets-schema-reference.md).
