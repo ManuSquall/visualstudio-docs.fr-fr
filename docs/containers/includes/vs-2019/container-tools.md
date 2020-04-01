@@ -7,16 +7,16 @@ ms.date: 02/01/2019
 ms.prod: visual-studio-dev16
 ms.technology: vs-azure
 ms.topic: include
-ms.openlocfilehash: 3869cf025b4ed0e744a7fea929aac38acb7dd816
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: bd9ac1bda9cb5f5d9cc5d84248200434426307c8
+ms.sourcegitcommit: ce3d0728ec1063ab548dac71c8eaf26d20450acc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "76922980"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "80502170"
 ---
 Avec Visual Studio, vous pouvez facilement les construire, déboguer et exécuter des applications .NET, ASP.NET et ASP.NET Core et les publier au Registre des conteneurs Azure (ACR), Docker Hub, Azure App Service ou votre propre registre des conteneurs. Dans cet article, nous publierons une application ASP.NET Core à ACR.
 
-## <a name="prerequisites"></a>Conditions préalables requises
+## <a name="prerequisites"></a>Prérequis
 
 * [Docker Desktop](https://hub.docker.com/editions/community/docker-ce-desktop-windows)
 * [Visual Studio 2019](https://visualstudio.microsoft.com/downloads) avec la charge de travail **Développement web**, **Outils Azure** et/ou la charge de travail **Développement multiplateforme .NET Core** installée
@@ -74,6 +74,9 @@ Quand la case **Configurer pour HTTPS** de la boîte de dialogue du nouveau proj
 Sélectionnez **Docker** dans la liste déroulante de débogage dans la barre d’outils et démarrez le débogage de l’application. Vous pouvez être amené à voir s’afficher un message vous invitant à approuver un certificat. Choisissez d’approuver le certificat pour continuer.
 
 L’option **Outil conteneur** dans la fenêtre **Sortie** indique les actions en cours. La première fois, il peut prendre un certain temps pour télécharger l’image de base, mais il est beaucoup plus rapide sur les pistes suivantes.
+
+>[!NOTE]
+> Si vous avez besoin de changer de ports pour débogage, vous pouvez le faire dans le fichier *launchSettings.json.* Voir [Paramètres de lancement de conteneurs](../../container-launch-settings.md).
 
 ## <a name="containers-window"></a>Fenêtre de conteneurs
 

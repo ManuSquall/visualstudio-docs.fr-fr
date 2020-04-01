@@ -9,28 +9,28 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d3996ef0db25a6552a1a32cd121dbf2f750d460c
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 84efda930066c4236fa4397fbadf287c6774fdb0
+ms.sourcegitcommit: ce3d0728ec1063ab548dac71c8eaf26d20450acc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "76114470"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "80472780"
 ---
 # <a name="how-to-view-save-and-configure-build-log-files"></a>Guide pratique pour afficher, enregistrer et configurer des fichiers journaux de génération
 
-Après avoir généré un projet dans l’IDE de Visual Studio, vous pouvez consulter les informations sur cette génération dans la fenêtre **Sortie**. Grâce à ces informations, vous pouvez déboguer un échec de génération, par exemple. 
+Après avoir généré un projet dans l’IDE de Visual Studio, vous pouvez consulter les informations sur cette génération dans la fenêtre **Sortie**. Grâce à ces informations, vous pouvez déboguer un échec de génération, par exemple.
 
-- Pour les projets C++, vous pouvez également afficher les mêmes informations dans un fichier *.txt* créé et enregistré automatiquement. 
+- Pour les projets C, vous pouvez également afficher les mêmes informations dans un fichier journal qui est créé et enregistré lorsque vous construisez un projet. 
 
-- Pour les projets de code gérés, vous pouvez cliquer dans la fenêtre de sortie de construction et appuyer sur **Ctrl**+**S**. Visual Studio vous invite à entrer un emplacement pour enregistrer les informations de la fenêtre **Sortie** dans un fichier *.txt*. 
+- Pour les projets de code gérés, vous pouvez cliquer dans la fenêtre de sortie de construction et appuyer sur **Ctrl**+**S**. Visual Studio vous invite à un emplacement pour enregistrer les informations de la fenêtre **de sortie** dans un fichier journal.
 
 Vous pouvez également utiliser l’IDE pour spécifier les types d’informations à afficher pour chaque génération.
 
-Si vous générez un projet à l’aide de MSBuild, vous pouvez créer un fichier *.txt* pour y enregistrer les informations de build. Pour plus d’informations, consultez [Obtenir des journaux de génération](../msbuild/obtaining-build-logs-with-msbuild.md).
+Si vous construisez n’importe quel type de projet en utilisant MSBuild, vous pouvez créer un fichier journal pour enregistrer des informations sur la construction. Pour plus d’informations, consultez [Obtenir des journaux de génération](../msbuild/obtaining-build-logs-with-msbuild.md).
 
 ## <a name="to-view-the-build-log-file-for-a-c-project"></a>Pour afficher le fichier journal de génération d’un projet C++
 
-1. Dans l’**Explorateur Windows** ou l’**Explorateur de fichiers**, ouvrez le fichier suivant : *\\...\Visual Studio \<Version\>\Projects\\<nom_projet\>\\<nom_projet\>\Debug\\<nom_projet\>.txt*
+1. Dans **Windows Explorer** ou File **Explorer**, ouvrez le fichier suivant (par rapport au dossier racine du projet): *Libération*\\<ProjectName>\>. LogMD ou *Debug\\<\>ProjectName .log*
 
 ## <a name="to-create-a-build-log-file-for-a-managed-code-project"></a>Pour créer un fichier journal de génération d’un projet de code managé
 

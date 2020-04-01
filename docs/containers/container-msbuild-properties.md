@@ -6,16 +6,16 @@ ms.author: ghogen
 ms.date: 06/06/2019
 ms.technology: vs-azure
 ms.topic: conceptual
-ms.openlocfilehash: 987d358abcccadf36d15593722ff55ba4b879d03
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 3caa8a76f461515c0d2265590383861b6e10d0a1
+ms.sourcegitcommit: ce3d0728ec1063ab548dac71c8eaf26d20450acc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "71950699"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "80472665"
 ---
 # <a name="container-tools-build-properties"></a>Les outils de conteneur construisent des propriétés
 
-Vous pouvez personnaliser la façon dont Visual Studio construit vos projets de conteneurs en définissant les propriétés que MSBuild utilise pour construire votre projet. Par exemple, vous pouvez changer le nom du Dockerfile, spécifier les balises et les étiquettes de vos images, fournir des arguments supplémentaires transmis aux commandes Docker et contrôler si Visual Studio fait certaines optimisations de performance telles que la construction à l’extérieur de la l’environnement des conteneurs. Vous pouvez également définir des propriétés de débogage telles que le nom de l’exécutable pour lancer, et les arguments de la ligne de commande à fournir.
+Vous pouvez personnaliser la façon dont Visual Studio construit vos projets de conteneurs en définissant les propriétés que MSBuild utilise pour construire votre projet. Par exemple, vous pouvez changer le nom du Dockerfile, spécifier les balises et les étiquettes de vos images, fournir des arguments supplémentaires transmis aux commandes Docker et contrôler si Visual Studio fait certaines optimisations de performance telles que la construction en dehors de l’environnement des conteneurs. Vous pouvez également définir des propriétés de débogage telles que le nom de l’exécutable pour lancer, et les arguments de la ligne de commande à fournir.
 
 Pour définir la valeur d’une propriété, modifiez le fichier du projet. Supposons, par exemple, que votre Dockerfile s’appelle *MyDockerfile*. Vous pouvez `DockerfileFile` définir la propriété dans le fichier du projet comme suit.
 
@@ -41,7 +41,7 @@ Le tableau suivant montre les propriétés MSBuild disponibles pour les projets 
 | DockerImageLabels (en) | L’ensemble par défaut d’étiquettes appliquées à l’image Docker. | com.microsoft.created-by-visual-studio;com.microsoft.visual-studio.project-nameMD$(MSBuildProjectName) |1.5.4 ou plus récent|
 | DockerFastModeProjectMountDirectory|En **mode rapide**, cette propriété contrôle l’endroit où le répertoire de sortie du projet est monté en volume dans le conteneur en cours d’exécution.|C : app (Windows) ou /app (Linux)|1.9.2 ou plus récent|
 | DockerfileBuildArguments | D’autres arguments sont passés au commandement de construction De Docker. | Non applicable. |1.0.1872750 ou plus récent|
-| DockerfileContexte (en) | Le contexte par défaut utilisé lors de la construction de l’image Docker. | Ensemble par Visual Studio. |1.0.1872750 ou plus récent|
+| DockerfileContexte (en) | Le contexte par défaut utilisé lors de la construction de l’image Docker, comme un chemin par rapport à la Dockerfile. | Ensemble par Visual Studio. |1.0.1872750 ou plus récent|
 | DockerfileFastModeModeStage | L’étape Dockerfile (c’est-à-dire la cible) à utiliser lors de la construction de l’image en mode débogé. | Première étape trouvée dans le Dockerfile (base) |
 | DockerfileFile (En) | Décrit le Dockerfile par défaut qui sera utilisé pour construire/exécuter le conteneur pour le projet. Cela peut être un chemin ainsi. | Dockerfile |1.0.1872750 ou plus récent|
 | DockerfileRunArguments | D’autres arguments sont passés au commandement de course de Docker. | Non applicable. |1.0.1872750 ou plus récent|

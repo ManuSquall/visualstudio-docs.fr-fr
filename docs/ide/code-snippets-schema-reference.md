@@ -1,6 +1,6 @@
 ---
 title: Référence de schéma des extraits de code
-ms.date: 02/25/2019
+ms.date: 03/31/2020
 ms.topic: reference
 helpviewer_keywords:
 - schema reference [Visual Studio]
@@ -13,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 22f84fbe5188e74acbf24256444ad11dd9c64347
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 867aac31f1515136e3aa9f0a6f171ec425d90cf7
+ms.sourcegitcommit: ce3d0728ec1063ab548dac71c8eaf26d20450acc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79301838"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "80472799"
 ---
 # <a name="code-snippets-schema-reference"></a>Référence de schéma des extraits de code
 
@@ -235,7 +235,7 @@ Une valeur texte est requise. Ce texte décrit l'extrait de code.
 Spécifie une fonction à exécuter lorsque le littéral ou l'objet reçoit le focus dans Visual Studio.
 
 > [!NOTE]
-> L'élément `Function` est uniquement pris en charge par les extraits de code C#.
+> Toutes les `function` langues ne prennent pas en charge les éléments. Consultez la documentation spécifique à la langue pour les fonctions disponibles.
 
 ```xml
 <Function>
@@ -660,4 +660,4 @@ Une valeur texte est requise. Ce texte spécifie une URL avec plus d'information
 ## <a name="see-also"></a>Voir aussi
 
 - [Extraits de code](../ide/code-snippets.md)
-- [Procédure pas à pas : créer un extrait de code](../ide/walkthrough-creating-a-code-snippet.md)
+- [Procédure pas à pas : Créer un extrait de code](../ide/walkthrough-creating-a-code-snippet.md)

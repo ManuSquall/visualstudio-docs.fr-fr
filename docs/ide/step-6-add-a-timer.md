@@ -1,6 +1,6 @@
 ---
-title: 'Étape 6 : ajouter une minuterie'
-ms.date: 11/04/2016
+title: 'Étape 6 : Ajouter un minuteur'
+ms.date: 03/31/2020
 ms.topic: tutorial
 ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
@@ -13,14 +13,14 @@ ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 23d050df688d4d1efec75245e6f48d748464170c
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: 0473ab07155e0f132e8e6207361e409b804257f2
+ms.sourcegitcommit: ce3d0728ec1063ab548dac71c8eaf26d20450acc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "77579315"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "80472765"
 ---
-# <a name="step-6-add-a-timer"></a>Étape 6 : ajouter une minuterie
+# <a name="step-6-add-a-timer"></a>Étape 6 : Ajouter un minuteur
 Ensuite, ajoutez un contrôle <xref:System.Windows.Forms.Timer> au jeu de combinaisons. Une minuterie attend un nombre donné de millisecondes, puis déclenche un événement, appelé *battement*. Ceci permet de démarrer ou répéter périodiquement une action. Ici, vous devez utiliser un minuteur pour permettre aux joueurs de choisir deux icônes et, si ces icônes ne correspondent pas, pour masquer les deux icônes à nouveau après un bref délai.
 
 ## <a name="to-add-a-timer"></a>Pour ajouter un minuteur
@@ -48,12 +48,12 @@ Ensuite, ajoutez un contrôle <xref:System.Windows.Forms.Timer> au jeu de combin
     > [!NOTE]
     > Un objet Timer a une méthode `Start()` qui démarre le minuteur et une méthode `Stop()` qui l'arrête. Quand vous affectez la valeur **True** à la propriété **Enabled** de la minuterie dans la fenêtre **Propriétés**, la minuterie démarre en même temps que le programme. Si vous conservez la valeur **False**, la minuterie attend que sa méthode `Start()` soit appelée pour démarrer. Normalement, une minuterie déclenche son événement Tick de façon répétée, en utilisant la propriété **Interval** pour déterminer le délai d’attente en millisecondes entre chaque battement. Vous aurez éventuellement remarqué que la méthode `Stop()` de la minuterie est appelée dans l'événement Tick. La minuterie passe ainsi en *mode déclenchement unique*, ce qui signifie que lorsque la méthode `Start()` est appelée, il patiente pendant l’intervalle spécifié, déclenche un seul événement Tick, puis s’arrête.
 
-4. Pour voir la nouvelle minuterie en action, allez dans l'éditeur de code et ajoutez le code suivant en haut et en bas de la méthode du gestionnaire d'événements `label_Click()`. (Ajoutez une instruction `if` en haut et trois instructions en bas ; le reste de la méthode ne change pas.)
+4. Pour voir la nouvelle minuterie en action, allez dans l'éditeur de code et ajoutez le code suivant en haut et en bas de la méthode du gestionnaire d'événements `label_Click()`. (Vous ajoutez deux `if` déclarations au sommet, et trois déclarations au bas; le reste de la méthode reste le même.)
 
      [!code-csharp[VbExpressTutorial4Step6#8](../ide/codesnippet/CSharp/step-6-add-a-timer_2.cs)]
      [!code-vb[VbExpressTutorial4Step6#8](../ide/codesnippet/VisualBasic/step-6-add-a-timer_2.vb)]
 
-     Le code situé en haut de la méthode vérifie si la minuterie a été démarrée en regardant la valeur de la propriété **Enabled**. Ainsi, si le joueur choisit les premier et deuxième contrôles d’étiquette et que le minuteur démarre, rien ne se passe si le joueur choisit une troisième étiquette.
+     Le code situé en haut de la méthode vérifie si la minuterie a été démarrée en regardant la valeur de la propriété **Enabled**. Ainsi, si le joueur choisit les premier et deuxième contrôles d’étiquette et que le minuteur démarre, rien ne se passe si le joueur choisit une troisième étiquette. Il empêche également le joueur de cliquer rapidement une troisième fois avant que le jeu est prêt pour un autre premier clic. 
 
      Le code en bas de la méthode indique à la variable de référence `secondClicked` d'effectuer le suivi du deuxième contrôle d’étiquette choisi par le joueur, puis il définit la couleur de l'icône de cette étiquette sur noir pour le rendre visible. Ensuite, il démarre le minuteur en mode déclenchement unique afin qu'il attende 750 millisecondes avant de déclencher un événement Tick unique. Le gestionnaire d’événements Tick du minuteur masque les deux icônes et réinitialise les variables de référence `firstClicked` et `secondClicked` pour que le joueur puisse choisir une autre paire d’icônes dans le formulaire.
 

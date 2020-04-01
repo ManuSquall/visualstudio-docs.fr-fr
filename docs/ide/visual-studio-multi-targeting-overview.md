@@ -1,6 +1,6 @@
 ---
 title: Frameworks .NET ciblés
-ms.date: 02/06/2018
+ms.date: 03/31/2020
 ms.topic: conceptual
 helpviewer_keywords:
 - targeting .NET Framework [Visual Studio]
@@ -11,20 +11,18 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: ec81b38ab68c327f25c9f94b6329a700e2662383
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 48d770f5d88e19c749c1a1e657c369089d4c7afb
+ms.sourcegitcommit: ce3d0728ec1063ab548dac71c8eaf26d20450acc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79303420"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "80472738"
 ---
 # <a name="framework-targeting-overview"></a>Vue d’ensemble du ciblage des frameworks
 
 Dans Visual Studio, vous pouvez spécifier la version de .NET que votre projet doit cibler. Le ciblage de framework permet de garantir que l’application utilise seulement les fonctionnalités disponibles dans la version du framework spécifiée. Pour qu’une application .NET Framework s’exécute sur un autre ordinateur, la version du framework ciblée par l’application doit être compatible avec la version du framework qui est installée sur l’ordinateur.
 
-Une solution Visual Studio peut contenir des projets qui ciblent différentes versions de .NET.
-
-Pour plus d’informations sur les frameworks cibles, consultez [Frameworks cibles](/dotnet/standard/frameworks).
+Une solution Visual Studio peut contenir des projets qui ciblent différentes versions de .NET.  Cependant, notez que vous ne pouvez construire contre une seule version de .NET soit en utilisant des conditionnels de référence pour une seule construction ou de reconstruire construire différents binaires pour chaque version.  Pour plus d’informations sur les frameworks cibles, consultez [Frameworks cibles](/dotnet/standard/frameworks).
 
 > [!TIP]
 > Vous pouvez également cibler des applications pour différentes plateformes. Pour plus d’informations, consultez l’article [Multiciblage de MSBuild](../msbuild/msbuild-multitargeting-overview.md).

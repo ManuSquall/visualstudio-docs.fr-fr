@@ -6,12 +6,12 @@ ms.author: ghogen
 ms.date: 08/15/2019
 ms.technology: vs-azure
 ms.topic: conceptual
-ms.openlocfilehash: 1c9786c29573da3b0149a9ec6578f2ce58c4de9f
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 63cf881fdedf9608d5cb773bbcb6b969a0f51624
+ms.sourcegitcommit: ce3d0728ec1063ab548dac71c8eaf26d20450acc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "76542592"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "80472645"
 ---
 # <a name="container-tools-launch-settings"></a>Paramètres de lancement d’outils de conteneurs
 
@@ -50,18 +50,18 @@ Le paramètre commandName indique que cette section s’applique aux outils de c
 
 ::: moniker range="vs-2017"
 
-|Nom du paramètre|Version| Exemple|Description|
+|Nom du paramètre|Version|Exemple|Description|
 |------------|-------|-------|---------------|
-|lancementBrowser|Visual Studio 2017|"launchBrowser": vrai|Indique s’il faut lancer le navigateur après avoir lancé avec succès le projet.|
-|lancementUrl|Visual Studio 2017|"launchUrl": "'Scheme’http’ServiceHost': 'ServicePort'"|Cette URL est utilisée lors du lancement du navigateur.  Les jetons de remplacement pris en charge pour cette chaîne sont :<br>   "Scheme" - Remplacé par "http" ou "https" selon que SSL est utilisé.<br>   "ServiceHost" - Habituellement remplacé par "localhost". Lors du ciblage des conteneurs Windows sur Windows 10 RS3 ou plus, cependant, il est remplacé par IP du conteneur.<br>   "ServicePort" - Habituellement remplacé par sslPort ou httpPort, selon que SSL est utilisé.  Lors du ciblage des conteneurs Windows sur Windows 10 RS3 ou plus, cependant, il est remplacé par soit "443" ou "80", selon que SSL est utilisé.|
+|lancementBrowser|Visual Studio 2017|"launchBrowser": vrai|Indique s’il faut lancer le navigateur après avoir lancé avec succès le projet.|
+|lancementUrl|Visual Studio 2017|"launchUrl": "'Scheme’http’ServiceHost': 'ServicePort'"|Cette URL est utilisée lors du lancement du navigateur.  Les jetons de remplacement pris en charge pour cette chaîne sont :<br>   "Scheme" - Remplacé par "http" ou "https" selon que SSL est utilisé.<br>   "ServiceHost" - Habituellement remplacé par "localhost". Lors du ciblage des conteneurs Windows sur Windows 10 RS3 ou plus, cependant, il est remplacé par IP du conteneur.<br>   "ServicePort" - Habituellement remplacé par sslPort ou httpPort, selon que SSL est utilisé.  Lors du ciblage des conteneurs Windows sur Windows 10 RS3 ou plus, cependant, il est remplacé par soit "443" ou "80", selon que SSL est utilisé.|
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-| Nom du paramètre         |  Exemple                                               | Description                                                                                                             |
+| Nom du paramètre         | Exemple                                               | Description                                                                                                             |
 | -------------------- | ----------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------- |
-| commandeLineArgs      | "commandLineArgs": "--mysetting myvalue"              | Ces arguments de ligne de commande sont utilisés lors du lancement de votre projet dans le conteneur.                                     |
+| commandeLineArgs      | "commandLineArgs": "--mysetting myvalue"              | Ces arguments de ligne de commande pour démarrer votre application sont utilisés lors du lancement de votre projet dans le conteneur.                                     |
 | environmentVariables | "environnementVariables":                             | Ces valeurs variables de l’environnement sont transmises au processus lorsqu’il est lancé dans le conteneur.                       |
 |                      | "ASPNETCORE_URLS": "https://+:443; http://+:80",       |                                                                                                                         |
 |                      | "ASPNETCORE_HTTPS_PORT": "44381"                      |                                                                                                                         |
