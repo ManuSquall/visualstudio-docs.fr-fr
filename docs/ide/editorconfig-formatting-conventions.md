@@ -1,24 +1,24 @@
 ---
 title: Conventions de mise en forme .NET pour EditorConfig
-ms.date: 07/17/2019
+ms.date: 03/31/2020
 ms.topic: reference
 dev_langs:
 - CSharp
 - VB
 helpviewer_keywords:
 - formatting conventions [EditorConfig]
-author: TerryGLee
-ms.author: tglee
+author: mikadumont
+ms.author: midumont
 manager: jillfra
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: 64f6a45b3a5cc49cd541ceb905356093ea4ec221
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: f10d4c710c0686b22e29883cabc21550ffd32f8c
+ms.sourcegitcommit: 334024a43477290ecc610e70c80a0f772787a7d6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75589225"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "80527971"
 ---
 # <a name="formatting-conventions"></a>Conventions de mise en forme
 
@@ -151,6 +151,8 @@ Les règles de mise en forme mentionnées dans cette section s’appliquent uniq
 - [Options d’encapsulage](#wrap-options)
   - csharp_preserve_single_line_statements
   - csharp_preserve_single_line_blocks
+- [Utilisation d’options directive](#using-directive-options) 
+  - csharp_using_directive_placement
 
 ### <a name="new-line-options"></a>Options de nouvelle ligne
 
@@ -1210,8 +1212,52 @@ public int MyProperty
 }
 ```
 
+- [Utilisation d’options directive](#using-directive-options) 
+  - csharp_using_directive_placement
+  
+### <a name="using-directive-options"></a>Utilisation d’options directive
+
+Cette règle de formatage concerne l’utilisation de directives placées à l’intérieur par rapport à l’extérieur d’un espace de nom.
+
+Exemple de fichier *.editorconfig* :
+
+```ini
+# 'using' directive preferences
+[*.cs]
+csharp_using_directive_placement = outside_namespace
+csharp_using_directive_placement = inside_namespace
+```
+
+#### <a name="csharp_using_directive_placement"></a>csharp_using_directive_placement
+
+|||
+|-|-|
+| **Nom de la règle** | csharp_using_directive_placement |
+| **Langues applicables** | C# |
+| **Version introduite** | Visual Studio 2019 version 16.1 |
+| **Valeurs** | `outside_namespace`- Quitter en utilisant des directives en dehors de l’espace nom<br /><br />`inside_namespace`- Laisser en utilisant des directives à l’intérieur de l’espace nom |
+| **Valeur par défaut de Visual Studio** | `outside_namespace` |
+
+Exemples de code :
+
+```csharp
+// csharp_using_directive_placement = outside_namespace
+using System;
+
+namespace Conventions
+{
+
+}
+
+// csharp_using_directive_placement = inside_namespace
+namespace Conventions
+{
+    using System;
+}
+```
+
 ## <a name="see-also"></a>Voir aussi
 
 - [Conventions de langage](editorconfig-language-conventions.md)
-- [Conventions de nommage](editorconfig-naming-conventions.md)
+- [Conventions d'attribution d'un nom](editorconfig-naming-conventions.md)
 - [Paramètres de convention de codage .NET pour EditorConfig](editorconfig-code-style-settings-reference.md)

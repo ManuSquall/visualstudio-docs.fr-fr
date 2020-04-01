@@ -1,21 +1,21 @@
 ---
 title: Conventions de nommage .NET pour les fichiers EditorConfig
-ms.date: 08/07/2019
+ms.date: 03/31/2020
 ms.topic: reference
 helpviewer_keywords:
 - naming conventions [EditorConfig]
 - EditorConfig naming conventions
-author: TerryGLee
-ms.author: tglee
+author: mikadumont
+ms.author: midumont
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b5c4115f4d63456e105fb4a6770fd1650938770d
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: ccf62c5ffc3f526eada85478f37480fcf5d75cba
+ms.sourcegitcommit: 334024a43477290ecc610e70c80a0f772787a7d6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75588601"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "80528014"
 ---
 # <a name="net-naming-conventions-for-editorconfig"></a>Conventions de nommage .NET pour EditorConfig
 
@@ -50,12 +50,14 @@ La liste suivante répertorie les valeurs autorisées, et vous pouvez spécifier
 - propriété
 - method
 - field
-- événement
+- event
 - délégué
 - paramètre
 - type_parameter
 - local
 - local_function
+
+[!NOTE] Les membres tuple ne sont pas actuellement pris en charge.
 
 ### <a name="accessibility-levels-of-symbols"></a>Niveaux d’accessibilité des symboles
 
@@ -168,7 +170,7 @@ severity | Résultat
 Aucun | La règle est entièrement supprimée.
 refactorisation ou silence | Quand ce style n’est pas suivi, ne rien afficher à l’utilisateur ; toutefois, le code généré automatiquement suit ce style.
 suggestion | Quand ce style n’est pas suivi, l’afficher à l’utilisateur comme suggestion, sous la forme de points de soulignement sur les deux premiers caractères. Il n’a aucun effet au moment de la compilation.
-avertissement | Quand ce style n’est pas suivi, afficher un avertissement du compilateur dans la **Liste d’erreurs**.
+warning | Quand ce style n’est pas suivi, afficher un avertissement du compilateur dans la **Liste d’erreurs**.
 error | Quand ce style n’est pas suivi, afficher une erreur du compilateur dans la **Liste d’erreurs**.
 
 > [!NOTE]
@@ -198,7 +200,7 @@ Si vous ne spécifiez pas de règles de dénomination personnalisées, Visual St
 
 - Pour les interfaces avec l’accessibilité `public`, `private`, `internal`, `protected` ou `protected_internal`, le style de dénomination par défaut est la casse Pascal avec le préfixe **I** requis.
 
-## <a name="example"></a> Exemple
+## <a name="example"></a>Exemple
 
 Le fichier *.editorconfig* suivant contient une convention de nommage qui spécifie que les propriétés publiques, les méthodes, les champs, les événements et les délégués doivent être mis en majuscules. Notez que cette convention de nommage spécifie plusieurs types de symboles auxquels appliquer la règle, en utilisant une virgule pour séparer les valeurs.
 
