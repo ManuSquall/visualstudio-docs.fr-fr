@@ -10,12 +10,12 @@ ms.author: midumont
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ccf62c5ffc3f526eada85478f37480fcf5d75cba
-ms.sourcegitcommit: 334024a43477290ecc610e70c80a0f772787a7d6
+ms.openlocfilehash: d4864cc20813bc57b35e315a3b415cb6902e6361
+ms.sourcegitcommit: 054815dc9821c3ea219ae6f31ebd9cd2dc8f6af5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/01/2020
-ms.locfileid: "80528014"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "80544003"
 ---
 # <a name="net-naming-conventions-for-editorconfig"></a>Conventions de nommage .NET pour EditorConfig
 
@@ -57,7 +57,8 @@ La liste suivante répertorie les valeurs autorisées, et vous pouvez spécifier
 - local
 - local_function
 
-[!NOTE] Les membres tuple ne sont pas actuellement pris en charge.
+> [!NOTE] 
+> Les membres tuple ne sont pas actuellement pris en charge.
 
 ### <a name="accessibility-levels-of-symbols"></a>Niveaux d’accessibilité des symboles
 

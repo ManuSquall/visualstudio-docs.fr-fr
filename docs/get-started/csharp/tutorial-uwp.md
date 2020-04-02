@@ -14,12 +14,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: 8be56581374aefbef41a5173836d1189cceff290
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: cb559bc21b70b66d64bc44fb4269c97304dd81c3
+ms.sourcegitcommit: 054815dc9821c3ea219ae6f31ebd9cd2dc8f6af5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "77579998"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "80543941"
 ---
 # <a name="tutorial-create-your-first-universal-windows-platform-application-in-visual-studio-with-xaml-and-c35"></a>Tutorial: Créez votre première application universelle de plate-forme Windows dans Visual Studio avec XAML et C&#35;
 
@@ -42,6 +42,9 @@ Créez tout d’abord un projet de plateforme Windows universelle. Le type de pr
 1. Dans la barre de menus supérieure, choisissez **Fichier** > **Nouveau** > **Projet**.
 
 1. Dans le volet gauche de la boîte de dialogue **Nouveau projet**, développez **Visual C#**, puis choisissez **Windows universel**. Dans le volet central, choisissez **Application vide (Windows universel)**. Ensuite, nommez le projet *HelloWorld* et choisissez **OK**.
+
+   > [!NOTE]
+   > Assurez-vous que l’emplacement du projet source se trouve sur un lecteur formaté **du système de fichiers de nouvelle technologie (NTFS),** comme votre lecteur de système d’exploitation (OS). Sinon, vous pourriez avoir du mal à construire et à gérer votre projet. 
 
    ![Modèle de projet Windows universel dans la boîte de dialogue Nouveau projet dans l’IDE Visual Studio](media/new-project-csharp-uwp-helloworld.png)
 
@@ -156,7 +159,7 @@ Un « gestionnaire d’événements » semble compliqué, mais il s’agit simpl
 
 Le code utilise des API Windows pour créer un objet de synthèse vocale, puis lui donne du texte à dire. (Pour plus d’informations sur l’utilisation de `SpeechSynthesis`, consultez <xref:System.Speech.Synthesis>.)
 
-## <a name="run-the-application"></a>Exécuter l’application
+## <a name="run-the-application"></a>Exécution de l'application
 
 
 ::: moniker range="vs-2017"

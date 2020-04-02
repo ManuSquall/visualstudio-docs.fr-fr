@@ -6,16 +6,16 @@ ms.author: dominicn
 ms.date: 07/13/2017
 ms.assetid: 6E8B0C90-33D6-4546-8207-CE0787584565
 ms.custom: video
-ms.openlocfilehash: b1e29e4df6ea31d99a99590f3e56ed6feac791e1
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: 5f1a617c5562c4f95fec94ae449f48b681fcb7ef
+ms.sourcegitcommit: 054815dc9821c3ea219ae6f31ebd9cd2dc8f6af5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "74984884"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "80543755"
 ---
 # <a name="getting-started-with-aspnet-core"></a>Bien démarrer avec ASP.NET Core
 
- Visual Studio pour Mac facilite le développement du service de votre application avec sa prise en charge pour la plateforme de développement web ASP.NET Core la plus récente. ASP.NET Core s’exécute sur .NET Core, qui est l’évolution la plus récente du .NET Framework et du runtime. Il a été optimisé pour accélérer les performances, conçu pour des tailles d’installation réduites et réinventé pour s’exécuter sur Linux et macOS, ainsi que sur Windows.
+ Visual Studio pour Mac facilite le développement du service de votre application en supportant la dernière plate-forme de développement Web ASP.NET Core. ASP.NET Core s’exécute sur .NET Core, qui est l’évolution la plus récente du .NET Framework et du runtime. Il a été réglé pour des performances rapides, pris en compte pour les petites tailles d’installation, et ré-imaginé pour fonctionner sur Linux et macOS, ainsi que Windows.
 
 ## <a name="installing-net-core"></a>Installation de .NET Core
 
@@ -42,7 +42,7 @@ Sélectionnez **Application web vide ASP.NET Core** et appuyez sur **Suivant**. 
 
 ![Vue Nouveau projet vide ASP.NET Core](media/asp-net-core-image4.png)
 
-L’application web vide ASP.NET Core crée une application web avec deux fichiers par défaut : **Program.cs** et **Startup.cs**, qui sont décrits ci-dessous. Elle crée également un dossier de dépendances, qui contient les dépendances du package NuGet de votre projet, comme ASP.NET Core, le framework .NET Core et les cibles MSBuild qui génèrent le projet :
+L’application web vide ASP.NET Core crée une application web avec deux fichiers par défaut : **Program.cs** et **Startup.cs**, qui sont décrits ci-dessous. Il crée également un dossier dépendances, qui contient les dépendances de votre projet Paquet NuGet tels que ASP.NET Core, le cadre .NET Core, et les cibles MSBuild qui construisent le projet:
 
 ![Panneau Solution affichant les dépendances](media/asp-net-core-image12.png)
 
@@ -234,7 +234,7 @@ Veillez à effectuer correctement les quatre étapes pour garantir que .NET Core
 
 Ce guide était une introduction à ASP.NET Core. Il explique ce que c’est et quand l’utiliser, et fournit des informations sur son utilisation dans Visual Studio pour Mac.
 Pour plus d’informations sur les étapes à suivre à partir d’ici, consultez les guides suivants :
-- [ASP.NET docs de base.](/aspnet/core/#build-web-apis-and-web-ui-using-aspnet-core-mvc)
+- [ASP.NET docs de base.](/aspnet/core/)
 - [Création de services backend pour les applications mobiles natives](/aspnet/core/mobile/native-mobile-backend), qui montre comment créer un service REST en utilisant ASP.NET Core pour une application Xamarin.Forms.
 - [Ateliers pratiques ASP.NET Core](https://github.com/Microsoft/vs4mac-labs/tree/master/Web/Getting-Started).
 

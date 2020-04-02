@@ -1,7 +1,7 @@
 ---
 title: Créer une installation réseau
 description: Découvrez comment créer un point d’installation réseau pour le déploiement de Visual Studio en entreprise.
-ms.date: 10/29/2019
+ms.date: 03/27/2020
 ms.custom: seodec18
 ms.topic: conceptual
 helpviewer_keywords:
@@ -15,12 +15,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: bc31b6c5286e5d02d5fd6d4da441a001f190de90
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: ea7efd82aa25844e8eb33745aa53d44be1ed14f6
+ms.sourcegitcommit: 054815dc9821c3ea219ae6f31ebd9cd2dc8f6af5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79303406"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "80544060"
 ---
 # <a name="create-a-network-installation-of-visual-studio"></a>Créer une installation réseau de Visual Studio
 
@@ -237,8 +237,11 @@ Les administrateurs peuvent déployer Visual Studio sur les stations de travail 
 
 Lorsque vous installez à partir d’une disposition, le contenu qui est installé est acquis à partir de la disposition. Toutefois, si vous sélectionnez un composant qui ne se trouve pas dans la disposition, celui-ci est téléchargé à partir d’Internet.  Si vous voulez empêcher le programme d’installation de Visual Studio de télécharger le contenu manquant dans la disposition, utilisez l’option `--noWeb`. Si `--noWeb` est utilisé et qu’un contenu à installer est absent de la disposition, l’installation échoue.
 
+> [!TIP]
+> Si vous souhaitez installer à partir d’une source hors connexion `--noWeb` `--noUpdateInstaller` sur un ordinateur non connecté à Internet, spécifiez à la fois les options et les options. Le premier empêche le téléchargement de charges de travail mises à jour, composants, et ainsi de suite. Ce dernier empêche l’installateur de s’auto-actualiser sur le Web.
+
 > [!IMPORTANT]
-> L’option `--noWeb` n’empêche pas le programme d’installation de Visual Studio de vérifier la présence de mises à jour. Pour plus d’informations, consultez la page [Contrôler les mises à jour applicables aux déploiements de Visual Studio à partir du réseau](controlling-updates-to-visual-studio-deployments.md).
+> L’option `--noWeb` n’empêche pas la configuration Visual Studio sur un ordinateur connecté à Internet de vérifier les mises à jour. Pour plus d’informations, consultez la page [Contrôler les mises à jour applicables aux déploiements de Visual Studio à partir du réseau](controlling-updates-to-visual-studio-deployments.md).
 
 ### <a name="error-codes"></a>Codes d’erreur
 
@@ -280,7 +283,7 @@ Si vous avez besoin de créer une mise en [https://my.visualstudio.com](https://
 
 Si vous rencontrez un problème avec votre installation hors connexion, nous voulons le savoir. Le meilleur moyen de nous en faire part est d’utiliser l’outil [Signaler un problème](../ide/how-to-report-a-problem-with-visual-studio.md). Lorsque vous utilisez cet outil, vous pouvez nous envoyer la télémétrie et des journaux, dont nous avons besoin pour nous aider à diagnostiquer et à résoudre le problème.
 
-Nous offrons également une option de support par [**Conversation en direct**](https://visualstudio.microsoft.com/vs/support/#talktous) (en anglais uniquement) pour les problèmes liés à l’installation.
+Nous offrons également une option de support par [**chat sur les installations**](https://visualstudio.microsoft.com/vs/support/#talktous) (en anglais uniquement) pour les problèmes liés à l’installation.
 
 D’autres options de support sont également à votre disposition. Pour obtenir la liste, consultez notre page [Commentaires](../ide/feedback-options.md).
 
@@ -294,3 +297,4 @@ D’autres options de support sont également à votre disposition. Pour obtenir
 - [Mettre à jour Visual Studio tout en étant sur une ligne de base de maintenance](update-servicing-baseline.md)
 - [Utiliser les paramètres de ligne de commande pour installer Visual Studio](use-command-line-parameters-to-install-visual-studio.md)
 - [ID de charge de travail et de composant Visual Studio](workload-and-component-ids.md)
+- [Installer les certificats nécessaires à l’installation hors connexion de Visual Studio](/install-certificates-for-visual-studio-offline.md)

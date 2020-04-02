@@ -12,19 +12,18 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e008e3181cd7c633179f35e7639265a2495fafe2
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: c679b2a43ec799035f9bafb6a03a546808498342
+ms.sourcegitcommit: 054815dc9821c3ea219ae6f31ebd9cd2dc8f6af5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77633796"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "80543988"
 ---
 # <a name="how-to-specify-which-target-to-build-first"></a>Guide pratique pour spécifier la cible à générer en premier
 
 Un fichier projet peut contenir un ou plusieurs éléments `Target` qui définissent le mode de génération du projet. Le moteur Microsoft Build Engine (MSBuild) construit le premier projet qu’il trouve, `DefaultTargets` et `InitialTargets` toutes les dépendances, à moins que le fichier de projet ne contienne un attribut, un attribut ou une cible est spécifié à la ligne de commande à l’aide de l’interrupteur **cible.**
 ## <a name="use-the-initialtargets-attribute"></a>Utiliser l’attribut InitialTargets
 
- L’attribut `InitialTargets` de l’élément `Project` spécifie une cible qui est exécutée en premier, même si des cibles sont spécifiées sur la ligne de commande ou dans l’attribut `DefaultTargets`.
 L’attribut `InitialTargets` de l’élément `Project` spécifie une cible qui est exécutée en premier, même si des cibles sont spécifiées sur la ligne de commande ou dans l’attribut `DefaultTargets`.
 
 #### <a name="to-specify-one-initial-target"></a>Pour spécifier une cible initiale
