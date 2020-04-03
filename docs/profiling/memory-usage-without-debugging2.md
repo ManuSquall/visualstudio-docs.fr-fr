@@ -1,7 +1,7 @@
 ---
 title: Analyser l’utilisation de la mémoire sans débogage | Microsoft Docs
 ms.custom: ''
-ms.date: 11/15/2018
+ms.date: 04/02/2020
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -13,28 +13,32 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b05787802b72eb4d14e1b2b56765bb246b9ada51
-ms.sourcegitcommit: ee12b14f306ad8f49b77b08d3a16d9f54426e7ca
+ms.openlocfilehash: 5af369669245bca9c5de74566dd8594164acf8bb
+ms.sourcegitcommit: 9c1cecaff4d9955276eee7865b78d47679dd1e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "80256242"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "80638825"
 ---
 # <a name="analyze-memory-usage-without-the-debugger"></a>Analyser l’utilisation de la mémoire sans débogage
 
 L’outil **Utilisation de la mémoire** permet de superviser l’utilisation de la mémoire par votre application. Vous pouvez l’utiliser pour étudier les effets en temps réel sur la mémoire des scénarios que vous développez activement dans Visual Studio. Vous pouvez prendre des instantanés des états de la mémoire de l’application, et comparer les instantanés pour trouver les causes racines des problèmes de mémoire.
 
-L’outil **Utilisation de la mémoire** peut s’exécuter avec ou sans le débogueur. Les instructions suivantes indiquent comment utiliser l’outil **Utilisation de la mémoire** sans le débogueur dans le **Profileur de performances** de Visual Studio.
+**L’outil d’utilisation de la mémoire** peut fonctionner avec ou sans le [débbugger](../profiling/running-profiling-tools-with-or-without-the-debugger.md). Dans cet article, nous montrons comment utiliser l’outil **d’utilisation de** la mémoire sans le débbugger dans le Visual Studio **Performance Profiler**.
 
 ## <a name="memory-usage-diagnostic-sessions"></a>Sessions de diagnostic d’utilisation de la mémoire
 
 **Pour démarrer une session de diagnostic d’utilisation de la mémoire**
 
-1. Ouvrez un projet UWP (plateforme Windows universelle) C# dans Visual Studio.
+1. Ouvrez un projet en Studio Visuel.
+
+   L’outil Memory Use prend en charge les applications .NET, ASP.NET, natives ou en mode mixte (.NET et natif).
+
+1. Dans le menu Debug, définissez la configuration de la solution pour **libérer** et sélectionnez **Local Windows Debugger** (ou **Local Machine**) comme cible de déploiement.
 
 1. Sur la barre de menu, choisissez **Debug** > **Performance Profiler**.
 
-1. Sélectionnez **Utilisation de la mémoire**, puis **Démarrer**.
+1. Sous **les outils disponibles**, sélectionnez **l’utilisation de la mémoire,** puis sélectionnez **Démarrer**.
 
    ![Commencer une session de diagnostic de l'utilisation de la mémoire](../profiling/media/memuse_start_diagnosticssession.png "Commencer une session de diagnostic de l'utilisation de la mémoire")
 
@@ -129,7 +133,7 @@ L’arborescence **Tas managé** dans un rapport détaillé d’instantané comp
 |||
 |-|-|
 |**Type d'objet**|Nom du type ou instance de l'objet.|
-|**Compter**|Nombre d'instances d'objet du type. La valeur **Nombre** est toujours égale à 1 pour une instance.|
+|**Count**|Nombre d'instances d'objet du type. La valeur **Nombre** est toujours égale à 1 pour une instance.|
 |**Taille (octets)**|Pour un type, taille de toutes les instances du type dans l’instantané, moins la taille des objets contenus dans les instances.<br /><br /> Pour une instance, taille de l’objet, moins la taille des objets contenus dans l’instance. |
 |**Taille inclusive (octets)**|Taille des instances du type ou taille d’une seule instance, y compris la taille des objets contenus.|
 |**Module**|Module qui contient l’objet.|
@@ -175,7 +179,7 @@ L’arborescence **Tas managé** dans un rapport différentiel d’instantanés 
 |||
 |-|-|
 |**Type d'objet**|Nom du type ou instance de l'objet.|
-|**Compter**|Nombre d'instances d'un type dans l'instantané principal. **Le compte** est toujours 1 pour un exemple.|
+|**Count**|Nombre d'instances d'un type dans l'instantané principal. **Le compte** est toujours 1 pour un exemple.|
 |**Différence de nombre**|Pour un type, différence du nombre d'instances du type entre l'instantané principal et l'instantané précédent. Le champ est vide pour une instance.|
 |**Taille (octets)**|Taille des objets dans l’instantané principal, moins la taille des objets dans les objets. Pour un type, **Taille (octets)** et **Taille inclusive (octets)** sont les totaux des tailles des instances du type.|
 |**Diff. taille totale (octets)**|Pour un type, différence de taille totale des instances du type entre l’instantané principal et l’instantané précédent, moins la taille des objets dans les instances. Le champ est vide pour une instance.|

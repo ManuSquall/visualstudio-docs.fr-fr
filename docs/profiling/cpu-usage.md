@@ -1,7 +1,7 @@
 ---
 title: Analyser l’utilisation de l’UC | Microsoft Docs
 ms.custom: seodec18
-ms.date: 11/04/2018
+ms.date: 04/02/2020
 ms.topic: conceptual
 ms.assetid: 7501a20d-04a1-480f-a69c-201524aa709d
 author: mikejo5000
@@ -9,18 +9,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 351247f50560896d53267fcf8d7f4a66a81b9461
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 88272af1733dbbaf7f46743388a8ecb6522e9f1a
+ms.sourcegitcommit: 9c1cecaff4d9955276eee7865b78d47679dd1e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "62553497"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "80638837"
 ---
 # <a name="analyze-cpu-usage"></a>Analyser l’utilisation de l’UC
 
 Une bonne façon de commencer l’investigation des problèmes de performances dans votre application consiste à comprendre son utilisation de l’UC. L’outil de performances **Utilisation de l’UC** montre le temps et le pourcentage de l’UC consacré à l’exécution du code dans les applications C++, C#/Visual Basic et JavaScript.
 
-Vous pouvez exécuter l’outil **Utilisation de l’UC** sur un projet Visual Studio ouvert ou sur une application du Microsoft Store installée, ou bien l’attacher à une application ou un processus en cours d’exécution. Vous pouvez exécuter l’outil sur des ordinateurs locaux ou distants, ou sur un simulateur ou un émulateur. Pour plus d’informations, voir [outils de profilage Run avec ou sans le débbugger](../profiling/running-profiling-tools-with-or-without-the-debugger.md).
+Vous pouvez exécuter l’outil **Utilisation de l’UC** sur un projet Visual Studio ouvert ou sur une application du Microsoft Store installée, ou bien l’attacher à une application ou un processus en cours d’exécution. Pour plus d’informations, voir [outils de profilage Run avec ou sans le débbugger](../profiling/running-profiling-tools-with-or-without-the-debugger.md).
 
 Vous pouvez exécuter l’outil **Utilisation de l’UC** avec ou sans débogage. Dans le débogueur, vous pouvez activer et désactiver le profilage de l’UC, et afficher une répartition par fonction de l’utilisation de l’UC. Vous pouvez afficher les résultats de l’utilisation de l’UC quand l’exécution est suspendue, par exemple à un point d’arrêt.
 
@@ -33,7 +33,7 @@ En règle générale, c’est l’ordinateur local qui réplique le mieux l’ex
 
 ## <a name="collect-cpu-usage-data"></a>Collecter les données d'utilisation de l'UC
 
-1. Dans le projet Visual Studio, affectez **Release** comme configuration de solution et sélectionnez **Ordinateur Local** comme cible de déploiement.
+1. Dans le projet Visual Studio, définissez la configuration de la solution pour **libérer** et sélectionner **Local Windows Debugger** (ou Local **Machine**) comme cible de déploiement.
 
     ![Sélectionner la version et l'ordinateur local](../profiling/media/cpuuse_selectreleaselocalmachine.png "Sélectionner la version et l'ordinateur local")
 

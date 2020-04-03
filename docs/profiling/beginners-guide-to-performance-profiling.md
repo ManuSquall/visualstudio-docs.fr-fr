@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1ac7d23c1d4cb245366ecf03c1a8a0e67b11cb55
-ms.sourcegitcommit: 0ba0cbff77eac15feab1a73eeee3667006794b29
+ms.openlocfilehash: 5134e17c26ffd7b34c0277c571173ba03d758bee
+ms.sourcegitcommit: 9c1cecaff4d9955276eee7865b78d47679dd1e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/31/2020
-ms.locfileid: "80412026"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "80638783"
 ---
 # <a name="measure-application-performance-by-analyzing-cpu-usage"></a>Mesurer les performances d’application en analysant l’utilisation de l’UC
 
@@ -35,7 +35,7 @@ Le hub de diagnostic propose de nombreuses autres options pour exécuter et gér
 > [!Important]
 > Les outils de diagnostics sont pris en charge pour le développement .NET dans Visual Studio (y compris ASP.NET) et pour le développement natif/C++.
 
-Dans cet article, nous allons décrire l’analyse de l’utilisation de l’UC dans un flux de travail de débogage normal. Vous pouvez également analyser l’utilisation et l’UC sans débogueur ou en ciblant une application en cours d’exécution. Pour plus d’informations, consultez la section [Recueillir des données de profilage sans débogage](../profiling/running-profiling-tools-with-or-without-the-debugger.md#collect-profiling-data-without-debugging) sur la page [Exécuter des outils de profilage avec ou sans débogueur](../profiling/running-profiling-tools-with-or-without-the-debugger.md). Vous pouvez également utiliser un autre outil de profilage, [PerfTips](../profiling/perftips.md), pour passer à travers le code et identifier combien de temps il faut des fonctions particulières ou des blocs de code pour remplir.
+Dans cet article, nous allons décrire l’analyse de l’utilisation de l’UC dans un flux de travail de débogage normal. Vous pouvez également analyser l’utilisation du processeur sans un débbuggeur attaché ou en ciblant une application en cours d’exécution. Pour plus d’informations, voir [outils de profilage Run avec ou sans le débbugger](../profiling/running-profiling-tools-with-or-without-the-debugger.md). Vous pouvez également utiliser un autre outil de profilage, [PerfTips](../profiling/perftips.md), pour passer à travers le code et identifier combien de temps il faut des fonctions particulières ou des blocs de code pour remplir.
 
 Vous pouvez utiliser les Outils de profilage sans débogueur avec Windows 7 et les versions ultérieures. Windows 8 et les versions ultérieures sont nécessaires pour exécuter les Outils de profilage avec le débogueur (fenêtre **Outils de diagnostic**).
 

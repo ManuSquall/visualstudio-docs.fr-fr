@@ -1,6 +1,6 @@
 ---
 title: Exécuter des outils de profilage avec ou sans le débogueur | Microsoft Docs
-ms.date: 11/04/2018
+ms.date: 04/02/2020
 ms.topic: conceptual
 ms.assetid: 3fcdccad-c1bd-4c67-bcec-bf33a8fb5d63
 author: mikejo5000
@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 273dc6770f2928ed65d6a473b7f1986bc353687e
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: cf544b3bec9b492f1d1669549ba5501a52f7d5f2
+ms.sourcegitcommit: 9c1cecaff4d9955276eee7865b78d47679dd1e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "62999387"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "80638810"
 ---
 # <a name="run-profiling-tools-with-or-without-the-debugger"></a>Exécuter des outils de profilage avec ou sans le débogueur
 
@@ -33,23 +33,21 @@ Pour vous aider à décider quels outils et résultats utiliser, tenez compte de
 - Le débogueur lui-même affecte les performances quand il effectue des opérations de débogage nécessaires telles que l’interception des exceptions et des événements de chargement de module.
 - Les valeurs de performances des builds Release fournies dans les outils du **Profileur de performances** sont plus précises. Les résultats fournis par les outils intégrés au débogueur sont plus utiles en comparaison avec d’autres mesures liées au débogage.
 
+Pour l’utilisation du processeur, vous pouvez exécuter l’outil sur une machine à distance à l’aide des outils de ligne de commande.
+
 ## <a name="collect-profiling-data-while-debugging"></a><a name="BKMK_Quick_start__Collect_diagnostic_data"></a> Collecter les données de profilage pendant le débogage
 
 Lorsque vous commencez à débogage dans Visual Studio en sélectionnant **Debug** > **Start Debugging** ou en appuyant sur **F5**, la fenêtre **Diagnostic Tools** apparaît par défaut. Pour l’ouvrir manuellement, sélectionnez **Debug** > **Windows** > **Show Diagnostic Tools**. La fenêtre **Outils de diagnostic** affiche des informations sur l’utilisation du processeur, la mémoire de traitement et les événements.
 
 ![Outils de diagnostic](../profiling/media/diagnostictools-update1.png "Outils de diagnostic")
 
-- Utilisez l’icône **Paramètres** dans la barre d’outils pour sélectionner si vous souhaitez afficher **Utilisation de la mémoire**, **Analyse de l’IU** ou **Utilisation de l’UC**.
+- Utilisez l’icône **Paramètres** dans la barre d’outils pour sélectionner s’il y a lieu d’afficher **l’utilisation de la mémoire** ou **l’utilisation du processeur**.
 
 - Sélectionnez **Paramètres** dans la liste déroulante **Paramètres** pour ouvrir les **pages de propriétés des outils de diagnostic** avec davantage d’options.
 
 - Si vous exécutez Visual Studio Enterprise, vous pouvez activer ou désactiver IntelliTrace sous Visual Studio **Tools** > **Options** > **IntelliTrace**.
 
 La session de diagnostic se termine quand vous arrêtez le débogage.
-
-Vous pouvez également afficher les **Outils de diagnostic** pour les cibles de débogage à distance. Pour le profilage et le débogage à distance, le débogueur distant Visual Studio doit être installé et en cours d’exécution sur la cible distante.
-- Pour plus d’informations sur le débogage à distance et le profilage des projets d’application de bureau, consultez [Débogage à distance](../debugger/remote-debugging.md).
-- Pour plus d’informations sur le débogage à distance et le profilage d’applications UWP, consultez [Déboguer des applications UWP sur des ordinateurs distants](../debugger/run-windows-store-apps-on-a-remote-machine.md).
 
 ### <a name="the-events-tab"></a>Onglet Événements
 
@@ -69,7 +67,9 @@ Pour plus d’informations, consultez [Searching and filtering the Events tab of
 
 Pour recueillir des données de performances sans débogage, vous pouvez exécuter les outils du **Profileur de performances**. L’exécution de certains des outils de profilage nécessite des privilèges d’administrateur. Vous pouvez ouvrir Visual Studio en tant qu’administrateur, ou vous pouvez exécuter les outils en tant qu’administrateur quand vous démarrez la session de diagnostic.
 
-1. Avec un projet ouvert dans Visual Studio, sélectionnez **Debug** > **Performance Profiler**, ou appuyez sur **Alt**+**F2**.
+1. Avec un projet ouvert dans Visual Studio, définissez la configuration de la solution pour **libérer** et sélectionnez **Local Windows Debugger** (ou **Local Machine**) comme cible de déploiement.
+
+1. Sélectionnez **Debug** > **Performance Profiler**, ou appuyez sur **Alt**+**F2**.
 
 1. Dans la page de lancement des diagnostics, sélectionnez un ou plusieurs outils à exécuter. Seuls les outils applicables au type de projet, au système d'exploitation et au langage de programmation sont affichés. Sélectionnez **Afficher tous les outils** pour voir aussi les outils qui sont désactivés pour cette session de diagnostic. Vous pourriez effectuer les choix suivants pour une application C# UWP :
 
@@ -103,13 +103,20 @@ Vous pouvez enregistrer les rapports et les ouvrir à partir de la liste **Sessi
 
 ## <a name="run-diagnostic-sessions-on-installed-or-running-apps"></a>Exécuter des sessions de diagnostic sur des applications installées ou en cours d’exécution
 
- Outre le démarrage de votre application à partir du projet Visual Studio, vous pouvez également exécuter les sessions de diagnostic sur d'autres cibles. Par exemple, vous souhaiterez peut-être diagnostiquer les problèmes de performances sur une application installée à partir du Windows Store.
+Outre le démarrage de votre application à partir du projet Visual Studio, vous pouvez également exécuter les sessions de diagnostic sur d'autres cibles. Par exemple, vous souhaiterez peut-être diagnostiquer les problèmes de performances sur une application installée à partir du Windows Store. Dans le Profileur de performance, sélectionnez parmi la liste d’abandon en vertu **de La cible de changement**.
 
- ![Choisir la cible d'analyse des outils de diagnostic](../profiling/media/pdhub_chooseanalysistarget.png "PDHUB_ChooseAnalysisTarget")
+![Choisir la cible d'analyse des outils de diagnostic](../profiling/media/pdhub_chooseanalysistarget.png "PDHUB_ChooseAnalysisTarget")
 
- Vous pouvez démarrer des applications qui sont déjà installées, ou attacher les outils de diagnostic à des applications et des processus qui sont déjà en cours d’exécution. Quand vous sélectionnez **Application en cours d’exécution** ou **Application installée**, vous sélectionnez l’application dans une liste qui identifie les applications sur la cible de déploiement spécifiée. Cette cible peut être un ordinateur local ou distant.
+Vous pouvez démarrer des applications qui sont déjà installées, ou attacher les outils de diagnostic à des applications et des processus qui sont déjà en cours d’exécution.
 
- ![Choisir une application en cours d'exécution ou installée pour le diagnostic](../profiling/media/pdhub_selectrunningapp.png "PDHUB_SelectRunningApp")
+Si vous choisissez **Exécutable** comme cible d’analyse, vous pouvez entrer le chemin vers un .exe sur une machine locale ou *distante.* Dans les deux cas, le *.exe* fonctionne localement. Cependant, nous vous recommandons de profiler votre application en ouvrant la solution dans Visual Studio.
+
+Pour une application UWP, lorsque vous **sélectionnez l’application Running App** ou **l’application installée,** vous sélectionnez l’application à partir d’une liste qui trouve les applications sur la cible de déploiement spécifiée. Cette cible peut être un ordinateur local ou distant. Pour profiler une application UWP sur une machine à distance, vous devez sélectionner **Universal (Protocole Non crypté)** dans la boîte de dialogue **Remote Connections.**
+
+![Choisir une application en cours d'exécution ou installée pour le diagnostic](../profiling/media/pdhub_selectrunningapp.png "PDHUB_SelectRunningApp")
+
+> [!NOTE]
+> Pour d’autres scénarios nécessitant une utilisation à distance des outils de profilage, voir [Les performances de l’application Measure de la ligne de commande](../profiling/profile-apps-from-command-line.md). Vous pouvez utiliser les outils de ligne de commande avec L’utilisation de processeur et l’outil d’allocation d’objets .NET.
 
 ## <a name="see-also"></a>Voir aussi
 

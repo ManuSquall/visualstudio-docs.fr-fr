@@ -2,20 +2,21 @@
 title: Exécuter un modèle TensorFlow dans le cloud
 description: exécuter un modèle tensorflow dans une machine virtuelle azure deep learning
 keywords: ia, visual studio, machine virtuelle deep learning
-author: lisawong19
-ms.author: liwong
-manager: routlaw
+author: jillre
+ms.author: jillfra
+manager: jillfra
+monikerRange: vs-2017
 ms.date: 11/13/2017
 ms.topic: tutorial
 ms.devlang: python
 ms.workload:
 - multiple
-ms.openlocfilehash: 9cb06220c99abb86c24808f6831cf98280133f2e
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: 6cd833a687591ba4f49e785746381f9a5d738f5e
+ms.sourcegitcommit: 9c1cecaff4d9955276eee7865b78d47679dd1e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "75915827"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "80638764"
 ---
 # <a name="train-a-tensorflow-model-in-the-cloud"></a>Former un modèle TensorFlow dans le cloud
 
@@ -23,7 +24,7 @@ Dans ce didacticiel, nous allons apprendre à former un modèle TensorFlow avec 
 
 La base de données MNIST a un jeu d’apprentissage constitué de 60 000 exemples et un jeu de test de 10 000 exemples de chiffres manuscrits.
 
-## <a name="prerequisites"></a>Conditions préalables requises
+## <a name="prerequisites"></a>Prérequis
 Avant de commencer, vérifiez que les composants suivants sont installés et configurés :
 
 ### <a name="setup-azure-deep-learning-virtual-machine"></a>Configurer la machine virtuelle Azure Deep Learning
@@ -70,7 +71,7 @@ Dans la fenêtre d’envoi :
 
 - Entrez un **nom d’emploi**.
 
-- Cliquez sur **Submit**.
+- Cliquez sur **Envoyer**.
 
 ## <a name="check-status-of-job"></a>Vérifier l’état de la tâche
 Pour afficher l’état et les détails relatifs aux tâches : développez la machine virtuelle à laquelle vous avez envoyé la tâche dans **l’Explorateur de serveurs**. Double cliquez sur **Tâches**.
