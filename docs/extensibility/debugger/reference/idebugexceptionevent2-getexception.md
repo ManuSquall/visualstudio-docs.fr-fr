@@ -1,5 +1,5 @@
 ---
-title: IDebugExceptionEvent2::GetException | Microsoft Docs
+title: IDebugExceptionEvent2::GetException (fr) Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugExceptionEvent2::GetException
 ms.assetid: 7c98f41d-322b-4e72-a514-cbd4823eb70d
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 691df8f5a212f1d854d87076a215402c7ce0053c
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 332cbb28bd175aa5c3b4187ae735a479ba9de6b0
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66310507"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80729860"
 ---
 # <a name="idebugexceptionevent2getexception"></a>IDebugExceptionEvent2::GetException
 Obtient une description détaillée de l’exception qui a déclenché cet événement.
@@ -41,14 +41,14 @@ int GetException( 
 
 ## <a name="parameters"></a>Paramètres
 `pExceptionInfo`\
-[in, out] Un [EXCEPTION_INFO](../../../extensibility/debugger/reference/exception-info.md) structure est remplie avec la description de l’exception.
+[dans, dehors] Une structure [EXCEPTION_INFO](../../../extensibility/debugger/reference/exception-info.md) qui est remplie avec la description de l’exception.
 
 ## <a name="return-value"></a>Valeur de retour
- En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.
+ En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
 ## <a name="remarks"></a>Notes
 
- [C++ uniquement] L’appelant est chargé de libérer toutes les chaînes dans le [EXCEPTION_INFO](../../../extensibility/debugger/reference/exception-info.md) structure, ainsi que de libérer le [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) objet dans la structure.
+ [C seulement] L’appelant est responsable de libérer toutes les chaînes de la structure [EXCEPTION_INFO](../../../extensibility/debugger/reference/exception-info.md) ainsi que de libérer [l’objet IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) dans la structure.
 
 ## <a name="see-also"></a>Voir aussi
 - [IDebugExceptionEvent2](../../../extensibility/debugger/reference/idebugexceptionevent2.md)

@@ -1,5 +1,5 @@
 ---
-title: IDebugEngine2::SetMetric | Microsoft Docs
+title: IDebugEngine2:SetMetric (fr) Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugEngine2:::SetMetric
 ms.assetid: dcda4972-c32e-4693-a0e1-25d5c58b9782
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 10e4662536dbe8fef8c250122d22520df1736cf8
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: caada8db1791d94e7a9632394cd4659bf8cec3a0
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66352576"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80730898"
 ---
 # <a name="idebugengine2setmetric"></a>IDebugEngine2::SetMetric
-Cette méthode définit une valeur de Registre appelée une métrique.
+Cette méthode établit une valeur de registre connue sous le nom de mesure.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -43,17 +43,17 @@ int SetMetric(
 
 ## <a name="parameters"></a>Paramètres
 `pszMetric`\
-[in] Le nom de la mesure.
+[dans] Le nom métrique.
 
 `varValue`\
-[in] Spécifie la valeur de métrique.
+[dans] Spécifie la valeur métrique.
 
 ## <a name="return-value"></a>Valeur de retour
- En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.
+ En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
 ## <a name="remarks"></a>Notes
- Une mesure est une valeur de Registre utilisée pour modifier le comportement d’un moteur débogage ou pour publier des fonctionnalités prises en charge. Cette méthode peut transférer l’appel à la forme appropriée de la [aides SDK pour le débogage](../../../extensibility/debugger/reference/sdk-helpers-for-debugging.md) (fonction), `SetMetric`.
+ Une mesure est une valeur de registre utilisée pour modifier le comportement d’un moteur de débogé ou pour annoncer les fonctionnalités prises en charge. Cette méthode peut transmettre l’appel à la forme appropriée des aides `SetMetric` [SDK pour la fonction Debugging,](../../../extensibility/debugger/reference/sdk-helpers-for-debugging.md) .
 
 ## <a name="see-also"></a>Voir aussi
 - [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md)
-- [Aides SDK pour le débogage](../../../extensibility/debugger/reference/sdk-helpers-for-debugging.md)
+- [Programmes d’assistance SDK pour le débogage](../../../extensibility/debugger/reference/sdk-helpers-for-debugging.md)

@@ -1,5 +1,5 @@
 ---
-title: 'Procédure : Ouvrir des éditeurs spécifiques du projet | Microsoft Docs'
+title: 'Comment : Ouvrir les rédacteurs spécifiques au projet (fr) Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -7,51 +7,51 @@ helpviewer_keywords:
 - editors [Visual Studio SDK], opening project-specific editors
 - projects [Visual Studio SDK], opening folders
 ms.assetid: 83e56d39-c97b-4c6b-86d6-3ffbec97e8d1
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2e85913f6eead81bcbc2424ef1087f64a3f2446e
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 3cb6e360a38d64de4976f83b0167d47dc03fbc87
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66319250"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80710841"
 ---
-# <a name="how-to-open-project-specific-editors"></a>Procédure : Ouvrez éditeurs spécifiques du projet
-Si un fichier de l’élément en cours d’ouverture par un projet est intrinsèquement lié à l’éditeur pour ce projet particulier, le projet doit ouvrir le fichier à l’aide d’un éditeur spécifique au projet. Le fichier ne peut pas être délégué au mécanisme de l’IDE pour la sélection d’un éditeur. Par exemple, au lieu d’utiliser un éditeur de bitmaps standard, vous pouvez utiliser cette option d’éditeur spécifiques au projet pour spécifier un éditeur de bitmaps spécifique qui reconnaît les informations contenues dans le fichier qui est unique à votre projet.
+# <a name="how-to-open-project-specific-editors"></a>Comment : Ouvrir les éditeurs spécifiques au projet
+Si un fichier d’objets ouvert par un projet est intrinsèquement lié à l’éditeur particulier pour ce projet, le projet doit ouvrir le fichier à l’aide d’un éditeur spécifique au projet. Le fichier ne peut pas être délégué au mécanisme de l’IDE pour la sélection d’un éditeur. Par exemple, au lieu d’utiliser un éditeur de bitmap standard, vous pouvez utiliser cette option d’éditeur spécifique au projet pour spécifier un éditeur de bitmap spécifique qui reconnaît les informations dans le fichier qui est unique à votre projet.
 
- Les appels de l’IDE le <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3.OpenItem%2A> méthode lorsqu’il détermine qu’un fichier doit être ouvert par un projet spécifique. Pour plus d’informations, consultez [afficher des fichiers à l’aide de la commande Ouvrir un fichier](../extensibility/internals/displaying-files-by-using-the-open-file-command.md). Utilisez les instructions suivantes pour implémenter le `OpenItem` méthode pour que votre projet à ouvrir un fichier à l’aide d’un éditeur spécifique au projet.
+ L’IDE <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3.OpenItem%2A> appelle la méthode lorsqu’il détermine qu’un fichier doit être ouvert par un projet spécifique. Pour plus d’informations, voir [les fichiers Display en utilisant la commande Open File](../extensibility/internals/displaying-files-by-using-the-open-file-command.md). Utilisez les lignes directrices suivantes pour mettre en œuvre la `OpenItem` méthode permettant à votre projet d’ouvrir un fichier en utilisant un éditeur spécifique au projet.
 
-## <a name="to-implement-the-openitem-method-with-a-project-specific-editor"></a>Pour implémenter la méthode OpenItem avec un éditeur spécifique au projet
+## <a name="to-implement-the-openitem-method-with-a-project-specific-editor"></a>Mettre en œuvre la méthode OpenItem avec un éditeur spécifique au projet
 
-1. Appelez le <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable.FindAndLockDocument%2A> (méthode) (`RDT_EditLock`) pour déterminer si le fichier (objet de données de document) est déjà ouvert.
+1. Appelez <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable.FindAndLockDocument%2A> la`RDT_EditLock`méthode ( ) pour déterminer si le fichier (objet de données documentaires) est déjà ouvert.
 
     > [!NOTE]
-    > Pour plus d’informations sur les données de document et les objets de vue de document, consultez [Document de vue de données et de documents dans les éditeurs personnalisés](../extensibility/document-data-and-document-view-in-custom-editors.md).
+    > Pour plus d’informations sur les données documentaires et les documents, consultez [les données du Document et la vue des documents dans les éditeurs personnalisés](../extensibility/document-data-and-document-view-in-custom-editors.md).
 
-2. Si le fichier est déjà ouvert, resurface le fichier en appelant le <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.IsDocumentOpen%2A> méthode et en spécifiant une valeur de IDO_ActivateIfOpen pour le `grfIDO` paramètre.
+2. Si le fichier est déjà ouvert, refait <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.IsDocumentOpen%2A> surface le fichier en appelant la `grfIDO` méthode et en spécifiant une valeur de IDO_ActivateIfOpen pour le paramètre.
 
-     Si le fichier est ouvert et que le document est détenu par un projet autre que le projet appelant, un avertissement s’affichera à l’utilisateur qui est de l’éditeur en cours d’ouverture d’un autre projet. La fenêtre de fichier est ensuite présentée.
+     Si le fichier est ouvert et que le document appartient à un projet autre que le projet d’appel, un avertissement sera affiché à l’utilisateur que l’éditeur en cours d’ouverture provient d’un autre projet. La fenêtre du fichier est alors refaite surface.
 
-3. Si votre mémoire tampon de texte (objet de données de document) est déjà ouvert et vous souhaitez attacher une autre vue à celui-ci, vous êtes responsable de raccorder à cette vue. L’approche recommandée pour l’instanciation d’une vue (objet de vue de document) à partir du projet, est la suivante :
+3. Si votre tampon texte (objet de données de document) est déjà ouvert et que vous souhaitez y joindre une autre vue, vous êtes responsable de brancher cette vue. L’approche recommandée pour instantanéiser une vue (objet de vue documentaire) du projet est la suivante :
 
-    1. Appelez `QueryService` sur le <xref:Microsoft.VisualStudio.Shell.Interop.SLocalRegistry> service afin d’obtenir un pointeur vers le <xref:Microsoft.VisualStudio.Shell.Interop.ILocalRegistry2> interface.
+    1. Faites `QueryService` appel <xref:Microsoft.VisualStudio.Shell.Interop.SLocalRegistry> au service pour <xref:Microsoft.VisualStudio.Shell.Interop.ILocalRegistry2> obtenir un pointeur à l’interface.
 
-    2. Appelez le <xref:Microsoft.VisualStudio.Shell.Interop.ILocalRegistry2.CreateInstance%2A> méthode pour créer une instance de la classe de vue de document.
+    2. Appelez <xref:Microsoft.VisualStudio.Shell.Interop.ILocalRegistry2.CreateInstance%2A> la méthode pour créer une instance de la classe de vue de document.
 
-4. Appelez le <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.CreateDocumentWindow%2A> méthode, en spécifiant votre objet de vue de document.
+4. Appelez <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.CreateDocumentWindow%2A> la méthode, en spécifiant votre objet de vue de document.
 
-     Cette méthode sites l’objet de vue de document dans une fenêtre de document.
+     Cette méthode permet de visualiser l’objet dans une fenêtre de document.
 
-5. Effectuer les appels appropriés aux soit le <xref:Microsoft.VisualStudio.Shell.Interop.IPersistFileFormat.InitNew%2A> ou <xref:Microsoft.VisualStudio.Shell.Interop.IPersistFileFormat.Load%2A> méthodes.
+5. Effectuez les appels <xref:Microsoft.VisualStudio.Shell.Interop.IPersistFileFormat.InitNew%2A> appropriés <xref:Microsoft.VisualStudio.Shell.Interop.IPersistFileFormat.Load%2A> aux méthodes ou aux méthodes.
 
-     À ce stade, la vue doit être entièrement initialisé et prêt à être ouvert.
+     À ce stade, le point de vue devrait être entièrement parasécé et prêt à être ouvert.
 
-6. Appelez le <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame.Show%2A> méthode pour afficher et ouvrir la vue.
+6. Appelez <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame.Show%2A> la méthode pour montrer et ouvrir la vue.
 
 ## <a name="see-also"></a>Voir aussi
-- [Ouvrir et enregistrer des éléments de projet](../extensibility/internals/opening-and-saving-project-items.md)
-- [Guide pratique pour Éditeurs standards Open](../extensibility/how-to-open-standard-editors.md)
-- [Guide pratique pour Ouvrir des éditeurs pour les documents ouverts](../extensibility/how-to-open-editors-for-open-documents.md)
+- [Ouvrir et enregistrer les éléments du projet](../extensibility/internals/opening-and-saving-project-items.md)
+- [Comment : Ouvrir les éditeurs standard](../extensibility/how-to-open-standard-editors.md)
+- [Comment : Ouvrir les éditeurs pour les documents ouverts](../extensibility/how-to-open-editors-for-open-documents.md)

@@ -1,5 +1,5 @@
 ---
-title: IDebugParsedExpression::EvaluateSync | Microsoft Docs
+title: IDebugParsedExpression::EvaluateSync Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugParsedExpression::EvaluateSync method
 ms.assetid: 0ea04cfa-de87-4b6c-897e-4572c1a28942
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: aac58831224a6bebadd625dad72177f2aec3fc76
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 1f00b209ff5f91d160e89f5f55ad966fbe9e6414
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66311825"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80726005"
 ---
 # <a name="idebugparsedexpressionevaluatesync"></a>IDebugParsedExpression::EvaluateSync
-Cette méthode évalue l’expression analysée et éventuellement convertit le résultat à un autre type de données.
+Cette méthode évalue l’expression analysée et jette le résultat à un autre type de données.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -53,31 +53,31 @@ int EvaluateSync(
 
 ## <a name="parameters"></a>Paramètres
 `dwEvalFlags`\
-[in] Une combinaison de [EVALFLAGS](../../../extensibility/debugger/reference/evalflags.md) constantes qui contrôlent la manière dont l’expression doit être évaluée.
+[dans] Une combinaison de constantes [EVALFLAGS](../../../extensibility/debugger/reference/evalflags.md) qui contrôlent la façon dont l’expression doit être évaluée.
 
 `dwTimeout`\
-[in] Spécifie la durée maximale, en millisecondes, à attendre avant de retourner à partir de cette méthode. Utilisez `INFINITE` pour attendre indéfiniment.
+[dans] Spécifie le temps maximum, en millisecondes, d’attendre avant de revenir de cette méthode. Utilisez-le `INFINITE` pour attendre indéfiniment.
 
 `pSymbolProvider`\
-[in] Le fournisseur de symboles, exprimée sous la forme un [IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md) interface.
+[dans] Le fournisseur de symboles, exprimé comme une interface [IDebugSymbolProvider.](../../../extensibility/debugger/reference/idebugsymbolprovider.md)
 
 `pAddress`\
-[in] L’emplacement d’exécution actuel dans une méthode, exprimée sous la forme un [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) interface.
+[dans] Le lieu d’exécution actuel dans une méthode, exprimée comme une interface [IDebugAddress.](../../../extensibility/debugger/reference/idebugaddress.md)
 
 `pBinder`\
-[in] Le binder, exprimée sous la forme un [IDebugBinder](../../../extensibility/debugger/reference/idebugbinder.md) interface.
+[dans] Le liant, exprimé comme une interface [IDebugBinder.](../../../extensibility/debugger/reference/idebugbinder.md)
 
 `bstrResultType`\
-[in] Le type de résultat doit être casté en. Cet argument peut être une valeur null.
+[dans] Le type de résultat doit être jeté à. Cet argument peut être une valeur nulle.
 
 `ppResult`\
-[out] Retourne le [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) interface qui représente les résultats d’évaluation.
+[out] Retourne l’interface [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) qui représente les résultats de l’évaluation.
 
 ## <a name="return-value"></a>Valeur de retour
- En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.
+ En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
 ## <a name="remarks"></a>Notes
- Le contexte d’évaluation d’expression est fourni par `pAddress`, ce qui rend possible de déterminer la méthode conteneur et utiliser la portée du langage des règles pour déterminer la valeur des symboles dans l’expression.
+ Le contexte d’évaluation `pAddress`de l’expression est donné par , ce qui permet de déterminer la méthode contenante, puis d’utiliser des règles de détermination de la langue pour déterminer la valeur des symboles dans l’expression.
 
 ## <a name="see-also"></a>Voir aussi
 - [IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md)

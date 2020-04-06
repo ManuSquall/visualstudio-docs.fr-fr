@@ -1,5 +1,5 @@
 ---
-title: Instructions de positionnement de commande | Microsoft Docs
+title: Directives de placement de commandement (lignes directrices sur le placement des commandes Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -7,54 +7,54 @@ helpviewer_keywords:
 - small command sets
 - command sets
 ms.assetid: 63b3478e-e08a-420b-a0ec-76767e0cb289
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f4cc3dfa8aaeba01709ae74ca9a1d9d54f3c1743
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 021a5fd9f9931e3041a431d211c8ab49978bbbab
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66342125"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80709570"
 ---
-# <a name="command-placement-guidelines"></a>Instructions de positionnement de commande
-Meilleures pratiques pour le positionnement des commandes dans l’environnement de développement intégré (IDE) Visual Studio varient selon la taille du jeu de commandes. Commandes sont définies et positionnés selon les informations contenues dans *.vsct* fichiers.
+# <a name="command-placement-guidelines"></a>Lignes directrices sur le placement de commandement
+Les meilleures pratiques de positionnement des commandes dans l’environnement de développement intégré Visual Studio (IDE) varient en fonction de la taille de l’ensemble de commandes. Les commandes sont définies et positionnées en fonction des informations contenues dans les fichiers *.vsct.*
 
-## <a name="best-practices-for-all-command-sets"></a>Meilleures pratiques pour tous les jeux de commandes
- Pour chaque ensemble de commandes, suivez ces instructions :
+## <a name="best-practices-for-all-command-sets"></a>Meilleures pratiques pour tous les ensembles de commandes
+ Pour chaque ensemble de commandes, suivez ces lignes directrices :
 
-- Préparer un graphique de la structure de commande à l’avance. Identifier les commandes, les zones de liste déroulante, les groupes de commandes et les menus contextuels qui seront utilisés dans plusieurs emplacements.
+- Préparer une carte de la structure de commande à l’avance. Identifiez les commandes, les boîtes combo, les groupes de commande et les menus de raccourci qui seront utilisés à plus d’un endroit.
 
-- Commandes qui s’affichent dans le même groupe doivent être liés.
+- Les commandes qui apparaissent dans le même groupe doivent être liées.
 
-- Les groupes qui contiennent une simple commande sont acceptables.
+- Les groupes qui ne contiennent qu’une seule commande sont acceptables.
 
-- Les packages ne devraient pas ajouter un grand nombre de commandes à des menus de Visual Studio existants. Au lieu de cela, ils doivent créer des menus ou sous-menus pour héberger les nouvelles commandes.
+- Les forfaits ne doivent pas ajouter beaucoup de commandes aux menus Visual Studio existants. Au lieu de cela, ils devraient créer des menus ou sous-hommes pour accueillir les nouvelles commandes.
 
-- Lorsque vous placez une commande sur un menu existant, le nom de la commande afin que son objectif est clair, et il ne sera pas confondre avec les commandes existantes.
+- Lorsque vous mettez une commande sur un menu existant, nommez la commande de sorte que son but est clair et qu’elle ne soit pas confondue avec les commandes existantes.
 
-## <a name="best-practices-for-small-command-sets"></a>Meilleures pratiques pour les jeux de commandes petit
- Si vous développez un VSPackage doté de quelques commandes, également suivre ces instructions :
+## <a name="best-practices-for-small-command-sets"></a>Meilleures pratiques pour les petits ensembles de commandes
+ Si vous développez un VSPackage qui n’a que quelques commandes, suivez également ces lignes directrices :
 
-- Si possible, utilisez le [Parent](../../extensibility/parent-element.md) élément d’une commande, zone de liste déroulante, groupe ou menu enfant à placer dans le groupe approprié.
+- Dans la mesure du possible, utilisez l’élément [Parent](../../extensibility/parent-element.md) d’une commande, d’une boîte combo, d’un groupe ou d’un menu pour enfants pour le mettre dans le groupe approprié.
 
-- Ces groupes affectés aux menus affichés par le VSPackage.
+- Attribuez ces groupes aux menus affichés par le VSPackage.
 
-- Le parent d’un menu enfant ou d’une commande doit être un [groupe](../../extensibility/group-element.md) élément. Affecter des commandes et les menus enfants aux groupes et ensuite affecter les groupes aux menus parents.
+- Le parent d’un menu pour enfants ou d’une commande doit être un élément [du Groupe.](../../extensibility/group-element.md) Attribuez des commandes et des menus pour enfants à des groupes, puis attribuez les groupes aux menus parentaux.
 
-- Vous pouvez placer une commande dans des groupes supplémentaires en ajoutant un [CommandPlacements](../../extensibility/commandplacements-element.md) section de l’élément après la définition de la commande et en ajoutant à la `CommandPlacements` élément un [CommandPlacement](../../extensibility/commandplacement-element.md) élément pour chaque groupe supplémentaire.
+- Vous pouvez mettre une commande dans d’autres groupes en ajoutant une section [d’élément CommandPlacements](../../extensibility/commandplacements-element.md) après la définition de la commande, puis en ajoutant à l’élément `CommandPlacements` un élément de position de [commandement](../../extensibility/commandplacement-element.md) pour chaque groupe supplémentaire.
 
-## <a name="best-practices-for-large-command-sets"></a>Meilleures pratiques pour les jeux de commandes volumineux
- Si votre VSPackage doit avoir de nombreuses commandes qui seront affiche dans plusieurs contextes, également suivre ces instructions :
+## <a name="best-practices-for-large-command-sets"></a>Meilleures pratiques pour les grands ensembles de commandes
+ Si votre VSPackage aura de nombreuses commandes qui apparaîtront dans plusieurs contextes, suivez également ces lignes directrices :
 
-- Vérifiez les menus, les groupes et les commandes apparenter automatique. Autrement dit, n’affectez pas un `Parent` élément dans la définition de l’élément.
+- Faire des menus, des groupes et des commandes auto-parentales. C’est-à-dire, n’attribuez pas un `Parent` élément dans la définition de l’élément.
 
-- Utilisez `CommandPlacement` entrées d’élément dans la `CommandPlacements` section de l’élément à placer des menus, les groupes et les commandes dans leurs menus parents et les groupes.
+- Utilisez `CommandPlacement` des entrées `CommandPlacements` d’éléments dans la section des éléments pour mettre des menus, des groupes et des commandes dans leurs menus et groupes parentaux.
 
-- Dans la `CommandPlacements` section de l’élément, les entrées qui remplissent un menu donné ou un groupe doivent être adjacentes à l’autre. Cela facilite la lisibilité et rend le `Priority` classements déterminer plus faciles.
+- Dans `CommandPlacements` la section élément, les entrées qui peuplent un menu ou un groupe donné doivent être adjacentes les unes aux autres. Cela facilite la lisibilité et facilite la détables du `Priority` classement.
 
 ## <a name="see-also"></a>Voir aussi
 - [Comment VSPackages ajoute des éléments d’interface utilisateur](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)
-- [Visual Studio fichiers command table (.vsct)](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+- [Fichiers visualister de table de commande de studio (.vsct)](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

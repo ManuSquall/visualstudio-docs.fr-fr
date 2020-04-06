@@ -1,5 +1,5 @@
 ---
-title: BP_CONDITION | Microsoft Docs
+title: BP_CONDITION Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - BP_CONDITION structure
 ms.assetid: 407f87a3-2878-429b-8c65-b68feb36622a
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: e20db594fcc00f641634bfaae8d5342d4b520d7f
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 88ed6b6468c5765c8f987c1f15f3e4e8ade9c8c6
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66337425"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80738106"
 ---
-# <a name="bpcondition"></a>BP_CONDITION
-Décrit les conditions sous lesquelles un point d’arrêt se déclenche.
+# <a name="bp_condition"></a>BP_CONDITION
+Décrit les conditions dans lesquelles un point de rupture s’allume.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -49,31 +49,31 @@ public struct BP_CONDITION {
 
 ## <a name="members"></a>Membres
 `pThread`\
-Le [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) objet qui représente le thread actif pour l’application qui contient le point d’arrêt.
+[L’objet IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) qui représente le fil actif pour l’application qui contient le point d’arrêt.
 
 `styleCondition`\
-Une valeur comprise entre le [BP_COND_STYLE](../../../extensibility/debugger/reference/bp-cond-style.md) énumération décrivant le style de cette condition de point d’arrêt.
+Une valeur de [l’énumération BP_COND_STYLE](../../../extensibility/debugger/reference/bp-cond-style.md) décrivant le style de cette condition de point de rupture.
 
 `bstrContext`\
 L’emplacement du point d’arrêt.
 
 `bstrCondition`\
-La condition de déclenchement du point d’arrêt.
+L’état de tir du point d’arrêt.
 
 `nRadix`\
-Base à utiliser lors de l’évaluation de toutes les informations numériques.
+Radix à utiliser dans l’évaluation de toute information numérique.
 
 ## <a name="remarks"></a>Notes
-Cette structure est un membre de la [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md) et [BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md) structures.
+Cette structure est membre des structures [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md) et [BP_REQUEST_INFO2.](../../../extensibility/debugger/reference/bp-request-info2.md)
 
-Cette structure est également passée en tant que paramètre à la [SetCondition](../../../extensibility/debugger/reference/idebugboundbreakpoint2-setcondition.md) et [SetCondition](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-setcondition.md) méthodes.
+Cette structure est également transmise comme paramètre aux méthodes [SetCondition](../../../extensibility/debugger/reference/idebugboundbreakpoint2-setcondition.md) et [SetCondition.](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-setcondition.md)
 
-## <a name="requirements"></a>Configuration requise
-En-tête : msdbg.h
+## <a name="requirements"></a>Spécifications
+En-tête: msdbg.h
 
-Espace de noms : Microsoft.VisualStudio.Debugger.Interop
+Namespace: Microsoft.VisualStudio.Debugger.Interop
 
-Assembly : Microsoft.VisualStudio.Debugger.Interop.dll
+Assemblage: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>Voir aussi
 - [Structures et unions](../../../extensibility/debugger/reference/structures-and-unions.md)

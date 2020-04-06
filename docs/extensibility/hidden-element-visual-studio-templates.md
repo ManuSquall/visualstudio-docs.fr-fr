@@ -1,5 +1,5 @@
 ---
-title: Masqué, élément (modèles Visual Studio) | Microsoft Docs
+title: Élément caché (Visual Studio Templates) Microsoft Docs
 ms.date: 04/17/2019
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -8,21 +8,21 @@ f1_keywords:
 helpviewer_keywords:
 - Hidden element [Visual Studio project template]
 ms.assetid: f37406b0-52e7-4f2c-aacf-bc8d7a4117b3
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7c00fa2c9aff8664c637219c59cb174f5a16e655
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 9943cefe2b624cede19c05eddd88f155f4aa4c5b
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66341042"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80711109"
 ---
-# <a name="hidden-element-visual-studio-templates"></a>Hidden, élément (modèles Visual Studio)
+# <a name="hidden-element-visual-studio-templates"></a>Élément caché (modèles Visual Studio)
 
-Spécifie si le modèle s’affiche dans le nouveau projet ou **ajouter un nouvel élément** boîtes de dialogue.
+Précise si le modèle apparaît dans le nouveau projet ou ajouter des boîtes de dialogue **Nouvel Élément.**
 
 ```xml
 <VSTemplate>
@@ -59,17 +59,17 @@ Aucun.
 
 Une valeur texte est requise.
 
-Le texte doit être `true` ou `false`, qui indique si le modèle s’affiche dans le **nouveau projet** ou **ajouter un nouvel élément** boîtes de dialogue.
+Le texte doit `true` `false`être soit ou, indiquant si oui ou non le modèle apparaîtra dans le **nouveau projet** ou ajouter de nouvelles boîtes de dialogue **d’élément.**
 
 ## <a name="remarks"></a>Notes
 
 `Hidden` est un élément facultatif.
 
-Si ne spécifié, aucun autre élément enfant de le `TemplateData` élément sont requis.
+Si spécifié, aucun autre `TemplateData` élément enfant de l’élément n’est requis.
 
 ## <a name="example"></a>Exemple
 
-L’exemple suivant illustre les métadonnées d’un C# modèle.
+L’exemple suivant illustre les métadonnées d’un modèle C.
 
 ```xml
 <VSTemplate Type="Project" Version="3.0.0"
@@ -98,5 +98,5 @@ L’exemple suivant illustre les métadonnées d’un C# modèle.
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Informations de référence sur les schémas de modèles](../extensibility/visual-studio-template-schema-reference.md)
+- [Référence de schéma de modèle](../extensibility/visual-studio-template-schema-reference.md)
 - [Créer des modèles de projet et d’élément](../ide/creating-project-and-item-templates.md)

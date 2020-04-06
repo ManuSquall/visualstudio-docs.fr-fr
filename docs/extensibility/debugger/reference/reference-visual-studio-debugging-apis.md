@@ -1,5 +1,5 @@
 ---
-title: Référence (API de débogage de Visual Studio) | Microsoft Docs
+title: Référence (Visual Studio Debugging API) Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -7,33 +7,33 @@ helpviewer_keywords:
 - debugging [Debugging SDK], reference
 - Debugging SDK, reference
 ms.assetid: 9810fc50-43c7-4916-9916-1cf333037b51
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0badd30653dfee4ae7002fb094fc30af40de80b3
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 8a85979c53d61d4b8d5a4f4b26d3ed3a1e19e952
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66336312"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80713639"
 ---
 # <a name="reference-visual-studio-debugging-apis"></a>Informations de référence (API de débogage Visual Studio)
 
-Les références de débogage du SDK Visual Studio décrivent le modèle de base pour l’architecture de l’exécution et les fonctionnalités du débogueur et ses composants. La documentation sur les hypothèses aussi peu que possible sur les composants et les interfaces qu’il décrit, mis à part le comportement, qu'il définit via les interfaces.
+Les références SDK Visual Studio Debugging décrivent le modèle de base de l’architecture et de la fonctionnalité du débbuggeur et de ses composants. La documentation fait aussi peu d’hypothèses que possible sur les composants et les interfaces qu’elle décrit, en dehors du comportement qu’il définit à travers les interfaces.
 
-L’objectif de la section de référence est pour prendre en charge à comme divers un ensemble de langues, les temps d’exécution et les systèmes d’exploitation que possible.
+L’objectif de la section de référence est de fournir un soutien à un ensemble aussi diversifié de langues, de temps d’exécution et de systèmes d’exploitation que possible.
 
 ## <a name="in-this-section"></a>Dans cette section
 
-[Informations de référence sur les API](../../../extensibility/debugger/reference/api-reference-visual-studio-debugging.md)
+[Référence des API](../../../extensibility/debugger/reference/api-reference-visual-studio-debugging.md)
 
-Contient la documentation pour les interfaces, les énumérateurs et les structures de l’API de débogage de Visual Studio.
+Contient de la documentation pour les interfaces, les enumérateurs et les structures de l’API Visual Studio Debugging.
 
 [Glossaire](../../../extensibility/debugger/reference/visual-studio-debugger-glossary.md)
 
-Fournit une liste des conditions liées au débogage et leurs définitions.
+Fournit une liste des termes liés au débogage et leurs définitions.
 
 ## <a name="see-also"></a>Voir aussi
 

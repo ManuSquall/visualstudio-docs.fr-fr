@@ -1,5 +1,5 @@
 ---
-title: IDebugPortSupplier2::GetPort | Microsoft Docs
+title: IDebugPortSupplier2::GetPort - France Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugPortSupplier2::GetPort
 ms.assetid: d55d5055-7386-4037-bf22-4c3e434a99ca
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 3b27c810ec6cb71cacb54e39ad97a95b53480232
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: be3f53c12b5562377cd79267d6e216a1435859a5
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66340145"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80724657"
 ---
 # <a name="idebugportsupplier2getport"></a>IDebugPortSupplier2::GetPort
-Obtient un port à partir d’un fournisseur de port.
+Obtient un port d’un fournisseur de port.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -43,13 +43,13 @@ int GetPort( 
 
 ## <a name="parameters"></a>Paramètres
 `guidPort`\
-[in] Identificateur global unique (GUID) du port.
+[dans] Identificateur unique à l’échelle mondiale (GUID) du port.
 
 `ppPort`\
-[out] Retourne un [IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md) objet qui représente le port.
+[out] Retourne un objet [IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md) qui représente le port.
 
 ## <a name="return-value"></a>Valeur de retour
- En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur. Retourne `E_PORTSUPPLIER_NO_PORT` si aucun port n’existe avec l’identificateur donné.
+ En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur. Retours `E_PORTSUPPLIER_NO_PORT` en l’absence de port avec l’identifiant donné.
 
 ## <a name="see-also"></a>Voir aussi
 - [IDebugPortSupplier2](../../../extensibility/debugger/reference/idebugportsupplier2.md)

@@ -1,5 +1,5 @@
 ---
-title: BP_LOCATION_CODE_FUNC_OFFSET | Microsoft Docs
+title: BP_LOCATION_CODE_FUNC_OFFSET Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,22 +7,22 @@ f1_keywords:
 helpviewer_keywords:
 - BP_LOCATION_CODE_FUNC_OFFSET structure
 ms.assetid: ab38f7ca-fa01-4cf3-a06c-56cbb7207617
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
-ms.openlocfilehash: 25ac9881f44019d818c49091900ce759680a37a5
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 32331a5b628c27dc79d6a2e5919c8d268c96a3aa
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66319080"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80737996"
 ---
-# <a name="bplocationcodefuncoffset"></a>BP_LOCATION_CODE_FUNC_OFFSET
-Décrit l’emplacement de décalage d’un point d’arrêt dans une fonction dans le code.
+# <a name="bp_location_code_func_offset"></a>BP_LOCATION_CODE_FUNC_OFFSET
+Décrit l’emplacement décalé d’un point d’arrêt dans une fonction dans le code.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -35,22 +35,22 @@ typedef struct _BP_LOCATION_CODE_FUNC_OFFSET {
 
 ## <a name="members"></a>Membres
 `bstrContext`\
-Le contexte du point d’arrêt, généralement un nom de méthode ou fonction tels que présentés sur une pile des appels.
+Le contexte du point d’arrêt, généralement une méthode ou un nom de fonction vu sur une pile d’appels.
 
 `pFuncPos`\
-Le [IDebugFunctionPosition2](../../../extensibility/debugger/reference/idebugfunctionposition2.md) objet qui décrit le nom de la fonction et la position relative à partir du début de la fonction.
+[L’objet IDebugFunctionPosition2](../../../extensibility/debugger/reference/idebugfunctionposition2.md) qui décrit le nom de la fonction et la position relative depuis le début de la fonction.
 
 ## <a name="remarks"></a>Notes
-Cette structure est un membre de la [BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md) structure dans le cadre d’une union.
+Cette structure est membre de la structure [BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md) dans le cadre d’un syndicat.
 
 Le `pFuncPos` membre indique où définir le point d’arrêt de la fonction.
 
-## <a name="requirements"></a>Configuration requise
-En-tête : msdbg.h
+## <a name="requirements"></a>Spécifications
+En-tête: msdbg.h
 
-Espace de noms : Microsoft.VisualStudio.Debugger.Interop
+Namespace: Microsoft.VisualStudio.Debugger.Interop
 
-Assembly : Microsoft.VisualStudio.Debugger.Interop.dll
+Assemblage: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>Voir aussi
 - [Structures et unions](../../../extensibility/debugger/reference/structures-and-unions.md)

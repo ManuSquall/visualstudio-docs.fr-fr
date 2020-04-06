@@ -1,5 +1,5 @@
 ---
-title: IDebugPortSupplier3 | Microsoft Docs
+title: IDebugPortSupplier3 - France Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugPortSupplier3 interface
 ms.assetid: e458cd02-2370-4435-8953-17d7a60ce152
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b471e0799409e68b5a843e39975f54f2ce3b5bc5
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: f015c21f71f064f2302660ebc75ef00a245348c3
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66314160"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80724443"
 ---
 # <a name="idebugportsupplier3"></a>IDebugPortSupplier3
-Cette interface permet à un appelant déterminer si un fournisseur de port peut conserver les ports (en les écrivant sur le disque) entre les appels du débogueur, puis d’obtenir une liste de ces ports conservés.
+Cette interface permet à un appelant de déterminer si un fournisseur de ports peut préserver les ports (en les écrivant au disque) entre les invocations du débbuggeur, puis obtenir une liste de ces ports préservés.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -28,31 +28,31 @@ Cette interface permet à un appelant déterminer si un fournisseur de port peut
 IDebugPortSupplier3 : IDebugPortSupplier2
 ```
 
-## <a name="notes-for-implementers"></a>Notes de publication pour les implémenteurs
- Un fournisseur de port personnalisé implémente cette interface pour prendre en charge la persistance ou de l’enregistrement des informations sur le port sur le disque. Cette interface doit être implémentée sur le même objet que le [IDebugPortSupplier2](../../../extensibility/debugger/reference/idebugportsupplier2.md) interface.
+## <a name="notes-for-implementers"></a>Notes pour les implémenteurs
+ Un fournisseur de port personnalisé implémente cette interface pour prendre en charge les informations portuaires persistantes ou d’économie sur disque. Cette interface doit être implémentée sur le même objet que l’interface [IDebugPortSupplier2.](../../../extensibility/debugger/reference/idebugportsupplier2.md)
 
-## <a name="notes-for-callers"></a>Notes de publication pour les appelants
- Appelez [QueryInterface](/cpp/atl/queryinterface) sur la `IDebugPortSupplier2` interface pour obtenir cette interface.
+## <a name="notes-for-callers"></a>Notes pour les appelants
+ Appelez [QueryInterface](/cpp/atl/queryinterface) `IDebugPortSupplier2` sur l’interface pour obtenir cette interface.
 
 ## <a name="methods-in-vtable-order"></a>Méthodes dans l’ordre Vtable
- Outre les méthodes héritées de la [IDebugPortSupplier2](../../../extensibility/debugger/reference/idebugportsupplier2.md) interface, cette interface prend en charge les éléments suivants :
+ En plus des méthodes héritées de l’interface [IDebugPortSupplier2,](../../../extensibility/debugger/reference/idebugportsupplier2.md) cette interface prend en charge ce qui suit :
 
 |Méthode|Description|
 |------------|-----------------|
-|[CanPersistPorts](../../../extensibility/debugger/reference/idebugportsupplier3-canpersistports.md)|Retourne si le fournisseur de port peut conserver les ports (en les écrivant sur le disque) entre les appels du débogueur.|
-|[EnumPersistedPorts](../../../extensibility/debugger/reference/idebugportsupplier3-enumpersistedports.md)|Retourne un objet qui peut être utilisé pour énumérer par tous les ports qui ont été écrites sur le disque par ce fournisseur de port.|
+|[CanPersistPorts](../../../extensibility/debugger/reference/idebugportsupplier3-canpersistports.md)|Retourne si le fournisseur de port peut persister ports (en les écrivant au disque) entre les invocations du débbugger.|
+|[EnumPersistedPorts](../../../extensibility/debugger/reference/idebugportsupplier3-enumpersistedports.md)|Renvoie un objet qui peut être utilisé pour énumérer à travers tous les ports qui ont été écrits sur disque par ce fournisseur de port.|
 
 ## <a name="remarks"></a>Notes
- Si un fournisseur de port peut conserver les ports entre les appels, il doit implémenter cette interface. Ports doivent être chargés lorsque le fournisseur de port est instancié et écrit sur le disque lorsque le fournisseur de port est détruit.
+ Si un fournisseur portuaire peut persister dans les ports à travers les invocations, il doit implémenter cette interface. Les ports doivent être chargés lorsque le fournisseur du port est instantané et écrits sur disque lorsque le fournisseur du port est détruit.
 
- En règle générale, un moteur de débogage n’interagit pas avec un fournisseur de port et sera d’aucune utilité pour cette interface.
+ Un moteur de débogé ne va généralement pas interagir avec un fournisseur de port et n’aura aucune utilité pour cette interface.
 
-## <a name="requirements"></a>Configuration requise
- En-tête : msdbg.h
+## <a name="requirements"></a>Spécifications
+ En-tête: msdbg.h
 
- Espace de noms : Microsoft.VisualStudio.Debugger.Interop
+ Namespace: Microsoft.VisualStudio.Debugger.Interop
 
- Assembly : Microsoft.VisualStudio.Debugger.Interop.dll
+ Assemblage: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>Voir aussi
 - [Interfaces de base](../../../extensibility/debugger/reference/core-interfaces.md)

@@ -1,5 +1,5 @@
 ---
-title: Élément extern | Microsoft Docs
+title: Élément externe (fr) Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -8,24 +8,24 @@ helpviewer_keywords:
 - VSCT XML schema elements, Extern
 - Extern element (VSCT XML schema)
 ms.assetid: db6c3ddd-a1ba-450a-897a-bb568a5377fc
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 34e38618a153aa74bdc2449895272fc9e399c82d
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 2cf6f9db77abaa7034af8d074b9833a4c1560f07
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66342799"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80711487"
 ---
 # <a name="extern-element"></a>Élément extern
-L’élément Extern fait référence à n’importe quel en-tête externe ( *.h*) fichiers à fusionner avec le *.vsct* fichier au moment de la compilation. Les fichiers devant être fusionnées doivent être sur le chemin d’accès Include donnée au compilateur VSCT ou référencé par une [élément Include](../extensibility/include-element.md). Les fichiers peuvent être des autres *.vsct* fichiers ou des fichiers d’en-tête C++.
+L’élément Extern fait référence à tous les fichiers d’en-tête externes (*.h)* à fusionner avec le fichier *.vsct* au moment de la compilation. Les fichiers à fusionner doivent être sur la voie d’inclure donnée au compilateur VSCT ou référencé par un [élément Inclure](../extensibility/include-element.md). Les fichiers peuvent être d’autres fichiers *.vsct* ou fichiers d’en-tête C.
 
- Définitions de fichiers d’en-tête doivent être sous la forme « #define [symbole] [valeur] » la valeur peut être un autre symbole s’il est défini précédemment. Les définitions sont utilisables dans des instructions conditionnelles d’éléments de la commande. N’importe quel symbole ne sont pas utilisé est ignorée.
+ Définitions dans les fichiers d’en-tête doit être du formulaire "#define [Symbole] [Valeur]" La valeur peut être un autre symbole si elle est précédemment définie. Les définitions peuvent être utilisées dans les énoncés conditionnels des éléments de commandement. Tout symbole qui n’est pas réellement utilisé sera jeté.
 
- Élément CommandTable Extern élément
+ Élément externe d’élément de commande
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -40,9 +40,9 @@ L’élément Extern fait référence à n’importe quel en-tête externe ( *.h
 
 |Attribut|Description|
 |---------------|-----------------|
-|href|Obligatoire. Le chemin d’accès du fichier d’en-tête :<br /><br /> href="stdidcmd.h"|
-|Condition|Facultatif. Consultez [attributs conditionnels](../extensibility/vsct-xml-schema-conditional-attributes.md).|
-|language|Facultatif. La langue par défaut de tous les [ \<chaînes >](../extensibility/strings-element.md) éléments dans la table de commande :<br /><br /> language="en-us"|
+|href|Obligatoire. Le chemin vers le fichier d’en-tête:<br /><br /> href "stdidcmd.h"|
+|Condition|facultatif. Voir [Attributs conditionnels](../extensibility/vsct-xml-schema-conditional-attributes.md).|
+|langage|facultatif. Le langage par [ \<](../extensibility/strings-element.md) défaut de toutes les cordes>éléments dans le tableau de commande :<br /><br /> langue "en-nous"|
 
 ### <a name="child-elements"></a>Éléments enfants
 
@@ -54,7 +54,7 @@ L’élément Extern fait référence à n’importe quel en-tête externe ( *.h
 
 |Élément|Description|
 |-------------|-----------------|
-|[Élément CommandTable](../extensibility/commandtable-element.md)|Définit tous les éléments qui représentent des commandes, autrement dit, les éléments de menu, les menus, les barres d’outils et les zones de liste déroulante, qu’un VSPackage fournit à l’IDE.|
+|[Élément CommandTable](../extensibility/commandtable-element.md)|Définit tous les éléments qui représentent les commandes — c’est-à-dire les éléments de menu, les menus, les barres d’outils et les boîtes combo — qu’un VSPackage fournit à l’IDE.|
 
 ## <a name="example"></a>Exemple
 
@@ -69,6 +69,6 @@ L’élément Extern fait référence à n’importe quel en-tête externe ( *.h
 ```
 
 ## <a name="see-also"></a>Voir aussi
-- [Visual Studio fichiers command table (.vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+- [Fichiers visualister de table de commande de studio (.vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
 - [Comment VSPackages ajoute des éléments d’interface utilisateur](../extensibility/internals/how-vspackages-add-user-interface-elements.md)
 - [Commandes, menus et barres d’outils](../extensibility/internals/commands-menus-and-toolbars.md)

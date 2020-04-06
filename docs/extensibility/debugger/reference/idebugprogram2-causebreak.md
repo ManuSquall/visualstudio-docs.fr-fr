@@ -1,5 +1,5 @@
 ---
-title: IDebugProgram2::CauseBreak | Microsoft Docs
+title: IDebugProgram2::CauseBreak Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProgram2::CauseBreak
 ms.assetid: 07d353fc-68ab-4297-a18f-3d3c7a80e121
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: a01b5982b4f747bd70c3a35bc0b7191bb54cd21b
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: e96db32d7ba5a01f89530623c949500a265cdb60
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66311356"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80723095"
 ---
 # <a name="idebugprogram2causebreak"></a>IDebugProgram2::CauseBreak
-Demande que le programme arrête l’exécution de la prochaine heure d’un de ses tentatives de threads d’exécution.
+Demande que le programme cesse l’exécution la prochaine fois que l’un de ses fils tente de s’exécuter.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -38,12 +38,12 @@ int CauseBreak();
 ```
 
 ## <a name="return-value"></a>Valeur de retour
- En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.
+ En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
 ## <a name="remarks"></a>Notes
- Un [IDebugBreakEvent2](../../../extensibility/debugger/reference/idebugbreakevent2.md) événement est envoyé lorsque le programme tente ensuite d’exécuter du code une fois que cette méthode est appelée.
+ Un événement [IDebugBreakEvent2](../../../extensibility/debugger/reference/idebugbreakevent2.md) est envoyé lorsque le programme tente ensuite d’exécuter le code après l’appel de cette méthode.
 
- Cette méthode est asynchrone, car la méthode retourne immédiatement sans nécessairement attendre l’arrêt du programme.
+ Cette méthode est asynchrone en ce que la méthode revient immédiatement sans nécessairement attendre que le programme s’arrête.
 
 ## <a name="see-also"></a>Voir aussi
 - [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)

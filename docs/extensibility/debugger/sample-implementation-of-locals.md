@@ -1,64 +1,64 @@
 ---
-title: Exemple d’implémentation des variables locales | Microsoft Docs
+title: Exemple de mise en œuvre des sections locales ( Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Debugging SDK], local variables
 - expression evaluation, local variables
 ms.assetid: 66a2e00a-f558-4e87-96b8-5ecf5509e04c
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4c65ed0e3def028e710255d08ee1fe40080bfde5
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 6b70e0f9091d40ed6b5fc44934606f42ccd84b21
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66315026"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80713076"
 ---
-# <a name="sample-implementation-of-locals"></a>Exemple d’implémentation des variables locales
+# <a name="sample-implementation-of-locals"></a>Exemple de mise en œuvre des habitants
 > [!IMPORTANT]
-> Dans Visual Studio 2015, ce moyen d’implémenter des évaluateurs d’expression est déconseillée. Pour plus d’informations sur l’implémentation des évaluateurs d’expression CLR, consultez [évaluateurs d’expression CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) et [exemple d’évaluateur d’expression managé](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).
+> Dans Visual Studio 2015, cette façon de mettre en œuvre les évaluateurs d’expression est dépréciée. Pour obtenir de l’information sur la mise en œuvre des évaluateurs de l’expression CLR, consultez [les évaluateurs de l’expression CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) et [l’échantillon d’évaluateur d’expression gérée](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).
 
- Voici une vue d’ensemble de la façon dont Visual Studio obtient les variables locales pour une méthode à partir de l’évaluateur d’expression (EE) :
+ Voici un aperçu de la façon dont Visual Studio obtient les habitants pour une méthode de l’évaluateur d’expression (EE):
 
-1. Visual Studio appelle le moteur de débogage (dé) [GetDebugProperty](../../extensibility/debugger/reference/idebugstackframe2-getdebugproperty.md) pour obtenir un [IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md) objet qui représente toutes les propriétés du frame de pile, y compris les variables locales.
+1. Visual Studio appelle le moteur de déboug (DE) [GetDebugProperty](../../extensibility/debugger/reference/idebugstackframe2-getdebugproperty.md) pour obtenir un [IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md) objet qui représente toutes les propriétés du cadre de pile, y compris les habitants.
 
-2. `IDebugStackFrame2::GetDebugProperty` appels [GetMethodProperty](../../extensibility/debugger/reference/idebugexpressionevaluator-getmethodproperty.md) pour obtenir un objet qui décrit la méthode dans laquelle le point d’arrêt s’est produit. Le DE fournit un fournisseur de symboles ([IDebugSymbolProvider](../../extensibility/debugger/reference/idebugsymbolprovider.md)), une adresse ([IDebugAddress](../../extensibility/debugger/reference/idebugaddress.md)) et un classeur ([IDebugBinder](../../extensibility/debugger/reference/idebugbinder.md)).
+2. `IDebugStackFrame2::GetDebugProperty`appelle [GetMethodProperty](../../extensibility/debugger/reference/idebugexpressionevaluator-getmethodproperty.md) pour obtenir un objet qui décrit la méthode dans laquelle le point d’arrêt s’est produit. Le DE fournit un fournisseur de symboles ([IDebugSymbolProvider](../../extensibility/debugger/reference/idebugsymbolprovider.md)), une adresse ([IDebugAddress](../../extensibility/debugger/reference/idebugaddress.md)), et un liant ([IDebugBinder](../../extensibility/debugger/reference/idebugbinder.md)).
 
-3. `IDebugExpressionEvaluator::GetMethodProperty` appels [GetContainerField](../../extensibility/debugger/reference/idebugsymbolprovider-getcontainerfield.md) avec fourni `IDebugAddress` objet pour lequel obtenir un [IDebugContainerField](../../extensibility/debugger/reference/idebugcontainerfield.md) qui représente la méthode contenant l’adresse spécifiée.
+3. `IDebugExpressionEvaluator::GetMethodProperty`appelle [GetContainerField](../../extensibility/debugger/reference/idebugsymbolprovider-getcontainerfield.md) avec `IDebugAddress` l’objet fourni pour obtenir un [IDebugContainerField](../../extensibility/debugger/reference/idebugcontainerfield.md) qui représente la méthode contenant l’adresse spécifiée.
 
-4. Le `IDebugContainerField` interface est interrogée pour la [IDebugMethodField](../../extensibility/debugger/reference/idebugmethodfield.md) interface. C’est cette interface qui permet d’accéder aux variables locales de la méthode.
+4. L’interface `IDebugContainerField` est demandée pour l’interface [IDebugMethodField.](../../extensibility/debugger/reference/idebugmethodfield.md) C’est cette interface qui donne accès aux habitants de la méthode.
 
-5. `IDebugExpressionEvaluator::GetMethodProperty` instancie une classe (appelée `CFieldProperty` dans l’exemple) qui exécute le `IDebugProperty2` interface pour représenter les variables locales de la méthode. Le `IDebugMethodField` objet est placé dans ce `CFieldProperty` de l’objet avec le `IDebugSymbolProvider`, `IDebugAddress`, et `IDebugBinder` objets.
+5. `IDebugExpressionEvaluator::GetMethodProperty`instantanés une classe `CFieldProperty` (appelée dans l’échantillon) qui exécute l’interface `IDebugProperty2` pour représenter les habitants de la méthode. L’objet `IDebugMethodField` est `CFieldProperty` placé dans `IDebugSymbolProvider`cet `IDebugAddress`objet `IDebugBinder` avec le , , et des objets.
 
-6. Lorsque le `CFieldProperty` objet est initialisé, [GetInfo](../../extensibility/debugger/reference/idebugfield-getinfo.md) est appelée sur le `IDebugMethodField` objet pour lequel obtenir un [FIELD_INFO](../../extensibility/debugger/reference/field-info.md) structure qui contient toutes les informations peut être affichées sur la méthode proprement dite.
+6. Lorsque `CFieldProperty` l’objet est parasécé, `IDebugMethodField` [GetInfo](../../extensibility/debugger/reference/idebugfield-getinfo.md) est appelé sur l’objet pour obtenir une structure [FIELD_INFO](../../extensibility/debugger/reference/field-info.md) qui contient toutes les informations displayables sur la méthode elle-même.
 
-7. `IDebugExpressionEvaluator::GetMethodProperty` Retourne le `CFieldProperty` de l’objet comme un `IDebugProperty2` objet.
+7. `IDebugExpressionEvaluator::GetMethodProperty`retourne `CFieldProperty` l’objet `IDebugProperty2` comme objet.
 
-8. Les appels de Visual Studio [EnumChildren](../../extensibility/debugger/reference/idebugproperty2-enumchildren.md) sur retourné `IDebugProperty2` objet avec le filtre `guidFilterLocalsPlusArgs`, qui retourne un [IEnumDebugPropertyInfo2](../../extensibility/debugger/reference/ienumdebugpropertyinfo2.md) objet contenant des variables locales de la méthode. Cette énumération est renseignée par les appels à [EnumLocals](../../extensibility/debugger/reference/idebugmethodfield-enumlocals.md) et [EnumArguments](../../extensibility/debugger/reference/idebugmethodfield-enumarguments.md).
+8. Visual Studio appelle [EnumChildren](../../extensibility/debugger/reference/idebugproperty2-enumchildren.md) sur l’objet retourné `IDebugProperty2` avec le filtre `guidFilterLocalsPlusArgs`, qui renvoie un objet [IEnumDebugPropertyInfo2](../../extensibility/debugger/reference/ienumdebugpropertyinfo2.md) contenant les habitants de la méthode. Cette énumération est remplie par des appels à [EnumLocals](../../extensibility/debugger/reference/idebugmethodfield-enumlocals.md) et [EnumArguments](../../extensibility/debugger/reference/idebugmethodfield-enumarguments.md).
 
-9. Les appels de Visual Studio [suivant](../../extensibility/debugger/reference/ienumdebugpropertyinfo2-next.md) pour obtenir un [DEBUG_PROPERTY_INFO](../../extensibility/debugger/reference/debug-property-info.md) structure pour chaque local. Cette structure contient un pointeur vers un `IDebugProperty2` interface pour une variable locale.
+9. Visual Studio appelle [Ensuite](../../extensibility/debugger/reference/ienumdebugpropertyinfo2-next.md) pour obtenir une structure [DEBUG_PROPERTY_INFO](../../extensibility/debugger/reference/debug-property-info.md) pour chaque local. Cette structure contient un `IDebugProperty2` pointeur à une interface pour un local.
 
-10. Les appels de Visual Studio [GetPropertyInfo](../../extensibility/debugger/reference/idebugproperty2-getpropertyinfo.md) pour chaque locale obtenir le nom, valeur et type de l’ordinateur local. Ces informations s’affichent dans le **variables locales** fenêtre.
+10. Visual Studio appelle [GetPropertyInfo](../../extensibility/debugger/reference/idebugproperty2-getpropertyinfo.md) pour chaque local pour obtenir le nom, la valeur et le type du local. Ces informations sont **affichées** dans la fenêtre local.
 
-## <a name="in-this-section"></a>Dans cette section
- [Implémentation de GetMethodProperty](../../extensibility/debugger/implementing-getmethodproperty.md) décrit une implémentation de [GetMethodProperty](../../extensibility/debugger/reference/idebugexpressionevaluator-getmethodproperty.md).
+## <a name="in-this-section"></a>Contenu de cette section
+ [Implémentez GetMethodProperty](../../extensibility/debugger/implementing-getmethodproperty.md) Décrit une mise en œuvre de [GetMethodProperty](../../extensibility/debugger/reference/idebugexpressionevaluator-getmethodproperty.md).
 
- [Énumérer des variables locales](../../extensibility/debugger/enumerating-locals.md) décrit comment le moteur de débogage (dé) effectue un appel pour énumérer des variables locales ou les arguments.
+ [Énumérer les habitants](../../extensibility/debugger/enumerating-locals.md) Décrit comment le moteur de débogé (DE) fait un appel pour énumérer les variables locales ou des arguments.
 
- [Obtenir les propriétés locales](../../extensibility/debugger/getting-local-properties.md) décrit comment le D’effectue un appel pour obtenir le nom, le type et la valeur des variables locales d’un ou plusieurs.
+ [Obtenez des propriétés locales](../../extensibility/debugger/getting-local-properties.md) Décrit comment le DE fait un appel pour obtenir le nom, le type et la valeur d’un ou plusieurs habitants.
 
- [Obtenir les valeurs locales](../../extensibility/debugger/getting-local-values.md) présente l’obtention de la valeur de la variable locale, ce qui nécessite les services d’un objet binder fourni par le contexte d’évaluation.
+ [Obtenir des valeurs locales](../../extensibility/debugger/getting-local-values.md) Discute d’obtenir la valeur du local, qui nécessite les services d’un objet de reliure donné par le contexte de l’évaluation.
 
- [Évaluer les variables locales](../../extensibility/debugger/evaluating-locals.md) explique comment les variables locales sont évaluées.
+ [Évaluer les habitants](../../extensibility/debugger/evaluating-locals.md) Explique comment les habitants sont évalués.
 
-## <a name="related-sections"></a>Rubriques connexes
- [Contexte d’évaluation](../../extensibility/debugger/evaluation-context.md) fournit les arguments passés quand le D’appelle l’évaluateur d’expression (EE).
+## <a name="related-sections"></a>Sections connexes
+ [Contexte d’évaluation](../../extensibility/debugger/evaluation-context.md) Fournit les arguments qui sont adoptés lorsque le DE appelle l’évaluateur d’expression (EE).
 
- [Exemple de MyCEE](https://msdn.microsoft.com/library/624a018b-9179-402f-9d48-3aec87b48f4f) illustre une approche d’implémentation à la création d’un évaluateur d’expression pour la langue MyC.
+ [Échantillon MyCEE](https://msdn.microsoft.com/library/624a018b-9179-402f-9d48-3aec87b48f4f) Démontre une approche de mise en œuvre pour créer un évaluateur d’expression pour la langue MyC.
 
 ## <a name="see-also"></a>Voir aussi
-- [Affichage des variables locales](../../extensibility/debugger/displaying-locals.md)
+- [Affichage des habitants](../../extensibility/debugger/displaying-locals.md)

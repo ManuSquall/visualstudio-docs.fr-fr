@@ -1,27 +1,27 @@
 ---
-title: IDebugPortSupplierLocale2::SetLocale | Microsoft Docs
+title: IDebugPortSupplierLocale2::SetLocale ( Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - IDebugPortSupplierLocale2::SetLocale
 ms.assetid: 21e88510-caac-405e-ba45-cb00e19a28bc
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 72e662060067f455275465ce4ade7ed824936313
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: f35e4f2732427045fac982454ce9f7290a6dc970
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66353288"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80724303"
 ---
 # <a name="idebugportsupplierlocale2setlocale"></a>IDebugPortSupplierLocale2::SetLocale
-Définit les paramètres régionaux pour le fournisseur de port.
+Définit le lieu pour le fournisseur de port.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -39,10 +39,10 @@ int SetLocale(
 
 ## <a name="parameters"></a>Paramètres
 `wLangID`\
-Identificateur de paramètres régionaux à définir.
+Identifiant pour le lieu à définir.
 
 ## <a name="return-value"></a>Valeur de retour
- En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.
+ En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
 ## <a name="see-also"></a>Voir aussi
 - [IDebugPortSupplierLocale2](../../../extensibility/debugger/reference/idebugportsupplierlocale2.md)

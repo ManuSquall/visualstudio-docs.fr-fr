@@ -1,5 +1,5 @@
 ---
-title: Propriétés de Document personnalisées dans un Service de langage hérité | Microsoft Docs
+title: Propriétés de documents personnalisées dans un service de langue héritée (fr) Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -7,31 +7,31 @@ helpviewer_keywords:
 - document properties, custom
 - language services [managed package framework], custom document properties
 ms.assetid: cc714a67-b33e-4440-9203-3c90f648bd9c
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8422e35e5241cf1cef30d0ba4a1fe7815323d091
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 1b3db7f4cfa45ea96e3da3056f39c2a5c78a25ed
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66312905"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80708967"
 ---
-# <a name="custom-document-properties-in-a-legacy-language-service"></a>Propriétés de document personnalisées dans un service de langage hérité
-Propriétés de document peuvent être affichées dans le [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] **propriétés** fenêtre. Langages de programmation ne disposent généralement pas de propriétés associées aux fichiers sources individuels. Toutefois, XML prend en charge les propriétés de document qui affectent l’encodage, schéma et la feuille de style.
+# <a name="custom-document-properties-in-a-legacy-language-service"></a>Propriétés de documents personnalisées dans un service linguistique hérité
+Les propriétés de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] documents peuvent être affichées dans la fenêtre **propriétés.** Les langages de programmation n’ont généralement pas de propriétés associées aux fichiers sources individuels. Cependant, XML prend en charge les propriétés de documents qui affectent l’encodage, le schéma et la feuille de style.
 
-## <a name="discussion"></a>Discussion
- Si votre langage a besoin de propriétés de document personnalisées, vous devez dériver une classe à partir de la <xref:Microsoft.VisualStudio.Package.DocumentProperties> classe et implémenter les propriétés nécessaires sur votre classe dérivée.
+## <a name="discussion"></a>Discussions
+ Si votre langue a besoin de propriétés <xref:Microsoft.VisualStudio.Package.DocumentProperties> de documents personnalisées, vous devez tirer une classe de la classe et implémenter les propriétés nécessaires sur votre classe dérivée.
 
- En outre, les propriétés de document sont généralement stockées dans le fichier source lui-même. Cela nécessite le service de langage pour analyser les informations de propriété à partir du fichier source à afficher dans le **propriétés** fenêtre et mettre à jour le fichier source lorsqu’une modification est apportée aux propriétés de document dans le  **Propriétés** fenêtre.
+ En outre, les propriétés de documents sont généralement stockées dans le fichier source lui-même. Cela exige que le service linguistique analyse les informations de propriété à partir du fichier source pour afficher dans la fenêtre **propriétés** et de mettre à jour le fichier source lorsqu’une modification est apportée aux propriétés du document dans la fenêtre **propriétés.**
 
 ## <a name="customize-the-documentproperties-class"></a>Personnaliser la classe DocumentProperties
- Pour prendre en charge les propriétés de document personnalisées, vous devez dériver une classe à partir de la <xref:Microsoft.VisualStudio.Package.DocumentProperties> et ajouter toutes les propriétés que vous avez besoin. Vous devez également fournir des attributs de l’utilisateur pour les organiser dans le **propriétés** affichage de la fenêtre. Si une propriété a uniquement un `get` accesseur, il est indiqué comme étant en lecture seule dans le **propriétés** fenêtre. Si une propriété dispose à la fois `get` et `set` accesseurs de la propriété peut également être mis à jour dans le **propriétés** fenêtre.
+ Pour prendre en charge les propriétés <xref:Microsoft.VisualStudio.Package.DocumentProperties> de documents personnalisées, vous devez tirer une classe de la classe et ajouter autant de propriétés que vous avez besoin. Vous devez également fournir des attributs utilisateur pour les organiser dans l’affichage de fenêtre **propriétés.** Si une propriété `get` n’a qu’un accessoir, elle est indiquée comme lue uniquement dans la fenêtre **Propriétés.** Si une propriété `get` `set` a à la fois et les accesseurs, la propriété peut également être mise à jour dans la fenêtre **propriétés.**
 
 ### <a name="example"></a>Exemple
- Voici un exemple de classe dérivé <xref:Microsoft.VisualStudio.Package.DocumentProperties>, affichant les deux propriétés, `Filename` et `Description`. Lorsqu’une propriété est mis à jour, une méthode personnalisée sur le <xref:Microsoft.VisualStudio.Package.LanguageService> classe est appelée pour écrire la propriété dans le fichier source.
+ Voici un exemple de <xref:Microsoft.VisualStudio.Package.DocumentProperties>classe dérivée `Filename` `Description`de , montrant deux propriétés, et . Lorsqu’une propriété est mise à <xref:Microsoft.VisualStudio.Package.LanguageService> jour, une méthode personnalisée sur la classe est appelée à écrire la propriété au fichier source.
 
 ```csharp
 using System.ComponentModel;
@@ -120,8 +120,8 @@ namespace TestLanguagePackage
 }
 ```
 
-## <a name="instantiate-the-custom-documentproperties-class"></a>Instancier la classe DocumentProperties personnalisée
- Pour instancier votre classe de propriétés de document personnalisées, vous devez substituer la <xref:Microsoft.VisualStudio.Package.LanguageService.CreateDocumentProperties%2A> méthode dans votre version de la <xref:Microsoft.VisualStudio.Package.LanguageService> classe pour retourner une instance unique de votre <xref:Microsoft.VisualStudio.Package.DocumentProperties> classe.
+## <a name="instantiate-the-custom-documentproperties-class"></a>Instantané de la classe DocumentProperties personnalisée
+ Pour instantanéiser votre classe de propriétés de <xref:Microsoft.VisualStudio.Package.LanguageService.CreateDocumentProperties%2A> documents personnalisées, <xref:Microsoft.VisualStudio.Package.LanguageService> vous devez passer outre <xref:Microsoft.VisualStudio.Package.DocumentProperties> à la méthode de votre version de la classe pour retourner une seule instance de votre classe.
 
 ### <a name="example"></a>Exemple
 
@@ -148,19 +148,19 @@ namespace TestLanguagePackage
 ```
 
 ## <a name="properties-in-the-source-file"></a>Propriétés dans le fichier source
- Étant donné que les propriétés de document sont généralement spécifiques au fichier source, les valeurs sont stockées dans le fichier source lui-même. Cela nécessite la prise en charge à partir de l’Analyseur de langage ou le scanneur pour définir ces propriétés. Par exemple, les propriétés d’un document XML sont stockées sur le nœud racine. Les valeurs sur le nœud racine sont modifiés lorsque la **propriétés** les valeurs sont modifiées et le nœud racine est mis à jour dans l’éditeur.
+ Étant donné que les propriétés de documents sont généralement spécifiques au fichier source, les valeurs sont stockées dans le fichier source lui-même. Cela nécessite un soutien de l’analyse de la langue ou du scanner pour définir ces propriétés. Par exemple, les propriétés d’un document XML sont stockées sur le nœud racine. Les valeurs du nœud de racine sont modifiées lorsque les valeurs de la fenêtre **Propriétés** sont modifiées, et le nœud racine est mis à jour dans l’éditeur.
 
 ### <a name="example"></a>Exemple
- Cet exemple stocke les propriétés `Filename` et `Description` dans les deux premières lignes du fichier source, incorporé dans un en-tête de commentaires spéciaux, comme :
+ Cet exemple stocke les propriétés `Filename` et `Description` dans les deux premières lignes du fichier source, intégré dans un en-tête de commentaire spécial, comme:
 
 ```
 //!Filename = file.testext
 //!Description = A sample file
 ```
 
- Cet exemple montre les deux méthodes nécessaires pour obtenir et définir les propriétés de document dans les deux premières lignes du fichier source, ainsi que la manière dont les propriétés sont mises à jour si l’utilisateur modifie le fichier source directement. Le `SetPropertyValue` méthode dans l’exemple présenté ici est le même qu’une appelée à partir du `TestDocumentProperties` classe comme indiqué dans le *personnalisation de la classe DocumentProperties* section.
+ Cet exemple montre les deux méthodes nécessaires pour obtenir et définir les propriétés du document à partir des deux premières lignes du fichier source ainsi que la façon dont les propriétés sont mises à jour si l’utilisateur modifie directement le fichier source. La `SetPropertyValue` méthode dans l’exemple montré ici `TestDocumentProperties` est la même que celle appelée de la classe comme indiqué dans la *section Customizing the DocumentProperties class.*
 
- Cet exemple utilise le moteur d’analyse pour déterminer le type de jetons dans les deux premières lignes. Cet exemple est uniquement à des fins d’illustration. Une approche plus courant à cette situation consiste à analyser le fichier source dans ce que l'on appelle une arborescence d’analyse où chaque nœud de l’arborescence contient des informations sur un jeton donné. Le nœud racine contient les propriétés de document.
+ Cet exemple utilise le scanner pour déterminer le type de jetons dans les deux premières lignes. Cet exemple n’est qu’à des fins illustratives. Une approche plus typique de cette situation est d’analyser le fichier source dans ce qu’on appelle un arbre d’analyse où chaque nœud de l’arbre contient des informations sur un jeton particulier. Le nœud racine contiendrait les propriétés du document.
 
 ```csharp
 using System.ComponentModel;
@@ -398,4 +398,4 @@ namespace TestLanguagePackage
 ```
 
 ## <a name="see-also"></a>Voir aussi
-- [Fonctionnalités de service de langage hérité](../../extensibility/internals/legacy-language-service-features1.md)
+- [Caractéristiques du service linguistique hérité](../../extensibility/internals/legacy-language-service-features1.md)

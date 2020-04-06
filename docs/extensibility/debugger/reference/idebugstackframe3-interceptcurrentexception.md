@@ -1,5 +1,5 @@
 ---
-title: IDebugStackFrame3::InterceptCurrentException | Microsoft Docs
+title: IDebugStackFrame3::InterceptCurrentException (en anglais seulement) Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugStackFrame3::InterceptCurrentException
 ms.assetid: 116c7324-7645-4c15-b484-7a5cdd065ef5
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: ffc50f9884d40083d9696869c0e1b34284e4a794
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 7debd5323e753c6c5fd1476eac3c062fb63393b9
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66352059"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80719483"
 ---
 # <a name="idebugstackframe3interceptcurrentexception"></a>IDebugStackFrame3::InterceptCurrentException
-Appelé par le débogueur sur le frame de pile actuel quand il souhaite intercepter l’exception actuelle.
+Appelé par le débbuggeur sur le cadre de pile actuelle quand il veut intercepter l’exception actuelle.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -43,31 +43,31 @@ int InterceptCurrentException(
 
 ## <a name="parameters"></a>Paramètres
 `dwFlags`\
-[in] Spécifie les différentes actions. Actuellement, seuls les [INTERCEPT_EXCEPTION_ACTION](../../../extensibility/debugger/reference/intercept-exception-action.md) valeur `IEA_INTERCEPT` est pris en charge et doit être spécifié.
+[dans] Spécifie différentes actions. Actuellement, seule la [valeur](../../../extensibility/debugger/reference/intercept-exception-action.md) `IEA_INTERCEPT` INTERCEPT_EXCEPTION_ACTION est prise en charge et doit être spécifiée.
 
 `pqwCookie`\
 [out] Valeur unique identifiant une exception particulière.
 
 ## <a name="return-value"></a>Valeur de retour
- En cas de réussite, retourne S_OK ; Sinon, retourne un code d’erreur.
+ En cas de succès, les retours S_OK; autrement, renvoie un code d’erreur.
 
- L’erreur réapparaît plus courantes sont les suivantes :
+ Ce qui suit sont les retours d’erreur les plus courants.
 
 |Error|Description|
 |-----------|-----------------|
-|`E_EXCEPTION_CANNOT_BE_INTERCEPTED`|Ne peut pas être interceptée l’exception actuelle.|
-|`E_EXCEPTION_CANNOT_UNWIND_ABOVE_CALLBACK`|Le frame d’exécution actuel n’a pas encore été analysé pour un gestionnaire de.|
-|`E_INTERCEPT_CURRENT_EXCEPTION_NOT_SUPPORTED`|Cette méthode n’est pas pris en charge pour ce frame.|
+|`E_EXCEPTION_CANNOT_BE_INTERCEPTED`|L’exception actuelle ne peut pas être interceptée.|
+|`E_EXCEPTION_CANNOT_UNWIND_ABOVE_CALLBACK`|Le cadre d’exécution actuel n’a pas encore été recherché pour un gestionnaire.|
+|`E_INTERCEPT_CURRENT_EXCEPTION_NOT_SUPPORTED`|Cette méthode n’est pas prise en charge pour ce cadre.|
 
 ## <a name="remarks"></a>Notes
- Lorsqu’une exception est levée, le débogueur prend le contrôle à partir du moment de l’exécution à des points clés pendant le processus de gestion des exceptions. Pendant ces moments clés, le débogueur peut demander le frame de pile actuel si le frame souhaite intercepter l’exception. De cette façon, une exception interceptée est essentiellement un gestionnaire d’exceptions d’à la volée pour un frame de pile, même si ce frame de pile n’a pas un gestionnaire d’exceptions (par exemple, il s’agit d’un bloc try/catch dans le code du programme).
+ Lorsqu’une exception est lancée, le débbuggeur prend le contrôle du temps d’exécution à des points clés au cours du processus de manutention d’exception. Pendant ces moments clés, le débbuggeur peut demander le cadre de pile en cours si le cadre veut intercepter l’exception. De cette façon, une exception interceptée est essentiellement un gestionnaire d’exception sur la volée pour un cadre de pile, même si ce cadre de pile n’a pas un gestionnaire d’exception (par exemple, un bloc d’essai/capture dans le code de programme).
 
- Lorsque le débogueur veut savoir si l’exception doit être interceptée, elle appelle cette méthode sur l’objet de frame de pile actuel. Cette méthode est chargée de gérer tous les détails de l’exception. Si le [IDebugStackFrame3](../../../extensibility/debugger/reference/idebugstackframe3.md) interface n’est pas implémentée ou `InterceptStackException` méthode retourne une erreur, puis le débogueur continue le traitement normal de l’exception.
+ Lorsque le débbuggeur veut savoir si l’exception doit être interceptée, il appelle cette méthode sur l’objet de cadre de pile actuel. Cette méthode est responsable de la gestion de tous les détails de l’exception. Si [l’interface IDebugStackFrame3](../../../extensibility/debugger/reference/idebugstackframe3.md) n’est pas implémentée ou si la `InterceptStackException` méthode renvoie une erreur, le débbuggeur continue de traiter l’exception normalement.
 
 > [!NOTE]
-> Exceptions peuvent être interceptées que dans le code managé, autrement dit, lorsque le programme en cours de débogage s’exécute sous le runtime .NET. Bien sûr, les implémenteurs de langage tiers peuvent implémenter `InterceptStackException` dans leurs propres moteurs de débogage s’il le souhaite.
+> Les exceptions ne peuvent être interceptées que dans le code géré, c’est-à-dire lorsque le programme qui est débogé est exécuté en vertu du temps d’exécution .NET. Bien sûr, les exécutants de `InterceptStackException` langage tiers peuvent implémenter dans leurs propres moteurs de débogé s’ils le souhaitent.
 
- Une fois que l’interception est terminée, un [IDebugInterceptExceptionCompleteEvent2](../../../extensibility/debugger/reference/idebuginterceptexceptioncompleteevent2.md) est signalé.
+ Une fois l’interception terminée, un [IDebugInterceptExceptionCompleteEvent2](../../../extensibility/debugger/reference/idebuginterceptexceptioncompleteevent2.md) est signalé.
 
 ## <a name="see-also"></a>Voir aussi
 - [IDebugStackFrame3](../../../extensibility/debugger/reference/idebugstackframe3.md)

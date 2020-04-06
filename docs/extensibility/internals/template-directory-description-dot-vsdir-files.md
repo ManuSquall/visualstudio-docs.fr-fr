@@ -1,5 +1,5 @@
 ---
-title: Description du répertoire de modèles (. Fichiers VSDir) | Microsoft Docs
+title: Description de l’annuaire de modèle (. Vsdir) Fichiers (fr) Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -7,60 +7,60 @@ helpviewer_keywords:
 - VSDIR files
 - template directory description files
 ms.assetid: 9df51800-190e-4662-b685-fdaafcff1400
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: fb20a1fbc8d5edd9783521fa933dbddc74ac2a22
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 16ba609d5b05d565a12b38bd19e9a777851ced5b
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72722826"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80704690"
 ---
 # <a name="template-directory-description-vsdir-files"></a>Fichiers de description de répertoire de modèles (.Vsdir)
-Un fichier de description de répertoire de modèles (. vsdir) est un fichier texte qui permet à l’environnement de développement intégré (IDE) d’afficher des dossiers, des fichiers Assistant. vsz et des fichiers modèles associés à votre projet dans des boîtes de dialogue. Le contenu inclut un enregistrement par fichier ou dossier. Tous les fichiers. vsdir d’un emplacement référencé sont fusionnés, bien qu’un seul fichier. vsdir soit généralement fourni pour décrire plusieurs dossiers, assistants ou fichiers de modèles.
+Un fichier de description d’annuaire de modèle (.vsdir) est un fichier texte qui permet à l’environnement intégré de développement (IDE) d’afficher des dossiers, des fichiers .vsz de magicien, et des fichiers de modèle qui sont associés à votre projet dans des boîtes de dialogue. Le contenu comprend un enregistrement par fichier ou dossier. Tous les fichiers .vsdir dans un emplacement référencé sont fusionnés, bien qu’un seul fichier .vsdir soit généralement fourni pour décrire plusieurs dossiers, assistants ou fichiers de modèle.
 
- Les dossiers (sous-répertoires), les fichiers qui sont référencés dans le fichier. vsdir et le fichier. vsdir proprement dit se trouvent tous dans le même répertoire. Lorsque l’IDE exécute un Assistant ou affiche un dossier ou un fichier dans les boîtes de dialogue **nouveau projet** ou **Ajouter un nouvel élément** , l’IDE examine le répertoire qui contient les fichiers exécutés pour déterminer si un fichier. vsdir est présent. Si un fichier. vsdir est trouvé, l’IDE le lit pour déterminer s’il contient une entrée pour le dossier ou le fichier exécuté ou affiché. Si une entrée est trouvée, l’IDE utilise les informations dans l’exécution de l’Assistant ou l’affichage du contenu.
+ Les dossiers (sous-directeurs), les fichiers référencés dans le fichier .vsdir et le fichier .vsdir lui-même sont tous situés dans le même répertoire. Lorsque l’IDE exécute un assistant ou affiche un dossier ou un fichier dans le **nouveau projet** ou ajoutez des boîtes de dialogue **Nouvel Élément,** l’IDE examine l’annuaire qui contient les fichiers exécutés pour déterminer si un fichier .vsdir est présent. Si un fichier .vsdir est trouvé, l’IDE le lit pour déterminer s’il contient une entrée pour le dossier ou le fichier exécuté ou affiché. Si une entrée est trouvée, l’IDE utilise les informations dans l’exécution de l’assistant ou l’affichage du contenu.
 
- L’exemple de code suivant provient du fichier SourceFiles. vsdir dans la clé de Registre \<EnvSDK > \BscPrj\BscPrj\BscPrjProjectItems\Source_Files :
+ L’exemple de code suivant est tiré du fichier \<SourceFiles.vsdir dans la clé de registre EnvSDK>-BscPrj-BscPrj-BscPrjProjectItems-Source_Files :
 
 ```
 HeaderFile.h|{E59935A1-6156-11d1-87A6-00A0C91E2A46}|#125|130|#126|0|0|0|#127
 SourceFile.cpp|{E59935A1-6156-11d1-87A6-00A0C91E2A46}|#122|110|#123|0|0|0|#124
 ```
 
- Dans ce cas, deux enregistrements se trouvent dans un seul fichier. Une nouvelle ligne (retour chariot) sépare chaque enregistrement. Chaque ligne représente un type de fichier différent. Un caractère de&#124;barre verticale sépare les champs de chaque enregistrement. Un répertoire unique peut contenir plusieurs fichiers. vsdir qui ont des noms de fichiers différents, ou vous pouvez avoir un fichier. vsdir pour chaque type de fichier.
+ Dans ce cas, deux dossiers sont dans un fichier. Une nouvelle ligne (caractère de retour de chariot) sépare chaque enregistrement. Chaque ligne représente un type de fichier différent. Un personnage de pipe (&#124;) sépare les champs de chaque enregistrement. Un répertoire unique peut contenir plusieurs fichiers .vsdir qui ont des noms de fichiers différents, ou vous pouvez avoir un fichier .vsdir pour chaque type de fichier.
 
 ## <a name="fields"></a>Champs
  Le tableau suivant répertorie les champs spécifiés pour chaque enregistrement.
 
 | Champ | Description |
 | - | - |
-| Nom de chemin d’accès relatif (RelPathName) | Nom du dossier, du modèle ou du fichier. vsz, tel que HeaderFile. h ou MyWizard. vsz. Ce champ peut également être un nom utilisé pour représenter un dossier. |
-| {clsidPackage} | GUID du VSPackage qui permet d’accéder aux chaînes localisées, telles que LocalizedName, description, IconResourceId et SuggestedBaseName, dans les ressources de la bibliothèque de liens dynamiques (DLL) de satellite du VSPackage. IconResourceId s’applique si DLLPath n’est pas fourni. **Remarque :**  Ce champ est facultatif, sauf si un ou plusieurs des champs précédents sont un identificateur de ressource. Ce champ est généralement vide pour les fichiers. vsdir qui correspondent à des assistants tiers qui ne localisent pas leur texte. |
-| LocalizedName | Nom localisé du fichier de modèle ou de l’Assistant. Ce champ peut être une chaîne ou un identificateur de ressource au format « #ResID ». Ce nom s’affiche dans la boîte de dialogue **Ajouter un nouvel élément** . **Remarque :**  Si LocalizedName est un identificateur de ressource, {clsidPackage} est requis. |
-| SortPriority | Entier représentant la priorité relative de ce fichier de modèle ou de cet Assistant. Par exemple, si cet élément a la valeur 1, cet élément est affiché en regard des autres éléments avec la valeur 1 et avant tous les éléments dont la valeur de tri est supérieure ou supérieure à 2.<br /><br /> La priorité de tri est relative aux éléments dans le même répertoire. Il peut y avoir plusieurs fichiers. vsdir dans le même répertoire. Dans ce cas, les éléments de tous <em>.</em> les fichiers VSDir dans ce répertoire sont fusionnés. Les éléments de priorité identique sont répertoriés dans l’ordre de lexicographique ne respectant pas la casse du nom affiché. La fonction `_wcsicmp` est utilisée pour trier les éléments.<br /><br /> Les éléments non décrits dans les fichiers. vsdir incluent un numéro de priorité supérieur au numéro de priorité le plus élevé répertorié dans les fichiers. vsdir. Le résultat est que ces éléments se trouvent à la fin de la liste affichée, quel que soit leur nom. |
-| Description | Description localisée du fichier de modèle ou de l’Assistant. Ce champ peut être une chaîne ou un identificateur de ressource au format « #ResID ». Cette chaîne apparaît dans la boîte de dialogue **nouveau projet** ou **Ajouter un nouvel élément** lorsque l’élément est sélectionné. |
-| DLLPath ou {clsidPackage} | Utilisé pour charger une icône pour le fichier de modèle ou l’Assistant. L’icône est chargée en tant que ressource à partir d’un fichier. dll ou. exe à l’aide de IconResourceId. Ce fichier. dll ou. exe peut être identifié soit à l’aide d’un chemin d’accès complet, soit à l’aide d’un GUID d’un VSPackage. La DLL d’implémentation du VSPackage est utilisée pour charger l’icône (et non la DLL satellite). |
-| IconResourceId | Identificateur de ressource dans la dll d’implémentation du fichier DLL ou VSPackage qui détermine l’icône à afficher. |
-| Indicateurs (<xref:Microsoft.VisualStudio.Shell.Interop.__VSDIRFLAGS>) | Utilisé pour désactiver ou activer les champs **nom** et **emplacement** dans la boîte de dialogue **Ajouter un nouvel élément** . La valeur du champ **Flags** est l’équivalent décimal de la combinaison des indicateurs binaires requis.<br /><br /> Lorsqu’un utilisateur sélectionne un élément dans l’onglet **nouveau** , le projet détermine si le champ nom et le champ emplacement sont affichés lorsque la boîte de dialogue **Ajouter un nouvel élément** s’affiche pour la première fois. Un élément, par le biais d’un fichier. vsdir, peut contrôler uniquement si les champs sont activés ou désactivés lorsque l’élément est sélectionné. |
-| SuggestedBaseName | Représente le nom par défaut du fichier, de l’Assistant ou du modèle. Ce champ est une chaîne ou un identificateur de ressource au format « #ResID ». L’IDE utilise cette valeur pour fournir un nom par défaut pour l’élément. Cette valeur de base est ajoutée avec une valeur entière pour rendre le nom unique, par exemple MyFile21. asp.<br /><br /> Dans la liste précédente, description, DLLPath, IconResourceId, Flags et SuggestedBaseNumber s’appliquent uniquement aux fichiers de modèle et d’Assistant. Ces champs ne s’appliquent pas aux dossiers. Ce fait est illustré dans le code du fichier BscPrjProjectItems de la clé de Registre \<EnvSDK > \BscPrj\BscPrj\BscPrjProjectItems. Ce fichier contient trois enregistrements (un pour chaque dossier) avec quatre champs pour chaque enregistrement : RelPathName, {clsidPackage}, LocalizedName et SortPriority.<br /><br /> `General&#124;{E59935A1-6156-11d1-87A6-00A0C91E2A46}&#124;#110&#124;100`<br /><br /> `Source_Files&#124;{E59935A1-6156-11d1-87A6-00A0C91E2A46}&#124;#111&#124;110`<br /><br /> `Env&#124;{E59935A1-6156-11d1-87A6-00A0C91E2A46}&#124;#112&#124;120` |
+| Nom relatif de chemin (RelPathName) | Le nom du dossier, du modèle ou du fichier .vsz, comme HeaderFile.h ou MyWizard.vsz. Ce champ peut également être un nom utilisé pour représenter un dossier. |
+| 'clsidPackage' | Le GUID du VSPackage qui permet l’accès à des chaînes localisées, telles que LocalizedName, Description, IconResourceId et SuggestedBaseName, dans les ressources de la bibliothèque de liaisons dynamiques par satellite (DLL) de vsPackage. IconResourceId s’applique si DLLPath n’est pas fourni. **Note:**  Ce champ est facultatif à moins qu’un ou plusieurs des champs précédents ne soient un identifiant de ressource. Ce champ est généralement vide pour les fichiers .vsdir qui correspondent avec des assistants tiers qui ne localisent pas leur texte. |
+| LocalizedName (en) | Le nom localisé du fichier ou de l’assistant modèle. Ce champ peut être une chaîne ou un identifiant de ressource du formulaire "#ResID". Ce nom est affiché dans la boîte de dialogue **Add New Item.** **Note:**  Si LocalizedName est un identifiant de ressource, il faut alors 'clsidPackage'. |
+| SortPriorité | Un integer représentant la priorité relative de ce fichier de modèle ou de magicien. Par exemple, si cet article a une valeur de 1, alors cet article est affiché à côté d’autres éléments d’une valeur de 1 et en avance sur tous les éléments avec une valeur de type de 2 ou plus.<br /><br /> La priorité de tri est relative aux éléments dans le même répertoire. Il peut y avoir plus d’un fichier .vsdir dans le même répertoire. Dans ce cas, les éléments de tous <em>.</em> vsdir fichiers dans ce répertoire sont fusionnés. Les articles ayant la même priorité sont énumérés dans l’ordre lexicomographique insensible au cas du nom affiché. La `_wcsicmp` fonction est utilisée pour commander les articles.<br /><br /> Les éléments non décrits dans les fichiers .vsdir comprennent un numéro prioritaire supérieur au nombre prioritaire le plus élevé figurant dans les fichiers .vsdir. Le résultat est que ces éléments sont à la fin de la liste affichée quel que soit leur nom. |
+| Description | La description localisée du fichier de modèle ou de l’assistant. Ce champ peut être une chaîne ou un identifiant de ressource du formulaire "#ResID". Cette chaîne apparaît dans la **boîte de** dialogue New Project ou Ajouter de nouveaux **éléments** lorsque l’élément est sélectionné. |
+| DLLPath ou 'clsidPackage' | Utilisé pour charger une icône pour le fichier de modèle ou un assistant. L’icône est chargée comme une ressource à partir d’un fichier .dll ou .exe en utilisant l’IconResourceId. Ce fichier .dll ou .exe peut être identifié soit en utilisant un chemin complet ou en utilisant un GUID d’un VSPackage. La mise en œuvre DLL du VSPackage est utilisée pour charger l’icône (pas le satellite DLL). |
+| IconResourceId | L’identifiant de ressource dans le DLL ou VSPackage implémentation DLL qui détermine l’icône à afficher. |
+| Drapeaux<xref:Microsoft.VisualStudio.Shell.Interop.__VSDIRFLAGS>( ) | Utilisé pour désactiver ou activer les champs **de nom** et **de localisation** sur la boîte de dialogue Add **New Item.** La valeur du champ **Flags** est l’équivalent décimal de la combinaison de drapeaux bit requis.<br /><br /> Lorsqu’un utilisateur sélectionne un élément sur le **nouvel** onglet, le projet détermine si le champ nom et le champ de localisation sont affichés lorsque la boîte de dialogue **Add New Item** est affichée pour la première fois. Un élément, via un fichier .vsdir, ne peut contrôler que si les champs sont activés par rapport à désactivé lorsque l’élément est sélectionné. |
+| BaseName suggéré | Représente le nom par défaut pour le fichier, l’assistant ou le modèle. Ce champ est soit une chaîne ou un identifiant de ressource du formulaire "#ResID". L’IDE utilise cette valeur pour fournir un nom par défaut pour l’article. Cette valeur de base est jointe à une valeur integer pour rendre le nom unique, comme MyFile21.asp.<br /><br /> Dans la liste précédente, Description, DLLPath, IconResourceId, Flags, et SuggestedBaseNumber s’appliquent uniquement aux fichiers de modèle et d’assistant. Ces champs ne s’appliquent pas aux dossiers. Ce fait est illustré dans le code du fichier BscPrjProjectItems dans le \<fichier EnvSDK>-BscPrj-BscPrj-BscPrj-BscPrjProjectItems. Ce fichier contient trois enregistrements (un pour chaque dossier) avec quatre champs pour chaque enregistrement : RelPathName, 'clsidPackage', LocalizedName et SortPriority.<br /><br /> `General&#124;{E59935A1-6156-11d1-87A6-00A0C91E2A46}&#124;#110&#124;100`<br /><br /> `Source_Files&#124;{E59935A1-6156-11d1-87A6-00A0C91E2A46}&#124;#111&#124;110`<br /><br /> `Env&#124;{E59935A1-6156-11d1-87A6-00A0C91E2A46}&#124;#112&#124;120` |
 
- Lorsque vous créez un fichier d’Assistant, vous devez également prendre en compte les problèmes suivants.
+ Lorsque vous créez un fichier d’assistant, vous devez également considérer les questions suivantes.
 
-- Tout champ non requis pour lequel il n’existe pas de données significatives doit contenir une valeur 0 (zéro) comme espace réservé.
+- Tout domaine non requis pour lequel il n’existe pas de données significatives devrait contenir un 0 (zéro) en tant que propriétaire de place.
 
-- Si aucun nom localisé n’est fourni, le nom de chemin d’accès relatif est utilisé dans le fichier de l’Assistant.
+- Si aucun nom localisé n’est fourni, le nom relatif du chemin est utilisé dans le fichier des sorciers.
 
 - DLLPath remplace clsidPackage pour l’emplacement de l’icône.
 
 - Si aucune icône n’est définie, l’IDE remplace l’icône par défaut pour un fichier qui a cette extension.
 
-- Si aucun nom de base suggéré n’est fourni, 'projet’est utilisé.
+- Si aucun nom de base suggéré n’est fourni, 'Projet' est utilisé.
 
-- Si vous supprimez les fichiers. vsz, les dossiers ou les fichiers de modèle, vous devez également supprimer leurs enregistrements associés du fichier. vsdir.
+- Si vous supprimez les fichiers.vsz, dossiers ou fichiers de modèle, vous devez également supprimer leurs enregistrements associés du fichier .vsdir.
 
 ## <a name="see-also"></a>Voir aussi
 - [Assistants](../../extensibility/internals/wizards.md)
