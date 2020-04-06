@@ -1,27 +1,27 @@
 ---
-title: IDebugGenericParamField::GetOwner | Microsoft Docs
+title: IDebugGenericParamField::GetOwner - France Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - IDebugGenericParamField::GetOwner
 ms.assetid: c7f6d166-a69e-40c4-bd0b-1a1fdf9aaacf
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 9752dfa90250bd427cb7a3d18e6e73775f25efb9
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 040b8cf21cda1a0634c1c423516109b1ef214f01
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66330286"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80727873"
 ---
 # <a name="idebuggenericparamfieldgetowner"></a>IDebugGenericParamField::GetOwner
-Récupère le type ou la méthode le propriétaire de ce paramètre générique.
+Récupère le type ou le propriétaire de la méthode de ce paramètre générique.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -39,13 +39,13 @@ int GetOwner(
 
 ## <a name="parameters"></a>Paramètres
 `ppOwner`\
-[out] Retourne le [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) objet propriétaire de ce paramètre générique.
+[out] Retourne l’objet [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) qui possède ce paramètre générique.
 
 ## <a name="return-value"></a>Valeur de retour
-En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.
+En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
 ## <a name="example"></a>Exemple
-L’exemple suivant montre comment implémenter cette méthode pour un **CDebugGenericParamFieldType** objet qui expose le [IDebugGenericParamField](../../../extensibility/debugger/reference/idebuggenericparamfield.md) interface.
+L’exemple suivant montre comment implémenter cette méthode pour un objet **CDebugGenericParamFieldType** qui expose [l’interface IDebugGenericParamField.](../../../extensibility/debugger/reference/idebuggenericparamfield.md)
 
 ```cpp
 HRESULT CDebugGenericParamFieldType::GetOwner(IDebugField** ppOwner)

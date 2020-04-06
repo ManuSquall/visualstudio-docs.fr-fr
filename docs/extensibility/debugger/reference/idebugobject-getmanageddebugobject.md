@@ -1,5 +1,5 @@
 ---
-title: IDebugObject::GetManagedDebugObject | Microsoft Docs
+title: IDebugObject::GetManagedDebugObject ( Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugObject::GetManagedDebugObject method
 ms.assetid: cb89692e-7657-47ff-846d-311943521951
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 98bf0054f02ff85f67f21cd817309bb569dfe678
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 67d0d7a8642c9dd90067b0e197f420d4cc821faa
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66323761"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80726691"
 ---
 # <a name="idebugobjectgetmanageddebugobject"></a>IDebugObject::GetManagedDebugObject
-Crée une copie de l’objet managé dans l’espace d’adressage du moteur de débogage.
+Crée une copie de l’objet géré dans l’espace d’adresse du moteur de débogé.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -41,13 +41,13 @@ int GetManagedDebugObject(
 
 ## <a name="parameters"></a>Paramètres
 `ppObject`\
-[out] Retourne un [IDebugManagedObject](../../../extensibility/debugger/reference/idebugmanagedobject.md) objet représentant l’objet managé qui vient d’être créé.
+[out] Retourne un objet [IDebugManagedObject](../../../extensibility/debugger/reference/idebugmanagedobject.md) représentant l’objet géré nouvellement créé.
 
 ## <a name="return-value"></a>Valeur de retour
- En cas de réussite, retourne S_OK ; Sinon, retourne un code d’erreur. Retourne E_FAIL si ce [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) ne représente pas une instance de classe de valeur managé.
+ En cas de succès, les retours S_OK; autrement, renvoie un code d’erreur. Retourne E_FAIL si cet [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) ne représente pas une instance de classe de valeur gérée.
 
 ## <a name="remarks"></a>Notes
- Cela [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) objet doit représenter une instance de classe de valeur managé, comme un `System.Decimal` instance. En faisant une copie locale, la surcharge de l’appel [Evaluate](../../../extensibility/debugger/reference/idebugfunctionobject-evaluate.md) est éliminé.
+ Cet objet [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) doit représenter un instance `System.Decimal` de classe de valeur gérée, comme une instance. En ayant une copie locale, les frais généraux d’appel [Evaluate](../../../extensibility/debugger/reference/idebugfunctionobject-evaluate.md) sont éliminés.
 
 ## <a name="see-also"></a>Voir aussi
 - [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)

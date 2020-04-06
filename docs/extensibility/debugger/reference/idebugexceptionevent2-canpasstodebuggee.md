@@ -1,5 +1,5 @@
 ---
-title: IDebugExceptionEvent2::CanPassToDebuggee | Microsoft Docs
+title: IDebugExceptionEvent2:CanPassToDebuggee (fr) Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugExceptionEvent2::CanPassToDebuggee
 ms.assetid: ae4bbe0a-fbe1-49be-a310-ea64279a434b
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: c27ac3239fd6621a824f626a141a357241b03b1f
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: ab57f599214cfbd7a1f5fcca15fa104b072d1d48
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66310577"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80729873"
 ---
 # <a name="idebugexceptionevent2canpasstodebuggee"></a>IDebugExceptionEvent2::CanPassToDebuggee
-Détermine si le moteur de débogage (dé) prend en charge la possibilité de transmettre cette exception au programme en cours de débogage lors de l’exécution reprend.
+Détermine si le moteur de débogé (DE) prend en charge la possibilité de passer cette exception au programme qui est débogé lorsque l’exécution reprend.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -38,11 +38,11 @@ int CanPassToDebuggee();
 ```
 
 ## <a name="return-value"></a>Valeur de retour
- Retourne un `S_OK` (l’exception peut être passée au programme) ou `S_FALSE` (l’exception ne peut pas être passée).
+ Les `S_OK` retours (l’exception peut être `S_FALSE` transmis au programme) ou (l’exception ne peut pas être transmise).
 
 ## <a name="remarks"></a>Notes
- Le DE doit avoir une action par défaut pour le passer à l’élément débogué. L’IDE peut recevoir le [IDebugExceptionEvent2](../../../extensibility/debugger/reference/idebugexceptionevent2.md) événements et les appels le [continuer](../../../extensibility/debugger/reference/idebugprocess3-continue.md) méthode sans appeler le `CanPassToDebuggee` (méthode). Par conséquent, l’Allemagne doit avoir une casse par défaut pour le passage de l’exception ou non.
+ Le DE doit avoir une action par défaut pour passer au débbuggee. L’IDE peut recevoir [l’événement IDebugExceptionEvent2](../../../extensibility/debugger/reference/idebugexceptionevent2.md) et `CanPassToDebuggee` appeler la méthode [Continuer](../../../extensibility/debugger/reference/idebugprocess3-continue.md) sans appeler la méthode. Par conséquent, le DE devrait avoir un cas par défaut pour transmettre l’exception ou non.
 
 ## <a name="see-also"></a>Voir aussi
 - [IDebugExceptionEvent2](../../../extensibility/debugger/reference/idebugexceptionevent2.md)
-- [Continue](../../../extensibility/debugger/reference/idebugprocess3-continue.md)
+- [Continuer](../../../extensibility/debugger/reference/idebugprocess3-continue.md)

@@ -1,28 +1,28 @@
 ---
-title: IDebugComPlusSymbolProvider::GetAddressesInModuleFromPosition | Microsoft Docs
+title: IDebugComPlusSymbolProvider::GetAddressesInModuleFromPosition (en anglais seulement) Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - GetAddressesInModuleFromPosition
 - IDebugComPlusSymbolProvider::GetAddressesInModuleFromPosition
 ms.assetid: f901c66e-f53c-4ea0-8004-d8fcbf46f916
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 3000b93a9ce7f3ba56325943d48c5ac686ddde38
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: f7295d49faa8799731a13f500b31d436df6dc66a
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66338713"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80734031"
 ---
 # <a name="idebugcomplussymbolprovidergetaddressesinmodulefromposition"></a>IDebugComPlusSymbolProvider::GetAddressesInModuleFromPosition
-Mappe une position de document dans le module spécifié dans un tableau d’adresses de débogage.
+Cartographiez une position de document dans le module spécifié à un tableau d’adresses de débogé.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -50,28 +50,28 @@ int GetAddressesInModuleFromPosition(
 
 ## <a name="parameters"></a>Paramètres
 `ulAppDomainID`\
-[in] Identificateur du domaine d’application.
+[dans] Identifiant de domaine d’application.
 
 `guidModule`\
-[in] Identificateur unique du module.
+[dans] Identifiant unique du module.
 
 `pDocPos`\
-[in] La position du document.
+[dans] La position du document.
 
 `fStatmentOnly`\
-[in] Si `TRUE`, limite les adresses de débogage à une seule instruction.
+[dans] Si `TRUE`, limite les adresses de débogé à une seule instruction.
 
 `ppEnumBegAddresses`\
-[out] Retourne un énumérateur pour les adresses départ de débogage qui sont associés à cette instruction ou de la ligne.
+[out] Retourne un enumérateur pour les adresses de débaçon de départ qui sont associées à cette déclaration ou ligne.
 
 `ppEnumEndAddresses`\
-[out] Retourne un énumérateur pour les adresses de débogage fin qui sont associés à cette instruction ou de la ligne.
+[out] Retourne un enumérateur pour les adresses de débaillement de fin qui sont associées à cette déclaration ou ligne.
 
 ## <a name="return-value"></a>Valeur de retour
- En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.
+ En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
 ## <a name="example"></a>Exemple
- L’exemple suivant montre comment implémenter cette méthode pour un **CDebugSymbolProvider** objet qui expose le [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md) interface.
+ L’exemple suivant montre comment implémenter cette méthode pour un objet **CDebugSymbolProvider** qui expose [l’interface IDebugComPlusSymbolProvider.](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)
 
 ```cpp
 HRESULT CDebugSymbolProvider::GetAddressesInModuleFromPosition(

@@ -1,5 +1,5 @@
 ---
-title: CONNECTION_PROTOCOL | Microsoft Docs
+title: CONNECTION_PROTOCOL Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - CONNECTION_PROTOCOL enumeration
 ms.assetid: 99df5865-8b36-486d-9f4c-d10ae2bc688a
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 3f52ef7e723b583d593f6f0d4fc18f5f6909b131
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 29ac287462149a20f52a1affdeab7fa6b8333711
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66346525"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80737652"
 ---
-# <a name="connectionprotocol"></a>CONNECTION_PROTOCOL
-Indique le protocole utilisé pour communiquer entre un serveur de débogage et le package de débogage (dé).
+# <a name="connection_protocol"></a>CONNECTION_PROTOCOL
+Indique le protocole utilisé pour communiquer entre un serveur de débogé et le paquet de débog (DE).
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -53,35 +53,35 @@ public enum CONNECTION_PROTOCOL {
 
 ## <a name="fields"></a>Champs
 `CONNECTION_NONE`\
-Aucune connexion n’a été effectuée sur un serveur.
+Aucune connexion n’a été faite à un serveur.
 
 `CONNECTION_UNKNOWN`\
-Une connexion a été établie, mais il s’agit d’un type inconnu.
+Une connexion a été faite, mais elle est d’un type inconnu.
 
 `CONNECTION_LOCAL`\
-Est de la connexion à un serveur local.
+La connexion est à un serveur local.
 
 `CONNECTION_PIPE`\
-La connexion est via un canal nommé.
+La connexion se fait par un tuyau nommé.
 
 `CONNECTION_TCPIP`\
-Connexion utilise le protocole TCP/IP.
+Connexion utilise TCP/ IP.
 
 `CONNECTION_HTTP`\
-Connexion utilise le protocole HTTP (via un serveur Web).
+Connexion utilise HTTP (via un serveur Web).
 
 `CONNECTION_OTHER`\
-Un autre type de connexion a été établie (cette valeur n’est pas actuellement utilisée).
+Un autre type de connexion a été établi (cette valeur n’est pas actuellement utilisée).
 
 ## <a name="remarks"></a>Notes
-Ces valeurs sont retournées à partir de la [GetConnectionProtocol](../../../extensibility/debugger/reference/idebugcoreserver3-getconnectionprotocol.md) (méthode).
+Ces valeurs sont revenues de la méthode [GetConnectionProtocol.](../../../extensibility/debugger/reference/idebugcoreserver3-getconnectionprotocol.md)
 
-## <a name="requirements"></a>Configuration requise
-En-tête : msdbg.h
+## <a name="requirements"></a>Spécifications
+En-tête: msdbg.h
 
-Espace de noms : Microsoft.VisualStudio.Debugger.Interop
+Namespace: Microsoft.VisualStudio.Debugger.Interop
 
-Assembly : Microsoft.VisualStudio.Debugger.Interop.dll
+Assemblage: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>Voir aussi
 - [Énumérations](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)

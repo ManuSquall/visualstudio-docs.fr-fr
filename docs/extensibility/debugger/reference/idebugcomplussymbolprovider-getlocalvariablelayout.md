@@ -1,28 +1,28 @@
 ---
-title: IDebugComPlusSymbolProvider::GetLocalVariablelayout | Microsoft Docs
+title: IDebugComPlusSymbolProvider::GetLocalVariablelayout (fr) Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - GetLocalVariablelayout
 - IDebugComPlusSymbolProvider::GetLocalVariablelayout
 ms.assetid: b7328d85-e5e9-4d9f-bcd1-e7711fd33878
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: c92bdab6c3bbe7196e5f1df68758bcce4a9f2063
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: f805249a3736b1191ae3218f8fcd41ffae2c686a
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66336761"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80733851"
 ---
 # <a name="idebugcomplussymbolprovidergetlocalvariablelayout"></a>IDebugComPlusSymbolProvider::GetLocalVariablelayout
-Récupère la structure des variables locales pour un ensemble de méthodes.
+Récupère la disposition des variables locales pour un ensemble de méthodes.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -48,25 +48,25 @@ int GetLocalVariablelayout(
 
 ## <a name="parameters"></a>Paramètres
 `ulAppDomainID`\
-[in] Identificateur du domaine d’application.
+[dans] Identification du domaine de l’application.
 
 `guidModule`\
-[in] Identificateur unique du module.
+[dans] Identifiant unique du module.
 
 `cMethods`\
-[in] Numéro de méthode des jetons dans le `rgMethodTokens` tableau.
+[dans] Nombre de jetons de `rgMethodTokens` méthode dans le tableau.
 
 `rgMethodTokens`\
-[in] Tableau de jetons de méthode.
+[dans] Array de jetons de méthode.
 
 `pStreamLayout`\
-[out] Un flux de texte qui contient la disposition de la variable.
+[out] Un flux de texte qui contient la disposition variable.
 
 ## <a name="return-value"></a>Valeur de retour
-En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.
+En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
 ## <a name="example"></a>Exemple
-L’exemple suivant montre comment implémenter cette méthode pour un **CDebugSymbolProvider** objet qui expose le [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md) interface.
+L’exemple suivant montre comment implémenter cette méthode pour un objet **CDebugSymbolProvider** qui expose [l’interface IDebugComPlusSymbolProvider.](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)
 
 ```cpp
 HRESULT CDebugSymbolProvider::GetLocalVariablelayout(

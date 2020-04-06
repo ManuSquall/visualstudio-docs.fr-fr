@@ -1,30 +1,30 @@
 ---
-title: Champ TASK_STATE_WAITING_ON_CHILDREN | Microsoft Docs
+title: TASK_STATE_WAITING_ON_CHILDREN Field ( Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - TASK_STATE_WAITING_ON_CHILDREN field, Task class [.NET Framework debug engines]
 ms.assetid: 6f26b098-84ad-4f6e-ba27-6136581ba630
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ae7f7930161b07dc8aeb4f3ff8bfb506e9f6e737
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 27b9963db54d939b3d509da451478c20dbe0e7d0
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66345394"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80712585"
 ---
-# <a name="taskstatewaitingonchildren-field"></a>Champ TASK_STATE_WAITING_ON_CHILDREN
-La tâche a terminé l’exécution de son délégué et attend implicitement pour effectuer des tâches enfants attachées.
+# <a name="task_state_waiting_on_children-field"></a>champ TASK_STATE_WAITING_ON_CHILDREN
+La tâche a fini d’exécuter son délégué et attend implicitement que les tâches des enfants attachés se terminent.
 
- **Espace de noms :** <xref:System.Threading.Tasks?displayProperty=fullName>
+ **Espace nom:**<xref:System.Threading.Tasks?displayProperty=fullName>
 
- **Assembly :** mscorlib (dans *mscorlib.dll*)
+ **Assemblée:** mscorlib (en *mscorlib.dll*)
 
- Étant donné que vous ne pouvez pas accéder à ce membre interne du .NET Framework, la syntaxe suivante est fournie en commun Intermediate Language (CIL).
+ Parce que vous ne pouvez pas accéder à ce membre interne à partir du cadre .NET, la syntaxe suivante est fournie dans common Intermediate Language (CIL).
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -33,7 +33,7 @@ La tâche a terminé l’exécution de son délégué et attend implicitement po
 ```
 
 ## <a name="remarks"></a>Notes
- Si le [m_stateFlags](../../extensibility/debugger/m-stateflags-field.md) champ contient cette valeur, le <xref:System.Threading.Tasks.Task.Status%2A> retourne de la propriété <xref:System.Threading.Tasks.TaskStatus?displayProperty=fullName>.
+ Si le champ [m_stateFlags](../../extensibility/debugger/m-stateflags-field.md) contient cette <xref:System.Threading.Tasks.Task.Status%2A> valeur, <xref:System.Threading.Tasks.TaskStatus?displayProperty=fullName>la propriété revient .
 
 ## <a name="see-also"></a>Voir aussi
 - [Classe Task](../../extensibility/debugger/task-class-internal-members.md)
