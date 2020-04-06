@@ -1,5 +1,5 @@
 ---
-title: Attribut de buildOnLoad et d’élément (modèles Visual Studio)
+title: Attribut et élément BuildOnLoad (Visual Studio Templates)
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -9,23 +9,23 @@ helpviewer_keywords:
 - BuildOnLoad attribute [Visual Studio Templates]
 - BuildOnLoad element [Visual Studio Templates]
 ms.assetid: 950f5fc1-d041-4090-9a5c-60844768a4cc
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f32056aae3c860aee250248c606bbda4dbf9506c
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 3be4016822ccaaae2f1352f91ecc10f09273a889
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66321269"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80739953"
 ---
-# <a name="buildonload-attribute-and-element"></a>Élément et attribut de buildOnLoad
+# <a name="buildonload-attribute-and-element"></a>Attribut et élément BuildOnLoad
 
-Spécifie s’il faut générer le projet immédiatement après sa création. **BuildOnLoad** est un attribut et un élément.
+Précise s’il faut construire le projet immédiatement après sa création. **BuildOnLoad** est à la fois un attribut et un élément.
 
-Hiérarchie de l’élément :
+Hiérarchie des éléments :
 
 ```xml
 <VSTemplate>
@@ -47,15 +47,15 @@ Hiérarchie de l’élément :
 
 ## <a name="text-value"></a>Valeur texte
 
-Une valeur de texte est requise pour le **BuildOnLoad** élément. Le texte doit être `true` ou `false`, indiquant s’il faut générer le projet immédiatement après sa création.
+Une valeur de texte est requise pour l’élément **BuildOnLoad.** Le texte doit `true` `false`être soit ou , indiquant s’il faut construire le projet immédiatement après sa création.
 
 ## <a name="remarks"></a>Notes
 
-**BuildOnLoad** est un attribut facultatif. La valeur par défaut est `false`.
+**BuildOnLoad** est un attribut optionnel. La valeur par défaut est `false`.
 
 ## <a name="example"></a>Exemple
 
-L’exemple suivant illustre les métadonnées d’un C# modèle lorsque **BuildOnLoad** est utilisé en tant qu’élément :
+L’exemple suivant illustre les métadonnées d’un modèle Cmd lorsque **BuildOnLoad** est utilisé comme élément :
 
 ```xml
 <VSTemplate Type="Project" Version="3.0.0"
@@ -84,7 +84,7 @@ L’exemple suivant illustre les métadonnées d’un C# modèle lorsque **Build
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Élément buildProjectOnload](buildprojectonload-element-visual-studio-templates.md)
-- [TemplateContent, élément](../extensibility/templatecontent-element-visual-studio-templates.md)
-- [Création de modèles de projets et d’éléments](../ide/creating-project-and-item-templates.md)
-- [Informations de référence sur les schémas de modèles Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
+- [Élément BuildProjectOnload](buildprojectonload-element-visual-studio-templates.md)
+- [Élément TemplateContent](../extensibility/templatecontent-element-visual-studio-templates.md)
+- [Création de modèles de projets et d’objets](../ide/creating-project-and-item-templates.md)
+- [Référence de schéma de modèle de studio visuel](../extensibility/visual-studio-template-schema-reference.md)

@@ -1,5 +1,5 @@
 ---
-title: IDebugCoreServer3::CreateInstanceInServer | Microsoft Docs
+title: IDebugCoreServer3::CreateInstanceInServer (fr) Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugCoreServer3::CreateInstanceInServer
 ms.assetid: 76f36bae-f6ab-413c-a8a9-8808bfeba05b
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 7e74ea66f5b8ecd04acfbc2617f91bcaf0f7ecbd
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 2346bb76fe604265a309a51f48b734fc6f2ab8d0
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66332414"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80733018"
 ---
 # <a name="idebugcoreserver3createinstanceinserver"></a>IDebugCoreServer3::CreateInstanceInServer
-Crée une instance d’un moteur de débogage sur le serveur.
+Crée une instance d’un moteur de débogé sur le serveur.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -49,22 +49,22 @@ int CreateInstanceInServer(
 
 ## <a name="parameters"></a>Paramètres
 `szDll`\
-[in] Chemin d’accès à la dll qui implémente le CLSID spécifié dans le `clsidObject` paramètre. S’il s’agit `NULL`, du puis COM `CoCreateInstance` fonction est appelée.
+[dans] Chemin vers la dll qui implémente `clsidObject` le CLSID spécifié dans le paramètre. Si c’est `NULL`, `CoCreateInstance` alors la fonction de COM est appelée.
 
 `wLangId`\
-[in] Paramètres régionaux du moteur de débogage. Cela peut être 0 si la [SetLocale](../../../extensibility/debugger/reference/idebugengine2-setlocale.md) méthode ne doit pas être appelée.
+[dans] Local du moteur de débogé. Cela peut être 0 si la méthode [SetLocale](../../../extensibility/debugger/reference/idebugengine2-setlocale.md) ne doit pas être appelée.
 
 `clsidObject`\
-[in] CLSID du moteur de débogage à créer.
+[dans] CLSID du moteur de débogé à créer.
 
 `riid`\
-[in] ID de l’interface spécifique pour récupérer à partir de l’objet de classe.
+[dans] Interface ID de l’interface spécifique pour récupérer de l’objet de classe.
 
 `ppvObject`\
-[out] `IUnknown` interface à partir de l’objet instancié. Effectuez un cast ou marshaler cet objet vers l’interface souhaitée.
+[out] `IUnknown` interface de l’objet instantané. Lancer ou rassembler cet objet à l’interface désirée.
 
 ## <a name="return-value"></a>Valeur de retour
- En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.
+ En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
 ## <a name="see-also"></a>Voir aussi
 - [IDebugCoreServer3](../../../extensibility/debugger/reference/idebugcoreserver3.md)

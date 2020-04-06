@@ -1,5 +1,5 @@
 ---
-title: IDebugBinder3::GetExceptionObjectAndType | Microsoft Docs
+title: IDebugBinder3:GetExceptionObjectAndType (fr) Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugBinder3::GetExceptionObjectAndType method
 ms.assetid: 2a313fe1-4ee1-4f01-af86-382d6c661a8f
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 29aa44bdd67234dec4b560ad41be8c677e4356e3
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: e25a0f7b4e1713a072359f1efdd962f36c50b774
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66327078"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80735751"
 ---
 # <a name="idebugbinder3getexceptionobjectandtype"></a>IDebugBinder3::GetExceptionObjectAndType
 Cette méthode récupère l’exception associée à un objet, le cas échéant.
@@ -43,16 +43,16 @@ int GetExceptionObjectAndType(
 
 ## <a name="parameters"></a>Paramètres
 `ppException`\
-[out] Retourne l’objet qui représente l’exception.
+[out] Retourne l’objet représentant l’exception.
 
 `ppField`\
-[out] Retourne l’objet qui représente un champ spécifique qui peut avoir provoqué l’exception (Cela peut être une valeur null).
+[out] Renvoie l’objet représentant un champ spécifique qui peut avoir causé l’exception (il peut s’agir d’une valeur nulle).
 
 ## <a name="return-value"></a>Valeur de retour
- En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.
+ En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
 > [!NOTE]
-> Pour vérifier s’il existe une exception, vérifiez la valeur retournée par `ppException`: Si c’est une valeur null, aucune exception n’est associée à cet objet.
+> Pour vérifier s’il y a une `ppException`exception, vérifiez la valeur retournée par : s’il s’agit d’une valeur nulle, alors aucune exception n’est associée à cet objet.
 
 ## <a name="see-also"></a>Voir aussi
 - [IDebugBinder3](../../../extensibility/debugger/reference/idebugbinder3.md)

@@ -1,28 +1,28 @@
 ---
-title: Méthode NotifyDebuggerOfWaitCompletion | Microsoft Docs
+title: NotifyDebuggerOfWaitCompletion Méthode (fr) Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - NotifyDebuggerOfWaitCompletion method, Task class [.NET Framework debug engines]
 ms.assetid: 841c5908-4f3f-400b-a7b0-96a95f362817
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9a3280a24ad7f9d4045c9a1bff6ca2b44c724325
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 8963e29a067754c0e8c89b9db336b239ac682ce1
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66350634"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80738336"
 ---
-# <a name="notifydebuggerofwaitcompletion-method"></a>Méthode NotifyDebuggerOfWaitCompletion
-Méthode d’espace réservé utilisée comme cible de point d’arrêt par le débogueur. Cette méthode ne doit pas être inline ou optimisé.
+# <a name="notifydebuggerofwaitcompletion-method"></a>NotifyDebuggerOfWaitCompletion méthode
+Méthode de la placeholder utilisée comme cible de point d’arrêt par le débruceur. Cette méthode ne doit pas être inlinée ou optimisée.
 
- **Espace de noms :** <xref:System.Threading.Tasks?displayProperty=fullName>
+ **Espace nom:**<xref:System.Threading.Tasks?displayProperty=fullName>
 
- **Assembly :** mscorlib (dans *mscorlib.dll*)
+ **Assemblée:** mscorlib (en *mscorlib.dll*)
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -31,9 +31,9 @@ private void NotifyDebuggerOfWaitCompletion()
 ```
 
 ## <a name="remarks"></a>Notes
- Toutes les opérations de jointure avec une tâche doivent appeler cette méthode si leur bit de notification de débogueur est défini.
+ Tous se joignent aux opérations avec une tâche devrait appeler cette méthode si leur bit de notification de débbugger est défini.
 
-## <a name="requirements"></a>Configuration requise
+## <a name="requirements"></a>Spécifications
 
 ## <a name="see-also"></a>Voir aussi
 - [Classe Task](../../extensibility/debugger/task-class-internal-members.md)

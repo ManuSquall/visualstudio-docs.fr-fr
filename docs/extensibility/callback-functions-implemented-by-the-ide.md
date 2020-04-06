@@ -1,48 +1,48 @@
 ---
-title: Les fonctions de rappel implémentées par l’IDE | Microsoft Docs
+title: Fonctions de rappel mises en œuvre par l’IDE Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - source control plug-ins, callback functions
 - callback functions, source control plug-ins
 ms.assetid: 4a8833f0-6ac0-4ea7-9400-8275aa991468
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: dff6ee0a81472ea556aaca478a2ff33db93fe871
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 666486f5b800707a4467a129abeed7a13306f10a
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66321175"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80739893"
 ---
-# <a name="callback-functions-implemented-by-the-ide"></a>Fonctions de rappel implémentées par l’IDE
-Pour faciliter l’intégration avec l’environnement de développement intégré (IDE) comme transparente que possible et pour fournir une expérience unifiée de l’utilisateur final, le plug-in de contrôle de code source peut utiliser les fonctions de rappel qui sont implémentées par l’IDE. Le plug-in peut appeler ces fonctions aux moments opportuns pendant une opération de contrôle de code source pour passer des informations à l’IDE ; l’IDE peut ensuite afficher ces informations comme éléments incorporés dans son interface utilisateur native. L’utilisateur a une expérience moins fragmentée dans ce scénario que si le plug-in employées sa propre interface utilisateur.
+# <a name="callback-functions-implemented-by-the-ide"></a>Fonctions de rappel mises en œuvre par l’IDE
+Pour rendre l’intégration à l’environnement de développement intégré (IDE) aussi transparente que possible et pour fournir une expérience unifiée d’utilisateur final, le plug-in de contrôle source peut utiliser des fonctions de rappel qui sont implémentées par l’IDE. Le plug-in peut appeler ces fonctions à des moments appropriés au cours d’une opération de contrôle source pour transmettre des informations à l’IDE; l’IDE peut alors afficher ces informations en tant qu’éléments intégrés dans son interface utilisateur indigène. L’utilisateur a une expérience moins fragmentée dans ce scénario que si le plug-in a utilisé sa propre interface utilisateur.
 
- Le fichier d’en-tête requis est *scc.h*. L’emplacement par défaut est *\Program Files\VSIP 8.0\EnvSDK\common\inc\\* . Il est également dans le dossier VSIP qui contient les exemples de plug-in de contrôle de source à *\Program Files\VSIP 8.0\MSSCCI\\* .
+ Le fichier d’en-tête requis est *scc.h*. L’emplacement par défaut est *'Program Files’VSIP 8.0'EnvSDK’common’inc\\*. Il est également dans le dossier VSIP qui a l’échantillon de contrôle source plug-in à *'Program Files 'VSIP 8.0 'MSSCCI\\*.
 
-## <a name="in-this-section"></a>Dans cette section
-- [LPTEXTOUTPROC](../extensibility/lptextoutproc.md) décrit la fonction de rappel qui est utilisée par [SccOpenProject](../extensibility/sccopenproject-function.md) pour afficher les messages de contrôle de source de plug-in via l’IDE.
+## <a name="in-this-section"></a>Contenu de cette section
+- [LPTEXTOUTPROC](../extensibility/lptextoutproc.md) Décrit la fonction de rappel utilisée par [SccOpenProject](../extensibility/sccopenproject-function.md) pour afficher les messages du plug-in de contrôle source par l’intermédiaire de l’IDE.
 
-- [POPLISTFUNC](../extensibility/poplistfunc.md) décrit la fonction de rappel qui est utilisée par [SccPopulateList](../extensibility/sccpopulatelist-function.md) lorsque l’IDE n’a pas d’accès complet aux informations qui est disponibles uniquement pour le plug-in, telles qu’une liste complète de contrôle de code source fichiers sous contrôle de version.
+- [POPLISTFUNC (EN)](../extensibility/poplistfunc.md) Décrit la fonction de rappel qui est utilisée par [SccPopulateList](../extensibility/sccpopulatelist-function.md) lorsque l’IDE n’a pas un accès complet à des informations qui ne sont disponibles que pour le plug-in de contrôle source, comme une liste complète des fichiers sous contrôle de version.
 
-- [QUERYCHANGESFUNC](../extensibility/querychangesfunc.md) décrit la fonction de rappel qui est utilisée par le [SccQueryChanges](../extensibility/sccquerychanges-function.md) opération.
+- [REQUÊTE CHANGEFUNC](../extensibility/querychangesfunc.md) Décrit la fonction de rappel utilisée par l’opération [SccQueryChanges.](../extensibility/sccquerychanges-function.md)
 
-- [POPDIRLISTFUNC](../extensibility/popdirlistfunc.md) décrit la fonction de rappel qui est utilisée par le [SccPopulateDirList](../extensibility/sccpopulatedirlist-function.md) opération.
+- [POPDIRLISTFUNC POPDIRLISTFUNC](../extensibility/popdirlistfunc.md) Décrit la fonction de rappel qui est utilisée par l’opération [SccPopulateDirList.](../extensibility/sccpopulatedirlist-function.md)
 
-- [OPTNAMECHANGEPFN](../extensibility/optnamechangepfn.md) décrit la fonction de rappel définie par un appel à la [SccSetOption](../extensibility/sccsetoption-function.md) qui permet le contrôle de code source plug-in pour communiquer les modifications de nom dans l’IDE.
+- [OPTNAMECHANGEPFN](../extensibility/optnamechangepfn.md) Décrit la fonction de rappel définie par un appel à la [SccSetOption](../extensibility/sccsetoption-function.md) qui permet au plug-in de contrôle source de communiquer les changements de nom vers l’IDE.
 
-## <a name="related-sections"></a>Rubriques connexes
-- [SccOpenProject](../extensibility/sccopenproject-function.md) ouvre un projet.
+## <a name="related-sections"></a>Sections connexes
+- [SccOpenProjet](../extensibility/sccopenproject-function.md) Ouvre un projet.
 
-- [SccPopulateList](../extensibility/sccpopulatelist-function.md) examine la liste des fichiers pour leur état actuel. En outre, utilise le `pfnPopulate` fonction permettant de notifier l’appelant quand un fichier ne correspond pas aux critères pour le `nCommand`.
+- [SccPopulateList](../extensibility/sccpopulatelist-function.md) Examine la liste des fichiers pour leur état actuel. En outre, `pfnPopulate` utilise la fonction pour informer l’appelant quand un `nCommand`fichier ne correspond pas aux critères pour le .
 
-- [SccPopulateDirList](../extensibility/sccpopulatedirlist-function.md) examine une liste de répertoires et fichiers dans un projet ou les projets qui sont sous contrôle de code source. Chaque nom de répertoire et fichier trouvé est passé à une fonction de rappel.
+- [SccPopulateDirList](../extensibility/sccpopulatedirlist-function.md) Examine une liste d’annuaires et de fichiers dans un projet ou des projets qui sont sous contrôle source. Chaque répertoire et nom de fichier trouvé est transmis à une fonction de rappel.
 
-- [SccQueryChanges](../extensibility/sccquerychanges-function.md) examine les modifications de nom qui ont été apportées à une liste de fichiers. Chaque nom de fichier est passé à une fonction de rappel avec son état de modification.
+- [SccQueryChanges](../extensibility/sccquerychanges-function.md) Examine les modifications de nom qui ont été apportées à une liste de fichiers. Chaque nom de fichier est transmis à une fonction de rappel ainsi que son statut de changement.
 
-- [SccSetOption](../extensibility/sccsetoption-function.md) définit un large éventail d’options. Chaque option commence par `SCC_OPT_xxx` et possède son propre ensemble défini de valeurs.
+- [SccSetOption](../extensibility/sccsetoption-function.md) Définit une grande variété d’options. Chaque option `SCC_OPT_xxx` commence par et a son propre ensemble défini de valeurs.
 
-- [Plug-ins de contrôle de source](../extensibility/source-control-plug-ins.md) décrit le contenu de la section de référence du SDK de plug-in de contrôle Source.
+- [Plug-ins de contrôle des sources](../extensibility/source-control-plug-ins.md) Décrit le contenu de la section de référence du SDK rechargeable de contrôle source.

@@ -1,5 +1,5 @@
 ---
-title: DEBUG_PROPERTY_INFO | Microsoft Docs
+title: DEBUG_PROPERTY_INFO Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - DEBUG_PROPERTY_INFO structure
 ms.assetid: 5a085d18-62c6-4740-b9e9-3f5db6bfdf7f
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 7804cfad48d5029e16619b5ae524fa6e761f11b4
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 34fc1b5103949a767a3ee448618cbb708ea6a48b
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66346180"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80737452"
 ---
-# <a name="debugpropertyinfo"></a>DEBUG_PROPERTY_INFO
-Contient des informations sur une propriété de débogage.
+# <a name="debug_property_info"></a>DEBUG_PROPERTY_INFO
+Contient des informations sur une propriété de débogé.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -53,44 +53,44 @@ public struct DEBUG_PROPERTY_INFO {
 
 ## <a name="members"></a>Membres
 `dwValidFields`\
-Une combinaison d’indicateurs de la [DEBUGPROP_INFO_FLAGS](../../../extensibility/debugger/reference/debugprop-info-flags.md) énumération qui spécifie quels champs sont renseignés.
+Une combinaison de drapeaux de [l’DEBUGPROP_INFO_FLAGS](../../../extensibility/debugger/reference/debugprop-info-flags.md) énumération qui précise quels champs sont remplis.
 
 `bstrFullName`\
 Le nom complet de la propriété.
 
 `bstrName`\
-Le nom de propriété dans un contexte.
+Le nom de la propriété dans un contexte.
 
 `bstrType`\
-Le type de propriété sous forme de chaîne.
+Le type de propriété comme une chaîne formatée.
 
 `bstrValue`\
-La valeur de propriété sous forme de chaîne.
+La valeur de la propriété comme une chaîne formatée.
 
 `pProperty`\
-Le [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) objet décrit par cette structure.
+[L’objet IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) décrit par cette structure.
 
 `dwAttrib`\
-Une combinaison d’indicateurs de la [DBG_ATTRIB_FLAGS](../../../extensibility/debugger/reference/dbg-attrib-flags.md) énumération décrivant les attributs de cette propriété.
+Une combinaison de drapeaux de [l’DBG_ATTRIB_FLAGS](../../../extensibility/debugger/reference/dbg-attrib-flags.md) énumération décrivant les attributs de cette propriété.
 
 ## <a name="remarks"></a>Notes
-Une propriété est un objet de nature hiérarchique qui a un nom, le type et la valeur. Par exemple, une propriété peut décrire des variables locales, paramètres, variables espionnes expressions et des registres.
+Une propriété est un objet de nature hiérarchique qui a un nom, un type et une valeur. Par exemple, une propriété peut décrire les variables, les paramètres, les variables et les expressions de surveillance locales et les registres.
 
-Cette structure est passée à la [GetPropertyInfo](../../../extensibility/debugger/reference/idebugproperty2-getpropertyinfo.md) méthode où il est renseigné. Cette structure est également retournée en tant que partie d’une liste de cette structure à partir de la [IEnumDebugPropertyInfo2](../../../extensibility/debugger/reference/ienumdebugpropertyinfo2.md) interface qui, à son tour, est retourné à partir d’un appel à la [EnumChildren](../../../extensibility/debugger/reference/idebugproperty2-enumchildren.md) et [ EnumProperties](../../../extensibility/debugger/reference/idebugstackframe2-enumproperties.md) méthodes.
+Cette structure est transmise à la méthode [GetPropertyInfo](../../../extensibility/debugger/reference/idebugproperty2-getpropertyinfo.md) où elle est remplie. Cette structure est également retournée dans le cadre d’une liste de cette structure de [l’interface IEnumDebugPropertyInfo2](../../../extensibility/debugger/reference/ienumdebugpropertyinfo2.md) qui, à son tour, est retourné d’un appel aux méthodes [EnumChildren](../../../extensibility/debugger/reference/idebugproperty2-enumchildren.md) et [EnumProperties.](../../../extensibility/debugger/reference/idebugstackframe2-enumproperties.md)
 
-## <a name="requirements"></a>Configuration requise
-En-tête : msdbg.h
+## <a name="requirements"></a>Spécifications
+En-tête: msdbg.h
 
-Espace de noms : Microsoft.VisualStudio.Debugger.Interop
+Namespace: Microsoft.VisualStudio.Debugger.Interop
 
-Assembly : Microsoft.VisualStudio.Debugger.Interop.dll
+Assemblage: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>Voir aussi
 - [Structures et unions](../../../extensibility/debugger/reference/structures-and-unions.md)
 - [DEBUGPROP_INFO_FLAGS](../../../extensibility/debugger/reference/debugprop-info-flags.md)
 - [DBG_ATTRIB_FLAGS](../../../extensibility/debugger/reference/dbg-attrib-flags.md)
 - [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)
-- [GetPropertyInfo](../../../extensibility/debugger/reference/idebugproperty2-getpropertyinfo.md)
+- [GetPropertyInfo (en anglais)](../../../extensibility/debugger/reference/idebugproperty2-getpropertyinfo.md)
 - [IEnumDebugPropertyInfo2](../../../extensibility/debugger/reference/ienumdebugpropertyinfo2.md)
 - [EnumChildren](../../../extensibility/debugger/reference/idebugproperty2-enumchildren.md)
 - [EnumProperties](../../../extensibility/debugger/reference/idebugstackframe2-enumproperties.md)

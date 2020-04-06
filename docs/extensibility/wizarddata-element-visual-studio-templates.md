@@ -1,5 +1,5 @@
 ---
-title: WizardData, élément (modèles Visual Studio) | Microsoft Docs
+title: WizardData Element (Visual Studio Templates) Microsoft Docs
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -9,21 +9,21 @@ helpviewer_keywords:
 - WizardData element [Visual Studio Templates]
 - <WizardData> element [Visual Studio Templates]
 ms.assetid: d0403a16-5d07-4fe5-b474-19ae3d9fd3ab
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ad5ae7e2e83cb0f8db6cf0b2482547e66ab89497
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: aa3f9d2e971d944b964f4b194d1324ff960fbd24
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66350766"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80740393"
 ---
 # <a name="wizarddata-element-visual-studio-templates"></a>WizardData, élément (modèles Visual Studio)
 
-Spécifie le code XML personnalisé
+Spécifie XML personnalisé
 
 ```xml
 \<VSTemplate>
@@ -55,23 +55,23 @@ Aucun.
 
 |Élément|Description|
 |-------------|-----------------|
-|[VSTemplate](../extensibility/vstemplate-element-visual-studio-templates.md)|Élément requis.<br /><br /> Contient toutes les métadonnées pour le modèle de projet, un modèle d’élément ou un starter kit.|
+|[VSTemplate](../extensibility/vstemplate-element-visual-studio-templates.md)|Élément requis.<br /><br /> Contient toutes les métadonnées pour le modèle de projet, le modèle d’élément ou le kit de démarrage.|
 
 ## <a name="text-value"></a>Valeur texte
 
 Une valeur texte est facultative.
 
-Ce texte spécifie la partie XML personnalisée à passer à l’extension d’Assistant personnalisée spécifiée dans le [WizardExtension](../extensibility/wizardextension-element-visual-studio-templates.md) élément.
+Ce texte spécifie le XML personnalisé pour passer à l’extension de l’assistant personnalisé spécifié dans l’élément [WizardExtension.](../extensibility/wizardextension-element-visual-studio-templates.md)
 
 ## <a name="remarks"></a>Notes
 
-Tout code XML peut être spécifiée dans cet élément. Le code XML sera passé comme un paramètre à l’extension d’Assistant personnalisée, ce qui permet l’extension à utiliser le contenu de cet élément. Aucune validation n’est effectuée sur ces données.
+N’importe quel XML peut être spécifié dans cet élément. Le XML sera passé comme un paramètre à l’extension de l’assistant personnalisé, permettant à l’extension d’utiliser le contenu de cet élément. Aucune validation n’est effectuée sur ces données.
 
-Le contenu de la **WizardData** élément est passé, inchangé, en tant que paramètre à l’intérieur du dictionnaire de chaînes de paramètres dans le `IWizard.RunStarted` (méthode). La clé de dictionnaire est nommée `$wizarddata$`.
+Le contenu de l’élément **WizardData** est passé, inchangé, comme un `IWizard.RunStarted` paramètre à l’intérieur du dictionnaire de chaîne des paramètres de la méthode. La clé de `$wizarddata$`dictionnaire est nommée .
 
 ## <a name="example"></a>Exemple
 
-L’exemple suivant illustre les métadonnées pour le modèle de projet standard pour une C# application de Windows.
+L’exemple suivant illustre les métadonnées du modèle de projet standard pour une application C’Windows.
 
 ```xml
 <VSTemplate Version="3.0.0" Type="Item"
@@ -109,4 +109,4 @@ L’exemple suivant illustre les métadonnées pour le modèle de projet standar
 - [Référence du schéma de modèle Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
 - [Création de modèles de projet et d’élément](../ide/creating-project-and-item-templates.md)
 - [Élément WizardExtension (modèles Visual Studio)](../extensibility/wizardextension-element-visual-studio-templates.md)
-- [Guide pratique pour utiliser des Assistants avec des modèles de projet](../extensibility/how-to-use-wizards-with-project-templates.md)
+- [Comment : utiliser des Assistants avec des modèles de projet](../extensibility/how-to-use-wizards-with-project-templates.md)

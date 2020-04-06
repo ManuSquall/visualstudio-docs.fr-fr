@@ -1,5 +1,5 @@
 ---
-title: IDebugProgramPublisher2 | Microsoft Docs
+title: IDebugProgramPublisher2 - France Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProgramPublisher2 interface
 ms.assetid: b1d17f63-7146-4076-a588-034cfc6858b9
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f94e7ea830a49db5b95bae3d0d6c50f73e6d3d64
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: b17f5bab02e49951eb1647af95641af807c44863
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66343134"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80721527"
 ---
 # <a name="idebugprogrampublisher2"></a>IDebugProgramPublisher2
-Cette interface permet à un moteur de débogage (dé) ou des fournisseurs de port personnalisé pour inscrire des programmes pour le débogage.
+Cette interface permet à un moteur de déboguer (DE) ou aux fournisseurs de ports personnalisés d’enregistrer des programmes de débogage.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -28,35 +28,35 @@ Cette interface permet à un moteur de débogage (dé) ou des fournisseurs de po
 IDebugProgramPublisher2 : IUnknown
 ```
 
-## <a name="notes-for-implementers"></a>Notes de publication pour les implémenteurs
-Visual Studio implémente cette interface pour enregistrer des programmes en cours de débogage afin de les rendre visibles pour le débogage entre plusieurs processus.
+## <a name="notes-for-implementers"></a>Notes pour les implémenteurs
+Visual Studio implémente cette interface pour enregistrer les programmes en cours de débogage afin de les rendre visibles pour débogage à travers plusieurs processus.
 
-## <a name="notes-for-callers"></a>Notes de publication pour les appelants
-Appel de COM `CoCreateInstance` fonctionne avec `CLSID_ProgramPublisher` pour obtenir cette interface (voir l’exemple). Un dé ou un fournisseur de port personnalisé utilise cette interface pour enregistrer des nœuds de programme qui représentent les programmes en cours de débogage.
+## <a name="notes-for-callers"></a>Notes pour les appelants
+Appelez la `CoCreateInstance` fonction `CLSID_ProgramPublisher` de COM avec pour obtenir cette interface (voir l’exemple). Un DE ou un fournisseur de port personnalisé utilise cette interface pour enregistrer les nœuds de programme qui représentent des programmes en cours de déboissailler.
 
 ## <a name="methods-in-vtable-order"></a>Méthodes dans l’ordre Vtable
-Cette interface implémente les méthodes suivantes :
+Cette interface met en œuvre les méthodes suivantes :
 
 |Méthode|Description|
 |------------|-----------------|
-|[PublishProgramNode](../../../extensibility/debugger/reference/idebugprogrampublisher2-publishprogramnode.md)|Rend un nœud de programme disponibles pour DEs et la session de débogage manager (SDM).|
-|[UnpublishProgramNode](../../../extensibility/debugger/reference/idebugprogrampublisher2-unpublishprogramnode.md)|Supprime un nœud du programme afin qu’il n’est plus disponible.|
-|[PublishProgram](../../../extensibility/debugger/reference/idebugprogrampublisher2-publishprogram.md)|Rend disponible pour DEs et le SDM.|
-|[UnpublishProgram](../../../extensibility/debugger/reference/idebugprogrampublisher2-unpublishprogram.md)|Supprime un programme afin qu’il n’est plus disponible.|
-|[SetDebuggerPresent](../../../extensibility/debugger/reference/idebugprogrampublisher2-setdebuggerpresent.md)|Définit un indicateur signalant qu’un débogueur est présent.|
+|[PublishProgramNode](../../../extensibility/debugger/reference/idebugprogrampublisher2-publishprogramnode.md)|Met un nœud de programme à la disposition des DE et du gestionnaire de débogé de session (SDM).|
+|[UnpublishProgramNode](../../../extensibility/debugger/reference/idebugprogrampublisher2-unpublishprogramnode.md)|Supprime un nœud de programme de sorte qu’il n’est plus disponible.|
+|[PublishProgram](../../../extensibility/debugger/reference/idebugprogrampublisher2-publishprogram.md)|Met un programme à la disposition des DE et du SDM.|
+|[UnpublishProgram](../../../extensibility/debugger/reference/idebugprogrampublisher2-unpublishprogram.md)|Supprime un programme de sorte qu’il n’est plus disponible.|
+|[SetDebuggerPresent](../../../extensibility/debugger/reference/idebugprogrampublisher2-setdebuggerpresent.md)|Définit un drapeau indiquant qu’un débbuggeur est présent.|
 
 ## <a name="remarks"></a>Notes
-Cette interface permet de programmes et les nœuds de programme disponible (autrement dit, « » leur publication) pour une utilisation par DEs et le Gestionnaire de session de débogage (SDM). Pour accéder à des programmes publiés et les nœuds de programme, utilisez la [IDebugProgramProvider2](../../../extensibility/debugger/reference/idebugprogramprovider2.md) interface. Il s’agit de la seule façon de que Visual Studio puisse reconnaître qu’un programme est en cours de débogage.
+Cette interface rend les programmes et les nœuds de programme disponibles (c’est-à-dire les « publie » pour les utiliser par les DE et le gestionnaire de débogé de session (SDM). Pour accéder aux programmes publiés et aux nœuds de programme, utilisez l’interface [IDebugProgramProvider2.](../../../extensibility/debugger/reference/idebugprogramprovider2.md) C’est la seule façon pour Visual Studio de reconnaître qu’un programme est en cours de déboisation.
 
-## <a name="requirements"></a>Configuration requise
-En-tête : msdbg.h
+## <a name="requirements"></a>Spécifications
+En-tête: msdbg.h
 
-Espace de noms : Microsoft.VisualStudio.Debugger.Interop
+Namespace: Microsoft.VisualStudio.Debugger.Interop
 
-Assembly : Microsoft.VisualStudio.Debugger.Interop.dll
+Assemblage: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="example"></a>Exemple
-Cet exemple montre comment instancier le serveur de publication du programme et inscrire un nœud de programme. Cela provient du didacticiel, [le nœud de programme de publication](https://msdn.microsoft.com/library/d0100e02-4e2b-4e72-9e90-f7bc11777bae).
+Cet exemple montre comment instantané l’éditeur du programme et enregistrer un nœud de programme. Ceci est tiré du Tutoriel, [La publication du nœud de programme](https://msdn.microsoft.com/library/d0100e02-4e2b-4e72-9e90-f7bc11777bae).
 
 ```cpp
 // This is how m_srpProgramPublisher is defined in the class definition:

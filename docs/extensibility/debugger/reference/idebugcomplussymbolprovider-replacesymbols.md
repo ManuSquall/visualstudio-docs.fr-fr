@@ -1,28 +1,28 @@
 ---
-title: IDebugComPlusSymbolProvider::ReplaceSymbols | Microsoft Docs
+title: IDebugComPlusSymbolProvider::ReplaceSymbols Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - ReplaceSymbols
 - IDebugComPlusSymbolProvider::ReplaceSymbols
 ms.assetid: 82fbc8db-c4b1-432f-bec9-1a9dc09570be
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 15af82459df5b2c8406280287115fbe345a63788
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 90ef0ae096618b776182b397d196f2a4477abe5d
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66352820"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80733601"
 ---
 # <a name="idebugcomplussymbolproviderreplacesymbols"></a>IDebugComPlusSymbolProvider::ReplaceSymbols
-Remplace les symboles de débogage actuelle avec ceux présents dans le flux de données spécifié.
+Remplace les symboles de déboçons actuels par ceux du flux de données spécifié.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -44,19 +44,19 @@ int ReplaceSymbols(
 
 ## <a name="parameters"></a>Paramètres
 `ulAppDomainID`\
-[in] Identificateur du domaine d’application.
+[dans] Identification du domaine de l’application.
 
 `guidModule`\
-[in] Identificateur unique du module.
+[dans] Identifiant unique du module.
 
 `pStream`\
-[in] Flux de données qui contient les symboles de nouveau.
+[dans] Flux de données qui contient les nouveaux symboles.
 
 ## <a name="return-value"></a>Valeur de retour
-En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.
+En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
 ## <a name="example"></a>Exemple
-L’exemple suivant montre comment implémenter cette méthode pour un **CDebugSymbolProvider** objet qui expose le [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md) interface.
+L’exemple suivant montre comment implémenter cette méthode pour un objet **CDebugSymbolProvider** qui expose [l’interface IDebugComPlusSymbolProvider.](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)
 
 ```cpp
 HRESULT CDebugSymbolProvider::ReplaceSymbols(

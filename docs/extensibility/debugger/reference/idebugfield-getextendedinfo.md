@@ -1,5 +1,5 @@
 ---
-title: IDebugField::GetExtendedInfo | Microsoft Docs
+title: IDebugField::GetExtendedInfo (fr) Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugField::GetExtendedInfo method
 ms.assetid: 46c0dd4d-4fd5-4efd-a908-71e4248e8e8d
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 3ddae4ea7ecc58d67279ae638d19bf95ec2cc591
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: dc414dd57e86149e38d7c85d11252eb93efced51
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66352653"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80728868"
 ---
 # <a name="idebugfieldgetextendedinfo"></a>IDebugField::GetExtendedInfo
-Cette méthode obtient des informations étendue sur un champ.
+Cette méthode reçoit des informations étendues sur un champ.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -45,24 +45,24 @@ int GetExtendedInfo(
 
 ## <a name="parameters"></a>Paramètres
 `guidExtendedInfo`\
-[in] Sélectionne les informations devant être retournées. Les valeurs valides sont les suivantes :
+[dans] Sélectionne les informations à retourner. Les valeurs autorisées sont :
 
-|Value|Description|
+|Valeur|Description|
 |-----------|-----------------|
 |`guidConstantValue`|La valeur comme une séquence d’octets.|
-|`guidConstantType`|Le type en tant qu’une signature de type.|
+|`guidConstantType`|Le type comme une signature de type.|
 
 `prgBuffer`\
-[out] Retourne les informations étendues.
+[out] Retourne l’information étendue.
 
 `pdwLen`\
-[in, out] Retourne la taille des informations étendues, en octets.
+[dans, dehors] Retourne la taille de l’information étendue, dans les octets.
 
 ## <a name="return-value"></a>Valeur de retour
- En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.
+ En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
 ## <a name="remarks"></a>Notes
- Actuellement, cette méthode retourne uniquement le type ou la valeur d’une constante. L’appelant doit libérer la mémoire tampon retournée dans `prgBuffer` par l’appel de COM `CoTaskMemFree` (fonction) (C++) ou <xref:System.Runtime.InteropServices.Marshal.FreeCoTaskMem%2A> (c#).
+ Actuellement, cette méthode ne renvoie que le type ou la valeur d’une constante. L’appelant doit libérer le `prgBuffer` tampon retourné `CoTaskMemFree` en appelant la fonction <xref:System.Runtime.InteropServices.Marshal.FreeCoTaskMem%2A> de COM (C) ou (C).
 
 ## <a name="see-also"></a>Voir aussi
 - [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)

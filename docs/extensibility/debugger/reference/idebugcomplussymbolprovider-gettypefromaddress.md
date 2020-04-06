@@ -1,28 +1,28 @@
 ---
-title: IDebugComPlusSymbolProvider::GetTypeFromAddress | Microsoft Docs
+title: IDebugComPlusSymbolProvider::GetTypeFromAddress ( Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - IDebugComPlusSymbolProvider::GetTypeFromAddress
 - GetTypeFromAddress
 ms.assetid: 01f21ff9-e8a5-4e5f-9f7b-1b6de8b1432f
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 7cc1a0e5bb25edcbfae047a088c20884330e81ee
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 87dfa102916b55c8445ecbf99d7033c0391ec254
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66336699"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80733728"
 ---
 # <a name="idebugcomplussymbolprovidergettypefromaddress"></a>IDebugComPlusSymbolProvider::GetTypeFromAddress
-Extrait d’un type de symbole donné son adresse de débogage.
+Récupère à un type de symbole donné son adresse de débaillement.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -42,16 +42,16 @@ int GetTypeFromAddress(
 
 ## <a name="parameters"></a>Paramètres
 `pAddress`\
-[in] L’adresse de débogage qui est représenté par un [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) interface.
+[dans] L’adresse de débogé qui est représentée par une interface [IDebugAddress.](../../../extensibility/debugger/reference/idebugaddress.md)
 
 `ppField`\
-[out] Retourne le type de tableau, tel qu’il est représenté par un [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md) interface.
+[out] Retourne le type de tableau tel qu’il est représenté par une interface [IDebugClassField.](../../../extensibility/debugger/reference/idebugclassfield.md)
 
 ## <a name="return-value"></a>Valeur de retour
-En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.
+En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
 ## <a name="example"></a>Exemple
-L’exemple suivant montre comment implémenter cette méthode pour un **CDebugSymbolProvider** objet qui expose le [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md) interface.
+L’exemple suivant montre comment implémenter cette méthode pour un objet **CDebugSymbolProvider** qui expose [l’interface IDebugComPlusSymbolProvider.](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)
 
 ```cpp
 HRESULT CDebugSymbolProvider::GetTypeFromAddress(

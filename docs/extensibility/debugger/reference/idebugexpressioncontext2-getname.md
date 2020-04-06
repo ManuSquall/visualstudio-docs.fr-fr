@@ -1,5 +1,5 @@
 ---
-title: IDebugExpressionContext2::GetName | Microsoft Docs
+title: IDebugExpressionContext2::GetName ( Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugExpressionContext2::GetName
 ms.assetid: c2b70d22-17af-4986-a7e3-930910367216
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: d53d7f497700d4e23587927adc0c2cee37824daa
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 500d5c1788e837a27b4affada50ecc59db122e8a
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66325874"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80729664"
 ---
 # <a name="idebugexpressioncontext2getname"></a>IDebugExpressionContext2::GetName
-Récupère le nom du contexte d’évaluation.
+Récupère le nom du contexte de l’évaluation.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -41,13 +41,13 @@ int GetName( 
 
 ## <a name="parameters"></a>Paramètres
 `pbstrName`\
-[out] Retourne le nom du contexte d’évaluation.
+[out] Retourne le nom du contexte de l’évaluation.
 
 ## <a name="return-value"></a>Valeur de retour
- En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.
+ En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
 ## <a name="remarks"></a>Notes
- Le nom est la description de ce contexte d’évaluation. Il s’agit généralement de quelque chose qui peut être analysé par un évaluateur d’expression qui fait référence à ce contexte d’évaluation exacte. Par exemple, dans C++ le nom est comme suit :
+ Le nom est la description de ce contexte d’évaluation. C’est généralement quelque chose qui peut être analysé par un évaluateur d’expression qui se réfère à ce contexte exact d’évaluation. Par exemple, dans le C, le nom est le suivant :
 
 ```
 "{ function-name, source-file-name, module-file-name }"

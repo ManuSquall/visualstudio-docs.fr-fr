@@ -1,27 +1,27 @@
 ---
-title: IDebugCodeContext3::GetProcess | Microsoft Docs
+title: IDebugCodeContext3::GetProcess (fr) Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - IDebugCodeContext3::GetProcess
 ms.assetid: e082e494-2255-4d9d-a5a9-6dadd904bea8
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 6d12756c15c36e6d6126b77fc6e4291521417f82
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 8d169f86548e97d4bb745e1ba91f39782de97cbc
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66349741"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80734170"
 ---
 # <a name="idebugcodecontext3getprocess"></a>IDebugCodeContext3::GetProcess
-Récupère une référence à l’interface du processus de débogage.
+Récupère une référence à l’interface du processus de débogé.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -39,13 +39,13 @@ public int GetProcess(
 
 ## <a name="parameters"></a>Paramètres
 `ppProcess`\
-[out] Référence à l’interface de processus de débogage.
+[out] Référence à l’interface de processus de débogé.
 
 ## <a name="return-value"></a>Valeur de retour
-En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.
+En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
 ## <a name="example"></a>Exemple
-L’exemple suivant montre comment implémenter cette méthode pour un **CDebugCodeContext** objet qui expose le [IDebugBeforeSymbolSearchEvent2](../../../extensibility/debugger/reference/idebugbeforesymbolsearchevent2.md) interface.
+L’exemple suivant montre comment implémenter cette méthode pour un objet **CDebugCodeContext** qui expose [l’interface IDebugBeforeSymbolSearchEvent2.](../../../extensibility/debugger/reference/idebugbeforesymbolsearchevent2.md)
 
 ```cpp
 HRESULT CDebugCodeContext::GetProcess(IDebugProcess2** ppProcess)

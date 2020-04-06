@@ -1,5 +1,5 @@
 ---
-title: IDebugCustomAttribute | Microsoft Docs
+title: IDebugCustomAttribute Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugCustomAttribute interface
 ms.assetid: c5ae41e9-00b9-4cca-871d-b8de9ef390d1
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ae596c781d864f97087371fcb10595aa5f6a8ee9
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: a31133139d0104cd29f5d0d0e760bd78ec5783fd
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66346127"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80732679"
 ---
 # <a name="idebugcustomattribute"></a>IDebugCustomAttribute
-Cette interface représente un attribut personnalisé, et il peut fournir le nom, le parent et le type de classe de l’attribut.
+Cette interface représente un attribut personnalisé, et elle peut fournir le nom, le parent et le type de classe de l’attribut.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -28,34 +28,34 @@ Cette interface représente un attribut personnalisé, et il peut fournir le nom
 IDebugCustomAttribute : IUnknown
 ```
 
-## <a name="notes-for-implementers"></a>Notes de publication pour les implémenteurs
- Un fournisseur de symboles implémente cette interface pour prendre en charge les attributs personnalisés associés à un symbole. Elle est généralement implémentée sur son propre objet.
+## <a name="notes-for-implementers"></a>Notes pour les implémenteurs
+ Un fournisseur de symboles implémente cette interface afin de prendre en charge les attributs personnalisés associés à un symbole. Il est généralement implémenté sur son propre objet.
 
-## <a name="notes-for-callers"></a>Notes de publication pour les appelants
- Un appel à [suivant](../../../extensibility/debugger/reference/ienumdebugcustomattributes-next.md) retourne cette interface. Un appel à la [EnumCustomAttributes](../../../extensibility/debugger/reference/idebugcustomattributequery2-enumcustomattributes.md) méthode retourne le [IEnumDebugCustomAttributes](../../../extensibility/debugger/reference/ienumdebugcustomattributes.md) interface.
+## <a name="notes-for-callers"></a>Notes pour les appelants
+ Un appel à [Next](../../../extensibility/debugger/reference/ienumdebugcustomattributes-next.md) renvoie cette interface. Un appel à la méthode [EnumCustomAttributes](../../../extensibility/debugger/reference/idebugcustomattributequery2-enumcustomattributes.md) renvoie l’interface [IEnumDebugCustomAttributes.](../../../extensibility/debugger/reference/ienumdebugcustomattributes.md)
 
 ## <a name="methods-in-vtable-order"></a>Méthodes dans l'ordre Vtable
- Le tableau suivant présente les méthodes de `IDebugCustomAttribute`.
+ Le tableau suivant montre `IDebugCustomAttribute`les méthodes de .
 
 |Méthode|Description|
 |------------|-----------------|
 |[GetParentField](../../../extensibility/debugger/reference/idebugcustomattribute-getparentfield.md)|Obtient le champ auquel l’attribut actuel est attaché.|
 |[GetAttributeTypeField](../../../extensibility/debugger/reference/idebugcustomattribute-getattributetypefield.md)|Obtient le type de classe d’attribut personnalisé.|
 |[GetName](../../../extensibility/debugger/reference/idebugcustomattribute-getname.md)|Obtient le nom de l’attribut personnalisé.|
-|[GetAttributeBytes](../../../extensibility/debugger/reference/idebugcustomattribute-getattributebytes.md)|Obtient les informations d’attribut comme un objet blob d’octets.|
+|[GetAttributeBytes](../../../extensibility/debugger/reference/idebugcustomattribute-getattributebytes.md)|Obtient l’information d’attribut comme un blob d’octets.|
 
 ## <a name="remarks"></a>Notes
- Un attribut personnalisé est une structure en c# qui fournit des métadonnées personnalisées associées à une classe particulière ou une méthode.
+ Un attribut personnalisé est une structure pour Cmd qui fournit des métadonnées personnalisées associées à une classe ou une méthode particulière.
 
-## <a name="requirements"></a>Configuration requise
- En-tête : sh.h
+## <a name="requirements"></a>Spécifications
+ En-tête: sh.h
 
- Espace de noms : Microsoft.VisualStudio.Debugger.Interop
+ Namespace: Microsoft.VisualStudio.Debugger.Interop
 
- Assembly : Microsoft.VisualStudio.Debugger.Interop.dll
+ Assemblage: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>Voir aussi
-- [Symbol Provider Interfaces](../../../extensibility/debugger/reference/symbol-provider-interfaces.md)
+- [Interfaces des fournisseurs de symboles](../../../extensibility/debugger/reference/symbol-provider-interfaces.md)
 - [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)
 - [IDebugCustomAttributeQuery2](../../../extensibility/debugger/reference/idebugcustomattributequery2.md)
 - [IEnumDebugCustomAttributes](../../../extensibility/debugger/reference/ienumdebugcustomattributes.md)

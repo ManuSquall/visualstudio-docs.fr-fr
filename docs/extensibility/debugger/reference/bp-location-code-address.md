@@ -1,5 +1,5 @@
 ---
-title: BP_LOCATION_CODE_ADDRESS | Microsoft Docs
+title: BP_LOCATION_CODE_ADDRESS Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,21 +7,21 @@ f1_keywords:
 helpviewer_keywords:
 - BP_LOCATION_CODE_ADDRESS structure
 ms.assetid: 83c9da8b-19d9-4be5-b225-854543654901
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
-ms.openlocfilehash: 51137b5a5a69c80ecd7129d4c645f63b5805d27d
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: c215630e522adabdbd285e00d4bcd87cae22a931
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66319128"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80738041"
 ---
-# <a name="bplocationcodeaddress"></a>BP_LOCATION_CODE_ADDRESS
+# <a name="bp_location_code_address"></a>BP_LOCATION_CODE_ADDRESS
 Décrit l’emplacement d’un point d’arrêt à une adresse dans le code.
 
 ## <a name="syntax"></a>Syntaxe
@@ -37,7 +37,7 @@ typedef struct _BP_LOCATION_CODE_ADDRESS {
 
 ## <a name="members"></a>Membres
 `bstrContext`\
-Le contexte du point d’arrêt, généralement un nom de méthode ou fonction tels que présentés sur une pile des appels.
+Le contexte du point d’arrêt, généralement une méthode ou un nom de fonction vu sur une pile d’appels.
 
 `bstrModuleUrl`\
 L’URL du module qui contient le point d’arrêt.
@@ -46,17 +46,17 @@ L’URL du module qui contient le point d’arrêt.
 Le nom de la fonction qui contient le point d’arrêt.
 
 `bstrAddress`\
-L’adresse du point d’arrêt, ce qui est analysé par un évaluateur d’expression pour le lier à un [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) objet.
+L’adresse du point d’arrêt, qui est analysée par un évaluateur d’expression pour le lier à un objet [IDebugAddress.](../../../extensibility/debugger/reference/idebugaddress.md)
 
 ## <a name="remarks"></a>Notes
-Cette structure est un membre de la [BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md) structure dans le cadre d’une union.
+Cette structure est membre de la structure [BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md) dans le cadre d’un syndicat.
 
-## <a name="requirements"></a>Configuration requise
-En-tête : msdbg.h
+## <a name="requirements"></a>Spécifications
+En-tête: msdbg.h
 
-Espace de noms : Microsoft.VisualStudio.Debugger.Interop
+Namespace: Microsoft.VisualStudio.Debugger.Interop
 
-Assembly : Microsoft.VisualStudio.Debugger.Interop.dll
+Assemblage: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>Voir aussi
 - [Structures et unions](../../../extensibility/debugger/reference/structures-and-unions.md)

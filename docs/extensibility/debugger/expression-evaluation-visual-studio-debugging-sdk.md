@@ -1,42 +1,42 @@
 ---
-title: Évaluation de l’expression (Kit de développement logiciel de débogage de Visual Studio) | Microsoft Docs
+title: Évaluation de l’expression (Visual Studio Debugging SDK) Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Debugging SDK], expression evaluation
 - expression evaluation
 ms.assetid: 5044ced5-c18c-4534-b0bf-cc3e50cd57ac
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0e1e09f2302a6bb8401dd8c9f2d7c48810d5ecdc
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: e41179fd530818f5ac59aa54420ede1b4eafa1ec
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66353826"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80738711"
 ---
-# <a name="expression-evaluation-visual-studio-debugging-sdk"></a>Évaluation des expressions (débogage SDK Visual Studio)
-En mode arrêt, l’IDE doit évaluer les expressions simples impliquant plusieurs variables de programme. Pour accomplir son évaluation, le moteur de débogage (dé) doit analyser et évaluer une expression qui est entrée dans une des fenêtres de l’IDE.
+# <a name="expression-evaluation-visual-studio-debugging-sdk"></a>Évaluation de l’expression (Visual Studio Debugging SDK)
+Pendant le mode pause, l’IDE doit évaluer les expressions simples impliquant plusieurs variables du programme. Pour réaliser son évaluation, le moteur de débogé (DE) doit analyser et évaluer une expression entrée dans l’une des fenêtres de l’IDE.
 
- Les expressions sont créées avec le [IDebugExpressionContext2::ParseText](../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md) méthode et représenté par résultant [IDebugExpression2](../../extensibility/debugger/reference/idebugexpression2.md) interface.
+ Les expressions sont créées avec la méthode [IDebugExpressionContext2::ParseText](../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md) et représentées par l’interface [IDebugExpression2](../../extensibility/debugger/reference/idebugexpression2.md) qui en résulte.
 
- Le **IDebugExpression2** interface est implémentée par les appels DE son **EvalAsync** méthode pour retourner un [IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md) interface à l’IDE, afin d’afficher le résultats de l’évaluation d’expression dans l’IDE. [IDebugProperty2::GetPropertyInfo](../../extensibility/debugger/reference/idebugproperty2-getpropertyinfo.md) retourne une structure qui est utilisée pour placer la valeur d’une expression dans une **espion** fenêtre ou dans le **variables locales** fenêtre.
+ **L’interface IDebugExpression2** est mise en œuvre par le DE et appelle sa méthode **EvalAsync** pour retourner une interface [IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md) à l’IDE, afin d’afficher les résultats de l’évaluation d’expression dans l’IDE. [IDebugProperty2::GetPropertyInfo](../../extensibility/debugger/reference/idebugproperty2-getpropertyinfo.md) retourne une structure qui est utilisée pour mettre la valeur d’une expression dans une fenêtre **de montre** ou dans la fenêtre **des sections locales.**
 
- Le package ou la session de débogage Gestionnaire de débogage (SDM) appelle [IDebugExpression2::EvaluateAsync](../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md) ou [EvaluateSync](../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md) pour obtenir un [IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md) interface qui représente le résultat de l’évaluation. `IDebugProperty2` a des méthodes qui retournent le nom, le type et la valeur de l’expression. Ces informations s’affichent dans les différentes fenêtres du débogueur.
+ Le package de débaillement ou gestionnaire de débbug session (SDM) appelle [IDebugExpression2::EvaluateAsync](../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md) ou [EvaluateSync](../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md) pour obtenir une interface [IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md) qui représente le résultat de l’évaluation. `IDebugProperty2`a des méthodes qui renvoient le nom, le type et la valeur de l’expression. Cette information apparaît dans diverses fenêtres de débaillement.
 
-## <a name="using-expression-evaluation"></a>Avec l’évaluation d’expression
- Pour utiliser la version d’évaluation de l’expression, vous devez implémenter le [IDebugExpressionContext2::ParseText](../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md) (méthode) et toutes les méthodes de la [IDebugExpression2](../../extensibility/debugger/reference/idebugexpression2.md) interface, comme indiqué dans le tableau suivant.
+## <a name="using-expression-evaluation"></a>Utilisation de l’évaluation de l’expression
+ Pour utiliser l’évaluation de l’expression, vous devez implémenter la méthode [IDebugExpressionContext2::ParseText](../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md) et toutes les méthodes de l’interface [IDebugExpression2,](../../extensibility/debugger/reference/idebugexpression2.md) comme indiqué dans le tableau suivant.
 
 |Méthode|Description|
 |------------|-----------------|
-|[EvaluateAsync](../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md)|Évalue une expression de façon asynchrone.|
-|[Abort](../../extensibility/debugger/reference/idebugexpression2-abort.md)|Termine l’évaluation de l’expression asynchrone.|
+|[EvaluateAsync](../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md)|Évalue une expression asynchrone.|
+|[Annuler](../../extensibility/debugger/reference/idebugexpression2-abort.md)|Termine l’évaluation asynchrone d’expression.|
 |[EvaluateSync](../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md)|Évalue une expression de façon synchrone.|
 
- Évaluation synchrone et asynchrone requièrent l’implémentation de la [IDebugProperty2::GetPropertyInfo](../../extensibility/debugger/reference/idebugproperty2-getpropertyinfo.md) (méthode). Évaluation des expressions asynchrones nécessite l’implémentation de [IDebugExpressionEvaluationCompleteEvent2](../../extensibility/debugger/reference/idebugexpressionevaluationcompleteevent2.md).
+ L’évaluation synchrone et asynchrone nécessitent la mise en œuvre de la méthode [IDebugProperty2::GetPropertyInfo.](../../extensibility/debugger/reference/idebugproperty2-getpropertyinfo.md) L’évaluation d’expression asynchrone nécessite la mise en œuvre de [IDebugExpressionEvaluationCompleteEvent2](../../extensibility/debugger/reference/idebugexpressionevaluationcompleteevent2.md).
 
 ## <a name="see-also"></a>Voir aussi
-- [Évaluation de contrôle et l’état d’exécution](../../extensibility/debugger/execution-control-and-state-evaluation.md)
+- [Contrôle des exécutions et évaluation de l’État](../../extensibility/debugger/execution-control-and-state-evaluation.md)
