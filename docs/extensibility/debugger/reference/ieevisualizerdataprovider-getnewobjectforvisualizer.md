@@ -1,5 +1,5 @@
 ---
-title: IEEVisualizerDataProvider::GetNewObjectForVisualizer | Microsoft Docs
+title: IEEVisualizerDataProvider::GetNewObjectForVisualizer Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IEEVisualizerDataProvider::GetNewObjectForVisualizer method
 ms.assetid: a898d549-4898-4fde-aad1-e8bb89129652
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 322e18132050bca6803dac04a5cfbe3fd92f3106
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: c478ca3fc913f5ab79f37a957b05ff1d665f8aa5
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66335584"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80718105"
 ---
 # <a name="ieevisualizerdataprovidergetnewobjectforvisualizer"></a>IEEVisualizerDataProvider::GetNewObjectForVisualizer
-Cette méthode obtient un nouvel objet pour le visualiseur. Cette méthode crée toujours un nouvel objet à partir de l’objet existant.
+Cette méthode obtient un nouvel objet pour le visualiseur. Cette méthode créera toujours un nouvel objet à partir de l’objet existant.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -44,10 +44,10 @@ int GetNewObjectForVisualizer(
 [out] Le nouvel objet.
 
 ## <a name="return-value"></a>Valeur de retour
- En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.
+ En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
 ## <a name="remarks"></a>Notes
- `This method` réévalue l’objet actuellement représente et retourne le résultat sous la forme d’un nouvel objet. L’objet existant mettra à jour à la suite de l’évaluation.
+ `This method`réévalue l’objet qu’il représente actuellement et renvoie le résultat comme un nouvel objet. L’objet existant sera mis à jour à la suite de l’évaluation.
 
 ## <a name="see-also"></a>Voir aussi
 - [IEEVisualizerDataProvider](../../../extensibility/debugger/reference/ieevisualizerdataprovider.md)

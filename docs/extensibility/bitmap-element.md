@@ -1,25 +1,25 @@
 ---
-title: Élément bitmap | Microsoft Docs
+title: Élément Bitmap - France Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - VSCT XML schema elements, Bitmaps
 - Bitmaps element (VSCT XML schema)
 ms.assetid: edcd7891-f4e7-416d-809d-5e2eed9f17e4
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: cba0f5ccd3228466740a9fb907e6c20ce5400c48
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 2d663351aad7d381dd5bfe4cbaa0a263cc70b821
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66333585"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80740001"
 ---
-# <a name="bitmap-element"></a>Élément de bitmap
-Définit une image bitmap. La bitmap est chargée à partir d’une ressource ou d’un fichier.
+# <a name="bitmap-element"></a>Élément Bitmap
+Définit un bitmap. Le bitmap est chargé à partir d’une ressource ou d’un fichier.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -34,11 +34,11 @@ Définit une image bitmap. La bitmap est chargée à partir d’une ressource ou
 
 |Attribut|Description|
 |---------------|-----------------|
-|guid|Obligatoire. GUID de l’identificateur de commande/ID GUID.<br /><br /> L’attribut de guid pour une image bitmap n’est pas associé à n’importe quel package Visual Studio ou l’autre groupe de commandes.  Il doit être unique à la définition de bitmap et ne doit pas être utilisé à d’autres fins.|
-|resID|ID de l’identificateur de commande/ID GUID. Le resID ou l’attribut href est requis.<br /><br /> L’attribut resID est un ID de ressource d’entier qui détermine la bande de bitmaps qui doit être chargé pendant la fusion des tables de commande.  Lorsque la table de commande est chargée, les bitmaps spécifiées par l’ID de ressource sera chargées à partir de la ressource du même module.|
-|usedList|Obligatoire si l’attribut resID n’est présent. Sélectionne les images disponibles dans la bande de bitmaps.|
-|href|Chemin d’accès à l’image bitmap. Le resID ou l’attribut href est requis.<br /><br /> Le chemin d’accès include est recherchés dans le fichier image indiqué, qui est incorporé dans le fichier binaire qui en résulte.  Pendant la fusion de table de commande, l’image est copiée et aucune recherche de ressources supplémentaires ou de la charge n’est nécessaire.  Si l’attribut usedList n’est pas présent, toutes les images dans la bande sont disponibles. **Remarque :**  Les images peuvent être fournies dans un des formats qui incluent *.bmp*, *.png*, et *.gif*.  Les versions antérieures du compilateur ne prenait pas en charge les images bitmap 32 bits qui avait des informations alpha pour la transparence partielle. La solution de contournement pour ces versions consiste à utiliser le *.png* format.|
-|Condition|Facultatif. Consultez [attributs conditionnels](../extensibility/vsct-xml-schema-conditional-attributes.md).|
+|guid|Obligatoire. GUID de l’identifiant de commande GUID/ID.<br /><br /> L’attribut guid pour un bitmap n’est pas associé à un VSPackage ou un autre groupe de commande.  Il devrait être unique à la définition de bitmap et ne doit pas être utilisé à d’autres fins.|
+|resID (resID)|ID de l’identifiant de commande GUID/ID. Soit le resID ou l’attribut href est nécessaire.<br /><br /> L’attribut resID est une pièce d’identité de ressource integer qui détermine la bande de bitmap qui doit être chargée pendant la fusion de table de commande.  Lorsque le tableau de commande est chargé, les bitmaps spécifiés par l’ID de ressource seront chargés à partir de la ressource du même module.|
+|usedList (en)|Nécessaire si l’attribut resID est présent. Sélectionne les images disponibles dans la bande de bitmap.|
+|href|Chemin vers la bitmap. Soit le resID ou l’attribut href est nécessaire.<br /><br /> Le chemin inclus est recherché pour le fichier d’image indiqué, qui est intégré dans le binaire résultant.  Pendant la fusion du tableau de commande, l’image est copiée et aucune recherche ou charge supplémentaire de ressource n’est exigée.  Si l’attribut UsedList n’est pas présent, toutes les images de la bande sont disponibles. **Note:**  Les images peuvent être fournies dans l’un des plusieurs formats qui comprennent *.bmp*, *.png*, et *.gif*.  Les versions antérieures du compilateur ne supportaient pas les images de bits 32 bits qui avaient des informations alpha pour une transparence partielle. La solution de contournement pour ces versions est d’utiliser le format *.png.*|
+|Condition|facultatif. Voir [Attributs conditionnels](../extensibility/vsct-xml-schema-conditional-attributes.md).|
 
 ### <a name="child-elements"></a>Éléments enfants
  Aucun.
@@ -47,7 +47,7 @@ Définit une image bitmap. La bitmap est chargée à partir d’une ressource ou
 
 |Élément|Description|
 |-------------|-----------------|
-|[Élément bitmaps](../extensibility/bitmaps-element.md)|Regroupe les éléments de la Bitmap.|
+|[Élément Bitmaps](../extensibility/bitmaps-element.md)|Groupes Bitmap éléments.|
 
 ## <a name="example"></a>Exemple
 
@@ -58,4 +58,4 @@ Définit une image bitmap. La bitmap est chargée à partir d’une ressource ou
 ```
 
 ## <a name="see-also"></a>Voir aussi
-- [Visual Studio fichiers command table (.vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+- [Fichiers visualister de table de commande de studio (.vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

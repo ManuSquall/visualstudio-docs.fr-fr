@@ -1,5 +1,5 @@
 ---
-title: IDebugProgramNode2::GetHostMachineName_V7 | Microsoft Docs
+title: IDebugProgramNode2::GetHostMachineName_V7 Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,25 +7,25 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProgramNode2::GetHostMachineName_V7
 - IDebugProgramNode2::GetHostMachineNameIDebugProgramNode2::GetHostMachineName
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 03b2566d2c93181439ddecb9d87c5da59b6e6090
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: a8c328c83ebe52f842b1990debe07aed3fd764c1
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66351143"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80722087"
 ---
-# <a name="idebugprogramnode2gethostmachinenamev7"></a>IDebugProgramNode2::GetHostMachineName_V7
+# <a name="idebugprogramnode2gethostmachinename_v7"></a>IDebugProgramNode2::GetHostMachineName_V7
 
 > [!Note]
-> DÉCONSEILLÉ. N’UTILISEZ PAS.
+> Déconseillée. NE PAS UTILISER.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -44,16 +44,16 @@ int GetHostMachineName_V7 (
 ## <a name="parameters"></a>Paramètres
 
 `pbstrHostMachineName`\
-[out] Retourne le nom de l’ordinateur dans lequel le programme est en cours d’exécution.
+[out] Retourne le nom de la machine dans laquelle le programme est en cours d’exécution.
 
 ## <a name="return-value"></a>Valeur de retour
 
-Une implémentation doit toujours retourner `E_NOTIMPL`.
+Une mise en `E_NOTIMPL`œuvre doit toujours revenir .
 
 ## <a name="remarks"></a>Notes
 
 > [!WARNING]
-> À compter de Visual Studio 2005, cette méthode n’est plus utilisée et doit toujours retourner `E_NOTIMPL`.
+> A partir de Visual Studio 2005, cette méthode `E_NOTIMPL`n’est plus utilisée et devrait toujours revenir .
 
 ## <a name="see-also"></a>Voir aussi
 

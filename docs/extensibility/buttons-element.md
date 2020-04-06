@@ -1,25 +1,25 @@
 ---
-title: Boutons d’élément | Microsoft Docs
+title: Élément boutons Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - Buttons element (VSCT XML schema)
 - VSCT XML schema elements, Buttons
 ms.assetid: 9f2cf94d-dec5-4776-a836-9a89c75f0c87
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2150ec240880987bc63bb3c2adf33682ebf34580
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 64ac5621093f30af28ade0817906b767231e4ee1
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66321162"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80739917"
 ---
-# <a name="buttons-element"></a>Élément Buttons
-Groupes [bouton](../extensibility/button-element.md) éléments, qui représentent des commandes individuelles.
+# <a name="buttons-element"></a>Élément boutons
+Groupes [Éléments bouton,](../extensibility/button-element.md) qui représentent des commandes individuelles.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -37,20 +37,20 @@ Groupes [bouton](../extensibility/button-element.md) éléments, qui représente
 
 |Attribut|Description|
 |---------------|-----------------|
-|Condition|Facultatif. Consultez [attributs conditionnels](../extensibility/vsct-xml-schema-conditional-attributes.md).|
+|Condition|facultatif. Voir [Attributs conditionnels](../extensibility/vsct-xml-schema-conditional-attributes.md).|
 
 ### <a name="child-elements"></a>Éléments enfants
 
 |Élément|Description|
 |-------------|-----------------|
-|[Élément Buttons](../extensibility/buttons-element.md)|Regroupe les éléments de bouton.|
-|[Élément Button](../extensibility/button-element.md)|Définit une commande de l’utilisateur peut interagir avec.|
+|[Élément boutons](../extensibility/buttons-element.md)|Groupes Éléments bouton.|
+|[Élément bouton](../extensibility/button-element.md)|Définit une commande avec laquelle l’utilisateur peut interagir.|
 
 ### <a name="parent-elements"></a>Éléments parents
 
 |Élément|Description|
 |-------------|-----------------|
-|[Élément Commands](../extensibility/commands-element.md)|Représente la collection de commandes sur la barre d’outils de VSPackage.|
+|[Élément de commande](../extensibility/commands-element.md)|Représente la collection de commandes sur la barre d’outils VSPackage.|
 
 ## <a name="example"></a>Exemple
 

@@ -1,47 +1,47 @@
 ---
-title: Ajout d’une barre d’outils à une fenêtre outil | Microsoft Docs
+title: Ajout d’une barre d’outils à une fenêtre d’outil ( Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - tool windows, adding toolbars
 - toolbars [Visual Studio], adding to tool windows
 ms.assetid: 172f64b3-87f8-4292-9c1c-65bffa2b0970
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: bd4f4d37af94ba3a7dcdffc249e8b5e681025b78
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 094515eb94279623974bd7b55cc9923c49625a70
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66352392"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80740244"
 ---
-# <a name="add-a-toolbar-to-a-tool-window"></a>Ajouter une barre d’outils à une fenêtre outil
-Cette procédure pas à pas montre comment ajouter une barre d’outils à une fenêtre outil.
+# <a name="add-a-toolbar-to-a-tool-window"></a>Ajouter une barre d’outils à une fenêtre d’outils
+Ce pas-là montre comment ajouter une barre d’outils à une fenêtre d’outils.
 
- Une barre d’outils est une bande horizontale ou verticale qui contient les boutons liés aux commandes. La longueur d’une barre d’outils dans une fenêtre outil est toujours identique à la largeur ou hauteur de la fenêtre outil, selon l’endroit où la barre d’outils est ancrée.
+ Une barre d’outils est une bande horizontale ou verticale qui contient des boutons liés aux commandes. La longueur d’une barre d’outils dans une fenêtre d’outil est toujours la même que la largeur ou la hauteur de la fenêtre d’outil, selon l’endroit où la barre d’outils est amarrée.
 
- Contrairement aux barres d’outils dans l’IDE, une barre d’outils dans une fenêtre outil doit être ancré et ne peut pas être déplacé ou personnalisé. Si le VSPackage est écrit dans le code d’umanaged, la barre d’outils peut être ancré sur n’importe quel bord.
+ Contrairement aux barres d’outils de l’IDE, une barre d’outils dans une fenêtre d’outils doit être amarrée et ne peut pas être déplacée ou personnalisée. Si le VSPackage est écrit en code umanage, la barre d’outils peut être amarré sur n’importe quel bord.
 
- Pour plus d’informations sur l’ajout d’une barre d’outils, consultez [Ajout d’une barre d’outils](../extensibility/adding-a-toolbar.md).
+ Pour plus d’informations sur la façon d’ajouter une barre d’outils, voir [Ajouter une barre d’outils](../extensibility/adding-a-toolbar.md).
 
 ## <a name="prerequisites"></a>Prérequis
- À partir de Visual Studio 2015, vous n’installez pas le Kit de développement logiciel Visual Studio à partir du centre de téléchargement. Il est inclus comme fonctionnalité facultative dans le programme d’installation de Visual Studio. Vous pouvez également installer le kit SDK VS par la suite. Pour plus d’informations, consultez [l’installation de Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).
+ A partir de Visual Studio 2015, vous n’installez pas le Visual Studio SDK à partir du centre de téléchargement. Il est inclus comme une fonctionnalité facultative dans la configuration Visual Studio. Vous pouvez également installer le VS SDK plus tard. Pour plus d’informations, voir [Installer le Studio Visuel SDK](../extensibility/installing-the-visual-studio-sdk.md).
 
-## <a name="create-a-toolbar-for-a-tool-window"></a>Créer une barre d’outils pour une fenêtre outil
+## <a name="create-a-toolbar-for-a-tool-window"></a>Créer une barre d’outils pour une fenêtre d’outils
 
-1. Créez un projet VSIX nommé `TWToolbar` qui a les deux une commande de menu nommée **TWTestCommand** et une fenêtre Outil nommée **TestToolWindow**. Pour plus d’informations, consultez [créer une extension avec une commande de menu](../extensibility/creating-an-extension-with-a-menu-command.md) et [créer une extension avec une fenêtre outil](../extensibility/creating-an-extension-with-a-tool-window.md). Vous devez ajouter le modèle d’élément commande avant d’ajouter le modèle de fenêtre outil.
+1. Créez un projet `TWToolbar` VSIX nommé qui a à la fois une commande de menu nommée **TWTestCommand** et une fenêtre d’outils nommée **TestToolWindow**. Pour plus d’informations, voir [Créer une extension avec une commande de menu](../extensibility/creating-an-extension-with-a-menu-command.md) et créer une extension avec une fenêtre [d’outil](../extensibility/creating-an-extension-with-a-tool-window.md). Vous devez ajouter le modèle d’élément de commande avant d’ajouter le modèle de fenêtre d’outil.
 
-2. Dans *TWTestCommandPackage.vsct*, recherchez la section de symboles. Dans le nœud GuidSymbol guidTWTestCommandPackageCmdSet nommé déclarer une barre d’outils et un groupe de la barre d’outils, comme suit.
+2. Dans *TWTestCommandPackage.vsct*, recherchez la section Symboles. Dans le nœud GuidSymbol nommé guidTWTestCommandPackageCmdSet déclarer une barre d’outils et un groupe de barre d’outils, comme suit.
 
     ```xml
     <IDSymbol name="TWToolbar" value="0x1000" />
     <IDSymbol name="TWToolbarGroup" value="0x1050" />
     ```
 
-3. En haut de la `Commands` section, créez un `Menus` section. Ajouter un `Menu` élément pour définir la barre d’outils.
+3. En haut de `Commands` la section, créez une `Menus` section. Ajoutez `Menu` un élément pour définir la barre d’outils.
 
     ```xml
     <Menus>
@@ -55,9 +55,9 @@ Cette procédure pas à pas montre comment ajouter une barre d’outils à une f
     </Menus>
     ```
 
-     Barres d’outils ne peuvent pas être imbriquées telles que des sous-menus. Par conséquent, vous n’êtes pas obligé d’affecter un parent. En outre, il est inutile définir une priorité, car l’utilisateur peut déplacer des barres d’outils. En règle générale, un placement initial d’une barre d’outils est défini par programmation, mais les modifications ultérieures apportées par l’utilisateur sont conservées.
+     Les barres d’outils ne peuvent pas être imbriquées comme des sous-hommes. Par conséquent, vous n’avez pas à affecter un parent. En outre, vous n’avez pas à définir une priorité, parce que l’utilisateur peut déplacer les barres d’outils. En règle générale, le placement initial d’une barre d’outils est défini de manière programmatique, mais les modifications ultérieures de l’utilisateur persistent.
 
-4. Dans la section groupes, définir un groupe pour qu’il contienne les commandes de la barre d’outils.
+4. Dans la section Groupes, définissez un groupe pour contenir les commandes de la barre d’outils.
 
     ```xml
 
@@ -66,7 +66,7 @@ Cette procédure pas à pas montre comment ajouter une barre d’outils à une f
     </Group>
     ```
 
-5. Dans la section boutons, changer le parent de l’élément bouton existant pour le groupe de la barre d’outils afin que la barre d’outils s’affiche.
+5. Dans la section Boutons, changez le parent de l’élément Bouton existant au groupe de barre d’outils afin que la barre d’outils soit affichée.
 
     ```xml
     <Button guid="guidTWTestCommandPackageCmdSet" id="TWTestCommandId" priority="0x0100" type="Button">
@@ -78,40 +78,40 @@ Cette procédure pas à pas montre comment ajouter une barre d’outils à une f
     </Button>
     ```
 
-     Par défaut, si une barre d’outils n’a aucune commande, il n’apparaît pas.
+     Par défaut, si une barre d’outils n’a pas de commandes, elle n’apparaît pas.
 
-     Étant donné que la nouvelle barre d’outils n’est pas automatiquement ajouté à la fenêtre outil, la barre d’outils doit être ajouté explicitement. Cette situation est présentée dans la section suivante.
+     Étant donné que la nouvelle barre d’outils n’est pas automatiquement ajoutée à la fenêtre d’outils, la barre d’outils doit être ajoutée explicitement. Cette situation est présentée dans la section suivante.
 
-## <a name="add-the-toolbar-to-the-tool-window"></a>Ajouter la barre d’outils à la fenêtre outil
+## <a name="add-the-toolbar-to-the-tool-window"></a>Ajouter la barre d’outils à la fenêtre d’outils
 
-1. Dans *TWTestCommandPackageGuids.cs* ajoutez les lignes suivantes.
+1. Dans *TWTestCommandPackageGuids.cs* ajouter les lignes suivantes.
 
     ```csharp
     public const string guidTWTestCommandPackageCmdSet = "00000000-0000-0000-0000-0000";  // get the GUID from the .vsct file
     public const int TWToolbar = 0x1000;
     ```
 
-2. Dans *TestToolWindow.cs* ajoutez le code suivant à l’aide d’instruction.
+2. Dans *TestToolWindow.cs* ajouter l’instruction suivante à l’aide.
 
     ```csharp
     using System.ComponentModel.Design;
     ```
 
-3. Dans le constructeur TestToolWindow, ajoutez la ligne suivante.
+3. Dans le constructeur TestToolWindow ajouter la ligne suivante.
 
     ```csharp
     this.ToolBar = new CommandID(new Guid(TWTestCommandPackageGuids.guidTWTestCommandPackageCmdSet), TWTestCommandPackageGuids.TWToolbar);
     ```
 
-## <a name="test-the-toolbar-in-the-tool-window"></a>La barre d’outils de test dans la fenêtre outil
+## <a name="test-the-toolbar-in-the-tool-window"></a>Testez la barre d’outils dans la fenêtre d’outils
 
-1. Générez le projet et commencez le débogage. L’instance expérimentale de Visual Studio doit apparaître.
+1. Générez le projet et commencez le débogage. L’instance expérimentale Visual Studio devrait apparaître.
 
-2. Sur le **vue / autres Windows** menu, cliquez sur **Test ToolWindow** pour afficher la fenêtre outil.
+2. Sur le **menu View / Other Windows,** cliquez sur Test **ToolWindow** pour afficher la fenêtre de l’outil.
 
-     Vous devez voir une barre d’outils (il ressemble à l’icône par défaut) en haut à gauche de la fenêtre outil, juste en dessous du titre.
+     Vous devriez voir une barre d’outils (il ressemble à l’icône par défaut) en haut à gauche de la fenêtre d’outil, juste en dessous du titre.
 
-3. Dans la barre d’outils, cliquez sur l’icône pour afficher le message **TWTestCommandPackage à l’intérieur de TWToolbar.TWTestCommand.MenuItemCallback()** .
+3. Sur la barre d’outils, cliquez sur l’icône pour afficher le message **TWTestCommandPackage Inside TWToolbar.TWTestCommand.MenuItemCallback()**.
 
 ## <a name="see-also"></a>Voir aussi
 - [Ajouter une barre d’outils](../extensibility/adding-a-toolbar.md)

@@ -1,5 +1,5 @@
 ---
-title: IDebugPointerObject::Dereference | Microsoft Docs
+title: IDebugPointerObject::Dereference Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugPointerObject::Dereference method
 ms.assetid: 196ec2cc-8569-4780-b217-23b24e7f50ca
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 381c6f392cccb398497204cc5772c5f9a00fd5b0
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: fe87d5db40ce663d84c9561e89a84e6fcb1684ed
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66331660"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80725565"
 ---
 # <a name="idebugpointerobjectdereference"></a>IDebugPointerObject::Dereference
-Obtient l’objet désigné.
+Obtient l’objet pointé vers.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -43,16 +43,16 @@ int Dereference(
 
 ## <a name="parameters"></a>Paramètres
 `dwIndex`\
-[in] Un décalage d’octet simple à partir du début de l’objet désigné.
+[dans] Un simple byte décalé dès le début de l’objet pointé du doigt.
 
 `ppObject`\
-[out] Retourne un [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) de l’objet qui représente l’objet vers lequel pointe, ainsi que décalage, le cas échéant.
+[out] Renvoie un objet [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) représentant l’objet pointé, plus décalage, le cas échéant.
 
 ## <a name="return-value"></a>Valeur de retour
- En cas de réussite, retourne S_OK ; Sinon, retourne un code d’erreur. Retourne E_FAIL si cet objet ne pointe pas vers un autre objet.
+ En cas de succès, les retours S_OK; autrement, renvoie un code d’erreur. Retourne E_FAIL si cet objet ne pointe pas vers un autre objet.
 
 ## <a name="remarks"></a>Notes
- L’objet vers lequel pointé peut être un type primitif ou un type plus complexe comme une classe ou structure.
+ L’objet pointé vers lui peut être un type primitif ou plus complexe comme une classe ou une structure.
 
 ## <a name="see-also"></a>Voir aussi
 - [IDebugPointerObject](../../../extensibility/debugger/reference/idebugpointerobject.md)

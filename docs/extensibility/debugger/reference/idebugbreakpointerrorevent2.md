@@ -1,5 +1,5 @@
 ---
-title: IDebugBreakpointErrorEvent2 | Microsoft Docs
+title: IDebugBreakpointErrorEvent2 - France Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugBreakpointErrorEvent2
 ms.assetid: adee79df-8db5-4510-a7df-c50f4dbf5e35
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: bae4a63ef03ca3b8d3fa642f7333ff2357084b47
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 09cb93f0f16420e56104f371d9caab262873390f
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66352936"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80735045"
 ---
 # <a name="idebugbreakpointerrorevent2"></a>IDebugBreakpointErrorEvent2
-Cette interface indique au Gestionnaire de débogage de session (SDM) qu’un point d’arrêt en attente ne peut pas être lié à un programme chargé, en raison d’un avertissement ou une erreur.
+Cette interface indique au gestionnaire de débogé de session (SDM) qu’un point d’arrêt en attente ne pouvait pas être lié à un programme chargé, soit en raison d’un avertissement ou d’une erreur.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -28,30 +28,30 @@ Cette interface indique au Gestionnaire de débogage de session (SDM) qu’un po
 IDebugBreakpointErrorEvent2 : IUnknown
 ```
 
-## <a name="notes-for-implementers"></a>Notes de publication pour les implémenteurs
- Le D’implémente cette interface dans le cadre de sa prise en charge des points d’arrêt. Le [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) interface doit être implémentée sur le même objet que cette interface (utilise le SDM [QueryInterface](/cpp/atl/queryinterface) pour accéder à la `IDebugEvent2` interface).
+## <a name="notes-for-implementers"></a>Notes pour les implémenteurs
+ Le DE implémente cette interface dans le cadre de son support pour les points de rupture. [L’interface IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) doit être implémentée sur le même objet que cette `IDebugEvent2` interface (le SDM utilise [QueryInterface](/cpp/atl/queryinterface) pour accéder à l’interface).
 
-## <a name="notes-for-callers"></a>Notes de publication pour les appelants
- Le DE crée et envoie cet objet d’événement lorsqu’un point d’arrêt en attente ne peut pas être lié au programme en cours de débogage. L’événement est envoyé à l’aide de la [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) fonction de rappel fournie par le SDM lorsqu’il est attaché au programme en cours de débogage.
+## <a name="notes-for-callers"></a>Notes pour les appelants
+ Le DE crée et envoie cet objet d’événement lorsqu’un point d’arrêt en attente ne peut pas être lié au débugged du programme. L’événement est envoyé en utilisant la fonction de rappel [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) fournie par le SDM lorsqu’elle s’est jointe au programme en cours de débbugged.
 
 ## <a name="methods-in-vtable-order"></a>Méthodes dans l'ordre Vtable
- Le tableau suivant présente les méthodes de `IDebugBreakpointErrorEvent2`.
+ Le tableau suivant montre `IDebugBreakpointErrorEvent2`les méthodes de .
 
 |Méthode|Description|
 |------------|-----------------|
-|[GetErrorBreakpoint](../../../extensibility/debugger/reference/idebugbreakpointerrorevent2-geterrorbreakpoint.md)|Obtient le [IDebugErrorBreakpoint2](../../../extensibility/debugger/reference/idebugerrorbreakpoint2.md) interface qui décrit l’avertissement ou l’erreur.|
+|[GetErrorBreakpoint](../../../extensibility/debugger/reference/idebugbreakpointerrorevent2-geterrorbreakpoint.md)|Obtient l’interface [IDebugErrorBreakpoint2](../../../extensibility/debugger/reference/idebugerrorbreakpoint2.md) qui décrit l’avertissement ou l’erreur.|
 
 ## <a name="remarks"></a>Notes
- Chaque fois qu’un point d’arrêt est lié, un événement est envoyé vers le SDM. Si le point d’arrêt ne peut pas être liée, un `IDebugBreakpointErrorEvent2` est envoyée ; sinon, un [IDebugBreakpointBoundEvent2](../../../extensibility/debugger/reference/idebugbreakpointboundevent2.md) est envoyé.
+ Chaque fois qu’un point d’arrêt est lié, un événement est envoyé au SDM. Si le point d’arrêt `IDebugBreakpointErrorEvent2` ne peut pas être lié, un est envoyé; autrement, un [IDebugBreakpointBoundEvent2](../../../extensibility/debugger/reference/idebugbreakpointboundevent2.md) est envoyé.
 
- Par exemple, lorsque la condition associée au point d’arrêt en attente ne parvient pas à analyser ou évaluer, un avertissement est envoyé que le point d’arrêt en attente ne peut pas être liée à ce stade. Cela peut se produire si le code pour le point d’arrêt n’a pas encore chargé.
+ Par exemple, lorsque la condition associée au point d’arrêt en attente ne parvient pas à analyser ou à évaluer, un avertissement est envoyé que le point d’arrêt en attente ne peut pas être lié pour le moment. Cela peut se produire si le code du point d’arrêt n’a pas encore chargé.
 
-## <a name="requirements"></a>Configuration requise
- En-tête : msdbg.h
+## <a name="requirements"></a>Spécifications
+ En-tête: msdbg.h
 
- Espace de noms : Microsoft.VisualStudio.Debugger.Interop
+ Namespace: Microsoft.VisualStudio.Debugger.Interop
 
- Assembly : Microsoft.VisualStudio.Debugger.Interop.dll
+ Assemblage: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>Voir aussi
 - [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md)

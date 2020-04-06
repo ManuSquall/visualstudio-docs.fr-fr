@@ -1,24 +1,24 @@
 ---
-title: IDebugProgramNameChangedEvent2 | Microsoft Docs
+title: IDebugProgramNameChangedEvent2 - France Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - IDebugProgramNameChangedEvent2 interface
 ms.assetid: be1f1cd5-0b2f-435c-a052-dca28a7c978d
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3b0b1ff52523a91bfa15192de56dfdc6f0f58354
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: ae58728601c3adbe6e37a00fd0694a5d71eef0b5
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66351201"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80722147"
 ---
 # <a name="idebugprogramnamechangedevent2"></a>IDebugProgramNameChangedEvent2
-Envoyé à partir du moteur de débogage (dé) pour le Gestionnaire de session de débogage (SDM) lorsque le nom d’un programme change.
+Envoyé du moteur de débogé (DE) au gestionnaire de débogé de session (SDM) lorsque le nom d’un programme change.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -26,15 +26,15 @@ Envoyé à partir du moteur de débogage (dé) pour le Gestionnaire de session d
 IDebugProgramNameChangedEvent2 : IUnknown
 ```
 
-## <a name="notes-for-implementers"></a>Notes de publication pour les implémenteurs
- Le D’implémente cette interface au rapport que le nom du programme a changé. Le [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) interface doit être implémentée sur le même objet que cette interface. Utilise le SDM [QueryInterface](/cpp/atl/queryinterface) pour accéder à la **IDebugEvent2** interface.
+## <a name="notes-for-implementers"></a>Notes pour les implémenteurs
+ Le DE implémente cette interface pour signaler que le nom du programme a changé. [L’interface IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) doit être implémentée sur le même objet que cette interface. Le SDM utilise [QueryInterface](/cpp/atl/queryinterface) pour accéder à l’interface **IDebugEvent2.**
 
-## <a name="notes-for-callers"></a>Notes de publication pour les appelants
- Le DE crée et envoie cet objet d’événement pour signaler un changement de nom de programme. Le D’envoie cet événement à l’aide de la [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) fonction de rappel qui est fournie par le SDM lorsqu’il est attaché au programme en cours de débogage. Le fournisseur de port personnalisé envoie cet événement à l’aide de que l’interface.
+## <a name="notes-for-callers"></a>Notes pour les appelants
+ Le DE crée et envoie cet objet d’événement pour signaler un changement de nom de programme. Le DE envoie cet événement en utilisant la fonction de rappel [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) qui est fournie par le SDM lorsqu’il est attaché au programme étant débogé. Le fournisseur de port personnalisé envoie cet événement en utilisant l’interface I.
 
-## <a name="requirements"></a>Configuration requise
- En-tête : Msdbg.h
+## <a name="requirements"></a>Spécifications
+ En-tête: Msdbg.h
 
- Espace de noms : Microsoft.VisualStudio.Debugger.Interop
+ Namespace: Microsoft.VisualStudio.Debugger.Interop
 
- Assembly : Microsoft.VisualStudio.Debugger.Interop.dll
+ Assemblage: Microsoft.VisualStudio.Debugger.Interop.dll

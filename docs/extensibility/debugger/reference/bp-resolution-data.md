@@ -1,5 +1,5 @@
 ---
-title: BP_RESOLUTION_DATA | Microsoft Docs
+title: BP_RESOLUTION_DATA Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - BP_RESOLUTION_DATA structure
 ms.assetid: 9e0b9000-6a84-47b9-b07a-367a75764389
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: b8fcf2443cdc013e6f81968336101b78ea220784
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 93a78f84c10af047e596459b68211b885d3c3085
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66346540"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80737843"
 ---
-# <a name="bpresolutiondata"></a>BP_RESOLUTION_DATA
-Décrit le résultat de la liaison d’un point d’arrêt de données.
+# <a name="bp_resolution_data"></a>BP_RESOLUTION_DATA
+Décrit le résultat de la liaison d’un point d’arrêt des données.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -47,26 +47,26 @@ public struct BP_RESOLUTION_DATA {
 
 ## <a name="members"></a>Membres
 `bstrDataExpr`\
-L’expression de données qui a été liée.
+L’expression des données qui a été liée.
 
 `bstrFunc`\
-Le nom de la fonction du point d’arrêt a lié dans (le cas échéant).
+Le nom de la fonction dans laquelle le point d’arrêt des données est lié (le cas échéant).
 
 `bstrImage`\
-Le nom du module (MyModule.dll, par exemple) que le point d’arrêt a lié dans.
+Le nom du module (MyModule.dll, par exemple) que le point de rupture de données a lié.
 
 `dwFlags`\
-Une valeur comprise entre le [BP_RES_DATA_FLAGS](../../../extensibility/debugger/reference/bp-res-data-flags.md) énumération, décrivant la façon dont le point d’arrêt de données est implémentée.
+Une valeur de [l’énumération BP_RES_DATA_FLAGS,](../../../extensibility/debugger/reference/bp-res-data-flags.md) décrivant comment le point d’arrêt des données est implémenté.
 
 ## <a name="remarks"></a>Notes
-Cette structure est un membre de la [BP_RESOLUTION_LOCATION](../../../extensibility/debugger/reference/bp-resolution-location.md) structure, qui est d’activer un membre de la [BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md) structure retournée par le [GetResolutionInfo](../../../extensibility/debugger/reference/idebugbreakpointresolution2-getresolutioninfo.md)(méthode).
+Cette structure est membre de la structure [BP_RESOLUTION_LOCATION,](../../../extensibility/debugger/reference/bp-resolution-location.md) qui est à son tour un membre de la structure [BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md) retournée par la méthode [GetResolutionInfo.](../../../extensibility/debugger/reference/idebugbreakpointresolution2-getresolutioninfo.md)
 
-## <a name="requirements"></a>Configuration requise
-En-tête : msdbg.h
+## <a name="requirements"></a>Spécifications
+En-tête: msdbg.h
 
-Espace de noms : Microsoft.VisualStudio.Debugger.Interop
+Namespace: Microsoft.VisualStudio.Debugger.Interop
 
-Assembly : Microsoft.VisualStudio.Debugger.Interop.dll
+Assemblage: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>Voir aussi
 - [Structures et unions](../../../extensibility/debugger/reference/structures-and-unions.md)

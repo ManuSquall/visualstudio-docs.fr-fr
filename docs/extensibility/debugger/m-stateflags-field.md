@@ -1,30 +1,30 @@
 ---
-title: Champ m_stateFlags | Microsoft Docs
+title: M_stateFlags Field ( Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - m_stateFlags field, Task class [.NET Framework debug engines]
 ms.assetid: 82b20efc-08f2-4cd2-91f6-4e01e3da906b
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8dee91fa96e16cdc2cd1cd75083c381422a99092
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: b504d134c8951072795dc2e202cf05082b12cb64
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66330853"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80738388"
 ---
-# <a name="mstateflags-field"></a>champ m_stateFlags
-Stocke des informations sur l’état actuel de la <xref:System.Threading.Tasks.Task> objet.
+# <a name="m_stateflags-field"></a>champ m_stateFlags
+Stocke des informations sur <xref:System.Threading.Tasks.Task> l’état actuel de l’objet.
 
- **Espace de noms :** <xref:System.Threading.Tasks?displayProperty=fullName>
+ **Espace nom:**<xref:System.Threading.Tasks?displayProperty=fullName>
 
- **Assembly :** mscorlib (dans *mscorlib.dll*)
+ **Assemblée:** mscorlib (en *mscorlib.dll*)
 
- Étant donné que vous ne pouvez pas accéder à ce membre interne du .NET Framework, la syntaxe suivante est fournie en commun Intermediate Language (CIL).
+ Parce que vous ne pouvez pas accéder à ce membre interne à partir du cadre .NET, la syntaxe suivante est fournie dans common Intermediate Language (CIL).
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -33,9 +33,9 @@ Stocke des informations sur l’état actuel de la <xref:System.Threading.Tasks.
 ```
 
 ## <a name="remarks"></a>Notes
- Vous utilisez généralement le <xref:System.Threading.Tasks.Task.Status%2A?displayProperty=fullName> propriété pour accéder à cette valeur.
+ Vous utilisez <xref:System.Threading.Tasks.Task.Status%2A?displayProperty=fullName> généralement la propriété pour accéder à cette valeur.
 
- Ce membre peut être n’importe quelle combinaison des valeurs suivantes :
+ Ce membre peut être n’importe quelle combinaison des valeurs suivantes :
 
 - [TASK_STATE_EXECUTED](../../extensibility/debugger/task-state-executed-field.md)
 
