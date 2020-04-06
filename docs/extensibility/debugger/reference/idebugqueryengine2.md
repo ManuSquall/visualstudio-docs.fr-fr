@@ -1,5 +1,5 @@
 ---
-title: IDebugQueryEngine2 | Microsoft Docs
+title: IDebugQueryEngine2 - France Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugQueryEngine2 interface
 ms.assetid: 8f0e1838-a818-4459-9138-a3dceb7408de
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ad823c2aab4d2ca17b95c989925b8ffe16b1504d
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 31b1784055c54c9243237c81edb708e13de9bc5b
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66339849"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80720654"
 ---
 # <a name="idebugqueryengine2"></a>IDebugQueryEngine2
-Cette interface permet à la session de débogage manager (SDM) extraire une interface qui représente le moteur de débogage (dé).
+Cette interface permet au gestionnaire de débogé de session (SDM) de récupérer une interface qui représente le moteur de débogé (DE).
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -28,28 +28,28 @@ Cette interface permet à la session de débogage manager (SDM) extraire une int
 IDebugQueryEngine2 : IUnknown
 ```
 
-## <a name="notes-for-implementers"></a>Notes de publication pour les implémenteurs
- Le D’implémente cette interface sur les objets qui implémentent les interfaces DE courants (tels que [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md), [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md), et [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md)) dans afin d’autoriser l’accès à la [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md) interface de la DE lui-même.
+## <a name="notes-for-implementers"></a>Notes pour les implémenteurs
+ Le DE implémente cette interface sur les objets qui implémentent les interfaces DE les plus courantes (comme [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md), [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md), et [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md)) afin de permettre l’accès à [l’interface IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md) de la DE elle-même.
 
-## <a name="notes-for-callers"></a>Notes de publication pour les appelants
- Appelez [QueryInterface](/cpp/atl/queryinterface) sur une interface DE type pour obtenir cette interface.
+## <a name="notes-for-callers"></a>Notes pour les appelants
+ Appelez [QueryInterface](/cpp/atl/queryinterface) sur une interface DE typique pour obtenir cette interface.
 
 ## <a name="methods-in-vtable-order"></a>Méthodes dans l'ordre Vtable
- Le tableau suivant présente les méthodes de `IDebugQueryEngine2`.
+ Le tableau suivant montre `IDebugQueryEngine2`les méthodes de .
 
 |Méthode|Description|
 |------------|-----------------|
-|[GetEngineInterface](../../../extensibility/debugger/reference/idebugqueryengine2-getengineinterface.md)|Obtient une interface de (dé) de moteur de débogage personnalisé.|
+|[GetEngineInterface](../../../extensibility/debugger/reference/idebugqueryengine2-getengineinterface.md)|Obtient une interface personnalisée de moteur de débogé (DE).|
 
 ## <a name="remarks"></a>Notes
- Cette interface est généralement implémentée dans l’objet qui implémente le [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) interface pour prendre en charge de la causalité ordonné parcourant des fonctions ; autrement dit, lorsque le débogueur est sortir pas à une fonction, le Pour exécuter la fonction Next peut-être pas la fonction précédente sur la pile, mais une fonction dans un autre thread complètement. Pour une définition de « causalité », consultez la [glossaire du débogueur Visual Studio](../../../extensibility/debugger/reference/visual-studio-debugger-glossary.md).
+ Cette interface est généralement implémentée dans l’objet qui implémente [l’interface IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) afin de soutenir la causalité ordonnée en franchiant les fonctions; c’est-à-dire, lorsque le débbuggeur sort d’une fonction, la fonction suivante à exécuter peut ne pas être la fonction précédente sur la pile, mais une fonction dans un autre thread tout à fait. Pour une définition de la « causalité », voir le [Visual Studio Debugger Glossary](../../../extensibility/debugger/reference/visual-studio-debugger-glossary.md).
 
-## <a name="requirements"></a>Configuration requise
- En-tête : msdbg.h
+## <a name="requirements"></a>Spécifications
+ En-tête: msdbg.h
 
- Espace de noms : Microsoft.VisualStudio.Debugger.Interop
+ Namespace: Microsoft.VisualStudio.Debugger.Interop
 
- Assembly : Microsoft.VisualStudio.Debugger.Interop.dll
+ Assemblage: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>Voir aussi
 - [Interfaces de base](../../../extensibility/debugger/reference/core-interfaces.md)

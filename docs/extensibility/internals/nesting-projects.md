@@ -1,5 +1,5 @@
 ---
-title: Imbrication de projets | Microsoft Docs
+title: Projets de nidification (fr) Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -8,29 +8,29 @@ helpviewer_keywords:
 - projects [Visual Studio SDK], child projects
 - projects [Visual Studio SDK], nesting
 ms.assetid: 12cce037-9840-4761-845e-5abd5fb317b0
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f291a9c105c8207fb6721d32d4d0481e49dd4295
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 814780fa8e7e57a022a75b2e09115cfa55a1b8be
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72726424"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80707034"
 ---
 # <a name="nesting-projects"></a>Imbriquer des projets
-Les développeurs d’applications d’entreprise qui utilisent votre package VS peuvent facilement regrouper des types similaires de projets dans [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] à l’aide de l' *imbrication de projet*. Par exemple, le projet de modèle d’entreprise utilise des projets imbriqués pour regrouper des projets en catégories. Les projets de façade métier, les projets d’interface utilisateur Web, etc., sont regroupés dans une même catégorie.
+Les développeurs d’applications d’entreprise qui utilisent votre [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] forfait VS peuvent commodément regrouper des types similaires de projets en utilisant *la nidification du projet.* Par exemple, le projet Enterprise Template utilise des projets imbriqués pour regrouper des projets en catégories. Les projets de façade d’entreprise, les projets d’interface utilisateur Web, etc. sont regroupés dans une catégorie.
 
- Dans ce scénario, il n’existe aucune limite au nombre de projets que le développeur peut imbriquer sous chaque projet parent, même si le développeur peut fournir des limites par programmation. Ce type de regroupement peut également être récursif. dans ce cas, les projets du même type qu’un projet enfant peuvent être imbriqués sous l’enfant pour devenir un sous-projet de l’enfant, qui est un sous-projet du parent.
+ Dans ce scénario, il n’y a pas de limite au nombre de projets que le promoteur peut imbriquer dans le cadre de chaque projet parent, bien que le promoteur puisse fournir des limites programmatiques. Ce type de regroupement peut également être rendu récursif, auquel cas les projets du même type qu’un projet d’enfant peuvent être imbriqués sous l’enfant pour devenir un sous-projet de l’enfant, qui est un sous-projet du parent.
 
- L’imbrication de projets n’est pas une partie intrinsèque de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Vous devez écrire le code pour activer l’imbrication et l’imbrication de sous-projets dans les projets enfants. Le projet parent est un VSPackage spécial, ou type de projet, créé et inscrit avec son propre GUID, qui comprend le code requis pour implémenter l’imbrication de projet.
+ La nidification du projet [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]n’est pas une partie intrinsèque de . Vous devez écrire le code pour permettre la nidification et la nidification sous-projet dans les projets pour enfants. Le projet parent est un VSPackage spécial, ou type de projet, créé et enregistré avec son propre GUID qui comprend le code qui est nécessaire pour implémenter la nidification du projet.
 
- Vous trouverez un exemple sur la façon d’imbriquer des projets dans la rubrique [Comment : implémenter des projets imbriqués](../../extensibility/internals/how-to-implement-nested-projects.md).
+ Vous pouvez trouver un exemple sur la façon de nicher des projets dans le [Comment mettre en œuvre des projets imbriqués](../../extensibility/internals/how-to-implement-nested-projects.md).
 
 ## <a name="nested-projects-example"></a>Exemple de projets imbriqués
- ![Solution de projets imbriqués](../../extensibility/internals/media/vsnestedprojects.gif "vsNestedProjects") Exemple de projets imbriqués
+ ![Solution de projets imbriqués](../../extensibility/internals/media/vsnestedprojects.gif "vsNestedProjets") Exemple de projets imbriqués
 
 ## <a name="see-also"></a>Voir aussi
 - [Considérations pour décharger et recharger des projets imbriqués](../../extensibility/internals/considerations-for-unloading-and-reloading-nested-projects.md)
@@ -39,5 +39,5 @@ Les développeurs d’applications d’entreprise qui utilisent votre package VS
 - [Implémentation de la gestion des commandes pour les projets imbriqués](../../extensibility/internals/implementing-command-handling-for-nested-projects.md)
 - [Filtrage de la boîte de dialogue AddItem pour les projets imbriqués](../../extensibility/internals/filtering-the-additem-dialog-box-for-nested-projects.md)
 - [Liste de vérification : création de nouveaux types de projets](../../extensibility/internals/checklist-creating-new-project-types.md)
-- [Paramètres de contexte](../../extensibility/internals/context-parameters.md)
+- [Paramètres contextuelles](../../extensibility/internals/context-parameters.md)
 - [Fichier Assistant (.Vsz)](../../extensibility/internals/wizard-dot-vsz-file.md)

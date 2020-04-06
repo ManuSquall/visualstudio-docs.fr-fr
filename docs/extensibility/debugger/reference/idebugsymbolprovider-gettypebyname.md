@@ -1,5 +1,5 @@
 ---
-title: IDebugSymbolProvider::GetTypeByName | Microsoft Docs
+title: IDebugSymbolProvider::GetTypeByName (fr) Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugSymbolProvider::GetTypeByName method
 ms.assetid: b9d88d3b-8b75-484a-b9cc-dc8c0fbb4bc8
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: fca036da331795c0f7c17f848bbea1e682796894
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: ce4dfab898190eb89c58503e378b410ddfc240de
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66347408"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80719184"
 ---
 # <a name="idebugsymbolprovidergettypebyname"></a>IDebugSymbolProvider::GetTypeByName
-Cette méthode mappe un nom de symbole à un type de symbole.
+Cette méthode cartographie un nom de symbole à un type de symbole.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -45,16 +45,16 @@ int GetTypeByName(
 
 ## <a name="parameters"></a>Paramètres
 `pszClassName`\
-[in] Le nom du symbole.
+[dans] Le nom du symbole.
 
 `nameMatch`\
-[in] Sélectionne le type de correspondance, par exemple, respect de la casse. Une valeur comprise entre le [NAME_MATCH](../../../extensibility/debugger/reference/name-match.md) énumération.
+[dans] Sélectionne le type de correspondance, par exemple, sensible aux cas. Une valeur de [l’énumération NAME_MATCH.](../../../extensibility/debugger/reference/name-match.md)
 
 `ppField`\
-[out] Retourne le type de symbole qu’un [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) objet.
+[out] Retourne le type de symbole comme un objet [IDebugField.](../../../extensibility/debugger/reference/idebugfield.md)
 
 ## <a name="return-value"></a>Valeur de retour
- En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.
+ En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
 ## <a name="remarks"></a>Notes
  Cette méthode est une version générique de [GetClassTypeByName](../../../extensibility/debugger/reference/idebugsymbolprovider-getclasstypebyname.md).

@@ -1,27 +1,27 @@
 ---
-title: Contribuer à la boîte de dialogue Nouvel élément Ajouter | Microsoft Docs
+title: Contribuer à l’ajout d’une nouvelle boîte de dialogue d’articles (fr) Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - Add New Item dialog box, contributing to
 ms.assetid: b2e53175-9372-4d17-8c2b-9264c9e51e9c
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 443f52edda5f3bedb2e3f8c8dbbe748254fd7be7
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 83444d9be6ba23392b792a0187bf46dc9920c465
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66335569"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80709277"
 ---
-# <a name="contribute-to-the-add-new-item-dialog-box"></a>Contribuer à la boîte de dialogue Ajouter un nouvel élément
-Un sous-type de projet peut fournir un nouveau répertoire complète d’éléments pour le **ajouter un nouvel élément** boîte de dialogue en vous inscrivant **ajouter un élément** modèles sous le **projets** sous-clé de Registre.
+# <a name="contribute-to-the-add-new-item-dialog-box"></a>Contribuer à la boîte de dialogue Add New Item
+Un sous-type de projet peut fournir un nouvel annuaire complet des éléments pour la boîte de dialogue **Add New Item** en enregistrant des modèles Add **Item** sous le sous-clé du registre **des projets.**
 
-## <a name="register-add-new-item-templates"></a>Inscrire les modèles Ajouter un nouvel élément
- Cette section se trouve sous **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0\Projects** dans le Registre. Les entrées de Registre ci-dessous supposent un [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] projet agrégé par un sous-type de projet hypothétique. Les entrées pour le [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] projet sont répertoriés ci-dessous.
+## <a name="register-add-new-item-templates"></a>Inscrivez-vous Ajouter de nouveaux modèles d’objets
+ Cette section est située sous **HKEY_LOCAL_MACHINE-SOFTWARE-Microsoft-VisualStudio-8.0-Projets** dans le registre. Les inscriptions au [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] registre ci-dessous supposent un projet agrégé par un sous-type hypothétique de projet. Les entrées [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] pour le projet sont énumérées ci-dessous.
 
 ```
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0\Projects\{F184B08F-C81C-45F6-A57F-5ABD9991F28F}]
@@ -35,12 +35,12 @@ Un sous-type de projet peut fournir un nouveau répertoire complète d’éléme
 "TemplatesDir"="projectSubTypeTemplatesDir\\VBProjectItems"
 ```
 
- Le **AddItemTemplates\TemplateDirs** sous-clé contient des entrées de Registre avec le chemin d’accès au répertoire dans lequel les éléments mis à disposition dans le **ajouter un nouvel élément** boîte de dialogue sont placés.
+ Le sous-clé **AddItemTemplates-TemplateDirs** contient des entrées de registre avec le chemin vers l’annuaire où les articles mis à disposition dans la boîte de dialogue **Add New Item** sont placés.
 
- L’environnement charge automatiquement tous les **AddItemTemplates** données sous le **projets** sous-clé de Registre. Ces données peuvent inclure les données pour les implémentations de projet de base, ainsi que les données de types de sous-type de projet spécifique. Chaque sous-type de projet est identifiée par un type de projet **GUID**. Le sous-type de projet peut spécifier qu’un autre ensemble de **ajouter un élément** modèles doivent être utilisés pour une instance de projet versionné particulier en prenant en charge la `VSHPROPID_ AddItemTemplatesGuid` énumération à partir de <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID2> dans <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.GetProperty%2A> mise en œuvre pour retourner la valeur GUID du sous-type de projet. Si le `VSHPROPID_AddItemTemplatesGuid` propriété n’est pas spécifiée, le projet de base GUID est utilisé.
+ L’environnement charge automatiquement toutes les données **AddItemTemplates** sous la sous-clé du registre **des projets.** Ces données peuvent inclure les données relatives aux implémentations de projets de base ainsi que les données relatives à des types spécifiques de sous-types de projets. Chaque sous-type de projet est identifié par un type de projet **GUID**. Le sous-type de projet peut spécifier qu’un autre ensemble de modèles `VSHPROPID_ AddItemTemplatesGuid` **d’éléments d’ajout** doit être utilisé pour une instance de projet aromatisée particulière en soutenant le recensement de <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID2> la mise en <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.GetProperty%2A> œuvre pour retourner la valeur GUID du sous-type du projet. Si `VSHPROPID_AddItemTemplatesGuid` la propriété n’est pas spécifiée, le projet de base GUID est utilisé.
 
- Vous pouvez filtrer les éléments dans le **ajouter un nouvel élément** boîte de dialogue en implémentant le <xref:Microsoft.VisualStudio.Shell.Interop.IVsFilterAddProjectItemDlg> interface sur l’objet d’agrégateur de sous-type de projet. Par exemple, un sous-type de projet qui implémente un projet de base de données en agrégeant un [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] projet d’équipe, pouvez filtrer la [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] des éléments spécifiques à partir de la **ajouter un nouvel élément** boîte de dialogue par l’implémentation du filtrage et activer, pouvez ajouter les éléments spécifiques au projet de base de données en prenant en charge `VSHPROPID_ AddItemTemplatesGuid` dans <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.GetProperty%2A>. Pour plus d’informations sur le filtrage et l’ajout d’éléments à la **ajouter un nouvel élément** boîte de dialogue, consultez [ajouter des éléments à la boîte de dialogue Ajouter un nouvel élément](../../extensibility/internals/adding-items-to-the-add-new-item-dialog-boxes.md).
+ Vous pouvez filtrer les éléments de la boîte <xref:Microsoft.VisualStudio.Shell.Interop.IVsFilterAddProjectItemDlg> de dialogue Add New **Item** en implémentant l’interface sur l’objet d’agrégateur de sous-type de projet. Par exemple, un sous-type de projet qui implémente un [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] projet [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] de base de données en agrégeant un projet, peut filtrer les éléments `VSHPROPID_ AddItemTemplatesGuid` <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.GetProperty%2A>spécifiques de la boîte de dialogue Add **New Item** en implémentant le filtrage, et à son tour, peut ajouter des éléments spécifiques à un projet de base de données en soutenant . Pour plus d’informations sur le filtrage et l’ajout d’éléments à la boîte de dialogue **Add New Item,** voir [Ajouter des éléments à la boîte de dialogue Add New Item](../../extensibility/internals/adding-items-to-the-add-new-item-dialog-boxes.md).
 
 ## <a name="see-also"></a>Voir aussi
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsFilterAddProjectItemDlg2>
-- [CATID des objets qui sont généralement utilisés pour étendre des projets](../../extensibility/internals/catids-for-objects-that-are-typically-used-to-extend-projects.md)
+- [CATIDs pour les objets qui sont généralement utilisés pour étendre les projets](../../extensibility/internals/catids-for-objects-that-are-typically-used-to-extend-projects.md)

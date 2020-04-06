@@ -1,5 +1,5 @@
 ---
-title: IEnumDebugPortSuppliers2 | Microsoft Docs
+title: IEnumDebugPortSuppliers2 - France Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IEnumDebugPortSuppliers2
 ms.assetid: cd0a73dc-dd25-46fd-8c4f-5b011501afeb
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 39d9d9462fe1951f01927b9180fa8a99aee535be
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: de0bfc5b387df9b347e4a58d97601a5e1e70f1a4
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66326390"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80715934"
 ---
 # <a name="ienumdebugportsuppliers2"></a>IEnumDebugPortSuppliers2
-Cette interface énumère les fournisseurs de port.
+Cette interface énumère les fournisseurs portuaires.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -28,32 +28,32 @@ Cette interface énumère les fournisseurs de port.
 IEnumDebugPortSuppliers2 : IUnknown
 ```
 
-## <a name="notes-for-implementers"></a>Notes de publication pour les implémenteurs
- Visual Studio implémente cette interface pour représenter une liste de fournisseurs de port.
+## <a name="notes-for-implementers"></a>Notes pour les implémenteurs
+ Visual Studio implémente cette interface pour représenter une liste de fournisseurs portuaires.
 
-## <a name="notes-for-callers"></a>Notes de publication pour les appelants
- Appelez [EnumPortSuppliers](../../../extensibility/debugger/reference/idebugcoreserver2-enumportsuppliers.md) pour obtenir une liste de fournisseurs de port.
+## <a name="notes-for-callers"></a>Notes pour les appelants
+ Appelez [EnumPortSuppliers](../../../extensibility/debugger/reference/idebugcoreserver2-enumportsuppliers.md) pour obtenir une liste des fournisseurs portuaires.
 
 ## <a name="methods-in-vtable-order"></a>Méthodes dans l'ordre Vtable
- Le tableau suivant présente les méthodes de `IEnumDebugPortSuppliers2`.
+ Le tableau suivant montre `IEnumDebugPortSuppliers2`les méthodes de .
 
 |Méthode|Description|
 |------------|-----------------|
-|[Next](../../../extensibility/debugger/reference/ienumdebugportsuppliers2-next.md)|Récupère un nombre spécifié de fournisseurs de port dans une séquence d’énumération.|
-|[Skip](../../../extensibility/debugger/reference/ienumdebugportsuppliers2-skip.md)|Ignore un nombre spécifié de fournisseurs de port dans une séquence d’énumération.|
-|[Reset](../../../extensibility/debugger/reference/ienumdebugportsuppliers2-reset.md)|Réinitialise une séquence d’énumération au début.|
-|[Clone](../../../extensibility/debugger/reference/ienumdebugportsuppliers2-clone.md)|Crée un énumérateur qui contient le même état d’énumération que l’énumérateur en cours.|
-|[GetCount](../../../extensibility/debugger/reference/ienumdebugportsuppliers2-getcount.md)|Obtient le nombre de fournisseurs de port dans l’énumérateur.|
+|[Suivant](../../../extensibility/debugger/reference/ienumdebugportsuppliers2-next.md)|Récupère un nombre précis de fournisseurs portuaires dans une séquence de recensement.|
+|[Ignorer](../../../extensibility/debugger/reference/ienumdebugportsuppliers2-skip.md)|Il saute un nombre précis de fournisseurs portuaires dans une séquence de recensement.|
+|[Réinitialiser](../../../extensibility/debugger/reference/ienumdebugportsuppliers2-reset.md)|Réinitialise une séquence d'énumération.|
+|[Clone](../../../extensibility/debugger/reference/ienumdebugportsuppliers2-clone.md)|Crée un enumérateur qui contient le même état de recensement que l’enumérateur actuel.|
+|[GetCount](../../../extensibility/debugger/reference/ienumdebugportsuppliers2-getcount.md)|Obtient le nombre de fournisseurs portuaires dans un enumérateur.|
 
 ## <a name="remarks"></a>Notes
- Un moteur de débogage n’a généralement pas besoin d’obtenir cette interface.
+ Un moteur de débogé n’a généralement pas besoin d’obtenir cette interface.
 
-## <a name="requirements"></a>Configuration requise
- En-tête : msdbg.h
+## <a name="requirements"></a>Spécifications
+ En-tête: msdbg.h
 
- Espace de noms : Microsoft.VisualStudio.Debugger.Interop
+ Namespace: Microsoft.VisualStudio.Debugger.Interop
 
- Assembly : Microsoft.VisualStudio.Debugger.Interop.dll
+ Assemblage: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>Voir aussi
 - [Interfaces de base](../../../extensibility/debugger/reference/core-interfaces.md)

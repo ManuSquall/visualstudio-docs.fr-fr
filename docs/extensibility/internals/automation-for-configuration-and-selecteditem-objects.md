@@ -1,39 +1,39 @@
 ---
-title: Automatisation de la Configuration et des objets SelectedItem | Microsoft Docs
+title: Automatisation pour la configuration et les objets SélectionnésItem Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - automation [Visual Studio SDK], SelectedItem object
 - automation [Visual Studio SDK], builds
 ms.assetid: 120377f1-51aa-4445-b2f7-06ab7fc2b47f
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e6c9dc8012433f9ec73f15b9249f6b7ac08bdad7
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 0341cdf56b32b8b1ac77104b3f3e813ae0610767
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66347972"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80709973"
 ---
-# <a name="automation-for-configuration-and-selecteditem-objects"></a>Automation pour les objets de Configuration et SelectedItem
+# <a name="automation-for-configuration-and-selecteditem-objects"></a>Automatisation pour les objets Configuration et SelectedItem
 
-Vous pouvez automatiser la génération et le processus de l’élément sélectionné dans Visual Studio.
+Vous pouvez automatiser les processus de construction et d’objets sélectionnés dans Visual Studio.
 
-## <a name="automation-for-builds"></a>Automation pour les builds
+## <a name="automation-for-builds"></a>Automatisation pour les constructions
 
-Build ou la configuration dispose d’un modèle automation qui est fourni lorsque vous implémentez <xref:Microsoft.VisualStudio.Shell.Interop.IVsCfgProvider>. Pour plus d’informations, consultez [Présentation des configurations de build](../../ide/understanding-build-configurations.md).
+Construire ou configuration a un modèle d’automatisation qui est fourni lorsque vous implémentez <xref:Microsoft.VisualStudio.Shell.Interop.IVsCfgProvider>. Pour plus d’informations, consultez [Présentation des configurations de build](../../ide/understanding-build-configurations.md).
 
-Si vous créez un VSPackage et que vous souhaitez contrôler les options de configuration, vous devez utiliser le modèle automation.
+Si vous créez un VSPackage et souhaitez contrôler les options de configuration, vous devez utiliser le modèle d’automatisation.
 
-## <a name="automation-for-selecteditem"></a>Automatisation de la propriété SelectedItem
+## <a name="automation-for-selecteditem"></a>Automatisation pour SelectedItem
 
-Vous n’êtes pas obligé de fournir une implémentation pour le `SelectedItem` , car Visual Studio contient une implémentation standard de l’objet. Toutefois, vous pouvez implémenter le `SelectedItem` de l’objet si vous préférez. Vous devez implémenter un objet qui contient le `SelectedItem` interface et renvoie une réponse à un appel à la <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetPropertyPage%2A> méthode avec `VSITEMID` définie sur [__VSHPROPID. VSHPROPID_ExtSelectedItem](<xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID.VSHPROPID_ExtSelectedItem>).
+Vous n’avez pas à `SelectedItem` fournir une implémentation pour l’objet parce que Visual Studio contient une implémentation standard. Cependant, vous pouvez `SelectedItem` implémenter l’objet si vous préférez. Vous devez implémenter `SelectedItem` un objet qui contient l’interface et retourner une réponse à un appel à la <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetPropertyPage%2A> méthode avec `VSITEMID` défini à [__VSHPROPID. VSHPROPID_ExtSelectedItem](<xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID.VSHPROPID_ExtSelectedItem>).
 
 ## <a name="see-also"></a>Voir aussi
 
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetPropertyPage%2A>
-- [Contribuer au modèle automation](../../extensibility/internals/contributing-to-the-automation-model.md)
+- [Contribuer au modèle d’automatisation](../../extensibility/internals/contributing-to-the-automation-model.md)
 - [Présentation des configurations de build](../../ide/understanding-build-configurations.md)

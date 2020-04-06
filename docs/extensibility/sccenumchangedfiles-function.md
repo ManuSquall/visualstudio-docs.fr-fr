@@ -1,5 +1,5 @@
 ---
-title: Fonction SccEnumChangedFiles | Microsoft Docs
+title: Fonction SccEnumChangedFiles (fr) Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - SccEnumChangedFiles function
 ms.assetid: 76cac510-107b-4c1a-ba60-9c39b6db2e71
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 18eab5e5785ea003976c7e291028d5ff964177d8
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 0b1826a87b20d6bc92254fc4a86b8e0b756400ec
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66351866"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80700906"
 ---
 # <a name="sccenumchangedfiles-function"></a>Fonction SccEnumChangedFiles
-Obtenez la liste des fichiers locaux, cette fonction détermine quels fichiers sont différents des versions correspondantes dans la base de données de contrôle de code source.
+Compte tenu d’une liste de fichiers locaux, cette fonction détermine quels fichiers sont différents des versions correspondantes dans la base de données de contrôle du code source.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -37,31 +37,31 @@ SCCRTN SccEnumChangedFiles(
 ### <a name="parameters"></a>Paramètres
  pContext
 
-[in] Le pointeur de contexte de plug-in de contrôle de code source.
+[dans] Le pointeur de contexte de plug-in de contrôle de source.
 
  hWnd
 
-[in] Handle vers la fenêtre de l’IDE que le plug-in de contrôle de code source peut utiliser en tant que parent pour les boîtes de dialogue qu’il fournit.
+[dans] Une poignée à la fenêtre IDE que le plug-in de contrôle source peut utiliser comme parent pour toutes les boîtes de dialogue qu’il fournit.
 
  cFiles
 
-[in] Nombre de noms de fichiers spécifié dans le `lpFileNames` tableau. Spécifie également la taille de `plIsFileDifferent` tableau.
+[dans] Nombre de noms de `lpFileNames` fichiers spécifiés dans le tableau. Spécifie `plIsFileDifferent` également la taille de la gamme.
 
  lpFileNames
 
-[in] Tableau des noms de fichier local à vérifier.
+[dans] Array de noms de fichiers locaux à vérifier.
 
  plIsFileDifferent
 
-[in, out] Tableau de valeurs indiquant l’état de la différence de chaque fichier (tableau doit avoir au moins `cFiles` entrées). Valeur différente de zéro signifie que le fichier est différent.
+[dans, dehors] Array de valeurs indiquant l’état de différence `cFiles` de chaque fichier (tableau doit avoir au moins des entrées). Nonzero signifie que le fichier est différent.
 
-## <a name="return-value"></a>Valeur de retour
- L’implémentation de plug-in de contrôle de source de cette fonction est censée retourner l’une des valeurs suivantes :
+## <a name="return-value"></a>Valeur retournée
+ La mise en œuvre plug-in de cette fonction de contrôle source devrait renvoyer l’une des valeurs suivantes :
 
-|Value|Description|
+|Valeur|Description|
 |-----------|-----------------|
-|SCC_OK|Opération achevée avec succès.|
+|SCC_OK|Opération exécutée avec succès.|
 |SCC_UNSPECIFIEDERROR|Erreur générique.|
 
 ## <a name="see-also"></a>Voir aussi
-- [Fonctions d’API source contrôle plug-in](../extensibility/source-control-plug-in-api-functions.md)
+- [Fonctions d’API plug-in de contrôle des sources](../extensibility/source-control-plug-in-api-functions.md)

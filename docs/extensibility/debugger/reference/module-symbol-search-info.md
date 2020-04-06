@@ -1,5 +1,5 @@
 ---
-title: MODULE_SYMBOL_SEARCH_INFO | Microsoft Docs
+title: MODULE_SYMBOL_SEARCH_INFO Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,24 +7,24 @@ f1_keywords:
 helpviewer_keywords:
 - MODULE_SYMBOL_SEARCH_INFO structure
 ms.assetid: 432aff03-08a5-4c5a-b2d5-e212090fc70a
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: c521ebe321813013b83a951d4d2aa5f60fd1646d
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 5f15587759c4f665d1593d1298c47459a0e64aac
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66346613"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80714243"
 ---
-# <a name="modulesymbolsearchinfo"></a>MODULE_SYMBOL_SEARCH_INFO
+# <a name="module_symbol_search_info"></a>MODULE_SYMBOL_SEARCH_INFO
 
-Contient des informations d’état sur les chemins de recherche de symbole qui a été effectuée dans.
+Contient des informations d’état sur les chemins de recherche des symboles qui ont été recherchés.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -46,22 +46,22 @@ public struct MODULE_SYMBOL_SEARCH_INFO {
 ## <a name="members"></a>Membres
 
 `dwValidFields`\
-Une combinaison d’indicateurs de la [SYMBOL_SEARCH_INFO_FIELDS](../../../extensibility/debugger/reference/symbol-search-info-fields.md) énumération spécifiant le type d’information de recherche décrit dans cette structure.
+Une combinaison de drapeaux de [l’SYMBOL_SEARCH_INFO_FIELDS](../../../extensibility/debugger/reference/symbol-search-info-fields.md) énumération précisant le type d’information de recherche décrite dans cette structure.
 
 `bstrVerboseSearchInfo`\
-Chemin de recherche et les résultats concaténés en une seule chaîne.
+Chemin de recherche et résultats concatenated en une seule chaîne.
 
 ## <a name="remarks"></a>Notes
 
-Cette structure est retournée à partir d’un appel à la [GetSymbolInfo](../../../extensibility/debugger/reference/idebugmodule3-getsymbolinfo.md) (méthode).
+Cette structure est revenue d’un appel à la méthode [GetSymbolInfo.](../../../extensibility/debugger/reference/idebugmodule3-getsymbolinfo.md)
 
-Si le `bstrVerboseSearchInfo` champ n’est pas vide, puis il contient une liste de chemins de recherche et les résultats de cette recherche. La liste est mis en forme avec un chemin d’accès, suivie de points de suspension («... »), suivi par le résultat. S’il existe plusieurs paires de résultat de chemin d’accès, chaque paire est séparée par une paire (retour chariot /) de « \r\n ». Le modèle ressemble à ceci :
+Si `bstrVerboseSearchInfo` le champ n’est pas vide, alors il contient une liste des chemins recherchés et les résultats de cette recherche. La liste est formatée avec un chemin, suivi d’une ellipsis ("..."), suivie par le résultat. S’il y a plus d’une paire de résultats de chemin, alors chaque paire est séparée par une paire de « r’n » (carriage-return/linefeed). Le modèle ressemble à ceci:
 
-\<chemin d’accès >... \<résultat > \r\n\<chemin d’accès >... \<résultat > \r\n\<chemin d’accès >... \<résultat >
+\<chemin>... \<résultat>\<chemin>... \<résultat>\<chemin>... \<résultat>
 
-Notez que la dernière entrée n’est pas une séquence \r\n.
+Notez que la dernière entrée n’a pas de séquence de r’n.
 
-Voici un éventuel `bstrVerboseSearchInfo` chaîne qui a été envoyé vers une sortie standard.
+Voici une `bstrVerboseSearchInfo` chaîne possible qui a été envoyé à la norme.
 
 `c:\symbols\user32.pdb... File not found.`
 
@@ -69,13 +69,13 @@ Voici un éventuel `bstrVerboseSearchInfo` chaîne qui a été envoyé vers une 
 
 `\\symbols\symbols\user32.dll\0a8sd0ad8ad\user32.pdb... Symbols loaded.`
 
-## <a name="requirements"></a>Configuration requise
+## <a name="requirements"></a>Spécifications
 
-En-tête : msdbg.h
+En-tête: msdbg.h
 
-Espace de noms : Microsoft.VisualStudio.Debugger.Interop
+Namespace: Microsoft.VisualStudio.Debugger.Interop
 
-Assembly : Microsoft.VisualStudio.Debugger.Interop.dll
+Assemblage: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>Voir aussi
 

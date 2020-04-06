@@ -1,5 +1,5 @@
 ---
-title: IDebugThread2::Suspend | Microsoft Docs
+title: IDebugThread2::Suspend Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugThread2::Suspend
 ms.assetid: 1e20be85-aa12-48de-bb83-0bf0976e99ae
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: dc3abcc00d99e82a4af2e3886310772e47127274
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 74a7dd5dc69effbd46986eff963de3e740d9aa8e
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66320009"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80718641"
 ---
 # <a name="idebugthread2suspend"></a>IDebugThread2::Suspend
-Interrompt un thread.
+Suspend un fil.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -41,16 +41,16 @@ HRESULT Suspend ( 
 
 ## <a name="parameters"></a>Paramètres
 `pdwSuspendCount`\
-[out] Retourne le nombre de suspend après l’opération de suspension.
+[out] Retourne le compte de suspension après l’opération de suspension.
 
 ## <a name="return-value"></a>Valeur de retour
- En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.
+ En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
 ## <a name="remarks"></a>Notes
- Chaque appel à cette méthode incrémente le compteur de suspension supérieure à 0. Ce compteur de suspension s’affiche dans le **Threads** fenêtre de débogage.
+ Chaque appel à cette méthode incrémente le compte de suspension au-dessus de 0. Ce compte de suspension est affiché dans la fenêtre **threads** débagé.
 
- Pour chaque appel à cette méthode, il doit y avoir un appel ultérieur à la [Resume](../../../extensibility/debugger/reference/idebugthread2-resume.md) (méthode).
+ Pour chaque appel à cette méthode, il doit y avoir un appel ultérieur à la méthode [Resume.](../../../extensibility/debugger/reference/idebugthread2-resume.md)
 
 ## <a name="see-also"></a>Voir aussi
 - [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)
-- [Resume](../../../extensibility/debugger/reference/idebugthread2-resume.md)
+- [Reprendre](../../../extensibility/debugger/reference/idebugthread2-resume.md)

@@ -1,5 +1,5 @@
 ---
-title: IEnumDebugAddresses::Reset | Microsoft Docs
+title: IEnumDebugAddresses::Reset Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IEnumDebugAddresses::Reset method
 ms.assetid: 3a9d7f20-5bc6-4e13-8e91-5af4092e092f
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: acf742bf86d907220bbe52045b19b3682e4b1236
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 48026ee5f359c80c2c807fa857f1ec749823e2b7
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66330018"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80717622"
 ---
 # <a name="ienumdebugaddressesreset"></a>IEnumDebugAddresses::Reset
 Cette méthode réinitialise l’énumération au premier élément.
@@ -39,11 +39,11 @@ int Reset();
  None
 
 ## <a name="return-value"></a>Valeur de retour
- En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.
+ En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
 ## <a name="remarks"></a>Notes
- Une fois que cette méthode est appelée, l’appel suivant à [suivant](../../../extensibility/debugger/reference/ienumdebugaddresses-next.md) retourne le premier élément de l’énumération.
+ Une fois cette méthode appelée, le prochain appel à [Next](../../../extensibility/debugger/reference/ienumdebugaddresses-next.md) renvoie le premier élément de l’énumération.
 
 ## <a name="see-also"></a>Voir aussi
 - [IEnumDebugAddresses](../../../extensibility/debugger/reference/ienumdebugaddresses.md)
-- [Next](../../../extensibility/debugger/reference/ienumdebugaddresses-next.md)
+- [Suivant](../../../extensibility/debugger/reference/ienumdebugaddresses-next.md)

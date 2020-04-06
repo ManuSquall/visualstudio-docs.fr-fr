@@ -1,38 +1,38 @@
 ---
-title: Prise en main avec des analyseurs Roslyn | Microsoft Docs
+title: Démarrer avec Roslyn Analyzers (fr) Microsoft Docs
 ms.date: 04/02/2018
 ms.topic: conceptual
 ms.assetid: 367c2ec8-3059-46a5-9d1c-57bead0419e7
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 21b2d77d8c038988fa77293280c9ff7ad38cc82e
-ms.sourcegitcommit: 90c3187d804ad7544367829d07ed4b47d3f8a72d
+ms.openlocfilehash: bc975ff4f142b85297c20f16ac399fce588c093b
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/06/2019
-ms.locfileid: "68822341"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80711269"
 ---
-# <a name="get-started-with-roslyn-analyzers"></a>Prise en main des analyseurs Roslyn
+# <a name="get-started-with-roslyn-analyzers"></a>Lancez-vous avec les analyseurs Roslyn
 
-Avec des analyseurs de code en direct basés sur des projets dans Visual Studio, les créateurs d’API peuvent envoyer une analyse de code spécifique à un domaine dans le cadre de leurs packages NuGet. Étant donné que ces analyseurs sont alimentés par le .NET Compiler Platform (nom de code «Roslyn»), ils peuvent produire des avertissements dans votre code au fur et à mesure que vous tapez avant la fin de la ligne (plus besoin d’attendre pour générer votre code pour détecter les problèmes). Les analyseurs peuvent également faire apparaître un correctif de code automatique par le biais de l’invite de l’ampoule Visual Studio pour vous permettre de nettoyer immédiatement votre code.
+Avec des analyseurs de code en direct basés sur des projets dans Visual Studio, les auteurs de l’API peuvent expédier des analyses de code spécifiques au domaine dans le cadre de leurs paquets NuGet. Parce que ces analyseurs sont alimentés par la plate-forme de compilateur .NET (nom de code "Roslyn"), ils peuvent produire des avertissements dans votre code que vous tapez avant même que vous avez terminé la ligne (pas plus d’attente pour construire votre code pour découvrir les problèmes). Les analyseurs peuvent également faire surface un correctif de code automatique à travers l’ampoule Visual Studio prompt pour vous permettre de nettoyer votre code immédiatement.
 
-## <a name="get-started"></a>Prise en main
+## <a name="get-started"></a>Bien démarrer
 
-[Vue d’ensemble des analyseurs Roslyn](../code-quality/roslyn-analyzers-overview.md)
+[Aperçu des analyseurs Roslyn](../code-quality/roslyn-analyzers-overview.md)
 
-[Tutoriel : Écrire votre premier analyseur et votre première correction de code](/dotnet/csharp/roslyn-sdk/tutorials/how-to-write-csharp-analyzer-code-fix)
+[Tutoriel : Écrire votre premier analyseur et correctif de code](/dotnet/csharp/roslyn-sdk/tutorials/how-to-write-csharp-analyzer-code-fix)
 
-[Procédure pas à pas ajouter des correctifs de code: Fournir aux utilisateurs des correctifs pour les problèmes de l’analyseur](https://msdn.microsoft.com/magazine/dn904670.aspx)
+[Ajouter des correctifs de code Procédure pas à pas : fournir aux utilisateurs des correctifs pour les problèmes d’analyseur](https://msdn.microsoft.com/magazine/dn904670.aspx)
 
-[Analyseur Roslyn réel](../extensibility/roslyn-analyzers-and-code-aware-library-for-immutablearrays.md) que vous pouvez également regarder comme un [contact](https://channel9.msdn.com/events/Build/2015/3-725)
+[Analyseur Roslyn du monde réel](../extensibility/roslyn-analyzers-and-code-aware-library-for-immutablearrays.md) que vous pouvez également regarder comme un [discours](https://channel9.msdn.com/events/Build/2015/3-725)
 
 [Plusieurs exemples sur GitHub, regroupés en trois types d’analyseurs](https://github.com/dotnet/roslyn/blob/master/docs/analyzers/Analyzer%20Samples.md)
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Référence de la version du package .NET Compiler Platform](roslyn-version-support.md)
-- [Autres documents sur le site OSS GitHub](https://github.com/dotnet/roslyn/tree/master/docs/analyzers)
-- [Règles FxCop implémentées avec des analyseurs Roslyn](../code-quality/fxcop-rule-port-status.md)
+- [.NET compiler plate-forme de référence de version paquet](roslyn-version-support.md)
+- [Plus de docs sur le site GitHub OSS](https://github.com/dotnet/roslyn/tree/master/docs/analyzers)
+- [Règles FxCop mises en œuvre avec les analyseurs Roslyn](../code-quality/fxcop-rule-port-status.md)

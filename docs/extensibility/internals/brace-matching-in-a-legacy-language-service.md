@@ -1,56 +1,56 @@
 ---
-title: Accolades correspondantes dans un Service de langage hérité | Microsoft Docs
+title: Brace Matching in a Legacy Language Service (en anglais seulement) Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - brace matching
 - language services [managed package framework], brace matching
 ms.assetid: 4e3d0a70-f22f-49dd-92d8-edf48ab62b52
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a535fc479fe5cc398d09d7aa9e47a3c91fa97f38
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 0081be3e3ab5a53f7d85f77475d4288aa5c87092
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66309180"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80709815"
 ---
-# <a name="brace-matching-in-a-legacy-language-service"></a>Accolades correspondantes dans un service de langage hérité
-Correspondance d’accolade permet le développeur à effectuer le suivi des éléments de langage qui doivent se produire ensemble, telles que les parenthèses et les accolades. Lorsqu’un développeur entre une accolade fermante, l’accolade ouvrante est mis en surbrillance.
+# <a name="brace-matching-in-a-legacy-language-service"></a>Brace correspondant dans un service linguistique hérité
+L’appariement des accolades aide le développeur à suivre les éléments de langage qui doivent se produire ensemble, tels que les parenthèses et les accolades bouclées. Lorsqu’un développeur entre dans une accolade de fermeture, l’attelle d’ouverture est mise en surbrillance.
 
- Vous pouvez faire correspondre deux ou trois éléments qui se produisent conjointement, appelées paires et triples. Triplets sont des ensembles de trois éléments qui se produisent conjointement. Par exemple, en c#, le `foreach` instruction constitue un triple : `foreach()`, `{`, et `}`. Les trois éléments sont mis en surbrillance quand l’accolade fermante est tapée.
+ Vous pouvez faire correspondre deux ou trois éléments co-occurteurs, appelés paires et triples. Les triples sont des ensembles de trois éléments co-occurants. Par exemple, dans le `foreach` C, l’énoncé forme un triple : `foreach()`, `{`et `}`. Les trois éléments sont mis en évidence lorsque l’attelle de fermeture est tapée.
 
- Services de langage hérité sont implémentés en tant que partie d’un VSPackage, mais la plus récente pour implémenter des fonctionnalités de service de langage consiste à utiliser des extensions MEF. Pour en savoir plus sur la nouvelle façon d’implémenter les accolades correspondantes, consultez [procédure pas à pas : Affichage d’accolades correspondantes](../../extensibility/walkthrough-displaying-matching-braces.md).
+ Les services linguistiques hérités sont mis en œuvre dans le cadre d’un VSPackage, mais la nouvelle façon de mettre en œuvre des fonctionnalités de service linguistique est d’utiliser des extensions MEF. Pour en savoir plus sur la nouvelle façon d’implémenter l’appariement des [accolades, voir Walkthrough: Display accolades assorties](../../extensibility/walkthrough-displaying-matching-braces.md).
 
 > [!NOTE]
-> Nous vous recommandons de commencer à utiliser le nouvel éditeur API dès que possible. Cela améliorer les performances de votre service de langage et vous permettent de tirer parti des nouvelles fonctionnalités de l’éditeur.
+> Nous vous recommandons de commencer à utiliser le nouvel éditeur API dès que possible. Cela améliorera les performances de votre service linguistique et vous permettra de profiter des nouvelles fonctionnalités de l’éditeur.
 
- Le <xref:Microsoft.VisualStudio.Package.AuthoringSink> classe prend en charge les deux paires et triple avec la <xref:Microsoft.VisualStudio.Package.AuthoringSink.MatchPair%2A> et <xref:Microsoft.VisualStudio.Package.AuthoringSink.MatchTriple%2A> méthodes.
+ La <xref:Microsoft.VisualStudio.Package.AuthoringSink> classe prend en charge <xref:Microsoft.VisualStudio.Package.AuthoringSink.MatchPair%2A> les <xref:Microsoft.VisualStudio.Package.AuthoringSink.MatchTriple%2A> paires et les triples avec les méthodes et les méthodes.
 
 ## <a name="implementation"></a>Implémentation
- Le service de langage doit identifier tous les éléments de mise en correspondance dans la langue et recherchez toutes les paires correspondantes. Cela est généralement effectuée en implémentant <xref:Microsoft.VisualStudio.Package.IScanner> pour détecter une langue de mise en correspondance et puis en utilisant la <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> méthode pour faire correspondre les éléments.
+ Le service linguistique doit identifier tous les éléments appariés dans la langue, puis localiser toutes les paires correspondantes. Ceci est généralement accompli <xref:Microsoft.VisualStudio.Package.IScanner> en mettant en œuvre pour détecter une langue assortie, puis en utilisant la <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> méthode pour correspondre aux éléments.
 
- Le <xref:Microsoft.VisualStudio.Package.Source.OnCommand%2A> méthode appelle le moteur d’analyse pour marquer la ligne et de retourner le jeton juste avant le signe insertion. L’analyseur indique qu’une paire d’élément de langage a été trouvée en définissant une valeur de jeton de déclencheur de <xref:Microsoft.VisualStudio.Package.TokenTriggers> sur le jeton actuel. Le <xref:Microsoft.VisualStudio.Package.Source.OnCommand%2A> les appels de méthode le <xref:Microsoft.VisualStudio.Package.Source.MatchBraces%2A> méthode qui appelle à son tour le <xref:Microsoft.VisualStudio.Package.LanguageService.BeginParse%2A> méthode avec la valeur de motif de l’analyse de <xref:Microsoft.VisualStudio.Package.ParseReason> pour rechercher l’élément de langage correspondant. Lorsque l’élément de langage correspondant est trouvé, les deux éléments sont mis en surbrillance.
+ La <xref:Microsoft.VisualStudio.Package.Source.OnCommand%2A> méthode appelle le scanner pour symboliquer la ligne et retourner le jeton juste avant le caret. Le scanner indique qu’une paire d’éléments de langue <xref:Microsoft.VisualStudio.Package.TokenTriggers> a été trouvée en définissant une valeur de déclenchement symbolique du jeton sur le jeton actuel. La <xref:Microsoft.VisualStudio.Package.Source.OnCommand%2A> méthode <xref:Microsoft.VisualStudio.Package.Source.MatchBraces%2A> appelle la méthode <xref:Microsoft.VisualStudio.Package.LanguageService.BeginParse%2A> qui à son tour appelle <xref:Microsoft.VisualStudio.Package.ParseReason> la méthode avec la valeur de raison d’analyse de localiser l’élément de langage correspondant. Lorsque l’élément de langage correspondant est trouvé, les deux éléments sont mis en évidence.
 
- Pour obtenir une description complète de la taper une accolade déclenche la mise en surbrillance des accolades, consultez le *opération d’analyse exemple* section dans l’article [Analyseur de service de langage hérité et scanneur](../../extensibility/internals/legacy-language-service-parser-and-scanner.md).
+ Pour une description complète de la façon dont taper une attelle déclenche la mise en évidence de l’accolade, voir la section *d’opération d’analyse d’exemple* dans l’article [Legacy language service parser et scanner](../../extensibility/internals/legacy-language-service-parser-and-scanner.md).
 
-## <a name="enable-support-for-brace-matching"></a>Activer la prise en charge pour la correspondance des accolades
- Le <xref:Microsoft.VisualStudio.Shell.ProvideLanguageServiceAttribute> attribut peut définir le **MatchBraces**, **MatchBracesAtCaret**, et **ShowMatchingBrace** les entrées de Registre qui définit les propriétés correspondantes de la <xref:Microsoft.VisualStudio.Package.LanguagePreferences> classe. Propriétés de préférence de langue peuvent également être définies par l’utilisateur.
+## <a name="enable-support-for-brace-matching"></a>Activer le support pour l’appariement d’accolade
+ L’attribut <xref:Microsoft.VisualStudio.Shell.ProvideLanguageServiceAttribute> peut définir les entrées de registre **MatchBraces,** **MatchBracesAtCaret**et **ShowMatchingBrace** qui fixent les propriétés correspondantes de la <xref:Microsoft.VisualStudio.Package.LanguagePreferences> classe. Les propriétés de préférence linguistique peuvent également être définies par l’utilisateur.
 
 |Entrée de Registre|Propriété|Description|
 |--------------------|--------------|-----------------|
-|MatchBraces|<xref:Microsoft.VisualStudio.Package.LanguagePreferences.EnableMatchBraces%2A>|Active la correspondance des accolades.|
-|MatchBracesAtCaret|<xref:Microsoft.VisualStudio.Package.LanguagePreferences.EnableMatchBracesAtCaret%2A>|Correspondance d’accolade permet que le curseur se déplace.|
-|ShowMatchingBrace|<xref:Microsoft.VisualStudio.Package.LanguagePreferences.EnableShowMatchingBrace%2A>|Met en surbrillance l’accolade correspondante.|
+|MatchBraces (en anglais)|<xref:Microsoft.VisualStudio.Package.LanguagePreferences.EnableMatchBraces%2A>|Permet l’appariement des accolades.|
+|MatchBracesAtCaret|<xref:Microsoft.VisualStudio.Package.LanguagePreferences.EnableMatchBracesAtCaret%2A>|Permet l’appariement de l’accolade au fur et à mesure que le caret se déplace.|
+|ShowMatchingBrace|<xref:Microsoft.VisualStudio.Package.LanguagePreferences.EnableShowMatchingBrace%2A>|Met en surbrillance l'accolade correspondante.|
 
-## <a name="match-conditional-statements"></a>Instructions conditionnelles de correspondance
- Vous pouvez faire correspondre les instructions conditionnelles, telles que `if`, `else if`, et `else`, ou `#if`, `#elif`, `#else`, `#endif`, dans la même façon que des délimiteurs. Vous pouvez créer une sous-classe la <xref:Microsoft.VisualStudio.Package.AuthoringSink> classe et fournir une méthode qui peut ajouter du texte s’étend sur ainsi que des délimiteurs dans le tableau interne d’éléments correspondants.
+## <a name="match-conditional-statements"></a>Correspondance des déclarations conditionnelles
+ Vous pouvez faire correspondre `if`les `else if`déclarations conditionnelles, telles que `else`, , et , ou `#if` `#elif`, , `#else`, `#endif`de la même manière que l’appariement des délimitants. Vous pouvez sous-classer la <xref:Microsoft.VisualStudio.Package.AuthoringSink> classe et fournir une méthode qui peut ajouter des travées de texte ainsi que des délimitants à la gamme interne d’éléments correspondants.
 
-## <a name="set-the-trigger"></a>Définissez le déclencheur
- L’exemple suivant montre comment détecter la correspondance des parenthèses, des accolades et crochets et définissant le déclencheur pour celui-ci dans le scanneur. Le <xref:Microsoft.VisualStudio.Package.Source.OnCommand%2A> méthode sur le <xref:Microsoft.VisualStudio.Package.Source> classe détecte le déclencheur et appelle l’analyseur pour rechercher la paire correspondante (voir la *recherche la correspondance* dans cet article). Cet exemple est uniquement à des fins d’illustration. Il suppose que le scanneur contient une méthode `GetNextToken` qui identifie et retourne les jetons à partir d’une ligne de texte.
+## <a name="set-the-trigger"></a>Réglez la gâchette
+ L’exemple suivant montre comment détecter les parenthèses assorties, les accolades bouclées et les accolades carrées, et le réglage de la gâchette pour elle dans le scanner. La <xref:Microsoft.VisualStudio.Package.Source.OnCommand%2A> méthode <xref:Microsoft.VisualStudio.Package.Source> sur la classe détecte la gâchette et appelle le parseur pour trouver la paire correspondante (voir la section Trouver la section *de match* dans cet article). Cet exemple n’est qu’à des fins illustratives. Il suppose que votre scanner `GetNextToken` contient une méthode qui identifie et renvoie les jetons à partir d’une ligne de texte.
 
 ```csharp
 using Microsoft.VisualStudio.Package;
@@ -84,8 +84,8 @@ namespace TestLanguagePackage
         }
 ```
 
-## <a name="match-the-braces"></a>Correspondre les accolades
- Voici un exemple simplifié pour la mise en correspondance les éléments de langage `{ }`, `( )`, et `[ ]`et en ajoutant leurs étendues à la <xref:Microsoft.VisualStudio.Package.AuthoringSink> objet. Cette approche n’est pas une approche recommandée pour l’analyse de code source ; Il est uniquement à des fins d’illustration.
+## <a name="match-the-braces"></a>Assortir les accolades
+ Voici un exemple simplifié pour `{ }`faire `( )`correspondre `[ ]`les éléments de langage, et , et en ajoutant leurs travées à l’objet. <xref:Microsoft.VisualStudio.Package.AuthoringSink> Cette approche n’est pas une approche recommandée pour analyser le code source; c’est uniquement à des fins d’illustration.
 
 ```csharp
 using Microsoft.VisualStudio.Package;
@@ -136,5 +136,5 @@ namespace TestLanguagePackage
 ```
 
 ## <a name="see-also"></a>Voir aussi
-- [Fonctionnalités de service de langage hérité](../../extensibility/internals/legacy-language-service-features1.md)
-- [Scanneur et Analyseur de service de langage hérité](../../extensibility/internals/legacy-language-service-parser-and-scanner.md)
+- [Caractéristiques du service linguistique hérité](../../extensibility/internals/legacy-language-service-features1.md)
+- [Analyse et scanner de service linguistique hérité](../../extensibility/internals/legacy-language-service-parser-and-scanner.md)

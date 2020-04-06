@@ -1,6 +1,6 @@
 ---
 title: Découvrir comment tester votre code avec Live Unit Test 2017
-ms.date: 08/31/2017
+ms.date: 04/03/2020
 ms.topic: conceptual
 helpviewer_keywords:
 - Live Unit Testing
@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 748dfc592fbf7a3b9737e9f418362067b92bb8ff
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 2abc8eaaca923435620148d7313c6cc422bd1870
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75594290"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80697353"
 ---
 # <a name="get-started-with-live-unit-testing"></a>Bien démarrer avec Live Unit Testing
 
@@ -24,7 +24,7 @@ Live Unit Testing peut être utilisé pour tester des solutions qui ciblent soit
 
 La solution C# complète peut être téléchargée à partir du dépôt GitHub [MicrosoftDocs/visualstudio-docs](https://github.com/MicrosoftDocs/visualstudio-docs/tree/master/docs/test/samples/csharp/UtilityLibraries/).
 
-## <a name="prerequisites"></a>Conditions préalables requises
+## <a name="prerequisites"></a>Prérequis
 
 Ce tutoriel exige que vous ayez installé Visual Studio Enterprise édition avec la charge de travail **de développement multi-plateformes .NET Core.**
 
@@ -36,7 +36,7 @@ La solution est simplement un conteneur pour un ou plusieurs projets. Pour crée
 
 1. Sélectionnez **File** > **New** > **Project** dans le menu Visual Studio de haut niveau.
 
-1. Tapez **solution** dans la zone de recherche des modèles, puis sélectionnez le modèle **Solution vide**.
+1. Tapez **solution** dans la zone de recherche des modèles, puis sélectionnez le modèle **Solution vide**. Nommez le projet **UtilityLibraries**.
 
    ::: moniker range="vs-2017"
 
@@ -57,7 +57,7 @@ Maintenant que vous avez créé la solution, vous allez créer une bibliothèque
    > [!NOTE]
    > Parce que notre bibliothèque cible .NET Standard plutôt que d’une mise en œuvre .NET particulière, il peut être appelé à partir de toute mise en œuvre .NET qui prend en charge cette version de .NET Standard. Pour plus d'informations, consultez [.NET Standard](/dotnet/standard/net-standard).
 
-3. Sélectionnez le modèle **De bibliothèque de classe (.NET Standard)** dans le volet droit, et entrez **StringLibrary** dans la boîte à texte **Nom,** comme l’image suivante montre :
+3. Sélectionnez le modèle **De bibliothèque de classe (.NET Standard)** dans le volet droit, et entrez **StringLibrary** dans la boîte à texte **Nom,** comme le montre l’illustration suivante :
 
    ![Boîte de dialogue **Ajouter un nouveau projet**](./media/lut-start/add-project-cs.png)
 
@@ -78,7 +78,7 @@ Maintenant que vous avez créé la solution, vous allez créer une bibliothèque
 
 ::: moniker-end
 
-5. Remplacez tout le code existant dans la fenêtre de code par le code suivant :
+5. Remplacez tout le code existant dans l’éditeur de code par le code suivant :
 
    [!code-csharp[StringLibrary source code](samples/csharp/utilitylibraries/stringlibrary/class1.cs)]
 
@@ -105,7 +105,7 @@ L’étape suivante consiste à créer le projet d’essai unitaire pour tester 
    > [!NOTE]
    > Vous ne devez pas nécessairement écrire vos tests unitaires dans le même langage que celui de votre bibliothèque de classes.
 
-3. Sélectionnez le modèle **du projet de test unitaire (.NET Core)** dans le volet droit et entrez **StringLibraryTests** dans la boîte à texte **Name,** comme le montre l’image suivante :
+3. Sélectionnez le modèle **du projet de test unitaire (.NET Core)** dans le volet droit et entrez **StringLibraryTests** dans la boîte à texte **Name,** comme le montre l’illustration suivante :
 
    ![Boîte de dialogue **Ajouter un nouveau projet** pour le projet de test unitaire](./media/lut-start/add-unit-test-cs.png)
 
@@ -115,7 +115,7 @@ L’étape suivante consiste à créer le projet d’essai unitaire pour tester 
 
 ::: moniker range=">=vs-2019"
 
-2. Tapez **test unitaire** dans la zone de recherche des modèles, puis sélectionnez le modèle **Projet de Test unitaire (.NET Core)**. Cliquez sur **Suivant**.
+2. Test **d’unité** de type dans la boîte de recherche de modèle, et le modèle sélectionné de **msTest Test Project (.NET Core).** Cliquez sur **Suivant**.
 
 3. Nommez le projet **StringLibraryTests**.
 
@@ -126,7 +126,7 @@ L’étape suivante consiste à créer le projet d’essai unitaire pour tester 
    > [!NOTE]
    > Ce didacticiel de démarrage utilise Live Unit Testing avec le framework de test MSTest. Vous pouvez également utiliser les frameworks de test xUnit et NUnit.
 
-5. Le projet de test unitaire ne peut pas accéder automatiquement à la bibliothèque de classes qu’il teste. Vous donnez l’accès à la bibliothèque test en ajoutant une référence au projet de bibliothèque de classes. Pour ce faire, cliquez `StringLibraryTests` à droite sur le projet et sélectionnez **Ajouter** > **référence**. Dans le dialogue **du gestionnaire de référence,** assurez-vous que l’onglet **Solution** est sélectionné et sélectionnez le projet StringLibrary, tel qu’indiqué dans l’image suivante.
+5. Le projet de test unitaire ne peut pas accéder automatiquement à la bibliothèque de classes qu’il teste. Vous donnez l’accès à la bibliothèque test en ajoutant une référence au projet de bibliothèque de classes. Pour ce faire, cliquez `StringLibraryTests` à droite sur le projet et sélectionnez **Ajouter** > **référence**. Dans le dialogue **du gestionnaire de référence,** assurez-vous que l’onglet **Solution** est sélectionné et sélectionnez le projet StringLibrary, comme le montre l’illustration suivante.
 
    ![Boîte de dialogue **Gestionnaire de références**](./media/lut-start/add-reference.png)
 
@@ -136,11 +136,13 @@ L’étape suivante consiste à créer le projet d’essai unitaire pour tester 
 
 7. Enregistrez votre projet en sélectionnant l’icône **Enregistrer** dans la barre d’outils.
 
-8. Étant donné que le code de test unitaire inclut certains caractères non-ASCII, Visual Studio affiche le dialogue suivant pour avertir que certains caractères seront perdus si vous enregistrez le fichier dans son format ASCII par défaut. Choisissez le bouton **Enregistrer avec un autre encodage**.
+   Étant donné que le code de test unitaire inclut certains caractères non-ASCII, vous verrez le dialogue suivant pour avertir que certains caractères seront perdus si vous enregistrez le fichier dans son format ASCII par défaut.
+
+8. Choisissez le bouton **Enregistrer avec un autre encodage**.
 
    ![Choisir un encodage de fichier](media/lut-start/ascii-encoding.png)
 
-9. Dans la liste d’abandon de **Codage** du dialogue **Advance Save Options,** choisissez **Unicode (UTF-8 sans signature) - Codepage 65001**, comme le montre l’image suivante :
+9. Dans la liste d’abandon de **Codage** du dialogue **Advance Save Options,** choisissez **Unicode (UTF-8 sans signature) - Codepage 65001**, comme le montre l’illustration suivante :
 
    ![Choix de l’encodage UTF-8](media/lut-start/utf8-encoding.png)
 
@@ -152,23 +154,30 @@ Vous avez créé une bibliothèque de classes, ainsi que quelques tests unitaire
 
 Jusqu’à présent, bien que vous ayez écrit les tests pour la bibliothèque de classe StringLibrary, vous ne les avez pas exécutés. Live Unit Testing les exécute automatiquement une fois que vous l’activez. Pour cela, procédez comme suit :
 
-1. Optionnellement, sélectionnez la fenêtre de code qui contient le code pour StringLibrary. Il s’agit soit *Class1.cs* pour un projet C ou *Class1.vb* pour un projet Visual Basic. (Cette étape vous permet d’inspecter visuellement le résultat de vos tests et l’étendue de votre couverture de code une fois que vous activez le test d’unité en direct.)
+1. Optionnellement, sélectionnez la fenêtre de l’éditeur de code qui contient le code pour StringLibrary. Il s’agit soit *Class1.cs* pour un projet C ou *Class1.vb* pour un projet Visual Basic. (Cette étape vous permet d’inspecter visuellement le résultat de vos tests et l’étendue de votre couverture de code une fois que vous activez le test d’unité en direct.)
 
 1. Sélectionnez **Test** > **Live Unit Testing** > **Start** à partir du menu Visual Studio de haut niveau.
 
 1. Visual Studio démarre Live Unit Test, qui exécute automatiquement tous vos tests.
 
-Quand il a terminé l’exécution de vos tests, **l’Explorateur de tests** affiche les résultats globaux et les résultats des tests individuels. En outre, la fenêtre de code affiche graphiquement la couverture de votre code de test et le résultat de vos tests. Comme le montre l’image suivante, les trois tests ont été exécutés avec succès. Elle montre également que nos tests ont couvert tous les chemins de code de la méthode `StartsWithUpper`, et que ces tests ont tous été exécutés avec succès (ce qui est indiqué par la coche verte, « ✓ »). Enfin, il montre qu’aucune des autres méthodes de StringLibrary n’a de couverture de code (qui est indiquée par une ligne bleue, "➖").
+::: moniker range="vs-2017"
+Quand il a terminé l’exécution de vos tests, **l’Explorateur de tests** affiche les résultats globaux et les résultats des tests individuels. En outre, la fenêtre de l’éditeur de code affiche graphiquement à la fois votre couverture de code de test et le résultat de vos tests. Comme le montre l’illustration suivante, les trois tests ont été exécutés avec succès. Elle montre également que nos tests ont couvert tous les chemins de code de la méthode `StartsWithUpper`, et que ces tests ont tous été exécutés avec succès (ce qui est indiqué par la coche verte, « ✓ »). Enfin, il montre qu’aucune des autres méthodes de StringLibrary n’a de couverture de code (qui est indiquée par une ligne bleue, "➖").
 
-![L’Explorateur de tests et la fenêtre de code après le démarrage de Live Unit Testing](media/lut-start/lut-results-cs.png)
+![Le Test Explorer et la fenêtre de l’éditeur de code après avoir commencé les tests Live Unit](media/lut-start/lut-results-cs.png)
+::: moniker-end
+::: moniker range=">=vs-2019"
+Lorsqu’il se termine d’exécuter vos tests, **Live Unit Testing** affiche à la fois les résultats globaux et le résultat de tests individuels. En outre, la fenêtre de l’éditeur de code affiche graphiquement à la fois votre couverture de code de test et le résultat de vos tests. Comme le montre l’illustration suivante, les trois tests ont été exécutés avec succès. Elle montre également que nos tests ont couvert tous les chemins de code de la méthode `StartsWithUpper`, et que ces tests ont tous été exécutés avec succès (ce qui est indiqué par la coche verte, « ✓ »). Enfin, il montre qu’aucune des autres méthodes de StringLibrary n’a de couverture de code (qui est indiquée par une ligne bleue, "➖").
 
-Vous pouvez également obtenir des informations plus détaillées sur la couverture des tests et sur les résultats des tests en sélectionnant une icône de couverture de code particulière dans la fenêtre de code. Pour examiner ces informations détaillées, procédez comme suit :
+![Le Live Test Explorer et la fenêtre de l’éditeur de code après avoir commencé les tests Live Unit](media/lut-start/vs-2019/lut-results-cs.png)
+::: moniker-end
 
-1. Cliquez sur la marque de coche verte pour la ligne qui contient `if (String.IsNullOrWhiteSpace(s))` dans la méthode `StartsWithUpper`. Comme le montre l’image suivante, Live Unit Testing indique que trois tests couvrent cette ligne de code, et que tous ont exécuté avec succès.
+Vous pouvez également obtenir des informations plus détaillées sur la couverture des tests et les résultats des tests en sélectionnant une icône de couverture de code particulière dans la fenêtre de l’éditeur de code. Pour examiner ces informations détaillées, procédez comme suit :
+
+1. Cliquez sur la marque de coche verte pour la ligne qui contient `if (String.IsNullOrWhiteSpace(s))` dans la méthode `StartsWithUpper`. Comme le montre l’illustration suivante, Live Unit Testing indique que trois tests couvrent cette ligne de code, et que tous ont exécuté avec succès.
 
    ![Couverture du code pour l’instruction conditionnelle « if »](media/lut-start/code-coverage-cs1.png)
 
-1. Cliquez sur la marque de coche verte pour la ligne qui contient `return Char.IsUpper(s[0])` dans la méthode `StartsWithUpper`. Comme le montre l’image suivante, Live Unit Testing indique que seulement deux tests couvrent cette ligne de code, et que tous ont exécuté avec succès.
+1. Cliquez sur la marque de coche verte pour la ligne qui contient `return Char.IsUpper(s[0])` dans la méthode `StartsWithUpper`. Comme le montre l’illustration suivante, Live Unit Testing indique que seulement deux tests couvrent cette ligne de code, et que tous ont exécuté avec succès.
 
    ![Couverture du code pour l’instruction return](media/lut-start/code-coverage-cs2.png)
 
@@ -188,9 +197,14 @@ Pour étendre la couverture du code à la méthode `StartsWithLower`, procédez 
 
     [!code-csharp[StringLibraryTest source code](samples/snippets/csharp/lut-start/unittest2.cs#2)]
 
-1. Live Unit Testing exécute automatiquement des tests nouveaux et modifiés quand vous modifiez votre code source. Comme le montre l’image suivante de **Test Explorer,** tous les tests, y compris les deux que vous avez ajoutés et celui que vous avez modifié, ont réussi.
+1. Live Unit Testing exécute automatiquement des tests nouveaux et modifiés quand vous modifiez votre code source. Comme le montre l’illustration suivante, tous les tests, y compris les deux que vous avez ajoutés et celui que vous avez modifié, ont réussi.
 
+   ::: moniker range="vs-2017"
    ![L’Explorateur de test après l’élargissement de la couverture des tests](media/lut-start/test-dynamic.png)
+   ::: moniker-end
+   ::: moniker range=">=vs-2019"
+   ![Le Live Test Explorer après l’élargissement de la couverture des tests](media/lut-start/vs-2019/test-dynamic.png)
+   ::: moniker-end
 
 1. Passez à la fenêtre qui contient le code source pour la classe StringLibrary. Live Unit Testing montre maintenant que la couverture de notre code est étendue à la méthode `StartsWithLower`.
 
@@ -208,29 +222,39 @@ Dans cette section, vous découvrez comment vous pouvez utiliser Live Unit Testi
 
     [!code-csharp[The TestHasEmbeddedSpaces test method](samples/snippets/csharp/lut-start/unittest2.cs#3)]
 
-1. Lorsque le test s’exécute, Live `TestHasEmbeddedSpaces` Unit Testing indique que la méthode a échoué, comme le montre l’image suivante :
+1. Lorsque le test s’exécute, Live `TestHasEmbeddedSpaces` Unit Testing indique que la méthode a échoué, comme le montre l’illustration suivante :
 
+   ::: moniker range="vs-2017"
    ![L’explorateur d’essai signalant un test échoué](media/lut-start/test-failure.png)
+   ::: moniker-end
+   ::: moniker range=">=vs-2019"
+   ![Le Live Test Explorer signale un test raté](media/lut-start/vs-2019/test-failure.png)
+   ::: moniker-end
 
 1. Sélectionnez la fenêtre qui affiche le code de la bibliothèque. Live Unit Testing a élargi `HasEmbeddedSpaces` la couverture du code à la méthode. Il signale également l’échec d’un test en ajoutant une croix rouge « 🞩 » pour les lignes couvertes par des tests ayant échoué.
 
-1. Placez le curseur sur la ligne avec la signature de méthode `HasEmbeddedSpaces`. Live Unit Testing affiche un outil qui indique que la méthode est couverte par un test, comme le montre l’image suivante :
+1. Placez le curseur sur la ligne avec la signature de méthode `HasEmbeddedSpaces`. Live Unit Testing affiche un outil qui indique que la méthode est couverte par un test, comme le montre l’illustration suivante :
 
    ![Informations d’essai d’unité en direct sur un test échoué](media/lut-start/test-failure-info-cs.png)
 
-1. Sélectionnez le test **TestHasEmbeddedSpaces** qui a échoué. Live Unit Testing vous offre un certain nombre d’options, telles que l’exécution de tous les tests, l’exécution des tests sélectionnés, débogage de tous les tests, et débogage des tests sélectionnés, comme le montre l’image suivante:
+1. Sélectionnez le test **TestHasEmbeddedSpaces** qui a échoué. Live Unit Testing vous offre quelques options telles que l’exécution de tous les tests et le débogage de tous les tests, comme le montre l’illustration suivante :
 
+   ::: moniker range="vs-2017"
    ![Options de test d’unité en direct pour un test échoué](media/lut-start/test-failure-options.png)
+   ::: moniker-end
+   ::: moniker range=">=vs-2019"
+   ![Options de test d’unité en direct pour un test échoué](media/lut-start/vs-2019/test-failure-options.png)
+   ::: moniker-end
 
-1. Sélectionnez **Déboguer le test sélectionné** pour déboguer le test qui a échoué.
+1. Sélectionnez **Debug All** pour déboiffer le test échoué.
 
 1. Visual Studio exécute le test en mode débogage.
 
-   Le test attribue chaque chaîne dans un `phrase` tableau à `HasEmbeddedSpaces` une variable nommée et la transmet à la méthode. L’exécution du programme s’interrompt et appelle le débogueur la première fois que l’expression d’assertion est `false`. Le dialogue d’exception qui résulte [`Microsoft.VisualStudio.TestTools.UnitTesting.Assert.IsTrue`](/dotnet/api/microsoft.visualstudio.testtools.unittesting.assert.istrue) de la valeur inattendue de l’appel de méthode est indiqué dans l’image suivante.
+   Le test attribue chaque chaîne dans un `phrase` tableau à `HasEmbeddedSpaces` une variable nommée et la transmet à la méthode. L’exécution du programme s’interrompt et appelle le débogueur la première fois que l’expression d’assertion est `false`. Le dialogue d’exception qui résulte [`Microsoft.VisualStudio.TestTools.UnitTesting.Assert.IsTrue`](/dotnet/api/microsoft.visualstudio.testtools.unittesting.assert.istrue) de la valeur inattendue de l’appel de méthode est indiqué dans l’illustration suivante.
 
    ![Dialogue d’exception d’essai d’unité en direct](media/lut-start/exception-dialog-cs.png)
 
-   En outre, tous les outils de débogage que Visual Studio fournit sont disponibles pour nous aider à dépanner notre test a échoué, comme le montre l’image suivante:
+   En outre, tous les outils de débogage que Visual Studio fournit sont disponibles pour nous aider à dépanner notre test échoué, comme le montre l’illustration suivante:
 
    ![Outils de débogage Visual Studio](media/lut-start/debugging-tools-cs.png)
 
@@ -245,9 +269,9 @@ Ceci fournit suffisamment d’informations pour un examen préliminaire du bogue
 
     [!code-csharp[The TestHasEmbeddedSpaces test method](samples/snippets/csharp/lut-start/program2.cs#1)]
 
-1. Live Unit Testing réexécute automatiquement la méthode de test échouée et met à jour les résultats dans la fenêtre de code et dans **Test Explorer**, comme le montre l’image suivante :
+1. Live Unit Testing réexécute automatiquement la méthode de test ratée.
 
-    ![Test HasEmbeddedSpaces réussi](media/lut-start/test-success-cs.png)
+   Live Unit Testing montre que les résultats mis à jour apparaissent, qui apparaissent également dans la fenêtre de l’éditeur de code.
 
 ## <a name="see-also"></a>Voir aussi
 

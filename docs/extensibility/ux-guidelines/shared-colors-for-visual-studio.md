@@ -1,96 +1,96 @@
 ---
-title: Couleurs partagées pour Visual Studio | Microsoft Docs
+title: Couleurs partagées pour Visual Studio (fr) Microsoft Docs
 ms.date: 04/26/2017
 ms.topic: conceptual
 ms.assetid: 8d11b9a0-6175-4f2e-8e7f-79daee1bfd41
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7b057803671f8add350e2d844b2697f60b2b8f1d
-ms.sourcegitcommit: 3d64bfb9bf85395357effe054db9a9afaa0be5ea
+ms.openlocfilehash: 3e31e5d9c3d1dc284694bd2db2a9f37d863462ad
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/29/2020
-ms.locfileid: "78181183"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80699930"
 ---
 # <a name="shared-colors-for-visual-studio"></a>Couleurs partagées pour Visual Studio
-Quand vous concevez une interface utilisateur qui utilise des éléments de Shell Visual Studio communs ou si vous souhaitez que votre élément d’interface soit cohérent avec des fonctionnalités similaires, utilisez des noms de jeton existants dans les fichiers de définition de package pour choisir et assigner des couleurs. Ainsi, votre interface utilisateur reste cohérente avec l’environnement Visual Studio global et elle se met à jour automatiquement quand des thèmes sont ajoutés ou mis à jour.
+Lorsque vous concevez une interface utilisateur qui utilise des éléments de coquille Visual Studio courants, ou que vous souhaitez que votre élément d’interface soit compatible avec des fonctionnalités similaires, utilisez les noms de jetons existants dans les fichiers de définition de paquets pour choisir et attribuer des couleurs. Ainsi, votre interface utilisateur reste cohérente avec l’environnement Visual Studio global et elle se met à jour automatiquement quand des thèmes sont ajoutés ou mis à jour.
 
 Cet article décrit les éléments d’interface utilisateur communs et les noms de jeton qu’ils utilisent, que vous pouvez référencer pour créer une interface utilisateur similaire. Pour plus d’informations sur la façon d’accéder à ces jetons de couleur, consultez [The VSColor Service](../../extensibility/ux-guidelines/colors-and-styling-for-visual-studio.md#BKMK_TheVSColorService).
 
 Assurez-vous d’utiliser correctement les noms de jeton :
 
-- **Utilisez des noms de jeton basés sur la fonction, et non sur la couleur elle-même.** Les couleurs partagées communes sont associées à des éléments d’interface spécifiques et uniquement destinées à être utilisées pour des fonctionnalités identiques ou similaires. Par exemple, ne réutilisez pas la couleur d’une zone de liste modifiable enfoncée pour une animation de progression en rotation juste parce que vous aimez la couleur. Les fonctions de la zone de liste déroulante et de l’animation sont différentes, et si la couleur associée à la zone de liste déroulante change, il se peut qu’elle ne soit plus une couleur appropriée pour votre élément d’animation. Une utilisation cohérente des couleurs permet de guider vos utilisateurs et d’éviter toute confusion.
+- **Utilisez des noms de jeton basés sur la fonction et non sur la couleur elle-même.** Les couleurs partagées communes sont associées à des éléments d’interface spécifiques et uniquement destinées à être utilisées pour des fonctionnalités identiques ou similaires. Par exemple, ne réutilisez pas la couleur d’une zone de liste modifiable enfoncée pour une animation de progression en rotation juste parce que vous aimez la couleur. Les fonctions de la boîte combo et l’animation sont différentes, et si la couleur associée à la boîte combo change, il pourrait ne plus être une couleur appropriée pour votre élément d’animation. Une utilisation cohérente des couleurs permet de guider vos utilisateurs et d’éviter toute confusion.
 
-- **Utilisez les couleurs d’arrière-plan et de texte dans la combinaison correcte.** Les couleurs d’arrière-plan destinées à être utilisées avec du texte possèdent une couleur de texte associée. N’utilisez pas de couleurs de texte autres que celles spécifiées pour l’arrière-plan. S’il n’existe pas de couleur de texte associée, n’utilisez pas cette couleur d’arrière-plan pour les surfaces sur lesquelles vous prévoyez d’afficher du texte. D’autres combinaisons de texte et de couleurs d’arrière-plan peuvent entraîner une interface illisible.
+- **Associez correctement les couleurs d’arrière-plan et de texte.** Les couleurs d’arrière-plan destinées à être utilisées avec du texte possèdent une couleur de texte associée. N’utilisez pas de couleurs de texte autres que celles spécifiées pour l’arrière-plan. S’il n’y a pas de couleur de texte associée, n’utilisez pas cette couleur de fond pour n’importe quelle surface sur laquelle vous vous attendez à afficher du texte. D’autres combinaisons de textures et de couleurs de fond peuvent entraîner une interface illisible.
 
-- **Utilisez des couleurs de contrôle appropriées à leur emplacement.** Dans certains États, certains contrôles Visual Studio n’ont pas de couleurs de bordure et d’arrière-plan distinctes. Au lieu de cela, ils sélectionnent ces couleurs dans les surfaces qui se trouvent derrière. Veillez à toujours utiliser les noms de jeton qui conviennent à l’emplacement où vous placez le contrôle.
+- **Utilisez des couleurs de contrôle appropriées à leur emplacement.** Dans certains États, certains contrôles Visual Studio n’ont pas de couleurs séparées de la frontière et de l’arrière-plan. Au lieu de cela, ils sélectionnent ces couleurs dans les surfaces qui se trouvent derrière. Veillez à toujours utiliser les noms de jeton qui conviennent à l’emplacement où vous placez le contrôle.
 
 > [!IMPORTANT]
-> N’utilisez pas de jetons trouvés dans les catégories « page de démarrage » ou « cidre ».
+> N’utilisez pas de jetons trouvés dans les catégories « Page de démarrage » ou « Cidre ».
 
 ## <a name="common-shared-controls"></a>Contrôles partagés communs
 
-Quand vous utilisez une barre de commandes Visual Studio standard dans votre fonctionnalité, vous avez accès aux contrôles de l’interpréteur de commandes. Vous ne devez pas recréer un modèle pour ces contrôles communs. Toutefois, si vous avez besoin de créer une barre de commandes personnalisée, vous pouvez avoir besoin de générer des contrôles personnalisés également. Dans ce cas, assurez-vous d’utiliser des noms de jeton corrects pour chacun des contrôles suivants afin que votre interface utilisateur soit cohérente avec le reste de Visual Studio.
+Lorsque vous utilisez une barre de commande Visual Studio standard dans votre fonctionnalité, vous aurez accès à des commandes de coques de style. Vous ne devriez pas re-template ces contrôles communs. Toutefois, si vous avez besoin de créer une barre de commandes personnalisée, vous pouvez avoir besoin de générer des contrôles personnalisés également. Dans ce cas, assurez-vous d’utiliser des noms de jeton corrects pour chacun des contrôles suivants afin que votre interface utilisateur soit cohérente avec le reste de Visual Studio.
 
 ### <a name="button-controls"></a>Contrôles boutons
 
-![Contrôle de bouton (ligne rouge)](../../extensibility/ux-guidelines/media/0303-155_buttoncontrolredline.png "0303-155_ButtonControlRedline")
+![Ligne rouge de contrôle Button](../../extensibility/ux-guidelines/media/0303-155_buttoncontrolredline.png "0303-155_ButtonControlRedline")
 
-| Utilisez... | N’utilisez pas... |
+| Utiliser... | N’utilisez pas ... |
 | --- | --- |
-| ... pour les boutons de la zone document que vous souhaitez intégrer aux thèmes Visual Studio (clair, foncé, bleu ou un thème contraste élevé système). | ... pour les boutons qui s’affichent sur un arrière-plan personnalisé qui ne fait pas partie d’un thème Visual Studio. |
+| ... pour les boutons dans le document bien que vous souhaitez intégrer avec visual Studio thèmes (Lumière, Dark, Blue, ou un thème système High Contrast). | ... pour les boutons qui s’afficheront sur un fond personnalisé qui ne fait pas partie d’un thème Visual Studio. |
 
-**Bouton : état standard**
+**Bouton: état standard**
 
-![Bouton standard](../../extensibility/ux-guidelines/media/03.03.Button.Standard.png "03.03. Button. standard")<br />Bouton standard
+![Bouton standard](../../extensibility/ux-guidelines/media/03.03.Button.Standard.png "03.03.Button.Standard")<br />Bouton standard
 
 | Élément | Nom du jeton : Category.color |
 | --- | --- |
 | Bouton | `CommonControls.Button` |
 | Bordure de bouton | `CommonControls.ButtonBorder` |
 
-**Button : état par défaut**
+**Bouton: état par défaut**
 
-![Bouton par défaut](../../extensibility/ux-guidelines/media/03.03.Button.Default.png "03.03. Button. default")<br />Bouton par défaut
+![Bouton par défaut](../../extensibility/ux-guidelines/media/03.03.Button.Default.png "03.03.Button.Default")<br />Bouton par défaut
 
 | Élément | Nom du jeton : Category.color |
 | --- | --- |
 | Bouton | `CommonControls.ButtonDefault` |
 | Bordure de bouton | `CommonControls.ButtonBorderDefault` |
 
-**Bouton : état désactivé**
+**Bouton: État désactivé**
 
-![Bouton désactivé](../../extensibility/ux-guidelines/media/03.03.Button.Disabled.png "03.03. Button. Disabled")<br />Bouton désactivé
+![Bouton désactivé](../../extensibility/ux-guidelines/media/03.03.Button.Disabled.png "03.03.Button.Disabled")<br />Bouton désactivé
 
 | Élément | Nom du jeton : Category.color |
 | --- | --- |
 | Bouton | `CommonControls.ButtonDisabled` |
 | Bordure de bouton | `CommonControls.ButtonBorderDisabled` |
 
-**Bouton : état sensitif**
+**Bouton: état de vol stationnaire**
 
-![Bouton au pointage](../../extensibility/ux-guidelines/media/03.03.Button.hover.png "03.03. Button. pointage")<br />Bouton au pointage
+![Bouton au pointage](../../extensibility/ux-guidelines/media/03.03.Button.hover.png "03.03.Button.hover")<br />Bouton au pointage
 
 | Élément | Nom du jeton : Category.color |
 | --- | --- |
 | Bouton | `CommonControls.ButtonHover` |
 | Bordure de bouton | `CommonControls.ButtonBorderHover` |
 
-**Bouton : état enfoncé**
+**Bouton: état pressé**
 
-![Bouton enfoncé](../../extensibility/ux-guidelines/media/03.03.Button.Pressed.png "03.03. Button. enfoncé")<br />Bouton enfoncé
+![Bouton pressé](../../extensibility/ux-guidelines/media/03.03.Button.Pressed.png "03.03.Button.Pressed")<br />Bouton pressé
 
 | Élément | Nom du jeton : Category.color |
 | --- | --- |
 | Bouton | `CommonControls.ButtonPressed` |
 | Bordure de bouton | `CommonControls.ButtonBorderPressed` |
 
-**Button : état ciblé**
+**Bouton : état focalisé**
 
-![Bouton ayant le focus](../../extensibility/ux-guidelines/media/03.03.Button.Focused.png "03.03. Button. Focused")<br />Bouton ayant le focus
+![Bouton focalisé](../../extensibility/ux-guidelines/media/03.03.Button.Focused.png "03.03.Button.Focused")<br />Bouton focalisé
 
 | Élément | Nom du jeton : Category.color |
 | --- | --- |
@@ -98,15 +98,15 @@ Quand vous utilisez une barre de commandes Visual Studio standard dans votre fon
 | Bordure de bouton | `CommonControls.ButtonBorderFocused` |
 
 ### <a name="check-box-controls"></a>Contrôles de case à cocher
-![Case à cocher (ligne rouge)](../../extensibility/ux-guidelines/media/0303-161_checkboxredline.png "0303-161_CheckboxRedline")<br />Case à cocher (ligne rouge)
+![Boîte à cocher (redline)](../../extensibility/ux-guidelines/media/0303-161_checkboxredline.png "0303-161_CheckboxRedline")<br />Boîte à cocher (redline)
 
-| Utilisez... | N’utilisez pas... |
+| Utiliser... | N’utilisez pas ... |
 | --- | --- |
-| ... pour les contrôles de case à cocher contenus dans la zone de document. | ... pour toute interface utilisateur qui n’est pas un contrôle de case à cocher. |
+| ... pour les commandes de case à cocher contenues dans le document bien. | ... pour toute interface utilisateur qui n’est pas un contrôle de la case à cocher. |
 
-**Case à cocher : état par défaut**
+**Boîte de cocher : état par défaut**
 
-![Case à cocher](../../extensibility/ux-guidelines/media/0303-162_checkbox.png "0303-162_Checkbox")<br />Case à cocher par défaut
+![Case à cocher](../../extensibility/ux-guidelines/media/0303-162_checkbox.png "0303-162_Checkbox")<br />Boîte à cocher par défaut
 
 | Élément | Nom du jeton : Category.color |
 | --- | --- |
@@ -115,9 +115,9 @@ Quand vous utilisez une barre de commandes Visual Studio standard dans votre fon
 | Texte | `CommonControls.CheckBoxText` |
 | Glyphe | `CommonControls.CheckBoxGlyph` |
 
-**Case à cocher : état désactivé**
+**Boîte à cocher : État désactivé**
 
-![Case à cocher désactivée](../../extensibility/ux-guidelines/media/0303-163_checkboxdisabled.png "0303-163_CheckboxDisabled")<br />Case à cocher désactivée
+![Boîte à cocher désactivée](../../extensibility/ux-guidelines/media/0303-163_checkboxdisabled.png "0303-163_CheckboxDisabled")<br />Boîte à cocher désactivée
 
 | Élément | Nom du jeton : Category.color |
 | --- | --- |
@@ -126,7 +126,7 @@ Quand vous utilisez une barre de commandes Visual Studio standard dans votre fon
 | Texte | `CommonControls.CheckBoxTextDisabled` |
 | Glyphe | `CommonControls.CheckBoxGlyphDisabled` |
 
-**Case à cocher : état pointé**
+**Boîte à cocher: état de vol stationnaire**
 
  ![Case à cocher au pointage](../../extensibility/ux-guidelines/media/0303-164_checkboxhover.png "0303-164_CheckboxHover")<br />Case à cocher au pointage
 
@@ -137,9 +137,9 @@ Quand vous utilisez une barre de commandes Visual Studio standard dans votre fon
 | Texte | `CommonControls.CheckBoxTextHover` |
 | Glyphe | `CommonControls.CheckBoxGlyphHover` |
 
-**Case à cocher : état enfoncé**
+**Boîte à cocher : état pressé**
 
-![Case à cocher activée](../../extensibility/ux-guidelines/media/0303-165_checkboxpressed.png "0303-165_CheckboxPressed")<br />Case à cocher activée
+![Boîte à cocher pressée](../../extensibility/ux-guidelines/media/0303-165_checkboxpressed.png "0303-165_CheckboxPressed")<br />Boîte à cocher pressée
 
 | Élément | Nom du jeton : Category.color |
 | --- | --- |
@@ -148,9 +148,9 @@ Quand vous utilisez une barre de commandes Visual Studio standard dans votre fon
 | Texte | `CommonControls.CheckBoxTextPressed` |
 | Glyphe | `CommonControls.CheckBoxGlyphPressed` |
 
-**Case à cocher : état ciblé**
+**Boîte à cocher : état focalisé**
 
-![Case à cocher prioritaire](../../extensibility/ux-guidelines/media/0303-166_checkboxfocused.png "0303-166_CheckboxFocused")<br />Case à cocher prioritaire
+![Boîte à cocher ciblée](../../extensibility/ux-guidelines/media/0303-166_checkboxfocused.png "0303-166_CheckboxFocused")<br />Boîte à cocher ciblée
 
 | Élément | Nom du jeton : Category.color |
 | --- | --- |
@@ -159,17 +159,17 @@ Quand vous utilisez une barre de commandes Visual Studio standard dans votre fon
 | Texte | `CommonControls.CheckBoxTextFocused` |
 | Glyphe | `CommonControls.CheckBoxGlyphFocused` |
 
-### <a name="drop-downs-and-combo-boxes"></a>Listes déroulantes et zones de liste modifiable
-![Zone de liste déroulante/zone de liste déroulante (ligne rouge)](../../extensibility/ux-guidelines/media/0303-167_dropdowncomboboxredline.png "0303-167_DropDownComboBoxRedline")<br />Zone de liste déroulante/zone de liste déroulante (ligne rouge)
+### <a name="drop-downs-and-combo-boxes"></a>Drop-downs et boîtes combo
+![Drop-down/combo box (redline)](../../extensibility/ux-guidelines/media/0303-167_dropdowncomboboxredline.png "0303-167_DropDownComboBoxRedline")<br />Drop-down/combo box (redline)
 
-| Utilisez... | N’utilisez pas... |
+| Utiliser... | N’utilisez pas ... |
 | --- | --- |
-| ... pour les listes déroulantes et les zones de liste déroulante dans le document. | ... pour toute interface utilisateur qui n’est pas une zone de liste déroulante ou une zone de liste modifiable. |
-| | ... pour les [listes](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_CommandDropDown) déroulantes ou les [zones de liste](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_CommandComboBox)déroulante de barre de commandes. |
+| ... pour les drop-downs et les boîtes combo dans le document bien. | ... pour toute interface utilisateur qui n’est pas une boîte de drop-down ou combo. |
+| | ... pour les [baisses de](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_CommandDropDown) barre de commande ou [les boîtes combo](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_CommandComboBox). |
 
-**Listes déroulantes et zones de liste modifiable : état par défaut**
+**Drop-downs et boîtes combo: état par défaut**
 
-![Zone de liste déroulante/liste déroulante par défaut](../../extensibility/ux-guidelines/media/0303-168_dropdowncombobox.png "0303-168_DropDownComboBox")<br />Zone de liste déroulante/liste déroulante par défaut
+![Boîte de drop-down/combo par défaut](../../extensibility/ux-guidelines/media/0303-168_dropdowncombobox.png "0303-168_DropDownComboBox")<br />Boîte de drop-down/combo par défaut
 
 | Élément | Nom du jeton : Category.color |
 | --- | --- |
@@ -180,9 +180,9 @@ Quand vous utilisez une barre de commandes Visual Studio standard dans votre fon
 | Glyphe | `CommonControls.ComboBoxGlyph` |
 | Arrière-plan de glyphe | `CommonControls.ComboBoxGlyphBackground` |
 
-**Listes déroulantes et zones de liste modifiable : état désactivé**
+**Drop-downs et combo boxes: état désactivé**
 
-![Zone de liste déroulante/liste déroulante désactivée](../../extensibility/ux-guidelines/media/0303-169_dropdowncomboboxdisabled.png "0303-169_DropDownComboBoxDisabled")<br />Zone de liste déroulante/liste déroulante désactivée
+![Boîte de drop-down/combo désactivée](../../extensibility/ux-guidelines/media/0303-169_dropdowncomboboxdisabled.png "0303-169_DropDownComboBoxDisabled")<br />Boîte de drop-down/combo désactivée
 
 | Élément | Nom du jeton : Category.color |
 | --- | --- |
@@ -193,9 +193,9 @@ Quand vous utilisez une barre de commandes Visual Studio standard dans votre fon
 | Glyphe | `CommonControls.ComboBoxGlyphDisabled` |
 | Arrière-plan de glyphe | `CommonControls.ComboBoxGlyphBackgroundDisabled` |
 
-**Listes déroulantes et zones de liste modifiable : état sensitif**
+**Drop-downs et boîtes combo: état de vol stationnaire**
 
-![Zone de liste déroulante/zone de liste déroulante au pointage](../../extensibility/ux-guidelines/media/0303-170_dropdowncomboboxhover.png "0303-170_DropDownComboBoxHover")<br />Zone de liste déroulante/liste déroulante au pointage
+![Zone de liste déroulante/liste déroulante au pointage](../../extensibility/ux-guidelines/media/0303-170_dropdowncomboboxhover.png "0303-170_DropDownComboBoxHover")<br />Zone de liste déroulante/liste déroulante au pointage
 
 | Élément | Nom du jeton : Category.color |
 | --- | --- |
@@ -206,9 +206,9 @@ Quand vous utilisez une barre de commandes Visual Studio standard dans votre fon
 | Glyphe | `CommonControls.ComboBoxGlyphHover` |
 | Arrière-plan de glyphe | `CommonControls.ComboBoxGlyphBackgroundHover` |
 
-**Listes déroulantes et zones de liste modifiable : état enfoncé**
+**Drop-downs et boîtes combo: état pressé**
 
-![Zone de liste déroulante/zone de liste déroulante enfoncée](../../extensibility/ux-guidelines/media/0303-171_dropdowncomboboxpressed.png "0303-171_DropDownComboBoxPressed")<br />Zone de liste déroulante/zone de liste déroulante enfoncée
+![Baisse pressée/boîte combo](../../extensibility/ux-guidelines/media/0303-171_dropdowncomboboxpressed.png "0303-171_DropDownComboBoxPressed")<br />Baisse pressée/boîte combo
 
 | Élément | Nom du jeton : Category.color |
 | --- | --- |
@@ -219,9 +219,9 @@ Quand vous utilisez une barre de commandes Visual Studio standard dans votre fon
 | Glyphe | `CommonControls.ComboBoxGlyphPressed` |
 | Arrière-plan de glyphe | `CommonControls.ComboBoxGlyphBackgroundPressed` |
 
-**Listes déroulantes et zones de liste modifiable affichage des éléments : état enfoncé**
+**Drop-downs et combo boîtes liste de la vue de l’élément: état pressé**
 
- ![Affichage d’élément de liste déroulante/zone de liste déroulante](../../extensibility/ux-guidelines/media/0303-174_dropdowncomboboxlistview.png "0303-174_DropDownComboBoxListView")<br />Affichage d’élément de liste déroulante/zone de liste déroulante
+ ![Drop-down/combo box pressed list item view](../../extensibility/ux-guidelines/media/0303-174_dropdowncomboboxlistview.png "0303-174_DropDownComboBoxListView")<br />Drop-down/combo box pressed list item view
 
 | Élément | Nom du jeton : Category.color |
 | --- | --- |
@@ -230,9 +230,9 @@ Quand vous utilisez une barre de commandes Visual Studio standard dans votre fon
 | Texte d’élément | `CommonControls.ComboBoxListItemText`<br /> `CommonControls.ComboBoxListItemTextHover`<br />`CommonControls.ComboBoxListItemTextPressed`<br />`CommonControls.ComboBoxListItemTextFocused` |
 | Ombre d’arrière-plan | `CommonControls.ComboBoxListBackgroundShadow` |
 
-**Listes déroulantes et zones de liste modifiable : état ciblé**
+**Drop-downs et boîtes combo: état focalisé**
 
-![Zone de liste déroulante/liste déroulante avec focus](../../extensibility/ux-guidelines/media/0303-172_dropdowncomboboxfocused.png "0303-172_DropDownComboBoxFocused")<br />Zone de liste déroulante/liste déroulante avec focus
+![Drop-down/combo box avec mise au point](../../extensibility/ux-guidelines/media/0303-172_dropdowncomboboxfocused.png "0303-172_DropDownComboBoxFocused")<br />Drop-down/combo box avec mise au point
 
 | Élément | Nom du jeton : Category.color |
 | --- | --- |
@@ -243,9 +243,9 @@ Quand vous utilisez une barre de commandes Visual Studio standard dans votre fon
 | Glyphe | `CommonControls.ComboBoxGlyphFocused` |
 | Arrière-plan de glyphe | `CommonControls.ComboBoxGlyphBackgroundFocused` |
 
-**Listes déroulantes et zones de liste modifiable : sélection d’entrée de texte**
+**Drop-downs et combo boxes: sélection d’entrées de texte**
 
-![Sélection d’entrée de texte de zone de liste déroulante/zone de liste déroulante](../../extensibility/ux-guidelines/media/0303-173_dropdowncomboboxtextinput.png "0303-173_DropDownComboBoxTextInput")<br />Sélection d’entrée de texte de zone de liste déroulante/zone de liste déroulante
+![Sélection d’entrées de texte Drop-down/combo box](../../extensibility/ux-guidelines/media/0303-173_dropdowncomboboxtextinput.png "0303-173_DropDownComboBoxTextInput")<br />Sélection d’entrées de texte Drop-down/combo box
 
 | Élément | Nom du jeton : Category.color |
 | --- | --- |
@@ -254,16 +254,16 @@ Quand vous utilisez une barre de commandes Visual Studio standard dans votre fon
 ### <a name="tabular-data-grid-controls"></a>Contrôles de données tabulaires (grille)
 Les contrôles de données tabulaires, également appelés contrôles de grille, sont des contrôles communs pour Visual Studio qui peuvent être utilisés pour présenter des grandes quantités de données dans plusieurs colonnes. Les contrôles de données tabulaires standard se trouvent à plusieurs endroits dans Visual Studio : la fenêtre Outil Liste d’erreurs, les rapports IntelliTrace et l’affichage du tas de mémoire, entre autres. Utilisez toujours les contrôles de données tabulaires standard fournis. Dans de rares cas, vous pouvez ne pas avoir accès aux contrôles de données tabulaires standard. Si tel est le cas, utilisez les noms de jeton suivants pour veiller à ce que votre interface utilisateur soit cohérente avec les autres contrôles de données tabulaires dans Visual Studio.
 
-![Contrôle de grille/données tabulaire (ligne rouge)](../../extensibility/ux-guidelines/media/0303-197_tabulardatagridcontrolredline.png "0303-197_TabularDataGridControlRedline")<br />Contrôle de grille/données tabulaire (ligne rouge)
+![Contrôle des données/grilles tabulaires (ligne rouge)](../../extensibility/ux-guidelines/media/0303-197_tabulardatagridcontrolredline.png "0303-197_TabularDataGridControlRedline")<br />Contrôle des données/grilles tabulaires (ligne rouge)
 
-| Utilisez... | N’utilisez pas... |
+| Utiliser... | N’utilisez pas ... |
 | --- | --- |
-| ... pour les contrôles tabulaires ou de grille. | ... pour toute interface utilisateur qui n’est pas un contrôle tabulaire ou de grille. |
+| ... pour les commandes tabulaires ou de grille. | ... pour toute interface utilisateur qui n’est pas un contrôle tabulaire ou de grille. |
 
 #### <a name="column-headers"></a>En-têtes de colonne
 Les en-têtes de colonnes comprennent un arrière-plan, une bordure, le texte du titre et un éventuel glyphe généralement utilisé pour trier une grille selon cette colonne.
 
-**En-tête de colonne : état par défaut**
+**En-tête de colonne : état par défaut**
 
 | Élément | Nom du jeton : Category.color |
 | --- | --- |
@@ -272,7 +272,7 @@ Les en-têtes de colonnes comprennent un arrière-plan, une bordure, le texte du
 | Premier plan (glyphe) | `Header.Glyph` |
 | Bordure | `Header.SeparatorLine` |
 
-**En-tête de colonne : état sensitif**
+**Tête de colonne : état de vol stationnaire**
 
 | Élément | Nom du jeton : Category.color |
 | --- | --- |
@@ -281,7 +281,7 @@ Les en-têtes de colonnes comprennent un arrière-plan, une bordure, le texte du
 | Premier plan (glyphe) | `Header.MouseOverGlyph` |
 | Bordure | `Header.SeparatorLine` |
 
-**En-tête de colonne : état enfoncé**
+**En-tête de colonne : état pressé**
 
 | Élément | Nom du jeton : Category.color |
 | --- | --- |
@@ -293,7 +293,7 @@ Les en-têtes de colonnes comprennent un arrière-plan, une bordure, le texte du
 #### <a name="list-view-items"></a>Éléments de la vue Liste
  Les éléments de la vue Liste comprennent un arrière-plan et le contenu. Le contenu peut être du texte, une icône ou les deux.
 
-**Éléments de la vue Liste : état par défaut**
+**Afficher les éléments de liste : état par défaut**
 
 | Élément | Nom du jeton : Category.color |
 | --- | --- |
@@ -301,7 +301,7 @@ Les en-têtes de colonnes comprennent un arrière-plan, une bordure, le texte du
 | Premier plan (texte) | `Environment.CommandBarTextActive` |
 | Bordure | None |
 
-**Éléments de la vue Liste : état actif**
+**Éléments de vue de liste : état actif**
 
 | Élément | Nom du jeton : Category.color |
 | --- | --- |
@@ -309,7 +309,7 @@ Les en-têtes de colonnes comprennent un arrière-plan, une bordure, le texte du
 | Premier plan (texte) | `TreeView.SelectedItemActiveText` |
 | Bordure | None |
 
-**Éléments de la vue Liste : état inactif**
+**Articles de vue de liste : état inactif**
 
 | Élément | Nom du jeton : Category.color |
 | --- | --- |
@@ -319,72 +319,72 @@ Les en-têtes de colonnes comprennent un arrière-plan, une bordure, le texte du
 
 ### <a name="ui-text"></a>Texte de l’interface utilisateur
 
-#### <a name="instructional-text"></a>Texte d’instructions
-Le texte d’instructions donne une explication principale importante de ce que vous devez faire dans une page de document ou de boîte de dialogue.
+#### <a name="instructional-text"></a>Texte pédagogique
+Le texte pédagogique donne une explication principale importante de ce qu’il faut faire dans un dialogue ou une page de document.
 
-![Texte d’instructions par défaut](../../extensibility/ux-guidelines/media/0303_InstructionalText.png "0303_InstructionalText. png")<br />Texte d’instructions par défaut
-
-| Élément | Nom du jeton : Category.color |
-| --- | --- |
-| Premier plan (texte) | `Environment.ControlText` |
-
-#### <a name="secondary-instructional-text"></a>Texte d’instruction secondaire
-Dans les pages de document avec un grand nombre de contrôles et de texte, certains textes d’instructions utilisent une valeur de couleur différente. Cela permet de transmettre les informations les plus importantes et de réduire la densité globale des éléments d’interface utilisateur. (Voir également la section ci-dessous sur le texte d’indication.)
-
-![Texte d’instruction secondaire](../../extensibility/ux-guidelines/media/0303_SecondaryInstructionalText.png "0303_SecondaryInstructionalText. png")<br />Texte d’instruction secondaire
+![Texte pédagogique par défaut](../../extensibility/ux-guidelines/media/0303_InstructionalText.png "0303_InstructionalText.png")<br />Texte pédagogique par défaut
 
 | Élément | Nom du jeton : Category.color |
 | --- | --- |
-| Premier plan (texte) | `Environment.ControlEditHintText` |
+| Au premier plan (texte) | `Environment.ControlText` |
 
-#### <a name="hint-text"></a>Texte d’indication
-Le texte d’indication s’affiche dans un contrôle vide, sous un contrôle, ou sur une surface de document vide pour montrer à l’utilisateur ce qu’il doit faire ensuite. Vous pouvez utiliser le texte d’indication avec l’arrière-plan de la fenêtre ou du contrôle.
+#### <a name="secondary-instructional-text"></a>Texte pédagogique secondaire
+Dans les pages de documents avec beaucoup de texte et de contrôles, certains textes pédagogiques utilise une valeur de couleur différente. Cela permet de transmettre quelles informations sont les plus importantes et de réduire la densité globale des éléments d’interface utilisateur. (Voir aussi la section ci-dessous sur le texte de l’indice.)
 
-**Texte d’indication par défaut**
-
-![Texte d’indication par défaut](../../extensibility/ux-guidelines/media/0303_HintText.png "0303_HintText. png")<br />Texte d’indication par défaut
+![Texte pédagogique secondaire](../../extensibility/ux-guidelines/media/0303_SecondaryInstructionalText.png "0303_SecondaryInstructionalText.png")<br />Texte pédagogique secondaire
 
 | Élément | Nom du jeton : Category.color |
 | --- | --- |
-| Premier plan (texte) | `Environment.ControlEditHintText` |
+| Au premier plan (texte) | `Environment.ControlEditHintText` |
 
-**Texte d’indication obligatoire**
+#### <a name="hint-text"></a>Texte de l’astuce
+Le texte de l’indice apparaît dans un contrôle vide, sous un contrôle, ou sur une surface de document vide pour montrer à l’utilisateur ce qu’il faut faire ensuite. Vous pouvez utiliser du texte d’indice avec des arrière-plans de fenêtre ou de contrôle.
 
-![Texte d’indication obligatoire](../../extensibility/ux-guidelines/media/0303_RequiredHintText.png "0303_RequiredHintText. png")<br />Texte d’indication obligatoire
+**Texte d’indice par défaut**
+
+![Texte d’indice par défaut](../../extensibility/ux-guidelines/media/0303_HintText.png "0303_HintText.png")<br />Texte d’indice par défaut
 
 | Élément | Nom du jeton : Category.color |
 | --- | --- |
-| Premier plan (texte) | `Environment.ControlRequiredHintText` |
+| Au premier plan (texte) | `Environment.ControlEditHintText` |
+
+**Texte d’indice requis**
+
+![Texte d’indice requis](../../extensibility/ux-guidelines/media/0303_RequiredHintText.png "0303_RequiredHintText.png")<br />Texte d’indice requis
+
+| Élément | Nom du jeton : Category.color |
+| --- | --- |
+| Au premier plan (texte) | `Environment.ControlRequiredHintText` |
 | Arrière-plan | `Environment.ControlRequiredBackground` |
 
-**Texte du contrôle zone de recherche**
+**Texte de contrôle de la boîte de recherche**
 
-> Consultez [zones de recherche](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_SearchBoxes) pour d’autres jetons de couleur liés au contrôle de recherche.
+> Voir [les boîtes de recherche](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_SearchBoxes) pour d’autres jetons de couleur liés au contrôle de recherche.
 
-![Texte du contrôle zone de recherche](../../extensibility/ux-guidelines/media/0303_SearchBoxControl.png "0303_SearchBoxControl. png")<br />Texte du contrôle zone de recherche
+![Texte de contrôle de la boîte de recherche](../../extensibility/ux-guidelines/media/0303_SearchBoxControl.png "0303_SearchBoxControl.png")<br />Texte de contrôle de la boîte de recherche
 
 | Élément | Nom du jeton : Category.color |
 | --- | --- |
-| Premier plan (texte) | `SearchControl.UnfocusedWatermarkText` |
+| Au premier plan (texte) | `SearchControl.UnfocusedWatermarkText` |
 
 ### <a name="hyperlink"></a>Hyperlink
-Le lien hypertexte est un contrôle qui n’a pas de paire premier plan/arrière-plan. Dans tous les cas, utilisez la couleur du lien hypertexte de premier plan, qui s’affiche correctement sur les arrière-plans foncés, gris et blancs. Si vous n’utilisez pas le jeton de couleur du contrôle de lien hypertexte, vous verrez la couleur système par défaut pour « pressé » qui clignotera en rouge. C’est le signal que le contrôle n’utilise pas le jeton de couleur d’environnement approprié.
+L’hyperlien est un contrôle qui n’a pas de paire de premier plan/arrière-plan. Dans tous les cas, utilisez la couleur hyperlien de premier plan, qui apparaîtra correctement sur les fonds foncés, gris et blancs. Si vous n’utilisez pas le jeton de couleur pour le contrôle hyperlien, vous verrez la couleur du système par défaut pour "pressé", qui clignotera en rouge. C’est le signal que le contrôle n’utilise pas le jeton de couleur environnement correct.
 
-![Lien hypertexte (ligne rouge)](../../extensibility/ux-guidelines/media/0303-133_hyperlinkredline.png "0303-133_HyperlinkRedline")<br />Lien hypertexte (ligne rouge)
+![Hyperlien (ligne rouge)](../../extensibility/ux-guidelines/media/0303-133_hyperlinkredline.png "0303-133_HyperlinkRedline")<br />Hyperlien (ligne rouge)
 
-| Utilisez... | N’utilisez pas... |
+| Utiliser... | N’utilisez pas ... |
 | --- | --- |
-| ... Lorsque vous devez créer un lien hypertexte personnalisé. | ... pour tout ce qui n’est pas un lien hypertexte. |
+| ... lorsque vous avez besoin de créer un lien hypertexte personnalisé. | ... pour tout ce qui n’est pas un lien hypertexte. |
 
-**Lien hypertexte : état par défaut**
+**Hyperlink: état par défaut**
 
-![Lien hypertexte par défaut](../../extensibility/ux-guidelines/media/0303-134_hyperlink.png "0303-134_Hyperlink")<br />Lien hypertexte par défaut
+![Hyperlien par défaut](../../extensibility/ux-guidelines/media/0303-134_hyperlink.png "0303-134_Hyperlink")<br />Hyperlien par défaut
 
 | Élément | Nom du jeton : Category.color |
 | --- | --- |
 | Premier plan (texte) | `Environment.PanelHyperlink` |
 
-**Lien hypertexte : état sensitif**
+**Hyperlien : état de vol stationnaire**
 
 ![Lien hypertexte au pointage](../../extensibility/ux-guidelines/media/0303-135_hyperlinkhover.png "0303-135_HyperlinkHover")<br />Lien hypertexte au pointage
 
@@ -392,34 +392,34 @@ Le lien hypertexte est un contrôle qui n’a pas de paire premier plan/arrière
 | --- | --- |
 | Premier plan (texte) | `Environment.PanelHyperlinkHover` |
 
-**Lien hypertexte : état enfoncé**
+**Hyperlien : état pressé**
 
-![Lien hypertexte appuyé](../../extensibility/ux-guidelines/media/0303-136_hyperlinkpressed.png "0303-136_HyperlinkPressed")<br />Lien hypertexte appuyé
+![Hyperlien pressé](../../extensibility/ux-guidelines/media/0303-136_hyperlinkpressed.png "0303-136_HyperlinkPressed")<br />Hyperlien pressé
 
 | Élément | Nom du jeton : Category.color |
 | --- | --- |
 | Premier plan (texte) | `Environment.PanelHyperlinkPressed` |
 
-**Lien hypertexte : état désactivé**
+**Hyperlien : état désactivé**
 
-![Lien hypertexte désactivé](../../extensibility/ux-guidelines/media/0303-137_hyperlinkdisabled.png "0303-137_HyperlinkDisabled")<br />Lien hypertexte désactivé
+![Hyperlien désactivé](../../extensibility/ux-guidelines/media/0303-137_hyperlinkdisabled.png "0303-137_HyperlinkDisabled")<br />Hyperlien désactivé
 
 | Élément | Nom du jeton : Category.color |
 | --- | --- |
 | Premier plan (texte) | `Environment.PanelHyperlinkDisabled` |
 
-### <a name="infobars"></a>Barres
+### <a name="infobars"></a>Infobars (Infobars)
 Les barres d’informations sont utilisées pour fournir plus d’informations sur un contexte donné et apparaissent toujours en haut d’une fenêtre de document ou d’outil.
 
-![Barre d’informations (ligne rouge)](../../extensibility/ux-guidelines/media/0303-138_infobarredline.png "0303-138_InfobarRedline")<br />Barre d’informations (ligne rouge)
+![Infobar (ligne rouge)](../../extensibility/ux-guidelines/media/0303-138_infobarredline.png "0303-138_InfobarRedline")<br />Infobar (ligne rouge)
 
-| Utilisez... | N’utilisez pas... |
+| Utiliser... | N’utilisez pas ... |
 | --- | --- |
-| ... lors de la création de barres personnalisés. | ... pour les éléments d’interface utilisateur qui ne sont pas similaires à une barre d’informations. |
+| ... lors de la création d’infobars personnalisés. | ... pour les éléments d’interface utilisateur qui ne sont pas similaires à une infobar. |
 
-**Barre d’informations : état par défaut**
+**Infobar: État par défaut**
 
-![Barre d’informations par défaut](../../extensibility/ux-guidelines/media/0303-139_infobar.png "0303-139_Infobar")<br />Barre d’informations par défaut
+![Infobar par défaut](../../extensibility/ux-guidelines/media/0303-139_infobar.png "0303-139_Infobar")<br />Infobar par défaut
 
 | Élément | Nom du jeton : Category.color |
 | --- | --- |
@@ -427,9 +427,9 @@ Les barres d’informations sont utilisées pour fournir plus d’informations s
 | Premier plan (texte) | `InfoBar.InfoBar` |
 | Bordure | `InfoBar.InfoBarBorder` |
 
-**Bouton de fermeture de la barre d’informations (&times;) : état par défaut**
+**Infobar Close&times;( ) bouton: état par défaut**
 
-![Bouton Fermer la barre d’informations par défaut (&times;)](../../extensibility/ux-guidelines/media/0303_InfobarCloseDefault.png "0303_InfobarCloseDefault. png")<br />Bouton Fermer la barre d’informations par défaut (&times;)
+![Infobar par&times;défaut Fermer ( ) bouton](../../extensibility/ux-guidelines/media/0303_InfobarCloseDefault.png "0303_InfobarCloseDefault.png")<br />Infobar par&times;défaut Fermer ( ) bouton
 
 | Élément | Nom du jeton : Category.color |
 | --- | --- |
@@ -437,9 +437,9 @@ Les barres d’informations sont utilisées pour fournir plus d’informations s
 | Bordure | `InfoBar.CloseButtonBorder` |
 | Glyphe | `InfoBar.CloseButtonGlyph` |
 
-**Bouton de fermeture de la barre d’informations (&times;) : état sensitif**
+**Infobar Fermer&times;( ) bouton: état de vol stationnaire**
 
-![Bouton de fermeture de la barre d’informations (&times;) au survol](../../extensibility/ux-guidelines/media/0303_InfobarCloseHover.png "0303_InfobarCloseHover. png")<br />Bouton de fermeture de la barre d’informations (&times;) au survol
+![Infobar Fermer&times;( ) bouton sur le plan stationnaire](../../extensibility/ux-guidelines/media/0303_InfobarCloseHover.png "0303_InfobarCloseHover.png")<br />Infobar Fermer&times;( ) bouton sur le plan stationnaire
 
 | Élément | Nom du jeton : Category.color |
 | --- | --- |
@@ -447,9 +447,9 @@ Les barres d’informations sont utilisées pour fournir plus d’informations s
 | Bordure | `InfoBar.CloseButtonHoverBorder` |
 | Glyphe | `InfoBar.CloseButtonHoverGlyph` |
 
-**Bouton de fermeture de la barre d’informations (&times;) : état enfoncé**
+**Infobar Close&times;( ) bouton: État pressé**
 
-![Bouton de fermeture de la barre d’informations appuyée (&times;)](../../extensibility/ux-guidelines/media/0303_InfobarClosePressed.png "0303_InfobarClosePressed. png")<br />Bouton de fermeture de la barre d’informations appuyée (&times;)
+![Infobar pressé&times;Fermer ( ) bouton](../../extensibility/ux-guidelines/media/0303_InfobarClosePressed.png "0303_InfobarClosePressed.png")<br />Infobar pressé&times;Fermer ( ) bouton
 
 | Élément | Nom du jeton : Category.color |
 | --- | --- |
@@ -457,114 +457,114 @@ Les barres d’informations sont utilisées pour fournir plus d’informations s
 | Bordure | `InfoBar.CloseButtonDownBorder` |
 | Glyphe | `InfoBar.CloseButtonDownGlyph` |
 
-**Bouton de lien hypertexte de la barre d’informations : état par défaut**
+**Bouton hyperlien Infobar : état par défaut**
 
-![Bouton de lien hypertexte de la barre d’informations par défaut](../../extensibility/ux-guidelines/media/0303_InfobarHyperlinkButtonDefault.png "0303_InfobarHyperlinkButtonDefault. png")<br />Bouton de lien hypertexte de la barre d’informations par défaut
-
-| Élément | Nom du jeton : Category.color |
-| --- | --- |
-| Premier plan (texte) | `InfoBar.Hyperlink` |
-
-**Bouton de lien hypertexte de la barre d’informations : état sensitif**
-
-![Bouton de lien hypertexte de la barre d’informations au pointage](../../extensibility/ux-guidelines/media/0303_InfobarHyperlinkButtonHover.png "0303_InfobarHyperlinkButtonHover. png")<br />Bouton de lien hypertexte de la barre d’informations au pointage
+![Bouton hyperlien infobar par défaut](../../extensibility/ux-guidelines/media/0303_InfobarHyperlinkButtonDefault.png "0303_InfobarHyperlinkButtonDefault.png")<br />Bouton hyperlien infobar par défaut
 
 | Élément | Nom du jeton : Category.color |
 | --- | --- |
-| Premier plan (texte) | `Infobar.HyperlinkMouseOver`<br />(Avec soulignement) |
+| Au premier plan (texte) | `InfoBar.Hyperlink` |
 
-**Bouton de lien hypertexte de la barre d’informations : état enfoncé**
+**Bouton hyperlien Infobar : état de vol stationnaire**
 
-![Bouton de lien hypertexte de barre d’informations appuyé](../../extensibility/ux-guidelines/media/0303_InfobarHyperlinkButtonPressed.png "0303_InfobarHyperlinkButtonPressed. png")<br />Bouton de lien hypertexte de barre d’informations appuyé
-
-| Élément | Nom du jeton : Category.color |
-| --- | --- |
-| Premier plan (texte) | `Infobar.HyperlinkMouseDown`<br />(Avec soulignement) |
-
-**Lien hypertexte incorporé de la barre d’informations (dans une phrase) : état par défaut**
-
-![Bouton de lien hypertexte de la barre d’informations incluse par défaut](../../extensibility/ux-guidelines/media/0303_InfobarHyperlinkButtonDefault.png "0303_InfobarHyperlinkButtonDefault. png")<br />Bouton de lien hypertexte de la barre d’informations incluse par défaut
+![Bouton hyperlien Infobar sur le plan stationnaire](../../extensibility/ux-guidelines/media/0303_InfobarHyperlinkButtonHover.png "0303_InfobarHyperlinkButtonHover.png")<br />Bouton hyperlien Infobar sur le plan stationnaire
 
 | Élément | Nom du jeton : Category.color |
 | --- | --- |
-| Premier plan (texte) | `InfoBar.Hyperlink` |
+| Au premier plan (texte) | `Infobar.HyperlinkMouseOver`<br />(Avec le soulignement) |
 
-**Lien hypertexte inline de la barre d’informations (au sein d’une phrase) : état sensitif**
+**Bouton hyperlien Infobar : état pressé**
 
-![Bouton lien hypertexte inline de la barre d’informations au survol](../../extensibility/ux-guidelines/media/0303_InfobarHyperlinkInlineHover.png "0303_InfobarHyperlinkInlineHover. png")<br />Bouton lien hypertexte inline de la barre d’informations au survol
-
-| Élément | Nom du jeton : Category.color |
-| --- | --- |
-| Premier plan (texte) | `Infobar.HyperlinkMouseOver`<br />(Avec soulignement) |
-
-**Lien hypertexte inline de la barre d’informations (dans une phrase) : état enfoncé**
-
-![Bouton de lien hypertexte de la barre d’informations Inline appuyé](../../extensibility/ux-guidelines/media/0303_InfobarHyperlinkInlinePressed.png "0303_InfobarHyperlinkInlinePressed. png")<br />Bouton de lien hypertexte de la barre d’informations Inline appuyé
+![Bouton hyperlien infobar pressé](../../extensibility/ux-guidelines/media/0303_InfobarHyperlinkButtonPressed.png "0303_InfobarHyperlinkButtonPressed.png")<br />Bouton hyperlien infobar pressé
 
 | Élément | Nom du jeton : Category.color |
 | --- | --- |
-| Premier plan (texte) | `Infobar.HyperlinkMouseDown`<br />(Avec soulignement) |
+| Au premier plan (texte) | `Infobar.HyperlinkMouseDown`<br />(Avec le soulignement) |
 
-**Bouton de la barre d’informations : état par défaut**
+**Hyperlien en ligne Infobar (dans une phrase): état par défaut**
 
-![Bouton de barre d’informations par défaut](../../extensibility/ux-guidelines/media/0303_InfobarButtonDefault.png "0303_InfobarButtonDefault. png")<br />Bouton de barre d’informations par défaut
+![Bouton hyperlien infobar en ligne par défaut](../../extensibility/ux-guidelines/media/0303_InfobarHyperlinkButtonDefault.png "0303_InfobarHyperlinkButtonDefault.png")<br />Bouton hyperlien infobar en ligne par défaut
+
+| Élément | Nom du jeton : Category.color |
+| --- | --- |
+| Au premier plan (texte) | `InfoBar.Hyperlink` |
+
+**Infobar hyperlien en ligne (dans une phrase): état de vol stationnaire**
+
+![Bouton hyperlien en ligne Infobar sur le plan stationnaire](../../extensibility/ux-guidelines/media/0303_InfobarHyperlinkInlineHover.png "0303_InfobarHyperlinkInlineHover.png")<br />Bouton hyperlien en ligne Infobar sur le plan stationnaire
+
+| Élément | Nom du jeton : Category.color |
+| --- | --- |
+| Au premier plan (texte) | `Infobar.HyperlinkMouseOver`<br />(Avec le soulignement) |
+
+**Infobar hyperlien en ligne (dans une phrase): état pressé**
+
+![Bouton hyperlien en ligne infobar pressé](../../extensibility/ux-guidelines/media/0303_InfobarHyperlinkInlinePressed.png "0303_InfobarHyperlinkInlinePressed.png")<br />Bouton hyperlien en ligne infobar pressé
+
+| Élément | Nom du jeton : Category.color |
+| --- | --- |
+| Au premier plan (texte) | `Infobar.HyperlinkMouseDown`<br />(Avec le soulignement) |
+
+**Bouton Infobar : état par défaut**
+
+![Bouton infobar par défaut](../../extensibility/ux-guidelines/media/0303_InfobarButtonDefault.png "0303_InfobarButtonDefault.png")<br />Bouton infobar par défaut
 
 | Élément | Nom du jeton : Category.color |
 | --- | --- |
 | Arrière-plan | `InfoBar.Button` |
-| Premier plan (texte) | `InfoBar.Button` |
+| Au premier plan (texte) | `InfoBar.Button` |
 | Bordure | `InfoBar.ButtonBorder` |
 
-**Bouton de la barre d’informations : état sensitif**
+**Bouton Infobar: état de vol stationnaire**
 
-![Bouton de la barre d’informations au pointage](../../extensibility/ux-guidelines/media/0303_InfobarButtonHover.png "0303_InfobarButtonHover. png")<br />Bouton de la barre d’informations au pointage
+![Bouton Infobar sur le plan stationnaire](../../extensibility/ux-guidelines/media/0303_InfobarButtonHover.png "0303_InfobarButtonHover.png")<br />Bouton Infobar sur le plan stationnaire
 
 | Élément | Nom du jeton : Category.color |
 | --- | --- |
 | Arrière-plan | `InfoBar.ButtonMouseOver` |
-| Premier plan (texte) | `InfoBar.ButtonMouseOver` |
+| Au premier plan (texte) | `InfoBar.ButtonMouseOver` |
 | Bordure | `InfoBar.ButtonMouseOverBorder` |
 
-**Bouton de la barre d’informations : état enfoncé**
+**Bouton Infobar : état pressé**
 
-![Bouton de la barre d’informations appuyée](../../extensibility/ux-guidelines/media/0303_InfobarButtonPressed.png "0303_InfobarButtonPressed. png")<br />Bouton de la barre d’informations appuyée
+![Bouton infobar pressé](../../extensibility/ux-guidelines/media/0303_InfobarButtonPressed.png "0303_InfobarButtonPressed.png")<br />Bouton infobar pressé
 
 | Élément | Nom du jeton : Category.color |
 | --- | --- |
 | Arrière-plan | `InfoBar.ButtonMouseDown` |
-| Premier plan (texte) | `InfoBar.ButtonMouseDown` |
+| Au premier plan (texte) | `InfoBar.ButtonMouseDown` |
 | Bordure | `InfoBar.ButtonMouseDownBorder` |
 
-**Bouton de la barre d’informations : état désactivé**
+**Bouton Infobar : état désactivé**
 
-![Bouton de barre d’informations désactivé](../../extensibility/ux-guidelines/media/0303_InfobarButtonDisabled.png "0303_InfobarButtonDisabled. png")<br />Bouton de barre d’informations désactivé
+![Bouton d’infobar désactivé](../../extensibility/ux-guidelines/media/0303_InfobarButtonDisabled.png "0303_InfobarButtonDisabled.png")<br />Bouton d’infobar désactivé
 
 | Élément | Nom du jeton : Category.color |
 | --- | --- |
 | Arrière-plan | `InfoBar.ButtonDisabled` |
-| Premier plan (texte) | `InfoBar.ButtonDisabled` |
+| Au premier plan (texte) | `InfoBar.ButtonDisabled` |
 | Bordure | `InfoBar.ButtonDisabledBorder` |
 
-**Bouton de la barre d’informations : état Focus**
+**Bouton Infobar : état focalisé**
 
-![Bouton de barre d’informations Focused](../../extensibility/ux-guidelines/media/0303_InfobarButtonFocus.png "0303_InfobarButtonFocus. png")<br />Bouton de barre d’informations Focused
+![Bouton infobar focalisé](../../extensibility/ux-guidelines/media/0303_InfobarButtonFocus.png "0303_InfobarButtonFocus.png")<br />Bouton infobar focalisé
 
 | Élément | Nom du jeton : Category.color |
 | --- | --- |
 | Arrière-plan | `InfoBar.ButtonFocus` |
-| Premier plan (texte) | `InfoBar.ButtonFocus` |
+| Au premier plan (texte) | `InfoBar.ButtonFocus` |
 | Bordure | `InfoBar.ButtonFocusBorder` |
 
 ### <a name="scroll-bars"></a>Barres de défilement
-Les barres de défilement sont stylisées par l’environnement Visual Studio et n’ont pas besoin d’être à thème. Toutefois, vous pouvez décider que vous souhaitez tirer parti des couleurs utilisées dans les barres de défilement afin que votre interface utilisateur apparaisse toujours cohérente avec cette partie de l’environnement Visual Studio.
+Les barres de défilement sont stylées par l’environnement Visual Studio, et n’ont pas besoin d’être sur le thème. Cependant, vous pouvez décider que vous voulez tirer parti des couleurs utilisées dans les barres de défilement de sorte que votre interface utilisateur semble toujours compatible avec cette partie de l’environnement Visual Studio.
 
-![Barre de défilement (ligne rouge)](../../extensibility/ux-guidelines/media/0303-140_scrollbarredline.png "0303-140_ScrollbarRedline")<br />Barre de défilement (ligne rouge)
+![Barre de défilement (redline)](../../extensibility/ux-guidelines/media/0303-140_scrollbarredline.png "0303-140_ScrollbarRedline")<br />Barre de défilement (redline)
 
-| Utilisez... | N’utilisez pas... |
+| Utiliser... | N’utilisez pas ... |
 | --- | --- |
-| ... Lorsque vous créez une interface utilisateur que vous souhaitez faire correspondre aux barres de défilement Visual Studio. | ... pour tout ce que vous ne souhaitez pas faire correspondre systématiquement à l’interface utilisateur de la barre de défilement. |
+| ... lorsque vous créez l’interface utilisateur que vous souhaitez faire correspondre les barres de défilement Visual Studio. | ... pour tout ce que vous ne voulez pas toujours correspondre à l’interface utilisateur barre de défilement. |
 
-**Barre de défilement : état par défaut**
+**Barre de défilement : état par défaut**
 
 ![Barre de défilement par défaut](../../extensibility/ux-guidelines/media/0303-141_scrollbar.png "0303-141_Scrollbar")<br />Barre de défilement par défaut
 
@@ -573,7 +573,7 @@ Les barres de défilement sont stylisées par l’environnement Visual Studio et
 | Barre de défilement | `Environment.ScrollBarBackground` |
 | Premier plan (curseur de défilement) | `Environment.ScrollBarThumbBackground` |
 
-**Barre de défilement : état de survol**
+**Barre de défilement : état de vol stationnaire**
 
 ![Barre de défilement au pointage](../../extensibility/ux-guidelines/media/0303-143_scrollbarhover.png "0303-143_ScrollbarHover")<br />Barre de défilement au pointage
 
@@ -582,43 +582,43 @@ Les barres de défilement sont stylisées par l’environnement Visual Studio et
 | Barre de défilement | `Environment.ScrollBarBackground` |
 | Premier plan (curseur de défilement) | `Environment.ScrollBarThumbMouseOverBackground` |
 
-*Barre de défilement : état enfoncé**
+*Barre de défilement : état pressé**
 
-![Barre de défilement appuyée](../../extensibility/ux-guidelines/media/0303-145_scrollbarpressed.png "0303-145_ScrollbarPressed")<br />Barre de défilement appuyée
+![Barre de défilement pressée](../../extensibility/ux-guidelines/media/0303-145_scrollbarpressed.png "0303-145_ScrollbarPressed")<br />Barre de défilement pressée
 
 | Élément | Nom du jeton : Category.color |
 | --- | --- |
 | Barre de défilement | `Environment.ScrollBarBackground` |
 | Premier plan (curseur de défilement) | `Environment.ScrollBarThumbPressedBackground` |
 
-**Flèche de barre de défilement : état par défaut**
+**Flèche de barre de défilement : état par défaut**
 
-![Flèche de la barre de défilement par défaut](../../extensibility/ux-guidelines/media/0303-142_scrollbararrow.png "0303-142_ScrollbarArrow")<br />Flèche de la barre de défilement par défaut
+![Flèche de barre de défilement par défaut](../../extensibility/ux-guidelines/media/0303-142_scrollbararrow.png "0303-142_ScrollbarArrow")<br />Flèche de barre de défilement par défaut
 
 | Élément | Nom du jeton : Category.color |
 | --- | --- |
-| Arrière-plan | `Environment.ScrollBarArrowBackground`<br />(Défini sur la même couleur que la barre de défilement.) |
+| Arrière-plan | `Environment.ScrollBarArrowBackground`<br />(Définir à la même couleur que la barre de défilement.) |
 | Premier plan (glyphe) | `Environment.ScrollBarArrowGlyph` |
 
-**Barre de défilement flèche : état sensitif**
+**Flèche de barre de défilement : état de plan plan plan planer**
 
 ![Flèche de barre de défilement au pointage](../../extensibility/ux-guidelines/media/0303-144_scrollbararrowhover.png "0303-144_ScrollbarArrowHover")<br />Flèche de barre de défilement au pointage
 
 | Élément | Nom du jeton : Category.color |
 | --- | --- |
-| Arrière-plan | `Environment.ScrollBarArrowMouseOverBackground`<br />(Défini sur la même couleur que la barre de défilement.) |
+| Arrière-plan | `Environment.ScrollBarArrowMouseOverBackground`<br />(Définir à la même couleur que la barre de défilement.) |
 | Premier plan (glyphe) | `Environment.ScrollBarArrowGlyphMouseOver` |
 
-**Flèche de barre de défilement : état enfoncé**
+**Flèche de barre de défilement : état pressé**
 
-![Flèche de barre de défilement appuyée](../../extensibility/ux-guidelines/media/0303-146_scrollbararrowpressed.png "0303-146_ScrollbarArrowPressed")<br />Flèche de barre de défilement appuyée
+![Flèche de barre de défilement pressée](../../extensibility/ux-guidelines/media/0303-146_scrollbararrowpressed.png "0303-146_ScrollbarArrowPressed")<br />Flèche de barre de défilement pressée
 
 | Élément | Nom du jeton : Category.color |
 | --- | --- |
-| Arrière-plan | `Environment.ScrollBarArrowPressedBackground`<br />(Défini sur la même couleur que la barre de défilement.) |
+| Arrière-plan | `Environment.ScrollBarArrowPressedBackground`<br />(Définir à la même couleur que la barre de défilement.) |
 | Premier plan (glyphe) | `Environment.ScrollBarArrowGlyphPressed` |
 
-### <a name="BKMK_SearchBoxes"></a>Zones de recherche
+### <a name="search-boxes"></a><a name="BKMK_SearchBoxes"></a>Boîtes de recherche
 Si possible, utilisez le contrôle de recherche commun fourni par l’environnement Visual Studio. Les couleurs de zone de recherche se trouvent dans la catégorie « SearchControl » du fichier **ShellColors.pkgdef** qui contient les noms de jeton du champ d’entrée, du bouton d’action, du bouton de liste déroulante et du menu déroulant.
 
 Une zone de recherche peut être dans plusieurs états, dont certains s’excluent mutuellement :
@@ -631,16 +631,16 @@ Une zone de recherche peut être dans plusieurs états, dont certains s’exclue
 
 - L’état « désactivé » signifie que la fonctionnalité de recherche est désactivée pour le contexte actuel.
 
-![Zone de recherche (ligne rouge)](../../extensibility/ux-guidelines/media/0303-110_searchboxredline.png "0303-110_SearchBoxRedline")<br />Zone de recherche (ligne rouge)
+![Boîte de recherche (redline)](../../extensibility/ux-guidelines/media/0303-110_searchboxredline.png "0303-110_SearchBoxRedline")<br />Boîte de recherche (redline)
 
-| Utilisez... | N’utilisez pas... |
+| Utiliser... | N’utilisez pas ... |
 | --- | --- |
-| ... Lorsque vous concevez une zone de recherche personnalisée. | ... pour tout ce qui n’est pas une zone de recherche. |
-| | ... pour tout ce que vous ne voulez pas toujours faire correspondre à l’interface utilisateur de la zone de recherche. |
+| ... lorsque vous concevez une boîte de recherche personnalisée. | ... pour tout ce qui n’est pas une boîte de recherche. |
+| | ... pour tout ce que vous ne voulez pas toujours correspondre à l’interface utilisateur boîte de recherche. |
 
-**Champ d’entrée de recherche ciblée**
+**Champ d’entrée de recherche ciblé**
 
-![Champ d’entrée de recherche ciblée](../../extensibility/ux-guidelines/media/0303-111_searchinputfieldfocused.png "0303-111_SearchInputFieldFocused")<br />Champ d’entrée de recherche ciblée
+![Champ d’entrée de recherche ciblé](../../extensibility/ux-guidelines/media/0303-111_searchinputfieldfocused.png "0303-111_SearchInputFieldFocused")<br />Champ d’entrée de recherche ciblé
 
 | Élément | Nom du jeton : Category.color |
 | --- | --- |
@@ -649,9 +649,9 @@ Une zone de recherche peut être dans plusieurs états, dont certains s’exclue
 | Bordure | `SearchControl.FocusedBorder` |
 | Séparateur | `SearchControl.FocusedDropDownSeparator` |
 
-**Champ d’entrée de recherche active inactif**
+**Champ d’entrée de recherche actif non focalisé**
 
-![Champ d’entrée de recherche inactif](../../extensibility/ux-guidelines/media/0303-114_searchinputfieldunfocused.png "0303-114_SearchInputFieldUnfocused")<br />Champ d’entrée de recherche active inactif
+![Champ d'entrée de recherche inactif](../../extensibility/ux-guidelines/media/0303-114_searchinputfieldunfocused.png "0303-114_SearchInputFieldUnfocused")<br />Champ d’entrée de recherche actif non focalisé
 
 | Élément | Nom du jeton : Category.color |
 | --- | --- |
@@ -660,9 +660,9 @@ Une zone de recherche peut être dans plusieurs états, dont certains s’exclue
 | Bordure | `SearchControl.UnfocusedBorder` |
 | Séparateur | `SearchControl.DropDownSeparator` |
 
-**Champ d’entrée de recherche inactif**
+**Champ d’entrée de recherche non focalisé et inactif**
 
-![Champ d’entrée de recherche inactif](../../extensibility/ux-guidelines/media/0303-114-1_searchinputfieldunfocusedinactive.png "0303-114-1_SearchInputFieldUnfocusedInactive")<br />Champ d’entrée de recherche inactif
+![Champ d’entrée de recherche non focalisé et inactif](../../extensibility/ux-guidelines/media/0303-114-1_searchinputfieldunfocusedinactive.png "0303-114-1_SearchInputFieldUnfocusedInactive")<br />Champ d’entrée de recherche non focalisé et inactif
 
 | Élément | Nom du jeton : Category.color |
 | --- | --- |
@@ -671,9 +671,9 @@ Une zone de recherche peut être dans plusieurs états, dont certains s’exclue
 | Bordure | `SearchControl.UnfocusedBorder` |
 | Séparateur | `SearchControl.DropDownSeparator` |
 
-**Champ d’entrée de recherche en surbrillance (texte uniquement)**
+**Champ d’entrée de recherche mis en évidence (texte seulement)**
 
-![Champ d’entrée de recherche en surbrillance](../../extensibility/ux-guidelines/media/0303-120_searchinputfieldhighlight.png "0303-120_SearchInputFieldHighlight")<br />Champ d’entrée de recherche en surbrillance
+![Champ d’entrée de recherche mis en évidence](../../extensibility/ux-guidelines/media/0303-120_searchinputfieldhighlight.png "0303-120_SearchInputFieldHighlight")<br />Champ d’entrée de recherche mis en évidence
 
 | Élément | Nom du jeton : Category.color |
 | --- | --- |
@@ -693,9 +693,9 @@ Une zone de recherche peut être dans plusieurs états, dont certains s’exclue
 | Bordure | `SearchControl.DisabledBorder` |
 | Séparateur | `SearchControl.DropDownSeparator` |
 
-**Bouton d’action de recherche ciblée**
+**Bouton d’action de recherche focalisé**
 
-![Bouton d’action de recherche actif](../../extensibility/ux-guidelines/media/0303-112_searchactionbuttonfocused.png "0303-112_SearchActionButtonFocused")<br />Bouton d’action de recherche ciblée
+![Bouton d'action de recherche actif](../../extensibility/ux-guidelines/media/0303-112_searchactionbuttonfocused.png "0303-112_SearchActionButtonFocused")<br />Bouton d’action de recherche focalisé
 
 | Élément | Nom du jeton : Category.color |
 | --- | --- |
@@ -705,9 +705,9 @@ Une zone de recherche peut être dans plusieurs états, dont certains s’exclue
 | Premier plan (glyphe Effacer) | `SearchControl.ClearGlyph` |
 | Bordure | N/A |
 
-**Bouton d’action de recherche inactif**
+**Bouton d’action de recherche non focalisé**
 
-![Bouton d’action de recherche inactif](../../extensibility/ux-guidelines/media/0303-115_searchactionbuttonunfocused.png "0303-115_SearchActionButtonUnfocused")<br />Bouton d’action de recherche inactif
+![Bouton d’action de recherche non focalisé](../../extensibility/ux-guidelines/media/0303-115_searchactionbuttonunfocused.png "0303-115_SearchActionButtonUnfocused")<br />Bouton d’action de recherche non focalisé
 
 | Élément | Nom du jeton : Category.color |
 | --- | --- |
@@ -717,9 +717,9 @@ Une zone de recherche peut être dans plusieurs états, dont certains s’exclue
 | Premier plan (glyphe Effacer) | `SearchControl.ClearGlyph` |
 | Bordure | N/A |
 
-**Bouton d’action de recherche appuyé**
+**Bouton d’action de recherche pressé**
 
-![Bouton d’action de recherche appuyé](../../extensibility/ux-guidelines/media/0303-116-1_searchactionbuttonpressed.png "0303-116-1_SearchActionButtonPressed")<br />Bouton d’action de recherche appuyé
+![Bouton d’action de recherche pressé](../../extensibility/ux-guidelines/media/0303-116-1_searchactionbuttonpressed.png "0303-116-1_SearchActionButtonPressed")<br />Bouton d’action de recherche pressé
 
 | Élément | Nom du jeton : Category.color |
 | --- | --- |
@@ -729,7 +729,7 @@ Une zone de recherche peut être dans plusieurs états, dont certains s’exclue
 
 **Bouton d’action de recherche désactivé**
 
-![Bouton d’action de recherche désactivé](../../extensibility/ux-guidelines/media/0303-122_searchactionbuttondisabled.png "0303-122_SearchActionButtonDisabled")<br />Bouton d’action de recherche désactivé
+![Bouton d'action de recherche désactivé](../../extensibility/ux-guidelines/media/0303-122_searchactionbuttondisabled.png "0303-122_SearchActionButtonDisabled")<br />Bouton d’action de recherche désactivé
 
 | Élément | Nom du jeton : Category.color |
 | --- | --- |
@@ -737,9 +737,9 @@ Une zone de recherche peut être dans plusieurs états, dont certains s’exclue
 | Premier plan (glyphe) | `SearchControl.ActionButtonDisabledGlyph` |
 | Bordure | None |
 
-**Bouton de liste déroulante recherche ciblée**
+**Bouton de drop-down de recherche focalisé**
 
-![Bouton de liste déroulante recherche ciblée](../../extensibility/ux-guidelines/media/0303-113_searchdropdownbuttonfocused.png "0303-113_SearchDropdownButtonFocused")<br />Bouton de liste déroulante recherche ciblée
+![Bouton de drop-down de recherche focalisé](../../extensibility/ux-guidelines/media/0303-113_searchdropdownbuttonfocused.png "0303-113_SearchDropdownButtonFocused")<br />Bouton de drop-down de recherche focalisé
 
 | Élément | Nom du jeton : Category.color |
 | --- | --- |
@@ -747,9 +747,9 @@ Une zone de recherche peut être dans plusieurs états, dont certains s’exclue
 | Premier plan (glyphe) | `SearchControl.FocusedDropDownButtonGlyph` |
 | Bordure | `SearchControl.FocusedDropDownButtonBorder` |
 
-**Bouton de liste déroulante de recherche inactif**
+**Bouton de chute de recherche non focalisé**
 
-![Bouton de liste déroulante de recherche inactif](../../extensibility/ux-guidelines/media/0303-116_searchdropdownbuttonunfocused.png "0303-116_SearchDropdownButtonUnfocused")<br />Bouton de liste déroulante de recherche inactif
+![Bouton de chute de recherche non focalisé](../../extensibility/ux-guidelines/media/0303-116_searchdropdownbuttonunfocused.png "0303-116_SearchDropdownButtonUnfocused")<br />Bouton de chute de recherche non focalisé
 
 | Élément | Nom du jeton : Category.color |
 | --- | --- |
@@ -757,9 +757,9 @@ Une zone de recherche peut être dans plusieurs états, dont certains s’exclue
 | Premier plan (glyphe) | `SearchControl.UnfocusedDropDownButtonGlyph` |
 | Bordure | `SearchControl.UnfocusedDropDownButtonBorder` |
 
-**Bouton de liste déroulante de recherche appuyée**
+**Bouton de chute de recherche pressé**
 
-![Bouton de liste déroulante de recherche appuyée](../../extensibility/ux-guidelines/media/0303-116-2_searchdropdownbuttonpressed.png "0303-116-2_SearchDropdownButtonPressed")<br />Bouton de liste déroulante de recherche appuyée
+![Bouton de chute de recherche pressé](../../extensibility/ux-guidelines/media/0303-116-2_searchdropdownbuttonpressed.png "0303-116-2_SearchDropdownButtonPressed")<br />Bouton de chute de recherche pressé
 
 | Élément | Nom du jeton : Category.color |
 | --- | --- |
@@ -767,9 +767,9 @@ Une zone de recherche peut être dans plusieurs états, dont certains s’exclue
 | Premier plan (glyphe) | `SearchControl.MouseDownDropDownButtonGlyph` |
 | Bordure | `SearchControl.MouseDownDropDownButtonBorder` |
 
-**Bouton de liste déroulante de recherche désactivé**
+**Bouton de chute de recherche désactivé**
 
-![Bouton de liste déroulante de recherche désactivé](../../extensibility/ux-guidelines/media/0303-123_searchdropdownbuttondisabled.png "0303-123_SearchDropdownButtonDisabled")<br />Bouton de liste déroulante de recherche désactivé
+![Bouton de chute de recherche désactivé](../../extensibility/ux-guidelines/media/0303-123_searchdropdownbuttondisabled.png "0303-123_SearchDropdownButtonDisabled")<br />Bouton de chute de recherche désactivé
 
 | Élément | Nom du jeton : Category.color |
 | --- | --- |
@@ -778,16 +778,16 @@ Une zone de recherche peut être dans plusieurs états, dont certains s’exclue
 | Bordure | None |
 
 #### <a name="search-drop-down-lists"></a>Listes déroulantes de recherche
-Le menu déroulant de la zone de recherche est susceptible d’être légèrement plus complexe que les autres menus déroulants dans Visual Studio. Les sections « recherches suggérées » et « options de recherche » peuvent apparaître seules ou ensemble dans le menu, et chacune d’elles est colorée séparément. Une ligne sépare également ces deux sections quand elles apparaissent ensemble et une bordure entoure l’ensemble du menu déroulant.
+Le menu de la boîte de recherche est un peu plus complexe que les autres menus déroulants de Visual Studio. Les sections « recherches suggérées » et « options de recherche » peuvent apparaître seules ou ensemble dans le menu, et chacune est colorée séparément. Une ligne sépare également ces deux sections quand elles apparaissent ensemble et une bordure entoure l’ensemble du menu déroulant.
 
-![Liste déroulante de recherche (ligne rouge)](../../extensibility/ux-guidelines/media/0303-124_searchdropdownredline.png "0303-124_SearchDropdownRedline")<br />Liste déroulante de recherche (ligne rouge)
+![Liste d’abandon de recherche (redline)](../../extensibility/ux-guidelines/media/0303-124_searchdropdownredline.png "0303-124_SearchDropdownRedline")<br />Liste d’abandon de recherche (redline)
 
-| Utilisez... | N’utilisez pas... |
+| Utiliser... | N’utilisez pas ... |
 | --- | --- |
-| ... Lorsque vous créez une liste déroulante de recherche personnalisée. | ... pour les listes déroulantes qui apparaissent dans d’autres contextes. |
-| ... les noms de jeton corrects pour les composants de liste corrects. | ... dans toute combinaison d’arrière-plan/premier plan autre que celle spécifiée. |
+| ... lorsque vous créez une liste de recherche personnalisée. | ... pour les listes de décrochage qui apparaissent dans d’autres contextes. |
+| ... les noms de jetons corrects pour les composants de liste corrects. | ... dans n’importe quelle combinaison de fond/premier plan autre que spécifiée. |
 
-**Éléments de liste déroulante de recherche**
+**Rechercher des éléments de liste d’abandon**
 
 | Élément | Nom du jeton : Category.color |
 | --- | --- |
@@ -795,26 +795,26 @@ Le menu déroulant de la zone de recherche est susceptible d’être légèremen
 | Séparateur | `SearchControl.PopupSectionHeaderSeparator` |
 | Shadow | `Environment.DropShadowBackground` |
 
-**Recherches suggérées : état par défaut**
+**Recherches suggérées : état par défaut**
 
 ![Recherches suggérées par défaut](../../extensibility/ux-guidelines/media/0303-125_searchsuggested.png "0303-125_SearchSuggested")<br />Recherches suggérées par défaut
 
 | Élément | Nom du jeton : Category.color |
 | --- | --- |
-| Arrière-plan | `SearchControl.PopupItemsListBackgroundGradientBegin`<br />(Les points de dégradé de ce jeton ne sont pas utilisés dans l’interface utilisateur à thème.) |
+| Arrière-plan | `SearchControl.PopupItemsListBackgroundGradientBegin`<br />(Gradient s’arrête pour ce jeton non utilisé dans l’interface utilisateur thématique.) |
 | Premier plan (texte) | `SearchControl.PopupItemText` |
 
-**Recherches suggérées : état pointé**
+**Recherches suggérées : état de vol stationnaire**
 
-![Recherches suggérées au survol](../../extensibility/ux-guidelines/media/0303-128_searchsuggestedhover.png "0303-128_SearchSuggestedHover")<br />Recherches suggérées au survol
+![Recherches suggérées sur le plan stationnaire](../../extensibility/ux-guidelines/media/0303-128_searchsuggestedhover.png "0303-128_SearchSuggestedHover")<br />Recherches suggérées sur le plan stationnaire
 
 | Élément | Nom du jeton : Category.color |
 | --- | --- |
-| Arrière-plan | `SearchControl.PopupControlMouseOverBackgroundGradientBegin`<br />(Les points de dégradé de ce jeton ne sont pas utilisés dans l’interface utilisateur à thème.) |
+| Arrière-plan | `SearchControl.PopupControlMouseOverBackgroundGradientBegin`<br />(Gradient s’arrête pour ce jeton non utilisé dans l’interface utilisateur thématique.) |
 | Premier plan (texte) | `SearchControl.PopupMouseOverItemText` |
 | Bordure | `SearchControl.PopupControlMouseOverBorder` |
 
-**Options de recherche : état par défaut**
+**Options de recherche : état par défaut**
 
 ![Case à cocher de recherche](../../extensibility/ux-guidelines/media/0303-126_searchcheckbox.png "0303-126_SearchCheckbox")<br />Options de recherche par défaut (case à cocher)
 
@@ -822,51 +822,51 @@ Le menu déroulant de la zone de recherche est susceptible d’être légèremen
 
 | Élément | Nom du jeton : Category.color |
 | --- | --- |
-| Arrière-plan | `SearchControl.PopupSectionBackgroundGradientBegin`<br />(Les points de dégradé de ce jeton ne sont pas utilisés dans l’interface utilisateur à thème.) |
+| Arrière-plan | `SearchControl.PopupSectionBackgroundGradientBegin`<br />(Gradient s’arrête pour ce jeton non utilisé dans l’interface utilisateur thématique.) |
 | Premier plan (texte de case à cocher) | `SearchControl.PopupCheckboxText` |
 | Premier plan (texte de lien) | `SearchControl.PopupButtonText` |
-| Arrière-plan d’en-tête | `SearchControl.PopupSectionHeaderGradientBegin`<br />(Les points de dégradé de ce jeton ne sont pas utilisés dans l’interface utilisateur à thème.) |
+| Arrière-plan d’en-tête | `SearchControl.PopupSectionHeaderGradientBegin`<br />(Gradient s’arrête pour ce jeton non utilisé dans l’interface utilisateur thématique.) |
 | Premier plan (texte d’en-tête) | `SearchControl.PopupSectionHeaderText` |
 
-**Options de recherche : état du survol**
+**Options de recherche : état de vol stationnaire**
 
-![Options de recherche (case à cocher) au survol](../../extensibility/ux-guidelines/media/0303-129_searchcheckboxhover.png "0303-129_SearchCheckboxHover")<br />Options de recherche (case à cocher) au survol
+![Options de recherche (case à cocher) sur le plan stationnaire](../../extensibility/ux-guidelines/media/0303-129_searchcheckboxhover.png "0303-129_SearchCheckboxHover")<br />Options de recherche (case à cocher) sur le plan stationnaire
 
-![Options de recherche (lien) au survol](../../extensibility/ux-guidelines/media/0303-130_searchoptionshover.png "0303-130_SearchOptionsHover")<br />Options de recherche (lien) au survol
+![Options de recherche (lien) sur le plan stationnaire](../../extensibility/ux-guidelines/media/0303-130_searchoptionshover.png "0303-130_SearchOptionsHover")<br />Options de recherche (lien) sur le plan stationnaire
 
 | Élément | Nom du jeton : Category.color |
 | --- | --- |
-| Arrière-plan | `SearchControl.PopupControlMouseOverBackgroundGradientBegin`<br />(Les points de dégradé de ce jeton ne sont pas utilisés dans l’interface utilisateur à thème.) |
+| Arrière-plan | `SearchControl.PopupControlMouseOverBackgroundGradientBegin`<br />(Gradient s’arrête pour ce jeton non utilisé dans l’interface utilisateur thématique.) |
 | Premier plan (texte de case à cocher) | `SearchControl.PopupCheckboxMouseDownText` |
 | Premier plan (texte de lien) | `SearchControl.PopupButtonMouseDownText` |
 | Bordure | `SearchControl.PopupControlMouseOverBorder` |
 
-**Options de recherche : état appuyé**
+**Options de recherche : état pressé**
 
-![Options de recherche appuyée (case à cocher)](../../extensibility/ux-guidelines/media/0303-131_searchsuggestedpressed.png "0303-131_SearchSuggestedPressed")<br />Options de recherche appuyée (case à cocher)
+![Options de recherche pressées (case à cocher)](../../extensibility/ux-guidelines/media/0303-131_searchsuggestedpressed.png "0303-131_SearchSuggestedPressed")<br />Options de recherche pressées (case à cocher)
 
-![Options de recherche appuyée (lien)](../../extensibility/ux-guidelines/media/0303-132_searchoptionspressed.png "0303-132_SearchOptionsPressed")<br />Options de recherche appuyée (lien)
+![Options de recherche pressées (lien)](../../extensibility/ux-guidelines/media/0303-132_searchoptionspressed.png "0303-132_SearchOptionsPressed")<br />Options de recherche pressées (lien)
 
 | Élément | Nom du jeton : Category.color |
 | --- | --- |
-| Arrière-plan de case à cocher | `SearchControl.PopupControlMouseDownBackgroundGradientBegin`<br />`SearchControl.PopupControlMouseDownBackgroundGradientEnd`<br />(Les points de dégradé de ce jeton ne sont pas utilisés dans l’interface utilisateur à thème.) |
+| Arrière-plan de case à cocher | `SearchControl.PopupControlMouseDownBackgroundGradientBegin`<br />`SearchControl.PopupControlMouseDownBackgroundGradientEnd`<br />(Gradient s’arrête pour ce jeton non utilisé dans l’interface utilisateur thématique.) |
 | Premier plan (texte de case à cocher) | `SearchControl.PopupCheckboxMouseDownText` |
-| Arrière-plan de lien | `SearchControl.PopupButtonMouseDownBackgroundGradientBegin`<br />(Les points de dégradé de ce jeton ne sont pas utilisés dans l’interface utilisateur à thème.) |
+| Arrière-plan de lien | `SearchControl.PopupButtonMouseDownBackgroundGradientBegin`<br />(Gradient s’arrête pour ce jeton non utilisé dans l’interface utilisateur thématique.) |
 | Premier plan (texte de lien) | `SearchControl.PopupButtonMouseDownText` |
 
-### <a name="BKMK_TreeView"></a>Arborescences
-Plusieurs fenêtres outil, y compris les Explorateur de solutions, les Explorateur de serveurs et les Affichage de classes, implémentent un schéma organisationnel hiérarchique dont les couleurs sont contrôlées par les noms de couleur de la catégorie `TreeView`. Tous les éléments d’une arborescence ont des couleurs d’arrière-plan et de texte. Les éléments qui possèdent des éléments enfants imbriqués ont également des glyphes qui indiquent si l’élément est développé ou réduit.
+### <a name="tree-views"></a><a name="BKMK_TreeView"></a>Vues d’arbre
+Plusieurs fenêtres d’outils, y compris le Solution Explorer, Server Explorer, et Class View, implémentent un schéma organisationnel hiérarchique dont les couleurs sont contrôlées par des noms de couleur dans la `TreeView` catégorie. Tous les éléments d’une arborescence ont des couleurs d’arrière-plan et de texte. Les éléments qui possèdent des éléments enfants imbriqués ont également des glyphes qui indiquent si l’élément est développé ou réduit.
 
-![Arborescence (ligne rouge)](../../extensibility/ux-guidelines/media/0303-147_treeviewredline.png "0303-147_TreeViewRedline")<br />Arborescence (ligne rouge)
+![Vue d’arbre (ligne rouge)](../../extensibility/ux-guidelines/media/0303-147_treeviewredline.png "0303-147_TreeViewRedline")<br />Vue d’arbre (ligne rouge)
 
-| Utilisez... | N’utilisez pas... |
+| Utiliser... | N’utilisez pas ... |
 | --- | --- |
-| ... partout où vous avez besoin d’implémenter une vue organisationnelle hiérarchique. | ... pour tout ce qui n’est pas similaire à une arborescence. |
-| | ... dans toute combinaison d’arrière-plan/premier plan autre que celle spécifiée. |
+| ... où vous avez besoin pour mettre en œuvre une vue organisationnelle hiérarchique. | ... pour tout ce qui n’est pas similaire à une vue d’arbre. |
+| | ... dans n’importe quelle combinaison de fond/premier plan autre que spécifiée. |
 
-**Élément d’arborescence : état par défaut**
+**Article de vue d’arbre : état par défaut**
 
-![Élément d’affichage de l’arborescence par défaut](../../extensibility/ux-guidelines/media/0303-148_treeview.png "0303-148_TreeView")<br />Élément d’affichage de l’arborescence par défaut
+![Élément de vue d’arbre par défaut](../../extensibility/ux-guidelines/media/0303-148_treeview.png "0303-148_TreeView")<br />Élément de vue d’arbre par défaut
 
 | Élément | Nom du jeton : Category.color |
 | --- | --- |
@@ -875,9 +875,9 @@ Plusieurs fenêtres outil, y compris les Explorateur de solutions, les Explorate
 | Premier plan (glyphe) | `TreeView.Glyph` |
 | Bordure | None |
 
-**Élément d’arborescence : état de survol**
+**Article de vue d’arbre : état de vol stationnaire**
 
-![Élément d’arborescence au survol](../../extensibility/ux-guidelines/media/0303-149_treeviewhover.png "0303-149_TreeViewHover")<br />Élément d’arborescence au survol
+![Article de vue d’arbre sur le planeur](../../extensibility/ux-guidelines/media/0303-149_treeviewhover.png "0303-149_TreeViewHover")<br />Article de vue d’arbre sur le planeur
 
 | Élément | Nom du jeton : Category.color |
 | --- | --- |
@@ -886,9 +886,9 @@ Plusieurs fenêtres outil, y compris les Explorateur de solutions, les Explorate
 | Premier plan (glyphe) | `TreeView.GlyphMouseOver` |
 | Bordure | None |
 
-**Élément d’arborescence : faire glisser l’État**
+**Article de vue d’arbre : traînez au-dessus de l’état**
 
-![Élément d’arborescence sur lequel faire glisser](../../extensibility/ux-guidelines/media/0303-150_treeviewdragover.png "0303-150_TreeViewDragOver")<br />Élément d’arborescence sur lequel faire glisser
+![Article de vue d’arbre sur la traînée au-dessus](../../extensibility/ux-guidelines/media/0303-150_treeviewdragover.png "0303-150_TreeViewDragOver")<br />Article de vue d’arbre sur la traînée au-dessus
 
 | Élément | Nom du jeton : Category.color |
 | --- | --- |
@@ -897,9 +897,9 @@ Plusieurs fenêtres outil, y compris les Explorateur de solutions, les Explorate
 | Premier plan (glyphe) | `TreeView.DragOverItemGlyph` |
 | Bordure | None |
 
-**Élément d’arborescence : sélectionné, état ciblé**
+**Article de vue d’arbre : état choisi et ciblé**
 
-![Élément d’arborescence sélectionné et ayant le focus](../../extensibility/ux-guidelines/media/0303-151_treeviewfocused.png "0303-151_TreeViewFocused")<br />Élément d’arborescence sélectionné et ayant le focus
+![Élément de vue d’arbre sélectionné et concentré](../../extensibility/ux-guidelines/media/0303-151_treeviewfocused.png "0303-151_TreeViewFocused")<br />Élément de vue d’arbre sélectionné et concentré
 
 | Élément | Nom du jeton : Category.color |
 | --- | --- |
@@ -908,9 +908,9 @@ Plusieurs fenêtres outil, y compris les Explorateur de solutions, les Explorate
 | Premier plan (glyphe) | `TreeView.SelectedItemActiveGlyph` |
 | Bordure | `TreeView.FocusVisualBorder` |
 
-**Élément d’arborescence : état sélectionné, sans focus**
+**Article de vue d’arbre : état choisi et non focalisé**
 
-![Élément d’affichage de l’arborescence sélectionné et inactif](../../extensibility/ux-guidelines/media/0303-152_treeviewunfocused.png "0303-152_TreeViewUnfocused")<br />Élément d’affichage de l’arborescence sélectionné et inactif
+![Élément choisi et non focalisé de vue d’arbre](../../extensibility/ux-guidelines/media/0303-152_treeviewunfocused.png "0303-152_TreeViewUnfocused")<br />Élément choisi et non focalisé de vue d’arbre
 
 | Élément | Nom du jeton : Category.color |
 | --- | --- |
@@ -919,9 +919,9 @@ Plusieurs fenêtres outil, y compris les Explorateur de solutions, les Explorate
 | Premier plan (glyphe) | `TreeView.SelectedItemInactiveGlyph` |
 | Bordure | None |
 
-**Élément d’arborescence : pointage, sélectionné et état ciblé**
+**Article de vue d’arbre : état plané, choisi et concentré**
 
-![Élément d’arborescence sélectionné et ayant le focus au pointage](../../extensibility/ux-guidelines/media/0303-153_treeviewfocusedhover.png "0303-153_TreeViewFocusedHover")<br />Élément d’arborescence sélectionné et ayant le focus au pointage
+![Élément choisi et concentré de vue d’arbre sur le plan stationnaire](../../extensibility/ux-guidelines/media/0303-153_treeviewfocusedhover.png "0303-153_TreeViewFocusedHover")<br />Élément choisi et concentré de vue d’arbre sur le plan stationnaire
 
 | Élément | Nom du jeton : Category.color |
 | --- | --- |
@@ -930,9 +930,9 @@ Plusieurs fenêtres outil, y compris les Explorateur de solutions, les Explorate
 | Premier plan (glyphe) | `TreeView.SelectedItemActiveGlyphMouseOver` |
 | Bordure | `TreeView.FocusVisualBorder` |
 
-**Élément d’arborescence : état pointé, sélectionné et inactif**
+**Article de vue d’arbre : état plané, choisi, et non focalisé**
 
-![Élément d’affichage de l’arborescence sélectionné et inactif au pointage](../../extensibility/ux-guidelines/media/0303-154_treeviewunfocusedhover.png "0303-154_TreeViewUnfocusedHover")<br />Élément d’affichage de l’arborescence sélectionné et inactif au pointage
+![Élément choisi et non focalisé de vue d’arbre sur le plan stationnaire](../../extensibility/ux-guidelines/media/0303-154_treeviewunfocusedhover.png "0303-154_TreeViewUnfocusedHover")<br />Élément choisi et non focalisé de vue d’arbre sur le plan stationnaire
 
 | Élément | Nom du jeton : Category.color |
 | --- | --- |
@@ -944,22 +944,22 @@ Plusieurs fenêtres outil, y compris les Explorateur de solutions, les Explorate
 ## <a name="shell-appearance"></a>Apparence Shell
 
 ### <a name="background"></a>Arrière-plan
-L’arrière-plan de l’environnement comporte deux couches. La couche inférieure est une couleur unie qui recouvre l’ensemble de l’IDE. La couche supérieure se place sous l’interface de commande et entre les canaux à masquage automatique de la fenêtre Outil situés sur les côtés gauche et droit de l’IDE. Les couches d’arrière-plan supérieure et inférieure sont définies sur la même couleur dans les thèmes clairs et foncés.
+L’arrière-plan de l’environnement comporte deux couches. La couche inférieure est une couleur unie qui recouvre l’ensemble de l’IDE. La couche supérieure se place sous l’interface de commande et entre les canaux à masquage automatique de la fenêtre Outil situés sur les côtés gauche et droit de l’IDE. Les couches de fond supérieure et inférieure sont réglées à la même couleur dans les thèmes Lumière et Obscurité.
 
-![Arrière-plan du shell Visual Studio (ligne rouge)](../../extensibility/ux-guidelines/media/0303-187_shellbackgroundredline.png "0303-187_ShellBackgroundRedline")<br />Arrière-plan du shell Visual Studio (ligne rouge)
+![Fond de coquille visual studio (redline)](../../extensibility/ux-guidelines/media/0303-187_shellbackgroundredline.png "0303-187_ShellBackgroundRedline")<br />Fond de coquille visual studio (redline)
 
-| Utilisez... | N’utilisez pas... |
+| Utiliser... | N’utilisez pas ... |
 | --- | --- |
-| ... pour les emplacements où vous souhaitez faire correspondre l’arrière-plan de l’environnement Visual Studio. | ... comme un remplissage pour les endroits qui ne sont pas des surfaces d’arrière-plan. |
+| ... pour les endroits où vous voulez faire correspondre l’arrière-plan de l’environnement Visual Studio. | ... comme un remplissage pour les endroits qui ne sont pas des surfaces de fond. |
 | | ... comme arrière-plan pour placer des éléments de premier plan. |
 
-**Apparence de l’interpréteur de commandes de la couche inférieure**
+**Aspect inférieur de la coquille de couche**
 
 | Élément | Nom du jeton : Category.color |
 | --- | --- |
 | Arrière-plan | `Environment.EnvironmentBackground` |
 
-**Apparence du shell de la couche supérieure**
+**Aspect de la coquille de couche supérieure**
 
 > Les points de dégradé sont définis sur la même valeur de couleur dans les thèmes clairs et foncés de Visual Studio 2013.
 
@@ -970,14 +970,14 @@ L’arrière-plan de l’environnement comporte deux couches. La couche inférie
 ### <a name="command-shelf"></a>Interface de commande
 Deux ensembles de noms de jeton sont utilisés pour les arrière-plans de l’interface de commande : un jeu pour l’emplacement de la barre de menus et l’autre pour l’emplacement des barres de commandes. Un groupe de barres de commandes possède ses propres valeurs de couleur d’arrière-plan, lesquelles sont décrites dans la section « Barre de commandes ». Le texte de la barre de menus et des barres de commandes est traité dans les sections qui leur sont dédiées.
 
-![Étagère de commande Visual Studio (ligne rouge)](../../extensibility/ux-guidelines/media/0303-188_commandshelfredline.png "0303-188_CommandShelfRedline")<br />Étagère de commande Visual Studio (ligne rouge)
+![Étagère de commande de studio visuel (ligne rouge)](../../extensibility/ux-guidelines/media/0303-188_commandshelfredline.png "0303-188_CommandShelfRedline")<br />Étagère de commande de studio visuel (ligne rouge)
 
-| Utilisez... | N’utilisez pas... |
+| Utiliser... | N’utilisez pas ... |
 | --- | --- |
-| ... pour les zones où vous placez des menus ou des barres d’outils. | ... pour les zones qui ne sont pas similaires à une commande. |
-|... avec la combinaison de nom de jeton d’arrière-plan/premier plan correcte. | |
+| ... pour les zones où vous placez des menus ou des barres d’outils. | ... pour les zones qui ne sont pas similaires à une étagère de commande. |
+|... avec la combinaison correcte de nom de jet de fond/premier plan. | |
 
-**Barre de menus de l’étagère de commande**
+**Barre de menu d’étagère de commande**
 
 > Les points de dégradé sont définis sur la même valeur de couleur dans les thèmes clairs et foncés de Visual Studio 2013.
 
@@ -985,7 +985,7 @@ Deux ensembles de noms de jeton sont utilisés pour les arrière-plans de l’in
 | --- | --- |
 | Arrière-plan | `Environment.CommandShelfHighlightGradientBegin`<br /><br />`Environment.CommandShelfHighlightGradientMiddle`<br />`Environment.CommandShelfHighlightGradientEnd` |
 
-**Barre de commandes de l’étagère de commande**
+**Barre de commande de commande**
 
 > Les points de dégradé sont définis sur la même valeur de couleur dans les thèmes clairs et foncés de Visual Studio 2013.
 
@@ -996,40 +996,40 @@ Deux ensembles de noms de jeton sont utilisés pour les arrière-plans de l’in
 ## <a name="manifest-designer"></a>Concepteur de manifeste
 Le concepteur de manifeste sert à faciliter l’édition du fichier manifeste dans des projets Windows 8 et Windows Phone 8. Même s’il n’existe aucune infrastructure partagée disponible à la consommation, vous avez peut-être intérêt à faire correspondre la disposition et les couleurs des onglets d’orientation/de navigation à la structure générale. Pour plus d’informations sur la disposition, consultez [Layout for Visual Studio](../../extensibility/ux-guidelines/layout-for-visual-studio.md).
 
-![Concepteur de manifeste (ligne rouge)](../../extensibility/ux-guidelines/media/0303-175_manifestdesignerredline.png "0303-175_ManifestDesignerRedline")<br />Concepteur de manifeste (ligne rouge)
+![Manifest Designer (redline)](../../extensibility/ux-guidelines/media/0303-175_manifestdesignerredline.png "0303-175_ManifestDesignerRedline")<br />Manifest Designer (redline)
 
-| Utilisez... | N’utilisez pas... |
+| Utiliser... | N’utilisez pas ... |
 | --- | --- |
-| ... pour les concepteurs qui sont similaires au concepteur de manifeste. | ... Si vous avez plus de six onglets. |
-| ... au lieu d’utiliser des contrôles d’onglet communs en haut d’un éditeur dans la barre d’outils document. | ... pour toute interface utilisateur qui n’est pas structurée comme le concepteur de manifeste. |
+| ... pour les designers qui sont similaires à la Manifest Designer. | ... si vous avez plus de six onglets. |
+| ... au lieu d’utiliser les commandes d’onglets communes en haut d’un éditeur dans le document bien. | ... pour toute interface utilisateur qui n’est pas structuré comme le Concepteur Manifeste. |
 
-**Concepteur de manifeste onglet sélectionné : état par défaut**
+**Onglet sélectionné Par Manifest Designer : état par défaut**
 
 | Élément | Nom du jeton : Category.color |
 | --- | --- |
 | Arrière-plan | `ManifestDesigner.TabActive` |
 | Bordure | None |
 
-**Concepteur de manifeste volet Description sélectionné : état par défaut**
+**Manifeste Designer carte de description sélectionnée: état par défaut**
 
 | Élément | Nom du jeton : Category.color |
 | --- | --- |
 | Arrière-plan | `ManifestDesigner.DescriptionPane` |
 
-**Page de contenu sélectionnée du concepteur de manifeste : état par défaut**
+**Manifeste Designer page de contenu sélectionnée: état par défaut**
 
 | Élément | Nom du jeton : Category.color |
 | --- | --- |
 | Arrière-plan | `ManifestDesigner.Background` |
 | Texte d’assistance de boîte de dialogue | `ManifestDesigner.WatermarkText`<br />(Ce nom de jeton ne correspond pas à sa fonction.) |
 
-**Onglet Concepteur de manifeste : état non sélectionné**
+**Onglet Manifest Designer : état non sélectionné**
 
 | Élément | Nom du jeton : Category.color |
 | --- | --- |
 | Arrière-plan | `ManifestDesigner.Tab.Inactive` |
 
-**Onglet Concepteur de manifeste : état sensitif**
+**Onglet Manifest Designer: état de vol stationnaire**
 
 | Élément | Nom du jeton : Category.color |
 | --- | --- |
@@ -1037,68 +1037,68 @@ Le concepteur de manifeste sert à faciliter l’édition du fichier manifeste d
 
 ## <a name="command-structures"></a>Structures de commande
 
-### <a name="BKMK_CommandMenus"></a>Menus
-Les menus peuvent se trouver à plusieurs endroits dans Visual Studio : la barre de menus principale, incorporée dans les fenêtres de document ou d’outil, ou en cliquant avec le bouton droit à différents emplacements dans l’IDE. Les implémentations de menus associées aux autres éléments d’interface utilisateur sont décrites dans la section de l’élément correspondant. Vous devez toujours utiliser l’implémentation de menu standard fournie par l’environnement Visual Studio. Toutefois, dans de rares cas, vous n’aurez peut-être pas accès aux menus Visual Studio standard. Dans ce cas, utilisez les noms de jeton suivants pour vous assurer que votre interface utilisateur est cohérente avec les autres menus dans Visual Studio.
+### <a name="menus"></a><a name="BKMK_CommandMenus"></a>Menus
+Les menus peuvent se faire à plusieurs endroits au sein de Visual Studio : la barre principale du menu, intégrée dans des fenêtres de documents ou d’outils, ou en clic droit à divers endroits dans l’IDE. Les implémentations de menus associées aux autres éléments d’interface utilisateur sont décrites dans la section de l’élément correspondant. Vous devez toujours utiliser l’implémentation de menu standard fournie par l’environnement Visual Studio. Toutefois, dans de rares cas, vous n’aurez peut-être pas accès aux menus Visual Studio standard. Dans ce cas, utilisez les noms de jeton suivants pour vous assurer que votre interface utilisateur est cohérente avec les autres menus dans Visual Studio.
 
-![Menu Visual Studio (ligne rouge)](../../extensibility/ux-guidelines/media/0303-000_menuredline.png "0303-000_MenuRedline")<br />Menu Visual Studio (ligne rouge)
+![Menu Studio Visuel (redline)](../../extensibility/ux-guidelines/media/0303-000_menuredline.png "0303-000_MenuRedline")<br />Menu Studio Visuel (redline)
 
-| Utilisez... | N’utilisez pas... |
+| Utiliser... | N’utilisez pas ... |
 | --- | --- |
-| ... Lorsque vous devez créer un menu personnalisé.| ... la couleur d’arrière-plan seule. Utilisez toujours la combinaison arrière-plan/premier plan spécifiée. |
-| ... Quand vous avez un nouveau composant d’interface utilisateur qui doit correspondre aux menus Visual Studio.| |
+| ... lorsque vous avez besoin de créer un menu personnalisé.| ... la couleur de fond seule. Utilisez toujours la combinaison arrière-plan/premier plan spécifiée. |
+| ... lorsque vous avez un nouveau composant d’interface utilisateur que vous souhaitez assortir aux menus Visual Studio.| |
 
 #### <a name="menu-titles"></a>Titres de menu
 Les titres de menu comprennent un arrière-plan, une bordure et le texte du titre, ainsi qu’un glyphe facultatif, généralement quand le menu se trouve dans une barre de commandes.
 
-![Titre de menu (ligne rouge)](../../extensibility/ux-guidelines/media/0303-001_menutitleredline.png "0303-001_MenuTitleRedline")<br />Titre de menu (ligne rouge)
+![Titre du menu (redline)](../../extensibility/ux-guidelines/media/0303-001_menutitleredline.png "0303-001_MenuTitleRedline")<br />Titre du menu (redline)
 
-| Utilisez... | N’utilisez pas... |
+| Utiliser... | N’utilisez pas ... |
 | --- | --- |
-| ... chaque fois que vous créez un titre de menu personnalisé. | ... pour tout ce que vous ne voulez pas toujours faire correspondre au titre de menu. |
-| | ... dans toute combinaison d’arrière-plan/premier plan autre que celle spécifiée. |
+| ... chaque fois que vous créez un titre de menu personnalisé. | ... pour tout ce que vous ne voulez pas toujours correspondre au titre du menu. |
+| | ... dans n’importe quelle combinaison de fond/premier plan autre que spécifiée. |
 
-**Titre du menu : état par défaut**
+**Titre du menu: état par défaut**
 
-![Titre de menu par défaut](../../extensibility/ux-guidelines/media/0303-002_menutitledefault.png "0303-002_MenuTitleDefault")<br />Titre de menu par défaut
+![Titre du menu par défaut](../../extensibility/ux-guidelines/media/0303-002_menutitledefault.png "0303-002_MenuTitleDefault")<br />Titre du menu par défaut
 
-![Titre de menu par défaut avec glyphe](../../extensibility/ux-guidelines/media/0303-003_menutitlewithglyphdefault.png "0303-003_MenuTitleWithGlyphDefault")<br />Titre de menu par défaut avec glyphe
+![Titre du menu par défaut avec glyph](../../extensibility/ux-guidelines/media/0303-003_menutitlewithglyphdefault.png "0303-003_MenuTitleWithGlyphDefault")<br />Titre du menu par défaut avec glyph
 
 | Élément | Nom du jeton : Category.color |
 | --- | --- |
 | Arrière-plan | None |
-| Premier plan (texte) | `Environment.CommandBarTextActive` |
-| Premier plan (glyphe) | `Environment.CommandBarMenuGlyph` |
+| Au premier plan (texte) | `Environment.CommandBarTextActive` |
+| Au premier plan (glyphe) | `Environment.CommandBarMenuGlyph` |
 | Bordure | None |
 
-**Titre du menu : état du survol**
+**Titre du menu: état de vol stationnaire**
 
 ![Titre de menu au pointage](../../extensibility/ux-guidelines/media/0303-004_menutitlehover.png "0303-004_MenuTitleHover")<br />Titre de menu au pointage
 
-![Titre de menu avec glyphe au survol](../../extensibility/ux-guidelines/media/0303-005_menutitlewithglyphhover.png "0303-005_MenuTitleWithGlyphHover")<br />Titre de menu avec glyphe au pointage
+![Titre de menu avec glyphe au pointage](../../extensibility/ux-guidelines/media/0303-005_menutitlewithglyphhover.png "0303-005_MenuTitleWithGlyphHover")<br />Titre de menu avec glyphe au pointage
 
 | Élément | Nom du jeton : Category.color |
 | --- | --- |
-| Arrière-plan | `Environment.CommandBarMouseOverBackgroundBegin`<br />(Les points de dégradé de ce jeton ne sont pas utilisés dans l’interface utilisateur à thème.) |
-| Premier plan (texte) | `Environment.CommandBarTextHover` |
-| Premier plan (glyphe) | `Environment.CommandBarMenuMouseOverGlyph` |
+| Arrière-plan | `Environment.CommandBarMouseOverBackgroundBegin`<br />(Gradient s’arrête pour ce jeton non utilisé dans l’interface utilisateur thématique.) |
+| Au premier plan (texte) | `Environment.CommandBarTextHover` |
+| Au premier plan (glyphe) | `Environment.CommandBarMenuMouseOverGlyph` |
 | Bordure | `Environment.CommandBarBorder` |
 
-**Titre du menu : état enfoncé**
+**Titre du menu: état pressé**
 
-![Titre de menu appuyé](../../extensibility/ux-guidelines/media/0303-006_menutitlepressed.png "0303-006_MenuTitlePressed")<br />Titre de menu appuyé
+![Titre du menu pressé](../../extensibility/ux-guidelines/media/0303-006_menutitlepressed.png "0303-006_MenuTitlePressed")<br />Titre du menu pressé
 
-![Titre de menu appuyé avec glyphe](../../extensibility/ux-guidelines/media/0303-007_menutitlewithglyphpressed.png "0303-007_MenuTitleWithGlyphPressed")<br />Titre de menu appuyé avec glyphe
+![Titre de menu pressé avec glyph](../../extensibility/ux-guidelines/media/0303-007_menutitlewithglyphpressed.png "0303-007_MenuTitleWithGlyphPressed")<br />Titre de menu pressé avec glyph
 
 | Élément | Nom du jeton : Category.color |
 | --- | --- |
-| Arrière-plan | `Environment.CommandBarMenuBackgroundGradientBegin`<br/>(Les points de dégradé de ce jeton ne sont pas utilisés dans l’interface utilisateur à thème.) |
+| Arrière-plan | `Environment.CommandBarMenuBackgroundGradientBegin`<br/>(Gradient s’arrête pour ce jeton non utilisé dans l’interface utilisateur thématique.) |
 | Premier plan (texte) | `Environment.CommandBarTextActive` |
 | Premier plan (glyphe) | `Environment.CommandBarMenuMouseDownGlyph` |
-| Bordure | `Environment.CommandBarMenuBorder`<br />(Uniquement les côtés gauche, supérieur et droit.) |
+| Bordure | `Environment.CommandBarMenuBorder`<br />(Seulement à gauche, en haut et sur les côtés droit.) |
 
-**Titre du menu : état désactivé**
+**Titre du menu: État handicapé**
 
-![Titre de menu désactivé avec glyphe](../../extensibility/ux-guidelines/media/0303-008_menutitlewithglyphdisabled.png "0303-008_MenuTitleWithGlyphDisabled")<br />Titre de menu désactivé avec glyphe
+![Titre du menu désactivé avec glyph](../../extensibility/ux-guidelines/media/0303-008_menutitlewithglyphdisabled.png "0303-008_MenuTitleWithGlyphDisabled")<br />Titre du menu désactivé avec glyph
 
 | Élément | Nom du jeton : Category.color |
 | --- | --- |
@@ -1110,20 +1110,20 @@ Les titres de menu comprennent un arrière-plan, une bordure et le texte du titr
 #### <a name="menu-items"></a>Éléments de menu
 Un élément de menu individuel comporte le texte du menu et éventuellement une icône, une case à cocher ou un glyphe de sous-menu. Sa couleur d’arrière-plan et de texte change au passage du curseur de la souris. Ce jeton de couleur est une paire arrière-plan/premier plan.
 
-![Ligne rouge des éléments de menu](../../extensibility/ux-guidelines/media/0303-009_menuitemredline.png "0303-009_MenuItemRedline")
+![Ligne rouge d'éléments de menu](../../extensibility/ux-guidelines/media/0303-009_menuitemredline.png "0303-009_MenuItemRedline")
 
-| Utilisez... | N’utilisez pas... |
+| Utiliser... | N’utilisez pas ... |
 |---|---|
-| ... pour toute liste déroulante lancée à partir d’une barre de menus ou d’une barre de commandes. | ... pour toute liste déroulante dans un autre contexte. |
-| | ... dans toute combinaison d’arrière-plan/premier plan autre que celle spécifiée. |
+| ... pour toute liste de décrochage qui est lancée à partir d’une barre de menu ou d’une barre de commande. | ... pour toute liste de décrochage dans un autre contexte. |
+| | ... dans n’importe quelle combinaison de fond/premier plan autre que spécifiée. |
 
-**Éléments de menu : état par défaut**
+**Éléments du menu: état par défaut**
 
 ![Éléments de menu par défaut](../../extensibility/ux-guidelines/media/0303-010_menudefault.png "0303-010_MenuDefault")<br />Éléments de menu par défaut
 
 | Élément | Nom du jeton : Category.color |
 | --- | --- |
-| Arrière-plan | `Environment.CommandBarMenuBackgroundGradientBegin`<br />(Les points de dégradé de ce jeton ne sont pas utilisés dans l’interface utilisateur à thème.) |
+| Arrière-plan | `Environment.CommandBarMenuBackgroundGradientBegin`<br />(Gradient s’arrête pour ce jeton non utilisé dans l’interface utilisateur thématique.) |
 | Premier plan (texte) | `Environment.CommandBarTextActive` |
 | Premier plan (glyphe de sous-menu) | `Environment.CommandBarMenuSubmenuGlyph` |
 | Bordure | `Environment.CommandBarMenuBorder` |
@@ -1131,9 +1131,9 @@ Un élément de menu individuel comporte le texte du menu et éventuellement une
 | Séparateur | `Environment.CommandBarMenuSeparator` |
 | Shadow | `Environment.DropShadowBackground` |
 
-**Éléments de menu : États activés et sélectionnés**
+**Éléments du menu : états vérifiés et sélectionnés**
 
-![Menu activé](../../extensibility/ux-guidelines/media/0303-011_menuchecked.png "0303-011_MenuChecked")<br />Élément de menu activé
+![Menu activé](../../extensibility/ux-guidelines/media/0303-011_menuchecked.png "0303-011_MenuChecked")<br />Article de menu vérifié
 
 ![Menu sélectionné](../../extensibility/ux-guidelines/media/0303-012_menuselected.png "0303-012_MenuSelected")<br />Élément de menu sélectionné
 
@@ -1144,13 +1144,13 @@ Un élément de menu individuel comporte le texte du menu et éventuellement une
 | Arrière-plan d’icône | `Environment.CommandBarSelected` |
 | Bordure d’icône | `Environment.CommandBarSelectedBorder` |
 
-**Éléments de menu : état du survol**
+**Éléments du menu: état de vol stationnaire**
 
-![Pointage de menu](../../extensibility/ux-guidelines/media/0303-013_menuhover.png "0303-013_MenuHover")<br />Élément de menu au pointage
+![Pointage de menu](../../extensibility/ux-guidelines/media/0303-013_menuhover.png "0303-013_MenuHover")<br />Élément de menu sur le plan stationnaire
 
-![Pointage de menu activé](../../extensibility/ux-guidelines/media/0303-014_menuhoverchecked.png "0303-014_MenuHoverChecked")<br />Élément de menu coché au pointage
+![Pointage de menu activé](../../extensibility/ux-guidelines/media/0303-014_menuhoverchecked.png "0303-014_MenuHoverChecked")<br />Article de menu vérifié sur le plan stationnaire
 
-![Pointage de menu sélectionné](../../extensibility/ux-guidelines/media/0303-015_menuhoverselected.png "0303-015_MenuHoverSelected")<br />Élément de menu sélectionné au pointage
+![Pointage de menu sélectionné](../../extensibility/ux-guidelines/media/0303-015_menuhoverselected.png "0303-015_MenuHoverSelected")<br />Élément de menu sélectionné sur le plan stationnaire
 
 | Élément | Nom du jeton : Category.color |
 | --- | --- |
@@ -1162,11 +1162,11 @@ Un élément de menu individuel comporte le texte du menu et éventuellement une
 | Arrière-plan d’icône | `Environment.CommandBarHoverOverSelected` |
 | Bordure d’icône | `Environment.CommandBarHoverOverSelectedIconBorder` |
 
-**Éléments de menu : état désactivé**
+**Éléments du menu: état désactivé**
 
 ![Menu désactivé](../../extensibility/ux-guidelines/media/0303-016_menudisabled.png "0303-016_MenuDisabled")<br />Élément de menu désactivé
 
-![Menu désactivé activé](../../extensibility/ux-guidelines/media/0303-017_menudisabledchecked.png "0303-017_MenuDisabledChecked")<br />Élément de menu désactivé avec coche
+![Menu désactivé activé](../../extensibility/ux-guidelines/media/0303-017_menudisabledchecked.png "0303-017_MenuDisabledChecked")<br />Élément de menu désactivé avec la marque de contrôle
 
 | Élément | Nom du jeton : Category.color |
 | --- | --- |
@@ -1175,52 +1175,52 @@ Un élément de menu individuel comporte le texte du menu et éventuellement une
 | Coche | `Environment.CommandBarCheckBoxDisabled` |
 | Arrière-plan de case à cocher | `Environment.CommandBarSelectedIconDisabled` |
 
-### <a name="command-bars"></a>Barres de commandes
-Une barre de commandes peut apparaître à plusieurs endroits dans l’IDE de Visual Studio, notamment dans l’étagère de commande et incorporée dans les fenêtres d’outils ou de documents.
+### <a name="command-bars"></a>Barres de commande
+Une barre de commande peut apparaître à plusieurs endroits dans l’IDE Visual Studio, notamment l’étagère de commande et intégrée dans des fenêtres d’outils ou de documents.
 
 En règle générale, utilisez toujours l’implémentation de barre de commandes standard fournie par l’environnement Visual Studio. L’utilisation du mécanisme standard permet à tous les détails visuels d’apparaître correctement et aux éléments interactifs de se comporter de manière cohérente avec les autres contrôles de barre de commandes Visual Studio. Toutefois, si vous avez besoin de créer votre propre barre de commandes, assurez-vous d’utiliser un style adéquat avec les noms de jeton suivants.
 
-![Ligne rouge de barre de commandes](../../extensibility/ux-guidelines/media/0303-018_commandbarredline.png "0303-018_CommandBarRedline")<br />Barre de commandes (ligne rouge)
+![Ligne rouge de barre de commandes](../../extensibility/ux-guidelines/media/0303-018_commandbarredline.png "0303-018_CommandBarRedline")<br />Barre de commande (ligne rouge)
 
-![Ligne rouge du bouton de dépassement](../../extensibility/ux-guidelines/media/0303-019_overflowbuttonredline.png "0303-019_OverflowButtonRedline")<br />Bouton de dépassement de capacité (ligne rouge)
+![Ligne rouge de bouton de dépassement](../../extensibility/ux-guidelines/media/0303-019_overflowbuttonredline.png "0303-019_OverflowButtonRedline")<br />Bouton de débordement (redline)
 
-| Utilisez... | N’utilisez pas... |
+| Utiliser... | N’utilisez pas ... |
 | --- | --- |
-| ... à des endroits où vous avez besoin d’une barre de commandes incorporée, mais qui ne peuvent pas utiliser l’implémentation de barre de commandes Visual Studio standard. | ... pour les éléments d’interface utilisateur qui ne sont pas similaires à une barre de commandes. |
-| | ... pour les composants de barre de commandes autres que ceux pour lesquels des noms de jeton sont spécifiés. |
+| ... dans les endroits où vous avez besoin d’une barre de commande intégrée, mais sont incapables d’utiliser l’implémentation standard de barre de commande Visual Studio. | ... pour les éléments d’interface utilisateur qui ne sont pas similaires à une barre de commande. |
+| | ... pour les composants de barre de commande autres que ceux pour lesquels les noms de jetons sont spécifiés. |
 
-#### <a name="command-bar-groups"></a>Groupes de barres de commandes
+#### <a name="command-bar-groups"></a>Groupes de barreaux de commandement
 Un groupe de barres de commandes se compose d’un ensemble de contrôles de barre de commandes et peut contenir tout nombre de boutons, boutons partagés, menus déroulants, zones de liste modifiable ou menus. Les couleurs de ces contrôles sont régies par des noms de jeton distincts et sont décrites individuellement dans une autre section de ce guide. Un trait de séparation est utilisé pour diviser un groupe de barres de commandes en sous-groupes associés.
 
-![Ligne rouge du groupe de barres de commandes](../../extensibility/ux-guidelines/media/0303-020_commandbargroupredline.png "0303-020_CommandBarGroupRedline")<br />Groupe de barres de commandes (ligne rouge)
+![Ligne rouge de groupe de barres de commandes](../../extensibility/ux-guidelines/media/0303-020_commandbargroupredline.png "0303-020_CommandBarGroupRedline")<br />Groupe de barre de commande (redline)
 
-| Utilisez... | N’utilisez pas... |
+| Utiliser... | N’utilisez pas ... |
 | --- | --- |
-| ... à des endroits où vous avez besoin d’une barre de commandes incorporée, mais qui ne peuvent pas utiliser l’implémentation de barre de commandes Visual Studio standard. | ... pour les éléments d’interface utilisateur qui ne sont pas similaires à une barre de commandes. |
-| | ... pour les composants de barre de commandes autres que ceux pour lesquels des noms de jeton sont spécifiés. |
+| ... dans les endroits où vous avez besoin d’une barre de commande intégrée, mais sont incapables d’utiliser l’implémentation standard de barre de commande Visual Studio. | ... pour les éléments d’interface utilisateur qui ne sont pas similaires à une barre de commande. |
+| | ... pour les composants de barre de commande autres que ceux pour lesquels les noms de jetons sont spécifiés. |
 
-**Groupe de barres de commandes : état par défaut**
+**Groupe de barre de commande : état par défaut**
 
 | Élément | Nom du jeton : Category.color |
 | --- | --- |
-| Arrière-plan | `Environment.CommandBarGradientBegin`<br />(Les points de dégradé de ce jeton ne sont pas utilisés dans l’interface utilisateur à thème.) |
+| Arrière-plan | `Environment.CommandBarGradientBegin`<br />(Gradient s’arrête pour ce jeton non utilisé dans l’interface utilisateur thématique.) |
 | Bordure | `Environment.CommandBarToolBarBorder` |
 | Poignée de redimensionnement | `Environment.CommandBarDragHandle` |
 | Séparateur | `Environment.CommandBarToolBarSeparator`<br />`Environment.CommandBarToolBarSeparatorHighlight` |
 
 #### <a name="command-icons"></a>Icônes de commande
-![Icône de commande ligne rouge](../../extensibility/ux-guidelines/media/0303-021_commandiconredline1.png "0303-021_CommandIconRedline1")<br />Icône de commande (ligne rouge)
+![Ligne rouge d'icône de commande](../../extensibility/ux-guidelines/media/0303-021_commandiconredline1.png "0303-021_CommandIconRedline1")<br />Icône de commande (redline)
 
-![Icône de commande avec texte ligne rouge](../../extensibility/ux-guidelines/media/0303-022_commandiconredline2.png "0303-022_CommandIconRedline2")<br />Icône de commande avec texte (ligne rouge)
+![Icône de commande avec la ligne rouge de texte](../../extensibility/ux-guidelines/media/0303-022_commandiconredline2.png "0303-022_CommandIconRedline2")<br />Icône de commande avec le texte (redline)
 
-| Utilisez... | N’utilisez pas... |
+| Utiliser... | N’utilisez pas ... |
 | --- | --- |
-| ... pour tous les boutons qui seront placés sur une barre de commandes. | ... pour les contrôles qui ont leurs propres noms de jeton. |
-| | ... dans toute combinaison d’arrière-plan/premier plan autre que celle spécifiée. |
+| ... pour tous les boutons qui seront placés sur une barre de commande. | ... pour les contrôles qui ont leurs propres noms symboliques. |
+| | ... dans n’importe quelle combinaison de fond/premier plan autre que spécifiée. |
 
-**Icône de commande : état par défaut**
+**Icône de commande : état par défaut**
 
-![Icône de commande par défaut](../../extensibility/ux-guidelines/media/0303-023_commandicondefault.png "0303-023_CommandIconDefault")<br />Icône de commande par défaut
+![Valeur par défaut d'icône de commande](../../extensibility/ux-guidelines/media/0303-023_commandicondefault.png "0303-023_CommandIconDefault")<br />Icône de commande par défaut
 
 | Élément | Nom du jeton : Category.color |
 | --- | --- |
@@ -1228,9 +1228,9 @@ Un groupe de barres de commandes se compose d’un ensemble de contrôles de bar
 | Premier plan (texte) | `Environment.CommandBarTextActive` |
 | Bordure | N/A |
 
-**Icône de commande : état par défaut, sélectionné**
+**Icône de commande : état par défaut, sélectionné**
 
-![Icône de commande sélectionnée par défaut](../../extensibility/ux-guidelines/media/0303-024_commandicondefaultselected.png "0303-024_CommandIconDefaultSelected")<br />Icône de commande sélectionnée par défaut
+![Par défaut, icône de commande sélectionnée](../../extensibility/ux-guidelines/media/0303-024_commandicondefaultselected.png "0303-024_CommandIconDefaultSelected")<br />Par défaut, icône de commande sélectionnée
 
 | Élément | Nom du jeton : Category.color |
 | --- | --- |
@@ -1238,19 +1238,19 @@ Un groupe de barres de commandes se compose d’un ensemble de contrôles de bar
 | Premier plan (texte) | `Environment.CommandBarTextSelected` |
 | Bordure | `Environment.CommandBarSelectedBorder` |
 
-**Icône de commande : États de survol ou de focus**
+**Icône de commande : états de vol stationnaire ou de mise au point**
 
-![Icône de commande au survol ou au focus](../../extensibility/ux-guidelines/media/0303-025_commandiconhover.png "0303-025_CommandIconHover")<br />Icône de commande au survol ou au focus
+![Icône de commande sur le plan stationnaire ou la concentration](../../extensibility/ux-guidelines/media/0303-025_commandiconhover.png "0303-025_CommandIconHover")<br />Icône de commande sur le plan stationnaire ou la concentration
 
 | Élément | Nom du jeton : Category.color |
 | --- | --- |
-| Arrière-plan | `Environment.CommandBarMouseOverBackgroundBegin`<br />(Les points de dégradé de ce jeton ne sont pas utilisés dans l’interface utilisateur à thème.) |
+| Arrière-plan | `Environment.CommandBarMouseOverBackgroundBegin`<br />(Gradient s’arrête pour ce jeton non utilisé dans l’interface utilisateur thématique.) |
 | Premier plan (texte) | `Environment.CommandBarTextHover` |
 | Bordure | `Environment.CommandBarBorder` |
 
-**Icône de commande : États de survol ou de focus, sélectionnés**
+**Icône de commande : états de vol stationnaire ou de mise au point, sélectionnés**
 
-![Icône de commande sélectionnée au survol ou au focus](../../extensibility/ux-guidelines/media/0303-026_commandiconhoverselected.png "0303-026_CommandIconHoverSelected")<br />Icône de commande sélectionnée au survol ou au focus
+![Icône de commande sélectionnée sur le plan stationnaire ou la mise au point](../../extensibility/ux-guidelines/media/0303-026_commandiconhoverselected.png "0303-026_CommandIconHoverSelected")<br />Icône de commande sélectionnée sur le plan stationnaire ou la mise au point
 
 | Élément | Nom du jeton : Category.color |
 | --- | --- |
@@ -1258,17 +1258,17 @@ Un groupe de barres de commandes se compose d’un ensemble de contrôles de bar
 | Premier plan (texte) | `Environment.CommandBarTextHoverOverSelected` |
 | Bordure | `Environment.CommandBarHoverOverSelectedIconBorder` |
 
- **Icône de commande : état enfoncé**
+ **Icône de commande : état pressé**
 
 ![Icône de commande appuyée](../../extensibility/ux-guidelines/media/0303-027_commandiconpressed.png "0303-027_CommandIconPressed")<br />Icône de commande appuyée
 
 | Élément | Nom du jeton : Category.color |
 | --- | --- |
-| Arrière-plan | `Environment.CommandBarMouseDownBackgroundBegin`<br />(Les points de dégradé de ce jeton ne sont pas utilisés dans l’interface utilisateur à thème.) |
+| Arrière-plan | `Environment.CommandBarMouseDownBackgroundBegin`<br />(Gradient s’arrête pour ce jeton non utilisé dans l’interface utilisateur thématique.) |
 | Premier plan (texte) | `Environment.CommandBarTextMouseDown` |
 | Bordure | `Environment.CommandBarBorder` |
 
-**Icône de commande : état désactivé**
+**Icône de commande : état désactivé**
 
 ![Icône de commande désactivée](../../extensibility/ux-guidelines/media/0303-028_commandicondisabled.png "0303-028_CommandIconDisabled")<br />Icône de commande désactivée
 
@@ -1278,21 +1278,21 @@ Un groupe de barres de commandes se compose d’un ensemble de contrôles de bar
 | Premier plan (texte) | `Environment.CommandBarTextInactive` |
 | Bordure | N/A |
 
-#### <a name="BKMK_CommandComboBox"></a>Zones de liste déroulante de barre de commandes
+#### <a name="command-bar-combo-boxes"></a><a name="BKMK_CommandComboBox"></a>Boîtes combo barres de commande
 
 > [!IMPORTANT]
-> Les zones de liste modifiable ressemblent aux listes déroulantes, mais elles comprennent une zone de texte modifiable. Si votre liste déroulante n’inclut pas de zone de texte modifiable, utilisez les jetons de couleur pour les listes déroulantes de [barre de commandes](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_CommandDropDown).
+> Les zones de liste modifiable ressemblent aux listes déroulantes, mais elles comprennent une zone de texte modifiable. Si votre décrochage n’inclut pas une région de texte modifiable, utilisez les jetons de couleur pour [les baisses de barres de commande](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_CommandDropDown).
 
-![Ligne rouge de zone de liste modifiable de barre de commandes](../../extensibility/ux-guidelines/media/0303-029_comboboxredline.png "0303-029_ComboBoxRedline")<br />Zone de liste déroulante de barre de commandes (ligne rouge)
+![Boîte combo de barre de commande redline](../../extensibility/ux-guidelines/media/0303-029_comboboxredline.png "0303-029_ComboBoxRedline")<br />Boîte combo de barre de commande (redline)
 
-| Utilisez... | N’utilisez pas... |
+| Utiliser... | N’utilisez pas ... |
 | --- | --- |
-| ... lors de la création de zones de liste modifiable personnalisées. | ... pour tout ce que vous ne voulez pas toujours faire correspondre à l’interface utilisateur de la barre de commandes. |
-| ... lors de la création d’un contrôle de barre de commandes similaire à une zone de liste déroulante. | ... Lorsque vous avez accès à une zone de liste déroulante avec des styles. |
+| ... lors de la construction de boîtes combo personnalisées. | ... pour tout ce que vous ne voulez pas toujours correspondre à l’interface utilisateur barre de commande. |
+| ... lors de la création d’un contrôle de barre de commande qui est similaire à une boîte combo. | ... lorsque vous avez accès à une boîte combo de style. |
 
-**Champ d’entrée de la zone de liste déroulante de barre de commandes : état par défaut**
+**Champ d’entrée de boîte combo de barre de commande : état par défaut**
 
-![Champ d’entrée de zone de liste déroulante de barre de commandes](../../extensibility/ux-guidelines/media/0303-030_comboboxinputfield.png "0303-030_ComboBoxInputField")<br />Champ d’entrée de zone de liste déroulante de barre de commandes
+![Champ d’entrée de boîte combo de barre de commande](../../extensibility/ux-guidelines/media/0303-030_comboboxinputfield.png "0303-030_ComboBoxInputField")<br />Champ d’entrée de boîte combo de barre de commande
 
 | Élément | Nom du jeton : Category.color |
 | --- | --- |
@@ -1301,48 +1301,48 @@ Un groupe de barres de commandes se compose d’un ensemble de contrôles de bar
 | Bordure | `Environment.ComboBoxBorder` |
 | Séparateur | Aucun séparateur |
 
-**Bouton de liste déroulante de barre de commandes : état par défaut**
+**Bouton d’abandon de la barre de commande : état par défaut**
 
-![Bouton déroulant&#45;de la zone de liste déroulante](../../extensibility/ux-guidelines/media/0303-031_comboboxdropdownbutton.png "0303-031_ComboBoxDropdownButton")<br />Bouton de liste déroulante de barre de commandes
+![Combo boîte goutte&#45;vers le bas bouton](../../extensibility/ux-guidelines/media/0303-031_comboboxdropdownbutton.png "0303-031_ComboBoxDropdownButton")<br />Bouton d’abandon de barre de commande
 
 | Élément | Nom du jeton : Category.color |
 | --- | --- |
 | Arrière-plan | N/A (hérite de l’arrière-plan de la barre commandes) |
 | Premier plan (glyphe) | `Environment.ComboBoxGlyph` |
 
-**Liste déroulante de barre de commandes : état par défaut**
+**Liste d’abandon de la barre de commandement : état par défaut**
 
-![Liste déroulante de barre de commandes](../../extensibility/ux-guidelines/media/0303-032_comboboxdropdownlist.png "0303-032_ComboBoxDropdownList")<br />Liste déroulante de barre de commandes
+![Liste d’abandon de barres de commandement](../../extensibility/ux-guidelines/media/0303-032_comboboxdropdownlist.png "0303-032_ComboBoxDropdownList")<br />Liste d’abandon de barres de commandement
 
 | Élément | Nom du jeton : Category.color |
 | --- | --- |
-| Arrière-plan | `Environment.ComboBoxPopupBackgroundBegin`<br />(Les points de dégradé de ce jeton ne sont pas utilisés dans l’interface utilisateur à thème.) |
+| Arrière-plan | `Environment.ComboBoxPopupBackgroundBegin`<br />(Gradient s’arrête pour ce jeton non utilisé dans l’interface utilisateur thématique.) |
 | Premier plan (texte) | `Environment.ComboBoxItemText` |
 | Bordure | `Environment.ComboBoxPopupBorder` |
 
-**Champ d’entrée de la zone de liste déroulante de la barre de commandes : état sensitif**
+**Champ d’entrée de boîte combo de barre de commande : état de vol stationnaire**
 
-![Champ d’entrée de la zone de liste déroulante de barre de commandes au survol](../../extensibility/ux-guidelines/media/0303-033_comboboxinputfieldhover.png "0303-033_ComboBoxInputFieldHover")<br />Champ d’entrée de la zone de liste déroulante de barre de commandes au survol
+![Champ d’entrée de boîte de combo de barre de commande sur le plan stationnaire](../../extensibility/ux-guidelines/media/0303-033_comboboxinputfieldhover.png "0303-033_ComboBoxInputFieldHover")<br />Champ d’entrée de boîte de combo de barre de commande sur le plan stationnaire
 
 | Élément | Nom du jeton : Category.color |
 | --- | --- |
-| Arrière-plan | `Environment.ComboBoxMouseOverBackgroundBegin`<br />(Les points de dégradé de ce jeton ne sont pas utilisés dans l’interface utilisateur à thème.) |
+| Arrière-plan | `Environment.ComboBoxMouseOverBackgroundBegin`<br />(Gradient s’arrête pour ce jeton non utilisé dans l’interface utilisateur thématique.) |
 | Premier plan (texte) | `Environment.ComboBoxMouseOverText` |
 | Bordure | `Environment.ComboBoxMouseOverBorder` |
 | Séparateur | `Environment.ComboBoxMouseOverSeparator` |
 
- **Bouton de liste déroulante de barre de commandes : état pointé**
+ **Bouton d’abandon de barre de commande : état de vol stationnaire**
 
-![Bouton de liste déroulante de barre de commandes au pointage](../../extensibility/ux-guidelines/media/0303-034_comboboxdropdownbuttonhover.png "0303-034_ComboBoxDropdownButtonHover")<br />Bouton de liste déroulante de barre de commandes au pointage
+![Bouton de chute de barre de commande sur le plan stationnaire](../../extensibility/ux-guidelines/media/0303-034_comboboxdropdownbuttonhover.png "0303-034_ComboBoxDropdownButtonHover")<br />Bouton de chute de barre de commande sur le plan stationnaire
 
 | Élément | Nom du jeton : Category.color |
 | --- | --- |
 | Arrière-plan | `Environment.ComboBoxButtonMouseOverBackground` |
 | Premier plan (glyphe) | `Environment.ComboBoxMouseOverGlyph` |
 
-**Liste déroulante de barre de commandes : état de survol**
+**Liste d’abandon de barres de commandement : état de vol stationnaire**
 
- ![Liste déroulante de barre de commandes au pointage](../../extensibility/ux-guidelines/media/0303-035_comboboxdropdownlisthover.png "0303-035_ComboBoxDropdownListHover")<br />Liste déroulante de barre de commandes au pointage
+ ![Liste d’abandon de barre de commande sur le plan stationnaire](../../extensibility/ux-guidelines/media/0303-035_comboboxdropdownlisthover.png "0303-035_ComboBoxDropdownListHover")<br />Liste d’abandon de barre de commande sur le plan stationnaire
 
 | Élément | Nom du jeton : Category.color |
 | --- | --- |
@@ -1350,9 +1350,9 @@ Un groupe de barres de commandes se compose d’un ensemble de contrôles de bar
 | Premier plan (texte) | `Environment.ComboBoxItemMouseOverText` |
 | Bordure (élément de menu) | `Environment.ComboBoxItemMouseOverBorder` |
 
- **Champ d’entrée de la zone de liste déroulante de la barre de commandes : état Focus**
+ **Champ d’entrée de boîte combo de barre de commande : état focalisé**
 
-![Champ d’entrée de la zone de liste déroulante de barre de commandes Active](../../extensibility/ux-guidelines/media/0303-036_comboboxinputfieldfocused.png "0303-036_ComboBoxInputFieldFocused")<br />Champ d’entrée de la zone de liste déroulante de barre de commandes Active
+![Champ d’entrée de boîte combo de barre de commande focalisé](../../extensibility/ux-guidelines/media/0303-036_comboboxinputfieldfocused.png "0303-036_ComboBoxInputFieldFocused")<br />Champ d’entrée de boîte combo de barre de commande focalisé
 
 | Élément | Nom du jeton : Category.color |
 | --- | --- |
@@ -1361,18 +1361,18 @@ Un groupe de barres de commandes se compose d’un ensemble de contrôles de bar
 | Bordure | `Environment.ComboBoxFocusedBorder` |
 | Séparateur | `Environment.ComboBoxFocusedButtonSeparator` |
 
-**Bouton de liste déroulante de barre de commandes : état Focused**
+**Bouton d’abandon de la barre de commande : état focalisé**
 
-![Bouton de liste déroulante de barre de commandes ciblée](../../extensibility/ux-guidelines/media/0303-037_comboboxdropdownbuttonfocused.png "0303-037_ComboBoxDropdownButtonFocused")<br />Bouton de liste déroulante de barre de commandes ciblée
+![Bouton de décrochage de barre de commande focalisé](../../extensibility/ux-guidelines/media/0303-037_comboboxdropdownbuttonfocused.png "0303-037_ComboBoxDropdownButtonFocused")<br />Bouton de décrochage de barre de commande focalisé
 
 | Élément | Nom du jeton : Category.color |
 | --- | --- |
 | Arrière-plan | `Environment.ComboBoxFocusedButtonBackground` |
 | Premier plan (glyphe) | `Environment.ComboBoxFocusedGlyph` |
 
- **Champ d’entrée de la zone de liste déroulante de la barre de commandes : état enfoncé**
+ **Champ d’entrée de boîte combo de barre de commande : état pressé**
 
-![Champ d’entrée de zone de liste déroulante de barre de commandes appuyée](../../extensibility/ux-guidelines/media/0303-038_comboboxinputfieldpressed.png "0303-038_ComboBoxInputFieldPressed")<br />Champ d’entrée de zone de liste déroulante de barre de commandes appuyée
+![Champ d’entrée de boîte combo de barre de commande pressée](../../extensibility/ux-guidelines/media/0303-038_comboboxinputfieldpressed.png "0303-038_ComboBoxInputFieldPressed")<br />Champ d’entrée de boîte combo de barre de commande pressée
 
 | Élément | Nom du jeton : Category.color |
 | --- | --- |
@@ -1381,18 +1381,18 @@ Un groupe de barres de commandes se compose d’un ensemble de contrôles de bar
 | Bordure | `Environment.ComboBoxMouseDownBorder` |
 | Séparateur | `Environment.ComboBoxMouseDownSeparator` |
 
-**Bouton de liste déroulante de barre de commandes : état enfoncé**
+**Bouton de décrochage de barre de commande : état pressé**
 
-![Bouton de liste déroulante de barre de commandes appuyée](../../extensibility/ux-guidelines/media/0303-039_comboboxdropdownbuttonpressed.png "0303-039_ComboBoxDropdownButtonPressed")<br />Bouton de liste déroulante de barre de commandes appuyée
+![Bouton de chute de barre de commande pressé](../../extensibility/ux-guidelines/media/0303-039_comboboxdropdownbuttonpressed.png "0303-039_ComboBoxDropdownButtonPressed")<br />Bouton de chute de barre de commande pressé
 
 | Élément | Nom du jeton : Category.color |
 | --- | --- |
 | Arrière-plan | `Environment.ComboBoxButtonMouseDownBackground` |
 | Premier plan (glyphe) | `Environment.ComboBoxMouseDownGlyph` |
 
-**Champ d’entrée de la zone de liste déroulante de la barre de commandes : état désactivé**
+**Champ d’entrée de boîte combo de barre de commande : état désactivé**
 
-![Champ d’entrée de zone de liste déroulante de barre de commandes désactivé](../../extensibility/ux-guidelines/media/0303-041_comboboxinputfielddisabled.png "0303-041_ComboBoxInputFieldDisabled")<br />Champ d’entrée de zone de liste déroulante de barre de commandes désactivé
+![Champ d’entrée de boîte combo de barre de commande désactivée](../../extensibility/ux-guidelines/media/0303-041_comboboxinputfielddisabled.png "0303-041_ComboBoxInputFieldDisabled")<br />Champ d’entrée de boîte combo de barre de commande désactivée
 
 | Élément | Nom du jeton : Category.color |
 | --- | --- |
@@ -1401,30 +1401,30 @@ Un groupe de barres de commandes se compose d’un ensemble de contrôles de bar
 | Bordure | `Environment.ComboBoxDisabledBorder` |
 | Séparateur | Aucun séparateur |
 
-**Bouton déroulant de la barre de commandes : état désactivé**
+**Bouton d’abandon de barres de commande : état désactivé**
 
-![Bouton de liste déroulante de barre de commandes désactivée](../../extensibility/ux-guidelines/media/0303-040_comboboxdropdownbuttondisabled.png "0303-040_ComboBoxDropdownButtonDisabled")<br />Bouton de liste déroulante de barre de commandes désactivée
+![Bouton d’abandon de barre de commande désactivé](../../extensibility/ux-guidelines/media/0303-040_comboboxdropdownbuttondisabled.png "0303-040_ComboBoxDropdownButtonDisabled")<br />Bouton d’abandon de barre de commande désactivé
 
 | Élément | Nom du jeton : Category.color |
 | --- | --- |
 | Arrière-plan | None |
 | Premier plan (glyphe) | `Environment.ComboBoxDisabledGlyph` |
 
-#### <a name="BKMK_CommandDropDown"></a>Listes déroulantes de la barre de commandes
+#### <a name="command-bar-drop-downs"></a><a name="BKMK_CommandDropDown"></a>Baisses de barres de commandement
 
 > [!IMPORTANT]
-> Les listes déroulantes ressemblent aux zones de liste modifiable, mais elles ne disposent pas de zones de texte modifiable. Si votre liste déroulante contient une zone de texte modifiable, utilisez les jetons de couleur pour les [zones de liste déroulante de barre de commandes](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_CommandComboBox).
+> Les listes déroulantes ressemblent aux zones de liste modifiable, mais elles ne disposent pas de zones de texte modifiable. Si votre drop-down inclut une région de texte modifiable, utilisez les jetons de couleur pour [les boîtes combo de barre de commande.](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_CommandComboBox)
 
-![Liste déroulante de barre de commandes (ligne rouge)](../../extensibility/ux-guidelines/media/0303-042_dropdownredline.png "0303-042_DropdownRedline")<br />Liste déroulante de barre de commandes (ligne rouge)
+![Baisse de la barre de commandement (ligne rouge)](../../extensibility/ux-guidelines/media/0303-042_dropdownredline.png "0303-042_DropdownRedline")<br />Baisse de la barre de commandement (ligne rouge)
 
-| Utilisez... | N’utilisez pas... |
+| Utiliser... | N’utilisez pas ... |
 | --- | --- |
-| ... Lorsque vous créez des contrôles de liste déroulante personnalisés. | ... pour tout élément qui n’est pas similaire à une liste déroulante. |
-| | ... pour les zones de liste modifiable ou les boutons partagés. |
+| ... lorsque vous créez des contrôles de liste d’abandon personnalisés. | ... pour tout ce qui n’est pas similaire à une liste d’abandon. |
+| | ... pour les boîtes combo ou les boutons fendus. |
 
-**Zone de liste déroulante de barre de commandes champ : état par défaut**
+**Champ de sélection de la barre de commande : état par défaut**
 
-![Zone de liste déroulante de barre de commandes par défaut](../../extensibility/ux-guidelines/media/0303-043_dropdownselectionfield.png "0303-043_DropdownSelectionField")<br />Zone de liste déroulante de barre de commandes par défaut
+![Champ de sélection de la barre de commande par défaut](../../extensibility/ux-guidelines/media/0303-043_dropdownselectionfield.png "0303-043_DropdownSelectionField")<br />Champ de sélection de la barre de commande par défaut
 
 | Élément | Nom du jeton : Category.color |
 | --- | --- |
@@ -1433,49 +1433,49 @@ Un groupe de barres de commandes se compose d’un ensemble de contrôles de bar
 | Bordure | `DropDownBorder` |
 | Séparateur | Aucun séparateur |
 
-**Bouton de liste déroulante de barre de commandes : état par défaut**
+**Bouton d’abandon de la barre de commande : état par défaut**
 
-![Bouton de liste déroulante de barre de commandes par défaut](../../extensibility/ux-guidelines/media/0303-044_dropdownbutton.png "0303-044_DropdownButton")<br />Bouton de liste déroulante de barre de commandes par défaut
+![Bouton d’abandon par barre de commande par défaut](../../extensibility/ux-guidelines/media/0303-044_dropdownbutton.png "0303-044_DropdownButton")<br />Bouton d’abandon par barre de commande par défaut
 
 | Élément | Nom du jeton : Category.color |
 | --- | --- |
 | Arrière-plan | None |
 | Premier plan (glyphe) | `Environment.DropDownGlyph` |
 
-**Liste déroulante de barre de commandes : état par défaut**
+**Liste d’abandon de la barre de commandement : état par défaut**
 
-![Liste déroulante de la barre de commandes par défaut](../../extensibility/ux-guidelines/media/0303-045_dropdownlist.png "0303-045_DropdownList")<br />Liste déroulante de la barre de commandes par défaut
+![Liste d’abandon de barres de commande par défaut](../../extensibility/ux-guidelines/media/0303-045_dropdownlist.png "0303-045_DropdownList")<br />Liste d’abandon de barres de commande par défaut
 
 | Élément | Nom du jeton : Category.color |
 | --- | --- |
-| Arrière-plan | `Environment.DropDownPopupBackgroundBegin`<br />(Les points de dégradé de ce jeton ne sont pas utilisés dans l’interface utilisateur à thème.) |
+| Arrière-plan | `Environment.DropDownPopupBackgroundBegin`<br />(Gradient s’arrête pour ce jeton non utilisé dans l’interface utilisateur thématique.) |
 | Premier plan (texte) | `Environment.ComboBoxItemText` |
 | Bordure | `Environment.DropDownPopupBorder` |
 | Shadow | `Environment.DropShadowBackground` |
 
-**Zone de liste déroulante de barre de commandes champ : état de survol**
+**Champ de sélection de la barre de commandement : état de vol stationnaire**
 
-![Zone de liste déroulante de barre de commandes au pointage](../../extensibility/ux-guidelines/media/0303-046_dropdownselectionfieldhover.png "0303-046_DropdownSelectionFieldHover")<br />Zone de liste déroulante de barre de commandes au pointage
+![Champ de sélection de chute de barre de commande sur le plan stationnaire](../../extensibility/ux-guidelines/media/0303-046_dropdownselectionfieldhover.png "0303-046_DropdownSelectionFieldHover")<br />Champ de sélection de chute de barre de commande sur le plan stationnaire
 
 | Élément | Nom du jeton : Category.color |
 | --- | --- |
-| Arrière-plan | `Environment.DropDownMouseOverBackgroundBegin`<br />(Les points de dégradé de ce jeton ne sont pas utilisés dans l’interface utilisateur à thème.) |
+| Arrière-plan | `Environment.DropDownMouseOverBackgroundBegin`<br />(Gradient s’arrête pour ce jeton non utilisé dans l’interface utilisateur thématique.) |
 | Premier plan (texte) | `Environment.DropDownMouseOverText` |
 | Bordure | `Environment.DropDownMouseOverBorder` |
 | Séparateur | `Environment.DropDownButtonMouseOverSeparator` |
 
-**Bouton de liste déroulante de barre de commandes : état pointé**
+**Bouton d’abandon de barre de commande : état de vol stationnaire**
 
-![Bouton de liste déroulante de barre de commandes au pointage](../../extensibility/ux-guidelines/media/0303-047_dropdownbuttonhover.png "0303-047_DropdownButtonHover")<br />Bouton de liste déroulante de barre de commandes au pointage
+![Bouton de chute de barre de commande sur le plan stationnaire](../../extensibility/ux-guidelines/media/0303-047_dropdownbuttonhover.png "0303-047_DropdownButtonHover")<br />Bouton de chute de barre de commande sur le plan stationnaire
 
 | Élément | Nom du jeton : Category.color |
 | --- | --- |
 | Arrière-plan | `Environment.DropDownButtonMouseOverBackground` |
 | Premier plan (glyphe) | `Environment.DropDownMouseOverGlyph` |
 
-**Liste déroulante de barre de commandes : état de survol**
+**Liste d’abandon de barres de commandement : état de vol stationnaire**
 
-![Liste déroulante de barre de commandes au pointage](../../extensibility/ux-guidelines/media/0303-048_dropdownlisthover.png "0303-048_DropdownListHover")<br />Liste déroulante de barre de commandes au pointage
+![Liste d’abandon de barre de commande sur le plan stationnaire](../../extensibility/ux-guidelines/media/0303-048_dropdownlisthover.png "0303-048_DropdownListHover")<br />Liste d’abandon de barre de commande sur le plan stationnaire
 
 | Élément | Nom du jeton : Category.color |
 | --- | --- |
@@ -1483,9 +1483,9 @@ Un groupe de barres de commandes se compose d’un ensemble de contrôles de bar
 | Premier plan (texte) | `Environment.ComboBoxItemMouseOverText` |
 | Bordure (élément de menu) | `Environment.ComboBoxItemMouseOverBorder` |
 
- **Zone de liste déroulante de la barre de commandes : état enfoncé**
+ **Champ de sélection de la barre de commandement : état pressé**
 
-![Champ&#45;de sélection de liste déroulante appuyé](../../extensibility/ux-guidelines/media/0303-049_dropdownselectionfieldpressed.png "0303-049_DropdownSelectionFieldPressed")<br />Zone de liste déroulante de la barre de commandes appuyée
+![Drop&#45;down selection field pressed](../../extensibility/ux-guidelines/media/0303-049_dropdownselectionfieldpressed.png "0303-049_DropdownSelectionFieldPressed")<br />Champ de sélection de la barre de commande pressée
 
 | Élément | Nom du jeton : Category.color |
 | --- | --- |
@@ -1494,18 +1494,18 @@ Un groupe de barres de commandes se compose d’un ensemble de contrôles de bar
 | Bordure | `Environment.DropDownMouseDownBorder` |
 | Séparateur | `Environment.DropDownButtonMouseDownSeparator` |
 
-**Bouton de liste déroulante de barre de commandes : état enfoncé**
+**Bouton de décrochage de barre de commande : état pressé**
 
-![Bouton de liste déroulante de barre de commandes appuyée](../../extensibility/ux-guidelines/media/0303-050_dropdownbuttonpressed.png "0303-050_DropdownButtonPressed")<br />Bouton de liste déroulante de barre de commandes appuyée
+![Bouton de chute de barre de commande pressé](../../extensibility/ux-guidelines/media/0303-050_dropdownbuttonpressed.png "0303-050_DropdownButtonPressed")<br />Bouton de chute de barre de commande pressé
 
 | Élément | Nom du jeton : Category.color |
 | --- | --- |
 | Arrière-plan | `Environment.DropDownButtonMouseDownBackground` |
 | Premier plan (glyphe) | `Environment.DropDownMouseDownGlyph` |
 
-**Zone de liste déroulante de barre de commandes champ : état désactivé**
+**Champ de sélection de la barre de commandement : état désactivé**
 
-![Champ de sélection de la barre de commandes désactivée](../../extensibility/ux-guidelines/media/0303-051_dropdownselectionfielddisabled.png "0303-051_DropdownSelectionFieldDisabled")<br />Champ de sélection de la barre de commandes désactivée
+![Champ de sélection de barres de commande désactivée](../../extensibility/ux-guidelines/media/0303-051_dropdownselectionfielddisabled.png "0303-051_DropdownSelectionFieldDisabled")<br />Champ de sélection de barres de commande désactivée
 
 | Élément | Nom du jeton : Category.color |
 | --- | --- |
@@ -1514,28 +1514,28 @@ Un groupe de barres de commandes se compose d’un ensemble de contrôles de bar
 | Bordure | `Environment.DropDownDisabledBorder` |
 | Séparateur | Aucun séparateur |
 
-**Bouton déroulant de la barre de commandes : état désactivé**
+**Bouton d’abandon de barres de commande : état désactivé**
 
-![Bouton de liste déroulante de barre de commandes désactivée](../../extensibility/ux-guidelines/media/0303-052_dropdownbuttondisabled.png "0303-052_DropdownButtonDisabled")<br />Bouton de liste déroulante de barre de commandes désactivée
+![Bouton d’abandon de barre de commande désactivé](../../extensibility/ux-guidelines/media/0303-052_dropdownbuttondisabled.png "0303-052_DropdownButtonDisabled")<br />Bouton d’abandon de barre de commande désactivé
 
 | Élément | Nom du jeton : Category.color |
 | --- | --- |
 | Arrière-plan | N/A |
 | Premier plan (glyphe) | `Environment.DropDownDisabledGlyph` |
 
-#### <a name="command-bar-split-buttons"></a>Boutons partagés de la barre de commandes
-Les boutons partagés partagent de nombreux noms de jeton avec d’autres contrôles de barre de commandes, tels que des boutons, menus et texte de barre de commandes. Toutes les actions nécessaires et les noms de jeton bouton de liste déroulante sont répétés ici par commodité. Les listes déroulantes de bouton partagé sont des implémentations de [menus de barre de commandes](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_CommandMenus).
+#### <a name="command-bar-split-buttons"></a>Boutons fractionnés de barre de commande
+Les boutons partagés partagent de nombreux noms de jeton avec d’autres contrôles de barre de commandes, tels que des boutons, menus et texte de barre de commandes. Toutes les actions nécessaires et les noms de jeton bouton de liste déroulante sont répétés ici par commodité. Les listes d’abandon des boutons fractionnés sont des implémentations de menus de barres de [commande.](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_CommandMenus)
 
-![Ligne rouge du bouton partagé](../../extensibility/ux-guidelines/media/0303-053_splitbuttonredline.png "0303-053_SplitButtonRedline")<br />Bouton de fractionnement de la barre de commandes (ligne rouge)
+![Ligne rouge de bouton Fractionner](../../extensibility/ux-guidelines/media/0303-053_splitbuttonredline.png "0303-053_SplitButtonRedline")<br />Bouton fractionné de barre de commande (redline)
 
-| Utilisez... | N’utilisez pas... |
+| Utiliser... | N’utilisez pas ... |
 | --- | --- |
-| ... Lorsque vous créez un bouton partagé personnalisé. | ... pour les autres types de boutons. |
-| | ... dans toute combinaison d’arrière-plan/premier plan autre que celle spécifiée. |
+| ... lorsque vous créez un bouton split personnalisé. | ... pour d’autres types de boutons. |
+| | ... dans n’importe quelle combinaison de fond/premier plan autre que spécifiée. |
 
-**Bouton de fractionnement de la barre de commandes : état par défaut**
+**Bouton fractionné de barre de commande : état par défaut**
 
-![Bouton de fractionnement de la barre de commandes par défaut](../../extensibility/ux-guidelines/media/0303-054_splitbutton.png "0303-054_SplitButton")<br />Bouton de fractionnement de la barre de commandes par défaut
+![Bouton fractionné de barre de commande par défaut](../../extensibility/ux-guidelines/media/0303-054_splitbutton.png "0303-054_SplitButton")<br />Bouton fractionné de barre de commande par défaut
 
 | Élément | Nom du jeton : Category.color |
 | --- | --- |
@@ -1545,33 +1545,33 @@ Les boutons partagés partagent de nombreux noms de jeton avec d’autres contr�
 | Bordure | N/A |
 | Séparateur | N/A |
 
-**Bouton de fractionnement de la barre de commandes : état sensitif**
+**Bouton fractionné de barre de commande : état de vol stationnaire**
 
-![Bouton partagé de barre de commandes au pointage](../../extensibility/ux-guidelines/media/0303-055_splitbuttonhover.png "0303-055_SplitButtonHover")<br />Bouton partagé de barre de commandes au pointage
+![Bouton fractionné de barre de commande sur le plan stationnaire](../../extensibility/ux-guidelines/media/0303-055_splitbuttonhover.png "0303-055_SplitButtonHover")<br />Bouton fractionné de barre de commande sur le plan stationnaire
 
 | Élément | Nom du jeton : Category.color |
 | --- | --- |
-| Arrière-plan | `Environment.CommandBarMouseOverBackgroundBegin`<br />(Les points de dégradé de ce jeton ne sont pas utilisés dans l’interface utilisateur à thème.) |
+| Arrière-plan | `Environment.CommandBarMouseOverBackgroundBegin`<br />(Gradient s’arrête pour ce jeton non utilisé dans l’interface utilisateur thématique.) |
 | Premier plan (texte) | `Environment.CommandBarTextHover` |
 | Premier plan (glyphe) | `Environment.CommandBarSplitButtonMouseOverGlyph` |
 | Bordure | `Environment.CommandBarBorder` |
 | Séparateur | `Environment.CommandBarSplitButtonSeparator` |
 
-**Bouton de fractionnement de la barre de commandes : état enfoncé**
+**Bouton fractionné de barre de commande : état pressé**
 
-![Bouton de fractionnement de la barre de commandes appuyé](../../extensibility/ux-guidelines/media/0303-056_splitbuttonpressed.png "0303-056_SplitButtonPressed")<br />Bouton de fractionnement de la barre de commandes appuyé
+![Bouton fractionné de barre de commande pressé](../../extensibility/ux-guidelines/media/0303-056_splitbuttonpressed.png "0303-056_SplitButtonPressed")<br />Bouton fractionné de barre de commande pressé
 
 | Élément | Nom du jeton : Category.color |
 | --- | --- |
-| Arrière-plan | `Environment.CommandBarMouseDownBackgroundBegin`<br />(Les points de dégradé de ce jeton ne sont pas utilisés dans l’interface utilisateur à thème.) |
+| Arrière-plan | `Environment.CommandBarMouseDownBackgroundBegin`<br />(Gradient s’arrête pour ce jeton non utilisé dans l’interface utilisateur thématique.) |
 | Premier plan (texte) | `Environment.CommandBarTextMouseDown` |
 | Premier plan (glyphe) | `Environment.CommandBarSplitButtonMouseDownGlyph` |
 | Bordure | `Environment.CommandBarBorder` |
 | Séparateur | N/A |
 
-**Bouton de fractionnement de la barre de commandes : état désactivé**
+**Bouton fractionné de barre de commande : état désactivé**
 
-![Bouton de fractionnement de la barre de commandes désactivé](../../extensibility/ux-guidelines/media/0303-057_splitbuttondisabled.png "0303-057_SplitButtonDisabled")<br />Bouton de fractionnement de la barre de commandes désactivé
+![Bouton fractionné de barre de commande désactivé](../../extensibility/ux-guidelines/media/0303-057_splitbuttondisabled.png "0303-057_SplitButtonDisabled")<br />Bouton fractionné de barre de commande désactivé
 
 | Élément | Nom du jeton : Category.color |
 | --- | --- |
@@ -1581,65 +1581,65 @@ Les boutons partagés partagent de nombreux noms de jeton avec d’autres contr�
 | Bordure | N/A |
 | Séparateur | N/A |
 
-#### <a name="command-bar-more-options-and-overflow-buttons"></a>Boutons « autres options » et « dépassement » de la barre de commandes
+#### <a name="command-bar-more-options-and-overflow-buttons"></a>Barre de commande 'Plus d’options' et boutons 'Overflow'
 Le bouton « Autres options » est utilisé quand un groupe de barres de commandes peut être personnalisé en ajoutant ou en supprimant des boutons de barre de commandes associés. Le bouton « >> » apparaît quand une barre de commandes est tronquée en raison d’un manque d’espace horizontal. En cliquant dessus, un menu se déroule pour afficher les autres boutons de la barre de commandes qui ne pouvaient pas apparaître. Les couleurs de ces deux boutons sont contrôlées par le même ensemble de noms de jeton.
 
-![Bouton « autres options » de la barre de commandes (ligne rouge)](../../extensibility/ux-guidelines/media/0303-058_moreoptionsredline.png "0303-058_MoreOptionsRedline")<br />Bouton « autres options » de la barre de commandes (ligne rouge)
+![Bouton 'Plus d’options' (redline)](../../extensibility/ux-guidelines/media/0303-058_moreoptionsredline.png "0303-058_MoreOptionsRedline")<br />Bouton 'Plus d’options' (redline)
 
-| Utilisez... | N’utilisez pas... |
+| Utiliser... | N’utilisez pas ... |
 | --- | --- |
-| ... pour les boutons « autres options » ou « Overflow » personnalisés. | ... pour les boutons qui n’ont pas de fonctionnalité similaire à un bouton « autres options » ou « overflow ». |
+| ... pour les boutons personnalisés 'Plus d’options' ou 'Overflow'. | ... pour les boutons qui n’ont pas de fonctionnalité similaire à un bouton 'Plus d’options' ou 'Overflow'. |
 
-**Boutons « autres options » et « dépassement » de la barre de commandes : état par défaut**
+**Barre de commande 'Plus d’options' et boutons 'Overflow' : état par défaut**
 
-![Bouton « autres options » dans la barre de commandes par défaut](../../extensibility/ux-guidelines/media/0303-059_moreoptions.png "0303-059_MoreOptions")<br />Bouton « autres options » dans la barre de commandes par défaut
+![Bouton de la barre de commande par défaut 'Plus d’options'](../../extensibility/ux-guidelines/media/0303-059_moreoptions.png "0303-059_MoreOptions")<br />Bouton de la barre de commande par défaut 'Plus d’options'
 
-![Bouton « overflow » de la barre de commandes par défaut](../../extensibility/ux-guidelines/media/0303-060_overflow.png "0303-060_Overflow")<br />Bouton « overflow » de la barre de commandes par défaut
+![Bouton 'Overflow' de la barre de commande par défaut](../../extensibility/ux-guidelines/media/0303-060_overflow.png "0303-060_Overflow")<br />Bouton 'Overflow' de la barre de commande par défaut
 
 | Élément | Nom du jeton : Category.color |
 | --- | --- |
 | Arrière-plan | `Environment.CommandBarOptionsBackground` |
 | Premier plan (glyphe) | `Environment.CommandBarOptionsGlyph` |
 
-**Boutons « autres options » et « dépassement » de la barre de commandes : état de survol**
+**Barre de commande 'Plus d’options' et boutons 'Overflow' : état de vol stationnaire**
 
-![Bouton « autres options » de la barre de commandes au pointage](../../extensibility/ux-guidelines/media/0303-061_moreoptionshover.png "0303-061_MoreOptionsHover")<br />Bouton « autres options » de la barre de commandes au pointage
+![Bouton 'Plus d’options' sur le bouton de commande](../../extensibility/ux-guidelines/media/0303-061_moreoptionshover.png "0303-061_MoreOptionsHover")<br />Bouton 'Plus d’options' sur le bouton de commande
 
-![Bouton « overflow » de la barre de commandes au pointage](../../extensibility/ux-guidelines/media/0303-062_overflowoptions.png "0303-062_OverflowOptions")<br />Bouton « overflow » de la barre de commandes au pointage
+![Bouton 'Overflow' de barre de commande sur le plan stationnaire](../../extensibility/ux-guidelines/media/0303-062_overflowoptions.png "0303-062_OverflowOptions")<br />Bouton 'Overflow' de barre de commande sur le plan stationnaire
 
 | Élément | Nom du jeton : Category.color |
 | --- | --- |
-| Arrière-plan | `Environment.CommandBarOptionsMouseOverBackgroundBegin`<br />(Les points de dégradé de ce jeton ne sont pas utilisés dans l’interface utilisateur à thème.) |
+| Arrière-plan | `Environment.CommandBarOptionsMouseOverBackgroundBegin`<br />(Gradient s’arrête pour ce jeton non utilisé dans l’interface utilisateur thématique.) |
 | Premier plan (glyphe) | `Environment.CommandBarOptionsMouseDownGlyph` |
 
-**Boutons « autres options » et « dépassement » de la barre de commandes : état enfoncé**
+**Barre de commande 'Plus d’options' et boutons 'Overflow': état pressé**
 
-![Bouton « autres options » dans la barre de commandes](../../extensibility/ux-guidelines/media/0303-063_moreoptionspressed.png "0303-063_MoreOptionsPressed")<br />Bouton « autres options » dans la barre de commandes
+![Bouton de la barre de commande pressée 'Plus d’options'](../../extensibility/ux-guidelines/media/0303-063_moreoptionspressed.png "0303-063_MoreOptionsPressed")<br />Bouton de la barre de commande pressée 'Plus d’options'
 
-![Dépassement enfoncé](../../extensibility/ux-guidelines/media/0303-064_overflowpressed.png "0303-064_OverflowPressed")<br />Bouton « overflow » de la barre de commandes appuyée
+![Bouton de dépassement enfoncé](../../extensibility/ux-guidelines/media/0303-064_overflowpressed.png "0303-064_OverflowPressed")<br />Bouton 'Overflow' de la barre de commande pressée
 
 | Élément | Nom du jeton : Category.color |
 | --- | --- |
-| Arrière-plan | `Environment.CommandBarOptionsMouseDownBackgroundBegin`<br />(Les points de dégradé de ce jeton ne sont pas utilisés dans l’interface utilisateur à thème.) |
+| Arrière-plan | `Environment.CommandBarOptionsMouseDownBackgroundBegin`<br />(Gradient s’arrête pour ce jeton non utilisé dans l’interface utilisateur thématique.) |
 | Premier plan (glyphe) | `Environment.CommandBarOptionsMouseDownGlyph` |
 
 ## <a name="document-windows"></a>Fenêtres de document
-Il n’est pas nécessaire de répliquer les fenêtres de document, car elles sont fournies par l’environnement Visual Studio. Toutefois, vous pouvez décider d’exploiter les couleurs utilisées dans les fenêtres de document, afin que votre interface utilisateur apparaisse toujours cohérente avec cette partie de l’environnement Visual Studio.
+Il n’est pas nécessaire de reproduire les fenêtres de documents, car elles sont fournies par l’environnement Visual Studio. Toutefois, vous pouvez décider d’exploiter les couleurs utilisées dans les fenêtres de document, afin que votre interface utilisateur apparaisse toujours cohérente avec cette partie de l’environnement Visual Studio.
 
-Lorsque vous utilisez des jetons de couleur de fenêtre de document, veillez à les utiliser uniquement pour les éléments similaires et toujours par paires. Si vous ne le faites pas, vous risquez d’obtenir des résultats inattendus dans votre interface utilisateur.
+Lorsque vous utilisez des jetons de couleur de fenêtre de document, veillez à les utiliser uniquement pour des éléments similaires, et toujours par paires. Si vous ne le faites pas, vous pourriez obtenir des résultats inattendus dans votre interface utilisateur.
 
-### <a name="document-window-frames"></a>Frames de fenêtre de document
-Les fenêtres de document peuvent être ancrées dans l’IDE ou flottantes dans une fenêtre distincte. Quand une fenêtre de document flotte en dehors de l’IDE, elle se trouve toujours dans un document et les couleurs d’arrière-plan, de bordure, de texte et d’onglet sont les mêmes que lorsqu’elle fait partie de l’IDE. Toutefois, le document se trouve à l’intérieur d’un cadre qui a ses propres couleurs d’arrière-plan, de bordure et de texte. Quand les fenêtres d’outil sont ancrées dans la zone de configuration de document, elles héritent le comportement et la couleur de leurs onglets des noms de jeton de fenêtre de document.
+### <a name="document-window-frames"></a>Cadres de fenêtre de document
+Les fenêtres de document peuvent être ancrées dans l’IDE ou flottantes dans une fenêtre distincte. Lorsqu’une fenêtre de document flotte à l’extérieur de l’IDE, elle se trouve toujours bien dans un document et possède des couleurs d’arrière-plan, de bordure, de texte et d’onglet qui sont les mêmes que lorsqu’il fait partie de l’IDE. Toutefois, le document se trouve à l’intérieur d’un cadre qui a ses propres couleurs d’arrière-plan, de bordure et de texte. Quand les fenêtres d’outil sont ancrées dans la zone de configuration de document, elles héritent le comportement et la couleur de leurs onglets des noms de jeton de fenêtre de document.
 
-![Fenêtre de document ancrée (ligne rouge)](../../extensibility/ux-guidelines/media/0303-065_dockeddocumentwindowredline.png "0303-065_DockedDocumentWindowRedline")<br />Fenêtre de document ancrée (ligne rouge)
+![Fenêtre de document amarrée (redline)](../../extensibility/ux-guidelines/media/0303-065_dockeddocumentwindowredline.png "0303-065_DockedDocumentWindowRedline")<br />Fenêtre de document amarrée (redline)
 
-![Fenêtre de document flottante (ligne rouge)](../../extensibility/ux-guidelines/media/0303-066_floatingdocumentwindowredline.png "0303-066_FloatingDocumentWindowRedline")<br />Fenêtre de document flottante (ligne rouge)
+![Fenêtre de document flottante (redline)](../../extensibility/ux-guidelines/media/0303-066_floatingdocumentwindowredline.png "0303-066_FloatingDocumentWindowRedline")<br />Fenêtre de document flottante (redline)
 
-| Utilisez... | N’utilisez pas... |
+| Utiliser... | N’utilisez pas ... |
 | --- | --- |
-| ... à tout endroit où vous créez une interface utilisateur que vous souhaitez faire correspondre à la fenêtre de document. | ...  pour toute interface utilisateur que vous ne souhaitez pas modifier automatiquement si l’interpréteur de commandes comporte une mise à jour de thème. |
+| ... où que vous créez l’interface utilisateur que vous souhaitez faire correspondre la fenêtre de document. | ...  pour toute interface utilisateur que vous ne voulez pas changer automatiquement si la coquille a une mise à jour thème. |
 
-**Fenêtre de document ancrée ou flottante : état par défaut**
+**Fenêtre de document amarrée ou flottante : état par défaut**
 
 | Élément | Nom du jeton : Category.color |
 | --- | --- |
@@ -1647,9 +1647,9 @@ Les fenêtres de document peuvent être ancrées dans l’IDE ou flottantes dans
 | Premier plan (texte) | Dépend du type de document |
 | Bordure | `Environment.ToolWindowBorder` |
 
-**Frame de fenêtre de document flottant et avec focus : état par défaut**
+**Cadre de fenêtre de document focalisé et flottant : état par défaut**
 
-![Frame de fenêtre de document flottant et avec focus par défaut](../../extensibility/ux-guidelines/media/0303-067_framefocused.png "0303-067_FrameFocused")<br />Frame de fenêtre de document flottant et avec focus par défaut
+![Cadre de fenêtre de document flottant axé par défaut](../../extensibility/ux-guidelines/media/0303-067_framefocused.png "0303-067_FrameFocused")<br />Cadre de fenêtre de document flottant axé par défaut
 
 | Élément | Nom du jeton : Category.color |
 | --- | --- |
@@ -1657,11 +1657,11 @@ Les fenêtres de document peuvent être ancrées dans l’IDE ou flottantes dans
 | Premier plan (texte) | `Environment.ToolWindowFloatingFrame` |
 | Premier plan (glyphe) | `Environment.RaftedWindowButtonActiveGlyph` |
 | Bordure | `Environment.MainWindowActiveDefaultBorder` |
-| Bordure (glyphe) | `Environment.RaftedWindowButtonActiveBorder`<br />(Défini sur transparent) |
+| Bordure (glyphe) | `Environment.RaftedWindowButtonActiveBorder`<br />(Définir pour transparent) |
 
-**Frame de fenêtre de document flottant sans Focus : état par défaut**
+**Cadre de fenêtre de document flottant non focalisé : état par défaut**
 
-![Frame de fenêtre de document flottant sans focus par défaut](../../extensibility/ux-guidelines/media/0303-068_frameunfocused.png "0303-068_FrameUnfocused")<br />Frame de fenêtre de document flottant sans focus par défaut
+![Cadre de fenêtre de document flottant non focalisé par défaut](../../extensibility/ux-guidelines/media/0303-068_frameunfocused.png "0303-068_FrameUnfocused")<br />Cadre de fenêtre de document flottant non focalisé par défaut
 
 | Élément | Nom du jeton : Category.color |
 | --- | --- |
@@ -1669,11 +1669,11 @@ Les fenêtres de document peuvent être ancrées dans l’IDE ou flottantes dans
 | Premier plan (texte) | `Environment.ToolWindowFloatingFrameInactive` |
 | Premier plan (glyphe) | `Environment.RaftedWindowButtonInactiveGlyph` |
 | Bordure | `Environment.MainWindowInactiveBorder` |
-| Bordure (glyphe) | `Environment.RaftedWindowButtonInactiveBorder`<br />(Défini sur transparent) |
+| Bordure (glyphe) | `Environment.RaftedWindowButtonInactiveBorder`<br />(Définir pour transparent) |
 
-**Frame de fenêtre de document flottant et avec focus : état sensitif**
+**Cadre de fenêtre de document flottant concentré : état de vol stationnaire**
 
-![Frame de fenêtre de document flottant au pointage au survol](../../extensibility/ux-guidelines/media/0303-069_framefocusedhover.png "0303-069_FrameFocusedHover")<br />Frame de fenêtre de document flottant au pointage au survol
+![Cadre de fenêtre de document flottant concentré sur le plan stationnaire](../../extensibility/ux-guidelines/media/0303-069_framefocusedhover.png "0303-069_FrameFocusedHover")<br />Cadre de fenêtre de document flottant concentré sur le plan stationnaire
 
 | Élément | Nom du jeton : Category.color |
 | --- | --- |
@@ -1681,9 +1681,9 @@ Les fenêtres de document peuvent être ancrées dans l’IDE ou flottantes dans
 | Premier plan (glyphe) | `Environment.RaftedWindowButtonHoverActiveGlyph` |
 | Bordure (glyphe) | `Environment.RaftedWindowButtonHoverActiveBorder` |
 
-**Frame de fenêtre de document flottant sans Focus : état sensitif**
+**Cadre de fenêtre de document flottant non focalisé : état de vol stationnaire**
 
-![Frame de fenêtre de document flottant inactif au pointage](../../extensibility/ux-guidelines/media/0303-070_frameunfocusedhover.png "0303-070_FrameUnfocusedHover")<br />Frame de fenêtre de document flottant inactif au pointage
+![Cadre de fenêtre flottante et non focalisé sur le plan stationnaire](../../extensibility/ux-guidelines/media/0303-070_frameunfocusedhover.png "0303-070_FrameUnfocusedHover")<br />Cadre de fenêtre flottante et non focalisé sur le plan stationnaire
 
 | Élément | Nom du jeton : Category.color |
 | --- | --- |
@@ -1691,9 +1691,9 @@ Les fenêtres de document peuvent être ancrées dans l’IDE ou flottantes dans
 | Premier plan (glyphe) | `Environment.RaftedWindowButtonHoverInactiveGlyph` |
 | Bordure (glyphe) | `Environment.RaftedWindowButtonHoverInactiveBorder` |
 
-**Frame de fenêtre de document flottant ayant le focus : état enfoncé**
+**Cadre de fenêtre de document flottant concentré : état pressé**
 
-![Frame de fenêtre de document flottant sur une pression](../../extensibility/ux-guidelines/media/0303-071_framefocusedpressed.png "0303-071_FrameFocusedPressed")<br />Frame de fenêtre de document flottant sur une pression
+![Cadre de fenêtre de document concentré et flottant sur la presse](../../extensibility/ux-guidelines/media/0303-071_framefocusedpressed.png "0303-071_FrameFocusedPressed")<br />Cadre de fenêtre de document concentré et flottant sur la presse
 
 | Élément | Nom du jeton : Category.color |
 | --- | --- |
@@ -1704,92 +1704,92 @@ Les fenêtres de document peuvent être ancrées dans l’IDE ou flottantes dans
 ### <a name="document-tabs"></a>Onglets de document
 Les onglets de document figurent dans le canal d’onglet pour indiquer quels documents sont actuellement ouverts, ainsi que celui qui correspond au document actuellement sélectionné ou actif. Les fenêtres d’outil peuvent également être ancrées dans le canal d’onglet de document, si l’utilisateur les y place. Dans ce cas, elles utilisent les mêmes couleurs d’onglet que celles des fenêtres de document. Si vous créez une interface utilisateur que vous voulez toujours faire correspondre aux couleurs de fenêtre de document (mises à jour du thème comprises ou si de nouveaux thèmes sont installés), alors référencez ces jetons de couleur.
 
-![Onglets de document (ligne rouge)](../../extensibility/ux-guidelines/media/0303-072_documenttabredline.png "0303-072_DocumentTabRedline")<br />Onglets de document (ligne rouge)
+![Onglets de documents (redline)](../../extensibility/ux-guidelines/media/0303-072_documenttabredline.png "0303-072_DocumentTabRedline")<br />Onglets de documents (redline)
 
-| Utilisez... | N’utilisez pas... |
+| Utiliser... | N’utilisez pas ... |
 | --- | --- |
-| ... à tout endroit où vous créez une interface utilisateur pour laquelle vous souhaitez faire correspondre les onglets de document et sélectionner automatiquement les mises à jour de thème ou les nouvelles couleurs de thème. | ... pour toute interface utilisateur que vous ne souhaitez pas modifier automatiquement lorsque l’interpréteur de commandes a une mise à jour de thème. |
+| ... partout où vous créez l’interface utilisateur que vous souhaitez faire correspondre les onglets de documents et prendre automatiquement des mises à jour de thème ou de nouvelles couleurs de thème. | ... pour toute interface utilisateur que vous ne voulez pas modifier automatiquement lorsque la coquille a une mise à jour thème. |
 
 #### <a name="open-document-tabs"></a>Onglets de document ouvert
 Chaque document ouvert possède un onglet dans le canal d’onglet de document qui affiche son nom. Les documents peuvent être soit sélectionnés, soit ouverts en arrière-plan et leurs onglets reflètent ces états :
 
 - L’onglet sélectionné représente le document actuellement affiché dans la zone de configuration de document. Un onglet sélectionné a une bordure de document qui s’étend sur le bord supérieur de la zone de configuration de document.
 
-- Les onglets d’arrière-plan sont les onglets de document qui ne sont pas l’onglet actuellement sélectionné. Une fois que vous cliquez dessus, ils deviennent l’onglet sélectionné et acquièrent toutes les couleurs d’arrière-plan, de bordure et de texte de ces noms de jeton.
+- Les onglets d’arrière-plan sont des onglets de documents qui ne sont pas l’onglet actuellement sélectionné. Une fois cliqués, ils deviennent l’onglet sélectionné et acquièrent toutes les couleurs de fond, de bordure et de texte de ces noms symboliques.
 
-![Ouvrir l’onglet du document (ligne rouge)](../../extensibility/ux-guidelines/media/0303-073_opendocumenttabredline.png "0303-073_OpenDocumentTabRedline")<br />Ouvrir l’onglet du document (ligne rouge)
+![Onglet de document ouvert (redline)](../../extensibility/ux-guidelines/media/0303-073_opendocumenttabredline.png "0303-073_OpenDocumentTabRedline")<br />Onglet de document ouvert (redline)
 
-| Utilisez... | N’utilisez pas... |
+| Utiliser... | N’utilisez pas ... |
 | --- | --- |
-| ... Lorsque vous créez des onglets de document personnalisés. | ... pour les onglets provisoires (version préliminaire). |
-| | ... pour toute interface utilisateur que vous ne souhaitez pas modifier automatiquement si l’interpréteur de commandes comporte une mise à jour de thème. |
+| ... lorsque vous créez des onglets de documents personnalisés. | ... pour les onglets provisoires (aperçu). |
+| | ... pour toute interface utilisateur que vous ne souhaitez pas modifier automatiquement si la coquille a une mise à jour thème. |
 
-**Onglet de document sélectionné, avec focus**
+**Onglet de document sélectionné et ciblé**
 
-![Onglet de document sélectionné, avec focus](../../extensibility/ux-guidelines/media/0303-074_selectedtabfocused.png "0303-074_SelectedTabFocused")<br />Onglet de document sélectionné, avec focus
+![Onglet de document sélectionné et ciblé](../../extensibility/ux-guidelines/media/0303-074_selectedtabfocused.png "0303-074_SelectedTabFocused")<br />Onglet de document sélectionné et ciblé
 
 | Élément | Nom du jeton : Category.color |
 | --- | --- |
-| Arrière-plan | `Environment.FileTabSelectedGradientTop`<br />(Les points de dégradé de ce jeton ne sont pas utilisés dans l’interface utilisateur à thème.) |
+| Arrière-plan | `Environment.FileTabSelectedGradientTop`<br />(Gradient s’arrête pour ce jeton non utilisé dans l’interface utilisateur thématique.) |
 | Premier plan (texte) | `Environment.FileTabSelectedText` |
-| Bordure | `Environment.FileTabSelectedBorder`<br />(Défini sur la même couleur que l’arrière-plan.) |
+| Bordure | `Environment.FileTabSelectedBorder`<br />(Définir à la même couleur que l’arrière-plan.) |
 | Bordure de document | `Environment.FileTabDocumentBorderBackground` |
 
-**Onglet de document sélectionné, sans focus**
+**Onglet de document sélectionné et non focalisé**
 
-![Onglet de document sélectionné, sans focus](../../extensibility/ux-guidelines/media/0303-075_selectedtabunfocused.png "0303-075_SelectedTabUnfocused")<br />Onglet de document sélectionné, sans focus
+![Onglet de document sélectionné et non focalisé](../../extensibility/ux-guidelines/media/0303-075_selectedtabunfocused.png "0303-075_SelectedTabUnfocused")<br />Onglet de document sélectionné et non focalisé
 
 | Élément | Nom du jeton : Category.color |
 | --- | --- |
-| Arrière-plan | `Environment.FileTabInactiveGradientTop`<br />(Les points de dégradé de ce jeton ne sont pas utilisés dans l’interface utilisateur à thème.) |
+| Arrière-plan | `Environment.FileTabInactiveGradientTop`<br />(Gradient s’arrête pour ce jeton non utilisé dans l’interface utilisateur thématique.) |
 | Premier plan (texte) | `Environment.FileTabInactiveText` |
-| Bordure | `Environment.FileTabInactiveBorder`<br />(Défini sur la même couleur que l’arrière-plan.) |
+| Bordure | `Environment.FileTabInactiveBorder`<br />(Définir à la même couleur que l’arrière-plan.) |
 | Bordure de document | `Environment.FileTabInactiveDocumentBorderBackground` |
 
-**Onglet document en arrière-plan : état par défaut**
+**Onglet de document d’arrière-plan : état par défaut**
 
-![Onglet document en arrière-plan par défaut](../../extensibility/ux-guidelines/media/0303-076_backgroundtab.png "0303-076_BackgroundTab")<br />Onglet document en arrière-plan par défaut
+![Onglet de document d’arrière-plan par défaut](../../extensibility/ux-guidelines/media/0303-076_backgroundtab.png "0303-076_BackgroundTab")<br />Onglet de document d’arrière-plan par défaut
 
 | Élément | Nom du jeton : Category.color |
 | --- | --- |
 | Arrière-plan | `Environment.FileTabBackground` |
 | Premier plan (texte) | `Environment.FileTabText` |
-| Bordure | `Environment.FileTabBorder`<br />(Défini sur la même couleur que l’arrière-plan.) |
+| Bordure | `Environment.FileTabBorder`<br />(Définir à la même couleur que l’arrière-plan.) |
 
-**Onglet document en arrière-plan : état sensitif**
+**Onglet de document d’arrière-plan : état de vol stationnaire**
 
-![Onglet document en arrière-plan au pointage](../../extensibility/ux-guidelines/media/0303-077_backgroundtabhover.png "0303-077_BackgroundTabHover")<br />Onglet document en arrière-plan au pointage
+![Onglet de document d’arrière-plan sur le plan stationnaire](../../extensibility/ux-guidelines/media/0303-077_backgroundtabhover.png "0303-077_BackgroundTabHover")<br />Onglet de document d’arrière-plan sur le plan stationnaire
 
 | Élément | Nom du jeton : Category.color |
 | --- | --- |
-| Arrière-plan | `Environment.FileTabHotGradientTop`<br />(Les points de dégradé de ce jeton ne sont pas utilisés dans l’interface utilisateur à thème.) |
+| Arrière-plan | `Environment.FileTabHotGradientTop`<br />(Gradient s’arrête pour ce jeton non utilisé dans l’interface utilisateur thématique.) |
 | Premier plan (texte) | `Environment.FileTabHotText` |
-| Bordure | `Environment.FileTabHotBorder`<br />(Défini sur la même couleur que l’arrière-plan.) |
+| Bordure | `Environment.FileTabHotBorder`<br />(Définir à la même couleur que l’arrière-plan.) |
 
 #### <a name="preview-tab"></a>Onglet d’aperçu
-Également appelé onglet « provisoire ». L’onglet Aperçu apparaît sur le côté droit du canal de l’onglet de document quand l’utilisateur clique sur un élément dans la fenêtre outil Explorateur de solutions. Il sert d’aperçu du document et donne également à l’utilisateur la possibilité de laisser le document ouvert sur le côté gauche du canal d’onglet de document. Une seul onglet d’aperçu peut être ouvert à la fois. Les onglets d’aperçu possèdent deux états, arrière-plan et sélectionné, comme les onglets ouverts, et leur état actif peut être avec ou sans focus.
+Aussi appelé un onglet "provisoire". L’onglet aperçu apparaît sur le côté droit du canal de l’onglet document lorsque l’utilisateur clique sur un élément dans la fenêtre de l’outil Solution Explorer. Il sert d’aperçu du document et donne également à l’utilisateur la possibilité de laisser le document ouvert sur le côté gauche du canal d’onglet de document. Une seul onglet d’aperçu peut être ouvert à la fois. Les onglets d’aperçu possèdent deux états, arrière-plan et sélectionné, comme les onglets ouverts, et leur état actif peut être avec ou sans focus.
 
-![Onglet Aperçu (ligne rouge)](../../extensibility/ux-guidelines/media/0303-078_previewtabredline.png "0303-078_PreviewTabRedline")<br />Onglet Aperçu (ligne rouge)
+![Onglet d’aperçu (redline)](../../extensibility/ux-guidelines/media/0303-078_previewtabredline.png "0303-078_PreviewTabRedline")<br />Onglet d’aperçu (redline)
 
-| Utilisez... | N’utilisez pas... |
+| Utiliser... | N’utilisez pas ... |
 | --- | --- |
-| ... partout où vous créez un aperçu provisoire et souhaitez que certains éléments correspondent à la couleur d’onglet d’aperçu actuelle. | ... pour tout type de document ou d’onglet qui n’est pas provisoire (version préliminaire). |
-| | ... pour toute interface utilisateur que vous ne souhaitez pas modifier automatiquement si l’interpréteur de commandes comporte une mise à jour de thème. |
+| ... partout où vous créez un aperçu provisoire et que vous souhaitez un élément correspondant à la couleur actuelle de l’onglet aperçu. | ... pour tout type de document ou d’onglet qui n’est pas provisoire (aperçu). |
+| | ... pour toute interface utilisateur que vous ne souhaitez pas modifier automatiquement si la coquille a une mise à jour thème. |
 
-**Onglet d’aperçu sélectionné**
+**Onglet de prévisualisation ciblé et sélectionné**
 
-![Onglet d’aperçu sélectionné](../../extensibility/ux-guidelines/media/0303-079_previewtabfocused.png "0303-079_PreviewTabFocused")<br />Onglet d’aperçu sélectionné
+![Onglet de prévisualisation ciblé et sélectionné](../../extensibility/ux-guidelines/media/0303-079_previewtabfocused.png "0303-079_PreviewTabFocused")<br />Onglet de prévisualisation ciblé et sélectionné
 
 | Élément | Nom du jeton : Category.color |
 | --- | --- |
 | Arrière-plan | `Environment.FileTabProvisionalSelectedActive` |
 | Premier plan (texte) | `Environment.FileTabProvisionalSelectedActiveForeground` |
-| Bordure | `Environment.FileTabProvisionalSelectedActiveBorder`<br />(Défini sur la même couleur que l’arrière-plan.) |
+| Bordure | `Environment.FileTabProvisionalSelectedActiveBorder`<br />(Définir à la même couleur que l’arrière-plan.) |
 | Bordure de document | `Environment.FileTabProvisionalSelectedActiveBorder` |
 
-**Inactif, onglet Aperçu sélectionné**
+**Onglet d’aperçu non focalisé et sélectionné**
 
-![Inactif, onglet Aperçu sélectionné](../../extensibility/ux-guidelines/media/0303-080_previewtabunfocused.png "0303-080_PreviewTabUnfocused")<br />Inactif, onglet Aperçu sélectionné
+![Onglet d’aperçu non focalisé et sélectionné](../../extensibility/ux-guidelines/media/0303-080_previewtabunfocused.png "0303-080_PreviewTabUnfocused")<br />Onglet d’aperçu non focalisé et sélectionné
 
 | Élément | Nom du jeton : Category.color |
 | --- | --- |
@@ -1798,39 +1798,39 @@ Chaque document ouvert possède un onglet dans le canal d’onglet de document q
 | Bordure | `Environment.FileTabProvisionalSelectedInactiveBorder` |
 | Bordure de document | `Environment.FileTabProvisionalSelectedInactiveBorder` |
 
-**Onglet Aperçu en arrière-plan : état par défaut**
+**Onglet de prévisualisation d’arrière-plan : état par défaut**
 
-![Onglet d’aperçu d’arrière-plan par défaut](../../extensibility/ux-guidelines/media/0303-081_previewbackgroundtab.png "0303-081_PreviewBackgroundTab")<br />Onglet d’aperçu d’arrière-plan par défaut
+![Onglet de prévisualisation d’arrière-plan par défaut](../../extensibility/ux-guidelines/media/0303-081_previewbackgroundtab.png "0303-081_PreviewBackgroundTab")<br />Onglet de prévisualisation d’arrière-plan par défaut
 
 | Élément | Nom du jeton : Category.color |
 | --- | --- |
 | Arrière-plan | `Environment.FileTabProvisionalInactive` |
 | Premier plan (texte) | `Environment.FileTabProvisionalInactiveForeground` |
-| Bordure | `Environment.FileTabProvisionalInactiveBorder`<br />(Défini sur la même couleur que l’arrière-plan.) |
+| Bordure | `Environment.FileTabProvisionalInactiveBorder`<br />(Définir à la même couleur que l’arrière-plan.) |
 
-**Onglet d’aperçu en arrière-plan : état sensitif**
+**Onglet d’aperçu d’arrière-plan : état de vol stationnaire**
 
-![Onglet d’aperçu en arrière-plan au pointage](../../extensibility/ux-guidelines/media/0303-082_previewbackgroundtabhover.png "0303-082_PreviewBackgroundTabHover")<br />Onglet d’aperçu en arrière-plan au pointage
+![Onglet d’aperçu d’arrière-plan sur le plan stationnaire](../../extensibility/ux-guidelines/media/0303-082_previewbackgroundtabhover.png "0303-082_PreviewBackgroundTabHover")<br />Onglet d’aperçu d’arrière-plan sur le plan stationnaire
 
 | Élément | Nom du jeton : Category.color |
 | --- | --- |
 | Arrière-plan | `Environment.FileTabProvisionalHover` |
 | Premier plan (texte) | `Environment.FileTabProvisionalHoverForeground` |
-| Bordure | `Environment.FileTabProvisionalHoverBorder`<br />(Défini sur la même couleur que l’arrière-plan.) |
+| Bordure | `Environment.FileTabProvisionalHoverBorder`<br />(Définir à la même couleur que l’arrière-plan.) |
 
 #### <a name="document-overflow-button"></a>Bouton de dépassement de capacité de document
-Le bouton de dépassement de capacité de document est présent si un ou plusieurs documents sont ouverts, que l’espace vertical défini dans la configuration actuelle suffise ou non pour loger tous les onglets de document. Le menu déroulant de dépassement de capacité de document, contrôlé par les couleurs de [menu de barre de commandes](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_CommandMenus) , affiche une liste de tous les documents ouverts, visibles et masqués, et le glyphe de dépassement de capacité change selon que tous les documents ouverts sont affichés ou non dans le canal d’onglets.
+Le bouton de dépassement de capacité de document est présent si un ou plusieurs documents sont ouverts, que l’espace vertical défini dans la configuration actuelle suffise ou non pour loger tous les onglets de document. Le menu de débordement de document, qui est contrôlé par les couleurs du menu de barre de [commande,](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_CommandMenus) affiche une liste de tous les documents ouverts, visibles et cachés, et le glyphe de débordement change selon que tous les documents ouverts sont affichés dans le canal d’onglet.
 
-![Bouton de dépassement de capacité de document (ligne rouge)](../../extensibility/ux-guidelines/media/0303-083_overflowredline.png "0303-083_OverflowRedline")<br />Bouton de dépassement de capacité de document (ligne rouge)
+![Bouton de débordement de document (redline)](../../extensibility/ux-guidelines/media/0303-083_overflowredline.png "0303-083_OverflowRedline")<br />Bouton de débordement de document (redline)
 
-| Utilisez... | N’utilisez pas... |
+| Utiliser... | N’utilisez pas ... |
 | --- | --- |
-| ... Lorsque vous créez un bouton de dépassement de capacité de document personnalisé. | ... pour une interface utilisateur qui n’est pas similaire à un bouton de dépassement de capacité. |
-| | ... pour les boutons de dépassement de capacité de barre de commandes. |
+| ... lorsque vous créez un bouton de débordement de document personnalisé. | ... pour l’interface utilisateur qui n’est pas similaire à un bouton de débordement. |
+| | ... pour les boutons de débordement de barre de commande. |
 
-**Bouton de dépassement de capacité de document : état par défaut**
+**Bouton de débordement de document : état par défaut**
 
-![Bouton de dépassement de capacité de document par défaut](../../extensibility/ux-guidelines/media/0303-084_overflow.png "0303-084_Overflow")<br />Bouton de dépassement de capacité de document par défaut
+![Bouton de débordement de document par défaut](../../extensibility/ux-guidelines/media/0303-084_overflow.png "0303-084_Overflow")<br />Bouton de débordement de document par défaut
 
 | Élément | Nom du jeton : Category.color |
 | --- | --- |
@@ -1838,7 +1838,7 @@ Le bouton de dépassement de capacité de document est présent si un ou plusieu
 | Premier plan (glyphe) | `Environment.DocWellOverflowButtonGlyph` |
 | Bordure | N/A |
 
-**Bouton de dépassement de capacité de document : état pointé**
+**Bouton de débordement de document : état de vol stationnaire**
 
 ![Bouton de dépassement de capacité de document au pointage](../../extensibility/ux-guidelines/media/0303-085_overflowhover.png "0303-085_OverflowHover")<br />Bouton de dépassement de capacité de document au pointage
 
@@ -1848,9 +1848,9 @@ Le bouton de dépassement de capacité de document est présent si un ou plusieu
 | Premier plan (glyphe) | `Environment.DocWellOverflowButtonMouseOverGlyph` |
 | Bordure | `Environment.DocWellOverflowButtonMouseOverBorder` |
 
-**Bouton de dépassement de capacité de document : état enfoncé**
+**Bouton de débordement de document : état pressé**
 
-![Bouton de dépassement de capacité de document en appui](../../extensibility/ux-guidelines/media/0303-086_overflowpressed.png "0303-086_OverflowPressed")<br />Bouton de dépassement de capacité de document en appui
+![Bouton de débordement de document sur la presse](../../extensibility/ux-guidelines/media/0303-086_overflowpressed.png "0303-086_OverflowPressed")<br />Bouton de débordement de document sur la presse
 
 | Élément | Nom du jeton : Category.color |
 | --- | --- |
@@ -1861,64 +1861,64 @@ Le bouton de dépassement de capacité de document est présent si un ou plusieu
 ### <a name="tagging"></a>Marquage
 Visual Studio prend en charge l’étiquetage, qui permet à un utilisateur de déclarer des mots clés pouvant faire l’objet d’une recherche à des fins de suivi. Par exemple, les chefs de projet et développeurs peuvent utiliser Team Foundation Server (TFS) pour étiqueter des éléments de travail. Les tableaux ci-dessous indiquent les noms de couleurs pour l’étiquette elle-même et le glyphe de l’icône de fermeture qui apparaît dans les états Pointage et Sélectionné.
 
-![Balisage dans Visual Studio (ligne rouge)](../../extensibility/ux-guidelines/media/0303-176_taggingredline.png "0303-176_TaggingRedline")<br />Balisage dans Visual Studio (ligne rouge)
+![Marquage dans Visual Studio (redline)](../../extensibility/ux-guidelines/media/0303-176_taggingredline.png "0303-176_TaggingRedline")<br />Marquage dans Visual Studio (redline)
 
-| Utilisez... | N’utilisez pas... |
+| Utiliser... | N’utilisez pas ... |
 | --- | --- |
-| ... pour l’interface utilisateur qui prend en charge le balisage. | ... pour tout autre type d’interface utilisateur. |
+| ... pour l’interface utilisateur qui prend en charge le marquage. | ... pour tout autre type d’interface utilisateur. |
 
 #### <a name="tags"></a>Balises
 
-**Tag : état par défaut**
+**Tag: état par défaut**
 
-![Balise par défaut](../../extensibility/ux-guidelines/media/0303-177_tag.png "0303-177_Tag")<br />Balise par défaut
+![Étiquette par défaut](../../extensibility/ux-guidelines/media/0303-177_tag.png "0303-177_Tag")<br />Étiquette par défaut
 
 | Élément | Nom du jeton : Category.color |
 | --- | --- |
 | Arrière-plan | `Tag.Background` |
 | Premier plan (texte) | `Tag.Background` |
 
-**Balise : état sensitif**
+**Tag: état de vol stationnaire**
 
-![Baliser au pointage](../../extensibility/ux-guidelines/media/0303-178_taghover.png "0303-178_TagHover")<br />Balise au pointage
+![Balise au pointage](../../extensibility/ux-guidelines/media/0303-178_taghover.png "0303-178_TagHover")<br />Balise au pointage
 
 | Élément | Nom du jeton : Category.color |
 | --- | --- |
 | Arrière-plan | `Tag.HoverBackground` |
 | Premier plan (texte) | `Tag.HoverBackgroundText` |
 
-**Étiquette : état appuyé**
+**Tag: état pressé**
 
-![Étiquette appuyée](../../extensibility/ux-guidelines/media/0303-179_tagpressed.png "0303-179_TagPressed")<br />Étiquette appuyée
+![Étiquette pressée](../../extensibility/ux-guidelines/media/0303-179_tagpressed.png "0303-179_TagPressed")<br />Étiquette pressée
 
 | Élément | Nom du jeton : Category.color |
 | --- | --- |
 | Arrière-plan | `Tag.PressedBackground` |
 | Premier plan (texte) | `Tag.PressedBackgroundText` |
 
-**Étiquette : état sélectionné**
+**Tag: état sélectionné**
 
-![Balise sélectionnée](../../extensibility/ux-guidelines/media/0303-180_tagselected.png "0303-180_TagSelected")<br />Balise sélectionnée
+![Tag sélectionné](../../extensibility/ux-guidelines/media/0303-180_tagselected.png "0303-180_TagSelected")<br />Tag sélectionné
 
 | Élément | Nom du jeton : Category.color |
 | --- | --- |
 | Arrière-plan | `Tag.SelectedBackground` |
 | Premier plan (texte) | `Tag.SelectedBackgroundText` |
 
-#### <a name="close-times-tag-glyph"></a>Glyphe de la balise de fermeture (&times;)
+#### <a name="close-times-tag-glyph"></a>Fermer&times;( ) tag glyph
 
-**Fermer (&times;) glyphe de balise : état par défaut**
+**Fermer&times;( ) tag glyph: état par défaut**
 
-![Glyphe de balise de fermeture par défaut (&times;)](../../extensibility/ux-guidelines/media/0303-181_tagglyph.png "0303-181_TagGlyph")<br />Glyphe de balise de fermeture par défaut (&times;)
+![Fermeture par&times;défaut ( ) tag glyph](../../extensibility/ux-guidelines/media/0303-181_tagglyph.png "0303-181_TagGlyph")<br />Fermeture par&times;défaut ( ) tag glyph
 
 | Élément | Nom du jeton : Category.color |
 | --- | --- |
 | Arrière-plan | N/A |
 | Premier plan (glyphe) | `Tag.TagHoverGlyph` |
 
-**Glyphe de la balise de fermeture (&times;) : état sensitif**
+**Fermer&times;( ) tag glyph: état de vol stationnaire**
 
-![Fermer (&times;) le glyphe de balise au pointage](../../extensibility/ux-guidelines/media/0303-182_tagglyphhover.png "0303-182_TagGlyphHover")<br />Fermer (&times;) le glyphe de balise au pointage
+![Fermer&times;( ) tag glyph sur le plan stationnaire](../../extensibility/ux-guidelines/media/0303-182_tagglyphhover.png "0303-182_TagGlyphHover")<br />Fermer&times;( ) tag glyph sur le plan stationnaire
 
 | Élément | Nom du jeton : Category.color |
 | --- | --- |
@@ -1926,9 +1926,9 @@ Visual Studio prend en charge l’étiquetage, qui permet à un utilisateur de d
 | Premier plan (glyphe) | `Tag.TagHoverGlyphHover` |
 | Bordure | `Tag.TagHoverGlyphHoverBorder` |
 
-**Fermer (&times;) glyphe de balise : état enfoncé**
+**Fermer&times;( ) tag glyph: état pressé**
 
-![Glyphe de balise de fermeture (&times;) enfoncé](../../extensibility/ux-guidelines/media/0303-183_tagglyphpressed.png "0303-183_TagGlyphPressed")<br />Glyphe de balise de fermeture (&times;) enfoncé
+![Pressed Close&times;( ) tag glyph](../../extensibility/ux-guidelines/media/0303-183_tagglyphpressed.png "0303-183_TagGlyphPressed")<br />Pressed Close&times;( ) tag glyph
 
 | Élément | Nom du jeton : Category.color |
 | --- | --- |
@@ -1936,18 +1936,18 @@ Visual Studio prend en charge l’étiquetage, qui permet à un utilisateur de d
 | Premier plan (glyphe) | `Tag.TagHoverGlyphPressed` |
 | Bordure | `Tag.TagHoverGlyphPressedBorder` |
 
-**Balise sélectionnée avec la fermeture (&times;) Glyph : état par défaut**
+**Tag sélectionné avec&times;Close ( ) glyph: état par défaut**
 
-![Étiquette sélectionnée par défaut avec le glyphe de fermeture (&times;)](../../extensibility/ux-guidelines/media/0303-184_tagselected.png "0303-184_TagSelected")<br />Étiquette sélectionnée par défaut avec le glyphe de fermeture (&times;)
+![Tag sélectionné par&times;défaut avec Close ( ) glyph](../../extensibility/ux-guidelines/media/0303-184_tagselected.png "0303-184_TagSelected")<br />Tag sélectionné par&times;défaut avec Close ( ) glyph
 
 | Élément | Nom du jeton : Category.color |
 | --- | --- |
 | Arrière-plan | N/A |
 | Premier plan (glyphe) | `Tag.TagSelectedGlyph` |
 
-**Balise sélectionnée avec la fermeture (&times;) Glyph : état sensitif**
+**Tag sélectionné avec&times;Close ( ) glyph: état de vol stationnaire**
 
-![Balise sélectionnée avec le glyphe de fermeture (&times;) au pointage](../../extensibility/ux-guidelines/media/0303-185_tagselectedhover.png "0303-185_TagSelectedHover")<br />Balise sélectionnée avec le glyphe de fermeture (&times;) au pointage
+![Tag sélectionné avec&times;Close ( ) glyph sur le plan stationnaire](../../extensibility/ux-guidelines/media/0303-185_tagselectedhover.png "0303-185_TagSelectedHover")<br />Tag sélectionné avec&times;Close ( ) glyph sur le plan stationnaire
 
 | Élément | Nom du jeton : Category.color |
 | --- | --- |
@@ -1955,9 +1955,9 @@ Visual Studio prend en charge l’étiquetage, qui permet à un utilisateur de d
 | Premier plan (glyphe) | `Tag.TagSelectedGlyphHover` |
 | Bordure | `Tag.TagSelectedGlyphHoverBorder` |
 
-**Balise sélectionnée avec la fermeture (&times;) Glyph : état enfoncé**
+**Tag sélectionné avec&times;Close ( ) glyph: état pressé**
 
-![Sélectionné, étiquette appuyée avec un glyphe de fermeture (&times;)](../../extensibility/ux-guidelines/media/0303-186_tagselectedpressed.png "0303-186_TagSelectedPressed")<br />Sélectionné, étiquette appuyée avec un glyphe de fermeture (&times;)
+![Sélectionné, étiquette pressée&times;avec Close ( ) glyph](../../extensibility/ux-guidelines/media/0303-186_tagselectedpressed.png "0303-186_TagSelectedPressed")<br />Sélectionné, étiquette pressée&times;avec Close ( ) glyph
 
 | Élément | Nom du jeton : Category.color |
 | --- | --- |
@@ -1966,88 +1966,88 @@ Visual Studio prend en charge l’étiquetage, qui permet à un utilisateur de d
 | Bordure | `Tag.TagSelectedGlyphPressedBorder` |
 
 ## <a name="tool-windows"></a>Fenêtres d’outil
-Il n’est pas nécessaire de répliquer les fenêtres outil, car elles sont fournies par l’environnement Visual Studio. Toutefois, vous pouvez décider d’exploiter les couleurs utilisées dans les fenêtres d’outil, afin que votre interface utilisateur apparaisse toujours cohérente avec cette partie de l’environnement Visual Studio.
+Il n’est pas nécessaire de reproduire les fenêtres des outils, car elles sont fournies par l’environnement Visual Studio. Toutefois, vous pouvez décider d’exploiter les couleurs utilisées dans les fenêtres d’outil, afin que votre interface utilisateur apparaisse toujours cohérente avec cette partie de l’environnement Visual Studio.
 
-![Fenêtre outil (ligne rouge)](../../extensibility/ux-guidelines/media/0303-087_toolwindowredline.png "0303-087_ToolWindowRedline")<br />Fenêtre outil (ligne rouge)
+![Fenêtre d’outil (redline)](../../extensibility/ux-guidelines/media/0303-087_toolwindowredline.png "0303-087_ToolWindowRedline")<br />Fenêtre d’outil (redline)
 
-| Utilisez... | N’utilisez pas... |
+| Utiliser... | N’utilisez pas ... |
 | --- | --- |
-| ... à tout endroit où vous créez une interface utilisateur pour laquelle vous souhaitez faire correspondre les fenêtres d’outils. | ... pour toute interface utilisateur que vous ne souhaitez pas modifier automatiquement si l’interpréteur de commandes comporte une mise à jour de thème. |
+| ... partout où vous créez l’interface utilisateur que vous souhaitez faire correspondre les fenêtres d’outils. | ... pour toute interface utilisateur que vous ne souhaitez pas modifier automatiquement si la coquille a une mise à jour thème. |
 
 ### <a name="tool-window-frame"></a>Cadre de fenêtre Outil
 Les fenêtres d’outil dans Visual Studio sont utilisées pour de nombreuses tâches différentes et peuvent exister dans différents états. Si une fenêtre Outil est ouverte, elle peut être affectée à l’un des quatre côtés de la zone de document. Les fenêtres d’outil peuvent également flotter en dehors de l’IDE, ce qui leur permet d’être repositionnées n’importe où sur l’écran de l’utilisateur. Les fenêtres flottantes se trouvent toujours par-dessus l’IDE. Enfin, les fenêtres d’outil peuvent être ancrées comme des fenêtres de document et elles apparaissent sous la forme d’un onglet dans la zone de configuration de document. Les fenêtres d’outil ancrées comme des fenêtres de document sont colorées en partie à l’aide des noms de jeton de fenêtre de document.
 
-![Frame de fenêtre outil (ligne rouge)](../../extensibility/ux-guidelines/media/0303-088_toolwindowframeredline.png "0303-088_ToolWindowFrameRedline")<br />Frame de fenêtre outil (ligne rouge)
+![Cadre de fenêtre d’outil (redline)](../../extensibility/ux-guidelines/media/0303-088_toolwindowframeredline.png "0303-088_ToolWindowFrameRedline")<br />Cadre de fenêtre d’outil (redline)
 
-| Utilisez... | N’utilisez pas... |
+| Utiliser... | N’utilisez pas ... |
 | --- | --- |
-| ...  à tout endroit où vous créez une interface utilisateur pour laquelle vous souhaitez faire correspondre les fenêtres d’outils. | ... pour toute interface utilisateur que vous ne souhaitez pas modifier automatiquement si l’interpréteur de commandes comporte une mise à jour de thème. |
+| ...  partout où vous créez l’interface utilisateur que vous souhaitez faire correspondre les fenêtres d’outils. | ... pour toute interface utilisateur que vous ne souhaitez pas modifier automatiquement si la coquille a une mise à jour thème. |
 
-**Fenêtre outil ancrée**
+**Fenêtre d’outil amarrée**
 
-![Fenêtre outil ancrée](../../extensibility/ux-guidelines/media/0303-089_toolwindowdocked.png "0303-089_ToolWindowDocked")<br />Fenêtre outil ancrée
+![Fenêtre d’outil amarrée](../../extensibility/ux-guidelines/media/0303-089_toolwindowdocked.png "0303-089_ToolWindowDocked")<br />Fenêtre d’outil amarrée
 
 | Élément | Nom du jeton : Category.color |
 | --- | --- |
 | Arrière-plan | `Environment.ToolWindowBackground` |
 | Bordure | `Environment.ToolWindowBorder` |
 
-**Flottant, fenêtre outil ciblée**
+**Fenêtre d’outil flottante et ciblée**
 
-![Flottant, fenêtre outil ciblée](../../extensibility/ux-guidelines/media/0303-090_toolwindowfocused.png "0303-090_ToolWindowFocused")<br />Flottant, fenêtre outil ciblée
+![Fenêtre d’outil flottante et ciblée](../../extensibility/ux-guidelines/media/0303-090_toolwindowfocused.png "0303-090_ToolWindowFocused")<br />Fenêtre d’outil flottante et ciblée
 
 | Élément | Nom du jeton : Category.color |
 | --- | --- |
 | Arrière-plan | `Environment.ToolWindowBackground` |
 | Bordure | `Environment.MainWindowActiveDefaultBorder` |
 
-**Fenêtre outil flottante, inactive**
+**Fenêtre flottante et non focalisée d’outil**
 
-![Fenêtre outil flottante, inactive](../../extensibility/ux-guidelines/media/0303-091_toolwindowunfocused.png "0303-091_ToolWindowUnfocused")<br />Fenêtre outil flottante, inactive
+![Fenêtre flottante et non focalisée d’outil](../../extensibility/ux-guidelines/media/0303-091_toolwindowunfocused.png "0303-091_ToolWindowUnfocused")<br />Fenêtre flottante et non focalisée d’outil
 
 | Élément | Nom du jeton : Category.color |
 | --- | --- |
 | Arrière-plan | `Environment.ToolWindowBackground` |
 | Bordure | `Environment.MainWindowInactiveBorder` |
 
-### <a name="toolbox-like-windows"></a>Windows de type boîte à outils
-La boîte à outils est l’une des fenêtres d’outils courantes les plus fréquemment utilisées dans Visual Studio. Il s’agit essentiellement d’un contrôle d’arborescence avec un thème spécial et un style appliqué.
+### <a name="toolbox-like-windows"></a>Fenêtres en ce qui ameillement
+La boîte à outils est l’une des fenêtres d’outils communes les plus fréquemment utilisées dans Visual Studio. Il s’agit essentiellement d’un contrôle des arbres avec un thème spécial et le style appliqué.
 
-![Fenêtre de type boîte à outils (ligne rouge)](../../extensibility/ux-guidelines/media/0303-189_toolboxredline.png "0303-189_ToolboxRedline")<br />Fenêtre de type boîte à outils (ligne rouge)
+![Fenêtre en type boîte à outils (redline)](../../extensibility/ux-guidelines/media/0303-189_toolboxredline.png "0303-189_ToolboxRedline")<br />Fenêtre en type boîte à outils (redline)
 
-| Utilisez... | N’utilisez pas... |
+| Utiliser... | N’utilisez pas ... |
 | --- | --- |
-| ... Quand vous concevez une fenêtre outil que vous voulez toujours cohérente avec la boîte à outils de l’interpréteur de commandes. | ... pour tout ce qui n’est pas similaire à l’interface utilisateur de la boîte à outils, ou si vous ne savez pas si votre interface utilisateur aura des problèmes si les couleurs de la boîte à outils de l’interpréteur de commandes changent. |
+| ... lorsque vous concevez une fenêtre d’outil que vous voulez toujours être compatible avec la boîte à outils shell. | ... pour tout ce qui n’est pas similaire à l’interface utilisateur boîte à outils, ou si vous n’êtes pas sûr si votre interface utilisateur aura des problèmes si les couleurs de boîte à outils shell changer. |
 
-**Nœuds de boîte à outils : état par défaut**
+**Noeuds de boîte à outils : état par défaut**
 
-![Nœud parent de boîte à outils par défaut](../../extensibility/ux-guidelines/media/0303-190_toolboxparentnode.png "0303-190_ToolboxParentNode")<br />Nœud parent de boîte à outils par défaut
+![Noeud parent par défaut de boîte à outils](../../extensibility/ux-guidelines/media/0303-190_toolboxparentnode.png "0303-190_ToolboxParentNode")<br />Noeud parent par défaut de boîte à outils
 
-![Nœud enfant de boîte à outils par défaut](../../extensibility/ux-guidelines/media/0303-191_toolboxchildnode.png "0303-191_ToolboxChildNode")<br />Nœud enfant de boîte à outils par défaut
+![Noeud d’enfant par défaut de boîte à outils](../../extensibility/ux-guidelines/media/0303-191_toolboxchildnode.png "0303-191_ToolboxChildNode")<br />Noeud d’enfant par défaut de boîte à outils
 
 | Élément | Nom du jeton : Category.color |
 | --- | --- |
-| Arrière-plan | `Environment.ToolboxContent`<br />En-têtes |
-| Arrière-plan | `Environment.ToolWindowBackground`<br />(Éléments individuels ou fenêtre entière si aucun contrôle n’est disponible) |
+| Arrière-plan | `Environment.ToolboxContent`<br />(Headings) |
+| Arrière-plan | `Environment.ToolWindowBackground`<br />(Articles individuels, ou fenêtre entière si aucun contrôle disponible) |
 | Bordure | None |
 | Premier plan (glyphe) | `Environment.ToolboxContent` |
 | Premier plan (texte) | `Environment.ToolboxContent` |
 
-**Nœuds de boîte à outils enfants : état sensitif**
+**Noeuds d’enfant de boîte à outils : état de vol stationnaire**
 
-![Nœud enfant de boîte à outils au survol](../../extensibility/ux-guidelines/media/0303-192_toolboxchildnodehover.png "0303-192_ToolboxChildNodeHover")<br />Nœud enfant de boîte à outils au pointage
+![Nœud enfant de boîte à outils au pointage](../../extensibility/ux-guidelines/media/0303-192_toolboxchildnodehover.png "0303-192_ToolboxChildNodeHover")<br />Nœud enfant de boîte à outils au pointage
 
 | Élément | Nom du jeton : Category.color |
 | --- | --- |
-| Arrière-plan | `Environment.ToolboxContentMouseOver`<br />(Éléments individuels uniquement) |
+| Arrière-plan | `Environment.ToolboxContentMouseOver`<br />(Articles individuels seulement) |
 | Bordure | None |
-| Premier plan (texte) | `Environment.ToolboxContentMouseOver`<br />(Éléments individuels uniquement) |
+| Premier plan (texte) | `Environment.ToolboxContentMouseOver`<br />(Articles individuels seulement) |
 
-**Nœuds de boîte à outils sélectionnés : état ciblé**
+**Nœuds de boîte à outils sélectionnés : état focalisé**
 
-![Nœud parent de boîte à outils sélectionné](../../extensibility/ux-guidelines/media/0303-193_toolboxparentnodefocused.png "0303-193_ToolboxParentNodeFocused")<br />Nœud parent de boîte à outils sélectionné
+![Nœud parent ciblé et sélectionné](../../extensibility/ux-guidelines/media/0303-193_toolboxparentnodefocused.png "0303-193_ToolboxParentNodeFocused")<br />Nœud parent ciblé et sélectionné
 
-![Nœud enfant de boîte à outils sélectionné et ciblé](../../extensibility/ux-guidelines/media/0303-194_toolboxchildnodefocused.png "0303-194_ToolboxChildNodeFocused")<br />Nœud enfant de boîte à outils sélectionné et ciblé
+![Nœud d’enfant ciblé et sélectionné](../../extensibility/ux-guidelines/media/0303-194_toolboxchildnodefocused.png "0303-194_ToolboxChildNodeFocused")<br />Nœud d’enfant ciblé et sélectionné
 
 | Élément | Nom du jeton : Category.color |
 | --- | --- |
@@ -2056,11 +2056,11 @@ La boîte à outils est l’une des fenêtres d’outils courantes les plus fré
 | Premier plan (glyphe) | `TreeView.SelectedItemActive`<br />À partir de la catégorie [Tree view](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_TreeView) |
 | Premier plan (texte) | `TreeView.SelectedItemActive`<br />À partir de la catégorie [Tree view](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_TreeView) |
 
-**Nœuds de boîte à outils sélectionnés : état sans focus**
+**Nœuds de boîte à outils sélectionnés : état non focalisé**
 
-![Nœud parent de boîte à outils sélectionné, sans focus](../../extensibility/ux-guidelines/media/0303-195_toolboxparentnodeunfocused.png "0303-195_ToolboxParentNodeUnfocused")<br />Nœud parent de boîte à outils sélectionné, sans focus
+![Nœud parent sélectionné et non focalisé](../../extensibility/ux-guidelines/media/0303-195_toolboxparentnodeunfocused.png "0303-195_ToolboxParentNodeUnfocused")<br />Nœud parent sélectionné et non focalisé
 
-![Nœud enfant de boîte à outils sélectionné, sans focus](../../extensibility/ux-guidelines/media/0303-196_toolboxchildnodeunfocused.png "0303-196_ToolboxChildNodeUnfocused")<br />Nœud enfant de boîte à outils sélectionné, sans focus
+![Nœud d’enfant sélectionné et non focalisé](../../extensibility/ux-guidelines/media/0303-196_toolboxchildnodeunfocused.png "0303-196_ToolboxChildNodeUnfocused")<br />Nœud d’enfant sélectionné et non focalisé
 
 | Élément | Nom du jeton : Category.color |
 | --- | --- |
@@ -2070,13 +2070,13 @@ La boîte à outils est l’une des fenêtres d’outils courantes les plus fré
 | Premier plan (texte) | `TreeView.SelectedItemInactive`<br />À partir de la catégorie [Tree view](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_TreeView) |
 
 ### <a name="tool-window-title-bar"></a>Barre de titre de fenêtre Outil
-La bordure de barre de titre n’est pas une véritable bordure, il s’agit d’une ligne épaisse en haut de la barre de titre. Il n’a pas de nom de jeton pour son état sans focus.
+La frontière de barre de titre n’est pas une vraie frontière, c’est une ligne épaisse à travers le haut de la barre de titre. Il n’a pas de nom symbolique pour son état non focalisé.
 
-![Barre de titre de la fenêtre outil (ligne rouge)](../../extensibility/ux-guidelines/media/0303-092_toolwindowtitlebarredline.png "0303-092_ToolWindowTitleBarRedline")<br />Barre de titre de la fenêtre outil (ligne rouge)
+![Barre de titre de fenêtre d’outil (redline)](../../extensibility/ux-guidelines/media/0303-092_toolwindowtitlebarredline.png "0303-092_ToolWindowTitleBarRedline")<br />Barre de titre de fenêtre d’outil (redline)
 
-| Utilisez... | N’utilisez pas... |
+| Utiliser... | N’utilisez pas ... |
 | --- | --- |
-| ... à tout endroit où vous créez une interface utilisateur pour laquelle vous souhaitez faire correspondre les fenêtres d’outils. | ... pour toute interface utilisateur que vous ne souhaitez pas modifier automatiquement si l’interpréteur de commandes comporte une mise à jour de thème. |
+| ... partout où vous créez l’interface utilisateur que vous souhaitez faire correspondre les fenêtres d’outils. | ... pour toute interface utilisateur que vous ne souhaitez pas modifier automatiquement si la coquille a une mise à jour thème. |
 
 **Barre de titre avec focus**
 
@@ -2084,9 +2084,9 @@ La bordure de barre de titre n’est pas une véritable bordure, il s’agit d�
 
 | Élément | Nom du jeton : Category.color |
 | --- | --- |
-| Arrière-plan | `Environment.TitleBarActiveGradientBegin`<br />(Les points de dégradé de ce jeton ne sont pas utilisés dans l’interface utilisateur à thème.) |
+| Arrière-plan | `Environment.TitleBarActiveGradientBegin`<br />(Gradient s’arrête pour ce jeton non utilisé dans l’interface utilisateur thématique.) |
 | Premier plan (texte) | `Environment.TitleBarActiveText` |
-| Bordure | `Environment.TitleBarActiveBorder`<br />(Défini sur la même couleur que l’arrière-plan.) |
+| Bordure | `Environment.TitleBarActiveBorder`<br />(Définir à la même couleur que l’arrière-plan.) |
 | Poignée de redimensionnement | `Environment.TitleBarDragHandleActive` |
 
 **Barre de titre sans focus**
@@ -2095,22 +2095,22 @@ La bordure de barre de titre n’est pas une véritable bordure, il s’agit d�
 
 | Élément | Nom du jeton : Category.color |
 | --- | --- |
-| Arrière-plan | `Environment.TitleBarInactiveGradientBegin`<br />(Les points de dégradé de ce jeton ne sont pas utilisés dans l’interface utilisateur à thème.) |
+| Arrière-plan | `Environment.TitleBarInactiveGradientBegin`<br />(Gradient s’arrête pour ce jeton non utilisé dans l’interface utilisateur thématique.) |
 | Premier plan (texte) | `Environment.TitleBarInactiveText` |
 | Bordure | N/A |
 | Poignée de redimensionnement | `Environment.TitleBarDragHandle` |
 
-#### <a name="tool-window-title-bar-buttons"></a>Boutons de la barre de titre de la fenêtre outil
-![Bouton de barre de titre (ligne rouge)](../../extensibility/ux-guidelines/media/0303-095_titlebarbuttonredline.png "0303-095_TitleBarButtonRedline")<br />Bouton de barre de titre (ligne rouge)
+#### <a name="tool-window-title-bar-buttons"></a>Boutons de barre de titre de fenêtre d’outil
+![Bouton de barre de titre (redline)](../../extensibility/ux-guidelines/media/0303-095_titlebarbuttonredline.png "0303-095_TitleBarButtonRedline")<br />Bouton de barre de titre (redline)
 
-| Utilisez... | N’utilisez pas... |
+| Utiliser... | N’utilisez pas ... |
 | --- | --- |
-| ... pour les boutons qui apparaissent dans l’interface utilisateur et qui utilisent des jetons de couleur des barres de titre de la fenêtre outil. | ... pour les boutons qui s’affichent dans d’autres emplacements. |
-| | ... dans toute combinaison d’arrière-plan/premier plan autre que celle spécifiée. |
+| ... pour les boutons qui apparaissent dans l’interface utilisateur qui utilise des jetons de couleur à partir des barres de titre de fenêtre d’outil. | ... pour les boutons qui apparaissent dans d’autres endroits. |
+| | ... dans n’importe quelle combinaison de fond/premier plan autre que spécifiée. |
 
-**Boutons de la barre de titre avec focus : état par défaut**
+**Boutons de barre de titre ciblés : état par défaut**
 
-![Boutons de barre de titre par défaut, avec focus](../../extensibility/ux-guidelines/media/0303-096_titlebarbuttonfocused.png "0303-096_TitleBarButtonFocused")<br />Boutons de barre de titre par défaut, avec focus
+![Boutons de barre de titre par défaut et ciblés](../../extensibility/ux-guidelines/media/0303-096_titlebarbuttonfocused.png "0303-096_TitleBarButtonFocused")<br />Boutons de barre de titre par défaut et ciblés
 
 | Élément | Nom du jeton : Category.color |
 | --- | --- |
@@ -2118,9 +2118,9 @@ La bordure de barre de titre n’est pas une véritable bordure, il s’agit d�
 | Premier plan (glyphe) | `Environment.ToolWindowButtonActiveGlyph` |
 | Bordure | N/A |
 
-**Boutons de la barre de titre sans Focus : état par défaut**
+**Boutons de barre de titre non focalisé : état par défaut**
 
-![Boutons de barre de titre par défaut, sans focus](../../extensibility/ux-guidelines/media/0303-097_titlebarbuttonunfocused.png "0303-097_TitleBarButtonUnfocused")<br />Boutons de barre de titre par défaut, sans focus
+![Boutons de barre de titre non focalisés par défaut](../../extensibility/ux-guidelines/media/0303-097_titlebarbuttonunfocused.png "0303-097_TitleBarButtonUnfocused")<br />Boutons de barre de titre non focalisés par défaut
 
 | Élément | Nom du jeton : Category.color |
 | --- | --- |
@@ -2128,9 +2128,9 @@ La bordure de barre de titre n’est pas une véritable bordure, il s’agit d�
 | Premier plan (glyphe) | `Environment.ToolWindowButtonInactiveGlyph` |
 | Bordure | N/A |
 
-**Boutons de la barre de titre ciblée : état du survol**
+**Boutons de barre de titre focalisés : état de vol stationnaire**
 
-![Boutons de barre de titre ciblés au survol](../../extensibility/ux-guidelines/media/0303-098_titlebarbuttonfocusedhover.png "0303-098_TitleBarButtonFocusedHover")<br />Boutons de barre de titre ciblés au survol
+![Boutons de barre de titre concentrés sur le plan stationnaire](../../extensibility/ux-guidelines/media/0303-098_titlebarbuttonfocusedhover.png "0303-098_TitleBarButtonFocusedHover")<br />Boutons de barre de titre concentrés sur le plan stationnaire
 
 | Élément | Nom du jeton : Category.color |
 | --- | --- |
@@ -2138,9 +2138,9 @@ La bordure de barre de titre n’est pas une véritable bordure, il s’agit d�
 | Premier plan (glyphe) | `Environment.ToolWindowButtonHoverActiveGlyph` |
 | Bordure | `Environment.ToolWindowButtonHoverActiveBorder` |
 
-**Boutons de la barre de titre sans Focus : état du survol**
+**Boutons de barre de titre non focalisé : état de vol stationnaire**
 
-![Boutons de barre de titre sans focus au pointage](../../extensibility/ux-guidelines/media/0303-099_titlebarbuttonunfocusedhover.png "0303-099_TitleBarButtonUnfocusedHover")<br />Boutons de barre de titre sans focus au pointage
+![Boutons de barre de titre non focalisé sur le plan stationnaire](../../extensibility/ux-guidelines/media/0303-099_titlebarbuttonunfocusedhover.png "0303-099_TitleBarButtonUnfocusedHover")<br />Boutons de barre de titre non focalisé sur le plan stationnaire
 
 | Élément | Nom du jeton : Category.color |
 | --- | --- |
@@ -2148,9 +2148,9 @@ La bordure de barre de titre n’est pas une véritable bordure, il s’agit d�
 | Premier plan (glyphe) | `Environment.ToolWindowButtonHoverInactiveGlyph` |
 | Bordure | `Environment.ToolWindowButtonHoverInactiveBorder` |
 
-**Boutons de la barre de titre ciblée : état enfoncé**
+**Boutons de barre de titre ciblés : état pressé**
 
-![Boutons de la barre de titre ciblée sur](../../extensibility/ux-guidelines/media/0303-100_titlebarbuttonfocusedpressed.png "0303-100_TitleBarButtonFocusedPressed")<br />Boutons de la barre de titre ciblée sur
+![Boutons de barre de titre concentrés sur la presse](../../extensibility/ux-guidelines/media/0303-100_titlebarbuttonfocusedpressed.png "0303-100_TitleBarButtonFocusedPressed")<br />Boutons de barre de titre concentrés sur la presse
 
 | Élément | Nom du jeton : Category.color |
 | --- | --- |
@@ -2158,9 +2158,9 @@ La bordure de barre de titre n’est pas une véritable bordure, il s’agit d�
 | Premier plan (glyphe) | `Environment.ToolWindowButtonDownActiveGlyph` |
 | Bordure | `Environment.ToolWindowButtonDownBorder` |
 
-**Boutons de la barre de titre sans Focus : état enfoncé**
+**Boutons de barre de titre non focalisé : état pressé**
 
-![Boutons de la barre de titre sans focus sur la pression](../../extensibility/ux-guidelines/media/0303-101_titlebarbuttonunfocusedpressed.png "0303-101_TitleBarButtonUnfocusedPressed")<br />Boutons de la barre de titre sans focus sur la pression
+![Boutons de barre de titre non focalisé sur la presse](../../extensibility/ux-guidelines/media/0303-101_titlebarbuttonunfocusedpressed.png "0303-101_TitleBarButtonUnfocusedPressed")<br />Boutons de barre de titre non focalisé sur la presse
 
 | Élément | Nom du jeton : Category.color |
 | --- | --- |
@@ -2169,76 +2169,76 @@ La bordure de barre de titre n’est pas une véritable bordure, il s’agit d�
 | Bordure | `Environment.ToolWindowButtonDownBorder` |
 
 ### <a name="tool-window-tabs"></a>Onglets de fenêtre Outil
-![Onglet de fenêtre outil (ligne rouge)](../../extensibility/ux-guidelines/media/0303-102_toolwindowtabredline.png "0303-102_ToolWindowTabRedline")<br />Onglet de fenêtre outil (ligne rouge)
+![Onglet de fenêtre d’outil (redline)](../../extensibility/ux-guidelines/media/0303-102_toolwindowtabredline.png "0303-102_ToolWindowTabRedline")<br />Onglet de fenêtre d’outil (redline)
 
-| Utilisez... | N’utilisez pas... |
+| Utiliser... | N’utilisez pas ... |
 | --- | --- |
-| ... à tout endroit où vous créez une interface utilisateur pour laquelle vous souhaitez faire correspondre les fenêtres d’outils. | ... pour toute interface utilisateur que vous ne souhaitez pas modifier automatiquement si l’interpréteur de commandes comporte une mise à jour de thème. |
+| ... partout où vous créez l’interface utilisateur que vous souhaitez faire correspondre les fenêtres d’outils. | ... pour toute interface utilisateur que vous ne souhaitez pas modifier automatiquement si la coquille a une mise à jour thème. |
 
-**Onglet de fenêtre outil sélectionné, avec focus**
+**Onglet de fenêtre Outil sélectionné, avec focus**
 
-![Onglet de fenêtre outil sélectionné, avec focus](../../extensibility/ux-guidelines/media/0303-103_toolwindowtabfocused.png "0303-103_ToolWindowTabFocused")<br />Onglet de fenêtre Outil sélectionné, avec focus
+![Onglet de fenêtre Outil sélectionné, avec focus](../../extensibility/ux-guidelines/media/0303-103_toolwindowtabfocused.png "0303-103_ToolWindowTabFocused")<br />Onglet de fenêtre Outil sélectionné, avec focus
 
 | Élément | Nom du jeton : Category.color |
 | --- | --- |
 | Arrière-plan | `Environment.ToolWindowTabSelectedTab` |
 | Premier plan (texte) | `Environment.ToolWindowTabSelectedActiveText` |
-| Bordure | `Environment.ToolWindowTabSelectedBorder`<br />(Défini sur la même couleur que l’arrière-plan.) |
+| Bordure | `Environment.ToolWindowTabSelectedBorder`<br />(Définir à la même couleur que l’arrière-plan.) |
 
-**Onglet de fenêtre outil sélectionné, sans focus**
+**Onglet de fenêtre Outil sélectionné, sans focus**
 
-![Onglet de fenêtre outil sélectionné, sans focus](../../extensibility/ux-guidelines/media/0303-104_toolwindowtabunfocused.png "0303-104_ToolWindowTabUnfocused")<br />Onglet de fenêtre Outil sélectionné, sans focus
+![Onglet de fenêtre Outil sélectionné, sans focus](../../extensibility/ux-guidelines/media/0303-104_toolwindowtabunfocused.png "0303-104_ToolWindowTabUnfocused")<br />Onglet de fenêtre Outil sélectionné, sans focus
 
 | Élément | Nom du jeton : Category.color |
 | --- | --- |
 | Arrière-plan | `Environment.ToolWindowTabSelectedTab` |
 | Premier plan (texte) | `Environment.ToolWindowTabSelectedText` |
-| Bordure | `Environment.ToolWindowTabSelectedBorder`<br />(Défini sur la même couleur que l’arrière-plan.) |
+| Bordure | `Environment.ToolWindowTabSelectedBorder`<br />(Définir à la même couleur que l’arrière-plan.) |
 
-**Onglet de fenêtre outil d’arrière-plan : état par défaut**
+**Onglet de fenêtre d’outil d’arrière-plan : état par défaut**
 
-![Onglet de fenêtre outil d’arrière-plan par défaut](../../extensibility/ux-guidelines/media/0303-105_toolwindowbackgroundtab.png "0303-105_ToolWindowBackgroundTab")<br />Onglet de fenêtre outil d’arrière-plan par défaut
+![Onglet de fenêtre d’outil d’arrière-plan par défaut](../../extensibility/ux-guidelines/media/0303-105_toolwindowbackgroundtab.png "0303-105_ToolWindowBackgroundTab")<br />Onglet de fenêtre d’outil d’arrière-plan par défaut
 
 | Élément | Nom du jeton : Category.color |
 | --- | --- |
-| Arrière-plan | `Environment.ToolWindowTabGradientBegin`<br />`Environment.ToolWindowTabGradientEnd`<br />(Les points de dégradé sont définis sur la même valeur de couleur dans Visual Studio 2013.) |
+| Arrière-plan | `Environment.ToolWindowTabGradientBegin`<br />`Environment.ToolWindowTabGradientEnd`<br />(Gradient s’arrête fixé à la même valeur de couleur dans Visual Studio 2013.) |
 | Premier plan (texte) | `Environment.ToolWindowTabText` |
 | Bordure | `Environment.ToolWindowTabBorder` |
 
-**Onglet de fenêtre outil d’arrière-plan : état sensitif**
+**Onglet de fenêtre d’outil de fond : état de vol stationnaire**
 
-![Onglet de fenêtre outil d’arrière-plan au pointage](../../extensibility/ux-guidelines/media/0303-106_toolwindowbackgroundtabhover.png "0303-106_ToolWindowBackgroundTabHover")<br />Onglet de fenêtre Outil d’arrière-plan au pointage
+![Onglet de fenêtre Outil d’arrière-plan au pointage](../../extensibility/ux-guidelines/media/0303-106_toolwindowbackgroundtabhover.png "0303-106_ToolWindowBackgroundTabHover")<br />Onglet de fenêtre Outil d’arrière-plan au pointage
 
 | Élément | Nom du jeton : Category.color |
 | --- | --- |
-| Arrière-plan | `Environment.ToolWindowTabMouseOverBackgroundBegin`<br />`Environment.ToolWindowTabMouseOverBackgroundEnd`<br />(Les points de dégradé sont définis sur la même valeur de couleur dans Visual Studio 2013.) |
+| Arrière-plan | `Environment.ToolWindowTabMouseOverBackgroundBegin`<br />`Environment.ToolWindowTabMouseOverBackgroundEnd`<br />(Gradient s’arrête fixé à la même valeur de couleur dans Visual Studio 2013.) |
 | Premier plan (texte) | `Environment.ToolWindowTabMouseOverText` |
-| Bordure | `Environment.ToolWindowTabMouseOverBorder`<br />(Défini sur la même couleur que l’arrière-plan.) |
+| Bordure | `Environment.ToolWindowTabMouseOverBorder`<br />(Définir à la même couleur que l’arrière-plan.) |
 
 ### <a name="auto-hide-tabs"></a>Onglets à masquage automatique
 
-![Masquer automatiquement les onglets (ligne rouge)](../../extensibility/ux-guidelines/media/0303-107_autohideredline.png "0303-107_AutoHideRedline") Masquer automatiquement les onglets (ligne rouge)
+![Onglets de cache automatique (redline)](../../extensibility/ux-guidelines/media/0303-107_autohideredline.png "0303-107_AutoHideRedline") Onglets de cache automatique (redline)
 
-| Utilisez... | N’utilisez pas... |
+| Utiliser... | N’utilisez pas ... |
 | --- | --- |
-| ... à tout endroit où vous créez une interface utilisateur pour laquelle vous souhaitez faire correspondre les onglets de fenêtre outil masqués automatiquement. | ... pour toute interface utilisateur que vous ne souhaitez pas modifier automatiquement si l’interpréteur de commandes comporte une mise à jour de thème. |
+| ... partout où vous créez l’interface utilisateur que vous souhaitez faire correspondre les onglets de fenêtre d’outil auto-cachés. | ... pour toute interface utilisateur que vous ne souhaitez pas modifier automatiquement si la coquille a une mise à jour thème. |
 
-**Masquer automatiquement les onglets : état par défaut**
+**Onglets de cache automatique : état par défaut**
 
-![Onglet masquage automatique par défaut](../../extensibility/ux-guidelines/media/0303-108_autohidetab.png "0303-108_AutoHideTab")<br />Onglet à masquage automatique par défaut
+![Onglet à masquage automatique par défaut](../../extensibility/ux-guidelines/media/0303-108_autohidetab.png "0303-108_AutoHideTab")<br />Onglet à masquage automatique par défaut
 
 | Élément | Nom du jeton : Category.color |
 | --- | --- |
-| Arrière-plan | `Environment.AutoHideTabBackgroundBegin`<br />(Les points de dégradé de ce jeton ne sont pas utilisés dans l’interface utilisateur à thème.) |
+| Arrière-plan | `Environment.AutoHideTabBackgroundBegin`<br />(Gradient s’arrête pour ce jeton non utilisé dans l’interface utilisateur thématique.) |
 | Premier plan (texte) | `Environment.AutoHideTabText` |
 | Bordure | `Environment.AutoHideTabBorder` |
 
-**Masquer automatiquement les onglets : état sensitif**
+**Onglets de cache automatique : état de vol stationnaire**
 
-![Masquer automatiquement l’onglet au pointage](../../extensibility/ux-guidelines/media/0303-109_autohidetabhover.png "0303-109_AutoHideTabHover")<br />Masquer automatiquement l'onglet au pointage
+![Masquer automatiquement l'onglet au pointage](../../extensibility/ux-guidelines/media/0303-109_autohidetabhover.png "0303-109_AutoHideTabHover")<br />Masquer automatiquement l'onglet au pointage
 
 | Élément | Nom du jeton : Category.color |
 | --- | --- |
-| Arrière-plan | `Environment.AutoHideTabMouseOverBackgroundBegin`<br />(Les points de dégradé de ce jeton ne sont pas utilisés dans l’interface utilisateur à thème.) |
+| Arrière-plan | `Environment.AutoHideTabMouseOverBackgroundBegin`<br />(Gradient s’arrête pour ce jeton non utilisé dans l’interface utilisateur thématique.) |
 | Premier plan (texte) | `Environment.AutoHideTabMouseOverText` |
 | Bordure | `Environment.AutoHideTabMouseOverBorder` |

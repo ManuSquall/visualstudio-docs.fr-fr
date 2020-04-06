@@ -1,5 +1,5 @@
 ---
-title: Élément SupportsLanguageDropDown (modèles Visual Studio) | Microsoft Docs
+title: SupportsLanguageDropDown Element (Visual Studio Templates) Microsoft Docs
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -9,22 +9,22 @@ helpviewer_keywords:
 - SupportsLanguageDropDown element [Visual Studio Templates]
 - <SupportsLanguageDropDown> element [Visual Studio Templates]
 ms.assetid: 641197d5-f724-4c06-bc47-2e22dad3fbfb
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d9b5727bd9aa09b05fc95d8f9f9b7913a6046b81
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 1230b493fe746a272cf4ca4cffe9d197afd8ba1b
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72719418"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80699466"
 ---
 # <a name="supportslanguagedropdown-element-visual-studio-templates"></a>SupportsLanguageDropDown, élément (modèles Visual Studio)
-Spécifie si le modèle d’élément Web est identique pour plusieurs langues et si l’option de **langue** est activée dans la boîte de dialogue **Ajouter un nouvel élément** .
+Précise si le modèle d’élément Web est identique pour plusieurs langues, et si **l’option de langue** est activée sur la boîte de dialogue **Add New Item.**
 
- \<VSTemplate > \<TemplateData > \<SupportsLanguageDropDown >
+ \<VSTemplate> \<TemplateData> \<supportsLanguageDropDown>
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -36,10 +36,10 @@ Spécifie si le modèle d’élément Web est identique pour plusieurs langues e
  Les sections suivantes décrivent des attributs, des éléments enfants et des éléments parents.
 
 ### <a name="attributes"></a>Attributs
- Aucun(e).
+ Aucun.
 
 ### <a name="child-elements"></a>Éléments enfants
- Aucun(e).
+ Aucun.
 
 ### <a name="parent-elements"></a>Éléments parents
 
@@ -50,17 +50,17 @@ Spécifie si le modèle d’élément Web est identique pour plusieurs langues e
 ## <a name="text-value"></a>Valeur texte
  Une valeur texte est requise.
 
- Le texte doit être `true` ou `false`, indiquant si l’option de **langue** est disponible ou non dans la boîte de dialogue **Ajouter un nouvel élément** .
+ Le texte doit `true` `false`être soit ou , indiquant si oui ou non **l’option de langue** est disponible à partir de la boîte de dialogue **Add New Item.**
 
 ## <a name="remarks"></a>Notes
  `SupportsLanguageDropDown` est un élément facultatif. La valeur par défaut est `false`.
 
- L’élément `SupportsLanguageDropDown` est disponible uniquement pour les modèles d’élément Web.
+ L’élément `SupportsLanguageDropDown` n’est disponible que pour les modèles d’objets Web.
 
- Si la valeur de cet élément est définie sur `true`, le modèle d’élément est identique pour tous les langages de programmation et l’option de **langue** est activée dans la boîte de dialogue **Ajouter un nouvel élément** . Cette option vous permet de choisir le langage de programmation du nouvel élément que vous souhaitez créer à partir du modèle.
+ Si la valeur de cet `true`élément est configuré, alors le modèle d’élément est identique pour tous les langages de programmation et **l’option de langue** est activée dans la boîte de dialogue **Add New Item.** Cette option vous permet de choisir le langage de programmation du nouvel élément que vous souhaitez créer à partir du modèle.
 
 ## <a name="example"></a>Exemple
- L’exemple suivant spécifie l’affichage de l’option de liste déroulante **langue** .
+ L’exemple suivant spécifie pour afficher **l’option de** baisse de langue.
 
 ```
 <VSTemplate Version="3.0.0" Type="Project"

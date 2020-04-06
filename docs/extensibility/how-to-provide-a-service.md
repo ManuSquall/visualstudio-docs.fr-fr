@@ -1,47 +1,47 @@
 ---
-title: 'Procédure : Fournir un Service | Microsoft Docs'
+title: 'Comment : Fournir un service Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - services, providing
 ms.assetid: 12bc1f12-47b1-44f6-b8db-862aa88d50d1
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a752e05e5a7c91e0e9f3d3c21f8542014a053245
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 60cae5e8048a0234114e1f9e7d97728e26ee40f3
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66324977"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80710774"
 ---
-# <a name="how-to-provide-a-service"></a>Procédure : Fournir un service
-Un VSPackage peut fournir des services qui les VSPackages autres peuvent utiliser. Pour fournir un service, un VSPackage doit inscrire le service avec Visual Studio et ajoutez le service.
+# <a name="how-to-provide-a-service"></a>Comment : Fournir un service
+Un VSPackage peut fournir des services que d’autres VSPackages peuvent utiliser. Pour fournir un service, un VSPackage doit enregistrer le service auprès de Visual Studio et ajouter le service.
 
- Le <xref:Microsoft.VisualStudio.Shell.Package> classe implémente à la fois <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider> et <xref:System.ComponentModel.Design.IServiceContainer>. <xref:System.ComponentModel.Design.IServiceContainer> contient des méthodes de rappel qui fournissent des services à la demande.
+ La <xref:Microsoft.VisualStudio.Shell.Package> classe met <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider> <xref:System.ComponentModel.Design.IServiceContainer>en œuvre à la fois et . <xref:System.ComponentModel.Design.IServiceContainer>contient des méthodes de rappel qui fournissent des services à la demande.
 
- Pour plus d’informations sur les services, consultez [Service essentials](../extensibility/internals/service-essentials.md) .
+ Pour plus d’informations sur les services, voir [Services essentiels](../extensibility/internals/service-essentials.md) .
 
 > [!NOTE]
-> Quand un VSPackage va être déchargé, Visual Studio attend jusqu'à ce que toutes les demandes pour les services fournis par un VSPackage ont été livrés. Il n’autorise pas les nouvelles demandes de ces services. Vous ne devez pas appeler explicitement la <xref:Microsoft.VisualStudio.Shell.Interop.IProfferService.RevokeService%2A> méthode révoquer un service lors du déchargement.
+> Lorsqu’un VSPackage est sur le point d’être déchargé, Visual Studio attend que toutes les demandes de services qu’un VSPackage fournit aient été livrées. Il n’autorise pas les nouvelles demandes de ces services. Vous ne devez <xref:Microsoft.VisualStudio.Shell.Interop.IProfferService.RevokeService%2A> pas explicitement appeler la méthode pour révoquer un service lors du déchargement.
 
-## <a name="implement-a-service"></a>Implémenter un service
+## <a name="implement-a-service"></a>Mettre en œuvre un service
 
-1. Créez un projet VSIX (**fichier** > **New** > **projet** > **Visual C#**  >  **Extensibilité** > **projet VSIX**).
+1. Créer un projet VSIX **(File** > **New** > **Project** > **Visual C '** > **Extensibility** > **VSIX Project**).
 
-2. Ajouter un VSPackage au projet. Sélectionnez le nœud de projet dans le **l’Explorateur de solutions** et cliquez sur **ajouter** > **un nouvel élément** > **éléments Visual c#**  >  **Extensibilité** > **Package Visual Studio**.
+2. Ajoutez un VSPackage au projet. Sélectionnez le nœud de projet dans la **Solution Explorer** et cliquez sur **Ajouter un** > **nouvel article** > **Visual CMD Items** > **Extensibility** > Visual Studio**Package**.
 
-3. Pour implémenter un service, vous devez créer trois types :
+3. Pour implémenter un service, vous devez créer trois types :
 
-   - Une interface qui décrit le service. La plupart de ces interfaces sont vides, autrement dit, elles n’ont aucuns méthodes.
+   - Une interface qui décrit le service. Beaucoup de ces interfaces sont vides, c’est-à-dire qu’elles n’ont pas de méthodes.
 
-   - Interface qui décrit l’interface de service. Cette interface inclut les méthodes à implémenter.
+   - Une interface qui décrit l’interface de service. Cette interface comprend les méthodes à implémenter.
 
-   - Une classe qui implémente le service et l’interface de service.
+   - Une classe qui implémente à la fois le service et l’interface de service.
 
-     L’exemple suivant montre une implémentation de base des trois types. Le constructeur de la classe de service doit définir le fournisseur de services.
+     L’exemple suivant montre une mise en œuvre de base des trois types. Le constructeur de la classe de service doit définir le fournisseur de services.
 
    ```csharp
    public class MyService : SMyService, IMyService
@@ -74,9 +74,9 @@ Un VSPackage peut fournir des services qui les VSPackages autres peuvent utilise
 
    ```
 
-### <a name="register-a-service"></a>Inscrire un service
+### <a name="register-a-service"></a>Enregistrer un service
 
-1. Pour inscrire un service, ajoutez le <xref:Microsoft.VisualStudio.Shell.ProvideServiceAttribute> au VSPackage qui fournit le service. Voici un exemple :
+1. Pour enregistrer un service, ajoutez le <xref:Microsoft.VisualStudio.Shell.ProvideServiceAttribute> VSPackage qui fournit le service. Voici un exemple :
 
     ```csharp
     [ProvideService(typeof(SMyService))]
@@ -86,14 +86,14 @@ Un VSPackage peut fournir des services qui les VSPackages autres peuvent utilise
     {. . . }
     ```
 
-     Inscrit cet attribut `SMyService` avec Visual Studio.
+     Cet attribut `SMyService` s’inscrit auprès de Visual Studio.
 
     > [!NOTE]
-    > Pour inscrire un service qui remplace un autre service portant le même nom, utilisez le <xref:Microsoft.VisualStudio.Shell.ProvideServiceOverrideAttribute>. Remarque qui substituent qu’une seule d’un service est autorisée.
+    > Pour enregistrer un service qui remplace un autre <xref:Microsoft.VisualStudio.Shell.ProvideServiceOverrideAttribute>service du même nom, utilisez le . Notez qu’un seul remplacement d’un service est autorisé.
 
 ### <a name="add-a-service"></a>Ajouter un service
 
-1. Dans l’initialiseur de VSPackage, ajoutez le service et une méthode de rappel pour créer les services. Voici la modification à apporter au <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A> méthode :
+1. Dans l’initialisateur VSPackage, ajoutez le service et ajoutez une méthode de rappel pour créer les services. Voici le changement à <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A> apporter à la méthode :
 
     ```csharp
     protected override void Initialize()
@@ -105,7 +105,7 @@ Un VSPackage peut fournir des services qui les VSPackages autres peuvent utilise
     }
     ```
 
-2. Implémentez la méthode de rappel qui doit créer et retourner le service ou null s’il ne peut pas être créé.
+2. Implémentez la méthode de rappel, qui doit créer et retourner le service, ou nulle si elle ne peut pas être créée.
 
     ```csharp
     private object CreateService(IServiceContainer container, Type serviceType)
@@ -117,9 +117,9 @@ Un VSPackage peut fournir des services qui les VSPackages autres peuvent utilise
     ```
 
     > [!NOTE]
-    > Visual Studio peut rejeter une demande de fournir un service. Il le fait si un autre package Visual Studio fournit déjà le service.
+    > Visual Studio peut rejeter une demande de fournir un service. Il le fait si un autre VSPackage fournit déjà le service.
 
-3. Vous pouvez maintenant obtenir le service et utiliser ses méthodes. L’exemple ci-dessous montre l’utilisation du service dans l’initialiseur, mais vous pouvez obtenir le service n’importe où que vous souhaitez utiliser le service.
+3. Maintenant, vous pouvez obtenir le service et utiliser ses méthodes. L’exemple ci-dessous montre l’utilisation du service dans l’initialisateur, mais vous pouvez obtenir le service n’importe où vous voulez utiliser le service.
 
     ```csharp
     protected override void Initialize()
@@ -136,9 +136,9 @@ Un VSPackage peut fournir des services qui les VSPackages autres peuvent utilise
     }
     ```
 
-     La valeur de `helloString` doit être « Hello ».
+     La valeur `helloString` de devrait être "Bonjour".
 
 ## <a name="see-also"></a>Voir aussi
-- [Guide pratique pour Bénéficiez d’un service](../extensibility/how-to-get-a-service.md)
-- [Utilisez et fournir des services](../extensibility/using-and-providing-services.md)
-- [Éléments fondamentaux du service](../extensibility/internals/service-essentials.md)
+- [Comment : Obtenir un service](../extensibility/how-to-get-a-service.md)
+- [Utiliser et fournir des services](../extensibility/using-and-providing-services.md)
+- [Essentiels de service](../extensibility/internals/service-essentials.md)

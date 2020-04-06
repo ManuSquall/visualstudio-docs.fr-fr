@@ -1,5 +1,5 @@
 ---
-title: Déterminer quel éditeur ouvre un fichier dans un projet | Microsoft Docs
+title: Déterminer quel éditeur ouvre un fichier dans un projet . Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -8,36 +8,36 @@ helpviewer_keywords:
 - project types, determining which editor opens a file
 - persistence, determining which editor opens a file
 ms.assetid: acbcf4d8-a53a-4727-9043-696a47369479
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8e54a922cfa36aad8c8c7e68e87012926a8ab715
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: af7037a3b4bfbae1801e802256af240d017d2789
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66351593"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80708654"
 ---
 # <a name="determine-which-editor-opens-a-file-in-a-project"></a>Déterminer quel éditeur ouvre un fichier dans un projet
-Lorsqu’un utilisateur ouvre un fichier dans un projet, l’environnement passe par un processus d’interrogation, finalement ouvrir l’éditeur approprié ou le concepteur pour ce fichier. La procédure initiale employée par l’environnement est identique pour les éditeurs standard et personnalisées. L’environnement utilise divers critères lors de l’interrogation de l’éditeur à utiliser pour ouvrir un fichier et le VSPackage doit coordonner avec l’environnement pendant ce processus.
+Lorsqu’un utilisateur ouvre un fichier dans un projet, l’environnement passe par un processus de sondage, ouvrant éventuellement l’éditeur ou le concepteur approprié pour ce fichier. La procédure initiale utilisée par l’environnement est la même pour les éditeurs standard et personnalisés. L’environnement utilise une variété de critères lors du sondage que l’éditeur utiliser pour ouvrir un fichier et le VSPackage doit coordonner avec l’environnement au cours de ce processus.
 
- Par exemple, lorsqu’un utilisateur sélectionne le **Open** commande à partir de la **fichier** menu et choisit ensuite *filename.rtf* (ou tout autre fichier avec un *.rtf*extension), l’environnement appelle le <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3.IsDocumentInProject%2A> implémentation pour chaque projet, mais finit par parcourir toutes les instances de projet dans la solution. Projets de retournent un jeu d’indicateurs qui identifient les revendications sur un document par priorité. À l’aide de la priorité la plus élevée, l’environnement appelle approprié <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3.OpenItem%2A> (méthode). Pour plus d’informations sur le processus d’interrogation, consultez [ajouter le projet et les modèles d’élément de projet](../../extensibility/internals/adding-project-and-project-item-templates.md).
+ Par exemple, lorsqu’un utilisateur sélectionne la commande **Open** dans le menu **Fichier,** puis choisit *filename.rtf* (ou <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3.IsDocumentInProject%2A> tout autre fichier avec une extension *.rtf),* l’environnement appelle la mise en œuvre de chaque projet, éventuellement à vélo à travers toutes les instances du projet dans la solution. Les projets renvoient un ensemble de drapeaux qui identifient les revendications sur un document par priorité. En utilisant la plus haute <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3.OpenItem%2A> priorité, l’environnement appelle la méthode appropriée. Pour plus d’informations sur le processus de vote, voir [ajouter des modèles de projet et d’élément de projet](../../extensibility/internals/adding-project-and-project-item-templates.md).
 
- Le projet fichiers divers de revendications de tous les fichiers qui ne sont pas demandées par d’autres projets. De cette façon, les éditeurs personnalisés peuvent ouvrir des documents avant de les ouvrir des éditeurs standard. Si un projet fichiers divers revendique un fichier, l’environnement appelle le <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A> méthode pour ouvrir le fichier avec un éditeur standard. L’environnement vérifie sa liste interne des éditeurs enregistrés pour l’une qui gère *.rtf* fichiers. Cette liste se trouve dans le Registre au niveau de la clé suivante :
+ Le projet Divers Files revendique tous les dossiers qui ne sont pas réclamés par d’autres projets. De cette façon, les éditeurs personnalisés peuvent ouvrir des documents avant que les éditeurs standard ne les ouvrent. Si un projet Miscellaneous Files revendique un <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A> fichier, l’environnement appelle la méthode pour ouvrir le fichier auprès d’un éditeur standard. L’environnement vérifie sa liste interne des éditeurs enregistrés pour celui qui gère les fichiers *.rtf.* Cette liste est située dans le registre à la clé suivante :
 
- **HKEY_LOCAL_MACHINE\Software\Microsoft\VisualStudio\\\<version > \Editors\\\<guid de fabrique d’éditeur > \Extensions**
+ **\\\<HKEY_LOCAL_MACHINE-Software-Microsoft-VisualStudio version>-Editors\\\<editor factory guid>-Extensions**
 
- L’environnement vérifie également les identificateurs de classe le **HKEY_CLASSES_ROOT\CLSID** clés pour tous les objets qui ont une sous-clé **DocObject**. Si l’extension de fichier s’y trouve, une version incorporée de l’application, tel que Microsoft Word, est créée sur place dans Visual Studio. Ces objets de document doivent être des fichiers composés qui implémentent le <xref:Microsoft.VisualStudio.OLE.Interop.IPersistStorage> interface ou l’objet doit implémenter le <xref:Microsoft.VisualStudio.Shell.Interop.IPersistFileFormat> interface.
+ L’environnement vérifie également les identifiants de classe dans la clé **HKEY_CLASSES_ROOT CLSID** pour tous les objets qui ont un **DocObject**sous-clé . Si l’extension de fichier y est trouvée, une version intégrée de l’application, comme Microsoft Word, est créée en place dans Visual Studio. Ces objets de document doivent <xref:Microsoft.VisualStudio.OLE.Interop.IPersistStorage> être des fichiers composés <xref:Microsoft.VisualStudio.Shell.Interop.IPersistFileFormat> qui implémentent l’interface, ou l’objet doit implémenter l’interface.
 
- S’il n’existe aucune fabrique d’éditeur pour *.rtf* des fichiers dans le Registre, puis l’environnement de recherche les **HKEY_CLASSES_ROOT\\.rtf** de clé et ouvre l’éditeur spécifié. Si l’extension de fichier est introuvable dans **HKEY_CLASSES_ROOT**, puis l’environnement utilise l’éditeur de texte Visual Studio core pour ouvrir le fichier, s’il s’agit d’un fichier texte.
+ S’il n’y a pas d’usine d’éditeur pour les fichiers *.rtf* dans le registre, alors l’environnement regarde dans la HKEY_CLASSES_ROOT clé **\\.rtf** et ouvre l’éditeur spécifié là-bas. Si l’extension de fichier n’est pas trouvée dans **HKEY_CLASSES_ROOT,** alors l’environnement utilise l’éditeur de texte de base visual Studio pour ouvrir le fichier, s’il s’agit d’un fichier texte.
 
- Si l’éditeur de texte principal échoue, ce qui se produit que si le fichier n’est pas un fichier texte, l’environnement utilise son éditeur binaire pour le fichier.
+ Si l’éditeur de texte de base échoue, ce qui se produit si le fichier n’est pas un fichier texte, alors l’environnement utilise son éditeur binaire pour le fichier.
 
- Si l’environnement ne trouve pas un éditeur pour le *.rtf* extension dans son Registre, il charge le VSPackage qui implémente cette fabrique d’éditeur. L’environnement appelle le <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.SetSite%2A> méthode sur le nouveau VSPackage s’affiche. Les appels de VSPackage `QueryService` pour `SID_SVsRegistorEditor`, en utilisant le <xref:Microsoft.VisualStudio.Shell.Interop.IVsRegisterEditors.RegisterEditor%2A> méthode pour inscrire la fabrique d’éditeur avec l’environnement.
+ Si l’environnement ne trouver un éditeur pour l’extension *.rtf* dans son registre, il charge le VSPackage qui met en œuvre cette usine d’éditeur. L’environnement <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.SetSite%2A> appelle la méthode sur le nouveau VSPackage. Le VSPackage `QueryService` `SID_SVsRegistorEditor`appelle à <xref:Microsoft.VisualStudio.Shell.Interop.IVsRegisterEditors.RegisterEditor%2A> , en utilisant la méthode pour enregistrer l’usine de rédacteur avec l’environnement.
 
- L’environnement est maintenant sa liste interne des éditeurs enregistrés pour trouver la fabrique d’éditeur qui vient d’être inscrit pour *.rtf* fichiers. L’environnement appelle votre implémentation de la <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory.CreateEditorInstance%2A> méthode, en passant le type de nom et le mode de fichier à créer.
+ L’environnement revérifier maintenant sa liste interne des éditeurs enregistrés pour trouver l’usine nouvellement enregistrée de rédacteur pour les fichiers *.rtf.* L’environnement appelle votre <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory.CreateEditorInstance%2A> mise en œuvre de la méthode, en passant dans le nom de fichier et le type de vue à créer.
 
 ## <a name="see-also"></a>Voir aussi
 - <xref:Microsoft.VisualStudio.Shell.Interop.IPersistFileFormat>

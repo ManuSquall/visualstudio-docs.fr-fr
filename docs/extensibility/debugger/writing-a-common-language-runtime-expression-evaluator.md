@@ -1,5 +1,5 @@
 ---
-title: Écriture d’un évaluateur de Common Language Runtime | Microsoft Docs
+title: Rédaction d’un évaluateur de l’expression de course linguistique commune (fr) Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -7,42 +7,42 @@ helpviewer_keywords:
 - expression evaluation, samples
 - debugging [Debugging SDK], expression evaluators tutorial
 ms.assetid: bd79d57f-8e0a-4e14-a417-0b1de28fa1b2
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c295fcd881ed5348842355846c37af95b725f17e
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 4e46eaef395a7c66792662b3c5d4b9fbad419dfb
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66348245"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80712322"
 ---
-# <a name="writing-a-common-language-runtime-expression-evaluator"></a>Écriture d’un évaluateur de common language runtime
+# <a name="writing-a-common-language-runtime-expression-evaluator"></a>Rédaction d’un évaluateur commun d’expression de course de langue
 > [!IMPORTANT]
-> Dans Visual Studio 2015, ce moyen d’implémenter des évaluateurs d’expression est déconseillée. Pour plus d’informations sur l’implémentation des évaluateurs d’expression CLR, consultez [évaluateurs d’expression CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) et [exemple d’évaluateur d’expression managé](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).
+> Dans Visual Studio 2015, cette façon de mettre en œuvre les évaluateurs d’expression est dépréciée. Pour obtenir de l’information sur la mise en œuvre des évaluateurs de l’expression CLR, consultez [les évaluateurs de l’expression CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) et [l’échantillon d’évaluateur d’expression gérée](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).
 
- L’évaluateur d’expression (EE) est la partie d’un moteur de débogage (dé) qui gère la syntaxe et sémantique du langage de programmation qui a généré le code en cours de débogage. Expressions doivent être évaluées dans le contexte d’un langage de programmation. Par exemple, dans certaines langues, l’expression « A + B » signifie « la somme de A et b. » Dans d’autres langages, la même expression peut signifier « A ou b ». Par conséquent, un distinct EE doit être écrites pour chaque langage de programmation qui génère du code de l’objet à déboguer dans l’IDE Visual Studio.
+ L’évaluateur d’expression (EE) fait partie d’un moteur de débogé (DE) qui gère la syntaxe et la sémantique du langage de programmation qui a produit le code étant débogé. Les expressions doivent être évaluées dans le contexte d’un langage de programmation. Par exemple, dans certaines langues, l’expression « A-B » signifie « la somme de A et B ». Dans d’autres langues, la même expression peut signifier « A ou B ». Ainsi, une EE séparée doit être écrite pour chaque langage de programmation qui génère du code d’objet à déboiser dans le Visual Studio IDE.
 
- Certains aspects du package de débogage de Visual Studio doivent interpréter le code dans le contexte du langage de programmation. Par exemple, lorsque l’exécution s’arrête à un point d’arrêt, toutes les expressions l’utilisateur a tapé dans un **espion** fenêtre doit être évaluée et affichée. L’utilisateur peut modifier la valeur d’une variable locale en tapant une expression dans une **espion** fenêtre ou dans le **immédiat** fenêtre.
+ Certains aspects de l’ensemble de déboiffage Visual Studio doivent interpréter le code dans le contexte du langage de programmation. Par exemple, lorsque l’exécution s’arrête à un point d’arrêt, toute expression que l’utilisateur a tapée dans une fenêtre **de montre** doit être évaluée et affichée. L’utilisateur peut modifier la valeur d’une variable locale en tapant une expression dans une fenêtre **de montre** ou dans la fenêtre **immédiate.**
 
-## <a name="in-this-section"></a>Dans cette section
- [Common language runtime et expression l’évaluation](../../extensibility/debugger/common-language-runtime-and-expression-evaluation.md) explique que lors de l’intégration de langage de programmation propriétaire dans l’IDE de Visual Studio, écrire un EE capable de l’évaluation des expressions dans le contexte de la langue de propriétaire vous permet de compiler en un langage intermédiaire de Microsoft (MSIL) sans avoir à écrire un moteur de débogage.
+## <a name="in-this-section"></a>Contenu de cette section
+ [Évaluation de l’heure d’exécution et de l’expression des langues courantes](../../extensibility/debugger/common-language-runtime-and-expression-evaluation.md) Explique que lorsque vous intègrez un langage de programmation propriétaire dans le Visual Studio IDE, l’écriture d’une EE capable d’évaluer les expressions dans le contexte de la langue propriétaire vous permet de compiler à un langage intermédiaire Microsoft (MSIL) sans écrire un moteur de déboissaille.
 
- [Architecture d’évaluateur d’expression](../../extensibility/debugger/expression-evaluator-architecture.md) explique comment implémenter les interfaces requises EE et appeler le fournisseur de symboles runtime du common language (SP) et les interfaces de classeurs.
+ [Architecture d’évaluateur d’expression](../../extensibility/debugger/expression-evaluator-architecture.md) Discute de la façon de mettre en œuvre les interfaces EE requises et d’appeler le fournisseur de symboles de temps d’exécution de langue commune (SP) et les interfaces de liant.
 
- [Inscrire un évaluateur d’expression](../../extensibility/debugger/registering-an-expression-evaluator.md) Notes que le EE doit s’inscrire en tant qu’une fabrique de classe avec le common language runtime et les environnements d’exécution de Visual Studio.
+ [Enregistrer un évaluateur d’expression](../../extensibility/debugger/registering-an-expression-evaluator.md) Note que l’EE doit s’inscrire comme une usine de classe avec à la fois le temps courant de la langue et visual Studio environnements runtime.
 
- [Implémenter un évaluateur d’expression](../../extensibility/debugger/implementing-an-expression-evaluator.md) décrit comment le processus d’évaluation d’expression inclut le moteur de débogage (DE), le fournisseur de symboles (SP), l’objet de classeur et l’évaluateur d’expression (EE).
+ [Mettre en œuvre un évaluateur d’expression](../../extensibility/debugger/implementing-an-expression-evaluator.md) Décrit comment le processus d’évaluation d’une expression comprend le moteur de débogé (DE), le fournisseur de symbole (SP), l’objet de liant, et l’évaluateur d’expression (EE).
 
- [Afficher les variables locales](../../extensibility/debugger/displaying-locals.md) décrit comment, lors de l’exécution s’arrête, le package de débogage appelle le DE pour obtenir la liste des variables locales et des arguments.
+ [Afficher les habitants](../../extensibility/debugger/displaying-locals.md) Décrit comment, lorsque l’exécution s’arrête, le paquet de débog appelle le DE pour obtenir une liste de variables et d’arguments locaux.
 
- [Évaluer une expression de la fenêtre Espion](../../extensibility/debugger/evaluating-a-watch-window-expression.md) comment le package de débogage de Visual Studio appelle le DE pour déterminer la valeur actuelle de chaque expression dans sa liste de suivi des Documents.
+ [Évaluer l’expression d’une fenêtre de montre](../../extensibility/debugger/evaluating-a-watch-window-expression.md) Documente comment le paquet de débopathie Visual Studio appelle le DE pour déterminer la valeur actuelle de chaque expression dans sa liste de surveillance.
 
- [Modifiez la valeur d’une variable locale](../../extensibility/debugger/changing-the-value-of-a-local.md) explique que modifier la valeur d’une variable locale, chaque ligne de la fenêtre variables locales est associé un objet qui fournit le nom, le type et la valeur actuelle d’une variable locale.
+ [Modifier la valeur d’un](../../extensibility/debugger/changing-the-value-of-a-local.md) Explique qu’en changeant la valeur d’un local, chaque ligne de la fenêtre Locals a un objet associé qui fournit le nom, le type et la valeur actuelle d’un local.
 
- [Implémenter des visualiseurs de type et les visionneuses personnalisées](../../extensibility/debugger/implementing-type-visualizers-and-custom-viewers.md) explique quelle interface doit être implémentée par le composant à prendre en charge les visualiseurs de type et les visionneuses personnalisées.
+ [Implémenter des visualisateurs de type et des téléspectateurs personnalisés](../../extensibility/debugger/implementing-type-visualizers-and-custom-viewers.md) Explique quelle interface doit être implémentée par quel composant pour prendre en charge les visualisateurs de type et les téléspectateurs personnalisés.
 
 ## <a name="see-also"></a>Voir aussi
- [Extensibilité du débogueur Visual Studio](../../extensibility/debugger/visual-studio-debugger-extensibility.md)
+ [Visual Studio débbugger extensibility](../../extensibility/debugger/visual-studio-debugger-extensibility.md)

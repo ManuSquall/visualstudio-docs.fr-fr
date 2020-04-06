@@ -1,5 +1,5 @@
 ---
-title: IEnumDebugCodeContexts2::Skip | Microsoft Docs
+title: IEnumDebugCodeContexts2::Skip Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IEnumDebugCodeContexts2::Skip
 ms.assetid: 3451a3eb-bf5b-4ec5-acc9-aa5a24363801
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 323410ec227b89b110db7b69d083e46381968109
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 6a1f63f5e3a6a84d6752707de5c81b4549085662
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66335010"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80717313"
 ---
 # <a name="ienumdebugcodecontexts2skip"></a>IEnumDebugCodeContexts2::Skip
-Ignore le nombre spécifié d’éléments.
+Ignore le nombre spécifié d'éléments.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -41,13 +41,13 @@ int Skip(
 
 ## <a name="parameters"></a>Paramètres
 `celt`\
-[in] Nombre d’éléments à ignorer.
+[in] Nombre d'éléments à ignorer.
 
 ## <a name="return-value"></a>Valeur de retour
- En cas de réussite, retourne `S_OK`. Retourne `S_FALSE` si `celt` est supérieur au nombre d’éléments restants ; sinon, retourne un code d’erreur.
+ En cas de réussite, retourne `S_OK`. `S_FALSE` Rendements `celt` si c’est supérieur au nombre d’éléments restants; autrement, renvoie un code d’erreur.
 
 ## <a name="remarks"></a>Notes
- Si `celt` spécifie une valeur supérieure au nombre d’éléments restants, l’énumération est définie à la fin et `S_FALSE` est retourné.
+ Si `celt` s’il spécifie une valeur supérieure au nombre d’éléments restants, le recensement est réglé à la fin et `S_FALSE` est retourné.
 
 ## <a name="see-also"></a>Voir aussi
 - [IEnumDebugCodeContexts2](../../../extensibility/debugger/reference/ienumdebugcodecontexts2.md)

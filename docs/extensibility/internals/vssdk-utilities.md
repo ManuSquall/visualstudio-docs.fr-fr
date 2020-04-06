@@ -1,24 +1,24 @@
 ---
-title: Utilitaires VSSDK | Microsoft Docs
+title: VSSDK Utilities - France Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - Architecture, Visual Studio Integration
 ms.assetid: a469208a-cb70-4d87-a79b-d2086fc4fae4
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e359d0541f1fde6c00ef94e4b96922d72a243ae0
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: d3faf0dad9d935fcc62637d387e41d599b7ec874
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66323471"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80703742"
 ---
 # <a name="vssdk-utilities"></a>Utilitaires VSSDK
-Les rubriques de cette section décrivent les outils fournis avec l’extensibilité Visual Studio.
+Les sujets de cette section décrivent les outils qui expédient avec le VSSDK.
 
 ## <a name="in-this-section"></a>Dans cette section
 
@@ -28,4 +28,4 @@ Les rubriques de cette section décrivent les outils fournis avec l’extensibil
 - [Outils de thèmes de couleurs](../../extensibility/internals/color-theming-tools.md)
 - [Outils de service d’image](../../extensibility/internals/image-service-tools.md)
 
-## <a name="related-sections"></a>Rubriques connexes
+## <a name="related-sections"></a>Sections connexes

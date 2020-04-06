@@ -1,5 +1,5 @@
 ---
-title: LAUNCH_FLAGS | Microsoft Docs
+title: LAUNCH_FLAGS Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - LAUNCH_FLAGS enumeration
 ms.assetid: f51aab02-d257-4302-bb79-b7d8ba9ac4e5
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 27975f4055a433891251c675bff3aacaaa9f6bb3
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: f18fb850641391f451f5eedb08b7130566dd4de3
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66339368"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80714715"
 ---
-# <a name="launchflags"></a>LAUNCH_FLAGS
-Spécifie les indicateurs de lancement du débogage.
+# <a name="launch_flags"></a>LAUNCH_FLAGS
+Spécifie les drapeaux de lancement de débogé.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -54,22 +54,22 @@ Lance le processus de débogage.
 Lance le processus sans le déboguer.
 
 `LAUNCH_ENABLE_ENC`\
-DÉCONSEILLÉ, N’UTILISEZ PAS.
+DÉPRÉCIÉS, NE PAS UTILISER.
 
 `LAUNCH_MERGE_ENV`\
 Lance le processus et fusionne l’environnement avec l’hôte de lancement.
 
 ## <a name="remarks"></a>Notes
-Ces valeurs sont passées en tant qu’argument à la [LaunchSuspended](../../../extensibility/debugger/reference/idebugenginelaunch2-launchsuspended.md) (méthode).
+Ces valeurs sont transmises comme un argument à la méthode [LaunchSuspended.](../../../extensibility/debugger/reference/idebugenginelaunch2-launchsuspended.md)
 
-Ces indicateurs peuvent être combinées avec un opérateur de bits `OR`.
+Ces drapeaux peuvent être combinés avec un peu plus. `OR`
 
-## <a name="requirements"></a>Configuration requise
-En-tête : msdbg.h
+## <a name="requirements"></a>Spécifications
+En-tête: msdbg.h
 
-Espace de noms : Microsoft.VisualStudio.Debugger.Interop
+Namespace: Microsoft.VisualStudio.Debugger.Interop
 
-Assembly : Microsoft.VisualStudio.Debugger.Interop.dll
+Assemblage: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>Voir aussi
 - [Énumérations](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)

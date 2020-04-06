@@ -1,5 +1,5 @@
 ---
-title: IDebugOutputStringEvent2 | Microsoft Docs
+title: IDebugOutputStringEvent2 - France Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugOutputStringEvent2 interface
 ms.assetid: 86596fd1-cecc-4813-8add-dc3d70068f9b
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d47fe2b329f9f2fb4adb57cdf6e2a6a871299d14
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: c47a920e99ece3fb0853e4e6a26dba3c8d0c45c2
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66311897"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80726022"
 ---
 # <a name="idebugoutputstringevent2"></a>IDebugOutputStringEvent2
-Cette interface est envoyée par le moteur de débogage (dé) pour le Gestionnaire de session de débogage (SDM) à une chaîne de sortie.
+Cette interface est envoyée par le moteur de débogé (DE) au gestionnaire de débogé de session (SDM) pour produire une chaîne.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -28,32 +28,32 @@ Cette interface est envoyée par le moteur de débogage (dé) pour le Gestionnai
 IDebugOutputStringEvent2 : IUnknown
 ```
 
-## <a name="notes-for-implementers"></a>Notes de publication pour les implémenteurs
- Le D’implémente cette interface pour envoyer une chaîne à la **sortie** fenêtre de l’IDE. Le [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) interface doit être implémentée sur le même objet que cette interface. Utilise le SDM [QueryInterface](/cpp/atl/queryinterface) pour accéder à la `IDebugEvent2` interface.
+## <a name="notes-for-implementers"></a>Notes pour les implémenteurs
+ Le DE implémente cette interface pour envoyer une chaîne à la fenêtre **de sortie** de l’IDE. [L’interface IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) doit être implémentée sur le même objet que cette interface. Le SDM utilise [QueryInterface](/cpp/atl/queryinterface) pour accéder à l’interface. `IDebugEvent2`
 
-## <a name="notes-for-callers"></a>Notes de publication pour les appelants
- Le DE crée et envoie cet objet d’événement pour envoyer une chaîne à la **sortie** fenêtre. L’événement est envoyé à l’aide de la [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) fonction de rappel qui est fournie par le SDM lorsqu’il est attaché au programme en cours de débogage.
+## <a name="notes-for-callers"></a>Notes pour les appelants
+ Le DE crée et envoie cet objet d’événement pour envoyer une chaîne à la fenêtre **de sortie.** L’événement est envoyé en utilisant la fonction de rappel [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) qui est fournie par le SDM lorsqu’il est attaché au programme en cours de débbugged.
 
 ## <a name="methods-in-vtable-order"></a>Méthodes dans l'ordre Vtable
- Le tableau suivant présente la méthode de `IDebugOutputStringEvent2`.
+ Le tableau suivant montre `IDebugOutputStringEvent2`la méthode de .
 
 |Méthode|Description|
 |------------|-----------------|
-|[GetString](../../../extensibility/debugger/reference/idebugoutputstringevent2-getstring.md)|Obtient le message peut être affichée.|
+|[GetString](../../../extensibility/debugger/reference/idebugoutputstringevent2-getstring.md)|Obtient le message displayable.|
 
 ## <a name="remarks"></a>Notes
- Par exemple, dans le code non managé, la chaîne de sortie peut provenir lorsque le programme débogué envoie une chaîne vers Win32 `OutputDebugString` (fonction). Cette chaîne est interceptée par l’Allemagne et envoyée au SDM comme le `IDebugOutputStringEvent2` événement.
+ Par exemple, dans le code non manipulé, la chaîne à produire peut provenir lorsque le programme `OutputDebugString` étant déboché envoie une chaîne à la fonction Win32. Cette chaîne est interceptée par le DE et envoyée `IDebugOutputStringEvent2` au SDM comme événement.
 
- Utilisez [IDebugMessageEvent2](../../../extensibility/debugger/reference/idebugmessageevent2.md) pour envoyer un message qui requiert une réponse de l’utilisateur.
+ Utilisez [IDebugMessageEvent2](../../../extensibility/debugger/reference/idebugmessageevent2.md) pour envoyer un message qui nécessite une réponse de l’utilisateur.
 
  Utilisez [IDebugErrorEvent2](../../../extensibility/debugger/reference/idebugerrorevent2.md) pour envoyer un message d’erreur qui ne nécessite pas de réponse.
 
-## <a name="requirements"></a>Configuration requise
- En-tête : msdbg.h
+## <a name="requirements"></a>Spécifications
+ En-tête: msdbg.h
 
- Espace de noms : Microsoft.VisualStudio.Debugger.Interop
+ Namespace: Microsoft.VisualStudio.Debugger.Interop
 
- Assembly : Microsoft.VisualStudio.Debugger.Interop.dll
+ Assemblage: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>Voir aussi
 - [IDebugMessageEvent2](../../../extensibility/debugger/reference/idebugmessageevent2.md)

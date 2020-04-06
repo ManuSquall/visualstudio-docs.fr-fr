@@ -1,5 +1,5 @@
 ---
-title: IDebugProperty2::EnumChildren | Microsoft Docs
+title: IDebugProperty2::EnumChildren ( Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProperty2::EnumChildren
 ms.assetid: cf79f666-65d1-417c-af7c-9271bac9a267
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 4aa7bbad1361053d86c59fabb58027c955856222
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: d6d3908c469b489eb16e4662f7515ea624825e3b
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66343117"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80721508"
 ---
 # <a name="idebugproperty2enumchildren"></a>IDebugProperty2::EnumChildren
 Récupère une liste des enfants de la propriété.
@@ -53,28 +53,28 @@ int EnumChildren ( 
 
 ## <a name="parameters"></a>Paramètres
 `dwFields`\
-[in] Une combinaison d’indicateurs de la [DEBUGPROP_INFO_FLAGS](../../../extensibility/debugger/reference/debugprop-info-flags.md) énumération qui spécifie les champs dans la liste énumérée [DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md) structures doivent être renseignés.
+[dans] Une combinaison de drapeaux de [l’énumération DEBUGPROP_INFO_FLAGS](../../../extensibility/debugger/reference/debugprop-info-flags.md) qui précise quels champs dans les structures [DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md) énumérées doivent être remplis.
 
 `dwRadix`\
-[in] Spécifie la base à utiliser dans toutes les informations numériques de mise en forme.
+[dans] Spécifie le radix à utiliser pour formater toute information numérique.
 
 `guidFilter`\
-[in] GUID du filtre utilisé avec le `dwAttribFilter` et `pszNameFilter` paramètres pour sélectionner les `DEBUG_PROPERTY_INFO` enfants doivent être énumérés. Par exemple, `guidFilterLocals` filtres pour les variables locales.
+[dans] GUID du filtre utilisé `dwAttribFilter` `pszNameFilter` avec le et `DEBUG_PROPERTY_INFO` les paramètres pour sélectionner les enfants qui doivent être énumérés. Par exemple, `guidFilterLocals` filtres pour les variables locales.
 
 `dwAttribFilter`\
-[in] Une combinaison d’indicateurs de la [DBG_ATTRIB_FLAGS](../../../extensibility/debugger/reference/dbg-attrib-flags.md) énumération qui spécifie le type d’objets à énumérer, par exemple `DBG_ATTRIB_METHOD` pour toutes les méthodes qui peuvent être des enfants de cette propriété. Utilisé en association avec le `guidFilter` et `pszNameFilter` paramètres.
+[dans] Une combinaison de drapeaux de [l’DBG_ATTRIB_FLAGS](../../../extensibility/debugger/reference/dbg-attrib-flags.md) énumération qui précise quel type d’objets `DBG_ATTRIB_METHOD` à énumérer, par exemple pour toutes les méthodes qui pourraient être des enfants de cette propriété. Utilisé en combinaison `guidFilter` `pszNameFilter` avec le et les paramètres.
 
 `pszNameFilter`\
-[in] Le nom du filtre utilisé avec le `guidFilter` et `dwAttribFilter` paramètres pour sélectionner les `DEBUG_PROPERTY_INFO` enfants doivent être énumérés. Par exemple, ce paramètre aux filtres de « MyX » pour tous les enfants avec le nom « MyX ».
+[dans] Le nom du filtre `guidFilter` utilisé `dwAttribFilter` avec le `DEBUG_PROPERTY_INFO` et les paramètres pour sélectionner les enfants à énumérer. Par exemple, définir ce paramètre aux filtres « MyX » pour tous les enfants sous le nom de « MyX ».
 
 `dwTimeout`\
-[in] Spécifie la durée maximale, en millisecondes, à attendre avant de retourner à partir de cette méthode. Utilisez `INFINITE` pour attendre indéfiniment.
+[dans] Spécifie le temps maximum, en millisecondes, d’attendre avant de revenir de cette méthode. Utilisez-le `INFINITE` pour attendre indéfiniment.
 
 `ppEnum`\
-[out] Retourne un [IEnumDebugPropertyInfo2](../../../extensibility/debugger/reference/ienumdebugpropertyinfo2.md) objet contenant une liste des propriétés enfants.
+[out] Retourne un objet [IEnumDebugPropertyInfo2](../../../extensibility/debugger/reference/ienumdebugpropertyinfo2.md) contenant une liste des propriétés de l’enfant.
 
 ## <a name="return-value"></a>Valeur de retour
- En cas de réussite, retourne `S_OK`; sinon retourne le code d’erreur.
+ En cas `S_OK`de succès, les retours; retourne autrement le code d’erreur.
 
 ## <a name="see-also"></a>Voir aussi
 - [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)

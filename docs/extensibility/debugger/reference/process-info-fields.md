@@ -1,5 +1,5 @@
 ---
-title: PROCESS_INFO_FIELDS | Microsoft Docs
+title: PROCESS_INFO_FIELDS Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - PROCESS_INFO_FIELDS enumeration
 ms.assetid: 0d9cc345-3d3a-44d8-ae15-a67acb97a828
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: fe9a1854fe5583d001e1dc156bfad5833fd1c08f
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: f81709e7146bbdef13daa3564bb784fd9c08d58e
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66309457"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80714009"
 ---
-# <a name="processinfofields"></a>PROCESS_INFO_FIELDS
-Spécifié le type d’informations à récupérer pour un processus.
+# <a name="process_info_fields"></a>PROCESS_INFO_FIELDS
+Précisez le type d’information à récupérer pour un processus.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -58,45 +58,45 @@ public enum enum_PROCESS_INFO_FIELDS { 
 
 ## <a name="fields"></a>Champs
  `PIF_FILE_NAME`\
- Initialize/utiliser le `bstrFileName` champ la [PROCESS_INFO](../../../extensibility/debugger/reference/process-info.md) structure.
+ Initialiser/utiliser `bstrFileName` le champ de la structure [PROCESS_INFO.](../../../extensibility/debugger/reference/process-info.md)
 
  `PIF_BASE_NAME`\
- Initialize/utiliser le `bstrBaseName` champ la `PROCESS_INFO` structure.
+ Initialiser/utiliser `bstrBaseName` le champ `PROCESS_INFO` de la structure.
 
  `PIF_TITLE`\
- Initialize/utiliser le `bstrTitle` champ la `PROCESS_INFO` structure.
+ Initialiser/utiliser `bstrTitle` le champ `PROCESS_INFO` de la structure.
 
  `PIF_PROCESS_ID`\
- Initialize/utiliser le `ProcessId` champ la `PROCESS_INFO` structure.
+ Initialiser/utiliser `ProcessId` le champ `PROCESS_INFO` de la structure.
 
  `PIF_SESSION_ID`\
- Initialize/utiliser le `dwSessionId` champ la `PROCESS_INFO` structure.
+ Initialiser/utiliser `dwSessionId` le champ `PROCESS_INFO` de la structure.
 
  `PIF_ATTACHED_SESSION_NAME`\
- Initialize/utiliser le `bstrAttachedSessionName` champ la `PROCESS_INFO` structure.
+ Initialiser/utiliser `bstrAttachedSessionName` le champ `PROCESS_INFO` de la structure.
 
  `PIF_CREATION_TIME`\
- Initialize/utiliser le `CreationTime` champ la `PROCESS_INFO` structure.
+ Initialiser/utiliser `CreationTime` le champ `PROCESS_INFO` de la structure.
 
  `PIF_FLAGS`\
- Initialize/utiliser le `Flags` champ la `PROCESS_INFO` structure.
+ Initialiser/utiliser `Flags` le champ `PROCESS_INFO` de la structure.
 
  `PIF_ALL`\
  Remplit tous les champs.
 
 ## <a name="remarks"></a>Notes
- Passé à la [GetInfo](../../../extensibility/debugger/reference/idebugprocess2-getinfo.md) méthode pour indiquer les champs de la [PROCESS_INFO](../../../extensibility/debugger/reference/process-info.md) structure doivent être initialisées.
+ Passé à la méthode [GetInfo](../../../extensibility/debugger/reference/idebugprocess2-getinfo.md) pour indiquer quels champs de la structure [PROCESS_INFO](../../../extensibility/debugger/reference/process-info.md) doivent être parasécés.
 
- Également utilisé dans `Fields` champ la `PROCESS_INFO` structure pour indiquer quels champs sont utilisés et valide.
+ Également utilisé `Fields` dans `PROCESS_INFO` le champ de la structure pour indiquer quels champs sont utilisés et valides.
 
- Ces indicateurs peuvent être combinées avec un opérateur de bits `OR`.
+ Ces drapeaux peuvent être combinés avec un peu plus. `OR`
 
-## <a name="requirements"></a>Configuration requise
- En-tête : msdbg.h
+## <a name="requirements"></a>Spécifications
+ En-tête: msdbg.h
 
- Espace de noms : Microsoft.VisualStudio.Debugger.Interop
+ Namespace: Microsoft.VisualStudio.Debugger.Interop
 
- Assembly : Microsoft.VisualStudio.Debugger.Interop.dll
+ Assemblage: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>Voir aussi
 - [Énumérations](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)

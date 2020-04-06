@@ -1,5 +1,5 @@
 ---
-title: IDebugSymbolProvider::GetAddressesFromContext | Microsoft Docs
+title: IDebugSymbolProvider::GetAddressesFromContext Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugSymbolProvider::GetAddressesFromContext method
 ms.assetid: a3124883-a255-4543-a5ec-e1c7a97beb69
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: ff38d2bd286c0a1ff82aafc3526936447be69056
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 7cf7599cf0fc37c16467c29c2b432f1f58b172fe
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66335216"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80719435"
 ---
 # <a name="idebugsymbolprovidergetaddressesfromcontext"></a>IDebugSymbolProvider::GetAddressesFromContext
-Cette méthode mappe un contexte de document dans un tableau d’adresses de débogage.
+Cette méthode cartographie un contexte de document dans un tableau d’adresses de débogé.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -47,24 +47,24 @@ int GetAddressesFromContext(
 
 ## <a name="parameters"></a>Paramètres
 `pDocContext`\
-[in] Le contexte du document.
+[dans] Le contexte du document.
 
 `fStatmentOnly`\
-[in] Si la valeur est TRUE, limite les adresses de débogage à une seule instruction.
+[dans] Si VRAI, limite les adresses de débogé à une seule instruction.
 
 `ppEnumBegAddresses`\
-[out] Retourne un énumérateur pour les adresses de débogage début associé à cette instruction ou de la ligne.
+[out] Retourne un enumérateur pour les adresses de débaçon de départ associées à cette déclaration ou ligne.
 
 `ppEnumEndAddresses`\
-[out] Retourne un [IEnumDebugAddresses](../../../extensibility/debugger/reference/ienumdebugaddresses.md) énumérateur pour les adresses de débogage fin associée à cette instruction ou de la ligne.
+[out] Retourne un enumérateur [IEnumDebugAddresses](../../../extensibility/debugger/reference/ienumdebugaddresses.md) pour les adresses de débaillement de fin associées à cette déclaration ou ligne.
 
 ## <a name="return-value"></a>Valeur de retour
- En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.
+ En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
 ## <a name="remarks"></a>Notes
- Un contexte de document indique généralement une plage de lignes sources. Cette méthode fournit le début et fin des adresses de débogage associés à ces lignes. Certains langages permettent aux instructions qui s’étendent sur plusieurs lignes, ou qui contient plusieurs instructions. Cette méthode fournit un indicateur pour limiter les adresses de débogage à une seule instruction.
+ Un contexte de document indique généralement une gamme de lignes sources. Cette méthode fournit les adresses de débaillement de démarrage et de fin associées à ces lignes. Certaines langues permettent des déclarations qui s’étendent sur plusieurs lignes, ou des lignes qui contiennent plus d’une instruction. Cette méthode fournit un drapeau pour limiter les adresses de débogé à une seule instruction.
 
- Il est possible qu’une seule instruction d’avoir plusieurs adresses de débogage, comme dans le cas des modèles.
+ Il est possible pour une seule déclaration d’avoir plusieurs adresses de débogé, comme dans le cas des modèles.
 
 ## <a name="see-also"></a>Voir aussi
 - [IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md)

@@ -1,5 +1,5 @@
 ---
-title: IDebugSymbolProvider::GetClassTypeByName | Microsoft Docs
+title: IDebugSymbolProvider::GetClassTypeByName (fr) Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugSymbolProvider::GetClassTypeByName method
 ms.assetid: 2c748909-51dc-49b7-b193-19f96fca1138
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: fc8ffe528b0cf416aa9319039be9be7223fe08f9
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: a1be0aaaf9e960b95deaa7c949993a950647ce89
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66335262"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80719416"
 ---
 # <a name="idebugsymbolprovidergetclasstypebyname"></a>IDebugSymbolProvider::GetClassTypeByName
-Cette méthode obtient le type de champ de classe représentant un nom de classe qualifié complet.
+Cette méthode obtient le type de champ de classe représentant un nom de classe entièrement qualifié.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -45,16 +45,16 @@ int GetClassTypeByName(
 
 ## <a name="parameters"></a>Paramètres
 `pszClassName`\
-[in] Le nom de classe.
+[dans] Le nom de classe.
 
 `nameMatch`\
-[in] Sélectionne le type de correspondance, par exemple, respect de la casse. Une valeur comprise entre le [NAME_MATCH](../../../extensibility/debugger/reference/name-match.md) énumération.
+[dans] Sélectionne le type de correspondance, par exemple, sensible aux cas. Une valeur de [l’énumération NAME_MATCH.](../../../extensibility/debugger/reference/name-match.md)
 
 `ppField`\
-[out] Retourne le type de classe, telle que représentée par le [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md) interface.
+[out] Retourne le type de classe tel que représenté par l’interface [IDebugClassField.](../../../extensibility/debugger/reference/idebugclassfield.md)
 
 ## <a name="return-value"></a>Valeur de retour
- En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.
+ En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
 ## <a name="see-also"></a>Voir aussi
 - [IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md)
