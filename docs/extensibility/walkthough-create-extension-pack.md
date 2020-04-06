@@ -1,41 +1,41 @@
 ---
-title: Créer un Pack d’Extension avec le modèle d’élément Extension Pack | Microsoft Docs
+title: Créez un pack d’extension avec le modèle d’élément de pack d’extension Microsoft Docs
 ms.date: 07/27/2018
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - extensions
 ms.assetid: 5388EEBA-211D-4114-8CD9-70C899919F7E
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: Meng
 ms.workload:
 - vssdk
-ms.openlocfilehash: 66a1c42340a88f0756d4fcc1f323433ab2640127
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: fa1c141e18a3870eaad4b155d816e30ee207f45d
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66322806"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80697746"
 ---
-# <a name="walkthrough-create-an-extension-pack"></a>Procédure pas à pas : Créer un pack d’extensions
+# <a name="walkthrough-create-an-extension-pack"></a>Procédure pas à pas : créer un pack d'extensions
 
-Un Pack d’Extension est un ensemble d’extensions qui peuvent être installés ensemble. Packs d’extension permettent de facilement partager vos extensions préférées avec d’autres utilisateurs ou de regrouper un ensemble d’extensions ensemble pour un scénario particulier.
+Un pack d’extension est un ensemble d’extensions qui peuvent être installées ensemble. Les packs d’extension vous permettent de partager facilement vos extensions préférées avec d’autres utilisateurs ou de regrouper un ensemble d’extensions pour un scénario particulier.
 
 ## <a name="prerequisites"></a>Prérequis
 
-À partir de Visual Studio 2015, le SDK Visual Studio est inclus comme fonctionnalité facultative dans le programme d’installation de Visual Studio. Vous pouvez également installer le kit SDK VS par la suite. Pour plus d’informations, consultez [l’installation de Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).
+À partir de Visual Studio 2015, le Visual Studio SDK est inclus comme une fonctionnalité facultative dans la configuration Visual Studio. Vous pouvez également installer le VS SDK plus tard. Pour plus d’informations, voir [Installer le Studio Visuel SDK](../extensibility/installing-the-visual-studio-sdk.md).
 
-La fonctionnalité de Pack d’Extension est disponible à partir de Visual Studio 15.8 Preview 2.
+La fonction Extension Pack est disponible à partir de Visual Studio 15.8 Preview 2.
 
-## <a name="create-an-extension-with-an-extension-pack-item-template"></a>Créer une extension avec un modèle d’élément de Pack d’Extension
+## <a name="create-an-extension-with-an-extension-pack-item-template"></a>Créez une extension avec un modèle d’élément Extension Pack
 
-Le modèle d’élément de Pack d’Extension crée un Pack d’Extension avec un ensemble d’extensions qui peuvent être installés ensemble.
+Le modèle d’élément Extension Pack crée un pack d’extension avec un ensemble d’extensions qui peuvent être installées ensemble.
 
-1. Dans le **nouveau projet** boîte de dialogue, recherchez « vsix » et sélectionnez **projet VSIX**. Pour **nom_projet**, tapez « Pack d’Extension de Test ». Sélectionnez **Créer**.
+1. Dans le dialogue du **nouveau projet,** recherchez «vsix» et sélectionnez **le projet VSIX**. Pour **le nom du projet**, tapez "Test Extension Pack". Sélectionnez **Create** (Créer).
 
-2. Dans le **l’Explorateur de solutions**, cliquez sur le nœud du projet et sélectionnez **ajouter** > **un nouvel élément**. Accédez à Visual c# **extensibilité** nœud et sélectionnez **Pack d’Extension**. Laissez le nom de fichier par défaut (ExtensionPack1.cs).
+2. Dans la **Solution Explorer**, cliquez à droite sur le nœud du projet et sélectionnez **Ajouter** > **un nouvel article**. Rendez-vous sur le nœud Visual **C’Extensibility** et sélectionnez **Extension Pack**. Laissez le nom du fichier par défaut (ExtensionPack1.cs).
 
-3. ExtensionPack1.vsext fichier est ajouté, qui contient le code suivant
+3. ExtensionPack1.vsext fichier est ajouté qui contient le code suivant
 
    ```json
    {
@@ -56,57 +56,57 @@ Le modèle d’élément de Pack d’Extension crée un Pack d’Extension avec 
    }
    ```
 
-4. Vous trouverez le vsixid de l’extension à inclure dans le Pack d’Extension sur le [Visual Studio Marketplace](https://marketplace.visualstudio.com/). Recherchez l’extension que vous souhaitez inclure, puis cliquez sur **ID de copie**. Vous pouvez mettre à jour existantes **vsixId** dans l’exemple ci-dessus de fichiers ou d’ajouter une autre extension à la liste.
+4. Le vsixid de l’extension à inclure dans le pack d’extension peut être trouvé sur le [marché Visual Studio](https://marketplace.visualstudio.com/). Trouvez l’extension que vous souhaitez inclure et cliquez sur **Copy ID**. Vous pouvez mettre à jour le **vsixId** existant dans le fichier ci-dessus ou ajouter une autre extension à la liste.
 
-    ![VsixId de copie à partir de la place de marché](media/vsixid-marketplace.png)
+    ![Copie VsixId de Marketplace](media/vsixid-marketplace.png)
 
-5. Générez le projet et télécharger votre extension à la place de marché. Consultez [publication d’une extension Visual Studio](../extensibility/walkthrough-publishing-a-visual-studio-extension.md).
+5. Construisez le projet et téléchargez votre extension sur le Marché. Voir [Publishing a Visual Studio extension](../extensibility/walkthrough-publishing-a-visual-studio-extension.md).
 
 > [!NOTE]
-> Un pack d’Extension permettre installer uniquement les extensions qui sont disponibles sur le [Visual Studio Marketplace](https://marketplace.visualstudio.com/) ou [galerie privée](../extensibility/how-to-create-an-atom-feed-for-a-private-gallery.md).
+> Un pack Extension ne peut installer que des extensions qui sont disponibles sur le [marché visual studio](https://marketplace.visualstudio.com/) ou la galerie [privée.](../extensibility/how-to-create-an-atom-feed-for-a-private-gallery.md)
 
-## <a name="install-the-extension-pack-from-the-visual-studio-marketplace"></a>Installer le Pack d’Extension à partir de la place de marché Visual Studio
+## <a name="install-the-extension-pack-from-the-visual-studio-marketplace"></a>Installer le pack d’extension à partir du marché visual Studio
 
-Maintenant que l’extension est publiée, installez-le dans Visual Studio et testez-le.
+Maintenant que l’extension est publiée, installez-la dans Visual Studio et testez-la là.
 
 ::: moniker range="vs-2017"
 
-1. Dans Visual Studio, sur le **outils** menu, cliquez sur **Extensions et mises à jour**.
+1. Dans Visual Studio, sur le menu **Tools,** cliquez sur **Extensions et Mises à jour**.
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-1. Dans Visual Studio, sur le **Extensions** menu, cliquez sur **Extensions managées**.
+1. Dans Visual Studio, sur le menu **Extensions,** cliquez sur **Managed Extensions**.
 
 ::: moniker-end
 
-2. Cliquez sur **Online** , puis recherchez « Pack d’Extension de Test ».
+2. Cliquez **en ligne,** puis recherchez "Test Extension Pack".
 
-3. Cliquez sur **Télécharger**. L’extension et sa liste d’extensions incluses dans le Pack d’Extension sera ensuite prévue pour l’installation.
+3. Cliquez sur **Télécharger**. L’extension et sa liste d’extensions incluses dans le pack d’extension seront ensuite prévues pour l’installation.
 
-4. Voici un exemple de vue de téléchargement de Pack d’Extension de la **gérer les Extensions** boîte de dialogue. Si vous préférez installer uniquement certaines des extensions incluses dans le pack d’Extension, vous pouvez modifier la liste des extensions dans **planifiée pour installer**.
+4. Vous trouverez ci-dessous un exemple de vue de téléchargement d’extension du dialogue **Manage Extensions.** Si vous préférez installer seulement quelques-unes des extensions incluses dans le pack Extension, vous pouvez modifier la liste d’extension dans **Scheduled For Install**.
 
-    ![Télécharger le Pack d’Extension à partir de la place de marché](media/vside-extensionpack.png)
+    ![Télécharger Extension Pack de Marketplace](media/vside-extensionpack.png)
 
-5. Pour terminer l’installation, fermez toutes les instances de Visual Studio.
+5. Pour compléter l’installation, fermez toutes les instances de Visual Studio.
 
 ## <a name="remove-the-extension"></a>Supprimer l’extension
 
-Pour supprimer l’extension de votre ordinateur :
+Pour supprimer l’extension de votre ordinateur :
 
 ::: moniker range="vs-2017"
 
-1. Dans Visual Studio, sur le **outils** menu, cliquez sur **Extensions et mises à jour**.
+1. Dans Visual Studio, sur le menu **Tools,** cliquez sur **Extensions et Mises à jour**.
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-1. Dans Visual Studio, sur le **Extensions** menu, cliquez sur **Extensions managées**.
+1. Dans Visual Studio, sur le menu **Extensions,** cliquez sur **Managed Extensions**.
 
 ::: moniker-end
 
-2. Sélectionnez **module d’Extension de Test** puis cliquez sur **désinstallation**. L’extension et sa liste d’extensions incluses dans le Pack d’Extension sera ensuite prévue pour la désinstallation.
+2. Sélectionnez **Test Extension Pack,** puis cliquez sur **Uninstall**. L’extension et sa liste d’extensions incluses dans le pack d’extension seront alors prévues pour un désinstallation.
 
-3. Pour terminer la désinstallation, fermez toutes les instances de Visual Studio.
+3. Pour compléter la désinstallation, fermez toutes les instances de Visual Studio.

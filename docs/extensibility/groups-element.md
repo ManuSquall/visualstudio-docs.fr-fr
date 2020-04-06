@@ -1,25 +1,25 @@
 ---
-title: Élément groupes | Microsoft Docs
+title: Éléments des groupes Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - VSCT XML schema elements, Groups
 - Groups element (VSCT XML schema)
 ms.assetid: 740ca4ec-79fa-4b98-8f9a-2a137f9f7f98
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f56ab0ea97026d6162a40e5be481e78904d75315
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: a6383c3c7a28f9aa7778fddcbfe36b237d21323f
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66342333"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80711172"
 ---
 # <a name="groups-element"></a>Élément Groups
-Contient des entrées qui définissent les groupes de commandes d’un VSPackage.
+Contient des entrées qui définissent les groupes de commande d’un VSPackage.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -37,20 +37,20 @@ Contient des entrées qui définissent les groupes de commandes d’un VSPackage
 
 |Attribut|Description|
 |---------------|-----------------|
-|Condition|Facultatif. Consultez [attributs conditionnels](../extensibility/vsct-xml-schema-conditional-attributes.md).|
+|Condition|facultatif. Voir [Attributs conditionnels](../extensibility/vsct-xml-schema-conditional-attributes.md).|
 
 ### <a name="child-elements"></a>Éléments enfants
 
 |Élément|Description|
 |-------------|-----------------|
-|[Élément de groupe](../extensibility/group-element.md)|Représente un groupe de commandes unique.|
-|[Élément Groups](../extensibility/groups-element.md)|Contient des entrées qui définissent les groupes de commandes d’un VSPackage.|
+|[élément Group](../extensibility/group-element.md)|Représente un seul groupe de commandement.|
+|[Élément des groupes](../extensibility/groups-element.md)|Contient des entrées qui définissent les groupes de commande d’un VSPackage.|
 
 ### <a name="parent-elements"></a>Éléments parents
 
 |Élément|Description|
 |-------------|-----------------|
-|[Élément Commands](../extensibility/commands-element.md)|Représente la collection de commandes sur la barre d’outils de VSPackage.|
+|[Élément de commande](../extensibility/commands-element.md)|Représente la collection de commandes sur la barre d’outils VSPackage.|
 
 ## <a name="example"></a>Exemple
 

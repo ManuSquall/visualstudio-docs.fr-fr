@@ -1,5 +1,5 @@
 ---
-title: THREADPROPERTY_FIELDS | Microsoft Docs
+title: THREADPROPERTY_FIELDS Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - THREADPROPERTY_FIELDS enumeration
 ms.assetid: 5b88acb9-03ea-4c29-a788-f0087dccbe23
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 9da7b995826b905af7faf6cac3fa0fc3d5ceba5e
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: b31c43187d1136f7a194c42749c430de6cd064a0
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66316205"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80713399"
 ---
-# <a name="threadpropertyfields"></a>THREADPROPERTY_FIELDS
-Spécifie les informations sur un thread doit être récupéré.
+# <a name="threadproperty_fields"></a>THREADPROPERTY_FIELDS
+Précise quelles informations sur un thread doivent être récupérées.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -54,39 +54,39 @@ public enum enum_THREADPROPERTY_FIELDS { 
 
 ## <a name="fields"></a>Champs
  `TPF_ID`\
- Initialize/utiliser le `dwThreadId` champ la [THREADPROPERTIES](../../../extensibility/debugger/reference/threadproperties.md) structure.
+ Initialiser/utiliser `dwThreadId` le champ de la structure [THREADPROPERTIES.](../../../extensibility/debugger/reference/threadproperties.md)
 
  `TPF_SUSPENDCOUNT`\
- Initialize/utiliser le `dwSuspendCount` champ la `THREADPROPERTIE`structure de S.
+ Initialiser/utiliser `dwSuspendCount` le champ `THREADPROPERTIE`de la structure S.
 
  `TPF_STATE`\
- Initialize/utiliser le `dwThreadState` champ la `THREADPROPERTIE`structure de S.
+ Initialiser/utiliser `dwThreadState` le champ `THREADPROPERTIE`de la structure S.
 
  `TPF_PRIORITY`\
- Initialize/utiliser le `bstrPriority` champ la `THREADPROPERTIE`structure de S.
+ Initialiser/utiliser `bstrPriority` le champ `THREADPROPERTIE`de la structure S.
 
  `TPF_NAME`\
- Initialize/utiliser le `bstrName` champ la `THREADPROPERTIE`structure de S.
+ Initialiser/utiliser `bstrName` le champ `THREADPROPERTIE`de la structure S.
 
  `TPF_LOCATION`\
- Initialize/utiliser le `bstrLocation` champ la `THREADPROPERTIE`structure de S.
+ Initialiser/utiliser `bstrLocation` le champ `THREADPROPERTIE`de la structure S.
 
  `TPF_ALLFIELDS`\
  Spécifie tous les champs.
 
 ## <a name="remarks"></a>Notes
- Ces valeurs sont passées en tant qu’argument à la [GetThreadProperties](../../../extensibility/debugger/reference/idebugthread2-getthreadproperties.md) méthode pour indiquer les champs de la [THREADPROPERTIES](../../../extensibility/debugger/reference/threadproperties.md) structure doivent être initialisées.
+ Ces valeurs sont transmises comme argument à la méthode [GetThreadProperties](../../../extensibility/debugger/reference/idebugthread2-getthreadproperties.md) pour indiquer quels domaines de la structure [THREADPROPERTIES](../../../extensibility/debugger/reference/threadproperties.md) doivent être parasésés.
 
- Ces valeurs sont également utilisées dans `dwFields` membre de la `THREADPROPERTIES` structure pour indiquer quels champs sont utilisés et valide.
+ Ces valeurs sont `dwFields` également utilisées `THREADPROPERTIES` dans le membre de la structure pour indiquer quels champs sont utilisés et valides.
 
- Ces indicateurs peuvent être combinées avec un opérateur de bits `OR`.
+ Ces drapeaux peuvent être combinés avec un peu plus. `OR`
 
-## <a name="requirements"></a>Configuration requise
- En-tête : msdbg.h
+## <a name="requirements"></a>Spécifications
+ En-tête: msdbg.h
 
- Espace de noms : Microsoft.VisualStudio.Debugger.Interop
+ Namespace: Microsoft.VisualStudio.Debugger.Interop
 
- Assembly : Microsoft.VisualStudio.Debugger.Interop.dll
+ Assemblage: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>Voir aussi
 - [Énumérations](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)

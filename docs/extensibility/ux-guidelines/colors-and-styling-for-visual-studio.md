@@ -3,17 +3,17 @@ title: Couleurs et style pour Visual Studio (fr) Microsoft Docs
 ms.date: 07/31/2017
 ms.topic: conceptual
 ms.assetid: 0e384ea1-4d9e-4307-8884-6e183900732c
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4ceea00a3fa77a9c1106f24f28ac1d5890437b41
-ms.sourcegitcommit: 95f26af1da51d4c83ae78adcb7372b32364d8a2b
+ms.openlocfilehash: 2c7d8a02de9331f268cd06ad35e19faab6494fe0
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79303154"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80699854"
 ---
 # <a name="colors-and-styling-for-visual-studio"></a>Couleurs et styles pour Visual Studio
 
@@ -269,7 +269,7 @@ protected override void Dispose(bool disposing)
 
 ## <a name="choosing-high-contrast-colors"></a><a name="BKMK_ChoosingHighContrastColors"></a>Choisir des couleurs High Contrast
 
-### <a name="overview"></a>Vue d’ensemble
+### <a name="overview"></a>Vue d'ensemble
 
 Windows utilise plusieurs thèmes à haut contraste au niveau du système qui augmentent le contraste de couleur du texte, des arrière-plans et des images, ce qui rend les éléments semblent plus distincts sur l’écran. Pour des raisons d’accessibilité, il est important que les éléments de l’interface Visual Studio répondent correctement lorsque les utilisateurs passent à un thème High Contrast.
 
@@ -332,7 +332,7 @@ Beaucoup d’éléments d’interface utilisateur communs ont déjà des couleur
 
 ## <a name="exposing-colors-for-end-users"></a><a name="BKMK_ExposingColorsForEndUsers"></a>Exposer les couleurs pour les utilisateurs finaux
 
-### <a name="overview"></a>Vue d’ensemble
+### <a name="overview"></a>Vue d'ensemble
 
 Parfois, vous souhaitez permettre à l’utilisateur final de personnaliser votre interface utilisateur, comme lorsque vous créez un éditeur de code ou une surface de conception. La façon la plus courante de le faire est d’utiliser le dialogue ** &gt; Tools Options.** Sauf si vous avez une interface utilisateur hautement spécialisée qui nécessite des contrôles spéciaux, la façon la plus simple de présenter la personnalisation est à travers la page **Fonts et Couleurs** dans la section **Environnement** du dialogue. Pour chaque élément que vous exposez pour la personnalisation, l’utilisateur peut choisir de changer la couleur du premier plan, la couleur de fond, ou les deux.
 

@@ -1,5 +1,5 @@
 ---
-title: Élément RequiredFrameworkVersion (modèles Visual Studio) | Microsoft Docs
+title: Élément requiredFrameworkVersion (Visual Studio Templates) Microsoft Docs
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -7,24 +7,24 @@ helpviewer_keywords:
 - <RequiredFrameworkVersion> (Visual Studio Templates)
 - RequiredFrameworkVersion (Visual Studio Templates)
 ms.assetid: 08a4f609-51a5-4723-b89f-99277fb18871
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0550fc1d286c04c61a1c0b2503326a002fde729e
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: 060ebc0633de67d93257e24c2dff24d2aa0970da
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66744757"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80701510"
 ---
 # <a name="requiredframeworkversion-element-visual-studio-templates"></a>Élément RequiredFrameworkVersion (modèles Visual Studio)
 
-Spécifie la version minimale du .NET Framework qui est requis par le modèle. Elle force le **Version du Framework cible** dropdown à afficher dans le **nouveau projet** boîte de dialogue. Le `RequiredFrameworkVersion` élément détermine également la valeur la plus basse disponible dans la liste déroulante.
+Spécifie la version minimale du cadre .NET qui est requis par le modèle. Il entraîne l’affichage de la **version-cadre cible** dans le dialogue **du nouveau projet.** L’élément `RequiredFrameworkVersion` détermine également la valeur la plus faible disponible dans le décrochage.
 
 > [!IMPORTANT]
-> À compter de Visual Studio 2017 version 15.6, la **Version du Framework cible** liste déroulante n’est plus un filtre pour les modèles affichés dans le **modèles** section de la **denouveauprojet** boîte de dialogue. Au lieu de cela, la liste déroulante fonctionne comme un sélecteur de framework pour le modèle sélectionné.
+> À partir de Visual Studio 2017 version 15.6, le dropdown **Target Framework Version** n’est plus un filtre pour les modèles affichés dans la section **Templates** du dialogue **New Project.** Au lieu de cela, le décrochage fonctionne comme un cueilleur-cadre pour le modèle sélectionné.
 
  \<VSTemplate> \<TemplateData> \<RequiredFrameworkVersion>
 
@@ -47,20 +47,20 @@ Spécifie la version minimale du .NET Framework qui est requis par le modèle. E
 
 |Élément|Description|
 |-------------|-----------------|
-|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Élément requis.<br /><br /> Définit la catégorie du modèle et comment il est affiché dans un le **nouveau projet** ou **ajouter un nouvel élément** boîte de dialogue.|
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Élément requis.<br /><br /> Catégorise le modèle et définit comment il est affiché dans le **nouveau projet** ou la boîte de dialogue Add **New Item.**|
 
 ## <a name="text-value"></a>Valeur texte
  Une valeur texte est requise.
 
- Le texte doit être le numéro de version minimale du .NET Framework qui est requise pour le modèle.
+ Le texte doit être le numéro de version minimum du cadre .NET qui est requis pour le modèle.
 
 ## <a name="remarks"></a>Notes
 
-`RequiredFrameworkVersion` est un élément facultatif. Utilisez cet élément uniquement si le modèle prend en charge une version minimale spécifique (et versions ultérieures, le cas échéant) du .NET Framework. Si vous spécifiez le `RequiredFrameworkVersion` élément et votre modèle ne prend en charge une version minimale spécifique du .NET Framework, le **Version du Framework cible** liste déroulante affiche lorsqu’il n’est pas applicable.
+`RequiredFrameworkVersion` est un élément facultatif. Utilisez cet élément uniquement si le modèle prend en charge une version minimale spécifique (et des versions ultérieures s’il y a eu) du cadre .NET. Si vous `RequiredFrameworkVersion` spécifiez l’élément et que votre modèle ne prend pas en charge une version minimale spécifique du cadre .NET, le dropdown de la **version cadre cible** s’affiche lorsqu’il n’est pas applicable.
 
 ## <a name="example"></a>Exemple
 
-L’exemple suivant illustre les métadonnées d’une norme [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] modèle de classe.
+L’exemple suivant illustre les métadonnées d’un modèle de classe standard. [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]
 
 ```xml
 <VSTemplate Type="Item" Version="3.0.0"
@@ -80,10 +80,10 @@ L’exemple suivant illustre les métadonnées d’une norme [!INCLUDE[csprcs](.
 </VSTemplate>
 ```
 
-Dans cet exemple, la version minimale du .NET Framework qui est requis par le modèle, représenté par `RequiredFrameworkVersion`, est 3.0. Un projet créé avec ce modèle peut cibler les versions du .NET Framework à partir de 3.0.
+Dans cet exemple, la version minimale du cadre .NET qui `RequiredFrameworkVersion`est requis par le modèle, représenté par , est de 3,0. Un projet créé avec ce modèle peut cibler les versions cadres .NET à partir de 3.0.
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Informations de référence sur les schémas de modèles Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
+- [Référence de schéma de modèle de studio visuel](../extensibility/visual-studio-template-schema-reference.md)
 - [Créer des modèles de projet et d’élément](../ide/creating-project-and-item-templates.md)
-- [Vue d’ensemble de ciblage du Framework](../ide/visual-studio-multi-targeting-overview.md)
+- [Vue d’ensemble du ciblage des frameworks](../ide/visual-studio-multi-targeting-overview.md)

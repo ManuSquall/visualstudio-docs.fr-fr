@@ -1,21 +1,21 @@
 ---
-title: IDebugTypeFieldBuilder | Microsoft Docs
+title: IDebugTypeFieldBuilder - France Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - IDebugTypeFieldBuilder interface
 ms.assetid: 2dfed0be-6972-4bec-baec-f0b78df9ef97
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 165bbf6326bee67718c4c2ae44933d1b21b8252c
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 81532e2616eefb9cb584eae1a70371fd2f963be1
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66319795"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80718394"
 ---
 # <a name="idebugtypefieldbuilder"></a>IDebugTypeFieldBuilder
 Représente la capacité de créer un champ qui représente un type.
@@ -26,20 +26,20 @@ Représente la capacité de créer un champ qui représente un type.
 IDebugTypeFieldBuilder : IUnknown
 ```
 
-## <a name="notes-for-callers"></a>Notes de publication pour les appelants
- Cette interface est obtenue à partir du fournisseur de symboles.
+## <a name="notes-for-callers"></a>Notes pour les appelants
+ Cette interface est obtenue auprès du fournisseur de symboles.
 
 ## <a name="methods"></a>Méthodes
- Cette interface implémente les méthodes suivantes :
+ Cette interface met en œuvre les méthodes suivantes :
 
 |Méthode|Description|
 |------------|-----------------|
 |[CreatePrimitive](../../../extensibility/debugger/reference/idebugtypefieldbuilder-createprimitive.md)|Crée un objet qui représente un type primitif.|
-|[CreatePointerToType](../../../extensibility/debugger/reference/idebugtypefieldbuilder-createpointertotype.md)|Crée un pointeur vers le type spécifié.|
+|[CreatePointerToType](../../../extensibility/debugger/reference/idebugtypefieldbuilder-createpointertotype.md)|Crée un pointeur pour le type spécifié.|
 
-## <a name="requirements"></a>Configuration requise
- En-tête : SH.h
+## <a name="requirements"></a>Spécifications
+ En-tête: Sh.h
 
- Espace de noms : Microsoft.VisualStudio.Debugger.Interop
+ Namespace: Microsoft.VisualStudio.Debugger.Interop
 
- Assembly : Microsoft.VisualStudio.Debugger.Interop.dll
+ Assemblage: Microsoft.VisualStudio.Debugger.Interop.dll

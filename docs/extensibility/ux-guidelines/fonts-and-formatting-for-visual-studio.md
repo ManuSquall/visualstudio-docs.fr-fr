@@ -3,17 +3,17 @@ title: Fonts et formatage pour Visual Studio (fr) Microsoft Docs
 ms.date: 04/26/2017
 ms.topic: conceptual
 ms.assetid: c3c3df69-83b4-4fd0-b5b1-e18c33f39376
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8634ab15a10b59fc21de390e0633d6d91793616d
-ms.sourcegitcommit: 95f26af1da51d4c83ae78adcb7372b32364d8a2b
+ms.openlocfilehash: bf1550026fb5c9d9395d931f21d48bc4739ea8c3
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79303133"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80698578"
 ---
 # <a name="fonts-and-formatting-for-visual-studio"></a>Polices et mise en forme pour Visual Studio
 ## <a name="the-environment-font"></a><a name="BKMK_TheEnvironmentFont"></a>La police de l’environnement
@@ -424,7 +424,7 @@ protected static void SetFontStyles(Control topControl, Control parent, Font ref
 
 |||
 |-|-|
-|**Usage :**<br /><br /> - Plus grand cap dans les dialogues signature<br />- Direction du rapport principal<br /><br /> **faire:**<br /><br /> - Utiliser l’affaire de la peine<br />- Utilisez toujours le poids léger<br /><br /> **Ne pas:**<br /><br /> - Utilisation de l’interface utilisateur autre que l’interface utilisateur signature telle que La page De démarrage<br />- Audacieux, italique ou gras italique<br />- Utilisation pour le texte du corps<br />- Utilisation dans les fenêtres d’outils|**Apparaît comme:** 28 pt Segoe UI Light<br /><br /> **Exemple visuel :**<br /><br /> ![Exemple de police 310% Environnement &#43; tête de lumière](../../extensibility/ux-guidelines/media/0202-a_ef310.png "0202-a_EF310")|
+|**Utilisation:**<br /><br /> - Plus grand cap dans les dialogues signature<br />- Direction du rapport principal<br /><br /> **faire:**<br /><br /> - Utiliser l’affaire de la peine<br />- Utilisez toujours le poids léger<br /><br /> **Ne pas:**<br /><br /> - Utilisation de l’interface utilisateur autre que l’interface utilisateur signature telle que La page De démarrage<br />- Audacieux, italique ou gras italique<br />- Utilisation pour le texte du corps<br />- Utilisation dans les fenêtres d’outils|**Apparaît comme:** 28 pt Segoe UI Light<br /><br /> **Exemple visuel :**<br /><br /> ![Exemple de police 310% Environnement &#43; tête de lumière](../../extensibility/ux-guidelines/media/0202-a_ef310.png "0202-a_EF310")|
 
 ::: moniker-end
 
@@ -432,7 +432,7 @@ protected static void SetFontStyles(Control topControl, Control parent, Font ref
 
 |||
 |-|-|
-|**Usage :**<br /><br /> - Plus grand cap dans les dialogues signature<br />- Direction du rapport principal<br /><br /> **faire:**<br /><br /> - Utiliser l’affaire de la peine<br />- Utilisez toujours le poids léger<br /><br /> **Ne pas:**<br /><br /> - Utilisation de l’interface utilisateur autre que l’interface utilisateur signature<br />- Audacieux, italique ou gras italique<br />- Utilisation pour le texte du corps<br />- Utilisation dans les fenêtres d’outils|**Apparaît comme:** 28 pt Segoe UI Light<br /><br /> **Exemple visuel :**<br /><br /> ![Exemple de police 310% Environnement &#43; tête de lumière](../../extensibility/ux-guidelines/media/0202-a_ef310.png "0202-a_EF310")|
+|**Utilisation:**<br /><br /> - Plus grand cap dans les dialogues signature<br />- Direction du rapport principal<br /><br /> **faire:**<br /><br /> - Utiliser l’affaire de la peine<br />- Utilisez toujours le poids léger<br /><br /> **Ne pas:**<br /><br /> - Utilisation de l’interface utilisateur autre que l’interface utilisateur signature<br />- Audacieux, italique ou gras italique<br />- Utilisation pour le texte du corps<br />- Utilisation dans les fenêtres d’outils|**Apparaît comme:** 28 pt Segoe UI Light<br /><br /> **Exemple visuel :**<br /><br /> ![Exemple de police 310% Environnement &#43; tête de lumière](../../extensibility/ux-guidelines/media/0202-a_ef310.png "0202-a_EF310")|
 
 ::: moniker-end
 
@@ -440,31 +440,31 @@ protected static void SetFontStyles(Control topControl, Control parent, Font ref
 
 |||
 |-|-|
-|**Usage :**<br /><br /> - Sous-titrages<br />- Titres en petits et moyens dialogues<br /><br /> **faire:**<br /><br /> - Utiliser l’affaire de la peine<br />- Utilisez toujours le poids Semilight<br /><br /> **Ne pas:**<br /><br /> - Audacieux, italique ou gras italique<br />- Utilisation pour le texte du corps<br />- Utilisation dans les fenêtres d’outils|**Apparaît comme:** 18 pt Segoe UI Semillight<br /><br /> **Exemple visuel :**<br /><br /> ![Exemple de police 200% Environnement &#43; Semilight](../../extensibility/ux-guidelines/media/0202-b_ef200.png "0202-b_EF200")|
+|**Utilisation:**<br /><br /> - Sous-titrages<br />- Titres en petits et moyens dialogues<br /><br /> **faire:**<br /><br /> - Utiliser l’affaire de la peine<br />- Utilisez toujours le poids Semilight<br /><br /> **Ne pas:**<br /><br /> - Audacieux, italique ou gras italique<br />- Utilisation pour le texte du corps<br />- Utilisation dans les fenêtres d’outils|**Apparaît comme:** 18 pt Segoe UI Semillight<br /><br /> **Exemple visuel :**<br /><br /> ![Exemple de police 200% Environnement &#43; Semilight](../../extensibility/ux-guidelines/media/0202-b_ef200.png "0202-b_EF200")|
 
 #### <a name="155-environment-font"></a>155% Police de l’environnement
 
 |||
 |-|-|
-|**Usage :**<br /><br /> - Section des rubriques dans le document bien l’interface utilisateur<br />- Rapports<br /><br /> **Faire:** Utiliser le cas de phrase<br /><br /> **Ne pas:**<br /><br /> - Audacieux, italique ou gras italique<br />- Utilisation pour le texte du corps<br />- Utilisation dans les commandes standard visual Studio<br />- Utilisation dans les fenêtres d’outils|**Apparaît comme:** 14 pt Segoe UI<br /><br /> **Exemple visuel :**<br /><br /> ![Exemple de titre de police d'environnement 155 %](../../extensibility/ux-guidelines/media/0202-c_ef155.png "0202-c_EF155")|
+|**Utilisation:**<br /><br /> - Section des rubriques dans le document bien l’interface utilisateur<br />- Rapports<br /><br /> **Faire:** Utiliser le cas de phrase<br /><br /> **Ne pas:**<br /><br /> - Audacieux, italique ou gras italique<br />- Utilisation pour le texte du corps<br />- Utilisation dans les commandes standard visual Studio<br />- Utilisation dans les fenêtres d’outils|**Apparaît comme:** 14 pt Segoe UI<br /><br /> **Exemple visuel :**<br /><br /> ![Exemple de titre de police d'environnement 155 %](../../extensibility/ux-guidelines/media/0202-c_ef155.png "0202-c_EF155")|
 
 #### <a name="133-environment-font"></a>133% Police de l’environnement
 
 |||
 |-|-|
-|**Usage :**<br /><br /> - Sous-titrages plus petits dans les dialogues signature<br />- Sous-titrages plus petits dans le document bien l’interface utilisateur<br /><br /> **Faire:** Utiliser le cas de phrase<br /><br /> **Ne pas:**<br /><br /> - Audacieux, italique ou gras italique<br />- Utilisation pour le texte du corps<br />- Utilisation dans les commandes standard visual Studio<br />- Utilisation dans les fenêtres d’outils|**Apparaît comme:** 12 pt Segoe UI<br /><br /> **Exemple visuel :**<br /><br /> ![Exemple de titre de police d'environnement 133 %](../../extensibility/ux-guidelines/media/0202-d_ef133.png "0202-d_EF133")|
+|**Utilisation:**<br /><br /> - Sous-titrages plus petits dans les dialogues signature<br />- Sous-titrages plus petits dans le document bien l’interface utilisateur<br /><br /> **Faire:** Utiliser le cas de phrase<br /><br /> **Ne pas:**<br /><br /> - Audacieux, italique ou gras italique<br />- Utilisation pour le texte du corps<br />- Utilisation dans les commandes standard visual Studio<br />- Utilisation dans les fenêtres d’outils|**Apparaît comme:** 12 pt Segoe UI<br /><br /> **Exemple visuel :**<br /><br /> ![Exemple de titre de police d'environnement 133 %](../../extensibility/ux-guidelines/media/0202-d_ef133.png "0202-d_EF133")|
 
 #### <a name="122-environment-font"></a>122% Police de l’environnement
 
 |||
 |-|-|
-|**Usage :**<br /><br /> - Titres de section dans les dialogues signature<br />- Top nœuds dans la vue d’arbre<br />- Navigation verticale de l’onglet<br /><br /> **Faire:** Utiliser le cas de phrase<br /><br /> **Ne pas:**<br /><br /> - Audacieux, italique ou gras italique<br />- Utilisation pour le texte du corps<br />- Utilisation dans les commandes standard visual Studio<br />- Utilisation dans les fenêtres d’outils|**Apparaît comme:** 11 pt Segoe UI<br /><br /> **Exemple visuel :**<br /><br /> ![Exemple de titre de police d'environnement 122 %](../../extensibility/ux-guidelines/media/0202-e_ef122.png "0202-e_EF122")|
+|**Utilisation:**<br /><br /> - Titres de section dans les dialogues signature<br />- Top nœuds dans la vue d’arbre<br />- Navigation verticale de l’onglet<br /><br /> **Faire:** Utiliser le cas de phrase<br /><br /> **Ne pas:**<br /><br /> - Audacieux, italique ou gras italique<br />- Utilisation pour le texte du corps<br />- Utilisation dans les commandes standard visual Studio<br />- Utilisation dans les fenêtres d’outils|**Apparaît comme:** 11 pt Segoe UI<br /><br /> **Exemple visuel :**<br /><br /> ![Exemple de titre de police d'environnement 122 %](../../extensibility/ux-guidelines/media/0202-e_ef122.png "0202-e_EF122")|
 
 #### <a name="environment-font--bold"></a>Police de l’environnement et gras
 
 |||
 |-|-|
-|**Usage :**<br /><br /> - Étiquettes et sous-têtes dans les dialogues signature<br />- Étiquettes et sous-têtes dans les rapports<br />- Étiquettes et sous-têtes dans le document bien l’interface utilisateur<br /><br /> **faire:**<br /><br /> - Utiliser l’affaire de la peine<br />- Utiliser un poids gras<br /><br /> **Ne pas:**<br /><br /> - Italique ou gras italique<br />- Utilisation pour le texte du corps<br />- Utilisation dans les commandes standard visual Studio<br />- Utilisation dans les fenêtres d’outils|**Apparaît comme:** audacieux 9 pt Segoe UI<br /><br /> **Exemple visuel :**<br /><br /> ![Exemple de police de l’environnement &#43; tête audacieuse](../../extensibility/ux-guidelines/media/0202-f_efb.png "0202-f_EFB")|
+|**Utilisation:**<br /><br /> - Étiquettes et sous-têtes dans les dialogues signature<br />- Étiquettes et sous-têtes dans les rapports<br />- Étiquettes et sous-têtes dans le document bien l’interface utilisateur<br /><br /> **faire:**<br /><br /> - Utiliser l’affaire de la peine<br />- Utiliser un poids gras<br /><br /> **Ne pas:**<br /><br /> - Italique ou gras italique<br />- Utilisation pour le texte du corps<br />- Utilisation dans les commandes standard visual Studio<br />- Utilisation dans les fenêtres d’outils|**Apparaît comme:** audacieux 9 pt Segoe UI<br /><br /> **Exemple visuel :**<br /><br /> ![Exemple de police de l’environnement &#43; tête audacieuse](../../extensibility/ux-guidelines/media/0202-f_efb.png "0202-f_EFB")|
 
 #### <a name="environment-font"></a>Police de l’environnement
 

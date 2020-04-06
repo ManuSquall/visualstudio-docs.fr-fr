@@ -1,24 +1,24 @@
 ---
-title: IDebugSymbolProviderDirect | Microsoft Docs
+title: IDebugSymbolProviderDirect - France Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - IDebugSymbolProviderDirect interface
 ms.assetid: 872b04a8-70de-4ab5-aceb-684c81828545
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1ad8bc95e5fe8fa49088d8c1006bc69243dd4977
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: fd1201007b27d3c7c51b5b0d862b36ba0549429b
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66320374"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80718902"
 ---
 # <a name="idebugsymbolproviderdirect"></a>IDebugSymbolProviderDirect
-Représente un fournisseur de symbole qui a un accès direct aux interfaces de symbole de métadonnées et core.
+Représente un fournisseur de symboles qui a un accès direct aux métadonnées et aux interfaces de symbole de base.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -27,23 +27,23 @@ IDebugSymbolProviderDirect: IUnknown
 ```
 
 ## <a name="methods"></a>Méthodes
- Cette interface implémente les méthodes suivantes :
+ Cette interface met en œuvre les méthodes suivantes :
 
 |Méthode|Description|
 |------------|-----------------|
-|[GetAppIDFromAddress](../../../extensibility/debugger/reference/idebugsymbolproviderdirect-getappidfromaddress.md)|Récupère l’identificateur de domaine d’application étant donné l’adresse de débogage.|
+|[GetAppIDFromAddress](../../../extensibility/debugger/reference/idebugsymbolproviderdirect-getappidfromaddress.md)|Récupère l’identifiant de domaine d’application compte tenu de l’adresse de débogé.|
 |[GetCurrentModulesInfo](../../../extensibility/debugger/reference/idebugsymbolproviderdirect-getcurrentmodulesinfo.md)|Récupère des informations sur les modules dans le groupe de symboles.|
-|[GetCurrentModulesState](../../../extensibility/debugger/reference/idebugsymbolproviderdirect-getcurrentmodulesstate.md)|Récupère des informations sur le groupe de symboles dont le fournisseur de symboles est un membre.|
+|[GetCurrentModulesState](../../../extensibility/debugger/reference/idebugsymbolproviderdirect-getcurrentmodulesstate.md)|Récupère des informations sur le groupe de symboles dont le fournisseur de symboles est membre.|
 |[GetMetaDataImport](../../../extensibility/debugger/reference/idebugsymbolproviderdirect-getmetadataimport.md)|Récupère les informations d’importation de métadonnées.|
-|[GetMethodFromAddress](../../../extensibility/debugger/reference/idebugsymbolproviderdirect-getmethodfromaddress.md)|Récupère des informations sur la méthode à l’adresse de débogage spécifié.|
-|[GetSymUnmanagedReader](../../../extensibility/debugger/reference/idebugsymbolproviderdirect-getsymunmanagedreader.md)|Récupère un lecteur de symboles du code non managé.|
+|[GetMethodFromAddress](../../../extensibility/debugger/reference/idebugsymbolproviderdirect-getmethodfromaddress.md)|Récupère des informations sur la méthode à l’adresse de débogé spécifiée.|
+|[GetSymUnmanagedReader](../../../extensibility/debugger/reference/idebugsymbolproviderdirect-getsymunmanagedreader.md)|Récupère un lecteur de symbole pour le code non menté.|
 
 ## <a name="remarks"></a>Notes
- Cette interface peut être utilisée au lieu de la plupart des autres interfaces de fournisseur de symboles. Il offre un accès direct aux métadonnées et `CorSym` interfaces.
+ Cette interface peut être utilisée au lieu de la plupart des autres interfaces de fournisseur de symboles. Il offre un accès direct `CorSym` aux métadonnées et aux interfaces.
 
-## <a name="requirements"></a>Configuration requise
- En-tête : SH.h
+## <a name="requirements"></a>Spécifications
+ En-tête: Sh.h
 
- Espace de noms : Microsoft.VisualStudio.Debugger.Interop
+ Namespace: Microsoft.VisualStudio.Debugger.Interop
 
- Assembly : Microsoft.VisualStudio.Debugger.Interop.dll
+ Assemblage: Microsoft.VisualStudio.Debugger.Interop.dll

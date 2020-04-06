@@ -1,52 +1,52 @@
 ---
-title: Gestion des composants | Microsoft Docs
+title: Gestion des composants (fr) Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - installation [Visual Studio SDK], components
 - installation [Visual Studio SDK], file management
 ms.assetid: 029bffa2-6841-4caa-a41a-442467e1aedc
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 477079cdb0349b2299b5cb829770800a4930958d
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: b5dcac9fb14a83021b852be2c52436fcdca84bf5
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66310017"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80709338"
 ---
 # <a name="component-management"></a>Gestion des composants
-Unités de tâches dans le programme d’installation de Windows sont appelées composants de programme d’installation de Windows (parfois appelés WICs ou composants uniquement). Un GUID identifie chaque WIC, qui est l’unité de base de l’installation et le décompte de références pour les installations qui utilisent Windows Installer.
+Les unités de tâches dans l’installateur Windows sont appelées composants d’installateur Windows (parfois appelés WIC ou juste des composants). Un GUID identifie chaque WIC, qui est l’unité de base de l’installation et le comptage de référence pour les configurations qui utilisent Windows Installer.
 
- Bien que vous pouvez utiliser plusieurs produits pour créer votre programme d’installation de package Visual Studio, cette discussion suppose l’utilisation du programme d’installation de Windows ( *.msi*) les fichiers. Lorsque vous créez votre programme d’installation, vous devez gérer correctement les déploiement de fichiers, afin que le comptage de références correctes effectuée à tout moment. Par conséquent, différentes versions de votre produit ne seront pas interférer avec ou rompre eux dans une combinaison de l’installation et désinstaller des scénarios.
+ Bien que vous puissiez utiliser plusieurs produits pour créer votre installateur VSPackage, cette discussion suppose l’utilisation de Windows Installer (*.msi*) fichiers. Lors de la création de votre installateur, vous devez gérer correctement le déploiement de fichiers afin que le bon comptage des références se fasse en tout temps. Par conséquent, différentes versions de votre produit n’interfèrent pas ou ne se cassent pas les unes les autres dans un mélange de scénarios d’installation et de désinstallation.
 
- Dans le programme d’installation de Windows, le comptage de références se produit au niveau du composant. Soigneusement, vous devez organiser vos ressources, fichiers, entrées de Registre et ainsi de suite, en composants. Autres niveaux de l’organisation, tels que les modules, les fonctionnalités et les produits, qui peut aider dans différents scénarios. Pour plus d’informations, consultez [principes fondamentaux du programme d’installation de Windows](../../extensibility/internals/windows-installer-basics.md).
+ Dans Windows Install, le comptage des références se produit au niveau des composants. Vous devez organiser soigneusement vos ressources — dossiers, entrées de registre, etc. — en composants. Il existe d’autres niveaux d’organisation — comme les modules, les fonctionnalités et les produits — qui peuvent aider à différents scénarios. Pour plus d’informations, voir [les bases de Windows Installer](../../extensibility/internals/windows-installer-basics.md).
 
-## <a name="guidelines-of-authoring-setup-for-side-by-side-installation"></a>Recommandations en matière de création le programme d’installation pour l’installation de la côte à côte
+## <a name="guidelines-of-authoring-setup-for-side-by-side-installation"></a>Lignes directrices de la mise en place de la rédaction d’une installation côte à côte
 
-- Fichiers de l’auteur et les clés de Registre qui sont partagés entre les versions dans leurs propres composants.
+- Fichiers d’auteurs et clés de registre qui sont partagés entre les versions dans leurs propres composants.
 
-     Cela vous permet de les consommer facilement dans la prochaine version. Par exemple, les bibliothèques de types qui sont inscrits dans le monde entier, les extensions de fichier, les autres éléments enregistrés dans **HKEY_CLASSES_ROOT**, et ainsi de suite.
+     Cela vous permet de les consommer facilement dans la version suivante. Par exemple, les bibliothèques de type qui sont enregistrées à l’échelle mondiale, les extensions de fichiers, d’autres articles enregistrés dans **HKEY_CLASSES_ROOT,** et ainsi de suite.
 
-- Regrouper des composants partagés dans des modules de fusion distinct.
+- Regrouper les composants partagés en modules de fusion distincts.
 
-     Cette stratégie permet de vous auteur correctement pour l’installation côte à côte plus tard.
+     Cette stratégie vous aide à présenter correctement l’installation côte à côte pour aller de l’avant.
 
-- Installer les fichiers partagés et les clés de Registre en utilisant les mêmes composants de programme d’installation de Windows sur les versions.
+- Installez des fichiers partagés et des clés de registre en utilisant les mêmes composants Windows Installer à travers les versions.
 
-     Si vous utilisez un autre composant, les fichiers et les entrées de Registre sont désinstallées quand un VSPackage avec contrôle de version est désinstallé, mais un autre VSPackage est toujours installé.
+     Si vous utilisez un composant différent, les fichiers et les entrées de registre sont nonins bloqués lorsqu’une version VSPackage est désinstallée, mais un autre VSPackage est toujours installé.
 
-- Ne mélangez pas les éléments avec version et partagés dans le même composant.
+- Ne mélangez pas les éléments versionnés et partagés dans le même composant.
 
-     Cela rend impossible d’installer les éléments partagés vers un emplacement global et des éléments avec version aux emplacements isolés.
+     Cela rend impossible l’installation d’éléments partagés à un emplacement global et des articles en version à des endroits isolés.
 
-- N’ont pas les clés de Registre partagées qui pointent vers les fichiers de version.
+- N’avez pas de clés de registre partagées qui pointent vers les fichiers versionnés.
 
-     Si vous le faites, les clés partagées seront remplacées lors de l’installation de VSPackage avec version gérée par un autre. Une fois que vous supprimez la deuxième version, le fichier vers lequel pointe la clé a disparu.
+     Si vous le faites, les clés partagées seront écrasées lors de l’installation d’un autre VSPackage version. Après avoir supprimé la deuxième version, le fichier auquel la clé est pointée a disparu.
 
 ## <a name="see-also"></a>Voir aussi
-- [Choisissez entre les VSPackages partagés et avec contrôle de version](../../extensibility/choosing-between-shared-and-versioned-vspackages.md)
-- [Scénarios d’installation de VSPackage](../../extensibility/internals/vspackage-setup-scenarios.md)
+- [Choisissez entre VSPackages partagés et versions](../../extensibility/choosing-between-shared-and-versioned-vspackages.md)
+- [Scénarios de configuration VSPackage](../../extensibility/internals/vspackage-setup-scenarios.md)

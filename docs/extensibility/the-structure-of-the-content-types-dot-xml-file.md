@@ -8,17 +8,17 @@ helpviewer_keywords:
 - opc
 - vsix
 ms.assetid: 9c399598-b9fa-4da7-84b5-defbf82e9335
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 957958cd930620734d09c592ea07bfb0919d0145
-ms.sourcegitcommit: d6828e7422c8d74ec1e99146fedf0a05f757245f
+ms.openlocfilehash: 2761e012d32516265e61c8001491e3c605372ff5
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/30/2020
-ms.locfileid: "80395314"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80699026"
 ---
 # <a name="the-structure-of-the-content_typesxml-file"></a>Structure du fichier [Content_types].xml
 Contient des informations sur les types de contenu dans un paquet VSIX. Visual Studio utilise le fichier [Content_Types].xml pour installer le paquet, mais il n’installe pas le fichier lui-même.

@@ -1,46 +1,46 @@
 ---
-title: Mise en route avec les Plug-ins de contrôle de code Source | Microsoft Docs
+title: Démarrer avec les plug-ins de contrôle des sources Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - source control plug-ins, getting started
 - getting started, source control plug-ins
 ms.assetid: 46ac1f9f-4ecc-4a72-88d3-4c7e1647e1cb
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 71645c7e5334b24c294265a60581cc4a00eec8aa
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: efc21e07830614d9d3041b2d2d231fd82c652114
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66328944"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80708347"
 ---
-# <a name="get-started-with-source-control-plug-ins"></a>Bien démarrer avec les plug-ins de contrôle de code source
-Pour créer un contrôle de source de plug-in, vous devez créer une DLL qui implémente les fonctions définies dans l’API de plug-in de contrôle de Source, puis inscrire la DLL avec [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] pour le rendre disponible pour une utilisation dans le contrôle de version du code source.
+# <a name="get-started-with-source-control-plug-ins"></a>Démarrer avec des plug-ins de contrôle de source
+Pour créer un plug-in de contrôle source, vous devez créer un DLL qui implémente les fonctions [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] définies dans l’API de contrôle source, puis pour enregistrer le DLL avec pour le rendre disponible pour une utilisation dans le contrôle de version de code source.
 
- Trois versions de l’API de plug-in de contrôle de Source (versions 1.1, 1.2 et 1.3) sont disponibles pour les plug-ins de contrôle de code source. L’API de plug-in de contrôle Source décrite ici est la version 1.3. Il a été conçu pour être entièrement compatible avec les plug-ins de contrôle de code source prenant en charge les versions 1.1 et 1.2. Le [Nouveautés de la Version 1.3 des API de plug-in de contrôle Source](../../extensibility/internals/what-s-new-in-the-source-control-plug-in-api-version-1-3.md) section décrit en détail les nouvelles fonctionnalités prises en charge dans la dernière version de l’API de plug-in de contrôle de Source.
+ Trois versions de l’API de contrôle source (versions 1.1, 1.2 et 1.3) sont disponibles pour les plug-ins de contrôle source. L’API de contrôle source documenté ici est la version 1.3. Il a été conçu pour être entièrement compatible avec les plug-ins de contrôle source soutenant les versions 1.1 et 1.2. Le quoi est nouveau dans la version [plug-in de contrôle source API Version 1.3](../../extensibility/internals/what-s-new-in-the-source-control-plug-in-api-version-1-3.md) détaille les nouvelles fonctionnalités prises en charge dans la dernière version de l’API de contrôle source plug-in.
 
-## <a name="in-this-section"></a>Dans cette section
-- [Guide pratique pour Installer un plug-in de contrôle de code source](../../extensibility/internals/how-to-install-a-source-control-plug-in.md)
+## <a name="in-this-section"></a>Contenu de cette section
+- [Comment : Installer un plug-in de contrôle source](../../extensibility/internals/how-to-install-a-source-control-plug-in.md)
 
- Décrit comment rendre les entrées de Registre qui sont requis pour incorporer dans un DLL de contrôle de code source.
+ Décrit comment faire les entrées de registre qui sont nécessaires pour brancher un contrôle source DLL.
 
-- [Nouveautés de la Version 1.3 des API de plug-in de contrôle Source](../../extensibility/internals/what-s-new-in-the-source-control-plug-in-api-version-1-3.md)
+- [Nouveauté dans la version API 1.3 du contrôle source](../../extensibility/internals/what-s-new-in-the-source-control-plug-in-api-version-1-3.md)
 
- Fournit une vue d’ensemble des modifications qui ont été apportées à l’API de plug-in de contrôle de Source dans la version 1.3.
+ Fournit un bref aperçu des modifications apportées à l’API rechargeable de contrôle des sources dans la version 1.3.
 
-- [Nouveautés de la Version 1.2 des API de plug-in de contrôle Source](../../extensibility/internals/what-s-new-in-the-source-control-plug-in-api-version-1-2.md)
+- [Nouveauté dans la version API 1.2 du contrôle source](../../extensibility/internals/what-s-new-in-the-source-control-plug-in-api-version-1-2.md)
 
- Fournit une vue d’ensemble des modifications qui ont été apportées à l’API de plug-in de contrôle de Source dans la version 1.2.
+ Fournit un bref aperçu des modifications apportées à l’API rechargeable de contrôle source dans la version 1.2.
 
-## <a name="related-sections"></a>Rubriques connexes
-- [Plug-ins de contrôle de code source](../../extensibility/source-control-plug-ins.md)
+## <a name="related-sections"></a>Sections connexes
+- [Plug-ins de contrôle des sources](../../extensibility/source-control-plug-ins.md)
 
- Fournit une liste complète de tous les éléments dans l’API de plug-in de contrôle de Source.
+ Fournit une liste complète de tous les éléments de l’API rechargeable de contrôle source.
 
-- [Créer un contrôle de source de plug-in](../../extensibility/internals/creating-a-source-control-plug-in.md)
+- [Créer un plug-in de contrôle source](../../extensibility/internals/creating-a-source-control-plug-in.md)
 
- Définit le SDK de plug-in de contrôle de Source et décrit les ressources incluses.
+ Définit le SDK de contrôle source et décrit les ressources incluses.

@@ -1,25 +1,25 @@
 ---
-title: Élément menus | Microsoft Docs
+title: Menus Élément Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - VSCT XML schema elements, Menus
 - Menus element (VSCT XML schema)
 ms.assetid: d825a99b-e05c-4dd9-8933-a180216d667a
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ef5124bc59a4eb0671ba5493f79ea301aa48fc71
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: a6382abed36aba66087066bf5664ae55682e39e2
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66346628"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80702588"
 ---
 # <a name="menus-element"></a>Élément menus
-Définit l’ensemble des menus et barres d’outils qui implémente un VSPackage.
+Définit tous les menus et barres d’outils qu’un VSPackage met en œuvre.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -37,20 +37,20 @@ Définit l’ensemble des menus et barres d’outils qui implémente un VSPackag
 
 |Attribut|Description|
 |---------------|-----------------|
-|Condition|Facultatif. Consultez [attributs conditionnels](../extensibility/vsct-xml-schema-conditional-attributes.md).|
+|Condition|facultatif. Voir [Attributs conditionnels](../extensibility/vsct-xml-schema-conditional-attributes.md).|
 
 ### <a name="child-elements"></a>Éléments enfants
 
 |Élément|Description|
 |-------------|-----------------|
-|[Élément menus](../extensibility/menus-element.md)|Définit l’ensemble des menus et barres d’outils qui implémente un VSPackage.|
-|[Élément de menu](../extensibility/menu-element.md)|Représente un seul menu ou la barre d’outils.|
+|[Élément menus](../extensibility/menus-element.md)|Définit tous les menus et barres d’outils qu’un VSPackage met en œuvre.|
+|[Élément de menu](../extensibility/menu-element.md)|Représente un menu ou une barre d’outils unique.|
 
 ### <a name="parent-elements"></a>Éléments parents
 
 |Élément|Description|
 |-------------|-----------------|
-|[Élément Commands](../extensibility/commands-element.md)|Représente la collection de commandes dans le VSPackage.|
+|[Élément de commande](../extensibility/commands-element.md)|Représente la collection de commandes dans le VSPackage.|
 
 ## <a name="example"></a>Exemple
 

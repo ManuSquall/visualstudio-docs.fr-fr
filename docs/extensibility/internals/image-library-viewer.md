@@ -1,42 +1,42 @@
 ---
-title: Image visionneuse de bibliothèque | Microsoft Docs
+title: Visualiseur de bibliothèque d’images (en anglais) Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 9d9c7fbb-ebae-4b20-9dd8-3c9070c0d0d1
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1fbef0686671a504cd1a141b6f582d30043809af
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: a7c5eda24c235cddec99cb5177c6ed315978bc6f
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66315700"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80707750"
 ---
 # <a name="image-library-viewer"></a>Visionneuse de bibliothèque d’images
-L’outil Visual Studio Image Library Viewer peut charger et rechercher des manifestes d’images, permettant à l’utilisateur pour les manipuler dans la même façon Visual Studio. L’utilisateur peut modifier en arrière-plan, tailles, PPP, contraste élevé et autres paramètres. L’outil affiche des informations de chargement pour chaque manifeste de l’image également et affiche des informations de source de chaque image dans le manifeste de l’image. Cet outil est utile pour :
+L’outil Visual Studio Image Library Viewer peut charger et rechercher des manifestes d’image, permettant à l’utilisateur de les manipuler de la même manière que Visual Studio. L’utilisateur peut modifier l’arrière-plan, les tailles, le DPI, le contraste élevé et d’autres paramètres. L’outil affiche également des informations de chargement pour chaque manifeste d’image et affiche des informations source pour chaque image dans le manifeste de l’image. Cet outil est utile pour :
 
-1. Diagnostic des erreurs
+1. Erreurs de diagnostic
 
-2. S’assurer que les attributs sont correctement définies dans les manifestes de l’image personnalisée
+2. S’assurer que les attributs sont définis correctement dans les manifestes d’image personnalisés
 
-3. Recherche d’images dans le catalogue d’images Visual Studio afin qu’une extension Visual Studio peut utiliser des images qui tiennent le style de Visual Studio
+3. Recherche d’images dans le Visual Studio Image Catalog afin qu’une extension Visual Studio puisse utiliser des images qui correspondent au style de Visual Studio
 
-   ![Image de bannière de visionneuse de bibliothèque](../../extensibility/internals/media/image-library-viewer-hero.png "héros de visionneuse de bibliothèque d’images")
+   ![Visionneuse de bibliothèque d’images - Hero](../../extensibility/internals/media/image-library-viewer-hero.png "Visionneuse de bibliothèque d’images - Hero")
 
-   **Moniker de l’image**
+   **Surnom d’image**
 
-   Un moniker d’image (ou moniker en abrégé) est une paire GUID : ID qui identifie de façon unique un composant de l’image ou le composant de liste l’image dans la bibliothèque d’images.
+   Un surnom d’image (ou surnom pour faire court) est une paire GUID:ID qui identifie de façon unique un actif d’image ou un actif de liste d’images dans la bibliothèque d’images.
 
    **Fichiers de manifeste d’image**
 
-   Fichiers de manifeste (.imagemanifest) d’image sont des fichiers XML qui définissent un ensemble de ressources d’image, les monikers qui représentent ces actifs et l’image réelle ou des images qui représentent chaque élément multimédia. Manifestes d’images peuvent définir des images autonomes ou les listes d’images pour la prise en charge héritée de l’interface utilisateur. En outre, il existe des attributs qui peuvent être définies sur l’élément multimédia ou sur des images individuelles derrière chaque élément multimédia pour modifier quand et comment ces actifs sont affichés.
+   Les fichiers de manifeste d’image (.imagemanifest) sont des fichiers XML qui définissent un ensemble d’actifs d’image, les surnoms qui représentent ces actifs, et l’image réelle ou les images qui représentent chaque actif. Les manifestes d’image peuvent définir des images autonomes ou des listes d’images pour le support d’interface utilisateur hérité. En outre, il existe des attributs qui peuvent être définis soit sur l’actif ou sur les images individuelles derrière chaque actif pour changer quand et comment ces actifs sont affichés.
 
-   **Schéma de manifeste d’image**
+   **Schéma manifeste d’image**
 
-   Un manifeste de finalisation d’image se présente comme suit :
+   Un manifeste d’image complet ressemble à ceci :
 
 ```xml
 <ImageManifest>
@@ -57,7 +57,7 @@ L’outil Visual Studio Image Library Viewer peut charger et rechercher des mani
 
  **Symboles**
 
- Comme une meilleure lisibilité et la maintenance d’aide, le manifeste de l’image peut utiliser les symboles pour les valeurs d’attribut. Symboles qui sont définis comme suit :
+ En tant qu’aide à la lisibilité et à l’entretien, le manifeste de l’image peut utiliser des symboles pour les valeurs d’attribut. Les symboles sont définis comme ceci :
 
 ```xml
 <Symbols>
@@ -71,12 +71,12 @@ L’outil Visual Studio Image Library Viewer peut charger et rechercher des mani
 |||
 |-|-|
 |**Sous-élément**|**Définition**|
-|Import|Importe les symboles du fichier manifeste donné pour une utilisation dans le manifeste en cours.|
-|GUID|Le symbole représente un GUID et doit correspondre à la mise en forme de GUID.|
-|Id|Le symbole représente un ID et doit être un entier non négatif.|
-|Chaîne|Le symbole représente une valeur de chaîne arbitraire.|
+|Importer|Importe les symboles du fichier manifeste donné pour une utilisation dans le manifeste actuel.|
+|Guid|Le symbole représente un GUID et doit correspondre au formatage GUID.|
+|id|Le symbole représente une pièce d’identité et doit être un intégrateur non natif.|
+|String|Le symbole représente une valeur de chaîne arbitraire.|
 
- Symboles respectent la casse et référencée à l’aide de la syntaxe de $(symbol-name) :
+ Les symboles sont sensibles aux cas et référencés à l’aide d’une syntaxe de $(symbol-name) :
 
 ```xml
 <Image Guid="$(ShellCommandGuid)" ID="$(cmdidSaveAll)" >
@@ -84,24 +84,24 @@ L’outil Visual Studio Image Library Viewer peut charger et rechercher des mani
 </Image>
 ```
 
- Certains symboles sont prédéfinis pour tous les manifestes. Celles-ci peuvent être utilisées dans l’attribut Uri de la \<Source > ou \<importation > élément aux chemins d’accès de référence sur l’ordinateur local.
+ Certains symboles sont prédéfinis pour tous les manifestes. Ceux-ci peuvent être utilisés dans \<l’attribut Uri de la Source> ou \<Import> élément de référence sur la machine locale.
 
 |||
 |-|-|
-|**Symbol**|**Description**|
-|CommonProgramFiles|La valeur de la variable d’environnement % %CommonProgramFiles%|
-|LocalAppData|La valeur de la variable d’environnement % LocalAppData|
-|ManifestFolder|Le dossier contenant le fichier manifest|
-|MyDocuments|Le chemin d’accès complet du dossier Mes Documents de l’utilisateur actuel|
-|ProgramFiles|La valeur de la variable d’environnement % ProgramFiles %|
-|Système|The Windows\System32 folder|
-|WinDir|La valeur de la variable d’environnement % WinDir %|
+|**Symbole**|**Description**|
+|CommonProgramFiles|La valeur de la variable de l’environnement %CommonProgramFiles%|
+|LocalAppData (localAppData)|La valeur de la variable de l’environnement %LocalAppData%|
+|ManifesteFolder|Le dossier contenant le fichier manifeste|
+|MyDocuments (en)|Le chemin complet du dossier Mes Documents de l’utilisateur actuel|
+|ProgramFiles|La valeur de la variable de l’environnement % ProgramFiles %|
+|Système|Le dossier Windows-System32|
+|WinDir (WinDir)|La valeur de la variable de l’environnement %WinDir%|
 
  **Image**
 
- Le \<Image > élément définit une image qui peut être référencée par un moniker. Le GUID et l’ID d’ensemble forment le moniker d’image. Le moniker de l’image doit être unique dans la bibliothèque de l’intégralité de l’image. Si plusieurs images a un moniker donné, le premier a rencontré lors de la création de la bibliothèque est celui qui est conservé.
+ L’élément \<Image> définit une image qui peut être référencée par un surnom. Le GUID et l’ID pris ensemble forment le surnom d’image. Le surnom de l’image doit être unique dans toute la bibliothèque d’images. Si plus d’une image a un surnom donné, la première rencontrée lors de la construction de la bibliothèque est celle qui est conservée.
 
- Il doit contenir au moins une source. Bien qu’il est indépendant de la taille des sources donnera les meilleurs résultats sur un large éventail de tailles, ils ne sont plus nécessaires. Si le service est demandé pour une image d’une taille non définie dans le \<Image > élément et qu’aucune source indépendant de la taille, le service de choisir la meilleure source spécifiques à la taille et l’échelle à la taille demandée.
+ Il doit contenir au moins une source. Bien que les sources neutres en taille donneront les meilleurs résultats à travers un large éventail de tailles, elles ne sont pas nécessaires. Si le service est demandé pour une image \<d’une taille non définie dans l’élément Image> et qu’il n’y a pas de source neutre sur mesure, le service choisira la meilleure source spécifique à la taille et l’échelle à la taille demandée.
 
 ```xml
 <Image Guid="guid" ID="int" AllowColorInversion="true/false">
@@ -113,13 +113,13 @@ L’outil Visual Studio Image Library Viewer peut charger et rechercher des mani
 |||
 |-|-|
 |**Attribut**|**Définition**|
-|GUID|[Obligatoire] La partie GUID du moniker d’image|
-|Id|[Obligatoire] La partie de l’ID du moniker d’image|
-|AllowColorInversion|[Facultatif, par défaut la valeur true] Indique si l’image peut avoir ses couleurs inversées par programme lorsqu’il est utilisé sur un arrière-plan sombre.|
+|Guid|[Requis] La partie GUID du surnom d’image|
+|id|[Requis] La partie ID du surnom d’image|
+|AutoriserColorInversion|[Optionnel, par défaut vrai] Indique si l’image peut avoir ses couleurs programmatiquement inversées lorsqu’elles sont utilisées sur un fond sombre.|
 
  **Source**
 
- Le \<Source > élément définit une seule source ressource (XAML et PNG).
+ L’élément \<Source> définit un actif unique de source d’image (XAML et PNG).
 
 ```xml
 <Source Uri="uri" Background="background">
@@ -130,20 +130,20 @@ L’outil Visual Studio Image Library Viewer peut charger et rechercher des mani
 |||
 |-|-|
 |**Attribut**|**Définition**|
-|URI|[Obligatoire] URI qui définit où l’image peut être chargé à partir de. Il peut avoir l'une des valeurs suivantes :<br /><br /> -A [URI à en-tête Pack](/dotnet/framework/wpf/app-development/pack-uris-in-wpf) à l’aide de l’application : / / / autorité<br /><br /> -Une référence de ressource du composant absolu<br /><br /> -Un chemin d’accès à un fichier contenant une ressource native|
-|Présentation|[Facultatif] Indique quel type d’arrière-plan de que la source est destinée à être utilisée.<br /><br /> Il peut avoir l'une des valeurs suivantes :<br /><br /> - *Lumière*: La source peut être utilisée sur un arrière-plan clair.<br /><br /> - *Foncé*: La source peut être utilisée sur un arrière-plan sombre.<br /><br /> - *Contraste élevé*: La source peut être utilisée sur n’importe quel arrière-plan en mode contraste élevé.<br /><br /> - *HighContrastLight*: La source peut être utilisée sur un arrière-plan clair en mode de contraste élevé.<br /><br /> -*HighContrastDark*: La source peut être utilisée sur un arrière-plan sombre en mode de contraste élevé.<br /><br /> Si le **arrière-plan** attribut est omis, la source peut être utilisée sur n’importe quel arrière-plan.<br /><br /> Si **arrière-plan** est *Light*, *foncé*, *HighContrastLight*, ou *HighContrastDark*, le les couleurs de la source ne sont jamais inversées. Si **arrière-plan** est omis ou défini sur *contraste élevé*, l’inversion des couleurs de la source est contrôlée par l’image **AllowColorInversion** attribut.|
+|Uri|[Requis] Un URI qui définit d’où l’image peut être chargée. Les valeurs possibles sont les suivantes :<br /><br /> - Un [pack URI](/dotnet/framework/wpf/app-development/pack-uris-in-wpf) utilisant l’autorité application:///<br /><br /> - Une référence absolue des ressources composant<br /><br /> - Un chemin vers un fichier contenant une ressource autochtone|
+|Arrière-plan|[Facultatif] Indique ce que sur le type de fond de la source est destinée à être utilisé.<br /><br /> Les valeurs possibles sont les suivantes :<br /><br /> - *Lumière*: La source peut être utilisée sur un fond léger.<br /><br /> - *Dark*: La source peut être utilisée sur un fond sombre.<br /><br /> - *HighContrast*: La source peut être utilisée sur n’importe quel fond en mode High Contrast.<br /><br /> - *HighContrastLight*: La source peut être utilisée sur un fond lumineux en mode Contraste élevé.<br /><br /> -*HighContrastDark*: La source peut être utilisée sur un fond sombre en mode Contraste élevé.<br /><br /> Si **l’attribut d’arrière-plan** est omis, la source peut être utilisée sur n’importe quel fond.<br /><br /> Si **Background** is *Light*, *Dark*, *HighContrastLight*, ou *HighContrastDark*, les couleurs de la source ne sont jamais inversées. Si **Background** est omis ou réglé à *HighContrast*, l’inversion des couleurs de la source est contrôlée par l’attribut **AllowColorInversion** de l’image.|
 
- Un \<Source > élément peut avoir un seul des sous-éléments facultatives suivantes :
+ Un \<élément source> peut avoir exactement l’un des sous-ensembles optionnels suivants :
 
 ||||
 |-|-|-|
 |**Élément**|**Attributs (tous requis)**|**Définition**|
-|\<Taille >|Value|La source sera utilisée pour les images de la taille spécifiée (en unités de périphérique). L’image sera carré.|
-|\<SizeRange>|MinSize, MaxSize|La source servira pour les images à partir de MinSize vers taille maximale (en unités de périphérique) (inclus). L’image sera carré.|
-|\<Dimensions>|Largeur, hauteur|La source sera utilisée pour les images de la donnée de la largeur et la hauteur (en unités de périphérique).|
-|\<DimensionRange>|MinWidth, MinHeight,<br /><br /> MaxWidth, MaxHeight|La source servira pour les images à partir de la largeur/hauteur minimale de la largeur/hauteur maximale (en unités de périphérique) (inclus).|
+|\<Taille>|Valeur|La source sera utilisée pour des images de la taille donnée (dans les unités de périphérique). L’image sera carrée.|
+|\<SizeRange>|MinSize, MaxSize|La source sera utilisée pour les images de MinSize à MaxSize (en unités d’appareils) inclusivement. L’image sera carrée.|
+|\<Dimensions>|Width, Height|La source sera utilisée pour des images de la largeur et de la hauteur données (dans les unités de périphérique).|
+|\<DimensionRange>|MinWidth, MinHeight,<br /><br /> MaxWidth, MaxHeight|La source sera utilisée pour les images de la largeur/hauteur minimale à la largeur/hauteur maximale (dans les unités de périphérique) inclusivement.|
 
- Un \<Source > élément peut également avoir un facultatif \<NativeResource > sous-élément qui définit un \<Source > qui est chargé à partir d’un assembly natif plutôt qu’un assembly managé.
+ Un \<élément source> peut également \<avoir un sous-ensemble de> NativeResource en option, qui définit un \<> source qui est chargé à partir d’une assemblée autochtone plutôt qu’un assemblage géré.
 
 ```xml
 <NativeResource Type="type" ID="int" />
@@ -152,12 +152,12 @@ L’outil Visual Studio Image Library Viewer peut charger et rechercher des mani
 |||
 |-|-|
 |**Attribut**|**Définition**|
-|Type|[Obligatoire] Le type de la ressource native, XAML ou PNG|
-|Id|[Obligatoire] La partie ID d’entier de la ressource native|
+|Type|[Requis] Le type de ressource indigène, soit XAML ou PNG|
+|id|[Requis] La partie ID integer de la ressource autochtone|
 
- **ImageList**
+ **Imagelist**
 
- Le \<ImageList > élément définit une collection d’images qui peuvent être retournées dans une bande unique. La bande est basée sur la demande, en fonction des besoins.
+ L’élément \<ImageList> définit une collection d’images qui peuvent être retournées en une seule bande. La bande est construite sur demande, au besoin.
 
 ```xml
 <ImageList>
@@ -169,64 +169,64 @@ L’outil Visual Studio Image Library Viewer peut charger et rechercher des mani
 |||
 |-|-|
 |**Attribut**|**Définition**|
-|GUID|[Obligatoire] La partie GUID du moniker d’image|
-|Id|[Obligatoire] La partie de l’ID du moniker d’image|
-|Ressource externe|[False par défaut facultative] Indique si le moniker d’image fait référence à une image dans le manifeste en cours.|
+|Guid|[Requis] La partie GUID du surnom d’image|
+|id|[Requis] La partie ID du surnom d’image|
+|Externe|[Optionnel, faux par défaut] Indique si le surnom d’image fait référence à une image dans le manifeste actuel.|
 
- Le moniker de l’image de relation contenant-contenu n’a pas référencer une image définie dans le manifeste en cours. Si l’image de relation contenant-contenu est introuvable dans la bibliothèque d’images, une image d’espace réservé vide sera utilisée à la place.
+ Le surnom de l’image contenue n’a pas à référencer une image définie dans le manifeste actuel. Si l’image contenue ne peut pas être trouvée dans la bibliothèque d’images, une image blanche de placeholder sera utilisée à sa place.
 
 ## <a name="how-to-use-the-tool"></a>Comment utiliser l’outil
- **Validation d’un manifeste de l’image personnalisée**
+ **Validation d’un manifeste d’image personnalisé**
 
- Pour créer un manifeste personnalisé, nous vous recommandons d’utiliser l’outil ManifestFromResources pour générer automatiquement le manifeste. Pour valider le manifeste personnalisé, lancez l’Afficheur de bibliothèque d’images et sélectionnez Fichier > définir les chemins... pour ouvrir la boîte de dialogue répertoires de recherche. L’outil utilisera les répertoires de recherche pour charger les manifestes d’images, mais il sera également l’utiliser à trouver les fichiers .dll qui contiennent les images dans un manifeste, par conséquent, veillez à inclure le manifeste et les répertoires de la DLL dans cette boîte de dialogue.
+ Pour créer un manifeste personnalisé, nous vous recommandons d’utiliser l’outil ManifestFromResources pour autogénérer le manifeste. Pour valider le manifeste personnalisé, lancez le Visual de la Bibliothèque d’images et sélectionnez File > Set Paths... d’ouvrir le dialogue des répertoires de recherche. L’outil utilisera les répertoires de recherche pour charger les manifestes d’image, mais il les utilisera également pour trouver les fichiers .dll qui contiennent les images dans un manifeste, alors assurez-vous d’inclure à la fois les répertoires manifeste et DLL dans ce dialogue.
 
- ![Recherche de visionneuse de bibliothèque d’images](../../extensibility/internals/media/image-library-viewer-search.png "recherche de visionneuse de bibliothèque d’images")
+ ![Visionneuse de bibliothèque d’images - Rechercher](../../extensibility/internals/media/image-library-viewer-search.png "Visionneuse de bibliothèque d’images - Rechercher")
 
- Cliquez sur **ajouter...**  pour sélectionner les nouveaux répertoires de recherche pour rechercher des manifestes et leurs DLL correspondante. L’outil enregistre ces répertoires de recherche, et ils peuvent être activées ou désactivée en cochant ou non un répertoire.
+ Cliquez **sur Ajouter ...** pour sélectionner de nouveaux répertoires de recherche à la recherche de manifestes et de leurs DLL correspondants. L’outil se souviendra de ces répertoires de recherche, et ils peuvent être activés ou désactivés en cochant ou en décochant un répertoire.
 
- Par défaut, l’outil tente de trouver le répertoire d’installation de Visual Studio et ajoutez ces répertoires à la liste de répertoires de recherche. Vous pouvez ajouter manuellement l’outil ne trouve pas de répertoires.
+ Par défaut, l’outil tentera de trouver le visual Studio installer répertoire et ajouter ces répertoires à la liste des répertoires de recherche. Vous pouvez ajouter manuellement des répertoires que l’outil ne trouve pas.
 
- Une fois que tous les manifestes sont chargés, l’outil peut être utilisé pour activer/désactiver **arrière-plan** couleurs, **PPP**, **contraste élevé**, ou **grayscaling** pour les images afin qu’un utilisateur peut inspecter visuellement les ressources d’image pour vérifier qu’ils sont restituées correctement pour différents paramètres.
+ Une fois que tous les manifestes sont chargés, l’outil peut être utilisé pour basculer les couleurs **de fond,** **DPI**, **contraste élevé**, ou la mise à **l’échelle grise** pour les images afin qu’un utilisateur puisse inspecter visuellement les ressources d’image pour vérifier qu’ils sont rendus correctement pour divers paramètres.
 
- ![Image d’arrière-plan de visionneuse de bibliothèque](../../extensibility/internals/media/image-library-viewer-background.png "de l’Image d’arrière-plan de visionneuse de bibliothèque")
+ ![Visionneuse de bibliothèque d’images - Arrière-plan](../../extensibility/internals/media/image-library-viewer-background.png "Visionneuse de bibliothèque d’images - Arrière-plan")
 
- La couleur d’arrière-plan peut être la valeur est clair, sombre ou une valeur personnalisée. En sélectionnant « Couleur personnalisée » pour ouvrir une boîte de dialogue de sélection de couleur et ajouter une couleur personnalisée vers le bas de la zone de liste déroulante d’arrière-plan pour vous en souvenir facilement plus tard.
+ La couleur de fond peut être réglée à la lumière, à l’obscurité ou à une valeur personnalisée. La sélection de "Custom Color" ouvrira un dialogue de sélection de couleurs et ajoutera cette couleur personnalisée au bas de la boîte combo de fond pour un rappel facile plus tard.
 
- ![Couleur personnalisée de visionneuse de bibliothèque d’images](../../extensibility/internals/media/image-library-viewer-custom-color.png "couleur personnalisée de visionneuse de bibliothèque d’images")
+ ![Visionneuse de bibliothèque d’images - Couleur personnalisée](../../extensibility/internals/media/image-library-viewer-custom-color.png "Visionneuse de bibliothèque d’images - Couleur personnalisée")
 
- Sélection d’un moniker de l’image affiche les informations pour chaque image réelle derrière ce moniker dans le volet de détails de l’Image sur la droite. Le volet permet également aux utilisateurs de copier un moniker par nom ou par la valeur de la paire GUID : ID brutes.
+ La sélection d’un surnom d’image affiche les informations pour chaque image réelle derrière ce surnom dans le volet Détails d’image sur la droite. Le volet permet également aux utilisateurs de copier un surnom par nom ou par la valeur GUID:ID brute.
 
- ![Image des détails de l’Image visionneuse bibliothèque](../../extensibility/internals/media/image-library-viewer-image-details.png "détails de l’Image visionneuse bibliothèque d’images")
+ ![Visionneuse de bibliothèque d’images - Détails d’une image](../../extensibility/internals/media/image-library-viewer-image-details.png "Visionneuse de bibliothèque d’images - Détails d’une image")
 
- Les informations affichées pour chaque source de l’image inclut le type d’arrière-plan pour l’afficher, si elle peut être à thème ou prend en charge de contraste élevé, les tailles est valide pour ou s’il est indépendant de la taille, et indique si l’image provient d’un assembly natif.
+ Les informations affichées pour chaque source d’image comprennent le type d’arrière-plan sur qui l’afficher, si elle peut être sur le thème ou prend en charge High Contrast, quelles tailles il est valable pour ou si elle est neutre sur mesure, et si l’image provient d’un assemblage natif.
 
- ![Visionneuse de bibliothèque d’images peut thème](../../extensibility/internals/media/image-library-viewer-can-theme.png "visionneuse de bibliothèque d’images peut thème")
+ ![Visionneuse de bibliothèque d’images - Possibilité d’appliquer un thème](../../extensibility/internals/media/image-library-viewer-can-theme.png "Visionneuse de bibliothèque d’images - Possibilité d’appliquer un thème")
 
- Lors de la validation d’un manifeste d’image, nous vous recommandons de déployer le manifeste et l’image DLL dans leurs emplacements du monde réel. Cela permettra de vérifier que les chemins d’accès relatifs sont fonctionne correctement et que la bibliothèque d’images peut rechercher et charger le manifeste et l’image DLL.
+ Lors de la validation d’un manifeste d’image, nous vous recommandons de déployer le manifeste et l’image DLL dans leurs emplacements du monde réel. Cela permettra de vérifier que tous les chemins relatifs fonctionnent correctement et que la bibliothèque d’images peut trouver et charger le manifeste et l’image DLL.
 
- **Recherche de catalogue de l’image KnownMonikers**
+ **Recherche de catalogue d’images KnownMonikers**
 
- Pour mieux faire correspondre les styles de Visual Studio, une extension Visual Studio peut utiliser des images dans le catalogue des images de Visual Studio, plutôt que la création et l’utilisation de son propre. Cela présente l’avantage de ne pas avoir à maintenir ces images et garantit que l’image aura une image haute résolution sauvegarde afin qu’il doit se présenter correct dans tous les paramètres PPP qui prend en charge de Visual Studio.
+ Pour mieux correspondre au style Visual Studio, une extension Visual Studio peut utiliser des images dans le visual Studio Image Catalog plutôt que de créer et d’utiliser le sien. Cela a l’avantage de ne pas avoir à maintenir ces images, et garantit que l’image aura une image de support haute DPI de sorte qu’il devrait sembler correct dans tous les paramètres DPI que Visual Studio prend en charge.
 
- L’Afficheur de bibliothèque d’images permet un manifeste à rechercher afin qu’un utilisateur peut rechercher le moniker qui représente un composant de l’image et utiliser ce moniker dans le code. Pour rechercher des images, entrez le terme de recherche souhaitée dans la zone de recherche et appuyez sur ENTRÉE. La barre d’état en bas affichera le nombre de correspondances ont été trouvé en dehors du nombre total d’images dans tous les manifestes.
+ Le visualiseur de la bibliothèque d’images permet de rechercher un manifeste afin qu’un utilisateur puisse trouver le surnom qui représente un actif d’image et utiliser ce surnom dans le code. Pour rechercher des images, entrez le terme de recherche souhaité dans la boîte de recherche et appuyez sur Enter. La barre d’état en bas affichera le nombre de correspondances trouvées sur le nombre total d’images dans tous les manifestes.
 
- ![Filtre de visionneuse de bibliothèque d’images](../../extensibility/internals/media/image-library-viewer-filter.png "filtre de visionneuse de bibliothèque d’images")
+ ![Visionneuse de bibliothèque d’images - Filtre](../../extensibility/internals/media/image-library-viewer-filter.png "Visionneuse de bibliothèque d’images - Filtre")
 
- Lors de la recherche pour les monikers d’image dans les manifestes existants, nous vous recommandons de rechercher et d’utiliser uniquement des monikers le Visual Studio Image du catalogue, autres monikers intentionnellement accessibles au public ou votre propre monikers personnalisés. Si vous utilisez des monikers non publics, interface utilisateur personnalisée est peut-être rompu ou ont ses images changé de façon inattendue si ou lorsque ces monikers non publics et les images sont modifiés ou mis à jour.
+ Lors de la recherche de surnoms d’image dans les manifestes existants, nous vous recommandons de rechercher et d’utiliser uniquement les surnoms du Visual Studio Image Catalog, d’autres surnoms volontairement accessibles au public, ou vos propres surnoms personnalisés. Si vous utilisez des surnoms non publics, l’interface utilisateur personnalisée peut être cassée ou faire changer ses images de manière inattendue si ou quand ces surnoms et images non publics sont modifiés ou mis à jour.
 
- En outre, il est possible de la recherche par GUID. Ce type de recherche est utile pour filtrer la liste à un seul manifeste, ou une sous-section unique d’un manifeste si ce manifeste contient plusieurs GUID.
+ En outre, la recherche par GUID est possible. Ce type de recherche est utile pour filtrer la liste à un seul manifeste, ou sous-section unique d’un manifeste si ce manifeste contient plusieurs GUIDs.
 
- ![Filtre de visionneuse de bibliothèque GUID de l’image](../../extensibility/internals/media/image-library-viewer-filter-guid.png "filtre de visionneuse de bibliothèque GUID de l’Image")
+ ![Visionneuse de bibliothèque d’images - GUID de filtre](../../extensibility/internals/media/image-library-viewer-filter-guid.png "Visionneuse de bibliothèque d’images - GUID de filtre")
 
- Enfin, la recherche par ID est possible également.
+ Enfin, la recherche par PIÈCE d’identité est possible ainsi.
 
- ![ID de filtre de visionneuse de bibliothèque de l’image](../../extensibility/internals/media/image-library-viewer-filter-id.png "ID de filtre de visionneuse de bibliothèque de l’Image")
+ ![Visionneuse de bibliothèque d’images - ID de filtre](../../extensibility/internals/media/image-library-viewer-filter-id.png "Visionneuse de bibliothèque d’images - ID de filtre")
 
 ## <a name="notes"></a>Notes
 
-- Par défaut, l’outil permet d’extraire plusieurs manifestes d’images présents dans le répertoire d’installation de Visual Studio. Est le seul qui a des monikers publiquement consommables le **Microsoft.VisualStudio.ImageCatalog** manifeste. GUID : ae27a6b0-e345-4288-96df-5eaf394ee369 (faire **pas** remplacer ce GUID dans un manifeste personnalisé) Type : KnownMonikers
+- Par défaut, l’outil tirera dans plusieurs manifestes d’image présents dans le répertoire d’installation Visual Studio. Le seul qui a publiquement des surnoms consommables est le manifeste **Microsoft.VisualStudio.ImageCatalog.** GUID: ae27a6b0-e345-4288-96df-5eaf394ee369 (ne **remplacez pas** ce GUID dans un manifeste personnalisé) Type: KnownMonikers
 
-- L’outil tente de lancement pour charger tous les manifestes d’image qu’il trouve, donc il peut prendre plusieurs secondes pour l’application s’affiche réellement. Il peut également être lente ou ne répondent pas lors du chargement des manifestes.
+- L’outil tente de lancer pour charger toutes les manifestations d’image qu’il trouve, de sorte qu’il pourrait prendre plusieurs secondes pour l’application à apparaître réellement. Il peut également être lent ou non réactif pendant le chargement des manifestes.
 
-## <a name="sample-output"></a>Résultat de l'exemple
- Cet outil ne génère pas de sortie.
+## <a name="sample-output"></a>Exemple de sortie
+ Cet outil ne génère aucune sortie.

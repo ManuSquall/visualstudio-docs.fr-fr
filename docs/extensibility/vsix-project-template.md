@@ -1,88 +1,88 @@
 ---
-title: Modèle de projet VSIX | Microsoft Docs
+title: Modèle de projet VSIX (fr) Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - deploy packages
 - publish extension
 ms.assetid: b6c82167-e2a5-4cff-8c8b-2d72e2a9092c
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: cc2600a6c72e13ba7d894dab84f0b8a171d5a43e
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 74791a77ee1c720fb60876a1efa6bd58fa94f68b
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66322837"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80697937"
 ---
 # <a name="vsix-project-template"></a>Modèle de projet VSIX
 
-Vous pouvez utiliser le modèle de projet VSIX pour encapsuler une ou plusieurs extensions de Visual Studio dans un projet VSIX et puis publier le package sur le [Visual Studio Marketplace](https://marketplace.visualstudio.com/) site Web.
+Vous pouvez utiliser le modèle vsIX Project pour envelopper une ou plusieurs extensions Visual Studio dans un projet VSIX, puis publier le paquet sur le site Web [Visual Studio Marketplace.](https://marketplace.visualstudio.com/)
 
- Déploiement VSIX prend en charge les VSPackages, assemblys, MEF composants, modèles de projet, modèles d’élément, les contrôles de boîte à outils et types d’extension personnalisée.
+ Le déploiement VSIX prend en charge VSPackages, assemblages, composants MEF, modèles de projets, modèles d’éléments, contrôles de boîte à outils et types d’extension personnalisés.
 
 > [!NOTE]
-> Pour utiliser des projets VSIX, vous devez installer le SDK Visual Studio. Pour plus d’informations sur le SDK Visual Studio, consultez [Visual Studio SDK](../extensibility/visual-studio-sdk.md).
+> Pour utiliser les projets VSIX, vous devez installer le Visual Studio SDK. Pour plus d’informations sur le Visual Studio SDK, voir [Visual Studio SDK](../extensibility/visual-studio-sdk.md).
 
 ## <a name="where-to-find-the-vsix-project-template"></a>Où trouver le modèle de projet VSIX
 
-Le modèle de projet VSIX est disponible dans le **nouveau projet** boîte de dialogue en recherchant « vsix ».  Il est à la fois un C# et la version de Visual Basic.
+Le modèle de projet VSIX est disponible dans la boîte de dialogue **du nouveau projet** en recherchant le « vsix ».  Il existe à la fois une version C et Visual Basic.
 
 > [!TIP]
-> Vous devez vous assurer que .NET Framework 4.5 ou version ultérieure est spécifié dans la zone de liste déroulante en haut de la **nouveau projet** boîte de dialogue.
+> Vous devez vous assurer que le cadre .NET 4.5 ou plus est spécifié dans la case de liste de décrochage en haut du dialogue **du nouveau projet.**
 
 ## <a name="uses-of-the-vsix-project-template"></a>Utilisations du modèle de projet VSIX
 
-Le modèle de projet VSIX a deux utilisations principales :
+Le modèle de projet VSIX a deux utilisations principales :
 
-- Pour déployer des modèles de projet, les modèles d’élément et les extensions.
+- Pour déployer des modèles de projet, des modèles d’éléments et des extensions.
 
-- Pour inclure les sorties de plusieurs extensions dans le package de déploiement.
+- Pour envelopper les sorties de plusieurs extensions en un seul paquet de déploiement.
 
-## <a name="packaging-an-extension-in-an-empty-vsix-project"></a>Empaquetage d’une extension dans un projet VSIX vide
+## <a name="packaging-an-extension-in-an-empty-vsix-project"></a>Emballage d’une extension dans un projet VSIX vide
 
-Vous pouvez empaqueter une extension existante ou une extension qui ne dispose pas déjà VSIX prennent en charge, en l’encapsulant dans un projet VSIX vide. L’extension à encapsuler doit être d’un type qui est pris en charge par le [schéma VSIX](../extensibility/vsix-extension-schema-2-0-reference.md).
+Vous pouvez emballer une extension existante, ou une extension qui n’a pas déjà de support VSIX, en l’enveloppant dans un projet VSIX vide. L’extension à envelopper doit être d’un type qui est soutenu par le [schéma VSIX](../extensibility/vsix-extension-schema-2-0-reference.md).
 
-### <a name="to-package-an-extension-by-using-a-vsix-project"></a>Pour un package d’extension à l’aide d’un projet VSIX
+### <a name="to-package-an-extension-by-using-a-vsix-project"></a>Pour emballer une extension en utilisant un projet VSIX
 
-1. Générer les projets qui composent votre extension.
+1. Construisez les projets qui composent votre extension.
 
-2. Créez un projet VSIX à l’aide de la **projet VSIX** modèle.
+2. Créez un projet VSIX en utilisant le modèle **de projet VSIX.**
 
-    *Source.extension.vsixmanifest* s’ouvre dans **Concepteur de manifeste**.
+    *Source.extension.vsixmanifest* ouvre dans **Manifest Designer**.
 
-3. Sur le **actifs** , choisir le **New** bouton.
+3. Sur l’onglet **Actifs,** choisissez le **nouveau** bouton.
 
-    Le **ajouter un nouveau composant** boîte de dialogue s’affiche.
+    La boîte de dialogue **Add New Asset** apparaît.
 
-4. Dans le **Type** liste, choisissez le type d’extension à ajouter.
+4. Dans la liste **type,** choisissez le type d’extension à ajouter.
 
-5. Pour ajouter un élément d’extension ou le contenu qui est inclus dans la solution actuelle (par exemple, un modèle d’élément ou un assembly compilé), procédez comme suit :
+5. Pour ajouter un élément d’extension ou de contenu inclus dans la solution actuelle (par exemple, un modèle d’élément ou un assemblage compilé), effectuez les étapes suivantes :
 
-   1. Dans le **Source** , choisissez **un projet dans la solution actuelle**.
+   1. Dans la liste **Source,** choisissez **un projet dans la solution actuelle**.
 
-   2. Dans le **projet** , sélectionnez le nom de l’extension.
+   2. Dans la liste **du projet,** choisissez le nom de l’extension.
 
-   3. Dans le **incorporé dans ce dossier** , entrez le nom d’un dossier dans lequel incorporer la ressource, puis choisissez le **OK** bouton.
+   3. Dans **l’Embed dans cette** boîte de dossier, entrez le nom d’un dossier dans lequel intégrer l’actif, puis choisissez le bouton **OK.**
 
-6. Pour ajouter une extension ou un élément de contenu qui n’est pas inclus dans la solution actuelle, procédez comme suit :
+6. Pour ajouter un élément d’extension ou de contenu qui n’est pas inclus dans la solution actuelle, effectuez les étapes suivantes :
 
-   1. Dans le **Source** zone de liste, choisissez **fichier sur le système de fichiers**.
+   1. Dans la case **source,** choisissez **Fichier sur le système de fichiers**.
 
-   2. Dans le **chemin d’accès** champ, entrez le chemin d’accès complet au fichier d’extension compilées ou compressé ou utilisez le **Parcourir** bouton pour accéder au fichier.
+   2. Dans le champ **Path,** entrez le chemin complet vers le fichier d’extension compilé ou compressé, ou utilisez le bouton **Parcourir** pour naviguer vers le fichier.
 
-   3. Dans le **incorporé dans ce dossier** , entrez le nom d’un dossier dans lequel incorporer la ressource, puis choisissez le **OK** bouton.
+   3. Dans **l’Embed dans cette** boîte de dossier, entrez le nom d’un dossier dans lequel intégrer l’actif, puis choisissez le bouton **OK.**
 
-7. Si vous souhaitez que votre package pour inclure des extensions supplémentaires, ajoutez-les de la même manière.
+7. Si vous voulez que votre colis inclue des extensions supplémentaires, ajoutez-les de la même manière.
 
 8. Générez la solution.
 
-    [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] génère un *.vsix* fichier qui contient un fichier de manifeste VSIX, un fichier [Content_Types] *.xml* fichier et toutes les ressources de l’extension que vous avez ajouté au projet.
+    [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]construit un fichier *.vsix* qui contient un fichier manifeste VSIX, un fichier [Content_Types]*.xml,* et tous les actifs de vulgarisation que vous avez ajouté au projet.
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Référence de schéma 2.0 d’extension VSIX](../extensibility/vsix-extension-schema-2-0-reference.md)
+- [SCHÉMA d’extension VSIX 2.0 référence](../extensibility/vsix-extension-schema-2-0-reference.md)
 - [Rechercher et utiliser des extensions Visual Studio](../ide/finding-and-using-visual-studio-extensions.md)
