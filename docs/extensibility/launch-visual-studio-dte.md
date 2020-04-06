@@ -3,39 +3,39 @@ title: Lancer Visual Studio à l’aide de DTE
 titleSuffix: ''
 ms.date: 04/26/2019
 ms.topic: conceptual
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 79af14e80ef39b0cad732dcd0c9f37af1481bd4c
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 3217835571ac659ac2cef2b46cb45a1c02ba2584
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75590629"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80703042"
 ---
 # <a name="launch-visual-studio-using-dte"></a>Lancer Visual Studio à l’aide de DTE
 
-À compter de Visual Studio 2017, le mécanisme de lancement de Visual Studio à l’aide de DTE est différent du lancement des versions antérieures de Visual Studio. Cette modification est nécessaire, car Visual Studio 2017 et versions ultérieures prennent en charge les installations côte à côte des versions majeures (par exemple, vous pouvez avoir un aperçu et une version finale installés côte à côte).
+À partir de Visual Studio 2017, le mécanisme de lancement de Visual Studio à l’aide de DTE est différent du lancement des versions précédentes de Visual Studio. Ce changement est nécessaire car Visual Studio 2017 et prend en charge plus tard les installations côte à côte des versions majeures (par exemple, vous pouvez avoir un aperçu et une version de version installée côte à côte).
 
-Le reste de cet article montre le code que vous pouvez utiliser pour lancer Visual Studio 2019 à l’aide de DTE.
+Le reste de cet article affiche le code que vous pouvez utiliser pour lancer Visual Studio 2019 à l’aide de DTE.
 
 ## <a name="set-up-the-project"></a>Configuration du projet
 
-Pour voir le code de lancement en action, créez un projet en procédant comme suit.
+Pour voir le code de lancement en action, créez un projet en suivant ces étapes.
 
-1. Créez un projet d' **application console** pour le .NET Framework.
+1. Créez un nouveau projet **Console App** pour le cadre .NET.
 
-2. Installez le package NuGet [Microsoft. VisualStudio. Setup. Configuration. Interop](https://www.nuget.org/packages/Microsoft.VisualStudio.Setup.Configuration.Interop/) et ajoutez une référence à l’assembly.
+2. Installez le package [Microsoft.VisualStudio.Setup.Configuration.Interop](https://www.nuget.org/packages/Microsoft.VisualStudio.Setup.Configuration.Interop/) NuGet et ajoutez une référence à l’assemblage.
 
 3. Ajoutez une référence à EnvDTE.
 
-4. Collez l' [exemple de code](#example-code) qui suit dans le fichier *Program.cs* .
+4. Collez le [code d’exemple](#example-code) qui suit dans le *fichier Program.cs.*
 
-5. Appuyez sur **F5** pour exécuter le programme. Vous devez voir Visual Studio 2019 ouvert avant que le programme ne s’arrête.
+5. Appuyez **sur F5** pour exécuter le programme. Vous devriez voir Visual Studio 2019 ouvert avant la sortie du programme.
 
-## <a name="example-code"></a>exemple de code
+## <a name="example-code"></a>Exemple de code
 
 ```csharp
 using Microsoft.VisualStudio.Setup.Configuration;
@@ -188,4 +188,4 @@ namespace ConsoleLauncherApp
 ## <a name="see-also"></a>Voir aussi
 
 - [Localiser Visual Studio](locating-visual-studio.md)
-- [Procédure pas à pas : accès à l’objet DTE à partir d’une extension d’éditeur](walkthrough-accessing-the-dte-object-from-an-editor-extension.md)
+- [Procédure pas à pas : Accédez à l’objet DTE à partir d’une extension de l’éditeur](walkthrough-accessing-the-dte-object-from-an-editor-extension.md)

@@ -3,17 +3,17 @@ title: Images et icônes pour Visual Studio (fr) Microsoft Docs
 ms.date: 04/26/2017
 ms.topic: conceptual
 ms.assetid: f410325e-9cf2-4f39-b6d7-b672121c2691
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1e449fb30bd95319a46d1db50da63778f6800a70
-ms.sourcegitcommit: 95f26af1da51d4c83ae78adcb7372b32364d8a2b
+ms.openlocfilehash: dfef803d2bffb19cc54974465c7892b4d68ff3d6
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79303196"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80699049"
 ---
 # <a name="images-and-icons-for-visual-studio"></a>Images et icônes pour Visual Studio
 ## <a name="image-use-in-visual-studio"></a><a name="BKMK_ImageUseInVisualStudio"></a>Utilisation de l’image dans Visual Studio
@@ -36,7 +36,7 @@ ms.locfileid: "79303196"
 
 ## <a name="icon-design"></a><a name="BKMK_IconDesign"></a>Conception d’icône
 
-### <a name="overview"></a>Vue d’ensemble
+### <a name="overview"></a>Vue d'ensemble
  Visual Studio utilise des icônes de style moderne, qui ont une géométrie propre et un équilibre 50/50 de positif / négatif (lumière / obscurité), et utiliser des métaphores directes et compréhensibles. Les points cruciaux de conception d’icônes se concentrent autour de la clarté, de la simplification et du contexte.
 
 - **Clarté :** concentrez-vous sur la métaphore centrale qui donne à une icône son sens et son individualité.
@@ -102,7 +102,7 @@ ms.locfileid: "79303196"
 
 ### <a name="style-details"></a>Détails de style
 
-#### <a name="layout"></a>Disposition
+#### <a name="layout"></a>Mise en page
  Stack éléments comme indiqué pour les icônes 16x16 standard:
 
  ![Pile de disposition pour les icônes 16x16](../../extensibility/ux-guidelines/media/0404-15_layoutstack.png "0404-15_LayoutStack")<br />Pile de disposition pour les icônes 16x16
@@ -247,7 +247,7 @@ ms.locfileid: "79303196"
 
 ## <a name="using-color-in-images"></a><a name="BKMK_UsingColorInImages"></a>Utilisation de la couleur dans les images
 
-### <a name="overview"></a>Vue d’ensemble
+### <a name="overview"></a>Vue d'ensemble
  Les icônes de Visual Studio sont principalement monochromes. La couleur est réservée pour transmettre des informations spécifiques et jamais pour la décoration. La couleur est utilisée:
 
 - pour indiquer une action
@@ -269,7 +269,7 @@ ms.locfileid: "79303196"
 ### <a name="base-palette"></a>Palette de base
  Toutes les icônes standard contiennent trois couleurs de base. Les icônes ne contiennent pas de gradients ou d’ombres de chute, à une ou deux exceptions près pour les icônes à outils 3D.
 
-|Usage|Nom|Valeur (thème léger)|Swatch| Exemple|
+|Usage|Nom|Valeur (thème léger)|Swatch|Exemple|
 |-----------|----------|---------------------------|------------|-------------|
 |Contexte/Dark|VS BG|424242 / 66,66,66|![Échantillon 424242](../../extensibility/ux-guidelines/media/0405_424242.png "0405_424242")|![Exemple de palette de base](../../extensibility/ux-guidelines/media/0405-02_basepaletteexample.png "0405-02_BasePaletteExample")|
 |Au premier plan/Lumière|VS FG|F0EFF1 / 240 239 241|![Échantillon F0EFF1](../../extensibility/ux-guidelines/media/0405_f0eff1.png "0405_F0EFF1")||
@@ -325,7 +325,7 @@ ms.locfileid: "79303196"
 
 #### <a name="folder"></a>Dossier
 
-|Usage|Nom|Valeur (tous les thèmes)|Swatch| Exemple|
+|Usage|Nom|Valeur (tous les thèmes)|Swatch|Exemple|
 |-----------|----------|--------------------------|------------|-------------|
 |Dossiers|Dossier|DCB67A / 220 182 122|![Échantillon DCB67A](../../extensibility/ux-guidelines/media/0405_dcb67a.png "0405_DCB67A")|![Icône de couleur de dossier](../../extensibility/ux-guidelines/media/0405-23_foldercolor.png "0405-23_FolderColor")|
 

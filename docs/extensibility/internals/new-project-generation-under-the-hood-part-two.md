@@ -1,36 +1,36 @@
 ---
-title: 'Nouvelle génération de projet : Sous le capot, deuxième partie | Microsoft Docs'
+title: 'Nouvelle génération de projets : Sous le capot, deuxième partie Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - projects [Visual Studio], new project dialog
 - projects [Visual Studio], new project generation
 ms.assetid: 73ce91d8-0ab1-4a1f-bf12-4d3c49c01e13
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4ea614be39456f5d6a31ea6c9c12221b4db09bbd
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 8692f2012e5f2733982f04e35a7fed415e49c636
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66311020"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80707024"
 ---
-# <a name="new-project-generation-under-the-hood-part-two"></a>Nouvelle génération de projet : Rouages du système, seconde partie
+# <a name="new-project-generation-under-the-hood-part-two"></a>Génération de nouveau projet : les rouages du système, partie 2
 
-Dans [nouvelle génération de projet : En coulisses, une partie](../../extensibility/internals/new-project-generation-under-the-hood-part-one.md) nous l’avons vu comment le **nouveau projet** boîte de dialogue boîte est remplie. Supposons que vous avez sélectionné un **Application Windows Visual c#** , renseigné le **nom** et **emplacement** zones de texte et cliquer sur OK.
+Dans [New Project Generation: Under the Hood, La première partie,](../../extensibility/internals/new-project-generation-under-the-hood-part-one.md) nous avons vu comment la boîte de dialogue **du nouveau projet** est peuplée. Supposons que vous avez sélectionné une **application Windows Visual C,** rempli les boîtes de texte **nom** et **localisation,** et cliqué sur OK.
 
-## <a name="generating-the-solution-files"></a>Génération des fichiers de Solution
- Choix d’un modèle d’application dirige [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] à décompresser et ouvrir le fichier .vstemplate correspondant et de lancer un modèle pour interpréter les commandes XML dans ce fichier. Ces commandes créent des projets et éléments de projet dans la solution nouvelle ou existante.
+## <a name="generating-the-solution-files"></a>Génération des fichiers solutions
+ Le choix d’un modèle d’application permet [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] de décompresser et d’ouvrir le fichier .vstemplate correspondant, et de lancer un modèle pour interpréter les commandes XML dans ce fichier. Ces commandes créent des projets et des éléments de projet dans la solution nouvelle ou existante.
 
- Le modèle décompresse les fichiers sources, appelés modèles d’élément, à partir du même dossier .zip qui contient le fichier .vstemplate. Le modèle copie ces fichiers dans le nouveau projet, leur personnalisation en conséquence.
+ Le modèle déballe les fichiers source, appelés modèles d’éléments, à partir du même dossier .zip qui détient le fichier .vstemplate. Le modèle copie ces fichiers au nouveau projet, les personnalisant en conséquence.
 
-### <a name="template-parameter-replacement"></a>Remplacement des paramètres de modèle
- Lorsque le modèle copie un modèle d’élément à un nouveau projet, il remplace les paramètres de modèle avec des chaînes pour personnaliser le fichier. Un paramètre de modèle est un jeton spécial qui est précédé et suivi d’un signe dollar, par exemple, un $date$.
+### <a name="template-parameter-replacement"></a>Remplacement du paramètre de modèle
+ Lorsque le modèle copie un modèle d’élément à un nouveau projet, il remplace tous les paramètres du modèle par des chaînes pour personnaliser le fichier. Un paramètre de modèle est un jeton spécial qui est précédé et suivi d’un signe en dollars, par exemple, $date$.
 
- Examinons un modèle d’élément de projet standard. Extraire et examiner le fichier Program.cs dans le dossier 8\Common7\IDE\ProjectTemplates\CSharp\Windows\1033\WindowsApplication.zip Program Files\Microsoft Visual Studio.
+ Examinons un modèle d’élément de projet typique. Extraire et examiner Program.cs dans le dossier De programme Files-Microsoft Visual Studio 8-Common7-IDE-ProjectTemplates-CSharp-Windows.1033-WindowsApplication.zip.
 
 ```csharp
 using System;
@@ -46,7 +46,7 @@ namespace $safeprojectname$
 }
 ```
 
-Si vous créez un nouveau projet d’application Windows nommé Simple, le modèle remplace le `$safeprojectname$` paramètre portant le nom du projet.
+Si vous créez un nouveau projet d’application `$safeprojectname$` Windows nommé Simple, le modèle remplace le paramètre par le nom du projet.
 
 ```csharp
 using System;
@@ -64,8 +64,8 @@ namespace Simple
 
  Pour obtenir une liste exhaustive des paramètres de modèle, consultez [Paramètres de modèle](../../ide/template-parameters.md).
 
-## <a name="a-look-inside-a-vstemplate-file"></a>Un coup de œil à l’intérieur d’un. Fichier VSTemplate
- Un fichier .vstemplate de base est au format
+## <a name="a-look-inside-a-vstemplate-file"></a>Un regard à l’intérieur d’un . Fichier VSTemplate
+ Un fichier de base .vstemplate a ce format
 
 ```xml
 <VSTemplate Version="2.0.0"     xmlns="http://schemas.microsoft.com/developer/vstemplate/2005"     Type="Project">
@@ -76,9 +76,9 @@ namespace Simple
 </VSTemplate>
 ```
 
- Nous avons étudié le \<TemplateData > section dans le [nouvelle génération de projet : Sous le capot, première partie](../../extensibility/internals/new-project-generation-under-the-hood-part-one.md). Les étiquettes dans cette section sont utilisées pour contrôler l’apparence de la **nouveau projet** boîte de dialogue.
+ Nous avons \<examiné la section TemplateData> dans la [nouvelle génération de projet : Sous le capot, première partie.](../../extensibility/internals/new-project-generation-under-the-hood-part-one.md) Les balises de cette section sont utilisées pour contrôler l’apparence de la boîte de dialogue **du nouveau projet.**
 
- Les balises dans le \<TemplateContent > section contrôle la génération de nouveaux projets et éléments de projet. Voici le \<TemplateContent > section à partir du fichier cswindowsapplication.vstemplate dans le dossier \Program Files\Microsoft Visual Studio 8\Common7\IDE\ProjectTemplates\CSharp\Windows\1033\WindowsApplication.zip.
+ Les balises de la \<section TemplateContent> contrôlent la génération de nouveaux projets et éléments de projet. Voici la \<section TemplateContent> du fichier cswindowsapplication.vstemplate dans le dossier «Program Files-Microsoft Visual Studio 8-Common7-IDE-ProjectTemplates-CSharp-Windows-1033-WindowsApplication.zip».
 
 ```xml
 <TemplateContent>
@@ -112,26 +112,26 @@ namespace Simple
 </TemplateContent>
 ```
 
- Le \<projet > balise contrôle la génération d’un projet et le \<ProjectItem > balise contrôle la génération d’un élément de projet. Si le paramètre ReplaceParameters est true, le modèle sera personnaliser tous les paramètres de modèle dans le fichier projet ou l’élément. Dans ce cas, tous les éléments de projet sont personnalisés, à l’exception Settings.settings.
+ L’étiquette \<Project> contrôle la production d’un projet, et l’étiquette \<ProjectItem> contrôle la génération d’un élément de projet. Si le paramètre ReplaceParameters est vrai, le modèle personnalisera tous les paramètres du modèle dans le fichier ou l’élément du projet. Dans ce cas, tous les éléments du projet sont personnalisés, à l’exception de Paramètres.
 
- Le paramètre TargetFileName Spécifie le nom et le chemin d’accès relatif du fichier de projet résultant ou élément. Cela vous permet de créer une structure de dossier pour votre projet. Si vous ne spécifiez pas cet argument, l’élément de projet aura le même nom que le modèle d’élément de projet.
+ Le paramètre TargetFileName spécifie le nom et le parcours relatif du fichier ou de l’élément de projet qui en résulte. Cela vous permet de créer une structure de dossier pour votre projet. Si vous ne spécifiez pas cet argument, l’élément du projet portera le même nom que le modèle d’élément du projet.
 
- La structure de dossiers d’application Windows qui en résulte ressemble à ceci :
+ La structure de dossier d’application Windows qui en résulte ressemble à ceci :
 
  ![SimpleSolution](../../extensibility/internals/media/simplesolution.png "SimpleSolution")
 
- Le premier et unique \<projet > balise dans les lectures de modèle :
+ La première \<et unique étiquette de> du projet dans le modèle se lit comme suit :
 
 ```xml
 <Project File="WindowsApplication.csproj" ReplaceParameters="true">
 ```
 
- Cela indique le modèle de projet pour créer le fichier de projet Simple.csproj en copiant et en personnalisant le windowsapplication.csproj d’élément de modèle.
+ Cela demande au modèle New Project de créer le fichier de projet Simple.csproj en copiant et en personnalisant le modèle windowsapplication.csproj.
 
-### <a name="designers-and-references"></a>Concepteurs et références
- Vous pouvez voir dans l’Explorateur de solutions que le dossier Properties est présent et contient les fichiers attendus. Mais qu’en est-il de projet fait référence et les dépendances de fichier de concepteur, tels que Resources.Designer.cs à Resources.resx et Form1.Designer.cs pour Form1.cs ?  Ces paramétrées dans le fichier Simple.csproj lorsqu’il est généré.
+### <a name="designers-and-references"></a>Designers et Références
+ Vous pouvez voir dans le Solution Explorer que le dossier Propriétés est présent et contient les fichiers attendus. Mais qu’en est-il des références de projets et des dépendances de fichiers de concepteur, telles que Resources.Designer.cs à Resources.resx, et Form1.Designer.cs à Form1.cs?  Ceux-ci sont configurés dans le fichier Simple.csproj lorsqu’il est généré.
 
- Voici le \<ItemGroup > à partir de Simple.csproj qui crée les références de projet :
+ Voici le \<> ItemGroup de Simple.csproj qui crée les références du projet :
 
 ```xml
 <ItemGroup>
@@ -144,7 +144,7 @@ namespace Simple
 </ItemGroup>
 ```
 
- Vous pouvez voir que ce sont les références du projet de six qui apparaissent dans l’Explorateur de solutions. Voici une section d’un autre \<ItemGroup >. Nombre de lignes de code ont été supprimée par souci de clarté. De cette section, Settings.Designer.cs dépend Settings.settings :
+ Vous pouvez voir que ce sont les six références de projet qui apparaissent dans l’Explorer Solution. Voici une section d’un autre \<itemGroup>. De nombreuses lignes de code ont été supprimées pour plus de clarté. Cette section rend Settings.Designer.cs dépendante de Paramètres.paramètres :
 
 ```xml
 <ItemGroup>
@@ -156,5 +156,5 @@ namespace Simple
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Nouvelle génération de projet : Rouages du système, première partie](../../extensibility/internals/new-project-generation-under-the-hood-part-one.md)
+- [Génération de nouveau projet : les rouages du système, partie 1](../../extensibility/internals/new-project-generation-under-the-hood-part-one.md)
 - [MSBuild](../../msbuild/msbuild.md)

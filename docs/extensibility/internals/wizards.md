@@ -1,58 +1,58 @@
 ---
-title: Assistants | Microsoft Docs
+title: Les sorciers Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - projects [Visual Studio SDK], providing wizard support
 ms.assetid: 59d9a77f-ee80-474b-a14f-90f477ab717b
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e3b17d7ef3137c48ddda97e1b2b5bbf0e58cf5bb
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: d65cf2dcc10380b0ac750c8e1b0e7fd56eab95b5
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66312836"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80703207"
 ---
 # <a name="wizards"></a>Assistants
-Après avoir créé un Assistant, vous souhaiterez généralement ajouter à la [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] développement environnement intégré (IDE) afin que d’autres peuvent l’utiliser. L’Assistant Ajout apparaît alors dans le **ajouter un nouveau projet** ou **ajouter un nouvel élément** boîtes de dialogue. Pour voir les **ajouter un nouveau projet** ou **ajouter un nouvel élément** boîte de dialogue zones, cliquez sur une solution ouverte dans **l’Explorateur de solutions**, pointez sur **ajouter**, et puis cliquez sur **nouveau projet** ou **un nouvel élément**.
+Après avoir créé un assistant, vous voulez [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] généralement l’ajouter à l’environnement de développement intégré (IDE) afin que d’autres puissent l’utiliser. L’assistant ajouté apparaît alors dans les boîtes de dialogue **Add New Project** ou Ajouter de nouveaux **éléments.** Pour voir le **nouveau projet Ou** ajouter de nouvelles boîtes de dialogue **d’élément,** cliquez à droite sur une solution ouverte dans **Solution Explorer**, pointez **ajouter,** puis cliquez sur **nouveau projet** ou **nouvel article**.
 
- Assistants peuvent être implémentées dans [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] pour permettre aux utilisateurs sélectionnez à partir d’une arborescence de valeurs disponibles lorsqu’ils ouvrent le **ajouter un nouveau projet** boîte de dialogue ou la **ajouter un nouvel élément** boîte de dialogue, ou quand ils droit un élément dans **l’Explorateur de solutions**.
+ Les assistants peuvent [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] être implémenté pour permettre aux utilisateurs de choisir à partir d’une vue d’arbre des valeurs disponibles lorsqu’ils ouvrent la boîte de dialogue **Add New Project** ou la boîte de dialogue Add New **Item,** ou lorsqu’ils cliquez à droite sur un élément dans **Solution Explorer**.
 
- Dans l’Assistant, vous pouvez fournir la possibilité de localisation du nom d’un nouveau projet ou les ite, et vous pouvez déterminer l’icône que les utilisateurs verront lorsqu’ils sélectionnent l’Assistant. Vous pouvez également contrôler l’ordre dans lequel les nouveaux éléments apparaissent par rapport à d’autres éléments disponibles ; éléments n’ont pas d’être organisées par ordre alphabétique.
+ Dans votre assistant, vous pouvez fournir la possibilité de localisation du nom d’un nouveau projet ou ites, et vous pouvez déterminer l’icône que les utilisateurs verront quand ils choisissent l’assistant. Vous pouvez également contrôler l’ordre dans lequel de nouveaux éléments apparaissent par rapport à d’autres articles disponibles; articles n’ont pas besoin d’être organisés par ordre alphabétique.
 
- Vous pouvez également fournir un Assistant démarre différemment, selon les paramètres personnalisés qui sont passés à l’Assistant lorsqu’il est ouvert.
+ Vous pouvez également fournir un sorcier qui commence différemment, basé sur des paramètres personnalisés qui sont transmis à l’assistant quand il est ouvert.
 
- Les rubriques de cette section traitent les fichiers que vous implémentez pour provoquer la [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] **ajouter un nouveau projet** et **ajouter un nouvel élément** boîtes de dialogue pour votre Assistant parmi les Assistants disponibles et les modèles, liste et les exigences de votre Assistant doit respecter pour fonctionner correctement dans l’IDE.
+ Les sujets de cette section discutent des [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] fichiers que vous implémentez pour provoquer le **nouveau projet Et** ajouter de nouvelles boîtes de dialogue **d’élément** pour inscrire votre assistant parmi les assistants et les modèles disponibles, et les exigences que votre assistant doit satisfaire pour fonctionner correctement dans l’IDE.
 
 ## <a name="in-this-section"></a>Dans cette section
 - [Fichiers de description de répertoire de modèles (.Vsdir)](../../extensibility/internals/template-directory-description-dot-vsdir-files.md)
 
- Fournit une vue d’ensemble de quel modèle les fichiers de description de répertoire et explique leur fonctionnement dans l’IDE pour afficher les dossiers, les fichiers .vsz de l’Assistant et les fichiers de modèle qui sont associés à un projet dans les boîtes de dialogue.
+ Fournit un aperçu des fichiers de description d’annuaire de modèle et explique comment ils fonctionnent dans les dossiers d’affichage, les fichiers de .vsz de magicien, et les fichiers de modèle qui sont associés à un projet dans les boîtes de dialogue.
 
 - [Fichier Assistant (.Vsz)](../../extensibility/internals/wizard-dot-vsz-file.md)
 
- Explique comment l’IDE démarre les Assistants et répertorie les trois parties du fichier .vsz.
+ Explique comment l’IDE démarre les assistants et répertorie les trois parties du fichier .vsz.
 
 - [Interface de l’Assistant (IDTWizard)](../../extensibility/internals/wizard-interface-idtwizard.md)
 
- Décrit le `IDTWizard` interface Assistants doivent implémenter pour travailler dans l’IDE.
+ Décrit l’interface que les `IDTWizard` sorciers doivent mettre en œuvre pour travailler dans l’IDE.
 
-- [Paramètres de contexte](../../extensibility/internals/context-parameters.md)
+- [Paramètres contextuelles](../../extensibility/internals/context-parameters.md)
 
- Explique comment les Assistants sont implémentés et ce qui se produit lorsque l’IDE transmet les paramètres de contexte à l’implémentation.
+ Explique comment les assistants sont mis en œuvre et ce qui se produit lorsque l’IDE passe Paramètres contexte à la mise en œuvre.
 
 - [Paramètres personnalisés](../../extensibility/internals/custom-parameters.md)
 
- Explique comment utiliser les paramètres personnalisés pour contrôler le fonctionnement de l’Assistant une fois que l’Assistant est démarré.
+ Explique comment utiliser des paramètres personnalisés pour contrôler le fonctionnement de l’assistant après le début de l’assistant.
 
-## <a name="related-sections"></a>Rubriques connexes
+## <a name="related-sections"></a>Sections connexes
 - [Types de projets](../../extensibility/internals/project-types.md)
 
- Fournit des liens vers des rubriques supplémentaires qui offrent des informations sur la façon de concevoir de nouveaux types de projet.
+ Fournit des liens vers d’autres sujets qui offrent des informations sur la façon de concevoir de nouveaux types de projets.
 
 - [Extension des projets](../../extensibility/extending-projects.md)
 

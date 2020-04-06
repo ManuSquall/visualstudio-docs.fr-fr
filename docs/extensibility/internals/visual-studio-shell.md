@@ -1,80 +1,80 @@
 ---
-title: Shell Visual Studio | Microsoft Docs
+title: Visual Studio Shell - France Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - shell, Visual Studio
 - Visual Studio, shell
 ms.assetid: cb124ef4-1a6b-4bfe-bfbf-295ef9c07f36
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 60aa48da701857508f9b6fd7fc3d9d0c0603046e
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: fb89fc3b82dc7f142714608d8a669e368216c729
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72722054"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80704003"
 ---
 # <a name="visual-studio-shell"></a>Visual Studio Shell
-Le shell [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] est l’agent principal d’intégration dans [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. L’interpréteur de commandes fournit les fonctionnalités nécessaires pour permettre aux VSPackages de partager des services communs. Étant donné que l’objectif architectural de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] consiste à exercer des fonctionnalités principales dans les VSPackages, l’interpréteur de commandes est une infrastructure qui fournit des fonctionnalités de base et prend en charge la communication croisée entre ses VSPackages de composants.
+La [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] coquille est le principal [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]agent d’intégration dans . La coque fournit les fonctionnalités nécessaires pour permettre à VSPackages de partager des services communs. Parce que l’objectif architectural est de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] vest fonctionnalité primaire dans les VSPackages, la coquille est un cadre pour fournir des fonctionnalités de base et de soutenir la communication croisée entre ses composants VSPackages.
 
-## <a name="shell-responsibilities"></a>Responsabilités de l’interpréteur de commandes
- L’interpréteur de commandes a les responsabilités clés suivantes :
+## <a name="shell-responsibilities"></a>Responsabilités Shell
+ La coquille a les responsabilités clés suivantes :
 
-- Prise en charge (via des interfaces COM) éléments de base de l’interface utilisateur (IU). Il s’agit notamment des menus et barres d’outils par défaut, des cadres de fenêtre de document ou des fenêtres enfants MDI, ainsi que des frames de fenêtre d’outils et de la prise en charge de l’ancrage.
+- Soutenir (via les interfaces COM) les éléments de base de l’interface utilisateur (UI). Il s’agit notamment de menus par défaut et de barres d’outils, de cadres de fenêtre de documents ou de fenêtres pour enfants à interface multi-documents (MDI), de cadres de fenêtres d’outils et de support d’amarrage.
 
-- Gestion d’une liste en cours d’exécution de tous les documents actuellement ouverts dans une table de documents en cours d’exécution (RDT) afin de coordonner la persistance des documents et de garantir qu’un document ne peut pas être ouvert de plusieurs façons ou d’une manière incompatible.
+- Maintenir une liste d’exécution de tous les documents actuellement ouverts dans une table de documents en cours d’exécution (RDT) afin de coordonner la persistance des documents et de garantir qu’un document ne peut pas être ouvert de plus d’une manière, ou de manière incompatible.
 
-- Prise en charge de l’interface de routage de commande et de gestion de commande, `IOleCommandTarget`.
+- Soutenir l’interface de commande et `IOleCommandTarget`de commande-manipulation, .
 
-- Chargement des VSPackages aux moments appropriés. Le chargement différé d’un VSPackage est nécessaire pour améliorer les performances de l’interpréteur de commandes.
+- Chargement des VSPackages à des moments appropriés. Le chargement de retard d’un VSPackage est nécessaire pour améliorer les performances de la coquille.
 
-- La gestion de certains services partagés, tels que <xref:Microsoft.VisualStudio.Shell.Interop.SVsShell>, qui fournit des fonctionnalités d’interpréteur de commandes de base et <xref:Microsoft.VisualStudio.Shell.Interop.SVsUIShell>, qui fournit des fonctionnalités de fenêtrage de base.
+- Gestion de certains services <xref:Microsoft.VisualStudio.Shell.Interop.SVsShell>partagés, tels que <xref:Microsoft.VisualStudio.Shell.Interop.SVsUIShell>, qui fournit des fonctionnalités de base de la coquille, et , qui fournit des fonctionnalités de fenêtre de base.
 
-- Gestion des fichiers de solution (. sln). Les solutions contiennent des groupes de projets connexes, similaires aux fichiers d’espace de travail ( C++ . dsw) dans Visual 6,0.
+- Gestion des fichiers solution (.sln). Les solutions contiennent des groupes de projets connexes, semblables aux fichiers d’espace de travail (.dsw) dans visual C 6.0.
 
-- Suivi de la sélection à l’ensemble du shell, du contexte et de la devise. L’interpréteur de commandes effectue le suivi des types d’éléments suivants :
+- Suivi de la sélection, du contexte et de la monnaie à l’échelle de la coquille. La coque suit les types d’articles suivants :
 
-  - Le projet actif
+  - Le projet actuel
 
-  - Élément de projet actuel ou ItemID du <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> actuel
+  - L’élément de projet actuel ou ItemID le courant<xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy>
 
-  - Sélection actuelle pour la fenêtre **Propriétés** ou `SelectionContainer`
+  - La sélection actuelle pour la fenêtre **Propriétés** ou`SelectionContainer`
 
-  - ID de contexte d’interface utilisateur ou CmdUIGuids qui contrôlent la visibilité des commandes, menus et barres d’outils
+  - Les UDI de contexte d’interface utilisateur ou les scuids qui contrôlent la visibilité des commandes, des menus et des barres d’outils
 
-  - Éléments actuellement actifs, tels que la fenêtre active, le document et le gestionnaire d’annulation
+  - Les éléments actuellement actifs tels que la fenêtre active, le document et le gestionnaire de défaire
 
-  - Attributs de contexte de l’utilisateur qui pilotent l’aide dynamique
+  - Le contexte utilisateur attribue l’aide dynamique
 
-  L’interpréteur de commandes sert également à la communication entre les VSPackages installés et les services actuels. Il prend en charge les fonctionnalités principales de l’interpréteur de commandes et les met à disposition de tous les VSPackages intégrés dans [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Ces fonctionnalités principales incluent les éléments suivants :
+  La coquille assure également la médiation de la communication entre les VSPackages installés et les services actuels. Il prend en charge les caractéristiques de base de la [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]coquille et les met à la disposition de tous les VSPackages intégrés dans . Ces caractéristiques de base comprennent les éléments suivants :
 
-- Boîte de dialogue **à propos** de et écran de démarrage
+- **À propos de** la boîte de dialogue et de l’écran d’éclaboussure
 
-- Boîtes **de dialogue Ajouter un nouvel élément et ajouter un élément existant**
+- Ajouter de nouvelles boîtes de dialogue **d’objets et ajouter des** articles existants
 
-- Fenêtre **affichage de classes** et **Explorateur d’objets**
+- **Fenêtre de vue** de classe et **navigateur d’objet**
 
-- Boîte de dialogue **références**
+- **Boîtes** de dialogue de références
 
-- Fenêtre **structure du document**
+- **Fenêtre de contour de document**
 
-- Fenêtre **d’aide dynamique**
+- **Fenêtre d’aide dynamique**
 
-- **Rechercher** et **remplacer**
+- **Trouver** et **remplacer**
 
-- Boîtes de dialogue **ouvrir un projet** et **ouvrir un fichier** dans le menu **nouveau**
+- **Open Project** et **Open File** dialog boxes sur le **nouveau** menu
 
-- Boîte de dialogue **options** du menu **Outils**
+- Boîte de dialogue **d’options** sur le menu **Outils**
 
-- Fenêtre **Propriétés**
+- **Fenêtre de propriétés**
 
 - **Explorateur de solutions**
 
-- Fenêtre **liste des tâches**
+- **Fenêtre de la liste de** tâches
 
 - **Boîte à outils**
 

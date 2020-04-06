@@ -3,22 +3,22 @@ title: Modèles d’applications pour Visual Studio (fr) Microsoft Docs
 ms.date: 04/26/2017
 ms.topic: conceptual
 ms.assetid: 8ed68602-4e28-46fe-b39f-f41979b308a2
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 55044df3898b452e87ec877f9ae10dd12a2b1110
-ms.sourcegitcommit: 95f26af1da51d4c83ae78adcb7372b32364d8a2b
+ms.openlocfilehash: 036c95951fe3dc9e65a0f3338f75ae9867d721c3
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79303189"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80698597"
 ---
 # <a name="application-patterns-for-visual-studio"></a>Modèles d’application pour Visual Studio
 ## <a name="window-interactions"></a><a name="BKMK_WindowInteractions"></a>Interactions de fenêtre
 
-### <a name="overview"></a>Vue d’ensemble
+### <a name="overview"></a>Vue d'ensemble
 Les deux principaux types de fenêtres utilisés dans Visual Studio sont les éditeurs de documents et les fenêtres d’outils. Rares, mais possibles, sont de grands dialogues sans mode. Bien que ceux-ci sont tous sans mode dans la coquille, leurs modèles sont fondamentalement différents. Cette section couvre la différence entre les fenêtres de documents, les fenêtres d’outils et les dialogues sans mode. Les modèles de dialogue modal sont couverts dans [Dialogs](../../extensibility/ux-guidelines/application-patterns-for-visual-studio.md#BKMK_Dialogs).
 
 ### <a name="comparing-window-usage-patterns"></a>Comparaison des modèles d’utilisation des fenêtres
@@ -40,7 +40,7 @@ Réfléchissez bien au type de conteneur dont vous avez besoin. Les considérati
 
 ## <a name="tool-windows"></a><a name="BKMK_ToolWindows"></a>Fenêtres d’outils
 
-### <a name="overview"></a>Vue d’ensemble
+### <a name="overview"></a>Vue d'ensemble
 Les fenêtres d’outils prennent en charge le travail de l’utilisateur qui se déroule dans les fenêtres de documents. Ils peuvent être utilisés pour afficher une hiérarchie qui représente un objet racine fondamentale que Visual Studio fournit et peut manipuler.
 
 Lors de l’examen d’une nouvelle fenêtre d’outil dans l’IDE, les auteurs doivent :
@@ -151,7 +151,7 @@ Des exemples de fenêtres d’outils de liste navigable sont l’explorateur de 
 | --- | --- |
 | Autos ||
 | Immédiat ||
-| Output | La fenêtre de sortie peut être utilisée chaque fois que vous avez des événements textuels ou le statut à déclarer. |
+| Sortie | La fenêtre de sortie peut être utilisée chaque fois que vous avez des événements textuels ou le statut à déclarer. |
 | Mémoire ||
 | Points d’arrêt ||
 | Exécution en cours ||
@@ -359,7 +359,7 @@ Pour obtenir une conception et une fonctionnalité optimales avec vos dialogues,
 
 Pour des lignes directrices spécifiques à la mise en page, voir [Layout for Visual Studio](../../extensibility/ux-guidelines/layout-for-visual-studio.md).
 
-#### <a name="size"></a>Size
+#### <a name="size"></a>Taille
 Les dialogues doivent s’adapter dans une résolution minimale de l’écran 1024x768, et la taille initiale du dialogue ne doit pas dépasser 900x700 pixels. Les dialogues peuvent être résizables, mais ce n’est pas une exigence.
 
 Il y a deux recommandations pour les dialogues resizables :
@@ -475,7 +475,7 @@ Les projets devraient également maintenir des modèles d’interaction cohéren
 - Opérations de drag-and-drop
 
 ### <a name="drag-and-drop-interaction-model"></a>Modèle d’interaction Drag-and-drop
-Les projets se classent généralement comme des références basées sur des références (capables de ne persister que des références aux éléments de projet en stockage), à base d’annuaire (capable de ne persister que des éléments de projet stockés physiquement dans la hiérarchie d’un projet) ou mixtes (capables de persister les références ou des objets physiques). L’IDE accueille simultanément les trois types de projets au sein de la **Solution Explorer**.
+Les projets se classent généralement comme des références basées sur des références (capables de ne persister que des références aux éléments du projet en stockage), à base d’annuaire (capable de ne persister que des éléments de projet physiquement stockés dans la hiérarchie d’un projet) ou mixtes (capables de persister des références ou des éléments physiques). L’IDE accueille simultanément les trois types de projets au sein de la **Solution Explorer**.
 
 Du point de vue de la traînée et de la baisse, les caractéristiques suivantes devraient s’appliquer à chaque type de projet au sein de la **Solution Explorer**:
 

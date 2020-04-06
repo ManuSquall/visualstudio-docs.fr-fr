@@ -1,5 +1,5 @@
 ---
-title: Objet VSCodeWindow | Microsoft Docs
+title: Objet VSCodeWindow (fr) Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -8,31 +8,31 @@ helpviewer_keywords:
 - views [Visual Studio SDK], VSCodeWindow object
 - VsCodeWindow object
 ms.assetid: cf5fe926-e784-4098-bc01-cac49c7c55c6
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 36b7e0e6806f88efe373dffa3f21ba79baefb281
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.openlocfilehash: 55739b1ef577123ac0395b4c5cfb1e3c5dbc779f
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73189052"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80697958"
 ---
 # <a name="vscodewindow-object"></a>Objet VSCodeWindow
-Une fenêtre de code est une fenêtre de document spécialisée qui peut inclure un ou plusieurs affichages de texte, généralement l’objet <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextView>.
+Une fenêtre de code est une fenêtre de document spécialisée <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextView> qui peut inclure une ou plusieurs vues de texte, généralement l’objet.
 
- De l’architecture, la fenêtre de code est une fenêtre de document qui se trouve dans un cadre de fenêtre. Fonctionnellement, la fenêtre de code est simplement une fenêtre de document avec des fonctionnalités supplémentaires. Dans le mode d’interface multidocument (MDI, multiple-document interface), la fenêtre de code est le frame enfant MDI. Pour plus d’informations, consultez [Personnalisation des fenêtres de code à l’aide de l’API héritée](/visualstudio/extensibility/customizing-code-windows-by-using-the-legacy-api?view=vs-2015).
+ Architecturalement, la fenêtre de code est une fenêtre de document qui est dans un cadre de fenêtre. Fonctionnellement, la fenêtre de code est simplement une fenêtre de document avec des fonctionnalités supplémentaires. Dans le mode interface multi-documents (MDI), la fenêtre de code est le cadre pour enfant MDI. Pour plus d’informations, voir [Personnaliser les fenêtres de code en utilisant l’API hérité](/visualstudio/extensibility/customizing-code-windows-by-using-the-legacy-api?view=vs-2015).
 
- Le tableau suivant répertorie les interfaces de l’objet <xref:Microsoft.VisualStudio.TextManager.Interop.VsCodeWindow>.
+ Le tableau suivant comprend les <xref:Microsoft.VisualStudio.TextManager.Interop.VsCodeWindow> interfaces de l’objet.
 
 |Méthode|Description|
 |------------|-----------------|
-|<xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider>|Fournit un mécanisme d’accès générique pour rechercher un service identifié par un identificateur global unique (GUID).|
-|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindow>|Représente un enfant d’interface multidocument (MDI) contenant un ou plusieurs affichages de code.|
-|<xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowPane>|Remplit un frame de fenêtre.|
+|<xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider>|Fournit un mécanisme d’accès générique pour localiser un service qu’un identifiant unique à l’échelle mondiale (GUID) identifie.|
+|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindow>|Représente un enfant à interface documentaire multiple (MDI) contenant une ou plusieurs vues de code.|
+|<xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowPane>|Remplit un cadre de fenêtre.|
 
 ## <a name="see-also"></a>Voir aussi
 - <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider>
-- [Modifications des figures](https://www.microsoft.com/download/details.aspx?id=55984)
+- [Modification des chiffres](https://www.microsoft.com/download/details.aspx?id=55984)
