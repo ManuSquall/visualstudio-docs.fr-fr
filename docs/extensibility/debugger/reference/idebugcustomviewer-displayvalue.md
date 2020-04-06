@@ -1,5 +1,5 @@
 ---
-title: IDebugCustomViewer::DisplayValue | Microsoft Docs
+title: IDebugCustomViewer::DisplayValue - France Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugCustomViewer::DisplayValue
 ms.assetid: 7a538248-5ced-450e-97cd-13fabe35fb1c
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 9d6ff987e12e70a9d3dd443cfafc45d2698469b8
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 32e444d0d6a30484f708d3001b95e7a71856edd5
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66335701"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80732443"
 ---
 # <a name="idebugcustomviewerdisplayvalue"></a>IDebugCustomViewer::DisplayValue
 Cette méthode est appelée pour afficher la valeur spécifiée.
@@ -47,24 +47,24 @@ int DisplayValue(
 
 ## <a name="parameters"></a>Paramètres
 `hwnd`\
-[in] Fenêtre parente
+[dans] Fenêtre parent
 
 `dwID`\
-[in] ID de visionneuses personnalisées qui prennent en charge plusieurs types.
+[dans] ID pour les téléspectateurs personnalisés qui prennent en charge plus d’un type.
 
 `pHostServices`\
-[in] Réservée. Toujours défini sur null.
+[in] Réservée. Toujours mis à annuler.
 
 `pDebugProperty`\
-[in] Interface qui peut être utilisé pour récupérer la valeur à afficher.
+[dans] Interface qui peut être utilisée pour récupérer la valeur à afficher.
 
 ## <a name="return-value"></a>Valeur de retour
- En cas de réussite, retourne `S_OK`; sinon retourne le code d’erreur.
+ En cas `S_OK`de succès, les retours; retourne autrement le code d’erreur.
 
 ## <a name="remarks"></a>Notes
- L’affichage est « modal » dans la mesure où cette méthode créer la fenêtre nécessaires, afficher la valeur, attendre une entrée et fermez la fenêtre, tous avant de retourner à l’appelant. Cela signifie que la méthode doit gérer tous les aspects de l’affichage de la valeur de propriété, à partir de la création d’une fenêtre de sortie, à l’attente de l’entrée d’utilisateur, de la destruction de la fenêtre.
+ L’affichage est "modal" en ce que cette méthode va créer la fenêtre nécessaire, afficher la valeur, attendre l’entrée, et fermer la fenêtre, le tout avant de retourner à l’appelant. Cela signifie que la méthode doit gérer tous les aspects de l’affichage de la valeur de la propriété, de la création d’une fenêtre pour la sortie, à l’attente de l’entrée de l’utilisateur, à la destruction de la fenêtre.
 
- Pour prendre en charge la modification de la valeur sur la donnée [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md) de l’objet, vous pouvez utiliser la [SetValueAsStringWithError](../../../extensibility/debugger/reference/idebugproperty3-setvalueasstringwitherror.md) (méthode), si la valeur peut être exprimée sous forme de chaîne. Sinon, il est nécessaire de créer une interface personnalisée — exclusifs à l’évaluateur d’expression que l’implémentation de cela `DisplayValue` (méthode), sur le même objet qui implémente le `IDebugProperty3` interface. Cette interface personnalisée devriez normalement fournir des méthodes pour modifier les données d’une taille arbitraire ou de la complexité.
+ Pour soutenir la modification de la valeur de l’objet [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md) donné, vous pouvez utiliser la méthode [SetValueAsStringWithError](../../../extensibility/debugger/reference/idebugproperty3-setvalueasstringwitherror.md) , si la valeur peut être exprimée sous forme de chaîne. Sinon, il est nécessaire de créer une interface personnalisée, `DisplayValue` exclusive à l’évaluateur d’expression implémentant cette méthode, sur le même objet qui implémente l’interface. `IDebugProperty3` Cette interface personnalisée fournirait des méthodes pour modifier les données d’une taille ou d’une complexité arbitraires.
 
 ## <a name="see-also"></a>Voir aussi
 - [IDebugCustomViewer](../../../extensibility/debugger/reference/idebugcustomviewer.md)

@@ -1,5 +1,5 @@
 ---
-title: PROVIDER_FLAGS | Microsoft Docs
+title: PROVIDER_FLAGS Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - PROVIDER_FLAGS enumeration
 ms.assetid: 8cbd2312-ed2f-4477-b192-c3f25c6098c3
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 8408481efbcaa67ce60d2dbfc9166b5dd0fd5223
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: d2333b62f21aa7b2b2bc70bddb50cbb3983cedf5
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66350026"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80713820"
 ---
-# <a name="providerflags"></a>PROVIDER_FLAGS
-Spécifie les propriétés souhaitées doivent être obtenues à partir d’un fournisseur de programme.
+# <a name="provider_flags"></a>PROVIDER_FLAGS
+Spécifie les propriétés souhaitées à obtenir auprès d’un fournisseur de programme.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -54,28 +54,28 @@ public enum enum_PROVIDER_FLAGS {
 
 ## <a name="fields"></a>Champs
  `PFLAG_NONE`\
- Aucun indicateur n’est spécifié.
+ Aucun drapeau spécifié.
 
  `PFLAG_REMOTE_PORT`\
- L’appelant veut une liste des programmes sur un ordinateur différent de celui [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)].
+ Caller veut une liste de programmes [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)]sur une machine différente de .
 
  `PFLAG_DEBUGGEE`\
- Le processus est en cours de débogage par cette instance de [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)].
+ Le processus est actuellement débogé par [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)]cette instance de .
 
  `PFLAG_ATTACH_TODEBUGGEE`\
- [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] n’est attaché au programme en cours de débogage, mais ne la démarre pas.
+ [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)]est attaché au programme en cours de débocisation, mais ne l’a pas lancé.
 
  `PFLAG_REASON_WATCH`\
- [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] surveille les événements.
+ [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)]veille aux événements.
 
  `PFLAG_GET_PROGRAM_NODES`\
- L’appelant veut le `ProgramNodes` champ la [PROVIDER_PROCESS_DATA](../../../extensibility/debugger/reference/provider-process-data.md) structure.
+ Caller veut `ProgramNodes` le champ de la structure [PROVIDER_PROCESS_DATA.](../../../extensibility/debugger/reference/provider-process-data.md)
 
  `PFLAG_GET_IS_DEBUGGER_PRESENT`\
- L’appelant veut le `fIsTheDebuggerPresent` champ la `PROVIDER_PROCESS_DATA` structure.
+ L’appelant `fIsTheDebuggerPresent` veut le `PROVIDER_PROCESS_DATA` champ de la structure.
 
 ## <a name="remarks"></a>Notes
- Ces indicateurs sont passées aux méthodes suivantes :
+ Ces drapeaux sont transmis aux méthodes suivantes :
 
 - [WatchForProviderEvents](../../../extensibility/debugger/reference/idebugprogramprovider2-watchforproviderevents.md)
 
@@ -83,14 +83,14 @@ public enum enum_PROVIDER_FLAGS {
 
 - [GetProviderProcessData](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprocessdata.md)
 
-  Ces valeurs peuvent être combinées avec un opérateur de bits `OR`.
+  Ces valeurs peuvent être combinées avec un peu plus. `OR`
 
-## <a name="requirements"></a>Configuration requise
- En-tête : msdbg.h
+## <a name="requirements"></a>Spécifications
+ En-tête: msdbg.h
 
- Espace de noms : Microsoft.VisualStudio.Debugger.Interop
+ Namespace: Microsoft.VisualStudio.Debugger.Interop
 
- Assembly : Microsoft.VisualStudio.Debugger.Interop.dll
+ Assemblage: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>Voir aussi
 - [Énumérations](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)

@@ -1,5 +1,5 @@
 ---
-title: Élément CustomDataSignature (modèles Visual Studio) | Microsoft Docs
+title: CustomDataSignature Element (Visual Studio Templates) Microsoft Docs
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -7,20 +7,20 @@ helpviewer_keywords:
 - <CustomDataSignature> Element (Visual Studio Templates)
 - CustomDataSignature Element (Visual Studio Templates)
 ms.assetid: 8c3db51d-7014-4484-802a-15aa1353dbdb
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: db2b4d089495245d1a37469df1dc43a19be31866
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: ec8bae34da0f007bac65f26c4e442c1d03e56d08
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66351975"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80739441"
 ---
 # <a name="customdatasignature-element-visual-studio-templates"></a>Élément CustomDataSignature (modèles Visual Studio)
-Spécifie la signature de texte pour localiser les données personnalisées.
+Spécifie la signature du texte pour localiser les données personnalisées.
 
  \<VSTemplate> \<TemplateData> \<CustomDataSignature>
 
@@ -43,7 +43,7 @@ Spécifie la signature de texte pour localiser les données personnalisées.
 
 |Élément|Description|
 |-------------|-----------------|
-|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Élément requis.<br /><br /> Définit la catégorie du modèle et comment il est affiché dans un le **nouveau projet** ou **ajouter un nouvel élément** boîte de dialogue.|
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Élément requis.<br /><br /> Catégorise le modèle et définit comment il est affiché dans le **nouveau projet** ou la boîte de dialogue Add **New Item.**|
 
 ## <a name="text-value"></a>Valeur texte
  Une valeur texte est requise.
@@ -54,5 +54,5 @@ Spécifie la signature de texte pour localiser les données personnalisées.
  `CustomDataSignature` est un élément facultatif.
 
 ## <a name="see-also"></a>Voir aussi
-- [Référence de schéma de modèle de Studio Visual](../extensibility/visual-studio-template-schema-reference.md)
-- [Création de modèles de projets et d’éléments](../ide/creating-project-and-item-templates.md)
+- [Référence visuelle de schéma de modèle de studio de studio](../extensibility/visual-studio-template-schema-reference.md)
+- [Création de modèles de projets et d’objets](../ide/creating-project-and-item-templates.md)
