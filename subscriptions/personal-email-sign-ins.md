@@ -4,20 +4,20 @@ author: evanwindom
 ms.author: lank
 manager: lank
 ms.assetid: 3f4b0528-03f0-4a02-b3c3-a39292a9bbe1
-ms.date: 03/17/2020
+ms.date: 04/07/2020
 ms.topic: conceptual
 description: Abonnements Visual Studio – Pourquoi les adresses Hotmail ou Gmail de mes abonnés sont-elles affichées ?
-ms.openlocfilehash: 7cd6a4761efb7dcad7568bd0a95ba33141407055
-ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
+ms.openlocfilehash: e926caa8aef5a655b1f09ab8d6dbab1d70946827
+ms.sourcegitcommit: 1f7aed335c48215dff5c151f76f22e3f10e8b564
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "79550338"
+ms.lasthandoff: 04/07/2020
+ms.locfileid: "80808341"
 ---
 # <a name="visual-studio-subscriptions--why-do-i-see-personal-accounts-for-my-subscribers"></a>Abonnements Visual Studio - Pourquoi vois-je des comptes personnels pour mes abonnés ?
 Après que les entreprises ont migré du Volume Licensing Service Center (VLSC) vers le nouveau portail Visual Studio [Subscriptions Administration](https://manage.visualstudio.com), les administrateurs ont été surpris de constater que l’adresse e-mail « Connect-in » pour certains abonnés montre une adresse e-mail personnelle comme Hotmail ou Outlook.  Pour plus d’informations, regardez [cette vidéo](https://www.youtube.com/watch?v=J61EYaVN-dQ&list=PLReL099Y5nReJhZ6o8CQFPSBgzGCHX99_&index=6).
 
-## <a name="cause"></a>Cause :
+## <a name="cause"></a>Cause
 Ceci est dû à des processus de connexion qui ont été associés à l’expérience héritée pour les abonnés MSDN. Les utilisateurs ont été migrés du centre de gestion des licences en volume (VLSC) vers le portail d’administration des abonnements Visual Studio sans modifications. Les administrateurs ignoraient peut-être que des utilisateurs utilisaient des comptes personnels pour accéder aux avantages de leurs abonnements. Avant les migrations des abonnés Visual Studio, qui se sont terminées en 2016, deux actions étaient nécessaires pour pouvoir utiliser un abonnement de Visual Studio :
 1. L’administrateur « attribuait » l’abonnement à un abonné spécifique, à l’aide de son adresse e-mail professionnelle ou scolaire.
 2. L’abonné « activait » l’abonnement.
@@ -28,6 +28,9 @@ Au cours du processus d’activation de l’abonné, un compte Microsoft (MSA) �
 > L’expérience d’abonné moderne sur [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs) les types d’identité Work/School et Microsoft Account (MSA).
 
 ## <a name="solution"></a>Solution
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4th6B]
+
 Pour corriger le problème, il suffit de sélectionner le bouton **e-mails Connect** et le système tentera de faire correspondre les comptes avec les MSAs aux utilisateurs existants dans l’annuaire actif Azure de votre organisation (Azure AD) en fonction de l’appariement du prénom et du nom de famille. S’il y a une erreur, vous pouvez supprimer n’importe quel match en cliquant sur le **X** à droite du match.  
 
 > [!div class="mx-imgBorder"]

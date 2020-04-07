@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: lank
 manager: lank
 ms.assetid: 6601c395-f778-48c1-ab76-cf454b9193e4
-ms.date: 03/02/2020
+ms.date: 04/07/2020
 ms.topic: conceptual
 description: Découvrez les rôles Super administrateur et Administrateur, et comment affecter des administrateurs.
-ms.openlocfilehash: ce76a2aaf970926d171086e65ba2d364e1526d61
-ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
+ms.openlocfilehash: 234153dcb8dd06b33ab7aac78e587439684963f9
+ms.sourcegitcommit: 1f7aed335c48215dff5c151f76f22e3f10e8b564
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "80232752"
+ms.lasthandoff: 04/07/2020
+ms.locfileid: "80808376"
 ---
 # <a name="super-admins-and-administrators-for-visual-studio-subscription-agreements"></a>Super administrateurs et administrateurs pour les contrats d’abonnement Visual Studio
 
@@ -22,11 +22,13 @@ Il existe deux rôles différents dans le nouveau portail d’administration des
 
 **Administrateurs:** Un administrateur ne peut être assigné que par un super administrateur. Un administrateur ne peut gérer les abonnés que dans les accords que le super administrateur leur assigne.
 
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4th6L]
+
 ## <a name="assigning-administrators"></a>Affectation des administrateurs
 Pour affecter de nouveaux administrateurs :
 1. Connectez-vous à https://manage.visualstudio.com en utilisant une adresse e-mail qui est affectée en tant que super administrateur au contrat par le biais duquel les abonnements ont été achetés.
 2. Cliquez sur l’onglet libellé **Gérer les administrateurs**.
-3. Cliquez sur **Ajouter**.
+3. Cliquez sur **Add**.
    > [!div class="mx-imgBorder"]
    > ![Ajouter des administrateurs](_img/admin-roles/add-admins.png)
 4. Complétez le formulaire avec les informations du nouvel administrateur.  
@@ -39,7 +41,7 @@ Pour affecter de nouveaux administrateurs :
 5. Une fois que vous avez cliqué sur **Ajouter** pour affecter le nouvel administrateur, celui-ci reçoit un e-mail l’invitant à se connecter au portail.  
 
 ## <a name="resources"></a>Ressources
-- [Prise en charge des abonnements et de l’administration Visual Studio](https://visualstudio.microsoft.com/support/support-overview-vs)
+- [Prise en charge des abonnements et de l’administration de Visual Studio](https://visualstudio.microsoft.com/support/support-overview-vs)
 
 ## <a name="see-also"></a>Voir aussi
 - [Documentation Visual Studio](https://docs.microsoft.com/visualstudio/)

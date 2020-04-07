@@ -7,16 +7,18 @@ ms.assetid: 4c099fe8-883e-4789-9468-387ce5697dfe
 ms.date: 03/03/2020
 ms.topic: conceptual
 description: Découvrez comment bien démarrer avec la gestion des abonnements Visual Studio de votre organisation via le portail d’administration des abonnements.
-ms.openlocfilehash: 295bcd62efde8c24689c40e39ecef895e6a082c7
-ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
+ms.openlocfilehash: 279f1d926bd81bafd8fd79e5cdddbf67b96899f1
+ms.sourcegitcommit: 1f7aed335c48215dff5c151f76f22e3f10e8b564
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "80233164"
+ms.lasthandoff: 04/07/2020
+ms.locfileid: "80808361"
 ---
 # <a name="overview-of-the-visual-studio-subscriptions-administrator-portal"></a>Aperçu du portail d’administrateurs d’abonnements Visual Studio
 
 Le portail d’administration des abonnements Visual Studio vous offre les outils nécessaires pour gérer les abonnements de votre organisation dans un seul emplacement. 
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4t9aW]
 
 ## <a name="important-considerations"></a>Points importants à prendre en compte
 Quand vous utilisez le portail d’administration des abonnements Visual Studio, gardez à l’esprit les points suivants :
@@ -52,8 +54,8 @@ Pour plus d’informations sur l’accord que vous consultez, sélectionnez la d
 ## <a name="resources"></a>Ressources
 - [Livre blanc sur la gestion des licences Visual Studio](https://visualstudio.microsoft.com/wp-content/uploads/2019/06/Visual-Studio-Licensing-Whitepaper-May-2019.pdf)
 - [Comparer les options et les prix des abonnements](https://visualstudio.microsoft.com/vs/pricing)
-- [Comparer les fonctionnalités de l’IDE Visual Studio](https://visualstudio.microsoft.com/vs/compare)
-- [Prise en charge des abonnements et de l’administration Visual Studio](https://visualstudio.microsoft.com/support/support-overview-vs)
+- [Comparer les fonctionnalités IDE Visual Studio](https://visualstudio.microsoft.com/vs/compare)
+- [Prise en charge des abonnements et de l’administration de Visual Studio](https://visualstudio.microsoft.com/support/support-overview-vs)
 
 ## <a name="see-also"></a>Voir aussi
 - [Documentation Visual Studio](https://docs.microsoft.com/visualstudio/)
@@ -65,7 +67,7 @@ Pour plus d’informations sur l’accord que vous consultez, sélectionnez la d
 En savoir plus sur les responsabilités des administrateurs :
 - [Vue d’ensemble des responsabilités des administrateurs](admin-responsibilities.md)
 - [Inventaire de l’environnement de préproduction](admin-inventory.md)
-- [Gérer de grandes équipes et des fournisseurs externes](manage-teams.md)
+- [Gérer des grandes équipes et des prestataires externes](manage-teams.md)
 - [Suivre les affectations d’utilisateurs et traiter les commandes](assignments-orders.md)
 - Utiliser le rapport [Utilisation maximale](maximum-usage.md) pour suivre les engagements d’achat
 
