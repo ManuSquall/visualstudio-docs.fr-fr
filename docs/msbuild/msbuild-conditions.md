@@ -16,12 +16,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0d51aa0a5ef995abbe150160e378aa8885cc9706
-ms.sourcegitcommit: ce3d0728ec1063ab548dac71c8eaf26d20450acc
+ms.openlocfilehash: bbed62c13fc963af382ede113b138451303d9382
+ms.sourcegitcommit: 273b657e115c1756adb84e0e56b6f2c709bcee76
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/01/2020
-ms.locfileid: "80472686"
+ms.lasthandoff: 04/07/2020
+ms.locfileid: "80759713"
 ---
 # <a name="msbuild-conditions"></a>Conditions MSBuild
 
@@ -40,7 +40,7 @@ MSBuild prend en charge un ensemble spécifique `Condition` de conditions qui pe
 |()|Mécanisme de regroupement qui prend la valeur `true` si les expressions qu’il contient ont la valeur `true`.|
 |$if$ ( %expression% ), $else$, $endif$|Vérifie si la condition `%expression%` spécifiée correspond à la valeur de chaîne du paramètre de modèle personnalisé transmis. Si la condition `$if$` prend la valeur `true`, ses instructions sont exécutées ; dans le cas contraire, la condition `$else$` est vérifiée. Si la condition `$else$` a la valeur `true`, ses instructions sont exécutées. Dans le cas contraire, la condition `$endif$` met fin à l’évaluation de l’expression.<br /><br /> Pour des exemples d’utilisation, voir [Visual Studio projet / élément modèle de logique de paramètre](https://stackoverflow.com/questions/6709057/visual-studio-project-item-template-parameter-logic).|
 
-Vous pouvez utiliser des méthodes de chaîne dans des <xref:System.String.TrimEnd> conditions, comme le montre l’exemple suivant, dans lequel la fonction est utilisée pour comparer uniquement la partie pertinente de la chaîne, pour différencier entre .NET Framework et .NET Core cadres cibles.
+Vous pouvez utiliser des méthodes de chaîne dans des conditions, comme le montre l’exemple suivant, dans lequel la fonction [TrimEnd()](/dotnet/api/system.string.trimend) est utilisée pour comparer uniquement la partie pertinente de la chaîne, pour différencier entre .NET Framework et .NET Core cadres cibles.
 
 ```xml
 <Project Sdk="Microsoft.NET.Sdk">
