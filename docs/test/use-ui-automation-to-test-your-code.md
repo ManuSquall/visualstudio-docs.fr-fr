@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f3bd667579d9ff0645e7dd2753278257a9796709
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: f333cc3409056739cef7c378d9815f10439ab37e
+ms.sourcegitcommit: 5d1b2895d3a249c6bea30eb12b0ad7c0f0862d85
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75585637"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "80880362"
 ---
 # <a name="use-coded-ui-test-to-test-your-code"></a>Utiliser un test codé de l’interface utilisateur pour tester votre code
 
@@ -435,9 +435,14 @@ Vous pouvez analyser les tests codés de l’interface utilisateur à l’aide d
 
 ## <a name="whats-next"></a>Quelle est l’étape suivante ?
 
+::: moniker range="vs-2017"
 **Options supplémentaires pour exécuter les tests d’interface utilisateur codés :** Vous pouvez exécuter des tests d’interface utilisateur codés directement à partir de Visual Studio, comme décrit précédemment dans ce sujet. Vous pouvez également exécuter des tests automatisés de l’interface utilisateur dans Microsoft Test Manager ou avec Azure Pipelines. Quand les tests codés de l’interface utilisateur sont automatisés, ils doivent interagir avec le Bureau au moment où vous les exécutez, contrairement aux autres tests automatisés.
+::: moniker-end
+::: moniker range=">=vs-2019"
+**Options supplémentaires pour exécuter les tests d’interface utilisateur codés :** Vous pouvez exécuter des tests d’interface utilisateur codés directement à partir de Visual Studio, comme décrit précédemment dans ce sujet. En outre, vous pouvez exécuter des tests d’interface utilisateur automatisés à l’aide d’Azure Pipelines. Quand les tests codés de l’interface utilisateur sont automatisés, ils doivent interagir avec le Bureau au moment où vous les exécutez, contrairement aux autres tests automatisés.
+::: moniker-end
 
-- [Exécuter des tests unitaires avec Test Explorer](../test/run-unit-tests-with-test-explorer.md)
+- [Exécuter des tests unitaires avec l'Explorateur de tests](../test/run-unit-tests-with-test-explorer.md)
 
 - [Exécuter des tests dans le processus de build](/azure/devops/pipelines/test/getting-started-with-continuous-testing?view=vsts)
 
@@ -449,7 +454,7 @@ Vous pouvez analyser les tests codés de l’interface utilisateur à l’aide d
 
 - [Étendre des tests codés de l’interface utilisateur et des enregistrements des actions](../test/extending-coded-ui-tests-and-action-recordings-to-support-microsoft-excel.md)
 
-Les tests codés de l’interface utilisateur servent souvent à automatiser les tests manuels. Pour plus d’informations sur les tests manuels, consultez [Exécuter des tests manuels avec Microsoft Test Manager](/azure/devops/test/mtm/run-manual-tests-with-microsoft-test-manager?view=vsts). Pour plus d’informations sur les tests automatisés, consultez [Outils de test dans Visual Studio](../test/improve-code-quality.md).
+Les tests codés de l’interface utilisateur servent souvent à automatiser les tests manuels. Pour plus d’informations sur les tests automatisés, consultez [Outils de test dans Visual Studio](../test/improve-code-quality.md).
 
 ## <a name="see-also"></a>Voir aussi
 

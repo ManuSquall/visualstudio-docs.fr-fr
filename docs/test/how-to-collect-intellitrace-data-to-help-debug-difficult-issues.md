@@ -11,16 +11,16 @@ ms.assetid: 02b6716f-569e-4961-938a-e790a0c74b5c
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 826d16fa316340226df042b0d762d923c43d39c9
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: adc77ee87bbbf07d04fd7c01a554c7c074e5bf7f
+ms.sourcegitcommit: 5d1b2895d3a249c6bea30eb12b0ad7c0f0862d85
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75594771"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "80880219"
 ---
 # <a name="how-to-collect-intellitrace-data-to-help-debug-difficult-issues"></a>Guide pratique pour collecter des données IntelliTrace pour aider au débogage des problèmes difficiles
 
-Vous pouvez configurer l’adaptateur de données de diagnostic pour IntelliTrace pour collecter des informations de trace de diagnostic spécifiques dans Visual Studio. Avec cet adaptateur, le test peut collecter des événements de diagnostic significatifs pouvant être utilisés ultérieurement par un développeur pour repérer la cause d'un bogue dans le code. L'adaptateur de données de diagnostic pour IntelliTrace peut être utilisé pour des tests manuels ou automatisés.
+Vous pouvez configurer l’adaptateur de données diagnostiques pour IntelliTrace pour recueillir des informations spécifiques sur les traces diagnostiques dans Visual Studio. Avec cet adaptateur, le test peut collecter des événements de diagnostic significatifs pouvant être utilisés ultérieurement par un développeur pour repérer la cause d'un bogue dans le code. L'adaptateur de données de diagnostic pour IntelliTrace peut être utilisé pour des tests manuels ou automatisés.
 
 [!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
@@ -40,14 +40,24 @@ Les données collectées dans le fichier IntelliTrace accroissent l'efficacité 
 > [!WARNING]
 > L'adaptateur de données de diagnostic pour IntelliTrace fonctionne en instrumentant un processus managé, qui doit être exécuté après le chargement des tests de la série. Si le processus que vous souhaitez contrôler a déjà été lancé, aucun fichier IntelliTrace ne sera collecté car le processus est déjà en cours d'exécution. Pour éviter ce problème, assurez-vous que le processus est arrêté avant le chargement des tests. Ensuite, démarrez le processus après le chargement des tests ou le démarrage du premier test.
 
+::: moniker range="vs-2017"
 La procédure suivante décrit comment configurer les données IntelliTrace que vous souhaitez collecter. Ces étapes valent aussi bien pour l’éditeur de configuration de Microsoft Test Manager que pour la boîte de dialogue Paramètres de test de Visual Studio.
+::: moniker-end
+::: moniker range=">=vs-2019"
+La procédure suivante décrit comment configurer les données IntelliTrace que vous souhaitez collecter. Ces étapes s’appliquent à la boîte de dialogue Test Settings dans Visual Studio.
+::: moniker-end
 
 > [!NOTE]
 > Le compte d'utilisateur de l'agent de test qui est utilisé pour collecter les données IntelliTrace doit être membre du groupe Administrateurs. Pour plus d’informations, consultez [Installer et configurer des agents de test](../test/lab-management/install-configure-test-agents.md).
 
 ## <a name="configure-the-data-to-collect-with-the-intellitrace-diagnostic-data-adapter"></a>Configurer les données à collecter avec l'adaptateur de données de diagnostic IntelliTrace
 
+::: moniker range="vs-2017"
 Avant d’effectuer les opérations décrites dans cette procédure, vous devez ouvrir vos paramètres de test à partir de Microsoft Test Manager ou de Visual Studio, puis sélectionner la page **Données et diagnostics**.
+::: moniker-end
+::: moniker range=">=vs-2019"
+Avant d’effectuer les étapes de cette procédure, vous devez ouvrir les paramètres de test depuis Visual Studio, puis sélectionner la page **Données et diagnostics**.
+::: moniker-end
 
 ### <a name="to-configure-the-data-to-collect-with-the-intellitrace-diagnostic-data-adapter"></a>Pour configurer les données à collecter avec l'adaptateur de données de diagnostic IntelliTrace
 
@@ -103,10 +113,16 @@ Avant d’effectuer les opérations décrites dans cette procédure, vous devez 
     > [!NOTE]
     > Si vous augmentez la taille de l'enregistrement, un problème de délai d'expiration peut se produire lorsque vous enregistrez cet enregistrement avec vos résultats de test.
 
-12. Si vous utilisez Microsoft Test Manager, choisissez **Enregistrer**. Si vous utilisez Visual Studio, choisissez **OK**. Les paramètres IntelliTrace sont maintenant configurés et enregistrés pour vos paramètres de test.
+12. Si vous utilisez Microsoft Test Manager (déprécié dans Visual Studio 2017), choisissez **Save**. Si vous utilisez Visual Studio, choisissez **OK**. Les paramètres IntelliTrace sont maintenant configurés et enregistrés pour vos paramètres de test.
 
+    ::: moniker range="vs-2017"
     > [!NOTE]
     > Pour réinitialiser la configuration de cet adaptateur de données de diagnostic, choisissez **Rétablir la configuration par défaut** pour Visual Studio ou **Rétablir les valeurs par défaut** pour Microsoft Test Manager.
+    ::: moniker-end
+    ::: moniker range=">=vs-2019"
+    > [!NOTE]
+    > Pour réinitialiser la configuration de cet adaptateur de données diagnostiques, choisissez **Reset à la configuration par défaut** dans Visual Studio.
+    ::: moniker-end
 
 ## <a name="see-also"></a>Voir aussi
 

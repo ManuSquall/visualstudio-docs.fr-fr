@@ -9,12 +9,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: b02f8bf9542b5de4737d173835c011f59c3fdc86
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 499f335edabe77d001a1a2486e7b559abe6c7a8a
+ms.sourcegitcommit: 5d1b2895d3a249c6bea30eb12b0ad7c0f0862d85
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75847287"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "80880336"
 ---
 # <a name="use-a-lab-environment-for-your-devops"></a>Utiliser un environnement lab pour votre DevOps
 
@@ -53,6 +53,7 @@ Vous pouvez effectuer des tests automatisés et automatiser le cycle générer-d
 
 Pour plus d'informations, consultez [Utiliser Build ou Release Management](use-build-or-rm-instead-of-lab-management.md).
 
+::: moniker range="vs-2017"
 ## <a name="use-the-visual-studio-lab-management-features-of-microsoft-test-manager"></a>Utiliser les fonctionnalités de Visual Studio Lab Management de Microsoft Test Manager
 
 Vous pouvez créer et gérer des environnements lab avec les fonctionnalités de Visual Studio Lab Management de Microsoft Test Manager quand vous utilisez Visual Studio Enterprise.
@@ -136,6 +137,7 @@ Pour plus d’informations sur la configuration des environnements, consultez :
 * [Environnements lab standard](https://msdn.microsoft.com/library/ee390842.aspx)
 * [Environnements (virtuels) SCVMM](https://msdn.microsoft.com/library/ee943322.aspx)
 * [Création et utilisation d’un environnement isolé du réseau](https://msdn.microsoft.com/library/ee518924.aspx)
+::: moniker-end
 
 ## <a name="see-also"></a>Voir aussi
 

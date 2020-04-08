@@ -8,12 +8,12 @@ ms.assetid: ff275cfb-5df9-4710-9a91-9caabaaad34f
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 350640a4db6a81d19801aedb03d0d490895f97ef
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 685b22f25c7138c4c3e7c9068ba52864e40648e1
+ms.sourcegitcommit: 5d1b2895d3a249c6bea30eb12b0ad7c0f0862d85
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75589212"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "80880141"
 ---
 # <a name="how-to-configure-network-emulation-using-test-settings-in-visual-studio"></a>Guide pratique pour configurer l’émulation réseau à l’aide de paramètres de test dans Visual Studio
 
@@ -24,12 +24,19 @@ Vous pouvez configurer l’adaptateur de données de diagnostic pour tester votr
 
 [!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
+::: moniker range="vs-2017"
 La procédure suivante décrit comment configurer l'émulation de réseau à partir de l'éditeur de configuration. Ces étapes s’appliquent à l’éditeur de configuration de Microsoft Test Manager et Visual Studio.
+::: moniker-end
+::: moniker range=">=vs-2019"
+La procédure suivante décrit comment configurer l'émulation de réseau à partir de l'éditeur de configuration. Ces étapes s’appliquent à l’éditeur de configuration de Visual Studio.
+::: moniker-end
 
 > [!NOTE]
-> L'adaptateur de diagnostic de données de l'émulation de réseau s'applique uniquement aux paramètres de test Visual Studio. Il n’est pas utilisé pour les paramètres de test dans Microsoft Test Manager.
+> L'adaptateur de diagnostic de données de l'émulation de réseau s'applique uniquement aux paramètres de test Visual Studio. Il n’est pas utilisé pour les paramètres de test dans Microsoft Test Manager (déprécié dans Visual Studio 2017).
 
+::: moniker range="vs-2017"
 Un compte qui est doté de privilèges d'administrateur doit être utilisé pour l'émulation de réseau. Si vous avez sélectionné l’émulation réseau pour un rôle local qui exécute des tests manuels, vous devez démarrer Microsoft Test Manager en utilisant des privilèges d’administrateur. Si vous avez sélectionné l'émulation de réseau pour n'importe quel autre rôle, vous devez vérifier que l'agent de test de l'ordinateur correspondant à ce rôle utilise un compte d'utilisateur qui est membre du groupe Administrateurs. Pour plus d’informations sur la façon de configurer le compte de votre agent de test, consultez [Installer et configurer des agents de test](../test/lab-management/install-configure-test-agents.md).
+::: moniker-end
 
 > [!NOTE]
 > Le compte Service réseau, qui est le compte par défaut de l'agent de test, n'est pas membre du groupe Administrateurs.

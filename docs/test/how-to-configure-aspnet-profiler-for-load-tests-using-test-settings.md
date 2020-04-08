@@ -8,12 +8,12 @@ ms.assetid: 6832fe39-04d5-4d94-8a18-3e2730bad423
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 0132401df33bd65d7e328307167b6c228155bb42
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 07df32104394dffcd61d1561309b77e61593f6e6
+ms.sourcegitcommit: 5d1b2895d3a249c6bea30eb12b0ad7c0f0862d85
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "78169389"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "80880232"
 ---
 # <a name="how-to-configure-aspnet-profiler-for-load-tests-using-test-settings-in-visual-studio"></a>Guide pratique pour configurer le profileur ASP.NET pour les tests de charge à l’aide de paramètres de test dans Visual Studio
 
@@ -22,7 +22,7 @@ Vous pouvez utiliser l’adaptateur de données de diagnostic du profileur ASP.N
 [!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 > [!NOTE]
-> Cet adaptateur de données de diagnostic ne peut pas être utilisé pour les tests exécutés à l’aide de Microsoft Test Manager. Vous pouvez utiliser l’adaptateur de diagnostic du profileur ASP.NET avec les tests de charge uniquement à l’aide de sites web, ce qui nécessite Visual Studio Enterprise.
+> Cet adaptateur de données diagnostiques ne peut pas être utilisé pour les tests exécutés à l’aide de Microsoft Test Manager (déprécié dans Visual Studio 2017). Vous pouvez utiliser l’adaptateur de diagnostic du profileur ASP.NET avec les tests de charge uniquement à l’aide de sites web, ce qui nécessite Visual Studio Enterprise.
 
 L’adaptateur de données de diagnostic du profileur ASP.NET vous permet de collecter les données du profileur ASP.NET de la couche Application quand vous exécutez un test de charge. Vous ne devez pas exécuter le profileur pour des longs tests de charge, par exemple, des tests de charge dont la durée d'exécution s'étend au-delà d'une heure. Cela tient au fait que le fichier du profileur peut devenir volumineux, peut-être des centaines de mégaoctets. Exécutez de préférence des tests de charge plus courts avec le profileur ASP.NET, qui présente l’avantage d’un outil de diagnostic approfondi des problèmes de performances.
 
