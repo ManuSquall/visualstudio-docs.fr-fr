@@ -7,12 +7,12 @@ ms.assetid: c2853359-18fd-4be4-97a6-02230c862f92
 ms.date: 03/02/2020
 ms.topic: conceptual
 description: Découvrez comment les administrateurs peuvent attribuer des licences à plusieurs abonnés en utilisant soit la fonctionnalité d’ajout en vrac, soit les groupes Microsoft Azure Active Directory
-ms.openlocfilehash: 5a1327e497a48b6173afd4a7ad095dfcabacd098
-ms.sourcegitcommit: dfa9476b69851c28b684ece66980bee735fef8fd
+ms.openlocfilehash: eb641d86733ef794f1d53ae6eee45e0bdf4fde18
+ms.sourcegitcommit: deab74e8f41b30b28c041b048d67b3fff2cceab9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/26/2020
-ms.locfileid: "80274061"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "80994451"
 ---
 # <a name="assign-subscriptions-to-multiple-users"></a>Attribuer des abonnements à plusieurs utilisateurs
 Le portail d’administration des abonnements vous permet d’ajouter des utilisateurs un à la fois ou dans des grands groupes.  Pour ajouter des utilisateurs individuels, consultez [Ajouter des utilisateurs uniques](assign-license.md).
@@ -72,8 +72,6 @@ L’utilisation de cette fonctionnalité permet de rester facilement au top de v
 
 
 > [!IMPORTANT]
->
-> L’utilisation des groupes Azure AD est activée par phases.  Vous ne pouvez pas voir immédiatement la fonctionnalité activée pour votre accord.s).
 >
 > Les limitations suivantes s’appliquent à l’utilisation des groupes Azure AD pour l’ajout d’abonnés :
 > - Les groupes doivent contenir au moins un membre.  Les groupes vides ne sont pas soutenus.
