@@ -17,12 +17,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 44ffc778d398c2f9a1cfaf026d2364ee1dc27f9b
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 025cf432912d38976507c93545e7c38b44d86fd8
+ms.sourcegitcommit: 316dd2182dd56b0cbde49f0cd82e9f75baa2530f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79303007"
+ms.lasthandoff: 04/12/2020
+ms.locfileid: "81223656"
 ---
 # <a name="install-and-use-visual-studio-and-azure-services-behind-a-firewall-or-proxy-server"></a>Installer et utiliser Visual Studio et les services Azure derrière un pare-feu ou un serveur proxy
 
@@ -35,7 +35,7 @@ Si vous ou votre organisation utilisez des mesures de sécurité comme un pare-f
 > [!NOTE]
 > Cet article a été écrit pour Visual Studio sur Windows, mais certaines informations sont également applicables à [l’installation de Visual Studio pour Mac](/visualstudio/mac/install-behind-a-firewall-or-proxy-server) derrière un pare-feu ou un serveur proxy.
 
-## <a name="install-visual-studio"></a>Installation de Visual Studio
+## <a name="install-visual-studio"></a>Installer Visual Studio
 
 ### <a name="urls-to-add-to-an-allow-list"></a>URL à ajouter à une liste verte
 
@@ -98,7 +98,7 @@ Pour vous assurer d’avoir accès à tout ce que vous voulez lorsque vous utili
 | Projet IA <br>Intégration | az861674.vo.msecnd.net | 443<br> | Permet de configurer de nouveaux projets pour envoyer des données d’utilisation à votre compte Application Insights enregistré |
 | CodeLens | codelensprodscus1su0.app.<br>codelens.visualstudio.com | 443 | Permet de fournir des informations dans l’éditeur relatives à la dernière mise à jour d’un fichier, à la chronologie des modifications, aux éléments de travail auxquels sont associées des modifications, aux auteurs et bien plus encore |
 | Expérimental <br>activation des fonctionnalités | visualstudio-devdiv-c2s.msedge.net | 80 | Permet d’activer de nouvelles fonctionnalités expérimentales ou des modifications de fonctionnalités |
-| « Badge » d’identité <br>(nom d'utilisateur et avatar)<br>and <br>Paramètres d'itinérance | app.vssps.visualstudio.com <br><br>app.vsspsext.visualstudio.com<br><br>app.vssps.visualstudio.com<br><br> ns-sb2-prod-ch1-002.cloudapp.net <br><br>az700632.vo.msecnd.net<br><br>api.vstsusers.visualstudio.com/profiles/ | 443 | Permet d’afficher le nom et l’avatar de l’utilisateur dans l’IDE <br><br> Permet de vous assurer que les modifications de paramètres utilisent un profil itinérant d’un ordinateur à un autre |
+| Identité "badge" <br>(nom d'utilisateur et avatar)<br>and <br>Paramètres d'itinérance | app.vssps.visualstudio.com <br><br>app.vsspsext.visualstudio.com<br><br>app.vssps.visualstudio.com<br><br> ns-sb2-prod-ch1-002.cloudapp.net <br><br>az700632.vo.msecnd.net<br><br>api.vstsusers.visualstudio.com/profiles/ | 443 | Permet d’afficher le nom et l’avatar de l’utilisateur dans l’IDE <br><br> Permet de vous assurer que les modifications de paramètres utilisent un profil itinérant d’un ordinateur à un autre |
 | Paramètres distants | az700632.vo.msecnd.net | 443 | Permet de désactiver des extensions qui sont connues pour poser des problèmes dans Visual Studio |
 | Outils Windows | developer.microsoft.com <br><br>dev.windows.com  <br><br>appdev.microsoft.com | https/443 | Utilisé pour les scénarios de magasin d’applications Windows |
 | JSON Schema (Schéma JSON) <br>Découverte <br><br>JSON Schema (Schéma JSON) <br>Définition<br><br>JSON Schema (Schéma JSON) <br>La prise en charge de <br>Ressources Azure | json.schemastore.org <br>schemastoreorg.azurewebsites.net<br><br>json-schema.org<br><br>schema.management.azure.com | http/80<br>https/443<br><br>http/80<br><br>https/443 | Permet de détecter et de télécharger des schémas JSON que l’utilisateur peut utiliser lors de la modification des documents JSON <br><br>Permet d’obtenir le schéma de validation de métadonnées pour JSON<br><br>Permet d’obtenir le schéma actuel pour les modèles de déploiement Azure Resource Manager |
@@ -109,7 +109,7 @@ Pour vous assurer d’avoir accès à tout ce que vous voulez lorsque vous utili
 | Linters Web | Eslint.org<br><br>www.Bing.com <br><br>www.coffeelint.org | http/80 | |
 | Cookiecutter<br>Modèle Explorer<br>découverte <br><br>Cookiecutter <br>Projet Explorer<br> création | api.github.com <br>raw.githubusercontent.com <br>go.microsoft.com<br><br>pypi.org <br> pypi.python.org | https/443<br> | Permet de détecter les modèles en ligne à partir de notre flux recommandé et de dépôts GitHub <br><br>Permet de créer un projet à partir d’un modèle cookiecutter qui requiert une installation à la demande unique d’un package Python cookiecutter à partir de l’index du package Python (PyPI) |
 | Package Python <br>découverte<br><br>Package Python <br>gestion<br><br>Nouveau <br>Python <br> project <br>modèles | pypi.org<br> <br>pypi.python.org <br>bootstrap.pypa.io<br><br>go.microsoft.com | https/443 | Offre la possibilité de rechercher des packages pip<br><br>Permet d’installer le pip automatiquement s’il est manquant <br><br>Permet de résoudre les nouveaux modèles de projets Python suivants pour les URL du modèle de cookiecutter :<br> - Projet Classifier<br>- Projet clustering <br> - Projet Regression <br> - PyGame avec PyKinect <br> - Projet Pyvot |
-| Office Web <br>complément <br> Manifeste <br>Vérification <br>Service | verificationservice.osi.office.net | https/443 | Permet de valider les manifestes pour les compléments Office Web |
+| Office Web <br>complément <br> manifeste <br>Vérification <br>Service | verificationservice.osi.office.net | https/443 | Permet de valider les manifestes pour les compléments Office Web |
 | SharePoint et <br>Compléments Office | sharepoint.com<br> office365.com<br> microsoftonline.com <br> outlook.com | https/443 | Utilisé pour publier et tester SharePoint et Office Add-ins à SharePoint Online et Office 365 |
 | Workflow Manager <br>Service de test<br> Host | | http/12292 | Une règle de pare-feu créée automatiquement pour le test des compléments SharePoint avec des workflows |
 | Collectées automatiquement <br>statistiques de fiabilité <br>et autre <br>Expérience client <br>Programmes d’amélioration du produit (CEIP)<br> pour le kit de développement logiciel (SDK) et <br>pour les outils SQL <br><br> | vortex.data.microsoft.com<br> <br>dc.services.visualstudio.com | https/443 | Permet d’envoyer des statistiques de fiabilité (données d’incident/blocage) depuis l’utilisateur vers Microsoft. Les vidages sur incident/blocage réels seront toujours téléchargés si le rapport d’erreurs Windows est activé ; seules les informations statistiques seront supprimées ; <br>Permet de révéler des modèles d’utilisation anonymes pour l’extension du Kit de développement logiciel Azure Tools pour Visual Studio et pour les modèles d’utilisation des outils SQL de Visual Studio |
@@ -147,7 +147,7 @@ Parfois, exécuté pour des erreurs liées au réseau ou au proxy lorsque vous i
 
 ## <a name="get-support"></a>Obtenir de l’aide
 
-Nous offrons une option de support par [**Conversation en direct**](https://visualstudio.microsoft.com/vs/support/#talktous) (en anglais uniquement) pour les problèmes liés à l’installation.
+Nous offrons une option [**de support de chat d’installation**](https://visualstudio.microsoft.com/vs/support/#talktous) (anglais seulement) pour les issues liées à l’installation.
 
 Voici d’autres options de support :
 

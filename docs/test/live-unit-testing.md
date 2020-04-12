@@ -1,6 +1,6 @@
 ---
 title: Live Unit Testing
-ms.date: 03/07/2017
+ms.date: 04/07/2020
 ms.topic: conceptual
 helpviewer_keywords:
 - Live Unit Testing
@@ -8,12 +8,12 @@ author: mikejo5000
 ms.author: mikejo
 ms.workload:
 - dotnet
-ms.openlocfilehash: 1e1a0ec1fd6f2fbdf4f016b1d22db5a6929b5e24
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 34200e8719ef25de3c54c612b967cf3d4f9bab85
+ms.sourcegitcommit: 316dd2182dd56b0cbde49f0cd82e9f75baa2530f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75851442"
+ms.lasthandoff: 04/12/2020
+ms.locfileid: "81223699"
 ---
 # <a name="how-to-configure-and-use-live-unit-testing"></a>Comment configurer et utiliser live Unit Testing
 
@@ -130,12 +130,13 @@ Les méthodes sans test n’affichent aucun un symbole. L’image suivante illus
 
 Par exemple, l’échec du test indiqué dans l’image précédente a été causé `true` par une <xref:System.Char.IsLower%2A?displayProperty=fullName> hypothèse incorrecte dans la méthode de test que les caractères non alphabétique reviennent lorsqu’ils sont transmis à la méthode. Après avoir corrigé la méthode de test, tous les tests doivent passer. Vous n’avez pas à faire une pause ou arrêter les tests d’unité en direct.
 
+::: moniker range="vs-2017"
 ## <a name="test-explorer"></a>Explorateur de tests
 
 **Test Explorer** fournit une interface qui vous permet d’exécuter et de déboguer des tests et d’analyser les résultats des tests. Live Unit Testing s’intègre à **l’Explorateur de tests**. Quand Live Unit Testing n’est pas activé ou quand il est arrêté, **l’Explorateur de tests** affiche l’état des tests unitaires lors de la dernière exécution d’un test. Des modifications apportées au code source nécessitent que vous réexécutiez les tests. En revanche, lorsque Live Unit Testing est activé, l’état des tests unitaires dans **l’Explorateur de tests** est mis à jour immédiatement. Vous n’avez pas besoin d’exécuter explicitement les tests unitaires.
 
 > [!TIP]
-> Ouvrez **Test Explorer** en sélectionnant **Test** > **Windows** > Test**Explorer** à partir du menu Visual Studio de haut niveau.
+> Ouvrez **les tests d’unités en direct** en sélectionnant **Test** > **Windows** > **Test Explorer** à partir du menu Visual Studio de haut niveau.
 
 Vous remarquerez peut-être dans la fenêtre **Test Explorer** que certains tests sont effacés. Par exemple, lorsque vous activez live Unit Testing après l’ouverture d’un projet précédemment enregistré, la fenêtre **Test Explorer** s’était évanouie, sauf le test échoué, comme le montre l’image suivante. Dans ce cas, Live Unit Testing a réexécuté le test échoué, mais il n’a pas réexécuté les tests réussis. C’est parce que les données persistantes de Live Unit Testing indiquent qu’il n’y a eu aucun changement depuis la dernière exécution des tests.
 
@@ -148,6 +149,28 @@ Il existe certaines différences entre l’exécution automatique des tests et l
 - L’exécution ou le débogage des tests depuis la fenêtre de l’Explorateur de tests exécute des fichiers binaires standards tandis que Live Unit Testing exécute des fichiers binaires instrumentés.
 - Live Unit Testing ne crée pas de domaine d’application pour exécuter des tests, mais exécute des tests à partir du domaine par défaut. Les tests exécutés depuis la fenêtre de **l’Explorateur de tests** créent un domaine d’application.
 - Live Unit Testing exécute des tests dans chaque assembly de test de manière séquentielle. Dans la fenêtre **Test Explorer,** vous pouvez choisir d’exécuter plusieurs tests en parallèle.
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+## <a name="live-unit-testing-window"></a>Fenêtre d’essai d’unité en direct
+
+**Live Unit Testing**, similaire à **Test Explorer**, fournit une interface qui vous permet d’exécuter et de déboguer des tests et d’analyser les résultats des tests. Lorsque les tests d’unité en direct sont activés, l’état des tests unitaires dans **Test Explorer** est mis à jour immédiatement. Vous n’avez pas besoin d’exécuter explicitement les tests unitaires. Lorsque le test d’unité en direct n’est pas activé ou arrêté, **Le test d’unité en direct** affiche l’état des tests unitaires la dernière fois qu’un test a été exécuté. Une fois que vous avez redémarré live Unit Testing, une modification de code source est nécessaire pour réexécuter les tests.
+
+> [!TIP]
+> Commencez à tester l’unité en direct en sélectionnant **Test** > **Live Unit Testing** > **Start à** partir du menu Visual Studio de haut niveau. Vous pouvez également ouvrir la fenêtre **de test d’unité en direct** à**l’aide de** >  **View** > Other Windows**Live Unit Testing Window**.
+
+Vous remarquerez peut-être dans la fenêtre **de test d’unité en direct** que certains tests sont éliminés. Par exemple, lorsque vous vous arrêtez et redémarrez les tests d’unité en direct, la fenêtre **de test d’unité en direct** s’estompe sur tous les tests, comme l’image suivante l’indique. Les résultats des tests délavés indiquent que le test ne faisait pas partie de la dernière série de tests d’unités en direct. Les tests ne s’exécutent que lorsqu’une modification du test ou des dépendances du test est détectée. S’il n’y a pas de changement, il évite d’exécuter inutilement le test. Dans ce cas, le résultat du test grisé est toujours "à jour" bien qu’il ne faisait pas partie de la dernière course.
+
+![Tests délavés dans Test Explorer](media/vs-2019/lut-test-explorer.png)
+
+Vous pouvez réexécuter tous les tests qui semblent fanés en modifiant le code.
+
+Il existe certaines différences entre l’exécution automatique des tests et la mise à jour des résultats de test de Live Unit Testing et l’exécution explicite des tests à partir de **l’Explorateur de tests**. Ces différences incluent :
+
+- L’exécution ou le débogage des tests depuis la fenêtre de l’Explorateur de tests exécute des fichiers binaires standards tandis que Live Unit Testing exécute des fichiers binaires instrumentés.
+- Live Unit Testing ne crée pas de domaine d’application pour exécuter des tests, mais exécute des tests à partir du domaine par défaut. Les tests exécutés depuis la fenêtre de **l’Explorateur de tests** créent un domaine d’application.
+- Live Unit Testing exécute des tests dans chaque assembly de test de manière séquentielle. Dans la fenêtre **Test Explorer,** vous pouvez choisir d’exécuter plusieurs tests en parallèle.
+::: moniker-end
 
 ## <a name="large-solutions"></a>Grandes solutions
 

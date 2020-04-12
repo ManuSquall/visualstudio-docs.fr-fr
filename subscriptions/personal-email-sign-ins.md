@@ -4,18 +4,18 @@ author: evanwindom
 ms.author: lank
 manager: lank
 ms.assetid: 3f4b0528-03f0-4a02-b3c3-a39292a9bbe1
-ms.date: 04/07/2020
+ms.date: 04/10/2020
 ms.topic: conceptual
 description: Abonnements Visual Studio – Pourquoi les adresses Hotmail ou Gmail de mes abonnés sont-elles affichées ?
-ms.openlocfilehash: e926caa8aef5a655b1f09ab8d6dbab1d70946827
-ms.sourcegitcommit: 1f7aed335c48215dff5c151f76f22e3f10e8b564
+ms.openlocfilehash: 44b18bd46d55349fae5a3ece03cee9fe93240148
+ms.sourcegitcommit: 316dd2182dd56b0cbde49f0cd82e9f75baa2530f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/07/2020
-ms.locfileid: "80808341"
+ms.lasthandoff: 04/12/2020
+ms.locfileid: "81223682"
 ---
 # <a name="visual-studio-subscriptions--why-do-i-see-personal-accounts-for-my-subscribers"></a>Abonnements Visual Studio - Pourquoi vois-je des comptes personnels pour mes abonnés ?
-Après que les entreprises ont migré du Volume Licensing Service Center (VLSC) vers le nouveau portail Visual Studio [Subscriptions Administration](https://manage.visualstudio.com), les administrateurs ont été surpris de constater que l’adresse e-mail « Connect-in » pour certains abonnés montre une adresse e-mail personnelle comme Hotmail ou Outlook.  Pour plus d’informations, regardez [cette vidéo](https://www.youtube.com/watch?v=J61EYaVN-dQ&list=PLReL099Y5nReJhZ6o8CQFPSBgzGCHX99_&index=6).
+Après que les entreprises ont migré du Volume Licensing Service Center (VLSC) vers le nouveau portail Visual Studio [Subscriptions Administration](https://manage.visualstudio.com), les administrateurs ont été surpris de constater que l’adresse e-mail « Connect-in » pour certains abonnés montre une adresse e-mail personnelle comme Hotmail ou Outlook.  
 
 ## <a name="cause"></a>Cause
 Ceci est dû à des processus de connexion qui ont été associés à l’expérience héritée pour les abonnés MSDN. Les utilisateurs ont été migrés du centre de gestion des licences en volume (VLSC) vers le portail d’administration des abonnements Visual Studio sans modifications. Les administrateurs ignoraient peut-être que des utilisateurs utilisaient des comptes personnels pour accéder aux avantages de leurs abonnements. Avant les migrations des abonnés Visual Studio, qui se sont terminées en 2016, deux actions étaient nécessaires pour pouvoir utiliser un abonnement de Visual Studio :

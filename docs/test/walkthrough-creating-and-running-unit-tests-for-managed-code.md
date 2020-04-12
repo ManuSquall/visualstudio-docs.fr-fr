@@ -13,14 +13,14 @@ manager: jillfra
 ms.workload:
 - dotnet
 author: mikejo5000
-ms.openlocfilehash: 4d5878e2c5950e45f65f8d56efdf53cd7b2e89ea
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: b68cb720a636483a0c5e8c3193142d95dbb0afcd
+ms.sourcegitcommit: 316dd2182dd56b0cbde49f0cd82e9f75baa2530f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79094675"
+ms.lasthandoff: 04/12/2020
+ms.locfileid: "81223669"
 ---
-# <a name="walkthrough-create-and-run-unit-tests-for-managed-code"></a>Procédure pas à pas : créer et exécuter des tests unitaires pour le code managé
+# <a name="walkthrough-create-and-run-unit-tests-for-managed-code"></a>Procédure pas à pas : Créer et exécuter des tests unitaires pour le code managé
 
 Cet article décrit la création, l’exécution et la personnalisation d’une série de tests unitaires à l’aide du framework de tests unitaires Microsoft pour le code managé et de **l’explorateur de tests** de Visual Studio. Vous commencez avec un projet C# qui est en développement, vous créez des tests qui utilisent son code, vous exécutez les tests et vous examinez les résultats. Vous modifiez ensuite le code de projet et réexécutez les tests.
 
@@ -32,7 +32,7 @@ Cet article décrit la création, l’exécution et la personnalisation d’une 
 
 1. Ouvrez Visual Studio.
 
-2. Dans le menu **Fichier**, sélectionnez **Nouveau** > **Projet**.
+2. Au menu **du Fichier,** sélectionnez **Nouveau** > **Projet**.
 
    La boîte de dialogue **Nouveau projet** s'affiche.
 
@@ -165,7 +165,7 @@ Vous disposez maintenant d’un projet avec des méthodes que vous pouvez tester
 
 3. Nommez le projet **BankTests**.
 
-4. Cliquez sur **Créer**.
+4. Cliquez sur **Créer**.
 
    Le projet **BankTests** est ajouté à la solution **Bank**.
 
@@ -431,7 +431,7 @@ public void Debit_WhenAmountIsMoreThanBalance_ShouldThrowArgumentOutOfRange()
 
 ### <a name="retest-rewrite-and-reanalyze"></a>Retester, réécrire et réanalyser
 
-Supposez qu’il y a un bogue dans la méthode testée et que la méthode `Debit` ne lève même pas d’exception <xref:System.ArgumentOutOfRangeException> et ne génère pas non plus le bon message avec l’exception. Actuellement, la méthode de test ne gère pas ce cas. Si `debitAmount` la valeur est valide (c’est-à-dire moins que le solde et supérieure à zéro), aucune exception n’est prise, de sorte que l’affirmation ne s’allume jamais. Pourtant, la méthode de test réussit. Cela ne convient pas, car vous souhaitez que la méthode de test échoue si aucune exception n’est levée.
+Actuellement, la méthode de test ne gère pas tous les cas qu’il devrait. Si la méthode à `Debit` l’essai, <xref:System.ArgumentOutOfRangeException> la `debitAmount` méthode, n’a pas lancé un quand le était plus grand que l’équilibre (ou moins de zéro), la méthode de test passerait. Cela ne convient pas, car vous souhaitez que la méthode de test échoue si aucune exception n’est levée.
 
 Il s’agit d’un bogue dans la méthode de test. Pour résoudre le problème, ajoutez une assertion <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.Fail%2A> à la fin de la méthode de test pour gérer le cas où aucune exception n’est levée.
 
