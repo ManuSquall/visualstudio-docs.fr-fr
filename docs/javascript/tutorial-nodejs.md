@@ -11,12 +11,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 416926742da427ba7ff18c6fa07de6477361cfa3
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: 260bc6ff6eb2d0bfbf0b9abd19062892c358728a
+ms.sourcegitcommit: b4e0cc76d94fe8cf6d238c4cc09512d17131a195
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "78235078"
+ms.lasthandoff: 04/13/2020
+ms.locfileid: "81224522"
 ---
 # <a name="tutorial-create-a-nodejs-and-express-app-in-visual-studio"></a>Tutoriel : Créer une application Node.js et Express dans Visual Studio
 
@@ -56,9 +56,9 @@ npm est le Gestionnaire de package par défaut de Node.js. Le Gestionnaire de pa
 
 ### <a name="what-is-express"></a>Qu’est-ce qu’express ?
 
-Express est un framework d’application web utilisé comme framework serveur pour Node.js, qui permet de générer des applications web. Express vous permet d’utiliser différents frameworks frontend pour créer une IU, par exemple Pug (appelé auparavant Jade). Pug est utilisé dans ce tutoriel.
+Express est un framework d’application web utilisé comme framework serveur pour Node.js, qui permet de générer des applications web. Express vous permet de choisir différents cadres frontal pour créer une interface utilisateur, comme Pug (anciennement appelé Jade). Pug est utilisé dans ce tutoriel.
 
-## <a name="prerequisites"></a>Conditions préalables requises
+## <a name="prerequisites"></a>Prérequis
 
 * Au préalable, vous devez avoir installé Visual Studio et la charge de travail de développement Node.js.
 
@@ -216,7 +216,7 @@ Vous allez ensuite exécuter l’application avec le débogueur Visual Studio at
 
     ![Définir un point d'arrêt](../javascript/media/tutorial-nodejs-set-breakpoint.png)
 
-## <a name="run-the-application"></a>Exécuter l’application
+## <a name="run-the-application"></a>Exécution de l'application
 
 1. Sélectionnez la cible de débogage (par exemple, Microsoft Edge ou Chrome) dans la barre d’outils Débogage.
 

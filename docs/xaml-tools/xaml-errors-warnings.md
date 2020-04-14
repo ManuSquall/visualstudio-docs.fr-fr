@@ -4,20 +4,20 @@ ms.date: 03/06/2018
 ms.topic: conceptual
 ms.assetid: 34eac8a0-7ec5-4c40-b97a-0126ed367931
 author: karann-msft
-ms.author: karann
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5d8821da877536195d44a02102d3650e1f5cee01
-ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
+ms.openlocfilehash: f8a36a91f40fd4857e50d5262c1598ee096697e7
+ms.sourcegitcommit: 22deb247ad951e4971f27fdab413b158415d0584
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72450981"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81276465"
 ---
 # <a name="xaml-errors-and-warnings"></a>Erreurs et avertissements XAML
 
-Lors de la création de XAML, Visual Studio analyse le code au fur et à mesure de la saisie. Une ligne ondulée apparaît sur une ligne de code lorsqu’une erreur est détectée. Placez le curseur sur la ligne ondulée pour avoir plus d’informations sur l’erreur ou l’avertissement. Pour certains types d’erreurs et d’avertissements, une ampoule Action rapide s’affiche, et le raccourci clavier **Ctrl**+ **.** permet d’afficher les options qui permettront de résoudre le problème.
+Lors de la création de XAML, Visual Studio analyse le code au fur et à mesure de la saisie. Une ligne ondulée apparaît sur une ligne de code lorsqu’une erreur est détectée. Placez le curseur sur la ligne ondulée pour avoir plus d’informations sur l’erreur ou l’avertissement. Pour certaines erreurs et avertissements, une ampoule Quick Action est affichée, et à l’aide du **Ctrl**+**.** permet d’afficher les options qui permettront de résoudre le problème.
 
 ## <a name="error-types"></a>Types d’erreurs
 

@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: lank
 manager: lank
 ms.assetid: 872c5746-5357-4764-949b-aa525a0adf1a
-ms.date: 03/18/2020
+ms.date: 04/10/2020
 ms.topic: conceptual
 description: Découvrez comment activer l’avantage de crédit individuel Azure DevTest inclus dans votre abonnement Visual Studio.
-ms.openlocfilehash: 8cf79c9f4ce9230195e2fdbf551320c3532ad42d
-ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
+ms.openlocfilehash: b556b90cc0c4f0904cbd6e08a34ec782f044dfae
+ms.sourcegitcommit: b4e0cc76d94fe8cf6d238c4cc09512d17131a195
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "80232039"
+ms.lasthandoff: 04/13/2020
+ms.locfileid: "81224483"
 ---
 # <a name="use-microsoft-azure-in-visual-studio-subscriptions"></a>Utiliser Microsoft Azure dans les abonnements Visual Studio
 En tant qu’abonné Visual Studio, vous pouvez utiliser Microsoft Azure sans frais supplémentaires.  Avec votre [crédit individuel Azure DevTest mensuel,](https://azure.microsoft.com/pricing/member-offers/msdn-benefits-details/)Azure est votre bac à sable personnel pour dev/test.  Vous pouvez provisionner des machines virtuelles, des services cloud et d’autres ressources Azure.  Les montants du crédit varient selon le niveau de votre abonnement.
@@ -42,6 +42,38 @@ En tant qu’abonné Visual Studio, vous pouvez utiliser Microsoft Azure sans fr
 
 0. Signet le [portail Azure](https://portal.azure.com) pour un accès facile à l’avenir.
 
+## <a name="using-azure-without-a-visual-studio-subscription"></a>Utilisation d’Azure sans abonnement Visual Studio
+Lorsque votre abonnement Visual Studio est terminé, tous les avantages d’abonnement, y compris le crédit individuel Azure dev/test mensuel, ne sont plus disponibles. Pour continuer à utiliser Azure avec un crédit mensuel, vous devrez renouveler votre abonnement, acheter un nouvel abonnement ou transférer l’avantage Azure à un abonnement actif qui inclut le crédit individuel Azure dev/test.  Vous pouvez également choisir de continuer à utiliser Azure sans crédit mensuel en convertissant votre abonnement Azure actuel à Pay-As-You-Go.
+
+### <a name="continue-using-azure-with-a-monthly-credit"></a>Continuer à utiliser Azure avec un crédit mensuel
+> [!IMPORTANT]
+> Vous devez transférer vos ressources vers un autre abonnement Azure avant que votre abonnement Azure actuel ne soit désactivé ou que vous perdiez l’accès à vos données.  
+
+Il existe plusieurs façons de continuer à utiliser un crédit mensuel pour Azure.  Pour économiser vos ressources Azure, vous devrez [transférer vos ressources](https://docs.microsoft.com/azure/azure-resource-manager/management/move-resource-group-and-subscription) vers un autre abonnement Azure, quelle que soit l’action que vous choisissez ci-dessous. 
+
+- **Si vous achetez directement votre abonnement Visual Studio,** achetez un nouvel abonnement ou renouvelez votre abonnement via [Microsoft Store](https://www.microsoft.com/store/collections/visualstudiosubscription/#:~:text=).  
+- **Si quelqu’un de votre organisation achète des abonnements pour votre organisation,** [communiquez avec votre administrateur d’abonnement Visual Studio](https://docs.microsoft.com/visualstudio/subscriptions/contact-my-admin) et demandez un abonnement qui vous fournit le crédit mensuel dont vous avez besoin.  
+- **Si vous avez un autre abonnement Visual Studio actif** au même niveau d’abonnement associé à un autre compte Microsoft, vous pouvez transférer l’avantage Azure à un autre abonnement actif Visual Studio en ajoutant un compte [alternatif](https://docs.microsoft.com/visualstudio/subscriptions/manage-vs-subscriptions#managing-my-profile) dans le [portail d’abonnements](https://my.visualstudio.com/subscriptions)Visual Studio .  
+
+Vous pouvez déterminer votre niveau d’abonnement nécessaire au niveau de crédit Azure que vous essayez de remplacer.  
+
+| Niveau d’abonnement Visual Studio | Crédit Azure mensuel |
+|----------------------------------|----------------------|
+| Visual Studio Enterprise         | 150 $                 |
+| Visual Studio Professional       | 50 $                  |
+| Visual Studio Test Professional  | 50 $                  |
+| Plates-formes MSDN                  | 100 $                 |
+
+Les abonnés avec MSDN Platforms doivent contacter un administrateur pour demander qu’un nouvel abonnement leur soit attribué. 
+
+### <a name="continue-using-azure-without-a-monthly-credit"></a>Continuer à utiliser Azure sans crédit mensuel
+
+Si vous n’avez plus besoin d’un abonnement ou d’un crédit Visual Studio mais que vous souhaitez continuer à utiliser vos ressources Azure, [transférer vos ressources](https://docs.microsoft.com/azure/azure-resource-manager/management/move-resource-group-and-subscription) vers un autre abonnement Azure, ou convertir votre abonnement Azure en prix à l’utilisation en supprimant votre limite de [dépenses.](https://docs.microsoft.com/azure/cost-management-billing/manage/spending-limit#remove-the-spending-limit-in-azure-portal) 
+
+Si vous ne prenez pas l’une de ces actions, votre abonnement Azure sera désactivé et supprimé 30 jours après avoir reçu la notification par e-mail.  
+
+### <a name="have-a-question"></a>Vous avez des questions ?
+Si vous avez des questions sur le transfert de ressources, la suppression des limites de dépenses, ou d’autres sujets Azure, vous pouvez [soumettre une demande de support Azure](https://portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/overview) dans le portail Azure. 
 
 ## <a name="eligibility"></a>Éligibilité
 |                 Niveau d'abonnement / Programme                 |           Avantage           |                         Renouvelable ?                          |
@@ -83,29 +115,6 @@ Consultez la documentation [Support technique](vs-tech-support.md) pour plus de 
 ### <a name="q-how-owns-the-intellectual-property-i-create-using-my-azure-devtest-individual-credit"></a>Q: Comment possède la propriété intellectuelle que je crée en utilisant mon crédit individuel Azure DevTest ?
 R : La propriété intellectuelle produite par un employé créé sur les ressources fournies par cette société est donc la propriété intellectuelle de l’entreprise fournissant la ressource. Ainsi, si vous avez reçu votre abonnement Visual Studio par l’intermédiaire de votre employeur, leurs politiques de propriété intellectuelle s’appliqueraient. 
 
-### <a name="q-ive-received-a-message-stating-that-my-access-to-azure-will-end-soon--what-can-i-do-to-continue-using-azure"></a>Q : J’ai reçu un message indiquant que mon accès à Azure va bientôt se terminer.  Que puis-je faire pour continuer à utiliser Azure ?
-R : Vous recevez ce message, car vous utilisez l’avantage Azure associé à votre abonnement Visual Studio, et cet abonnement a expiré ou a été supprimé.  Pour continuer à utiliser Azure, vous disposez de plusieurs options :
-
-**Action recommandée :**
-
-Pour continuer à utiliser votre Visual Studio Azure DevTest crédit individuel et remises, prenez l’une des étapes suivantes:
-
-Si une personne de votre équipe ou de votre organisation achète des abonnements en votre nom, contactez l’administrateur visual Studio de votre organisation et demandez un abonnement Visual Studio qui vous donne droit au montant de crédit individuel Azure DevTest dont vous avez besoin.   Demandez à l’administrateur d’attribuer le nouvel abonnement au même ID d’utilisateur que votre abonnement précédent, ce qui vous évite de devoir transférer votre abonnement Azure.
-
-Si vous pouvez acheter un abonnement directement, profitez d’un rabais en renouvelant votre abonnement actuel via le [Microsoft Store](https://www.microsoft.com/en-us/search/result.aspx?q=visual+studio+subscription).
-
-Comparez tous les [abonnements et leurs avantages](https://visualstudio.microsoft.com/vs/pricing/).
-
-Si vous avez un autre abonnement Visual Studio actif au **même** niveau d’abonnement sous un compte Microsoft, vous pouvez le lier à cet avantage Azure en ajoutant un [compte alternatif](manage-vs-subscriptions.md#linking-my-subscription-to-existing-azure-devops-services-or-azure-subscriptions) dans le portail des abonnements Visual Studio. Si cela ne fonctionne pas, vous pouvez également essayer de [transférer votre avantage Azure](/azure/billing/billing-subscription-transfer/) à l’abonnement Visual Studio actif.
-
-Si vous avez un autre abonnement Visual Studio actif à un niveau d’abonnement **différent** et sous un compte Microsoft, contactez le [support technique Azure](https://portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade) pour obtenir de l’aide.
-
-Si votre abonnement a une limite de dépense et que vous n’effectuez pas d’action avant son expiration, votre abonnement Azure sera désactivé. Pour le convertir en offre avec paiement à l’utilisation et continuer à l’utiliser, ajoutez un instrument de paiement et [supprimez votre limite de dépense](/azure/billing/billing-spending-limit/).
-
-Si vous préférez ne pas continuer cet abonnement Azure Visual Studio, vous pouvez transférer vos ressources, comme les machines virtuelles et les bases de données, à un autre abonnement Azure et [annuler](https://azure.microsoft.com/support/cancel-account/) à tout moment cet abonnement.
-
-Si vous pensez que vous avez reçu cet e-mail par erreur, contactez le [support technique Azure](https://portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade).
-
 ## <a name="support-resources"></a>Ressources de support
 - Besoin d'aide avec Azure ?  Consultez les ressources suivantes :
   - Support technique :[https://azure.microsoft.com/support/options/](https://azure.microsoft.com/support/options/)
@@ -121,6 +130,6 @@ Si vous pensez que vous avez reçu cet e-mail par erreur, contactez le [support 
 
 ## <a name="next-steps"></a>Étapes suivantes
 Pour plus d’informations sur les outils et services Microsoft, consultez la documentation relative à :
-- [Azure](/azure/)
+- [Microsoft Azure](/azure/)
 - [Azure DevOps](/azure/devops/)
 - [IDE Visual Studio](/visualstudio/)

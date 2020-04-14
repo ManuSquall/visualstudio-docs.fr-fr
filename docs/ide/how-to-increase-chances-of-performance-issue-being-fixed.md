@@ -1,16 +1,16 @@
 ---
 title: Comment pouvez-vous augmenter les chances d’un problème de performance
 description: Informations supplémentaires et pratiques exemplaires pour soumettre des questions de performance dans Visual Studio
-author: seaniyer
-ms.author: seiyer
+author: madskristensen
+ms.author: madsk
 ms.date: 11/19/2019
 ms.topic: reference
-ms.openlocfilehash: 119de27298acafee7dc563a30246b18da42f9f29
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 1a83a9c16e915bde2958193c640c0981f5edc005
+ms.sourcegitcommit: 22deb247ad951e4971f27fdab413b158415d0584
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75918161"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81276453"
 ---
 # <a name="how-to-increase-the-chances-of-a-performance-issue-being-fixed"></a>Comment augmenter les chances de fixer un problème de performance
 
@@ -113,7 +113,7 @@ VS devient insensible pendant une période prolongée.
 
 **Unrésensivité directement reproductible**
 
-Comme décrit dans la section correspondante sur les accidents, pour les problèmes qui peuvent être facilement reproduits, vus sur plusieurs machines et peuvent être démontrés dans un petit échantillon, les rapports de rétroaction les plus précieux sont ceux qui comprennent des étapes pour reproduire le problème, et inclure code source de l’échantillon qui démontre le problème.
+Comme décrit dans la section correspondante sur les accidents, pour les problèmes qui peuvent être facilement reproduits, vus sur plusieurs machines et peuvent être démontrés dans un petit échantillon, les rapports de rétroaction les plus précieux sont ceux qui comprennent des étapes pour reproduire le problème, et inclure le code source de l’échantillon qui démontre le problème.
 
 **Indétabilité inconnue**
 

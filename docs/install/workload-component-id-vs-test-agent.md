@@ -15,12 +15,13 @@ helpviewer_keywords:
 ms.assetid: 55aea29b-1066-4e5a-aa99-fc87d4efb6d5
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 114fdf5fb5f123b021ff7b53078bbe2e929c9db9
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+open_to_public_contributors: false
+ms.openlocfilehash: 5a24e7c95d3e55b5b91d737877b9292e0af0db58
+ms.sourcegitcommit: 22deb247ad951e4971f27fdab413b158415d0584
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79437523"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81276401"
 ---
 # <a name="visual-studio-test-agent-component-directory"></a>Répertoire des composants Visual Studio Test Agent
 
@@ -50,4 +51,4 @@ ms.locfileid: "79437523"
 * [Guide de l’administrateur Visual Studio](visual-studio-administrator-guide.md)
 * [Utiliser les paramètres de ligne de commande pour installer Visual Studio](use-command-line-parameters-to-install-visual-studio.md)
   * [Exemples de paramètres de ligne de commande](command-line-parameter-examples.md)
-* [Créer une installation hors ligne de Visual Studio](create-an-offline-installation-of-visual-studio.md)
+* [Créer une installation hors connexion de Visual Studio](create-an-offline-installation-of-visual-studio.md)
