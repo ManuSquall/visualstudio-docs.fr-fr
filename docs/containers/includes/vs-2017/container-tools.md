@@ -6,20 +6,20 @@ ms.author: ghogen
 ms.date: 02/01/2019
 ms.technology: vs-azure
 ms.topic: include
-ms.openlocfilehash: ae6548892010035564bf29a8eda25b736db97d2a
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 627b0b1260a3ccdd401dbb170f8e2dfffadea2dc
+ms.sourcegitcommit: cc58ca7ceae783b972ca25af69f17c9f92a29fc2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "76922976"
+ms.lasthandoff: 04/15/2020
+ms.locfileid: "81389955"
 ---
 Avec Visual Studio, vous pouvez facilement construire, déboguer et exécuter des applications ASP.NET Core conteneurisées et les publier au Registre des conteneurs Azure (ACR), Au Docker Hub, au service d’applications Azure ou à votre propre registre des conteneurs. Dans cet article, nous allons effectuer la publication sur ACR.
 
-## <a name="prerequisites"></a>Conditions préalables requises
+## <a name="prerequisites"></a>Prérequis
 
 * [Docker Desktop](https://hub.docker.com/editions/community/docker-ce-desktop-windows)
 * [Visual Studio 2017](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) avec la charge de travail **Développement web**, **Azure Tools** et/ou la charge de travail **Développement multiplateforme .NET Core**
-* Pour publier sur Azure Container Registry, un abonnement Azure. [Inscrivez-vous à un essai gratuit](https://azure.microsoft.com/offers/ms-azr-0044p/).
+* Pour publier sur Azure Container Registry, un abonnement Azure. [Inscrivez-vous à un essai gratuit](https://azure.microsoft.com/free/dotnet/).
 
 ## <a name="installation-and-setup"></a>Installation et configuration
 
@@ -117,7 +117,7 @@ Une fois le cycle de développement et de débogage de l’application effectué
 
     ![Boîte de dialogue de création d’un registre de conteneurs Azure dans Visual Studio][0]
 
-1. Cliquez **sur Créer**
+1. Cliquez sur **Créer**
 
 ## <a name="next-steps"></a>Étapes suivantes
 

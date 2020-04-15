@@ -5,19 +5,19 @@ description: Liste des versions publiées et des numéros de build de Visual Stu
 author: ornellaalt
 ms.author: ornella
 manager: jillfra
-ms.date: 04/07/2020
+ms.date: 04/14/2020
 ms.topic: reference
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 open_to_public_contributors: false
-ms.openlocfilehash: 4f157413909d512cd88de7bde67a6c197a0c8d92
-ms.sourcegitcommit: 22deb247ad951e4971f27fdab413b158415d0584
+ms.openlocfilehash: e2a71f55bf7ea55415375aa20c75e839840af42b
+ms.sourcegitcommit: cc58ca7ceae783b972ca25af69f17c9f92a29fc2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81276316"
+ms.lasthandoff: 04/15/2020
+ms.locfileid: "81385465"
 ---
 # <a name="visual-studio-build-numbers-and-release-dates"></a>Numéros de builds et dates de publication de Visual Studio
 
@@ -29,8 +29,11 @@ Le tableau suivant liste les numéros de build et les dates de publication de Vi
 
 | **Version**| **Channel** | **Date de publication** | **Construire la version** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
+| 16.0.13 | Libérer | Le 14 avril 2020 | 16.0.28803.718 |
+| 16.4.7 | Libérer | Le 14 avril 2020 | 16.4.30011.19 |
+| 16.5.4 | Libérer | Le 14 avril 2020 | 16.5.30011.22 |
 | 16.5.3 | Libérer | Le 7 avril 2020 | 16.5.30002.166 |
-| 16.6.0 | Préversion 2.1 | Le 2 avril 2020 | 16.6.30001.183 |
+| 16.6.0 | Préversion 2.1 | 2 avril 2020 | 16.6.30001.183 |
 | 16.5.2 | Libérer | 31 mars 2020 | 16.5.29926.136 |
 | 16.6.0 | Préversion 2 | Le 26 mars 2020 | 16.6.29924.181 |
 | 16.5.1 | Libérer | Le 24 mars 2020 | 16.5.29920.165 |
@@ -136,6 +139,7 @@ Le tableau suivant répertorie les numéros de build et les dates de publication
 
 | **Version**| **Channel** | **Date de publication** | **Construire la version** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
+| 15.9.22 | Libérer | Le 14 avril 2020 | 15.9.28307.1093 |
 | 15.9.21 | Libérer | Le 10 mars 2020 | 15.9.28307.1064 |
 | 15.9.20 | Libérer | 11 février 2020 | 15.9.28307.1033 |
 | 15.9.19 | Libérer | 14 janvier 2020 | 15.9.28307.1000 |

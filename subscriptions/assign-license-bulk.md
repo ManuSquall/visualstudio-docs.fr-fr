@@ -7,12 +7,12 @@ ms.assetid: c2853359-18fd-4be4-97a6-02230c862f92
 ms.date: 03/02/2020
 ms.topic: conceptual
 description: Découvrez comment les administrateurs peuvent attribuer des licences à plusieurs abonnés en utilisant soit la fonctionnalité d’ajout en vrac, soit les groupes Microsoft Azure Active Directory
-ms.openlocfilehash: eb641d86733ef794f1d53ae6eee45e0bdf4fde18
-ms.sourcegitcommit: deab74e8f41b30b28c041b048d67b3fff2cceab9
+ms.openlocfilehash: a7742049cdda2568504e54d2c83259bb4a262819
+ms.sourcegitcommit: cc58ca7ceae783b972ca25af69f17c9f92a29fc2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "80994451"
+ms.lasthandoff: 04/15/2020
+ms.locfileid: "81385509"
 ---
 # <a name="assign-subscriptions-to-multiple-users"></a>Attribuer des abonnements à plusieurs utilisateurs
 Le portail d’administration des abonnements vous permet d’ajouter des utilisateurs un à la fois ou dans des grands groupes.  Pour ajouter des utilisateurs individuels, consultez [Ajouter des utilisateurs uniques](assign-license.md).
@@ -75,10 +75,10 @@ L’utilisation de cette fonctionnalité permet de rester facilement au top de v
 >
 > Les limitations suivantes s’appliquent à l’utilisation des groupes Azure AD pour l’ajout d’abonnés :
 > - Les groupes doivent contenir au moins un membre.  Les groupes vides ne sont pas soutenus.
-> - Les groupes doivent avoir moins de 1 000 utilisateurs 
-> - Tous les utilisateurs doivent être au plus haut niveau du groupe.  Les groupes imbriqués ne sont pas soutenus
-> - Seuls les accords de confiance sont soutenus
-> - Tous les membres du groupe doivent avoir une adresse e-mail associée à leur compte Azure AD
+> - Les groupes doivent avoir moins de 1 000 utilisateurs. 
+> - Tous les utilisateurs doivent être au plus haut niveau du groupe.  Les groupes imbriqués ne sont pas pris en charge.
+> - Seuls les accords de confiance sont soutenus.
+> - Tous les membres du groupe doivent avoir une adresse e-mail associée à leur compte Azure AD.
 > - Les adresses e-mail séparées pour les notifications ne sont pas prises en charge pour les abonnements ajoutés à l’aide de groupes Azure AD.  
 
 1. Connectez-vous au portail d’administration des abonnements Visual Studio à [https://manage.visualstudio.com](https://manage.visualstudio.com).
@@ -106,6 +106,7 @@ L’utilisation de cette fonctionnalité permet de rester facilement au top de v
 > [!NOTE]
 > Si vous avez déjà attribué des abonnements individuellement aux utilisateurs qui sont ensuite ajoutés dans le cadre d’un groupe Azure AD, ils seront ajoutés dans le cadre du groupe et ne seront plus répertoriés individuellement. Toutefois, si l’abonnement individuel est pour un niveau d’abonnement différent, ils auront deux abonnements.  Exemple : Si un utilisateur a un abonnement Visual Studio Professional individuel, et qu’il est membre d’un groupe auquel vous attribuez des abonnements Visual Studio Enterprise, il aura les deux.  
 
+<br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4rvvW]
 

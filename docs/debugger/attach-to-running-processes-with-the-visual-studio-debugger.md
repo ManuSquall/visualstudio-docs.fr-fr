@@ -1,7 +1,7 @@
 ---
 title: Attachez-vous aux processus d’exécution avec le débagénaire . Microsoft Docs
 ms.custom: seodec18
-ms.date: 04/08/2019
+ms.date: 04/14/2020
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.processes.attach
@@ -28,12 +28,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b5305be7615e426d7792d8dd3fefb2579e2ab6be
-ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
+ms.openlocfilehash: 075f5b0df703e31ea265085f422567a4fb5298a4
+ms.sourcegitcommit: cc58ca7ceae783b972ca25af69f17c9f92a29fc2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "80233033"
+ms.lasthandoff: 04/15/2020
+ms.locfileid: "81385492"
 ---
 # <a name="attach-to-running-processes-with-the-visual-studio-debugger"></a>Attacher aux processus en cours d’exécution avec le débogueur Visual Studio
 Vous pouvez attacher le débogueur Visual Studio à un processus en cours d’exécution sur un ordinateur local ou distant. Une fois le processus en cours d’exécution, sélectionnez **Debug** > **Attach to Process** ou appuyez sur **Ctrl**+**Alt**+**P** dans Visual Studio, et utilisez le dialogue Attach to **Process** pour attacher le débbugger au processus.
@@ -253,15 +253,15 @@ Pour certains types d’applications, comme les applications Universal Windows A
 
 Pour que le débogueur s’attache au code écrit en C++, le code doit émettre `DebuggableAttribute`. Vous pouvez ajouter cela automatiquement à votre code grâce à la liaison, à l'aide de l'option [/ASSEMBLYDEBUG](/cpp/build/reference/assemblydebug-add-debuggableattribute) .
 
-Pour le débogage de script côté client, le débogage de script doit être activé dans le navigateur. Pour débogage de script côté client sur Chrome, choisissez **le kit Web** comme type de code, et selon votre type d’application, vous devrez peut-être fermer toutes les instances Chrome et démarrer le navigateur en mode débogage (type `chrome.exe --remote-debugging-port=9222` à partir d’une ligne de commande).
+Pour le débogage de script côté client, le débogage de script doit être activé dans le navigateur. Pour débogage de script côté client sur Chrome, choisissez **JavaScript (Chrome)** ou **JavaScript (Microsoft Edge - Chromium)** comme type de code, et selon votre `chrome.exe --remote-debugging-port=9222` type d’application, vous devrez peut-être fermer toutes les instances Chrome et démarrer le navigateur en mode débogage (type à partir d’une ligne de commande). Dans les versions précédentes de Visual Studio, le débbugger script pour Chrome était **kit Web**.
 
 Pour sélectionner rapidement un processus d’exécution à joindre, dans Visual Studio, **tapez Ctrl**+**Alt**+**P**, puis tapez la première lettre du nom du processus.
 
 |Scénario|Méthode Debug|Nom du processus|Notes et liens|
 |-|-|-|-|
 |Débogé à distance ASP.NET 4 ou 4,5 sur un serveur IIS|Utiliser des outils distants et **s’attacher au processus**|*w3wp.exe*|Voir [les ASP.NET de débogage à distance sur un ordinateur IIS à distance](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md)|
-|Débogé à distance ASP.NET Core sur un serveur IIS|Utiliser des outils distants et **s’attacher au processus**|*dotnet.exe* ou *appname.exe*|Pour le déploiement de l’application, voir [Publier sur IIS](https://docs.asp.net/en/latest/publishing/iis.html). Pour le débogage, voir [le débogage à distance ASP.NET Core sur un ordinateur IIS distant](../debugger/remote-debugging-aspnet-on-a-remote-iis-computer.md)|
-|Debug script côté client sur un serveur LOCAL IIS, pour les types d’applications pris en charge |Utiliser **l’attachement au processus**|*chrome.exe*, *MicrosoftEdgeCP.exe*, ou *iexplore.exe*|La débogage de script doit être activée. Pour Chrome, vous devez également exécuter Chrome en mode débogé et sélectionner le **code Webkit** dans le **champ Attach to** field.|
+|Débogé à distance ASP.NET Core sur un serveur IIS|Utiliser des outils distants et **s’attacher au processus**|*w3wp.exe* ou *dotnet.exe*|À partir de .NET Core 3, le processus *w3wp.exe* est utilisé pour le [modèle d’hébergement in-app](/aspnet/core/host-and-deploy/aspnet-core-module?view=aspnetcore-3.1#hosting-models)par défaut . Pour le déploiement de l’application, voir [Publier sur IIS](/aspnet/core/host-and-deploy/iis/). Pour plus d’informations, voir [le débogage à distance ASP.NET Core sur un ordinateur IIS à distance](../debugger/remote-debugging-aspnet-on-a-remote-iis-computer.md#BKMK_attach)|
+|Debug script côté client sur un serveur LOCAL IIS, pour les types d’applications pris en charge |Utiliser **l’attachement au processus**|*chrome.exe*, *MicrosoftEdgeCP.exe*, ou *iexplore.exe*|La débogage de script doit être activée. Pour Chrome, vous devez également exécuter Chrome `chrome.exe --remote-debugging-port=9222` en mode débogé (type à partir d’une ligne de commande) et sélectionner **JavaScript (Chrome)** dans le **Attach to** field.|
 |Débogé d’une application de base visuelle, visuelle ou C sur la machine locale|Utilisez soit le débogage standard (**F5**) ou **attachez-vous au processus**|*\<appname>.exe*|Dans la plupart des scénarios, utilisez le débogage standard et ne pas **joindre au processus**.|
 |Débogé à distance d’une application de bureau Windows|Outils à distance|N/A| Voir [Remote debug a C’ou Visual Basic app](../debugger/remote-debugging-csharp.md) or Remote [debug a C 'app](../debugger/remote-debugging-cpp.md)|
 |Debug .NET Core sur Linux|Utiliser **l’attachement au processus**|*dotnet.exe*|Pour utiliser SSH, voir [Remote debug .NET Core fonctionnant sur Linux à l’aide de SSH](../debugger/remote-debugging-dotnet-core-linux-with-ssh.md). |
