@@ -7,17 +7,22 @@ ms.assetid: fe826200-9600-4b29-a64e-0d66ba3caf3d
 ms.date: 03/24/2020
 ms.topic: conceptual
 description: Découvrez comment vous pouvez utiliser Azure DevOps en tant qu’abonné Visual Studio.
-ms.openlocfilehash: 11bd1262e72042b01c2514edc3bc3158325b9417
-ms.sourcegitcommit: 67dd2aedfe9752afaec9625ed3056fa03bd2699e
+ms.openlocfilehash: a68456b93a307d97ab706e18b3790e84be547f9f
+ms.sourcegitcommit: 7b60e81414a82c6d34f6de1a1f56115c9cd26943
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "80607169"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81444820"
 ---
 # <a name="azure-devops-benefits-for-visual-studio-subscribers"></a>Avantages Azure DevOps pour les abonnés Visual Studio
 En tant qu’abonné Visual Studio actif, vous avez accès à une large gamme de fonctionnalités dans Azure DevOps qui sont comprises dans votre abonnement sous forme d’avantages. Vous pouvez utiliser ces fonctionnalités dans chaque organisation Azure DevOps dont vous êtes membre, que vous ayez créé l’organisation ou que vous ayez été ajouté par quelqu’un d’autre.
 
 ## <a name="sign-in"></a>Se connecter
+
+   > [!div class="mx-imgBorder"]
+   > ![Azure DevOps Tile](_img/vs-azure-devops/vs-azure-devops-tile.png)
+
+   
 Quand vous vous connectez à Azure DevOps avec l’identité que vous avez utilisée pour activer votre abonnement Visual Studio ou avec votre [identité secondaire](vs-alternate-identity.md), nous la reconnaissons automatiquement.  Ainsi, vous pouvez également ajouter un compte professionnel ou scolaire (que vous utilisez pour vous connecter à Visual Studio, à Office 365 ou à votre réseau d’entreprise ou d’établissement scolaire), ce qui vous permet d’accéder à Azure DevOps à la fois avec votre compte personnel, et avec votre compte professionnel ou scolaire.
 
 [S’inscrire pour une organisation Azure DevOps gratuite](https://visualstudio.microsoft.com/team-services/)

@@ -7,12 +7,12 @@ ms.assetid: 196c6d04-9a33-47d5-b0f1-038e7c3a7ac9
 ms.date: 03/09/2020
 ms.topic: conceptual
 description: Découvrez comment tirer le meilleur parti de vos abonnements Visual Studio.
-ms.openlocfilehash: 8790897f0e5169aebc020035b4c8c1d5749c230e
-ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
+ms.openlocfilehash: 7d883092372d58f4a5bcc787daed0a99124a1704
+ms.sourcegitcommit: 7b60e81414a82c6d34f6de1a1f56115c9cd26943
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "80232355"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81444871"
 ---
 # <a name="managing-subscriptions"></a>Gestion des abonnements
 
@@ -52,7 +52,6 @@ Dans la page Avantages, l’abonnement actif est affiché en surbrillance dans l
 **Abonnements achetés via des programmes :** si vous obtenez votre abonnement via un programme, votre abonnement est lié à votre participation au programme. Vous pouvez obtenir plus d’informations auprès des contacts désignés pour les différents programmes.
 
 - [Imagine](https://imagine.microsoft.com/about)
-- [Bizspark](https://bizspark.microsoft.com/About/Offers)
 - [Microsoft Partner Network](https://partner.microsoft.com)
 - [Microsoft Certified Trainer](https://www.microsoft.com/learning/mct-certification.aspx)
 
@@ -106,7 +105,7 @@ R : En fonction du canal d’achat, Microsoft conserve les données des clients
 |    Centre de gestion des licences en volume (VLSC)              |    180          |
 |    MPSA (Microsoft Products and Services Agreement)    |    180          |
 |    Abonnements cloud à Visual Studio                   |    180          |
-|    Programme (par exemple, MCT, BizSpark, MPN, Imagine)          |    180          |
+|    Programme (p. ex. MCT, MPN, Imagine)          |    180          |
 |    Revente interdite (par exemple, MVP, MSP)                      |    180          |
 |    DevEssentials                                       |    30           |
 
@@ -125,5 +124,5 @@ Gérez-vous les abonnements pour votre organisation ?  En savoir plus sur la ges
 - [Attribuer des abonnements individuels](assign-license.md)
 - [Attribuer plusieurs abonnements](assign-license-bulk.md)
 - [Modifier des abonnements](edit-license.md)
-- [Supprimer les abonnements](delete-license.md)
+- [Supprimer des abonnements](delete-license.md)
 - [Déterminer l’utilisation maximale](maximum-usage.md)

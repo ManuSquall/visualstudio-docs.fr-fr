@@ -8,12 +8,12 @@ manager: jillfra
 ms.technology: vs-azure
 ms.workload:
 - azure
-ms.openlocfilehash: f5868f97301eba62d16ea68cdaa0c97c8e20edd1
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 931f8c2a6d3be130ef78f59f9b3853d28fad8cd4
+ms.sourcegitcommit: 7b60e81414a82c6d34f6de1a1f56115c9cd26943
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75916947"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81444685"
 ---
 # <a name="get-started-with-visual-studio-kubernetes-tools"></a>Lancez-vous avec Visual Studio Kubernetes Tools
 
@@ -21,7 +21,7 @@ Les outils Visual Studio Kubernetes aident à rationaliser le développement d�
 
 Ce tutoriel couvre l’utilisation de Visual Studio pour ajouter le support Kubernetes à un projet et de publier à AKS. Si vous êtes principalement intéressé à utiliser [Azure Dev Spaces](/azure/dev-spaces/) pour déboguer et tester votre projet en cours d’exécution dans AKS, vous pouvez sauter à l’Azure [Dev Spaces tutoriel](/azure/dev-spaces/get-started-netcore-visualstudio) à la place.
 
-## <a name="prerequisites"></a>Conditions préalables requises
+## <a name="prerequisites"></a>Prérequis
 
 Pour tirer parti de cette nouvelle fonctionnalité, vous aurez besoin :
 
@@ -40,7 +40,7 @@ Pour tirer parti de cette nouvelle fonctionnalité, vous aurez besoin :
 
     1. Cluster Azure Kubernetes Service. Pour plus d’informations, voir [Création d’un cluster AKS](/azure/aks/kubernetes-walkthrough-portal#create-an-aks-cluster). Assurez-vous de [vous connecter au cluster à](/azure/aks/kubernetes-walkthrough#connect-to-the-cluster) partir de votre poste de travail de développement.
 
-    1. Helm CLI installé sur votre poste de travail de développement. Pour plus d’informations voir [Installing Helm](https://github.com/kubernetes/helm/blob/master/docs/install.md).
+    1. Helm CLI installé sur votre poste de travail de développement. Pour plus d’informations voir [Installing Helm](https://github.com/helm/helm-www/blob/master/content/en/docs/helm/helm_install.md).
 
     1. Casque configuré contre votre cluster `helm init` AKS en utilisant la commande. Pour plus d’informations sur la façon de le faire, voir [Comment configurer Helm](/azure/aks/kubernetes-helm#configure-helm).
 ::: moniker-end
@@ -145,7 +145,7 @@ Pour ce faire, vous devez d’abord vérifier que vous avez tout installé tel q
 
    ![Capture d’écran de l’élément de menu AkS d’Azure](media/tutorial-kubernetes-tools/k8s-tools-publish-solution.png)
 
-4. Choisissez votre abonnement et votre cluster AKS, ainsi que le profil de publication ACR que vous venez de créer. Cliquez sur **OK**.
+4. Choisissez votre abonnement et votre cluster AKS, ainsi que le profil de publication ACR que vous venez de créer. Cliquez ensuite sur **OK**.
 
    ![Capture d’écran de Publish to AKS screen](media/tutorial-kubernetes-tools/k8s-tools-publish-to-aks.png)
 

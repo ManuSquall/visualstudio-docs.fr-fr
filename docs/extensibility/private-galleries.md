@@ -11,12 +11,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4056e4dedf06ffe86755bf946c77032d6f6782dd
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.openlocfilehash: afd1d79d7f1846e60386d2a9478466bf7eae72e4
+ms.sourcegitcommit: 7b60e81414a82c6d34f6de1a1f56115c9cd26943
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2020
-ms.locfileid: "80702037"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81444646"
 ---
 # <a name="private-galleries"></a>Galeries privées
 Vous pouvez partager les contrôles, les modèles et les outils que vous développez en les affichant dans une *galerie privée* sur l’intranet pour votre organisation, comme suit :
@@ -42,9 +42,9 @@ Vous pouvez partager les contrôles, les modèles et les outils que vous dévelo
 
 5. Dans le champ **URL,** entrez l’URL du flux Atom ou du site SharePoint qui héberge la galerie privée.
 
-    1. Si l’hôte est un flux Atom qui se connecte à http://www.mywebsite/mygallery/atom.xmlla galerie privée, l’URL ressemblerait à celle-ci: .  Cette URL peut se référer à un fichier ou à un chemin réseau.
+    1. Si l’hôte est un flux Atom qui se connecte à `http://www.mywebsite/mygallery/atom.xml`la galerie privée, l’URL ressemblerait à celle-ci: .  Cette URL peut se référer à un fichier ou à un chemin réseau.
 
-    2. Si l’hôte est un site SharePoint, http://mysharepoint/sites/mygallery/forms/AllItems.aspxl’URL ressemblerait à celui-ci: .
+    2. Si l’hôte est un site SharePoint, `http://mysharepoint/sites/mygallery/forms/AllItems.aspx`l’URL ressemblerait à celui-ci: .
 
 ### <a name="manage-private-galleries"></a>Gérer les galeries privées
  Un administrateur peut mettre une galerie privée à la disposition de plusieurs ordinateurs en même temps en modifiant le registre du système sur chaque ordinateur. Pour ce faire, créez un fichier *.pkgdef* qui décrit les nouvelles clés de registre et leurs valeurs.  Le format de ce fichier est le suivant.

@@ -599,12 +599,12 @@ caps.latest.revision: 20
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 6460d26ea7b7240cf54dfe3379ec75634bc5465d
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
-ms.translationtype: MTE95
+ms.openlocfilehash: aa25e4e15406c9091e90dfd8be5c2efd0a19e41b
+ms.sourcegitcommit: 7b60e81414a82c6d34f6de1a1f56115c9cd26943
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75847058"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81445049"
 ---
 # <a name="additional-msbuild-resources"></a>Ressources MSBuild supplémentaires
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -612,14 +612,14 @@ ms.locfileid: "75847058"
 Si vous tentez de résoudre un problème et ne trouvez pas les informations dont vous avez besoin dans la documentation, vous pouvez consulter d’autres ressources, telles que les articles de la Base de connaissances, la communauté des développeurs ou le support technique.  
   
 ## <a name="knowledge-base-articles"></a>Articles de la Base de connaissances  
- Vous pouvez explorer la Base de connaissances en ligne pour rechercher des articles sur les problèmes du produit. Tous les problèmes ne possèdent pas un article dans la Base de connaissances, mais les erreurs rencontrées par un nombre significatif de clients sont en principe documentées. Vous pouvez accéder aux articles de la Base de connaissances sur le site web [Base de connaissances (résultats de la recherche MSBuild)](https://search.microsoft.com/supportresults.aspx?q=knowledge+base+MSBuild&x=0&y=0).  
+ Vous pouvez explorer la Base de connaissances en ligne pour rechercher des articles sur les problèmes du produit. Tous les problèmes ne possèdent pas un article dans la Base de connaissances, mais les erreurs rencontrées par un nombre significatif de clients sont en principe documentées. Vous pouvez accéder à des articles KB sur le site Web [de la Base de connaissances.](https://support.microsoft.com/help/242450/how-to-query-the-microsoft-knowledge-base-by-using-keywords-and-query)  
   
 ## <a name="community-forums"></a>Forums de communautés  
  Dans les forums, vous pouvez dialoguer avec les autres développeurs et avec les employés Microsoft. Si vous rencontrez une erreur pour laquelle vous ne trouvez pas de résolution, vous pouvez publier vos questions sur le problème dans un forum. Vous pouvez aussi explorer les groupes de discussion pour voir si d’autres utilisateurs ont déjà soumis le même problème. Vous pouvez accéder au forum Visual Studio MSBuild sur le site web [Forums MSDN](https://social.msdn.microsoft.com/forums/en-US/msbuild/threads/).  
   
  Vous pouvez accéder aux ressources de la communauté [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] sur le site web [Channel 9 MSBuild](https://channel9.msdn.com/).  
   
-## <a name="product-support"></a>Support technique  
+## <a name="product-support"></a>Prise en charge du produit  
  Si vous avez encore des questions après avoir consulté les autres ressources, contactez les services de support technique Microsoft en visitant le site web [Aide et support Microsoft](https://support.microsoft.com/). Pour plus d’informations sur le support technique disponible dans votre région, consultez [Nous contacter](../ide/talk-to-us.md).  
   
 ## <a name="see-also"></a>Voir aussi  

@@ -10,12 +10,12 @@ manager: jillfra
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: cbb06ac800fd21e2354b04fb2e7e46306da7ed72
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: 649f933c3d0fc2962ed0f7efc2ab09449bdd72ba
+ms.sourcegitcommit: 7b60e81414a82c6d34f6de1a1f56115c9cd26943
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "70180342"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81444945"
 ---
 # <a name="quickstart-create-your-first-python-web-app-using-visual-studio"></a>Démarrage rapide : créer votre première application web Python à l’aide de Visual Studio
 
@@ -167,7 +167,7 @@ Vous êtes maintenant prêt à ajouter un peu de code Python pour implémenter u
 
 **Réponse** : Reportez-vous à la documentation de Flask, en commençant par le [Guide de démarrage rapide Flask](https://flask.palletsprojects.com/en/1.1.x/quickstart/#quickstart).
 
-## <a name="run-the-application"></a>Exécuter l’application
+## <a name="run-the-application"></a>Exécution de l'application
 
 1. Cliquez avec le bouton droit sur *app.py* dans l’**Explorateur de solutions** et sélectionnez **Définir comme fichier de démarrage**. Cette commande identifie le fichier de code à lancer dans Python à l’exécution de l’application.
 
@@ -182,7 +182,7 @@ Vous êtes maintenant prêt à ajouter un peu de code Python pour implémenter u
 
 3. Sélectionnez **Déboguer > Démarrer sans débogage** (**Ctrl**+**F5**) pour enregistrer les modifications apportées aux fichiers et exécuter l’application.
 
-4. Une fenêtre de commande s’affiche avec le message « Exécution sous <https://localhost:4449/> », puis une fenêtre de navigateur s’ouvre sur `localhost:4449`, où figure le message « Hello, Python ! ». La requête GET apparaît également dans la fenêtre de commande avec l’état 200.
+4. Une fenêtre de commande apparaît avec le message **Running in https:\//localhost:4449**, et une fenêtre de navigateur devrait s’ouvrir à l’endroit `localhost:4449` où vous voyez le message, "Bonjour, Python!" La requête GET apparaît également dans la fenêtre de commande avec l’état 200.
 
     Si le navigateur ne s’ouvre pas automatiquement, lancez celui de votre choix et accédez à `localhost:4449`.
 

@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: lank
 ms.assetid: 5dc7f57e-883a-4cc1-a914-06245a8cb1ff
-ms.date: 07/30/2019
+ms.date: 04/15/2020
 ms.topic: conceptual
 description: Découvrez comment créer votre compte Azure avec paiement à l’utilisation.
-ms.openlocfilehash: b05f8a051a47d150b1c6670c54941820fcc73c47
-ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
+ms.openlocfilehash: 4fdbaacd9f778d7e81667cd4faa504f877775f02
+ms.sourcegitcommit: 7b60e81414a82c6d34f6de1a1f56115c9cd26943
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "80231981"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81444846"
 ---
 # <a name="azure-devtest-pay-as-you-go-subscriptions"></a>Azure DevTest Abonnements Pay-As-You-Go
 Collaborez avec votre équipe dans le cloud.  Créez plusieurs abonnements Dev/Test - Paiement à l’utilisation, pour vous permettre de collaborer avec d’autres abonnés tout en garantissant une séparation entre les équipes et les environnements.  Vous bénéficiez de tarifs horaires préférentiels exclusifs pour les droits d’utilisation Dev/Test et cloud des logiciels de votre abonnement sur Azure.

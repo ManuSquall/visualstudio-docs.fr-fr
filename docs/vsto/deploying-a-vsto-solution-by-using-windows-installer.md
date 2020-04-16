@@ -18,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 876781cb6967f5d10dddccd54a46e218170445ab
-ms.sourcegitcommit: 92361aac3665a934faa081e1d1ea89a067b01c5b
+ms.openlocfilehash: 46bfa808cbf99e942d7aadd2802f51eecfcefae8
+ms.sourcegitcommit: 7b60e81414a82c6d34f6de1a1f56115c9cd26943
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/17/2020
-ms.locfileid: "79432363"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81444904"
 ---
 # <a name="deploying-a-visual-studio-tools-for-office-solution-using-windows-installer"></a>Déploiement d’un studio visuel pour la solution Office à l’aide de Windows Install
 
@@ -593,7 +593,7 @@ s
 ## <a name="about-the-authors"></a>À propos des auteurs
 
 Wouter van Vugt est un MVP Microsoft avec des technologies Office Open XML et un consultant indépendant se concentrant sur la création d’applications d’entreprise Office (IA) avec SharePoint, Microsoft Office, et les technologies .NET connexes.
-Wouter contribue fréquemment aux sites communautaires de développeurs tels que [OpenXmlDeveloper.org](http://openxmldeveloper.org/) et [MSDN](/previous-versions/office/developer/office-2007/bb879915(v=office.12)). Il a publié plusieurs livres blancs et articles ainsi qu’un livre disponible en ligne intitulé Open XML: Explained e-book.
-Wouter est le fondateur de Code-Counsel, une société néerlandaise qui se concentre sur la fourniture de contenu technique de pointe par le biais de divers canaux. Vous pouvez en savoir plus sur Wouter en lisant son blog et en visitant le [site Web Code-Counsel](http://www.code-counsel.net/).
+Wouter contribue fréquemment aux sites communautaires de développeurs tels que [MSDN](/previous-versions/office/developer/office-2007/bb879915(v=office.12)). Il a publié plusieurs livres blancs et articles ainsi qu’un livre disponible en ligne intitulé Open XML: Explained e-book.
+Wouter est le fondateur de Code-Counsel, une société néerlandaise qui se concentre sur la fourniture de contenu technique de pointe par le biais de divers canaux. Vous pouvez en savoir plus sur Wouter en lisant son blog.
 
 Ted Pattison est MVP SharePoint, auteur, formateur et fondateur de Ted Pattison Group. À l’automne 2005, Ted a été embauché par le groupe d’évangélisation de la plate-forme de développement de Microsoft pour l’auteur du programme de formation des développeurs Ascend pour Windows SharePoint Services 3.0 et Microsoft Office SharePoint Server 2007. Depuis, Ted s’est entièrement concentré sur l’éducation des développeurs professionnels sur les technologies SharePoint 2007. Ted a fini d’écrire un livre pour Microsoft Press intitulé Inside Windows SharePoint Services 3.0 qui se concentre sur la façon d’utiliser SharePoint comme une plate-forme de développement pour la construction de solutions d’affaires. Ted écrit également une chronique axée sur les développeurs pour MSDN Magazine intitulée Office Space.

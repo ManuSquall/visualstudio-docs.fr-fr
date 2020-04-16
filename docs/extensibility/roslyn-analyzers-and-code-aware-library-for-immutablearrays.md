@@ -8,12 +8,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7d6b26d27c77ecb578d8eef0807c35b8efb8581a
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.openlocfilehash: 2076bc9fe3cabbfef8d3f3fb0248724835fa83f5
+ms.sourcegitcommit: 7b60e81414a82c6d34f6de1a1f56115c9cd26943
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2020
-ms.locfileid: "80701392"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81444568"
 ---
 # <a name="roslyn-analyzers-and-code-aware-library-for-immutablearrays"></a>Analyseurs Roslyn et bibliothèque de code-aware pour ImmutableArrays
 
@@ -312,4 +312,4 @@ Vous pouvez voir tout le code fini [ici](https://github.com/DustinCampbell/CoreF
 * [Code complété sur GitHub](https://github.com/DustinCampbell/CoreFxAnalyzers/tree/master/Source/CoreFxAnalyzers)
 * [Plusieurs exemples sur GitHub, regroupés en trois types d’analyseurs](https://github.com/dotnet/roslyn/blob/master/docs/analyzers/Analyzer%20Samples.md)
 * [Autres docs sur le site GitHub OSS](https://github.com/dotnet/roslyn/tree/master/docs/analyzers)
-* [Règles FxCop mises en œuvre avec des analyseurs Roslyn sur GitHub](https://github.com/dotnet/roslyn/tree/master/src/Diagnostics/FxCop)
+* [Règles FxCop mises en œuvre avec des analyseurs Roslyn sur GitHub](https://github.com/dotnet/roslyn/tree/master/src/Features/Core/Portable/Diagnostics/Analyzers)

@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d509292bc3c7a909289abf0c73babccfead31532
-ms.sourcegitcommit: cc58ca7ceae783b972ca25af69f17c9f92a29fc2
+ms.openlocfilehash: d6173d6b3525a1bd723bc859d34b889b3796d295
+ms.sourcegitcommit: c3b92a9912a5816f16c6059d1738dbc833851346
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/15/2020
-ms.locfileid: "81385401"
+ms.locfileid: "81397374"
 ---
 # <a name="unable-to-connect-to-the-microsoft-visual-studio-remote-debugging-monitor"></a>Impossible de se connecter à l'ordinateur Microsoft Visual Studio Remote Debugging Monitor
 Ce message peut se produire parce que le moniteur de débogage à distance n’est pas correctement configuré sur la machine à distance ou la machine à distance est inaccessible en raison de problèmes de réseau ou de la présence d’un pare-feu.
@@ -34,6 +34,7 @@ Le `Unable to Connect to the Microsoft Visual Studio Remote Debugging Monitor` m
 
 - [Le débbuggeur ne peut pas se connecter à l’ordinateur distant. Le débogénaire n’a pas été en mesure de résoudre le nom d’ordinateur spécifié](#cannot_connect)
 - [La demande de connexion a été rejetée par le débrouteur à distance](#rejected)
+- [La connexion avec le critère d’évaluation à distance a été interrompue](#connection_terminated)
 - [Accès invalide à l’emplacement de la mémoire](#invalid_access)
 - [Il n’y a pas de serveur par le nom spécifié en cours d’exécution sur l’ordinateur distant](#no_server)
 - [Le nom demandé était valide, mais aucune donnée du type demandé n’a été trouvée](#valid_name)
@@ -67,17 +68,19 @@ Dans la boîte de dialogue **Attach to Process** ou dans les propriétés du pro
 
 Si ces valeurs sont correctes et que le message mentionne le mode **d’authentification de Windows,** vérifiez que le débbuggeur à distance est dans le mode d’authentification correct **(Outils > Options**).
 
-## <a name="the-connection-with-the-remote-endpoint-was-terminated"></a><a name="connection_terminated"></a>La connexion avec le critère d’évaluation à distance a été résiliée
+## <a name="connection-with-the-remote-endpoint-was-terminated"></a><a name="connection_terminated"></a>La connexion avec le critère d’évaluation à distance a été interrompue
 
 Si vous débogagez une application Azure App Service, essayez d’utiliser la commande [Attach Debugger](../debugger/remote-debugging-azure.md#remote_debug_azure_app_service) de Cloud Explorer ou Server Explorer au lieu **d’attacher au processus**.
 
 Si vous utilisez **Attach to Process** pour déboiffer :
 
-1. Dans la boîte de dialogue **Attach to Process** ou dans les propriétés du projet, assurez-vous que le nom de l’ordinateur à distance et le numéro de port correspondent au nom et au numéro de port indiqués dans la fenêtre de débâcher à distance. Si incorrect, fixer et essayer à nouveau.
+- Dans la boîte de dialogue **Attach to Process** ou dans les propriétés du projet, assurez-vous que le nom de l’ordinateur à distance et le numéro de port correspondent au nom et au numéro de port indiqués dans la fenêtre de débâcher à distance. Si incorrect, fixer et essayer à nouveau.
 
-2. Vérifiez le journal d’application sur le serveur (Event Viewer sur Windows) pour obtenir des informations plus détaillées pour résoudre le problème.
+- Si vous essayez de vous connecter à l’aide d’un nom d’hôte, essayez plutôt une adresse IP.
 
-3. Sinon, essayez de redémarrer Visual Studio avec les privilèges de l’administrateur, puis essayez à nouveau.
+- Vérifiez le journal d’application sur le serveur (Event Viewer sur Windows) pour obtenir des informations plus détaillées pour résoudre le problème.
+
+- Sinon, essayez de redémarrer Visual Studio avec les privilèges de l’administrateur, puis essayez à nouveau.
 
 ## <a name="invalid-access-to-memory-location"></a><a name="invalid_access"></a>Accès invalide à l’emplacement de la mémoire
 
