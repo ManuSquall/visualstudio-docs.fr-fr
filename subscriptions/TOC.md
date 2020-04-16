@@ -2,7 +2,7 @@
 # [Nouveautés](whats-new-in-subscriptions.md)
 # Abonnements
 ## Acheter des abonnements
-### [Distribution](https://visualstudio.microsoft.com/vs/pricing)
+### [Distribution](buy-activate-retail.md)
 ### Cloud 
 #### [Vue d’ensemble](vscloud-overview.md)
 #### [FAQ sur la facturation](vscloud-billing-faq.md)
@@ -13,7 +13,6 @@
 #### [Gérer les abonnements pour MPN](manage-mpn-subscriptions.md)
 ### [Microsoft for Startups](program-startups.md)
 ## Se connecter 
-### [Activer des abonnements au détail](activate-store-subscriptions.md)
 ### [Se connecter avec des comptes Microsoft](sign-in-msa.md)
 ### [Se connecter avec des comptes professionnels ou scolaires](sign-in-work.md)
 ### [Se connecter avec GitHub](sign-in-github.md)
