@@ -2,7 +2,7 @@
 title: Gérer les packages npm
 description: Visual Studio vous aide à gérer les packages à l’aide du Gestionnaire de package Node.js (npm)
 ms.custom: seodec18
-ms.date: 03/12/2020
+ms.date: 04/16/2020
 ms.topic: conceptual
 ms.devlang: javascript
 author: mikejo5000
@@ -12,42 +12,48 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: dba657d30eedef26337c708e7ede6c5ab85ed4cc
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: ef831b5ffee172b642572535162713a53d8ae578
+ms.sourcegitcommit: eef26de3d7a5c971baedbecf3b4941fb683ddb2d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "79549964"
+ms.lasthandoff: 04/17/2020
+ms.locfileid: "81544326"
 ---
 # <a name="manage-npm-packages-in-visual-studio"></a>Gérer les packages npm dans Visual Studio
 
 npm vous permet d’installer et de gérer des packages pour une utilisation dans vos applications Node.js. Visual Studio simplifie l’interaction avec npm et l’exécution de commandes npm par le biais de l’interface utilisateur ou directement. Si vous ne connaissez pas npm et souhaitez en savoir plus, consultez la [documentation de npm](https://docs.npmjs.com/).
 
 L’intégration visuelle de Studio avec npm est différente selon votre type de projet.
-* [Node.js (en)](#nodejs-projects)
+* [Node.JS](#nodejs-projects)
 * [ASP.NET Core](#aspnet-core-projects)
 * [Dossier ouvert (Node.js)](../javascript/develop-javascript-code-without-solutions-projects.md)
+
+*package.json* est un fichier utilisé par npm pour gérer les dépendances et les versions de paquets pour les paquets installés localement. Pour plus d’informations sur ce fichier, voir [la configuration package.json](../javascript/configure-packages-with-package-json.md).
 
 > [!Important]
 > npm s’attend à ce que le dossier *node_modules* et *package.json* dans la racine du projet. Si la structure du dossier de votre application est différente, vous devez modifier votre structure de dossier si vous souhaitez gérer les paquets npm à l’aide de Visual Studio.
 
-> [!NOTE]
-> Pour les projets node.js existants, utilisez le modèle de solution **de code Nde.js existant** pour activer npm dans votre projet.
-
 ## <a name="nodejs-projects"></a>Projets Node.js
 
-Pour les projets Node.js, utilisez l’une des méthodes suivantes :
+Pour les projets Node.js, vous pouvez effectuer les tâches suivantes :
 * [Installer des packages à partir de l’Explorateur de solutions](#npmInstallWindow)
 * [Gérer les packages installés à partir de l’Explorateur de solutions](#solutionExplorer)
 * [Utiliser la commande `.npm` dans la fenêtre interactive de Node.js](#interactive)
 
 Ces fonctionnalités coopèrent et se synchronisent avec le système de projet et le fichier *package.json* dans le projet.
 
+### <a name="prerequisites"></a>Prérequis
+
+Vous avez besoin de la charge de travail **de développement Node.js** et le temps d’exécution Node.js installé pour ajouter un support npm à votre projet. Pour des étapes détaillées, voir [Créer un projet Node.js](/visualstudio/ide/quickstart-nodejs?toc=/visualstudio/javascript/toc.json).
+
+> [!NOTE]
+> Pour les projets node.js existants, utilisez le modèle de solution **de code Nde.js existant** ou le type de projet open [folder (Node.js)](../javascript/develop-javascript-code-without-solutions-projects.md) pour activer npm dans votre projet.
+
 ### <a name="install-packages-from-solution-explorer-nodejs"></a><a name="npmInstallWindow"></a>Installer des paquets de Solution Explorer (Node.js)
 
 Pour les projets Node.js, le moyen le plus facile d’installer des paquets npm est à travers la fenêtre d’installation de paquets npm. Pour accéder à cette fenêtre, cliquez sur le nœud **npm** dans le projet, puis sélectionnez **Installer de nouveaux packages npm**.
 
-![Installer un nouveau package npm à partir de l’Explorateur de solutions](../javascript/media/solution-explorer-install-package.png)
+:::image type="content" source="../javascript/media/solution-explorer-install-package.png" alt-text="Installer un nouveau package npm à partir de l’Explorateur de solutions" border="true":::
 
 Dans cette fenêtre, vous pouvez rechercher un package, spécifier des options et effectuer une installation.
 
@@ -108,11 +114,17 @@ Pour des projets tels que ASP.NET projets Core, vous pouvez intégrer le support
 
 ### <a name="add-npm-support-to-a-project-aspnet-core"></a><a name="npmAdd"></a>Ajouter un support npm à un projet (ASP.NET Core)
 
-Si votre projet n’inclut pas déjà un fichier *package.json,* vous pouvez ajouter un support npm active en ajoutant un fichier package.json au projet.
+Si votre projet n’inclut pas déjà un fichier *package.json,* vous pouvez en ajouter un pour activer le support npm en ajoutant un fichier *package.json* au projet.
 
-1. Pour ajouter le fichier, cliquez à droite sur le projet dans Solution Explorer et choisissez **Ajouter** > **un nouvel article**. Choisissez le **fichier de configuration npm**, utilisez le nom par défaut, et cliquez sur **Ajouter**.
+1. Si vous n’avez pas node.js installé, nous vous recommandons d’installer la version LTS à partir du site [Node.js](https://nodejs.org/en/download/) pour la meilleure compatibilité avec les cadres extérieurs et les bibliothèques.
+
+   npm nécessite Node.js.
+
+1. Pour ajouter le fichier *package.json,* cliquez à droite sur le projet dans Solution Explorer et choisissez **Ajouter** > **un nouvel article**. Choisissez le **fichier de configuration npm**, utilisez le nom par défaut, et cliquez sur **Ajouter**.
 
    ![Ajoutez package.json à votre projet](../javascript/media/npm-add-package-json.png)
+
+   Si vous ne voyez pas le fichier de configuration npm répertorié, les outils de développement Node.js ne sont pas installés. Vous pouvez utiliser l’installateur Visual Studio pour ajouter la charge de travail **de développement Node.js.** Répétez ensuite l’étape précédente.
 
 1. Inclure un ou plusieurs paquets `devDependencies` de npm dans le ou la `dependencies` section de *package.json*. Par exemple, vous pouvez ajouter ce qui suit au fichier :
 
@@ -126,7 +138,7 @@ Si votre projet n’inclut pas déjà un fichier *package.json,* vous pouvez ajo
 Lorsque vous enregistrez le fichier, Visual Studio ajoute le paquet sous le nœud **Dépendance / npm** dans Solution Explorer. Si vous ne voyez pas le nœud, cliquez à droite **package.json** et choisissez **Restore Packages**.
 
 >[!NOTE]
-> Dans certains scénarios, Solution Explorer peut indiquer qu’un paquet npm est désynchronisé avec *package.json* en raison d’un problème connu décrit [ici](https://github.com/aspnet/Tooling/issues/479). Par exemple, le paquet peut apparaître comme non installé lorsqu’il est installé. Dans la plupart des cas, vous pouvez mettre à jour Solution Explorer en supprimant *package.json*, redémarrer Visual Studio, et re-ajouter le fichier *package.json* comme décrit précédemment dans cet article.
+> Dans certains scénarios, Solution Explorer peut ne pas montrer l’état correct pour les paquets npm installés en raison d’un problème connu décrit [ici](https://github.com/aspnet/Tooling/issues/479). Par exemple, le paquet peut apparaître comme non installé lorsqu’il est installé. Dans la plupart des cas, vous pouvez mettre à jour Solution Explorer en supprimant *package.json*, redémarrer Visual Studio, et re-ajouter le fichier *package.json* comme décrit précédemment dans cet article.
 
 ### <a name="install-packages-using-packagejson-aspnet-core"></a><a name="npmInstallPackage"></a>Installer des paquets à l’aide de package.json (ASP.NET Core)
 
@@ -136,7 +148,7 @@ Pour les projets avec npm inclus, `package.json`vous pouvez configurer des paque
 
 IntelliSense in *package.json* vous aide à sélectionner une version particulière d’un forfait npm.
 
-![Rechercher un package npm](../javascript/media/npm-add-package-intellisense.png)
+:::image type="content" source="../javascript/media/npm-add-package-intellisense.png" alt-text="Sélectionnez la version npm du paquet" border="true":::
 
 Lorsque vous enregistrez le fichier, Visual Studio ajoute le paquet sous le nœud **Dépendance / npm** dans Solution Explorer. Si vous ne voyez pas le nœud, cliquez à droite **package.json** et choisissez **Restore Packages**.
 

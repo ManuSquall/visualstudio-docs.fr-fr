@@ -5,19 +5,19 @@ description: Liste des versions publiées et des numéros de build de Visual Stu
 author: ornellaalt
 ms.author: ornella
 manager: jillfra
-ms.date: 04/14/2020
+ms.date: 04/16/2020
 ms.topic: reference
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 open_to_public_contributors: false
-ms.openlocfilehash: e2a71f55bf7ea55415375aa20c75e839840af42b
-ms.sourcegitcommit: cc58ca7ceae783b972ca25af69f17c9f92a29fc2
+ms.openlocfilehash: c9021e2202701e01ee0e34fbf074f07fc1c1b8f0
+ms.sourcegitcommit: eef26de3d7a5c971baedbecf3b4941fb683ddb2d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/15/2020
-ms.locfileid: "81385465"
+ms.lasthandoff: 04/17/2020
+ms.locfileid: "81544352"
 ---
 # <a name="visual-studio-build-numbers-and-release-dates"></a>Numéros de builds et dates de publication de Visual Studio
 
@@ -27,13 +27,14 @@ ms.locfileid: "81385465"
 
 Le tableau suivant liste les numéros de build et les dates de publication de Visual Studio 2019 à ce jour.
 
-| **Version**| **Channel** | **Date de publication** | **Construire la version** |
+| **Version**| **Channel** | **Date de sortie** | **Construire la version** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
+| 16.6.0 | Preview 3 | Le 16 avril 2020 | 16.6.30014.187 |
 | 16.0.13 | Libérer | Le 14 avril 2020 | 16.0.28803.718 |
 | 16.4.7 | Libérer | Le 14 avril 2020 | 16.4.30011.19 |
 | 16.5.4 | Libérer | Le 14 avril 2020 | 16.5.30011.22 |
 | 16.5.3 | Libérer | Le 7 avril 2020 | 16.5.30002.166 |
-| 16.6.0 | Préversion 2.1 | 2 avril 2020 | 16.6.30001.183 |
+| 16.6.0 | Préversion 2.1 | 2 avril 2020 | 16.6.30001.183 |
 | 16.5.2 | Libérer | 31 mars 2020 | 16.5.29926.136 |
 | 16.6.0 | Préversion 2 | Le 26 mars 2020 | 16.6.29924.181 |
 | 16.5.1 | Libérer | Le 24 mars 2020 | 16.5.29920.165 |
@@ -133,11 +134,11 @@ Le tableau suivant liste les numéros de build et les dates de publication de Vi
 
 ::: moniker range="vs-2017"
 
-## <a name="visual-studio-2017"></a>Visual Studio 2017
+## <a name="visual-studio-2017"></a>Visual Studio 2017
 
 Le tableau suivant répertorie les numéros de build et les dates de publication de Visual Studio 2017, à ce jour.
 
-| **Version**| **Channel** | **Date de publication** | **Construire la version** |
+| **Version**| **Channel** | **Date de sortie** | **Construire la version** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
 | 15.9.22 | Libérer | Le 14 avril 2020 | 15.9.28307.1093 |
 | 15.9.21 | Libérer | Le 10 mars 2020 | 15.9.28307.1064 |

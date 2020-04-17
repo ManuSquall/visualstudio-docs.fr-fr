@@ -11,12 +11,12 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 monikerRange: '>= vs-2019'
-ms.openlocfilehash: df4630182e89dad08360794057bda856ff4d677b
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: 199a27dbfef2b7297563e87d973137e2acd9c745
+ms.sourcegitcommit: eef26de3d7a5c971baedbecf3b4941fb683ddb2d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "79549945"
+ms.lasthandoff: 04/17/2020
+ms.locfileid: "81544287"
 ---
 # <a name="javascript-and-typescript-in-visual-studio-2019"></a>JavaScript et TypeScript dans Visual Studio 2019
 
@@ -38,7 +38,8 @@ Visual Studio 2019 propose plusieurs options d’intégration de la compilation 
 * [Le package npm TypeScript](https://www.npmjs.com/package/typescript) : lorsque le package npm pour TypeScript 2.1 (ou version ultérieure) est installé dans un projet, la version correspondante du service de langage TypeScript est chargée dans l’éditeur.
 * Le kit de développement logiciel (SDK) TypeScript, disponible par défaut dans Visual Studio Installer, ainsi qu’un kit SDK en téléchargement autonome sur [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=TypeScriptTeam.typescript-331-vs2017).
 
-Pour les projets développés dans Visual Studio 2019, nous vous encourageons à utiliser les packages npm et NuGet TypeScript afin de bénéficier d’une meilleure portabilité entre les plateformes et les environnements.
+> [!TIP]
+> Pour les projets développés dans Visual Studio 2019, nous vous encourageons à utiliser le TypeScript NuGet ou le forfait TypeScript npm pour une plus grande portabilité sur différentes plateformes et environnements.
 
 Une utilisation courante pour le paquet NuGet est de compiler TypeScript à l’aide de l’ÉLIc de base .NET. Sauf si vous modifiez manuellement votre fichier de projet pour importer des cibles de construction à partir d’une installation TypeScript `dotnet build` `dotnet publish`SDK, le paquet NuGet est le seul moyen d’activer la compilation TypeScript à l’aide de commandes CLI .NET Core telles que et .
 
