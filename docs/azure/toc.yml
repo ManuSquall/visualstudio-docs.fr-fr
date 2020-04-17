@@ -1,7 +1,7 @@
 - name: Développement Azure avec Visual Studio
   href: index.yml
   expanded: true
-- name: Déployer sur Azure App Service
+- name: Déployer dans Azure App Service
   expanded: true
   items:
     - name: Déployer une application ASP.NET Core sur Azure
@@ -14,7 +14,7 @@
       href: /azure/devops/pipelines/get-started-yaml?view=vsts
     - name: Déployer une application ASP.NET Web App sur une machine virtuelle Azure
       href: /azure/virtual-machines/windows/publish-web-app-from-visual-studio?toc=/visualstudio/azure/toc.json&bc=/visualstudio/azure/breadcrumb/toc.json
-- name: Se connecter à des services Azure
+- name: Se connecter aux services Azure
   expanded: false
   items:
     - name: Ajouter Stockage Azure
@@ -23,16 +23,6 @@
       href: /azure/key-vault/vs-key-vault-add-connected-service?toc=/visualstudio/azure/toc.json&bc=/visualstudio/azure/breadcrumb/toc.json
     - name: Ajouter Azure Active Directory (AD)
       href: /azure/active-directory/develop/vs-active-directory-add-connected-service?toc=/visualstudio/azure/toc.json&bc=/visualstudio/azure/breadcrumb/toc.json
-    - name: Ajouter Cognitive Services
-      items:
-        - name: Analyse de texte
-          href: /azure/cognitive-services/text-analytics/vs-text-connected-service?toc=/visualstudio/azure/toc.json&bc=/visualstudio/azure/breadcrumb/toc.json
-        - name: Recherche Bing
-          href: /azure/cognitive-services/bing-news-search/vs-bing-news-search-add-connected-service?toc=/visualstudio/azure/toc.json&bc=/visualstudio/azure/breadcrumb/toc.json
-        - name: Reconnaissance faciale
-          href: /azure/cognitive-services/face/vs-face-connected-service?toc=/visualstudio/azure/toc.json&bc=/visualstudio/azure/breadcrumb/toc.json
-        - name: Vision par ordinateur
-          href: /azure/cognitive-services/computer-vision/vs-computer-vision-connected-service?toc=/visualstudio/azure/toc.json&bc=/visualstudio/azure/breadcrumb/toc.json
 - name: Développement Azure Cloud Services
   expanded: false
   items:
@@ -62,7 +52,7 @@
       items:
         - name: Déboguer un service cloud ou une machine virtuelle dans Visual Studio
           href: vs-azure-tools-debug-cloud-services-virtual-machines.md
-        - name: Découvrez différentes méthodes de débogage d’un service cloud Azure.
+        - name: Découvrir les différentes façons de déboguer un service cloud Azure
           href: vs-azure-tools-debugging-cloud-services-overview.md
         - name: Configurer les diagnostics pour les services cloud et les machines virtuelles Azure
           href: vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines.md
@@ -106,7 +96,7 @@
           href: /azure/vs-azure-tools-storage-explorer-files?toc=/visualstudio/azure/toc.json&bc=/visualstudio/azure/breadcrumb/toc.json
         - name: Notes de publication de l’Explorateur Stockage Microsoft Azure
           href: /azure/vs-azure-tools-storage-explorer-relnotes?toc=/visualstudio/azure/toc.json&bc=/visualstudio/azure/breadcrumb/toc.json
-        - name: Accessibilité de l’Explorateur Stockage
+        - name: Accessibilité de l’Explorateur Stockage Azure
           href: /azure/vs-azure-tools-storage-explorer-accessibility?toc=/visualstudio/azure/toc.json&bc=/visualstudio/azure/breadcrumb/toc.json
 - name: Cloud Explorer
   items:
