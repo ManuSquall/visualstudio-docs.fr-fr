@@ -10,12 +10,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e68f2bdf0559dc2bea6bd349dbf5f9bedca3671e
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: ab46aef69bd6356eda0925c492a029b43cc57295
+ms.sourcegitcommit: 98421670ed0b8170aaa32d3d6f8681298f401a1d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77633315"
+ms.lasthandoff: 04/18/2020
+ms.locfileid: "81638046"
 ---
 # <a name="msbuild-inline-tasks"></a>Tâches inline MSBuild
 
@@ -52,7 +52,7 @@ Les tâches MSBuild sont généralement créées en compilant une classe qui imp
 
 - L’attribut `TaskFactory` nomme la classe qui implémente la fabrique de tâches inline.
 
-- L’attribut `AssemblyFile` indique l’emplacement de la fabrique de tâches inline. Vous pouvez également utiliser l’attribut `AssemblyName` pour spécifier le nom qualifié complet de la classe de fabrique de tâches inline, qui se trouve généralement dans le global assembly cache (GAC).
+- L’attribut `AssemblyFile` indique l’emplacement de la fabrique de tâches inline. Alternativement, vous pouvez `AssemblyName` utiliser l’attribut pour spécifier le nom entièrement `$(MSBuildToolsPath)\Microsoft.Build.Tasks.Core.dll`qualifié de la classe d’usine de tâches en ligne, qui est généralement situé dans .
 
 Les éléments restants de la tâche `DoNothing` sont vides et fournis pour illustrer l’ordre et la structure d’une tâche inline. Un exemple plus pertinent est présenté plus loin dans cette rubrique.
 
@@ -166,7 +166,7 @@ définit ces trois paramètres :
 
 Si l’élément `Code` a un attribut `Type` égal à `Fragment` ou `Method`, des propriétés sont créées automatiquement pour chaque paramètre. Dans le cas contraire, les propriétés doivent être déclarées explicitement dans le code source de la tâche, et elles doivent correspondre exactement à leurs définitions de paramètres.
 
-## <a name="example"></a> Exemple
+## <a name="example"></a>Exemple
 
  La tâche inline suivante remplace chaque occurrence d’un jeton dans le fichier spécifié par la valeur donnée.
 
