@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: lank
 ms.assetid: fc33d419-78cf-485e-b558-5b7efa900f14
-ms.date: 03/25/2020
+ms.date: 04/17/2020
 ms.topic: conceptual
 description: Découvrez l’abonnement DataCamp Training inclus dans certains abonnements Visual Studio.
-ms.openlocfilehash: 0b5aa20667728847afc83c77401f8651cbad106d
-ms.sourcegitcommit: dfa9476b69851c28b684ece66980bee735fef8fd
+ms.openlocfilehash: 85545df5a38f5f8c3e3c29e6ffe1581298999562
+ms.sourcegitcommit: ade07bd1cf69b8b494d171ae648cfdd54f7800d3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/26/2020
-ms.locfileid: "80273983"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "81649565"
 ---
 # <a name="the-datacamp-training-benefit-in-visual-studio-subscriptions"></a>Avantage DataCamp Training dans les abonnements Visual Studio
 Les abonnements Visual Studio éligibles incluent des abonnements à DataCamp.  Avec DataCamp, vous pouvez acquérir toutes les compétences qui vous sont nécessaires en science des données, confortablement devant votre navigateur. Vous devez choisir quand et ce que vous voulez apprendre. Sans aucun logiciel à installer ni aucune configuration matérielle requise spéciale, l’apprentissage de la science des données est plus facile que jamais.
@@ -91,7 +91,7 @@ Vous n’êtes pas sûr de l’abonnement que vous utilisez ?  Connectez-vous [h
 
 ## <a name="next-steps"></a>Étapes suivantes
 Découvrez d’autres opportunités de développement professionnel dans votre abonnement :
-- [pluralsight](vs-pluralsight.md)
+- [Pluralsight](vs-pluralsight.md)
 - [LinkedIn Learning](vs-linkedin-learning.md)
 
 Si vous n’avez pas déjà activé l’avantage de crédit individuel [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) Azure DevTest qui vient avec votre abonnement, visitez et cliquez sur la tuile Azure dans la catégorie Outils pour configurer votre abonnement Azure et échanger votre crédit individuel Azure DevTest.

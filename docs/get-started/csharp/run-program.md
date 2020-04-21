@@ -1,5 +1,5 @@
 ---
-title: Comment exécuter un programme C
+title: Comment exécuter un programme (C)
 description: Guide du débutant sur la façon d’exécuter un programme de Cmd dans Visual Studio.
 ms.custom: get-started
 ms.date: 10/16/2019
@@ -15,12 +15,12 @@ dev_langs:
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: 2ffe52fc2bf7d05084307b4d972e45f4b1d2acdf
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: ee28bde6de10006ccfdc5175cca629ad9d1590d0
+ms.sourcegitcommit: ade07bd1cf69b8b494d171ae648cfdd54f7800d3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "76924615"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "81649645"
 ---
 # <a name="how-to-run-a-c-program-in-visual-studio"></a>Comment : Exécuter un programme CMD en studio visuel
 
@@ -76,7 +76,7 @@ Si le code que vous souhaitez exécuter est dans GitHub ou dans un repo Azure De
 
 Pour commencer le programme, appuyez sur la flèche verte (bouton**Démarrer)** sur la barre d’outils visual Studio principale, ou appuyez sur **F5** ou **Ctrl**+**F5** pour exécuter le programme. Lorsque vous utilisez le bouton **Démarrer,** il s’exécute sous le débailleur.  Visual Studio tente de construire le code dans votre projet et de l’exécuter.  Si ça réussit, super ! Mais si ce n’est pas le cas, continuez à lire pour quelques idées sur la façon de le faire construire avec succès.
 
-## <a name="troubleshooting"></a>Dépannage
+## <a name="troubleshooting"></a>Résolution des problèmes
 
 Votre code peut avoir des erreurs, mais si le code est correct, mais dépend juste de certains autres assemblages ou paquets NuGet, ou a été écrit pour cibler une version différente de .NET, vous pourriez être en mesure de le réparer facilement.
 

@@ -11,12 +11,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7173bc1ebc5507eadf319c0374f4c878dea62857
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.openlocfilehash: 84138a69dbb42fc349c12276fd7cca4b593e4d47
+ms.sourcegitcommit: ade07bd1cf69b8b494d171ae648cfdd54f7800d3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2020
-ms.locfileid: "80739781"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "81649369"
 ---
 # <a name="command-flag-eelement"></a>Eelement de drapeau de commande
 Modifie son élément parent.
@@ -60,7 +60,6 @@ Modifie son élément parent.
 |PostExec (en anglais)|Rend la commande non-blocage. L’environnement de développement reporte l’exécution jusqu’à ce que toutes les requêtes préalables au traitement soient terminées.<br /><br /> Valable pour :`Button`|
 |RouteToDocs|La commande est acheminée vers le document actif.<br /><br /> Valable pour :`Button`|
 |StretchHorizontally|Lorsque ce drapeau est réglé, la largeur devient la largeur minimale pour la boîte combo, et s’il ya de la place sur la barre d’outils, la boîte combo s’étend pour remplir l’espace disponible. Cela ne se produit que si la barre d’outils est horizontalement amarré, et une seule boîte combo sur la barre d’outils peut utiliser le drapeau (le drapeau est ignoré sur tous sauf la première boîte combo).<br /><br /> Valable pour :`Combo`|
-|TextMenuUseButton|Utilisez `ButtonText` le terrain pour les menus. Le champ `MenuText` par défaut est s’il est spécifié.<br /><br /> Valable pour :`Button`|
 |TextChanges TextChanges TextChanges TextChang|Le texte de commande ou de menu peut `QueryStatus` être modifié au moment de l’exécution, généralement à travers la méthode.<br /><br /> Valable pour: `Button`,`Menu`|
 |TextChangesButton|Valable pour :`Button`|
 |TextIsAnchorCommand|Pour un contrôleur de menu, le texte du menu est tiré de la commande par défaut (ancre). Une commande d’ancrage est la dernière commande sélectionnée ou verrouillée. Si ce drapeau n’est pas défini, le contrôleur de menu utilise son propre `MenuText` champ. Cependant, en cliquant sur le contrôleur de menu permet toujours la dernière commande sélectionnée à partir de ce contrôleur.<br /><br /> Nous vous recommandons de combiner `TextChanges` ce drapeau avec le drapeau.<br /><br /> Ce drapeau ne s’applique qu’aux menus de type MenuController ou MenuControllerLatched.<br /><br /> Valable pour :`Menu`|

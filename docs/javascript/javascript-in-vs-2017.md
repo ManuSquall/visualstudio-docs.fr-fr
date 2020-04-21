@@ -12,12 +12,12 @@ caps.latest.revision: 1
 author: bowdenk7
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 75b2a336cf9a229b4834b68e0f7bed5d6b1174f4
-ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
+ms.openlocfilehash: 9df1b66f1a2407d523e38cd71fc9ffa993cd2d92
+ms.sourcegitcommit: ade07bd1cf69b8b494d171ae648cfdd54f7800d3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "80233069"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "81649631"
 ---
 # <a name="javascript-in-visual-studio-2017"></a>JavaScript dans Visual Studio 2017
 
@@ -58,7 +58,7 @@ Les paramètres obligatoires pour le fichier tsconfig sont les suivants :
 L’emplacement de sortie, ainsi que les dossiers autres que les dossiers de projet tels que `node_modules` ou `temp`, doivent être ajoutés à ce paramètre.
 - `enableAutoDiscovery` : ce paramètre permet de détecter et télécharger automatiquement les fichiers de définition, comme indiqué précédemment.
 - `compileOnSave` : ce paramètre indique au compilateur s’il doit réexécuter la compilation chaque fois qu’un fichier source est enregistré dans Visual Studio.
-- `typeAcquisition` : cet ensemble de paramètres contrôle le comportement de l’acquisition de type automatique (pour plus de détails, consultez [cette section](/visualstudio/ide/javascript-intellisense#Auto)).
+- `typeAcquisition` : cet ensemble de paramètres contrôle le comportement de l’acquisition de type automatique (pour plus de détails, consultez [cette section](../ide/javascript-intellisense.md#Auto)).
 
 Pour pouvoir convertir des fichiers JavaScript en modules CommonJS et les placer dans un dossier `./out`, vous pouvez utiliser le fichier `tsconfig.json` suivant :
 

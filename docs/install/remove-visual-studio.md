@@ -22,12 +22,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: b0e8c8fe10451e9e5906eabf7f4f65086d147904
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 98886df1c7fb09fa30d5c54abe19452780195b6a
+ms.sourcegitcommit: ade07bd1cf69b8b494d171ae648cfdd54f7800d3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "76113712"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "81649194"
 ---
 # <a name="remove-visual-studio"></a>Supprimer Visual Studio
 
@@ -51,10 +51,10 @@ Voici comment faire fonctionner `InstallCleanup.exe` l’outil :
 1. Ouvrez une invite de commandes d'administrateur. Pour ouvrir une invite de commandes administrateur, suivez les étapes ci-dessous :
    * Tapez **cmd** dans la zone « Tapez ici pour effectuer une recherche ».
    * Cliquez avec le bouton droit sur **Invite de commandes**, puis sélectionnez **Exécuter en tant qu’administrateur**.
-1. Entrez le chemin `InstallCleanup.exe` complet de l’outil et ajoutez l’interrupteur de ligne de commande que vous préférez. Par défaut, le chemin de l’outil est le suivant :
+1. Entrez le chemin `InstallCleanup.exe` complet de l’outil et ajoutez l’interrupteur de ligne de commande que vous préférez. Par défaut, le chemin de l’outil est le suivant. Les citations doubles entourent une commande contenant des espaces :
 
    ```
-   C:\Program Files (x86)\Microsoft Visual Studio\Installer\resources\app\layout\InstallCleanup.exe
+   "C:\Program Files (x86)\Microsoft Visual Studio\Installer\resources\app\layout\InstallCleanup.exe"
    ```
 
    > [!NOTE]

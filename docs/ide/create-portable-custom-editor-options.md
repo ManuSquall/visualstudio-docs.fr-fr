@@ -7,12 +7,12 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: a3aee4945b4a3b41a7f6ec532268c2c19f549d0a
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 5fdb0cc217062190e02e70b6361c8a3a2aa2f935
+ms.sourcegitcommit: ade07bd1cf69b8b494d171ae648cfdd54f7800d3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79301957"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "81648523"
 ---
 # <a name="create-portable-custom-editor-settings-with-editorconfig"></a>Créer des paramètres d’éditeur personnalisés et portables avec EditorConfig
 
@@ -104,7 +104,7 @@ Il existe d’autres façons d’ajouter un fichier EditorConfig au projet :
 
 - La [fonctionnalité d’inférence de code](/visualstudio/intellicode/code-style-inference) d’IntelliCode pour Visual Studio déduit vos styles de code à partir du code existant. Elle crée ensuite un fichier EditorConfig non vide avec vos préférences de style de code déjà définies.
 
-- À compter de Visual Studio 2019, vous pouvez [générer un fichier EditorConfig selon vos paramètres de style de code](/visualstudio/ide/code-styles-and-code-cleanup#code-styles-in-editorconfig-files) dans **Outils** > **Options**.
+- À compter de Visual Studio 2019, vous pouvez [générer un fichier EditorConfig selon vos paramètres de style de code](code-styles-and-code-cleanup.md#code-styles-in-editorconfig-files) dans **Outils** > **Options**.
 
 ## <a name="file-hierarchy-and-precedence"></a>Priorité et hiérarchie des fichiers
 
@@ -135,7 +135,7 @@ Si vous modifiez de nombreux fichiers *.editorconfig*, l’[extension du service
 
 ![IntelliSense avec l’extension du service de langage EditorConfig](media/editorconfig-intellisense.png)
 
-## <a name="example"></a> Exemple
+## <a name="example"></a>Exemple
 
 L’exemple suivant montre la mise en retrait d’un extrait de code C# avant et après l’ajout d’un fichier *.editorconfig* au projet. Le paramètre **Tabulations** dans la boîte de dialogue **Options** de l’éditeur de texte Visual Studio est défini pour ajouter des espaces quand vous appuyez sur la touche **Tab**.
 

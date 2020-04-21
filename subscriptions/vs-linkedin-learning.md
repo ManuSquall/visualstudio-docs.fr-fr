@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: lank
 ms.assetid: 5bba2205-d32f-413d-9b58-724a24993842
-ms.date: 03/25/2020
+ms.date: 04/17/2020
 ms.topic: conceptual
 description: Découvrez l’avantage LinkedIn Learning, qui est lié à un abonnement LinkedIn Premium inclus dans certains abonnements Visual Studio.
-ms.openlocfilehash: 57744c21123188448048b469aa06153cf81a949f
-ms.sourcegitcommit: dfa9476b69851c28b684ece66980bee735fef8fd
+ms.openlocfilehash: a0b837ce4a86b48acb690030c1a96064b336cd61
+ms.sourcegitcommit: ade07bd1cf69b8b494d171ae648cfdd54f7800d3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/26/2020
-ms.locfileid: "80273957"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "81649528"
 ---
 # <a name="the-linkedin-learning-benefit-in-visual-studio-subscriptions"></a>Avantage LinkedIn Learning dans les abonnements Visual Studio
 
@@ -27,7 +27,7 @@ Pour activer votre abonnement LinkedIn Premium et l’avantage LinkedIn Learning
 
 2. Recherchez la vignette LinkedIn Learning dans la catégorie Formation, puis cliquez sur le lien **Obtenir un code**.
    > [!div class="mx-imgBorder"]
-   > ![Vignette de l’avantage LinkedIn Learning](_img/vs-linkedin/vs-linkedin-3-month-tile.png)
+   > ![Vignette de l’avantage LinkedIn Learning](_img/vs-linkedin/vs-linkedin-6-month-tile.png)
 
 3. Si vous avez déjà un compte LinkedIn et que vous êtes connecté automatiquement, vous êtes immédiatement dirigé vers la page d’activation de l’avantage LinkedIn Learning.  Si vous avez un compte LinkedIn mais que vous n’êtes pas connecté automatiquement, entrez simplement votre nom d’utilisateur et votre mot de passe, puis cliquez sur **S’identifier**.  Passez à [cette étape](#activate-your-offer) pour activer votre offre.
 

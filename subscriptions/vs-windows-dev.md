@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: lank
 ms.assetid: 588480a3-8806-4ea5-9915-c25974770069
-ms.date: 03/26/2020
+ms.date: 04/20/2020
 ms.topic: conceptual
 description: Découvrez le compte de développeur Windows inclus dans votre abonnement Visual Studio.
-ms.openlocfilehash: 795eccdf72fad7df760d709b44351444b6dea424
-ms.sourcegitcommit: 104d75ade6f48538620743d1c836fb26bdd0ade5
+ms.openlocfilehash: c3764330b5ace58f976f726770fa7a3e9ed2a4ed
+ms.sourcegitcommit: ade07bd1cf69b8b494d171ae648cfdd54f7800d3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/26/2020
-ms.locfileid: "80301857"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "81649707"
 ---
 # <a name="windows-developer-account-in-visual-studio-subscriptions"></a>Compte de développeur Windows dans les abonnements Visual Studio
 Votre compte de développeur Windows, inclus avec certains abonnements Visual Studio, vous permet de proposer des applications Windows gratuites et payantes dans le Windows Store.
@@ -37,7 +37,7 @@ Nous vous recommandons d’ouvrir une nouvelle fenêtre de navigateur « privé
 8. Entrez vos coordonnées et la langue par défaut de vos e-mails, puis cliquez sur **Suivant**.
 9. Vous pouvez être invité à vérifier votre mot de passe.  Entrez-le, puis cliquez sur **Se connecter**.
 10. Dans la page Inscription – Paiement, collez le code copié précédemment dans le champ Code promo.  La page est mise à jour et indique *qu’aucun paiement n’est requis*.  Cliquez sur **Suivant**.
-11. Vérifiez les informations de votre compte et lisez le Contrat du développeur d’applications, puis cochez la case pour indiquer que vous acceptez les conditions générales.  Ensuite, cliquez sur **Terminer**.
+11. Vérifiez les informations de votre compte et lisez le Contrat du développeur d’applications, puis cochez la case pour indiquer que vous acceptez les conditions générales.  Puis, cliquez sur **Terminer**.
 12. Cliquez sur **Accéder au tableau de bord** pour commencer à utiliser votre compte de développeur Windows !
 
 ## <a name="eligibility"></a>Éligibilité

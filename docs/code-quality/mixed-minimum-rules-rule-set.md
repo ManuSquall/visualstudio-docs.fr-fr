@@ -8,18 +8,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ddb4b5b80ab33e0136b14ce824f5be1b8cb9f6a3
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: c93d69fb72d88c65e8037f8cec1e2747dbdbff95
+ms.sourcegitcommit: ade07bd1cf69b8b494d171ae648cfdd54f7800d3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75587327"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "81649316"
 ---
 # <a name="mixed-minimum-rules-rule-set"></a>Ensemble de règles des règles minimales mixtes
 
-Les règles minimales de Microsoft se concentrent sur les problèmes C++ les plus critiques des projets qui prennent en charge le Common Language Runtime, y compris les failles de sécurité potentielles et les blocages d’application.
+Les règles minimales mixtes de Microsoft mettent l’accent sur les problèmes les plus critiques dans les projets CMD qui prennent en charge le temps de course de langue commune, y compris les trous de sécurité potentiels et les plantages d’applications.
 
-Incluez cet ensemble de règles dans tout ensemble de règles personnalisées C++ que vous créez pour vos projets qui prennent en charge le Common Language Runtime.
+Inclure cette règle définie dans n’importe quel ensemble de règles personnalisées que vous créez pour vos projets CMD qui prennent en charge le temps d’exécution de la langue commune.
 
 |Règle|Description|
 |----------|-----------------|
@@ -86,18 +86,18 @@ Incluez cet ensemble de règles dans tout ensemble de règles personnalisées C+
 |[C28182](../code-quality/c28182.md)|Déréférencement du pointeur NULL. Le pointeur contient la même valeur NULL qu'un autre pointeur.|
 |[C28202](../code-quality/c28202.md)|Référence non autorisée à un membre non statique|
 |[C28203](../code-quality/c28203.md)|Référence ambiguë à un membre de classe.|
-|[C28205](../code-quality/c28205.md)|\_\_ de réussite ou \_sur\_échec\_ utilisé dans un contexte illégal|
+|[C28205](../code-quality/c28205.md)|\_Succès\_ \_ou\_\_ sur l’échec utilisé dans un contexte illégal|
 |[C28206](../code-quality/c28206.md)|L’opérande de gauche pointe vers un struct, utiliser '->'|
 |[C28207](../code-quality/c28207.md)|L’opérande de gauche est un struct, utiliser '.'|
 |[C28210](../code-quality/c28210.md)|Les annotations pour le contexte __on_failure ne doivent pas se trouver dans un contexte préalable explicite|
 |[C28211](../code-quality/c28211.md)|Nom du contexte statique attendu pour SAL_context|
 |[C28212](../code-quality/c28212.md)|Expression de pointeur attendue pour l'annotation|
-|[C28213](../code-quality/c28213.md)|Les \_utilisent\_des annotations decl\_\_ annotation doit être utilisée pour référencer, sans modification, une déclaration antérieure.|
+|[C28213](../code-quality/c28213.md)|L’annotation \_d’utilisation\_decl\_doit être utilisée pour référencer, sans modification, une déclaration préalable.\_|
 |[C28214](../code-quality/c28214.md)|Les noms des paramètres d'attribut doivent être p1...p9|
 |[C28215](../code-quality/c28215.md)|Le typefix ne peut pas être appliqué à un paramètre qui contient déjà un typefix|
 |[C28216](../code-quality/c28216.md)|L'annotation checkReturn ne s'applique qu'aux post-conditions pour le paramètre de fonction spécifique.|
 |[C28217](../code-quality/c28217.md)|Pour la fonction, le nombre de paramètres de l'annotation ne correspond pas au nombre trouvé dans le fichier|
-|[C28218](../code-quality/c28218.md)|Pour le paramètre de fonction, le paramètre de l’annotation ne correspond pas à celui trouvé dans le fichier|
+|[C28218](../code-quality/c28218.md)|Pour le paramètre de fonction, le paramètre de l’annotation ne correspond pas à celui trouvé au fichier|
 |[C28219](../code-quality/c28219.md)|Membre de l'énumération attendu pour une annotation, le paramètre dans l'annotation|
 |[C28220](../code-quality/c28220.md)|Expression d'entier attendue pour une annotation, le paramètre dans l'annotation|
 |[C28221](../code-quality/c28221.md)|Expression de chaîne attendue pour le paramètre dans l'annotation|
@@ -134,7 +134,7 @@ Incluez cet ensemble de règles dans tout ensemble de règles personnalisées C+
 |[C28267](../code-quality/c28267.md)|Une erreur de syntaxe dans les annotations a été trouvée pour l'annotation dans la fonction.|
 |[C28272](../code-quality/c28272.md)|L'annotation pour la fonction, paramètre pendant la vérification est incohérente avec la déclaration de fonction|
 |[C28273](../code-quality/c28273.md)|Pour la fonction, les indices sont incohérents avec la déclaration de fonction|
-|[C28275](../code-quality/c28275.md)|Le paramètre pour \_valeur de\_de macro\_ est null|
+|[C28275](../code-quality/c28275.md)|Le paramètre\_\_ de la \_valeur Macro est nul|
 |[C28279](../code-quality/c28279.md)|Pour le symbole, un 'begin' a été trouvé sans le 'end' correspondant|
 |[C28280](../code-quality/c28280.md)|Pour le symbole, un 'end' a été trouvé sans le 'begin' correspondant|
 |[C28282](../code-quality/c28282.md)|Les chaînes de format doivent être comprises dans des conditions préalables|
@@ -152,7 +152,7 @@ Incluez cet ensemble de règles dans tout ensemble de règles personnalisées C+
 |[C28304](../code-quality/c28304.md)|Un opérateur \_Notref\_ placé de manière incorrecte et appliqué à un jeton a été trouvé.|
 |[C28305](../code-quality/c28305.md)|Une erreur a été détectée pendant l'analyse d'un jeton.|
 |[C28350](../code-quality/c28350.md)|L'annotation décrit une situation qui n'est pas applicable de manière conditionnelle.|
-|[C28351](../code-quality/c28351.md)|L'annotation décrit l'emplacement auquel une valeur dynamique (une variable) ne peut pas être utilisée dans la condition.|
+|[C28351](/cpp/code-quality/c28351)|L'annotation décrit l'emplacement auquel une valeur dynamique (une variable) ne peut pas être utilisée dans la condition.|
 |[CA1001](../code-quality/ca1001.md)|Les types qui possèdent des champs supprimables doivent être supprimables|
 |[CA1821](../code-quality/ca1821.md)|Supprimez les finaliseurs vides|
 |[CA2213](../code-quality/ca2213.md)|Les champs pouvant être supprimés doivent l’être|

@@ -1,5 +1,5 @@
 ---
-title: 'Procédure : Signer à nouveau les manifestes de déploiement et d’Application | Microsoft Docs'
+title: 'Comment : Re-signer les manifestes d’application et de déploiement (fr) Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -18,34 +18,34 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e934832f20ea7ab11484cdeb345f989aa842e06d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: fc69ce1f79644d7f4b35fbb1c1e3a41691761390
+ms.sourcegitcommit: ade07bd1cf69b8b494d171ae648cfdd54f7800d3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62928352"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "81649185"
 ---
-# <a name="how-to-re-sign-application-and-deployment-manifests"></a>Procédure : Resigner des manifestes d’application et de déploiement
-Une fois que vous apportez des modifications aux propriétés de déploiement dans le manifeste d’application pour les applications Windows Forms, les applications Windows Presentation Foundation (xbap) ou les solutions Office, vous devez resigner l’application et les manifestes de déploiement avec un certificat. Ce processus aide à garantir que des fichiers falsifiés ne sont pas installés sur les ordinateurs des utilisateurs finaux.
+# <a name="how-to-re-sign-application-and-deployment-manifests"></a>Guide pratique pour resigner des manifestes d’application et de déploiement
+Après avoir apporté des modifications aux propriétés de déploiement dans le manifeste d’application pour les applications Windows Forms, les applications de la Fondation De présentation Windows (xbap) ou les solutions Office, vous devez re-signer à la fois l’application et le déploiement manifeste avec un certificat. Ce processus aide à garantir que des fichiers falsifiés ne sont pas installés sur les ordinateurs des utilisateurs finaux.
 
- Un autre scénario dans lequel vous pouvez signer à nouveau les manifestes est lorsque vos clients souhaitent signer l’application et manifestes de déploiement avec leur propre certificat.
+ Un autre scénario où vous pourriez re-signer les manifestes est lorsque vos clients veulent signer l’application et le déploiement manifeste avec leur propre certificat.
 
 ## <a name="re-sign-the-application-and-deployment-manifests"></a>Resigner les manifestes d’application et de déploiement
- Cette procédure suppose que vous avez déjà modifié votre fichier manifeste d’application (*.manifest*). Pour plus d'informations, voir [Procédure : Modifier les propriétés de déploiement](https://msdn.microsoft.com/library/66052a3a-8127-4964-8147-2477ef5d1472).
+ Cette procédure suppose que vous avez déjà apporté des modifications à votre fichier manifeste de demande (*.manifeste*). Pour plus d’informations, voir [Comment : Changer les propriétés de déploiement](https://msdn.microsoft.com/library/66052a3a-8127-4964-8147-2477ef5d1472).
 
-#### <a name="to-re-sign-the-application-and-deployment-manifests-with-mageexe"></a>Pour signer à nouveau l’application et déploiement manifestes avec Mage.exe
+#### <a name="to-re-sign-the-application-and-deployment-manifests-with-mageexe"></a>Pour re-signer l’application et le déploiement manifeste avec Mage.exe
 
-1. Ouvrir un **invite de commandes Visual Studio** fenêtre.
+1. Ouvrez une fenêtre **Visual Studio Command Prompt.**
 
-2. Accédez au dossier qui contient les fichiers manifeste que vous souhaitez vous connecter.
+2. Changez les répertoires dans le dossier qui contient les fichiers manifestes que vous souhaitez signer.
 
-3. Tapez la commande suivante pour signer le fichier manifeste d’application. Remplacez *ManifestFileName* avec le nom de votre fichier manifeste ainsi que l’extension. Remplacez *certificat* avec le chemin d’accès qualifié complet ou relatif du fichier de certificat et remplacez *mot de passe* avec le mot de passe pour le certificat.
+3. Tapez la commande suivante pour signer le fichier manifeste de l’application. Remplacez *ManifestFileName* par le nom de votre fichier manifeste plus l’extension. Remplacez *le certificat* par le chemin relatif ou entièrement qualifié du fichier de certificat et *remplacez Password* par le mot de passe pour le certificat.
 
     ```cmd
     mage -sign ManifestFileName.manifest -CertFile Certificate -Password Password
     ```
 
-     Par exemple, vous pouvez exécutez la commande suivante pour signer un manifeste d’application pour un complément, une application Windows Form ou une application de navigateur Windows Presentation Foundation. Certificats temporaires créés par Visual Studio ne sont pas recommandés pour le déploiement dans les environnements de production.
+     Par exemple, vous pouvez exécuter la commande suivante pour signer un manifeste d’application pour un add-in, une application de formulaire Windows ou une application de navigateur de la Fondation de présentation Windows. Les certificats temporaires créés par Visual Studio ne sont pas recommandés pour le déploiement dans des environnements de production.
 
     ```cmd
     mage -sign WindowsFormsApplication1.exe.manifest -CertFile ..\WindowsFormsApplication1_TemporaryKey.pfx
@@ -53,13 +53,13 @@ Une fois que vous apportez des modifications aux propriétés de déploiement da
     mage -sign WpfBrowserApplication1.exe.manifest -CertFile ..\WpfBrowserApplication1_TemporaryKey.pfx
     ```
 
-4. Tapez la commande suivante pour mettre à jour et signer le fichier manifeste de déploiement, en remplaçant les noms d’espace réservé, comme dans l’étape précédente.
+4. Tapez la commande suivante pour mettre à jour et signer le fichier manifeste de déploiement, en remplaçant les noms des propriétaires de lieux comme dans l’étape précédente.
 
     ```cmd
     mage -update DeploymentManifest -appmanifest ApplicationManifest -CertFile Certificate -Password Password
     ```
 
-     Par exemple, vous pourrez exécuter la commande suivante pour mettre à jour et signer un manifeste de déploiement pour un complément Excel, une application Windows Forms ou une application de navigateur Windows Presentation Foundation.
+     Par exemple, vous pouvez exécuter la commande suivante pour mettre à jour et signer un manifeste de déploiement pour un add-in Excel, une application Windows Forms ou une application de navigateur Windows Presentation Foundation.
 
     ```cmd
     mage -update WindowsFormsApplication1.application -appmanifest WindowsFormsApplication1.exe.manifest -CertFile ..\WindowsFormsApplication1_TemporaryKey.pfx
@@ -67,26 +67,26 @@ Une fois que vous apportez des modifications aux propriétés de déploiement da
     mage -update WpfBrowserApplication1.xbap -appmanifest WpfBrowserApplication1.exe.manifest -CertFile ..\WpfBrowserApplication1_TemporaryKey.pfx
     ```
 
-5. Si vous le souhaitez, copiez le manifeste de déploiement principal (*publier\\\<appname > .application*) dans votre répertoire de déploiement de version (*publish\Application Files\\ \<appname > _\<version >*).
+5. Optionnellement, copiez le manifeste de déploiement principal *(publier\\\<le nom d’application>.application*) à votre répertoire de déploiement de version *(publier le nom d’application de fichiers\\\<>_\<version>*).
 
-## <a name="update-and-re-sign-the-application-and-deployment-manifests"></a>Mettre à jour et signer à nouveau les manifestes d’application et de déploiement
- Cette procédure suppose que vous avez déjà modifié votre fichier manifeste d’application (*.manifest*), mais que d’autres fichiers qui ont été mis à jour. Lorsque les fichiers sont mis à jour, le hachage qui représente le fichier doit également être mis à jour.
+## <a name="update-and-re-sign-the-application-and-deployment-manifests"></a>Mettre à jour et re-signer l’application et le déploiement manifeste
+ Cette procédure suppose que vous avez déjà apporté des modifications à votre fichier manifeste de demande (*.manifeste*), mais qu’il ya d’autres fichiers qui ont été mis à jour. Lorsque les fichiers sont mis à jour, le hachage qui représente le fichier doit également être mis à jour.
 
-#### <a name="to-update-and-re-sign-the-application-and-deployment-manifests-with-mageexe"></a>Pour mettre à jour et signer à nouveau l’application et déploiement manifestes avec Mage.exe
+#### <a name="to-update-and-re-sign-the-application-and-deployment-manifests-with-mageexe"></a>Pour mettre à jour et re-signer l’application et le déploiement manifeste avec Mage.exe
 
-1. Ouvrir un **invite de commandes Visual Studio** fenêtre.
+1. Ouvrez une fenêtre **Visual Studio Command Prompt.**
 
-2. Accédez au dossier qui contient les fichiers manifeste que vous souhaitez vous connecter.
+2. Changez les répertoires dans le dossier qui contient les fichiers manifestes que vous souhaitez signer.
 
-3. Supprimer le *.deploy* extension de fichier à partir des fichiers dans la publication dans le dossier de sortie.
+3. Supprimer l’extension de fichier *.deploy* des fichiers dans le dossier de sortie de publication.
 
-4. Tapez la commande suivante pour mettre à jour le manifeste d’application avec les nouveaux hachages pour les fichiers mis à jour et signer le fichier manifeste d’application. Remplacez *ManifestFileName* avec le nom de votre fichier manifeste ainsi que l’extension. Remplacez *certificat* avec le chemin d’accès qualifié complet ou relatif du fichier de certificat et remplacez *mot de passe* avec le mot de passe pour le certificat.
+4. Tapez la commande suivante pour mettre à jour le manifeste de l’application avec les nouvelles hachages pour les fichiers mis à jour et signez le fichier manifeste de l’application. Remplacez *ManifestFileName* par le nom de votre fichier manifeste plus l’extension. Remplacez *le certificat* par le chemin relatif ou entièrement qualifié du fichier de certificat et *remplacez Password* par le mot de passe pour le certificat.
 
     ```cmd
     mage -update ManifestFileName.manifest -CertFile Certificate -Password Password
     ```
 
-     Par exemple, vous pouvez exécutez la commande suivante pour signer un manifeste d’application pour un complément, une application Windows Form ou une application de navigateur Windows Presentation Foundation. Certificats temporaires créés par Visual Studio ne sont pas recommandés pour le déploiement dans les environnements de production.
+     Par exemple, vous pouvez exécuter la commande suivante pour signer un manifeste d’application pour un add-in, une application de formulaire Windows ou une application de navigateur de la Fondation de présentation Windows. Les certificats temporaires créés par Visual Studio ne sont pas recommandés pour le déploiement dans des environnements de production.
 
     ```cmd
     mage -update WindowsFormsApplication1.exe.manifest -CertFile ..\WindowsFormsApplication1_TemporaryKey.pfx
@@ -94,13 +94,13 @@ Une fois que vous apportez des modifications aux propriétés de déploiement da
     mage -update WpfBrowserApplication1.exe.manifest -CertFile ..\WpfBrowserApplication1_TemporaryKey.pfx
     ```
 
-5. Tapez la commande suivante pour mettre à jour et signer le fichier manifeste de déploiement, en remplaçant les noms d’espace réservé, comme dans l’étape précédente.
+5. Tapez la commande suivante pour mettre à jour et signer le fichier manifeste de déploiement, en remplaçant les noms des propriétaires de lieux comme dans l’étape précédente.
 
     ```cmd
     mage -update DeploymentManifest -appmanifest ApplicationManifest -CertFile Certificate -Password Password
     ```
 
-     Par exemple, vous pourrez exécuter la commande suivante pour mettre à jour et signer un manifeste de déploiement pour un complément Excel, une application Windows Forms ou une application de navigateur Windows Presentation Foundation.
+     Par exemple, vous pouvez exécuter la commande suivante pour mettre à jour et signer un manifeste de déploiement pour un add-in Excel, une application Windows Forms ou une application de navigateur Windows Presentation Foundation.
 
     ```cmd
     mage -update WindowsFormsApplication1.application -appmanifest WindowsFormsApplication1.exe.manifest -CertFile ..\WindowsFormsApplication1_TemporaryKey.pfx
@@ -108,18 +108,18 @@ Une fois que vous apportez des modifications aux propriétés de déploiement da
     mage -update WpfBrowserApplication1.xbap -appmanifest WpfBrowserApplication1.exe.manifest -CertFile ..\WpfBrowserApplication1_TemporaryKey.pfx
     ```
 
-6. Ajouter le *.deploy* extension de fichier vers les fichiers, sauf les fichiers de manifeste de l’application et déploiement.
+6. Ajoutez l’extension de fichier *.deploy* aux fichiers, à l’exception des fichiers manifestes d’application et de déploiement.
 
-7. Si vous le souhaitez, copiez le manifeste de déploiement principal (*publier\\\<appname > .application*) dans votre répertoire de déploiement de version (*publish\Application Files\\ \<appname > _\<version >*).
+7. Optionnellement, copiez le manifeste de déploiement principal *(publier\\\<le nom d’application>.application*) à votre répertoire de déploiement de version *(publier le nom d’application de fichiers\\\<>_\<version>*).
 
 ## <a name="see-also"></a>Voir aussi
 - [Sécuriser des applications ClickOnce](../deployment/securing-clickonce-applications.md)
 - [Sécurité d’accès du code pour les applications ClickOnce](../deployment/code-access-security-for-clickonce-applications.md)
 - [ClickOnce et Authenticode](../deployment/clickonce-and-authenticode.md)
 - [Vue d’ensemble du déploiement d’applications approuvées](../deployment/trusted-application-deployment-overview.md)
-- [Guide pratique pour Activer les paramètres de sécurité ClickOnce](../deployment/how-to-enable-clickonce-security-settings.md)
-- [Guide pratique pour Définir une zone de sécurité pour une application ClickOnce](../deployment/how-to-set-a-security-zone-for-a-clickonce-application.md)
-- [Guide pratique pour Définir des autorisations personnalisées pour une application ClickOnce](../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md)
-- [Guide pratique pour Déboguer une application ClickOnce avec des autorisations restreintes](../deployment/how-to-debug-a-clickonce-application-with-restricted-permissions.md)
-- [Guide pratique pour Ajouter un éditeur approuvé à un ordinateur client pour les applications ClickOnce](../deployment/how-to-add-a-trusted-publisher-to-a-client-computer-for-clickonce-applications.md)
-- [Guide pratique pour configurer le comportement de l’invite d’approbation ClickOnce](../deployment/how-to-configure-the-clickonce-trust-prompt-behavior.md)
+- [Guide pratique pour activer les paramètres de sécurité ClickOnce](../deployment/how-to-enable-clickonce-security-settings.md)
+- [Comment : Définir une zone de sécurité pour une application ClickOnce](../deployment/how-to-set-a-security-zone-for-a-clickonce-application.md)
+- [Guide pratique pour définir des autorisations personnalisées pour une application ClickOnce](../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md)
+- [Guide pratique pour déboguer une application ClickOnce avec des autorisations restreintes](securing-clickonce-applications.md)
+- [Guide pratique pour ajouter un éditeur approuvé à un ordinateur client pour les applications ClickOnce](../deployment/how-to-add-a-trusted-publisher-to-a-client-computer-for-clickonce-applications.md)
+- [Guide pratique pour configurer le comportement de l’invite de l’approbation ClickOnce](../deployment/how-to-configure-the-clickonce-trust-prompt-behavior.md)

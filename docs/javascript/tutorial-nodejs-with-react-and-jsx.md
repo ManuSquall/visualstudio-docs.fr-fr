@@ -2,7 +2,7 @@
 title: Créer une application Node.js et React
 description: Dans ce tutoriel, vous créez une application à l’aide des outils Node.js pour Visual Studio.
 ms.custom: mvc
-ms.date: 11/01/2019
+ms.date: 4/20/2020
 ms.topic: tutorial
 ms.devlang: javascript
 author: mikejo5000
@@ -12,12 +12,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 55086c473929158f50f05db790cf5842f1b696db
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: 265445306babf198c3d0063252846414a589a29c
+ms.sourcegitcommit: ade07bd1cf69b8b494d171ae648cfdd54f7800d3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "79550027"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "81649248"
 ---
 # <a name="tutorial-create-a-nodejs-and-react-app-in-visual-studio"></a>Tutoriel : Créer une application Node.js et React dans Visual Studio
 
@@ -55,7 +55,7 @@ JSX est une extension de syntaxe JavaScript, généralement utilisée avec React
 
 webpack regroupe des fichiers JavaScript pour qu’ils puissent s’exécuter dans un navigateur. Il peut également transformer ou packager d’autres ressources et composants. Il est souvent utilisé pour spécifier un compilateur, comme Babel ou TypeScript, pour transpiler du code JSX ou TypeScript en code JavaScript standard.
 
-## <a name="prerequisites"></a>Conditions préalables requises
+## <a name="prerequisites"></a>Prérequis
 
 * Au préalable, vous devez avoir installé Visual Studio et la charge de travail de développement Node.js.
 
@@ -72,7 +72,7 @@ webpack regroupe des fichiers JavaScript pour qu’ils puissent s’exécuter da
 
 * Le runtime Node.js doit être installé.
 
-    Ce tutoriel a été testé avec la version 10.16.0.
+    Ce tutoriel a été testé avec la version 12.6.2.
 
     Si vous ne l’avez pas installé, nous vous recommandons d’installer la version LTS à partir du site [Node.js](https://nodejs.org/en/download/) pour la meilleure compatibilité avec les cadres extérieurs et les bibliothèques. Node.js est conçu pour les architectures 32-bits et 64 bits. Les outils Node.js de Visual Studio, inclus dans la charge de travail node.js, prennent en charge les deux versions. Un seul est nécessaire et l’installateur Node.js ne prend en charge qu’un seul installé à la fois.
     
@@ -125,7 +125,7 @@ Cette application nécessite un certain nombre de modules npm pour s’exécuter
 
 1. Dans l’Explorateur de solutions (volet droit), cliquez avec le bouton droit sur le nœud **npm** du projet, puis choisissez **Installer de nouveaux packages npm**.
 
-    Dans la boîte de dialogue **Installer de nouveaux packages npm**, vous pouvez choisir d’installer la version de package la plus récente ou une version spécifique. Si vous choisissez d’installer la version actuelle de ces packages, mais que vous rencontrez plus tard des erreurs inattendues, vous devrez peut-être installer les mêmes versions de package que celles décrites plus loin au cours de ces étapes.
+    Dans la boîte de dialogue **Installer de nouveaux packages npm**, vous pouvez choisir d’installer la version de package la plus récente ou une version spécifique. Si vous choisissez d’installer la version actuelle de ces paquets, mais rencontrez des erreurs inattendues plus tard, vous pouvez installer les versions exactes du paquet décrites plus tard dans ces étapes.
 
 1. Dans la boîte de dialogue **Installer de nouveaux packages npm**, recherchez le package react, puis sélectionnez **Installer le package** pour installer ce dernier.
 
@@ -139,14 +139,14 @@ Cette application nécessite un certain nombre de modules npm pour s’exécuter
 
     ```json
     "dependencies": {
-      "express": "~4.16.4",
+      "express": "~4.17.1",
       "path": "~0.12.7",
-      "react": "~16.6.0",
-      "react-dom": "~16.6.0",
-      "ts-loader": "~5.3.0",
-      "typescript": "~3.1.5",
-      "webpack": "~4.23.1",
-      "webpack-cli": "~3.1.2"
+      "react": "~16.13.1",
+      "react-dom": "~16.13.1",
+      "ts-loader": "~7.0.1",
+      "typescript": "~3.8.3",
+      "webpack": "~4.42.1",
+      "webpack-cli": "~3.3.11"
     }
     ```
 
@@ -154,7 +154,9 @@ Cette application nécessite un certain nombre de modules npm pour s’exécuter
 
 1. Enregistrez les modifications.
 
-1. Cliquez avec le bouton droit sur le nœud **npm** de votre projet, puis choisissez **Mettre à jour les packages npm**.
+1. Nœud **npm à** clic droit dans votre projet et choisissez **Installer des forfaits npm**.
+
+    Cette commande exécute la commande d’installation npm directement.
 
     Dans le volet inférieur, sélectionnez la fenêtre **Sortie** pour voir la progression de l’installation des packages. L’installation pouvant prendre quelques minutes, vous risquez de ne pas voir les résultats immédiatement. Pour voir la sortie, veillez à sélectionner **Npm** dans le champ **Afficher la sortie à partir de** de la fenêtre **Sortie**.
 
@@ -338,7 +340,7 @@ Chaque fois que vous apportez des changements à *app.tsx*, vous devez réexécu
    }
    ```
 
-## <a name="run-the-app"></a>Exécuter l’application
+## <a name="run-the-app"></a>Exécuter l'application
 
 1. Sélectionnez Microsoft Edge ou Chrome comme cible actuelle de débogé.
 

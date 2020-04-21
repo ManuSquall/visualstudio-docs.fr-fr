@@ -14,12 +14,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1834713ad114ab8a86e314bbe052f4873b308956
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 272d37ef9e73aa5dd0d10ca0210b18a945f993fd
+ms.sourcegitcommit: ade07bd1cf69b8b494d171ae648cfdd54f7800d3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75593575"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "81649837"
 ---
 # <a name="security-page-project-designer"></a>Page Sécurité, Concepteur de projets
 
@@ -80,7 +80,7 @@ Ouvre la [boîte de dialogue Paramètres de sécurité avancés](../../ide/refer
 - [Comment : Activer les paramètres de sécurité ClickOnce](../../deployment/how-to-enable-clickonce-security-settings.md)
 - [Guide pratique pour définir une zone de sécurité pour une application ClickOnce](../../deployment/how-to-set-a-security-zone-for-a-clickonce-application.md)
 - [Comment : Définir les autorisations personnalisées pour une application ClickOnce](../../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md)
-- [Comment: Debug une application ClickOnce avec autorisations restreintes](../../deployment/how-to-debug-a-clickonce-application-with-restricted-permissions.md)
+- [Applications ClickOnce sécurisées](../../deployment/securing-clickonce-applications.md)
 - [ClickOnce Sécurité et déploiement](../../deployment/clickonce-security-and-deployment.md)
 - [Informations de référence sur les propriétés de projet](../../ide/reference/project-properties-reference.md)
-- [Paramètres de sécurité avancés Dialog Box](../../ide/reference/advanced-security-settings-dialog-box.md)
+- [Paramètres de sécurité avancés, boîte de dialogue](../../ide/reference/advanced-security-settings-dialog-box.md)

@@ -10,12 +10,12 @@ ms.author: johmil
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: 5a0595fdf7331c8b2825c6092b5b29a19974887b
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: d1bca9bed18de822de71ca441387adeaefc65ec3
+ms.sourcegitcommit: ade07bd1cf69b8b494d171ae648cfdd54f7800d3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79302258"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "81649396"
 ---
 # <a name="use-visual-studio-tools-for-unity"></a>Utiliser Visual Studio Tools pour Unity
 
@@ -202,7 +202,7 @@ Notez que le scénario décrit ici suppose que vous disposiez du code source, au
 
    Les fichiers PDB sont nécessaires pour le débogage, car ils contiennent les symboles de débogage de la DLL et mappent le code de la DLL sur la forme de son code source. Si vous ciblez le runtime hérité, Visual Studio Tools pour Unity utilise les informations à partir de la DLL et des fichiers PDB pour créer un fichier DLL.MDB, qui est le format des symboles de débogage utilisé par le moteur de script Unity hérité. Si vous ciblez le nouveau runtime, et Portable-PDB, Visual Studio Tools pour Unity n’essaie pas convertir les symboles, car le nouveau runtime Unity peut consommer les fichiers Portable-PDB en mode natif.
 
-   Des informations supplémentaires sur la création de fichiers PDB sont disponibles [ici](/visualstudio/debugger/how-to-set-debug-and-release-configurations). Si vous ciblez le nouveau runtime, assurez-vous que l’option « Informations de débogage » est définie sur « Portable », afin de générer correctement un fichier Portable-PDB. Si vous ciblez le runtime hérité, vous devez utiliser l’option « Complet ».
+   Des informations supplémentaires sur la création de fichiers PDB sont disponibles [ici](../debugger/how-to-set-debug-and-release-configurations.md). Si vous ciblez le nouveau runtime, assurez-vous que l’option « Informations de débogage » est définie sur « Portable », afin de générer correctement un fichier Portable-PDB. Si vous ciblez le runtime hérité, vous devez utiliser l’option « Complet ».
 
 4. Déboguez votre code. Vous pouvez maintenant déboguer le code source de votre DLL ainsi que le code source de votre projet Unity, et utiliser toutes les fonctionnalités de débogage auxquelles vous êtes habitué, telles que les points d'arrêt et le parcours du code pas à pas.
 

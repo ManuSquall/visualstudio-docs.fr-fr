@@ -8,12 +8,12 @@ author: evanwindom
 ms.author: v-evwin
 manager: lank
 ms.assetid: 2dc938b5-37e9-4dfc-8676-5d0a91d366ab
-ms.openlocfilehash: 435185a628dbf256802ae36dae45eac60d304a54
-ms.sourcegitcommit: 054815dc9821c3ea219ae6f31ebd9cd2dc8f6af5
+ms.openlocfilehash: c19bb72a7d5262c5d0864d12d44266c8ef016acf
+ms.sourcegitcommit: ade07bd1cf69b8b494d171ae648cfdd54f7800d3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "80544052"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "81649658"
 ---
 # <a name="what39s-new-in-visual-studio-subscriptions"></a>Nouveautés des abonnements Visual Studio
 
@@ -39,6 +39,23 @@ Si votre organisation utilise Azure Active Directory (Azure AD), vous pouvez dé
 Nous sommes heureux d’annoncer une extension des avantages offerts par notre partenaire, CAST Highlight. 
 - La durée de l’avantage inclus dans les abonnements Visual Studio Enterprise a été portée à six mois.  
 - Les abonnés Visual Studio Professional peuvent désormais recevoir un abonnement leur permettant d’évaluer une seule application pendant trois mois. 
+
+## <a name="2020-q2-april-june"></a>2020 T2 (avril-juin)
+
+### <a name="visual-studio-subscriptions-portal"></a>Portail d’abonnements Visual Studio
+
+Le portail d’abonnements Visual Studio a subi des changements importants dans l’apparence et la facilité d’utilisation.  
+
+- Les tuiles d’avantages ont été resized et sont toutes affichées dans la fenêtre de sorte que vous n’avez pas besoin de faire défiler à gauche ou à droite pour voir toutes les tuiles dans une catégorie donnée. 
+- Vous pouvez choisir d’afficher tous vos avantages disponibles, ou d’afficher une seule catégorie en utilisant le Picker de catégorie.
+   > [!div class="mx-imgBorder"]
+   > ![Le nouveau cueilleur de catégorie d’avantages](_img/whats-new/whats-new-category-picker.png)
+- Nous avons également déplacé le Picker d’abonnement du coin supérieur droit de la fenêtre vers un endroit plus accessible.
+   > [!div class="mx-imgBorder"]
+   > ![Le nouveau cueilleur d’abonnements](_img/whats-new/whats-new-sub-picker.png)
+- Nous avons ajouté un « avantage vedette » en haut de la liste des avantages sociaux pour faire appel à des avantages nouveaux ou populaires.  
+   > [!div class="mx-imgBorder"]
+   > ![Le nouvel avantage vedette](_img/whats-new/whats-new-featured.png)
 
 ## <a name="next-steps"></a>Étapes suivantes
 - Consultez le nouveau [portail UI De l’Administration des abonnements](https://manage.visualstudio.com) avec ses nouvelles fonctionnalités
