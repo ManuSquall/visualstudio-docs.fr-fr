@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 680d52ff04553d399b6abeb53919d8aafd4fa792
-ms.sourcegitcommit: 95f26af1da51d4c83ae78adcb7372b32364d8a2b
+ms.openlocfilehash: 56b0c0defe5593c9dc0e2111ef5984a5c51eaf55
+ms.sourcegitcommit: a7f781d5a089e6aab6b073a07f3d4d2967af8aa6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79301691"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "81760132"
 ---
 # <a name="code-analysis-faq"></a>Analyse de code FAQ
 
@@ -87,6 +87,12 @@ En plus des ensembles de règles et des fichiers EditorConfig, certains analyseu
      <Import Project="..\packages\Microsoft.CodeAnalysis.FxCopAnalyzers.2.6.5\build\Microsoft.CodeAnalysis.FxCopAnalyzers.props" Condition="Exists('..\packages\Microsoft.CodeAnalysis.FxCopAnalyzers.2.6.5\build\Microsoft.CodeAnalysis.FxCopAnalyzers.props')" />
      ...
      ```
+
+## <a name="code-analysis-solution-property-page"></a>Page de propriété de solution d’analyse de code
+
+**Q**: Où est la page de propriété d’analyse de code pour la solution ?
+
+**R**: La page de propriété d’analyse de code au niveau de la solution a été supprimée au profit du groupe de propriété partagée plus fiable. Pour la gestion de l’analyse de code au niveau du projet, la page de propriété d’analyse de code est toujours disponible. (Pour les projets gérés, nous recommandons également de migrer des règles à EditorConfig pour la configuration des règles.)  Pour le partage des règles entre plusieurs/tous les projets dans une solution ou une pension, nous vous recommandons de définir un groupe immobilier avec la propriété CodeAnalysisRuleSet dans un fichier d’accessoires/cibles partagés ou un fichier Directory.props/Directory.targets. Si vous n’avez pas d’accessoires ou de cibles aussi communs que tous vos projets importent, vous devriez envisager [d’ajouter un tel groupe immobilier à un Directory.props ou à un Directory.targets dans un répertoire de solutions de haut niveau, qui est automatiquement importé dans tous les fichiers de projet définis dans l’annuaire ou ses sous-annuaires.](https://docs.microsoft.com/visualstudio/msbuild/customize-your-build?directorybuildprops-and-directorybuildtargets)
 
 ## <a name="see-also"></a>Voir aussi
 

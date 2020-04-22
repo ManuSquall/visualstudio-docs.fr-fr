@@ -12,12 +12,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 31eab6c10451bb6be9e53870bf2724c188d650f4
-ms.sourcegitcommit: ade07bd1cf69b8b494d171ae648cfdd54f7800d3
+ms.openlocfilehash: 0b4b699c01522878d83e59aadb2c6a54e9d7517f
+ms.sourcegitcommit: a7f781d5a089e6aab6b073a07f3d4d2967af8aa6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "81649508"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "81760170"
 ---
 # <a name="manage-npm-packages-in-visual-studio"></a>Gérer les packages npm dans Visual Studio
 
@@ -84,15 +84,15 @@ Les packages npm sont affichés dans l’Explorateur de solutions. Les entrées 
 ::: moniker range=">=vs-2019"
 Cliquez à droite sur le **nœud npm** pour prendre l’une des actions suivantes :
 
-* **Installer de nouveaux forfaits npm** Ouvre l’interface utilisateur pour installer de nouveaux paquets
+* **Installer de nouveaux forfaits npm** Ouvre l’interface utilisateur pour installer de nouveaux paquets.
 * **Installer des forfaits npm** Exécute la commande d’installation de npm pour installer tous les paquets énumérés dans *package.json*. (Runs `npm install`.)
-* **Mettre à jour les forfaits npm** Mises à jour d’un paquet à la version spécifiée dans *package.json*. (Runs `npm update --save`.)
+* **Mettre à jour les forfaits npm** Mises à jour des paquets pour les dernières versions, selon la gamme semver spécifié dans *package.json*. (Runs `npm update --save`.). Les plages de semver sont généralement spécifiées à l’aide de « » ou de « « » Pour plus d’informations, [package.json configuration](../javascript/configure-packages-with-package-json.md).
 
 Cliquez à droite sur un nœud de paquet pour prendre l’une des actions suivantes :
 
 * **Installer npm Package(s)** Exécute la commande d’installation de npm pour installer la version de paquet énumérée dans *package.json*. (Runs `npm install`.)
-* **Mise à jour npm Package(s)** Mises à jour d’un paquet à la version spécifiée dans *package.json*. (Run `npm update --save`.)
-* **Uninstall npm Package(s)** Désinstaller le paquet et le retirer de `npm uninstall --save` *package.json* (Runs .)
+* **Mise à jour npm Package(s)** Mises à jour du paquet à la dernière version, selon la gamme semver spécifié dans *package.json*. (Run `npm update --save`.) Les plages de semver sont généralement spécifiées à l’aide de « » ou de « « »
+* **Uninstall npm Package(s)** Désinstalle le paquet et le supprime de *package.json* (Runs `npm uninstall --save`.)
 ::: moniker-end
 ::: moniker range="vs-2017"
 Cliquez avec le bouton droit sur un nœud de package ou le nœud **npm** pour effectuer l’une des actions suivantes :

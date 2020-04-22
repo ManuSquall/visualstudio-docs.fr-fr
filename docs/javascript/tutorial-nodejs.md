@@ -1,7 +1,7 @@
 ---
 title: Créer une application Node.js et Express
 description: Dans ce tutoriel, vous créez une application à l’aide des outils Node.js pour Visual Studio.
-ms.date: 09/24/2018
+ms.date: 04/20/2020
 ms.topic: tutorial
 ms.devlang: javascript
 author: mikejo5000
@@ -11,12 +11,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 260bc6ff6eb2d0bfbf0b9abd19062892c358728a
-ms.sourcegitcommit: b4e0cc76d94fe8cf6d238c4cc09512d17131a195
+ms.openlocfilehash: 3d91f20dec22379d79b5f295fccf49aae0733a24
+ms.sourcegitcommit: 5c804c42d24d35dcf2ba195aba9ce07031743f62
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/13/2020
-ms.locfileid: "81224522"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "81744892"
 ---
 # <a name="tutorial-create-a-nodejs-and-express-app-in-visual-studio"></a>Tutoriel : Créer une application Node.js et Express dans Visual Studio
 
@@ -109,13 +109,13 @@ Dans ce tutoriel, vous commencez avec un projet simple contenant du code pour un
 
     (3) Le nœud npm montre tous les packages npm installés. Vous pouvez cliquer avec le bouton droit sur le nœud npm pour rechercher et installer des packages npm à l’aide d’une boîte de dialogue, ou vous pouvez installer et mettre à jour des packages à l’aide des paramètres de *package.json* et des options de menu contextuel du nœud npm.
 
-    (4) *package.json* est un fichier utilisé par npm pour gérer les dépendances de packages et les versions de packages des packages installés localement. Pour plus d’informations sur ce fichier, consultez [Configuration de package.json](../javascript/configure-packages-with-package-json.md)
+    (4) *package.json* est un fichier utilisé par npm pour gérer les dépendances de packages et les versions de packages des packages installés localement. Pour plus d’informations, voir [Forfait npm forfaits](../javascript/npm-package-management.md).
 
     (5) Les fichiers projet tels que *app.js* s’affichent sous le nœud de projet. *app.js* est le fichier de démarrage du projet. C’est la raison pour laquelle il s’affiche en **gras**. Vous pouvez définir le fichier de démarrage en cliquant avec le bouton droit sur un fichier du projet et en sélectionnant **Définir comme fichier de démarrage de Node.js**.
 
 1. Ouvrez le nœud **npm** et vérifiez que tous les packages npm nécessaires sont présents.
 
-    S’il manque des packages (icône de point d’exclamation), vous pouvez cliquer avec le bouton droit sur le nœud **npm** et choisir **Installer les packages npm manquants**.
+    Si des paquets sont manquants (icône point d’exclamation), vous pouvez cliquer à droite sur le **nœud npm** et choisir **Install npm Packages**.
 
 ## <a name="add-some-code"></a>Ajouter du code
 
@@ -194,7 +194,7 @@ IntelliSense est un outil Visual Studio qui vous aide pendant que vous écrivez 
 
     La dernière ligne de ce message indique que l’interpréteur JavaScript attendait une virgule (`,`).
 
-1. Dans le volet inférieur, cliquez sur l’onglet **Liste d’erreurs**.
+1. Dans le volet inférieur, cliquez sur **l’onglet Liste d’erreurs** et **sélectionnez Build et IntelliSense** pour le type de problèmes signalés.
 
     Vous voyez l’avertissement et une description, ainsi que le nom de fichier et le numéro de ligne.
 
@@ -218,7 +218,7 @@ Vous allez ensuite exécuter l’application avec le débogueur Visual Studio at
 
 ## <a name="run-the-application"></a>Exécution de l'application
 
-1. Sélectionnez la cible de débogage (par exemple, Microsoft Edge ou Chrome) dans la barre d’outils Débogage.
+1. Sélectionnez la cible de débogé dans la barre d’outils Debug, comme **Web Server (Google Chrome)** ou **Web Server (Microsoft Edge)**.
 
     ::: moniker range=">=vs-2019"
     ![Sélectionner la cible de débogage](../javascript/media/vs-2019/tutorial-nodejs-deploy-target.png)

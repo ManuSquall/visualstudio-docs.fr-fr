@@ -77,6 +77,7 @@
 ### Assigner des abonnements
 #### [Ajouter des utilisateurs uniques](assign-license.md)
 #### [Ajouter plusieurs utilisateurs](assign-license-bulk.md)
+#### [Affecter des abonnements spécifiques](assign-guid.md)
 ### [Modifier des abonnements](edit-license.md)
 ### [Supprimer des abonnements](delete-license.md)
 ### [Rechercher un abonnement](search-license.md)

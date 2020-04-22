@@ -12,12 +12,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: a1995353d00f9e48811f388e1d853c93850b85f4
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: 882c3a148164ab88412a817abd72d0608fadf9b2
+ms.sourcegitcommit: 5c804c42d24d35dcf2ba195aba9ce07031743f62
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "78235104"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "81744978"
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-vuejs-app"></a>Démarrage rapide : utiliser Visual Studio pour créer votre première application Vue.js
 
@@ -26,7 +26,7 @@ Dans cette présentation de 5-10 minutes de l’environnement de développement 
 > [!IMPORTANT]
 > Le modèle Vue.js, disponible à partir de Visual Studio 2017 version 15.8, est nécessaire pour cet article.
 
-## <a name="prerequisites"></a>Conditions préalables requises
+## <a name="prerequisites"></a>Prérequis
 
 * Au préalable, vous devez avoir installé Visual Studio et la charge de travail de développement Node.js.
 
@@ -103,21 +103,26 @@ Vous allez d’abord créer un projet d’application web Vue.js.
 
 ## <a name="build-the-project"></a>Créer le projet
 
-1. (Projet TypeScript uniquement) De Visual Studio, choisissez **Build** > **Clean Solution**.
+::: moniker range=">=vs-2019"
+1. Ensuite, choisissez **Générer** > **Générer la solution** pour générer le projet.
 
-    ::: moniker range=">=vs-2019"
-    Dans le modèle TypeScript inclus avec Visual Studio 2019, sautez cette étape.
-    ::: moniker-end
+1. Consultez la fenêtre **Sortie** pour afficher les résultats de la génération, puis choisissez **Build** dans la liste **Afficher la sortie à partir de**.
+::: moniker-end
+::: moniker range="vs-2017"
+1. (Projet TypeScript uniquement) À partir de Visual Studio, choisissez **Générer** > **Nettoyer la solution**.
 
-1. Ensuite, choisissez **Build** > **Build Solution** pour construire le projet. Consultez la fenêtre **Sortie** pour afficher les résultats de la génération, puis choisissez **Build** dans la liste **Afficher la sortie à partir de**.
+1. Ensuite, choisissez **Générer** > **Générer la solution** pour générer le projet.
 
-    Le modèle de projet JavaScript Vue.js (et les anciennes `build` versions du modèle TypeScript) utilisent le script npm en configurant un événement de post build. Si vous souhaitez modifier ce paramètre, ouvrez le fichier de*\<projet (projectname\>.njsproj*) de Windows Explorer et localisez cette ligne de code :
+1. Consultez la fenêtre **Sortie** pour afficher les résultats de la génération, puis choisissez **Build** dans la liste **Afficher la sortie à partir de**.
+::: moniker-end
 
-    ```xml
-    <PostBuildEvent>npm run build</PostBuildEvent>
-    ```
+Le modèle de projet JavaScript Vue.js (et les anciennes `build` versions du modèle TypeScript) utilisent le script npm en configurant un événement de post build. Si vous souhaitez modifier ce paramètre, ouvrez le fichier de*\<projet (projectname\>.njsproj*) de Windows Explorer et localisez cette ligne de code :
 
-## <a name="run-the-application"></a>Exécuter l’application
+```xml
+<PostBuildEvent>npm run build</PostBuildEvent>
+```
+
+## <a name="run-the-application"></a>Exécution de l'application
 
 1. Appuyez sur **Ctrl**+**F5** (ou **Debug > Start Without Debugging**) pour exécuter l’application.
 
@@ -135,6 +140,6 @@ Félicitations ! Vous avez terminé ce guide de démarrage rapide. Nous espéro
 
 ## <a name="next-steps"></a>Étapes suivantes
 
+- Passez en revue l’article pour [Vue.js](create-application-with-vuejs.md)
 - Suivre le [tutoriel pour Node.js et Express](tutorial-nodejs.md)
-- Suivre le [tutoriel pour Node.js et React](tutorial-nodejs-with-react-and-jsx.md)
 - [Déployer l’application sur Linux App Service](../javascript/publish-nodejs-app-azure.md)

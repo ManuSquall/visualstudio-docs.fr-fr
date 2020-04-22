@@ -1,8 +1,8 @@
 ---
 title: Créer une application Node.js et React
 description: Dans ce tutoriel, vous créez une application à l’aide des outils Node.js pour Visual Studio.
-ms.custom: mvc
-ms.date: 4/20/2020
+ms.custom: ''
+ms.date: 4/21/2020
 ms.topic: tutorial
 ms.devlang: javascript
 author: mikejo5000
@@ -12,12 +12,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 265445306babf198c3d0063252846414a589a29c
-ms.sourcegitcommit: ade07bd1cf69b8b494d171ae648cfdd54f7800d3
+ms.openlocfilehash: c6813e0ad482bb211269c9da3950842dda7f6abd
+ms.sourcegitcommit: a7f781d5a089e6aab6b073a07f3d4d2967af8aa6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "81649248"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "81760118"
 ---
 # <a name="tutorial-create-a-nodejs-and-react-app-in-visual-studio"></a>Tutoriel : Créer une application Node.js et React dans Visual Studio
 
@@ -106,7 +106,7 @@ Commencez par créer un projet d’application web Node.js.
 
     (3) Le nœud npm montre tous les packages npm installés. Vous pouvez cliquer avec le bouton droit sur le nœud npm pour rechercher et installer des packages npm à l’aide d’une boîte de dialogue, ou vous pouvez installer et mettre à jour des packages à l’aide des paramètres de *package.json* et des options de menu contextuel du nœud npm.
 
-    (4) *package.json* est un fichier utilisé par npm pour gérer les dépendances de packages et les versions de packages des packages installés localement. Pour plus d’informations sur ce fichier, consultez [Configuration de package.json](../javascript/configure-packages-with-package-json.md)
+    (4) *package.json* est un fichier utilisé par npm pour gérer les dépendances de packages et les versions de packages des packages installés localement. Pour plus d’informations, voir [Forfait npm forfaits](../javascript/npm-package-management.md).
 
     (5) Les fichiers projet, comme *server.js*, apparaissent sous le nœud de projet. *server.js* est le fichier de démarrage du projet. C’est la raison pour laquelle il apparaît en **gras**. Vous pouvez définir le fichier de démarrage en cliquant avec le bouton droit sur un fichier du projet et en sélectionnant **Définir comme fichier de démarrage de Node.js**.
 
@@ -129,7 +129,7 @@ Cette application nécessite un certain nombre de modules npm pour s’exécuter
 
 1. Dans la boîte de dialogue **Installer de nouveaux packages npm**, recherchez le package react, puis sélectionnez **Installer le package** pour installer ce dernier.
 
-    ![Installer les packages npm](../javascript/media/tutorial-nodejs-react-install-packages.png)
+    ![Installer les packages npm](../javascript/media/tutorial-nodejs-react-install-package.png)
 
     Sélectionnez la fenêtre **Sortie** pour voir la progression de l’installation du package (sélectionnez **Npm** dans le champ **Afficher la sortie à partir de**). Une fois installé, le package apparaît sous le nœud **npm**.
 
@@ -162,7 +162,7 @@ Cette application nécessite un certain nombre de modules npm pour s’exécuter
 
     Voici les modules npm tels qu’ils apparaissent dans l’Explorateur de solutions après leur installation.
 
-    ![packages npm](../javascript/media/tutorial-nodejs-react-npm-modules.png)
+    ![packages npm](../javascript/media/tutorial-nodejs-react-npm-modules-installed.png)
 
     > [!NOTE]
     > Si vous préférez installer les packages npm à l’aide de la ligne de commande, cliquez avec le bouton droit sur le nœud de projet, puis choisissez **Ouvrir l’invite de commandes ici**. Utilisez les commandes Node.js standard pour installer les packages.
@@ -312,7 +312,7 @@ Au cours des étapes précédentes, vous avez ajouté *webpack-config.js* au pro
 
     La fenêtre d’invite de commandes affiche le résultat.
 
-    ![Exécuter webpack](../javascript/media/tutorial-nodejs-react-run-webpack.png)
+    ![Exécuter webpack](../javascript/media/tutorial-nodejs-react-run-webpack-cmd.png)
 
     Si vous voyez des erreurs à la place de la sortie précédente, vous devez les corriger pour permettre à votre application de fonctionner correctement. Si les versions de votre package npm sont différentes de celles présentées dans ce tutoriel, cela peut constituer une source d’erreurs. Vous pouvez éventuellement corriger les erreurs en utilisant les versions exactes indiquées au cours des étapes précédentes. De plus, si une ou plusieurs de ces versions de package sont dépréciées et génèrent des erreurs, vous devrez peut-être installer une version plus récente pour corriger ces erreurs. Pour plus d’informations sur l’utilisation de *package.json* pour gérer les versions des packages npm, consultez [Configuration de package.json](../javascript/configure-packages-with-package-json.md).
 
@@ -340,9 +340,9 @@ Chaque fois que vous apportez des changements à *app.tsx*, vous devez réexécu
    }
    ```
 
-## <a name="run-the-app"></a>Exécuter l'application
+## <a name="run-the-app"></a>Exécuter l’application
 
-1. Sélectionnez Microsoft Edge ou Chrome comme cible actuelle de débogé.
+1. Sélectionnez soit **Web Server (Google Chrome)** ou **Web Server (Microsoft Edge)** comme cible actuelle de débogé.
 
     ::: moniker range=">=vs-2019"
     ![Sélectionner Chrome en tant que cible de débogage](../javascript/media/vs-2019/tutorial-nodejs-react-debug-target.png)
@@ -351,12 +351,7 @@ Chaque fois que vous apportez des changements à *app.tsx*, vous devez réexécu
     ![Sélectionner Chrome en tant que cible de débogage](../javascript/media/tutorial-nodejs-react-debug-target.png)
     ::: moniker-end
 
-    ::: moniker range=">=vs-2019"
-    Si Chrome est disponible sur votre machine, mais ne s’affiche pas en option, choisissez **Le navigateur Web (nom du navigateur)** > **Sélectionnez le navigateur Web** de la liste de décrochage cible de déboguer, et sélectionnez **Chrome** comme cible par navigateur par défaut.
-    ::: moniker-end
-    ::: moniker range="vs-2017"
-    Si Chrome est disponible sur votre machine, mais ne s’affiche pas en option, choisissez **Le navigateur Web (nom du navigateur)** > **Google Chrome** à partir de la liste de décrochage cible de déboguer, et sélectionnez **Chrome** comme cible par navigateur par défaut.
-    ::: moniker-end
+    Si Chrome est disponible sur votre ordinateur, mais n’apparaît pas dans les options, choisissez **Naviguer avec** dans la liste déroulante des cibles de débogage et sélectionnez Chrome comme cible de navigateur par défaut (choisissez **Définir comme programme par défaut**).
 
 1. Pour exécuter l’application, appuyez sur **F5** (**Déboguer** > **Démarrer le débogage**) ou sur le bouton fléché vert.
 

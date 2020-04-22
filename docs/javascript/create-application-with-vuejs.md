@@ -12,12 +12,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: af781f5735a3539d8b0e2d098bb9252bc60193fc
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: edf5307984b4efc00a7c83c84fe5cb87954a93dd
+ms.sourcegitcommit: 5c804c42d24d35dcf2ba195aba9ce07031743f62
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "70180268"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "81744926"
 ---
 # <a name="create-a-vuejs-application-using-nodejs-tools-for-visual-studio"></a>Créer une application Vue.js à l’aide de Node.js Tools pour Visual Studio
 
@@ -29,7 +29,7 @@ Les nouvelles fonctionnalités suivantes prennent en charge le développement d�
 * Reconnaissance de l’attribut `lang` dans les fichiers *.vue*
 * Modèles de fichier et de projet vue.js
 
-## <a name="prerequisites"></a>Conditions préalables requises
+## <a name="prerequisites"></a>Prérequis
 
 * Vous devez avoir installé Visual Studio 2017 version 15.8 ou ultérieure et la charge de travail **Développement Node.js**.
 
@@ -51,7 +51,7 @@ Les nouvelles fonctionnalités suivantes prennent en charge le développement d�
 
     Si vous ne l’avez pas déjà fait, installez la version LTS à partir du site web [Node.js](https://nodejs.org/en/download/). En règle générale, Visual Studio détecte automatiquement le runtime Node.js installé. S’il ne détecte aucun runtime installé, vous pouvez configurer votre projet pour faire référence au runtime installé dans la page de propriétés. (Après avoir créé un projet, cliquez avec le bouton droit sur le nœud de projet, puis choisissez **Propriétés**).
 
-## <a name="create-a-vuejs-project-using-a-template"></a>Créer un projet Vue.js à l’aide d’un modèle
+## <a name="create-a-vuejs-project-using-nodejs"></a>Créer un projet Vue.js à l’aide de Node.js
 
 Vous pouvez utiliser les nouveaux modèles Vue.js pour créer un projet. L’utilisation du modèle représente la façon la plus simple de bien démarrer. Pour obtenir une procédure détaillée, consultez [Utiliser Visual Studio pour créer votre première application Vue.js](../javascript/quickstart-vuejs-with-nodejs.md).
 
