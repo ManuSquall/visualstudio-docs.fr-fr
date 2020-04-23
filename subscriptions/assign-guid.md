@@ -6,12 +6,12 @@ manager: lank
 ms.date: 04/20/2020
 ms.topic: conceptual
 description: Découvrez comment les administrateurs peuvent souscription spécifique de GUID aux abonnés
-ms.openlocfilehash: 722aaedcd6da0224311960d1587d0c2c24eec60f
-ms.sourcegitcommit: a7f781d5a089e6aab6b073a07f3d4d2967af8aa6
+ms.openlocfilehash: e2e8cd4f5d07f218fc23c0b7b6f28ababc25263f
+ms.sourcegitcommit: 0b8497b720eb06bed8ce2194731177161b65eb84
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "81760159"
+ms.lasthandoff: 04/23/2020
+ms.locfileid: "82072591"
 ---
 # <a name="assign-specific-subscriptions-in-the-visual-studio-subscriptions-administration-portal"></a>Attribuer des abonnements spécifiques dans le portail d’administration des abonnements Visual Studio
 
@@ -49,6 +49,7 @@ La dernière étape consiste à télécharger le modèle **d’ajout en vrac,** 
 
 > [!IMPORTANT]
 > Pour assurer un téléchargement réussi, s’il vous plaît assurez-vous que:
+> - Vous utilisez le modèle lié dans la boîte de dialogue lorsque vous sélectionnez **Bulk ajouter**.  N’utilisez pas une copie stockée localement du modèle, car il peut ne pas contenir tous les champs requis.  L’utilisation d’un ancien modèle entraînera l’échec du téléchargement. 
 > - Tous les champs indiqués comme requis dans **le** modèle sont complets.
 > - Il n’y a pas d’erreurs énumérées dans la colonne **de message d’erreur.**
 > - Chaque GUID n’est utilisé qu’une seule fois dans le modèle. 

@@ -18,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4a312bfe8c88b0ac523666779970cc28e3a7c798
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: ab54c5c523c833be60ef4b5d5088b6217a3111a5
+ms.sourcegitcommit: 0b8497b720eb06bed8ce2194731177161b65eb84
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77633172"
+ms.lasthandoff: 04/23/2020
+ms.locfileid: "82072578"
 ---
 # <a name="msbuild-task"></a>MSBuild (tâche)
 
@@ -42,13 +42,14 @@ Construit des projets MSBuild à partir d’un autre projet MSBuild.
 | `RemoveProperties` | Paramètre `String` facultatif.<br /><br /> Spécifie l’ensemble des propriétés globales à supprimer. |
 | `RunEachTargetSeparately` | Paramètre `Boolean` facultatif.<br /><br /> Si `true`, la tâche MSBuild invoque chaque cible dans la liste passée à MSBuild un à la fois, au lieu en même temps. Définir ce paramètre sur `true` garantit que les cibles ultérieures seront appelées même en cas d’échec des cibles précédemment appelées. Dans le cas contraire, une erreur de génération arrêterait l’appel de toutes les cibles suivantes. La valeur par défaut est `false`. |
 | `SkipNonexistentProjects` | Paramètre `Boolean` facultatif.<br /><br /> Si `true`, les fichiers projet qui n’existent pas sur le disque sont ignorés. Dans le cas contraire, ces projets provoquent une erreur. |
+|`SkipNonexistentTargets`|Paramètre `Boolean` facultatif.<br /><br /> Si `true`, les fichiers de projet `Targets` qui existent mais ne contiennent pas le nom seront ignorés. Dans le cas contraire, ces projets provoquent une erreur. Introduit dans MSBuild 15.5.|
 | `StopOnFirstFailure` | Paramètre `Boolean` facultatif.<br /><br /> Si `true`, en cas d’échec de génération de l’un des projets, aucun autre projet n’est généré. Pour le moment, cela n’est pas pris en charge lors de la génération en parallèle (avec plusieurs processeurs). |
 | `TargetAndPropertyListSeparators` | Paramètre `String[]` facultatif.<br /><br /> Spécifie une liste de cibles et de propriétés en tant que métadonnées d’élément `Project`. Avant le traitement, les séparateurs sont retirés de la séquence d’échappement. Par exemple, %3B (caractère « ; » inséré dans une séquence d’échappement) est traité comme s’il s’agissait du caractère « ; » sans séquence d’échappement. |
 | `TargetOutputs` | Paramètre de sortie en lecture seule <xref:Microsoft.Build.Framework.ITaskItem>`[]` facultatif.<br /><br /> Retourne les sorties des cibles générées à partir de tous les fichiers projet. Seules les sorties des cibles spécifiées sont retournées. Les sorties qui peuvent exister sur les cibles dont dépendent ces cibles ne sont pas retournées.<br /><br /> Le paramètre `TargetOutputs` contient également les métadonnées suivantes :<br /><br /> -   `MSBuildSourceProjectFile`: Le fichier du projet MSBuild qui contient l’objectif qui fixe les sorties.<br />-   `MSBuildSourceTargetName` : cible qui a défini les sorties. **Remarque :** si vous souhaitez identifier les sorties de chaque fichier projet ou de chaque cible séparément, exécutez la tâche `MSBuild` séparément pour chaque fichier projet ou cible. Si vous exécutez la tâche `MSBuild` une seule fois pour générer tous les fichiers projet, les sorties de toutes les cibles sont collectées dans un seul tableau. |
 | `Targets` | Paramètre `String` facultatif.<br /><br /> Spécifie la ou les cibles à générer dans les fichiers projet. Utilisez un point-virgule pour séparer les noms de cibles dans la liste. Si aucune cible n’est spécifiée dans la tâche `MSBuild`, les cibles par défaut spécifiées dans les fichiers projet sont créées. **Remarque :** les cibles doivent exister dans tous les fichiers projet. Si tel n’est pas le cas, une erreur de génération se produit. |
 | `ToolsVersion` | Paramètre `String` facultatif.<br /><br /> Spécifie la `ToolsVersion` à utiliser lors de la génération des projets transmis à cette tâche.<br /><br /> Permet à une tâche MSBuild de construire un projet qui cible une version différente du cadre .NET que celui spécifié dans le projet. Les valeurs valides sont `2.0`, `3.0` et `3.5`. La valeur par défaut est `3.5`. |
 
-## <a name="remarks"></a>Notes 
+## <a name="remarks"></a>Notes
 
  En plus des paramètres énumérés ci-dessus, cette tâche hérite des paramètres de la classe <xref:Microsoft.Build.Tasks.TaskExtension> , qui elle-même hérite de la classe <xref:Microsoft.Build.Utilities.Task> . Pour une liste de ces paramètres supplémentaires et leurs descriptions, voir [TaskExtension classe de base](../msbuild/taskextension-base-class.md).
 
@@ -56,7 +57,7 @@ Construit des projets MSBuild à partir d’un autre projet MSBuild.
 
  Cette tâche peut traiter non seulement les fichiers projet, mais également les fichiers solution.
 
- Toute configuration requise par MSBuild pour permettre aux projets de construire en même temps, même si la configuration implique une infrastructure à distance (par exemple, les ports, les protocoles, les délais d’attente, les retries, etc.), doit être configurable à l’aide d’un fichier de configuration. Dans la mesure du possible, il convient de spécifier les éléments de configuration comme paramètres de tâche dans la tâche `MSBuild`.
+ Toute configuration requise par MSBuild pour permettre aux projets de construire en même temps, même si la configuration implique une infrastructure à distance (par exemple, ports, protocoles, délais d’attente, retries, etc.), doit être configurable à l’aide d’un fichier de configuration. Dans la mesure du possible, il convient de spécifier les éléments de configuration comme paramètres de tâche dans la tâche `MSBuild`.
 
  À partir de MSBuild 3.5, les projets Solution font désormais surface TargetOutputs de tous les sous-projets qu’il construit.
 
@@ -170,7 +171,7 @@ Construit des projets MSBuild à partir d’un autre projet MSBuild.
 </Project>
 ```
 
-## <a name="example"></a> Exemple
+## <a name="example"></a>Exemple
 
  L’exemple suivant utilise la tâche `MSBuild` pour générer les projets spécifiés par la collection d’éléments `ProjectReferences`. Les sorties cibles obtenues sont stockées dans la collection d’éléments `AssembliesBuiltByChildProjects`.
 
