@@ -1,6 +1,6 @@
 ---
 title: Créer des stubs de méthodes de tests unitaires
-ms.date: 04/01/2019
+ms.date: 04/24/2020
 ms.topic: conceptual
 helpviewer_keywords:
 - unit testing, create unit tests
@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3eb001d2022bb57981f21fd99c051c54aeb08301
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 9b9c0d2bfba0a55ef0362f031bfa32e986a05a10
+ms.sourcegitcommit: dab57cebd484228e6f0cf7ab1b9685c575410c06
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75844319"
+ms.lasthandoff: 04/25/2020
+ms.locfileid: "82153004"
 ---
 # <a name="create-unit-test-method-stubs-with-the-create-unit-tests-command"></a>Créer des stubs de méthodes de tests unitaires avec la commande Créer des tests unitaires
 
@@ -22,16 +22,16 @@ La commande **Créer des tests unitaires** permet de créer des stubs de méthod
 
 ::: moniker range="vs-2017"
 > [!NOTE]
-> La commande de menu **Créer des tests unitaires** est disponible seulement pour le code managé qui cible le .NET Framework (mais pas .NET Core).
+> La commande de menu **créer des tests unitaires** est uniquement disponible pour le code C# qui cible .NET Framework (mais pas .net Core).
 ::: moniker-end
 ::: moniker range=">=vs-2019"
 > [!NOTE]
-> La commande de menu **Create Unit Tests** n’est disponible que pour le code géré.
+> La commande de menu **créer des tests unitaires** est uniquement disponible pour le code C#.
 ::: moniker-end
 
 La commande de menu **Créer des tests unitaires** est extensible et peut servir à générer des tests pour MSTest, MSTest V2, NUnit et xUnit.
 
-## <a name="get-started"></a>Prise en main
+## <a name="get-started"></a>Bien démarrer
 
 Pour bien démarrer, sélectionnez une méthode, un type ou un espace de noms dans l’éditeur de code du projet à tester, cliquez avec le bouton droit, puis choisissez **Créer des tests unitaires**. La boîte de dialogue **Créer des tests unitaires** s’ouvre et vous permet de configurer la façon de créer les tests.
 
