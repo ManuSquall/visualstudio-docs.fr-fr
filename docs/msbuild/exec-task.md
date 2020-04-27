@@ -18,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f588ae1b32b8b8d47d6323ee32d02c9053a3de32
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 634916d9ab4ef0ce3119fcb5695301598992f38c
+ms.sourcegitcommit: 93859158465eab3423a0c0435f06490f0a456a57
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77634212"
+ms.lasthandoff: 04/27/2020
+ms.locfileid: "82167296"
 ---
 # <a name="exec-task"></a>Exec (tâche)
 
@@ -49,15 +49,15 @@ Le tableau ci-dessous décrit les paramètres de la tâche `Exec`.
 |`StdOutEncoding`|Paramètre de sortie `String` facultatif.<br /><br /> Spécifie l’encodage du flux de sortie standard de tâche capturé. La valeur par défaut est l’encodage de sortie de la console actuelle.|
 |`WorkingDirectory`|Paramètre `String` facultatif.<br /><br /> Spécifie le répertoire dans lequel la commande sera exécutée.<br /><br />Par défaut : le répertoire de travail actif du projet.|
 
-## <a name="remarks"></a>Notes 
+[!INCLUDE [ToolTaskExtension arguments](includes/tooltaskextension-base-params.md)]
 
-Cette tâche est utile lorsqu’une tâche spécifique de MSBuild pour le travail que vous voulez effectuer n’est pas disponible. Toutefois, la tâche `Exec`, contrairement à une tâche plus spécifique, ne peut pas effectuer de traitement ou d’opérations conditionnelles supplémentaires en fonction du résultat de l’outil ou de la commande exécutée.
+## <a name="remarks"></a>Notes
+
+Cette tâche est utile quand une tâche MSBuild spécifique pour le travail que vous souhaitez effectuer n’est pas disponible. Toutefois, la tâche `Exec`, contrairement à une tâche plus spécifique, ne peut pas effectuer de traitement ou d’opérations conditionnelles supplémentaires en fonction du résultat de l’outil ou de la commande exécutée.
 
 La tâche `Exec` appelle *cmd.exe* au lieu d’appeler directement un processus.
 
-En plus des paramètres énumérés dans ce document, cette tâche hérite des paramètres de la classe <xref:Microsoft.Build.Tasks.ToolTaskExtension>, qui elle-même hérite de la classe <xref:Microsoft.Build.Utilities.ToolTask>. Pour une liste de ces paramètres supplémentaires et leurs descriptions, voir [ToolTaskExtension classe de base](../msbuild/tooltaskextension-base-class.md).
-
-## <a name="example"></a> Exemple
+## <a name="example"></a>Exemple
 
 L’exemple suivant utilise la tâche `Exec` pour exécuter une commande.
 
