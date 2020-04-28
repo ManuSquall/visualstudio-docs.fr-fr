@@ -537,6 +537,14 @@
                   href: ca1824.md
                 - name: "CA1825\_: Éviter les allocations de tableau de longueur nulle"
                   href: ca1825.md
+                - name: "CA1826\_: Utiliser une propriété au lieu de la méthode Linq Enumerable"
+                  href: ca1826.md
+                - name: "CA1827\_: N’utilisez pas Count/LongCount quand Any peut être utilisé"
+                  href: ca1827.md
+                - name: "CA1828\_: N’utilisez pas CountAsync/LongCountAsync quand AnyAsync peut être utilisé"
+                  href: ca1828.md
+                - name: "CA1829\_: Utilisez la propriété Length/Count au lieu de la méthode Enumerable.Count"
+                  href: ca1829.md
             - name: Avertissements liés à la portabilité
               items:
                 - name: Vue d'ensemble
