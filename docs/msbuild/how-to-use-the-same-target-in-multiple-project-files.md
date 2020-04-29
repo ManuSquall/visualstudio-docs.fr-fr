@@ -11,20 +11,20 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1b7b36a829e2e406ecd3f10ba3a2b588c6f7df25
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 4bc8f3c95c687244162cb3bd977ca40031cd8f39
+ms.sourcegitcommit: ddd99f64a3f86508892a6d61e8a33c88fb911cc4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77633757"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "82255576"
 ---
 # <a name="how-to-use-the-same-target-in-multiple-project-files"></a>Guide pratique pour utiliser la même cible dans plusieurs fichiers projet
 
-Si vous avez rédigé plusieurs fichiers de projets MSBuild, vous avez peut-être découvert que vous devez utiliser les mêmes tâches et cibles dans différents fichiers de projet. Au lieu d’inclure la description complète de ces tâches ou de ces cibles dans chaque fichier projet, vous pouvez enregistrer une cible dans un fichier projet distinct et importer ensuite ce projet dans un autre projet qui doit utiliser la cible.
+Si vous avez créé plusieurs fichiers projet MSBuild, vous avez peut-être découvert que vous devez utiliser les mêmes tâches et cibles dans différents fichiers projet. Au lieu d’inclure la description complète de ces tâches ou de ces cibles dans chaque fichier projet, vous pouvez enregistrer une cible dans un fichier projet distinct et importer ensuite ce projet dans un autre projet qui doit utiliser la cible.
+
 ## <a name="use-the-import-element"></a>Utiliser l’élément Import
 
- L’élément `Import` est utilisé pour insérer un fichier projet dans un autre fichier projet. Le dossier de projet importé doit être un fichier de projet MSBuild valide et contenir un XML bien formé. L’attribut `Project` spécifie le chemin du fichier projet importé. Pour plus d’informations sur l’élément, `Import` voir Élément [d’importation (MSBuild)](../msbuild/import-element-msbuild.md).
-L’élément `Import` est utilisé pour insérer un fichier projet dans un autre fichier projet. Le dossier de projet importé doit être un fichier de projet MSBuild valide et contenir un XML bien formé. L’attribut `Project` spécifie le chemin du fichier projet importé. Pour plus d’informations sur l’élément, `Import` voir Élément [d’importation (MSBuild)](../msbuild/import-element-msbuild.md).
+L’élément `Import` est utilisé pour insérer un fichier projet dans un autre fichier projet. Le fichier projet en cours d’importation doit être un fichier projet MSBuild valide et contenir du code XML correct. L’attribut `Project` spécifie le chemin du fichier projet importé. Pour plus d’informations sur `Import` l’élément, consultez [import, élément (MSBuild)](../msbuild/import-element-msbuild.md).
 
 #### <a name="to-import-a-project"></a>Pour importer un projet
 
@@ -38,9 +38,9 @@ L’élément `Import` est utilisé pour insérer un fichier projet dans un autr
 
 ## <a name="order-of-evaluation"></a>Ordre d’évaluation
 
- Lorsque MSBuild `Import` atteint un élément, le projet importé est effectivement inséré dans `Import` le projet d’importation à l’emplacement de l’élément. Par conséquent, l’emplacement de l’élément `Import` peut affecter les valeurs des propriétés et des éléments. Il est important de comprendre les propriétés et les éléments qui sont définis par le projet importé, ainsi que les propriétés et les éléments utilisés par le projet importé.
+ Quand MSBuild atteint un `Import` élément, le projet importé est effectivement inséré dans le projet d’importation à l’emplacement de `Import` l’élément. Par conséquent, l’emplacement de l’élément `Import` peut affecter les valeurs des propriétés et des éléments. Il est important de comprendre les propriétés et les éléments qui sont définis par le projet importé, ainsi que les propriétés et les éléments utilisés par le projet importé.
 
- Quand le projet est généré, toutes les propriétés sont évaluées en premier, suivies par les éléments. Par exemple, le XML suivant définit le fichier de projet importé *MyCommon.targets*:
+ Quand le projet est généré, toutes les propriétés sont évaluées en premier, suivies par les éléments. Par exemple, le code XML suivant définit le fichier projet importé *MyCommon. targets*:
 
 ```xml
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -54,7 +54,7 @@ L’élément `Import` est utilisé pour insérer un fichier projet dans un autr
 </Project>
 ```
 
- Le XML suivant définit *MyApp.proj*, qui importe *MyCommon.targets*:
+ Le code XML suivant définit *MyApp. proj*, qui importe *MyCommon. targets*:
 
 ```xml
 <Project
@@ -71,7 +71,7 @@ L’élément `Import` est utilisé pour insérer un fichier projet dans un autr
 
  `Name="MyCommon"`
 
- Parce que le projet est `Name` importé après que la propriété a `Name` été définie dans *MyApp.proj*, la définition de dans *MyCommon.targets* remplace la définition dans *MyApp.proj*. Si le projet est importé avant la définition de la propriété Name, la génération affiche le message suivant :
+ Étant donné que le projet est importé après `Name` que la propriété a été définie dans *MyApp. proj*, `Name` la définition de dans *MyCommon. targets* se substitue à la définition dans *MyApp. proj*. Si le projet est importé avant la définition de la propriété Name, la génération affiche le message suivant :
 
  `Name="MyApp"`
 
@@ -83,9 +83,9 @@ L’élément `Import` est utilisé pour insérer un fichier projet dans un autr
 
 3. Définissez dans le fichier projet toutes les propriétés et tous les éléments qui doivent remplacer les définitions par défaut des propriétés et des éléments dans le projet importé.
 
-## <a name="example"></a> Exemple
+## <a name="example"></a>Exemple
 
- L’exemple de code suivant montre le fichier *MyCommon.targets* que le deuxième exemple de code importe. Le fichier *.targets* évalue les propriétés du projet d’importation pour configurer la construction.
+ L’exemple de code suivant montre le fichier *MyCommon. targets* que le deuxième exemple de code importe. Le fichier *. targets* évalue les propriétés du projet importateur pour configurer la Build.
 
 ```xml
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -102,9 +102,9 @@ L’élément `Import` est utilisé pour insérer un fichier projet dans un autr
 </Project>
 ```
 
-## <a name="example"></a> Exemple
+## <a name="example"></a>Exemple
 
- L’exemple de code suivant importe le fichier *MyCommon.targets.*
+ L’exemple de code suivant importe le fichier *MyCommon. targets* .
 
 ```xml
 <Project DefaultTargets="Build"
