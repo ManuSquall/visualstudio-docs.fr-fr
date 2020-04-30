@@ -10,16 +10,16 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: af4fb872206611ea5eb1aa93b7aa759615b56e41
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: d3f6299a8be52aef068746ca33e48341da55f778
+ms.sourcegitcommit: da5ebc29544fdbdf625ab4922c9777faf2bcae4a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77633679"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "82586882"
 ---
 # <a name="item-functions"></a>fonctions d'élément
 
-Le code dans les tâches et les cibles peut appeler les fonctions de l’élément pour obtenir des informations sur les éléments du projet (dans MSBuild 4.0 et plus tard). Ces fonctions simplifient l’obtention d’éléments distincts et sont plus rapides que les boucles à travers les éléments.
+Le code des tâches et des cibles peut appeler des fonctions d’élément pour obtenir des informations sur les éléments du projet (dans MSBuild 4,0 et versions ultérieures). Ces fonctions simplifient l’obtention d’éléments distincts et sont plus rapides que l’itération dans les éléments.
 
 ## <a name="string-item-functions"></a>Fonctions d’élément de type chaîne
 
@@ -101,6 +101,10 @@ L’exemple suivant montre comment utiliser des fonctions d’élément intrins�
     Reverse: third;second;first
   -->
 ```
+
+## <a name="msbuild-condition-functions"></a>Fonctions de condition MSBuild
+
+Les fonctions `Exists` et `HasTrailingSlash` ne sont pas des fonctions d’élément. Elles peuvent être utilisées avec l' `Condition` attribut. Consultez les [Conditions MSBuild](msbuild-conditions.md).
 
 ## <a name="see-also"></a>Voir aussi
 

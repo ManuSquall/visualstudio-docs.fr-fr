@@ -10,22 +10,22 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bb4c44b4e642ff1137df7f0afe02502224060a64
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: c5f1d34a6d21e6d4f413275ee21651feb7ec3dec
+ms.sourcegitcommit: da5ebc29544fdbdf625ab4922c9777faf2bcae4a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79302909"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "82586692"
 ---
 # <a name="property-functions"></a>Fonctions de propriétés
 
-Les fonctions de propriété sont des appels aux méthodes de cadre .NET qui apparaissent dans les définitions de propriété MSBuild. Au contraire des tâches, les fonctions de propriété peuvent être utilisées en dehors des cibles et elles sont évaluées avant l'exécution des cibles.
+Les fonctions de propriété sont des appels à .NET Framework méthodes qui s’affichent dans les définitions de propriété MSBuild. Au contraire des tâches, les fonctions de propriété peuvent être utilisées en dehors des cibles et elles sont évaluées avant l'exécution des cibles.
 
 Sans utiliser de tâches MSBuild, vous pouvez lire l'heure système, comparer des chaînes, établir des correspondances avec des expressions régulières et effectuer d'autres actions dans votre script de génération. MSBuild tente de convertir les chaînes en nombres et les nombres en chaînes, et d'effectuer les autres conversions nécessaires.
 
 Les valeurs de chaîne retournées à partir de fonctions de propriété ont des [caractères spéciaux](msbuild-special-characters.md) d’échappement. Si vous souhaitez que la valeur soit traitée comme si elle avait été placée directement dans le fichier projet, utilisez `$([MSBuild]::Unescape())` pour éliminer les caractères spéciaux d’échappement.
 
-Les fonctions de propriété sont disponibles avec .NET Framework 4 et plus tard.
+Les fonctions de propriété sont disponibles avec .NET Framework 4 et versions ultérieures.
 
 ## <a name="property-function-syntax"></a>Syntaxe des fonctions de propriété
 
@@ -174,8 +174,8 @@ Voici une liste de fonctions de propriété MSBuild :
 |string NormalizePath(params string[] path)|Obtient le chemin complet au format canonique du chemin fourni et vérifie qu’il contient les caractères de séparateur de répertoire appropriés au système d’exploitation actuel.|
 |string NormalizeDirectory(params string[] path)|Obtient le chemin complet au format canonique du répertoire fourni et vérifie qu’il contient les caractères de séparateur de répertoire appropriés au système d’exploitation actuel et qu’il se termine par une barre oblique.|
 |string EnsureTrailingSlash(string path)|Si le chemin donné ne se termine pas par une barre oblique, ajoutez-en une. Si le chemin est une chaîne vide, ne le modifiez pas.|
-|string GetPathOfFileAbove(string file, string startingDirectory)|Recherche et renvoie le chemin complet vers un fichier dans la structure d’annuaire au-dessus de l’emplacement du fichier de construction actuel, ou basé sur, `startingDirectory`si spécifié.|
-|GetDirectoryNameOfFileAbove(string startingDirectory, string fileName)|Localiser et retourner l’annuaire d’un fichier dans l’annuaire spécifié ou un emplacement dans la structure d’annuaire au-dessus de cet annuaire.|
+|string GetPathOfFileAbove(string file, string startingDirectory)|Recherche et retourne le chemin d’accès complet à un fichier dans la structure de répertoires au-dessus de l’emplacement du fichier `startingDirectory`de build actuel, ou basé sur, s’il est spécifié.|
+|GetDirectoryNameOfFileAbove(string startingDirectory, string fileName)|Recherchez et retournez le répertoire d’un fichier dans le répertoire spécifié ou un emplacement dans la structure de répertoires au-dessus de ce répertoire.|
 |string MakeRelative(string basePath, string path)|Rend `path` relatif à `basePath`. `basePath` doit être un répertoire absolu. Si rendre `path` relatif n’est pas possible, il est retourné sous forme de chaîne textuelle. Semblable à `Uri.MakeRelativeUri`.|
 |string ValueOrDefault(string conditionValue, string defaultValue)|Retourne la chaîne dans le paramètre 'defaultValue' seulement si le paramètre 'conditionValue' est vide ; sinon, retourne la valeur conditionValue.|
 
@@ -229,7 +229,7 @@ $([MSBuild]::GetDirectoryNameOfFileAbove(string ThePath, string TheFile))
 
 ## <a name="msbuild-getpathoffileabove"></a>MSBuild GetPathOfFileAbove
 
-La `GetPathOfFileAbove` fonction de propriété dans MSBuild retourne le chemin du fichier spécifié, s’il est situé dans la structure d’annuaire au-dessus de l’annuaire actuel. Sur le plan fonctionnel, elle revient à appeler
+La `GetPathOfFileAbove` fonction de propriété dans MSBuild retourne le chemin d’accès du fichier spécifié, s’il se trouve dans la structure de répertoires au-dessus du répertoire actif. Sur le plan fonctionnel, elle revient à appeler
 
 ```xml
 <Import Project="$([MSBuild]::GetDirectoryNameOfFileAbove($(MSBuildThisFileDirectory), dir.props))\dir.props" />
@@ -263,7 +263,7 @@ Le syntaxe de cette fonction de propriété est :
 [MSBuild]::GetRegistryValueFromView(string keyName, string valueName, object defaultValue, params object[] views)
 ```
 
-Le système d’exploitation Windows 64 bits conserve une clé de registre **HKEY_LOCAL_MACHINE-SOFTWARE-Wow6432Node** qui présente une vue de registre **HKEY_LOCAL_MACHINE-SOFTWARE** pour les applications 32 bits.
+Le système d’exploitation Windows 64 bits gère une clé de Registre **HKEY_LOCAL_MACHINE \software\wow6432node** qui présente une vue de Registre **HKEY_LOCAL_MACHINE \SOFTWARE** pour les applications 32 bits.
 
 Par défaut, une application 32 bits s'exécutant sur WOW64 accède à la vue de Registre 32 bits et une application 64 bits accède à la vue de Registre 64 bits.
 
@@ -281,7 +281,7 @@ Voici un exemple.
 $([MSBuild]::GetRegistryValueFromView('HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Microsoft SDKs\Silverlight\v3.0\ReferenceAssemblies', 'SLRuntimeInstallPath', null, RegistryView.Registry64, RegistryView.Registry32))
 ```
 
-obtient les données **SLRuntimeInstallPath** de la clé **ReferenceAssemblies,** en regardant d’abord dans la vue de registre 64 bits, puis dans la vue de registre 32 bits.
+Obtient les données **SLRuntimeInstallPath** de la clé **ReferenceAssemblies** , en recherchant d’abord dans la vue de Registre 64 bits, puis dans la vue de Registre 32 bits.
 
 ## <a name="msbuild-makerelative"></a>Fonction MSBuild MakeRelative
 
@@ -340,8 +340,12 @@ Output:
 -->
 ```
 
+## <a name="msbuild-condition-functions"></a>Fonctions de condition MSBuild
+
+Les fonctions `Exists` et `HasTrailingSlash` ne sont pas des fonctions de propriété. Elles peuvent être utilisées avec l' `Condition` attribut. Consultez les [Conditions MSBuild](msbuild-conditions.md).
+
 ## <a name="see-also"></a>Voir aussi
 
 - [Propriétés MSBuild](../msbuild/msbuild-properties.md)
 
-- [Aperçu MSBuild](../msbuild/msbuild.md)
+- [Vue d’ensemble de MSBuild](../msbuild/msbuild.md)

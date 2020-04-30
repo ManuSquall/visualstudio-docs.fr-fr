@@ -11,12 +11,12 @@ ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: cf9125476a4fdc369cc22034e081f2151020f064
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: c8e7c040fb4d6df507ed5721407655accf067fb9
+ms.sourcegitcommit: da5ebc29544fdbdf625ab4922c9777faf2bcae4a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "62784614"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "82586554"
 ---
 # <a name="publishing-to-azure-app-service-on-windows"></a>Publier sur Azure App Service sous Linux
 
@@ -30,7 +30,7 @@ Le processus de publication diffère entre Visual Studio 2017 et ultérieur, et 
 > [!Note]
 > Pour plus d’informations sur les changements entre Visual Studio 2015 et Visual Studio 2017 et ultérieur, consultez le billet de blog [Publier sur Azure dans Visual Studio 2017](https://devblogs.microsoft.com/python/publish-to-azure-in-vs-2017/).
 
-## <a name="prerequisites"></a>Conditions préalables requises
+## <a name="prerequisites"></a>Prérequis
 
 Pour cette procédure pas à pas, vous avez besoin d’un projet d’application web basé sur les infrastructures Bottle, Flask ou Django. Si vous n’avez pas encore de projet et que voulez essayer le processus de publication, créez un projet de test simple comme suit :
 
@@ -44,7 +44,7 @@ Pour cette procédure pas à pas, vous avez besoin d’un projet d’application
 
 La publication sur Azure nécessite un service App Service cible. Pour cela, vous pouvez créer un service App Service en utilisant un abonnement Azure ou vous pouvez utiliser un site temporaire.
 
-Si vous n’avez pas d’abonnement, commencez avec un [compte Azure complet gratuit](https://azure.microsoft.com/free/), qui inclut des crédits importants pour les services Azure. Envisagez également de vous inscrire à [Visual Studio Dev Essentials](https://azure.microsoft.com/pricing/member-offers/vs-dev-essentials/), qui vous donne 25 $ de crédit chaque mois pour une année complète.
+Si vous n’avez pas d’abonnement, commencez avec un [compte Azure complet gratuit](https://azure.microsoft.com/free/), qui inclut des crédits importants pour les services Azure. Envisagez également de vous inscrire à [Visual Studio dev Essentials](https://azure.microsoft.com/pricing/member-offers/vs-dev-essentials/), qui vous donne un crédit de $25 par mois pendant une année complète.
 
 > [!Tip]
 > Azure demande une carte de crédit pour vérifier votre compte, mais la carte n’est pas débitée. Vous pouvez également définir une [limite de dépense](/azure/billing/billing-spending-limit) égale à vos crédits gratuits pour être sûr qu’il n’y aura aucun frais supplémentaire. En outre, Azure fournit un niveau de plan App Service gratuit qui est idéal pour les applications de test simples, comme celle qui décrite dans la section suivante.
@@ -63,7 +63,7 @@ Avec un abonnement Azure actif, créez un service App Service avec une applicati
 
 Pour créer un service App Service temporaire sans avoir besoin d’un abonnement Azure, procédez comme suit :
 
-1. Ouvrez votre navigateur au niveau du site [try.azurewebsites.net](https://try.azurewebsites.net).
+1. Ouvrez votre navigateur sur [https://azure.microsoft.com/try/app-service/web/](https://azure.microsoft.com/try/app-service/web/).
 1. Sélectionnez **Application web** pour le type d’application, puis sélectionnez **Suivant**.
 1. Sélectionnez **Site vide**, puis **Créer**.
 1. Connectez-vous à l’aide de la connexion de réseau social de votre choix. Après un bref instant, votre site est prêt à l’adresse URL affichée.
@@ -79,7 +79,7 @@ Si vous le souhaitez, vous pouvez également installer le package `bottle` en su
 
 La publication sur Azure App Service à partir de Visual Studio 2017 et ultérieur copie seulement les fichiers de votre projet sur le serveur. Par conséquent, il est nécessaire de créer les fichiers nécessaires pour configurer l’environnement du serveur.
 
-1. Dans Visual Studio **Solution Explorer**, cliquez à droite sur le projet et sélectionnez Ajouter > **nouvel article...**. Dans le dialogue qui apparaît, en sélectionnant le modèle "Azure web.config (Fast CGI)" et sélectionnez OK. Cette opération crée un fichier `web.config` dans le dossier racine de votre projet.
+1. Dans Visual Studio **Explorateur de solutions**, cliquez avec le bouton droit sur le projet et sélectionnez **Ajouter > nouvel élément...**. Dans la boîte de dialogue qui s’affiche, sélectionnez le modèle « Azure Web. config (Fast CGI) », puis cliquez sur OK. Cette opération crée un fichier `web.config` dans le dossier racine de votre projet.
 
 1. Modifiez l’entrée `PythonHandler` dans `web.config` afin que le chemin corresponde au chemin d’installation de Python sur le serveur (voir [Informations de référence sur IIS](https://www.iis.net/configreference) (iis.net) pour plus de détails). Par exemple, pour Python 3.6.1 x64, l’entrée doit être la suivante :
 
@@ -145,7 +145,7 @@ La publication sur Azure App Service à partir de Visual Studio 2017 et ultérie
 
     ![Publier sur Azure, Étape 1, Visual Studio 2017 et ultérieur, abonnements existants](media/tutorials-common-publish-1a-2017.png)
 
-    b. Si vous utilisez un service d’application temporaire sur try.azurewebsites.net, ou si vous **>** avez besoin d’utiliser un profil de publication, sélectionnez le contrôle pour trouver le **profil d’importation,** sélectionnez cette option, puis **sélectionnez Publier**. L’emplacement du fichier `.publishsettings` précédemment téléchargé vous est alors demandé.
+    b. Si vous utilisez un App Service temporaire sur try.azurewebsites.net ou si vous devez utiliser un profil de publication, sélectionnez le **>** contrôle pour rechercher un **profil d’importation**, sélectionnez cette option, puis sélectionnez **publier**. L’emplacement du fichier `.publishsettings` précédemment téléchargé vous est alors demandé.
 
     ![Publier sur Azure, Étape 1, Visual Studio 2017 et ultérieur, App Service temporaire](media/tutorials-common-publish-1b-2017.png)
 
