@@ -73,7 +73,7 @@ Syntaxe :
 
 ### <a name="child-elements"></a>Éléments enfants
 
-Aucune.
+Aucun.
 
 ### <a name="parent-elements"></a>Éléments parents
 
@@ -111,7 +111,7 @@ La liste suivante présente les balises intégrées qui sont disponibles dans Vi
 | | | UWP (`uwp`) |
 | | | Web (`web`) |
 
-## <a name="example"></a>Exemple
+## <a name="example"></a> Exemple
 
 L’exemple suivant montre les métadonnées d’un modèle de projet pour une application Visual C# :
 

@@ -55,5 +55,5 @@ Si vous avez des questions sur l’achat via le Microsoft Store, l’aide est di
 
 ## <a name="next-steps"></a>Étapes suivantes
 Une fois que vous avez activé votre abonnement, visitez la page des [avantages](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) pour consulter tous les outils, services, formations et avantages de support inclus dans votre abonnement.  Nous vous recommandons de configurer les avantages suivants pour commencer :
-- [Visual Studio](vs-ide-benefit.md)
+- [Visual Studio](vs-ide-benefit.md)
 - [Azure DevOps](vs-azure-devops.md)

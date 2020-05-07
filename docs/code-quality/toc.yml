@@ -432,6 +432,8 @@
                   href: ca1507.md
                 - name: "CA1508\_: Éviter le code conditionnel mort"
                   href: ca1508.md
+                - name: "CA1509\_: Entrée non valide dans le fichier de configuration des métriques de code"
+                  href: ca1509.md
             - name: Avertissements liés à la mobilité
               items:
                 - name: Vue d'ensemble
@@ -575,6 +577,8 @@
                   href: ca2006.md
                 - name: "CA2007\_: N’attendez pas directement une Tâche"
                   href: ca2007.md
+                - name: "CA2009\_: N’appelez pas ToImmutableCollection sur une valeur ImmutableCollection"
+                  href: ca2009.md
             - name: Avertissements liés à la sécurité
               items:
                 - name: Vue d'ensemble
