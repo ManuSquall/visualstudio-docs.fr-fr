@@ -8,10 +8,10 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: 3c3a8f4eaf863fd8174ff70339fffc80141fc38d
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75569242"
 ---
 # <a name="generate-an-override-in-visual-studio"></a>Générer une substitution dans Visual Studio
@@ -20,7 +20,7 @@ Cette génération de code s’applique à :
 
 - C#
 
-- Visual Basic
+- Visual Basic
 
 **Quoi :** vous permet de générer immédiatement le code pour toute méthode pouvant être substituée à partir d’une classe de base.
 
@@ -28,7 +28,7 @@ Cette génération de code s’applique à :
 
 **Pourquoi :** vous pouvez écrire la signature de la méthode vous-même, mais cette fonctionnalité générera automatiquement la signature.
 
-## <a name="how-to"></a>Procédure
+## <a name="how-to"></a>Procédures
 
 1. Tapez `override` en C# ou `Overrides` en Visual Basic, suivi d’un espace, à l’emplacement où vous souhaitez insérer une méthode override.
 
@@ -58,4 +58,4 @@ Cette génération de code s’applique à :
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Génération de code](../code-generation-in-visual-studio.md)
+- [Génération de codes](../code-generation-in-visual-studio.md)

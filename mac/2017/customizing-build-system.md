@@ -6,15 +6,15 @@ ms.author: dominicn
 ms.date: 04/14/2017
 ms.assetid: 6958B102-8527-4B40-BC65-3505DB63F9D3
 ms.openlocfilehash: 97416ef126ee77f9955d8fa486d7bb7e2ceb725e
-ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/10/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "74983452"
 ---
 # <a name="customizing-the-build-system"></a>Personnalisation du système de génération
 
-MSBuild est un moteur de génération, développé par Microsoft, qui permet de générer principalement des applications .NET. Le framework Mono a également sa propre implémentation du moteur de génération de Microsoft, appelée **xbuild**. Toutefois, xbuild a été supprimé pour privilégier l’utilisation de MSBuild sur tous les systèmes d’exploitation.
+MSBuild est un moteur de génération, développé par Microsoft, qui permet de générer principalement des applications .NET. Le cadre Mono a également sa propre mise en œuvre de Microsoft Build Engine, appelé **xbuild**. Toutefois, xbuild a été supprimé pour privilégier l’utilisation de MSBuild sur tous les systèmes d’exploitation.
 
 **MSBuild** est principalement utilisé comme système de génération des projets dans Visual Studio pour Mac.
 
@@ -78,7 +78,7 @@ Par exemple, le PropertyGroup pour une pour une application de console simple pe
 
 Les propriétés peuvent être référencées dans des expressions avec la syntaxe `$()`. Par exemple, `$(Foo)` sera évalué comme valeur de la propriété `Foo`. Si la propriété n’a pas été définie, elle est évaluée comme chaîne vide, sans provoquer d’erreur.
 
-#### <a name="items"></a>Items
+#### <a name="items"></a>Éléments
 
 Les éléments offrent un moyen de traiter les entrées dans le système de génération sous formes de listes ou d’ensembles, et représentent en général des fichiers. Chaque élément a un *type*d’élément, une *spécification* d’élément et des *métadonnées* arbitraires facultatives. Notez que MSBuild ne travaille pas sur des éléments individuels, il prend tous les éléments d’un type donné, appelé un *ensemble* d’éléments.
 
@@ -103,5 +103,5 @@ Par exemple, l’extrait de code ci-dessous crée les écrans de lancement d’i
 
 Les ressources suivantes peuvent être utilisées pour obtenir plus d’informations sur MSBuild :
 
-* [MSBuild Overview (Vue d’ensemble de MSBuild)](/visualstudio/msbuild/msbuild)
+* [Aperçu MSBuild](/visualstudio/msbuild/msbuild)
 * [Concepts MSBuild](/visualstudio/msbuild/msbuild-concepts)

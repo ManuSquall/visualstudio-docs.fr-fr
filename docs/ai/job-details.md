@@ -1,27 +1,28 @@
 ---
-title: Afficher les travaux récents
-author: lisawong19
-ms.author: liwong
-manager: routlaw
+title: Afficher les tâches récentes
+author: jillre
+ms.author: jillfra
+manager: jillfra
+monikerRange: vs-2017
 ms.date: 11/13/2017
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: 79b396946666077dcdedb3ee2a5ab891c2bb4fb8
-ms.sourcegitcommit: 57bc1c3887838d707c13feff72a677b3bad3be4b
+ms.openlocfilehash: 55865e4907175664e8a8bfb8a813ff8d02c85b69
+ms.sourcegitcommit: 9c1cecaff4d9955276eee7865b78d47679dd1e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72777394"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "80638432"
 ---
 # <a name="view-recent-job-performance-and-details"></a>Afficher les détails et les performances des travaux récents
 
 Une fois que les travaux sont envoyés, vous pouvez en afficher la liste pour voir leur état, leur durée et bien plus encore.
 
-1. Dans **l’Explorateur de serveurs**, développez le contexte de calcul spécifique.
+1. Dans le **Server Explorer**, élargir le contexte de calcul spécifique.
 2. Double-cliquez sur **Travaux**.
 3. La liste des travaux envoyés à ce contexte de calcul s’affiche.
-4. Sélectionnez un **travail** spécifique dans la liste pour en afficher les détails.
+4. Sélectionnez un **emploi** spécifique dans la liste pour afficher les détails.
 
 ![surveiller des travaux](media/job-details/monitor-jobs.png)
 

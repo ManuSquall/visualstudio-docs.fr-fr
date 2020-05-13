@@ -1,4 +1,4 @@
-- name: "SDK Visual\_Studio"
+- name: Kit de développement logiciel Visual Studio
   href: visual-studio-sdk.md
 - name: Installation du Kit de développement logiciel (SDK) Visual Studio
   href: installing-the-visual-studio-sdk.md
@@ -124,7 +124,7 @@
           href: walkthrough-creating-a-view-adornment-commands-and-settings-column-guides.md
         - name: Mettre du texte en surbrillance
           href: walkthrough-highlighting-text.md
-        - name: mode Plan
+        - name: Mode Plan
           href: walkthrough-outlining.md
         - name: Affichage d'accolades correspondantes
           href: walkthrough-displaying-matching-braces.md
@@ -512,9 +512,9 @@
               href: registering-verbs-for-file-name-extensions.md
             - name: Gestion des associations de fichiers côte à côte
               href: managing-side-by-side-file-associations.md
-- name: Archive
+- name: Archivage
   items:
-    - name: Archive
+    - name: Archivage
       href: archive.md
     - name: Interfaces héritées dans l’éditeur
       items:
@@ -706,7 +706,7 @@
               href: usedcommands-element.md
             - name: Élément UsedCommand
               href: usedcommand-element.md
-        - name: 'Parent, élément'
+        - name: Élément parent
           href: parent-element.md
         - name: Élément Icon
           href: icon-element.md
@@ -856,7 +856,7 @@
           href: capability-flags.md
         - name: Indicateurs de bits utilisés par des commandes spécifiques
           href: bitflags-used-by-specific-commands.md
-        - name: Codes d'erreur
+        - name: Codes d’erreur
           href: error-codes.md
         - name: Chaînes utilisées comme clés pour rechercher un plug-in de contrôle de code source
           href: strings-used-as-keys-for-finding-a-source-control-plug-in.md

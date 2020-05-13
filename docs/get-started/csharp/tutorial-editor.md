@@ -13,10 +13,10 @@ dev_langs:
 ms.workload:
 - dotnet
 ms.openlocfilehash: 0cacd56ff6b3b3510505ca2752404b55a2771429
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "75590434"
 ---
 # <a name="learn-to-use-the-code-editor"></a>Apprendre à utiliser l’éditeur de code
@@ -58,9 +58,9 @@ Vous allez commencer par créer un fichier et y ajouter du code.
 
 ::: moniker-end
 
-2. Dans le menu **fichier** de la barre de menus, **choisissez nouveau** > **fichier**ou appuyez sur **CTRL**+**N**.
+2. Du menu **Fichier** sur la barre de menu, choisissez **New** > **File**, ou appuyez sur **Ctrl**+**N**.
 
-3. Dans la boîte de dialogue **Nouveau fichier**, sous la catégorie **Général**, choisissez **Classe Visual C#** , puis choisissez **Ouvrir**.
+3. Dans la boîte de dialogue **Nouveau fichier**, sous la catégorie **Général**, choisissez **Classe Visual C#**, puis choisissez **Ouvrir**.
 
    Le nouveau fichier qui s’ouvre dans l’éditeur présente le squelette d’une classe C#. (Notez que nous ne sommes pas obligés de créer un projet Visual Studio complet pour bénéficier de certains des avantages offerts par l’éditeur de code. Tout ce dont nous avons besoin, c’est d’un fichier de code.)
 
@@ -70,7 +70,7 @@ Vous allez commencer par créer un fichier et y ajouter du code.
 
 Visual Studio fournit des *extraits de code* qui vous aident à créer rapidement et facilement les blocs de code couramment utilisés. Ces [extraits de code](../../ide/code-snippets.md) sont disponibles pour plusieurs langages de programmation, y compris C#, Visual Basic et C++. Vous allez maintenant ajouter l’extrait de code `void Main` C# dans votre fichier.
 
-1. Placez votre curseur juste au-dessus de l’accolade fermante finale **}** dans le fichier et tapez les caractères `svm` (ce qui signifie `static void Main`&mdash;ne vous inquiétez pas trop si vous ne savez pas ce que cela veut dire).
+1. Placez votre curseur juste au-dessus de l’attelle finale `static void Main` &mdash;de clôture **-** dans le fichier, et tapez les caractères `svm` (qui signifie ne vous inquiétez pas trop si vous ne savez pas ce que cela signifie).
 
    Une boîte de dialogue contextuelle affiche des informations relatives à l’extrait de code `svm`.
 
@@ -80,7 +80,7 @@ Visual Studio fournit des *extraits de code* qui vous aident à créer rapidemen
 
    La signature de la méthode `static void Main()` est ajoutée au fichier. La méthode [Main()](/dotnet/csharp/programming-guide/main-and-command-args/) est le point d’entrée pour les applications C#.
 
-Les extraits de code disponibles diffèrent en fonction des langages de programmation. Vous pouvez consulter les extraits de code disponibles pour votre langage en choisissant **modifier** > **IntelliSense** > **Insérer un extrait** ou en appuyant sur **CTRL**+**K**, **CTRL**+**X**, puis en choisissant le dossier de votre langue. Pour C#, la liste ressemble à ceci :
+Les extraits de code disponibles diffèrent en fonction des langages de programmation. Vous pouvez regarder les extraits de code disponibles pour votre langue en choisissant **Edit** > **IntelliSense** > **Insert Snippet** ou en appuyant sur **Ctrl**+**K**, **Ctrl**+**X**, puis en choisissant le dossier de votre langue. Pour C#, la liste ressemble à ceci :
 
 ![Liste d’extraits de code C#](../media/tutorial-code-snippet-list.png)
 
@@ -124,17 +124,17 @@ La barre d’outils, qui est la ligne de boutons sous la barre de menus dans Vis
 
 ## <a name="collapse-code-blocks"></a>Réduire les blocs de code
 
-Nous n’avons pas besoin de voir le [constructeur](/dotnet/csharp/programming-guide/classes-and-structs/constructors) vide de `Class1` qui a été généré. Pour plus de lisibilité, nous allons donc réduire ce bloc de code. Choisissez la petite case grise avec le signe moins qui se trouve dans la marge de la première ligne du constructeur. Si vous préférez utiliser le clavier, placez le curseur n’importe où dans le code du constructeur et appuyez sur **Ctrl**+**M**, **Ctrl**+**M**.
+Nous n’avons pas besoin de voir le [constructeur](/dotnet/csharp/programming-guide/classes-and-structs/constructors) vide de `Class1` qui a été généré. Pour plus de lisibilité, nous allons donc réduire ce bloc de code. Choisissez la petite case grise avec le signe moins qui se trouve dans la marge de la première ligne du constructeur. Ou, si vous êtes un utilisateur de clavier, placez le curseur n’importe où dans le code constructeur et appuyez sur **Ctrl**+**M**, **Ctrl**+**M**.
 
 ![Bouton de réduction du mode Plan](../media/tutorial-collapse.png)
 
-Le bloc de code est réduit de façon à afficher uniquement la première ligne, suivie de points de suspension (`...`). Pour redévelopper le bloc de code, cliquez sur la même case grise, qui affiche maintenant un signe plus, ou appuyez sur **Ctrl**+**M**, **Ctrl**+**M**  à nouveau. Cette fonctionnalité, appelée [Mode Plan](../../ide/outlining.md), est très utile pour réduire des méthodes longues ou des classes entières.
+Le bloc de code est réduit de façon à afficher uniquement la première ligne, suivie de points de suspension (`...`). Pour étendre le bloc de code à nouveau, cliquez sur la même boîte grise qui a maintenant un signe plus en elle, ou appuyez sur **Ctrl**+**M**, **Ctrl**+**M** nouveau. Cette fonctionnalité, appelée [Mode Plan](../../ide/outlining.md), est très utile pour réduire des méthodes longues ou des classes entières.
 
 ## <a name="view-symbol-definitions"></a>Afficher les définitions de symbole
 
-L’éditeur Visual Studio facilite l’inspection de la définition d’un type, d’une méthode, etc. L’une des méthodes consiste à accéder au fichier qui contient la définition, par exemple en choisissant **atteindre la définition** ou en appuyant sur **F12** partout où le symbole est référencé. Une autre façon encore plus rapide, sans avoir à déplacer le focus en dehors du fichier dans lequel vous travaillez, consiste à utiliser la fonctionnalité [Aperçu de la définition](../../ide/go-to-and-peek-definition.md#peek-definition). Vous allez afficher un aperçu de la définition du type `string`.
+L’éditeur Visual Studio permet d’inspecter facilement la définition d’un type, d’une méthode, etc. Une façon est de naviguer vers le fichier qui contient la définition, par exemple en choisissant **Go to Definition** ou en appuyant sur **F12** partout où le symbole est référencé. Une autre façon encore plus rapide, sans avoir à déplacer le focus en dehors du fichier dans lequel vous travaillez, consiste à utiliser la fonctionnalité [Aperçu de la définition](../../ide/go-to-and-peek-definition.md#peek-definition). Vous allez afficher un aperçu de la définition du type `string`.
 
-1. Cliquez avec le bouton droit sur une occurrence de `string`, puis choisissez **Aperçu de la définition** dans le menu de contenu. Ou bien, appuyez sur **Alt**+**F12**.
+1. Cliquez avec le bouton droit sur une occurrence de `string`, puis choisissez **Aperçu de la définition** dans le menu de contenu. Ou, appuyez sur **Alt**+**F12**.
 
    Une fenêtre indépendante s’affiche, avec la définition de la classe `String`. Vous pouvez faire défiler le contenu de la fenêtre indépendante, ou même afficher un aperçu de la définition d’un autre type à partir du code en aperçu.
 
@@ -144,7 +144,7 @@ L’éditeur Visual Studio facilite l’inspection de la définition d’un type
 
 ## <a name="use-intellisense-to-complete-words"></a>Utiliser IntelliSense pour compléter des mots
 
-[IntelliSense](../../ide/using-intellisense.md) est une aide précieuse quand vous écrivez du code. Cette fonctionnalité peut afficher des informations sur les membres d’un type disponibles, ou les détails des paramètres des différentes surcharges d’une méthode. Vous pouvez également utiliser IntelliSense pour compléter un mot automatiquement quand vous avez tapé suffisamment de caractères pour lever toute ambiguïté sur le mot. Nous allons ajouter une ligne de code pour imprimer les chaînes ordonnées dans la fenêtre de console, qui est l’emplacement standard pour la sortie du programme.
+[IntelliSense](../../ide/using-intellisense.md) est une ressource inestimable lorsque vous codez. Cette fonctionnalité peut afficher des informations sur les membres d’un type disponibles, ou les détails des paramètres des différentes surcharges d’une méthode. Vous pouvez également utiliser IntelliSense pour compléter un mot automatiquement quand vous avez tapé suffisamment de caractères pour lever toute ambiguïté sur le mot. Nous allons ajouter une ligne de code pour imprimer les chaînes ordonnées dans la fenêtre de console, qui est l’emplacement standard pour la sortie du programme.
 
 1. Sous la variable `query`, commencez à taper le code suivant :
 
@@ -183,7 +183,7 @@ Aucun développeur ne réussit à créer un code parfait dès le départ. L’un
 
    Les deux occurrences de `words` ont été renommées, tout comme la référence à `words` dans le commentaire de code.
 
-## <a name="next-steps"></a>Étapes suivantes :
+## <a name="next-steps"></a>Étapes suivantes
 
 > [!div class="nextstepaction"]
 > [Découvrir les projets et les solutions](../tutorial-projects-solutions.md)
@@ -193,6 +193,6 @@ Aucun développeur ne réussit à créer un code parfait dès le départ. L’un
 - [Extraits de code](../../ide/code-snippets.md)
 - [Naviguer dans le code](../../ide/navigating-code.md)
 - [Mode Plan](../../ide/outlining.md)
-- [Atteindre la définition et l’aperçu de définition](../../ide/go-to-and-peek-definition.md)
+- [Atteindre la définition et Aperçu de la définition](../../ide/go-to-and-peek-definition.md)
 - [Refactorisation](../../ide/refactoring-in-visual-studio.md)
 - [Utiliser IntelliSense](../../ide/using-intellisense.md)

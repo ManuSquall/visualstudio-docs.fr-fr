@@ -11,19 +11,19 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: eeea19b1d2ff4a4d24f27280a48b9ae673406908
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "62832149"
 ---
 # <a name="use-the-cookiecutter-extension"></a>Utiliser l’extension Cookiecutter
 
 [Cookiecutter](https://cookiecutter.readthedocs.io/en/latest/) fournit une interface utilisateur graphique pour découvrir des modèles, des options de modèle d’entrée et créer des projets et des fichiers. Cette extension est incluse avec Visual Studio 2017 et ultérieur, et peut être installée séparément dans les versions antérieures de Visual Studio.
 
-Cookiecutter nécessite Python 3.3 ou version ultérieure (32 bits ou 64 bits) ou Anaconda 3 4.2 ou version ultérieure (32 bits ou 64 bits). Si aucun interpréteur Python approprié n’est disponible, Visual Studio affiche un avertissement. Si vous installez un interpréteur Python pendant l’exécution de Visual Studio, cliquez dans la barre d’outils Cookiecutter sur le bouton **Accueil** pour détecter l’interpréteur qui vient d’être installé. (Consultez [Environnements Python](managing-python-environments-in-visual-studio.md) pour plus d’informations sur les environnements en général.)
+Cookiecutter nécessite Python 3.3 ou version ultérieure (32 bits ou 64 bits) ou Anaconda 3 4.2 ou version ultérieure (32 bits ou 64 bits). Si aucun interpréteur Python approprié n’est disponible, Visual Studio affiche un avertissement. Si vous installez un interprète Python pendant que Visual Studio est en marche, cliquez sur le bouton **Accueil** sur la barre d’outils Cookiecutter pour détecter l’interprète nouvellement installé. (Voir [les environnements Python](managing-python-environments-in-visual-studio.md) pour en savoir plus sur les environnements en général.)
 
-Une fois l’installation effectuée, sélectionnez **Affichage** > **Explorateur Cookiecutter** pour ouvrir sa fenêtre :
+Une fois installé, sélectionnez **View** > **Cookiecutter Explorer** pour ouvrir sa fenêtre :
 
 ![Fenêtre principale Cookiecutter](media/cookiecutter-overview.png)
 
@@ -35,7 +35,7 @@ L’utilisation de Cookiecutter consiste à naviguer et à sélectionner un mod�
 
 La page d’accueil Cookiecutter affiche une liste des modèles que vous pouvez choisir, organisés selon les groupes suivants :
 
-| Regrouper | Description |
+| Groupe | Description |
 | --- | --- |
 | **Installé** | Les modèles qui ont été installés sur votre ordinateur local. Quand un modèle en ligne est utilisé, son dépôt est automatiquement cloné dans un sous-dossier de *~/.cookiecutters*. Vous pouvez supprimer un modèle installé sélectionné en appuyant sur **Suppr**. |
 | **Recommandé** | Les modèles chargés à partir du flux recommandé. Le flux par défaut est organisé par Microsoft. Consultez la section [Options de Cookiecutter](#cookiecutter-options) ci-dessous pour plus d’informations sur la personnalisation du flux. |
@@ -48,7 +48,7 @@ Lorsque vous sélectionnez un modèle suivi par **Suivant**, Cookiecutter fait u
 
 Si vous sélectionnez un modèle à partir des groupes **Recommandé** ou **GitHub**, ou que vous entrez une URL personnalisée dans la zone de recherche et que vous sélectionnez ce modèle, il est cloné et installé sur votre ordinateur local. Si ce modèle a été installé dans une session précédente de Visual Studio, il est automatiquement supprimé et la version la plus récente est clonée.
 
-Si vous sélectionnez un modèle à partir du groupe **Installé** ou si vous saisissez un chemin d’accès au dossier personnalisé dans la zone de recherche et sélectionnez ce modèle, Visual Studio charge ce modèle sans effectuer de clonage.
+Si vous sélectionnez un modèle du groupe **Installé,** ou entrez un chemin de dossier personnalisé dans la boîte de recherche et sélectionnez ce modèle, Visual Studio charge ce modèle sans clonage.
 
 > [!Important]
 > Les modèles Cookiecutter sont clonés dans un seul dossier *~/.cookiecutters*. Chaque sous-dossier est nommé d’après le nom du référentiel git, qui n’inclut pas le nom d’utilisateur GitHub. Des conflits peuvent se produire si vous clonez différents modèles portant le même nom mais provenant de divers auteurs. Dans ce cas, Cookiecutter vous empêche d’écraser le modèle existant avec un autre modèle du même nom. Pour installer l’autre modèle, vous devez d’abord supprimer le modèle existant.
@@ -75,13 +75,13 @@ Une fois les fichiers créés, Cookiecutter propose une option permettant d’ou
 
 ## <a name="cookiecutter-options"></a>Options de Cookiecutter
 
-Les options de Cookiecutter sont accessibles via **Outils** > **Options** > **Cookiecutter** :
+Les options Cookiecutter sont disponibles via **Tools** > **Options** > **Cookiecutter**:
 
 ![Options de Cookiecutter](media/cookiecutter-tools-options.png)
 
 | Option | Description |
 | --- | --- |
-| **URL de flux recommandée** | L’emplacement du flux de modèles recommandé. Il peut s’agir d’une URL ou d’un chemin d’accès à un fichier local. Laissez l’URL vide pour utiliser le flux organisé par Microsoft par défaut. Le flux fournit une simple liste d’emplacements de modèles, séparés par des sauts de ligne. Pour demander à modifier le flux organisé, effectuez une requête d’extraction dans [la source sur GitHub](https://github.com/Microsoft/PTVS/blob/master/Python/Product/Cookiecutter/CookiecutterFeed.txt). |
+| **URL d’alimentation recommandée** | L’emplacement du flux de modèles recommandé. Il peut s’agir d’une URL ou d’un chemin d’accès à un fichier local. Laissez l’URL vide pour utiliser le flux organisé par Microsoft par défaut. Le flux fournit une simple liste d’emplacements de modèles, séparés par des sauts de ligne. Pour demander à modifier le flux organisé, effectuez une requête d’extraction dans [la source sur GitHub](https://github.com/Microsoft/PTVS/blob/master/Python/Product/Cookiecutter/CookiecutterFeed.txt). |
 | **Afficher l’aide** | Contrôle la visibilité de la barre d’informations d’aide en haut de la fenêtre Cookiecutter. |
 
 ## <a name="optimize-cookiecutter-templates-for-visual-studio"></a>Optimiser les modèles Cookiecutter pour Visual Studio
@@ -95,12 +95,12 @@ Le rendu par défaut des variables de modèle varie selon le type de données (c
 
 Il est possible d’améliorer ce rendu en spécifiant des métadonnées supplémentaires dans votre fichier *cookiecutter.json* spécifique à Visual Studio (et ignoré par le CLI Cookiecutter). Toutes les propriétés sont facultatives :
 
-| Property | Description |
+| Propriété | Description |
 | --- | --- |
-| Ajouter des contrôles | Spécifie ce qui apparaît au-dessus de l’éditeur pour la variable, au lieu du nom de la variable. |
+| Étiquette | Spécifie ce qui apparaît au-dessus de l’éditeur pour la variable, au lieu du nom de la variable. |
 | Description | Spécifie l’info-bulle qui apparaît sur le contrôle d’édition, au lieu de la valeur par défaut de cette variable. |
 | URL | Transforme l’étiquette en lien hypertexte, avec une info-bulle qui affiche l’URL. Un clic sur le lien hypertexte ouvre le navigateur par défaut de l’utilisateur pour une redirection vers cette URL. |
-| Sélecteur | Autorise la personnalisation de l’éditeur pour une variable. Les sélecteurs suivants sont actuellement pris en charge :<ul><li>`string`: zone de texte standard, valeur par défaut des chaînes.</li><li>`list`: zone de liste modifiable standard, valeur par défaut des listes.</li><li>`yesno`: zone de liste modifiable permettant de choisir entre `y` et `n`, pour les chaînes.</li><li>`odbcConnection`: zone de texte avec un bouton **...** qui fait apparaître une boîte de dialogue de connexion de base de données.</li></ul> |
+| Sélecteur | Autorise la personnalisation de l’éditeur pour une variable. Les sélecteurs suivants sont actuellement pris en charge :<ul><li>`string` : zone de texte standard, valeur par défaut pour les chaînes.</li><li>`list` : zone de liste modifiable, valeur par défaut pour les listes.</li><li>`yesno` : zone de liste modifiable permettant de choisir entre `y` et `n`, pour les chaînes.</li><li>`odbcConnection`: Boîte de texte avec un bouton **...** qui évoque un dialogue de connexion de base de données.</li></ul> |
 
 Exemple :
 
@@ -156,7 +156,7 @@ Exemple :
 ]
 ```
 
-Les commandes sont spécifiées par nom et doivent utiliser le nom non localisé (en anglais) pour travailler sur les installations localisées de Visual Studio. Vous pouvez tester et détecter les noms de commandes dans la fenêtre **Commande** de Visual Studio.
+Les commandes sont spécifiées par nom et doivent utiliser le nom non localisé (en anglais) pour travailler sur les installations localisées de Visual Studio. Vous pouvez tester et découvrir des noms de commande dans la fenêtre Visual Studio **Command.**
 
 Si vous souhaitez transmettre un seul argument, spécifiez-le en tant que chaîne, comme dans l’exemple précédent.
 
@@ -170,7 +170,7 @@ Si vous n’avez pas besoin de transmettre un argument, laissez une chaîne vide
 ]
 ```
 
-Utilisez un tableau pour plusieurs arguments. Pour les commutateurs, séparez le commutateur et sa valeur en arguments distincts, et utilisez une mise entre guillemets appropriée. Par exemple :
+Utilisez un tableau pour plusieurs arguments. Pour les commutateurs, séparez le commutateur et sa valeur en arguments distincts, et utilisez une mise entre guillemets appropriée. Par exemple :
 
 ```json
 "_visual_studio_post_cmds": [
@@ -187,9 +187,9 @@ Utilisez un tableau pour plusieurs arguments. Pour les commutateurs, séparez le
 
 Les arguments peuvent faire référence à d’autres variables Cookiecutter. Dans les exemples ci-dessus, la variable `_output_folder_path` interne est utilisée pour former un chemin d’accès absolu vers les fichiers générés.
 
-Notez que la commande `Python.InstallProjectRequirements` fonctionne uniquement lorsque vous ajoutez des fichiers à un projet existant. Cette limitation existe, car la commande est traitée par le projet Python dans l’**Explorateur de solutions**, et il n’existe aucun projet pour recevoir le message dans **Explorateur de solutions** - **Affichage des dossiers**. Nous espérons supprimer cette limitation dans une prochaine version (et fournir une meilleure prise en charge de l’**Affichage des dossiers** en général).
+Notez que la commande `Python.InstallProjectRequirements` fonctionne uniquement lorsque vous ajoutez des fichiers à un projet existant. Cette limitation existe, car la commande est traitée par le projet Python dans l’**Explorateur de solutions**, et il n’existe aucun projet pour recevoir le message dans **Explorateur de solutions** - **Affichage des dossiers**. Nous espérons supprimer la limitation gagner une version future (et de fournir un meilleur support **Folder View** en général).
 
-## <a name="troubleshooting"></a>Résolution des problèmes
+## <a name="troubleshooting"></a>Dépannage
 
 ### <a name="error-loading-template"></a>Erreur lors du chargement du modèle
 
@@ -212,13 +212,13 @@ Si le script postbuild est un fichier *.sh*, il est possible qu’il ne soit pas
 
 Échecs de chargement :
 
-- **chrisdev/wagtail-cookiecutter-foundation** (utilise un type booléen dans *cookiecutter.json*)
+- **chrisdev/wagtail-cookiecutter-foundation** (utilise un type boolean dans *cookiecutter.json*)
 - **quintoandar/cookiecutter-android** (aucun dossier de modèle)
 
 Échecs d’exécution :
 
 - **iknite/cookiecutter-ansible-role** (le script Hook post-génération requiert une entrée de console)
-- **benregn/cookiecutter-django-ansible** (erreur Jinja)
+- **benregn/cookiecutter-django-ansible** (erreur de Jinja)
 
 Utilise un interpréteur de commandes (pas irrécupérable) :
 

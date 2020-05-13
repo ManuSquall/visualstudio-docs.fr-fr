@@ -18,10 +18,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: ce87385314ec84c7c0ed9d30c806a6287bb91d9e
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75591331"
 ---
 # <a name="identify-and-customize-keyboard-shortcuts-in-visual-studio"></a>Identifier et personnaliser les raccourcis clavier dans Visual Studio
@@ -43,7 +43,7 @@ Si un raccourci est affecté à une commande du contexte *global* et à aucun au
 
 ## <a name="identify-a-keyboard-shortcut"></a>Identifier un raccourci clavier
 
-1. Dans la barre de menus, choisissez **Outils** > **Options**.
+1. Sur la barre de menu, choisissez **Tools** > **Options**.
 
 2. Développez **Environnement**, puis choisissez **Clavier**.
 
@@ -63,7 +63,7 @@ Si un raccourci est affecté à une commande du contexte *global* et à aucun au
 
 ## <a name="customize-a-keyboard-shortcut"></a>Personnaliser un raccourci clavier
 
-1. Dans la barre de menus, choisissez **Outils** > **Options**.
+1. Sur la barre de menu, choisissez **Tools** > **Options**.
 
 2. Développez **Environnement**, puis choisissez **Clavier**.
 
@@ -88,9 +88,9 @@ Si un raccourci est affecté à une commande du contexte *global* et à aucun au
 6. Dans la zone **Appuyer sur les touches de raccourci**, entrez le raccourci à utiliser.
 
     > [!NOTE]
-    > Vous pouvez créer un raccourci qui associe une lettre avec la touche **Alt**, la touche **Ctrl**, ou les deux. Vous pouvez également créer un raccourci qui associe la touche **Maj** et une lettre avec la touche **Alt**, la touche **Ctrl**, ou les deux.
+    > Vous pouvez créer un raccourci qui combine une lettre avec la clé **Alt,** la clé **Ctrl,** ou les deux. Vous pouvez également créer un raccourci qui combine la clé **Shift** et une lettre avec la clé **Alt,** la clé **Ctrl,** ou les deux.
 
-     Si un raccourci est déjà affecté à une autre commande, il s’affiche dans la zone **Raccourci actuellement utilisé par**. Dans ce cas, choisissez la touche **Retour arrière** pour supprimer ce raccourci avant d’en essayer un autre.
+     Si un raccourci est déjà affecté à une autre commande, il s’affiche dans la zone **Raccourci actuellement utilisé par**. Dans ce cas, choisissez la clé **Backspace** pour supprimer ce raccourci avant d’essayer un autre.
 
     ![Attribuer un autre raccourci à une commande](../ide/media/reassignshortcut.png)
 
@@ -105,11 +105,11 @@ Vous pouvez partager les raccourcis clavier personnalisés en les exportant vers
 
 ### <a name="to-export-only-keyboard-shortcuts"></a>Pour exporter uniquement les raccourcis clavier
 
-1. Dans la barre de menus, choisissez **Outils** > **Importation et exportation de paramètres**.
+1. Sur la barre de menu, choisissez **Outils** > **Import and Export Settings**.
 
 2. Choisissez **Exporter les paramètres d’environnement sélectionnés**, puis choisissez **Suivant**.
 
-3. Sous **Quels paramètres souhaitez-vous exporter ?** , décochez la case **Tous les paramètres**, développez **Options**, puis **Environnement**.
+3. Sous **Quels paramètres souhaitez-vous exporter ?**, décochez la case **Tous les paramètres**, développez **Options**, puis **Environnement**.
 
 4. Cochez la case **Clavier**, puis choisissez **Suivant**.
 
@@ -131,7 +131,7 @@ Par défaut, les raccourcis sont stockés dans un fichier du dossier *%USERPROFI
 
 ### <a name="to-import-only-keyboard-shortcuts"></a>Pour importer uniquement les raccourcis clavier
 
-1. Dans la barre de menus, choisissez **Outils** > **Importation et exportation de paramètres**.
+1. Sur la barre de menu, choisissez **Outils** > **Import and Export Settings**.
 
 2. Choisissez la case d’option **Importer les paramètres d’environnement sélectionnés**, puis **Suivant**.
 
@@ -139,9 +139,9 @@ Par défaut, les raccourcis sont stockés dans un fichier du dossier *%USERPROFI
 
 4. Sous **Mes paramètres**, choisissez le fichier qui contient les raccourcis que vous souhaitez importer, ou choisissez le bouton **Parcourir** pour rechercher le fichier approprié.
 
-5. Sélectionnez **Suivant**.
+5. Choisissez **La prochaine**.
 
-6. Sous **Quels paramètres voulez-vous importer ?** , décochez la case **Tous les paramètres**, développez **Options**, puis **Environnement**.
+6. Sous **Quels paramètres voulez-vous importer ?**, décochez la case **Tous les paramètres**, développez **Options**, puis **Environnement**.
 
 7. Cochez la case **Clavier**, puis choisissez **Terminer**.
 
@@ -149,4 +149,4 @@ Par défaut, les raccourcis sont stockés dans un fichier du dossier *%USERPROFI
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Fonctionnalités d’accessibilité de Visual Studio](../ide/reference/accessibility-features-of-visual-studio.md)
+- [Caractéristiques d’accessibilité de Visual Studio](../ide/reference/accessibility-features-of-visual-studio.md)

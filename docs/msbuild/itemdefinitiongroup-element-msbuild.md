@@ -18,15 +18,16 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c5bfe09fec169495afa5b58a41f7c9f1b9bacfad
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 21e3b6554a9d6e0024cc21fd898962177acfffa7
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75573467"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "77633627"
 ---
 # <a name="itemdefinitiongroup-element-msbuild"></a>ItemDefinitionGroup, élément (MSBuild)
-L’élément `ItemDefinitionGroup` vous permet de définir un ensemble de définitions d’élément, correspondant à des valeurs de métadonnées appliquées par défaut à tous les éléments du projet. ItemDefinitionGroup évite d’avoir à utiliser les tâches [CreateItem](../msbuild/createitem-task.md) et [CreateProperty](../msbuild/createproperty-task.md). Pour plus d’informations, consultez [Définitions d’éléments](../msbuild/item-definitions.md).
+
+L’élément `ItemDefinitionGroup` vous permet de définir un ensemble de définitions d’élément, correspondant à des valeurs de métadonnées appliquées par défaut à tous les éléments du projet. ItemDefinitionGroup évite d’avoir à utiliser les tâches [CreateItem](../msbuild/createitem-task.md) et [CreateProperty](../msbuild/createproperty-task.md). Pour plus d’informations, voir [définitions d’éléments](../msbuild/item-definitions.md).
 
 \<Project> \<ItemDefinitionGroup>
 
@@ -40,6 +41,7 @@ L’élément `ItemDefinitionGroup` vous permet de définir un ensemble de défi
 ```
 
 ## <a name="attributes-and-elements"></a>Attributs et éléments
+
 Les sections suivantes décrivent des attributs, des éléments enfants et des éléments parents.
 
 ### <a name="attributes"></a>Attributs
@@ -52,15 +54,16 @@ Les sections suivantes décrivent des attributs, des éléments enfants et des �
 
 |Élément|Description|
 |-------------|-----------------|
-|[Item](../msbuild/item-element-msbuild.md)|Définit les entrées du processus de génération. Un élément `Item` peut ne contenir aucun élément `ItemDefinitionGroup` ou en contenir plusieurs.|
+|[Article](../msbuild/item-element-msbuild.md)|Définit les entrées du processus de génération. Un élément `ItemDefinitionGroup` peut ne contenir aucun élément `Item` ou en contenir plusieurs.|
 
 ### <a name="parent-elements"></a>Éléments parents
 
 | Élément | Description |
 | - | - |
-| [Projet](../msbuild/project-element-msbuild.md) | Élément racine requis d'un fichier projet [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. |
+| [Projet](../msbuild/project-element-msbuild.md) | Élément racine requis d’un fichier de projet MSBuild. |
 
-## <a name="example"></a>Exemple
+## <a name="example"></a> Exemple
+
 L’exemple de code suivant définit deux éléments de métadonnées, m et n, dans un élément ItemDefinitionGroup. Dans cet exemple, les métadonnées par défaut « m » sont appliquées à l’élément « i », car les métadonnées « m » ne sont pas explicitement définies par l’élément « i ». Cependant, les métadonnées par défaut « n » ne sont pas appliquées à l’élément « i », car les métadonnées « n » sont déjà définies par l’élément « i ».
 
 ```xml
@@ -82,5 +85,6 @@ L’exemple de code suivant définit deux éléments de métadonnées, m et n, d
 ```
 
 ## <a name="see-also"></a>Voir aussi
-- [Informations de référence sur le schéma de fichier projet](../msbuild/msbuild-project-file-schema-reference.md)
+
+- [Référence du schéma de fichier de projet](../msbuild/msbuild-project-file-schema-reference.md)
 - [Éléments](../msbuild/msbuild-items.md)

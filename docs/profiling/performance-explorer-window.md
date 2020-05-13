@@ -14,10 +14,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: a365892f606da90c608e43b7ccce73b902ec0e98
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74772437"
 ---
 # <a name="performance-explorer-window"></a>Fenêtre Explorateur de performances
@@ -52,6 +52,6 @@ La fenêtre **Explorateur de performances** contient un contrôle d’arborescen
 
 ## <a name="see-also"></a>Voir aussi
 
-[Vues d’ensemble](../profiling/overviews-performance-tools.md)
-[Configuration de sessions de performances](../profiling/configuring-performance-sessions.md)
-[Contrôle de la collecte de données](../profiling/controlling-data-collection.md)
+[Aperçus](../profiling/overviews-performance-tools.md)
+[Configuring Performance Sessions](../profiling/configuring-performance-sessions.md)
+[Controlling Data Collection](../profiling/controlling-data-collection.md)

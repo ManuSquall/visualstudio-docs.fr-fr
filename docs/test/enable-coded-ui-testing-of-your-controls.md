@@ -8,10 +8,10 @@ ms.workload:
 - multiple
 author: mikejo5000
 ms.openlocfilehash: feb7785678be4b6f2c26bbcff93bf7d3e6632116
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75589615"
 ---
 # <a name="enable-coded-ui-testing-of-your-controls"></a>Activer les tests codés de l’interface utilisateur de vos contrôles
@@ -171,7 +171,7 @@ Lorsque Visual Studio enregistre un test, il capture chaque événement de souri
 
 1. Ajoutez le filtre d'action à la méthode <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITestExtensionPackage.GetService%2A> de votre package d'extension.
 
-1. Créez vos fichiers binaires et copiez-les sur *%ProgramFiles%\Common Files\Microsoft Shared\VSTT\10.0\UITestExtensionPackages*.
+1. Construisez vos binaires et copiez-les à *%ProgramFiles% -Common Files-Microsoft Shared-VSTT-10.0-UITestExtensionPackages*.
 
 > [!NOTE]
 > Le filtre d'action ne dépend pas de l'implémentation de l'accessibilité ou du fournisseur de propriétés.
@@ -182,7 +182,7 @@ Votre fournisseur de propriété et votre filtre d’action sont implémentés d
 
 ### <a name="to-debug-your-property-provider-or-action-filter"></a>Pour déboguer votre fournisseur de propriétés ou filtre d'action
 
-1. Générez la version de débogage de votre package d’extension, puis copiez les fichiers *.dll* et *.pdb* dans *%ProgramFiles%\Common Files\Microsoft Shared\VSTT\10.0\UITestExtensionPackages*.
+1. Construisez la version de débog de votre package d’extension copiez les fichiers *.dll* et *.pdb* à *%ProgramFiles% -Fichiers communs- Microsoft Partagés VSTT-10.0-UITestExtensionPackages*.
 
 2. Exécutez votre application (pas dans le débogueur).
 
@@ -199,4 +199,4 @@ Votre fournisseur de propriété et votre filtre d’action sont implémentés d
 ## <a name="see-also"></a>Voir aussi
 
 - <xref:System.Windows.Forms.AccessibleObject>
-- [Utiliser l’automatisation de l’interface utilisateur pour tester votre code](../test/use-ui-automation-to-test-your-code.md)
+- [Utilisez l’automatisation de l’interface utilisateur pour tester votre code](../test/use-ui-automation-to-test-your-code.md)

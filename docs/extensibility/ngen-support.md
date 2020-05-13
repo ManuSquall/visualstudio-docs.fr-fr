@@ -1,50 +1,50 @@
 ---
-title: Prise en charge de NGen dans VSIX v3 | Microsoft Docs
+title: Soutien Ngen dans VSIX v3 Microsoft Docs
 ms.date: 11/09/2016
 ms.topic: conceptual
 ms.assetid: 1472e884-c74e-4c23-9d4a-6d8bdcac043b
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 24f1b0a26875bbbf8dfc4ac7db1049f7309d9aa2
-ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
+ms.openlocfilehash: cb75b9256ca937106235fa7a7d66d9cec71c9c60
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "67891115"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80702400"
 ---
 # <a name="ngen-support-in-vsix-v3"></a>Prise en charge de Ngen dans VSIX v3
 
-Avec Visual Studio 2017 et le nouveau v3 VSIX (version 3) manifeste d’extension format, extension les développeurs peuvent désormais « ngen » leurs assemblys au moment de l’installation.
+Avec Visual Studio 2017 et le nouveau format manifeste d’extension VSIX v3 (version 3), les développeurs d’extension peuvent désormais « ngen » leurs assemblages au moment de l’installation.
 
-Voici un extrait à partir de MSDN qui explique quelles « ngen » fait :
+Voici un extrait de MSDN qui explique ce que «ngen» fait:
 
->Le Générateur d’images natives (*Ngen.exe*) est un outil qui améliore les performances des applications managées. *Ngen.exe* crée des images natives, qui sont des fichiers contenant le code machine compilé spécifique au processeur et les installe dans le cache des images natives sur l’ordinateur local. Le runtime peut utiliser des images natives du cache plutôt que le compilateur juste-à-temps (JIT) pour compiler l'assembly d'origine.
+>Le native Image Generator (*Ngen.exe*) est un outil qui améliore les performances des applications gérées. *Ngen.exe* crée des images natives, qui sont des fichiers contenant le code machine spécifique au processeur compilé, et les installe dans le cache d’image indigène sur l’ordinateur local. Le runtime peut utiliser des images natives du cache plutôt que le compilateur juste-à-temps (JIT) pour compiler l'assembly d'origine.
 >
->à partir de [Ngen.exe (Native Image Generator)](/dotnet/framework/tools/ngen-exe-native-image-generator)
+>de [Ngen.exe (Native Image Generator)](/dotnet/framework/tools/ngen-exe-native-image-generator)
 
-Dans l’ordre de « ngen » un assembly, l’extension VSIX doit être installé « par instance par ordinateur ». Cela peut être activée en cochant la case à cocher « tous les utilisateurs » le `extension.vsixmanifest` concepteur :
+Pour "ngen" un assemblage, le VSIX doit être installé "par instance par machine". Cela peut être activé en vérifiant la case `extension.vsixmanifest` à cocher "tous les utilisateurs" dans le concepteur:
 
-![Vérifiez tous les utilisateurs](media/check-all-users.png)
+![vérifier tous les utilisateurs](media/check-all-users.png)
 
-## <a name="how-to-enable-ngen"></a>L’activation de Ngen
+## <a name="how-to-enable-ngen"></a>Comment permettre à Ngen
 
-Pour activer ngen pour un assembly, vous pouvez utiliser la **propriétés** fenêtre dans Visual Studio.
+Pour activer ngen pour un assemblage, vous pouvez utiliser la fenêtre **Propriétés** dans Visual Studio.
 
-Il existe 4 propriétés qui peuvent être définies :
+Il ya 4 propriétés qui peuvent être définies:
 
-1. **Ngen** (booléen) - si la valeur est true, le programme d’installation de Visual Studio sera « ngen » de l’assembly.
-2. **Application Ngen** (chaîne) - Ngen offre la possibilité d’utiliser d’une application *app.config* fichier afin de résoudre les dépendances d’assembly. Cette valeur doit être définie à une application dont la propriété *app.config* vous souhaitez utiliser (par rapport au répertoire d’installation de Visual Studio).
-3. **Ngen Architecture** (énumération) - l’architecture de compiler en mode natif votre assembly. Les options sont : un. NotSpecified b. X86 c. X64 d. Tous
-4. **Priorité de Ngen** (entier compris entre 1 et 3) - niveau de la priorité de Ngen est décrit à l’adresse [les niveaux de priorité de Ngen.exe](/dotnet/framework/tools/ngen-exe-native-image-generator#priority-levels).
+1. **Ngen** (Boolean) - Si c’est vrai, l’installateur Visual Studio va "ngen" l’assemblage.
+2. **Application Ngen** (corde) - Ngen offre la possibilité d’utiliser le fichier *app.config* d’une application afin de résoudre les dépendances d’assemblage. Cette valeur doit être définie sur une application dont *l’app.config* vous souhaitez utiliser (par rapport à l’annuaire d’installation Visual Studio).
+3. **Ngen Architecture** (enum) - L’architecture pour compiler votre assemblage. Les options sont: a. NotSpecified b. X86 c. X64 d. Tous
+4. **Ngen Priority** (integer entre 1 et 3) - Le niveau de priorité Ngen est documenté aux [niveaux de priorité Ngen.exe](/dotnet/framework/tools/ngen-exe-native-image-generator#priority-levels).
 
-Voici un aperçu de la **propriétés** fenêtre en action :
+Voici un aperçu de la fenêtre **Propriétés** en action :
 
-![Ngen dans les propriétés](media/ngen-in-properties.png)
+![ngen dans les propriétés](media/ngen-in-properties.png)
 
-Cette opération ajoute des métadonnées à la référence de projet à l’intérieur du projet VSIX *.csproj* fichier :
+Cela ajoutera des métadonnées à la référence du projet à l’intérieur du fichier *.csproj* du projet VSIX :
 
 ```xml
  <ProjectReference Include="..\ClassLibrary1\ClassLibrary1.csproj">
@@ -62,4 +62,4 @@ Cette opération ajoute des métadonnées à la référence de projet à l’int
 
 ## <a name="extra-information"></a>Informations supplémentaires
 
-Les modifications de Concepteur de propriété s’appliquent aux plus que les références de projet ; Vous pouvez définir les métadonnées de Ngen pour les éléments à l’intérieur de votre projet (en utilisant les mêmes méthodes décrites ci-dessus) tant que les éléments sont des assemblys .NET.
+Les modifications apportées au concepteur de propriétés s’appliquent à plus que de simples références de projet; vous pouvez définir les métadonnées Ngen pour les éléments à l’intérieur de votre projet ainsi (en utilisant les mêmes méthodes décrites ci-dessus) tant que les éléments sont des assemblages .NET.

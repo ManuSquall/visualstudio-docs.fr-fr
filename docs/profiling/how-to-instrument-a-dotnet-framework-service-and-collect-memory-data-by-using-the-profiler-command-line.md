@@ -1,5 +1,5 @@
 ---
-title: 'Ligne de commande du profileur : instrument .NET Service, récupérer des données de mémoire'
+title: 'Ligne de commande Profiler : Instrument .NET service, obtenir des données de mémoire'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 2fa072fc-05fe-4420-99c0-51d2ea3ac4ce
@@ -10,10 +10,10 @@ monikerRange: vs-2017
 ms.workload:
 - dotnet
 ms.openlocfilehash: 8697f1451e3d528ff27beb2467ff7758e04267cc
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74775494"
 ---
 # <a name="how-to-instrument-a-net-framework-service-and-collect-memory-data-by-using-the-profiler-command-line"></a>Guide pratique pour instrumenter un service .NET Framework et collecter des données de mémoire en utilisant la ligne de commande du profileur
@@ -25,7 +25,7 @@ Cet article explique comment utiliser les outils en ligne de commande des Outils
 > [!NOTE]
 > Vous ne pouvez pas profiler un service avec la méthode d’instrumentation si le service ne peut pas être redémarré après le démarrage de l’ordinateur, comme un service qui démarre au démarrage du système d’exploitation.
 >
-> Pour obtenir le chemin d’accès des outils de profilage, voir [Spécifier le chemin d’accès des outils en ligne de commande](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md). Les versions 64 bits et 32 bits des outils sont disponibles sur les ordinateurs 64 bits. Pour utiliser les outils en ligne de commande du profileur, vous devez ajouter le chemin des outils à la variable d’environnement PATH dans la fenêtre d’invite de commandes, ou l’ajouter à la commande.
+> Pour obtenir le chemin des outils de profilage, consultez [Spécifier le chemin des outils en ligne de commande](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md). Les versions 64 bits et 32 bits des outils sont disponibles sur les ordinateurs 64 bits. Pour utiliser les outils en ligne de commande du profileur, vous devez ajouter le chemin des outils à la variable d’environnement PATH dans la fenêtre d’invite de commandes, ou l’ajouter à la commande.
 
 ## <a name="start-the-profiling-session"></a>Démarrer la session de profilage
  Pour collecter des données de performances auprès d’un service .NET Framework, vous utilisez l’outil [VSPerfCLREnv.cmd](../profiling/vsperfclrenv.md) pour initialiser les variables d’environnement appropriées et l’outil [VSInstr.exe](../profiling/vsinstr.md) pour créer une copie instrumentée du fichier binaire du service.
@@ -38,15 +38,15 @@ Cet article explique comment utiliser les outils en ligne de commande des Outils
 
 #### <a name="to-begin-profiling-a-net-framework-service"></a>Pour démarrer le profilage d’un service .NET Framework
 
-1. Ouvrez une fenêtre d’invite de commandes.
+1. Ouvrir une fenêtre d’invite de commandes.
 
 2. Utilisez l’outil **VSInstr** pour générer une version instrumentée du fichier binaire du service.
 
 3. Utilisez le Gestionnaire de contrôle des services pour remplacer le fichier binaire d’origine par la version instrumentée. Vérifiez que le type de démarrage du service est défini sur Manuel.
 
-4. Initialisez les variables d’environnement de profilage. Type :
+4. Initialisez les variables d’environnement de profilage. Tapez :
 
-    **VSPerfClrEnv** { **/globaltracegc** &#124; **/globaltracegclife**}
+    **VSPerfClrEnv** {**/globaltracegc** &#124; **/globaltracegclife**}
 
    - **/globaltracegc** et **/globaltracegclife** activent la collecte des données d’allocation de mémoire et de durée de vie des objets.
 
@@ -57,15 +57,15 @@ Cet article explique comment utiliser les outils en ligne de commande des Outils
 
 5. Redémarrez l'ordinateur.
 
-6. Ouvrez une fenêtre d’invite de commandes.
+6. Ouvrir une fenêtre d’invite de commandes.
 
-7. Démarrer le profileur. Type :
+7. Démarrez le profileur. Tapez :
 
-    **VSPerfCmd**  [/start](../profiling/start.md) **:trace**  [/output](../profiling/output.md) **:** `OutputFile` [`Options`]
+    **VSPerfCmd**[/start](../profiling/start.md) **:trace**[/output](../profiling/output.md) **:** `OutputFile` ]`Options`    
 
    - L’option **/start: contention** initialise le profileur.
 
-   - L’option **/output:** `OutputFile` est nécessaire avec **/start**. `OutputFile` spécifie le nom et l’emplacement du fichier de données profilage (.vsp).
+   - La **/sortie:** `OutputFile` option est nécessaire avec **/démarrer**. `OutputFile` spécifie le nom et l’emplacement du fichier de données profilage (.vsp).
 
      Vous pouvez utiliser l’une des options suivantes avec l’option **/start:sample**.
 
@@ -74,18 +74,18 @@ Cet article explique comment utiliser les outils en ligne de commande des Outils
 
    | Option | Description |
    | - | - |
-   | [/user](../profiling/user-vsperfcmd.md) **:** [`Domain` **\\** ]`UserName` | Spécifie le nom de domaine et d’utilisateur du compte propriétaire du processus de travail ASP.NET. Cette option est nécessaire si le processus s’exécute sous le compte d’un utilisateur autre que l’utilisateur connecté. Le propriétaire du processus est répertorié dans la colonne Nom d’utilisateur, sous l’onglet Processus du gestionnaire des tâches de Windows. |
-   | [/crosssession](../profiling/crosssession.md) | Active le profilage des processus dans d’autres sessions ouvertes. Cette option est nécessaire si l’application ASP.NET s’exécute dans une autre session. L’ID de session est répertoriée dans la colonne **ID de session**, sous l’onglet **Processus** du Gestionnaire des tâches de Windows. **/CS** peut être spécifié comme abréviation de **/crosssession**. |
-   | [/waitstart](../profiling/waitstart.md)[ **:** `Interval`] | Spécifie le nombre de secondes à attendre que le profileur s’initialise avant qu’il retourne une erreur. Si `Interval` n’est pas spécifié, le profileur attend indéfiniment. Par défaut, **/start** retourne immédiatement. |
+   | [/utilisateur](../profiling/user-vsperfcmd.md) **:**:`Domain`**\\**[ ]`UserName` | Spécifie le nom de domaine et d’utilisateur du compte propriétaire du processus de travail ASP.NET. Cette option est nécessaire si le processus s’exécute sous le compte d’un utilisateur autre que l’utilisateur connecté. Le propriétaire du processus est répertorié dans la colonne Nom d’utilisateur, sous l’onglet Processus du gestionnaire des tâches de Windows. |
+   | [/croix](../profiling/crosssession.md) | Active le profilage des processus dans d’autres sessions ouvertes. Cette option est nécessaire si l’application ASP.NET s’exécute dans une autre session. L’id de session est répertorié dans la colonne **d’identification de session** sur l’onglet **Processus** de Windows Task Manager. **/CS** peut être spécifié comme abréviation de **/crosssession**. |
+   | [/waitstart](../profiling/waitstart.md)[**:**`Interval`] | Spécifie le nombre de secondes à attendre que le profileur s’initialise avant qu’il retourne une erreur. Si `Interval` n’est pas spécifié, le profileur attend indéfiniment. Par défaut, **/start** retourne immédiatement. |
    | [/globaloff](../profiling/globalon-and-globaloff.md) | Pour démarrer le profileur après avoir suspendu la collecte de données, ajoutez l’option **/globaloff** sur la ligne de commande **/start**. Utilisez **/globalon** pour reprendre le profilage. |
-   | [/counter](../profiling/counter.md) **:** `Config` | Collecte des informations à partir du compteur de performances du processeur spécifié dans la configuration. Les informations de compteur sont ajoutées aux données collectées à chaque événement de profilage. |
-   | [/wincounter](../profiling/wincounter.md) **:** `WinCounterPath` | Spécifie le compteur de performances Windows dont les données doivent être collectées au cours du profilage. |
-   | [/automark](../profiling/automark.md) **:** `Interval` | À utiliser avec **/wincounter** uniquement. Spécifie le nombre de millisecondes écoulées entre les événements de collecte du compteur de performances Windows. La valeur par défaut est de 500 ms. |
-   | [/events](../profiling/events-vsperfcmd.md) **:** `Config` | Spécifie l’événement du Suivi d’événements pour Windows (ETW) qui doit être collecté au cours du profilage. Les événements ETW sont collectés dans un fichier (.*etl*) distinct. |
+   | [/contre](../profiling/counter.md) **:**`Config` | Recueille des informations à partir du compteur de performance du processeur spécifié dans Config. Des contre-informations sont ajoutées aux données recueillies lors de chaque événement de profilage. |
+   | [/wincounter](../profiling/wincounter.md) **:**`WinCounterPath` | Spécifie le compteur de performances Windows dont les données doivent être collectées au cours du profilage. |
+   | [/automark](../profiling/automark.md) **:**`Interval` | À utiliser avec **/wincounter** uniquement. Spécifie le nombre de millisecondes écoulées entre les événements de collecte du compteur de performances Windows. La valeur par défaut est de 500 ms. |
+   | [/événements](../profiling/events-vsperfcmd.md) **:**`Config` | Spécifie l’événement du Suivi d’événements pour Windows (ETW) qui doit être collecté au cours du profilage. Les événements ETW sont collectés dans un autre (.* etl*) fichier. |
 
 8. Si nécessaire, démarrez le service.
 
-9. Attachez le profileur au service. Type :
+9. Attachez le profileur au service. Tapez :
 
      **VSPerfCmd /attach:** `PID`&#124;`ProcessName`
 
@@ -96,13 +96,13 @@ Cet article explique comment utiliser les outils en ligne de commande des Outils
 
 #### <a name="to-start-and-stop-data-collection"></a>Pour démarrer et arrêter la collecte de données
 
-- Les paires d’options **VSPerfCmd** suivantes permettent de démarrer et d’arrêter la collecte des données. Spécifiez chaque option sur une ligne de commande distincte. Vous pouvez activer et désactiver la collecte de données à plusieurs reprises.
+- Les paires suivantes d’options **VSPerfCmd** démarrent et arrêtent la collecte de données. Spécifiez chaque option sur une ligne de commande distincte. Vous pouvez activer et désactiver la collecte de données à plusieurs reprises.
 
     |Option|Description|
     |------------|-----------------|
-    |[/globalon /globaloff](../profiling/globalon-and-globaloff.md)|Démarre ( **/globalon**) ou arrête ( **/globaloff**) la collecte des données pour tous les processus.|
-    |[/processon](../profiling/processon-and-processoff.md) **:** `PID` [/processoff](../profiling/processon-and-processoff.md) **:** `PID`|Démarre ( **/processon**) ou arrête ( **/processoff**) la collecte des données pour le processus spécifié par l’ID de processus (`PID`).|
-    |[/threadon](../profiling/threadon-and-threadoff.md) **:** `TID` [/threadoff](../profiling/threadon-and-threadoff.md) **:** `TID`|Démarre ( **/threadon**) ou arrête ( **/threadoff**) la collecte des données pour le thread spécifié par l’ID de thread (`TID`).|
+    |[/globalon /globaloff](../profiling/globalon-and-globaloff.md)|Démarre (**/globalon**) ou arrête (**/globaloff**) la collecte des données pour tous les processus.|
+    |[/processon](../profiling/processon-and-processoff.md) **:** `PID` [/processoff](../profiling/processon-and-processoff.md) **:**`PID`|Démarre (**/processon**) ou arrête (**/processoff**) la collecte des données pour le processus spécifié par l’ID de processus (`PID`).|
+    |[/threadon](../profiling/threadon-and-threadoff.md) **:** `TID` [/threadoff](../profiling/threadon-and-threadoff.md) **:**`TID`|Démarre (**/threadon**) ou arrête (**/threadoff**) la collecte des données pour le thread spécifié par l’ID de thread (`TID`).|
 
 ## <a name="end-the-profiling-session"></a>Arrêter la session de profilage
  Pour mettre fin à une session de profilage, fermez l’application qui exécute le composant instrumenté, puis démarrez l’option **VSPerfCmd** [/shutdown](../profiling/shutdown.md) pour désactiver le profileur et fermer le fichier de données de profilage. La commande **VSPerfClrEnv /globaloff** efface les variables d’environnement du profilage.
@@ -111,11 +111,11 @@ Cet article explique comment utiliser les outils en ligne de commande des Outils
 
 1. Arrêtez le service à partir du Gestionnaire de contrôle des services.
 
-2. Fermez le profileur. Type :
+2. Fermez le profileur. Tapez :
 
      **VSPerfCmd /shutdown**
 
-3. Quand vous avez terminé le profilage, effacez les variables d’environnement de profilage. Type :
+3. Quand vous avez terminé le profilage, effacez les variables d’environnement de profilage. Tapez :
 
      **VSPerfClrEnv /globaloff**
 
@@ -125,4 +125,4 @@ Cet article explique comment utiliser les outils en ligne de commande des Outils
 
 ## <a name="see-also"></a>Voir aussi
 - [Profiler des services](../profiling/command-line-profiling-of-services.md)
-- [Vues des données de la mémoire .NET](../profiling/dotnet-memory-data-views.md)
+- [vues de données de mémoire .NET](../profiling/dotnet-memory-data-views.md)

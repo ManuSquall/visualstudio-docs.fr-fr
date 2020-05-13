@@ -4,17 +4,17 @@ description: Découvrez comment configurer les différents paramètres de l’As
 author: ghogen
 manager: jillfra
 assetId: 7d8f1ac9-e439-47e0-a183-0642c4ea1920
-ms.custom: seodec18
+ms.custom: vs-azure
 ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 03/21/2017
 ms.author: ghogen
-ms.openlocfilehash: 312a7e072ff5dfbe1a462abb68c8a74a42823e82
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: bc3c58343c699833a5a12eee6f79c023f57a2e85
+ms.sourcegitcommit: 59a8732dc563242590f7c6ccf4ced6c6d195533c
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62550329"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81489647"
 ---
 # <a name="using-the-visual-studio-publish-azure-application-wizard"></a>Utilisation de l’Assistant Publication d’application Azure dans Visual Studio
 
@@ -83,7 +83,7 @@ Le compte de stockage Azure stocke le package pour le déploiement de l'applicat
 
 ![Paramètres de déploiement](./media/vs-azure-tools-publish-azure-application-wizard/deployment-settings.png)
 
-**Activer IntelliTrace** : spécifiez si vous souhaitez activer IntelliTrace. Avec IntelliTrace, vous pouvez enregistrer des informations de débogage détaillées pour une instance de rôle exécutée dans Azure. Si vous devez identifier la cause d’un problème, utilisez les journaux IntelliTrace pour exécuter pas à pas votre code à partir de Visual Studio comme s’il était exécuté dans Azure. Pour plus d’informations sur l’utilisation d’IntelliTrace, consultez l’article [Débogage d’un service cloud publié avec IntelliTrace et Visual Studio](./vs-azure-tools-intellitrace-debug-published-cloud-services.md).
+**Activer IntelliTrace** : spécifiez si vous souhaitez activer IntelliTrace. Avec IntelliTrace, vous pouvez enregistrer des informations de débogage détaillées pour une instance de rôle exécutée dans Azure. Si vous devez identifier la cause d’un problème, utilisez les journaux d’activité IntelliTrace pour exécuter pas à pas votre code à partir de Visual Studio comme s’il était exécuté dans Azure. Pour plus d’informations sur l’utilisation d’IntelliTrace, consultez l’article [Débogage d’un service cloud publié avec IntelliTrace et Visual Studio](./vs-azure-tools-intellitrace-debug-published-cloud-services.md).
 
 **Activer le profilage** : spécifiez si vous souhaitez activer le profilage des performances. Le profileur Visual Studio vous permet d’obtenir une analyse approfondie des ressources de calcul nécessaires à l’exécution de votre service cloud. Pour plus d’informations sur l’utilisation du profileur Visual Studio, consultez l’article [Test des performances d’un service cloud](./vs-azure-tools-performance-profiling-cloud-services.md).
 
@@ -99,14 +99,14 @@ Diagnostics vous permet de résoudre les problèmes d’un service cloud Azure (
 
 ![Récapitulatif](./media/vs-azure-tools-publish-azure-application-wizard/summary.png)
 
-**Profil cible** : vous pouvez choisir de créer un profil de publication à partir des paramètres que vous avez choisis. Par exemple, vous pouvez créer un profil pour un environnement de test et un autre pour la production. Pour enregistrer ce profil, sélectionnez l’icône **Enregistrer** . L'Assistant crée le profil et l'enregistre dans le projet Visual Studio. Pour modifier le nom du profil, ouvrez la liste **Profil cible**, puis sélectionnez **&lt;Gérer...&gt;**.
+**Profil cible** : vous pouvez choisir de créer un profil de publication à partir des paramètres que vous avez choisis. Par exemple, vous pouvez créer un profil pour un environnement de test et un autre pour la production. Pour enregistrer ce profil, choisissez l'icône **Enregistrer**. L'Assistant crée le profil et l'enregistre dans le projet Visual Studio. Pour modifier le nom du profil, ouvrez la liste **Profil cible**, puis sélectionnez **&lt;Gérer...&gt;**.
 
    > [!Note]
    > Le profil de publication s'affiche dans l'Explorateur de solutions dans Visual Studio, et les paramètres du profil sont écrits dans un fichier portant l'extension .azurePubxml. Les paramètres sont enregistrés en tant qu'attributs de balises XML.
 
 ## <a name="publishing-your-application"></a>Publication de votre application
 
-Une fois que vous avez configuré tous les paramètres de déploiement de votre projet, sélectionnez **Publier** en bas de la boîte de dialogue. Vous pouvez surveiller l'état du processus dans la fenêtre **Sortie** dans Visual Studio.
+Une fois que vous avez configuré tous les paramètres de déploiement de votre projet, sélectionnez **Publier** en bas de la boîte de dialogue. Vous pouvez surveiller l'état du processus dans la fenêtre **Sortie** de Visual Studio.
 
 ## <a name="next-steps"></a>Étapes suivantes
 
@@ -114,10 +114,10 @@ Une fois que vous avez configuré tous les paramètres de déploiement de votre 
 
 - [Publication d’un service cloud à l’aide des outils Azure](./vs-azure-tools-publishing-a-cloud-service.md)
 
-- [Débogage d’un service cloud publié avec IntelliTrace et Visual Studio](./vs-azure-tools-intellitrace-debug-published-cloud-services.md)
+- [Débogage d’un service cloud Azure publié avec Visual Studio et IntelliTrace](./vs-azure-tools-intellitrace-debug-published-cloud-services.md)
 
 - [Test des performances d’un service cloud](./vs-azure-tools-performance-profiling-cloud-services.md)
 
-- [Configuration de Diagnostics pour les services cloud et les machines virtuelles Azure](./vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines.md)
+- [Configurer les diagnostics pour azure Cloud Services et Virtual Machines](./vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines.md).
 
-- [Présentation d’Application Insights](/azure/application-insights/app-insights-overview)
+- [Qu’est-ce que Les aperçus d’applications?](/azure/application-insights/app-insights-overview)

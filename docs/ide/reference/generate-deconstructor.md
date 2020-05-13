@@ -10,10 +10,10 @@ dev_langs:
 ms.workload:
 - dotnet
 ms.openlocfilehash: 5a3a89d15d05b44575fede98d3043d706b24c1d9
-ms.sourcegitcommit: 614d5b99576ea27a41957cd94062dc95cbd29c1c
-ms.translationtype: HT
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/10/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "65531885"
 ---
 # <a name="generate-a-deconstructor-in-visual-studio"></a>Générer un constructeur dans Visual Studio
@@ -22,11 +22,11 @@ Cette génération de code s’applique à :
 
 - C#
 
-**Quoi :** Permet de générer immédiatement le stub de méthode pour un nouveau déconstructeur.
+**Quoi :** Vous permet de générer immédiatement le talon de méthode pour un nouveau déconstructeur.
 
-**Quand :** Vous souhaitez déconstruire votre type correctement et automatiquement.
+**Quand :** Vous souhaitez déconstruire correctement votre type automatiquement.
 
-**Pourquoi :** Vous pouvez taper manuellement un déconstructeur, mais cette fonctionnalité génère le stub pour vous avec les paramètres de sortie appropriés.
+**Pourquoi:** Vous pouvez taper manuellement un déconstructeur, mais cette fonctionnalité génère le talon pour vous avec les paramètres corrects.
 
 ## <a name="generate-a-deconstructor"></a>Générer un déconstructeur
 
@@ -34,7 +34,7 @@ Cette génération de code s’applique à :
 
    ![Erreur liée à un déconstructeur manquant](media/deconstruct.png)
 
-2. Effectuez l’une des étapes suivantes :
+2. Exécutez l’une des étapes suivantes :
 
    - **Clavier**
       - Placez le curseur dans votre déclaration, puis sélectionnez Ctrl+. pour afficher le menu **Actions rapides et refactorisations**.
@@ -50,6 +50,6 @@ Cette génération de code s’applique à :
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Génération de code](../code-generation-in-visual-studio.md)
-- [Aperçu des changements](../../ide/preview-changes.md)
+- [Génération de codes](../code-generation-in-visual-studio.md)
+- [Aperçu des modifications](../../ide/preview-changes.md)
 - [Conseils pour les développeurs .NET](../csharp-developer-productivity.md)

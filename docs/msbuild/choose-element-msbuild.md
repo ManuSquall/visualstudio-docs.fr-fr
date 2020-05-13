@@ -19,17 +19,18 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 966e942fbd32841bbfe0a429c8623da09dcbbd0f
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: c4f699b4ffc9372af0c803d094390544932d652b
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75593367"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "77634472"
 ---
 # <a name="choose-element-msbuild"></a>Choose, élément (MSBuild)
+
 Évalue des éléments enfants pour sélectionner un ensemble d’éléments `ItemGroup` et/ou d’éléments `PropertyGroup` à évaluer.
 
- \<projet > \<choisissez > \<lorsque > \<choisir >... \<>...
+ \<Projet> \<Choisissez> \<Quand> \<choisissez> ... \<Sinon,> \<choisissez> ...
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -41,30 +42,34 @@ ms.locfileid: "75593367"
 ```
 
 ## <a name="attributes-and-elements"></a>Attributs et éléments
+
  Les sections suivantes décrivent des attributs, des éléments enfants et des éléments parents.
 
 ### <a name="attributes"></a>Attributs
+
  Aucun.
 
 ### <a name="child-elements"></a>Éléments enfants
 
 |Élément|Description|
 |-------------|-----------------|
-|[Otherwise](../msbuild/otherwise-element-msbuild.md)|Élément facultatif.<br /><br /> Spécifie le bloc de code `PropertyGroup` et les éléments `ItemGroup` à exécuter si les conditions de tous les éléments `When` correspondent à la valeur `false`. Un élément `Choose` peut ne contenir aucun élément `Otherwise` ou en contenir un seul qui doit figurer en dernière position.|
-|[When](../msbuild/when-element-msbuild.md)|Élément requis.<br /><br /> Spécifie un bloc de code que l’élément `Choose` peut sélectionner. Un élément `Choose` peut contenir un ou plusieurs éléments `When`.|
+|[Sinon](../msbuild/otherwise-element-msbuild.md)|Élément facultatif.<br /><br /> Spécifie le bloc de code `PropertyGroup` et les éléments `ItemGroup` à exécuter si les conditions de tous les éléments `When` correspondent à la valeur `false`. Un élément `Choose` peut ne contenir aucun élément `Otherwise` ou en contenir un seul qui doit figurer en dernière position.|
+|[Quand](../msbuild/when-element-msbuild.md)|Élément requis.<br /><br /> Spécifie un bloc de code que l’élément `Choose` peut sélectionner. Un élément `Choose` peut contenir un ou plusieurs éléments `When`.|
 
 ### <a name="parent-elements"></a>Éléments parents
 
 | Élément | Description |
 | - | - |
-| [Otherwise](../msbuild/otherwise-element-msbuild.md) | Spécifie le bloc de code à exécuter si les conditions de tous les éléments `When` correspondent à la valeur `false`. |
-| [Project](../msbuild/project-element-msbuild.md) | Élément racine requis d'un fichier projet [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] . |
-| [When](../msbuild/when-element-msbuild.md) | Spécifie un bloc de code que l’élément `Choose` peut sélectionner. |
+| [Sinon](../msbuild/otherwise-element-msbuild.md) | Spécifie le bloc de code à exécuter si les conditions de tous les éléments `When` correspondent à la valeur `false`. |
+| [Projet](../msbuild/project-element-msbuild.md) | Élément racine requis d’un fichier de projet MSBuild. |
+| [Quand](../msbuild/when-element-msbuild.md) | Spécifie un bloc de code que l’élément `Choose` peut sélectionner. |
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Notes 
+
  Les éléments `Choose`, `When` et `Otherwise` sont utilisés ensemble pour permettre la sélection d’une section de code spécifique à exécuter parmi plusieurs options possibles. Pour plus d’informations, consultez [Constructions conditionnelles](../msbuild/msbuild-conditional-constructs.md).
 
-## <a name="example"></a>Exemple
+## <a name="example"></a> Exemple
+
  Le projet suivant utilise l’élément `Choose` pour sélectionner l’ensemble de valeurs de propriété à définir dans les éléments `When`. Si les attributs `Condition` des deux éléments `When` s’évaluent à `false`, les valeurs des propriétés dans l’élément `Otherwise` sont définies.
 
 ```xml
@@ -113,5 +118,6 @@ ms.locfileid: "75593367"
 ```
 
 ## <a name="see-also"></a>Voir aussi
+
 - [Constructions conditionnelles](../msbuild/msbuild-conditional-constructs.md)
-- [Informations de référence sur le schéma de fichier projet](../msbuild/msbuild-project-file-schema-reference.md)
+- [Référence du schéma de fichier de projet](../msbuild/msbuild-project-file-schema-reference.md)

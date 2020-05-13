@@ -13,17 +13,17 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: e5495bb1f531db00d43e04cce9f5f771c88cc1a7
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
-ms.translationtype: HT
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "65679202"
 ---
-# <a name="quickstart-debug-with-c-or-visual-basic-using-the-visual-studio-debugger"></a>Démarrage rapide : Déboguer avec C# ou Visual Basic à l’aide du débogueur Visual Studio
+# <a name="quickstart-debug-with-c-or-visual-basic-using-the-visual-studio-debugger"></a>Démarrage rapide : Déboguer du code C# ou Visual Basic avec le débogueur Visual Studio
 
 Le débogueur Visual Studio fournit de nombreuses fonctionnalités puissantes pour vous aider à déboguer vos applications. Cette rubrique vous offre un moyen rapide de vous familiariser avec quelques-unes des fonctionnalités de base.
 
-## <a name="create-a-new-project"></a>Créer un projet
+## <a name="create-a-new-project"></a>Création d'un projet
 
 1. Ouvrez Visual Studio et créez un projet.
 
@@ -31,7 +31,7 @@ Le débogueur Visual Studio fournit de nombreuses fonctionnalités puissantes po
     Appuyez sur **Échap** pour fermer la fenêtre de démarrage. Tapez **Ctrl+Q** pour ouvrir la zone de recherche, tapez **console**, choisissez **Modèles**, puis choisissez **Créer un projet d’application console (.NET Core)**. Dans la boîte de dialogue qui apparaît, choisissez **Créer**.
     ::: moniker-end
     ::: moniker range="vs-2017"
-    Dans la barre de menus supérieure, choisissez **Fichier** > **Nouveau** > **Projet**. Dans le volet gauche de la boîte de dialogue **Nouveau projet**, sous **Visual C#**, choisissez **.NET Core** puis, dans le volet central, choisissez **Application console (.NET Core)**. Tapez ensuite un nom tel que **MyDbgApp** et cliquez sur **OK**.
+    De la barre de menu haut, choisissez **File** > **New** > **Project**. Dans le volet gauche de la boîte de dialogue **Nouveau projet**, sous **Visual C#**, choisissez **.NET Core** puis, dans le volet central, choisissez **Application console (.NET Core)**. Tapez ensuite un nom tel que **MyDbgApp** et cliquez sur **OK**.
     ::: moniker-end
 
      Si vous ne voyez pas le modèle de projet **Application console (.NET Core)**, accédez à **Outils** > **Obtenir les outils et fonctionnalités...**, qui ouvre Visual Studio Installer. Choisissez la charge de travail **Développement .NET Desktop** et **.NET Core**, puis choisissez **Modifier**.
@@ -56,7 +56,7 @@ Le débogueur Visual Studio fournit de nombreuses fonctionnalités puissantes po
     End Module
     ```
 
-    par le code suivant :
+    par ce code :
 
     ```csharp
     class Program
@@ -132,9 +132,9 @@ Un *point d’arrêt* est un marqueur qui indique où Visual Studio doit interro
 
 1. Pour définir le point d’arrêt, cliquez dans la marge à gauche de l’appel de la fonction `doWork` (ou sélectionnez la ligne de code et appuyez sur **F9**).
 
-    ![Définir un point d’arrêt](../debugger/media/dbg-qs-set-breakpoint-csharp.png "Définir un point d’arrêt")
+    ![Définir un point d’arrêt](../debugger/media/dbg-qs-set-breakpoint-csharp.png "Définir un point d'arrêt")
 
-2. Appuyez maintenant sur **F5** (ou choisissez **Déboguer > Démarrer le débogage**).
+2. Appuyez maintenant sur **F5** (ou choisissez **Déboguer > Démarrer le débogage**).
 
     ![Atteindre un point d’arrêt](../debugger/media/dbg-qs-hit-breakpoint-csharp.png "Atteindre un point d’arrêt")
 
@@ -147,9 +147,9 @@ Un *point d’arrêt* est un marqueur qui indique où Visual Studio doit interro
 
 Il existe différentes commandes pour indiquer au débogueur de continuer. Nous montrons une commande de navigation pratique dans le code qui est disponible à compter de Visual Studio 2017.
 
-Avec l’exécution en pause au point d’arrêt, placez le curseur sur l’instruction `c1.AddLast(20)` jusqu’à ce que le bouton vert **Exécuter jusqu’au clic** ![Exécuter jusqu’au clic](../debugger/media/dbg-tour-run-to-click.png "RunToClick") apparaisse, puis appuyez sur le bouton **Exécuter jusqu’au clic**.
+Avec l’exécution en pause au point d’arrêt, placez le curseur sur l’instruction `c1.AddLast(20)` jusqu’à ce que le bouton vert **Exécuter jusqu’au clic**![Exécuter jusqu’au clic](../debugger/media/dbg-tour-run-to-click.png "RunToClick") apparaisse, puis appuyez sur le bouton **Exécuter jusqu’au clic**.
 
-![Exécuter jusqu’au clic](../debugger/media/dbg-qs-run-to-click-csharp.png "Exécuter jusqu’au clic")
+![Exécuter pour cliquer](../debugger/media/dbg-qs-run-to-click-csharp.png "Exécuter jusqu’au clic")
 
 L’application poursuit son exécution en appelant `doWork`, puis s’arrête à la ligne de code où vous avez cliqué sur le bouton.
 
@@ -161,7 +161,7 @@ L’application poursuit son exécution en appelant `doWork`, puis s’arrête �
 
     ![Afficher un datatip](../debugger/media/dbg-qs-data-tip-csharp.png "Afficher un datatip")
 
-    Le datatip vous montre la valeur actuelle de la variable `c1` et vous permet d’inspecter ses propriétés. Lors du débogage, si vous remarquez une valeur que vous n’attendiez pas, vous avez probablement un bogue dans les lignes de code précédentes ou d’appel.
+    La bulle d’informations (datatip) vous montre la valeur actuelle de la variable `c1` et vous permet d’inspecter ses propriétés. Lors du débogage, si vous remarquez une valeur que vous n’attendiez pas, vous avez probablement un bogue dans les lignes de code précédentes ou d’appel.
 
 2. Développez le datatip pour examiner les valeurs des propriétés actuelles de l’objet `c1`.
 
@@ -175,7 +175,7 @@ Si vous identifiez une modification que vous voulez tester dans votre code penda
 
 2. Appuyez plusieurs fois sur **F10** (ou **Déboguer > Pas à pas principal**) pour faire avancer le débogueur et pour exécuter le code modifié.
 
-    ![Modifier & Continuer](../debugger/media/dbg-qs-edit-and-continue-csharp.gif "Modifier & Continuer")
+    ![Modifier &amp; Continuer](../debugger/media/dbg-qs-edit-and-continue-csharp.gif "Modifier & Continuer")
 
     **F10** fait avancer le débogueur d’une instruction à la fois, mais il effectue un pas à pas principal sur les fonctions au lieu d’un pas à pas détaillé (le code que vous ignorez s’exécute tout de même).
 
@@ -186,4 +186,4 @@ Pour plus d’informations sur l’utilisation de Modifier & Continuer et sur l
 Dans ce tutoriel, vous avez découvert comment démarrer le débogueur, parcourir le code pas à pas et inspecter des variables. Vous pouvez obtenir une présentation générale des fonctionnalités du débogueur et suivre des liens qui donnent accès à plus d’informations.
 
 > [!div class="nextstepaction"]
-> [Présentation du débogueur](../debugger/debugger-feature-tour.md)
+> [Premier regard sur le débbugger](../debugger/debugger-feature-tour.md)

@@ -11,11 +11,11 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: 73420f5fa6a90638f4a3dbbdf484178c5e177ce9
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/13/2020
-ms.locfileid: "75917387"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79302755"
 ---
 # <a name="python-web-application-project-templates"></a>Modèles de projet d’application web Python
 
@@ -27,7 +27,7 @@ Pour plus d’informations sur le déploiement d’une application web Python su
 
 ## <a name="use-a-project-template"></a>Utiliser un modèle de projet
 
-Vous créez une projet à partir d’un modèle en utilisant **Fichier** > **Nouveau** > **Projet**. Pour voir les modèles de projets web, sélectionnez **Python** > **Web** dans la partie gauche de la boîte de dialogue. Ensuite, sélectionnez un modèle de votre choix, en fournissant le nom du projet et de la solution, définissez les options d’un répertoire de solution et d’un dépôt Git, puis sélectionnez **OK**.
+Vous créez un projet à partir d’un modèle à l’aide **de File** > **New** > **Project**. Pour voir les modèles pour les projets Web, sélectionnez **Python** > **Web** sur le côté gauche de la boîte de dialogue. Ensuite, sélectionnez un modèle de votre choix, en fournissant le nom du projet et de la solution, définissez les options d’un répertoire de solution et d’un dépôt Git, puis sélectionnez **OK**.
 
 ![Boîte de dialogue Nouveau projet pour les applications web](media/projects-new-project-dialog-web.png)
 
@@ -47,25 +47,25 @@ Tous les modèles **Projet web \<framework> vide** créent un projet contenant p
 
 ### <a name="web-group"></a>Groupe web
 
-Tous les modèles **Projet web \<Framework>** créent une application web de démarrage avec un design identique quel que soit le framework choisi. Cette application contient les pages Accueil, À propos de et Contact, ainsi qu’une barre de navigation et une conception réactive grâce à Bootstrap. Chaque application est configurée de manière appropriée pour servir les fichiers statiques (CSS, JavaScript et polices) et utilise un mécanisme de modèle de page approprié pour le framework.
+Tous ** \<** les modèles De projet Web> Framework créent une application web de démarrage avec une conception identique quel que soit le cadre choisi. Cette application contient les pages Accueil, À propos de et Contact, ainsi qu’une barre de navigation et une conception réactive grâce à Bootstrap. Chaque application est configurée de manière appropriée pour servir les fichiers statiques (CSS, JavaScript et polices) et utilise un mécanisme de modèle de page approprié pour le framework.
 
 | Modèle | Description |
 | --- | --- |
 | **Projet web Bottle** | Génère une application dont les fichiers statiques sont contenus dans le dossier *static* et gérés par le biais de code dans *app.py*. Le routage des pages individuelles est contenu dans *routes.py* et le dossier *views* contient les modèles de page.|
 | **Projet web Django** | Génère un projet Django et une application Django avec trois pages, la prise en charge de l’authentification et une base de données SQLite (mais aucun modèle de données). Pour plus d’informations, consultez [Modèles Django](python-django-web-application-project-template.md) et [Apprendre Django - Étape 4](learn-django-in-visual-studio-step-04-full-django-project-template.md). |
 | **Projet web Flask** | Génère une application dont les fichiers statiques sont contenus dans le dossier *static*. Le code contenu dans *views.py* gère le routage, et les modèles de page utilisant le moteur Jinja sont contenus dans le dossier *templates*. Le fichier *runserver.py* fournit le code de démarrage. Consultez [Découvrir Flask - Étape 4](learn-flask-visual-studio-step-04-full-flask-project-template.md). |
-| **Projet web Flask/Jade** | Génère la même application qu’avec le modèle **Projet web Flask**, mais en utilisant l’extension Jade pour le moteur de création de modèles Jinja. |
+| **Projet web Flask/Jade** | Génère la même application qu’avec le modèle **Flask Web Project,** mais en utilisant l’extension Jade pour le moteur de templating Jinja. |
 
 ### <a name="polls-group"></a>Groupe Sondages
 
-Les modèles **Projet web \<framework> de sondage** créent une application web de démarrage via laquelle les utilisateurs peuvent voter sur différentes questions de sondage. Chaque application repose sur la structure des modèles de projet **web** et utilise une base de données pour gérer les sondages et les réponses des utilisateurs. Les applications contiennent les modèles de données appropriés et une page d’application spéciale (/seed) qui charge les sondages à partir d’un fichier *samples.json*.
+Le ** \<cadre de sondages>** modèles web Project créent une application Web de démarrage à travers laquelle les utilisateurs peuvent voter sur différentes questions de sondage. Chaque application s’appuie sur la structure des modèles de **projets Web** pour utiliser une base de données pour gérer les sondages et les réponses des utilisateurs. Les applications contiennent les modèles de données appropriés et une page d’application spéciale (/seed) qui charge les sondages à partir d’un fichier *samples.json*.
 
 | Modèle | Description |
 | --- | --- |
 | **Projet web Bottle de sondage** | Génère une application qui peut s’exécuter sur une base de données en mémoire, MongoDB ou Stockage Table Azure, qui est configurée à l’aide de la variable d’environnement `REPOSITORY_NAME`. Les modèles de données et le code de magasin de données sont contenus dans le dossier *models* et le fichier *settings.py* contient le code permettant de déterminer quel magasin de données est utilisé. |
 | **Projet web Django de sondage** | Génère un projet Django et une application Django contenant trois pages et une base de données SQLite. Inclut des personnalisations de l’interface administrative Django pour permettre à un administrateur authentifié de créer et de gérer des sondages. Pour plus d’informations, consultez [Modèles Django](python-django-web-application-project-template.md) et [Apprendre Django - Étape 6](learn-django-in-visual-studio-step-06-polls-django-web-project-template.md). |
 | **Projet web Flask de sondage** | Génère une application qui peut s’exécuter sur une base de données en mémoire, MongoDB ou Stockage Table Azure, qui est configurée à l’aide de la variable d’environnement `REPOSITORY_NAME`. Les modèles de données et le code de magasin de données sont contenus dans le dossier *models* et le fichier *settings.py* contient le code permettant de déterminer quel magasin de données est utilisé. L’application utilise le moteur Jinja pour les modèles de page. Consultez [Découvrir Flask - Étape 5](learn-flask-visual-studio-step-05-polls-flask-web-project-template.md). |
-| **Projet web Flask/Jade de sondage** | Génère la même application qu’avec le modèle **Projet web Flask de sondage**, mais en utilisant l’extension Jade pour le moteur de création de modèles Jinja. |
+| **Projet web Flask/Jade de sondage** | Génère la même application qu’avec le modèle **Polls Flask Web Project,** mais en utilisant l’extension Jade pour le moteur de templating Jinja. |
 
 ## <a name="install-project-requirements"></a>Installer les spécifications du projet
 
@@ -79,9 +79,9 @@ Lors du déploiement sur Microsoft Azure App Service, sélectionnez une version 
 
 Microsoft Azure Cloud Services *prend en charge* le fichier *requirements.txt*. Voir [Projets de service cloud Azure](python-azure-cloud-service-project-template.md) pour plus d’informations.
 
-## <a name="debugging"></a>débogage
+## <a name="debugging"></a>Débogage
 
-Quand un projet web est démarré à des fins de débogage, Visual Studio démarre un serveur web local sur un port aléatoire et ouvre votre navigateur par défaut sur cette adresse et ce port. Pour spécifier des options supplémentaires, cliquez avec le bouton droit sur le projet, sélectionnez **Propriétés**, puis sélectionnez l’onglet **Lanceur web** :
+Quand un projet web est démarré à des fins de débogage, Visual Studio démarre un serveur web local sur un port aléatoire et ouvre votre navigateur par défaut sur cette adresse et ce port. Pour spécifier d’autres options, cliquez à droite sur le projet, sélectionnez **Les propriétés**et sélectionnez l’onglet **Web Launcher** :
 
 ![Propriétés du lanceur web pour le modèle web générique](media/template-web-launcher-properties.png)
 
@@ -98,7 +98,7 @@ Les propriétés des groupes **Run Server Command** (Commande du serveur d’ex�
 - **Environnement** : liste de paires \<NOM>=\<VALEUR> séparées par un saut de ligne spécifiant les variables d’environnement. Ces variables sont définies après toutes les propriétés susceptibles de modifier l’environnement, telles que le numéro de port et les chemins de recherche, et peuvent donc remplacer ces valeurs.
 
 Toute propriété de projet ou variable d’environnement peut être spécifiée avec la syntaxe MSBuild, par exemple : `$(StartupFile) --port $(SERVER_PORT)`.
-`$(StartupFile)` est le chemin d’accès relatif au fichier de démarrage, et `{StartupModule}` est le nom importable du fichier de démarrage. `$(SERVER_HOST)` et `$(SERVER_PORT)` sont des variables d’environnement normales qui sont définies par les propriétés **URL de lancement** et **Numéro de port**, soit automatiquement, soit par la propriété **Environnement**.
+`$(StartupFile)` est le chemin d’accès relatif au fichier de démarrage, et `{StartupModule}` est le nom importable du fichier de démarrage. `$(SERVER_HOST)`et `$(SERVER_PORT)` sont des variables d’environnement normales qui sont définies par **l’URL de lancement** et les propriétés port **Number,** automatiquement, ou par la propriété **Environnement.**
 
 > [!Note]
 > Les valeurs du groupe **Run Server Command** (Commande du serveur d’exécution) sont utilisées avec la commande **Débogage** > **Démarrer le serveur** ou **Ctrl**+**F5** ; les valeurs du groupe **Debug Server Command** (Commande du serveur de débogage) sont utilisées avec la commande **Débogage** > **Start Debug Server** (Démarrer le serveur de débogage) ou **F5**.
@@ -108,18 +108,18 @@ Toute propriété de projet ou variable d’environnement peut être spécifiée
 Le modèle de **projet Web Bottle** inclut un code réutilisable qui effectue la configuration nécessaire. Toutefois, une application Bottle importée peut ne pas inclure ce code, auquel cas les paramètres ci-après lancent l’application à l’aide du module `bottle` installé :
 
 - Groupe **Run Server Command** (Commande du serveur d’exécution) :
-  - **Commande** : `bottle` (module)
-  - **Arguments** : `--bind=%SERVER_HOST%:%SERVER_PORT% {StartupModule}:app`
+  - **Commande** `bottle` : (module)
+  - **Arguments**:`--bind=%SERVER_HOST%:%SERVER_PORT% {StartupModule}:app`
 
 - Groupe **Debug Server Command** (Commande du serveur de débogage) :
-  - **Commande** : `bottle` (module)
-  - **Arguments** `--debug --bind=%SERVER_HOST%:%SERVER_PORT% {StartupModule}:app`
+  - **Commande** `bottle` : (module)
+  - **Arguments**`--debug --bind=%SERVER_HOST%:%SERVER_PORT% {StartupModule}:app`
 
 L’option `--reload` n’est pas recommandée en cas d’utilisation de Visual Studio pour le débogage.
 
 ### <a name="sample-pyramid-configuration"></a>Exemple de configuration Pyramid
 
-Pour l’instant, la méthode de création recommandée pour les applications Pyramid consiste à utiliser l’outil en ligne de commande `pcreate`. Une fois qu’une application a été créée, elle peut être importée à l’aide du modèle [**À partir de code Python existant**](managing-python-projects-in-visual-studio.md#create-a-project-from-existing-files). Après cela, sélectionnez la personnalisation **Projet web générique** pour configurer les options. Ces paramètres reposent sur l’hypothèse que Pyramid est installé dans un environnement virtuel à l’emplacement `..\env`.
+Pour l’instant, la méthode de création recommandée pour les applications Pyramid consiste à utiliser l’outil en ligne de commande `pcreate`. Une fois qu’une application a été créée, elle peut être importée à l’aide du modèle [**de code Python existant.**](managing-python-projects-in-visual-studio.md#create-a-project-from-existing-files) Après cela, sélectionnez la personnalisation **Projet web générique** pour configurer les options. Ces paramètres reposent sur l’hypothèse que Pyramid est installé dans un environnement virtuel à l’emplacement `..\env`.
 
 - Groupe **Débogage** :
   - **Port du serveur** : 6543 (ou tout port configuré dans les fichiers *.ini*)
@@ -141,11 +141,11 @@ Si vous disposez de paramètres pour un autre framework que vous souhaitez parta
 
 ## <a name="convert-a-project-to-azure-cloud-service"></a>Convertir un projet en projet Azure Cloud Service
 
-La commande **Convertir en projet Microsoft Azure Cloud Service** (image ci-dessous) ajoute un projet de service cloud à votre solution. Ce projet comprend les paramètres de déploiement et la configuration pour les machines virtuelles et les services à utiliser. Utilisez la commande **Publier** sur le projet cloud à déployer sur Cloud Services. La commande **Publier** sur le projet Python effectue toujours le déploiement sur Sites web. Pour plus d’informations, consultez [Projets de service cloud Azure](python-azure-cloud-service-project-template.md).
+La commande **Convert to Microsoft Azure Cloud Service Project** (image ci-dessous) ajoute un projet de service cloud à votre solution. Ce projet comprend les paramètres de déploiement et la configuration pour les machines virtuelles et les services à utiliser. Utilisez la commande **Publier** sur le projet cloud à déployer sur Cloud Services. La commande **Publier** sur le projet Python effectue toujours le déploiement sur Sites web. Pour plus d’informations, voir [les projets de service cloud Azure](python-azure-cloud-service-project-template.md).
 
 ![Commande Convertir en projet Microsoft Azure Cloud Service](media/template-web-convert-menu.png)
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Référence de modèles d’élément Pyhton](python-item-templates.md)
+- [Informations de référence sur les modèles d’élément Python](python-item-templates.md)
 - [Publier sur Azure App Service](publishing-python-web-applications-to-azure-from-visual-studio.md)

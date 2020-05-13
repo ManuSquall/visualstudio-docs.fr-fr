@@ -11,12 +11,12 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 805ca35d5ff9907bd9ff8907f706ade346b3010e
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75595538"
 ---
-# <a name="options-dialog-box-environment--import-and-export-settings"></a>Boîte de dialogue Options : environnement \> importation et exportation de paramètres
+# <a name="options-dialog-box-environment--import-and-export-settings"></a>Boîte de dialogue \> d’options : Paramètres d’importation et d’exportation de l’environnement
 
 Utilisez cette page pour spécifier où votre fichier de paramètres utilisateur est enregistré. Pour plus d’informations sur les paramètres, consultez [Personnaliser l’IDE Visual Studio](../../ide/personalizing-the-visual-studio-ide.md).

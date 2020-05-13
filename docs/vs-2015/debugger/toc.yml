@@ -86,7 +86,7 @@
               href: using-run-time-checks-without-the-c-run-time-library.md
     - name: Joindre aux processus en cours d’exécution
       href: attach-to-running-processes-with-the-visual-studio-debugger.md
-    - name: Spécifier les fichiers de symboles (.pdb) et les fichiers source
+    - name: Spécifier les fichiers de symbole (.pdb) et les fichiers sources
       href: specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md
     - name: Déboguer des applications 64 bits
       href: debug-64-bit-applications.md
@@ -132,9 +132,9 @@
               href: how-to-debug-in-mixed-mode.md
             - name: Bibliothèque de contrôles Web (code managé)
               href: web-control-library-managed-code.md
-        - name: Projets de console
+        - name: Projets console
           href: debugging-preparation-console-projects.md
-        - name: Applications web ASP.NET
+        - name: Applications Web ASP.NET
           href: debugging-preparation-aspnet-web-applications.md
         - name: Déboguer un exécutable ne faisant pas partie d’une solution Visual Studio
           href: how-to-debug-an-executable-not-part-of-a-visual-studio-solution.md
@@ -170,7 +170,7 @@
                   href: how-to-write-a-visualizer.md
                 - name: Architecture d'un visualiseur
                   href: visualizer-architecture.md
-                - name: 'Écriture d’un visualiseur dans C#'
+                - name: 'Écriture d''un visualiseur en C#'
                   href: walkthrough-writing-a-visualizer-in-csharp.md
                 - name: Écriture d’un visualiseur en Visual Basic
                   href: walkthrough-writing-a-visualizer-in-visual-basic.md
@@ -190,9 +190,9 @@
       href: just-in-time-debugging-in-visual-studio.md
     - name: Débogage au moment du design
       href: walkthrough-debugging-at-design-time.md
-    - name: "Modifier\_&\_Continuer"
+    - name: Modifier & Continuer
       items:
-        - name: "Modifier\_&\_Continuer"
+        - name: Modifier & Continuer
           href: edit-and-continue.md
         - name: Activer et désactiver Modifier & Continuer
           href: how-to-enable-and-disable-edit-and-continue.md
@@ -230,9 +230,9 @@
           href: dump-file-summary-extensibility-api.md
     - name: Restaurer des commandes de débogueur masquées
       href: how-to-restore-hidden-debugger-commands.md
-- name: Remote Debugging
+- name: Débogage distant
   items:
-    - name: Remote Debugging
+    - name: Débogage distant
       href: remote-debugging.md
     - name: Configurer le Pare-feu Windows pour le débogage distant
       href: configure-the-windows-firewall-for-remote-debugging.md
@@ -350,9 +350,9 @@
       items:
         - name: Débogage d'applications du Windows Store et d'applications universelles Windows
           href: debugging-windows-store-and-windows-universal-apps.md
-        - name: Exécuter des applications à partir de Visual Studio
+        - name: "Exécuter des applications à partir de Visual\_Studio"
           items:
-            - name: Exécuter des applications à partir de Visual Studio
+            - name: "Exécuter des applications à partir de Visual\_Studio"
               href: run-store-apps-from-visual-studio.md
             - name: "Exécuter des applications du Windows\_Store sur un ordinateur local"
               href: run-windows-store-apps-on-the-local-machine.md
@@ -404,13 +404,13 @@
               href: start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md
             - name: Déboguer XAML dans Blend pour Visual Studio
               href: debug-xaml-in-blend.md
-            - name: 'Parcourir une session de débogage (Xaml et C#)'
+            - name: 'Parcourir une session de débogage (XAML et C#)'
               items:
-                - name: 'Parcourir une session de débogage (Xaml et C#)'
+                - name: 'Parcourir une session de débogage (XAML et C#)'
                   href: navigate-a-debugging-session-in-visual-studio-xaml-and-csharp.md
                 - name: 'Exemple de code de navigation du débogueur (XAML et C#)'
                   href: debugger-navigation-sample-code-xaml-and-csharp.md
-            - name: 'Déclencher des événements de suspension, reprise et en arrière-plan pour Windows Store)'
+            - name: 'Déclencher des événements de suspension, de reprise et d''arrière-plan pour Windows Store'
               href: how-to-trigger-suspend-resume-and-background-events-for-windows-store-apps-in-visual-studio.md
         - name: Prérécupérer du contenu pour les applications Windows Store
           href: prefetch-content-for-windows-store-apps.md
@@ -418,9 +418,9 @@
       items:
         - name: Débogage du code managé
           href: debugging-managed-code.md
-        - name: 'Types de projet C#, F# et Visual Basic'
+        - name: "Types de projets\_C#, F# et Visual Basic"
           items:
-            - name: 'Types de projet C#, F# et Visual Basic'
+            - name: "Types de projets\_C#, F# et Visual Basic"
               href: debugging-preparation-csharp-f-hash-and-visual-basic-project-types.md
             - name: Paramètres de propriété recommandés
               href: managed-debugging-recommended-property-settings.md
@@ -562,9 +562,9 @@
       items:
         - name: Graphics Diagnostics (débogage DirectX Graphics)
           href: visual-studio-graphics-diagnostics.md
-        - name: Vue d'ensemble
+        - name: Vue d’ensemble
           href: overview-of-visual-studio-graphics-diagnostics.md
-        - name: Prise en main
+        - name: Mise en route
           href: getting-started-with-visual-studio-graphics-diagnostics.md
         - name: Capture d'informations graphiques
           href: capturing-graphics-information.md
@@ -592,7 +592,7 @@
               href: bc-texture-compression-variant.md
         - name: Liste des événements
           href: graphics-event-list.md
-        - name: État
+        - name: State
           href: graphics-state.md
         - name: Étapes de canalisation
           href: graphics-pipeline-stages.md
@@ -602,7 +602,7 @@
           href: graphics-pixel-history.md
         - name: Table des objets
           href: graphics-object-table.md
-        - name: Débogueur HLSL
+        - name: 'HLSL, débogueur'
           href: hlsl-shader-debugger.md
         - name: Outil en ligne de commande de capture
           href: command-line-capture-tool.md
@@ -628,9 +628,9 @@
               href: how-to-change-the-graphics-diagnostics-playback-machine.md
             - name: Utiliser Graphics Diagnostics avec un appareil ARM
               href: how-to-use-graphics-diagnostics-with-an-arm-device.md
-        - name: Référence
+        - name: Reference
           items:
-            - name: Référence
+            - name: Reference
               href: reference-programmatic-capture.md
             - name: 'VsgDbg, classe'
               items:
@@ -674,7 +674,7 @@
               items:
                 - name: Préparation d'un débogage ASP.NET
                   href: preparing-to-debug-aspnet.md
-                - name: Configuration système requise
+                - name: Configuration requise
                   href: aspnet-debugging-system-requirements.md
                 - name: Activer le débogage pour les applications ASP.NET
                   items:
@@ -840,7 +840,7 @@
           href: mixed-mode-debugging-for-ia64-processes-is-unsupported.md
         - name: "Le débogage en mode mixte est uniquement pris en charge lorsque vous utilisez Microsoft .NET Framework\_2.0 ou\_3.0"
           href: mixed-mode-debugging-is-only-supported-when-using-microsoft-dotnet-framework-2-0-or-3-0.md
-- name: Kit de développement logiciel de Debug Interface Access
+- name: "Kit de développement logiciel de Debug\_Interface\_Access"
   href: debug-interface-access\TOC.md
 - name: Aide de Spy++
   items:

@@ -1,5 +1,5 @@
 ---
-title: BP_RESOLUTION_INFO | Microsoft Docs
+title: BP_RESOLUTION_INFO Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - BP_RESOLUTION_INFO structure
 ms.assetid: ba0c162a-61e8-4a0b-811f-4c1d8a5d82f0
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 5e07110a4ab4aae014f6134130a92dfcb8a31289
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 70e66a936ec1eaf1f818ad249aa4eb14b0b63749
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66350600"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80737830"
 ---
-# <a name="bpresolutioninfo"></a>BP_RESOLUTION_INFO
-Décrit les informations de point d’arrêt lié pour un point d’arrêt de code ou un point d’arrêt de données.
+# <a name="bp_resolution_info"></a>BP_RESOLUTION_INFO
+Décrit les informations de point de rupture lié pour un point d’arrêt de code ou un point d’arrêt de données.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -47,26 +47,26 @@ public struct BP_RESOLUTION_INFO {
 
 ## <a name="members"></a>Membres
 `dwFields`\
-Une collection d’indicateurs de la [BPRESI_FIELDS](../../../extensibility/debugger/reference/bpresi-fields.md) énumérations qui spécifie quels champs sont remplies.
+Une collection de drapeaux de la [BPRESI_FIELDS](../../../extensibility/debugger/reference/bpresi-fields.md) énumère qui précise quels champs sont remplis.
 
 `bpResLocation`\
-Le [BP_RESOLUTION_LOCATION](../../../extensibility/debugger/reference/bp-resolution-location.md) structure qui spécifie l’emplacement du point d’arrêt dans le code ou de données.
+La [structure BP_RESOLUTION_LOCATION](../../../extensibility/debugger/reference/bp-resolution-location.md) qui spécifie l’emplacement du point d’arrêt dans le code ou les données.
 
 `pProgram`\
-Le [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) objet qui représente l’application dans laquelle l’erreur de point d’arrêt s’est produite.
+[L’objet IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) qui représente l’application dans laquelle l’erreur de point d’arrêt s’est produite.
 
 `pThread`\
-Le [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) objet qui représente le thread dans lequel l’application qui contient l’erreur de point d’arrêt est en cours d’exécution.
+[L’objet IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) qui représente le thread dans lequel l’application qui contient l’erreur de point d’arrêt est en cours d’exécution.
 
 ## <a name="remarks"></a>Notes
 Cette structure est retournée par [GetResolutionInfo](../../../extensibility/debugger/reference/idebugbreakpointresolution2-getresolutioninfo.md).
 
-## <a name="requirements"></a>Configuration requise
-En-tête : msdbg.h
+## <a name="requirements"></a>Spécifications
+En-tête: msdbg.h
 
-Espace de noms : Microsoft.VisualStudio.Debugger.Interop
+Namespace: Microsoft.VisualStudio.Debugger.Interop
 
-Assembly : Microsoft.VisualStudio.Debugger.Interop.dll
+Assemblage: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>Voir aussi
 - [Structures et unions](../../../extensibility/debugger/reference/structures-and-unions.md)

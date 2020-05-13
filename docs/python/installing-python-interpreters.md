@@ -11,10 +11,10 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: 13290aef7acfe599c7693af4be771c625e713596
-ms.sourcegitcommit: d04441e3c5f2eff3a63f7aca35ccf7ecac90fb44
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/08/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75735816"
 ---
 # <a name="install-python-interpreters"></a>Installer les interpréteurs Python
@@ -32,7 +32,7 @@ Vous pouvez également installer manuellement l’un des interpréteurs figurant
 > Visual Studio prend en charge Python version 2.7, ainsi que la version 3.5 et les versions ultérieures. Bien qu’il soit possible d’utiliser Visual Studio pour modifier le code écrit dans d’autres versions de Python, ces versions ne sont pas officiellement prises en charge et des fonctionnalités comme IntelliSense et le débogage peuvent ne pas fonctionner.
 ::: moniker-end
 
-Avec **Visual Studio 2015 et les versions antérieures**, vous devez installer manuellement un des interpréteurs.
+Pour **Visual Studio 2015 et plus tôt,** vous devez installer manuellement l’un des interprètes.
 
 Visual Studio (toutes versions) détecte automatiquement chacun des interpréteurs Python installés et l’environnement associé en consultant le Registre (conformément à [PEP 514 – Inscription de Python dans le Registre Windows](https://www.python.org/dev/peps/pep-0514/)). Les installations de Python se trouvent généralement sous **HKEY_LOCAL_MACHINE\SOFTWARE\Python** (32 bits) et **HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Python** (64 bits), puis dans les nœuds correspondant à la distribution (par exemple, **PythonCore** pour CPython et **ContinuumAnalytics** pour Anaconda).
 
@@ -71,4 +71,4 @@ Ce processus garantit que les entrées de Registre qui identifient l’emplaceme
 - [Sélectionner un interpréteur pour un projet](selecting-a-python-environment-for-a-project.md)
 - [Utilisation requirements.txt pour les dépendances](managing-required-packages-with-requirements-txt.md)
 - [Chemins de recherche](search-paths.md)
-- [Référence sur la fenêtre Environnements Python](python-environments-window-tab-reference.md)
+- [Informations de référence sur la fenêtre Environnements Python](python-environments-window-tab-reference.md)

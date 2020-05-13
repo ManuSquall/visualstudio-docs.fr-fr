@@ -1,5 +1,5 @@
 ---
-title: IDebugEvent2::GetAttributes | Microsoft Docs
+title: IDebugEvent2:GetAttributes Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugEvent2::GetAttributes
 ms.assetid: 2ac5b5fb-da17-43f7-811a-313f677e60d7
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 3f85cccb01a31232cccc39e44fae7accbfa4f954
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: ffc3fc1b7988401611190fdf09e8041bf0dc5b1a
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66327585"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80729945"
 ---
 # <a name="idebugevent2getattributes"></a>IDebugEvent2::GetAttributes
-Obtient les attributs de cet événement de débogage.
+Obtient les attributs pour cet événement de débogé.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -41,13 +41,13 @@ int GetAttribute( 
 
 ## <a name="parameters"></a>Paramètres
 `pdwAttrib`\
-[out] Une combinaison d’indicateurs de la [EVENTATTRIBUTES](../../../extensibility/debugger/reference/eventattributes.md) énumération.
+[out] Une combinaison de drapeaux de l’énumération [EVENTATTRIBUTES.](../../../extensibility/debugger/reference/eventattributes.md)
 
 ## <a name="return-value"></a>Valeur de retour
- En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.
+ En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
 ## <a name="remarks"></a>Notes
- Le [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) interface est commune à tous les événements. Cette méthode décrit le type d’événement ; par exemple, est l’événement synchrone ou asynchrone et il est un événement d’arrêt.
+ [L’interface IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) est commune à tous les événements. Cette méthode décrit le type d’événement; par exemple, est l’événement synchrone ou asynchrone et est-ce un événement d’arrêt.
 
 ## <a name="see-also"></a>Voir aussi
 - [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md)

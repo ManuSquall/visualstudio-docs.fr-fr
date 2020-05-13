@@ -19,10 +19,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 0a286a84d01c6a49b32445106488688ba5b489be
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/16/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "76114539"
 ---
 # <a name="how-to-create-and-remove-project-dependencies"></a>Guide pratique pour créer et supprimer les dépendances d’un projet
@@ -31,7 +31,7 @@ Quand vous générez une solution qui contient plusieurs projets, vous pouvez ê
 
 ## <a name="to-assign-dependencies-to-projects"></a>Pour assigner des dépendances à des projets
 
-1. Dans l’**Explorateur de solutions**, sélectionnez un projet.
+1. Dans **Solution Explorer**, sélectionnez un projet.
 
 2. Dans le menu **Projet**, choisissez **Dépendances du projet**.
 
@@ -48,7 +48,7 @@ Quand vous générez une solution qui contient plusieurs projets, vous pouvez ê
 
 ## <a name="to-remove-dependencies-from-projects"></a>Pour supprimer des dépendances de projets
 
-1. Dans l’**Explorateur de solutions**, sélectionnez un projet.
+1. Dans **Solution Explorer**, sélectionnez un projet.
 
 2. Dans le menu **Projet**, choisissez **Dépendances du projet**.
 
@@ -64,6 +64,6 @@ Quand vous générez une solution qui contient plusieurs projets, vous pouvez ê
 ## <a name="see-also"></a>Voir aussi
 
 - [Générer et nettoyer des solutions et des projets dans Visual Studio](../ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md)
-- [Compiler et générer](../ide/compiling-and-building-in-visual-studio.md)
+- [Compilation et génération](../ide/compiling-and-building-in-visual-studio.md)
 - [Présentation des configurations de build](../ide/understanding-build-configurations.md)
 - [Gérer les propriétés des projets et des solutions](managing-project-and-solution-properties.md)

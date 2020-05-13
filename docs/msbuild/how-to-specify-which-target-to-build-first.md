@@ -12,18 +12,19 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 75bcb41bb2df2afcb6e71b0fdaf58d0d7429e974
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 7656237be5cf7906293a294885cfa3e6c8bd4e36
+ms.sourcegitcommit: 0b8497b720eb06bed8ce2194731177161b65eb84
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75574624"
+ms.lasthandoff: 04/23/2020
+ms.locfileid: "82072526"
 ---
 # <a name="how-to-specify-which-target-to-build-first"></a>Guide pratique pour spécifier la cible à générer en premier
-Un fichier projet peut contenir un ou plusieurs éléments `Target` qui définissent le mode de génération du projet. Le moteur [!INCLUDE[vstecmsbuildengine](../msbuild/includes/vstecmsbuildengine_md.md)] ([!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]) génère le premier projet trouvé, et toutes les dépendances, à moins que le fichier projet ne contienne un attribut `DefaultTargets`, un attribut `InitialTargets` ou qu’une cible ne soit spécifiée en ligne de commande à l’aide du commutateur **-target**.
 
+Un fichier projet peut contenir un ou plusieurs éléments `Target` qui définissent le mode de génération du projet. Le moteur Microsoft Build Engine (MSBuild) construit la première cible qu’il trouve, `DefaultTargets` et `InitialTargets` toutes les dépendances, à moins que le fichier de projet ne contienne un attribut, un attribut ou une cible est spécifié à la ligne de commande à l’aide de l’interrupteur **cible.**
 ## <a name="use-the-initialtargets-attribute"></a>Utiliser l’attribut InitialTargets
- L’attribut `InitialTargets` de l’élément `Project` spécifie une cible qui est exécutée en premier, même si des cibles sont spécifiées sur la ligne de commande ou dans l’attribut `DefaultTargets`.
+
+L’attribut `InitialTargets` de l’élément `Project` spécifie une cible qui est exécutée en premier, même si des cibles sont spécifiées sur la ligne de commande ou dans l’attribut `DefaultTargets`.
 
 #### <a name="to-specify-one-initial-target"></a>Pour spécifier une cible initiale
 
@@ -40,7 +41,8 @@ Un fichier projet peut contenir un ou plusieurs éléments `Target` qui définis
      `<Project InitialTargets="Clean;Compile">`
 
 ## <a name="use-the-defaulttargets-attribute"></a>Utiliser l’attribut DefaultTargets
- L’attribut `DefaultTargets` de l’élément `Project` spécifie la ou les cibles qui sont générées si une cible n’est pas spécifiée explicitement sur la ligne de commande. Si des cibles sont spécifiées dans les deux attributs `InitialTargets` et `DefaultTargets` et qu’aucune cible n’est spécifiée sur la ligne de commande, [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] exécute les cibles spécifiées dans l’attribut `InitialTargets` suivies par les cibles spécifiées dans l’attribut `DefaultTargets`.
+
+ L’attribut `DefaultTargets` de l’élément `Project` spécifie la ou les cibles qui sont générées si une cible n’est pas spécifiée explicitement sur la ligne de commande. Si les cibles sont `InitialTargets` `DefaultTargets` spécifiées dans les deux et les attributs et qu’aucune `InitialTargets` cible n’est spécifiée `DefaultTargets` sur la ligne de commande, MSBuild exécute les cibles spécifiées dans l’attribut suivi des cibles spécifiées dans l’attribut.
 
 #### <a name="to-specify-one-default-target"></a>Pour spécifier une cible par défaut
 
@@ -57,21 +59,23 @@ Un fichier projet peut contenir un ou plusieurs éléments `Target` qui définis
      `<Project DefaultTargets="Clean;Compile">`
 
 ## <a name="use-the--target-switch"></a>Utiliser le commutateur -target
- Si aucune cible par défaut n’est définie dans le fichier projet ou que vous ne souhaitez pas utiliser la cible par défaut, vous pouvez utiliser le commutateur de ligne de commande **-target** pour spécifier une autre cible. La ou les cibles spécifiées avec le commutateur **-target** sont exécutées à la place des cibles spécifiées par l’attribut `DefaultTargets`. Les cibles spécifiées dans l’attribut `InitialTargets` sont toujours exécutées en premier.
+
+ Si une cible par défaut n’est pas définie dans le fichier de projet, ou si vous ne souhaitez pas utiliser cette cible par défaut, vous pouvez utiliser la **cible de** commutateur de ligne de commande pour spécifier une cible différente. La cible ou les **-target** cibles spécifiées avec le commutateur `DefaultTargets` cible sont exécutées au lieu des cibles spécifiées par l’attribut. Les cibles spécifiées dans l’attribut `InitialTargets` sont toujours exécutées en premier.
 
 #### <a name="to-use-a-target-other-than-the-default-target-first"></a>Pour utiliser en premier une cible autre que la cible par défaut
 
-- Spécifiez la cible comme première cible à l’aide du commutateur de ligne de commande **-target**. Par exemple :
+- Spécifiez la cible comme première cible à l’aide de l’interrupteur de ligne de commande **cible.** Par exemple :
 
      `msbuild file.proj -target:Clean`
 
 #### <a name="to-use-several-targets-other-than-the-default-targets-first"></a>Pour utiliser en premier plusieurs cibles autres que les cibles par défaut
 
-- Listez les cibles, séparées par des points-virgules ou des virgules, à l’aide du commutateur de ligne de commande **-target**. Par exemple :
+- Énumérez les cibles, séparées par des semi-colons ou des virgules, à l’aide de l’interrupteur de ligne de commande **cible.** Par exemple :
 
      `msbuild <file name>.proj -t:Clean;Compile`
 
 ## <a name="see-also"></a>Voir aussi
+
 - [MSBuild](../msbuild/msbuild.md)
-- [Cibles MSBuild](../msbuild/msbuild-targets.md)
-- [Guide pratique pour nettoyer une build](../msbuild/how-to-clean-a-build.md)
+- [Cibles](../msbuild/msbuild-targets.md)
+- [Comment: Nettoyer une build](../msbuild/how-to-clean-a-build.md)

@@ -1,5 +1,5 @@
 ---
-title: BP_REQUEST_INFO | Microsoft Docs
+title: BP_REQUEST_INFO Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - BP_REQUEST_INFO structure
 ms.assetid: 42a31412-5b6b-47fe-a762-0c2bc769e1cc
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 25967fa5ddc6f827435c03c2883eacb522c79f42
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 35a1202f4990f4f6370ad031c896ba85ebb6d816
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66353001"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80737896"
 ---
-# <a name="bprequestinfo"></a>BP_REQUEST_INFO
-Contient les informations requises pour implémenter un point d’arrêt.
+# <a name="bp_request_info"></a>BP_REQUEST_INFO
+Contient les informations nécessaires à la mise en œuvre d’un point d’arrêt.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -59,46 +59,46 @@ public struct BP_REQUEST_INFO {
 
 ## <a name="members"></a>Membres
 `dwFields`\
-Une combinaison d’indicateurs de la [BPREQI_FIELDS](../../../extensibility/debugger/reference/bpreqi-fields.md) énumération qui spécifie quels champs sont renseignés.
+Une combinaison de drapeaux de [l’énumération BPREQI_FIELDS](../../../extensibility/debugger/reference/bpreqi-fields.md) qui précise quels champs sont remplis.
 
 `guidLanguage`\
 GUID de la langue.
 
 `bpLocation`\
-Le [BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md) structure qui spécifie le type de l’emplacement du point d’arrêt.
+La [structure BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md) qui spécifie le type de point d’arrêt.
 
 `pProgram`\
-Le [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) objet qui représente l’application dans laquelle le point d’arrêt se produit.
+[L’objet IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) qui représente l’application dans laquelle le point d’arrêt se produit.
 
 `bstrProgramName`\
 Le nom de l’application dans laquelle le point d’arrêt se produit.
 
 `pThread`\
-Le [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) objet qui représente le thread dans lequel le point d’arrêt se produit.
+[L’objet IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) qui représente le fil dans lequel le point d’arrêt se produit.
 
 `bstrThreadName`\
-Le nom du thread dans lequel le point d’arrêt se produit.
+Le nom du fil dans lequel le point d’arrêt se produit.
 
 `bpCondition`\
-Le [BP_CONDITION](../../../extensibility/debugger/reference/bp-condition.md) structure qui décrit les conditions sous lesquelles le point d’arrêt se déclenche.
+La [structure BP_CONDITION](../../../extensibility/debugger/reference/bp-condition.md) qui décrit les conditions dans lesquelles le point d’arrêt s’allumera.
 
 `bpPassCount`\
-Le [BP_PASSCOUNT](../../../extensibility/debugger/reference/bp-passcount.md) structure qui contient les informations de nombre passe du point d’arrêt.
+La [structure BP_PASSCOUNT](../../../extensibility/debugger/reference/bp-passcount.md) qui contient les informations de comptage de passage du point d’arrêt.
 
 `dwFlags`\
-Une combinaison d’indicateurs de la [BP_FLAGS](../../../extensibility/debugger/reference/bp-flags.md) énumération qui spécifie les indicateurs pour le point d’arrêt demandé.
+Une combinaison de drapeaux de [l’BP_FLAGS](../../../extensibility/debugger/reference/bp-flags.md) énumération qui spécifie les drapeaux pour le point d’arrêt demandé.
 
 ## <a name="remarks"></a>Notes
-Cette structure est retournée par la [GetRequestInfo](../../../extensibility/debugger/reference/idebugbreakpointrequest2-getrequestinfo.md) (méthode).
+Cette structure est retournée par la méthode [GetRequestInfo.](../../../extensibility/debugger/reference/idebugbreakpointrequest2-getrequestinfo.md)
 
-Si vous avez besoin obtenir le fournisseur de moteur de débogage GUID, la contrainte de point d’arrêt ou le point de trace, consultez le [BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md) structure.
+Si vous avez besoin d’obtenir le fournisseur de moteur de débog GUID, la contrainte de point d’arrêt ou le point de traçabilité, voir la structure [BP_REQUEST_INFO2.](../../../extensibility/debugger/reference/bp-request-info2.md)
 
-## <a name="requirements"></a>Configuration requise
-En-tête : msdbg.h
+## <a name="requirements"></a>Spécifications
+En-tête: msdbg.h
 
-Espace de noms : Microsoft.VisualStudio.Debugger.Interop
+Namespace: Microsoft.VisualStudio.Debugger.Interop
 
-Assembly : Microsoft.VisualStudio.Debugger.Interop.dll
+Assemblage: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>Voir aussi
 - [Structures et unions](../../../extensibility/debugger/reference/structures-and-unions.md)

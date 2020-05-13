@@ -11,10 +11,10 @@ ms.author: stsu
 manager: jillfra
 monikerRange: '>= vs-2019'
 ms.openlocfilehash: 4c44d267ef5686d04e9549601e05866aabbfb62d
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "72650837"
 ---
 # <a name="filtered-solutions-in-visual-studio"></a>Solutions filtrées dans Visual Studio
@@ -37,7 +37,7 @@ Vous pouvez ouvrir une solution sans charger ses projets directement à partir d
 
 Pour ouvrir une solution sans charger ses projets à l’aide de la boîte de dialogue **Ouvrir un projet** :
 
-1. Dans la barre de menus, choisissez **Fichier** > **Ouvrir** > **Projet/Solution**.
+1. Choisissez **File** > **Open** > **Project/Solution** à partir de la barre de menu.
 
 2. Dans la boîte de dialogue **Ouvrir un projet**, sélectionnez la solution, puis **Ne pas charger les projets**.
 
@@ -47,7 +47,7 @@ Pour ouvrir une solution sans charger ses projets à l’aide de la boîte de di
 
    La solution s’ouvre avec tous ses projets déchargés.
 
-4. Dans l’**Explorateur de solutions**, sélectionnez les projets à charger (appuyez sur **Ctrl** tout en cliquant sur les projets pour en sélectionner plusieurs), puis cliquez avec le bouton droit et choisissez **Recharger le projet** .
+4. Dans l’**Explorateur de solutions**, sélectionnez les projets à charger (appuyez sur **Ctrl** tout en cliquant sur les projets pour en sélectionner plusieurs), puis cliquez avec le bouton droit et choisissez **Recharger le projet **.
 
    ![Recharger plusieurs projets dans l’Explorateur de solutions Visual Studio](media/filtered-solutions/reload-project.png)
 
@@ -57,7 +57,7 @@ Pour ouvrir une solution sans charger ses projets à l’aide de la boîte de di
 
 (Nouveau dans Visual Studio 2019 version 16.1.)
 
-Pour ouvrir une solution sans charger ses projets à partir de la ligne de commande, utilisez le commutateur [`/donotloadprojects`](../ide/reference/donotloadprojects-devenv-exe.md) comme illustré dans l’exemple suivant :
+Pour ouvrir une solution sans charger aucun de ses [`/donotloadprojects`](../ide/reference/donotloadprojects-devenv-exe.md) projets à partir de la ligne de commande, utilisez le commutateur comme indiqué dans l’exemple suivant :
 
 ```cmd
 devenv /donotloadprojects MySln.sln
@@ -105,4 +105,4 @@ Après avoir créé un fichier de filtre de solution, celui-ci est ajouté à vo
 ## <a name="see-also"></a>Voir aussi
 
 - [Personnaliser l’imbrication de fichiers dans l’Explorateur de solutions](file-nesting-solution-explorer.md)
-- [Optimiser les performances de Visual Studio](optimize-visual-studio-performance.md)
+- [Optimiser le niveau de performance de Visual Studio](optimize-visual-studio-performance.md)

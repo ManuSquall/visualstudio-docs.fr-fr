@@ -16,10 +16,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: ccfb9dab504bc3fa9405bb56c9fce82ed18820ac
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74776330"
 ---
 # <a name="how-to-configure-noise-reduction-in-report-views"></a>Guide pratique pour configurer la réduction du bruit dans les vues Rapports
@@ -39,7 +39,7 @@ Vous pouvez configurer la réduction du bruit dans les rapports de performances 
 
 2. Pour activer la suppression, effectuez les étapes suivantes :
 
-    1. Sélectionnez **Activer la suppression**. Il s’agit du paramètre par défaut.
+    1. Sélectionnez **Activer la suppression**. Il s'agit du paramètre par défaut.
 
         > [!NOTE]
         > Si la réduction du bruit est activée, une barre d’informations s’affiche dans le rapport. Pour plus d’informations, consultez [Arborescence des appels, vue](../profiling/call-tree-view.md) et [Allocations, vue](../profiling/dotnet-memory-allocations-view.md).
@@ -48,7 +48,7 @@ Vous pouvez configurer la réduction du bruit dans les rapports de performances 
 
     3. Configurez le paramètre de seuil de votre choix en tapant un pourcentage dans la zone de texte **Seuil**.
 
-    4. Pour activer l’avertissement de réduction du bruit dans le rapport généré, sélectionnez **Afficher un avertissement dans le rapport généré lorsque l’option Réduction du bruit est activée**. Il s’agit du paramètre par défaut.
+    4. Pour activer l’avertissement de réduction du bruit dans le rapport généré, sélectionnez **Afficher un avertissement dans le rapport généré lorsque l’option Réduction du bruit est activée**. Il s'agit du paramètre par défaut.
 
 3. Pour désactiver la suppression, décochez l’option **Activer la suppression**.
 
@@ -62,7 +62,7 @@ Vous pouvez configurer la réduction du bruit dans les rapports de performances 
 
 2. Pour activer le repli, effectuez les étapes suivantes :
 
-    1. Sélectionnez **Activer le repli**. Il s’agit du paramètre par défaut.
+    1. Sélectionnez **Activer le repli**. Il s'agit du paramètre par défaut.
 
         > [!NOTE]
         > Si la réduction du bruit est activée, une barre d’informations s’affiche dans le rapport. Pour plus d’informations, consultez [Arborescence des appels, vue](../profiling/call-tree-view.md) et [Allocations, vue](../profiling/dotnet-memory-allocations-view.md).
@@ -71,14 +71,14 @@ Vous pouvez configurer la réduction du bruit dans les rapports de performances 
 
     3. Configurez le paramètre de seuil de votre choix en tapant un pourcentage dans la zone de texte **Seuil**.
 
-    4. Pour activer l’avertissement de réduction du bruit dans le rapport généré, sélectionnez **Afficher un avertissement dans le rapport généré lorsque l’option Réduction du bruit est activée**. Il s’agit du paramètre par défaut.
+    4. Pour activer l’avertissement de réduction du bruit dans le rapport généré, sélectionnez **Afficher un avertissement dans le rapport généré lorsque l’option Réduction du bruit est activée**. Il s'agit du paramètre par défaut.
 
 3. Pour désactiver le repli, décochez l’option **Activer le repli**.
 
 4. Cliquez sur **OK**.
 
 ## <a name="see-also"></a>Voir aussi
-- [Personnaliser les vues des rapports des outils d’analyse des performances](../profiling/customizing-performance-tools-report-views.md)
-- [Guide pratique pour exclure ou inclure les fonctions courtes de l’instrumentation](../profiling/how-to-exclude-or-include-short-functions-from-instrumentation.md)
-- [Mode Arborescence des appels](../profiling/call-tree-view.md)
-- [Allocations, vue](../profiling/dotnet-memory-allocations-view.md)
+- [Personnaliser les points de vue du rapport sur les outils de performance](../profiling/customizing-performance-tools-report-views.md)
+- [Comment : Exclure ou inclure des fonctions courtes de l’instrumentation](../profiling/how-to-exclude-or-include-short-functions-from-instrumentation.md)
+- [Afficher l’arbre d’appel](../profiling/call-tree-view.md)
+- [Vue Allocations](../profiling/dotnet-memory-allocations-view.md)

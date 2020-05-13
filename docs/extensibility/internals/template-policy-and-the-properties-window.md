@@ -1,32 +1,32 @@
 ---
-title: Stratégie de modèle et fenêtre Propriétés | Microsoft Docs
+title: Stratégie de modèle et fenêtre des propriétés Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - Properties window, template policy
 ms.assetid: 1d8019d3-5e57-47ba-b358-526b0796a63b
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e7135a7c99f1566eaacb4079e9787cf2b5606682
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 08ed6f416441d06767661e63b5e32454dbe07f93
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72722690"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80704665"
 ---
 # <a name="template-policy-and-the-properties-window"></a>Stratégie de modèle et fenêtre Propriétés
-Lorsqu’un projet est contenu dans un projet de modèle d’entreprise, ce projet de modèle d’entreprise peut appliquer la stratégie. La stratégie de modèle devient un système de restriction qui peut être utilisé pour définir les valeurs par défaut des propriétés, masquer les propriétés, ajouter des propriétés, etc.
+Lorsqu’un projet est contenu à l’intérieur d’un projet de modèle d’entreprise, ce projet de modèle d’entreprise peut appliquer la politique. La stratégie de modèle devient un système de contrainte qui peut être employé pour définir des valeurs par défaut pour des propriétés, cacher des propriétés, ajouter des propriétés, et ainsi de suite.
 
- L’utilisation de la stratégie de modèle pour contrôler l’affichage des informations dans la fenêtre **Propriétés** est différente de l’implémentation de <xref:Microsoft.VisualStudio.Shell.Interop.IVsPerPropertyBrowsing>. <xref:Microsoft.VisualStudio.Shell.Interop.IVsPerPropertyBrowsing> gère les propriétés de l’objet au niveau du composant, tandis que la stratégie de modèle peut être utilisée pour contraindre les propriétés de l’objet au niveau de la solution ou du projet. En d’autres termes
+ L’utilisation de la stratégie de modèle pour contrôler <xref:Microsoft.VisualStudio.Shell.Interop.IVsPerPropertyBrowsing>l’affichage des informations dans la fenêtre **propriétés** est différente de la mise en œuvre . <xref:Microsoft.VisualStudio.Shell.Interop.IVsPerPropertyBrowsing>gère les propriétés de l’objet au niveau des composants, tandis que la stratégie de modèle peut être utilisée pour limiter les propriétés des objets au niveau de la solution ou du projet. En d’autres termes,
 
-- Implémentez les méthodes sur <xref:Microsoft.VisualStudio.Shell.Interop.IVsPerPropertyBrowsing> pour déterminer ce qui est affiché dans la fenêtre **Propriétés** pour des objets spécifiques
+- Implémenter <xref:Microsoft.VisualStudio.Shell.Interop.IVsPerPropertyBrowsing> les méthodes pour déterminer ce qui est affiché dans la fenêtre **Propriétés** pour des objets spécifiques
 
-- Utiliser la stratégie de modèle au niveau de la solution et du projet pour déterminer ce qui est affiché dans la fenêtre **Propriétés** pour les objets spécifiés précédemment
+- Utilisez la stratégie du modèle au niveau de la solution et du projet pour déterminer ce qui est affiché dans la fenêtre **Propriétés** pour les objets précédemment spécifiés
 
-  Utilisation d’une stratégie de modèle pour limiter de manière sélective des propriétés spécifiques dans la fenêtre **Propriétés** lorsqu’un élément de projet d’un type spécifié est sélectionné dans **Explorateur de solutions** peut être bénéfique pour tous les membres de l’équipe de développement qui travaillent sur un projet. Par exemple, à l’aide de la stratégie de modèle, vous pouvez configurer toutes les informations de chaîne de connexion dans une base de données pour vos développeurs et définir la chaîne de connexion en lecture seule. De cette façon, vous pouvez fournir un moyen simple pour garantir que chaque développeur utilise le chemin d’accès correct pour l’accès aux données.
+  L’utilisation de la stratégie de modèle pour limiter sélectivement les propriétés spécifiques dans la fenêtre **Propriétés** lorsqu’un élément de projet d’un type spécifié est sélectionné dans **Solution Explorer** peut être bénéfique pour tous les membres de l’équipe de développement travaillant sur un projet. Par exemple, en utilisant la stratégie de modèle, vous pouvez configurer toutes les informations de connexion-chaîne dans une base de données pour vos développeurs et faire la chaîne de connexion lue-seulement. De cette façon, vous pouvez fournir un moyen simple de s’assurer que chaque développeur utilise la voie correcte pour l’accès aux données.
 
 ## <a name="see-also"></a>Voir aussi
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsPerPropertyBrowsing>

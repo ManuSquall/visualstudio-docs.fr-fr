@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 27f030fb73629172e0b5a2d5d4cb27cf186bb69f
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 271e9253daf4ab23a5fb06a189ac3042bc925b2a
+ms.sourcegitcommit: 5d1b2895d3a249c6bea30eb12b0ad7c0f0862d85
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75594264"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "80880271"
 ---
 # <a name="install-test-agents-and-test-controllers"></a>Installer des agents de test et des contrôleurs de test
 
@@ -22,15 +22,15 @@ Pour les scénarios de test qui utilisent Visual Studio et Azure Test Plans ou T
 
 Vous pouvez aussi vous demander s’il ne serait pas plus facile [d’utiliser la gestion de build et de mise en production](use-build-or-rm-instead-of-lab-management.md) à la place de Lab Management.
 
-## <a name="system-requirements"></a>Configuration requise
+## <a name="system-requirements"></a>Configuration système requise
 
 Le tableau suivant présente la configuration système requise pour l’installation de l’agent de test ou du contrôleur de test pour Visual Studio :
 
-| Élément | Configuration requise pour |
+| Élément | Spécifications |
 | ---- | ------------ |
-| **Agent** | Windows 10<br />Windows 8, Windows 8.1<br />Windows 7 Service Pack 1<br />Windows Server 2016 Standard et Datacenter<br />Windows Server 2012 R2 |
-| **Contrôleur** | Windows 10<br />Windows 8, Windows 8.1<br />Windows 7 Service Pack 1<br />Windows Server 2016 Standard et Datacenter<br />Windows Server 2012 R2 |
-| **.NET Framework** | .NET Framework 4.5 |
+| **Agent** | Windows 10<br />Windows 8, Windows 8.1<br />Windows 7 Service Pack 1<br />Windows Server 2016 Standard et Datacenter<br />Windows Server 2012 R2 |
+| **Contrôleur** | Windows 10<br />Windows 8, Windows 8.1<br />Windows 7 Service Pack 1<br />Windows Server 2016 Standard et Datacenter<br />Windows Server 2012 R2 |
+| **.NET Framework** | .NET Framework 4.5 |
 
 ## <a name="install-the-test-controller-and-test-agents"></a>Installer le contrôleur de test et les agents de test
 
@@ -40,6 +40,7 @@ Vous pouvez télécharger des agents pour Visual Studio 2017, Visual Studio 2015
 
 Ces programmes d’installation sont disponibles sous forme de fichiers ISO pour faciliter l’installation sur les machines virtuelles.
 
+::: moniker range="vs-2017"
 ## <a name="compatible-versions-of-tfs-microsoft-test-manager-the-test-controller-and-test-agent"></a>Versions compatibles de TFS, de Microsoft Test Manager, du contrôleur de test et de l’agent de test
 
 Vous pouvez combiner des versions différentes de TFS, Microsoft Test Manager, du contrôleur de test et de l’agent de test, conformément au tableau suivant :
@@ -53,6 +54,23 @@ Vous pouvez combiner des versions différentes de TFS, Microsoft Test Manager, d
 | 2015 : nouvelle installation | 2013 | 2013 | 2013 |
 | 2015 : mise à niveau à partir de 2013 ou nouvelle installation | 2015 | 2013 | 2013 |
 | 2013 | 2015 | 2013 | 2013 |
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+## <a name="compatible-versions-of-tfs-the-test-controller-and-test-agent"></a>Versions compatibles de TFS, le contrôleur de test et l’agent de test
+
+Vous pouvez mélanger différentes versions de TFS, le contrôleur de test et l’agent de test, selon le tableau suivant :
+
+| TFS | Contrôleur | Agent |
+| --- | -------------------------------------- | ---------- | ----- |
+| 2017 : mise à niveau à partir de 2015 ou nouvelle installation | 2017 | 2017 |
+| 2017 : mise à niveau à partir de 2015 ou nouvelle installation | 2013 Update 5 | 2013 Update 5 |
+| 2017 : mise à niveau à partir de 2015 ou nouvelle installation | 2013 Update 5 | 2013 Update 5 |
+| 2015 : mise à niveau à partir de 2013 | 2013 |2013 |
+| 2015 : nouvelle installation | 2013 | 2013 |
+| 2015 : mise à niveau à partir de 2013 ou nouvelle installation | 2013 | 2013 |
+| 2013 | 2013 | 2013 |
+::: moniker-end
 
 > [!NOTE]
 > Les scénarios Lab Management dans TFS 2018 et Azure DevOps Services sont déconseillés. Pour plus d’informations, consultez [Notes de publication de TFS 2018](/visualstudio/releasenotes/tfs2018-relnotes#--removing-support-for-lab-center-and-automated-testing-flows-in-microsoft-test-manager).
@@ -67,5 +85,5 @@ Le tableau suivant présente les scénarios pris en charge par les Agents pour V
 | - | - |
 | Flux de travail Générer-Déployer-Tester dans Visual Studio | Les utilisateurs peuvent employer un [pipeline de build](/azure/devops/pipelines/index?view=vsts) (pas une build XAML) pour générer, déployer et tester des scénarios dans TFS. |
 | Test de charge (test des performances) avec des ordinateurs distants locaux | Utilisez le contrôleur de test et les agents des test de la version 2013 Update 5 pour exécuter les tests de charge localement. |
-| Exécution à distance de tests automatisés à partir de Microsoft Test Manager à l’aide d’un environnement lab | Actuellement, il n’existe pas d’alternative à ce scénario. Nous vous recommandons d’utiliser la tâche Exécuter les tests fonctionnels dans les définitions de build et de mise en production (pas dans une build XAML) pour exécuter les tests à distance. |
+| Exécution à distance des tests automatisés de Microsoft Test Manager (déprécié dans Visual Studio 2017) à l’aide d’un environnement de laboratoire | Actuellement, il n’existe pas d’alternative à ce scénario. Nous vous recommandons d’utiliser la tâche Exécuter les tests fonctionnels dans les définitions de build et de mise en production (pas dans une build XAML) pour exécuter les tests à distance. |
 | Développeurs exécutant les tests à distance dans Visual Studio | N'est plus pris en charge. |

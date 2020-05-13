@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - uwp
 ms.openlocfilehash: 9a925e7f3c31b8347148c15b050692fcee26fcb1
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75585611"
 ---
 # <a name="xaml-designer-options-page"></a>Page des options du concepteur XAML
@@ -22,7 +22,7 @@ ms.locfileid: "75585611"
 Utilisez la page des options du **concepteur XAML** pour spécifier la mise en forme des éléments et attributs dans vos documents XAML. Pour ouvrir cette page, choisissez le menu **Outils**, puis **Options**. Pour accéder à la page de propriétés du **concepteur XAML**, choisissez le nœud **Concepteur XAML**. Les paramètres du concepteur XAML sont appliqués quand vous ouvrez le document. Par conséquent, si vous modifiez les paramètres, vous devez fermer et rouvrir Visual Studio pour afficher les modifications.
 
 > [!NOTE]
-> Les boîtes de dialogue et les commandes de menu qui s'affichent peuvent être différentes de celles qui sont décrites dans l'aide, en fonction de vos paramètres actifs ou de l'édition utilisée. Pour modifier vos paramètres, choisissez **Importation et exportation de paramètres** dans le menu **Outils** . Pour plus d’informations, consultez [Réinitialiser les paramètres](../environment-settings.md#reset-settings).
+> Les boîtes de dialogue et les commandes de menu affichées peuvent différer de celles décrites dans l'Aide selon les paramètres actifs ou le mode d'édition. Pour modifier vos paramètres, choisissez **Paramètres d'importation et d'exportation** dans le menu **Outils** . Pour plus d’informations, consultez [Réinitialiser les paramètres](../environment-settings.md#reset-settings).
 
 ## <a name="enable-xaml-designer"></a>Activer le concepteur XAML
 
@@ -37,7 +37,7 @@ Utilisez ce paramètre pour contrôler si le mode Design apparaît quand des doc
 |||
 |-|-|
 |**Mode Source**|Spécifie si seule la source XAML apparaît dans la vue XAML. Cela est utile quand vous chargez des documents volumineux.|
-|**Mode Design**|Spécifie si seul un concepteur visuel XAML apparaît dans la vue XAML.|
+|**Vue de conception**|Spécifie si seul un concepteur visuel XAML apparaît dans la vue XAML.|
 |**Mode Fractionné**|Indique si le concepteur XAML visuel et la source XAML apparaissent l’un à côté de l’autre dans la vue XAML (emplacement basé sur le paramètre **Orientation du fractionnement**).|
 
 ## <a name="split-orientation"></a>Orientation du fractionnement
@@ -46,9 +46,9 @@ Utilisez ce paramètre pour contrôler le moment et la façon dont le concepteur
 
 |||
 |-|-|
-|**Vertical**|La source XAML s’affiche sur le côté gauche de la vue XAML et le concepteur XAML sur l’autre côté.|
+|**Verticale**|La source XAML s’affiche sur le côté gauche de la vue XAML et le concepteur XAML sur l’autre côté.|
 |**Horizontal**|Le concepteur XAML s’affiche en haut de la vue XAML et la source XAML apparaît en dessous.|
-|**Default**|Le document XAML utilise l’orientation de fractionnement recommandée pour la plateforme ciblée par le projet du document. Pour la plupart des plateformes, il s’agit de **Horizontal**.|
+|**Par défaut**|Le document XAML utilise l’orientation de fractionnement recommandée pour la plateforme ciblée par le projet du document. Pour la plupart des plateformes, il s’agit de **Horizontal**.|
 
 ## <a name="zoom-by-using"></a>Zoomer en utilisant
 
@@ -57,8 +57,8 @@ Utilisez ce paramètre pour déterminer le fonctionnement du zoom pendant la mod
 |||
 |-|-|
 |**Roulette de la souris**|Effectuez un zoom avant dans le concepteur XAML en faisant tourner la roulette de la souris.|
-|**Ctrl + roulette de la souris**|Effectuez un zoom avant dans le Concepteur XAML en appuyant sur la touche **Ctrl** tout en faisant tourner la roulette de la souris.|
-|**Alt + roulette de la souris**|Effectuez un zoom avant dans le Concepteur XAML en appuyant sur la touche **Alt** tout en faisant tourner la roulette de la souris.|
+|**Ctrl + roulette de la souris**|Zoomez sur le concepteur XAML en appuyant sur la touche **Ctrl** tout en faisant défiler la roue de la souris.|
+|**Alt + roulette de la souris**|Zoomez sur le concepteur XAML en appuyant sur la clé **Alt** tout en faisant défiler la roue de la souris.|
 
 Ces paramètres déterminent le comportement du concepteur pendant la modification d’un document XAML.
 
@@ -97,7 +97,7 @@ Utilisez ces paramètres pour déterminer le comportement du concepteur XAML pen
 
 Utilisez ce paramètre pour déterminer si un avertissement s’affiche quand des animations dépendantes (non accélérées) sont activées dans Blend.
 
-### <a name="effects"></a>Effects (Effets)
+### <a name="effects"></a>Effets
 
 Utilisez ces paramètres pour déterminer si des effets sont affichés pendant la modification de fichiers XAML dans le concepteur XAML à l’aide de Blend.
 

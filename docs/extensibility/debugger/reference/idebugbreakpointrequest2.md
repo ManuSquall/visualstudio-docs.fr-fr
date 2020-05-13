@@ -1,5 +1,5 @@
 ---
-title: IDebugBreakpointRequest2 | Microsoft Docs
+title: IDebugBreakpointRequest2 - France Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,17 +7,17 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugBreakpointRequest2 interface
 ms.assetid: 01ac4013-96f9-4235-b289-f55f9e99558f
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 55e7c73b720e326b823c3038928d7141ea732155
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: f30f9698c9c81322edd6935b40c16cad6f46024c
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66352922"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80734914"
 ---
 # <a name="idebugbreakpointrequest2"></a>IDebugBreakpointRequest2
 Cette interface représente les informations nécessaires pour créer et lier n’importe quel type de point d’arrêt.
@@ -28,31 +28,31 @@ Cette interface représente les informations nécessaires pour créer et lier n�
 IDebugBreakpointRequest2 : IUnknown
 ```
 
-## <a name="notes-for-implementers"></a>Notes de publication pour les implémenteurs
- En général, le Gestionnaire de session de débogage (SDM) implémente cette interface.
+## <a name="notes-for-implementers"></a>Notes pour les implémenteurs
+ Le gestionnaire de débogé de session (SDM) implémente généralement cette interface.
 
-## <a name="notes-for-callers"></a>Notes de publication pour les appelants
- Le moteur de débogage (dé) reçoit cette interface via un appel à [CreatePendingBreakpoint](../../../extensibility/debugger/reference/idebugengine2-creatependingbreakpoint.md) afin de créer un point d’arrêt en attente. Un appel à [GetBreakpointRequest](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-getbreakpointrequest.md) peut récupérer cette interface à partir de l’Allemagne.
+## <a name="notes-for-callers"></a>Notes pour les appelants
+ Le moteur de débogé (DE) reçoit cette interface par le biais d’un appel pour [créerPendingBreakpoint](../../../extensibility/debugger/reference/idebugengine2-creatependingbreakpoint.md) afin de créer un point d’arrêt en attente. Un appel à [GetBreakpointRequest](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-getbreakpointrequest.md) peut récupérer cette interface à partir de la DE.
 
 ## <a name="methods-in-vtable-order"></a>Méthodes dans l'ordre Vtable
- Le tableau suivant présente les méthodes de `IDebugBreakpointRequest2`.
+ Le tableau suivant montre `IDebugBreakpointRequest2`les méthodes de .
 
 |Méthode|Description|
 |------------|-----------------|
-|[GetLocationType](../../../extensibility/debugger/reference/idebugbreakpointrequest2-getlocationtype.md)|Obtient le type d’emplacement de point d’arrêt de cette demande de point d’arrêt.|
+|[GetLocationType](../../../extensibility/debugger/reference/idebugbreakpointrequest2-getlocationtype.md)|Obtient le type de localisation de point de rupture de cette demande de point d’arrêt.|
 |[GetRequestInfo](../../../extensibility/debugger/reference/idebugbreakpointrequest2-getrequestinfo.md)|Obtient les informations de demande de point d’arrêt qui décrit cette demande de point d’arrêt.|
 
 ## <a name="remarks"></a>Notes
- Une fois le programme en cours de débogage a été chargé, un appel à [lier](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-bind.md) lie un point d’arrêt en attente à l’emplacement demandé dans le programme.
+ Une fois que le programme a été déboqué, un appel à [Bind](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-bind.md) lie un point d’arrêt en attente à l’emplacement demandé dans le programme.
 
-## <a name="requirements"></a>Configuration requise
- En-tête : msdbg.h
+## <a name="requirements"></a>Spécifications
+ En-tête: msdbg.h
 
- Espace de noms : Microsoft.VisualStudio.Debugger.Interop
+ Namespace: Microsoft.VisualStudio.Debugger.Interop
 
- Assembly : Microsoft.VisualStudio.Debugger.Interop.dll
+ Assemblage: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>Voir aussi
 - [CreatePendingBreakpoint](../../../extensibility/debugger/reference/idebugengine2-creatependingbreakpoint.md)
 - [GetBreakpointRequest](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-getbreakpointrequest.md)
-- [Bind](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-bind.md)
+- [Lier](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-bind.md)

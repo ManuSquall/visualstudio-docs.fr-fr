@@ -78,7 +78,7 @@
           href: expression-evaluation-in-break-mode.md
         - name: Gestion des exceptions (SDK Visual Studio)
           href: exception-handling-visual-studio-sdk.md
-    - name: "Procédure\_: Déboguer un moteur de débogage personnalisé"
+    - name: Guide pratique pour déboguer un moteur de débogage personnalisé
       href: how-to-debug-a-custom-debug-engine.md
 - name: Bien démarrer avec l’extensibilité du débogueur
   items:

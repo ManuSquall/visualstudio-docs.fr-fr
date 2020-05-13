@@ -1,21 +1,21 @@
 ---
-title: IDebugCustomAttributeQuery | Microsoft Docs
+title: IDebugCustomAttributeQuery ( france) Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - IDebugCustomAttributeQuery interface
 ms.assetid: b804b619-70eb-4c38-80d9-c8b32b65ed3e
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ae0640b23ec7e206dac8b0aaeff605e6592b1fc5
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 598db5ad711c8b61339e188311c1a437a24d013c
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66322245"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80732613"
 ---
 # <a name="idebugcustomattributequery"></a>IDebugCustomAttributeQuery
 Représente une requête pour les attributs personnalisés sur une méthode ou un type.
@@ -27,16 +27,16 @@ IDebugCustomAttributeQuery : IUnknown
 ```
 
 ## <a name="methods"></a>Méthodes
- Cette interface implémente les méthodes suivantes :
+ Cette interface met en œuvre les méthodes suivantes :
 
 |Méthode|Description|
 |------------|-----------------|
-|[GetCustomAttributeByName](../../../extensibility/debugger/reference/idebugcustomattributequery-getcustomattributebyname.md)|Récupère un attribut personnalisé est fonction de son nom.|
-|[IsCustomAttributeDefined](../../../extensibility/debugger/reference/idebugcustomattributequery-iscustomattributedefined.md)|Détermine dans l’attribut personnalisé est défini.|
+|[GetCustomAttributeByName](../../../extensibility/debugger/reference/idebugcustomattributequery-getcustomattributebyname.md)|Récupère un attribut personnalisé donné son nom.|
+|[IsCustomAttributeDefined](../../../extensibility/debugger/reference/idebugcustomattributequery-iscustomattributedefined.md)|Détermine dans l’attribut personnalisé spécifié est défini.|
 
-## <a name="requirements"></a>Configuration requise
- En-tête : SH.h
+## <a name="requirements"></a>Spécifications
+ En-tête: Sh.h
 
- Espace de noms : Microsoft.VisualStudio.Debugger.Interop
+ Namespace: Microsoft.VisualStudio.Debugger.Interop
 
- Assembly : Microsoft.VisualStudio.Debugger.Interop.dll
+ Assemblage: Microsoft.VisualStudio.Debugger.Interop.dll

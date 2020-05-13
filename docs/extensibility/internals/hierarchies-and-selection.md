@@ -1,5 +1,5 @@
 ---
-title: Hiérarchies et sélection | Microsoft Docs
+title: Hiérarchies et Sélections (fr) Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -7,39 +7,39 @@ helpviewer_keywords:
 - selection
 - hierarchies
 ms.assetid: cad0a859-7a84-4ce5-b0a9-f7f64e5f8ebb
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d3d59a5160b5c20a3243426eaf1fda4b72e58e93
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: a0e38c2cea464abded5ecf6ee2c8ac087868b07e
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66328877"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80708138"
 ---
 # <a name="hierarchies-and-selection"></a>Hiérarchies et sélection
-Lorsque vous personnalisez [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], vous devez comprendre comment [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] gère les hiérarchies telles que les projets et comment il utilise le contexte de sélection pour déterminer ce qui est affiché à l’utilisateur. Cette section décrit les concepts de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] hiérarchies et sélection.
+Lorsque vous [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]personnalisez, [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] vous devez comprendre comment gère les hiérarchies telles que les projets et comment il utilise le contexte de sélection pour déterminer ce qui est affiché à l’utilisateur. Cette section traite [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] des concepts de hiérarchies et de sélection.
 
-## <a name="in-this-section"></a>Dans cette section
+## <a name="in-this-section"></a>Contenu de cette section
 - [Hiérarchies dans Visual Studio](../../extensibility/internals/hierarchies-in-visual-studio.md)
 
- Décrit le concept général de hiérarchies et les hiérarchies de projet.
+ Décrit les hiérarchies de projet et le concept général des hiérarchies.
 
-- [Sélection et la devise dans l’IDE](../../extensibility/internals/selection-and-currency-in-the-ide.md)
+- [Sélection et monnaie dans l’IDE](../../extensibility/internals/selection-and-currency-in-the-ide.md)
 
- Décrit comment la [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] l’environnement de développement intégré (IDE) conserve les informations sur les objets actuellement actif de l’utilisateur et permet d’effectuer le suivi de la devise VSPackages.
+ Décrit comment [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] l’environnement de développement intégré (IDE) conserve des informations sur les objets actuellement actifs de l’utilisateur et permet à VSPackages de suivre la monnaie.
 
-- [Objets de contexte de sélection](../../extensibility/internals/selection-context-objects.md)
+- [Objets contextuelles de sélection](../../extensibility/internals/selection-context-objects.md)
 
- Décrit le modèle pour comment vous pouvez déterminer le focus de contexte de sélection de l’utilisateur sur une fenêtre.
+ Discute du modèle pour savoir comment vous pouvez déterminer le contexte de sélection de l’utilisateur se concentrer sur une fenêtre.
 
-- [Vos commentaires à l’utilisateur](../../extensibility/internals/feedback-to-the-user.md)
+- [Commentaires à l’utilisateur](../../extensibility/internals/feedback-to-the-user.md)
 
- Explique comment les fonctionnalités disponibles dans [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] est basé sur le contexte de sélection actuel et le contexte IDE global de l’utilisateur.
+ Discute de la façon [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] dont les fonctionnalités disponibles sont basées sur le contexte de sélection actuel de l’utilisateur et le contexte global de l’IDE.
 
-## <a name="related-sections"></a>Rubriques connexes
-- [Architecture des types de projet](../../extensibility/internals/project-types-architecture.md)
+## <a name="related-sections"></a>Sections connexes
+- [Architecture de types de projets](../../extensibility/internals/project-types-architecture.md)
 
  Fournit des informations techniques détaillées sur les types de projets.

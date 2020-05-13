@@ -1,27 +1,27 @@
 ---
-title: Description, élément (modèles Visual Studio) | Microsoft Docs
+title: Élément de description (Modèles de studio visuel) Microsoft Docs
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
 helpviewer_keywords:
 - Description element [Visual Studio project templates]
 ms.assetid: 6e12be73-081f-4c7d-898f-027c307a9fe1
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 68b9df33051de1c4b4bb70321e0caff7df2e91f4
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 2ea10b43662d2818792dbc57aeac09a056cb63ce
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66348117"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80712261"
 ---
-# <a name="description-element-visual-studio-templates"></a>Description, élément (modèles Visual Studio)
-Spécifie la description du modèle tel qu’il apparaît dans un le **nouveau projet** ou **ajouter un nouvel élément** boîte de dialogue.
+# <a name="description-element-visual-studio-templates"></a>Élément de description (modèles Visual Studio)
+Spécifie la description du modèle tel qu’il apparaît dans le **nouveau projet** ou ajouter la boîte de dialogue **nouvel article.**
 
- \<VSTemplate > \<TemplateData > \<Description >
+ \<VSTemplate> \<TemplateData> \<Description>
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -42,8 +42,8 @@ Spécifie la description du modèle tel qu’il apparaît dans un le **nouveau p
 
 |Attribut|Description|
 |---------------|-----------------|
-|`Package`|Attribut facultatif, pour les scénarios complexes.<br /><br /> ID un GUID qui spécifie le package Visual Studio d'.|
-|`ID`|Attribut facultatif, pour les scénarios complexes.<br /><br /> Spécifie l’ID de ressource de Visual Studio.|
+|`Package`|Attribut facultatif, pour les scénarios d’utilisateur avancés.<br /><br /> Un GUID qui spécifie l’ID du package Visual Studio.|
+|`ID`|Attribut facultatif, pour les scénarios d’utilisateur avancés.<br /><br /> Spécifie l’ID de la ressource Visual Studio.|
 
 ### <a name="child-elements"></a>Éléments enfants
  Aucun.
@@ -55,15 +55,15 @@ Spécifie la description du modèle tel qu’il apparaît dans un le **nouveau p
 |[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Élément requis.<br /><br /> Définit la catégorie du modèle et comment il s’affiche dans la boîte de dialogue **Nouveau projet** ou **Ajouter un nouvel élément** .|
 
 ## <a name="text-value"></a>Valeur texte
- Une valeur de texte est obligatoire, sauf si le `Package` et `ID` attributs sont utilisés.
+ Une valeur texte est requise, sauf si les attributs `Package` et `ID` sont utilisés.
 
  Le texte fournit une description du modèle.
 
 ## <a name="remarks"></a>Notes
- `Description` est un élément enfant requis de l'élément `TemplateData`.
+ `Description`est un élément enfant `TemplateData` requis de l’élément.
 
 ## <a name="example"></a>Exemple
- L’exemple suivant montre les métadonnées d’un modèle de projet pour un [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] application.
+ L’exemple suivant montre les métadonnées [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] d’un modèle de projet pour une application.
 
 ```
 <VSTemplate Type="Project" Version="3.0.0"
@@ -90,5 +90,5 @@ Spécifie la description du modèle tel qu’il apparaît dans un le **nouveau p
 ```
 
 ## <a name="see-also"></a>Voir aussi
-- [Informations de référence sur les schémas de modèles Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
-- [Création de modèles de projets et d’éléments](../ide/creating-project-and-item-templates.md)
+- [Référence de schéma de modèle de studio visuel](../extensibility/visual-studio-template-schema-reference.md)
+- [Création de modèles de projets et d’objets](../ide/creating-project-and-item-templates.md)

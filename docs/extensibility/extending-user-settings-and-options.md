@@ -1,5 +1,5 @@
 ---
-title: Extension des Options et paramètres utilisateur | Microsoft Docs
+title: Élargir les paramètres et les options des utilisateurs ( Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -8,27 +8,27 @@ helpviewer_keywords:
 - Options dialog box, controlling with the Visual Studio SDK
 - VSPackages, user preferences
 ms.assetid: 5bb6277a-8c9d-48c8-9b4e-1cb3052caded
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4f7b8e1205f98aa701f816f42d7115a5d5ded959
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 854928c5461d60bb39b75d2895d8d1c8d0a0e8c5
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66342805"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80711557"
 ---
-# <a name="extend-user-settings-and-options"></a>Étendre les options et paramètres utilisateur
-Dans Visual Studio, il existe deux façons de mettre à jour les préférences de l’utilisateur. Le **outils** > **Options** pages permettent aux utilisateurs de définir leurs propres valeurs pour différents types de paramètres, générales et spécifiques au langage. Paramètres utilisateur permettent aux utilisateurs de spécifier les propriétés de configuration générales Visual Studio. Pour plus d’informations sur les pages d’options, consultez [Options et pages d’options](../extensibility/internals/options-and-options-pages.md). Pour plus d’informations sur les paramètres utilisateur, consultez [prise en charge pour les paramètres utilisateur](../extensibility/internals/support-for-user-settings.md).
+# <a name="extend-user-settings-and-options"></a>Étendre les paramètres et les options de l’utilisateur
+Dans Visual Studio, il existe deux façons principales de maintenir les préférences des utilisateurs. Les pages **Tools** > **Options** permettent aux utilisateurs de définir leurs propres valeurs pour de nombreux types de paramètres, à la fois généraux et spécifiques à la langue. Les paramètres de l’utilisateur permettent aux utilisateurs de spécifier les propriétés générales de configuration Visual Studio. Pour plus d’informations sur les pages d’options, consultez [les pages Options et options](../extensibility/internals/options-and-options-pages.md). Pour plus d’informations sur les paramètres des utilisateurs, voir [Support for user Settings](../extensibility/internals/support-for-user-settings.md).
 
-- [Créer une page d’options](../extensibility/creating-an-options-page.md) explique comment créer une page d’options.
+- [Créer une page d’options](../extensibility/creating-an-options-page.md) Explique comment créer une page d’options.
 
-- [Créer une catégorie de paramètres](../extensibility/creating-a-settings-category.md) explique comment créer une catégorie de paramètres.
+- [Créer une catégorie de paramètres](../extensibility/creating-a-settings-category.md) Explique comment créer une catégorie de paramètres.
 
-- [Utiliser la banque de paramètres](../extensibility/using-the-settings-store.md) explique comment utiliser la banque de paramètres.
+- [Utilisez le magasin de paramètres](../extensibility/using-the-settings-store.md) Explique comment utiliser le magasin de paramètres.
 
-- [Obtenir des informations de service à partir de la banque de paramètres](../extensibility/getting-service-information-from-the-settings-store.md) explique comment obtenir les services disponibles à partir de la banque de paramètres.
+- [Obtenez des informations de service à partir du magasin de paramètres](../extensibility/getting-service-information-from-the-settings-store.md) Explique comment obtenir les services disponibles à partir du magasin de paramètres.
 
-- [Écrire dans la banque de paramètres utilisateur](../extensibility/writing-to-the-user-settings-store.md) explique comment écrire dans la banque de paramètres utilisateur.
+- [Écrivez au magasin de paramètres utilisateur](../extensibility/writing-to-the-user-settings-store.md) Explique comment écrire au magasin de paramètres de l’utilisateur.

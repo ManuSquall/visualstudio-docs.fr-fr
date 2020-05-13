@@ -6,11 +6,11 @@ ms.author: johmil
 ms.date: 07/17/2017
 ms.assetid: 83FDD7A3-5D16-4B4B-9080-078E3FB5C623
 ms.openlocfilehash: d4df59273db1fab8492b36e87e48e0e770072f17
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62987278"
+ms.lasthandoff: 03/20/2020
+ms.locfileid: "79303294"
 ---
 # <a name="using-visual-studio-for-mac-tools-for-unity"></a>Utilisation des outils Visual Studio pour Mac pour Unity
 
@@ -29,7 +29,7 @@ Visual Studio pour Mac peut aussi être ouvert sans ouvrir de script dans l’é
 Les outils Visual Studio pour Mac pour Unity offrent un raccourci pour accéder à la documentation de l’API Unity. Pour accéder à la documentation de l’API Unity à partir de Visual Studio pour Mac, placez le curseur sur l’API Unity pour laquelle vous souhaitez obtenir des informations, puis appuyez sur **Commande ⌘ + ‘**.
 
 ## <a name="intellisense-for-unity-messages"></a>IntelliSense pour les messages Unity
-Le moteur Unity diffuse des messages aux scripts MonoBehaviour, ce qui permet aux développeurs d’écrire du code qui réagit aux messages comme OnMouseDown, OnTriggerEnter, etc. Parce qu’il ne s’agit pas de méthodes virtuelles dans la classe de base MonoBehaviour, certains IDE comme MonoDevelop n’ont pas de fonctionnalité de complétion du code pour les messages Unity.
+Le moteur Unity diffuse des messages sur des scripts MonoBehaviour, permettant aux développeurs d’écrire du code qui réagit à des messages tels que OnMouseDown, OnTriggerEnter, etc. Parce que ce ne sont pas des méthodes virtuelles dans la classe MonoBehaviour de base, certaines IDEs telles que MonoDevelop manquent de fonctionnalités d’achèvement de code pour les messages Unity.
 
 Toutefois, les outils Visual Studio pour Mac pour Unity étendent leur fonctionnalité IntelliSense aux messages Unity. De cette façon, l’implémentation des messages Unity dans les scripts MonoBehaviour est plus facile, de même que l’apprentissage de l’API Unity. Pour utiliser IntelliSense pour les messages Unity :
 
@@ -71,7 +71,7 @@ Pour ajouter un nouveau script C# MonoBehaviour, **cliquez avec le bouton droit 
 
 ### <a name="add-a-new-unity-shader"></a>Ajouter un nouveau nuanceur Unity
 
-Pour ajouter un nouveau nuanceur Unity, **cliquez avec le bouton droit sur le dossier Ressources** ou sur un sous-répertoire dans le panneau Solutions, puis sélectionnez **Ajouter > Nouveau nuanceur**.
+Pour ajouter un nouvel ombreur Unity, cliquez à droite sur le dossier Assets ou une **sous-direction** dans le bloc de solution et **sélectionnez Ajouter > New Shader**.
 
 ### <a name="add-a-new-folder"></a>Ajouter un nouveau dossier
 

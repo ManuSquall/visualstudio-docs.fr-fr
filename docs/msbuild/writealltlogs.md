@@ -10,19 +10,20 @@ apitype: COM
 helpviewer_keywords:
 - WriteAllTLogs
 ms.assetid: 1fa3e10b-263c-4960-a9ad-485c02a7a872
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ee3f02be5494f85c0fa36be510f0a0c25caf53b6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 7eadb30ee25b1182be5deb12feebd5ef280ebf4b
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62778441"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "77630676"
 ---
 # <a name="writealltlogs"></a>WriteAllTLogs
+
 Écrit les journaux de suivi pour tous les threads et tous les contextes.
 
 ## <a name="syntax"></a>Syntaxe
@@ -32,6 +33,7 @@ HRESULT WINAPI WriteAllTLogs(LPCTSTR intermediateDirectory, LPCTSTR tlogRootName
 ```
 
 #### <a name="parameters"></a>Paramètres
+
 [in] `intermediateDirectory`
 
  Répertoire où stocker le journal de suivi.
@@ -40,11 +42,14 @@ HRESULT WINAPI WriteAllTLogs(LPCTSTR intermediateDirectory, LPCTSTR tlogRootName
 
  Nom racine du nom du fichier journal.
 
-## <a name="return-value"></a>Valeur de retour
- **HRESULT** avec le bit **SUCCEEDED** défini si le contexte de suivi a été créé.
+## <a name="return-value"></a>Valeur retournée
+
+ Un **HRESULT** avec l’ensemble de bits **SUCCEEDED** si le contexte de suivi a été créé.
 
 ## <a name="requirements"></a>Spécifications
+
  **En-tête :** *FileTracker.h*
 
 ## <a name="see-also"></a>Voir aussi
+
 - [WriteContextTLogs](../msbuild/writecontexttlogs.md)

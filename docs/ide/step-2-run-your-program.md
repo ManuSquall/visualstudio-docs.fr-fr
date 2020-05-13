@@ -1,69 +1,69 @@
 ---
-title: 'Étape 2 : exécuter votre application visionneuse d’images'
+title: 'Étape 2 : Exécutez votre application de visionneuse d’images'
 ms.date: 09/06/2019
 ms.assetid: 9a8fe90e-c97b-4e98-b6c8-0c6b3962c49d
 ms.topic: tutorial
 ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
-author: TerryGLee
-ms.author: tglee
+author: ornellaalt
+ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9ee63c88bdca5f096fb5fbb8f36be0e2af8fbade
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 8204f2a32a1bb29203c75af55aa383141f17853f
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75588744"
+ms.lasthandoff: 03/20/2020
+ms.locfileid: "77579405"
 ---
-# <a name="step-2-run-your-picture-viewer-app"></a>Étape 2 : exécuter votre application visionneuse d’images
+# <a name="step-2-run-your-picture-viewer-app"></a>Étape 2 : Exécutez votre application de visionneuse d’images
 
-Lorsque vous créez un projet d’application Windows Forms, vous générez en fait un programme qui exécute. Dans ce didacticiel, votre application visionneuse d’images n’est pas encore plus&mdash;bien que cela fonctionne. Pour le moment, elle affiche une fenêtre vide qui affiche **Form1** dans la barre de titre.
+Lorsque vous créez un projet Windows Forms App, vous créez en fait un programme qui s’exécute. Dans ce tutoriel, votre application de visionneuse d’images ne fait pas encore&mdash;grand-chose bien qu’elle le fera. Pour l’instant, il affiche une fenêtre vide qui montre **Form1** dans la barre de titre.
 
 Voici comment exécuter votre application. 
 
-1. Choisissez l’une des méthodes suivantes :
+1. Choisissez l’une des méthodes suivantes :
 
     - Choisissez la touche **F5**.
 
-    - Dans la barre de menus, choisissez **Débogage** > **Démarrer le débogage**.
+    - Sur la barre de menu, choisissez **Debug** > **Start Debugging**.
 
-    - Dans la barre d’outils, choisissez le bouton **Démarrer le débogage** , qui se présente comme suit :
+    - Sur la barre d’outils, choisissez le bouton **Démarrer Debugging,** qui apparaît comme suit :
 
-      ![bouton Démarrer le débogage de la barre d’outils](../ide/media/express_icondebug.png)<br>
-      Bouton ***Démarrer le débogage*** de la *barre d’outils*
+      ![Bouton de barre d'outils Démarrer le débogage](../ide/media/express_icondebug.png)<br>
+      Démarrer le bouton de *barre d’outils* ***Debugging***
 
-1. Visual Studio exécute votre application et une fenêtre nommée **Form1** s’affiche. La capture d’écran suivante montre l’application que vous venez de créer. L’application est en cours d’exécution, et vous y ajoutez bientôt.
+1. Visual Studio exécute votre application, et une fenêtre appelée **Form1** apparaît. La capture d’écran suivante montre l’application que vous venez de construire. L’application est en cours d’exécution, et vous allez bientôt ajouter à elle.
 
-     ![Windows Forms application en cours d’exécution](../ide/media/express_firstrun.png)<br>
-***Application Windows Forms***, *exécution en cours*
+     ![Windows Forms app en cours d’exécution](../ide/media/express_firstrun.png)<br>
+***Windows Forms App***, *en cours d’exécution*
 
-1. Revenez à l’environnement de développement intégré (IDE) de Visual Studio, puis examinez la nouvelle barre d’outils. Des boutons supplémentaires apparaissent dans la barre d’outils lorsque vous exécutez une application. Ces boutons vous permettent d’effectuer des opérations telles que arrêter et démarrer votre application, et vous aider à identifier les erreurs (bogues) qu’elle peut avoir. Pour cet exemple, nous l’utilisons pour démarrer et arrêter l’application.
+1. Retournez à l’environnement de développement intégré Visual Studio (IDE), puis regardez la nouvelle barre d’outils. Des boutons supplémentaires apparaissent sur la barre d’outils lorsque vous exécutez une application. Ces boutons vous permettent de faire des choses comme arrêter et démarrer votre application, et vous aider à traquer toutes les erreurs (bugs) qu’il peut avoir. Pour cet exemple, nous l’utilisons pour démarrer et arrêter l’application.
 
-     barre d’outils de débogage ![](../ide/media/express_debugtoolbar.png)<br>
-*Barre d’outils* de ***débogage***
+     ![Barre d’outils de débâage](../ide/media/express_debugtoolbar.png)<br>
+***Barre d’outils de débâage*** *toolbar*
 
-1. Utilisez l’une des méthodes suivantes pour arrêter votre application :
+1. Utilisez l’une des méthodes suivantes pour arrêter votre application :
 
     - Dans la barre d’outils, choisissez le bouton **Arrêter le débogage**.
 
-    - Dans la barre de menus, choisissez **Débogage** > **Arrêter le débogage**.
+    - Sur la barre de menu, choisissez **Debug** > **Stop Debugging**.
 
-    - À l’aide de votre clavier, appuyez sur **maj**+**F5**.
+    - Utilisez votre clavier et appuyez sur **Shift**+**F5**.
 
-    - Choisissez le bouton **X** dans l’angle supérieur de la fenêtre **Form1**.
+    - Choisissez le bouton **X** dans le coin supérieur de la fenêtre **Form1.**
 
     > [!NOTE]
-    > Quand vous exécutez votre application à partir de l’IDE, on parle de débogage, car vous le faites généralement pour rechercher et corriger les bogues (erreurs) dans l’application. Bien que cette application soit petite et ne fait pas encore grand-chose, il s’agit toujours d’un programme réel. Vous suivez la même procédure pour exécuter et déboguer d'autres programmes. Pour en savoir plus sur le débogage, consultez [Présentation du débogueur](../debugger/debugger-feature-tour.md).
+    > Lorsque vous exécutez votre application de l’intérieur de l’IDE, c’est ce qu’on appelle le débogage parce que vous le faites généralement pour localiser et corriger les bogues (erreurs) dans l’application. Bien que cette application est petite et ne fait pas beaucoup encore, c’est toujours un vrai programme. Vous suivez la même procédure pour exécuter et déboguer d'autres programmes. Pour en savoir plus sur le débogage, consultez [Présentation du débogueur](../debugger/debugger-feature-tour.md).
 
-## <a name="next-steps"></a>Étapes suivantes :
+## <a name="next-steps"></a>Étapes suivantes
 
-* Pour passer à l’étape suivante du didacticiel, consultez **[étape 3 : définir les propriétés de votre formulaire](../ide/step-3-set-your-form-properties.md)** .
+* Pour passer à l’étape suivante tutoriel, voir **[Étape 3: Définir vos propriétés de formulaire](../ide/step-3-set-your-form-properties.md)**.
 
-* Pour revenir à l’étape précédente du didacticiel, consultez [étape 1 : créer un projet d’application Windows Forms](../ide/step-1-create-a-windows-forms-application-project.md).
+* Pour revenir à l’étape du tutoriel précédent, voir [étape 1: Créer un projet Windows Forms App](../ide/step-1-create-a-windows-forms-application-project.md).
 
 ## <a name="see-also"></a>Voir aussi
 
-* [Didacticiel 2 : créer un questionnaire mathématique chronométré](tutorial-2-create-a-timed-math-quiz.md)
-* [Didacticiel 3 : créer un jeu de combinaisons](tutorial-3-create-a-matching-game.md)
+* [Tutorial 2: Créer un quiz de mathématiques chronométré](tutorial-2-create-a-timed-math-quiz.md)
+* [Tutorial 3: Créer un jeu correspondant](tutorial-3-create-a-matching-game.md)

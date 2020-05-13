@@ -1,6 +1,6 @@
 ---
 title: Paramètres des conventions de codage .NET pour EditorConfig
-ms.date: 02/21/2020
+ms.date: 03/17/2020
 ms.topic: reference
 helpviewer_keywords:
 - coding conventions [EditorConfig]
@@ -13,20 +13,20 @@ manager: jillfra
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: e3ca9ed577fd253c81919f49a67c8286fbe28255
-ms.sourcegitcommit: bf2e9d4ff38bf5b62b8af3da1e6a183beb899809
+ms.openlocfilehash: 41d183a757aefd198c282ec84cd6cbe0ef37c933
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2020
-ms.locfileid: "77557792"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79508951"
 ---
 # <a name="net-coding-convention-settings-for-editorconfig"></a>Paramètres des conventions de codage .NET pour EditorConfig
 
-Vous pouvez définir et maintenir un style de code cohérent dans votre base de code à l’aide d’un fichier [EditorConfig](../ide/create-portable-custom-editor-options.md) . EditorConfig inclut plusieurs propriétés de mise en forme de base, telles que `indent_style` et `indent_size`. Dans Visual Studio, les paramètres des conventions de codage .NET peuvent également être configurés à l’aide d’un fichier EditorConfig. Vous pouvez activer ou désactiver des conventions de codage .NET spécifiques, et configurer le degré d’application de chaque règle au moyen d’un niveau de gravité.
+Vous pouvez définir et maintenir un style de code cohérent dans votre base de code en utilisant un fichier [EditorConfig.](../ide/create-portable-custom-editor-options.md) EditorConfig inclut plusieurs propriétés de mise en forme de base, telles que `indent_style` et `indent_size`. Dans Visual Studio, les paramètres des conventions de codage .NET peuvent également être configurés à l’aide d’un fichier EditorConfig. Vous pouvez activer ou désactiver des conventions de codage .NET spécifiques, et configurer le degré d’application de chaque règle au moyen d’un niveau de gravité.
 
 > [!TIP]
-> - Quand vous définissez des conventions de codage dans un fichier EditorConfig, vous configurez la façon dont vous souhaitez que les [analyseurs de style de code](../code-quality/roslyn-analyzers-overview.md) intégrés dans Visual Studio analysent votre code. Le fichier EditorConfig est le fichier de configuration pour ces analyseurs.
-> - Les préférences de style de code de Visual Studio peuvent également être définies dans la boîte de dialogue [Options de l’éditeur de texte](code-styles-and-code-cleanup.md). Toutefois, les paramètres EditorConfig sont prioritaires et les préférences que vous définissez dans les **options** ne sont pas associées à un projet particulier.
+> - Lorsque vous définissez les conventions de codage dans un fichier EditorConfig, vous configurez comment vous voulez que [les analyseurs](../code-quality/roslyn-analyzers-overview.md) de style de code qui sont intégrés dans Visual Studio pour analyser votre code. Le fichier EditorConfig est le fichier de configuration de ces analyseurs.
+> - Les préférences de style de code de Visual Studio peuvent également être définies dans la boîte de dialogue [Options de l’éditeur de texte](code-styles-and-code-cleanup.md). Toutefois, les paramètres EditorConfig ont préséance et les préférences que vous définissez dans **Options** ne sont pas associées à un projet particulier.
 
 ## <a name="convention-categories"></a>Catégories de conventions
 
@@ -40,45 +40,43 @@ Trois catégories de conventions de codage .NET sont prises en charge :
 
    Règles relatives à la disposition et la structure de votre code pour en faciliter la lecture. Par exemple, vous pouvez spécifier des règles régissant les accolades Allman ou l’utilisation préférentielle d’espaces dans les blocs de contrôle.
 
-- [Conventions d’affectation de noms](../ide/editorconfig-naming-conventions.md)
+- [Conventions de nommage](../ide/editorconfig-naming-conventions.md)
 
    Règles régissant la façon dont les éléments de code sont nommés. Par exemple, vous pouvez spécifier que les méthodes `async` doivent se terminer par "Async".
 
 ## <a name="example-editorconfig-file"></a>Exemple de fichier EditorConfig
 
-Pour vous aider à démarrer, voici un exemple de fichier *. editorconfig* avec les options par défaut. Dans Visual Studio, vous pouvez générer ce fichier et l’enregistrer dans un projet à l’adresse **outils** > **options** > éditeur de**C#** **texte** > [ou de **base**] > **style de code** > **général**. Ensuite, cliquez sur le bouton **générer le fichier. editorconfig à partir des paramètres** . Pour plus d’informations, consultez [Préférences de style de code](code-styles-and-code-cleanup.md).
+Pour vous aider à démarrer, voici un exemple *.editorconfig* fichier avec les options par défaut. Dans Visual Studio, vous pouvez générer ce fichier et l’enregistrer dans un projet à **Tools** > **Options** > **Text Editor** > [ C **'** ou **Basic**] > **Code Style** > **General**. Ensuite, cliquez sur le **fichier Generate .editorconfig à partir du** bouton paramètres. Pour plus d’informations, voir [préférences de style Code](code-styles-and-code-cleanup.md).
 
 ```ini
-###############################
-# Core EditorConfig Options   #
-###############################
-
+# Remove the line below if you want to inherit .editorconfig settings from higher directories
 root = true
 
-# All files
-[*]
-indent_style = space
+# C# files
+[*.cs]
 
-# Code files
-[*.{cs,csx,vb,vbx}]
+#### Core EditorConfig Options ####
+
+# Indentation and spacing
 indent_size = 4
-insert_final_newline = true
-charset = utf-8-bom
+indent_style = space
+tab_width = 4
 
-###############################
-# .NET Coding Conventions     #
-###############################
+# New line preferences
+end_of_line = crlf
+insert_final_newline = false
 
-[*.{cs,vb}]
+#### .NET Coding Conventions ####
 
 # Organize usings
-dotnet_sort_system_directives_first = true
+dotnet_separate_import_directive_groups = false
+dotnet_sort_system_directives_first = false
 
-# this. preferences
-dotnet_style_qualification_for_field = false:silent
-dotnet_style_qualification_for_property = false:silent
-dotnet_style_qualification_for_method = false:silent
+# this. and Me. preferences
 dotnet_style_qualification_for_event = false:silent
+dotnet_style_qualification_for_field = false:silent
+dotnet_style_qualification_for_method = false:silent
+dotnet_style_qualification_for_property = false:silent
 
 # Language keywords vs BCL types preferences
 dotnet_style_predefined_type_for_locals_parameters_members = true:silent
@@ -86,126 +84,177 @@ dotnet_style_predefined_type_for_member_access = true:silent
 
 # Parentheses preferences
 dotnet_style_parentheses_in_arithmetic_binary_operators = always_for_clarity:silent
-dotnet_style_parentheses_in_relational_binary_operators = always_for_clarity:silent
 dotnet_style_parentheses_in_other_binary_operators = always_for_clarity:silent
 dotnet_style_parentheses_in_other_operators = never_if_unnecessary:silent
+dotnet_style_parentheses_in_relational_binary_operators = always_for_clarity:silent
 
 # Modifier preferences
 dotnet_style_require_accessibility_modifiers = for_non_interface_members:silent
-dotnet_style_readonly_field = true:suggestion
 
 # Expression-level preferences
-dotnet_style_object_initializer = true:suggestion
+dotnet_style_coalesce_expression = true:suggestion
 dotnet_style_collection_initializer = true:suggestion
 dotnet_style_explicit_tuple_names = true:suggestion
 dotnet_style_null_propagation = true:suggestion
-dotnet_style_coalesce_expression = true:suggestion
-dotnet_style_prefer_is_null_check_over_reference_equality_method = true:silent
-dotnet_style_prefer_inferred_tuple_names = true:suggestion
-dotnet_style_prefer_inferred_anonymous_type_member_names = true:suggestion
+dotnet_style_object_initializer = true:suggestion
 dotnet_style_prefer_auto_properties = true:silent
+dotnet_style_prefer_compound_assignment = true:suggestion
 dotnet_style_prefer_conditional_expression_over_assignment = true:silent
 dotnet_style_prefer_conditional_expression_over_return = true:silent
+dotnet_style_prefer_inferred_anonymous_type_member_names = true:suggestion
+dotnet_style_prefer_inferred_tuple_names = true:suggestion
+dotnet_style_prefer_is_null_check_over_reference_equality_method = true:suggestion
+dotnet_style_prefer_simplified_interpolation = true:suggestion
 
-###############################
-# Naming Conventions          #
-###############################
+# Field preferences
+dotnet_style_readonly_field = true:suggestion
 
-# Style Definitions
-dotnet_naming_style.pascal_case_style.capitalization             = pascal_case
-# Use PascalCase for constant fields  
-dotnet_naming_rule.constant_fields_should_be_pascal_case.severity = suggestion
-dotnet_naming_rule.constant_fields_should_be_pascal_case.symbols  = constant_fields
-dotnet_naming_rule.constant_fields_should_be_pascal_case.style    = pascal_case_style
-dotnet_naming_symbols.constant_fields.applicable_kinds            = field
-dotnet_naming_symbols.constant_fields.applicable_accessibilities  = *
-dotnet_naming_symbols.constant_fields.required_modifiers          = const
+# Parameter preferences
+dotnet_code_quality_unused_parameters = all:suggestion
 
-###############################
-# C# Coding Conventions       #
-###############################
-
-[*.cs]
+#### C# Coding Conventions ####
 
 # var preferences
-csharp_style_var_for_built_in_types = true:silent
-csharp_style_var_when_type_is_apparent = true:silent
-csharp_style_var_elsewhere = true:silent
+csharp_style_var_elsewhere = false:silent
+csharp_style_var_for_built_in_types = false:silent
+csharp_style_var_when_type_is_apparent = false:silent
 
 # Expression-bodied members
-csharp_style_expression_bodied_methods = false:silent
+csharp_style_expression_bodied_accessors = true:silent
 csharp_style_expression_bodied_constructors = false:silent
+csharp_style_expression_bodied_indexers = true:silent
+csharp_style_expression_bodied_lambdas = true:silent
+csharp_style_expression_bodied_local_functions = false:silent
+csharp_style_expression_bodied_methods = false:silent
 csharp_style_expression_bodied_operators = false:silent
 csharp_style_expression_bodied_properties = true:silent
-csharp_style_expression_bodied_indexers = true:silent
-csharp_style_expression_bodied_accessors = true:silent
 
 # Pattern matching preferences
-csharp_style_pattern_matching_over_is_with_cast_check = true:suggestion
 csharp_style_pattern_matching_over_as_with_null_check = true:suggestion
+csharp_style_pattern_matching_over_is_with_cast_check = true:suggestion
+csharp_style_prefer_switch_expression = true:suggestion
 
 # Null-checking preferences
-csharp_style_throw_expression = true:suggestion
 csharp_style_conditional_delegate_call = true:suggestion
 
 # Modifier preferences
-csharp_preferred_modifier_order = public,private,protected,internal,static,extern,new,virtual,abstract,sealed,override,readonly,unsafe,volatile,async:suggestion
+csharp_prefer_static_local_function = true:suggestion
+csharp_preferred_modifier_order = public,private,protected,internal,static,extern,new,virtual,abstract,sealed,override,readonly,unsafe,volatile,async:silent
+
+# Code-block preferences
+csharp_prefer_braces = true:silent
+csharp_prefer_simple_using_statement = true:suggestion
 
 # Expression-level preferences
-csharp_prefer_braces = true:silent
-csharp_style_deconstructed_variable_declaration = true:suggestion
 csharp_prefer_simple_default_expression = true:suggestion
-csharp_style_pattern_local_over_anonymous_function = true:suggestion
+csharp_style_deconstructed_variable_declaration = true:suggestion
 csharp_style_inlined_variable_declaration = true:suggestion
+csharp_style_pattern_local_over_anonymous_function = true:suggestion
+csharp_style_prefer_index_operator = true:suggestion
+csharp_style_prefer_range_operator = true:suggestion
+csharp_style_throw_expression = true:suggestion
+csharp_style_unused_value_assignment_preference = discard_variable:suggestion
+csharp_style_unused_value_expression_statement_preference = discard_variable:silent
 
-###############################
-# C# Formatting Rules         #
-###############################
+# 'using' directive preferences
+csharp_using_directive_placement = outside_namespace:silent
+
+#### C# Formatting Rules ####
 
 # New line preferences
-csharp_new_line_before_open_brace = all
-csharp_new_line_before_else = true
 csharp_new_line_before_catch = true
+csharp_new_line_before_else = true
 csharp_new_line_before_finally = true
-csharp_new_line_before_members_in_object_initializers = true
 csharp_new_line_before_members_in_anonymous_types = true
+csharp_new_line_before_members_in_object_initializers = true
+csharp_new_line_before_open_brace = all
 csharp_new_line_between_query_expression_clauses = true
 
 # Indentation preferences
+csharp_indent_block_contents = true
+csharp_indent_braces = false
 csharp_indent_case_contents = true
+csharp_indent_case_contents_when_block = true
+csharp_indent_labels = one_less_than_current
 csharp_indent_switch_labels = true
-csharp_indent_labels = flush_left
 
 # Space preferences
 csharp_space_after_cast = false
+csharp_space_after_colon_in_inheritance_clause = true
+csharp_space_after_comma = true
+csharp_space_after_dot = false
 csharp_space_after_keywords_in_control_flow_statements = true
+csharp_space_after_semicolon_in_for_statement = true
+csharp_space_around_binary_operators = before_and_after
+csharp_space_around_declaration_statements = false
+csharp_space_before_colon_in_inheritance_clause = true
+csharp_space_before_comma = false
+csharp_space_before_dot = false
+csharp_space_before_open_square_brackets = false
+csharp_space_before_semicolon_in_for_statement = false
+csharp_space_between_empty_square_brackets = false
+csharp_space_between_method_call_empty_parameter_list_parentheses = false
+csharp_space_between_method_call_name_and_opening_parenthesis = false
 csharp_space_between_method_call_parameter_list_parentheses = false
+csharp_space_between_method_declaration_empty_parameter_list_parentheses = false
+csharp_space_between_method_declaration_name_and_open_parenthesis = false
 csharp_space_between_method_declaration_parameter_list_parentheses = false
 csharp_space_between_parentheses = false
-csharp_space_before_colon_in_inheritance_clause = true
-csharp_space_after_colon_in_inheritance_clause = true
-csharp_space_around_binary_operators = before_and_after
-csharp_space_between_method_declaration_empty_parameter_list_parentheses = false
-csharp_space_between_method_call_name_and_opening_parenthesis = false
-csharp_space_between_method_call_empty_parameter_list_parentheses = false
+csharp_space_between_square_brackets = false
 
 # Wrapping preferences
-csharp_preserve_single_line_statements = true
 csharp_preserve_single_line_blocks = true
+csharp_preserve_single_line_statements = true
 
-###############################
-# VB Coding Conventions       #
-###############################
+#### Naming styles ####
 
-[*.vb]
+# Naming rules
 
-# Modifier preferences
-visual_basic_preferred_modifier_order = Partial,Default,Private,Protected,Public,Friend,NotOverridable,Overridable,MustOverride,Overloads,Overrides,MustInherit,NotInheritable,Static,Shared,Shadows,ReadOnly,WriteOnly,Dim,Const,WithEvents,Widening,Narrowing,Custom,Async:suggestion
+dotnet_naming_rule.interface_should_be_begins_with_i.severity = suggestion
+dotnet_naming_rule.interface_should_be_begins_with_i.symbols = interface
+dotnet_naming_rule.interface_should_be_begins_with_i.style = begins_with_i
+
+dotnet_naming_rule.types_should_be_pascal_case.severity = suggestion
+dotnet_naming_rule.types_should_be_pascal_case.symbols = types
+dotnet_naming_rule.types_should_be_pascal_case.style = pascal_case
+
+dotnet_naming_rule.non_field_members_should_be_pascal_case.severity = suggestion
+dotnet_naming_rule.non_field_members_should_be_pascal_case.symbols = non_field_members
+dotnet_naming_rule.non_field_members_should_be_pascal_case.style = pascal_case
+
+# Symbol specifications
+
+dotnet_naming_symbols.interface.applicable_kinds = interface
+dotnet_naming_symbols.interface.applicable_accessibilities = public, internal, private, protected, protected_internal, private_protected
+dotnet_naming_symbols.interface.required_modifiers =
+
+dotnet_naming_symbols.types.applicable_kinds = class, struct, interface, enum
+dotnet_naming_symbols.types.applicable_accessibilities = public, internal, private, protected, protected_internal, private_protected
+dotnet_naming_symbols.types.required_modifiers =
+
+dotnet_naming_symbols.non_field_members.applicable_kinds = property, event, method
+dotnet_naming_symbols.non_field_members.applicable_accessibilities = public, internal, private, protected, protected_internal, private_protected
+dotnet_naming_symbols.non_field_members.required_modifiers =
+
+# Naming styles
+
+dotnet_naming_style.pascal_case.required_prefix =
+dotnet_naming_style.pascal_case.required_suffix =
+dotnet_naming_style.pascal_case.word_separator =
+dotnet_naming_style.pascal_case.capitalization = pascal_case
+
+dotnet_naming_style.begins_with_i.required_prefix = I
+dotnet_naming_style.begins_with_i.required_suffix =
+dotnet_naming_style.begins_with_i.word_separator =
+dotnet_naming_style.begins_with_i.capitalization = pascal_case
 ```
+
+> [!NOTE]
+> Pour plus d’informations sur les catégories de congrès de codage .NET prises en charge, consultez les [conventions linguistiques,](../ide/editorconfig-language-conventions.md) [les conventions de formatage](../ide/editorconfig-formatting-conventions.md)et les pages [des conventions de nommage.](../ide/editorconfig-naming-conventions.md)
 
 ## <a name="see-also"></a>Voir aussi
 
 - [Actions rapides](../ide/quick-actions.md)
-- [Créer des options d’éditeur personnalisées et portables](../ide/create-portable-custom-editor-options.md)
-- [.NET Compiler Platform le fichier « Roslyn ». editorconfig](https://github.com/dotnet/roslyn/blob/master/.editorconfig)
-- [Fichier .NET Compiler Platform Runtime. editorconfig](https://github.com/dotnet/runtime/blob/master/.editorconfig)
+- [Créer des options d’éditeur personnalisé portables](../ide/create-portable-custom-editor-options.md)
+- [.NET Compiler Platform "Roslyn" .editorconfig fichier](https://github.com/dotnet/roslyn/blob/master/.editorconfig)
+- [.NET Compiler Platform Runtime .editorconfig fichier](https://github.com/dotnet/runtime/blob/master/.editorconfig)

@@ -12,15 +12,15 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 4a52d660140416ce829493a733171cfcf64ebbe4
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75595928"
 ---
 # <a name="edit-the-test-mix-to-specify-which-web-performance-unit-and-coded-ui-tests-to-include-in-a-load-test-scenario"></a>Modifier la combinaison de tests pour spécifier les tests de performances web, les tests unitaires et les tests codés de l’interface utilisateur à inclure dans un scénario de test de charge
 
-La *combinaison de tests* d’un scénario associe la sélection des tests de performances web et des tests unitaires contenus dans le scénario, et la distribution de ces tests dans le scénario. La distribution est un paramètre que vous pouvez spécifier pour la probabilité qu'un test particulier sera sélectionné par un utilisateur virtuel durant une série de tests de charge.
+Le mélange de *test* d’un scénario est une combinaison de la sélection des performances Web et des tests unitaires qui sont contenus dans le scénario et la distribution de ces tests dans le scénario. La distribution est un paramètre que vous pouvez spécifier pour la probabilité qu'un test particulier sera sélectionné par un utilisateur virtuel durant une série de tests de charge.
 
 Une fois que vous avez ajouté un ensemble de tests à un test de charge, la *combinaison de tests* fonctionne comme les autres options de combinaison. Un utilisateur virtuel sélectionne de manière aléatoire un test, selon la probabilité que vous avez spécifiée dans la combinaison. Par exemple, si vous avez deux tests, chacun représentant 50 % de la combinaison, un nouvel utilisateur virtuel choisit d'exécuter le premier test environ une fois sur deux. Dans une combinaison 50/50, si un test est long et que l'autre est court, une charge plus importante provient du test long.
 
@@ -43,11 +43,11 @@ Vous pouvez ajouter d'autres tests de performances web et tests unitaires à la 
 
 1. Ouvrez un test de charge.
 
-2. Dans l’**éditeur de test de charge**, cliquez avec le bouton droit sur un scénario existant, puis choisissez **Ajouter des tests**.
+2. Dans **l’éditeur de test de charge**, cliquez à droite sur un scénario existant, puis choisissez Add **Tests**.
 
      La boîte de dialogue **Ajouter des tests** s’affiche. Tous les tests de performances web, tests unitaires et tests codés de l'interface utilisateur de votre solution qui ne figurent pas déjà dans votre scénario peuvent y être ajoutés.
 
-3. Dans le volet **Tests disponibles**, sélectionnez les tests de performances web, les tests unitaires et les tests codés de l’interface utilisateur à ajouter. Choisissez la flèche droite pour ajouter les tests au volet **Tests sélectionnés**.
+3. Dans le volet **de tests disponibles,** sélectionnez les performances Web, l’unité et les tests d’interface utilisateur codés que vous souhaitez ajouter. Choisissez la flèche droite pour ajouter les tests au volet **Tests sélectionnés**.
 
 4. Une fois que vous avez fini d’ajouter les tests, choisissez **OK**.
 
@@ -62,16 +62,16 @@ Vous pouvez ajouter d'autres tests de performances web et tests unitaires à la 
 
 1. Ouvrez un test de charge.
 
-2. Dans l’**éditeur de test de charge**, dans l’arborescence des tests de charge, cliquez avec le bouton droit sur le scénario dont vous souhaitez supprimer un test, puis sélectionnez **Modifier la combinaison de tests**. La boîte de dialogue **Modifier la combinaison de tests** s’affiche.
+2. Dans **l’éditeur de test de charge**, dans l’arbre d’essai de charge, cliquez à droite sur le scénario à partir duquel vous souhaitez supprimer un test et sélectionner Edit Test **Mix**. La boîte de dialogue **Modifier la combinaison de tests** s’affiche.
 
-3. Sélectionnez le test de performances web, le test unitaire ou le test codé de l’interface utilisateur dans la grille, puis choisissez **Supprimer**.
+3. Sélectionnez le test d’interface utilisateur, d’unité ou de code dans la grille, puis choisissez **Supprimer**.
 
     > [!NOTE]
     > Après avoir supprimé le test, ajustez la combinaison de tests à la distribution de votre choix.
 
 4. Une fois que vous avez fini de supprimer les tests, choisissez **OK**.
 
-## <a name="EditingTestMixAboutMixControl"></a> À propos du contrôle de combinaison
+## <a name="about-the-mix-control"></a><a name="EditingTestMixAboutMixControl"></a> À propos du contrôle de combinaison
 Le contrôle de combinaison vous permet d'ajuster le pourcentage de charge distribuée entre les tests, les types de navigateurs ou les types de réseaux dans un scénario de test de charge. Vous ajustez les valeurs en pourcentage en déplaçant des curseurs. L'ajustement de la combinaison de tests spécifie la probabilité qu'un utilisateur virtuel exécute un test spécifique dans un scénario de test de charge.
 
 Lorsque vous déplacez un curseur, les valeurs en pourcentage de tous les éléments disponibles changent. Si plus de deux éléments sont disponibles, la charge que vous ajoutez ou supprimez est répartie de manière égale entre les autres éléments. Il est possible de modifier ce comportement. Si vous activez la case à cocher dans la colonne de verrouillage d'un élément particulier, vous verrouillez la valeur en pourcentage spécifiée pour cet élément. Ensuite, lorsque vous déplacez un curseur, la charge que vous ajoutez ou supprimez ne s'applique qu'aux éléments non verrouillés restants.
@@ -81,10 +81,10 @@ Le bouton **Distribuer** est utilisé pour allouer les pourcentages de manière 
 > [!WARNING]
 > Le bouton **Distribuer** permet de remplacer les éléments verrouillés.
 
-Il est également possible de taper les valeurs en pourcentage directement dans la colonne **%** au lieu d’utiliser les curseurs. Si vous entrez directement une valeur en pourcentage, les autres éléments ne s'ajustent pas automatiquement.
+Il est également possible de taper **%** les valeurs en pourcentage directement dans la colonne au lieu d’utiliser les curseurs. Si vous entrez directement une valeur en pourcentage, les autres éléments ne s'ajustent pas automatiquement.
 
 > [!NOTE]
-> Les curseurs sont désactivés quand le total n’atteint pas 100 % ou quand les valeurs en pourcentage entrées dans la colonne **%** sont des nombres décimaux.
+> Les curseurs sont désactivés lorsque le total ne s’élève pas à **%** 100%, ou lorsque les valeurs en pourcentage inscrites dans la colonne sont des décimales.
 
 Lorsque vous entrez des valeurs en pourcentage manuellement, vous devez vous assurer que la somme de tous les éléments est 100 %. Lorsque vous enregistrez une combinaison, si la somme n'est pas égale à 100 %, vous serez invité à accepter les valeurs en pourcentage telles qu'elles sont ou à revenir en arrière pour les ajuster. Si vous choisissez de les accepter tels qu'ils sont, ils seront recalculés au prorata de 100 %.  Par exemple, si deux éléments sont disponibles et que vous les définissez manuellement à 80 % et 40 %, le premier élément aura pour valeur 66,67 % (80 divisé par 120) et le deuxième élément sera défini à 33,33 % (40 divisé par 120).
 

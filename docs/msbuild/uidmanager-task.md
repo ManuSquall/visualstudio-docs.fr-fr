@@ -14,31 +14,33 @@ helpviewer_keywords:
 - localizing XAML elements [WPF MSBuild], managing UIDs
 - checking UIDs when localizing XAML elements [WPF MSBuild]
 ms.assetid: 4fc7b5a5-11b0-46ca-9656-8c2a0b08d1fe
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9c4e8c5ccae37aba0f287e2c2f9e29ab36371846
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 37692c541fb2a6e9b2ccf61083dd383e56a79766
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62938658"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "77631521"
 ---
 # <a name="uidmanager-task"></a>UidManager, tâche
-La tâche <xref:Microsoft.Build.Tasks.Windows.UidManager> vérifie, met à jour ou supprime les identificateurs uniques (UID) pour localiser tous les éléments [!INCLUDE[TLA#tla_xaml](../msbuild/includes/tlasharptla_xaml_md.md)] inclus dans les fichiers [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)] sources.
+
+Les <xref:Microsoft.Build.Tasks.Windows.UidManager> vérifications, mises à jour ou suppressions d’identifiants uniques (UID) afin de localiser tous les éléments XAML qui sont inclus dans les fichiers XAML source.
 
 ## <a name="task-parameters"></a>Paramètres de tâche
 
 | Paramètre | Description |
 |-------------------------| - |
-| `IntermediateDirectory` | Paramètre **String** facultatif.<br /><br /> Spécifie le répertoire utilisé pour sauvegarder les fichiers [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)] sources spécifiés par le paramètre **MarkupFiles**. |
-| `MarkupFiles` | Paramètre **ITaskItem[]** obligatoire.<br /><br /> Spécifie les fichiers [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)] sources à inclure pour la vérification, la mise à jour ou la suppression des UID. |
-| `Task` | Paramètre **String** obligatoire.<br /><br /> Spécifie la tâche de gestion des UID à exécuter. Les options valides sont **Check**, **Update** et **Remove**. |
+| `IntermediateDirectory` | Paramètre **de chaîne** facultatif.<br /><br /> Spécifie l’annuaire qui est utilisé pour sauvegarder les fichiers XAML source qui sont spécifiés par le paramètre **MarkupFiles.** |
+| `MarkupFiles` | Paramètre **ITaskItem[]** requis.<br /><br /> Spécifie la source des fichiers XAML à inclure pour la vérification, la mise à jour ou la suppression de l’UID. |
+| `Task` | Paramètre **de chaîne** requis.<br /><br /> Spécifie la tâche de gestion des UID à exécuter. Les options valides sont **Check**, **Update** et **Remove**. |
 
-## <a name="example"></a>Exemple
- L’exemple suivant utilise la tâche <xref:Microsoft.Build.Tasks.Windows.UidManager> pour vérifier si les fichiers [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)] sources spécifiés contiennent des éléments [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)] avec des UID appropriés.
+## <a name="example"></a> Exemple
+
+ L’exemple suivant <xref:Microsoft.Build.Tasks.Windows.UidManager> utilise la tâche pour vérifier que les fichiers XAML source spécifiée contiennent des éléments XAML qui ont des interfaces utilisateur appropriées.
 
 ```xml
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -55,9 +57,10 @@ La tâche <xref:Microsoft.Build.Tasks.Windows.UidManager> vérifie, met à jour 
 ```
 
 ## <a name="see-also"></a>Voir aussi
-- [Informations de référence sur MSBuild WPF](../msbuild/wpf-msbuild-reference.md)
+
+- [WPF MSBuild référence](../msbuild/wpf-msbuild-reference.md)
 - [Informations de référence sur les tâches](../msbuild/wpf-msbuild-task-reference.md)
-- [Informations de référence sur MSBuild](../msbuild/msbuild-reference.md)
+- [Référence MSBuild](../msbuild/msbuild-reference.md)
 - [Informations de référence sur les tâches](../msbuild/msbuild-task-reference.md)
 - [Générer une application WPF (WPF)](/dotnet/framework/wpf/app-development/building-a-wpf-application-wpf)
-- [Guide pratique pour localiser une application](/dotnet/framework/wpf/advanced/how-to-localize-an-application)
+- [Comment : Localiser une application](/dotnet/framework/wpf/advanced/how-to-localize-an-application)

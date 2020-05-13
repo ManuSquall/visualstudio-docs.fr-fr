@@ -1,5 +1,5 @@
 ---
-title: IDebugPortNotify2 | Microsoft Docs
+title: IDebugPortNotify2 - France Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugPortNotify2 interface
 ms.assetid: 43278b79-bf16-4c08-bcf1-6f7f7a17feab
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e1b1934a73e096200eba1370320cc0b55eb46ac5
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 49d3d1161d488ed4a9e12b7af6b70bf336c9f286
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66308900"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80724920"
 ---
 # <a name="idebugportnotify2"></a>IDebugPortNotify2
-Cette interface inscrit ou annule l’inscription d’un programme qui peut être débogué avec le port, qu'il s’exécute.
+Cette interface enregistre ou dément un programme qui peut être déboqué avec le port sur lequel il fonctionne.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -28,29 +28,29 @@ Cette interface inscrit ou annule l’inscription d’un programme qui peut êtr
 IDebugPortNotify2 : IUnknown
 ```
 
-## <a name="notes-for-implementers"></a>Notes de publication pour les implémenteurs
- Un fournisseur de port personnalisé implémente cette interface pour prendre en charge d’ajout et suppression de programmes à partir du port. Il est généralement implémentée sur le même objet qui implémente le [IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md) interface.
+## <a name="notes-for-implementers"></a>Notes pour les implémenteurs
+ Un fournisseur de port personnalisé implémente cette interface pour soutenir l’ajout et la suppression des programmes du port. Il est généralement implémenté sur le même objet qui implémente l’interface [IDebugPort2.](../../../extensibility/debugger/reference/idebugport2.md)
 
-## <a name="notes-for-callers"></a>Notes de publication pour les appelants
- Un appel à [QueryInterface](/cpp/atl/queryinterface) sur la `IDebugPort2` interface retourne cette interface. En outre, un appel à [GetPortNotify](../../../extensibility/debugger/reference/idebugdefaultport2-getportnotify.md) retourne cette interface. Un moteur de débogage peut voir cette interface en tant que paramètre à [WatchForProviderEvents](../../../extensibility/debugger/reference/idebugprogramprovider2-watchforproviderevents.md).
+## <a name="notes-for-callers"></a>Notes pour les appelants
+ Un appel à [QueryInterface](/cpp/atl/queryinterface) sur l’interface `IDebugPort2` renvoie cette interface. En outre, un appel à [GetPortNotify](../../../extensibility/debugger/reference/idebugdefaultport2-getportnotify.md) renvoie cette interface. Un moteur de débogé peut voir cette interface comme un paramètre pour [WatchForProviderEvents](../../../extensibility/debugger/reference/idebugprogramprovider2-watchforproviderevents.md).
 
 ## <a name="methods-in-vtable-order"></a>Méthodes dans l'ordre Vtable
- Le tableau suivant présente les méthodes de `IDebugPortNotify2`.
+ Le tableau suivant montre `IDebugPortNotify2`les méthodes de .
 
 |Méthode|Description|
 |------------|-----------------|
-|[AddProgramNode](../../../extensibility/debugger/reference/idebugportnotify2-addprogramnode.md)|Inscrit un programme qui peut être débogué avec le port, qu'il s’exécute.|
-|[RemoveProgramNode](../../../extensibility/debugger/reference/idebugportnotify2-removeprogramnode.md)|Annule l’inscription d’un programme qui peut être débogué à partir du port qu'il s’exécute.|
+|[AddProgramNode](../../../extensibility/debugger/reference/idebugportnotify2-addprogramnode.md)|Enregistre un programme qui peut être déboqué avec le port sur lequel il fonctionne.|
+|[RemoveProgramNode](../../../extensibility/debugger/reference/idebugportnotify2-removeprogramnode.md)|Non inscrit un programme qui peut être déboqué du port sur lequel il fonctionne.|
 
 ## <a name="remarks"></a>Notes
- Sauf si un port de débogage a un moyen de savoir quand les programmes sont chargés ou déchargés, un fournisseur de port personnalisé doit implémenter cette interface. Tous les programmes qui sont chargés pour le débogage via un port particulier sont suivies à l’aide de cette interface.
+ À moins qu’un port de débaille ait un moyen de savoir quand les programmes sont chargés ou déchargés, un fournisseur de port personnalisé doit implémenter cette interface. Tous les programmes qui sont chargés pour débogage à travers un port particulier sont suivis à l’aide de cette interface.
 
-## <a name="requirements"></a>Configuration requise
- En-tête : msdbg.h
+## <a name="requirements"></a>Spécifications
+ En-tête: msdbg.h
 
- Espace de noms : Microsoft.VisualStudio.Debugger.Interop
+ Namespace: Microsoft.VisualStudio.Debugger.Interop
 
- Assembly : Microsoft.VisualStudio.Debugger.Interop.dll
+ Assemblage: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>Voir aussi
 - [Interfaces de base](../../../extensibility/debugger/reference/core-interfaces.md)

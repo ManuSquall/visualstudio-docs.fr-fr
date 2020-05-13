@@ -3,21 +3,21 @@ title: Suggérer une fonctionnalité
 description: Décrit les suggestions présentes dans la Communauté des développeurs, explique comment faire une suggestion et montre comment elles sont utilisées par Microsoft dans la feuille de route Visual Studio.
 ms.date: 12/17/2018
 ms.topic: conceptual
-author: seaniyer
-ms.author: seiyer
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3af6d0b7b9f211fb9d0aa0a4b9a96b618081b89e
-ms.sourcegitcommit: 2148f3fd69569d8ec54fd21a66370932ce610ce4
+ms.openlocfilehash: bbe6992bd48cfe28dfe3df20f5540aca76390bf1
+ms.sourcegitcommit: 22deb247ad951e4971f27fdab413b158415d0584
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74853514"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81276486"
 ---
 # <a name="suggest-a-feature-for-visual-studio"></a>Proposer une fonctionnalité pour Visual Studio
 
-Nous avons introduit une nouvelle expérience de suggestion de fonctionnalités en parallèle de la fonctionnalité actuelle de signalement de problèmes dans la [Communauté des développeurs Visual Studio](https://developercommunity.visualstudio.com). C’est pour vous un nouveau moyen de contribuer directement au flux de travail d’ingénierie de Visual Studio.
+Nous avons introduit une nouvelle expérience de suggestion de fonctionnalités en parallèle de la fonctionnalité actuelle de signalement de problèmes dans la [Communauté des développeurs Visual Studio](https://developercommunity.visualstudio.com). Il s’agit d’une nouvelle façon de vous permettre de vous engager directement avec le flux de travail d’ingénierie de Visual Studio.
 
 ![Suggérer un bouton Fonctionnalité sur la Communauté des développeurs](media/suggest-a-feature/suggest-feature-button.png)
 
@@ -27,7 +27,7 @@ Vous pouvez également démarrer une suggestion de fonctionnalité directement �
 
 Choisissez **Fournir une suggestion** pour accéder à [Communauté de développeurs](https://developercommunity.visualstudio.com), où vous pouvez entrer votre suggestion.
 
-## <a name="user-voice"></a>UserVoice
+## <a name="user-voice"></a>User Voice
 
 Jusqu’à présent, les utilisateurs de Visual Studio proposaient des idées de nouvelles fonctionnalités sur UserVoice. En ajoutant la fonctionnalité *Suggérer une fonctionnalité* sur la Communauté des développeurs, tous vos commentaires à l’équipe produit Visual Studio se trouvent désormais au même endroit.
 
@@ -83,7 +83,7 @@ L’état **Fermé - Autre produit** signifie que nous ne pouvons pas traiter vo
 
 ![État Closed – Not Enough Info des suggestions dans la Communauté des développeurs](../ide/media/SuggestStates/ClosedNotEnoughInfo.jpg)
 
-**Closed – Not Enough Info** (Fermé – Informations insuffisantes) indique que, après plusieurs tentatives, nous n’avons pas reçu suffisamment d’informations pour comprendre pleinement votre suggestion de nouvelle fonctionnalité. Nous devons la fermer, car il n’y a aucune action que nous puissions entreprendre à ce stade.
+**Fermé - Not Enough Info** indique qu’après plusieurs tentatives, nous n’avons pas reçu assez d’informations pour comprendre votre suggestion de fonctionnalités pleinement. Nous devons la fermer, car il n’y a aucune action que nous puissions entreprendre à ce stade.
 
 Vous avez trouvé les informations que nous recherchions ? Vous pouvez à ce moment-là demander à réactiver le ticket.
 
@@ -101,9 +101,9 @@ Vous avez trouvé les informations que nous recherchions ? Vous pouvez à ce mo
 
 - - -
 
-## <a name="faq"></a>Forum aux questions
+## <a name="faq"></a>Questions fréquentes (FAQ)
 
-### <a name="why-cant-i-see-my-user-voice-idea-in-developer-community"></a>Pourquoi mon idée UserVoice n’apparaît-elle pas dans la Communauté des développeurs ?
+### <a name="why-cant-i-see-my-user-voice-idea-in-developer-community"></a>Pourquoi ne puis-je pas voir mon idée de voix d’utilisateur dans la communauté des développeurs ?
 
 Les suggestions de nouvelles fonctionnalités de l’ancien forum UserVoice ont été migrées vers la Communauté des développeurs en fonction de leur impact sur l’ensemble de la Communauté et de nos priorités pour la feuille de route produit. Si vous pensez que nous avons oublié de migrer votre suggestion, créez-en une nouvelle pour la rajouter dans la Communauté des développeurs.
 

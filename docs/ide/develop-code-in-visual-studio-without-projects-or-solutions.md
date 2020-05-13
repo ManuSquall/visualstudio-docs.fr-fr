@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: d7a9459868d569a7466dccf92e4b548c0500bf80
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75596292"
 ---
 # <a name="develop-code-in-visual-studio-without-projects-or-solutions"></a>Développer du code dans Visual Studio sans projets ni solutions
@@ -28,7 +28,7 @@ Une fois que vous avez ouvert vos fichiers de code dans Visual Studio, l’**Exp
 
 Vous pouvez ouvrir du code dans Visual Studio de différentes façons :
 
-- Dans la barre de menus de Visual Studio, choisissez **Fichier** > **Ouvrir** > **Dossier**, puis accédez à l’emplacement du code.
+- Sur la barre de menu Visual Studio, choisissez **File** > **Open** > **Folder,** puis naviguez vers l’emplacement du code.
 
 - Dans le menu contextuel (clic droit) d’un dossier contenant le code, choisissez la commande **Ouvrir dans Visual Studio**.
 
@@ -40,7 +40,7 @@ Vous pouvez ouvrir du code dans Visual Studio de différentes façons :
 - Choisissez le lien **Ouvrir le dossier** dans la fenêtre de démarrage.
 ::: moniker-end
 
-- Si vous préférez utiliser le clavier, appuyez sur **Ctrl**+**Maj**+**Alt**+**O** dans Visual Studio.
+- Si vous êtes un utilisateur de clavier, appuyez sur **Ctrl**+**Shift**+**Alt**+**O** dans Visual Studio.
 
 - Ouvrez le code d’un référentiel GitHub cloné.
 
@@ -54,7 +54,7 @@ L’exemple suivant montre comment cloner un référentiel GitHub, puis ouvrir s
 
    ![Bouton de clonage GitHub](./media/VSIDE_Code_Clone.png)
 
-1. Dans Visual Studio, choisissez l’onglet **Team Explorer** pour ouvrir **Team Explorer**. Si l’onglet n’apparaît pas, ouvrez-le dans **Affichage** > **Team Explorer**.
+1. Dans Visual Studio, choisissez l’onglet **Team Explorer** pour ouvrir **Team Explorer**. Si vous ne voyez pas l’onglet, ouvrez-le de **View** > **Team Explorer**.
 
 1. Dans Team Explorer, sous la section relative aux **référentiels Git locaux** , choisissez la commande **Cloner**, puis collez l’URL de la page GitHub dans la zone de texte.
 
@@ -62,7 +62,7 @@ L’exemple suivant montre comment cloner un référentiel GitHub, puis ouvrir s
 
 1. Cliquez sur le bouton **Cloner** pour cloner les fichiers du projet dans un référentiel Git local. Ceci peut prendre plusieurs minutes, selon la taille du référentiel.
 
-1. Une fois le dépôt cloné sur votre système, dans **Team Explorer**, choisissez la commande **Ouvrir** dans le menu contextuel (clic droit) du dépôt qui vient d’être cloné.
+1. Une fois que le repo a été cloné dans votre système, dans **Team Explorer**, choisissez la commande **Open** sur le menu contexte (clic droit) de la pension nouvellement clonée.
 
    ![Dépôt cloné](./media/VSIDE_Code_Clone3.png)
 
@@ -83,7 +83,7 @@ La façon de configurer le code pour qu’il s’exécute dans Visual Studio dif
 Les codebases MSBuild peuvent avoir plusieurs configurations de build qui s’affichent dans la liste déroulante du bouton **Démarrer**. Sélectionnez le fichier que vous souhaitez utiliser comme élément de démarrage, puis cliquez sur le bouton **Démarrer** pour commencer le débogage.
 
 > [!NOTE]
-> Dans le cas des codebases C# et Visual Basic, vous devez installer la charge de travail **Développement Desktop .NET**. Dans le cas des codebases C++, vous devez installer la charge de travail **Développement Desktop en C++** .
+> Dans le cas des codebases C# et Visual Basic, vous devez installer la charge de travail **Développement Desktop .NET**. Dans le cas des codebases C++, vous devez installer la charge de travail **Développement Desktop en C++**.
 
 ### <a name="codebases-that-use-custom-build-tools"></a>Codebases qui utilisent des outils de génération personnalisés
 
@@ -93,7 +93,7 @@ Si votre codebase utilise des outils de génération personnalisés, vous devez 
 
 Si votre codebase contient du code Python ou JavaScript, il est inutile de configurer les fichiers *.json*, mais vous devez installer la charge de travail correspondante. Il vous faudra également configurer le script de démarrage :
 
-1. Installez la charge de travail [Développement Node.js](https://visualstudio.microsoft.com/vs/node-js/) ou [Développement Python](https://visualstudio.microsoft.com/vs/python/) en choisissant **Outils** > **Obtenir des outils et des fonctionnalités**, ou bien en fermant Visual Studio et en exécutant Visual Studio Installer.
+1. Installez la charge [de travail de développement de Node.js](https://visualstudio.microsoft.com/vs/node-js/) ou de développement [Python](https://visualstudio.microsoft.com/vs/python/) en choisissant **Tools** > **Get Tools and Features,** ou en fermant Visual Studio et en exécutant l’installateur visual Studio.
 
    ![Charges de travail de développement Node.js et Python](media/python_nodejs_workloads.png)
 

@@ -11,15 +11,15 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: cf8bc1205658899a51cf1a50e83a9a8b34034b25
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75594316"
 ---
 # <a name="how-to-view-web-page-response-time-in-a-load-test-using-the-load-test-analyzer"></a>Guide pratique pour afficher le temps de réponse d’une page web dans un test de charge à l’aide de l’analyseur de test de charge
 
-Le temps nécessaire pour charger chaque page web est appelé *temps de réponse*. Lorsque vous créez un test de performances web, vous pouvez définir un objectif de temps de réponse pour chaque requête de page web de votre test de performances web.
+Le temps qu’il faut pour chaque page web à charger est connu sous le nom *de temps de réponse*. Lorsque vous créez un test de performances web, vous pouvez définir un objectif de temps de réponse pour chaque requête de page web de votre test de performances web.
 
 [!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
@@ -29,7 +29,7 @@ Si vous exécutez votre test de performances web sous contrainte dans un test de
 
 - Pourcentage des itérations de test qui atteignent l'objectif de temps de réponse pour la page.
 
-- Vous pouvez analyser des temps de réponse de page web en utilisant la vue Tables ou la vue Graphiques dans **l’Analyseur de test de charge** :
+- Vous pouvez analyser les temps de réponse de la page Web en utilisant la vue des tables ou la vue graphique dans **l’analyseur de test de charge**:
 
 - Analyse des temps de réponse de la page web dans la vue Tables
 
@@ -37,7 +37,7 @@ Si vous exécutez votre test de performances web sous contrainte dans un test de
 
 ## <a name="view-response-time-data-in-a-table"></a>Afficher les données de temps de réponse dans un tableau
 
-1. Dans **l’Analyseur de test de charge**, choisissez **Tables** dans la barre d’outils pour vérifier que la grille des tables est affichée.
+1. Dans **l’analyseur de test de charge**, choisissez des **tables** sur la barre d’outils pour s’assurer que la grille de table est affichée.
 
 2. Dans la zone de liste déroulante **Table**, sélectionnez **Pages**.
 
@@ -48,21 +48,21 @@ Si vous exécutez votre test de performances web sous contrainte dans un test de
    |**Page**|Nom de la page web.|
    |**Scénario**|Nom du scénario. Important si votre test de performances web comporte plusieurs scénarios.|
    |**Test**|Nom du test de performances web. Important si vous possédez plusieurs tests de performances web dans votre test de charge.|
-   |**Network**|Type de réseau.<br /><br /> Par défaut, ces données ne sont pas collectées. Pour collecter ces données, dans **l’éditeur de test de charge**, sous le nœud **Paramètres d’exécution**, sélectionnez le nœud de paramètre d’exécution à changer. Dans la fenêtre **Propriétés**, pour la propriété **Stockage des détails de minuterie**, sélectionnez **AllIndividualDetails**.|
+   |**Réseau**|Type de réseau.<br /><br /> Par défaut, ces données ne sont pas collectées. Pour collecter ces données, dans **l’éditeur de test de charge**, sous le nœud **Paramètres d’exécution**, sélectionnez le nœud de paramètre d’exécution à changer. Dans la fenêtre **Propriétés**, pour la propriété **Stockage des détails de minuterie**, sélectionnez **AllIndividualDetails**.|
    |**Total**|Nombre total de requêtes effectuées pour la page web. Il s'agit du nombre total d'itérations dans le test de charge.|
    |**Moy.**|Temps de réponse moyen de la page.<br /><br /> Par défaut, ces données ne sont pas collectées. Pour collecter ces données, dans **l’éditeur de test de charge**, sous le nœud **Paramètres d’exécution**, sélectionnez le nœud de paramètre d’exécution à changer. Dans la fenêtre **Propriétés**, pour la propriété **Stockage des détails de minuterie**, sélectionnez **AllIndividualDetails**.|
    |**Min**|Temps de réponse minimum de la page.<br /><br /> Par défaut, ces données ne sont pas collectées. Pour collecter ces données, dans **l’éditeur de test de charge**, sous le nœud **Paramètres d’exécution**, sélectionnez le nœud de paramètre d’exécution à changer. Dans la fenêtre **Propriétés**, pour la propriété **Stockage des détails de minuterie**, sélectionnez **AllIndividualDetails**.|
-   |**Médian**|Temps de réponse médian de la page.<br /><br /> Par défaut, ces données ne sont pas collectées. Pour collecter ces données, dans **l’éditeur de test de charge**, sous le nœud **Paramètres d’exécution**, sélectionnez le nœud de paramètre d’exécution à changer. Dans la fenêtre **Propriétés**, pour la propriété **Stockage des détails de minuterie**, sélectionnez **AllIndividualDetails**.|
+   |**Médiane**|Temps de réponse médian de la page.<br /><br /> Par défaut, ces données ne sont pas collectées. Pour collecter ces données, dans **l’éditeur de test de charge**, sous le nœud **Paramètres d’exécution**, sélectionnez le nœud de paramètre d’exécution à changer. Dans la fenêtre **Propriétés**, pour la propriété **Stockage des détails de minuterie**, sélectionnez **AllIndividualDetails**.|
    |**90%**|90e centile pour le temps de réponse. Cela indique que 90 % des pages ont répondu plus rapidement que ce nombre, et 10 % des pages ont répondu plus lentement.<br /><br /> Par défaut, ces données ne sont pas collectées. Pour collecter ces données, dans **l’éditeur de test de charge**, sous le nœud **Paramètres d’exécution**, sélectionnez le nœud de paramètre d’exécution à changer. Dans la fenêtre **Propriétés**, pour la propriété **Stockage des détails de minuterie**, sélectionnez **AllIndividualDetails**.|
-   |**95%**|95e centile pour le temps de réponse. Cela indique que 95 % des pages ont répondu plus rapidement que ce nombre, et 5 % des pages ont répondu plus lentement.|
-   |**99%**|99e centile pour le temps de réponse. Cela indique que 99 % des pages ont répondu plus rapidement que ce nombre, et 1 % des pages ont répondu plus lentement.<br /><br /> Par défaut, ces données ne sont pas collectées. Pour collecter ces données, dans **l’éditeur de test de charge**, sous le nœud **Paramètres d’exécution**, sélectionnez le nœud de paramètre d’exécution à changer. Dans la fenêtre **Propriétés**, pour la propriété **Stockage des détails de minuterie**, sélectionnez **AllIndividualDetails**.|
+   |**95 %**|95e centile pour le temps de réponse. Cela indique que 95 % des pages ont répondu plus rapidement que ce nombre, et 5 % des pages ont répondu plus lentement.|
+   |**99 %**|99e centile pour le temps de réponse. Cela indique que 99 % des pages ont répondu plus rapidement que ce nombre, et 1 % des pages ont répondu plus lentement.<br /><br /> Par défaut, ces données ne sont pas collectées. Pour collecter ces données, dans **l’éditeur de test de charge**, sous le nœud **Paramètres d’exécution**, sélectionnez le nœud de paramètre d’exécution à changer. Dans la fenêtre **Propriétés**, pour la propriété **Stockage des détails de minuterie**, sélectionnez **AllIndividualDetails**.|
    |**Max**|Temps de réponse maximum de la page.<br /><br /> Par défaut, ces données ne sont pas collectées. Pour collecter ces données, dans **l’éditeur de test de charge**, sous le nœud **Paramètres d’exécution**, sélectionnez le nœud de paramètre d’exécution à changer. Dans la fenêtre **Propriétés**, pour la propriété **Stockage des détails de minuterie**, sélectionnez **AllIndividualDetails**.|
    |**Écart type**|Par défaut, les données d'écart type ne sont pas collectées. Pour collecter ces données, dans **l’éditeur de test de charge**, sous le nœud **Paramètres d’exécution**, sélectionnez le nœud de paramètre d’exécution à changer. Dans la fenêtre **Propriétés**, pour la propriété **Stockage des détails de minuterie**, sélectionnez **AllIndividualDetails**.|
    |**Temps de réponse de la page**|Temps de réponse moyen pour toutes les requêtes effectuées pour la page web.|
-   |**Objectif**|Objectif de temps de réponse de la page. Il s'agit d'une valeur constante pour la page. **Remarque :** L’objectif de temps de réponse de la page n’apparaît que quand l’objectif a été défini pour la requête dans le test de performances web.|
+   |**Objectif**|Objectif de temps de réponse de la page. Il s'agit d'une valeur constante pour la page. **Note:**  Page Time Goal n’est affiché que lorsque l’objectif a été défini pour la demande dans le test de performance Web.|
    |**% correspondant à l’objectif**|Pourcentage de requêtes effectuées pour la page web qui a atteint l’objectif de temps de réponse.|
 
-   Pour plus d’informations, consultez [Analyser les résultats et les erreurs des tests de charge dans la vue Tables](../test/analyze-load-test-results-and-errors-in-the-tables-view.md).
+   Pour plus d’informations, voir [Analyser les résultats des tests de charge et les erreurs dans la vue Des tables](../test/analyze-load-test-results-and-errors-in-the-tables-view.md).
 
 ## <a name="view-response-time-data-in-a-graph"></a>Afficher les données de temps de réponse dans un graphique
 
@@ -70,7 +70,7 @@ Vous pouvez également consulter les données de temps de réponse dans un graph
 
 Pour consulter les données de temps de réponse dans un graphe :
 
-1. Dans **l’Analyseur de test de charge**, choisissez **Graphiques** dans la barre d’outils pour vérifier que le graphique est affiché.
+1. Dans **l’analyseur de test de charge**, choisissez des **graphiques** sur la barre d’outils pour s’assurer que le graphique est affiché.
 
 2. Dans la fenêtre **Compteurs**, développez le nœud du scénario qui vous intéresse (par exemple, `Scenario1`).
 
@@ -84,15 +84,15 @@ Pour consulter les données de temps de réponse dans un graphe :
 
     Les données sont ajoutées au graphique.
 
-7. Facultatif Répétez l’étape précédente pour **moy. heure**de la page, **objectif du temps de réponse**de la page et **nombre total de pages**.
+7. (Facultatif) Répétez l’étape précédente pour **Avg. Page Time**, **Page Response Time Goal**, et Total **Pages**.
 
    > [!NOTE]
    > **Objectif de temps de réponse** a une valeur constante.
 
-   Pour plus d’informations, consultez [Analyser les résultats des tests de charge dans la vue Graphiques](../test/analyze-load-test-results-in-the-graphs-view.md).
+   Pour plus d’informations, voir [Les résultats des tests de charge Analyse dans la vue graphiques](../test/analyze-load-test-results-in-the-graphs-view.md).
 
 ## <a name="see-also"></a>Voir aussi
 
 - [Analyser les résultats et les erreurs des tests de charge dans la vue Tables](../test/analyze-load-test-results-and-errors-in-the-tables-view.md)
-- [Guide pratique pour accéder aux résultats des tests de charge à des fins d’analyse](../test/how-to-access-load-test-results-for-analysis.md)
+- [Comment : Accéder aux résultats des tests de charge pour analyse](../test/how-to-access-load-test-results-for-analysis.md)
 - [Analyser les résultats des tests de charge](../test/analyze-load-test-results-using-the-load-test-analyzer.md)

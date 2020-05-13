@@ -3,35 +3,58 @@ title: E-mails personnels affichés dans VLSC
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 07/24/2019
+ms.assetid: 3f4b0528-03f0-4a02-b3c3-a39292a9bbe1
+ms.date: 04/10/2020
 ms.topic: conceptual
 description: Abonnements Visual Studio – Pourquoi les adresses Hotmail ou Gmail de mes abonnés sont-elles affichées ?
-ms.openlocfilehash: 8418a177e793f0b4fe9a5019d2cf62fa724312ff
-ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
-ms.translationtype: HT
+ms.openlocfilehash: 44b18bd46d55349fae5a3ece03cee9fe93240148
+ms.sourcegitcommit: 316dd2182dd56b0cbde49f0cd82e9f75baa2530f
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/29/2019
-ms.locfileid: "68605758"
+ms.lasthandoff: 04/12/2020
+ms.locfileid: "81223682"
 ---
-# <a name="visual-studio-subscriptions--why-am-i-seeing-hotmail-or-gmail-addresses-for-my-subscribers"></a>Abonnements Visual Studio – pourquoi les adresses Hotmail ou Gmail de mes abonnés sont-elles affichées ?
-Après que les entreprises ont migré du Centre de gestion des licences en volume (VLSC) vers le nouveau [portail d’administration des abonnements](https://manage.visualstudio.com) Visual Studio, les administrateurs ont été surpris de découvrir que « l’adresse e-mail de connexion » de certains abonnés corresponde à une adresse e-mail de tiers, comme Hotmail, Gmail ou Yahoo.  Pour plus d’informations, regardez [cette vidéo](https://www.youtube.com/watch?v=J61EYaVN-dQ&list=PLReL099Y5nReJhZ6o8CQFPSBgzGCHX99_&index=6).
+# <a name="visual-studio-subscriptions--why-do-i-see-personal-accounts-for-my-subscribers"></a>Abonnements Visual Studio - Pourquoi vois-je des comptes personnels pour mes abonnés ?
+Après que les entreprises ont migré du Volume Licensing Service Center (VLSC) vers le nouveau portail Visual Studio [Subscriptions Administration](https://manage.visualstudio.com), les administrateurs ont été surpris de constater que l’adresse e-mail « Connect-in » pour certains abonnés montre une adresse e-mail personnelle comme Hotmail ou Outlook.  
 
 ## <a name="cause"></a>Cause
 Ceci est dû à des processus de connexion qui ont été associés à l’expérience héritée pour les abonnés MSDN. Les utilisateurs ont été migrés du centre de gestion des licences en volume (VLSC) vers le portail d’administration des abonnements Visual Studio sans modifications. Les administrateurs ignoraient peut-être que des utilisateurs utilisaient des comptes personnels pour accéder aux avantages de leurs abonnements. Avant les migrations des abonnés Visual Studio, qui se sont terminées en 2016, deux actions étaient nécessaires pour pouvoir utiliser un abonnement de Visual Studio :
 1. L’administrateur « attribuait » l’abonnement à un abonné spécifique, à l’aide de son adresse e-mail professionnelle ou scolaire.
 2. L’abonné « activait » l’abonnement.
 
-Pendant le processus d’activation de l’abonné : Un compte Microsoft (MSA) était nécessaire pour la connexion. Si l’abonné ne cherchait pas à définir son compte professionnel ou scolaire (par exemple, tasha@contoso.com) en tant que compte MSA, il pouvait créer un compte MSA ou en utiliser un existant. C’est la raison pour laquelle son « adresse e-mail de connexion » était différente de son « adresse e-mail attribuée ».
+Au cours du processus d’activation de l’abonné, un compte Microsoft (MSA) était nécessaire pour se connecter. Si l’abonné ne cherchait pas à définir son compte professionnel ou scolaire (par exemple, tasha@contoso.com) en tant que compte MSA, il pouvait créer un compte MSA ou en utiliser un existant. C’est la raison pour laquelle son « adresse e-mail de connexion » était différente de son « adresse e-mail attribuée ».
 
 > [!NOTE]
-> La nouvelle expérience des abonnés sur [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs) prend en charge à la fois les types d’identité Compte professionnel/scolaire et Compte Microsoft (MAA).
-
-Enfin, étant donné que la migration des administrateurs utilisait des données de VLSC concernant « l’adresse e-mail de connexion » des abonnés pour renseigner la nouvelle expérience de gestion des abonnés, les administrateurs récemment migrés peuvent avoir vu ces comptes personnels jusque-là passés inaperçus en raison des modifications apportées à l’interface utilisateur qui ont rendu ces informations plus visibles.
+> L’expérience d’abonné moderne sur [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs) les types d’identité Work/School et Microsoft Account (MSA).
 
 ## <a name="solution"></a>Solution
-Pour corriger ce problème, vous devez modifier les informations des abonnés pour mettre à jour leurs adresses e-mail de connexion.  Les modifications peuvent être effectuées pour des abonnés spécifiques ou en masse. Pour plus d’informations, consultez [Modifier des abonnements](edit-license.md).
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4th6B]
+
+Pour corriger le problème, il suffit de sélectionner le bouton **e-mails Connect** et le système tentera de faire correspondre les comptes avec les MSAs aux utilisateurs existants dans l’annuaire actif Azure de votre organisation (Azure AD) en fonction de l’appariement du prénom et du nom de famille. S’il y a une erreur, vous pouvez supprimer n’importe quel match en cliquant sur le **X** à droite du match.  
+
+> [!div class="mx-imgBorder"]
+> ![Connectez le bouton e-mails](_img/connect-emails/connect-emails-button.png)
+
+Vous pouvez également utiliser **l’annuaire de recherche** pour corriger les erreurs ou remplir les informations manquantes de votre AD Azure. Si tous les matchs semblent corrects, vous pouvez choisir de "Sélectionner tous les abonnés correspondants", plutôt que de les sélectionner un à la fois.  
+
+> [!div class="mx-imgBorder"]
+> ![Connectez emails Fly-out](_img/connect-emails/connect-emails-flyout.png)
+
+Cliquez ensuite sur "continuer" qui vous mènera à un écran décrivant les modifications à effectuer. Si vous êtes d’accord, cliquez sur "enregistrer" et les modifications seront apportées. Votre abonné recevra également un message l’informant du changement la prochaine fois qu’il se connecte à son abonnement.   
+
+> [!div class="mx-imgBorder"]
+> ![Connectez la confirmation des e-mails](_img/connect-emails/connect-emails-confirm.png) 
+
+> [!NOTE]
+> Lorsque vous modifiez le signe dans l’adresse e-mail, cela https://my.visualstudio.comne met à jour que l’e-mail utilisé par l’abonné pour se connecter à leur abonnement sur . Si l’abonné a déjà activé des avantages tels qu’Azure ou Pluralsight à l’aide de l’autre adresse e-mail, il devra continuer à utiliser ces adresses e-mail pour y accéder. Pour tout nouvel avantage auxquels ils ont accès, ils doivent utiliser la nouvelle adresse e-mail. 
+
+## <a name="see-also"></a>Voir aussi
+- [Documentation Visual Studio](https://docs.microsoft.com/visualstudio/)
+- [Documentation Azure DevOps](https://docs.microsoft.com/azure/devops/)
+- [Documentation Azure](https://docs.microsoft.com/azure/)
+- [Documentation Microsoft 365](https://docs.microsoft.com/microsoft-365/)
 
 ##  <a name="next-steps"></a>Étapes suivantes
 - Si vous avez mis à jour les adresses e-mail des abonnés, vous pouvez informer ces derniers que leurs informations de connexion ont été modifiées.  Ils recevront également un e-mail contenant les informations mises à jour.
 - Il peut être utile de [filtrer la liste des abonnés](search-license.md) de votre organisation pour rechercher les adresses e-mail de connexion qui peuvent nécessiter une modification.  
-

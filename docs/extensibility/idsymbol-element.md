@@ -1,25 +1,25 @@
 ---
-title: Élément IDSymbol | Microsoft Docs
+title: Élément IDSymbol ( Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - IDSymbol element (VSCT XML schema)
 - VSCT XML schema elements, IDSymbol
 ms.assetid: 760cfd20-3c06-422c-9103-98bfa1f387f8
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4489be4ea24382ddaf0fcbe5e824eac3945c9cec
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: d02a26a6874165738d917a14986d16d142c01915
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66319532"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80710373"
 ---
 # <a name="idsymbol-element"></a>Élément IDSymbol
-Le `IDSymbol` élément contient l’ID de la paire GUID : ID qui représente un menu, un groupe ou une commande. Le GUID est fourni à partir du parent `GuidSymbol` élément. Le `IDSymbol` élément a un `name` attribut qui fournit un nom convivial pour l’ID, qui est contenue dans le `value` attribut.
+L’élément `IDSymbol` contient l’ID de la paire GUID:ID qui représente un menu, un groupe ou une commande. Le GUID provient `GuidSymbol` de l’élément parent. L’élément `IDSymbol` `name` a un attribut qui fournit un nom amical `value` pour l’ID, qui est contenu dans l’attribut.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -34,8 +34,8 @@ Le `IDSymbol` élément contient l’ID de la paire GUID : ID qui représente u
 
 |Attribut|Description|
 |---------------|-----------------|
-|name|Obligatoire. Nom du symbole de code.|
-|par défaut|Obligatoire. Valeur d’ID numérique du symbole de code.|
+|name|Obligatoire. Nom du symbole d’identification.|
+|value|Obligatoire. Valeur d’identification numérique du symbole d’identification.|
 
 ### <a name="child-elements"></a>Éléments enfants
  Aucun.
@@ -44,10 +44,10 @@ Le `IDSymbol` élément contient l’ID de la paire GUID : ID qui représente u
 
 |Élément|Description|
 |-------------|-----------------|
-|[Élément GuidSymbol](../extensibility/guidsymbol-element.md)|Contient le GUID de la paire GUID : ID qui représente un menu, un groupe ou une commande. Groupe les éléments `IDSymbol`.|
+|[Élément GuidSymbol](../extensibility/guidsymbol-element.md)|Contient le GUID de la paire GUID:ID qui représente un menu, un groupe ou une commande. Groupe les éléments `IDSymbol`.|
 
 ## <a name="remarks"></a>Notes
- Chaque `IDSymbol` élément dans une donnée `GuidSymbol` élément doit avoir une valeur unique `value`. Toutefois, `IDSymbol` les éléments qui ont des valeurs identiques peuvent exister dans un package, à condition qu’ils disposent des parents différents.
+ Chaque `IDSymbol` élément d’un élément `GuidSymbol` `value`donné doit avoir un caractère unique. Cependant, `IDSymbol` les éléments qui ont des valeurs identiques peuvent exister dans un paquet tant qu’ils ont des parents différents.
 
 ## <a name="see-also"></a>Voir aussi
-- [Visual Studio fichiers command table (.vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+- [Fichiers visualister de table de commande de studio (.vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

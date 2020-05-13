@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 83d444cb5e3345d79ca6e1422982c0ecd37e4287
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
-ms.translationtype: HT
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/11/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "67825527"
 ---
 # <a name="inspect-previous-app-states-using-intellitrace-step-back-in-visual-studio-visual-studio-enterprise"></a>Inspecter les précédents états des applications à l’aide du retour en arrière IntelliTrace dans Visual Studio (Visual Studio Enterprise)
@@ -23,7 +23,7 @@ Le retour en arrière IntelliTrace crée automatiquement une capture instantané
 
 Le retour en arrière IntelliTrace est disponible à partir de Visual Studio Enterprise 2017 version 15.5 et versions ultérieures, et il nécessite la Mise à jour anniversaire Windows 10 ou version ultérieure. La fonctionnalité est actuellement prise en charge pour le débogage d’ASP.NET, de WinForms, de WPF, des applications console gérées et des bibliothèques de classes managées. À compter de Visual Studio 2017 Enterprise version 15.7, la fonctionnalité est également prise en charge pour ASP.NET Core et .NET Core. À compter de Visual Studio 2017 Enterprise version 15.9 Preview 2, la fonctionnalité est également pris en charge pour les applications natives ciblant Windows. Le débogage des applications UWP n’est pas pris en charge actuellement.
 
-Dans ce didacticiel, vous allez effectuer les actions suivantes :
+Ce didacticiel présente les procédures suivantes :
 
 > [!div class="checklist"]
 > * Activer les captures instantanées et les événements IntelliTrace
@@ -34,13 +34,13 @@ Dans ce didacticiel, vous allez effectuer les actions suivantes :
 
 1. Ouvrez votre projet dans Visual Studio Enterprise.
 
-1. Accédez à **Outils** > **Options** > **Paramètres IntelliTrace**, puis sélectionnez l’option **Événements et instantanés IntelliTrace**.
+1. Open **Tools** > **Options** > **Paramètres IntelliTrace,** et sélectionnez l’option **IntelliTrace événements et instantanés**.
 
-    À compter de Visual Studio 2017 Enterprise version 15.9 Preview 2, cette option se nomme **Instantanés IntelliTrace (Managé et natif)** .
+    À compter de Visual Studio 2017 Enterprise version 15.9 Preview 2, cette option se nomme **Instantanés IntelliTrace (Managé et natif)**.
 
-    ![Activer le mode Événements et captures instantanées IntelliTrace](../debugger/media/intellitrace-enable-snapshots.png "Activer le mode Événements et captures instantanées IntelliTrace")
+    ![Activez le mode Événements et instantanés IntelliTrace](../debugger/media/intellitrace-enable-snapshots.png "Activez le mode Événements et instantanés IntelliTrace")
 
-1. Si vous souhaitez configurer des options pour afficher les captures instantanées en cas d’exception, choisissez **IntelliTrace** > **Avancé** dans la boîte de dialogue **Options**.
+1. Si vous souhaitez configurer des options pour afficher des instantanés à des exceptions, choisissez **IntelliTrace** > **Advanced** à partir de la boîte de dialogue **Options.**
 
     Ces options sont disponibles à partir de Visual Studio 2017 Enterprise version 15.7.
 
@@ -49,15 +49,15 @@ Dans ce didacticiel, vous allez effectuer les actions suivantes :
     Quand vous activez les événements et captures instantanées, la création de captures instantanées en cas d’exception est également activée par défaut. Vous pouvez désactiver les captures instantanées en cas d’exception en désélectionnant **Collecte des captures instantanées pour les événements d’exception**. Quand cette fonctionnalité est activée, des captures instantanées sont créées pour les exceptions non gérées. Pour les exceptions gérées, des captures instantanées sont créées uniquement si l’exception est levée et qu’il ne s’agit pas d’une deuxième levée d’une exception précédemment levée. Vous pouvez définir un nombre maximal de captures instantanées en cas d’exception en sélectionnant une valeur dans la liste déroulante. La valeur maximale s’applique à chaque fois que votre application passe en mode Arrêt (par exemple quand elle atteint un point d’arrêt).
 
     > [!NOTE]
-    > Des captures instantanées sont créées uniquement pour les événements d’exception enregistrés par IntelliTrace. Pour le code managé, vous pouvez spécifier quels événements IntelliTrace enregistre en sélectionnant **Outils** > **Options** > **Événements IntelliTrace**.
+    > Des captures instantanées sont créées uniquement pour les événements d’exception enregistrés par IntelliTrace. Pour le code géré, vous pouvez spécifier quels événements IntelliTrace enregistre en sélectionnant **Tools** > **Options** > **IntelliTrace Events**.
 
 1. Dans votre projet, définissez un ou plusieurs points d’arrêt et démarrez le débogage (appuyez sur **F5**), ou démarrez le débogage en parcourant votre code (**F10** ou **F11**).
 
-    IntelliTrace crée une capture instantanée du processus de l’application à chaque étape du débogueur, événement de point d’arrêt et événement d’exception non gérée. Ces événements sont enregistrés sous l’onglet **Événements** de la fenêtre **Outils de diagnostic**, avec d’autres événements IntelliTrace. Pour ouvrir cette fenêtre, choisissez **Déboguer** > **Windows** > **Afficher les Outils de diagnostic**.
+    IntelliTrace crée une capture instantanée du processus de l’application à chaque étape du débogueur, événement de point d’arrêt et événement d’exception non gérée. Ces événements sont enregistrés sous l’onglet **Événements** de la fenêtre **Outils de diagnostic**, avec d’autres événements IntelliTrace. Pour ouvrir cette fenêtre, choisissez **Debug** > **Windows** > **Show Diagnostic Tools**.
 
     Une icône représentant un appareil photo s’affiche en regard des événements pour lesquels des captures instantanées sont disponibles.
 
-    ![Onglet Événements avec des captures instantanées](../debugger/media/intellitrace-events-tab-with-snapshots.png "Onglet Événements avec des captures instantanées au niveau des points d’arrêt et des étapes")
+    ![Onglet Événements avec des instantanés](../debugger/media/intellitrace-events-tab-with-snapshots.png "Onglet Événements avec des instantanés sur les points de rupture et les étapes")
 
     Pour des raisons de performances, aucune capture instantanée n’est créée quand vous effectuez un pas à pas très rapide. Si aucune icône d’appareil photo ne s’affiche en regard de l’étape, essayez d’avancer plus lentement.
 
@@ -65,9 +65,9 @@ Dans ce didacticiel, vous allez effectuer les actions suivantes :
 
 1. Parcourez les événements à l’aide des boutons **Revenir en arrière (Alt + [)** et **Étape suivante (Alt + ])** situés dans la barre d’outils Déboguer.
 
-    Utilisez ces boutons pour accéder aux événements figurant sous l’onglet **Événements** de la fenêtre **Outils de diagnostic**. Quand vous passez à l’étape précédente ou suivante d’un événement, vous activez automatiquement le [débogage d’historique](../debugger/historical-debugging.md) pour l’événement sélectionné.
+    Ces boutons naviguent sur les événements qui apparaissent dans l’onglet **Événements** dans la **fenêtre Des outils diagnostiques**. Le recul ou vers l’avant vers un événement active automatiquement le [débogage historique](../debugger/historical-debugging.md) sur l’événement sélectionné.
 
-    ![Boutons Revenir en arrière et Étape suivante](../debugger/media/intellitrace-step-back-icons-description.png "Boutons Revenir en arrière et Étape suivante")
+    ![Avancez vers l’arrière et en avant](../debugger/media/intellitrace-step-back-icons-description.png "Reculez et avancez les boutons")
 
     Quand vous avancez ou revenez en arrière, Visual Studio entre mode débogage d’historique. Dans ce mode, le contexte du débogueur bascule vers le moment où l’événement sélectionné a été enregistré. Visual Studio déplace également le pointeur vers la ligne de code correspondante dans la fenêtre source.
 
@@ -75,21 +75,21 @@ Dans ce didacticiel, vous allez effectuer les actions suivantes :
 
     Ainsi, par exemple, si vous avez atteint un point d’arrêt et avancé d’une étape (**F10**), le bouton **Revenir en arrière** place Visual Studio en mode d’historique à la ligne de code correspondant au point d’arrêt.
 
-    ![Activation du mode historique sur un événement avec une capture instantanée](../debugger/media/intellitrace-historical-mode-with-snapshot.png "Activation du mode historique sur un événement avec une capture instantanée")
+    ![Activer le mode historique sur un événement avec un instantané](../debugger/media/intellitrace-historical-mode-with-snapshot.png "Activer le mode historique sur un événement avec un instantané")
 
 2. Pour revenir à l’exécution en direct, choisissez **Continuer (F5)** ou cliquez sur le lien **Revenir au débogage dynamique** dans la barre d’informations.
 
-3. Vous pouvez également afficher une capture instantanée à partir de l’onglet **Événements**. Pour ce faire, sélectionnez un événement avec une capture instantanée, puis cliquez sur **Activer le débogage d’historique**.
+3. Vous pouvez également afficher un instantané de l’onglet **Événements.** Pour ce faire, sélectionnez un événement avec un instantané et cliquez sur **Activate Historical Debugging**.
 
-    ![Activer le débogage d’historique sur un événement](../debugger/media/intellitrace-activate-historical-debugging.png "Activer le débogage d’historique sur un événement")
+    ![Activer le débogage historique sur un événement](../debugger/media/intellitrace-activate-historical-debugging.png "Activer le débogage historique sur un événement")
 
     Contrairement à la commande **Définir l’instruction suivante**, l’affichage d’une capture instantanée ne réexécute pas votre code ; il vous donne une vue statique de l’état de l’application à un point dans le temps qui s’est produit dans le passé.
 
-    ![Vue d’ensemble du retour en arrière IntelliTrace](../debugger/media/intellitrace-step-back-overview.png "Vue d’ensemble du retour en arrière IntelliTrace")
+    ![Aperçu du retour en arrière d’IntelliTrace](../debugger/media/intellitrace-step-back-overview.png "Aperçu du retour en arrière d’IntelliTrace")
 
     Pour en savoir plus sur la façon d’inspecter des variables dans Visual Studio, consultez la [visite guidée du débogueur](../debugger/debugger-feature-tour.md)
 
-## <a name="frequently-asked-questions"></a>Questions fréquemment posées
+## <a name="frequently-asked-questions"></a>Forum Aux Questions (FAQ)
 
 #### <a name="how-is-intellitrace-step-back-different-from-intellitrace-events-only-mode"></a>En quoi la fonctionnalité Retour en arrière d’IntelliTrace diffère-t-elle du mode Événements IntelliTrace uniquement ?
 
@@ -104,14 +104,14 @@ L’impact sur les performances globales du pas à pas dépend de votre applicat
 ## <a name="known-issues"></a>Problèmes connus
 * Si vous utilisez le mode Événements et captures instantanées IntelliTrace sur des versions de Windows antérieures à Windows 10 Fall Creators Update (RS3) et que la cible de plateforme de débogage de l’application est définie sur x86, IntelliTrace ne crée pas de capture instantanée.
 
-    Solutions de contournement :
+    Solutions de contournement :
   * Si vous exécutez la version 10.0.14393.2273 Mise à jour anniversaire Windows 10 (RS1) ou version antérieure, [installez KB4103720](https://support.microsoft.com/help/4103720/windows-10-update-kb4103720).
   * Si vous exécutez la version 10.0.15063.1112 Windows 10 Creators Update (RS2) ou version antérieure, [installez KB4103722](https://support.microsoft.com/help/4103722/windows-10-update-4103722).
   * Installer ou mettre à niveau vers Windows 10 Fall Creators Update (RS3).
-  * Ou encore :
+  * Sinon :
     1. Installez l’ensemble d’outils VC ++ 2015.3 v140 du composant poste de travail (x86, x64) à partir du programme d’installation de Visual Studio.
     2. Générez l’application cible.
-    3. À partir de la ligne de commande, utilisez l’outil editbin afin de définir l’indicateur `Largeaddressaware` pour l’exécutable cible. Par exemple, vous pouvez utiliser cette commande (après avoir mis à jour le chemin) : "C:\Program Files (x86)\Microsoft Visual Studio\Preview\Enterprise\VC\Tools\MSVC\14.12.25718\bin\Hostx86\x86\editbin.exe" /Largeaddressaware "C:\Path\To\Application\app.exe".
+    3. À partir de la ligne de commande, utilisez l’outil editbin afin de définir l’indicateur `Largeaddressaware` pour l’exécutable cible. Par exemple, vous pouvez utiliser cette commande (après avoir mis à jour le chemin) : « C:\Program Files (x86)\Microsoft Visual Studio\Preview\Enterprise\VC\Tools\MSVC\14.12.25718\bin\Hostx86\x86\editbin.exe" /Largeaddressaware "C:\Path\To\Application\app.exe ».
     4. Pour démarrer le débogage, appuyez sur **F5**. À présent, des captures instantanées peuvent être créées au niveau des points d’arrêt et des étapes du débogueur.
 
        > [!Note]
@@ -119,7 +119,7 @@ L’impact sur les performances globales du pas à pas dépend de votre applicat
 
 * Quand une capture instantanée du processus de l’application est créée sur une application qui utilise un fichier mappé en mémoire persistant, le processus avec la capture instantanée détient un verrou exclusif sur le fichier mappé en mémoire (même après que le processus parent a libéré son verrou). Les autres processus peuvent toujours lire le fichier mappé en mémoire, mais ils ne peuvent pas y écrire.
 
-  Solution de contournement :
+  Solution de contournement :
   * Effacez toutes les captures instantanées en mettant fin à la session de débogage.
 
 * Lors du débogage d’une application dont le processus a un grand nombre de régions de mémoire uniques, telle qu’une application qui charge un grand nombre de DLL, les performances du pas à pas avec les captures instantanées activées peuvent être affectées. Ce problème sera résolu dans une version ultérieure de Windows. Si vous rencontrez ce problème, écrivez-nous à stepback@microsoft.com.

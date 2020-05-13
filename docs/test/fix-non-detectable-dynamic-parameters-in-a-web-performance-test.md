@@ -11,10 +11,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: b4328c5b71fa7023ec9c2ab68ae6725f5855ada5
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75589641"
 ---
 # <a name="fix-non-detectable-dynamic-parameters-in-a-web-performance-test"></a>Corriger les paramètres dynamiques non détectables dans un test de performances de site Web
@@ -25,7 +25,7 @@ Certains sites Web utilisent des paramètres dynamiques pour traiter certaines d
 
 - Valeurs de paramètre dynamique qui sont définies dans les champs masqués des pages HTML, telles que l'état d'affichage ASP.NET. Celles-ci sont gérées automatiquement par l'enregistreur qui ajoute des règles d'extraction de champs masqués au test.
 
-- Valeurs de paramètre dynamique qui sont définies comme paramètres de chaîne de requête ou de publication de formulaire. Celles-ci sont gérées via la détection des paramètres dynamiques après avoir enregistré un test de performances de site Web.
+- Valeurs de paramètre dynamique qui sont définies comme paramètres de chaîne de requête ou de publication de formulaire. Celles-ci sont gérées par le biais de la détection des paramètres dynamiques après avoir enregistré un test de performances web.
 
 Certains types de paramètres dynamiques ne sont pas détectés. Un paramètre dynamique non détecté provoquera l'échec du test de performances de site Web lors de son exécution, car la valeur dynamique sera différente à chaque exécution du test. Pour gérer correctement ces paramètres, vous pouvez ajouter manuellement des règles d'extraction aux paramètres dynamiques dans les tests de performances de site Web.
 
@@ -122,11 +122,11 @@ Pour illustrer un paramètre dynamique détectable et non détectable, nous cré
 
      ![Définir la page de démarrage sur Querystring.aspx](../test/media/web_test_dynamicparameter_setstartpage.png)
 
-15. Appuyez sur **Ctrl**+**F5** pour exécuter l’application web dans le navigateur. Copiez l'URL. Vous en aurez besoin lorsque vous enregistrerez votre test.
+15. Appuyez sur **Ctrl**+**F5** pour exécuter l’application web dans le navigateur. Copiez l’URL. Vous en aurez besoin lorsque vous enregistrerez votre test.
 
 16. Testez les deux liens. Ils doivent chacun afficher le message de réussite. Dynamic querystring parameter found. »
 
-     ![Exécuter l'application web](../test/media/web_test_dynamicparameter_runapp.png)
+     ![Exécuter l’application web](../test/media/web_test_dynamicparameter_runapp.png)
 
      ![Opération réussie&#33;](../test/media/web_test_dynamicparameter_runapp2.png)
 
@@ -174,7 +174,7 @@ Pour illustrer un paramètre dynamique détectable et non détectable, nous cré
 
 ## <a name="run-the-test-to-isolate-the-non-detected-dynamic-parameter"></a>Exécuter le test pour isoler le paramètre dynamique non-détecté
 
-1. Exécuter le test.
+1. Exécutez le test.
 
      ![Exécuter le test de performances de site web](../test/media/web_test_dynamicparameter_runtest.png)
 
@@ -190,7 +190,7 @@ Pour illustrer un paramètre dynamique détectable et non détectable, nous cré
 
      ![Utiliser la recherche rapide pour isoler le paramètre dynamique](../test/media/web_test_dynamicparameter_runresultsquckfind.png)
 
-4. En regardant l’éditeur de test, on constate qu’une valeur `jScriptQueryString___1v0yhyiyr0raa2w4j4pwf5zl` a été affectée à CustomQueryString pour la demande *JScriptQuery.aspx* et que la partie dynamique suspecte est « 1v0yhyiyr0raa2w4j4pwf5zl ». Dans la liste déroulante Rechercher, supprimez la partie suspecte de la chaîne de recherche. La chaîne doit être « CustomQueryString=jScriptQueryString___ ».
+4. Nous savons en regardant l’éditeur de test, que la demande *de JScriptQuery.aspx* CustomQueryString a été attribué une valeur de: `jScriptQueryString___1v0yhyiyr0raa2w4j4pwf5zl`, et que la partie dynamique soupçonnée est "1v0yhyiyr0raa2w4j4pwf5zl". Dans la liste déroulante Rechercher, supprimez la partie suspecte de la chaîne de recherche. La chaîne doit être « CustomQueryString=jScriptQueryString___ ».
 
      Leurs valeurs des paramètres dynamiques sont assignées dans l'une des requêtes qui précède la requête comportant l'erreur. Cochez la case Rechercher vers le haut et cliquer sur Suivant jusqu’à la demande précédente de *Querystring.aspx*, mise en surbrillance dans le volet des demandes. Vous devez y parvenir après avoir cliqué trois fois sur Suivant.
 
@@ -245,9 +245,9 @@ Pour illustrer un paramètre dynamique détectable et non détectable, nous cré
 
      ![Paramètres dynamiques détectés et corrélés](../test/media/web_test_dynamicparameter_conclusion.png)
 
-11. Exécuter le test. Il fonctionne maintenant sans échec.
+11. Exécutez le test. Il fonctionne maintenant sans échec.
 
-## <a name="qa"></a>Questions et réponses
+## <a name="qa"></a>Questions et réponses  
 
 ### <a name="q-can-i-re-run-dynamic-parameter-detection-if-my-web-app-gets-modified"></a>Q : Puis-je réexécuter la détection de paramètres dynamiques si mon application Web est modifiée ?
 
@@ -265,4 +265,4 @@ Pour illustrer un paramètre dynamique détectable et non détectable, nous cré
 
 ### <a name="q-do-i-need-to-configure-visual-studio-to-detect-dynamic-parameters"></a>Q : Dois-je configurer Visual Studio pour détecter les paramètres dynamiques ?
 
-**R :** La configuration Visual Studio par défaut consiste à détecter les paramètres dynamiques quand vous enregistrez un test de performances web. Toutefois, si les options Visual Studio sont configurées pour ne pas détecter de paramètres dynamiques, ou si l'application web qui est testée est modifiée à l'aide de paramètres dynamiques supplémentaires, vous pouvez toujours exécuter une détection des paramètres dynamiques dans l'Éditeur de tests de performances de site Web.
+**R :** La configuration Visual Studio par défaut consiste à détecter les paramètres dynamiques quand vous enregistrez un test de performances web. Toutefois, si les options Visual Studio sont configurées pour ne pas détecter de paramètres dynamiques, ou si l’application web qui est testée est modifiée à l’aide de paramètres dynamiques supplémentaires, vous pouvez toujours exécuter une détection des paramètres dynamiques dans l’éditeur de test de performances Web.

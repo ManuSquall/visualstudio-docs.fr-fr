@@ -18,27 +18,27 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 11a069e17e615199e367683273adb85e771f1d9c
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 562358ca90e223a07926aaa383ded41a5f7557cc
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75584515"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79431473"
 ---
 # <a name="options-text-editor-basic-visual-basic-advanced"></a>Option, Éditeur de texte, Basic (Visual Basic), Avancé
 La page de propriétés **Spécifique à VB**, accessible par le biais du menu **Outils**, dans la boîte de dialogue **Options**, puis dans le dossier **Éditeur de texte** et son dossier **De base**, contient les propriétés suivantes :
 
 ## <a name="analysis"></a>Analyse
 
-- Activer l’analyse complète de la solution
+- Analyse de code en direct ou portée d’analyse de fond
 
-   Active l’analyse du code sur tous les fichiers dans la solution, pas simplement les fichiers de code ouverts. Pour plus d’informations, consultez [Analyse complète de la solution](../../code-quality/how-to-enable-and-disable-full-solution-analysis-for-managed-code.md).
+   Configurer la portée d’analyse de fond pour le code géré. Pour plus d’informations, voir [Comment configurer la portée d’analyse de code en direct pour le code géré](../../code-quality/configure-live-code-analysis-scope-managed-code.md).
 
 ## <a name="using-directives"></a>Directives Using
 
 - Placer les directives « System » en premier lors du tri des usings
 
-   Quand elle est sélectionnée, la commande **Supprimer et trier les instructions using** du menu contextuel trie les directives `using` et place les espaces de noms « System » en haut de la liste.
+   Lorsqu’il est sélectionné, la commande Supprimer et Trier `using` les **utilisations** dans le menu à clic droit trie les directives et place les espaces nominaux «Système» en haut de la liste.
 
 - Séparer les groupes de directives using
 
@@ -55,9 +55,9 @@ La page de propriétés **Spécifique à VB**, accessible par le biais du menu *
 
  **Activer la mise en surbrillance des références et des mots clés**
 
-L’éditeur de texte peut mettre en surbrillance toutes les instances d’un symbole ou tous les mots clés dans une clause, par exemple `If..Then`, `While...End While` ou `Try...Catch...Finally`. Vous pouvez naviguer entre les références ou les mots clés surlignés en appuyant sur **Ctrl** + **Maj** + **Flèche vers le bas** ou **Ctrl** + **Maj** + **Flèche vers le haut**.
+L’éditeur de texte peut mettre en surbrillance toutes les instances d’un symbole ou tous les mots clés dans une clause, par exemple `If..Then`, `While...End While` ou `Try...Catch...Finally`. Vous pouvez naviguer entre les références ou les mots clés mis en évidence en appuyant sur la flèche **Ctrl** + **Shift** + **Down** ou la flèche **Ctrl** + **Shift** + **Up**.
 
-## <a name="outlining"></a>mode Plan
+## <a name="outlining"></a>Mode Plan
 
 **Activer le mode Plan**
 
@@ -109,5 +109,5 @@ L’éditeur de texte peut suggérer des solutions aux erreurs courantes et vous
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Général, Environnement, boîte de dialogue Options](../../ide/reference/general-environment-options-dialog-box.md)
-- [Options, Éditeur de texte, Tous les langages, Onglets](../../ide/reference/options-text-editor-all-languages-tabs.md)
+- [Général, Environnement, Options Dialog Box](../../ide/reference/general-environment-options-dialog-box.md)
+- [Options, Éditeur de texte, Tous les langages, Tabulations](../../ide/reference/options-text-editor-all-languages-tabs.md)

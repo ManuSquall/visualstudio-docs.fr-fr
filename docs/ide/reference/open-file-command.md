@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 50e29e3182a19c9f3a667d41725327110b415fd0
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75591513"
 ---
 # <a name="open-file-command"></a>Ouvrir un fichier, commande
@@ -35,13 +35,13 @@ File.OpenFile filename [/e:editorname]
 
 `filename`
 
-Requis. Chemin complet ou partiel et nom du fichier à ouvrir. Les chemins comportant des espaces doivent être placés entre guillemets.
+Obligatoire. Chemin complet ou partiel et nom du fichier à ouvrir. Les chemins comportant des espaces doivent être placés entre guillemets.
 
 ## <a name="switches"></a>Commutateurs
 
 /e:`editorname`
 
-Option facultative. Nom de l’éditeur dans lequel le fichier doit être ouvert. Si l’argument est spécifié, mais qu’aucun nom d’éditeur n’est fourni, la boîte de dialogue **Ouvrir avec** s’affiche.
+facultatif. Nom de l’éditeur dans lequel le fichier doit être ouvert. Si l’argument est spécifié, mais qu’aucun nom d’éditeur n’est fourni, la boîte de dialogue **Ouvrir avec** s’affiche.
 
 La syntaxe de l’argument /e:`editorname` utilise les noms d’éditeur tels qu’ils apparaissent dans la boîte de dialogue Ouvrir avec, entre guillemets.
 
@@ -51,11 +51,11 @@ Par exemple, pour ouvrir un fichier dans l’éditeur de code source, entrez les
 /e:"Source Code (text) Editor"
 ```
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Notes 
 
 La fonctionnalité de saisie semi-automatique tente de trouver le chemin et le nom de fichier correspondant aux caractères que vous tapez.
 
-## <a name="example"></a>Exemple
+## <a name="example"></a> Exemple
 
 Cet exemple ouvre la feuille de style « Test1.css » dans l’éditeur de code source.
 
@@ -66,7 +66,7 @@ Cet exemple ouvre la feuille de style « Test1.css » dans l’éditeur de code 
 ## <a name="see-also"></a>Voir aussi
 
 - [Commandes Visual Studio](../../ide/reference/visual-studio-commands.md)
-- [Commande, fenêtre](../../ide/reference/command-window.md)
-- [Fenêtre Exécution](../../ide/reference/immediate-window.md)
-- [Zone Rechercher/Commande](../../ide/find-command-box.md)
+- [Fenêtre de commande](../../ide/reference/command-window.md)
+- [Fenêtre immédiate](../../ide/reference/immediate-window.md)
+- [Boîte De recherche/commande](../../ide/find-command-box.md)
 - [Alias de commandes Visual Studio](../../ide/reference/visual-studio-command-aliases.md)

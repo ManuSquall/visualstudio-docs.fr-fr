@@ -1,5 +1,5 @@
 ---
-title: Concepteur de manifeste VSIX | Microsoft Docs
+title: CONCEPTEUR de manifeste VSIX (fr) Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -9,125 +9,125 @@ helpviewer_keywords:
 - vsix manifest
 - manifest designer
 ms.assetid: 5a691e77-cf91-430d-90ea-361d9031ef83
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7c13d32ab6b91dce94bab307f6bbc6744f9c17a0
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 30620e0fe91d0e90995d2d2f721950f878c65fdc
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66322834"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80697891"
 ---
 # <a name="vsix-manifest-designer"></a>Concepteur de manifeste VSIX
-Modifie un fichier de manifeste de package VSIX, qui définit le comportement d’installation pour une extension Visual Studio.
+Modifie un fichier manifeste de paquet VSIX, qui définit le comportement d’installation pour une extension visual Studio.
 
- Le **Concepteur de manifeste VSIX** mappe au schéma VSIX sous-jacent. Chaque élément dans le schéma peut être définie à l’aide d’un contrôle correspondant dans le concepteur. Pour plus d’informations sur le schéma, consultez [VSIX Extension de schéma 2.0 référence](../extensibility/vsix-extension-schema-2-0-reference.md).
+ Le **CONCEPTEUR de manifeste VSIX** cartes au schéma sous-jacent VSIX. Chaque élément du schéma peut être défini à l’aide d’un contrôle correspondant dans le concepteur. Pour plus d’informations sur le schéma, voir [VSIX Extension Schema 2.0 Référence](../extensibility/vsix-extension-schema-2-0-reference.md).
 
- Pour ouvrir le **Concepteur de manifeste VSIX**, recherchez un *source.extension.vsixmanifest* de fichiers dans **l’Explorateur de solutions**et ouvrez le fichier. Si le fichier ne contient pas de fichier XML valide, le Concepteur de manifeste ne s’ouvre.
+ Pour ouvrir le **concepteur de manifeste VSIX**, localiser un fichier *source.extension.vsixmanifest* dans **Solution Explorer**, et ouvrir le fichier. Si le fichier ne contient pas de XML valide, le concepteur manifeste ne s’ouvrira pas.
 
 > [!NOTE]
-> Le *source.extension.vsixmanifest* la sortie de fichier à *extension.vsixmanifest* lorsque la génération du package.
+> Le fichier *source.extension.vsixmanifest* est la sortie à *extension.vsixmanifest* lorsque le paquet est construit.
 
-## <a name="uielement-list"></a>Liste UIElement
- Le **Concepteur de manifeste VSIX** contient quatre sections qui correspondent à ces éléments de niveau supérieur du schéma :
+## <a name="uielement-list"></a>Liste des éléments de l'interface utilisateur
+ Le **concepteur de manifeste VSIX** contient quatre sections qui correspondent à ces éléments de haut niveau du schéma :
 
 - Métadonnées
 
-- Les cibles d’installation
+- Installer des cibles
 
-- Assets
+- Éléments multimédias
 
-- Dépendances
+- Les dépendances
 
-  La zone de titre contient les contrôles suivants.
+  La zone de cap contient les commandes suivantes.
 
-  **Nom de produit** décrit le nom d’extension.
+  **Nom du produit** Décrit le nom d’extension.
 
-  **ID de produit** spécifie les informations d’identification unique pour ce package.
+  **ID produit** Spécifie les informations d’identification uniques pour ce paquet.
 
   **Auteur** Spécifie le nom de l’auteur de l’extension.
 
   **Version** Spécifie le numéro de version de l’extension.
 
-  Le **métadonnées** onglet contient les contrôles suivants.
+  **L’onglet Métadonnées** contient les commandes suivantes.
 
-  **Description** fournit une description textuelle de l’extension, à afficher dans **Gestionnaire d’extensions**.
+  **Description** Fournit une description textuelle de l’extension, qui sera affichée dans **Extension Manager**.
 
-  **Langage** spécifie la langue par défaut pour le package, ce qui correspond aux données textuelles dans le manifeste. Le `Language` attribut suit la convention code paramètres régionaux de common language runtime (CLR) pour les assemblys de ressource, par exemple, en-us, fr, fr-fr. Par défaut, la valeur est neutre, ce qui signifie que le package s’exécute sur n’importe quelle version linguistique de Visual Studio.
+  **Langue** Spécifie le langage par défaut du paquet, qui correspond aux données textuelles dans le manifeste. L’attribut `Language` suit la convention de code local de l’heure courante (CLR) pour les assemblages de ressources, par exemple, en-us, fr-fr. Par défaut, la valeur est neutre, ce qui signifie que le paquet s’exécutera sur n’importe quelle version linguistique de Visual Studio.
 
-  **Licence** Spécifie le fichier texte qui contient la licence utilisateur, s’il en existe.
+  **Licence** Spécifie le fichier texte qui contient la licence utilisateur, si l’on est présent.
 
-  **Icône** Spécifie le fichier graphique ( *.png*, *.bmp*, *.jpeg*, *.ico*) qui contient l’icône à afficher dans **Gestionnaire d’extensions**, si une icône est présente. L’image d’icône doit être de 32 x 32 pixels ou il est redimensionné à ces dimensions. Si aucune icône n’est spécifiée, **Gestionnaire d’extensions** utilise une icône par défaut.
+  **Icône** Spécifie le fichier graphique (*.png*, *.bmp*, *.jpeg*, *.ico*) qui contient l’icône à afficher dans **Extension Manager**, si une icône est présente. L’image d’icône doit être 32x32 pixels ou elle est resized à ces dimensions. Si aucune icône n’est spécifiée, **Le gestionnaire d’extension** utilise une icône par défaut.
 
-  **Image d’aperçu** Spécifie le fichier graphique ( *.png*, *.bmp*, *.jpeg*, *.ico*) qui contient l’image d’aperçu afficher dans **Gestionnaire d’extensions**, si une image d’aperçu est présente. L’image d’aperçu doit être 200 x 200 pixels. Si aucune image d’aperçu n’est spécifiée, **Gestionnaire d’extensions** utilise une image par défaut.
+  **Aperçu de l’image** Spécifie le fichier graphique (*.png*, *.bmp*, *.jpeg*, *.ico*) qui contient l’image de prévisualisation à afficher dans **Extension Manager**, si une image de prévisualisation est présente. L’image de prévisualisation doit être 200x200 pixels. Si aucune image de prévisualisation n’est spécifiée, **Le gestionnaire d’extension** utilise une image par défaut.
 
-  **Balises** ajoute des balises de texte à utiliser pour les indicateurs de recherche.
+  **Tags** Ajoute des balises de texte à utiliser pour les conseils de recherche.
 
-  **Notes de publication** spécifie un fichier ( *.txt*, *.rtf*) qui contient les notes de publication. Prend également l’URL d’un site Web qui affiche les notes de publication.
+  **Notes de sortie** Spécifie un fichier (*.txt*, *.rtf*) qui contient des notes de sortie. Prend également l’URL d’un site Web qui affiche les notes de sortie.
 
-  **Guide de démarrage** spécifie un fichier ( *.txt*, *.rtf*) qui contient des informations sur l’utilisation de l’extension ou le contenu du package VSIX. Ce guide s’affiche lorsque l’installation de l’extension est terminée. Prend également l’URL d’un site Web qui affiche le guide.
+  **Guide de démarrage** Spécifie un fichier (*.txt*, *.rtf*) qui contient des informations sur la façon d’utiliser l’extension ou le contenu dans le paquet VSIX. Ce guide apparaît lorsque l’installation d’extension est terminée. Prend également l’URL d’un site Web qui affiche le guide.
 
-  **URL informations** Spécifie l’URL d’un site Web qui contient des informations supplémentaires sur le produit.
+  **Plus d’info URL** Spécifie l’URL d’un site Web qui contient des informations supplémentaires sur le produit.
 
-  Le **cibles d’installation** onglet contient les contrôles suivants.
+  **L’onglet Cibles d’installation** contient les commandes suivantes.
 
-  **Type d’installation** répertorie **Extension Visual Studio** et **SDK d’Extension** comme cible de types d’installation. Les options diffèrent en fonction du type que vous choisissez.
+  **Type d’installation** Répertorie **Visual Studio Extension** et Extension **SDK** comme types d’installation cible. Les options diffèrent, selon le type que vous choisissez.
 
-  **Extension Visual Studio** répertorie le **le InstallationTarget** éléments qui décrivent comment le package peut être installé et dans les produits Visual Studio cette extension peut être installée. Chaque produit est identifié séparément par nom et une version ou plage. Produits peuvent être ajoutés à la liste, modifiés et supprimés. Le nom et la version d’un produit correspondent à la **Id** et **Version** attributs associé **le InstallationTarget** élément.
+  **Extension de studio visuel** Répertorie les éléments **InstallationTarget** qui décrivent comment le paquet peut être installé et dans lequel les produits Visual Studio cette extension peuvent être installés. Chaque produit est identifié séparément par son nom et une version ou une gamme de version. Les produits peuvent être ajoutés à la liste, modifiés et supprimés. Le nom et la version d’un produit correspondent aux attributs **Id** et **Version** de l’élément **InstallationTarget** associé.
 
-  **Plage de versions** est [12.0, 14.0] et utilise la notation suivante :
+  **La gamme de versions** est [12.0, 14.0] et utilise la notation suivante :
 
-- [-version minimale inclusive
+- [ - version minimale inclusive
 
-- ]-version maximale inclusive
+- ] - version maximale inclusive
 
-- (-version minimale exclusive
+- ( - version minimale exclusive
 
-- )-version maximale exclusive
+- ) - version maximale exclusive
 
-- Version unique # - uniquement la version spécifiée
+- Version unique - seule la version spécifiée
 
-  **Kit SDK d’extension** spécifie une installation globale qui n’est pas limitée à un produit spécifique et une version. **Identificateur de plateforme cible** est la plateforme, tels que « Windows », que vous ciblez. **Cibler la Version de la plateforme** est la version, par exemple 8.0, de votre plateforme cible. **Nom du SDK** et **Version du SDK** sont le nom et le numéro de version du SDK, respectivement.
+  **Extension SDK** Spécifie une installation globale qui n’est pas étendue à un produit et une version spécifiques. **Target Platform Identifier** est la plate-forme, telle que "Windows", que vous ciblez. **Target Platform Version** est la version, comme 8.0, de votre plate-forme cible. **SDK Name** et **SDK Version** sont le nom et le numéro de version du SDK, respectivement.
 
-  **Cet extension VSIX est installé pour tous les utilisateurs (nécessite une élévation lors de l’installation)** si vous sélectionnez cette case à cocher, l’extension est installée pour tous les utilisateurs ; sinon, elle est installée uniquement pour l’utilisateur actuel.
+  **Ce VSIX est installé pour tous les utilisateurs (nécessite l’élévation sur l’installation)** Si vous sélectionnez cette case à cocher, l’extension est installée pour tous les utilisateurs; sinon, il est installé uniquement pour l’utilisateur actuel.
 
-  **Cet extension VSIX est installé par le programme d’installation de Windows** si vous sélectionnez cette case à cocher, l’extension est installée par le programme d’installation de Windows ( *.msi* fichier) ; sinon, il est installé comme un package VSIX standard ( *.vsix*  fichier).
+  **Ce VSIX est installé par Windows Install** Si vous sélectionnez cette case à cocher, l’extension est installée par l’installateur Windows ( fichier *.msi);* sinon, il est installé comme un package VSIX typique ( fichier *.vsix).*
 
-  Le **actifs** onglet contient les contrôles suivants.
+  **L’onglet Actifs** contient les contrôles suivants.
 
-  **Liste de biens** répertorie les éléments de ressource qui décrivent les éléments d’extension ou le contenu que ce package des surfaces. Chaque extension ou un élément de contenu est répertoriée séparément par source, de type et de chemin d’accès. Extensions et le contenu des éléments peuvent être ajoutés à la liste, modifiés et supprimés. Le type et le chemin d’accès d’un élément d’extension ou le contenu correspond à la `Type` et `Path` attributs associé `Asset` élément. Les types suivants sont connus :
+  **Liste des actifs** Répertorie les éléments d’actif qui décrivent les éléments d’extension ou de contenu que ce paquet fait surface. Chaque élément d’extension ou de contenu est répertorié séparément par source, type et chemin. Les extensions et les éléments de contenu peuvent être ajoutés à la liste, modifiés et supprimés. Le type et le chemin d’un `Type` élément `Path` d’extension `Asset` ou de contenu correspondent aux attributs et aux attributs de l’élément associé. Les types suivants sont connus :
 
-- Microsoft.VisualStudio.Package
+- Microsoft.VisualStudio.Package (en anglais seulement)
 
 - Microsoft.VisualStudio.MefComponent
 
-- Microsoft.VisualStudio.ToolboxControl
+- Microsoft.VisualStudio.ToolboxControl (en anglais seulement)
 
-- Microsoft.VisualStudio.Samples
+- Microsoft.VisualStudio.Échantillons
 
-- Microsoft.VisualStudio.ProjectTemplate
+- Microsoft.VisualStudio.ProjectTemplate (en anglais seulement)
 
-- Microsoft.VisualStudio.ItemTemplate
+- Microsoft.VisualStudio.ItemTemplate (en anglais seulement)
 
-- Microsoft.VisualStudio.Assembly
+- Microsoft.VisualStudio.Assembly (en anglais seulement)
 
-- Microsoft.ExtensionSDK
+- Microsoft.ExtensionSDK (en)
 
-  Pour ajouter ou modifier un élément multimédia, vous devez spécifier le type de ressource, si la ressource est un projet dans la solution actuelle ou un fichier dans le système de fichiers et le nom du projet. Vous pouvez également spécifier le nom du dossier dans lequel à incorporer.
+  Pour ajouter ou modifier un actif, vous devez spécifier le type d’actif, que l’actif soit un projet dans la solution actuelle ou un fichier dans le système de fichiers, et le nom du projet. Vous pouvez également spécifier le nom du dossier dans lequel il faut encastrer.
 
   Vous pouvez également créer vos propres types et leur donner des noms uniques.
 
-  Le **dépendances** onglet contient les contrôles suivants.
+  **L’onglet Dépendances** contient les contrôles suivants.
 
-  **Nom Source et la plage de versions** répertorie les éléments de dépendance de ce package, qui sont des autres packages qui dépend de ce package. Si un package de dépendance est spécifié, il doit être installé avant l’installation de ce package ; Sinon, ce package devez l’installer.
+  **Gamme de noms, de source et de version** Répertorie les éléments de dépendance de ce paquet, qui sont d’autres paquets dont ce paquet dépend. Si un paquet de dépendance est spécifié, il doit être installé avant l’installation de ce paquet; sinon, ce paquet doit l’installer.
 
-  Packages de dépendance sont spécifiées par l’identificateur de nom, plage de versions, source et comment la dépendance doit être résolu. Chaque package de dépendance est répertoriée séparément par le nom et la version source. Packages de dépendance peuvent être ajoutés à la liste, modifiés et supprimés.
+  Les paquets de dépendance sont spécifiés par identifiant, nom, plage de version, source, et comment la dépendance doit être résolue. Chaque paquet de dépendance est répertorié séparément par nom, version et source. Les paquets de dépendance peuvent être ajoutés à la liste, modifiés et supprimés.
 
-  L’identificateur doit correspondre à la `ID` attribut de métadonnées de package de dépendance. La source peut être un projet dans la solution actuelle, une extension actuellement installée ou un fichier. Le **est la dépendance est résolue** paramètre peut être le chemin d’accès relatif d’un package imbriqué ou l’URL de l’emplacement de téléchargement de la dépendance. L’ID, la version et la résolution du package de dépendance correspondent à la `Id`, `Version`, et `Location` attributs associé `Dependency` élément.
+  L’identifiant doit `ID` correspondre à l’attribut des métadonnées du paquet dépendance. La source peut être un projet dans la solution actuelle, une extension actuellement installée, ou un fichier. Le **réglage comment la dépendance est résolue** peut être le chemin relatif d’un paquet imbriqué ou l’URL de l’emplacement de téléchargement pour la dépendance. L’ID, la version et la résolution du `Id` `Version`paquet `Location` de dépendance correspondent `Dependency` à la , et les attributs de l’élément associé.
 
 ## <a name="see-also"></a>Voir aussi
-- [Référence de schéma 2.0 d’extension VSIX](../extensibility/vsix-extension-schema-2-0-reference.md)
-- [Anatomie d’un package VSIX](../extensibility/anatomy-of-a-vsix-package.md)
+- [SCHÉMA d’extension VSIX 2.0 référence](../extensibility/vsix-extension-schema-2-0-reference.md)
+- [Anatomie d’un paquet VSIX](../extensibility/anatomy-of-a-vsix-package.md)

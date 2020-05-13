@@ -1,5 +1,5 @@
 ---
-title: IDebugStackFrame3::GetUnwindCodeContext | Microsoft Docs
+title: IDebugStackFrame3::GetUnwindCodeContext (fr) Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugStackFrame3::GetUnwindCodeContext method
 ms.assetid: b25f7e7d-2b24-48e4-93b3-829e61d73ebf
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: a63883b8c2f1f7e09070173281f5e9eeda528352
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 488f675c39bb01c87aca13a9bef8cc4a715ecf18
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66352088"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80719498"
 ---
 # <a name="idebugstackframe3getunwindcodecontext"></a>IDebugStackFrame3::GetUnwindCodeContext
-Retourne le contexte de code qui représente un emplacement si l’opération de déroulement de pile s’est produite.
+Renvoie le contexte du code représentant un emplacement si une opération de détendez-vous de pile s’est produite.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -41,13 +41,13 @@ int GetUnwindCodeContext(
 
 ## <a name="parameters"></a>Paramètres
 `ppCodeContext`\
-[out] Retourne un [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) objet qui représente l’emplacement de contexte de code si un déroulement de pile s’est produite.
+[out] Renvoie un objet [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) qui représente l’emplacement du contexte du code en cas de détendez-vous.
 
 ## <a name="return-value"></a>Valeur de retour
- En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.
+ En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
 ## <a name="remarks"></a>Notes
- Bien que cette méthode peut retourner un contexte de code pour l’emplacement après un désempilage, cela ne signifie pas nécessairement que le déroulement de pile peut réellement se produire dans le frame de pile actuel.
+ Même si cette méthode peut retourner un contexte de code pour l’emplacement après un détendez-vous pile, cela ne signifie pas nécessairement que la pile se détendre peut effectivement se produire dans le cadre de pile actuelle.
 
 ## <a name="see-also"></a>Voir aussi
 - [IDebugStackFrame3](../../../extensibility/debugger/reference/idebugstackframe3.md)

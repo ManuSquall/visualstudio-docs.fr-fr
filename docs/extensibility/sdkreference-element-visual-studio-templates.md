@@ -1,20 +1,20 @@
 ---
-title: Élément SDKReference (modèles Visual Studio) | Microsoft Docs
+title: Élément SDKReference (Visual Studio Templates) Microsoft Docs
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
 ms.assetid: 72c8b352-0b7a-42b3-ba5d-2a2d1e90c34b
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3cf1b3bed942894e20132ecd7b06c1884caa9a93
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 2f43c813e688c1e175f1d36e6f06125f92404c48
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72720092"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80700161"
 ---
 # <a name="sdkreference-element-visual-studio-templates"></a>Élément SDKReference (modèles Visual Studio)
 Spécifie que le modèle d’élément utilise une référence SDK.
@@ -33,10 +33,10 @@ Spécifie que le modèle d’élément utilise une référence SDK.
  Les sections suivantes décrivent des attributs, des éléments enfants et des éléments parents.
 
 ### <a name="attributes"></a>Attributs
- Aucun(e).
+ Aucun.
 
 ### <a name="child-elements"></a>Éléments enfants
- Aucun(e).
+ Aucun.
 
 ### <a name="parent-elements"></a>Éléments parents
 

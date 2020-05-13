@@ -10,20 +10,22 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4f5f19d756d669a7b3e9e5d32a89c598c7edc9d3
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: ab46aef69bd6356eda0925c492a029b43cc57295
+ms.sourcegitcommit: 98421670ed0b8170aaa32d3d6f8681298f401a1d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75593653"
+ms.lasthandoff: 04/18/2020
+ms.locfileid: "81638046"
 ---
 # <a name="msbuild-inline-tasks"></a>Tâches inline MSBuild
+
 Les tâches MSBuild sont généralement créées en compilant une classe qui implémente l’interface <xref:Microsoft.Build.Framework.ITask>. Pour plus d’informations, consultez l’article [Tâches MSBuild](../msbuild/msbuild-tasks.md).
 
  À compter du .NET Framework version 4, vous pouvez créer des tâches inline dans le fichier projet. Vous n’êtes pas obligé de créer un assembly séparé pour héberger la tâche. Cela facilite le suivi du code source et le déploiement de la tâche. Le code source est intégré au script.
 
  Dans MSBuild 15.8, [RoslynCodeTaskFactory](../msbuild/msbuild-roslyncodetaskfactory.md) a été ajouté et permet de créer des tâches inline multiplateformes .NET Standard.  Si vous avez besoin d’utiliser des tâches inline sur .NET Core, vous devez recourir à RoslynCodeTaskFactory.
 ## <a name="the-structure-of-an-inline-task"></a>Structure d’une tâche inline
+
  Une tâche inline est contenue dans un élément [UsingTask](../msbuild/usingtask-element-msbuild.md). La tâche inline et l’élément `UsingTask` qui la contient sont généralement inclus dans un fichier *.targets* et importés dans d’autres fichiers projet selon les besoins. Voici une tâche inline de base. Notez qu’elle n’a aucun effet.
 
 ```xml
@@ -50,11 +52,11 @@ Les tâches MSBuild sont généralement créées en compilant une classe qui imp
 
 - L’attribut `TaskFactory` nomme la classe qui implémente la fabrique de tâches inline.
 
-- L’attribut `AssemblyFile` indique l’emplacement de la fabrique de tâches inline. Vous pouvez également utiliser l’attribut `AssemblyName` pour spécifier le nom qualifié complet de la classe de fabrique de tâches inline, qui se trouve généralement dans le global assembly cache (GAC).
+- L’attribut `AssemblyFile` indique l’emplacement de la fabrique de tâches inline. Alternativement, vous pouvez `AssemblyName` utiliser l’attribut pour spécifier le nom entièrement `$(MSBuildToolsPath)\Microsoft.Build.Tasks.Core.dll`qualifié de la classe d’usine de tâches en ligne, qui est généralement situé dans .
 
 Les éléments restants de la tâche `DoNothing` sont vides et fournis pour illustrer l’ordre et la structure d’une tâche inline. Un exemple plus pertinent est présenté plus loin dans cette rubrique.
 
-- L'élément `ParameterGroup` est facultatif. Quand il est spécifié, il déclare les paramètres de la tâche. Pour plus d’informations sur les paramètres d’entrée et de sortie, consultez [Paramètres d’entrée et de sortie](#input-and-output-parameters) plus loin dans cette rubrique.
+- L’élément `ParameterGroup` est facultatif. Quand il est spécifié, il déclare les paramètres de la tâche. Pour plus d’informations sur les paramètres d’entrée et de sortie, consultez [Paramètres d’entrée et de sortie](#input-and-output-parameters) plus loin dans cette rubrique.
 
 - L’élément `Task` décrit et contient le code source de la tâche.
 
@@ -67,7 +69,8 @@ Les éléments `Reference` et `Using` sont indépendants du langage. Les tâches
 > [!NOTE]
 > Les éléments contenus dans l’élément `Task` sont propres à la fabrique de tâches, dans le cas présent la fabrique de tâches de code.
 
-### <a name="code-element"></a>élément de code
+### <a name="code-element"></a>Élément de code
+
  Le dernier élément enfant de l’élément `Task` est l’élément `Code`. L’élément `Code` contient ou identifie le code à compiler dans une tâche. Ce que vous placez dans l’élément `Code` dépend de la façon dont vous souhaitez écrire la tâche.
 
  L’attribut `Language` spécifie le langage dans lequel votre code est écrit. Les valeurs acceptables sont `cs` pour C# et `vb` pour Visual Basic.
@@ -88,6 +91,7 @@ Vous pouvez également utiliser l’attribut `Source` de l’élément `Code` po
 > Quand vous définissez la classe de la tâche dans le fichier source, le nom de classe doit correspondre à l’attribut `TaskName` de l’élément [UsingTask](../msbuild/usingtask-element-msbuild.md) correspondant.
 
 ## <a name="helloworld"></a>HelloWorld
+
  Voici une tâche inline plus robuste. La tâche HelloWorld affiche « Hello, world! » sur l’appareil de journalisation des erreurs par défaut, qui est généralement la console système ou la fenêtre **Sortie** de Visual Studio. L’élément `Reference` dans l’exemple est fourni uniquement à titre d’illustration.
 
 ```xml
@@ -125,6 +129,7 @@ Log.LogError("Hello, world!");
 ```
 
 ## <a name="input-and-output-parameters"></a>Paramètres d’entrée et de sortie
+
  Les paramètres de tâche inline sont des éléments enfants d’un élément `ParameterGroup`. Chaque paramètre prend le nom de l’élément qui le définit. Le code suivant définit le paramètre `Text`.
 
 ```xml
@@ -141,7 +146,7 @@ Log.LogError("Hello, world!");
 
 - `Output` est un attribut facultatif qui est `false` par défaut. Si cet attribut est `true`, vous devez affecter une valeur au paramètre avant le retour de la méthode Execute.
 
-Par exemple :
+Par exemple,
 
 ```xml
 <ParameterGroup>
@@ -162,6 +167,7 @@ définit ces trois paramètres :
 Si l’élément `Code` a un attribut `Type` égal à `Fragment` ou `Method`, des propriétés sont créées automatiquement pour chaque paramètre. Dans le cas contraire, les propriétés doivent être déclarées explicitement dans le code source de la tâche, et elles doivent correspondre exactement à leurs définitions de paramètres.
 
 ## <a name="example"></a>Exemple
+
  La tâche inline suivante remplace chaque occurrence d’un jeton dans le fichier spécifié par la valeur donnée.
 
 ```xml
@@ -190,5 +196,6 @@ File.WriteAllText(Path, content);
 ```
 
 ## <a name="see-also"></a>Voir aussi
-- [Tâches MSBuild](../msbuild/msbuild-tasks.md)
+
+- [Tâches](../msbuild/msbuild-tasks.md)
 - [Procédure pas à pas : Créer une tâche inline](../msbuild/walkthrough-creating-an-inline-task.md)

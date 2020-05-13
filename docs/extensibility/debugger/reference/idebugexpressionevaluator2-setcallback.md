@@ -1,28 +1,28 @@
 ---
-title: IDebugExpressionEvaluator2::SetCallback | Microsoft Docs
+title: IDebugExpressionEvaluator2::SetCallback Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - IDebugExpressionEvaluator2::SetCallback
 - SetCallback
 ms.assetid: 31e3a99e-e784-44a3-8b19-cc5ef31ed546
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: f347b687066578d5572a89a6e057fd2cb3b79e0b
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 907fdaa928b3f84f6ff37490d5c54a9d48515053
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66325497"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80729337"
 ---
 # <a name="idebugexpressionevaluator2setcallback"></a>IDebugExpressionEvaluator2::SetCallback
-Permet l’évaluateur d’expression (EE) spécifier l’interface de rappel que le moteur du débogueur (dé) utilisera pour lire les paramètres de mesure.
+Permet à l’évaluateur d’expression (EE) de spécifier l’interface de rappel que le moteur de débogénaire (DE) utilisera pour lire les paramètres métriques.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -40,16 +40,16 @@ int SetCallback (
 
 ## <a name="parameters"></a>Paramètres
 `pCallback`\
-[in] Interface à utiliser pour le rappel de paramètres.
+[dans] Interface à utiliser pour les paramètres de rappel.
 
 ## <a name="return-value"></a>Valeur de retour
-En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.
+En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
 ## <a name="remarks"></a>Notes
-Cette méthode fournit une interface avec le Gestionnaire de débogage de session un évaluateur d’expression peut utiliser pour lire les paramètres de mesure. Il est utile dans le débogage distant pour lire les métriques sur le [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] ordinateur.
+Cette méthode fournit une interface au gestionnaire de débogé de session qu’un évaluateur d’expression peut utiliser pour lire les paramètres métriques. Il est utile dans le débogage [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] à distance pour lire les mesures sur l’ordinateur.
 
 ## <a name="example"></a>Exemple
-Les exemples suivants montrent comment implémenter cette méthode pour un **CEE** objet qui expose le [IDebugSettingsCallback2](../../../extensibility/debugger/reference/idebugsettingscallback2.md) interface.
+Les exemples suivants montrent comment implémenter cette méthode pour un objet **CEE** qui expose [l’interface IDebugSettingsCallback2.](../../../extensibility/debugger/reference/idebugsettingscallback2.md)
 
 ```cpp
 HRESULT CEE::SetCallback(IDebugSettingsCallback2* in_pCallback)

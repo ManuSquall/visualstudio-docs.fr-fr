@@ -5,7 +5,7 @@ description: Utilisez les ID de composant et de charge de travail de Visual Stud
 author: ornellaalt
 ms.author: ornella
 manager: jillfra
-ms.date: 09/23/2019
+ms.date: 03/16/2020
 ms.topic: reference
 helpviewer_keywords:
 - workload ID, Visual Studio
@@ -15,12 +15,13 @@ ms.assetid: 70c03438-8434-4921-ada0-c172519af431
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 monikerRange: vs-2017
-ms.openlocfilehash: c662732a4ba1cd05b1c9affa8fb86305f65b10a7
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+open_to_public_contributors: false
+ms.openlocfilehash: 61a52d98f695a6420dd6081117b8c6c4e83ae0a4
+ms.sourcegitcommit: 22deb247ad951e4971f27fdab413b158415d0584
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/16/2020
-ms.locfileid: "76114316"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81276212"
 ---
 # <a name="visual-studio-test-professional-component-directory"></a>Répertoire des composants Visual Studio Test Professional
 
@@ -45,7 +46,7 @@ Pour plus d’informations sur l’utilisation de ces ID, consultez la page [Uti
 
 ### <a name="components-included-by-this-workload"></a>Composants inclus par cette charge de travail
 
-ID de composant | Name | Version | Type de dépendance
+ID de composant | Nom | Version | Type de dépendance
 --- | --- | --- | ---
 Microsoft.VisualStudio.Component.TestTools.FeedbackClient | Outil de Feedback Microsoft | 15.6.27406.0 | Obligatoire
 Microsoft.VisualStudio.Component.TestTools.MicrosoftTestManager | Microsoft Test Manager | 15.6.27406.0 | Obligatoire
@@ -54,9 +55,9 @@ Microsoft.VisualStudio.Component.TestTools.MicrosoftTestManager | Microsoft Test
 
 Il s’agit de composants qui ne sont inclus dans aucune charge de travail, mais qui peuvent être sélectionnés de manière individuelle.
 
-ID de composant | Name | Version
+ID de composant | Nom | Version
 --- | --- | ---
-N/A | N/A | N/A
+n/a | n/a | n/a
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 

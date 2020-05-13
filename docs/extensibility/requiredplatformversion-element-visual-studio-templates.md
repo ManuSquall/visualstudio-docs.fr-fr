@@ -1,29 +1,29 @@
 ---
-title: Élément RequiredPlatformVersion (modèles Visual Studio) | Microsoft Docs
+title: Élément deplatformversion requis (modèles de studio visuel) Microsoft Docs
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
 ms.assetid: 6f0e4986-3157-4bba-aed3-c28413ebe976
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: cd166e41588ee440d9e0a1e90494aaa8f5091909
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 3bc22f97401fe5e3724f2e44c873c72acbf65be1
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66334154"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80701499"
 ---
-# <a name="requiredplatformversion-element-visual-studio-templates"></a>Élément RequiredPlatformVersion (modèles Visual Studio)
-Spécifie la version minimale du système d’exploitation que le modèle de projet a besoin pour fonctionner correctement. Cet élément est utilisé pour des modèles de projet qui créent des [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)] applications.
+# <a name="requiredplatformversion-element-visual-studio-templates"></a>Élément Deplatformversion requis (modèles Visual Studio)
+Spécifie la version minimale du système d’exploitation dont le modèle de projet nécessite pour fonctionner correctement. Cet élément est utilisé pour les [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)] modèles de projet qui créent des applications.
 
- Le `RequiredPlatformVersion` valeur est comparée directement à la version du système d’exploitation. Si le `RequiredPlatformVersion` est supérieure à la version de système d’exploitation, le modèle n’apparaît pas dans le **nouveau projet** boîte de dialogue. Pour spécifier un modèle pour [!INCLUDE[win8](../debugger/includes/win8_md.md)] ou version ultérieure, définissez `RequiredPlatformVersion` à 6.2.0. Pour spécifier un modèle pour [!INCLUDE[win81](../debugger/includes/win81_md.md)] ou version ultérieure, définissez `RequiredPlatformVersion` vers la version 6.3.0.
+ La `RequiredPlatformVersion` valeur est comparée directement à la version du système d’exploitation. Si `RequiredPlatformVersion` le modèle est plus élevé que la version du système d’exploitation, le modèle n’apparaît pas dans la boîte de dialogue **Du nouveau projet.** Pour spécifier un modèle pour [!INCLUDE[win8](../debugger/includes/win8_md.md)] ou plus, définissez `RequiredPlatformVersion` 6.2.0. Pour spécifier un modèle pour [!INCLUDE[win81](../debugger/includes/win81_md.md)] ou plus, définissez `RequiredPlatformVersion` 6.3.0.
 
- Les modèles qui spécifient `RequiredPlatformVersion`= 8 sont compatibles avec le client précédent [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)] modèles.
+ Les modèles `RequiredPlatformVersion`qui spécifient [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)] le numéro 8 sont compatibles avec les modèles clients précédents.
 
- VSTemplate TemplateData... TargetPlatformName RequiredPlatformVersion
+ VSTemplate TemplateData ..... TargetPlatformName RequiredPlatformVersion
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -44,7 +44,7 @@ Spécifie la version minimale du système d’exploitation que le modèle de pro
 
 |Élément|Description|
 |-------------|-----------------|
-|[TemplatePlatformName](../extensibility/templatedata-element-visual-studio-templates.md)|Spécifie la plateforme ciblée par le modèle de projet.|
+|[TemplatePlatformName (en)](../extensibility/templatedata-element-visual-studio-templates.md)|Spécifie la plateforme ciblée par le modèle de projet.|
 
 ## <a name="text-value"></a>Valeur texte
  Une valeur texte est requise.
@@ -71,4 +71,4 @@ Spécifie la version minimale du système d’exploitation que le modèle de pro
 ## <a name="see-also"></a>Voir aussi
 - [Élément TargetPlatformName (modèles Visual Studio)](../extensibility/targetplatformname-element-visual-studio-templates.md)
 - [Créer des modèles de projet et d’élément](../ide/creating-project-and-item-templates.md)
-- [Informations de référence sur les schémas de modèles Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
+- [Référence de schéma de modèle de studio visuel](../extensibility/visual-studio-template-schema-reference.md)

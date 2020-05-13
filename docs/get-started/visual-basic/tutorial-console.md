@@ -1,5 +1,5 @@
 ---
-title: 'Didacticiel : prise en main de Visual Basic'
+title: 'Tutorial: Démarrer avec Visual Basic'
 description: Découvrez comment créer des applications console Visual Basic dans Visual Studio, étape par étape.
 ms.custom: seodec18, get-started
 ms.date: 09/11/2019
@@ -7,23 +7,23 @@ ms.technology: vs-ide-general
 ms.prod: visual-studio-windows
 ms.topic: tutorial
 ms.devlang: vb
-author: TerryGLee
-ms.author: tglee
+author: ornellaalt
+ms.author: ornella
 manager: jillfra
 dev_langs:
 - vb
 ms.workload:
 - multiple
-ms.openlocfilehash: 684cd4762eed38d947d76655bd9632fc10d0aacd
-ms.sourcegitcommit: 697f2ab875fd789685811687387e9e8e471a38c4
+ms.openlocfilehash: 279bfb00a2466120d21c5c868c0987ec19202acc
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74829998"
+ms.lasthandoff: 03/20/2020
+ms.locfileid: "77579936"
 ---
 # <a name="tutorial-get-started-with-visual-basic-in-visual-studio"></a>Tutoriel : Bien démarrer avec Visual Basic dans Visual Studio
 
-Dans ce tutoriel pour Visual Basic (VB), vous allez utiliser Visual Studio afin de créer et d’exécuter différentes applications console tout en explorant certaines fonctionnalités de l’[IDE (environnement de développement intégré) Visual Studio](visual-studio-ide.md).
+Dans ce tutoriel pour Visual Basic (VB), vous utiliserez Visual Studio pour créer et exécuter quelques applications console différentes et explorer certaines fonctionnalités de [l’environnement de développement intégré Visual Studio (IDE)](visual-studio-ide.md) pendant que vous le faites.
 
 ::: moniker range="vs-2017"
 
@@ -37,23 +37,23 @@ Si vous n’avez pas encore installé Visual Studio, accédez à la page [Télé
 
 ::: moniker-end
 
-## <a name="create-a-project"></a>Créer un projet
+## <a name="create-a-project"></a>Création d’un projet
 
 Tout d’abord, nous allons créer un projet d’application Visual Basic. Le type de projet inclut tous les fichiers de modèle dont vous aurez besoin au départ.
 
 ::: moniker range="vs-2017"
 
-1. Ouvrez Visual Studio 2017.
+1. Ouvrez Visual Studio 2017.
 
 2. Dans la barre de menus supérieure, choisissez **Fichier** > **Nouveau** > **Projet**.
 
-3. Dans la boîte de dialogue **Nouveau projet**, dans le volet gauche, développez **Visual Basic**, puis choisissez **.NET Core**. Dans le volet central, choisissez **Application console (.NET Core)** . Nommez ensuite le projet *WhatIsYourName*.
+3. Dans la boîte de dialogue **Nouveau projet**, dans le volet gauche, développez **Visual Basic**, puis choisissez **.NET Core**. Dans le volet central, choisissez **Application console (.NET Core)**. Ensuite, nommez le projet *WhatIsYourName*.
 
    ![Modèle de projet d’application console (.NET Core) dans la boîte de dialogue Nouveau projet dans l’IDE de Visual Studio](media/new-project-vb-dotnetcore-whatisyourname-console-app.png)
 
 ### <a name="add-a-workload-optional"></a>Ajouter une charge de travail (facultatif)
 
-Si vous ne voyez pas le modèle de projet **Application console (.NET Core)** , vous pouvez l’obtenir en ajoutant la charge de travail **Développement multiplateforme .NET Core**. Vous pouvez ajouter cette charge de travail de l’une des deux manières suivantes, en fonction des mises à jour de Visual Studio 2017 qui sont installées sur votre ordinateur.
+Si vous ne voyez pas le modèle de projet **Application console (.NET Core)**, vous pouvez l’obtenir en ajoutant la charge de travail **Développement multiplateforme .NET Core**. Vous pouvez ajouter cette charge de travail de l’une des deux manières suivantes, en fonction des mises à jour de Visual Studio 2017 qui sont installées sur votre ordinateur.
 
 #### <a name="option-1-use-the-new-project-dialog-box"></a>Option 1 : Utiliser la boîte de dialogue Nouveau projet
 
@@ -63,7 +63,7 @@ Si vous ne voyez pas le modèle de projet **Application console (.NET Core)** , 
 
 1. Visual Studio Installer est lancé. Choisissez la charge de travail **Développement multiplateforme .NET Core**, puis choisissez **Modifier**.
 
-   ![Charge de travail Développement multiplateforme .Net Core dans Visual Studio Installer](../media/tutorial-aspnet-workload.png)
+   ![Charge de travail Développement multiplateforme .Net Core dans le programme d’installation de Visual Studio](../media/tutorial-aspnet-workload.png)
 
 #### <a name="option-2-use-the-tools-menu-bar"></a>Option 2 : Utiliser la barre de menus Outils
 
@@ -76,32 +76,32 @@ Si vous ne voyez pas le modèle de projet **Application console (.NET Core)** , 
 ::: moniker range="vs-2019"
 
 > [!NOTE]
-> Certaines des captures d’écran de ce tutoriel utilisent le thème foncé. Si vous n’utilisez pas le thème foncé, mais que vous aimeriez l’utiliser, consultez la page [Personnaliser l’éditeur et l’IDE de Visual Studio](../../ide/quickstart-personalize-the-ide.md) pour savoir comment faire.
+> Certaines des captures d’écran de ce tutoriel utilisent le thème foncé. Si vous n’utilisez pas le thème foncé mais que vous aimeriez l’utiliser, consultez la page [Personnaliser l’éditeur et l’IDE de Visual Studio](../../ide/quickstart-personalize-the-ide.md) pour savoir comment faire.
 
 1. Ouvrez Visual Studio 2019.
 
-1. Dans la fenêtre de démarrage, choisissez **Créer un projet**.
+1. Sur la fenêtre de départ, choisissez **Créer un nouveau projet**.
 
    ![Afficher la fenêtre « Créer un projet »](../../get-started/media/vs-2019/create-new-project-dark-theme.png)
 
 1. Dans la fenêtre **Créer un projet**, entrez ou tapez *console* dans la zone de recherche. Ensuite, choisissez **Visual Basic** dans la liste des langages, puis choisissez **Windows** dans la liste des plateformes. 
 
-   Après avoir appliqué les filtres de langage et de plateforme, choisissez le modèle **Application console (.NET Core)** , puis choisissez **Suivant**.
+   Après avoir appliqué les filtres de langage et de plateforme, choisissez le modèle **Application console (.NET Core)**, puis choisissez **Suivant**.
 
    ![Choisir le modèle Visual Basic pour l’application console (.NET Framework)](./media/vs-2019/vb-create-new-project-search-console-net-core-filtered.png)
 
    > [!NOTE]
-   > Si vous ne voyez pas le modèle **Application console (.NET Core)** , vous pouvez l’installer à partir de la fenêtre **Créer un projet**. Dans le **Vous ne trouvez pas ce que vous cherchez ?** , choisissez le lien **Installer plus d’outils et de fonctionnalités**.
+   > Si vous ne voyez pas le modèle **Application console (.NET Core)**, vous pouvez l’installer à partir de la fenêtre **Créer un projet**. Dans le **Vous ne trouvez pas ce que vous cherchez ?**, choisissez le lien **Installer plus d’outils et de fonctionnalités**.
    >
    > ![Le lien « Installer plus d’outils et de fonctionnalités » du message « Vous ne trouvez pas ce que vous cherchez ? » dans la fenêtre « Créer un projet »](../../get-started/media/vs-2019/not-finding-what-looking-for.png) 
    > 
    > Ensuite, dans Visual Studio Installer, choisissez la charge de travail **Développement multiplateforme .NET Core**.
    >
-   > ![Charge de travail Développement multiplateforme .Net Core dans Visual Studio Installer](../../get-started/media/dot-net-core-xplat-dev-workload.png)
+   > ![Charge de travail Développement multiplateforme .Net Core dans le programme d’installation de Visual Studio](../../get-started/media/dot-net-core-xplat-dev-workload.png)
    >
    > Après cela, choisissez le bouton **Modifier** dans Visual Studio Installer. Vous pouvez être invité à enregistrer votre travail ; le cas échéant, faites-le. Ensuite, choisissez **Continuer** pour installer la charge de travail. Ensuite, revenez à l’étape 2 de cette procédure « [Créer un projet](#create-a-project) ».
 
-1. Dans la fenêtre **Configurer votre nouveau projet**, tapez ou entrez *WhatIsYourName* dans la zone **Nom du projet**. Choisissez ensuite **Créer**.
+1. Dans la fenêtre **Configurer votre nouveau projet**, tapez ou entrez *WhatIsYourName* dans la zone **Nom du projet**. Ensuite, choisissez **Créer**.
 
    ![Dans la fenêtre « Configurer votre nouveau projet », nommez votre projet « WhatIsYourName »](./media/vs-2019/vb-name-your-project-whatname.png)
 
@@ -111,7 +111,7 @@ Si vous ne voyez pas le modèle de projet **Application console (.NET Core)** , 
 
 ## <a name="create-a-what-is-your-name-application"></a>Créer une application « Quel est votre nom »
 
-Nous allons créer une application qui vous demande votre nom et l’affiche, ainsi que la date et l’heure. Voici comment :
+Nous allons créer une application qui vous demande votre nom et l’affiche, ainsi que la date et l’heure. Voici comment faire :
 
  ::: moniker range="vs-2017"
 
@@ -132,7 +132,7 @@ Nous allons créer une application qui vous demande votre nom et l’affiche, ai
 
    ![Fenêtre de code affichant le code « Quel est votre nom »](./media/vs-2019/vb-codewindow-what-name-dark.png)
 
-1. Utilisez le bouton vert **Démarrer** ou appuyez sur la touche **F5** pour générer et exécuter votre première application.
+1. Utilisez le bouton **Démarrer** vert ou appuyez sur **F5** pour construire et exécuter votre première application.
 
 1. Quand la fenêtre de console s’ouvre, entrez votre nom. La fenêtre de console doit ressembler à la capture d’écran suivante :
 
@@ -159,7 +159,7 @@ Nous allons créer une application qui vous demande votre nom et l’affiche, ai
 
    ![Fenêtre de code affichant le code « Quel est votre nom »](./media/vs-2019/vb-codewindow-what-name-dark.png)
 
-1. Utilisez le bouton vert **Démarrer** ou appuyez sur la touche **F5** pour générer et exécuter votre première application.
+1. Utilisez le bouton **Démarrer** vert ou appuyez sur **F5** pour construire et exécuter votre première application.
 
 1. Quand la fenêtre de console s’ouvre, entrez votre nom. La fenêtre de console doit ressembler à la capture d’écran suivante :
 
@@ -175,7 +175,7 @@ Nous allons créer une application qui vous demande votre nom et l’affiche, ai
 
 1. Ouvrez Visual Studio 2017 puis, dans la barre de menus supérieure, choisissez **Fichier** > **Nouveau** > **Projet**.
 
-1. Dans la boîte de dialogue **Nouveau projet**, dans le volet gauche, développez **Visual Basic**, puis choisissez **.NET Core**. Dans le volet central, choisissez **Application console (.NET Core)** . Ensuite, nommez le fichier *CalculateThis*.
+1. Dans la boîte de dialogue **Nouveau projet**, dans le volet gauche, développez **Visual Basic**, puis choisissez **.NET Core**. Dans le volet central, choisissez **Application console (.NET Core)**. Ensuite, nommez le fichier *CalculateThis*.
 
 1. Entrez le code suivant entre les lignes `Module Program` et `End Module` :
 
@@ -206,13 +206,13 @@ Nous allons créer une application qui vous demande votre nom et l’affiche, ai
 
 ::: moniker range="vs-2019"
 
-1. Dans la fenêtre de démarrage, choisissez **Créer un projet**. 
+1. Sur la fenêtre de départ, choisissez **Créer un nouveau projet**. 
 
 1. Dans la fenêtre **Créer un projet**, entrez ou tapez *console* dans la zone de recherche. Ensuite, choisissez **Visual Basic** dans la liste des langages, puis choisissez **Windows** dans la liste des plateformes. 
 
-1. Après avoir appliqué les filtres de langage et de plateforme, choisissez le modèle **Application console (.NET Core)** , puis choisissez **Suivant**.
+1. Après avoir appliqué les filtres de langage et de plateforme, choisissez le modèle **Application console (.NET Core)**, puis choisissez **Suivant**.
 
-   Puis, dans la fenêtre **configurer votre nouveau projet** , tapez ou entrez *CalculateThis* dans la zone **nom du projet** . Ensuite, choisissez **Créer**.
+   Ensuite, dans la configuration de votre nouvelle fenêtre **de projet,** tapez ou entrez *CalculateThis* dans la boîte **de nom du projet.** Ensuite, choisissez **Créer**.
 
 1. Entrez le code suivant entre les lignes `Module Program` et `End Module` :
 
@@ -261,7 +261,7 @@ Une application console prend une entrée et affiche la sortie dans une fenêtre
 
 .NET Core est la suite logique du .NET Framework. Là où le .NET Framework vous permettait de partager du code entre les langages de programmation, .NET Core ajoute la capacité à partager du code entre des plateformes. De plus, il est open source. (Le .NET Framework et .NET Core incluent des bibliothèques de fonctionnalités prégénérées ainsi qu’un CLR (Common Language Runtime) qui agit comme une machine virtuelle dans laquelle exécuter votre code.)
 
-## <a name="next-steps"></a>Étapes suivantes :
+## <a name="next-steps"></a>Étapes suivantes
 
 Félicitations ! Vous avez terminé ce didacticiel. Pour en apprendre davantage, consultez le tutoriel suivant.
 
@@ -271,5 +271,5 @@ Félicitations ! Vous avez terminé ce didacticiel. Pour en apprendre davantage,
 ## <a name="see-also"></a>Voir aussi
 
 * [Procédures pas à pas relatives au langage Visual Basic](/dotnet/visual-basic/walkthroughs)
-* [Références du langage Visual Basic](/dotnet/visual-basic/language-reference/index)
+* [Informations de référence sur le langage Visual Basic](/dotnet/visual-basic/language-reference/index)
 * [IntelliSense pour les fichiers de code Visual Basic](../../ide/visual-basic-specific-intellisense.md)

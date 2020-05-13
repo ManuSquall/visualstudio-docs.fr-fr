@@ -12,15 +12,15 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: 54a80ef606a553846ef5be7a86ed4183f3ffde57
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "62958235"
 ---
-# <a name="step-3-serve-static-files-add-pages-and-use-template-inheritance"></a>Étape 3 : Prendre en charge les fichiers statiques, ajouter des pages et utiliser l’héritage du modèle
+# <a name="step-3-serve-static-files-add-pages-and-use-template-inheritance"></a>Étape 3 : Prendre en charge les fichiers statiques, ajouter des pages et utiliser l’héritage du modèle
 
-**Étape précédente : [Créer une application Django avec des vues et des modèles de pages](learn-django-in-visual-studio-step-02-create-an-app.md)**
+**Étape précédente : [créer une application Django avec des affichages et modèles de page](learn-django-in-visual-studio-step-02-create-an-app.md)**
 
 Dans les étapes précédentes de ce tutoriel, vous avez appris comment créer une application Django minimale avec une seule page HTML autonome. Les applications web modernes sont cependant composées en général de nombreuses pages et utilisent des ressources partagées, comme des fichiers CSS et JavaScript, pour offrir un comportement et un style cohérents.
 
@@ -32,7 +32,7 @@ Dans cette étape, vous apprenez comment :
 > - ajoutez des pages supplémentaires à l’application (étape 3-3)
 > - utiliser l’héritage de modèle pour créer un en-tête et une barre de navigation utilisés sur plusieurs pages (étape 3-4)
 
-## <a name="step-3-1-become-familiar-with-item-templates"></a>Étape 3-1 : Se familiariser avec les modèles d’élément
+## <a name="step-3-1-become-familiar-with-item-templates"></a>Étape 3-1 : se familiariser avec les modèles d’élément
 
 Lorsque vous développez une application Django, vous ajoutez généralement beaucoup plus de fichiers Python, HTML, CSS et JavaScript. Pour chaque type de fichier (ainsi que d’autres fichiers tels que *web.config* dont vous pouvez avoir besoin pour le déploiement), Visual Studio fournit des [modèles d’élément](python-item-templates.md) pratiques pour bien commencer.
 
@@ -42,11 +42,11 @@ Pour afficher les modèles disponibles, accédez à **Explorateur de solutions**
 
 Pour utiliser un modèle, sélectionnez le modèle souhaité, spécifiez un nom pour le fichier et sélectionnez **OK**. L’ajout d’un élément de cette manière permet d’ajouter automatiquement le fichier à votre projet Visual Studio et marque les modifications du contrôle de code source.
 
-### <a name="question-how-does-visual-studio-know-which-item-templates-to-offer"></a>Question : J'utilise un certificat X.509 avec mon service et j'obtiens une System.Security.Cryptography.CryptographicException. Comment Visual Studio sait quels modèles d’élément proposer ?
+### <a name="question-how-does-visual-studio-know-which-item-templates-to-offer"></a>Question : comment Visual Studio sait quel modèle d’élément proposer ?
 
-Réponse : Le fichier projet Visual Studio (*.pyproj*) contient un identificateur de type de projet qui le marque comme projet Python. Visual Studio utilise cet identificateur de type pour afficher uniquement les modèles d’élément qui conviennent pour le type de projet. De cette manière, Visual Studio peut fournir un ensemble riche de modèles d’élément pour plusieurs types de projet sans vous demander de les trier à chaque fois.
+Réponse : le fichier projet Visual Studio (*.pyproj*) contient un identificateur de type de projet qui le marque comme projet Python. Visual Studio utilise cet identificateur de type pour afficher uniquement les modèles d’élément qui conviennent pour le type de projet. De cette manière, Visual Studio peut fournir un ensemble riche de modèles d’élément pour plusieurs types de projet sans vous demander de les trier à chaque fois.
 
-## <a name="step-3-2-serve-static-files-from-your-app"></a>Étape 3-2 : Prendre en charge les fichiers statiques à partir de votre application
+## <a name="step-3-2-serve-static-files-from-your-app"></a>Étape 3-2 : prendre en charge les fichiers statiques à partir de votre application
 
 Dans une application Web générée avec Python (à l’aide de n’importe quelle infrastructure), vos fichiers Python s’exécutent toujours sur le serveur de l’hôte Web et ne sont jamais transmis à l’ordinateur d’un utilisateur. D’autres fichiers, cependant, tels que CSS et JavaScript, sont utilisés exclusivement par le navigateur, afin que le serveur hôte les remette simplement tel-quel à chaque fois qu’ils sont demandés. Ces fichiers sont appelés fichiers « statiques » et Django peut les remettre automatiquement sans que vous ayez besoin d’écrire du code.
 
@@ -63,9 +63,9 @@ STATIC_ROOT = posixpath.join(*(BASE_DIR.split(os.path.sep) + ['static']))
 
 Vous pouvez organiser les fichiers à l’aide d’une structure de dossiers dans le dossier *static* de votre choix, puis utiliser les chemins relatifs au sein de ce dossier pour faire référence aux fichiers. Pour illustrer ce processus, les étapes suivantes permettent d’ajouter un fichier CSS à l’application, puis d’utiliser cette feuille de style dans le modèle *index.html* :
 
-1. Dans **l’Explorateur de solutions**, cliquez avec le bouton droit sur le dossier **HelloDjangoApp** dans le projet Visual Studio, sélectionnez **Ajouter** > **Nouveau dossier** et nommez le dossier `static`.
+1. Dans **Solution Explorer**, cliquez à droite sur le dossier **HelloDjangoApp** dans le projet Visual Studio, **sélectionnez Ajouter** > **un nouveau dossier**et nommez le dossier `static`.
 
-1. Cliquez avec le bouton droit sur le dossier **static** et sélectionnez **Ajouter** > **Nouvel élément**. Dans la boîte de dialogue qui s’affiche, sélectionnez le modèle **Feuille de style**, nommez le fichier `site.css`, puis sélectionnez **OK**. Le fichier **site.css** apparaît dans le projet et est ouvert dans l’éditeur. Votre structure de dossiers doit apparaître semblable à l’image suivante :
+1. Cliquez avec le bouton droit sur le dossier **static** et sélectionnez **Ajouter** > **Nouvel élément**. Dans le dialogue qui apparaît, sélectionnez le `site.css`modèle **Stylesheet,** nommez le fichier et sélectionnez **OK**. Le fichier **site.css** apparaît dans le projet et est ouvert dans l’éditeur. Votre structure de dossiers doit apparaître semblable à l’image suivante :
 
     ![Structure de fichier statique comme indiqué dans l’Explorateur de solutions](media/django/step03-static-file-structure.png)
 
@@ -95,15 +95,15 @@ Vous pouvez organiser les fichiers à l’aide d’une structure de dossiers dan
 
 1. Exécutez le projet et observez le résultat. Arrêtez le serveur lorsqu’il est terminé et validez vos modifications du contrôle de code source si vous le souhaitez (comme expliqué dans [l’étape 2](learn-django-in-visual-studio-step-02-create-an-app.md#commit-to-source-control)).
 
-### <a name="question-what-is-the-purpose-of-the--load-staticfiles--tag"></a>Question : J'utilise un certificat X.509 avec mon service et j'obtiens une System.Security.Cryptography.CryptographicException. Quelle est la fonction de la balise {% load staticfiles %} ?
+### <a name="question-what-is-the-purpose-of-the--load-staticfiles--tag"></a>Question : quel est l’objectif de la balise {% load staticfiles %} ?
 
-Réponse : La ligne `{% load staticfiles %}` est nécessaire avant de faire référence aux fichiers statiques dans des éléments tels que `<head>` et `<body>`. Dans l’exemple présenté dans cette section, « staticfiles » fait référence à un ensemble de balises du modèle Django personnalisé. Ceci vous permet d’utiliser la syntaxe `{% static %}` pour faire référence aux fichiers statiques.  Sans `{% load staticfiles %}`, vous verrez une exception lorsque l’application s’exécute.
+Réponse : la ligne `{% load staticfiles %}` est nécessaire avant de faire référence aux fichiers statiques dans les éléments tels que `<head>` et `<body>`. Dans l’exemple présenté dans cette section, « staticfiles » fait référence à un ensemble de balises du modèle Django personnalisé. Ceci vous permet d’utiliser la syntaxe `{% static %}` pour faire référence aux fichiers statiques.  Sans `{% load staticfiles %}`, vous verrez une exception lorsque l’application s’exécute.
 
-### <a name="question-are-there-any-conventions-for-organizing-static-files"></a>Question : J'utilise un certificat X.509 avec mon service et j'obtiens une System.Security.Cryptography.CryptographicException. Existe-t-il des conventions pour organiser des fichiers statiques ?
+### <a name="question-are-there-any-conventions-for-organizing-static-files"></a>Question : Existe-t-il des conventions pour organiser des fichiers statiques ?
 
-Réponse : Vous pouvez ajouter d’autres fichiers CSS, JavaScript et HTML dans votre dossier *static* comme vous le souhaitez. Une façon classique d’organiser des fichiers statiques consiste à créer des sous-dossiers nommés *fonts*, *scripts* et *content* (pour les feuilles de style et autres fichiers). Dans chaque cas, n’oubliez pas d’inclure ces dossiers dans le chemin d’accès relatif au fichier dans les références `{% static %}`.
+Réponse : vous pouvez ajouter d’autres fichiers CSS, JavaScript et HTML dans votre dossier *static* comme vous le souhaitez. Une façon classique d’organiser des fichiers statiques consiste à créer des sous-dossiers nommés *fonts*, *scripts* et *content* (pour les feuilles de style et autres fichiers). Dans chaque cas, n’oubliez pas d’inclure ces dossiers dans le chemin d’accès relatif au fichier dans les références `{% static %}`.
 
-## <a name="step-3-3-add-a-page-to-the-app"></a>Étape 3-3 : Ajouter une page à l’application
+## <a name="step-3-3-add-a-page-to-the-app"></a>Étape 3-3 : ajouter une page à l’application
 
 L’ajout d’une autre page à l’application signifie les éléments suivants :
 
@@ -118,7 +118,7 @@ Les étapes suivantes ajoutent une page « À propos » au projet « HelloDja
     > [!Tip]
     > Si la commande **Nouvel élément** n’apparaît pas dans le menu **Ajouter**, vérifiez que vous avez arrêté le serveur afin que Visual Studio quitte le mode Débogage.
 
-1. Remplacez le contenu *d’about.html* par le balisage suivant (vous remplacez le lien explicite vers la page d’accueil par une barre de navigation simple à l’étape 3-4) :
+1. Remplacez le contenu de *about.html* par le balisage suivant (vous remplacez le lien explicite vers la page d’accueil par une barre de navigation simple à l’étape 3-4) :
 
     ```html
     <html>
@@ -160,17 +160,17 @@ Les étapes suivantes ajoutent une page « À propos » au projet « HelloDja
     <div><a href="about">About</a></div>
     ```
 
-1. Enregistrez tous les fichiers à l’aide de la commande de menu **Fichier** > **Enregistrer tout** ou appuyez simplement sur **Ctrl**+**Maj**+**S**. (Techniquement, cette étape n’est pas nécessaire puisque l’exécution du projet dans Visual Studio enregistre automatiquement les fichiers. Toutefois, c’est une commande bonne à connaître !)
+1. Enregistrez tous les fichiers à l’aide de la commande de menu**Enregistrer tous** **les fichiers,** > ou appuyez simplement sur **Ctrl**+**Shift**+**S**. (Techniquement, cette étape n’est pas nécessaire puisque l’exécution du projet dans Visual Studio enregistre automatiquement les fichiers. Toutefois, c’est une commande bonne à connaître !)
 
 1. Exécutez le projet pour observer les résultats et contrôler la navigation entre les pages. Fermez le serveur une fois terminé.
 
-### <a name="question-i-tried-using-index-for-the-link-to-the-home-page-but-it-didnt-work-why"></a>Question : J'utilise un certificat X.509 avec mon service et j'obtiens une System.Security.Cryptography.CryptographicException. J’ai essayé d’utiliser « index » pour le lien vers la page d’accueil, mais cela n’a pas fonctionné. Pourquoi ?
+### <a name="question-i-tried-using-index-for-the-link-to-the-home-page-but-it-didnt-work-why"></a>Question : j’ai essayé d’utiliser « index » pour le lien vers la page d’accueil, mais cela n’a pas fonctionné. Pourquoi ?
 
-Réponse : Bien que la fonction d’affichage dans *views.py* soit nommée `index`, les modèles de routage d’URL dans le fichier *urls.py* du projet Django ne contiennent pas d’expression régulière correspondant à la chaîne « index ». Pour faire correspondre cette chaîne, vous devez ajouter une autre entrée pour le modèle `^index$`.
+Réponse : bien que la fonction d’affichage dans *views.py* soit nommée `index`, les modèles de routage d’URL dans le fichier *urls.py* du projet Django ne contiennent pas une expression régulière qui correspond à la chaîne « index ». Pour faire correspondre cette chaîne, vous devez ajouter une autre entrée pour le modèle `^index$`.
 
 Comme indiqué dans la section suivante, il est préférable d’utiliser la balise `{% url '<pattern_name>' %}` dans le modèle de page pour faire référence au *nom* d’un modèle et dans ce cas Django crée l’URL appropriée pour vous. Par exemple, remplacez `<div><a href="home">Home</a></div>` dans *about.html* par `<div><a href="{% url 'index' %}">Home</a></div>`. L’utilisation « d’index » fonctionne ici, car le premier modèle d’URL dans *urls.py* est, en fait, nommé « index » (en vertu de l’argument `name='index'`). Vous pouvez également utiliser « accueil » pour désigner le second modèle.
 
-## <a name="step-3-4-use-template-inheritance-to-create-a-header-and-nav-bar"></a>Étape 3-4 : Utiliser l’héritage du modèle pour créer un en-tête et une barre de navigation
+## <a name="step-3-4-use-template-inheritance-to-create-a-header-and-nav-bar"></a>Étape 3-4 : utiliser l’héritage du modèle pour créer un en-tête et une barre de navigation
 
 Au lieu de liens de navigation explicites sur chaque page, les applications Web modernes utilisent généralement un en-tête de marque et une barre de navigation qui fournit les liens de page, menus contextuels, et ainsi de suite, les plus importants. Pour vous assurer que l’en-tête et la barre de navigation sont les mêmes dans toutes les pages, toutefois, vous ne souhaitez pas répéter le même code dans chaque modèle de page. Au lieu de cela, vous souhaitez définir les parties communes de toutes les pages dans un seul emplacement.
 
@@ -216,7 +216,7 @@ Les étapes suivantes démontrent l’héritage :
     </html>
     ```
 
-1. Ajoutez les styles suivants au fichier *static/site.css* de l’application (cette procédure pas à pas ne tente pas d’illustrer une conception réactive ici ; ces styles permettent simplement de générer un résultat intéressant) :
+1. Ajouter les styles suivants au fichier *static/site.css* de l’application (cette procédure pas à pas ne tente pas d’illustrer une conception réactive ici ; ces styles permettent simplement de générer un résultat intéressant) :
 
     ```css
     .navbar {
@@ -275,12 +275,12 @@ Les étapes suivantes démontrent l’héritage :
 ## <a name="next-steps"></a>Étapes suivantes
 
 > [!div class="nextstepaction"]
-> [Utiliser le modèle de projet Web Django complet](learn-django-in-visual-studio-step-04-full-django-project-template.md)
+> [Utiliser le modèle de projet web Django complet](learn-django-in-visual-studio-step-04-full-django-project-template.md)
 
 ## <a name="go-deeper"></a>Approfondir la question
 
-- [Déployer l’application web sur Azure App Service](publishing-python-web-applications-to-azure-from-visual-studio.md)
+- [Déployer l’application web sur Azure App Service.](publishing-python-web-applications-to-azure-from-visual-studio.md)
 - [Écrire votre première application Django, partie 3 (affichages)](https://docs.djangoproject.com/en/2.0/intro/tutorial03/) (docs.djangoproject.com)
 - Pour davantage de fonctionnalités des modèles Django, tel que le flux de contrôle, consultez [Le langage de gabarit Django](https://docs.djangoproject.com/en/2.0/ref/templates/language/) (docs.djangoproject.com)
 - Pour plus d’informations sur l’utilisation de la balise `{% url %}`, consultez [url](https://docs.djangoproject.com/en/2.0/ref/templates/builtins/#url) au sein de [balises du modèle et filtres intégrés pour la référence aux modèles Django](https://docs.djangoproject.com/en/2.0/ref/templates/builtins/) (docs.djangoproject.com)
-- Code source du tutoriel sur GitHub : [Microsoft/python-sample-vs-learning-django](https://github.com/Microsoft/python-sample-vs-learning-django)
+- Code source du tutoriel sur GitHub : [Microsoft/python-sample-vs-learning-django](https://github.com/Microsoft/python-sample-vs-learning-django)

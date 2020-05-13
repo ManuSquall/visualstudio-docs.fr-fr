@@ -1,5 +1,5 @@
 ---
-title: IDebugProgramNode2::DetachDebugger_V7 | Microsoft Docs
+title: IDebugProgramNode2::DetachDebugger-V7 ( Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,25 +7,25 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProgramNode2::DetachDebugger
 - IDebugProgramNode2::DetachDebugger_V7
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 241db5db55897932120b3253ff5185cb852ea77b
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 925f1b07662ece35d21f9b647681bc898428c4c7
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66351204"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80722107"
 ---
-# <a name="idebugprogramnode2detachdebuggerv7"></a>IDebugProgramNode2::DetachDebugger_V7
+# <a name="idebugprogramnode2detachdebugger_v7"></a>IDebugProgramNode2::DetachDebugger_V7
 
 > [!Note]
-> DÉCONSEILLÉ. N’UTILISEZ PAS.
+> Déconseillée. NE PAS UTILISER.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -41,14 +41,14 @@ int DetachDebugger_V7 ();
 
 ## <a name="return-value"></a>Valeur de retour
 
-Une implémentation doit toujours retourner `E_NOTIMPL`.
+Une mise en `E_NOTIMPL`œuvre doit toujours revenir .
 
 ## <a name="remarks"></a>Notes
 
 > [!WARNING]
-> À compter de Visual Studio 2005, cette méthode n’est plus utilisée et doit toujours retourner `E_NOTIMPL`.
+> A partir de Visual Studio 2005, cette méthode `E_NOTIMPL`n’est plus utilisée et devrait toujours revenir .
 
-Cette méthode est appelée lorsque le débogueur se ferme de façon inattendue. Lorsque cette méthode est appelée, l’Allemagne doit reprendre le programme comme si l’utilisateur détachée à partir de celui-ci. Aucun autre événement de débogage ne doit être envoyé. Le programme doit être dans un état où il pouvant être attachée à partir d’une autre instance du débogueur.
+Cette méthode est appelée lorsque le débbuggeur quitte de façon inattendue. Lorsque cette méthode est appelée, le DE doit reprendre le programme comme si l’utilisateur s’en était détaché. Il ne faut plus envoyer d’événements de débogé. Le programme devrait être dans un état où il est joignable d’un autre cas du débbuggeur.
 
 ## <a name="see-also"></a>Voir aussi
 

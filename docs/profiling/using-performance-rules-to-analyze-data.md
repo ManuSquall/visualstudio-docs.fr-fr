@@ -10,10 +10,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: f5af6b366a1181187c23327449ade8e03e30107f
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74778061"
 ---
 # <a name="use-performance-rules-to-analyze-data"></a>Utiliser des règles de performance pour analyser des données
@@ -22,12 +22,12 @@ Les avertissements de performances des outils de profilage de [!INCLUDE[vsprvs](
 > [!NOTE]
 > Les avertissements de performances du profileur sont générés par l’analyse dynamique de l’exécution du programme et sont indépendants des avertissements d’analyse du code. L’analyse du code peut également générer des avertissements de performances pour le code managé en fonction de l’analyse statique du code source. Pour plus d’informations, consultez [Analyser la qualité du code managé](../code-quality/code-analysis-for-managed-code-overview.md) et [Avertissements de performance](../code-quality/performance-warnings.md).
 
-## <a name="in-this-section"></a>Dans cette section
+## <a name="in-this-section"></a>Contenu de cette section
 - [Guide pratique pour afficher les avertissements liés aux performances](../profiling/how-to-view-performance-warnings.md)
 
  Fournit des informations sur la façon d’ouvrir la fenêtre **Liste d’erreurs** pour afficher les avertissements de performances du profileur.
 
-- [Guide pratique pour configurer les règles de performance](../profiling/how-to-configure-performance-rules.md)
+- [Comment : Configurer les règles de performance](../profiling/how-to-configure-performance-rules.md)
 
  Fournit des informations sur la façon d’activer ou de désactiver les avertissements de performances individuels.
 

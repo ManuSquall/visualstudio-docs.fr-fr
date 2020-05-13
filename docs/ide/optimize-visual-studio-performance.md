@@ -13,13 +13,13 @@ f1_keywords:
 ms.workload:
 - multiple
 ms.openlocfilehash: 6495e8506e12c0c5e5f878a23c609fe53a401bde
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75596994"
 ---
-# <a name="optimize-visual-studio-performance"></a>Optimiser les performances de Visual Studio
+# <a name="optimize-visual-studio-performance"></a>Optimiser le niveau de performance de Visual Studio
 
 Cet article contient des suggestions à essayer si vous trouvez que Visual Studio s’exécute lentement. Vous pouvez aussi consulter [Conseils et astuces pour améliorer les performances de Visual Studio](../ide/visual-studio-performance-tips-and-tricks.md) pour d’autres suggestions sur la façon d’améliorer les performances.
 
@@ -29,7 +29,7 @@ Si vous utilisez Visual Studio 2015, téléchargez gratuitement [Visual Studio�
 
 ::: moniker range="vs-2017"
 
-Si vous utilisez déjà Visual Studio 2017, veillez à exécuter la version 15.6 ou ultérieure. Les données montrent que les solutions se chargent à deux ou trois fois plus rapidement dans la version 15.6. Téléchargez-la [ici](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download).
+Si vous utilisez déjà Visual Studio 2017, veillez à exécuter la version 15.6 ou ultérieure. Les données montrent que les solutions se chargent à deux ou trois fois plus rapidement dans la version 15.6. Téléchargez-le [ici](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download).
 
 ::: moniker-end
 
@@ -49,9 +49,9 @@ N’exécutez pas non plus votre solution à partir d’un lecteur USB. Copiez-l
 
 ## <a name="help-us-improve"></a>Aidez-nous à améliorer le produit
 
-Vos commentaires nous aident à améliorer le produit. Utilisez la fonctionnalité **Signaler un problème** pour « enregistrer » une trace et nous l’envoyer. Sélectionnez l’icône de commentaires à côté de **Lancement rapide**, ou sélectionnez **Aide** > **Envoyer des commentaires** > **Signaler un problème** dans la barre de menus. Pour plus d’informations, consultez [Guide pratique pour signaler un problème avec Visual Studio](../ide/how-to-report-a-problem-with-visual-studio.md).
+Vos commentaires nous aident à améliorer le produit. Utilisez la fonctionnalité **Signaler un problème** pour « enregistrer » une trace et nous l’envoyer. Sélectionnez l’icône de commentaires à côté de **Lancement rapide**, ou sélectionnez **Aide** > **Envoyer des commentaires** > **Signaler un problème** dans la barre de menus. Pour plus d’informations, voir [Comment signaler un problème avec Visual Studio](../ide/how-to-report-a-problem-with-visual-studio.md).
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Conseils et astuces pour les performances](../ide/visual-studio-performance-tips-and-tricks.md)
+- [Conseils et astuces de performance](../ide/visual-studio-performance-tips-and-tricks.md)
 - [Visual Studio blog - Load solutions faster with Visual Studio 2017 version 15.6](https://devblogs.microsoft.com/visualstudio/load-solutions-faster-with-visual-studio-2017-version-15-6/)

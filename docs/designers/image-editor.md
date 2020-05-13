@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: fd7d9aed75876b47a6574d46b226f5baec336883
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75589316"
 ---
 # <a name="image-editor"></a>éditeur d'images
@@ -27,12 +27,12 @@ Vous pouvez utiliser l’**éditeur d’images** pour gérer les genres de forma
 
 L’**éditeur d’images** prend en charge les formats d’image suivants :
 
-|Nom du format|Extension de nom de fichier|
+|Nom de format|Extension de nom de fichier|
 |-----------------| - |
 |Format PNG|*.png*|
 |JPEG|*.jpg*, *.jpeg*, *.jpe*, *.jfif*|
 |Direct Draw Surface|*.dds*|
-|Format GIF|*.gif*|
+|Format GIF|*.gif (gif)*|
 |Bitmap|*.bmp*, *.dib*|
 |Format TIFF (Tagged Image File Format)|*.tif*, *.tiff*|
 |TGA (Targa)|*.tga*|
@@ -48,15 +48,15 @@ Cette section décrit comment ajouter une image à votre projet Visual Studio et
 2. Dans la boîte de dialogue **Ajouter un nouvel élément**, sous **Installé**, sélectionnez **Graphiques**, puis sélectionnez un format de fichier approprié pour l’image.
 
    > [!NOTE]
-   > Si vous ne voyez pas la catégorie **Graphisme** dans la boîte de dialogue **Ajouter un nouvel élément**, il peut être nécessaire d’installer le composant **Éditeurs d’images et de modèles 3D**. Fermez la boîte de dialogue, puis sélectionnez **Outils** > **Obtenir les outils et fonctionnalités** dans la barre de menus pour ouvrir le **programme d’installation de Visual Studio**. Sélectionnez l’onglet **Composants individuels**, puis sélectionnez le composant **Éditeurs d’images et de modèles 3D** sous la catégorie **Jeux et graphismes**. Sélectionnez **Modifier**.
+   > Si vous ne voyez pas la catégorie **Graphisme** dans la boîte de dialogue **Ajouter un nouvel élément**, il peut être nécessaire d’installer le composant **Éditeurs d’images et de modèles 3D**. Fermez le dialogue, puis sélectionnez **Outils** > **Obtenez des outils et des fonctionnalités** de la barre de menu, pour ouvrir **l’installateur Visual Studio**. Sélectionnez l’onglet **Composants individuels**, puis sélectionnez le composant **Éditeurs d’images et de modèles 3D** sous la catégorie **Jeux et graphismes**. Sélectionnez **Modifier**.
    >
    > ![Composant Éditeurs d’images et de modèles 3D](media/image-3d-model-editors-component.png)
 
    Pour plus d’informations sur le choix d’un format de fichier en fonction de vos exigences, consultez [Choisir le format d’image](#choose-the-image-format).
 
-3. Spécifiez le **Nom** du fichier image, ainsi que l’**Emplacement** où vous souhaitez le créer.
+3. Spécifier le **nom** du fichier image et **l’emplacement** où vous souhaitez qu’il soit créé.
 
-4. Choisissez le bouton **Ajouter** .
+4. Choisissez le bouton **Ajouter**.
 
 ### <a name="choose-the-image-format"></a>Choisir le format d’image
 
@@ -101,9 +101,9 @@ Avant de commencer à utiliser l’image que vous avez créée, vous pouvez chan
 
 ## <a name="work-with-the-image-editor"></a>Utiliser l’éditeur d’images
 
-Cette section explique comment utiliser l’**éditeur d’images** pour modifier des textures et des images.
+Cette section décrit comment utiliser **l’éditeur d’images** pour modifier les textures et les images.
 
-Les commandes qui affectent l’état de l’**éditeur d’images** se trouvent dans la barre d’outils **Mode de l’éditeur d’images**, qui contient aussi des commandes avancées. La barre d’outils se trouve le long du bord supérieur de l’aire de conception de l’**éditeur d’images**. Les outils de dessin se trouvent dans la barre d’outils de l’**éditeur d’images** le long du bord gauche de l’aire de conception de l’**éditeur d’images**.
+Les commandes qui affectent l’état de **l’éditeur d’images** sont situées sur la barre **d’outils du mode Image Editor** ainsi que des commandes avancées. La barre d’outils est située le long du bord le plus haut de la surface de conception **Image Editor.** Les outils de dessin sont situés sur la barre **d’outils Image Editor** le long du bord le plus à gauche de la surface de conception **de l’éditeur d’images.**
 
 ### <a name="image-editor-mode-toolbar"></a>Barre d’outils du mode de l’éditeur d’images
 
@@ -113,63 +113,63 @@ Le tableau suivant décrit les éléments de la barre d’outils **Mode de l’�
 
 |Élément de la barre d'outils|Description|
 |------------------|-----------------|
-|**Sélectionner**|Permet de sélectionner une zone rectangulaire d’une image. Après avoir sélectionné une zone, vous pouvez la couper, la copier, la déplacer, la mettre à l’échelle, la faire pivoter, la retourner ou la supprimer. Quand il existe une sélection active, les outils de dessin affectent seulement la zone sélectionnée.|
+|**Sélectionnez**|Permet de sélectionner une zone rectangulaire d’une image. Après avoir sélectionné une zone, vous pouvez la couper, la copier, la déplacer, la mettre à l’échelle, la faire pivoter, la retourner ou la supprimer. Quand il existe une sélection active, les outils de dessin affectent seulement la zone sélectionnée.|
 |**Sélection irrégulière**|Permet de sélectionner une zone irrégulière d’une image. Après avoir sélectionné une zone, vous pouvez la couper, la copier, la déplacer, la mettre à l’échelle, la faire pivoter, la retourner ou la supprimer. Quand il existe une sélection active, les outils de dessin affectent seulement la zone sélectionnée.|
 |**Sélection « Baguette magique »**|Permet de sélectionner une région de couleur similaire dans une image. La *tolérance*, c’est-à-dire la différence maximale entre des couleurs adjacentes pour laquelle elles sont considérées comme similaires, peut être configurée pour inclure une plage plus petite ou plus large de couleurs similaires. Après avoir sélectionné une zone, vous pouvez la couper, la copier, la déplacer, la mettre à l’échelle, la faire pivoter, la retourner ou la supprimer. Quand il existe une sélection active, les outils de dessin affectent seulement la zone sélectionnée.|
-|**Panoramique**|Permet de déplacer l’image par rapport au cadre de la fenêtre. En mode **Panoramique**, sélectionnez un point sur l’image et déplacez-le.<br /><br /> Vous pouvez activer temporairement le mode **Panoramique** en appuyant sur la touche **Ctrl** et en la maintenant enfoncée.|
-|**Zoom**|Permet l’affichage d’une image avec plus ou moins de détails par rapport au cadre de la fenêtre. En mode **Zoom**, sélectionnez un point dans l’image et déplacez-le vers la droite ou vers le bas pour effectuer un zoom avant, ou vers la gauche ou vers le haut pour effectuer un zoom arrière.<br /><br /> Vous pouvez effectuer un zoom avant ou arrière en appuyant sur la touche **Ctrl** et en la maintenant enfoncée, pendant que vous utilisez la roulette de la souris ou que vous appuyez sur le signe Plus ( **+** ) ou sur le signe Moins ( **-** ).|
+|**Pan**|Permet de déplacer l’image par rapport au cadre de la fenêtre. En mode **Panoramique**, sélectionnez un point sur l’image et déplacez-le.<br /><br /> Vous pouvez activer temporairement le mode **Panoramique** en appuyant sur la touche **Ctrl** et en la maintenant enfoncée.|
+|**Zoom**|Permet l’affichage d’une image avec plus ou moins de détails par rapport au cadre de la fenêtre. En mode **Zoom**, sélectionnez un point dans l’image et déplacez-le vers la droite ou vers le bas pour effectuer un zoom avant, ou vers la gauche ou vers le haut pour effectuer un zoom arrière.<br /><br /> Vous pouvez zoomer dans ou hors en appuyant et en tenant **Ctrl** pendant que vous utilisez la roue de la souris ou appuyez sur le signe plus (**+**) ou moins signe (**-**).|
 |**Zoom sur la taille réelle**|Affiche l’image en utilisant une relation 1:1 entre les pixels de l’image et les pixels de l’écran.|
 |**Zoom pour ajuster**|Affiche l’image entière dans le cadre de la fenêtre.|
 |**Zoom sur la largeur**|Affiche la largeur entière de l’image dans le cadre de la fenêtre.|
 |**Grille**|Active ou désactive la grille qui montre les limites des pixels. Il peut être nécessaire de faire un zoom avant pour faire apparaître la grille.|
 |**Afficher le niveau MIP suivant**|Active le niveau MIP supérieur suivant dans une chaîne de mappage MIP. Le niveau MIP actif est affiché dans l’aire de conception. Cet élément est disponible seulement pour les textures qui ont des niveaux MIP.|
 |**Afficher le niveau MIP précédent**|Active le niveau MIP inférieur dans une chaîne de mappage MIP. Le niveau MIP actif est affiché dans l’aire de conception. Cet élément est disponible seulement pour les textures qui ont des niveaux MIP.|
-|**Canal rouge**<br /><br /> **Canal vert**<br /><br /> **Canal bleu**<br /><br /> **Canal alpha**|Active ou désactive le canal de couleur spécifique. **Remarque :** En activant ou en désactivant de façon systématique des canaux de couleur, vous pouvez isoler les problèmes liés à une ou plusieurs de ces couleurs. Par exemple, vous pourrez identifier une transparence alpha incorrecte.|
-|**Arrière-plan**|Active ou désactive l’affichage de l’arrière-plan à travers les parties transparentes de l’image. Vous pouvez configurer la façon dont l’arrière-plan s’affiche en choisissant parmi les options suivantes :<br /><br /> **Damier**<br /> Utilise une couleur verte avec la couleur d’arrière-plan spécifiée pour afficher l’arrière-plan sous la forme d’un modèle de damier. Vous pouvez utiliser cette option pour rendre les parties transparentes de l’image plus apparentes.<br /><br /> Arrière-plan blanc<br /> Utilise la couleur blanc pour afficher l’arrière-plan.<br /><br /> Arrière-plan noir<br /> Utilise la couleur noir pour afficher l’arrière-plan.<br /><br /> Animer l’arrière-plan<br /> Permet de déplacer le modèle de damier lentement selon un mouvement panoramique. Vous pouvez utiliser cette option pour rendre les parties transparentes de l’image plus apparentes.|
+|**Canal rouge**<br /><br /> **Canal vert**<br /><br /> **Canal bleu**<br /><br /> **Canal Alpha**|Active ou désactive le canal de couleur spécifique. **Remarque :** En activant ou en désactivant de façon systématique des canaux de couleur, vous pouvez isoler les problèmes liés à une ou plusieurs de ces couleurs. Par exemple, vous pourrez identifier une transparence alpha incorrecte.|
+|**Fond**|Active ou désactive l’affichage de l’arrière-plan à travers les parties transparentes de l’image. Vous pouvez configurer la façon dont l’arrière-plan s’affiche en choisissant parmi les options suivantes :<br /><br /> **Damier**<br /> Utilise une couleur verte avec la couleur d’arrière-plan spécifiée pour afficher l’arrière-plan sous la forme d’un modèle de damier. Vous pouvez utiliser cette option pour rendre les parties transparentes de l’image plus apparentes.<br /><br /> Arrière-plan blanc<br /> Utilise la couleur blanc pour afficher l’arrière-plan.<br /><br /> Arrière-plan noir<br /> Utilise la couleur noir pour afficher l’arrière-plan.<br /><br /> Animer l’arrière-plan<br /> Permet de déplacer le modèle de damier lentement selon un mouvement panoramique. Vous pouvez utiliser cette option pour rendre les parties transparentes de l’image plus apparentes.|
 |**Propriétés**|Affiche ou masque alternativement la fenêtre **Propriétés**.|
-|**Avancé**|Contient des commandes et des options supplémentaires.<br /><br /> **Les filtres**<br /><br /> Fournit plusieurs filtres d’image courants : **Noir et blanc**, **Flou**, **Éclaircir**, **Obscurcir**, **Détection des bords**, **Relief**, **Inverser les couleurs**, **Ripple**, **Ton sépia** et **Accentuer**.<br /><br /> **Moteurs graphiques**<br /><br /> **Afficher avec D3D11**<br /> Utilise Direct3D 11 pour afficher l’aire de conception de l’**éditeur d’images**.<br /><br /> **Afficher avec D3D11WARP**<br /> Utilise la plateforme WARP (Windows Advanced Rasterization Platform) Direct3D 11 pour afficher l’aire de conception de l’**éditeur d’images**.<br /><br /> **Outils**<br /><br /> **Symétrie horizontale**<br /> Transpose l’image autour de son axe horizontal (l’axe X).<br /><br /> **Symétrie verticale**<br /> Transpose l’image autour de son axe vertical (l’axe Y).<br /><br /> **Générer des mips**<br /> Génère des niveaux MIP pour une image. Si des niveaux MIP existent déjà, ils sont recréés à partir du niveau MIP le plus grand. Toutes les modifications qui ont été apportées à des niveaux MIP plus petits sont perdues. Pour enregistrer les niveaux MIP que vous avez générés, vous devez utiliser le format *.dds* pour enregistrer l’image.<br /><br /> **Affichage**<br /><br /> **Fréquence d’images**<br /> Quand cette option est activée, elle affiche la fréquence d’images dans le coin supérieur droit de l’aire de conception. La fréquence d'images est le nombre d'images dessinées par seconde. **Conseil :** Vous pouvez choisir le bouton **Avancé** pour réexécuter la dernière commande.|
+|**Avancé**|Contient des commandes et des options supplémentaires.<br /><br /> **Filtres**<br /><br /> Fournit plusieurs filtres d’image courants : **Noir et blanc**, **Flou**, **Éclaircir**, **Obscurcir**, **Détection des bords**, **Relief**, **Inverser les couleurs**, **Ripple**, **Ton sépia** et **Accentuer**.<br /><br /> **Moteurs graphiques**<br /><br /> **Afficher avec D3D11**<br /> Utilise Direct3D 11 pour rendre la surface de conception **de l’éditeur d’images.**<br /><br /> **Afficher avec D3D11WARP**<br /> Utilise Direct3D 11 Windows Advanced Rasterization Platform (WARP) pour rendre la surface de conception **de l’éditeur d’images.**<br /><br /> **Outils**<br /><br /> **Symétrie horizontale**<br /> Transpose l’image autour de son axe horizontal (l’axe X).<br /><br /> **Symétrie verticale**<br /> Transpose l’image autour de son axe vertical (l’axe Y).<br /><br /> **Générer des mips**<br /> Génère des niveaux MIP pour une image. Si des niveaux MIP existent déjà, ils sont recréés à partir du niveau MIP le plus grand. Toutes les modifications qui ont été apportées à des niveaux MIP plus petits sont perdues. Pour enregistrer les niveaux MIP que vous avez générés, vous devez utiliser le format *.dds* pour enregistrer l’image.<br /><br /> **View**<br /><br /> **Taux d’image**<br /> Quand cette option est activée, elle affiche la fréquence d’images dans le coin supérieur droit de l’aire de conception. La fréquence d'images est le nombre d'images dessinées par seconde. **Conseil :** Vous pouvez choisir le bouton **Avancé** pour réexécuter la dernière commande.|
 
 ### <a name="image-editor-toolbar"></a>Barre d'outils Éditeur d'images
 
 ![Barre d'outils Éditeur d'images](../designers/media/digit-tre-toolbar.png)
 
-Le tableau suivant décrit les éléments de la barre d’outils de l’**éditeur d’images**, listés dans l’ordre où ils apparaissent, de haut en bas :
+Le tableau suivant décrit les éléments de la barre **d’outils Image Editor,** qui sont répertoriés dans l’ordre dans lequel ils apparaissent de haut en bas :
 
 |Élément de la barre d'outils|Description|
 |------------------|-----------------|
 |**Crayon**|Utilise la sélection de couleur active pour dessiner un trait sans lissage. Vous pouvez définir la couleur et l’épaisseur du trait dans la fenêtre **Propriétés**.|
-|**Pinceau**|Utilise la sélection de couleur active pour dessiner un trait avec lissage. Vous pouvez définir la couleur et l’épaisseur du trait dans la fenêtre **Propriétés**.|
+|**Brosse**|Utilise la sélection de couleur active pour dessiner un trait avec lissage. Vous pouvez définir la couleur et l’épaisseur du trait dans la fenêtre **Propriétés**.|
 |**Aérographe**|Utilise la sélection active de couleur pour dessiner un trait avec lissage qui fusionne avec l’image et devient plus saturé en fonction du temps. Vous pouvez définir la couleur et l’épaisseur du trait dans la fenêtre **Propriétés**.|
 |**Pipette**|Définit la sélection de couleur active sur la couleur du pixel sélectionné.|
-|**Remplissage**|Utilise la sélection de couleur active pour remplir une zone de l’image. La zone affectée est définie comme le pixel où le remplissage est appliqué, ainsi que chaque pixel qui y est connecté par des pixels de la même couleur et qui est lui-même de la même couleur. Si le remplissage est appliqué dans une sélection active, la zone affectée est limitée par la sélection.<br /><br /> Par défaut, la sélection de couleur active est fusionnée avec la zone affectée de l’image en fonction de son composant alpha. Pour utiliser la sélection de couleur active pour remplacer la zone affectée, maintenez la touche **Maj** enfoncée quand vous utilisez l’outil de remplissage.|
+|**Fill**|Utilise la sélection de couleur active pour remplir une zone de l’image. La zone affectée est définie comme le pixel où le remplissage est appliqué, ainsi que chaque pixel qui y est connecté par des pixels de la même couleur et qui est lui-même de la même couleur. Si le remplissage est appliqué dans une sélection active, la zone affectée est limitée par la sélection.<br /><br /> Par défaut, la sélection de couleur active est fusionnée avec la zone affectée de l’image en fonction de son composant alpha. Pour utiliser la sélection active des couleurs pour remplacer la région touchée, appuyez et maintenez la clé **Shift** lorsque vous utilisez l’outil de remplissage.|
 |**Gomme**|Applique aux pixels la couleur entièrement transparente si l’image prend en charge un canal alpha. Sinon, applique aux pixels la couleur d’arrière-plan active.|
 |**Ligne**, **Rectangle**, **Rectangle à coins arrondis**, **Ellipse**|Dessine une forme sur l’image. Vous pouvez définir la couleur et l’épaisseur du contour dans la fenêtre **Propriétés**.<br /><br /> Pour dessiner une primitive de largeur et de hauteur identiques, maintenez la touche **Maj** enfoncée pendant que vous dessinez.|
 |**Texte**|Utilise la sélection de couleur de premier plan pour dessiner du texte. La couleur d’arrière-plan est déterminée par la sélection de couleur d’arrière-plan. Pour un arrière-plan transparent, la valeur alpha de la sélection de couleur d’arrière-plan doit être 0. Quand la zone de texte est active, vous pouvez définir si le texte est dessiné avec un trait avec lissage, et vous pouvez définir la **Valeur**, la **Police**, la **Taille**et le style (**Gras**, **Italique** ou **Souligné**) du texte dans la fenêtre **Propriétés**. Le contenu et l’apparence du texte sont finalisés une fois que la zone de texte n’est plus active.|
-|**Faire pivoter**|Fait pivoter l’image de 90 degrés dans le sens des aiguilles d’une montre.|
-|**Découper**|Découpe l’image au format de la sélection active.|
+|**Tourner**|Fait pivoter l’image de 90 degrés dans le sens des aiguilles d’une montre.|
+|**Garniture**|Découpe l’image au format de la sélection active.|
 
 ### <a name="work-with-mip-levels"></a>Utiliser les niveaux MIP
 
-Certains formats d’image, par exemple DirectDraw Surface ( *.dds*), prennent en charge les niveaux MIP pour le niveau de détail de l’espace de texture. Pour plus d’informations sur la façon de générer et d’utiliser les niveaux MIP, consultez [Guide pratique pour créer et modifier les niveaux MIP](../designers/how-to-create-and-modify-mip-levels.md).
+Certains formats d’image, par exemple DirectDraw Surface (*.dds*), prennent en charge les niveaux MIP pour le niveau de détail de l’espace de texture. Pour plus d’informations sur la façon de générer et de travailler avec les niveaux du MIP, voir [comment créer et modifier les niveaux de MIP](../designers/how-to-create-and-modify-mip-levels.md)
 
 ### <a name="work-with-transparency"></a>Utiliser la transparence
 
-Certains formats d’image, par exemple DirectDraw Surface ( *.dds*), prennent en charge la transparence. Vous pouvez utiliser la transparence de plusieurs manières, en fonction de l’outil que vous utilisez. Pour spécifier le niveau de transparence pour une sélection de couleur, dans la fenêtre **Propriétés**, configurez le composant **A** (alpha) de la sélection de couleur.
+Certains formats d’image, par exemple DirectDraw Surface (*.dds*), prennent en charge la transparence. Vous pouvez utiliser la transparence de plusieurs manières, en fonction de l’outil que vous utilisez. Pour spécifier le niveau de transparence pour une sélection de couleur, dans la fenêtre **Propriétés**, configurez le composant **A** (alpha) de la sélection de couleur.
 
 Le tableau suivant indique comment les différents genres d’outil contrôlent l’application de la transparence :
 
 |Outil|Description|
 |----------|-----------------|
 |**Crayon**, **Pinceau**, **Aérographe**, **Ligne**, **Rectangle**, **Rectangle à coins arrondis**, **Ellipse**, **Texte**|Pour fusionner la sélection de couleur active avec l’image, dans la fenêtre **Propriétés**, développez le groupe de propriétés **Canaux**, cochez la case **Dessiner** sur le canal **Alpha** puis dessinez normalement.<br /><br /> Pour dessiner en utilisant la sélection de couleur active et laisser telle quelle la valeur alpha de l’image, décochez la case **Dessiner** du canal **Alpha** puis dessinez normalement.|
-|**Remplissage**|Pour fusionner la sélection de couleur active avec l’image, choisissez simplement la zone à remplir.<br /><br /> Pour utiliser la sélection de couleur active, notamment la valeur du canal alpha, pour remplacer l’image, maintenez la touche **Maj** enfoncée puis choisissez la zone à remplir.|
+|**Fill**|Pour fusionner la sélection de couleur active avec l’image, choisissez simplement la zone à remplir.<br /><br /> Pour utiliser la sélection de couleurs actives, y compris la valeur du canal alpha, pour sursocrire l’image, appuyez et maintenez **Shift,** puis choisissez la zone à remplir.|
 
-### <a name="image-properties"></a>Propriétés de l'image
+### <a name="image-properties"></a>Propriétés de l’image
 
 Vous pouvez utiliser la fenêtre **Propriétés** pour spécifier différentes propriétés de l’image. Par exemple, vous pouvez définir les propriétés de largeur et de hauteur pour redimensionner l’image.
 
 Le tableau suivant décrit les propriétés d’une image :
 
-|Les|Description|
+|Propriété|Description|
 |--------------|-----------------|
 |Largeur|Largeur de l’image.|
 |Hauteur|Hauteur de l’image.|
@@ -184,11 +184,11 @@ Le tableau suivant décrit les propriétés d’une image :
 |Secteur de profondeur|Secteur de profondeur actif. Seul le premier secteur peut être visualisé. Tous les autres secteurs sont perdus quand vous enregistrez l’image.|
 
 > [!NOTE]
-> Comme la propriété **Faire pivoter de** s’applique à tous les outils et à toutes les zones sélectionnées, elle apparaît toujours en bas de la fenêtre **Propriétés** en même temps que d’autres propriétés de l’outil. **Faire pivoter de** est toujours affiché, car l’image entière est implicitement sélectionnée quand il n’existe aucune autre sélection ou outil actif. Pour plus d’informations sur la propriété **Faire pivoter de**, consultez [Propriétés de l’outil](#tool -properties).
+> Comme la propriété **Faire pivoter de** s’applique à tous les outils et à toutes les zones sélectionnées, elle apparaît toujours en bas de la fenêtre **Propriétés** en même temps que d’autres propriétés de l’outil. **Faire pivoter de** est toujours affiché, car l’image entière est implicitement sélectionnée quand il n’existe aucune autre sélection ou outil actif. Pour plus d’informations sur la **Rotation par** propriété, voir [propriétés d’outil](#tool -properties).
 
 ### <a name="resize-images"></a>Redimensionner les images
 
-Il existe deux façons de redimensionner une image. Dans les deux cas, l’**éditeur d’images** utilise une interpolation bilinéaire pour rééchantillonner l’image.
+Il existe deux façons de redimensionner une image. Dans les deux cas, **l’éditeur d’images** utilise l’interpolation bilinéaire pour réamplaire l’image.
 
 - Dans la fenêtre **Propriétés**, spécifiez de nouvelles valeurs pour les propriétés **Largeur** et **Hauteur**.
 
@@ -217,11 +217,11 @@ Le tableau suivant décrit les combinaisons de touches de modification valides 
 |Ctrl|Shift|Alt|Description|
 |----------|-----------|---------|-----------------|
 ||||Redimensionne le contenu de la zone sélectionnée.|
-||**Maj**||Redimensionne proportionnellement le contenu de la zone sélectionnée.|
+||**Shift**||Redimensionne proportionnellement le contenu de la zone sélectionnée.|
 |||**Alt**|Redimensionne la zone sélectionnée. Ceci définit une nouvelle zone de sélection.|
-||**Maj**|**Alt**|Redimensionne proportionnellement la zone sélectionnée. Ceci définit une nouvelle zone de sélection.|
+||**Shift**|**Alt**|Redimensionne proportionnellement la zone sélectionnée. Ceci définit une nouvelle zone de sélection.|
 |**Ctrl**|||Copie et redimensionne le contenu de la zone sélectionnée.|
-|**Ctrl**|**Maj**||Copie puis redimensionne proportionnellement le contenu de la zone sélectionnée.|
+|**Ctrl**|**Shift**||Copie puis redimensionne proportionnellement le contenu de la zone sélectionnée.|
 
 ### <a name="tool-properties"></a>Propriétés des outils
 
@@ -234,28 +234,28 @@ Le tableau suivant décrit les propriétés des outils :
 |Outil|Propriétés|
 |----------|----------------|
 |Tous les outils et toutes les sélections|**Faire pivoter de**<br /> Définit la quantité de la rotation, en degrés, pour la sélection ou l’effet de l’outil dans le sens des aiguilles d’une montre.|
-|**Crayon**, **Pinceau**, **Aérographe**, **Gomme**|**Épaisseur**<br /> Définit la taille de la zone affectée par l’outil.|
-|**Texte**|**Anticrénelage**<br /> Dessine du texte avec des contours lissés. Le texte a ainsi un aspect plus lisse.<br /><br /> **Valeur**<br /> Texte à dessiner.<br /><br /> **Police**<br /> Police utilisée pour dessiner le texte.<br /><br /> **Size**<br /> Taille du texte.<br /><br /> **Gras**<br /> Met la police en gras.<br /><br /> **Italique**<br /> Met la police en italique.<br /><br /> **Souligné**<br /> Met la police en souligné.|
-|**Primitive 2D**|**Anticrénelage**<br /> Dessine les primitives avec des contours lissés. Ceci leur donne une apparence plus lisse.<br /><br /> **Épaisseur**<br /> Définit l’épaisseur de la ligne qui constitue la limite de la primitive.<br /><br /> **Rayon X**<br /> (Rectangle à coins arrondis uniquement) Définit le rayon de l’arrondi pour les bords supérieur et inférieur de la primitive.<br /><br /> **Rayon Y**<br /> (Rectangle à coins arrondis uniquement) Définit le rayon de l’arrondi pour les bords gauche et droit de la primitive.|
+|**Crayon**, **Pinceau**, **Aérographe**, **Gomme**|**Thickness**<br /> Définit la taille de la zone affectée par l’outil.|
+|**Texte**|**Anticrénelage**<br /> Dessine du texte avec des contours lissés. Le texte a ainsi un aspect plus lisse.<br /><br /> **Valeur**<br /> Texte à dessiner.<br /><br /> **Police**<br /> Police utilisée pour dessiner le texte.<br /><br /> **Taille**<br /> Taille du texte.<br /><br /> **Gras**<br /> Met la police en gras.<br /><br /> **Italique**<br /> Met la police en italique.<br /><br /> **Souligné**<br /> Met la police en souligné.|
+|**Primitive 2D**|**Anticrénelage**<br /> Dessine les primitives avec des contours lissés. Ceci leur donne une apparence plus lisse.<br /><br /> **Thickness**<br /> Définit l’épaisseur de la ligne qui constitue la limite de la primitive.<br /><br /> **Rayon X**<br /> (Rectangle à coins arrondis uniquement) Définit le rayon de l’arrondi pour les bords supérieur et inférieur de la primitive.<br /><br /> **Rayon Y**<br /> (Rectangle à coins arrondis uniquement) Définit le rayon de l’arrondi pour les bords gauche et droit de la primitive.|
 |**Crayon**, **Pinceau**, **Aérographe**, **Primitive 2D**|**Canaux**<br /> Active ou désactive des canaux de couleur spécifiques pour l’affichage et le dessin. Si **Afficher** est défini pour un canal de couleur spécifique, ce canal est visible dans l’image ; sinon, il n’est pas visible. Si **Dessiner** est défini pour un canal de couleur spécifique, ce canal est affecté par les opérations de dessin ; sinon, il ne l’est pas.|
-|**Sélection « Baguette magique »** , **Remplissage**|**Tolérance**<br /> Définit la différence maximale entre des couleurs adjacentes, selon laquelle elles sont considérées comme similaires, de sorte que plus ou moins de couleurs similaires font partie de la zone affectée ou sélectionnée. Par défaut, la valeur est 32, ce qui signifie que les pixels adjacents dans 32 nuances (plus claires ou plus sombres) de la couleur d’origine sont considérés comme faisant partie de la zone.|
+|**Sélection « Baguette magique »**, **Remplissage**|**Tolérance**<br /> Définit la différence maximale entre des couleurs adjacentes, selon laquelle elles sont considérées comme similaires, de sorte que plus ou moins de couleurs similaires font partie de la zone affectée ou sélectionnée. Par défaut, la valeur est 32, ce qui signifie que les pixels adjacents dans 32 nuances (plus claires ou plus sombres) de la couleur d’origine sont considérés comme faisant partie de la zone.|
 
-## <a name="keyboard-shortcuts"></a>raccourcis clavier
+## <a name="keyboard-shortcuts"></a>Raccourcis clavier
 
-|Command|raccourcis clavier|
+|Commande|Raccourcis clavier|
 |-------------| - |
 |Passer en mode **Sélection**|**S**|
 |Passer en mode **Zoom**|**Z**|
 |Passer en mode **Panoramique**|**K**|
 |Sélectionner tout|**Ctrl**+**A**|
 |Supprimer la sélection actuelle|**Supprimer**|
-|Annuler la sélection actuelle|**Échap** (Échappement)|
-|Zoom avant.|**Ctrl**+**Roulette de la souris vers l’avant**<br /><br /> **Ctrl**+**Pg. préc**<br /><br /> Signe plus ( **+** )|
-|Zoom arrière|**Ctrl**-**Roulette de la souris vers l’arrière**<br /><br /> **Ctrl**-**Pg. suiv**<br /><br /> Signe moins ( **-** )|
-|Panoramique de l’image vers le haut|**Roulette de la souris vers l’arrière**<br /><br /> **Pg. suiv**|
-|Panoramique de l’image vers le bas|**Roulette de la souris vers l’avant**<br /><br /> **Pg. préc**|
-|Panoramique de l’image vers la gauche|**Maj**+**Roulette de la souris vers l’arrière**<br /><br /> **Roulette de la souris vers la gauche**<br /><br /> **Maj**+**Pg. suiv**|
-|Panoramique de l’image vers la droite|**Maj**+**Roulette de la souris vers l’avant**<br /><br /> **Roulette de la souris vers la droite**<br /><br /> **Maj**+**Pg. préc**|
+|Annuler la sélection actuelle|**Esc** (évasion)|
+|Faire un zoom avant|**Roue de souris de Ctrl**+**vers l’avant**<br /><br /> **PageUp Ctrl**+**PageUp**<br /><br /> Signe plus**+**( )|
+|Faire un zoom arrière|**Roue de souris de Ctrl**-**vers l’arrière**<br /><br /> **Pagedown Ctrl**-**PageDown**<br /><br /> Signe de**-** moins ( )|
+|Panoramique de l’image vers le haut|**Roulette de la souris vers l’arrière**<br /><br /> **Pg suiv**|
+|Panoramique de l’image vers le bas|**Roulette de la souris vers l’avant**<br /><br /> **Pg préc**|
+|Panoramique de l’image vers la gauche|**Déplacer la**+**roue de la souris vers l’arrière**<br /><br /> **Roulette de la souris vers la gauche**<br /><br /> **Pagedown de décalage**+**PageDown**|
+|Panoramique de l’image vers la droite|**Déplacer la**+**roue de la souris vers l’avant**<br /><br /> **Roulette de la souris vers la droite**<br /><br /> **Changement**+**PageUp**|
 |Zoom sur la taille réelle|**Ctrl**+**0** (zéro)|
 |Adapter l’image à la fenêtre|**Ctrl**+**G**, **Ctrl**+**F**|
 |Adapter l’image à la largeur de la fenêtre|**Ctrl**+**G**, **Ctrl**+**I**|
@@ -276,18 +276,18 @@ Le tableau suivant décrit les propriétés des outils :
 |Passer à l’outil Gomme|**E**|
 |Passer à l’outil Texte|**T**|
 |Passer à l’outil de sélection de couleur (Pipette)|**I**|
-|Déplacer la sélection active et son contenu.|Touches de **direction**.|
-|Redimensionner la sélection active et son contenu.|**Ctrl**+**Touches de direction**|
-|Déplacer la sélection active mais pas son contenu.|**Maj**+**Touches de direction**|
-|Redimensionner la sélection active mais pas son contenu.|**Maj**+**Ctrl**+**Touches de direction**|
-|Valider la couche actuelle|**Return**|
+|Déplacer la sélection active et son contenu.|**Clés fléchées.**|
+|Redimensionner la sélection active et son contenu.|**Ctrl**+**Arrow** clés|
+|Déplacer la sélection active mais pas son contenu.|**Clés De**+**flèche** de décalage|
+|Redimensionner la sélection active mais pas son contenu.|**Clés De**+**flèche de Ctrl**+**de** décalage|
+|Valider la couche actuelle|**Retour**|
 |Diminuer l’épaisseur de l’outil|**[**|
 |Augmenter l’épaisseur de l’outil|**]**|
 
 ## <a name="related-topics"></a>Rubriques connexes
 
-|Titre|Description|
+|Intitulé|Description|
 |-----------|-----------------|
-|[Utilisation de composants 3D pour les jeux et les applications](../designers/working-with-3-d-assets-for-games-and-apps.md)|Fournit une vue d’ensemble des outils que vous pouvez utiliser dans Visual Studio pour travailler sur des composants graphiques, comme des textures et des images, des modèles 3D et des effets de nuanceur.|
-|[Éditeur de modèles](../designers/model-editor.md)|Décrit comment utiliser l’éditeur de modèle Visual Studio pour travailler avec des modèles 3D.|
+|[Travailler avec des actifs 3D pour les jeux et les applications](../designers/working-with-3-d-assets-for-games-and-apps.md)|Fournit une vue d’ensemble des outils que vous pouvez utiliser dans Visual Studio pour travailler sur des composants graphiques, comme des textures et des images, des modèles 3D et des effets de nuanceur.|
+|[Éditeur modèle](../designers/model-editor.md)|Décrit comment utiliser l’éditeur de modèle Visual Studio pour travailler avec des modèles 3D.|
 |[Concepteur Shader](../designers/shader-designer.md)|Explique comment utiliser le concepteur Shader de Visual Studio pour travailler avec des nuanceurs.|

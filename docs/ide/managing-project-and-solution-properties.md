@@ -8,10 +8,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 01fcdc09c9d3ee4f5a38a95ef4304bfdf537d527
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75591305"
 ---
 # <a name="manage-project-and-solution-properties"></a>Gérer les propriétés des projets et des solutions
@@ -27,20 +27,20 @@ Les projets .NET peuvent également avoir un nœud Propriétés dans l’arbores
 > [!NOTE]
 > Cette rubrique s’applique à Visual Studio sur Windows. Pour Visual Studio pour Mac, consultez [Gestion des propriétés de solution et projet (Visual Studio pour Mac)](/visualstudio/mac/managing-solutions-and-project-properties).
 
-## <a name="project-properties"></a>Propriétés de projet
+## <a name="project-properties"></a>Propriétés d’un projet
 
 Les propriétés de projet sont organisées en groupes, et chaque groupe a sa propre page de propriétés. Les pages peuvent être différentes pour différents langages et types de projets.
 
 ### <a name="c-visual-basic-and-f-projects"></a>Projets C#, Visual Basic et F#
 
-Dans les projets C#, Visual Basic et F#, les propriétés sont exposées dans le **Concepteur de projet**. L’illustration suivante montre la page de propriétés **Build** d’un projet WPF en C# :
+Dans les projets C, Visual Basic et F, les propriétés sont exposées dans le **concept de projet.** L’illustration suivante montre la page de propriété **Build** pour un projet WPF dans C :
 
 ![Concepteur de projet Visual Studio](../ide/media/vs2015_proppage_build.png)
 
-Pour plus d’informations sur chacune des pages de propriétés dans le **Concepteur de projets**, consultez [Informations de référence sur les propriétés d’un projet](../ide/reference/project-properties-reference.md).
+Pour plus d’informations sur chacune des pages de propriété dans **Project Designer**, voir [référence propriétés du projet](../ide/reference/project-properties-reference.md).
 
 > [!TIP]
-> Les solutions ont quelques propriétés, de même que les éléments des projets. Ces propriétés sont accessibles dans la [fenêtre Propriétés](../ide/reference/properties-window.md) et non pas dans le **Concepteur de projets**.
+> Les solutions ont quelques propriétés, tout comme les éléments du projet; ces propriétés sont accessibles dans la [fenêtre Propriétés](../ide/reference/properties-window.md), pas **Project Designer**.
 
 ### <a name="c-and-javascript-projects"></a>Projets C++ et JavaScript
 
@@ -48,13 +48,13 @@ Les projets C++ et JavaScript ont une interface utilisateur différente pour la 
 
 ![Propriétés de projets Visual C&#43;&#43;](../ide/media/vs2015_projprops_cpp.png)
 
-Pour plus d’informations sur les propriétés des projets C++, consultez [Utilisation des propriétés des projets (C++)](/cpp/build/working-with-project-properties). Pour plus d’informations sur les propriétés JavaScript, consultez [Pages de propriétés, JavaScript](../ide/reference/property-pages-javascript.md).
+Pour plus d’informations sur les propriétés des projets C++, consultez [Utilisation des propriétés des projets (C++)](/cpp/build/working-with-project-properties). Pour plus d’informations sur les propriétés JavaScript, voir [pages Propriété, JavaScript](../ide/reference/property-pages-javascript.md).
 
-## <a name="solution-properties"></a>Propriétés de la solution
+## <a name="solution-properties"></a>Propriétés d’une solution
 
-Pour accéder aux propriétés sur la solution, cliquez avec le bouton droit sur le nœud de la solution dans l’**Explorateur de solutions** et choisissez **Propriétés**. Dans la boîte de dialogue, vous pouvez définir des configurations de projet pour les builds **Debug** ou **Release**, choisir les projets qui doivent être le projet de démarrage quand vous appuyez sur **F5** et définir les options d’analyse du code.
+Pour accéder aux propriétés sur la solution, cliquez avec le bouton droit sur le nœud de la solution dans l’**Explorateur de solutions** et choisissez **Propriétés**. Dans le dialogue, vous pouvez définir des configurations de projet pour **debug** ou **Release** builds, choisir quels projets devraient être le projet de démarrage lorsque **F5** est pressé, et définir des options d’analyse de code.
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Solutions et projets dans Visual Studio](../ide/solutions-and-projects-in-visual-studio.md)
+- [Solutions et projets en Visual Studio](../ide/solutions-and-projects-in-visual-studio.md)
 - [Gestion des propriétés de solution et projet (Visual Studio pour Mac)](/visualstudio/mac/managing-solutions-and-project-properties)

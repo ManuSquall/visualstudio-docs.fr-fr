@@ -14,10 +14,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 92cce705135daa8bc54a7fab301cf5dcd8cf96d6
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75591175"
 ---
 # <a name="code-a-custom-extraction-rule-for-a-web-performance-test"></a>Coder une règle d’extraction personnalisée pour un test de performances web
@@ -46,15 +46,15 @@ Vous pouvez créer vos propres règles d'extraction. Pour cela, vous dérivez vo
 
 6. (Facultatif) Dans le projet de test, ajoutez une référence au projet de bibliothèque de classes qui contient la règle d’extraction personnalisée.
 
-7. Dans le projet de test, ouvrez un test de performances web dans **l’éditeur de test de performances web**.
+7. Dans le projet Test, ouvrez un test de performance Web dans **l’éditeur de tests de performance Web**.
 
-8. Pour ajouter la règle d’extraction personnalisée, cliquez avec le bouton droit sur une requête de test de performances web, puis sélectionnez **Ajouter une règle d’extraction**.
+8. Pour ajouter la règle d’extraction personnalisée, cliquez à droite sur une demande de test de performance Web et **sélectionnez Ajouter la règle d’extraction**.
 
      La boîte de dialogue **Ajouter une règle d’extraction** s’affiche. Votre règle de validation personnalisée apparaît dans la liste **Sélectionner une règle** avec les règles de validation prédéfinies. Sélectionnez votre règle d’extraction personnalisée, puis choisissez **OK**.
 
 9. Exécutez votre test de performances web.
 
-## <a name="example"></a>Exemple
+## <a name="example"></a> Exemple
 
 Le code suivant illustre une implémentation d'une règle d'extraction personnalisée. Cette règle d'extraction extrait la valeur d'un champ d'entrée spécifié. Utilisez cet exemple comme point de départ pour vos propres règles d'extraction personnalisées.
 
@@ -216,4 +216,4 @@ La méthode <xref:Microsoft.VisualStudio.TestTools.WebTesting.ExtractionRule.Ext
 - <xref:Microsoft.VisualStudio.TestTools.WebTesting.Rules.ExtractRegularExpression>
 - <xref:Microsoft.VisualStudio.TestTools.WebTesting.Rules.ExtractText>
 - <xref:Microsoft.VisualStudio.TestTools.WebTesting.Rules.ExtractHiddenFields>
-- [Codage d’une règle de validation personnalisée pour un test de performances web](../test/code-a-custom-validation-rule-for-a-web-performance-test.md)
+- [Codage d'une règle de validation personnalisée pour un test de performances de site Web](../test/code-a-custom-validation-rule-for-a-web-performance-test.md)

@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: d180d5a5d723d8085537f2993aac022d74df2c08
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75595694"
 ---
 # <a name="edit-devenvexe"></a>/Edit (devenv.exe)
@@ -31,15 +31,15 @@ devenv /Edit [File1[ FileN]...]
 
 ## <a name="arguments"></a>Arguments
 
-- *File1*
+- *Fichier 1*
 
-  Option facultative. Fichier à ouvrir dans une instance existante de Visual Studio. S’il n’en existe pas, une instance est créée avec une disposition de fenêtre simplifiée ; l’outil ouvre *File1* dans cette nouvelle instance.
+  facultatif. Fichier à ouvrir dans une instance existante de Visual Studio. S’il n’en existe pas, une instance est créée avec une disposition de fenêtre simplifiée ; l’outil ouvre *File1* dans cette nouvelle instance.
 
 - *FileN*
 
-  Option facultative. Un ou plusieurs fichiers supplémentaires à ouvrir dans l’instance existante de Visual Studio.
+  facultatif. Un ou plusieurs fichiers supplémentaires à ouvrir dans l’instance existante de Visual Studio.
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Notes 
 
 Si aucun fichier n’est spécifié, une instance existante de Visual Studio reçoit le focus. S’il n’existe pas non plus d’instances de Visual Studio, l’outil crée une instance avec une disposition de fenêtre simplifiée.
 
@@ -47,7 +47,7 @@ Si l’instance existante de Visual Studio est dans un état modal, le fichier s
 
 Si plusieurs instances de Visual Studio sont ouvertes, le fichier est ouvert dans l’instance la plus récemment ouverte.
 
-## <a name="example"></a>Exemple
+## <a name="example"></a> Exemple
 
 Le premier exemple ouvre le fichier `MyFile.cs` dans une instance existante de Visual Studio. S’il n’en existe pas, l’outil ouvre le fichier dans une nouvelle instance. Le second exemple est similaire, à ceci près qu’il ouvre trois fichiers au lieu d’un seul.
 

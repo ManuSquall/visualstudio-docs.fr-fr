@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: ac469b913b03dec9389b3f44121c2e80d87d30b3
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75590135"
 ---
 # <a name="how-to-export-class-diagrams-as-images"></a>Guide pratique pour exporter des diagrammes de classes comme images
@@ -25,7 +25,7 @@ Pour exporter un diagramme de classes que vous avez créé à partir du code d'u
 
 ## <a name="export-a-diagram"></a>Exporter un diagramme
 
-1. Ouvrez votre fichier de diagramme de classes ( *.cd*).
+1. Ouvrez votre diagramme de classe (*.cd*) fichier.
 
 2. Dans le menu **Diagramme de classes** ou dans le menu contextuel de la surface du diagramme, choisissez **Exporter le diagramme en tant qu’image**.
 
@@ -39,5 +39,5 @@ Pour mettre à jour automatiquement les images exportées qui sont liées à par
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Guide pratique pour imprimer des diagrammes de classes](how-to-print-class-diagrams.md)
+- [Comment : Imprimer des diagrammes de classe](how-to-print-class-diagrams.md)
 - [Utilisation des diagrammes de classes](designing-and-viewing-classes-and-types.md)

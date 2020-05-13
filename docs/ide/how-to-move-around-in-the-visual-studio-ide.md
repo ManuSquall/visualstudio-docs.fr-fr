@@ -18,10 +18,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 2febdedf5cf472132de936c37cad787df3d77518
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75590993"
 ---
 # <a name="how-to-move-around-in-the-visual-studio-ide"></a>Guide pratique pour naviguer dans l’IDE Visual Studio
@@ -29,9 +29,9 @@ ms.locfileid: "75590993"
 L’environnement de développement intégré (IDE) a été conçu pour vous permettre de vous déplacer de fenêtre en fenêtre et de fichier en fichier de différentes façons, selon vos préférences ou exigences de projet. Vous pouvez choisir de parcourir tous les fichiers ouverts de l'éditeur ou de parcourir toutes les fenêtres Outil actives dans l'IDE. Vous pouvez aussi basculer directement vers tout fichier ouvert dans l'éditeur, indépendamment de son dernier ordre d'accès. Ces fonctionnalités peuvent contribuer à accroître votre productivité lorsque vous travaillez dans l’IDE.
 
 > [!NOTE]
-> Les options disponibles dans les boîtes de dialogue, ainsi que les noms et emplacements des commandes de menu que vous voyez, peuvent différer de ce qui est décrit dans cet article, en fonction de vos paramètres actifs ou de votre édition. Cet article concerne les paramètres **Général**. Pour modifier vos paramètres, par exemple pour définir les paramètres **Général** ou **Visual C++** , choisissez **Outils** > **Importation et exportation de paramètres**, puis choisissez **Réinitialiser tous les paramètres**.
+> Les options disponibles dans les boîtes de dialogue, ainsi que les noms et emplacements des commandes de menu que vous voyez, peuvent différer de ce qui est décrit dans cet article, en fonction de vos paramètres actifs ou de votre édition. Cet article concerne les paramètres **Général**. Pour modifier vos paramètres, par exemple pour définir les paramètres **Général** ou **Visual C++**, choisissez **Outils** > **Importation et exportation de paramètres**, puis choisissez **Réinitialiser tous les paramètres**.
 
-## <a name="keyboard-shortcuts"></a>raccourcis clavier
+## <a name="keyboard-shortcuts"></a>Raccourcis clavier
 
 Presque toutes les commandes de menu dans Visual Studio sont associées à un raccourci clavier. Vous pouvez également créer vos propres raccourcis personnalisés. Pour plus d’informations, consultez [Identifier et personnaliser les raccourcis clavier](../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md).
 
@@ -43,9 +43,9 @@ Les options Naviguer vers l’arrière et Naviguer vers l’avant permettent de 
 
 ### <a name="to-move-through-open-files-in-order-of-use"></a>Pour parcourir les documents ouverts par ordre d'utilisation
 
-- Pour activer les documents ouverts dans l’ordre dans lequel ils ont été horodatés le plus récemment, appuyez sur **Ctrl**+ **-** (trait d’Union).
+- Pour activer des documents ouverts dans l’ordre qu’ils ont été le plus récemment touchés, appuyez sur **Ctrl** + **-** (trait d’union).
 
-- Pour activer les documents ouverts dans l’ordre inverse, appuyez sur **Ctrl**+**MAJ**+ **-** (trait d’Union).
+- Pour activer les documents ouverts dans l’ordre inverse, appuyez sur **Ctrl**+**Shift** + **-** (trait d’union).
 
     > [!NOTE]
     > **Naviguer vers l’arrière** et **Naviguer vers l’avant** sont aussi disponibles dans le menu **Affichage**.
@@ -63,7 +63,7 @@ Le **Navigateur IDE** fonctionne de façon très similaire au commutateur d’ap
 
 ### <a name="to-switch-to-specific-files-in-the-editor"></a>Pour basculer vers des fichiers spécifiques dans l'éditeur
 
-- Appuyez sur **Ctrl**+**Tab** pour afficher le **Navigateur IDE**. Maintenez enfoncée la touche **Ctrl**, puis appuyez sur **Tab** à plusieurs reprises jusqu’à ce que vous sélectionniez le fichier auquel vous souhaitez passer.
+- Appuyez sur **Ctrl**+**Tab** pour afficher le **navigateur IDE**. Maintenez la clé **Ctrl** et appuyez sur **Tab** à plusieurs reprises jusqu’à ce que vous sélectionnez le fichier vers laquelle vous avez l’intention de passer.
 
     > [!TIP]
     > Pour inverser l’ordre dans lequel vous parcourez la liste **Fichiers actifs**, maintenez les touches **Ctrl**+**Maj** enfoncées et appuyez sur **Tab**.
@@ -74,7 +74,7 @@ Le **Navigateur IDE** fonctionne de façon très similaire au commutateur d’ap
 
     \- ou -
 
-- Dans la barre de menus, choisissez **Fenêtre** > **Fenêtres**.
+- Sur la barre de menu, choisissez **Window** > **Windows**.
 
 - Dans la liste, sélectionnez le fichier à afficher, puis choisissez **Activer**.
 
@@ -87,7 +87,7 @@ Le **Navigateur IDE** vous permet également de parcourir les fenêtres Outil qu
 
 ### <a name="to-switch-to-a-specific-tool-window-in-the-ide"></a>Pour basculer vers une fenêtre Outil spécifique dans l'IDE
 
-- Appuyez sur **Alt**+**F7** pour afficher le **navigateur IDE**. Maintenez la touche **Alt** enfoncée et appuyez sur **F7** à plusieurs reprises jusqu’à ce que vous sélectionniez la fenêtre vers laquelle vous souhaitez basculer.
+- Appuyez sur **Alt**+**F7** pour afficher le **navigateur IDE**. Maintenez la clé **Alt** et appuyez sur **F7** à plusieurs reprises jusqu’à ce que vous sélectionnez la fenêtre vers laquelle vous avez l’intention de passer.
 
     > [!TIP]
     > Pour inverser l’ordre dans lequel vous parcourez la liste **Fenêtres Outil actives**, maintenez enfoncées les touches **Maj**+**Alt**, puis appuyez sur **F7**.

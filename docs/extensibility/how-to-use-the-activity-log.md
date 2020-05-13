@@ -1,32 +1,32 @@
 ---
-title: 'Procédure : Utiliser le journal d’activité | Microsoft Docs'
+title: 'Comment : Utilisez le journal d’activité Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - VSPackages, debugging
 - VSPackages, troubleshooting
 ms.assetid: bb3d3322-0e5e-4dd5-b93a-24d5fbcd2ffd
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 53888f85a41fdd5bef3985c4da986609a032e377
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 64986be303370cf8c9048612ff3d44e82e96805a
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66309349"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80710580"
 ---
-# <a name="how-to-use-the-activity-log"></a>Procédure : Utiliser le journal d’activité
-Les VSPackages peuvent écrire des messages dans le journal d’activité. Cette fonctionnalité est particulièrement utile pour déboguer les VSPackages dans les environnements de vente au détail.
+# <a name="how-to-use-the-activity-log"></a>Comment : Utilisez le journal d’activité
+VSPackages peut écrire des messages au journal d’activité. Cette fonctionnalité est particulièrement utile pour débogage VSPackages dans les environnements de vente au détail.
 
 > [!TIP]
-> Le journal d’activité est toujours activé. Visual Studio conserve un tampon de substitution des 100 dernières entrées, ainsi que les 10 premières entrées, qui présentent des informations de configuration générales.
+> Le journal d’activité est toujours activé. Visual Studio conserve un tampon de roulement des 100 dernières entrées ainsi que les 10 premières entrées, qui ont des informations de configuration générale.
 
 ## <a name="to-write-an-entry-to-the-activity-log"></a>Pour écrire une entrée dans le journal d’activité
 
-1. Insérez ce code dans le <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A> méthode ou dans toute autre méthode sauf dans le constructeur de VSPackage :
+1. Insérez <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A> ce code dans la méthode ou dans toute autre méthode, sauf le constructeur VSPackage :
 
     ```csharp
     IVsActivityLog log = GetService(typeof(SVsActivityLog)) as IVsActivityLog;
@@ -38,19 +38,19 @@ Les VSPackages peuvent écrire des messages dans le journal d’activité. Cette
         "Called for: {0}", this.ToString()));
     ```
 
-     Ce code obtient le <xref:Microsoft.VisualStudio.Shell.Interop.SVsActivityLog> de service et le caste vers une <xref:Microsoft.VisualStudio.Shell.Interop.IVsActivityLog> interface. <xref:Microsoft.VisualStudio.Shell.Interop.IVsActivityLog.LogEntry%2A> écrit une entrée d’information dans le journal d’activité en utilisant le contexte de la culture actuels.
+     Ce code <xref:Microsoft.VisualStudio.Shell.Interop.SVsActivityLog> obtient le service et <xref:Microsoft.VisualStudio.Shell.Interop.IVsActivityLog> le jette à une interface. <xref:Microsoft.VisualStudio.Shell.Interop.IVsActivityLog.LogEntry%2A>écrit une entrée d’information dans le journal d’activités en utilisant le contexte culturel actuel.
 
-2. Lorsque le VSPackage est chargé (généralement quand une commande est appelée ou une fenêtre est ouverte), le texte est écrit dans le journal d’activité.
+2. Lorsque le VSPackage est chargé (généralement lorsqu’une commande est invoquée ou qu’une fenêtre est ouverte), le texte est écrit au journal d’activité.
 
-## <a name="to-examine-the-activity-log"></a>Pour examiner le journal d’activité
+## <a name="to-examine-the-activity-log"></a>Examiner le journal d’activité
 
-1. Exécuter Visual Studio avec le [/Log](../ide/reference/log-devenv-exe.md) commutateur de ligne de commande pour écrire ActivityLog.xml sur le disque pendant votre session.
+1. Exécutez Visual Studio avec le commutateur de ligne de commande [/Log](../ide/reference/log-devenv-exe.md) pour écrire ActivityLog.xml au disque pendant votre session.
 
-2. Après la fermeture de Visual Studio, recherchez le journal d’activité dans le sous-dossier data de Visual Studio :
+2. Après la fermeture de Visual Studio, trouvez le journal d’activité dans le sous-dossier pour les données Visual Studio :
 
-   <em> *%AppData%</em>\Microsoft\VisualStudio\\\<version>\ActivityLog.xml*.
+   <em> *%AppData%</em>'Microsoft’VisualStudio\\\<version>'ActivityLog.xml*.
 
-3. Ouvrez le journal d’activité avec n’importe quel éditeur de texte. Voici une entrée de type :
+3. Ouvrez le journal d’activité avec n’importe quel éditeur de texte. Voici une entrée typique:
 
    ```
    Called for: Company.MyApp.MyAppPackage ...
@@ -58,9 +58,9 @@ Les VSPackages peuvent écrire des messages dans le journal d’activité. Cette
 
 ## <a name="robust-programming"></a>Programmation fiable
 
-Étant donné que le journal d’activité est un service, le journal d’activité n’est pas disponible dans le constructeur de VSPackage.
+Étant donné que le journal d’activité est un service, le journal d’activité n’est pas disponible dans le constructeur VSPackage.
 
-Vous devez obtenir le journal d’activité juste avant l’écriture dans celle-ci. Ne pas mettre en cache ou enregistrer le journal d’activité pour une utilisation ultérieure.
+Vous devez obtenir le journal d’activité juste avant de l’écrire. Ne cachez pas ou n’enregistrez pas le journal d’activité pour une utilisation future.
 
 ## <a name="see-also"></a>Voir aussi
 

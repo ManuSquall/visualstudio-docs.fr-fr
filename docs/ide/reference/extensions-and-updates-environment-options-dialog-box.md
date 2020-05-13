@@ -11,13 +11,13 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: e7b0e1ca6d73e27f216f80054f87a35cf5389179
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/16/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "76114235"
 ---
-# <a name="options-dialog-box-environment--extensions"></a>Options, boîte de dialogue : extensions de l’environnement \>
+# <a name="options-dialog-box-environment--extensions"></a>Boîte de dialogue \> d’options : Extensions de l’environnement
 
 Utilisez cette page pour définir les options selon lesquelles Visual Studio effectue les mises à jour, et comment les extensions sont mises à jour et découvertes.
 

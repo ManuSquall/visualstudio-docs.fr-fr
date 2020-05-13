@@ -12,13 +12,13 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: e5fc392e6d3d862ae81f0844d2cd28e8da44a805
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75595681"
 ---
-# <a name="options-dialog-box-environment--preview-features"></a>Boîte de dialogue Options : environnement \> fonctionnalités préliminaires
+# <a name="options-dialog-box-environment--preview-features"></a>Boîte de dialogue \> d’options : Caractéristiques d’aperçu de l’environnement
 
 Utilisez cette page de la boîte de dialogue **Options** pour activer ou désactiver les fonctionnalités en préversion dans Visual Studio. La page d’options des **Fonctionnalités en préversion** change fréquemment à mesure que des fonctionnalités en préversion sont rendues disponibles dans Visual Studio.
 

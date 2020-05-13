@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentContext2::Seek | Microsoft Docs
+title: IDebugDocumentContext2::Seek Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugDocumentContext2::Seek
 ms.assetid: 71501356-8a82-4d36-b354-6625bdd2baa0
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 413b1416adcd4b20231666e25f6a8044e632198b
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 435bb2d5402be06a5fcb3ff9fc99a5c5cb8cb3ab
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66325430"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80731748"
 ---
 # <a name="idebugdocumentcontext2seek"></a>IDebugDocumentContext2::Seek
-Déplace le contexte de document en un nombre donné d’instructions ou des lignes.
+Déplace le contexte du document par un certain nombre d’énoncés ou de lignes.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -43,13 +43,13 @@ int Seek( 
 
 ## <a name="parameters"></a>Paramètres
 `nCount`\
-[in] Nombre d’instructions ou des lignes pour passer, en fonction du contexte de document.
+[dans] Nombre d’énoncés ou de lignes à suivre, selon le contexte du document.
 
 `ppDocContext`\
-[out] Retourne un nouvel [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md) objet avec la nouvelle position.
+[out] Retourne un nouvel objet [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md) avec la nouvelle position.
 
 ## <a name="return-value"></a>Valeur de retour
- En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.
+ En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
 ## <a name="see-also"></a>Voir aussi
 - [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md)

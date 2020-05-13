@@ -25,10 +25,10 @@ author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.openlocfilehash: 08492340022f772beadca8061a216de69fafc8af
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75596799"
 ---
 # <a name="upgrade-dotfuscator-community"></a>Mettre à niveau Dotfuscator Community
@@ -38,10 +38,10 @@ Toutefois, les utilisateurs qui mettent à niveau leur version de Dotfuscator pe
 
 ## <a name="registering-dotfuscator-community"></a>Inscription de Dotfuscator Community
 
-Les utilisateurs inscrits de Dotfuscator Community ont accès à des fonctionnalités supplémentaires, telles que la [prise en charge de ligne de commande][cli], ce qui facilite l’intégration de la communauté Dotfuscator à votre processus de génération automatisé. L’inscription accorde également l’accès à un outil intégré utilisé pour [décoder les traces de pile obscurcies][decode-obfuscated].
+Les utilisateurs de Dotfuscator Community inscrits peuvent accéder à des fonctionnalités supplémentaires, telles que la [prise en charge des lignes de commande][cli], ce qui permet d’intégrer facilement Dotfuscator Community au processus de génération automatisé. L’inscription donne également accès à un outil intégré employé pour le [décodage des traces de pile obfusquées][decode-obfuscated].
 
 L’inscription est rapide, simple et gratuite.
-Pour inscrire la communauté Dotfuscator, consultez [les instructions dans le guide complet de l’utilisateur de la communauté Dotfuscator][register-ce].
+Pour inscrire Dotfuscator Community, consultez [les instructions du Guide complet de l’utilisateur de Dotfuscator Community][register-ce].
 
 ## <a name="dotfuscator-professional"></a>Dotfuscator Professional
 
@@ -49,25 +49,25 @@ Alors que Dotfuscator Community fournit un niveau de protection de base, ***PreE
 
 * *Protection de la propriété intellectuelle*
   * Options de renommage supplémentaires, notamment la méthode Overload Induction™ améliorée et la sélection d’identificateur aléatoire.
-  * Accès aux transformations d’obscurcissement au niveau de l’entreprise, y compris les [transformations ciblant la décompilation du code automatisé][control-flow].
+  * Accès aux transformations d’obfuscation de niveau entreprise, notamment les [transformations visant à mettre en échec la décompilation de code automatisée][control-flow].
   * La possibilité de [masquer des chaînes sensibles][string-encryption], ce qui rend impossible une recherche simple du code décompilé.
-  * La possibilité d' [incorporer discrètement des chaînes de propriété et de distribution dans vos assemblys][watermarking], ce qui vous permet de déterminer la source de fuites logicielles non autorisées.
-  * La possibilité de [combiner plusieurs assemblys en un seul][linking], ce qui rend encore plus difficile pour les attaquants de déterminer les rôles des éléments de code, car la séparation des préoccupations a été éliminée.
-  * La possibilité de [supprimer automatiquement le code inutilisé de votre application][pruning], ce qui réduit la quantité de code sensible qui est livrée.
+  * La possibilité [d’incorporer discrètement des chaînes de propriété et la distribution dans vos assemblys][watermarking], ce qui vous permet de déterminer la source des fuites logicielles non autorisées.
+  * La possibilité de [regrouper plusieurs assemblys en un seul][linking], ce qui complique encore davantage la tâche des personnes malveillantes souhaitant déterminer les rôles des éléments de code puisque plus rien n’est séparé.
+  * La possibilité de [supprimer automatiquement le code non utilisé de votre application][pruning], ce qui réduit la quantité de code sensible fourni.
 * *Protection de l’intégrité des applications*
-  * Autres [comportements de protection des applications][check-actions].
+  * [Comportements de défense des applications][check-actions] supplémentaires.
   * La possibilité de fournir un délai d’avertissement avant l’échéance de fin de vie d’une application.
   * La possibilité de notifier le code d’application dans le délai d’avertissement de fin de vie ou après la date limite.
 
-Dotfuscator Professional est le [brouilleur .net][net-obfuscator] standard, qui convient aux développeurs d’entreprise nécessitant un support continu, une maintenance et des mises à jour de produits.
+Dotfuscator Professional est l’[obfuscateur .NET][net-obfuscator] standard. Il est approprié pour les développeurs d’entreprise nécessitant un support technique, une maintenance et des mises à jour de produits continus.
 De plus, Dotfuscator Professional offre une intégration à Visual Studio plus étroite et est concédé sous licence pour une utilisation commerciale.
 
-Pour plus d’informations sur les fonctionnalités avancées de la protection des applications de Dotfuscator Professional, visitez la [page de présentation][product-about] de la solution PreEmptive Solutions et [Comparez-la à la communauté Dotfuscator][product-compare].
-[Les versions d’évaluation entièrement prises en charge sont disponibles sur Preemptive.com][eval].
+Pour plus d’informations sur les fonctionnalités de protection des applications avancées de Dotfuscator Professional, visitez la [page de présentation de Dotfuscator][product-about] de PreEmptive Solutions et [comparez-le à Dotfuscator Community][product-compare].
+[Des essais entièrement pris en charge sont disponibles sur le site preemptive.com][eval].
 
 ## <a name="see-also"></a>Voir aussi
 
-[Cet article dans le guide complet de Dotfuscator Community User][full]
+[Cet article dans le guide complet de l’utilisateur de Dotfuscator Community][full]
 
 <!-- Copyright © 2019 PreEmptive Solutions, LLC -->
 

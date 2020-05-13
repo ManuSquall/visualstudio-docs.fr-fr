@@ -1,24 +1,24 @@
 ---
-title: IDebugPortPicker | Microsoft Docs
+title: IDebugPortPicker - France Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - IDebugPortPicker interface
 ms.assetid: 8b7f6685-a3c5-4355-b706-c1b574f6ff84
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 991480886c2c43c330ce37561d383ffdc420e214
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 554ac24d7148f0d5de07779f35376b28b7ff7b07
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66340367"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80724835"
 ---
 # <a name="idebugportpicker"></a>IDebugPortPicker
-Représente une interface utilisateur personnalisée pour sélectionner le port.
+Représente une interface utilisateur personnalisée pour la sélection du port.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -26,20 +26,20 @@ Représente une interface utilisateur personnalisée pour sélectionner le port.
 IDebugPortPicker : IUnknown
 ```
 
-## <a name="notes-for-implementers"></a>Notes de publication pour les implémenteurs
- Cette interface est implémentée par les fournisseurs de port. Un fournisseur de port définit leur sélecteur de port à exposer en tant qu’un CLSID et en pointant le `metricPortPickerCLSID` métrique au CLSID exposé.
+## <a name="notes-for-implementers"></a>Notes pour les implémenteurs
+ Cette interface est mise en œuvre par les fournisseurs portuaires. Un fournisseur de ports définit son cueilleur de ports en `metricPortPickerCLSID` l’exposant comme un CLSID et en pointant la mesure vers le CLSID exposé.
 
 ## <a name="methods"></a>Méthodes
- Le tableau suivant présente les méthodes de `IDebugPortPicker`.
+ Le tableau suivant montre `IDebugPortPicker`les méthodes de .
 
 |Méthode|Description|
 |------------|-----------------|
 |[DisplayPortPicker](../../../extensibility/debugger/reference/idebugportpicker-displayportpicker.md)|Affiche la boîte de dialogue spécifiée qui permet à l’utilisateur de sélectionner un port.|
 |[SetSite](../../../extensibility/debugger/reference/idebugportpicker-setsite.md)|Définit le fournisseur de services.|
 
-## <a name="requirements"></a>Configuration requise
- En-tête : Msdbg.h
+## <a name="requirements"></a>Spécifications
+ En-tête: Msdbg.h
 
- Espace de noms : Microsoft.VisualStudio.Debugger.Interop
+ Namespace: Microsoft.VisualStudio.Debugger.Interop
 
- Assembly : Microsoft.VisualStudio.Debugger.Interop.dll
+ Assemblage: Microsoft.VisualStudio.Debugger.Interop.dll

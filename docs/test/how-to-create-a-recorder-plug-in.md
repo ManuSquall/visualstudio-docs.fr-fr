@@ -9,19 +9,19 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 5e32faa4525edc79da3d759d67ad2b5676f38fc2
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75589144"
 ---
 # <a name="how-to-create-a-recorder-plug-in"></a>Guide pratique pour créer un plug-in d’enregistreur
 
-<xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestRecorderPlugin> permet de modifier un test de performances web enregistré. La modification se produit une fois le bouton **Arrêter** sélectionné dans la barre d’outils de **l’Enregistreur de test de performances web**, mais avant l’enregistrement et la présentation du test dans l’éditeur de test de performances web.
+<xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestRecorderPlugin> permet de modifier un test de performances web enregistré. La modification se produit après avoir choisi **Stop** dans la barre **d’outils Web Performance Test Recorder,** mais avant que le test soit enregistré et présenté dans l’éditeur de test de performance Web.
 
 [!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
-Un plug-in d’enregistreur vous permet d’effectuer votre propre corrélation personnalisée sur des paramètres dynamiques. Avec la fonctionnalité de corrélation intégrée, les tests de performances web détectent les paramètres dynamiques dans l’enregistrement web une fois l’opération terminée, ou quand l’option **Promouvoir les paramètres dynamiques en paramètres de test web** est utilisée dans la barre d’outils de **l’Éditeur de test de performances web**. Toutefois, la fonctionnalité de détection intégrée ne trouve pas toujours tous les paramètres dynamiques. Par exemple, il ne trouve pas d'ID de session, qui obtient généralement sa valeur modifiée entre 5 à 30 minutes. Par conséquent, vous devez exécuter le processus de corrélation manuellement.
+Un plug-in d’enregistreur vous permet d’effectuer votre propre corrélation personnalisée sur des paramètres dynamiques. Grâce à la fonctionnalité de corrélation intégrée, les tests de performance Web détectent les paramètres dynamiques de l’enregistrement Web une fois **terminés,** ou lorsque vous utilisez les paramètres dynamiques de promotion des paramètres de test Web sur la barre **d’outils Web Performance Test Editor.** Toutefois, la fonctionnalité de détection intégrée ne trouve pas toujours tous les paramètres dynamiques. Par exemple, il ne trouve pas d'ID de session, qui obtient généralement sa valeur modifiée entre 5 à 30 minutes. Par conséquent, vous devez exécuter le processus de corrélation manuellement.
 
 Le <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestRecorderPlugin> permet d'écrire le code de votre plug-in personnalisé. Ce plug-in peut effectuer une corrélation ou modifier le test de performances web de différentes manières avant qu’il soit enregistré et présenté dans l’éditeur de test de performances web. Par conséquent, si vous déterminez qu'une variable dynamique spécifique doit être mise en corrélation pour de nombreux enregistrements, vous pouvez automatiser le processus.
 
@@ -37,18 +37,18 @@ Les procédures suivantes décrivent le mode de création du code rudimentaire p
 
 2. Ajoutez ensuite un nouveau projet **Bibliothèque de classes** à la solution.
 
-3. Dans **l’Explorateur de solutions**, dans le dossier de projet de la nouvelle bibliothèque de classes, cliquez avec le bouton droit sur le dossier **Références**, puis sélectionnez **Ajouter une référence**.
+3. Dans **Solution Explorer**, dans le nouveau dossier de projet de bibliothèque de classe, cliquez à droite sur le dossier **Références** et **sélectionnez Ajouter référence**.
 
     > [!TIP]
     > **RecorderPlugins** est un exemple de dossier de projet de nouvelle bibliothèque de classes.
 
      La boîte de dialogue **Ajouter une référence** s’affiche.
 
-4. Sélectionnez l’onglet **.NET**.
+4. Sélectionnez l'onglet **.NET**.
 
 5. Faites défiler la liste vers le bas et sélectionnez **Microsoft.VisualStudio.QualityTools.WebTestFramework**, puis choisissez **OK**.
 
-     **Microsoft.VisualStudio.QualityTools.WebTestFramework** est ajouté dans le dossier **Références** dans **l’Explorateur de solutions**.
+     Le **Microsoft.VisualStudio.QualityTools.WebTestFramework** est ajouté dans le dossier **Références** dans **Solution Explorer**.
 
 6. Écrivez le code de votre plug-in d'enregistreur. Commencez par créer une classe publique qui dérive de <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestRecorderPlugin>.
 
@@ -71,7 +71,7 @@ Les procédures suivantes décrivent le mode de création du code rudimentaire p
 
 8. Ajoutez d’autres lignes de code en fonction des opérations que le plug-in d’enregistreur devra exécuter à l’issue de l’enregistrement web. Par exemple, vous pouvez ajouter le code pour gérer la corrélation personnalisée comme l'illustre l'exemple ci-dessous. Il est également possible de créer un plug-in d’enregistreur pour notamment convertir les commentaires en transactions ou ajouter des règles de validation au test de performances web.
 
-9. Dans le menu **Générer**, choisissez **Générer \<nom du projet de la bibliothèque de classes>** .
+9. Sur le menu **Build,** choisissez **le nom du projet de bibliothèque de classe Build \<>**.
 
 Ensuite, déployez le plug-in d’enregistreur pour l’inscrire auprès de Visual Studio.
 
@@ -99,14 +99,14 @@ Après avoir compilé le plug-in d’enregistreur, placez la DLL ainsi créée d
     > [!WARNING]
     > Vous risquez de rencontrer l’erreur suivante si vous exécutez un test de performances web ou un test de charge qui utilise votre plug-in :
     >
-    > **Échec de la requête : exception dans \<plug-in > événement : impossible de charger le fichier ou l’assembly'\<'nom du plug-in ". dll >, version =\<n. n. n. n >, culture = neutral, PublicKeyToken = null’ou l’une de ses dépendances. Le système ne peut pas trouver le fichier spécifié.**
+    > **Demande a échoué: Exception dans \<plug-in> événement: Impossible\<de charger le fichier ou l’assemblage 'Plug-in name'.dll fichier>, Version n.n.n.n\<>, Culture neutre, PublicKeyToken-null' ou l’une de ses dépendances. Le système ne peut pas trouver le fichier spécifié.**
     >
-    > Cela se produit si vous effectuez des modifications du code dans l’un de vos plug-ins et si vous créez une autre version de la DLL **(Version=0.0.0.0)** . Toutefois, le plug-in fait toujours référence à la version du plug-in d’origine. Pour résoudre ce problème, procédez comme suit :
+    > Cela se produit si vous effectuez des modifications du code dans l’un de vos plug-ins et si vous créez une autre version de la DLL **(Version=0.0.0.0)**. Toutefois, le plug-in fait toujours référence à la version du plug-in d’origine. Pour résoudre ce problème, procédez comme suit :
     >
     > 1. Dans le projet de test de performances web et de charge, un message d'avertissement s'affiche dans les références. Supprimez et rajoutez la référence à la DLL de votre plug-in.
     > 2. Supprimez le plug-in de votre test ou de l'emplacement approprié, puis rajoutez-le.
 
-## <a name="example"></a>Exemple
+## <a name="example"></a> Exemple
 
 Cet exemple montre comment créer un plug-in d’enregistreur pour le test de performances web personnalisé afin de réaliser une corrélation personnalisée des paramètres dynamiques.
 
@@ -249,5 +249,5 @@ namespace RecorderPlugin
 - <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestRecorderPlugin.PostWebTestRecording*>
 - <xref:Microsoft.VisualStudio.TestTools.WebTesting.ExtractionRuleReference>
 - <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestRecorderPlugin.PostWebTestRecording*>
-- [Créer du code et des plug-ins personnalisés pour les tests de charge](../test/create-custom-code-and-plug-ins-for-load-tests.md)
-- [Générer et exécuter un test de performances web codé](../test/generate-and-run-a-coded-web-performance-test.md)
+- [Créer un code et des plug-ins personnalisés pour les tests de charge](../test/create-custom-code-and-plug-ins-for-load-tests.md)
+- [Générer et exécuter un test de performances de site Web codé](../test/generate-and-run-a-coded-web-performance-test.md)

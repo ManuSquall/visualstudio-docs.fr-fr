@@ -1,5 +1,5 @@
 ---
-title: Fonction SccGetExtendedCapabilities | Microsoft Docs
+title: Fonction SccGetExtendedCapabilitiess (fr) Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - SccGetExtendedCapabilities function
 ms.assetid: 588c6a92-2147-4d8b-a357-96ca7da0a092
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: aa6a067a0b9e8358f503228dbc53e20586b84468
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 5247f2de7ffc63db7235f915c72b3274b8fee5f5
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66353664"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80700720"
 ---
 # <a name="sccgetextendedcapabilities-function"></a>Fonction SccGetExtendedCapabilities
-Cette fonction retourne des fonctionnalités supplémentaires prises en charge par le plug-in de contrôle de code source.
+Cette fonction renvoie des capacités supplémentaires prises en charge par le plug-in de contrôle source.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -35,28 +35,28 @@ SCCRTN SccGetExtendedCapabilities(
 ### <a name="parameters"></a>Paramètres
  pContext
 
-[in] Le pointeur de contexte de plug-in de contrôle de code source.
+[dans] Le pointeur de contexte de plug-in de contrôle de source.
 
  lSccExCaps
 
-[in] Un indicateur qui spécifie une fonctionnalité étendue pour laquelle effectuer un test (voir le tableau de Code de fonctionnalité étendue dans [indicateurs de capacité](../extensibility/capability-flags.md) pour les indicateurs possibles).
+[dans] Un drapeau précisant une capacité étendue pour laquelle le test (voir la table du Code de capacité étendue dans [les drapeaux de capacité](../extensibility/capability-flags.md) pour les drapeaux possibles).
 
  pbSupported
 
-[out] Retourne zéro (`TRUE`) si la fonctionnalité spécifiée est prise en charge ; sinon, retourne la valeur zéro (`FALSE`).
+[out] Retourne non zéro`TRUE`( ) si la capacité spécifiée est prise en charge; autrement, retourne`FALSE`zéro ( ).
 
-## <a name="return-value"></a>Valeur de retour
- L’implémentation de plug-in de contrôle de source de cette fonction est censée retourner l’une des valeurs suivantes :
+## <a name="return-value"></a>Valeur retournée
+ La mise en œuvre plug-in de cette fonction de contrôle source devrait renvoyer l’une des valeurs suivantes :
 
-|Value|Description|
+|Valeur|Description|
 |-----------|-----------------|
-|SCC_OK|Opération de fonctionnalité de récupération s’est terminée correctement.|
-|SCC_E_UNKNOWNERROR<br /><br /> SCC_E_NONSPECIFICERROR|Erreur inconnue ou non spécifiée s’est produite.|
+|SCC_OK|L’opération de capacité de se terminer avec succès.|
+|SCC_E_UNKNOWNERROR<br /><br /> SCC_E_NONSPECIFICERROR|Une erreur inconnue ou non spécifiée s’est produite.|
 
 ## <a name="remarks"></a>Notes
- Cette méthode est appelée à la demande ; Autrement dit, quand une fonctionnalité doit être testée, cette méthode est appelée pour déterminer si la prise en charge de fonctionnalité. Seul l’indicateur à la fois est spécifié.
+ Cette méthode est appelée à la demande; c’est-à-dire qu’une capacité doit être testée, cette méthode est appelée pour déterminer si cette capacité est prise en charge. Un seul drapeau à la fois est spécifié.
 
 ## <a name="see-also"></a>Voir aussi
-- [Fonctions d’API source contrôle plug-in](../extensibility/source-control-plug-in-api-functions.md)
+- [Fonctions d’API plug-in de contrôle des sources](../extensibility/source-control-plug-in-api-functions.md)
 - [Codes d’erreur](../extensibility/error-codes.md)
-- [Indicateurs de capacité](../extensibility/capability-flags.md)
+- [Drapeaux de capacité](../extensibility/capability-flags.md)

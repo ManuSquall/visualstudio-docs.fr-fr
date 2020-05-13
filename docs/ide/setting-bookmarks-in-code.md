@@ -11,15 +11,15 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 2c62ded0b94db9d39a197dde55fbc77434c5325d
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75595434"
 ---
 # <a name="set-bookmarks-in-code"></a>Définir des signets dans le code
 
-Vous pouvez utiliser des signets pour marquer des lignes de votre code afin de pouvoir rapidement revenir à un emplacement spécifique, ou basculer d’un emplacement à un autre. Les commandes et les icônes de signet sont disponibles à deux emplacements : dans la fenêtre de signet **Fenêtre Signet** (**Affichage** > **Fenêtre Signet**) et dans la barre d’outils de l’Éditeur de texte.
+Vous pouvez utiliser des signets pour marquer des lignes de votre code afin de pouvoir rapidement revenir à un emplacement spécifique, ou basculer d’un emplacement à un autre. Les commandes et les icônes de signet sont disponibles en deux endroits : la **fenêtre de signet** **(voir** > **fenêtre de signet**) et la barre d’outils de l’éditeur de texte.
 
 ![Barre d’outils Signet](media/bookmark-toolbar.png)
 
@@ -34,7 +34,7 @@ Pour voir facilement à quoi est destiné un signet spécifique, vous pouvez le 
 > [!IMPORTANT]
 > Le signet est défini au numéro de ligne, et non au code. Si vous modifiez le code, le signet est conservé au numéro de ligne ; il ne se déplace pas avec le code.
 
-Vous pouvez naviguer entre les signets à l’aide des boutons **Signet suivant** et **Signet précédent** dans la fenêtre Signet.
+Vous pouvez naviguer entre les signets en utilisant le **signet Suivant** et les boutons **de signets précédents** dans la fenêtre de signet.
 
 Vous pouvez organiser les signets dans des dossiers virtuels en choisissant **Nouveau dossier** dans la fenêtre Signet et en faisant glisser les signets sélectionnés dans le nouveau dossier.
 

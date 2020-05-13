@@ -1,24 +1,24 @@
 ---
-title: IDebugStopCompleteEvent2 | Microsoft Docs
+title: IDebugStopCompleteEvent2 - France Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - IDebugStopCompleteEvent2 interface
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d080b3073ffc13b90870b40a16a353634f4aa0cf
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: da3eb33d76f55310e6428a34dd09cabbc271aa68
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66352008"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80719442"
 ---
 # <a name="idebugstopcompleteevent2"></a>IDebugStopCompleteEvent2
 
-Le moteur de débogage (dé) peut envoyer cet événement facultatif le Gestionnaire de session de débogage (SDM) lorsqu’un programme s’est arrêté.
+Le moteur de débogé (DE) peut envoyer cet événement optionnel au gestionnaire de débogé de session (SDM) lorsqu’un programme s’est arrêté.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -26,18 +26,18 @@ Le moteur de débogage (dé) peut envoyer cet événement facultatif le Gestionn
 IDebugStopCompleteEvent2 : IUnknown
 ```
 
-## <a name="notes-for-implementers"></a>Notes de publication pour les implémenteurs
+## <a name="notes-for-implementers"></a>Notes pour les implémenteurs
 
-Cette interface a été introduite avec Visual Studio 2005. Les versions antérieures ne prenaient pas en charge l’arrêt asynchrone.
+Cette interface a été introduite avec Visual Studio 2005. Les rejets antérieurs n’étayaient pas l’arrêt asynchrone.
 
-- [Arrêter](../../../extensibility/debugger/reference/idebugengineprogram2-stop.md) est appelée par le SDM dans les scénarios à plusieurs processus ou programme multiples. Lorsqu’un programme envoie un événement d’arrêt pour le SDM, le SDM demande arrêter trop d’autres programmes.
+- [Stop](../../../extensibility/debugger/reference/idebugengineprogram2-stop.md) est appelé par le SDM dans des scénarios multi-processus ou multi-programmes. Lorsqu’un programme envoie un événement d’arrêt au SDM, le SDM demande également l’arrêt d’autres programmes.
 
-Stop est utilisé pour informer de manière asynchrone le SDM un programme s’est arrêté. Pour informer le SDM est utile pour un moteur de débogage interpréteur, où parfois aucun code n’est en cours d’exécution à l’intérieur de l’élément débogué programmer, donc [arrêter](../../../extensibility/debugger/reference/idebugengineprogram2-stop.md) ne peut pas être effectuée de façon synchrone. Si un moteur de débogage veut employer cette notification asynchrone, elle doit retourner `S_ASYNC_STOP` de [arrêter](../../../extensibility/debugger/reference/idebugengineprogram2-stop.md).
+L’arrêt est utilisé pour informer asynchronement le SDM qu’un programme a cessé. Informer le SDM est utile pour un moteur de déboguer un interprète, où parfois aucun code ne fonctionne à l’intérieur du programme déboqué, de sorte [Stop](../../../extensibility/debugger/reference/idebugengineprogram2-stop.md) ne peut pas être complété synchronisée. Si un moteur de débogé veut employer cette notification `S_ASYNC_STOP` asynchrone, il doit revenir de [Stop](../../../extensibility/debugger/reference/idebugengineprogram2-stop.md).
 
-## <a name="requirements"></a>Configuration requise
+## <a name="requirements"></a>Spécifications
 
-En-tête : msdbg.h
+En-tête: msdbg.h
 
-Espace de noms : Microsoft.VisualStudio.Debugger.Interop
+Namespace: Microsoft.VisualStudio.Debugger.Interop
 
-Assembly : Microsoft.VisualStudio.Debugger.Interop.dll
+Assemblage: Microsoft.VisualStudio.Debugger.Interop.dll

@@ -1,5 +1,5 @@
 ---
-title: IDebugModule3::SetJustMyCodeState | Microsoft Docs
+title: IDebugModule3::SetJustMyCodeState ( Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugModule3::SetJustMyCodeState
 ms.assetid: 68f8166d-ef64-49ae-ad5e-79604f43bbd4
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 46a200b91e1680da3f7beac1b0ec4856a39b2564
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 09617dda06cf2c3132ba4d8fb26a90f0b7cea08d
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66323798"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80726770"
 ---
 # <a name="idebugmodule3setjustmycodestate"></a>IDebugModule3::SetJustMyCodeState
 Marque le module comme étant le code utilisateur ou non.
@@ -41,10 +41,10 @@ int SetJustMyCodeState(
 
 ## <a name="parameters"></a>Paramètres
 `fIsUserCode`\
-[in] Différent de zéro (`TRUE`) si le module doit être considéré comme du code de l’utilisateur, zéro (`FALSE`) s’il ne doit pas.
+[dans] Nonzero`TRUE`( ) si le module doit`FALSE`être considéré comme code utilisateur, zéro ( ) s’il ne le doit pas.
 
 ## <a name="return-value"></a>Valeur de retour
- En cas de réussite, retourne `S_OK`; sinon, retourne le code d’erreur.
+ En cas `S_OK`de succès, les retours; autrement, renvoie le code d’erreur.
 
 ## <a name="see-also"></a>Voir aussi
 - [IDebugModule3](../../../extensibility/debugger/reference/idebugmodule3.md)

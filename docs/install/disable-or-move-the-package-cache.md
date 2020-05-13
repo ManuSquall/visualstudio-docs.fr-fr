@@ -19,10 +19,10 @@ ms.workload:
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.openlocfilehash: 3f38757931cb22e9072571d96b015f37882dd500
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/16/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "76114791"
 ---
 # <a name="disable-or-move-the-package-cache"></a>Désactiver ou déplacer le cache du package
@@ -46,13 +46,13 @@ Si vous souhaitez réactiver le cache, transmettez `--cache` à la place. Comme 
 "%ProgramFiles(x86)%\Microsoft Visual Studio\Installer\vs_installer.exe" repair --passive --norestart --cache
 ```
 
-Vous pouvez également définir la [stratégie de registre](set-defaults-for-enterprise-deployments.md) `KeepDownloadedPayloads` pour désactiver le cache avant d’installer, de modifier ou de réparer Visual Studio.
+Vous pouvez également définir la  [stratégie du Registre](set-defaults-for-enterprise-deployments.md)`KeepDownloadedPayloads` pour désactiver le cache avant d’installer, de modifier ou de réparer Visual Studio.
 
 ## <a name="move-the-package-cache"></a>Déplacer le cache du package
 
 Une configuration du système courante consiste à installer Windows sur un disque SSD avec un plus grand disque dur (ou plusieurs) pour répondre aux besoins de développement, comme le code source, les fichiers binaires de programme, etc. Si vous voulez travailler hors connexion, vous pouvez au lieu de cela déplacer le cache du package.
 
-Pour le moment, vous ne pouvez le faire que si vous définissez la [stratégie de registre](set-defaults-for-enterprise-deployments.md) `CachePath` avant d’installer, de modifier ou de réparer Visual Studio.
+Vous ne pouvez le faire pour l’instant que si vous définissez la  [stratégie du Registre](set-defaults-for-enterprise-deployments.md)`CachePath` avant d’installer, de modifier ou de réparer Visual Studio.
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 

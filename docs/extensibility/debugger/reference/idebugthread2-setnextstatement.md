@@ -1,5 +1,5 @@
 ---
-title: IDebugThread2::SetNextStatement | Microsoft Docs
+title: IDebugThread2::SetNextStatement (fr) Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugThread2::SetNextStatement
 ms.assetid: 9e2834dd-4ecf-45af-8e6c-f9318ebdac06
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 87a5ba19eed0c0ee4d78feeb755b50db428d77d9
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 4b390e5c021fa069ae3fb09eef1978caaf9cc8ed
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66320086"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80718654"
 ---
 # <a name="idebugthread2setnextstatement"></a>IDebugThread2::SetNextStatement
-Définit le pointeur d’instruction en cours pour le contexte de code donné.
+Définit le pointeur d’instruction actuel dans le contexte du code donné.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -43,22 +43,22 @@ int SetNextStatement ( 
 
 ## <a name="parameters"></a>Paramètres
 `pStackFrame`\
-Réservé pour une utilisation ultérieure ; la valeur est une valeur null.
+Réservé à une utilisation future; d’une valeur nulle.
 
 `pCodeContext`\
-[in] Un [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) objet qui décrit l’emplacement du code sur le point d’être exécutée et son contexte.
+[dans] Un objet [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) qui décrit l’emplacement du code sur le point d’être exécuté et son contexte.
 
 ## <a name="return-value"></a>Valeur de retour
- En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur. Le tableau suivant présente les autres valeurs possibles.
+ En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur. Le tableau suivant montre d’autres valeurs possibles.
 
-|Value|Description|
+|Valeur|Description|
 |-----------|-----------------|
-|E_CANNOT_SET_NEXT_STATEMENT_ON_NONLEAF_FRAME|L’instruction suivante ne peut pas être dans un frame de pile plus approfondie sur le frame de pile.|
-|E_CANNOT_SETIP_TO_DIFFERENT_FUNCTION|L’instruction suivante n’est pas associée à n’importe quelle image dans la pile.|
-|E_CANNOT_SET_NEXT_STATEMENT_ON_EXCEPTION|Certains moteurs de débogage ne peut pas définir l’instruction suivante après une exception.|
+|E_CANNOT_SET_NEXT_STATEMENT_ON_NONLEAF_FRAME|La prochaine déclaration ne peut pas être dans un cadre de pile plus profond sur la pile de cadre.|
+|E_CANNOT_SETIP_TO_DIFFERENT_FUNCTION|La déclaration suivante n’est associée à aucun cadre dans la pile.|
+|E_CANNOT_SET_NEXT_STATEMENT_ON_EXCEPTION|Certains moteurs débogés ne peuvent pas définir la déclaration suivante après une exception.|
 
 ## <a name="remarks"></a>Notes
- Le pointeur d’instruction indique l’instruction ou l’instruction suivante à exécuter. Cette méthode est utilisée pour retenter une ligne de code source ou pour forcer l’exécution de passer dans une autre fonction, par exemple.
+ Le pointeur d’instruction indique la prochaine instruction ou déclaration à exécuter. Cette méthode est utilisée pour retenter une ligne de code source ou pour forcer l’exécution à continuer dans une autre fonction, par exemple.
 
 ## <a name="see-also"></a>Voir aussi
 - [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)

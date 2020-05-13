@@ -1,24 +1,24 @@
 ---
-title: IDebugPortSupplierDescription2 | Microsoft Docs
+title: IDebugPortSupplierDescription2 - France Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - IDebugPortSupplierDescription2 interface
 ms.assetid: dd19b9d6-0703-44b3-9498-cedffa0ce5b7
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ae6491628888f682d61c94ae618bfad72837c845
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 69853e34788a2f24afe183dfbb7070e48f14aa46
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66339882"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80724358"
 ---
 # <a name="idebugportsupplierdescription2"></a>IDebugPortSupplierDescription2
-Permet la [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] l’interface utilisateur pour afficher le texte à l’intérieur de la **informations de Transport** section de la **attacher au processus** boîte de dialogue.
+Permet [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] à l’interface utilisateur d’afficher du texte à l’intérieur de la section **Informations sur** les transports de la boîte de dialogue Attach **to Process.**
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -26,19 +26,19 @@ Permet la [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] l’in
 IDebugPortSupplierDescription2 : IUnknown
 ```
 
-## <a name="notes-for-implementers"></a>Notes de publication pour les implémenteurs
- Cette interface est implémentée par les fournisseurs de port.
+## <a name="notes-for-implementers"></a>Notes pour les implémenteurs
+ Cette interface est mise en œuvre par les fournisseurs portuaires.
 
 ## <a name="methods"></a>Méthodes
- Le tableau suivant présente les méthodes de `IDebugPortSupplierDescription2`.
+ Le tableau suivant montre `IDebugPortSupplierDescription2`les méthodes de .
 
 |Méthode|Description|
 |------------|-----------------|
-|[GetDescription](../../../extensibility/debugger/reference/idebugportsupplierdescription2-getdescription.md)|Récupère la description et les métadonnées de description pour le fournisseur de port.|
+|[GetDescription (en)](../../../extensibility/debugger/reference/idebugportsupplierdescription2-getdescription.md)|Récupère les métadonnées de description et de description pour le fournisseur du port.|
 
-## <a name="requirements"></a>Configuration requise
- En-tête : Msdbg.h
+## <a name="requirements"></a>Spécifications
+ En-tête: Msdbg.h
 
- Espace de noms : Microsoft.VisualStudio.Debugger.Interop
+ Namespace: Microsoft.VisualStudio.Debugger.Interop
 
- Assembly : Microsoft.VisualStudio.Debugger.Interop.dll
+ Assemblage: Microsoft.VisualStudio.Debugger.Interop.dll

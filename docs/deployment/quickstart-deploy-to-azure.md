@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - azure
 ms.openlocfilehash: 4bbff0c2d149afddc355afe5f6c93e9d0aea54c0
-ms.sourcegitcommit: 8589d85cc10710ef87e6363a2effa5ee5610d46a
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "72806910"
 ---
 # <a name="publish-a-web-app-to-azure-app-service-using-visual-studio"></a>Publier une application web sur Azure App Service avec Visual Studio
@@ -33,17 +33,17 @@ Cet article décrit comment utiliser l’outil **Publier** pour un déploiement 
 
 1. Dans l’Explorateur de solutions, cliquez avec le bouton droit sur le projet et choisissez **Publier** (ou utilisez l’élément de menu **Générer** > **Publier**).
 
-    ![Commande publier dans le menu contextuel du projet dans Explorateur de solutions](../deployment/media/quickstart-publish.png "Choisir Publier")
+    ![La commande Publier sur le menu contextuelle du projet dans Solution Explorer](../deployment/media/quickstart-publish.png "Choisir Publier")
 
 1. Si vous avez déjà configuré des profils de publication, le volet **Publier** s’affiche, dans lequel vous sélectionnez **Créer un profil**.
 
 1. Dans la boîte de dialogue **Choisir une cible de publication**, choisissez **App Service**.
 
-    ![Choisir Azure App Service](../deployment/media/quickstart-publish-azure.png "Choisir Azure App Service")
+    ![Choisissez Azure App Service](../deployment/media/quickstart-publish-azure.png "Choisissez Azure App Service")
 
 1. Sélectionnez **Publier**. La boîte de dialogue **Créer App Service** s’affiche. Connectez-vous avec votre compte Azure, si nécessaire, et laissez les paramètres App Service par défaut remplir les champs.
 
-    ![Créer App Service](../deployment/media/quickstart-publish-settings-app-service.png "Créer Azure App Service")
+    ![Créer un App Service](../deployment/media/quickstart-publish-settings-app-service.png "Créer azure App Service")
 
 1. Sélectionnez **Créer**. Visual Studio déploie l’application sur votre service Azure App Service, et l’application web se charge dans votre navigateur. Le volet **Publier** des propriétés de projet montre l’URL du site et d’autres détails.
 
@@ -51,9 +51,9 @@ Cet article décrit comment utiliser l’outil **Publier** pour un déploiement 
 
 ## <a name="clean-up-resources"></a>Nettoyer les ressources
 
-Dans les étapes précédentes, vous avez créé des ressources Azure dans un groupe de ressources. Si vous pensez ne plus avoir besoin de ces ressources, vous pouvez les supprimer en supprimant le groupe de ressources.
-Dans le menu de gauche du portail Azure, sélectionnez **Groupes de ressources**, puis sélectionnez **myResourceGroup**.
-Dans la page du groupe de ressources, vérifiez que les ressources listées sont celles que vous voulez supprimer.
+Au cours des étapes précédentes, vous avez créé des ressources Azure au sein d’un groupe de ressources. Si vous ne pensez pas avoir besoin de ces ressources à l’avenir, vous pouvez les supprimer en supprimant le groupe de ressources.
+Dans le menu de gauche du portail Azure, cliquez sur **Groupes de ressources**, puis sur **myResourceGroup**.
+Sur la page du groupe de ressources, assurez-vous que les ressources répertoriées sont bien celles que vous souhaitez supprimer.
 Sélectionnez **Supprimer**, tapez **myResourceGroup** dans la zone de texte, puis sélectionnez **Supprimer**.
 
 ## <a name="next-steps"></a>Étapes suivantes

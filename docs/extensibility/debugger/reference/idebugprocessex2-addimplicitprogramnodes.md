@@ -1,5 +1,5 @@
 ---
-title: IDebugProcessEx2::AddImplicitProgramNodes | Microsoft Docs
+title: IDebugProcessEx2::AddImplicitProgramNodes Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProcessEx2::AddImplicitProgramNodes method
 ms.assetid: 8b491b00-f9e7-45b3-9115-fe58c3464289
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: b75ef50107b44de8de6f65c5c4c9c6827e13426e
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 113c81e95e7384be04b7e02a5c58cd2cad7c9c6b
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66309499"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80723397"
 ---
 # <a name="idebugprocessex2addimplicitprogramnodes"></a>IDebugProcessEx2::AddImplicitProgramNodes
-Cette méthode ajoute un nœud de programme pour chaque moteur de débogage (dé) spécifié.
+Cette méthode ajoute un nœud de programme pour chaque moteur de débogé (DE) spécifié.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -45,19 +45,19 @@ int AddImplicitProgramNodes(
 
 ## <a name="parameters"></a>Paramètres
 `guidLaunchingEngine`\
-[in] Le `GUID` d’un type de données DE qui doit être utilisée pour lancer des programmes (et est supposé pour ajouter des nœuds de son propre programme).
+[dans] Le `GUID` d’un DE qui doit être utilisé pour lancer des programmes (et est supposé ajouter ses propres nœuds de programme).
 
 `rgguidSpecificEngines`\
-[in] Tableau de `GUID`s DEs quel programme nœuds seront ajoutés.
+[dans] Array `GUID`de S de DE pour lesquels les nœuds de programme seront ajoutés.
 
 `celtSpecificEngines`\
-[in] Le nombre de `GUID`s dans le `rgguidSpecificEngines` tableau.
+[dans] Le nombre `GUID`de `rgguidSpecificEngines` s dans le tableau.
 
 ## <a name="return-value"></a>Valeur de retour
- En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.
+ En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
 ## <a name="remarks"></a>Notes
-- [Programmer des nœuds](../../../extensibility/debugger/program-nodes.md) sera ajouté pour chaque dé répertoriées dans `rgguidSpecificEngines`, à l’exclusion du moteur de lancement (selon les indications dans `guidLaunchingEngine`), qui est censé pour ajouter son propre nœud de programme lors du lancement d’un programme.
+- [Des nœuds de programme](../../../extensibility/debugger/program-nodes.md) `rgguidSpecificEngines`seront ajoutés pour chaque `guidLaunchingEngine`DE énumérés dans — à l’exclusion du moteur de lancement (tel qu’indiqué dans ), qui est supposé ajouter son propre nœud de programme quand il lance un programme.
 
 ## <a name="see-also"></a>Voir aussi
 - [IDebugProgramEx2](../../../extensibility/debugger/reference/idebugprogramex2.md)

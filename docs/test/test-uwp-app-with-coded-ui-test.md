@@ -11,10 +11,10 @@ dev_langs:
 ms.workload:
 - uwp
 ms.openlocfilehash: fdd3d98bd848bb6fe679809a58f2e316a316f012
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75590356"
 ---
 # <a name="create-a-coded-ui-test-to-test-a-uwp-app"></a>Créer un test codé de l’interface utilisateur pour tester une application UWP
@@ -57,7 +57,7 @@ La première étape consiste à créer une application UWP simple sur laquelle e
    Me.textBox.Text = Me.button.Name
    ```
 
-1. Appuyez sur **Ctrl**+**F5** pour exécuter l’application. Vous devriez voir quelque chose qui ressemble à ce qui suit :
+1. Appuyez sur **Ctrl**+**F5** pour exécuter l’application. Un résultat tel que celui-ci doit s’afficher :
 
    ![Application UWP avec une zone de texte et un bouton](media/uwp-app.png)
 
@@ -65,7 +65,7 @@ La première étape consiste à créer une application UWP simple sur laquelle e
 
 1. Pour ajouter un projet de test à une solution, cliquez avec le bouton droit sur la solution dans **l’Explorateur de solutions**, puis choisissez **Ajouter** > **Nouveau projet**.
 
-1. Recherchez et sélectionnez le modèle **Projet de test codé de l’interface utilisateur (Windows universel)** .
+1. Recherchez et sélectionnez le modèle **Projet de test codé de l’interface utilisateur (Windows universel)**.
 
    ::: moniker range="vs-2017"
 
@@ -74,7 +74,7 @@ La première étape consiste à créer une application UWP simple sur laquelle e
    ::: moniker-end
 
    > [!NOTE]
-   > Si vous ne voyez pas le modèle **Projet de test codé de l’interface utilisateur (Windows universel)** , vous devez [installer le composant de test codé de l’interface utilisateur](../test/use-ui-automation-to-test-your-code.md#install-the-coded-ui-test-component).
+   > Si vous ne voyez pas le modèle **Projet de test codé de l’interface utilisateur (Windows universel)**, vous devez [installer le composant de test codé de l’interface utilisateur](../test/use-ui-automation-to-test-your-code.md#install-the-coded-ui-test-component).
 
 1. Dans la boîte de dialogue **Générer le code pour le test codé de l’interface utilisateur**, sélectionnez **Modifier manuellement le test**.
 
@@ -98,7 +98,7 @@ La première étape consiste à créer une application UWP simple sur laquelle e
 
      ![Cliquer sur le contrôle de bouton pour définir la valeur de la zone de texte](../test/media/uwp-app-button-textbox.png)
 
-1. Ajoutez une assertion pour vérifier le texte dans le contrôle de zone de texte. Utilisez la croix pour sélectionner le contrôle de zone de texte, puis sélectionnez la propriété **Text** dans la boîte de dialogue **Ajouter des assertions**. Ensuite, sélectionnez **Ajouter une assertion** ou appuyez sur **Alt**+**A**. Dans la zone **Message sur l’échec d’assertion**, entrez **La valeur de la zone de texte est inattendue.** Sélectionnez **OK**.
+1. Ajoutez une assertion pour vérifier le texte dans le contrôle de zone de texte. Utilisez la croix pour sélectionner le contrôle de zone de texte, puis sélectionnez la propriété **Text** dans la boîte de dialogue **Ajouter des assertions**. Ensuite, sélectionnez **Ajouter une assertion** ou appuyez sur **Alt**+**A**. Dans la zone **Message sur l’échec d’assertion**, entrez **La valeur de la zone de texte est inattendue.** et puis sélectionnez **OK**.
 
      ![Choisir une zone de test avec la croix et ajouter une assertion](../test/media/add-assertion-for-text.png)
 
@@ -158,7 +158,7 @@ La première étape consiste à créer une application UWP simple sur laquelle e
    Remplacez l’ID d’automation dans l’exemple de code avec la valeur que vous avez copiée dans le Presse-papiers à l’étape précédente.
 
    > [!IMPORTANT]
-   > Découpez le début de l’ID d’automation pour supprimer les caractères comme **P~** . Si vous n’enlevez pas ces caractères, le test lève `Microsoft.VisualStudio.TestTools.UITest.Extension.PlaybackFailureException` lorsqu’il tente de lancer l’application.
+   > Découpez le début de l’ID d’automation pour supprimer les caractères comme **P~**. Si vous n’enlevez pas ces caractères, le test lève `Microsoft.VisualStudio.TestTools.UITest.Extension.PlaybackFailureException` lorsqu’il tente de lancer l’application.
 
 1. Ensuite, ajoutez le code à la méthode de test pour cliquer sur le bouton. Dans la ligne après `XamlWindow.Launch`, ajoutez un mouvement permettant d’appuyer sur le contrôle de bouton :
 
@@ -212,7 +212,7 @@ La première étape consiste à créer une application UWP simple sur laquelle e
 
    ![Les tests réussis s'affichent dans l'Explorateur de tests](../test/media/test-explorer-coded-ui-test-passed.png)
 
-## <a name="q--a"></a>Q et R
+## <a name="q--a"></a>Questions et réponses
 
 ### <a name="q-why-dont-i-see-the-option-to-record-my-coded-ui-test-in-the-generate-code-for-a-coded-ui-test-dialog"></a>Q : Pourquoi l’option d’enregistrement de mon test codé de l’interface utilisateur ne figure-t-elle pas dans la boîte de dialogue Générer le code pour le test codé de l’interface utilisateur ?
 
@@ -224,9 +224,9 @@ La première étape consiste à créer une application UWP simple sur laquelle e
 
 ### <a name="q-why-cant-i-modify-the-code-in-the-uimapdesigner-file"></a>Q : Pourquoi ne puis-je pas modifier le code du fichier UIMap.Designer ?
 
-**R** : Toutes les modifications de code que vous effectuez dans le fichier *UIMapDesigner.cs* sont remplacées chaque fois que vous générez du code dans le **Générateur de test codé de l’interface utilisateur**. Si vous devez modifier une méthode enregistrée, copiez-la dans le fichier *UIMap.cs* et renommez-la. Le fichier *UIMap.cs* peut être utilisé pour remplacer les méthodes et les propriétés dans le fichier *UIMapDesigner.cs*. Supprimez la référence à la méthode d’origine dans le fichier *CodedUITest.cs* et remplacez-la par le nom de la méthode renommée.
+**R** : Toutes les modifications de code que vous effectuez dans le fichier *UIMapDesigner.cs* sont remplacées chaque fois que vous générez du code dans le **Générateur de test codé de l’interface utilisateur**. Si vous devez modifier une méthode enregistrée, copiez-la dans le fichier *UIMap.cs* et renommez-la. Le *fichier UIMap.cs* peut être utilisé pour remplacer les méthodes et les propriétés dans le fichier *UIMapDesigner.cs.* Supprimez la référence à la méthode d’origine dans le fichier *CodedUITest.cs* et remplacez-la par le nom de la méthode renommée.
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Utiliser l’automatisation de l’interface utilisateur pour tester votre code](../test/use-ui-automation-to-test-your-code.md)
+- [Utilisez l’automatisation de l’interface utilisateur pour tester votre code](../test/use-ui-automation-to-test-your-code.md)
 - [Définir des propriétés Automation uniques pour les contrôles UWP](../test/set-a-unique-automation-property-for-windows-store-controls-for-testing.md)

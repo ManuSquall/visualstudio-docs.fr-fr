@@ -1,5 +1,5 @@
 ---
-title: IDebugModule3 | Microsoft Docs
+title: IDebugModule3 - France Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugModule3 interface
 ms.assetid: 44f8e96e-9c59-4ffc-9a08-9c908a0e4de7
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 582c6fa887062986ccd1b66c7f3466b89407bcca
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 84db1b672a9460ef3809162a2a1433f269796046
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66323755"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80726740"
 ---
 # <a name="idebugmodule3"></a>IDebugModule3
-Cette interface représente un module qui prend en charge d’autres emplacements de symboles et les États JustMyCode.
+Cette interface représente un module qui prend en charge d’autres emplacements de symboles et d’états JustMyCode.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -28,31 +28,31 @@ Cette interface représente un module qui prend en charge d’autres emplacement
 IDebugModule3 : IDebugModule2
 ```
 
-## <a name="notes-for-implementers"></a>Notes de publication pour les implémenteurs
- Le moteur de débogage (dé) implémente cette interface pour prendre en charge d’autres emplacements de symboles et de fonctionner avec les États JustMyCode (voir la [glossaire du débogueur Visual Studio](../../../extensibility/debugger/reference/visual-studio-debugger-glossary.md) pour une définition de « JustMyCode »).
+## <a name="notes-for-implementers"></a>Notes pour les implémenteurs
+ Le moteur de débogé (DE) implémente cette interface pour prendre en charge d’autres emplacements de symboles et pour travailler avec les états JustMyCode (voir le [Visual Studio Debugger Glossary](../../../extensibility/debugger/reference/visual-studio-debugger-glossary.md) pour une définition de "JustMyCode").
 
-## <a name="notes-for-callers"></a>Notes de publication pour les appelants
- Un appel à [GetSymbolSearchInfo](../../../extensibility/debugger/reference/idebugsymbolsearchevent2-getsymbolsearchinfo.md) retourne cette interface. L’envoie DE la [IDebugSymbolSearchEvent2](../../../extensibility/debugger/reference/idebugsymbolsearchevent2.md) interface avec le Gestionnaire de débogage de session (SDM) à l’aide de la [événement](../../../extensibility/debugger/reference/idebugeventcallback2-event.md) (méthode). En outre, un appel à [QueryInterface](/cpp/atl/queryinterface) sur un [IDebugModule2](../../../extensibility/debugger/reference/idebugmodule2.md) interface retourne cette interface.
+## <a name="notes-for-callers"></a>Notes pour les appelants
+ Un appel à [GetSymbolSearchInfo renvoie](../../../extensibility/debugger/reference/idebugsymbolsearchevent2-getsymbolsearchinfo.md) cette interface. Le DE envoie [l’interface IDebugSymbolSearchEvent2](../../../extensibility/debugger/reference/idebugsymbolsearchevent2.md) au gestionnaire de débogé de session (SDM) en utilisant la méthode [Event.](../../../extensibility/debugger/reference/idebugeventcallback2-event.md) En outre, un appel à [QueryInterface](/cpp/atl/queryinterface) sur une interface [IDebugModule2](../../../extensibility/debugger/reference/idebugmodule2.md) renvoie cette interface.
 
 ## <a name="methods-in-vtable-order"></a>Méthodes dans l'ordre Vtable
- Outre les méthodes sur le [IDebugModule2](../../../extensibility/debugger/reference/idebugmodule2.md) interface, cette interface implémente les méthodes suivantes :
+ En plus des méthodes de l’interface [IDebugModule2,](../../../extensibility/debugger/reference/idebugmodule2.md) cette interface met en œuvre les méthodes suivantes :
 
 |Méthode|Description|
 |------------|-----------------|
-|[GetSymbolInfo](../../../extensibility/debugger/reference/idebugmodule3-getsymbolinfo.md)|Retourne une liste de chemins de recherche pour les symboles et les résultats de recherche dans chaque chemin d’accès.|
-|[LoadSymbols](../../../extensibility/debugger/reference/idebugmodule3-loadsymbols.md)|Charge et initialise les symboles pour le module actuel.|
-|[IsUserCode](../../../extensibility/debugger/reference/idebugmodule3-isusercode.md)|Indicateur retourne spécifiant si le module représente le code utilisateur.|
-|[SetJustMyCodeState](../../../extensibility/debugger/reference/idebugmodule3-setjustmycodestate.md)|Spécifie si le module doit être considérée comme code utilisateur, ou non.|
+|[GetSymbolInfo](../../../extensibility/debugger/reference/idebugmodule3-getsymbolinfo.md)|Retourne une liste de chemins recherchés pour les symboles et les résultats de la recherche de chaque chemin.|
+|[LoadSymbols](../../../extensibility/debugger/reference/idebugmodule3-loadsymbols.md)|Charge et initialise les symboles du module actuel.|
+|[IsUserCode](../../../extensibility/debugger/reference/idebugmodule3-isusercode.md)|Retourne le drapeau en précisant si le module représente le code utilisateur.|
+|[SetJustMyCodeState](../../../extensibility/debugger/reference/idebugmodule3-setjustmycodestate.md)|Précise si le module doit être considéré comme un code utilisateur ou non.|
 
 ## <a name="remarks"></a>Notes
- Visual Studio est le consommateur classique de cette interface.
+ Visual Studio est le consommateur typique de cette interface.
 
-## <a name="requirements"></a>Configuration requise
- En-tête : msdbg.h
+## <a name="requirements"></a>Spécifications
+ En-tête: msdbg.h
 
- Espace de noms : Microsoft.VisualStudio.Debugger.Interop
+ Namespace: Microsoft.VisualStudio.Debugger.Interop
 
- Assembly : Microsoft.VisualStudio.Debugger.Interop.dll
+ Assemblage: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>Voir aussi
 - [Interfaces de base](../../../extensibility/debugger/reference/core-interfaces.md)

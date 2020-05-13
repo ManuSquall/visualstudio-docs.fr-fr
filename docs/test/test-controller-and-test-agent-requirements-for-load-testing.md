@@ -10,10 +10,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 39b174b0b134fdfdf26570565aa6aa756ba43c92
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75588640"
 ---
 # <a name="test-controller-and-test-agent-requirements-for-load-testing"></a>Configuration requise du contrôleur de test et de l’agent de test pour le test de charge
@@ -22,21 +22,21 @@ Visual Studio intègre plusieurs types de tests, notamment les tests de performa
 
 [!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
-## <a name="hardware-and-software-requirements"></a>Configurations matérielle et logicielle requises
+## <a name="hardware-and-software-requirements"></a>Configuration matérielle et logicielle requise
 
 À la fois les ordinateurs du contrôleur de test et de l'agent de test ont des configurations matérielle et logicielle requises spécifiques. De plus, pour déployer les ordinateurs des agents de test et du contrôleur de test en plusieurs langues, vous devez planifier la prise en charge de ces langues.
 
-### <a name="hardware-requirements"></a>Configuration matérielle
+### <a name="hardware-requirements"></a>Configuration matérielle requise
 
 Le tableau suivant affiche la configuration matérielle requise recommandée pour le déploiement d'un contrôleur de test et d'agents de test.
 
-|**Configuration**|**Composant**|**Processeur**|**Disque dur**|**Mémoire**|
+|**Configuration**|**Composant**|**Cpu**|**Disque dur**|**Mémoire**|
 |-|-------------------|-|------------|-|
-|< 500 utilisateurs virtuels|Agent de test|2,6 GHz|10 Go|2 Go|
-|< 1 000 utilisateurs virtuels|Agent de test|Biprocesseur, 2,6 GHz|10 Go|2 Go|
-|N x 1 000 utilisateurs virtuels|Agent de test|Évolutivité à N agents avec, chacun, un biprocesseur 2,6 GHz|10 Go|2 Go|
-|\< 30 ordinateurs dans l’environnement de test. Avec agents et serveurs en cours de test.|Contrôleur de test|2,6 GHz|||
-|N x 30 ordinateurs dans l'environnement de test. Avec agents et serveurs en cours de test.|Contrôleur de test|N processeurs 2,6 GHz|||
+|< 500 utilisateurs virtuels|Agent de test|2,6 GHz|10 Go|2 Go|
+|< 1 000 utilisateurs virtuels|Agent de test|Biprocesseur, 2,6 GHz|10 Go|2 Go|
+|N x 1 000 utilisateurs virtuels|Agent de test|Évolutivité à N agents avec, chacun, un biprocesseur 2,6 GHz|10 Go|2 Go|
+|\< 30 ordinateurs dans l’environnement de test. Avec agents et serveurs en cours de test.|Test Controller|2,6 GHz|||
+|N x 30 ordinateurs dans l'environnement de test. Avec agents et serveurs en cours de test.|Test Controller|N processeurs 2,6 GHz|||
 
 > [!NOTE]
 > Le nombre d'utilisateurs virtuels varie considérablement d'un test à l'autre. Cette variation est due en grande partie au *temps de réflexion* ou délai d’utilisateur. Pour plus d’informations, consultez [Modifier les temps de réflexion pour simuler les délais d’interaction humaine avec un site web](../test/edit-think-times-in-load-test-scenarios.md). Dans un test de charge, les tests web sont généralement plus efficaces et génèrent une plus grande charge que les tests unitaires. Les chiffres du tableau précédent s'appliquent aux tests web avec un temps de réflexion de 3 à 5 secondes dans une applications web typique.

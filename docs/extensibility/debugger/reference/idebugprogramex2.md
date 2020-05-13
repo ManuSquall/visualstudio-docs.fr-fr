@@ -1,5 +1,5 @@
 ---
-title: IDebugProgramEx2 | Microsoft Docs
+title: IDebugProgramEx2 - France Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProgramEx2 interface
 ms.assetid: 663359ed-635a-4539-addb-0cc52f19d1bd
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 13a9e44ee2a7782cb804c4e0b6f4279918e7d78e
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: b8961ea105779674aab0b67c9ad6339ce1c282f9
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66325105"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80722334"
 ---
 # <a name="idebugprogramex2"></a>IDebugProgramEx2
-Cette interface permet à la session de débogage manager (SDM) attacher à un programme et obtenir le nœud de programme associé à un programme.
+Cette interface permet au gestionnaire de déboiffés de session (SDM) de s’attacher à un programme et d’obtenir le nœud de programme associé à un programme.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -28,29 +28,29 @@ Cette interface permet à la session de débogage manager (SDM) attacher à un p
 IDebugProgramEx2 : IUnknown
 ```
 
-## <a name="notes-for-implementers"></a>Notes de publication pour les implémenteurs
- Un fournisseur de port personnalisé implémente cette interface sur le même objet que le [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) interface afin de permettre le SDM attacher à un programme, même si en même temps, ce qui permet le fournisseur de port effectuer le suivi de toutes les sessions attaché à la programme. Le fournisseur de port personnalisé peut implémenter cette interface si elle choisit.
+## <a name="notes-for-implementers"></a>Notes pour les implémenteurs
+ Un fournisseur de port personnalisé implémente cette interface sur le même objet que l’interface [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) afin de laisser le SDM s’attacher à un programme tout en permettant au fournisseur de port de suivre toutes les sessions attachées au programme. Le fournisseur de ports personnalisé peut implémenter cette interface s’il le souhaite.
 
-## <a name="notes-for-callers"></a>Notes de publication pour les appelants
- Les appels SDM [QueryInterface](/cpp/atl/queryinterface) sur un `IDebugProgram2` interface pour obtenir cette interface pour effectuer le suivi des sessions qui ont associés à des programmes.
+## <a name="notes-for-callers"></a>Notes pour les appelants
+ Le SDM appelle [QuestionryInterface](/cpp/atl/queryinterface) sur une `IDebugProgram2` interface pour obtenir cette interface pour suivre les sessions qui se sont jointes aux programmes.
 
 ## <a name="methods-in-vtable-order"></a>Méthodes dans l'ordre Vtable
- Le tableau suivant présente les méthodes de `IDebugProgramEx2`.
+ Le tableau suivant montre `IDebugProgramEx2`les méthodes de .
 
 |Méthode|Description|
 |------------|-----------------|
-|[Attacher](../../../extensibility/debugger/reference/idebugprogramex2-attach.md)|Attache un programme à une session.|
+|[Attach](../../../extensibility/debugger/reference/idebugprogramex2-attach.md)|Attache un programme à une session.|
 |[GetProgramNode](../../../extensibility/debugger/reference/idebugprogramex2-getprogramnode.md)|Obtient le nœud de programme associé à un programme.|
 
 ## <a name="remarks"></a>Notes
  Cette interface est privée entre le SDM et le programme.
 
-## <a name="requirements"></a>Configuration requise
- En-tête : Portpriv.h
+## <a name="requirements"></a>Spécifications
+ En-tête: Portpriv.h
 
- Espace de noms : Microsoft.VisualStudio.Debugger.Interop
+ Namespace: Microsoft.VisualStudio.Debugger.Interop
 
- Assembly : Microsoft.VisualStudio.Debugger.Interop.dll
+ Assemblage: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>Voir aussi
 - [Interfaces de base](../../../extensibility/debugger/reference/core-interfaces.md)

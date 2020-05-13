@@ -1,33 +1,33 @@
 ---
-title: Objets | Microsoft Docs
+title: Objets Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - objects, interfaces
 ms.assetid: 8a5ab7a4-3668-4f78-9c08-04c5af7090f2
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 41825004c9a9e8cd5c89f2c3fb7eb08146d70063
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 774a93e1accf67a9d97f00ce3a6dd3339f095d26
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66336281"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80702267"
 ---
 # <a name="objects"></a>Objets
-Les informations de référence suivant expliquent les objets qui sont utilisés pour créer une instance de l’éditeur de texte principal.
+Les informations de référence suivantes expliquent les objets qui sont utilisés pour créer une instance de l’éditeur de texte de base.
 
-## <a name="in-this-section"></a>Dans cette section
-- [Objet VSCodeWindow](../extensibility/vscodewindow-object.md) décrit l’objet de fenêtre de code, une fenêtre de document spécialisé qui peut comprendre une ou plusieurs vues de texte.
+## <a name="in-this-section"></a>Contenu de cette section
+- [Objet VSCodeWindow](../extensibility/vscodewindow-object.md) Décrit l’objet de fenêtre de code, une fenêtre de document spécialisée qui peut inclure une ou plusieurs vues de texte.
 
-- [Objet VSCodeWindowManager](../extensibility/vscodewindowmanager-object.md) décrit l’objet de gestionnaire de fenêtre de code qui est implémentée par le service de langage et est chargé de gérer des ornements.
+- [OBJET VSCodeWindowManager](../extensibility/vscodewindowmanager-object.md) Décrit l’objet de gestionnaire de fenêtre de code qui est implémenté par le service linguistique et est responsable de la gestion des ornements.
 
-- [Objet VSTextBuffer](../extensibility/vstextbuffer-object.md) décrit l’objet de mémoire tampon de texte, qui représente un flux de texte Unicode, les données d’un fichier.
+- [Objet VSTextBuffer](../extensibility/vstextbuffer-object.md) Décrit l’objet tampon de texte, qui représente un flux de texte Unicode, les données d’un fichier.
 
-- [Objet VSTextView](../extensibility/vstextview-object.md) décrit l’affichage de texte, une fenêtre qui permet aux utilisateurs d’afficher et modifier le texte Unicode de la mémoire tampon de texte.
+- [Objet VSTextView](../extensibility/vstextview-object.md) Décrit la vue de texte, une fenêtre qui permet aux utilisateurs d’afficher et de modifier le texte Unicode du tampon de texte.
 
-## <a name="related-sections"></a>Rubriques connexes
-- [Référence de Visual Studio SDK](../extensibility/visual-studio-sdk-reference.md) présente une liste de rubriques de référence.
+## <a name="related-sections"></a>Sections connexes
+- [Référence Visual Studio SDK](../extensibility/visual-studio-sdk-reference.md) Présente une liste de sujets de référence.

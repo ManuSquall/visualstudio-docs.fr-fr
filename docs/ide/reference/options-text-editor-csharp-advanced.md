@@ -10,31 +10,31 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 8f6bd03b9d652909022adab169682160ae541677
-ms.sourcegitcommit: 3b48ce4649d38a7e3b095bd087739d6131e49d1b
+ms.openlocfilehash: d0e04a011612cdebebd244fc061981b713b858a7
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/16/2020
-ms.locfileid: "76124502"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79431486"
 ---
 # <a name="options-text-editor-c-advanced"></a>Options, Éditeur de texte, C#, Avancé
 
-Utilisez la page d’options **Avancé** pour modifier les paramètres de mise en forme de l’éditeur, la refactorisation de code et les commentaires sur la documentation XML pour C#. Pour accéder à cette page d’options, choisissez **Outils** > **Options**, puis **Éditeur de texte** > **C#**  > **Avancé**.
+Utilisez la page d’options **Avancé** pour modifier les paramètres de mise en forme de l’éditeur, la refactorisation de code et les commentaires sur la documentation XML pour C#. Pour accéder à cette page d’options, choisissez **Tools** > **Options,** puis choisissez **Text Editor** > **CMD** > **Advanced**.
 
 > [!NOTE]
 > Toutes les options peuvent ne pas être répertoriées ici.
 
 ## <a name="analysis"></a>Analyse
 
-- Activer l’analyse complète de la solution
+- Analyse de code en direct ou portée d’analyse de fond
 
-   Active l’analyse du code sur tous les fichiers dans la solution, pas simplement les fichiers de code ouverts. Pour plus d’informations, consultez [Analyse complète de la solution](../../code-quality/how-to-enable-and-disable-full-solution-analysis-for-managed-code.md).
+   Configurer la portée d’analyse de fond pour le code géré. Pour plus d’informations, voir [Comment configurer la portée d’analyse de code en direct pour le code géré](../../code-quality/configure-live-code-analysis-scope-managed-code.md).
 
 ## <a name="using-directives"></a>Directives Using
 
 - Placer les directives « System » en premier lors du tri des usings
 
-   Quand elle est sélectionnée, la commande **Supprimer et trier les instructions using** du menu contextuel trie les directives `using` et place les espaces de noms « System » en haut de la liste.
+   Lorsqu’il est sélectionné, la commande Supprimer et Trier `using` les **utilisations** dans le menu à clic droit trie les directives et place les espaces nominaux «Système» en haut de la liste.
 
    Avant le tri :
 
@@ -87,7 +87,7 @@ Utilisez la page d’options **Avancé** pour modifier les paramètres de mise e
    using System.Linq;
    ```
 
-- Suggérer des usings pour les types dans les assemblys .NET Framework
+- Suggérer des utilisations pour les types dans les assemblages cadre .NET
 - Suggérer des usings pour les types dans les packages NuGet
 
    Quand ces options sont sélectionnées, une [Action rapide](../quick-actions.md) est disponible pour installer un package NuGet et ajouter une directive `using` pour les types non référencés.
@@ -100,7 +100,7 @@ Utilisez la page d’options **Avancé** pour modifier les paramètres de mise e
 
    Quand le curseur est positionné à l’intérieur d’un symbole ou que vous cliquez sur un symbole, toutes les instances de ce symbole dans le fichier de code sont surlignées.
 
-## <a name="outlining"></a>mode Plan
+## <a name="outlining"></a>Mode Plan
 
 - Passer en mode Plan à l'ouverture des fichiers
 
@@ -118,7 +118,7 @@ Utilisez la page d’options **Avancé** pour modifier les paramètres de mise e
 
 ## <a name="block-structure-guides"></a>Repères de structure de bloc
 
-Cochez ces cases pour afficher des lignes verticales en pointillés entre accolades ( **{}** ) dans votre code. Cela vous permet de voir facilement les blocs de code pour vos constructions au niveau des déclarations et au niveau du code.
+Sélectionnez ces cases à cocher pour afficher des**{}** lignes verticales pointillées entre les parenthèses bouclées ( ) dans votre code. Cela vous permet de voir facilement les blocs de code pour vos constructions au niveau des déclarations et au niveau du code.
 
 ## <a name="editor-help"></a>Aide de l'éditeur
 
@@ -129,7 +129,7 @@ Cochez ces cases pour afficher des lignes verticales en pointillés entre accola
 ## <a name="see-also"></a>Voir aussi
 
 - [Guide pratique pour insérer des commentaires XML pour la génération de documentation](../../ide/reference/generate-xml-documentation-comments.md)
-- [Commentaires de documentation XML (Guide de programmation C#)](/dotnet/csharp/programming-guide/xmldoc/xml-documentation-comments)
+- [Commentaires de documentation XML (Guide de programmation C#)](/dotnet/csharp/programming-guide/xmldoc/xml-documentation-comments)
 - [Documenter votre code avec des commentaires XML (Guide C#)](/dotnet/csharp/codedoc)
-- [Définir les options d’éditeur spécifiques au langage](../../ide/reference/setting-language-specific-editor-options.md)
+- [Définir des options d’éditeur spécifiques à la langue](../../ide/reference/setting-language-specific-editor-options.md)
 - [C# IntelliSense](../../ide/visual-csharp-intellisense.md)

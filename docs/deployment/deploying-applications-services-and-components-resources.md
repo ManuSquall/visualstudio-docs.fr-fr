@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: b7c322b960360231c2e8a1d2aa1a9920bbcf5521
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
-ms.translationtype: HT
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66263300"
+ms.lasthandoff: 03/20/2020
+ms.locfileid: "79301999"
 ---
 # <a name="overview-of-deployment-in-visual-studio"></a>Vue d’ensemble du déploiement dans Visual Studio
 
@@ -32,7 +32,7 @@ Pour de nombreux types d’application courants, vous pouvez déployer votre app
 
 À partir de Visual Studio, les applications peuvent être publiées directement sur les cibles suivantes :
 
-- [Azure App Service](#azure-app-service)
+- [Service d’application Azure](#azure-app-service)
 - [Machines virtuelles Azure](#azure-virtual-machines)
 - [Système de fichiers](#file-system)
 - [Cibles personnalisées (IIS, FTP, etc.)](#custom-targets-iis-ftp), y compris tous les serveurs web arbitraires.
@@ -79,7 +79,7 @@ Pour plus d’informations, reportez-vous à la [comparaison détaillée](https:
 
 Le déploiement sur le système de fichiers revient à copier les fichiers de votre application dans un dossier spécifique sur votre ordinateur. Ce type de déploiement est souvent utilisé à des fins de test ou pour déployer l’application pour un nombre limité d’utilisateurs si l’ordinateur exécute également un serveur. Si le dossier cible est partagé sur un réseau, le déploiement sur le système de fichiers permet de mettre les fichiers de l’application web à la disposition d’autres utilisateurs qui peuvent ensuite la déployer sur des serveurs spécifiques.
 
-Les ordinateurs locaux qui exécutent un serveur peuvent rendre votre application disponible sur Internet ou un intranet en fonction de sa configuration et des réseaux auxquels il est connecté. (Si vous connectez un ordinateur directement à Internet, protégez-le des menaces de sécurité externes.) Comme vous gérez ces ordinateurs, vous avez un contrôle total sur les configurations matérielles et logicielles.
+Les ordinateurs locaux qui exécutent un serveur peuvent rendre votre application disponible sur Internet ou un intranet en fonction de sa configuration et des réseaux auxquels il est connecté. (Si vous connectez un ordinateur directement à Internet, soyez particulièrement prudent pour le protéger contre les menaces de sécurité externe.) Parce que vous gérez ces machines, vous êtes en contrôle total des configurations logicielles et matérielles.
 
 Notez que, si pour une raison quelconque (par exemple, l’accès à l’ordinateur), vous n’êtes pas en mesure d’utiliser les services cloud comme Azure App Service ou Machines virtuelles Azure, vous pouvez utiliser [Azure Stack](https://azure.microsoft.com/overview/azure-stack/) dans votre centre de données. Azure Stack vous permet de gérer et d’utiliser localement les ressources informatiques grâce à Azure App Service et les Machines virtuelles Azure.
 
@@ -118,7 +118,7 @@ Tutoriels :
 
 - [Déployer une application .NET Core avec l’outil de publication](/dotnet/core/deploying/deploy-with-vs?toc=/visualstudio/deployment/toc.json&bc=/visualstudio/deployment/_breadcrumb/toc.json)
 - [Publier une application ASP.NET Core sur Azure](/aspnet/core/tutorials/publish-to-azure-webapp-using-vs?toc=/visualstudio/deployment/toc.json&bc=/visualstudio/deployment/_breadcrumb/toc.json)
-- [Déploiement dans Visual C++](/cpp/windows/deployment-in-visual-cpp)
+- [Déploiement dans Visual C](/cpp/windows/deployment-in-visual-cpp)
 - [Déployer des applications UWP](/windows/uwp/packaging/packaging-uwp-apps?toc=/visualstudio/deployment/toc.json&bc=/visualstudio/deployment/_breadcrumb/toc.json)
 - [Publier une application Node.js sur Azure à l’aide de Web Deploy](https://github.com/Microsoft/nodejstools/wiki/Publish-to-Azure-Website-using-Web-Deploy?toc=/visualstudio/deployment/toc.json&bc=/visualstudio/deployment/_breadcrumb/toc.json)
 - [Publier une application Python sur Azure App Service](../python/publishing-python-web-applications-to-azure-from-visual-studio.md?toc=/visualstudio/deployment/toc.json&bc=/visualstudio/deployment/_breadcrumb/toc.json)

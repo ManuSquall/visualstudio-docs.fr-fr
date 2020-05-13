@@ -1,6 +1,6 @@
 ---
-title: Expressions dans le débogueur | Microsoft Docs
-ms.date: 02/07/2018
+title: Expressions dans le débruceur Microsoft Docs
+ms.date: 03/02/2020
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.expressions
@@ -19,17 +19,17 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6040988961e918c66ed08e7620607d100b2e07fe
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 4ab66f288ad8442b6f2b5aab3499e2c1f3857632
+ms.sourcegitcommit: 95f26af1da51d4c83ae78adcb7372b32364d8a2b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72736217"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79302167"
 ---
-# <a name="expressions-in-the-visual-studio-debugger"></a>Expressions dans le débogueur Visual Studio
+# <a name="expressions-in-the-visual-studio-debugger"></a>Expressions dans le debugger Visual Studio
 Le débogueur Visual Studio inclut des évaluateurs d’expression qui fonctionnent lorsque vous entrez une expression dans la boîte de dialogue **Espion express** , la fenêtre **Espion** ou la fenêtre **Exécution** . Les évaluateurs d’expression travaillent également dans la fenêtre **Points d’arrêt** et à beaucoup d’autres emplacements du débogueur.
 
-Les sections suivantes décrivent les limitations de l’évaluation des expressions pour les langages pris en charge par Visual Studio.
+Les sections suivantes décrivent les limites de l’évaluation d’expression pour les langues prises en charge par Visual Studio.
 
 ## <a name="f-expressions-are-not-supported"></a>Les expressions F# ne sont pas prises en charge.
 Les expressions F# ne sont pas reconnues Si vous déboguez du code F#, vous devez traduire vos expressions en syntaxe C# avant d’introduire les expressions dans une boîte de dialogue ou fenêtre de débogueur. Quand vous traduisez des expressions de F# en C#, gardez à l’esprit que C# utilise l’opérateur `==` pour tester l’égalité, tandis que F# utilise un seul `=`.
@@ -84,7 +84,7 @@ int main()
 
 ```
 
-### <a name="BKMK_Using_debugger_intrinisic_functions_to_maintain_state"></a> Utilisation de fonctions intrinsèques du débogueur pour maintenir l’état
+### <a name="using-debugger-intrinsic-functions-to-maintain-state"></a><a name="BKMK_Using_debugger_intrinisic_functions_to_maintain_state"></a>Utilisation de fonctions intrinsèques de débbugger pour maintenir l’état
 Les fonctions intrinsèques du débogueur vous permettent d’appeler certaines fonctions C/C++ dans les expressions sans modifier l’état de l’application.
 
 Fonctions intrinsèques du débogueur :
@@ -97,14 +97,14 @@ Fonctions intrinsèques du débogueur :
 
   Les fonctions intrinsèques du débogueur peuvent également rendre l’évaluation des expressions plus pratique. Par exemple, il est beaucoup plus facile d’écrire `strncmp(str, "asd")` dans une condition de point d’arrêt que `str[0] == 'a' && str[1] == 's' && str[2] == 'd'`. )
 
-|Zone|Fonctions intrinsèques|
+|Domaine|Fonctions intrinsèques|
 |----------|-------------------------|
-|**Longueur de la chaîne**|strlen, wcslen, strnlen, wcsnlen|
-|**Comparaison de chaînes**|strcmp, wcscmp, stricmp, _stricmp, _strcmpi, wcsicmp, _wcscmpi, _wcsnicmp, strncmp, wcsncmp, strnicmp, wcsnicmp|
-|**Recherche de chaîne**|strchr, wcschr, strstr, wcsstr|
-|**Win32**|GetLastError(), TlsGetValue()|
-|**Windows 8**|WindowsGetStringLen(), WindowsGetStringRawBuffer()<br /><br /> Ces fonctions requièrent que le processus en cours de débogage s’exécute sur Windows 8. Le débogage des fichiers dump générés à partir d’un appareil Windows 8 requiert également que l’ordinateur Visual Studio exécute Windows 8. Toutefois, si vous déboguez un appareil Windows 8 à distance, l’ordinateur Visual Studio peut exécuter Windows 7.|
-|**Divers**|__log2<br /><br /> Retourne le logarithme base 2 d’un entier spécifié, arrondi à l’entier inférieur le plus proche.|
+|**Longueur de la chaîne**|[strlen, wcslen](https://docs.microsoft.com/cpp/c-runtime-library/reference/strlen-wcslen-mbslen-mbslen-l-mbstrlen-mbstrlen-l), [strnlen, wcsnlen](https://docs.microsoft.com/cpp/c-runtime-library/reference/strnlen-strnlen-s)|
+|**Comparaison de chaînes**|[strcmp, wcscmp](https://docs.microsoft.com/cpp/c-runtime-library/reference/strcmp-wcscmp-mbscmp), [stricmp, wcsicmp](https://docs.microsoft.com/cpp/c-runtime-library/reference/stricmp-wcsicmp), [_stricmp, _strcmpi, _wcsicmp, _wcscmpi](https://docs.microsoft.com/cpp/c-runtime-library/reference/stricmp-wcsicmp-mbsicmp-stricmp-l-wcsicmp-l-mbsicmp-l), [strncmp, wcsncmp](https://docs.microsoft.com/cpp/c-runtime-library/reference/strncmp-wcsncmp-mbsncmp-mbsncmp-l), [strnicmp, wcsnicmp](https://docs.microsoft.com/cpp/c-runtime-library/reference/strnicmp-wcsnicmp), [_strnicmp, _wcsnicmp](https://docs.microsoft.com/cpp/c-runtime-library/reference/strnicmp-wcsnicmp-mbsnicmp-strnicmp-l-wcsnicmp-l-mbsnicmp-l)|
+|**Recherche de chaîne**|[strchr, wcschr](https://docs.microsoft.com/cpp/c-runtime-library/reference/strchr-wcschr-mbschr-mbschr-l), [memchr, wmemchr](https://docs.microsoft.com/cpp/c-runtime-library/reference/memchr-wmemchr), [strstr, wcsstr](https://docs.microsoft.com/cpp/c-runtime-library/reference/strstr-wcsstr-mbsstr-mbsstr-l)|
+|**Win32**|[CoDecodeProxy](https://docs.microsoft.com/windows/win32/api/combaseapi/nf-combaseapi-codecodeproxy), [DecodePointer](https://docs.microsoft.com/previous-versions/bb432242%28v%3dvs.85%29), [GetLastError](https://docs.microsoft.com/windows/win32/api/errhandlingapi/nf-errhandlingapi-getlasterror), [TlsGetValue](https://docs.microsoft.com/windows/win32/api/processthreadsapi/nf-processthreadsapi-tlsgetvalue)|
+|**Windows 8**|[RoInspectCapturedStackBackTrace](https://docs.microsoft.com/windows/win32/api/roerrorapi/nf-roerrorapi-roinspectcapturedstackbacktrace), [WindowsCompareStringOrdinal](https://docs.microsoft.com/windows/win32/api/winstring/nf-winstring-windowscomparestringordinal), [WindowsGetStringLen](https://docs.microsoft.com/windows/win32/api/winstring/nf-winstring-windowsgetstringlen), [WindowsGetStringRawBuffer](https://docs.microsoft.com/windows/win32/api/winstring/nf-winstring-windowsgetstringrawbuffer)<br /><br /> Ces fonctions requièrent que le processus en cours de débogage s’exécute sur Windows 8. Le débogage des fichiers dump générés à partir d’un appareil Windows 8 requiert également que l’ordinateur Visual Studio exécute Windows 8. Toutefois, si vous déboguez un appareil Windows 8 à distance, l’ordinateur Visual Studio peut exécuter Windows 7.|
+|**Divers**|__log2 // Retourne la base de bille 2 d’un intégrant spécifié, arrondi à l’intégrer inférieur le plus proche.<br /><br />__findNonNull, DecodeHString, DecodeWinRTRestrictedException, DynamicCast, DynamicMemberLookup, GetEnvBlockLength<br /><br />Stdext_HashMap_Int_OperatorBracket_idx, Std_UnorderedMap_Int_OperatorBracket_idx<br /><br />ConcurrencyArray_OperatorBracket_idx // Concurrency::array<>::operator[index<>] and operator (index<>)<br /><br />ConcurrencyArray_OperatorBracket_int // Concurrency::array<>::operator (int, int, ...)<br /><br />ConcurrencyArray_OperatorBracket_tidx // Concurrency::array<>::operator[tiled_index<>] and operator(tiled_index<>)<br /><br />ConcurrencyArrayView_OperatorBracket_idx // Concurrency::array_view<>::opérateur[index<>] and operator (index<>)<br /><br />ConcurrencyArrayView_OperatorBracket_int // Concurrency::array_view<>::operator (int, int, ...)<br /><br />ConcurrencyArrayView_OperatorBracket_tidx // Concurrency::array_view<>::opérateur[tiled_index<>] et opérateur (tiled_index<>)<br /><br />TreeTraverse_Init // Initialise un nouveau traversal d’arbres<br /><br />TreeTraverse_Next // Retourne les nœuds dans un arbre<br /><br />TreeTraverse_Skip // Skips noeuds dans un arbre en attente traversal '|
 
 ## <a name="ccli---unsupported-expressions"></a>Expressions non prises en charge en C++/CLI
 
@@ -121,7 +121,7 @@ Fonctions intrinsèques du débogueur :
 ## <a name="c---unsupported-expressions"></a>Expressions non prises en charge en C#
 
 ### <a name="dynamic-objects"></a>Objets dynamiques
-Vous pouvez utiliser des variables dans les expressions du débogueur qui sont typées statiquement comme dynamiques. Quand des objets qui implémentent <xref:System.Dynamic.IDynamicMetaObjectProvider> sont évalués dans la Fenêtre Espion, un nœud d’affichage dynamique est ajouté. Le nœud Affichage dynamique affiche les membres de l’objet, mais n’autorise pas la modification des valeurs des membres.
+Vous pouvez utiliser des variables dans les expressions du débogueur qui sont typées statiquement comme dynamiques. Lorsque les <xref:System.Dynamic.IDynamicMetaObjectProvider> objets qui implémentent sont évalués dans la fenêtre Watch, un nœud Dynamic View est ajouté. Le nœud Affichage dynamique affiche les membres de l’objet, mais n’autorise pas la modification des valeurs des membres.
 
 Les fonctionnalités suivantes des objets dynamiques ne sont pas prises en charge :
 
@@ -205,7 +205,7 @@ Vous ne pouvez pas déclarer de nouvelles variables explicites dans les fenêtre
 - Mots clés de niveau espace de noms ou module, comme `End Sub` ou `Module`.
 
 ## <a name="see-also"></a>Voir aussi
-- [Spécificateurs de format en C++](../debugger/format-specifiers-in-cpp.md)
-- [Opérateur de contexte (C++)](../debugger/context-operator-cpp.md)
-- [Spécificateurs de format en C++](../debugger/format-specifiers-in-csharp.md)
+- [Spécifications de format dans C](../debugger/format-specifiers-in-cpp.md)
+- [Context Operator (C++)](../debugger/context-operator-cpp.md)
+- [Spécifications de format en C #](../debugger/format-specifiers-in-csharp.md)
 - [Pseudo-variables](../debugger/pseudovariables.md)

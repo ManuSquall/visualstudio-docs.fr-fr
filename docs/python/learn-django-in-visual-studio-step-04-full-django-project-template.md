@@ -12,15 +12,15 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: c778d830b20797962306700a5af938eb3a3bb142
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "62961680"
 ---
-# <a name="step-4-use-the-full-django-web-project-template"></a>Étape 4 : Utiliser le modèle de projet web Django complet
+# <a name="step-4-use-the-full-django-web-project-template"></a>Étape 4 : Utiliser le modèle de projet web Django complet
 
-**Étape précédente : [Prendre en charge les fichiers statiques, ajouter des pages et utiliser l’héritage du modèle](learn-django-in-visual-studio-step-03-serve-static-files-and-add-pages.md)**
+**Étape précédente : [servir les fichiers statiques, ajouter des pages et utiliser l’héritage du modèle](learn-django-in-visual-studio-step-03-serve-static-files-and-add-pages.md)**
 
 Maintenant que vous avez exploré les principes de base de Django en créant une application sur le modèle « Projet web Django vide » dans Visual Studio, vous pouvez facilement comprendre l’application complète qui est produite par le modèle « Projet web Django ».
 
@@ -33,21 +33,21 @@ Dans cette étape vous pouvez désormais :
 
 Le modèle fournit également l’authentification de base, traitée à l’étape 5.
 
-## <a name="step-4-1-create-a-project-from-the-template"></a>Étape 4-1 : Créer un projet à partir du modèle
+## <a name="step-4-1-create-a-project-from-the-template"></a>Étape 4-1 : créer un projet à partir du modèle
 
-1. Dans Visual Studio, accédez à **Explorateur de solutions**, cliquez avec le bouton droit sur la solution **LearningDjango** créée précédemment dans ce tutoriel, puis sélectionnez **Ajouter** > **Nouveau projet**. (Ou bien, si vous souhaitez utiliser une nouvelle solution, sélectionnez **Fichier** > **Nouveau** > **Projet** à la place.)
+1. Dans Visual Studio, accédez à **Explorateur de solutions**, cliquez avec le bouton droit sur la solution **LearningDjango** créée précédemment dans ce tutoriel, puis sélectionnez **Ajouter** > **Nouveau projet**. (Alternativement, si vous voulez utiliser une nouvelle solution, sélectionnez **Fichier** > **Nouveau** > **Projet** à la place.)
 
 1. Dans la boîte de dialogue Nouveau projet, recherchez et sélectionnez le modèle **Projet Web Django**, appelez le projet « DjangoWeb » et sélectionnez **OK**.
 
 1. Comme le modèle inclut à nouveau un fichier *requirements.txt*, Visual Studio vous demande où installer ces dépendances. Choisissez l’option, **Installer dans un environnement virtuel** et dans la boîte de dialogue **Ajouter un environnement virtuel**, sélectionnez **Créer** pour accepter les valeurs par défaut.
 
-1. Une fois que Visual Studio a terminé la configuration de l’environnement virtuel, suivez les instructions du fichier *readme.html* qui s’affiche pour créer un superutilisateur Django (c’est-à-dire un administrateur). Cliquez simplement avec le bouton de droite sur le projet Visual Studio et sélectionnez la commande **Python** > **Django - Créer un superutilisateur**, puis suivez les invites. Veillez à enregistrer votre nom d’utilisateur et mot de passe lorsque vous l’utilisez en exerçant les fonctionnalités d’authentification de l’application.
+1. Une fois que Visual Studio a terminé la configuration de l’environnement virtuel, suivez les instructions du fichier *readme.html* qui s’affiche pour créer un superutilisateur Django (c’est-à-dire un administrateur). Il suffit de cliquer sur le projet Visual Studio et de sélectionner la commande **Python** > **Django Créer Superuser,** puis suivez les invites. Veillez à enregistrer votre nom d’utilisateur et mot de passe lorsque vous l’utilisez en exerçant les fonctionnalités d’authentification de l’application.
 
-1. Définissez le projet **DjangoWeb** selon la valeur par défaut pour la solution Visual Studio en cliquant avec le bouton droit sur ce projet dans **Explorateur de solutions** et en sélectionnant **Définir en tant que projet de start-up**. Le projet de démarrage affiché en gras est ce qui est exécuté lorsque vous démarrez le débogueur.
+1. Définissez le projet **DjangoWeb** selon la valeur par défaut pour la solution Visual Studio en cliquant avec le bouton droit sur ce projet dans **Explorateur de solutions** et en sélectionnant **Définir en tant que projet de start-up**. Le projet de start-up, affiché en gras est ce qui est exécuté lorsque vous démarrez le débogueur.
 
     ![Explorateur de solutions affichant le projet DjangoWeb en tant que projet de start-up](media/django/step04-second-project-in-solution-set-as-startup-project.png)
 
-1. Sélectionnez **Déboguer** > **Démarrer le débogage** (**F5**) ou utilisez le bouton **Serveur web** dans la barre d’outils pour exécuter le serveur :
+1. Sélectionnez **Debug** > **Start Debugging** (**F5**) ou utilisez le bouton **Serveur Web** sur la barre d’outils pour faire fonctionner le serveur :
 
     ![Exécuter le bouton de la barre d’outils du serveur Web dans Visual Studio](media/django/run-web-server-toolbar-button.png)
 
@@ -73,11 +73,11 @@ Au niveau le plus large, le modèle « Projet Web de Django » crée la struct
   - *requirements.txt*, qui contient une dépendance sur Django 1.x.
   - *readme.html*, un fichier qui s’affiche dans Visual Studio après avoir créé le projet. Comme indiqué dans la section précédente, suivez les instructions suivantes pour créer un compte de superutilisateur (administrateur) pour l’application.
 - Le dossier *app* contient tous les fichiers d’application, y compris les affichages, modèles, tests, formulaires et fichiers statiques (voir l’étape 4-2). En règle générale, vous renommez ce dossier pour utiliser un nom d’application plus significatif.
-- Le dossier *DjangoWeb* (projet Django) contient les fichiers de projet Django typiques : *\_\_init\_\_.py*, *settings.py*, *urls.py* et *wsgi.py*. À l’aide du modèle de projet, *settings.py* est déjà configuré pour l’application et le fichier de base de données, et *urls.py* est déjà configuré avec des routes pour toutes les pages d’application, y compris le formulaire de connexion.
+- Le dossier *DjangoWeb* (projet Django) contient les fichiers typiques du projet Django : * \_ \_\_\_init .py*, *settings.py*, *urls.py*, et *wsgi.py*. À l’aide du modèle de projet, *settings.py* est déjà configuré pour l’application et le fichier de base de données, et *urls.py* est déjà configuré avec des routes pour toutes les pages d’application, y compris le formulaire de connexion.
 
-### <a name="question-is-it-possible-to-share-a-virtual-environment-between-visual-studio-projects"></a>Question : J'utilise un certificat X.509 avec mon service et j'obtiens une System.Security.Cryptography.CryptographicException. Est-il possible de partager un environnement virtuel entre des projets Visual Studio ?
+### <a name="question-is-it-possible-to-share-a-virtual-environment-between-visual-studio-projects"></a>Question : est-il possible de partager un environnement virtuel entre des projets Visual Studio ?
 
-Réponse : Oui, mais pour ce faire, gardez à l’esprit que différents projets sont susceptibles d’utiliser différents packages au fil du temps et par conséquent, un environnement virtuel partagé doit contenir tous les packages pour tous les projets qui l’utilisent.
+Réponse : oui, mais pour ce faire, gardez à l’esprit que différents projets sont susceptibles d’utiliser différents packages au fil du temps et par conséquent, un environnement virtuel partagé doit contenir tous les packages pour tous les projets qui l’utilisent.
 
 Néanmoins, pour utiliser un environnement virtuel existant, procédez comme suit :
 
@@ -85,7 +85,7 @@ Néanmoins, pour utiliser un environnement virtuel existant, procédez comme sui
 1. Dans **Explorateur de solutions**, cliquez avec le bouton de droite sur le nœud **Environnements Python** et sélectionnez **Ajouter un environnement virtuel existant**.
 1. Accédez au dossier contenant l’environnement virtuel et sélectionnez-le, puis sélectionnez **OK**.
 
-## <a name="step-4-2-understand-the-views-and-page-templates-created-by-the-project-template"></a>Étape 4-2 : Comprendre les vues et les modèles de pages créés par le modèle de projet
+## <a name="step-4-2-understand-the-views-and-page-templates-created-by-the-project-template"></a>Étape 4-2 : comprendre les affichages et les modèles de page créés par le modèle de projet
 
 Comme vous pouvez le constater lors de l’exécution du projet, l’application contient trois vues : Accueil, À propos et Contact. Le code de ces affichages se trouve dans le dossier *app/views*. Chaque fonction de l’affichage appelle simplement `django.shortcuts.render` avec le chemin d’accès d’un modèle et un objet de dictionnaire simple. Par exemple, la page À propos est gérée par la fonction `about` :
 
@@ -159,15 +159,15 @@ Les modèles de page individuelle *about.html*, *contact.html* et *index.html* �
 {% endblock %}
 ```
 
-*index.html* et *contact.html* utilisent la même structure et fournissent le contenu le plus long dans le bloc « contenu ».
+*index.html* et *contact.html* utilisent la même structure et fournissent le contenu le plus long dans le bloc « content ».
 
 Dans le dossier *templates/app* se trouve également une quatrième page *login.html*, avec *loginpartial.html* qui est importée dans *layout.html* à l’aide de `{% include %}`. Ces fichiers de modèle sont décrits à l’étape 5 sur l’authentification.
 
-### <a name="question-can--block--and--endblock--be-indented-in-the-django-page-template"></a>Question : J'utilise un certificat X.509 avec mon service et j'obtiens une System.Security.Cryptography.CryptographicException. {% block %} et {% endblock %} peuvent-ils être mis en retrait dans le modèle de page Django ?
+### <a name="question-can--block--and--endblock--be-indented-in-the-django-page-template"></a>Question : {% block %} et {% endblock %} peuvent-ils être mis en retrait dans le modèle de page Django ?
 
-Réponse : Oui, les modèles de pages Django fonctionnent bien si vous mettez en retrait des balises de bloc, par exemple pour les aligner dans leurs éléments parents appropriés. Ils ne sont pas mis en retrait dans les modèles de page générés par le modèle de projet Visual Studio afin que vous puissiez voir clairement où ils sont placés.
+Réponse : oui, les modèles de page Django fonctionnent bien si vous mettez en retrait des balises de bloc, par exemple pour les aligner dans leurs éléments parents appropriés. Ils ne sont pas mis en retrait dans les modèles de page générés par le modèle de projet Visual Studio afin que vous puissiez voir clairement où ils sont placés.
 
-## <a name="step-4-3-understand-the-url-routing-created-by-the-template"></a>Étape 4-3 : Comprendre le routage d’URL créé par le modèle
+## <a name="step-4-3-understand-the-url-routing-created-by-the-template"></a>Étape 4-3 : comprendre le routage d’URL créé par le modèle
 
 Le fichier *urls.py* du projet Django, tel que créé par le modèle « Projet Web Django », contient le code suivant :
 
@@ -206,9 +206,9 @@ urlpatterns = [
 
 Les trois premiers modèles de l’URL mappent directement aux affichages `home`, `contact` et `about` dans le fichier *views.py* de l’application. Les modèles `^login/$` et `^logout$`, d’autre part, utilisent des affichages Django intégrés au lieu des affichages définis par l’application. Les appels à la méthode `url` incluent également des données supplémentaires pour personnaliser l’affichage. L’étape 5 explore ces appels.
 
-### <a name="question-in-the-project-i-created-why-does-the-about-url-pattern-uses-about-instead-of-about-as-shown-here"></a>Question : J'utilise un certificat X.509 avec mon service et j'obtiens une System.Security.Cryptography.CryptographicException. Dans le projet que j’ai créé, pourquoi le modèle d’URL « À propos » utilise-t-il '^about' plutôt que '^about$' comme indiqué ici ?
+### <a name="question-in-the-project-i-created-why-does-the-about-url-pattern-uses-about-instead-of-about-as-shown-here"></a>Question : Dans le projet que j’ai créé, pourquoi le modèle d’URL « À propos » utilise-t-il '^about' plutôt que '^about$' comme indiqué ici ?
 
-Réponse : L’absence du symbole de fin « $ » dans l’expression régulière est une simple omission dans de nombreuses versions du modèle de projet. Le modèle d’URL fonctionne parfaitement pour une page nommée « à propos », mais sans le symbole de fin « $ » le modèle d’URL correspond également aux URL comme « about=django », « about09876 », « aboutoflaughter », etc. Le symbole de fin « $ » est affiché ici pour créer un modèle d’URL qui correspond *uniquement* à « à propos ».
+Réponse : l’absence du symbole de fin « $ » dans l’expression régulière est une simple omission dans de nombreuses versions du modèle de projet. Le modèle d’URL fonctionne parfaitement pour une page nommée « à propos », mais sans le symbole de fin « $ » le modèle d’URL correspond également aux URL comme « about=django », « about09876 », « aboutoflaughter », etc. Le symbole de fin « $ » est affiché ici pour créer un modèle d’URL qui correspond *uniquement* à « à propos ».
 
 ## <a name="next-steps"></a>Étapes suivantes
 
@@ -217,6 +217,6 @@ Réponse : L’absence du symbole de fin « $ » dans l’expression réguli�
 
 ## <a name="go-deeper"></a>Approfondir la question
 
-- [Déployer l’application web sur Azure App Service](publishing-python-web-applications-to-azure-from-visual-studio.md)
+- [Déployer l’application web sur Azure App Service.](publishing-python-web-applications-to-azure-from-visual-studio.md)
 - [Écrire votre première application Django, partie 4 - formulaires et affichages génériques](https://docs.djangoproject.com/en/2.0/intro/tutorial04/) (docs.djangoproject.com)
-- Code source du tutoriel sur GitHub : [Microsoft/python-sample-vs-learning-django](https://github.com/Microsoft/python-sample-vs-learning-django)
+- Code source du tutoriel sur GitHub : [Microsoft/python-sample-vs-learning-django](https://github.com/Microsoft/python-sample-vs-learning-django)

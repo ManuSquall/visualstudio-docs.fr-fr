@@ -6,10 +6,10 @@ ms.author: dominicn
 ms.date: 02/12/2019
 ms.assetid: 339F6051-5F90-48DC-8237-EBBC8A03A32B
 ms.openlocfilehash: bba9d3490c12e661277b82dd08d6d7862ec3a8aa
-ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/10/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "74983458"
 ---
 # <a name="xamarin-mobile-app-development"></a>Développement d’applications mobiles Xamarin
@@ -45,7 +45,7 @@ Pour plus d’informations sur l’écriture d’applications Mac avec Visual St
 > [!Note]
 > Ces produits peuvent être utilisés seulement avec un abonnement Visual Studio Enterprise.
 
-### <a name="profiler"></a>Générateur de profils
+### <a name="profiler"></a>Profileur
 
 Xamarin Profiler a trois instruments disponibles pour le profilage. Le guide [Introduction to the Xamarin Profiler](/xamarin/tools/profiler/index?tabs=macos) explore ce que ces instruments mesurent et comment ils analysent votre application, et explique la signification des données présentées sur chaque écran.
 

@@ -11,13 +11,13 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 2090eeac014feb6a3a4308c920140d7934d3b0e4
-ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
-ms.translationtype: HT
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/29/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "68606010"
 ---
-# <a name="options-dialog-box-text-editor--javascripttypescript--code-validation"></a>Boîte de dialogue Options : Éditeur de texte \> JavaScript/TypeScript \> Validation du code
+# <a name="options-dialog-box-text-editor--javascripttypescript--code-validation"></a>Boîte de dialogue d’options : Éditeur de \> texte JavaScript/TypeScript \> Code Validation
 
 Utilisez la page **Validation du code** de la boîte de dialogue **Options** pour modifier les paramètres qui affectent la façon dont JavaScript gère les erreurs. Vous pouvez accéder à la page **Validation du code** en choisissant **Outils** > **Options** dans la barre de menus, puis en développant **Éditeur de texte** > **JavaScript/TypeScript** > **Validation du code**.
 
@@ -29,7 +29,7 @@ La page **Validation du code** contient les sections suivantes :
 
 Vous pouvez utiliser ces options pour définir comment l'éditeur JavaScript doit valider la syntaxe dans votre document.
 
-### <a name="uielement-list"></a>Liste UIElement
+### <a name="uielement-list"></a>Liste des éléments de l'interface utilisateur
 
 **Activer les erreurs JavaScript**
 

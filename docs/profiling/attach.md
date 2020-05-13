@@ -10,14 +10,14 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 634169607a7d581de1b1332d78e8d5abde1a722e
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74773737"
 ---
-# <a name="attach"></a>Attach
-L’option **Attach** de *VSPerfCmd.exe* démarre le profilage par échantillonnage du processus en cours d’exécution spécifié par le PID (ID de processus).
+# <a name="attach"></a>Joindre
+*L’option VSPerfCmd.exe* **Attach** commence le profilage de l’échantillon du processus d’exécution spécifié par l’ID processus (PID).
 
  Pour utiliser l’option **Attach**, vous devez spécifier la méthode **Sample** dans l’option Start.
 
@@ -30,7 +30,7 @@ L’option **Attach** de *VSPerfCmd.exe* démarre le profilage par échantillonn
 VSPerfCmd.exe /Attach:ProcessID [Options]
 ```
 
-#### <a name="parameters"></a>Parameters
+#### <a name="parameters"></a>Paramètres
  `ProcessID` PID (ID de processus) du processus en cours d’exécution. Le PID d’un processus en cours d’exécution est répertorié sous l’onglet Processus du Gestionnaire des tâches de Windows.
 
 ## <a name="valid-options"></a>Options valides
@@ -38,18 +38,18 @@ VSPerfCmd.exe /Attach:ProcessID [Options]
 
  **Crosssession** Active le profilage d’applications dans d’autres sessions que l’ouverture de session. Obligatoire si l’option **Start** a été spécifiée avec l’option **Crosssession**.
 
- **Démarrer :** `Method` initialise la session de profileur de ligne de commande et définit la méthode de profilage spécifiée.
+ **Démarrage :** `Method` Initialise la session de profileur de ligne de commande et définit la méthode de profilage spécifiée.
 
  **TargetCLR** Spécifie la version du CLR (Common Language Runtime) du .NET Framework à profiler quand plusieurs versions sont chargées dans une session de profilage. Par défaut, la première version chargée est profilée.
 
  **GlobalOn GlobalOff** Reprend (**GlobalOn**) ou interrompt (**GlobalOff**) le profilage, mais ne met pas fin à la session de profilage.
 
- **ProcessOn :** `PID` **ProcessOff :** `PID` reprend (**ProcessOn**) ou suspend (**ProcessOff**) le profilage pour le processus spécifié.
+ **ProcessOn:** `PID` **ProcessOff:** `PID` Resumes (**ProcessOn**) ou pauses (**ProcessOff**) profilage pour le processus spécifié.
 
 ## <a name="interval-options"></a>Options pour l’intervalle
  Une des options d’intervalle d’échantillonnage suivantes peut être spécifiée sur la ligne de commande d’Attach. L’intervalle d’échantillonnage par défaut est de 10 000 000 de cycles d’horloge du processeur.
 
- **Timer**[ **:** `Cycles`]**PF**[ **:** `Events`]**Sys**[<strong>:</strong>Events]**Counter**[ **:** `Name`,`Reload`,`FriendlyName`] Spécifie le nombre et le type de l’intervalle d’échantillonnage.
+ **Timer**[**:**`Cycles`]**PF**[**:**`Events`]**Sys**`FriendlyName`[<strong>:</strong>Events]**Counter****[:**`Name`,`Reload`, ] Specifie le nombre et le type de l’intervalle d’échantillonnage.
 
 - **Timer** : échantillonne tous les `Cycles` cycles d’horloge du processeur. Si `Cycles` n’est pas spécifié, la valeur utilisée est de 10 000 000 cycles.
 
@@ -59,7 +59,7 @@ VSPerfCmd.exe /Attach:ProcessID [Options]
 
 - **Counter** : échantillonne tous les nombres de `Reload` du compteur de performance de l’UC spécifié par `Name`. En option, `FriendlyName` peut spécifier une chaîne à utiliser comme en-tête de colonne dans les rapports du profileur.
 
-## <a name="example"></a>Exemple
+## <a name="example"></a> Exemple
  Cet exemple montre comment s’attacher à une instance en cours d’exécution d’une application avec l’ID de processus 12345.
 
 ```cmd
@@ -68,7 +68,7 @@ VSPerfCmd.exe /Attach:12345
 ```
 
 ## <a name="see-also"></a>Voir aussi
-- [VSPerfCmd](../profiling/vsperfcmd.md)
+- [Vsperfcmd](../profiling/vsperfcmd.md)
 - [Profiler des applications autonomes](../profiling/command-line-profiling-of-stand-alone-applications.md)
-- [Profiler des applications web ASP.NET](../profiling/command-line-profiling-of-aspnet-web-applications.md)
+- [Profil ASP.NET applications Web](../profiling/command-line-profiling-of-aspnet-web-applications.md)
 - [Profiler des services](../profiling/command-line-profiling-of-services.md)

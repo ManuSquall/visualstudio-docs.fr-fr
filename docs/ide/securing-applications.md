@@ -12,13 +12,13 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 87f06746901baaaf14f91032f8968a0d99fc20c2
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75595447"
 ---
-# <a name="secure-applications"></a>Sécuriser des applications
+# <a name="secure-applications"></a>Sécuriser les applications
 
 Vous devez prendre en compte la sécurité dans tous les aspects du développement de votre application, de la conception jusqu'au déploiement. Commencez par exécuter Visual Studio avec le niveau de sécurité le plus élevé possible. Consultez [Autorisations utilisateur](../ide/user-permissions-and-visual-studio.md).
 
@@ -41,8 +41,8 @@ La sécurité est également un facteur important à prendre en compte dans le p
 ## <a name="see-also"></a>Voir aussi
 
 - [Sécurité dans .NET](/dotnet/standard/security/index)
-- [Sécurité Azure](/azure/security/)
+- [Sécurité Azure](/azure/security/)
 - [Guide de sécurité de Windows 10 Mobile](/windows/security/threat-protection/windows-10-mobile-security-guide)
 - [Fonctionnalités de sécurité de la plateforme Apache Cordova](/visualstudio/cross-platform/tools-for-cordova/security/best-practices?view=toolsforcordova-2017)
 - [Sécurité ASP.NET Core](/aspnet/core/security/?view=aspnetcore-2.1)
-- [Sécurité de Windows Forms](/dotnet/framework/winforms/windows-forms-security)
+- [Windows forme la sécurité](/dotnet/framework/winforms/windows-forms-security)

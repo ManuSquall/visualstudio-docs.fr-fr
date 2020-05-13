@@ -1,5 +1,5 @@
 ---
-title: PENDING_BP_STATE_FLAGS | Microsoft Docs
+title: PENDING_BP_STATE_FLAGS Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - PENDING_BP_STATE_FLAGS enumeration
 ms.assetid: 85522449-3fd8-4da5-b0fe-a43160e0c33b
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: f3b51d7c30650087c6611b79ec0b91e2a6bb83b1
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 6da1a956ac958a95dd0c433283a71af0a9b29d1e
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66349892"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80714091"
 ---
-# <a name="pendingbpstateflags"></a>PENDING_BP_STATE_FLAGS
-Spécifie les indicateurs d’état de point d’arrêt en attente.
+# <a name="pending_bp_state_flags"></a>PENDING_BP_STATE_FLAGS
+Spécifie les drapeaux d’état de point d’arrêt en attente.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -43,19 +43,19 @@ public enum enum_PENDING_BP_STATE_FLAGS { 
 ```
 
 ## <a name="fields"></a>Champs
- `PBPSF_NONE` Espace réservé.
+ `PBPSF_NONE`Espace réservé.
 
- `PBPSF_VIRTUALIZED` Spécifie un virtualisé en attente de point d’arrêt, ce qui doit être lié à chaque chargement de nouveau code.
+ `PBPSF_VIRTUALIZED`Spécifie un point d’arrêt virtualisé en attente, qui doit être lié chaque fois que le nouveau code est chargé.
 
 ## <a name="remarks"></a>Notes
- Utilisé pour le `flags` membre de la [PENDING_BP_STATE_INFO](../../../extensibility/debugger/reference/pending-bp-state-info.md) structure.
+ Utilisé pour `flags` le membre de la structure [PENDING_BP_STATE_INFO.](../../../extensibility/debugger/reference/pending-bp-state-info.md)
 
-## <a name="requirements"></a>Configuration requise
- En-tête : msdbg.h
+## <a name="requirements"></a>Spécifications
+ En-tête: msdbg.h
 
- Espace de noms : Microsoft.VisualStudio.Debugger.Interop
+ Namespace: Microsoft.VisualStudio.Debugger.Interop
 
- Assembly : Microsoft.VisualStudio.Debugger.Interop.dll
+ Assemblage: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>Voir aussi
 - [Énumérations](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)

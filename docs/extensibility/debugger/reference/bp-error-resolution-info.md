@@ -1,5 +1,5 @@
 ---
-title: BP_ERROR_RESOLUTION_INFO | Microsoft Docs
+title: BP_ERROR_RESOLUTION_INFO Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - BP_ERROR_RESOLUTION_INFO structure
 ms.assetid: a6b83242-5728-4716-80f3-840c96d59c6c
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: dca7dcac5dc7ccf4d30d9b61165771ba464bbcf9
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: d48c4bc888db0ad8be6a0d6e98eeea2223a27e8a
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66351831"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80738089"
 ---
-# <a name="bperrorresolutioninfo"></a>BP_ERROR_RESOLUTION_INFO
-Décrit la résolution d’un point d’arrêt erreur, y compris l’emplacement, de programme et de thread.
+# <a name="bp_error_resolution_info"></a>BP_ERROR_RESOLUTION_INFO
+Décrit la résolution d’un point d’erreur, y compris l’emplacement, le programme et le thread.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -51,32 +51,32 @@ public struct BP_ERROR_RESOLUTION_INFO {
 
 ## <a name="members"></a>Membres
 `dwFields`\
-Une combinaison de valeurs à partir de la [BPERESI_FIELDS](../../../extensibility/debugger/reference/bperesi-fields.md) énumération spécifiant les champs de cette structure sont remplis.
+Une combinaison de valeurs de [l’BPERESI_FIELDS](../../../extensibility/debugger/reference/bperesi-fields.md) énumération précisant quels domaines de cette structure sont remplis.
 
 `bpResLocation`\
-Le [BP_RESOLUTION_LOCATION](../../../extensibility/debugger/reference/bp-resolution-location.md) union, qui spécifie l’emplacement de la résolution de point d’arrêt.
+Le [syndicat BP_RESOLUTION_LOCATION,](../../../extensibility/debugger/reference/bp-resolution-location.md) qui précise le lieu de résolution des points d’arrêt.
 
 `pProgram`\
-Le [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) objet qui représente l’application dans laquelle l’erreur de point d’arrêt s’est produite.
+[L’objet IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) qui représente l’application dans laquelle l’erreur de point d’arrêt s’est produite.
 
 `pThread`\
-Le [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) objet qui représente le thread sur lequel l’application qui a généré l’erreur de point d’arrêt est en cours d’exécution.
+[L’objet IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) qui représente le thread sur lequel l’application qui a généré l’erreur de point d’arrêt est en cours d’exécution.
 
 `bstrMessage`\
-Chaîne contenant un message d’avertissement ou une erreur résultant de la résolution de cette erreur.
+Une chaîne contenant tout message d’avertissement ou d’erreur résultant de cette résolution d’erreurs.
 
 `dwType`\
-Une valeur comprise entre le [BP_ERROR_TYPE](../../../extensibility/debugger/reference/bp-error-type.md) énumération qui spécifie le type d’erreur de point d’arrêt.
+Une valeur de [l’énumération BP_ERROR_TYPE](../../../extensibility/debugger/reference/bp-error-type.md) qui spécifie le type d’erreur de point d’arrêt.
 
 ## <a name="remarks"></a>Notes
-Cette structure est retournée à partir de la [GetResolutionInfo](../../../extensibility/debugger/reference/idebugerrorbreakpointresolution2-getresolutioninfo.md) (méthode).
+Cette structure est revenue de la méthode [GetResolutionInfo.](../../../extensibility/debugger/reference/idebugerrorbreakpointresolution2-getresolutioninfo.md)
 
-## <a name="requirements"></a>Configuration requise
-En-tête : msdbg.h
+## <a name="requirements"></a>Spécifications
+En-tête: msdbg.h
 
-Espace de noms : Microsoft.VisualStudio.Debugger.Interop
+Namespace: Microsoft.VisualStudio.Debugger.Interop
 
-Assembly : Microsoft.VisualStudio.Debugger.Interop.dll
+Assemblage: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>Voir aussi
 - [Structures et unions](../../../extensibility/debugger/reference/structures-and-unions.md)

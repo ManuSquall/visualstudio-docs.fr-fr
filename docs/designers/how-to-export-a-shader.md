@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: f4a3aec047238786a60b1261415acccfed521695
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75589433"
 ---
 # <a name="how-to-export-a-shader"></a>Guide pratique pour exporter un nuanceur
@@ -23,9 +23,9 @@ Cet article indique comment utiliser le **Concepteur de nuanceur** pour exporter
 
 Après avoir créé un nuanceur à l’aide du concepteur de nuanceur et pour pouvoir l’utiliser dans votre application, vous devez l’exporter dans un format pris en charge par votre API de graphismes. Vous pouvez exporter un nuanceur de différentes façons en fonction de vos besoins.
 
-1. Dans Visual Studio, ouvrez un fichier **Visual Shader Graph (.dgsl)** .
+1. Dans Visual Studio, ouvrez un fichier **Visual Shader Graph (.dgsl)**.
 
-     Si vous ne disposez pas d’un fichier **Graphe de nuanceur visuel (.dgsl)** , créez-en un en suivant la description de l’article [Guide pratique pour créer un nuanceur de couleur de base](../designers/how-to-create-a-basic-color-shader.md).
+     Si vous ne disposez pas d’un fichier **Graphe de nuanceur visuel (.dgsl)**, créez-en un en suivant la description de l’article [Guide pratique pour créer un nuanceur de couleur de base](../designers/how-to-create-a-basic-color-shader.md).
 
 2. Dans la barre d’outils **Concepteur de nuanceur**, choisissez **Avancé** > **Exporter** > **Exporter en tant que**. La boîte de dialogue **Exporter le nuanceur** apparaît.
 
@@ -43,5 +43,5 @@ Après avoir créé un nuanceur à l’aide du concepteur de nuanceur et pour po
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Guide pratique pour créer un nuanceur de couleur de base](../designers/how-to-create-a-basic-color-shader.md)
+- [Comment: Créer un shader couleur de base](../designers/how-to-create-a-basic-color-shader.md)
 - [Concepteur de nuanceur](../designers/shader-designer.md)

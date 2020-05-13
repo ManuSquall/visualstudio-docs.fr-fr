@@ -1,5 +1,5 @@
 ---
-title: Élément NumberOfParentCategoriesToRollUp (modèles)
+title: NumberOfParentCategoriesToRollUp élément (modèles)
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -9,20 +9,20 @@ helpviewer_keywords:
 - NumberOfParentCategoriesToRollUp element [Visual Studio Templates]
 - <NumberOfParentCategoriesToRollUp> element [Visual Studio Templates]
 ms.assetid: 6f9d36f5-ae23-4a92-8132-b11799e2c21a
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 65787aef175052eb69c6dedfff2e095f16c81ef1
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: b903b9d0bdab2c17dd2e489de01badad82c15473
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66336341"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80702368"
 ---
-# <a name="numberofparentcategoriestorollup-element-visual-studio-templates"></a>Élément NumberOfParentCategoriesToRollUp (modèles Visual Studio)
-Spécifie le nombre de catégories parentes qui afficheront le modèle dans le **nouveau projet** boîte de dialogue.
+# <a name="numberofparentcategoriestorollup-element-visual-studio-templates"></a>NumberOfParentCategoriesToRollUp élément (modèles Visual Studio)
+Spécifie le nombre de catégories de parents qui afficheront le modèle dans la boîte de dialogue **du nouveau projet.**
 
  \<VSTemplate> \<TemplateData> \<NumberOfParentCategoriesToRollUp>
 
@@ -50,15 +50,15 @@ Spécifie le nombre de catégories parentes qui afficheront le modèle dans le *
 |[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Définit la catégorie du modèle et comment il s’affiche dans la boîte de dialogue **Nouveau projet** ou **Ajouter un nouvel élément** .|
 
 ## <a name="text-value"></a>Valeur texte
- Un `integer` valeur est requise.
+ Une `integer` valeur est requise.
 
- Cette valeur spécifie le nombre de catégories parentes qui afficheront le modèle dans le **nouveau projet** boîte de dialogue.
+ Cette valeur spécifie le nombre de catégories de parents qui afficheront le modèle dans la boîte de dialogue **du nouveau projet.**
 
 ## <a name="remarks"></a>Notes
  `NumberOfParentCategoriesToRollUp` est un élément facultatif.
 
 ## <a name="example"></a>Exemple
- Cet exemple illustre les métadonnées d’un [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] application de Windows. Si un modèle avec ces métadonnées est placé deux niveaux de dossiers sous le niveau supérieur [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] nœud, le modèle s’affiche dans le nœud de niveau supérieur dans le **nouveau projet** boîte de dialogue. Si le `NumberOfParentCategoriesToRollUp` n’est pas défini, le modèle apparaît seulement dans le nœud dans lequel il se trouve physiquement.
+ Cet exemple illustre les métadonnées d’une [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] application Windows. Si un modèle avec ces métadonnées est placé [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] deux niveaux de dossier en dessous du nœud de niveau supérieur, le modèle apparaîtra dans le nœud de niveau supérieur dans la boîte de dialogue **New Project.** Si `NumberOfParentCategoriesToRollUp` le modèle n’est pas défini, le modèle n’apparaît que dans le nœud dans lequel il est physiquement situé.
 
 ```xml
 <VSTemplate Type="Project" Version="3.0.0"
@@ -86,5 +86,5 @@ Spécifie le nombre de catégories parentes qui afficheront le modèle dans le *
 ```
 
 ## <a name="see-also"></a>Voir aussi
-- [Informations de référence sur les schémas de modèles Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
-- [Création de modèles de projets et d’éléments](../ide/creating-project-and-item-templates.md)
+- [Référence de schéma de modèle de studio visuel](../extensibility/visual-studio-template-schema-reference.md)
+- [Création de modèles de projets et d’objets](../ide/creating-project-and-item-templates.md)

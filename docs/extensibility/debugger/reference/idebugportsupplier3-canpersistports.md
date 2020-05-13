@@ -1,5 +1,5 @@
 ---
-title: IDebugPortSupplier3::CanPersistPorts | Microsoft Docs
+title: IDebugPortSupplier3::CanPersistPorts ( Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugPortSupplier3::CanPersistPorts
 ms.assetid: 4127760c-e602-4e86-9232-457e382a52c7
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 11bc6e21e8b70a5bd95c001f4173a7da3f3fe4be
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 2bf436d788b517300bee9a13b66b0ca3747bcc43
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66340072"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80724462"
 ---
 # <a name="idebugportsupplier3canpersistports"></a>IDebugPortSupplier3::CanPersistPorts
-Cette méthode détermine si le fournisseur de port peut conserver les ports (en les écrivant sur le disque) entre les appels du débogueur.
+Cette méthode détermine si le fournisseur de ports peut persister les ports (en les écrivant au disque) entre les invocations du débbuggeur.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -39,10 +39,10 @@ int CanPersistPorts();
  Aucun.
 
 ## <a name="return-value"></a>Valeur de retour
- `S_OK` Si les ports peuvent être rendus persistants ou `S_FALSE` pour indiquer que les ports ne peut pas être rendue persistante.
+ `S_OK`si les ports peuvent `S_FALSE` persister, ou d’indiquer que les ports ne peuvent pas être persistants.
 
 ## <a name="remarks"></a>Notes
- Si le fournisseur de port peut conserver les ports, il doit faire lorsqu’il est détruit et les recharger lorsqu’il est instancié une fois encore.
+ Si le fournisseur du port peut persister dans les ports, il doit le faire lorsqu’il est détruit, puis les recharger lorsqu’il est à nouveau instantanément.
 
 ## <a name="see-also"></a>Voir aussi
 - [IDebugPortSupplier3](../../../extensibility/debugger/reference/idebugportsupplier3.md)

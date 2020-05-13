@@ -10,10 +10,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 7f28d7271fdf33822475a663debed269bb515959
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74777775"
 ---
 # <a name="create-profiler-reports-from-the-command-line"></a>Créer des rapports de profileur à partir de la ligne de commande
@@ -25,8 +25,8 @@ L’outil en ligne de commande **VSPerfReport** vous permet de créer des rappor
 
 |Tâche|Contenu associé|
 |----------|---------------------|
-|**Créer un rapport de base** Créez tout ou partie des types de rapports de VSPerfReport.|-   [Créer un rapport de base](../profiling/creating-basic-profiling-reports-from-the-command-line.md)|
-|**Comparez deux fichiers de données de profilage.** Créez un rapport différentiel qui compare les données de performances dans deux fichiers de données de profilage.|-   [Guide pratique pour créer un rapport de comparaison du profileur à partir d’une invite de commandes](../profiling/how-to-create-a-profiler-comparison-report-from-a-command-prompt.md)|
-|**Afficher les données de suivi des appels et de suivi d’événements pour Windows (ETW)** Créez un rapport de suivi des appels qui répertorie les informations chronologiques de chaque point d’entrée et de sortie des fonctions de votre application, et de chaque appel effectué par votre fonction à d’autres fonctions. Vous pouvez aussi créer une liste détaillée de tous les événements du suivi d’événements pour Windows qui ont été collectés dans une exécution du profilage.|-   [Guide pratique pour créer un rapport de suivi d’appels](../profiling/how-to-create-a-profiling-tools-call-trace-report.md)|
-|**Filtrer un rapport.** Limitez un rapport aux seules fonctions de votre code ou à un moment spécifique dans le fichier de données de profilage.|-   [Guide pratique pour filtrer des rapports à partir de la ligne de commande](../profiling/how-to-filter-reports-from-the-command-line.md)|
+|**Créez un rapport de base.** Créez tout ou partie des types de rapports de VSPerfReport.|-   [Créer un rapport de base](../profiling/creating-basic-profiling-reports-from-the-command-line.md)|
+|**Comparez deux fichiers de données de profilage.** Créez un rapport différentiel qui compare les données de performances dans deux fichiers de données de profilage.|-   [Comment : Créer un rapport de comparaison de profileur à partir d’une invite de commande](../profiling/how-to-create-a-profiler-comparison-report-from-a-command-prompt.md)|
+|**Afficher les données de suivi des appels et de suivi d’événements pour Windows (ETW)** Créez un rapport de suivi des appels qui répertorie les informations chronologiques de chaque point d’entrée et de sortie des fonctions de votre application, et de chaque appel effectué par votre fonction à d’autres fonctions. Vous pouvez aussi créer une liste détaillée de tous les événements du suivi d’événements pour Windows qui ont été collectés dans une exécution du profilage.|-   [Comment : Créer un rapport de trace d’appel](../profiling/how-to-create-a-profiling-tools-call-trace-report.md)|
+|**Filtrer un rapport.** Limitez un rapport aux seules fonctions de votre code ou à un moment spécifique dans le fichier de données de profilage.|-   [Comment : Filtrer les rapports de la ligne de commande](../profiling/how-to-filter-reports-from-the-command-line.md)|
 |**Créez des fichiers de données de profilage portables.** Pour rendre le partage des données de profilage plus facile, vous pouvez incorporer les symboles pour une exécution de profilage dans le fichier .*vsp*. Vous pouvez également créer un fichier de données de profilage pré-analysé (.*vsps*), qui est plus petit et plus rapide à ouvrir.|-   [Créer des fichiers de données de profilage portables](../profiling/creating-portable-profiling-data-files-from-the-command-line.md)|

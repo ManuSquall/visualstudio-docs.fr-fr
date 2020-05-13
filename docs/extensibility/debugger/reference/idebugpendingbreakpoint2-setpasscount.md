@@ -1,5 +1,5 @@
 ---
-title: IDebugPendingBreakpoint2::SetPassCount | Microsoft Docs
+title: IDebugPendingBreakpoint2::SetPassCount (fr) Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -8,23 +8,23 @@ helpviewer_keywords:
 - SetPassCount method
 - IDebugPendingBreakpoint2::SetPassCount method
 ms.assetid: 08ddd328-57eb-42e0-baa9-8424dcd1bf04
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 5af01702c20b4841c5d737bef2c3be7f885cc31e
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 732eadc955b9a6c9bdded3d52f038ff58ed9c217
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66340566"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80725678"
 ---
 # <a name="idebugpendingbreakpoint2setpasscount"></a>IDebugPendingBreakpoint2::SetPassCount
-Définit ou modifie le nombre de passe associé au point d’arrêt en attente.
+Définit ou modifie le nombre de laissez-passer associé au point d’arrêt en attente.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -42,13 +42,13 @@ int SetPassCount( 
 
 ## <a name="parameters"></a>Paramètres
 `bpPassCount`\
-[in] Un [BP_PASSCOUNT](../../../extensibility/debugger/reference/bp-passcount.md) structure qui contient le nombre de pass.
+[dans] Une structure [BP_PASSCOUNT](../../../extensibility/debugger/reference/bp-passcount.md) qui contient le nombre de laissez-passer.
 
 ## <a name="return-value"></a>Valeur de retour
- En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur. Retourne `E_BP_DELETED` si le point d’arrêt a été supprimé.
+ En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur. Retourne `E_BP_DELETED` si le point d’arrêt a été supprimé.
 
 ## <a name="remarks"></a>Notes
- N’importe quel nombre de passe qui a été précédemment associé avec le point d’arrêt en attente est perdu. Tous les points d’arrêt liés à partir de ce point d’arrêt dans l’attente sont appelées pour définir leur nombre passe la `bpPassCount` paramètre.
+ Tout nombre de laissez-passer qui était auparavant associé au point d’arrêt en attente est perdu. Tous les points de rupture liés à partir de ce point `bpPassCount` de rupture en attente sont appelés à définir leur nombre de laissez-passer sur le paramètre.
 
 ## <a name="see-also"></a>Voir aussi
 - [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md)

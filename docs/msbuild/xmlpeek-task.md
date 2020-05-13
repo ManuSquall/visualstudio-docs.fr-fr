@@ -16,17 +16,19 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e10cf26ad23e6fe4c881f68ad87bc80d04f2cf8a
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: c5a76bf033fa3eb85f0626478b965285f32e5fb6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75590967"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79094666"
 ---
 # <a name="xmlpeek-task"></a>XmlPeek (tâche)
+
 Retourne des valeurs telles que spécifiées par la requête XPath depuis un fichier XML.
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>Paramètres
+
  Le tableau ci-dessous décrit les paramètres de la tâche `XmlPeek` .
 
 |Paramètre|Description|
@@ -37,9 +39,42 @@ Retourne des valeurs telles que spécifiées par la requête XPath depuis un fic
 |`XmlContent`|Paramètre `String` facultatif.<br /><br /> Spécifie l’entrée XML sous forme de chaîne.|
 |`XmlInputPath`|Paramètre <xref:Microsoft.Build.Framework.ITaskItem> facultatif.<br /><br /> Spécifie l’entrée XML sous forme de chemin de fichier.|
 
-## <a name="remarks"></a>Notes
- En plus des paramètres répertoriés dans le tableau, cette tâche comprend des paramètres qu’elle hérite de la classe <xref:Microsoft.Build.Tasks.TaskExtension>, qui elle-même hérite de la classe <xref:Microsoft.Build.Utilities.Task>. Pour obtenir la liste de ces paramètres supplémentaires et leurs descriptions, consultez [Classe de base TaskExtension](../msbuild/taskextension-base-class.md).
+## <a name="remarks"></a>Notes 
+
+ En plus des paramètres répertoriés dans le tableau, cette tâche comprend des paramètres qu’elle hérite de la classe <xref:Microsoft.Build.Tasks.TaskExtension>, qui elle-même hérite de la classe <xref:Microsoft.Build.Utilities.Task>. Pour une liste de ces paramètres supplémentaires et leurs descriptions, voir [TaskExtension classe de base](../msbuild/taskextension-base-class.md).
+
+
+
+## <a name="example"></a> Exemple
+
+Voici un exemple de `settings.config` fichier XML à lire:
+
+```xml
+<appSettings>
+  <add key="ProjectFolder" value="S1" />
+</appSettings>
+```
+
+Dans cet exemple, si `value`vous voulez lire, puis utilisez le code comme suit:
+
+```xml
+<Target Name="BeforeBuild">
+    <XmlPeek XmlInputPath="settings.config" Query="appSettings/add[@key='ProjectFolder']/@value">
+        <Output TaskParameter="Result" ItemName="value" />
+    </XmlPeek>
+    <Message Text="Using project folder @(value)." Importance="high" />
+    <PropertyGroup>
+        <ProjectFolder>@(value)</ProjectFolder>
+    </PropertyGroup>
+    <ItemGroup>
+        <Compile Include="Projects\$(ProjectFolder)\Controls\Control1.ascx.cs">
+            <SubType>ASPXCodeBehind</SubType>
+        </Compile>
+    </ItemGroup>
+</Target>
+```
 
 ## <a name="see-also"></a>Voir aussi
-- [Tâches MSBuild](../msbuild/msbuild-tasks.md)
+
+- [Tâches](../msbuild/msbuild-tasks.md)
 - [Informations de référence sur les tâches](../msbuild/msbuild-task-reference.md)

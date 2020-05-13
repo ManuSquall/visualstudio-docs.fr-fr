@@ -7,13 +7,13 @@ ms.date: 05/06/2018
 ms.technology: vs-ide-debug
 ms.assetid: 527E6BEC-EF15-4002-ACB5-62AE1C16F6B7
 ms.openlocfilehash: 14696040160dfc33f89b7647fb73b116b41afa16
-ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
-ms.translationtype: HT
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/09/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "67691729"
 ---
-# <a name="data-visualizations"></a>Visualisations des données
+# <a name="data-visualizations"></a>Visualisations de données
 
 Visual Studio pour Mac offre la prise en charge de l’interface utilisateur du débogueur, qui permet des visualisations des valeurs d’une variable, d’un champ ou d’une propriété pendant le débogage. Ces visualiseurs de données montrent une version étendue des données et permettent aux développeurs d’inspecter des structures connues, par exemple en affichant la couleur d’un struct.
 
@@ -43,7 +43,7 @@ Les coordonnées sont tracées sur un plan, avec l’emplacement épinglé au ce
 
 [Visualisation d’une coordonnée](media/data-visualizations-image13.png)
 
-## <a name="color"></a>Color
+## <a name="color"></a>Couleur
 Ceci affiche les propriétés UIColor, CGColor et Color, en montrant un aperçu de la couleur, les composants RVBA, les valeurs Teinte-Saturation-Luminosité et la valeur hexadécimale de la couleur :
 
 ![Visualisation d’une couleur](media/data-visualizations-image14.png)
@@ -60,7 +60,7 @@ Le visualiseur affiche un `NSBezierPath` :
 
 ![Visualisation d’une courbe de Bézier](media/data-visualizations-image16.png)
 
-## <a name="string"></a>Chaîne
+## <a name="string"></a>String
 
 Une chaîne de moins de 100 caractères s’affiche en totalité, sans aperçu. Les chaînes plus longues s’affichent en totalité dans l’aperçu. Les chaînes sont modifiables, et le visualiseur comporte un bouton Modifier, qui permet la modification de la valeur de la chaîne dans l’aperçu ou dans l’éditeur de valeur de chaîne, montré ci-dessous :
 
@@ -88,7 +88,7 @@ Voici quelques autres types qui ont leur propre visualiseur :
 
 ![Autre visualisation](media/data-visualizations-image23.png)
 
-* **Primitifs**
+* **Primitives**
   * Ceci affiche la valeur brute du type primitif.
 * **Enum**
   * Ceci affiche la valeur du champ sans le qualificateur de type enum.

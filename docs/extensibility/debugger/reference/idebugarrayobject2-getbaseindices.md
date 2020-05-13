@@ -1,28 +1,28 @@
 ---
-title: IDebugArrayObject2::GetBaseIndices | Microsoft Docs
+title: IDebugArrayObject2::GetBaseIndices (fr) Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - GetBaseIndices
 - IDebugArrayObject2::GetBaseIndices
 ms.assetid: 882951a2-3da0-49bf-8d1e-7daedd13ffe6
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 04252ed40cd0ac2c0e5f41bc1104104aeee302c4
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 925ce3a7bcce9f787e02c2bd2714f8b26d8cec26
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66317570"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80736155"
 ---
 # <a name="idebugarrayobject2getbaseindices"></a>IDebugArrayObject2::GetBaseIndices
-Récupère l’index de base (limites inférieures) pour chaque index étant donné le nombre de dimensions dans le tableau.
+Récupère les indices de base (limites inférieures) pour chaque indice compte tenu du nombre de dimensions dans le tableau.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -42,16 +42,16 @@ int GetBaseIndices (
 
 ## <a name="parameters"></a>Paramètres
 `dwRank`\
-[in] Le nombre de dimensions (rang) du tableau.
+[dans] Le nombre de dimensions (rang) du tableau.
 
 `dwIndices`\
-[out] Index de base (limites inférieures) pour le tableau.
+[out] Les indices de base (limites inférieures) pour le tableau.
 
 ## <a name="return-value"></a>Valeur de retour
- En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.
+ En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
 ## <a name="remarks"></a>Notes
- Par exemple, cette fonction retourne « 5 » pour le tableau créé par ce qui suit C# code :
+ À titre d’exemple, cette fonction retournerait ' 5' pour le tableau créé par le code C ' suivant :
 
 ```
 int[] lengths = { 12 };

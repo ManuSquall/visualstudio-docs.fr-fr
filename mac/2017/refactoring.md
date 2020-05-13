@@ -7,13 +7,13 @@ ms.date: 05/06/2018
 ms.assetid: C7782BF3-016F-4B41-8A81-85FC540A1A8F
 ms.custom: video
 ms.openlocfilehash: 7b11f09d8fb70612d4496987f69583b2ac691275
-ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/10/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "74985233"
 ---
-# <a name="refactoring"></a>Refactoring
+# <a name="refactoring"></a>Refactorisation
 
 La refactorisation du code consiste à réorganiser, restructurer et clarifier le code existant tout en garantissant que le comportement global du code ne change pas.
 
@@ -21,7 +21,7 @@ Elle génère une base de code plus saine, rendant le code plus utilisable, lisi
 
 L’intégration de Visual Studio pour Mac à Roslyn, la plateforme de compilateurs .NET open source de Microsoft, permet une refactorisation plus importante.
 
-## <a name="renaming"></a>Renommer
+## <a name="renaming"></a>Renommage
 
 La commande de refactorisation *Renommer* peut être utilisée sur n’importe quel identificateur du code (par exemple un nom de classe, un nom de propriété, etc.) pour rechercher toutes les occurrences de cet identificateur et les changer. Pour renommer un symbole, cliquez avec le bouton droit sur celui-ci et choisissez **Refactoriser > Renommer**, ou la combinaison de touches **Cmd+R** :
 
@@ -64,7 +64,7 @@ L’opération de refactorisation Extraire la méthode vous permet de créer une
 * Elle crée une méthode qui contient le code sélectionné.
 * Elle appelle la nouvelle méthode là où se trouvait le code sélectionné.
 
-##### <a name="example"></a>Exemple
+##### <a name="example"></a> Exemple
 
 1. Ajoutez le code suivant :
 

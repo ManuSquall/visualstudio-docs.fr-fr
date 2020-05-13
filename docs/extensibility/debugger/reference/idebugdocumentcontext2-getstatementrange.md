@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentContext2::GetStatementRange | Microsoft Docs
+title: IDebugDocumentContext2::GetStatementRange (fr) Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugDocumentContext2::GetStatementRange
 ms.assetid: bc94851a-0ec4-47ea-99c7-0a585e54e726
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 6ef4dae20a69fefcb67240e82999bdf2798d56e5
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 50e521d98f10477d56dfece30e20fd000b87b632
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66335299"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80731773"
 ---
 # <a name="idebugdocumentcontext2getstatementrange"></a>IDebugDocumentContext2::GetStatementRange
-Obtient la plage d’instruction de fichier du contexte de document.
+Obtient la plage de relevé de fichiers du contexte du document.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -43,21 +43,21 @@ int GetStatementRange(
 
 ## <a name="parameters"></a>Paramètres
 `pBegPosition`\
-[in, out] Un [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) structure est remplie avec la position de départ. Définissez cet argument à une valeur null si cette information n’est pas nécessaire.
+[dans, dehors] Une structure [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) qui est remplie avec le poste de départ. Définissez cet argument à une valeur nulle si cette information n’est pas nécessaire.
 
 `pEndPosition`\
-[in, out] Un [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) structure est remplie avec la position de fin. Définissez cet argument à une valeur null si cette information n’est pas nécessaire.
+[dans, dehors] Une structure [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) qui est remplie avec la position de fin. Définissez cet argument à une valeur nulle si cette information n’est pas nécessaire.
 
 ## <a name="return-value"></a>Valeur de retour
-En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.
+En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
 ## <a name="remarks"></a>Notes
-Une plage de l’instruction est la plage des lignes qui ont contribué le code auquel ce contexte de document fait référence.
+Une plage de relevé est la plage des lignes qui ont contribué au code auquel le présent contexte de document se réfère.
 
-Pour obtenir la plage de code source (y compris les commentaires) dans ce contexte de document, appelez le [GetSourceRange](../../../extensibility/debugger/reference/idebugdocumentcontext2-getsourcerange.md) (méthode).
+Pour obtenir la plage de code source (y compris les commentaires) dans ce contexte de document, appelez la méthode [GetSourceRange.](../../../extensibility/debugger/reference/idebugdocumentcontext2-getsourcerange.md)
 
 ## <a name="example"></a>Exemple
-L’exemple suivant montre comment implémenter cette méthode pour une simple `CDebugContext` objet qui expose le [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md) interface. Cet exemple remplit la position de fin uniquement si la position de début n’est pas une valeur null.
+L’exemple suivant montre comment implémenter cette méthode pour un objet simple `CDebugContext` qui expose [l’interface IDebugDocumentContext2.](../../../extensibility/debugger/reference/idebugdocumentcontext2.md) Cet exemple ne remplit le poste de fin que si le poste de départ n’est pas une valeur nulle.
 
 ```cpp
 HRESULT CDebugContext::GetStatementRange(TEXT_POSITION* pBegPosition,

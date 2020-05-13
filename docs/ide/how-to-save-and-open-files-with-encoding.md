@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 5e1e562771567a6ff4f9dc35c9e98ceb5441a074
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75596175"
 ---
 # <a name="how-to-save-and-open-files-with-encoding"></a>Guide pratique pour enregistrer et ouvrir des fichiers avec encodage
@@ -28,7 +28,7 @@ Vous pouvez enregistrer des fichiers ayant un codage de caractères spécifique 
 
 1. Dans le menu **Fichier**, choisissez **Enregistrer le fichier sous**, puis cliquez sur le bouton déroulant à côté du bouton **Enregistrer**.
 
-     La boîte de dialogue **Options d’enregistrement avancées** s’affiche.
+     La boîte de dialogue **Options d'enregistrement avancées** est affichée.
 
 2. Sous **Encodage**, sélectionnez l’encodage à utiliser pour le fichier.
 

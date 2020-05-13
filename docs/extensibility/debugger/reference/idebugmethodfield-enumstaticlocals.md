@@ -1,5 +1,5 @@
 ---
-title: IDebugMethodField::EnumStaticLocals | Microsoft Docs
+title: IDebugMethodField::EnumStaticLocals ( Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugMethodField::EnumStaticLocals method
 ms.assetid: e0c522c4-f759-4c32-ae87-7abcb573e77d
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 006f1975c18aa7464531654d9b71fd857953afc9
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 6e0a89b4c1ac4318b6dd070dc086b86b45ad24fa
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66324243"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80727157"
 ---
 # <a name="idebugmethodfieldenumstaticlocals"></a>IDebugMethodField::EnumStaticLocals
-Crée un énumérateur pour les variables locales statiques de la méthode.
+Crée un enumérateur pour les variables locales statiques de la méthode.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -41,13 +41,13 @@ int EnumStaticLocals(
 
 ## <a name="parameters"></a>Paramètres
 `ppLocals`\
-[out] Retourne un [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md) objet représentant la liste des variables locales statiques. Retourne une valeur null s’il en existe pas de variables locales statiques.
+[out] Retourne un objet [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md) représentant la liste des habitants statiques. Retourne une valeur nulle s’il n’y a pas d’habitants statiques.
 
 ## <a name="return-value"></a>Valeur de retour
- En cas de réussite, retourne S_OK, ou retourne S_FALSE s’il n’y a aucuns variables locales statiques. Sinon, retourne un code d'erreur.
+ En cas de succès, retourne S_OK ou retourne S_FALSE s’il n’y a pas d’habitants statiques. Sinon, retourne un code d'erreur.
 
 ## <a name="remarks"></a>Notes
- Chaque élément est un [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) objet représentant les différents types de variables locales statiques. Appelez le [GetKind](../../../extensibility/debugger/reference/idebugfield-getkind.md) méthode sur chaque objet pour déterminer exactement quel type de variable locale statique de l’objet représente.
+ Chaque élément est un objet [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) représentant différents types d’habitants statiques. Appelez la méthode [GetKind](../../../extensibility/debugger/reference/idebugfield-getkind.md) sur chaque objet pour déterminer exactement quel type de local statique l’objet représente.
 
 ## <a name="see-also"></a>Voir aussi
 - [IDebugMethodField](../../../extensibility/debugger/reference/idebugmethodfield.md)

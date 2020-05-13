@@ -12,10 +12,10 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: 5aa952a00075cdad262803140ab4c0360f0c62a0
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/28/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "72985183"
 ---
 # <a name="step-3-serve-static-files-add-pages-and-use-template-inheritance"></a>Étape 3 : Prendre en charge les fichiers statiques, ajouter des pages et utiliser l’héritage du modèle
@@ -44,7 +44,7 @@ Pour utiliser un modèle, sélectionnez le modèle souhaité, spécifiez un nom 
 
 ### <a name="question-how-does-visual-studio-know-which-item-templates-to-offer"></a>Question : comment Visual Studio sait quel modèle d’élément proposer ?
 
-Réponse : Le fichier projet Visual Studio ( *.pyproj*) contient un identificateur de type de projet qui le marque comme projet Python. Visual Studio utilise cet identificateur de type pour afficher uniquement les modèles d’élément qui conviennent pour le type de projet. De cette manière, Visual Studio peut fournir un ensemble riche de modèles d’élément pour plusieurs types de projet sans vous demander de les trier à chaque fois.
+Réponse : le fichier projet Visual Studio (*.pyproj*) contient un identificateur de type de projet qui le marque comme projet Python. Visual Studio utilise cet identificateur de type pour afficher uniquement les modèles d’élément qui conviennent pour le type de projet. De cette manière, Visual Studio peut fournir un ensemble riche de modèles d’élément pour plusieurs types de projet sans vous demander de les trier à chaque fois.
 
 ## <a name="step-3-2-serve-static-files-from-your-app"></a>Étape 3-2 : prendre en charge les fichiers statiques à partir de votre application
 
@@ -58,7 +58,7 @@ Dans les deux cas, vous pouvez organiser les fichiers comme vous le souhaitez so
 
 1. Dans **l’Explorateur de solutions**, cliquez avec le bouton droit sur le dossier **HelloFlask** dans le projet Visual Studio, sélectionnez **Ajouter** > **Nouveau dossier** et nommez le dossier `static`.
 
-1. Cliquez avec le bouton droit sur le dossier **static** et sélectionnez **Ajouter** > **Nouvel élément**. Dans la boîte de dialogue qui s’affiche, sélectionnez le modèle **Feuille de style**, nommez le fichier `site.css`, puis sélectionnez **OK**. Le fichier **site.css** apparaît dans le projet et est ouvert dans l’éditeur. Votre structure de dossiers doit apparaître semblable à l’image suivante :
+1. Cliquez avec le bouton droit sur le dossier **static** et sélectionnez **Ajouter** > **Nouvel élément**. Dans le dialogue qui apparaît, sélectionnez le `site.css`modèle **Stylesheet,** nommez le fichier et sélectionnez **OK**. Le fichier **site.css** apparaît dans le projet et est ouvert dans l’éditeur. Votre structure de dossiers doit apparaître semblable à l’image suivante :
 
     ![Structure de fichier statique comme indiqué dans l’Explorateur de solutions](media/flask/step03-static-file-structure.png)
 
@@ -115,7 +115,7 @@ Flask fournit une fonction appelée `serve_static_file`, que vous pouvez appeler
 
 ### <a name="question-are-there-any-conventions-for-organizing-static-files"></a>Question : Existe-t-il des conventions pour organiser des fichiers statiques ?
 
-Réponse : vous pouvez ajouter d’autres fichiers CSS, JavaScript et HTML dans votre dossier *static* comme vous le souhaitez. Une manière générale d’organiser des fichiers statiques consiste à créer des sous-dossiers nommés *polices*, *scripts* et *contenu* (pour les feuilles de style et autres fichiers).
+Réponse : vous pouvez ajouter d’autres fichiers CSS, JavaScript et HTML dans votre dossier *static* comme vous le souhaitez. Une façon classique d’organiser des fichiers statiques consiste à créer des sous-dossiers nommés *fonts*, *scripts* et *content* (pour les feuilles de style et autres fichiers).
 
 ### <a name="question-how-do-i-handle-url-variables-and-query-parameters-in-an-api"></a>Question : Comment gérer les variables d’URL et les paramètres de requête dans une API ?
 
@@ -168,7 +168,7 @@ Les étapes suivantes ajoutent une page « About » au projet « HelloFlask » e
     <div><a href="about">About</a></div>
     ```
 
-1. Enregistrez tous les fichiers à l’aide de la commande de menu **Fichier** > **Enregistrer tout** ou appuyez simplement sur **Ctrl**+**Maj**+**S**. (Techniquement, cette étape n’est pas nécessaire puisque l’exécution du projet dans Visual Studio enregistre automatiquement les fichiers. Toutefois, c’est une commande bonne à connaître !)
+1. Enregistrez tous les fichiers à l’aide de la commande de menu**Enregistrer tous** **les fichiers,** > ou appuyez simplement sur **Ctrl**+**Shift**+**S**. (Techniquement, cette étape n’est pas nécessaire puisque l’exécution du projet dans Visual Studio enregistre automatiquement les fichiers. Toutefois, c’est une commande bonne à connaître !)
 
 1. Exécutez le projet pour observer les résultats et contrôler la navigation entre les pages. Arrêtez l’application quand c’est terminé.
 
@@ -188,7 +188,7 @@ Le système de création de modèles de Flask offre deux moyens de réutiliser d
 
 Dans les deux cas, `<template_path>` est relatif au dossier *templates* de l’application (`../` ou `./` sont également autorisés).
 
-Un modèle de base délimite les *blocs* avec des balises `{% block <block_name> %}` et `{% endblock %}`. Si un modèle de référence utilise ensuite des étiquettes portant le même nom de bloc, le contenu de son bloc remplace celui du modèle de base.
+Un modèle de *blocks* base `{% block <block_name> %}` délimite les blocs à l’aide et `{% endblock %}` les balises. Si un modèle de référence utilise ensuite des étiquettes portant le même nom de bloc, le contenu de son bloc remplace celui du modèle de base.
 
 Les étapes suivantes démontrent l’héritage :
 
@@ -281,11 +281,11 @@ Les étapes suivantes démontrent l’héritage :
 ## <a name="next-steps"></a>Étapes suivantes
 
 > [!div class="nextstepaction"]
-> [Utiliser le modèle Projet web Flask complet](learn-flask-visual-studio-step-04-full-flask-project-template.md)
+> [Utiliser le modèle de projet web Flask complet](learn-flask-visual-studio-step-04-full-flask-project-template.md)
 
 ## <a name="go-deeper"></a>Approfondir la question
 
-- [Déployer l’application web sur Azure App Service](publishing-python-web-applications-to-azure-from-visual-studio.md)
+- [Déployer l’application web sur Azure App Service.](publishing-python-web-applications-to-azure-from-visual-studio.md)
 - Pour plus d’informations sur les fonctionnalités des modèles Jinja, comme les flux de contrôle, consultez la [documentation du concepteur de modèle Jinja](http://jinja.palletsprojects.com/en/2.10.x/templates/) (jinja.pocoo.org)
 - Pour plus d’informations sur l’utilisation de `url_for`, consultez [url_for](https://flask.palletsprojects.com/en/1.0.x/api/#flask.url_for) dans la documentation de l’objet d’application Flask (flask.pocoo.org)
 - Code source du tutoriel sur GitHub : [Microsoft/python-sample-vs-learning-flask](https://github.com/Microsoft/python-sample-vs-learning-flask)

@@ -8,21 +8,21 @@ manager: markl
 ms.workload:
 - cplusplus
 ms.openlocfilehash: c0d1be12f733a858bf223fb1dce6a091c0dc6c50
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75594212"
 ---
 # <a name="visual-c-intellisense-features"></a>Fonctionnalités IntelliSense pour Visual C++
 
-IntelliSense est le nom d’un ensemble de fonctionnalités conçues pour faciliter le codage. IntelliSense pour C++ peut être utilisé avec des fichiers autonomes, mais aussi avec des fichiers qui font partie d’un projet C++. Dans les projets multiplateformes, certaines fonctionnalités IntelliSense sont disponibles avec les fichiers *.cpp* et *.c* du projet de code partagé, même quand vous êtes dans un contexte Android ou iOS.
+IntelliSense est le nom d’un ensemble de fonctionnalités conçues pour faciliter le codage. IntelliSense pour C++ peut être utilisé avec des fichiers autonomes, mais aussi avec des fichiers qui font partie d’un projet C++. Dans les projets multiplateformes, certaines fonctionnalités IntelliSense sont disponibles dans les fichiers *.cpp* et *.c* dans le projet de code partagé, même lorsque vous êtes dans un contexte Android ou iOS.
 
 Cet article présente une vue d’ensemble des fonctionnalités IntelliSense C++. Pour plus d’informations sur la configuration des projets pour IntelliSense et la résolution des problèmes, voir [Configurer un projet C++ pour IntelliSense](visual-cpp-intellisense-configuration.md).
 
 ## <a name="intellisense-features-in-c"></a>Fonctionnalités IntelliSense en C++
 
-IntelliSense est le nom d’un ensemble de fonctionnalités conçues pour faciliter le codage. Étant donné que chaque utilisateur a sa propre opinion sur ce qui est pratique, pratiquement toutes les fonctionnalités IntelliSense peuvent être activées ou désactivées dans la boîte de dialogue **Options** sous **Éditeur de texte** > **C/C++**  > **Avancé**. La boîte de dialogue **Options** est accessible dans le menu **Outils** dans la barre de menus.
+IntelliSense est le nom d’un ensemble de fonctionnalités conçues pour faciliter le codage. Étant donné que chaque utilisateur a sa propre opinion sur ce qui est pratique, pratiquement toutes les fonctionnalités IntelliSense peuvent être activées ou désactivées dans la boîte de dialogue **Options** sous **Éditeur de texte** > **C/C++** > **Avancé**. La boîte de dialogue **Options** est accessible dans le menu **Outils** dans la barre de menus.
 
 ![Boîte de dialogue Options d’outil](../ide/media/sintellisensecpptoolsoptions.PNG)
 
@@ -34,23 +34,23 @@ Vous pouvez utiliser les éléments de menu et les raccourcis clavier indiqués 
 
 Quand vous commencez à taper un mot clé, un type, une fonction, un nom de variable ou tout autre élément de code reconnu par le compilateur, l'éditeur vous propose de compléter automatiquement la chaîne.
 
-Pour obtenir la liste des icônes et leurs significations, consultez [Affichage de classes et Explorateur d’objets, icônes](../ide/class-view-and-object-browser-icons.md).
+Pour une liste des icônes et de leurs significations, voir [Class View et Object Browser icônes](../ide/class-view-and-object-browser-icons.md).
 
 ![Fenêtre Compléter le mot de Visual C&#43;&#43;](../ide/media/vs2015_cpp_complete_word.png)
 
-Au premier appel de la liste des membres, seuls les membres accessibles dans le contexte actuel sont affichés. Si vous appuyez ensuite sur **Ctrl**+**J**, elle affiche tous les membres indépendamment de leur accessibilité. Si vous l'appelez une troisième fois, la liste qui s'affiche présente encore plus d'éléments de code. Vous pouvez désactiver la liste des membres dans la boîte de dialogue **Options** sous **Éditeur de texte** > **C/C++**  > **Général** > **Répertorier automatiquement les membres**.
+Au premier appel de la liste des membres, seuls les membres accessibles dans le contexte actuel sont affichés. Si vous appuyez sur **Ctrl**+**J** après cela, il montre à tous les membres indépendamment de l’accessibilité. Si vous l'appelez une troisième fois, la liste qui s'affiche présente encore plus d'éléments de code. Vous pouvez désactiver la liste des membres dans la boîte de dialogue **Options** sous **Éditeur de texte** > **C/C++** > **Général** > **Répertorier automatiquement les membres**.
 
 ![Liste de membres Visual C&#43;&#43;](../ide/media/vs2015_cpp_list_members.png)
 
 ## <a name="parameter-help"></a>Aide sur les paramètres
 
-Quand vous tapez une accolade ouvrante dans un appel de fonction, ou un crochet pointu dans une déclaration de variable de modèle de classe, l'éditeur ouvre une petite fenêtre qui affiche les types de paramètre pour chaque surcharge de la fonction ou du constructeur. Le paramètre « actuel »&mdash;basé sur l'emplacement du curseur&mdash;est indiqué en gras. Vous pouvez désactiver les informations de paramètre dans la boîte de dialogue **Options** sous **Éditeur de texte** > **C/C++**  > **Général** > **Informations de paramètre**.
+Quand vous tapez une accolade ouvrante dans un appel de fonction, ou un crochet pointu dans une déclaration de variable de modèle de classe, l'éditeur ouvre une petite fenêtre qui affiche les types de paramètre pour chaque surcharge de la fonction ou du constructeur. Le paramètre « actuel »&mdash;basé sur l'emplacement du curseur&mdash;est indiqué en gras. Vous pouvez désactiver les informations de paramètre dans la boîte de dialogue **Options** sous **Éditeur de texte** > **C/C++** > **Général** > **Informations de paramètre**.
 
 ![Aide sur les paramètres Visual C&#43;&#43;](../ide/media/vs_2015_cpp_param_help.png)
 
-## <a name="quick-info"></a>Infos express
+## <a name="quick-info"></a>Info express
 
-Quand vous placez le curseur sur une variable, une petite fenêtre inline s'affiche, présentant les informations de type et l'en-tête où le type est défini. Placez le curseur sur un appel de fonction pour afficher la signature de la fonction. Vous pouvez désactiver la fonctionnalité Info express dans la boîte de dialogue **Options** sous **Éditeur de texte** > **C/C++**  > **Avancé** > **Info express auto**.
+Quand vous placez le curseur sur une variable, une petite fenêtre inline s'affiche, présentant les informations de type et l'en-tête où le type est défini. Placez le curseur sur un appel de fonction pour afficher la signature de la fonction. Vous pouvez désactiver la fonctionnalité Info express dans la boîte de dialogue **Options** sous **Éditeur de texte** > **C/C++** > **Avancé** > **Info express auto**.
 
 ![Info Express Visual C&#43;&#43;](../ide/media/vs2015_cpp_quickinfo.png)
 
@@ -90,7 +90,7 @@ Si vous changez le projet actif pour Android, les tildes changent :
 
 ## <a name="intellisense-for-stand-alone-files"></a>IntelliSense pour les fichiers autonomes
 
-IntelliSense est également disponible quand vous ouvrez un seul fichier en dehors de tout projet. Vous pouvez activer ou désactiver les fonctionnalités IntelliSense dans la boîte de dialogue **Options** sous **Éditeur de texte** > **C/C++**  > **Avancé**. Si vous souhaitez configurer IntelliSense pour des fichiers individuels qui ne font pas partie d’un projet, recherchez la section **IntelliSense et accès aux fichiers hors projet**.
+IntelliSense est également disponible quand vous ouvrez un seul fichier en dehors de tout projet. Vous pouvez activer ou désactiver les fonctionnalités IntelliSense dans la boîte de dialogue **Options** sous **Éditeur de texte** > **C/C++** > **Avancé**. Si vous souhaitez configurer IntelliSense pour des fichiers individuels qui ne font pas partie d’un projet, recherchez la section **IntelliSense et accès aux fichiers hors projet**.
 
 ![IntelliSense avec un fichier unique Visual C&#43;&#43;](../ide/media/vs2015_cpp_single_file_intellisense.png)
 
@@ -100,11 +100,11 @@ Par défaut, IntelliSense pour fichier unique utilise uniquement les répertoire
 
 ## <a name="enable-or-disable-features"></a>Activer ou désactiver des fonctionnalités
 
-Étant donné que chaque utilisateur a sa propre opinion sur ce qui est pratique, pratiquement toutes les fonctionnalités IntelliSense peuvent être activées ou désactivées dans la boîte de dialogue **Options** sous **Éditeur de texte** > **C/C++**  > **Avancé**. La boîte de dialogue **Options** est accessible dans le menu **Outils** dans la barre de menus.
+Étant donné que chaque utilisateur a sa propre opinion sur ce qui est pratique, pratiquement toutes les fonctionnalités IntelliSense peuvent être activées ou désactivées dans la boîte de dialogue **Options** sous **Éditeur de texte** > **C/C++** > **Avancé**. La boîte de dialogue **Options** est accessible dans le menu **Outils** dans la barre de menus.
 
 ![Boîte de dialogue Options d’outil](../ide/media/sintellisensecpptoolsoptions.PNG)
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Utilisation d’IntelliSense](../ide/using-intellisense.md)
+- [Using IntelliSense](../ide/using-intellisense.md)
 - [Configurer un projet C++ pour IntelliSense](visual-cpp-intellisense-configuration.md)

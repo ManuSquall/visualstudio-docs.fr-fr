@@ -7,12 +7,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: efcc284291281b6e370cf51ddbe175faf8f1204c
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 086601cb8cde00d63e3be85c028201922ebe5b76
+ms.sourcegitcommit: 5d1b2895d3a249c6bea30eb12b0ad7c0f0862d85
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75584411"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "80880193"
 ---
 # <a name="manage-test-controllers-and-test-agents"></a>Gérer les contrôleurs de test et les agents de test
 
@@ -20,7 +20,9 @@ Si vous voulez utiliser Visual Studio pour exécuter des tests à distance, dist
 
 [!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
+::: moniker range="vs-2017"
 Si vous utilisez Microsoft Test Manager pour exécuter des tests dans des environnements lab, vous gérez les contrôleurs de test et leurs agents en utilisant le **Gestionnaire de contrôleurs de test** dans le **Centre lab** pour Microsoft Test Manager. Cette rubrique s'applique seulement si vous utilisez Visual Studio pour exécuter vos tests.
+::: moniker-end
 
 Pour plus d’informations sur l’installation et la configuration des agents et des contrôleurs de test pour exécuter des tests dans Visual Studio, consultez [Configurer des agents et des contrôleurs de test](../test/configure-test-agents-and-controllers-for-load-tests.md).
 
@@ -34,7 +36,7 @@ Il est possible d'ajouter un agent de test à un contrôleur de test différent 
 
 ### <a name="to-add-a-test-agent-to-a-test-controller"></a>Pour ajouter un agent de test à un contrôleur de test
 
-1. Choisissez **Démarrer** > **Outil de configuration de Test Agent**.
+1. Choisissez **Start** > **Test Agent Configuration Tool**.
 
      La boîte de dialogue **Configurer l’agent de test** s’affiche.
 
@@ -43,7 +45,7 @@ Il est possible d'ajouter un agent de test à un contrôleur de test différent 
 
 2. Deux modes d’exécution de l’agent de test sont proposés :
 
-   - **Service** Si vous n’avez pas à exécuter de tests automatisés qui interagissent avec le poste de travail (tests codés de l’interface utilisateur, par exemple) ni à créer un enregistrement vidéo lors de l’exécution de votre test, sous **Exécuter l’agent de test en tant que**, sélectionnez **Service**. L'agent de test démarrera en tant que service. Sélectionnez **Suivant**.
+   - **Service**: Si vous n’avez pas à exécuter des tests automatisés qui interagissent avec le bureau, tels que des tests d’interface utilisateur codés ou la création d’un enregistrement vidéo lorsque votre test s’exécute, sous **Exécuter l’agent de test comme**, sélectionnez **Service**. L'agent de test démarrera en tant que service. Choisissez **La prochaine**.
 
       Vous pouvez maintenant entrer les détails relatifs à l'utilisateur lorsque l'agent de test démarre en tant que service.
 
@@ -58,7 +60,7 @@ Il est possible d'ajouter un agent de test à un contrôleur de test différent 
         |- Si le nom d’utilisateur de l’agent n’est pas dans le service d’agent, celui-ci essaiera de l’ajouter, ce qui nécessite des autorisations sur le contrôleur de test.|
         |- L’utilisateur qui essaie d’utiliser le contrôleur de test doit figurer dans le compte Utilisateurs du contrôleur de test ; sinon il ne pourra pas exécuter les tests sur le contrôleur.|
 
-   - **Processus interactif** Si vous souhaitez exécuter des tests automatisés qui doivent interagir avec le poste de travail (tests codés de l’interface utilisateur, par exemple) ou créer un enregistrement vidéo lors de l’exécution de votre test, sélectionnez **Processus interactif**. L'agent de test démarrera en tant que processus interactif et non en tant que service.
+   - **Processus interactif**: Si vous souhaitez exécuter des tests automatisés qui doivent interagir avec le bureau, tels que des tests d’interface utilisateur codés ou la création d’un enregistrement vidéo lorsque votre test s’exécute, sélectionnez **processus interactif**. L'agent de test démarrera en tant que processus interactif et non en tant que service.
 
       Sur la page suivante, entrer les détails relatifs à l'utilisateur lorsque l'agent de test démarre en tant que processus, ainsi que d'autres options.
 
@@ -81,7 +83,7 @@ Il est possible d'ajouter un agent de test à un contrôleur de test différent 
     > [!NOTE]
     > Le numéro de port par défaut est 6901.
 
-4. Pour enregistrer vos changements, choisissez **Appliquer les paramètres**. Fermez la boîte de dialogue **Résumé de la configuration**, puis quittez l’**outil de configuration de Test Agent**.
+4. Pour enregistrer vos changements, choisissez **Appliquer les paramètres**. Fermez la boîte de dialogue **sommaire Configuration,** puis fermez l’outil **de configuration de l’agent de test**.
 
 > [!WARNING]
 > Si l'agent est actuellement configuré pour s'exécuter sur un autre contrôleur de test, vous devez supprimer l'agent de test de ce contrôleur.
@@ -90,43 +92,56 @@ Il est possible d'ajouter un agent de test à un contrôleur de test différent 
 
 Pour pouvoir être supprimé, un agent de test doit être hors connexion.
 
+::: moniker range="vs-2017"
 > [!NOTE]
 > Vous ne pouvez pas utiliser cette procédure pour supprimer les agents inscrits auprès d'un contrôleur dans le cadre d'un environnement lab. Pour supprimer ces agents d'un contrôleur, vous devez supprimer l'environnement à l'aide de Microsoft Test Manager.
+::: moniker-end
+::: moniker range=">=vs-2019"
+> [!NOTE]
+> Vous ne pouvez pas utiliser cette procédure pour supprimer les agents inscrits auprès d'un contrôleur dans le cadre d'un environnement lab.
+::: moniker-end
 
 ### <a name="to-remove-a-test-agent-from-a-test-controller"></a>Pour supprimer un agent de test d'un contrôleur de test
 
-1. Si le contrôleur de test n’est pas inscrit auprès d’un projet, effectuez les étapes suivantes.
+::: moniker range=">=vs-2019"
+Dans Visual Studio 2019, vous ne pouvez pas supprimer un agent de test si le contrôleur de test est enregistré auprès d’un projet.
+::: moniker-end
+Si le contrôleur de test n’est pas inscrit auprès d’un projet, effectuez les étapes suivantes.
 
-    1. Dans Visual Studio, ouvrez le fichier de paramètres de test de votre projet de test, choisissez **Rôle**, puis **Gérer les contrôleurs de test** dans la liste déroulante du champ **Contrôleur**.
+1. Dans Visual Studio, ouvrez le fichier de paramètres de test de votre projet de test, choisissez **Rôle**, puis **Gérer les contrôleurs de test** dans la liste déroulante du champ **Contrôleur**.
 
-         La boîte de dialogue **Administrer le contrôleur de test** s’affiche.
+   La boîte de dialogue **Administrer le contrôleur de test** s’affiche.
 
-    2. Dans la liste déroulante **Contrôleur**, tapez le nom de l’ordinateur sur lequel vous avez installé le contrôleur de test. Si vous avez précédemment administré un contrôleur de test spécifique, vous pouvez sélectionner son nom dans la liste.
+2. Dans la liste déroulante **Contrôleur**, tapez le nom de l’ordinateur sur lequel vous avez installé le contrôleur de test. Si vous avez précédemment administré un contrôleur de test spécifique, vous pouvez sélectionner son nom dans la liste.
 
-    3. Dans le volet **Agents**, sélectionnez le nom de l’agent de test. Si l’agent est encore en ligne, choisissez **Hors connexion**. Pour le supprimer, choisissez **Supprimer**.
+3. Dans le volet **Agents**, sélectionnez le nom de l’agent de test. Si l’agent est encore en ligne, choisissez **Hors connexion**. Pour le supprimer, choisissez **Supprimer**.
 
-        > [!NOTE]
-        > La suppression d'un agent de test ne fait que le dissocier du contrôleur de test. Pour désinstaller complètement l’agent de test, utilisez **Programmes et fonctionnalités** dans le Panneau de configuration sur l’ordinateur de l’agent de test.
+   > [!NOTE]
+   > La suppression d'un agent de test ne fait que le dissocier du contrôleur de test. Pour désinstaller complètement l’agent de test, utilisez **Programmes et fonctionnalités** dans le Panneau de configuration sur l’ordinateur de l’agent de test.
 
-2. Si le contrôleur de test est inscrit auprès d’un projet, supprimez l’agent avec Microsoft Test Manager.
+::: moniker range="vs-2017"
+Si le contrôleur de test est inscrit auprès d’un projet, supprimez l’agent avec Microsoft Test Manager.
+::: moniker-end
 
 ## <a name="change-the-settings-for-a-test-agent"></a>Modifications des paramètres d'un agent de test
 
 Les statuts possibles d'un agent de test sont les suivants :
 
-|Status|Description|
+|Statut|Description|
 |-|-----------------|
 |Exécution du test en cours|Exécution de tests|
-|Prêt|Disponible pour l'exécution de tests et la collecte de données et de diagnostics|
-|Offline|Non disponible pour l'exécution de tests et la collecte de données et de diagnostics|
+|Ready|Disponible pour l'exécution de tests et la collecte de données et de diagnostics|
+|Hors connexion|Non disponible pour l'exécution de tests et la collecte de données et de diagnostics|
 |Déconnecté|L'agent de test n'est pas lancé|
 
 Vous pouvez modifier l’état et d’autres paramètres pour les agents de test à l’aide des procédures suivantes.
 
 ### <a name="to-change-the-settings-of-a-test-agent"></a>Pour modifier les paramètres d'un agent de test
 
+::: moniker range="vs-2017"
 > [!NOTE]
 > Si l’agent de test est inscrit auprès d’un contrôleur de test inscrit auprès d’un projet, changez les paramètres dans Microsoft Test Manager.
+::: moniker-end
 
 1. Pour configurer et monitorer le contrôleur de test et les agents inscrits pour un test de charge, choisissez le menu **Test de charge** dans Visual Studio, puis choisissez **Gérer les contrôleurs de test**. Pour tout autre type de test, ouvrez le fichier de paramètres de test de votre projet de test dans Visual Studio, choisissez **Rôle**, puis **Gérer les contrôleurs de test** dans la liste déroulante du champ **Contrôleur**.
 
@@ -164,7 +179,7 @@ Si vous voulez inscrire votre contrôleur de test auprès de votre collection de
 
 ### <a name="to-configure-a-test-controller"></a>Pour configurer un contrôleur de test
 
-1. Pour exécuter l’outil afin de reconfigurer votre contrôleur de test à tout moment, choisissez **Démarrer** > **Outil de configuration de Test Controller**.
+1. Pour exécuter l’outil pour reconfigurer votre contrôleur de test à tout moment, choisissez > **l’outil**de configuration de contrôleur de test **de démarrage**.
 
      La boîte de dialogue **Configurer le contrôleur de test** s’affiche.
 
@@ -210,7 +225,7 @@ Quand vous ajoutez des rôles à vos paramètres de test pour Visual Studio, vou
 
 Le contrôleur de test et les agents de test ne peuvent charger que les assemblys de tests fortement signés ou non signés. Certains assemblys de tests sont à signature différée, car ils doivent avoir accès à des assemblys de production pour l'application. Toutefois, ces assemblys ne sont pas fortement signés, car il s'agit uniquement d'assemblys de tests qui ne sont pas distribués. Ces assemblys ne peuvent pas être chargés, car il s'agit d'assemblys à signature différée ; par conséquent, vous devez désactiver la vérification de nom fort pour ces assemblys sur tous les ordinateurs où ils sont chargés, y compris sur l'ordinateur du contrôleur de test. Pour désactiver la vérification à signature différée, utilisez *sn.exe*. Le jeton de clé publique de l'assembly à signature différée pour lequel la vérification de nom fort doit être ignorée peut être également à inclure.
 
-Utilisez l’outil *Sn.exe* (Strong Name) pour désactiver la vérification de signature différée.
+Utilisez *Sn.exe* (outil Strong Name) pour désactiver la vérification signée de retard.
 
 Cela désactive la vérification des noms forts, pour l'assembly spécifié uniquement, sur l'ordinateur sur lequel vous exécutez la commande. Vous ne pouvez le faire que si vous disposez des autorisations suffisantes.
 

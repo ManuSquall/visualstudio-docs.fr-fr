@@ -1,5 +1,5 @@
 ---
-title: THREADSTATE | Microsoft Docs
+title: THREADSTATE - FRANCE Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - THREADSTATE enumeration
 ms.assetid: 62efdd7c-25b1-4fd3-9d06-ac1830a418a9
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: d86baeeab046a7e605979d3af2d6329998f796ba
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 1b291cc1668b2b867729da11d4c561f74567f257
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72727496"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80713339"
 ---
 # <a name="threadstate"></a>THREADSTATE
-Spécifie l’état du thread.
+Spécifie l’état du fil.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -50,29 +50,29 @@ public enum enum_THREADSTATE { 
 
 ## <a name="fields"></a>Champs
  `THREADSTATE_RUNNING`\
- Indique que le thread est en cours d’exécution.
+ Indique que le fil est en marche.
 
  `THREADSTATE_STOPPED`\
  Indique que le thread est arrêté en raison d’un point d’arrêt.
 
  `THREADSTATE_FRESH`\
- Indique que le thread a été créé, mais qu’il n’exécute pas encore de code.
+ Indique que le thread a été créé, mais n’est pas encore en cours d’exécution du code.
 
  `THREADSTATE_DEAD`\
- Indique que le thread est inactif.
+ Indique que le fil est mort.
 
  `THREADSTATE_FROZEN`\
- Indique que le thread est figé (aucune exécution ne peut être effectuée).
+ Indique que le fil est gelé (aucune exécution ne peut être effectuée).
 
 ## <a name="remarks"></a>Notes
- Utilisé pour le champ `dwThreadState` de la structure [THREADPROPERTIES](../../../extensibility/debugger/reference/threadproperties.md) .
+ Utilisé pour `dwThreadState` le domaine de la structure [THREADPROPERTIES.](../../../extensibility/debugger/reference/threadproperties.md)
 
-## <a name="requirements"></a>spécifications
- En-tête : msdbg. h
+## <a name="requirements"></a>Spécifications
+ En-tête: msdbg.h
 
- Espace de noms : Microsoft. VisualStudio. Debugger. Interop
+ Namespace: Microsoft.VisualStudio.Debugger.Interop
 
- Assembly : Microsoft. VisualStudio. Debugger. Interop. dll
+ Assemblage: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>Voir aussi
 - [Énumérations](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)

@@ -7,13 +7,13 @@ ms.date: 05/06/2018
 ms.technology: vs-ide-debug
 ms.assetid: 527E6BEC-EF15-4002-ACB5-62AE1C16F6B7
 ms.openlocfilehash: 3355b81406d2b510dc13604a026bcd014bf9dbcb
-ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/10/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "74984758"
 ---
-# <a name="data-visualizations"></a>Visualisations des données
+# <a name="data-visualizations"></a>Visualisations de données
 
 Visual Studio pour Mac offre la prise en charge de l’interface utilisateur du débogueur, qui permet des visualisations des valeurs d’une variable, d’un champ ou d’une propriété pendant le débogage. Ces visualiseurs de données montrent une version étendue des données et permettent aux développeurs d’inspecter des structures connues, par exemple en affichant la couleur d’un struct.
 
@@ -23,7 +23,7 @@ Les visualiseurs du panneau de débogage **Local** peuvent être affichés en cl
 
 La liste ci-dessous présente la plupart des nouvelles visualisations disponibles lors du débogage dans Visual Studio pour Mac.
 
-## <a name="point"></a>rapport
+## <a name="point"></a>Point
 Une structure Point/PointF, ou CGPoint dans iOS et Mac, est restituée sous la forme d’un tuple montrant les valeurs X et Y dans le panneau de débogage :
 
 ![Visualisation d’une structure Point](media/data-visualizations-image10.png)
@@ -38,12 +38,12 @@ Une structure Rectangle/RectangleF, ou CGRect dans iOS et Mac, affiche les dimen
 
 ![Visualisation d’une structure Rectangle](media/data-visualizations-image12.png)
 
-## <a name="coordinate"></a>Coordonner
+## <a name="coordinate"></a>Coordonnée
 Les coordonnées sont tracées sur un plan, avec l’emplacement épinglé au centre :
 
 [Visualisation d’une coordonnée](media/data-visualizations-image13.png)
 
-## <a name="color"></a>Color
+## <a name="color"></a>Couleur
 Ceci affiche les propriétés UIColor, CGColor et Color, en montrant un aperçu de la couleur, les composants RVBA, les valeurs Teinte-Saturation-Luminosité et la valeur hexadécimale de la couleur :
 
 ![Visualisation d’une couleur](media/data-visualizations-image14.png)

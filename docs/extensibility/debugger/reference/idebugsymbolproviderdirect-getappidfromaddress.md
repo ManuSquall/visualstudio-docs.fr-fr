@@ -1,28 +1,28 @@
 ---
-title: IDebugSymbolProviderDirect::GetAppIDFromAddress | Microsoft Docs
+title: IDebugSymbolProviderDirect::GetAppIDDeAddress (fr) Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - IDebugSymbolProviderDirect::GetAppIDFromAddress
 - GetAppIDFromAddress
 ms.assetid: d76a0f36-79c4-4c58-9db3-880b00d11610
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 59078cd574c30992d332983704aba4d70f069d5c
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: df1dbea23cf29809c5f504359ebf02b40c14e6e2
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66347434"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80719155"
 ---
 # <a name="idebugsymbolproviderdirectgetappidfromaddress"></a>IDebugSymbolProviderDirect::GetAppIDFromAddress
-Récupère l’identificateur de domaine d’application étant donné l’adresse de débogage.
+Récupère l’identifiant de domaine d’application compte tenu de l’adresse de débogé.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -42,13 +42,13 @@ int GetAppIDFromAddress(
 
 ## <a name="parameters"></a>Paramètres
 `pAddress`\
-[in] Déboguer l’adresse qui est représenté par le [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) interface.
+[dans] Adresse Debug qui est représentée par l’interface [IDebugAddress.](../../../extensibility/debugger/reference/idebugaddress.md)
 
 `pAppID`\
-[out] Identificateur du domaine d’application.
+[out] Identification du domaine de l’application.
 
 ## <a name="return-value"></a>Valeur de retour
- En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.
+ En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
 ## <a name="see-also"></a>Voir aussi
 - [IDebugSymbolProviderDirect](../../../extensibility/debugger/reference/idebugsymbolproviderdirect.md)

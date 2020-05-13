@@ -3,110 +3,106 @@ title: La connexion à Abonnements Visual Studio peut échouer lors de l’utili
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 02/14/2020
+ms.assetid: 97bf7474-c6c2-49b3-b2c9-f1b2808eed1a
+ms.date: 03/02/2020
 ms.topic: conceptual
 description: La connexion peut échouer si des alias ou des noms conviviaux sont utilisés.
-ms.openlocfilehash: dff48852e566522ad01ee07bd46cda72b8e1e249
-ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
+ms.openlocfilehash: 0f5ed4fe67dbd863a7ba4c22f10946cbeb1c36b0
+ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "77276621"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "79509055"
 ---
-# <a name="signing-in-to-visual-studio-subscriptions-may-fail-when-using-aliases"></a>La connexion à Abonnements Visual Studio peut échouer lors de l’utilisation d’alias
-Selon le type de compte utilisé pour la connexion, les abonnements disponibles peuvent ne pas s’afficher correctement lors de la connexion à [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs). Ce cas peut se produire si l’utilisateur emploie des « alias » ou des « noms conviviaux » au lieu de l’identité de connexion à laquelle l’abonnement est affecté. On parle ici d’utilisation d’alias.
+# <a name="signing-into-visual-studio-subscriptions-may-fail-when-using-aliases"></a>La signature d’abonnements Visual Studio peut échouer lorsque vous utilisez des alias
+Selon le type de compte utilisé pour se connecter, les abonnements disponibles peuvent ne pas être correctement affichés lors de la connexion à [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs). Ce cas peut se produire si l’utilisateur emploie des « alias » ou des « noms conviviaux » au lieu de l’identité de connexion à laquelle l’abonnement est affecté. On parle ici d’utilisation d’alias.
 
 ## <a name="what-is-aliasing"></a>Qu’est-ce que l’utilisation d’alias ?
 L’utilisation d’alias fait référence aux utilisateurs qui emploient des identités différentes pour se connecter à Windows (ou à leur compte Active Directory) et accéder à leur messagerie électronique.
 
-Ainsi, une entreprise peut avoir un service en ligne Microsoft pour les connexions à l’aide d’adresses d’annuaire (par exemple « olivia@contoso.com »), mais les utilisateurs accèdent à leurs comptes e-mail à l’aide d’alias ou de noms conviviaux (par exemple « OliviaG@contoso.com »). Assurez-vous que vos utilisateurs se connectent à l’aide de l' « adresse de messagerie de connexion », comme indiqué dans le portail d’administration des abonnements Visual Studio à https://manage.visualstudio.com pour accéder à leurs abonnements.
+Ainsi, une entreprise peut avoir un service en ligne Microsoft pour les connexions à l’aide d’adresses d’annuaire (par exemple « JohnD@contoso.com »), mais les utilisateurs accèdent à leurs comptes e-mail à l’aide d’alias ou de noms conviviaux (par exemple « John.Doe@contoso.com »). Assurez-vous que vos utilisateurs utilisent l’adresse e-mail « https://manage.visualstudio.com Connect-in » telle qu’indiquée dans le portail d’administration pour accéder à leurs abonnements. 
 
-## <a name="as-an-administrator-what-options-do-i-have"></a>En tant qu’administrateur, quelles options ai-je à ma disposition ?
+## <a name="what-are-the-potential-issues"></a>Quels sont les problèmes potentiels?
 
-Selon le type de compte de l’abonné, recherchez la solution applicable ci-dessous :
+Selon le type de compte de l’abonné, il peut rencontrer l’un des deux problèmes. 
 
-### <a name="work-or-school-account-upn-mismatch-issue"></a>Problème d’incompatibilité UPN du compte professionnel ou scolaire
+### <a name="work-or-school-account-upn-mismatch-issue"></a>Problème d’inadéquation du compte de travail ou d’école UPN 
+Un décalage UPN peut être rencontré lorsqu’une entreprise dispose d’un répertoire actif mis en place où l’UserPrincipalName (UPN) n’est pas le même que l’adresse SMTP primaire. 
 
-Une incompatibilité de nom d’utilisateur principal (UPN) peut être rencontrée lorsqu’un compnay a une configuration de lieu de service Active où l’UPN n’est pas le même que l’adresse SMTP principale. 
+#### <a name="how-to-detect-if-your-sign-in-address-is-impacted-by-a-upn-mismatch"></a>Comment détecter si votre adresse de connexion est affectée par un décalage UPN 
 
-#### <a name="how-to-detect-if-a-users-sign-in-address-has-a-upn-mismatch"></a>Comment détecter si l’adresse de connexion d’un utilisateur a une incompatibilité UPN
+1. Connectez-vous à https://my.visualstudio.com/subscriptions l’aide de l’adresse de connexion mentionnée dans votre e-mail d’affectation d’abonnement.
 
-Demander à l’utilisateur d’effectuer les étapes suivantes :
+2. Vérifiez que l’adresse e-mail de connexion indiquée en haut à droite de la page correspond à l’adresse que vous avez utilisée pour vous connecter.  Si ce n’est pas le cas, votre UPN est dépareillé et vous ne serez pas en mesure de consulter votre abonnement. 
 
-1. Connectez-vous à https://my.visualstudio.com à l’aide de l’adresse de connexion mentionnée dans l’e-mail de l’attribution d’abonnement.  
+> [!div class="mx-imgBorder"]
+> ![Connectez-vous à l’adresse e-mail](_img//aliasing/sign-in-email.png)
 
-    > [!NOTE]
-    > S’ils n’ont pas de courrier électronique d’affectation d’abonnement, vous pouvez les renvoyer à partir du portail d’administration.  
+#### <a name="how-to-fix-a-upn-mismatch"></a>Comment corriger un décalage UPN
 
-2. Cliquez sur l’onglet **Abonnements**.
-3. Vérifiez que l’adresse de messagerie s’affiche dans l’angle supérieur droit où elle indique « vous êtes connecté en tant que... » est identique à l’adresse de messagerie de connexion dans l’e-mail de l’attribution de l’abonnement.  Si ce n’est pas le cas, ils ne pourront pas accéder aux avantages de leur abonnement. 
+1. Accédez au portail Visual Studio Administration Management[https://manage.visualstudio.com](https://manage.visualstudio.com) 
 
-   > [!div class="mx-imgBorder"]
-   > page abonnements ![](_img/aliasing/aliasing-subscriptions-page.png)
+2. Localiser l’abonné ayant le problème d’inadéquation UPN. (La fonction [Filtre](search-license.md) peut faciliter la recherche d’un abonné.)
 
-#### <a name="how-to-correct-the-upn-mismatch"></a>Comment corriger l’incompatibilité UPN
+3. Modifier l’adresse de l’inscription à l’UPN de l’abonné 
 
-1. Accédez au portail de gestion de l’administration de Visual Studio à l’adresse https://manage.visualstudio.com 
+0. Enregistrez les modifications 
 
-2. Recherchez l’utilisateur qui rencontre le problème d’incompatibilité UPN.  La fonctionnalité de [filtre](search-license.md) peut faciliter cette opération si vous avez beaucoup d’abonnements. 
+0. Informez l’abonné de se déconnecter du portail d’abonnés et d’y accéder à nouveau à l’aide de l’UPN 
 
-3. Remplacez l’adresse E-mail de connexion par l’UPN de l’utilisateur.
+### <a name="personal-account-aliasing-issue"></a>Question d’alias de compte personnel
 
-4. Enregistrez les modifications 
+Les comptes d’abonnement personnels peuvent également rencontrer des problèmes si l’adresse e-mail utilisée pour se connecter au portail d’abonnements Visual Studio ne correspond pas à l’adresse e-mail associée à l’abonnement. 
 
-5. Demandez à l’utilisateur de se déconnecter du portail de l’abonné, puis de vous reconnecter à l’aide de l’UPN.   
+#### <a name="how-to-detect-if-your-personal-subscription-account-is-impacted-by-an-aliasing-issue"></a>Comment détecter si votre compte d’abonnement personnel est affecté par un problème d’alias
 
-### <a name="personal-account-aliasing-issue"></a>Problème d’alias de compte personnel
+1. Connectez-vous à[https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions)
 
-Les problèmes d’alias peuvent également affecter les comptes personnels. 
+0. Vérifiez que l’adresse e-mail de connexion indiquée en haut à droite de la page correspond à l’adresse que vous avez utilisée pour vous connecter.  Si l’adresse e-mail signée n’est pas la même que l’adresse e-mail utilisée pour accéder au site Web, il y a un conflit entre votre compte et l’alias.
 
-#### <a name="how-to-detect-if-a-personal-account-has-an-aliasing-issue"></a>Comment détecter si un compte personnel présente un problème d’alias
+#### <a name="how-to-fix-an-alias-issue"></a>Comment résoudre un problème d’alias
 
-1. Connectez-vous https://my.visualstudio.com.
+La plate-forme Visual Studio donne la priorité au pseudonyme principal pour afficher les détails de l’abonnement. 
 
-2. Cliquez sur l’onglet **abonnements** et vérifiez l’adresse à laquelle vous êtes connecté. 
+1. Allez **gérer comment vous vous connectez à Microsoft**. Connectez-vous à votre compte Microsoft si vous êtes invité. 
 
-3. Si l’adresse e-mail de connexion n’est pas la même que l’adresse de messagerie utilisée pour accéder au site Web, il y a un conflit entre votre compte et l’alias. 
+2. Sous les pseudonymes de compte, **sélectionnez Faites primaire** à côté de l’adresse e-mail utilisée pour attribuer l’abonnement. 
 
-#### <a name="how-to-fix-a-personal-account-aliasing-issue"></a>Comment résoudre un problème d’alias de compte personnel
+> [!div class="mx-imgBorder"]
+> ![Définissez l’adresse e-mail principale](_img//aliasing/account-aliases.png)
 
-La plateforme d’abonnements Visual Studio donne la priorité à l’alias principal pour afficher les détails de l’abonnement.  Pour résoudre le problème, vous devez créer un alias de messagerie différent de votre alias principal pour la connexion. 
+3. Déconnectez-vous du portail d’abonnements Visual Studio (https://my.visualstudio.com) 
 
-1. Accédez à [gérer la façon dont vous vous connectez à Microsoft](https://go.microsoft.com/fwlink/p/?linkid=842796).
-2. Connectez-vous à votre compte Microsoft si vous y êtes invité. 
-3. Sous alias de comptes, sélectionnez **rendre principal** en regard de l’adresse de messagerie utilisée pour attribuer l’abonnement. 
-4. Sous alias de comptes, sélectionnez rendre principal en regard de l’adresse de messagerie utilisée pour attribuer l’abonnement. 
-5. Déconnectez-vous du portail des abonnés Visual Studio (https://my.visualstudio.com) 
-6. Accédez de nouveau au portail à l’aide du nouvel alias principal. 
+4. Connectez-vous à l’aide du compte utilisé pour attribuer l’abonnement qui doit maintenant être configuré comme alias principal. 
 
-### <a name="ensure-a-successful-experience-for-your-users"></a>Garantir une expérience réussie pour vos utilisateurs
+## <a name="preventing-aliasing-issues"></a>Prévention des problèmes d’alias
 
-En tant qu’administrateur, il existe deux options pour garantir que vos abonnés ont une expérience de connexion réussie sur https://my.visualstudio.com. 
+En tant qu’administrateur, il existe deux options pour s’assurer que vos abonnés ont une expérience de connexion réussie sur [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs).
+- La première option (recommandée) est de tirer parti du compte d’annuaire https://my.visualstudio.comen tant que connecteur pour le portail Visual Studio Subscriptions à .  
+- La deuxième option (moins sécurisée) consiste à permettre à vos abonnés de se connecter à l’aide d’une adresse e-mail différente de leur adresse e-mail d’annuaire.
 
-- La première option (recommandée) consiste à utiliser le compte d’annuaire comme adresse de connexion sur https://manage.visualstudio.com.
-- La deuxième option, qui est moins sécurisée, la deuxième option (moins sécurisée) est de permettre à vos abonnés de se connecter à l’aide d’une autre adresse e-mail que l’adresse de messagerie de leur annuaire.
+Ces deux options sont configurées dans le portail d’administration en remplissant les étapes suivantes :  
+1. Connectez-vous à[https://manage.visualstudio.com](https://manage.visualstudio.com) 
 
-Les deux options sont configurées dans le portail d’administration en procédant comme suit :
+0. Si vous modifiez un seul utilisateur, sélectionnez cet utilisateur dans la table et cliquez à droite pour modifier. Cela ouvrira un panneau où vous pouvez modifier l’adresse e-mail de connexion. Effectuez les mises à jour nécessaires dans le champ d’adresses e-mail connectatif. Cliquez sur enregistrer et les modifications entreront en vigueur.  
 
-1. Connectez-vous https://manage.visualstudio.com 
+0. Si vous avez besoin d’apporter ces modifications à une grande quantité d’utilisateurs, vous pouvez utiliser la fonction de modification en vrac. Lisez [l’édition de plusieurs abonnés à l’aide de l’article de modification en vrac](https://docs.microsoft.com/visualstudio/subscriptions/edit-license#edit-multiple-subscribers-using-bulk-edit) pour plus d’informations.
 
-2. Si vous modifiez un seul utilisateur, sélectionnez cet utilisateur dans la table et cliquez avec le bouton droit pour le modifier. Cela ouvre un panneau dans lequel vous pouvez modifier l’adresse e-mail de connexion.  
+> [!NOTE]
+> Pour les changements individuels et en vrac, les abonnés recevront un e-mail avec des instructions que leur adresse e-mail de connexion a changé et ils devront se connecter à l’aide de l’adresse e-mail mise à jour. Il est également important de noter que si l’abonné a déjà activé les avantages sous l’autre adresse d’inscription, il devra continuer à utiliser l’autre adresse d’inscription pour y accéder.  
 
-3. Effectuez les mises à jour nécessaires dans le champ adresse de messagerie de connexion. 
+## <a name="see-also"></a>Voir aussi
+- [Documentation Visual Studio](https://docs.microsoft.com/visualstudio/)
+- [Documentation Azure DevOps](https://docs.microsoft.com/azure/devops/)
+- [Documentation Azure](https://docs.microsoft.com/azure/)
+- [Documentation Microsoft 365](https://docs.microsoft.com/microsoft-365/)
 
-4. Cliquez sur Enregistrer pour appliquer les modifications.  
-Si vous devez apporter ces modifications à une grande quantité d’utilisateurs, vous pouvez utiliser la fonctionnalité d’édition en bloc. Pour plus d’informations sur ce processus, consultez la section **modifier plusieurs abonnés à l’aide de la modification en bloc** de notre article [modifier les abonnements]] (edit-License.MD).  
 
 ## <a name="next-steps"></a>Étapes suivantes
 En savoir plus sur la gestion des abonnements Visual Studio.
-- [Affecter des abonnements individuels](assign-license.md)
+- [Attribuer des abonnements individuels](assign-license.md)
 - [Attribuer plusieurs abonnements](assign-license-bulk.md)
 - [Modifier des abonnements](edit-license.md)
-- [Supprimer des abonnements](delete-license.md)
 - [Déterminer l’utilisation maximale](maximum-usage.md)
 
-## <a name="see-also"></a>Voir aussi
-- [Documentation de Visual Studio](/visualstudio/)
-- [Documentation Azure DevOps](/azure/devops/)
-- [Documentation Azure](/azure/)
-- [Documentation Microsoft 365](/microsoft-365/)
+

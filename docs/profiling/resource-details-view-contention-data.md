@@ -14,10 +14,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: e66432fd2f5d8b1532bece9d76e7dfc2a261e4b7
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74771589"
 ---
 # <a name="resource-details-view---contention-data"></a>Vue Informations sur les ressources - Données de conflit
@@ -35,7 +35,7 @@ La vue Informations sur les ressources présente un graphique chronologique des 
 
 #### <a name="to-zoom-out-on-a-timeline"></a>Pour appliquer un zoom arrière sur une chronologie
 
-- Effectuez l'une des étapes suivantes :
+- Effectuez l’une des opérations suivantes :
 
   - Cliquez sur **Zoom arrière** pour revenir au niveau de zoom précédent.
 
@@ -55,7 +55,7 @@ La vue Informations sur les ressources présente un graphique chronologique des 
 
 - Dans le graphique chronologique, cliquez sur **Total**.
 
-     Le mode Conflits s’affiche pour la ressource. Pour plus d’informations, consultez [Mode Conflits de ressources](../profiling/resource-contentions-view-contention-data.md).
+     Le mode Conflits s’affiche pour la ressource. Pour plus d’informations, voir [Resource Contentions View](../profiling/resource-contentions-view-contention-data.md).
 
 #### <a name="to-view-all-the-contention-events-of-a-thread"></a>Pour afficher tous les événements de conflit d’un thread
 

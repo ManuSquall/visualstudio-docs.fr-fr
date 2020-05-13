@@ -1,5 +1,5 @@
 ---
-title: IDebugField::GetKind | Microsoft Docs
+title: IDebugField::GetKind - France Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugField::GetKind method
 ms.assetid: e7c9c60a-8e55-4ecc-aa63-0c814a1e92cc
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: d99c7d1bed9f5afe844539c9a9ccab11f43a8002
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 807b4ecab517e151c87bfc5daab3e94a1e7d5f22
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66333175"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80728813"
 ---
 # <a name="idebugfieldgetkind"></a>IDebugField::GetKind
-Cette méthode obtient le type de champ.
+Cette méthode obtient le genre de champ.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -41,10 +41,10 @@ int GetKind(
 
 ## <a name="parameters"></a>Paramètres
 `pdwKind`\
-[out] Retourne le type de champ sous la forme d’une combinaison de [FIELD_KIND](../../../extensibility/debugger/reference/field-kind.md) constantes.
+[out] Retourne le genre de champ comme une combinaison de [FIELD_KIND](../../../extensibility/debugger/reference/field-kind.md) constantes.
 
 ## <a name="return-value"></a>Valeur de retour
- En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.
+ En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
 ## <a name="see-also"></a>Voir aussi
 - [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)

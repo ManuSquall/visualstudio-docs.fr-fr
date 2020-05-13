@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 08add20b59e3e14897d1870aa45fd6cce8698d96
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75591708"
 ---
 # <a name="best-practices-for-using-code-snippets"></a>Bonnes pratiques pour l’utilisation des extraits de code
@@ -23,15 +23,15 @@ Le code d’un extrait de code montre uniquement le moyen le plus simple de fair
 
 ## <a name="handling-exceptions"></a>Gestion des exceptions
 
-Habituellement, l’extrait de code Try...Catch empêche les interceptions et réinitialise toutes les exceptions. ce qui peut ne pas être le bon choix pour votre projet. Pour chaque exception, il existe plusieurs façons de répondre. Vous trouverez des exemples sur les pages [Guide pratique pour gérer une exception à l’aide de try/catch (C#)](/dotnet/csharp/programming-guide/exceptions/how-to-handle-an-exception-using-try-catch) et [Instruction Try... Catch... Finally (Visual Basic)](/dotnet/visual-basic/language-reference/statements/try-catch-finally-statement).
+Habituellement, l’extrait de code Try...Catch empêche les interceptions et réinitialise toutes les exceptions. ce qui peut ne pas être le bon choix pour votre projet. Pour chaque exception, il existe plusieurs façons de répondre. Pour des exemples, voir [Comment : Gérer une exception à l’aide d’essayer/attraper](/dotnet/csharp/programming-guide/exceptions/how-to-handle-an-exception-using-try-catch) et [essayer... catch... Enfin déclaration (Visual Basic)](/dotnet/visual-basic/language-reference/statements/try-catch-finally-statement).
 
 ## <a name="file-locations"></a>Emplacements des fichiers
 
 Lorsque vous adaptez des emplacements de fichiers à votre application, vous devez réfléchir à ce qui suit :
 
-- Trouver un emplacement accessible. Les utilisateurs n’ayant pas forcément accès au dossier *Program Files* de l’ordinateur, il est possible que le stockage de fichiers avec les fichiers d’application ne fonctionne pas.
+- Trouver un emplacement accessible. Les utilisateurs peuvent ne pas avoir accès au dossier *de fichiers* de programme de l’ordinateur, de sorte que le stockage des fichiers avec les fichiers d’application peut ne pas fonctionner.
 
-- Trouver un emplacement sécurisé. Le stockage des fichiers dans le dossier racine (*C:\\* ) n’est pas sécurisé. Pour les données d’application, nous vous recommandons le dossier *Application Data*. Pour les données utilisateur, l’application peut créer un fichier pour chaque utilisateur dans le dossier *Documents*.
+- Trouver un emplacement sécurisé. Le stockage des fichiers dans le dossier racine (*C :\\*) n’est pas sécurisé. Pour les données d’application, nous recommandons le dossier *de données d’application.* Pour les données utilisateur, l’application peut créer un fichier pour chaque utilisateur dans le dossier *Documents*.
 
 - Utiliser un nom de fichier valide. Vous pouvez utiliser les contrôles <xref:System.Windows.Forms.OpenFileDialog> et <xref:System.Windows.Forms.SaveFileDialog> pour réduire la probabilité d’avoir des noms de fichiers non valides. N’oubliez pas qu’entre le moment où l’utilisateur sélectionne un fichier et celui où votre code manipule ce fichier, ce dernier peut avoir été supprimé. En outre, l’utilisateur peut ne pas avoir les autorisations pour écrire dans le fichier.
 
@@ -45,13 +45,13 @@ Le niveau de sécurisation d’un extrait de code dépend de l’endroit où il 
 
 - Protection des ressources (journaux des événements, Registre)
 
-- Stockage de secrets
+- Stockage des secrets
 
 - Vérification des entrées
 
 - Transmission des données aux outils de script
 
-Pour plus d’informations, consultez la page [Sécuriser des applications](../ide/securing-applications.md).
+Pour plus d’informations, voir [Applications De sécurisation](../ide/securing-applications.md).
 
 ## <a name="downloaded-code-snippets"></a>Extraits de code téléchargés
 
@@ -69,6 +69,6 @@ Les extraits de code IntelliSense installés par Visual Studio ne constituent pa
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Extraits de code IntelliSense Visual Basic](/dotnet/visual-basic/developing-apps/using-ide/intellisense-code-snippets)
-- [Sécuriser des applications](../ide/securing-applications.md)
+- [Extraits de code IntelliSense de base visuelle](/dotnet/visual-basic/developing-apps/using-ide/intellisense-code-snippets)
+- [Sécurisation des applications](../ide/securing-applications.md)
 - [Extraits de code](../ide/code-snippets.md)

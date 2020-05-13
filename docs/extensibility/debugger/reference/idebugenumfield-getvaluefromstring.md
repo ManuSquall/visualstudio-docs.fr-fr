@@ -1,5 +1,5 @@
 ---
-title: IDebugEnumField::GetValueFromString | Microsoft Docs
+title: IDebugEnumField::GetValueDeString (fr) Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugEnumField::GetValueFromString method
 ms.assetid: 1ef8ac5e-a3e0-4078-b876-7f5615aedcbb
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 81b74ecc780e2fd9df3cad5516c25f8a1fa657ec
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: bb340721c9f446b740c2723dc3f6dc05452e74de
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66345122"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80730259"
 ---
 # <a name="idebugenumfieldgetvaluefromstring"></a>IDebugEnumField::GetValueFromString
-Cette méthode retourne la valeur associée au nom d’une constante d’énumération.
+Cette méthode renvoie la valeur associée au nom d’une constante de recensement.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -43,16 +43,16 @@ int GetValueFromString(
 
 ## <a name="parameters"></a>Paramètres
 `pszValue`\
-[in] Chaîne spécifiant le nom pour lequel obtenir la valeur. Notez que pour C++, il s’agit d’une chaîne de caractères larges.
+[dans] Une chaîne spécifiant le nom pour lequel obtenir la valeur. Notez que pour le C, il s’agit d’une large chaîne de caractères.
 
 `pValue`\
 [out] Retourne la valeur numérique associée.
 
 ## <a name="return-value"></a>Valeur de retour
- En cas de réussite, retourne `S_OK`; sinon, retourne `S_FALSE`, si le nom ne fait pas partie de l’énumération ou un code d’erreur.
+ En cas `S_OK`de succès, les retours; autrement, `S_FALSE`les retours , si le nom ne fait pas partie de l’énumération, ou un code d’erreur.
 
 ## <a name="remarks"></a>Notes
- Cette méthode respecte la casse. Si une recherche respectant la casse est nécessaire (par exemple, dans un langage tel que Visual Basic, où les noms ne sont pas sensible à la casse), utilisez [GetValueFromStringCaseInsensitive](../../../extensibility/debugger/reference/idebugenumfield-getvaluefromstringcaseinsensitive.md).
+ Cette méthode est sensible aux cas. Si une recherche insensible au cas est nécessaire (par exemple, dans une langue telle que Visual Basic où les noms ne sont pas sensibles aux cas), utilisez [GetValueFromStringCaseInsensitive](../../../extensibility/debugger/reference/idebugenumfield-getvaluefromstringcaseinsensitive.md).
 
 ## <a name="see-also"></a>Voir aussi
 - [IDebugEnumField](../../../extensibility/debugger/reference/idebugenumfield.md)

@@ -1,36 +1,36 @@
 ---
-title: Exposer des objets de projet | Microsoft Docs
+title: Exposer les objets du projet (en anglais seulement) Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - project objects, exposing
 - extensibility, project objects
 ms.assetid: 5bb24967-434a-4ef4-87a0-2f3250c9e22d
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9076a430f9c725332d2097ce7148218d1000a30e
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 81446fa582524872b03199ae707f658776787961
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66332249"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80708469"
 ---
-# <a name="expose-project-objects"></a>Exposer des objets du projet
+# <a name="expose-project-objects"></a>Exposer les objets du projet
 
-Les types de projet personnalisés peuvent fournir des objets automation afin d’autoriser l’accès au projet à l’aide des interfaces d’automatisation. Chaque type de projet est censé fournir la norme <xref:EnvDTE.Project> objet automation qui est accessible à partir de <xref:EnvDTE.Solution>, qui contient une collection de tous les projets qui sont ouverts dans l’IDE. Chaque élément dans le projet doit être exposé par un <xref:EnvDTE.ProjectItem> objet accédé avec `Project.ProjectItems`. Outre ces objets automation standard, les projets peuvent choisir de fournir des objets automation de projet spécifique.
+Les types de projets personnalisés peuvent fournir des objets d’automatisation afin de permettre l’accès au projet à l’aide d’interfaces d’automatisation. Chaque type de projet est <xref:EnvDTE.Project> censé fournir l’objet d’automatisation standard qui est accessible à partir de <xref:EnvDTE.Solution>, qui contient une collection de tous les projets qui sont ouverts dans l’IDE. Chaque élément du projet devrait être <xref:EnvDTE.ProjectItem> exposé par `Project.ProjectItems`un objet accessible avec . En plus de ces objets d’automatisation standard, les projets peuvent choisir d’offrir des objets d’automatisation spécifiques au projet.
 
-Vous pouvez créer des personnalisés au niveau racine objets automation que vous pouvez accéder à liaison tardive à partir de l’objet DTE racine à l’aide `DTE.<customObjectName>` ou `DTE.GetObject("<customObjectName>")`. Par exemple, Visual C++ crée une collection de projet spécifique à un projet C++ appelée *VCProjects* auxquelles vous pouvez accéder à l’aide de `DTE.VCProjects` ou `DTE.GetObject("VCProjects")`. Vous pouvez également créer un `Project.Object`, qui est unique pour le type de projet, un `Project.CodeModel`, qui peut être interrogée pour son objet plus dérivé et un `ProjectItem`, qui expose `ProjectItem.Object` et un `ProjectItem.FileCodeModel`.
+Vous pouvez créer des objets d’automatisation personnalisés au niveau des `DTE.<customObjectName>` racines `DTE.GetObject("<customObjectName>")`que vous pouvez accéder en retard à partir de l’objet DTE racine à l’aide ou . Par exemple, Visual CMMD crée une collection de projets spécifique au projet CMD `DTE.GetObject("VCProjects")`appelée *VCProjects* que vous pouvez accéder à l’utilisation `DTE.VCProjects` ou . Vous pouvez également `Project.Object`créer un , qui est `Project.CodeModel`unique pour le type de projet, un `ProjectItem`, qui `ProjectItem.Object` peut `ProjectItem.FileCodeModel`être interrogé pour son objet le plus dérivé, et un , qui expose et a .
 
-Il est couramment utilisée pour les projets exposer une collection de projets personnalisés, spécifiques au projet. Par exemple, [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] crée une collection de projets spécifiques de C++ que vous pouvez ensuite accéder à l’aide de `DTE.VCProjects` ou `DTE.GetObject("VCProjects")`. Vous pouvez également créer un `Project.Object`, qui est unique pour le type de projet, un `Project.CodeModel`, qui peut être interrogée pour son objet plus dérivé, un `ProjectItem`, qui expose `ProjectItem.Object`et un `ProjectItem.FileCodeModel`.
+Il s’agit d’une convention commune pour les projets d’exposer une collection de projets personnalisées et spécifiques à un projet. Par exemple, [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] crée une collection de projet spécifique `DTE.VCProjects` À `DTE.GetObject("VCProjects")`CMD que vous pouvez ensuite accéder à l’utilisation ou . Vous pouvez également `Project.Object`créer un , qui est `Project.CodeModel`unique pour le type de projet, un `ProjectItem`, qui `ProjectItem.Object`peut `ProjectItem.FileCodeModel`être interrogé pour son objet le plus dérivé, un , qui expose , et a .
 
-## <a name="to-contribute-a-vspackage-specific-object-for-a-project"></a>De contribuer un objet VSPackage spécifique pour un projet
+## <a name="to-contribute-a-vspackage-specific-object-for-a-project"></a>Contribuer à un objet spécifique à VSPackage pour un projet
 
-1. Ajouter les clés appropriées à la *.pkgdef* fichier de votre VSPackage.
+1. Ajoutez les clés appropriées au fichier *.pkgdef* de votre VSPackage.
 
-     Par exemple, voici le *.pkgdef* paramètres pour le projet de langage C++ :
+     Voici, par exemple, les paramètres *.pkgdef* du projet linguistique CMD :
 
     ```
     [$RootKey$\Packages\{F1C25864-3097-11D2-A5C5-00C04F7968B4}\Automation]
@@ -39,7 +39,7 @@ Il est couramment utilisée pour les projets exposer une collection de projets p
     "VCProjectEngineEventsObject"=""
     ```
 
-2. Implémenter le code dans le <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetAutomationObject%2A> méthode, comme dans l’exemple suivant.
+2. Implémenter <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetAutomationObject%2A> le code dans la méthode, comme dans l’exemple suivant.
 
     ```cpp
     STDMETHODIMP CVsPackage::GetAutomationObject(
@@ -69,7 +69,7 @@ Il est couramment utilisée pour les projets exposer une collection de projets p
     }
     ```
 
-     Dans le code, `g_wszAutomationProjects` est le nom de votre collection de projets. Le `GetAutomationProjects` méthode crée un objet qui implémente le `Projects` interface et retourne un `IDispatch` pointeur vers l’objet appelant, comme indiqué dans l’exemple de code suivant.
+     Dans le `g_wszAutomationProjects` code, est le nom de votre collection de projet. La `GetAutomationProjects` méthode crée un objet `Projects` qui implémente l’interface et renvoie un `IDispatch` pointeur à l’objet d’appel, comme indiqué dans l’exemple de code suivant.
 
     ```cpp
     HRESULT CVsPackage::GetAutomationProjects(/* [out] */ IDispatch ** ppIDispatch)
@@ -87,9 +87,9 @@ Il est couramment utilisée pour les projets exposer une collection de projets p
     }
     ```
 
-     Choisissez un nom unique pour votre objet automation. Conflits de noms sont imprévisibles, entraînant des collisions d’un nom d’objet en conflit à arbitrairement exclues si plusieurs types de projets utilisent le même nom. Vous devez inclure le nom de votre société ou de certains aspects uniques de son nom de produit dans le nom de l’objet automation.
+     Choisissez un nom unique pour votre objet d’automatisation. Les conflits de noms sont imprévisibles, et les collisions font jeter arbitrairement un nom d’objet contradictoire si plusieurs types de projets utilisent le même nom. Vous devez inclure votre nom d’entreprise ou un aspect unique de son nom de produit au nom de l’objet d’automatisation.
 
-     Personnalisé `Projects` objet de collection est un point d’entrée plus de commodité pour la partie restante de votre modèle automation de projet. Votre objet de projet est également accessible depuis le <xref:EnvDTE.Solution> collection de projets. Une fois que vous avez créé les entrées appropriées de code et de Registre qui fournissent des consommateurs disposant de `Projects` objets de collection, votre implémentation doit fournir restant des objets standards pour le modèle de projet. Pour plus d’informations, consultez [modélisation de projet](../../extensibility/internals/project-modeling.md).
+     L’objet de collecte personnalisé `Projects` est un point d’entrée pratique pour la partie restante de votre modèle d’automatisation de projet. Votre objet de projet <xref:EnvDTE.Solution> est également accessible à partir de la collection du projet. Une fois que vous avez créé les `Projects` entrées de code et de registre appropriées qui fournissent aux consommateurs des objets de collecte, votre implémentation doit fournir les objets standard restants pour le modèle de projet. Pour plus d’informations, voir [modélisation du projet](../../extensibility/internals/project-modeling.md).
 
 ## <a name="see-also"></a>Voir aussi
 

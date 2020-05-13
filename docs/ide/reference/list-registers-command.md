@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: e87b10a7827b5365b507abb2c72a21506e59c19e
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75568683"
 ---
 # <a name="list-registers-command"></a>Afficher les registres, commande
@@ -39,7 +39,7 @@ Affiche les valeurs du `register` ou `registerGroup` spécifié. Si aucun `regis
 
 `Debug.ListRegisters /Display eax`
 
-est équivalent à
+équivaut à :
 
 `Debug.ListRegisters eax`
 
@@ -55,10 +55,10 @@ Ajoute une ou plusieurs valeurs de `register` ou `registerGroup` dans la liste.
 
 Supprime une ou plusieurs valeurs de `register` ou `registerGroup` de la liste.
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Notes 
 L’alias `r` peut être utilisé à la place de `Debug.ListRegisters`.
 
-## <a name="example"></a>Exemple
+## <a name="example"></a> Exemple
 Cet exemple utilise l’alias `Debug.ListRegisters``r` pour afficher les valeurs du groupe de registres `Flags`.
 
 ```cmd
@@ -67,6 +67,6 @@ r /Display Flags
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Visual Studio, commandes](../../ide/reference/visual-studio-commands.md)
-- [Concepts de base du débogage : fenêtre Registres](../../debugger/debugging-basics-registers-window.md)
-- [Guide pratique pour utiliser la fenêtre Registres](../../debugger/how-to-use-the-registers-window.md)
+- [Commandes de studio visuel](../../ide/reference/visual-studio-commands.md)
+- [Concepts de base du débogage : fenêtre Registres](../../debugger/debugging-basics-registers-window.md)
+- [Comment : utiliser la fenêtre Registres](../../debugger/how-to-use-the-registers-window.md)

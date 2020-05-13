@@ -24,10 +24,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: b1cf71abb19f6d4a3a459b4e5559e536f18f41c8
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/16/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "76114559"
 ---
 # <a name="build-and-clean-projects-and-solutions-in-visual-studio"></a>Générer et nettoyer des projets et des solutions dans Visual Studio
@@ -38,7 +38,7 @@ En appliquant les procédures décrites dans cette rubrique, vous pouvez génér
 > Cette rubrique s’applique à Visual Studio sur Windows. Pour Visual Studio pour Mac, consultez [Générer et nettoyer des projets et des solutions dans Visual Studio pour Mac](/visualstudio/mac/building-and-cleaning-projects-and-solutions).
 
 > [!NOTE]
-> En fonction de vos paramètres actifs, l’interface utilisateur dans votre édition de Visual Studio peut-être différente de celle décrite dans cette rubrique. Pour modifier vos paramètres, par exemple pour définir les paramètres **Général** ou **Visual C++** , choisissez **Outils** > **Importation et exportation de paramètres**, puis choisissez **Réinitialiser tous les paramètres**.
+> En fonction de vos paramètres actifs, l’interface utilisateur dans votre édition de Visual Studio peut-être différente de celle décrite dans cette rubrique. Pour modifier vos paramètres, par exemple pour définir les paramètres **Général** ou **Visual C++**, choisissez **Outils** > **Importation et exportation de paramètres**, puis choisissez **Réinitialiser tous les paramètres**.
 
 ## <a name="to-build-rebuild-or-clean-an-entire-solution"></a>Pour générer, régénérer ou nettoyer une solution entière
 
@@ -59,41 +59,41 @@ En appliquant les procédures décrites dans cette rubrique, vous pouvez génér
 
 1. Dans l’**Explorateur de solutions**, choisissez ou ouvrez le projet.
 
-2. Dans la barre de menus, choisissez **générer**, puis choisissez **générer** *NomProjet* ou **régénérer** *ProjectName*.
+2. Dans la barre de menus, choisissez **Générer**, puis **Générer** *ProjectName* ou **Régénérer** *ProjectName*.
 
-    - Choisissez **générer** *nom_projet* pour générer uniquement les composants de projet qui ont été modifiés depuis la build la plus récente.
+    - Choisissez **Générer** *ProjectName* pour générer uniquement les composants qui ont été modifiés depuis la dernière génération du projet.
 
-    - Choisissez **régénérer** *ProjectName* pour « nettoyer » le projet, puis générer les fichiers projet et tous les composants du projet.
+    - Choisissez **Régénérer** *ProjectName* pour « nettoyer » le projet, puis générer les fichiers projet et tous les composants du projet.
 
 ## <a name="to-build-only-the-startup-project-and-its-dependencies"></a>Pour générer uniquement le projet de démarrage et ses dépendances
 
-1. Dans la barre de menus, choisissez **Outils** > **Options**.
+1. Sur la barre de menu, choisissez **Tools** > **Options**.
 
 2. Dans la boîte de dialogue **Options**, développez le nœud **Projets et solutions**, puis choisissez la page **Générer et exécuter**.
 
-     La boîte de dialogue **Générer et exécuter** > **Projets et solutions** > **Options** s’ouvre.
+     La boîte de dialogue **Build and Run** > **Projects and Solutions** > **Options** s’ouvre.
 
 3. Cochez la case **Générer des projets de démarrage et des dépendances à l’exécution**.
 
      Quand cette case est cochée, seuls le projet de démarrage actuel et ses dépendances sont générés quand vous effectuez l’une des opérations suivantes :
 
-    - Dans la barre de menus, choisissez **Déboguer** > **Démarrer** (**F5**).
+    - Au menu bar, choisissez **Debug** > **Start** (**F5**).
 
-    - Dans la barre de menus, choisissez **Générer** > **Générer la solution** (**Ctrl**+**Maj**+**B**).
+    - Sur la barre de menu, choisissez **Build** > **Build Solution** (**Ctrl**+**Shift**+**B**).
 
-    Quand cette case est décochée, tous les projets, leurs dépendances et les fichiers solution sont générés quand vous exécutez l’une des commandes précédentes. Par défaut, cette case à cocher est désactivée.
+    Quand cette case est décochée, tous les projets, leurs dépendances et les fichiers solution sont générés quand vous exécutez l’une des commandes précédentes. Par défaut, cette case est décochée.
 
 ## <a name="to-build-only-the-selected-visual-c-project"></a>Pour générer uniquement le projet Visual C++ sélectionné
 
-Choisissez un projet [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)], puis, dans la barre de menus, choisissez **Générer** > **Projet uniquement** et l’une des commandes suivantes :
+Choisissez [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] un projet, puis, sur la barre de menu, choisissez **Build** > **Project Only,** et l’une des commandes suivantes:
 
 - **Générer uniquement** *nom_projet*
 
 - **Régénérer uniquement** *nom_projet*
 
-- **Nettoyer uniquement** *ProjectName*
+- **Nettoyer uniquement** *nom_projet*
 
-- **Lier uniquement** *ProjectName*
+- **Lier uniquement** *nom_projet*
 
 Ces commandes s’appliquent uniquement au projet [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] que vous avez choisi, sans générer, régénérer, nettoyer ou lier aucune dépendance de projet ou fichier de solution. En fonction de votre version de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], le sous-menu **Projet uniquement** peut contenir plus de commandes.
 
@@ -107,18 +107,18 @@ Si les fichiers ont des dépendances, ils seront compilés par ordre de dépenda
 
 Effectuez l'une des étapes suivantes :
 
-- Dans la barre de menus, sélectionnez **Générer** > **Annuler**.
+- Sur la barre de menu, sélectionnez **Build** > **Cancel**.
 
-- Appuyez sur **Ctrl**+**Arrêter**.
+- Appuyez **sur Ctrl**+**Break**.
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Guide pratique pour afficher, enregistrer et configurer des fichiers journaux de génération](../ide/how-to-view-save-and-configure-build-log-files.md)
-- [Obtention de journaux de génération](../msbuild/obtaining-build-logs-with-msbuild.md)
+- [Comment : Afficher, enregistrer et configurer des fichiers journaux de construction](../ide/how-to-view-save-and-configure-build-log-files.md)
+- [Obtenir des journaux de construction](../msbuild/obtaining-build-logs-with-msbuild.md)
 - [Compilation et génération](../ide/compiling-and-building-in-visual-studio.md)
-- [Présentation des configurations de build](../ide/understanding-build-configurations.md)
+- [Comprendre les configurations de construction](../ide/understanding-build-configurations.md)
 - [Guide pratique pour définir des configurations de débogage et des configurations Release](../debugger/how-to-set-debug-and-release-configurations.md)
-- [Référence à la génération d’un programme C/C++](/cpp/build/reference/c-cpp-building-reference)
+- [Référence de construction C/C](/cpp/build/reference/c-cpp-building-reference)
 - [Devenv command line switches](../ide/reference/devenv-command-line-switches.md)
 - [Solutions et projets](../ide/solutions-and-projects-in-visual-studio.md)
 - [Générer et nettoyer des projets et des solutions (Visual Studio pour Mac)](/visualstudio/mac/building-and-cleaning-projects-and-solutions)

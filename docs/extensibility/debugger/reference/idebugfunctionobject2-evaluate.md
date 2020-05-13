@@ -1,27 +1,27 @@
 ---
-title: IDebugFunctionObject2::Evaluate | Microsoft Docs
+title: IDebugFunctionObject2::Evaluate Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - IDebugFunctionObject2::Evaluate
 ms.assetid: bc54c652-904b-4297-a6db-faa329684881
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: a830dadd9d24f5ecb815db5a89342c5acd281a9c
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: d87d7d3531d198a1478b4aaa55b354c3ac101302
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66313406"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80728444"
 ---
 # <a name="idebugfunctionobject2evaluate"></a>IDebugFunctionObject2::Evaluate
-Appelle la fonction et retourne la valeur obtenue en tant qu’objet.
+Appelle la fonction et renvoie la valeur résultante comme objet.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -47,22 +47,22 @@ int Evaluate (
 
 ## <a name="parameters"></a>Paramètres
 `ppParams`\
-[in] Un tableau de [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) objets qui représente les paramètres d’entrée. Chacun de ces paramètres a été créé en utilisant l’une des méthodes de créer dans cette interface.
+[dans] Une gamme d’objets [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) qui représente les paramètres d’entrée. Chacun de ces paramètres a été créé en utilisant l’une des méthodes Create dans cette interface.
 
 `dwParams`\
-[in] Le nombre de paramètres dans le `ppParams` tableau.
+[dans] Le nombre de paramètres `ppParams` dans le tableau.
 
 `dwEvalFlags`\
-[in] Une combinaison d’indicateurs de la [EVALFLAGS](../../../extensibility/debugger/reference/evalflags.md) énumération qui spécifient la façon dont l’évaluation doit être effectuée.
+[dans] Une combinaison de drapeaux du recensement [EVALFLAGS](../../../extensibility/debugger/reference/evalflags.md) qui précisent comment l’évaluation doit être effectuée.
 
 `dwTimeout`\
-[in] Spécifie la durée maximale, en millisecondes, à attendre avant de retourner à partir de cette méthode. Utilisez **infinie** pour attendre indéfiniment.
+[dans] Spécifie le temps maximum, en millisecondes, d’attendre avant de revenir de cette méthode. Utilisez **INFINITE** pour attendre indéfiniment.
 
 `ppResult`\
 [out] Retourne un **IDebugObject** qui représente la valeur de la fonction en tant qu’objet.
 
 ## <a name="return-value"></a>Valeur de retour
- En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.
+ En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
 ## <a name="see-also"></a>Voir aussi
 - [IDebugFunctionObject2](../../../extensibility/debugger/reference/idebugfunctionobject2.md)

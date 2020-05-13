@@ -7,12 +7,12 @@ ms.author: midumont
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 20381dd78f169e2b549e077992ac0d1dc1b5c44c
-ms.sourcegitcommit: 6375001ab26786af8d4d449f5846f8a49779ed18
+ms.openlocfilehash: 0e21d0617f954c0cc34975b7f8626b83966f6b5d
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2020
-ms.locfileid: "76892132"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "77706390"
 ---
 # <a name="how-to-insert-xml-comments-for-documentation-generation"></a>Guide pratique pour insérer des commentaires XML pour la génération de documentation
 
@@ -30,15 +30,15 @@ Le fichier XML généré par le compilateur peut être distribué avec votre ass
 
 1. Placez votre curseur sur l’élément que vous souhaitez documenter, par exemple, une méthode.
 
-2. Effectuez l'une des actions suivantes :
+2. Effectuez l’une des actions suivantes :
 
    - Tapez `///` en C# ou `'''` en Visual Basic.
 
    - Dans le menu **Edition**, choisissez **IntelliSense** > **Insérer un commentaire**.
 
-   - Dans le menu contextuel (clic droit) ou juste au-dessus de l’élément de code, choisissez **Extrait** > **Insérer un commentaire**.
+   - À partir du menu de clic droit ou de contexte sur ou juste au-dessus de l’élément de code, choisissez **Snippet** > **Insert Commentaire**
 
-   Le modèle XML est généré immédiatement au-dessus de l’élément de code. Par exemple, quand vous commentez une méthode, il génère l’élément **\<summary\>** , un élément **\<param\>** pour chaque paramètre et un élément **\<returns\>** pour documenter la valeur de retour.
+   Le modèle XML est généré immédiatement au-dessus de l’élément de code. Par exemple, lors de la mise au jour d’une méthode, elle génère l’élément ** \<sommaire,\> ** un ** \<\> ** ** \<\> ** élément de param pour chaque paramètre et un élément de retour pour documenter la valeur de retour.
 
    ![Modèle de commentaire XML (C#)](media/doc-preview-cs.png)
 
@@ -48,18 +48,18 @@ Le fichier XML généré par le compilateur peut être distribué avec votre ass
 
    ![Commentaire terminé](media/doc-result-cs.png)
 
-Vous pouvez utiliser des styles dans des commentaires XML qui s’affichent dans Info Express lorsque vous pointez sur l’élément. Ces styles sont notamment les suivants : italique, gras, puces et lien hypertexte.
+Vous pouvez utiliser des styles dans les commentaires XML qui rendront dans Quick Info lorsque vous planez au-dessus de l’élément. Ces styles incluent : italiques, audacieux, balles, et un lien cliquable.
 
-   ![Commentaire terminé](media/doc-styles-cs.png) 
+   ![Commentaire terminé](media/doc-style-cs.png) 
 
 > [!NOTE]
-> Une [option](../../ide/reference/options-text-editor-csharp-advanced.md) permet d’activer et de désactiver les commentaires de documentation XML après la saisie des caractères `///` en C# ou `'''` en Visual Basic. Dans la barre de menus, choisissez **Outils** > **Options** pour ouvrir la boîte de dialogue **Options**. Ensuite, accédez à **Éditeur de texte** > **C#** ou **Basic** > **Avancé**. Dans la section **Aide sur l’éditeur**, recherchez l’option **Générer des commentaires sur la documentation XML**.
+> Une [option](../../ide/reference/options-text-editor-csharp-advanced.md) permet d’activer et de désactiver les commentaires de documentation XML après la saisie des caractères `///` en C# ou `'''` en Visual Basic. De la barre de menu, choisissez des options **d’outils** > **Options** pour ouvrir la boîte de dialogue **Options.** Ensuite, naviguez vers **l’éditeur de** > texte**C ou** **Basic** > **Advanced**. Dans la section **Aide sur l’éditeur**, recherchez l’option **Générer des commentaires sur la documentation XML**.
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Commentaires de documentation XML (Guide de programmation C#)](/dotnet/csharp/programming-guide/xmldoc/xml-documentation-comments)
+- [Commentaires sur la documentation XML (Guide de programmation CMD)](/dotnet/csharp/programming-guide/xmldoc/xml-documentation-comments)
 - [Documentation de votre code avec des commentaires XML (Guide C#)](/dotnet/csharp/codedoc)
 - [Guide pratique pour créer une documentation XML (Visual Basic)](/dotnet/visual-basic/programming-guide/program-structure/how-to-create-xml-documentation)
-- [Commentaires en C++](/cpp/cpp/comments-cpp)
+- [Commentaires de C](/cpp/cpp/comments-cpp)
 - [Documentation XML (C++)](/cpp/build/reference/xml-documentation-visual-cpp)
-- [Génération de code](../code-generation-in-visual-studio.md)
+- [Génération de codes](../code-generation-in-visual-studio.md)

@@ -1,35 +1,35 @@
 ---
-title: Activation d’un programme à déboguer | Microsoft Docs
+title: Permettre la débrille d’un programme . Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Debugging SDK], enabling for programs
 ms.assetid: 61d24820-0cd9-48b6-8674-6813f7493237
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b939b692e4e93243f5f346fcd2fcb2872e989615
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 17c6218cd0b25c0cf0134351fd5efd7490b6a1f3
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66341641"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80738893"
 ---
-# <a name="enable-a-program-to-be-debugged"></a>Activer un programme à déboguer
-Avant votre moteur de débogage (dé) pouvez déboguer un programme, vous devez tout d’abord lancer le DE ou attacher à un programme existant.
+# <a name="enable-a-program-to-be-debugged"></a>Permettre la déboiffée d’un programme
+Avant que votre moteur de débogé (DE) puisse déboiffer un programme, vous devez d’abord lancer le DE ou l’attacher à un programme existant.
 
-## <a name="in-this-section"></a>Dans cette section
- [Obtenir un port](../../extensibility/debugger/getting-a-port.md) explique comment obtenir un port en tant que la première étape de permettre à un programme à déboguer.
+## <a name="in-this-section"></a>Contenu de cette section
+ [Obtenir un port](../../extensibility/debugger/getting-a-port.md) Discute de la façon d’obtenir un port comme première étape pour permettre la débâmation d’un programme.
 
- [Enregistrer le programme](../../extensibility/debugger/registering-the-program.md) explique l’étape suivante de l’activation d’un programme à déboguer : l’inscription avec le port. Une fois inscrit, le programme peut être débogué soit par le processus d’attachement ou le débogage juste-à-temps (JIT).
+ [Enregistrer le programme](../../extensibility/debugger/registering-the-program.md) Explique la prochaine étape pour permettre la déboissailler d’un programme : l’enregistrer au port. Une fois inscrit, le programme peut être déboglé soit par le processus d’attachement ou de débogage juste à temps (JIT).
 
- [Attacher le programme](../../extensibility/debugger/attaching-to-the-program.md) explique l’étape suivante : attacher le débogueur au programme.
+ [Joindre au programme](../../extensibility/debugger/attaching-to-the-program.md) Explique l’étape suivante : attacher le débbuggeur au programme.
 
- [En fonction du lancement attachement](../../extensibility/debugger/launch-based-attachment.md) décrit basée sur le lancement de pièce jointe à un programme, ce qui est automatique lors de son lancement en le SDM.
+ [Fixation basée sur le lancement](../../extensibility/debugger/launch-based-attachment.md) Décrit la pièce jointe basée sur le lancement à un programme, qui est automatique lors du lancement par le SDM.
 
- [Envoyer les événements requis](../../extensibility/debugger/sending-the-required-events.md) vous guide à travers les événements requis lors de la création d’un moteur de débogage (DE) et en l’attachant à un programme.
+ [Envoyer les événements requis](../../extensibility/debugger/sending-the-required-events.md) Vous étapes à travers les événements requis lors de la création d’un moteur de débogé (DE) et de l’attacher à un programme.
 
-## <a name="related-sections"></a>Rubriques connexes
- [Création d’un moteur de débogage personnalisé](../../extensibility/debugger/creating-a-custom-debug-engine.md) définit un moteur de débogage (DE) et décrit les services implémentés via les interfaces DE et comment ils peuvent provoquer le débogueur à la transition entre les différents modes de fonctionnement.
+## <a name="related-sections"></a>Sections connexes
+ [Création d’un moteur de débogé personnalisé](../../extensibility/debugger/creating-a-custom-debug-engine.md) Définit un moteur de débogé (DE), et décrit les services mis en œuvre à travers les interfaces DE et comment ils peuvent provoquer la transition du débbuggeur entre les différents modes opérationnels.

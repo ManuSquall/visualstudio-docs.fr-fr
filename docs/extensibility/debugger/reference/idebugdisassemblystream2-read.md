@@ -1,5 +1,5 @@
 ---
-title: IDebugDisassemblyStream2::Read | Microsoft Docs
+title: IDebugDisassemblyStream2::Lire Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugDisassemblyStream2::Read
 ms.assetid: 7db5f6bb-73ee-45bc-b187-c1b6aa2dfdd5
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: c74ed1de1d12cc7384ee8f7d27dad910c7b9c9d5
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 4a4f5c0250405c2e2a0314b52c4cbc64d749fc0a
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66310352"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80732098"
 ---
 # <a name="idebugdisassemblystream2read"></a>IDebugDisassemblyStream2::Read
-Lit les instructions à partir de la position actuelle dans le flux de code machine.
+Lit les instructions à partir de la position actuelle dans le flux de démontage.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -47,26 +47,26 @@ int Read( 
 
 ## <a name="parameters"></a>Paramètres
 `dwInstructions`\
-[in] Le nombre d’instructions à désassembler. Cette valeur est également la longueur maximale de la `prgDisassembly` tableau.
+[dans] Le nombre d’instructions à démonter. Cette valeur est également la `prgDisassembly` longueur maximale de la gamme.
 
 `dwFields`\
-[in] Une combinaison d’indicateurs de la [DISASSEMBLY_STREAM_FIELDS](../../../extensibility/debugger/reference/disassembly-stream-fields.md) énumération qui indiquent quels champs de `prgDisassembly` doivent être remplis.
+[dans] Une combinaison de drapeaux de [l’DISASSEMBLY_STREAM_FIELDS](../../../extensibility/debugger/reference/disassembly-stream-fields.md) énumération qui `prgDisassembly` indiquent quels champs de sont à remplir.
 
 `pdwInstructionsRead`\
-[out] Retourne le nombre d’instructions réellement désassemblé.
+[out] Retourne le nombre d’instructions effectivement démontées.
 
 `prgDisassembly`\
-[out] Un tableau de [DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md) structures qui contient le code désassemblé, une structure par instruction désassemblée. La longueur de ce tableau est déterminée par le `dwInstructions` paramètre.
+[out] Un éventail de structures [de démontageData](../../../extensibility/debugger/reference/disassemblydata.md) qui est rempli avec le code démonté, une structure par instruction démontée. La longueur de ce tableau `dwInstructions` est dictée par le paramètre.
 
 ## <a name="return-value"></a>Valeur de retour
- En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.
+ En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
 ## <a name="remarks"></a>Notes
- Le nombre maximal d’instructions qui sont disponibles dans l’étendue actuelle peut être obtenu en appelant le [GetSize](../../../extensibility/debugger/reference/idebugdisassemblystream2-getsize.md) (méthode).
+ Le nombre maximal d’instructions disponibles dans la portée actuelle peut être obtenu en appelant la méthode [GetSize.](../../../extensibility/debugger/reference/idebugdisassemblystream2-getsize.md)
 
- La position actuelle où l’instruction suivante est lue à partir de peut être modifiée en appelant le [recherche](../../../extensibility/debugger/reference/idebugdisassemblystream2-seek.md) (méthode).
+ La position actuelle d’où l’instruction suivante est lue peut être modifiée en appelant la méthode [Seek.](../../../extensibility/debugger/reference/idebugdisassemblystream2-seek.md)
 
- Le `DSF_OPERANDS_SYMBOLS` indicateur peut être ajouté à la `DSF_OPERANDS` indicateur dans le `dwFields` paramètre pour indiquer que les noms de symboles doivent être utilisés lors du désassemblage d’instructions.
+ Le `DSF_OPERANDS_SYMBOLS` drapeau peut être `DSF_OPERANDS` ajouté `dwFields` au drapeau dans le paramètre pour indiquer que les noms des symboles doivent être utilisés lors du démontage des instructions.
 
 ## <a name="see-also"></a>Voir aussi
 - [IDebugDisassemblyStream2](../../../extensibility/debugger/reference/idebugdisassemblystream2.md)

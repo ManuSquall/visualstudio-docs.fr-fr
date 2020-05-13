@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 33302a4a686d80621cc64ee018371a2d03ea30ee
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/16/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "76114728"
 ---
 # <a name="configuring-warnings-in-visual-basic"></a>Configurer les avertissements en Visual Basic
@@ -30,16 +30,16 @@ Il est possible que vous souhaitiez personnaliser votre projet en désactivant c
 ## <a name="turning-warnings-off-and-on"></a>Activer et désactiver les avertissements
 Il existe deux façons de configurer les avertissements : vous pouvez utiliser le **Concepteur de projet**, ou vous pouvez utiliser les options **/warnaserror** et **/nowarn** du compilateur.
 
-L’onglet **Compiler** de la page **Concepteur de projet** permet d’activer et de désactiver les avertissements. Cochez la case **Désactiver tous les avertissements**  pour désactiver tous les avertissements. Cochez la case **Considérer tous les avertissements comme des erreurs** pour traiter tous les avertissements comme des erreurs. Vous pouvez attribuer le statut d’erreur à certains avertissements (et inversement) dans le tableau affiché.
+L’onglet **Compiler** de la page **Concepteur de projet** permet d’activer et de désactiver les avertissements. Cochez la case **Désactiver tous les avertissements ** pour désactiver tous les avertissements. Cochez la case **Considérer tous les avertissements comme des erreurs** pour traiter tous les avertissements comme des erreurs. Vous pouvez attribuer le statut d’erreur à certains avertissements (et inversement) dans le tableau affiché.
 
 Si **Option Strict** est **Off**, les avertissements relatifs à **Option Strict** ne peuvent pas être traités indépendamment les uns des autres. Si **Option Strict** est **On**, les avertissements qui lui sont associés sont traités comme des erreurs, quel que soit leur état. Si **Option Strict** est défini sur **Custom** en spécifiant `/optionstrict:custom` dans le compilateur de ligne de commande, les avertissements **Option Strict** peuvent être activés ou désactivés indépendamment les uns des autres.
 
 L’option de ligne de commande **/warnaserror** du compilateur peut également être utilisée pour spécifier si les avertissements doivent être traités comme des erreurs. Vous pouvez ajouter une liste séparée par des virgules à cette option pour spécifier que les avertissements doivent être traités comme des erreurs ou des avertissements à l’aide des touches + et -. Le tableau suivant présente les options possibles.
 
-|Option de ligne de commande|Informations fournies|
+|Option de ligne de commande|Spécifie|
 | - |---------------|
 |`/warnaserror+`|Considérer tous les avertissements comme des erreurs|
-|`/warnsaserror`-|Ne considère pas les avertissements comme des erreurs. Il s'agit de la valeur par défaut.|
+|`/warnsaserror`-|Ne considère pas les avertissements comme des erreurs. Il s’agit de la valeur par défaut.|
 |`/warnaserror+:<warning list` `>`|Considère certains avertissements comme des erreurs. Ces avertissements sont répertoriés par numéro d’erreur dans une liste séparée par des virgules.|
 |`/warnaserror-:<warning list>`|Ne considère pas certains avertissements comme des erreurs. Ces avertissements sont répertoriés par numéro d’erreur dans une liste séparée par des virgules.|
 |`/nowarn`|N’affiche pas d’avertissement.|
@@ -88,7 +88,7 @@ Généré lorsqu’une variable est utilisée avant qu’une valeur ne lui ait �
 ID : 42104, 42030
 
 ### <a name="unused-local-variable-warning"></a>Variable locale non utilisée
-Généré lorsqu’une variable locale est déclarée, mais non référencée. La valeur par défaut est On (activé).
+Généré lorsqu’une variable locale est déclarée, mais non référencée. Par défaut, cette option est activée.
 
 ID : 42024
 
@@ -120,8 +120,8 @@ ID : 42029, 42031
 ## <a name="see-also"></a>Voir aussi
 
 - [Types d’erreurs](/dotnet/visual-basic/programming-guide/language-features/error-types)
-- [Instruction Try...Catch...Finally](/dotnet/visual-basic/language-reference/statements/try-catch-finally-statement)
+- [Essayer... catch... Enfin déclaration](/dotnet/visual-basic/language-reference/statements/try-catch-finally-statement)
 - [/nowarn](/dotnet/visual-basic/reference/command-line-compiler/nowarn)
 - [/warnaserror (Visual Basic)](/dotnet/visual-basic/reference/command-line-compiler/warnaserror)
-- [Compiler, page du Concepteur de projets (Visual Basic)](../ide/reference/compile-page-project-designer-visual-basic.md)
-- [Avertissements du compilateur désactivés par défaut](/cpp/preprocessor/compiler-warnings-that-are-off-by-default)
+- [Page Compile, Concepteur de projet (Visual Basic)](../ide/reference/compile-page-project-designer-visual-basic.md)
+- [Avertissements compilateur qui sont éteints par défaut](/cpp/preprocessor/compiler-warnings-that-are-off-by-default)

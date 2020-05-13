@@ -1,5 +1,5 @@
 ---
-title: Développement d’un Service de langage hérité | Microsoft Docs
+title: Développer un service de langue héritée (fr) Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -11,68 +11,68 @@ f1_keywords:
 helpviewer_keywords:
 - language services, developing
 ms.assetid: 6151ba88-c1c3-41de-a1cc-668f494d48d1
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6aa21b2f2e8b0321e829fd27fde1d833a63e7ecb
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 0c7f930d5087b6a822156fd44024def0d5b42b49
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66351572"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80708671"
 ---
-# <a name="develop-a-legacy-language-service"></a>Développer un service de langage hérité
-Cette section fournit des liens vers des rubriques qui vous aident à créer un service de langage hérité.
+# <a name="develop-a-legacy-language-service"></a>Développer un service linguistique hérité
+Cette section est reliée à des sujets qui vous aident à créer un service linguistique hérité.
 
- Services de langage hérité sont implémentés en tant que partie d’un VSPackage, mais la plus récente pour implémenter des fonctionnalités de service de langage consiste à utiliser des extensions MEF. Pour en savoir plus sur la nouvelle façon d’implémenter un service de langage, consultez [Éditor et tout langage extensions du service](../../extensibility/editor-and-language-service-extensions.md).
+ Les services linguistiques hérités sont mis en œuvre dans le cadre d’un VSPackage, mais la nouvelle façon de mettre en œuvre des fonctionnalités de service linguistique est d’utiliser des extensions MEF. Pour en savoir plus sur la nouvelle façon de mettre en œuvre un service linguistique, consultez [les extensions de service d’éditeur et de langue](../../extensibility/editor-and-language-service-extensions.md).
 
 > [!NOTE]
-> Nous vous recommandons de commencer à utiliser le nouvel éditeur API dès que possible. Cela améliorer les performances de votre service de langage et vous permettent de tirer parti des nouvelles fonctionnalités de l’éditeur.
+> Nous vous recommandons de commencer à utiliser le nouvel éditeur API dès que possible. Cela améliorera les performances de votre service linguistique et vous permettra de profiter des nouvelles fonctionnalités de l’éditeur.
 
-## <a name="in-this-section"></a>Dans cette section
-- [Modèle d’un service de langage hérité](../../extensibility/internals/model-of-a-legacy-language-service.md)
+## <a name="in-this-section"></a>Contenu de cette section
+- [Modèle d’un service linguistique hérité](../../extensibility/internals/model-of-a-legacy-language-service.md)
 
- Fournit un modèle d’un service de langage minimal pour le [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] éditeur principal. Vous pouvez utiliser ce modèle comme guide pour créer votre propre service de langage.
+ Fournit un modèle d’un [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] service linguistique minimal pour l’éditeur de base. Vous pouvez utiliser ce modèle comme guide pour créer votre propre service linguistique.
 
-- [Interfaces de service de langage hérité](../../extensibility/internals/legacy-language-service-interfaces.md)
+- [Interfaces de service linguistique héritées](../../extensibility/internals/legacy-language-service-interfaces.md)
 
- Décrit les objets requis pour implémenter un service de langage et fournit une liste d’objets supplémentaires que vous pouvez utiliser pour fournir la coloration syntaxique, les données de méthode et d’autres fonctionnalités.
+ Discute des objets nécessaires à la mise en œuvre d’un service linguistique et fournit une liste d’objets supplémentaires que vous pouvez utiliser pour fournir la mise en évidence de la syntaxe, les données de méthode, et d’autres fonctionnalités.
 
-- [Intercepter des commandes de service de langage hérité](../../extensibility/internals/intercepting-legacy-language-service-commands.md)
+- [Intercepter les commandes de service linguistique hérité](../../extensibility/internals/intercepting-legacy-language-service-commands.md)
 
- Décrit comment insérer un filtre de commande dans votre service de langage pour les commandes intercept qui prendrait autrement en charge l’affichage de texte.
+ Décrit comment insérer un filtre de commande dans votre service linguistique pour intercepter les commandes que la vue de texte gérerait autrement.
 
-- [Inscrire un service de langage hérité](../../extensibility/internals/registering-a-legacy-language-service2.md)
+- [Enregistrer un service linguistique hérité](../../extensibility/internals/registering-a-legacy-language-service2.md)
 
- Fournit des informations sur l’inscription de votre service de langage à l’aide de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].
+ Fournit des informations sur la façon [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]d’enregistrer votre service linguistique en utilisant .
 
-- [Prise en charge du service de langage pour le débogage](../../extensibility/internals/language-service-support-for-debugging.md)
+- [Soutien au service linguistique pour le débogage](../../extensibility/internals/language-service-support-for-debugging.md)
 
- Décrit comment un service de langage peut fournir des fonctionnalités pour prendre en charge d’un débogueur.
+ Décrit comment un service linguistique peut fournir des fonctionnalités pour soutenir un débbugger.
 
-- [Liste de contrôle : Créer un service de langage hérité](../../extensibility/internals/checklist-creating-a-legacy-language-service.md)
+- [Liste de contrôle : Créer un service linguistique hérité](../../extensibility/internals/checklist-creating-a-legacy-language-service.md)
 
- Fournit des instructions détaillées pour la création et l’intégration d’un service de langage pour l’éditeur principal.
+ Fournit des instructions étape par étape pour la création et l’intégration d’un service linguistique pour l’éditeur de base.
 
-## <a name="related-sections"></a>Rubriques connexes
-- [Couleurs de syntaxe dans un service de langage hérité](../../extensibility/internals/syntax-coloring-in-a-legacy-language-service.md)
+## <a name="related-sections"></a>Sections connexes
+- [Coloriage Syntax dans un service linguistique hérité](../../extensibility/internals/syntax-coloring-in-a-legacy-language-service.md)
 
- Explique comment implémenter la coloration syntaxique dans votre service de langage.
+ Discute de la façon d’implémenter la mise en évidence de la syntaxe dans votre service linguistique.
 
-- [Saisie semi-automatique des instructions dans un service de langage hérité](../../extensibility/internals/statement-completion-in-a-legacy-language-service.md)
+- [Achèvement de l’énoncé dans un service linguistique hérité](../../extensibility/internals/statement-completion-in-a-legacy-language-service.md)
 
- Décrit la saisie semi-automatique des instructions, le processus par lequel un service de langage aide les utilisateurs à terminer un mot clé de langage ou l’élément qu’il démarre en tapant.
+ Discute de l’achèvement des relevés, le processus par lequel un service linguistique aide les utilisateurs à terminer un mot clé ou un élément de langue qu’ils ont commencé à taper.
 
-- [Informations sur les paramètres dans un service de langage hérité](../../extensibility/internals/parameter-info-in-a-legacy-language-service1.md)
+- [Informations sur les paramètres dans un service linguistique hérité](../../extensibility/internals/parameter-info-in-a-legacy-language-service1.md)
 
- Décrit comment fournir des conseils de méthode pour les méthodes et les fonctions surchargées.
+ Décrit comment fournir des conseils de méthode pour les fonctions et les méthodes surchargées.
 
-- [Guide pratique pour Fournir la prise en charge de texte masqué dans un service de langage hérité](../../extensibility/internals/how-to-provide-hidden-text-support-in-a-legacy-language-service.md)
+- [Comment : Fournir un support texte caché dans un service linguistique hérité](../../extensibility/internals/how-to-provide-hidden-text-support-in-a-legacy-language-service.md)
 
- Explique l’objectif d’une zone de texte masqué et fournit des instructions sur la façon d’implémenter une zone de texte masqué.
+ Explique le but d’une région de texte caché et fournit des instructions sur la façon de mettre en œuvre une région de texte caché.
 
-- [Guide pratique pour Fournir une prise en charge étendue de mode plan dans un service de langage hérité](../../extensibility/internals/how-to-provide-expanded-outlining-support-in-a-legacy-language-service.md)
+- [Comment : Fournir un soutien élargi dans un service linguistique hérité](../../extensibility/internals/how-to-provide-expanded-outlining-support-in-a-legacy-language-service.md)
 
- Explique les deux options qui prennent en charge en mode plan pour votre langage au-delà de la prise en charge la *réduire aux définitions* commande.
+ Explique les deux options qui étendent le soutien à votre langue au-delà de l’appui de la commande *Collapse to Definitions.*

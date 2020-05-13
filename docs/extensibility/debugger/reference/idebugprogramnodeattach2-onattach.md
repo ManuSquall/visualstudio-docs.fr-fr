@@ -1,5 +1,5 @@
 ---
-title: IDebugProgramNodeAttach2::OnAttach | Microsoft Docs
+title: IDebugProgramNodeAttach2::OnAttach Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProgramNodeAttach2::OnAttach
 ms.assetid: 5fe52761-a508-4ab5-abdb-334fb6590334
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 01958b26b5b381bdbe51c2648d2751e822002e6b
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: dfb8a39af3c030dadddcb148a79a96b57f20e183
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66325056"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80721879"
 ---
 # <a name="idebugprogramnodeattach2onattach"></a>IDebugProgramNodeAttach2::OnAttach
-Est attaché au programme associé ou diffère le processus d’attachement à la [attacher](../../../extensibility/debugger/reference/idebugengine2-attach.md) (méthode).
+Attache au programme associé ou reporte le processus d’attachement à la méthode [Attach.](../../../extensibility/debugger/reference/idebugengine2-attach.md)
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -41,14 +41,14 @@ int OnAttach(
 
 ## <a name="parameters"></a>Paramètres
 `guidProgramId`\
-[in] `GUID` à affecter au programme associé.
+[dans] `GUID` d’attribuer au programme associé.
 
 ## <a name="return-value"></a>Valeur de retour
- En cas de réussite, retourne `S_OK`. Retourne `S_FALSE` si le [attacher](../../../extensibility/debugger/reference/idebugengine2-attach.md) méthode ne doit pas être appelée. Sinon, retourne un code d'erreur.
+ En cas de réussite, retourne `S_OK`. Retourne `S_FALSE` si la méthode [Attach](../../../extensibility/debugger/reference/idebugengine2-attach.md) ne doit pas être appelée. Sinon, retourne un code d'erreur.
 
 ## <a name="remarks"></a>Notes
- Cette méthode est appelée pendant le processus d’attachement, avant le [attacher](../../../extensibility/debugger/reference/idebugengine2-attach.md) méthode est appelée. Le `OnAttach` méthode peut exécuter le processus d’attachement lui-même (dans ce cas, cette méthode retourne `S_FALSE`) ou différer le processus d’attachement à la `IDebugEngine2::Attach` (méthode) (le `OnAttach` retourne de la méthode `S_OK`). Dans les deux cas, le `OnAttach` méthode peut définir le `GUID` du programme en cours de débogage à la donnée `GUID`.
+ Cette méthode est appelée pendant le processus de fixation, avant que la méthode [d’attachement](../../../extensibility/debugger/reference/idebugengine2-attach.md) soit appelée. La `OnAttach` méthode peut effectuer le processus d’attachement `S_FALSE`lui-même (dans ce `IDebugEngine2::Attach` cas, `OnAttach` cette `S_OK`méthode retourne ) ou reporter le processus d’attachement à la méthode (la méthode retourne ). Dans les deux `OnAttach` cas, `GUID` la méthode peut définir le programme `GUID`étant débogé à la donnée .
 
 ## <a name="see-also"></a>Voir aussi
 - [IDebugProgramNodeAttach2](../../../extensibility/debugger/reference/idebugprogramnodeattach2.md)
-- [Attacher](../../../extensibility/debugger/reference/idebugengine2-attach.md)
+- [Attach](../../../extensibility/debugger/reference/idebugengine2-attach.md)

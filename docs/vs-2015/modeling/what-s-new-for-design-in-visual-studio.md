@@ -1,5 +1,5 @@
 ---
-title: Nouveautés&#39;en matière de conception
+title: Ce qui&#39;nouveau pour le design
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-modeling
@@ -14,13 +14,13 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 6c68db12f8ecea523327250fec1f600639a2f267
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 95f26af1da51d4c83ae78adcb7372b32364d8a2b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72659242"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79302370"
 ---
-# <a name="whats-new-for-design-in-visual-studio-in-visual-studio-2015"></a>Nouveautés de la conception dans Visual Studio dans Visual Studio 2015
+# <a name="whats-new-for-design-in-visual-studio-in-visual-studio-2015"></a>Quoi de neuf pour le design dans Visual Studio dans Visual Studio 2015
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 Cette version de Visual Studio inclut les améliorations suivantes pour vous aider à mieux comprendre et concevoir le code.
 
@@ -30,7 +30,7 @@ Cette version de Visual Studio inclut les améliorations suivantes pour vous aid
 
  Dans la mise en production finale (RTM), nous avons simplifié l’utilisation des liens et des menus contextuels pour les éléments de code en regroupant les commandes dans des sections en rapport avec la sélection, la modification, la gestion des groupes et la modification de la disposition du contenu des groupes. Notez également que les projets de test sont affichés dans un style différent des autres projets et que nous avons mis à jour les icônes des éléments sur la carte avec des versions plus appropriées.
 
- ![Afficher les éléments sélectionnés sur une nouvelle carte de code](../ide/media/codemapsshowonnewmap.png "CodeMapsShowOnNewMap")
+ ![Afficher les éléments sélectionnés dans une nouvelle carte du code](../ide/media/codemapsshowonnewmap.png "CodeMapsShowOnNewMap")
 
  Voici quelques autres améliorations qui ont été apportées :
 
@@ -56,26 +56,26 @@ Cette version de Visual Studio inclut les améliorations suivantes pour vous aid
 
   Consultez [Map dependencies across your solutions](../modeling/map-dependencies-across-your-solutions.md).
 
-  **Autres modifications de conception et de modélisation dans cette version :**
+  **Autres modifications de conception et de modélisation dans cette version :**
 
 - **Diagrammes de couche**. Mettez à jour ces diagrammes à l'aide de l'Affichage de classes et de l'Explorateur d'objets. Pour répondre aux exigences de conception de logiciel, utilisez des diagrammes de couche pour décrire les dépendances souhaitées pour votre logiciel. Assurez la cohérence du code avec cette conception en recherchant le code qui ne respecte pas ces contraintes et en validant le code ultérieur avec cette ligne de base.
 
 - **Diagrammes UML**. Vous ne pouvez plus créer des diagrammes de classes UML et des diagrammes de séquence à partir du code. Pour créer ces diagrammes, vous devez à présent utiliser de nouveaux éléments UML.
 
-- **Navigateur de l'architecture**. Vous ne pouvez plus utiliser le Navigateur de l'architecture pour créer des diagrammes. Mais vous pouvez toujours utiliser l'Explorateur de solutions.
+- **Architecture Explorer**. Vous ne pouvez plus utiliser le Navigateur de l'architecture pour créer des diagrammes. Mais vous pouvez toujours utiliser l'Explorateur de solutions.
 
-## <a name="VersionSupport"></a>Prise en charge d’édition pour les outils d’architecture et de modélisation
+## <a name="edition-support-for-architecture-and-modeling-tools"></a><a name="VersionSupport"></a>Soutien en édition pour l’architecture et les outils de modélisation
 
-Visual Studio 2015 est disponible dans plusieurs éditions. Les outils d’architecture et de modélisation ne sont pas tous pris en charge. Le tableau ci-après décrit la disponibilité de chaque outil.
+Visual Studio 2015 est disponible en plusieurs éditions. Tous ne fournissent pas de soutien pour l’architecture et les outils de modélisation. Le tableau ci-après décrit la disponibilité de chaque outil.
 
-|**Fonctionnalité**|**Entreprise**|**Technologiques**|**Community**|**Exprime**|
+|**Fonctionnalité**|**Entreprise**|**Professionnel**|**Communauté**|**Express**|
 |-----------------|--------------------|----------------------|-------------------|-----------------|
-|**Cartes de code**|Oui|Prend uniquement en charge la lecture et le filtrage de cartes de code, l’ajout de nouveaux nœuds génériques et la création d’un graphique orienté à partir d’une sélection.|-|-|
-|**Diagrammes de classes UML**|Oui|-|-|-|
+|**Cartes de code**|Oui|Prend uniquement en charge la lecture et le filtrage des cartes de code, l’ajout de nouveaux nœuds génériques et la création d’un nouveau graphique dirigé à partir d’une sélection.|-|-|
+|**Diagrammes de classe UML**|Oui|-|-|-|
 |**Diagrammes de séquence UML**|Oui|-|-|-|
-|**Diagrammes de cas d’usage UML**|Oui|-|-|-|
-|**Diagrammes d’activités UML**|Oui|-|-|-|
+|**Diagrammes de cas d’utilisation UML**|Oui|-|-|-|
+|**Diagrammes d’activité UML**|Oui|-|-|-|
 |**Diagrammes de composants UML**|Oui|-|-|-|
 |**Diagrammes de couche**|Oui|-|-|-|
-|**Graphiques orientés** (diagrammes dgml)|Oui|Oui|-|-|
+|**Graphiques dirigés** (diagrammes DGML)|Oui|Oui|-|-|
 |**Clone de code**|Oui|-|-|-|

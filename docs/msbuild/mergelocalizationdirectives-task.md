@@ -13,33 +13,36 @@ helpviewer_keywords:
 - MergeLocalizationDirectives task [WPF MSBuild]
 - moving localization comments and attributes to a separate file [WPF MSBuild]
 ms.assetid: 9095b4f1-88da-4194-914b-ee1456826830
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5814ea188de7d3c5b7aba78ab1b239d1e9fe29e1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 9c7699afeb09604a437aad091f9aaf9ce624d33e
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62817722"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "77633497"
 ---
 # <a name="mergelocalizationdirectives-task"></a>MergeLocalizationDirectives, tâche
-La tâche <xref:Microsoft.Build.Tasks.Windows.MergeLocalizationDirectives> fusionne les attributs de localisation et les commentaires d’un ou plusieurs fichiers binaires [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)] en un seul fichier pour l’assembly entier.
+
+La <xref:Microsoft.Build.Tasks.Windows.MergeLocalizationDirectives> tâche fusionne les attributs de localisation et les commentaires d’un ou plusieurs fichiers de format binaire XAML en un seul fichier pour l’ensemble de l’assemblage.
 
 ## <a name="task-parameters"></a>Paramètres de tâche
 
 | Paramètre | Description |
 |------------------------------| - |
-| `GeneratedLocalizationFiles` | Paramètre **ITaskItem[]** obligatoire.<br /><br /> Spécifie la liste des fichiers de directives de localisation pour des fichiers spécifiques au format binaire [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)]. |
+| `GeneratedLocalizationFiles` | Paramètre **ITaskItem[]** requis.<br /><br /> Spécifie la liste des fichiers de directives de localisation pour les fichiers individuels dans le format binaire XAML. |
 | `OutputFile` | Paramètre de sortie **String** obligatoire.<br /><br /> Spécifie le chemin de sortie de l’assembly de directives de localisation compilé. |
 
-## <a name="remarks"></a>Remarques
-Vous pouvez ajouter des commentaires et des attributs de localisation au contenu [!INCLUDE[TLA#tla_xaml](../msbuild/includes/tlasharptla_xaml_md.md)]. Avec la prise en charge de la localisation [!INCLUDE[TLA#tla_wpf](../msbuild/includes/tlasharptla_wpf_md.md)], vous pouvez retirer des commentaires et des attributs de localisation, et les placer dans un fichier *.loc* distinct de l’assembly généré. Vous pouvez pour cela utiliser l’attribut **LocalizationPropertyStorage**. Pour plus d’informations sur les commentaires et attributs de localisation, et sur **LocalizationPropertyStorage**, consultez [Attributs et commentaires de localisation](/dotnet/framework/wpf/advanced/localization-attributes-and-comments).
+## <a name="remarks"></a>Notes 
 
-## <a name="example"></a>Exemple
-L’exemple suivant fusionne les commentaires de localisation de plusieurs fichiers au format binaire [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)] dans un seul fichier *.loc*.
+Vous pouvez ajouter des attributs et des commentaires de localisation au contenu XAML. Avec le support de localisation de la Windows Presentation Foundation (WPF), vous pouvez supprimer les attributs et les commentaires de localisation, et les mettre dans un fichier *.loc* qui est séparé de l’assemblage généré. Vous pouvez pour cela utiliser l’attribut **LocalizationPropertyStorage**. Pour plus d’informations sur les commentaires et attributs de localisation, et sur **LocalizationPropertyStorage**, consultez [Attributs et commentaires de localisation](/dotnet/framework/wpf/advanced/localization-attributes-and-comments).
+
+## <a name="example"></a> Exemple
+
+L’exemple suivant fusionne les commentaires de localisation de plusieurs fichiers de format binaire XAML dans un seul fichier *.loc.*
 
 ```xml
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -55,8 +58,9 @@ L’exemple suivant fusionne les commentaires de localisation de plusieurs fichi
 ```
 
 ## <a name="see-also"></a>Voir aussi
-- [Informations de référence sur MSBuild WPF](../msbuild/wpf-msbuild-reference.md)
-- [Informations de référence sur les tâches MSBuild WPF](../msbuild/wpf-msbuild-task-reference.md)
-- [Informations de référence sur MSBuild](../msbuild/msbuild-reference.md)
-- [Informations de référence sur les tâches MSBuild](../msbuild/msbuild-task-reference.md)
+
+- [WPF MSBuild référence](../msbuild/wpf-msbuild-reference.md)
+- [Référence de tâche WPF MSBuild](../msbuild/wpf-msbuild-task-reference.md)
+- [Référence MSBuild](../msbuild/msbuild-reference.md)
+- [Référence de tâche MSBuild](../msbuild/msbuild-task-reference.md)
 - [Générer une application WPF (WPF)](/dotnet/framework/wpf/app-development/building-a-wpf-application-wpf)

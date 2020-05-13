@@ -1,46 +1,46 @@
 ---
-title: Algorithme de routage de commande | Microsoft Docs
+title: Algorithme de routage de commande (en anglais) Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - commands, routing
 - command routing
 ms.assetid: 998b616b-bd08-45cb-845f-808efb8c33bc
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c98e145961f8d98c7ea939bd051a94ee68cd93f4
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: af8d3e53e09214ce36a80ca18856085dfb2bb746
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66342112"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80709536"
 ---
 # <a name="command-routing-algorithm"></a>Algorithme de routage de commande
-Dans Visual Studio, les commandes sont gérées par un nombre de différents composants. Commandes sont routées à partir du contexte plus profond, ce qui est basé sur la sélection actuelle, pour le contexte le plus extérieur (également appelé global). Pour plus d’informations, consultez [commande disponibilité](../../extensibility/internals/command-availability.md).
+Dans Visual Studio commandes sont traitées par un certain nombre de composants différents. Les commandes sont acheminées du contexte le plus intime, qui est basé sur la sélection actuelle, au contexte le plus extérieur (également connu sous le nom global). Pour plus d’informations, voir [disponibilité du Commandement](../../extensibility/internals/command-availability.md).
 
-## <a name="order-of-command-resolution"></a>Ordre de résolution de la commande
- Commandes sont transmises via les niveaux de contexte de commande suivants :
+## <a name="order-of-command-resolution"></a>Résolution de l’ordre de commandement
+ Les commandes passent par les niveaux suivants du contexte de commandement :
 
-1. Compléments : Tout d’abord, l’environnement offre la commande pour n’importe quel des compléments qui sont présents.
+1. Add-ins: L’environnement offre d’abord la commande à tous les add-ins qui sont présents.
 
-2. Commandes de priorité : Ces commandes sont inscrits à l’aide de <xref:Microsoft.VisualStudio.Shell.Interop.IVsRegisterPriorityCommandTarget>. Ils sont appelés pour chaque commande dans Visual Studio et sont appelés dans l’ordre dans lequel ils ont été inscrits.
+2. Commandes prioritaires : Ces commandes <xref:Microsoft.VisualStudio.Shell.Interop.IVsRegisterPriorityCommandTarget>sont enregistrées à l’aide de . Ils sont appelés pour chaque commande dans Visual Studio, et sont appelés dans l’ordre dans lequel ils ont été enregistrés.
 
-3. Commandes de menu contextuel : Une commande que qui se trouve dans un menu contextuel est tout d’abord proposée à la cible de commande qui est fournie au menu contextuel, puis la suite pour le routage par défaut.
+3. Commandes de menu contextuelle : Une commande située sur un menu contextuelle est d’abord offerte à la cible de commande fournie au menu contextuelle, et après cela au routage typique.
 
-4. Barre d’outils de définie des cibles de la commande : Ces cibles de commande sont enregistrés lorsque vous appelez <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell4.SetupToolbar2%2A>. Le `pCmdTarget` paramètre peut être `null`. Si ce n’est pas `null`, cette cible de commande est utilisé pour mettre à jour toutes les commandes de la barre d’outils que vous configurez. Si l’interpréteur de commandes consiste à configurer votre barre d’outils, puis il transmet le frame de fenêtre comme le `pCmdTarget` afin que toutes les mises à jour pour les commandes sur votre flux de la barre d’outils via le frame de fenêtre, même quand il n’est pas le focus.
+4. Toolbar définir des objectifs de commande: <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell4.SetupToolbar2%2A>Ces cibles de commande sont enregistrées lorsque vous appelez . Le `pCmdTarget` paramètre `null`peut être . Si ce `null`n’est pas le cas, cette cible de commande est utilisée pour mettre à jour les commandes situées sur la barre d’outils que vous configurez. Si la coque configure votre barre d’outils, alors `pCmdTarget` elle passe le cadre de fenêtre comme le de sorte que toutes les mises à jour des commandes sur votre flux de barre d’outils à travers le cadre de fenêtre, même quand il n’est pas au point.
 
-5. Fenêtre d’outil : Outil windows, qui implémentent généralement les <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowPane> l’interface, doit également implémenter le <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> afin que Visual Studio puisse la cible de commande lorsque la fenêtre outil est la fenêtre active de l’interface. Toutefois, si la fenêtre outil qui a le focus est la **projet** fenêtre, puis la commande est acheminé vers le <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy> interface qui est le parent commun des éléments sélectionnés. Si cette sélection s’étend sur plusieurs projets, la commande est acheminée vers le <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution> hiérarchie. Le <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy> interface contient la <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy.QueryStatusCommand%2A> et <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy.ExecCommand%2A> méthodes sont analogues aux commandes correspondantes sur le <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> interface.
+5. Fenêtre d’outil : Les <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowPane> fenêtres d’outil, <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> qui implémentent généralement l’interface, devraient également implémenter l’interface afin que Visual Studio puisse obtenir la cible de commande lorsque la fenêtre d’outil est la fenêtre active. Toutefois, si la fenêtre d’outil qui a mis l’accent <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy> est la fenêtre **du projet,** alors la commande est acheminée vers l’interface qui est le parent commun des éléments sélectionnés. Si cette sélection s’étend sur plusieurs projets, la commande est acheminée vers la <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution> hiérarchie. L’interface <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy> <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy.QueryStatusCommand%2A> contient <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy.ExecCommand%2A> les méthodes et les méthodes analogues aux commandes correspondantes sur l’interface. <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>
 
-6. Fenêtre de document : Si la commande a le `RouteToDocs` indicateur défini dans son *.vsct* fichier, Visual Studio recherche une cible de commande sur l’objet de vue de document, qui est soit une instance d’un <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowPane> interface ou une instance d’un document de l’objet () en général un <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLines> interface ou un <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer> interface). Si l’objet de vue de document ne prend pas en charge la commande, Visual Studio achemine la commande pour le <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> interface qui est retournée. (Il s’agit d’une interface facultative pour les objets de données de document.)
+6. Fenêtre de document : `RouteToDocs` Si la commande a le drapeau placé dans son fichier *.vsct,* Visual Studio <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowPane> recherche une cible de commande sur <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLines> l’objet de vue de document, qui est soit une instance d’une interface ou une instance d’un objet de document (généralement une interface ou une <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer> interface). Si l’objet de vue de document ne prend <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> pas en charge la commande, Visual Studio achemine la commande vers l’interface qui est retournée. (Il s’agit d’une interface facultative pour les objets de données documentaires.)
 
-7. Hiérarchie actuelle : La hiérarchie actuelle peut être le projet qui possède la fenêtre de document active ou de la hiérarchie est sélectionnée dans **l’Explorateur de solutions**. Visual Studio recherche la <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> interface est implémentée sur la hiérarchie, active, ou en cours. La hiérarchie doit prendre en charge les commandes qui sont valides, chaque fois que la hiérarchie est active, même si une fenêtre de document d’un élément de projet a le focus. Toutefois, les commandes qui s’appliquent uniquement lorsque **l’Explorateur de solutions** a le focus doit être pris en charge à l’aide de la <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy> interface et sa <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy.QueryStatusCommand%2A> et <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy.ExecCommand%2A> méthodes.
+7. Hiérarchie actuelle : La hiérarchie actuelle peut être le projet qui possède la fenêtre de document active ou la hiérarchie qui est sélectionnée dans **Solution Explorer**. Visual Studio recherche <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> l’interface qui est implémentée sur la hiérarchie actuelle ou active. La hiérarchie doit prendre en charge les commandes qui sont valides chaque fois que la hiérarchie est active, même si une fenêtre de document d’un élément de projet est ciblée. Toutefois, les commandes qui ne s’appliquent que <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy> lorsque Solution <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy.QueryStatusCommand%2A> <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy.ExecCommand%2A> **Explorer** a mis l’accent doivent être prises en charge en utilisant l’interface et ses méthodes.
 
-     **Couper**, **copie**, **coller**, **supprimer**, **renommer**, **entrez**et **DoubleClick** commandes nécessitent un traitement spécial. Pour plus d’informations sur la gestion **supprimer** et **supprimer** commandes dans les hiérarchies, consultez le <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyDeleteHandler> interface.
+     **Couper**, **Copier**, **Coller**, **Supprimer**, **renommer**, **Entrer**, et les commandes **DoubleClick** nécessitent une manipulation spéciale. Pour plus d’informations sur la façon de gérer <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyDeleteHandler> les commandes **Supprimer** et **supprimer** dans les hiérarchies, consultez l’interface.
 
-8. Global : Si une commande n’a pas été gérée par les contextes mentionnés précédemment, Visual Studio tente de router vers le VSPackage qui possède une commande qui implémente le <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> interface. Si le VSPackage n’a pas déjà été chargé, il n’est pas chargé lorsque Visual Studio appelle le <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> (méthode). Le VSPackage est chargé uniquement lorsque le <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.Exec%2A> méthode est appelée.
+8. Global: Si une commande n’a pas été traitée par les contextes mentionnés précédemment, Visual Studio <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> tente de l’acheminer vers le VSPackage qui possède une commande qui implémente l’interface. Si le VSPackage n’a pas déjà été chargé, <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> il n’est pas chargé lorsque Visual Studio appelle la méthode. Le VSPackage n’est <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.Exec%2A> chargé que lorsque la méthode est appelée.
 
 ## <a name="see-also"></a>Voir aussi
-- [Conception de la commande](../../extensibility/internals/command-design.md)
+- [Conception de commande](../../extensibility/internals/command-design.md)

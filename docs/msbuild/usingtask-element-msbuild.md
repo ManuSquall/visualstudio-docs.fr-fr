@@ -18,14 +18,15 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7bd62738a89b38adb6cd01d6a33d661e95144d34
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 22d61fe30e9eb68697f073ca0bcfbcc515e513dd
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75565264"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79431447"
 ---
 # <a name="usingtask-element-msbuild"></a>Élément UsingTask (MSBuild)
+
 Mappe la tâche référencée dans un élément [Task](../msbuild/task-element-msbuild.md) sur l’assembly qui contient l’implémentation de la tâche.
 
  \<Project> \<UsingTask>
@@ -40,18 +41,19 @@ Mappe la tâche référencée dans un élément [Task](../msbuild/task-element-m
 ```
 
 > [!NOTE]
-> Contrairement aux propriétés et aux éléments, le *premier* élément `UsingTask` qui s’applique à un `TaskName` est utilisé ; pour remplacer des tâches, vous devez définir une nouvelle `UsingTask` *avant* celle existante.
+> Contrairement aux propriétés et aux articles, le *premier* `UsingTask` élément qui s’applique à un `TaskName` sera utilisé; pour remplacer les tâches, `UsingTask` vous devez définir un nouveau *avant* l’existant.
 
 ## <a name="attributes-and-elements"></a>Attributs et éléments
+
  Les sections suivantes décrivent des attributs, des éléments enfants et des éléments parents.
 
 ### <a name="attributes"></a>Attributs
 
-|Attribute|Description|
+|Attribut|Description|
 |---------------|-----------------|
 |`AssemblyName`|L'attribut `AssemblyName` ou `AssemblyFile` est requis.<br /><br /> Nom de l'assembly à charger. L'attribut `AssemblyName` accepte les assemblys avec nom fort, bien que les noms forts ne soient pas obligatoires. L'utilisation de cet attribut équivaut au chargement d'un assembly à l'aide de la méthode <xref:System.Reflection.Assembly.Load%2A> dans .NET.<br /><br /> Vous ne pouvez pas utiliser cet attribut si l'attribut `AssemblyFile` est utilisé.|
 |`AssemblyFile`|L'attribut `AssemblyName` ou `AssemblyFile` est requis.<br /><br /> Chemin d'accès de l'assembly. Cet attribut accepte les chemins d'accès complets ou relatifs. Les chemins d'accès relatifs sont relatifs au répertoire du fichier projet ou du fichier .targets où l'élément `UsingTask` est déclaré. L'utilisation de cet attribut équivaut au chargement d'un assembly à l'aide de la méthode <xref:System.Reflection.Assembly.LoadFrom%2A> dans .NET.<br /><br /> Vous ne pouvez pas utiliser cet attribut si l'attribut `AssemblyName` est utilisé.|
-|`TaskFactory`|Attribut facultatif.<br /><br /> Spécifie la classe incluse dans l'assembly qui est responsable de la génération des instances du nom `Task` spécifié.  L'utilisateur peut également spécifier un `TaskBody` en tant qu'élément enfant que la fabrique de tâches reçoit et utilise pour générer la tâche. Le contenu de `TaskBody` est propre à la fabrique de tâches.|
+|`TaskFactory`|Attribut facultatif.<br /><br /> Spécifie la classe incluse dans l'assembly qui est responsable de la génération des instances du nom `Task` spécifié.  L'utilisateur peut également spécifier un `Task` en tant qu'élément enfant que la fabrique de tâches reçoit et utilise pour générer la tâche. Le contenu de `Task` est propre à la fabrique de tâches.|
 |`TaskName`|Attribut requis.<br /><br /> Nom de la tâche à référencer à partir d'un assembly. Si des ambiguïtés sont possibles, cet attribut doit toujours spécifier des espaces de noms complets. S'il existe des ambiguïtés, MSBuild choisit une correspondance arbitraire, laquelle peut produire des résultats inattendus.|
 |`Condition`|Attribut facultatif.<br /><br /> Condition à évaluer. Pour plus d’informations, consultez l’article [Conditions (Conditions MSBuild)](../msbuild/msbuild-conditions.md).|
 
@@ -60,15 +62,16 @@ Mappe la tâche référencée dans un élément [Task](../msbuild/task-element-m
 |Élément|Description|
 |-------------|-----------------|
 |[ParameterGroup](../msbuild/parametergroup-element.md)|Jeu de paramètres qui apparaissent sur la tâche générée par le `TaskFactory` spécifié.|
-|[Task](../msbuild/task-element-msbuild.md)|Données transférées au `TaskFactory` pour générer une instance de la tâche.|
+|[Tâche](../msbuild/task-element-msbuild.md)|Données transférées au `TaskFactory` pour générer une instance de la tâche.|
 
 ### <a name="parent-elements"></a>Éléments parents
 
 | Élément | Description |
 | - | - |
-| [Project](../msbuild/project-element-msbuild.md) | Élément racine requis d'un fichier projet [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] . |
+| [Projet](../msbuild/project-element-msbuild.md) | Élément racine requis d’un fichier de projet MSBuild. |
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Notes 
+
  Les variables d'environnement, propriétés de ligne de commande, propriétés au niveau du projet et éléments au niveau du projet peuvent être référencés n'importe où dans les éléments `UsingTask` inclus dans le fichier projet, directement ou via un fichier projet importé. Pour plus d’informations, consultez l’article [Tâches MSBuild](../msbuild/msbuild-tasks.md).
 
 > [!NOTE]
@@ -76,7 +79,10 @@ Mappe la tâche référencée dans un élément [Task](../msbuild/task-element-m
 
  Dans MSBuild 4.0, les tâches peuvent être chargées à partir de fichiers *.overridetask*.
 
-## <a name="example"></a>Exemple
+L’assemblage contenant la tâche `Task` personnalisée est chargé lorsque l’est utilisé pour la première fois.
+
+## <a name="example"></a> Exemple
+
  L'exemple suivant montre comment utiliser l'élément `UsingTask` avec un attribut `AssemblyName`.
 
 ```xml
@@ -86,13 +92,14 @@ Mappe la tâche référencée dans un élément [Task](../msbuild/task-element-m
               <Parameter2 ParameterType="System.Int" Required="True" Output="False"/>
               ...
 </ParameterGroup>
-       <TaskBody>
+       <Task>
       ... Task factory-specific data ...
-       </TaskBody>
+       </Task>
 </UsingTask>
 ```
 
-## <a name="example"></a>Exemple
+## <a name="example"></a> Exemple
+
  L'exemple suivant montre comment utiliser l'élément `UsingTask` avec un attribut `AssemblyFile`.
 
 ```xml
@@ -101,6 +108,7 @@ Mappe la tâche référencée dans un élément [Task](../msbuild/task-element-m
 ```
 
 ## <a name="see-also"></a>Voir aussi
-- [Tâches MSBuild](../msbuild/msbuild-tasks.md)
+
+- [Tâches](../msbuild/msbuild-tasks.md)
 - [Informations de référence sur les tâches](../msbuild/msbuild-task-reference.md)
-- [Informations de référence sur le schéma de fichier projet](../msbuild/msbuild-project-file-schema-reference.md)
+- [Référence du schéma de fichier de projet](../msbuild/msbuild-project-file-schema-reference.md)

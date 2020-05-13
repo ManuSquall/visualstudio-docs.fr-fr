@@ -1,5 +1,5 @@
 ---
-title: IDebugEngineCreateEvent2 | Microsoft Docs
+title: IDebugEngineCreateEvent2 - France Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugEngineCreateEvent2 interface
 ms.assetid: 37c0a841-1c8d-4802-a990-36b54bca3ef7
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 088de1540a07e85bfb474308987302d8a7c613ba
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 41a964f1e08fc2e88ac9a1d211e4b3e36b32c5b8
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66352457"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80730597"
 ---
 # <a name="idebugenginecreateevent2"></a>IDebugEngineCreateEvent2
-Le moteur de débogage (dé) envoie cette interface pour le Gestionnaire de session de débogage (SDM) lors de la création d’une instance de l’Allemagne.
+Le moteur de débogé (DE) envoie cette interface au gestionnaire de débogé de session (SDM) lorsqu’une instance de la DE est créée.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -28,25 +28,25 @@ Le moteur de débogage (dé) envoie cette interface pour le Gestionnaire de sess
 IDebugEngineCreateEvent2 : IUnknown
 ```
 
-## <a name="notes-for-implementers"></a>Notes de publication pour les implémenteurs
- Le D’implémente cette interface dans le cadre de ses opérations normales. Le [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) interface doit être implémentée sur le même objet que cette interface (utilise le SDM le `QueryInterface` méthode pour accéder à la `IDebugEvent2` interface).
+## <a name="notes-for-implementers"></a>Notes pour les implémenteurs
+ Le DE implémente cette interface dans le cadre de ses opérations normales. [L’interface IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) doit être implémentée sur le même `QueryInterface` objet que `IDebugEvent2` cette interface (le SDM utilise la méthode pour accéder à l’interface).
 
-## <a name="notes-for-callers"></a>Notes de publication pour les appelants
- Le DE crée et envoie cet objet événement lorsque la D’ont été instanciée. L’événement est envoyé à l’aide de la [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) fonction de rappel qui est fournie par le SDM lorsqu’il est attaché au programme en cours de débogage.
+## <a name="notes-for-callers"></a>Notes pour les appelants
+ Le DE crée et envoie cet objet d’événement lorsque le DE a été instantané. L’événement est envoyé en utilisant la fonction de rappel [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) qui est fournie par le SDM lorsqu’il est attaché au programme étant débogé.
 
 ## <a name="methods-in-vtable-order"></a>Méthodes dans l'ordre Vtable
- Le tableau suivant présente les méthodes de `IDebugEngineCreateEvent2`.
+ Le tableau suivant montre `IDebugEngineCreateEvent2`les méthodes de .
 
 |Méthode|Description|
 |------------|-----------------|
-|[GetEngine](../../../extensibility/debugger/reference/idebugenginecreateevent2-getengine.md)|Récupère l’objet qui représente le moteur de débogage qui vient d’être créé (dé).|
+|[GetEngine](../../../extensibility/debugger/reference/idebugenginecreateevent2-getengine.md)|Récupère l’objet qui représente le nouveau moteur de débogé (DE).|
 
-## <a name="requirements"></a>Configuration requise
- En-tête : msdbg.h
+## <a name="requirements"></a>Spécifications
+ En-tête: msdbg.h
 
- Espace de noms : Microsoft.VisualStudio.Debugger.Interop
+ Namespace: Microsoft.VisualStudio.Debugger.Interop
 
- Assembly : Microsoft.VisualStudio.Debugger.Interop.dll
+ Assemblage: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>Voir aussi
 - [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md)

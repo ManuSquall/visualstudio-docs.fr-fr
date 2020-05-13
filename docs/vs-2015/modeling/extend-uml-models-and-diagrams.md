@@ -12,12 +12,12 @@ caps.latest.revision: 39
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 7f4c490abbcd5b970c5bf9586ea881be4c5d62a4
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: ee4e307040f22078ed66f897eaa868ccfd259577
+ms.sourcegitcommit: da5ebc29544fdbdf625ab4922c9777faf2bcae4a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75849801"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "82586723"
 ---
 # <a name="extend-uml-models-and-diagrams"></a>Étendre des diagrammes et des modèles UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,9 +32,9 @@ Cette rubrique résume les différentes manière d’étendre les outils de mod�
 
  Pour plus d’informations, consultez la vidéo suivante : ![lien vers la vidéo de](../data-tools/media/playvideo.gif "PlayVideo")[la série de procédures MSDN : outils UML et extensibilité](https://msdn.microsoft.com/vstudio/ff859492).
 
-## <a name="Requirements"></a> Configuration requise
+## <a name="requirements"></a><a name="Requirements"></a> Spécifications
 
-- [Visual Studio SDK](../extensibility/visual-studio-sdk.md).
+- [SDK Visual Studio](../extensibility/visual-studio-sdk.md).
 
 - [Kit de développement logiciel (SDK) de modélisation pour Visual Studio 2015](https://www.microsoft.com/download/details.aspx?id=48148).
 
@@ -85,7 +85,7 @@ Cette rubrique résume les différentes manière d’étendre les outils de mod�
 
  Pour plus d’informations, consultez [intégrer des modèles UML à d’autres modèles et outils](../modeling/integrate-uml-models-with-other-models-and-tools.md).
 
-## <a name="generation"></a>Génération
+## <a name="generation"></a>Generation
  À partir d’un modèle, vous pouvez générer du code de programme, des scripts, des configurations, des documents, de nouveaux modèles ou d’autres artefacts.
 
  Dans les systèmes de bagages conçus par Fabrikam, la plupart du code de programme est identique d’un projet à l’autre. L’aspect le plus variable est le plan du flux de bagages autour de l’aéroport. Une fois que l’équipe de conception a tiré les enseignements de ses premiers projets, les développeurs d’outils créent un modèle qui génère, à partir du modèle de flux de bagages, une grande partie du code de programme variable et d’autres fichiers tels que les documents utilisateur. Cela réduit considérablement la durée de développement et le taux d’erreurs pour chaque nouveau projet.
@@ -111,12 +111,12 @@ Cette rubrique résume les différentes manière d’étendre les outils de mod�
 
 ## <a name="external-resources"></a>Ressources externes
 
-|**Catégorie**|**Links**|
+|**Catégorie**|**Liens**|
 |------------------|---------------|
 |**Vidéos**|![lien vers la vidéo de](../data-tools/media/playvideo.gif "PlayVideo") [la série de procédures MSDN : outils UML et extensibilité](https://msdn.microsoft.com/vstudio/ff859492)<br /><br /> ![lien vers la vidéo](../data-tools/media/playvideo.gif "PlayVideo") [Channel 9 : UML avec Visual Studio](https://channel9.msdn.com/posts/clinted/)|
 |**Forums**|-   [Outils de visualisation et de modélisation Visual Studio](https://social.msdn.microsoft.com/Forums/en-US/home?forum=vsarch)<br />-   [Kit de développement logiciel (SDK) Visual Studio Visualization and Modeling (outils DSL)](https://social.msdn.microsoft.com/Forums/home?forum=dslvsarchx)|
-|**Blogs**|[Blog Visual Studio ALM + Team Foundation Server](https://blogs.msdn.com/b/visualstudioalm)|
+|**Blogs**|[Blog Visual Studio ALM + Team Foundation Server](https://devblogs.microsoft.com/devops/welcome-to-the-visual-studio-alm-team-foundation-server-blog/)|
 |**Articles et journaux techniques**|[Centre d’architecture MSDN](https://msdn.microsoft.com/architecture/default.aspx)|
 
-## <a name="see-also"></a>Voir aussi
+## <a name="see-also"></a> Voir aussi
  [Créer des modèles pour votre application](../modeling/create-models-for-your-app.md) [référence API pour l’extensibilité de la modélisation UML](../modeling/api-reference-for-uml-modeling-extensibility.md)

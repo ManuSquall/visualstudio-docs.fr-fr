@@ -1,8 +1,8 @@
 ---
-title: 'Didacticiel : déboguer C# le code'
+title: 'Didacticiel : déboguer du code C#'
 description: Découvrez comment démarrer le débogueur Visual Studio, parcourir le code et inspecter les données.
 ms.custom: debug-experiment, seodec18, get-started
-ms.date: 01/31/2020
+ms.date: 04/23/2020
 ms.technology: vs-ide-debug
 ms.topic: tutorial
 dev_langs:
@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6ede47c9daf37011195d66c746498cdfc809d24b
-ms.sourcegitcommit: b2fc9ac7d73c847508f6ed082bed026476bb3955
+ms.openlocfilehash: 3d6e9ee79602f3a0db8f68d701120c450bfee721
+ms.sourcegitcommit: dab57cebd484228e6f0cf7ab1b9685c575410c06
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/05/2020
-ms.locfileid: "77027250"
+ms.lasthandoff: 04/25/2020
+ms.locfileid: "82153068"
 ---
 # <a name="tutorial-learn-to-debug-c-code-using-visual-studio"></a>Tutoriel : Apprendre à déboguer le code C# avec Visual Studio
 
@@ -36,7 +36,7 @@ Ce didacticiel présente les procédures suivantes :
 > * Inspecter des variables dans des bulles d’informations et dans les fenêtres du débogueur
 > * Examiner la pile des appels
 
-## <a name="prerequisites"></a>Conditions préalables requises
+## <a name="prerequisites"></a>Prérequis
 
 ::: moniker range=">=vs-2019"
 
@@ -61,7 +61,7 @@ Si vous n’avez pas encore installé Visual Studio, accédez à la page [Télé
 
 ::: moniker-end
 
-Si vous devez installer la charge de travail, mais que vous avez déjà installé Visual Studio, cliquez sur **Outils** > **Obtenir les outils et fonctionnalités...** , qui ouvre Visual Studio Installer. Visual Studio Installer est lancé. Choisissez la charge de travail **développement multiplateforme .net Core** , puis choisissez **modifier**.
+Si vous devez installer la charge de travail mais que vous disposez déjà de Visual Studio, accédez à **Outils** > **obtenir des outils et des fonctionnalités...**, qui ouvre le Visual Studio installer. Visual Studio Installer est lancé. Choisissez la charge de travail **développement multiplateforme .net Core** , puis choisissez **modifier**.
 
 ## <a name="create-a-project"></a>Création d’un projet
 
@@ -71,11 +71,11 @@ Tout d’abord, vous allez créer un projet d’application console .NET Core. L
 
 1. Ouvrez Visual Studio 2017.
 
-2. Dans la barre de menus supérieure, choisissez **fichier** > **nouveau** > **projet**.
+2. Dans la barre de menus supérieure, choisissez **Fichier** > **Nouveau** > **Projet**.
 
-3. Dans le volet gauche de la boîte de dialogue **Nouveau projet**, développez **C#** , puis choisissez **.NET Core**. Dans le volet central, choisissez **Application console (.NET Core)** . Nommez ensuite le projet *-Démarrer-débogage*.
+3. Dans le volet gauche de la boîte de dialogue **Nouveau projet**, développez **C#**, puis choisissez **.NET Core**. Dans le volet central, choisissez **Application console (.NET Core)**. Nommez ensuite le projet *-Démarrer-débogage*.
 
-     Si vous ne voyez pas le modèle de projet **Application console (.NET Core)** , cliquez sur le lien **Ouvrir Visual Studio Installer** dans le volet gauche de la boîte de dialogue **Nouveau projet**.
+     Si vous ne voyez pas le modèle de projet **Application console (.NET Core)**, cliquez sur le lien **Ouvrir Visual Studio Installer** dans le volet gauche de la boîte de dialogue **Nouveau projet**.
 
      Visual Studio Installer est lancé. Choisissez la charge de travail **Développement multiplateforme .NET Core**, puis choisissez **Modifier**.
 
@@ -85,20 +85,20 @@ Tout d’abord, vous allez créer un projet d’application console .NET Core. L
 
 1. Ouvrez Visual Studio 2019.
 
-   Si la fenêtre de démarrage n’est pas ouverte, choisissez **fichier** > **fenêtre démarrer**.
+   Si la fenêtre de démarrage n’est pas ouverte, choisissez **fenêtre démarrage**de **fichier** > .
 
-1. Dans la fenêtre de démarrage, choisissez **Créer un projet**.
+1. Dans la fenêtre Démarrer, choisissez **créer un nouveau projet**.
 
 1. Dans la fenêtre **Créer un projet**, entrez ou tapez *console* dans la zone de recherche. Ensuite, choisissez **C#** Dans la liste des langages, puis choisissez **Windows** dans la liste des plateformes. 
 
-   Après avoir appliqué les filtres de langage et de plateforme, choisissez le modèle **Application console (.NET Core)** , puis choisissez **Suivant**.
+   Après avoir appliqué les filtres de langage et de plateforme, choisissez le modèle **Application console (.NET Core)**, puis choisissez **Suivant**.
 
-   ![Choisir le C# modèle pour l’application console (.net Core)](../csharp/media/vs-2019/get-started-create-console-project.png)
+   ![Choisir le modèle C# pour l’application console (.NET Core)](../csharp/media/vs-2019/get-started-create-console-project.png)
 
    > [!NOTE]
-   > Si vous ne voyez pas le modèle **Application console (.NET Core)** , vous pouvez l’installer à partir de la fenêtre **Créer un projet**. Dans le **Vous ne trouvez pas ce que vous cherchez ?** , choisissez le lien **Installer plus d’outils et de fonctionnalités**. Ensuite, dans Visual Studio Installer, choisissez la charge de travail **Développement multiplateforme .NET Core**.
+   > Si vous ne voyez pas le modèle **Application console (.NET Core)**, vous pouvez l’installer à partir de la fenêtre **Créer un projet**. Dans le **Vous ne trouvez pas ce que vous cherchez ?**, choisissez le lien **Installer plus d’outils et de fonctionnalités**. Ensuite, dans Visual Studio Installer, choisissez la charge de travail **Développement multiplateforme .NET Core**.
 
-1. Dans la fenêtre **configurer votre nouveau projet** , tapez ou entrez *GetStartedDebugging* dans la zone **nom du projet** . Choisissez ensuite **Créer**.
+1. Dans la fenêtre **configurer votre nouveau projet** , tapez ou entrez *GetStartedDebugging* dans la zone **nom du projet** . Ensuite, choisissez **créer**.
 
    Visual Studio ouvre votre nouveau projet.
    
@@ -134,7 +134,7 @@ Tout d’abord, vous allez créer un projet d’application console .NET Core. L
 
 ## <a name="start-the-debugger"></a>Démarrez le débogueur !
 
-1. Appuyez sur **F5** (**déboguer > Démarrer le débogage**) ou sur le bouton **Démarrer** le débogage ![Démarrer le débogage](../../debugger/media/dbg-tour-start-debugging.png "Démarrer le débogage") dans la barre d’outils déboguer.
+1. Appuyez sur **F5** (**déboguer > démarrer le débogage**) ou sur le bouton **Démarrer** le débogage ![Démarrer le débogage](../../debugger/media/dbg-tour-start-debugging.png "Démarrer le débogage") dans la barre d’outils déboguer.
 
      **F5** démarre l’application avec le débogueur attaché au processus de l’application, mais jusqu’à présent, nous n’avons rien fait de spécial pour examiner le code. L’application se charge juste et vous voyez la sortie de la console.
 
@@ -169,7 +169,7 @@ Tout d’abord, vous allez créer un projet d’application console .NET Core. L
 
 2. Appuyez sur **F5** ou cliquez sur le bouton **Démarrer** le débogage ![Démarrer le débogage](../../debugger/media/dbg-tour-start-debugging.png "Démarrer le débogage"). l’application démarre et le débogueur s’exécute sur la ligne de code où vous définissez le point d’arrêt.
 
-    ![Définir et atteindre un point d’arrêt](../csharp/media/get-started-set-breakpoint.png)
+    ![Définir et atteindre un point d’arrêt](../csharp/media/get-started-set-breakpoint.gif)
 
     La flèche jaune représente l’instruction sur laquelle le débogueur s’est mis en pause, ce qui interrompt également l’exécution de l’application au même point (cette instruction n’a pas encore été exécutée).
 
@@ -177,45 +177,59 @@ Tout d’abord, vous allez créer un projet d’application console .NET Core. L
 
     Les points d’arrêt sont une fonctionnalité pratique quand vous savez quelle ligne de code ou section de code vous voulez examiner en détail. Pour plus d’informations sur les différents types de points d’arrêt que vous pouvez définir, tels que les points d’arrêt conditionnels, consultez [utilisation de points d’arrêt](../../debugger/using-breakpoints.md).
 
-## <a name="navigate-code-in-the-debugger-using-step-commands"></a>Parcourir le code dans le débogueur avec les commandes d’exécution pas à pas
+## <a name="navigate-code-and-inspect-data-using-data-tips"></a>Naviguer dans le code et inspecter les données à l’aide des conseils de données
 
 Nous utilisons ici principalement des raccourcis clavier, car c’est un bon moyen d’exécuter rapidement votre application dans le débogueur (les commandes équivalentes, comme les commandes des menus, sont indiquées entre parenthèses).
 
-1. Pendant la suspension de la boucle `for` dans la méthode `Main`, appuyez sur **F11** (ou sélectionnez **déboguer > pas à pas détaillé**) à deux reprises pour passer à l’appel de méthode `SendMessage`.
+1. Pendant la suspension de l' `name += letters[i]` instruction, placez le curseur `letters` sur la variable et vous voyez sa valeur par défaut, la valeur du premier élément du tableau, `char[10]`.
 
-     Après avoir appuyé sur **F11** deux fois, vous devez vous trouver dans la ligne de code suivante :
+     Les fonctionnalités qui vous permettent d’inspecter des variables sont parmi les plus pratiques du débogueur : vous pouvez faire cela de différentes façons. Souvent, quand vous essayez de déboguer un problème, vous essayez de déterminer si les variables stockent les valeurs que vous prévoyez à un moment donné.
+
+1. Développez `letters` la variable pour afficher ses propriétés, qui incluent tous les éléments contenus dans la variable.
+
+     ![Afficher une bulle d’informations](../csharp/media/get-started-view-data-tip.png "Afficher une bulle d’informations")
+
+1. Ensuite, pointez sur `name` la variable et vous voyez sa valeur actuelle, une chaîne vide.
+
+1. Appuyez deux fois sur **F10** (ou choisissez **déboguer > pas à pas principal**) pour passer à l' `SendMessage` appel de méthode, puis appuyez sur **F10** une fois de plus.
+
+     F10 avance le débogueur à l’instruction suivante sans pas à pas détaillé dans les fonctions ou les méthodes de votre code d’application (le code continue de s’exécuter). En appuyant sur F10 `SendMessage` sur l’appel de méthode, nous avons ignoré le code `SendMessage` d’implémentation de (ce qui peut ne pas être intéressé pour le moment).
+
+1. Appuyez sur **F10** (ou **déboguez** > **pas à pas**) plusieurs fois pour effectuer une `for` itération à plusieurs reprises dans la boucle, en interrompant à nouveau `name` au point d’arrêt et en pointant sur la variable chaque fois pour vérifier sa valeur.
+
+     ![Afficher une bulle d’informations](../csharp/media/get-started-data-tip.gif "Afficher une bulle d’informations")
+
+     La valeur de la variable change avec chaque itération de la `for` boucle, en présentant les `f`valeurs de `fr`, puis `fre`, puis, et ainsi de suite. Pour accélérer le débogueur à travers la boucle plus rapidement dans ce scénario, vous pouvez appuyer sur **F5** (ou choisir **Déboguer** > **Continuer**) à la place, ce qui vous permet d’accéder au point d’arrêt au lieu de l’instruction suivante.
+
+     Souvent, lors du débogage, vous voulez un moyen rapide de vérifier les valeurs des propriétés sur des variables pour voir si elles stockent bien les valeurs prévues. Les bulles d’informations (« data tips ») sont un bon moyen de le faire.
+
+1. Tout en étant toujours suspendu dans `for` la boucle de `Main` la méthode, appuyez sur **F11** (ou choisissez **Déboguer > pas à pas détaillé**) jusqu’à ce que vous interrompiez l' `SendMessage` appel de méthode.
+
+     Vous devez être au niveau de la ligne de code suivante :
 
      `SendMessage(name, a[i]);`
 
-1. Appuyez une fois de plus sur **F11** pour effectuer un pas à pas détaillé dans la méthode `SendMessage`.
+1. Appuyez une fois de plus sur **F11** pour effectuer `SendMessage` un pas à pas détaillé dans la méthode.
 
-     Le pointeur jaune passe à la méthode `SendMessage`.
+     Le pointeur jaune avance dans la `SendMessage` méthode.
 
      ![Utiliser F11 pour effectuer un pas à pas détaillé dans le code](../csharp/media/get-started-f11.png "F10 pas à pas détaillé")
 
-     F11 est la commande **Pas à pas détaillé** : elle fait avancer l’exécution de l’application une instruction à la fois. F11 est un bon moyen pour examiner le flux de l’exécution de la façon la plus détaillée. (Pour vous déplacer plus rapidement dans le code, nous vous présenterons également d’autres options.) Par défaut, le débogueur ignore le code non-utilisateur (si vous souhaitez plus d’informations, consultez [uniquement mon code](../../debugger/just-my-code.md)).
+     F11 est la commande **Pas à pas détaillé** : elle fait avancer l’exécution de l’application une instruction à la fois. F11 est un bon moyen pour examiner le flux de l’exécution de la façon la plus détaillée. Par défaut, le débogueur ignore le code non-utilisateur (si vous voulez plus d’informations, consultez [Uniquement mon code](../../debugger/just-my-code.md)).
 
-     Supposons que vous avez terminé l’examen de la méthode `SendMessage` et que vous souhaitez sortir de la méthode tout en restant dans le débogueur. Vous pouvez faire cela avec la commande **Pas à pas sortant**.
+     Supposons que vous avez terminé d’examiner la `SendMessage` méthode et que vous souhaitez sortir de la méthode tout en restant dans le débogueur. Vous pouvez faire cela avec la commande **Pas à pas sortant**.
 
-1. Appuyez sur **Maj** + **F11** (ou **Déboguer > Pas à pas sortant**).
+1. Appuyez sur **MAJ** + **F11** (ou **déboguez > pas à pas sortant**).
 
      Cette commande reprend l’exécution de l’application (et avance le débogueur) jusqu’à ce que la méthode ou la fonction actuelle retourne.
 
-     Vous devez revenir à la boucle `for` dans la méthode `Main`, suspendue au moment de l’appel de la méthode `SendMessage`.
-
-1. Appuyez plusieurs fois sur **F11** jusqu’à ce que vous obteniez à nouveau l’appel de la méthode `SendMessage`.
-
-1. Quand vous êtes en pause au niveau de l’appel de méthode, appuyez sur **F10** (ou choisissez **déboguer > pas à pas principal**) une fois.
-
-     ![Utilisez F10 pour effectuer un pas à pas principal dans le code](../csharp/media/get-started-step-over.png "F10 pas à pas principal")
-
-     Notez que cette fois-ci, le débogueur n’effectue pas de pas à pas détaillé dans la méthode `SendMessage`. **F10** fait avancer le débogueur sans effectuer de pas à pas détaillé dans les fonctions ou les méthodes du code de votre application (le code s’exécute néanmoins). En appuyant sur **F10** sur l’appel de méthode `SendMessage` (au lieu de **F11**), nous avons ignoré le code d’implémentation de `SendMessage` (qui potentiellement ne nous intéresse pas pour l’instant). Pour plus d’informations sur les différentes façons de parcourir votre code, consultez [naviguer dans le code dans le débogueur](../../debugger/navigating-through-code-with-the-debugger.md).
+     Vous devez revenir à la `for` boucle dans la `Main` méthode, en pause au niveau de `SendMessage` l’appel de la méthode. Pour plus d’informations sur les différentes façons de parcourir votre code, consultez [naviguer dans le code dans le débogueur](../../debugger/navigating-through-code-with-the-debugger.md).
 
 ## <a name="navigate-code-using-run-to-click"></a>Parcourir le code avec Exécuter jusqu’au clic
 
 1. Appuyez sur **F5** pour avancer à nouveau jusqu’au point d’arrêt.
 
-1. Dans l’éditeur de code, faites défiler ![l’affichage jusqu'](../../debugger/media/dbg-tour-run-to-click.png "RunToClick") à la méthode `Console.WriteLine` dans la méthode `SendMessage` jusqu’à ce que le bouton vert **exécuter pour cliquer** sur s’affiche à gauche. L’info-bulle du bouton indique « Lancer l’exécution jusqu’ici ».
+1. Dans l’éditeur de code, faites défiler l' `Console.WriteLine` affichage jusqu’à `SendMessage` la méthode dans la méthode jusqu’à ce que le bouton vert **exécuter pour cliquer** sur s' ![affiche à gauche](../../debugger/media/dbg-tour-run-to-click.png "RunToClick") . L’info-bulle du bouton indique « Lancer l’exécution jusqu’ici ».
 
      ![Utiliser la fonctionnalité exécuter pour cliquer](../csharp/media/get-started-run-to-click.png "Exécuter jusqu’au clic")
 
@@ -224,7 +238,7 @@ Nous utilisons ici principalement des raccourcis clavier, car c’est un bon moy
 
 2. Cliquez sur le bouton **exécuter pour cliquer** ![sur.](../../debugger/media/dbg-tour-run-to-click.png "RunToClick")
 
-    Le débogueur passe à la méthode `Console.WriteLine`.
+    Le débogueur passe à la `Console.WriteLine` méthode.
 
     L’utilisation de ce bouton revient à définir un point d’arrêt temporaire. **Exécuter jusqu’au clic** est pratique pour examiner rapidement une zone visible du code d’application (vous pouvez cliquer dans n’importe quel fichier ouvert).
 
@@ -234,37 +248,19 @@ Cliquez sur le bouton **redémarrer l'** ![application de redémarrage](../../de
 
 Quand vous appuyez sur **Redémarrer**, vous gagnez du temps par rapport à l’action consistant à arrêter l’application, puis à redémarrer le débogueur. Le débogueur se met en pause sur le premier point d’arrêt qui est atteint par l’exécution du code.
 
-Le débogueur s’arrête à nouveau au point d’arrêt que vous avez défini précédemment à l’intérieur de la `for` boucle.
-
-## <a name="inspect-variables-with-data-tips"></a>Inspecter des variables avec des bulles d’informations
-
-Les fonctionnalités qui vous permettent d’inspecter des variables sont parmi les plus pratiques du débogueur : vous pouvez faire cela de différentes façons. Souvent, quand vous essayez de déboguer un problème, vous essayez de déterminer si les variables stockent les valeurs que vous prévoyez à un moment donné.
-
-1. Pendant la suspension de l’instruction `name += letters[i]`, pointez sur la variable `letters` et vous voyez sa valeur par défaut, la valeur du premier élément du tableau, `char[10]`.
-
-1. Développez la variable `letters` pour afficher ses propriétés, qui incluent tous les éléments contenus dans la variable.
-
-1. Ensuite, pointez sur la variable `name` et vous voyez sa valeur actuelle, une chaîne vide.
-
-1. Appuyez sur **F5** (ou **déboguez** > **Continuer**) plusieurs fois pour effectuer une itération à plusieurs reprises dans la boucle de `for`, en interrompant à nouveau au point d’arrêt et en pointant sur la variable `name` chaque fois pour vérifier sa valeur.
-
-     ![Afficher une bulle d’informations](../csharp/media/get-started-data-tip.gif "Afficher une bulle d’informations")
-
-     La valeur de la variable change avec chaque itération de la boucle `for`, en présentant les valeurs de `f`, puis `fr`, puis `fre`, et ainsi de suite.
-
-     Souvent, lors du débogage, vous voulez un moyen rapide de vérifier les valeurs des propriétés sur des variables pour voir si elles stockent bien les valeurs prévues. Les bulles d’informations (« data tips ») sont un bon moyen de le faire.
+Le débogueur s’arrête à nouveau au point d’arrêt que vous `for` avez défini précédemment à l’intérieur de la boucle.
 
 ## <a name="inspect-variables-with-the-autos-and-locals-windows"></a>Inspecter des variables avec les Fenêtres Automatique et Variables locales
 
 1. Examinez la fenêtre **Automatique** en bas de l’éditeur de code.
 
-    Si elle est fermée, ouvrez-la pendant que l’exécution est mise en pause dans le débogueur en choisissant **Déboguer** > **Windows** > **Automatique**.
+    S’il est fermé, ouvrez-le en étant suspendu dans le débogueur en sélectionnant **Déboguer** > **Windows** > **automatique**.
 
     Dans la fenêtre **Automatique**, vous voyez des variables et leur valeur actuelle. La fenêtre **Automatique** montre toutes les variables utilisées dans la ligne active ou la ligne précédente (consultez la documentation pour les comportements selon le langage).
 
 1. Ensuite, examinons la fenêtre **Variables locales**, sous un onglet à côté de la fenêtre **Automatique**.
 
-1. Développez la variable `letters` pour afficher les éléments qu’elle contient.
+1. Développez `letters` la variable pour afficher les éléments qu’elle contient.
 
      ![Inspecter les variables dans la fenêtre variables locales](../csharp/media/get-started-locals-window.png "Variables locales (fenêtre)")
 
@@ -272,19 +268,19 @@ Les fonctionnalités qui vous permettent d’inspecter des variables sont parmi 
 
 ## <a name="set-a-watch"></a>Définir un espion
 
-1. Dans la fenêtre principale de l’éditeur de code, cliquez avec le bouton droit sur la variable `name`, puis choisissez **Ajouter un espion**.
+1. Dans la fenêtre principale de l’éditeur de code, cliquez `name` avec le bouton droit sur la variable et choisissez **Ajouter un espion**.
 
     La fenêtre **Espion** s’ouvre en bas de l’éditeur de code. Vous pouvez utiliser une fenêtre **Espion** pour spécifier une variable (ou une expression) que vous voulez observer.
 
-    Maintenant, vous avez un espion défini sur la variable `name`, et vous pouvez voir sa valeur changer à mesure que vous parcourez le débogueur. Contrairement à d’autres fenêtres de variables, la fenêtre **Espion** montre toujours les variables que vous observez (elles apparaissent en grisé quand elles sont en dehors de l’étendue).
+    À présent, vous avez un espion défini sur `name` la variable et vous pouvez voir sa valeur changer à mesure que vous parcourez le débogueur. Contrairement à d’autres fenêtres de variables, la fenêtre **Espion** montre toujours les variables que vous observez (elles apparaissent en grisé quand elles sont en dehors de l’étendue).
 
 ## <a name="examine-the-call-stack"></a>Examiner la pile des appels
 
-1. Alors que l’exécution est mise en pause dans la boucle `for`, cliquez sur la fenêtre **Pile des appels**, qui est ouverte par défaut dans le volet inférieur droit.
+1. Alors que l’exécution est mise en pause dans la boucle `for`, cliquez sur la fenêtre **Pile des appels** qui est ouverte par défaut dans le volet inférieur droit.
 
-    Si elle est fermée, ouvrez-la pendant que l’exécution est mise en pause dans le débogueur en choisissant **Déboguer** > **Windows** > **Pile des appels**.
+    S’il est fermé, ouvrez-le en étant suspendu dans le débogueur en sélectionnant **Déboguer** > la**pile des appels****Windows** > .
 
-2. Cliquez sur **F11** plusieurs fois jusqu’à ce que le débogueur soit suspendu dans la méthode `SendMessage`. Regardez la fenêtre **Pile des appels**.
+2. Cliquez sur **F11** plusieurs fois jusqu’à ce que le débogueur soit suspendu `SendMessage` dans la méthode. Regardez la fenêtre **Pile des appels**.
 
     ![Examiner la pile des appels](../csharp/media/get-started-call-stack.png "ExamineCallStack")
 
@@ -301,9 +297,9 @@ Les fonctionnalités qui vous permettent d’inspecter des variables sont parmi 
 
 ## <a name="change-the-execution-flow"></a>Changer le flux d’exécution
 
-1. Appuyez deux fois sur **F11** pour exécuter la méthode `Console.WriteLine`.
+1. Appuyez deux fois sur **F11** pour `Console.WriteLine` exécuter la méthode.
 
-1. Après avoir suspendu le débogueur dans l’appel de méthode `SendMessage`, utilisez la souris pour saisir la flèche jaune (le pointeur d’exécution) à gauche et déplacer la flèche jaune d’une ligne vers le haut, de nouveau vers `Console.WriteLine`.
+1. Après avoir suspendu le débogueur dans l' `SendMessage` appel de méthode, utilisez la souris pour saisir la flèche jaune (le pointeur d’exécution) à gauche et déplacer la flèche jaune d’une ligne vers `Console.WriteLine`le haut.
 
 1. Appuyez sur **F11**.
 

@@ -11,13 +11,13 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: cb48733f84dcf484d2c2d7ffb18e838faae07ab0
-ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/25/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "72911199"
 ---
-# <a name="concurrency-visualizer-sdk"></a>Kit de développement logiciel (SDK) du visualiseur concurrentiel
+# <a name="concurrency-visualizer-sdk"></a>Kit SDK du visualiseur concurrentiel
 Vous pouvez instrumenter votre code source à l’aide du kit SDK du visualiseur concurrentiel pour afficher des informations supplémentaires dans le visualiseur concurrentiel. Vous pouvez associer les données supplémentaires à des phases et à des événements de votre code. Ces visualisations supplémentaires sont appelées *marqueurs*.  Pour obtenir une introduction pas à pas, consultez [Introducing the Concurrency Visualizer SDK](https://blogs.msdn.microsoft.com/visualizeparallel/2011/10/17/introducing-the-concurrency-visualizer-sdk/).
 
 ## <a name="properties"></a>Propriétés
@@ -27,7 +27,7 @@ Vous pouvez instrumenter votre code source à l’aide du kit SDK du visualiseur
  Le visualiseur concurrentiel expose un fournisseur par défaut que vous pouvez utiliser pour générer des marqueurs. Le fournisseur est déjà inscrit avec le visualiseur concurrentiel. Aucune autre étape n’est donc nécessaire pour afficher les marqueurs dans l’interface utilisateur.
 
 ### <a name="c-and-visual-basic"></a>C# et Visual Basic
- En C#, en Visual Basic et dans tout autre code managé, utilisez le fournisseur par défaut en appelant des méthodes dans la classe [Markers](/previous-versions/hh694099(v=vs.140)). Il expose quatre méthodes pour générer des marqueurs : [WriteFlag](/previous-versions/hh694185%28v%3dvs.140%29), [EnterSpan](/previous-versions/hh694205(v=vs.140)), [WriteMessage](/previous-versions/hh694161(v=vs.140))et [WriteAlert](/previous-versions/hh694180(v=vs.140)). Il existe plusieurs surcharges pour ces fonctions, selon que vous souhaitez utiliser les valeurs par défaut des propriétés.  La surcharge la plus simple accepte un seul paramètre de chaîne qui spécifie la description de l’événement. La description s’affiche dans les rapports du visualiseur concurrentiel.
+ En C#, en Visual Basic et dans tout autre code managé, utilisez le fournisseur par défaut en appelant des méthodes dans la classe [Markers](/previous-versions/hh694099(v=vs.140)). Il expose quatre méthodes pour générer des marqueurs: [WriteFlag](/previous-versions/hh694185%28v%3dvs.140%29), [EnterSpan](/previous-versions/hh694205(v=vs.140)), [WriteMessage](/previous-versions/hh694161(v=vs.140)), et [WriteAlert](/previous-versions/hh694180(v=vs.140)). Il existe plusieurs surcharges pour ces fonctions, selon que vous souhaitez utiliser les valeurs par défaut des propriétés.  La surcharge la plus simple accepte un seul paramètre de chaîne qui spécifie la description de l’événement. La description s’affiche dans les rapports du visualiseur concurrentiel.
 
 ##### <a name="to-add-sdk-support-to-a-c-or-visual-basic-project"></a>Pour ajouter la prise en charge du kit SDK à un projet C# ou Visual Basic
 
@@ -121,9 +121,9 @@ Vous pouvez instrumenter votre code source à l’aide du kit SDK du visualiseur
 
 ## <a name="see-also"></a>Voir aussi
 
-|Titre|Description|
+|Intitulé|Description|
 |-----------|-----------------|
-|[Informations de référence sur la bibliothèque C++](../profiling/cpp-library-reference.md)|Décrit l’API du visualiseur concurrentiel pour le langage C++.|
-|[Informations de référence sur la bibliothèque C](../profiling/c-library-reference.md)|Décrit l’API du visualiseur concurrentiel pour le langage C.|
+|[Référence de la bibliothèque de CMD](../profiling/cpp-library-reference.md)|Décrit l’API du visualiseur concurrentiel pour le langage C++.|
+|[Référence de la bibliothèque C](../profiling/c-library-reference.md)|Décrit l’API du visualiseur concurrentiel pour le langage C.|
 |[Instrumentation](/previous-versions/hh694104(v=vs.140))|Décrit l’API du visualiseur concurrentiel pour le code managé.|
-|[Visualiseur concurrentiel](../profiling/concurrency-visualizer.md)|Informations de référence sur les vues et les rapports des fichiers de données de profilage qui sont générés à l’aide de la méthode d’accès concurrentiel et qui comprennent des données d’exécution des threads.|
+|[Visualiseur concurrentiel](../profiling/concurrency-visualizer.md)|Informations de référence sur les vues et rapports des fichiers de données de profilage générés à l’aide de la méthode de concurrence et qui incluent des données d’exécution des threads.|

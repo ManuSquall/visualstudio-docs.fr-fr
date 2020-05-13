@@ -11,10 +11,10 @@ ms.workload:
 - multiple
 author: mikejo5000
 ms.openlocfilehash: 2158c889aefc85c908aa9ee42d45858fd11d557e
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75590811"
 ---
 # <a name="unit-tests-for-generic-methods"></a>Tests unitaires pour les méthodes génériques
@@ -32,7 +32,7 @@ Les exemples suivants illustrent des tests unitaires pour les génériques :
 
 - [Utiliser une contrainte de type](#TypeConstraintNotSatisfied). Cet exemple montre un test unitaire pour une méthode générique qui utilise une contrainte de type. Dans cet exemple, la contrainte de type n'est pas satisfaite.
 
-### <a name="EditingGeneratedTestCode"></a> Exemple 1 : Modification du code de test généré
+### <a name="example-1-editing-generated-test-code"></a><a name="EditingGeneratedTestCode"></a> Exemple 1 : Modification du code de test généré
 Le code de test de cette section teste une méthode de code sous test nommée `SizeOfLinkedList()`. Cette méthode retourne un entier qui spécifie le nombre de nœuds dans la liste liée.
 
 Le premier exemple de code, dans la section Code de test généré, affiche le code de test non modifié comme il a été généré par Visual Studio Enterprise. Le deuxième exemple, dans la section Code de test modifié, montre comment vous pourriez lui faire tester le fonctionnement de la méthode SizeOfLinkedList pour deux types de données différents, `int` et `char`.
@@ -117,7 +117,7 @@ public void SizeOfLinkedListTest()
 > [!NOTE]
 > Chaque fois que le test SizeOfLinkedListTest est exécuté, sa méthode TestHelper est appelée deux fois. L'instruction Assert doit chaque fois prendre la valeur True pour que le test réussisse. Si le test échoue, il peut être difficile de savoir lequel de l'appel ayant spécifié `<int>` ou de l'appel ayant spécifié `<char>` a provoqué son échec. Pour trouver la réponse, vous pouvez examiner la pile des appels ou définir des points d'arrêt dans votre méthode de test, puis déboguer pendant l'exécution du test. Pour plus d’informations, consultez [Comment : effectuer un débogage lors de l’exécution d’un test dans une solution ASP.NET](https://msdn.microsoft.com/Library/de4d7aa1-4a1e-467e-a19b-4a85ec245b8b).
 
-### <a name="TypeConstraintNotSatisfied"></a> Exemple 2 : Utilisation d’une contrainte de type
+### <a name="example-2-using-a-type-constraint"></a><a name="TypeConstraintNotSatisfied"></a> Exemple 2 : Utilisation d’une contrainte de type
 Cet exemple montre un test unitaire pour une méthode générique qui utilise une contrainte de type non satisfaite. La première section affiche le code du projet de code sous test. La contrainte de type est mise en surbrillance.
 
 La deuxième section affiche le code du projet de test.
@@ -196,4 +196,4 @@ namespace TestProject1
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Tests unitaires sur votre code](../test/unit-test-your-code.md)
+- [Test unitaire de votre code](../test/unit-test-your-code.md)

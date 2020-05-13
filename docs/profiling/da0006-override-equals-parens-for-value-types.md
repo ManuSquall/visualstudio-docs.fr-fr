@@ -15,23 +15,23 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 9e097d6d8c9a7b82fac53fd37951644eb7eb5e59
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74779530"
 ---
 # <a name="da0006-override-equals-for-value-types"></a>DA0006 : Remplacer Equals() pour les types valeur
 
 |||
 |-|-|
-|ID de la règle|DA0006|
+|ID de règle|DA0006|
 |Category|Utilisation du .NET Framework|
-|Méthodes de profilage|Échantillonnage|
+|Méthodes de profilage|échantillonnage|
 |Message|Remplacer Equals et l’opérateur d’égalité pour les types valeur.|
-|Type de messages|Warning|
+|Type de messages|Avertissement|
 
-## <a name="cause"></a>Cause
+## <a name="cause"></a>Cause :
  Les appels à la méthode Equals ou aux opérateurs d’égalité d’un type valeur public représentent une part importante des données de profilage. Implémentez une méthode plus efficace.
 
 ## <a name="rule-description"></a>Description de la règle

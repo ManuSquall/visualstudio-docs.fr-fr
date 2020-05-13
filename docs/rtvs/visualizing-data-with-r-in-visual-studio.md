@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - data-science
 ms.openlocfilehash: a48ad7800f8ea2b992e848cfbf6b4fdac99b2062
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "62811081"
 ---
 # <a name="create-visual-data-plots-with-r"></a>Créer des tracés de données visuels avec R
@@ -43,7 +43,7 @@ Le redimensionnement d’une fenêtre de tracé provoque toujours le réaffichag
 
 ## <a name="plot-window-commands"></a>Commandes de la fenêtre de tracés
 
-La barre d’outils de la fenêtre de tracés contient des commandes applicables, dont la plupart sont également disponibles par l’intermédiaire du menu **Outils R** > **Tracés**.
+La barre d’outils de la fenêtre de l’intrigue contient des commandes applicables, dont la plupart sont également disponibles dans le menu **R Tools** > **Plots.**
 
 | Bouton | Commande | Description |
 | --- | --- | --- |
@@ -62,17 +62,17 @@ La barre d’outils de la fenêtre de tracés contient des commandes applicables
 
 Comme les scientifiques des données travaillent souvent avec de nombreux tracés provenant de différents datasets, RTVS vous permet de créer autant de fenêtres de tracés indépendantes que vous le souhaitez. Vous pouvez ensuite organiser ces fenêtres comme vous le souhaitez dans le cadre de Visual Studio ou en dehors de ce cadre. (Pour obtenir des informations générales sur l’ancrage et le redimensionnement des fenêtres, consultez [Personnalisation des dispositions de fenêtres dans Visual Studio](../ide/customizing-window-layouts-in-visual-studio.md).)
 
-Vous pouvez créer une fenêtre de tracé à l’aide de la barre d’outils ou en cliquant sur **Outils R** > **Tracés** > **Nouvelle fenêtre de tracés**. La nouvelle fenêtre de tracés devient la fenêtre *active*, qui est l’emplacement où les nouveaux tracés sont affichés. Pour changer la fenêtre active, basculez vers elle et sélectionnez le bouton de barre d’outils **Activer la fenêtre de tracés** ou cliquez sur **Outils R** > **Tracés** > **Activer la fenêtre de tracés**.
+Vous créez une nouvelle fenêtre d’intrigue à l’aide du bouton de la barre d’outils ou **R Tools** > **Plots** > **New Plot Window**. La nouvelle fenêtre de tracés devient la fenêtre *active*, qui est l’emplacement où les nouveaux tracés sont affichés. Pour changer la fenêtre active, basculez vers elle et sélectionnez le bouton de barre d’outils **Activer la fenêtre de tracés** ou cliquez sur **Outils R** > **Tracés** > **Activer la fenêtre de tracés**.
 
 Les tracés sont aussi des objets indépendants, ce qui signifie que vous pouvez les copier ou les déplacer entre les fenêtres de tracés à l’aide d’une opération de glisser-déplacer avec la souris, ou à l’aide des commandes **Copier**, **Couper** et **Coller** du menu contextuel et du menu **Edition**.
 
-Le comportement par défaut de l’opération de glisser-déplacer est la copie ; pour déplacer, effectuez une opération de glisser-déplacer tout en maintenant la touche **Maj** enfoncée.
+Le comportement par défaut pour drag-and-drop est copie; pour se déplacer, glisser et tomber tout en maintenant la clé **Shift.**
 
 ## <a name="plot-history"></a>Historique de tracés
 
-Les commandes de tracés sont conservées dans l’historique de tracés pour chaque fenêtre. Ainsi, tout le traçage dans une session est conservé. Pour parcourir l’historique, utilisez les boutons de direction sur la barre d’outils de la fenêtre de tracés, ou **Ctrl**+**Alt**+**F11** et **Ctr**+**Alt**+**F12**. Vous pouvez également supprimer des tracés spécifiques ou effacer tous les tracés de la fenêtre à l’aide des boutons de barre d’outils ou en cliquant sur les commandes de menu **Outils R** > **Tracés**.
+Les commandes de tracés sont conservées dans l’historique de tracés pour chaque fenêtre. Ainsi, tout le traçage dans une session est conservé. Pour naviguer dans l’histoire, utilisez les boutons de flèche sur la barre d’outils de fenêtre de l’intrigue, ou **Ctrl**+**Alt**+**F11** et **Ctrl**+**Alt**+**F12**. Vous pouvez également supprimer des parcelles simples ou effacer toutes les parcelles de la fenêtre à nouveau à l’aide de boutons de barre d’outils ou les commandes de menu **R Tools** > **Plots.**
 
-Pour voir l’ensemble des tracés, ouvrez la fenêtre d’historique de tracés à l’aide du bouton de barre d’outils ou en cliquant sur **Outils R** > **Tracés** > **Fenêtre d’historique des tracés**.
+Pour voir toute la collection de parcelles, ouvrez la fenêtre d’histoire de l’intrigue à l’aide du bouton de la barre d’outils ou **R Tools** > **Plots Plots** > **Plot History Window**.
 L’historique vous donne une liste des miniatures pour les tracés qui ont été affichés dans cette fenêtre, regroupés par fenêtres de tracés (ou appareils). Les boutons de zoom dans la barre d’outils permettent de changer la taille des miniatures.
 
 ![Fenêtre d’historique des tracés](media/plotting-plot-history-window.png)
@@ -85,7 +85,7 @@ La durée de vie de votre historique de tracés dans toutes les fenêtres est li
 
 Vous pouvez manipuler les fenêtres de tracés par programmation à partir de code R, en utilisant des numéros de périphériques pour identifier des fenêtres de tracés spécifiques.
 
-- `dev.list()`: liste tous les périphériques graphiques dans la session R active.
-- `dev.new()`: crée un périphérique graphique (une nouvelle fenêtre de tracés).
-- `dev.set(<device number>)`: définit le périphérique graphique actif.
-- `dev.off()`: supprime le périphérique actif.
+- `dev.list()` : répertorie tous les périphériques d’affichage dans la session R active.
+- `dev.new()` : crée un périphérique d’affichage (une nouvelle fenêtre de tracés).
+- `dev.set(<device number>)` : définit le périphérique tracé actif.
+- `dev.off()` : supprime le périphérique actif.

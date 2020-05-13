@@ -1,5 +1,5 @@
 ---
-title: 'Tutoriel : Ouvrir un projet à partir d’un référentiel'
+title: 'Tutorial: Ouvrir un projet à partir d’une pension'
 description: Découvrez comment ouvrir un projet dans un référentiel Git ou Azure DevOps à l’aide de Visual Studio.
 ms.custom: get-started
 ms.date: 03/30/2019
@@ -15,13 +15,13 @@ ms.workload:
 - dotnet
 - dotnetcore
 ms.openlocfilehash: 3af54d663cee1ad2b2dd4e8241678b88c635d376
-ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
-ms.translationtype: HT
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/30/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "70180443"
 ---
-# <a name="tutorial-open-a-project-from-a-repo"></a>Tutoriel : Ouvrir un projet à partir d’un référentiel
+# <a name="tutorial-open-a-project-from-a-repo"></a>Tutorial: Ouvrir un projet à partir d’une pension
 
 Dans ce didacticiel, vous allez utiliser Visual Studio pour vous connecter à un référentiel pour la première fois puis ouvrir un projet à partir de celui-ci.
 
@@ -41,7 +41,7 @@ Si vous n’avez pas encore installé Visual Studio, accédez à la page [Télé
 
 ::: moniker range="vs-2017"
 
-1. Ouvrez Visual Studio 2017.
+1. Ouvrez Visual Studio 2017.
 
 1. Dans la barre de menus supérieure, choisissez **Fichier** > **Ouvrir** > **Ouvrir depuis le contrôle de code source**.
 
@@ -99,7 +99,7 @@ Regardez l’animation suivante pour vérifier le travail que vous avez effectu�
 
 ::: moniker range="vs-2017"
 
-1. Ouvrez Visual Studio 2017.
+1. Ouvrez Visual Studio 2017.
 
 1. Dans la barre de menus supérieure, choisissez **Fichier** > **Ouvrir** > **Ouvrir depuis le contrôle de code source**.
 
@@ -109,11 +109,11 @@ Regardez l’animation suivante pour vérifier le travail que vous avez effectu�
 
 1. Voici deux façons de se connecter à votre référentiel Azure DevOps :
 
-      - Dans la section **Fournisseurs de services hébergés**, choisissez **Se connecter...** .
+      - Dans la section **Fournisseurs de services hébergés**, choisissez **Se connecter...**.
 
         ![La section Fournisseurs de services hébergés de la fenêtre Team Explorer dans l’IDE de Visual Studio](./media/open-proj-repo-azure-devops.png)
 
-      - Dans la liste déroulante **Gérer les connexions**, choisissez **Se connecter à un projet...** .
+      - Dans la liste déroulante **Gérer les connexions**, choisissez **Se connecter à un projet...**.
 
         ![La section Gérer les connexions de la fenêtre Team Explorer dans l’IDE de Visual Studio](./media/open-proj-repo-azuredevops-manage-connections.png)
 
@@ -177,13 +177,13 @@ Regardez l’animation suivante pour vérifier le travail que vous avez effectu�
 
 Si vous êtes prêt à coder avec Visual Studio, suivez un des didacticiels spécifiques au langage suivants :
 
-- [Didacticiels Visual Studio | **C#** ](./csharp/index.yml)
+- [Tutoriels Visual Studio (en anglais) **C**](./csharp/index.yml)
 - [Didacticiels Visual Studio | **Visual Basic**](./visual-basic/index.yml)
-- [Didacticiels Visual Studio | **C++** ](/cpp/get-started/tutorial-console-cpp)
+- [Didacticiels Visual Studio | **C++**](/cpp/get-started/tutorial-console-cpp)
 - [Didacticiels Visual Studio | **Python**](/visualstudio/python/)
 - [Didacticiels Visual Studio | **JavaScript**, **TypeScript** et **Node.js**](/visualstudio/javascript/)
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Azure DevOps Services : Bien démarrer avec Azure Repos et Visual Studio](/azure/devops/repos/git/gitquickstart/)
-- [Microsoft Learn : Bien démarrer avec Azure DevOps](/learn/modules/get-started-with-devops/)
+- [Azure DevOps Services: Démarrer avec Azure Repos et Visual Studio](/azure/devops/repos/git/gitquickstart/)
+- [Microsoft Learn: Démarrer avec Azure DevOps](/learn/modules/get-started-with-devops/)

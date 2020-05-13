@@ -16,10 +16,10 @@ ms.workload:
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.openlocfilehash: b2570876ddaa03753b1c0d3fb9f9ddc772bbbcb8
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/16/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "76114660"
 ---
 # <a name="install-certificates-required-for-visual-studio-offline-installation"></a>Installer les certificats nécessaires à l’installation hors connexion de Visual Studio
@@ -136,19 +136,19 @@ Les trois fichiers .P12 figurant dans ce dossier contiennent chacun un certifica
 
 * **ManifestSignCertificates.p12** contient :
   * Certificat intermédiaire : **Microsoft Code Signing PCA 2011**
-    * Non requis Le cas échéant, améliore les performances dans certains scénarios.
+    * Non requis. Le cas échéant, améliore les performances dans certains scénarios.
   * Certificat racine : **Microsoft Root Certificate Authority 2011**
     * Obligatoire sur les systèmes Windows 7 Service Pack 1 qui ne disposent pas des dernières mises à jour Windows.
 * **ManifestCounterSignCertificates.p12** contient :
   * Certificat intermédiaire : **Microsoft Time-Stamp PCA 2010**
-    * Non requis Le cas échéant, améliore les performances dans certains scénarios.
+    * Non requis. Le cas échéant, améliore les performances dans certains scénarios.
   * Certificat racine : **Microsoft Root Certificate Authority 2010**
     * Obligatoire pour les systèmes Windows 7 Service Pack 1 qui ne disposent pas des dernières mises à jour Windows.
 * **Vs_installer_opc.SignCertificates.p12** contient :
   * Certificat intermédiaire : **Microsoft Code Signing PCA**
     * Obligatoire pour tous les systèmes. Notez que les systèmes dotés de toutes les mises à jour appliquées à partir de Windows Update n’ont peut-être pas ce certificat.
   * Certificat racine : **Microsoft Root Certificate Authority**
-    * Requis. Ce certificat est fourni avec les systèmes exécutant Windows 7 ou version ultérieure.
+    * Obligatoire. Ce certificat est fourni avec les systèmes exécutant Windows 7 ou version ultérieure.
 
 **Mise à jour** : pour Visual Studio 2017 version 15.8 Préversion 2 ou version ultérieure, le programme d’installation Visual Studio nécessite uniquement que les certificats racines soient installés sur le système. Ces certificats sont stockés dans des fichiers .cer au lieu de fichiers .p12.
 
@@ -164,7 +164,7 @@ Les trois fichiers .P12 figurant dans ce dossier contiennent chacun un certifica
     * Obligatoire pour les systèmes Windows 7 Service Pack 1 qui ne disposent pas des dernières mises à jour Windows.
 * **Vs_installer_opc.SignCertificates.cer** contient :
   * Certificat racine : **Microsoft Root Certificate Authority**
-    * Requis. Ce certificat est fourni avec les systèmes exécutant Windows 7 ou version ultérieure.
+    * Obligatoire. Ce certificat est fourni avec les systèmes exécutant Windows 7 ou version ultérieure.
 
 Visual Studio Installer requiert uniquement l’installation des certificats racines sur le système.
 
@@ -178,11 +178,11 @@ Quand une signature est vérifiée dans un environnement en ligne, les API Windo
 
 Une manière de vérifier l’installation du système consiste à suivre ces étapes :
 
-1. Exécutez **mmc.exe**.<br/>
+1. Exécuter **mmc.exe**.<br/>
   a. Cliquez sur **Fichier** et sélectionnez **Ajouter/Supprimer un composant logiciel enfichable**.<br/>
   b. Double-cliquez sur **Certificats**, sélectionnez **Compte d’ordinateur** et cliquez sur **Suivant**.<br/>
   c. Sélectionnez **Ordinateur local**, cliquez sur **Terminer**, puis sur **OK**.<br/>
-  d. Développez **Certificats (ordinateur local)** .<br/>
+  d. Développez **Certificats (ordinateur local)**.<br/>
   e. Développez **Autorités de certification racines de confiance** et sélectionnez **Certificats**.<br/>
     * Recherchez les certificats racines nécessaires dans cette liste.<br/>
 

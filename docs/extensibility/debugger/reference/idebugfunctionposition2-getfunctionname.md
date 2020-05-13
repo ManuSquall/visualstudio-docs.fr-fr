@@ -1,5 +1,5 @@
 ---
-title: IDebugFunctionPosition2::GetFunctionName | Microsoft Docs
+title: IDebugFunctionPosition2::GetFunctionName ( Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugFunctionPosition2::GetFunctionName
 ms.assetid: eb7a348e-a7f5-4f25-be68-80482d5482a8
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: a3bef8ebf82786212552421ebb608e26a6708623
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 771dbe369154200805fb9d344dd5b457353e34dd
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66313341"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80728412"
 ---
 # <a name="idebugfunctionposition2getfunctionname"></a>IDebugFunctionPosition2::GetFunctionName
-Obtient le nom de la fonction vers laquelle pointe cette position.
+Obtient le nom de la fonction à laquelle cette position pointe.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -44,7 +44,7 @@ int GetFunctionName(
 [out] Retourne le nom de la fonction.
 
 ## <a name="return-value"></a>Valeur de retour
- En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.
+ En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
 ## <a name="see-also"></a>Voir aussi
 - [IDebugFunctionPosition2](../../../extensibility/debugger/reference/idebugfunctionposition2.md)

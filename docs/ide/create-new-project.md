@@ -1,5 +1,5 @@
 ---
-title: Créer un projet
+title: Création d'un projet
 ms.date: 03/19/2019
 ms.topic: conceptual
 f1_keywords:
@@ -12,19 +12,19 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 77a6a33a1dde4d779a56c9ee559ecfd3b20dfbfb
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75585468"
 ---
-# <a name="create-a-new-project-in-visual-studio"></a>Créer un projet dans Visual Studio
+# <a name="create-a-new-project-in-visual-studio"></a>Création d'un projet dans Visual Studio
 
 ::: moniker range="vs-2017"
 
 ## <a name="open-the-new-project-dialog"></a>Ouvrir la boîte de dialogue Nouveau projet
 
-Il existe plusieurs façons de créer un projet dans Visual Studio 2017. Dans la page Démarrage, entrez le nom d’un modèle de projet dans la zone **Rechercher dans les modèles de projet**, ou choisissez le lien **Créer un projet** pour ouvrir la boîte de dialogue **Nouveau projet**. Outre démarrer à partir de la page Démarrage, vous pouvez choisir **Fichier** > **Nouveau** > **Projet** dans la barre de menus ou cliquer sur le bouton **Nouveau projet** dans la barre d’outils.
+Il existe plusieurs façons de créer un projet dans Visual Studio 2017. Dans la page Démarrage, entrez le nom d’un modèle de projet dans la zone **Rechercher dans les modèles de projet**, ou choisissez le lien **Créer un projet** pour ouvrir la boîte de dialogue **Nouveau projet**. En plus de la page Démarrer, vous pouvez également choisir **File** > **New** > **Project** sur la barre du menu ou cliquez sur le bouton Nouveau **Projet** sur la barre d’outils.
 
 ![Page Démarrer et Fichier > Nouveau > Projet](./media/vside-newproject1.png)
 
@@ -32,7 +32,7 @@ Il existe plusieurs façons de créer un projet dans Visual Studio 2017. Dans l
 
 Dans la boîte de dialogue **Nouveau projet**, les modèles de projet disponibles sont répertoriés sous la catégorie **Modèles**. Les modèles sont organisés par langage de programmation et type de projet, par exemple, Visual C#, JavaScript et Azure Data Lake.
 
-![Nouveau projet, boîte de dialogue](./media/vside-newproject-templates-list.png)
+![Boîte de dialogue Nouveau projet](./media/vside-newproject-templates-list.png)
 
 > [!NOTE]
 > La liste des langages de programmation et des modèles de projet disponibles dépend de la version de Visual Studio que vous utilisez et des charges de travail qui sont installées. Pour découvrir comment installer des charges de travail supplémentaires, consultez [Modifier Visual Studio en ajoutant ou supprimant des charges de travail et des composants](../install/modify-visual-studio.md).
@@ -59,7 +59,7 @@ Il existe plusieurs façons de créer un projet dans Visual Studio 2019. Quand 
 
 ![Créer un projet à partir de la fenêtre de démarrage dans Visual Studio 2019](media/vs-2019/start-window-create-new-project.png)
 
-Si l’environnement de développement Visual Studio est déjà ouvert, vous pouvez créer un nouveau projet en choisissant **fichier** > **nouveau** > **projet** dans la barre de menus ou en cliquant sur le bouton **nouveau projet** dans la barre d’outils.
+Si l’environnement de développement Visual Studio est déjà ouvert, vous pouvez créer un projet en choisissant **Fichier** > **Nouveau** > **Projet** dans la barre de menus ou en cliquant sur le bouton **Nouveau projet** dans la barre d’outils.
 
 ![Bouton Nouveau projet dans Visual Studio 2019](media/vs-2019/new-project-button.png)
 

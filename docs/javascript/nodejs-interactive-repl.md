@@ -12,10 +12,10 @@ dev_langs:
 ms.workload:
 - nodejs
 ms.openlocfilehash: faed930c60869010f740cf0a1e118a40299ce782
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "62840660"
 ---
 # <a name="work-with-the-nodejs-interactive-window"></a>Utilisation de la fenêtre interactive Node.js
@@ -28,7 +28,7 @@ Vous pouvez ouvrir la fenêtre interactive en cliquant avec le bouton droit sur 
 
 ![Fenêtre interactive Node.js dans le menu contextuel du projet](../javascript/media/interactivewindow-open-from-project.png)
 
-Les touches de raccourci par défaut pour ouvrir la fenêtre interactive Node.js sont **[CTRL] + K, N**. Vous pouvez aussi ouvrir la fenêtre à partir de la barre d’outils en choisissant **View (Vue)** > **Windows (Fenêtre)** > **Node.js Interactive Window (Fenêtre interactive Node.js)**.
+Les clés raccourcies par défaut pour ouvrir la fenêtre interactive Node.js sont **[CTRL] - K, N**. Ou, vous pouvez ouvrir la fenêtre à partir de la barre d’outils en choisissant **View** > **Windows** > **Node.js Fenêtre interactive**.
 
 ## <a name="use-the-repl"></a>Utiliser l’environnement REPL
 

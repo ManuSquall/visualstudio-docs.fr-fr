@@ -14,13 +14,13 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: e3d030e028332bd57afe66eee31c888713721212
-ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
-ms.translationtype: HT
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/29/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "68605978"
 ---
-# <a name="options-dialog-box-text-editor--javascript--intellisense"></a>Boîte de dialogue Options : Éditeur de texte \> JavaScript \> IntelliSense
+# <a name="options-dialog-box-text-editor--javascript--intellisense"></a>Boîte de dialogue d’options : Éditeur de \> texte JavaScript \> IntelliSense
 
 Utilisez la page **IntelliSense** de la boîte de dialogue **Options** pour modifier les paramètres qui affectent le comportement d'IntelliSense pour JavaScript. Vous pouvez accéder à la page **IntelliSense** en choisissant **Outils** > **Options** dans la barre de menus, puis en développant **Éditeur de texte** > **JavaScript/TypeScript** > **IntelliSense**.
 
@@ -32,17 +32,17 @@ La page **IntelliSense** contient les sections suivantes :
 
 Vous pouvez utiliser ces options pour modifier le comportement de la saisie semi-automatique des instructions IntelliSense.
 
-### <a name="uielement-list"></a>Liste UIElement
+### <a name="uielement-list"></a>Liste des éléments de l'interface utilisateur
 
-**Utiliser uniquement la touche Tab ou Entrée pour valider**
+**Utilisez uniquement Tab ou Enter pour commettre**
 
 Quand vous cochez cette case, l’éditeur de code JavaScript ajoute des instructions avec les éléments sélectionnés dans la liste de complétion seulement quand vous appuyez sur la touche **Tab** ou **Entrée**. Quand vous décochez cette case, d’autres caractères, comme un point, une virgule, deux-points, une parenthèse ouvrante et une accolade ouvrante ({), peuvent également ajouter des instructions avec les éléments sélectionnés.
 
-## <a name="references"></a>Références
+## <a name="references"></a>References
 
 Vous pouvez utiliser ces options pour spécifier les types de fichiers IntelliSense .js qui sont dans la portée pour différents types de projet JavaScript. Les références IntelliSense sont généralement utilisées pour fournir une prise en charge IntelliSense pour les objets globaux. Vous pouvez également utiliser cette page pour définir l'ordre de chargement des scripts qui doivent être chargés au moment de l'exécution, et ajouter des fichiers d'extension IntelliSense.
 
-### <a name="uielement-list"></a>Liste UIElement
+### <a name="uielement-list"></a>Liste des éléments de l'interface utilisateur
 
 **Groupes de référence**
 

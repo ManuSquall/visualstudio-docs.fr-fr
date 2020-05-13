@@ -1,5 +1,5 @@
 ---
-title: OBJECT_TYPE | Microsoft Docs
+title: OBJECT_TYPE Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - OBJECT_TYPE enumeration
 ms.assetid: c4d246f9-8a98-44ec-b2bb-ff5c684f668e
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 726e4978ac2c474b1f23b90f409f25b8a58aceab
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 4ffb85a14e42dd57c345481285eb1f776b3866d3
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66349916"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80714129"
 ---
-# <a name="objecttype"></a>OBJECT_TYPE
-Spécifie le type d’un objet à partir de l’évaluateur d’expression.
+# <a name="object_type"></a>Object_Type
+Spécifie le type d’objet de l’évaluateur d’expression.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -70,40 +70,40 @@ public enum enum_OBJECT_TYPE { 
 
 ## <a name="fields"></a>Champs
  `OBJECT_TYPE_BOOLEAN`\
- Indique que l’objet est une valeur booléenne.
+ Indique que l’objet est un Boolean.
 
  `OBJECT_TYPE_CHAR`\
- Indique que l’objet est un caractère.
+ Indique que l’objet est un personnage.
 
  `OBJECT_TYPE_I1`\
- Indique que l’objet est un entier signé de 1 octet.
+ Indique que l’objet est un intégrer signé un par un.
 
  `OBJECT_TYPE_U1`\
- Indique que l’objet est un entier non signé sur un octet.
+ Indique que l’objet est un insigné one-byte.
 
  `OBJECT_TYPE_I2`\
- Indique que l’objet est un entier signé de 2 octets.
+ Indique que l’objet est un intégrer signé à deux parse.
 
  `OBJECT_TYPE_U2`\
- Indique que l’objet est un entier non signé de 2 octets.
+ Indique que l’objet est un integer non signé à deux étages.
 
  `OBJECT_TYPE_I4`\
- Indique que l’objet est un entier signé de 4 octets.
+ Indique que l’objet est un intégrer signé à quatre byte.
 
  `OBJECT_TYPE_U4`\
- Indique que l’objet est un entier non signé de 4 octets.
+ Indique que l’objet est un intégré non signé à quatre.
 
  `OBJECT_TYPE_I8`\
- Indique que l’objet est un entier signé de 8 octets.
+ Indique que l’objet est un intégrer signé à huit.
 
  `OBJECT_TYPE_U8`\
- Indique que l’objet est un entier non signé de 8 octets.
+ Indique que l’objet est un intégré non signé à huit.
 
  `OBJECT_TYPE_R4`\
- Indique que l’objet est un nombre à virgule flottante de 4 octets.
+ Indique que l’objet est un numéro de quatre points flottants.
 
  `OBJECT_TYPE_R8`\
- Indique que l’objet est un nombre à virgule flottante de 8 octets.
+ Indique que l’objet est un numéro flottant de huit points.
 
  `OBJECT_TYPE_OBJECT`\
  Indique que l’objet est un objet.
@@ -115,14 +115,14 @@ public enum enum_OBJECT_TYPE { 
  Indique que l’objet est une classe.
 
 ## <a name="remarks"></a>Notes
- Passé en tant qu’argument à la [CreatePrimitiveObject](../../../extensibility/debugger/reference/idebugfunctionobject-createprimitiveobject.md) et [CreateArrayObject](../../../extensibility/debugger/reference/idebugfunctionobject-createarrayobject.md) méthodes.
+ Passé comme un argument aux méthodes [CreatePrimitiveObject](../../../extensibility/debugger/reference/idebugfunctionobject-createprimitiveobject.md) et [CreateArrayObject.](../../../extensibility/debugger/reference/idebugfunctionobject-createarrayobject.md)
 
-## <a name="requirements"></a>Configuration requise
- En-tête : ee.h
+## <a name="requirements"></a>Spécifications
+ En-tête: ee.h
 
- Espace de noms : Microsoft.VisualStudio.Debugger.Interop
+ Namespace: Microsoft.VisualStudio.Debugger.Interop
 
- Assembly : Microsoft.VisualStudio.Debugger.Interop.dll
+ Assemblage: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>Voir aussi
 - [Énumérations](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)

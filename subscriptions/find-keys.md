@@ -3,15 +3,16 @@ title: Recherche et réclamation de clés de produit dans les abonnements Visual
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 07/11/2019
+ms.assetid: da8df006-4896-4ff9-b487-698d78deabc3
+ms.date: 03/09/2020
 ms.topic: conceptual
 description: Découvrir comment rechercher, réclamer et exporter des clés de produit dans les abonnements Visual Studio
-ms.openlocfilehash: 4efdc118961b6e773e33eb16e40c6e0f09a13dc7
-ms.sourcegitcommit: 485881e6ba872c7b28a7b17ceaede845e5bea4fe
-ms.translationtype: HT
+ms.openlocfilehash: 3946388669533a59176dc79cd72f238994a0a01b
+ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/22/2019
-ms.locfileid: "68378006"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "80232484"
 ---
 # <a name="finding-and-claiming-product-keys-in-visual-studio-subscriptions"></a>Recherche et réclamation de clés de produit dans les abonnements Visual Studio
 Cet article explique comment localiser, réclamer et exporter des clés de produit à partir de https://my.visualstudio.com/productkeys.  Pour plus d’informations sur l’activation d’un produit avec une clé, sur les versions commerciales et de licence en volume des clés ainsi que sur les limites quotidiennes de réclamations de clés de produit, consultez la [vue d’ensemble des clés de produit](product-keys.md).
@@ -31,7 +32,7 @@ Différents types de clés sont disponibles en fonction du produit.
 |    Type de clé           |    Description                                                                                                                                                                                                           |
 |-------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |    Non applicable                    |    L’installation de ce produit ne nécessite pas de clé.                                                       |
-|    Version commercialisée                     |    Les clés de produit commercialisé permettent plusieurs activations et sont utilisées pour les versions commercialisées du produit. Généralement, dix activations sont autorisées par clé, même si un plus grand nombre est souvent permis sur une même machine.                                                       |
+|    Vente au détail                     |    Les clés de produit commercialisé permettent plusieurs activations et sont utilisées pour les versions commercialisées du produit. Généralement, dix activations sont autorisées par clé, même si un plus grand nombre est souvent permis sur une même machine.                                                       |
 |    Activation multiple        |    Une clé d’activation multiple (MAK) vous permet d’activer plusieurs installations d’un produit avec la même clé. Les clés MAK sont généralement utilisées avec les versions de licence en volume d’un produit. En règle générale, une seule clé MAK est fournie par abonnement.    |
 |    Clé d’activation statique    |    Les clés d’activation statiques sont fournies pour les produits qui n’ont pas besoin d’être activés. Elles peuvent être utilisées pour un nombre illimité d’installations.                                                                                                                  |
 |    Clé personnalisée                 |    Les clés personnalisées fournissent des actions ou informations spéciales pour activer ou installer le produit.                                                                                                                                                                |
@@ -64,6 +65,12 @@ Vous pouvez exporter une liste de toutes les clés que vous avez demandées, et 
 > Si votre abonnement expire, vous ne pouvez plus demander de nouvelles clés ou exporter les clés demandées.
 
 Pour exporter vos clés, cliquez simplement sur le lien **Exporter toutes les clés** situé à l’extrême droite de la page Clés de produit.  Un fichier .xml intitulé KeysExport.xml est créé. Vous pouvez ensuite ouvrir ou enregistrer le fichier.  Vous devez ouvrir le fichier avec une application prenant en charge les fichiers .xml.  Par exemple, vous pouvez ouvrir le fichier en tant que classeur en lecture seule dans Excel.
+
+## <a name="see-also"></a>Voir aussi
+- [Documentation Visual Studio](https://docs.microsoft.com/visualstudio/)
+- [Documentation Azure DevOps](https://docs.microsoft.com/azure/devops/)
+- [Documentation Azure](https://docs.microsoft.com/azure/)
+- [Documentation Microsoft 365](https://docs.microsoft.com/microsoft-365/)
 
 ## <a name="next-steps"></a>Étapes suivantes
 Une fois que vous êtes prêt à télécharger le logiciel et à utiliser les clés, accédez à https://my.visualstudio.com/downloads.  Pour plus d’informations sur le téléchargement de logiciels, consultez la [vue d’ensemble du téléchargement](download-software.md).

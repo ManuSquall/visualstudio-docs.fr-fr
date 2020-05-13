@@ -1,5 +1,5 @@
 ---
-title: BP_LOCATION_CODE_STRING | Microsoft Docs
+title: BP_LOCATION_CODE_STRING Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,22 +7,22 @@ f1_keywords:
 helpviewer_keywords:
 - BP_LOCATION_CODE_STRING structure
 ms.assetid: a4cd71c6-5052-45fe-907b-ebc6ca1df2e4
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
-ms.openlocfilehash: 2089fde7f063c9c394b3ff065445ca31d45241fc
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 0fc0d9a053faf69fde500333ab0faafa0e8d3448
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66319013"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80737986"
 ---
-# <a name="bplocationcodestring"></a>BP_LOCATION_CODE_STRING
-Utilisée pour définir des points d’arrêt de code basés sur une chaîne que l’utilisateur peut entrer dans l’environnement de développement intégré (IDE).
+# <a name="bp_location_code_string"></a>BP_LOCATION_CODE_STRING
+Utilisé pour définir des points de rupture de code en fonction d’une chaîne que l’utilisateur peut entrer à partir de l’environnement de développement intégré (IDE).
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -35,20 +35,20 @@ typedef struct _BP_LOCATION_CODE_STRING {
 
 ## <a name="members"></a>Membres
 `bstrContext`\
-Le contexte de point d’arrêt dans le code, généralement un nom de méthode ou fonction tels que présentés sur une pile des appels.
+Le contexte du point d’arrêt dans le code, généralement une méthode ou un nom de fonction vu sur une pile d’appels.
 
 `bstrCodeExpr`\
-La chaîne que l’utilisateur tape dans pour décrire le point d’arrêt du code.
+La chaîne dans laquelle l’utilisateur tape pour décrire le point d’arrêt du code.
 
 ## <a name="remarks"></a>Notes
-Cette structure est un membre de la [BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md) structure dans le cadre d’une union.
+Cette structure est membre de la structure [BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md) dans le cadre d’un syndicat.
 
-## <a name="requirements"></a>Configuration requise
-En-tête : msdbg.h
+## <a name="requirements"></a>Spécifications
+En-tête: msdbg.h
 
-Espace de noms : Microsoft.VisualStudio.Debugger.Interop
+Namespace: Microsoft.VisualStudio.Debugger.Interop
 
-Assembly : Microsoft.VisualStudio.Debugger.Interop.dll
+Assemblage: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>Voir aussi
 - [Structures et unions](../../../extensibility/debugger/reference/structures-and-unions.md)

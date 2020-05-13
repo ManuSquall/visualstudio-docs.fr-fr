@@ -1,5 +1,5 @@
 ---
-title: FRAMEINFO | Microsoft Docs
+title: FRAMEINFO - FRANCE Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - FRAMEINFO structure
 ms.assetid: 95001b89-dddb-45bb-889d-8327994e38a5
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: eb6a4a9f7408e5bcd03da464bfbc8ade3fa39e7e
-ms.sourcegitcommit: 5694c5236fa32ba7f5bc1236a853f725ec7557e9
+ms.openlocfilehash: c40361a9739bf468de2038df4325fa1ac98337c1
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "68681097"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80736785"
 ---
 # <a name="frameinfo"></a>FRAMEINFO
-Décrit un frame de pile.
+Décrit un cadre de pile.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -65,53 +65,53 @@ public struct FRAMEINFO {
 
 ## <a name="members"></a>Membres
 `m_dwValidFields`\
-Combinaison d’indicateurs de l’énumération [FRAMEINFO_FLAGS](../../../extensibility/debugger/reference/frameinfo-flags.md) qui spécifie les champs à renseigner.
+Une combinaison de drapeaux de [l’FRAMEINFO_FLAGS](../../../extensibility/debugger/reference/frameinfo-flags.md) énumération qui précise quels champs sont remplis.
 
 `m_bstrFuncName`\
-Nom de fonction associé au frame de pile.
+Le nom de fonction associé au cadre de pile.
 
 `m_bstrReturnType`\
-Type de retour associé au frame de pile.
+Le type de retour associé au cadre de pile.
 
 `m_bstrArgs`\
-Arguments de la fonction associée au frame de pile.
+Les arguments de la fonction associée au cadre de pile.
 
 `m_bstrLanguage`\
-Langage dans lequel la fonction est implémentée.
+Le langage dans lequel la fonction est mise en œuvre.
 
 `m_bstrModule`\
-Nom du module associé au frame de pile.
+Le nom du module associé au cadre de la pile.
 
 `m_addrMin`\
-Adresse de pile physique minimale.
+L’adresse de pile physique minimale.
 
 `m_addrMAX`\
-Adresse physique maximale de la pile.
+L’adresse de pile physique maximale.
 
 `m_pFrame`\
-Objet [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md) qui représente ce frame de pile.
+[L’objet IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md) qui représente ce cadre de pile.
 
 `m_pModule`\
-Objet [IDebugModule2](../../../extensibility/debugger/reference/idebugmodule2.md) qui représente le module qui contient ce frame de pile.
+[L’objet IDebugModule2](../../../extensibility/debugger/reference/idebugmodule2.md) qui représente le module qui contient ce cadre de pile.
 
 `m_fHasDebugInfo`\
-Valeur différente de zéro`TRUE`() si les informations de débogage existent dans le frame donné.
+Non-zéro`TRUE`( ) si l’information de débagé existe dans le cadre donné.
 
 `m_fStaleCode`\
-Valeur différente de zéro`TRUE`() si le frame de pile est associé à du code qui n’est plus valide.
+Non-zéro`TRUE`( ) si le cadre de pile est associé au code qui n’est plus valide.
 
 `m_fAnnotatedFrame`\
-Différent de zéro (`TRUE`) si le frame de pile est annoté par le gestionnaire de débogage de session (SDM).
+Non-zéro`TRUE`( ) si le cadre de pile est annoté par le gestionnaire de débogé de session (SDM).
 
 ## <a name="remarks"></a>Notes
-Cette structure est transmise à la méthode [GetInfo](../../../extensibility/debugger/reference/idebugstackframe2-getinfo.md) à remplir. Cette structure est également contenue dans une liste contenue dans l’interface [IEnumDebugFrameInfo2](../../../extensibility/debugger/reference/ienumdebugframeinfo2.md) qui, à son tour, est retournée à partir d’un appel à la méthode [EnumFrameInfo](../../../extensibility/debugger/reference/idebugthread2-enumframeinfo.md) .
+Cette structure est transmise à la méthode [GetInfo](../../../extensibility/debugger/reference/idebugstackframe2-getinfo.md) à remplir. Cette structure est également contenue dans une liste qui est contenue dans [l’interface IEnumDebugFrameInfo2](../../../extensibility/debugger/reference/ienumdebugframeinfo2.md) qui, à son tour, est retourné d’un appel à la méthode [EnumFrameInfo.](../../../extensibility/debugger/reference/idebugthread2-enumframeinfo.md)
 
-## <a name="requirements"></a>Configuration requise
-En-tête: msdbg. h
+## <a name="requirements"></a>Spécifications
+En-tête: msdbg.h
 
-Espace de noms : Microsoft.VisualStudio.Debugger.Interop
+Namespace: Microsoft.VisualStudio.Debugger.Interop
 
-Assembly : Microsoft.VisualStudio.Debugger.Interop.dll
+Assemblage: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>Voir aussi
 - [Structures et unions](../../../extensibility/debugger/reference/structures-and-unions.md)

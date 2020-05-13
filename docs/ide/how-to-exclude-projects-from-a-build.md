@@ -10,10 +10,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: a19c49482c45aa0a3cf5d7cb33eb106adb65b83b
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/16/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "76114804"
 ---
 # <a name="how-to-exclude-projects-from-a-build"></a>Guide pratique pour exclure des projets d’une build
@@ -30,7 +30,7 @@ Pour plus d’informations, consultez [Présentation des configurations de build
 
 ## <a name="to-temporarily-remove-a-project-from-the-active-solution-configuration"></a>Pour supprimer temporairement un projet de la configuration de solution active
 
-1. Dans la barre de menus, choisissez **Build** > **Gestionnaire de configurations**.
+1. Sur la barre de menu, choisissez **Build** > **Configuration Manager**.
 
 2. Dans le tableau **Contextes des projets**, localisez le projet que vous souhaitez exclure de la génération.
 
@@ -40,9 +40,9 @@ Pour plus d’informations, consultez [Présentation des configurations de build
 
 ## <a name="to-create-a-solution-configuration-that-excludes-a-project"></a>Pour créer une configuration de solution qui exclut un projet
 
-1. Dans la barre de menus, choisissez **Build** > **Gestionnaire de configurations**.
+1. Sur la barre de menu, choisissez **Build** > **Configuration Manager**.
 
-2. Dans la liste **Configuration de la solution active**, choisissez **\<Nouveau>** .
+2. Dans la liste **de configuration de solution Active,** choisissez ** \<New>**.
 
 3. Dans la zone **Nom**, entrez un nom pour la configuration de solution.
 
@@ -52,23 +52,23 @@ Pour plus d’informations, consultez [Présentation des configurations de build
 
 6. Dans la barre d’outils **Standard**, vérifiez que la nouvelle configuration de solution est la configuration active dans la zone **Configurations de solutions**.
 
-7. Dans la barre de menus, sélectionnez **Générer** > **Régénérer la solution**.
+7. Sur la barre de menu, choisissez **Build** > **Rebuild Solution**.
 
 ## <a name="skipped-projects"></a>Projets ignorés
 
-Les projets peuvent être ignorés pendant la génération, car ils ne sont pas à jour ou parce qu’ils sont exclus de la configuration. Visual Studio utilise MSBuild pour générer vos projets. MSBuild génère uniquement une cible si la sortie est antérieure à l’entrée, comme déterminé par les horodateurs de fichier. Pour forcer une régénération, utilisez la commande **générer** > générer la **solution**.
+Les projets peuvent être ignorés pendant la construction parce qu’ils ne sont pas à jour ou parce qu’ils sont exclus de la configuration. Visual Studio utilise MSBuild pour construire vos projets. MSBuild ne construit une cible que si la sortie est plus ancienne que l’entrée, tel que déterminé par les délais de fichier. Pour forcer une reconstruction, utilisez la solution de reconstruction **de** > build**de**commande .
 
-Dans le volet de **génération** de la fenêtre **sortie** , Visual Studio signale le nombre de projets à jour, le nombre qui a été généré avec succès, le nombre qui a échoué et le nombre qui a été ignoré. Le nombre ignoré n’inclut pas les projets qui n’ont pas été générés, car ils étaient à jour. Lorsque les projets sont exclus de la configuration active, ils sont ignorés pendant la génération. Dans la sortie de la génération, vous voyez un message indiquant que le projet est ignoré :
+Dans le volet **Build** de la fenêtre **output,** Visual Studio rapporte le nombre de projets à jour, le nombre qui a construit avec succès, le nombre qui a échoué, et le nombre qui ont été ignorés. Le décompte ignoré n’inclut pas les projets qui n’ont pas été construits parce qu’ils étaient à jour. Lorsque les projets sont exclus de la configuration active, ils sont ignorés pendant la construction. Dans la sortie de la construction, vous voyez un message indiquant que le projet est ignoré :
 
 ```output
 2>------ Skipped Build: Project: ConsoleApp2, Configuration: Debug x86 ------
 2>Project not selected to build for this solution configuration
 ```
 
-Pour déterminer la raison pour laquelle un projet a été ignoré, notez la configuration active (`Debug x86` dans l’exemple précédent) et choisissez **générer** > **Configuration Manager**. Vous pouvez afficher ou modifier les projets ignorés pour chaque configuration, comme indiqué dans cet article.
+Pour savoir pourquoi un projet a été ignoré, notez la configuration active`Debug x86` (dans l’exemple précédent) et choisissez **Build** > Configuration**Manager**. Vous pouvez afficher ou modifier les projets qui sont ignorés pour chaque configuration, comme nous l’avons vu dans cet article.
 
 ## <a name="see-also"></a>Voir aussi
 
 - [Présentation des configurations de build](../ide/understanding-build-configurations.md)
-- [Guide pratique pour créer et modifier des configurations](../ide/how-to-create-and-edit-configurations.md)
-- [Guide pratique pour générer plusieurs configurations simultanément](../ide/how-to-build-multiple-configurations-simultaneously.md)
+- [Comment : Créer et modifier des configurations](../ide/how-to-create-and-edit-configurations.md)
+- [Comment : Construire plusieurs configurations simultanément](../ide/how-to-build-multiple-configurations-simultaneously.md)

@@ -9,10 +9,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 3938e7dc1b3ec33c8a4cf74b6957067bbdfd6185
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74778425"
 ---
 # <a name="performance-tools-on-windows-8-and-windows-server-2012-applications"></a>Outils d’analyse des performances sur les applications Windows 8 et Windows Server 2012
@@ -67,7 +67,7 @@ Pour collecter les données de profilage sur les appareils Windows 8 et Windows 
 |Nom de l’outil|Description|
 |---------------|-----------------|
 |[VSPerf](../profiling/vsperf.md)|Collecte les données de profilage à partir d’applications UWP, et collecte les données de profilage par échantillonnage à partir d’applications pour poste de travail Windows 8 et d’applications Windows Server 2012.|
-|[VSPerfCmd](../profiling/vsperfcmd.md)|Collecte les données de profilage d’instrumentation, d’accès concurrentiel et d’interaction de couche à partir d’applications qui s’exécutent sur le bureau Windows 8 ou Windows Server 2012. Collecte tous les types de données de profilage à partir des versions précédentes de Windows.|
+|[Vsperfcmd](../profiling/vsperfcmd.md)|Collecte les données de profilage d’instrumentation, d’accès concurrentiel et d’interaction de couche à partir d’applications qui s’exécutent sur le bureau Windows 8 ou Windows Server 2012. Collecte tous les types de données de profilage à partir des versions précédentes de Windows.|
 
 Les deux outils sont installés avec Visual Studio pour être utilisés sur l’ordinateur local.
 
@@ -75,7 +75,7 @@ Pour profiler des applications sur les appareils dépourvus de Visual Studio, pr
 
 - Téléchargez les outils dans le cadre des Outils de contrôle à distance pour Visual Studio à partir du [site web MSDN](https://visualstudio.microsoft.com/#downloads+d-additional-software).
 
-- Copiez et exécutez le programme d’installation des outils de profilage autonomes à partir de votre ordinateur Visual Studio. Pour obtenir le chemin d’accès des outils de profilage, voir [Spécifier le chemin d’accès des outils en ligne de commande](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md). Choisissez le programme d’installation correspondant au système d’exploitation (x86/x64) de l’ordinateur distant.
+- Copiez et exécutez le programme d’installation des outils de profilage autonomes à partir de votre ordinateur Visual Studio. Pour obtenir le chemin des outils de profilage, consultez [Spécifier le chemin des outils en ligne de commande](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md). Choisissez le programme d’installation correspondant au système d’exploitation (x86/x64) de l’ordinateur distant.
 
 > [!NOTE]
 > Pour collecter les données de profilage TIP, vous devez installer le profileur autonome de votre ordinateur Visual Studio sur l’ordinateur distant.
@@ -108,18 +108,18 @@ Pour collecter des données de profilage d’interaction de couche, vous pouvez 
 
 Vous devez ajouter l’option de collecte de données d’interaction de couche à une exécution du profilage à partir de l’Explorateur de performances. Vous devez aussi ajouter le projet, l’exécutable ou le site web au nœud cible de l’Explorateur de performances. Consultez [Collecter les données d’interaction de couche](../profiling/collecting-tier-interaction-data.md).
 
-**Collecte de données TIP sur un ordinateur distant**
+**Collecte de données TiP sur un ordinateur distant**
 
-Pour collecter des données d’interaction entre niveaux sur un ordinateur distant, vous devez copier le fichier **vs\_profiler\_** _\<Plateforme>_ **\_** _\<Langage>_ **.exe** depuis le dossier *%VSInstallDir%\Team Tools\Performance Tools\Setups* d’un ordinateur Visual Studio vers l’ordinateur distant, puis lancer l’installation. Vous ne pouvez pas utiliser les outils de profilage contenus dans le package de téléchargement [Débogage à distance](../debugger/remote-debugging.md).
+Pour collecter des données d’interaction de niveau sur une machine distante, vous devez copier le fichier de la_\<plate-forme de _ **profileur\_\_vs**>**\_** _ \<Language>_ **.exe** à partir du fichier *%VSInstallDir% -Team Tools-Performance Tools-Setups* d’une machine Visual Studio à l’ordinateur distant et l’installer. Vous ne pouvez pas utiliser les outils de profilage contenus dans le package de téléchargement [Débogage à distance](../debugger/remote-debugging.md).
 
 Vous pouvez utiliser [VSPerfCmd](../profiling/vsperfcmd.md) ou [VSPerfASPNetCmd](../profiling/vsperfaspnetcmd.md) pour collecter les données de profilage.
 
 **Rapports TIP**
 
-Les données d’interaction de couche ne sont consultables que dans Visual Studio Enterprise. Les rapports d’interaction de couche basés sur des fichiers générés à l’aide de [VSPerfReport](../profiling/vsperfreport.md) ne sont pas disponibles.
+Les données d’interaction de couche ne sont consultables que dans Visual Studio Enterprise. Les rapports d’interaction de couche basés sur des fichiers procédant de [VSPerfReport](../profiling/vsperfreport.md) ne sont pas disponibles.
 
 ## <a name="see-also"></a>Voir aussi
 
-[Explorateur de performances](../profiling/performance-explorer.md)
-[Configurer les sessions de performances](../profiling/configuring-performance-sessions.md)
-[Profiler à partir de la ligne de commande](../profiling/using-the-profiling-tools-from-the-command-line.md)
+[Performance Explorer](../profiling/performance-explorer.md)
+[Configurer les sessions](../profiling/configuring-performance-sessions.md)
+de performance[Profil de la ligne de commande](../profiling/using-the-profiling-tools-from-the-command-line.md)

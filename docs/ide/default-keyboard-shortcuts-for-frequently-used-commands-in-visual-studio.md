@@ -8,10 +8,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: c7aebdc4c734f6831dc6ec1315aa7263b73cd30b
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75596721"
 ---
 # <a name="popular-keyboard-shortcuts-for-visual-studio"></a>Raccourcis clavier populaires pour Visual Studio
@@ -23,150 +23,150 @@ Le contexte *Global* signifie que le raccourci s’applique dans n’importe que
 > [!NOTE]
 > Vous pouvez [rechercher le raccourci](identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md) d’une commande en ouvrant la boîte de dialogue **Options**, en développant le nœud **Environnement**, puis en choisissant **Clavier**.
 
-## <a name="build"></a>Générer
+## <a name="build"></a>Build
 
-|Commands|Raccourcis clavier [Contextes]|
+|Commandes|Raccourcis clavier [Contextes]|
 |--------------| - |
-|Build.BuildSolution|**Ctrl+Maj+B** [Global]|
-|Build.Cancel|**Ctrl+Pause** [Global]|
-|Build.Compile|**Ctrl+F7** [Global]|
-|Build.RunCodeAnalysisonSolution|**Alt+F11** [Global]|
+|Build.BuildSolution|**Ctrl-Shift-B** [Global]|
+|Build.Cancel|**Ctrl-Break** [Global]|
+|Build.Compile|**Ctrl-F7** [Global]|
+|Build.RunCodeAnalysisonSolution|**Alt-F11** [Global]|
 
-## <a name="debug"></a>Déboguer
+## <a name="debug"></a>Débogage
 
-|Commands|Raccourcis clavier [Contextes]|
+|Commandes|Raccourcis clavier [Contextes]|
 |--------------| - |
-|Debug.BreakatFunction|**Ctrl+B** [Global]|
-|Debug.BreakAll|**Ctrl+Alt+Pause** [Global]|
-|Debug.DeleteAllBreakpoints|**Ctrl+Maj+F9** [Global]|
-|Debug.Exceptions|**Ctrl+Alt+E** [Global]|
-|Debug.QuickWatch|**Ctrl+Alt+Q** [Global]<br /><br />ou **Maj+F9** [Global]|
-|Debug.Restart|**Ctrl+Maj+F5** [Global]|
-|Debug.RunToCursor|**Ctrl+F10** [Global]|
-|Debug.SetNextStatement|**Ctrl+Maj+F10** [Global]|
+|Debug.BreakatFunction|**Ctrl-B** [Global]|
+|Debug.BreakAll|**Ctrl-Alt-Break** [Global]|
+|Debug.DeleteAllBreakpoints|**Ctrl-Shift-F9** [Global]|
+|Debug.Exceptions|**Ctrl-Alt-E** [Global]|
+|Debug.QuickWatch|**Ctrl-Alt-Q** [Global]<br /><br />ou **Shift-F9** [Global]|
+|Debug.Restart|**Ctrl-Shift-F5** [Global]|
+|Debug.RunToCursor|**Ctrl-F10** [Global]|
+|Debug.SetNextStatement|**Ctrl-Shift-F10** [Global]|
 |Debug.Start|**F5** [Global]|
-|Debug.StartWithoutDebugging|**Ctrl+F5** [Global]|
+|Debug.StartWithoutDebugging|**Ctrl-F5** [Global]|
 |Debug.StepInto|**F11** [Global]|
-|Debug.StepOut|**Maj+F11** [Global]|
+|Debug.StepOut|**Shift-F11** [Global]|
 |Debug.StepOver|**F10** [Global]|
-|Debug.StopDebugging|**Maj+F5** [Global]|
+|Debug.StopDebugging|**Shift-F5** [Global]|
 |Debug.ToggleBreakpoint|**F9** [Global]|
 
-## <a name="edit"></a>Edit
+## <a name="edit"></a>Modifier
 
-|Commands|Raccourcis clavier [Contextes]|
+|Commandes|Raccourcis clavier [Contextes]|
 |--------------| - |
-|Edit.BreakLine|**Entrée** [Éditeur de texte, Concepteur de rapports, Concepteur Windows Forms]<br /><br />ou **Maj+Entrée** [Éditeur de texte]|
-|Edit.CollapseToDefinitions|**Ctrl+M**, **Ctrl+O** [Éditeur de texte]|
-|Edit.CommentSelection|**Ctrl+K**, **Ctrl+C** [Éditeur de texte]|
-|Edit.CompleteWord|**Alt+Droite** [Éditeur de texte, Concepteur de flux de travail]<br /><br />ou **Ctrl+Barre d’espace** [Éditeur de texte, Concepteur de flux de travail]<br /><br />ou **Ctrl+K**, **W** [Concepteur de flux de travail]<br /><br />ou **Ctrl+K, Ctrl+W** [Concepteur de flux de travail]|
-|Edit.Copy|**Ctrl+C** [Global]<br /><br />ou **Ctrl+Inser** [Global]|
-|Edit.Cut|**Ctrl+X** [Global]<br /><br />ou **Maj+Suppr** [Global]|
-|Edit.Delete|**Suppr** [Global, Team Explorer]<br /><br />ou **Maj+Suppr** [Diagramme de séquence, Diagramme d’activités UML, Diagramme de couche]<br /><br />ou **Ctrl+Suppr** [Diagramme de classes]|
-|Edit.Find|**Ctrl+F** [Global]|
-|Edit.FindAllReferences|**Maj+F12** [Global]|
-|Edit.FindinFiles|**Ctrl+Maj+F** [Global]|
+|Edit.BreakLine|**Entrez** [Text Editor, Report Designer, Windows Forms Designer]<br /><br />ou **Shift-Enter** [Text Editor]|
+|Edit.CollapseToDefinitions|**Ctrl-M**, **Ctrl-O** [Text Editor]|
+|Edit.CommentSelection|**Ctrl-K**, **Ctrl-C** [Text Editor]|
+|Edit.CompleteWord|**Flèche Alt-Right** [Text Editor, Workflow Designer]<br /><br />ou **Ctrl-Spacebar** [Text Editor, Workflow Designer]<br /><br />ou **Ctrl-K**, **W** [Workflow Designer]<br /><br />ou **Ctrl-K, Ctrl-W** [Workflow Designer]|
+|Edit.Copy|**Ctrl-C** [Global]<br /><br />ou **Ctrl-Insert** [Global]|
+|Edit.Cut|**Ctrl+X** [Global]<br /><br />ou **Shift-Delete** [Global]|
+|Edit.Delete|**Supprimer** [Global, Team Explorer]<br /><br />ou **Shift-Delete** [Schéma de séquence, diagramme d’activité UML, Diagramme de couche]<br /><br />ou **Ctrl-Supprimer** [Class Diagram]|
+|Edit.Find|**Ctrl-F** [Global]|
+|Edit.FindAllReferences|**Shift-F12** [Global]|
+|Edit.FindinFiles|**Ctrl-Shift-F** [Global]|
 |Edit.FindNext|**F3** [Global]|
-|Edit.FindNextSelected|**Ctrl+F3** [Global]|
-|Edit.FormatDocument|**Ctrl+K, Ctrl+D** [Éditeur de texte]|
-|Edit.FormatSelection|**Ctrl+K, Ctrl+F** [Éditeur de texte]|
-|Edit.GoTo|**Ctrl+G** [Global]|
-|Edit.GoToDeclaration|**Ctrl+F12** [Global]|
+|Edit.FindNextSelected|**Ctrl-F3** [Global]|
+|Edit.FormatDocument|**Ctrl-K, Ctrl-D** [Text Editor]|
+|Edit.FormatSelection|**Ctrl-K, Ctrl-F** [Text Editor]|
+|Edit.GoTo|**Ctrl-G** [Global]|
+|Edit.GoToDeclaration|**Ctrl-F12** [Global]|
 |Edit.GoToDefinition|**F12**|
-|Edit.GoToFindCombo|**Ctrl+D** [Global]|
+|Edit.GoToFindCombo|**Ctrl-D** [Global]|
 |Edit.GoToNextLocation|**F8** [Global]|
-|Edit.InsertSnippet|**Ctrl+K**, **Ctrl+X** [Global]|
-|Edit.InsertTab|**Tab** [Concepteur de rapports, Concepteur Windows Forms, Éditeur de texte]|
-|Edit.LineCut|**Ctrl+L** [Éditeur de texte]|
-|Edit.LineDownExtendColumn|**Maj+Alt+Bas** [Éditeur de texte]|
-|Edit.LineOpenAbove|**Ctrl+Entrée** [Éditeur de texte]|
-|Edit.ListMembers|**Ctrl+J** [Éditeur de texte, Concepteur de flux de travail]<br /><br />ou **Ctrl+K, Ctrl+L** [Concepteur de flux de travail]<br /><br />ou **Ctrl+K, L** [Concepteur de flux de travail]|
-|Edit.NavigateTo|**Ctrl+,** [Global]|
-|Edit.OpenFile|**Ctrl+Maj+G** [Global]|
-|Edit.OvertypeMode|**Inser** [Éditeur de texte]|
-|Edit.ParameterInfo|**Ctrl+Maj+Barre d’espace** [Éditeur de texte, Concepteur de flux de travail]<br /><br />ou **Ctrl+K, Ctrl+P** [Concepteur de flux de travail]<br /><br />ou **Ctrl+K, P** [Concepteur de flux de travail]|
-|Edit.Paste|**Ctrl+V** [Global]<br /><br />ou **Maj+Inser** [Global]|
-|Edit.PeekDefinition|**Alt+F12** [Éditeur de texte]|
-|Edit.Redo|**Ctrl+Y** [Global]<br /><br />ou **Maj+Alt+Retour arrière** [Global]<br /><br />ou **Ctrl+Maj+Z** [Global]|
-|Edit.Replace|**Ctrl+H** [Global]|
-|Edit.SelectAll|**Ctrl+A** [Global]|
-|Edit.SelectCurrentWord|**Ctrl+W** [Éditeur de texte]|
-|Edit.SelectionCancel|**Échap** [Éditeur de texte, Concepteur de rapports, Concepteur de paramètres, Concepteur Windows Forms, Éditeur de ressources managées]|
-|Edit.SurroundWith|**Ctrl+K, Ctrl+S** [Global]|
-|Edit.TabLeft|**Maj+Tab** [Éditeur de texte, Concepteur de rapports, Éditeur Windows Forms]|
-|Edit.ToggleAllOutlining|**Ctrl+M, Ctrl+L** [Éditeur de texte]|
-|Edit.ToggleBookmark|**Ctrl+K, Ctrl+K** [Éditeur de texte]|
-|Edit.ToggleCompletionMode|**Ctrl+Alt+Barre d’espace** [Éditeur de texte]|
-|Edit.ToggleOutliningExpansion|**Ctrl+M, Ctrl+M** [Éditeur de texte]|
-|Edit.UncommentSelection|**Ctrl+K, Ctrl+U** [Éditeur de texte]|
-|Edit.Undo|**Ctrl+Z** [Global]<br /><br />ou **Alt+Retour arrière** [Global]|
-|Edit.WordDeleteToEnd|**Ctrl+Suppr** [Éditeur de texte]|
-|Edit.WordDeleteToStart|**Ctrl+Retour arrière** [Éditeur de texte]|
+|Edit.InsertSnippet|**Ctrl-K**, **Ctrl-X** [Global]|
+|Edit.InsertTab|**Tab** [Report Designer, Windows Forms Designer, Text Editor]|
+|Edit.LineCut|**Ctrl-L** [Text Editor]|
+|Edit.LineDownExtendColumn|**Shift-Alt-Down Arrow** [Text Editor]|
+|Edit.LineOpenAbove|**Ctrl-Enter** [Text Editor]|
+|Edit.ListMembers|**Ctrl-J** [Text Editor, Workflow Designer]<br /><br />ou **Ctrl-K, Ctrl-L** [Workflow Designer]<br /><br />ou **Ctrl-K, L** [Workflow Designer]|
+|Edit.NavigateTo|**CtrlMD,** [Global]|
+|Edit.OpenFile|**Ctrl-Shift-G** [Global]|
+|Edit.OvertypeMode|**Insérer** [Text Editor]|
+|Edit.ParameterInfo|**Ctrl-Shift-Spacebar** [Text Editor, Workflow Designer]<br /><br />ou **Ctrl-K, Ctrl-P** [Workflow Designer]<br /><br />ou **Ctrl-K, P** [Workflow Designer]|
+|Edit.Paste|**Ctrl-V** [Global]<br /><br />ou **Shift-Insert** [Global]|
+|Edit.PeekDefinition|**Alt-F12** [Text Editor]|
+|Edit.Redo|**Ctrl-Y** [Global]<br /><br />ou **Shift-Alt-Backspace** [Global]<br /><br />ou **Ctrl-Shift-Z** [Global]|
+|Edit.Replace|**Ctrl-H** [Global]|
+|Edit.SelectAll|**Ctrl-A** [Global]|
+|Edit.SelectCurrentWord|**Ctrl-W** [Text Editor]|
+|Edit.SelectionCancel|**Esc** [Text Editor, Report Designer, Settings Designer, Windows Forms Designer, Managed Resources Editor]|
+|Edit.SurroundWith|**Ctrl-K, Ctrl-S** [Global]|
+|Edit.TabLeft|**Shift-Tab** [Text Editor, Report Designer, Windows Forms Editor]|
+|Edit.ToggleAllOutlining|**Ctrl-M, Ctrl-L** [Text Editor]|
+|Edit.ToggleBookmark|**Ctrl-K, Ctrl-K** [Text Editor]|
+|Edit.ToggleCompletionMode|**Ctrl-Alt-Space** [Éditeur de texte]|
+|Edit.ToggleOutliningExpansion|**Ctrl-M, Ctrl-M** [Text Editor]|
+|Edit.UncommentSelection|**Ctrl-K, Ctrl-U** [Text Editor]|
+|Edit.Undo|**Ctrl-Z** [Global]<br /><br />ou **Alt-Backspace** [Global]|
+|Edit.WordDeleteToEnd|**Ctrl-Supprimer** [Text Editor]|
+|Edit.WordDeleteToStart|**Ctrl-Backspace** [Text Editor]|
 
-## <a name="file"></a>File
+## <a name="file"></a>Fichier
 
-|Commands|Raccourcis clavier [Contextes]|
+|Commandes|Raccourcis clavier [Contextes]|
 |--------------| - |
-|File.Exit|**Alt+F4** [Global]|
-|File.NewFile|**Ctrl+N** [Global]|
-|File.NewProject|**Ctrl+Maj+N** [Global]|
-|File.NewWebSite|**Maj+Alt+N** [Global]|
-|File.OpenFile|**Ctrl+O** [Global]|
-|File.OpenProject|**Ctrl+Maj+O** [Global]|
-|File.OpenWebSite|**Maj+Alt+O** [Global]|
+|File.Exit|**Alt-F4** [Global]|
+|File.NewFile|**Ctrl-N** [Global]|
+|File.NewProject|**Ctrl-Shift-N** [Global]|
+|File.NewWebSite|**Shift-Alt-N** [Global]|
+|File.OpenFile|**Ctrl-O** [Global]|
+|File.OpenProject|**Ctrl-ShiftO** [Global]|
+|File.OpenWebSite|**Shift-Alt-O** [Global]|
 |File.Rename|**F2** [Team Explorer]|
-|File.SaveAll|**Ctrl+Maj+S** [Global]|
-|File.SaveSelectedItems|**Ctrl+S** [Global]|
-|File.ViewinBrowser|**Ctrl+Maj+W** [Global]|
+|File.SaveAll|**Ctrl-Shift-S** [Global]|
+|File.SaveSelectedItems|**Ctrl-S** [Global]|
+|File.ViewinBrowser|**Ctrl-Shift-W** [Global]|
 
 ## <a name="project"></a>Projet
 
-|Commands|Raccourcis clavier [Contextes]|
+|Commandes|Raccourcis clavier [Contextes]|
 |--------------| - |
-|Project.AddExistingItem|**Maj+Alt+A** [Global]|
-|Project.AddNewItem|**Ctrl+Maj+A** [Global]|
+|Project.AddExistingItem|**Shift-Alt-A** [Global]|
+|Project.AddNewItem|**Ctrl-Shift-A** [Global]|
 
 ## <a name="refactor"></a>Refactorisation
 
-|Command|Raccourci clavier [Contexte]|
+|Commande|Raccourci clavier [Contexte]|
 |-------------| - |
-|Refactor.ExtractMethod|**Ctrl+R, Ctrl+M** [Global]|
+|Refactor.ExtractMethod|**Ctrl-R, Ctrl-M** [Global]|
 
 ## <a name="tools"></a>Outils
 
-|Command|Raccourci clavier [Contexte]|
+|Commande|Raccourci clavier [Contexte]|
 |-------------| - |
-|Tools.AttachtoProcess|**Ctrl+Alt+P** [Global]|
+|Tools.AttachtoProcess|**Ctrl-Alt-P** [Global]|
 
-## <a name="view"></a>Consultez la rubrique .
+## <a name="view"></a>Affichage
 
-|Commands|Raccourcis clavier [Contextes]|
+|Commandes|Raccourcis clavier [Contextes]|
 |--------------| - |
-|View.ClassView|**Ctrl+Maj+C** [Global]|
+|View.ClassView|**Ctrl-Shift-C** [Global]|
 |View.EditLabel|**F2** [Global]|
-|View.ErrorList|**Ctrl+\\, Ctrl+E** [Global]<br /><br />ou **Ctrl+\\, E** [Global]|
-|View.NavigateBackward|**Ctrl+-** [Global]|
-|View.NavigateForward|**Ctrl+Maj+-** [Global]|
-|View.ObjectBrowser|**Ctrl+Alt+J** [Global]|
-|View.Output|**Ctrl+Alt+O** [Global]|
+|View.ErrorList|**CtrlMD\\, Ctrl-E** [Global]<br /><br />ou **CtrlMD\\, E** [Global]|
+|View.NavigateBackward|**CtrlMD-** [Global]|
+|View.NavigateForward|**Ctrl-ShiftMD-** [Global]|
+|View.ObjectBrowser|**Ctrl-Alt-J** [Global]|
+|View.Output|**Ctrl-Alt-O** [Global]|
 |View.PropertiesWindow|**F4**|
 |View.Refresh|**F5** [Team Explorer]|
-|View.ServerExplorer|**Ctrl+Alt+S** [Global]|
-|View.ShowSmartTag|**Ctrl + .** [Global]<br /><br />ou **Maj+Alt+F10** [Global, Éditeur HTML en mode Design]|
-|View.SolutionExplorer|**Ctrl+Alt+L** [Global]|
-|View.TfsTeamExplorer|**Ctrl+\\, Ctrl+M** [Global]|
-|View.Toolbox|**Ctrl+Alt+X** [Global]|
-|View.ViewCode|**Entrée** [Diagramme de classes]<br /><br />ou **F7** [Concepteur de paramètres]|
-|View.ViewDesigner|**Maj+F7** [Éditeur HTML en mode Source]|
+|View.ServerExplorer|**Ctrl-Alt-S** [Global]|
+|View.ShowSmartTag|**Ctrl.** [Global]<br /><br />ou **Shift-Alt-F10** [Global, HTML Editor Design View]|
+|View.SolutionExplorer|**Ctrl-Alt-L** [Global]|
+|View.TfsTeamExplorer|**CtrlMD\\, Ctrl-M** [Global]|
+|View.Toolbox|**Ctrl-Alt-X** [Global]|
+|View.ViewCode|**Entrez** [Class Diagram]<br /><br />ou **F7** [Settings Designer]|
+|View.ViewDesigner|**Shift-F7** [HTML Editor Source View]|
 
 ## <a name="window"></a>Fenêtre
 
-|Commands|Raccourcis clavier [Contextes]|
+|Commandes|Raccourcis clavier [Contextes]|
 |--------------| - |
-|Window.ActivateDocumentWindow|**Échap** [Global]|
-|Window.CloseDocumentWindow|**Ctrl+F4** [Global]|
-|Window.NextDocumentWindow|**Ctrl+F6** [Global]|
-|Window.NextDocumentWindowNav|**Ctrl+Tab** [Global]|
+|Window.ActivateDocumentWindow|**Esc** [Global]|
+|Window.CloseDocumentWindow|**Ctrl-F4** [Global]|
+|Window.NextDocumentWindow|**Ctrl-F6** [Global]|
+|Window.NextDocumentWindowNav|**Ctrl-Tab** [Global]|
 |Window.NextSplitPane|**F6** [Global]|
 
 ## <a name="see-also"></a>Voir aussi

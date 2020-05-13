@@ -8,48 +8,48 @@ ms.technology: vs-ide-general
 dev_langs:
 - CSharp
 - VB
-author: TerryGLee
-ms.author: tglee
+author: ornellaalt
+ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e249f2ad765063c54df08466bef15b8e443af1bf
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: d74c9ecda0e3ab23c1f2ab1cb2180a60701c069a
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75591721"
+ms.lasthandoff: 03/20/2020
+ms.locfileid: "77579810"
 ---
 # <a name="step-8-write-code-for-the-show-a-picture-button-event-handler"></a>Étape 8 : écrire du code pour le gestionnaire d'événements du bouton Afficher une image
 
-Dans cette étape, vous allez faire fonctionner le bouton **afficher une image** comme suit :
+Dans cette étape, vous faites le Show un bouton **d’image** de travail comme suit:
 
-- Quand un utilisateur clique sur ce bouton, l’application ouvre une boîte de <xref:System.Windows.Forms.OpenFileDialog>.
+- Lorsqu’un utilisateur choisit ce bouton, <xref:System.Windows.Forms.OpenFileDialog> l’application ouvre une boîte.
 
-- Si un utilisateur ouvre un fichier image, l’application affiche cette image dans le <xref:System.Windows.Forms.PictureBox>.
+- Si un utilisateur ouvre un fichier d’image, l’application affiche cette image dans le <xref:System.Windows.Forms.PictureBox>.
 
-L'IDE dispose d'un outil puissant appelé IntelliSense pour vous aider à écrire du code. À mesure que vous tapez du code, l’IDE ouvre une zone avec des saisies semi-automatiques suggérées pour les mots partiels que vous entrez.
+L'IDE dispose d'un outil puissant appelé IntelliSense pour vous aider à écrire du code. Lorsque vous tapez le code, l’IDE ouvre une boîte avec des achèvements suggérés pour les mots partiels que vous entrez.
 
-IntelliSense tente de déterminer ce que vous souhaitez faire ensuite et passe automatiquement au dernier élément que vous choisissez dans la liste. Vous pouvez utiliser les touches de direction Haut et Bas pour parcourir la liste, ou continuer à taper des lettres pour limiter le nombre de choix. Quand vous voyez le choix qui vous intéresse, appuyez sur la touche **Tab** pour le sélectionner. Sinon, vous pouvez ignorer les suggestions, si vous n'en avez pas besoin.
+IntelliSense essaie de déterminer ce que vous voulez faire ensuite, et saute automatiquement au dernier élément que vous choisissez dans la liste. Vous pouvez utiliser les touches de direction Haut et Bas pour parcourir la liste, ou continuer à taper des lettres pour limiter le nombre de choix. Quand vous voyez le choix qui vous intéresse, appuyez sur la touche **Tab** pour le sélectionner. Sinon, vous pouvez ignorer les suggestions, si vous n'en avez pas besoin.
 
 ## <a name="to-write-code-for-the-show-a-picture-button-event-handler"></a>Pour écrire du code pour le gestionnaire d'événements du bouton Afficher une image
 
-1. Ouvrez le **Concepteur Windows Forms** et double-cliquez sur le bouton **Afficher une image**. L’IDE accède immédiatement au concepteur de code et déplace votre curseur afin qu’il se trouve à l’intérieur de la méthode `showButton_Click()` (ou `ShowButton_Click()`) que vous avez ajoutée précédemment.
+1. Ouvrez le **Concepteur Windows Forms** et double-cliquez sur le bouton **Afficher une image**. L’IDE va immédiatement au concepteur de code et déplace `showButton_Click()` votre curseur `ShowButton_Click()`de sorte qu’il est à l’intérieur de la (alternativement, ) méthode que vous avez ajouté précédemment.
 
-1. Tapez un `i` sur la ligne vide entre les deux accolades `{ }`. (Dans Visual Basic, tapez sur la ligne vide entre `Private Sub...` et `End Sub`.) Une fenêtre **IntelliSense** s’ouvre, comme illustré dans l’image suivante.
+1. Tapez un `i` sur la ligne vide entre les deux accolades `{ }`. (Dans Visual Basic, tapez `Private Sub...` sur `End Sub`la ligne vide entre et .) Une fenêtre **IntelliSense s’ouvre,** comme le montre l’image suivante.
 
     ![IntelliSense avec code Visual C&#35;](../ide/media/express_ifintellisense.png)
 
     > [!NOTE]
-    > Votre code risque de ne pas afficher de gestionnaires d’événements dans les lettres « la casse mixte ».
+    > Votre code peut ne pas afficher les gestionnaires d’événements en lettres "camelCase".
 
-1. La fenêtre **IntelliSense** doit mettre en surbrillance le mot `if`. (Dans le cas contraire, entrez un `f`minuscules, et c’est le cas.) Notez qu’une *info-bulle* située en regard de la fenêtre **IntelliSense** apparaît avec la description, **extrait de code pour l’instruction if**. (Dans Visual Basic, l’info-bulle indique également qu’il s’agit d’un extrait de code, mais avec un libellé légèrement différent.) Vous souhaitez utiliser cet extrait de code, appuyez donc sur la touche **Tab** pour insérer `if` dans votre code. Appuyez ensuite à nouveau sur la touche **Tab** pour utiliser l’extrait de code `if`. (Si vous avez effectué un autre choix et si votre fenêtre **IntelliSense** a disparu, revenez en arrière pour effacer le `i` et retapez-le pour que la fenêtre **IntelliSense** s’ouvre à nouveau.)
+1. La fenêtre **IntelliSense** devrait `if`mettre en évidence le mot . (Si ce n’est `f`pas le cas, entrez dans une chambre inférieure, et elle le fera.) Remarquez comment une boîte *de pointe* à côté de la fenêtre **IntelliSense** apparaît avec la description, **Extrait de code pour si déclaration**. (Dans Visual Basic, l’outil indique également qu’il s’agit d’un extrait, mais avec une formulation légèrement différente.) Vous voulez utiliser cet extrait, alors **Tab** choisissez la `if` clé Tab pour insérer dans votre code. Appuyez ensuite à nouveau sur la touche **Tab** pour utiliser l’extrait de code `if`. (Si vous avez effectué un autre choix et si votre fenêtre **IntelliSense** a disparu, revenez en arrière pour effacer le `i` et retapez-le pour que la fenêtre **IntelliSense** s’ouvre à nouveau.)
 
     ![Code Visual C&#35;](../ide/media/express_highlighttrue.png)
 
-### <a name="use-intellisense-to-enter-more-code"></a>Utiliser IntelliSense pour entrer davantage de code
+### <a name="use-intellisense-to-enter-more-code"></a>Utilisez IntelliSense pour entrer plus de code
 
-Ensuite, utilisez IntelliSense pour entrer le reste du code destiné à ouvrir une boîte de dialogue **Ouvrir un fichier**. Si l’utilisateur a choisi le bouton **OK**, le contrôle PictureBox charge le fichier que l’utilisateur a sélectionné. Les étapes suivantes montrent comment entrer le code, et bien qu’il y ait de nombreuses étapes, il s’agit simplement de quelques séquences de touches :
+Ensuite, utilisez IntelliSense pour entrer le reste du code destiné à ouvrir une boîte de dialogue **Ouvrir un fichier**. Si l’utilisateur a choisi le bouton **OK**, le contrôle PictureBox charge le fichier que l’utilisateur a sélectionné. Les étapes suivantes montrent comment entrer le code, et bien qu’il y ait de nombreuses étapes, ce n’est que quelques frappes:
 
  1. Commencez avec le texte sélectionné **true** dans l’extrait de code. Tapez `op` pour le remplacer. (En Visual Basic, comme vous devez commencer par une majuscule, tapez `Op`.)
 
@@ -57,10 +57,10 @@ Ensuite, utilisez IntelliSense pour entrer le reste du code destiné à ouvrir u
 
      Pour en savoir plus sur `OpenFileDialog`, consultez [OpenFileDialog](<xref:System.Windows.Forms.OpenFileDialog>).
 
- 1. Tapez un point (`.`) (de nombreux programmeurs appellent ce point.) Étant donné que vous avez tapé un point juste après **OpenFileDialog1**, une fenêtre **IntelliSense** s’ouvre et contient toutes les propriétés et les méthodes du composant **OpenFileDialog** . Ce sont les mêmes propriétés qui s’affichent dans la fenêtre **Propriétés** quand vous effectuez ce choix dans le **Concepteur Windows Forms**. Vous pouvez également choisir des méthodes qui peuvent indiquer au composant d'effectuer certaines opérations (comme ouvrir une boîte de dialogue).
+ 1. Tapez une`.`période ( ) (Beaucoup de programmeurs appellent cela un point.) Parce que vous avez tapé un point juste après **openFileDialog1**, une fenêtre **IntelliSense** s’ouvre, rempli de toutes les propriétés et méthodes du composant **OpenFileDialog.** Ce sont les mêmes propriétés qui s’affichent dans la fenêtre **Propriétés** quand vous effectuez ce choix dans le **Concepteur Windows Forms**. Vous pouvez également choisir des méthodes qui peuvent indiquer au composant d'effectuer certaines opérations (comme ouvrir une boîte de dialogue).
 
     > [!NOTE]
-    > La fenêtre **IntelliSense** vous donne accès à des propriétés et à des méthodes. Pour déterminer ce qui est affiché, regardez l’icône à gauche de chaque élément dans la fenêtre **IntelliSense**. Vous voyez une image d’un bloc en regard de chaque méthode et une image d’une clé (ou d’un côté de clé) en regard de chaque propriété. Il y a également une icône d'éclair en regard de chaque événement. <br><br>Voici les icônes qui s’affichent :<br><br>![Icône Méthode](../ide/media/express_iconmethod.png)<br>![Icône Propriété](../ide/media/express_iconproperty.png)<br>![Icône Événement](../ide/media/express_iconevent.png)
+    > La fenêtre **IntelliSense** vous donne accès à des propriétés et à des méthodes. Pour déterminer ce qui est affiché, regardez l’icône à gauche de chaque élément dans la fenêtre **IntelliSense**. Vous voyez une image d’un bloc à côté de chaque méthode, et une image d’une clé (ou une clé) à côté de chaque propriété. Il y a également une icône d'éclair en regard de chaque événement. <br><br>Voici les icônes qui apparaissent:<br><br>![Icône Méthode](../ide/media/express_iconmethod.png)<br>![Icône Propriété](../ide/media/express_iconproperty.png)<br>![Icône Événement](../ide/media/express_iconevent.png)
 
  1. Commencez à taper `ShowDialog` (les majuscules n’ont aucune importance dans IntelliSense). La méthode `ShowDialog()` affichera la boîte de dialogue **Ouvrir un fichier**. Une fois que la fenêtre a mis **ShowDialog** en surbrillance, appuyez sur la touche **Tab**. Vous pouvez également sélectionner « ShowDialog » et choisir la touche **F1** pour obtenir de l’aide.
 
@@ -69,9 +69,9 @@ Ensuite, utilisez IntelliSense pour entrer le reste du code destiné à ouvrir u
  1. Quand vous utilisez une méthode sur un contrôle ou un composant (opération désignée sous le nom d’*appel de méthode*), vous devez ajouter des parenthèses. Ajoutez des parenthèses ouvrantes et fermantes immédiatement après le « g » dans `ShowDialog`: `()`. Le code doit maintenant indiquer « openFileDialog1.ShowDialog() ».
 
     > [!NOTE]
-    > Les méthodes sont une partie importante d’une application, et ce didacticiel a montré plusieurs façons d’utiliser des méthodes. Vous pouvez appeler la méthode d’un composant pour lui demander d’effectuer une action, comme quand vous avez appelé la méthode `ShowDialog()` du composant **OpenFileDialog**. Vous pouvez créer vos propres méthodes pour que votre application effectue des opérations, comme celle que vous générez maintenant, appelée la méthode `showButton_Click()`, qui ouvre une boîte de dialogue et une image lorsqu’un utilisateur choisit un bouton.
+    > Les méthodes sont une partie importante de toute application, et ce tutoriel a montré plusieurs façons d’utiliser les méthodes. Vous pouvez appeler la méthode d’un composant pour lui demander d’effectuer une action, comme quand vous avez appelé la méthode `ShowDialog()` du composant **OpenFileDialog**. Vous pouvez créer vos propres méthodes pour faire de votre application faire `showButton_Click()` des choses, comme celle que vous construisez maintenant, appelée la méthode, qui ouvre une boîte de dialogue et une image quand un utilisateur choisit un bouton.
 
- 1. Pour C#, ajoutez un espace, puis ajoutez deux signes égal (`==`). Pour Visual Basic, ajoutez un espace, puis un seul signe égal (`=`). (C# et Visual Basic utilisent des opérateurs d’égalité différents.)
+ 1. Pour le C, ajoutez un espace, puis`==`ajoutez deux signes égaux ( ). Pour Visual Basic, ajoutez un espace, puis un seul signe égal (`=`). (C et Visual Basic utilisent différents opérateurs d’égalité.)
 
  1. Ajoutez un autre espace. Une fois terminé, une autre fenêtre **IntelliSense** s’ouvre. Commencez à taper `DialogResult` et appuyez sur la touche **Tab** pour l’ajouter.
 
@@ -83,7 +83,7 @@ Ensuite, utilisez IntelliSense pour entrer le reste du code destiné à ouvrir u
     Pour en savoir plus sur DialogResult, consultez [DialogResult](<xref:System.Windows.Forms.DialogResult>).
 
     > [!NOTE]
-    > La première ligne de code doit être terminée. Pour C#, elle doit ressembler à ce qui suit.
+    > La première ligne de code doit être terminée. Pour le C, il devrait être similaire à ce qui suit.
     >
     >  `if (openFileDialog1.ShowDialog() == DialogResult.OK)`
     >
@@ -91,7 +91,7 @@ Ensuite, utilisez IntelliSense pour entrer le reste du code destiné à ouvrir u
     >
     >  `If OpenFileDialog1.ShowDialog() = DialogResult.OK Then`
 
- 1. Maintenant, ajoutez une ligne de code supplémentaire. Vous pouvez la taper (ou la copier et la coller), mais utilisez plutôt IntelliSense pour l'ajouter. Plus vous vous familiariserez avec IntelliSense, plus vous pourrez écrire votre propre code rapidement. Votre méthode de `showButton_Click()` finale doit ressembler au code suivant.
+ 1. Maintenant, ajoutez une ligne de code supplémentaire. Vous pouvez la taper (ou la copier et la coller), mais utilisez plutôt IntelliSense pour l'ajouter. Plus vous vous familiariserez avec IntelliSense, plus vous pourrez écrire votre propre code rapidement. Votre `showButton_Click()` méthode finale doit ressembler au code suivant.
 
     [!INCLUDE [devlang-control-csharp-vb](./includes/devlang-control-csharp-vb.md)]
 
@@ -99,13 +99,13 @@ Ensuite, utilisez IntelliSense pour entrer le reste du code destiné à ouvrir u
 
     [!code-vb[VbExpressTutorial1Step8#1](../ide/codesnippet/VisualBasic/step-8-write-code-for-the-show-a-picture-button-event-handler_1.vb)]
 
-## <a name="next-steps"></a>Étapes suivantes :
+## <a name="next-steps"></a>Étapes suivantes
 
-* Pour passer à l’étape suivante du didacticiel, consultez **[étape 9 : examiner, commenter et tester votre code](../ide/step-9-review-comment-and-test-your-code.md)** .
+* Pour passer à l’étape suivante tutoriel, voir **[l’étape 9: Examen, commentaire, et tester votre code](../ide/step-9-review-comment-and-test-your-code.md)**.
 
 * Pour revenir à l’étape précédente du tutoriel, consultez [Étape 7 : ajouter des composants de dialogue à votre formulaire](../ide/step-7-add-dialog-components-to-your-form.md).
 
 ## <a name="see-also"></a>Voir aussi
 
-* [Didacticiel 2 : créer un questionnaire mathématique chronométré](tutorial-2-create-a-timed-math-quiz.md)
-* [Didacticiel 3 : créer un jeu de combinaisons](tutorial-3-create-a-matching-game.md)
+* [Tutorial 2: Créer un quiz de mathématiques chronométré](tutorial-2-create-a-timed-math-quiz.md)
+* [Tutorial 3: Créer un jeu correspondant](tutorial-3-create-a-matching-game.md)

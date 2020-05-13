@@ -16,12 +16,13 @@ ms.assetid: 7392a100-100c-458c-9394-828695109015
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 monikerRange: vs-2017
-ms.openlocfilehash: 5cba73bd7ea3e0251174ea7a702cd80509fbd954
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+open_to_public_contributors: false
+ms.openlocfilehash: fe4eec389389622f0d87d30edbbd46d7c5b53d80
+ms.sourcegitcommit: 22deb247ad951e4971f27fdab413b158415d0584
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/16/2020
-ms.locfileid: "76113846"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81276303"
 ---
 # <a name="visual-studio-feedback-client-component-directory"></a>Répertoire des composants Visual Studio Feedback Client
 
@@ -46,7 +47,7 @@ Pour plus d’informations sur l’utilisation de ces ID, consultez la page [Uti
 
 ### <a name="components-included-by-this-workload"></a>Composants inclus par cette charge de travail
 
-ID de composant | Name | Version | Type de dépendance
+ID de composant | Nom | Version | Type de dépendance
 --- | --- | --- | ---
 Microsoft.VisualStudio.Component.TestTools.FeedbackClient | Outil de Feedback Microsoft | 15.6.27406.0 | Obligatoire
 
@@ -54,9 +55,9 @@ Microsoft.VisualStudio.Component.TestTools.FeedbackClient | Outil de Feedback Mi
 
 Il s’agit de composants qui ne sont inclus dans aucune charge de travail, mais qui peuvent être sélectionnés de manière individuelle.
 
-ID de composant | Name | Version
+ID de composant | Nom | Version
 --- | --- | ---
-N/A | N/A | N/A
+n/a | n/a | n/a
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 

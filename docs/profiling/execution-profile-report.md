@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 25886ad4f7c31ea02c8dab2d45d8709a362a5a69
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "62969990"
 ---
 # <a name="execution-profile-report"></a>Profil d’exécution, rapport
@@ -30,14 +30,14 @@ Le rapport Profil d’exécution est un profil d’échantillonnage classique. D
 
 |Colonne|Description|
 |------------|-----------------|
-|Name|Nom de la fonction pour chaque niveau de la pile des appels.|
+|Nom|Nom de la fonction pour chaque niveau de la pile des appels.|
 |Échantillons inclusifs|Nombre total d’échantillons collectés pour toutes les piles qui atteignent ce niveau de l’arborescence de la pile des appels. Le nombre inclusif correspond à la somme des échantillons exclusifs de cette fonction et des compteurs inclusifs de tous ses nœuds enfants.|
 |Exemples exclusifs|Nombre total d’échantillons collectés pour lesquels cette fonction correspond au niveau le plus bas de la pile des appels.|
 |% inclusif|Pourcentage du total des échantillons qui apparaissent dans la colonne des échantillons inclusifs. Les pourcentages sont arrondis à deux décimales.|
 |% exclusifs|Pourcentage du total des échantillons qui apparaissent dans la colonne des échantillons exclusifs. Les pourcentages sont arrondis à deux décimales.|
 |Détails|Nom complet de la fonction. Peut contenir le nombre de lignes lorsque celui-ci est disponible.|
 
- Vous pouvez consulter le tableau de ce rapport dans la vue [Durée d’exécution (vue Threads)](../profiling/execution-time-threads-view.md).
+ Ce tableau de rapport peut être vu dans la vue [temps d’exécution (Threads View).](../profiling/execution-time-threads-view.md)
 
 ## <a name="see-also"></a>Voir aussi
-- [vue Threads](../profiling/threads-view-parallel-performance.md)
+- [Vue Threads](../profiling/threads-view-parallel-performance.md)

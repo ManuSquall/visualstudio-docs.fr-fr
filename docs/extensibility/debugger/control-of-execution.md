@@ -1,63 +1,63 @@
 ---
-title: Contrôle de l’exécution | Microsoft Docs
+title: Contrôle de l’exécution (fr) Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Debugging SDK], control of execution
 ms.assetid: 97071846-007e-450f-95a6-f072d0f5e61e
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0d7594b91c67fb77d02e238a9336beb8d939714e
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: e2d338c5470611a5eea0c6279404c4eaddebb2d0
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66345525"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80739075"
 ---
 # <a name="control-of-execution"></a>Contrôle de l’exécution
-Le moteur de débogage (dé) envoie généralement un des événements suivants en tant que le dernier événement de démarrage :
+Le moteur de débogé (DE) envoie généralement l’un des événements suivants comme le dernier événement de démarrage:
 
-- L’événement de point d’entrée, si l’attachement à un programme lancé récemment
+- L’événement du point d’entrée, s’il s’attache à un programme nouvellement lancé
 
-- L’événement complete charge, si l’attachement à un programme qui est déjà en cours d’exécution
+- L’événement complet de charge, s’il s’attache à un programme qui est déjà en cours d’exécution
 
-  Ces deux événements sont événements d’arrêt, ce qui signifie que l’Allemagne attend une réponse de l’utilisateur au moyen de l’IDE. Pour plus d’informations, consultez [les modes de fonctionnement](../../extensibility/debugger/operational-modes.md).
+  Ces deux événements sont l’arrêt des événements, ce qui signifie que le DE attend une réponse de l’utilisateur au moyen de l’IDE. Pour plus d’informations, voir [modes opérationnels](../../extensibility/debugger/operational-modes.md).
 
 ## <a name="stopping-event"></a>Arrêt de l’événement
- Quand un événement d’arrêt est envoyé à la session de débogage :
+ Lorsqu’un événement d’arrêt est envoyé à la session de débog :
 
-1. Le programme et le thread qui contiennent le pointeur d’instruction en cours peuvent être obtenus à partir de l’interface d’événement.
+1. Le programme et le fil qui contiennent le pointeur d’instruction actuel peuvent être obtenus à partir de l’interface de l’événement.
 
-2. L’IDE détermine le fichier de code source actuel et la position, qui s’affiche en surbrillance dans l’éditeur.
+2. L’IDE détermine le fichier et la position actuels du code source, qu’il affiche comme indiqué dans l’éditeur.
 
-3. La session de débogage répond généralement à ce premier événement d’arrêt en appelant le programme **continuer** (méthode).
+3. La séance de débog répond généralement à ce premier événement d’arrêt en appelant la méthode **Continuer** du programme.
 
-4. Ensuite, le programme s’exécute jusqu'à ce qu’il rencontre une condition d’arrêt, comme atteindre un point d’arrêt. Dans ce cas, le D’envoie un événement de point d’arrêt à la session de débogage. L’événement de point d’arrêt est un événement d’arrêt et l’Allemagne attend de nouveau une réponse de l’utilisateur.
+4. Le programme fonctionne ensuite jusqu’à ce qu’il rencontre une condition d’arrêt, comme frapper un point d’arrêt. Dans ce cas, le DE envoie un événement de point d’arrêt à la session de débogé. L’événement de point d’arrêt est un événement d’arrêt, et le DE attend à nouveau une réponse de l’utilisateur.
 
-5. Si l’utilisateur choisit de pas à pas détaillé, plus ou en dehors d’une fonction, l’IDE vous invite à entrer la session de débogage pour appeler le programme `Step` (méthode). L’IDE transmet ensuite l’unité d’étape (instruction, instruction ou ligne) et le type d’étape (que ce soit à l’étape dans, au-dessus ou en dehors de la fonction). Lorsque l’étape est terminée, le D’envoie un événement de fin d’étape à la session de débogage, qui est un événement d’arrêt.
+5. Si l’utilisateur choisit d’entrer, de plus ou de sortir d’une fonction, l’IDE invite la session de débogé à appeler la méthode du `Step` programme. L’IDE passe ensuite l’unité d’étape (instruction, déclaration ou ligne) et le type d’étape (que ce soit pour entrer, plus ou hors de la fonction). Lorsque l’étape est terminée, le DE envoie un événement complet étape à la session de débog, qui est un événement d’arrêt.
 
-    ou
+    -ou-
 
-    Si l’utilisateur choisit de continuer à s’exécuter à partir du pointeur d’instruction en cours, l’IDE vous invite à entrer la session de débogage pour appeler le programme **Execute** (méthode). Le programme reprend son exécution jusqu'à ce qu’il rencontre la condition d’arrêt suivante.
+    Si l’utilisateur choisit de continuer à exécuter à partir du pointeur d’instruction actuel, l’IDE invite la session de débog à appeler la méthode **Exécuter** du programme. Le programme reprend l’exécution jusqu’à ce qu’il rencontre la condition d’arrêt suivante.
 
-    ou
+    -ou-
 
-    Si la session de débogage consiste à ignorer un événement d’arrêt particulier, la session de débogage appelle le programme **continuer** (méthode). Si le programme a été pas à pas détaillé dans, au-dessus ou en dehors d’une fonction lorsqu’il a rencontré la condition d’arrêt, puis il continue l’étape.
+    Si la session de débog doit ignorer un événement d’arrêt particulier, la session de débaille appelle la méthode **Continuer** du programme. Si le programme entre, plus ou hors d’une fonction lorsqu’il a rencontré l’état d’arrêt, il continue l’étape.
 
-   Par programme, lors de la DE rencontre une condition d’arrêt, il envoie des événements d’arrêt, tels que [IDebugLoadCompleteEvent2](../../extensibility/debugger/reference/idebugloadcompleteevent2.md) ou [IDebugEntryPointEvent2](../../extensibility/debugger/reference/idebugentrypointevent2.md) avec le Gestionnaire de débogage de session (SDM) par le biais de un [IDebugEventCallback2](../../extensibility/debugger/reference/idebugeventcallback2.md) interface. Le passe DE la [IDebugProgram2](../../extensibility/debugger/reference/idebugprogram2.md) et [IDebugThread2](../../extensibility/debugger/reference/idebugthread2.md) interfaces qui représentent le programme et le thread qui contient le pointeur d’instruction en cours. Les appels SDM [IDebugThread2::EnumFrameInfo](../../extensibility/debugger/reference/idebugthread2-enumframeinfo.md) pour obtenir le frame de pile supérieur et les appels [IDebugStackFrame2::GetDocumentContext](../../extensibility/debugger/reference/idebugstackframe2-getdocumentcontext.md) pour obtenir le contexte de document associé à l’instruction actuelle pointeur. Ce contexte de document est généralement un fichier de code source qu’un nombre nom, ligne et colonne. L’IDE utilise pour mettre en surbrillance le code source qui contient le pointeur d’instruction en cours.
+   Programmatiquement, lorsque le DE rencontre une condition d’arrêt, il envoie des événements d’arrêt tels que [IDebugLoadCompleteEvent2](../../extensibility/debugger/reference/idebugloadcompleteevent2.md) ou [IDebugEntryPointEvent2](../../extensibility/debugger/reference/idebugentrypointevent2.md) au gestionnaire de débbug session (SDM) au moyen d’une interface [IDebugEventCallback2.](../../extensibility/debugger/reference/idebugeventcallback2.md) Le DE passe les interfaces [IDebugProgram2](../../extensibility/debugger/reference/idebugprogram2.md) et [IDebugThread2](../../extensibility/debugger/reference/idebugthread2.md) qui représentent le programme et le thread contenant le pointeur d’instruction actuel. Le SDM appelle [IDebugThread2::EnumFrameInfo](../../extensibility/debugger/reference/idebugthread2-enumframeinfo.md) pour obtenir le cadre de pile supérieure et appelle [IDebugStackFrame2::GetDocumentContext](../../extensibility/debugger/reference/idebugstackframe2-getdocumentcontext.md) pour obtenir le contexte de document associé au pointeur d’instruction actuel. Ce contexte de document est généralement un nom de fichier de code source, une ligne et un numéro de colonne. L’IDE les utilise pour mettre en évidence le code source qui contient le pointeur d’instruction actuel.
 
-   Le SDM répond généralement à ce premier événement d’arrêt en appelant [IDebugProgram2::Continue](../../extensibility/debugger/reference/idebugprogram2-continue.md). Le programme s’exécute puis jusqu'à ce qu’il rencontre une condition d’arrêt, comme atteindre un point d’arrêt, dans lequel cas le DE envoie un [IDebugBreakpointEvent2 Interface](../../extensibility/debugger/reference/idebugbreakpointevent2.md) pour le SDM. L’événement de point d’arrêt est un événement d’arrêt et l’Allemagne attend de nouveau une réponse de l’utilisateur.
+   Le SDM répond généralement à ce premier événement d’arrêt en appelant [IDebugProgram2:Continuer](../../extensibility/debugger/reference/idebugprogram2-continue.md). Le programme fonctionne ensuite jusqu’à ce qu’il rencontre une condition d’arrêt, comme frapper un point d’arrêt, auquel cas le DE envoie une [interface IDebugBreakpointEvent2](../../extensibility/debugger/reference/idebugbreakpointevent2.md) à la SDM. L’événement de point d’arrêt est un événement d’arrêt, et le DE attend à nouveau une réponse de l’utilisateur.
 
-   Si l’utilisateur choisit de pas à pas détaillé, plus ou en dehors d’une fonction, l’IDE vous invite à entrer le SDM pour appeler [IDebugProgram2::Step](../../extensibility/debugger/reference/idebugprogram2-step.md). L’IDE puis transmet le [STEPUNIT](../../extensibility/debugger/reference/stepunit.md) (instruction, instruction ou ligne) et le [STEPKIND](../../extensibility/debugger/reference/stepkind.md), autrement dit, s’il faut passer dans, sur ou en dehors de la fonction. Lorsque l’étape est terminée, l’Allemagne envoie un [IDebugStepCompleteEvent2](../../extensibility/debugger/reference/idebugstepcompleteevent2.md) interface pour le SDM, qui est un événement d’arrêt.
+   Si l’utilisateur choisit d’entrer dans, plus ou hors d’une fonction, l’IDE invite le SDM à appeler [IDebugProgram2:Step](../../extensibility/debugger/reference/idebugprogram2-step.md). L’IDE passe ensuite le [STEPUNIT](../../extensibility/debugger/reference/stepunit.md) (instruction, déclaration ou ligne) et le [STEPKIND](../../extensibility/debugger/reference/stepkind.md), c’est-à-dire, que ce soit pour entrer, plus ou hors de la fonction. Lorsque l’étape est terminée, le DE envoie une interface [IDebugStepCompleteEvent2](../../extensibility/debugger/reference/idebugstepcompleteevent2.md) au SDM, qui est un événement d’arrêt.
 
-   Si l’utilisateur choisit de continuer à s’exécuter à partir du pointeur d’instruction en cours, l’IDE vous demande le SDM pour appeler [IDebugProgram2::Execute](../../extensibility/debugger/reference/idebugprogram2-execute.md). Le programme reprend son exécution jusqu'à ce qu’il rencontre la condition d’arrêt suivante.
+   Si l’utilisateur choisit de continuer à exécuter à partir du pointeur d’instruction actuel, l’IDE demande au SDM d’appeler [IDebugProgram2:Execute](../../extensibility/debugger/reference/idebugprogram2-execute.md). Le programme reprend l’exécution jusqu’à ce qu’il rencontre la condition d’arrêt suivante.
 
-   Si le package de débogage consiste à ignorer un événement d’arrêt particulier, le package de débogage appelle le SDM, qui appelle [IDebugProgram2::Continue](../../extensibility/debugger/reference/idebugprogram2-continue.md). Si le programme a été pas à pas détaillé dans, au-dessus ou en dehors d’une fonction lorsqu’il a rencontré la condition d’arrêt, il continue de l’étape. Cela implique que le programme maintient un état d’exécution pas à pas, afin qu’il sache comment continuer.
+   Si le paquet de débog est d’ignorer un événement d’arrêt particulier, le paquet de débog appelle le SDM, qui appelle [IDebugProgram2:Continuer](../../extensibility/debugger/reference/idebugprogram2-continue.md). Si le programme entre, est terminé ou hors d’une fonction lorsqu’il a rencontré l’état d’arrêt, il poursuit l’étape. Cela implique que le programme maintient un état de marche, de sorte qu’il sait comment continuer.
 
-   Les appels au SDM `Step`, **Execute**, et **continuer** sont asynchrone, ce qui signifie que le SDM attend l’appel doit retourner rapidement. Si le D’envoie le SDM un événement d’arrêt sur le même thread avant `Step`, **Execute**, ou **continuer** retourne, le SDM se bloque.
+   Les appels que le `Step`SDM fait à , **Exécuter**, et **Continuer** sont asynchrones, ce qui signifie que le SDM s’attend à l’appel de revenir rapidement. Si le DE envoie au SDM un `Step`événement d’arrêt sur le même thread avant, **Exécuter**, ou **Continuer** les retours, le SDM se bloque.
 
 ## <a name="see-also"></a>Voir aussi
-- [Déboguer des tâches](../../extensibility/debugger/debugging-tasks.md)
+- [Tâches de débogé](../../extensibility/debugger/debugging-tasks.md)

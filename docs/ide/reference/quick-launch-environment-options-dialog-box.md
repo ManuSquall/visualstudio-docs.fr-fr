@@ -16,10 +16,10 @@ ms.workload:
 - multiple
 monikerRange: vs-2017
 ms.openlocfilehash: 706b54e3ee925b1833f860da2f84c8d28af9617e
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75565667"
 ---
 # <a name="quick-launch-environment-options-dialog-box"></a>Lancement rapide, Environnement, boîte de dialogue Options
@@ -30,19 +30,19 @@ L’option **Lancement rapide** est activée par défaut quand vous installez Vi
 
 ## <a name="category-list"></a>Liste des catégories
 
-Les résultats de recherche de Lancement rapide apparaissent dans quatre catégories : **Utilisés le plus récemment**, **Menus**, **Options** et **Documents ouverts**, avec le nombre d’éléments de la catégorie. Pour parcourir les résultats de la recherche par catégorie, choisissez les touches **Ctrl**+**Q** pour afficher tous les résultats de la catégorie suivante. Une fois la dernière catégorie affichée, **Ctrl**+**Q** vous montre quelques résultats de chaque catégorie. Appuyez sur **Ctrl**+**Maj**+**Q** pour naviguer dans les catégories dans l’ordre inverse. Pour afficher tous les résultats de recherche d'une catégorie, choisissez le nom de la catégorie.
+Les résultats de recherche de Lancement rapide apparaissent dans quatre catégories : **Utilisés le plus récemment**, **Menus**, **Options** et **Documents ouverts**, avec le nombre d’éléments de la catégorie. Pour parcourir les résultats de recherche par catégorie, choisissez les clés **Ctrl**+**Q** pour afficher tous les résultats de la catégorie suivante. Après l’apparition de la dernière catégorie, **Ctrl**+**Q** vous montre quelques résultats de chaque catégorie. Appuyez **sur Ctrl**+**Shift**+**Q** pour naviguer à travers les catégories dans l’ordre inverse. Pour afficher tous les résultats de recherche d'une catégorie, choisissez le nom de la catégorie.
 
 Vous pouvez utiliser les raccourcis suivants pour limiter votre recherche à des catégories spécifiques.
 
-|Catégorie|Raccourci|Description du raccourci|
+|Category|Raccourci|Description du raccourci|
 |--------------|--------------| - |
-|Les dernières utilisées|@mru<br /><br /> Par exemple, `@mru font`.|Affiche jusqu’à cinq des éléments que vous avez **utilisés le plus récemment**.|
-|Menus|@menu<br /><br /> Par exemple, `@menu project`.|Limite la recherche aux éléments de menu.|
-|Options|@opt<br /><br /> Par exemple, `@opt font`.|Limite la recherche aux paramètres de la boîte de dialogue **Options**.|
-|Documents|@doc<br /><br /> Par exemple, `@doc program.cs`.|Limite la recherche aux noms et aux chemins d'accès de fichiers des documents ouverts pour les critères de recherche, mais ne recherche pas le texte dans les fichiers eux-mêmes.|
+|Les dernières utilisées|@mru<br /><br /> Par exemple : `@mru font`|Affiche jusqu’à cinq des éléments que vous avez **utilisés le plus récemment**.|
+|Menus|@menu<br /><br /> Par exemple : `@menu project`|Limite la recherche aux éléments de menu.|
+|Options|@opt<br /><br /> Par exemple : `@opt font`|Limite la recherche aux paramètres de la boîte de dialogue **Options**.|
+|Documents|@doc<br /><br /> Par exemple : `@doc program.cs`|Limite la recherche aux noms et aux chemins d'accès de fichiers des documents ouverts pour les critères de recherche, mais ne recherche pas le texte dans les fichiers eux-mêmes.|
 
 > [!NOTE]
-> Vous pouvez changer les touches de raccourci dans la page **Général** > **Clavier** de la boîte de dialogue **Options**.
+> Vous pouvez modifier les touches de raccourci de la page**Clavier** **général** > dans la boîte de dialogue **Options.**
 
 ## <a name="show-previous-results"></a>Afficher les résultats précédents
 

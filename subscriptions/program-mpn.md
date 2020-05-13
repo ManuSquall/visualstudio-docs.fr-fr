@@ -3,15 +3,16 @@ title: Abonnements Visual Studio offerts aux partenaires du réseau MPN (Microso
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 07/28/2019
+ms.assetid: 7f4399d8-41da-41e5-a666-acc34958b8c0
+ms.date: 03/09/2020
 ms.topic: conceptual
 description: MPN donne des détails sur les abonnements proposés, sur les règles qui s’appliquent et sur le nombre d’abonnements.
-ms.openlocfilehash: 1a103f76b56df72b5829f9ce87f587070519726e
-ms.sourcegitcommit: e3c3d2b185b689c5e32ab4e595abc1ac60b6b9a8
+ms.openlocfilehash: c463ee24b9c145de6fdbca9b1971b0fc767df694
+ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/20/2020
-ms.locfileid: "76281696"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "80232333"
 ---
 # <a name="visual-studio-subscriptions-offered-to-partners-in-the-microsoft-partner-network-mpn"></a>Abonnements Visual Studio offerts aux partenaires du réseau MPN (Microsoft Partner Network)
 
@@ -23,7 +24,7 @@ Quand un partenaire acquiert une compétence (au niveau Silver ou Gold), il bén
 
 ### <a name="core-visual-studio-benefit-for-earning-at-least-one-competency-of-any-kind"></a>Avantage Visual Studio principal pour l’acquisition d’au moins une compétence quelle qu’elle soit
 
-| Compétences acquises uniquement au niveau Silver               | Au moins une compétence acquise au niveau Gold   |
+| Compétences gagnées seulement au niveau de l’argent               | Au moins une compétence gagnée au niveau de l’or   |
 |------------------------------------------------------------|----------------------------------------------------|
 | 5 abonnements Visual Studio Enterprise                   | 10 abonnements Visual Studio Enterprise          |
 
@@ -31,13 +32,13 @@ Quand un partenaire acquiert une compétence (au niveau Silver ou Gold), il bén
 
 | Compétence                                  | Abonnements supplémentaires gagnés pour une compétence **Silver** | Abonnements supplémentaires gagnés pour une compétence **Gold** |
 |---------------------------------------------|-----------------------------------------------------------|---------------------------------------------------------|
-| Développement de l’application                     | 5 abonnements Visual Studio Enterprise                  | 25 abonnements Visual Studio Enterprise               |
+| Développement d'applications                     | 5 abonnements Visual Studio Enterprise                  | 25 abonnements Visual Studio Enterprise               |
 | Cloud Customer Relationship Management      | 5 abonnements Visual Studio Enterprise                  | 25 abonnements Visual Studio Enterprise               |
-| Cloud Platform                              | 5 abonnements Visual Studio Enterprise                  | 25 abonnements Visual Studio Enterprise               |
+| Plateforme cloud                              | 5 abonnements Visual Studio Enterprise                  | 25 abonnements Visual Studio Enterprise               |
 | Cloud Productivity                          | 5 abonnements Visual Studio Enterprise                  | 25 abonnements Visual Studio Enterprise               |
 | DevOps                                      | 5 abonnements Visual Studio Enterprise                  | 25 abonnements Visual Studio Enterprise                |
 
-Quel que soit le nombre de compétences qu’un partenaire gagne, le nombre d’abonnements Visual Studio est limité comme suit :
+Indépendamment du nombre de compétences qu’un partenaire gagne, le nombre d’abonnements Visual Studio est limité comme suit :
 
 ### <a name="limits-for-visual-studio-subscriptions-earned-through-competencies"></a>Quantités limites d’abonnements Visual Studio gagnés grâce aux compétences
 
@@ -47,9 +48,9 @@ Quel que soit le nombre de compétences qu’un partenaire gagne, le nombre d’
 
 ## <a name="subscriptions-for-partners-purchasing-the-action-pack"></a>Abonnements pour les partenaires achetant l’Action Pack
 
-Les partenaires disposant d’une compétence sont éligibles pour acheter le Action Pack. Un partenaire ne peut acheter qu’un seul Action Pack.
+Les partenaires ayant une compétence sont admissibles à l’achat du pack d’action. Un partenaire ne peut acheter qu’un seul Action Pack.
 
-Avec l’Action Pack, le partenaire gagne **trois abonnements Visual Studio Professional (MPN)** . Visual Studio Professional (MPN) est une offre personnalisée sans équivalent commercial sur le marché. Voici ce qu’il inclut :
+Avec l’Action Pack, le partenaire gagne **trois abonnements Visual Studio Professional (MPN)**. Visual Studio Professional (MPN) est une offre personnalisée sans équivalent commercial sur le marché. Voici ce qu’il inclut :
 
 - Visual Studio Professional (uniquement la dernière version)
 - Windows Entreprise (uniquement la dernière version, à utiliser seulement à des fins de développement et de test)
@@ -57,17 +58,17 @@ Avec l’Action Pack, le partenaire gagne **trois abonnements Visual Studio Prof
 
 Les abonnés Visual Studio Professional (MPN) peuvent aussi télécharger et utiliser des logiciels pour leur développement, notamment SQL Server Developer Edition.
 
-L’abonnement Visual Studio Professional (MPN) n’inclut pas les avantages Azure DevOps Services, le crédit DevTest Azure, le support technique, la formation ou d’autres avantages de l’abonné disponibles avec les abonnements Visual Studio proposés commerce.
+L’abonnement Visual Studio Professional (MPN) n’inclut pas les avantages Azure DevOps Services, le crédit individuel Azure DevTest, le support technique, la formation ou d’autres avantages d’abonnés qui sont disponibles avec les abonnements Visual Studio qui sont offerts Commercialement.
 
 ## <a name="internal-use-only-restriction"></a>Restriction à un usage interne uniquement
 
 Les règles MPN stipulent que tous les logiciels proposés sous la forme d’un avantage du programme peuvent être utilisés uniquement en interne. Cela s’applique aux logiciels offerts pour une utilisation par les abonnés Visual Studio et les avantages globaux liés aux licences de logiciels MPN.
 
-Cette restriction à un usage interne signifie principalement que les partenaires ne peuvent pas utiliser les logiciels dans le cadre du travail qu’ils effectuent pour des parties extérieures à leur propre organisation. La création d’une application qui sera utilisée uniquement par les employés du partenaire est correcte, mais la création d’une application qui fait partie d’un projet client n’est pas autorisée.
+Cette restriction à un usage interne signifie principalement que les partenaires ne peuvent pas utiliser les logiciels dans le cadre du travail qu’ils effectuent pour des parties extérieures à leur propre organisation. La construction d’une application qui ne sera utilisée que par les employés partenaires est très bien, mais la construction d’une application qui fait partie d’un projet client n’est pas autorisée.
 
 ## <a name="sign-in-required-with-visual-studio"></a>Connexion requise avec Visual Studio
 
-Avec les abonnements Visual Studio offerts par le biais du réseau MPN, l’utilisateur sous licence doit se connecter à Visual Studio à l’aide de la même identité/connexion que celle utilisée pour activer l’abonnement Visual Studio. Les clés de produit ne sont pas proposées pour déverrouiller le produit. la connexion est la seule option pour l’exécution de Visual Studio. Les abonnés Visual Studio peuvent travailler en mode hors connexion pendant 30 jours avant que Visual Studio ne cesse de fonctionner. Quand vous travaillez en ligne, Visual Studio actualise silencieusement et régulièrement l’état de la licence utilisateur pour s’assurer que l’abonnement est toujours valide.
+Avec les abonnements Visual Studio offerts par le biais du réseau MPN, l’utilisateur sous licence doit se connecter à Visual Studio à l’aide de la même identité/connexion que celle utilisée pour activer l’abonnement Visual Studio. Les clés de produit ne sont pas offertes pour déverrouiller le produit; la signature est la seule option pour la gestion visual Studio. Les abonnés Visual Studio peuvent travailler en mode hors connexion pendant 30 jours avant que Visual Studio ne cesse de fonctionner. Quand vous travaillez en ligne, Visual Studio actualise silencieusement et régulièrement l’état de la licence utilisateur pour s’assurer que l’abonnement est toujours valide.
 
 ## <a name="resources"></a>Ressources
 
@@ -75,6 +76,13 @@ Avec les abonnements Visual Studio offerts par le biais du réseau MPN, l’util
 - [Affecter des abonnements Visual Studio à des employés MPN](manage-mpn-subscriptions.md)
 - [Conditions d’utilisation](https://www.microsoft.com/useterms/) : les abonnements Visual Studio offerts par le biais du réseau MPN sont soumis au CLUF des abonnements Visual Studio relatif à la revente interdite.
 
-## <a name="next-steps"></a>Étapes suivantes :
+
+## <a name="see-also"></a>Voir aussi
+- [Documentation Visual Studio](https://docs.microsoft.com/visualstudio/)
+- [Documentation Azure DevOps](https://docs.microsoft.com/azure/devops/)
+- [Documentation Azure](https://docs.microsoft.com/azure/)
+- [Documentation Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+
+## <a name="next-steps"></a>Étapes suivantes
 
 Découvrez comment [gérer les abonnements Visual Studio](manage-mpn-subscriptions.md) offerts via le réseau MPN.

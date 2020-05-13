@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: ce16e436172a7d369f2df8342f6b027b574056ab
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75589524"
 ---
 # <a name="how-to-create-a-basic-3d-model"></a>Guide pratique pour créer un modèle 3D de base
@@ -58,7 +58,7 @@ Avant de commencer, assurez-vous que la fenêtre **Propriétés** et la **Boîte
 
     ![Un côté du cube a été plus extrudé.](../designers/media/gfx_model_demo_house_extend.png)
 
-7. Effectuez une triangulation du modèle. Dans la barre d’outils de l’éditeur de modèle, choisissez **Avancé** > **Outils** > **Effectuer une triangulation**.
+7. Effectuez une triangulation du modèle. Sur la barre d’outils Model Editor, choisissez **Advanced** > **Tools** > **Triangulate**.
 
 8. Créez le toit de la maison. Passez en mode de sélection d’arête en choisissant **Sélectionner le bord** dans la barre d’outils de l’éditeur de modèle, puis choisissez le cube pour l’activer. Maintenez enfoncée la touche **Ctrl** tout en sélectionnant les arêtes illustrées ici :
 
@@ -70,10 +70,10 @@ Avant de commencer, assurez-vous que la fenêtre **Propriétés** et la **Boîte
 
    ![Modèle terminé de la maison simplifiée](../designers/media/gfx_model_demo_house_final.png)
 
-   Ensuite, vous pouvez appliquer un nuanceur à ce modèle 3D. Pour plus d’informations, consultez [Guide pratique pour appliquer un nuanceur à un modèle 3D](../designers/how-to-apply-a-shader-to-a-3-d-model.md).
+   Ensuite, vous pouvez appliquer un nuanceur à ce modèle 3D. Pour plus d’informations, voir [Comment : Appliquer un ombrageur sur un modèle 3D.](../designers/how-to-apply-a-shader-to-a-3-d-model.md)
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Guide pratique pour modéliser un terrain 3D](../designers/how-to-model-3-d-terrain.md)
-- [Éditeur de modèles](../designers/model-editor.md)
+- [Comment : Terrain 3D modèle](../designers/how-to-model-3-d-terrain.md)
+- [Éditeur modèle](../designers/model-editor.md)
 - [Concepteur Shader](../designers/shader-designer.md)

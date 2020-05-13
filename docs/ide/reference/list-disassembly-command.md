@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: aaeab2e65088b8f1bfce3a6a12f8cd66c3245b75
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "72747919"
 ---
 # <a name="list-disassembly-command"></a>Afficher le code machine, commande
@@ -36,29 +36,29 @@ Chaque commutateur peut être appelé à l’aide de sa forme complète ou abré
 
 /count: `number` [ou] /c: `number` [ou] /length: `number` [ou] /l: `number`
 
-Optionnel. Nombre d’instructions à afficher. La valeur par défaut est 8.
+facultatif. Nombre d’instructions à afficher. La valeur par défaut est 8.
 
 /endaddress: `expression` [ou] /e: `expression`
 
-Optionnel. Adresse à laquelle le code machine doit s’arrêter.
+facultatif. Adresse à laquelle le code machine doit s’arrêter.
 
 /codebytes:`yes`&#124;`no` [ou] /bytes:`yes`&#124;`no` [ou] /b:`yes`&#124;`no`
 
-Optionnel. Spécifie si les octets de code doivent être affichés. La valeur par défaut est `no`.
+facultatif. Spécifie si les octets de code doivent être affichés. La valeur par défaut est `no`.
 
 /source:`yes`&#124;`no` [ou] /s:`yes`&#124;`no`
 
-Optionnel. Spécifie si le code source doit être affiché. La valeur par défaut est `no`.
+facultatif. Spécifie si le code source doit être affiché. La valeur par défaut est `no`.
 
 /symbolnames:`yes`&#124;`no` [ou] /names:`yes`&#124;`no` [ou] /n:`yes`&#124;`no`
 
-Optionnel. Spécifie si les noms de symbole doivent être affichés. La valeur par défaut est `yes`.
+facultatif. Spécifie si les noms de symbole doivent être affichés. La valeur par défaut est `yes`.
 
  [/linenumbers:`yes`&#124;`no`]
 
-Optionnel. Active l’affichage des numéros de ligne associés au code source. Le commutateur /source doit avoir la valeur `yes` pour utiliser le commutateur /linenumbers.
+facultatif. Active l’affichage des numéros de ligne associés au code source. Le commutateur /source doit avoir la valeur `yes` pour utiliser le commutateur /linenumbers.
 
-## <a name="example"></a>Exemple
+## <a name="example"></a> Exemple
 
 ```cmd
 >Debug.ListDisassembly
@@ -66,9 +66,9 @@ Optionnel. Active l’affichage des numéros de ligne associés au code source. 
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Afficher la pile des appels, commande](../../ide/reference/list-call-stack-command.md)
-- [Afficher les threads, commande](../../ide/reference/list-threads-command.md)
-- [Commandes Visual Studio](../../ide/reference/visual-studio-commands.md)
+- [Afficher la pile d’appels, commande](../../ide/reference/list-call-stack-command.md)
+- [Répertorier les threads, commande](../../ide/reference/list-threads-command.md)
+- [Commandes de studio visuel](../../ide/reference/visual-studio-commands.md)
 - [Commande, fenêtre](../../ide/reference/command-window.md)
-- [Rechercher/Commande, zone](../../ide/find-command-box.md)
-- [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)
+- [Boîte de recherche/commande](../../ide/find-command-box.md)
+- [Alias de commande de studio visuel](../../ide/reference/visual-studio-command-aliases.md)

@@ -1,5 +1,9 @@
 - name: Outils de test dans Visual Studio
-  href: improve-code-quality.md
+  href: index.yml
+- name: Vue d'ensemble
+  items:
+    - name: Découvrir les outils de test
+      href: improve-code-quality.md
 - name: Test unitaire
   items:
     - name: Vue d’ensemble des outils de test unitaire
@@ -14,14 +18,10 @@
       href: create-unit-tests-menu.md
     - name: IntelliTest
       items:
+        - name: Vue d'ensemble
+          href: intellitest-manual/index.md
         - name: "Procédure\_: Générer des tests unitaires avec IntelliTest"
           href: generate-unit-tests-for-your-code-with-intellitest.md
-        - name: Vue d'ensemble
-          href: intellitest-manual/introduction.md
-        - name: Bien démarrer
-          href: intellitest-manual/getting-started.md
-        - name: Index des sections
-          href: intellitest-manual/index.md
         - name: Génération de tests
           href: intellitest-manual/test-generation.md
         - name: Exécution symbolique dynamique
@@ -228,7 +228,7 @@
         - name: Vue d'ensemble
           displayName: Test controllers and test agents
           href: configure-test-agents-and-controllers-for-load-tests.md
-        - name: Configuration requise
+        - name: Spécifications
           href: test-controller-and-test-agent-requirements-for-load-testing.md
         - name: Gérer les contrôleurs de test et les agents de test
           href: manage-test-controllers-and-test-agents.md

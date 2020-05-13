@@ -11,10 +11,10 @@ manager: crdun
 ms.workload:
 - unity
 ms.openlocfilehash: d6856ff73f9aab2325a31e164e7983a919097d46
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
-ms.translationtype: HT
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/28/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "66261115"
 ---
 # <a name="troubleshooting-and-known-issues-visual-studio-tools-for-unity"></a>Problèmes connus et dépannage (Outils Visual Studio pour Unity)
@@ -25,7 +25,7 @@ Dans cette section, vous allez trouver les solutions aux problèmes courants ren
 
 ### <a name="confirm-editor-attaching-is-enabled"></a>Vérifier que l’attachement de l’éditeur est activé
 
-Dans le menu Unity, sélectionnez **Edit (Edition) > Preferences (Préférences)** , puis sélectionnez l’onglet **External Tools (Outils externes)** . Vérifiez que la case **Editor Attaching (Attachement de l’éditeur)** est cochée. Pour plus d’informations, voir la [documentation sur les préférences d’Unity](https://docs.unity3d.com/Manual/Preferences.html).
+Dans le menu Unity, sélectionnez **Modifier > Préférences,** puis sélectionnez **l’onglet Outils externes.** Confirmez que la case à **cocher d’édition** est activée. Pour plus d’informations, voir la [documentation sur les préférences d’Unity](https://docs.unity3d.com/Manual/Preferences.html).
 
 ### <a name="unable-to-attach"></a>Impossible de s’attacher
 
@@ -116,7 +116,7 @@ Tentez de mettre à niveau Visual Studio 2015 vers la mise à jour 3.
 
 ## <a name="report-errors"></a>Signaler les erreurs
 
- Aidez-nous à améliorer la qualité de Visual Studio Tools for Unity en envoyant des rapports d'erreurs lorsque vous êtes confronté à un arrêt, un blocage ou autres erreurs. Ceci nous permet d'examiner et de résoudre les problèmes de Visual Studio Tools pour Unity. Merci !
+ Aidez-nous à améliorer la qualité de Visual Studio Tools for Unity en envoyant des rapports d'erreurs lorsque vous êtes confronté à un arrêt, un blocage ou autres erreurs. Ceci nous permet d'examiner et de résoudre les problèmes de Visual Studio Tools pour Unity. Merci !
 
 ### <a name="how-to-report-an-error-when-visual-studio-freezes"></a>Comment signaler une erreur lorsque Visual Studio se bloque
 
@@ -124,7 +124,7 @@ Tentez de mettre à niveau Visual Studio 2015 vers la mise à jour 3.
 
 ##### <a name="to-report-that-visual-studio-freezes-while-debugging-with-visual-studio-tools-for-unity"></a>Pour signaler que Visual Studio se bloque pendant le débogage avec Visual Studio Tools pour Unity
 
-*Sur Windows :*
+*Sur Windows:*
 
 1. Ouvrez une nouvelle instance de Visual Studio.
 
@@ -142,7 +142,7 @@ Tentez de mettre à niveau Visual Studio 2015 vers la mise à jour 3.
 
     Vous devrez peut-être afficher d'abord la fenêtre **Commande** . Dans Visual Studio, dans le menu principal, choisissez **Affichage**, **Autres fenêtres**, **Fenêtre Commande**.
 
-*Sur Mac :*
+*Sur Mac :*
 
 1. Ouvrez un terminal et obtenez le PID de Visual Studio pour Mac :
 
@@ -168,4 +168,4 @@ Tentez de mettre à niveau Visual Studio 2015 vers la mise à jour 3.
     bt all
     ```
 
-Enfin, envoyez le vidage de thread à [vstusp@microsoft.com](mailto:vstusp@microsoft.com), ainsi qu’une description de ce que vous faisiez quand Visual Studio s’est bloqué.
+Enfin, envoyez le thread-dump à [vstusp@microsoft.com](mailto:vstusp@microsoft.com), avec une description de ce que vous faisiez quand Visual Studio est devenu gelé.

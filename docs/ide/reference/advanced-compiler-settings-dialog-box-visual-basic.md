@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 9ebc2da5e71dbdee13df4cf658f3681804879f58
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75596929"
 ---
 # <a name="advanced-compiler-settings-dialog-box-visual-basic"></a>Paramètres avancés du compilateur, boîte de dialogue (Visual Basic)
@@ -28,9 +28,9 @@ Utilisez la boîte de dialogue **Paramètres avancés du compilateur** du **Conc
 
 1. Dans l’**Explorateur de solutions**, choisissez un nœud de projet (pas le nœud **Solution**).
 
-2. Dans le menu **Projet**, cliquez sur **Propriétés**. Quand le **Concepteur de projets** apparaît, cliquez sur l’onglet **Compiler**.
+2. Dans le menu **Projet** , cliquez sur **Propriétés**. Lorsque le **concepteur de projet** apparaît, cliquez sur l’onglet **Compile.**
 
-3. Dans la [page Compiler, Concepteur de projets (Visual Basic)](../../ide/reference/compile-page-project-designer-visual-basic.md), sélectionnez **Configuration** et **Plateforme**. Dans les configurations de build simplifiées, les listes **Configuration** et **Plateforme**  ne sont pas affichées. Pour plus d’informations, consultez [Guide pratique pour définir des configurations Debug et Release](../../debugger/how-to-set-debug-and-release-configurations.md).
+3. Dans la [page Compiler, Concepteur de projets (Visual Basic)](../../ide/reference/compile-page-project-designer-visual-basic.md), sélectionnez **Configuration** et **Plateforme**. Dans les configurations de build simplifiées, les listes **Configuration** et **Plateforme ** ne sont pas affichées. Pour plus d’informations, consultez [Guide pratique pour définir des configurations Debug et Release](../../debugger/how-to-set-debug-and-release-configurations.md).
 
 4. Cliquez sur **Options avancées de compilation**.
 
@@ -50,13 +50,13 @@ Si les conditions de dépassement sont vérifiées et qu’une opération entiè
 
 Par défaut, cette case est décochée pour désactiver les optimisations du compilateur. Cochez cette case pour activer les optimisations du compilateur. Les optimisations du compilateur diminuent la taille du fichier de sortie, le rendent plus rapide et plus efficace. Toutefois, comme les optimisations entraînent la réorganisation de code dans le fichier de sortie, les optimisations du compilateur peuvent rendre le débogage difficile.
 
- **Adresse de base de la DLL**
+ **Adresse de base DLL**
 
 Cette zone de texte affiche l’adresse de base de la DLL par défaut au format hexadécimal. Dans les projets de bibliothèque de contrôle et de bibliothèque de classes, vous pouvez utiliser cette zone de texte pour spécifier l’adresse de base à utiliser lors de la création de la DLL.
 
  **Générer des infos de débogage**
 
-Sélectionnez **Aucun**, **Complet**  ou **pdb-only** dans la liste. **Aucun** spécifie qu’aucune information de débogage n’est générée. **Complet** spécifie que les informations complètes de débogage sont générées, et **pdb-only** que seules les informations de débogage PDB doivent être générées. La valeur par défaut de cette option est **Complet**.
+Sélectionnez **Aucun**, **Complet ** ou **pdb-only** dans la liste. **Aucun** spécifie qu’aucune information de débogage n’est générée. **Complet** spécifie que les informations complètes de débogage sont générées, et **pdb-only** que seules les informations de débogage PDB doivent être générées. La valeur par défaut de cette option est **Complet**.
 
 ## <a name="compilation-constants"></a>Constantes de compilation
 
@@ -72,13 +72,13 @@ Par défaut, cette case est cochée, spécifiant qu’une constante TRACE est d�
 
  **Constantes personnalisées**
 
-Entrez les constantes personnalisées pour votre application dans cette zone de texte. Les entrées doivent être délimitées par une virgule selon le format suivant : **Nom1="Valeur1",Nom2="Valeur2",Nom3="Valeur3"** .
+Entrez les constantes personnalisées pour votre application dans cette zone de texte. Les entrées doivent être délimitées par une virgule selon le format suivant : **Nom1="Valeur1",Nom2="Valeur2",Nom3="Valeur3"**.
 
 ## <a name="other-settings"></a>Autres paramètres
 
 **Générer des assemblys de sérialisation**
 
-Ce paramètre spécifie si le compilateur crée des assemblys de sérialisation XML. Les assemblys de sérialisation peuvent améliorer les performances de démarrage de <xref:System.Xml.Serialization.XmlSerializer> si vous avez utilisé cette classe pour sérialiser les types dans votre code. La valeur par défaut de cette option est **auto**. **Auto** spécifie que les assemblys de sérialisation doivent être générés uniquement si vous avez utilisé <xref:System.Xml.Serialization.XmlSerializer> pour encoder les types dans votre code en XML. **Inactif** spécifie que les assemblys de sérialisation ne doivent jamais être générés, que votre code utilise <xref:System.Xml.Serialization.XmlSerializer> ou non. **Actif** spécifie que les assemblys de sérialisation doivent toujours être générés. Les assemblys de sérialisation sont appelés `TypeName`.XmlSerializers.dll.
+Ce paramètre spécifie si le compilateur crée des assemblys de sérialisation XML. Les assemblys de sérialisation peuvent améliorer les performances de démarrage de <xref:System.Xml.Serialization.XmlSerializer> si vous avez utilisé cette classe pour sérialiser les types dans votre code. La valeur par défaut pour cette option est **Auto**. **Auto** spécifie que les assemblages de <xref:System.Xml.Serialization.XmlSerializer> sérialisation ne sont générés que si vous avez utilisé pour coder les types de votre code à XML. **Inactif** spécifie que les assemblys de sérialisation ne doivent jamais être générés, que votre code utilise <xref:System.Xml.Serialization.XmlSerializer> ou non. **Actif** spécifie que les assemblys de sérialisation doivent toujours être générés. Les assemblys de sérialisation sont appelés `TypeName`.XmlSerializers.dll.
 
 ## <a name="see-also"></a>Voir aussi
 

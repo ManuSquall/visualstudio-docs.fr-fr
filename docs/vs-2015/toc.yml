@@ -20,7 +20,7 @@
       href: /dotnet/visual-basic
     - name: 'Visual C#'
       href: /dotnet/csharp
-    - name: "Visual\_C++"
+    - name: Visual C++
       href: /cpp/visual-cpp-in-visual-studio
     - name: JavaScript
       href: javascript/javascript-in-visual-studio.md
@@ -28,9 +28,9 @@
       href: python/getting-started-with-python.md
     - name: "Visual\_F#"
       href: /dotnet/fsharp/
-    - name: Nous contacter
+    - name: Talk to Us
       items:
-        - name: Nous contacter
+        - name: Talk to Us
           href: ide/talk-to-us.md
         - name: "Guide pratique pour signaler un problème avec Visual Studio\_2015"
           href: ide/how-to-report-a-problem-with-visual-studio-2015.md

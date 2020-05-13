@@ -11,15 +11,15 @@ dev_langs:
 - CSharp
 - VB
 ms.openlocfilehash: 328551a78464c7b682eea6a988c20e742f2797c9
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75568546"
 ---
 # <a name="use-stubs-to-isolate-parts-of-your-application-from-each-other-for-unit-testing"></a>Utiliser des stubs pour isoler des parties de votre application les unes des autres pour des tests unitaires
 
-Les *types de stub* représentent l’une des deux technologies fournies par le framework Microsoft Fakes pour vous permettre d’isoler facilement un composant que vous testez d’autres composants appelés. Un stub est un petit élément de code qui remplace un autre composant pendant le test. L'utilisation d'un stub présente l'avantage de retourner des résultats cohérents, ce qui facilite l'écriture du test. Vous pouvez également effectuer des tests même si les autres composants ne fonctionnent pas encore.
+Les *types de stub* représentent l’une des deux technologies fournies par le framework Microsoft Fakes pour vous permettre d’isoler facilement un composant que vous testez d’autres composants appelés. Un stub est une petite partie de code qui remplace un autre composant pendant les tests. L'utilisation d'un stub présente l'avantage de retourner des résultats cohérents, ce qui rend le test plus facile à écrire. Vous pouvez également effectuer des tests même si les autres composants ne fonctionnent pas encore.
 
 Pour obtenir une vue d’ensemble et un guide de démarrage rapide de Fakes, consultez [Isoler du code testé avec Microsoft Fakes](../test/isolating-code-under-test-with-microsoft-fakes.md).
 
@@ -338,7 +338,7 @@ stub.ValueSet = (value) => i = value;
 
 Si vous ne fournissez pas les méthodes stub pour la méthode setter ou getter d'une propriété, Microsoft Fakes génère un stub qui stocke les valeurs, afin que la propriété stub fonctionne comme une simple variable.
 
-### <a name="events"></a>Events
+### <a name="events"></a>Événements
 
 Les événements sont exposés en tant que champs délégués. Par conséquent, tout événement extrait peut être déclenché simplement en appelant le champ de stockage d'événements. Prenons l’interface suivante pour un stub :
 

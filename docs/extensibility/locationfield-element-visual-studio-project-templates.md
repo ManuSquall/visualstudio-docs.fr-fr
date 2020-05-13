@@ -1,5 +1,5 @@
 ---
-title: LocationField, élément (modèles de projet Visual Studio) | Microsoft Docs
+title: EmplacementField Element (Visual Studio Project Templates) Microsoft Docs
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: conceptual
@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - LocationField element [Visual Studio project templates]
 ms.assetid: 6aaaa155-6ce0-4f7f-aa50-8d63d7a7c992
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b440595207cee6a146e6d85ee5e9f7c492ee3eee
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: d993e84bec41486ef4dce6ad98c61f23ab2a46bd
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66309170"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80702883"
 ---
-# <a name="locationfield-element-visual-studio-project-templates"></a>LocationField, élément (modèles de projet Visual Studio)
-Spécifie si le **emplacement** zone de texte dans le **nouveau projet** boîte de dialogue est activée, désactivée ou masquée pour le modèle de projet.
+# <a name="locationfield-element-visual-studio-project-templates"></a>Élément LocationField (modèles de projet Visual Studio)
+Précise si la boîte de texte **de localisation** de la boîte de dialogue du **nouveau projet** est activée, désactivée ou cachée pour le modèle de projet.
 
  \<VSTemplate> \<TemplateData> \<LocationField>
 
@@ -44,25 +44,25 @@ Spécifie si le **emplacement** zone de texte dans le **nouveau projet** boîte 
 
 |Élément|Description|
 |-------------|-----------------|
-|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Élément requis.<br /><br /> Définit la catégorie du modèle et comment il s’affiche dans le **nouveau projet**.|
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Élément requis.<br /><br /> Catégorise le modèle et définit la façon dont il s’affiche dans le **nouveau projet**.|
 
 ## <a name="text-value"></a>Valeur texte
  Une valeur texte est requise.
 
- Valeurs texte valides sont :
+ Les valeurs de texte valides sont les :
 
-- `Enabled`, qui spécifie que le **emplacement** zone de la **nouveau projet** boîte de dialogue est activée.
+- `Enabled`, qui précise que la boîte de **localisation** de la boîte de dialogue **du nouveau projet** est activée.
 
-- `Disabled`, qui spécifie que le **emplacement** zone de la **nouveau projet** boîte de dialogue est désactivée.
+- `Disabled`, qui précise que la boîte de **localisation** de la boîte de dialogue **du nouveau projet** est désactivée.
 
-- `Hidden`, qui spécifie que le **emplacement** zone de la **nouveau projet** boîte de dialogue est masquée.
+- `Hidden`, qui précise que la boîte de **localisation** de la boîte de dialogue **du nouveau projet** est cachée.
 
 ## <a name="remarks"></a>Notes
  La valeur par défaut est `Enabled`.
 
- Le **emplacement** zone de texte dans le **nouveau projet** boîte de dialogue permet aux utilisateurs de modifier le répertoire par défaut dans lequel les nouveaux projets sont enregistrés.
+ La boîte de texte **de localisation** dans la boîte de dialogue **New Project** permet aux utilisateurs de modifier l’annuaire par défaut dans lequel de nouveaux projets sont sauvegardés.
 
- La valeur spécifiée dans le `Location` élément est respecté par la boîte de dialogue uniquement si le système de projet sous-jacent la prend en charge.
+ La valeur spécifiée dans l’élément `Location` n’est honorée que par la boîte de dialogue si le système de projet sous-jacent le prend en charge.
 
 ## <a name="example"></a>Exemple
  L'exemple suivant illustre les métadonnées d'un modèle [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)].
@@ -93,5 +93,5 @@ Spécifie si le **emplacement** zone de texte dans le **nouveau projet** boîte 
 ```
 
 ## <a name="see-also"></a>Voir aussi
-- [Informations de référence sur les schémas de modèles Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
-- [Création de modèles de projets et d’éléments](../ide/creating-project-and-item-templates.md)
+- [Référence de schéma de modèle de studio visuel](../extensibility/visual-studio-template-schema-reference.md)
+- [Création de modèles de projets et d’objets](../ide/creating-project-and-item-templates.md)

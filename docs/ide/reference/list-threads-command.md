@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: e1b36b8f4d9970d94eb83c47b59e85d01f932589
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75595486"
 ---
 # <a name="list-threads-command"></a>Afficher les threads, commande
@@ -33,12 +33,12 @@ Debug.ListThreads [index]
 ## <a name="arguments"></a>Arguments
 `index`
 
-Option facultative. Sélectionne un thread par son index pour en faire le thread actuel.
+facultatif. Sélectionne un thread par son index pour en faire le thread actuel.
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Notes 
 Une fois spécifié, l’argument `index` marque le thread indiqué comme étant le thread actuel. Un astérisque (*) est affiché dans la liste en regard du thread actuel.
 
-## <a name="example"></a>Exemple
+## <a name="example"></a> Exemple
 
 ```
 >Debug.ListThreads
@@ -48,7 +48,7 @@ Une fois spécifié, l’argument `index` marque le thread indiqué comme étant
 
 - [Afficher la pile d’appels, commande](../../ide/reference/list-call-stack-command.md)
 - [Afficher le code machine, commande](../../ide/reference/list-disassembly-command.md)
-- [Visual Studio, commandes](../../ide/reference/visual-studio-commands.md)
-- [Fenêtre Commande](../../ide/reference/command-window.md)
-- [Rechercher/Commande, zone](../../ide/find-command-box.md)
-- [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)
+- [Commandes de studio visuel](../../ide/reference/visual-studio-commands.md)
+- [Commande, fenêtre](../../ide/reference/command-window.md)
+- [Boîte de recherche/commande](../../ide/find-command-box.md)
+- [Alias de commande de studio visuel](../../ide/reference/visual-studio-command-aliases.md)

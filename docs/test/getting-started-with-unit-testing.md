@@ -1,6 +1,6 @@
 ---
 title: Bien démarrer avec les tests unitaires
-ms.date: 02/13/2020
+ms.date: 04/07/2020
 ms.topic: conceptual
 helpviewer_keywords:
 - unit testing, create unit test plans
@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7ffbc5c6730fb4ca4d2f39732ad2a595de15bbf2
-ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
+ms.openlocfilehash: c167e98f9419842876aed713e008b8746064669a
+ms.sourcegitcommit: dab57cebd484228e6f0cf7ab1b9685c575410c06
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "77279333"
+ms.lasthandoff: 04/25/2020
+ms.locfileid: "82153034"
 ---
 # <a name="get-started-with-unit-testing"></a>Bien démarrer avec les tests unitaires
 
@@ -22,7 +22,7 @@ Utilisez Visual Studio pour définir et exécuter des tests unitaires afin de ma
 
 ## <a name="create-unit-tests"></a>Créer des tests unitaires
 
-Cette section décrit dans les grandes lignes comment créer un projet de test unitaire.
+Cette section décrit comment créer un projet de test unitaire.
 
 1. Ouvrez le projet que vous souhaitez tester dans Visual Studio.
 
@@ -40,7 +40,7 @@ Cette section décrit dans les grandes lignes comment créer un projet de test u
       }
    ```
 
-1. Dans l’**Explorateur de solutions**, sélectionnez le nœud de la solution. Ensuite, dans la barre de menus supérieure, sélectionnez **Fichier** > **Ajouter** > **Nouveau projet**.
+1. Dans l’**Explorateur de solutions**, sélectionnez le nœud de la solution. Puis, dans la barre de menus supérieure, sélectionnez **fichier** > **Ajouter** > **un nouveau projet**.
 
 1. Dans la boîte de dialogue Nouveau projet, recherchez un modèle de projet de test unitaire pour le framework de test que vous voulez utiliser, puis sélectionnez-le.
 
@@ -72,7 +72,7 @@ Cette section décrit dans les grandes lignes comment créer un projet de test u
 
 1. Ajoutez du code à la méthode de test unitaire.
 
-   Par exemple, pour un projet de test MSTest ou NUnit, vous pouvez utiliser le code suivant.
+   Par exemple, pour un projet MSTest, vous pouvez utiliser le code suivant.
 
    ```csharp
    using Microsoft.VisualStudio.TestTools.UnitTesting;
@@ -101,18 +101,51 @@ Cette section décrit dans les grandes lignes comment créer un projet de test u
    }
    ```
 
+   Ou, pour un projet NUnit, vous pouvez utiliser le code suivant.
+
+   ```csharp
+   using NUnit.Framework;
+   using System.IO;
+   using System;
+
+   namespace HelloWorldTests
+   {
+      public class Tests
+      {
+         private const string Expected = "Hello World!";
+
+         [SetUp]
+         public void Setup()
+         {
+         }
+         [Test]
+         public void TestMethod1()
+         {
+            using (var sw = new StringWriter())
+            {
+               Console.SetOut(sw);
+               HelloWorldCore.Program.Main();
+
+               var result = sw.ToString().Trim();
+               Assert.AreEqual(Expected, result);
+            }
+         }
+      }
+   }
+   ```
+
 > [!TIP]
-> Pour obtenir une description plus détaillée de la création de tests unitaires, consultez [Créer et exécuter des tests unitaires pour le code managé](walkthrough-creating-and-running-unit-tests-for-managed-code.md).
+> Pour plus d’informations sur la création de tests unitaires, consultez [créer et exécuter des tests unitaires pour le code managé](walkthrough-creating-and-running-unit-tests-for-managed-code.md).
 
 ## <a name="run-unit-tests"></a>Exécuter des tests unitaires
 
-1. Ouvrez [l’Explorateur de tests](../test/run-unit-tests-with-test-explorer.md).
+1. Ouvrez l' [Explorateur de tests](../test/run-unit-tests-with-test-explorer.md).
 
    ::: moniker range=">=vs-2019"
-   Pour ouvrir l’Explorateur de tests, choisissez **tester** > l' **Explorateur de tests** dans la barre de menus supérieure.
+   Pour ouvrir l’Explorateur de tests, sélectionnez **tester** > l' **Explorateur de tests** dans la barre de menus supérieure.
    ::: moniker-end
    ::: moniker range="vs-2017"
-   Pour ouvrir l’Explorateur de tests, choisissez **test** > **Windows** > l' **Explorateur de tests** dans la barre de menus supérieure.
+   Pour ouvrir l’Explorateur de tests, choisissez **tester** > l' **Explorateur de tests** **Windows** > dans la barre de menus supérieure.
    ::: moniker-end
 
 1. Exécutez vos tests unitaires en cliquant sur **Tout exécuter**.
@@ -168,7 +201,7 @@ Quand vous exécutez IntelliTest, vous pouvez identifier les tests qui échouent
 
 ## <a name="analyze-code-coverage"></a>Analyser la couverture du code
 
-Pour déterminer la proportion de code de votre projet qui sera réellement testée par des tests codés, par exemple des tests unitaires, recourez à la fonctionnalité de couverture du code de Visual Studio. Pour assurer une protection efficace contre les bogues, les tests doivent porter sur une part importante du code. Pour savoir comment procéder, voir [Utiliser la couverture du code pour déterminer la quantité de code testé](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md).
+Pour déterminer la proportion de code de votre projet qui sera réellement testée par des tests codés, par exemple des tests unitaires, recourez à la fonctionnalité de couverture du code de Visual Studio. Pour assurer une protection efficace contre les bogues, les tests doivent porter sur une part importante du code. Pour savoir comment procéder, consultez [utiliser la couverture du code pour déterminer la quantité de code testé](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md).
 
 ## <a name="use-a-third-party-test-framework"></a>Utiliser un framework de tests tiers
 
@@ -212,7 +245,7 @@ Pour créer des tests unitaires qui utilisent [NUnit](https://nunit.org/) :
 
 ## <a name="see-also"></a>Voir aussi
 
-* [Procédure pas à pas : créer et exécuter des tests unitaires pour le code managé](walkthrough-creating-and-running-unit-tests-for-managed-code.md)
+* [Procédure pas à pas : Créer et exécuter des tests unitaires pour le code managé](walkthrough-creating-and-running-unit-tests-for-managed-code.md)
 * [Créer des tests unitaires, commande](create-unit-tests-menu.md)
 * [Générer des tests avec IntelliTest](generate-unit-tests-for-your-code-with-intellitest.md)
 * [Exécuter des tests avec l’Explorateur de tests](run-unit-tests-with-test-explorer.md)

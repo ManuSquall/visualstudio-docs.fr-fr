@@ -1,5 +1,5 @@
 ---
-title: IEnumDebugFields | Microsoft Docs
+title: IEnumDebugFields - France Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IEnumDebugFields interface
 ms.assetid: 403c2a51-3ba5-431f-a1dd-2f3b2046c00c
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 50d80242ca516c5fa7f3ad297250e25c782664d0
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: d577ff2f5848f2cb348bcaccf57875507018634b
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66350379"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80716780"
 ---
 # <a name="ienumdebugfields"></a>IEnumDebugFields
-Cette interface représente une collection d’objets qui implémentent le [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) interface.
+Cette interface représente une collection d’objets implémentant l’interface [IDebugField.](../../../extensibility/debugger/reference/idebugfield.md)
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -28,10 +28,10 @@ Cette interface représente une collection d’objets qui implémentent le [IDeb
 IEnumDebugFields : IUnknown
 ```
 
-## <a name="notes-for-implementers"></a>Notes de publication pour les implémenteurs
- Cette interface est implémentée par le fournisseur de symboles pour fournir des jeux d’objets qui implémentent le [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) interface. Notez qu’il ne s’agit pas d’une énumération COM standard en raison de la présence de la [GetCount](../../../extensibility/debugger/reference/ienumdebugfields-getcount.md) (méthode).
+## <a name="notes-for-implementers"></a>Notes pour les implémenteurs
+ Cette interface est implémentée par le fournisseur de symboles pour fournir des ensembles d’objets qui implémentent l’interface [IDebugField.](../../../extensibility/debugger/reference/idebugfield.md) Notez qu’il ne s’agit pas d’un recensement COM standard en raison de la présence de la méthode [GetCount.](../../../extensibility/debugger/reference/ienumdebugfields-getcount.md)
 
-## <a name="notes-for-callers"></a>Notes de publication pour les appelants
+## <a name="notes-for-callers"></a>Notes pour les appelants
  Cette interface est retournée par [GetMethodFieldsByName](../../../extensibility/debugger/reference/idebugsymbolprovider-getmethodfieldsbyname.md) et [GetNamespacesUsedAtAddress](../../../extensibility/debugger/reference/idebugsymbolprovider-getnamespacesusedataddress.md).
 
 ## <a name="methods-in-vtable-order"></a>Méthodes dans l’ordre Vtable
@@ -39,23 +39,23 @@ IEnumDebugFields : IUnknown
 
 |Méthode|Description|
 |------------|-----------------|
-|[Next](../../../extensibility/debugger/reference/ienumdebugfields-next.md)|Récupère l’ensemble suivant de [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) objets à partir de l’énumération.|
-|[Skip](../../../extensibility/debugger/reference/ienumdebugfields-skip.md)|Ignore un nombre spécifié d’entrées.|
-|[Reset](../../../extensibility/debugger/reference/ienumdebugfields-reset.md)|Réinitialise l’énumération à la première entrée.|
+|[Suivant](../../../extensibility/debugger/reference/ienumdebugfields-next.md)|Récupère le prochain ensemble d’objets [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) de l’énumération.|
+|[Ignorer](../../../extensibility/debugger/reference/ienumdebugfields-skip.md)|Passe un nombre précis d’entrées.|
+|[Réinitialiser](../../../extensibility/debugger/reference/ienumdebugfields-reset.md)|Réinitialise l’énumération à la première entrée.|
 |[Clone](../../../extensibility/debugger/reference/ienumdebugfields-clone.md)|Récupère une copie de l’énumération actuelle.|
-|[GetCount](../../../extensibility/debugger/reference/ienumdebugfields-getcount.md)|Récupère le nombre d’entrées dans l’énumération.|
+|[GetCount](../../../extensibility/debugger/reference/ienumdebugfields-getcount.md)|Récupère le nombre d’entrées dans le recensement.|
 
 ## <a name="remarks"></a>Notes
 
-## <a name="requirements"></a>Configuration requise
- En-tête : sh.h
+## <a name="requirements"></a>Spécifications
+ En-tête: sh.h
 
- Espace de noms : Microsoft.VisualStudio.Debugger.Interop
+ Namespace: Microsoft.VisualStudio.Debugger.Interop
 
- Assembly : Microsoft.VisualStudio.Debugger.Interop.dll
+ Assemblage: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>Voir aussi
-- [Symbol Provider Interfaces](../../../extensibility/debugger/reference/symbol-provider-interfaces.md)
+- [Interfaces des fournisseurs de symboles](../../../extensibility/debugger/reference/symbol-provider-interfaces.md)
 - [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)
 - [GetMethodFieldsByName](../../../extensibility/debugger/reference/idebugsymbolprovider-getmethodfieldsbyname.md)
 - [GetNamespacesUsedAtAddress](../../../extensibility/debugger/reference/idebugsymbolprovider-getnamespacesusedataddress.md)

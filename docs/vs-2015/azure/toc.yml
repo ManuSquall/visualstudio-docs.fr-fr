@@ -1,7 +1,7 @@
 - name: Développement Azure avec Visual Studio
   href: index.yml
   expanded: true
-- name: Publier sur Azure
+- name: Publication dans Azure
   expanded: true
   items:
     - name: Publier un service cloud
@@ -54,9 +54,9 @@
           href: vs-azure-tools-debug-cloud-services-virtual-machines.md
         - name: Découvrez différentes méthodes de débogage d’un service cloud Azure.
           href: vs-azure-tools-debugging-cloud-services-overview.md
-        - name: Configurer les diagnostics pour Azure Cloud Services et les machines virtuelles Azure
+        - name: Configurer les diagnostics pour les services cloud et les machines virtuelles Azure
           href: vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines.md
-        - name: Utiliser l’émulateur express pour exécuter et déboguer un service cloud Azure sur une machine locale
+        - name: Utilisation de l’émulateur express pour exécuter et déboguer un service cloud Azure sur une machine locale
           href: vs-azure-tools-emulator-express-debug-run.md
         - name: Déboguer un service cloud Azure publié avec IntelliTrace
           href: vs-azure-tools-intellitrace-debug-published-cloud-services.md
@@ -80,11 +80,11 @@
           href: vs-azure-tools-publish-webapplicationwebsite-windows-powershell-script.md
         - name: Gérer des configurations et des profils de service
           href: vs-azure-tools-service-configurations-and-profiles-how-to-manage.md
-        - name: Configurer des informations d’identification d’authentification nommées
+        - name: Configurer les informations d’authentification nommées
           href: vs-azure-tools-setting-up-named-authentication-credentials.md
     - name: Utiliser le stockage Azure
       items:
-        - name: Bien démarrer avec l’Explorateur Stockage
+        - name: Prise en main de l’Explorateur Stockage
           href: /azure/vs-azure-tools-storage-manage-with-storage-explorer?toc=/visualstudio/azure/toc.json&bc=/visualstudio/azure/breadcrumb/toc.json
         - name: Configurer et utiliser l’Émulateur de stockage
           href: /azure/vs-azure-tools-storage-emulator-using?toc=/visualstudio/azure/toc.json&bc=/visualstudio/azure/breadcrumb/toc.json
@@ -100,7 +100,7 @@
           href: /azure/vs-azure-tools-storage-explorer-accessibility?toc=/visualstudio/azure/toc.json&bc=/visualstudio/azure/breadcrumb/toc.json
 - name: Cloud Explorer
   items:
-    - name: Parcourir et gérer des ressources de stockage avec l’Explorateur de serveurs
+    - name: Consulter et gérer les ressources de stockage à l’aide de l’Explorateur de serveurs
       href: vs-azure-tools-storage-resources-server-explorer-browse-manage.md
     - name: Gérer les ressources associées à ses comptes Azure dans Cloud Explorer
       href: vs-azure-tools-resources-managing-with-cloud-explorer.md

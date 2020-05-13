@@ -3,17 +3,18 @@ title: Contacter l’administrateur de votre abonnement à partir du portail des
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 08/21/2019
+ms.assetid: 64455e79-229a-42f0-9d65-c2cca8ab8513
+ms.date: 03/07/2020
 ms.topic: conceptual
 description: Découvrez comment contacter l’administrateur de votre abonnement pour obtenir de l’aide concernant sur des questions ou des problèmes.
-ms.openlocfilehash: eb0720718f8ed5ccd0033456f887f638c0f3e395
-ms.sourcegitcommit: b5cb0eb09369677514ee1f44d5d7050d34c7fbc1
+ms.openlocfilehash: b203feee61bf44af99ea802992e1fdc3c416c037
+ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/26/2019
-ms.locfileid: "74491580"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "80232634"
 ---
-# <a name="get-assistance-from-your-subscriptions-administrator"></a>Obtenir de l’aide auprès de votre administrateur d’abonnements
+# <a name="get-assistance-from-your-subscriptions-administrator"></a>Obtenez l’aide de votre administrateur d’abonnements
 Si votre abonnement Visual Studio vous est fourni par votre entreprise ou votre établissement scolaire, il est probable qu’il vous a été attribué par un administrateur d’abonnements.  Les administrateurs peuvent attribuer ou supprimer des abonnements, changer les adresses e-mail de connexion, déterminer si vous avez la possibilité de télécharger des logiciels et remplir d’autres fonctions liées à votre abonnement.
 
 Compte tenu de la taille et de la complexité de nombreuses organisations, vous pouvez ne pas savoir qui est votre administrateur : il peut donc être difficile de savoir où obtenir de l’aide.  Nous avons ajouté une nouvelle fonctionnalité au portail des abonnés pour vous aider à contacter votre administrateur.   
@@ -29,12 +30,18 @@ Compte tenu de la taille et de la complexité de nombreuses organisations, vous 
 6. Enfin, cliquez sur **Envoyer**.
 
 > [!NOTE]
-> **Super administrateurs :**  Pour définir l’adresse de messagerie à laquelle les demandes « contacter mon administrateur » sont envoyées, spécifiez cette adresse dans les préférences de l' [accord](admin-prefs.md#contact-email-address).
+> **Super admins:**  Pour définir l’adresse e-mail à laquelle les demandes de « Contacter mon administrateur » sont envoyées, spécifiez cette adresse dans les [préférences de l’accord](admin-prefs.md#contact-email-address).
 
 ## <a name="resources"></a>Ressources
-- [Prise en charge des abonnements et de l’administration de Visual Studio](https://visualstudio.microsoft.com/support/support-overview-vs)
+- [Prise en charge des abonnements et de l’administration Visual Studio](https://visualstudio.microsoft.com/support/support-overview-vs)
 
-## <a name="next-steps"></a>Étapes suivantes :
+## <a name="see-also"></a>Voir aussi
+- [Documentation Visual Studio](https://docs.microsoft.com/visualstudio/)
+- [Documentation Azure DevOps](https://docs.microsoft.com/azure/devops/)
+- [Documentation Azure](https://docs.microsoft.com/azure/)
+- [Documentation Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+
+## <a name="next-steps"></a>Étapes suivantes
 Si vous ne l’avez pas déjà fait, nous vous recommandons d’activer ces avantages pour tirer le meilleur parti de votre abonnement Visual Studio :
 - [IDE Visual Studio](vs-ide-benefit.md)
 - [Azure](vs-azure.md)

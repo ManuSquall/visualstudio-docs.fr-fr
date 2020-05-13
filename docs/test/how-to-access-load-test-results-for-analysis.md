@@ -15,17 +15,17 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: b6a5da728e24d5d7fdbeccd1e28aa2742e04bf48
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75596461"
 ---
 # <a name="how-to-access-load-test-results-for-analysis"></a>Guide pratique : Accéder aux résultats des tests de charge à des fins d’analyse
 
 Lorsque vous exécutez un test de charge avec l’éditeur de test de charge, les résultats s’affichent automatiquement et le test de charge en cours d’exécution apparaît dans **l’Analyseur de test de charge**. Lorsque vous exécutez un test de charge à partir de la ligne de commande, vous devez accéder manuellement aux résultats du test de charge.
 
-Le résultat du test de charge pour le test de charge terminé contient des exemples de compteur de performance et des informations sur les erreurs qui ont été collectées à intervalles réguliers sur les ordinateurs en cours de test. Un grand nombre d'exemples de compteurs de performance peuvent être collectés au cours d'une série de tests de charge. La quantité de données de performance collectées dépend de la durée de la série de tests, de l'intervalle d'échantillonnage, du nombre d'ordinateurs sous test et du nombre de compteurs collectés, des collecteurs de données configuré et des niveaux de journalisation. Pour un test de charge volumineux, le volume de données de performances collectées peut facilement atteindre plusieurs gigaoctets. Pour plus d’informations, consultez [Contrôleurs de test et agents de test](configure-test-agents-and-controllers-for-load-tests.md).
+Le résultat du test de charge pour le test de charge terminé contient des exemples de compteur de performance et des informations sur les erreurs qui ont été collectées à intervalles réguliers sur les ordinateurs en cours de test. Un grand nombre d'exemples de compteurs de performance peuvent être collectés au cours d'une série de tests de charge. La quantité de données de performance collectées dépend de la durée de la série de tests, de l'intervalle d'échantillonnage, du nombre d'ordinateurs sous test et du nombre de compteurs collectés, des collecteurs de données configuré et des niveaux de journalisation. Pour un test de charge volumineux, le volume de données de performances collectées peut facilement atteindre plusieurs gigaoctets. Pour plus d’informations, consultez [les contrôleurs de test et les agents d’essai](configure-test-agents-and-controllers-for-load-tests.md).
 
 [!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
@@ -37,9 +37,9 @@ Le résultat du test de charge pour le test de charge terminé contient des exem
 
      La boîte de dialogue **Ouvrir et gérer des résultats** s’affiche.
 
-3. Dans **Entrer un nom de contrôleur pour rechercher les résultats des tests de charge**, sélectionnez un contrôleur. Sélectionnez **\<local> - Aucun contrôleur** pour accéder aux résultats stockés localement.
+3. Dans **Entrer un nom de contrôleur pour rechercher les résultats des tests de charge**, sélectionnez un contrôleur. Sélectionnez> ** \<locales - Aucun contrôleur pour** accéder aux résultats stockés localement.
 
-4. Dans **Afficher les résultats pour le test de charge suivant**, sélectionnez le test de charge dont vous souhaitez consulter les résultats. Sélectionnez **\<Afficher les résultats de tous les tests>** pour consulter les résultats de tous les tests.
+4. Dans **Afficher les résultats pour le test de charge suivant**, sélectionnez le test de charge dont vous souhaitez consulter les résultats. Sélectionnez ** \<Afficher les résultats pour tous les tests>** pour voir tous les résultats pour tous les tests.
 
      Si des résultats des tests de charge sont disponibles, ceux-ci apparaissent dans la liste **Résultats du test de charge**. Les colonnes sont **Heure**, **Durée**, **Utilisateur**, **Résultat**, **Test** et **Description**. **Test** contient le nom du test et **Description** contient la description facultative qui est ajoutée avant l’exécution du test.
 
@@ -48,7 +48,7 @@ Le résultat du test de charge pour le test de charge terminé contient des exem
 
 5. Dans la liste **Résultats du test de charge**, sélectionnez les résultats à analyser, puis choisissez **Ouvrir**.
 
-6. **L’Analyseur de test de charge** s’affiche. Le résultat du test de charge sélectionné s'affiche en mode Résumé. Pour plus d’informations, voir [Vue d’ensemble du résumé des résultats des tests de charge](../test/load-test-results-summary-overview.md).
+6. **L’Analyseur de test de charge** s’affiche. Le résultat du test de charge sélectionné s'affiche en mode Résumé. Pour plus d’informations, voir [Aperçu sommaire des résultats des tests de charge](../test/load-test-results-summary-overview.md).
 
      Vous pouvez gérer d’autres aspects des résultats du test de charge dans la boîte de dialogue **Ouvrir et gérer des résultats**, notamment les importer, les exporter et les supprimer. Pour plus d’informations, voir [Gérer les résultats des tests de charge dans le référentiel des résultats des tests de charge](../test/manage-load-test-results-in-the-load-test-results-repository.md).
 

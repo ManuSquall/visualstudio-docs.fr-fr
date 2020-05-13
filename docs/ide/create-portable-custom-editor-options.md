@@ -7,31 +7,31 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: a3aee4945b4a3b41a7f6ec532268c2c19f549d0a
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 5fdb0cc217062190e02e70b6361c8a3a2aa2f935
+ms.sourcegitcommit: ade07bd1cf69b8b494d171ae648cfdd54f7800d3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75589784"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "81648523"
 ---
 # <a name="create-portable-custom-editor-settings-with-editorconfig"></a>Créer des paramètres d’éditeur personnalisés et portables avec EditorConfig
 
-Vous pouvez ajouter un fichier [EditorConfig](https://editorconfig.org/) à votre projet ou code base pour appliquer des styles de codage cohérents pour tous les utilisateurs qui travaillent dans le code base. Les paramètres EditorConfig sont prioritaires par rapport aux paramètres globaux de l’éditeur de texte Visual Studio. Vous pouvez donc personnaliser chaque base de code pour utiliser des paramètres de l’éditeur de texte qui sont propres au projet. Vous pouvez toujours définir vos propres préférences d’éditeur personnelles dans la boîte de dialogue **Options** de Visual Studio. Ces paramètres s’appliquent à chaque fois que vous travaillez dans un codebase sans fichier *.editorconfig*, ou quand le fichier *.editorconfig* ne remplace pas un paramètre particulier. Le style de mise en retrait (tabulations ou espaces) constitue un exemple de préférence de ce type.
+Vous pouvez ajouter un fichier [EditorConfig](https://editorconfig.org/) à votre projet ou base de code pour appliquer des styles de codage cohérents pour tous ceux qui fonctionnent dans la base de code. Les paramètres EditorConfig sont prioritaires par rapport aux paramètres globaux de l’éditeur de texte Visual Studio. Vous pouvez donc personnaliser chaque base de code pour utiliser des paramètres de l’éditeur de texte qui sont propres au projet. Vous pouvez toujours définir vos propres préférences d’éditeur personnelles dans la boîte de dialogue **Options** de Visual Studio. Ces paramètres s’appliquent à chaque fois que vous travaillez dans un codebase sans fichier *.editorconfig*, ou quand le fichier *.editorconfig* ne remplace pas un paramètre particulier. Le style de mise en retrait (tabulations ou espaces) constitue un exemple de préférence de ce type.
 
 Les paramètres EditorConfig sont pris en charge par de nombreux éditeurs de code et IDE, notamment Visual Studio. C’est un composant portable qui accompagne votre code et peut appliquer des styles de codage même en dehors de Visual Studio.
 
 ::: moniker range=">=vs-2019"
 
-Quand vous ajoutez un fichier EditorConfig à votre projet dans Visual Studio, les nouvelles lignes de code sont mises en forme en fonction des paramètres de EditorConfig. La mise en forme du code existant n’est pas modifiée, sauf si vous exécutez l’une des commandes suivantes :
+Lorsque vous ajoutez un fichier EditorConfig à votre projet dans Visual Studio, de nouvelles lignes de code sont formatées en fonction des paramètres EditorConfig. Le formatage du code existant n’est pas modifié à moins que vous exécutez l’une des commandes suivantes :
 
- - [Nettoyage du code](../ide/code-styles-and-code-cleanup.md) (**CTRL**+**K**, **CTRL**+**E**), qui applique les paramètres d’espace blanc, tels que le style de retrait, et les paramètres de style de code sélectionnés, comme le tri des directives de `using`.
- - **Modifiez** > document de **format** > **avancé** (ou **appuyez sur CTRL**+**K**, **CTRL**+**D** dans le profil par défaut), qui n’applique que les paramètres d’espace blanc, tels que le style de retrait.
+ - [Nettoyage de code](../ide/code-styles-and-code-cleanup.md) (**Ctrl**+**K**, **Ctrl**+**E**), qui applique tous les paramètres d’espace `using` blanc, tels que le style indent, et les paramètres de style de code sélectionnés, tels que la façon de trier les directives.
+ - **Modifier** > **Advanced** > **Format Document** (ou **Ctrl**+**K**, **Ctrl**+**D** dans le profil par défaut), qui applique uniquement les paramètres de l’espace blanc, tels que le style indent.
 
  ::: moniker-end
 
 ::: moniker range="=vs-2017"
 
-Quand vous ajoutez un fichier EditorConfig à votre projet dans Visual Studio, les nouvelles lignes de code sont mises en forme en fonction des paramètres de EditorConfig. La mise en forme du code existant n’est pas modifiée, sauf si vous mettez en forme le document (**modifier** > **Advanced** > **formater le document** ou **CTRL**+**K**, **CTRL**+**D** dans le profil par défaut). La mise en forme du document affecte uniquement les paramètres d’espace blanc, tels que le style de retrait, sauf si vous avez configuré le document de format pour [effectuer un nettoyage de code supplémentaire](../ide/code-styles-and-code-cleanup.md#apply-code-styles).
+Lorsque vous ajoutez un fichier EditorConfig à votre projet dans Visual Studio, de nouvelles lignes de code sont formatées en fonction des paramètres EditorConfig. Le formatage du code existant n’est pas modifié sauf si vous exécutez à moins que vous formatiez le document **(Modifier** > **le document de format** **avancé** > ou **Ctrl**+**K**, **Ctrl**+**D** dans le profil par défaut). Le formatage du document n’affecte que les paramètres de l’espace blanc, tels que le style indent, sauf si vous avez configuré Format Document pour [effectuer un nettoyage supplémentaire du code](../ide/code-styles-and-code-cleanup.md#apply-code-styles).
 
  ::: moniker-end
 
@@ -66,13 +66,13 @@ L’éditeur de Visual Studio prend en charge l’ensemble principal des [propri
 - charset
 - trim\_trailing_whitespace
 - insert\_final_newline
-- racine
+- root
 
 Les paramètres de l’éditeur EditorConfig sont pris en charge dans tous les langages pris en charge par Visual Studio, à l’exception de XML. Par ailleurs, EditorConfig prend en charge les conventions de [style de code](../ide/editorconfig-code-style-settings-reference.md), notamment celles de [langage](../ide/editorconfig-language-conventions.md), [mise en forme](../ide/editorconfig-formatting-conventions.md) et [affectation de noms](../ide/editorconfig-naming-conventions.md) pour C# et Visual Basic.
 
 ## <a name="add-and-remove-editorconfig-files"></a>Ajout et suppression de fichiers EditorConfig
 
-Lorsque vous ajoutez un fichier EditorConfig à votre projet ou base de code, les nouvelles lignes de code que vous écrivez sont mises en forme en fonction du fichier EditorConfig. Toutefois, l’ajout d’un fichier EditorConfig ne convertit pas les styles existants en nouveaux styles tant que vous ne mettez pas en forme le document ou exécuté le [nettoyage du code](../ide/code-styles-and-code-cleanup.md). Par exemple, si votre fichier contient des mises en retrait avec des tabulations, et que vous ajoutiez un fichier EditorConfig qui crée des mises en retrait avec des espaces, les tabulations de mise en retrait ne sont pas automatiquement converties en espaces. Lorsque vous mettez en forme le document (**modifier** > **document de format** **avancé** > ou **CTRL**+**K**, **CTRL**+**D**), les paramètres d’espace blanc dans le fichier EditorConfig sont appliqués aux lignes de code existantes.
+Lorsque vous ajoutez un fichier EditorConfig à votre projet ou base de code, les nouvelles lignes de code que vous écrivez sont mises en forme en fonction du fichier EditorConfig. Toutefois, l’ajout d’un fichier EditorConfig ne convertit pas les styles existants en nouveaux jusqu’à ce que vous formatiez le document ou exécutez [Code Cleanup](../ide/code-styles-and-code-cleanup.md). Par exemple, si votre fichier contient des mises en retrait avec des tabulations, et que vous ajoutiez un fichier EditorConfig qui crée des mises en retrait avec des espaces, les tabulations de mise en retrait ne sont pas automatiquement converties en espaces. Lorsque vous formatez le document **(Modifier** > **Advanced** > **Format Document** ou **Ctrl**+**K**, **Ctrl**+**D**), les paramètres d’espace blanc dans le fichier EditorConfig sont appliqués aux lignes de code existantes.
 
 Si vous supprimez un fichier EditorConfig de votre projet ou base de code et souhaitez que les nouvelles lignes de code soient mises en forme en fonction des paramètres de l’éditeur global, vous devez fermer et rouvrir les fichiers de code ouverts.
 
@@ -80,7 +80,7 @@ Si vous supprimez un fichier EditorConfig de votre projet ou base de code et sou
 
 1. Ouvrez un projet ou une solution dans Visual Studio. Sélectionnez le nœud du projet ou de la solution, selon que vos paramètres *.editorconfig* doivent s’appliquer à tous les projets de la solution ou à un seul. Vous pouvez également sélectionner dans votre projet ou votre solution un dossier auquel ajouter le fichier *.editorconfig*.
 
-1. Dans la barre de menus, choisissez **Projet** > **Ajouter un nouvel élément** ou appuyez sur **Ctrl**+**Maj**+**A**.
+1. De la barre de menu, choisissez **Project** > **Ajouter un nouvel article,** ou appuyez sur **Ctrl**+**Shift**+**A**.
 
    La boîte de dialogue **Ajouter un nouvel élément** s’ouvre.
 
@@ -104,7 +104,7 @@ Il existe d’autres façons d’ajouter un fichier EditorConfig au projet :
 
 - La [fonctionnalité d’inférence de code](/visualstudio/intellicode/code-style-inference) d’IntelliCode pour Visual Studio déduit vos styles de code à partir du code existant. Elle crée ensuite un fichier EditorConfig non vide avec vos préférences de style de code déjà définies.
 
-- À compter de Visual Studio 2019, vous pouvez [générer un fichier EditorConfig selon vos paramètres de style de code](/visualstudio/ide/code-styles-and-code-cleanup#code-styles-in-editorconfig-files) dans **Outils** > **Options**.
+- À compter de Visual Studio 2019, vous pouvez [générer un fichier EditorConfig selon vos paramètres de style de code](code-styles-and-code-cleanup.md#code-styles-in-editorconfig-files) dans **Outils** > **Options**.
 
 ## <a name="file-hierarchy-and-precedence"></a>Priorité et hiérarchie des fichiers
 
@@ -156,7 +156,7 @@ root = true
 indent_style = tab
 ```
 
-Maintenant, quand vous appuyez sur la touche **Tab**, vous obtenez des caractères de tabulation au lieu des espaces.
+Maintenant, lorsque vous appuyez sur la touche **Tab,** vous obtenez des caractères onglet au lieu d’espaces.
 
 ![Un appui sur la touche Tab ajoute un caractère de tabulation](../ide/media/vside_editorconfig_tab.png)
 
@@ -166,7 +166,7 @@ Si un fichier EditorConfig se trouve n’importe où dans la structure de réper
 
    **« Les préférences utilisateur de ce type de fichier sont remplacées par les conventions de codage de ce projet. »**
 
-Cela signifie que si des paramètres de l’éditeur dans **Outils** > **Options** > **Éditeur de texte** (tels que la taille et le style de mise en retrait, la taille des tabulations ou les conventions de codage) sont définis dans un fichier EditorConfig au niveau du projet ou au-dessus dans la structure des répertoires, les conventions définies dans le fichier EditorConfig remplacent les paramètres définis dans **Options**. Vous pouvez contrôler ce comportement en activant ou en désactivant l’option **Suivre les conventions de codage du projet** dans **Outils** > **Options** > **Éditeur de texte**. Si vous décochez cette option, vous désactivez la prise en charge d’EditorConfig pour Visual Studio.
+Cela signifie que si les paramètres de l’éditeur dans **Tools** > **Options** > **Text Editor** (tels que la taille et le style de l’endidence, la taille de l’onglet ou les conventions de codage) sont spécifiés dans un fichier EditorConfig à ou au-dessus du projet dans la structure de l’annuaire, les conventions dans le fichier EditorConfig remplacent les paramètres dans **Options**. Vous pouvez contrôler ce comportement en activant ou en désactivant l’option **Suivre les conventions de codage du projet** dans **Outils** > **Options** > **Éditeur de texte**. Si vous décochez cette option, vous désactivez la prise en charge d’EditorConfig pour Visual Studio.
 
 ![Outils Options, Suivre les conventions de codage du projet](media/coding_conventions_option.png)
 

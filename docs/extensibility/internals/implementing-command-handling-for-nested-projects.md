@@ -1,43 +1,43 @@
 ---
-title: Implémentation de la gestion des commandes pour les projets imbriqués | Microsoft Docs
+title: Mise en œuvre de la gestion des commandes pour les projets imbriqués (fr) Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - nested projects, implementing command handling
 ms.assetid: 48a9d66e-d51c-4376-a95a-15796643a9f2
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 628fde153441104e4bb504253d96235270b4b8fb
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 2092fc8033d5a5cc53b12bd63a945bd9865ca30e
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72727081"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80707606"
 ---
 # <a name="implementing-command-handling-for-nested-projects"></a>Implémentation de la gestion des commandes pour les projets imbriqués
-L’IDE peut passer des commandes qui sont transmises via le <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy> et les interfaces <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> à des projets imbriqués, ou les projets parents peuvent filtrer ou substituer les commandes.
+L’IDE peut passer des commandes <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy> qui <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> passent à travers les et les interfaces de projets imbriqués, ou les projets parentaux peuvent filtrer ou remplacer les commandes.
 
 > [!NOTE]
-> Seules les commandes gérées normalement par le projet parent peuvent être filtrées. Les commandes telles que **générer** et **déployer** qui sont gérées par l’IDE ne peuvent pas être filtrées.
+> Seules les commandes habituellement gérées par le projet parent peuvent être filtrées. Les commandes telles que **Construire** et **déployer** qui sont traitées par l’IDE ne peuvent pas être filtrées.
 
- Les étapes suivantes décrivent le processus d’implémentation de la gestion des commandes.
+ Les étapes suivantes décrivent le processus de mise en œuvre du traitement des commandes.
 
 ## <a name="procedures"></a>Procédures
 
-#### <a name="to-implement-command-handling"></a>Pour implémenter la gestion des commandes
+#### <a name="to-implement-command-handling"></a>Mettre en œuvre la manutention des commandes
 
-1. Lorsque l’utilisateur sélectionne un projet imbriqué ou un nœud dans un projet imbriqué :
+1. Lorsque l’utilisateur choisit un projet imbriqué ou un nœud dans un projet imbriqué :
 
-   1. L’IDE appelle la méthode <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A>.
+   1. L’IDE <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> appelle la méthode.
 
       — ou —
 
-   2. Si la commande provient d’une fenêtre de hiérarchie, telle qu’une commande de menu contextuel dans Explorateur de solutions, l’IDE appelle la méthode <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy.QueryStatusCommand%2A> sur le parent du projet.
+   2. Si la commande provient d’une fenêtre de hiérarchie, comme une commande <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy.QueryStatusCommand%2A> de menu raccourci dans Solution Explorer, l’IDE appelle la méthode sur le parent du projet.
 
-2. Le projet parent peut examiner les paramètres à passer à `QueryStatus`, tels que `pguidCmdGroup` et `prgCmds`, pour déterminer si le projet parent doit filtrer les commandes. Si le projet parent est implémenté pour filtrer les commandes, il doit définir :
+2. Le projet parent peut examiner les `QueryStatus`paramètres `pguidCmdGroup` à `prgCmds`transmettre, tels que, pour déterminer si le projet parent doit filtrer les commandes. Si le projet parent est mis en œuvre pour filtrer les commandes, il doit définir :
 
    ```
    prgCmds[0].cmdf = OLECMDF_SUPPORTED;
@@ -45,11 +45,11 @@ L’IDE peut passer des commandes qui sont transmises via le <xref:Microsoft.Vis
    prgCmds[0].cmdf &= ~MSOCMDF_ENABLED;
    ```
 
-    Le projet parent doit alors retourner `S_OK`.
+    Ensuite, le projet `S_OK`parent devrait revenir .
 
-    Si le projet parent ne filtre pas la commande, il doit simplement retourner `S_OK`. Dans ce cas, l’IDE achemine automatiquement la commande vers le projet enfant.
+    Si le projet parent ne filtre pas `S_OK`la commande, il devrait simplement revenir . Dans ce cas, l’IDE achemine automatiquement la commande vers le projet enfant.
 
-    Le projet parent n’a pas besoin d’acheminer la commande vers le projet enfant. L’IDE effectue cette tâche..
+    Le projet parent n’a pas à acheminer la commande vers le projet enfant. L’IDE effectue cette tâche.
 
 ## <a name="see-also"></a>Voir aussi
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy>

@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: f920311301b722c11bea4a9f4eb90e9aa7663d80
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "72747734"
 ---
 # <a name="set-radix-command"></a>Définir la base, commande
@@ -32,9 +32,9 @@ Debug.SetRadix [10 | 16 | hex | dec]
 ## <a name="arguments"></a>Arguments
 `10` ou `16` ou `hex` ou `dec`
 
-Optionnel. Indique un nombre décimal (10 ou dec) ou hexadécimal (16 ou hex). Si l’argument est omis, la valeur actuelle de la base est retournée.
+facultatif. Indique un nombre décimal (10 ou dec) ou hexadécimal (16 ou hex). Si l’argument est omis, la valeur actuelle de la base est retournée.
 
-## <a name="example"></a>Exemple
+## <a name="example"></a> Exemple
 Cet exemple configure l’environnement pour afficher les valeurs entières au format hexadécimal.
 
 ```cmd
@@ -43,7 +43,7 @@ Cet exemple configure l’environnement pour afficher les valeurs entières au f
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Commandes Visual Studio](../../ide/reference/visual-studio-commands.md)
+- [Commandes de studio visuel](../../ide/reference/visual-studio-commands.md)
 - [Commande, fenêtre](../../ide/reference/command-window.md)
-- [Rechercher/Commande, zone](../../ide/find-command-box.md)
-- [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)
+- [Boîte de recherche/commande](../../ide/find-command-box.md)
+- [Alias de commande de studio visuel](../../ide/reference/visual-studio-command-aliases.md)

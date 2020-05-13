@@ -1,28 +1,28 @@
 ---
-title: IEEVisualizerService::GetValueDisplayStringCount | Microsoft Docs
+title: IEEVisualizerService::GetValueDisplayStringCount (fr) Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - IEEVisualizerService::GetValueDisplayStringCount
 - GetValueDisplayStringCount
 ms.assetid: d683a833-fbfb-4042-84df-6905124a268a
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 20e09dad1d87df646d1dc8ef7509842b49a8cdaa
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 5c1a664594e55b8db21562a650c2c750668c2584
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66308921"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80717988"
 ---
 # <a name="ieevisualizerservicegetvaluedisplaystringcount"></a>IEEVisualizerService::GetValueDisplayStringCount
-Récupère le nombre de chaînes de valeur à afficher pour la propriété spécifiée ou du champ.
+Récupère le nombre de chaînes de valeur à afficher pour la propriété ou le champ spécifié.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -44,16 +44,16 @@ int GetValueDisplayStringCount (
 
 ## <a name="parameters"></a>Paramètres
 `displayKind`\
-[in] Valeur à partir de la [DisplayKind](../../../extensibility/debugger/reference/displaykind.md) énumération.
+[dans] Valeur de l’énumération [DisplayKind.](../../../extensibility/debugger/reference/displaykind.md)
 
 `propertyOrField`\
-[in] Un [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) interface qui représente une propriété ou un champ.
+[dans] Une interface [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) qui représente une propriété ou un champ.
 
 `pcelt`\
 [out] Retourne le nombre de chaînes de valeur à afficher.
 
 ## <a name="return-value"></a>Valeur de retour
- En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.
+ En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
 ## <a name="see-also"></a>Voir aussi
 - [IEEVisualizerService](../../../extensibility/debugger/reference/ieevisualizerservice.md)

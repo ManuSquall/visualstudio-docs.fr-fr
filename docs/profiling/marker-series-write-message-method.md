@@ -13,13 +13,13 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: be6194936264d6038c4dc1e26b5d05f539f0dc6a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "62830900"
 ---
-# <a name="markerserieswritemessage-method"></a>marker_series::write_message, méthode
+# <a name="marker_serieswrite_message-method"></a>marker_series::write_message, méthode
 Écrit un message dans le fichier de trace du visualiseur concurrentiel.
 
 ## <a name="syntax"></a>Syntaxe
@@ -57,7 +57,7 @@ void write_message(
 ## <a name="requirements"></a>Spécifications
  **En-tête :** *cvmarkersobj.h*
 
- **Espace de noms :** Concurrency::diagnostic
+ **Espace de noms** : Concurrency::diagnostic
 
 ## <a name="see-also"></a>Voir aussi
 - [marker_series, classe](../profiling/marker-series-class.md)

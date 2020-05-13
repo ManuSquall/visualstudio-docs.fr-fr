@@ -6,27 +6,27 @@ author: heiligerdankgesang
 ms.author: dominicn
 ms.assetid: 48E06A61-7294-4EC8-A09D-1763C32AD910
 ms.openlocfilehash: 2877f50528c5f93d6f764cc0dbde12a5bdf06a49
-ms.sourcegitcommit: bf2e9d4ff38bf5b62b8af3da1e6a183beb899809
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/24/2020
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "77567970"
 ---
 # <a name="default-keyboard-shortcuts-in-visual-studio-for-mac"></a>Raccourcis clavier par défaut dans Visual Studio pour Mac
 
-Pour plus d’informations sur l’accessibilité du clavier, consultez [Comment : utiliser la navigation à l’aide du clavier](~/accessibility-keyboard.md).
+Pour plus d’informations sur l’accessibilité du clavier, voir [Comment : Utilisez keyboard Navigation](~/accessibility-keyboard.md).
 
-Pour accéder à diverses commandes dans Visual Studio pour Mac, vous pouvez utiliser les raccourcis clavier appropriés. Ce document répertorie les raccourcis par défaut pour le schéma de combinaison de touches **Visual Studio pour Mac** . Pour plus d’informations sur la modification du schéma de combinaison de touches, consultez [Personnalisation de l’IDE](~/customizing-the-ide.md#key-bindings). Vous pouvez également personnaliser les raccourcis d’une commande à l’aide de l’élément de menu **Visual Studio pour Mac** > **Préférences** et en choisissant **Environnement** > **Combinaisons de touches** dans la fenêtre **Préférences**.
+Pour accéder à diverses commandes dans Visual Studio pour Mac, vous pouvez utiliser les raccourcis clavier appropriés. Ce document répertorie les raccourcis par défaut pour le système de liaison de clé **Visual Studio for Mac.** Pour plus d’informations sur la modification du schéma de combinaison de touches, consultez [Personnalisation de l’IDE](~/customizing-the-ide.md#key-bindings). Vous pouvez également personnaliser les raccourcis pour une commande à l’aide **de l’élément de** > menu Visual Studio for Mac**Preferences** et en choisissant **des** > **liaisons Environment Key** dans la fenêtre **Préférences.**
 
 > [!TIP]
 > Les raccourcis clavier indiqués dans ce document et les préférences de combinaison de touches dans Visual Studio pour Mac sont présentés à l’aide de symboles fréquemment utilisés dans macOS. En cas de doute sur un symbole, passez en revue la [table de recherche de symboles de touches macOS](#macos-key-symbols-lookup).
 
-## <a name="downloadable-quick-ref-pdfs"></a>PDF de référence rapide téléchargeable
+## <a name="downloadable-quick-ref-pdfs"></a>Pdfs ref rapides téléchargeables
 
-Nous avons compilé les raccourcis clavier les plus utilisés et les plus utiles en un fichier PDF téléchargeable. Nous avons deux versions, une qui affiche des raccourcis pour Visual Studio pour Mac et une version qui montre Visual Studio Short côte à côte pour les utilisateurs qui ont une expérience préalable avec Visual Studio lors de l’utilisation de Windows.
+Nous avons compilé les raccourcis clavier les plus utilisés et les plus utiles dans un fichier pdf téléchargeable. Nous avons deux versions, l’une qui montre des raccourcis pour Visual Studio pour Mac, et une version qui montre visual Studio shorts côte à côte pour les utilisateurs qui ont une expérience préalable avec Visual Studio lors de l’utilisation de Windows.
 
- - [Référence rapide de raccourci clavier Visual Studio pour Mac](https://aka.ms/vsm-keys)
- - [Référence rapide de Visual Studio & Visual Studio pour Mac raccourci clavier](https://aka.ms/vsm-vs-keys)
+ - [Visual Studio pour Mac clavier raccourci rapide ref](https://aka.ms/vsm-keys)
+ - [Visual Studio & Visual Studio pour Mac clavier raccourci rapide ref](https://aka.ms/vsm-vs-keys)
 
 ## <a name="code-navigation"></a>Navigation dans le code
 
@@ -43,17 +43,17 @@ Nous avons compilé les raccourcis clavier les plus utilisés et les plus utiles
 
 |Commandes|Raccourcis clavier|
 |-|-|
-|Activer ou Désactiver le point d’arrêt|**⌥⌘ /** , **⌘F9**|
+|Activer ou Désactiver le point d’arrêt|**F9**, **⌘F9**|
 |Suspendre|**⌥⌘P**, **⌥⌘L5**|
-|Supprimer tous les points d’arrêt|**⇧⌘F9**|
-|Exécuter jusqu'au curseur|**⌘F10**|
-|Définir l'instruction suivante|**⇧⌘F10**|
-|Afficher l'instruction suivante|**⌥\***|
+|Supprimer tous les points d’arrêt|**F9**|
+|Exécuter jusqu'au curseur|**F10**|
+|Définir l'instruction suivante|**F10**|
+|Afficher l'instruction suivante|**-\***|
 |Pas à pas détaillé|**⇧⌘I**, **⌘F11**|
 |Pas à pas sortant|**⇧⌘U**, **⇧⌘F11**|
 |Pas à pas principal|**⇧⌘O**, **F10**|
-|Basculer le point d'arrêt|**⌘\\** , **F9**|
-|Afficher les points d’arrêt|**⌥⌘B**|
+|Basculer le point d'arrêt|**⌘\\**, **F9**|
+|Afficher les points d’arrêt|**B**|
 
 ## <a name="designer"></a>Concepteur
 
@@ -65,82 +65,82 @@ Nous avons compilé les raccourcis clavier les plus utilisés et les plus utiles
 
 |Commandes|Raccourcis clavier|
 |-|-|
-|Mode d’édition de contrainte|**⌘E**|
-|Copier|**⌘C**|
-|Couper|**⌘X**|
+|Mode d’édition de contrainte|**E**|
+|Copier|**C**|
+|Couper|**X**|
 |DELETE|**⌘⌫**|
-|Mettre le document en forme|**⌃I**|
-|Mettre en retrait la sélection|**⌘]**|
-|Coller|**⌘V**|
-|Preferences|**⌘,**|
-|Rétablir|**⇧⌘Z**|
+|Mettre le document en forme|**Je**|
+|Mettre en retrait la sélection|**En]**|
+|Coller|**V**|
+|Preferences|**⌘**|
+|Rétablir|**Z Z**|
 |Renommer|**⌘R**, **F2**|
-|Tout sélectionner|**⌘A**|
-|Afficher les préférences de génération du code|**⌘I**|
+|Tout sélectionner|**A**|
+|Afficher les préférences de génération du code|**Je**|
 |Activer/Désactiver tous les plis|**⌥⇧⌘↑**|
 |Activer/Désactiver les définitions|**⌥⇧⌘↓**|
 |Activer/Désactiver le pli|**⌥⇧⌘←**|
-|Activer/désactiver le(s) commentaire(s) de ligne|**⌘/**|
-|Annuler|**⌘Z**|
-|Annuler la mise en retrait de la sélection|**⌘[**|
-|Mettre à jour les frames à partir des contraintes|**⇧⌘R**|
+|Activer/désactiver le(s) commentaire(s) de ligne|**/**|
+|Annuler|**Z**|
+|Annuler la mise en retrait de la sélection|**[**|
+|Mettre à jour les frames à partir des contraintes|**R**|
 
 ## <a name="f-integration"></a>Intégration F#
 
 |Commandes|Raccourcis clavier|
 |-|-|
-|Effacer F# Interactive|**⌃⌥C**|
-|F# Interactive|**⌃⌥F**|
-|Redémarrer F# interactif|**⌃⌥R**|
-|Envoyer une ligne à F# Interactive|**⌃⌥L**|
-|Envoyer des références à F# Interactive|**⌃⌥P**|
+|Effacer F# Interactive|**C**|
+|F# Interactive|**F**|
+|Redémarrer F# interactif|**R**|
+|Envoyer une ligne à F# Interactive|**L L**|
+|Envoyer des références à F# Interactive|**P**|
 |Envoyer une sélection à F# Interactive|**⌃⏎**|
 
 ## <a name="file"></a>Fichier
 
 |Commandes|Raccourcis clavier|
 |-|-|
-|Fermer tout|**⇧⌘W**|
-|Fermer le fichier|**⌘W**|
-|Fermer l’espace de travail|**⌥⌘W**|
-|Nouveau fichier|**⌘N**|
-|Nouvelle solution|**⇧⌘N**|
-|Ouvrir|**⌘O**|
-|Print|**⌘P**|
-|Quitter|**⌘Q**|
-|Revenir à la dernière version|**⌘U**|
-|Enregistrer|**⌘S**|
-|Enregistrer tout|**⇧⌘S**|
+|Fermer tout|**W**|
+|Fermer le fichier|**W**|
+|Fermer l’espace de travail|**W**|
+|Nouveau fichier|**N**|
+|Nouvelle solution|**N**|
+|Ouvrir|**O**|
+|Print|**P**|
+|Quitter|**Q**|
+|Revenir à la dernière version|**U**|
+|Enregistrer|**S**|
+|Enregistrer tout|**S**|
 
 ## <a name="help"></a>Aide
 
 |Commandes|Raccourcis clavier|
 |-|-|
-|Documentation de l’API|**⌥⌘ ?**|
-|Informations de référence sur l’API Unity|**⌘’**|
+|Documentation de l’API|**?**|
+|Informations de référence sur l’API Unity|**C’est**|
 
 ## <a name="other"></a>Autres
 
 |Commandes|Raccourcis clavier|
 |-|-|
-|Implémenter les messages Unity|**⇧⌘M**|
-|Inspecter|**⌥⌘I**|
+|Implémenter les messages Unity|**M**|
+|Inspecter|**Je**|
 
 ## <a name="project"></a>Projet
 
 |Commandes|Raccourcis clavier|
 |-|-|
-|Ajouter des fichiers|**⌥⌘A**|
+|Ajouter des fichiers|**A**|
 |Build|**⌘K**, **⇧F6**|
 |Tout générer|**⌘B**, **F6**|
-|Clean|**⇧⌘K**|
-|Reconstruire|**⌃⌘K**|
-|Tout regénérer|**⌃⌘B**|
-|Démarrer le débogage|**⌘⏎**, **F5**|
-|Démarrer sans débogage|**⌥⌘⏎**, **⌃F5**|
+|Clean|**K**|
+|Reconstruire|**K**|
+|Tout regénérer|**B**|
+|Démarrer le débogage|**F5**, **F5**|
+|Démarrer sans débogage|**F5**, **⌃F5**|
 |Arrêter|**⇧⌘⏎**, **⇧F5**|
 
-## <a name="refactoring"></a>Refactoring
+## <a name="refactoring"></a>Refactorisation
 
 |Commandes|Raccourcis clavier|
 |-|-|
@@ -151,108 +151,108 @@ Nous avons compilé les raccourcis clavier les plus utilisés et les plus utiles
 
 |Commandes|Raccourcis clavier|
 |-|-|
-|Commande|**⇧⌘P**|
-|Rechercher dans les fichiers|**⇧⌘F**|
+|Commande|**P**|
+|Rechercher dans les fichiers|**F**|
 |Suivant|**⌘G**, **F3**|
 |Rechercher la sélection suivante similaire|**⌘E**, **⌘F3**|
-|Précédent|**⇧⌘G**, **⇧F3**|
-|Rechercher la sélection précédente similaire|**⇧⌘F3**|
-|Rechercher|**⌘F**|
-|Atteindre le fichier|**⇧⌘D**|
-|Atteindre la ligne|**⌘L**|
-|Atteindre le type|**⇧⌘T**|
-|Boîte de dialogue Naviguer vers|**⌘.**|
-|Remplacer dans les fichiers|**⌥⇧⌘F**|
-|Replace|**⌥⌘F**|
+|Précédent|**G**, **F3**|
+|Rechercher la sélection précédente similaire|**F3**|
+|Rechercher|**F**|
+|Atteindre le fichier|**D**|
+|Atteindre la ligne|**L**|
+|Atteindre le type|**T T**|
+|Naviguer vers|**⌘.**|
+|Remplacer dans les fichiers|**F**|
+|Replace|**F**|
 
 ## <a name="text-editor"></a>Éditeur de texte
 
 |Commandes|Raccourcis clavier|
 |-|-|
 |Compléter le mot|**⌃␣**|
-|Supprimer le caractère à gauche|**⌃H**|
+|Supprimer le caractère à gauche|**H**|
 |Supprimer le sous-mot suivant|**⌃⌦**|
 |Supprimer le mot suivant|**⌥⌦**|
 |Supprimer le sous-mot précédent|**⌃⌫**|
 |Supprimer le mot précédent|**⌥⌫**|
-|Supprimer le caractère à droite|**⌃D**|
-|Supprimer jusqu’à la fin de la ligne|**⌃K**|
-|Abréviation dynamique|**⌃ /**|
+|Supprimer le caractère à droite|**D**|
+|Supprimer jusqu’à la fin de la ligne|**K**|
+|Abréviation dynamique|**/**|
 |Développer la sélection|**⌥⇧↓**|
 |Développer la sélection|**⌥⇧↑**|
-|Étendre la sélection à la fin du document|**⇧⌘↓**, **⇧⌘↘**|
-|Étendre la sélection au début du document|**⇧⌘↑**, **⇧⌘↖**|
-|Étendre la sélection à la fin de la ligne|**⇧↘**, **⇧⌘→**|
-|Étendre la sélection au début de la ligne|**⇧↖**, **⇧⌘←**|
-|Étendre la sélection à la ligne suivante|**⇧↓**|
+|Étendre la sélection à la fin du document|**⇧⌘↓** **↘**|
+|Étendre la sélection au début du document|**↖** **⇧⌘↖**|
+|Étendre la sélection à la fin de la ligne|**↘**, **⇧⌘→**|
+|Étendre la sélection au début de la ligne|**↖**, **⇧⌘←**|
+|Étendre la sélection à la ligne suivante|**C’est**|
 |Étendre la sélection au mot suivant|**⌥⇧→**|
 |Étendre la sélection d’une page vers le bas|**⇧⇟**|
 |Étendre la sélection d’une page vers le haut|**⇧⇞**|
-|Étendre la sélection à la ligne précédente|**⇧↑**|
+|Étendre la sélection à la ligne précédente|**C’est**|
 |Étendre la sélection au mot précédent|**⌥⇧←**|
-|Étendre la sélection vers la gauche|**⇧←**|
-|Étendre la sélection vers la droite|**⇧→**|
+|Étendre la sélection vers la gauche|**C’est**|
+|Étendre la sélection vers la droite|**C’est**|
 |Chercher le curseur|**⌘\|**|
-|Se déplacer d’un caractère vers la gauche|**⌃B**|
-|Se déplacer d’un caractère vers la droite|**⌃F**|
-|Atteindre le début du document|**⌘↑**|
+|Se déplacer d’un caractère vers la gauche|**B**|
+|Se déplacer d’un caractère vers la droite|**F**|
+|Atteindre le début du document|**C’est**|
 |Atteindre le début de la ligne|**⌘←**, **⌃A**|
-|Atteindre la fin du document|**⌘↓**|
+|Atteindre la fin du document|**C’est**|
 |Atteindre la fin de la ligne|**⌘→**, **⌃E**|
-|Atteindre l’accolade correspondante|**⇧⌘\\**|
-|Aller à la ligne suivante|**⌃N**|
-|Aller au mot suivant|**⌥→**|
-|Aller à la ligne précédente|**⌃P**|
-|Aller au mot précédent|**⌥←**|
-|Insérer un saut de ligne après le signe d’insertion|**⌃O**|
+|Atteindre l’accolade correspondante|**\\**|
+|Aller à la ligne suivante|**N**|
+|Aller au mot suivant|**C’est**|
+|Aller à la ligne précédente|**P**|
+|Aller au mot précédent|**C’est**|
+|Insérer un saut de ligne après le signe d’insertion|**O**|
 |Déplacer le curseur vers la fin de la ligne et insérer une nouvelle ligne|**⇧⏎**|
-|Déplacer la ligne ou la sélection en surbrillance vers le bas|**⌥↓**|
-|Déplacer la ligne ou la sélection en surbrillance vers le haut|**⌥↑**|
+|Déplacer la ligne ou la sélection en surbrillance vers le bas|**C’est**|
+|Déplacer la ligne ou la sélection en surbrillance vers le haut|**C’est**|
 |Aller à l’utilisation suivante|**⌃⌥⌘↓**|
 |Aller à l’utilisation précédente|**⌃⌥⌘↑**|
 |Afficher la liste des paramètres|**⌃⇧␣**|
-|Afficher les informations express|**⌘F1**|
-|Afficher les étendues|**⌥⇧⌘P**|
-|Permuter les caractères|**⌃T**|
-|Inclure avec &lt;div&gt;|**⌥⇧W**|
+|Afficher les informations express|**F1**|
+|Afficher les étendues|**P**|
+|Permuter les caractères|**T T**|
+|Inclure avec &lt;div&gt;|**W**|
 
 ## <a name="view"></a>Affichage
 
 |Commandes|Raccourcis clavier|
 |-|-|
-|Centrage et focus sur le document|**⌃L**|
+|Centrage et focus sur le document|**L**|
 |Focus sur le document|**F7**|
-|Plein écran|**⌃⌘F**|
+|Plein écran|**F**|
 |Aller au bloc-notes suivant|**⌥⌘→**|
 |Aller au bloc-notes précédent|**⌥⌘←**|
 |Naviguer vers l'arrière|**⌃⌘←**|
 |Naviguer vers l’avant|**⌃⌘→**|
-|Taille normale|**⌘0**|
-|Une colonne d’éditeur|**⌥⌘1**|
+|Taille normale|**0**|
+|Une colonne d’éditeur|**1**|
 |Afficher suivant|**⌥⌘↓**, **F8**|
-|Afficher précédent|**⌥⌘↑**, **⇧F8**|
-|Deux colonnes d’éditeur|**⌥⌘2**|
-|Zoom avant|**⌘ +** , **⌘ =**|
-|Zoom arrière|**⌘ -** , **⌘_**|
+|Afficher précédent|F8 **,** **⇧F8**|
+|Deux colonnes d’éditeur|**2**|
+|Zoom avant|**,** **⌘=**|
+|Zoom arrière|**,** **⌘_**|
 
 ## <a name="window"></a>Fenêtre
 
 |Commandes|Raccourcis clavier|
 |-|-|
-|Activer 1|**⌘1**|
-|Activer 2|**⌘2**|
-|Activer 3|**⌘3**|
-|Activer 4|**⌘4**|
-|Activer 5|**⌘5**|
-|Activer 6|**⌘6**|
-|Activer 7|**⌘7**|
-|Activer 8|**⌘8**|
-|Activer 9|**⌘9**|
-|Masquer les autres|**⌥⌘H**|
-|Masquer Visual Studio|**⌘H**|
-|Réduire|**⌘M**|
-|Document suivant|**⌘}** , **⌘F6**|
-|Document précédent|**⌘{** , **⇧⌘F6**|
+|Activer 1|**1**|
+|Activer 2|**2 euros**|
+|Activer 3|**3 euros**|
+|Activer 4|**4 euros**|
+|Activer 5|**5 euros**|
+|Activer 6|**6 euros**|
+|Activer 7|**7 euros**|
+|Activer 8|**8 euros**|
+|Activer 9|**9 euros**|
+|Masquer les autres|**H**|
+|Masquer Visual Studio|**H**|
+|Réduire|**M**|
+|Document suivant|**F6**, **⌘F6**|
+|Document précédent|**⌘{**, **⇧⌘F6**|
 |Basculer vers le document suivant|**⌃⇥**|
 |Passer à la fenêtre suivante|**⌃⌥⇥**|
 |Basculer vers le document précédent|**⌃⇧⇥**|
@@ -264,18 +264,18 @@ Nous avons compilé les raccourcis clavier les plus utilisés et les plus utiles
 |-|-|
 |⌘|**Commande** (**cmd**)|
 |⌥|**Option** (**alt**)|
-|⇧|**Maj**|
+|⇧|**Shift**|
 |⌃|**Contrôle** (**ctrl**)
-|⇞|**Page précédente** (**Page préc.** )|
-|⇟|**Page suivante** (**Page suiv.** )|
+|⇞|**Page précédente** (**Page préc.**)|
+|⇟|**Page suivante** (**Page suiv.**)|
 |⌫|**Supprimer** (**Retour arrière**)|
 |⌦|**Supprimer vers l’avant**|
-|⏎|**Return**|
-|←→↑↓|**Touches de direction**|
-|↖|**Accueil**|
+|⏎|**Retour**|
+|←→↑↓|**Flèches**|
+|↖|**Page d'accueil**|
 |↘|**Fin**|
 |␣|**Barre d’espace**|
-|⇥|**Tab**|
+|⇥|**Onglet**|
 
 ## <a name="see-also"></a>Voir aussi
 

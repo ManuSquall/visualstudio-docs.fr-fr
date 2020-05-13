@@ -16,10 +16,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: e01259fdd23e60a1408addc10a6af3a12479c9f2
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74772816"
 ---
 # <a name="collect-tier-interaction-data"></a>Collecter les données d’interaction de couche
@@ -48,4 +48,4 @@ En raison d’un bogue dans l’Assistant Performance, vous devez ajouter l’op
 
 ## <a name="see-also"></a>Voir aussi
 
-[Interactions de couche, vue](../profiling/tier-interactions-view.md)
+[Vue des interactions de niveau](../profiling/tier-interactions-view.md)

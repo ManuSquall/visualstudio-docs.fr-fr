@@ -7,12 +7,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f3ece317d753cb5c4b0b4e5b0e02707a088e8917
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: f65ce2b986114dc553b87db846262c931d74b4c0
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75591734"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "78235197"
 ---
 # <a name="features-of-visual-studio"></a>Fonctionnalités de Visual Studio
 
@@ -40,7 +40,7 @@ Pour en savoir plus sur la configuration de Visual Studio sur votre système, co
 
 Visual Studio propose une suite d’outils qui facilitent la création d’applications Cloud alimentées par Microsoft Azure. Vous pouvez configurer, générer, déboguer, packager et déployer des applications et services sur Microsoft Azure directement à partir de l’IDE. Pour obtenir les outils et modèles de projet Azure, sélectionnez la charge de travail **Développement Azure** lors de l’installation de Visual Studio.
 
-![Charge de travail Développement Azure](../data-tools/media/azure-development-workload.png)
+![Charge de travail de développement Azure](../data-tools/media/azure-development-workload.png)
 
 ::: moniker range="vs-2017"
 
@@ -76,7 +76,7 @@ Pour plus d’informations, consultez [Outils web modernes](https://visualstudio
 
 Visual Studio vous permet de générer des applications et des jeux pour les appareils macOS, Linux et Windows, ainsi qu’Android, iOS et d’autres [appareils mobiles](https://visualstudio.microsoft.com/vs/mobile-app-development/).
 
-- Générez des applications [.NET Core](/dotnet/core/) qui s’exécutent sur Windows, macOS et Linux.
+- Construisez des applications [.NET Core](/dotnet/core/) qui s’exécutent sur Windows, macOS et Linux.
 
 - Générez des applications mobiles pour iOS, Android et Windows en C# et F# à l’aide de [Xamarin](https://developer.xamarin.com/guides/cross-platform/windows/visual-studio/).
 
@@ -84,7 +84,7 @@ Visual Studio vous permet de générer des applications et des jeux pour les app
 
 - Générez des jeux en 2D et 3D en c# à l’aide de [Visual Studio Tools pour Unity](../cross-platform/visual-studio-tools-for-unity.md).
 
-- Générez des applications C++ natives pour les appareils iOS, Android et Windows. Partagez du code commun dans des bibliothèques conçues pour iOS, Android et Windows, à l’aide du [C++ pour le développement multiplateforme](../cross-platform/visual-cpp-for-cross-platform-mobile-development.md).
+- Générez des applications C++ natives pour les appareils iOS, Android et Windows. Partagez du code commun dans des bibliothèques conçues pour iOS, Android et Windows, à l’aide du [C++ pour le développement multiplateforme](/cpp/cross-platform/visual-cpp-for-cross-platform-mobile-development).
 
 - Déployez, testez et déboguez des applications Android avec [l’émulateur Android](../cross-platform/visual-studio-emulator-for-android.md).
 
@@ -96,7 +96,7 @@ L’**Explorateur de serveurs** vous aide à parcourir et à gérer les instance
 
 L’**Explorateur d’objets SQL Server** de Visual Studio offre une vue des objets de base de données similaire à celle de SQL Server Management Studio. L’Explorateur d’objets SQL Server vous permet d’effectuer des travaux légers de conception et d’administration de base de données. Voici quelques exemples de travaux : modification de données de tables, comparaison de schémas, exécution de requêtes à l’aide de menus contextuels directement à partir de l’Explorateur d’objets SQL Server, etc.
 
-![Explorateur d'objets SQL Server](../ide/media/vs2015_sqlobjectexplorer.png)
+![Explorateur d’objets SQL Server](../ide/media/vs2015_sqlobjectexplorer.png)
 
 ## <a name="debug-test-and-improve-your-code"></a>Déboguer, tester et améliorer votre code
 
@@ -139,5 +139,5 @@ Pour en savoir plus sur l’extension de Visual Studio, consultez [Étendre l’
 ## <a name="see-also"></a>Voir aussi
 
 - [Vue d’ensemble de l’IDE de Visual Studio](../get-started/visual-studio-ide.md)
-- [Nouveautés dans Visual Studio 2017](../ide/whats-new-visual-studio-2017.md)
+- [Quoi de neuf dans Visual Studio 2017](../ide/whats-new-visual-studio-2017.md)
 - [Nouveautés de Visual Studio 2019](../ide/whats-new-visual-studio-2019.md)

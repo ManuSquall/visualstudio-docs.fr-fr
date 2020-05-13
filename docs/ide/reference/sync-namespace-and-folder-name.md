@@ -10,10 +10,10 @@ dev_langs:
 ms.workload:
 - dotnet
 ms.openlocfilehash: d7073edaf6ecc261c58bf1e5607323b9214c5ed0
-ms.sourcegitcommit: d4920babfc3d24a3fe1d4bf446ed3fe73b344467
-ms.translationtype: HT
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/17/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "67160755"
 ---
 # <a name="sync-namespace-and-folder-name"></a>Synchronisation de l’espace de noms et du nom du dossier
@@ -22,17 +22,17 @@ Cette refactorisation s’applique à :
 
 - C#
 
-**Quoi :** Synchronisation de l’espace de noms et du nom du dossier.
+**Quoi :** Synchronisez l’espace de nom et le nom du dossier.
 
-**Quand :** Vous voulez réorganiser des parties de votre solution en faisant glisser un fichier vers un nouveau dossier. 
+**Quand :** Vous souhaitez réarchiler des parties de votre solution en faisant glisser un fichier vers un nouveau dossier. 
 
-**Pourquoi :** Vous souhaitez vous assurer que votre espace de noms reste à jour par rapport à votre structure de dossiers.
+**Pourquoi:** Vous voulez vous assurer que votre espace de nom se tient au courant de votre nouvelle structure de dossier.
 
-## <a name="how-to"></a>Procédure
+## <a name="how-to"></a>Procédures
 
 1. Placez votre curseur dans l’espace de noms.
-2. Appuyez sur **Ctrl**+ **.** pour afficher le menu **Actions rapides et refactorisations**.
-3. Sélectionnez **Modifier espace de noms en \<nom du dossier>** .
+2. Appuyez **sur Ctrl**+**.** pour afficher le menu **Actions rapides et refactorisations**.
+3. Sélectionnez **Modifier espace de noms en \<nom du dossier>**.
 
    ![Synchronisation de l’espace de noms et du nom du dossier](media/sync-namespace-and-folder-name.png)
 

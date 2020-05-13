@@ -10,10 +10,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 7c7f947be01500b0d45b81d404206722ac71084a
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75565407"
 ---
 # <a name="add-a-data-source-to-a-web-performance-test"></a>Ajouter une source de données à un test de performances de site Web
@@ -32,17 +32,17 @@ Votre solution doit également inclure un test de performances web qui parcourt 
 
 ![Solution avec le test des performances de site web](../test/media/web_test_databinding_solution.png)
 
-## <a name="create-a-sql-database"></a>Créer une base de données SQL
+## <a name="create-a-sql-database"></a>Créer une base de données SQL
 
 ::: moniker range="vs-2017"
 
 1. Si vous n’avez pas Visual Studio Enterprise, vous pouvez le télécharger à partir de la page [Téléchargements Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download).
 
-2. Créez une base de données SQL.
+2. Crée une base de données SQL.
 
      ![Ajouter une nouvelle base de données SQL](../test/media/web_test_databinding_sql_addnewdb.png)
 
-3. Créez un projet de base de données.
+3. Créer un projet de base de données.
 
      ![Créer un projet à partir de la base de données](../test/media/web_test_databinding_sql_addnewdbproject.png)
 
@@ -68,11 +68,11 @@ Votre solution doit également inclure un test de performances web qui parcourt 
 
 1. Si vous n’avez pas Visual Studio Enterprise, vous pouvez le télécharger à partir de la page [Téléchargements Visual Studio](https://visualstudio.microsoft.com/downloads).
 
-2. Créez une base de données SQL.
+2. Crée une base de données SQL.
 
      ![Ajouter une nouvelle base de données SQL](../test/media/web_test_databinding_sql_addnewdb.png)
 
-3. Créez un projet de base de données.
+3. Créer un projet de base de données.
 
      ![Créer un projet à partir de la base de données](../test/media/web_test_databinding_sql_addnewdbproject.png)
 
@@ -136,7 +136,7 @@ Votre solution doit également inclure un test de performances web qui parcourt 
 
 ## <a name="run-the-test-with-the-data"></a>Exécuter le test avec les données
 
-1. Exécuter le test.
+1. Exécutez le test.
 
      ![Exécuter le test des performances de site web pour vérifier la liaison](../test/media/web_test_databinding_sql_runtest.png)
 
@@ -154,7 +154,7 @@ Votre solution doit également inclure un test de performances web qui parcourt 
 
      ![Réussite du test à l'aide de la liaison de données](../test/media/web_test_databinding_sql_deleteresponseurlrunresults.png)
 
-## <a name="q--a"></a>Q et R
+## <a name="q--a"></a>Questions et réponses
 
 ### <a name="q-what-databases-can-i-use-as-a-data-source"></a>Q : Quelles bases de données puis-je utiliser comme source de données ?
 
@@ -219,7 +219,7 @@ Votre solution doit également inclure un test de performances web qui parcourt 
 
      ![Ajouter une source de données pour la base de données](../test/media/web_test_databinding_adddatasourcecolortext.png)
 
-5. Créez une connexion.
+5. Créez une nouvelle connexion.
 
      ![Choisir un nouvelle connexion](../test/media/web_test_databinding_sql_adddatasourcedialogconnectionnew.png)
 
@@ -227,7 +227,7 @@ Votre solution doit également inclure un test de performances web qui parcourt 
 
      ![Sélectionner le fournisseur de données .NET Framework pour OLE DB](../test/media/web_test_databinding_adddatasourcecolortext2.png)
 
-7. Choisissez **Avancé**.
+7. Choisissez **Advanced**.
 
      ![Choisir Avancé](../test/media/web_test_databinding_advanced.png)
 
@@ -249,7 +249,7 @@ Votre solution doit également inclure un test de performances web qui parcourt 
 
 ### <a name="q-how-do-i-use-an-xml-file-as-a-data-source"></a>Q : Comment utiliser un fichier XML comme source de données ?
 
-**R :** Oui.
+**R:** Oui.
 
 1. Créez un dossier pour organiser vos artefacts de base de données de projets et ajouter un élément.
 

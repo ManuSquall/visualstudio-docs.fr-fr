@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 118de9ec05bcd5c56376376619bea0c5148d36ab
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75594186"
 ---
 # <a name="intellisense-for-visual-basic-code-files"></a>IntelliSense pour les fichiers de code Visual Basic
@@ -39,7 +39,7 @@ Les conseils syntaxiques affichent la syntaxe de l’instruction que vous tapez.
 
 Pour désactiver par défaut la saisie semi-automatique, désélectionnez l’option **Répertorier automatiquement les membres** dans la page de propriétés **Général** du dossier **Visual Basic**.
 
-Vous pouvez appeler manuellement la complétion en appelant Liste des membres, Compléter le mot ou **Alt**+**Droite**. Pour plus d’informations, consultez [Utiliser IntelliSense](../ide/using-intellisense.md).
+Vous pouvez invoquer manuellement l’achèvement en invoquant les membres de liste, Le mot complet, ou **Alt**+**Right Arrow**. Pour plus d’informations, consultez [Utiliser IntelliSense](../ide/using-intellisense.md).
 
 ## <a name="intellisense-in-zone"></a>IntelliSense par zone
 

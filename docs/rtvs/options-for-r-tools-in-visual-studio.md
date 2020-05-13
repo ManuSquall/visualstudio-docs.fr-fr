@@ -14,26 +14,26 @@ manager: jillfra
 ms.workload:
 - data-science
 ms.openlocfilehash: c7c2cb57dc96d7bb0df09248eb7a877820e50521
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62999038"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79302706"
 ---
 # <a name="r-tools-for-visual-studio-options"></a>Options des Outils R dans Visual Studio
 
-Les paramètres sont accessibles par l’intermédiaire du menu **Outils R** > **Options**, ou par l’intermédiaire de **Outils** > **Options** et en faisant défiler la page jusqu’à **Outils R** :
+Les paramètres sont accessibles via le menu **R Tools** > **Options,** ou par le biais **d’options d’outils** > **Options** et de défilement vers **R Tools**:
 
   ![Boîte de dialogue Options pour les Outils R](media/options-dialog.png)
 
 Les options et paramètres propres à R sont accessibles à l’aide des méthodes ci-dessous. Vous devez cocher la case **Afficher tous les paramètres** située au bas de la boîte de dialogue **Options** pour que toutes ces sections apparaissent.
 
-- Options de mise en forme de code (voir [Options de l’éditeur](editing-r-code-in-visual-studio.md#editor-options)) : menu **Outils** > **Options**, puis sélectionnez **Éditeur de texte** > **R** > **Mise en forme**
-- Options de linting (voir [Linting](linting-r-code.md)) : menu **Outils** > **Options**, puis sélectionnez **Éditeur de texte** > **R** > **Lint**
-- Options avancées de l’éditeur ([décrites dans cet article](#text-editor--r--advanced-options)) : menu **Outils** > **Options**, puis sélectionnez **Éditeur de texte** > **R** > **Avancé**
-- Options comportementales ([décrites dans cet article](#r-tools--advanced-options)) : menu **Outils R** > **Options**, ou **Outils** > **Options**, puis faites défiler jusqu’à **Outils R**.
+- Options de mise en forme de code (consultez [Options de l’éditeur](editing-r-code-in-visual-studio.md#editor-options)) : menu **Outils** > **Options**, puis sélectionnez **Éditeur de texte** > **R** > **Mise en forme**
+- Options Linter (consultez [Linting](linting-r-code.md)) : menu **Outils** > **Options**, puis sélectionnez **Éditeur de texte** > **R** > **Lint**
+- Options avancées de l’éditeur ([décrites dans cet article](#text-editor--r--advanced-options)) : menu **Outils** > **Options**, puis sélectionnez **Éditeur de texte** > **R** > **Avancé**
+- Options comportementales ([décrites dans cet article](#r-tools--advanced-options)) : menu **Outils R** > **Options** ou **Outils** > **Options**, puis faites défiler jusqu’à **Outils R**.
 
-La commande **Outils R** > **Paramètres de science des données** affecte aussi plusieurs paramètres différents dans Visual Studio globalement. Cette commande est décrite dans la section suivante.
+La commande **R Tools** > **Data Science Settings** affecte également un certain nombre de paramètres différents dans Visual Studio dans l’ensemble. Cette commande est décrite dans la section suivante.
 
 <a name="data-scientist-layout"></a>
 
@@ -43,7 +43,7 @@ L’élément de menu **Outils R > Paramètres de science des données** configu
 
 ![Disposition de fenêtre pour scientifique des données dans Visual Studio](media/installation-data-scientist-layout-result.png)
 
-Pour revenir ultérieurement à d’autres paramètres de Visual Studio, utilisez d’abord la commande **Outils** > **Importation et exportation de paramètres**, sélectionnez **Exporter les paramètres d’environnement** sélectionnés et spécifiez un nom de fichier. Pour restaurer ces paramètres, utilisez la même commande et sélectionnez **Importer les paramètres d’environnement sélectionnés**. Vous pouvez aussi utiliser les mêmes commandes si vous changez la disposition pour les scientifiques des données et que vous souhaitez y revenir plus tard, au lieu d’utiliser directement la commande **Paramètres de science des données**.
+Pour revenir à d’autres paramètres Visual Studio plus tard, utilisez d’abord la commande **Tools** > **Import and Export Settings,** **sélectionnez les paramètres de l’environnement sélectionnés à Export**et spécifiez un nom de fichier. Pour restaurer ces paramètres, utilisez la même commande et sélectionnez **Importer les paramètres d'environnement sélectionnés**. Vous pouvez aussi utiliser les mêmes commandes si vous changez la disposition pour les scientifiques des données et que vous souhaitez y revenir plus tard, au lieu d’utiliser directement la commande **Paramètres de science des données**.
 
 ## <a name="text-editor--r--advanced-options"></a>Éditeur de texte > R > Options avancées
 
@@ -57,7 +57,7 @@ Chaque option est activée ou désactivée pour contrôler le comportement en qu
 
 ## <a name="r-tools--advanced-options"></a>Outils R > Options avancées
 
-La commande de menu **Outils R** > **Options** ouvre la boîte de dialogue **Options** relatives aux options R :
+La commande **R Tools** > **Options** du menu ouvre le dialogue **Options** aux options R :
 
   ![Boîte de dialogue Options pour les Outils R](media/options-dialog.png)
 
@@ -78,12 +78,12 @@ Ces options contrôlent la façon dont les valeurs sont gérées dans l’[Explo
 | --- | --- | --- |
 | Évaluation dynamique | `False` | Par défaut, la fonction `View(<expression>)` prend un instantané des données sous forme de cadre de données, ce qui peut consommer beaucoup de mémoire avec des jeux de données volumineux. La valeur `True` de cette option signifie que l’expression est évaluée lorsque la grille s’actualise pour extraire uniquement les données qui sont affichées. Toutefois, si l’expression change, les données changent également, ce qui peut ne pas convenir aux expressions dplyr pip. |
 
-### <a name="help"></a>Help
+### <a name="help"></a>Aide
 
 | Option | Valeur par défaut | Description |
 | --- | --- | --- |
-| Navigateur web (F1) | `Internal` | Contrôle comment l’aide s’affiche quand vous recherchez un terme à l’aide de **Ctrl**+**F1**. Quand cette option a la valeur `Internal`, l’aide est affichée dans une fenêtre d’outil dans Visual Studio. Quand elle a la valeur `External`, l’aide est affichée dans votre navigateur par défaut. |
-| Chaîne de recherche web (F1) | `R site:stackoverflow.com` | Contrôle comment les termes de recherche sont transmis à votre moteur de recherche quand vous appuyez sur **Ctrl**+**F1** sur un terme dans l’éditeur. Par défaut, la chaîne est `R site:stackoverflow.com`, ce qui ajoute `R` à votre terme de recherche. `site:stackoverflow.com` est une directive destinée au moteur de recherche qui lui indique de limiter la recherche aux pages du domaine `stackoverflow.com`. |
+| Navigateur web (F1) | `Internal` | Contrôle la façon dont l’aide est affichée lorsque vous recherchez un terme à l’aide **de Ctrl**+**F1**. Quand cette option a la valeur `Internal`, l’aide est affichée dans une fenêtre d’outil dans Visual Studio. Quand elle a la valeur `External`, l’aide est affichée dans votre navigateur par défaut. |
+| Chaîne de recherche web (F1) | `R site:stackoverflow.com` | Contrôle la façon dont les termes de recherche sont transmis à votre moteur de recherche lorsque vous appuyez sur **Ctrl**+**F1** sur un terme dans l’éditeur. Par défaut, la chaîne est `R site:stackoverflow.com`, ce qui ajoute `R` à votre terme de recherche. `site:stackoverflow.com` est une directive destinée au moteur de recherche qui lui indique de limiter la recherche aux pages du domaine `stackoverflow.com`. |
 | Navigateur de l’aide R | `Automatic` | Contrôle comment l’aide s’affiche quand vous effectuez une recherche dans la documentation de R en utilisant **F1**, **?** ou **??**. Quand cette option a la valeur `Automatic`, l’aide s’affiche dans la fenêtre appropriée. Par exemple, l’aide HTML s’affiche dans une fenêtre d’outil Visual Studio, tandis que les fichiers PDF s’affichent dans votre programme PDF par défaut. Quand elle a la valeur `External`, l’aide s’affiche dans le navigateur web par défaut. |
 
 ### <a name="history"></a>Historique
@@ -104,7 +104,7 @@ Ces options contrôlent la façon dont les valeurs sont gérées dans l’[Explo
 
 | Option | Valeur par défaut | Description |
 | --- | --- | --- |
-| Journaliser les événements | `Normal` | Contrôle le niveau de détail de la journalisation pour les diagnostics RTV. Le paramètre par défaut `Normal` crée un fichier journal dans votre répertoire `TEMP`. Quand cette option a la valeur `Traffic`, RTVS enregistre toutes les commandes et les réponses dans votre session. Ces fichiers journaux ne quittent jamais votre ordinateur, mais ils peuvent être utiles pour diagnostiquer des problèmes dans RTVS. |
+| Événements du journal | `Normal` | Contrôle le niveau de détail de la journalisation pour les diagnostics RTV. Le paramètre par défaut `Normal` crée un fichier journal dans votre répertoire `TEMP`. Quand cette option a la valeur `Traffic`, RTVS enregistre toutes les commandes et les réponses dans votre session. Ces fichiers journaux ne quittent jamais votre ordinateur, mais ils peuvent être utiles pour diagnostiquer des problèmes dans RTVS. |
 
 ### <a name="markdown"></a>Markdown
 

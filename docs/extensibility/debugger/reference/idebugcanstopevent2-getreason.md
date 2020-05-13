@@ -1,5 +1,5 @@
 ---
-title: IDebugCanStopEvent2::GetReason | Microsoft Docs
+title: IDebugCanStopEvent2::GetReason - France Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugCanStopEvent2::GetReason
 ms.assetid: f5de31ca-7b8d-4029-9cf9-ba860ac66af6
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: e1b219973e0fced92a588a87ed472cf7a57d312d
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 59e611c3ed69528f92a6085cf74aa44efed09144
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66337270"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80734526"
 ---
 # <a name="idebugcanstopevent2getreason"></a>IDebugCanStopEvent2::GetReason
-Obtient la raison pour laquelle le moteur de débogage (dé) veut arrêter de raison.
+Obtient la raison pour laquelle le moteur de débogé (DE) veut s’arrêter.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -41,15 +41,15 @@ int GetReason( 
 
 ## <a name="parameters"></a>Paramètres
 `pcr`\
-[out] Retourne une valeur de la [CANSTOP_REASON](../../../extensibility/debugger/reference/canstop-reason.md) énumération qui décrit la raison de cet événement.
+[out] Retourne une valeur de [l’énumération CANSTOP_REASON](../../../extensibility/debugger/reference/canstop-reason.md) qui décrit la raison de cet événement.
 
 ## <a name="return-value"></a>Valeur de retour
- En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.
+ En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
 ## <a name="remarks"></a>Notes
- Cette méthode est généralement appelée avant la [CanStop](../../../extensibility/debugger/reference/idebugcanstopevent2-canstop.md) méthode afin que l’appelant puisse déterminer s’il faut passer zéro (`TRUE`) pour le `IDebugCanStopEvent2::CanStop` (méthode).
+ Cette méthode est généralement appelée avant la méthode [CanStop](../../../extensibility/debugger/reference/idebugcanstopevent2-canstop.md) afin que l’appelant peut déterminer s’il faut passer non-zéro (`TRUE`) à la `IDebugCanStopEvent2::CanStop` méthode.
 
- La raison de l’arrêt peut être `CANSTOP_ENTRYPOINT`, ce qui signifie que l’Allemagne a atteint un point d’entrée, ou `CANSTOP_STEPIN`, ce qui signifie que l’Allemagne a exécuté le code dans une fonction.
+ La raison de l’arrêt peut être soit `CANSTOP_ENTRYPOINT`, ce `CANSTOP_STEPIN`qui signifie que le DE a atteint un point d’entrée, ou , ce qui signifie que le DE est entré dans une fonction.
 
 ## <a name="see-also"></a>Voir aussi
 - [IDebugCanStopEvent2](../../../extensibility/debugger/reference/idebugcanstopevent2.md)

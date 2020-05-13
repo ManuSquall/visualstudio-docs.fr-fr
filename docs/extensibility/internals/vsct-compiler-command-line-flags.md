@@ -1,34 +1,34 @@
 ---
-title: Indicateurs de ligne de commande du compilateur VSCT | Microsoft Docs
+title: VsCT Compiler Command-Line Flags (fr) Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - VSCT files, compiling
 - command-table file compilation (VSCT files)
 ms.assetid: 9dc6c33f-e6cf-4cf2-9b05-e8f7bfac1cfb
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 71634a007019dd39e843ccc63af1c3188f778ea9
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: e4ee29710049453c3163c366eccf96e257b6028d
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72722032"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80703969"
 ---
 # <a name="vsct-compiler-command-line-flags"></a>Indicateurs de la ligne de commande du compilateur VSCT
-Le compilateur de table de commandes Visual Studio (VSCT) fournit des commutateurs de ligne de commande pour garantir la réussite de la compilation des fichiers. vsct.
+Le compilateur Visual Studio Command Table (VSCT) fournit des commutateurs de ligne de commande pour assurer une compilation réussie des fichiers .vsct.
 
-## <a name="command-line-parameters"></a>Paramètres de ligne de commande
- Pour afficher l’aide de base VSCT à partir d’une fenêtre de **commande** [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], accédez au dossier *chemin d’installation du kit de développement logiciel Visual Studio*\VisualStudioIntegration\Tools\Bin\, puis tapez :
+## <a name="command-line-parameters"></a>Paramètres de la ligne de commande
+ Pour voir l’aide [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] VSCT de base à partir d’une fenêtre **de commande,** naviguez vers le *chemin d’installation Visual Studio SDK*'VisualStudioIntegration’Tools’Bin ' dossier et tapez:
 
 ```
 vsct /?
 ```
 
- Cela retourne :
+ Cette demande renvoie :
 
 ```
 Microsoft (R) Visual Studio (R) Command Table Compiler Version 3.00.2000
@@ -50,29 +50,29 @@ Syntax: vsct <infile> [<outfile>] [-S[symbols file]] [-D<preprocessor-define>]*
 ```
 
 > [!NOTE]
-> Les caractères-(tiret) et/(barre oblique) sont acceptés en notation pour indiquer les paramètres de ligne de commande.
+> Les caractères - (dash) et / (slash vers l’avant) sont tous deux acceptés notation pour indiquer les paramètres de la ligne de commande.
 
- Les indicateurs acceptables et leur signification sont les suivants.
+ Les drapeaux acceptables et ce qu’ils signifient sont les suivants.
 
-|Basculer|Description|
+|Commutateur|Description|
 |------------|-----------------|
-|-D|Spécifiez des symboles définis supplémentaires.|
-|-I|Indiquer les chemins d’accès include supplémentaires qui doivent être utilisés lors de la résolution des références de fichier.|
-|-L|Spécifiez le nom de la culture <xref:System.Globalization.CultureInfo>, par exemple « en-US ».|
-|-E|C# Émettez des objets dans l’espace de noms spécifié pour les éléments de&#124;commande&#124;, suivis de [c H C#N] : C++ *NomFichier*où C =, H = en-tête, N = espace de noms. L’espace de noms est C#requis pour.|
-|-v|Sortie détaillée.|
+|-d|Spécifier d’autres symboles définis.|
+|-I|Indiquer les autres inclure les chemins qui doivent être utilisés lors de la résolution des références de fichiers.|
+|-l|Spécifier le nom de la <xref:System.Globalization.CultureInfo> culture, par exemple "en-US".|
+|-E|Émettre des objets CMD dans l’espace de nom spécifié pour les éléments de commande, suivi de [C&#124;H&#124;N]:*nom de fichier*où C ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' L’espace de nom est requis pour le C.|
+|-v|Sortie Verbose.|
 
- Le commutateur-L demande au compilateur de sélectionner un groupe de chaînes pour produire le fichier. directeur technique binaire qui correspond au nom de culture <xref:System.Globalization.CultureInfo> donné. Le nom de culture spécifié doit correspondre à l’attribut de langage d’un ou de plusieurs [éléments Strings](../../extensibility/strings-element.md) dans le fichier. vsct. Si un élément Strings n’a pas d’attribut Language, il est hérité de l' [élément CommandTable](../../extensibility/commandtable-element.md)conteneur.
+ Le commutateur -L demande au compilateur de sélectionner un groupe de chaînes pour produire <xref:System.Globalization.CultureInfo> le fichier binaire .cto qui correspond au nom de la culture donnée. Le nom de culture spécifié doit correspondre à l’attribut linguistique d’un ou plusieurs [éléments de cordes](../../extensibility/strings-element.md) dans le fichier .vsct. Si un élément strings n’a pas d’attribut de langue, il est hérité de [l’élément De commande](../../extensibility/commandtable-element.md)contenant .
 
- Un fichier. vsct peut avoir plusieurs éléments Strings et chacun peut avoir un attribut Language différent. La globalisation est obtenue en exécutant plusieurs fois le compilateur VSCT et en modifiant le commutateur-L pour chaque nom de culture.
+ Un fichier .vsct peut avoir plusieurs éléments de cordes, et chacun peut avoir un attribut de langue différent. La mondialisation est réalisée en exécutant le compilateur VSCT plusieurs fois et en changeant le commutateur -L pour chaque nom de culture.
 
- Si le nom de culture donné par le commutateur-L ne correspond pas à l’attribut de langage d’un élément de chaîne, le compilateur essaiera de correspondre à la langue, et non à la région. Par exemple, si « en-US » est introuvable, le compilateur essaiera « en » à la place. En échec, elle essaiera la culture actuelle du système d’exploitation. À l’échec, elle compilera le premier élément Strings qu’elle trouve.
+ Si le nom de culture donné par le commutateur -L ne correspond pas à l’attribut linguistique de n’importe quel élément de cordes, le compilateur va essayer de faire correspondre la langue, et non la région. Par exemple, si "en-US" ne peut pas être trouvé, le compilateur va essayer "en" à la place. À défaut, il va essayer la culture actuelle du système d’exploitation. À défaut, il compilera le premier élément Strings qu’il trouve.
 
- Le commutateur-E peut être utilisé pour émettre un fichier d’en-tête de style C qui contient les symboles utilisés par la table de commandes, ou pour C# émettre un fichier qui contient des objets pour les symboles de commande.
+ Le commutateur -E peut être utilisé pour émettre un fichier d’en-tête de type C qui contient les symboles qui sont utilisés par la table de commande, ou pour émettre un fichier Cmd qui contient des objets pour les symboles de commande.
 
- Les commutateurs-D et-I ont la syntaxe des indicateurs de préprocesseur CL. exe C portant le même nom. Les définitions-D qui ont le format X = Y sont utilisées pour l’expansion des tests de > \<définis par XML dans des attributs de `Condition`. -J’inclut des chemins d’accès permettant de résoudre les \<inclure des références de >, \<extern > et \<bitmap > de fichiers. Pour plus d’informations, consultez la [référence de schéma XML vsct](../../extensibility/vsct-xml-schema-reference.md).
+ Les commutateurs -D et-I ont la syntaxe des drapeaux préprocesseurs Cl.exe C qui ont le même nom. -D définitions qui ont le format X-Y sont utilisés \<pour l’expansion `Condition` de XML-basé Défini> tests dans les attributs. -J’inclus des chemins \<sont utilisés \<pour résoudre Inclure>, Extern> et \<Bitmap> références de fichiers. Pour plus d’informations, voir la [référence VSCT XML Schema](../../extensibility/vsct-xml-schema-reference.md).
 
- Le compilateur VSCT peut également décompiler un fichier binaire précédemment généré. Pour ce faire, fournissez un fichier binaire pour le \<> INFILE.   Si le fichier binaire a été généré par le compilateur VSCT, ses symboles sont déjà incorporés et génèrent une sortie avec les noms symboliques dans une \<> section de la sortie. Si le fichier binaire a été généré par le compilateur CTC, la sortie contient les GUID et ID réels. Si le fichier *. ctsym généré par les versions actuelles de CTC. exe se trouve dans le même dossier que le fichier d’entrée binaire, les symboles sont chargés à partir de ce fichier et utilisés pour la sortie.
+ Le compilateur VSCT peut également décomposer un fichier binaire précédemment construit. Pour ce faire, fournir un \<fichier binaire pour le> infile.   Si le fichier binaire a été produit par le compilateur VSCT, il aura ses \<symboles déjà intégrés et produira la sortie avec les noms symboliques dans une section symboles> de la sortie. Si le binaire a été produit par le compilateur de la CCT, la sortie contiendra les GUID et les DME réels. Si le fichier 'ctsym qui est produit par les versions actuelles de Ctc.exe est dans le même dossier que le fichier d’entrée binaire, les symboles seront chargés à partir de ce fichier et utilisés pour la sortie.
 
 ## <a name="see-also"></a>Voir aussi
 - [Fichiers Visual Studio Command Table (.Vsct)](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

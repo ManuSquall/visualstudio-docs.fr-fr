@@ -8,19 +8,19 @@ ms.assetid: a859595f-6517-43f2-9d61-c706cb55a388
 caps.latest.revision: 25
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 8a5034a13771c0ea1f7b6dcd2e073ad02e838e07
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: 5234dddad13ccb52cc653a68ad1c35370a4eae18
+ms.sourcegitcommit: da5ebc29544fdbdf625ab4922c9777faf2bcae4a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75851219"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "82586338"
 ---
 # <a name="using-different-web-browsers-with-coded-ui-tests"></a>Utilisation de différents navigateurs Web avec des tests codés de l'interface utilisateur
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Les tests codés de l'interface utilisateur peuvent automatiser le test des applications web en enregistrant vos tests à l'aide d'Internet Explorer. Vous pouvez ensuite personnaliser votre test et l'utiliser à l'aide d'Internet Explorer ou d'autres types de navigateurs pour ces applications web.
 
- **Spécifications**
+ **Configuration requise**
 
 - Visual Studio Enterprise
 
@@ -42,7 +42,7 @@ Les tests codés de l'interface utilisateur peuvent automatiser le test des appl
 
 - Installez les [composants Selenium pour les tests codés de l’interface utilisateur sur plusieurs navigateurs](https://marketplace.visualstudio.com/items?itemName=AtinBansal.SeleniumcomponentsforCodedUICrossBrowserTesting).
 
-  **Quelles sont les opérations prises en charge par tous les navigateurs web ?**
+  **Qu’est-ce qui est pris en charge sur tous les navigateurs Web ?**
 
 - [Ajouter du code personnalisé pour contrôler les fonctionnalités](https://devblogs.microsoft.com/devops/coded-ui-test-configuring-search-properties-while-recording-on-internet-explorer/) comme les propriétés, la recherche et les objets waiter de lecture.
 
@@ -95,11 +95,11 @@ Les tests codés de l'interface utilisateur peuvent automatiser le test des appl
 
     2. Pour **Exceptions CLR**, désactivez **Non géré par l’utilisateur**.
 
-## <a name="generate"></a>*Je ne vois pas l’option permettant de modifier BrowserWindow. CurrentBrowser dans le test codé de l’interface utilisateur.*
+## <a name="i-dont-see-the-option-to-change-browserwindowcurrentbrowser-in-the-coded-ui-test"></a><a name="generate"></a> *Je ne vois pas l’option permettant de modifier BrowserWindow.CurrentBrowser dans le test codé de l’interface utilisateur.*
  Vous utilisez peut-être une version de [!INCLUDE[vs2011_first](../includes/vs2011-first-md.md)] qui ne prend pas en charge les tests codés de l'interface utilisateur à l'aide de différents navigateurs web. Pour utiliser de tels tests codés de l’interface utilisateur, vous devez utiliser Visual Studio Enterprise.
 
  *Que dois-je savoir de plus ?*
- **Notes**
+ **Remarques**
 
 - ![Prérequis](../test/media/prereq.png "PREREQ") Le navigateur Web Apple Safari n’est pas pris en charge.
 
@@ -127,7 +127,7 @@ Les tests codés de l'interface utilisateur peuvent automatiser le test des appl
 
 ## <a name="external-resources"></a>Ressources externes
 
-### <a name="videos"></a>Vidéos
+### <a name="videos"></a>Videos
  [Enregistrement dans IE et lecture dans tous les navigateurs](https://skydrive.live.com/redir?resid=AE5CD7309CCCC43C!183&authkey=!ANqaLtCZbtJrImU)
 
  [Créer des tests multi-navigateurs avec le générateur de test codé de l’interface utilisateur](https://skydrive.live.com/redir?resid=AE5CD7309CCCC43C!184&authkey=!AKG8CSow_qmeTq8)
@@ -138,18 +138,18 @@ Les tests codés de l'interface utilisateur peuvent automatiser le test des appl
 
  [Résoudre les problèmes des tests multi-navigateurs](https://skydrive.live.com/redir?resid=AE5CD7309CCCC43C!182&authkey=!AEpS48i295B49FI)
 
-### <a name="guidance"></a>Aide
+### <a name="guidance"></a>Assistance
  [Tester la livraison continue avec Visual Studio 2012 - Chapitre 2 : Tests unitaires : tester l’intérieur](https://msdn.microsoft.com/library/jj159340.aspx)
 
  [Test de la livraison continue avec Visual Studio 2012 - Chapitre 5 : Automatisation des tests système](https://msdn.microsoft.com/library/jj159335.aspx)
 
-### <a name="faq"></a>Forum aux questions
- [FAQ concernant les tests codés de l’interface utilisateur - 1](https://blogs.msdn.com/b/mathew_aniyan/archive/tags/faq/)
+### <a name="faq"></a>Questions fréquentes (FAQ)
+ [FAQ concernant les tests codés de l’interface utilisateur - 1](https://docs.microsoft.com/archive/blogs/mathew_aniyan/content-index-for-coded-ui-test)
 
  [FAQ concernant les tests codés de l’interface utilisateur - 2](https://social.msdn.microsoft.com/Forums/en-US/vsautotest/thread/3a74dd2c-cef8-4923-abbf-7a91f489e6c4)
 
 ### <a name="forum"></a>Forum
  [Visual Studio UI Automation Testing (avec tests codés de l’interface utilisateur)](https://social.msdn.microsoft.com/Forums/en-US/vsautotest)
 
-## <a name="see-also"></a>Voir aussi
+## <a name="see-also"></a> Voir aussi
  [Utiliser UI Automation pour tester votre code](../test/use-ui-automation-to-test-your-code.md) [plateformes et configurations prises en charge pour les tests codés de l’interface utilisateur et les enregistrements des actions](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md) [analyse des tests codés de l’interface utilisateur à l’aide des journaux de test codé](../test/analyzing-coded-ui-tests-using-coded-ui-test-logs.md)

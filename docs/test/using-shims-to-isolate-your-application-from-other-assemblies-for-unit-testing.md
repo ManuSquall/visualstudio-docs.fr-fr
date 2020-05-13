@@ -9,21 +9,21 @@ dev_langs:
 - CSharp
 - VB
 ms.openlocfilehash: 480283b4f86f28fdedfb38687682fcee4e67646e
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75585533"
 ---
-# <a name="use-shims-to-isolate-your-app-for-unit-testing"></a>Utiliser des shims pour isoler votre application pour les tests unitaires
+# <a name="use-shims-to-isolate-your-app-for-unit-testing"></a>Utilisez des cales pour isoler votre application pour les tests unitaires
 
-Les **types shim** sont l’une des deux technologies que l’infrastructure de simulation Microsoft utilise pour vous permettre d’isoler les composants testés de l’environnement. Les shims détournent les appels à des méthodes spécifiques vers le code que vous écrivez dans le cadre de votre test. De nombreuses méthodes retournent des résultats différents selon les conditions externes, mais un shim est sous le contrôle de votre test et peut retourner des résultats cohérents lors de chaque appel. Cela facilite l’écriture des tests.
+**Les types de cale** sont l’une des deux technologies que le cadre Microsoft Fakes utilise pour vous permettre d’isoler les composants testés de l’environnement. Les shims détournent les appels à des méthodes spécifiques vers le code que vous écrivez dans le cadre de votre test. De nombreuses méthodes retournent des résultats différents selon les conditions externes, mais un shim est sous le contrôle de votre test et peut retourner des résultats cohérents lors de chaque appel. Il est ainsi plus facile d’écrire les tests.
 
-Utilisez les *shims* pour isoler votre code des assemblys qui ne font pas partie de votre solution. Pour isoler les composants de votre solution les uns des autres, utilisez des *stubs*.
+Utilisez *des cales* pour isoler votre code des assemblages qui ne font pas partie de votre solution. Pour isoler les composants de votre solution les uns des autres, utilisez des *talons.*
 
-Pour obtenir une vue d’ensemble et un guide de démarrage rapide, consultez [isolation du code testé avec Microsoft simulations](../test/isolating-code-under-test-with-microsoft-fakes.md).
+Pour un aperçu et "démarrage rapide" des conseils, voir [le code Isolate à l’essai avec Microsoft Fakes](../test/isolating-code-under-test-with-microsoft-fakes.md).
 
-**Spécifications**
+**Configuration requise**
 
 - Visual Studio Enterprise
 - Un projet .NET Framework
@@ -33,7 +33,7 @@ Pour obtenir une vue d’ensemble et un guide de démarrage rapide, consultez [i
 
 ## <a name="example-the-y2k-bug"></a>Exemple : Le bogue de l'an 2000
 
-Prenons l’exemple d’une méthode qui lève une exception le 1er janvier 2000 :
+Considérez une méthode qui jette une exception le 1er janvier 2000 :
 
 ```csharp
 // code under test
@@ -64,19 +64,19 @@ using (ShimsContext.Create()) {
 
 ## <a name="how-to-use-shims"></a>Procédure d'utilisation des shims
 
-Tout d’abord, ajoutez un assembly de simulation :
+Tout d’abord, ajouter un assemblage de faux:
 
-1. Dans **Explorateur de solutions**, développez le nœud **références** de votre projet de test unitaire.
+1. Dans **Solution Explorer**, élargissez le nœud **Références** de votre projet de test unitaire.
 
    - Si vous utilisez Visual Basic, sélectionnez **Afficher tous les fichiers** dans la barre d’outils de **l’Explorateur de solutions** pour afficher le nœud **Références**.
 
-2. Sélectionnez l’assembly qui contient les définitions de classe pour lesquelles vous souhaitez créer des shims. Par exemple, si vous souhaitez effectuer un shim pour **DateTime**, sélectionnez **System.dll**.
+2. Sélectionnez l’assemblage qui contient les définitions de classe pour lesquelles vous souhaitez créer des cales. Par exemple, si vous voulez shim **DateTime**, sélectionnez **System.dll**.
 
 3. Dans le menu contextuel, choisissez **Ajouter un assembly Fakes**.
 
 ### <a name="use-shimscontext"></a>Utiliser ShimsContext
 
-Quand vous utilisez des types shim dans une infrastructure de tests unitaires, encapsulez le code de test dans un `ShimsContext` pour contrôler la durée de vie de vos shims. Dans le cas contraire, les shims durent jusqu’à ce que l’AppDomain s’arrête. La façon la plus facile de créer un `ShimsContext` consiste à utiliser la méthode statique `Create()` comme illustré dans le code suivant :
+Lorsque vous utilisez des types de cales dans `ShimsContext` un cadre de test unitaire, enveloppez le code de test dans un pour contrôler la durée de vie de vos cales. Sinon, les cales dureraient jusqu’à ce que l’AppDomain s’arrête. La façon la plus facile de créer un `ShimsContext` consiste à utiliser la méthode statique `Create()` comme illustré dans le code suivant : 
 
 ```csharp
 //unit test code
@@ -88,7 +88,7 @@ public void Y2kCheckerTest() {
 }
 ```
 
-Il est essentiel de supprimer correctement chaque contexte de shim. En règle générale, appelez l' `ShimsContext.Create` à l’intérieur d’une instruction `using` pour garantir une suppression correcte des shims enregistrés. Par exemple, vous pouvez inscrire un shim pour une méthode de test qui remplace la méthode `DateTime.Now` par un délégué qui retourne toujours le premier janvier 2000. Si vous oubliez d’effacer le shim inscrit dans la méthode de test, le reste de la série de tests retourne toujours le premier janvier 2000 comme valeur de `DateTime.Now`. Cela peut être surprenant et déroutant.
+Il est essentiel de supprimer correctement chaque contexte de shim. En règle générale, appelez `ShimsContext.Create` l’intérieur d’une `using` déclaration pour assurer le dégagement approprié des cales enregistrées. Par exemple, vous pouvez inscrire un shim pour une méthode de test qui remplace la méthode `DateTime.Now` par un délégué qui retourne toujours le premier janvier 2000. Si vous oubliez d’effacer la cale enregistrée dans la méthode d’essai, le reste de `DateTime.Now` l’exécution d’essai retournerait toujours le premier de Janvier 2000 comme valeur. Cela peut être surprenant et déroutant.
 
 ### <a name="write-a-test-with-shims"></a>Écrire un test avec les shims
 
@@ -305,7 +305,7 @@ ShimMyClass.ConstructorInt32 = (@this, value) => {
 };
 ```
 
-Chaque type shim expose deux constructeurs. Le constructeur par défaut doit être utilisé quand une nouvelle instance est nécessaire, tandis que le constructeur prenant une instance ayant fait l'objet d'un shim comme argument doit être utilisé dans les shims constructeurs uniquement :
+Chaque type shim expose deux constructeurs. Le constructeur par défaut doit être utilisé quand une nouvelle instance est nécessaire, tandis que le constructeur prenant une instance ayant fait l'objet d'un shim comme argument doit être utilisé dans les shims constructeurs uniquement : 
 
 ```csharp
 // unit test code
@@ -401,7 +401,7 @@ public class MyClass : IEnumerable<int> {
 }
 ```
 
-Vous pouvez effectuer un shim sur les implémentations de `IEnumerable<int>` dans MyClass en appelant la méthode bind :
+Vous pouvez shim les `IEnumerable<int>` implémentations de Dans MyClass en appelant la méthode Bind:
 
 ```csharp
 // unit test code
@@ -426,7 +426,7 @@ Chaque type shim généré contient une instance de l'interface `IShimBehavior`,
 
 Si le comportement n’a pas été défini explicitement, il utilise l’instance retournée par la propriété statique `ShimsBehaviors.Current`. Par défaut, cette propriété retourne un comportement qui lève une exception `NotImplementedException`.
 
-Ce comportement peut être modifié à tout moment en définissant la propriété `InstanceBehavior` sur toute instance de shim. Par exemple, l’extrait de code suivant remplace le shim par un comportement qui ne fait rien ou retourne la valeur par défaut du type de retour, autrement dit `default(T)`:
+Ce comportement peut être modifié à tout moment en définissant la propriété `InstanceBehavior` sur toute instance de shim. Par exemple, l’extrait suivant change la cale à un comportement qui ne fait rien `default(T)`ou retourne la valeur par défaut du type de retour, c’est-à-dire :
 
 ```csharp
 // unit test code
@@ -456,15 +456,15 @@ ShimMyClass.Behavior = ShimsBehaviors.NotImplemented;
 ShimMyClass.BehaveAsNotImplemented();
 ```
 
-## <a name="concurrency"></a>concurrence
+## <a name="concurrency"></a>Accès concurrentiel
 
-Les types shim s’appliquent à tous les threads de l’AppDomain et n’ont pas d’affinité de thread. C’est un fait important si vous prévoyez d’utiliser un test Runner qui prend en charge l’accès concurrentiel. Les tests impliquant des types shim ne peuvent pas s’exécuter simultanément. Cette propriété n’est pas appliquée par le runtime Fakes.
+Les types shim s’appliquent à tous les threads de l’AppDomain et n’ont pas d’affinité de thread. Il s’agit d’un fait important si vous prévoyez d’utiliser un coureur de test qui prend en charge la concurrence. Les tests impliquant des types de cales ne peuvent pas fonctionner simultanément. Cette propriété n’est pas appliquée par le runtime Fakes.
 
 ## <a name="call-the-original-method-from-the-shim-method"></a>Appeler la méthode d’origine à partir de la méthode shim
 
-Imaginez que vous souhaitez écrire le texte dans le système de fichiers après avoir validé le nom de fichier passé à la méthode. Dans ce cas, vous appelez la méthode d’origine au milieu de la méthode shim.
+Imaginez que vous souhaitez écrire le texte au système de fichiers après avoir validé le nom du fichier transmis à la méthode. Dans ce cas, vous appelleriez la méthode originale au milieu de la méthode de cale.
 
-La première approche pour résoudre ce problème consiste à encapsuler un appel à la méthode d’origine à l’aide d’un délégué et d' `ShimsContext.ExecuteWithoutShims()`, comme dans le code suivant :
+La première approche pour résoudre ce problème est d’envelopper `ShimsContext.ExecuteWithoutShims()`un appel à la méthode originale à l’aide d’un délégué et, comme dans le code suivant:
 
 ```csharp
 // unit test code
@@ -478,7 +478,7 @@ ShimFile.WriteAllTextStringString = (fileName, content) => {
 };
 ```
 
-Une autre approche consiste à définir le shim sur null, à appeler la méthode d’origine et à restaurer le shim.
+Une autre approche consiste à définir la cale à annuler, appeler la méthode originale, et restaurer la cale.
 
 ```csharp
 // unit test code
@@ -503,7 +503,7 @@ ShimFile.WriteAllTextStringString = shim;
 
 ## <a name="systemenvironment"></a>System.Environment
 
-Pour <xref:System.Environment?displayProperty=fullName>shim, ajoutez le contenu suivant au fichier mscorlib. simulations après l’élément **assembly** :
+Pour <xref:System.Environment?displayProperty=fullName>shim , ajouter le contenu suivant au fichier mscorlib.fakes après **l’élément de l’Assemblée:**
 
 ```xml
 <ShimGeneration>
@@ -511,18 +511,18 @@ Pour <xref:System.Environment?displayProperty=fullName>shim, ajoutez le contenu 
 </ShimGeneration>
 ```
 
-Après la régénération de la solution, les méthodes et les propriétés de la classe <xref:System.Environment?displayProperty=fullName> sont disponibles pour être corrigées, par exemple :
+Après avoir reconstrui la solution, <xref:System.Environment?displayProperty=fullName> les méthodes et les propriétés de la classe sont disponibles pour être shimmed, par exemple:
 
 ```csharp
 System.Fakes.ShimEnvironment.GetCommandLineArgsGet = ...
 ```
 
-## <a name="limitations"></a>Limitations
+## <a name="limitations"></a>Limites
 
 Les shims ne peuvent pas être utilisés sur tous les types à partir de la bibliothèque de classes de base .NET **mscorlib** et **System**.
 
 ## <a name="see-also"></a>Voir aussi
 
 - [Isoler du code testé avec Microsoft Fakes](../test/isolating-code-under-test-with-microsoft-fakes.md)
-- [Blog de Peter Provost : Visual Studio 2012 shims](http://www.peterprovost.org/blog/2012/04/25/visual-studio-11-fakes-part-2)
-- [Vidéo (1h16) : Testing Untestable Code with Fakes in Visual Studio 2012](https://channel9.msdn.com/Events/TechEd/Europe/2012/DEV411)
+- [Blog de Peter Provost: Visual Studio 2012 shims](http://www.peterprovost.org/blog/2012/04/25/visual-studio-11-fakes-part-2)
+- [Vidéo (1h16): Test de code testable avec des faux dans Visual Studio 2012](https://channel9.msdn.com/Events/TechEd/Europe/2012/DEV411)

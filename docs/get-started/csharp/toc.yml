@@ -44,7 +44,7 @@
       href: ../tutorial-open-project-from-repo.md?toc=/visualstudio/get-started/csharp/toc.json&bc=/visualstudio/get-started/csharp/breadcrumb/toc.json
     - name: Écrire et modifier du code
       href: tutorial-editor.md
-    - name: Compilation et génération
+    - name: Compiler et générer
       href: ../../ide/compiling-and-building-in-visual-studio.md
     - name: Déboguer votre code
       href: ../csharp/tutorial-debugger.md

@@ -7,18 +7,18 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 4f7d44482937eb80540314db37bc9c664eaab689
-ms.sourcegitcommit: bf2e9d4ff38bf5b62b8af3da1e6a183beb899809
+ms.openlocfilehash: bd6d2f394edf1a1d2c96404a8af3714fbe9550d6
+ms.sourcegitcommit: 5d1b2895d3a249c6bea30eb12b0ad7c0f0862d85
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2020
-ms.locfileid: "77557948"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "80880349"
 ---
-# <a name="configure-unit-tests-by-using-a-runsettings-file"></a>Configurer des tests unitaires à l’aide d’un fichier *.runsettings*
+# <a name="configure-unit-tests-by-using-a-runsettings-file"></a>Configurer les tests unitaires à l’aide d’un fichier *.runsettings*
 
-Les tests unitaires dans Visual Studio peuvent être configurés à l’aide d’un fichier *.runsettings*. Par exemple, vous pouvez changer la version de .NET sur laquelle les tests sont exécutés, le répertoire des résultats des tests ou les données collectées pendant une série de tests.
+Les tests unitaires de Visual Studio peuvent être configurés à l’aide d’un fichier *.runsettings.* Par exemple, vous pouvez changer la version de .NET sur laquelle les tests sont exécutés, le répertoire des résultats des tests ou les données collectées pendant une série de tests.
 
-Les fichiers de paramètres d’exécution sont facultatifs. Si vous n’avez pas besoin d’une configuration spéciale, un fichier *.runsettings* n’est pas nécessaire. Une utilisation courante d’un fichier *.runsettings* est de personnaliser [l’analyse de la couverture du code](../test/customizing-code-coverage-analysis.md).
+Les fichiers de paramètres d’exécution sont facultatifs. Si vous n’avez pas besoin d’une configuration spéciale, vous n’avez pas besoin d’un fichier *.runsettings.* Une utilisation courante d’un fichier *.runsettings* est de personnaliser [l’analyse de la couverture du code](../test/customizing-code-coverage-analysis.md).
 
 ## <a name="specify-a-run-settings-file"></a>Spécifier un fichier de paramètres d’exécution
 
@@ -28,7 +28,7 @@ Les fichiers de paramètres d’exécution permettent de configurer des tests qu
 
 ::: moniker range="vs-2017"
 
-Pour spécifier un fichier de paramètres d’exécution dans l’IDE, sélectionnez **tester** les **paramètres de test** > > **Sélectionnez fichier de paramètres de test**, puis sélectionnez le fichier *. RunSettings* .
+Pour spécifier un fichier de paramètres d'exécution dans l’IDE, sélectionnez **Test** > **Paramètres de test** > **Sélectionner le fichier de paramètres des tests**, puis sélectionnez le fichier *.runsettings*.
 
 ![Option de menu Sélectionner le fichier de paramètres des tests dans Visual Studio 2017](media/select-test-settings-file.png)
 
@@ -38,52 +38,53 @@ Le fichier apparaît dans le menu Paramètres de test. Vous pouvez le sélection
 
 ::: moniker range=">=vs-2019"
 
-#### <a name="visual-studio-2019-version-163-and-earlier"></a>Visual Studio 2019 version 16,3 et versions antérieures
+#### <a name="visual-studio-2019-version-163-and-earlier"></a>Visual Studio 2019 version 16.3 et plus tôt
 
-Pour spécifier un fichier de paramètres d’exécution dans l’IDE, sélectionnez **tester** > **Sélectionner le fichier de paramètres**. Accédez au fichier *.runsettings* et sélectionnez-le.
+Pour spécifier un fichier de paramètres d’exécution dans l’IDE, sélectionnez le**fichier Paramètres De sélection de** **test** > . Accédez au fichier *.runsettings* et sélectionnez-le.
 
 ![Option de menu Sélectionner le fichier de paramètres des tests dans Visual Studio 2019](media/vs-2019/select-settings-file.png)
 
-Le fichier apparaît dans le menu test, et vous pouvez le sélectionner ou le désélectionner. Quand il est sélectionné, le fichier de paramètres d’exécution s’applique quand vous sélectionnez **Analyser la couverture du code**.
+Le fichier apparaît sur le menu Test, et vous pouvez le sélectionner ou le désélectionner. Quand il est sélectionné, le fichier de paramètres d’exécution s’applique quand vous sélectionnez **Analyser la couverture du code**.
 
-#### <a name="visual-studio-2019-version-164-and-later"></a>Visual Studio 2019 version 16,4 et versions ultérieures
+#### <a name="visual-studio-2019-version-164-and-later"></a>Visual Studio 2019 version 16.4 et plus tard
 
-Il existe trois façons de spécifier un fichier de paramètres d’exécution dans Visual Studio 2019 version 16,4 et versions ultérieures :
+Il existe trois façons de spécifier un fichier de paramètres d’exécution dans visual Studio 2019 version 16.4 et plus tard:
 
-- Ajoutez une propriété de build à un projet par le biais du fichier projet ou d’un fichier Directory. Build. props. Le fichier de paramètres d’exécution d’un projet est spécifié par la propriété **RunSettingsFilePath**. 
+- Ajoutez une propriété de construction à un projet par le biais du dossier de projet ou d’un fichier Directory.Build.props. Le fichier des paramètres d’exécution d’un projet est spécifié par la propriété **RunSettingsFilePath**.
 
-    - Les paramètres d’exécution au niveau du projet sont C#actuellement pris en C++charge dans F# les projets, VB, et.
+    - Les paramètres d’exécution au niveau du projet sont actuellement pris en charge dans les projets C, VB, C ET F.
     - Un fichier spécifié pour un projet remplace tout autre fichier de paramètres d’exécution spécifié dans la solution.
+    - [Ces propriétés MSBuild](https://docs.microsoft.com/visualstudio/msbuild/msbuild-reserved-and-well-known-properties?view=vs-2019) peuvent être utilisées pour spécifier le chemin vers le fichier runsettings. 
 
-    Exemple de spécification d’un fichier *. RunSettings* pour un projet :
+    Exemple de spécifier un fichier *.runsettings* pour un projet :
     
     ```xml
     <Project Sdk="Microsoft.NET.Sdk">
       <PropertyGroup>
-        <RunSettingsFilePath>$(SolutionDir)\example.runsettings</RunSettingsFilePath>
+        <RunSettingsFilePath>$(MSBuildProjectDirectory)\example.runsettings</RunSettingsFilePath>
       </PropertyGroup>
       ...
     </Project>
     ```
 
-- Placez un fichier de paramètres d’exécution nommé « . RunSettings » à la racine de votre solution.
+- Placez un fichier de paramètres d’exécution nommé ".runsettings" à la racine de votre solution.
 
-  Si la détection automatique des fichiers de paramètres d’exécution est activée, les paramètres de ce fichier sont appliqués dans l’ensemble des tests exécutés. Vous pouvez activer la détection automatique des fichiers RunSettings à partir de deux emplacements :
+  Si la détection automatique des fichiers de paramètres d’exécution est activée, les paramètres de ce fichier sont appliqués sur tous les tests exécutés. Vous pouvez activer la détection automatique des fichiers runsettings à partir de deux endroits :
   
-    - **Outils** > **Options** > **Tester** > **détecter automatiquement les fichiers RunSettings**
+    - **Outils** > **Options** > **Test** > **Auto Detect runsettings Files**
 
-      ![Option de détection automatique de fichier RunSettings dans Visual Studio 2019](media/vs-2019/auto-detect-runsettings-tools-window.png)
+      ![Auto détecter l’option de fichiers runsettings dans Visual Studio 2019](media/vs-2019/auto-detect-runsettings-tools-window.png)
       
-    - **Test** > **configurer les paramètres d’exécution** > **détecter automatiquement les fichiers RunSettings**
+    - **Paramètres** > **d’exécution de configuration de** > test **Automatique Détecter les fichiers de runsettings**
     
-      ![Menu détection automatique du fichier RunSettings dans Visual Studio 2019](media/vs-2019/auto-detect-runsettings-menu.png)
+      ![Auto detect runsettings menu de fichiers dans Visual Studio 2019](media/vs-2019/auto-detect-runsettings-menu.png)
 
-- Dans l’IDE, sélectionnez **Test** > **configurer les paramètres d’exécution** > **sélectionnez le fichier solution RunSettings**, puis sélectionnez le fichier *. RunSettings* .
+- Dans l’IDE, sélectionnez **Les** > > **paramètres d’exécution de configuration** de test **sélectionnez le fichier de runsettings de solution large,** puis sélectionnez le fichier *.runsettings.*
 
-   ![Menu fichier RunSettings de la solution de test dans Visual Studio 2019](media/vs-2019/select-solution-settings-file.png)
+   ![Sélectionnez le menu de fichiers runsettings à l’échelle de la solution de test dans Visual Studio 2019](media/vs-2019/select-solution-settings-file.png)
       
-   - Ce fichier remplace le fichier « . RunSettings » à la racine de la solution, s’il existe, et s’applique à toutes les exécutions de tests.  
-   - Cette sélection de fichier est conservée uniquement localement. 
+   - Ce fichier remplace le fichier ".runsettings" à la racine de la solution, s’il existe, et est appliqué sur tous les tests exécutés.  
+   - Cette sélection de fichiers ne persiste que localement. 
 
 ::: moniker-end
 
@@ -95,13 +96,13 @@ Pour exécuter des tests depuis la ligne de commande, utilisez *vstest.console.e
 
    ::: moniker range="vs-2017"
 
-   Dans le menu **Démarrer** de Windows, choisissez **Visual Studio 2017** > **invite de commandes développeur pour vs 2017**.
+   Dans le menu **Démarrer** de Windows, choisissez **Visual Studio 2017** > **Invite de commandes développeur pour Visual Studio 2017**.
 
    ::: moniker-end
 
    ::: moniker range=">=vs-2019"
 
-   Dans le menu **Démarrer** de Windows, choisissez **Visual Studio 2019** > **invite de commandes développeur pour vs 2019**.
+   Dans le menu **Démarrer** de Windows, choisissez **Visual Studio 2019** > **Invite de commandes développeur pour Visual Studio 2019**.
 
    ::: moniker-end
 
@@ -138,14 +139,14 @@ Pour personnaliser vos tests en utilisant un fichier *.runsettings*, effectuez l
 
 ::: moniker range=">=vs-2019"
 
-3. Pour sélectionner le fichier de paramètres d’exécution, choisissez **Test** > **Sélectionner le fichier de paramètres**. Accédez au fichier *.runsettings* que vous avez créé, puis sélectionnez **OK**.
+3. Pour sélectionner le fichier de paramètres d’exécution, choisissez le**fichier Paramètres De sélection de** **tests** > . Accédez au fichier *.runsettings* que vous avez créé, puis sélectionnez **OK**.
 
 ::: moniker-end
 
    > [!TIP]
    > Vous pouvez créer plusieurs fichiers *.runsettings* dans votre solution et en sélectionner un en tant que fichier de paramètres de test actif en fonction des besoins.
 
-## <a name="example-runsettings-file"></a>Exemple de fichier *.runsettings*
+## <a name="example-runsettings-file"></a>Exemple *.runsettings* fichier
 
 Le code XML suivant illustre le contenu d’un fichier *.runsettings* type. Chaque élément du fichier est facultatif, car il a une valeur par défaut.
 
@@ -256,8 +257,9 @@ L’élément **RunConfiguration** peut inclure les éléments suivants :
 |**TargetPlatform**|x86|x86, x64|
 |**TreatTestAdapterErrorsAsWarnings**|false|false, true|
 |**TestAdaptersPaths**||Un ou plusieurs chemins du répertoire où se trouvent les TestAdapters|
-|**MaxCpuCount**|1|Ce paramètre permet de contrôler le degré d’exécution des tests parallèles lors des tests unitaires, en utilisant les cœurs disponibles sur la machine. Le moteur d’exécution des tests démarre en tant que processus distinct sur chaque cœur disponible et donne à chaque cœur un conteneur de tests à exécuter. Un conteneur peut être un assembly, une DLL ou un artefact approprié. Le conteneur de test est l’unité de planification. Dans chaque conteneur, les tests sont exécutés en fonction de l’infrastructure de tests configurée. S’il y a beaucoup de conteneurs, chaque processus reçoit le conteneur disponible suivant dès qu’il a terminé l’exécution des tests d’un conteneur.<br /><br />Valeur possible pour MaxCpuCount :<br /><br />n, où 1 < = n < = nombre de cœurs : jusqu’à n processus peuvent être lancés.<br /><br />n, où n = toute autre valeur : le nombre de processus lancés peut atteindre le nombre de cœurs disponibles. Par exemple, définissez n = 0 pour permettre à la plateforme de déterminer automatiquement le nombre optimal de processus à lancer en fonction de l’environnement.|
+|**MaxCpuCount**|1|Ce paramètre permet de contrôler le degré d’exécution des tests parallèles lors des tests unitaires, en utilisant les cœurs disponibles sur la machine. Le moteur d’exécution des tests démarre en tant que processus distinct sur chaque cœur disponible et donne à chaque cœur un conteneur de tests à exécuter. Un conteneur peut être un assembly, une DLL ou un artefact approprié. Le conteneur de test est l’unité de planification. Dans chaque conteneur, les tests sont exécutés en fonction du framework de test configuré. S’il y a beaucoup de conteneurs, chaque processus reçoit le conteneur disponible suivant dès qu’il a terminé l’exécution des tests d’un conteneur.<br /><br />Valeur possible pour MaxCpuCount :<br /><br />n, où 1 < = n < = nombre de cœurs : jusqu’à n processus peuvent être lancés.<br /><br />n, où n n ' toute autre valeur: le nombre de processus lancés peut être à la hauteur du nombre de cœurs disponibles. Par exemple, définissez n'0 pour permettre à la plate-forme de décider automatiquement du nombre optimal de processus à lancer en fonction de l’environnement.|
 |**TestSessionTimeout**||Permet aux utilisateurs de mettre fin à une session de test lorsque celle-ci dépasse le délai spécifié. La définition d’un délai d’expiration garantit que les ressources sont consommées et que les sessions de test sont limitées à une durée spécifique. Le paramètre est disponible dans **Visual Studio 2017 versions 15.5** et ultérieures.|
+|**Sentier DotnetHost**||Spécifier un chemin personnalisé à l’hôte dotnet qui est utilisé pour exécuter le testhost. Ceci est utile lorsque vous construisez votre propre dotnet, par exemple lors de la construction du référentiel pointnet/runtime. Spécifier cette option sautera la recherche de testhost.exe, et utilisera toujours le testhost.dll. 
 
 ### <a name="diagnostic-data-adapters-data-collectors"></a>Diagnostic des adaptateurs de données (collecteurs de données)
 
@@ -297,7 +299,7 @@ Pour personnaliser un autre type d’adaptateur de données de diagnostic, utili
 </TestRunParameters>
 ```
 
-Les paramètres de série de tests offrent un moyen de définir des variables et des valeurs qui sont disponibles pour les tests au moment de l’exécution. Accédez aux paramètres à l’aide de la propriété <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext.Properties%2A?displayProperty=nameWithType> :
+Les paramètres d’exécution de test fournissent un moyen de définir les variables et les valeurs qui sont disponibles pour les essais au moment de l’exécution. Accédez aux paramètres à l’aide de la propriété <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext.Properties%2A?displayProperty=nameWithType> :
 
 ```csharp
 [TestMethod]
@@ -328,7 +330,7 @@ Ces paramètres sont spécifiques à l’adaptateur de test qui exécute les mé
 |Configuration|Default|Valeurs|
 |-|-|-|
 |**ForcedLegacyMode**|false|Dans Visual Studio 2012, l’adaptateur MSTest a été optimisé afin d’être plus rapide et plus scalable. Un comportement, tel que l’ordre dans lequel les tests sont exécutés, peut ne pas être exactement identique à celui d’éditions précédentes de Visual Studio. Définissez cette valeur sur **true** pour utiliser l’adaptateur de test le plus ancien.<br /><br />Par exemple, vous pouvez utiliser ce paramètre si un fichier *app.config* est spécifié pour un test unitaire.<br /><br />Il est recommandé d’envisager de refactoriser vos tests pour vous permettre d’utiliser le nouvel adaptateur.|
-|**IgnoreTestImpact**|false|La fonctionnalité d’impact de test classe par priorité les tests affectés par des modifications récentes, lorsqu’ils sont exécutés dans MSTest ou à partir de Microsoft Test Manager. Ce paramètre désactive la fonctionnalité. Pour plus d’informations, consultez [Quels tests doivent être exécutés depuis une version antérieure ?](https://msdn.microsoft.com/library/dd286589).|
+|**IgnoreTestImpact**|false|La fonction d’impact de test donne la priorité aux tests qui sont affectés par des changements récents, lorsqu’ils sont exécutés dans MSTest ou à partir de Microsoft Test Manager (déprécié dans Visual Studio 2017). Ce paramètre désactive la fonctionnalité. Pour plus d’informations, consultez [Quels tests doivent être exécutés depuis une version antérieure ?](https://msdn.microsoft.com/library/dd286589).|
 |**SettingsFile**||Vous pouvez spécifier un fichier de paramètres de test à utiliser avec l’adaptateur MSTest ici. Vous pouvez également spécifier un fichier de paramètres de test à partir du [menu de paramètres](#ide).<br /><br />Si vous spécifiez cette valeur, vous devez également affecter à **ForcedlegacyMode** la valeur **true**.<br /><br />`<ForcedLegacyMode>true</ForcedLegacyMode>`|
 |**KeepExecutorAliveAfterLegacyRun**|false|Une fois qu’une série de tests est terminée, MSTest est arrêté. Tout processus qui est lancé dans le cadre du test est également terminé. Si vous souhaitez conserver l’exécuteur de test actif, définissez la valeur sur **true**. Par exemple, vous pouvez utiliser ce paramètre pour que le navigateur continue à s’exécuter entre des tests codés de l’interface utilisateur.|
 |**DeploymentEnabled**|true|Si vous définissez cette valeur sur **false**, les éléments de déploiement que vous avez spécifiés dans votre méthode de test ne sont pas copiés dans le répertoire de déploiement.|
@@ -343,3 +345,4 @@ Ces paramètres sont spécifiques à l’adaptateur de test qui exécute les mé
 - [Configurer une série de tests](https://github.com/microsoft/vstest-docs/blob/master/docs/configure.md)
 - [Personnaliser l’analyse de la couverture du code](../test/customizing-code-coverage-analysis.md)
 - [Tâche de test Visual Studio (Azure Test Plans)](/azure/devops/pipelines/tasks/test/vstest?view=vsts)
+

@@ -4,27 +4,27 @@ description: Apprenez dès maintenant à créer un projet de service cloud Azure
 author: ghogen
 manager: jillfra
 assetId: ec580df7-3dcc-45a9-a1d9-8c110678dfb5
-ms.custom: seodec18
+ms.custom: vs-azure
 ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 03/19/2019
 ms.author: ghogen
-ms.openlocfilehash: 722c816329c70bb2efad03f9554e201bcc9fde16
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: 23e2db0b42fb12872feb5942d9f4eeaab96d3c2d
+ms.sourcegitcommit: 59a8732dc563242590f7c6ccf4ced6c6d195533c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71253474"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81489751"
 ---
 # <a name="create-an-azure-cloud-service-project-with-visual-studio"></a>Créer un projet de service cloud Azure avec Visual Studio
 
-Les outils Azure pour Visual Studio fournissent un modèle de projet vous permettant de créer un [service cloud Azure](/azure/cloud-services/cloud-services-choose-me), qui est un simple service Azure à usage général. Une fois le projet créé, Visual Studio vous permet de configurer, déboguer et déployer le service cloud dans Azure.
+Visual Studio fournit un modèle de projet qui vous permet de créer un [service cloud Azure,](/azure/cloud-services/cloud-services-choose-me)qui est un simple service Azure polyvalent. Une fois le projet créé, Visual Studio vous permet de configurer, déboguer et déployer le service cloud dans Azure.
 
 ## <a name="steps-to-create-an-azure-cloud-service-project-in-visual-studio"></a>Étapes pour créer un projet de service cloud Azure dans Visual Studio
 Cette section vous guide dans le processus de création d’un projet de service cloud Azure dans Visual Studio avec un ou plusieurs rôles web.
 
 ::: moniker range="vs-2017"
-1. Ouvrez Visual Studio en tant qu’administrateur.
+1. Ouvrez Visual Studio en tant qu’administrateur.
 
 1. Dans le menu principal, sélectionnez **Fichier** > **Nouveau** > **Projet**.
 
@@ -60,7 +60,7 @@ Cette section vous guide dans le processus de création d’un projet de service
 
 Le projet Azure Visual Studio est associé aux projets de rôle de la solution. Le projet comprend également le *fichier de définition de service* et le *fichier de configuration de service* :
 
-- **Fichier de définition de service** : définit les paramètres d’exécution de votre application, y compris les rôles requis, les points de terminaison et la taille de la machine virtuelle.
+- **Fichier de définition de service** - Définit les paramètres de fonctionnement de votre application, y compris les rôles requis, les paramètres de terminaison et la taille de la machine virtuelle.
 - **Fichier de configuration de service** : configure le nombre d’instances d’un rôle exécutées et les valeurs des paramètres définis pour un rôle.
 
 Pour plus d’informations sur ces fichiers,voir [Configuration des rôles pour un service cloud Azure avec Visual Studio](vs-azure-tools-configure-roles-for-cloud-service.md).

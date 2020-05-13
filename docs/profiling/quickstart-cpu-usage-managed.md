@@ -1,5 +1,5 @@
 ---
-title: Analyser les données d’utilisationC#de l’UC (, Visual Basic)
+title: Analyser les données d’utilisation du processeur (C, Visual Basic)
 description: Mesurer les performances des applications en C# et Visual Basic à l’aide de l’outil de diagnostic de l’utilisation de l’UC
 ms.custom: mvc
 ms.date: 02/14/2020
@@ -12,18 +12,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 8fd77fe5fc00e8c1a3b487c93a6004b2f8cf7060
-ms.sourcegitcommit: bf2e9d4ff38bf5b62b8af3da1e6a183beb899809
+ms.openlocfilehash: 663a9c9e5e76792b4478d6ecca3043a8a2893268
+ms.sourcegitcommit: 0ba0cbff77eac15feab1a73eeee3667006794b29
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2020
-ms.locfileid: "77558201"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "80411999"
 ---
-# <a name="quickstart-analyze-cpu-usage-data-in-visual-studio-c-visual-basic"></a>Démarrage rapide : analyser les données d’utilisation de l'C#UC dans Visual Studio (, Visual Basic)
+# <a name="quickstart-analyze-cpu-usage-data-in-visual-studio-c-visual-basic"></a>Quickstart: Analyser les données d’utilisation du processeur dans Visual Studio (C, Visual Basic)
 
 Visual Studio fournit de nombreuses fonctionnalités puissantes qui vous permettent d’analyser les problèmes de performances dans votre application. Cette rubrique vous offre un moyen rapide de vous familiariser avec quelques-unes des fonctionnalités de base. Ici, nous allons examiner l’outil pour identifier les goulots d’étranglement de performances liés à une utilisation élevée de l’UC. Les outils de diagnostics sont pris en charge pour le développement .NET dans Visual Studio (y compris ASP.NET) et pour le développement natif/C++.
 
-Le hub de diagnostic propose de nombreuses autres options pour exécuter et gérer votre session de diagnostic. Si l’outil **Utilisation de l’UC** décrit ici ne vous fournit pas les données dont vous avez besoin, les [autres outils de profilage](../profiling/profiling-feature-tour.md) fournissent d’autres types d’informations qui peuvent vous être utiles. Dans de nombreux cas, le goulot d’étranglement des performances de votre application peut ne pas provenir de votre processeur, mais de la mémoire, de l’interface utilisateur de rendu ou du temps de requête réseau. Le hub de diagnostic vous offre de nombreuses autres options pour enregistrer et analyser ce type de données.
+Le hub de diagnostic propose de nombreuses autres options pour exécuter et gérer votre session de diagnostic. Si l’outil **Utilisation de l’UC** décrit ici ne vous fournit pas les données dont vous avez besoin, les [autres outils de profilage](../profiling/profiling-feature-tour.md) fournissent des types d’informations différents qui peuvent vous être utiles. Dans de nombreux cas, le goulot d’étranglement des performances de votre application peut ne pas provenir de votre processeur, mais de la mémoire, de l’interface utilisateur de rendu ou du temps de requête réseau. Le hub de diagnostic vous offre de nombreuses autres options pour enregistrer et analyser ce type de données. [PerfTips](../profiling/perftips.md), un autre outil de profilage intégré de débbugger, vous permet également de passer à travers le code et d’identifier combien de temps il faut des fonctions particulières ou des blocs de code pour remplir.
 
 Windows 8 et les versions ultérieures sont nécessaires pour exécuter les Outils de profilage avec le débogueur (fenêtre **Outils de diagnostic**). Sur Windows 7 et les versions ultérieures, vous pouvez utiliser l’outil post mortem [Profileur de performances](../profiling/profiling-feature-tour.md).
 
@@ -32,31 +32,31 @@ Windows 8 et les versions ultérieures sont nécessaires pour exécuter les Out
 1. Ouvrez Visual Studio et créez le projet.
 
    ::: moniker range="vs-2017"
-   Dans la barre de menus supérieure, choisissez **fichier** > **nouveau** > **projet**.
+   Dans la barre de menus supérieure, choisissez **Fichier** > **Nouveau** > **Projet**.
 
-   Dans la boîte de dialogue **nouveau projet** dans le volet gauche, **C#** développez ou **Visual Basic**, puis choisissez **.net Core**. Dans le volet central, choisissez **Application console (.NET Core)** . Nommez ensuite le projet *MyProfilerApp*.
+   Dans la boîte de dialogue **New Project** dans la vitre gauche, étendre **C** ou **Visual Basic**, puis choisissez **.NET Core**. Dans le volet central, choisissez **Application console (.NET Core)**. Ensuite, nommez le projet *MyProfilerApp*.
 
-   Si vous ne voyez pas le modèle de projet **Application console (.NET Core)** , cliquez sur le lien **Ouvrir Visual Studio Installer** dans le volet gauche de la boîte de dialogue **Nouveau projet**. Visual Studio Installer est lancé. Choisissez la charge de travail **Développement multiplateforme .NET Core**, puis choisissez **Modifier**.
+   Si vous ne voyez pas le modèle de projet **Application console (.NET Core)**, cliquez sur le lien **Ouvrir Visual Studio Installer** dans le volet gauche de la boîte de dialogue **Nouveau projet**. Visual Studio Installer est lancé. Choisissez la charge de travail **Développement multiplateforme .NET Core**, puis choisissez **Modifier**.
    ::: moniker-end
    ::: moniker range="vs-2019"
-   Si la fenêtre de démarrage n’est pas ouverte, choisissez **fichier** > **fenêtre démarrer**.
+   Si la fenêtre de démarrage n’est pas ouverte, choisissez **File** > **Start Window**.
 
-   Dans la fenêtre de démarrage, choisissez **Créer un projet**.
+   Sur la fenêtre de départ, choisissez **Créer un nouveau projet**.
 
-   Dans la fenêtre **Créer un projet**, entrez ou tapez *console* dans la zone de recherche. Ensuite, choisissez **C#** ou **Visual Basic** dans la liste langue, puis choisissez **Windows** dans la liste plateforme.
+   Dans la fenêtre **Créer un projet**, entrez ou tapez *console* dans la zone de recherche. Ensuite, choisissez **C ou** **Visual Basic** dans la liste de langue, puis choisissez **Windows** dans la liste de la plate-forme.
 
-   Après avoir appliqué les filtres de langage et de plateforme, choisissez le modèle **Application console (.NET Core)** , puis choisissez **Suivant**.
+   Après avoir appliqué les filtres de langage et de plateforme, choisissez le modèle **Application console (.NET Core)**, puis choisissez **Suivant**.
 
    > [!NOTE]
-   > Si vous ne voyez pas le modèle **Application console (.NET Core)** , vous pouvez l’installer à partir de la fenêtre **Créer un projet**. Dans le **Vous ne trouvez pas ce que vous cherchez ?** , choisissez le lien **Installer plus d’outils et de fonctionnalités**. Ensuite, dans Visual Studio Installer, choisissez la charge de travail **Développement multiplateforme .NET Core**.
+   > Si vous ne voyez pas le modèle **Application console (.NET Core)**, vous pouvez l’installer à partir de la fenêtre **Créer un projet**. Dans le **Vous ne trouvez pas ce que vous cherchez ?**, choisissez le lien **Installer plus d’outils et de fonctionnalités**. Ensuite, dans Visual Studio Installer, choisissez la charge de travail **Développement multiplateforme .NET Core**.
 
-   Dans la fenêtre **configurer votre nouveau projet** , tapez ou entrez *MyProfilerApp* dans la zone **nom du projet** . Choisissez ensuite **Créer**.
+   Dans la configuration de votre nouvelle fenêtre **de projet,** tapez ou entrez *MyProfilerApp* dans la boîte **de nom du projet.** Ensuite, choisissez **Créer**.
 
    ::: moniker-end
 
    Visual Studio ouvre votre nouveau projet.
 
-2. Ouvrez le fichier *Program.cs* et remplacez tout le code par le code suivant :
+2. Ouvrez *Program.cs* et remplacez tout le code par le code suivant :
 
     ```csharp
     using System;
@@ -175,7 +175,7 @@ Windows 8 et les versions ultérieures sont nécessaires pour exécuter les Out
     ```
 
     > [!NOTE]
-    > En Visual Basic, vérifiez que l’objet de démarrage est défini sur `Sub Main` (**Propriétés** > **Applications** > **Objet de démarrage**).
+    > Dans Visual Basic, assurez-vous que `Sub Main` l’objet de démarrage est configuré à **(Properties** > **Application** > **Startup Object**).
 
 ## <a name="step-1-collect-profiling-data"></a>Étape 1 : Collecter les données de profilage
 
@@ -193,18 +193,17 @@ Windows 8 et les versions ultérieures sont nécessaires pour exécuter les Out
 
      ![Définir des points d’arrêt pour le profilage](../profiling/media/quickstart-cpu-usage-breakpoints.png "Définir des points d’arrêt pour le profilage")
 
-    > [!TIP]
-    > En définissant deux points d’arrêt, vous limitez la collecte de données aux sections de code que vous souhaitez analyser.
+    En définissant deux points d’arrêt, vous limitez la collecte de données aux sections de code que vous souhaitez analyser.
 
-3. La fenêtre **Outils de diagnostic** est déjà visible, sauf si vous l’avez désactivée. Pour réafficher la fenêtre, cliquez sur **Déboguer** > **Fenêtres** > **Afficher les outils de diagnostic**.
+3. La fenêtre **Outils de diagnostic** est déjà visible, sauf si vous l’avez désactivée. Pour retouaître la fenêtre, cliquez sur **Debug** > **Windows** > **Show Diagnostic Tools**.
 
-4. Cliquez sur **Déboguer** > **Démarrer le débogage** (ou bien sur **Démarrer** dans la barre d’outils, ou sur **F5**).
+4. Cliquez sur **Debug** > **Démarrer Debugging** (ou **Démarrer** sur la barre d’outils, ou **F5**).
 
      Quand l’application est chargée, la vue **Résumé** des outils de diagnostics s’affiche.
 
 5. Pendant que le débogueur est suspendu, activez la collecte des données d’utilisation de l’UC en choisissez **Enregistrer le profil du processeur**, puis ouvrez l’onglet **Utilisation de l’UC**.
 
-     ![Les outils de diagnostics activent le profilage de l’UC](../profiling/media/quickstart-cpu-usage-summary.png "Outils de diagnostic - Activer le profilage de l’UC")
+     ![Outils de diagnostic - Activer le profilage de l’UC](../profiling/media/quickstart-cpu-usage-summary.png "Outils de diagnostic - Activer le profilage de l’UC")
 
      Quand la collecte des données est activée, le bouton d’enregistrement affiche un cercle rouge.
 
@@ -226,7 +225,7 @@ Nous vous recommandons de commencer à analyser vos données en examinant la lis
 
 1. Dans la liste des fonctions, examinez celles qui effectuent le plus de travail.
 
-     ![Onglet utilisation de l’UC des outils de diagnostic](../profiling/media/quickstart-cpu-usage-cpu.png "DiagToolsCPUUsageTab")
+     ![Diagnostics Tools CPU Use Tab (en anglais)](../profiling/media/quickstart-cpu-usage-cpu.png "DiagToolsCPUUsageTab")
 
     > [!TIP]
     > Les fonctions sont classées par ordre et ce sont celles qui effectuent le plus de travail qui figurent en haut de la liste (elles ne sont pas classées selon leur ordre d’appel). Ainsi, vous pouvez identifier rapidement les fonctions avec les temps d’exécution les plus longs.
@@ -235,7 +234,7 @@ Nous vous recommandons de commencer à analyser vos données en examinant la lis
 
     Quand vous double-cliquez sur la fonction, la vue **Appelant/appelé** s’ouvre dans le volet gauche.
 
-    ![Vue de l’appelant des outils de diagnostic](../profiling/media/quickstart-cpu-usage-caller-callee.png "DiagToolsCallerCallee")
+    ![Outils de diagnostic - Vue Appelant/appelé](../profiling/media/quickstart-cpu-usage-caller-callee.png "DiagToolsCallerCallee DiagToolsCallerCallee")
 
     Dans cette vue, la fonction sélectionnée apparaît dans le titre et dans la zone **Fonction active** (ici, `GetNumber`). La fonction qui a appelé la fonction active s’affiche sur la gauche sous **Fonctions appelantes**, et toutes les fonctions appelées par la fonction active s’affichent dans la zone **Fonctions appelées** située à droite. Vous pouvez sélectionner l’une ou l’autre de ces zones pour modifier la fonction active.
 

@@ -11,15 +11,15 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 3b100defd8f50b4a487e46eef4183457e724a015
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "72666182"
 ---
 # <a name="options-text-editor-html-web-forms-miscellaneous"></a>Options, Éditeur de texte, HTML (Web Forms), Divers
 
-Utilisez la page options **Divers** pour définir les préférences quant à la façon dont l’éditeur HTML gère les éléments collés dans la page. Pour accéder à cette page, dans la barre de menus, choisissez **Outils** > **Options**, puis développez **Éditeur de texte** > **HTML (Web Forms)**  > **Divers**.
+Utilisez la page options **Divers** pour définir les préférences quant à la façon dont l’éditeur HTML gère les éléments collés dans la page. Pour accéder à cette page, sur la barre de menu, choisissez **Tools** > **Options**, puis développez Text **Editor** > **HTML (Web Forms)** > **Divers**.
 
 ## <a name="miscellaneous-html-options"></a>Options HTML diverses
 
@@ -33,4 +33,4 @@ Utilisez la page options **Divers** pour définir les préférences quant à la 
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Général, Environnement, boîte de dialogue Options](../../ide/reference/general-environment-options-dialog-box.md)
+- [Général, Environnement, Options Dialog Box](../../ide/reference/general-environment-options-dialog-box.md)

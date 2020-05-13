@@ -15,13 +15,13 @@ ms.workload:
 - multiple
 author: mikejo5000
 ms.openlocfilehash: f50dad637d9efa2db347ff9f1b4828abf8c733af
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75589186"
 ---
-# <a name="how-to-create-a-data-driven-unit-test"></a>Comment : créer un test unitaire piloté par les données
+# <a name="how-to-create-a-data-driven-unit-test"></a>Comment : Créer un test unitaire axé sur les données
 
 Vous pouvez utiliser l’infrastructure de test unitaire de Microsoft pour le code managé afin de configurer une méthode de test unitaire permettant de récupérer des valeurs auprès d’une source de données. La méthode est exécutée successivement pour chaque ligne de la source de données, ce qui permet de tester facilement diverses entrées à l’aide d’une seule méthode.
 
@@ -63,11 +63,11 @@ public int AddIntegers(int first, int second)
 }
 ```
 
-## <a name="create-a-data-source"></a>Créer une source de données
+## <a name="create-a-data-source"></a>Création d'une source de données
 
 Pour tester la méthode `AddIntegers`, créez une source de données qui spécifie une plage de valeurs pour les paramètres et la somme à retourner. Dans cet exemple, nous allons créer une base de données SQL Compact nommée `MathsData` et une table nommée `AddIntegersData`, qui contient les noms et valeurs de colonnes suivants
 
-|FirstNumber|SecondNumber|Sum|
+|FirstNumber|SecondNumber|SUM|
 |-|------------------|-|
 |0|1|1|
 |1|1|2|
@@ -89,7 +89,7 @@ public TestContext TestContext
 Dans votre méthode de test, vous accédez aux données via la propriété d’indexeur `DataRow` de `TestContext`.
 
 > [!NOTE]
-> .NET Core ne prend pas en charge l’attribut [DataSource](xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataSourceAttribute). Si vous essayez d’accéder aux données de test de cette façon dans un projet de test unitaire .NET Core ou UWP, vous verrez une erreur similaire à **« 'TestContext' ne contient pas de définition pour 'DataRow' et aucune méthode d’extension accessible ’DataRow’ acceptant un premier argument de type 'TestContext' n’a été localisée (une directive using ou une référence d’assembly est-elle manquante ?) »** .
+> .NET Core ne prend pas en charge l’attribut [DataSource](xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataSourceAttribute). Si vous essayez d’accéder aux données de test de cette façon dans un projet de test unitaire .NET Core ou UWP, vous verrez une erreur similaire à **« 'TestContext' ne contient pas de définition pour 'DataRow' et aucune méthode d’extension accessible ’DataRow’ acceptant un premier argument de type 'TestContext' n’a été localisée (une directive using ou une référence d’assembly est-elle manquante ?) » **.
 
 ## <a name="write-the-test-method"></a>Écrire la méthode de test
 
@@ -160,7 +160,7 @@ int x = Convert.ToInt32(TestContext.DataRow["FirstNumber"]);
 
 ## <a name="run-the-test-and-view-results"></a>Exécuter le test et afficher les résultats
 
-Une fois que vous avez fini d’écrire une méthode de test, générez le projet de test. La méthode de test apparaît dans l’**Explorateur de tests**, dans le groupe **Tests non exécutés**. Tandis que vous exécutez, écrivez et réexécutez vos tests, **l’Explorateur de tests** affiche les résultats dans les groupes **Échecs de tests**, **Tests réussis** et **Tests non exécutés**. Vous pouvez choisir **Exécuter tout** pour exécuter tous vos tests ou **Exécuter** pour sélectionner un sous-ensemble de tests à exécuter.
+Une fois que vous avez fini d’écrire une méthode de test, générez le projet de test. La méthode de test apparaît dans l’**Explorateur de tests**, dans le groupe **Tests non exécutés**. Tandis que vous exécutez, écrivez et réexécutez vos tests, **l’Explorateur de tests** affiche les résultats dans les groupes **Échecs de tests**, **Tests réussis** et **Tests non exécutés**. Vous pouvez choisir **Run All** pour exécuter tous vos tests, ou choisir **Run** pour choisir un sous-ensemble de tests à exécuter.
 
 La barre des résultats des tests en haut de l’**Explorateur de tests** s’anime pendant l’exécution de votre test. À la fin de la série de tests, la barre est verte en cas de réussite de tous les tests, ou rouge en cas d’échec de l’un des tests. Un résumé de la série de tests s’affiche dans le volet d’informations, en bas de la fenêtre **Explorateur de tests**. Sélectionnez un test pour en afficher les détails dans le volet inférieur.
 
@@ -177,6 +177,6 @@ Quand la méthode testée est corrigée et que le test est réexécuté, la barr
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext?displayProperty=fullName>
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext.DataRow%2A?displayProperty=fullName>
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert?displayProperty=fullName>
-- [Tests unitaires sur votre code](../test/unit-test-your-code.md)
-- [Exécuter des tests unitaires avec l’Explorateur de tests](../test/run-unit-tests-with-test-explorer.md)
+- [Test unitaire de votre code](../test/unit-test-your-code.md)
+- [Exécuter des tests unitaires avec Test Explorer](../test/run-unit-tests-with-test-explorer.md)
 - [Écrire des tests unitaires pour .NET avec l’infrastructure de tests unitaires Microsoft](../test/unit-test-your-code.md)

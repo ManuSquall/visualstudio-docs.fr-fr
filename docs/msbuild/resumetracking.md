@@ -10,19 +10,20 @@ apitype: COM
 helpviewer_keywords:
 - ResumeTracking
 ms.assetid: d637e019-7c50-4b0a-812e-bc822001e697
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0e2ff32a4eb2218a8b3d09188c787156e484147f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 248bb5e5e01b8209f826478e90b2c60b70922987
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62996697"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "77632496"
 ---
 # <a name="resumetracking"></a>ResumeTracking
+
 Reprend le suivi dans le contexte actuel.
 
 ## <a name="syntax"></a>Syntaxe
@@ -31,11 +32,14 @@ Reprend le suivi dans le contexte actuel.
 HRESULT WINAPI ResumeTracking();
 ```
 
-## <a name="return-value"></a>Valeur de retour
- Un **HRESULT** avec le bit **SUCCEEDED** défini si le suivi a été repris. **E_FAIL** est retourné si le suivi ne peut pas être repris, car le contexte n’était pas disponible.
+## <a name="return-value"></a>Valeur retournée
+
+ Un **HRESULT** avec l’ensemble **de bits SUCCEEDED** si le suivi a été repris. **E_FAIL** est retourné si le suivi ne peut être repris parce que le contexte n’était pas disponible.
 
 ## <a name="requirements"></a>Spécifications
+
  **En-tête :** *FileTracker.h*
 
 ## <a name="see-also"></a>Voir aussi
+
 - [SuspendTracking](../msbuild/suspendtracking.md)

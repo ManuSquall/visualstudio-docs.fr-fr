@@ -1,30 +1,30 @@
 ---
-title: Champ AsyncTaskMethodBuilder.m_builder | Microsoft Docs
+title: AsyncTaskMethodBuilder.m_builder Champ (fr) Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - m_builder field, AsyncTaskMethodBuilder structure [.NET Framework debug engines]
 ms.assetid: bfaf25a2-0f08-413f-b474-9ce0d97c0eeb
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 61a4f761671c67ee1fe77883534b585f4f2f3715
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 0dd8bd1215700b8387f420e3aaec7e2ce73d9fec
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66322295"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80739406"
 ---
-# <a name="asynctaskmethodbuildermbuilder-field"></a>Champ AsyncTaskMethodBuilder.m_builder
-Représente l’objet de Générateur générique auquel cette instance non générique délègue.
+# <a name="asynctaskmethodbuilderm_builder-field"></a>AsyncTaskMethodBuilder.m_builder champ
+Représente l’objet de constructeur générique auquel cette instance non générique délègue des délégués.
 
- **Espace de noms :** <xref:System.Runtime.CompilerServices?displayProperty=fullName>
+ **Espace nom:**<xref:System.Runtime.CompilerServices?displayProperty=fullName>
 
- **Assembly :** mscorlib (dans mscorlib.dll)
+ **Assemblée:** mscorlib (en mscorlib.dll)
 
- Étant donné que vous ne pouvez pas accéder à ce membre interne du .NET Framework, la syntaxe suivante est fournie en commun Intermediate Language (CIL).
+ Parce que vous ne pouvez pas accéder à ce membre interne à partir du cadre .NET, la syntaxe suivante est fournie dans common Intermediate Language (CIL).
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -36,4 +36,4 @@ Représente l’objet de Générateur générique auquel cette instance non gén
 
 ## <a name="see-also"></a>Voir aussi
 - <xref:System.Runtime.CompilerServices.AsyncTaskMethodBuilder>
-- [Mécanismes internes d’extension parallèle pour le .NET Framework](../../extensibility/debugger/parallel-extension-internals-for-the-dotnet-framework.md)
+- [Internals d’extension parallèle pour le cadre .NET](../../extensibility/debugger/parallel-extension-internals-for-the-dotnet-framework.md)

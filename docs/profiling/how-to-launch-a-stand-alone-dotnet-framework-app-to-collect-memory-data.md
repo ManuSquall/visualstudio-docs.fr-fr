@@ -1,5 +1,5 @@
 ---
-title: 'Ligne de commande du profileur : Open Client .NET Framework App, recevoir des données de mémoire'
+title: 'Ligne de commande Profiler : Ouvrez l’application cadre .NET client, obtenez des données de mémoire'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 3bc53041-91b7-4ad0-8413-f8bf2c4b3f5e
@@ -10,10 +10,10 @@ monikerRange: vs-2017
 ms.workload:
 - dotnet
 ms.openlocfilehash: c9ee0ae59fd32394e31acc75184d0e55aaae872d
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74775352"
 ---
 # <a name="how-to-launch-a-stand-alone-net-framework-application-with-the-profiler-to-collect-memory-data-by-using-the-command-line"></a>Guide pratique pour lancer une application .NET Framework autonome avec le profileur pour collecter des données de mémoire en utilisant la ligne de commande
@@ -28,7 +28,7 @@ Cette rubrique explique comment utiliser les outils en ligne de commande des out
 - La fin de la session de profilage
 
 > [!NOTE]
-> Pour obtenir le chemin d’accès des outils de profilage, voir [Spécifier le chemin d’accès des outils en ligne de commande](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md). Les versions 64 bits et 32 bits des outils sont disponibles sur les ordinateurs 64 bits. Pour utiliser les outils en ligne de commande du profileur, vous devez ajouter le chemin des outils à la variable d’environnement PATH dans la fenêtre d’invite de commandes, ou l’ajouter à la commande.
+> Pour obtenir le chemin des outils de profilage, consultez [Spécifier le chemin des outils en ligne de commande](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md). Les versions 64 bits et 32 bits des outils sont disponibles sur les ordinateurs 64 bits. Pour utiliser les outils en ligne de commande du profileur, vous devez ajouter le chemin des outils à la variable d’environnement PATH dans la fenêtre d’invite de commandes, ou l’ajouter à la commande.
 
 ## <a name="start-the-application-with-the-profiler"></a>Démarrer l’application avec le profileur
  Pour démarrer une application cible à l’aide du profileur, utilisez les options **/start** et **/launch** de VSPerfCmd.exe pour initialiser le profileur et démarrer l’application. Vous pouvez spécifier **/start** et **/launch** et leurs options respectives sur une même ligne de commande.
@@ -37,42 +37,42 @@ Cette rubrique explique comment utiliser les outils en ligne de commande des out
 
 #### <a name="to-start-an-application-by-using-the-profiler"></a>Pour démarrer une application à l’aide du profileur
 
-1. Ouvrez une fenêtre d'invite de commandes.
+1. Ouvrez une fenêtre d’invite de commandes.
 
-2. Démarrer le profileur. Type :
+2. Démarrez le profileur. Tapez :
 
-    **VSPerfCmd /start:sample /output:** `OutputFile` [`Options`]
+    **VSPerfCmd /start:sample /output:** `OutputFile` [ ]`Options`
 
-   - L’option [/start](../profiling/start.md) **:sample** initialise le profileur.
+   - L’option [/start](../profiling/start.md)**:sample** initialise le profileur.
 
-   - L’option [/output](../profiling/output.md) **:** `OutputFile` est nécessaire avec **/start**. `OutputFile` spécifie le nom et l’emplacement du fichier de données profilage (.vsp).
+   - La [/sortie](../profiling/output.md)**:** `OutputFile` option est requise avec **/démarrer**. `OutputFile` spécifie le nom et l’emplacement du fichier de données profilage (.vsp).
 
      Vous pouvez utiliser l’une des options suivantes avec l’option **/start:sample**.
 
    | Option | Description |
    | - | - |
-   | [/wincounter](../profiling/wincounter.md) **:** `WinCounterPath` | Spécifie le compteur de performances Windows dont les données doivent être collectées au cours du profilage. |
-   | [/automark](../profiling/automark.md) **:** `Interval` | À utiliser avec **/wincounter** uniquement. Spécifie le nombre de millisecondes écoulées entre les événements de collecte du compteur de performances Windows. La valeur par défaut est de 500 ms. |
+   | [/wincounter](../profiling/wincounter.md) **:**`WinCounterPath` | Spécifie le compteur de performances Windows dont les données doivent être collectées au cours du profilage. |
+   | [/automark](../profiling/automark.md) **:**`Interval` | À utiliser avec **/wincounter** uniquement. Spécifie le nombre de millisecondes écoulées entre les événements de collecte du compteur de performances Windows. La valeur par défaut est de 500 ms. |
 
-3. Démarrez l’application cible. Type :
+3. Démarrez l’application cible. Tapez :
 
-    **VSPerfCmd**  [/launch](../profiling/launch.md) **:** `appName` **/gc:** {**allocation**&#124;**lifetime**}[`Options`]
+    **VSPerfCmd**[/lancement](../profiling/launch.md) **:** `appName` **/gc:****'allocation**&#124;`Options` **vie**'[ ]  
 
-   - L’option [/gc](../profiling/gc-vsperfcmd.md) **:** `Keyword` est nécessaire pour collecter les données de mémoire .NET Framework. Le paramètre de mot clé spécifie s’il faut collecter les données d’allocation de mémoire, ou collecter à la fois les données d’allocation de mémoire et les données de durée de vie des objets.
+   - [L’option /gc](../profiling/gc-vsperfcmd.md)**:** `Keyword` est nécessaire pour collecter des données de mémoire .NET Framework. Le paramètre de mot clé spécifie s’il faut collecter les données d’allocation de mémoire, ou collecter à la fois les données d’allocation de mémoire et les données de durée de vie des objets.
 
      |Mot clé|Description|
      |-------------|-----------------|
-     |**allocation**|Collecter les données d’allocation de mémoire uniquement.|
-     |**lifetime**|Collecte à la fois les données d’allocation de mémoire et les données de durée de vie des objets.|
+     |**Allocation**|Collecter les données d’allocation de mémoire uniquement.|
+     |**Vie**|Collecte à la fois les données d’allocation de mémoire et les données de durée de vie des objets.|
 
      Vous pouvez utiliser l’une des options suivantes avec l’option **/launch**.
 
    |Option|Description|
    |------------|-----------------|
-   |[/args](../profiling/args.md) **:** `Arguments`|Spécifie une chaîne qui contient les arguments de ligne de commande à passer à l’application cible.|
+   |[/args](../profiling/args.md) **:**`Arguments`|Spécifie une chaîne qui contient les arguments de ligne de commande à passer à l’application cible.|
    |[/console](../profiling/console.md)|Démarre l’application en ligne de commande cible dans une fenêtre distincte.|
-   |[/events](../profiling/events-vsperfcmd.md) **:** `Config`|Spécifie l’événement du Suivi d’événements pour Windows (ETW) qui doit être collecté au cours du profilage. Les événements ETW sont collectés dans un fichier séparé (.etl).|
-   |[/targetclr](../profiling/targetclr.md) **:** `Version`|Spécifie la version du common language runtime (CLR) à profiler lorsque plusieurs versions du runtime sont chargées dans une application.|
+   |[/événements](../profiling/events-vsperfcmd.md) **:**`Config`|Spécifie l’événement du Suivi d’événements pour Windows (ETW) qui doit être collecté au cours du profilage. Les événements ETW sont collectés dans un fichier séparé (.etl).|
+   |[/targetclr](../profiling/targetclr.md) **:**`Version`|Spécifie la version du common language runtime (CLR) à profiler lorsque plusieurs versions du runtime sont chargées dans une application.|
 
 ## <a name="control-data-collection"></a>Contrôler la collecte des données
  Pendant l’exécution de l’application cible, vous pouvez contrôler la collecte des données en démarrant et en arrêtant l’écriture des données dans le fichier à l’aide des options de *VSPerfCmd.exe*. Le fait de pouvoir contrôler la collecte vous permet de collecter des données pour une phase spécifique de l’exécution du programme, telle que le démarrage ou l’arrêt de l’application.
@@ -83,9 +83,9 @@ Cette rubrique explique comment utiliser les outils en ligne de commande des out
 
     |Option|Description|
     |------------|-----------------|
-    |[/globalon /globaloff](../profiling/globalon-and-globaloff.md)|Démarre ( **/globalon**) ou arrête ( **/globaloff**) la collecte des données pour tous les processus.|
-    |[/processon](../profiling/processon-and-processoff.md)  **:** `PID` [processoff](../profiling/processon-and-processoff.md)  **:** `PID`|Démarre ( **/processon**) ou arrête ( **/processoff**) la collecte des données pour le processus spécifié par l’ID de processus (`PID`).|
-    |[/attach](../profiling/attach.md) **:** `PID` [/detach](../profiling/detach.md)|**/attach** commence à collecter des données pour le processus spécifié par `PID` (l’ID du processus). **/detach** arrête la collecte des données pour tous les processus.|
+    |[/globalon /globaloff](../profiling/globalon-and-globaloff.md)|Démarre (**/globalon**) ou arrête (**/globaloff**) la collecte des données pour tous les processus.|
+    |[/processon](../profiling/processon-and-processoff.md) **:** `PID` [processoff](../profiling/processon-and-processoff.md) **:**`PID`|Démarre (**/processon**) ou arrête (**/processoff**) la collecte des données pour le processus spécifié par l’ID de processus (`PID`).|
+    |[/attacher](../profiling/attach.md) **:** `PID` [/détacher](../profiling/detach.md)|**/attach** commence à collecter des données pour le processus spécifié par `PID` (l’ID du processus). **/detach** arrête la collecte des données pour tous les processus.|
 
 - Vous pouvez également utiliser l’option **VSPerfCmd.exe**[/mark](../profiling/mark.md) pour insérer une marque de profilage dans le fichier de données. La commande **/mark** ajoute un identificateur, un horodatage et une chaîne de texte facultative définie par l’utilisateur. Les marques peuvent servir à filtrer les données.
 
@@ -98,14 +98,14 @@ Cette rubrique explique comment utiliser les outils en ligne de commande des out
 
     - Fermez l’application cible.
 
-         \- ou -
+         -ou-
 
-    - Tapez **VSPerfCmd /detach**
+    - Type **VSPerfCmd /detach**
 
-2. Fermez le profileur. Type :
+2. Fermez le profileur. Tapez :
 
      **VSPerfCmd**  [/shutdown](../profiling/shutdown.md)
 
 ## <a name="see-also"></a>Voir aussi
 - [Profiler des applications autonomes](../profiling/command-line-profiling-of-stand-alone-applications.md)
-- [Vues des données de la mémoire .NET](../profiling/dotnet-memory-data-views.md)
+- [vues de données de mémoire .NET](../profiling/dotnet-memory-data-views.md)

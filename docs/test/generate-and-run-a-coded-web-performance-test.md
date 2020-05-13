@@ -15,15 +15,15 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 4297f60c74e32b904d7c36912a8377d33f23ebdf
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75589576"
 ---
 # <a name="generate-and-run-a-coded-web-performance-test"></a>Générer et exécuter un test de performances de site Web codé
 
-Les tests de performances de site web sont enregistrés lors de la navigation au sein de votre applications web. Les tests sont inclus dans les tests de charge afin de mesurer les performances de votre applications web soumise à plusieurs utilisateurs. Un test de performances de site web peut être converti en un script basé sur le code que vous pouvez modifier et personnaliser comme tout autre code source. Par exemple, vous pouvez ajouter des boucles et des branchements.
+Les tests de performances web sont enregistrés lors de la navigation au sein de votre application web. Les tests sont inclus dans les tests de charge afin de mesurer les performances de votre application web soumise à l’activité de plusieurs utilisateurs. Un test de performances de site web peut être converti en un script basé sur le code que vous pouvez modifier et personnaliser comme tout autre code source. Par exemple, vous pouvez ajouter des boucles et des branchements.
 
 [!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
@@ -74,7 +74,7 @@ Les tests de performances de site web sont enregistrés lors de la navigation au
 
 5. Générez la solution pour vérifier que votre code personnalisé se compile.
 
-6. Exécuter le test.
+6. Exécutez le test.
 
      ![Exécuter le test de performances de site web codé](../test/media/web_test_coded_generate_run.png)
 
@@ -82,10 +82,10 @@ Les tests de performances de site web sont enregistrés lors de la navigation au
 
      ![Résultats du test de performances web codé](../test/media/web_test_coded_generate_results.png)
 
-## <a name="qa"></a>Questions et réponses
+## <a name="qa"></a>Questions et réponses  
 
 ### <a name="q-can-i-run-more-than-one-test-at-a-time"></a>Q : Puis-je exécuter plusieurs tests simultanément ?
-**R :** Oui, utilisez le menu contextuel en cliquant avec le bouton droit dans **Explorateur de solutions**.
+**R:** Oui, utilisez le menu de clic droit (contexte) dans **Solution Explorer**.
 
 ### <a name="q-should-i-add-a-data-source-before-or-after-i-generate-a-coded-test"></a>Q : Dois-je ajouter une source de données avant ou après la génération d'un test codé ?
 **R :** Il est plus facile d’ajouter une [source de données](../test/add-a-data-source-to-a-web-performance-test.md) avant de générer le test codé, car le code sera généré automatiquement pour vous.

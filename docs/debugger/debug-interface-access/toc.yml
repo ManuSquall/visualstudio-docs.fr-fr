@@ -1,6 +1,6 @@
-- name: Kit de développement logiciel de Debug Interface Access
+- name: "Kit de développement logiciel de Debug\_Interface\_Access"
   items:
-    - name: Kit de développement logiciel de Debug Interface Access
+    - name: "Kit de développement logiciel de Debug\_Interface\_Access"
       href: debug-interface-access-sdk.md
     - name: Mise en route (Kit de développement logiciel de Debug Interface Access)
       items:
@@ -22,7 +22,7 @@
               href: lexical-hierarchy-of-symbol-types.md
             - name: Annotation
               href: annotation.md
-            - name: Bloc
+            - name: Block
               href: block.md
             - name: Compiland
               href: compiland.md

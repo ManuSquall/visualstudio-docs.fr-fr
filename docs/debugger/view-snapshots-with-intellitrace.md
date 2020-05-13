@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 767181ce917e4cbef69001e07a018e20c89a01f8
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
-ms.translationtype: HT
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "65676432"
 ---
 # <a name="view-snapshots-with-intellitrace-step-back-visual-studio-enterprise-c-visual-basic-c"></a>Afficher des captures instantanées avec le retour en arrière IntelliTrace (Visual Studio Enterprise) (C#, Visual Basic, C++)
@@ -23,6 +23,6 @@ Le **retour en arrière IntelliTrace** crée automatiquement une capture instant
 
 Vous pouvez parcourir et afficher les captures instantanées à l’aide des boutons **Étape précédente** et **Étape suivante** situés dans la barre d’outils de débogage. Utilisez ces boutons pour accéder aux événements figurant sous l’onglet **Événements** de la fenêtre **Outils de diagnostic**.
 
-![Boutons Étape précédente et Étape suivante](../debugger/media/intellitrace-step-back-icons-description.png  "Boutons Étape précédente et Étape suivante")
+![Avancez les boutons vers l’arrière et vers l’avant](../debugger/media/intellitrace-step-back-icons-description.png  "Avancez vers l’arrière et en avant")
 
-Pour plus d’informations, consultez [Inspecter les précédents états des applications à l’aide d’IntelliTrace](../debugger/view-historical-application-state.md).
+Pour plus d’informations, voir [Inspecter les états de l’application précédente en utilisant IntelliTrace](../debugger/view-historical-application-state.md).

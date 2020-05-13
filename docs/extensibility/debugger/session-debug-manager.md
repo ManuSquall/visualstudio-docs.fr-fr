@@ -1,5 +1,5 @@
 ---
-title: Session de débogage Manager | Microsoft Docs
+title: Responsable Debug session (fr) Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,33 +10,33 @@ helpviewer_keywords:
 - session debug manager, debug engine multiplexing
 - session debug manager, delegating
 ms.assetid: fbb1928d-dddc-43d1-98a4-e23b0ecbae09
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6c7dd40796fbf0141cc60bf86204bce462594f8f
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 953b4e948ef5e21531a3e73bceed3a363ed3cec5
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66348565"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80712882"
 ---
-# <a name="session-debug-manager"></a>Gestionnaire de session de débogage
-Le Gestionnaire de session de débogage (SDM) gère n’importe quel nombre de moteurs de débogage (dé) que le débogage n’importe quel nombre de programmes dans plusieurs processus sur un nombre illimité d’ordinateurs. En plus de constituer un multiplexeur de moteur de débogage, le SDM fournit une vue unifiée de la session de débogage à l’IDE.
+# <a name="session-debug-manager"></a>Gestionnaire de débogé de session
+Le gestionnaire de déboguer la session (SDM) gère un certain nombre de moteurs de déboguer (DE) qui déboient un certain nombre de programmes dans plusieurs processus à travers un certain nombre de machines. En plus d’être un multiplexer moteur de débogé, le SDM fournit une vue unifiée de la session de débog à l’IDE.
 
-## <a name="session-debug-manager-operation"></a>Opération de gestionnaire de débogage de session
- Le Gestionnaire de session de débogage (SDM) gère l’Allemagne. Il peut y avoir plus d’un moteur de débogage en cours d’exécution sur un ordinateur en même temps. Pour multiplexer la norme DEs, le SDM encapsule un nombre d’interfaces à partir de la norme DEs et les expose à l’IDE comme une interface unique.
+## <a name="session-debug-manager-operation"></a>Opération de gestionnaire de débogue de session
+ Le gestionnaire de débogé de session (SDM) gère le DE. Il peut y avoir plus d’un moteur de déboguer en cours d’exécution sur une machine en même temps. Pour multiplexer les DE, le SDM enveloppe un certain nombre d’interfaces des DE et les expose à l’IDE comme une seule interface.
 
- Pour améliorer les performances, certaines interfaces ne sont pas multiplexés. Au lieu de cela, ils sont utilisés directement à partir de l’Allemagne et les appels à ces interfaces ne passent pas par le SDM. Par exemple, les interfaces utilisées avec la mémoire, le code et les contextes de document ne sont pas multiplexés, car ils font référence à une instruction spécifique, la mémoire ou le document dans un programme spécifique de débogage par un spécifique DE. Aucune autre dé ne doit être impliqué dans ce niveau de la communication.
+ Pour augmenter les performances, certaines interfaces ne sont pas multiplexées. Au lieu de cela, ils sont utilisés directement à partir de la DE, et les appels à ces interfaces ne passent pas par le SDM. Par exemple, les interfaces utilisées avec la mémoire, le code et les contextes de documents ne sont pas multiplexées, car elles se réfèrent à une instruction, une mémoire ou un document spécifiques dans un programme spécifique débogé par un DE spécifique. Aucun autre DE n’a besoin d’être impliqué dans ce niveau de communication.
 
- Cela n’est pas vrai pour tous les contextes. Les appels à l’interface de contexte d’évaluation expression passent par le SDM. Lors de l’évaluation d’expression, le SDM encapsule le [IDebugExpression2](../../extensibility/debugger/reference/idebugexpression2.md) interface il donne à l’IDE, car lorsque cette expression est évaluée, elle peut impliquer plusieurs DEs que déboguez des programmes dans le même processus qui peuvent être en cours d’exécution sur le même thread.
+ Ce n’est pas le cas de tous les contextes. Les appels à l’interface contextuelle d’expression passent par le SDM. Pendant l’évaluation d’expression, le SDM enveloppe [l’interface IDebugExpression2](../../extensibility/debugger/reference/idebugexpression2.md) qu’elle donne à l’IDE parce que lorsque cette expression est évaluée, elle peut impliquer plusieurs DE qui sont des programmes de débogage dans le même processus qui pourraient être en cours d’exécution sur le même thread.
 
- Le SDM sert généralement d’un mécanisme de délégation, mais il peut agir comme un mécanisme de diffusion. Par exemple, lors de l’évaluation d’expression, le SDM agit comme un mécanisme de diffusion pour notifier DEs tous les qu’ils peuvent exécuter du code sur un thread spécifié. De même, lorsque le SDM reçoit un événement d’arrêt, il diffuse vers les programmes qu’il doivent s’arrêter. Lorsqu’une étape est appelée, le SDM diffuse vers les programmes qu’ils peuvent continuer à s’exécuter. Points d’arrêt sont également diffusés à chaque DE.
+ Le SDM agit généralement comme un mécanisme de délégation, mais il peut agir comme un mécanisme de radiodiffusion. Par exemple, lors de l’évaluation de l’expression, le SDM agit comme un mécanisme de diffusion pour aviser tous les DE qu’ils peuvent exécuter du code sur un thread spécifié. De même, lorsque le SDM reçoit un événement d’arrêt, il diffuse aux émissions qu’ils devraient cesser de courir. Lorsqu’une étape est déclenchée, le SDM diffuse aux émissions qu’ils peuvent continuer à exécuter. Les points d’arrêt sont également diffusés à chaque DE.
 
- Le SDM ne suit pas le programme en cours, le thread ou le frame de pile. Le processus, programme et informations sur le thread sont envoyés vers le SDM conjointement avec les événements de débogage spécifiques.
+ Le SDM ne suit pas le programme actuel, le thread ou le cadre de pile. Les informations sur le processus, le programme et le fil sont envoyées au SDM en conjonction avec des événements spécifiques de débogage.
 
 ## <a name="see-also"></a>Voir aussi
-- [Moteur de débogage](../../extensibility/debugger/debug-engine.md)
-- [Composants du débogueur](../../extensibility/debugger/debugger-components.md)
-- [Contextes du débogueur](../../extensibility/debugger/debugger-contexts.md)
+- [Moteur Debug](../../extensibility/debugger/debug-engine.md)
+- [Composants Debugger](../../extensibility/debugger/debugger-components.md)
+- [Contextes Debugger](../../extensibility/debugger/debugger-contexts.md)

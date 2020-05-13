@@ -8,10 +8,10 @@ ms.topic: conceptual
 ms.prod: visual-studio-mac
 ms.assetid: fd354fff-ce6b-4505-a815-84a2311e39ba
 ms.openlocfilehash: 55519960a6b84968ced43183833167a365e91b35
-ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
-ms.translationtype: HT
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/09/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "68872323"
 ---
 # <a name="set-multiple-startup-projects"></a>Définir plusieurs projets de démarrage
@@ -47,4 +47,4 @@ Visual Studio pour Mac vous permet de spécifier le mode de démarrage de plusie
 ## <a name="next-steps"></a>Étapes suivantes
 
 - [Compilation et génération dans Visual Studio pour Mac](compiling-and-building.md)
-- [Présentation des configurations de build](configurations.md)
+- [Comprendre les configurations de construction](configurations.md)

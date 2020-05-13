@@ -16,15 +16,16 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 730e7d317ffa3fd5a450978f35659df3fe5629f3
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: ff7e446c319a08004260125580cdace43412cdba
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75573662"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "78169350"
 ---
 # <a name="item-element-msbuild"></a>Item, élément (MSBuild)
-Contient un élément défini par l'utilisateur et ses métadonnées. Chaque élément utilisé dans un projet [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] doit être spécifié en tant qu'enfant d'un élément `ItemGroup`.
+
+Contient un élément défini par l'utilisateur et ses métadonnées. Chaque élément utilisé dans un projet MSBuild doit être `ItemGroup` spécifié comme un enfant d’un élément.
 
 \<Project> \<ItemGroup> \<Item>
 
@@ -33,14 +34,14 @@ Contient un élément défini par l'utilisateur et ses métadonnées. Chaque él
 ```xml
 <Item Include="*.cs"
         Exclude="MyFile.cs"
-        Remove="RemoveFile.cs"
-        Condition="'String A'=='String B'" >
+        Condition="'String A'=='String B'">
     <ItemMetadata1>...</ItemMetadata1>
     <ItemMetadata2>...</ItemMetadata2>
 </Item>
 ```
 
 ## <a name="specify-metadata-as-attributes"></a>Spécifier des métadonnées en tant qu’attributs
+
 Dans MSBuild version 15.1 ou ultérieure, toutes les métadonnées dont le nom n’entre pas en conflit avec la liste actuelle des attributs peuvent éventuellement être exprimées en tant qu’attribut.
 
 Par exemple, pour spécifier une liste de packages NuGet, vous utiliseriez normalement une syntaxe similaire à la suivante.
@@ -62,11 +63,12 @@ Par exemple, pour spécifier une liste de packages NuGet, vous utiliseriez norma
 ```
 
 ## <a name="attributes-and-elements"></a>Attributs et éléments
+
  Les sections suivantes décrivent des attributs, des éléments enfants et des éléments parents.
 
 ### <a name="attributes"></a>Attributs
 
-|Attribute|Description|
+|Attribut|Description|
 |---------------|-----------------|
 |`Include`|Attribut facultatif.<br /><br /> Fichier ou caractère générique à inclure dans la liste des éléments.|
 |`Exclude`|Attribut facultatif.<br /><br /> Fichier ou caractère générique à exclure de la liste des éléments.|
@@ -81,7 +83,7 @@ Par exemple, pour spécifier une liste de packages NuGet, vous utiliseriez norma
 
 |Élément|Description|
 |-------------|-----------------|
-|[ItemMetadata](../msbuild/itemmetadata-element-msbuild.md)|Clé de métadonnées d'élément définie par l'utilisateur, qui contient la valeur des métadonnées de l'élément. Un élément peut ne contenir aucun élément `ItemMetadata` ou en contenir plusieurs.|
+|[Itemmetadata](../msbuild/itemmetadata-element-msbuild.md)|Clé de métadonnées d'élément définie par l'utilisateur, qui contient la valeur des métadonnées de l'élément. Un élément peut ne contenir aucun élément `ItemMetadata` ou en contenir plusieurs.|
 
 ### <a name="parent-elements"></a>Éléments parents
 
@@ -89,14 +91,16 @@ Par exemple, pour spécifier une liste de packages NuGet, vous utiliseriez norma
 |-------------|-----------------|
 |[ItemGroup](../msbuild/itemgroup-element-msbuild.md)|Élément grouping pour d’autres éléments.|
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Notes 
+
 Les éléments `Item` définissent les entrées du système de génération et sont regroupés en collections d'éléments, selon leur nom de collection défini par l'utilisateur. Ces collections d’éléments peuvent être utilisées comme paramètres des [tâches](../msbuild/msbuild-tasks.md), lesquelles utilisent les éléments d’une collection pour exécuter les étapes du processus de génération. Pour plus d’informations, consultez l’article [Éléments MSBuild](../msbuild/msbuild-items.md).
 
 La notation @(\<monType>) permet de développer une collection d’éléments de type \<monType> en une liste de chaînes séparées par des points-virgules, et de la transmettre à un paramètre. Si le paramètre est de type `string`, la valeur du paramètre correspond à la liste des éléments séparés par des points-virgules. Si le paramètre est un tableau de chaînes (`string[]`), chaque élément est inséré dans le tableau selon l'emplacement des points-virgules. Si le paramètre de tâche est de type <xref:Microsoft.Build.Framework.ITaskItem>`[]`, la valeur correspond au contenu de la collection d'éléments et à toutes les métadonnées associées. Pour délimiter chaque élément à l’aide d’un caractère autre que le point-virgule, utilisez la syntaxe @(\<myType>, '\<séparateur>').
 
-Le moteur [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] peut évaluer les caractères génériques tels que `*` et `?`, ainsi que les caractères génériques récursifs comme */\*\*/\*.cs*. Pour plus d’informations, consultez l’article [Éléments MSBuild](../msbuild/msbuild-items.md).
+Le moteur MSBuild peut évaluer `*` les `?` wildcards tels que et et reursive wildcards tels que * / \* \* / \*.cs*. Pour plus d’informations, consultez l’article [Éléments MSBuild](../msbuild/msbuild-items.md).
 
 ## <a name="examples"></a>Exemples
+
 L'exemple de code suivant montre comment déclarer deux éléments de type `CSFile`. Le second élément déclaré contient les métadonnées dans lesquelles `MyMetadata` a la valeur `HelloWorld`.
 
 ```xml
@@ -119,7 +123,8 @@ L’exemple de code suivant montre comment utiliser l’attribut `Update` pour m
 ```
 
 ## <a name="see-also"></a>Voir aussi
-- [Éléments MSBuild](../msbuild/msbuild-items.md)
+
+- [Éléments](../msbuild/msbuild-items.md)
 - [Éléments communs des projets MSBuild](../msbuild/common-msbuild-project-items.md)
 - [Propriétés MSBuild](../msbuild/msbuild-properties.md)
-- [Informations de référence sur le schéma de fichier projet](../msbuild/msbuild-project-file-schema-reference.md)
+- [Référence du schéma de fichier de projet](../msbuild/msbuild-project-file-schema-reference.md)

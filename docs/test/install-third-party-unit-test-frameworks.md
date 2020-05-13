@@ -8,10 +8,10 @@ ms.workload:
 - multiple
 author: mikejo5000
 ms.openlocfilehash: b70e26adc7c0c9a8dc409d9b4b971b233418b8e1
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75594277"
 ---
 # <a name="install-unit-test-frameworks"></a>Installer des frameworks de tests unitaires
@@ -38,7 +38,7 @@ Mettez à jour vers l’adaptateur de test stable le plus récent afin de béné
 
 ### <a name="to-update-to-the-latest-stable-test-adapter-version"></a>Pour mettre à jour vers la version stable la plus récente de l’adaptateur de test
 
-1. Ouvrez le Gestionnaire de package Nuget pour votre solution en accédant à **Outils** > **Gestionnaire de package NuGet** > **Gérer les packages NuGet pour la solution**.
+1. Ouvrez le gestionnaire de forfait Nuget pour votre solution en naviguant vers **Outils** > **NuGet Package Manager** > **Gérer les forfaits NuGet pour la solution**.
 
 2. Cliquez sur l’onglet **Mises à jour**, puis recherchez les adaptateurs de test MSTest, NUnit ou xUnit installés.
 
@@ -50,4 +50,4 @@ Mettez à jour vers l’adaptateur de test stable le plus récent afin de béné
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Tests unitaires sur votre code](../test/unit-test-your-code.md)
+- [Test unitaire de votre code](../test/unit-test-your-code.md)

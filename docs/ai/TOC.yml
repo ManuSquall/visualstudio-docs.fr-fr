@@ -1,7 +1,7 @@
 - name: Visual Studio Tools pour IA
   items:
     - name: Visual Studio Tools pour IA
-      href: index.yml
+      href: overview.md
     - name: Vue d'ensemble
       href: about-ai-tools.md
     - name: Installation

@@ -1,27 +1,27 @@
 ---
-title: GUID_ARRAY | Microsoft Docs
+title: GUID_ARRAY Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - GUID_ARRAY structure
 ms.assetid: 9e12500c-2c1c-49b1-a0ba-e08366c97eb8
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: d53413ee56700fe39470d3bbc3229f4b8b668373
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: e163674b5622146ef1a270920dc7458dce2e3993
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66317525"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80736642"
 ---
-# <a name="guidarray"></a>GUID_ARRAY
-Décrit un tableau d’identificateurs uniques pour les moteurs de débogage disponibles.
+# <a name="guid_array"></a>GUID_ARRAY
+Décrit une gamme d’identifiants uniques pour les moteurs de débogé disponibles.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -43,20 +43,20 @@ public struct GUID_ARRAY
 
 ## <a name="members"></a>Membres
 `dwCount`\
-Nombre d’identificateurs uniques dans le tableau.
+Nombre d’identifiants uniques dans le tableau.
 
 `Members`\
-Tableau qui contient des identificateurs uniques.
+Array qui contient des identificateurs uniques.
 
 ## <a name="remarks"></a>Notes
-Cette structure est retournée par la [GetEngineFilter](../../../extensibility/debugger/reference/idebugprocess3-getenginefilter.md) (méthode).
+Cette structure est retournée par la méthode [GetEngineFilter.](../../../extensibility/debugger/reference/idebugprocess3-getenginefilter.md)
 
-## <a name="requirements"></a>Configuration requise
-En-tête : Msdbg.h
+## <a name="requirements"></a>Spécifications
+En-tête: Msdbg.h
 
-Espace de noms : Microsoft.VisualStudio.Debugger.Interop
+Namespace: Microsoft.VisualStudio.Debugger.Interop
 
-Assembly : Microsoft.VisualStudio.Debugger.Interop.dll
+Assemblage: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>Voir aussi
 - [Structures et unions](../../../extensibility/debugger/reference/structures-and-unions.md)

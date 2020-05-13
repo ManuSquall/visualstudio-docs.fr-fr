@@ -1,5 +1,5 @@
 ---
-title: BP_ERROR_TYPE | Microsoft Docs
+title: BP_ERROR_TYPE Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,22 +7,22 @@ f1_keywords:
 helpviewer_keywords:
 - BP_ERROR_TYPE enumeration
 ms.assetid: c483eaab-db29-46de-bfdb-5c2a9a9cfb68
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 3dc51691d4d424ee4d1c1a450f1e4e32b78e0e6e
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: e777e1f8cb67187a81f8f3bb4f79299939bfa31c
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66319296"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80738076"
 ---
-# <a name="bperrortype"></a>BP_ERROR_TYPE
+# <a name="bp_error_type"></a>BP_ERROR_TYPE
 Spécifie le type d’erreur d’un point d’arrêt.
 
 ## <a name="syntax"></a>Syntaxe
@@ -62,49 +62,49 @@ public enum enum_BP_ERROR_TYPE {
 
 ## <a name="fields"></a>Champs
 `BPET_NONE`\
-Ne spécifie aucune erreur de point d’arrêt.
+Spécifie aucune erreur de point de rupture.
 
 `BPET_TYPE_WARNING`\
-Spécifie une erreur de point d’arrêt de style de l’avertissement.
+Spécifie une erreur de point de rupture de type avertissement.
 
 `BPET_TYPE_ERROR`\
-Spécifie une erreur de point d’arrêt de style d’erreur.
+Spécifie une erreur de point de rupture de type erreur.
 
 `BPET_SEV_HIGH`\
-Spécifie une erreur de point d’arrêt de niveau de gravité élevé.
+Spécifie une erreur de point de rupture de haute gravité.
 
 `BPET_SEV_GENERAL`\
-Spécifie une erreur de point d’arrêt de gravité moyenne.
+Spécifie une erreur de point de rupture de gravité moyenne.
 
 `BPET_SEV_LOW`\
-Spécifie une erreur de point d’arrêt de faible gravité.
+Spécifie une erreur de point de rupture de faible gravité.
 
 `BPET_TYPE_MASK`\
-Spécifie une erreur de point d’arrêt de style de masque.
+Spécifie une erreur de point de rupture de type masque.
 
 `BPET_SEV_MASK`\
-Spécifie une erreur de point d’arrêt de la gravité de type masque.
+Spécifie une erreur de point de rupture de type masque de sévérité.
 
 `BPET_GENERAL_WARNING`\
-Spécifie une erreur de point d’arrêt général de type avertissement.
+Spécifie une erreur de point de rupture de type avertissement général.
 
 `BPET_GENERAL_ERROR`\
-Spécifie une erreur de point d’arrêt de style d’erreur général.
+Spécifie une erreur de point de rupture de type erreur générale.
 
 `BPET_ALL`\
-Spécifie tous les types d’erreurs de point d’arrêt.
+Spécifie tous les types d’erreurs de point de rupture.
 
 ## <a name="remarks"></a>Notes
-Ces valeurs peuvent être combinées avec un opérateur de bits `OR` et utilisé pour le `dwType` membre de la [BP_ERROR_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-error-resolution-info.md) structure. Passé en tant que paramètre à la [EnumErrorBreakpoints](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-enumerrorbreakpoints.md) (méthode).
+Ces valeurs peuvent être combinées avec un peu plus sage `OR` et utilisé pour le `dwType` membre de la structure [BP_ERROR_RESOLUTION_INFO.](../../../extensibility/debugger/reference/bp-error-resolution-info.md) Passé comme paramètre à la méthode [EnumErrorBreakpoints.](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-enumerrorbreakpoints.md)
 
-Un type d’erreur de point d’arrêt se compose d’un type et un niveau de gravité. Cela signifie qu’un type d’erreur de point d’arrêt n’est jamais simplement un type (par exemple, `BPET_TYPE_ERROR`,) ou un niveau de gravité (par exemple, `BPET_SEV_GENERAL`) par lui-même. `BPET_GENERAL_WARNING` et `BPET_GENERAL_ERROR` fournir des valeurs prédéfinies pour les points d’arrêt générales de l’avertissement et erreur.
+Un type d’erreur de point de rupture est composé d’un type et d’une sévérité. Cela signifie qu’un type d’erreur de point `BPET_TYPE_ERROR`de rupture n’est `BPET_SEV_GENERAL`jamais seulement un type (par exemple, ,) ou une sévérité (par exemple, ) par lui-même. `BPET_GENERAL_WARNING`et `BPET_GENERAL_ERROR` fournir des valeurs prédéfinises pour les points d’avertissement général et d’erreur.
 
-## <a name="requirements"></a>Configuration requise
-En-tête : msdbg.h
+## <a name="requirements"></a>Spécifications
+En-tête: msdbg.h
 
-Espace de noms : Microsoft.VisualStudio.Debugger.Interop
+Namespace: Microsoft.VisualStudio.Debugger.Interop
 
-Assembly : Microsoft.VisualStudio.Debugger.Interop.dll
+Assemblage: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>Voir aussi
 - [Énumérations](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)

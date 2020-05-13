@@ -1,5 +1,5 @@
 ---
-title: 'Étape 5 : Déployer une application ASP.NET Core sur Azure'
+title: 'Étape 5 : Déployer votre application de base ASP.NET à Azure'
 description: Déployez votre application web ASP.NET Core sur Azure avec ce tutoriel vidéo et des instructions détaillées.
 ms.custom: get-started
 ms.date: 03/31/2019
@@ -9,21 +9,21 @@ monikerRange: vs-2019
 ms.topic: tutorial
 ms.devlang: CSharp
 author: ardalis
-ms.author: tglee
+ms.author: ornella
 manager: jillfra
 dev_langs:
 - CSharp
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: 2d995818ec5b8ac01c9776bbf2290da39d2cc40b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: dc13dbdadb0c9bca25a816b15c5a99039bff454c
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62970926"
+ms.lasthandoff: 03/20/2020
+ms.locfileid: "77580030"
 ---
-# <a name="step-5-deploy-your-aspnet-core-app-to-azure"></a>Étape 5 : Déployer une application ASP.NET Core sur Azure
+# <a name="step-5-deploy-your-aspnet-core-app-to-azure"></a>Étape 5 : Déployez votre application ASP.NET Core à Azure
 
 Suivez ces étapes pour déployer votre application ASP.NET Core et sa base de données sur Azure.
 
@@ -31,7 +31,7 @@ _Regardez cette vidéo et suivez la procédure pour déployer votre première ap
 
 > [!VIDEO https://www.youtube.com/embed/n8wz_f5_4wI]
 
-## <a name="open-your-project"></a>Ouvrir le projet
+## <a name="open-your-project"></a>Ouvrir votre projet
 
 Ouvrez votre application ASP.NET Core dans Visual Studio 2019. L’application devrait déjà utiliser la configuration avec EF Core et une API web fonctionnelle, suivant la configuration effectuée à [l’étape 4 de cette série de tutoriels](tutorial-aspnet-core-ef-step-04.md).
 
@@ -57,7 +57,7 @@ Une fois le service App Service créé, le site se lance dans un navigateur. Pen
 
 ### <a name="scalability"></a>Extensibilité
 
-Vous pouvez examiner les options de scalabilité de l’application. La montée en puissance (scale up) consiste à augmenter les ressources affectées à chacune des instances qui hébergent l’application. Avec la montée en charge (scale out), il s’agit d’accroître le nombre d’instances hébergeant l’application. Vous pouvez configurer la mise à l’échelle automatique de votre application, afin d’augmenter automatiquement le nombre d’instances utilisées pour héberger votre application en réponse à une charge, puis de le réduire une fois que la charge a diminué.
+Vous pouvez examiner les options pour mettre l’application à l’échelle ainsi que sur. L’intensification se réfère à l’augmentation des ressources données à chaque instance hébergeant votre application. Avec la montée en charge (scale out), il s’agit d’accroître le nombre d’instances hébergeant l’application. Vous pouvez configurer la mise à l’échelle automatique de votre application, afin d’augmenter automatiquement le nombre d’instances utilisées pour héberger votre application en réponse à une charge, puis de le réduire une fois que la charge a diminué.
 
 ### <a name="security-and-compliance"></a>Sécurité et conformité
 
@@ -75,7 +75,7 @@ Par défaut, Azure s’attend que la connexion d’une nouvelle application à s
 
 Accédez au chemin */Games* : vous devriez pouvoir ajouter un nouveau jeu et le voir apparaître. Ensuite, dans le chemin */swagger*, utilisez les points de terminaison d’API web pour vérifier que l’API de l’application fonctionne également.
 
-Félicitations ! Vous avez terminé cette série de tutoriels vidéo.
+Félicitations ! Vous avez terminé cette série de tutoriels vidéo.
 
 ## <a name="next-steps"></a>Étapes suivantes
 

@@ -12,15 +12,15 @@ ms.workload: multiple
 ms.date: 01/27/2020
 ms.author: ghogen
 ms.openlocfilehash: d8aa3028a12bcfb49f2663b2bea688baf14fd7f2
-ms.sourcegitcommit: b2fc9ac7d73c847508f6ed082bed026476bb3955
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/05/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77027282"
 ---
 # <a name="troubleshoot-visual-studio-development-with-docker"></a>Résoudre les problèmes de développement Visual Studio avec Docker
 
-Lorsque vous utilisez les outils de conteneur Visual Studio, vous pouvez rencontrer des problèmes lors de la génération ou du débogage de votre application. Voici certains problèmes courants et les étapes de dépannage correspondantes.
+Lorsque vous travaillez avec Visual Studio Container Tools, vous pouvez rencontrer des problèmes lors de la construction ou de la débogage de votre application. Voici certains problèmes courants et les étapes de dépannage correspondantes.
 
 ## <a name="volume-sharing-is-not-enabled-enable-volume-sharing-in-the-docker-ce-for-windows-settings--linux-containers-only"></a>Le partage de volume n’est pas activé. Activez le volume de partage dans les paramètres de Docker CE pour Windows (uniquement pour les conteneurs Linux)
 
@@ -35,11 +35,11 @@ Pour résoudre ce problème :
 ![lecteurs partagés](media/troubleshooting-docker-errors/shareddrives.png)
 
 > [!TIP]
-> Les versions de Visual Studio postérieures à Visual Studio 2017 version 15,6 invitent lorsque les **lecteurs partagés** ne sont pas configurés.
+> Les versions Visual Studio plus tard que Visual Studio 2017 version 15.6 invite lorsque **les lecteurs partagés** ne sont pas configurés.
 
 ### <a name="container-type"></a>Type de conteneur
 
-Quand vous ajoutez la prise en charge de Docker à un projet, choisissez un conteneur Windows ou Linux. L’hôte Docker doit exécuter le même type de conteneur. Pour changer le type de conteneur dans l’instance de Docker en cours d’exécution, cliquez avec le bouton droit sur l’icône Docker de la zone de notification, puis choisissez **Basculer vers les conteneurs Windows...** ou **Basculer vers les conteneurs Linux...** .
+Quand vous ajoutez la prise en charge de Docker à un projet, choisissez un conteneur Windows ou Linux. L’hôte Docker doit exécuter le même type de conteneur. Pour changer le type de conteneur dans l’instance de Docker en cours d’exécution, cliquez avec le bouton droit sur l’icône Docker de la zone de notification, puis choisissez **Basculer vers les conteneurs Windows...** ou **Basculer vers les conteneurs Linux...**.
 
 ## <a name="unable-to-start-debugging"></a>Impossible de démarrer le débogage
 
@@ -56,42 +56,42 @@ Essayez d’exécuter le script téléchargeable à partir de [Cleanup Container
 
 Quand vous utilisez Docker pour macOS, vous pouvez rencontrer une erreur référençant le dossier /usr/local/share/dotnet/sdk/NuGetFallbackFolder. Ajouter le dossier à l’onglet File Sharing (Partage de fichiers) dans Docker
 
-## <a name="docker-users-group"></a>Groupe d’utilisateurs de l’ancrage
+## <a name="docker-users-group"></a>Groupe d’utilisateurs Docker
 
-Vous pouvez rencontrer l’erreur suivante dans Visual Studio lors de l’utilisation de conteneurs :
+Vous pourriez rencontrer l’erreur suivante dans Visual Studio lorsque vous travaillez avec des conteneurs :
 
 ```
 The current user must be in the 'docker-users' group to use Docker Desktop. 
 Add yourself to the 'docker-users' group and then log out of Windows.
 ```
 
-Vous devez être membre du groupe « docker-utilisateurs » pour avoir les autorisations nécessaires pour utiliser les conteneurs de l’ancrage.  Pour vous ajouter au groupe dans Windows 10, procédez comme suit :
+Vous devez être membre du groupe des « docker-utilisateurs » afin d’avoir des autorisations de travailler avec des conteneurs Docker.  Pour vous ajouter au groupe dans Windows 10, suivez ces étapes :
 
-1. Dans le menu Démarrer, ouvrez **gestion**de l’ordinateur.
-1. Développez **utilisateurs et groupes locaux**, puis choisissez **groupes**.
-1. Recherchez le groupe **dockr-Users** , cliquez avec le bouton droit et choisissez **Ajouter au groupe**.
-1. Ajoutez vos comptes d’utilisateur.
-1. Déconnectez-vous, puis reconnectez-vous pour que ces modifications prennent effet.
+1. Du menu Démarrer, open **Computer Management**.
+1. Élargir **les utilisateurs locaux et les groupes**, et choisir les **groupes**.
+1. Trouvez le groupe **docker-utilisateurs,** cliquez à droite et choisissez **Ajouter au groupe**.
+1. Ajoutez votre compte d’utilisateur ou vos comptes.
+1. Déconnectez-vous et connectez-vous à nouveau pour que ces modifications prennent effet.
 
-Vous pouvez également utiliser la commande `net localgroup` à l’invite de commandes de l’administrateur pour ajouter des utilisateurs à des groupes spécifiques.
+Vous pouvez également `net localgroup` utiliser la commande à l’invitation de commande d’administrateur pour ajouter des utilisateurs à des groupes spécifiques.
 
 ```cmd
 net localgroup docker-users DOMAIN\username /add
 ```
 
-Dans PowerShell, utilisez la fonction [Add-LocalGroupMember](/powershell/module/microsoft.powershell.localaccounts/add-localgroupmember) .
+Dans PowerShell, utilisez la fonction [Add-LocalGroupMember.](/powershell/module/microsoft.powershell.localaccounts/add-localgroupmember)
 
 ## <a name="low-disk-space"></a>Espace disque insuffisant
 
-Par défaut, l’arrimeur stocke les images dans le dossier *% ProgramData%/docker/* , qui se trouve généralement sur le lecteur système, * C:\ProgramData\Docker\*. Pour empêcher les images d’occuper de l’espace sur le lecteur système, vous pouvez modifier l’emplacement du dossier d’images.  À partir de l’icône de l’Ancreur, dans la barre des tâches, ouvrez paramètres de l’ancrage, choisissez **démon**et passez de **basique** à **avancé**. Dans le volet de modification, ajoutez le paramètre de propriété `graph` avec la valeur de l’emplacement souhaité pour les images de l’ancrage :
+Par défaut, Docker stocke des images dans le *dossier %ProgramData%/Docker/folder,* qui est\*généralement sur le lecteur du système, C: 'ProgramData’Docker . Pour empêcher les images de prendre de l’espace précieux sur le lecteur du système, vous pouvez modifier l’emplacement du dossier d’image.  De l’icône Docker sur la barre de travail, ouvrir les paramètres Docker, choisir **Daemon**, et passer de **Basic** à **Advanced**. Dans le volet d’édition, ajoutez le `graph` paramètre de propriété avec la valeur de votre emplacement désiré pour les images Docker :
 
 ```json
     "graph": "D:\\mypath\\images"
 ```
 
-![Capture d’écran du paramètre d’emplacement de l’image de l’ancrage](media/troubleshooting-docker-errors/docker-settings-image-location.png)
+![Capture d’écran du paramètre de localisation d’image De Docker](media/troubleshooting-docker-errors/docker-settings-image-location.png)
 
-Cliquez sur **appliquer** pour redémarrer l’ancrage. Ces étapes modifient le fichier de configuration sur *%ProgramData%\docker\config\daemon.JSON*. Les images générées précédemment ne sont pas déplacées.
+Cliquez **sur Appliquer** pour redémarrer Docker. Ces étapes modifient le fichier de configuration à *%ProgramData%-docker-config-daemon.json*. Les images précédemment construites ne sont pas déplacées.
 
 ## <a name="microsoftdockertools-github-repo"></a>Référentiel GitHub Microsoft/DockerTools
 

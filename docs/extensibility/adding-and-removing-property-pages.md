@@ -1,5 +1,5 @@
 ---
-title: Ajout et suppression de Pages de propriétés | Microsoft Docs
+title: Ajout et suppression des pages de propriété (en anglais seulement) Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -7,32 +7,32 @@ helpviewer_keywords:
 - property pages, project subtypes
 - property pages, removing
 ms.assetid: 34853412-ab8a-4caa-9601-7d0727b2985d
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 dev_langs:
 - CSharp
 - VB
 ms.workload:
 - vssdk
-ms.openlocfilehash: 03974bba0ca93242cf044a58bbb60ca772a369ce
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 4c3df3104e48ca0ee972e1a27f2c32fd0661088b
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66352314"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80740204"
 ---
-# <a name="add-and-remove-property-pages"></a>Ajouter et supprimer des pages de propriétés
+# <a name="add-and-remove-property-pages"></a>Ajouter et supprimer les pages de propriété
 
-Le Concepteur de projet fournit un emplacement centralisé pour la gestion des propriétés du projet, les paramètres et les ressources dans [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Il apparaît comme une fenêtre unique dans le [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] développement environnement intégré (IDE) et contient un nombre de volets qui sont accessibles via les onglets sur la gauche à droite. Les volets (souvent appelés pages de propriétés) dans le Concepteur de projets varient selon la langue et le type de projet. Le Concepteur de projet est accessible avec la **propriétés** commande sur le **projet** menu.
+Le concepteur de projet fournit un emplacement centralisé pour [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]gérer les propriétés, les paramètres et les ressources du projet dans . Il apparaît comme une [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] seule fenêtre dans l’environnement de développement intégré (IDE) et contient un certain nombre de volets sur la droite qui sont accessibles par les onglets sur la gauche. Les volets (souvent appelés pages de propriété) dans le concepteur de projet varient selon le type de projet et la langue. Le concepteur de projet est accessible avec la commande **Propriétés** sur le menu du **projet.**
 
-Un sous-type de projet doit fréquemment afficher des pages de propriétés supplémentaires dans le Concepteur de projets. De même, certains sous-types de projet peuvent nécessiter que les pages de propriétés intégrées être supprimé. Pour effectuer l’une, votre sous-type de projet doit implémenter le <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> interface et remplacer le <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.GetProperty%2A> (méthode). En substituant cette méthode et en utilisant `propId` paramètre qui contient l’une des valeurs de la <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID2> énumération, vous pouvez filtrer, ajouter ou supprimer des propriétés de projet. Par exemple, vous devrez peut-être ajouter une page vers les pages de propriétés dépendantes de la configuration. Pour ce faire, vous devez filtrer les pages de propriétés dépendantes de la configuration, puis ajouter une nouvelle page à la liste existante.
+Un sous-type de projet doit souvent afficher des pages de propriété supplémentaires dans le concepteur de projet. De même, certains sous-types de projets pourraient exiger que les pages de propriété intégrées soient supprimées. Pour ce faire, votre sous-type <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> de projet <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.GetProperty%2A> doit implémenter l’interface et remplacer la méthode. En prépondrant cette `propId` méthode et en utilisant <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID2> un paramètre contenant l’une des valeurs de l’énumération, vous pouvez filtrer, ajouter ou supprimer les propriétés du projet. Par exemple, vous devrez peut-être ajouter une page aux pages de propriété dépendantes de la configuration. Pour ce faire, vous devez filtrer les pages de propriété dépendantes de la configuration, puis ajouter une nouvelle page à la liste existante.
 
-## <a name="add-and-remove-property-pages-in-project-designer"></a>Ajouter et supprimer des pages de propriétés dans le Concepteur de projets
+## <a name="add-and-remove-property-pages-in-project-designer"></a>Ajouter et supprimer les pages de propriété dans Project Designer
 
-### <a name="remove-a-property-page"></a>Supprimer une page de propriétés
+### <a name="remove-a-property-page"></a>Supprimer une page de propriété
 
-1. Remplacer le `GetProperty(uint itemId, int propId, out object property)` méthode pour filtrer les pages de propriétés et obtenir un `clsids` liste.
+1. Remplacer la `GetProperty(uint itemId, int propId, out object property)` méthode pour filtrer `clsids` les pages de propriété et obtenir une liste.
 
     ```vb
     Protected Overrides int GetProperty(uint itemId, int propId, out object property)
@@ -77,7 +77,7 @@ Un sous-type de projet doit fréquemment afficher des pages de propriétés supp
     }
     ```
 
-2. Supprimer le **des événements de Build** obtenu de la page à partir de `clsids` liste.
+2. Supprimer la page Événements `clsids` de **construction** de la liste obtenue.
 
     ```vb
     Private buildEventsPageGuid As String = "{1E78F8DB-6C07-4D61-A18F-7514010ABD56}"
@@ -111,9 +111,9 @@ Un sous-type de projet doit fréquemment afficher des pages de propriétés supp
     property = propertyPagesList;
     ```
 
-### <a name="add-a-property-page"></a>Ajouter une page de propriétés
+### <a name="add-a-property-page"></a>Ajouter une page de propriété
 
-1. Créer une page de propriétés que vous souhaitez ajouter.
+1. Créez une page de propriété que vous souhaitez ajouter.
 
     ```vb
     Class DeployPropertyPage
@@ -158,7 +158,7 @@ Un sous-type de projet doit fréquemment afficher des pages de propriétés supp
     }
     ```
 
-2. Inscrire votre nouvelle page de propriétés.
+2. Enregistrez votre nouvelle page de propriété.
 
     ```vb
     <MSVSIP.ProvideObject(GetType(DeployPropertyPage), RegisterUsing = RegistrationMethod.CodeBase)>
@@ -168,7 +168,7 @@ Un sous-type de projet doit fréquemment afficher des pages de propriétés supp
     [MSVSIP.ProvideObject(typeof(DeployPropertyPage), RegisterUsing = RegistrationMethod.CodeBase)]
     ```
 
-3. Remplacer le `GetProperty(uint itemId, int propId, out object property)` méthode pour filtrer les pages de propriétés, d’obtenir un `clsids` répertorier et ajouter une nouvelle page de propriétés.
+3. Remplacer la `GetProperty(uint itemId, int propId, out object property)` méthode pour filtrer `clsids` les pages de propriété, obtenir une liste et ajouter une nouvelle page de propriété.
 
     ```vb
     Protected Overrides Function GetProperty(ByVal itemId As UInteger, ByVal propId As Integer, ByRef [property] As Object) As Integer
@@ -208,4 +208,4 @@ Un sous-type de projet doit fréquemment afficher des pages de propriétés supp
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Sous-types de projet](../extensibility/internals/project-subtypes.md)
+- [Sous-types de projets](../extensibility/internals/project-subtypes.md)

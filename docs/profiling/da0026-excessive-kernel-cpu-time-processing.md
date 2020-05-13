@@ -14,25 +14,25 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 2c8b4cb63eb4647ddab4220ed6729894fe8a456f
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74777487"
 ---
-# <a name="da0026-excessive-kernel-cpu-time-processing"></a>DA0026 : traitement du temps processeur noyau excessif
+# <a name="da0026-excessive-kernel-cpu-time-processing"></a>DA0026 : Traitement du temps processeur noyau excessif
 
 |||
 |-|-|
-|ID de la règle|TODO|
+|ID de règle|TODO|
 |Category|Utilisation des outils de profilage|
-|Méthode de profilage|Échantillonnage|
+|Méthode de profilage|échantillonnage|
 |Message|Temps CPU en mode noyau relativement élevé. Analysez la source en activant l’échantillonnage de SysCall.|
-|Type de règle|Informations|
+|Type de règle|Information|
 
  Lorsque vous effectuez un profilage à l’aide de la méthode d’échantillonnage, de mémoire .NET ou de conflit des ressources, vous devez collecter au moins 10 échantillons pour déclencher cette règle.
 
-## <a name="cause"></a>Cause
+## <a name="cause"></a>Cause :
  Le temps processeur qui a été exécuté en mode noyau a dépassé le temps passé en mode utilisateur. Effectuez de nouveau un profilage et un échantillonnage du nombre d’appels système (syscalls) pour déterminer la cause des durées élevées d’exécution en mode noyau.
 
 ## <a name="rule-description"></a>Description de la règle

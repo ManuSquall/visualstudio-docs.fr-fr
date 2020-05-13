@@ -10,17 +10,17 @@ manager: jillfra
 ms.workload:
 - data-science
 ms.openlocfilehash: 8c5b4278ab50aac96703f03e74c014d29831f22e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "62810155"
 ---
 # <a name="use-docker-containers-with-r-tools-for-visual-studio"></a>Utiliser des conteneurs Docker avec Outils R pour Visual Studio
 
 Outils R pour Visual Studio (RTVS) version 1.3+, parallèlement à une installation de [Docker pour Windows](https://www.docker.com/docker-windows), prend en charge l’utilisation des conteneurs Docker.
 
-## <a name="create-a-container"></a>Créer un conteneur
+## <a name="create-a-container"></a>Créez un conteneur.
 
 1. Sélectionnez le bouton **Conteneurs** dans le coin droit de la fenêtre **Espaces de travail** (**Outils R** > **Windows** > **Espaces de travail**). La fenêtre vous informe si vous n’avez pas installé Docker pour Windows et fournit un lien pour son téléchargement. L’installation de Docker peut nécessiter un redémarrage de l’ordinateur.
 

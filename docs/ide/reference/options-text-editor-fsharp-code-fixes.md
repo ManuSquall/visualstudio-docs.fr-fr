@@ -10,15 +10,15 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: a5c736be59c257d98085831971d6b7b9dc2a0ef3
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "72666281"
 ---
-# <a name="options-text-editor--f--code-fixes"></a>Options : éditeur de texte F# > > les correctifs de code
+# <a name="options-text-editor--f--code-fixes"></a>Options : L’éditeur de texte > les correctifs de code > de F
 
-Utilisez la page d’options Correctifs du code pour spécifier les paramètres qui peuvent aider à identifier les erreurs de code et à proposer des solutions. Pour accéder à cette page d’options, choisissez **Outils** > **Options**, puis **Éditeur de texte** > **F#**  > **Correctifs du code**.
+Utilisez la page d’options Correctifs du code pour spécifier les paramètres qui peuvent aider à identifier les erreurs de code et à proposer des solutions. Pour accéder à cette page d’options, choisissez **Tools** > **Options,** puis choisissez **Text Editor** > **F '** > **Code Fixes**.
 
 ## <a name="code-fixes"></a>Correctifs du code
 
@@ -40,5 +40,5 @@ Utilisez la page d’options Correctifs du code pour spécifier les paramètres 
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Général, Environnement, boîte de dialogue Options](../../ide/reference/general-environment-options-dialog-box.md)
+- [Général, Environnement, Options Dialog Box](../../ide/reference/general-environment-options-dialog-box.md)
 - [Rechercher les modifications de code et d’autres historiques avec CodeLens](../../ide/find-code-changes-and-other-history-with-codelens.md)

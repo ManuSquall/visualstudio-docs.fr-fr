@@ -11,20 +11,20 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: 6e95d05c3fbc0dd46d235c7480bd4a9caa48947e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "62957531"
 ---
 # <a name="format-python-code"></a>Mettre en forme le code Python
 
 Dans Visual Studio, vous pouvez rapidement remettre en forme le code selon les options de mise en forme préconfigurées.
 
-- Pour mettre en forme une sélection : sélectionnez **Modifier** > **Avancé** > **Mettre la sélection en forme** ou appuyez sur **Ctrl**+**E** > **F**.
-- Pour mettre en forme la totalité du fichier : sélectionnez **Modifier** > **Avancé** > **Mettre le document en forme** ou appuyez sur **Ctrl**+**E** > **D**.
+- Pour formater une sélection : sélectionnez **Edit** > **Advanced** > **Format Selection** ou appuyez sur **Ctrl**+**E** > **F**.
+- Pour formater l’ensemble du fichier : sélectionnez **Modifier le** > **document format** **avancé** > ou appuyez sur **Ctrl**+**E** > **D**.
 
-Les options sont définies via **Outils** > **Options** > **Éditeur de texte** > **Python** > **Mise en forme** et ses onglets imbriqués. Vous devez sélectionner **Afficher tous les paramètres** pour que ces options s’affichent :
+Les options sont définies par **Tools** > **Options** > **Text Editor** > **Python** > **Formatting** et ses onglets imbriqués. Vous devez sélectionner **Afficher tous les paramètres** pour que ces options s’affichent :
 
 ![Options de mise en forme Python dans Visual Studio](media/options-editor-formatting.png)
 
@@ -42,7 +42,7 @@ L’onglet **Espacement** contrôle l’emplacement d’insertion ou de suppress
 
 Les tableaux ci-après fournissent des exemples des différentes options :
 
-| Option des définitions de classe | Activé | Effacé |
+| Option des définitions de classe | Activé | Désactivé |
 | --- | --- | --- |
 | **Insérer un espace entre le nom d’une déclaration de classe et une liste de bases** | `class X (object): pass` | `class X(object): pass` |
 | **Insérer un espace entre les parenthèses d’une liste de bases** | `class X( object ): pass` | `class X(object): pass` |
@@ -50,24 +50,24 @@ Les tableaux ci-après fournissent des exemples des différentes options :
 
 <br/>
 
-| Option des définitions de fonction | Activé | Effacé |
+| Option des définitions de fonction | Activé | Désactivé |
 | --- | --- | --- |
 | **Insérer un espace entre le nom d’une déclaration de fonction et une liste de paramètres** | `def X (): pass` | `def X(): pass` |
 | **Insérer un espace entre les parenthèses d’une liste de paramètres** | `def X( a, b ): pass` | `def X(a, b): pass` |
 | **Insérer un espace entre les parenthèses d’une liste de paramètres vide** | `def X( ): pass` | `def X(): pass` |
-| **Insérer des espaces autour du caractère « = » dans les valeurs de paramètre par défaut** | `includes X(a = 42): pass` | `includes X(a=42): pass` |
-| **Insérer un espace avant et après les opérateurs d’annotation de retour** | `includes X() -> 42: pass` | `includes X()->42: pass` |
+| **Insérer des espaces autour du caractère « = » dans les valeurs de paramètre par défaut** | `includes X(a = 42): pass` | `includes X(a=42): pass` |
+| **Insérer un espace avant et après les opérateurs d’annotation de renvoi** | `includes X() -> 42: pass` | `includes X()->42: pass` |
 
 <br/>
 
-| Option des opérateurs | Activé | Effacé |
+| Option des opérateurs | Activé | Désactivé |
 | --- | --- | --- |
 | **Insérer des espaces autour des opérateurs binaires** | `a + b` | `a+b` |
 | **Insérer des espaces autour des assignations** | `a = b` | `a=b` |
 
 <br/>
 
-| Option d’espacement d’expression | Activé | Effacé |
+| Option d’espacement d’expression | Activé | Désactivé |
 | --- | --- | --- |
 | **Insérer un espace entre le nom d’un appel de fonction et une liste d’arguments** | `X ()` | `X()` |
 | **Insérer un espace dans les parenthèses de la liste d’arguments vide** | `X( )` | `X()` |
@@ -109,9 +109,9 @@ L’onglet **Retour à la ligne** vous permet de définir l’option **Largeur m
 
 ## <a name="fill-comment-paragraph-command"></a>Commande Fill Comment Paragraph (Redisposer le paragraphe de commentaires)
 
-La commande **Modifier** > **Avancé** > **Remplir le paragraphe de commentaire** (**Ctrl**+**E** > **P**) redispose et remet en forme le texte des commentaires en combinant les lignes courtes et en scindant les lignes longues.
+**Modifier** > **Advanced** > **Fill Comment Paragraph** (**Ctrl**+**E** > **P**) rénove et formate le texte de commentaire, combinant des lignes courtes ensemble et en brisant les longs.
 
-Par exemple :
+Par exemple :
 
 ```python
 # foo

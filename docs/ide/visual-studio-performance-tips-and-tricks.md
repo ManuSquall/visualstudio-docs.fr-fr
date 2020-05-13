@@ -8,11 +8,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: e3cd7fe9781048f6612ff6bd81c0bf0cbc00a30b
-ms.sourcegitcommit: 9a66f1c31cc9eba0b5231af72da1d18761a9c56a
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/14/2020
-ms.locfileid: "75944204"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79303021"
 ---
 # <a name="visual-studio-performance-tips-and-tricks"></a>Conseils et astuces sur les performances dans Visual Studio
 
@@ -33,23 +33,23 @@ Visual Studio rouvre automatiquement les documents qui ont été laissés ouvert
 
 Visual Studio affiche un avertissement dans une barre jaune quand la restauration automatique de documents ralentit de manière significative le chargement d’une solution. Vous pouvez désactiver la réouverture automatique des fichiers en effectuant les étapes suivantes :
 
-1. Sélectionnez **Outils** > **Options** pour ouvrir la boîte de dialogue **Options**.
+1. Sélectionnez **des options d’outils** > **Options** pour ouvrir la boîte de dialogue **Options.**
 
-1. Dans la page **Projets et solutions** > **Général**, désactivez l’option **Rouvrir les documents au chargement de la solution**.
+1. Sur la page **Projets et Solution** > **Générale,** désélectionner **les documents de réouverture sur la charge de la solution**.
 
 Si vous désactivez la restauration automatique de fichiers, vous pouvez accéder rapidement aux fichiers à ouvrir, à l’aide de l’une des commandes [Atteindre](../ide/go-to.md) :
 
 - Pour la fonctionnalité **Atteindre** générale, sélectionnez **Edition** > **Atteindre** > **Atteindre tout**, ou appuyez sur **Ctrl**+**T**.
 
-- Pour accéder à l’emplacement de la dernière modification d’une solution, sélectionnez **Edition** > **Atteindre** > **Accéder à l’emplacement de la dernière modification** ou appuyez sur **Ctrl**+**Maj**+**Ret. arr**.
+- Sautez à la dernière position de modification dans une solution en utilisant **Edit** > **Go To** > **Last Edit Location**, ou en appuyant sur **Ctrl**+**Shift**+**Backspace**.
 
-- Utilisez **Aller au fichier récent** pour afficher la liste des derniers fichiers ouverts dans une solution. Sélectionnez **Edition** > **Atteindre** > **Aller au fichier récent**, ou appuyez sur **Ctrl**+**1**, **Ctrl**+**R**.
+- Utilisez **Aller au fichier récent** pour afficher la liste des derniers fichiers ouverts dans une solution. Sélectionnez **Edit** > **Go To** > Go**To Recent File**, ou appuyez sur **Ctrl**+**1**, **Ctrl**+**R**.
 
 ## <a name="configure-debugging-options"></a>Configurer les options de débogage
 
 En règle générale, si vous manquez de mémoire pendant le débogage des sessions, vous pouvez optimiser les performances en modifiant un peu la configuration.
 
-- **Activer Uniquement mon code**
+- **Activez Just My Code**
 
     L’optimisation la plus simple consiste à activer la fonctionnalité **Uniquement mon code**, qui charge uniquement des symboles pour votre projet. L’activation de cette fonctionnalité peut contribuer à économiser considérablement la mémoire pour le débogage des applications managées (.NET). Cette option est déjà activée par défaut dans certains types de projets.
 
@@ -57,11 +57,11 @@ En règle générale, si vous manquez de mémoire pendant le débogage des sessi
 
 - **Spécifier les symboles à charger**
 
-    Pour le débogage natif, le chargement des fichiers de symboles ( *.pdb*) consomme beaucoup de ressources mémoire. Vous pouvez configurer les paramètres de symboles de votre débogueur pour économiser la mémoire. En règle générale, vous configurez la solution pour charger uniquement les modules de votre projet.
+    Pour le débogage natif, le chargement des fichiers de symboles (*.pdb*) consomme beaucoup de ressources mémoire. Vous pouvez configurer les paramètres de symboles de votre débogueur pour économiser la mémoire. En règle générale, vous configurez la solution pour charger uniquement les modules de votre projet.
 
-    Pour spécifier le chargement des symboles, choisissez **Outils** > **Options** > **Débogage** > **Symboles**.
+    Pour spécifier le chargement des**symboles,** choisissez **des outils** > **Options** > **Débugging** > Symbols .
 
-    Définissez les options sur **Uniquement les modules spécifiés** au lieu de **Tous les modules**, puis spécifiez les modules que vous voulez charger. Pendant le débogage, vous pouvez également cliquer avec le bouton droit sur des modules spécifiques dans la fenêtre **Modules** pour inclure explicitement un module dans le chargement de symboles. (Pour ouvrir la fenêtre pendant le débogage, choisissez **Déboguer** > **Fenêtres** > **Modules**.)
+    Définissez les options sur **Uniquement les modules spécifiés** au lieu de **Tous les modules**, puis spécifiez les modules que vous voulez charger. Pendant le débogage, vous pouvez également cliquer avec le bouton droit sur des modules spécifiques dans la fenêtre **Modules** pour inclure explicitement un module dans le chargement de symboles. (Pour ouvrir la fenêtre tout en débogage, choisissez **Debug** > **Modules****Windows** > .)
 
     Pour plus d’informations, consultez [Présentation des fichiers de symboles](/visualstudio/ide/visual-studio-performance-tips-and-tricks?view=vs-2019).
 
@@ -88,7 +88,7 @@ Pour plus d’informations sur les performances de .NET Compiler Platform (« Ro
 
     Visual Studio analyse l’ensemble de votre solution afin d’offrir une expérience complète sur les erreurs avant d’appeler une génération. Cette fonctionnalité est utile pour identifier les erreurs dès que possible. Toutefois, pour les solutions volumineuses, cette fonctionnalité peut consommer des ressources de mémoire considérables. Si vous rencontrez des problèmes de mémoire ou du même type, vous pouvez désactiver cette expérience pour libérer ces ressources. Par défaut, cette option est activée pour Visual Basic et désactivée pour C#.
 
-    Pour désactiver **Analyse complète de la solution**, choisissez **Outils** > **Options** > **Éditeur de texte**, puis sélectionnez **Visual Basic** ou **C#** . Choisissez **Avancé** et décochez la case **Activer l’analyse complète de la solution**.
+    Pour désactiver **Analyse complète de la solution**, choisissez **Outils** > **Options** > **Éditeur de texte**, puis sélectionnez **Visual Basic** ou **C#**. Choisissez **Avancé** et décochez la case **Activer l’analyse complète de la solution**.
 
 - **Désactiver CodeLens**
 
@@ -107,13 +107,13 @@ Pour plus d’informations sur les performances de .NET Compiler Platform (« Ro
 
    ::: moniker range="vs-2017"
 
-    Pour désactiver des extensions, accédez à **outils** > **extensions et mises à jour**, puis désactivez une extension particulière.
+    Pour désactiver des extensions, accédez à **Outils** > **Extensions et mises à jour** et désactivez une extension particulière.
 
    ::: moniker-end
 
    ::: moniker range=">=vs-2019"
 
-    Pour désactiver des extensions, accédez à **extensions** > **gérer les extensions**et désactivez une extension particulière.
+    Pour désactiver des extensions, accédez à **Outils** > **Gérer les extensions** et désactivez une extension particulière.
 
    ::: moniker-end
 
@@ -131,7 +131,7 @@ Pour plus d’informations sur les performances de .NET Compiler Platform (« Ro
 
 Le CLR utilise un système de gestion de mémoire garbage collection. Dans ce système, la mémoire est parfois utilisée par des objets qui ne sont plus nécessaires. Cet état est temporaire. Le récupérateur de mémoire libère cette mémoire en fonction de ses méthodes heuristiques en matière d’utilisation des ressources et de performances. Vous pouvez obliger le CLR à collecter la mémoire inutilisée à l’aide d’un raccourci clavier dans Visual Studio. Si une quantité importante de mémoire est en attente de nettoyage et que vous forcez une opération de garbage collection, vous devez voir chuter l’utilisation de la mémoire par le processus *devenv.exe* dans le **Gestionnaire des tâches**. Cette méthode est rarement nécessaire. Toutefois, quand une opération ayant consommé beaucoup de ressources se termine (par exemple, une génération complète, une session de débogage ou un événement d’ouverture de solution), elle peut vous aider à déterminer la quantité de mémoire qui est réellement utilisée par le processus. Parce que Visual Studio est mixte (à la fois managé et natif), il est parfois possible que l’allocateur natif et le récupérateur de mémoire entrent en concurrence pour utiliser des ressources mémoire limitées. Dans les situations d’utilisation importante de la mémoire, il peut être utile de forcer l’exécution du récupérateur de mémoire.
 
-Pour forcer une opération de garbage collection, utilisez la touche de raccourci : **Ctrl**+**Alt**+**Maj**+**F12**, **Ctrl**+**Alt**+**Maj**+**F12** (appuyez dessus deux fois).
+Pour forcer une collecte des ordures, utilisez le hotkey: **Ctrl**+**Alt**+**Shift**+**F12**, **Ctrl**+**Alt**+**Shift**+**F12** (appuyez-le deux fois).
 
 Si le forçage de l’opération de garbage collection permet à votre scénario de fonctionner de manière fiable, envoyez un rapport à travers l’outil de commentaires de Visual Studio, car ce comportement est susceptible d’être un bogue.
 
@@ -139,5 +139,5 @@ Pour obtenir une description détaillée du récupérateur de mémoire CLR, cons
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Optimiser les performances de Visual Studio](../ide/optimize-visual-studio-performance.md)
+- [Optimiser le niveau de performance de Visual Studio](../ide/optimize-visual-studio-performance.md)
 - [Charger des solutions plus rapidement (blog Visual Studio)](https://devblogs.microsoft.com/visualstudio/load-solutions-faster-with-visual-studio-2017-version-15-6/)

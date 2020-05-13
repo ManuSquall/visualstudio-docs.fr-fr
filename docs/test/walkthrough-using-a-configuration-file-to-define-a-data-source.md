@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 4a4f5731a828eb04e57f56a46fe399125b5ded2f
-ms.sourcegitcommit: 10d16e18c5f5e482c4c2856e6cacaad283463b65
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/09/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75776154"
 ---
 # <a name="walkthrough-using-a-configuration-file-to-define-a-data-source"></a>Procédure pas à pas : utilisation d’un fichier de configuration pour définir une source de données
@@ -32,7 +32,7 @@ Cette procédure pas à pas illustre l’utilisation d’une source de données 
 
 - accès aux sources de données à l'aide de la classe <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataSourceAttribute>.
 
-## <a name="prerequisites"></a>Configuration requise
+## <a name="prerequisites"></a>Conditions préalables requises
 
 Pour exécuter cette procédure pas à pas, vous avez besoin des éléments suivants :
 
@@ -85,7 +85,7 @@ Les chaînes de connexion définissent des informations spécifiques au fourniss
 
 3. Dans le premier élément **add**, créez les attributs et valeurs suivants pour une connexion à une base de données Microsoft Access :
 
-|Attribute|Valeurs|
+|Attribut|Valeurs|
 |-|------------|
 |`name`|`"MyJetConn"`|
 |`connectionString`|`"Provider=Microsoft.Jet.OLEDB.4.0; Data Source=C:\testdatasource.accdb; Persist Security Info=False;"`|
@@ -93,7 +93,7 @@ Les chaînes de connexion définissent des informations spécifiques au fourniss
 
 Dans le deuxième élément **add**, créez les attributs et valeurs suivants pour une connexion à une feuille de calcul Microsoft Excel :
 
-|Attribute|Valeurs|
+|Attribut|Valeurs|
 |-|-|
 |`name`|`"MyExcelConn"`|
 |`connectionString`|`"Dsn=Excel Files;dbq=data.xlsx;defaultdir=.\; driverid=790;maxbuffersize=2048;pagetimeout=5"`|
@@ -132,7 +132,7 @@ Dans cette section, vous définirez deux sources de données à utiliser dans un
 
 4. Dans le premier élément **add**, créez les attributs et valeurs suivants pour une source de données Microsoft Access :
 
-|Attribute|Valeurs|
+|Attribut|Valeurs|
 |-|------------|
 |`name`|`"MyJetDataSource"`|
 |`connectionString`|`"MyJetConn"`|
@@ -141,7 +141,7 @@ Dans cette section, vous définirez deux sources de données à utiliser dans un
 
 Dans le deuxième élément **add**, créez les attributs et valeurs suivants pour une source de données Microsoft Excel :
 
-|Attribute|Valeurs|
+|Attribut|Valeurs|
 |-|-|
 |`Name`|`"MyExcelDataSource"`|
 |`connectionString`|`"MyExcelConn"`|
@@ -269,5 +269,5 @@ Maintenant qu’un fichier *app.config* a été défini, vous allez créer un te
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Tests unitaires sur votre code](../test/unit-test-your-code.md)
+- [Test unitaire de votre code](../test/unit-test-your-code.md)
 - [Guide pratique pour créer un test unitaire piloté par les données ](../test/how-to-create-a-data-driven-unit-test.md)

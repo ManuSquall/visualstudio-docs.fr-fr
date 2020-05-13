@@ -1,5 +1,5 @@
 ---
-title: IDebugBinder::GetMemoryContext | Microsoft Docs
+title: IDebugBinder::GetMemoryContext Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugBinder::GetMemoryContext method
 ms.assetid: 801c5b60-acff-4822-b23d-e9c7bbca8a0f
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 9876d4e4315041f4a4212a7ef50077982f3d2df0
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 8d50126e26b836f7b53ee1abeb5c4988b74a2eed
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66327266"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80735995"
 ---
 # <a name="idebugbindergetmemorycontext"></a>IDebugBinder::GetMemoryContext
-Cette méthode convertit une adresse mémoire ou un emplacement de l’objet à un contexte de la mémoire.
+Cette méthode convertit soit un emplacement d’objet, soit une adresse mémoire en contexte de mémoire.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -45,16 +45,16 @@ int GetMemoryContext(
 
 ## <a name="parameters"></a>Paramètres
 `pField`\
-[in] Un [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) décrivant l’objet à localiser. Si `NULL`, puis utilisez `dwConstant` à la place.
+[dans] Un [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) décrivant l’objet à localiser. Si `NULL`, `dwConstant` puis utiliser à la place.
 
 `dwConstant`\
-[in] Une adresse mémoire constante, telles que 0x5000.
+[dans] Une adresse mémoire constante, comme 0x5000.
 
 `ppMemCxt`\
-[out] Retourne le [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md) interface qui représente l’adresse de l’objet ou l’adresse en mémoire.
+[out] Retourne l’interface [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md) qui représente l’adresse de l’objet, ou l’adresse en mémoire.
 
 ## <a name="return-value"></a>Valeur de retour
- En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.
+ En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
 ## <a name="see-also"></a>Voir aussi
 - [IDebugBinder](../../../extensibility/debugger/reference/idebugbinder.md)

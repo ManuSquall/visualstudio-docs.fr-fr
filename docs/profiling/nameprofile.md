@@ -13,10 +13,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: d9f0c9a3259186e1581a4673cdc18d1554e92b3c
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74778490"
 ---
 # <a name="nameprofile"></a>NameProfile
@@ -33,7 +33,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI NameProfile(
                                    unsigned int dwId);
 ```
 
-#### <a name="parameters"></a>Parameters
+#### <a name="parameters"></a>Paramètres
  `pszName`
 
  Nom de l’élément de profilage. Un nom n’est pas valide (NameProfileA retournant alors NAME_ERROR_INVALID_NAME) si :
@@ -50,7 +50,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI NameProfile(
 
   Indique le niveau du profil auquel la collecte des données de performances peut être appliquée. Les valeurs de **PROFILE_CONTROL_LEVEL** suivantes peuvent être utilisés pour indiquer un des trois niveaux auxquels la collecte des données de performances peut être appliquée :
 
-|Enumerator|Description|
+|Énumérateur|Description|
 |----------------|-----------------|
 |PROFILE_GLOBALLEVEL|Le niveau « global »affecte tous les processus et tous les threads dans l’exécution du profilage.|
 |PROFILE_PROCESSLEVEL|Le niveau « processus » affecte tous les threads qui font partie du processus spécifié.|
@@ -61,9 +61,9 @@ PROFILE_COMMAND_STATUS PROFILERAPI NameProfile(
  Identificateur de niveau de profilage. Utilisez l’identificateur de processus ou de thread généré par le système.
 
 ## <a name="property-valuereturn-value"></a>Valeur de propriété/valeur de retour
- La fonction indique la réussite ou l’échec en utilisant l’énumération **PROFILE_COMMAND_STATUS**. La valeur renvoyée peut être l'une des suivantes :
+ La fonction indique la réussite ou l’échec en utilisant l’énumération **PROFILE_COMMAND_STATUS**. La valeur de retour peut être une des suivantes :
 
-|Enumerator|Description|
+|Énumérateur|Description|
 |----------------|-----------------|
 |NAME_ERROR_ID_NOEXIST|L’élément de profilage spécifié n’existe pas.|
 |NAME_ERROR_INVALID_NAME|Le nom n'est pas valide.|
@@ -74,7 +74,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI NameProfile(
 |NAME_ERROR_TEXTTRUNCATED|Le texte du nom dépassait 32 caractères, y compris le caractère null, et a donc été tronqué.|
 |NAME_OK|Le nom a été inscrit.|
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Notes 
  Vous ne pouvez affecter qu’un seul nom à chaque processus ou thread. Une fois qu’un élément de profilage est nommé, les appels suivants à NameProfile pour cet élément sont ignorés.
 
  Si un même nom est affecté à différents threads ou processus, le rapport comprend les données provenant de tous les éléments de ce niveau portant ce nom.
@@ -91,11 +91,11 @@ PROFILE_COMMAND_STATUS PROFILERAPI NameProfile(
 
 |||
 |-|-|
-|**Header**|Inclure *VSPerf.h*|
+|**En-tête**|Inclure *VSPerf.h*|
 |**Bibliothèque**|Utiliser *VSPerf.lib*|
 |**Unicode**|Implémenté en tant que `NameProfileW` (Unicode) et `NameProfileA` (ANSI).|
 
-## <a name="example"></a>Exemple
+## <a name="example"></a> Exemple
  Le code suivant illustre l’appel de la fonction NameProfile. L’exemple suppose l’utilisation de macros de chaîne Win32 et les paramètres de compilateur pour ANSI afin de déterminer si le code appelle la fonction compatible ANSI.
 
 ```cpp
@@ -134,4 +134,4 @@ void ExerciseNameProfile()
 ```
 
 ## <a name="see-also"></a>Voir aussi
-- [Informations de référence sur l’API du profileur Visual Studio (native)](../profiling/visual-studio-profiler-api-reference-native.md)
+- [Visual Studio profiler API référence (native)](../profiling/visual-studio-profiler-api-reference-native.md)

@@ -6,10 +6,10 @@ ms.author: dominicn
 ms.date: 05/06/2018
 ms.assetid: 61EAAB8F-3C32-4574-924F-CFC616604089
 ms.openlocfilehash: c3572edc46d4f69a338ba655b32254126a7fce9c
-ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/10/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "74985276"
 ---
 # <a name="managing-app-resources"></a>Gestion des ressources d’application
@@ -20,13 +20,13 @@ Les fichiers de ressources d’application, comme les images, les fichiers texte
 
 Le code Xamarin.Forms s’exécute sur plusieurs plateformes, chacune ayant son propre système de fichiers. Chaque système de fichiers détermine le mode de lecture et d’écriture des fichiers. Dans Xamarin.Forms, vous pouvez gérer les ressources d’application à l’aide des API de fichier natif sur chaque plateforme, ou en ajoutant des fichiers en tant que ressources incorporées.
 
-* [Utilisation d’images](https://developer.xamarin.com/guides/xamarin-forms/user-interface/images/)
+* [Travailler avec Images](https://developer.xamarin.com/guides/xamarin-forms/user-interface/images/)
 * [Utilisation de fichiers]( https://developer.xamarin.com/guides/xamarin-forms/application-fundamentals/files/)
 
 ## <a name="xamarinios"></a>Xamarin.iOS
 
 * [Utilisation de ressources](https://developer.xamarin.com/guides/ios/application_fundamentals/working_with_resources/)
-* [Utilisation d’images](https://developer.xamarin.com/guides/ios/application_fundamentals/working_with_images/)
+* [Travailler avec Images](https://developer.xamarin.com/guides/ios/application_fundamentals/working_with_images/)
 * [Utilisation du système de fichiers](https://developer.xamarin.com/guides/ios/application_fundamentals/working_with_the_file_system/)
 
 ## <a name="xamarinandroid"></a>Xamarin.Android
@@ -35,7 +35,7 @@ Le code Xamarin.Forms s’exécute sur plusieurs plateformes, chacune ayant son 
 
 ## <a name="xamarinmac"></a>Xamarin.Mac
 
-* [Utilisation d’images](https://developer.xamarin.com/guides/mac/application_fundamentals/working-with-images/)
+* [Travailler avec Images](https://developer.xamarin.com/guides/mac/application_fundamentals/working-with-images/)
 
 ## <a name="see-also"></a>Voir aussi
 

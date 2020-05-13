@@ -1,27 +1,27 @@
 ---
-title: 'Procédure : Identifier les symboles dans une bibliothèque | Microsoft Docs'
+title: 'Comment : Identifier les symboles dans une bibliothèque Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - Call Browser tool, identifying symbols in the library
 - Call Browser tool
 ms.assetid: 8fb0de61-71e7-42d1-8b41-2ad915474384
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 550bd16fec0dde508642a362835cde1e2d1637d5
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 1fe920fabd05a875b336467fbba16e4229fa9613
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66328705"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80708005"
 ---
-# <a name="how-to-identify-symbols-in-a-library"></a>Procédure : Identifier les symboles dans une bibliothèque
-Outils de consultation de symboles affichent des vues hiérarchiques des symboles. Les symboles représentent des espaces de noms, les objets, les classes, les membres de classe et les autres éléments de langage.
+# <a name="how-to-identify-symbols-in-a-library"></a>Comment : Identifier les symboles dans une bibliothèque
+Les outils de navigation des symboles affichent des vues hiérarchiques des symboles. Les symboles représentent des espaces de noms, des objets, des classes, des membres de la classe et d’autres éléments linguistiques.
 
- Chaque symbole dans la hiérarchie peut être identifiée par les informations de navigation passées par la bibliothèque de symboles pour le [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Gestionnaire d’objets via les interfaces suivantes :
+ Chaque symbole de la hiérarchie peut être identifié par les [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] informations de navigation transmises par la bibliothèque de symboles au gestionnaire d’objets à travers les interfaces suivantes :
 
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsNavInfo>
 
@@ -29,11 +29,11 @@ Outils de consultation de symboles affichent des vues hiérarchiques des symbole
 
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsEnumNavInfoNodes>.
 
- L’emplacement du symbole dans la hiérarchie distingue un symbole. Il permet des outils de consultation de symboles accéder à un symbole spécifique. Le chemin d’accès unique et complet pour le symbole détermine l’emplacement. Chaque élément dans le chemin d’accès est un nœud. Le chemin d’accès commence par le nœud de niveau supérieur et se termine par le symbole spécifique. Par exemple, si la méthode M1 est un membre de la classe C1 et C1 est dans l’espace de noms N1, le chemin d’accès complet de la méthode M1 est N1. C1. M1. Ce chemin d’accès contient trois nœuds : N1, C1 et M1.
+ L’emplacement du symbole dans la hiérarchie distingue un symbole. Il permet aux outils de navigation de symbole de naviguer vers un symbole spécifique. Le chemin unique et entièrement qualifié vers le symbole détermine l’emplacement. Chaque élément du chemin est un nœud. Le chemin commence avec le nœud de haut niveau et se termine par le symbole spécifique. Par exemple, si la méthode M1 est membre de la classe C1 et que la C1 est dans l’espace de nom N1, le chemin complet de la méthode M1 est N1. C1. M1. Ce chemin contient trois nœuds : N1, C1 et M1.
 
- Les informations de navigation permettent la [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Gestionnaire d’objets pour rechercher, sélectionner et conserver sélectionné les symboles dans la hiérarchie. Il permet d’accéder à partir d’un outil de navigation vers un autre. Lors de l’utilisation **Explorateur d’objets** pour rechercher des symboles dans un [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] projet, vous pouvez cliquez sur une méthode et commencer le **Explorateur d’appels** outil pour afficher la méthode dans un graphique des appels.
+ Les informations de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] navigation permettent au gestionnaire d’objets de localiser, de sélectionner et de conserver les symboles sélectionnés dans la hiérarchie. Il permet de naviguer d’un outil de navigation à l’autre. Tout en utilisant Le navigateur [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] **d’objets** pour parcourir les symboles d’un projet, vous pouvez cliquer à droite sur une méthode et démarrer **l’outil De navigateur d’appels** pour afficher la méthode dans un graphique d’appel.
 
- Deux formes décrivent l’emplacement de symboles. La forme canonique est basée sur le chemin d’accès qualifié complet du symbole. Il représente une position unique du symbole dans la hiérarchie. Elle est indépendante de l’outil de recherche de symboles. Pour obtenir les informations de la forme canonique, le [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] object manager appelle <xref:Microsoft.VisualStudio.Shell.Interop.IVsNavInfo.EnumCanonicalNodes%2A> (méthode). Le formulaire de présentation décrit l’emplacement du symbole dans un outil de consultation de symboles spécifique. La position du symbole est relatif à la position d’autres symboles dans la hiérarchie. Un symbole donné peut avoir plusieurs chemins de présentation, mais qu’un seul chemin d’accès canonique. Par exemple, si C1 classe héritée de la classe de C2 et les deux classes se trouvent dans l’espace de noms N1, le **Explorateur d’objets** affiche l’arborescence hiérarchique suivant :
+ Deux formes décrivent l’emplacement du symbole. La forme canonique est basée sur le chemin entièrement qualifié du symbole. Il représente une position unique du symbole dans la hiérarchie. Il est indépendant de l’outil de navigation des symboles. Pour obtenir les informations de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] formulaire <xref:Microsoft.VisualStudio.Shell.Interop.IVsNavInfo.EnumCanonicalNodes%2A> canonique, le gestionnaire d’objets appelle la méthode. Le formulaire de présentation décrit l’emplacement du symbole dans un outil spécifique de navigation des symboles. La position du symbole est relative à la position d’autres symboles dans la hiérarchie. Un symbole donné peut avoir plusieurs voies de présentation, mais un seul chemin canonique. Par exemple, si la classe C1 est héritée de la classe C2 et que les deux classes sont dans l’espace nom N1, le **navigateur d’objet** affiche l’arbre hiérarchique suivant :
 
 ```
 N1
@@ -46,15 +46,15 @@ N1
 
 ```
 
- Le chemin d’accès canonique de la classe C2, dans cet exemple, est N1 + C2. Le chemin d’accès de présentation de C2 inclut les nœuds C1 et « Bases et Interfaces » : N1 + C1 + « Bases et Interfaces » + C2.
+ Le parcours canonique de la classe C2, dans cet exemple, est N1 C2. Le parcours de présentation de C2 comprend les nœuds C1 et " Bases and Interfaces " : N1 ' C1 ' ' Bases et Interfaces' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' '
 
- Pour obtenir les informations du formulaire de présentation, le Gestionnaire d’objets appelle <xref:Microsoft.VisualStudio.Shell.Interop.IVsNavInfo.EnumPresentationNodes%2A> (méthode).
+ Pour obtenir les informations du formulaire <xref:Microsoft.VisualStudio.Shell.Interop.IVsNavInfo.EnumPresentationNodes%2A> de présentation, le gestionnaire d’objets appelle la méthode.
 
-## <a name="to-obtain-canonical-and-presentation-forms-information"></a>Pour obtenir canonique et informations de formulaires de présentation
+## <a name="to-obtain-canonical-and-presentation-forms-information"></a>Pour obtenir des formulaires canoniques et de présentation
 
 1. Implémentez la méthode <xref:Microsoft.VisualStudio.Shell.Interop.IVsNavInfo.EnumCanonicalNodes%2A>.
 
-     Le Gestionnaire d’objets appelle cette méthode pour obtenir la liste de nœuds contenus dans le chemin d’accès canonique du symbole.
+     Le gestionnaire d’objets appelle cette méthode pour obtenir la liste des nœuds contenus dans la trajectoire canonique du symbole.
 
     ```vb
     Public Function EnumCanonicalNodes(ByRef ppEnum As Microsoft.VisualStudio.Shell.Interop.IVsEnumNavInfoNodes) As Integer
@@ -77,9 +77,9 @@ N1
 
 2. Implémentez la méthode <xref:Microsoft.VisualStudio.Shell.Interop.IVsNavInfo.EnumPresentationNodes%2A>.
 
-     Le Gestionnaire d’objets appelle cette méthode pour obtenir la liste de nœuds contenus dans le chemin d’accès de présentation du symbole.
+     Le gestionnaire d’objets appelle cette méthode pour obtenir la liste des nœuds contenus dans le chemin de présentation du symbole.
 
 ## <a name="see-also"></a>Voir aussi
-- [Prend en charge des outils de consultation de symbole](../../extensibility/internals/supporting-symbol-browsing-tools.md)
-- [Guide pratique pour Inscrire une bibliothèque avec le Gestionnaire d’objets](../../extensibility/internals/how-to-register-a-library-with-the-object-manager.md)
-- [Guide pratique pour Exposer des listes de symboles fournis par la bibliothèque pour le Gestionnaire d’objets](../../extensibility/internals/how-to-expose-lists-of-symbols-provided-by-the-library-to-the-object-manager.md)
+- [Soutenir les outils de navigation des symboles](../../extensibility/internals/supporting-symbol-browsing-tools.md)
+- [Comment : Enregistrer une bibliothèque auprès du gestionnaire de l’objet](../../extensibility/internals/how-to-register-a-library-with-the-object-manager.md)
+- [Comment : Exposer les listes de symboles fournis par la bibliothèque au gestionnaire d’objets](../../extensibility/internals/how-to-expose-lists-of-symbols-provided-by-the-library-to-the-object-manager.md)

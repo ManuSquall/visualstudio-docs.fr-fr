@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: cb1521623880712211ea04e5c572c7cf4bd85133
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "62960158"
 ---
 # <a name="zoom-control-threads-view"></a>Contrôle Zoom (vue Threads)
@@ -26,10 +26,10 @@ Le contrôle de zoom est un curseur qui vous permet d’effectuer un zoom avant 
  Effectuer un zoom avant en faisant glisser l’affichage de la chronologie crée une zone qui est mise en surbrillance en jaune. Quand vous relâchez le bouton de la souris, l’affichage de la chronologie effectue un zoom avant sur la plage sélectionnée.
 
 ## <a name="zoom-in-and-out-by-using-the-mouse-wheel"></a>Zoom avant et arrière à l’aide de la roulette de la souris
- Cliquez sur n’importe quel point de la chronologie (pour vous assurer qu’elle a le focus de la souris), puis appuyez sur **Ctrl** et faites tourner la roulette de la souris (vers l’avant pour un zoom avant ou vers l’arrière pour un zoom arrière).
+ Cliquez sur n’importe quel point sur la chronologie (pour s’assurer qu’il a la concentration de la souris), puis appuyez sur **Ctrl** et déplacer la roue de la souris (zooms vers l’avant; zooms vers l’arrière).
 
 ## <a name="see-also"></a>Voir aussi
 - [Gérer les canaux](../profiling/manage-channels.md)
 - [Mode Mesure activé/désactivé](../profiling/measure-mode-on-off.md)
-- [Vue Threads](../profiling/threads-view-parallel-performance.md)
+- [Vue de fils](../profiling/threads-view-parallel-performance.md)
 - [Navigateur d’utilisation](../profiling/utilization-navigator.md)

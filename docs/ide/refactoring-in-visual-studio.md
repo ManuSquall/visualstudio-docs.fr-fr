@@ -1,5 +1,5 @@
 ---
-title: Refactoring
+title: Refactorisation
 description: Refactorisations les plus répandues dans Visual Studio avec des descriptions et des exemples.
 ms.date: 01/10/2018
 ms.topic: conceptual
@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 6b6a050a07d8f7ef440aa66c3dfd7385b182e4df
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75585715"
 ---
 # <a name="refactor-code"></a>Refactoriser du code
@@ -34,5 +34,5 @@ Diverses opérations de refactorisation sont disponibles pour les différents la
 - [Actions rapides](../ide/quick-actions.md)
 - [IDE Visual Studio](../get-started/visual-studio-ide.md)
 - [Fonctionnalités de l’éditeur de code](../ide/writing-code-in-the-code-and-text-editor.md)
-- [Aperçu des changements](../ide/preview-changes.md)
+- [Aperçu des modifications](../ide/preview-changes.md)
 - [Refactorisation (Visual Studio pour Mac)](/visualstudio/mac/refactoring)

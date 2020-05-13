@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 5a52d152a78ee585cc2724d8504feff1e72558cf
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "75592553"
 ---
 # <a name="sample-xsd-file-relationships"></a>Exemple de fichier XSD : relations
@@ -65,4 +65,4 @@ Le fichier XSD suivant est utilisé dans différents exemples de la documentatio
 ```
 
 > [!NOTE]
-> Les sociétés, organisations, produits, noms de domaine, adresses de messagerie, logos, personnes, lieux et événements mentionnés dans les exemples sont fictifs. Toute ressemblance avec des noms, des logos, des personnes, des lieux ou des événements réels est purement fortuite et involontaire.
+> Les noms de sociétés, d'organisations, de produits, de domaines, d'adresses de messagerie, de logos, de personnes, de lieux et d'événements mentionnés dans les exemples sont fictifs. Toute ressemblance avec des noms, des logos, des personnes, des lieux ou des événements réels est purement fortuite et involontaire.

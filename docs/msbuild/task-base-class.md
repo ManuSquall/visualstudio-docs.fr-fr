@@ -13,17 +13,19 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7b3aaef85c53dfacf592251c95772d17b1a6ff96
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: d7d6e0870f809a30bc3feb7ecb7a7302b7729124
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75566395"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "77631950"
 ---
 # <a name="task-base-class"></a>Classe de base Task
+
 De nombreuses tâches héritent au final de la classe <xref:Microsoft.Build.Utilities.Task>. Cette classe ajoute plusieurs paramètres aux tâches qui en dérivent. Ces paramètres sont répertoriés dans ce document.
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>Paramètres
+
  Le tableau ci-dessous décrit les paramètres de cette classe de base.
 
 |Paramètre|Description|
@@ -35,5 +37,6 @@ De nombreuses tâches héritent au final de la classe <xref:Microsoft.Build.Util
 |<xref:Microsoft.Build.Utilities.Task.Log%2A>|Paramètre en lecture seule <xref:Microsoft.Build.Utilities.TaskLoggingHelper> facultatif.<br /><br /> Objet application d’assistance de journalisation...|
 
 ## <a name="see-also"></a>Voir aussi
+
 - [Informations de référence sur les tâches](../msbuild/msbuild-task-reference.md)
-- [Tâches MSBuild](../msbuild/msbuild-tasks.md)
+- [Tâches](../msbuild/msbuild-tasks.md)

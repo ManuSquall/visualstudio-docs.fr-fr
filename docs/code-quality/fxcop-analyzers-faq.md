@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 517a583c859870b979c89c4fe2f55cd3bc0fc913
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: bc04cbc6d46d8dc47a08d06c8c5949bb5d9107f3
+ms.sourcegitcommit: 92361aac3665a934faa081e1d1ea89a067b01c5b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75587613"
+ms.lasthandoff: 03/17/2020
+ms.locfileid: "79431363"
 ---
 # <a name="frequently-asked-questions-about-fxcop-and-fxcop-analyzers"></a>Questions fréquentes (FAQ) sur FxCop et les analyseurs FxCop
 
@@ -31,11 +31,11 @@ Les analyseurs FxCop sont basés sur .NET Compiler Platform (« Roslyn »). Vo
 
 ## <a name="does-the-run-code-analysis-command-run-fxcop-analyzers"></a>La commande Exécuter l’analyse du Code exécute-t-elle les analyseurs FxCop ?
 
-No. Lorsque vous sélectionnez **analyser** > **exécuter l’analyse du code**, l’analyse héritée est exécutée. L’option **Exécuter l’analyse du Code** n’a aucun effet sur les analyseurs basés sur Roslyn, notamment les analyseurs FxCop basés sur Roslyn.
+Avant la sortie Visual Studio 2019 16.5, lorsque vous sélectionnez Analyse**de code d’exécution** **Analyze,** > il exécute l’analyse héritée. À partir de Visual Studio 2019 16.5, l’option de menu **d’analyse de code d’exécution** exécute des analyseurs basés sur Roslyn pour le projet ou la solution sélectionné. Si vous avez installé des analyseurs FxCop basés à Roslyn, ils seraient également exécutés. Pour plus d’informations, voir [Comment : Exécuter l’analyse du code manuellement pour le code géré](how-to-run-code-analysis-manually-for-managed-code.md).
 
 ## <a name="does-the-runcodeanalysis-msbuild-project-property-run-analyzers"></a>La propriété de projet msbuild RunCodeAnalysis exécute-t-elle des analyseurs ?
 
-No. La propriété **RunCodeAnalysis** dans un fichier projet (par exemple, *.csproj*) est utilisée uniquement pour exécuter FxCop hérité. Elle s’exécute une tâche msbuild post-build qui appelle **FxCopCmd.exe**. Cela revient à sélectionner **Analyser** > **Exécuter l’analyse du code** dans Visual Studio.
+Non. La propriété **RunCodeAnalysis** dans un fichier projet (par exemple, *.csproj*) est utilisée uniquement pour exécuter FxCop hérité. Elle s’exécute une tâche msbuild post-build qui appelle **FxCopCmd.exe**.
 
 ## <a name="so-how-do-i-run-fxcop-analyzers-then"></a>Alors, comment exécuter des analyseurs FxCop ?
 
@@ -43,22 +43,22 @@ Pour exécuter des analyseurs FxCop, commencez par [installer le package NuGet](
 
 ## <a name="i-get-warning-ca0507-even-after-ive-installed-the-fxcop-analyzers-nuget-package"></a>Je reçois l’avertissement CA0507 même après avoir installé le package NuGet d’analyseurs FxCop
 
-Si vous avez installé les analyseurs FxCop, mais que vous continuez à obtenir l’avertissement CA0507 **« l’exécution de l’analyse du code » est dépréciée en faveur des analyseurs FxCop, qui s’exécutent pendant la génération»** , vous devrez peut-être affecter la valeur **false**à la propriété MSBuild **RunCodeAnalysis** dans votre [fichier projet](../ide/solutions-and-projects-in-visual-studio.md#project-file) . Dans le cas contraire, l’analyse héritée s’exécutera après chaque génération.
+Si vous avez installé des analyseurs FxCop, mais continuer à obtenir l’avertissement CA0507 **""Run Code Analysis" a été déprécié en faveur des analyseurs FxCop, qui fonctionnent pendant**la construction" , vous devrez peut-être définir la propriété de msbuild **RunCodeAnalysis** dans votre [fichier de projet](../ide/solutions-and-projects-in-visual-studio.md#project-file) à **faux**. Dans le cas contraire, l’analyse de l’héritage s’exécutera après chaque build.
 
 ```xml
 <RunCodeAnalysis>false</RunCodeAnalysis>
 ```
 
-## <a name="which-rules-have-been-ported-to-fxcop-analyzers"></a>Quelles règles ont été portées vers les analyseurs FxCop ?
+## <a name="which-rules-have-been-ported-to-fxcop-analyzers"></a>Quelles règles ont été portées aux analyseurs FxCop ?
 
-Pour plus d’informations sur les règles d’analyse héritées qui ont été portées vers les [analyseurs FxCop](install-fxcop-analyzers.md), consultez État du port de la [règle FXCop](fxcop-rule-port-status.md).
+Pour plus d’informations sur les règles d’analyse héritées qui ont été portées aux [analyseurs FxCop](install-fxcop-analyzers.md), voir [l’état du port de règle Fxcop](fxcop-rule-port-status.md).
 
-## <a name="code-analysis-warnings-are-treated-as-errors"></a>Les avertissements d’analyse du code sont traités comme des erreurs
+## <a name="code-analysis-warnings-are-treated-as-errors"></a>Les avertissements d’analyse de code sont traités comme des erreurs
 
-Si votre projet utilise l’option de build pour traiter les avertissements comme des erreurs, les avertissements de l’analyseur FxCop peuvent apparaître comme des erreurs. Pour empêcher que des avertissements d’analyse du code ne soient traités comme des erreurs, suivez les étapes indiquées dans FAQ sur l' [analyse du code](../code-quality/analyzers-faq.md#treat-warnings-as-errors).
+Si votre projet utilise l’option de construction pour traiter les avertissements comme des erreurs, les avertissements d’analyseur FxCop peuvent apparaître comme des erreurs. Pour éviter que les avertissements d’analyse de code ne soient traités comme des erreurs, suivez les étapes de [l’analyse du Code FAQ](../code-quality/analyzers-faq.md#treat-warnings-as-errors).
 
 ## <a name="see-also"></a>Voir aussi
 
 - [Vue d’ensemble des analyseurs .NET Compiler Platform](roslyn-analyzers-overview.md)
-- [Bien démarrer avec les analyseurs](fxcop-analyzers.yml)
+- [Migrer vers les analyseurs FxCop](migrate-from-legacy-analysis-to-fxcop-analyzers.md)
 - [Installer des analyseurs FxCop](install-fxcop-analyzers.md)

@@ -16,16 +16,17 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 56d3c301eb0e9b660a82b6552792a96aa5bd8596
-ms.sourcegitcommit: 8cbced0fb46959a3a2494852df1e41db1177a26c
+ms.openlocfilehash: 76dadd1a064a64884e3ff1cd1f2431bc1b94c3c4
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "76826586"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "77633731"
 ---
 # <a name="importgroup-element"></a>ImportGroup, élément
+
   
-Contient une collection d’éléments `Import` regroupés sous une condition facultative. Pour plus d’informations, consultez [Import, élément (MSBuild)](../msbuild/import-element-msbuild.md).
+Contient une collection d’éléments `Import` regroupés sous une condition facultative. Pour plus d’informations, voir [Élément d’importation (MSBuild)](../msbuild/import-element-msbuild.md).
 
 ```xml
 <Project>
@@ -42,11 +43,12 @@ Contient une collection d’éléments `Import` regroupés sous une condition fa
 ```
 
 ## <a name="attributes-and-elements"></a>Attributs et éléments
+
  Les sections suivantes décrivent des attributs, des éléments enfants et des éléments parents.
 
 ### <a name="attributes"></a>Attributs
 
-|Attribute|Description|
+|Attribut|Description|
 |---------------|-----------------|
 |`Condition`|Attribut facultatif.<br /><br /> Condition à évaluer. Pour plus d’informations, consultez l’article [Conditions (Conditions MSBuild)](../msbuild/msbuild-conditions.md).|
 
@@ -54,15 +56,16 @@ Contient une collection d’éléments `Import` regroupés sous une condition fa
 
 |Élément|Description|
 |-------------|-----------------|
-|[Import](../msbuild/import-element-msbuild.md)|Importe le contenu d’un fichier projet dans un autre fichier projet.|
+|[Importer](../msbuild/import-element-msbuild.md)|Importe le contenu d’un fichier projet dans un autre fichier projet.|
 
 ### <a name="parent-elements"></a>Éléments parents
 
 | Élément | Description |
 | - | - |
-| [Project](../msbuild/project-element-msbuild.md) | Élément racine requis d'un fichier projet [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] . |
+| [Projet](../msbuild/project-element-msbuild.md) | Élément racine requis d’un fichier de projet MSBuild. |
 
-## <a name="example"></a>Exemple
+## <a name="example"></a> Exemple
+
  L’exemple de code suivant illustre l’élément `ImportGroup`.
 
 ```xml
@@ -77,5 +80,5 @@ Contient une collection d’éléments `Import` regroupés sous une condition fa
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Informations de référence sur le schéma de fichier projet](../msbuild/msbuild-project-file-schema-reference.md)
-- [Éléments MSBuild](../msbuild/msbuild-items.md)
+- [Référence du schéma de fichier de projet](../msbuild/msbuild-project-file-schema-reference.md)
+- [Éléments](../msbuild/msbuild-items.md)

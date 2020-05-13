@@ -19,17 +19,17 @@ ms.workload:
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.openlocfilehash: 12d22334094b848350d44d245685532fed196389
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/16/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "76114843"
 ---
 # <a name="import-or-export-installation-configurations"></a>Importer ou exporter des configurations d’installation
 
 Vous pouvez configurer Visual Studio pour l’ensemble de votre organisation avec des fichiers de configuration d’installation. Pour ce faire, exportez simplement les informations sur la charge de travail et le composant dans un fichier .vsconfig en utilisant le programme d’installation de Visual Studio. Vous pouvez ensuite importer la configuration dans des installations nouvelles ou existantes et même les partager avec d’autres utilisateurs.
 
-Voici comment procéder.
+Voici comment faire.
 
 ::: moniker range="vs-2017"
 
@@ -70,7 +70,7 @@ Lorsque vous êtes prêt à importer un fichier de configuration de l’installa
 
 ## <a name="automatically-install-missing-components"></a>Installer automatiquement les composants manquants
 
-**Nouveauté de Visual studio 2019**: quand vous enregistrez un fichier. vsconfig dans le répertoire racine de votre solution, puis que vous ouvrez une solution, Visual Studio détecte automatiquement les composants manquants et vous invite à les installer.
+**Nouveau dans Visual Studio 2019**: Lorsque vous enregistrez un fichier .vsconfig sur votre répertoire de racine de solution, puis ouvrez une solution, Visual Studio détecte automatiquement quels composants sont manquants et vous invite à les installer.
 
 ![L’Explorateur de solutions suggère des composants supplémentaires](../install/media/vs-2019/solution-explorer-config-file.png)
 
@@ -78,7 +78,7 @@ Vous pouvez également générer un fichier .vsconfig directement à partir de l
 
 1. Cliquez avec le bouton droit sur votre fichier de solution.
 
-1. Choisissez **ajouter** > **fichier de configuration d’installation**.
+1. Choisissez **Ajouter** > **Fichier de configuration de l’installation**.
 
 1. Confirmez l’emplacement où vous souhaitez enregistrer le fichier .vsconfig, puis choisissez **Vérifier les détails**.
 

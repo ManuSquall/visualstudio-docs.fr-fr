@@ -8,10 +8,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 6e594a6aec3f9e3a9664c5eac829b27f96f12ea0
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75584450"
 ---
 # <a name="make-coded-ui-tests-wait-for-specific-events-during-playback"></a>Mettre en suspens des tests codés de l’interface utilisateur en attendant des événements spécifiques lors de la lecture
@@ -20,7 +20,7 @@ Dans une lecture de test codé de l'interface utilisateur, vous pouvez faire en 
 
 [!INCLUDE [coded-ui-test-deprecation](includes/coded-ui-test-deprecation.md)]
 
-**Spécifications**
+**Configuration requise**
 
 Visual Studio Enterprise
 
@@ -103,13 +103,13 @@ Vous pouvez utiliser la propriété <xref:Microsoft.VisualStudio.TestTools.UITes
 Playback.Wait() appelle Thread.Sleep() en interne (après le calcul ci-dessus) en segments plus petits dans une boucle for tout en recherchant une opération cancel\break de l'utilisateur. En d'autres termes, Playback.Wait() vous permet d'annuler la lecture avant la fin de l'attente tandis que la veille risque ou non de lever une exception.
 
 > [!TIP]
-> L'éditeur de test codé de l'interface utilisateur vous permet de modifier facilement vos tests codés de l'interface utilisateur. Grâce à lui, vous pouvez rechercher, afficher et modifier vos méthodes de test. Vous pouvez aussi modifier des actions d'interface utilisateur et leurs contrôles associés dans le mappage de contrôle d'interface utilisateur. Pour plus d’informations, consultez [Modification des tests codés de l’interface utilisateur à l’aide de l’éditeur de test codé de l’interface utilisateur](../test/editing-coded-ui-tests-using-the-coded-ui-test-editor.md).
+> L'éditeur de test codé de l'interface utilisateur vous permet de modifier facilement vos tests codés de l'interface utilisateur. Grâce à lui, vous pouvez rechercher, afficher et modifier vos méthodes de test. Vous pouvez aussi modifier des actions d'interface utilisateur et leurs contrôles associés dans le mappage de contrôle d'interface utilisateur. Pour plus d’informations, voir [Edit coded UI tests à l’aide de l’éditeur de test d’interface utilisateur codé](../test/editing-coded-ui-tests-using-the-coded-ui-test-editor.md).
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Utiliser l’automatisation de l’interface utilisateur pour tester votre code](../test/use-ui-automation-to-test-your-code.md)
+- [Utilisez l’automatisation de l’interface utilisateur pour tester votre code](../test/use-ui-automation-to-test-your-code.md)
 - [Créer des tests codés de l’interface utilisateur](../test/use-ui-automation-to-test-your-code.md)
 - [Procédures pas à pas : création, édition et gestion d’un test codé de l’interface utilisateur](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md)
-- [Anatomie d’un test codé de l’interface utilisateur](../test/anatomy-of-a-coded-ui-test.md)
-- [Plateformes et configurations prises en charge pour les tests codés de l’interface utilisateur et les enregistrements des actions](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)
+- [Anatomie d’un test d’interface utilisateur codé](../test/anatomy-of-a-coded-ui-test.md)
+- [Configurations et plates-formes prises en charge pour les tests d’interface utilisateur codés et les enregistrements d’action](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)
 - [Guide pratique pour insérer un délai avant une action de l’interface utilisateur à l’aide de l’éditeur de test codé de l’interface utilisateur](editing-coded-ui-tests-using-the-coded-ui-test-editor.md#insert-a-delay-before-a-ui-action)

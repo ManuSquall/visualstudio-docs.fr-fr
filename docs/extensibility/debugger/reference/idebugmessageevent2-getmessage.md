@@ -1,5 +1,5 @@
 ---
-title: IDebugMessageEvent2::GetMessage | Microsoft Docs
+title: IDebugMessageEvent2::GetMessage - France Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -8,20 +8,20 @@ helpviewer_keywords:
 - GetMessage method
 - IDebugMessageEvent2::GetMessage method
 ms.assetid: 9fca7285-f7f1-422d-8565-92bf0e0db60a
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 758b3b860167ed8c2db8bb20c0d76ab289e39a0f
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 819b796a656f0ef8775fbb1c9e800e3019b81729
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66346890"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80727404"
 ---
 # <a name="idebugmessageevent2getmessage"></a>IDebugMessageEvent2::GetMessage
 Obtient le message à afficher.
@@ -50,24 +50,24 @@ int GetMessage( 
 
 ## <a name="parameters"></a>Paramètres
 `pMessageType`\
-[out] Retourne une valeur de la [MESSAGETYPE](../../../extensibility/debugger/reference/messagetype.md) énumération qui décrit le type du message.
+[out] Renvoie une valeur du recensement [MESSAGETYPE](../../../extensibility/debugger/reference/messagetype.md) qui décrit le type de message.
 
 `pbstrMessage`\
 [out] Retourne le message.
 
 `pdwType`\
-[out] Retourne le type du message, en utilisant les conventions de Win32 `MessageBox` (fonction). Consultez le [AfxMessageBox](/cpp/mfc/reference/cstring-formatting-and-message-box-display#afxmessagebox) (fonction) pour plus d’informations.
+[out] Retourne le type de message, en utilisant `MessageBox` les conventions de la fonction Win32. Consultez la fonction [AfxMessageBox](/cpp/mfc/reference/cstring-formatting-and-message-box-display#afxmessagebox) pour plus de détails.
 
 `pbstrHelpFileName`\
-[in, out] Retourne le nom de fichier. Peut-être une valeur null (C++) ou une valeur vide (c#) s’il n’existe aucun fichier d’aide.
+[dans, dehors] Retourne le nom du fichier d’aide. Peut être une valeur nulle (C) ou vide (C) s’il n’y a pas de fichier d’aide.
 
 `pdwHelpId`\
-[in, out] Retourne l’identificateur d’aide. Peut être 0 si aucune aide n’est associé au message.
+[dans, dehors] Retourne l’identifiant d’aide. Peut être 0 s’il n’y a pas d’aide associée à ce message.
 
 ## <a name="return-value"></a>Valeur de retour
- En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.
+ En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
 ## <a name="see-also"></a>Voir aussi
 - [IDebugMessageEvent2](../../../extensibility/debugger/reference/idebugmessageevent2.md)
-- [MESSAGETYPE](../../../extensibility/debugger/reference/messagetype.md)
+- [Messagetype](../../../extensibility/debugger/reference/messagetype.md)
 - [AfxMessageBox](/cpp/mfc/reference/cstring-formatting-and-message-box-display#afxmessagebox)

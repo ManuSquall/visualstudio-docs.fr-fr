@@ -1,29 +1,29 @@
 ---
-title: La mise en forme automatique dans un Service de langage hérité | Microsoft Docs
+title: Formatage automatique dans un service de langue héritée (fr) Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - language services, automatic formatting
 ms.assetid: c210fc94-77bd-4694-b312-045087d8a549
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b69419e917a5ab5293af15b21822ca6473a9e292
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: a11e9c1fdef60e71f46cee9986d925e876dcac35
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66344931"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80709976"
 ---
-# <a name="automatic-formatting-in-a-legacy-language-service"></a>Mise en forme dans un service de langage hérité automatique
-Avec la mise en forme automatique, un service de langage insère automatiquement un extrait de code lorsqu’un utilisateur commence à taper une construction de code connu.
+# <a name="automatic-formatting-in-a-legacy-language-service"></a>Formatage automatique dans un service linguistique hérité
+Avec le formatage automatique, un service linguistique insère automatiquement un extrait de code lorsqu’un utilisateur commence à taper une construction de code connue.
 
-## <a name="automatic-formatting-behavior"></a>Comportement de mise en forme automatique
- Par exemple, quand vous tapez *si*, le service de langage insère automatiquement les accolades correspondantes, ou si vous appuyez sur la touche entrée, le service de langage force le point d’insertion sur la nouvelle ligne au niveau de retrait, en fonction de Indique si la ligne précédente ouvre une nouvelle étendue.
+## <a name="automatic-formatting-behavior"></a>Comportement de formatage automatique
+ Par exemple, lorsque vous tapez *si,* le service linguistique insère automatiquement les accolades assorties, ou si vous appuyez sur la clé ENTER, le service linguistique force le point d’insertion sur la nouvelle ligne au niveau d’indent approprié, selon que la ligne précédente ouvre une nouvelle portée.
 
- Le filtre de commande utilisé pour le reste du service de langage peut également être utilisé pour la mise en forme automatique. Vous pouvez également sélectionner des accolades correspondantes en appelant <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.HighlightMatchingBrace%2A>.
+ Le filtre de commande utilisé pour le reste du service linguistique peut également être utilisé pour le formatage automatique. Vous pouvez également mettre en <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.HighlightMatchingBrace%2A>évidence les accolades assorties en appelant .
 
 ## <a name="see-also"></a>Voir aussi
-- [Développer un service de langage hérité](../../extensibility/internals/developing-a-legacy-language-service.md)
+- [Développer un service linguistique hérité](../../extensibility/internals/developing-a-legacy-language-service.md)

@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 9fa5afd01ad25d4eebdc0b29e924cb2430d9c775
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75590291"
 ---
 # <a name="test-a-large-application-with-multiple-ui-maps"></a>Tester une application volumineuse avec plusieurs mappages d’interface utilisateur
@@ -23,7 +23,7 @@ Cette rubrique explique comment utiliser des tests codés de l'interface utilisa
 
 [!INCLUDE [coded-ui-test-deprecation](includes/coded-ui-test-deprecation.md)]
 
-**Spécifications**
+**Configuration requise**
 
 - Visual Studio Enterprise
 
@@ -65,7 +65,7 @@ Créez plusieurs mappages d'IU dans chacun des types de situations suivants :
 
     Dans la zone **Nom**, entrez le nom du nouveau mappage d’IU. Utilisez le nom du composant ou de la page que représentera le mappage, par exemple `HomePageMap`.
 
-4. Sélectionnez **Ajouter**.
+4. Choisissez **Ajouter**.
 
     La fenêtre Visual Studio est réduite et la boîte de dialogue **Générateur de test codé de l’interface utilisateur** s’affiche.
 
@@ -79,7 +79,7 @@ Créez plusieurs mappages d'IU dans chacun des types de situations suivants :
 
    Pour limiter ce risque, vous pouvez utiliser la méthode `CopyFrom()` pour vous assurer que la nouvelle fenêtre de niveau supérieur dans ce mappage d’IU est identique à la fenêtre de niveau supérieur principale.
 
-## <a name="example"></a>Exemple
+## <a name="example"></a> Exemple
 
 L'exemple suivant fait partie d'une classe utilitaire qui fournit l'accès à chaque composant et à ses composants enfants représentés par les classes générées dans les différents mappages d'IU.
 
@@ -143,6 +143,6 @@ namespace ContosoProject
 
 - [UIMap](/previous-versions/dd580454(v=vs.140))
 - <xref:Microsoft.VisualStudio.TestTools.UITesting.BrowserWindow.CopyFrom%2A>
-- [Utiliser l’automatisation de l’interface utilisateur pour tester votre code](../test/use-ui-automation-to-test-your-code.md)
+- [Utilisez l’automatisation de l’interface utilisateur pour tester votre code](../test/use-ui-automation-to-test-your-code.md)
 - [Créer des tests codés de l’interface utilisateur](../test/use-ui-automation-to-test-your-code.md)
-- [Anatomie d’un test codé de l’interface utilisateur](../test/anatomy-of-a-coded-ui-test.md)
+- [Anatomie d’un test d’interface utilisateur codé](../test/anatomy-of-a-coded-ui-test.md)

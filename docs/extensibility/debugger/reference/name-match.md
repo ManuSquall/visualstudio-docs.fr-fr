@@ -1,5 +1,5 @@
 ---
-title: NAME_MATCH | Microsoft Docs
+title: NAME_MATCH Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - NAME_MATCH enumeration
 ms.assetid: 3842c417-a3c9-4259-a05f-52b64b829ef6
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 09ddb4653d1f13024360daca30eab40ebf57df0f
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 66a0e725f6362034e2d1a9b1df49d2a83d154ce7
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66346741"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80714289"
 ---
-# <a name="namematch"></a>NAME_MATCH
-Sélectionne l’option de casse pour les noms correspondants.
+# <a name="name_match"></a>NAME_MATCH
+Sélectionne l’option de cas pour l’appariement des noms.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -48,13 +48,13 @@ public enum NameMatchOptions { 
  Aucune option n'est spécifiée.
 
  `nmCaseSensitive`\
- Indique que les noms à mettre en correspondance respectent la casse.
+ Indique que les noms à apparier sont sensibles aux cas.
 
  `nmCaseInsensitive`\
- Indique que les noms à mettre en correspondance ne respectent pas la casse.
+ Indique que les noms à apparier ne sont pas sensibles aux cas.
 
 ## <a name="remarks"></a>Notes
- Passé en tant qu’argument aux méthodes suivantes :
+ Passé comme argument aux méthodes suivantes:
 
 - [GetTypeByName](../../../extensibility/debugger/reference/idebugsymbolprovider-gettypebyname.md)
 
@@ -64,12 +64,12 @@ public enum NameMatchOptions { 
 
 - [GetMethodFieldsByName](../../../extensibility/debugger/reference/idebugsymbolprovider-getmethodfieldsbyname.md)
 
-## <a name="requirements"></a>Configuration requise
- En-tête : sh.h
+## <a name="requirements"></a>Spécifications
+ En-tête: sh.h
 
- Espace de noms : Microsoft.VisualStudio.Debugger.Interop
+ Namespace: Microsoft.VisualStudio.Debugger.Interop
 
- Assembly : Microsoft.VisualStudio.Debugger.Interop.dll
+ Assemblage: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>Voir aussi
 - [Énumérations](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)

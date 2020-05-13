@@ -3,24 +3,29 @@ title: Gérer les licences surallouées | Microsoft Docs
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 07/24/2019
+ms.assetid: a747100c-6f08-41a4-aaad-05099741742b
+ms.date: 03/03/2020
 ms.topic: conceptual
 description: Découvrez comment les administrateurs peuvent résoudre les problèmes de surallocation d’abonnements
-ms.openlocfilehash: 924f6fb2c513d70aefd28c1d4ff18d1af62178c2
-ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
-ms.translationtype: HT
+ms.openlocfilehash: a4cdab7d4e6e5925bab3d4dc7c800dc33ef6d713
+ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/29/2019
-ms.locfileid: "68605510"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "80232451"
 ---
 # <a name="overallocated-subscriptions"></a>Abonnements surutilisés
-Les commandes sont parfois modifiées après l’ajout des abonnés. Le risque est que le nombre d’abonnements attribués dépasse le nombre de licences détenues par votre entreprise. Ceci s’appelle la « surallocation ».  Quand cela se produit, l’onglet Abonnés affiche une alerte et vous fournit des informations détaillées sur le nombre d’abonnements qui ont été suralloués.
+Les commandes sont parfois modifiées après l’ajout des abonnés. Le risque est que le nombre d’abonnements attribués dépasse le nombre de licences détenues par votre entreprise. Ceci s’appelle la « surallocation ».  
+
+Pour voir vos allocations de sous-scriptum, cliquez sur l’icône supérieure à gauche pour ouvrir le volet allocations.  
 
 > [!NOTE]
 > Les surallocations ne sont pas autorisées dans les programmes Open License.  En outre, d’autres programmes peuvent afficher ces informations différemment dans le portail.
 >
 > [!div class="mx-imgBorder"]
 > ![Notification de surutilisation d’abonnements](_img/over-claimed/over-claimed-alert.png)
+
+Notez que l’affichage utilise une barre de hachage pour indiquer les abonnements globalement localisés.  Le nombre d’ensembles de tous les types d’abonnement est inclus dans la section Aperçu en haut, et chaque niveau d’abonnement affiche également son statut d’allocation.  
 
 ## <a name="resolve-overallocated-subscriptions"></a>Résoudre les abonnements suralloués
 Il y a plusieurs façons de résoudre les surallocations :
@@ -36,6 +41,12 @@ Si votre organisation a un Contrat Entreprise (EA), les administrateurs peuvent 
 >
 > Il appartient au client de vérifier qu’à chaque abonnement GitHub attribué correspond un abonnement Visual Studio avec GitHub attribué dans le portail Gérer afin de respecter les conditions de licence pour cet abonnement.
 
+## <a name="see-also"></a>Voir aussi
+- [Documentation Visual Studio](https://docs.microsoft.com/visualstudio/)
+- [Documentation Azure DevOps](https://docs.microsoft.com/azure/devops/)
+- [Documentation Azure](https://docs.microsoft.com/azure/)
+- [Documentation Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+
 ## <a name="next-steps"></a>Étapes suivantes
 - Découvrez-en plus sur la gestion des [abonnements Visual Studio avec GitHub Enterprise](assign-github.md).
-- Pour obtenir de l’aide concernant les ventes, les abonnements, les comptes et la facturation des abonnements Visual Studio, contactez le [support des abonnements](https://visualstudio.microsoft.com/subscriptions/support/) Visual Studio.
+- Pour obtenir de l’aide pour les ventes, les abonnements, les comptes et la facturation des abonnements Visual Studio, contactez Visual Studio [Subscriptions Support](https://visualstudio.microsoft.com/subscriptions/support/).

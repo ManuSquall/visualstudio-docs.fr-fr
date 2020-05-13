@@ -1,5 +1,5 @@
 ---
-title: IPropertyProxyProvider | Microsoft Docs
+title: IPropertyProxyProvider - France Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,17 +7,17 @@ f1_keywords:
 helpviewer_keywords:
 - IPropertyProxyProvider interface
 ms.assetid: 52e9f7fc-6fe0-4d23-890b-5673dca8c3cb
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: dbda02c26018adc4e5f1f3677b75bc2dce25a2e5
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: f71d993c7f99cade5b866e67298132a325986e3a
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66339289"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80714791"
 ---
 # <a name="ipropertyproxyprovider"></a>IPropertyProxyProvider
 Cette interface fournit une interface proxy pour afficher et modifier les données d’un objet.
@@ -28,28 +28,28 @@ Cette interface fournit une interface proxy pour afficher et modifier les donné
 IPropertyProxyProvider : IUnknown
 ```
 
-## <a name="notes-for-implementers"></a>Notes de publication pour les implémenteurs
- L’évaluateur d’expression (EE) implémente cette interface sur le même objet qui implémente le [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md) interface dans le cadre de la prise en charge de la EE de visualiseurs de type.
+## <a name="notes-for-implementers"></a>Notes pour les implémenteurs
+ L’évaluateur d’expression (EE) implémente cette interface sur le même objet qui implémente l’interface [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md) dans le cadre du support de l’EE des visualisateurs de type.
 
-## <a name="notes-for-callers"></a>Notes de publication pour les appelants
- Appelez [QueryInterface](/cpp/atl/queryinterface) sur un `IDebugProperty3` interface pour obtenir cette interface.
+## <a name="notes-for-callers"></a>Notes pour les appelants
+ Appelez [QueryInterface](/cpp/atl/queryinterface) `IDebugProperty3` sur une interface pour obtenir cette interface.
 
 ## <a name="methods-in-vtable-order"></a>Méthodes dans l’ordre Vtable
- Le `IPropertyProxyProvider` interface implémente la méthode suivante :
+ L’interface `IPropertyProxyProvider` implémente la méthode suivante :
 
 |Méthode|Description|
 |------------|-----------------|
-|[GetPropertyProxy](../../../extensibility/debugger/reference/ipropertyproxyprovider-getpropertyproxy.md)|Récupère une interface de proxy de propriété pour afficher les données sur un objet.|
+|[GetPropertyProxy](../../../extensibility/debugger/reference/ipropertyproxyprovider-getpropertyproxy.md)|Récupère une interface proxy de propriété pour afficher les données sur un objet.|
 
 ## <a name="remarks"></a>Notes
- Bien que le EE implémente cette interface, l’implémentation de [GetPropertyProxy](../../../extensibility/debugger/reference/ipropertyproxyprovider-getpropertyproxy.md) est généralement contrôlée par [GetPropertyProxy](../../../extensibility/debugger/reference/ieevisualizerservice-getpropertyproxy.md). Consultez [visualisation et affichage des données](../../../extensibility/debugger/visualizing-and-viewing-data.md) pour plus d’informations sur l’obtention de l’interface IEEVisualizerService.
+ Bien que l’EE implémente cette interface, la mise en œuvre de [GetPropertyProxy](../../../extensibility/debugger/reference/ipropertyproxyprovider-getpropertyproxy.md) est généralement gérée par [GetPropertyProxy](../../../extensibility/debugger/reference/ieevisualizerservice-getpropertyproxy.md). Voir [Visualizing and Viewing Data](../../../extensibility/debugger/visualizing-and-viewing-data.md) pour plus de détails sur l’obtention de l’interface IEEVisualizerService.
 
-## <a name="requirements"></a>Configuration requise
- En-tête : msdbg.h
+## <a name="requirements"></a>Spécifications
+ En-tête: msdbg.h
 
- Espace de noms : Microsoft.VisualStudio.Debugger.Interop
+ Namespace: Microsoft.VisualStudio.Debugger.Interop
 
- Assembly : Microsoft.VisualStudio.Debugger.Interop.dll
+ Assemblage: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>Voir aussi
 - [Interfaces de base](../../../extensibility/debugger/reference/core-interfaces.md)

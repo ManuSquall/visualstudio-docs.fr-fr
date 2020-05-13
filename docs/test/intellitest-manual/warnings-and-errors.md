@@ -10,10 +10,10 @@ ms.workload:
 - multiple
 author: mikejo5000
 ms.openlocfilehash: c3f5fe55a4e1afb1a9551d43d0d61ae9f76b81e4
-ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77275437"
 ---
 # <a name="warnings-and-errors"></a>Avertissements et erreurs
@@ -34,23 +34,23 @@ ms.locfileid: "77275437"
 
 * **Domaines ou Runtime**
   * [Besoin d’aide pour construire un objet](#help-construct)
-  * [Besoin d’aide pour rechercher des types](#help-types)
+  * [Besoin d’aide pour trouver des types](#help-types)
   * [Type utilisable deviné](#usable-type-guessed)
 
 * **Exécution**
-  * [Erreur inattendue lors de l’exploration](#unexpected-exploration)
+  * [Échec inattendu pendant l’exploration](#unexpected-exploration)
   * [TargetInvocationException](#targetinvocationexception)
 
 * **Instrumentation**
-  * [Méthode non instrumentée appelée](#uninstrumented-method-called)
+  * [Méthode non-strumentée appelée](#uninstrumented-method-called)
   * [Méthode externe appelée](#external-method-called)
-  * [Méthode non instrumentable appelée](#uninstrumentable-method-called)
+  * [Méthode instrumentable appelée](#uninstrumentable-method-called)
   * [Problème de testabilité](#testability-issue)
-  * [Limite](#limitation)
+  * [Limitation](#limitation)
 
 * **Interpréteur**
-  * [Non-correspondance observée au niveau des appels](#observed-call-mismatch)
-  * [Valeur stockée dans un champ statique](#value-static-field)
+  * [Incompatibilité d’appel observée](#observed-call-mismatch)
+  * [Valeur stockée dans le champ statique](#value-static-field)
 
 <a name="maxbranches-exceeded"></a>
 ## <a name="maxbranches-exceeded"></a>MaxBranches dépassé
@@ -209,7 +209,7 @@ public void MyTest(...) {
 <a name="cannot-concretize-solution"></a>
 ## <a name="cannot-concretize-solution"></a>Impossible de concrétiser la solution
 
-Cette erreur est souvent la conséquence d’une erreur antérieure. IntelliTest utilise un [solveur de contrainte](input-generation.md#constraint-solver) pour déterminer les nouvelles entrées de test. Parfois, les entrées de test proposées par le [solveur de contrainte](input-generation.md#constraint-solver) ne sont pas valides. Ceci peut se produire lorsque :
+Cette erreur est souvent la conséquence d’une erreur antérieure. IntelliTest utilise un [solveur de contrainte](input-generation.md#constraint-solver) pour déterminer les nouvelles entrées de test. Parfois, les entrées de test proposées par le [solveur de contrainte](input-generation.md#constraint-solver) ne sont pas valides. Ceci peut se produire quand :
 
 * Certaines contraintes ne sont pas connues.
 * Si des valeurs sont créées d’une façon définie par l’utilisateur, entraînant des erreurs dans le code utilisateur.
@@ -254,7 +254,7 @@ Vous pouvez aider IntelliTest en pointant vers un ou plusieurs types qui corresp
 
 IntelliTest [génère des entrées de test](input-generation.md) pour tous les types .NET. Quand un type est abstrait ou est une interface, IntelliTest doit choisir une implémentation particulière de ce type. Pour faire ce choix, il a besoin de savoir quels types existent.
 
-Quand cet avertissement est affiché, il indique que IntelliTest a examiné certains des assemblys référencés et a trouvé un type d’implémentation, mais il n’est pas certain qu’il doit utiliser ce type ou s’il existe des types plus appropriés disponibles ailleurs. IntelliTest a simplement choisi un type qui semblait prometteur.
+Lorsque cet avertissement est affiché, il indique qu’IntelliTest a examiné certains des assemblages référencés et a trouvé un type de mise en œuvre, mais il n’est pas sûr s’il devrait utiliser ce type, ou s’il existe des types plus appropriés disponibles ailleurs. IntelliTest a simplement choisi un type qui semblait prometteur.
 
 Pour éviter cet avertissement, vous pouvez accepter le choix de type d’IntelliTest ou bien l’aider à utiliser d’autres types en ajoutant un [PexUseType](attribute-glossary.md#pexusetype) correspondant.
 

@@ -1,5 +1,5 @@
 ---
-title: DISASSEMBLY_FLAGS | Microsoft Docs
+title: DISASSEMBLY_FLAGS Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - DISASSEMBLY_FLAGS enumeration
 ms.assetid: c1ec5a4d-5d42-4660-932c-7348550140cb
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 0160a14a4ad20e7144e48f767fad88951ca1e473
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: ba6d9db3ad2cb1f9bbc9e3cea27aba939c6dd499
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66318388"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80737372"
 ---
-# <a name="disassemblyflags"></a>DISASSEMBLY_FLAGS
-Spécifie les indicateurs pour le code machine.
+# <a name="disassembly_flags"></a>DISASSEMBLY_FLAGS
+Spécifie les drapeaux pour le démontage.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -52,34 +52,34 @@ public enum enum_DISASSEMBLY_FLAGS {
 
 ## <a name="fields"></a>Champs
 `DF_DOCUMENTCHANGE`\
-Indique que cette instruction est dans un autre document que le précédent.
+Indique que cette instruction se trouve dans un document différent de celui précédent.
 
 `DF_DISABLED`\
 Indique que cette instruction ne sera pas exécutée.
 
 `DF_INSTRUCTION_ACTIVE`\
-Indique que cette instruction est une des instructions à exécuter suivantes (il peut en avoir plusieurs).
+Indique que cette instruction est l’une des prochaines instructions à exécuter (il peut y en avoir plus d’une).
 
 `DF_DATA`\
-Indique que cette instruction est réellement données (pas de code).
+Indique que cette instruction est vraiment des données (pas de code).
 
 `DF_HASSOURCE`\
-Indique que cette instruction a source. Des instructions, tel que le code de collection de profilage ou garbage, n’ont aucune source correspondante.
+Indique que cette instruction a une source. Certaines instructions, telles que le profilage ou le code de collecte des ordures, n’ont pas de source correspondante.
 
 `DF_DOCUMENT_CHECKSUM`\
-Indique que `bstrDocumentUrl` champ contient des données de la somme de contrôle après l’URL du document. Consultez la section Notes pour la [DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md) structure pour le stockage des données de la somme de contrôle.
+Indique `bstrDocumentUrl` que le champ contient des données de checksum après l’URL du document. Consultez la section Remarques pour la structure [de disassemblyData](../../../extensibility/debugger/reference/disassemblydata.md) pour la façon dont les données de checksum sont stockées.
 
 ## <a name="remarks"></a>Notes
-Utilisé en tant que le `dwFlags` membre de la [DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md) structure.
+Utilisé comme `dwFlags` membre de la structure [de démonmblyData.](../../../extensibility/debugger/reference/disassemblydata.md)
 
-Ces indicateurs peuvent être combinées avec un opérateur de bits `OR`.
+Ces drapeaux peuvent être combinés avec un peu plus. `OR`
 
-## <a name="requirements"></a>Configuration requise
-En-tête : msdbg.h
+## <a name="requirements"></a>Spécifications
+En-tête: msdbg.h
 
-Espace de noms : Microsoft.VisualStudio.Debugger.Interop
+Namespace: Microsoft.VisualStudio.Debugger.Interop
 
-Assembly : Microsoft.VisualStudio.Debugger.Interop.dll
+Assemblage: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>Voir aussi
 - [Énumérations](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)

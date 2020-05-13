@@ -1,5 +1,5 @@
 ---
-title: IDebugStackFrame2::GetLanguageInfo | Microsoft Docs
+title: IDebugStackFrame2::GetLanguageInfo ( Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,24 +7,24 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugStackFrame2::GetLanguageInfo
 ms.assetid: 0e12fd92-f155-46a7-8272-cda279388cfb
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 0318f99d234309093717c9603ec1153e71d6d7f3
-ms.sourcegitcommit: 74c5360186731de07828764eb32ea1033a8c2275
+ms.openlocfilehash: cefb4bdd9d0c85311c63e6a988956301a6c2cc14
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67559699"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80719705"
 ---
 # <a name="idebugstackframe2getlanguageinfo"></a>IDebugStackFrame2::GetLanguageInfo
 
-Obtient le langage associé à ce frame de pile.
+Obtient la langue associée à ce cadre de pile.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -45,10 +45,10 @@ int GetLanguageInfo ( 
 ## <a name="parameters"></a>Paramètres
 
 `pbstrLanguage`\
-[out] Retourne le nom de la langue qui implémente la méthode associée à ce frame de pile.
+[out] Retourne le nom de la langue qui implémente la méthode associée à ce cadre de pile.
 
 `pguidLanguage`\
-[out] Retourne le `GUID` du langage. Pour les [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] langues, par exemple, les éléments suivants peuvent être retournées :
+[out] Retourne `GUID` la langue. Pour [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] les langues, par exemple, ce qui suit peut être retourné :
 
 - `guidVBScriptLang`\
 
@@ -64,7 +64,7 @@ int GetLanguageInfo ( 
 
 ## <a name="return-value"></a>Valeur de retour
 
- En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.
+ En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
 ## <a name="see-also"></a>Voir aussi
 

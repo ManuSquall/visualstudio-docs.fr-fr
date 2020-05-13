@@ -1,5 +1,5 @@
 ---
-title: IDebugThread2::Resume | Microsoft Docs
+title: IDebugThread2::Resume Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugThread2::Resume
 ms.assetid: 36aad682-b0b9-40a2-b3fc-f0e61d41cdbc
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: a312b18fead71b343fd1b9beafcf36c904bf1b24
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 3899dea7c33946588de4308f42b948ede703361a
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66320136"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80718674"
 ---
 # <a name="idebugthread2resume"></a>IDebugThread2::Resume
-Reprend l’exécution d’un thread.
+Reprend l’exécution d’un fil.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -41,16 +41,16 @@ int Resume ( 
 
 ## <a name="parameters"></a>Paramètres
 `pdwSuspendCount`\
-[out] Retourne le nombre de suspend après l’opération de reprise.
+[out] Retourne le compte de suspension après l’opération de reprise.
 
 ## <a name="return-value"></a>Valeur de retour
- En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.
+ En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
 ## <a name="remarks"></a>Notes
- Chaque appel à cette méthode décrémente le compteur de suspension jusqu'à ce qu’il atteigne 0 à ce moment-là, l’exécution est reprise réellement. Ce compteur de suspension s’affiche dans le **Threads** fenêtre de débogage.
+ Chaque appel à cette méthode décrément le compte de suspension jusqu’à ce qu’il atteigne 0 au moment où, l’exécution est effectivement repris. Ce compte de suspension est affiché dans la fenêtre **threads** débagé.
 
- Pour chaque appel à cette méthode, il doit y avoir un appel précédent à la [Suspend](../../../extensibility/debugger/reference/idebugthread2-suspend.md) (méthode). Le compteur de suspension détermine combien de fois le `IDebugThread2::Suspend` méthode a été appelée jusqu'à présent.
+ Pour chaque appel à cette méthode, il doit y avoir un appel précédent à la méthode [Suspendre.](../../../extensibility/debugger/reference/idebugthread2-suspend.md) Le compte de suspension détermine `IDebugThread2::Suspend` combien de fois la méthode a été appelée jusqu’à présent.
 
 ## <a name="see-also"></a>Voir aussi
 - [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)
-- [Suspend](../../../extensibility/debugger/reference/idebugthread2-suspend.md)
+- [Suspendre](../../../extensibility/debugger/reference/idebugthread2-suspend.md)

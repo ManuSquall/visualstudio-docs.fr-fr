@@ -10,19 +10,19 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 43c739cc24d453ad4129d8cb7cc4bfbebec07aa4
-ms.sourcegitcommit: 00ba14d9c20224319a5e93dfc1e0d48d643a5fcd
+ms.openlocfilehash: c7283d67710a3b5b319b2d25a1c5d6535fed83b9
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2020
-ms.locfileid: "77091819"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "77633718"
 ---
 # <a name="incremental-builds"></a>Builds incrémentielles
 
 Les builds incrémentielles sont des builds optimisées qui permettent de ne pas exécuter les cibles dont les fichiers de sortie sont à jour par rapport à leurs fichiers d’entrée correspondants. Un élément cible peut avoir à la fois un attribut `Inputs`, qui indique les éléments que la cible attend comme entrée, et un attribut `Outputs` qui indique les éléments qu’il produit comme sortie. MSBuild tente de trouver une correspondance « 1 à 1 » entre les valeurs de ces attributs. Si une correspondance « 1 à 1 » existe, MSBuild compare l’horodatage de chaque élément d’entrée avec celui de l’élément de sortie correspondant. Les fichiers de sortie sans correspondance « 1 à 1 » sont comparés à tous les fichiers d’entrée. Un élément est considéré comme à jour si son fichier de sortie a une date de création identique ou antérieure à celle du ou des fichiers d’entrée.
 
 > [!NOTE]
-> Lorsque MSBuild évalue les fichiers d’entrée, seul le contenu de la liste dans l’exécution actuelle est pris en compte. Les modifications apportées à la liste à partir de la dernière build ne mettent pas automatiquement une cible à jour.
+> Lorsque MSBuild évalue les fichiers d’entrée, seul le contenu de la liste dans l’exécution actuelle est pris en compte. Les modifications apportées à la liste à partir de la dernière version ne rendent pas automatiquement une cible périmée.
 
 Si tous les éléments de sortie sont à jour, MSBuild ignore la cible. Cette *build incrémentielle* de la cible peut améliorer considérablement la vitesse de génération. Si seuls certains fichiers sont à jour, MSBuild exécute la cible en ignorant les éléments à jour, pour que tous les éléments soient à jour. Ce processus est appelé « *build incrémentielle partielle* ».
 
@@ -79,4 +79,5 @@ En raison de l’inférence de sortie, vous devez ajouter une tâche `CreateProp
 Ce code crée la propriété CompileRan et lui attribue la valeur `true`, mais uniquement si la cible est exécutée. Si la cible est ignorée, CompileRan n’est pas créé.
 
 ## <a name="see-also"></a>Voir aussi
+
 - [Cibles](../msbuild/msbuild-targets.md)

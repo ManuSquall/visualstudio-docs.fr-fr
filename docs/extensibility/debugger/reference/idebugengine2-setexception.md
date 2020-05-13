@@ -1,5 +1,5 @@
 ---
-title: IDebugEngine2::SetException | Microsoft Docs
+title: IDebugEngine2:SetException (fr) Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugEngine2::SetException
 ms.assetid: e6f5ec48-09e8-4b9b-9dc9-55f8d883f1b7
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 2234c0c0b571e763d3b143b5606fe61c43f25cde
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 7398db3c15c58821e05eff839a1022276401d569
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66352532"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80730936"
 ---
 # <a name="idebugengine2setexception"></a>IDebugEngine2::SetException
-Spécifie la façon dont le moteur de débogage (dé) doit gérer une exception donnée.
+Précise comment le moteur de débogé (DE) doit gérer une exception donnée.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -41,13 +41,13 @@ int SetException( 
 
 ## <a name="parameters"></a>Paramètres
 `pException`\
-[in] Un [EXCEPTION_INFO](../../../extensibility/debugger/reference/exception-info.md) structure qui décrit l’exception et comment la déboguer.
+[dans] Une structure [EXCEPTION_INFO](../../../extensibility/debugger/reference/exception-info.md) qui décrit l’exception et comment la déboiffer.
 
 ## <a name="return-value"></a>Valeur de retour
- En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.
+ En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
 ## <a name="remarks"></a>Notes
- Un dé était possible d’indiquer à arrêter le programme de génération d’une exception à l’occasion de la première, deuxième chance, ou pas du tout.
+ Un DE pourrait être chargé d’arrêter le programme générant une exception à la première chance, la deuxième chance, ou pas du tout.
 
 ## <a name="see-also"></a>Voir aussi
 - [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md)

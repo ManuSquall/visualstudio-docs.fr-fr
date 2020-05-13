@@ -16,10 +16,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: cddbb0b3e27b841441937b7256ea32d722e25f5e
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74774898"
 ---
 # <a name="how-to-relocate-instrumented-binaries"></a>Guide pratique pour déplacer des binaires instrumentés
@@ -38,5 +38,5 @@ Lors de l’instrumentation, des sondes sont insérées dans le fichier binaire 
 
 ## <a name="see-also"></a>Voir aussi
 
-[Configurer des sessions de performances](../profiling/configuring-performance-sessions.md)
-[VSInstr](../profiling/vsinstr.md)
+[Configurer les sessions de](../profiling/configuring-performance-sessions.md)
+performance[VSInstr](../profiling/vsinstr.md)

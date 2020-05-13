@@ -13,10 +13,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 6180d2f2e3ed655f378900d3d41691daa98a0354
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74773255"
 ---
 # <a name="collect-concurrency-data-for-stand-alone-applications-by-using-the-profiler-command-line"></a>Collecter des données concurrentielles pour les applications autonomes en utilisant la ligne de commande du profileur
@@ -26,12 +26,12 @@ La méthode d’accès concurrentiel des outils de profilage [!INCLUDE[vsprvs](.
 
 |Tâche|Contenu connexe|
 |----------|---------------------|
-|**Démarrer une application .NET Framework et profiler des données concurrentielles**|-   [Guide pratique pour lancer une application .NET Framework pour collecter des données concurrentielles](../profiling/how-to-launch-a-stand-alone-dotnet-framework-app-to-collect-concurrency-data.md)|
-|**Démarrer une application C/C++ et profiler des données concurrentielles**|-   [Guide pratique pour lancer une application native pour collecter des données concurrentielles](../profiling/how-to-launch-a-stand-alone-native-application-to-collect-concurrency-data.md)|
-|**Attacher le profileur à une application .NET Framework en cours d’exécution**|-   [Guide pratique pour attacher le profileur à une application .NET Framework pour collecter des données concurrentielles](../profiling/how-to-attach-the-profiler-to-a-dotnet-app-and-collect-concurrency-data.md)|
-|**Attacher le profileur à une application C/C++ en cours d’exécution**|-   [Guide pratique pour attacher le profileur à une application native et collecter des données concurrentielles](../profiling/how-to-attach-the-profiler-to-a-native-app-and-collect-concurrency-data.md)|
+|**Démarrer une application .NET Framework et profiler des données concurrentielles**|-   [Comment : Lancer une application cadre .NET pour recueillir des données de concordance](../profiling/how-to-launch-a-stand-alone-dotnet-framework-app-to-collect-concurrency-data.md)|
+|**Démarrer une application C/C++ et profiler des données concurrentielles**|-   [Comment : Lancer une application native pour collecter des données de concordance](../profiling/how-to-launch-a-stand-alone-native-application-to-collect-concurrency-data.md)|
+|**Attacher le profileur à une application .NET Framework en cours d’exécution**|-   [Comment : Joindre le profileur à une application cadre .NET pour recueillir des données de concordance](../profiling/how-to-attach-the-profiler-to-a-dotnet-app-and-collect-concurrency-data.md)|
+|**Attacher le profileur à une application C/C++ en cours d’exécution**|-   [Comment : Attachez le profileur à une application native et collectez des données de concordance](../profiling/how-to-attach-the-profiler-to-a-native-app-and-collect-concurrency-data.md)|
 
-## <a name="related-tasks"></a>Tâches connexes
+## <a name="related-tasks"></a>Tâches associées
 
 ### <a name="profile-stand-alone-applications"></a>Profiler des applications autonomes
 
@@ -40,19 +40,19 @@ La méthode d’accès concurrentiel des outils de profilage [!INCLUDE[vsprvs](.
 |**Profiler à l’aide de la méthode d’échantillonnage**|-   [Collecter des statistiques d’applications en utilisant l’échantillonnage](../profiling/collecting-application-statistics-for-stand-alone-applications.md)|
 |**Profiler à l’aide de la méthode d’instrumentation**|-   [Collecter les données temporelles détaillées à l’aide de l’instrumentation](../profiling/collecting-detailed-timing-data-for-a-stand-alone-application.md)|
 |**Profiler l’allocation de mémoire .NET et le garbage collection**|-   [Collecter des données de mémoire .NET Framework](../profiling/collecting-dotnet-framework-memory-data-for-stand-alone-applications.md)|
-|**Ajouter des interactions de couche**|-   [Collecter les données d’interaction de couche](../profiling/adding-tier-interaction-data-from-the-command-line.md)|
+|**Ajouter des interactions de couche**|-   [Recueillir des données d’interaction de niveau](../profiling/adding-tier-interaction-data-from-the-command-line.md)|
 
 ### <a name="profile-concurrency-issues"></a>Profiler des problèmes de concurrence
 
 |Tâche|Contenu connexe|
 |----------|---------------------|
-|**Profiler des applications ASP.NET**|-   [Collecter des données concurrentielles](../profiling/collecting-concurrency-data-for-an-aspnet-web-application.md)|
-|**Profiler des services**|-   [Collecter des données concurrentielles](../profiling/collecting-concurrency-data-for-a-service-by-using-the-profiler-command-line.md)|
+|**Profiler des applications ASP.NET**|-   [Recueillir des données de concurrence](../profiling/collecting-concurrency-data-for-an-aspnet-web-application.md)|
+|**Profiler des services**|-   [Recueillir des données de concurrence](../profiling/collecting-concurrency-data-for-a-service-by-using-the-profiler-command-line.md)|
 
 ### <a name="analyze-concurrency-data-views-and-reports"></a>Analyser des vues et des rapports de données concurrentielles
-- [Vues de données de conflit de ressources](../profiling/resource-contention-data-views.md)
+- [Vues de données sur la contention des ressources](../profiling/resource-contention-data-views.md)
 
 - [Visualiseur concurrentiel](../profiling/concurrency-visualizer.md)
 
-## <a name="reference"></a>Reference
-- [Informations de référence sur les outils de profilage de ligne de commande](../profiling/command-line-profiling-tools-reference.md)
+## <a name="reference"></a>Informations de référence
+- [Référence des outils de profilage de la ligne de commandement](../profiling/command-line-profiling-tools-reference.md)

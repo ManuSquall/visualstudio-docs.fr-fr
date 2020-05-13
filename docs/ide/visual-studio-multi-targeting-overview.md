@@ -1,6 +1,6 @@
 ---
 title: Frameworks .NET ciblés
-ms.date: 02/06/2018
+ms.date: 03/31/2020
 ms.topic: conceptual
 helpviewer_keywords:
 - targeting .NET Framework [Visual Studio]
@@ -11,20 +11,18 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: ec81b38ab68c327f25c9f94b6329a700e2662383
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 48d770f5d88e19c749c1a1e657c369089d4c7afb
+ms.sourcegitcommit: ce3d0728ec1063ab548dac71c8eaf26d20450acc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75594121"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "80472738"
 ---
 # <a name="framework-targeting-overview"></a>Vue d’ensemble du ciblage des frameworks
 
 Dans Visual Studio, vous pouvez spécifier la version de .NET que votre projet doit cibler. Le ciblage de framework permet de garantir que l’application utilise seulement les fonctionnalités disponibles dans la version du framework spécifiée. Pour qu’une application .NET Framework s’exécute sur un autre ordinateur, la version du framework ciblée par l’application doit être compatible avec la version du framework qui est installée sur l’ordinateur.
 
-Une solution Visual Studio peut contenir des projets qui ciblent différentes versions de .NET.
-
-Pour plus d’informations sur les frameworks cibles, consultez [Frameworks cibles](/dotnet/standard/frameworks).
+Une solution Visual Studio peut contenir des projets qui ciblent différentes versions de .NET.  Cependant, notez que vous ne pouvez construire contre une seule version de .NET soit en utilisant des conditionnels de référence pour une seule construction ou de reconstruire construire différents binaires pour chaque version.  Pour plus d’informations sur les frameworks cibles, consultez [Frameworks cibles](/dotnet/standard/frameworks).
 
 > [!TIP]
 > Vous pouvez également cibler des applications pour différentes plateformes. Pour plus d’informations, consultez l’article [Multiciblage de MSBuild](../msbuild/msbuild-multitargeting-overview.md).
@@ -85,7 +83,7 @@ Dans un projet Visual Basic, C# ou F# existant, vous pouvez changer la version d
 
 1. Dans l’**Explorateur de solutions**, ouvrez le menu du projet que vous souhaitez modifier avec un clic droit, puis choisissez **Propriétés**.
 
-1. Dans la colonne gauche de la fenêtre **Propriétés**, choisissez l’onglet **Application**.
+1. Dans la colonne gauche de la fenêtre **Propriétés,** choisissez l’onglet **Application.**
 
    ![Onglet Application des propriétés du projet](../ide/media/vs_slnexplorer_properties_applicationtab.png)
 
@@ -112,7 +110,7 @@ Dans un projet Visual Basic, C# ou F# existant, vous pouvez changer la version d
 
 Pour cibler une version de .NET, vous devez d’abord installer les références d’assembly appropriées. Vous pouvez télécharger des packs de développeur pour différentes versions de .NET à partir de la page de [Téléchargements .NET](https://www.microsoft.com/net/download/windows).
 
-Pour les projets .NET Framework, la boîte de dialogue **Ajouter une référence** désactive les assemblys système qui n’appartiennent pas à la version du .NET Framework cible, de façon à ce qu’ils ne puissent pas être ajoutés à un projet par inadvertance. (Les assemblys système sont des fichiers *. dll* inclus dans une version .NET Framework.) Les références qui appartiennent à une version de Framework supérieure à la version ciblée ne seront pas résolues, et les contrôles qui dépendent d’une telle référence ne peuvent pas être ajoutés. Si vous voulez activer une telle référence, réinitialisez la cible du .NET Framework du projet sur une cible qui inclut la référence.
+Pour les projets .NET Framework, la boîte de dialogue **Ajouter une référence** désactive les assemblys système qui n’appartiennent pas à la version du .NET Framework cible, de façon à ce qu’ils ne puissent pas être ajoutés à un projet par inadvertance. (Les assemblages système sont des fichiers *.dll* qui sont inclus dans une version cadre .NET.) Les références qui appartiennent à une version-cadre supérieure à la version ciblée ne se résoudront pas, et les contrôles qui dépendent d’une telle référence ne peuvent pas être ajoutés. Si vous voulez activer une telle référence, réinitialisez la cible du .NET Framework du projet sur une cible qui inclut la référence.
 
 Pour plus d’informations sur les références d’assembly, consultez [Résoudre les assemblys au moment du design](../msbuild/resolving-assemblies-at-design-time.md).
 
@@ -122,6 +120,6 @@ Quand vous ciblez .NET Framework 3.5 ou ultérieur, une référence à **System.
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Frameworks cibles](/dotnet/standard/frameworks)
+- [Cadres cibles](/dotnet/standard/frameworks)
 - [Multiciblage (MSBuild)](../msbuild/msbuild-multitargeting-overview.md)
-- [Guide pratique pour modifier le framework cible et l’ensemble d’outils de plateforme (C++)](/cpp/build/how-to-modify-the-target-framework-and-platform-toolset)
+- [Comment modifier le cadre cible et l’outil de plate-forme (CMD)](/cpp/build/how-to-modify-the-target-framework-and-platform-toolset)

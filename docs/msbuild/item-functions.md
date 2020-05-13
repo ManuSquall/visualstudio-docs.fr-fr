@@ -10,17 +10,19 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 65ca003375e54248852f5942bd2b5f62fe21a06c
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: d3f6299a8be52aef068746ca33e48341da55f778
+ms.sourcegitcommit: da5ebc29544fdbdf625ab4922c9777faf2bcae4a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75573792"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "82586882"
 ---
 # <a name="item-functions"></a>fonctions d'élément
-À compter de MSBuild 4.0, le code dans les tâches et les cibles peut appeler des fonctions d’élément pour obtenir des informations sur les éléments du projet. Ces fonctions simplifient l’obtention des éléments Distinct() et sont plus rapides que l’exécution d’une boucle dans les éléments.
+
+Le code des tâches et des cibles peut appeler des fonctions d’élément pour obtenir des informations sur les éléments du projet (dans MSBuild 4,0 et versions ultérieures). Ces fonctions simplifient l’obtention d’éléments distincts et sont plus rapides que l’itération dans les éléments.
 
 ## <a name="string-item-functions"></a>Fonctions d’élément de type chaîne
+
 Vous pouvez utiliser des méthodes et des propriétés de chaîne dans le .NET Framework pour manipuler n’importe quelle valeur d’élément. Pour les méthodes <xref:System.String>, spécifiez le nom de la méthode. Pour les propriétés <xref:System.String>, spécifiez le nom de la propriété après « get_ ».
 
 Pour les éléments qui ont plusieurs chaînes, la méthode ou la propriété de chaîne s’exécute sur chaque chaîne.
@@ -49,9 +51,10 @@ L’exemple suivant montre comment utiliser ces méthodes d’élément de type 
 ```
 
 ## <a name="intrinsic-item-functions"></a>Fonctions d’élément intrinsèques
+
 Le tableau ci-dessous liste les fonctions intrinsèques disponibles pour les éléments.
 
-|Fonction|Exemple|Description|
+|Fonction| Exemple|Description|
 |--------------|-------------|-----------------|
 |`Count`|`@(MyItem->Count())`|Retourne le nombre d’éléments.|
 |`DirectoryName`|`@(MyItem->DirectoryName())`|Retourne l’équivalent de `Path.DirectoryName` pour chaque élément.|
@@ -99,5 +102,10 @@ L’exemple suivant montre comment utiliser des fonctions d’élément intrins�
   -->
 ```
 
+## <a name="msbuild-condition-functions"></a>Fonctions de condition MSBuild
+
+Les fonctions `Exists` et `HasTrailingSlash` ne sont pas des fonctions d’élément. Elles peuvent être utilisées avec l' `Condition` attribut. Consultez les [Conditions MSBuild](msbuild-conditions.md).
+
 ## <a name="see-also"></a>Voir aussi
-- [Éléments MSBuild](../msbuild/msbuild-items.md)
+
+- [Éléments](../msbuild/msbuild-items.md)

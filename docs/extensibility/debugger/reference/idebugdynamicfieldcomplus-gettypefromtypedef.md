@@ -1,28 +1,28 @@
 ---
-title: IDebugDynamicFieldCOMPlus::GetTypeFromTypeDef | Microsoft Docs
+title: IDebugDynamicFieldCOMPlus::GetTypeFromTypeDef ( Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - GetTypeFromTypeDef
 - IDebugDynamicFieldCOMPlus::GetTypeFromTypeDef
 ms.assetid: 7f6cd3d3-f4da-4893-be91-8dd104be8010
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 1d8c869447f13774f975cbebcba35792cf05b8cb
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 8e212f53467c25ca6084eaa5a91b37031baedf4a
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66320918"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80731237"
 ---
 # <a name="idebugdynamicfieldcomplusgettypefromtypedef"></a>IDebugDynamicFieldCOMPlus::GetTypeFromTypeDef
-Récupère un type en fonction de son jeton.
+Récupère un type donné son jeton.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -46,19 +46,19 @@ int GetTypeFromTypeDef(
 
 ## <a name="parameters"></a>Paramètres
 `ulAppDomainID`\
-[in] Identificateur du domaine d’application.
+[dans] Identification du domaine de l’application.
 
 `guidModule`\
-[in] Identificateur unique du module.
+[dans] Identifiant unique du module.
 
 `tokClass`\
-[in] Qui représente le type de jeton.
+[dans] Jeton qui représente le type.
 
 `ppType`\
-[out] Retourne un [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) objet qui contient le type.
+[out] Retourne un objet [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) qui contient le type.
 
 ## <a name="return-value"></a>Valeur de retour
- En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.
+ En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
 ## <a name="see-also"></a>Voir aussi
 - [IDebugDynamicFieldCOMPlus](../../../extensibility/debugger/reference/idebugdynamicfieldcomplus.md)

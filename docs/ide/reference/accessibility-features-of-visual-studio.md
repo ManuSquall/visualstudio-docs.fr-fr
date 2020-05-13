@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 99831638219481d7db331f2a4429fffce58ecc96
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/16/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "76113792"
 ---
 # <a name="accessibility-features-of-visual-studio"></a>Fonctionnalités d’accessibilité de Visual Studio
@@ -38,17 +38,17 @@ En plus des fonctionnalités et utilitaires d’accessibilité Windows, les fonc
 > [!NOTE]
 > Cette rubrique s’applique à Visual Studio sur Windows. Pour Visual Studio pour Mac, consultez [Accessibilité pour Visual Studio pour Mac](/visualstudio/mac/accessibility).
 
-Pour plus d’informations, consultez les rubriques suivantes :
+Pour plus d'informations, voir les rubriques suivantes :
 
-- [Comment : définir les options d’accessibilité de l’IDE](../../ide/reference/how-to-set-ide-accessibility-options.md)
+- [Comment : Définir les options d’accessibilité IDE](../../ide/reference/how-to-set-ide-accessibility-options.md)
 
-- [Guide pratique pour utiliser uniquement le clavier](../../ide/reference/how-to-use-the-keyboard-exclusively.md)
+- [Comment: Utilisez le clavier exclusivement](../../ide/reference/how-to-use-the-keyboard-exclusively.md)
 
 - [Raccourcis clavier par défaut](../../ide/default-keyboard-shortcuts-in-visual-studio.md)
 
 - [Conseils et astuces d’accessibilité](../../ide/reference/accessibility-tips-and-tricks.md)
 
-- [Guide pratique pour changer les polices et les couleurs](../../ide/how-to-change-fonts-and-colors-in-visual-studio.md)
+- [Comment: Changer les polices et les couleurs](../../ide/how-to-change-fonts-and-colors-in-visual-studio.md)
 
 > [!IMPORTANT]
 > Les informations contenues dans cette page peuvent s’appliquer uniquement aux utilisateurs qui ont acheté leurs produits Microsoft aux États-Unis. Si vous avez obtenu ce produit en dehors des États-Unis, visitez le site web [Accessibilité Microsoft](https://www.microsoft.com/accessibility/) pour obtenir la liste des numéros de téléphone et des adresses des services de support Microsoft. Vous pouvez contacter votre filiale pour savoir si les types de produits et de services décrits dans cette page sont disponibles dans votre région. Les informations sur l’accessibilité sont également disponibles dans d’autres langues.
@@ -62,4 +62,4 @@ Pour plus d’informations, consultez les rubriques suivantes :
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Produits et services d’accessibilité de Microsoft](../../ide/reference/accessibility-products-and-services-from-microsoft.md)
+- [Services et produits d'accessibilité de Microsoft](../../ide/reference/accessibility-products-and-services-from-microsoft.md)

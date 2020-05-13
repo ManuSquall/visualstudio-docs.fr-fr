@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 2a547122579da8bb19935e268a1845a8ed8d4b03
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/16/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "76114216"
 ---
 # <a name="my-extensions-page-project-designer-visual-basic"></a>Extensions My, page du Concepteur de projets (Visual Basic)
@@ -25,7 +25,7 @@ Utilisez la page **Extensions My** du **Concepteur de projets** pour gérer les 
 
 Pour accéder à la page **Extensions My**, double-cliquez sur **My Project** pour votre nœud de projet dans l’**Explorateur de solutions**. Quand le **Concepteur de projets** s’affiche, cliquez sur l’onglet **Extensions My**.
 
-## <a name="uielement-list"></a>Liste des éléments d’interface
+## <a name="uielement-list"></a>Liste des éléments de l'interface utilisateur
 Les options suivantes permettent d’ajouter ou de supprimer des extensions de l’espace de noms `My` dans votre projet. Une extension de l’espace de noms `My` doit tout d’abord être installée en tant que modèle d’élément Visual Studio pour pouvoir être ajoutée. Pour plus d’informations sur la publication et l’installation des extensions de l’espace de noms `My`, consultez [Empaquetage et déploiement des extensions My personnalisées](/dotnet/visual-basic/developing-apps/customizing-extending-my/packaging-and-deploying-custom-my-extensions).
 
  **Extensions de l’espace de noms My**

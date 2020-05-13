@@ -1,5 +1,5 @@
 ---
-title: IDebugPortEx2 | Microsoft Docs
+title: IDebugPortEx2 - France Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugPortEx2 interface
 ms.assetid: 144724d0-38ee-4c9b-87ca-8a504371182b
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: bed6cd047af4ba57a1880d87e30a990dcf83efac
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 5789681b0da70f46dadac1e29d0d6bb9dc905d1a
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66340431"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80725002"
 ---
 # <a name="idebugportex2"></a>IDebugPortEx2
-Cette interface permet à la session de débogage manager (SDM) contrôle les programmes et les processus en cours d’exécution sur un port.
+Cette interface permet au gestionnaire de déboguer de session (SDM) de contrôler les programmes et les processus en cours d’exécution sur un port.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -28,35 +28,35 @@ Cette interface permet à la session de débogage manager (SDM) contrôle les pr
 IDebugPortEx2 : IUnknown
 ```
 
-## <a name="notes-for-implementers"></a>Notes de publication pour les implémenteurs
+## <a name="notes-for-implementers"></a>Notes pour les implémenteurs
  Un fournisseur de port personnalisé implémente cette interface sur le même objet qui implémente [IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md).
 
-## <a name="notes-for-callers"></a>Notes de publication pour les appelants
- Les appels SDM [QueryInterface](/cpp/atl/queryinterface) sur la `IDebugPort2` interface pour obtenir cette interface.
+## <a name="notes-for-callers"></a>Notes pour les appelants
+ Le SDM appelle [QueryInterface](/cpp/atl/queryinterface) sur l’interface `IDebugPort2` pour obtenir cette interface.
 
 ## <a name="methods-in-vtable-order"></a>Méthodes dans l'ordre Vtable
- Le tableau suivant présente les méthodes de `IDebugPortEx2`.
+ Le tableau suivant montre `IDebugPortEx2`les méthodes de .
 
 |Méthode|Description|
 |------------|-----------------|
 |[LaunchSuspended](../../../extensibility/debugger/reference/idebugportex2-launchsuspended.md)|Lance un fichier exécutable.|
 |[ResumeProcess](../../../extensibility/debugger/reference/idebugportex2-resumeprocess.md)|Reprend l’exécution d’un processus.|
-|[CanTerminateProcess](../../../extensibility/debugger/reference/idebugportex2-canterminateprocess.md)|Détermine si un processus peut être arrêté.|
-|[TerminateProcess](../../../extensibility/debugger/reference/idebugportex2-terminateprocess.md)|Arrête un processus.|
-|[GetPortProcessId](../../../extensibility/debugger/reference/idebugportex2-getportprocessid.md)|Obtient l’ID de processus du port lui-même.|
+|[CanTerminateProcess](../../../extensibility/debugger/reference/idebugportex2-canterminateprocess.md)|Détermine si un processus peut être terminé.|
+|[TerminateProcess](../../../extensibility/debugger/reference/idebugportex2-terminateprocess.md)|Termine un processus.|
+|[GetPortProcessId](../../../extensibility/debugger/reference/idebugportex2-getportprocessid.md)|Obtient l’ID processus du port lui-même.|
 |[GetProgram](../../../extensibility/debugger/reference/idebugportex2-getprogram.md)|Obtient un programme associé à un nœud de programme.|
 
 ## <a name="remarks"></a>Notes
- Cette interface est normalement privée entre le SDM et le fournisseur de port personnalisé.
+ Cette interface est normalement privée entre le SDM et le fournisseur de ports personnalisés.
 
- Si vous le souhaitez, un moteur de débogage (dé) peut rechercher pour cette interface sur le [IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md) interface transmise au [LaunchSuspended](../../../extensibility/debugger/reference/idebugenginelaunch2-launchsuspended.md) et utiliser [LaunchSuspended](../../../extensibility/debugger/reference/idebugportex2-launchsuspended.md) pour lancer le programme. Cela n’est pas obligatoire, toutefois, et un DE faire tout ce qui est nécessaire pour lancer le programme de la demande.
+ Si désiré, un moteur de débogé (DE) peut rechercher cette interface sur [l’interface IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md) passé à [LaunchSuspended](../../../extensibility/debugger/reference/idebugenginelaunch2-launchsuspended.md) et utiliser [LaunchSuspended](../../../extensibility/debugger/reference/idebugportex2-launchsuspended.md) pour lancer le programme. Ce n’est pas une exigence, cependant, et un DE peut faire tout ce qu’il doit faire pour lancer le programme de demande.
 
-## <a name="requirements"></a>Configuration requise
- En-tête : portpriv.h
+## <a name="requirements"></a>Spécifications
+ En-tête: portpriv.h
 
- Espace de noms : Microsoft.VisualStudio.Debugger.Interop
+ Namespace: Microsoft.VisualStudio.Debugger.Interop
 
- Assembly : Microsoft.VisualStudio.Debugger.Interop.dll
+ Assemblage: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>Voir aussi
 - [Interfaces de base](../../../extensibility/debugger/reference/core-interfaces.md)

@@ -16,10 +16,10 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: 134a5b7cd4bb0ffc9c00a41df12ed196dd2a9212
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/16/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "76115125"
 ---
 # <a name="how-to-specify-build-events-c"></a>Guide pratique pour spécifier des événements de build (C#)
@@ -32,7 +32,7 @@ Quand un projet est généré, les événements pré-build sont ajoutés à un f
 
 1. Dans l’**Explorateur de solutions**, sélectionnez le projet pour lequel vous voulez spécifier l’événement de build.
 
-2. Dans le menu **Projet**, cliquez sur **Propriétés**.
+2. Dans le menu **Projet** , cliquez sur **Propriétés**.
 
 3. Sélectionnez l’onglet **Événements de build**.
 
@@ -44,19 +44,19 @@ Quand un projet est généré, les événements pré-build sont ajoutés à un f
 5. Dans la zone **Ligne de commande de l’événement post-build**, spécifiez la syntaxe de l’événement de build.
 
    > [!NOTE]
-   > Ajoutez une instruction `call` avant toutes les commandes postbuild qui exécutent des fichiers *.bat*. Par exemple, `call C:\MyFile.bat` ou `call C:\MyFile.bat call C:\MyFile2.bat`.
+   > Ajoutez `call` une déclaration avant toutes les commandes post-build qui exécutent des fichiers *.bat.* Par exemple, `call C:\MyFile.bat` ou `call C:\MyFile.bat call C:\MyFile2.bat`.
 
 6. Dans la zone **Exécuter l’événement post-build**, spécifiez sous quelles conditions exécuter l’événement post-build.
 
    > [!NOTE]
-   > Pour ajouter une syntaxe longue, ou pour sélectionner des macros de génération à partir de la [boîte de dialogue Ligne de commande de l’événement prébuild/postbuild](../ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md), cliquez sur le bouton de sélection ( **...** ) afin d’afficher une zone d’édition.
+   > Pour ajouter une syntaxe longue, ou pour sélectionner des macros de génération à partir de la [boîte de dialogue Ligne de commande de l’événement prébuild/postbuild](../ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md), cliquez sur le bouton de sélection (**...**) afin d’afficher une zone d’édition.
 
    La syntaxe de l’événement de build peut inclure toute commande valide à une invite de commandes ou dans un fichier *.bat*. Le nom d’un fichier de commandes doit être précédé par `call` pour vous assurer que toutes les commandes suivantes sont exécutées.
 
    > [!NOTE]
    > Si votre événement pré-build ou post-build ne s’exécute pas correctement, vous pouvez terminer la génération en faisant en sorte que l’action d’événement s’achève avec un code autre que zéro (0), qui indique une action réussie.
 
-## <a name="example"></a>Exemple
+## <a name="example"></a> Exemple
 
 La procédure suivante montre comment définir la version minimale du système d’exploitation dans le manifeste de l’application à l’aide d’une commande *.exe* appelée à partir d’un événement postbuild (fichier *.exe.manifest* dans le répertoire du projet). La version minimale du système d’exploitation est un nombre en quatre parties, tel que 4.10.0.0. Pour définir la version minimale du système d’exploitation, la commande modifie la section `<dependentOS>` du manifeste :
 
@@ -72,7 +72,7 @@ La procédure suivante montre comment définir la version minimale du système d
 
 1. Créez un projet **Application console** pour la commande. Nommez le projet **ChangeOSVersionCS**.
 
-2. Dans *Program.cs*, ajoutez la ligne suivante aux autres directives `using` en haut du fichier :
+2. Dans *Program.cs*, ajouter la ligne suivante `using` aux autres directives en haut du fichier:
 
    ```csharp
    using System.Xml;
@@ -132,7 +132,7 @@ La procédure suivante montre comment définir la version minimale du système d
 
    La commande accepte deux arguments : le chemin du manifeste de l’application (autrement dit, le dossier dans lequel le processus de génération crée le manifeste, en général *Projectname.publish*), et la nouvelle version du système d’exploitation.
 
-4. créer le projet ;
+4. Créez le projet.
 
 5. Copiez le fichier *.exe* dans un répertoire tel que *C:\TEMP\ChangeOSVersionVB.exe*.
 
@@ -176,7 +176,7 @@ Ensuite, appelez cette commande dans un événement post-build pour modifier le 
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Événements de build, page du Concepteur de projets (C#)](../ide/reference/build-events-page-project-designer-csharp.md)
+- [Événements de build, page du Concepteur de projet (C#)](../ide/reference/build-events-page-project-designer-csharp.md)
 - [Ligne de commande de l’événement prébuild/postbuild, boîte de dialogue](../ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md)
 - [Guide pratique pour spécifier des événements de build (Visual Basic)](../ide/how-to-specify-build-events-visual-basic.md)
-- [Compiler et générer](../ide/compiling-and-building-in-visual-studio.md)
+- [Compilation et génération](../ide/compiling-and-building-in-visual-studio.md)

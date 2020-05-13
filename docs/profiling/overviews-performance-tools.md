@@ -10,17 +10,17 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: d284ffc6b850a9746cf1442f35400a18045bbe18
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74772665"
 ---
 # <a name="overviews-performance-tools"></a>Présentations (outils d’analyse des performances)
 Cette section fournit des vues d’ensemble conceptuelles et terminologiques des outils de profilage [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], que vous pouvez utiliser pour mesurer les caractéristiques de performances d’une application en cours de développement.
 
-## <a name="in-this-section"></a>Dans cette section
-- [Vue d’ensemble de la session de performance](../profiling/performance-session-overview.md)
+## <a name="in-this-section"></a>Contenu de cette section
+- [Aperçu de la séance de performance](../profiling/performance-session-overview.md)
 
  Découvrez les principes de base du profilage de performance à l’aide des outils de profilage [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].
 
@@ -28,11 +28,11 @@ Cette section fournit des vues d’ensemble conceptuelles et terminologiques des
 
  Décrit les propriétés permettant de configurer une session de performance.
 
-- [Fonctionnement des valeurs de données d’échantillonnage](../profiling/understanding-sampling-data-values.md)
+- [Comprendre le fonctionnement des valeurs de données d’échantillonnage](../profiling/understanding-sampling-data-values.md)
 
  Découvrez les valeurs de données signalées quand vous utilisez la méthode de profilage d’échantillonnage.
 
-- [Comprendre les valeurs de données d’instrumentation](../profiling/understanding-instrumentation-data-values.md)
+- [Comprendre le fonctionnement des valeurs de données d’instrumentation](../profiling/understanding-instrumentation-data-values.md)
 
  Découvrez les valeurs de données signalées quand vous utilisez la méthode de profilage par instrumentation.
 
@@ -58,5 +58,5 @@ Cette section fournit des vues d’ensemble conceptuelles et terminologiques des
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Prise en main](../profiling/getting-started-with-performance-tools.md)
+- [Commencer](../profiling/getting-started-with-performance-tools.md)
 - [Explorateur de performances](../profiling/performance-explorer.md)

@@ -26,9 +26,9 @@
       items:
         - name: Visual Studio Tools pour Unity
           href: visual-studio-tools-for-unity.md
-        - name: Vue d'ensemble
+        - name: Vue d’ensemble
           href: overview-of-visual-studio-tools-for-unity.md
-        - name: Prise en main
+        - name: Mise en route
           href: getting-started-with-visual-studio-tools-for-unity.md
         - name: Utilisation de Visual Studio Tools pour Unity
           href: using-visual-studio-tools-for-unity.md
@@ -40,15 +40,15 @@
               href: customize-project-files-created-by-vstu.md
             - name: "Exemple\_: rappel de journal"
               href: share-the-unity-log-callback-with-vstu.md
-        - name: Problèmes connus et résolution
+        - name: Problèmes connus et dépannage
           href: troubleshooting-and-known-issues-visual-studio-tools-for-unity.md
         - name: Journal des modifications
           href: change-log-visual-studio-tools-for-unity.md
         - name: Application Lifecycle Management (ALM) avec les applications Unity
           href: application-lifecycle-management-alm-with-unity-apps.md
-    - name: Visual C++ pour le développement mobile multiplateforme
+    - name: "Visual\_C++ pour le développement mobile multiplateforme"
       items:
-        - name: Visual C++ pour le développement mobile multiplateforme
+        - name: "Visual\_C++ pour le développement mobile multiplateforme"
           href: visual-cpp-for-cross-platform-mobile-development.md
         - name: Installer Visual C++ pour le développement mobile multiplateforme
           items:
@@ -64,7 +64,7 @@
           href: import-an-xcode-project.md
         - name: Synchroniser les modifications entre Xcode et Visual Studio
           href: sync-changes-between-xcode-and-visual-studio.md
-        - name: Exemples de développement mobile multiplateforme
+        - name: Cross-Platform Mobile Development Examples
           href: cross-platform-mobile-development-examples.md
     - name: Développer des applications pour la plateforme Windows universelle (UWP)
       href: develop-apps-for-the-universal-windows-platform-uwp.md

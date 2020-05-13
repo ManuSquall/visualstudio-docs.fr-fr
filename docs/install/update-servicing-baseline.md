@@ -13,17 +13,17 @@ ms.workload:
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.openlocfilehash: 9f31a3f7ae5e0e0ca4150d88870b9e48493bffcc
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/16/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "76114962"
 ---
 # <a name="update-visual-studio-while-on-a-servicing-baseline"></a>Mettre à jour Visual Studio tout en étant sur une ligne de base de maintenance
 
 Nous mettons souvent à jour Visual Studio au cours du cycle de vie du produit. Il existe deux types de mise à jour : 
 
-* **Mises à jour de versions mineures**&mdash;, par exemple de la 16.0 à la 16.1&mdash;, qui incluent de nouvelles fonctionnalités et de nouveaux composants.  
+* **Mises à jour**&mdash;de version mineure par exemple, 16.0 à 16.1&mdash;qui incluent de nouvelles fonctionnalités et composants.  
 * **Mises à jour de maintenance**, par exemple de la 16.0.4 à la 16.0.5, qui incluent uniquement les correctifs ciblés pour les problèmes critiques.
 
 Les administrateurs d’entreprise peuvent choisir de conserver leurs clients sur une base de référence de maintenance. Une base de référence de maintenance inclut des mises à jour pour une année au-delà de la base de référence de maintenance suivante.
@@ -48,7 +48,7 @@ Les administrateurs qui utilisent une installation de disposition de réseau doi
 
 ### <a name="install-a-servicing-baseline-via-the-internet"></a>Installer une base de référence de maintenance via Internet
 
-Dans le cas d’une installation basée sur Internet, ajoutez `--channelUri` avec un manifeste de canal inexistant à la ligne de commande utilisée pour lancer le programme d’installation. Cette opération empêche Visual Studio d’utiliser la dernière version disponible d’une mise à jour. Voici un exemple :
+Dans le cas d’une installation basée sur Internet, ajoutez `--channelUri` avec un manifeste de canal inexistant à la ligne de commande utilisée pour lancer le programme d’installation. Cette opération empêche Visual Studio d’utiliser la dernière version disponible d’une mise à jour. Voici un exemple :
 
 ```cmd
 vs_enterprise.exe --channelUri c:\doesnotexist.chman
@@ -88,4 +88,4 @@ Dans le cas d’une installation basée sur Internet, exécutez la nouvelle vers
 * [Outils de détection et de gestion des instances de Visual Studio](tools-for-managing-visual-studio-instances.md)
 * [Guide pratique pour définir des paramètres dans un fichier réponse](automated-installation-with-response-file.md)
 * [Contrôler les mises à jour applicables aux déploiements de Visual Studio à partir du réseau](controlling-updates-to-visual-studio-deployments.md)
-* [Cycle de vie et maintenance des produits Visual Studio](/visualstudio/releases/2019/servicing/)
+* [Cycle de vie et entretien du produit Visual Studio](/visualstudio/releases/2019/servicing/)

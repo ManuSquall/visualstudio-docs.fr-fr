@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 92763e352d04d5aa3e88a68bad7adfcd05897027
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "62945412"
 ---
 # <a name="cvisenabled-function"></a>CvIsEnabled, fonction
@@ -42,13 +42,13 @@ HRESULT CvIsEnabledEx(
 
  `level` Niveau d’importance.
 
- `pProvider` Objet fournisseur valide. Ne peut pas être Null.
+ `pProvider` Objet fournisseur valide. Ne peut pas avoir la valeur NULL.
 
-## <a name="return-value"></a>Valeur de retour
+## <a name="return-value"></a>Valeur retournée
  S_OK si le fournisseur est activé. S_FALSE si le fournisseur est désactivé. Code d’erreur en cas d’erreur. Utilisez la macro FAILED pour vérifier la condition d’erreur, puis recherchez S_OK/S_FALSE.
 
 ## <a name="requirements"></a>Spécifications
  **En-tête :** *cvmarkers.h*
 
 ## <a name="see-also"></a>Voir aussi
-- [Informations de référence sur la bibliothèque C++](../profiling/cpp-library-reference.md)
+- [Référence de la bibliothèque de CMD](../profiling/cpp-library-reference.md)

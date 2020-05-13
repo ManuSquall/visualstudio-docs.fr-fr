@@ -1,5 +1,5 @@
 ---
-title: IDebugProgram2::GetProcess | Microsoft Docs
+title: IDebugProgram2::GetProcess Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProgram2::GetProcess
 ms.assetid: 1d602485-ebaf-451c-9165-f2e226f20a90
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: b307fb7b4a25fc5a84b30eefd65e72b4f387a07d
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: aca1842e92e7e1c164a6468e6c1e94a352ef67c0
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66313763"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80722785"
 ---
 # <a name="idebugprogram2getprocess"></a>IDebugProgram2::GetProcess
-Obtenir le processus de ce programme est en cours d’exécution dans.
+Obtenez le processus dans lequel ce programme est en cours d’exécution.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -41,15 +41,15 @@ int GetProcess(
 
 ## <a name="parameters"></a>Paramètres
 `ppProcess`\
-[out] Retourne le [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md) interface qui représente le processus.
+[out] Retourne l’interface [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md) qui représente le processus.
 
 ## <a name="return-value"></a>Valeur de retour
- En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.
+ En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
 ## <a name="remarks"></a>Notes
- Sauf si un moteur de débogage (dé) implémente la [IDebugEngineLaunch2](../../../extensibility/debugger/reference/idebugenginelaunch2.md) interface, l’implémentation de l’Allemagne de cette méthode doit retourner toujours `E_NOTIMPL` , car un DE ne peut pas déterminer quel processus, il s’exécute dans et par conséquent ne peut pas répondre à une implémentation de cette méthode.
+ À moins qu’un moteur débagé (DE) ne implémente l’interface [IDebugEngineLaunch2,](../../../extensibility/debugger/reference/idebugenginelaunch2.md) la mise en œuvre de cette méthode par le DE devrait toujours revenir `E_NOTIMPL` parce qu’un DE ne peut pas déterminer dans quel processus il fonctionne et ne peut donc pas satisfaire à une mise en œuvre de cette méthode.
 
- Implémentation de la `IDebugEngineLaunch2` interface signifie que le DE doive savoir comment créer un processus ; par conséquent, de la DE mise en œuvre de la [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) interface est en mesure de savoir à quel processus, il est en cours d’exécution dans.
+ La mise `IDebugEngineLaunch2` en œuvre de l’interface signifie que le DE doit savoir comment créer un processus; par conséquent, la mise en œuvre par le DE de l’interface [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) est en mesure de savoir dans quel processus il fonctionne.
 
 ## <a name="see-also"></a>Voir aussi
 - [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)

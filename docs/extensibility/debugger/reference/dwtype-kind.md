@@ -1,5 +1,5 @@
 ---
-title: dwTYPE_KIND | Microsoft Docs
+title: dwTYPE_KIND Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - dwTYPE_KIND enumeration
 ms.assetid: 6ff56b0f-c502-4e6c-9829-bfa05361b783
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 12fe23d53939303be6b7e6a20ff12d2524d71593
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: a9d790f12d3fc21bbae7373470746af2ebfe6dc9
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66318123"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80737194"
 ---
-# <a name="dwtypekind"></a>dwTYPE_KIND
-Spécifie comment interpréter le type d’un [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) objet.
+# <a name="dwtype_kind"></a>dwTYPE_KIND
+Précise comment interpréter le type d’objet [IDebugField.](../../../extensibility/debugger/reference/idebugfield.md)
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -47,28 +47,28 @@ public enum enum_dwTYPE_KIND {
 
 ## <a name="fields"></a>Champs
 `TYPE_KIND_METADATA`\
-Le [TYPE_INFO](../../../extensibility/debugger/reference/type-info.md) union doit être interprétée comme un [METADATA_TYPE](../../../extensibility/debugger/reference/metadata-type.md) structure.
+Le [syndicat TYPE_INFO](../../../extensibility/debugger/reference/type-info.md) devrait être interprété comme une structure [METADATA_TYPE.](../../../extensibility/debugger/reference/metadata-type.md)
 
 `TYPE_KIND_PDB`\
-Le `TYPE_INFO` union doit être interprétée comme un [PDB_TYPE](../../../extensibility/debugger/reference/pdb-type.md) structure.
+Le `TYPE_INFO` syndicat doit être interprété comme une structure [PDB_TYPE.](../../../extensibility/debugger/reference/pdb-type.md)
 
 `TYPE_KIND_BUILT`\
-Le `TYPE_INFO` union doit être interprétée comme un [BUILT_TYPE](../../../extensibility/debugger/reference/built-type.md) structure.
+Le `TYPE_INFO` syndicat doit être interprété comme une structure [BUILT_TYPE.](../../../extensibility/debugger/reference/built-type.md)
 
 ## <a name="remarks"></a>Notes
-Les valeurs de cette énumération s’affichent dans le `dwKind` champ la [TYPE_INFO](../../../extensibility/debugger/reference/type-info.md) structurer et sont utilisées pour déterminer comment interpréter le `type` membre d’union. Le `TYPE_INFO` structure est retournée par un appel à la [GetTypeInfo](../../../extensibility/debugger/reference/idebugfield-gettypeinfo.md) (méthode).
+Les valeurs de ce recensement `dwKind` apparaissent dans le domaine de la structure [TYPE_INFO](../../../extensibility/debugger/reference/type-info.md) et `type` sont utilisées pour déterminer comment interpréter le membre du syndicat. La `TYPE_INFO` structure est retournée par un appel à la méthode [GetTypeInfo.](../../../extensibility/debugger/reference/idebugfield-gettypeinfo.md)
 
-## <a name="requirements"></a>Configuration requise
-En-tête : sh.h
+## <a name="requirements"></a>Spécifications
+En-tête: sh.h
 
-Espace de noms : Microsoft.VisualStudio.Debugger.Interop
+Namespace: Microsoft.VisualStudio.Debugger.Interop
 
-Assembly : Microsoft.VisualStudio.Debugger.Interop.dll
+Assemblage: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>Voir aussi
 - [Énumérations](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
 - [TYPE_INFO](../../../extensibility/debugger/reference/type-info.md)
-- [GetTypeInfo](../../../extensibility/debugger/reference/idebugfield-gettypeinfo.md)
+- [GetTypeInfo (en anglais)](../../../extensibility/debugger/reference/idebugfield-gettypeinfo.md)
 - [METADATA_TYPE](../../../extensibility/debugger/reference/metadata-type.md)
 - [PDB_TYPE](../../../extensibility/debugger/reference/pdb-type.md)
 - [BUILT_TYPE](../../../extensibility/debugger/reference/built-type.md)

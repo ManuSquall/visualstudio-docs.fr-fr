@@ -10,24 +10,23 @@ dev_langs:
 ms.assetid: 74dca14c-5071-416f-a92b-d09f95e3dfb8
 caps.latest.revision: 1
 author: bowdenk7
-ms.author: wilkelly
+ms.author: jillfra
 manager: jillfra
-monikerRange: vs-2017
-ms.openlocfilehash: 653b2576b0076d02f2e18cedc6f9f9890fd98fe5
-ms.sourcegitcommit: 978df2feb5e64228d2e3dd430b299a5c234cda17
+ms.openlocfilehash: 9df1b66f1a2407d523e38cd71fc9ffa993cd2d92
+ms.sourcegitcommit: ade07bd1cf69b8b494d171ae648cfdd54f7800d3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/24/2019
-ms.locfileid: "72888661"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "81649631"
 ---
 # <a name="javascript-in-visual-studio-2017"></a>JavaScript dans Visual Studio 2017
 
 JavaScript est un langage de premier ordre dans Visual Studio. Vous pouvez utiliser la plupart ou toutes les aides standard de modification (extraits de code, IntelliSense, etc.) lorsque vous écrivez du code JavaScript dans l'IDE de Visual Studio. Vous pouvez écrire du code JavaScript pour de nombreux types d'applications et services.
 
 > [!NOTE]
-> Nous nous sommes joints aux efforts de la communauté afin de faire de [MDN web docs](https://developer.mozilla.org/en-US/) la ressource de développement unique et de premier plan du web, en redirigeant la totalité de la documentation de référence sur les API JavaScript de Microsoft (plus de 500 pages) depuis docs.microsoft.com vers les supports MDN équivalents. Pour plus d’informations, consultez cette [annonce](https://blogs.windows.com/msedgedev/2018/06/26/chakra-docs-mdn-web-docs/).
+> Nous avons rejoint l’effort à l’échelle de la communauté pour faire [des documents Web MDN](https://developer.mozilla.org/en-US/) de la web un-stop, première ressource de développement, en redirigeant tous (500 pages) de Microsoft JavaScript API référence de docs.microsoft.com à leurs homologues MDN. Pour plus d’informations, consultez cette [annonce](https://blogs.windows.com/msedgedev/2018/06/26/chakra-docs-mdn-web-docs/).
 
-## <a name="ES6"></a> Prise en charge d’ECMAScript 2015 (ES6) et ultérieur
+## <a name="support-for-ecmascript-2015-es6-and-beyond"></a><a name="ES6"></a> Prise en charge d’ECMAScript 2015 (ES6) et ultérieur
 
 Visual Studio prend désormais en charge la syntaxe des mises à jour de langage ECMAScript, par exemple ECMAScript 2015/2016.
 
@@ -59,7 +58,7 @@ Les paramètres obligatoires pour le fichier tsconfig sont les suivants :
 L’emplacement de sortie, ainsi que les dossiers autres que les dossiers de projet tels que `node_modules` ou `temp`, doivent être ajoutés à ce paramètre.
 - `enableAutoDiscovery` : ce paramètre permet de détecter et télécharger automatiquement les fichiers de définition, comme indiqué précédemment.
 - `compileOnSave` : ce paramètre indique au compilateur s’il doit réexécuter la compilation chaque fois qu’un fichier source est enregistré dans Visual Studio.
-- `typeAcquisition` : cet ensemble de paramètres contrôle le comportement de l’acquisition de type automatique (pour plus de détails, consultez [cette section](/visualstudio/ide/javascript-intellisense#Auto)).
+- `typeAcquisition` : cet ensemble de paramètres contrôle le comportement de l’acquisition de type automatique (pour plus de détails, consultez [cette section](../ide/javascript-intellisense.md#Auto)).
 
 Pour pouvoir convertir des fichiers JavaScript en modules CommonJS et les placer dans un dossier `./out`, vous pouvez utiliser le fichier `tsconfig.json` suivant :
 
@@ -119,7 +118,7 @@ exports.default = Subscription_1.Subscription;
 
 JavaScript IntelliSense dans [!include[vs_dev15](../../docs/misc/includes/vs_dev15_md.md)] affiche désormais beaucoup plus d’informations sur les listes de paramètres et de membres. Ces nouvelles informations sont fournies par le service de langage TypeScript, qui utilise l’analyse statique en arrière-plan pour mieux comprendre votre code. Vous trouverez plus d’informations sur la nouvelle expérience IntelliSense et son fonctionnement [ici](/visualstudio/ide/javascript-intellisense/).
 
-## <a name="JSX"></a> Prise en charge de la syntaxe JSX
+## <a name="jsx-syntax-support"></a><a name="JSX"></a> Prise en charge de la syntaxe JSX
 
 JavaScript dans [!include[vs_dev15](../../docs/misc/includes/vs_dev15_md.md)] offre une prise en charge étendue de la syntaxe JSX. JSX est un ensemble de syntaxes qui autorise les balises HTML dans les fichiers JavaScript.
 
@@ -185,7 +184,7 @@ Pour un projet donné avec la configuration suivante :
 - `bootstrap`, `jquery`, `jquery-validation` et `jquery-validation-unobtrusive` sont répertoriés dans `bower.json`
 - `kendo-ui` a été ajouté manuellement au dossier lib
 
-![Structure des dossiers](../javascript/media/js-folderstructure.png)
+![Structure de dossiers](../javascript/media/js-folderstructure.png)
 
 Vous pouvez utiliser le fichier `tsconfig.json` suivant pour vérifier, d’une part, que le service de langage analyse uniquement vos fichiers sources dans le dossier `js` et, d’autre part, qu’il récupère et utilise toujours les fichiers `.d.ts` pour les bibliothèques dans votre dossier `lib`.
 
@@ -261,7 +260,7 @@ Pour en savoir plus sur la création de fichiers de déclaration (`.d.ts`), cliq
 Étant donné que le nouveau service de langage repose sur l’analyse statique et non sur un moteur d’exécution (pour plus d’informations sur les différences, lisez [ce problème](https://github.com/Microsoft/TypeScript/issues/4789)), quelques modèles JavaScript ne peuvent plus être détectés.
 Le modèle le plus courant est le modèle « expando ».
 Le service de langage ne peut pas fournir la fonctionnalité IntelliSense sur des objets auxquels des propriétés ont été ajoutées après la déclaration.
-Exemple :
+Par exemple :
 
 ```js
 var obj = {};

@@ -9,17 +9,17 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: d94a525f9938b6845584b6d5872bd486e947025d
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/16/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "76115398"
 ---
 # <a name="walkthrough-build-an-application"></a>Procédure pas à pas : générer une application
 
 Avec cette procédure pas à pas, vous allez vous familiariser avec plusieurs options qu’il est possible de configurer lors de la génération d’applications avec Visual Studio. Vous allez créer une configuration de build personnalisée, masquer certains messages d’avertissement et afficher davantage d’informations de sortie de build dans un exemple d’application.
 
-## <a name="install-the-sample-application"></a>Installer l’exemple d’application
+## <a name="install-the-sample-application"></a>Installation de l’exemple d’application
 
 Téléchargez l’exemple [Introduction to Building WPF Applications](https://code.msdn.microsoft.com/Introduction-to-Building-b8d16419). Choisissez C# ou Visual Basic. Une fois le fichier *.zip* téléchargé, décompressez-le et ouvrez le fichier *ExpenseItIntro.sln* avec Visual Studio.
 
@@ -35,19 +35,19 @@ Vous pouvez modifier ou créer des configurations et des paramètres de platefor
 
    ![Menu Générer, commande Gestionnaire de configurations](../ide/media/buildwalk_configurationmanagerdialogbox.png)
 
-1. Dans la liste **Configuration de la solution active**, choisissez **\<Nouveau...\>** .
+1. Dans la liste **de configuration de solution Active,** ** \<choisissez... \>**.
 
 1. Dans la boîte de dialogue **Nouvelle configuration de solution**, nommez la nouvelle configuration `Test`, copiez les paramètres de la configuration **Debug** existante, puis cliquez sur le bouton **OK**.
 
    ![Boîte de dialogue Nouvelle configuration de solution](../ide/media/buildwalk_newsolutionconfigdlgbox.png)
 
-1. Dans la liste **Plateforme de la solution active**, choisissez **\<Nouveau...\>** .
+1. Dans la liste **de la plate-forme de solutions Active,** ** \<choisissez... \>**.
 
-1. Dans la boîte de dialogue **Nouvelle plateforme de solution**, choisissez **x64** et ne copiez pas les paramètres de la plateforme x86.
+1. Dans la nouvelle boîte de dialogue **de plate-forme de solution,** choisissez **x64**et ne copiez pas les paramètres de la plate-forme x86.
 
    ![Boîte de dialogue Nouvelle plateforme de solution](../ide/media/buildwalk_newsolutionplatform.png)
 
-1. Sélectionnez le bouton **OK** .
+1. Choisissez le bouton **OK**.
 
    La configuration de la solution active a été changée en **Test** avec la plateforme de la solution active définie sur x64.
 
@@ -59,13 +59,13 @@ Vous pouvez rapidement vérifier ou modifier la configuration de la solution act
 
 ![Barre d'outils Standard option Configuration de solution](../ide/media/buildwalk_standardtoolbarsolutioncongfig.png)
 
-## <a name="build-the-application"></a>Générer l’application
+## <a name="build-the-application"></a>Créer l’application
 
 Ensuite, vous allez générer la solution avec la configuration de build personnalisée.
 
-### <a name="build-the-solution"></a>Générer la solution
+### <a name="build-the-solution"></a>Générez la solution.
 
-- Dans la barre de menus, choisissez **générer** > **générer la solution**, ou appuyez sur **CTRL**+**MAJ**+**B**.
+- Sur la barre de menu, choisissez **Build** > **Build Solution**, ou appuyez sur **Ctrl**+**Shift**+**B**.
 
     La fenêtre **Sortie** affiche les résultats de la génération. La génération a réussi.
 
@@ -75,9 +75,9 @@ Nous présenterons ensuite du code qui provoque la génération d’un avertisse
 
 1. Dans le projet C#, ouvrez le fichier *ExpenseReportPage.xaml.cs*. Dans la méthode **ExpenseReportPage**, ajoutez le code suivant : `int i;`.
 
-    OU
+    OR
 
-    Dans le projet Visual Basic, ouvrez le fichier *ExpenseReportPage.xaml.vb*. Dans le constructeur personnalisé **Public Sub New...** , ajoutez le code suivant : `Dim i`.
+    Dans le projet Visual Basic, ouvrez le fichier *ExpenseReportPage.xaml.vb*. Dans le constructeur personnalisé **Public Sub New...**, ajoutez le code suivant : `Dim i`.
 
 1. Générez la solution.
 
@@ -93,7 +93,7 @@ Vous pouvez temporairement masquer certains messages d’avertissement pendant l
 
 1. Dans l’**Explorateur de solutions**, choisissez le premier nœud de projet.
 
-1. Dans la barre de menus, sélectionnez **Afficher** > **Pages de propriétés**.
+1. Sur la barre de menu, choisissez **Voir les** > **pages de propriété**.
 
      Le **Concepteur de projets** s’ouvre.
 
@@ -113,7 +113,7 @@ Vous pouvez temporairement masquer certains messages d’avertissement pendant l
 
 1. Dans l’**Explorateur de solutions**, choisissez le premier nœud de projet.
 
-2. Dans la barre de menus, sélectionnez **Afficher** > **Pages de propriétés**.
+2. Sur la barre de menu, choisissez **Voir les** > **pages de propriété**.
 
      Le **Concepteur de projets** s’ouvre.
 
@@ -148,13 +148,13 @@ Vous pouvez modifier la quantité d’informations relatives au processus de gé
 
 1. Dans la liste **Commentaires relatifs à la sortie de génération du projet MSBuild**, choisissez **Normal**, puis cliquez sur le bouton **OK**.
 
-1. Dans la barre de menus, choisissez **Générer** > **Nettoyer la solution**.
+1. Sur la barre de menu, choisissez **Build** > **Clean Solution**.
 
 1. Générez la solution, puis passez en revue les informations contenues dans la fenêtre **Sortie**.
 
      Les informations de build comprennent l’heure à laquelle la génération a commencé (située au début), et l’ordre dans lequel les fichiers ont été traités. Ces informations comprennent également la syntaxe de compilateur que Visual Studio exécute pendant la génération.
 
-     Par exemple, dans la C# Build, l’option [/nowarn](/dotnet/visual-basic/reference/command-line-compiler/nowarn) répertorie le code d’avertissement **0168**que vous avez spécifié précédemment dans cette rubrique, ainsi que trois autres avertissements.
+     Par exemple, dans la version C, [l’option /nowarn](/dotnet/visual-basic/reference/command-line-compiler/nowarn) répertorie le code d’avertissement, **0168**, que vous avez spécifié plus tôt dans ce sujet, ainsi que trois autres avertissements.
 
      Dans la build Visual Basic, comme [/nowarn](/dotnet/visual-basic/reference/command-line-compiler/nowarn) n’inclut pas d’avertissements à exclure, aucun avertissement ne s’affiche.
 
@@ -188,7 +188,7 @@ Pour plus d’informations, consultez [Guide pratique pour modifier le répertoi
     > [!IMPORTANT]
     > Une boîte de message peut s’afficher, indiquant que le partage réseau que vous avez spécifié n’est pas un emplacement approuvé. Si vous faites confiance à l’emplacement que vous avez spécifié, cliquez sur **OK** dans la boîte de message.
 
-1. Générez l'application.
+1. Générez l’application.
 
      ![Commande Générer la solution du menu Générer](../ide/media/exploreide-buildsolution.png)
 
@@ -213,13 +213,13 @@ Pour plus d’informations, consultez [Guide pratique pour modifier le répertoi
 
 1. Dans la **barre d’outils Standard**, définissez l’option Configurations de solutions sur **Release** et l’option Plateformes solution sur **x86**.
 
-1. Générez l'application.
+1. Générez l’application.
 
      ![Commande Générer la solution du menu Générer](../ide/media/exploreide-buildsolution.png)
 
    Le fichier exécutable est copié sur le chemin réseau que vous avez spécifié. Son chemin est `\\myserver\builds\\FileName.exe`.
 
-Félicitations ! La procédure pas à pas est terminée.
+Félicitations ! La procédure pas à pas est terminée.
 
 ## <a name="see-also"></a>Voir aussi
 

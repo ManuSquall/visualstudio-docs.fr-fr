@@ -1,5 +1,5 @@
 ---
-title: IDebugProgram2::GetDisassemblyStream | Microsoft Docs
+title: IDebugProgram2::GetDisassemblyStream (fr) Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProgram2::GetDisassemblyStream
 ms.assetid: beda0da5-267e-4bf3-96c4-b659d29e2254
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 71389ef210d50becaab4d25e29194c2a40000497
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 2160f963ad1f3f37291519ced30b8096e33a6116
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66308760"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80722868"
 ---
 # <a name="idebugprogram2getdisassemblystream"></a>IDebugProgram2::GetDisassemblyStream
-Obtient le flux de code machine pour ce programme ou une partie de ce programme.
+Obtient le flux de démontage pour ce programme ou une partie de ce programme.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -45,19 +45,19 @@ int GetDisassemblyStream( 
 
 ## <a name="parameters"></a>Paramètres
 `dwScope`\
-[in] Spécifie une valeur à partir de la [DISASSEMBLY_STREAM_SCOPE](../../../extensibility/debugger/reference/disassembly-stream-scope.md) énumération qui définit l’étendue du flux de code machine.
+[dans] Spécifie une valeur du [recensement DISASSEMBLY_STREAM_SCOPE](../../../extensibility/debugger/reference/disassembly-stream-scope.md) qui définit la portée du flux de démontage.
 
 `pCodeContext`\
-[in] Un [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) objet qui représente la position où commencer le flux de code machine.
+[dans] Un objet [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) qui représente la position de l’endroit où démarrer le flux de démontage.
 
 `ppDisassemblyStream`\
-[out] Retourne un [IDebugDisassemblyStream2](../../../extensibility/debugger/reference/idebugdisassemblystream2.md) objet qui représente le flux de code machine.
+[out] Retourne un objet [IDebugDisassemblyStream2](../../../extensibility/debugger/reference/idebugdisassemblystream2.md) qui représente le flux de démontage.
 
 ## <a name="return-value"></a>Valeur de retour
- En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur. Retourne `E_DISASM_NOTSUPPORTED` si le code machine n’est pas pris en charge pour cette architecture particulière.
+ En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur. Retours `E_DISASM_NOTSUPPORTED` si le démontage n’est pas pris en charge pour cette architecture particulière.
 
 ## <a name="remarks"></a>Notes
- Si le `dwScopes` paramètre a la `DSS_HUGE` indicateur de la [DISASSEMBLY_STREAM_SCOPE](../../../extensibility/debugger/reference/disassembly-stream-scope.md) énumération définie, puis le code machine est supposé retourner un grand nombre d’instructions de code machine, par exemple, pour un fichier entier ou un module. Si le `DSS_HUGE` indicateur n’est pas défini, puis le code machine est censé se limiter à une région de petite, généralement que d’une fonction unique.
+ Si `dwScopes` le paramètre a le `DSS_HUGE` drapeau de [l’ensemble](../../../extensibility/debugger/reference/disassembly-stream-scope.md) de recensement DISASSEMBLY_STREAM_SCOPE, le démontage devrait retourner un grand nombre d’instructions de démontage, par exemple, pour un fichier ou un module entier. Si `DSS_HUGE` le drapeau n’est pas fixé, on s’attend à ce que le démontage soit confiné à une petite région, généralement celle d’une seule fonction.
 
 ## <a name="see-also"></a>Voir aussi
 - [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)
