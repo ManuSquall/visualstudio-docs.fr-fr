@@ -1,4 +1,4 @@
----
+﻿---
 title: Déployer sur un dossier local
 ms.date: 01/29/2019
 ms.topic: quickstart
@@ -24,7 +24,7 @@ Vous pouvez utiliser l’outil **Publier** pour publier des applications ASP.NET
 [!INCLUDE [quickstart-prereqs](includes/quickstart-prereqs.md)]
 
 > [!NOTE]
-> Si vous devez publier une application de poste de travail Windows sur un dossier local, consultez [Déployer une application de poste de travail avec ClickOnce](how-to-publish-a-clickonce-application-using-the-publish-wizard.md) (C# ou Visual Basic). Pour le CMD/CLI, consultez [Déployez une application native à l’aide de ClickOnce](/cpp/windows/clickonce-deployment-for-visual-cpp-applications) ou, pour C/C, consultez [Déployez une application native à l’aide d’un projet Setup](/cpp/windows/walkthrough-deploying-a-visual-cpp-application-by-using-a-setup-project).
+> Si vous devez publier une application de poste de travail Windows sur un dossier local, consultez [DÃ©ployer une application de poste de travail avec ClickOnce](how-to-publish-a-clickonce-application-using-the-publish-wizard.md) (C# ou Visual Basic). Pour le CMD/CLI, consultez [DÃ©ployez une application native Ã  lâ€™aide de ClickOnce](/cpp/windows/clickonce-deployment-for-visual-cpp-applications) ou, pour C/C, consultez [DÃ©ployez une application native Ã  lâ€™aide dâ€™un projet Setup](/cpp/windows/walkthrough-deploying-a-visual-cpp-application-by-using-a-setup-project).
 
 ## <a name="deploy-to-a-local-folder"></a>Déployer sur un dossier local
 
@@ -46,7 +46,7 @@ Vous pouvez utiliser l’outil **Publier** pour publier des applications ASP.NET
 
 1. Pour configurer les paramètres de déploiement, sélectionnez **Configurer** dans le récapitulatif du profil, puis l’onglet **Paramètres**.
 
-    ![Paramètres de profil](../deployment/media/quickstart-profile-settings.png "Paramètres du profil")
+    ![ParamÃ¨tres de profil](../deployment/media/quickstart-profile-settings.png "ParamÃ¨tres du profil")
 
 1. Configurez les options qui permettent de définir s’il faut déployer une configuration Debug ou Release, puis sélectionnez **Enregistrer**.
 

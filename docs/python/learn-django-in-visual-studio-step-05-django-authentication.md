@@ -1,4 +1,4 @@
----
+﻿---
 title: Tutoriel d’apprentissage de Django dans Visual Studio, étape 5, authentification
 titleSuffix: ''
 description: Une procédure pas à pas des principes de base de Django dans le contexte de projets Visual Studio, en particulier les fonctionnalités d’authentification comme fournies par les modèles de projet Web Django.
