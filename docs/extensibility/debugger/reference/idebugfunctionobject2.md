@@ -1,27 +1,27 @@
 ---
-title: IDebugFunctionObject2 | Microsoft Docs
+title: IDebugFunctionObject2 - France Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - IDebugFunctionObject2 interface
 ms.assetid: 56b2fdff-146d-4138-a34c-59a9c65a3ddd
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e231029fb37607464f5e183d531cad9ee5004a73
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: c4150480d2e6686992d78727b6fed817da270145
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66313376"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80728431"
 ---
 # <a name="idebugfunctionobject2"></a>IDebugFunctionObject2
 > [!IMPORTANT]
-> Dans Visual Studio 2015, ce moyen d’implémenter des évaluateurs d’expression est déconseillée. Pour plus d’informations sur l’implémentation des évaluateurs d’expression CLR, consultez [évaluateurs d’Expression CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) et [exemple d’évaluateur d’Expression gérés](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).
+> Dans Visual Studio 2015, cette façon de mettre en œuvre les évaluateurs d’expression est dépréciée. Pour obtenir de l’information sur la mise en œuvre des évaluateurs de l’expression CLR, veuillez consulter [les évaluateurs de l’expression CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) et [l’échantillon d’évaluateur d’expression gérée.](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)
 
- Représente une fonction et améliore la [IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md) interface.
+ Représente une fonction et améliore l’interface [IDebugFunctionObject.](../../../extensibility/debugger/reference/idebugfunctionobject.md)
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -29,30 +29,30 @@ ms.locfileid: "66313376"
 IDebugFunctionObject2 : IUnknown
 ```
 
-## <a name="notes-for-implementers"></a>Notes de publication pour les implémenteurs
+## <a name="notes-for-implementers"></a>Notes pour les implémenteurs
  Un évaluateur d’expression (EE) implémente cette interface pour représenter une fonction.
 
-## <a name="notes-for-callers"></a>Notes de publication pour les appelants
- Méthodes de cette interface différeront de ceux de **IDebugFunctionObject** comme suit :
+## <a name="notes-for-callers"></a>Notes pour les appelants
+ Les méthodes de cette interface reportent celles **d’IDebugFunctionObject** de la manière suivante :
 
-- Le **IDebugEvaluate** méthode accepte des indicateurs.
+- La méthode **IDebugEvaluate** prend des drapeaux.
 
-- Le **CreateObject** méthode accepte des indicateurs et un délai d’expiration.
+- La méthode **CreateObject** prend des drapeaux et un délai d’attente.
 
-- Le **CreateStringObjectWithLength** méthode prend une longueur.
+- La méthode **CreateStringObjectWithLength** prend une longueur.
 
 ## <a name="methods"></a>Méthodes
- Cette interface implémente les méthodes suivantes :
+ Cette interface met en œuvre les méthodes suivantes :
 
 |Méthode|Description|
 |------------|-----------------|
-|[CreateObject](../../../extensibility/debugger/reference/idebugfunctionobject2-createobject.md)|Crée un objet qui utilise un constructeur étant donné les paramètres de l’indicateur d’évaluation et une valeur de délai d’attente.|
+|[CreateObject](../../../extensibility/debugger/reference/idebugfunctionobject2-createobject.md)|Crée un objet qui utilise un constructeur donné paramètres de drapeau d’évaluation et une valeur de délai d’attente.|
 |[CreateStringObjectWithLength](../../../extensibility/debugger/reference/idebugfunctionobject2-createstringobjectwithlength.md)|Crée un objet de chaîne qui a la longueur spécifiée.|
-|[Evaluate](../../../extensibility/debugger/reference/idebugfunctionobject2-evaluate.md)|Appelle la fonction et retourne la valeur obtenue en tant qu’objet.|
+|[Évaluer](../../../extensibility/debugger/reference/idebugfunctionobject2-evaluate.md)|Appelle la fonction et renvoie la valeur résultante comme objet.|
 
-## <a name="requirements"></a>Configuration requise
- En-tête : EE.h
+## <a name="requirements"></a>Spécifications
+ En-tête: Ee.h
 
- Espace de noms : Microsoft.VisualStudio.Debugger.Interop
+ Namespace: Microsoft.VisualStudio.Debugger.Interop
 
- Assembly : Microsoft.VisualStudio.Debugger.Interop.dll
+ Assemblage: Microsoft.VisualStudio.Debugger.Interop.dll

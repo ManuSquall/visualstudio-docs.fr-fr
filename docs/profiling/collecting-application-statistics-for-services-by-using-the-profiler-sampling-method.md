@@ -10,10 +10,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 17217a51c58e1d30b6e6854ee9dbb0c1fb662a3a
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74779686"
 ---
 # <a name="collect-application-statistics-for-services-by-using-the-profiler-sampling-method"></a>Collecter des statistiques d’application des services en utilisant la méthode d’échantillonnage du profileur
@@ -26,19 +26,19 @@ Cette section décrit les procédures et les options de collecte des statistique
 
 |Tâche|Contenu associé|
 |----------|---------------------|
-|**Attacher le profileur à un service .NET**|-   [Guide pratique pour attacher le profileur à un service .NET pour collecter des statistiques d’applications](../profiling/how-to-attach-the-profiler-to-a-dotnet-service-to-collect-application-statistics-by-using-the-command-line.md)|
-|**Ajouter des interactions de couche**|-   [Collecter les données d’interaction de couche](../profiling/adding-tier-interaction-data-from-the-command-line.md)|
-|**Attacher le profileur à un service C/C++**|-   [Guide pratique pour attacher le profileur à un service natif pour collecter des statistiques d’applications](../profiling/how-to-attach-the-profiler-to-a-native-service-to-collect-application-statistics-by-using-the-command-line.md)|
+|**Attacher le profileur à un service .NET**|-   [Comment : Joindre le profileur à un service .NET pour recueillir des statistiques d’application](../profiling/how-to-attach-the-profiler-to-a-dotnet-service-to-collect-application-statistics-by-using-the-command-line.md)|
+|**Ajouter des interactions de couche**|-   [Recueillir des données d’interaction de niveau](../profiling/adding-tier-interaction-data-from-the-command-line.md)|
+|**Attacher le profileur à un service C/C++**|-   [Comment : Joindre le profileur à un service autochtone pour recueillir des statistiques d’application](../profiling/how-to-attach-the-profiler-to-a-native-service-to-collect-application-statistics-by-using-the-command-line.md)|
 
-## <a name="related-tasks"></a>Tâches connexes
+## <a name="related-tasks"></a>Tâches associées
 
 ### <a name="profile-windows-services"></a>Profiler des services Windows
 
 |Tâche|Contenu associé|
 |----------|---------------------|
 |**Profiler à l’aide de la méthode d’instrumentation**|-   [Collecter les données temporelles détaillées à l’aide de l’instrumentation](../profiling/collecting-detailed-timing-data-for-services-by-using-the-instrumentation-method.md)|
-|**Profiler l’allocation de mémoire .NET et le garbage collection**|-   [Collecter des données de mémoire .NET](../profiling/collecting-memory-data-from-dotnet-framework-services-by-using-the-profiler-command-line.md)|
-|**Profiler le conflit des ressources et l’activité des threads**|-   [Collecter des données concurrentielles](../profiling/collecting-concurrency-data-for-a-service-by-using-the-profiler-command-line.md)|
+|**Profiler l’allocation de mémoire .NET et le garbage collection**|-   [Recueillir des données de mémoire .NET](../profiling/collecting-memory-data-from-dotnet-framework-services-by-using-the-profiler-command-line.md)|
+|**Profiler le conflit des ressources et l’activité des threads**|-   [Recueillir des données de concurrence](../profiling/collecting-concurrency-data-for-a-service-by-using-the-profiler-command-line.md)|
 
 ### <a name="profile-by-using-the-sampling-method"></a>Profiler à l’aide de la méthode d’échantillonnage
 
@@ -48,4 +48,4 @@ Cette section décrit les procédures et les options de collecte des statistique
 |**Profiler des applications web ASP.NET**|-   [Collecter des statistiques d’applications en utilisant l’échantillonnage](../profiling/collecting-application-statistics-for-aspnet-using-the-profiler-sampling-method.md)|
 
 ### <a name="analyze-sampling-data-views-and-reports"></a>Analyser des vues et des rapports de données d’échantillonnage
-- [Vues de données de la méthode d’échantillonnage](../profiling/profiler-sampling-method-data-views.md)
+- [Vues de données sur les méthodes d’échantillonnage](../profiling/profiler-sampling-method-data-views.md)

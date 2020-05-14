@@ -1,65 +1,65 @@
 ---
-title: Quelles sont les nouveautés dans le Kit de développement logiciel Visual Studio 2019 | Microsoft Docs
+title: Quoi de neuf dans le Studio Visuel 2019 SDK (fr) Microsoft Docs
 ms.date: 03/29/2019
 ms.topic: conceptual
 ms.assetid: 4a07607b-0c87-4866-acd8-6d68358d6a47
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d4be152cfb39ddea9ddaeea56464a3447be4f2c6
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 187d3df4b5bcefefc0135c010c7d98951e9b3af8
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66320604"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80740397"
 ---
 # <a name="whats-new-in-the-visual-studio-2019-sdk"></a>Nouveautés du SDK Visual Studio 2019
 
-Le SDK Visual Studio a les fonctionnalités nouvelles et mises à jour suivantes pour Visual Studio 2019.
+Le Visual Studio SDK a les fonctionnalités nouvelles et mises à jour suivantes pour Visual Studio 2019.
 
-## <a name="synchronously-autoloaded-extensions-warning"></a>Mode synchrone les extensions chargées automatiquement avertissement
+## <a name="synchronously-autoloaded-extensions-warning"></a>Avertissement d’extensions rechargeuses rechargeuses synchroneusement
 
-Les utilisateurs verront désormais un avertissement si une de leurs extensions installées est synchrone chargées automatiquement au démarrage. Plus d’informations sur l’avertissement à [synchrone des extensions chargées automatiquement](synchronously-autoloaded-extensions.md).
+Les utilisateurs verront désormais un avertissement si l’une de leurs extensions installées sont synchronisées autochargées sur le démarrage. Vous pouvez en apprendre davantage sur l’avertissement à [Synchronously autoloaded extensions](synchronously-autoloaded-extensions.md).
 
-## <a name="single-unified-visual-studio-sdk"></a>Unifiée du SDK Visual Studio
+## <a name="single-unified-visual-studio-sdk"></a>Single, unifié Visual Studio SDK
 
-Vous pouvez désormais obtenir toutes les ressources du Kit de développement logiciel Visual Studio via un seul package NuGet [Microsoft.VisualStudio.SDK](https://www.nuget.org/packages/microsoft.visualstudio.sdk).
+Vous pouvez maintenant obtenir tous les actifs Visual Studio SDK grâce à un seul paquet NuGet [Microsoft.VisualStudio.SDK](https://www.nuget.org/packages/microsoft.visualstudio.sdk).
 
-## <a name="editor-registration-enhancements"></a>Améliorations de l’inscription de l’éditeur
+## <a name="editor-registration-enhancements"></a>Améliorations de l’inscription des rédacteurs
 
-Depuis sa création, Visual Studio a pris en charge l’inscription d’éditeur personnalisé où un éditeur peut déclarer ses affinité pour les extensions spécifiques (par exemple, un .xaml et .rc), ou qu’il est adapté à n’importe quelle extension (. *). À partir de Visual Studio 2019 version 16.1, nous élargir la prise en charge pour l’inscription de l’éditeur.
+Depuis sa création, Visual Studio a pris en charge l’enregistrement des éditeurs personnalisés où un éditeur peut déclarer son affinité pour des extensions spécifiques (par exemple, .xaml et .rc), ou qu’il est adapté à toute extension (. À partir de Visual Studio 2019 version 16.1, nous élargissons le support pour l’inscription de l’éditeur.
 
 ### <a name="filenames"></a>Noms de fichiers
 
-En plus, ou plutôt que l’inscription de la prise en charge pour une extension de fichier particulier, un éditeur peut inscrire qu’il prend en charge les noms de fichiers spécifiques en appliquant la nouvelle `ProvideEditorFilename` au package de l’éditeur d’attribut.
+En plus d’enregistrer ou au lieu d’enregistrer la prise en charge d’une extension `ProvideEditorFilename` de fichier particulière, un éditeur peut s’inscrire qu’il prend en charge des noms de fichiers spécifiques en appliquant le nouvel attribut à l’emballage de l’éditeur.
 
-Par exemple, un éditeur qui prend en charge tous les fichiers .json s’appliquera ce `ProvideEditorExtension` attribut son package :
+Par exemple, un éditeur qui prend en `ProvideEditorExtension` charge tous les fichiers .json appliquerait cet attribut à son package :
 
 ```cs
 [ProvideEditorExtension(typeof(MyEditor), ".json", MyEditor.Priority)]
 ```
 
-À partir de 16,1, si MyEditor prend uniquement en charge les deux fichiers .json bien connu, il peut à la place appliquer ces `ProvideEditorFilename` des attributs à son package :
+En commençant par 16.1, si MyEditor ne prend en charge qu’un `ProvideEditorFilename` couple de fichiers .json bien connus, il peut plutôt appliquer ces attributs à son paquet:
 
 ```cs
 [ProvideEditorFilename(typeof(MyEditor), "particular.json", MyEditor.Priority)]
 [ProvideEditorFilename(typeof(MyEditor), "special.json",    MyEditor.Priority)]
 ```
 
-### <a name="uicontexts"></a>UIContexts
+### <a name="uicontexts"></a>UIContextes
 
-Un éditeur peut inscrire une ou plusieurs UIContexts qui représentent les lorsqu’elle est activée. UIContexts sont enregistré en appliquant une ou plusieurs instances de `ProvideEditorUIContextAttribute` au package qui inscrit l’éditeur.
+Un éditeur peut enregistrer un ou plusieurs UIContexts qui représentent lorsqu’il est activé. UIContexts sont enregistrés en appliquant `ProvideEditorUIContextAttribute` un ou plusieurs cas de l’emballage qui enregistre l’éditeur.
 
-Si un éditeur a UIContexts inscrit :
+Si un éditeur a enregistré UIContexts :
 
-- Si au moins un de ses UIContexts inscrit est actif quand un fichier avec l’extension donnée est ouvert, l’éditeur est inclus dans la recherche de l’éditeur.
-- Si aucune de la UIContexts inscrit est active, l’éditeur n’est pas inclus dans la recherche de l’éditeur.
+- Si au moins un de ses UIContexts enregistrés est actif lorsqu’un fichier avec l’extension donnée est ouvert, l’éditeur est inclus dans la recherche de l’éditeur.
+- Si aucun des UIContexts enregistrés n’est actif, l’éditeur n’est pas inclus dans la recherche de l’éditeur.
 
-Si un éditeur n’enregistre pas les UIContexts, il est toujours inclus dans la recherche de l’éditeur pour cette extension.
+Si un éditeur n’enregistre pas d’interfaceurs, il est toujours inclus dans la recherche de cette extension.
 
-Par exemple, si un éditeur est disponible uniquement lorsque un C# projet est ouvert, il peut déclarer cette affinité en appliquant un `ProvideEditorUIContext` attribut :
+Par exemple, si un éditeur n’est disponible que lorsqu’un projet C `ProvideEditorUIContext` est ouvert, il peut déclarer cette affinité en appliquant un attribut :
 
 ```cs
 [ProvideEditorUIContext(typeof(MyEditor), KnownUIContexts.CSharpProjectContext)]

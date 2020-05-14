@@ -18,10 +18,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 81493379cf847251124d2ab4fd0a978abd96af8f
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75585663"
 ---
 # <a name="autorecover-environment-options-dialog-box"></a>Récupération automatique, Environnement, boîte de dialogue Options
@@ -32,12 +32,12 @@ Pour accéder à cette boîte de dialogue, dans le menu **Outils**, sélectionne
 
 **Enregistrer les informations de récupération automatique toutes les [n] minutes**
 
-Utilisez cette option pour personnaliser la fréquence d’enregistrement automatique d’un fichier dans l’éditeur. Pour les fichiers déjà enregistrés, une copie du fichier est enregistrée dans *%USERPROFILE%\Documents\Visual Studio\\[version]\Backup Files\\[nom_projet]* . Si le fichier est nouveau et que vous ne l’avez pas encore enregistré, il est enregistré automatiquement sous un nom de fichier généré de manière aléatoire.
+Utilisez cette option pour personnaliser la fréquence d’enregistrement automatique d’un fichier dans l’éditeur. Pour les fichiers déjà enregistrés, une copie du fichier est enregistrée dans *%USERPROFILE%\Documents\Visual Studio\\[version]\Backup Files\\[nom_projet]*. Si le fichier est nouveau et que vous ne l’avez pas encore enregistré, il est enregistré automatiquement sous un nom de fichier généré de manière aléatoire.
 
-**Conserver les informations de récupération automatique pendant [n] jours**
+**Conservez les informations AutoRecover pendant [n] jours**
 
 Utilisez cette option pour spécifier la durée de conservation des fichiers créés pour la récupération automatique par Visual Studio.
 
 ### <a name="see-also"></a>Voir aussi
 
-- [Boîte de dialogue Options](../../ide/reference/options-dialog-box-visual-studio.md)
+- [Boîte de dialogue d’options](../../ide/reference/options-dialog-box-visual-studio.md)

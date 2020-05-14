@@ -1,5 +1,5 @@
 ---
-title: FRAMEINFO_FLAGS | Microsoft Docs
+title: FRAMEINFO_FLAGS Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - FRAMEINFO_FLAGS enumeration
 ms.assetid: 41578062-8455-412a-9d8b-1e1e9dc8d52e
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 56990cf324c09764137b344f875322e80e613403
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 3510726400623c5ddf3e7a4d58a4903763b91245
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66350487"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80736800"
 ---
-# <a name="frameinfoflags"></a>FRAMEINFO_FLAGS
-Spécifie les informations permettant de récupérer sur un objet de frame de pile.
+# <a name="frameinfo_flags"></a>FRAMEINFO_FLAGS
+Spécifie les informations à récupérer sur un objet de cadre de pile.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -102,109 +102,109 @@ public enum enum_FRAMEINFO_FLAGS {
 
 ## <a name="fields"></a>Champs
 `FIF_FUNCNAME`\
-Initialize/utiliser le `m_bstrFuncName` champ.
+Initialiser/utiliser `m_bstrFuncName` le champ.
 
 `FIF_RETURNTYPE`\
-Initialize/utiliser le `m_bstrReturnType` champ.
+Initialiser/utiliser `m_bstrReturnType` le champ.
 
 `FIF_ARGS`\
-Initialize/utiliser le `m_bstrArgs` champ.
+Initialiser/utiliser `m_bstrArgs` le champ.
 
 `FIF_LANGUAGE`\
-Initialize/utiliser le `m_bstrLanguage` champ.
+Initialiser/utiliser `m_bstrLanguage` le champ.
 
 `FIF_MODULE`\
-Initialize/utiliser le `m_bstrModule` champ.
+Initialiser/utiliser `m_bstrModule` le champ.
 
 `FIF_STACKRANGE`\
-Initialize/utiliser le `m_addrMin` et `m_addrMax` champs (plage de pile).
+Initialiser/utiliser `m_addrMin` les `m_addrMax` champs et (gamme de piles).
 
 `FIF_FRAME`\
-Initialize/utiliser le `m_pFrame` champ.
+Initialiser/utiliser `m_pFrame` le champ.
 
 `FIF_DEBUGINFO`\
-Initialize/utiliser le `m_fHasDebugInfo` champ.
+Initialiser/utiliser `m_fHasDebugInfo` le champ.
 
 `FIF_STALECODE`\
-Initialize/utiliser le `m_fStaleCode` champ.
+Initialiser/utiliser `m_fStaleCode` le champ.
 
 `FIF_ANNOTATEDFRAME`\
-Initialize/utiliser le `m_fAnnotatedFrame` champ.
+Initialiser/utiliser `m_fAnnotatedFrame` le champ.
 
 `FIF_DEBUG_MODULEP`\
-Initialize/utiliser le `m_pModule` champ.
+Initialiser/utiliser `m_pModule` le champ.
 
 `FIF_FUNCNAME_FORMAT`\
-Met en forme le nom de fonction. Le résultat est retourné dans le `m_bstrFunName` champ et aucun autres champs sont renseignés.
+Formats le nom de la fonction. Le résultat est `m_bstrFunName` retourné sur le terrain et aucun autre champ n’est rempli.
 
 `FIF_FUNCNAME_RETURNTYPE`\
-Ajoute le type de retour à la `m_bstrFuncName` champ.
+Ajoute le type `m_bstrFuncName` de retour sur le terrain.
 
 `FIF_FUNCNAME_ARGS`\
-Ajoute les arguments à la `m_bstrFuncName` champ.
+Ajoute les arguments `m_bstrFuncName` sur le terrain.
 
 `FIF_FUNCNAME_LANGUAGE`\
-Ajoute la langue à la `m_bstrFuncName` champ.
+Ajoute la langue `m_bstrFuncName` au terrain.
 
 `FIF_FUNCNAME_MODULE`\
-Ajoute le nom du module à le `m_bstrFuncName` champ.
+Ajoute le nom `m_bstrFuncName` du module sur le terrain.
 
 `FIF_FUNCNAME_LINES`\
-Ajoute le nombre de lignes à la `m_bstrFuncName` champ.
+Ajoute le nombre de `m_bstrFuncName` lignes sur le terrain.
 
 `FIF_FUNCNAME_OFFSET`\
-Ajoute à la `m_bstrFuncName` champ offset en octets à partir du début de la ligne si `FIF_FUNCNAME_LINES` est spécifié. Si `FIF_FUNCNAME_LINES` n’est pas spécifié, ou si les numéros de ligne ne sont pas disponibles, ajoute le décalage en octets à partir du début de la fonction.
+Ajoute au `m_bstrFuncName` champ le décalage dans les octets `FIF_FUNCNAME_LINES` dès le début de la ligne si elle est spécifiée. Si `FIF_FUNCNAME_LINES` elle n’est pas spécifiée, ou si les numéros de ligne ne sont pas disponibles, ajoute le décalage dans les octets dès le début de la fonction.
 
 `FIF_FUNCNAME_ARGS_TYPES`\
-Ajoute le type de chaque argument de fonction pour le `m_bstrFuncName` champ.
+Ajoute le type de chaque `m_bstrFuncName` argument de fonction au champ.
 
 `FIF_FUNCNAME_ARGS_NAMES`\
-Ajoute le nom de chaque argument de fonction pour le `m_bstrFuncName` champ.
+Ajoute le nom de chaque `m_bstrFuncName` argument de fonction au champ.
 
 `FIF_FUNCNAME_ARGS_VALUES`\
-Ajoute la valeur de chaque argument de fonction pour le `m_bstrFuncName` champ.
+Ajoute la valeur de chaque `m_bstrFuncName` argument de fonction au champ.
 
 `FIF_FUNCNAME_ARGS_ALL`\
-Ajoute le type, le nom et la valeur de tous les arguments pour le `m_bstrFuncName` champ.
+Ajoute le type, le nom et `m_bstrFuncName` la valeur de tous les arguments sur le terrain.
 
 `FIF_ARGS_TYPES`\
-Les types d’arguments sont récupérés et mis en forme.
+Les types d’arguments sont récupérés et formatés.
 
 `FIF_ARGS_NAMES`\
-Les noms des arguments sont récupérés et mis en forme.
+Les noms d’argument sont récupérés et formatés.
 
 `FIF_ARGS_VALUES`\
-Les valeurs d’argument sont récupérés et mis en forme.
+Les valeurs d’argument sont récupérées et formatées.
 
 `FIF_ARGS_ALL`\
-Récupérer et mettre en forme le type, le nom et la valeur de tous les arguments.
+Récupérez et formatez le type, le nom et la valeur de tous les arguments.
 
 `FIF_ARGS_NOFORMAT`\
-Spécifie que les arguments ne sont pas formatées (par exemple, ne pas ajouter des parenthèses autour de la liste d’arguments ni ajouter un séparateur entre arguments).
+Précise que les arguments ne sont pas formatés (par exemple, n’ajoutez pas d’ouverture et de clôture entre parenthèses autour de la liste d’arguments ni ajoutez un séparateur entre les arguments).
 
 `FIF_ARGS_NO_FUNC_EVAL`\
-Spécifie que l’évaluation de fonction (propriété) ne doit pas être utilisée lors de la récupération des valeurs d’argument.
+Précise que l’évaluation de la fonction (propriété) ne doit pas être utilisée lors de la récupération des valeurs de l’argument.
 
 `FIF_FILTER_NON_USER_CODE`\
-Le moteur de débogage consiste à filtrer les frames de code de non-utilisateur afin qu’ils ne soient pas inclus.
+Le moteur de débogé est de filtrer les cadres de code non-utilisateur afin qu’ils ne soient pas inclus.
 
 `FIF_ARGS_NO_TOSTRING`\
-Ne pas autoriser `ToString()` fonction d’évaluation ou de mise en forme lors du renvoi des arguments de fonction.
+N’autorisez pas l’évaluation `ToString()` ou le formatage des fonctions lors du retour des arguments de la fonction.
 
 `FIF_DESIGN_TIME_EXPR_EVAL`\
-Informations de frame doivent être obtenues à partir du domaine d’application hébergé plutôt que le processus d’hébergement.
+Les informations de cadre doivent être obtenues à partir de l’application hébergée-domaine plutôt que le processus d’hébergement.
 
 ## <a name="remarks"></a>Notes
-Ces indicateurs sont passées à la [EnumFrameInfo](../../../extensibility/debugger/reference/idebugthread2-enumframeinfo.md) et [GetInfo](../../../extensibility/debugger/reference/idebugstackframe2-getinfo.md) méthodes pour indiquer quels champs doivent être initialisés dans le [FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md) structure ou structures.
+Ces drapeaux sont transmis aux méthodes [EnumFrameInfo](../../../extensibility/debugger/reference/idebugthread2-enumframeinfo.md) et [GetInfo](../../../extensibility/debugger/reference/idebugstackframe2-getinfo.md) pour indiquer quels champs doivent être parasélisés dans la structure ou les structures [FRAMEINFO.](../../../extensibility/debugger/reference/frameinfo.md)
 
-Ces indicateurs sont également utilisées pour indiquer les champs de la [FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md) structure sont utilisées et valide lors de la structure est retournée. Ces valeurs peuvent être combinées avec un opérateur de bits `OR`.
+Ces drapeaux sont également utilisés pour indiquer quels champs de la structure [FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md) sont utilisés et valides lorsque la structure est retournée. Ces valeurs peuvent être combinées avec un peu plus. `OR`
 
-## <a name="requirements"></a>Configuration requise
-En-tête : msdbg.h
+## <a name="requirements"></a>Spécifications
+En-tête: msdbg.h
 
-Espace de noms : Microsoft.VisualStudio.Debugger.Interop
+Namespace: Microsoft.VisualStudio.Debugger.Interop
 
-Assembly : Microsoft.VisualStudio.Debugger.Interop.dll
+Assemblage: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>Voir aussi
 - [Énumérations](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)

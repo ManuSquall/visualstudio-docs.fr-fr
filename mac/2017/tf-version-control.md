@@ -7,10 +7,10 @@ ms.date: 06/25/2019
 ms.technology: vs-ide-general
 ms.assetid: 52D3D26A-4D01-4FD1-AAA1-AE7D7BD39746
 ms.openlocfilehash: b7b160d58cead031a0eece2a522501d8c2060bd2
-ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/10/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "74985197"
 ---
 # <a name="connecting-to-team-foundation-version-control"></a>Connexion à Team Foundation Version Control
@@ -20,7 +20,7 @@ ms.locfileid: "74985197"
 >
 > Si vous avez précédemment utilisé la version de préversion de l’extension TFVC pour Visual Studio pour Mac, elle n’est plus prise en charge lors de la mise à niveau vers Visual Studio 2019 pour Mac.
 
-Azure Repos fournit deux modèles de contrôle de version : [git](/azure/devops/repos/git/?view=azure-devops), système de gestion de version distribué et [Team Foundation version Control](/azure/devops/repos/tfvc/index?view=azure-devops) (TFVC), un système de gestion de version centralisé.
+Azure Repos fournit deux modèles de contrôle de version : [Git](/azure/devops/repos/git/?view=azure-devops), un système de contrôle de version distribué, et [Team Foundation Version Control](/azure/devops/repos/tfvc/index?view=azure-devops) (TFVC), un système de contrôle de version centralisé.
 
 Visual Studio pour Mac assure une prise en charge complète des référentiels Git, mais des solutions de contournement sont nécessaires pour pouvoir travailler avec TFVC. Si vous utilisez actuellement TFVC pour la gestion de versions, voici quelques solutions qui vous permettront d’accéder à votre code source hébergé dans TFVC :
 
@@ -30,7 +30,7 @@ Visual Studio pour Mac assure une prise en charge complète des référentiels G
 
 La suite de cet article décrit les options ci-dessus.
 
-## <a name="requirements"></a>Configuration requise pour
+## <a name="requirements"></a>Spécifications
 
 * Visual Studio Community, Professional ou Enterprise pour Mac version 7.8 et ultérieure.
 * Azure DevOps Services, Team Foundation Server 2013 (ou version ultérieure) ou Azure DevOps Server 2018 (ou version ultérieure).
@@ -124,13 +124,13 @@ Suivez les invites pour installer l’extension. Une fois qu’elle est install�
 
 ### <a name="updating-the-extension"></a>Mise à jour de l’extension
 
-Les mises à jour de l’extension TFVC sont effectuées régulièrement. Pour accéder aux mises à jour, sélectionnez **Visual Studio > extensions...** dans le menu, puis sélectionnez l’onglet **mises à jour** . Sélectionnez l’extension dans la liste et appuyez sur le bouton **mettre à jour** :
+Les mises à jour de l’extension TFVC sont effectuées régulièrement. Pour accéder aux mises à jour, choisissez **Visual Studio > Extensions...** à partir du menu et sélectionnez **l’onglet Mises à jour.** Sélectionnez l’extension de la liste et appuyez sur le bouton **Mise à jour** :
 
 Appuyez sur **Installer** dans la boîte de dialogue suivante pour désinstaller l’ancien package et installer le nouveau.
 
-### <a name="using-the-extension"></a>Utiliser l’extension
+### <a name="using-the-extension"></a>En utilisant l’extension
 
-Une fois l’extension installée, sélectionnez l’élément de menu **Gestion de version > TFS/Azure DevOps > Ouvrir à partir du référentiel distant…** .
+Une fois l’extension installée, sélectionnez l’élément de menu **Gestion de version > TFS/Azure DevOps > Ouvrir à partir du référentiel distant…**.
 
 ![Élément de menu pour ouvrir l’extension](media/tfvc-source-control-explorer-devops.png)
 
@@ -196,7 +196,7 @@ L’Explorateur du contrôle de code source vous permet de naviguer dans tous le
 - Archiver et extraire des fichiers
 - Verrouiller et déverrouiller des fichiers
 - Ajouter, supprimer et renommer des fichiers
-- Afficher l'historique
+- Afficher l’historique
 - Comparer les changements
 
 Nombre de ces actions sont réalisables par le biais d’actions contextuelles sur le projet :
@@ -230,14 +230,14 @@ Une fois votre espace de travail configuré, vous pouvez le changer ou le suppri
 
 ![Gérer les espaces de travail](media/tfvc-workspace4.png)
 
-## <a name="troubleshooting-and-known-issues"></a>Problèmes connus et dépannage
+## <a name="troubleshooting-and-known-issues"></a>Problèmes connus et résolution
 
 #### <a name="problems-using-basic-authentication"></a>Problèmes avec l’authentification de base
 
 Vous pouvez utiliser les options suivantes pour vous authentifier auprès d’un serveur :
 
-- Oauth
-- Basic
+- OAuth
+- De base
 - Ntlm
 
 Pour utiliser l’authentification de base, il est nécessaire d’activer **Informations d’identification d’authentification alternatives** dans Azure DevOps Services, en suivant les étapes ci-dessous :
@@ -274,4 +274,4 @@ Quand vous tentez de [créer un espace de travail](#creating-a-new-workspace), v
 
 ### <a name="see-also"></a>Voir aussi
 
-- [Développer et partager du code dans TFVC à l’aide de Visual Studio (sur Windows)](/azure/devops/repos/tfvc/share-your-code-in-tfvc-vs)
+- [Développer et partager votre code dans TFVC avec Visual Studio (sur Windows)](/azure/devops/repos/tfvc/share-your-code-in-tfvc-vs)

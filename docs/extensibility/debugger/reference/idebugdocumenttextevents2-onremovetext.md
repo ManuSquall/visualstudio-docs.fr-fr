@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentTextEvents2::onRemoveText | Microsoft Docs
+title: IDebugDocumentTextEvents2::onRemoveText Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugDocumentTextEvents2::onRemoveText
 ms.assetid: 1ebeabb2-52a1-4ccc-83cd-9ae7c3541783
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 4698399cd69c9493b9690bbac24a2b0bc3309d61
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 744a6c769673acdc383999392cde88d255ad8142
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66330513"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80731422"
 ---
 # <a name="idebugdocumenttextevents2onremovetext"></a>IDebugDocumentTextEvents2::onRemoveText
-Informe le package de débogage que le texte a été supprimé à partir du document.
+Informe le paquet de débogé que le texte a été supprimé du document.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -43,13 +43,13 @@ int onRemoveText( 
 
 ## <a name="parameters"></a>Paramètres
 `pos`\
-[in] Un [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) structure qui indique où le texte a été supprimé.
+[dans] Une [structure TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) qui indique où le texte a été supprimé.
 
 `dwNumToRemove`\
-[in] Spécifie le nombre de caractères de texte qui ont été supprimés.
+[dans] Spécifie le nombre de caractères de texte qui ont été supprimés.
 
 ## <a name="return-value"></a>Valeur de retour
- En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.
+ En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
 ## <a name="see-also"></a>Voir aussi
 - [IDebugDocumentTextEvents2](../../../extensibility/debugger/reference/idebugdocumenttextevents2.md)

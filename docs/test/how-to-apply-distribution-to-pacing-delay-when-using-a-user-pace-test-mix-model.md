@@ -9,19 +9,19 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 953c1ac4cb6e0f87d2a36080cc751ea26f66d63e
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/16/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "76114491"
 ---
 # <a name="how-to-apply-distribution-to-pacing-delay-for-a-user-pace-test-mix-model"></a>Guide pratique afin d’appliquer une distribution au rythme pour un modèle de combinaison de tests dépendant du rythme de l’utilisateur
 
-Après avoir créé votre test de charge avec l’**Assistant Nouveau test de charge**, vous pouvez utiliser l’éditeur de test de charge pour changer les propriétés des scénarios afin de répondre à vos besoins et vos objectifs de test.
+Après avoir créé votre test de charge en utilisant le **New Load Test Wizard**, vous pouvez utiliser l’éditeur de test de charge pour modifier les propriétés du scénario pour répondre à vos besoins et objectifs de test.
 
 [!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
-La propriété **Appliquer une distribution au rythme** est définie dans la fenêtre **Propriétés**. Les propriétés du scénario de test de charge sont modifiées à l'aide de l'Éditeur de test de charge.
+La **propriété Apply Distribution to Pacing Delay** est définie à l’aide de la fenêtre **Propriétés.** Les propriétés du scénario de test de charge sont modifiées à l'aide de l'Éditeur de test de charge.
 
 > [!NOTE]
 > La propriété **Appliquer une distribution au rythme** s’applique uniquement si la *combinaison de tests de charge* est configurée en fonction du rythme de l’utilisateur. Pour plus d’informations, consultez [Modifier des modèles de combinaison de texte pour spécifier la probabilité d’exécution d’un test par un utilisateur virtuel](../test/edit-test-mix-models-to-specify-the-probability-of-a-virtual-user-running-a-test.md).
@@ -30,11 +30,11 @@ La valeur de la propriété **Appliquer une distribution au rythme** peut avoir 
 
 - **True** : le scénario applique des délais de distribution statistiques normaux spécifiés par la valeur de la colonne **Tests par utilisateur et par heure** dans la boîte de dialogue **Modifier la combinaison de tests**. Pour plus d’informations, consultez [Modifier des modèles de combinaison de texte pour spécifier la probabilité d’exécution d’un test par un utilisateur virtuel](../test/edit-test-mix-models-to-specify-the-probability-of-a-virtual-user-running-a-test.md).
 
-     Supposons que vous ayez comme valeur **Tests par utilisateur et par heure** dans la boîte de dialogue **Modifier la combinaison de tests** du jeu de tests deux utilisateurs par heure. Si la propriété **Appliquer une distribution au rythme** a la valeur **True**, une distribution statistique normale s’applique au délai d’attente entre les tests. Les tests exécuteront toujours deux tests par heure, mais l'intervalle entre eux ne sera pas nécessairement de 30 minutes. Le premier test peut être exécuté après quatre minutes et le deuxième test après 45 minutes.
+     Supposons, par exemple, que vous avez la valeur **Tests Per User Per Hour** dans la boîte de dialogue Edit Test **Mix** pour l’ensemble de test à deux utilisateurs par heure. Si la propriété **Appliquer une distribution au rythme** a la valeur **True**, une distribution statistique normale s’applique au délai d’attente entre les tests. Les tests exécuteront toujours deux tests par heure, mais l'intervalle entre eux ne sera pas nécessairement de 30 minutes. Le premier test peut être exécuté après quatre minutes et le deuxième test après 45 minutes.
 
 - **False** : Les tests s’exécutent à un rythme que vous avez spécifié avec la valeur de la colonne **Tests par utilisateur et par heure** dans la boîte de dialogue **Modifier la combinaison de tests**. Pour plus d’informations, consultez [Modifier des modèles de combinaison de texte pour spécifier la probabilité d’exécution d’un test par un utilisateur virtuel](../test/edit-test-mix-models-to-specify-the-probability-of-a-virtual-user-running-a-test.md).
 
-     Supposons que vous ayez comme valeur **Tests par utilisateur et par heure** dans la boîte de dialogue **Modifier la combinaison de tests** du jeu de tests deux utilisateurs par heure. Si la propriété **Appliquer une distribution au rythme** a la valeur **False**, vous n’avez aucune marge de manœuvre pour exécuter vos tests exécutés. Le test s'exécutera toutes les 30 minutes. Cela permet de s'assurer que vous exécutez deux tests par heure.
+     Supposons, par exemple, que vous avez la valeur **Tests Per User Per Hour** dans la boîte de dialogue Edit Test **Mix** pour l’ensemble de test à deux utilisateurs par heure. Si la propriété **Appliquer une distribution au rythme** a la valeur **False**, vous n’avez aucune marge de manœuvre pour exécuter vos tests exécutés. Le test s'exécutera toutes les 30 minutes. Cela permet de s'assurer que vous exécutez deux tests par heure.
 
 ## <a name="to-specify-the-apply-distribution-to-pacing-delay-property-setting-for-a-scenario"></a>Pour spécifier le paramètre de la propriété Appliquer une distribution au rythme pour un scénario
 
@@ -55,6 +55,6 @@ La valeur de la propriété **Appliquer une distribution au rythme** peut avoir 
 ## <a name="see-also"></a>Voir aussi
 
 - [Modifier les scénarios de test de charge](../test/edit-load-test-scenarios.md)
-- [Procédure pas à pas : Créer et exécuter un test de charge](../test/walkthrough-create-and-run-a-load-test.md)
+- [Procédure pas à pas : créer et exécuter un test de charge](../test/walkthrough-create-and-run-a-load-test.md)
 - [Contrôleurs de test et agents de test](configure-test-agents-and-controllers-for-load-tests.md)
 - [Propriétés des scénarios de test de charge](../test/load-test-scenario-properties.md)

@@ -8,24 +8,24 @@ dev_langs:
 - CSharp
 - VB
 ms.assetid: e638959e-f6a4-4eb4-b2e9-f63b7855cf8f
-author: TerryGLee
-ms.author: tglee
+author: ornellaalt
+ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 773768c3329ae32edc0b8c24052dcf328b480d3d
-ms.sourcegitcommit: 10d16e18c5f5e482c4c2856e6cacaad283463b65
+ms.openlocfilehash: 92a1744b68ad043dcee21dcb5995fbd1908bd81b
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/09/2020
-ms.locfileid: "75776146"
+ms.lasthandoff: 03/20/2020
+ms.locfileid: "77579782"
 ---
 # <a name="step-7-add-multiplication-and-division-problems"></a>Étape 7 : ajouter des problèmes de multiplication et de division
 
 Dans la septième partie de ce didacticiel, vous allez ajouter des problèmes de multiplication et de division, mais vous commencerez par réfléchir à la manière d'effectuer cette modification. Pensez à la première étape, dans laquelle vous devez stocker des valeurs.
 
 > [!NOTE]
-> Cette rubrique fait partie d'une série de didacticiels sur les concepts de codage de base. Pour obtenir une vue d’ensemble du tutoriel, consultez [Tutoriel 2 : créer un questionnaire mathématique chronométré](../ide/tutorial-2-create-a-timed-math-quiz.md).
+> Cette rubrique fait partie d'une série de didacticiels sur les concepts de codage de base. Pour un aperçu du tutoriel, voir [Tutorial 2: Créer un quiz de mathématiques chronométrés](../ide/tutorial-2-create-a-timed-math-quiz.md).
 
 ## <a name="to-add-multiplication-and-division-problems"></a>Pour ajouter des problèmes de multiplication et de division
 
@@ -46,7 +46,7 @@ Dans la septième partie de ce didacticiel, vous allez ajouter des problèmes de
      [!code-vb[VbExpressTutorial3Step7#17](../ide/codesnippet/VisualBasic/step-7-add-multiplication-and-division-problems_3.vb)]
      [!code-csharp[VbExpressTutorial3Step7#17](../ide/codesnippet/CSharp/step-7-add-multiplication-and-division-problems_3.cs)]
 
-     Vous ne pouvez pas entrer facilement le signe de multiplication (×) et le signe de division (÷) à l' C# aide du clavier, donc et Visual Basic accepter un astérisque (*) pour la multiplication et une barre oblique (/) pour la Division.
+     Vous ne pouvez pas facilement entrer le signe de multiplication () et le signe de division () à l’aide du clavier, de sorte que C et Visual Basic accepter un astérisque () pour la multiplication et une marque de barre oblique (/) pour la division.
 
 4. Modifiez la dernière partie du gestionnaire d'événements <xref:System.Windows.Forms.Timer.Tick> du minuteur afin que la réponse correcte s'affiche une fois le délai écoulé.
 
@@ -58,10 +58,10 @@ Dans la septième partie de ce didacticiel, vous allez ajouter des problèmes de
      Les personnes interrogées doivent résoudre quatre problèmes pour terminer le questionnaire, comme le montre l'illustration ci-dessous.
 
      ![Questionnaire mathématique avec quatre problèmes](../ide/media/express_finishedquiz.png)<br/>
-***Questionnaire mathématique*** *avec quatre problèmes*
+***Quiz de mathématiques*** *avec quatre problèmes*
 
 ## <a name="to-continue-or-review"></a>Pour continuer ou examiner
 
-- Pour passer à l’étape suivante du didacticiel, consultez **[étape 8 : personnaliser le quiz](../ide/step-8-customize-the-quiz.md)** .
+- Pour passer à l’étape suivante tutoriel, voir **[Step 8: Personnaliser le quiz](../ide/step-8-customize-the-quiz.md)**.
 
 - Pour revenir à l’étape précédente du tutoriel, consultez [Étape 6 : ajouter un problème de soustraction](../ide/step-6-add-a-subtraction-problem.md).

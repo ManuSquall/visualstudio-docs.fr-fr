@@ -18,17 +18,19 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 84b9f9d9d92815d1719f8ba43f4014ef9598e0c4
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 2e95b59b4ccc0bd2df89e45512a5bdd05c027556
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75567136"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "77631092"
 ---
 # <a name="warning-task"></a>Avertissement (tâche)
+
 Enregistre un avertissement durant une génération en fonction d’une instruction conditionnelle évaluée.
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>Paramètres
+
  Le tableau ci-dessous décrit les paramètres de la tâche `Warning` .
 
 | Paramètre | Description |
@@ -36,16 +38,18 @@ Enregistre un avertissement durant une génération en fonction d’une instruct
 | `Code` | Paramètre `String` facultatif.<br /><br /> Code d’avertissement à associer à l’avertissement. |
 | `File` | Paramètre `String` facultatif.<br /><br /> Spécifie le fichier approprié, le cas échéant. Si aucun fichier n’est fourni, le fichier qui contient la tâche d’avertissement (Warning) est utilisé. |
 | `HelpKeyword` | Paramètre `String` facultatif.<br /><br /> Mot clé d’aide à associer à l’avertissement. |
-| `Text` | Paramètre `String` facultatif.<br /><br /> Texte d’avertissement que [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] journalise si le paramètre `Condition` a la valeur `true`. |
+| `Text` | Paramètre `String` facultatif.<br /><br /> Le texte d’avertissement que MSBuild enregistre si le `Condition` paramètre évalue à `true`. |
 
-## <a name="remarks"></a>Notes
- La tâche `Warning` permet aux projets [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] de vérifier la présence d’une configuration requise ou d’une propriété obligatoire avant de passer à l’étape de génération suivante.
+## <a name="remarks"></a>Notes 
+
+ La `Warning` tâche permet aux projets MSBuild de vérifier la présence d’une configuration ou d’une propriété requise avant de passer à l’étape suivante de la construction.
 
  Si le paramètre `Condition` de la tâche `Warning` a la valeur `true`, la valeur du paramètre `Text` est journalisée et la génération se poursuit. Si aucun paramètre `Condition` n’existe, le texte de l’avertissement est journalisé. Pour plus d’informations sur la journalisation, voir [Obtenir des journaux de génération](../msbuild/obtaining-build-logs-with-msbuild.md).
 
- En plus des paramètres énumérés ci-dessus, cette tâche hérite des paramètres de la classe <xref:Microsoft.Build.Tasks.TaskExtension> , qui elle-même hérite de la classe <xref:Microsoft.Build.Utilities.Task> . Pour obtenir la liste de ces paramètres supplémentaires et leurs descriptions, consultez [Classe de base TaskExtension](../msbuild/taskextension-base-class.md).
+ En plus des paramètres énumérés ci-dessus, cette tâche hérite des paramètres de la classe <xref:Microsoft.Build.Tasks.TaskExtension> , qui elle-même hérite de la classe <xref:Microsoft.Build.Utilities.Task> . Pour une liste de ces paramètres supplémentaires et leurs descriptions, voir [TaskExtension classe de base](../msbuild/taskextension-base-class.md).
 
-## <a name="example"></a>Exemple
+## <a name="example"></a> Exemple
+
  L’exemple de code suivant vérifie les propriétés définies sur la ligne de commande. Si aucune propriété n’est définie, le projet déclenche un événement d’avertissement et journalise la valeur du paramètre `Text` de la tâche `Warning`.
 
 ```xml
@@ -63,5 +67,6 @@ Enregistre un avertissement durant une génération en fonction d’une instruct
 ```
 
 ## <a name="see-also"></a>Voir aussi
+
 - [Obtenir des journaux de génération](../msbuild/obtaining-build-logs-with-msbuild.md)
-- [Informations de référence sur le schéma de fichier projet](../msbuild/msbuild-project-file-schema-reference.md)
+- [Référence du schéma de fichier de projet](../msbuild/msbuild-project-file-schema-reference.md)

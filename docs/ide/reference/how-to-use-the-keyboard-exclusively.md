@@ -17,10 +17,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 3b1beb2ccb6b3e3e2b74ed7deaf2f31443ee2466
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75569021"
 ---
 # <a name="how-to-use-the-keyboard-exclusively"></a>Guide pratique pour utiliser uniquement le clavier
@@ -37,21 +37,21 @@ Pour obtenir la liste complète des touches de raccourci de commande de Visual S
 ::: moniker-end
 
 > [!NOTE]
-> Selon vos paramètres ou l’édition de Visual Studio que vous utilisez, les boîtes de dialogue et les commandes de menu que vous voyez peuvent différer de celles qui sont décrites dans l’aide. Pour modifier vos paramètres, choisissez **Importation et exportation de paramètres** dans le menu **Outils** . Pour plus d’informations, consultez [Réinitialiser les paramètres](../environment-settings.md#reset-settings).
+> Selon vos paramètres ou l’édition de Visual Studio que vous utilisez, les boîtes de dialogue et les commandes de menu que vous voyez peuvent différer de celles qui sont décrites dans l’aide. Pour modifier vos paramètres, choisissez **Paramètres d'importation et d'exportation** dans le menu **Outils** . Pour plus d’informations, consultez [Réinitialiser les paramètres](../environment-settings.md#reset-settings).
 
 ## <a name="toolbox-controls"></a>Contrôles de boîte à outils
 
 Pour ajouter un contrôle sur la boîte à outils à un formulaire ou concepteur sans utiliser la souris :
 
-1. Dans la barre de menus, choisissez **Affichage** > **Boîte à outils**.
+1. Sur la barre de menu, choisissez **View** > **Toolbox**.
 
-2. Utilisez les touches **Ctrl**+**Haut** ou **Ctrl**+**Bas** pour vous déplacer parmi les sections de l’onglet **Boîte à outils**.
+2. Utilisez la flèche **Ctrl**+**Up** ou les touches**fléchées** **Ctrl**+Down pour vous déplacer parmi les sections de l’onglet **Toolbox.**
 
 3. Utilisez les touches **Haut** ou **Bas** pour vous déplacer entre les contrôles dans une section.
 
 4. Après avoir sélectionné le contrôle, utilisez la touche **Entrée** pour l’ajouter au formulaire ou au concepteur.
 
-## <a name="dialog-box-options"></a>Options de la boîte de dialogue
+## <a name="dialog-box-options"></a>Options de boîte de dialogue
 
 Pour vous déplacer entre les options d’une boîte de dialogue et modifier les paramètres des options à l’aide du clavier seul :
 
@@ -63,17 +63,17 @@ Pour vous déplacer entre les options d’une boîte de dialogue et modifier les
 
    - Pour les cases à cocher, utilisez la touche **Barre d’espace** pour cocher ou décocher.
 
-   - Pour les listes déroulantes, utilisez **Alt**+**Bas** pour afficher les éléments, puis utilisez **Haut** et **Bas** pour changer l’élément sélectionné.
+   - Pour les listes d’abandon, utilisez la flèche **Alt**+**Down** pour afficher les éléments, puis utilisez la flèche **Up** et les touches de flèche vers le **bas** pour modifier l’élément sélectionné.
 
    - Pour les boutons, appuyez sur **Entrée** pour les actionner.
 
-   - Pour les grilles, utilisez les touches de direction pour naviguer. Pour les listes déroulantes, utilisez **Maj**+**Alt**+**Bas** pour afficher les éléments, puis utilisez **Haut** et **Bas** pour changer l’élément sélectionné.
+   - Pour les grilles, utilisez les touches de direction pour naviguer. Pour les listes d’abandon dans les grilles, utilisez **la**+flèche Shift**Alt**+**Down** pour afficher les éléments, puis utilisez la flèche **Up** et les touches de flèche vers le **bas** pour modifier l’élément sélectionné.
 
 ## <a name="navigate-between-windows-and-files"></a>Naviguer entre fenêtres et fichiers
 
-- Pour vous déplacer entre les fichiers dans un éditeur ou un concepteur, choisissez le raccourci clavier **Ctrl**+**Tab** pour afficher le navigateur de l’IDE avec l’option **Fichiers actifs** sélectionnée. Choisissez la touche **Entrée** pour accéder au fichier mis en surbrillance.
+- Pour vous déplacer entre les fichiers d’un éditeur ou d’un concepteur, choisissez le raccourci clavier **Ctrl**+**Tab** pour afficher le navigateur IDE avec des **fichiers actifs** sélectionnés. Choisissez la touche **Entrée** pour accéder au fichier mis en surbrillance.
 
-- Pour vous déplacer entre les fenêtres d’outils ancrées, choisissez le raccourci clavier **Alt**+**F7** pour afficher le navigateur de l’IDE avec l’option **Fenêtres Outil actives** sélectionnée. Choisissez la touche **Entrée** pour accéder à la fenêtre mise en surbrillance.
+- Pour vous déplacer entre les fenêtres à outils amarrées, choisissez le raccourci clavier **Alt**+**F7** pour afficher le navigateur IDE avec **Active Tool Windows** sélectionné. Choisissez la touche **Entrée** pour accéder à la fenêtre mise en surbrillance.
 
 ## <a name="move-and-dock-tool-windows"></a>Déplacer et ancrer les fenêtres Outil
 
@@ -81,7 +81,7 @@ Pour vous déplacer entre les options d’une boîte de dialogue et modifier les
 
 2. Dans le menu **Fenêtre**, sélectionnez l’option **Ancrable**.
 
-3. Appuyez sur **Alt**+**Barre d’espace**, puis choisissez **Déplacer**.
+3. Appuyez sur **Alt**+**Spacebar**, puis choisissez **Move**.
 
    Le losange d’ancrage s’affiche.
 

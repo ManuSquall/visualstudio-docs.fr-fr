@@ -280,12 +280,14 @@
           href: remote-debugging-aspnet-on-a-remote-iis-computer.md
         - name: Déboguer à distance ASP.NET sur un ordinateur IIS
           href: remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md
-        - name: Déboguer à distance ASP.NET sur Azure
+        - name: Déboguer à distance ASP.NET Core sur Azure
           href: remote-debugging-azure.md
         - name: 'Déboguer à distance un projet C# ou Visual Basic'
           href: remote-debugging-csharp.md
         - name: "Déboguer à distance un projet\_C++"
           href: remote-debugging-cpp.md
+        - name: Déboguer à distance .NET Core sur Linux
+          href: remote-debugging-dotnet-core-linux-with-ssh.md
         - name: Attributions de ports au débogueur distant
           href: remote-debugger-port-assignments.md
         - name: Configurer le pare-feu Windows pour le débogage à distance
@@ -445,7 +447,7 @@
             - name: Inspecter les propriétés XAML en phase de débogage
               href: inspect-xaml-properties-while-debugging.md
             - name: Écrire et déboguer du code XAML en cours d’exécution
-              href: xaml-hot-reload.md
+              href: ../xaml-tools/xaml-hot-reload.md
             - name: Déboguer XAML dans Blend
               href: ../xaml-tools/debug-xaml-in-blend.md?toc=/visualstudio/debugger/toc.json
             - name: HTML et CSS
@@ -505,7 +507,7 @@
                 - name: Inspecter les propriétés XAML en phase de débogage
                   href: inspect-xaml-properties-while-debugging.md
                 - name: Écrire et déboguer du code XAML en cours d’exécution
-                  href: xaml-hot-reload.md
+                  href: ../xaml-tools/xaml-hot-reload.md
                 - name: Utiliser le visualiseur de l’arborescence WPF
                   href: how-to-use-the-wpf-tree-visualizer.md
                 - name: Afficher les informations de trace WPF
@@ -588,9 +590,7 @@
                   items:
                     - name: Débogage de serveurs et de conteneurs COM
                       href: com-server-and-container-debugging.md
-                    - name: Déboguer des clients et des serveurs COM à l’aide du débogage RPC
-                      href: how-to-debug-com-clients-and-servers-using-rpc-debugging.md
-                - name: Contrôle ActiveX
+                - name: ActiveX (contrôle)
                   items:
                     - name: Déboguer un contrôle ActiveX
                       href: how-to-debug-an-activex-control.md

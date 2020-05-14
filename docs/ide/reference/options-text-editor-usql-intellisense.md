@@ -11,15 +11,15 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 04f7a66884238856ba6988b9f1e8c648f4ff1d16
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "72666652"
 ---
 # <a name="options-text-editor-u-sql-intellisense"></a>Options, Éditeur de texte, U-SQL, IntelliSense
 
-Utilisez la page d’options **IntelliSense** pour modifier certains paramètres de l’éditeur de texte pour U-SQL. Pour accéder à cette page d’options, choisissez **Outils** > **Options**, puis **Éditeur de texte** > **U-SQL** > **IntelliSense**.
+Utilisez la page d’options **IntelliSense** pour modifier certains paramètres de l’éditeur de texte pour U-SQL. Pour accéder à cette page d’options, choisissez **Tools** > **Options**, puis choisissez Text **Editor** > **U-SQL** > **IntelliSense**.
 
 ## <a name="intellisense-settings"></a>Paramètres IntelliSense
 
@@ -29,7 +29,7 @@ Cochez une case pour activer **Info Express** ou **Intellisense**. Info Express 
 
 - **Afficher la liste de saisie semi-automatique après la saisie d’un caractère**
 
-   Quand cette option est sélectionnée et que vous commencez à taper, IntelliSense affiche automatiquement la liste de saisie semi-automatique. Si vous ne sélectionnez pas cette option, vous pouvez utiliser la saisie semi-automatique IntelliSense à partir du menu IntelliSense ou en appuyant sur **Ctrl** + **Espace**.
+   Quand cette option est sélectionnée et que vous commencez à taper, IntelliSense affiche automatiquement la liste de saisie semi-automatique. Si vous ne sélectionnez pas cette option, l’achèvement d’IntelliSense est toujours disponible sur le menu IntelliSense ou en appuyant sur **Ctrl** + **Spacebar**.
 
 - **Placer les mots clés dans les listes de saisie semi-automatique**
 
@@ -55,5 +55,5 @@ Cochez une case pour activer **Info Express** ou **Intellisense**. Info Express 
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Général, Environnement, boîte de dialogue Options](../../ide/reference/general-environment-options-dialog-box.md)
-- [Utilisation de la fonctionnalité IntelliSense](../../ide/using-intellisense.md)
+- [Général, Environnement, Options Dialog Box](../../ide/reference/general-environment-options-dialog-box.md)
+- [Using IntelliSense](../../ide/using-intellisense.md)

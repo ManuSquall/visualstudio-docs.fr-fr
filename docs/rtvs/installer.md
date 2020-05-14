@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - data-science
 ms.openlocfilehash: 15b8a91c0b29b71b85ee5f82dc3b8d662c80549e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "62581164"
 ---
 # <a name="welcome-to-r-tools-for-visual-studio"></a>Bienvenue dans Outils R pour Visual Studio
@@ -24,7 +24,7 @@ Nous vous remercions d’avoir installé Outils R pour Visual Studio (RTVS). Fa
 ## <a name="resources"></a>Ressources
 
 - [Documentation](index.md)
-- [Comment installer Outils R pour Visual Studio](installing-r-tools-for-visual-studio.md)
+- [Comment installer Outils R pour Visual Studio](installing-r-tools-for-visual-studio.md)
 - [Envoyer des bogues et des demandes de fonctionnalités à GitHub et les passer en revue](https://github.com/Microsoft/RTVS/issues)
 - [Explorer le code source et y contribuer](https://github.com/Microsoft/RTVS/blob/master/LICENSE)
 - Pour envoyer des commentaires sans passer par GitHub (méthode préférée), utilisez le menu **Outils R > Commentaires** dans Visual Studio.
@@ -33,6 +33,6 @@ Nous vous remercions d’avoir installé Outils R pour Visual Studio (RTVS). Fa
 
 RTVS prend en charge CRAN R et les distributions R de Microsoft, notamment la version de R distribuée avec SQL Server 2016. Les liens suivants fournissent d’autres informations sur les différentes distributions R de Microsoft :
 
-- [Microsoft R Open](https://mran.microsoft.com/download/)
-- [Microsoft R Client](/machine-learning-server/r-client/what-is-microsoft-r-client)
+- [Microsoft R Open](https://mran.microsoft.com/download/)
+- [Microsoft R Client](/machine-learning-server/r-client/what-is-microsoft-r-client)
 - [Microsoft Machine Learning Server (anciennement R Server)](/machine-learning-server/)

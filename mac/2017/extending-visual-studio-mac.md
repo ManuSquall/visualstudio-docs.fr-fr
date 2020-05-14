@@ -7,10 +7,10 @@ ms.date: 04/14/2017
 ms.technology: vs-ide-sdk
 ms.assetid: D5245AB0-8404-426B-B538-F49125E672B2
 ms.openlocfilehash: 29c5bb9c45ae8d859316bd9c63eec10a6a425571
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "75851956"
 ---
 # <a name="extending-visual-studio-for-mac"></a>Extension de Visual Studio pour Mac
@@ -23,12 +23,12 @@ Pour personnaliser Visual Studio pour Mac, vous pouvez créer un package d’ext
 
 ![Architecture des compléments](media/extending-visual-studio-mac-addin1.png)
 
-Pour qu’un package d’extension soit créé à partir de Visual Studio pour Mac, il doit avoir des extensions qui sont créées à partir de points d’extension préexistants dans l’IDE Visual Studio pour Mac. Quand un package d’extension s’appuie sur un point d’extension défini dans un hôte de compléments, il a une _dépendance_ par rapport au package d’extension.
+Pour qu’un package d’extension soit créé à partir de Visual Studio pour Mac, il doit avoir des extensions qui sont créées à partir de points d’extension préexistants dans l’IDE Visual Studio pour Mac. Lorsqu’un paquet d’extension repose sur un point d’extension défini dans un hôte add-in, il est dit avoir une _dépendance_ à ce paquet d’extension.
 
 L’avantage de cette conception modulaire est que Visual Studio pour Mac est extensible : il existe de nombreux points d’extension sur lesquels peuvent être créés des packages d’extension personnalisés. La prise en charge de C# et de F#, des outils de débogage et des modèles de projet sont des exemples de packages d’extension existants.
 
 > [!NOTE]
-> Si vous avez un projet de création de compléments qui a été créé avant Add-in Maker 1,2, vous devez migrer votre projet comme indiqué dans les étapes [ci-dessous](https://mhut.ch/addinmaker/1.2).
+> Si vous avez un projet Add-in Maker créé avant Add-in Maker 1.2, vous devez migrer votre projet comme indiqué dans les étapes décrites [ici](https://mhut.ch/addinmaker/1.2).
 
 <!---The [Walkthrough](~/extending-visual-studio-mac-walkthrough.md) topic explains how to build an extension package that uses a *Command* to insert the date and time into an open text document.--->
 
@@ -155,7 +155,7 @@ Pour plus d’informations sur l’étendue de ce qui peut faire l’objet de d�
 * Versions cibles de .NET Framework
 * Runtime cible
 * Back-ends de système de contrôle de version
-* Refactoring
+* Refactorisation
 * Gestionnaires d’exécution
 * Mise en surbrillance de la syntaxe
 

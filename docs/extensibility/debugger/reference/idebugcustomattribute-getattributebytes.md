@@ -1,5 +1,5 @@
 ---
-title: IDebugCustomAttribute::GetAttributeBytes | Microsoft Docs
+title: IDebugCustomAttribute::GetAttributeBytes (fr) Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugCustomAttribute::GetAttributeBytes
 ms.assetid: cf34583b-6530-4dcc-89f8-eb27e4e8d594
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 551261414db9fab97f3e8c2a8fdbe518143d79c5
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 621ebf3949a273e06053ced67209aa052c25bce0
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66315195"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80732798"
 ---
 # <a name="idebugcustomattributegetattributebytes"></a>IDebugCustomAttribute::GetAttributeBytes
-Obtient les informations d’attribut comme un objet blob d’octets.
+Obtient l’information d’attribut comme un blob d’octets.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -43,16 +43,16 @@ int GetAttributeBytes(
 
 ## <a name="parameters"></a>Paramètres
 `ppBlob`\
-[in, out] Tableau qui contient les octets de l’attribut.
+[dans, dehors] Un tableau qui est rempli avec les octets attribut.
 
 `pdwLen`\
-[in, out] Spécifie le nombre maximal d’octets à renvoyer dans le `ppBlob` de tableau et retourne le nombre d’octets réellement écrits dans le tableau.
+[dans, dehors] Spécifie le nombre maximum d’octets à revenir dans le `ppBlob` tableau et retourne le nombre d’octets effectivement écrits sur le tableau.
 
 ## <a name="return-value"></a>Valeur de retour
- En cas de réussite, retourne S_OK ; Sinon, retourne un code d’erreur.
+ En cas de succès, les retours S_OK; autrement, renvoie un code d’erreur.
 
 ## <a name="remarks"></a>Notes
- Définir le `ppBlob` des attributs de paramètre à une valeur null pour retourner le nombre d’octets disponibles. Allouez un tableau, puis passer ce tableau dans pour la `ppBlob` paramètre.
+ Définissez `ppBlob` le paramètre à une valeur nulle pour retourner le nombre d’octets d’attributs disponibles. Ensuite, allouez un tableau et `ppBlob` passez ce tableau pour le paramètre.
 
  Les octets d’attribut représentent les données brutes de l’attribut personnalisé.
 

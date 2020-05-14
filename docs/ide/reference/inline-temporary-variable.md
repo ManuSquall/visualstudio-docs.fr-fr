@@ -11,10 +11,10 @@ dev_langs:
 ms.workload:
 - dotnet
 ms.openlocfilehash: 8f0199436f5f9b1013a4c49cfb5909e760c73dcc
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75568865"
 ---
 # <a name="inline-a-temporary-variable-refactoring"></a>Inclure une variable temporaire (refactorisation)
@@ -23,7 +23,7 @@ Cette refactorisation s’applique à :
 
 - C#
 
-- Visual Basic
+- Visual Basic
 
 **Quoi :** vous permet de supprimer une variable temporaire et de la remplacer par sa valeur.
 
@@ -31,7 +31,7 @@ Cette refactorisation s’applique à :
 
 **Pourquoi :** la suppression d’une variable temporaire peut faciliter la lecture du code.
 
-## <a name="how-to"></a>Procédure
+## <a name="how-to"></a>Procédures
 
 1. Mettez en surbrillance ou placez le curseur dans la variable temporaire à inclure :
 
@@ -46,7 +46,7 @@ Cette refactorisation s’applique à :
 2. Effectuez ensuite l'une des opérations suivantes :
 
    - **Clavier**
-      - Appuyez sur **Ctrl**+ **.** pour afficher le menu **Actions rapides et refactorisations**.
+      - Appuyez **sur Ctrl**+**.** pour afficher le menu **Actions rapides et refactorisations**.
    - **Souris**
       - Cliquez avec le bouton droit sur le code et sélectionnez le menu **Actions rapides et refactorisations**.
 

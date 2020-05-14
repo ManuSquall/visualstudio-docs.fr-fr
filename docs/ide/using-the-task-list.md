@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: db39850350f99e6c046996f6408973cbc6543868
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75594225"
 ---
 # <a name="use-the-task-list"></a>Utiliser la liste des tâches
@@ -32,17 +32,17 @@ Avec la **liste des tâches** , effectuez le suivi des commentaires de code qui 
 
 Quand la **Liste des tâches** est ouverte, elle apparaît en bas de la fenêtre d’application.
 
-Pour ouvrir la **liste des tâches**, sélectionnez **Affichage** > **Liste des tâches** ou utilisez le raccourci clavier **Ctrl**+ **\\** ,**T**.
+Pour ouvrir la **liste des tâches**, sélectionnez **Affichage** > **Liste des tâches** ou utilisez le raccourci clavier **Ctrl**+**\\**,**T**.
 
 ![Fenêtre Liste des tâches](../ide/media/vs2015_task_list.png)
 
-Pour modifier l’ordre de tri de la liste, sélectionnez l’en-tête d’une colonne. Pour affiner vos résultats de recherche, appuyez sur **Maj** et cliquez sur un deuxième en-tête de colonne. Comme alternative, dans le menu contextuel, vous pouvez sélectionner **Trier par**, puis choisir un en-tête. Pour affiner vos résultats de recherche, appuyez sur **Maj** et choisissez un deuxième en-tête.
+Pour modifier l’ordre de tri de la liste, sélectionnez l’en-tête d’une colonne. Pour affiner davantage vos résultats de recherche, appuyez sur **Shift** et cliquez sur un en-tête de deuxième colonne. Comme alternative, dans le menu contextuel, vous pouvez sélectionner **Trier par**, puis choisir un en-tête. Pour affiner vos résultats de recherche, appuyez sur **Maj** et choisissez un deuxième en-tête.
 
 Pour afficher ou masquer des colonnes, dans le menu contextuel, choisissez **Afficher les colonnes**. Sélectionnez les colonnes que vous souhaitez afficher ou masquer.
 
 Pour modifier l’ordre des colonnes, faites glisser un en-tête de colonne vers l’emplacement souhaité.
 
-## <a name="user-tasks"></a>Tâches utilisateur
+## <a name="user-tasks"></a>Tâches de l’utilisateur
 
 La fonctionnalité des tâches utilisateur n’est plus disponible dans Visual Studio 2015. Quand vous ouvrez une solution qui contient des données de tâches utilisateur ayant été créées dans Visual Studio 2013 ou une version antérieure, ces données sont conservées dans votre fichier *.suo*, mais les tâches utilisateur ne s’affichent pas dans la liste des tâches.
 
@@ -73,7 +73,7 @@ Par défaut, Visual Studio inclut les jetons suivants : `HACK`, `TODO`, `UNDONE`
 
 Pour créer un jeton personnalisé :
 
-1. Dans le menu **Outils** , choisissez **Options**.
+1. Dans le menu **Outils**, choisissez **Options**.
 
 2. Ouvrez le dossier **Environnement** , puis choisissez **Liste des tâches**.
 
@@ -85,7 +85,7 @@ Pour créer un jeton personnalisé :
 
 4. Dans la liste déroulante **Priorité** , choisissez une priorité par défaut pour le nouveau jeton.
 
-5. Sélectionnez **Ajouter**.
+5. Choisissez **Ajouter**.
 
 > [!TIP]
 > Le bouton **Ajouter** devient disponible dès que vous entrez un nom. Vous devez entrer un nom avant de cliquer sur **Ajouter**.
@@ -94,7 +94,7 @@ Pour créer un jeton personnalisé :
 
 Par défaut, les commentaires TODO C++ sont affichés dans **Liste des tâches**.
 
-Pour désactiver les commentaires TODO C++, dans le menu **Outils**, choisissez **Options** > **Éditeur de texte** > **C/C++**  > **Affichage** > **Énumérer les tâches de commentaire** et définissez la valeur sur **false**.
+Pour désactiver les commentaires TODO C++, dans le menu **Outils**, choisissez **Options** > **Éditeur de texte** > **C/C++** > **Affichage** > **Énumérer les tâches de commentaire** et définissez la valeur sur **false**.
 
 ## <a name="shortcuts"></a>Raccourcis
 
@@ -104,11 +104,11 @@ Un *raccourci* est un signet dans le code qui est suivi dans la **liste des tâc
 
 ### <a name="create-a-shortcut"></a>Créer un raccourci
 
-Pour créer un raccourci, insérez le pointeur dans le code à l’emplacement souhaité du nouveau raccourci. Choisissez **Edition** > **Signets** > **Ajouter un raccourci vers la liste des tâches** ou appuyez sur **Ctrl**+**K**, **Ctrl**+**H**.
+Pour créer un raccourci, insérez le pointeur dans le code à l’emplacement souhaité du nouveau raccourci. Choisissez **Edit** > **Bookmarks** > **Ajouter Task List Shortcut** ou appuyez sur **Ctrl**+**K**, **Ctrl**+**H**.
 
 Pour parcourir les raccourcis figurant dans le code, choisissez un raccourci dans la liste, puis **Tâche suivante** ou **Tâche précédente** dans le menu contextuel.
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Liste des tâches, Environnement, boîte de dialogue Options](../ide/reference/task-list-environment-options-dialog-box.md)
+- [Liste des tâches, Environnement, Boîte de dialogue Options](../ide/reference/task-list-environment-options-dialog-box.md)
 - [Commentaires de tâche (Visual Studio pour Mac)](/visualstudio/mac/task-comments)

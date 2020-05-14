@@ -1,5 +1,5 @@
 ---
-title: IDebugProgramCreateEvent2 | Microsoft Docs
+title: IDebugProgramCreateEvent2 - France Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProgramCreateEvent2 interface
 ms.assetid: b19a7934-6179-4a68-9075-bd7dcd640b05
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8081e05d18719af060ddf58045c06ec64036ae35
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 78088d6e5da61c32302c13b08143c9ed902452e2
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66331449"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80722632"
 ---
 # <a name="idebugprogramcreateevent2"></a>IDebugProgramCreateEvent2
-Cette interface est envoyée par le moteur de débogage (dé) pour le Gestionnaire de session de débogage (SDM) lorsqu’un programme est attaché à.
+Cette interface est envoyée par le moteur de débogé (DE) au gestionnaire de débogé de session (SDM) lorsqu’un programme est attaché à.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -28,21 +28,21 @@ Cette interface est envoyée par le moteur de débogage (dé) pour le Gestionnai
 IDebugProgramCreateEvent2 : IUnknown
 ```
 
-## <a name="notes-for-implementers"></a>Notes de publication pour les implémenteurs
- L’Allemagne ou le fournisseur de port personnalisé implémente cette interface pour signaler qu’un programme a été créé, généralement au moment où que le programme est attaché au. Le [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) interface doit être implémentée sur le même objet que cette interface. Le SDM utilise le `QueryInterface` méthode pour accéder à la `IDebugEvent2` interface.
+## <a name="notes-for-implementers"></a>Notes pour les implémenteurs
+ Le DE ou le fournisseur de port personnalisé implémente cette interface pour signaler qu’un programme a été créé, généralement au moment où le programme est attaché à. [L’interface IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) doit être implémentée sur le même objet que cette interface. Le SDM `QueryInterface` utilise la `IDebugEvent2` méthode pour accéder à l’interface.
 
-## <a name="notes-for-callers"></a>Notes de publication pour les appelants
- L’Allemagne ou le fournisseur de port personnalisé crée et envoie cet objet d’événement pour signaler la création d’un programme. Le D’envoie cet événement à l’aide de la [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) fonction de rappel qui est fournie par le SDM lorsqu’il est attaché au programme en cours de débogage. Le fournisseur de port personnalisé envoie cet événement à l’aide de la [IDebugPortEvents2](../../../extensibility/debugger/reference/idebugportevents2.md) interface.
+## <a name="notes-for-callers"></a>Notes pour les appelants
+ Le DE ou le fournisseur de port personnalisé crée et envoie cet objet d’événement pour signaler la création d’un programme. Le DE envoie cet événement en utilisant la fonction de rappel [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) qui est fournie par le SDM lorsqu’il est attaché au programme étant débogé. Le fournisseur de porto personnalisé envoie cet événement à l’aide de l’interface [IDebugPortEvents2.](../../../extensibility/debugger/reference/idebugportevents2.md)
 
 ## <a name="remarks"></a>Notes
- L’Allemagne ou le fournisseur de port personnalisé publie une nouvelle [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) interface en appelant [PublishProgramNode](../../../extensibility/debugger/reference/idebugprogrampublisher2-publishprogramnode.md).
+ Le fournisseur de port DE ou personnalisé publie une nouvelle interface [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) en appelant [PublishProgramNode](../../../extensibility/debugger/reference/idebugprogrampublisher2-publishprogramnode.md).
 
-## <a name="requirements"></a>Configuration requise
- En-tête : msdbg.h
+## <a name="requirements"></a>Spécifications
+ En-tête: msdbg.h
 
- Espace de noms : Microsoft.VisualStudio.Debugger.Interop
+ Namespace: Microsoft.VisualStudio.Debugger.Interop
 
- Assembly : Microsoft.VisualStudio.Debugger.Interop.dll
+ Assemblage: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>Voir aussi
 - [Interfaces de base](../../../extensibility/debugger/reference/core-interfaces.md)

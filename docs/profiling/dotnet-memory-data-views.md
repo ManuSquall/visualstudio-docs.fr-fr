@@ -13,21 +13,21 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 7e74027512eba0d64593133a3bbe758570cbf567
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74779270"
 ---
 # <a name="net-memory-data-views"></a>Vues des données de la mémoire .NET
 Cette section contient des informations de référence sur les vues et les rapports des fichiers de données du profileur qui comprennent des données de profilage de mémoire .NET.
 
-## <a name="in-this-section"></a>Dans cette section
-- [Mode Résumé](../profiling/summary-view-dotnet-memory-data.md)
+## <a name="in-this-section"></a>Contenu de cette section
+- [Vue sommaire](../profiling/summary-view-dotnet-memory-data.md)
 
  Répertorie les fonctions et les types qui ont alloué le plus de mémoire.
 
-- [Allocations, vue](../profiling/dotnet-memory-allocations-view.md)
+- [Vue Allocations](../profiling/dotnet-memory-allocations-view.md)
 
  Répertorie les types alloués lors de l’exécution du profilage, ainsi que les arborescences des appels (chemins d’exécution) qui ont provoqué l’allocation du type.
 
@@ -51,15 +51,15 @@ Cette section contient des informations de référence sur les vues et les rappo
 
  Répertorie les données d’allocation de mémoire des fonctions lors de l’exécution du profilage.
 
-- [Lignes, vue - Échantillonnage](../profiling/lines-view-dotnet-memory-sampling-data.md)
+- [Vue Lignes - Échantillonnage](../profiling/lines-view-dotnet-memory-sampling-data.md)
 
  Répertorie les données d’allocation de mémoire des lignes de code source lors de l’exécution du profilage.
 
-- [Pointeurs d’instruction (IP), vue - Échantillonnage](../profiling/instruction-pointers-ips-view-dotnet-memory-sampling-data.md)
+- [Vue Pointeurs d’instruction (IP) - Échantillonnage](../profiling/instruction-pointers-ips-view-dotnet-memory-sampling-data.md)
 
  Répertorie les données d’allocation de mémoire des instructions de fonctions lors de l’exécution du profilage.
 
-- [Vue Arborescence des appels - Instrumentation](../profiling/call-tree-view-dotnet-memory-instrumentation-data.md)
+- [Call Tree View - Instrumentation](../profiling/call-tree-view-dotnet-memory-instrumentation-data.md)
 
  Affiche une arborescence hiérarchique qui représente les chemins d’exécution, les données d’allocation de mémoire et les données de minutage détaillées des fonctions instrumentées de l’exécution du profilage.
 
@@ -75,12 +75,12 @@ Cette section contient des informations de référence sur les vues et les rappo
 
  Répertorie les données d’allocation de mémoire des fonctions instrumentées lors de l’exécution du profilage.
 
-## <a name="reference"></a>Reference
+## <a name="reference"></a>Informations de référence
 - [Vue Informations relatives à la fonction](../profiling/function-details-view.md)
 
  Affiche un graphique de la relation qui existe entre une fonction sélectionnée et les fonctions qui l’ont appelée et qui ont été appelées par celle-ci.
 
-- [Processus, vue](../profiling/process-view.md)
+- [Vue Processus](../profiling/process-view.md)
 
  Répertorie les heures de début et de fin des processus et des threads.
 
@@ -88,7 +88,7 @@ Cette section contient des informations de référence sur les vues et les rappo
 
  Répertorie les événements ETW et les événements d’échantillonnage insérés dans un fichier de données de profilage.
 
-## <a name="related-sections"></a>Rubriques connexes
+## <a name="related-sections"></a>Sections connexes
 - [Vues de données de la méthode d’échantillonnage](../profiling/profiler-sampling-method-data-views.md)
 
  Informations de référence pour les vues et rapports des fichiers de données du profileur générés à l’aide de la méthode d’échantillonnage.

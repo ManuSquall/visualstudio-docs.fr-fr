@@ -18,17 +18,17 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 6883e556cd70adddd45fd442d338e10d1cafa1e2
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
-ms.translationtype: HT
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/09/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "68926199"
 ---
 # <a name="property-pages-javascript"></a>Pages de propriétés, JavaScript
 
 **Pages de propriétés** donne accès aux paramètres du projet. Vous pouvez utiliser les pages qui s’affichent dans les **Pages de propriétés** pour modifier les propriétés d’un projet.
 
-Pour accéder aux propriétés d’un projet, sélectionnez un nœud de projet dans l’**Explorateur de solutions**. Dans le menu **Projet**, cliquez sur **Propriétés**.
+Pour accéder aux propriétés d’un projet, sélectionnez un nœud de projet dans l’**Explorateur de solutions**. Dans le menu **Projet** , cliquez sur **Propriétés**.
 
 [!INCLUDE[note_settings_general](../../data-tools/includes/note_settings_general_md.md)]
 
@@ -40,11 +40,11 @@ Utilisez les options suivantes pour sélectionner la configuration et la platefo
 
  **Configuration**
 
-Spécifie les paramètres de configuration à afficher ou à modifier. Les valeurs sont **Debug** (valeur par défaut), **Release**, **Toutes les configurations** ou une configuration définie par l’utilisateur. Pour plus d'informations, voir [Procédure : Définir des configurations de débogage et de publication dans Visual Studio](../../debugger/how-to-set-debug-and-release-configurations.md).
+Spécifie les paramètres de configuration à afficher ou à modifier. Les valeurs sont **Debug** (valeur par défaut), **Release**, **Toutes les configurations** ou une configuration définie par l’utilisateur. Pour plus d’informations, consultez [Guide pratique pour définir des configurations Debug et Release dans Visual Studio](../../debugger/how-to-set-debug-and-release-configurations.md).
 
  **Plateforme**
 
-Spécifie les paramètres de plateforme à afficher ou à modifier. Les valeurs sont **Any CPU** (valeur par défaut pour les applications [!INCLUDE[win8_appname_long](../../debugger/includes/win8_appname_long_md.md)]), **x64**, **ARM**, **x86** ou une plateforme définie par l’utilisateur. Pour plus d'informations, voir [Procédure : Définir des configurations de débogage et de publication dans Visual Studio](../../debugger/how-to-set-debug-and-release-configurations.md).
+Spécifie les paramètres de plateforme à afficher ou à modifier. Les valeurs sont **Any CPU** (valeur par défaut pour les applications [!INCLUDE[win8_appname_long](../../debugger/includes/win8_appname_long_md.md)]), **x64**, **ARM**, **x86** ou une plateforme définie par l’utilisateur. Pour plus d’informations, consultez [Guide pratique pour définir des configurations Debug et Release dans Visual Studio](../../debugger/how-to-set-debug-and-release-configurations.md).
 
 ## <a name="general-page"></a>Page Général
 
@@ -57,9 +57,9 @@ Utilisez les options suivantes pour définir les propriétés générales du pro
 
 Spécifie l'emplacement des fichiers de sortie pour la configuration du projet. Le chemin d'accès est relatif. Si vous entrez un chemin d'accès absolu, le chemin d'accès absolu est enregistré dans le projet. Le chemin d'accès par défaut est bin\Debug.
 
-Quand vous utilisez des configurations de build simplifiées, le système de projet détermine s’il faut générer une version Debug ou une version Release. Quand vous cliquez sur **Déboguer** > **Démarrer le débogage** (ou que vous appuyez sur **F5**), la build est placée à l’emplacement de débogage, indépendamment du **Chemin de sortie** que vous spécifiez. Cependant, la commande **Générer la solution** du menu **Générer** la place à l’emplacement que vous spécifiez. Pour activer les configurations de build avancées, dans la barre de menus, choisissez **Outils** > **Options**. Dans la boîte de dialogue **Options**, développez **Projets et solutions**, sélectionnez **Général**, puis décochez la case **Afficher les configurations de build avancées**. Vous pouvez ainsi contrôler manuellement toutes les valeurs de configuration et s’il faut générer une version Debug ou Release.
+Quand vous utilisez des configurations de build simplifiées, le système de projet détermine s’il faut générer une version Debug ou une version Release. Lorsque vous cliquez sur **Debug** > **Démarrer Debugging** (ou appuyez sur **F5**), la construction est mise dans l’emplacement de déboguer indépendamment du chemin de **sortie** que vous spécifiez. Cependant, la commande **Générer la solution** du menu **Générer** la place à l’emplacement que vous spécifiez. Pour activer des configurations de construction avancées, sur la barre de menu, choisissez **Tools** > **Options**. Dans la boîte de dialogue **Options**, développez **Projets et solutions**, sélectionnez **Général**, puis décochez la case **Afficher les configurations de build avancées**. Vous pouvez ainsi contrôler manuellement toutes les valeurs de configuration et s’il faut générer une version Debug ou Release.
 
- **Langue par défaut**
+ **Langue par défaut**
 
 Spécifie la langue par défaut pour le projet. L’option de langue sélectionnée dans **Horloge, langue et région** dans le Panneau de configuration spécifie la langue préférée de l’utilisateur. En spécifiant une langue par défaut pour le projet, vous garantissez que les ressources linguistiques par défaut spécifiées sont utilisées si la langue préférée de l’utilisateur ne correspond pas aux ressources linguistiques fournies dans l’application.
 
@@ -70,7 +70,7 @@ Utilisez les options suivantes pour définir les propriétés du comportement du
 > [!NOTE]
 > Certaines options sont disponibles seulement dans les applications UWP.
 
- **Débogueur à lancer**
+ **Debugger à lancer**
 
 Spécifie l'hôte par défaut pour le débogueur.
 
@@ -96,6 +96,6 @@ Spécifie si l'accès à l'adresse de bouclage IP est autorisé pour tester les 
 
 Spécifie le nom de l'ordinateur distant pour héberger le débogueur. Cette propriété est disponible seulement si la propriété **Débogueur à lancer** est définie sur **Ordinateur distant**.
 
-**Exiger une authentification**
+**Exiger l’authentification**
 
 Spécifie si l'ordinateur distant requiert l'authentification. Cette propriété est disponible seulement si la propriété **Débogueur à lancer** est définie sur **Ordinateur distant**.

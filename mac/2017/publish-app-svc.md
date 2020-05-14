@@ -12,17 +12,17 @@ ms.custom: video
 ms.workload:
 - azure
 ms.openlocfilehash: 97964589b832b05f4d528a801a1899eeb8385883
-ms.sourcegitcommit: ba0fef4f5dca576104db9a5b702670a54a0fcced
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/07/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "73714462"
 ---
 # <a name="publish-a-web-app-to-azure-app-service-using-visual-studio-for-mac"></a>Publier une application web sur Azure App Service à l’aide de Visual Studio pour Mac
 
 Vous pouvez utiliser l’outil Publier pour publier des applications ASP.NET Core sur Azure App Service.
 
-## <a name="prerequisites"></a>Configuration requise
+## <a name="prerequisites"></a>Conditions préalables requises
 
 - [Visual Studio 2017 pour Mac](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs4mac2017) installé et ASP.NET Core activé.
 - Un abonnement Azure. Si vous n’avez pas encore d’abonnement, [inscrivez-vous gratuitement](https://azure.microsoft.com/free/dotnet/) et bénéficiez de 200 $ de crédit pendant 30 jours et de 12 mois de services gratuits.
@@ -56,7 +56,7 @@ Vous pouvez utiliser l’outil Publier pour publier des applications ASP.NET Cor
 
     Vous pouvez changer l’abonnement auquel le service d’application est associé à l’aide de la liste déroulante **Abonnement**.
 
-    Vous pouvez sélectionner un **groupe de ressources** existant à l’aide de la liste déroulante ou en créer un autre à l’aide du bouton **+** .
+    Vous pouvez sélectionner un **groupe de ressources** existant à l’aide de la liste déroulante ou en créer un autre à l’aide du bouton **+**.
 
     Pour le plan App Service, sélectionnez un plan existant, ou créez-en un en sélectionnant la case d’option **Personnalisé**.
 

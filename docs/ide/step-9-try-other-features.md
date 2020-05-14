@@ -5,22 +5,22 @@ ms.topic: tutorial
 ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
 ms.assetid: 1b0c5c80-e5a6-4f69-a4a4-0e89a82d4de0
-author: TerryGLee
-ms.author: tglee
+author: ornellaalt
+ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 07c0a3e24ac089bf29501dfd4e101baef73318fb
-ms.sourcegitcommit: 4f82de3fb0cfae226aef1abb40c47e63d2036a5c
+ms.openlocfilehash: 32ac2f1977bb0b8b391651ed7ed459b9dc560330
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72919137"
+ms.lasthandoff: 03/20/2020
+ms.locfileid: "77579733"
 ---
 # <a name="step-9-try-other-features"></a>Étape 9 : tester d'autres fonctionnalités
 Pour découvrir d'autres fonctionnalités, essayez de modifier les icônes et les couleurs, d'ajouter une horloge de jeu et d'ajouter des sons. Pour augmenter la difficulté du jeu, essayez d'agrandir la taille du plateau et d'ajuster la minuterie.
 
-Pour télécharger une version complète de l’exemple, consultez [Exemple complet de tutoriel de création d’un jeu de combinaisons](https://code.msdn.microsoft.com/Complete-Matching-Game-4cffddba).
+Pour télécharger une version complète de l’échantillon, voir [l’échantillon de tutoriel de jeu de correspondance complète](https://code.msdn.microsoft.com/Complete-Matching-Game-4cffddba).
 
 ## <a name="to-try-other-features"></a>Pour essayer d’autres fonctionnalités
 
@@ -48,6 +48,6 @@ Pour télécharger une version complète de l’exemple, consultez [Exemple comp
 
 ## <a name="to-continue-or-review"></a>Pour continuer ou examiner
 
-- Des ressources vidéo d'apprentissage efficaces et gratuites sont à votre disposition. Pour en savoir plus sur la programmation en Visual Basic, consultez [Notions de base de Visual Basic : développement pour grands débutants](https://channel9.msdn.com/Series/Visual-Basic-Development-for-Absolute-Beginners). Pour en savoir plus sur la C#programmation dans, consultez [ C# notions de base : développement pour les débutants](https://channel9.msdn.com/Series/C-Sharp-Fundamentals-Development-for-Absolute-Beginners).
+- Des ressources vidéo d'apprentissage efficaces et gratuites sont à votre disposition. Pour en savoir plus sur la programmation en Visual Basic, consultez [Notions de base de Visual Basic : développement pour grands débutants](https://channel9.msdn.com/Series/Visual-Basic-Development-for-Absolute-Beginners). Pour en savoir plus sur la programmation dans le domaine de la programmation, consultez [les principes fondamentaux de CMD : Développement pour les débutants absolus.](https://channel9.msdn.com/Series/C-Sharp-Fundamentals-Development-for-Absolute-Beginners)
 
 - Pour revenir à l’étape précédente du tutoriel, consultez [Étape 8 : ajouter une méthode pour vérifier si le joueur a gagné](../ide/step-8-add-a-method-to-verify-whether-the-player-won.md).

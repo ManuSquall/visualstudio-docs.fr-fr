@@ -1,17 +1,18 @@
 ---
 title: Anonymisation des données des abonnés Visual Studio | Microsoft Docs
 author: evanwindom
-ms.author: lank
+ms.author: v-evwin
 manager: lank
+ms.assetid: ce5fc8a4-484c-4df6-97c3-cb60174fb66b
 ms.date: 02/20/2020
 ms.topic: conceptual
 description: Découvrez comment les données des abonnés sont anonymisées quand l’accès aux abonnements est perdu.
-ms.openlocfilehash: f3a35448dd0befbbb91f1657dd62b2b99ff37a2a
-ms.sourcegitcommit: 3c105990656cd509062ce60e52e776c794f6305d
+ms.openlocfilehash: b65673d2fe61f62bf9e7731d20763bcd8c6f74bf
+ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "77520837"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "80232740"
 ---
 # <a name="anonymization-of-visual-studio-subscriber-information"></a>Anonymisation des informations sur les abonnés Visual Studio
 Quand un événement (par exemple l’expiration d’un abonnement ou la suppression du compte de connexion d’un abonné) bloque l’utilisation d’un abonnement par un abonné, les informations personnelles de l’utilisateur, telles que son nom et son compte de connexion, sont brouillées afin de les rendre inutilisables.  Le but est de protéger les informations personnelles de l’abonné.
@@ -23,7 +24,7 @@ Les événements qui rendent un abonnement inutilisable par un abonné déclench
 
 | Type d'abonnement                                                                                                                       | Événement déclenchant l’anonymisation                                                                                                     | Délai au-delà duquel l’anonymisation a lieu |
 |-----------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------|---------------------------|
-| Visual Studio Dev Essentials                                                                                                            | L’abonné annule son adhésion au programme ou n’accepte pas les conditions d’utilisation                                    | 30 jours               |
+| Visual Studio Dev Essentials                                                                                                            | L’abonné annule son adhésion au programme ou n’accepte pas les conditions d’utilisation                                    | 30 jours               |
 | Abonnements Visual Studio achetés par le biais du Microsoft Store (vente au détail)                                                                      | L’abonnement arrive à expiration ou n’est pas activé                                                                   | 360 jours                  |
 | Abonnements Visual Studio acquis par le biais du programme de licence en volume, Visual Studio Marketplace (abonnements cloud) ou programmes tels que MPN | L’abonnement arrive à expiration ou n’est affecté à aucun utilisateur                                                          | 180 jours                  |
 | Tous les abonnements                                                                                                                       | Un compte Azure Active Directory ou un compte Microsoft (MSA) utilisé pour se connecter à l’abonnement est fermé | Immédiatement               |
@@ -36,16 +37,18 @@ R : Non.  L’anonymisation a lieu en réponse à un événement qui entraîne 
 ### <a name="q--im-an-administrator-for-my-organizations-subscriptions--if-one-of-my-subscribers-information-is-anonymized-can-that-subscription-be-reassigned-to-another-user"></a>Q : Je suis chargé de l’administration des abonnements de mon organisation.  Si les informations de l’un de mes abonnés sont anonymisées, cet abonnement peut-il être réaffecté à un autre utilisateur ?
 R : Oui. Tant que l’abonnement n’a pas expiré, il peut être réaffecté à un autre abonné.
 
-### <a name="q-how-can-i-prevent-anonymization-caused-by-deleting-a-sign-in-email-address"></a>Q : Comment puis-je empêcher l’anonymisation due à la suppression d’une adresse de messagerie de connexion ?
-R : il existe deux façons d’éviter ce problème :
+### <a name="q-how-can-i-prevent-anonymization-caused-by-deleting-a-sign-in-email-address"></a>Q: Comment puis-je prévenir l’anonymisation causée par la suppression d’une adresse e-mail de connexion?
+R : Il y a deux façons d’éviter le problème :
 - Déployez un système de gestion d’identité unique, AAD ou MSA mais pas les deux  
 - Associez les identités AAD et MSA par le biais du locataire. 
 
-## <a name="next-steps"></a>Étapes suivantes
-Découvrez comment empêcher l’anonymisation en [associant les identités MSA et AAD](https://docs.microsoft.com/azure/active-directory/b2b/add-users-administrator).
-
 ## <a name="see-also"></a>Voir aussi
-- [Documentation de Visual Studio](https://docs.microsoft.com/visualstudio/)
+- [Documentation Visual Studio](https://docs.microsoft.com/visualstudio/)
 - [Documentation Azure DevOps](https://docs.microsoft.com/azure/devops/)
 - [Documentation Azure](https://docs.microsoft.com/azure/)
 - [Documentation Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+
+## <a name="next-steps"></a>Étapes suivantes
+Apprenez à prévenir l’anonymisation [en associant les identités MSA et AAD](https://docs.microsoft.com/azure/active-directory/b2b/add-users-administrator).
+
+

@@ -1,5 +1,5 @@
 ---
-title: IDebugPort2::GetProcess | Microsoft Docs
+title: IDebugPort2::GetProcess Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugPort2::GetPortSupplier
 ms.assetid: 3e2431b0-0e19-450d-8e1d-d7c314c8f872
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 00579205a2e97d69f3a4305e09fac2146bb78d37
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 4496187fd2e8f86a64e85afc8a4cb00eb589696a
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66326792"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80725262"
 ---
 # <a name="idebugport2getprocess"></a>IDebugPort2::GetProcess
-Obtient le processus spécifié est en cours d’exécution sur un port.
+Obtient le processus spécifié en cours d’exécution sur un port.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -43,13 +43,13 @@ int GetProcess( 
 
 ## <a name="parameters"></a>Paramètres
 `ProcessId`\
-[in] Un [AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md) structure qui spécifie l’identificateur de processus.
+[dans] Une structure [AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md) qui spécifie l’identifiant du processus.
 
 `ppProcess`\
-[out] Retourne un [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md) objet représentant le processus.
+[out] Renvoie un objet [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md) représentant le processus.
 
 ## <a name="return-value"></a>Valeur de retour
- En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.
+ En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
 ## <a name="see-also"></a>Voir aussi
 - [IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md)

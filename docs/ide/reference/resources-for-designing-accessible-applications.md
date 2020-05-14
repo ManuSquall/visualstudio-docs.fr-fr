@@ -17,10 +17,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: f8ac7beac67a2f1d0010ee64ae7af31108d7ec3b
-ms.sourcegitcommit: cf8c0fef2b9690595e99ce3802586cdd55fd37c2
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/28/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "70107836"
 ---
 # <a name="resources-for-designing-accessible-applications"></a>Ressources pour la conception d’applications accessibles
@@ -40,23 +40,23 @@ En savoir plus sur les technologies qui prennent en charge la conception accessi
 
 ## <a name="windows-applications"></a>applications Windows
 
-* **[Procédure pas à pas : Création d’une application Windows accessible](/dotnet/framework/winforms/advanced/walkthrough-creating-an-accessible-windows-based-application)**  : cet article fournit des instructions détaillées pour inclure les cinq exigences d’accessibilité et obtenir le logo « Certifié pour Windows » dans un exemple d’application Windows.
+* **[Procédure pas à pas : création d’une application Windows accessible](/dotnet/framework/winforms/advanced/walkthrough-creating-an-accessible-windows-based-application)** : cet article fournit des instructions détaillées pour inclure les cinq exigences d’accessibilité et obtenir le logo « Certifié pour Windows » dans un exemple d’application Windows.
 
 * **Recommandations en matière de design de l’interface utilisateur clavier** Cet article technique explique comment concevoir une application Windows pour permettre aux utilisateurs de s’en servir à partir du clavier. Pour plus d’informations, consultez [Recommandations en matière de conception d’interface utilisateur clavier](/previous-versions/windows/desktop/dnacc/guidelines-for-keyboard-user-interface-design).
 
 * **Accessibilité de la console** Cet article technique décrit les API et événements qui permettent d’exposer la console dans Windows XP pour les options d’accessibilité. Pour plus d’informations, consultez [Accessibilité de la console](/previous-versions/windows/desktop/dnacc/console-accessibility).
 
-## <a name="websites"></a>Sites Web
+## <a name="websites"></a>Sites web
 
-- [Procédure pas à pas : Directives d’accessibilité pour l’utilisation de contrôles Image, Menu et AutoPostBack](https://msdn.microsoft.com/Library/ff7b5021-48b3-46bf-921f-9fe1e0e32202) : cet article fournit des instructions détaillées pour inclure des contrôles accessibles dans un exemple de page web. Il donne également des conseils de conception de l’accessibilité pour le web.
+- [Procédure pas à pas : directives d’accessibilité pour l’utilisation de contrôles Image, Menu et AutoPostBack](https://msdn.microsoft.com/Library/ff7b5021-48b3-46bf-921f-9fe1e0e32202) : cet article fournit des instructions détaillées pour inclure des contrôles accessibles dans un exemple de page web. Il donne également des conseils de conception de l’accessibilité pour le web.
 
 - **Création de pages web accessibles en DHTML** Cet article technique répertorie les éléments HTML 4.0 accessibles, ainsi que les conseils de design concernant l’accessibilité pour le web. Pour plus d’informations, consultez [Créer des pages web accessibles avec DHTML](https://msdn.microsoft.com/library/ms528445.aspx).
 
 ### <a name="third-party-resources"></a>Ressources tierces
 
-- **Initiative du W3C (World Wide Web Consortium) concernant l’accessibilité web** Ce site web fournit des recommandations et des techniques pour le développement de sites web accessibles. Pour plus d’informations, consultez [https://www.w3.org/WAI/GL/](https://www.w3.org/WAI/GL/).
+- **Initiative du W3C (World Wide Web Consortium) concernant l’accessibilité web** Ce site web fournit des recommandations et des techniques pour le développement de sites web accessibles. Pour plus d’informations, voir [https://www.w3.org/WAI/GL/](https://www.w3.org/WAI/GL/).
 
 ## <a name="see-also"></a>Voir aussi
 
-* [Fonctionnalités d’accessibilité de Visual Studio](../../ide/reference/accessibility-features-of-visual-studio.md)
+* [Caractéristiques d’accessibilité de Visual Studio](../../ide/reference/accessibility-features-of-visual-studio.md)
 * [Accessibilité de Visual Studio pour Mac](/visualstudio/mac/accessibility/)

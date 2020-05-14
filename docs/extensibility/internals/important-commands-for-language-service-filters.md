@@ -1,42 +1,42 @@
 ---
-title: Commandes importantes pour les filtres du service de langage | Microsoft Docs
+title: Commandes importantes pour les filtres de service linguistique (fr) Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - language services, filters
 - language services, commands to support
 ms.assetid: 4948c494-3d4d-4f50-b3f9-959e73f90e4d
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d0e2e605a0725c2f88922d3e3ce899263171bc4d
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: bb29ee5b5a5359d6cfe34911656dfe9be015262e
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72726929"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80707610"
 ---
 # <a name="important-commands-for-language-service-filters"></a>Commandes importantes pour les filtres du service de langage
-Si vous souhaitez créer un filtre de service de langage complet, envisagez de gérer les commandes suivantes. La liste complète des identificateurs de commande est définie dans l’énumération <xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID> pour le code managé et le fichier d’en-tête Stdidcmd. h pour le code [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] non managé. Le fichier Stdidcmd. h se trouve dans le *chemin d’installation du kit de développement logiciel (SDK) Visual Studio*\VisualStudioIntegration\Common\Inc.
+Si vous souhaitez créer un filtre de service linguistique entièrement en vedette, envisagez de manipuler les commandes suivantes. La liste complète des identifiants <xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID> de commande est définie dans le recensement du code géré et [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] du fichier d’en-tête Stdidcmd.h pour le code non géré. Vous pouvez trouver le fichier Stdidcmd.h dans *visual Studio SDK chemin d’installation*'VisualStudioIntegration’Common’Inc.
 
-## <a name="commands-to-handle"></a>Commandes à gérer
+## <a name="commands-to-handle"></a>Commandes à manipuler
 
 > [!NOTE]
-> Il n’est pas obligatoire de filtrer toutes les commandes du tableau suivant.
+> Il n’est pas obligatoire de filtrer pour chaque commande dans le tableau suivant.
 
 |Commande|Description|
 |-------------|-----------------|
-|<xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID>|Envoyé lorsque l’utilisateur clique avec le bouton droit. Cette commande indique qu’il est temps de fournir un menu contextuel. Si vous ne gérez pas cette commande, l’éditeur de texte fournit un menu contextuel par défaut sans aucune commande spécifique au langage. Pour inclure vos propres commandes dans ce menu, gérez la commande et affichez un menu contextuel vous-même.|
-|<xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID>|Généralement envoyé lorsque l’utilisateur tape CTRL + J. Appelez la méthode <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.UpdateCompletionStatus%2A> sur le <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> pour afficher la zone de saisie semi-automatique des instructions.|
-|<xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID>|Envoyé lorsque l’utilisateur tape un caractère. Surveillez cette commande pour déterminer quand un caractère de déclenchement est tapé et pour fournir la saisie semi-automatique des instructions, des conseils de méthode et des marqueurs de texte, tels que la coloration syntaxique, la correspondance des accolades et les marqueurs d’erreur. Appelez la méthode <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.UpdateCompletionStatus%2A> sur le <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> pour la saisie semi-automatique des instructions et la méthode <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodTipWindow.SetMethodData%2A> sur le <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodTipWindow> pour les conseils de méthode. Pour prendre en charge les marqueurs de texte, surveillez cette commande pour déterminer si le caractère en cours de saisie requiert la mise à jour de vos marqueurs.|
-|<xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID>|Envoyé lorsque l’utilisateur tape la touche entrée. Surveillez cette commande pour déterminer quand ignorer une fenêtre d’info-bulle de méthode en appelant la méthode <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.OnDismiss%2A> sur l' <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData>. Par défaut, l’affichage de texte gère cette commande.|
-|<xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID>|Envoyé lorsque l’utilisateur tape la touche Retour arrière. Analyse pour déterminer quand ignorer une fenêtre d’info-bulle de méthode en appelant la méthode <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.OnDismiss%2A> sur l' <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData>. Par défaut, l’affichage de texte gère cette commande.|
-|<xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID>|Envoyé à partir d’un menu ou d’une touche de raccourci. Appelez la méthode <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.UpdateTipWindow%2A> sur le <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> pour mettre à jour la fenêtre d’info-bulle avec les informations sur les paramètres.|
-|<xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID>|Envoyé lorsque l’utilisateur pointe sur une variable ou positionne le curseur sur une variable et sélectionne **Info Express** dans **IntelliSense** dans le menu **Edition** . Retournez le type de la variable dans une info-bulle en appelant la méthode <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.UpdateTipWindow%2A> sur l' <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView>. Si le débogage est actif, l’info-bulle doit également indiquer la valeur de la variable.|
-|<xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID>|Généralement envoyé lorsque l’utilisateur tape CTRL + barre d’espace. Cette commande indique au service de langage d’appeler la méthode <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.UpdateCompletionStatus%2A> sur le <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView>.|
-|<xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID><br /><br /> <xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID>|Envoyé à partir d’un menu, généralement **commenter la sélection** ou supprimer les **marques de commentaire** de la sélection **avancée** dans le menu **Edition** . <xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID> indique que l’utilisateur souhaite commenter le texte sélectionné ;  <xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID> indique que l’utilisateur souhaite supprimer les marques de commentaire du texte sélectionné. Ces commandes peuvent être implémentées uniquement par le service de langage.|
+|<xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID>|Envoyé lorsque l’utilisateur clics à droite. Cette commande indique qu’il est temps de fournir un menu raccourci. Si vous ne gérez pas cette commande, l’éditeur de texte fournit un menu de raccourci par défaut sans aucune commande spécifique à la langue. Pour inclure vos propres commandes sur ce menu, gérez la commande et affichez vous-même un menu raccourci.|
+|<xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID>|Généralement envoyé lorsque l’utilisateur tape CTRL-J. Appelez <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.UpdateCompletionStatus%2A> la méthode <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> sur le pour afficher la boîte d’achèvement de déclaration.|
+|<xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID>|Envoyé lorsque l’utilisateur tape un personnage. Surveillez cette commande pour déterminer quand un caractère déclencheur est tapé et pour fournir l’achèvement de l’instruction, des conseils de méthode et des marqueurs de texte, tels que la coloration syntaxe, l’appariement des accolades et les marqueurs d’erreur. Appelez <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.UpdateCompletionStatus%2A> la méthode <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> sur l’achèvement de l’instruction et la <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodTipWindow.SetMethodData%2A> méthode sur les <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodTipWindow> conseils de méthode. Pour prendre en charge les marqueurs texte, surveillez cette commande pour déterminer si le personnage tapé nécessite que vous mettez à jour vos marqueurs.|
+|<xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID>|Envoyé lorsque l’utilisateur tape la clé Enter. Surveillez cette commande pour déterminer quand rejeter <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.OnDismiss%2A> une fenêtre <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData>de pointe de méthode en appelant la méthode sur le . Par défaut, la vue de texte gère cette commande.|
+|<xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID>|Envoyé lorsque l’utilisateur tape la touche Backspace. Surveiller pour déterminer quand rejeter une fenêtre <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.OnDismiss%2A> de <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData>pointe de méthode en appelant la méthode sur le . Par défaut, la vue de texte gère cette commande.|
+|<xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID>|Envoyé à partir d’un menu ou d’une clé de raccourci. Appelez <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.UpdateTipWindow%2A> la méthode <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> sur la mise à jour de la fenêtre de pointe avec les informations de paramètres.|
+|<xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID>|Envoyé lorsque l’utilisateur plane sur une variable ou positionne le curseur sur une variable et sélectionne **des informations rapides** d’IntelliSense dans le menu **Edit.** **IntelliSense** Retourner le type de la variable <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.UpdateTipWindow%2A> dans un <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView>pourboire en appelant la méthode sur le . Si le débogage est actif, la pointe doit également montrer la valeur de la variable.|
+|<xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID>|Généralement envoyé lorsque l’utilisateur tape CTRL-SPACEBAR. Cette commande indique au service <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.UpdateCompletionStatus%2A> linguistique <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView>d’appeler la méthode sur le .|
+|<xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID><br /><br /> <xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID>|Envoyé à partir d’un menu, généralement **Comment Selection** ou **Uncomment Selection** de **Advanced** dans le menu **Edit.** <xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID>indique que l’utilisateur veut commenter le texte sélectionné; <xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID> indique que l’utilisateur veut désengagementer le texte sélectionné. Ces commandes ne peuvent être mises en œuvre que par le service linguistique.|
 
 ## <a name="see-also"></a>Voir aussi
 - [Développement d’un service de langage hérité](../../extensibility/internals/developing-a-legacy-language-service.md)

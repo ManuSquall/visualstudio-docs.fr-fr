@@ -12,16 +12,16 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: f64040c9180a152650de16b23276ab0e65cc9ead
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74776356"
 ---
 # <a name="how-to-collect-line-level-sampling-data"></a>Guide pratique pour collecter des données d’échantillonnage au niveau ligne
 L’échantillonnage au niveau ligne permet au profileur de déterminer à quel endroit du code d’une fonction exigeant d’importantes ressources processeur (telle qu’une fonction avec de nombreux échantillons exclusifs) le processeur doit passer le plus de temps.
 
-## <a name="overview"></a>Vue d'ensemble de
+## <a name="overview"></a>Vue d’ensemble
  Pour l’échantillonnage au niveau ligne, le profileur parcourt la pile d’appels du programme à intervalles définis et regroupe les résultats. Ces résultats montrent quelles instructions étaient exécutées par le processeur lorsque les échantillons ont été prélevés. Les données collectées sur les échantillons exclusifs sont ensuite analysées afin d’identifier les lignes de code et le pointeur d’instruction (IP).
 
  L’échantillonnage au niveau ligne fonctionne aussi bien pour le code managé que pour le code natif. Les rapports de performances qui affichent ces données sont ceux de la vue Lignes et de la vue Modules.
@@ -54,8 +54,8 @@ L’échantillonnage au niveau ligne permet au profileur de déterminer à quel 
 
      — ou —
 
-- Quand vous démarrez une application, tapez **VSPerfCmd /lineoff \<autres arguments>** .
+- Quand vous démarrez une application, tapez **VSPerfCmd /lineoff \<autres arguments>**.
 
 ## <a name="see-also"></a>Voir aussi
-- [Configurer des sessions de performances](../profiling/configuring-performance-sessions.md)
-- [Analyser les données des outils d’analyse des performances](../profiling/analyzing-performance-tools-data.md)
+- [Configurer des sessions de performance](../profiling/configuring-performance-sessions.md)
+- [Analyser les données des outils de performance](../profiling/analyzing-performance-tools-data.md)

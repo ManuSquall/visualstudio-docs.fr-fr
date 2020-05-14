@@ -1,24 +1,24 @@
 ---
-title: IDebugExtendedField | Microsoft Docs
+title: IDebugExtendedField - France Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - IDebugExtendedField interface
 ms.assetid: b491499c-af57-47da-87d6-34b7398f6591
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3a9e8f8e8414b6066bb8a407449a4b588d948bc4
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: ad10050aa157b4481fa2041ec5f322451983149f
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66333220"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80729036"
 ---
 # <a name="idebugextendedfield"></a>IDebugExtendedField
-Étend les types de champs qui sont disponibles pour prendre en charge les génériques du code managé.
+Étend les types de champs qui sont disponibles pour prendre en charge les génériques de code gérés.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -27,16 +27,16 @@ IDebugExtendedField : IDebugField
 ```
 
 ## <a name="methods"></a>Méthodes
- Outre les méthodes sur le [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) interface, cette interface implémente les méthodes suivantes :
+ En plus des méthodes de l’interface [IDebugField,](../../../extensibility/debugger/reference/idebugfield.md) cette interface met en œuvre les méthodes suivantes :
 
 |Méthode|Description|
 |------------|-----------------|
-|[GetExtendedKind](../../../extensibility/debugger/reference/idebugextendedfield-getextendedkind.md)|Récupère le type de champ étendues spécifié.|
+|[GetExtendedKind](../../../extensibility/debugger/reference/idebugextendedfield-getextendedkind.md)|Récupère le type de champ étendu spécifié.|
 |[IsClosedType](../../../extensibility/debugger/reference/idebugextendedfield-isclosedtype.md)|Détermine si le champ représente un type fermé.|
 
-## <a name="requirements"></a>Configuration requise
- En-tête : SH.h
+## <a name="requirements"></a>Spécifications
+ En-tête: Sh.h
 
- Espace de noms : Microsoft.VisualStudio.Debugger.Interop
+ Namespace: Microsoft.VisualStudio.Debugger.Interop
 
- Assembly : Microsoft.VisualStudio.Debugger.Interop.dll
+ Assemblage: Microsoft.VisualStudio.Debugger.Interop.dll

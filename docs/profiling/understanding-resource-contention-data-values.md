@@ -12,10 +12,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 3f522d1854cae86d9dc6e757ef0c9a62f4511800
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74779985"
 ---
 # <a name="understand-resource-contention-data-values"></a>Comprendre le fonctionnement des valeurs de données de contention de ressources
@@ -28,10 +28,10 @@ Les rapports de conflit de ressources affichent le nombre total de conflits et l
 
 - Les valeurs de temps exclusives montrent seulement le nombre de conflits qui ont forcé une fonction à attendre et qui ont été provoqués par le code du corps de la fonction. Les conflits provoqués par des fonctions enfants ne sont pas inclus. Le temps exclusif pour la fonction inclut seulement les temps d’attente qui ont été provoqués par des instructions du corps de la fonction.
 
-Les vues du rapport de conflit de ressources incluent également des graphiques chronologiques qui montrent les événements de conflit individuels au fil du temps et affichent les piles d’appels qui ont créé l’événement particulier. Pour plus d'informations, consultez l'une des rubriques suivantes :
+Les vues du rapport de conflit de ressources incluent également des graphiques chronologiques qui montrent les événements de conflit individuels au fil du temps et affichent les piles d’appels qui ont créé l’événement particulier. Pour plus d’informations, consultez l’une des rubriques suivantes :
 
-- [Informations relatives au thread, vue](../profiling/thread-details-view-contention-data.md)
+- [Vue de détails de fil](../profiling/thread-details-view-contention-data.md)
 
-- [Informations relatives à la ressource, vue](../profiling/resource-details-view-contention-data.md)
+- [Vue des détails des ressources](../profiling/resource-details-view-contention-data.md)
 
 Pour plus d’informations sur le deuxième mode de profilage d’accès concurrentiel, consultez [Visualiseur concurrentiel](../profiling/concurrency-visualizer.md).

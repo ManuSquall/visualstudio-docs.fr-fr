@@ -10,11 +10,11 @@ ms.workload:
 - multiple
 author: mikejo5000
 ms.openlocfilehash: 5010761213cf79756cf8da3d2fffe60dd0b61efd
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75591565"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79302615"
 ---
 # <a name="static-helper-classes"></a>Classes d’assistance statiques
 
@@ -48,7 +48,7 @@ public void TestSomething(int i, int j) {
 }
 ```
 
-**Notes**
+**Notes **
 
 Le code ci-dessus est équivaut presque à :
 

@@ -1,24 +1,24 @@
 ---
-title: IDebugTypeFieldBuilder2 | Microsoft Docs
+title: IDebugTypeFieldBuilder2 - France Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - IDebugTypeFieldBuilder2 interface
 ms.assetid: 23911c5b-2bbf-4734-9976-87a0bd6ea36c
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a22f8d60318721fbb51e0d5be7965c27666b8c48
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: ed34284e373a7d96761aabe5a7f179367649bc0f
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66319761"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80718301"
 ---
 # <a name="idebugtypefieldbuilder2"></a>IDebugTypeFieldBuilder2
-Étend la **IDebugTypeFieldBuilder** pour être en mesure de créer des types de tableau.
+Étend **l’IDebugTypeFieldBuilder** pour être en mesure de créer des types de tableau.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -26,19 +26,19 @@ ms.locfileid: "66319761"
 IDebugTypeFieldBuilder2 : IDebugTypeFieldBuilder
 ```
 
-## <a name="notes-for-callers"></a>Notes de publication pour les appelants
- Cette interface peut être obtenue à partir du fournisseur de symboles.
+## <a name="notes-for-callers"></a>Notes pour les appelants
+ Cette interface peut être obtenue auprès du fournisseur de symboles.
 
 ## <a name="methods"></a>Méthodes
- Outre les méthodes sur le [IDebugTypeFieldBuilder](../../../extensibility/debugger/reference/idebugtypefieldbuilder.md) interface, cette interface implémente la méthode suivante :
+ En plus des méthodes de l’interface [IDebugTypeFieldBuilder,](../../../extensibility/debugger/reference/idebugtypefieldbuilder.md) cette interface implémente la méthode suivante :
 
 |Méthode|Description|
 |------------|-----------------|
-|[CreateArrayOfType](../../../extensibility/debugger/reference/idebugtypefieldbuilder2-createarrayoftype.md)|Crée un tableau du type spécifié et de taille.|
+|[CreateArrayOfType](../../../extensibility/debugger/reference/idebugtypefieldbuilder2-createarrayoftype.md)|Crée un tableau du type et de la taille spécifiés.|
 
-## <a name="requirements"></a>Configuration requise
- En-tête : SH.h
+## <a name="requirements"></a>Spécifications
+ En-tête: Sh.h
 
- Espace de noms : Microsoft.VisualStudio.Debugger.Interop
+ Namespace: Microsoft.VisualStudio.Debugger.Interop
 
- Assembly : Microsoft.VisualStudio.Debugger.Interop.dll
+ Assemblage: Microsoft.VisualStudio.Debugger.Interop.dll

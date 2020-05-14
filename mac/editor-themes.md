@@ -6,10 +6,10 @@ ms.author: cobey
 ms.date: 11/06/2018
 ms.assetid: 4C1B7952-CD45-4132-AD6B-01CF993D83F8
 ms.openlocfilehash: 0c9c58f8da76b09055c1f2b70cd05a44890ce22c
-ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
-ms.translationtype: HT
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/09/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "67691631"
 ---
 # <a name="editor-themes"></a>Thèmes de l’éditeur
@@ -28,7 +28,7 @@ Vous pouvez ajouter de nouveaux thèmes de couleurs, à condition qu’ils soien
 
 Une fois que vous avez trouvé ou créé un nouveau thème, et que vous l’avez téléchargé sur votre machine locale, ajoutez-le en procédant comme suit :
 
-1. Sélectionnez le bouton **ajouter** dans la boîte de dialogue Options des thèmes de couleurs :  ![Ajout d’un thème de couleurs](media/source-editor-image20.png)
+1. Sélectionnez le bouton **Ajouter** dans la boîte de dialogue Options des thèmes de couleurs : ![Ajout d’un thème de couleurs](media/source-editor-image20.png)
 2. Recherchez le thème sur votre machine locale et cliquez sur **Ouvrir**.
 3. Le thème est ajouté dans le bas de la liste des thèmes préinstallés. Pour afficher un aperçu du thème, sélectionnez-le : ![Aperçu du thème de couleur](media/source-editor-image21.png)
 4. Pour appliquer le thème, cliquez sur le bouton **OK**.

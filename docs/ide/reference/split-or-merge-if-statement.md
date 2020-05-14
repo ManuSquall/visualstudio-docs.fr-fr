@@ -1,20 +1,21 @@
 ---
 title: Fractionner ou fusionner des instructions if
-ms.date: 06/12/2019
+ms.date: 03/10/2020
 ms.topic: reference
 author: mikadumont
 ms.author: midumont
 manager: jillfra
 dev_langs:
 - CSharp
+- VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 405ccd4bc0197ce06aa14982a16dc02f6d13a537
-ms.sourcegitcommit: d4920babfc3d24a3fe1d4bf446ed3fe73b344467
-ms.translationtype: HT
+ms.openlocfilehash: a3b42f83faacda6be34b282150cf4fb4c0f379f1
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/17/2019
-ms.locfileid: "67160735"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79093651"
 ---
 # <a name="split-or-merge-if-statements"></a>Fractionner ou fusionner des instructions if
 
@@ -22,19 +23,21 @@ Cette refactorisation s’applique à :
 
 - C#
 
-**Quoi :** **Quoi :** Fractionner ou fusionner les instructions [if](/dotnet/csharp/language-reference/keywords/if-else).
+- Visual Basic
 
-**Quand :** Vous souhaitez fractionner une instruction `if` qui utilise les opérateurs `&&` ou `||` dans une instruction `if` imbriquée, ou fusionner et une instruction `if` avec une instruction `if` externe.
+**Quoi:** **Quoi:** Diviser ou fusionner [si](/dotnet/csharp/language-reference/keywords/if-else) les déclarations.
 
-**Pourquoi :** C’est une question de préférence de style.  
+**Quand :** Vous souhaitez diviser `if` une déclaration `&&` `||` qui utilise le `if` ou les `if` opérateurs dans `if` une déclaration imbriquée, ou fusionner une déclaration avec une déclaration extérieure.
 
-## <a name="how-to"></a>Procédure
+**Pourquoi:** C’est une question de préférence de style.  
+
+## <a name="how-to"></a>Procédures
 
 Si vous souhaitez fractionner l’instruction `if` :
 
 1. Placez votre curseur dans l’instruction `if` au niveau de l’opérateur `&&` ou `||`.
 
-2. Appuyez sur **Ctrl**+ **.** pour afficher le menu **Actions rapides et refactorisations**.
+2. Appuyez **sur Ctrl**+**.** pour afficher le menu **Actions rapides et refactorisations**.
 
     ![Instruction Split If](../media/split-if-statement.png)
 
@@ -46,7 +49,7 @@ Si vous souhaitez fusionner une instruction `if` interne avec une instruction `i
 
 1. Placez votre curseur dans le mot clé `if` interne.
 
-2. Appuyez sur **Ctrl**+ **.** pour afficher le menu **Actions rapides et refactorisations**.
+2. Appuyez **sur Ctrl**+**.** pour afficher le menu **Actions rapides et refactorisations**.
 
     ![Instruction Merge If](../media/merge-if-statement.png)
 

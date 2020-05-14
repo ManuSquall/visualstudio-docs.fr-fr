@@ -5,17 +5,17 @@ author: heiligerdankgesang
 ms.author: dominicn
 ms.date: 06/17/2019
 ms.openlocfilehash: 487945399252ca3627d625e3572637b5b2af2916
-ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/10/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "74983962"
 ---
 # <a name="create-a-multi-container-app-with-docker-compose"></a>Créer une application multiconteneur avec Docker Compose
 
 Dans ce didacticiel, vous allez apprendre à gérer plusieurs conteneurs et communiquer entre eux lorsque vous utilisez Docker Compose dans Visual Studio pour Mac.
 
-## <a name="prerequisites"></a>Configuration requise
+## <a name="prerequisites"></a>Conditions préalables requises
 
 * [Docker Desktop](https://hub.docker.com/editions/community/docker-ce-desktop-mac)
 * [Visual Studio pour Mac 2019](https://visualstudio.microsoft.com/vs/mac)
@@ -23,10 +23,10 @@ Dans ce didacticiel, vous allez apprendre à gérer plusieurs conteneurs et comm
 ## <a name="create-an-aspnet-core-web-application-and-add-docker-support"></a>Créer une application web ASP.NET Core et ajouter la prise en charge de Docker
 
 1. Créez une solution en accédant à **Fichier > Nouvelle solution**.
-1. Sous application de **> .net Core** , choisissez le modèle **application Web** : ![créer une application ASP.net](media/docker-quickstart-1.png)
-1. Sélectionnez le framework cible. Dans cet exemple, nous allons utiliser .NET Core 2,2 : ![définir la version cible de .NET Framework](media/docker-quickstart-2.png)
+1. Sous **.NET Core > App** choisir le modèle **d’application Web:** ![Créer une nouvelle application ASP.NET](media/docker-quickstart-1.png)
+1. Sélectionnez le framework cible. Dans cet exemple, nous utiliserons .NET ![Core 2.2: Définir le cadre cible](media/docker-quickstart-2.png)
 1. Entrez les détails du projet, comme le nom du projet (_DockerDemoFrontEnd_ dans cet exemple) et le nom de la solution (_DockerDemo_). Le projet créé contient tous les éléments de base pour générer et exécuter un site web ASP.NET Core.
-1. Dans le Panneau Solutions, cliquez avec le bouton droit sur le projet DockerDemoFrontEnd et sélectionnez **ajouter > ajouter la prise en charge**de l’ancrage : ![ajouter la prise en charge de l’ancrage](media/docker-quickstart-3.png)
+1. Dans le solution Pad, cliquez à droite sur le projet DockerDemoFrontEnd et **sélectionnez Ajouter > Ajouter le support Docker**: ![Ajouter le support docker](media/docker-quickstart-3.png)
 
 Visual Studio pour Mac ajoute automatiquement un nouveau projet appelé **docker-compose** à votre solution et un **Dockerfile** à votre projet existant.
 

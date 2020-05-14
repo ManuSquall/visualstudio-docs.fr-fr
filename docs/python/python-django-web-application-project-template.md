@@ -11,15 +11,15 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: 136c03ef11071e5d548e36e45a6a541cffce1469
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "62784844"
 ---
 # <a name="django-web-project-template"></a>Modèle de projet web Django
 
-[Django](https://www.djangoproject.com/) est un framework Python général conçu pour un développement web rapide, sécurisé et scalable. La prise en charge de Python dans Visual Studio fournit plusieurs modèles de projet permettant de configurer la structure d’une application web Django. Pour utiliser un modèle dans Visual Studio, sélectionnez **Fichier** > **Nouveau** > **Projet**, recherchez « Django », puis sélectionnez **Projet web Django vide**, **Projet web Django** ou **Projet web Django de sondage**. Consultez le [tutoriel d’apprentissage de Django](learn-django-in-visual-studio-step-01-project-and-solution.md) qui propose une procédure pas à pas pour tous les modèles.
+[Django](https://www.djangoproject.com/) est une infrastructure Python de haut niveau conçue pour assurer un développement Web rapide, sécurisé et évolutif. La prise en charge de Python dans Visual Studio fournit plusieurs modèles de projet permettant de configurer la structure d’une application web Django. Pour utiliser un modèle dans Visual Studio, sélectionnez **File** > **New** > **Project**, recherchez "Django", et sélectionnez parmi le **Blank Django Web Project**, **Django Web Project**, et Polls **Django Web Project** modèles. Consultez le [tutoriel d’apprentissage de Django](learn-django-in-visual-studio-step-01-project-and-solution.md) qui propose une procédure pas à pas pour tous les modèles.
 
 Visual Studio offre une fonctionnalité IntelliSense complète pour les projets Django :
 
@@ -45,13 +45,13 @@ Il est courant pour les projets Django d’être gérés via leur fichier *manag
 
 ## <a name="django-management-console"></a>Console de gestion Django
 
-La console de gestion Django est accessible par le biais de plusieurs commandes du menu **Projet** ou par un clic droit sur le projet dans **l’Explorateur de solutions**.
+La console de gestion Django est accessible via diverses commandes sur le menu **du projet** ou en cliquant à droite sur le projet dans **Solution Explorer**.
 
-- **Ouvrir l’interpréteur de commandes Django** : ouvre un interpréteur de commandes dans le contexte de l’application qui vous permet de manipuler vos modèles :
+- **Ouvrez Django Shell**: ouvre une coque dans votre contexte d’application qui vous permet de manipuler vos modèles :
 
     ![Résultats de la commande Ouvrir l’interpréteur de commandes Django](media/template-django-console-shell.png)
 
-- **Base de données de synchronisation Django** : exécute `manage.py syncdb` dans une fenêtre **Interactive** :
+- **Django Sync DB** `manage.py syncdb` : exécute dans une fenêtre **interactive** :
 
     ![Résultats de la commande Base de données de synchronisation Django](media/template-django-console-sync-db.png)
 

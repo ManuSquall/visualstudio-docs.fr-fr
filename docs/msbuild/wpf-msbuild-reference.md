@@ -17,23 +17,23 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 3b3f47f41466d8eb7ddf0a4700428b6e28500b61
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75596305"
 ---
 # <a name="wpf-msbuild-reference"></a>Informations de référence sur MSBuild WPF
 
 Windows Presentation Foundation (WPF) étend Microsoft Build Engine (MSBuild) avec une prise en charge de la génération supplémentaire, qui est décrite dans cette section.
 
-## <a name="in-this-section"></a>Dans cette section
+## <a name="in-this-section"></a>Contenu de cette section
 
-[Fichiers .targets WPF](../msbuild/wpf-dot-targets-files.md)
+[WPF .cibles fichiers](../msbuild/wpf-dot-targets-files.md)
 
 Décrit les fichiers .targets WPF.
 
-[Informations de référence sur les tâches MSBuild WPF](../msbuild/wpf-msbuild-task-reference.md)
+[Référence de tâche WPF MSBuild](../msbuild/wpf-msbuild-task-reference.md)
 
 Répertorie les tâches de génération WPF disponibles.
 

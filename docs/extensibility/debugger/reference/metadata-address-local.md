@@ -1,5 +1,5 @@
 ---
-title: METADATA_ADDRESS_LOCAL | Microsoft Docs
+title: METADATA_ADDRESS_LOCAL Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,24 +7,24 @@ f1_keywords:
 helpviewer_keywords:
 - METADATA_ADDRESS_LOCAL structure
 ms.assetid: 635f6bc5-c486-4e0e-83db-36f15e543843
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: f8500d7ad1e03e08fa852afe9b8b77e49562f355
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: e3adf9ca5f679c7a526f10b1ee6c91d50dac52d2
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66345634"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80714474"
 ---
-# <a name="metadataaddresslocal"></a>METADATA_ADDRESS_LOCAL
+# <a name="metadata_address_local"></a>METADATA_ADDRESS_LOCAL
 
-Cette structure représente l’adresse d’une variable locale dans une étendue (généralement une fonction ou méthode).
+Cette structure représente l’adresse d’une variable locale dans une portée (généralement une fonction ou une méthode).
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -47,22 +47,22 @@ public struct METADATA_ADDRESS_LOCAL {
 ## <a name="members"></a>Membres
 
 `tokMethod`\
-L’ID de la méthode ou la fonction de la variable locale fait partie de.
+L’ID de la méthode ou de la fonction de la variable locale fait partie de.
 
-[C++] `_mdToken` est un `typedef` pour 32 bits `int`.
+[C] `_mdToken` est `typedef` un pour un 32 bits `int`.
 
 `pLocal`\
-Le jeton dont l’adresse représente cette structure.
+Le jeton dont cette structure représente l’adresse.
 
 `dwIndex`\
-Peut être l’index de cette variable locale dans la méthode ou fonction ou une autre valeur (spécifique à la langue).
+Peut être l’index de cette variable locale dans la méthode ou la fonction, ou une autre valeur (spécifique à la langue).
 
 ## <a name="remarks"></a>Notes
 
-Cette structure fait partie de l’union dans le [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md) structure lorsque le `dwKind` champ la `DEBUG_ADDRESS_UNION` structure est définie sur `ADDRESS_KIND_LOCAL` (une valeur comprise entre le [ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md) énumération).
+Cette structure fait partie du [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md) syndicat dans la `dwKind` structure DEBUG_ADDRESS_UNION `DEBUG_ADDRESS_UNION` lorsque le `ADDRESS_KIND_LOCAL` champ de la structure est fixé à (une valeur de [l’ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md) énumération).
 
 > [!WARNING]
-> [C++ uniquement] Si `pLocal` n’est pas null, vous devez l’appeler `Release` sur le pointeur de jeton (`addr` est un champ dans le [DEBUG_ADDRESS](../../../extensibility/debugger/reference/debug-address.md) structure) :
+> [C seulement] Si `pLocal` elle n’est pas `Release` nulle, alors`addr` vous devez faire appel au pointeur symbolique (est un champ dans la structure [DEBUG_ADDRESS)](../../../extensibility/debugger/reference/debug-address.md) :
 >
 > ```cpp
 > if (addr.dwKind == ADDRESS_KIND_METADATA_LOCAL && addr.addr.addrLocal.pLocal != NULL)
@@ -71,13 +71,13 @@ Cette structure fait partie de l’union dans le [DEBUG_ADDRESS_UNION](../../../
 > }
 > ```
 
-## <a name="requirements"></a>Configuration requise
+## <a name="requirements"></a>Spécifications
 
-En-tête : sh.h
+En-tête: sh.h
 
-Espace de noms : Microsoft.VisualStudio.Debugger.Interop
+Namespace: Microsoft.VisualStudio.Debugger.Interop
 
-Assembly : Microsoft.VisualStudio.Debugger.Interop.dll
+Assemblage: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>Voir aussi
 

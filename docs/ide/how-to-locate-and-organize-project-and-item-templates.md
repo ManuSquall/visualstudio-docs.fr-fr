@@ -10,10 +10,10 @@ author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.openlocfilehash: 480f583bb997a19bc84fcfbe6824c12a3c638784
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75591045"
 ---
 # <a name="how-to-locate-and-organize-project-and-item-templates"></a>Guide pratique pour localiser et organiser les modèles de projet et d’élément
@@ -36,9 +36,9 @@ Par défaut, les modèles installés avec Visual Studio se trouvent dans :
 
 ::: moniker range="vs-2017"
 
-- *%ProgramFiles(x86)%\\Microsoft Visual Studio\\2017\\\<édition>\\Common7\IDE\ProjectTemplates\\<Langage\>\\<ID_paramètres_régionaux\>*
+- *\\%ProgramFiles (x86)% Microsoft\\Visual Studio\\\<2017 \\édition>Common7-IDE-ProjectTemplates\\<Langue\> \\<Id Local\>*
 
-- *%ProgramFiles(x86)%\\Microsoft Visual Studio\\2017\\\<édition>\Common7\IDE\ItemTemplates\\<Langage\>\\<ID_paramètres_régionaux\>*
+- *%ProgramFiles\\(x86)% Microsoft\\Visual Studio\\\<2017 édition\\>-Common7-IDE-ItemTemplates\> \\<Langue<Id Local\>*
 
 Par exemple, le répertoire suivant contient les modèles d’élément Visual Basic pour le français (LCID 1036) :
 
@@ -48,9 +48,9 @@ Par exemple, le répertoire suivant contient les modèles d’élément Visual B
 
 ::: moniker range=">=vs-2019"
 
-- *%ProgramFiles(x86)%\\Microsoft Visual Studio\\2019\\\<édition>\\Common7\IDE\ProjectTemplates\\<Langage\>\\<ID_paramètres_régionaux\>*
+- *\\%ProgramFiles (x86)% Microsoft\\Visual Studio\\\<2019 \\édition>Common7-IDE-ProjectTemplates\\<Langue\> \\<Id Local\>*
 
-- *%ProgramFiles(x86)%\\Microsoft Visual Studio\\2019\\\<édition>\Common7\IDE\ItemTemplates\\<Langage\>\\<ID_paramètres_régionaux\>*
+- *%ProgramFiles\\(x86)% Microsoft\\Visual Studio\\\<2019 édition>-Common7-IDE-ItemTemplates\\ \> \\<Langue<ID Locale\>*
 
 Par exemple, le répertoire suivant contient les modèles d’élément Visual Basic pour le français (LCID 1036) :
 
@@ -60,7 +60,7 @@ Par exemple, le répertoire suivant contient les modèles d’élément Visual B
 
 ### <a name="user-templates"></a>Modèles utilisateur
 
-Si vous ajoutez un fichier compressé ( *.zip*) incluant un fichier *.vstemplate* au répertoire des modèles utilisateur, le modèle apparaît dans la boîte de dialogue Nouveau projet ou Nouvel élément. Par défaut, les modèles utilisateur se trouvent dans :
+Si vous ajoutez un fichier compressé (*.zip*) incluant un fichier *.vstemplate* au répertoire des modèles utilisateur, le modèle apparaît dans la boîte de dialogue Nouveau projet ou Nouvel élément. Par défaut, les modèles utilisateur se trouvent dans :
 
 ::: moniker range="vs-2017"
 
@@ -87,7 +87,7 @@ Par exemple, le répertoire suivant contient les modèles de projet utilisateur 
 ::: moniker-end
 
 > [!TIP]
-> Vous pouvez changer l’emplacement connu des modèles utilisateur dans **Outils** > **Options** > **Projets et solutions** > **Emplacements**.
+> Vous pouvez modifier l’emplacement connu pour les modèles d’utilisateurs dans **tools** > **Options** > **Projects and Solutions** > **Locations**.
 
 ::: moniker range="vs-2017"
 
@@ -102,33 +102,33 @@ Les catégories des boîtes de dialogue **Nouveau projet** et **Ajouter un nouve
 
 1. Créez un sous-dossier dans le dossier du langage de programmation du répertoire des modèles de projet utilisateur. Par exemple, pour créer une catégorie **HelloWorld** pour les modèles de projet C#, créez le répertoire suivant :
 
-    - *\%USERPROFILE%\Documents\Visual Studio \<Version\>\Templates\ProjectTemplates\Visual C#\HelloWorld*
+    - *\%USERPROFILE %-Documents-Visual \<\>Studio Version 'Templates’ProjectTemplates’Visual C’HelloWorld*
 
 1. Placez tous les modèles de cette catégorie dans le nouveau dossier.
 
-1. Dans le menu **fichier** , choisissez **nouveau** > **projet**.
+1. Dans le menu **Fichier**, choisissez **Nouveau** > **Projet**.
 
-   La catégorie **HelloWorld** apparaît dans la boîte de dialogue **nouveau projet** , sous **installé** > **visuel C#** .
+   La catégorie **HelloWorld** apparaît dans la boîte de dialogue **Nouveau projet**, sous **Installé** > **Visual C#**.
 
 ### <a name="create-new-user-item-template-categories"></a>Créer des catégories de modèles d’élément utilisateur
 
 1. Créez un sous-dossier dans le dossier du langage de programmation du répertoire des modèles d’élément utilisateur. Par exemple, pour créer une catégorie **HelloWorld** pour les modèles d’élément C#, créez le répertoire suivant :
 
-    - *\%USERPROFILE%\Documents\Visual Studio \<Version\>\Templates\ItemTemplates\Visual C#\HelloWorld*
+    - *\%USERPROFILE %-Documents-Visual \<\>Studio Version 'Templates’ItemTemplates’Visual C’HelloWorld*
 
 1. Placez tous les modèles de cette catégorie dans le nouveau dossier.
 
 1. Créez un projet ou ouvrez un projet existant. Ensuite, dans le menu **Projet**, choisissez **Ajouter un nouvel élément**.
 
-   La catégorie **HelloWorld** apparaît dans la boîte de dialogue **Ajouter un nouvel élément** , sous **installé** > **éléments visuels C#** .
+   La catégorie **HelloWorld** apparaît dans la boîte de dialogue **Ajouter un nouvel élément**, sous **Installé** > **Éléments Visual C#**.
 
 ### <a name="display-templates-in-parent-categories"></a>Afficher les modèles dans les catégories parentes
 
 Vous pouvez permettre l’affichage des modèles des sous-catégories dans leur catégorie parente à l’aide de l’élément `NumberOfParentCategoriesToRollUp` du fichier *.vstemplate*. Ces étapes sont les mêmes pour les modèles de projet et les modèles d’élément.
 
-1. Localisez le fichier *.zip* qui contient le modèle.
+1. Localiser le fichier *.zip* qui contient le modèle.
 
-1. Extrayez le fichier *.zip*.
+1. Extraire le fichier *.zip.*
 
 1. Ouvrez le fichier *.vstemplate* dans Visual Studio.
 
@@ -146,11 +146,11 @@ Vous pouvez permettre l’affichage des modèles des sous-catégories dans leur 
 
 1. Enregistrez et fermez le fichier *.vstemplate*.
 
-1. Sélectionnez les fichiers dans votre modèle, cliquez avec le bouton droit sur la sélection, puis choisissez **Envoyer vers** > **dossier compressé (zippé)** .
+1. Sélectionnez les fichiers inclus dans votre modèle, cliquez avec le bouton droit sur la sélection, puis choisissez **Envoyer vers** > **Dossier compressé**.
 
    Les fichiers sont compressés dans un fichier *.zip*.
 
-1. Supprimez les fichiers de modèles extraits et l’ancien fichier *.zip* de modèle.
+1. Supprimer les fichiers de modèle extraits et l’ancien fichier *.zip* modèle.
 
 1. Placez le nouveau fichier *.zip* dans le répertoire qui contenait le fichier *.zip* supprimé.
 
@@ -158,8 +158,8 @@ Vous pouvez permettre l’affichage des modèles des sous-catégories dans leur 
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Personnaliser les modèles](../ide/customizing-project-and-item-templates.md)
+- [Personnaliser des modèles](../ide/customizing-project-and-item-templates.md)
 - [Informations de référence sur les schémas de modèles Visual Studio (extensibilité)](../extensibility/visual-studio-template-schema-reference.md)
 - [NumberOfParentCategoriesToRollUp (modèles Visual Studio)](../extensibility/numberofparentcategoriestorollup-visual-studio-templates.md)
-- [Guide pratique pour créer des modèles de projet](../ide/how-to-create-project-templates.md)
-- [Guide pratique pour créer des modèles d’élément](../ide/how-to-create-item-templates.md)
+- [Comment : Créer des modèles de projet](../ide/how-to-create-project-templates.md)
+- [Comment : Créer des modèles d’objets](../ide/how-to-create-item-templates.md)

@@ -10,12 +10,12 @@ caps.latest.revision: 6
 author: kraigb
 ms.author: kraigb
 manager: jillfra
-ms.openlocfilehash: 073230f2b2a35a27540b9a67cfec3c4ace502eb8
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
-ms.translationtype: MTE95
+ms.openlocfilehash: cf841c181b3a7e0b378e53e3901a079b7136b32c
+ms.sourcegitcommit: da5ebc29544fdbdf625ab4922c9777faf2bcae4a
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74300500"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "82586985"
 ---
 # <a name="getting-started-with-ptvs-setting-up-visual-studio"></a>Prise en main de PTVS : configuration de Visual Studio
 
@@ -31,7 +31,7 @@ La première chose dont vous avez besoin est Visual Studio. Si vous êtes dével
 
 Une fois que vous avez Visual Studio, vous devez [installer PTVS](https://archive.codeplex.com/?p=pytools). Autonome et gratuite, cette extension est entièrement prise en charge par Microsoft et développée de manière ouverte grâce aux contributions de la communauté.
 
-Vous devez maintenant [installer Python](https://www.python.org/download/). Python est entièrement géré par la communauté, et sa page d’accueil se trouve sur python.org. Continuum Analytics propose une offre groupée gratuite appelée Anaconda qui intègre Python et plusieurs bibliothèques utiles (en particulier dans le domaine des sciences et du traitement des données). Enthought produit une offre groupée similaire appelée Canopy. Vous n’avez besoin d’installer qu’un seul de ces produits. Si vous ne savez pas laquelle choisir, commencez par [Anaconda](https://www.continuum.io/downloads). Celle-ci contient la version la plus récente de Python et la plupart des packages difficiles à installer.
+Vous devez maintenant [installer Python](https://www.python.org/download/). Python est géré par la communauté et sa page d’hébergement est python.org. Continuum Analytics produit un bundle gratuit appelé Anaconda qui contient Python et de nombreuses bibliothèques utiles (en particulier pour la science et le traitement des données), et le fait de générer un bundle similaire nommé « auvent ». Vous n’avez besoin d’installer qu’un seul de ces produits. Si vous ne savez pas laquelle choisir, commencez par [Anaconda](https://www.anaconda.com/products/individual). Celle-ci contient la version la plus récente de Python et la plupart des packages difficiles à installer.
 
 Démarrez Visual Studio et assurez-vous que tout fonctionne correctement. Dans le menu Affichage, sélectionnez Autres fenêtres. La liste contient un élément nommé Environnements Python. Cette fenêtre affiche toutes les installations de Python détectées par PTVS et tous les packages installés. La fenêtre contrôle également l'actualisation des bases de données pour afficher la saisie semi-automatique lorsque vous modifiez du code. Ce processus d’actualisation prend du temps, mais une fois effectué, PTVS peut afficher davantage d’informations utiles sur les packages.
 
@@ -39,6 +39,6 @@ Si vous voulez utiliser IPython avec PTVS, suivez ces [instructions](https://arc
 
 Vous pouvez obtenir ces instructions en regardant cette courte [vidéo YouTube](https://www.youtube.com/watch?v=_okUV47eM5c&list=PLReL099Y5nRdLgGAdrb_YeTdEnd23s6Ff&index=1).
 
-## <a name="see-also"></a>Voir aussi
+## <a name="see-also"></a> Voir aussi
 
 [Vidéos sur le démarrage et l’exploration de PTVS](https://www.youtube.com/playlist?list=PLReL099Y5nRdLgGAdrb_YeTdEnd23s6Ff)

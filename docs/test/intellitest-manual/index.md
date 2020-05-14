@@ -1,128 +1,207 @@
 ---
-title: Manuel de référence IntelliTest | Outils de test Microsoft pour les développeurs
+title: Vue d’ensemble | Outil de test Microsoft IntelliTest pour les développeurs
 ms.date: 05/02/2017
 ms.topic: conceptual
 helpviewer_keywords:
-- IntelliTest Reference Manual, IntelliTest
+- IntelliTest, Visual Studio IntelliTest developer testing tool
 ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: b1c40412da096db63da87e04711cdc1a95b5cc84
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 5eb619269dfd8922919999249b4ced0b9b98ebb7
+ms.sourcegitcommit: ee12b14f306ad8f49b77b08d3a16d9f54426e7ca
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75591617"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "80256203"
 ---
-# <a name="intellitest-reference-manual"></a>Manuel de référence IntelliTest
+# <a name="overview-of-microsoft-intellitest"></a>Vue d’ensemble de Microsoft IntelliTest
 
-## <a name="contents"></a>Sommaire
+IntelliTest vous permet de trouver les bogues rapidement et de réduire les coûts de maintenance des tests. Grâce à une approche automatisée et transparente des tests, IntelliTest peut générer une suite de tests candidats pour votre code .NET. La génération des suites de tests peut aussi être guidée par des *propriétés de justesse* que vous spécifiez. IntelliTest fait même évoluer automatiquement la suite de tests au fil de l’évolution du code testé.
 
-* **[Vue d’ensemble d’IntelliTest](introduction.md)**
-  - [Hello World dans IntelliTest](introduction.md#the-hello-world-of-intellitest)
-  - [Limitations](introduction.md#limitations)
-    * [Non-déterminisme](introduction.md#nondeterminism)
-    * [Concurrence](introduction.md#concurrency)
-    * [Code natif](introduction.md#native-code)
-    * [Plateforme](introduction.md#platform)
-    * [Language](introduction.md#language)
-    * [Raisonnement symbolique](introduction.md#symbolic-reasoning)
-    * [Traces de pile incorrectes](introduction.md#incorrect-stack-traces)
-  - [Compléments de lecture](introduction.md#further-reading)
+**Tests de caractérisation** IntelliTest vous permet de déterminer le comportement du code sous la forme d’une suite de tests unitaires traditionnels.
+Une suite de tests de ce type peut être utilisée comme une suite de régression, qui est le point de départ permettant de s’attaquer à la complexité associée à la refactorisation d’un code hérité ou mal connu.
 
-* **[Bien démarrer avec IntelliTest](getting-started.md)**
-  - [Attributs importants](getting-started.md#important-attributes)
-  - [Classes d’assistance statiques importantes](getting-started.md#helper-classes)
+**Génération guidée de l’entrée des tests** IntelliTest utilise une approche ouverte d’analyse du code et de résolution des contraintes pour générer automatiquement des valeurs d’entrée précises pour les tests, généralement sans nécessiter l’intervention de l’utilisateur. Pour les types d’objets complexes, il génère automatiquement des fabriques. Vous pouvez guider la génération de l’entrée des tests en étendant et en configurant les fabriques selon vos besoins. Les propriétés de justesse spécifiées en tant qu’assertions dans le code seront également utilisées automatiquement pour guider la génération de l’entrée des tests.
 
-* **[Génération de tests](test-generation.md)**
-  - [Générateurs de tests](test-generation.md#test-generators)
-  - [Tests unitaires paramétrés](test-generation.md#parameterized-unit-testing)
-  - [Tests unitaires paramétrés génériques](test-generation.md#generic-parameterized)
-  - [Autorisation d’exceptions](test-generation.md#allowing-exceptions)
-  - [Test de types internes](test-generation.md#internal-types)
-  - [Hypothèses et assertions](test-generation.md#assumptions-and-assertions)
-  - [Précondition](test-generation.md#precondition)
-  - [Postcondition](test-generation.md#postcondition)
-  - [Échecs de test](test-generation.md#test-failures)
-  - [Installation et suppression](test-generation.md#setup-teardown)
-  - [Compléments de lecture](test-generation.md#further-reading)
+**Intégration à l’IDE** IntelliTest est entièrement intégré dans l’IDE Visual Studio. Toutes les informations collectées au cours de la génération de la suite de tests (comme les entrées générées automatiquement, la sortie provenant de votre code, les cas de test générés, et leur état de réussite ou d’échec) apparaissent dans l’IDE Visual Studio. Vous pouvez facilement itérer entre la correction de votre code et la réexécution d’IntelliTest sans quitter l’IDE Visual Studio.
+Les tests peuvent être enregistrés dans la solution sous forme de projet de test unitaire et seront automatiquement détectés par l’Explorateur de tests Visual Studio par la suite.
 
-* **[Génération d’entrée](input-generation.md)**
-  - [Solveur de contraintes](input-generation.md#constraint-solver)
-  - [Couverture du code dynamique](input-generation.md#dynamic-code-coverage)
-  - [Nombres entiers et à virgule flottante](input-generation.md#integers-and-floats)
-  - [Objets](input-generation.md#objects)
-  - [Instanciation de classes existantes](input-generation.md#existing-classes)
-  - [Visibilité](input-generation.md#visibility)
-  - [Objets fictifs paramétrés](input-generation.md#parameterized-mocks)
-  - [Structs](input-generation.md#structs)
-  - [Tableaux et chaînes](input-generation.md#arrays-and-strings)
-  - [Obtention d’entrées supplémentaires](input-generation.md#additional-inputs)
-  - [Compléments de lecture](input-generation.md#further-reading)
+**Compléter les pratiques de test existantes** Utilisez IntelliTest pour compléter les pratiques de test existantes que vous suivez peut-être déjà.
 
-* **[Limites de l’exploration](exploration-bounds.md)**
-  - [MaxConstraintSolverTime](exploration-bounds.md#maxconstraintsolvertime)
-  - [MaxConstraintSolverMemory](exploration-bounds.md#maxconstraintsolvermemory)
-  - [MaxBranches](exploration-bounds.md#maxbranches)
-  - [MaxCalls](exploration-bounds.md#maxcalls)
-  - [MaxStack](exploration-bounds.md#maxstack)
-  - [MaxConditions](exploration-bounds.md#maxconditions)
-  - [MaxRuns](exploration-bounds.md#maxruns)
-  - [MaxRunsWithoutNewTests](exploration-bounds.md#maxrunswithoutnewtests)
-  - [MaxRunsWithUniquePaths](exploration-bounds.md#maxrunswithuniquepaths)
-  - [MaxExceptions](exploration-bounds.md#maxexceptions)
-  - [TestExcludePathBoundsExceeded](exploration-bounds.md#testexcludepathboundsexceeded)
-  - [TestEmissionFilter](exploration-bounds.md#testemissionfilter)
-  - [TestEmissionBranchHits](exploration-bounds.md#testemissionbranchhits)
+Si vous voulez tester :
 
-* **[Glossaire des attributs](attribute-glossary.md)**
-  - [PexAssumeNotNull](attribute-glossary.md#pexassumenotnull)
-  - [PexClass](attribute-glossary.md#pexclass)
-  - [PexGenericArguments](attribute-glossary.md#pexgenericarguments)
-  - [PexMethod](attribute-glossary.md#pexmethod)
-  - [PexExplorationAttributeBase](attribute-glossary.md#pexexplorationattributebase)
-  - [PexAssemblySettings](attribute-glossary.md#pexassemblysettings)
-  - [PexAssemblyUnderTest](attribute-glossary.md#pexassemblyundertest)
-  - [PexInstrumentAssemblyAttribute](attribute-glossary.md#pexinstrumentassemblyattribute)
-  - [PexUseType](attribute-glossary.md#pexusetype)
-  - [PexAllowedException](attribute-glossary.md#pexallowedexception)
-  - [PexAllowedExceptionFromAssembly](attribute-glossary.md#pexallowedexceptionfromassembly)
-  - [PexAllowedExceptionFromType](attribute-glossary.md#pexallowedexceptionfromtype)
-  - [PexAllowedExceptionFromTypeUnderTest](attribute-glossary.md#pexallowedexceptionfromtypeundertest)
+* Des algorithmes sur des données primitives ou des tableaux de données primitives :
+  * écrivez des [tests unitaires paramétrables](test-generation.md#parameterized-unit-testing)
+* Des algorithmes sur des données complexes, comme un compilateur :
+  * laissez d’abord IntelliTest générer une représentation abstraite des données puis passez-la à l’algorithme
+  * laissez IntelliTest générer des instances en utilisant la [création d’objets personnalisés](input-generation.md#objects) et des invariants de données, puis appelez l’algorithme
+* Des conteneurs de données :
+  * écrivez des [tests unitaires paramétrables](test-generation.md#parameterized-unit-testing)
+  * laissez IntelliTest générer des instances en utilisant la [création d’objets personnalisés](input-generation.md#objects) et des invariants de données, puis appelez une méthode du conteneur et revérifiez ensuite les invariants
+  * écrivez des [tests unitaires paramétrables](test-generation.md#parameterized-unit-testing) qui appellent différentes méthodes de l’implémentation, en fonction des valeurs des paramètres
+* Une base de code existante :
+  * utilisez l’Assistant IntelliTest de Visual Studio pour commencer par générer un ensemble de [tests unitaires paramétrables](test-generation.md#parameterized-unit-testing)
 
-* **[Cascade des paramètres](settings-waterfall.md)**
+## <a name="the-hello-world-of-intellitest"></a>Hello World dans IntelliTest
 
-* **[Classes d’assistance statiques](static-helper-classes.md)**
-  - [PexAssume](static-helper-classes.md#pexassume)
-  - [PexAssert](static-helper-classes.md#pexassert)
-  - [PexChoose](static-helper-classes.md#pexchoose)
-  - [PexObserve](static-helper-classes.md#pexobserve)
-  - [PexSymbolicValue](static-helper-classes.md#pexsymbolicvalue)
+IntelliTest recherche les entrées appropriées au programme testé, ce qui signifie que vous pouvez l’utiliser pour générer la célèbre chaîne **Hello World!** . Ceci suppose que vous avez créé un projet de test C# basé sur MSTest et que vous avez ajouté une référence à **Microsoft.Pex.Framework**. Si vous utilisez un autre framework de test, créez une bibliothèque de classes C# et reportez-vous à la documentation du framework de test pour savoir comment configurer le projet.
 
-* **[Avertissements et erreurs](warnings-and-errors.md)**
-  - [MaxBranches dépassé](warnings-and-errors.md#maxbranches-exceeded)
-  - [MaxConstraintSolverTime dépassé](warnings-and-errors.md#maxconstraintsolvertime-exceeded)
-  - [MaxConditions dépassé](warnings-and-errors.md#maxconditions-exceeded)
-  - [MaxCalls dépassé](warnings-and-errors.md#maxcalls-exceeded)
-  - [MaxStack dépassé](warnings-and-errors.md#maxstack-exceeded)
-  - [MaxRuns dépassé](warnings-and-errors.md#maxruns-exceeded)
-  - [MaxRunsWithoutNewTests dépassé](warnings-and-errors.md#maxrunswithoutnewtests-exceeded)
-  - [Impossible de concrétiser la solution](warnings-and-errors.md#cannot-concretize-solution)
-  - [Besoin d’aide pour construire l’objet](warnings-and-errors.md#help-construct)
-  - [Besoin d’aide pour rechercher des types](warnings-and-errors.md#help-types)
-  - [Type utilisable deviné](warnings-and-errors.md#usable-type-guessed)
-  - [Erreur inattendue pendant l’exploration](warnings-and-errors.md#unexpected-exploration)
-  - [TargetInvocationException](warnings-and-errors.md#targetinvocationexception)
-  - [Méthode non instrumentée appelée](warnings-and-errors.md#uninstrumented-method-called)
-  - [Méthode externe appelée](warnings-and-errors.md#external-method-called)
-  - [Méthode non instrumentable appelée](warnings-and-errors.md#uninstrumentable-method-called)
-  - [Problème de testabilité](warnings-and-errors.md#testability-issue)
-  - [Limitation](warnings-and-errors.md#limitation)
-  - [Confusion observée au niveau des appels](warnings-and-errors.md#observed-call-mismatch)
-  - [Valeur stockée dans un champ statique](warnings-and-errors.md#value-static-field)
+L’exemple suivant crée deux contraintes sur le paramètre nommé **value** pour permettre à IntelliTest de générer la chaîne nécessaire :
 
-## <a name="got-feedback"></a>Vous avez des commentaires ?
+```csharp
+using System;
+using Microsoft.Pex.Framework;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-Postez vos idées et demandes de fonctionnalités sur la [Communauté des développeurs](https://developercommunity.visualstudio.com/content/idea/post.html?space=8).
+[TestClass]
+public partial class HelloWorldTest {
+    [PexMethod]
+    public void HelloWorld([PexAssumeNotNull]string value) {
+        if (value.StartsWith("Hello")
+            && value.EndsWith("World!")
+            && value.Contains(" "))
+            throw new Exception("found it!");
+    }
+}
+```
+
+Une fois l’exemple compilé et exécuté, IntelliTest génère un ensemble de tests comme celui-ci :
+
+1. ""
+2. "\0\0\0\0\0"
+3. "Hello"
+4. "\0\0\0\0\0\0"
+5. "Hello\0"
+6. "Hello\0\0"
+7. "Hello\0World!"
+8. "Hello World!"
+
+> [!NOTE]
+> Pour les problèmes de build, essayez de remplacer les références Microsoft.VisualStudio.TestPlatform.TestFramework et Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions par une référence à Microsoft.VisualStudio.QualityTools.UnitTestFramework.
+
+Lisez [Générer des tests unitaires avec IntelliTest](../../test/generate-unit-tests-for-your-code-with-intellitest.md) pour comprendre l’emplacement où les tests générés sont enregistrés. Le code de test généré doit inclure un test comme celui-ci :
+
+```csharp
+[TestMethod]
+[PexGeneratedBy(typeof(global::HelloWorldTest))]
+[PexRaisedException(typeof(Exception))]
+public void HelloWorldThrowsException167()
+{
+    this.HelloWorld("Hello World!");
+}
+```
+
+C’est aussi simple que cela !
+
+Ressources supplémentaires :
+  * Visionner la [vidéo de Channel 9](https://channel9.msdn.com/Shows/Visual-Studio-Toolbox/Intellitest)
+  * Lire cette [présentation sur MSDN Magazine](https://msdn.microsoft.com/magazine/dn904672.aspx)
+
+## <a name="important-attributes"></a>Attributs importants
+
+* [PexClass](attribute-glossary.md#pexclass) marque un type contenant **PUT**
+* [PexMethod](attribute-glossary.md#pexmethod) marque un **PUT**
+* [PexAssumeNotNull](attribute-glossary.md#pexassumenotnull) marque un paramètre non Null
+
+```csharp
+using Microsoft.Pex.Framework;
+
+[..., PexClass(typeof(Foo))]
+public partial class FooTest {
+    [PexMethod]
+    public void Bar([PexAssumeNotNull]Foo target, int i) {
+        target.Bar(i);
+    }
+}
+```
+
+* [PexAssemblyUnderTest](attribute-glossary.md#pexassemblyundertest) lie un projet de test à un projet
+* [PexInstrumentAssembly](attribute-glossary.md#pexinstrumentassemblyattribute) spécifie un assembly à instrumenter
+
+```csharp
+[assembly: PexAssemblyUnderTest("MyAssembly")] // also instruments "MyAssembly"
+[assembly: PexInstrumentAssembly("Lib")]
+```
+
+## <a name="important-static-helper-classes"></a><a name="helper-classes"></a> Classes d’assistance statiques importantes
+
+* [PexAssume](static-helper-classes.md#pexassume) évalue les hypothèses (filtrage d’entrée)
+* [PexAssert](static-helper-classes.md#pexassert) évalue les assertions
+* [PexChoose](static-helper-classes.md#pexchoose) génère de nouveaux choix (entrées supplémentaires)
+* [PexObserve](static-helper-classes.md#pexobserve) enregistre les valeurs dynamiques dans les tests générés
+
+```csharp
+[PexMethod]
+void StaticHelpers(Foo target) {
+    PexAssume.IsNotNull(target);
+
+    int i = PexChoose.Value<int>("i");
+    string result = target.Bar(i);
+
+    PexObserve.ValueForViewing<string>("result", result);
+    PexAssert.IsNotNull(result);
+}
+```
+
+## <a name="limitations"></a>Limitations
+
+Cette section décrit les limitations d’IntelliTest :
+
+* [Non déterminisme](#nondeterminism)
+* [Concurrence](#concurrency)
+* [Code .NET natif](#native-code)
+* [Plateforme](#platform)
+* [Language](#language)
+* [Raisonnement symbolique](#symbolic-reasoning)
+* [Traces de pile](#incorrect-stack-traces)
+
+### <a name="nondeterminism"></a>Non déterminisme
+
+IntelliTest suppose que le programme analysé est déterministe. Si ce n’est pas le cas, IntelliTest boucle jusqu’à atteindre une limite d’exploration.
+
+IntelliTest considère qu’un programme est non déterministe s’il s’appuie sur des entrées qu’IntelliTest ne peut pas contrôler.
+
+IntelliTest contrôle les entrées fournies aux [tests unitaires paramétrables](test-generation.md#parameterized-unit-testing) et obtenues à partir de [PexChoose](static-helper-classes.md#pexchoose).
+En ce sens, les résultats des appels à du code non managé ou non instrumenté sont également considérés comme des « entrées » du programme instrumenté, mais IntelliTest ne peut pas les contrôler. Si le flux de contrôle du programme dépend de valeurs spécifiques provenant de ces sources externes, IntelliTest ne peut pas « diriger » le programme vers des zones précédemment non couvertes.
+
+De plus, le programme est considéré comme non déterministe si les valeurs provenant de sources externes changent durant la réexécution du programme. Dans ce type de situation, IntelliTest perd le contrôle sur l’exécution du programme, et sa recherche devient inefficace.
+
+Il est parfois difficile de détecter quand cela se produit. Prenons les exemples suivants :
+
+* Le résultat de la méthode **GetHashCode()** est fourni par du code non managé et n’est pas prévisible.
+* La classe **System.Random** utilise l’heure du système en vigueur pour fournir des valeurs véritablement aléatoires.
+* La classe **System.DateTime** fournit l’heure actuelle, qui n’est pas sous le contrôle d’IntelliTest.
+
+### <a name="concurrency"></a>Concurrence
+
+IntelliTest ne gère pas les programmes multithreads.
+
+### <a name="native-code"></a>Code natif
+
+IntelliTest ne comprend pas le code natif, comme les instructions x86 appelées via **P/Invoke**. Il ne sait pas comment traduire ces appels en contraintes qui peuvent être passées au [solveur de contrainte](input-generation.md#constraint-solver).
+Même pour du code .NET, il peut analyser uniquement le code qu’il instrumente. IntelliTest ne peut pas instrumenter certaines parties de **mscorlib**, notamment la bibliothèque de réflexion. **DynamicMethod** ne peut pas être instrumenté.
+
+La solution de contournement suggérée est d’avoir un mode de test où de telles méthodes se trouvent dans des types dans un assembly dynamique. Cependant, même si certaines méthodes sont non instrumentées, IntelliTest tente de couvrir autant de code instrumenté que possible.
+
+### <a name="platform"></a>Plateforme
+
+IntelliTest est pris en charge seulement sur .NET Framework X86 32 bits.
+
+### <a name="language"></a>Langue
+
+En principe, IntelliTest peut analyser les programmes .NET arbitraires, écrits dans n’importe quel langage .NET. Cependant, dans Visual Studio, il prend en charge seulement C#.
+
+### <a name="symbolic-reasoning"></a>Raisonnement symbolique
+
+IntelliTest utilise un [solveur de contrainte](input-generation.md#constraint-solver) automatique pour déterminer les valeurs d’entrée appropriées pour le test et pour le programme testé. Les capacités du solveur de contrainte sont et seront toujours néanmoins limitées.
+
+### <a name="incorrect-stack-traces"></a>Arborescences des appels de procédure incorrectes
+
+Comme IntelliTest intercepte et « lève à nouveau » les exceptions dans chaque méthode instrumentée, les numéros de ligne dans les traces de pile ne seront pas correctes. Il s’agit d’une limitation liée à la conception de l’instruction « rethrow ».
+
+## <a name="further-reading"></a>Informations supplémentaires
+
+* [Billet de blog d’introduction](https://devblogs.microsoft.com/devops/introducing-smart-unit-tests/).
+* [Générer des tests unitaires pour votre code avec IntelliTest](../../test/generate-unit-tests-for-your-code-with-intellitest.md)

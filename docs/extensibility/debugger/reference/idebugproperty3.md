@@ -1,5 +1,5 @@
 ---
-title: IDebugProperty3 | Microsoft Docs
+title: IDebugProperty3 - France Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,28 +7,28 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProperty3 interface
 ms.assetid: 8f9be68d-4490-4eca-8f6b-8a10ed77e226
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8581e8163ab95eac7d49c5deca70c339804aac64
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: d2819724c204631112fd1a3e827126c4bc176972
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66348701"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80721044"
 ---
 # <a name="idebugproperty3"></a>IDebugProperty3
-Cette interface prend en charge :
+Cette interface fournit un support pour :
 
-- Récupération d’une chaîne de longueur arbitraire associée à la propriété.
+- Récupération d’une chaîne arbitrairement longue associée à la propriété.
 
-- Association d’un ID unique à la propriété.
+- Associer une pièce d’identité unique à la propriété.
 
-- Récupération d’une liste des visionneuses personnalisées pour la propriété.
+- Récupération d’une liste de téléspectateurs personnalisés pour la propriété.
 
-- Définition de la valeur d’une propriété avec la capacité à signaler les erreurs résultantes
+- Définir la valeur d’une propriété avec la possibilité de signaler les erreurs résultantes
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -36,34 +36,34 @@ Cette interface prend en charge :
 IDebugProperty3 : IDebugProperty2
 ```
 
-## <a name="notes-for-implementers"></a>Notes de publication pour les implémenteurs
- Le moteur de débogage (dé) implémente cette interface sur le même objet qui implémente [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) pour prendre en charge pour les chaînes longues, les ID de propriété et les visionneuses personnalisées.
+## <a name="notes-for-implementers"></a>Notes pour les implémenteurs
+ Le moteur de débogé (DE) implémente cette interface sur le même objet qui implémente [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) pour fournir un support pour les longues chaînes, les pièces d’ID de propriété, et les téléspectateurs personnalisés.
 
-## <a name="notes-for-callers"></a>Notes de publication pour les appelants
- Appelez [QueryInterface](/cpp/atl/queryinterface) sur un `IDebugProperty2` interface pour obtenir cette interface.
+## <a name="notes-for-callers"></a>Notes pour les appelants
+ Appelez [QueryInterface](/cpp/atl/queryinterface) `IDebugProperty2` sur une interface pour obtenir cette interface.
 
 ## <a name="methods-in-vtable-order"></a>Méthodes dans l'ordre Vtable
- Outre les méthodes héritées de `IDebugProperty2`, le `IDebugProperty3` interface expose les méthodes suivantes.
+ En plus des méthodes `IDebugProperty2`héritées, l’interface `IDebugProperty3` expose les méthodes suivantes.
 
 |Méthode|Description|
 |------------|-----------------|
 |[GetStringCharLength](../../../extensibility/debugger/reference/idebugproperty3-getstringcharlength.md)|Retourne la longueur de la chaîne associée à la propriété.|
-|[GetStringChars](../../../extensibility/debugger/reference/idebugproperty3-getstringchars.md)|Retourne la chaîne dans une mémoire tampon fournie par l’utilisateur.|
-|[CreateObjectID](../../../extensibility/debugger/reference/idebugproperty3-createobjectid.md)|Crée un ID unique pour cette propriété.|
+|[GetStringChars](../../../extensibility/debugger/reference/idebugproperty3-getstringchars.md)|Retourne la chaîne dans un tampon fourni par l’utilisateur.|
+|[CreateObjectID](../../../extensibility/debugger/reference/idebugproperty3-createobjectid.md)|Crée une pièce d’identité unique pour cette propriété.|
 |[DestroyObjectID](../../../extensibility/debugger/reference/idebugproperty3-destroyobjectid.md)|Détruit l’ID unique pour cette propriété.|
-|[GetCustomViewerCount](../../../extensibility/debugger/reference/idebugproperty3-getcustomviewercount.md)|Retourne le nombre de visionneuses personnalisées, cette propriété peut être consultée avec.|
-|[GetCustomViewerList](../../../extensibility/debugger/reference/idebugproperty3-getcustomviewerlist.md)|Retourne la liste des visionneuses personnalisées, cette propriété peut être consultée avec.|
-|[SetValueAsStringWithError](../../../extensibility/debugger/reference/idebugproperty3-setvalueasstringwitherror.md)|Définit la valeur de cette propriété, qui retourne un message d’erreur si quelque chose tournait mal.|
+|[GetCustomViewerCount](../../../extensibility/debugger/reference/idebugproperty3-getcustomviewercount.md)|Retourne le nombre de téléspectateurs personnalisés avec qui cette propriété peut être consultée.|
+|[GetCustomViewerList](../../../extensibility/debugger/reference/idebugproperty3-getcustomviewerlist.md)|Retourne la liste des téléspectateurs personnalisés que cette propriété peut être consultée avec.|
+|[SetValueAsStringWithError](../../../extensibility/debugger/reference/idebugproperty3-setvalueasstringwitherror.md)|Définit la valeur de cette propriété, le retour d’un message d’erreur si quelque chose a mal tourné.|
 
 ## <a name="remarks"></a>Notes
-- [SetValueAsStringWithError](../../../extensibility/debugger/reference/idebugproperty3-setvalueasstringwitherror.md) est la meilleure méthode pour le Gestionnaire de session de débogage (SDM) pour définir la valeur d’une propriété.
+- [SetValueAsStringWithError](../../../extensibility/debugger/reference/idebugproperty3-setvalueasstringwitherror.md) est le moyen privilégié pour le gestionnaire de débogique de session (SDM) de définir la valeur d’une propriété.
 
-## <a name="requirements"></a>Configuration requise
- En-tête : msdbg.h
+## <a name="requirements"></a>Spécifications
+ En-tête: msdbg.h
 
- Espace de noms : Microsoft.VisualStudio.Debugger.Interop
+ Namespace: Microsoft.VisualStudio.Debugger.Interop
 
- Assembly : Microsoft.VisualStudio.Debugger.Interop.dll
+ Assemblage: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>Voir aussi
 - [Interfaces de base](../../../extensibility/debugger/reference/core-interfaces.md)

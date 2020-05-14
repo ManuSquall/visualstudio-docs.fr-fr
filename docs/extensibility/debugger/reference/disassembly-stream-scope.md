@@ -1,5 +1,5 @@
 ---
-title: DISASSEMBLY_STREAM_SCOPE | Microsoft Docs
+title: DISASSEMBLY_STREAM_SCOPE Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - DISASSEMBLY_STREAM_SCOPE enumeration
 ms.assetid: 43e2b364-cbbe-4755-a7e6-a03f3054c965
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 724e32f83cfec31c2bacdab661407983af87efe6
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: fae1f22c6db22cd6cff93cfb1b98a28620a1537c
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66318240"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80737273"
 ---
-# <a name="disassemblystreamscope"></a>DISASSEMBLY_STREAM_SCOPE
-Spécifie l’étendue du flux de code machine.
+# <a name="disassembly_stream_scope"></a>DISASSEMBLY_STREAM_SCOPE
+Spécifie la portée du flux de démontage.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -48,28 +48,28 @@ public enum enum_DISASSEMBLY_STREAM_SCOPE {
 
 ## <a name="fields"></a>Champs
 `DSS_HUGE`\
-Spécifie que le contexte de code de désassemblage générerait une sortie plus qu’un client veut généralement récupérer dans un seul appel.
+Spécifie que le démontage du contexte du code générerait plus de sortie qu’un client voudrait généralement récupérer en un seul appel.
 
 `DSS_FUNCTION`\
-Spécifie que la fonction contenue dans le contexte de code doit être démontée. Spécifie que le flux de code machine représente une fonction, lorsque retournée par la [GetScope](../../../extensibility/debugger/reference/idebugdisassemblystream2-getscope.md) (méthode).
+Précise que la fonction contenue dans le contexte du code doit être démontée. Précise que le flux démonté représente une fonction, une fois retourné par la méthode [GetScope.](../../../extensibility/debugger/reference/idebugdisassemblystream2-getscope.md)
 
 `DSS_MODULE`\
-Quand retournée par la `IDebugDisassemblyStream2::GetScope` méthode, spécifie que le flux de code machine représente un module.
+Lorsqu’il `IDebugDisassemblyStream2::GetScope` est retourné par la méthode, spécifie que le flux démontage représente un module.
 
 `DSS_ALL`\
-Spécifie le code machine pour l’espace d’adressage entière.
+Spécifie le démontage pour l’ensemble de l’espace d’adresse.
 
 ## <a name="remarks"></a>Notes
-Passé en tant qu’argument à la [GetDisassemblyStream](../../../extensibility/debugger/reference/idebugprogram2-getdisassemblystream.md) méthode et retourné par le [GetScope](../../../extensibility/debugger/reference/idebugdisassemblystream2-getscope.md) (méthode).
+Passé comme un argument à la méthode [GetDisassemblyStream](../../../extensibility/debugger/reference/idebugprogram2-getdisassemblystream.md) et retourné par la méthode [GetScope.](../../../extensibility/debugger/reference/idebugdisassemblystream2-getscope.md)
 
-Ces valeurs peuvent être combinées avec un opérateur de bits `OR`.
+Ces valeurs peuvent être combinées avec un peu plus. `OR`
 
-## <a name="requirements"></a>Configuration requise
-En-tête : msdbg.h
+## <a name="requirements"></a>Spécifications
+En-tête: msdbg.h
 
-Espace de noms : Microsoft.VisualStudio.Debugger.Interop
+Namespace: Microsoft.VisualStudio.Debugger.Interop
 
-Assembly : Microsoft.VisualStudio.Debugger.Interop.dll
+Assemblage: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>Voir aussi
 - [Énumérations](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)

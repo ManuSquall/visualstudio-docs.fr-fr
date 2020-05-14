@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: aefabb480830f7fc649bc73d47a3b47594100616
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75569086"
 ---
 # <a name="how-to-display-urls-as-links-in-the-editor"></a>Guide pratique pour afficher des URL en tant que liens dans l'Éditeur
@@ -27,7 +27,7 @@ Vous pouvez choisir de configurer l’éditeur de code pour qu’il traite les U
 
 - affichent une **info-bulle** lorsque vous pointez dessus ;
 
-- essaient d’ouvrir le site web indiqué quand vous appuyez sur **Ctrl**+ **et cliquez** sur le lien. Par défaut, le site web apparaît dans le navigateur web interne.
+- Tentative d’ouvrir le site Indiqué lorsque vous cliquez**sur** **Ctrl**+sur le lien. Par défaut, le site web apparaît dans le navigateur web interne.
 
 ## <a name="display-urls-as-links"></a>Afficher les URL sous forme de liens
 
@@ -37,7 +37,7 @@ Vous pouvez choisir de configurer l’éditeur de code pour qu’il traite les U
 
 3. Pour modifier l’option pour un seul langage, développez le dossier pour ce langage et choisissez **Général**.
 
-     – ou –
+     Ou
 
      Pour modifier l’option pour tous les langages, développez le dossier **Tous les langages** et choisissez **Général**.
 

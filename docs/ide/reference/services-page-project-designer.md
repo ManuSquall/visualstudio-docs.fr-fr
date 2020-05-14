@@ -13,15 +13,15 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: d30d8e8ddcdc8c1fa4fe1935da1f1dedd1b18f4b
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75593562"
 ---
 # <a name="services-page-project-designer"></a>Services, page du Concepteur de projets
 
-Les services d’application cliente fournissent un accès simplifié aux services de connexion, de rôles et de profil [!INCLUDE[ajax_current_short](../../ide/reference/includes/ajax_current_short_md.md)] à partir des applications Windows Forms et WPF (Windows Presentation Foundation). Vous pouvez utiliser la page **Services** du **Concepteur de projets** pour activer et configurer les services d’application cliente pour votre projet.
+Les services d’application cliente fournissent un accès simplifié aux services de connexion, de rôles et de profil [!INCLUDE[ajax_current_short](../../ide/reference/includes/ajax_current_short_md.md)] depuis les applications Windows Forms et WPF (Windows Presentation Foundation). Vous pouvez utiliser la page **Services** du **Concepteur de projets** pour activer et configurer les services d’application cliente pour votre projet.
 
 Grâce aux services d’application cliente, vous pouvez utiliser un serveur centralisé pour authentifier les utilisateurs, déterminer le(s) rôle(s) assigné(s) à chaque utilisateur et stocker des paramètres d’application par utilisateur que vous pouvez partager sur le réseau. Pour plus d’informations, consultez [Services d’application cliente](/dotnet/framework/common-client-technologies/client-application-services).
 
@@ -29,9 +29,9 @@ Pour accéder à la page **Services**, sélectionnez un nœud de projet dans l�
 
 ## <a name="task-list"></a>Liste des tâches
 
-[Comment : configurer les services d’application cliente](/dotnet/framework/common-client-technologies/how-to-configure-client-application-services)
+[Comment : configurer les services d'application cliente](/dotnet/framework/common-client-technologies/how-to-configure-client-application-services)
 
-## <a name="uielement-list"></a>Liste des éléments d’interface
+## <a name="uielement-list"></a>Liste des éléments de l'interface utilisateur
 
  **Configuration**
 
@@ -77,6 +77,6 @@ Ouvre la [boîte de dialogue Paramètres avancés pour les services](../../ide/r
 
 - [Services d’application cliente](/dotnet/framework/common-client-technologies/client-application-services)
 - [Paramètres avancés pour les services, boîte de dialogue](../../ide/reference/advanced-settings-for-services-dialog-box.md)
-- [Comment : configurer les services d’application cliente](/dotnet/framework/common-client-technologies/how-to-configure-client-application-services)
+- [Comment : configurer les services d'application cliente](/dotnet/framework/common-client-technologies/how-to-configure-client-application-services)
 - [Page Compiler, Concepteur de projets (Visual Basic)](../../ide/reference/compile-page-project-designer-visual-basic.md)
-- [Page Générer, Concepteur de projet (C#)](../../ide/reference/build-page-project-designer-csharp.md)
+- [Générer, page du Concepteur de projets (C#)](../../ide/reference/build-page-project-designer-csharp.md)

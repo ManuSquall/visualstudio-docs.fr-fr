@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 1e083a0e1baeefc6807dccb2199cd0e5a9bd883d
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75595499"
 ---
 # <a name="list-modules-command"></a>Afficher les modules, commande
@@ -32,44 +32,44 @@ Debug.ListModules [/Address:yes|no] [/Name:yes|no] [/Order:yes|no]
 [/SymbolStatus:yes|no] [/Timestamp:yes|no] [/Version:yes|no]
 ```
 
-#### <a name="parameters"></a>Parameters
+#### <a name="parameters"></a>Paramètres
 /Address:`yes|no`
 
-Option facultative. Spécifie s’il faut afficher les adresses mémoire des modules. La valeur par défaut est `yes`.
+facultatif. Spécifie s’il faut afficher les adresses mémoire des modules. La valeur par défaut est `yes`.
 
 /Name:`yes|no`
 
-Option facultative. Spécifie s’il faut afficher les noms des modules. La valeur par défaut est `yes`.
+facultatif. Spécifie s’il faut afficher les noms des modules. La valeur par défaut est `yes`.
 
 /Order:`yes|no`
 
-Option facultative. Spécifie s’il faut afficher l’ordre des modules. La valeur par défaut est `no`.
+facultatif. Spécifie s’il faut afficher l’ordre des modules. La valeur par défaut est `no`.
 
 /Path:`yes|no`
 
-Option facultative. Spécifie s’il faut afficher les chemins des modules. La valeur par défaut est `yes`.
+facultatif. Spécifie s’il faut afficher les chemins des modules. La valeur par défaut est `yes`.
 
 /Process:`yes|no`
 
-Option facultative. Spécifie s’il faut afficher les processus des modules. La valeur par défaut est `no`.
+facultatif. Spécifie s’il faut afficher les processus des modules. La valeur par défaut est `no`.
 
 /SymbolFile:`yes|no`
 
-Option facultative. Spécifie s’il faut afficher les fichiers de symboles des modules. La valeur par défaut est `no`.
+facultatif. Spécifie s’il faut afficher les fichiers de symboles des modules. La valeur par défaut est `no`.
 
 /SymbolStatus:`yes|no`
 
-Option facultative. Spécifie s’il faut afficher les états des symboles des modules. La valeur par défaut est `yes`.
+facultatif. Spécifie s’il faut afficher les états des symboles des modules. La valeur par défaut est `yes`.
 
 /Timestamp:`yes|no`
 
-Option facultative. Spécifie s’il faut afficher les horodatages des modules. La valeur par défaut est `no`.
+facultatif. Spécifie s’il faut afficher les horodatages des modules. La valeur par défaut est `no`.
 
 /Version:`yes|no`
 
-Option facultative. Spécifie s’il faut afficher les versions des modules. La valeur par défaut est `no`.
+facultatif. Spécifie s’il faut afficher les versions des modules. La valeur par défaut est `no`.
 
-## <a name="example"></a>Exemple
+## <a name="example"></a> Exemple
 Cet exemple répertorie les noms, les adresses et les horodatages des modules pour le processus actuel.
 
 ```
@@ -78,6 +78,6 @@ Debug.ListModules /Address:yes /Name:yes /Order:no /Path:no /Process:no /SymbolF
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Visual Studio, commandes](../../ide/reference/visual-studio-commands.md)
-- [Fenêtre Commande](../../ide/reference/command-window.md)
-- [Guide pratique pour utiliser la fenêtre Modules](../../debugger/how-to-use-the-modules-window.md)
+- [Commandes de studio visuel](../../ide/reference/visual-studio-commands.md)
+- [Commande, fenêtre](../../ide/reference/command-window.md)
+- [Comment : utiliser la fenêtre Modules](../../debugger/how-to-use-the-modules-window.md)

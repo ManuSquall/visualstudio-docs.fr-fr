@@ -1,4 +1,4 @@
-- name: Vue d'ensemble
+- name: Vue d’ensemble
   href: accessing-data-in-visual-studio.md
 - name: Didacticiels
   items:
@@ -36,7 +36,7 @@
       href: n-tier-data-applications-overview.md
 - name: Guides pratiques
   items:
-    - name: Créer une base de données
+    - name: Création d'une base de données
       href: create-a-sql-database-by-using-a-designer.md
     - name: Connexions
       items:
@@ -50,7 +50,7 @@
       href: add-new-data-sources.md
     - name: Outils LINQ to SQL
       items:
-        - name: Vue d'ensemble
+        - name: Vue d’ensemble
           displayName: LINQ to SQL tools
           href: linq-to-sql-tools-in-visual-studio2.md
         - name: Modifier le type de retour d’une méthode DataContext
@@ -105,7 +105,7 @@
           href: validate-data-in-datasets.md
         - name: Enregistrer les données dans la base de données
           items:
-            - name: Vue d'ensemble
+            - name: Vue d’ensemble
               displayName: Save data to database
               href: save-data-back-to-the-database.md
             - name: Insérer de nouveaux enregistrements dans une base de données
@@ -120,7 +120,7 @@
               items:
                 - name: Enregistrer des données à l’aide d’une transaction
                   href: save-data-by-using-a-transaction.md
-                - name: "Procédure pas à pas\_: Enregistrer des données dans une transaction"
+                - name: "Procédure pas à pas\_: enregistrer des données dans une transaction"
                   href: save-data-in-a-transaction.md
             - name: Enregistrer des données dans une base de données (plusieurs tables)
               href: save-data-to-a-database-multiple-tables.md
@@ -211,7 +211,7 @@
       href: upgrade-dot-mdf-files.md
     - name: Résoudre des erreurs d’accès aux données
       href: additional-resources-for-troubleshooting-data-access-errors.md
-- name: Référence
+- name: Reference
   items:
     - name: Concepteur O/R (Linq to SQL)
       items:

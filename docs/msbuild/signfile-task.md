@@ -13,17 +13,17 @@ helpviewer_keywords:
 - MSBuild, SignFile task
 - SignFile task [MSBuild]
 ms.assetid: edef1819-ddeb-4e09-95de-fc7063ba9388
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 496017f386e731e553bfce237bd1d2eabea46f49
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: ee018b42fc23b0a520b510235117cb74729fd4b6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62976450"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79094518"
 ---
 # <a name="signfile-task"></a>SignFile (tâche)
 
@@ -45,13 +45,13 @@ Signe le fichier spécifié à l'aide du certificat spécifié.
 |`TimestampUrl`|Paramètre `String` facultatif.<br /><br /> Spécifie l'URL d'un serveur d'horodatage.|
 |`TargetFrameworkVersion`|Version du .NET Framework utilisée pour la cible.|
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes 
 
- En plus des paramètres énumérés ci-dessus, cette tâche hérite des paramètres de la classe <xref:Microsoft.Build.Utilities.Task>. Pour obtenir la liste de ces paramètres supplémentaires et leurs descriptions, consultez [Classe de base de tâche](../msbuild/task-base-class.md).
+ En plus des paramètres énumérés ci-dessus, cette tâche hérite des paramètres de la classe <xref:Microsoft.Build.Utilities.Task>. Pour une liste de ces paramètres supplémentaires et de leurs descriptions, voir [Classe de base de tâche](../msbuild/task-base-class.md).
 
-## <a name="example"></a>Exemple
+## <a name="example"></a> Exemple
 
- L'exemple suivant utilise la tâche `SignFile` pour signer les fichiers spécifiés dans la collection d'éléments `FilesToSign` avec le certificat spécifié par la propriété `Certificate`.
+ L'exemple suivant utilise la tâche `SignFile` pour signer les fichiers spécifiés dans la collection d'éléments `FilesToSign` avec le certificat spécifié par la propriété `CertificateThumbprint`.
 
 ```xml
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -74,5 +74,6 @@ Signe le fichier spécifié à l'aide du certificat spécifié.
 > L'empreinte de certificat correspond au hachage SHA-1 du certificat. Pour plus d’informations, voir [Obtenir le hachage SHA-1 d’un certificat d’autorité de certification racine de confiance](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc733076\(v\=ws.10\)). Si vous copiez et collez l’empreinte numérique à partir des détails du certificat, veillez à ne pas inclure le caractère invisible (3F) supplémentaire, ce qui risque d’empêcher `SignFile` de trouver le certificat.
 
 ## <a name="see-also"></a>Voir aussi
+
 - [Informations de référence sur les tâches](../msbuild/msbuild-task-reference.md)
 - [Tâches](../msbuild/msbuild-tasks.md)

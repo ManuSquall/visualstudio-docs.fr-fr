@@ -14,15 +14,15 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: b8eeb1a03e584b0b39030ec56ca6945a2d5ced78
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75570126"
 ---
 # <a name="deploy-devenvexe"></a>/Deploy (devenv.exe)
 
-Déploie une solution après une génération ou une régénération. S’applique aux projets de code managé uniquement.
+Déploie une solution après une génération ou une regénération. S’applique aux projets de code managé uniquement.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -34,33 +34,33 @@ devenv SolutionName /Deploy [SolnConfigName [/Project ProjName [/ProjectConfig P
 
 - *SolutionName*
 
-  Requis. Chemin complet et nom du fichier solution.
+  Obligatoire. Chemin complet et nom du fichier solution.
 
 - *SolnConfigName*
 
-  Option facultative. Nom de la configuration de solution (par exemple, `Debug` ou `Release`) à utiliser pour générer la solution nommée dans *SolutionName*. Si plusieurs plateformes de solution sont disponibles, vous devez également en spécifier une (par exemple, `Debug|Win32`). Si cet argument n’est pas spécifié ou consiste en une chaîne vide (`""`), l’outil utilise la configuration active de la solution.
+  facultatif. Nom de la configuration de solution (par exemple, `Debug` ou `Release`) à utiliser pour générer la solution nommée dans *SolutionName*. Si plusieurs plateformes de solution sont disponibles, vous devez également en spécifier une (par exemple, `Debug|Win32`). Si cet argument n’est pas spécifié ou consiste en une chaîne vide (`""`), l’outil utilise la configuration active de la solution.
 
-- `/Project` *ProjName*
+- `/Project`*ProjName ProjName*
 
-  Option facultative. Chemin et nom d’un fichier projet dans la solution. Vous pouvez entrer le nom d’affichage du projet ou un chemin d’accès relatif du dossier *SolutionName* au fichier projet. Vous pouvez également saisir le chemin d’accès complet et le nom du fichier projet.
+  facultatif. Chemin et nom d’un fichier projet dans la solution. Vous pouvez entrer le nom d’affichage du projet ou un chemin d’accès relatif du dossier *SolutionName* au fichier projet. Vous pouvez également saisir le chemin d’accès complet et le nom du fichier projet.
 
 - `/ProjectConfig` *ProjConfigName*
 
-  Option facultative. Nom d’une configuration de build de projet (par exemple, `Debug` ou `Release`) à utiliser lors de la génération du `/Project` nommé. Si plusieurs plateformes de solution sont disponibles, vous devez également en spécifier une (par exemple, `Debug|Win32`). Si ce commutateur est spécifié, il remplace l’argument *SolnConfigName*.
+  facultatif. Nom d’une configuration de build de projet (par exemple, `Debug` ou `Release`) à utiliser lors de la génération du `/Project` nommé. Si plusieurs plateformes de solution sont disponibles, vous devez également en spécifier une (par exemple, `Debug|Win32`). Si ce commutateur est spécifié, il remplace l’argument *SolnConfigName*.
 
-- `/Out` *outputFileName*
+- `/Out`*OutputFilename (en)*
 
-  Option facultative. Nom du fichier auquel vous souhaitez envoyer la sortie de l’outil. Si le fichier existe déjà, l’outil ajoute la sortie à la fin du fichier.
+  facultatif. Nom du fichier auquel vous souhaitez envoyer la sortie de l’outil. Si le fichier existe déjà, l’outil ajoute la sortie à la fin du fichier.
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Notes 
 
 Le projet spécifié doit être un projet de déploiement. Si ce n’est pas le cas, une erreur se produit au moment du déploiement du projet généré, qui échoue.
 
 Placez entre guillemets doubles les chaînes contenant des espaces.
 
-Il est possible d’afficher une synthèse des informations de build, erreurs incluses, dans la fenêtre **Commande** et dans tous les fichiers journaux spécifiés avec le commutateur [/Out](out-devenv-exe.md).
+Les informations sommaires pour les builds, y compris les erreurs, peuvent être affichées dans la fenêtre **de commande,** ou dans n’importe quel fichier de journal spécifié avec l’interrupteur [/Out.](out-devenv-exe.md)
 
-## <a name="example"></a>Exemple
+## <a name="example"></a> Exemple
 
 Cet exemple déploie le projet `CSharpWinApp` suivant la configuration de build de projet `Release` présente dans `MySolution`.
 
@@ -74,5 +74,5 @@ devenv "%USERPROFILE%\source\repos\MySolution\MySolution.sln" /deploy Release /p
 - [/Project (devenv.exe)](../../ide/reference/project-devenv-exe.md)
 - [/Build (devenv.exe)](../../ide/reference/build-devenv-exe.md)
 - [/Clean (devenv.exe)](../../ide/reference/clean-devenv-exe.md)
-- [/Rebuild (devenv.exe)](../../ide/reference/rebuild-devenv-exe.md)
+- [/Reconstruire (devenv.exe)](../../ide/reference/rebuild-devenv-exe.md)
 - [/Out (devenv.exe)](../../ide/reference/out-devenv-exe.md)

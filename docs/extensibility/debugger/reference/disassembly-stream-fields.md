@@ -1,5 +1,5 @@
 ---
-title: DISASSEMBLY_STREAM_FIELDS | Microsoft Docs
+title: DISASSEMBLY_STREAM_FIELDS Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - DISASSEMBLY_STREAM_FIELDS enumeration
 ms.assetid: cfc9b4de-c756-4844-bea7-d9f186a51d1b
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 3499ce5bfe46f3185dd5c8ca9e2ada055544c8c8
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: d10f2143cbefa86442e4087ac098020f5f2bd6ac
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66318257"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80737357"
 ---
-# <a name="disassemblystreamfields"></a>DISASSEMBLY_STREAM_FIELDS
-Spécifie les informations à récupérer sur un champ de code machine.
+# <a name="disassembly_stream_fields"></a>DISASSEMBLY_STREAM_FIELDS
+Précise les informations à récupérer sur un champ de démontage.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -66,60 +66,60 @@ public enum enum_DISASSEMBLY_STREAM_FIELDS {
 
 ## <a name="fields"></a>Champs
 `DSF_ADDRESS`\
-Initialize/utiliser le `bstrAddress` champ.
+Initialiser/utiliser `bstrAddress` le champ.
 
 `DSF_ADDRESSOFFSET`\
-Initialize/utiliser le `bstrAddressOffset` champ.
+Initialiser/utiliser `bstrAddressOffset` le champ.
 
 `DSF_CODEBYTES`\
-Initialize/utiliser le `bstrCodeBytes` champ.
+Initialiser/utiliser `bstrCodeBytes` le champ.
 
 `DSF_OPCODE`\
-Initialize/utiliser le `bstrOpCode` champ.
+Initialiser/utiliser `bstrOpCode` le champ.
 
 `DSF_OPERANDS`\
-Initialize/utiliser le `bstrOperands` champ.
+Initialiser/utiliser `bstrOperands` le champ.
 
 `DSF_SYMBOL`\
-Initialize/utiliser le `bstrSymbol` champ.
+Initialiser/utiliser `bstrSymbol` le champ.
 
 `DSF_CODELOCATIONID`\
-Initialize/utiliser le `uCodeLocationId` champ.
+Initialiser/utiliser `uCodeLocationId` le champ.
 
 `DSF_POSITION`\
-Initialize/utiliser le `posBeg` et `posEnd` champs.
+Initialiser/utiliser `posBeg` les `posEnd` champs et les champs.
 
 `DSF_DOCUMENTURL`\
-Initialize/utiliser le `bstrDocumentUrl` champ.
+Initialiser/utiliser `bstrDocumentUrl` le champ.
 
 `DSF_BYTEOFFSET`\
-Initialize/utiliser le `dwByteOffset` champ.
+Initialiser/utiliser `dwByteOffset` le champ.
 
 `DSF_FLAGS`\
-Initialize/utiliser le `dwFlags` ([DISASSEMBLY_FLAGS](../../../extensibility/debugger/reference/disassembly-flags.md)) champ.
+Initialiser/utiliser `dwFlags` le champ ([DISASSEMBLY_FLAGS).](../../../extensibility/debugger/reference/disassembly-flags.md)
 
 `DSF_OPERANDS_SYMBOLS`\
-Inclure les noms de symboles dans le `bstrOperands` champ.
+Inclure des noms `bstrOperands` de symboles sur le terrain.
 
 `DSF_ALL`\
-Spécifie tous les champs pour le flux de code machine.
+Spécifie tous les champs pour le flux de démontage.
 
 ## <a name="remarks"></a>Notes
-Passé en tant que paramètre à la [en lecture](../../../extensibility/debugger/reference/idebugdisassemblystream2-read.md) méthode pour indiquer les champs de la [DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md) structure doivent être initialisées.
+Passé comme paramètre à la méthode [Lire](../../../extensibility/debugger/reference/idebugdisassemblystream2-read.md) pour indiquer quels champs de la structure [de démonmblyData](../../../extensibility/debugger/reference/disassemblydata.md) doivent être paralysés.
 
-Utilisé pour le `dwFields` membre de la `DisassemblyData` structure pour indiquer quels champs sont utilisés et valide lors de la structure est retournée.
+Utilisé pour `dwFields` le `DisassemblyData` membre de la structure pour indiquer quels champs sont utilisés et valides lorsque la structure est retournée.
 
-Ces valeurs peuvent être combinées avec un opérateur de bits `OR`.
+Ces valeurs peuvent être combinées avec un peu plus. `OR`
 
-## <a name="requirements"></a>Configuration requise
-En-tête : msdbg.h
+## <a name="requirements"></a>Spécifications
+En-tête: msdbg.h
 
-Espace de noms : Microsoft.VisualStudio.Debugger.Interop
+Namespace: Microsoft.VisualStudio.Debugger.Interop
 
-Assembly : Microsoft.VisualStudio.Debugger.Interop.dll
+Assemblage: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>Voir aussi
 - [Énumérations](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
 - [DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md)
-- [Read](../../../extensibility/debugger/reference/idebugdisassemblystream2-read.md)
+- [Lire](../../../extensibility/debugger/reference/idebugdisassemblystream2-read.md)
 - [DISASSEMBLY_FLAGS](../../../extensibility/debugger/reference/disassembly-flags.md)

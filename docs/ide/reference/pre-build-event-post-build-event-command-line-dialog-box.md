@@ -35,10 +35,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 38712c25718670ea15324e3daf6fadc138cb08a6
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75567916"
 ---
 # <a name="pre-build-eventpost-build-event-command-line-dialog-box"></a>Ligne de commande de l’événement pré-build/post-build, boîte de dialogue
@@ -48,7 +48,7 @@ Vous pouvez taper des événements pré-build ou post-build pour la [page Évén
 > [!NOTE]
 > Les événements pré-build ne fonctionnent pas si le projet est à jour et qu’aucune build n’est déclenchée.
 
-## <a name="ui-element-list"></a>Liste d'éléments UI
+## <a name="ui-element-list"></a>Liste des éléments de l'interface utilisateur
 
 **Zone d’édition de la ligne de commande**
 
@@ -65,7 +65,7 @@ Développe la zone d’édition pour afficher une liste de macros à insérer da
 
 Répertorie les macros disponibles et leur valeur. Consultez Macros ci-dessous pour obtenir une description de chacune. Vous pouvez sélectionner une seule macro à la fois pour l’insérer dans la zone d’édition de la ligne de commande.
 
-**Insert**
+**Insérer**
 
 Insère dans la zone d’édition de la ligne de commande la macro sélectionnée dans la table de macros.
 
@@ -98,6 +98,6 @@ Vous pouvez utiliser l’une de ces macros pour spécifier des emplacements de f
 ## <a name="see-also"></a>Voir aussi
 
 - [Spécification d’événements de build personnalisés dans Visual Studio](../../ide/specifying-custom-build-events-in-visual-studio.md)
-- [Événements de build, page du Concepteur de projets (C#)](../../ide/reference/build-events-page-project-designer-csharp.md)
-- [Guide pratique pour spécifier des événements de build (Visual Basic)](../../ide/how-to-specify-build-events-visual-basic.md)
-- [Guide pratique pour spécifier des événements de build (C#)](../../ide/how-to-specify-build-events-csharp.md)
+- [Construire la page événements, concepteur de projets (C)](../../ide/reference/build-events-page-project-designer-csharp.md)
+- [Comment : Spécifier des événements de construction (visual basic)](../../ide/how-to-specify-build-events-visual-basic.md)
+- [Comment : Spécifier les événements de construction (C)](../../ide/how-to-specify-build-events-csharp.md)

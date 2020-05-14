@@ -1,5 +1,5 @@
 ---
-title: CONTEXT_INFO | Microsoft Docs
+title: CONTEXT_INFO Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - CONTEXT_INFO structure
 ms.assetid: 6b513f4e-e7b0-4969-adf0-2205ccc1e09b
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 6c50d5ea930f05d22b68416978909cceca17727d
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 4838df34c14b936af15b8a7a582a6d30ea12bee1
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66346464"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80737569"
 ---
-# <a name="contextinfo"></a>CONTEXT_INFO
-Un contexte de la mémoire ou d’un contexte de code décrite par cette structure.
+# <a name="context_info"></a>CONTEXT_INFO
+Cette structure décrit un contexte de mémoire ou un contexte de code.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -53,37 +53,37 @@ public struct CONTEXT_INFO {
 
 ## <a name="members"></a>Membres
 `dwFields`\
-Une combinaison d’indicateurs d’il [CONTEXT_INFO_FIELDS](../../../extensibility/debugger/reference/context-info-fields.md) énumération qui spécifie quels champs sont renseignés<strong>.</strong>
+Une combinaison de drapeaux de lui [CONTEXT_INFO_FIELDS](../../../extensibility/debugger/reference/context-info-fields.md) énumération qui spécifie quels champs sont remplis<strong>.</strong>
 
 `bstrModuleUrl`\
 Le nom du module où se trouve le contexte.
 
 `bstrFunction`\
-Le nom de la fonction où se trouve le contexte.
+Le nom de fonction où se trouve le contexte.
 
 `posFunctionOffset`\
-Un [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) structure qui identifie l’offset de ligne et colonne de la fonction associée au contexte de code.
+Une structure [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) qui identifie la ligne et la colonne offset de la fonction associée au contexte du code.
 
 `bstrAddress`\
 L’adresse dans le code où se trouve le contexte donné.
 
 `bstrAddressOffset`\
-Le décalage de l’adresse dans le code où se trouve le contexte donné.
+La compensation de l’adresse dans le code où se trouve le contexte donné.
 
 `bstrAddressAbsolute`\
-L’adresse absolue en mémoire où se trouve le contexte donné.
+L’adresse absolue dans la mémoire où se trouve le contexte donné.
 
 ## <a name="remarks"></a>Notes
-Cette structure est retournée à partir d’un appel à la [GetInfo](../../../extensibility/debugger/reference/idebugmemorycontext2-getinfo.md) (méthode).
+Cette structure est revenue d’un appel à la méthode [GetInfo.](../../../extensibility/debugger/reference/idebugmemorycontext2-getinfo.md)
 
-En règle générale pour cette structure est à l’appui d’un **mémoire** fenêtre de débogage.
+Une utilisation typique pour cette structure est à l’appui d’une fenêtre de débogé de **mémoire.**
 
-## <a name="requirements"></a>Configuration requise
-En-tête : msdbg.h
+## <a name="requirements"></a>Spécifications
+En-tête: msdbg.h
 
-Espace de noms : Microsoft.VisualStudio.Debugger.Interop
+Namespace: Microsoft.VisualStudio.Debugger.Interop
 
-Assembly : Microsoft.VisualStudio.Debugger.Interop.dll
+Assemblage: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>Voir aussi
 - [Structures et unions](../../../extensibility/debugger/reference/structures-and-unions.md)

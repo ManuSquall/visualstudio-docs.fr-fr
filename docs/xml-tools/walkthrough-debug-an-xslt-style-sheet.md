@@ -1,5 +1,5 @@
 ---
-title: Déboguer les feuilles de style XSLT
+title: Feuilles de style Debug XSLT
 ms.date: 03/05/2019
 ms.topic: conceptual
 ms.assetid: 3db9fa5a-f619-4cb6-86e7-64b364e58e5d
@@ -9,98 +9,98 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: cd5882cc606bf241a281940464ba028e77986807
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 95f26af1da51d4c83ae78adcb7372b32364d8a2b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75592475"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79301719"
 ---
-# <a name="walkthrough-debug-an-xslt-style-sheet"></a>Procédure pas à pas : déboguer une feuille de style XSLT
+# <a name="walkthrough-debug-an-xslt-style-sheet"></a>Procédure pas à pas: Debug une feuille de style XSLT
 
-Les étapes de cette procédure pas à pas montrent comment utiliser le débogueur XSLT. Elles comprennent l'affichage des variables, la définition de points d'arrêt et le parcours pas à pas du code. Le débogueur vous permet d’exécuter le code ligne par ligne.
+Les étapes de cette procédure pas à pas montrent comment utiliser le débogueur XSLT. Elles comprennent l'affichage des variables, la définition de points d'arrêt et le parcours pas à pas du code. Le débbuggeur vous permet d’exécuter le code une ligne à la fois.
 
-Pour préparer cette procédure pas à pas, commencez par copier les deux [exemples de fichiers](#sample-files) sur votre ordinateur local. L’une est la feuille de style, et l’autre est le fichier XML que nous allons utiliser comme entrée de la feuille de style. Dans cette procédure pas à pas, la feuille de style que nous utilisons recherche tous les livres dont le coût est inférieur au prix moyen des livres.
+Pour vous préparer à cette procédure pas à pas, copiez d’abord les deux [fichiers d’échantillons](#sample-files) sur votre ordinateur local. L’une est la feuille de style, et l’autre est le fichier XML que nous allons utiliser comme entrée à la feuille de style. Dans cette procédure pas à pas, la feuille de style que nous utilisons trouve tous les livres dont le coût est inférieur au prix moyen du livre.
 
 > [!NOTE]
-> Le débogueur XSLT est uniquement disponible dans l’édition Enterprise de Visual Studio.
+> Le débbugger XSLT n’est disponible que dans l’édition Enterprise de Visual Studio.
 
 ## <a name="start-debugging"></a>Démarrer le débogage
 
-1. Dans le menu **fichier** , choisissez **ouvrir** > **fichier**.
+1. Dans le menu **Fichier,** choisissez **Open** > **File**.
 
-2. Recherchez le fichier *Below-Average. xsl* , puis choisissez **ouvrir**.
+2. Localiser le fichier *ci-dessous-moyenne.xsl* et choisir **Open**.
 
    La feuille de style s’ouvre dans l’éditeur XML.
 
-3. Cliquez sur le bouton Parcourir ( **...** ) dans le champ **entrée** de la fenêtre Propriétés du document. (Si la fenêtre **Propriétés** n’est pas visible, cliquez avec le bouton droit n’importe où sur le fichier ouvert dans l’éditeur, puis choisissez **Propriétés**.)
+3. Cliquez sur le bouton de navigation (**...**) sur le champ **d’entrée** de la fenêtre des propriétés du document. (Si la fenêtre **Propriétés** n’est pas visible, cliquez à droite n’importe où sur le fichier ouvert dans l’éditeur, puis choisissez **propriétés**.)
 
-4. Recherchez le fichier *books. xml* , puis choisissez **ouvrir**.
+4. Localiser le fichier *books.xml,* puis choisir **Open**.
 
-   Cela définit le fichier de document source utilisé pour la transformation XSLT.
+   Cela définit le fichier de document source qui est utilisé pour la transformation XSLT.
 
-5. Définissez un [point d’arrêt](../debugger/using-breakpoints.md) sur la ligne 12 de *Below-Average. xsl*. Pour ce faire, vous pouvez procéder de plusieurs façons :
+5. Définissez un [point d’arrêt](../debugger/using-breakpoints.md) sur la ligne 12 de *below-average.xsl*. Vous pouvez le faire de l’une des multiples façons :
 
-   - Cliquez dans la marge de l’éditeur à la ligne 12.
+   - Cliquez sur la marge de l’éditeur sur la ligne 12.
 
    - Cliquez n’importe où sur la ligne 12, puis appuyez sur **F9**.
 
-   - Cliquez avec le bouton droit sur la balise de début `xsl:if`, puis choisissez **point d’arrêt** > insérer un **point d’arrêt**.
+   - Cliquez à `xsl:if` droite sur l’étiquette de démarrage, puis choisissez **Breakpoint** > **Insert Breakpoint**.
 
-      ![Insérer un point d’arrêt dans un fichier XSL dans Visual Studio](media/insert-breakpoint.PNG)
+      ![Insérez le point d’arrêt dans le fichier XSL dans Visual Studio](media/insert-breakpoint.PNG)
 
-6. Dans la barre de menus, choisissez **XML** > **Démarrer le débogage XSLT** (ou appuyez sur **ALT**+**F5**).
+6. Sur la barre de menu, choisissez **XML** > **Start XSLT Debugging** (ou, appuyez sur **Alt**+**F5**).
 
-   Le processus de débogage démarre.
+   Le processus de débogage commence.
 
-   Dans l’éditeur, le débogueur est positionné sur l’élément `xsl:if` de la feuille de style. Un autre fichier nommé *Below-Average. xml* s’ouvre dans l’éditeur. Il s’agit du fichier de sortie qui sera rempli à mesure que chaque nœud du fichier d’entrée *books. xml* est traité.
+   Dans l’éditeur, le débbuggeur `xsl:if` est positionné sur l’élément de la feuille de style. Un autre fichier nommé *ci-dessous-average.xml s’ouvre* dans l’éditeur; c’est le fichier de sortie qui sera peuplé comme chaque nœud dans le fichier d’entrée *books.xml* est traitée.
 
-   Les fenêtres **automatique**, **variables locales**et **Espion 1** s’affichent en bas de la fenêtre de Visual Studio. La fenêtre variables **locales** affiche toutes les variables locales et leurs valeurs actuelles. Cela comprend les variables définies dans la feuille de style ainsi que celles que le débogueur utilise pour assurer le suivi des nœuds actuellement dans le contexte.
+   Les **Autos**, **Les sections locales**et les fenêtres **Watch 1** apparaissent au bas de la fenêtre Visual Studio. La fenêtre local affiche toutes les variables **locales** et leurs valeurs actuelles. Cela comprend les variables définies dans la feuille de style ainsi que celles que le débogueur utilise pour assurer le suivi des nœuds actuellement dans le contexte.
 
-## <a name="watch-window"></a>Fenêtre d'observation
+## <a name="watch-window"></a>Fenêtre Espion
 
-Nous allons ajouter deux variables à la fenêtre **Espion 1** afin que nous puissions examiner leurs valeurs lors du traitement du fichier d’entrée. (Vous pouvez également utiliser la fenêtre **variables locales** pour examiner les valeurs si les variables que vous souhaitez surveiller sont déjà présentes).
+Nous ajouterons deux variables à la fenêtre **Watch 1** afin que nous puissions examiner leurs valeurs au fur et à mesure que le fichier d’entrée est traité. (Vous pouvez également utiliser la fenêtre **Locals** pour examiner les valeurs si les variables que vous voulez regarder sont déjà là.)
 
-1. Dans le menu **Déboguer** , choisissez **Windows** > **Watch** > **Espion 1**.
+1. Dans le menu **Debug,** choisissez **Windows** > **Watch** > **Watch 1**.
 
-   La fenêtre **Espion 1** devient visible.
+   La fenêtre **Watch 1** devient visible.
 
-2. Tapez `$bookAverage` dans le champ **nom** , puis appuyez sur **entrée**.
+2. Tapez `$bookAverage` dans le champ **nom,** puis appuyez **sur Entrez**.
 
-   La valeur de la variable `$bookAverage` s’affiche dans le champ **valeur** .
+   La valeur `$bookAverage` des écrans variables dans le champ **De** valeur.
 
-3. Sur la ligne suivante, tapez `self::node()` dans le champ **nom** , puis appuyez sur **entrée**.
+3. Sur la ligne `self::node()` suivante, tapez dans le champ **Nom,** puis appuyez **sur Enter**.
 
-   `self::node()` est une expression XPath qui prend la valeur du nœud de contexte actuel. La valeur de l'expression XPath `self::node()` est le premier nœud book. Cette valeur change à mesure que la transformation progresse.
+   `self::node()`est une expression XPath qui évalue au nœud de contexte actuel. La valeur de l'expression XPath `self::node()` est le premier nœud book. Cette valeur change à mesure que la transformation progresse.
 
-4. Développez le nœud `self::node()`, puis développez le nœud dont la valeur est `price`.
+4. Élargir `self::node()` le nœud, puis élargir le nœud qui est la valeur est `price`.
 
-   ![Fenêtre Espion lors du débogage XSLT dans Visual Studio](media/xslt-debugging-watch-window.png)
+   ![Regarder la fenêtre pendant le débogage XSLT dans Visual Studio](media/xslt-debugging-watch-window.png)
 
-   Vous pouvez voir la valeur du prix du livre pour le nœud book actuel et la comparer à la valeur `$bookAverage`. Étant donné que le prix du livre est inférieur à la moyenne, la condition de `xsl:if` doit être correctement exécutée lorsque vous poursuivez le processus de débogage.
+   Vous pouvez voir la valeur du prix du livre pour `$bookAverage` le nœud de livre actuel et le comparer à la valeur. Parce que le prix du `xsl:if` livre est inférieur à la moyenne, la condition devrait réussir lorsque vous continuez le processus de débogage.
 
-## <a name="step-through-the-code"></a>Parcourir le code
+## <a name="step-through-the-code"></a>Passez à travers le code
 
-1. Appuyez sur **F5** pour continuer.
+1. Appuyez **sur F5** pour continuer.
 
-   Étant donné que le premier nœud book a respecté la condition `xsl:if`, le nœud book est ajouté au fichier de sortie *Below-Average. xml* . Le débogueur continue l'exécution jusqu'à ce qu'il se repositionne sur l'élément `xsl:if` de la feuille de style. Le débogueur est maintenant positionné sur le deuxième nœud book dans le fichier *books. xml* .
+   Parce que le premier nœud de livre satisfait à la `xsl:if` condition, le nœud de livre est ajouté au fichier de sortie inférieur à la *moyenne.xml.* Le débogueur continue l'exécution jusqu'à ce qu'il se repositionne sur l'élément `xsl:if` de la feuille de style. Le débbuggeur est maintenant positionné sur le nœud de deuxième livre dans le fichier *books.xml.*
 
-   Dans la fenêtre **Espion 1** , la valeur `self::node()` est remplacée par le deuxième nœud book. En examinant la valeur de l'élément price, vous pouvez constater que le prix est supérieur à la moyenne, donc la condition `xsl:if` ne doit pas se vérifier.
+   Dans la fenêtre Watch `self::node()` **1,** la valeur change au deuxième nœud de livre. En examinant la valeur de l'élément price, vous pouvez constater que le prix est supérieur à la moyenne, donc la condition `xsl:if` ne doit pas se vérifier.
 
-2. Appuyez sur **F5** pour continuer.
+2. Appuyez **sur F5** pour continuer.
 
-   Étant donné que le deuxième nœud book ne remplit pas la condition `xsl:if`, le nœud book n’est pas ajouté au fichier de sortie *Below-Average. xml* . Le débogueur continue à s’exécuter jusqu’à ce qu’il soit de nouveau positionné sur l’élément `xsl:if` de la feuille de style. Le débogueur est maintenant positionné sur le troisième nœud `book` du fichier *books. xml* .
+   Parce que le nœud `xsl:if` de deuxième livre ne répond pas à la condition, le nœud de livre n’est pas ajouté au fichier de sortie *ci-dessous-moyenne.xml.* Le débbuggeur continue d’exécuter jusqu’à `xsl:if` ce qu’il soit positionné à nouveau sur l’élément dans la feuille de style. Le débbuggeur est maintenant positionné `book` sur le troisième nœud dans le fichier *books.xml.*
 
-   Dans la fenêtre **Espion 1** , la valeur `self::node()` est remplacée par le troisième nœud book. En examinant la valeur de l’élément `price`, vous pouvez déterminer que le prix est inférieur à la moyenne. La condition de `xsl:if` doit être correctement exécutée.
+   Dans la fenêtre Watch `self::node()` **1,** la valeur change au nœud du troisième livre. En examinant la `price` valeur de l’élément, vous pouvez déterminer que le prix est inférieur à la moyenne. La `xsl:if` condition devrait réussir.
 
-3. Appuyez sur **F5** pour continuer.
+3. Appuyez **sur F5** pour continuer.
 
-   Étant donné que la condition de `xsl:if` a été satisfaite, le troisième livre est ajouté au fichier de sortie *Below-Average. xml* . Tous les livres du document XML ont été traités et le débogueur s'arrête.
+   Puisque `xsl:if` la condition était satisfaite, le troisième livre est ajouté au fichier de sortie inférieur à *la moyenne.xml.* Tous les livres du document XML ont été traités et le débogueur s'arrête.
 
-## <a name="sample-files"></a>Exemples de fichiers
+## <a name="sample-files"></a>Exemple de fichiers
 
 La procédure pas à pas utilise les deux fichiers suivants.
 
-### <a name="below-averagexsl"></a>Below-Average. Xsl
+### <a name="below-averagexsl"></a>en dessous de la moyenne.xsl
 
 ```xml
 <?xml version='1.0'?>

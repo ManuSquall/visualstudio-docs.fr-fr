@@ -1,5 +1,5 @@
 ---
-title: IDebugDisassemblyStream2::GetCodeLocationId | Microsoft Docs
+title: IDebugDisassemblyStream2::GetCodeLocationId (fr) Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugDisassemblyStream2::GetCodeLocationId
 ms.assetid: 567adfb8-2f54-499a-a027-e4ecb82277ef
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 58e3b12ecbc75b7d07d60ac399412dc5b0deb73b
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 32be70e11776177a0e68f09689c2262497703ab1
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66351695"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80732257"
 ---
 # <a name="idebugdisassemblystream2getcodelocationid"></a>IDebugDisassemblyStream2::GetCodeLocationId
-Retourne un identificateur d’emplacement de code pour un contexte de code particulière.
+Renvoie un identifiant de localisation de code pour un contexte de code particulier.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -43,17 +43,17 @@ int GetCodeLocationId( 
 
 ## <a name="parameters"></a>Paramètres
 `pCodeContext`\
-[in] Un [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) objet à convertir en un identificateur.
+[dans] Un objet [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) à convertir en identifiant.
 
-`puCodeLocationId` [out] Retourne l’identificateur d’emplacement de code. Consultez la section Notes.
+`puCodeLocationId`[out] Retourne l’identifiant de localisation du code. Consultez la section Notes.
 
 ## <a name="return-value"></a>Valeur de retour
- En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur. Retourne `E_CODE_CONTEXT_OUT_OF_SCOPE` si le contexte de code est valide, mais en dehors de l’étendue.
+ En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur. Retourne `E_CODE_CONTEXT_OUT_OF_SCOPE` si le contexte du code est valide mais en dehors de la portée.
 
 ## <a name="remarks"></a>Notes
- L’identificateur d’emplacement de code est spécifique au moteur de débogage (dé) prenant en charge le code machine. Cet identificateur d’emplacement est utilisé en interne par le dé pour effectuer le suivi des positions dans le code et est généralement une adresse ou un décalage quelconque. La seule exigence est que si le contexte de code d’un emplacement est inférieur au contexte du code d’un autre emplacement, puis l’identificateur d’emplacement de code correspondant du premier contexte de code doit également être inférieure à l’identificateur d’emplacement de code de la deuxième contexte de code.
+ L’identifiant de localisation du code est spécifique au moteur de débogs (DE) supportant le démontage. Cet identifiant de localisation est utilisé en interne par le DE pour suivre les positions dans le code et est généralement une adresse ou un décalage quelconque. La seule exigence est que si le contexte de code d’un emplacement est inférieur au contexte de code d’un autre emplacement, l’identifiant de localisation de code correspondant du premier contexte de code doit également être inférieur à l’identifiant de localisation du code du deuxième contexte de code.
 
- Pour récupérer le contexte de code d’un identificateur d’emplacement de code, appelez le [GetCodeContext](../../../extensibility/debugger/reference/idebugdisassemblystream2-getcodecontext.md) (méthode).
+ Pour récupérer le contexte de code d’un identifiant de localisation de code, appelez la méthode [GetCodeContext.](../../../extensibility/debugger/reference/idebugdisassemblystream2-getcodecontext.md)
 
 ## <a name="see-also"></a>Voir aussi
 - [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md)

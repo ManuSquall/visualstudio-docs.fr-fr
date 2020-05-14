@@ -1,5 +1,5 @@
 ---
-title: IDebugProgramNode2::GetEngineInfo | Microsoft Docs
+title: IDebugProgramNode2::GetEngineInfo - France Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProgramNode2::GetEngineInfo
 ms.assetid: 664e7fe5-9100-4b7d-9dc5-e5a4dd0d0451
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 9d49bbaf4ca4b4d85d198eeb51b2eb4d13508d39
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: c2e74ba3c0f826314818bc883778a6364ff3fb6e
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66351160"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80722102"
 ---
 # <a name="idebugprogramnode2getengineinfo"></a>IDebugProgramNode2::GetEngineInfo
-Obtient le nom et l’identificateur du moteur de débogage (DE) un programme en cours d’exécution.
+Obtient le nom et l’identifiant du moteur de débogé (DE) en cours d’exécution d’un programme.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -43,13 +43,13 @@ int GetEngineInfo(
 
 ## <a name="parameters"></a>Paramètres
 `pbstrEngine`\
-[out] Retourne le nom de la DE l’exécution du programme (C++-spécifiques : cela peut être un pointeur null, indiquant que l’appelant n’est pas intéressés par le nom du moteur).
+[out] Retourne le nom de l’EN exécutant le programme (spécifique À la C : il peut s’agir d’un pointeur nul indiquant que l’appelant n’est pas intéressé par le nom du moteur).
 
 `pguidEngine`\
-[out] Retourne l’identificateur global unique de la DE l’exécution du programme (C++-spécifiques : cela peut être un pointeur null, indiquant que l’appelant n’est pas intéressé par le GUID du moteur de données).
+[out] Retourne l’identifiant unique à l’échelle mondiale du programme DE (spécifique à la C : il peut s’agir d’un pointeur nul indiquant que l’appelant n’est pas intéressé par le GUID du moteur).
 
 ## <a name="return-value"></a>Valeur de retour
- En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.
+ En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
 ## <a name="see-also"></a>Voir aussi
 - [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md)

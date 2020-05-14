@@ -1,28 +1,28 @@
 ---
-title: IDebugComPlusSymbolProvider2::LoadSymbolsWithCorModule | Microsoft Docs
+title: IDebugComPlusSymbolProvider2::LoadSymbolsWithCorModule (fr) Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - IDebugComPlusSymbolProvider2::LoadSymbolsWithCorModule
 - LoadSymbolsWithCorModule
 ms.assetid: b6abf3a4-ce60-4e66-9637-82ce911148de
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 2c8265ce0d09b592418082d159fd82d2afaf9fad
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: ef4750de223b133e30e620f5dc0eec526e98526d
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66334632"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80733316"
 ---
 # <a name="idebugcomplussymbolprovider2loadsymbolswithcormodule"></a>IDebugComPlusSymbolProvider2::LoadSymbolsWithCorModule
-Compte tenus des symboles de débogage de charges le **ICorDebugModule** objet.
+Charges déboquent des symboles donnés **l’objet ICorDebugModule.**
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -52,31 +52,31 @@ int LoadSymbolsWithCorModule(
 
 ## <a name="parameters"></a>Paramètres
 `ulAppDomainID`\
-[in] Identificateur du domaine d’application.
+[dans] Identification du domaine de l’application.
 
 `guidModule`\
-[in] Identificateur unique du module.
+[dans] Identifiant unique du module.
 
 `baseAddress`\
-[in] Adresse mémoire de base.
+[dans] Adresse mémoire de base.
 
 `pUnkMetadataImport`\
-[in] Objet qui contient les métadonnées de symboles de débogage.
+[dans] Objet qui contient les métadonnées symbole de débogé.
 
 `pUnkCorDebugModule`\
-[in] Objet qui implémente le [ICorDebugModule (Interface)](/dotnet/framework/unmanaged-api/debugging/icordebugmodule-interface).
+[dans] Objet qui implémente [l’interface ICorDebugModule](/dotnet/framework/unmanaged-api/debugging/icordebugmodule-interface).
 
 `bstrModuleName`\
-[in] Nom du module.
+[dans] Nom du module.
 
 `bstrSymSearchPath`\
-[in] Chemin d’accès pour rechercher le fichier de symboles.
+[dans] Chemin à rechercher le fichier symbole.
 
 ## <a name="return-value"></a>Valeur de retour
-En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.
+En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
 ## <a name="example"></a>Exemple
-L’exemple suivant montre comment implémenter cette méthode pour un **CDebugSymbolProvider** objet qui expose le [IDebugComPlusSymbolProvider2](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2.md) interface.
+L’exemple suivant montre comment implémenter cette méthode pour un objet **CDebugSymbolProvider** qui expose [l’interface IDebugComPlusSymbolProvider2.](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2.md)
 
 ```cpp
 HRESULT CDebugSymbolProvider::LoadSymbolsWithCorModule(

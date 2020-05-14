@@ -2,7 +2,7 @@
 title: Nouveautés de Visual Studio 2019
 titleSuffix: ''
 description: Découvrez les nouvelles fonctionnalités de Visual Studio 2019.
-ms.date: 12/10/2019
+ms.date: 03/16/2020
 helpviewer_keywords:
 - Visual Studio, what's new
 - what's new [Visual Studio]
@@ -15,16 +15,16 @@ ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: 35891f081e19420374a1579e73c68d7b93930e54
-ms.sourcegitcommit: 00ba14d9c20224319a5e93dfc1e0d48d643a5fcd
+ms.openlocfilehash: bf251ade250a466cefe02db6f5cc709a0c18837b
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/11/2020
-ms.locfileid: "77125362"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79437746"
 ---
 # <a name="whats-new-in-visual-studio-2019"></a>Nouveautés de Visual Studio 2019
 
-**Mise à jour pour la [version 16,4](/visualstudio/releases/2019/release-notes/)**
+**Mise à jour pour la [version 16.5](/visualstudio/releases/2019/release-notes/)**
 
 >[!div class="button"]
 >[Télécharger Visual Studio 2019](https://visualstudio.microsoft.com/downloads)
@@ -33,15 +33,15 @@ Avec Visual Studio 2019, vous allez bénéficier des meilleurs outils et servic
 
 Voici un récapitulatif général des nouveautés :
 
-* **[Développement](#develop)** : restez concentré et productif grâce à des performances améliorées, au nettoyage de code instantané et à de meilleurs résultats de recherche.
-* **[Collaborez](#collaborate)** : Profitez de la collaboration naturelle via un flux de travail d’abord git, une modification et un débogage en temps réel et des révisions du code directement dans Visual Studio.
-* **[Débogage](#debug)** : mettez en surbrillance et accédez à des valeurs spécifiques, optimisez l’utilisation de la mémoire et effectuez des instantanés automatiques de l’exécution de votre application.
+* **[Développer](#develop)**: Restez concentré et productif avec des performances améliorées, un nettoyage instantané du code et de meilleurs résultats de recherche.
+* **[Collaborer](#collaborate)**: Profitez d’une collaboration naturelle grâce à un flux de travail Git-first, l’édition en temps réel et le débogage, et les critiques de code directement dans Visual Studio.
+* **[Debug](#debug)**: Mettez en évidence et naviguez vers des valeurs spécifiques, optimisez l’utilisation de la mémoire et prenez automatiquement des instantanés de l’exécution de votre application.
 
 Pour une liste complète de tout ce qui est nouveau dans cette version, consultez les [notes de publication](/visualstudio/releases/2019/release-notes/).
 
 ## <a name="develop"></a>Développer
 
-Afficher la vidéo suivante pour en savoir plus sur la façon dont vous pouvez gagner du temps avec les nouvelles fonctionnalités. <br><br>*Longueur vidéo : 3,00 minutes*
+Afficher la vidéo suivante pour en savoir plus sur la façon dont vous pouvez gagner du temps avec les nouvelles fonctionnalités. <br><br>*Durée de la vidéo : 3,00 minutes*
 
 > [!VIDEO https://www.youtube.com/embed/n5sJ4EewKGk]
 
@@ -104,23 +104,23 @@ Pour plus d’informations, consultez le billet de blog [Better multi-monitor ex
 
 ### <a name="test-explorer"></a>Explorateur de tests
 
-**Nouveauté de 16,2**: nous avons mis à jour l’Explorateur de tests pour fournir une meilleure gestion des jeux de test volumineux, un filtrage plus facile, des commandes plus détectables, des vues avec onglets de sélection et des colonnes personnalisables qui vous permettent d’affiner les informations de test affichées.
+**Nouveau en 16.2**: Nous avons mis à jour Test Explorer pour offrir une meilleure gestion des grands ensembles de test, un filtrage plus facile, des commandes plus détectables, des vues de liste de lecture tabbed et des colonnes personnalisables qui vous permettent d’affiner les informations de test affichées.
 
    ![Capture d’écran montrant les améliorations de l’interface utilisateur dans l’Explorateur de tests](media/vs-2019/test-explorer-ui.png)
 
 ### <a name="net-core"></a>.NET Core
 
-**Nouveauté de 16,3**: nous avons inclus la prise en charge de .net Core 3,0. Multiplateforme, open source&mdash;et entièrement pris en charge par Microsoft.
+**Nouveau en 16.3**: Nous avons inclus le support pour .NET Core 3.0. Plateforme croisée, open&mdash;source et entièrement pris en charge par Microsoft.
 
-Pour plus d’informations, consultez le billet de blog [annonçant .net Core 3,0](https://devblogs.microsoft.com/dotnet/announcing-net-core-3-0/) .
+Pour plus d’informations, voir le billet de blog [Announcing .NET Core 3.0.](https://devblogs.microsoft.com/dotnet/announcing-net-core-3-0/)
 
 ## <a name="collaborate"></a>Travailler en collaboration
 
-Afficher la vidéo suivante pour en savoir plus sur la façon dont vous pouvez travailler en équipe pour résoudre les problèmes. <br><br>*Longueur vidéo : 4,22 minutes*
+Afficher la vidéo suivante pour en savoir plus sur la façon dont vous pouvez travailler en équipe pour résoudre les problèmes. <br><br>*Durée de la vidéo : 4,22 minutes*
 
 > [!VIDEO https://www.youtube.com/embed/dKLJsiK1QU8]
 
-### <a name="git-first-workflow"></a>Flux de travail git-First
+### <a name="git-first-workflow"></a>Git-premier flux de travail
 
 La nouvelle fenêtre de démarrage est l’une des choses que vous remarquez quand vous lancez Visual Studio 2019.
 
@@ -132,7 +132,7 @@ La fenêtre de démarrage vous propose plusieurs options pour vous aider à comm
 
 La fenêtre de démarrage comprend aussi des options pour ouvrir un projet ou une solution, ouvrir un dossier local ou créer un nouveau projet.
 
-Pour plus d’informations, consultez le billet [de blog obtenir le code suivant : comment nous avons conçu le nouveau Visual Studio](https://devblogs.microsoft.com/visualstudio/get-to-code-how-we-designed-the-new-visual-studio-start-window/) .
+Pour plus d’informations, consultez le [code Get to: How we designed the new Visual Studio start window](https://devblogs.microsoft.com/visualstudio/get-to-code-how-we-designed-the-new-visual-studio-start-window/) blog post.
 
 ### <a name="live-share"></a>Live Share
 
@@ -154,7 +154,7 @@ Pour plus d’informations, consultez le billet de blog [Code reviews using the 
 
 ## <a name="debug"></a>Débogage
 
-Afficher la vidéo suivante pour en savoir plus sur la façon dont vous pouvez vous concentrer sur le ciblage précis pendant le débogage. <br><br>*Longueur vidéo : 3,54 minutes*
+Afficher la vidéo suivante pour en savoir plus sur la façon dont vous pouvez vous concentrer sur le ciblage précis pendant le débogage. <br><br>*Durée de la vidéo : 3,54 minutes*
 
 > [!VIDEO https://www.youtube.com/embed/hr72Fs8n_9c]
 
@@ -178,7 +178,7 @@ Vous pouvez également mettre en forme une valeur pour changer son apparence dan
 
    ![Nouvelle fenêtre Espion et fonctionnalité de mise en forme des valeurs dans Visual Studio 2019](media/search-watch-window.png)
 
-Pour plus d’informations, consultez [améliorations dans Visual Studio 2019 : Rechercher des objets et des propriétés dans le billet de blog Windows Watch, auto et variables locales](https://devblogs.microsoft.com/visualstudio/enhanced-in-visual-studio-2019-search-for-objects-and-properties-in-the-watch-autos-and-locals-windows/) .
+Pour plus d’informations, consultez le [blog Enhanced in Visual Studio 2019: Search for Objects and Properties in the Watch, Autos et Locals Windows.](https://devblogs.microsoft.com/visualstudio/enhanced-in-visual-studio-2019-search-for-objects-and-properties-in-the-watch-autos-and-locals-windows/)
 
 ### <a name="snapshot-debugger"></a>Débogueur de capture instantanée
 
@@ -192,21 +192,21 @@ Pour plus d’informations, voir la page [Déboguer des applications Azure ASP.N
 
 ### <a name="microsoft-edge-insider-support"></a>Prise en charge de Microsoft Edge Insider
 
-**Nouveauté de 16,2**: vous pouvez définir un point d’arrêt dans une application JavaScript et démarrer une session de débogage à l’aide du navigateur [Microsoft Edge Insider](https://www.microsoftedgeinsider.com/) . Dans ce cas, Visual Studio ouvre une nouvelle fenêtre de navigateur avec le débogage activé, que vous pouvez ensuite utiliser pour exécuter pas à pas le code JavaScript de l’application dans Visual Studio.
+**Nouveau en 16.2**: Vous pouvez définir un point d’arrêt dans une application JavaScript et démarrer une session de déboçon en utilisant le navigateur [Microsoft Edge Insider.](https://www.microsoftedgeinsider.com/) Dans ce cas, Visual Studio ouvre une nouvelle fenêtre de navigateur avec le débogage activé, que vous pouvez ensuite utiliser pour exécuter pas à pas le code JavaScript de l’application dans Visual Studio.
 
    ![Capture d’écran montrant le rendu de code JavaScript dans un navigateur](media/vs-2019/edge-chromium-breakpoint.png)
 
-### <a name="pinnable-properties-tool"></a>Outil Propriétés regroupement
+### <a name="pinnable-properties-tool"></a>Outil Pinnable Properties
 
-**Nouveauté de 16,4**: désormais, il est plus facile d’identifier les objets par leurs propriétés lors du débogage à l’aide de l’outil nouvelles propriétés regroupement. Il vous suffit de pointer le curseur sur une propriété que vous souhaitez afficher dans la fenêtre du débogueur des fenêtres espion, automatique et variables locales, de sélectionner l’icône d’épingle et de voir immédiatement les informations que vous recherchez en haut de la fenêtre.
+**Nouveau en 16.4**: Maintenant, il est plus facile d’identifier les objets par leurs propriétés tout en débogage avec le nouvel outil Pinnable Properties. Il suffit de planer le curseur sur une propriété que vous voulez afficher dans la fenêtre de débbugger de la montre, Autos, et les fenêtres locales, sélectionnez l’icône broche, et immédiatement voir les informations que vous recherchez en haut de la fenêtre!
 
-   ![Une animation qui montre comment épingler des propriétés dans le débogueur Visual Studio à l’aide de l’outil Propriétés regroupement](media/vs-2019/debugger-pinnable-properties.gif)
+   ![Une animation qui montre comment épingler les propriétés dans le debugger Visual Studio en utilisant l’outil Pinnable Properties](media/vs-2019/debugger-pinnable-properties.gif)
 
-Pour plus d’informations, consultez le billet de blog [Propriétés regroupement : Debug & afficher les objets gérés à votre façon](https://devblogs.microsoft.com/visualstudio/pinnable-properties-debug-display-managed-objects-your-way/) .
+Pour plus d’informations, voir les [propriétés pinnable: Debug & Display Managed Objects YOUR Way](https://devblogs.microsoft.com/visualstudio/pinnable-properties-debug-display-managed-objects-your-way/) blog post.
 
 ## <a name="whats-next"></a>Étapes suivantes
 
-Nous mettons souvent à jour Visual Studio 2019 avec de nouvelles fonctionnalités susceptibles de faciliter l’expérience de développement. Pour en savoir plus sur nos dernières innovations, consultez le [blog Visual Studio](https://devblogs.microsoft.com/visualstudio/). Et pour savoir ce que nous avons publié en préversion à ce jour, examinez les [Notes de publication de préversion](/visualstudio/releases/2019/release-notes-preview/).
+Nous mettons souvent à jour Visual Studio 2019 avec de nouvelles fonctionnalités susceptibles de faciliter l’expérience de développement. Pour en savoir plus sur nos dernières innovations, consultez le [Visual Studio Blog](https://devblogs.microsoft.com/visualstudio/). Pour un enregistrement de ce que nous avons publié en avant-première à ce jour, jetez un oeil à la [note de sortie Aperçu](/visualstudio/releases/2019/release-notes-preview/). Et pour une liste de ce que nous prévoyons de sortir ensuite, voir la [feuille de route Visual Studio](/visualstudio/productinfo/vs-roadmap).
 
 Vous souhaitez en savoir plus sur les autres fonctionnalités prévues pour Visual Studio 2019 ? Consultez la [Feuille de route Visual Studio](/visualstudio/productinfo/vs-roadmap/).
 
@@ -220,8 +220,8 @@ Vous vous demandez peut-être quel est l'intérêt d'envoyer des commentaires à
 
 ## <a name="see-also"></a>Voir aussi
 
-* [Notes de publication de Visual Studio 2019](/visualstudio/releases/2019/release-notes/)
-* [Nouveautés du SDK Visual Studio 2019](../extensibility/whats-new-visual-studio-2019-sdk.md)
-* [Notes de publication de Visual Studio 2019 pour Mac](/visualstudio/releasenotes/vs2019-mac-relnotes/)
-* [Conférence Microsoft Build 2019](https://www.microsoft.com/build)
-* [Microsoft Connect() ; conférence en 2018](https://www.microsoft.com/connectevent)
+* [Notes de sortie de Visual Studio 2019](/visualstudio/releases/2019/release-notes/)
+* [Visual Studio 2019 pour mac notes de sortie](/visualstudio/releasenotes/vs2019-mac-relnotes/)
+* [Quoi de neuf dans le Visual Studio 2019 SDK](../extensibility/whats-new-visual-studio-2019-sdk.md)
+* [Conférence Microsoft Build](https://www.microsoft.com/build)
+* [Conférence Microsoft Ignite](https://www.microsoft.com/ignite)

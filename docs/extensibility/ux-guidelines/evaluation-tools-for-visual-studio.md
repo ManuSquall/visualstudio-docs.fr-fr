@@ -1,173 +1,173 @@
 ---
-title: Outils d’évaluation pour Visual Studio | Microsoft Docs
+title: Outils d’évaluation pour Visual Studio (fr) Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 94e0e9a3-440c-4943-ad7b-772ed742e034
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 00668fdebdbc8fc6a26c30a8762aa6f03d6e2769
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 6ae5ae2d3be49a797ff1d594aab4517efab53330
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67824562"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80698429"
 ---
 # <a name="evaluation-tools-for-visual-studio"></a>Outils d’évaluation pour Visual Studio
-## <a name="craftsmanship-checklist-for-visual-studio"></a>Liste de vérification de savoir-faire pour Visual Studio
- Utilisez cette liste pour évaluer la qualité de l’expérience utilisateur pour plus d’informations visuel et d’interaction.
+## <a name="craftsmanship-checklist-for-visual-studio"></a>Liste de contrôle de l’artisanat pour Visual Studio
+ Utilisez cette liste de contrôle pour évaluer la qualité de l’expérience utilisateur pour les détails visuels et d’interaction.
 
-### <a name="overview"></a>Présentation
+### <a name="overview"></a>Vue d'ensemble
 
-- Vérifiez que toutes les commandes entraînent des commentaires qui indique aux utilisateurs que leurs commandes ont été effectués.
+- Vérifiez que toutes les commandes donnent lieu à des commentaires qui indiquent aux utilisateurs que leurs commandes ont été effectuées.
 
-- Vérifiez que tous les éléments d’interface utilisateur et les contrôles sont visibles dans tous les thèmes et en mode de contraste élevé.
+- Vérifiez que tous les éléments et contrôles de l’interface utilisateur sont visibles dans tous les thèmes et en mode contraste élevé.
 
-- Vérifiez que sélection active et inactive sont toujours différenciées, à la fois standard et le mode de contraste élevé.
+- Vérifiez que la sélection inactive et active est toujours différenciée, tant en mode standard que en mode contraste élevé.
 
-- Vérifiez que le focus est toujours visible et évident.
+- Vérifiez que l’accent est toujours visible et apparent.
 
 ### <a name="performance"></a>Performances
 
-- Vérifiez que certains indicateurs de type de « occupé » s’affiche si une commande prend plus d’une seconde.
+- Vérifiez qu’une sorte d’indicateur « occupé » est affiché si une commande prend plus d’une seconde pour terminer.
 
-- Vérifiez que si une commande prend plus de 10 secondes, une barre de progression explicite, soit déterminée (recommandé) ou indéterminé, s’affiche.
+- Vérifiez que si une commande prend plus de 10 secondes à remplir, une barre de progression explicite, déterminée (préférée) ou indéterminée, est affichée.
 
 ### <a name="ui-text"></a>Texte de l’interface utilisateur
 
-- Vérifiez que toutes les étiquettes sont phrase ou mots en majuscule et qu’aucun texte n’est entièrement en minuscules.
+- Vérifiez que toutes les étiquettes sont des cas de phrase ou de titre et qu’aucun texte n’est entièrement inférieur.
 
-    ||Corriger|Incorrect|
+    ||Correct|Incorrect|
     |-|-------------|---------------|
-    |**Texte de la commande (tout)**|Casse de la phrase :<br /><br /> **Nom du répertoire :**|Nom du répertoire :|
-    |**Texte du bouton (client)**|Casse du titre :<br /><br /> **[Définir par défaut]**|SET AS DEFAULT|
-    |**Texte du bouton (en ligne)**|Casse de la phrase :<br /><br /> **[Définir comme valeur par défaut]**||
+    |**Texte de commande (tous)**|Cas de peine :<br /><br /> **Nom de l’annuaire:**|Nom de l’annuaire:|
+    |**Texte bouton (client)**|Cas de titre:<br /><br /> **[ Définir comme par défaut ]**|DÉFINI COMME PAR DÉFAUT|
+    |**Texte bouton (en ligne)**|Cas de peine :<br /><br /> **[ Définir comme par défaut ]**||
 
-- Vérifiez que toutes les étiquettes, à l’exception des en-têtes de groupe et les boutons, se terminent par un signe deux-points et faites précéder le contrôle avec lequel ils sont associés.
+- Vérifiez que toutes les étiquettes, à l’exception des en-têtes et des boutons de groupe, se terminent par un côlon et précèdent le contrôle avec lequel ils sont appariés.
 
-- Vérifiez que les boutons, des commandes et des liens de commande qui lancent l’interface utilisateur pour capturer une entrée d’utilisateur se terminent dans les points de suspension **[...]** .
+- Vérifiez que les boutons, les commandes et les liens de commande qui lancent l’interface utilisateur pour capturer l’entrée de l’utilisateur se terminent dans une ellipsis **[...]**.
 
-  Exemples :
+  Exemples :
 
-  - Un **[Avancé...]**  bouton sur une boîte de dialogue.
+  - Un bouton **[avancé...]** sur un dialogue.
 
-  - Les options de commande sous le menu Outils (**Outils > Options**) doit d’obtenir les points de suspension, parce que le lancement de la boîte de dialogue est l’objectif de la commande.
+  - Les options de commande dans le cadre du menu Tools **(Outils > Options**) ne devraient pas obtenir une ellipsis, car le lancement du dialogue lui-même est l’intention de la commande.
 
-- Vérifiez que l’interface utilisateur ne contient aucun abréviations, à l’exception des termes du contrat standard du secteur. Par exemple, HTML, ni TCP/IP devez explicité, bien que l’insuffisance de mémoire (mémoire insuffisante) et les informations d’identification personnelle (informations d’identification personnelle) doivent.
+- Vérifiez que l’interface utilisateur ne contient aucune abréviation, à l’exception des conditions standard de l’industrie. Par exemple, ni HTML, ni TCP/IP n’ont besoin d’être précisés, bien que l’OOM (hors mémoire) et piI (informations personnellement identifiables) devraient.
 
 ### <a name="keyboard-access"></a>Accès par le clavier
 
-- Vérifiez qu’il est un moyen d’effectuer chaque tâche à l’aide du clavier. Généralement cela est réalisé via l’accès au clavier pour chaque contrôle, mais pour certaines parties très visuels, tels que de passer en mode code, une solution de contournement est acceptable.
+- Vérifiez qu’il existe un moyen d’accomplir chaque tâche avec le clavier. Généralement, cela est accompli grâce à l’accès au clavier pour chaque contrôle, mais pour certains domaines très visuels, une solution de contournement comme aller à la vue de code est acceptable.
 
-- Vérifiez que la touche Tab via des contrôles dans un ordre logique (de gauche à droite et de haut en bas). Bien que cela soit recommandé pour la plupart des contrôles, pas tous les contrôles nécessitent cette approche. Par exemple, vérifiez que cette case d’option sont des contrôles dans un groupe disposant d’un taquet de tabulation.
+- Vérifiez que vous pouvez ongletr à travers les contrôles dans un ordre logique (de gauche à droite et de haut en bas). Bien qu’il s’agisse d’une pratique exemplaire pour la plupart des contrôles, tous les contrôles n’exigent pas cette approche. Par exemple, vérifiez que les commandes de boutons radio sont dans un groupe avec un seul arrêt d’onglet.
 
-- Vérifiez que tous les contrôles ont des étiquettes et que chaque étiquette a un caractère mnémonique (exceptions incluent des contrôles non étiquetés qui peuvent suivre une commande dans l’onglet).
+- Vérifiez que tous les contrôles ont des étiquettes et que chaque étiquette a un mnémonique (les exceptions incluent certains contrôles non étiquetés qui pourraient suivre un contrôle étiqueté dans l’onglet).
 
-- Vérifiez qu’il n’y a aucun conflit mnémonique.
+- Vérifiez qu’il n’y a pas de conflits mnémoniques.
 
 ### <a name="fonts"></a>Polices
 
-- Vérifiez que toutes les polices (face, taille, de couleur) sont utilisés de manière cohérente et conservent la hiérarchie.
+- Vérifiez que toutes les polices (visage, taille, couleur) sont utilisées de façon cohérente et maintenez la hiérarchie.
 
-- Vérifiez que tous les éléments d’interface utilisateur utilisent le service de police d’environnement. (Consultez [polices et mise en forme pour Visual Studio](../../extensibility/ux-guidelines/fonts-and-formatting-for-visual-studio.md))
+- Vérifiez que tous les éléments d’interface utilisateur utilisent le service de police de l’environnement. (Voir [Fonts et Formatting pour Visual Studio](../../extensibility/ux-guidelines/fonts-and-formatting-for-visual-studio.md))
 
-     Pour vérifier si le service est utilisé, accédez à **Outils > Options > polices et couleurs**. Dans la liste déroulante des paramètres, choisir la police d’environnement et modifier le type de police à quelque chose de mauvaise différent (par exemple, Harrington ou bande dessinée SAN) et la taille de la valeur est 12 pt. Cliquez ensuite sur OK. Vous devrez peut-être redémarrer l’IDE, mais l’interface utilisateur de la plupart des ne changera pas immédiatement. Les zones qui ne récupèrent pas la modification de la police même lors du redémarrage n’utilisent pas de la police d’environnement.
+     Pour vérifier si le service est utilisé, rendez-vous sur **Tools > Options > Fonts and Colors**. Dans le dropdown Paramètres, choisissez Environment Font et changer le visage de police à quelque chose de stylistiquement différent (comme Harrington ou Comic Sans) et définir la taille à 12 pt. Puis cliquez sur OK. Vous devrez peut-être redémarrer l’IDE, mais la plupart des interfaces utilisateur changeront immédiatement. Les zones qui ne captent pas le changement de police, même sur le redémarrage, n’utilisent pas la police de l’environnement.
 
-- Vérifiez que les polices sont dérivé du service (par exemple, texte en gras ou agrandi) conservent leur taille et la mise en forme en relation avec le texte « normal » lorsque la taille de police d’environnement est modifiée.
+- Vérifiez que les polices dérivées du service (par exemple, le texte gras ou agrandi) conservent leur taille et leur formatage par rapport au texte « normal » lorsque la taille de la police de l’environnement est modifiée.
 
-- Vérifiez qu’il n’y a aucun bogue de découpage en raison de polices agrandis. Polices accrocherait sont probablement le résultat des contrôles de hauteur fixe ou les conteneurs de hauteur fixe.
+- Vérifiez qu’il n’y a pas de bogues de coupure dus aux polices agrandies. Les polices qui sont coupées sont probablement le résultat de commandes de hauteur fixe ou de conteneurs à hauteur fixe.
 
 ### <a name="dialogs"></a>Boîtes de dialogue
 
-- Vérifiez que le titre de la boîte de dialogue est identique à la commande qui l’a lancé.
+- Vérifiez que le titre de dialogue est le même que la commande qui l’a lancé.
 
-- Vérifiez que tous les contrôles standards sont cohérents avec le système d’exploitation : couleur d’arrière-plan est standard et aucun contrôle ne doit avoir un style basé sur un modèle re spécial qui permet de les rendre différente des contrôles standards.
+- Vérifiez que tous les contrôles standard sont compatibles avec le système d’exploitation : la couleur de fond est standard et aucun contrôle ne devrait avoir un style re-templated spécial qui les rend différents des contrôles standard.
 
-- Vérifiez que les marges dans le formulaire doivent être de 12 pixels et doivent apparaître uniforme et cohérent.
+- Vérifiez que les marges dans le formulaire doivent être de 12 pixels et doivent apparaître uniformes et cohérentes.
 
-- Vérifiez que les boîtes de dialogue apparaissent centrés dans l’interpréteur de commandes IDE ou dans la fenêtre qui a généré les.
+- Vérifiez que les dialogues semblent centrés dans la coquille IDE ou la fenêtre qui les a frayé.
 
-- Lorsqu’il est utile, boîtes de dialogue doivent être redimensionnables. Pour les boîtes de dialogue redimensionnables, vérifiez que lors de redimensionnement, les contrôles appropriés doivent redimensionner tandis que les autres parties de la boîte de dialogue restent constantes.
+- Lorsqu’ils sont utiles, les dialogues doivent être résizables. Pour les dialogues qui sont resizables, vérifiez qu’une fois ressizing, les contrôles appropriés doivent se resize tandis que d’autres parties du dialogue restent constantes.
 
-- Vérifiez que les boîtes de dialogue redimensionnables conserver n’importe quelle taille ajustée par l’utilisateur (taille, l’emplacement, l’expansion des contrôles de boîte de dialogue et ainsi de suite).
+- Vérifiez que les dialogues résizables persistent toute taille ajustée par l’utilisateur (taille, emplacement, expansion des contrôles de dialogue, et ainsi de suite).
 
-- Vérifiez qu’il n’y a aucune icône dans la barre de titre.
+- Vérifiez qu’il n’y a pas d’icône dans la barre de titre.
 
-- Vérifiez qu’il n’y a pas de boutons réduire et Agrandir dans la barre de titre.
+- Vérifiez qu’il n’y a pas de boutons Minimize et Maximisez dans la barre de titre.
 
-#### <a name="dialog-operation-buttons-vs-client-only"></a>Boutons d’opération de boîte de dialogue (Visual Studio Client uniquement)
+#### <a name="dialog-operation-buttons-vs-client-only"></a>Boutons d’opération de dialogue (VS Client seulement)
 
-- Vérifiez que les boutons d’opération sont dans cet ordre : **OK**, **Annuler**, **appliquer**.
+- Vérifier que les boutons d’opération sont dans cet ordre: **OK**, **Annuler**, **Appliquer**.
 
-- Vérifiez que **OK** et **Annuler** boutons sont de taille standard : 75 x 23 pixels.
+- Vérifiez que les boutons **OK** et **Cancel** sont de la taille standard : 75x23 pixels.
 
-- Vérifiez que **OK** et **Annuler** boutons sont de taille égale, quel que soit la longueur de chaîne.
+- Vérifiez que les boutons **OK** et **Cancel** sont de taille égale, quelle que soit la longueur des cordes.
 
-- Si l’étiquette sur un bouton d’opération requiert le bouton pour être plus large que standard, vérifiez que le correspondantes **Annuler** bouton est de taille égale.
+- Si l’étiquette sur un bouton d’opération nécessite que le bouton soit plus large que la norme, vérifiez que le bouton **Annuler** correspondant est de taille égale.
 
-- Vérifiez qu’il existe une marge intérieure 6-pixel entre les boutons et les contrôles associés.
+- Vérifiez qu’il y a un rembourrage de 6 pixels entre les boutons et les commandes associées.
 
-- Vérifiez que le **OK** et **Annuler** boutons n’ont pas les mnémoniques (touches d’accès définies par une lettre soulignée).
+- Vérifiez que les boutons **OK** et **Annuler** n’ont pas de mnémonique (clés d’accès définies par une lettre soulignée).
 
-- Vérifiez qu’un bouton (généralement **OK**) a le focus par défaut.
+- Vérifiez qu’un bouton (généralement **OK**) a la mise au point par défaut.
 
-- Vérifiez que **ÉCHAP** annule la boîte de dialogue
+- Vérifier **qu’Esc** annule le dialogue
 
-- Vérifiez que **entrée** exécute le bouton par défaut si le focus n’est pas dans un contrôle qui traite l’entrée.
+- Vérifiez que **Enter** exécute le bouton par défaut si la mise au point n’est pas dans un contrôle qui traite Enter.
 
-- Vérifiez que le **OK** et **Annuler** boutons sont positionnés dans l’angle inférieur droit de la boîte de dialogue. Dans rares exceptions près, il est acceptable pour qu’ils puissent être empilés verticalement en haut à droite.
+- Vérifiez que les boutons **OK** et **Annuler** sont positionnés dans le coin inférieur droit du dialogue. Dans de rares exceptions, il est acceptable qu’ils soient empilés verticalement en haut à droite.
 
-- Vérifiez que la configuration verticale est utilisée uniquement si les autres boutons sont dans un alignement horizontal dans la boîte de dialogue.
+- Vérifiez que la configuration verticale n’est utilisée que si d’autres boutons sont alignés horizontals dans le dialogue.
 
 ### <a name="control-standards"></a>Normes de contrôle
 
-#### <a name="general"></a>Généralités
+#### <a name="general"></a>Général
 
-- Vérifiez que, lorsque cela est possible, les valeurs par défaut adéquates pour accélérer l’interaction utilisateur et diriger les utilisateurs vers un résultat sans échec ou courantes.
+- Vérifiez que, dans la mesure du possible, il existe de bonnes valeurs par défaut pour accélérer l’interaction avec l’utilisateur et orienter les utilisateurs vers un résultat sûr ou commun.
 
-- Vérifiez que les contrôles standard comportent de la même façon afin que les utilisateurs sachent ce qui se produira basée sur l’expérience antérieure.
+- Vérifiez que les contrôles standard se comportent de la même manière afin que les utilisateurs sachent ce qui va se passer en fonction de l’expérience antérieure.
 
-#### <a name="label-controls"></a>Contrôles Label
+#### <a name="label-controls"></a>Contrôles de l’étiquette
 
-- Vérifiez que chaque contrôle possède une étiquette et que chaque étiquette visuellement associé à son contrôle (généralement dans une plage de pixel 4-6) et qu’il est plus proche de son contrôle correspondant qu’à d’autres contrôles.
+- Vérifiez que chaque commande a une étiquette et que chaque étiquette est visuellement jumelée à son contrôle (généralement dans une plage de 4-6 pixels) et est plus proche de son contrôle correspondant que d’autres contrôles.
 
-- Vérifiez que les étiquettes sont positionnées de vidage gauche avec le contrôle si positionnée au-dessus du bord gauche et centré horizontalement, afin que la ligne de base de l’étiquette est alignée avec la ligne de base du texte d’entrée si positionnée à gauche.
+- Vérifiez que les étiquettes sont positionnées à gauche avec le bord gauche de contrôle s’ils sont positionnés au-dessus et centrés horizontalement, de sorte que la ligne de base de l’étiquette est alignée avec la ligne de base du texte d’entrée si elle est positionnée vers la gauche.
 
-- Vérifiez que si plusieurs étiquettes empilées et contrôles d’entrée est positionnés à gauche d’un contrôle, les étiquettes sont alignés à gauche et une distance égale à partir du bord de la boîte de dialogue, vider jamais droite et une distance égale à partir des contrôles. Paires doivent être réparties uniformément, sauf si dont ils ont besoin d’espacement supplémentaire pour indiquer le regroupement.
+- Vérifiez que si plusieurs commandes d’étiquettes et d’entrées empilées sont positionnées à gauche d’un contrôle, les étiquettes sont à gauche et à une distance égale du bord du dialogue, ne rincer jamais à droite et à une distance égale des commandes. Les paires doivent être réparties uniformément à moins qu’elles n’aient besoin d’espacement supplémentaire pour indiquer le regroupement.
 
-#### <a name="input-controls-text-boxes-and-combo-boxes"></a>Contrôles d’entrée (zones de texte et zones de liste déroulante)
+#### <a name="input-controls-text-boxes-and-combo-boxes"></a>Contrôles d’entrée (boîtes de texte et boîtes combo)
 
-- Vérifiez que lorsque vous utilisez la police d’environnement par défaut, la hauteur d’affichage pour les zones de texte, les zones de liste déroulante et les boutons sont tous les 23 pixels.
+- Vérifiez que lors de l’utilisation de la police de l’environnement par défaut, la hauteur d’affichage pour les boîtes de texte, les boîtes combo et les boutons sont tous 23 pixels.
 
-- Si le texte d’indication est utilisé, vérifiez que la couleur est définie sur `Environment.ControlEditHintText` à l’aide du service de couleur.
+- Si le texte d’indice est utilisé, vérifiez que la couleur est réglée à l’aide `Environment.ControlEditHintText` du service de couleur.
 
-- Si le champ est un champ obligatoire qui doit être identifié en tant que tel, vérifiez :
+- Si le champ est un champ requis qui doit être identifié comme tel, vérifiez :
 
-  - que l’arrière-plan est défini sur `Environment.ControlEditRequiredBackground` et premier plan est défini sur `Environment.ControlEditRequiredHintText`
+  - que l’arrière-plan est réglé `Environment.ControlEditRequiredBackground` et le premier plan est réglé pour`Environment.ControlEditRequiredHintText`
 
-  - texte d’indicateur dans le contrôle qui apparaît sous la forme **»\<requis > »**
+  - qu’il y a un texte d’indice dans le contrôle qui apparaît comme **«\<> requis »**
 
 #### <a name="button-controls"></a>Contrôles boutons
 
-- Vérifiez que les boutons sont une taille minimale de 75 x 23 pixels, à moins que l’adaptation de texte plus long.
+- Vérifiez que les boutons sont d’une taille minimale de 75x23 pixels, à moins d’accommoder le texte plus long.
 
-- Vérifiez que les boutons ont quitté et marges de 3 à 5 pixels, ainsi que le remplissage pour le contenu avec le bouton droit.
+- Vérifiez que les boutons ont des marges gauche et droite de 3-5 pixels, ainsi que rembourrage pour le contenu.
 
-- Il est acceptable d’utiliser un petit bouton carré des points de suspension uniquement **[...]**  dessus au lieu d’un **[Parcourir...]**  bouton (ou une fonctionnalité similaire). Si utilisé, vérifiez que le bouton est 23 x 23 taille.
+- Il est acceptable d’utiliser un petit bouton carré avec seulement une ellipsis **[...]** sur elle au lieu d’un bouton **[Browse...]** (ou une fonctionnalité similaire). S’il est utilisé, vérifiez que le bouton est de 23x23.
 
-- S’il existe plusieurs **[Parcourir...]**  dans une boîte de dialogue, puis vérifiez que la version abrégée (points de suspension uniquement **[...]** ) est utilisé pour tous.
+- S’il y a plus d’un bouton **[Parcourir...]** dans un dialogue, vérifiez que la version raccourcie (ellipsis-seulement **[...]**) est utilisée pour tous.
 
-- Vérifiez que points de suspension **[...]**  boutons n’ont pas un caractère mnémonique. Lorsque le focus est sur le contrôle d’entrée en regard de celle-ci, un onglet doit déplacer le focus sur le bouton de sélection.
+- Vérifiez que les boutons d’élipsis **[...]** n’ont pas de mnémonique. Lorsque l’accent est mis sur le contrôle des entrées à côté de lui, un onglet doit se concentrer sur le bouton ellipsis.
 
-- Vérifiez que les liens de commande qui lancent l’interface utilisateur secondaire qui capture l’entrée d’utilisateur plus, les commandes et les boutons doivent se terminer dans les points de suspension **[...]** .
+- Vérifiez que les boutons, les commandes et les liens de commande qui lancent l’interface utilisateur secondaire qui capture plus d’entrée utilisateur doit se terminer dans une ellipsis **[...]**.
 
 #### <a name="hyperlinks"></a>Liens hypertexte
 
-- Vérifiez qu’un contrôle de lien hypertexte jamais clignote en rouge lorsqu’il est actif. Il s’agit d’un indicateur que le service de couleur n’est pas en cours utilisation
+- Vérifiez qu’un contrôle hyperlien ne clignote jamais en rouge lorsqu’il est actif. Il s’agit d’un indicateur que le service de couleur n’est pas utilisé
 
-- Vérifiez que les couleurs de Visual Studio utilisées sont :
+- Vérifiez que les couleurs VS utilisées sont les :
 
   - `Environment.ControlLinkText`
 
@@ -175,48 +175,48 @@ ms.locfileid: "67824562"
 
   - `Environment.ControlLinkTextPressed`
 
-- Vérifiez que des liens hypertexte s’affichent en bleus avec aucun trait de soulignement, sauf si incorporé dans un paragraphe.
+- Vérifiez que les hyperliens apparaissent bleus sans souligner à moins d’être intégrés dans un paragraphe.
 
 #### <a name="check-boxes"></a>Cases à cocher
 
-- Si une case à cocher contient du texte multiligne, vérifiez que la zone s’aligne avec la première ligne de texte, ne pas centré verticalement sur toutes les lignes.
+- Si une case à cocher a du texte multi-lignes, vérifiez que la boîte s’aligne avec la première ligne de texte, non centrée verticalement sur toutes les lignes.
 
-- Vérifiez que cases à cocher toujours indiquer un choix binaire et ne pas diriger l’utilisateur ou ouvrir de nouvelles fenêtres ou des pages.
+- Vérifiez que les cases à cocher indiquent toujours un choix binaire et ne naviguent pas sur l’utilisateur ou n’ouvrent pas de nouvelles fenêtres ou pages.
 
-- Si une case à cocher présente une option liée à un contrôle d’entrée, vérifiez s’il est positionné vidage gauche et très proches sous ce contrôle pour indiquer sa relation.
+- Si une case à cocher présente une option liée à un contrôle d’entrée, vérifiez qu’elle est positionnée à gauche et très proche sous ce contrôle pour indiquer sa relation.
 
-- Vérifiez qu’une case à cocher est **jamais** utilisé comme un moyen pour activer tout le contenu d’une boîte de dialogue ou une page.
+- Vérifiez qu’une case à cocher **n’est jamais** utilisée comme moyen d’activer l’ensemble du contenu d’un dialogue ou d’une page.
 
-#### <a name="group-boxes"></a>Zones de groupe
+#### <a name="group-boxes"></a>Boîtes de groupe
 
-- Vérifiez qu’une boîte de dialogue ne contient-elle pas d’une zone de groupe unique qu’il contient qui contient tout le contenu de la boîte de dialogue.
+- Vérifiez qu’un dialogue ne contient pas une seule boîte de groupe qui contient l’ensemble du contenu du dialogue.
 
-- Vérifiez qu’il n’y a au moins deux contrôles au sein de chaque zone de groupe.
+- Vérifiez qu’il y a au moins deux contrôles dans chaque boîte de groupe.
 
-- Rarement doit renfermer plus de deux zones de groupe sur une boîte de dialogue.
+- Il est rare qu’il y ait plus de deux boîtes de groupe sur un dialogue.
 
-- Vérifiez qu’il n’y a aucune boîte groupe imbriqué.
+- Vérifiez qu’il n’y a pas de boîtes de groupe oischées.
 
 ### <a name="icons"></a>Icônes
 
-- Vérifiez que les icônes apparaissent correctement inversés dans le thème sombre.
+- Vérifiez que les icônes apparaissent correctement inversées lorsque dans le thème sombre.
 
-- Vérifiez que toutes les icônes sont basées sur les concepts fondamentaux.
+- Vérifiez que toutes les icônes sont basées sur des concepts de base.
 
-- Vérifiez que chaque icône est distinct, facile à reconnaître et qu’il ne contient-elle pas plus de deux concepts (sans état modificateur/langage).
+- Vérifiez que chaque icône est distincte, facile à reconnaître et ne contient pas plus de deux concepts (sans modificateur de statut/langue).
 
-- Vérifiez que l’icône de base apparaît centré dans l’espace.
+- Vérifiez que l’icône de base apparaît centrée dans l’espace.
 
 - Vérifiez que toutes les icônes apparaissent lisibles en mode contraste élevé.
 
-- Vérifiez que n’importe quelle couleur utilisé s’aligne avec les normes de l’utilisation de couleur.
+- Vérifiez que toute couleur utilisée correspond aux normes d’utilisation des couleurs.
 
-- Vérifiez qu’il n’y a aucune halos (bordures) autour des icônes. (Le cas échéant, le halo doit correspondre à la couleur d’arrière-plan de l’interface utilisateur adjacente).
+- Vérifiez qu’il n’y a pas de halos (frontières) autour des icônes. (Si présent, le halo doit correspondre à la couleur de fond de l’interface utilisateur adjacente).
 
-### <a name="touch-enabled-ui"></a>Interface tactile
+### <a name="touch-enabled-ui"></a>Interface utilisateur tactile
 
-- Vérifiez que les contrôles interactifs sont suffisamment grandes pour être facilement touchable - minimale **23 x 23 pixels** taille
+- Vérifiez que les commandes interactives sont assez grandes pour être facilement tactiles - minimum **23x23 pixels** de taille
 
-- Vérifiez que les contrôles les plus fréquemment utilisés sont au moins **40 x 40 pixels** taille.
+- Vérifiez que les commandes les plus fréquemment utilisées sont d’au moins **40x40 pixels** de taille.
 
-- Vérifiez que les contrôles interactifs disposent au moins **5 pixels espacement** entre eux
+- Vérifier que les contrôles interactifs ont au moins **5 pixels d’espacement** entre eux

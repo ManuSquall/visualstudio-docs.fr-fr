@@ -16,10 +16,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 9780a4ee81a4d063b5cfb7f66b1a5ea023d8fa2f
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75573402"
 ---
 # <a name="code-a-custom-validation-rule-for-a-web-performance-test"></a>Coder une règle de validation personnalisée pour un test de performances web
@@ -48,15 +48,15 @@ Vous pouvez créer vos propres règles de validation. Pour cela, vous dérivez v
 
 6. (Facultatif) Dans le projet de test, ajoutez une référence au projet de bibliothèque de classes qui contient la règle de validation personnalisée.
 
-7. Dans le projet de test, ouvrez un test de performances web dans l’**éditeur de test de performances web**.
+7. Dans le projet De test, ouvrez un test de performance Web dans **l’éditeur de tests de performance Web**.
 
-8. Pour ajouter la règle de validation personnalisée à une requête de test de performances web, cliquez avec le bouton droit sur une requête, puis sélectionnez **Ajouter une règle de validation**.
+8. Pour ajouter la règle de validation personnalisée à une demande de test de performance Web, cliquez à droite sur une demande et **sélectionnez Ajouter la règle de validation**.
 
      La boîte de dialogue **Ajouter une règle de validation** s’affiche. Votre règle de validation personnalisée apparaît dans la liste **Sélectionner une règle** avec les règles de validation prédéfinies. Sélectionnez votre règle de validation personnalisée, puis choisissez **OK**.
 
 9. Exécutez votre test de performances web.
 
-## <a name="example"></a>Exemple
+## <a name="example"></a> Exemple
 
 Le code suivant illustre une implémentation d'une règle de validation personnalisée. Cette règle de validation reproduit le comportement de la règle de validation prédéfinie Étiquette obligatoire. Utilisez cet exemple comme point de départ pour la définition de vos propres règles de validation personnalisées.
 
@@ -252,4 +252,4 @@ End Namespace
 - <xref:Microsoft.VisualStudio.TestTools.WebTesting.Rules.ValidationRuleRequestTime>
 - <xref:Microsoft.VisualStudio.TestTools.WebTesting.Rules.ValidationRuleRequiredAttributeValue>
 - <xref:Microsoft.VisualStudio.TestTools.WebTesting.Rules.ValidationRuleRequiredTag>
-- [Codage d’une règle d’extraction personnalisée pour un test de performances web](../test/code-a-custom-extraction-rule-for-a-web-performance-test.md)
+- [Codage d'une règle d'extraction personnalisée pour un test de performances de site Web](../test/code-a-custom-extraction-rule-for-a-web-performance-test.md)

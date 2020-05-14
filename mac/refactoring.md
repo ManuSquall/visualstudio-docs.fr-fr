@@ -7,10 +7,10 @@ ms.date: 03/29/2019
 ms.assetid: C7782BF3-016F-4B41-8A81-85FC540A1A8F
 ms.custom: video
 ms.openlocfilehash: 5a87b87f3a14462daec1e069fe222164818d2a19
-ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
-ms.translationtype: HT
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/09/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "67691298"
 ---
 # <a name="refactoring"></a>Refactorisation
@@ -23,7 +23,7 @@ L’intégration de Visual Studio pour Mac à Roslyn, la plateforme de compilate
 
 ## <a name="renaming"></a>Renommage
 
-La commande de refactorisation *Renommer* peut être utilisée sur n’importe quel identificateur du code (par exemple un nom de classe, un nom de propriété, etc.) pour rechercher toutes les occurrences de cet identificateur et les changer. Pour renommer un symbole, cliquez dessus avec le bouton droit, puis choisissez **Renommer...** , ou utilisez la combinaison de touches **Cmd (⌘) + R** :
+La commande de refactorisation *Renommer* peut être utilisée sur n’importe quel identificateur du code (par exemple un nom de classe, un nom de propriété, etc.) pour rechercher toutes les occurrences de cet identificateur et les changer. Pour renommer un symbole, cliquez dessus avec le bouton droit, puis choisissez **Renommer...**, ou utilisez la combinaison de touches **Cmd (⌘) + R** :
 
 ![Élément de menu Renommer](media/refactoring-renaming1.png)
 
@@ -42,7 +42,7 @@ Les actions rapides peuvent servir à :
 * Appliquer une refactorisation (par exemple, rendre inline une variable temporaire)
 * Générer du code (par exemple, introduire une variable locale)
 
-Les actions rapides peuvent être appliquées en utilisant les icônes en forme d’ampoule ![icône en forme d’ampoule](media/quick-actions-light-bulb-icon.png) ou de tournevis ![icône en forme de tournevis](media/quick-actions-screwdriver-icon.png), ou en appuyant sur **Option (⌥)** +**Entrée** quand le curseur se trouve sur une ligne de code pour laquelle une action est disponible. Vous voyez une ampoule d’erreur ![icône en forme d’ampoule d’erreur](media/quick-actions-error-light-bulb-icon.png) s’il existe une ligne ondulée rouge indiquant une erreur, pour laquelle Visual Studio met à disposition un correctif.
+Actions rapides peuvent être appliquées ![en](media/quick-actions-light-bulb-icon.png) utilisant l’icône de](media/quick-actions-screwdriver-icon.png) l’ampoule ou des icônes d’icônes de tournevis tournevis, ![ou en appuyant sur **Option ()**+**Entrez** lorsque votre curseur est sur une ligne de code pour laquelle une action est disponible. Vous voyez une ampoule d’erreur ![icône en forme d’ampoule d’erreur](media/quick-actions-error-light-bulb-icon.png) s’il existe une ligne ondulée rouge indiquant une erreur, pour laquelle Visual Studio met à disposition un correctif.
 
 Des éditeurs tiers peuvent fournir des diagnostics et des suggestions personnalisés pour n’importe quel langage, par exemple dans le cadre d’un Kit de développement logiciel (SDK). Dans ce cas, les ampoules Visual Studio s’allument en fonction des règles établies.
 
@@ -57,7 +57,7 @@ L’icône qui s’affiche quand une action rapide est disponible donne une indi
 
 - Les ampoules et tournevis apparaissent dans la marge de gauche de l’éditeur quand vous déplacez le signe insertion dans une ligne de code pour lequel une action rapide est disponible.
 
-- Appuyez sur **Option (⌥)** +**Entrée** n’importe où sur une ligne pour voir la liste des actions rapides et refactorisations disponibles.
+- Option de presse ()+**Entrez** **n’importe**où sur une ligne pour voir une liste d’actions rapides et de refactorations disponibles.
 
 ![Afficher les éléments contextuels](media/refactoring-context-action.png)
 

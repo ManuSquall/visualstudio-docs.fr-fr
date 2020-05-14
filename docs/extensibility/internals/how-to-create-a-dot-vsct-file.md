@@ -1,73 +1,73 @@
 ---
-title: 'Procédure : Créez un. Fichier vsct | Microsoft Docs'
+title: 'Comment: Créer un . Fichier Vsct (fr) Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - VSCT files, creating
 ms.assetid: b955f51c-f9f9-49c3-a8e4-63b6eb0e0341
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c3155ff69db461e652b11ff6e8ec6d405000244f
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: a5a5f53ec87c9447af232e9d0528108ddbaea01a
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68924182"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80708104"
 ---
-# <a name="how-to-create-a-vsct-file"></a>Procédure : Créer un fichier. vsct
+# <a name="how-to-create-a-vsct-file"></a>Comment : Créer un fichier .vsct
 
-Il existe plusieurs façons de créer un fichier de configuration de table de commandes Visual Studio ( *. vsct*) basé sur XML.
+Il existe plusieurs façons de créer un fichier de table de commande Visual Studio basé sur XML (*.vsct).*
 
-- Vous pouvez créer un nouveau VSPackage dans le [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] modèle de package.
+- Vous pouvez créer un nouveau [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] VSPackage dans le modèle de paquet.
 
-- Vous pouvez utiliser le compilateur de configuration de table de commandes basé sur XML, *vsct. exe*, pour générer un fichier à partir d’un fichier *. CTC* existant.
+- Vous pouvez utiliser le compilateur de configuration de table de commande basé sur XML, *Vsct.exe*, pour générer un fichier à partir d’un fichier *.ctc* existant.
 
-- Vous pouvez utiliser *vsct. exe* pour générer un fichier *. vsct* à partir d’un fichier *. Directeur* de la génération.
+- Vous pouvez utiliser *Vsct.exe* pour générer un fichier *.vsct* à partir d’un fichier *.cto* existant.
 
-- Vous pouvez créer manuellement un nouveau fichier *. vsct* .
+- Vous pouvez créer manuellement un nouveau fichier *.vsct.*
 
-  Cet article explique comment créer manuellement un nouveau fichier *. vsct* .
+  Cet article explique comment créer manuellement un nouveau fichier *.vsct.*
 
-### <a name="to-manually-create-a-new-vsct-file"></a>Pour créer manuellement un nouveau fichier. vsct
+### <a name="to-manually-create-a-new-vsct-file"></a>Pour créer manuellement un nouveau fichier .vsct
 
 1. Démarrez [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].
 
-2. Sur le **fichier** menu, pointez sur **New**, puis cliquez sur **fichier**.
+2. Dans le menu **Fichier** , pointez sur **Nouveau**, puis cliquez sur **Fichier**.
 
-3. Dans le volet **modèles** , cliquez sur **fichier XML** , puis sur **ouvrir**.
+3. Dans le volet **Templates,** cliquez sur **le fichier XML,** puis cliquez sur **Open**.
 
-4. Dans le menu **affichage** , cliquez sur **Propriétés** pour afficher les propriétés du fichier XML.
+4. Sur le menu **View,** cliquez sur **Propriétés** pour afficher les propriétés du fichier XML.
 
-5. Dans la fenêtre **Propriétés** , cliquez sur le bouton **Parcourir** de la propriété **schémas** .
+5. Dans la fenêtre **Propriétés,** cliquez sur le bouton **Parcourir** sur la propriété **Schemas.**
 
-6. Dans la liste des schémas XSD, sélectionnez le schéma *vsct. xsd* . S’il ne figure pas dans la liste, cliquez sur **Ajouter** , puis recherchez le fichier sur un lecteur local. Cliquez sur **OK** lorsque vous avez terminé.
+6. Dans la liste des schémas XSD, sélectionnez le schéma *vsct.xsd.* Si elle n’est pas dans la liste, cliquez sur **Ajouter** et ensuite trouver le fichier sur un lecteur local. Cliquez sur **OK** lorsque vous avez terminé.
 
-7. Dans le fichier XML, tapez *< CommandTable* , puis appuyez sur la touche **Tab**. Fermez la balise en *>* tapant.
+7. Dans le fichier XML, tapez *<CommandTable,* puis appuyez sur **Tab**. Fermez l’étiquette *>* en tapant .
 
-    Cette action crée un fichier *. vsct* de base.
+    Cette action crée un fichier de base *.vsct.*
 
-8. Renseignez les éléments du fichier XML que vous souhaitez ajouter, en fonction de la [référence de schéma XML vsct](../../extensibility/vsct-xml-schema-reference.md). Pour plus d’informations, consultez [création de fichiers. vsct](../../extensibility/internals/authoring-dot-vsct-files.md).
+8. Remplissez les éléments du fichier XML que vous souhaitez ajouter, selon la [référence VSCT XML schéma](../../extensibility/vsct-xml-schema-reference.md). Pour plus d’informations, voir [Les fichiers Auteur .vsct](../../extensibility/internals/authoring-dot-vsct-files.md).
 
 <a name="how-to-create-a-dot-vsct-file-from-an-existing-dot-ctc-file"></a>
 
-## <a name="how-to-create-a-vsct-file-from-an-existing-ctc-file"></a>Procédure : Créer un fichier. vsct à partir d’un fichier. CTC existant
+## <a name="how-to-create-a-vsct-file-from-an-existing-ctc-file"></a>Comment : Créer un fichier .vsct à partir d’un fichier .ctc existant
 
-Vous pouvez créer un fichier *. vsct* XML à partir d’un fichier source de table de commandes *. CTC* existant. Ainsi, vous pouvez tirer parti du nouveau format du compilateur (VSTC) de table de commande [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] XML.
+Vous pouvez créer un fichier *.vsct* basé sur XML à partir d’un fichier source *.ctc* existant. Ainsi, vous pouvez tirer parti du nouveau format du compilateur (VSTC) de table de commande [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] XML.
 
 ### <a name="to-create-a-vsct-file-from-a-ctc-file"></a>Pour créer un fichier .vsct à partir d’un fichier .ctc
 
 1. Obtenez une copie du langage Perl.
 
-2. Obtenez une copie du script perl *ConvertCTCToVSCT.pl*, généralement situé dans le  *\<chemin d’installation du kit de développement logiciel Visual Studio > dossier \VisualStudioIntegration\Tools\bin* .
+2. Obtenez une copie du script Perl *ConvertCTCToVSCT.pl*, généralement situé dans le * \<chemin d’installation Visual Studio SDK>-VisualStudioIntegration-Tools-bin* dossier.
 
-3. Obtenez une copie du fichier source *. CTC* que vous souhaitez convertir.
+3. Obtenez une copie du fichier source *.ctc* que vous souhaitez convertir.
 
 4. Placez les fichiers dans le même répertoire.
 
-5. Dans la [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] fenêtre d’invite de commandes, accédez au répertoire.
+5. Dans [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] la fenêtre d’invite de commande, naviguez vers le répertoire.
 
 6. Type
 
@@ -75,26 +75,26 @@ Vous pouvez créer un fichier *. vsct* XML à partir d’un fichier source de ta
    perl.exe ConvertCTCtoVSCT.pl PkgCmd.ctc PkgCmd.vsct
    ```
 
-    où *PkgCmd. CTC* est le nom du fichier *. CTC* et *PkgCmd. vsct* est le nom du fichier *. vsct* que vous souhaitez créer.
+    où *PkgCmd.ctc* est le nom du fichier *.ctc* et *PkgCmd.vsct* est le nom du fichier *.vsct* que vous voulez créer.
 
-    Cette action crée un fichier source de table de commandes XML *. vsct* . Vous pouvez compiler le fichier à l’aide de *vsct. exe*, le compilateur vsct, comme vous le feriez pour tout autre fichier *. vsct* .
+    Cette action crée un nouveau fichier source de table de commande *.vsct* XML. Vous pouvez compiler le fichier en utilisant *Vsct.exe*, le compilateur VSCT, comme vous le feriez n’importe quel autre fichier *.vsct.*
 
    > [!NOTE]
-   > Vous pouvez améliorer la lisibilité du fichier *. vsct* en reformatant les commentaires XML.
+   > Vous pouvez améliorer la lisibilité du fichier *.vsct* en reformant les commentaires XML.
 
 <a name="how-to-create-a-dot-vsct-file-from-an-existing-dot-cto-file"></a>
 
-## <a name="how-to-create-a-vsct-file-from-an-existing-cto-file"></a>Procédure : Créer un fichier. vsct à partir d’un fichier. directeur de la façon existante
+## <a name="how-to-create-a-vsct-file-from-an-existing-cto-file"></a>Comment : Créer un fichier .vsct à partir d’un fichier .cto existant
 
-Vous pouvez créer un fichier *. vsct* XML à partir d’un fichier *. directeur technique* existant. Cela vous permet de tirer parti du nouveau format de compilateur de la table de commande. Ce processus fonctionne même si le fichier *. Directeur* de la compilation a été compilé à partir d’un fichier *. CTC* . Vous pouvez modifier et compiler le fichier *. vsct* dans un autre fichier. directeur technique.
+Vous pouvez créer un fichier *.vsct* basé sur XML à partir d’un fichier binaire *.cto* existant. Cela vous permet de tirer parti du nouveau format de compilateur de la table de commande. Ce processus fonctionne même si le fichier *.cto* a été compilé à partir d’un fichier *.ctc.* Vous pouvez modifier et compiler le fichier *.vsct* dans un autre fichier .cto.
 
 ### <a name="to-create-a-vsct-file-from-a-cto-file"></a>Pour créer un fichier .vsct à partir d’un fichier .cto
 
-1. Obtenez des copies du fichier *. Directeur* et du fichier *. ctsym* correspondant.
+1. Obtenez des copies du fichier *.cto* et de son fichier *correspondant .ctsym.*
 
-2. Placez les fichiers dans le même répertoire que le compilateur *vsct. exe* .
+2. Placez les fichiers dans le même répertoire que le compilateur *vsct.exe.*
 
-3. À l’invite de commandes Visual Studio, accédez au répertoire qui contient les fichiers *. Directeur* et. *ctsym* .
+3. À l’invite de commande Visual Studio, allez à l’annuaire qui contient les fichiers *.cto* et *.ctsym.*
 
 4. Type
 
@@ -102,16 +102,16 @@ Vous pouvez créer un fichier *. vsct* XML à partir d’un fichier *. directeur
     vsct.exe <ctofilename>.cto <vsctfilename>.vsct -S<symfilename>.ctsym
     ```
 
-     où \< \<\> ctofilename \<\> est le nom du fichier. directeur technique, vsctfilename est le nom du fichier. vsct que vous souhaitez créer, et symfilename est le nom de\> fichier *. ctsym* .
+     où \<\> ctofilename est le nom du fichier *.cto,* \<vsctfilename\> est le nom du fichier\> *.vsct* que vous voulez créer, et \<symfilename est le nom du fichier *.ctsym.*
 
-     Ce processus crée un fichier de compilateur de table de commandes XML *. vsct* . Vous pouvez modifier et compiler le fichier avec *vsct. exe*, le compilateur vsct, comme vous le feriez pour tout autre fichier *. vsct* .
+     Ce processus crée un nouveau fichier de compilateur de table de commande *.vsct* XML. Vous pouvez modifier et compiler le fichier avec *vsct.exe*, le compilateur vsct, comme vous le feriez n’importe quel autre fichier *.vsct.*
 
 ## <a name="compile-the-code"></a>Compiler le code
- Le simple ajout d’un fichier *. vsct* à un projet ne provoque pas sa compilation. Vous devez l’incorporer dans le processus de génération.
+ Le simple fait d’ajouter un fichier *.vsct* à un projet ne le fait pas compiler. Vous devez l’incorporer dans le processus de construction.
 
-### <a name="to-add-a-vsct-file-to-project-compilation"></a>Pour ajouter un fichier. vsct à la compilation de projet
+### <a name="to-add-a-vsct-file-to-project-compilation"></a>Pour ajouter un fichier .vsct à la compilation du projet
 
-1. Ouvrez votre fichier projet dans l’éditeur. Si le projet est chargé, vous devez d’abord le décharger.
+1. Ouvrez votre dossier de projet dans l’éditeur. Si le projet est chargé, vous devez le décharger en premier.
 
 2. Ajoutez un [élément ItemGroup](../../msbuild/itemgroup-element-msbuild.md) qui contient un `VSCTCompile` élément, comme indiqué dans l’exemple suivant.
 
@@ -124,9 +124,9 @@ Vous pouvez créer un fichier *. vsct* XML à partir d’un fichier *. directeur
 
     ```
 
-     L' `ResourceName` élément doit toujours avoir la `Menus.ctmenu`valeur.
+     L’élément `ResourceName` doit toujours `Menus.ctmenu`être réglé à .
 
-3. Si votre projet contient un fichier *. resx* , ajoutez un `EmbeddedResource` élément qui contient un `MergeWithCTO` élément, comme indiqué dans l’exemple suivant:
+3. Si votre projet contient un fichier *.resx,* ajoutez un `EmbeddedResource` élément qui contient un `MergeWithCTO` élément, comme indiqué dans l’exemple suivant :
 
     ```xml
     <EmbeddedResource Include="VSPackage.resx">
@@ -136,19 +136,19 @@ Vous pouvez créer un fichier *. vsct* XML à partir d’un fichier *. directeur
 
     ```
 
-     Ce balisage doit se trouver `ItemGroup` à l’intérieur de l’élément qui contient des ressources incorporées.
+     Cette majoration doit `ItemGroup` aller à l’intérieur de l’élément qui contient des ressources intégrées.
 
-4. Ouvrez le fichier de package, généralement  *\<nommé\>ProjectName package.cs* ou  *\<ProjectName\>package. vb*, dans l’éditeur.
+4. Ouvrez le fichier de paquet, généralement nommé * \<ProjectName\>Package.cs* ou * \<ProjectName\>Package.vb*, dans l’éditeur.
 
-5. Ajoutez un `ProvideMenuResource` attribut à la classe de package, comme illustré dans l’exemple suivant.
+5. Ajoutez `ProvideMenuResource` un attribut à la classe de paquet, comme indiqué dans l’exemple suivant.
 
     ```csharp
     [ProvideMenuResource("Menus.ctmenu", 1)]
     ```
 
-     La première valeur de paramètre doit correspondre à la valeur `ResourceName` de l’attribut que vous avez défini dans le fichier projet.
+     La première valeur de paramètre `ResourceName` doit correspondre à la valeur de l’attribut que vous avez défini dans le fichier du projet.
 
 ## <a name="see-also"></a>Voir aussi
-- [Fichiers Author. vsct](../../extensibility/internals/authoring-dot-vsct-files.md)
-- [Fichiers de table de commandes Visual Studio (. vsct)](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
-- [Référence du schéma XML VSCT](../../extensibility/vsct-xml-schema-reference.md)
+- [Auteur .vsct fichiers](../../extensibility/internals/authoring-dot-vsct-files.md)
+- [Fichiers visualister de table de commande de studio (.vsct)](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+- [VSCT XML référence schéma](../../extensibility/vsct-xml-schema-reference.md)

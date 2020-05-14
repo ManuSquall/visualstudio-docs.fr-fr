@@ -12,10 +12,10 @@ monikerRange: vs-2017
 ms.workload:
 - dotnet
 ms.openlocfilehash: 503b3753f4f4fdc98f39804ec767277d7685d0d7
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74774078"
 ---
 # <a name="lines-view---net-memory-sampling-data"></a>Lignes, vue - données d’échantillonnage de mémoire .NET
@@ -44,18 +44,18 @@ La vue Lignes des données de profilage d’allocation de mémoire .NET qui uti
 |Colonne|Description|
 |------------|-----------------|
 |**ID du processus**|ID du processus (PID) de l'exécution du profilage.|
-|**Nom du processus**|nom du processus.|
-|**Nom de module**|Nom du module qui contient l’instruction.|
-|**Chemin de module**|Chemin du module qui contient l’instruction.|
+|**Nom du processus**|Nom du processus.|
+|**Nom du module**|Nom du module qui contient l’instruction.|
+|**Chemin du module**|Chemin du module qui contient l’instruction.|
 |**Fichier source**|Fichier source qui contient l’instruction.|
-|**Nom de la fonction**|Nom de la fonction qui contient l’instruction.|
+|**Nom de fonction**|Nom de la fonction qui contient l’instruction.|
 |**Numéro de ligne de fonction**|Numéro de ligne du début de cette fonction dans le fichier source.|
 |**Adresse de la fonction**|Adresse de départ de la fonction.|
 |**Début ligne source**|Numéro de la ligne de début dans le fichier source au niveau duquel l’allocation a eu lieu.|
 |**Fin ligne source**|Numéro de la ligne de fin dans le fichier source au niveau duquel l’allocation a eu lieu.|
 |**Début caractère source**|Décalage du caractère de début dans la ligne de fichier source au niveau de laquelle l’allocation a eu lieu.|
 |**Fin du caractère source**|Décalage du caractère de fin dans la ligne de fichier source au niveau de laquelle l’allocation a eu lieu.|
-|**Nom de ligne**|Identificateur généré par le profileur de la ligne avec la syntaxe suivante :`Source File` **;[** `Line Number Start` **,** `Character Start` **]->;[** `Line Number Start,Character Start` **]**|
+|**Nom de ligne**|Un identifiant de la ligne généré par le`Source File`profileur avec la syntaxe suivante :**;[** `Line Number Start` **,**,`Character Start`**]->; [**`Line Number Start,Character Start`**]**|
 |**Allocations exclusives**|Nombre total d’objets créés dans cette ligne.|
 |**% d’allocations exclusives**|Pourcentage de tous les objets créés dans le cadre de l’exécution du profilage qui ont été alloués dans cette ligne.|
 |**Octets exclusifs**|Pourcentage de tous les octets de mémoire alloués dans le cadre de l’exécution du profilage qui ont été alloués dans cette ligne.|

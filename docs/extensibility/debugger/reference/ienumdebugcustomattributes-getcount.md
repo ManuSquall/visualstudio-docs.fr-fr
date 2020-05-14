@@ -1,5 +1,5 @@
 ---
-title: IEnumDebugCustomAttributes::GetCount | Microsoft Docs
+title: IEnumDebugCustomAttributes::GetCount (fr) Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IEnumDebugCustomAttributes::GetCount
 ms.assetid: fafe826f-4ebf-4572-b2a3-d5dd2916c12f
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: cfa138b31d78ad9035ba3ff2bd752d2f27243630
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 5c06ddf3d87c88003ad227edfbe3437a342667b2
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66324352"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80717250"
 ---
 # <a name="ienumdebugcustomattributesgetcount"></a>IEnumDebugCustomAttributes::GetCount
-Obtient le nombre d’attributs personnalisés dans un énumérateur.
+Obtient le nombre d’attributs personnalisés dans un enumérateur.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -41,13 +41,13 @@ int GetCount(
 
 ## <a name="parameters"></a>Paramètres
 `pcelt`\
-[out] Retourne le nombre d’éléments dans l’énumération.
+[out] Retourne le nombre d’éléments dans le recensement.
 
 ## <a name="return-value"></a>Valeur de retour
- En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.
+ En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
 ## <a name="remarks"></a>Notes
- Cette méthode ne fait pas partie de l’interface d’énumération COM habituel qui spécifie que seules `Next`, `Clone`, `Skip`, et `Reset` doivent être implémentées.
+ Cette méthode ne fait pas partie de l’interface coutumière `Skip`de `Reset` recensement COM qui spécifie que seulement `Next`, `Clone`, , et doivent être mis en œuvre.
 
 ## <a name="see-also"></a>Voir aussi
 - [IEnumDebugCustomAttributes](../../../extensibility/debugger/reference/ienumdebugcustomattributes.md)

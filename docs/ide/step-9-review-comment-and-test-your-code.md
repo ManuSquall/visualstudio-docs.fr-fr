@@ -8,23 +8,23 @@ ms.technology: vs-ide-general
 dev_langs:
 - CSharp
 - VB
-author: TerryGLee
-ms.author: tglee
+author: ornellaalt
+ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 39be6feffb70dd43823af2af0fce719daafc6f78
-ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.openlocfilehash: 1b31532bf6c26512e471ee787dc7219620e6db62
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72572484"
+ms.lasthandoff: 03/20/2020
+ms.locfileid: "77579745"
 ---
 # <a name="step-9-review-comment-and-test-your-code"></a>Étape 9 : examiner, commenter et tester votre code
 
-Ensuite, ajoutez un commentaire à votre code. Un commentaire est une note qui ne modifie pas le comportement de l’application. Il permet à une autre personne qui lit votre code de mieux le comprendre. L'ajout de commentaires à votre code est une bonne habitude à prendre.
+Ensuite, ajoutez un commentaire à votre code. Un commentaire est une note qui ne change pas la façon dont l’application se comporte. Il permet à une autre personne qui lit votre code de mieux le comprendre. L'ajout de commentaires à votre code est une bonne habitude à prendre.
 
-Dans C#, deux barres obliques (//) marquent une ligne comme un commentaire. et par un guillemet simple (') en Visual Basic. Après avoir ajouté un commentaire, vous testez votre application. Quand vous travaillez sur vos projets, il est recommandé d'exécuter et de tester souvent le code afin que vous puissiez détecter et résoudre les problèmes au plus tôt, avant que le code devienne plus complexe. Cette opération est un *test itératif*.
+Dans C, deux barres obliques avant (//) marquent une ligne comme commentaire. et par un guillemet simple (') en Visual Basic. Après avoir ajouté un commentaire, vous testez votre application. Quand vous travaillez sur vos projets, il est recommandé d'exécuter et de tester souvent le code afin que vous puissiez détecter et résoudre les problèmes au plus tôt, avant que le code devienne plus complexe. Cette opération est un *test itératif*.
 
 Vous venez de générer un programme qui fonctionne, et bien qu'il ne soit pas encore terminé, il peut déjà charger une image. Avant d'ajouter un commentaire à votre code et de le tester, prenez le temps de revoir les concepts de code, car vous serez amené à les utiliser régulièrement :
 
@@ -32,7 +32,7 @@ Vous venez de générer un programme qui fonctionne, et bien qu'il ne soit pas e
 
 - Les méthodes vous permettent d'organiser votre code : c'est ainsi que votre code est regroupé.
 
-- La plupart du temps, une méthode effectue un petit nombre de choses dans un ordre spécifique, par exemple comment votre méthode `showButton_Click()` (ou `ShowButton_Click()`) affiche une boîte de dialogue, puis charge une image.
+- La plupart du temps, une méthode fait un petit nombre `showButton_Click()` de `ShowButton_Click()`choses dans un ordre spécifique, comme la façon dont votre (ou ) méthode montre une boîte de dialogue, puis charge une image.
 
 - Une méthode contient des *instructions* ou des lignes de code. En d'autres termes, une méthode permet de regrouper des instructions de code.
 
@@ -48,7 +48,7 @@ Vous venez de générer un programme qui fonctionne, et bien qu'il ne soit pas e
   pictureBox1.Load(openFileDialog1.FileName)
   ```
 
-   Les instructions permettent à vos programmes d'effectuer des actions. Dans C#, une instruction se termine toujours par un point-virgule. En Visual Basic, la fin d'une ligne indique la fin d'une instruction. (Aucun point-virgule n’est nécessaire dans Visual Basic.) L’instruction précédente indique à votre contrôle <xref:System.Windows.Forms.PictureBox> de charger le fichier que l’utilisateur a sélectionné avec le composant **OpenFileDialog** .
+   Les instructions permettent à vos programmes d'effectuer des actions. Dans le C, une déclaration se termine toujours par un point-virgule. En Visual Basic, la fin d'une ligne indique la fin d'une instruction. (Aucun point-virgule n’est nécessaire dans Visual Basic.) La déclaration précédente <xref:System.Windows.Forms.PictureBox> indique à votre contrôle de charger le fichier que l’utilisateur a sélectionné avec le composant **OpenFileDialog.**
 
 ## <a name="to-add-comments"></a>Pour ajouter des commentaires
 
@@ -60,21 +60,21 @@ Vous venez de générer un programme qui fonctionne, et bien qu'il ne soit pas e
 
      [!code-vb[VbExpressTutorial1Step9_10#1](../ide/codesnippet/VisualBasic/step-9-review-comment-and-test-your-code_1.vb)]
 
-    Le gestionnaire d’événements <xref:System.Windows.Forms.Control.Click> du bouton **showButton** est maintenant terminé, et il fonctionne. Vous avez commencé votre code par une instruction `if`. Une instruction `if` est la manière dont vous indiquez à votre application, « vérifiez cette chose et, si elle est vraie, effectuez ces actions ». Dans ce cas, vous indiquez à votre application d’ouvrir la boîte de dialogue **ouvrir un fichier** , et si l’utilisateur sélectionne un fichier et choisit le bouton **OK** , chargez ce fichier dans le **PictureBox**.
+    Le gestionnaire d’événements <xref:System.Windows.Forms.Control.Click> du bouton **showButton** est maintenant terminé, et il fonctionne. Vous avez commencé votre code par une instruction `if`. Une `if` déclaration est la façon dont vous dites à votre application, "Vérifiez cette chose, et si c’est vrai, faire ces actions." Dans ce cas, vous dites à votre application d’ouvrir la boîte de dialogue **Open File,** et si l’utilisateur sélectionne un fichier et choisit le bouton **OK,** chargez ce fichier dans la **PictureBox**.
 
     > [!TIP]
     > L’IDE est conçu pour vous aider à écrire votre code rapidement, notamment grâce aux *extraits de code*. Un extrait est un raccourci qui se développe en petit bloc de code.
     >
-    >  Vous pouvez consulter tous les extraits de code disponibles. Dans la barre de menus, choisissez **Outils** > **Gestionnaire des extraits de code**. Pour C#, l’extrait de code `if` est en **visuel C#**  . Par Visual Basic, les extraits de code `if` se trouvent dans des **modèles de Code**  >  des**conditions et des boucles**. Vous pouvez utiliser ce gestionnaire pour parcourir les extraits existants ou ajouter les vôtres.
+    >  Vous pouvez consulter tous les extraits de code disponibles. Sur la barre de menu, choisissez **Tools** > **Code Snippets Manager**. Pour le C, l’extrait `if` est dans Visual C **.** Pour Visual Basic, `if` les extraits sont dans les codes **Conditionnels** > **et Boucles**. Vous pouvez utiliser ce gestionnaire pour parcourir les extraits existants ou ajouter les vôtres.
     >
     >  Pour activer un extrait de code lorsque vous écrivez du code, tapez-le et appuyez sur la touche **Tab**. De nombreux extraits de code étant affichés dans la fenêtre **IntelliSense**, vous devez appuyer deux fois sur la touche **Tab**, d’abord pour sélectionner l’extrait de code dans la fenêtre **IntelliSense**, puis pour indiquer à l’IDE de l’utiliser. (IntelliSense prend en charge l'extrait `if`, mais pas `ifelse`.)
 
-1. Avant d’exécuter votre application, enregistrez-la en choisissant le bouton **enregistrer tout** de la barre d’outils, qui doit ressembler à la capture d’écran suivante.
+1. Avant d’exécuter votre application, enregistrez votre application en choisissant le bouton **Save All** toolbar, qui devrait ressembler à la capture d’écran suivante.
 
      ![Enregistrer tout, bouton de barre d’outils](../ide/media/express_iconsaveall.png)<br>
-*Bouton* ***enregistrer tout***
+***Enregistrer tous les*** *boutons*
 
-     Vous pouvez également enregistrer votre application en choisissant **fichier** > **enregistrer tout** à partir de la barre de menus (ou en appuyant sur **Ctrl**+**Shift**+**S**). Il est conseillé d'enregistrer votre travail régulièrement.
+     Alternativement, pour enregistrer votre application, choisissez **File** > **Save All** de la barre de menu (ou appuyez sur **Ctrl**+**Shift**+**S**). Il est conseillé d'enregistrer votre travail régulièrement.
 
      Lorsqu’il est en cours d’exécution, votre programme doit ressembler à l’image suivante.
 
@@ -82,9 +82,9 @@ Vous venez de générer un programme qui fonctionne, et bien qu'il ne soit pas e
 
 ## <a name="to-test-your-app"></a>Pour tester votre application
 
-1. Appuyez sur la touche **F5** ou choisissez le bouton **Démarrer le débogage** dans la barre d’outils.
+1. Choisissez la clé **F5** ou choisissez le bouton **Start Debugging** toolbar.
 
-1. Choisissez le bouton **Afficher une image** pour exécuter le code que vous venez d’écrire. Tout d’abord, l’application ouvre une boîte de dialogue **ouvrir un fichier** . Vérifiez que vos filtres s’affichent dans la liste déroulante **Types de fichiers** en bas de la boîte de dialogue. Ensuite, naviguez jusqu'à une image et ouvrez-la. En général, des échantillons d’images sont fournis avec le système d’exploitation Windows. Ils se trouvent dans votre dossier *Mes documents*, à l’intérieur du dossier *Mes images\Échantillons d’images*.
+1. Choisissez le bouton **Afficher une image** pour exécuter le code que vous venez d’écrire. Tout d’abord, l’application ouvre une boîte de dialogue **Open File.** Vérifiez que vos filtres s’affichent dans la liste déroulante **Types de fichiers** en bas de la boîte de dialogue. Ensuite, naviguez jusqu'à une image et ouvrez-la. En général, des échantillons d’images sont fournis avec le système d’exploitation Windows. Ils se trouvent dans votre dossier *Mes documents*, à l’intérieur du dossier *Mes images\Échantillons d’images*.
 
     > [!TIP]
     > Si vous ne voyez pas d’images affichées dans la boîte de dialogue **Sélectionner un fichier image**, vérifiez que le filtre **Tous les fichiers (*.\*)** est sélectionné dans la liste déroulante figurant en bas à droite de la boîte de dialogue.
@@ -95,11 +95,11 @@ Vous venez de générer un programme qui fonctionne, et bien qu'il ne soit pas e
 
 ## <a name="to-continue-or-review"></a>Pour continuer ou examiner
 
-- Pour passer à l’étape suivante du didacticiel, consultez **[étape 10 : écrire du code pour des boutons supplémentaires et une case à cocher](../ide/step-10-write-code-for-additional-buttons-and-a-check-box.md)** .
+- Pour passer à l’étape suivante tutoriel, voir **[Étape 10: Écrire du code pour les boutons supplémentaires et une case à cocher](../ide/step-10-write-code-for-additional-buttons-and-a-check-box.md)**.
 
 - Pour revenir à l’étape précédente du tutoriel, consultez [Étape 8 : écrire du code pour le gestionnaire d’événements du bouton Afficher une image](../ide/step-8-write-code-for-the-show-a-picture-button-event-handler.md).
 
 ## <a name="see-also"></a>Voir aussi
 
-* [Didacticiel 2 : créer un questionnaire mathématique chronométré](tutorial-2-create-a-timed-math-quiz.md)
-* [Didacticiel 3 : créer un jeu de combinaisons](tutorial-3-create-a-matching-game.md)
+* [Tutorial 2: Créer un quiz de mathématiques chronométré](tutorial-2-create-a-timed-math-quiz.md)
+* [Tutorial 3: Créer un jeu correspondant](tutorial-3-create-a-matching-game.md)

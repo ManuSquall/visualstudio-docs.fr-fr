@@ -12,10 +12,10 @@ dev_langs:
 ms.workload:
 - dotnet
 ms.openlocfilehash: ba082e90c2447d1da7510ce16f888f67a52b5ac0
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75585269"
 ---
 # <a name="move-a-type-to-a-matching-file-refactoring"></a>Déplacer un type vers un fichier correspondant (refactorisation)
@@ -24,7 +24,7 @@ Cette refactorisation s’applique à :
 
 - C#
 
-- Visual Basic
+- Visual Basic
 
 **Quoi :** vous permet de déplacer le type sélectionné vers un fichier distinct portant le même nom.
 
@@ -32,7 +32,7 @@ Cette refactorisation s’applique à :
 
 **Pourquoi :** placer plusieurs types dans un même fichier peut ralentir la recherche de ces types. En déplaçant les types vers des fichiers portant le même nom, le code devient plus lisible et cela facilite la navigation.
 
-## <a name="how-to"></a>Procédure
+## <a name="how-to"></a>Procédures
 
 1. Placez le curseur dans le nom du type dans lequel il est défini. Par exemple :
 
@@ -46,7 +46,7 @@ Cette refactorisation s’applique à :
 
 2. Effectuez ensuite l'une des opérations suivantes :
 
-   - Appuyez sur **Ctrl**+ **.**
+   - Appuyez **sur Ctrl**+**.**
    - Cliquez avec le bouton droit sur le nom du type et sélectionnez **Actions rapides et refactorisations**.
 
 1. Sélectionnez **Déplacer le type vers *NomType*.cs** dans le menu, où *NomType* est le nom du type que vous avez sélectionné.

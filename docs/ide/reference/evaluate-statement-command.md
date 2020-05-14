@@ -14,13 +14,13 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: d2b6333b6b57891065b42c2d56e3acfe68b315de
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75595655"
 ---
-# <a name="evaluate-statement-command"></a>Évaluer l’instruction, commande
+# <a name="evaluate-statement-command"></a>Évaluer l'instruction (commande)
 
 Évalue et affiche l’instruction donnée.
 
@@ -34,9 +34,9 @@ ms.locfileid: "75595655"
 
 `text`
 
-Requis. Instruction à évaluer.
+Obligatoire. Instruction à évaluer.
 
-## <a name="example"></a>Exemple
+## <a name="example"></a> Exemple
 
 ```cmd
 >Debug.EvaluateStatement args.Length
@@ -45,7 +45,7 @@ Requis. Instruction à évaluer.
 ## <a name="see-also"></a>Voir aussi
 
 - [Imprimer, commande](../../ide/reference/print-command.md)
-- [Visual Studio, commandes](../../ide/reference/visual-studio-commands.md)
-- [Fenêtre Commande](../../ide/reference/command-window.md)
-- [Rechercher/Commande, zone](../../ide/find-command-box.md)
-- [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)
+- [Commandes de studio visuel](../../ide/reference/visual-studio-commands.md)
+- [Commande, fenêtre](../../ide/reference/command-window.md)
+- [Boîte de recherche/commande](../../ide/find-command-box.md)
+- [Alias de commande de studio visuel](../../ide/reference/visual-studio-command-aliases.md)

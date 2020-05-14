@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: f2b9f38d83befcf49ecd3de8da3a2cd26ff3ab46
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 95f26af1da51d4c83ae78adcb7372b32364d8a2b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75593007"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79301670"
 ---
 # <a name="blend-for-visual-studio-overview"></a>Vue d’ensemble de Blend for Visual Studio
 

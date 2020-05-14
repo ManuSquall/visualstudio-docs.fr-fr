@@ -15,17 +15,17 @@ metadata:
   dev_langs:
   - VB
   ms.openlocfilehash: 3462f85ea571e163617c6c5f315a28c98342acab
-  ms.sourcegitcommit: 8530d15aa72fe058ee3a3b4714c36b8638f8b494
+  ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
   ms.translationtype: HT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 11/19/2019
+  ms.lasthandoff: 03/21/2020
   ms.locfileid: "74188619"
 landingContent:
 - title: Prise en main
   linkLists:
   - linkListType: how-to-guide
     links:
-    - text: Installation de Visual Studio
+    - text: Installer Visual Studio
       url: ../../install/install-visual-studio.md
   - linkListType: get-started
     links:
@@ -55,7 +55,7 @@ landingContent:
       url: ../tutorial-open-project-from-repo.md
     - text: Écrire et modifier du code
       url: tutorial-editor.md
-    - text: Compilation et génération
+    - text: Compiler et générer
       url: ../../ide/compiling-and-building-in-visual-studio.md
     - text: Déboguer votre code
       url: ../csharp/tutorial-debugger.md

@@ -1,6 +1,6 @@
 ---
-title: Comment exécuter un C# programme
-description: Guide du débutant sur l’exécution d’un C# programme dans Visual Studio.
+title: Comment exécuter un programme (C)
+description: Guide du débutant sur la façon d’exécuter un programme de Cmd dans Visual Studio.
 ms.custom: get-started
 ms.date: 10/16/2019
 ms.technology: vs-ide-general
@@ -15,113 +15,113 @@ dev_langs:
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: 2ffe52fc2bf7d05084307b4d972e45f4b1d2acdf
-ms.sourcegitcommit: 4be64917e4224fd1fb27ba527465fca422bc7d62
+ms.openlocfilehash: ee28bde6de10006ccfdc5175cca629ad9d1590d0
+ms.sourcegitcommit: ade07bd1cf69b8b494d171ae648cfdd54f7800d3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "76924615"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "81649645"
 ---
-# <a name="how-to-run-a-c-program-in-visual-studio"></a>Comment : exécuter un C# programme dans Visual Studio
+# <a name="how-to-run-a-c-program-in-visual-studio"></a>Comment : Exécuter un programme CMD en studio visuel
 
-Ce que vous devez faire pour exécuter un programme dépend de ce que vous démarrez, du type de programme, de l’application ou du service dont il s’agit et de la nécessité ou non de l’exécuter sous le débogueur. Dans le cas le plus simple, quand un projet est ouvert dans Visual Studio, générez-le et exécutez-le en appuyant sur **Ctrl**+**F5** (**exécuter sans débogage**) ou **F5** (**Démarrer avec le débogage**) ou appuyez sur la flèche verte (**bouton Démarrer**) de la barre d’outils principale de Visual Studio.
+Ce que vous devez faire pour exécuter un programme dépend de ce que vous partez, du type de programme, d’application ou de service qu’il est, et de la question de savoir si vous voulez l’exécuter sous le débogé ou non. Dans le cas le plus simple, lorsque vous avez un projet ouvert dans Visual Studio, construisez et exécutez-le en appuyant sur **Ctrl**+**F5** **(Démarrer sans débogage**) ou **F5** (**Commencez par débogage**), ou appuyez sur la flèche verte ( Démarrer**bouton**) sur la barre d’outils principale Visual Studio.
 
-![Capture d’écran montrant le bouton Démarrer](media/vs-start-button.png)
+![Capture d’écran affichant le bouton de démarrage](media/vs-start-button.png)
 
-## <a name="starting-from-a-project"></a>Démarrage à partir d’un projet
+## <a name="starting-from-a-project"></a>À partir d’un projet
 
-Si vous avez un C# projet (fichier *. csproj* ), vous pouvez l’exécuter, s’il s’agit d’un programme exécutable. Si un projet contient un C# fichier avec une méthode `Main` et que sa sortie est un fichier exécutable (exe), il s’exécutera probablement s’il est généré avec succès.
+Si vous avez un projet C (fichier *.csproj),* alors vous pouvez l’exécuter, s’il s’agit d’un programme runnable. Si un projet contient un `Main` fichier C avec une méthode, et sa sortie est exécutable (EXE), alors très probablement il s’exécutera s’il construit avec succès.
 
-Si vous disposez déjà du code pour votre programme dans un projet dans Visual Studio, ouvrez le projet. Pour ouvrir le projet, double-cliquez ou appuyez sur le fichier *. csproj* dans l’Explorateur de fichiers Windows, ou dans Visual Studio, choisissez **ouvrir un projet**, recherchez le fichier projet ( *. csproj*) et choisissez le fichier projet.
+Si vous avez déjà le code de votre programme dans un projet de Visual Studio, ouvrez le projet. Pour ouvrir le projet, double-clic ou appuyez sur le *.csproj* de windows File Explorer, ou de Visual Studio, choisissez **Open un projet**, parcourez pour trouver le projet (*.csproj*) fichier, et choisissez le fichier de projet.
 
-Une fois que les projets se chargent dans Visual Studio, appuyez sur **Ctrl**+**F5** (**exécuter sans débogage**) ou utilisez le bouton **Démarrer** vert dans la barre d’outils de Visual Studio pour exécuter le programme.  S’il y a plusieurs projets, celui avec la méthode `Main` doit être défini comme projet de démarrage. Pour définir le projet de démarrage, cliquez avec le bouton droit sur un nœud de projet, puis choisissez **définir comme projet de démarrage**.
+Après les charges des projets dans Visual Studio, appuyez sur **Ctrl**+**F5** (**Démarrer sans débogage**) ou utiliser le bouton **Démarrer** vert sur la barre d’outils Visual Studio pour exécuter le programme.  S’il y a plusieurs `Main` projets, celui avec la méthode doit être défini comme le projet de démarrage. Pour définir le projet de démarrage, cliquez à droite sur un nœud de projet, et choisissez **Set comme projet de démarrage**.
 
-![Définir le projet de démarrage](media/set-as-startup-project.png)
+![Définir un projet de démarrage](media/set-as-startup-project.png)
 
-Visual Studio tente de générer et d’exécuter votre projet.  Si des erreurs de build se produisent, la sortie de génération s’affiche dans la fenêtre **sortie** et les erreurs dans la fenêtre **liste d’erreurs** .
+Visual Studio tente de construire et d’exécuter votre projet.  S’il y a des erreurs de construction, vous voyez la sortie de build dans la fenêtre **de sortie** et les erreurs dans la fenêtre de **liste d’erreur.**
 
-Si la génération est réussie, l’application s’exécute de manière appropriée pour le type de projet. Les applications de console s’exécutent dans une fenêtre de terminal, les applications de bureau Windows démarrent dans une nouvelle fenêtre, les applications Web démarrent dans le navigateur (hébergé par IIS Express), et ainsi de suite.
+Si la version réussit, l’application fonctionne d’une manière appropriée pour le type de projet. Les applications consoles s’exécutent dans une fenêtre terminale, les applications de bureau Windows commencent dans une nouvelle fenêtre, les applications Web commencent dans le navigateur (hébergé par IIS Express), et ainsi de suite.
 
 ## <a name="starting-from-code"></a>À partir du code
 
-Si vous démarrez à partir d’une liste de code, d’un fichier de code ou d’un petit nombre de fichiers, assurez-vous d’abord que le code que vous souhaitez exécuter provient d’une source fiable et qu’il s’agit d’un programme exécutable. S’il possède une méthode `Main`, il est probablement conçu comme un programme exécutable que vous pouvez utiliser pour créer un projet et l’utiliser dans Visual Studio.
+Si vous partez d’une liste de code, d’un fichier de code ou d’un petit nombre de fichiers, assurez-vous d’abord que le code que vous souhaitez exécuter provient d’une source fiable et qu’il s’agit d’un programme runnable. S’il `Main` a une méthode, il est probablement destiné comme un programme runnable que vous pouvez utiliser le modèle Console App pour créer un projet pour travailler avec elle dans Visual Studio.
 
 ### <a name="code-listing-for-a-single-file"></a>Liste de code pour un seul fichier
 
-Démarrez Visual Studio, ouvrez un projet C# Console vide, sélectionnez l’ensemble du code dans le fichier. cs qui se trouve déjà dans le projet, puis supprimez-le. Collez ensuite le contenu de votre code dans le fichier. cs. Lorsque vous collez le code, remplacez ou supprimez le code qui était auparavant. Renommez le fichier pour qu’il corresponde au code d’origine.
+Démarrer Visual Studio, ouvrir un projet de console C vide, sélectionner tout le code dans le fichier .cs qui est déjà dans le projet, et le supprimer. Ensuite, collez le contenu de votre code dans le fichier .cs. Lorsque vous collez le code, surcriez ou supprimez le code qui était là avant. Renommer le fichier pour correspondre au code d’origine.
 
 ### <a name="code-listings-for-a-few-files"></a>Listes de code pour quelques fichiers
 
-Démarrez Visual Studio, ouvrez un projet C# Console vide, sélectionnez l’ensemble du code dans le fichier. cs qui se trouve déjà dans le projet, puis supprimez-le. Collez ensuite le contenu du premier fichier de code dans le fichier. cs. Renommez le fichier pour qu’il corresponde au code d’origine. 
+Démarrer Visual Studio, ouvrir un projet de console C vide, sélectionner tout le code dans le fichier .cs qui est déjà dans le projet, et le supprimer. Ensuite, coller le contenu du premier fichier de code dans le fichier .cs. Renommer le fichier pour correspondre au code d’origine. 
 
-Pour un deuxième fichier, cliquez avec le bouton droit sur le nœud du projet dans **Explorateur de solutions** pour ouvrir le menu contextuel du projet, puis choisissez **Ajouter > élément existant** (ou utilisez la combinaison de touches **MAJ**+**ALT**+**a**), puis sélectionnez les fichiers de code.
+Pour un deuxième fichier, cliquez à droite sur le nœud de projet dans **Solution Explorer** pour ouvrir le menu raccourci pour le projet, et choisissez Ajouter > **élément existant** (ou utiliser la combinaison clé **Shift**+**Alt**+**A**), et sélectionnez les fichiers de code.
 
-### <a name="multiple-files-on-disk"></a>Plusieurs fichiers sur le disque
+### <a name="multiple-files-on-disk"></a>Fichiers multiples sur disque
 
-1. Créez un nouveau projet de type approprié (utilisez C# l' **application console** si vous n’en êtes pas sûr).
+1. Créez un nouveau projet du type approprié (utilisez **l’application console** C si vous n’êtes pas sûr).
 
-2. Cliquez avec le bouton droit sur le nœud du projet, puis **ajoutez** > **élément existant** pour sélectionner les fichiers et les importer dans votre projet.  
+2. Cliquez à droite sur le nœud de projet, s’ajouter **Add** > **à l’élément existant** pour sélectionner les fichiers et les importer dans votre projet.  
 
-### <a name="starting-from-a-folder"></a>Démarrage à partir d’un dossier
+### <a name="starting-from-a-folder"></a>À partir d’un dossier
 
-Lorsque vous utilisez un dossier contenant de nombreux fichiers, commencez par vérifier s’il existe un projet ou une solution.  Si le programme a été créé avec Visual Studio, vous devez trouver un fichier projet ou un fichier solution. Recherchez les fichiers portant l’extension *. csproj* ou. sln et, dans l’Explorateur de fichiers Windows, double-cliquez sur l’un d’eux pour les ouvrir dans Visual Studio. Consultez [Démarrer à partir d’une solution ou d’un projet Visual Studio](#starting-from-a-project).
+Lorsque vous travaillez avec un dossier de nombreux fichiers, voyez d’abord s’il y a un projet ou une solution.  Si le programme a été créé avec Visual Studio, vous devez trouver un fichier de projet ou un fichier de solution. Recherchez des fichiers avec l’extension *.csproj* ou l’extension .sln et dans le Windows File Explorer, double-cliquez sur l’un d’eux pour les ouvrir dans Visual Studio. Voir [À partir d’une solution ou d’un projet Visual Studio](#starting-from-a-project).
 
-Si vous n’avez pas de fichier projet, par exemple si le code a été développé dans un autre environnement de développement, ouvrez le dossier de niveau supérieur à l’aide de la méthode **ouvrir le dossier** dans Visual Studio. Consultez [développer du code sans projets ni solutions](../../ide/develop-code-in-visual-studio-without-projects-or-solutions.md).
+Si vous n’avez pas de fichier de projet, comme si le code a été développé dans un autre environnement de développement, puis ouvrez le dossier de haut niveau en utilisant la méthode **du dossier Open** dans Visual Studio. Voir [Développer le code sans projets ni solutions](../../ide/develop-code-in-visual-studio-without-projects-or-solutions.md).
 
-## <a name="starting-from-a-github-or-azure-devops-repo"></a>Démarrage à partir d’un GitHub ou d’Azure DevOps référentiel
+## <a name="starting-from-a-github-or-azure-devops-repo"></a>À partir d’un GitHub ou Azure DevOps repo
 
-Si le code que vous souhaitez exécuter se trouve dans GitHub ou dans un référentiel Azure DevOps, vous pouvez utiliser Visual Studio pour ouvrir le projet directement à partir du référentiel. Consultez [ouvrir un projet à partir d’un référentiel](../tutorial-open-project-from-repo.md).
+Si le code que vous souhaitez exécuter est dans GitHub ou dans un repo Azure DevOps, vous pouvez utiliser Visual Studio pour ouvrir le projet directement à partir de la pension. Voir [Ouvrez un projet à partir d’une pension](../tutorial-open-project-from-repo.md).
 
 ## <a name="run-the-program"></a>Exécuter le programme
 
-Pour démarrer le programme, appuyez sur la flèche verte (bouton**Démarrer** ) de la barre d’outils principale de Visual Studio, ou appuyez sur **F5** ou sur **CTRL**+**F5** pour exécuter le programme. Quand vous utilisez le bouton **Démarrer** , il s’exécute sous le débogueur.  Visual Studio tente de générer le code dans votre projet et de l’exécuter.  Si cela fonctionne, parfait ! Mais si ce n’est pas le cas, poursuivez la lecture pour obtenir des idées sur la manière de réussir la génération.
+Pour commencer le programme, appuyez sur la flèche verte (bouton**Démarrer)** sur la barre d’outils visual Studio principale, ou appuyez sur **F5** ou **Ctrl**+**F5** pour exécuter le programme. Lorsque vous utilisez le bouton **Démarrer,** il s’exécute sous le débailleur.  Visual Studio tente de construire le code dans votre projet et de l’exécuter.  Si ça réussit, super ! Mais si ce n’est pas le cas, continuez à lire pour quelques idées sur la façon de le faire construire avec succès.
 
 ## <a name="troubleshooting"></a>Résolution des problèmes
 
-Votre code peut contenir des erreurs, mais si le code est correct, mais dépend simplement d’autres assemblys ou packages NuGet, ou a été écrit pour cibler une version différente de .NET, vous pouvez peut-être le corriger facilement.
+Votre code peut avoir des erreurs, mais si le code est correct, mais dépend juste de certains autres assemblages ou paquets NuGet, ou a été écrit pour cibler une version différente de .NET, vous pourriez être en mesure de le réparer facilement.
 
-### <a name="add-references"></a>Ajoutez des références
+### <a name="add-references"></a>Ajouter des références
 
-Pour générer correctement, le code doit être correct et les références appropriées doivent être configurées pour les bibliothèques ou d’autres dépendances. Vous pouvez examiner les lignes ondulées rouges et au **liste d’erreurs** pour voir si le programme comporte des erreurs, même avant de le compiler et de l’exécuter. Si vous rencontrez des erreurs liées à des noms non résolus, vous devrez probablement ajouter une référence ou une directive using, ou les deux. Si le code fait référence à des assemblys ou des packages NuGet, vous devez ajouter ces références dans le projet.
+Pour construire correctement, le code doit être correct et avoir les bonnes références mises en place aux bibliothèques ou à d’autres dépendances. Vous pouvez regarder les lignes rouges squiggly et à la **liste d’erreurs** pour voir si le programme a des erreurs, avant même de le compiler et de l’exécuter. Si vous constatez des erreurs liées à des noms non résolus, vous devez probablement ajouter une référence ou une directive utilisant, ou les deux. Si le code fait référence à des assemblages ou à des paquets NuGet, vous devez ajouter ces références dans le projet.
 
-Visual Studio tente de vous aider à identifier les références manquantes. Lorsqu’un nom n’est pas résolu, une icône d’ampoule s’affiche dans l’éditeur. Si vous cliquez sur l’ampoule, vous pouvez voir des suggestions sur la façon de résoudre le problème. Les correctifs peuvent être les suivants :
+Visual Studio tente de vous aider à identifier les références manquantes. Lorsqu’un nom n’est pas résolu, une icône d’ampoule apparaît dans l’éditeur. Si vous cliquez sur l’ampoule, vous pouvez voir quelques suggestions sur la façon de résoudre le problème. Les correctifs pourraient être à:
 
-- Ajouter une directive using
-- Ajoutez une référence à un assembly, ou
-- Installez un package NuGet.
+- ajouter une directive à l’aide
+- ajouter une référence à une assemblée, ou
+- installer un paquet NuGet.
 
-#### <a name="missing-using-directive"></a>Directive using manquante
+#### <a name="missing-using-directive"></a>Absence de directive
 
-Par exemple, dans l’écran suivant, vous pouvez choisir d’ajouter `using System;` au début du fichier de code pour résoudre le nom non résolu `Console`:
+Par exemple, dans l’écran suivant, `using System;` vous pouvez choisir d’ajouter au `Console`début du fichier de code pour résoudre le nom non résolu :
 
-![Capture d’écran de l’ampoule pour ajouter une directive using](media/name-does-not-exist2.png)
+![Capture d’écran de l’ampoule pour ajouter une directive à l’aide](media/name-does-not-exist2.png)
 
-#### <a name="missing-assembly-reference"></a>Référence d’assembly manquante
+#### <a name="missing-assembly-reference"></a>Référence d’assemblage manquante
 
-Les références .NET peuvent se présenter sous la forme d’assemblys ou de packages NuGet. En règle générale, si vous trouvez du code source, le serveur de publication ou l’auteur explique les assemblys requis et les packages dont le code dépend. Pour ajouter manuellement une référence à un projet, cliquez avec le bouton droit sur le nœud **références** dans le **Explorateur de solutions**, choisissez **Ajouter une référence**, puis recherchez l’assembly requis.
+.Net références peuvent être sous la forme d’assemblages ou de paquets NuGet. Habituellement, si vous trouvez du code source, l’éditeur ou l’auteur expliquera les assemblages requis et les paquets dont dépend le code. Pour ajouter une référence à un projet manuellement, cliquez à droite sur le nœud **Références** dans le **Solution Explorer**, choisissez **Ajouter référence**et localiser l’assemblage requis.
 
-![Capture d’écran du menu Ajouter une référence](media/add-reference.png)
+![Capture d’écran du menu Add Reference](media/add-reference.png)
 
-Vous pouvez rechercher des assemblys et ajouter des références en suivant les instructions fournies dans [Ajouter ou supprimer des références à l’aide du gestionnaire](../../ide/how-to-add-or-remove-references-by-using-the-reference-manager.md)de références.
+Vous pouvez trouver des assemblages et ajouter des références en suivant les instructions dans Ajouter ou supprimer les références en [utilisant le gestionnaire de référence](../../ide/how-to-add-or-remove-references-by-using-the-reference-manager.md).
 
-#### <a name="missing-nuget-package"></a>Package NuGet manquant
+#### <a name="missing-nuget-package"></a>Paquet NuGet manquant
 
-Si Visual Studio détecte un package NuGet manquant, une ampoule s’affiche et vous donne la possibilité de l’installer :
+Si Visual Studio détecte un paquet NuGet manquant, une ampoule apparaît et vous donne la possibilité de l’installer :
 
-![Capture d’écran de l’ampoule pour installer le package](media/lightbulb-add-package.png)
+![Capture d’écran de l’ampoule pour installer le paquet](media/lightbulb-add-package.png)
 
-Si cela ne résout pas le problème et que Visual Studio ne peut pas localiser le package, essayez de le Rechercher en ligne. Consultez [installer et utiliser un package NuGet dans Visual Studio](/nuget/quickstart/install-and-use-a-package-in-visual-studio).
+Si cela ne résout pas le problème et Visual Studio ne peut pas localiser le paquet, essayez de le rechercher en ligne. Voir [Installer et utiliser un forfait NuGet dans Visual Studio](/nuget/quickstart/install-and-use-a-package-in-visual-studio).
 
-## <a name="use-the-right-version-of-net"></a>Utiliser la version appropriée de .NET
+## <a name="use-the-right-version-of-net"></a>Utilisez la bonne version de .NET
 
-Étant donné que les différentes versions de la .NET Framework ont un certain degré de compatibilité descendante, un Framework plus récent peut exécuter du code écrit pour une infrastructure plus ancienne sans aucune modification. Toutefois, vous devez parfois cibler un Framework spécifique. Vous devrez peut-être installer une version spécifique du .NET Framework ou de .NET Core, si elle n’est pas déjà installée. Consultez [modifier Visual Studio](../../install/modify-visual-studio.md).
+Étant donné que différentes versions du cadre .NET ont un certain degré de compatibilité rétrograde, un cadre plus récent pourrait exécuter le code écrit pour un cadre plus ancien sans aucune modification. Mais, parfois, vous devez cibler un cadre spécifique. Vous devrez peut-être installer une version spécifique du cadre .NET ou .NET Core, si elle n’est pas déjà installée. Voir [Modifier Visual Studio](../../install/modify-visual-studio.md).
 
-Pour modifier la version cible du .NET Framework, consultez [modifier la version cible du .NET Framework](../../ide/visual-studio-multi-targeting-overview.md#select-a-target-framework-version). Pour plus d’informations, consultez [dépannage .NET Framework erreurs de ciblage](../../msbuild/troubleshooting-dotnet-framework-targeting-errors.md).
+Pour modifier le cadre cible, voir [Modifier le cadre cible](../../ide/visual-studio-multi-targeting-overview.md#select-a-target-framework-version). Pour plus d’informations, voir [Fautes de ciblage .NET Framework .NET.](../../msbuild/troubleshooting-dotnet-framework-targeting-errors.md)
 
-## <a name="next-steps"></a>Étapes suivantes :
+## <a name="next-steps"></a>Étapes suivantes
 
-Explorez l’environnement de développement Visual Studio en lisant [Bienvenue dans l’IDE de Visual Studio](../visual-studio-ide.md).
+Explorez l’environnement de développement Visual Studio en lisant [Bienvenue au Visual Studio IDE](../visual-studio-ide.md).
 
 ## <a name="see-also"></a>Voir aussi
 
-[Créer votre première C# application](tutorial-console.md)
+[Créer votre première application C#](tutorial-console.md)

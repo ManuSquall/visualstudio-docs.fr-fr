@@ -10,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 206fcddca51f8e770e013ff67de6ae3d5562f633
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: c30ac5950ca9bf775b05e9f77867c119b7c7565d
+ms.sourcegitcommit: eef26de3d7a5c971baedbecf3b4941fb683ddb2d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75585793"
+ms.lasthandoff: 04/17/2020
+ms.locfileid: "81544339"
 ---
 # <a name="visual-studio-unrecoverable-process-error"></a>Erreur de processus irrécupérable Visual Studio
 
@@ -23,7 +23,7 @@ Visual Studio utilise plusieurs processus hors processus pour exécuter des tâc
 
 Si le processus *ServiceHub.RoslynCodeAnalysisService.exe* ou *ServiceHub.RoslynCodeAnalysisService32.exe* se termine pour une raison quelconque, une barre d’information contextuelle s’affiche avec le message suivant :
 
-**«Malheureusement, un processus utilisé par Visual Studio a rencontré une erreur irrécupérable. Nous vous recommandons d’enregistrer votre travail, puis de fermer et redémarrer Visual Studio.»**
+**"Malheureusement, un processus utilisé par Visual Studio a rencontré une erreur irrécupérable. Nous vous recommandons de sauver votre travail, puis de fermer et de redémarrer Visual Studio."**
 
 Si vous voyez ce message, vous devez enregistrer votre travail, puis fermer et redémarrer Visual Studio.
 
@@ -33,16 +33,21 @@ Voici une liste des processus hors processus utilisés par Visual Studio. Cette 
 
 - Microsoft.Alm.Shared.Remoting.RemoteContainer.dll
 - Microsoft.CodeAnalysis.LiveUnitTesting.EntryPoint
+- MSBuild.exe
 - PerfWatson2.exe
+- ScriptedSandbox64.exe
+- ServiceHub.Host.CLR.x86.exe
 - ServiceHub.Host.Node.x86.exe
 - ServiceHub.IdentityHost.exe
-- ServiceHub.VSDetouredHost.exe
-- ServiceHub.SettingsHost.exe
-- ServiceHub.Host.CLR.x86.exe
-- ServiceHub.RoslynCodeAnalysisService32.exe
 - ServiceHub.RoslynCodeAnalysisService.exe
+- ServiceHub.RoslynCodeAnalysisService32.exe
+- ServiceHub.SettingsHost.exe
+- ServiceHub.VSDetouredHost.exe
+- VBCSCompiler.exe
+- VsHub.exe
+- vstest.discoveryengine.x86.exe
+- WaAppAgent.exe
 - WindowsAzureGuestAgent.exe
 - WindowsAzureTelemetryService.exe
-- WaAppAgent.exe
 
 Si l’un de ces processus s’arrête de façon inattendue, certaines fonctionnalités dans Visual Studio cessent de fonctionner. Pour certains processus, la perte de fonctionnalité peut être négligeable. Pour d’autres, la stabilité de Visual Studio est affectée et un message d’erreur s’affiche.

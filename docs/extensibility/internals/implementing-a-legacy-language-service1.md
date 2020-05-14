@@ -1,55 +1,55 @@
 ---
-title: Implémentation d’un langage hérité1 | Microsoft Docs
+title: Mise en œuvre d’un service linguistique hérité1 Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - language services, managed
 ms.assetid: df638f24-166d-4b80-be82-c9c39ca7a556
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 626838b0e82846f66b817465fca2df353af42dd5
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: c3805e49ffa83f7dea2ee58ef36e1bc8e48b1eaa
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66315644"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80707698"
 ---
-# <a name="implementing-a-legacy-language-service"></a>Implémentation d’un Service de langage hérité
-Vous pouvez utiliser les classes dans l’infrastructure de package managé (MPF) pour implémenter un service de langage hérité qui prend en charge un large éventail de fonctionnalités, telles que la coloration syntaxique, la correspondance d’accolade et la saisie semi-automatique IntelliSense.
+# <a name="implementing-a-legacy-language-service"></a>Implémentation d’un service de langage hérité
+Vous pouvez utiliser les classes dans le cadre de paquet géré (MPF) pour mettre en œuvre un service linguistique existant qui prend en charge une grande variété de fonctionnalités, telles que la mise en évidence de la syntaxe, l’appariement des accolades et l’achèvement d’IntelliSense.
 
- Services de langage hérité sont implémentés en tant que partie d’un VSPackage, mais la plus récente pour implémenter des fonctionnalités de service de langage consiste à utiliser des extensions MEF. Pour en savoir plus sur la nouvelle façon d’implémenter un service de langage, consultez [éditeur et les Extensions de Service de langage](../../extensibility/editor-and-language-service-extensions.md).
+ Les services linguistiques hérités sont mis en œuvre dans le cadre d’un VSPackage, mais la nouvelle façon de mettre en œuvre des fonctionnalités de service linguistique est d’utiliser des extensions MEF. Pour en savoir plus sur la nouvelle façon de mettre en œuvre un service linguistique, consultez [Editor et Language Service Extensions](../../extensibility/editor-and-language-service-extensions.md).
 
 > [!NOTE]
-> Nous vous recommandons de commencer à utiliser le nouvel éditeur API dès que possible. Cela améliorer les performances de votre service de langage et vous permettent de tirer parti des nouvelles fonctionnalités de l’éditeur.
+> Nous vous recommandons de commencer à utiliser le nouvel éditeur API dès que possible. Cela améliorera les performances de votre service linguistique et vous permettra de profiter des nouvelles fonctionnalités de l’éditeur.
 
 ## <a name="in-this-section"></a>Dans cette section
 - [Présentation du service de langage hérité](../../extensibility/internals/legacy-language-service-overview.md)
 
- Vue d’ensemble des fonctionnalités de service de langage qui sont pris en charge dans MPF.
+ Un aperçu des fonctionnalités du service linguistique qui sont pris en charge dans MPF.
 
 - [Implémentation d’un service de langage hérité](../../extensibility/internals/implementing-a-legacy-language-service2.md)
 
- Décrit ce qui est nécessaire pour implémenter un service de langage à l’aide du MPF.
+ Décrit ce qui est nécessaire pour mettre en œuvre un service linguistique en utilisant MPF.
 
 - [Inscription d’un service de langage hérité](../../extensibility/internals/registering-a-legacy-language-service1.md)
 
- Décrit les étapes qui sont requises pour l’inscription à un service de langage MPF [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].
+ Décrit les étapes qui sont nécessaires pour enregistrer un [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]service linguistique basé sur le MPF avec .
 
 - [Scanneur et analyseur du service de langage hérité](../../extensibility/internals/legacy-language-service-parser-and-scanner.md)
 
- Décrit les deux analyseurs qui sont requises pour implémenter toutes les fonctionnalités d’un service de langage à l’aide du MPF.
+ Décrit les deux analyseurs qui sont nécessaires pour implémenter toutes les fonctionnalités d’un service linguistique en utilisant le MPF.
 
-- [Procédure pas à pas : Création d’un service de langage hérité](../../extensibility/internals/walkthrough-creating-a-legacy-language-service.md)
+- [Procédure pas à pas : création d’un service de langage hérité](../../extensibility/internals/walkthrough-creating-a-legacy-language-service.md)
 
- Fournit les étapes de base qui sont requises pour implémenter un service de langage MPF dans un VSPackage.
+ Fournit les étapes de base qui sont nécessaires pour mettre en œuvre un service linguistique MPF dans un VSPackage.
 
-- [Procédure pas à pas : Obtention d’une liste d’extraits de code installés (implémentation héritée)](../../extensibility/internals/walkthrough-getting-a-list-of-installed-code-snippets-legacy-implementation.md)
+- [Procédure pas à pas : obtention d’une liste d’extraits de code installés (implémentation héritée)](../../extensibility/internals/walkthrough-getting-a-list-of-installed-code-snippets-legacy-implementation.md)
 
- Illustre les techniques de récupération d’une liste d’extraits de code installé.
+ Démontre les techniques de récupération d’une liste de extraits de code installés.
 
 - [Fonctionnalités du service de langage hérité](../../extensibility/internals/legacy-language-service-features1.md)
 
- Fournit des liens vers des rubriques détaillant ce qui doit être fait pour implémenter toutes les fonctionnalités d’un service de langage à l’aide du MPF.
+ Fournit des liens vers des sujets qui détaillent ce qui doit être fait pour mettre en œuvre toutes les fonctionnalités d’un service linguistique en utilisant MPF.

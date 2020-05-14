@@ -90,9 +90,9 @@
           href: getting-started-with-cpp-in-visual-studio.md
         - name: "Prise en main du débogage dans Visual\_Studio\_2015"
           href: getting-started-with-debugging-in-visual-studio-2015.md
-        - name: Projets et solutions
+        - name: Solutions et projets
           href: solutions-and-projects-in-visual-studio.md
-        - name: Création de projets et de solutions
+        - name: Creating Solutions and Projects
           href: creating-solutions-and-projects.md
         - name: Ajout et suppression d'éléments de projet
           href: adding-and-removing-project-items.md
@@ -110,7 +110,7 @@
               href: how-to-add-or-remove-imported-namespaces-visual-basic.md
             - name: Dépannage de références rompues
               href: troubleshooting-broken-references.md
-        - name: Propriétés des applications
+        - name: Application Properties
           href: application-properties.md
         - name: Gestion des ressources d'une application (.NET)
           href: managing-application-resources-dotnet.md
@@ -184,15 +184,15 @@
               href: replace-in-files.md
         - name: Encodages et sauts de ligne
           href: encodings-and-line-breaks.md
-        - name: mode Plan
+        - name: Mode Plan
           href: outlining.md
-        - name: Refactorisation
+        - name: Refactoring
           href: refactoring-in-visual-studio.md
         - name: Conseils de productivité
           items:
             - name: Conseils de productivité
               href: productivity-tips-for-visual-studio.md
-            - name: Conseils et astuces
+            - name: Astuces et conseils
               href: tips-and-tricks-for-visual-studio.md
             - name: Identification et personnalisation des raccourcis clavier
               items:
@@ -280,7 +280,7 @@
               href: walkthrough-creating-a-code-snippet.md
             - name: Distribuer des extraits de code
               href: how-to-distribute-code-snippets.md
-            - name: "Extraits de code Visual\_C#"
+            - name: 'Extraits de code Visual C#'
               href: visual-csharp-code-snippets.md
             - name: "Extraits de code Visual\_C++"
               href: visual-cpp-code-snippets.md
@@ -384,9 +384,9 @@
           href: setting-bookmarks-in-code.md
         - name: Utilisation de la liste des tâches
           href: using-the-task-list.md
-        - name: Rechercher les modifications de code et autres historiques
+        - name: Rechercher les modifications de code et d'autres historiques
           items:
-            - name: Rechercher les modifications de code et autres historiques
+            - name: Rechercher les modifications de code et d'autres historiques
               href: find-code-changes-and-other-history-with-codelens.md
             - name: 'CodeIndex, commande'
               href: codeindex-command.md
@@ -486,7 +486,7 @@
       href: ../deployment/deploying-applications-services-and-components.md
     - name: "Prise en charge de l'IDE de Visual Studio 64\_bits"
       href: visual-studio-ide-64-bit-support.md
-    - name: Exemples Visual Studio
+    - name: Visual Studio Samples
       href: visual-studio-samples.md
     - name: Comptes d'utilisateur et mises à jour
       items:
@@ -524,11 +524,11 @@
           href: securing-applications.md
         - name: Gestion de la sécurité
           href: maintaining-security.md
-        - name: Autorisations de l’utilisateur
+        - name: Autorisations utilisateur
           href: user-permissions-and-visual-studio.md
         - name: Bibliographie relative à la sécurité
           href: security-bibliography.md
-    - name: Exemples Visual Studio
+    - name: Visual Studio Samples
       href: visual-studio-samples.md
     - name: Microsoft Help Viewer
       items:
@@ -616,7 +616,7 @@
               href: how-to-save-and-open-files-with-encoding.md
     - name: Ajout de la prise en charge de l’éditeur Visual Studio dans d’autres langages
       href: adding-visual-studio-editor-support-for-other-languages.md
-    - name: Référence
+    - name: Reference
       items:
         - name: Éléments généraux de l'interface utilisateur (Visual Studio)
           items:
@@ -628,11 +628,11 @@
               href: reference/choose-toolbox-items-wpf-components.md
             - name: Sélecteur d'extraits de code
               href: reference/code-snippet-picker.md
-            - name: 'Commande, fenêtre'
+            - name: Fenêtre Commande
               href: reference/command-window.md
-            - name: Convertir (boîte de dialogue)
+            - name: 'Convertir, boîte de dialogue'
               href: reference/convert-dialog-box.md
-            - name: 'Liste d''erreurs, fenêtre'
+            - name: Liste d'erreurs (fenêtre)
               href: reference/error-list-window.md
             - name: 'Propriétés des fichiers, JavaScript'
               href: reference/file-properties-javascript.md
@@ -678,7 +678,7 @@
                   href: reference/tabs-and-windows-environment-options-dialog-box.md
                 - name: 'Liste des tâches, Environnement, boîte de dialogue Options'
                   href: reference/task-list-environment-options-dialog-box.md
-                - name: 'Navigateur web, Environnement, boîte de dialogue Options'
+                - name: "Navigateur web, Environnement, boîte de dialogue Options\_| Microsoft Docs"
                   href: reference/web-browser-environment-options-dialog-box.md
                 - name: 'Page Options, Environnement, propriétés de nœud'
                   href: reference/options-page-environment-node-properties.md
@@ -740,7 +740,7 @@
                   items:
                     - name: 'Page Application, Concepteur de projet (Visual Basic)'
                       href: reference/application-page-project-designer-visual-basic.md
-                    - name: Informations de l’assembly (boîte de dialogue)
+                    - name: 'Informations de l’assembly, boîte de dialogue'
                       href: reference/assembly-information-dialog-box.md
                 - name: 'Page Application, Concepteur de projet (C#)'
                   href: reference/application-page-project-designer-csharp.md
@@ -768,7 +768,7 @@
                       href: reference/build-events-dialog-box-visual-basic.md
                 - name: 'Page Déboguer, Concepteur de projets'
                   href: reference/debug-page-project-designer.md
-                - name: 'Page Mes extensions, Concepteur de projets'
+                - name: 'Extensions My, page du Concepteur de projets'
                   href: reference/my-extensions-page-project-designer-visual-basic.md
                 - name: 'Page Publier, Concepteur de projets'
                   items:
@@ -788,13 +788,13 @@
                   items:
                     - name: 'Services, page du Concepteur de projets'
                       href: reference/services-page-project-designer.md
-                    - name: 'Paramètres avancés pour les services, boîte de dialogue'
+                    - name: Paramètres avancés pour la boîte de dialogue Services
                       href: reference/advanced-settings-for-services-dialog-box.md
                 - name: 'Page Signature, Concepteur de projets'
                   href: reference/signing-page-project-designer.md
                 - name: 'Valeurs par défaut VB, Projets, boîte de dialogue Options'
                   href: reference/visual-basic-defaults-projects-options-dialog-box.md
-                - name: 'Paramètres du projet VC++, Projets et solutions, boîte de dialogue Options'
+                - name: 'Paramètres de projet VC++, Projets et solutions, boîte de dialogue Options'
                   href: reference/vcpp-project-settings-projects-and-solutions-options-dialog-box.md
             - name: Types de fichiers projet et solution
               href: reference/project-and-solution-file-types.md
@@ -808,7 +808,7 @@
                   href: reference/options-dialog-box-projects-and-solutions-web-projects.md
             - name: Pages de propriétés (JavaScript)
               href: reference/property-pages-javascript.md
-            - name: Propriétés (fenêtre)
+            - name: Fenêtre Propriétés
               href: reference/properties-window.md
             - name: Boîte à outils
               items:
@@ -878,7 +878,7 @@
           items:
             - name: Commandes Visual Studio
               href: reference/visual-studio-commands.md
-            - name: Alias de commandes Visual Studio
+            - name: Visual Studio Command Aliases
               href: reference/visual-studio-command-aliases.md
             - name: 'Ajouter un élément existant, commande'
               href: reference/add-existing-item-command.md
@@ -956,11 +956,11 @@
           href: reference/visual-studio-for-applications-reference.md
         - name: MSBuild
           href: ../msbuild/msbuild.md
-        - name: Ressources pour la résolution des erreurs IDE
+        - name: Ressources disponibles pour la résolution des erreurs IDE
           href: reference/resources-for-troubleshooting-integrated-development-environment-errors.md
-        - name: Accessibilité pour les personnes handicapées
+        - name: Accessibilité pour personnes handicapées
           items:
-            - name: Accessibilité pour les personnes handicapées
+            - name: Accessibilité pour personnes handicapées
               href: reference/accessibility-for-people-with-disabilities.md
             - name: "Fonctionnalités d’accessibilité de Visual\_Studio"
               items:

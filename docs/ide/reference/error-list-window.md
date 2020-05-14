@@ -16,10 +16,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 8c6d925f61714c524f97a57690870229b2340d21
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75569661"
 ---
 # <a name="error-list-window"></a>Fenêtre Liste d'erreurs
@@ -41,7 +41,7 @@ La fenêtre **Liste d’erreurs** vous permet d’effectuer les tâches suivante
 
 - rechercher des termes spécifiques et limiter la recherche au projet ou au document actif.
 
-Pour afficher la **Liste d’erreurs**, choisissez **Affichage** > **Liste d’erreurs**, ou appuyez sur **Ctrl**+ **\\** +**E**.
+Pour afficher la **liste d’erreurs**, choisissez **View** > **Error List**, ou appuyez sur **Ctrl**+**\\**+**E**.
 
 Vous pouvez choisir les onglets **Erreurs**, **Avertissements** et **Messages** pour afficher les différents niveaux d’informations.
 
@@ -66,7 +66,7 @@ Si un filtre est actuellement appliqué aux résultats de la recherche, le nom d
 
 La liste située à droite de la barre d'outils indique si les erreurs doivent être affichées à partir de la build (erreurs résultant d'une opération de build) ou à partir d'IntelliSense (erreurs détectées avant d'exécuter une build), ou les deux.
 
-## <a name="search"></a>Rechercher
+## <a name="search"></a>Recherche
 
 Utilisez la zone de texte **Rechercher dans la liste des erreurs** située à droite de la barre d’outils **Liste d’erreurs** pour rechercher des erreurs spécifiques dans la liste d’erreurs. Vous pouvez rechercher sur toute colonne visible dans la liste et les résultats de la recherche sont toujours triés selon la colonne de tri prioritaire au lieu de la requête ou du filtre appliqué. Si vous choisissez la touche **Échap** tandis que le focus est dans la **Liste d’erreurs**, vous pouvez effacer le terme de recherche et les résultats de la recherche filtrés. Vous pouvez également cliquer sur la croix (**X**) à droite de la zone de texte pour l’effacer.
 
@@ -74,11 +74,11 @@ Utilisez la zone de texte **Rechercher dans la liste des erreurs** située à dr
 
 Vous pouvez copier la liste d'erreurs et l'enregistrer dans un fichier. Sélectionnez les erreurs que vous voulez copier, cliquez avec le bouton droit sur la sélection, puis, dans le menu contextuel, sélectionnez **Copier**. Vous pouvez ensuite coller les erreurs dans un fichier. Si vous collez les erreurs dans une feuille de calcul Excel, les champs apparaissent comme colonnes individuelles.
 
-## <a name="ui-element-list"></a>Liste d'éléments UI
+## <a name="ui-element-list"></a>Liste des éléments de l'interface utilisateur
 
-Gravité
+severity
 
-Affiche les différents types d’entrée de la **Liste d’erreurs** (**Erreur**, **Message**, **Avertissement**, **Avertissement (actif)** , **Avertissement (inactif)** ).
+Affiche les différents types d’entrée de la **Liste d’erreurs** (**Erreur**, **Message**, **Avertissement**, **Avertissement (actif)**, **Avertissement (inactif)**).
 
 Code
 
@@ -92,10 +92,10 @@ Projet
 
 Affiche le nom du projet actif.
 
-File
+Fichier
 
 Affiche le nom de fichier.
 
-Ligne
+Lignes
 
 Affiche la ligne où apparaît le problème.

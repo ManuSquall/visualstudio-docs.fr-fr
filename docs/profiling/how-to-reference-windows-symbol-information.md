@@ -15,10 +15,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 28bbd4b584d679c03c58ba8532ced3f28f16d6aa
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74774911"
 ---
 # <a name="how-to-reference-windows-symbol-information"></a>Guide pratique pour référencer les informations de symboles Windows
@@ -27,7 +27,7 @@ Les Outils de profilage Visual Studio utilisent des fichiers de symboles (.*pdb*
 > [!NOTE]
 > Ce paramètre n’affecte pas les rapports existants. Seuls ceux créés après la spécification du serveur de symboles auront les informations de symboles.
 
- Pour plus d’informations, consultez [Spécifier les fichiers de symboles (.*pdb*) et les fichiers sources](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md).
+ Pour plus d’informations, voir [Symbole Specify (.* pdb*) et les fichiers source](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md).
 
 ### <a name="to-use-the-microsoft-symbol-server"></a>Pour utiliser le serveur de symboles Microsoft
 
@@ -39,14 +39,14 @@ Les Outils de profilage Visual Studio utilisent des fichiers de symboles (.*pdb*
 
 3. Développez l’arborescence **Débogage**, puis cliquez sur **Symboles**.
 
-4. Dans **Emplacements du fichier de symboles (.pdb)** , sélectionnez **Serveurs de symboles Microsoft**.
+4. Dans **Emplacements du fichier de symboles (.pdb)**, sélectionnez **Serveurs de symboles Microsoft**.
 
 5. Dans **Mettre en cache les symboles à partir du serveur de symboles vers ce répertoire**, tapez le chemin du dossier créé à l’étape 1 ; par exemple :
 
      **C:\SymbolCache**
 
-     Vous pouvez également cliquer sur le bouton de sélection ( **...** ), puis sélectionner un répertoire dans la boîte de dialogue **Rechercher un dossier**.
+     Vous pouvez également cliquer sur le bouton de sélection (**...**), puis sélectionner un répertoire dans la boîte de dialogue **Rechercher un dossier**.
 
 ## <a name="see-also"></a>Voir aussi
-- [Configurer des sessions de performances](../profiling/configuring-performance-sessions.md)
-- [Guide pratique pour sérialiser les informations de symbole](../profiling/how-to-serialize-symbol-information.md)
+- [Configurer des sessions de performance](../profiling/configuring-performance-sessions.md)
+- [Comment: Sérialiser les informations de symbole](../profiling/how-to-serialize-symbol-information.md)

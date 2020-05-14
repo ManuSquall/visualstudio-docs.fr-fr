@@ -1,24 +1,24 @@
 ---
-title: IDebugGenericFieldInstance | Microsoft Docs
+title: IDebugGenericFieldInstance - France Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - IDebugGenericFieldInstance interface
 ms.assetid: f68b4761-be8b-4801-9d4b-cde90e01d95e
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 189d670892b50958edff3b256874441aebd72be5
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 9723c146ecb5096ea6f3635a3d5cae5c48e573e4
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66330503"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80728116"
 ---
 # <a name="idebuggenericfieldinstance"></a>IDebugGenericFieldInstance
-Représente une instance d’un champ pour un type générique du code managé.
+Représente une instance d’un champ pour un type générique de code géré.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -27,16 +27,16 @@ IDebugGenericFieldInstance : IUnknown
 ```
 
 ## <a name="methods"></a>Méthodes
- Cette interface implémente les méthodes suivantes :
+ Cette interface met en œuvre les méthodes suivantes :
 
 |Méthode|Description|
 |------------|-----------------|
-|[GetTypeArguments](../../../extensibility/debugger/reference/idebuggenericfieldinstance-gettypearguments.md)|Récupère les arguments de paramètre de type pour cette instance.|
-|[TypeArgumentCount](../../../extensibility/debugger/reference/idebuggenericfieldinstance-typeargumentcount.md)|Retourne le nombre de type des arguments de paramètre pour cette instance.|
+|[GetTypeArguments](../../../extensibility/debugger/reference/idebuggenericfieldinstance-gettypearguments.md)|Récupère les arguments de paramètres de type pour cette instance.|
+|[TypeArgumentCount](../../../extensibility/debugger/reference/idebuggenericfieldinstance-typeargumentcount.md)|Retourne le nombre d’arguments de paramètres de type pour cette instance.|
 
-## <a name="requirements"></a>Configuration requise
- En-tête : SH.h
+## <a name="requirements"></a>Spécifications
+ En-tête: Sh.h
 
- Espace de noms : Microsoft.VisualStudio.Debugger.Interop
+ Namespace: Microsoft.VisualStudio.Debugger.Interop
 
- Assembly : Microsoft.VisualStudio.Debugger.Interop.dll
+ Assemblage: Microsoft.VisualStudio.Debugger.Interop.dll

@@ -8,30 +8,30 @@ dev_langs:
 - CSharp
 - VB
 ms.assetid: 6461c4cf-f2aa-4bf5-91ed-06820a4f893d
-author: TerryGLee
-ms.author: tglee
+author: ornellaalt
+ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f19c7854f2fb3d24010a5ee0e983b8efe4209997
-ms.sourcegitcommit: 10d16e18c5f5e482c4c2856e6cacaad283463b65
+ms.openlocfilehash: 2febef6987cf3440f92f6a6c505840cfe3ca3448
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/09/2020
-ms.locfileid: "75776036"
+ms.lasthandoff: 03/20/2020
+ms.locfileid: "77579891"
 ---
 # <a name="step-2-create-a-random-addition-problem"></a>Étape 2 : créer un problème d’addition aléatoire
 
 Dans la deuxième partie de ce didacticiel, vous rendez le questionnaire plus difficile en ajoutant des problèmes mathématiques basés sur des nombres aléatoires. Vous créez également une méthode qui s'appelle `StartTheQuiz()` et qui renseigne les problèmes et démarre le temporisateur. Plus tard dans ce didacticiel, vous ajouterez des problèmes de soustraction, de multiplication et de division.
 
 > [!NOTE]
-> Cette rubrique fait partie d'une série de didacticiels sur les concepts de codage de base. Pour obtenir une vue d’ensemble du tutoriel, consultez [Tutoriel 2 : créer un questionnaire mathématique chronométré](../ide/tutorial-2-create-a-timed-math-quiz.md).
+> Cette rubrique fait partie d'une série de didacticiels sur les concepts de codage de base. Pour un aperçu du tutoriel, voir [Tutorial 2: Créer un quiz de mathématiques chronométrés](../ide/tutorial-2-create-a-timed-math-quiz.md).
 
 ## <a name="to-create-a-random-addition-problem"></a>Pour créer un problème d'addition aléatoire
 
 1. Dans le concepteur de formulaires, choisissez le formulaire (**Form1**).
 
-2. Dans la barre de menus, sélectionnez **Afficher** > **Code**.
+2. Sur la barre de menu, choisissez **View** > **Code**.
 
      *Form1.cs* ou *Form1.vb* apparaît, en fonction du langage de programmation que vous utilisez, pour que vous puissiez afficher le code utilisé pour le formulaire.
 
@@ -66,12 +66,12 @@ Dans la deuxième partie de ce didacticiel, vous rendez le questionnaire plus di
      Notez que quand vous entrez un point (.) après `randomizer` dans le code, une fenêtre IntelliSense s’ouvre et affiche les méthodes d’objet aléatoire que vous pouvez appeler. Par exemple, IntelliSense propose la méthode `Next()`, comme suit.
 
      ![Next, méthode](../ide/media/express_randomwhite.png)<br/>
-*Next, méthode*
+*Méthode suivante*
 
      Lorsque vous entrez un point après un objet, IntelliSense affiche une liste des membres de l'objet, tels que des propriétés, des méthodes et des événements.
 
     > [!NOTE]
-    > Lorsque vous utilisez la méthode `Next()` avec l'objet `Random`, comme lorsque vous appelez `randomizer.Next(50)`, vous obtenez un nombre aléatoire inférieur à 50 (compris entre 0 et 49). Dans cet exemple, vous avez appelé `randomizer.Next(51)`. Vous avez utilisé 51 et non 50 pour que l'addition des deux nombres aléatoires donne une somme comprise entre 0 et 100. Si vous passez 50 à la méthode `Next()`, elle choisira un nombre de 0 à 49, si bien que la plus haute somme possible sera 98 et non 100. Une fois que les deux premières instructions de la méthode ont été exécutées, chacune des deux variables de type entier, **addend1** et **addend2**, contient un nombre aléatoire compris entre 0 et 50. Cette capture d' C# écran montre le code, mais IntelliSense fonctionne de la même façon pour Visual Basic.
+    > Lorsque vous utilisez la méthode `Next()` avec l'objet `Random`, comme lorsque vous appelez `randomizer.Next(50)`, vous obtenez un nombre aléatoire inférieur à 50 (compris entre 0 et 49). Dans cet exemple, vous avez appelé `randomizer.Next(51)`. Vous avez utilisé 51 et non 50 pour que l'addition des deux nombres aléatoires donne une somme comprise entre 0 et 100. Si vous passez 50 à la méthode `Next()`, elle choisira un nombre de 0 à 49, si bien que la plus haute somme possible sera 98 et non 100. Une fois que les deux premières instructions de la méthode ont été exécutées, chacune des deux variables de type entier, **addend1** et **addend2**, contient un nombre aléatoire compris entre 0 et 50. Cette capture d’écran montre le code C, mais IntelliSense fonctionne de la même façon pour Visual Basic.
 
      Examinez attentivement ces instructions.
 
@@ -93,7 +93,7 @@ Dans la deuxième partie de ce didacticiel, vous rendez le questionnaire plus di
 
 8. Enregistrez votre code, exécutez-le, puis sélectionnez le bouton **Démarrer**.
 
-     Un problème d’addition aléatoire apparaît, comme illustré dans la capture d’écran suivante.
+     Un problème d’ajout aléatoire apparaît, comme indiqué dans la capture d’écran suivante.
 
      ![Problème d’addition aléatoire](../ide/media/express_additionproblem.png)<br/>
 *Problème d’addition aléatoire*
@@ -102,6 +102,6 @@ Dans la deuxième partie de ce didacticiel, vous rendez le questionnaire plus di
 
 ## <a name="to-continue-or-review"></a>Pour continuer ou examiner
 
-- Pour passer à l’étape suivante du didacticiel, consultez **[étape 3 : ajouter un minuteur de compte à rebours](../ide/step-3-add-a-countdown-timer.md)** .
+- Pour passer à l’étape suivante tutoriel, voir **[Étape 3: Ajouter une minuterie compte à rebours](../ide/step-3-add-a-countdown-timer.md)**.
 
 - Pour revenir à l’étape précédente du tutoriel, consultez [Étape 1 : créer un projet et ajouter des étiquettes à votre formulaire](../ide/step-1-create-a-project-and-add-labels-to-your-form.md).

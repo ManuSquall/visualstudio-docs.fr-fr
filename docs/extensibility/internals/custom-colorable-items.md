@@ -1,72 +1,72 @@
 ---
-title: Éléments Coloriables personnalisés | Microsoft Docs
+title: Articles colorables personnalisés ( Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - colorable items
 - language services, custom colorable items
 ms.assetid: b4d0ddee-c04b-48dc-ba82-f6068570cef0
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: fd1d18a6fe142a3b405742dd9e74c1376e713687
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: feecd9e8f8178045f66999b775e2d0792f50b288
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66312910"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80708997"
 ---
-# <a name="custom-colorable-items"></a>Éléments coloriables personnalisés
-Vous pouvez remplacer la liste des types pour la colorisation, telles que les mots clés et des commentaires, en implémentant des éléments coloriables personnalisés dans le cadre de votre service de langage.
+# <a name="custom-colorable-items"></a>Articles colorables personnalisés
+Vous pouvez passer outre à la liste des types de colorisation, tels que les mots clés et les commentaires, en implémentant des éléments colorables personnalisés dans le cadre de votre service linguistique.
 
-## <a name="user-settings-of-colorable-items"></a>Paramètres de l’utilisateur d’éléments coloriables
- Vous pouvez afficher le **polices et couleurs** boîte de dialogue en sélectionnant **Options** sur le **outils** menu, puis en sélectionnant **polices et couleurs** sous **environnement**. Lorsque vous sélectionnez un affichage, tel que **éditeur de texte** ou **fenêtre de commande**, le **afficher les éléments** zone de liste affiche tous les éléments coloriables pour cet affichage. Vous pouvez afficher et modifier la police, la taille, la couleur de premier plan et la couleur d’arrière-plan pour chaque élément coloriable. Vos choix est stockées dans un cache dans le Registre et accessibles par le nom de l’élément coloriable.
+## <a name="user-settings-of-colorable-items"></a>Paramètres de l’utilisateur des éléments colorables
+ Vous pouvez afficher la boîte de dialogue **Fonts and Colors** en sélectionnant **des options** sur le menu **Tools,** puis en sélectionnant **des polices et des couleurs** sous **Environnement.** Lorsque vous sélectionnez un affichage, tel que **Text Editor** ou **Command Window**, la boîte de liste **d’éléments d’affichage** affiche tous les éléments colorables pour cet affichage. Vous pouvez afficher et modifier la police, la taille, la couleur de premier plan, et la couleur de fond pour chaque élément colorable. Vos choix sont stockés dans un cache dans le registre et accessibles par le nom d’élément colorable.
 
-## <a name="presentation-of-colorable-items"></a>Présentation d’éléments coloriables
- Étant donné que l’IDE gère les substitutions d’utilisateur d’éléments coloriables dans les **polices et couleurs** boîte de dialogue, vous devez uniquement fournir chaque élément coloriable personnalisé avec un nom. Ce nom est ce qui apparaît dans le **afficher les éléments** liste. Les éléments coloriables s’affichent dans l’ordre alphabétique. Pour regrouper des éléments coloriables personnalisés de votre service de langage, vous pouvez commencer chaque nom avec votre nom de la langue, par exemple **NewLanguage - commentaire** et **NewLanguage - mot clé**.
+## <a name="presentation-of-colorable-items"></a>Présentation d’objets colorables
+ Parce que l’IDE gère les remplacements de l’utilisateur des articles colorables dans la boîte de dialogue **Fonts and Colors,** vous n’avez qu’à fournir chaque élément colorable personnalisé avec un nom. Ce nom est ce qui apparaît dans la liste **des éléments d’affichage.** Les éléments colorables apparaissent par ordre alphabétique. Pour regrouper les articles colorables personnalisés de votre service linguistique, vous pouvez commencer chaque nom avec votre nom de langue, par exemple **NewLanguage - Commentaire** et **NewLanguage - Mot-clé**.
 
 > [!CAUTION]
-> Vous devez inclure le nom du langage dans le nom de l’élément coloriable pour éviter les conflits avec des noms d’élément coloriable existants. Si vous modifiez le nom d’un de vos éléments coloriables pendant le développement, vous devez réinitialiser le cache a été créé à la première fois que vos éléments coloriables ont eu accès. Vous pouvez réinitialiser le cache expérimental avec le **CreateExpInstance** outil, qui est installé avec le SDK de Visual Studio, généralement dans le répertoire :
+> Vous devez inclure le nom de la langue dans le nom d’élément colorable pour éviter les collisions avec les noms d’objets colorables existants. Si vous changez le nom d’un de vos éléments colorables pendant le développement, vous devez réinitialiser le cache qui a été créé la première fois que vos articles colorables ont été consultés. Vous pouvez réinitialiser le cache expérimental avec l’outil **CreateExpInstance,** qui est installé avec le Visual Studio SDK, généralement dans le répertoire :
 >
-> *C:\Program Files (x86)\Microsoft Visual Studio 14.0\VSSDK\VisualStudioIntegration\Tools\Bin*
+> *C : Fichiers de programme (x86) - Microsoft Visual Studio 14.0-VSSDK-VisualStudioIntegration-Tools-Bin*
 >
-> Pour réinitialiser le cache, entrez **CreateExpInstance /Reset**. Pour plus d’informations sur **CreateExpInstance**, consultez [CreateExpInstance utility](../../extensibility/internals/createexpinstance-utility.md).
+> Pour réinitialiser le cache, entrez **CreateExpInstance /Reset**. Pour plus d’informations sur **CreateExpInstance**, voir [CreateExpInstance utility](../../extensibility/internals/createexpinstance-utility.md).
 
- Le premier élément dans votre liste d’éléments coloriables n’est jamais référencé. Le premier élément correspond à un index de l’élément coloriable égale à 0, et [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] fournit toujours les couleurs de texte par défaut et les attributs de cet élément. Gestion de cet élément non référencé, le plus simple consiste à fournir un élément coloriable espace réservé comme le premier élément dans la liste.
+ Le premier élément de votre liste d’éléments colorables n’est jamais référencé. Le premier élément correspond à un index d’élément colorable de 0, et [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] fournit toujours les couleurs et les attributs de texte par défaut pour cet article. La façon la plus simple de traiter cet article non référé est de fournir un élément colorable de placeholder dans votre liste comme premier élément.
 
-## <a name="implement-custom-colorable-items"></a>Implémenter des éléments coloriables personnalisés
+## <a name="implement-custom-colorable-items"></a>Implémentez des articles colorables personnalisés
 
-1. Définir ce qui doit être colorisé dans votre langue, par exemple mot clé, opérateur et identificateur.
+1. Définissez ce qui doit être colorisé dans votre langue, par exemple mot-clé, opérateur et identifiant.
 
-2. Créez une énumération de ces éléments coloriables.
+2. Créez un recensement de ces articles colorables.
 
-3. Associer les types de jetons retournées à partir d’un analyseur ou le scanneur avec les valeurs énumérées.
+3. Associez les types de jetons retournés d’un analyseur ou d’un scanner aux valeurs énumérées.
 
-    Par exemple, les valeurs représentant les types de jetons peut être les mêmes valeurs dans l’énumération d’éléments coloriables personnalisés.
+    Par exemple, les valeurs représentant les types de jetons pourraient être les mêmes valeurs dans le recensement des éléments colorables personnalisés.
 
-4. Dans votre implémentation de la <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer.ColorizeLine%2A> méthode dans votre <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer> d’objet, de remplir la liste des attributs avec les valeurs à partir de votre énumération d’éléments coloriables personnalisés correspondant aux types de jeton retournés à partir de l’analyseur ou le scanneur.
+4. Dans votre implémentation de la <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer.ColorizeLine%2A> méthode dans votre <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer> objet, remplissez la liste des attributs avec les valeurs de votre énumération d’éléments colorables personnalisés correspondant aux types de jetons retournés du parser ou du scanner.
 
-5. Dans la même classe qui implémente le <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo> interface, implémentez le <xref:Microsoft.VisualStudio.TextManager.Interop.IVsProvideColorableItems> interface et ses deux méthodes, <xref:Microsoft.VisualStudio.TextManager.Interop.IVsProvideColorableItems.GetItemCount%2A> et <xref:Microsoft.VisualStudio.TextManager.Interop.IVsProvideColorableItems.GetColorableItem%2A>.
+5. Dans la même classe <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo> qui implémente l’interface, implémenter l’interface <xref:Microsoft.VisualStudio.TextManager.Interop.IVsProvideColorableItems> et ses deux méthodes, <xref:Microsoft.VisualStudio.TextManager.Interop.IVsProvideColorableItems.GetItemCount%2A> et <xref:Microsoft.VisualStudio.TextManager.Interop.IVsProvideColorableItems.GetColorableItem%2A>.
 
 6. Implémentez l'interface <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorableItem>.
 
-7. Si vous souhaitez prendre en charge les valeurs de couleur 24 bits ou élevé, vous devez également implémenter la <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiColorItem> interface.
+7. Si vous souhaitez prendre en charge des valeurs de <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiColorItem> couleur 24 ou élevées, implémentez également l’interface.
 
-8. Dans votre objet de service de langage, créez une liste qui contient votre <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorableItem> objets, un pour chaque élément coloriable votre analyseur ou le scanneur peut identifier.
+8. Dans votre objet de service linguistique, <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorableItem> créez une liste qui contient vos objets, un pour chaque élément colorable que votre parseur ou scanner peut identifier.
 
-    Vous pouvez accéder à chaque élément dans la liste à l’aide de la valeur correspondante à partir de l’énumération d’éléments coloriables personnalisés. Utilisez les valeurs d’énumération en tant qu’index dans la liste. Le premier élément dans la liste n’est jamais accessible, car il correspond au texte par défaut de style qui [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] toujours gère lui-même. Pour cela, vous pouvez compenser en insérant un élément coloriable espace réservé au début de votre liste.
+    Vous pouvez accéder à chaque élément de la liste en utilisant la valeur correspondante du recensement des éléments colorables personnalisés. Utilisez les valeurs de recensement comme un index dans la liste. Le premier élément de la liste n’est jamais accessible, [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] car il correspond au style texte par défaut qui se comporte toujours. Vous pouvez compenser cela en insérant un élément colorable de placeholder au début de votre liste.
 
-9. Dans votre implémentation de la <xref:Microsoft.VisualStudio.TextManager.Interop.IVsProvideColorableItems.GetItemCount%2A> (méthode), retourner le nombre d’éléments dans votre liste d’éléments coloriables personnalisés.
+9. Dans votre mise <xref:Microsoft.VisualStudio.TextManager.Interop.IVsProvideColorableItems.GetItemCount%2A> en œuvre de la méthode, retournez le nombre d’éléments dans votre liste d’éléments colorables personnalisés.
 
-10. Dans votre implémentation de la <xref:Microsoft.VisualStudio.TextManager.Interop.IVsProvideColorableItems.GetColorableItem%2A> (méthode), retourner l’élément coloriable demandé à partir de votre liste.
+10. Dans votre mise <xref:Microsoft.VisualStudio.TextManager.Interop.IVsProvideColorableItems.GetColorableItem%2A> en œuvre de la méthode, retournez l’élément colorable demandé de votre liste.
 
-    Pour obtenir un exemple montrant comment implémenter le <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorableItem> et <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiColorItem> interfaces, consultez <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiColorItem>.
+    Pour un exemple de <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorableItem> la <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiColorItem> façon de <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiColorItem>mettre en œuvre le et les interfaces, voir .
 
 ## <a name="see-also"></a>Voir aussi
-- [Modèle d’un service de langage hérité](../../extensibility/internals/model-of-a-legacy-language-service.md)
-- [Couleurs de syntaxe dans les éditeurs personnalisés](../../extensibility/syntax-coloring-in-custom-editors.md)
-- [Couleurs de syntaxe dans un service de langage hérité](../../extensibility/internals/syntax-coloring-in-a-legacy-language-service.md)
-- [Implémentez la coloration syntaxique](../../extensibility/internals/implementing-syntax-coloring.md)
-- [Guide pratique pour Utiliser des éléments coloriables intégrés](../../extensibility/internals/how-to-use-built-in-colorable-items.md)
+- [Modèle d’un service linguistique hérité](../../extensibility/internals/model-of-a-legacy-language-service.md)
+- [Coloriage Syntax dans les éditeurs personnalisés](../../extensibility/syntax-coloring-in-custom-editors.md)
+- [Coloriage Syntax dans un service linguistique hérité](../../extensibility/internals/syntax-coloring-in-a-legacy-language-service.md)
+- [Implémentez la coloration syntaxe](../../extensibility/internals/implementing-syntax-coloring.md)
+- [Comment: Utilisez des articles colorables intégrés](../../extensibility/internals/how-to-use-built-in-colorable-items.md)

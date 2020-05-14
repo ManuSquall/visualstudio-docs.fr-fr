@@ -1,5 +1,5 @@
 ---
-title: Dans le Kit de développement logiciel de Visual Studio | Microsoft Docs
+title: À l’intérieur du Studio Visuel SDK (fr) Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -7,123 +7,123 @@ helpviewer_keywords:
 - Visual Studio integration SDK roadmap
 - integration roadmap, Visual Studio SDK
 ms.assetid: 9118eaa4-0453-4dc5-9e16-c7062d254869
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 05736ebc8ce242120b49b59ef6d6caf4c4992573
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 0e72020795bc3181e11f0f90eff580a2365d4000
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66349834"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80707575"
 ---
 # <a name="inside-the-visual-studio-sdk"></a>Dans le kit SDK Visual Studio
 
-Cette section fournit des informations détaillées sur les extensions de Visual Studio, y compris l’architecture de Visual Studio, composants, services, schémas, utilitaires et autres.
+Cette section fournit des informations approfondies sur les extensions Visual Studio, y compris l’architecture Visual Studio, composants, services, schémas, utilitaires, etc.
 
-## <a name="extensibility-architecture"></a>Architecture d’extensibilité
- L’illustration suivante montre l’architecture d’extensibilité de Visual Studio. Packages VS fournissent des fonctionnalités d’application, qui sont partagée entre l’IDE en tant que services. L’IDE standard offre également un large éventail de services, tels que <xref:Microsoft.VisualStudio.Shell.Interop.SVsUIShell>, qui permettent d’accéder à la fonctionnalité de fenêtrage IDE.
+## <a name="extensibility-architecture"></a>Architecture d’extésensabilité
+ L’illustration suivante montre l’architecture d’extéabilité Visual Studio. VSPackages fournit des fonctionnalités d’application, qui est partagée à travers l’IDE comme services. L’IDE standard offre également une large <xref:Microsoft.VisualStudio.Shell.Interop.SVsUIShell>gamme de services, tels que , qui donnent accès à la fonctionnalité de fenêtre IDE.
 
- ![Graphique Architecture d’environnement](../../extensibility/internals/media/environment.gif "environnement") généralisée de vue de l’architecture de Visual Studio
+ ![Graphique de l’architecture de l’environnement](../../extensibility/internals/media/environment.gif "Environnement") Vue généralisée de l’architecture Visual Studio
 
 ## <a name="vspackages"></a>VSPackages
- Les VSPackages sont des modules logiciels qui constituent et étendent Visual Studio avec des éléments, des services, des projets, des éditeurs et des concepteurs d’interfaces utilisateur. Les VSPackages sont l’unité architecturale au centre de Visual Studio. Pour plus d'informations, consultez [VSPackages](../../extensibility/internals/vspackages.md).
+ Les VSPackages sont des modules logiciels qui constituent et étendent Visual Studio avec des éléments, des services, des projets, des éditeurs et des concepteurs d’interfaces utilisateur. VSPackages est l’unité architecturale centrale de Visual Studio. Pour plus d'informations, consultez [VSPackages](../../extensibility/internals/vspackages.md).
 
 ## <a name="visual-studio-shell"></a>Visual Studio Shell
- L’interpréteur de commandes de Visual Studio fournit des fonctionnalités de base et prend en charge les communications entre son composant VSPackages et des extensions MEF. Pour plus d’informations, consultez [Visual Studio Shell](../../extensibility/internals/visual-studio-shell.md).
+ La coque Visual Studio fournit des fonctionnalités de base et supporte la communication croisée entre ses composants VSPackages et les extensions MEF. Pour plus d’informations, voir [Visual Studio Shell](../../extensibility/internals/visual-studio-shell.md).
 
 ## <a name="user-experience-guidelines"></a>Conseils sur l’expérience utilisateur
- Si vous envisagez de concevoir de nouvelles fonctionnalités pour Visual Studio, vous devez prendre un coup de œil à ces instructions pour les conseils de conception et de facilité d’utilisation : [Recommandations pour l’expérience utilisateur Visual Studio](../../extensibility/ux-guidelines/visual-studio-user-experience-guidelines.md).
+ Si vous envisagez de concevoir de nouvelles fonctionnalités pour Visual Studio, vous devriez jeter un oeil à ces lignes directrices pour la conception et les conseils d’utilisabilité: [Visual Studio User Experience Guidelines](../../extensibility/ux-guidelines/visual-studio-user-experience-guidelines.md).
 
 ## <a name="commands"></a>Commandes
  Les commandes sont des fonctions qui accomplissent des tâches, comme l’impression d’un document, l’actualisation d’une vue ou la création d’un fichier.
 
- Lorsque vous étendez Visual Studio, vous pouvez créer des commandes et les inscrire auprès de l’interpréteur de commandes de Visual Studio. Vous pouvez spécifier la façon dont ces commandes seront affichent dans l’IDE, par exemple, dans un menu ou une barre d’outils. En règle générale, une commande personnalisée s’affiche sur le **outils** menu et une commande pour afficher une fenêtre outil apparaît sur le **Windows autres** sous-menu de la **vue** menu.
+ Lorsque vous étendez Visual Studio, vous pouvez créer des commandes et les enregistrer avec la coque Visual Studio. Vous pouvez spécifier comment ces commandes apparaîtront dans l’IDE, par exemple, sur un menu ou une barre d’outils. Typiquement, une commande personnalisée apparaît sur le menu **Tools,** et une commande pour afficher une fenêtre d’outil apparaîtrait sur **l’autre** sous-mois Windows du menu **View.**
 
- Lorsque vous créez une commande, vous devez également créer un gestionnaire d’événements pour celle-ci. Le Gestionnaire d’événements détermine quand la commande est visible ou activée, vous permet de modifier son texte et de garantit que la commande répond correctement quand il est activé. Dans la plupart des cas, l’IDE gère les commandes à l’aide de la <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> interface. Dans Visual Studio, les commandes sont gérées en commençant par le contexte de commande plus profond, basée sur la sélection locale, puis en continuant pour le contexte le plus extérieur, basé sur la sélection globale. Les commandes ajoutées au menu principal sont immédiatement disponibles pour les scripts.
+ Lorsque vous créez une commande, vous devez également créer un gestionnaire d’événements pour elle. Le gestionnaire d’événements détermine quand la commande est visible ou activée, vous permet de modifier son texte et garantit que la commande répond de manière appropriée lorsqu’elle est activée. Dans la plupart des cas, l’IDE gère les commandes en utilisant l’interface. <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> Les commandes en visual studio sont traitées en commençant par le contexte de commande le plus intime, basé sur la sélection locale, et de procéder au contexte le plus externe, basé sur la sélection globale. Les commandes ajoutées au menu principal sont immédiatement disponibles pour les scripts.
 
- Pour plus d’informations, consultez [commandes, Menus et barres d’outils](../../extensibility/internals/commands-menus-and-toolbars.md).
+ Pour plus d’informations, voir [Commandes, Menus et Barres d’outils](../../extensibility/internals/commands-menus-and-toolbars.md).
 
 ## <a name="menus-and-toolbars"></a>Menus et barres d’outils
- Menus et barres d’outils permettent aux utilisateurs d’appeler des commandes. Menus des lignes ou colonnes de commandes qui sont généralement affichés comme des éléments de texte en haut, une fenêtre outil. Sous-menus sont des menus secondaire qui s’affichent lorsqu’un utilisateur clique sur les commandes qui incluent une petite flèche. Menus contextuels s’affichent quand un utilisateur clique sur certains éléments d’interface utilisateur. Certains noms de menu courantes **fichier**, **modifier**, **vue**, et **fenêtre**. Pour plus d’informations, consultez [extension des Menus et commandes](../../extensibility/extending-menus-and-commands.md).
+ Les menus et les barres d’outils permettent aux utilisateurs d’invoquer des commandes. Les menus sont des rangées ou des colonnes de commandes qui sont généralement affichées sous forme d’éléments de texte individuels en haut d’une fenêtre d’outil. Les sous-menus sont des menus secondaires qui apparaissent lorsqu’un utilisateur clique sur les commandes qui incluent une petite flèche. Les menus contextuels apparaissent lorsqu’un utilisateur clique à droite sur certains éléments de l’interface utilisateur. Certains noms de menu communs sont **Fichier**, **Edit**, **Voir**, et **fenêtre**. Pour plus d’informations, voir [Extending Menus and Commands](../../extensibility/extending-menus-and-commands.md).
 
- Barres d’outils sont des lignes ou colonnes de boutons et autres contrôles, tels que les zones de liste modifiable, zones de liste et zones de texte. Boutons de barre d’outils ont généralement des images d’icônes, par exemple une icône de dossier pour un **ouvrir un fichier** commande ou une imprimante pour un **impression** commande. Tous les éléments de barre d’outils sont associés à des commandes. Lorsque vous cliquez sur un bouton de barre d’outils, sa commande associée s’exécute. Dans le cas d’un contrôle de liste déroulante, chaque élément dans la liste déroulante est associé à une autre commande. Certains contrôles de barre d’outils, comme un contrôle splitter, sont des hybrides. Un côté du contrôle est un bouton de barre d’outils et l’autre côté est une flèche vers le bas qui affiche plusieurs commandes lorsque vous cliquez dessus.
+ Les barres d’outils sont des rangées ou des colonnes de boutons et d’autres commandes, telles que des boîtes combo, des boîtes de liste et des boîtes de texte. Les boutons de barre d’outils ont généralement des images d’icône, comme une icône de dossier pour une commande **Open File** ou une imprimante pour une commande **d’impression.** Tous les éléments de barre d’outils sont associés aux commandes. Lorsque vous cliquez sur un bouton de barre d’outils, sa commande associée s’exécute. Dans le cas d’un contrôle d’abandon, chaque élément de la liste d’abandon est associé à une commande différente. Certains contrôles de barre d’outils, comme un contrôle de splitter, sont des hybrides. Un côté du contrôle est un bouton de barre d’outils et l’autre côté est une flèche vers le bas qui affiche plusieurs commandes quand il est cliqué.
 
 ## <a name="tool-windows"></a>Fenêtres d'outils
- Fenêtres Outil sont utilisées dans l’IDE pour afficher des informations. **Boîte à outils**, **l’Explorateur de solutions**, **propriétés** fenêtre, et **navigateur Web** sont des exemples de fenêtres Outil.
+ Les fenêtres d’outils sont utilisées dans l’IDE pour afficher des informations. **Toolbox**, **Solution Explorer**, **Properties** window, et **Web Browser** sont des exemples de fenêtres d’outils.
 
- Fenêtres Outil offrent généralement différents contrôles avec lesquels l’utilisateur peut interagir. Par exemple, le **propriétés** fenêtre permet à l’utilisateur de définir les propriétés des objets qui jouent un rôle particulier. Le **propriétés** fenêtre est spécialisé en ce sens, mais également général car il peut être utilisé dans de nombreuses situations différentes. De même, le **sortie** est spécialisée dans la fenêtre, car elle fournit textuel de la sortie, mais général car de nombreux sous-systèmes dans Visual Studio peuvent l’utiliser pour fournir la sortie à l’utilisateur de Visual Studio.
+ Les fenêtres d’outils offrent généralement divers contrôles avec lesquels l’utilisateur peut interagir. Par exemple, la fenêtre **Propriété** permet à l’utilisateur de définir des propriétés d’objets qui servent un but particulier. La fenêtre **Propriétés** est spécialisée en ce sens, mais aussi générale, car elle peut être utilisée dans de nombreuses situations différentes. De même, la fenêtre **Output** est spécialisée parce qu’elle fournit une sortie textuelle, mais généralement parce que de nombreux sous-systèmes de Visual Studio peuvent l’utiliser pour fournir la sortie à l’utilisateur Visual Studio.
 
- Prenez en compte l’image suivante de Visual Studio, qui contient plusieurs fenêtres d’outils :
+ Considérez l’image suivante de Visual Studio, qui contient plusieurs fenêtres d’outils :
 
- ![Capture d’écran](../../extensibility/internals/media/t1gui.png "T1gui")
+ ![Capture d’écran](../../extensibility/internals/media/t1gui.png "T1gui T1gui")
 
- Certaines fenêtres Outil sont ancrées ensemble sur un seul volet qui affiche la fenêtre outil de l’Explorateur de solutions et masque les autres fenêtres Outil, mais les rend disponibles en cliquant sur les onglets. L’illustration montre deux autres fenêtres Outil, le **liste d’erreurs** et **sortie** fenêtre, ancrée ensemble sur un seul volet.
+ Certaines des fenêtres d’outils sont amarrées ensemble sur un seul volet qui affiche la fenêtre de l’outil Solution Explorer et cache les autres fenêtres d’outils, mais les rend disponibles en cliquant sur des onglets. L’image montre deux autres fenêtres d’outils, la **liste d’erreurs** et la fenêtre **de sortie,** amarrées ensemble sur un seul volet.
 
- Si vous est également affiché, le volet de document principal, qui montre plusieurs fenêtres de l’éditeur. Bien que les fenêtres Outil ont généralement qu’une seule instance (par exemple, vous pouvez ouvrir qu’un seul **l’Explorateur de solutions**), éditeur windows peuvent avoir plusieurs instances, chacun d’eux est utilisé pour modifier un document distinct, mais qui sont ancrées dans le même volet. L’illustration montre un volet de document qui a deux fenêtres de l’éditeur, une fenêtre du Concepteur de formulaire. Toutes les fenêtres dans le volet de document sont disponibles en cliquant sur les onglets, mais la fenêtre d’éditeur qui contient le fichier de EditorPane.cs est visible et actif.
+ Le volet principal du document, qui affiche plusieurs fenêtres d’éditeur, est également indiqué. Bien que les fenêtres d’outils n’aient généralement qu’un seul exemple (par exemple, vous ne pouvez ouvrir qu’une seule **solution Explorer),** les fenêtres de l’éditeur peuvent avoir plusieurs instances, chacune d’entre elles est utilisée pour modifier un document distinct, mais qui sont tous amarrés dans la même vitre. L’image montre une vitre de document qui a deux fenêtres d’éditeur, une fenêtre de concepteur de forme. Toutes les fenêtres de la vitre du document sont disponibles en cliquant sur les onglets, mais la fenêtre de l’éditeur qui contient EditorPane.cs fichier est visible et active.
 
- Lorsque vous étendez Visual Studio, vous pouvez créer outil windows qui permettent aux utilisateurs de Visual Studio interagissent avec votre extension. Vous pouvez également créer vos propres éditeurs qui permettent aux utilisateurs de Visual Studio à modifier des documents. Étant donné que vos fenêtres Outil et les éditeurs seront intégrés dans Visual Studio, il est inutile de les programmer pour ancrer ou s’affichent correctement sur un onglet. Lorsqu’ils sont inscrits correctement dans Visual Studio, ils auront automatiquement les fonctionnalités standard de fenêtres Outil et fenêtres de document dans Visual Studio. Pour plus d’informations, consultez [extension et personnalisation de Windows d’outil](../../extensibility/extending-and-customizing-tool-windows.md).
+ Lorsque vous étendez Visual Studio, vous pouvez créer des fenêtres d’outils qui permettent aux utilisateurs de Visual Studio d’interagir avec votre extension. Vous pouvez également créer vos propres éditeurs qui permettent aux utilisateurs de Visual Studio d’éditer des documents. Étant donné que vos fenêtres et éditeurs d’outils seront intégrés dans Visual Studio, vous n’avez pas à les programmer pour s’amarrer ou apparaître correctement sur un onglet. Lorsqu’ils sont correctement enregistrés dans Visual Studio, ils auront automatiquement les caractéristiques typiques des fenêtres d’outils et des fenêtres de documents dans Visual Studio. Pour plus d’informations, voir [Extension et Personnaliser Tool Windows](../../extensibility/extending-and-customizing-tool-windows.md).
 
 ## <a name="document-windows"></a>Fenêtres de document
- Une fenêtre de document est une fenêtre enfant encadré d’une fenêtre d’interface multidocument (MDI). Fenêtres de document sont généralement utilisés pour héberger les éditeurs de texte, des éditeurs de formulaire (également appelé concepteurs) ou des contrôles d’édition, mais elles peuvent héberger également d’autres types fonctionnels. Le **nouveau fichier** boîte de dialogue inclut des exemples de fenêtres de document fournies par Visual Studio.
+ Une fenêtre de document est une fenêtre encadrée d’enfant d’une fenêtre d’interface multi-documents (MDI). Les fenêtres de documents sont généralement utilisées pour héberger des éditeurs de texte, former des éditeurs (également connus sous le nom de concepteurs), ou modifier les contrôles, mais ils peuvent également héberger d’autres types fonctionnels. La boîte de dialogue **New File** comprend des exemples de fenêtres documentaires que Visual Studio fournit.
 
- La plupart des éditeurs sont spécifiques à un langage de programmation ou à un type de fichier, telles que des pages HTML, des jeux de frames, des fichiers C++ ou des fichiers d’en-tête. En sélectionnant un modèle dans le **nouveau fichier** boîte de dialogue, un utilisateur crée dynamiquement une fenêtre de document pour l’Éditeur du type de fichier qui est associé au modèle. Une fenêtre de document est également créée lorsqu’un utilisateur ouvre un fichier existant.
+ La plupart des éditeurs sont spécifiques à un langage de programmation ou à un type de fichier, tels que des pages HTML, des jeux d’images, des fichiers CMD ou des fichiers d’en-tête. En sélectionnant un modèle dans la boîte de dialogue **New File,** un utilisateur crée dynamiquement une fenêtre de document pour l’éditeur pour le type de fichier qui est associé au modèle. Une fenêtre de document est également créée lorsqu’un utilisateur ouvre un fichier existant.
 
- Fenêtres de document sont limitées à la zone cliente MDI. Chaque fenêtre de document comporte un onglet situé en haut, et l’ordre de tabulation est lié à d’autres fenêtres qui peuvent être ouverts dans la zone MDI. Clic droit sur l’onglet d’une fenêtre de document affiche un menu contextuel qui inclut des options pour fractionner la zone MDI en plusieurs groupes d’onglets de horizontale ou verticale. Fractionnement de la zone MDI permet à plusieurs fichiers à afficher en même temps. Pour plus d’informations, consultez [Document Windows](../../extensibility/internals/document-windows.md).
+ Les fenêtres de documents sont limitées à la zone clientE MDI. Chaque fenêtre de document a un onglet sur le dessus, et l’ordre d’onglet est lié à d’autres fenêtres qui peuvent être ouvertes dans la zone MDI. En cliquant à droite, l’onglet d’une fenêtre de document affiche un menu raccourci qui comprend des options pour diviser la zone MDI en plusieurs groupes d’onglets horizontaux ou verticaux. Le fractionnement de la zone MDI permet de visualisant plusieurs fichiers en même temps. Pour plus d’informations, voir [Document Windows](../../extensibility/internals/document-windows.md).
 
 ## <a name="editors"></a>Éditeurs
- L’éditeur Visual Studio vous permet de personnaliser et son utilisation pour votre propre type de contenu au moyen de Managed Extensibility Framework (MEF). Dans de nombreux cas, vous devrez pas créer un VSPackage pour étendre l’éditeur, si vous souhaitez inclure des fonctionnalités à partir de l’interpréteur de commandes (par exemple, une commande de menu ou une touche de raccourci), vous pouvez associer une extension MEF avec un VSPackage.
+ L’éditeur Visual Studio vous permet de le personnaliser et de l’utiliser pour votre propre type de contenu au moyen du Cadre d’exténuabilité gérée (MEF). Dans de nombreux cas, vous n’aurez pas besoin de créer un VSPackage pour étendre l’éditeur, bien que si vous souhaitez inclure des fonctionnalités de la coque (par exemple, une commande de menu ou une clé de raccourci), vous pouvez combiner une extension MEF avec un VSPackage.
 
- Vous pouvez également créer un éditeur personnalisé, par exemple si vous souhaitez lire et écrire dans une base de données, ou si vous souhaitez utiliser un concepteur. Vous pouvez également utiliser un éditeur externe tel que le bloc-notes ou WordPad de Microsoft. Pour plus d’informations, consultez [éditeur et les Extensions de Service de langage](../../extensibility/editor-and-language-service-extensions.md).
+ Vous pouvez également créer un éditeur personnalisé, par exemple si vous souhaitez lire et écrire dans une base de données, ou si vous souhaitez utiliser un concepteur. Vous pouvez également utiliser un éditeur externe tel que Notepad ou Microsoft WordPad. Pour plus d’informations, voir [Extensions Editor et Language Service](../../extensibility/editor-and-language-service-extensions.md).
 
-## <a name="language-services"></a>Services de langage
- Si vous souhaitez que l’éditeur de Visual Studio pour prendre en charge de nouveaux mots clés de programmation ou même un nouveau langage de programmation, vous créez un service de langage. Chaque service de langage peut implémenter certaines fonctionnalités de l’éditeur entièrement, partiellement ou pas du tout. Selon la façon dont il est configuré, le service de langage peut fournir la coloration syntaxique, correspondance des accolades, prise en charge IntelliSense et autres fonctionnalités dans l’éditeur.
+## <a name="language-services"></a>Services linguistiques
+ Si vous voulez que l’éditeur de Visual Studio soutienne de nouveaux mots clés de programmation ou même un nouveau langage de programmation, vous créez un service linguistique. Chaque service linguistique peut implémenter certaines fonctionnalités de l’éditeur entièrement, partiellement ou pas du tout. Selon la façon dont il est configuré, le service linguistique peut fournir la mise en évidence syntaxe, l’appariement d’accolade, le support IntelliSense, et d’autres fonctionnalités dans l’éditeur.
 
- Au cœur d’un service de langage sont un analyseur et un analyseur. Un scanneur (ou un analyseur lexical) divise un fichier source en éléments sont appelés jetons, et un analyseur établit les relations entre ces jetons. Lorsque vous créez un service de langage, vous devez implémenter l’analyseur et le moteur d’analyse afin que Visual Studio puisse comprendre les jetons et la grammaire du langage. Vous pouvez créer des services de langage managé ou non managé. Pour plus d’informations, consultez [extensibilité du Service de langage hérité](../../extensibility/internals/legacy-language-service-extensibility.md).
+ Au cœur d’un service linguistique se trouvent un analyseur et un scanner. Un scanner (ou lexer) divise un fichier source en éléments qui sont connus sous le nom de jetons, et un analyseur établit les relations entre ces jetons. Lorsque vous créez un service linguistique, vous devez implémenter le analyseur et le scanner afin que Visual Studio puisse comprendre les jetons et la grammaire de la langue. Vous pouvez créer des services linguistiques gérés ou non gérés. Pour plus d’informations, voir [Legacy Language Service Extensibility](../../extensibility/internals/legacy-language-service-extensibility.md).
 
 ## <a name="projects"></a>Projets
 
-Dans Visual Studio, les projets sont les conteneurs que les développeurs utilisent pour organiser et à générer le code source et autres ressources. Les projets permettent d’organiser, générer, déboguer et déployer le code source, des références aux services Web et bases de données et d’autres ressources. Les VSPackages peuvent étendre le système de projet Visual Studio en fournissant des types de projets, les sous-types de projet et les outils personnalisés.
+Dans Visual Studio, les projets sont les conteneurs que les développeurs utilisent pour organiser et construire le code source et d’autres ressources. Les projets vous permettent d’organiser, de construire, de déboiffer et de déployer du code source, des références aux services et bases de données Web et à d’autres ressources. VSPackages peut étendre le système de projet Visual Studio en fournissant des types de projets, des sous-types de projets et des outils personnalisés.
 
-Les projets peuvent également être regroupées dans un *solution*, qui est un regroupement d’un ou plusieurs projets qui fonctionnent ensemble pour créer une application. Informations d’état et de projet qui se rapportent à la solution sont stockées dans deux fichiers de solution, basée sur le texte [fichier solution (.sln)](solution-dot-sln-file.md) et le fichier binaire [fichier des options (.suo) solution utilisateur](solution-user-options-dot-suo-file.md). Ces fichiers sont similaires aux fichiers de groupe (.vbg) qui ont été utilisés dans les versions antérieures de Visual Basic et l’espace de travail (.dsw) et aux fichiers (.opt) des options utilisateur qui ont été utilisés dans les versions antérieures de C++.
+Les projets peuvent également être rassemblés dans le monde dans le monde dans le cas d’une *solution,* qui est un regroupement d’un ou de plusieurs projets qui travaillent ensemble pour créer une application. Les informations de projet et d’état qui se rapportent à la solution sont stockées dans deux fichiers de solution, le fichier de solution textuelle [(.sln)](solution-dot-sln-file.md) et le fichier option utilisateur de solution binaire [(.suo).](solution-user-options-dot-suo-file.md) Ces fichiers sont similaires aux fichiers de groupe (.vbg) qui ont été utilisés dans les versions antérieures de Visual Basic, et à l’espace de travail (.dsw) et aux options utilisateur (.opt) fichiers qui ont été utilisés dans les versions antérieures de C.
 
-Pour plus d’informations, consultez [projets](../../extensibility/internals/projects.md) et [Solutions](../../extensibility/internals/solutions-overview.md).
+Pour plus d’informations, voir [Projets](../../extensibility/internals/projects.md) et [solutions](../../extensibility/internals/solutions-overview.md).
 
 ## <a name="project-and-item-templates"></a>Modèles de projet et d’élément
- Visual Studio inclut des modèles de projet prédéfinis et des modèles d’élément de projet. Vous pouvez également rendre vos propres modèles ou acquérir des modèles à partir de la Communauté et puis de les intégrer à Visual Studio. Le [MSDN Code Gallery](https://code.msdn.microsoft.com/site/search?query=visual%20studio) est l’endroit idéal pour les modèles et les extensions.
+ Visual Studio comprend des modèles de projet prédéfinis et des modèles d’éléments de projet. Vous pouvez également faire vos propres modèles ou acquérir des modèles de la communauté, puis les intégrer dans Visual Studio. La [galerie de code MSDN](https://code.msdn.microsoft.com/site/search?query=visual%20studio) est l’endroit où aller pour les modèles et les extensions.
 
- Les modèles contiennent la structure de projet et les fichiers de base qui sont nécessaires pour générer un type particulier d’application, de contrôle, de bibliothèque ou de classe. Lorsque vous souhaitez développer des logiciels qui ressemble à un des modèles, créez un projet qui est basé sur le modèle, puis modifiez les fichiers dans ce projet.
+ Les modèles contiennent la structure du projet et les fichiers de base qui sont nécessaires pour construire un type particulier d’application, de contrôle, de bibliothèque ou de classe. Lorsque vous souhaitez développer un logiciel qui ressemble à l’un des modèles, créez un projet basé sur le modèle, puis modifiez les fichiers de ce projet.
 
 > [!NOTE]
-> Cette architecture de modèle n’est pas pris en charge pour [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] projets.
+> Cette architecture de modèle [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] n’est pas prise en charge pour les projets.
 
- Pour plus d’informations, consultez [Ajout d’un projet et des modèles d’élément de projet](../../extensibility/internals/adding-project-and-project-item-templates.md).
+ Pour plus d’informations, voir [Ajout de modèles d’éléments de projet et de projet](../../extensibility/internals/adding-project-and-project-item-templates.md).
 
-## <a name="properties-and-options"></a>Propriétés et les Options
- Le **propriétés** fenêtre affiche les propriétés d’un ou plusieurs éléments sélectionnés : [Étendre les propriétés](../../extensibility/internals/extending-properties.md) pages d’Options contiennent des jeux d’options qui se rapportent à un composant particulier, comme un langage de programmation ou à un VSPackage : [Options et Pages d’Options](../../extensibility/internals/options-and-options-pages.md). Les paramètres sont généralement liés par l’interface utilisateur des fonctionnalités qui peuvent être importées et exportées : [Prise en charge pour les paramètres utilisateur](../../extensibility/internals/support-for-user-settings.md).
+## <a name="properties-and-options"></a>Propriétés et options
+ La fenêtre **Propriétés** affiche les propriétés d’éléments uniques ou multiples sélectionnés : Les pages [Options d’extension](../../extensibility/internals/extending-properties.md) des propriétés contiennent des ensembles d’options qui se rapportent à un composant particulier, comme un langage de programmation ou un VSPackage : [Options et pages d’options.](../../extensibility/internals/options-and-options-pages.md) Les paramètres sont généralement des fonctionnalités liées à l’interface utilisateur qui peuvent être importées et exportées : [Support for User Settings](../../extensibility/internals/support-for-user-settings.md).
 
-## <a name="visual-studio-services"></a>Services de Visual Studio
- Un service fournit un ensemble spécifique d’interfaces pour les composants à consommer. Visual Studio fournit un ensemble de services qui peut être utilisé par tous les composants, y compris les extensions. Par exemple, Visual Studio services activer des fenêtres Outil pour être affiché ou masqué de manière dynamique, activer l’accès à l’aide, barre d’état ou d’événements d’interface utilisateur. L’éditeur Visual Studio fournit également des services pouvant être importé par les extensions de l’éditeur. Pour plus d’informations, consultez [utilisation et fourniture de Services](../../extensibility/using-and-providing-services.md).
+## <a name="visual-studio-services"></a>Services de studio visuel
+ Un service fournit un ensemble spécifique d’interfaces que les composants peuvent consommer. Visual Studio fournit un ensemble de services qui peuvent être utilisés par tous les composants, y compris les extensions. Par exemple, les services Visual Studio permettent de montrer ou de cacher dynamiquement les fenêtres des outils, d’accéder à l’aide, à la barre d’état ou aux événements d’interface utilisateur. L’éditeur visual Studio fournit également des services qui peuvent être importés par extensions d’éditeur. Pour plus d’informations, voir [Utilisation et Fournir des services](../../extensibility/using-and-providing-services.md).
 
 ## <a name="debugger"></a>Débogueur
- Le débogueur est l’interface utilisateur pour les composants de débogage spécifiques au langage. Si vous avez créé un nouveau service de langage, vous devrez créer un moteur de débogage spécifiques à raccorder au débogueur. Pour plus d’informations, consultez [extensibilité du débogueur Visual Studio](../../extensibility/debugger/visual-studio-debugger-extensibility.md).
+ Le débogage est l’interface utilisateur des composants de débogage spécifiques à la langue. Si vous avez créé un nouveau service linguistique, vous devrez créer un moteur de déboçon spécifique pour s’accrocher au débbugger. Pour plus d’informations, voir [Visual Studio Debugger Extensibility](../../extensibility/debugger/visual-studio-debugger-extensibility.md).
 
-## <a name="source-control"></a>Contrôle de code source
- Pour plus d’informations sur l’implémentation d’un plug-in de contrôle de code source ou d’un VSPackage, consultez [contrôle de code Source](../../extensibility/internals/source-control.md).
+## <a name="source-control"></a>Contrôle de la source
+ Pour plus d’informations sur la mise en œuvre d’un plug-in de contrôle source ou VSPackage, voir [Contrôle source](../../extensibility/internals/source-control.md).
 
 ## <a name="wizards"></a>Assistants
- Vous pouvez créer un Assistant conjointement avec un nouveau type de projet, afin que l’Assistant peut aider vos utilisateurs les bonnes décisions lorsqu’ils créent un nouveau projet de ce type. Pour plus d’informations, consultez [Assistants](../../extensibility/internals/wizards.md).
+ Vous pouvez créer un assistant en conjonction avec un nouveau type de projet, de sorte que l’assistant peut aider vos utilisateurs à prendre les bonnes décisions quand ils créent un nouveau projet de ce type. Pour plus d’informations, voir [Wizards](../../extensibility/internals/wizards.md).
 
 ## <a name="custom-tools"></a>Outils personnalisés
- Outils personnalisés vous permettent d’associer un outil à un élément dans un projet et d’exécuter cet outil chaque fois que le fichier est enregistré. Pour plus d’informations, consultez [outils personnalisés](../../extensibility/internals/custom-tools.md).
+ Les outils personnalisés vous permettent d’associer un outil à un élément d’un projet et d’exécuter cet outil chaque fois que le fichier est enregistré. Pour plus d’informations, voir [Custom Tools](../../extensibility/internals/custom-tools.md).
 
 ## <a name="vssdk-utilities"></a>Utilitaires VSSDK
- L’extensibilité de Visual Studio inclut un ensemble d’utilitaires dont vous avez besoin pour pouvoir fonctionner avec différents aspects de VSPackages. Pour plus d’informations, consultez [utilitaires VSSDK](../../extensibility/internals/vssdk-utilities.md).
+ Le VSSDK comprend un ensemble d’utilitaires dont vous pourriez avoir besoin afin de travailler avec différents aspects de VSPackages. Pour plus d’informations, voir [VSSDK Utilities](../../extensibility/internals/vssdk-utilities.md).
 
-## <a name="using-windows-installer"></a>À l’aide du programme d’installation de Windows
- Dans certains cas, vous devrez peut-être utiliser le programme d’installation de Windows, plutôt que le programme d’installation VSIX : par exemple, vous devrez peut-être écrire dans le Registre. Pour plus d’informations sur l’utilisation du programme d’installation de Windows avec vos extensions, consultez [installation les VSPackages avec Windows Installer](../../extensibility/internals/installing-vspackages-with-windows-installer.md).
+## <a name="using-windows-installer"></a>Utilisation de Windows Install
+ Dans certains cas, vous devrez peut-être utiliser l’installateur Windows plutôt que l’installateur VSIX : par exemple, vous devrez peut-être écrire au registre. Pour plus d’informations sur l’utilisation de Windows Installer avec vos extensions, voir [installer VSPackages Avec Windows Installer](../../extensibility/internals/installing-vspackages-with-windows-installer.md).
 
-## <a name="help-viewer"></a>Visionneuse d'aide
- Vous pouvez intégrer votre propre aide et les pages de la touche F1 dans la visionneuse d’aide. Pour plus d’informations, consultez [Microsoft Help Viewer SDK](../../extensibility/internals/microsoft-help-viewer-sdk.md).
+## <a name="help-viewer"></a>Visionneuse de l’aide
+ Vous pouvez intégrer votre propre aide et vos pages F1 dans le Visualiseur d’Aide. Pour plus d’informations, voir [Microsoft Help Viewer SDK](../../extensibility/internals/microsoft-help-viewer-sdk.md).

@@ -1,44 +1,44 @@
 ---
-title: 'Comment : fournir une automatisation pour Windows | Microsoft Docs'
+title: 'Comment : Fournir l’automatisation pour Windows ( Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - automation [Visual Studio SDK], tool windows
 - tool windows, automation
 ms.assetid: 512ab2a4-7987-4912-8f40-8804bf66f829
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f02860b76c80a05808d4e46f315fc3616a19f94f
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: c8716fbaa56cdb77063597fd5e07f6e469cc86a0
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75848852"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80707952"
 ---
-# <a name="how-to-provide-automation-for-windows"></a>Comment : fournir une automatisation pour Windows
+# <a name="how-to-provide-automation-for-windows"></a>Comment : Fournir l’automatisation pour les fenêtres
 
-Vous pouvez fournir une automatisation pour les fenêtres de documents et d’outils. L’automatisation est recommandée chaque fois que vous souhaitez rendre des objets Automation disponibles dans une fenêtre, et que l’environnement ne fournit pas déjà un objet Automation prêt à l’emploi, comme c’est le cas avec une liste des tâches.
+Vous pouvez fournir l’automatisation pour les fenêtres de documents et d’outils. Fournir l’automatisation est conseillé chaque fois que vous voulez rendre les objets d’automatisation disponibles sur une fenêtre, et l’environnement ne fournit pas déjà un objet d’automatisation prêt à l’emploi, comme il le fait avec une liste de tâches.
 
-## <a name="automation-for-tool-windows"></a>Automatisation pour les fenêtres outil
+## <a name="automation-for-tool-windows"></a>Automatisation pour les fenêtres d’outils
 
-L’environnement fournit l’automatisation sur une fenêtre outil en retournant un objet <xref:EnvDTE.Window> standard comme expliqué dans la procédure suivante :
+L’environnement fournit l’automatisation sur <xref:EnvDTE.Window> une fenêtre d’outil en retournant un objet standard comme expliqué dans la procédure suivante :
 
-1. Appelez la méthode <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame.GetProperty%2A> via l’environnement avec [__VSFPROPID. VSFPROPID_ExtWindowObject](<xref:Microsoft.VisualStudio.Shell.Interop.__VSFPROPID.VSFPROPID_ExtWindowObject>) en tant que paramètre `VSFPROPID` pour récupérer l’objet `Window`.
+1. Appelez <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame.GetProperty%2A> la méthode via l’environnement avec [__VSFPROPID. VSFPROPID_ExtWindowObject](<xref:Microsoft.VisualStudio.Shell.Interop.__VSFPROPID.VSFPROPID_ExtWindowObject>) comme `VSFPROPID` paramètre pour `Window` obtenir l’objet.
 
-2. Quand un appelant demande un objet Automation spécifique au VSPackage pour votre fenêtre outil par le biais de <xref:EnvDTE.Window.Object%2A>, l’environnement appelle `QueryInterface` pour `IExtensibleObject`, <xref:Microsoft.VisualStudio.Shell.Interop.IVsExtensibleObject>ou les interfaces `IDispatch`. `IExtensibleObject` et `IVsExtensibleObject` fournissent une méthode de <xref:Microsoft.VisualStudio.Shell.Interop.IVsExtensibleObject.GetAutomationObject%2A>.
+2. Lorsqu’un appelant demande un objet d’automatisation spécifique <xref:EnvDTE.Window.Object%2A>à VSPackage pour votre fenêtre d’outil à travers, `QueryInterface` l’environnement `IExtensibleObject`exige, <xref:Microsoft.VisualStudio.Shell.Interop.IVsExtensibleObject>, ou les `IDispatch` interfaces. Les `IExtensibleObject` `IVsExtensibleObject` deux <xref:Microsoft.VisualStudio.Shell.Interop.IVsExtensibleObject.GetAutomationObject%2A> et de fournir une méthode.
 
-3. Lorsque l’environnement appelle ensuite la méthode `GetAutomationObject` qui passe `NULL`, répond en remettant en retour votre objet spécifique au VSPackage.
+3. Lorsque l’environnement `GetAutomationObject` appelle `NULL`alors la méthode passant, répondez en retournant votre objet spécifique à VSPackage.
 
-4. Si l’appel de `QueryInterface` pour `IExtensibleObject` et `IVsExtensibleObject` échoue, l’environnement appelle `QueryInterface` pour `IDispatch`.
+4. Si `QueryInterface` `IExtensibleObject` l’appel et `IVsExtensibleObject` échoue, `QueryInterface` `IDispatch`alors l’environnement exige .
 
-## <a name="automation-for-document-windows"></a>Automatisation pour les fenêtres de document
+## <a name="automation-for-document-windows"></a>Automatisation pour les fenêtres de documents
 
-Un objet <xref:EnvDTE.Document> standard est également disponible à partir de l’environnement, même si un éditeur peut avoir sa propre implémentation de l’objet <xref:EnvDTE.Document> en implémentant `IExtensibleObject` interface et en répondant aux `GetAutomationObject`.
+Un <xref:EnvDTE.Document> objet standard est également disponible à partir de l’environnement, bien `IExtensibleObject` qu’un `GetAutomationObject`éditeur peut avoir sa propre mise en œuvre de l’objet en implémentant l’interface <xref:EnvDTE.Document> et en répondant à .
 
-En outre, un éditeur peut fournir un objet Automation spécifique au VSPackage, récupéré par le biais de la méthode <xref:EnvDTE.Document.Object%2A>, en implémentant les interfaces `IVsExtensibleObject` ou `IExtensibleObject`. Les [exemples VSSDK](https://github.com/Microsoft/VSSDK-Extensibility-Samples) contribuent à un objet Automation spécifique aux documents RTF.
+En outre, un éditeur peut fournir un objet d’automatisation <xref:EnvDTE.Document.Object%2A> spécifique à VSPackage, récupéré par la méthode, en implémentant les `IVsExtensibleObject` interfaces ou `IExtensibleObject` les interfaces. Les [échantillons VSSDK](https://github.com/Microsoft/VSSDK-Extensibility-Samples) fournissent un objet d’automatisation spécifique à un document RTF.
 
 ## <a name="see-also"></a>Voir aussi
 

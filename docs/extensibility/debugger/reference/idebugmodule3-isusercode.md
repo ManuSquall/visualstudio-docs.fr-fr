@@ -1,5 +1,5 @@
 ---
-title: IDebugModule3::IsUserCode | Microsoft Docs
+title: IDebugModule3::IsUserCode ( Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugModule3::IsUserCode
 ms.assetid: 77022946-bb8b-4114-aa81-614df6e54b13
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 1869b9b4bda263d72db9c949be730e51fdc02d01
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 435ec50ef5437e5aca5d3722a2041115882d15f2
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66323899"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80726833"
 ---
 # <a name="idebugmodule3isusercode"></a>IDebugModule3::IsUserCode
-Récupère des informations sur indique si le module représente le code utilisateur ou non.
+Récupère des informations sur la question de savoir si le module représente ou non le code utilisateur.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -41,10 +41,10 @@ int IsUserCode(
 
 ## <a name="parameters"></a>Paramètres
 `pfUser`\
-[out] Différent de zéro (`TRUE`) si le module représente le code utilisateur, zéro (`FALSE`) si elle n’est pas le cas.
+[out] Nonzero`TRUE`( ) si le module`FALSE`représente le code utilisateur, zéro ( ) si ce n’est pas le cas.
 
 ## <a name="return-value"></a>Valeur de retour
- En cas de réussite, retourne `S_OK`; sinon, retourne le code d’erreur.
+ En cas `S_OK`de succès, les retours; autrement, renvoie le code d’erreur.
 
 ## <a name="see-also"></a>Voir aussi
 - [IDebugModule3](../../../extensibility/debugger/reference/idebugmodule3.md)

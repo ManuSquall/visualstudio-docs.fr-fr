@@ -1,5 +1,5 @@
 ---
-title: PENDING_BP_STATE | Microsoft Docs
+title: PENDING_BP_STATE Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,22 +7,22 @@ f1_keywords:
 helpviewer_keywords:
 - PENDING_BP_STATE enumeration
 ms.assetid: ac04ad72-fa92-4a15-ade2-0d0bbbadfc7f
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 6707c09e409e2a04d7afec0322b575a70cea33cf
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 69c8dbe1022ee0b1b2ff034d2b83b947c8fb3df6
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66349870"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80713997"
 ---
-# <a name="pendingbpstate"></a>PENDING_BP_STATE
+# <a name="pending_bp_state"></a>PENDING_BP_STATE
 Spécifie l’état d’un point d’arrêt en attente (un point d’arrêt qui n’a pas encore été lié).
 
 ## <a name="syntax"></a>Syntaxe
@@ -48,26 +48,26 @@ public enum enum_PENDING_BP_STATE { 
 
 ## <a name="fields"></a>Champs
  `PBPS_NONE`\
- Espace réservé pour un zéro. Cette valeur n’est jamais retournée.
+ Placeholder pour zéro. Cette valeur n’est jamais retournée.
 
  `PBPS_DELETED`\
  Indique que le point d’arrêt en attente a été supprimé.
 
  `PBPS_DISABLED`\
- Indique que le point d’arrêt en attente est désactivée.
+ Indique que le point d’arrêt en attente est désactivé.
 
  `PBPS_ENABLED`\
- Indique que le point d’arrêt en attente est activée.
+ Indique que le point d’arrêt en attente est activé.
 
 ## <a name="remarks"></a>Notes
- Utiliser comme la `state` membre de la [PENDING_BP_STATE_INFO](../../../extensibility/debugger/reference/pending-bp-state-info.md) structure.
+ Utiliser comme `state` membre de la structure [PENDING_BP_STATE_INFO.](../../../extensibility/debugger/reference/pending-bp-state-info.md)
 
-## <a name="requirements"></a>Configuration requise
- En-tête : msdbg.h
+## <a name="requirements"></a>Spécifications
+ En-tête: msdbg.h
 
- Espace de noms : Microsoft.VisualStudio.Debugger.Interop
+ Namespace: Microsoft.VisualStudio.Debugger.Interop
 
- Assembly : Microsoft.VisualStudio.Debugger.Interop.dll
+ Assemblage: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>Voir aussi
 - [Énumérations](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)

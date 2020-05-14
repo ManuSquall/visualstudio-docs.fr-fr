@@ -19,15 +19,15 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 9cbe4bc3f982ae18b9f85fe8bf5c21495c98beee
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/16/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "76112541"
 ---
 # <a name="how-to-configure-projects-to-target-platforms"></a>Guide pratique pour configurer des projets et cibler des plateformes
 
-Visual Studio vous permet de configurer vos applications pour cibler différentes plateformes, notamment des plateformes 64 bits. Pour plus d’informations sur la prise en charge des plateformes 64 bits dans Visual Studio, consultez [Applications 64 bits](/dotnet/framework/64-bit-apps).
+Visual Studio vous permet de configurer vos applications pour cibler différentes plateformes, notamment des plateformes 64 bits. Pour plus d’informations sur le support de la plate-forme 64 bits dans Visual Studio, voir [applications 64 bits](/dotnet/framework/64-bit-apps).
 
 ## <a name="target-platforms-with-the-configuration-manager"></a>Cibler des plateformes avec le Gestionnaire de configurations
 
@@ -35,11 +35,11 @@ Le **Gestionnaire de configurations** vous permet d’ajouter rapidement une nou
 
 ### <a name="to-configure-a-project-to-target-a-64-bit-platform"></a>Pour configurer un projet pour cibler une plateforme 64 bits
 
-1. Dans la barre de menus, choisissez **Build** > **Gestionnaire de configurations**.
+1. Sur la barre de menu, choisissez **Build** > **Configuration Manager**.
 
 2. Dans la liste **Plateforme de la solution active**, choisissez une plateforme 64 bits pour la solution à cibler, puis choisissez le bouton **Fermer**.
 
-    1. Si la plateforme voulue ne s’affiche pas dans la liste **Plateforme de la solution active**, choisissez **Nouveau**.
+    1. Si la plate-forme que vous voulez n’apparaît pas dans la liste **de la plate-forme de solution Active,** choisissez **New**.
 
          La boîte de dialogue **Nouvelle plateforme de solution** s’affiche.
 
@@ -56,7 +56,7 @@ Les propriétés de tous les projets qui ciblent la plateforme 64 bits sont mis
 
 Le **Concepteur de projet** permet également de cibler différentes plateformes pour votre projet. Si la sélection de l’une des plateformes incluses dans la liste affichée dans la boîte de dialogue **Nouvelle plateforme de solution** ne fonctionne pas pour votre solution, vous pouvez créer un nom de configuration personnalisée, puis en modifier les paramètres dans le **Concepteur de projet** pour cibler la plateforme appropriée.
 
-L’exécution de cette tâche varie suivant le langage de programmation que vous utilisez. Consultez les liens suivants pour plus d'informations :
+L’exécution de cette tâche varie suivant le langage de programmation que vous utilisez. Pour plus d’informations, consultez les liens suivants :
 
 - Pour les projets [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)], consultez [/platform (Visual Basic)](/dotnet/visual-basic/reference/command-line-compiler/platform).
 
@@ -68,7 +68,7 @@ L’exécution de cette tâche varie suivant le langage de programmation que vou
 
 Parfois, vous devez modifier manuellement le fichier projet pour une configuration personnalisée. C’est le cas quand vous avez des conditions qui ne peuvent pas être spécifiées dans l’IDE, comme dans l’exemple suivant comprenant deux références pour deux plateformes différentes.
 
-### <a name="example-referencing-x86-and-x64-assemblies-and-dlls"></a>Exemple : référencement d’assemblys et de dll x86 et x64
+### <a name="example-referencing-x86-and-x64-assemblies-and-dlls"></a>Exemple : Référencement des assemblages et des DLL x86 et x64
 
 Vous pouvez avoir les versions x86 et x64 d’un assembly ou d’une DLL .NET. Pour configurer votre projet de manière à utiliser ces références, ajoutez d’abord la référence, puis ouvrez le fichier projet et modifiez-le pour ajouter un `ItemGroup` avec une condition qui fait référence à la fois à la configuration et à la plateforme cible.  Par exemple, supposons que le binaire que vous référencez est ClassLibrary1 et qu’il existe des chemins différents pour les configurations Debug et Release, ainsi que des versions x86 et x64.  Ensuite, utilisez quatre éléments `ItemGroup` avec toutes les combinaisons de paramètres, comme suit :
 
@@ -116,7 +116,7 @@ Pour plus d’informations sur le fichier projet, consultez [Informations de ré
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Présentation des plateformes de génération](../ide/understanding-build-platforms.md)
+- [Présentation des plateformes de build](../ide/understanding-build-platforms.md)
 - [/platform (options du compilateur C#)](/dotnet/csharp/language-reference/compiler-options/platform-compiler-option)
 - [Applications 64 bits](/dotnet/framework/64-bit-apps)
 - [Prise en charge de l’IDE Visual Studio 64 bits](../ide/visual-studio-ide-64-bit-support.md)

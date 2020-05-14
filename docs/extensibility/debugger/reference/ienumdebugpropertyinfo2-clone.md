@@ -1,5 +1,5 @@
 ---
-title: IEnumDebugPropertyInfo2::Clone | Microsoft Docs
+title: IEnumDebugPropertyInfo2::Clone (fr) Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IEnumDebugPropertyInfo2::Clone
 ms.assetid: 0ede1667-1071-4aa4-b887-260ea103d724
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: a270f0549b24b62a41dfd08d6b3ae70fac87253f
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 4c98917de4bcdc7bf5ff184591b42133626a4f16
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66316903"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80715560"
 ---
 # <a name="ienumdebugpropertyinfo2clone"></a>IEnumDebugPropertyInfo2::Clone
-Retourne une copie de l’énumération actuelle comme un objet distinct.
+Retourne une copie de l'énumération actuelle comme un objet distinct.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -41,13 +41,13 @@ int Clone(
 
 ## <a name="parameters"></a>Paramètres
 `ppEnum`\
-[out] Retourne une copie de cette énumération en tant qu’objet distinct.
+[out] Retourne une copie de cette énumération en tant qu'objet distinct.
 
 ## <a name="return-value"></a>Valeur de retour
- En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.
+ En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
 ## <a name="remarks"></a>Notes
- La copie de l’énumération a le même état que l’original au moment de que cette méthode est appelée. Toutefois, les États de la copie et la version d’origine sont distincts et peuvent être modifiées individuellement.
+ La copie de l’énumération a le même état que l’original au moment où cette méthode est appelée. Cependant, les états de la copie et de l’original sont séparés et peuvent être modifiés individuellement.
 
 ## <a name="see-also"></a>Voir aussi
 - [IEnumDebugPropertyInfo2](../../../extensibility/debugger/reference/ienumdebugpropertyinfo2.md)

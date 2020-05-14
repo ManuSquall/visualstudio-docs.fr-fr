@@ -1,24 +1,24 @@
 ---
-title: IDebugDocumentPositionOffset2::GetRange | Microsoft Docs
+title: IDebugDocumentPositionOffset2::GetRange ( Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - IDebugDocumentPositionOffset2::GetRange
 ms.assetid: 27da7130-0932-4f97-abde-05e6fb018606
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 0c667ffa597481121de0467c9ab4b07e4bf4d607
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: fd305b6506471a40de90fbd954e54461d2a139d0
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66333385"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80731628"
 ---
 # <a name="idebugdocumentpositionoffset2getrange"></a>IDebugDocumentPositionOffset2::GetRange
 Récupère la plage pour la position actuelle du document.
@@ -41,23 +41,23 @@ public int GetRange(
 
 ## <a name="parameters"></a>Paramètres
 `pdwBegOffset`\
-[in, out] Décalage de la position de début de la plage. Définissez ce paramètre sur une valeur null si cette information n’est pas nécessaire.
+[dans, dehors] Décalage pour la position de départ de la plage. Définissez ce paramètre à une valeur nulle si ces informations ne sont pas nécessaires.
 
 `pdwEndOffset`\
-[in, out] Décalage de la position de fin de la plage. Définissez ce paramètre sur une valeur null si cette information n’est pas nécessaire.
+[dans, dehors] Décalage pour la position de fin de la plage. Définissez ce paramètre à une valeur nulle si ces informations ne sont pas nécessaires.
 
 ## <a name="return-value"></a>Valeur de retour
- En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.
+ En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
 ## <a name="remarks"></a>Notes
- La plage spécifiée dans une position de document pour un point d’arrêt de l’emplacement est utilisée par le moteur de débogage (dé) pour rechercher à l’avance pour une instruction qui apporte réellement le code. Considérons par exemple le code suivant :
+ La plage spécifiée dans une position de document pour un point de rupture de localisation est utilisée par le moteur de débogé (DE) pour rechercher à l’avance une déclaration qui contribue réellement au code. Considérons par exemple le code suivant :
 
 ```
 Line 5: // comment
 Line 6: x = 1;
 ```
 
- La ligne 5 ne contribue aucun code pour le programme en cours de débogage. Si le débogueur qui définit le point d’arrêt sur la ligne 5 veut le DE pour rechercher vers le bas une certaine quantité de la première ligne qui contribue le code, le débogueur spécifiez une plage qui comprend des lignes de candidat supplémentaire où un point d’arrêt peut être placé correctement. Le DE puis rechercherait vers l’avant via ces lignes jusqu'à ce qu’il trouve une ligne qui peut accepter un point d’arrêt.
+ La ligne 5 ne fournit aucun code au programme en cours de déboisation. Si le débbuggeur qui définit le point d’arrêt sur la ligne 5 veut que le DE recherche un certain montant pour la première ligne qui contribue au code, le débogénaire spécifie une plage qui comprend des lignes de candidats supplémentaires où un point d’arrêt peut être correctement placé. Le DE chercherait alors vers l’avant à travers ces lignes jusqu’à ce qu’il trouve une ligne qui pourrait accepter un point d’arrêt.
 
 ## <a name="see-also"></a>Voir aussi
 - [IDebugDocumentPositionOffset2](../../../extensibility/debugger/reference/idebugdocumentpositionoffset2.md)

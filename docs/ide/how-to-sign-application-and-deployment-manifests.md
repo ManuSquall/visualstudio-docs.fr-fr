@@ -19,10 +19,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: fbf25301095ac5ff438514c37f61337e46342860
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75596162"
 ---
 # <a name="how-to-sign-application-and-deployment-manifests"></a>Guide pratique pour signer des manifestes d’application et de déploiement
@@ -61,7 +61,7 @@ Pour plus d’informations sur la création de fichiers de clés, consultez [Gui
 
      La boîte de dialogue **Sélectionner le fichier** s’affiche.
 
-3. Dans la boîte de dialogue **Sélectionner le fichier**, accédez à l’emplacement du fichier de clé ( *.pfx*) à utiliser, puis cliquez sur **Ouvrir**.
+3. Dans la boîte de dialogue **Sélectionner le fichier**, accédez à l’emplacement du fichier de clé (*.pfx*) à utiliser, puis cliquez sur **Ouvrir**.
 
     > [!NOTE]
     > Cette option prend uniquement en charge les fichiers ayant l’extension *.pfx*. Si vous avez un fichier de clé ou un certificat dans un autre format, stockez-le dans le magasin de certificats Windows et sélectionnez le certificat, comme indiqué dans la procédure précédente. L’objet du certificat sélectionné doit inclure la signature de code.
@@ -71,7 +71,7 @@ Pour plus d’informations sur la création de fichiers de clés, consultez [Gui
 4. Entrez le mot de passe pour accéder au fichier de clé, puis sélectionnez **Entrée**.
 
 > [!NOTE]
-> Le fichier *.pfx* ne peut pas inclure d’informations de chaînage des certificats. Si c’est le cas, l’erreur d’importation suivante se produit : **le certificat et la clé privée sont introuvables pour le déchiffrement**. Pour supprimer les informations de chaînage de certificats, vous pouvez utiliser *Certmgr. msc* et [désactiver l’option](/previous-versions/aa730868(v=vs.80)) permettant d' **inclure tous les certificats** lors de l’exportation du fichier *. pfx.
+> Le fichier *.pfx* ne peut pas inclure d’informations de chaînage des certificats. Si c’est le cas, l’erreur d’importation suivante se produira : **ne peut pas trouver le certificat et la clé privée pour le décryptage.** Pour supprimer les informations d’enchaînement des certificats, vous pouvez utiliser *Certmgr.msc* et [désactiver la possibilité](/previous-versions/aa730868(v=vs.80)) **d’inclure tous les certificats** lors de l’exportation du fichier .pfx.
 
 ## <a name="sign-using-a-test-certificate"></a>Signer en utilisant un certificat de test
 
@@ -113,7 +113,7 @@ Par défaut, ClickOnce génère automatiquement des manifestes signés, sauf si 
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Assemblys avec nom fort](/dotnet/framework/app-domains/strong-named-assemblies)
+- [Assemblées de bien-être](/dotnet/framework/app-domains/strong-named-assemblies)
 - [Guide pratique pour créer une paire de clés publique/privée](/dotnet/framework/app-domains/how-to-create-a-public-private-key-pair)
-- [Signature, page du Concepteur de projets](../ide/reference/signing-page-project-designer.md)
+- [Page Signature, Concepteur de projet](../ide/reference/signing-page-project-designer.md)
 - [Sécurité et déploiement ClickOnce](../deployment/clickonce-security-and-deployment.md)

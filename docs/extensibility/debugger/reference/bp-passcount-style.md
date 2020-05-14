@@ -1,5 +1,5 @@
 ---
-title: BP_PASSCOUNT_STYLE | Microsoft Docs
+title: BP_PASSCOUNT_STYLE Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - BP_PASSCOUNT_STYLE structure
 ms.assetid: 0a647047-e2d5-4724-a0b8-68108425ecad
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 4ea44ef70ba086a58454891987711ce7cca643e8
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 1633c5e9aa6ff251fedce83a0243664cd9e0e0a7
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66353048"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80737915"
 ---
-# <a name="bppasscountstyle"></a>BP_PASSCOUNT_STYLE
-Spécifie la condition associée au nombre de passage de point d’arrêt qui provoque le point d’arrêt à déclencher.
+# <a name="bp_passcount_style"></a>BP_PASSCOUNT_STYLE
+Spécifie l’état associé au nombre de laissez-passer de point d’arrêt qui provoque l’incendie du point d’arrêt.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -48,26 +48,26 @@ public enum enum_BP_PASSCOUNT_STYLE {
 
 ## <a name="fields"></a>Champs
 `BP_PASSCOUNT_NONE`\
-Ne spécifie aucun style de nombre de pass de point d’arrêt.
+Spécifie aucun style de compte de point de passage.
 
 `BP_PASSCOUNT_EQUAL`\
-Définit le style de nombre de pass de point d’arrêt à égal. Le point d’arrêt se déclenche lorsque le nombre de fois où que le point d’arrêt est atteint égale au nombre de pass.
+Définit le style de compte de passage de point d’arrêt à égal. Le point d’arrêt s’allume lorsque le nombre de fois que le point d’arrêt est atteint équivaut au nombre de passes.
 
 `BP_PASSCOUNT_EQUAL_OR_GREATER`\
-Définit le style de nombre de pass de point d’arrêt comme égale ou supérieure. Le point d’arrêt se déclenche lorsque le nombre de fois où que le point d’arrêt est atteint est égal à ou supérieur au nombre de pass.
+Définit le style de compte de passage de point d’arrêt à égal ou plus grand. Le point d’arrêt s’allume lorsque le nombre de fois que le point d’arrêt est atteint est égal ou supérieur au nombre de passes.
 
 `BP_PASSCOUNT_MOD`\
-Spécifie un modulo passer le nombre. Par exemple, si le nombre de pass est du type `BP_PASSCOUNT_MOD` et la valeur du nombre pass est 4, le se de point d’arrêt déclenche chaque fois que le nombre d’accès est un multiple de 4.
+Spécifie un nombre de passes modulo. Par exemple, si le nombre de `BP_PASSCOUNT_MOD` laissez-passer est du type et que la valeur de nombre de laissez-passer est de 4, le point de rupture s’allume chaque fois que le nombre de coups est un multiple de 4.
 
 ## <a name="remarks"></a>Notes
-Utilisé pour le `stylePassCount` membre de la [BP_PASSCOUNT](../../../extensibility/debugger/reference/bp-passcount.md) structure qui est à son tour un membre de la [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md) et [BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md) structures.
+Utilisé pour `stylePassCount` le membre de la structure [BP_PASSCOUNT](../../../extensibility/debugger/reference/bp-passcount.md) qui est à son tour un membre des structures [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md) et [BP_REQUEST_INFO2.](../../../extensibility/debugger/reference/bp-request-info2.md)
 
-## <a name="requirements"></a>Configuration requise
-En-tête : msdbg.h
+## <a name="requirements"></a>Spécifications
+En-tête: msdbg.h
 
-Espace de noms : Microsoft.VisualStudio.Debugger.Interop
+Namespace: Microsoft.VisualStudio.Debugger.Interop
 
-Assembly : Microsoft.VisualStudio.Debugger.Interop.dll
+Assemblage: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>Voir aussi
 - [Énumérations](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)

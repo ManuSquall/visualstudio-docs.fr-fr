@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: f33dd9b19297811597be406337d70392904e6e44
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75596382"
 ---
 # <a name="visual-basic-defaults-projects-options-dialog-box"></a>Valeurs par défaut VB, Projets, boîte de dialogue Options
@@ -36,7 +36,7 @@ Définit la valeur par défaut du compilateur afin que les conversions restricti
 
  **Option Compare**
 
-Définit la valeur par défaut du compilateur pour les comparaisons de chaînes : binaire (respect de la casse) ou texte (non-respect de la casse). Par défaut, **option compare** a la valeur **Binary**. Pour plus d’informations, consultez [/optioncompare](/dotnet/visual-basic/reference/command-line-compiler/optioncompare).
+Définit le compilateur par défaut pour les comparaisons de chaînes : binaire (sensible aux cas) ou texte (insensible aux cas.) Par défaut, **Option Compare** est configuré à **Binaire**. Pour plus d’informations, consultez [/optioncompare](/dotnet/visual-basic/reference/command-line-compiler/optioncompare).
 
  **Option Infer**
 
@@ -44,4 +44,4 @@ Définit la valeur par défaut du compilateur pour l’inférence de type de var
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Projets et solutions](../../ide/solutions-and-projects-in-visual-studio.md)
+- [Solutions et projets](../../ide/solutions-and-projects-in-visual-studio.md)

@@ -10,10 +10,10 @@ author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.openlocfilehash: e8a6e5358a87e3d64b341c89b8ffd4cd3cf3e325
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75593731"
 ---
 # <a name="how-to-create-multi-file-item-templates"></a>Guide pratique pour créer des modèles d’élément multifichiers
@@ -53,19 +53,19 @@ Vous pouvez créer un modèle d’élément multifichier de la même manière qu
      > [!NOTE]
      > Quand vous ajoutez à un projet un élément dérivé de ce modèle, les noms de fichiers dérivent du nom que l’utilisateur entre dans la boîte de dialogue **Ajouter un nouvel élément**.
 
-1. Sélectionnez les fichiers à inclure dans votre modèle, cliquez avec le bouton droit sur la sélection, puis choisissez **Envoyer vers** > **Dossier compressé**.
+1. Sélectionnez les fichiers à inclure dans votre modèle, cliquez à droite sur la sélection et choisissez **Envoyer à** > **compressé (zippé) dossier**.
 
-   Les fichiers que vous avez sélectionnés sont compressés dans un fichier *.zip*.
+   Les fichiers que vous avez sélectionnés sont compressés dans un fichier *.zip.*
 
-1. Copiez le fichier *.zip* à l’emplacement des modèles d’élément utilisateur. Par défaut, le répertoire est : *%USERPROFILE%\Documents\Visual Studio \<Version\>\Templates\ItemTemplates*. Pour plus d’informations, consultez [Guide pratique pour localiser et organiser les modèles](../ide/how-to-locate-and-organize-project-and-item-templates.md).
+1. Copiez le fichier *.zip* à l’emplacement des modèles d’élément utilisateur. Par défaut, le répertoire est : *%USERPROFILE%\Documents\Visual Studio \<Version\>\Templates\ItemTemplates*. Pour plus d’informations, voir [Comment : Localiser et organiser des modèles](../ide/how-to-locate-and-organize-project-and-item-templates.md).
 
 1. Fermez Visual Studio, puis rouvrez-le.
 
-1. Créez un projet ou ouvrez un projet existant, puis choisissez **Projet** > **Ajouter un nouvel élément**, ou appuyez sur **Ctrl**+**Maj**+**A**.
+1. Créez un nouveau projet ou ouvrez un projet existant, puis choisissez **le projet** > **Ajouter un nouvel article** ou appuyer sur **Ctrl**+**Shift**+**A**.
 
    Le modèle d’élément multifichier apparaît dans la boîte de dialogue **Ajouter un nouvel élément**.
 
-## <a name="example"></a>Exemple
+## <a name="example"></a> Exemple
 
 L’exemple suivant présente un modèle Windows Forms. Quand vous créez un élément à partir de ce modèle, les noms des trois fichiers créés correspondent aux noms entrés dans la boîte de dialogue **Ajouter un nouvel élément**.
 
@@ -94,7 +94,7 @@ L’exemple suivant présente un modèle Windows Forms. Quand vous créez un él
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Créer des modèles de projet et d’élément](../ide/creating-project-and-item-templates.md)
-- [Guide pratique pour créer des modèles d’élément](../ide/how-to-create-item-templates.md)
+- [Créer des modèles de projets et d’objets](../ide/creating-project-and-item-templates.md)
+- [Comment : Créer des modèles d’objets](../ide/how-to-create-item-templates.md)
 - [Paramètres de modèle](../ide/template-parameters.md)
-- [Guide pratique pour substituer des paramètres dans un modèle](../ide/how-to-substitute-parameters-in-a-template.md)
+- [Comment : Remplacer les paramètres dans un modèle](../ide/how-to-substitute-parameters-in-a-template.md)

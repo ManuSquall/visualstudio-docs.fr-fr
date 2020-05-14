@@ -1,5 +1,5 @@
 ---
-title: STEPUNIT | Microsoft Docs
+title: STEPUNIT - France Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - STEPUNIT enumeration
 ms.assetid: cb8441f2-f744-4e73-acfe-ae8542df9649
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 803aafb60d7ada5b3339735fc0a10c66bb4925e0
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: a87c86647407d90c9f4292b1307fd5623e85d13b
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66329177"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80713519"
 ---
 # <a name="stepunit"></a>STEPUNIT
-Spécifie l’unité de progression pour l’exécution pas à pas.
+Spécifie l’unité d’étape pour marcher.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -46,24 +46,24 @@ enum enum_STEPUNIT { 
 
 ## <a name="fields"></a>Champs
  `STEP_STATEMENT`\
- Étapes par instruction.
+ Étapes par déclaration.
 
  `STEP_LINE`\
- Étapes en ligne.
+ Étapes par ligne.
 
  `STEP_INSTRUCTION`\
  Étapes par instruction.
 
 ## <a name="remarks"></a>Notes
- Passé en tant qu’argument à la [étape](../../../extensibility/debugger/reference/idebugprocess3-step.md) (méthode).
+ Passé comme un argument à la méthode [Step.](../../../extensibility/debugger/reference/idebugprocess3-step.md)
 
-## <a name="requirements"></a>Configuration requise
- En-tête : msdbg.h
+## <a name="requirements"></a>Spécifications
+ En-tête: msdbg.h
 
- Espace de noms : Microsoft.VisualStudio.Debugger.Interop
+ Namespace: Microsoft.VisualStudio.Debugger.Interop
 
- Assembly : Microsoft.VisualStudio.Debugger.Interop.dll
+ Assemblage: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>Voir aussi
 - [Énumérations](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
-- [Step](../../../extensibility/debugger/reference/idebugprocess3-step.md)
+- [Étape](../../../extensibility/debugger/reference/idebugprocess3-step.md)

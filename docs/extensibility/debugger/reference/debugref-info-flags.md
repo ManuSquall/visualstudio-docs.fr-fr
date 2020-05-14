@@ -1,5 +1,5 @@
 ---
-title: DEBUGREF_INFO_FLAGS | Microsoft Docs
+title: DEBUGREF_INFO_FLAGS Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - DEBUGREF_INFO_FLAGS enumeration
 ms.assetid: 1b043327-302a-4f6d-b51d-f94f9d7c7f9d
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 1adab87ed09ca2ff16d837da084d8cc0b76956fe
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: cb10ae5d3b4ce9f8aa777f643d412e075bd5293f
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66318365"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80737387"
 ---
-# <a name="debugrefinfoflags"></a>DEBUGREF_INFO_FLAGS
-Spécifie les informations à récupérer sur un objet de référence de débogage.
+# <a name="debugref_info_flags"></a>DEBUGREF_INFO_FLAGS
+Précise les informations à récupérer sur un objet de référence débogé.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -58,45 +58,45 @@ public enum enum_DEBUGREF_INFO_FLAGS {
 
 ## <a name="fields"></a>Champs
 `DEBUGREF_INFO_NAME`\
-Initialize/utiliser le `bstrName` champ dans la structure.
+Initialiser/utiliser `bstrName` le champ dans la structure.
 
 `DEBUGREF_INFO_TYPE`\
-Initialize/utiliser le `bstrType` champ dans la structure.
+Initialiser/utiliser `bstrType` le champ dans la structure.
 
 `DEBUGREF_INFO_VALUE`\
-Initialize/utiliser le `bstrValue` champ dans la structure.
+Initialiser/utiliser `bstrValue` le champ dans la structure.
 
 `DEBUGREF_INFO_ATTRIB`\
-Initialize/utiliser le `dwAttrib` champ dans la structure.
+Initialiser/utiliser `dwAttrib` le champ dans la structure.
 
 `DEBUGREF_INFO_REFTYPE`\
-Initialize/utiliser le `dwRefType` champ dans la structure.
+Initialiser/utiliser `dwRefType` le champ dans la structure.
 
 `DEBUGREF_INFO_REF`\
-Initialize/utiliser le `pReference` champ dans la structure.
+Initialiser/utiliser `pReference` le champ dans la structure.
 
 `DEBUGREF_INFO_VALUE_AUTOEXPAND`\
-Le champ de valeur doit contenir la valeur auto-développé, s’il est disponible pour ce type d’objet.
+Le champ de valeur doit contenir la valeur auto-élargie, si disponible, pour ce type d’objet.
 
 `DEBUGREF_INFO_NONE`\
-Indique qu’aucun indicateur est défini.
+Indique qu’aucun drapeau n’est fixé.
 
 `DEBUGREF_INFO_ALL`\
-Indique un masque des indicateurs.
+Indique un masque des drapeaux.
 
 ## <a name="remarks"></a>Notes
-Ces indicateurs sont passées à la [EnumChildren](../../../extensibility/debugger/reference/idebugreference2-enumchildren.md) et [GetReferenceInfo](../../../extensibility/debugger/reference/idebugreference2-getreferenceinfo.md) méthodes pour indiquer les champs de la [DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md) structure doivent être initialisées.
+Ces drapeaux sont transmis aux méthodes [EnumChildren](../../../extensibility/debugger/reference/idebugreference2-enumchildren.md) et [GetReferenceInfo](../../../extensibility/debugger/reference/idebugreference2-getreferenceinfo.md) pour indiquer quels champs de la structure [DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md) doivent être parasésés.
 
-Utilisé pour le `dwFields` membre de la `DEBUG_REFERENCE_INFO` structure pour indiquer quels champs sont utilisés et valide lors de la structure est retournée.
+Utilisé pour `dwFields` le `DEBUG_REFERENCE_INFO` membre de la structure pour indiquer quels champs sont utilisés et valides lorsque la structure est retournée.
 
-Ces valeurs peuvent être combinées avec un opérateur de bits `OR`.
+Ces valeurs peuvent être combinées avec un peu plus. `OR`
 
-## <a name="requirements"></a>Configuration requise
-En-tête : msdbg.h
+## <a name="requirements"></a>Spécifications
+En-tête: msdbg.h
 
-Espace de noms : Microsoft.VisualStudio.Debugger.Interop
+Namespace: Microsoft.VisualStudio.Debugger.Interop
 
-Assembly : Microsoft.VisualStudio.Debugger.Interop.dll
+Assemblage: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>Voir aussi
 - [Énumérations](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)

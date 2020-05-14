@@ -3,18 +3,19 @@ title: Définir les préférences des contrats dans le portail d’administratio
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 08/21/2019
+ms.assetid: 0fe9eaa4-f589-429e-a443-13bf86637d5a
+ms.date: 03/17/2020
 ms.topic: conceptual
 description: Découvrir comment définir les préférences pour la langue, les contacts, le niveau d’abonnement et d’autres éléments dans le portail d’administration
-ms.openlocfilehash: 24e9ddfa92ee63e4d15eea086224e1069d4bcbc8
-ms.sourcegitcommit: c90a998716b3dfa614dedc61a1bea515364efbec
-ms.translationtype: HT
+ms.openlocfilehash: cbcf532620e958ca408d43295d2d4200d12ee0cd
+ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/23/2019
-ms.locfileid: "70000979"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "79508756"
 ---
 # <a name="set-preferences-for-your-agreements-in-the-administration-portal"></a>Définir les préférences pour vos contrats dans le portail d’administration
-Les super administrateurs peuvent désormais définir certaines préférences dans le portail d’administration, qui seront appliquées globalement pour chaque contrat.  Ces préférences déterminent ce que les administrateurs peuvent définir sur vos contrats quand ils ajoutent des abonnés ; ces préférences peuvent être modifiées globalement seulement par des super administrateurs.  
+Les super admins peuvent définir certaines préférences dans le portail d’administration (portail d’administration) qui seront appliquées à l’échelle mondiale pour chaque accord.  Ces préférences rempliront automatiquement les détails d’abonnement pour vos administrateurs lorsqu’ils ajoutent des abonnés, et ne peuvent être modifiées globalement que par des super admins.  
 
 ## <a name="access-preferences"></a>Accéder aux préférences
 Vous devez être connecté au [portail d’administration](https://manage.visualstudio.com) avec un ID de connexion disposant de droits de super administrateur sur le contrat pour pouvoir consulter ou modifier les préférences.  
@@ -40,10 +41,10 @@ Si vous avez plusieurs contrats pour lesquels vous êtes super administrateur, v
 S’il n’existe qu’un seul contrat associé à l’adresse e-mail que vous avez utilisée pour vous connecter, il est affiché et la liste déroulante est désactivée. 
 
 ### <a name="contact-email-address"></a>Adresse e-mail de contact
-Ces préférences permettent à vos abonnés de contacter les administrateurs à l’aide du bouton **Contacter mon administrateur** dans la [page des abonnements](https://my.visualstudio.com/subscriptions) du portail des abonnés.  Si cette préférence est laissée vide, les messages de l’abonné sont transférés à tous les administrateurs et tous les super administrateurs du contrat.  Nous vous recommandons d’utiliser un alias d’e-mail de groupe ou un groupe de sécurité pour adapter votre audience à cet e-mail de contact. Si vous préférez, vous pouvez aussi choisir d’entrer l’adresse e-mail d’une personne.
+Cette préférence permet à vos abonnés de contacter les administrateurs grâce à l’utilisation du bouton **Contacter mon administrateur** sur la page [d’abonnements](https://my.visualstudio.com/subscriptions) du portail abonné.  Si cette préférence est laissée vide, les messages de l’abonné sont transférés à tous les administrateurs et tous les super administrateurs du contrat.  Nous vous recommandons d’utiliser un alias d’e-mail de groupe ou un groupe de sécurité pour adapter votre audience à cet e-mail de contact. Si vous préférez, vous pouvez aussi choisir d’entrer l’adresse e-mail d’une personne.
 
 > [!NOTE]
-> L’adresse e-mail que vous indiquez ici n’est PAS fournie aux abonnés.  Quand un abonné soumet une demande **Contacter mon administrateur** dans le portail des abonnés, le message est transféré à l’alias sans l’exposer aux abonnés. 
+> L’adresse e-mail que vous indiquez ici n’est PAS fournie aux abonnés.  Lorsqu’un abonné soumet une demande **de contact avec mon administrateur** dans le portail d’abonnés, le message est transmis au pseudonyme sans l’exposer à l’abonné. 
 
 ### <a name="default-external-subscribers-setting"></a>Paramètre des abonnés externes par défaut
 Cette préférence vous permet de décider si les administrateurs peuvent ajouter des abonnés extérieurs au locataire/annuaire de votre organisation.  Si vous désactivez cette option, aucun abonné externe n’est autorisé.  Si vous l’activez et qu’un administrateur tente d’ajouter un abonné externe, il est invité à confirmer son choix, puis est autorisé à attribuer l’abonnement. Les administrateurs ne peuvent pas remplacer ce paramètre. 
@@ -57,23 +58,34 @@ Vous pouvez utiliser ce paramètre pour déterminer quel niveau d’abonnement i
 ### <a name="default-communication-preferences"></a>Préférences de communication par défaut
 La définition de la langue et des paramètres régionaux de communication par défaut permet de simplifier le processus d’attribution des abonnements.  Par exemple, si votre équipe de développement est basée dans un pays différent de celui de votre équipe d’administration, vous pouvez définir les préférences les mieux adaptées à l’emplacement des abonnés. Ces paramètres peuvent néanmoins toujours être modifiés par tous les administrateurs pour des abonnés individuels. 
 
-## <a name="frequently-asked-questions"></a>FAQ
-### <a name="q--can-i-disable-the-contact-email-address-so-subscribers-cannot-contact-administrators"></a>Q :  Puis-je désactiver l’**Adresse e-mail de contact** afin que les abonnés ne puissent pas contacter les administrateurs ?
-R :  Non. Vous pouvez déterminer quels administrateurs sont contactés en utilisant un groupe de sécurité, un alias d’e-mail de groupe ou une adresse e-mail individuelle, mais la fonctionnalité ne peut pas être désactivée.
+## <a name="frequently-asked-questions"></a>Forum aux questions
+### <a name="q--can-i-disable-the-contact-email-address-so-subscribers-cannot-contact-administrators"></a>Q : Puis-je désactiver **l’adresse e-mail Contact** pour que les abonnés ne puissent pas communiquer avec les administrateurs ?
+R: Non - bien que vous puissiez déterminer quels administrateurs sont contactés à l’aide d’un groupe de sécurité, alias e-mail de groupe ou une adresse e-mail individuelle, la fonctionnalité ne peut pas être désactivée.
 
-### <a name="q-if-i-answer-a-subscribers-email-will-they-have-my-email-address"></a>Q : Si je réponds à l’e-mail d’un abonné, voit-il mon adresse e-mail ?
-R :  Comme votre réponse provient du client de messagerie que vous utilisez, la réponse que l’abonné reçoit montre l’adresse e-mail que vous utilisez.  Ainsi, si vous répondez depuis un alias de groupe, l’abonné voit l’alias de groupe.  Si vous répondez depuis votre propre adresse e-mail, il voit cette adresse.  
+### <a name="q-if-i-answer-a-subscribers-email-will-they-have-my-email-address"></a>Q: Si je réponds à l’e-mail d’un abonné, aura-t-il mon adresse e-mail?
+R : Étant donné que votre réponse proviendra de n’importe quel client de messagerie que vous utilisez, la réponse que reçoit l’abonné affichera toute adresse e-mail que vous utilisez.  Ainsi, si vous répondez depuis un alias de groupe, l’abonné voit l’alias de groupe.  Si vous répondez depuis votre propre adresse e-mail, il voit cette adresse.  
 
-### <a name="q-where-can-i-find-out-more-about-the-contact-my-admin-feature-in-the-subscriber-portal"></a>Q : Où puis-je trouver plus d’informations sur la fonctionnalité **Contacter mon administrateur** dans le portail des abonnés ?
-R :  Consultez notre article [Contacter mon administrateur](contact-my-admin.md). 
+### <a name="q-where-can-i-find-out-more-about-the-contact-my-admin-feature-in-the-subscriber-portal"></a>Q : Où puis-je en savoir plus sur la fonction **Contact my Admin** dans le portail abonné ?
+R: Consultez notre [article Contact my Admin.](contact-my-admin.md) 
 
-### <a name="q-if-we-dont-complete-the-contact-email-address-and-a-subscriber-uses-the-contact-my-admin-feature-who-receives-their-request"></a>Q : Si nous ne renseignons pas l’**Adresse e-mail de contact** et qu’un abonné utilise la fonctionnalité **Contacter mon administrateur**, qui reçoit sa demande ?
-R :  Si aucune adresse e-mail spécifique n’est définie dans la préférence **Adresse e-mail de contact**, tous les administrateurs du contrat reçoivent la demande. 
+### <a name="q-if-we-dont-complete-the-contact-email-address-and-a-subscriber-uses-the-contact-my-admin-feature-who-receives-their-request"></a>Q : Si nous ne remplissons pas **l’adresse e-mail Contact** et qu’un abonné utilise la fonction **Contact my Admin,** qui reçoit sa demande ?
+R : Si aucune adresse e-mail spécifique n’est définie dans la préférence **de l’adresse e-mail Contact,** tous les administrateurs de l’accord recevront la demande. 
 
 ## <a name="resources"></a>Ressources
-- [Prise en charge des abonnements et de l’administration de Visual Studio](https://visualstudio.microsoft.com/support/support-overview-vs)
+- [Prise en charge des abonnements et de l’administration Visual Studio](https://visualstudio.microsoft.com/support/support-overview-vs)
+
+## <a name="see-also"></a>Voir aussi
+- [Documentation Visual Studio](https://docs.microsoft.com/visualstudio/)
+- [Documentation Azure DevOps](https://docs.microsoft.com/azure/devops/)
+- [Documentation Azure](https://docs.microsoft.com/azure/)
+- [Documentation Microsoft 365](https://docs.microsoft.com/microsoft-365/)
 
 ## <a name="next-steps"></a>Étapes suivantes
-- Découvrir comment [attribuer des abonnements](assign-license.md)
-- Découvrir plus d’informations sur la gamme complète des [avantages des abonnements](https://visualstudio.microsoft.com/vs/benefits/)
+En savoir plus sur la gestion des abonnements Visual Studio.
+- [Attribuer des abonnements individuels](assign-license.md)
+- [Attribuer plusieurs abonnements](assign-license-bulk.md)
+- [Modifier des abonnements](edit-license.md)
+- [Déterminer l’utilisation maximale](maximum-usage.md)
+
+
 

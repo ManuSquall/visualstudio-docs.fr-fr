@@ -11,15 +11,15 @@ manager: crdun
 ms.workload:
 - unity
 ms.openlocfilehash: c22b9c25f95ea26f2cdaf5c2035fb7a373123241
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62824780"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79302272"
 ---
 # <a name="get-started-with-visual-studio-tools-for-unity"></a>Bien démarrer avec Outils Visual Studio pour Unity
 
-## <a name="install-visual-studio"></a>Installer Visual Studio
+## <a name="install-visual-studio"></a>Installation de Visual Studio
 
 ### <a name="unity-bundled-installation"></a>Installation collective de Unity
 
@@ -41,7 +41,7 @@ Lors de l’installation, vérifiez que Visual Studio est coché dans la liste d
 
 La version de Visual Studio fournie avec l’installation de Unity n’est pas toujours la plus récente. Nous vous recommandons de rechercher les mises à jour pour être sûr d’avoir accès aux tout derniers outils et fonctionnalités.
 
-- [Mettre à jour Visual Studio](../install/update-visual-studio.md)
+- [Mettre à jour Visual Studio 2017](../install/update-visual-studio.md)
 
 ### <a name="manual-installation"></a>Installation manuelle
 
@@ -71,7 +71,7 @@ Si Visual Studio 2017 est déjà installé ou si vous préférez l’installer 
 
    ![Sélectionner Visual Studio](media/vstu_unity-external-tools.png)
 
-4. Si **Parcourir…** a été sélectionné, accédez au répertoire **Common7/IDE** à l’intérieur de votre répertoire d’installation de Visual Studio, puis sélectionnez **devenv.exe**. Ensuite, cliquez sur **Ouvrir**.
+4. Si **Parcourir…** a été sélectionné, accédez au répertoire **Common7/IDE** à l’intérieur de votre répertoire d’installation de Visual Studio, puis sélectionnez **devenv.exe**. Cliquez ensuite sur **Ouvrir**.
 
    ![Sélectionner Ouvrir](media/vstu_browse-for-application.png)
 

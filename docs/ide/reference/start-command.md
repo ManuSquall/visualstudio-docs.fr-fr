@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: f6138c4cff33f0b2a4211439a01a058da59da811
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75590278"
 ---
 # <a name="start-command"></a>Démarrer, commande
@@ -32,12 +32,12 @@ Debug.Start [address]
 ## <a name="arguments"></a>Arguments
 `address`
 
-Option facultative. Adresse à laquelle le programme suspend son exécution, semblable à un point d’arrêt dans le code source. Cet argument est valide uniquement en mode débogage.
+facultatif. Adresse à laquelle le programme suspend son exécution, semblable à un point d’arrêt dans le code source. Cet argument est valide uniquement en mode débogage.
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Notes 
 Quand elle est exécutée, la commande **Start** effectue une opération RunToCursor vers l’adresse spécifiée.
 
-## <a name="example"></a>Exemple
+## <a name="example"></a> Exemple
 Cet exemple démarre le débogueur et ignore toute exception qui peut se produire.
 
 ```cmd
@@ -46,7 +46,7 @@ Cet exemple démarre le débogueur et ignore toute exception qui peut se produir
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Visual Studio, commandes](../../ide/reference/visual-studio-commands.md)
-- [Fenêtre Commande](../../ide/reference/command-window.md)
-- [Rechercher/Commande, zone](../../ide/find-command-box.md)
-- [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)
+- [Commandes de studio visuel](../../ide/reference/visual-studio-commands.md)
+- [Commande, fenêtre](../../ide/reference/command-window.md)
+- [Boîte de recherche/commande](../../ide/find-command-box.md)
+- [Alias de commande de studio visuel](../../ide/reference/visual-studio-command-aliases.md)

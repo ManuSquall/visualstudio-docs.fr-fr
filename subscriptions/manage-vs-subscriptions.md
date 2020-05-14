@@ -3,15 +3,16 @@ title: Gérer les abonnements Visual Studio
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 07/17/2019
+ms.assetid: 196c6d04-9a33-47d5-b0f1-038e7c3a7ac9
+ms.date: 03/09/2020
 ms.topic: conceptual
 description: Découvrez comment tirer le meilleur parti de vos abonnements Visual Studio.
-ms.openlocfilehash: a8a58cd3fca2443ca84db712cbd2a356351d4499
-ms.sourcegitcommit: 49ebf69986713e440fd138fb949f1c0f47223f23
+ms.openlocfilehash: 7d883092372d58f4a5bcc787daed0a99124a1704
+ms.sourcegitcommit: 7b60e81414a82c6d34f6de1a1f56115c9cd26943
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74706968"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81444871"
 ---
 # <a name="managing-subscriptions"></a>Gestion des abonnements
 
@@ -51,7 +52,6 @@ Dans la page Avantages, l’abonnement actif est affiché en surbrillance dans l
 **Abonnements achetés via des programmes :** si vous obtenez votre abonnement via un programme, votre abonnement est lié à votre participation au programme. Vous pouvez obtenir plus d’informations auprès des contacts désignés pour les différents programmes.
 
 - [Imagine](https://imagine.microsoft.com/about)
-- [BizSpark](https://bizspark.microsoft.com/About/Offers)
 - [Microsoft Partner Network](https://partner.microsoft.com)
 - [Microsoft Certified Trainer](https://www.microsoft.com/learning/mct-certification.aspx)
 
@@ -70,7 +70,7 @@ Vous pouvez facilement modifier les informations de contact et les préférences
 
 1. Cliquez sur votre nom dans le coin supérieur droit du portail de l’abonné.
 2. Cliquez sur le bouton **Modifier le profil**.
-3. Sous l’onglet **À propos de**, vous pouvez modifier votre nom, votre adresse e-mail, votre pays/région, votre image de profil et vos préférences de contact. Sous l’onglet **Préférences**, vous pouvez sélectionner la langue par défaut, le modèle de date et d’heure, le fuseau horaire et le thème de l’interface utilisateur.
+3. Sous l’onglet **À propos de**, vous pouvez modifier votre nom, votre adresse e-mail, votre pays/région, votre image de profil et vos préférences de contact. Sur l’onglet Préférences, vous pouvez sélectionner votre langue, vos habitudes de date et d’heure **préférées,** votre fuseau horaire et votre thème d’interface utilisateur.
 4. Quand vous avez effectué toutes les modifications souhaitées, cliquez sur **Enregistrer**.
 5. Cliquez sur le bouton **Précédent** dans votre navigateur pour revenir à la page Avantages.
 
@@ -99,16 +99,30 @@ Une fois que vous avez ajouté un autre compte, vous pouvez le mettre à jour ou
 ### <a name="q-if-i-do-not-renew-my-subscription-how-long-will-microsoft-keep-my-data"></a>Q : Si je ne renouvelle pas mon abonnement, combien de temps Microsoft conserve mes données ?
 R : En fonction du canal d’achat, Microsoft conserve les données des clients pendant une durée définie.
 
-| Canal                                                | Durée (jours) |
+| Channel                                                | Durée (jours) |
 |--------------------------------------------------------|-----------------|
 |    Vente au détail (par exemple, via le Microsoft Store)               |    360          |
 |    Centre de gestion des licences en volume (VLSC)              |    180          |
 |    MPSA (Microsoft Products and Services Agreement)    |    180          |
 |    Abonnements cloud à Visual Studio                   |    180          |
-|    Programme (par exemple, MCT, BizSpark, MPN, Imagine)          |    180          |
+|    Programme (p. ex. MCT, MPN, Imagine)          |    180          |
 |    Revente interdite (par exemple, MVP, MSP)                      |    180          |
 |    DevEssentials                                       |    30           |
 
 > [!NOTE]
 > - Si vous choisissez de fermer votre compte Microsoft ou Azure AD, vos données personnelles deviennent immédiatement anonymes.
 > - Nous ne supprimons pas entièrement toutes vos données personnelles si vous avez des abonnements actifs.
+
+## <a name="see-also"></a>Voir aussi
+- [Documentation Visual Studio](https://docs.microsoft.com/visualstudio/)
+- [Documentation Azure DevOps](https://docs.microsoft.com/azure/devops/)
+- [Documentation Azure](https://docs.microsoft.com/azure/)
+- [Documentation Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+
+## <a name="next-steps"></a>Étapes suivantes
+Gérez-vous les abonnements pour votre organisation ?  En savoir plus sur la gestion des abonnements Visual Studio :
+- [Attribuer des abonnements individuels](assign-license.md)
+- [Attribuer plusieurs abonnements](assign-license-bulk.md)
+- [Modifier des abonnements](edit-license.md)
+- [Supprimer des abonnements](delete-license.md)
+- [Déterminer l’utilisation maximale](maximum-usage.md)

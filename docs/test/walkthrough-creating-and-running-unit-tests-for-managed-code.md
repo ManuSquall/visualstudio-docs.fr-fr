@@ -13,16 +13,18 @@ manager: jillfra
 ms.workload:
 - dotnet
 author: mikejo5000
-ms.openlocfilehash: b1ec115dd960799a1242a0d60bd793d671facb18
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: b68cb720a636483a0c5e8c3193142d95dbb0afcd
+ms.sourcegitcommit: 316dd2182dd56b0cbde49f0cd82e9f75baa2530f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75590707"
+ms.lasthandoff: 04/12/2020
+ms.locfileid: "81223669"
 ---
-# <a name="walkthrough-create-and-run-unit-tests-for-managed-code"></a>Procédure pas à pas : créer et exécuter des tests unitaires pour le code managé
+# <a name="walkthrough-create-and-run-unit-tests-for-managed-code"></a>Procédure pas à pas : Créer et exécuter des tests unitaires pour le code managé
 
 Cet article décrit la création, l’exécution et la personnalisation d’une série de tests unitaires à l’aide du framework de tests unitaires Microsoft pour le code managé et de **l’explorateur de tests** de Visual Studio. Vous commencez avec un projet C# qui est en développement, vous créez des tests qui utilisent son code, vous exécutez les tests et vous examinez les résultats. Vous modifiez ensuite le code de projet et réexécutez les tests.
+
+
 
 ## <a name="create-a-project-to-test"></a>Créer un projet de test
 
@@ -30,11 +32,11 @@ Cet article décrit la création, l’exécution et la personnalisation d’une 
 
 1. Ouvrez Visual Studio.
 
-2. Dans le menu **fichier** , sélectionnez **nouveau** > **projet**.
+2. Au menu **du Fichier,** sélectionnez **Nouveau** > **Projet**.
 
-   La boîte de dialogue **Nouveau projet** s’affiche.
+   La boîte de dialogue **Nouveau projet** s'affiche.
 
-3. Sous la **catégorie C# Visual** > **.net Core** , choisissez le modèle de projet **application console (.net Core)** .
+3. Sous la catégorie **Visual C#** > **.NET Core**, choisissez le modèle de projet **Application console (.NET Core)**.
 
 4. Nommez le projet **Bank**, puis cliquez sur **OK**.
 
@@ -49,7 +51,7 @@ Cet article décrit la création, l’exécution et la personnalisation d’une 
 
 1. Ouvrez Visual Studio.
 
-2. Dans la fenêtre de démarrage, choisissez **Créer un projet**.
+2. Sur la fenêtre de départ, choisissez **Créer un nouveau projet**.
 
 3. Recherchez et sélectionnez le modèle de projet **Application console (.NET Core)** C#, puis cliquez sur **Suivant**.
 
@@ -134,7 +136,7 @@ Cet article décrit la création, l’exécution et la personnalisation d’une 
 
 6. Renommez le fichier *BankAccount.cs* en effectuant un clic droit et en choisissant **Renommer** dans l’**Explorateur de solutions**.
 
-7. Dans le menu **Générer** , cliquez sur **Générer la solution**.
+7. Dans le menu **Générer**, cliquez sur **Générer la solution**.
 
 Vous disposez maintenant d’un projet avec des méthodes que vous pouvez tester. Dans cet article, les tests se limitent à la méthode `Debit`. La méthode `Debit` est appelée quand de l’argent est retiré sur un compte.
 
@@ -147,9 +149,9 @@ Vous disposez maintenant d’un projet avec des méthodes que vous pouvez tester
 
 ::: moniker range="vs-2017"
 
-2. Dans la boîte de dialogue **Nouveau projet**, développez **Installé**, développez **Visual C#** , puis choisissez **Test**.
+2. Dans la boîte de dialogue **new Project,** étendre **Installé**, étendre Visual **C ,** puis choisir **Test**.
 
-3. Dans la liste des modèles, sélectionnez **Projet de test MSTest (.NET Core)** .
+3. Dans la liste des modèles, sélectionnez **Projet de test MSTest (.NET Core)**.
 
 4. Dans la zone **Nom**, entrez `BankTests`, puis sélectionnez **OK**.
 
@@ -175,7 +177,7 @@ Vous disposez maintenant d’un projet avec des méthodes que vous pouvez tester
 
 6. Dans la boîte de dialogue **Gestionnaire de références**, développez **Projets**, sélectionnez **Solution**, puis cochez l’élément **Bank**.
 
-7. Cliquez sur **OK**.
+7. Choisissez **OK**.
 
 ## <a name="create-the-test-class"></a>Créer la classe de test
 
@@ -217,7 +219,7 @@ namespace BankTests
 
 ### <a name="add-a-using-statement"></a>Ajoutez une instruction using
 
-Ajoutez une [`using`instruction](/dotnet/csharp/language-reference/keywords/using-statement)  à la classe de test pour pouvoir appeler le projet testé sans utiliser de noms complets. En haut du fichier de classe, ajoutez :
+Ajoutez [ `using` ](/dotnet/csharp/language-reference/keywords/using-statement) une déclaration à la classe de test pour pouvoir faire appel au projet à l’essai sans utiliser de noms entièrement qualifiés. En haut du fichier de classe, ajoutez :
 
 ```csharp
 using BankAccountNS;
@@ -295,7 +297,7 @@ Une méthode de test doit répondre aux spécifications suivantes :
 
    Dans ce cas, le test échoue.
 
-4. Sélectionnez la méthode dans **l’explorateur de tests** pour en afficher les détails en bas de la fenêtre.
+4. Sélectionnez la méthode dans **Test Explorer** pour afficher les détails au bas de la fenêtre.
 
 ## <a name="fix-your-code-and-rerun-your-tests"></a>Vérifier votre code et exécuter à nouveau vos tests
 
@@ -311,7 +313,7 @@ Pour corriger l’erreur, dans le fichier *BankAccount.cs*, remplacez la ligne 
 m_balance += amount;
 ```
 
-Par :
+par :
 
 ```csharp
 m_balance -= amount;
@@ -319,7 +321,7 @@ m_balance -= amount;
 
 ### <a name="rerun-the-test"></a>Réexécuter le test
 
-Dans **l’Explorateur de tests**, choisissez **Exécuter tout** pour réexécuter le test. La barre rouge/verte devient verte pour indiquer que le test a réussi.
+Dans **Test Explorer**, choisissez Run **All** pour réexécuter le test. La barre rouge/verte devient verte pour indiquer que le test a réussi.
 
 ![Explorateur de tests dans Visual Studio 2019 indiquant la réussite du test](media/test-explorer-banktests-passed.png)
 
@@ -429,7 +431,7 @@ public void Debit_WhenAmountIsMoreThanBalance_ShouldThrowArgumentOutOfRange()
 
 ### <a name="retest-rewrite-and-reanalyze"></a>Retester, réécrire et réanalyser
 
-Supposez qu’il y a un bogue dans la méthode testée et que la méthode `Debit` ne lève même pas d’exception <xref:System.ArgumentOutOfRangeException> et ne génère pas non plus le bon message avec l’exception. Actuellement, la méthode de test ne gère pas ce cas. Si la valeur `debitAmount` est valide (autrement dit, inférieure au solde et supérieure à zéro), aucune exception n’est interceptée, donc l’assertion ne se déclenche jamais. Pourtant, la méthode de test réussit. Cela ne convient pas, car vous souhaitez que la méthode de test échoue si aucune exception n’est levée.
+Actuellement, la méthode de test ne gère pas tous les cas qu’il devrait. Si la méthode à `Debit` l’essai, <xref:System.ArgumentOutOfRangeException> la `debitAmount` méthode, n’a pas lancé un quand le était plus grand que l’équilibre (ou moins de zéro), la méthode de test passerait. Cela ne convient pas, car vous souhaitez que la méthode de test échoue si aucune exception n’est levée.
 
 Il s’agit d’un bogue dans la méthode de test. Pour résoudre le problème, ajoutez une assertion <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.Fail%2A> à la fin de la méthode de test pour gérer le cas où aucune exception n’est levée.
 

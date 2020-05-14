@@ -12,10 +12,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: f6449ad30edf11d3d315532cc33db2a79c14f90b
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74778529"
 ---
 # <a name="modules-view---instrumentation-data"></a>Modules, vue - données d’instrumentation
@@ -26,12 +26,12 @@ La vue Modules affiche les données de performances regroupées selon les module
 
 |Colonne|Description|
 |------------|-----------------|
-|**Nom**|Nom de la fonction ou du module.|
+|**Nom   **|Nom de la fonction ou du module.|
 |**Numéro de ligne de fonction**|Numéro de ligne du début de cette fonction dans le fichier source.|
 |**Nombre d’appels**|Nombre total d’appels effectués à cette fonction ou à ce module.|
 |**Fichier source**|Fichier source contenant la définition pour cette fonction.|
-|**Nom de module**|Nom du module qui contient la fonction.|
-|**Chemin de module**|Chemin d’accès du module qui contient la fonction.|
+|**Nom du module**|Nom du module qui contient la fonction.|
+|**Chemin du module**|Chemin d’accès du module qui contient la fonction.|
 |**ID du processus**|ID du processus (PID) de l'exécution du profilage.|
 |**Nom du processus**|Nom du processus dans lequel le module ou la fonction s’exécutait.|
 |**Traitement de sondes du temps exclusif**|Surcharge de temps pour cette fonction ou ce module en raison de l’instrumentation.|
@@ -71,7 +71,7 @@ La vue Modules affiche les données de performances regroupées selon les module
 |**Temps inclusif d’application min.**|-   Pour une fonction, temps inclusif d’application minimal d’un appel à ce module ou à cette fonction.<br />-   Pour un module, temps inclusif d’application minimal de tous les appels aux fonctions du module.|
 
 ## <a name="application-exclusive-values"></a>Valeurs de temps exclusif d’application
- Les valeurs de temps exclusif d’application indiquent le temps passé dans le module ou la fonction. Ces valeurs n’incluent ni le temps passé dans les fonctions enfants, ni le temps consacré aux appels émis vers le système d’exploitation, comme dans le cas de changements de contexte ou d’opérations d’E/S.
+ Les valeurs de temps exclusif d’application indiquent le temps passé dans le module ou la fonction. Ces valeurs n’incluent ni le temps passé dans les fonctions enfants, ni le temps consacré aux appels au système d’exploitation, comme dans le cas de changements de contexte ou d’opérations d’E/S.
 
 |Colonne|Description|
 |------------|-----------------|
@@ -83,5 +83,5 @@ La vue Modules affiche les données de performances regroupées selon les module
 
 ## <a name="see-also"></a>Voir aussi
 - [Vue Modules](../profiling/modules-view-sampling-data.md)
-- [Vue des modules - Instrumentation](../profiling/modules-view-dotnet-memory-instrumentation-data.md)
-- [Modules, vue - échantillonnage](../profiling/modules-view-dotnet-memory-sampling-data.md)
+- [Modules Vue - instrumentation](../profiling/modules-view-dotnet-memory-instrumentation-data.md)
+- [Modules Vue - échantillonnage](../profiling/modules-view-dotnet-memory-sampling-data.md)

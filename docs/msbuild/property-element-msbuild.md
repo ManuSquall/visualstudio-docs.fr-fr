@@ -16,15 +16,16 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 99970bfbc955fe972d5e3c9a4e38ae6f57e0e0bf
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: e50a6dd66c2dca7fa4159c578ccd334ed1d26cae
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75597423"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "77632951"
 ---
 # <a name="property-element-msbuild"></a>Élément Property (MSBuild)
-Contient une valeur et un nom de propriété définis par l’utilisateur. Chaque propriété utilisée dans un projet [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] doit être spécifiée en tant qu’enfant d’un élément `PropertyGroup`.
+
+Contient une valeur et un nom de propriété définis par l’utilisateur. Chaque propriété utilisée dans un projet MSBuild doit `PropertyGroup` être spécifiée comme un enfant d’un élément.
 
  \<Project> \<PropertyGroup>
 
@@ -37,15 +38,17 @@ Contient une valeur et un nom de propriété définis par l’utilisateur. Chaqu
 ```
 
 ## <a name="attributes-and-elements"></a>Attributs et éléments
+
  Les sections suivantes décrivent des attributs, des éléments enfants et des éléments parents.
 
 ### <a name="attributes"></a>Attributs
 
-|Attribute|Description|
+|Attribut|Description|
 |---------------|-----------------|
 |`Condition`|Attribut facultatif.<br /><br /> Condition à évaluer. Pour plus d’informations, consultez l’article [Conditions (Conditions MSBuild)](../msbuild/msbuild-conditions.md).|
 
 ### <a name="child-elements"></a>Éléments enfants
+
  Aucun.
 
 ### <a name="parent-elements"></a>Éléments parents
@@ -55,14 +58,17 @@ Contient une valeur et un nom de propriété définis par l’utilisateur. Chaqu
 |[PropertyGroup](../msbuild/propertygroup-element-msbuild.md)|Élément grouping pour des propriétés.|
 
 ## <a name="text-value"></a>Valeur texte
+
  Une valeur texte est facultative.
 
  Ce texte spécifie la valeur de propriété et peut contenir du code XML.
 
-## <a name="remarks"></a>Notes
- Les noms de propriétés sont limités uniquement aux caractères ASCII. Les valeurs de propriété sont référencées dans le projet en plaçant le nom de propriété entre « `$(` » et « `)` ». Par exemple, `$(builddir)\classes` serait résolu en *build\classes* si la propriété `builddir` avait la valeur `build`. Pour plus d’informations sur les propriétés, voir [Propriétés MSBuild](../msbuild/msbuild-properties.md).
+## <a name="remarks"></a>Notes 
 
-## <a name="example"></a>Exemple
+ Les noms de propriétés sont limités uniquement aux caractères ASCII. Les valeurs de propriété sont référencées dans le projet en plaçant le nom de propriété entre « `$(` » et « `)` ». Par exemple, `$(builddir)\classes` serait résolu à construire `builddir` des *classes*, si la propriété avait la valeur `build`. Pour plus d’informations sur les propriétés, voir [propriétés MSBuild](../msbuild/msbuild-properties.md).
+
+## <a name="example"></a> Exemple
+
  Le code suivant définit la propriété `Optimization` sur `false` et la propriété `DefaultVersion` sur `1.0` si la propriété `Version` est vide.
 
 ```xml
@@ -73,5 +79,6 @@ Contient une valeur et un nom de propriété définis par l’utilisateur. Chaqu
 ```
 
 ## <a name="see-also"></a>Voir aussi
+
 - [Propriétés MSBuild](../msbuild/msbuild-properties.md)
-- [Informations de référence sur le schéma de fichier projet](../msbuild/msbuild-project-file-schema-reference.md)
+- [Référence du schéma de fichier de projet](../msbuild/msbuild-project-file-schema-reference.md)

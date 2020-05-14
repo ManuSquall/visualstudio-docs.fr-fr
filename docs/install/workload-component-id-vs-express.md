@@ -16,12 +16,13 @@ ms.assetid: a3c0cc76-e3ce-435c-a1af-a6318b5a4dbe
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 monikerRange: vs-2017
-ms.openlocfilehash: 3db18da6e09b3206d81f5600d54700f912a411e8
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+open_to_public_contributors: false
+ms.openlocfilehash: 1e24f90f24921bee9a6132ccc047c0b9da37fc90
+ms.sourcegitcommit: 22deb247ad951e4971f27fdab413b158415d0584
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/16/2020
-ms.locfileid: "76113903"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81276290"
 ---
 # <a name="visual-studio-desktop-express-component-directory"></a>Répertoire des composants Visual Studio Desktop Express
 
@@ -46,10 +47,10 @@ Pour plus d’informations sur l’utilisation de ces ID, consultez la page [Uti
 
 ### <a name="components-included-by-this-workload"></a>Composants inclus par cette charge de travail
 
-ID de composant | Name | Version | Type de dépendance
+ID de composant | Nom | Version | Type de dépendance
 --- | --- | --- | ---
 Microsoft.Component.ClickOnce | Publication ClickOnce | 15.8.27825.0 | Obligatoire
-Microsoft.Component.HelpViewer | Visionneuse d'aide | 15.6.27323.2 | Obligatoire
+Microsoft.Component.HelpViewer | Visionneuse de l’aide | 15.6.27323.2 | Obligatoire
 Microsoft.Component.MSBuild | MSBuild | 15.7.27520.0 | Obligatoire
 Microsoft.Component.VC.Runtime.OSSupport | Runtime Visual C++ pour UWP | 15.6.27406.0 | Obligatoire
 Microsoft.Net.Component.4.5.1.TargetingPack | Pack de ciblage .NET Framework 4.5.1 | 15.6.27406.0 | Obligatoire
@@ -87,9 +88,9 @@ Microsoft.VisualStudio.Component.Windows10SDK.17134 | SDK Windows 10 (10.0.17134
 
 Il s’agit de composants qui ne sont inclus dans aucune charge de travail, mais qui peuvent être sélectionnés de manière individuelle.
 
-ID de composant | Name | Version
+ID de composant | Nom | Version
 --- | --- | ---
-N/A | N/A | N/A
+n/a | n/a | n/a
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 

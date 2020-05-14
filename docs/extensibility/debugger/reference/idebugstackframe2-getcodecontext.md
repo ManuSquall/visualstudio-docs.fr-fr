@@ -1,5 +1,5 @@
 ---
-title: IDebugStackFrame2::GetCodeContext | Microsoft Docs
+title: IDebugStackFrame2::GetCodeContext Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugStackFrame2::GetCodeContext
 ms.assetid: 93d66159-a41d-49ef-982f-91bb4d073b74
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 9a9013435f0793361ddcc1759a14f39ec87655e3
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: e14826e9c01e6cb8e9eba6ce2adf8686ad8b2f91
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66321911"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80719876"
 ---
 # <a name="idebugstackframe2getcodecontext"></a>IDebugStackFrame2::GetCodeContext
-Obtient le contexte de code pour ce frame de pile.
+Obtient le contexte de code pour ce cadre de pile.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -41,10 +41,10 @@ int GetCodeContext ( 
 
 ## <a name="parameters"></a>Paramètres
 `ppCodeCxt`\
-[out] Retourne un [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) objet qui représente le pointeur d’instruction en cours dans ce frame de pile.
+[out] Retourne un objet [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) qui représente le pointeur d’instruction actuel dans ce cadre de pile.
 
 ## <a name="return-value"></a>Valeur de retour
- En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.
+ En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
 ## <a name="see-also"></a>Voir aussi
 - [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md)

@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 281a0c43c0163d158151683e9fdc483dfc1709f5
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75567214"
 ---
 # <a name="customize-startup"></a>Personnaliser le démarrage
@@ -32,7 +32,7 @@ Vous pouvez également afficher une page de démarrage personnalisée, qui est u
 
 ## <a name="to-change-the-startup-item"></a>Pour modifier l’élément de démarrage
 
-1. Dans la barre de menus, choisissez **Outils** > **Options**.
+1. Sur la barre de menu, choisissez **Tools** > **Options**.
 
 2. Développez **Environnement**, puis choisissez **Démarrage**.
 
@@ -58,7 +58,7 @@ Pour installer une page de démarrage personnalisée, ouvrez le fichier *.vsix*,
 
 ### <a name="to-select-which-custom-start-page-to-display"></a>Pour sélectionner la page de démarrage personnalisée à afficher
 
-1. Dans la barre de menus, choisissez **outils** > **options**.
+1. Dans la barre de menus, choisissez **Outils** > **Options**.
 
 1. Développez **Environnement**, puis choisissez **Démarrage**.
 

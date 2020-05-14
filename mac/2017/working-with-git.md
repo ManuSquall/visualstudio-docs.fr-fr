@@ -7,15 +7,15 @@ ms.date: 05/06/2018
 ms.assetid: 852B6A9D-AEFA-4EF4-A5DD-94A506019D20
 ms.custom: video
 ms.openlocfilehash: 33148c5202251525504864f26177da4497b5fabe
-ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/10/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "74983567"
 ---
 # <a name="working-with-git"></a>Utilisation de Git
 
-GiT est un système de gestion de versions distribué qui permet aux équipes de travailler simultanément sur les mêmes documents. Cela signifie qu’il existe un seul serveur contenant tous les fichiers, mais que quand un dépôt est extrait de cette source centrale, l’intégralité du dépôt est clonée sur la machine locale.
+Git est un système de gestion de versions distribué qui permet aux équipes de travailler simultanément sur les mêmes documents. Cela signifie qu’il existe un seul serveur contenant tous les fichiers, mais que quand un dépôt est extrait de cette source centrale, l’intégralité du dépôt est clonée sur la machine locale.
 
 Dans les sections ci-dessous, nous allons examiner comment Git peut être utilisé pour la gestion de version dans Visual Studio pour Mac.
 
@@ -91,7 +91,7 @@ Examinez toutes les modifications d’un projet en accédant à l’élément de
 
 Ce menu permet d’afficher toutes les modifications de chaque fichier d’un projet avec les options Restaurer, Créer un correctif ou Valider.
 
-Pour valider un fichier dans le dépôt distant, appuyez sur **Valider**, entrez un message de validation, puis confirmez avec le bouton Valider :
+Pour valider un fichier au référentiel à distance, appuyez sur **Commit,** entrez un message de validation et confirmez avec le bouton Commit :
 
 ![Validation d’un fichier](media/version-control-gitCommit.png)
 

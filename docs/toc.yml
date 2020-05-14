@@ -329,8 +329,12 @@
                   href: ide/reference/generate-constructor.md
                 - name: Générer un déconstructeur
                   href: ide/reference/generate-deconstructor.md
+                - name: Ajouter un cast explicite
+                  href: ide/reference/add-explicit-cast.md
                 - name: Ajouter un paramètre à une méthode
                   href: ide/reference/add-parameter.md
+                - name: Générer un paramètre
+                  href: ide/reference/generate-parameter.md
                 - name: Générer un champ privé à partir d’un constructeur
                   href: ide/reference/generate-private-field-from-constructor.md
                 - name: Générer le remplacement
@@ -350,12 +354,16 @@
                 - name: Vue d'ensemble
                   displayName: refactoring
                   href: ide/refactoring-in-visual-studio.md
+                - name: Ajouter des contrôles de valeurs Null pour tous les paramètres
+                  href: ide\reference\add-null-checks-for-parameters.md
                 - name: Changer la signature de la méthode
                   href: ide/reference/change-method-signature.md
                 - name: Conversion de type anonyme en classe
                   href: ide/reference/convert-anonymous-type-to-class.md
                 - name: Conversion de type anonyme en tuple
                   href: ide/reference/convert-anonymous-type-to-tuple.md
+                - name: Conversion entre la propriété auto et la propriété full
+                  href: ide/reference/convert-between-auto-property-and-full-property.md
                 - name: Convertir une boucle for en instruction foreach et vice versa
                   href: ide/reference/convert-for-loop-to-foreach.md
                 - name: Convertir une méthode Get en propriété et vice versa
@@ -378,8 +386,6 @@
                   href: ide/reference/extract-method.md
                 - name: Extraire la fonction locale
                   href: ide/reference/extract-local-function.md
-                - name: Générer un paramètre
-                  href: ide/reference/generate-parameter.md
                 - name: Variable temporaire inline
                   href: ide/reference/inline-temporary-variable.md
                 - name: Autocomplétion IntelliSense pour les types non importés
@@ -866,7 +872,7 @@
   href: deployment/index.yml
 - name: Étendre Visual Studio >>
   displayName: Visual Studio SDK
-  href: extensibility/visual-studio-sdk.md
+  href: extensibility/index.yml
 - name: Analyser et modéliser l’architecture >>
   href: modeling/analyze-and-model-your-architecture.md
 - name: Personnaliser Visual Studio
@@ -1329,6 +1335,8 @@
           href: ide/user-permissions-and-visual-studio.md
         - name: Protection des informations Windows (WIP)
           href: ide/exempt-visual-studio-from-wip.md
+        - name: FIPS (Federal Information Processing Standard)
+          href: ide/fips-support-visual-studio.md
     - name: Entrée linguistique bidirectionnelle
       href: ide/use-bidirectional-languages.md
     - name: Microsoft Help Viewer

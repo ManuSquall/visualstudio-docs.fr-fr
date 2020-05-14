@@ -8,10 +8,10 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: 6720421fd5188688214665d85de682542b1c1357
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75595863"
 ---
 # <a name="add-a-parameter-to-a-method-using-a-quick-action"></a>Ajouter un paramètre à une méthode avec une Action rapide
@@ -20,7 +20,7 @@ Cette génération de code s’applique à :
 
 - C#
 
-- Visual Basic
+- Visual Basic
 
 **Quoi :** permet d’ajouter automatiquement un paramètre à une méthode, selon l’utilisation.
 
@@ -28,18 +28,18 @@ Cette génération de code s’applique à :
 
 **Pourquoi :** vous pourriez ajouter le paramètre à la déclaration de méthode avant de l’appeler, mais cette fonctionnalité l’ajoute automatiquement sur la base d’un appel de méthode.
 
-## <a name="how-to-use-it"></a>Utilisation
+## <a name="how-to-use-it"></a>Comment l’utiliser ?
 
 1. Ajoutez un argument supplémentaire à un appel de méthode.
 
-   Un tilde rouge apparaît sous le nom de la méthode où vous l’appelez.
+   Un calmar rouge apparaît sous le nom de la méthode où vous l’appelez.
 
-2. Placez le pointeur sur le tilde rouge jusqu’à ce que le menu actions rapides s’affiche. Cliquez sur la **flèche vers le bas** dans le menu Actions rapides, puis sélectionnez **Ajouter un paramètre à [méthode]** .
+2. Placez votre pointeur sur le squiggle rouge jusqu’à ce que le menu Quick Actions apparaît. Cliquez sur la **flèche vers le bas** dans le menu Actions rapides, puis sélectionnez **Ajouter un paramètre à [méthode]**.
 
    ![Action rapide Ajouter un paramètre à une méthode dans Visual Studio](media/add-parameter-to-method.png)
 
    > [!TIP]
-   > Vous pouvez également accéder au menu Actions rapides en plaçant votre curseur sur la ligne de l’appel de méthode, puis en appuyant sur **Ctrl**+ **.** (point) ou en sélectionnant l’icône d’ampoule dans la marge de fichier.
+   > Vous pouvez également accéder au menu Actions rapides en plaçant votre curseur sur la ligne de l’appel de méthode, puis soit en appuyant sur **Ctrl**+**.** (période) ou la sélection de l’icône de l’ampoule dans la marge de fichier.
 
    Visual Studio ajoute le nouveau paramètre à la déclaration de méthode.
 

@@ -10,15 +10,15 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 74ccc29417cdee7a9f93c39509c0f7d06a5c72ff
-ms.sourcegitcommit: 8cbced0fb46959a3a2494852df1e41db1177a26c
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "76826469"
 ---
 # <a name="how-to-use-msbuild-project-sdks"></a>Guide pratique pour utiliser les kits SDK de projet MSBuild
 
-MSBuild 15,0 a introduit le concept de « kit de développement logiciel (SDK) de projet », qui simplifie l’utilisation de kits de développement de logiciels qui nécessitent l’importation de propriétés et de cibles.
+MSBuild 15.0 a introduit le concept du « projet SDK », qui simplifie à l’aide de kits de développement logiciel qui nécessitent l’importation de propriétés et de cibles.
 
 ```xml
 <Project Sdk="Microsoft.NET.Sdk">
@@ -28,7 +28,7 @@ MSBuild 15,0 a introduit le concept de « kit de développement logiciel (SDK) 
 </Project>
 ```
 
-Pendant l’évaluation du projet, MSBuild ajoute des importations implicites en haut et en bas du fichier projet :
+Lors de l’évaluation du projet, MSBuild ajoute des importations implicites en haut et en bas du dossier du projet :
 
 ```xml
 <Project>
@@ -56,9 +56,9 @@ Il existe trois manières de référencer un kit SDK de projet :
     </Project>
     ```
 
-    Une importation implicite est ajoutée au début et à la fin du projet, comme indiqué précédemment.
+    Une importation implicite est ajoutée au haut et au bas du projet comme nous l’avons déjà vu.
     
-    Pour spécifier une version spécifique du kit de développement logiciel (SDK), ajoutez-la à l’attribut `Sdk` :
+    Pour spécifier une version spécifique du SDK, l’appendice à l’attribut `Sdk` :
 
     ```xml
     <Project Sdk="My.Custom.Sdk/1.2.3">
@@ -78,7 +78,7 @@ Il existe trois manières de référencer un kit SDK de projet :
     </Project>
    ```
 
-   Une importation implicite est ajoutée au début et à la fin du projet, comme indiqué précédemment.
+   Une importation implicite est ajoutée au haut et au bas du projet comme nous l’avons déjà vu.
    
    L'attribut `Version` n'est pas requis.
 
@@ -101,19 +101,19 @@ Il existe trois manières de référencer un kit SDK de projet :
 
 ## <a name="how-project-sdks-are-resolved"></a>Méthode de résolution des kits SDK de projet
 
-Lors de l’évaluation de l’importation, MSBuild résout dynamiquement le chemin d’accès au kit de développement logiciel (SDK) du projet en fonction du nom et de la version que vous avez spécifiés.  MSBuild dispose également d’une liste de programmes de résolution du kit de développement logiciel (SDK) inscrits, qui sont des plug-ins qui localisent les Kits SDK de projet sur votre ordinateur. Ces plug-ins sont les suivants :
+Lors de l’évaluation de l’importation, MSBuild résout dynamiquement le chemin vers le projet SDK en fonction du nom et de la version que vous avez spécifié.  MSBuild dispose également d’une liste de résolveurs SDK enregistrés, qui sont des plug-ins qui localisent les SDK du projet sur votre machine. Ces plug-ins sont les suivants :
 
 - Un programme de résolution basé sur NuGet qui interroge vos flux de packages configurés pour localiser les packages NuGet qui correspondent à l’ID et à la version du kit SDK que vous avez spécifié.
 
-   Ce programme de résolution n’est actif que si vous avez spécifié une version facultative. Il peut être utilisé pour n’importe quel kit de développement logiciel (SDK) de projet personnalisé.
+   Ce résolveur n’est actif que si vous avez spécifié une version facultative. Il peut être utilisé pour n’importe quel projet personnalisé SDK.
    
-- Un programme de résolution de l’interface CLI .NET qui résout les kits de développement logiciel installés avec l' [interface CLI .net](/dotnet/core/tools/).
+- Un résolveur CLI .NET qui résout les SDK qui sont installés avec [.NET CLI](/dotnet/core/tools/).
 
-   Ce programme de résolution localise les kits de développement logiciel (SDK) de projet tels que `Microsoft.NET.Sdk` et les `Microsoft.NET.Sdk.Web` qui font partie du produit.
+   Ce résolveur localise le projet `Microsoft.NET.Sdk` SDKs tels que et `Microsoft.NET.Sdk.Web` qui font partie du produit.
    
 - Un programme de résolution par défaut qui résout les kits SDK installés avec MSBuild.
 
-Le programme de résolution SDK NuGet prend en charge la spécification d’une version dans le fichier [global. JSON](/dotnet/core/tools/global-json) , qui vous permet de contrôler la version du SDK Project dans un emplacement plutôt que dans chaque projet individuel :
+Le résolveur SDK basé à NuGet prend en charge la spécifier une version dans le fichier [global.json,](/dotnet/core/tools/global-json) qui vous permet de contrôler la version SDK du projet en un seul endroit plutôt que dans chaque projet individuel :
 
 ```json
 {
@@ -124,7 +124,7 @@ Le programme de résolution SDK NuGet prend en charge la spécification d’une 
 }
 ```
 
-Seule une version de chaque kit SDK de projet peut être utilisée durant une build. Si vous référencez deux versions différentes du même Kit de développement logiciel (SDK) de projet, MSBuild émet un avertissement. Il est recommandé de **ne pas** spécifier de version dans vos projets si une version est spécifiée dans le fichier *global. JSON* .
+Seule une version de chaque kit SDK de projet peut être utilisée durant une build. Si vous faites référence à deux versions différentes du même projet SDK, MSBuild émet un avertissement. Il est recommandé de **ne pas** spécifier une version dans vos projets si une version est spécifiée dans le fichier *global.json.*
 
 ## <a name="see-also"></a>Voir aussi
 

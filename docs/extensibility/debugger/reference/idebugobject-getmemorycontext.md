@@ -1,5 +1,5 @@
 ---
-title: IDebugObject::GetMemoryContext | Microsoft Docs
+title: IDebugObject::GetMemoryContext Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugObject::GetMemoryContext method
 ms.assetid: 6760a0d3-a898-4e81-b68f-c45c584b225b
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 38f913952c3e2f58b0d7bd2a27ac20e8f754da2f
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 16427685765c1471fba3993743efc204cb99c367
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66323623"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80726655"
 ---
 # <a name="idebugobjectgetmemorycontext"></a>IDebugObject::GetMemoryContext
-Obtient le contexte de la mémoire qui représente l’adresse de la valeur de l’objet.
+Obtient le contexte de mémoire qui représente l’adresse de la valeur de l’objet.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -41,13 +41,13 @@ int GetMemoryContext(
 
 ## <a name="parameters"></a>Paramètres
 `pContext`\
-[out] Retourne un [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md) objet représentant l’adresse de la valeur de l’objet.
+[out] Renvoie un objet [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md) représentant l’adresse de la valeur de l’objet.
 
 ## <a name="return-value"></a>Valeur de retour
- En cas de réussite, retourne S_OK ; Sinon, retourne un code d’erreur.
+ En cas de succès, les retours S_OK; autrement, renvoie un code d’erreur.
 
 ## <a name="remarks"></a>Notes
- Le contexte de la mémoire retournée Spécifie l’adresse de la valeur telle que représentée par ce [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) objet.
+ Le contexte de mémoire retourné spécifie l’adresse de la valeur représentée par cet objet [IDebugObject.](../../../extensibility/debugger/reference/idebugobject.md)
 
 ## <a name="see-also"></a>Voir aussi
 - [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md)

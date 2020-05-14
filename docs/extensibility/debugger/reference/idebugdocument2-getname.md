@@ -1,5 +1,5 @@
 ---
-title: IDebugDocument2::GetName | Microsoft Docs
+title: IDebugDocument2::GetName ( Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugDocument2::GetName
 ms.assetid: 6f09ff09-b0cf-4472-8fc8-143991f0ceb1
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 31eddcc07adc181e179c3f3edba669fff85fa565
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 2af7f4dc01ee3a2fe3fb5026602a0b5d4f766b17
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66310280"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80731971"
 ---
 # <a name="idebugdocument2getname"></a>IDebugDocument2::GetName
-Obtient le nom du document sous plusieurs formes.
+Obtient le nom du document sous l’une de plusieurs formes.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -43,16 +43,16 @@ int GetName( 
 
 ## <a name="parameters"></a>Paramètres
 `gnType`\
-[in] Une valeur comprise entre le [GETNAME_TYPE](../../../extensibility/debugger/reference/getname-type.md) énumération qui détermine le type de nom à retourner.
+[dans] Une valeur de [l’énumération GETNAME_TYPE](../../../extensibility/debugger/reference/getname-type.md) qui détermine le type de nom à retourner.
 
 `pbstrFileName`\
-[out] Retourne une chaîne contenant le nom du document.
+[out] Renvoie une chaîne contenant le nom du document.
 
 ## <a name="return-value"></a>Valeur de retour
- En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.
+ En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
 ## <a name="remarks"></a>Notes
- Cette méthode peut, par exemple, retourner le nom du document comme un titre ou en tant que nom de fichier ou même dans un nom de fichier.
+ Cette méthode peut, par exemple, retourner le nom du document comme titre ou comme nom de fichier ou même partie d’un nom de fichier.
 
 ## <a name="see-also"></a>Voir aussi
 - [IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md)

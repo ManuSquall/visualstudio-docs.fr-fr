@@ -1,5 +1,5 @@
 ---
-title: Localisation des commandes de menu | Microsoft Docs
+title: Localisation des commandes de menu (fr) Microsoft Docs
 ms.date: 10/08/2019
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,45 +10,45 @@ helpviewer_keywords:
 - localize visual studio
 - localize vsct
 ms.assetid: b04ee0f6-82ea-47e6-853a-72382267d6da
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 94f71014440c55da0151d0ebd817aac9f5d2c7ed
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.openlocfilehash: d363b495eb84dc3bfeabd7bf7c5d05fabcbc4d36
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73186280"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80702946"
 ---
 # <a name="localize-menu-commands"></a>Localiser les commandes de menu
 
-Vous pouvez fournir un texte localisé pour les commandes de menu et de barre d’outils en créant des fichiers *. vsct* localisés et des fichiers *. resx* localisés pour votre VSPackage, puis en mettant à jour les fichiers projet pour incorporer les modifications.
+Vous pouvez fournir du texte localisé pour les commandes de menu et de barre d’outils en créant des fichiers *.vsct* localisés et des fichiers *.resx localisés* pour votre VSPackage, puis en mettant à jour les fichiers du projet pour intégrer les modifications.
 
-Pour plus d’informations sur la localisation de l’expérience d’installation, consultez [localiser des packages VSIX](../extensibility/localizing-vsix-packages.md).
+Pour plus d’informations sur la façon de localiser l’expérience d’installation, voir [Les forfaits LOCALize VSIX](../extensibility/localizing-vsix-packages.md).
 
 ## <a name="localize-command-names"></a>Localiser les noms de commande
 
-Dans les VSPackages, les commandes de menu et les boutons de barre d’outils sont définis dans le fichier *. vsct* .
+Dans VSPackages, les commandes de menu et les boutons de barre d’outils sont définis dans le fichier *.vsct.*
 
-1. Dans **Explorateur de solutions**, remplacez le nom du fichier *. vsct* par *filename. vsct* par *filename. en-US. vsct*.
+1. Dans **Solution Explorer**, changer le nom du fichier *.vsct* de *filename.vsct* à *filename.en-US.vsct*.
 
-2. Effectuez une copie du *fichier. en-US. vsct* pour chaque langue localisée.
+2. Faites une copie de *filename.en-US.vsct* pour chaque langue localisée.
 
-    Nommez chaque *nom de fichier de copie. { Locale}. vsct*, où *{locale}* est un nom de culture particulier. Pour obtenir la liste des valeurs de nom de culture, consultez [ID de paramètres régionaux attribués par Microsoft](/windows/uwp/publish/supported-languages).
+    Nommez chaque *nom de fichier de copie. Local.vsct*, où *'Local'* est un nom de culture particulier. Pour une liste des valeurs de nom de culture, voir [local IDs attribué par Microsoft](/windows/uwp/publish/supported-languages).
 
-    Ce *nom de fichier. Paramètres régionaux.* les fichiers vsct contiendront le texte de menu localisé pour votre package.
+    Ces *noms de fichiers. Les fichiers Locale.vsct* contiendront le texte du menu localisé pour votre forfait.
 
-3. Ouvrez chaque *nom de fichier. Fichier locale. vsct* pour localiser le texte.
+3. Ouvrez chaque *nom de fichier. Fichier Local.vsct* pour localiser le texte.
 
-   1. Modifiez les valeurs de l’élément [ButtonText](../extensibility/buttontext-element.md) en fonction de la langue en question.
+   1. Modifier les valeurs de l’élément [ButtonText,](../extensibility/buttontext-element.md) le cas échéant pour la langue particulière.
 
-   2. Si vous fournissez des icônes localisées, modifiez les valeurs de la [bitmap](../extensibility/bitmap-element.md) pour qu’elles pointent vers les fichiers cibles.
+   2. Si vous fournissez des icônes localisées, modifiez les valeurs [Bitmap](../extensibility/bitmap-element.md) pour pointer vers les fichiers cibles.
 
-      L’exemple suivant montre le texte du bouton anglais et espagnol pour une commande permettant d’ouvrir une fenêtre outil de l’Explorateur de l’arborescence de la famille.
+      L’exemple suivant montre le texte bouton anglais et espagnol pour une commande d’ouvrir une fenêtre d’outil Family Tree Explorer.
 
-      [*FamilyTree. en-US. vsct*]
+      [*FamilyTree.fr-US.vsct*]
 
    ```xml
    <Button guid="guidLocalizedPackageCmdSet" id="cmdidFamilyTree" priority="0x0100" type="Button">
@@ -61,7 +61,7 @@ Dans les VSPackages, les commandes de menu et les boutons de barre d’outils so
    </Button>
    ```
 
-    [*FamilyTree.es-es. vsct*]
+    [*FamilyTree.es-ES.vsct*]
 
    ```xml
    <Button guid="guidLocalizedPackageCmdSet" id="cmdidFamilyTree" priority="0x0100" type="Button">
@@ -74,25 +74,25 @@ Dans les VSPackages, les commandes de menu et les boutons de barre d’outils so
    </Button>
    ```
 
-## <a name="localize-other-text-resources"></a>Localiser d’autres ressources de texte
+## <a name="localize-other-text-resources"></a>Localiser d’autres ressources textuelles
 
-Les ressources de texte autres que les noms de commande sont définies dans des fichiers de ressources ( *. resx*).
+Les ressources textuelles autres que les noms de commande sont définies dans les fichiers ressources *(resx).*
 
-1. Renommez *VSPackage. resx* en *VSPackage. en-US. resx*.
+1. Rebaptiser *VSPackage.resx* à *VSPackage.fr-US.resx*.
 
-2. Effectuez une copie du fichier *VSPackage. fr-US. resx* pour chaque langue localisée.
+2. Faites une copie du fichier *VSPackage.en-US.resx* pour chaque langue localisée.
 
-     Nommez chaque *VSPackage de copie. { Locale}. resx*, où *{locale}* est un nom de culture particulier.
+     Nommez chaque copie *VSPackage. Local.resx*, où *'Local'* est un nom de culture particulier.
 
-3. Renommez *Resources. resx* en *Resources. en-US. resx*.
+3. Rebaptiser *Resources.resx* à *Resources.fr-US.resx*.
 
-4. Effectuez une copie du fichier *Resources. en-US. resx* pour chaque langue localisée.
+4. Faites une copie du fichier *Resources.en-US.resx* pour chaque langue localisée.
 
-     Nommez chaque copie des *ressources. { Locale}. resx*, où *{locale}* est un nom de culture particulier.
+     Nommez chaque exemplaire *Ressources. Local.resx*, où *'Local'* est un nom de culture particulier.
 
-5. Ouvrez chaque fichier *. resx* pour modifier les valeurs de chaîne en fonction de la langue et de la culture en question. L’exemple suivant montre la définition de ressource localisée pour la barre de titre d’une fenêtre outil.
+5. Ouvrez chaque fichier *.resx* pour modifier les valeurs de chaîne, le cas échéant pour la langue et la culture particulières. L’exemple suivant montre la définition de ressources localisée pour la barre de titre d’une fenêtre d’outils.
 
-     [*Resources. en-US. resx*]
+     [*Resources.en-US.resx*]
 
     ```xml
     <data name="ToolWindowTitle" xml:space="preserve">
@@ -100,7 +100,7 @@ Les ressources de texte autres que les noms de commande sont définies dans des 
     </data>
     ```
 
-     [*Resources.es-es. resx*]
+     [*Resources.es-ES.resx*]
 
     ```xml
     <data name="ToolWindowTitle" xml:space="preserve">
@@ -108,25 +108,25 @@ Les ressources de texte autres que les noms de commande sont définies dans des 
     </data>
     ```
 
-## <a name="incorporate-localized-resources-into-the-project"></a>Incorporer des ressources localisées dans le projet
+## <a name="incorporate-localized-resources-into-the-project"></a>Intégrer des ressources localisées dans le projet
 
-Vous devez modifier le fichier *AssemblyInfo.cs* et le fichier projet pour incorporer les ressources localisées.
+Vous devez modifier le *fichier assemblyinfo.cs* et le fichier du projet pour intégrer les ressources localisées.
 
-1. À partir du nœud **Propriétés** dans **Explorateur de solutions**, ouvrez *AssemblyInfo.cs* ou *AssemblyInfo. vb* dans l’éditeur.
+1. Du nœud **Propriétés** dans **Solution Explorer**, ouvrir *assemblyinfo.cs* ou *assemblyinfo.vb* dans l’éditeur.
 
-2. Ajoutez l’entrée suivante.
+2. Ajouter l’entrée suivante.
 
     ```csharp
     [assembly: NeutralResourcesLanguage("en-US", UltimateResourceFallbackLocation.Satellite)]
     ```
 
-     Cela définit l’anglais (États-Unis) comme langue par défaut.
+     Cela définit l’anglais américain comme langue par défaut.
 
 3. Déchargez le projet.
 
-4. Ouvrez le fichier projet dans l’éditeur.
+4. Ouvrez le dossier de projet dans l’éditeur.
 
-5. Dans l’élément `Project` racine, ajoutez un élément `PropertyGroup` avec un élément `UICulture` qui correspond à votre langue par défaut.
+5. Dans l’élément racine, `Project` ajoutez un `PropertyGroup` élément avec un `UICulture` élément qui correspond à votre langage par défaut.
 
     ```xml
     <PropertyGroup>
@@ -134,11 +134,11 @@ Vous devez modifier le fichier *AssemblyInfo.cs* et le fichier projet pour incor
     </PropertyGroup>
     ```
 
-     Cela définit l’anglais (États-Unis) comme culture d’interface utilisateur par défaut pour les contrôles Windows Presentation Foundation (WPF).
+     Cela définit l’anglais américain comme la culture par défaut de l’interface utilisateur pour Windows Presentation Foundation (WPF) contrôles.
 
-6. Localisez l’élément `ItemGroup` qui contient les éléments `EmbeddedResource`.
+6. Localisez l’élément `ItemGroup` qui contient des `EmbeddedResource` éléments.
 
-7. Dans l’élément `EmbeddedResource` qui appelle *VSPackage. en-US. resx*, remplacez l’élément `ManifestResourceName` par un élément `LogicalName` qui a la valeur `VSPackage.en-US.Resources`, comme suit :
+7. Dans `EmbeddedResource` l’élément qui appelle *VSPackage.en-US.resx*, remplacer l’élément `ManifestResourceName` par un `LogicalName` élément qui est configuré à `VSPackage.en-US.Resources`, comme suit:
 
     ```xml
     <EmbeddedResource Include="VSPackage.en-US.resx">
@@ -147,9 +147,9 @@ Vous devez modifier le fichier *AssemblyInfo.cs* et le fichier projet pour incor
     </EmbeddedResource>
     ```
 
-8. Pour chaque langue localisée, copiez l’élément `EmbeddedResource` pour `VsPackage.en-US`et définissez l’attribut **include** et l’élément **LogicalName** de la copie sur les paramètres régionaux cibles.
+8. Pour chaque langue `EmbeddedResource` localisée, `VsPackage.en-US`copiez l’élément pour , et définissez **l’attribut inclus** et **l’élément LogicalName** de la copie sur le local cible.
 
-9. Pour chaque élément `VSCTCompile` localisé, ajoutez un élément `ResourceName` qui pointe vers `Menus.ctmenu`, comme illustré dans l’exemple suivant :
+9. À chaque `VSCTCompile` élément localisé, `ResourceName` ajoutez un `Menus.ctmenu`élément qui indique , comme le montre l’exemple suivant :
 
     ```xml
     <ItemGroup>
@@ -159,13 +159,13 @@ Vous devez modifier le fichier *AssemblyInfo.cs* et le fichier projet pour incor
     </ItemGroup>
     ```
 
-10. Enregistrez le fichier projet et rechargez le projet.
+10. Enregistrer le dossier du projet et recharger le projet.
 
-11. Générez le projet.
+11. Créez le projet.
 
-     Cela crée un assembly principal et des assemblys de ressource pour chaque langue. Pour plus d’informations sur la localisation du processus de déploiement, consultez [localiser des packages VSIX](../extensibility/localizing-vsix-packages.md)
+     Cela crée un assemblage principal, et des assemblages de ressources pour chaque langue. Pour plus d’informations sur la localisation du processus de déploiement, voir [Les forfaits LOCALize VSIX](../extensibility/localizing-vsix-packages.md)
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Étendre des menus et des commandes](../extensibility/extending-menus-and-commands.md)
-- [Globaliser et localiser des applications](../ide/globalizing-and-localizing-applications.md)
+- [Étendre les menus et les commandes](../extensibility/extending-menus-and-commands.md)
+- [Mondialiser et localiser les applications](../ide/globalizing-and-localizing-applications.md)

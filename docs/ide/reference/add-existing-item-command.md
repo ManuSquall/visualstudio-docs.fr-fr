@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 4d49f0fde7bbf13a1219296420b84970f4350860
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75585702"
 ---
 # <a name="add-existing-item-command"></a>Ajouter un élément existant, commande
@@ -31,11 +31,11 @@ File.AddExistingItem filename [/e:editorname]
 
 ## <a name="arguments"></a>Arguments
 `filename`\
-Requis. Chemin complet et nom de fichier, avec l’extension, de l’élément à ajouter à la solution actuelle. Si le chemin ou le nom de fichier contient des espaces, placez le chemin complet entre guillemets.
+Obligatoire. Chemin complet et nom de fichier, avec l’extension, de l’élément à ajouter à la solution actuelle. Si le chemin ou le nom de fichier contient des espaces, placez le chemin complet entre guillemets.
 
 ## <a name="switches"></a>Commutateurs
 /e: `editorname`\
-Option facultative. Nom de l’éditeur dans lequel le fichier doit être ouvert. Si l’argument est spécifié, mais qu’aucun nom d’éditeur n’est fourni, la boîte de dialogue **Ouvrir avec** s’affiche.
+facultatif. Nom de l’éditeur dans lequel le fichier doit être ouvert. Si l’argument est spécifié, mais qu’aucun nom d’éditeur n’est fourni, la boîte de dialogue **Ouvrir avec** s’affiche.
 
 La syntaxe de l’argument /e:`editorname` utilise les noms d’éditeur tels qu’ils apparaissent dans la **boîte de dialogue Ouvrir avec**, entre guillemets. Par exemple, pour ouvrir une feuille de style dans l’éditeur de code source, entrez les informations suivantes pour l’argument /e:`editorname`.
 
@@ -43,10 +43,10 @@ La syntaxe de l’argument /e:`editorname` utilise les noms d’éditeur tels qu
 /e:"Source Code (text) Editor"
 ```
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Notes 
 La fonctionnalité de saisie semi-automatique tente de trouver le chemin et le nom de fichier correspondant aux caractères que vous tapez.
 
-## <a name="example"></a>Exemple
+## <a name="example"></a> Exemple
 Cet exemple ajoute le fichier Form1.frm à la solution actuelle.
 
 ```cmd
@@ -55,7 +55,7 @@ Cet exemple ajoute le fichier Form1.frm à la solution actuelle.
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Visual Studio, commandes](../../ide/reference/visual-studio-commands.md)
-- [Fenêtre Commande](../../ide/reference/command-window.md)
-- [Rechercher/Commande, zone](../../ide/find-command-box.md)
-- [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)
+- [Commandes de studio visuel](../../ide/reference/visual-studio-commands.md)
+- [Commande, fenêtre](../../ide/reference/command-window.md)
+- [Boîte de recherche/commande](../../ide/find-command-box.md)
+- [Alias de commande de studio visuel](../../ide/reference/visual-studio-command-aliases.md)

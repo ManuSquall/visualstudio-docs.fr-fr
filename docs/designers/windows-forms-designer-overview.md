@@ -8,17 +8,17 @@ author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.openlocfilehash: 171cdffa569b342bdbc7dd0da1c8da218e1d622c
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75589888"
 ---
 # <a name="windows-forms-designer-overview"></a>Vue d’ensemble du Concepteur Windows Forms
 
 Le Concepteur Windows Forms dans Visual Studio fournit une solution de développement rapide pour la création d’applications basées sur Windows Forms. Le Concepteur Windows Forms vous permet d'ajouter facilement des contrôles à un formulaire, de les organiser et d'écrire du code pour leurs événements. Pour plus d’informations sur Windows Forms, consultez [Vue d’ensemble de Windows Forms](/dotnet/framework/winforms/windows-forms-overview).
 
-## <a name="functionality"></a>Fonctionnalité
+## <a name="functionality"></a>Fonctionnalités
 
 À l’aide du concepteur, vous pouvez :
 
@@ -33,13 +33,13 @@ Le Concepteur Windows Forms dans Visual Studio fournit une solution de développ
 - Sélectionnez plusieurs contrôles en sélectionnant **Maj** ou **Ctrl** tout en cliquant. Lors de l'utilisation de **Maj**+clic, le premier contrôle sélectionné est le contrôle dominant lors de l’alignement ou de la manipulation de la taille. Lorsque vous utilisez **Ctrl**+clic, le dernier contrôle sélectionné est dominant, donc le contrôle dominant change avec chaque nouveau contrôle ajouté. Vous pouvez également sélectionner plusieurs contrôles en faisant glisser un rectangle de sélection autour des contrôles que vous souhaitez sélectionner.
 
 > [!NOTE]
-> Utilisez le Concepteur Windows Forms, et non l’éditeur de ressources, pour apporter des modifications au fichier de ressources d’un formulaire ( *.resx*). Si vous modifiez un fichier .resx basé sur des formulaires, vous verrez un avertissement indiquant que les modifications que vous apportez dans l’éditeur de ressources peuvent être perdues. Cela est dû au fait que le Concepteur Windows Forms génère le fichier .resx.
+> Utilisez le Concepteur Windows Forms, et non l’éditeur de ressources, pour apporter des modifications au fichier de ressources d’un formulaire (*.resx*). Si vous modifiez un fichier .resx basé sur des formulaires, vous verrez un avertissement indiquant que les modifications que vous apportez dans l’éditeur de ressources peuvent être perdues. Cela est dû au fait que le Concepteur Windows Forms génère le fichier .resx.
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Vue d'ensemble des Windows Forms](/dotnet/framework/winforms/windows-forms-overview)
-- [Contrôles Windows Forms](/dotnet/framework/winforms/controls/)
-- [Entrées d'utilisateur dans les Windows Forms](/dotnet/framework/winforms/user-input-in-windows-forms)
+- [Aperçu des formulaires Windows](/dotnet/framework/winforms/windows-forms-overview)
+- [Contrôles des formulaires Windows](/dotnet/framework/winforms/controls/)
+- [Entrée de l’utilisateur dans les formulaires Windows](/dotnet/framework/winforms/user-input-in-windows-forms)
 - [Liaison de données Windows Forms](/dotnet/framework/winforms/windows-forms-data-binding)
 - [Améliorer des applications Windows Forms](/dotnet/framework/winforms/advanced/)
 - Informations de référence sur l’API <xref:System.Windows.Forms?displayProperty=fullName>

@@ -10,19 +10,20 @@ apitype: COM
 helpviewer_keywords:
 - StartTrackingContextWithRoot
 ms.assetid: f6ef2b76-8035-4a14-8195-aa221c46ef48
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 53f2c1ebd5896eaa8a4b9d5ff4e5cb7856a1f8e2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 68d585361b9797bf1df9c8b0b31f8a089e9de025
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62939103"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "77632093"
 ---
 # <a name="starttrackingcontextwithroot"></a>StartTrackingContextWithRoot
+
 Démarre un contexte de suivi en utilisant un fichier réponse spécifiant un marqueur racine.
 
 ## <a name="syntax"></a>Syntaxe
@@ -32,6 +33,7 @@ HRESULT WINAPI StartTrackingContextWithRoot(LPCTSTR intermediateDirectory, LPCTS
 ```
 
 #### <a name="parameters"></a>Paramètres
+
 [in] `intermediateDirectory`
 
  Répertoire où stocker le journal de suivi.
@@ -44,11 +46,14 @@ HRESULT WINAPI StartTrackingContextWithRoot(LPCTSTR intermediateDirectory, LPCTS
 
  Chemin d’un fichier réponse contenant un marqueur racine. Le nom de la racine est utilisé pour regrouper tout le suivi pour un contexte.
 
-## <a name="return-value"></a>Valeur de retour
- **HRESULT** avec le bit **SUCCEEDED** défini si le contexte de suivi a été créé.
+## <a name="return-value"></a>Valeur retournée
+
+ Un **HRESULT** avec l’ensemble de bits **SUCCEEDED** si le contexte de suivi a été créé.
 
 ## <a name="requirements"></a>Spécifications
+
  **En-tête :** *FileTracker.h*
 
 ## <a name="see-also"></a>Voir aussi
+
 - [StartTrackingContext](../msbuild/starttrackingcontext.md)

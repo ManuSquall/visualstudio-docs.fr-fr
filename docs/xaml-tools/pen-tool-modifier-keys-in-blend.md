@@ -9,24 +9,24 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 255b3de916215759615384dce26c5affbc07a995
-ms.sourcegitcommit: 97623fd6190c43fed0d2ee7af92b01c375282622
+ms.openlocfilehash: 95a00fe4b87a0a9e1ee55497b84c59536d66d285
+ms.sourcegitcommit: ade07bd1cf69b8b494d171ae648cfdd54f7800d3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73569099"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "81649444"
 ---
 # <a name="pen-tool-modifier-keys-in-blend-for-visual-studio"></a>Touches de modification de l’outil Plume dans Blend pour Visual Studio
 
-Le tableau suivant répertorie les raccourcis que vous pouvez utiliser pour modifier un tracé lors de sa création avec l’outil **Plume** ![outil Plume](../designers/media/d514358f-185a-412f-a55d-36633b25dc8a.png). Vous pouvez aussi utiliser l’outil **Plume** pour ajouter ou supprimer des points sur un tracé existant, ou pour joindre deux tracés existants.
+Le tableau suivant répertorie les raccourcis que vous pouvez utiliser pour modifier un tracé lors de sa création avec l’outil **Plume**![outil Plume](../designers/media/d514358f-185a-412f-a55d-36633b25dc8a.png). Vous pouvez aussi utiliser l’outil **Plume** pour ajouter ou supprimer des points sur un tracé existant, ou pour joindre deux tracés existants.
 
-|Pour|Faites cela|Pointeur|
+|Pour effectuer cette action|Action|Pointeur|
 | - |-------------|-------------|
 |Créer un point pour commencer un segment de ligne droite|Cliquez pour créer le nouveau point.|![Créer un point pour commencer un segment de ligne droite](../designers/media/0bfb1b71-80ac-4ad4-aed8-40e09f8b7ab8.png)<br /><br /> Pointeur du stylet|
 |Créer un point pour commencer un segment de ligne courbe|Cliquez pour créer le point, puis faites glisser pour ajuster les poignées de tangente, avant de relâcher le bouton de la souris.|![Créer un point pour commencer un segment de ligne courbe](../designers/media/0bfb1b71-80ac-4ad4-aed8-40e09f8b7ab8.png)<br /><br /> Pointeur du stylet|
 |Ajustez la dernière tangente sans la contrainte de lissage, ce qui vous permet de faire un angle aigu|Cliquez pour créer le point, puis appuyez sur **Alt** avant de relâcher le bouton de la souris.|![Ajuster la dernière tangente sans la contrainte de lissage](../designers/media/317e5475-b70c-489f-9477-110a98639ade.png)<br /><br /> Pointeur d'ajustement du stylet|
 |Divisez la dernière tangente, de façon à ce que les points de terminaison de la tangente fonctionnent indépendamment, ce qui vous permet de faire un angle aigu.|Cliquez pour créer le point, puis maintenez la touche **Alt** enfoncée et faites glisser avant de relâcher le bouton de la souris.|![Diviser la dernière tangente de façon à ce que les points de terminaison de la tangente fonctionnent indépendamment](../designers/media/317e5475-b70c-489f-9477-110a98639ade.png)<br /><br /> Pointeur d'ajustement du stylet|
-|Déplacez le point de terminaison de la tangente autour du nouveau point par incréments de 15 degrés.|Cliquez pour créer le point, puis maintenez les touches **Maj**+**Alt** enfoncées, et faites glisser avant de relâcher le bouton de la souris.|![Déplacez le point de terminaison de la tangente autour du nouveau point par incréments de 15 degrés.](../designers/media/317e5475-b70c-489f-9477-110a98639ade.png)<br /><br /> Pointeur d'ajustement du stylet|
+|Déplacez le point de terminaison de la tangente autour du nouveau point par incréments de 15 degrés.|Cliquez pour créer le nouveau point, puis maintenez **Shift**+**Alt** et faites glisser avant de libérer le bouton de la souris|![Déplacez le point de terminaison de la tangente autour du nouveau point par incréments de 15 degrés.](../designers/media/317e5475-b70c-489f-9477-110a98639ade.png)<br /><br /> Pointeur d'ajustement du stylet|
 |Réduire la tangente à un point de terminaison à une longueur nulle|Cliquez sur le point de terminaison.|![Réduire la tangente à un point de terminaison à une longueur nulle](../designers/media/317e5475-b70c-489f-9477-110a98639ade.png)<br /><br /> Pointeur d'ajustement du stylet|
 |Ajouter un nouveau point à un tracé existant|Cliquez sur le tracé à l'emplacement où vous voulez le nouveau point.|![Ajouter un nouveau point à un tracé existant](../designers/media/b004ad5a-33a4-46ae-81c0-20be0d819332.png)<br /><br /> Pointeur d'insertion du stylet|
 |Supprimer un point dans un tracé|Placez le curseur sur un point existant et cliquez.|![Supprimer un point du chemin](../designers/media/08a64b78-f3df-4730-8169-c56b5631b071.png)<br /><br /> Pointeur de suppression du stylet|
@@ -38,6 +38,6 @@ Le tableau suivant répertorie les raccourcis que vous pouvez utiliser pour modi
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Touches de modification de la planche graphique](../designers/artboard-modifier-keys-in-blend.md)
+- [Touches de modification de la planche graphique](artboard-modifier-keys-in-blend.md)
 - [Touches de modification de l’outil Sélection directe](direct-selection-tool-modifier-keys-in-blend.md)
 - [Dessiner des formes et des tracés](draw-shapes-and-paths.md)

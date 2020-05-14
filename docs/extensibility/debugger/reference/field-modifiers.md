@@ -1,5 +1,5 @@
 ---
-title: FIELD_MODIFIERS | Microsoft Docs
+title: FIELD_MODIFIERS Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,22 +7,22 @@ f1_keywords:
 helpviewer_keywords:
 - FIELD_MODIFIERS enumeration
 ms.assetid: 1e44681c-1f03-41a9-9c04-b79f231b0822
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 10538f3728647a716a9f3f964a3deedf2a5ae5c9
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: f7a24345174854462a2118df626223a8a299cd7f
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66324496"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80736855"
 ---
-# <a name="fieldmodifiers"></a>FIELD_MODIFIERS
+# <a name="field_modifiers"></a>FIELD_MODIFIERS
 Spécifie les modificateurs pour un type de champ.
 
 ## <a name="syntax"></a>Syntaxe
@@ -106,10 +106,10 @@ public enum enum_FIELD_MODIFIERS {
 
 ## <a name="fields"></a>Champs
 `FIELD_MOD_ACCESS_TYPE`\
-Indique que le champ n’est pas accessible.
+Indique que le champ ne peut pas être consulté.
 
 `FIELD_MOD_ACCESS_PUBLIC`\
-Indique que le champ possède un accès public.
+Indique que le champ a accès au public.
 
 `FIELD_MOD_ACCESS_PROTECTED`\
 Indique que le champ a un accès protégé.
@@ -118,7 +118,7 @@ Indique que le champ a un accès protégé.
 Indique que le champ a un accès privé.
 
 `FIELD_MOD_NOMODIFIERS`\
-Indique que le champ possède pas de modificateur.
+Indique que le champ n’a pas de modificateurs.
 
 `FIELD_MOD_STATIC`\
 Indique que le champ est statique.
@@ -127,7 +127,7 @@ Indique que le champ est statique.
 Indique que le champ est une constante.
 
 `FIELD_MOD_TRANSIENT`\
-Indique que le champ est temporaire.
+Indique que le champ est transitoire.
 
 `FIELD_MOD_VOLATILE`\
 Indique que le champ est volatil.
@@ -136,7 +136,7 @@ Indique que le champ est volatil.
 Indique que le champ est abstrait.
 
 `FIELD_MOD_NATIVE`\
-Indique que le champ est natif.
+Indique que le champ est indigène.
 
 `FIELD_MOD_SYNCHRONIZED`\
 Indique que le champ est synchronisé.
@@ -148,52 +148,52 @@ Indique que le champ est virtuel.
 Indique que le champ est une interface.
 
 `FIELD_MOD_FINAL`\
-Indique que le champ est définitive.
+Indique que le champ est final.
 
 `FIELD_MOD_SENTINEL`\
-Indique que le champ est un objet sentinel.
+Indique que le champ est une sentinelle.
 
 `FIELD_MOD_INNERCLASS`\
-Indique que le champ est une classe interne.
+Indique que le champ est une classe intérieure.
 
 `FIELD_TYPE_OPTIONAL`\
 Indique que le champ est facultatif.
 
 `FIELD_MOD_BYREF`\
-Indique que le champ est un argument de référence. Il s’agit en particulier pour les arguments de méthode.
+Indique que le domaine est un argument de référence. C’est spécifiquement pour les arguments de méthode.
 
 `FIELD_MOD_HIDDEN`\
-Indique que le champ doit être masqué ou présenté dans un autre contexte ; par exemple, [!INCLUDE[vbprvb](../../../code-quality/includes/vbprvb_md.md)] variables locales statiques.
+Indique que le champ doit être caché ou présenté dans un autre contexte; par exemple, [!INCLUDE[vbprvb](../../../code-quality/includes/vbprvb_md.md)] les habitants statiques.
 
 `FIELD_MOD_MARSHALASOBJECT`\
-Indique que le champ représente un objet avec un `IUnknown` interface.
+Indique que le champ représente `IUnknown` un objet avec une interface.
 
 `FIELD_MOD_SPECIAL_NAME`\
-Indique que le champ a un nom spécial, par exemple, `.ctor` pour un constructeur ([!INCLUDE[vbprvb](../../../code-quality/includes/vbprvb_md.md)] uniquement).
+Indique que le champ a un `.ctor` nom spécial,[!INCLUDE[vbprvb](../../../code-quality/includes/vbprvb_md.md)] par exemple, pour un constructeur (seulement).
 
 `FIELD_MOD_HIDEBYSIG`\
-Indique que le champ a le `Overloads` mot clé appliqué à celui-ci ([!INCLUDE[vbprvb](../../../code-quality/includes/vbprvb_md.md)] uniquement).
+Indique que le `Overloads` champ a le[!INCLUDE[vbprvb](../../../code-quality/includes/vbprvb_md.md)] mot clé appliqué à elle (seulement).
 
 `FIELD_MOD_WRITEONLY`\
-Indique que le champ est en écriture seule. Cette valeur n’est pas incluse dans `FIELD_MOD_ALL`, comme l’utilisation seule de ces champs en écriture seule est pour l’évaluation de fonction. Un utilisateur doit demander explicitement `FIELD_MOD_WRITEONLY` champs.
+Indique que le champ est écrit uniquement. Cette valeur n’est pas incluse dans `FIELD_MOD_ALL`, car la seule utilisation de ces champs d’écriture seulement est pour l’évaluation de la fonction. Un utilisateur doit `FIELD_MOD_WRITEONLY` demander explicitement des champs.
 
 `FIELD_MOD_ACCESS_MASK`\
-Indique un masque d’accès au champ.
+Indique un masque pour l’accès au champ.
 
 `FIELD_MOD_MASK`\
 Indique un masque pour les modificateurs de champ.
 
 ## <a name="remarks"></a>Notes
-Utilisé pour le `dwModifiers` membre de la [FIELD_INFO](../../../extensibility/debugger/reference/field-info.md) structure.
+Utilisé pour `dwModifiers` le membre de la structure [FIELD_INFO.](../../../extensibility/debugger/reference/field-info.md)
 
-Ces valeurs sont également transmis à la [EnumFields](../../../extensibility/debugger/reference/idebugcontainerfield-enumfields.md) méthode pour filtrer les champs spécifiques.
+Ces valeurs sont également transmises à la méthode [EnumFields](../../../extensibility/debugger/reference/idebugcontainerfield-enumfields.md) pour filtrer pour des champs spécifiques.
 
-## <a name="requirements"></a>Configuration requise
-En-tête : sh.h
+## <a name="requirements"></a>Spécifications
+En-tête: sh.h
 
-Espace de noms : Microsoft.VisualStudio.Debugger.Interop
+Namespace: Microsoft.VisualStudio.Debugger.Interop
 
-Assembly : Microsoft.VisualStudio.Debugger.Interop.dll
+Assemblage: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>Voir aussi
 - [Énumérations](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)

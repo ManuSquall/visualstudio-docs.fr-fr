@@ -10,15 +10,15 @@ ms.workload:
 - multiple
 author: mikejo5000
 ms.openlocfilehash: 95a2029cee1fd13241aba727f671a164d7272543
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75591578"
 ---
 # <a name="settings-waterfall"></a>Cascade de paramètres
 
-Le concept de cascade de paramètres signifie que l’utilisateur peut spécifier des paramètres au niveau **Assembly**, **Attachement** et **Exploration** :
+Le concept de la cascade de paramètres signifie que l’utilisateur peut spécifier les paramètres au niveau **d’assemblage,** **de montage**et **d’exploration** :
 
 * Assembly : [PexAssemblySettings](attribute-glossary.md#pexassemblysettings)
 * Attachement : [PexClass](attribute-glossary.md#pexclass)

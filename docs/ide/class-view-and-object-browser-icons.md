@@ -1,5 +1,5 @@
 ---
-title: Icônes de l'Explorateur d'objets et de la fenêtre Affichage de classes
+title: Affichage de classes et Explorateur d'objets, icônes
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -17,10 +17,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 6589d40d8f897eb8df7f108f53973af268d1edc9
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75588393"
 ---
 # <a name="class-view-and-object-browser-icons"></a>Icônes Affichage de classes et Explorateur d’objets
@@ -30,17 +30,17 @@ L’**affichage de classes** et l’**Explorateur d’objets** affichent des ic�
 |Icône|Description|Icône|Description|
 |----------|-----------------|----------|-----------------|
 |![Symbole d'espace de noms](../ide/media/vxnamespace_icon.gif)|Espace de noms|![Symbole de déclaration](../ide/media/vxmethod_icon.gif)|Méthode ou fonction|
-|![Icône de classe](../ide/media/vxclass_icon.gif)|Classe|![Symbole d'opérateur](../ide/media/vxoperator_icon.gif)|opérateur|
-|![Symbole d'interface Lollipop](../ide/media/vxinterface_icon.gif)|Interface|![Symbole de la propriété](../ide/media/vxproperty_icon.gif)|Les|
+|![Icône de classe](../ide/media/vxclass_icon.gif)|Classe|![Symbole d'opérateur](../ide/media/vxoperator_icon.gif)|Opérateur|
+|![Symbole d'interface Lollipop](../ide/media/vxinterface_icon.gif)|Interface|![Symbole de la propriété](../ide/media/vxproperty_icon.gif)|Propriété|
 |![Symbole de la structure](../ide/media/vxstruct_icon.gif)|Structure|![Icône de champ](../ide/media/vxfield_icon.gif)|Champ ou variable|
-|![Symbole Union](../ide/media/vxunion_icon.gif)|Union|![Symbole d'événement](../ide/media/vxevent_icon.gif)|Event|
-|![Symbole d'énumération](../ide/media/vxenum_icon.gif)|Enum|![Icône de constante](../ide/media/vxconstant_icon.gif)|Constante|
+|![Symbole Union](../ide/media/vxunion_icon.gif)|Union|![Symbole d'événement](../ide/media/vxevent_icon.gif)|Événement|
+|![Symbole d'énumération](../ide/media/vxenum_icon.gif)|Enum|![Icône de constante](../ide/media/vxconstant_icon.gif)|Constant|
 |![Symbole de définition du type](../ide/media/vxtypedef_icon.gif)|TypeDef|![Symbole d'élément d'énumération](../ide/media/vxenumitem_icon.gif)|Élément enum|
-|![Symbole du module Visual Studio](../ide/media/vxmodule_icon.gif)|Module, mot clé|![Symbole d'élément de carte](../ide/media/vxmapitem_icon.gif)|Élément Map|
+|![Symbole du module Visual Studio](../ide/media/vxmodule_icon.gif)|Module|![Symbole d'élément de carte](../ide/media/vxmapitem_icon.gif)|Élément Map|
 |![Symbole de méthode d'extension](../ide/media/extensionmethod.gif)|Méthode d'extension|![Symbole de déclaration](../ide/media/vxmethod_icon.gif)|Déclaration externe|
-|![Symbole de délégué](../ide/media/vxdelegate_icon.gif)|délégué|![Icône d'erreur pour l'affichage de classes et l'explorateur d'objets](../ide/media/erroricon.gif)|Erreur du|
+|![Symbole de délégué](../ide/media/vxdelegate_icon.gif)|Déléguer|![Icône d'erreur pour l'affichage de classes et l'explorateur d'objets](../ide/media/erroricon.gif)|Error|
 |![Symbole d'exception](../ide/media/vxexception_icon.gif)|Exception|![Symbole du modèle](../ide/media/vxtemplate_icon.gif)|Modèle|
-|![Symbole de carte](../ide/media/vxmap_icon.gif)|Carte|![Symbole de point d'exclamation d'erreur](../ide/media/vxerror_icon.gif)|Inconnu.|
+|![Symbole de carte](../ide/media/vxmap_icon.gif)|Mappage|![Symbole de point d'exclamation d'erreur](../ide/media/vxerror_icon.gif)|Unknown|
 |![Symbole de transfert de type](../ide/media/ob_type_forward.gif)|Transfert de type|||
 
 ## <a name="signal-icons"></a>Icônes de signalisation
@@ -61,4 +61,4 @@ Les icônes de signalisation suivantes s’appliquent à toutes les icônes pré
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Afficher la structure du code](../ide/viewing-the-structure-of-code.md)
+- [Affichage de la structure du code](../ide/viewing-the-structure-of-code.md)

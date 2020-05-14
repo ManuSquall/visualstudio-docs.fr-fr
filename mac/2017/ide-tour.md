@@ -7,16 +7,16 @@ ms.date: 02/07/2019
 ms.assetid: 7DC64A52-AA41-4F3A-A8A1-8A20BCD81CC7
 ms.custom: video
 ms.openlocfilehash: 3d25fced1e9c9dd6431f4056b5b561f476eecb28
-ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/10/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "74984983"
 ---
 # <a name="visual-studio-2017-for-mac-tour"></a>Visite guidée de Visual Studio 2017 pour Mac
 
 > [!NOTE]
-> Visual Studio 2019 pour Mac est [désormais disponible](installation.md).
+> Visual Studio 2019 pour Mac est [maintenant disponible](installation.md).
 
 Visual Studio pour Mac est un _environnement de développement intégré_ .NET sur Mac qui permet de modifier, déboguer et générer du code, puis de publier une application. En plus des fonctionnalités attendues, comme l’éditeur et le débogueur standard, Visual Studio pour Mac comporte des compilateurs, des outils de complétion de code, des concepteurs graphiques et le contrôle de code source pour faciliter le développement de logiciels.
 
@@ -52,7 +52,7 @@ L’écran d’accueil comprend les sections suivantes :
 - **Solutions récentes** : permet d’accéder rapidement aux solutions récemment ouvertes et à des boutons pratiques pour ouvrir ou créer des projets.
 - **Informations pour les développeurs** : flux RSS qui vous permet de découvrir les informations les plus récentes de Microsoft Developer.
 
-## <a name="solutions-and-projects"></a>Projets et solutions
+## <a name="solutions-and-projects"></a>Solutions et projets
 
 L’image ci-dessous montre Visual Studio pour Mac avec une application chargée :
 
@@ -94,11 +94,11 @@ Pour ajouter une dépendance à votre application, cliquez avec le bouton droit 
 
 Vous trouverez des informations sur l’utilisation d’un package NuGet dans une application dans l’article [Inclusion d’un projet NuGet dans votre projet](/visualstudio/mac/nuget-walkthrough).
 
-## <a name="refactoring"></a>Refactoring
+## <a name="refactoring"></a>Refactorisation
 
 Visual Studio pour Mac offre deux méthodes pratiques pour refactoriser votre code : Actions contextuelles et Analyse du code source. Pour plus d’informations sur ces méthodes, consultez l’article [Refactorisation](/visualstudio/mac/refactoring).
 
-## <a name="debugging"></a>Debugging
+## <a name="debugging"></a>Débogage
 
 Visual Studio pour Mac a un débogueur natif qui prend en charge le débogage des applications Xamarin.iOS, Xamarin.Mac et Xamarin.Android. Visual Studio pour Mac utilise le débogueur Mono Soft, qui est implémenté dans le runtime Mono, ce qui permet à l’IDE de déboguer du code managé sur toutes les plateformes. Pour plus d’informations sur le débogage, consultez l’article [Débogage](/visualstudio/mac/debugging).
 
@@ -106,7 +106,7 @@ Le débogueur contient des visualiseurs puissants pour les types spéciaux, comm
 
 Pour plus d’informations sur les visualisations des données du débogueur, consultez l’article [Visualisations des données](/visualstudio/mac/data-visualizations).
 
-## <a name="version-control"></a>Gestion de version
+## <a name="version-control"></a>Contrôle de version
 
 Visual Studio pour Mac s’intègre aux systèmes de contrôle du code source Git et Subversion. Les projets soumis au contrôle du code source sont signalés par la branche figurant en regard du nom de la solution :
 

@@ -17,15 +17,16 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8c65bafd9183c97efa7595c10d7bdb3641c5f75f
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 8a704744032c5dea70246463a816ba8e1f5c84e8
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75595135"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "77632470"
 ---
 # <a name="sdk-element-msbuild"></a>Élément Sdk (MSBuild)
-Référence un kit SDK de projet [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)].
+
+Références d’un projet MSBuild SDK.
 
  \<Project> \<Sdk>
 
@@ -37,25 +38,28 @@ Référence un kit SDK de projet [!INCLUDE[vstecmsbuild](../extensibility/intern
 ```
 
 ## <a name="attributes-and-elements"></a>Attributs et éléments
+
  Les sections suivantes décrivent des attributs, des éléments enfants et des éléments parents.
 
 ### <a name="attributes"></a>Attributs
 
-|Attribute|Description|
+|Attribut|Description|
 |---------------|-----------------|
 |`Name`|Attribut requis.<br /><br /> Nom du kit SDK de projet.|
 |`Version`|Attribut facultatif.<br /><br /> Version du kit SDK de projet.|
 
 ### <a name="child-elements"></a>Éléments enfants
+
  Aucun.
 
 ### <a name="parent-elements"></a>Éléments parents
 
 | Élément | Description |
 | - | - |
-| [Project](../msbuild/project-element-msbuild.md) | Élément racine requis d'un fichier projet [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] . |
+| [Projet](../msbuild/project-element-msbuild.md) | Élément racine requis d’un fichier de projet MSBuild. |
 
 ## <a name="see-also"></a>Voir aussi
-- [Guide pratique pour référencer un kit de développement logiciel (SDK) de projet MSBuild](../msbuild/how-to-use-project-sdk.md)
-- [Informations de référence sur le schéma de fichier projet](../msbuild/msbuild-project-file-schema-reference.md)
+
+- [Guide pratique : Faire référence à un kit SDK de projet MSBuild](../msbuild/how-to-use-project-sdk.md)
+- [Référence du schéma de fichier de projet](../msbuild/msbuild-project-file-schema-reference.md)
 - [MSBuild](../msbuild/msbuild.md)

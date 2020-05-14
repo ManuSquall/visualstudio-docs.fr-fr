@@ -12,10 +12,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 20b8438243382b28cccb510894d1674aa5872946
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74779868"
 ---
 # <a name="add-tier-interaction-data-from-the-command-line"></a>Ajouter des données d’interaction de couche à partir de la ligne de commande
@@ -32,11 +32,11 @@ Pour collecter des données de profilage d’interaction de couche, vous pouvez 
 
 **Collecter des données TIP sur un ordinateur distant**
 
-Pour collecter des données d’interaction entre niveaux sur un ordinateur distant, vous devez copier le fichier **vs_profiler\_** _\<Plateforme>_ **\_** _\<Langage>_ **.exe** depuis le dossier _%VSInstallDir%_ **\Team Tools\Performance Tools\Setups** d’un ordinateur Visual Studio vers l’ordinateur distant, puis lancer l’installation. Vous ne pouvez pas utiliser les outils de profilage contenus dans le package de téléchargement [Débogage à distance](../debugger/remote-debugging.md).
+Pour collecter des données d’interaction de niveau sur une machine distante, vous devez copier le dossier **vs_profiler\_**_\<Platform>_ **\_** _ \<Language>_ **.exe** à partir du _fichier %VSInstallDir%_**'Team Tools’Performance Tools’Setups** d’une machine Visual Studio à l’ordinateur distant et l’installer. Vous ne pouvez pas utiliser les outils de profilage contenus dans le package de téléchargement [Débogage à distance](../debugger/remote-debugging.md).
 
 **Rapports TIP**
 
-Les données d’interaction de couche ne sont consultables que dans Visual Studio Enterprise. Les rapports d’interaction de couche basés sur des fichiers générés à l’aide de [VSPerfReport](../profiling/vsperfreport.md) ne sont pas disponibles.
+Les données d’interaction de couche ne sont consultables que dans Visual Studio Enterprise. Les rapports d’interaction de couche basés sur des fichiers procédant de [VSPerfReport](../profiling/vsperfreport.md) ne sont pas disponibles.
 
 ## <a name="add-tier-interaction-data-with-vsperfcmd"></a>Ajouter des données d’interaction de couche avec VSPerfCmd
 
@@ -59,13 +59,13 @@ Dans l’exemple suivant, une application de bureau Windows est profilée à l�
     vsperfclrenv /interactionon
     ```
 
-3. Démarrer le profileur. Tapez la commande suivante :
+3. Démarrez le profileur. Tapez la commande suivante :
 
     ```cmd
     vsperfcmd /start:trace /output:Desktop_tip.vsp
     ```
 
-4. Démarrez l’application avec VSPerfCmd. Tapez la commande suivante :
+4. Démarrez l’application avec VSPerfCmd. Tapez la commande suivante :
 
     ```cmd
     vsperfcmd /launch:DesktopApp.exe
@@ -73,7 +73,7 @@ Dans l’exemple suivant, une application de bureau Windows est profilée à l�
 
 5. Testez l’application pour collecter des données de profilage, puis fermez-la normalement.
 
-6. Supprimez les variables d’environnement TiP. Tapez la commande suivante :
+6. Supprimez les variables d’environnement TiP. Tapez la commande suivante :
 
     ```cmd
     vsperfclrenv /off
@@ -95,13 +95,13 @@ Dans l’exemple suivant, un service Windows est profilé suivant la méthode pa
 
 2. Ouvrez une fenêtre d’invite de commande en tant qu’administrateur. Cliquez sur **Démarrer**, pointez sur **Tous les programmes**, puis sur **Accessoires**. Cliquez avec le bouton droit de la souris sur **Invite de commande**, puis cliquez sur **Exécuter en tant qu’administrateur**.
 
-3. Initialisez les variables d’environnement du profilage .NET. Tapez la commande suivante :
+3. Initialisez les variables d’environnement du profilage .NET. Tapez la commande suivante :
 
     ```cmd
     vsperfclrenv /globaltraceon
     ```
 
-4. Initialisez les variables d’environnement TiP. Tapez la commande suivante :
+4. Initialisez les variables d’environnement TiP. Tapez la commande suivante :
 
     ```cmd
     vsperfclrenv /globalinteractionon
@@ -111,7 +111,7 @@ Dans l’exemple suivant, un service Windows est profilé suivant la méthode pa
 
 6. Ouvrez une fenêtre d’invite de commande en tant qu’administrateur.
 
-7. Démarrer le profileur. Tapez la commande suivante :
+7. Démarrez le profileur. Tapez la commande suivante :
 
     ```cmd
     vsperfcmd /start:trace /output:MiddleTier_tip.vsp /user:SYSTEM /crosssession
@@ -119,7 +119,7 @@ Dans l’exemple suivant, un service Windows est profilé suivant la méthode pa
 
 8. Si nécessaire, démarrez le service.
 
-9. Attachez le profileur au service. Tapez la commande suivante :
+9. Attachez le profileur au service. Tapez la commande suivante :
 
     ```cmd
     vsperfcmd /attach:MiddleTier.exe /output:MyService_tip.vsp /user:SYSTEM /crosssession
@@ -127,11 +127,11 @@ Dans l’exemple suivant, un service Windows est profilé suivant la méthode pa
 
 10. Testez le service, puis collectez des données de profilage.
 
-11. Arrêtez le profileur. Tapez la commande suivante :
+11. Arrêtez le profileur. Tapez la commande suivante :
 
      `vsperfcmd /detach`
 
-12. Supprimez les variables d’environnement TiP et celles du profilage .NET. Tapez la commande suivante :
+12. Supprimez les variables d’environnement TiP et celles du profilage .NET. Tapez la commande suivante :
 
     ```cmd
     vsperfclrenv /globaloff
@@ -139,9 +139,9 @@ Dans l’exemple suivant, un service Windows est profilé suivant la méthode pa
 
 13. Redémarrez l’ordinateur pour enregistrer la suppression des variables d’environnement.
 
-Pour plus d'informations, consultez l'une des rubriques suivantes :
+Pour plus d’informations, consultez l’une des rubriques suivantes :
 
-[Profiler des applications web ASP.NET](../profiling/command-line-profiling-of-aspnet-web-applications.md)
+[Profil ASP.NET applications Web](../profiling/command-line-profiling-of-aspnet-web-applications.md)
 
 [Profiler des services](../profiling/command-line-profiling-of-services.md)
 
@@ -155,4 +155,4 @@ Pour ajouter les données d’interaction de couche aux données de profilage co
 vsperfaspnetcmd /tip /trace http://localhost/MyWebApp
 ```
 
-Pour plus d’informations sur VSPerfASPNETCmd, consultez [Profilage de site web rapide avec VSPerfASPNETCmd](../profiling/rapid-web-site-profiling-with-vsperfaspnetcmd.md).
+Pour plus d’informations sur VSPerfASPNETCmd, voir [profilage du site Web Rapid avec VSPerfASPNETCmd](../profiling/rapid-web-site-profiling-with-vsperfaspnetcmd.md).

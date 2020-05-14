@@ -1,28 +1,28 @@
 ---
-title: IDebugTypeFieldBuilder2::CreateArrayOfType | Microsoft Docs
+title: IDebugTypeFieldBuilder2::CreateArrayOfType - France Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - IDebugTypeFieldBuilder2::CreateArrayOfType
 - CreateArrayOfType
 ms.assetid: 85166ac9-0bff-49a0-b2fd-ca7f7a8eae4b
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: fa151c93589ee691abd005df9e4ff6b68698b661
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 3d7a229ea92b57252a9f01976e7b5c80348bd314
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66319778"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80718315"
 ---
 # <a name="idebugtypefieldbuilder2createarrayoftype"></a>IDebugTypeFieldBuilder2::CreateArrayOfType
-Crée un tableau du type spécifié et de taille.
+Crée un tableau du type et de la taille spécifiés.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -44,16 +44,16 @@ int CreateArrayOfType (
 
 ## <a name="parameters"></a>Paramètres
 `pTypeField`\
-[in] Type des éléments de que tableau contiendra.
+[dans] Type d’éléments que le tableau tiendra.
 
 `rank`\
-[in] Nombre d’éléments dans le tableau.
+[dans] Nombre d’éléments dans le tableau.
 
 `pArrayOfTypeField`\
-[out] Retourne le [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) objets qui représentent le nouveau tableau.
+[out] Retourne les objets [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) qui représentent le nouveau tableau.
 
 ## <a name="return-value"></a>Valeur de retour
- En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.
+ En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
 ## <a name="see-also"></a>Voir aussi
 - [IDebugTypeFieldBuilder2](../../../extensibility/debugger/reference/idebugtypefieldbuilder2.md)

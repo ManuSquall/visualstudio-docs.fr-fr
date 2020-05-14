@@ -1,5 +1,5 @@
 ---
-title: IDebugProcessEx2 | Microsoft Docs
+title: IDebugProcessEx2 - France Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProcessEx2 interface
 ms.assetid: 44e309ba-1d6f-499b-aa7e-9b34858a6d57
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5c27a03a09a6073ebab8d7a2dd5f60218066d474
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 743dd1aa72d9b8db6b848618c8a2ad6c8c8ecaaf
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66311604"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80723329"
 ---
 # <a name="idebugprocessex2"></a>IDebugProcessEx2
-Cette interface permet à la session de débogage manager (SDM) notifier un processus qu’il est d’attachement à ou de détachement d’un processus.
+Cette interface permet au gestionnaire de débogé de session (SDM) d’aviser un processus qu’il s’attache au processus ou se détache.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -28,37 +28,37 @@ Cette interface permet à la session de débogage manager (SDM) notifier un proc
 IDebugProcessEx2 : IUnknown
 ```
 
-## <a name="notes-for-implementers"></a>Notes de publication pour les implémenteurs
- Un fournisseur de port personnalisé implémente cette interface sur le même objet que le [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md) de l’interface :
+## <a name="notes-for-implementers"></a>Notes pour les implémenteurs
+ Un fournisseur de port personnalisé implémente cette interface sur le même objet que l’interface [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md) afin de :
 
-- Suivi de prise en charge des sessions connectées à un processus
+- Suivi de support des sessions liées à un processus
 
-- Prise en charge l’attachement automatique entre plusieurs moteurs de débogage
+- Support auto-attacher sur plusieurs moteurs de débogé
 
-  Le fournisseur de port personnalisé peut implémenter cette interface si elle choisit.
+  Le fournisseur de ports personnalisé peut implémenter cette interface s’il le souhaite.
 
-## <a name="notes-for-callers"></a>Notes de publication pour les appelants
+## <a name="notes-for-callers"></a>Notes pour les appelants
 
-- Les appels SDM [QueryInterface](/cpp/atl/queryinterface) sur un `IDebugProcess2` interface pour obtenir cette interface.
+- Le SDM appelle [QueryInterface](/cpp/atl/queryinterface) sur une `IDebugProcess2` interface pour obtenir cette interface.
 
 ## <a name="methods-in-vtable-order"></a>Méthodes dans l'ordre Vtable
- Le tableau suivant présente les méthodes de `IDebugProcessEx2`.
+ Le tableau suivant montre `IDebugProcessEx2`les méthodes de .
 
 |Méthode|Description|
 |------------|-----------------|
-|[Attacher](../../../extensibility/debugger/reference/idebugprocessex2-attach.md)|Informe le processus qu’une session est débogage maintenant le processus.|
-|[Détacher](../../../extensibility/debugger/reference/idebugprocessex2-detach.md)|Informe le processus qu’une session est le débogage n’est plus le processus.|
-|[AddImplicitProgramNodes](../../../extensibility/debugger/reference/idebugprocessex2-addimplicitprogramnodes.md)|Ajoute des nœuds de programme pour obtenir la liste de moteurs de débogage.|
+|[Attach](../../../extensibility/debugger/reference/idebugprocessex2-attach.md)|Informe le processus qu’une session est en train de déboguer le processus.|
+|[Detach](../../../extensibility/debugger/reference/idebugprocessex2-detach.md)|Informe le processus qu’une session n’est plus en train de déboguer le processus.|
+|[AddImplicitProgramNodes](../../../extensibility/debugger/reference/idebugprocessex2-addimplicitprogramnodes.md)|Ajoute des nœuds de programme pour une liste de moteurs débogés.|
 
 ## <a name="remarks"></a>Notes
  Cette interface est privée entre le SDM et le processus.
 
-## <a name="requirements"></a>Configuration requise
- En-tête : Portpriv.h
+## <a name="requirements"></a>Spécifications
+ En-tête: Portpriv.h
 
- Espace de noms : Microsoft.VisualStudio.Debugger.Interop
+ Namespace: Microsoft.VisualStudio.Debugger.Interop
 
- Assembly : Microsoft.VisualStudio.Debugger.Interop.dll
+ Assemblage: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>Voir aussi
 - [Interfaces de base](../../../extensibility/debugger/reference/core-interfaces.md)

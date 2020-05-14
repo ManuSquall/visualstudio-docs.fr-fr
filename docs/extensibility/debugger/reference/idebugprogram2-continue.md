@@ -1,5 +1,5 @@
 ---
-title: IDebugProgram2::Continue | Microsoft Docs
+title: IDebugProgram2:Continuer Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,26 +7,26 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProgram2::Continue
 ms.assetid: e5a6e02a-d21b-4a03-a034-e8de1f71ce2e
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 1c7ea051c9753f6149802c9e92534dd9ee1d8735
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 6d04445a7a1c444f30a0ef5c156dcd7ad744c6f1
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66319389"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80723080"
 ---
 # <a name="idebugprogram2continue"></a>IDebugProgram2::Continue
-Continue de s’exécuter ce programme à partir d’un état arrêté. N’importe quel état de l’exécution précédente (par exemple, une étape) est conservé, et le programme commence à s’exécuter à nouveau.
+Continue à exécuter ce programme à partir d’un état arrêté. Tout état d’exécution précédent (comme une étape) est préservé, et le programme recommence à exécuter.
 
 > [!NOTE]
-> Cette méthode est dépréciée. Utilisez le [continuer](../../../extensibility/debugger/reference/idebugprocess3-continue.md) méthode à la place.
+> Cette méthode est déconseillée. Utilisez plutôt la méthode [Continuer.](../../../extensibility/debugger/reference/idebugprocess3-continue.md)
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -43,17 +43,17 @@ int Continue( 
 ```
 
 ## <a name="parameters"></a>Paramètres
-`pThread` [in] Un [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) objet qui représente le thread.
+`pThread`[dans] Un objet [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) qui représente le fil.
 
 ## <a name="return-value"></a>Valeur de retour
- En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.
+ En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
 ## <a name="remarks"></a>Notes
- Cette méthode est appelée sur ce programme, quel que soit le nombre de programmes est en cours de débogage, ou le programme qui a généré l’événement de l’arrêt. L’implémentation doit conserver l’état de l’exécution précédente (par exemple, une étape) et poursuivre l’exécution comme s’il n’avait jamais arrêté avant la fin de sa précédente exécution. Autrement dit, si un thread dans ce programme a été effectuant une opération de pas à pas principal, a été arrêté, car un autre programme est arrêté, et ensuite cette méthode a été appelée, le programme doit effectuer l’opération de pas à pas principal d’origine.
+ Cette méthode est appelée sur ce programme, peu importe combien de programmes sont débogés, ou quel programme a généré l’événement d’arrêt. La mise en œuvre doit conserver l’état d’exécution précédent (comme une étape) et poursuivre l’exécution comme si elle n’avait jamais cessé avant d’achever son exécution antérieure. Autrement dit, si un fil dans ce programme faisait une opération de step-over et a été arrêté parce qu’un autre programme arrêté, et puis cette méthode a été appelée, le programme doit compléter l’opération d’étape initiale.
 
 > [!WARNING]
-> Ne pas envoyer un événement d’arrêt ou un événement (synchrone) immédiat [événement](../../../extensibility/debugger/reference/idebugeventcallback2-event.md) lors du traitement de cet appel ; sinon, le débogueur peut se bloquer.
+> N’envoyez pas d’événement d’arrêt ou d’événement immédiat (synchrone) à [l’événement](../../../extensibility/debugger/reference/idebugeventcallback2-event.md) pendant le traitement de cet appel; sinon le débbuggeur peut accrocher.
 
 ## <a name="see-also"></a>Voir aussi
 - [IDebugEngineProgram2](../../../extensibility/debugger/reference/idebugengineprogram2.md)
-- [Event](../../../extensibility/debugger/reference/idebugeventcallback2-event.md)
+- [Événement](../../../extensibility/debugger/reference/idebugeventcallback2-event.md)

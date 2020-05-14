@@ -1,27 +1,27 @@
 ---
-title: Sources d’événements (Kit de développement logiciel Visual Studio) | Microsoft Docs
+title: Sources d’événements (Visual Studio SDK) Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Debugging SDK], event sources
 ms.assetid: b9ba0908-ae4c-4a64-aab1-bee453dd7a22
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 96ab4fc69cab50bc5554d626d9c2ac86d49283f4
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 13842ab7b231d04bdbcafdf32534edc4eb2a9af6
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66315309"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80738775"
 ---
-# <a name="event-sources-visual-studio-sdk"></a>Sources d’événements (SDK Visual Studio)
-Il existe deux sources d’événements : le moteur de débogage (dé) et la Session de débogage Manager (SDM). Événements envoyés à partir d’un D’ont un moteur non NULL, tandis que les événements envoyés par le SDM ont un moteur NULL.
+# <a name="event-sources-visual-studio-sdk"></a>Sources d’événements (Visual Studio SDK)
+Il existe deux sources d’événements : le moteur de débogé (DE) et le Responsable Debug Session (SDM). Les événements envoyés à partir d’un DE ont un moteur non-NULL, tandis que les événements envoyés à partir du SDM ont un moteur NULL.
 
 ## <a name="example"></a>Exemple
-L’exemple suivant montre comment envoyer la **IDebugProgramCreateEvent2** à partir de l’Allemagne pour le SDM.
+L’exemple suivant montre comment envoyer **l’IDebugProgramCreateEvent2** de la DE au SDM.
 
 ```csharp
 CDebugProgramCreateEvent* pProgramCreateEvent = new CDebugProgramCreateEvent();
@@ -73,4 +73,4 @@ HRESULT CEvent::SendAsynchronousEvent(IDebugEventCallback2 *pCallback, IDebugEng
 ```
 
 ## <a name="see-also"></a>Voir aussi
-- [Envoi d’événements](../../extensibility/debugger/sending-events.md)
+- [Envoi des événements](../../extensibility/debugger/sending-events.md)

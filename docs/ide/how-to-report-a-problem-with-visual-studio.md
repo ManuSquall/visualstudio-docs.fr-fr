@@ -4,17 +4,17 @@ description: Découvrez comment signaler un problème avec Visual Studio.
 ms.date: 03/11/2018
 ms.topic: conceptual
 ms.assetid: bee01179-cde5-4419-9095-190ee0ba5902
-ms.author: seiyer
-author: seaniyer
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2b130c321e57cdeea6b703b0e439d6b0f15a1a96
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 3fca63b5e117f77d07c54f7556a603052853c7ef
+ms.sourcegitcommit: 22deb247ad951e4971f27fdab413b158415d0584
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62947695"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81276499"
 ---
 # <a name="how-to-report-a-problem-with-visual-studio-or-visual-studio-installer"></a>Guide pratique pour signaler un problème avec Visual Studio ou Visual Studio Installer
 
@@ -23,8 +23,8 @@ ms.locfileid: "62947695"
 
 Il est possible de signaler un problème dans Visual Studio ou dans son programme d’installation à l’aide de l’outil Feedback Tool inclus. Ce dernier vous permet d’inclure facilement des informations de diagnostic dans vos commentaires et aide les équipes de Visual Studio à diagnostiquer et à résoudre les problèmes beaucoup plus efficacement. Voici les étapes à suivre pour signaler un problème.
 
-1. **Dans Visual Studio**, sélectionnez l’icône de commentaires en haut à droite et sélectionnez Signaler un problème. Feedback Tool est également accessible dans le menu **Aide** > **Envoyer des commentaires** > **Signaler un problème**.
-Fenêtre contextuelle ![Signaler un problème sur la communauté des développeurs Visual Studio](media/vsfeedbackentry.png) Si vous ne parvenez pas à installer Visual Studio ou à accéder à Feedback Tool dans Visual Studio, signalez un problème dans **Visual Studio Installer**.  Dans le programme d’installation, sélectionnez l’icône de commentaires en haut à droite, puis Signaler un problème.
+1. **Dans Visual Studio**, sélectionnez l’icône de commentaires en haut à droite et sélectionnez Signaler un problème. Vous pouvez également accéder à l’outil de rétroaction à partir du menu **Aide Envoyer** > **rapport de rétroaction** > **un problème**.
+![Signalez un problème pop-up](media/vsfeedbackentry.png) sur Visual Studio Developer Community Alternativement, signaler un problème dans **Visual Studio Install si** vous ne pouvez pas installer Visual Studio ou ne sont pas en mesure d’accéder à l’outil de rétroaction au sein de Visual Studio.  Dans le programme d’installation, sélectionnez l’icône de commentaires en haut à droite, puis Signaler un problème.
 ![Fenêtre contextuelle Signaler un problème sur la communauté des développeurs Visual Studio](media/installer.png)
 
 1. Si ce n’est pas déjà fait, sélectionnez **Se connecter** comme sur la capture d’écran suivante. Suivez les instructions à l’écran pour vous connecter.
@@ -43,7 +43,7 @@ Fenêtre contextuelle ![Signaler un problème sur la communauté des développeu
 
    ![Rechercher et voter pour des problèmes similaires](../ide/media/search-and-vote.png)
 
-1. Si vous ne trouvez pas le problème rencontré, choisissez **Signaler un nouveau problème** en bas de l’écran.
+1. Si vous ne trouvez pas le problème que vous avez rencontré, choisissez **Report nouveau problème** au bas de l’écran.
 
    > [!NOTE]
    > Le bouton **Signaler un nouveau problème** apparaît uniquement dans l’interface de Visual Studio pour la Communauté des développeurs. Vous ne pouvez pas signaler un problème directement sur le site web de la [Communauté des développeurs](https://developercommunity.visualstudio.com/).
@@ -54,7 +54,7 @@ Fenêtre contextuelle ![Signaler un problème sur la communauté des développeu
 
    ![Signaler un nouveau problème](../ide/media/report-new-problem.png)
 
-1. Sélectionnez **Suivant** pour accéder à l’onglet **Pièces jointes**. Ici, vous pouvez effectuer une capture d’écran pour l’envoyer à Microsoft. Pour joindre d’autres captures d’écran ou d’autres fichiers, choisissez **Joindre des fichiers supplémentaires**.
+1. Sélectionnez **À côté** de passer à l’onglet **Pièces jointes.** Ici, vous pouvez capturer votre écran actuel pour l’envoyer à Microsoft. Pour joindre d’autres captures d’écran ou d’autres fichiers, choisissez **Joindre des fichiers supplémentaires**.
 
    ![Joindre une capture d’écran à un rapport de problème Visual Studio](media/report-a-problem-screenshot.png)
 
@@ -72,7 +72,7 @@ Les fichiers heap dump et de trace nous sont utiles pour faciliter le diagnostic
 
 1. Sélectionnez l’onglet **Enregistrer**.
 
-1. Sous **Enregistrer vos actions**, sélectionnez l’instance actuelle de Visual Studio si vous pouvez y reproduire le problème. Si vous ne le pouvez pas, par exemple si Visual Studio ne répond pas, sélectionnez **\<Créer une instance>** pour enregistrer les actions dans une nouvelle instance de Visual Studio.
+1. Sous **Enregistrer vos actions**, sélectionnez l’instance actuelle de Visual Studio si vous pouvez y reproduire le problème. Si vous ne pouvez pas, par exemple si Visual Studio est accroché, ** \<sélectionnez Créer une nouvelle instance>** d’enregistrer les actions dans une nouvelle instance de Visual Studio.
 
 1. Sélectionnez **Démarrer l’enregistrement**. Accordez l’autorisation d’exécuter l’outil.
 
@@ -122,8 +122,8 @@ Si vous n’avez pas de problème à signaler, mais que vous voulez suggérer un
 
 ## <a name="see-also"></a>Voir aussi
 
-* [Nous contacter](../ide/talk-to-us.md)
-* [Signaler un problème avec Visual Studio pour Mac](/visualstudio/mac/report-a-problem)
+* [Options de commentaires de Visual Studio](../ide/feedback-options.md)
+* [Signalez un problème avec Visual Studio pour Mac](/visualstudio/mac/report-a-problem)
 * [Signaler un problème avec C++](/cpp/how-to-report-a-problem-with-the-visual-cpp-toolset)
 * [Communauté des développeurs Visual Studio](https://developercommunity.visualstudio.com/)
 * [Confidentialité des données de la communauté des développeurs](developer-community-privacy.md)

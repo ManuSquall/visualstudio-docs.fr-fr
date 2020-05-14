@@ -1,5 +1,5 @@
 ---
-title: IDebugProgram2::Execute | Microsoft Docs
+title: IDebugProgram2::Execute Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,26 +7,26 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProgram2::Execute
 ms.assetid: f7205ce8-0ac6-4fcd-b6ec-b720b4fcaccf
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 27730528b552e4a545725a7a7463475be6038bba
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: f34ebea67ff95d1da6d777cdd828604f4a2f56e8
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66329809"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80722980"
 ---
 # <a name="idebugprogram2execute"></a>IDebugProgram2::Execute
-Continue de s’exécuter ce programme à partir d’un état arrêté. N’importe quel état de l’exécution précédente (par exemple, une étape) est désactivée, et le programme commence à s’exécuter à nouveau.
+Continue à exécuter ce programme à partir d’un état arrêté. Tout état d’exécution précédent (comme une étape) est effacé, et le programme commence à exécuter à nouveau.
 
 > [!NOTE]
-> Cette méthode est dépréciée. Utilisez le [Execute](../../../extensibility/debugger/reference/idebugprocess3-execute.md) méthode à la place.
+> Cette méthode est déconseillée. Utilisez la méthode [Exécuter](../../../extensibility/debugger/reference/idebugprocess3-execute.md) à la place.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -41,15 +41,15 @@ int Execute();
 ```
 
 ## <a name="return-value"></a>Valeur de retour
- En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.
+ En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
 ## <a name="remarks"></a>Notes
- Lorsque l’utilisateur commence l’exécution à partir d’un état arrêté dans les threads d’un autre programme, cette méthode est appelée sur ce programme. Cette méthode est également appelée lorsque l’utilisateur sélectionne le **Démarrer** commande à partir de la **déboguer** menu dans l’IDE. L’implémentation de cette méthode peut être aussi simple que si vous appelez le [Resume](../../../extensibility/debugger/reference/idebugthread2-resume.md) méthode sur le thread actuel dans le programme.
+ Lorsque l’utilisateur commence l’exécution à partir d’un état arrêté dans le thread d’un autre programme, cette méthode est appelée sur ce programme. Cette méthode est également appelée lorsque l’utilisateur sélectionne la commande **Démarrer** à partir du menu **Debug** dans l’IDE. La mise en œuvre de cette méthode peut être aussi simple que d’appeler la méthode [Resume](../../../extensibility/debugger/reference/idebugthread2-resume.md) sur le fil actuel dans le programme.
 
 > [!WARNING]
-> Ne pas envoyer un événement d’arrêt ou un événement (synchrone) immédiat [événement](../../../extensibility/debugger/reference/idebugeventcallback2-event.md) lors du traitement de cet appel ; sinon, le débogueur peut se bloquer.
+> N’envoyez pas d’événement d’arrêt ou d’événement immédiat (synchrone) à [l’événement](../../../extensibility/debugger/reference/idebugeventcallback2-event.md) pendant le traitement de cet appel; sinon le débbuggeur peut accrocher.
 
 ## <a name="see-also"></a>Voir aussi
 - [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)
-- [Event](../../../extensibility/debugger/reference/idebugeventcallback2-event.md)
-- [Resume](../../../extensibility/debugger/reference/idebugthread2-resume.md)
+- [Événement](../../../extensibility/debugger/reference/idebugeventcallback2-event.md)
+- [Reprendre](../../../extensibility/debugger/reference/idebugthread2-resume.md)

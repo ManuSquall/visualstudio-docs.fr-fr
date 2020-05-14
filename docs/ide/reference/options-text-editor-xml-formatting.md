@@ -9,28 +9,28 @@ author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.openlocfilehash: b5dabfbc4f705d7de9fa881f373994714e43d26a
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75568137"
 ---
 # <a name="options-text-editor-xml-formatting"></a>Options, Éditeur de texte, XML, Mise en forme
 
-Utilisez la page d’options **Mise en forme** pour spécifier la mise en forme des éléments et des attributs dans vos documents XML. Pour accéder aux options de mise en forme XML, choisissez **Outils** > **Options** > **Éditeur de texte** > **XML**, puis **Mise en forme**.
+Utilisez la page d’options **Mise en forme** pour spécifier la mise en forme des éléments et des attributs dans vos documents XML. Pour accéder aux options de formatage XML, choisissez **Tools** > **Options** > **Text Editor** > **XML**, puis choisissez **Formatting**.
 
 ## <a name="attributes"></a>Attributs
 
 **Préserver la mise en forme manuelle des attributs**
 
-Ne remet pas en forme les attributs. Il s’agit du paramétrage par défaut.
+Indique qu'il ne faut pas remettre en forme les attributs. Il s’agit du paramètre par défaut.
 
 > [!NOTE]
-> Si les attributs figurent sur plusieurs lignes, l'éditeur met en retrait chaque ligne d'attributs au niveau d'indentation de l'élément parent.
+> Si les attributs se trouvent sur plusieurs lignes, l'éditeur met en retrait chaque ligne d'attributs de façon à correspondre à la mise en retrait de l'élément parent.
 
-**Aligner les attributs chacun sur une ligne séparée**
+**Aligner les attributs chacun sur une ligne séparée **
 
-À partir du deuxième attribut, aligne les attributs verticalement au niveau d’indentation du premier attribut. Le texte XML suivant illustre la façon dont les attributs sont alignés :
+Aligne verticalement le deuxième attribut et les attributs suivants de façon à correspondre à la mise en retrait du premier attribut. Le texte XML suivant illustre la façon dont les attributs sont alignés :
 
 ```xml
 <item id = "123-A"
@@ -41,21 +41,21 @@ Ne remet pas en forme les attributs. Il s’agit du paramétrage par défaut.
 
 ## <a name="auto-reformat"></a>Remise en forme automatique
 
-**En collant le contenu du presse-papiers**
+**Sur la pâte du presse-papiers**
 
 Remet en forme le texte XML collé à partir du Presse-papiers.
 
-**Après la balise de fin**
+**Après la balise de fin **
 
-Remet l’élément en forme une fois la balise de fin complétée.
+Remet en forme l'élément lorsque la balise de fin est insérée.
 
 ## <a name="mixed-content"></a>Contenu mixte
 
-**Mettre en forme les contenus mixtes par défaut**
+**Formater les contenus mixtes par défaut **
 
-Tente de remettre en forme le contenu mixte, sauf lorsque celui-ci se trouve dans une étendue `xml:space="preserve"`. Il s’agit du paramétrage par défaut.
+Tente de remettre en forme le contenu mixte, sauf lorsque celui-ci se trouve dans une étendue `xml:space="preserve"`. Il s’agit du paramètre par défaut.
 
-Si un élément contient un mélange de texte et de balises, ce contenu est considéré comme mixte. Voici un exemple d’élément avec un contenu mixte.
+Si un élément contient un mélange de texte et de balises, le contenu est considéré comme mixte. Voici un exemple de contenu mixte.
 
 ```xml
 <dir>c:\data\AlphaProject\

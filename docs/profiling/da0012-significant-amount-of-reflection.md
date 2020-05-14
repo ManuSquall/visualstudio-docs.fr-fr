@@ -15,23 +15,23 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 1c1b96e9a73b488ba9c9920e8ea43e27f78f67ed
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74777671"
 ---
 # <a name="da0012-significant-amount-of-reflection"></a>DA0012 : Quantité importante de réflexion
 
 |||
 |-|-|
-|ID de la règle|DA0012|
+|ID de règle|DA0012|
 |Category|Utilisation du .NET Framework|
-|Méthodes de profilage|Échantillonnage|
+|Méthodes de profilage|échantillonnage|
 |Message|Vous utilisez trop de réflexion. C’est une opération coûteuse.|
-|Type de règle|Warning|
+|Type de règle|Avertissement|
 
-## <a name="cause"></a>Cause
+## <a name="cause"></a>Cause :
  Les appels aux méthodes System.Reflection, telles que InvokeMember et GetMember, ou aux méthodes de type telles que MemberInvoke, représentent une part importante des données de profilage. Si possible, remplacez ces méthodes par une liaison anticipée aux méthodes des assemblys dépendants.
 
 ## <a name="rule-description"></a>Description de la règle

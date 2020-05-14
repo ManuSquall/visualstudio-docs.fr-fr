@@ -17,10 +17,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 031f1a4bab1acee3f3d0999b17c0b607f7808df9
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75596903"
 ---
 # <a name="alias-command"></a>Alias, commande
@@ -37,19 +37,19 @@ Tools.Alias [/delete] [/reset] [aliasname] [aliasstring]
 
 ## <a name="arguments"></a>Arguments
 `aliasname`\
-Option facultative. Nom du nouvel alias. Si aucune valeur n’est fournie pour `aliasname`, la liste des alias en cours accompagnés de leur définition s’affiche.
+facultatif. Nom du nouvel alias. Si aucune valeur n’est fournie pour `aliasname`, la liste des alias en cours accompagnés de leur définition s’affiche.
 
 `aliasstring`\
-Option facultative. Nom complet de la commande ou alias existant suivi des paramètres souhaités pour créer un alias. Si aucune valeur n’est fournie pour `aliasstring`, le nom et la chaîne associés à l’alias spécifié s’affichent.
+facultatif. Nom complet de la commande ou alias existant suivi des paramètres souhaités pour créer un alias. Si aucune valeur n’est fournie pour `aliasstring`, le nom et la chaîne associés à l’alias spécifié s’affichent.
 
 ## <a name="switches"></a>Commutateurs
 /delete ou /del ou /d\
-Option facultative. Supprime l’alias spécifié, qui n’apparaît plus dans la liste de saisie semi-automatique.
+facultatif. Supprime l’alias spécifié, qui n’apparaît plus dans la liste de saisie semi-automatique.
 
 /reset\
-Option facultative. Rétablit les paramètres d’origine de la liste d’alias prédéfinis. En d’autres termes, ce commutateur restaure tous les alias prédéfinis et supprime tous les alias définis par l’utilisateur.
+facultatif. Rétablit les paramètres d’origine de la liste d’alias prédéfinis. En d’autres termes, ce commutateur restaure tous les alias prédéfinis et supprime tous les alias définis par l’utilisateur.
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Notes 
 Dans la mesure où un alias représente des commandes, il doit être placé au début de la ligne de commande.
 
 Lors de l’émission de cette commande, vous devez inclure les commutateurs immédiatement après la commande, et non après les alias, sans quoi le commutateur lui-même sera inclus dans la chaîne de l’alias.
@@ -77,7 +77,7 @@ Cet exemple affiche la liste de tous les alias en cours accompagnés de leur dé
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Visual Studio, commandes](../../ide/reference/visual-studio-commands.md)
-- [Fenêtre Commande](../../ide/reference/command-window.md)
-- [Rechercher/Commande, zone](../../ide/find-command-box.md)
-- [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)
+- [Commandes de studio visuel](../../ide/reference/visual-studio-commands.md)
+- [Commande, fenêtre](../../ide/reference/command-window.md)
+- [Boîte de recherche/commande](../../ide/find-command-box.md)
+- [Alias de commande de studio visuel](../../ide/reference/visual-studio-command-aliases.md)

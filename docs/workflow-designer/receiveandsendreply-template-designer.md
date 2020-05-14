@@ -1,5 +1,5 @@
 ---
-title: Concepteur de flux de travail-concepteur de modèles ReceiveAndSendReply
+title: Concepteur de flux de travail - Concepteur de modèles de receiveAndSendReply
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -11,51 +11,51 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a816013f4eceb390a16e76a06814043aa0adaeb8
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 042032efe745a9cb38bbf4e362cb5ad8440129ba
+ms.sourcegitcommit: d6828e7422c8d74ec1e99146fedf0a05f757245f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72650019"
+ms.lasthandoff: 03/30/2020
+ms.locfileid: "80395299"
 ---
 # <a name="receiveandsendreply-template-designer"></a>Concepteur de modèles ReceiveAndSendReply
 
-Le modèle **ReceiveAndSendReply** est utilisé pour créer une paire d’activités préconfigurées <xref:System.ServiceModel.Activities.Receive> et <xref:System.ServiceModel.Activities.SendReply>. Les activités font partie d’une activité de <xref:System.Activities.Statements.Sequence> et sont corrélées dans le cadre d’un modèle d’échange de messages de demande/réponse sur le serveur.
+Le modèle **ReceiveAndSendReply** est utilisé pour créer <xref:System.ServiceModel.Activities.Receive> une <xref:System.ServiceModel.Activities.SendReply> paire d’activités préconfigurées et. Les activités font <xref:System.Activities.Statements.Sequence> partie d’une activité et sont corrélées dans le cadre d’un modèle d’échange de messages de demande/réponse sur le serveur.
 
-## <a name="the-receiveandsendreply-template"></a>Modèle ReceiveAndSendReply
+## <a name="the-receiveandsendreply-template"></a>Le modèle ReceiveAndSendReply
 
-L’ajout d’un modèle **ReceiveAndSendReply** effectue trois opérations en plus de créer le <xref:System.ServiceModel.Activities.Receive> et <xref:System.ServiceModel.Activities.SendReply> activités avec une activité <xref:System.Activities.Statements.Sequence> :
+L’ajout **d’un modèle ReceiveAndSendReply** fait trois choses en plus de créer le et <xref:System.ServiceModel.Activities.Receive> <xref:System.ServiceModel.Activities.SendReply> les activités avec une <xref:System.Activities.Statements.Sequence> activité:
 
-- Configure les propriétés <xref:System.ServiceModel.Activities.Receive.OperationName%2A> et <xref:System.ServiceModel.Activities.Receive.ServiceContractName%2A> de l’activité <xref:System.ServiceModel.Activities.Receive>.
+- Configure les <xref:System.ServiceModel.Activities.Receive.OperationName%2A> <xref:System.ServiceModel.Activities.Receive.ServiceContractName%2A> propriétés <xref:System.ServiceModel.Activities.Receive> et les propriétés de l’activité.
 
 - Il lie la propriété <xref:System.ServiceModel.Activities.SendReply.Request%2A> de l'activité <xref:System.ServiceModel.Activities.Receive> à l'activité <xref:System.ServiceModel.Activities.Send>.
 
 - Il crée un objet <xref:System.ServiceModel.Activities.CorrelationHandle> comme variable dans l'activité parente.
 
-### <a name="use-the-receiveandsendreply-template-designer"></a>Utiliser le concepteur de modèles ReceiveAndSendReply
+### <a name="use-the-receiveandsendreply-template-designer"></a>Utilisez le concepteur de modèles ReceiveAndSendReply
 
-Accédez au concepteur d’activités **ReceiveAndSendReply** dans la catégorie **messagerie** de la **boîte à outils**. Le concepteur d’activités **ReceiveAndSendReply** peut être déplacé de la **boîte à outils** et déposé dans l’aire de concepteur de flux de travail, là où les activités sont généralement placées. La suppression du concepteur d’activités crée une activité <xref:System.ServiceModel.Activities.Receive> qui peut être configurée avec le concepteur d’activités **Send** et un <xref:System.ServiceModel.Activities.SendReply> corrélé qui peut être configuré avec SendReplyToReceive designer.
+Accédez au concepteur d’activités **ReceiveAndSendReply** dans la catégorie **Messagerie** de la **Boîte à outils**. Le concepteur **d’activités ReceiveAndSendReply** peut être traîné de la boîte à **outils** et déposé sur la surface Workflow Designer partout où les activités sont généralement placées. L’abandon du <xref:System.ServiceModel.Activities.Receive> concepteur d’activité crée une activité qui peut <xref:System.ServiceModel.Activities.SendReply> être configurée avec le concepteur d’activité **Envoyer** et une corrélation qui peut être configurée avec le concepteur SendReplyToReceive.
 
-Pour plus d’informations sur l’utilisation du concepteur de **réception** pour configurer l’activité <xref:System.ServiceModel.Activities.Receive>, consultez le [Concepteur d’activités Receive](../workflow-designer/receive-activity-designer.md).
+Pour plus d’informations sur l’utilisation du concepteur **Receive** pour configurer l’activité, <xref:System.ServiceModel.Activities.Receive> voir [Recevoir Activity Designer](../workflow-designer/receive-activity-designer.md).
 
 ### <a name="properties-of-sendreply"></a>Propriétés de SendReply
 
-Le tableau suivant présente les propriétés de <xref:System.ServiceModel.Activities.SendReply> et décrit comment elles sont utilisées dans le concepteur. Ces propriétés peuvent être modifiées dans la grille des propriétés, et certaines d’entre elles peuvent être modifiées sur l’aire de Concepteur de flux de travail.
+Le tableau suivant présente les propriétés de <xref:System.ServiceModel.Activities.SendReply> et décrit comment elles sont utilisées dans le concepteur. Ces propriétés peuvent être modifiées dans la grille des propriétés, et certaines peuvent être modifiées sur la surface Workflow Designer.
 
-| Nom de propriété | Obligatoire | Utilisation |
+| Nom de la propriété | Obligatoire | Usage |
 |-|----------|-|
-| <xref:System.Activities.Activity.DisplayName%2A> | False | Nom convivial facultatif de l'activité <xref:System.ServiceModel.Activities.SendReply>. La valeur par défaut est SendReplyToReceive.<br /><br /> Bien que l’utilisation d’une valeur non définie par défaut pour le <xref:System.Activities.Activity.DisplayName%2A> convivial ne soit pas strictement obligatoire, il est préférable d’utiliser une telle valeur. |
-| <xref:System.ServiceModel.Activities.SendReply.Request%2A> | True | Référence à l'activité <xref:System.ServiceModel.Activities.Receive> associée à cette activité <xref:System.ServiceModel.Activities.SendReply>. Cette propriété ne doit pas être **null**. Les activités <xref:System.ServiceModel.Activities.Receive> et <xref:System.ServiceModel.Activities.SendReply> sont utilisées ensemble sur le serveur pour modéliser un modèle de messagerie de demande/réponse. Cette propriété spécifie l'activité <xref:System.ServiceModel.Activities.Send> qui est associée. Dans le concepteur, vous ne pouvez pas modifier cette propriété, car elle est automatiquement liée à l’activité <xref:System.ServiceModel.Activities.Send> à partir de laquelle vous avez créé l’activité <xref:System.ServiceModel.Activities.SendReply>. |
-| <xref:System.ServiceModel.Activities.SendReply.Content%2A> | False | Spécifie le contenu du message ou du paramètre à recevoir. Il peut s'agir d'une activité <xref:System.ServiceModel.Activities.ReceiveMessageContent> ou d'une activité <xref:System.ServiceModel.Activities.ReceiveParametersContent>. Modifiez cette propriété en cliquant sur le bouton de sélection en regard du champ **contenu** dans la grille des propriétés, ou en cliquant sur le bouton **définir** en regard de l’étiquette **contenu** dans l’aire du concepteur d’activités **Receive** . Les deux affichent la boîte de dialogue **définition du contenu** . Pour plus d’informations sur l’utilisation de cette zone, consultez la rubrique de la boîte de [dialogue Définition du contenu](../workflow-designer/content-definition-dialog-box.md) . |
-| <xref:System.ServiceModel.Activities.SendReply.CorrelationInitializers%2A> | False | Spécifie la collection d’objets <xref:System.ServiceModel.Activities.CorrelationInitializer> initialisant plusieurs objets <xref:System.ServiceModel.Activities.CorrelationHandle> qui configurent cette activité <xref:System.ServiceModel.Activities.Receive> dans le workflow. Cliquez sur le bouton de sélection en regard de la <xref:System.ServiceModel.Activities.SendReply.CorrelationInitializers%2A> propriété dans la grille des propriétés pour ouvrir la boîte de dialogue **Ajouter des initialiseurs de corrélation** . Pour plus d’informations sur l’utilisation de cette zone, consultez la rubrique de la boîte de [dialogue Ajouter un CorrelationInitializers](../workflow-designer/add-correlationinitializers-dialog-box.md) . |
-| <xref:System.ServiceModel.Activities.SendReply.Action%2A> | False | Spécifie l'en-tête Action header du message. S’il n’est pas défini explicitement, sa valeur par défaut est :<br /><br /> <strong>espace de noms de contrat de https://tempuri.org/{service }/{nom du nom de contrat} l’opération}</strong> |
+| <xref:System.Activities.Activity.DisplayName%2A> | False | Nom convivial facultatif de l'activité <xref:System.ServiceModel.Activities.SendReply>. La valeur par défaut est SendReplyToReceive.<br /><br /> Bien que l’utilisation d’une <xref:System.Activities.Activity.DisplayName%2A> valeur non-default pour le sympathique n’est pas strictement nécessaire, il est préférable d’utiliser une telle valeur. |
+| <xref:System.ServiceModel.Activities.SendReply.Request%2A> | True | Référence à l'activité <xref:System.ServiceModel.Activities.Receive> associée à cette activité <xref:System.ServiceModel.Activities.SendReply>. Cette propriété ne doit pas être **nulle**. <xref:System.ServiceModel.Activities.Receive>et <xref:System.ServiceModel.Activities.SendReply> les activités sont utilisées ensemble sur le serveur pour modéliser un modèle de messagerie de demande/réponse. Cette propriété spécifie l'activité <xref:System.ServiceModel.Activities.Send> qui est associée. Dans le concepteur, vous ne pouvez pas modifier cette <xref:System.ServiceModel.Activities.Send> propriété car elle <xref:System.ServiceModel.Activities.SendReply> est automatiquement liée à l’activité à partir de laquelle vous avez créé l’activité. |
+| <xref:System.ServiceModel.Activities.SendReply.Content%2A> | False | Spécifie le contenu du message ou du paramètre à recevoir. Il peut s'agir d'une activité <xref:System.ServiceModel.Activities.ReceiveMessageContent> ou d'une activité <xref:System.ServiceModel.Activities.ReceiveParametersContent>. Modifier cette propriété en cliquant sur le bouton ellipsis à côté du champ **de contenu** dans la grille de propriété, ou en cliquant sur le bouton **Définir** à côté **de l’étiquette de contenu** sur la surface du concepteur d’activités **Recevoir.** Les deux affichent le dialogue **de définition de** contenu. Pour plus d’informations sur la façon d’utiliser cette boîte, consultez le sujet de la [boîte de dialogue de définition de](../workflow-designer/content-definition-dialog-box.md) contenu. |
+| <xref:System.ServiceModel.Activities.SendReply.CorrelationInitializers%2A> | False | Spécifie la collection d’objets <xref:System.ServiceModel.Activities.CorrelationInitializer> initialisant plusieurs objets <xref:System.ServiceModel.Activities.CorrelationHandle> qui configurent cette activité <xref:System.ServiceModel.Activities.Receive> dans le workflow. Cliquez sur le bouton ellipsis à côté de la <xref:System.ServiceModel.Activities.SendReply.CorrelationInitializers%2A> propriété dans la grille de propriétés pour ouvrir la boîte de dialogue Add Correlation **Initializers.** Pour plus d’informations sur l’utilisation de cette boîte, voir le sujet [Add CorrelationInitializers Dialog Box.](../workflow-designer/add-correlationinitializers-dialog-box.md) |
+| <xref:System.ServiceModel.Activities.SendReply.Action%2A> | False | Spécifie l'en-tête Action header du message. S’il n’est pas explicitement défini, sa valeur est par défaut pour :<br /><br /> `https://tempuri.org/{service contract namespace}/{service contract name}/{operation name}` |
 | <xref:System.ServiceModel.Activities.SendReply.PersistBeforeSend%2A> | False | Spécifie si l'instance de workflow doit être persistante avant que le message de réponse ne soit envoyé. La valeur par défaut est **false**. |
 
 ## <a name="see-also"></a>Voir aussi
 
 - [CorrelationScope](../workflow-designer/correlationscope-activity-designer.md)
 - [InitializeCorrelation](../workflow-designer/initializecorrelation-activity-designer.md)
-- [Receive](../workflow-designer/receive-activity-designer.md)
-- [Send](../workflow-designer/send-activity-designer.md)
+- [Recevoir](../workflow-designer/receive-activity-designer.md)
+- [Envoyer](../workflow-designer/send-activity-designer.md)
 - [SendAndReceiveReply](../workflow-designer/sendandreceivereply-template-designer.md)
 - [TransactedReceiveScope](../workflow-designer/transactedreceivescope-activity-designer.md)

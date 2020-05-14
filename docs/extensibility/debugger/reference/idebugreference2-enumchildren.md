@@ -1,5 +1,5 @@
 ---
-title: IDebugReference2::EnumChildren | Microsoft Docs
+title: IDebugReference2::EnumChildren ( Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugReference2::EnumChildren
 ms.assetid: 35b3c2f3-69f4-4013-b555-f847221f62e8
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 432a3c25722ae7adb966efa6998c42680bd60307
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 96b2fec782ce88dfb2200df35f56b35b304beda5
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66335771"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80720634"
 ---
 # <a name="idebugreference2enumchildren"></a>IDebugReference2::EnumChildren
-Obtenir la liste des enfants sélectionnés d’une référence. Réservé à un usage ultérieur.
+Obtenez une liste des enfants sélectionnés d’une référence. Réservé pour un usage futur.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -51,22 +51,22 @@ int EnumChildren ( 
 
 ## <a name="parameters"></a>Paramètres
 `dwFields`\
-[in] Une combinaison d’indicateurs de la [DEBUGREF_INFO_FLAGS](../../../extensibility/debugger/reference/debugref-info-flags.md) énumération qui spécifie les champs dans la liste énumérée [DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md) structures doivent être renseignés.
+[dans] Une combinaison de drapeaux de [l’énumération DEBUGREF_INFO_FLAGS](../../../extensibility/debugger/reference/debugref-info-flags.md) qui précise quels champs dans les structures [DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md) énumérées doivent être remplis.
 
 `dwRadix`\
-[in] La base à utiliser dans toutes les informations numériques de mise en forme.
+[dans] Le radix à utiliser pour formater toute information numérique.
 
 `dwAttribFilter`\
-[in] Une combinaison d’indicateurs de la [DBG_ATTRIB_FLAGS](../../../extensibility/debugger/reference/dbg-attrib-flags.md) énumération qui est utilisée en tant que filtre en association avec le `pszNameFilter` paramètre pour sélectionner les structures doivent être énumérés.
+[dans] Une combinaison de drapeaux de [l’DBG_ATTRIB_FLAGS](../../../extensibility/debugger/reference/dbg-attrib-flags.md) recensement qui est utilisé comme `pszNameFilter` filtre en combinaison avec le paramètre pour sélectionner les structures qui doivent être énumérées.
 
 `pszNameFilter`\
-[in] Chaîne spécifiant un filtre, tel que « MyX », utilisée en association avec le `dwAttribFilter` paramètre pour sélectionner les structures à énumérer.
+[dans] Une chaîne spécifiant un filtre, tel que `dwAttribFilter` "MyX", utilisé en combinaison avec le paramètre pour sélectionner les structures à énumérer.
 
 `dwTimeout`\
-[in] Durée maximale, en millisecondes, à attendre avant de retourner à partir de cette méthode. Utilisez `INFINITE` pour attendre indéfiniment.
+[dans] Temps maximum, en millisecondes, d’attendre avant de revenir de cette méthode. Utilisez-le `INFINITE` pour attendre indéfiniment.
 
 `ppEnum`\
-[out] Retourne un [IEnumDebugReferenceInfo2](../../../extensibility/debugger/reference/ienumdebugreferenceinfo2.md) objet qui contient une liste des propriétés enfant demandé.
+[out] Retourne un objet [IEnumDebugReferenceInfo2](../../../extensibility/debugger/reference/ienumdebugreferenceinfo2.md) qui contient une liste des biens demandés pour enfants.
 
 ## <a name="return-value"></a>Valeur de retour
  Retourne toujours `E_NOTIMPL`.

@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 94ac6e9e85a2d7dd504b2d2bd83bd1bbdb265ea0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "62776775"
 ---
 # <a name="channels-threads-view"></a>Canaux (vue Threads)
@@ -48,4 +48,4 @@ Le visualiseur concurrentiel montre quatre types de canaux : les canaux de thre
  Les canaux GPU affichent des informations concernant l’activité DirectX 11 sur le système.  Chaque moteur DirectX qui est associé à la carte graphique dispose d’un canal distinct.  Chaque segment correspond à la durée de traitement d’un paquet DMA.
 
 ## <a name="see-also"></a>Voir aussi
-- [Vue Threads](../profiling/threads-view-parallel-performance.md)
+- [Vue de fils](../profiling/threads-view-parallel-performance.md)

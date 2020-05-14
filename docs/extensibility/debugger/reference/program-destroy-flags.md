@@ -1,27 +1,27 @@
 ---
-title: PROGRAM_DESTROY_FLAGS | Microsoft Docs
+title: PROGRAM_DESTROY_FLAGS Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - PROGRAM_DESTROY_FLAGS enumeration
 ms.assetid: be00d4a3-d5b8-4159-b632-64577f534883
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: d6bd8a309612ce2681649bb4602014dc3c627e9d
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: c2ddb00e2cf70055c34335d8f2123004eb031a05
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66309291"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80713846"
 ---
-# <a name="programdestroyflags"></a>PROGRAM_DESTROY_FLAGS
-Énumère les valeurs du programme détruire des indicateurs.
+# <a name="program_destroy_flags"></a>PROGRAM_DESTROY_FLAGS
+Énumère les valeurs valides du programme détruisent les drapeaux.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -42,17 +42,17 @@ public enum enum_PPROGRAM_DESTROY_FLAGS
 
 ## <a name="fields"></a>Champs
  `PROGRAM_DESTROY_CONTINUE_DEBUGGING`\
- Détruire le programme, mais continuer à déboguer.
+ Détruire le programme, mais continuer à déboiffer.
 
 ## <a name="remarks"></a>Notes
- L’énumération est retournée par la [GetFlags](../../../extensibility/debugger/reference/idebugprogramdestroyeventflags2-getflags.md) (méthode).
+ L’énumération est retournée par la méthode [GetFlags.](../../../extensibility/debugger/reference/idebugprogramdestroyeventflags2-getflags.md)
 
-## <a name="requirements"></a>Configuration requise
- En-tête : Msdbg.h
+## <a name="requirements"></a>Spécifications
+ En-tête: Msdbg.h
 
- Espace de noms : Microsoft.VisualStudio.Debugger.Interop
+ Namespace: Microsoft.VisualStudio.Debugger.Interop
 
- Assembly : Microsoft.VisualStudio.Debugger.Interop.dll
+ Assemblage: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>Voir aussi
 - [Énumérations](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)

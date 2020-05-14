@@ -1,5 +1,5 @@
 ---
-title: MACHINE_INFO | Microsoft Docs
+title: MACHINE_INFO Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - MACHINE_INFO structure
 ms.assetid: e7564ff2-00b5-4750-8fd5-dc1029a16912
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 3e50fe4901ebcbf008bf191226502ccac8ec4cf5
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: ad66992bd07afa2ef563c1b58fab0172e9a6121e
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66339226"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80714545"
 ---
-# <a name="machineinfo"></a>MACHINE_INFO
-Décrit un ordinateur particulier.
+# <a name="machine_info"></a>MACHINE_INFO
+Décrit une machine particulière.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -45,23 +45,23 @@ public struct MACHINE_INFO { 
 
 ## <a name="members"></a>Membres
  `Fields`\
- Une combinaison d’indicateurs de la [MACHINE_INFO_FIELDS](../../../extensibility/debugger/reference/machine-info-fields.md) énumération qui spécifient les champs de la structure sont initialisés.
+ Une combinaison de drapeaux de [l’MACHINE_INFO_FIELDS](../../../extensibility/debugger/reference/machine-info-fields.md) recensement qui précisent quels champs de la structure sont paraséminés.
 
  `bstrName`\
- Le nom de l’ordinateur. Équivalent à l’appel [GetMachineName](../../../extensibility/debugger/reference/idebugcoreserver2-getmachinename.md).
+ Nom de l’ordinateur. Équivalent à appeler [GetMachineName](../../../extensibility/debugger/reference/idebugcoreserver2-getmachinename.md).
 
  `Flags`\
- Une combinaison d’indicateurs de la [MACHINE_INFO_FLAGS](../../../extensibility/debugger/reference/machine-info-flags.md) énumération décrivant les attributs de l’ordinateur.
+ Une combinaison de drapeaux de [l’énumération MACHINE_INFO_FLAGS](../../../extensibility/debugger/reference/machine-info-flags.md) décrivant les attributs de la machine.
 
 ## <a name="remarks"></a>Notes
- Cette structure est retournée par un appel à la [GetMachineInfo](../../../extensibility/debugger/reference/idebugcoreserver2-getmachineinfo.md) (méthode).
+ Cette structure est retournée par un appel à la méthode [GetMachineInfo.](../../../extensibility/debugger/reference/idebugcoreserver2-getmachineinfo.md)
 
-## <a name="requirements"></a>Configuration requise
- En-tête : msdbg.h
+## <a name="requirements"></a>Spécifications
+ En-tête: msdbg.h
 
- Espace de noms : Microsoft.VisualStudio.Debugger.Interop
+ Namespace: Microsoft.VisualStudio.Debugger.Interop
 
- Assembly : Microsoft.VisualStudio.Debugger.Interop.dll
+ Assemblage: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>Voir aussi
 - [Structures et unions](../../../extensibility/debugger/reference/structures-and-unions.md)

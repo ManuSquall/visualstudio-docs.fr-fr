@@ -15,11 +15,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 503b343299f7b30e9f5e834099274215b262a635
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75589745"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79301817"
 ---
 # <a name="create-solutions-and-projects"></a>Créer des solutions et des projets
 
@@ -46,14 +46,14 @@ Pour plus d’informations sur la création d’un projet à partir d’un modè
 
 Si vous avez déjà une collection de fichiers de code source, vous pouvez facilement les ajouter à un projet.
 
-1. Dans le menu, choisissez **Fichier** > **Nouveau** >  **Projet à partir de code existant**.
+1. Au menu, choisissez **File** > **New** > **Project à partir du code existant**.
 
-1. Dans l’Assistant **Créer un projet à partir de fichiers de code existants**, choisissez le type de projet souhaité dans la zone de liste déroulante **Quel type de projet voulez-vous créer ?** , puis choisissez le bouton **Suivant**.
+1. Dans l’Assistant **Créer un projet à partir de fichiers de code existants**, choisissez le type de projet souhaité dans la zone de liste déroulante **Quel type de projet voulez-vous créer ?**, puis choisissez le bouton **Suivant**.
 
 1. Dans l’Assistant, accédez à l’emplacement des fichiers, puis entrez le nom du nouveau projet dans la zone **Nom**. Quand vous avez terminé, choisissez le bouton **Terminer**.
 
 > [!NOTE]
-> Cette option est la plus appropriée pour une collection de fichiers relativement simple. Actuellement, seuls C++les types Apache Cordova, Visual Basic et C# de projet sont pris en charge.
+> Cette option est la plus appropriée pour une collection de fichiers relativement simple. À l’heure actuelle, seuls les types de projets C, Apache Cordova, Visual Basic et CMD sont pris en charge.
 
 ## <a name="add-files-to-a-solution"></a>Ajouter des fichiers à une solution
 
@@ -76,7 +76,7 @@ Pour spécifier une version du .NET Framework, choisissez le menu déroulant **F
 
 ::: moniker range=">=vs-2019"
 
-Pour spécifier une version du .NET Framework, choisissez le menu déroulant **Framework** dans la page **Créer un projet**.
+Pour spécifier une version cadre .NET, choisissez le menu **déroulant cadre** sur la page Créer un **nouveau projet.**
 
 ![Sélecteur de framework dans la configuration d’un nouveau projet](media/vs-2019/configure-new-project-framework.png)
 
@@ -88,11 +88,11 @@ Vous pouvez également créer des solutions vides qui ne contiennent pas de proj
 
 ### <a name="to-create-an-empty-solution"></a>Pour créer une solution vide
 
-1. Dans la barre de menus, choisissez **Fichier** > **Nouveau** > **Projet**.
+1. Sur la barre de menu, choisissez **File** > **New** > **Project**.
 
 ::: moniker range="vs-2017"
 
-2. Dans le volet gauche (**modèles**), choisissez **autres Types de projets** > **solutions Visual Studio** dans la liste développée.
+2. Dans le volet gauche (**Modèles**), choisissez **Autres types de projets** > **Solutions Visual Studio** dans la liste développée.
 
 3. Dans le volet du milieu, choisissez **Nouvelle Solution**.
 
@@ -122,7 +122,7 @@ Comme mentionné plus haut, vous pouvez aussi ouvrir des fichiers de code sans a
 
 Si vous créez un projet .NET sans spécifier un emplacement sur disque, le projet est considéré comme temporaire. Les projets temporaires sont utiles pour faire des essais avec des projets .NET. Quand vous travaillez avec un projet temporaire, vous pouvez choisir de l’enregistrer ou de le supprimer à tout moment.
 
-Pour créer un projet temporaire, accédez d’abord à **Outils** > **Options** > **Projets et solutions** > **Général** et désélectionnez la case **Enregistrer les nouveaux projets lors de la création**. Ouvrez ensuite la boîte de dialogue **Nouveau projet**.
+Pour créer un projet temporaire, rendez-vous d’abord à **Tools** > **Options** > **Projects and Solutions** > **General,** et décochez les **nouveaux projets Save lorsqu’ils sont créés.** Ouvrez ensuite la boîte de dialogue **Nouveau projet**.
 
 ::: moniker-end
 

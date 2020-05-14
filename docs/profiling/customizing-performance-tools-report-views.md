@@ -13,10 +13,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 9479c0dc2af592271bc7f21db1cec0c71cc7e71d
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74777762"
 ---
 # <a name="customize-performance-tools-report-views"></a>Personnaliser les vues des rapports des outils d’analyse des performances
@@ -26,12 +26,12 @@ Cette section explique comment personnaliser les rapports qui sont générés à
 
 |Tâche|Contenu associé|
 |----------|---------------------|
-|**Ajouter, supprimer et trier les colonnes d’une vue de rapport** : vous pouvez spécifier les colonnes que vous souhaitez afficher dans les tableaux, ainsi que l’ordre dans lequel elles doivent apparaître. Vous pouvez également trier les lignes du tableau du rapport selon les valeurs de colonne.|-   [Guide pratique pour personnaliser les colonnes de la vue de rapport](../profiling/how-to-customize-report-view-columns.md)|
-|**Éliminer les petites fonctions du rapport** : vous pouvez éliminer du rapport les fonctions dont la taille est inférieure à un seuil spécifié.|-   [Guide pratique pour configurer la réduction du bruit dans les vues des rapports](../profiling/how-to-configure-noise-reduction-in-report-views.md)|
-|**Filtrer la date dans une vue de rapport** : vous pouvez limiter les données d’un rapport à un intervalle de temps spécifique de l’exécution du profilage. Vous pouvez spécifier un intervalle de temps dans le graphique de chronologie de la vue Résumé ou dans une requête que vous définissez dans le filtre d’affichage du rapport. Vous pouvez également filtrer les rapports pour n’afficher que les fonctions qui sont définies dans vos fichiers de code.|-   [Filtrer les vues des rapports](../profiling/filtering-report-views.md)<br />-   [Guide pratique pour filtrer les vues de rapport à partir de la chronologie Résumé](../profiling/how-to-filter-report-views-from-the-summary-timeline.md)<br />-   [Guide pratique pour filtrer les vues de rapport des outils de profilage de façon à afficher Uniquement mon code](../profiling/how-to-filter-profiling-tools-report-views-to-display-just-my-code.md)<br />-   [Filtre de la vue Rapport de performances](../profiling/performance-report-view-filter.md)|
+|**Ajouter, supprimer et trier les colonnes d’une vue de rapport** : vous pouvez spécifier les colonnes que vous souhaitez afficher dans les tableaux, ainsi que l’ordre dans lequel elles doivent apparaître. Vous pouvez également trier les lignes du tableau du rapport selon les valeurs de colonne.|-   [Comment : Personnaliser les colonnes de vue du rapport](../profiling/how-to-customize-report-view-columns.md)|
+|**Éliminer les petites fonctions du rapport** : vous pouvez éliminer du rapport les fonctions dont la taille est inférieure à un seuil spécifié.|-   [Comment : Configurer la réduction du bruit dans les vues de rapport](../profiling/how-to-configure-noise-reduction-in-report-views.md)|
+|**Filtrer la date dans une vue de rapport** : vous pouvez limiter les données d’un rapport à un intervalle de temps spécifique de l’exécution du profilage. Vous pouvez spécifier un intervalle de temps dans le graphique de chronologie de la vue Résumé ou dans une requête que vous définissez dans le filtre d’affichage du rapport. Vous pouvez également filtrer les rapports pour n’afficher que les fonctions qui sont définies dans vos fichiers de code.|-   [Vues du rapport de filtre](../profiling/filtering-report-views.md)<br />-   [Comment : Filtrer les points de vue du rapport à partir du calendrier sommaire](../profiling/how-to-filter-report-views-from-the-summary-timeline.md)<br />-   [Comment : Filtrer les outils de profilage signalent les vues pour afficher juste mon code](../profiling/how-to-filter-profiling-tools-report-views-to-display-just-my-code.md)<br />-   [Filtre de vue du rapport de performance](../profiling/performance-report-view-filter.md)|
 
-## <a name="related-sections"></a>Rubriques connexes
+## <a name="related-sections"></a>Sections connexes
 - [Vues du rapport des performances](../profiling/performance-report-views.md) Décrit les vues que vous pouvez utiliser pour analyser les données de profilage.
 
 ## <a name="see-also"></a>Voir aussi
-- [Analyser les données des outils d’analyse des performances](../profiling/analyzing-performance-tools-data.md)
+- [Analyser les données des outils de performance](../profiling/analyzing-performance-tools-data.md)

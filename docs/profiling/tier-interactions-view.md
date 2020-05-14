@@ -13,17 +13,17 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: d188d6c3268c8ee9f066eba1b6a57e469f34a78e
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74778139"
 ---
-# <a name="tier-interactions-view"></a>Interactions de couche (vue)
+# <a name="tier-interactions-view"></a>Interactions de couche, vue
 
 Le profilage d’interaction de couche fournit des informations supplémentaires sur les temps d’exécution des fonctions des applications multicouches qui communiquent avec des bases de données via [!INCLUDE[vstecado](../data-tools/includes/vstecado_md.md)]. Les données sont collectées uniquement pour les appels de fonctions synchrones.
 
-**Prérequis**
+**Configuration requise**
 
 - Visual Studio Enterprise
 
@@ -39,9 +39,9 @@ La vue Interactions affiche les données d’interaction de couche dans deux vol
 
 |Colonne|Description|
 |------------|-----------------|
-|**Nom**|- Pour une ligne de haut niveau, le nom de la page web ou du processus profilé.<br />- Pour une ligne de connexion de base de données, le nom du serveur qui héberge la base de données.|
-|**Base de données**|Nom de la base de données (lignes de connexion de base de données uniquement).|
-|**Nombre**|Nombre total de demandes qui sont générées par le processus, une page web ou une connexion de base de données.|
+|**Nom   **|- Pour une ligne de haut niveau, le nom de la page web ou du processus profilé.<br />- Pour une ligne de connexion de base de données, le nom du serveur qui héberge la base de données.|
+|**Base**|Nom de la base de données (lignes de connexion de base de données uniquement).|
+|**Compter**|Nombre total de demandes qui sont générées par le processus, une page web ou une connexion de base de données.|
 |**Temps écoulé total**|Temps total passé dans l’exécution d’une demande provenant du processus, de la page web ou de la connexion de base de données.|
 |**Temps écoulé max.**|Temps maximal passé dans l’exécution d’une demande provenant du processus, de la page web ou de la connexion de base de données.|
 |**Temps écoulé min.**|Temps minimal passé dans l’exécution d’une demande provenant du processus, de la page web ou de la connexion de base de données.|

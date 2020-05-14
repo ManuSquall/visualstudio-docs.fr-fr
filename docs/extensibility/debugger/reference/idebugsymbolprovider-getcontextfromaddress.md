@@ -1,5 +1,5 @@
 ---
-title: IDebugSymbolProvider::GetContextFromAddress | Microsoft Docs
+title: IDebugSymbolProvider::GetContextFromAddress (fr) Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugSymbolProvider::GetContextFromAddress method
 ms.assetid: 7a27d56f-20d4-4e5c-af7b-7307d3aff0a1
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 58896285fa0af5eeea972b0c8897472e20c8a128
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: ca6c3fa5d657100ecce55de31117ea2c2532374d
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66347650"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80719248"
 ---
 # <a name="idebugsymbolprovidergetcontextfromaddress"></a>IDebugSymbolProvider::GetContextFromAddress
-Cette méthode mappe une adresse de débogage dans un contexte de document.
+Cette méthode cartographie une adresse de débogé dans un contexte de document.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -43,13 +43,13 @@ int GetContextFromAddress(
 
 ## <a name="parameters"></a>Paramètres
 `pAddress`\
-[in] L’adresse de débogage tel que représenté par un [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) interface.
+[dans] L’adresse de débogé tel qu’il est représenté par une interface [IDebugAddress.](../../../extensibility/debugger/reference/idebugaddress.md)
 
 `ppDocContext`\
-[out] Retourne un contexte de document, tel que représenté par un [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md) interface.
+[out] Retourne un contexte de document tel que représenté par une interface [IDebugDocumentContext2.](../../../extensibility/debugger/reference/idebugdocumentcontext2.md)
 
 ## <a name="return-value"></a>Valeur de retour
- En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.
+ En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
 ## <a name="see-also"></a>Voir aussi
 - [IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md)

@@ -1,6 +1,6 @@
 ---
-title: Analyser les données d’utilisation de l’UC (ASP.NET Core)
-description: Mesurer les performances de l’application dans ASP.NET Core applications à l’aide de l’outil de diagnostic de l’utilisation de l’UC
+title: Analyser les données d’utilisation du processeur (ASP.NET Core)
+description: Mesurer les performances de l’application dans ASP.NET applications de base à l’aide de l’outil de diagnostic d’utilisation du processeur
 ms.custom: mvc
 ms.date: 02/14/2020
 ms.topic: quickstart
@@ -12,18 +12,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - aspnet
-ms.openlocfilehash: 367d789513e8ac220566cb4e451bcea015ec5a2a
-ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
+ms.openlocfilehash: f79a9f5178959b9a1ec79dc3c22d8da9c0f6735e
+ms.sourcegitcommit: 0ba0cbff77eac15feab1a73eeee3667006794b29
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "77275073"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "80411981"
 ---
-# <a name="quickstart-analyze-cpu-usage-data-in-visual-studio-aspnet-core"></a>Démarrage rapide : analyser les données d’utilisation de l’UC dans Visual Studio (ASP.NET Core)
+# <a name="quickstart-analyze-cpu-usage-data-in-visual-studio-aspnet-core"></a>Quickstart: Analyser les données d’utilisation du processeur dans Visual Studio (ASP.NET Core)
 
 Visual Studio fournit de nombreuses fonctionnalités puissantes qui vous permettent d’analyser les problèmes de performances dans votre application. Cette rubrique vous offre un moyen rapide de vous familiariser avec quelques-unes des fonctionnalités de base. Ici, nous allons examiner un outil pour identifier les goulots d’étranglement de performances liés à une utilisation élevée de l’UC. Les outils de diagnostics sont pris en charge pour le développement .NET dans Visual Studio (y compris ASP.NET) et pour le développement natif/C++.
 
-Le hub de diagnostic propose de nombreuses autres options pour exécuter et gérer votre session de diagnostic. Si l’outil **Utilisation de l’UC** décrit ici ne vous fournit pas les données dont vous avez besoin, les [autres outils de profilage](../profiling/profiling-feature-tour.md) fournissent d’autres types d’informations qui peuvent vous être utiles. Dans de nombreux cas, le goulot d’étranglement des performances de votre application peut ne pas provenir de votre processeur, mais de la mémoire, de l’interface utilisateur de rendu ou du temps de requête réseau.
+Le hub de diagnostic propose de nombreuses autres options pour exécuter et gérer votre session de diagnostic. Si l’outil **Utilisation de l’UC** décrit ici ne vous fournit pas les données dont vous avez besoin, les [autres outils de profilage](../profiling/profiling-feature-tour.md) fournissent des types d’informations différents qui peuvent vous être utiles. Dans de nombreux cas, le goulot d’étranglement des performances de votre application peut ne pas provenir de votre processeur, mais de la mémoire, de l’interface utilisateur de rendu ou du temps de requête réseau. [PerfTips](../profiling/perftips.md), un autre outil de profilage intégré de débbugger, vous permet également de passer à travers le code et d’identifier combien de temps il faut des fonctions particulières ou des blocs de code pour remplir.
 
 Windows 8 et les versions ultérieures sont nécessaires pour exécuter les Outils de profilage avec le débogueur (fenêtre **Outils de diagnostic**). Sur Windows 7 et les versions ultérieures, vous pouvez utiliser l’outil post mortem [Profileur de performances](../profiling/profiling-feature-tour.md).
 
@@ -32,36 +32,36 @@ Windows 8 et les versions ultérieures sont nécessaires pour exécuter les Out
 1. Ouvrez Visual Studio et créez le projet.
 
    ::: moniker range="vs-2017"
-   Dans la barre de menus supérieure, choisissez **fichier** > **nouveau** > **projet**.
+   Dans la barre de menus supérieure, choisissez **Fichier** > **Nouveau** > **Projet**.
 
-   Dans la boîte de dialogue **nouveau projet** , dans le volet gauche, développez **visuel C#** , puis choisissez **Web**. Dans le volet central, choisissez **ASP.net application Web (.net Core)** . Nommez ensuite le projet *MyProfilingApp_MVC*.
+   Dans la boîte de dialogue **New Project** dans la vitre gauche, étendre Visual **C ,** puis choisir **Web**. Dans la vitre du milieu, choisissez **ASP.NET application Web (.NET Core)**. Ensuite, nommez le projet *MyProfilingApp_MVC*.
 
    > [!NOTE]
-   > Si vous ne voyez pas le modèle de projet **application Web ASP.net (.net Core)** , choisissez le lien **ouvrir le Visual Studio installer** dans le volet gauche de la boîte de dialogue **nouveau projet** . Visual Studio Installer est lancé. Choisissez la charge de travail **Développement web et ASP.NET**, puis **Modifier**.
+   > Si vous ne voyez pas le modèle de projet **ASP.NET Web Application (.NET Core),** choisissez le lien **Open Visual Studio Install installateur** dans le volet gauche de la boîte de dialogue **New Project.** Visual Studio Installer est lancé. Choisissez la charge de travail **Développement web et ASP.NET**, puis **Modifier**.
 
    Dans la boîte de dialogue qui s’affiche, choisissez **MVC** dans le volet central, puis cliquez sur **OK**.
    ::: moniker-end
    ::: moniker range="vs-2019"
-   Si la fenêtre de démarrage n’est pas ouverte, choisissez **fichier** > **fenêtre démarrer**.
+   Si la fenêtre de démarrage n’est pas ouverte, choisissez **File** > **Start Window**.
 
-   Dans la fenêtre de démarrage, choisissez **Créer un projet**.
+   Sur la fenêtre de départ, choisissez **Créer un nouveau projet**.
 
-   Dans la fenêtre **créer un nouveau projet** , entrez ou tapez *ASP.net* dans la zone de recherche. Ensuite, choisissez **C#** Dans la liste des langages, puis choisissez **Windows** dans la liste des plateformes.
+   Sur la **création d’une nouvelle** fenêtre de projet, entrez ou tapez *asp.net* dans la boîte de recherche. Ensuite, choisissez **C#** Dans la liste des langages, puis choisissez **Windows** dans la liste des plateformes.
 
-   Après avoir appliqué les filtres de langue et de plateforme, choisissez le modèle **application Web ASP.net (.net Core)** , puis choisissez **suivant**.
+   Après avoir appliqué les filtres de langue et de plate-forme, choisissez le modèle **ASP.NET Web Application (.NET Core),** puis choisissez **Next**.
 
    > [!NOTE]
-   > Si vous ne voyez pas le modèle d' **application Web ASP.net (.net Core)** , vous pouvez l’installer à partir de la fenêtre **créer un nouveau projet** . Dans le **Vous ne trouvez pas ce que vous cherchez ?** , choisissez le lien **Installer plus d’outils et de fonctionnalités**. Ensuite, dans Visual Studio Installer, choisissez la charge de travail **Développement web et ASP.NET**.
+   > Si vous ne voyez pas le modèle **ASP.NET Web Application (.NET Core),** vous pouvez l’installer à partir de la **fenêtre Créer un nouveau projet.** Dans le **Vous ne trouvez pas ce que vous cherchez ?**, choisissez le lien **Installer plus d’outils et de fonctionnalités**. Ensuite, dans Visual Studio Installer, choisissez la charge de travail **Développement web et ASP.NET**.
 
-   Dans la fenêtre **configurer votre nouveau projet** , tapez ou entrez *MyProfilingApp_MVC* dans la zone **nom du projet** . Choisissez ensuite **Créer**.
+   Dans la configuration de votre nouvelle fenêtre **de projet,** tapez ou entrez *MyProfilingApp_MVC* dans la boîte **de nom du projet.** Ensuite, choisissez **Créer**.
 
-   Dans la fenêtre qui s’affiche, choisissez **application Web (Model-View-Controller)** , puis choisissez **créer**.
+   Dans la fenêtre qui s’affiche, choisissez **l’application Web (Model-View-Controller)** et choisissez ensuite **Créer**.
 
    ::: moniker-end
 
    Visual Studio ouvre votre nouveau projet.
 
-1. Dans l’Explorateur de solutions, cliquez avec le bouton droit sur le dossier Modèles et choisissez **Ajouter** > **Classe**.
+1. Dans Solution Explorer, cliquez à droite sur le dossier Modèles et choisissez **Add** > **Class**.
 
 1. Nommez la nouvelle classe `Data.cs` et choisissez **Ajouter**.
 
@@ -211,20 +211,19 @@ Windows 8 et les versions ultérieures sont nécessaires pour exécuter les Out
 
      ![Définir des points d’arrêt pour le profilage](../profiling/media/quickstart-cpu-usage-breakpoints-aspnet.png)
 
-    > [!TIP]
-    > En définissant deux points d’arrêt, vous limitez la collecte de données aux sections de code que vous souhaitez analyser.
+    En définissant deux points d’arrêt, vous limitez la collecte de données aux sections de code que vous souhaitez analyser.
 
-1. La fenêtre **Outils de diagnostic** est déjà visible, sauf si vous l’avez désactivée. Pour réafficher la fenêtre, cliquez sur **Déboguer** > **Fenêtres** > **Afficher les outils de diagnostic**.
+1. La fenêtre **Outils de diagnostic** est déjà visible, sauf si vous l’avez désactivée. Pour retouaître la fenêtre, cliquez sur **Debug** > **Windows** > **Show Diagnostic Tools**.
 
-1. Cliquez sur **Déboguer** > **Démarrer le débogage** (ou bien sur **Démarrer** dans la barre d’outils, ou sur **F5**).
+1. Cliquez sur **Debug** > **Démarrer Debugging** (ou **Démarrer** sur la barre d’outils, ou **F5**).
 
-1. Une fois le chargement de l’application terminé, cliquez sur le lien approprié en haut de la page Web pour commencer à exécuter le nouveau code.
+1. Lorsque l’application termine le chargement, cliquez sur le lien approprié en haut de la page Web pour commencer à exécuter le nouveau code.
 
    ::: moniker range="vs-2017"
-   Dans Visual Studio 2017, cliquez sur le lien à **propos** de pour exécuter le code.
+   Dans Visual Studio 2017, cliquez sur le lien **About** pour exécuter le code.
    ::: moniker-end
    ::: moniker range="vs-2019"
-   Dans Visual Studio 2019, cliquez sur le lien **confidentialité** pour exécuter le code.
+   Dans Visual Studio 2019, cliquez sur le lien **Confidentialité** pour exécuter le code.
    ::: moniker-end
 
 1. La vue **Résumé** des outils de diagnostics s’affiche.

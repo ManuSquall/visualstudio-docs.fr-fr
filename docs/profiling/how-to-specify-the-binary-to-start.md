@@ -15,15 +15,15 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: fd3379b9769cfd6bfe1335b12545e635a9bde782
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74778685"
 ---
 # <a name="how-to-specify-the-binary-to-start"></a>Guide pratique pour spécifier le binaire à démarrer
 
-Pour profiler des fichiers binaires, tels que les DLL, vous devez entrer des informations dans la boîte de dialogue **Pages de propriétés de \<Cible>** . Ces informations indiquent où le projet DLL peut trouver l’application appelante.
+Pour profiler les binaires, tels que les ** \<** LDL, vous devez saisir des informations dans la boîte de dialogue Target> Property Pages. Ces informations indiquent où le projet DLL peut trouver l’application appelante.
 
 1. Dans l’**Explorateur de performances**, cliquez avec le bouton droit sur le fichier binaire cible, puis cliquez sur **Propriétés**.
 
@@ -41,4 +41,4 @@ Pour profiler des fichiers binaires, tels que les DLL, vous devez entrer des inf
 
 ## <a name="see-also"></a>Voir aussi
 
-[Configurer des sessions de performances](../profiling/configuring-performance-sessions.md)
+[Configurer des sessions de performance](../profiling/configuring-performance-sessions.md)

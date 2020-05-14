@@ -9,10 +9,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: a40f7ce4aacfdc03b5e05becbfc83439945f7e8a
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75588913"
 ---
 # <a name="how-to-specify-the-step-ramp-time-property-for-a-step-load-pattern"></a>Guide pratique pour spécifier la propriété de la durée de démarrage de l’étape dans le modèle de charge
@@ -24,7 +24,7 @@ Après avoir créé votre test de charge avec l’**Assistant Nouveau test de ch
 > [!NOTE]
 > Pour obtenir une liste complète des propriétés des scénarios de test de charge et leurs descriptions, consultez [Propriétés du scénario de test de charge](../test/load-test-scenario-properties.md).
 
-La propriété **Durée de démarrage de l’étape** est définie dans la fenêtre **Propriétés**. Vous modifiez des propriétés du scénario de test de charge dans **l’Éditeur de test de charge**.
+La propriété **Step Ramp Time** est située dans la fenêtre **Propriétés.** Vous modifiez des propriétés du scénario de test de charge dans **l’Éditeur de test de charge**.
 
 La propriété **Durée de démarrage de l’étape** est utilisée uniquement avec un modèle de charge dans l’étape. Pour plus d’informations, consultez [Modifier les modèles de charge en modèle d’activités des utilisateurs virtuels](../test/edit-load-patterns-to-model-virtual-user-activities.md).
 
@@ -43,7 +43,7 @@ Un modèle de charge dans l'étape est utilisé pour augmenter la charge sur le 
 Ces paramètres exécutent le test de charge pendant 30 minutes (1 800 secondes) avec des charges utilisateur de 100, 200, 300 et jusqu'à 2 000 utilisateurs.
 
 > [!NOTE]
-> La propriété **Durée de démarrage de l’étape** est la seule propriété qui ne peut pas être sélectionnée dans **l’Assistant Nouveau test de charge**.
+> La propriété **Step Ramp Time** est la seule de ces propriétés qui n’est pas disponible pour choisir dans le New Load Test **Wizard**.
 
 La propriété **Durée de démarrage de l’étape** autorise l’accroissement par étape (par exemple de 100 à 200 utilisateurs) graduel plutôt qu’immédiat. Dans l'exemple, la charge utilisateur passerait de 100 à 200 utilisateurs sur une période de 20 secondes (soit une augmentation de 5 utilisateurs par seconde).
 
@@ -73,4 +73,4 @@ La propriété **Durée de démarrage de l’étape** autorise l’accroissement
 - [Modifier les scénarios de test de charge](../test/edit-load-test-scenarios.md)
 - [Contrôleurs de test et agents de test](configure-test-agents-and-controllers-for-load-tests.md)
 - [Propriétés des scénarios de test de charge](../test/load-test-scenario-properties.md)
-- [Modifier les modèles de charge en modèle d’activités des utilisateurs virtuels](../test/edit-load-patterns-to-model-virtual-user-activities.md)
+- [Modifier les modèles de chargement pour modéliser les activités virtuelles de l’utilisateur](../test/edit-load-patterns-to-model-virtual-user-activities.md)

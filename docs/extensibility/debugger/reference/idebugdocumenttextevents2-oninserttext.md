@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentTextEvents2::onInsertText | Microsoft Docs
+title: IDebugDocumentTextEvents2::onInsertText Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugDocumentTextEvents2::onInsertText
 ms.assetid: 6040181f-7288-4a42-953c-d23f74200431
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: e0185e4f6c3accc4225dbfb9be4ce9311f8d7115
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: ce03984d199fd404b7430b5342a06b51801af2e4
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66330526"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80731485"
 ---
 # <a name="idebugdocumenttextevents2oninserttext"></a>IDebugDocumentTextEvents2::onInsertText
-Informe le package de débogage que le texte a été inséré dans le document.
+Informe le paquet de déboise que le texte a été inséré dans le document.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -43,13 +43,13 @@ int onInsert( 
 
 ## <a name="parameters"></a>Paramètres
 `pos`\
-[in] Un [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) structure qui indique où le texte a été inséré.
+[dans] Une [structure TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) qui indique où le texte a été inséré.
 
 `dwNumToInsert`\
-[in] Spécifie le nombre de caractères de texte qui ont été insérées.
+[dans] Spécifie le nombre de caractères de texte qui ont été insérés.
 
 ## <a name="return-value"></a>Valeur de retour
- En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.
+ En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
 ## <a name="see-also"></a>Voir aussi
 - [IDebugDocumentTextEvents2](../../../extensibility/debugger/reference/idebugdocumenttextevents2.md)

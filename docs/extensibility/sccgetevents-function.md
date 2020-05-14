@@ -1,5 +1,5 @@
 ---
-title: Fonction SccGetEvents | Microsoft Docs
+title: Fonction SccGetEvents (fr) Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - SccGetEvents function
 ms.assetid: 32f8147d-6dcc-465e-b07b-42da5824f9b0
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9c8c3c08311c8dd359acaed18decc046354e7f37
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 91b3debf0e686ceece3048cf3d92b629e3359edd
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66332032"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80700820"
 ---
 # <a name="sccgetevents-function"></a>Fonction SccGetEvents
-Cette fonction récupère un événement d’état en file d’attente.
+Cette fonction récupère un événement de statut en file d’attente.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -34,36 +34,36 @@ SCCRTN SccGetEvents (
 ```
 
 ### <a name="parameters"></a>Paramètres
- pvContext
+ pvContexte
 
-[in] La structure de contexte de plug-in de contrôle de source.
+[dans] La structure de contexte de plug-in de contrôle de source.
 
  lpFileName
 
-[in, out] Mémoire tampon où le plug-in de contrôle de code source place le nom de fichier renvoyé (_MAX_PATH caractères maximum).
+[dans, dehors] Tampon où le plug-in de contrôle source met le nom de fichier retourné (jusqu’à _MAX_PATH caractères).
 
  lpStatus
 
-[in, out] Retourne le code d’état (consultez [fichier de code d’état](../extensibility/file-status-code-enumerator.md) pour les valeurs possibles).
+[dans, dehors] Retourne le code d’état (voir [Code d’état du fichier](../extensibility/file-status-code-enumerator.md) pour les valeurs possibles).
 
  pnEventsRemaining
 
-[in, out] Retourne le nombre d’entrées restés dans la file d’attente après cet appel. Si ce nombre est élevé, l’appelant peut décider d’appeler le [SccQueryInfo](../extensibility/sccqueryinfo-function.md) pour obtenir toutes les informations à la fois.
+[dans, dehors] Renvoie le nombre d’entrées laissées dans la file d’attente après cet appel. Si ce numéro est grand, l’appelant peut décider d’appeler le [SccQueryInfo](../extensibility/sccqueryinfo-function.md) pour obtenir toutes les informations à la fois.
 
-## <a name="return-value"></a>Valeur de retour
- L’implémentation de plug-in de contrôle de source de cette fonction est censée retourner l’une des valeurs suivantes :
+## <a name="return-value"></a>Valeur retournée
+ La mise en œuvre plug-in de cette fonction de contrôle source devrait renvoyer l’une des valeurs suivantes :
 
-|Value|Description|
+|Valeur|Description|
 |-----------|-----------------|
-|SCC_OK|Obtenir les événements réussis.|
-|SCC_E_OPNOTSUPPORTED|Cette fonction n’est pas pris en charge.|
-|SCC_E_NONSPECIFICERROR|Erreur non spécifique.|
+|SCC_OK|Obtenez des événements réussis.|
+|SCC_E_OPNOTSUPPORTED|Cette fonction n'est pas prise en charge.|
+|SCC_E_NONSPECIFICERROR|Défaillance non spécifique.|
 
 ## <a name="remarks"></a>Notes
- Cette fonction est appelée pendant le traitement inactif pour voir si des mises à jour d’état pour les fichiers sous contrôle de code source ont été. Le plug-in de contrôle de code source gère l’état de tous les fichiers qu’il connaît, et chaque fois qu’une modification de l’état est indiqué par le plug-in, l’état et le fichier associé sont stockés dans une file d’attente. Lorsque `SccGetEvents` est appelée, le haut l’élément de la file d’attente est récupéré et retourné. Cette fonction est limitée pour retourner uniquement des informations mises en cache précédemment et doit avoir un temps de réponse très rapide (autrement dit, aucune lecture du disque ou demandant le système de contrôle de code source pour l’état) ; dans le cas contraire, les performances de l’IDE peuvent démarrer à se dégrader.
+ Cette fonction est appelée pendant le traitement au ralenti pour voir s’il y a eu des mises à jour de statut pour les fichiers sous contrôle source. Le plug-in de contrôle source maintient l’état de tous les fichiers qu’il connaît, et chaque fois qu’un changement de statut est noté par le plug-in, l’état et le fichier associé sont stockés dans une file d’attente. Lorsqu’on `SccGetEvents` l’appelle, l’élément supérieur de la file d’attente est récupéré et retourné. Cette fonction est contrainte de retourner seulement les informations précédemment mises en cache et doit avoir un revirement très rapide (c’est-à-dire pas de lecture du disque ou demander le système de contrôle source pour le statut); sinon, les performances de l’IDE peuvent commencer à se dégrader.
 
- S’il n’existe aucune mise à jour d’état au rapport, le plug-in de contrôle de code source stocke une chaîne vide dans la mémoire tampon vers laquelle pointée `lpFileName`. Sinon, le plug-in stocke le nom de chemin d’accès complet du fichier pour lequel les informations d’état a changé et retourne le code d’état approprié (l’une des valeurs détaillées dans [fichier de code d’état](../extensibility/file-status-code-enumerator.md)).
+ S’il n’y a pas de mise à jour d’état à `lpFileName`signaler, le plug-in de contrôle source stocke une chaîne vide dans le tampon indiqué par . Dans le cas contraire, le plug-in stocke le nom complet du fichier pour lequel les informations de statut a changé et renvoie le code de statut approprié (l’une des valeurs détaillées dans le [code d’état du fichier](../extensibility/file-status-code-enumerator.md)).
 
 ## <a name="see-also"></a>Voir aussi
-- [Fonctions d’API source contrôle plug-in](../extensibility/source-control-plug-in-api-functions.md)
-- [Code d’état de fichier](../extensibility/file-status-code-enumerator.md)
+- [Fonctions d’API plug-in de contrôle des sources](../extensibility/source-control-plug-in-api-functions.md)
+- [Code d’état du fichier](../extensibility/file-status-code-enumerator.md)

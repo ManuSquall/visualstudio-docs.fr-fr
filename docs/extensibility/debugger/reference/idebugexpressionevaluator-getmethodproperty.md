@@ -1,5 +1,5 @@
 ---
-title: IDebugExpressionEvaluator::GetMethodProperty | Microsoft Docs
+title: IDebugExpressionEvaluator::GetMethodProperty (fr) Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugExpressionEvaluator::GetMethodProperty method
 ms.assetid: c394fe4d-eeb6-4feb-828c-098d84a6f1ba
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 0d965161f6f0a6aadd8aab89a3001e56c2e807fa
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: ebcf24ee39505091ff79c1f2f31d505217f77efb
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66325706"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80729503"
 ---
 # <a name="idebugexpressionevaluatorgetmethodproperty"></a>IDebugExpressionEvaluator::GetMethodProperty
-Cette méthode obtient un objet qui contient les variables locales, les arguments et les autres propriétés d’une méthode.
+Cette méthode obtient un objet de propriété qui contient les habitants, les arguments, et d’autres propriétés d’une méthode.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -49,25 +49,25 @@ int GetMethodProperty(
 
 ## <a name="parameters"></a>Paramètres
 `pSymbolProvider`\
-[in] Le fournisseur de symboles à utiliser, exprimé sous la forme un [IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md) objet.
+[dans] Le fournisseur de symboles à utiliser, exprimé comme un objet [IDebugSymbolProvider.](../../../extensibility/debugger/reference/idebugsymbolprovider.md)
 
 `pAddress`\
-[in] L’adresse dans le code, exprimée sous la forme un [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) fonction de l’objet, qui doit être résolu au contenant le plus proche.
+[dans] L’adresse dans le code, exprimée comme un objet [IDebugAddress,](../../../extensibility/debugger/reference/idebugaddress.md) qui doit être résolu à la fonction contenant la plus proche.
 
 `pBinder`\
-[in] Le classeur à utiliser, exprimé sous la forme un [IDebugBinder](../../../extensibility/debugger/reference/idebugbinder.md) objet.
+[dans] Le liant à utiliser, exprimé comme un objet [IDebugBinder.](../../../extensibility/debugger/reference/idebugbinder.md)
 
 `fIncludeHiddenLocals`\
-[in] Différent de zéro (`TRUE`) signifie qu’inclure des variables locales masqués ; zéro (`FALSE`) signifie ne pas définir les variables locales masqués
+[dans] Nonzero`TRUE`( ) signifie inclure les habitants cachés; zéro`FALSE`( ) signifie laisser de côté les habitants cachés
 
 `ppProperty`\
-[out] Retourne un [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) objet qui représente la méthode.
+[out] Retourne un objet [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) qui représente la méthode.
 
 ## <a name="return-value"></a>Valeur de retour
- En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.
+ En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
 ## <a name="remarks"></a>Notes
- Variables locales masqués sont généralement des variables qui sont générés par le compilateur.
+ Les habitants cachés sont généralement des variables qui sont générées par le compilateur.
 
 ## <a name="see-also"></a>Voir aussi
 - [IDebugExpressionEvaluator](../../../extensibility/debugger/reference/idebugexpressionevaluator.md)

@@ -10,14 +10,14 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 518f41557809cdeaaae9f9e1ac79e3797a854395
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74776964"
 ---
 # <a name="globalon-and-globaloff"></a>GlobalOn et GlobalOff
-Les options **GlobalOff** et **GlobalOn** de *VSPerfCmd.exe* suspendent et reprennent le profilage pour tous les processus et threads dans une session de profilage en ligne de commande.
+Les options *VSPerfCmd.exe* **GlobalOff** et **GlobalOn** font une pause et reprennent le profilage de tous les processus et threads lors d’une session de profilage de ligne de commande.
 
  Vous pouvez spécifier **GlobalOn** et **GlobalOff** comme uniques options sur une ligne de commande *VSPerfCmd.exe*, ou vous pouvez les inclure sur des lignes de commande qui contiennent aussi les options **Start**, **Launch** ou **Attach**.
 
@@ -43,23 +43,23 @@ VSPerfCmd.exe /Start:Method /{GlobalOff|GlobalOn} [Options]
 VSPerfCmd.exe {Launch:AppName|Attach:PID} /{GlobalOff|GlobalOn}[Options]
 ```
 
-#### <a name="parameters"></a>Parameters
- Aucun
+#### <a name="parameters"></a>Paramètres
+ None
 
 ## <a name="valid-options"></a>Options valides
  Vous pouvez spécifier **GlobalOn** et **GlobalOff** sur des lignes de commande qui contiennent également les options suivantes.
 
- **Démarrer :** `Method` initialise la session de profileur de ligne de commande et définit la méthode de profilage spécifiée.
+ **Démarrage :** `Method` Initialise la session de profileur de ligne de commande et définit la méthode de profilage spécifiée.
 
- **Launch :** `AppName` démarre l’application spécifiée et commence le profilage à l’aide de la méthode d’échantillonnage.
+ **Lancement :** `AppName` Démarre l’application spécifiée et commence à profiler avec la méthode d’échantillonnage.
 
- **Attacher :** `PID` commence le profilage du processus spécifié.
+ **Attacher :** `PID` Commence à profiler le processus spécifié.
 
- {**ProcessOff**&#124;**ProcessOn**} **:** `PID` s’arrête ou démarre le profilage pour le processus spécifié.
+ **ProcessOff**&#124;**ProcessOn** **:** `PID` Arrête ou commence à profiler pour le processus spécifié.
 
- {**ThreadOff**&#124;**ThreadOn**} **:** `TID` s’arrête ou démarre le profilage pour le processus spécifié (méthode d’instrumentation uniquement).
+ **ThreadOff**&#124;**ThreadOn** **:** `TID` Arrêts ou commence à profiler pour le processus spécifié (méthode d’instrumentation uniquement).
 
-## <a name="example"></a>Exemple
+## <a name="example"></a> Exemple
  Dans cet exemple, les options **GlobalOff** et **GlobalOn** permettent d’éviter la collecte de données de profilage pour le démarrage et l’arrêt de l’application.
 
 ```cmd
@@ -78,7 +78,7 @@ VSPerfCmd /Shutdown
 ```
 
 ## <a name="see-also"></a>Voir aussi
-- [VSPerfCmd](../profiling/vsperfcmd.md)
+- [Vsperfcmd](../profiling/vsperfcmd.md)
 - [Profiler des applications autonomes](../profiling/command-line-profiling-of-stand-alone-applications.md)
-- [Profiler des applications web ASP.NET](../profiling/command-line-profiling-of-aspnet-web-applications.md)
+- [Profil ASP.NET applications Web](../profiling/command-line-profiling-of-aspnet-web-applications.md)
 - [Profiler des services](../profiling/command-line-profiling-of-services.md)

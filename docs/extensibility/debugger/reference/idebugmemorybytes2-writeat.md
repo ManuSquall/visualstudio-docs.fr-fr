@@ -1,5 +1,5 @@
 ---
-title: IDebugMemoryBytes2::WriteAt | Microsoft Docs
+title: IDebugMemoryBytes2::WriteAt Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -8,23 +8,23 @@ helpviewer_keywords:
 - IDebugMemoryBytes2::WriteAt method
 - WriteAt method
 ms.assetid: 61cc3704-47fa-4d9b-aa62-bb4585ac8fb1
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 5eefaee08d64952681e91711cdf8347186123e57
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: ac9113424c6cd5cce230774a6e5335ffa4d4ba77
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66347133"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80727518"
 ---
 # <a name="idebugmemorybytes2writeat"></a>IDebugMemoryBytes2::WriteAt
-Écrit le nombre spécifié d’octets de mémoire, en commençant à l’adresse spécifiée.
+Écrit le nombre spécifié d’octets de mémoire, à partir de l’adresse spécifiée.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -46,19 +46,19 @@ int WriteAt(
 
 ## <a name="parameters"></a>Paramètres
 `pStartContext`\
-[in] Le [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md) objet qui spécifie l’emplacement où commencer l’écriture d’octets.
+[dans] [L’objet IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md) qui spécifie par où commencer à écrire des octets.
 
 `dwCount`\
-[in] Le nombre d’octets à écrire.
+[in] Nombre d'octets à écrire.
 
 `rgbMemory`\
-[in] Octets à écrire. Ce tableau est censé pour être au moins `dwCount` octets de taille.
+[dans] Les octets à écrire. Ce tableau est supposé `dwCount` être au moins des octets de taille.
 
 ## <a name="return-value"></a>Valeur de retour
- En cas de réussite, retourne `S_OK`; sinon, retourne `S_FALSE` si tous les octets peut être écrite ou retourne un code d’erreur (généralement `E_FAIL`).
+ En cas `S_OK`de succès, les retours; autrement, `S_FALSE` les retours, sinon tous les octets, `E_FAIL`peuvent être écrits ou renvoient un code d’erreur (généralement ).
 
 ## <a name="remarks"></a>Notes
- Si l’adresse de départ n’est pas dans la fenêtre mémoire représentée par ce [IDebugMemoryBytes2](../../../extensibility/debugger/reference/idebugmemorybytes2.md) de l’objet, aucune écriture ne se produit et le code d’erreur `E_FAIL` est retourné, même si la quantité pour écrire des chevauchements dans l’espace de mémoire.
+ Si l’adresse de départ n’est pas dans la fenêtre de mémoire représentée par cet objet `E_FAIL` [IDebugMemoryBytes2,](../../../extensibility/debugger/reference/idebugmemorybytes2.md) aucune écriture ne se produit et un code d’erreur de est retourné - même si la quantité d’écrire se chevauche dans l’espace de mémoire.
 
 ## <a name="see-also"></a>Voir aussi
 - [IDebugMemoryBytes2](../../../extensibility/debugger/reference/idebugmemorybytes2.md)

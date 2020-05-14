@@ -1,5 +1,5 @@
 ---
-title: IDebugProperty2::GetDerivedMostProperty | Microsoft Docs
+title: IDebugProperty2::GetDerivedMostProperty (fr) Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProperty2::GetDerivedMostProperty
 ms.assetid: cc86b461-62d1-4340-8209-c65037fd8b02
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 6b08ca2ad569935a117b8b1255bc740bf395c2ed
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 2086aded4361049d722ec36ba1d470ed8f7ac6e5
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66343163"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80721507"
 ---
 # <a name="idebugproperty2getderivedmostproperty"></a>IDebugProperty2::GetDerivedMostProperty
-Obtient la propriété plus dérivé d’une propriété.
+Obtient la propriété dérivée-la plus d’une propriété.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -41,13 +41,13 @@ int GetDerivedMostProperty ( 
 
 ## <a name="parameters"></a>Paramètres
 `ppDerivedMost`\
-[out] Retourne un [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) objet qui représente la propriété la plus dérivée.
+[out] Retourne un objet [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) qui représente la propriété la plus dérivée.
 
 ## <a name="return-value"></a>Valeur de retour
- En cas de réussite, retourne `S_OK`; sinon retourne le code d’erreur. Retourne `S_GETDERIVEDMOST_NO_DERIVED_MOST` s’il n’existe aucune propriété plus dérivé à récupérer.
+ En cas `S_OK`de succès, les retours; retourne autrement le code d’erreur. Retours `S_GETDERIVEDMOST_NO_DERIVED_MOST` s’il n’y a pas de biens dérivés les plus à récupérer.
 
 ## <a name="remarks"></a>Notes
- Par exemple, si cette propriété décrit un objet qui implémente `ClassRoot` mais qui est en fait une instanciation de `ClassDerived` qui est dérivée de `ClassRoot`, cette méthode retourne un [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) objet décrivant la `ClassDerived` objet.
+ Par exemple, si cette propriété décrit `ClassRoot` un objet qui implémente `ClassDerived` mais `ClassRoot`qui est en fait une instantanéisation de ce `ClassDerived` qui est dérivé , alors cette méthode renvoie un objet [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) décrivant l’objet.
 
 ## <a name="see-also"></a>Voir aussi
 - [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)

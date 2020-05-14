@@ -1,161 +1,161 @@
 ---
-title: 'Procédure pas à pas : Publication d’une Extension Visual Studio | Microsoft Docs'
+title: 'Procédure pas à pas : Publication d’une extension de studio visuel (fr) Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - publishing web controls
 - web controls, publishing
 ms.assetid: a7816161-0490-4043-86f5-0f7331ed83b3
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 86ed2455b19a3f7e56c92a37a9402b7d65bf70a3
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: a34260124baedeba297dbd64e8a2c1856b55ec5a
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66337922"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80697139"
 ---
-# <a name="walkthrough-publish-a-visual-studio-extension"></a>Procédure pas à pas : Publier une extension Visual Studio
+# <a name="walkthrough-publish-a-visual-studio-extension"></a>Procédure pas à pas : Publier une extension de Visual Studio
 
-Cette procédure pas à pas vous montre comment publier une extension Visual Studio sur la place de marché Visual Studio. Lorsque vous ajoutez votre extension à la place de marché, les développeurs peuvent utiliser **Extensions et mises à jour** pour rechercher des extensions nouvelles et mises à jour.
+Cette procédure pas à pas vous montre comment publier une extension Visual Studio au Visual Studio Marketplace. Lorsque vous ajoutez votre extension au Marketplace, les développeurs peuvent utiliser **des extensions et des mises** à jour pour parcourir des extensions nouvelles et mises à jour.
 
 ## <a name="prerequisites"></a>Prérequis
 
- Pour suivre cette procédure pas à pas, vous devez installer le Kit de développement logiciel (SDK) Visual Studio. Pour plus d’informations, consultez [installer le SDK Visual Studio](../extensibility/installing-the-visual-studio-sdk.md).
+ Pour suivre cette procédure pas à pas, vous devez installer le Kit de développement logiciel (SDK) Visual Studio. Pour plus d’informations, voir [Installer le Studio Visuel SDK](../extensibility/installing-the-visual-studio-sdk.md).
 
 ## <a name="create-a-visual-studio-extension"></a>Créer une extension Visual Studio
 
-Cet article utilise une extension de package Visual Studio par défaut, mais les étapes sont valides pour chaque type d’extension.
+Cet article utilise une extension VSPackage par défaut, mais les étapes sont valables pour chaque type d’extension.
 
-1. Créer un VSPackage en c# nommé `TestPublish` qui a une commande de menu. Pour plus d’informations, consultez [créer votre première extension : Hello World](../extensibility/extensibility-hello-world.md).
+1. Créez un VSPackage en `TestPublish` C nommé qui a une commande de menu. Pour plus d’informations, voir [Créer votre première extension: Bonjour Monde](../extensibility/extensibility-hello-world.md).
 
-## <a name="package-your-extension"></a>Votre extension de package
+## <a name="package-your-extension"></a>Empaqueter votre extension
 
-1. Mettre à jour de l’extension *.vsixmanifest* avec les informations correctes sur le nom de produit, auteur et la version.
+1. Mettre à jour l’extension *.vsixmanifest* avec les informations correctes sur le nom du produit, l’auteur et la version.
 
-   ![mettre à jour d’extension vsixmanifest](media/update-extension-vsixmanifest.png)
+   ![mise à jour de l’extension vsixmanifest](media/update-extension-vsixmanifest.png)
 
-2. Générer votre extension **version** mode. Votre extension est maintenant fournie comme une extension VSIX dans le dossier \bin\Release.
+2. Construisez votre extension en mode **Version.** Maintenant, votre extension est emballée comme un VSIX dans le dossier 'bin’Release.
 
-3. Vous pouvez double-cliquer sur l’extension VSIX pour vérifier l’installation.
+3. Vous pouvez cliquer deux fois sur le VSIX pour vérifier l’installation.
 
-## <a name="test-the-extension"></a>Tester l’extension
+## <a name="test-the-extension"></a>Testez l’extension
 
- Avant de distribuer l’extension, générer et tester pour vous assurer qu’il est installé correctement dans l’instance expérimentale de Visual Studio.
+ Avant de distribuer l’extension, construisez et testez-la pour vous assurer qu’elle est installée correctement dans l’instance expérimentale de Visual Studio.
 
-1. Dans Visual Studio, démarrez le débogage pour ouvrir une instance expérimentale de Visual Studio.
+1. Dans Visual Studio, commencez à débogage pour ouvrir une instance expérimentale de Visual Studio.
 
-2. Dans l’instance expérimentale, accédez à la **outils** menu et cliquez sur **Extensions et mises à jour**. L’extension TestPublish doit apparaître dans le volet central et être activée.
+2. Dans le cas expérimental, allez au menu **Tools** et cliquez sur **Extensions et Mises à jour**. L’extension TestPublish doit apparaître dans le volet central et être activée.
 
-3. Sur le **outils** menu, vérifiez que vous voyez la commande de test.
+3. Sur le menu **Tools,** assurez-vous de voir la commande de test.
 
-## <a name="publish-the-extension-to-the-visual-studio-marketplace"></a>Publier l’extension à la place de marché Visual Studio
+## <a name="publish-the-extension-to-the-visual-studio-marketplace"></a>Publier l’extension du Visual Studio Marketplace
 
-1. Assurez-vous que vous avez créé la version Release de votre extension et qu’il est à jour.
+1. Assurez-vous d’avoir construit la version Version Version de votre extension et qu’elle est à jour.
 
-2. Dans un navigateur web, ouvrez le [Visual Studio Marketplace](https://marketplace.visualstudio.com/vs) site Web.
+2. Dans un navigateur Web, ouvrez le site [Web Visual Studio Marketplace.](https://marketplace.visualstudio.com/vs)
 
-3. Dans le coin supérieur droit, cliquez sur **connectez-vous**.
+3. Dans le coin supérieur droit, cliquez sur **Connectez-vous**.
 
-4. Utilisez votre compte Microsoft pour vous connecter. Si vous n’avez pas d’un compte Microsoft, vous pouvez en créer une à ce stade.
+4. Utilisez votre compte Microsoft pour vous connecter. Si vous n’avez pas de compte Microsoft, vous pouvez en créer un à ce stade.
 
-5. Cliquez sur **publier des extensions**.  Cette option vous permet d’accéder à la page de gestion pour toutes vos extensions. Si vous n’avez pas un compte d’éditeur, vous êtes invité à en créer un pour l’instant.
+5. Cliquez **sur Publier les extensions**.  Cette option vous guide vers la page de gestion de toutes vos extensions. Si vous n’avez pas de compte d’éditeur, vous êtes invité à en créer un pour le moment.
 
-   ![Charger à la place de marché](media/upload-to-marketplace.png)
+   ![Télécharger sur Marketplace](media/upload-to-marketplace.png)
 
-6. Choisissez le serveur de publication que vous souhaitez utiliser pour télécharger votre extension. Vous pouvez modifier les serveurs de publication en cliquant sur les noms d’éditeurs apparaissent à gauche. Cliquez sur **nouvelle extension** et sélectionnez **Visual Studio**.
+6. Choisissez l’éditeur que vous souhaitez utiliser pour télécharger votre extension. Vous pouvez changer d’éditeur en cliquant sur les noms d’éditeurs répertoriés à gauche. Cliquez sur **nouvelle extension** et sélectionnez **Visual Studio**.
 
-7. Dans **1 : Charger l’extension**, vous pouvez choisir de télécharger un fichier VSIX directement à la place de marché Visual Studio ou simplement ajouter un lien vers votre propre site Web. Dans cet exemple, l’extension, *TestPublish.vsix* est chargé. Faites glisser et déposez votre extension ou utilisez le **cliquez sur** lien pour rechercher le fichier. Recherchez votre extension dans le dossier \bin\Release du projet.  Cliquez sur **Continuer**.
+7. Dans **1: Extension de téléchargement**, vous pouvez choisir de télécharger un fichier VSIX directement sur Visual Studio Marketplace ou tout simplement ajouter un lien vers votre propre site Web. Dans cet exemple, l’extension, *TestPublish.vsix* est téléchargée. Faites glisser et laissez tomber votre extension ou utilisez le lien **de clic** pour parcourir le fichier. Trouvez votre extension dans le dossier 'bin’Release du projet.  Cliquez sur **Continuer**.
 
-8. Dans **2 : Fournir les détails de l’extension**, certains champs sont remplis automatiquement à partir de la *source.extension.vsixmanifest* fichier à partir de votre extension. Rechercher plus en détail chacun ci-dessous :
+8. Dans **2: Fournir des détails d’extension**, certains champs sont auto-peuplés à partir du fichier *source.extension.vsixmanifest* de votre extension. Pour plus de détails sur chacun ci-dessous :
 
-    * **Nom interne** est utilisé dans l’URL de page de détails de l’extension. Pour obtenir un exemple, la publication d’une extension sous le nom du serveur de publication « myname » et en spécifiant le nom interne pour être « mon extension » entraîne une URL de « marketplace.visualstudio\.com/items?itemName=myname.myextension » pour les détails de votre extension page.
+    * **Le nom interne** est utilisé dans l’URL de la page de détail de l’extension. Par exemple, la publication d’une extension sous le nom d’éditeur "myname" et la spécit\.du nom interne pour être "mon extension" aboutit à une URL de "marketplace.visualstudio com/items?itemName-myextension" pour la page de détail de votre extension.
 
-    * **Nom d’affichage** de votre extension. Ce nom est rempli automatiquement à partir de la *source.extension.vsixmanifest* fichier.
+    * **Afficher le nom** de votre extension. Ce nom est auto-peuplé à partir du fichier *source.extension.vsixmanifest.*
 
-    * **Version** numéro de l’extension que vous chargez. Cette version est rempli automatiquement à partir de la *source.extension.vsixmanifest* fichier.
+    * **Numéro** de version de l’extension que vous téléchargez. Cette version est auto-peuplée à partir du fichier *source.extension.vsixmanifest.*
 
-    * **ID VSIX** est l’identificateur unique utilisé par Visual Studio pour votre extension. Cet identificateur est requis si vous souhaitez que pour que votre extension à jour automatiquement. Cet identificateur est rempli automatiquement à partir de la *source.extension.vsixmanifest* fichier.
+    * **VSIX ID** est l’identifiant unique que Visual Studio utilise pour votre extension. Cet identifiant est requis si vous souhaitez que votre extension soit mise à jour automatiquement. Cet identifiant est auto-peuplé à partir du fichier *source.extension.vsixmanifest.*
 
-    * **Logo** qui est utilisé pour votre extension. Ce logo est rempli automatiquement à partir de la *source.extension.vsixmanifest* fichier s’il est fourni.
+    * **Logo** qui est utilisé pour votre extension. Ce logo est auto-peuplé à partir du fichier *source.extension.vsixmanifest* si fourni.
 
-    * **Description courte** de ce que fait votre extension. Cette description est rempli automatiquement à partir de la *source.extension.vsixmanifest* fichier.
+    * **Courte description** de ce que fait votre extension. Cette description est auto-peuplée à partir du fichier *source.extension.vsixmanifest.*
 
-    * **Vue d’ensemble** est un bon emplacement pour inclure des captures d’écran et des informations détaillées sur ce que fait votre extension.
+    * **Aperçu** est un bon endroit pour inclure des captures d’écran et des informations détaillées sur ce que votre extension fait.
 
-    * **Prise en charge des versions de Visual Studio** vous permet de choisir les versions de Visual Studio fonctionne sur votre extension. Votre extension est installée uniquement pour ces versions.
+    * **Les versions Visual Studio prises en** charge vous permettent de choisir les versions de Visual Studio sur lesquelles votre extension fonctionnera. Votre extension n’est installée que sur ces versions.
 
-    * ** Pris en charge de Visual Studio Édition vous permet de choisir quelles éditions de Visual Studio fonctionne sur votre extension. Votre extension est installée uniquement pour ces éditions.
+    * L’édition Visual Studio vous permet de choisir les éditions de Visual Studio sur lesquelles votre extension fonctionnera. Votre extension n’est installée que sur ces éditions.
 
-    * **Type**. Le type le plus courant des extensions sont **outils**.
+    * **Type**. Le type le plus commun d’extensions sont **Outils**.
 
-    * **Catégories**. Sélectionnez jusqu'à trois qui sont le mieux pour votre extension.
+    * **Catégories**. Ramassez jusqu’à trois qui conviennent le mieux à votre extension.
 
-    * **Balises** sont les mots clés qui permettent aux utilisateurs de trouver votre extension. Balises peuvent aider à augmenter la pertinence de la recherche de vos extensions dans la place de marché.
+    * **Les balises** sont des mots clés qui aident les utilisateurs à trouver votre extension. Les balises peuvent aider à augmenter la pertinence de recherche de vos extensions sur le marché.
 
-    * **Catégorie de tarification** est le coût de votre extension.
+    * **La catégorie de prix** est le coût de votre extension.
 
-    * **Référentiel de code source** vous permet de partager un lien vers votre code source avec la Communauté.
+    * **Le référentiel de code source** vous permet de partager un lien vers votre code source avec la communauté.
 
-    * **Autoriser des questions et réponses pour votre extension** permet aux utilisateurs de laisser des questions sur votre page d’entrée extension.
+    * **Autoriser Q&A pour votre extension** permet aux utilisateurs de laisser des questions sur votre page d’entrée d’extension.
 
-9. Cliquez sur **enregistrer et charger**. Page de gestion de cette option vous revenez à votre serveur de publication. Votre extension n’a pas encore été publiée. Pour publier votre extension, cliquez sur votre extension, puis sélectionnez **rendre Public**. Vous pouvez afficher la façon dont votre extension ressemblera sur place de marché en sélectionnant **afficher l’Extension**. Pour les nombres d’acquisition, cliquez sur **rapports**. Pour apporter des modifications à votre extension, cliquez sur **modifier**.
+9. Cliquez **sur Enregistrer & Télécharger**. Cette option vous ramène à votre éditeur gérer la page. Votre extension n’a pas encore été publiée. Pour publier votre extension, cliquez à droite sur votre extension et **sélectionnez Rendez-vous public**. Vous pouvez voir à quoi ressemblera votre extension sur Marketplace en sélectionnant **View Extension**. Pour les numéros d’acquisition, cliquez sur **Les rapports**. Pour apporter des modifications à votre extension, cliquez sur **Edit**.
 
-   ![Menu de l’entrée extension](media/extension-entry-menu.png)
+   ![Menu d’entrée d’extension](media/extension-entry-menu.png)
 
-10. Après avoir cliqué sur **rendre Public**, votre extension est désormais publique. Rechercher la place de marché Visual Studio pour votre extension.
+10. Après avoir cliqué **Sur Make Public**, votre extension est maintenant publique. Recherchez votre extension sur le marché visual studio.
 
-## <a name="add-additional-users-to-manage-your-publisher-account"></a>Ajouter des utilisateurs supplémentaires pour gérer votre compte de serveur de publication
+## <a name="add-additional-users-to-manage-your-publisher-account"></a>Ajouter d’autres utilisateurs pour gérer votre compte d’éditeur
 
-Place de marché prend en charge l’octroi d’autorisations des utilisateurs supplémentaires pour accéder et gérer un compte d’éditeur.
+Marketplace prend en charge l’octroi d’autorisations supplémentaires aux utilisateurs pour accéder et gérer un compte d’éditeur.
 
-1. Accédez au compte de publication que vous souhaitez ajouter des utilisateurs.
+1. Naviguez vers le compte éditeur à laquelle vous souhaitez ajouter d’autres utilisateurs.
 
-2. Sélectionnez **membres** , puis cliquez sur **ajouter**.
+2. Sélectionnez **les membres** et cliquez sur **Ajouter**.
 
-   ![Ajouter des utilisateurs supplémentaires](media/add-users.png)
+   ![Ajouter un utilisateur supplémentaire](media/add-users.png)
 
-3. Vous pouvez ensuite spécifier l’adresse de messagerie de l’utilisateur que vous souhaitez ajouter et accorder le niveau d’accès sous **sélectionner un rôle**.  Vous pouvez choisir parmi les options suivantes :
+3. Vous pouvez ensuite spécifier l’adresse e-mail de l’utilisateur que vous souhaitez ajouter et accorder le bon niveau d’accès sous **Sélectionnez un rôle**.  Vous pouvez choisir parmi les options suivantes :
 
-   * **Créateur**: L’utilisateur peut publier des extensions, mais il ne peut pas afficher ou gérer des extensions publiées par d’autres utilisateurs.
+   * **Créateur**: L’utilisateur peut publier des extensions, mais ne peut pas afficher ou gérer les extensions publiées par d’autres utilisateurs.
 
-   * **Lecteur**: L’utilisateur peut afficher les extensions, mais il ne peut pas publier ou gérer les extensions.
+   * **Lecteur**: L’utilisateur peut afficher des extensions, mais ne peut pas publier ou gérer les extensions.
 
    * **Contributeur**: L’utilisateur peut publier et gérer des extensions, mais ne peut pas modifier les paramètres de l’éditeur ou gérer l’accès.
 
-   * **Propriétaire**: L’utilisateur peut publier et gérer les extensions, modifier les paramètres de serveur de publication et gérer l’accès.
+   * **Propriétaire**: L’utilisateur peut publier et gérer des extensions, modifier les paramètres de l’éditeur et gérer l’accès.
 
-## <a name="install-the-extension-from-the-visual-studio-marketplace"></a>Installer l’extension à partir de Visual Studio Marketplace
+## <a name="install-the-extension-from-the-visual-studio-marketplace"></a>Installer l’extension à partir du marché visual Studio
 
-Maintenant que l’extension est publiée, installez-le dans Visual Studio et testez-le.
+Maintenant que l’extension est publiée, installez-la dans Visual Studio et testez-la là.
 
-1. Dans Visual Studio, sur le **outils** menu, cliquez sur **Extensions et mises à jour**.
+1. Dans Visual Studio, sur le menu **Tools,** cliquez sur **Extensions et Mises à jour**.
 
-2. Cliquez sur **Online** , puis recherchez **TestPublish**.
+2. Cliquez **en ligne,** puis recherchez **TestPublish**.
 
-3. Cliquez sur **Télécharger**. L’extension est ensuite planifiée pour l’installation.
+3. Cliquez sur **Télécharger**. L’extension est alors prévue pour l’installation.
 
-4. Pour terminer l’installation, fermez toutes les instances de Visual Studio.
+4. Pour compléter l’installation, fermez toutes les instances de Visual Studio.
 
 ## <a name="remove-the-extension"></a>Supprimer l’extension
 
-Vous pouvez supprimer l’extension à partir de Visual Studio Marketplace et à partir de votre ordinateur.
+Vous pouvez supprimer l’extension du Visual Studio Marketplace et de votre ordinateur.
 
-### <a name="to-remove-the-extension-from-the-visual-studio-marketplace"></a>Pour supprimer l’extension à partir de Visual Studio Marketplace
+### <a name="to-remove-the-extension-from-the-visual-studio-marketplace"></a>Supprimer l’extension du Visual Studio Marketplace
 
-1. Ouvrez le [Visual Studio Marketplace](https://marketplace.visualstudio.com/vs) site Web.
+1. Ouvrez le site [Web visual Studio Marketplace.](https://marketplace.visualstudio.com/vs)
 
-2. Dans le coin supérieur droit, cliquez sur **publier** extensions. Choisissez le serveur de publication que vous avez utilisé pour publier **TestPublish**. La liste de **TestPublish** s’affiche.
+2. Dans le coin supérieur droit, cliquez sur Les extensions **Publier.** Choisissez l’éditeur que vous avez utilisé pour publier **TestPublish**. La liste pour **TestPublish** apparaît.
 
-3. Avec le bouton droit sur l’entrée de l’extension et cliquez sur **supprimer**. Vous êtes invité à confirmer si vous souhaitez supprimer l’extension. Cliquez sur **OK**.
+3. Cliquez à droite sur l’entrée d’extension et cliquez sur **Supprimer**. On vous demande de confirmer si vous voulez supprimer l’extension. Cliquez sur **OK**.
 
-### <a name="to-remove-the-extension-from-your-computer"></a>Pour supprimer l’extension à partir de votre ordinateur
+### <a name="to-remove-the-extension-from-your-computer"></a>Pour supprimer l’extension de votre ordinateur
 
-1. Dans Visual Studio, sur le **outils** menu, cliquez sur **Extensions et mises à jour**.
+1. Dans Visual Studio, sur le menu **Tools,** cliquez sur **Extensions et Mises à jour**.
 
-2. Sélectionnez **TestPublish** puis cliquez sur **désinstallation**. L’extension est ensuite planifiée pour la désinstallation.
+2. Sélectionnez **TestPublish,** puis cliquez sur **Uninstall**. L’extension est alors prévue pour un désinstallation.
 
-3. Pour terminer la désinstallation, fermez toutes les instances de Visual Studio.
+3. Pour compléter la désinstallation, fermez toutes les instances de Visual Studio.

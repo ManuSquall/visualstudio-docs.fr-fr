@@ -38,7 +38,7 @@
           href: command-design.md
         - name: Implémentation de commande
           href: command-implementation.md
-        - name: Disponibilité de commande
+        - name: Disponibilité des commandes
           href: command-availability.md
         - name: Algorithme de routage de commande
           href: command-routing-algorithm.md
@@ -112,7 +112,7 @@
               href: important-commands-for-language-service-filters.md
         - name: Inscription d’un service de langage hérité2
           href: registering-a-legacy-language-service2.md
-        - name: "Checklist\_: création d’un service de langage hérité"
+        - name: 'Liste de vérification : création d’un service de langage hérité'
           href: checklist-creating-a-legacy-language-service.md
         - name: Fonctionnalités du service de langage hérité2
           items:
@@ -158,7 +158,7 @@
           href: registering-a-legacy-language-service1.md
         - name: Scanneur et analyseur du service de langage hérité
           href: legacy-language-service-parser-and-scanner.md
-        - name: "Procédure pas à pas\_: création d’un service de langage hérité"
+        - name: 'Procédure pas à pas : création d’un service de langage hérité'
           href: walkthrough-creating-a-legacy-language-service.md
         - name: "Procédure pas à pas\_: obtention d’une liste d’extraits de code installés (implémentation héritée)"
           href: walkthrough-getting-a-list-of-installed-code-snippets-legacy-implementation.md
@@ -208,9 +208,9 @@
   items:
     - name: Projets
       href: projects.md
-    - name: "Nouvelle génération de projet\_: Rouages du système, première partie"
+    - name: "Génération de nouveau projet\_: les rouages du système, partie 1"
       href: new-project-generation-under-the-hood-part-one.md
-    - name: "Nouvelle génération de projet\_: Rouages du système, seconde partie"
+    - name: "Génération de nouveau projet\_: les rouages du système, partie 2"
       href: new-project-generation-under-the-hood-part-two.md
     - name: Types de projet
       items:
@@ -224,7 +224,7 @@
               href: creating-project-types.md
             - name: Décisions de conception de type de projet
               href: project-type-design-decisions.md
-            - name: "Checklist\_: création de types de projets"
+            - name: "Liste de vérification\_: création de nouveaux types de projets"
               href: checklist-creating-new-project-types.md
             - name: Création d’instances de projets à l’aide de fabriques de projets
               href: creating-project-instances-by-using-project-factories.md
@@ -442,9 +442,9 @@
       href: list-of-available-services.md
 - name: Extensibilité du débogueur de Visual Studio
   href: ../debugger/toc.yml
-- name: Contrôle de code source
+- name: Contrôle de la source
   items:
-    - name: Contrôle de code source
+    - name: Contrôle de la source
       href: source-control.md
     - name: Éléments fondamentaux de l’intégration du contrôle de code source
       href: source-control-integration-essentials.md
@@ -486,21 +486,21 @@
           items:
             - name: Guide de test pour les plug-ins de contrôle de code source
               href: test-guide-for-source-control-plug-ins.md
-            - name: "Zone de test\_1\_: Ajouter à/Ouvrir à partir du contrôle de code source"
+            - name: "Zone de test 1\_: Ajouter à-Ouvrir à partir du contrôle de code source"
               href: test-area-1-add-to-open-from-source-control.md
-            - name: "Zone de test\_2\_: Obtenir à partir du contrôle de code source"
+            - name: "Zone de test 2\_: Obtenir à partir du contrôle de code source"
               href: test-area-2-get-from-source-control.md
-            - name: "Zone de test\_3\_: Extraire/Annuler l’extraction"
+            - name: "Zone de test 3\_: Extraire-Annuler l’extraction"
               href: test-area-3-check-out-undo-checkout.md
-            - name: "Zone de test\_4\_: Archiver"
+            - name: "Zone de test 4\_: Archiver"
               href: test-area-4-check-in.md
-            - name: "Zone de test\_5\_: Changer le contrôle de code source"
+            - name: 'Zone de test 5 : Modifier le contrôle de code source'
               href: test-area-5-change-source-control.md
-            - name: "Zone de test\_6\_: Supprimer"
+            - name: "Zone de test 6\_: Supprimer"
               href: test-area-6-delete.md
-            - name: "Zone de test\_7\_: Partager"
+            - name: "Zone de test 7\_: Partager"
               href: test-area-7-share.md
-            - name: "Zone de test\_8\_: Commutation de plug-in"
+            - name: "Zone de test 8\_: Commutation de plug-in"
               href: test-area-8-plug-in-switching.md
     - name: Création d’un VSPackage de contrôle de code source
       items:

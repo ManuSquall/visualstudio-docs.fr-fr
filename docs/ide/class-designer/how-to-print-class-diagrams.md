@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: f259a36cb35b69954d99a2104903fb973930af42
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75596695"
 ---
 # <a name="how-to-print-class-diagrams"></a>Guide pratique pour imprimer des diagrammes de classes
@@ -32,5 +32,5 @@ L’intégralité du diagramme de classes est imprimé. Vous devrez peut-être a
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Guide pratique pour copier les éléments d’un diagramme de classes vers un document Microsoft Office](how-to-copy-class-diagram-elements-to-a-microsoft-office-document.md)
-- [Guide pratique pour exporter des diagrammes de classes en tant qu’images](how-to-export-class-diagrams-as-images.md)
+- [Comment : Copier les éléments de diagramme de classe à un document Microsoft Office](how-to-copy-class-diagram-elements-to-a-microsoft-office-document.md)
+- [Comment : Diagrammes de classe d’exportation comme images](how-to-export-class-diagrams-as-images.md)

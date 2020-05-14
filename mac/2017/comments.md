@@ -6,13 +6,13 @@ ms.author: dominicn
 ms.date: 05/06/2018
 ms.assetid: 0FE5E929-1846-4F48-B5E3-70990FAF9504
 ms.openlocfilehash: 038c2bf7205ccc642d613893635b9323afe613b9
-ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/10/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "74982649"
 ---
-# <a name="comments"></a>Comments
+# <a name="comments"></a>Commentaires
 
 Durant le débogage ou l’expérimentation du code, il peut être utile de commenter des blocs de code, de façon temporaire ou à long terme.
 
@@ -20,7 +20,7 @@ Pour marquer en commentaire tout un bloc de code :
 
 * Sélectionnez le code et sélectionnez **Activer/désactiver le commentaire de ligne** dans le menu contextuel.
 
-OU
+OR
 
 * Utilisez la combinaison de touches `cmd + /` sur le code sélectionné.
 
@@ -30,7 +30,7 @@ Vous pouvez utiliser ces méthodes pour ajouter et supprimer des marques de comm
 
 Les commentaires sont également utiles pour documenter le code à l’attention des développeurs susceptibles d’intervenir dessus. Ils se présentent généralement sous la forme de commentaires multilignes, qui sont ajoutés de la façon suivante dans chaque langage :
 
-**C#**
+**C #**
 
 ```csharp
 /*
@@ -39,7 +39,7 @@ Les commentaires sont également utiles pour documenter le code à l’attention
 */
 ```
 
-**F#**
+**F #**
 
 ```fsharp
 (*

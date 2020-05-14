@@ -13,15 +13,15 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 4f4ca1def334241999445e3f11cf142aa426d962
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75566772"
 ---
 # <a name="settings-page-project-designer"></a>Paramètres, page du Concepteur de projet
 
-Utilisez la page **Paramètres** du Concepteur de projet pour spécifier les paramètres d’application d’un projet. Les paramètres d’application vous permettent de stocker et de récupérer des paramètres de propriétés et autres informations relatives à l’application de manière dynamique. Ils vous permettent également de tenir à jour des préférences utilisateur et d’application personnalisées sur un ordinateur client. Pour plus d’informations, consultez [Gérer les paramètres d’application](../managing-application-settings-dotnet.md).
+Utilisez la page **Paramètres** du Concepteur de projet pour spécifier les paramètres d’application d’un projet. Les paramètres d’application vous permettent de stocker et de récupérer des paramètres de propriétés et autres informations relatives à l’application de manière dynamique. Ils vous permettent également de tenir à jour des préférences utilisateur et d’application personnalisées sur un ordinateur client. Pour en savoir plus, veuillez consulter la section [Gérer les paramètres d’application](../managing-application-settings-dotnet.md).
 
 Pour accéder à la page **Paramètres**, sélectionnez un nœud de projet dans l’**Explorateur de solutions**, puis sélectionnez **Projet** > **Propriétés**. À l’affichage du Concepteur de projet, sélectionnez l’onglet **Paramètres**.
 
@@ -49,7 +49,7 @@ Pour les projets Visual Basic, le bouton **Afficher le code** vous permet d’af
 
 Pour plus d’informations sur l’accès aux paramètres d’application, consultez [Paramètres d’application pour les Windows Forms](/dotnet/framework/winforms/advanced/application-settings-for-windows-forms).
 
-**Modificateur d’accès**
+**Modificateur d’accès **
 
 Le bouton **Modificateur d’accès** spécifie le niveau d’accès des classes d’assistance `Properties.Settings` (en C#) ou `My.Settings` (en Visual Basic) que Visual Studio génère dans *Settings.Designer.cs* ou *Settings.Designer.vb*.
 
@@ -57,7 +57,7 @@ Pour les projets Visual C#, le modificateur d’accès peut être **Internal** o
 
 Pour les projets Visual Basic, le modificateur d’accès peut être **Friend** ou **Public**.
 
-Par défaut, le paramètre est **Internal** en C# et **Friend** en Visual Basic. Quand Visual Studio génère des classes d’assistance **Internal** ou **Friend**, les applications exécutables ( *.exe*) ne peuvent pas accéder aux ressources et aux paramètres que vous avez ajoutés aux bibliothèques de classes (fichiers *.dll*). Si vous devez partager des ressources et des paramètres à partir d’une bibliothèque de classes, affectez la valeur **Public** au modificateur d’accès.
+Par défaut, le paramètre est **Internal** en C# et **Friend** en Visual Basic. Quand Visual Studio génère des classes d’assistance **Internal** ou **Friend**, les applications exécutables (*.exe*) ne peuvent pas accéder aux ressources et aux paramètres que vous avez ajoutés aux bibliothèques de classes (fichiers *.dll*). Si vous devez partager des ressources et des paramètres à partir d’une bibliothèque de classes, affectez la valeur **Public** au modificateur d’accès.
 
 Pour plus d’informations sur les classes d’assistance de paramètres, consultez [Gérer les paramètres d’application](../managing-application-settings-dotnet.md).
 
@@ -65,7 +65,7 @@ Pour plus d’informations sur les classes d’assistance de paramètres, consul
 
 La **grille de paramètres** sert à configurer les paramètres de l’application. Cette grille contient les colonnes suivantes :
 
-**Name**
+**Nom   **
 
 Entrez le nom du paramètre d’application dans ce champ.
 
@@ -73,7 +73,7 @@ Entrez le nom du paramètre d’application dans ce champ.
 
 Utilisez la liste déroulante pour sélectionner un type pour le paramètre. Les types les plus fréquemment utilisés apparaissent dans la liste déroulante, par exemple **Chaîne**, **(Chaîne de connexion)** et **System.Drawing.Font**. Vous pouvez choisir un autre type en sélectionnant **Parcourir** à la fin de la liste, puis en sélectionnant dans la boîte de dialogue **Sélectionner un type**. Une fois que vous avez choisi un type, il est ajouté aux types communs dans la liste déroulante (pour la solution actuelle uniquement).
 
-**Portée**
+**Scope**
 
 Sélectionnez **Application** ou **Utilisateur**.
 

@@ -1,5 +1,5 @@
 ---
-title: IDebugPropertyField::GetPropertySetter | Microsoft Docs
+title: IDebugPropertyField::GetPropertySetter ( Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugPropertyField::GetPropertySetter method
 ms.assetid: 744d76fd-2bcc-4917-a040-ce4cc714ef61
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 29772ad76df6538ec5093d2fb34427a7fa89c5ff
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 76834b3d4d61f0a58d7a0d2c36f8e30c444ddca2
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66345678"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80720852"
 ---
 # <a name="idebugpropertyfieldgetpropertysetter"></a>IDebugPropertyField::GetPropertySetter
 Obtient la méthode qui définit la propriété.
@@ -41,13 +41,13 @@ int GetPropertySetter(
 
 ## <a name="parameters"></a>Paramètres
 `ppField`\
-[out] Retourne un [IDebugMethodField](../../../extensibility/debugger/reference/idebugmethodfield.md) objet représentant la méthode qui définit la propriété.
+[out] Retourne un objet [IDebugMethodField](../../../extensibility/debugger/reference/idebugmethodfield.md) représentant la méthode qui définit la propriété.
 
 ## <a name="return-value"></a>Valeur de retour
- En cas de réussite, retourne S_OK ; Sinon, retourne un code d’erreur.
+ En cas de succès, les retours S_OK; renvoie autrement un code d’erreur.
 
 ## <a name="remarks"></a>Notes
- Pour obtenir la méthode qui obtient la propriété, appelez le [GetPropertyGetter](../../../extensibility/debugger/reference/idebugpropertyfield-getpropertygetter.md) (méthode).
+ Pour obtenir la méthode qui obtient la propriété, appelez la méthode [GetPropertyGetter.](../../../extensibility/debugger/reference/idebugpropertyfield-getpropertygetter.md)
 
 ## <a name="see-also"></a>Voir aussi
 - [IDebugPropertyField](../../../extensibility/debugger/reference/idebugpropertyfield.md)

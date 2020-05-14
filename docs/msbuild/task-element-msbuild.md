@@ -1,5 +1,5 @@
 ---
-title: Élément Task (MSBuild) | Microsoft Docs
+title: Élément de tâche de la cible (MSBuild) Microsoft Docs
 ms.date: 03/13/2017
 ms.topic: reference
 dev_langs:
@@ -16,15 +16,16 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 76f808c14b8459abfb3bf9c531cfff496932836c
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 8a4ec2203430045c083b46b2eea8d3e884a4b794
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75566356"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "78263170"
 ---
-# <a name="task-element-msbuild"></a>Élément Task (MSBuild)
-Crée et exécute une instance d’une tâche [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. Le nom de l’élément est déterminé par le nom de la tâche en cours de création.
+# <a name="task-element-of-target-msbuild"></a>Élément de tâche de la cible (MSBuild)
+
+Crée et exécute une instance d’une tâche MSBuild. Le nom de l’élément est déterminé par le nom de la tâche en cours de création.
 
  \<Project> \<Target>
 
@@ -39,14 +40,15 @@ Crée et exécute une instance d’une tâche [!INCLUDE[vstecmsbuild](../extensi
 ```
 
 ## <a name="attributes-and-elements"></a>Attributs et éléments
+
  Les sections suivantes décrivent des attributs, des éléments enfants et des éléments parents.
 
 ### <a name="attributes"></a>Attributs
 
-|Attribute|Description|
+|Attribut|Description|
 |---------------|-----------------|
 |`Condition`|Attribut facultatif. Condition à évaluer. Pour plus d’informations, consultez l’article [Conditions (Conditions MSBuild)](../msbuild/msbuild-conditions.md).|
-|`ContinueOnError`|Attribut facultatif. Peut contenir l’une des valeurs suivantes :<br /><br /> -   **WarnAndContinue** ou **true**. En cas d’échec d’une tâche, l’exécution des tâches suivantes de l’élément [Target](../msbuild/target-element-msbuild.md) et de la génération se poursuit, et toutes les erreurs de la tâche sont considérées comme des avertissements.<br />-   **ErrorAndContinue**. En cas d’échec d’une tâche, l’exécution des tâches suivantes de l’élément `Target` et de la génération se poursuit, et toutes les erreurs de la tâche sont considérées comme des erreurs.<br />-   **ErrorAndStop** ou **false** (par défaut). En cas d’échec d’une tâche, les tâches restantes de l’élément `Target` et de la génération ne sont pas exécutées, et tout l’élément `Target` ainsi que la génération sont considérés comme étant en échec.<br /><br /> Les versions de .NET Framework antérieures à 4.5 prenaient en charge uniquement les valeurs `true` et `false`.<br /><br /> Pour plus d’informations, voir [Guide pratique : Ignorer les erreurs dans les tâches](../msbuild/how-to-ignore-errors-in-tasks.md).|
+|`ContinueOnError`|Attribut facultatif. Peut contenir l’une des valeurs suivantes :<br /><br /> -   **WarnAndContinue** ou **vrai**. Lorsqu’une tâche échoue, les tâches ultérieures de [l’élément Cible](../msbuild/target-element-msbuild.md) et de la build continuent d’être exécutées, et toutes les erreurs de la tâche sont traitées comme des avertissements.<br />-   **ErreurAndContinue**. En cas d’échec d’une tâche, l’exécution des tâches suivantes de l’élément `Target` et de la génération se poursuit, et toutes les erreurs de la tâche sont considérées comme des erreurs.<br />-   **ErreurAndStop** ou **faux** (par défaut). En cas d’échec d’une tâche, les tâches restantes de l’élément `Target` et de la génération ne sont pas exécutées, et tout l’élément `Target` ainsi que la génération sont considérés comme étant en échec.<br /><br /> Les versions de .NET Framework antérieures à 4.5 prenaient en charge uniquement les valeurs `true` et `false`.<br /><br /> Pour plus d’informations, voir [Comment : Ignorer les erreurs dans les tâches](../msbuild/how-to-ignore-errors-in-tasks.md).|
 |`Parameter`|Il est nécessaire si la classe de tâche contient une ou plusieurs propriétés dotées de l’attribut `[Required]`.<br /><br /> Un paramètre de tâche défini par l’utilisateur qui contient la valeur du paramètre comme sa propre valeur. Le nombre de paramètres dans l’élément `Task` peut varier, avec chaque attribut correspondant à une propriété .NET dans la classe de tâche.|
 
 ### <a name="child-elements"></a>Éléments enfants
@@ -59,14 +61,16 @@ Crée et exécute une instance d’une tâche [!INCLUDE[vstecmsbuild](../extensi
 
 | Élément | Description |
 | - | - |
-| [Target](../msbuild/target-element-msbuild.md) | Élément conteneur des tâches [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. |
+| [Target](../msbuild/target-element-msbuild.md) | Élément de conteneur pour les tâches MSBuild. |
 
-## <a name="remarks"></a>Notes
- Un élément `Task` dans un fichier projet [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] crée une instance d’une tâche, définit des propriétés sur celle-ci et l’exécute. L’élément `Output` stocke les paramètres de sortie dans les propriétés ou les éléments à utiliser ailleurs dans le fichier projet.
+## <a name="remarks"></a>Notes 
+
+ Un `Task` élément dans un fichier de projet MSBuild crée un exemple de tâche, définit des propriétés sur elle, et l’exécute. L’élément `Output` stocke les paramètres de sortie dans les propriétés ou les éléments à utiliser ailleurs dans le fichier projet.
 
  S’il existe des éléments [OnError](../msbuild/onerror-element-msbuild.md) dans l’élément `Target` parent d’une tâche, ils seront néanmoins évalués si la tâche échoue, et `ContinueOnError` a la valeur de `false`. Pour plus d’informations sur les tâches, consultez [Tâches MSBuild](../msbuild/msbuild-tasks.md).
 
-## <a name="example"></a>Exemple
+## <a name="example"></a> Exemple
+
  L’exemple de code suivant crée une instance de la classe [CSC, tâche](../msbuild/csc-task.md), définit six des propriétés et exécute la tâche. Après exécution, la valeur de la propriété `OutputAssembly` de l’objet est placée dans une liste d’éléments nommée `FinalAssemblyName`.
 
 ```xml
@@ -84,6 +88,7 @@ Crée et exécute une instance d’une tâche [!INCLUDE[vstecmsbuild](../extensi
 ```
 
 ## <a name="see-also"></a>Voir aussi
-- [Tâches MSBuild](../msbuild/msbuild-tasks.md)
+
+- [Tâches](../msbuild/msbuild-tasks.md)
 - [Informations de référence sur les tâches](../msbuild/msbuild-task-reference.md)
-- [Informations de référence sur le schéma de fichier projet](../msbuild/msbuild-project-file-schema-reference.md)
+- [Référence du schéma de fichier de projet](../msbuild/msbuild-project-file-schema-reference.md)

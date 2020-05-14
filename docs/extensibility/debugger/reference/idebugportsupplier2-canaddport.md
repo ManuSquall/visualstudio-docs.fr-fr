@@ -1,5 +1,5 @@
 ---
-title: IDebugPortSupplier2::CanAddPort | Microsoft Docs
+title: IDebugPortSupplier2::CanAddPort ( Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugPortSupplier2::CanAddPort
 ms.assetid: 41f69e0a-e82c-473d-8b7a-0c40fc5730fc
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 37f4fd246c376d08ab3ca006c543b44c4db2d73d
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 5d0c67d62f57076f29f2c2ef60d456f517ae97fd
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66340291"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80724751"
 ---
 # <a name="idebugportsupplier2canaddport"></a>IDebugPortSupplier2::CanAddPort
-Vérifie qu’un fournisseur de port peut ajouter de nouveaux ports.
+Vérifie qu’un fournisseur portuaire peut ajouter de nouveaux ports.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -38,10 +38,10 @@ int CanAddPort();
 ```
 
 ## <a name="return-value"></a>Valeur de retour
- Si le port peut être ajouté, retourne `S_OK`; sinon, retourne `S_FALSE` pour indiquer aucune ports ne peuvent être ajoutés à ce fournisseur de port.
+ Si le port peut `S_OK`être ajouté, retourne; autrement, `S_FALSE` les retours pour indiquer qu’aucun port ne peut être ajouté à ce fournisseur portuaire.
 
 ## <a name="remarks"></a>Notes
- Appelez cette méthode avant d’appeler le [ajouter un port](../../../extensibility/debugger/reference/idebugportsupplier2-addport.md) (méthode), car cette dernière méthode crée le port ainsi que l’ajout, qui pourrait être une opération longue.
+ Appelez cette méthode avant d’appeler la méthode [AddPort](../../../extensibility/debugger/reference/idebugportsupplier2-addport.md) puisque cette dernière méthode crée le port ainsi que l’ajouter, ce qui pourrait être une opération de longue durée.
 
 ## <a name="see-also"></a>Voir aussi
 - [IDebugPortSupplier2](../../../extensibility/debugger/reference/idebugportsupplier2.md)

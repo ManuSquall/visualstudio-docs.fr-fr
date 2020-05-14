@@ -1,5 +1,5 @@
 ---
-title: IntelliSenseHostFlags | Microsoft Docs
+title: IntelliSenseHostFlags - France Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -8,20 +8,20 @@ helpviewer_keywords:
 - IntelliSense, IntellisenseHostFlags enumeration
 - IntellisenseHostFlags enumeration
 ms.assetid: 0930640b-eb84-48ef-a8f7-d4268f55c99c
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6d0e66f70b91985882df5691d05175995b4f6ca8
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: a0df05e7363db01bd4f16fee5d75141dc93df1c0
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66328077"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80710267"
 ---
 # <a name="intellisensehostflags"></a>IntelliSenseHostFlags
-Spécifie les indicateurs d’hôte IntelliSense.
+Spécifie les indicateurs d'hôte IntelliSense.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -40,13 +40,13 @@ enum IntellisenseHostFlags
 
 |Membres|Description|
 |-------------|-----------------|
-|`IHF_READONLYCONTEXT`|Mémoire tampon de contexte est en lecture seule.|
-|`IHF_NOSEPARATESUBJECT`|Aucun texte de l’objet. Mémoire tampon de contexte contient la cible d’IntelliSense (implique `!IHF_READONLYCONTEXT`).|
-|`IHF_SINGLELINESUBJECT`|Texte de l’objet n’est pas multi-ligne prenant en charge.|
-|`IHF_FORCECOMMITTOCONTEXT`|Comme pour `CanCommitIntoReadOnlyBuffer`.|
-|`IHF_OVERTYPE`|Modification (dans l’objet ou le contexte) doit être effectuée en mode Refrappe.|
+|`IHF_READONLYCONTEXT`|Le mémoire tampon est lu uniquement.|
+|`IHF_NOSEPARATESUBJECT`|Pas de texte de sujet. Mémoire tampon contient IntelliSense-cible `!IHF_READONLYCONTEXT`(implique ).|
+|`IHF_SINGLELINESUBJECT`|Le texte sujet n’est pas multi-lignes-capable.|
+|`IHF_FORCECOMMITTOCONTEXT`|Identique à `CanCommitIntoReadOnlyBuffer`.|
+|`IHF_OVERTYPE`|L’édition (en sujet ou en contexte) doit se faire en mode surtype.|
 
-## <a name="requirements"></a>Configuration requise
+## <a name="requirements"></a>Spécifications
  SingleFileeditor.idl
 
 ## <a name="see-also"></a>Voir aussi

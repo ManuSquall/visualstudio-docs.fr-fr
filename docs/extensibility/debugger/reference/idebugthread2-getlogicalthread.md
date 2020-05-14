@@ -1,5 +1,5 @@
 ---
-title: IDebugThread2::GetLogicalThread | Microsoft Docs
+title: IDebugThread2::GetLogicalThread ( Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugThread2::GetLogicalThread
 ms.assetid: bce6230e-41d4-49b7-a050-2dde5efb6805
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 1e8c1543383b3d0df0166b50359caf0f80a8b3ef
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: e148fb0b9b043fc1717effca00d698ee14beb2f1
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66320232"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80718843"
 ---
 # <a name="idebugthread2getlogicalthread"></a>IDebugThread2::GetLogicalThread
-Moteurs de débogage n’implémentent pas cette méthode.
+Les moteurs Debug ne mettent pas en œuvre cette méthode.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -43,13 +43,13 @@ int GetLogicalThread( 
 
 ## <a name="parameters"></a>Paramètres
 `pStackFrame`\
-[in] Un [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md) objet qui représente le frame de pile.
+[dans] Un objet [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md) qui représente le cadre de pile.
 
 `ppLogicalThread`\
-[out] Retourne un `IDebugLogicalThread2` interface qui représente le thread logique associé. Une implémentation du moteur de débogage doit lui affecter la valeur null.
+[out] Retourne `IDebugLogicalThread2` une interface qui représente le thread logique associé. Une mise en œuvre du moteur de débogé devrait définir cette valeur nulle.
 
 ## <a name="return-value"></a>Valeur de retour
- Déboguer des implémentations de moteur retournent toujours `E_NOTIMPL`.
+ Les implémentations `E_NOTIMPL`du moteur Debug reviennent toujours.
 
 ## <a name="see-also"></a>Voir aussi
 - [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)

@@ -18,17 +18,17 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 881a8ed7f1aceb5f97eaed1f0b9285951d1d39f6
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75590174"
 ---
 # <a name="how-to-create-types-by-using-class-designer"></a>Guide pratique pour créer des types à l’aide du Concepteur de classes
 
 Pour concevoir de nouveaux types pour les projets C# et Visual Basic, créez-les dans un diagramme de classes. Pour visualiser les types existants, consultez [Guide pratique pour afficher les types existants](how-to-view-existing-types.md).
 
-## <a name="CreateType"></a> Créer un nouveau type
+## <a name="create-a-new-type"></a><a name="CreateType"></a>Créer un nouveau type
 
 1. Dans la **Boîte à outils**, sous **Concepteur de classes**, faites glisser l’un des éléments ci-dessous dans un diagramme de classes :
 
@@ -40,9 +40,9 @@ Pour concevoir de nouveaux types pour les projets C# et Visual Basic, créez-les
 
     - **Structure** (VB) ou **Struct** (C#)
 
-    - **Delegate**
+    - **Déléguer**
 
-    - **Module** (VB uniquement)
+    - **Module** (VB seulement)
 
 2. Nommez le type. Sélectionnez ensuite son niveau d'accès.
 
@@ -60,14 +60,14 @@ Pour concevoir de nouveaux types pour les projets C# et Visual Basic, créez-les
     |-|-|
     |**Pour**|**Ajouter**|
     |Classes, classes abstraites, structures ou structs|Méthodes, propriétés, champs, événements, constructeurs (méthode), destructeurs (méthode) et constantes qui définissent le type|
-    |Énumérations|Valeurs de champ qui composent l'énumération|
+    |Enums|Valeurs de champ qui composent l'énumération|
     |Interfaces|Méthodes, propriétés et événements qui composent l'interface|
-    |délégué|Paramètres qui définissent le délégué|
-    |Module, mot clé|Méthodes, propriétés, champs, événements, constructeurs (méthode) et constantes qui définissent le module|
+    |Déléguer|Paramètres qui définissent le délégué|
+    |Module|Méthodes, propriétés, champs, événements, constructeurs (méthode) et constantes qui définissent le module|
 
      Consultez [Création de membres](creating-and-configuring-type-members.md#create-members).
 
-## <a name="CustAttributeType"></a> Appliquer un attribut personnalisé à un type
+## <a name="apply-a-custom-attribute-to-a-type"></a><a name="CustAttributeType"></a> Appliquer un attribut personnalisé à un type
 
 1. Cliquez sur la forme du type sur un diagramme de classes.
 
@@ -77,7 +77,7 @@ Pour concevoir de nouveaux types pour les projets C# et Visual Basic, créez-les
 
    Les attributs personnalisés sont appliqués au type.
 
-## <a name="CustAttributeMember"></a> Appliquer un attribut personnalisé à un membre de type
+## <a name="apply-a-custom-attribute-to-a-type-member"></a><a name="CustAttributeMember"></a>Appliquer un attribut personnalisé à un membre type
 
 1. Cliquez sur le nom du membre dans la forme de son type sur un diagramme de classes ou sur sa ligne dans la fenêtre Détails de classe.
 

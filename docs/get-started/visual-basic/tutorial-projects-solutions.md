@@ -12,10 +12,10 @@ dev_langs:
 ms.workload:
 - dotnet
 ms.openlocfilehash: 48b3f2c9aae099e3ae5f2cf2d8c438fb0f9062a2
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "75590213"
 ---
 # <a name="learn-about-projects-and-solutions-using-visual-basic"></a>Découvrir les projets et les solutions avec Visual Basic
@@ -53,9 +53,9 @@ Nous allons commencer notre exploration en créant une solution vide. Une fois q
 
 1. Ouvrez Visual Studio.
 
-1. Dans la barre de menus, choisissez **fichier** > **nouveau** **projet**>.
+1. Sur la barre de menu, choisissez **File** > **New** > **Project**.
 
-   La boîte de dialogue **Nouveau projet** s'affiche.
+   La boîte de dialogue **Nouveau projet** s’affiche.
 
 1. Dans le volet gauche, développez **Autres types de projets**, puis choisissez **Solutions Visual Studio**. Dans le volet central, choisissez le modèle **Solution vide**. Nommez votre solution **QuickSolution**, puis choisissez **OK**.
 
@@ -69,7 +69,7 @@ Nous allons commencer notre exploration en créant une solution vide. Une fois q
 
 1. Ouvrez Visual Studio.
 
-2. Dans la fenêtre de démarrage, choisissez **Créer un projet**.
+2. Sur la fenêtre de départ, choisissez **Créer un nouveau projet**.
 
 3. Sur la page **Créer un projet**, entrez **nouvelle solution** dans la zone de recherche, sélectionnez le modèle **Nouvelle solution**, puis choisissez **Suivant**.
 
@@ -87,11 +87,11 @@ Nous allons maintenant ajouter notre premier projet à la solution. Nous allons 
 
 ::: moniker range="vs-2017"
 
-1. Dans le menu contextuel, cliquez avec le bouton droit de la **solution’QuickSolution'** dans **Explorateur de solutions**, choisissez **Ajouter** > **nouveau projet**.
+1. Dans le menu contextuel (clic droit) de **Solution 'QuickSolution'** dans l’**Explorateur de solutions**, choisissez **Ajouter** > **Nouveau projet**.
 
    La boîte de dialogue **Ajouter un nouveau projet** s'ouvre.
 
-1. Dans le volet gauche, développez **Visual Basic**, puis choisissez **Bureau Windows**. Ensuite, dans le volet central, choisissez le modèle **Projet vide (.NET Framework)** . Nommez le projet **QuickDate**, puis choisissez le bouton **OK**.
+1. Dans le volet gauche, développez **Visual Basic**, puis choisissez **Bureau Windows**. Ensuite, dans le volet central, choisissez le modèle **Projet vide (.NET Framework)**. Nommez le projet **QuickDate**, puis choisissez le bouton **OK**.
 
    Un projet nommé QuickDate s’affiche en dessous de la solution dans l’**Explorateur de solutions**. Il contient un seul fichier appelé *App.config*.
 
@@ -104,20 +104,20 @@ Nous allons maintenant ajouter notre premier projet à la solution. Nous allons 
 
 ::: moniker range=">=vs-2019"
 
-1. Dans le menu contextuel, cliquez avec le bouton droit de la **solution’QuickSolution'** dans **Explorateur de solutions**, choisissez **Ajouter** > **nouveau projet**.
+1. Dans le menu contextuel (clic droit) de **Solution 'QuickSolution'** dans l’**Explorateur de solutions**, choisissez **Ajouter** > **Nouveau projet**.
 
    Une boîte de dialogue s’ouvre en indiquant **Ajouter un nouveau projet**.
 
 1. Dans la zone de recherche située tout en haut, entrez le texte **vide**, puis sélectionnez **Visual Basic** sous **Langage**.
 
-1. Sélectionnez le modèle **Projet vide (.NET Framework)** , puis choisissez **Suivant**.
+1. Sélectionnez le modèle **Projet vide (.NET Framework)**, puis choisissez **Suivant**.
 
 1. Nommez le projet **QuickDate**, puis choisissez **Créer**.
 
    Un projet nommé QuickDate s’affiche en dessous de la solution dans l’**Explorateur de solutions**. Il contient un seul fichier appelé *App.config*.
 
    > [!NOTE]
-   > Si vous ne voyez pas le modèle **Projet vide (.NET Framework)** , installez la *charge de travail* Visual Studio de **développement d’applications de bureau .NET**. Visual Studio utilise une installation basée sur la charge de travail pour installer uniquement les composants dont vous avez besoin pour le type de développement que vous effectuez. Pour installer une nouvelle charge de travail quand vous créez un projet, il vous suffit simplement de choisir le lien **Installer plus d’outils et de fonctionnalités** sous le texte indiquant **Vous n’arrivez pas à trouver ce que vous cherchez ?** . Une fois Visual Studio Installer lancé, choisissez la charge de travail **Développement .NET Desktop**, puis cliquez sur le bouton **Modifier**.
+   > Si vous ne voyez pas le modèle **Projet vide (.NET Framework)**, installez la *charge de travail* Visual Studio de **développement d’applications de bureau .NET**. Visual Studio utilise une installation basée sur la charge de travail pour installer uniquement les composants dont vous avez besoin pour le type de développement que vous effectuez. Pour installer une nouvelle charge de travail quand vous créez un projet, il vous suffit simplement de choisir le lien **Installer plus d’outils et de fonctionnalités** sous le texte indiquant **Vous n’arrivez pas à trouver ce que vous cherchez ?**. Une fois Visual Studio Installer lancé, choisissez la charge de travail **Développement .NET Desktop**, puis cliquez sur le bouton **Modifier**.
    >
    > ![Lien du programme d’installation dans Visual Studio 2019](../media/vs-2019/tutorial-projects-open-installer.png)
 
@@ -161,7 +161,7 @@ Nous allons ajouter un projet de test unitaire à notre solution. Cette fois, no
 
 ::: moniker range="Vs-2017"
 
-2. Dans le volet gauche, développez **Visual Basic** et choisissez la catégorie **Test**. Dans le volet central, choisissez le modèle de projet **Projet de test unitaire (.NET Framework)** . Nommez le projet **QuickTest**, puis choisissez **OK**.
+2. Dans le volet gauche, développez **Visual Basic** et choisissez la catégorie **Test**. Dans le volet central, choisissez le modèle de projet **Projet de test unitaire (.NET Framework)**. Nommez le projet **QuickTest**, puis choisissez **OK**.
 
    Un deuxième projet est ajouté à **l’Explorateur de solutions** et un fichier nommé *UnitTest1.vb* s’ouvre dans l’éditeur.
 
@@ -173,7 +173,7 @@ Nous allons ajouter un projet de test unitaire à notre solution. Cette fois, no
 
 2. Dans la boîte de dialogue **Ajouter un nouveau projet**, dans la zone de recherche située tout en haut, entrez le texte **test unitaire**, puis sélectionnez **Visual Basic** sous **Langage**.
 
-3. Choisissez le modèle de projet **Projet de test unitaire (.NET Framework)** , puis **Suivant**.
+3. Choisissez le modèle de projet **Projet de test unitaire (.NET Framework)**, puis **Suivant**.
 
 4. Nommez le projet **QuickTest**, puis choisissez **Créer**.
 
@@ -223,28 +223,28 @@ Nous allons utiliser le nouveau projet de test unitaire pour tester notre métho
 
    ![code Visual Basic](media/tutorial-projects-code-vb.png)
 
-## <a name="project-properties"></a>Propriétés de projet
+## <a name="project-properties"></a>Propriétés d’un projet
 
 Dans le fichier *Calendar.vb*, la ligne qui contient l’attribut <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute> fait référence au nom de l’assembly (nom de fichier) du projet **QuickTest**. Le nom de l’assembly n’est pas toujours identique au nom du projet. Pour connaître le nom de l’assembly d’un projet, ouvrez les propriétés du projet.
 
 1. Dans **l’Explorateur de solutions**, sélectionnez le projet **QuickTest**. Dans le menu contextuel (clic droit), sélectionnez **Propriétés**, ou appuyez simplement sur **Alt**+**Entrée**. (Vous pouvez également double-cliquer sur **Mon Projet** dans **l’Explorateur de solutions**.)
 
-   Les *pages de propriétés* du projet sont ouvertes sous l’onglet **application** . Les pages de propriétés contiennent différents paramètres pour le projet. Notez que le nom d’assembly du projet **QuickTest** est effectivement « QuickTest ». Vous pouvez le changer à cet endroit si vous le souhaitez. Quand vous générez le projet de test, le nom du fichier binaire obtenu a le nouveau nom choisi à la place de *QuickTest.dll*.
+   Les *pages de propriété* du projet s’ouvrent sur l’onglet **Application.** Les pages de propriété contiennent différents paramètres pour le projet. Notez que le nom de l’assembly du projet **QuickTest** est bien « QuickTest ». Vous pouvez le changer à cet endroit si vous le souhaitez. Quand vous générez le projet de test, le nom du fichier binaire obtenu a le nouveau nom choisi à la place de *QuickTest.dll*.
 
-   ![Propriétés de projet](../media/tutorial-projects-properties.png)
+   ![Propriétés d’un projet](../media/tutorial-projects-properties.png)
 
 1. Explorez les autres onglets des pages de propriétés du projet, tels que les onglets **Compiler** et **Paramètres**. Ces onglets sont différents pour différents types de projets.
 
 ## <a name="optional-run-the-test"></a>(Facultatif) Exécuter le test
 
-Si vous souhaitez vérifier que votre test unitaire fonctionne correctement, choisissez **Test** > **Exécuter** > **Tous les tests** dans la barre de menus. Une fenêtre intitulée **Explorateur de tests** s’ouvre. Vérifiez que le résultat du test **TestGetCurrentDate** est correct.
+Si vous souhaitez vérifier que votre test unitaire fonctionne, choisissez **Test** > **Run** > **All Tests** à partir de la barre de menu. Une fenêtre intitulée **Explorateur de tests** s’ouvre. Vérifiez que le résultat du test **TestGetCurrentDate** est correct.
 
 ![Team Explorer dans Visual Studio affichant le test réussi](../media/tutorial-projects-test-explorer.png)
 
 > [!TIP]
 > Si **l’Explorateur de tests** ne s’ouvre pas automatiquement, ouvrez-le en choisissant **Tester** > **Windows** > **Explorateur de tests** dans la barre de menus.
 
-## <a name="next-steps"></a>Étapes suivantes :
+## <a name="next-steps"></a>Étapes suivantes
 
 Pour explorer davantage Visual Studio, vous pouvez créer une application en suivant l’un des [tutoriels Visual Basic](index.yml).
 

@@ -5,10 +5,10 @@ author: cobey
 ms.author: cobey
 ms.date: 08/16/2019
 ms.openlocfilehash: 07ef1d6292e4ac88ca616d0f35e3fd831cacc649
-ms.sourcegitcommit: 8e123bcb21279f2770b28696995450270b4ec0e9
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/25/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "75405806"
 ---
 # <a name="intellisense"></a>IntelliSense
@@ -23,21 +23,21 @@ Quand vous tapez dans un fichier pris en charge, comme un fichier de code C#, le
 
 La fenêtre de complétion offre également la prise en charge du filtrage des complétions incluses par type. Par exemple, il est possible de limiter les membres de la liste de façon à représenter seulement des types comme les classes ou les délégués. Ce processus de filtrage peut être activé en cliquant sur une icône spécifique qui représente le type à filtrer ou via des raccourcis clavier correspondant à un type donné. Les icônes, situées dans le bas de la fenêtre de complétion, sont les suivantes :
 
-| Icône                         | Name          | Mot clé    | Touche d’accès rapide |
+| Icône                         | Nom          | Mot clé    | Touche d’accès rapide |
 | -----------------------------|---------------| -----------|--------|
-| ![Icône Classes](media/classes-icon.png)  | classe         | `class`    |  ⌥C
+| ![Icône Classes](media/classes-icon.png)  | class         | `class`    |  ⌥C
 | ![Icône de constante](media/constant-icon.png) | constant      | `const`    |  ⌥O
 | ![Icône Délégué](media/delegate-icon.png) | délégué      | `delegate` |  ⌥D
 | ![Icône Énumération](media/enums-icon.png)    | enum          | `enum`     |  ⌥E
 | ![Icône Événement](media/event-icon.png)    | événement         |            |  ⌥V
-| ![Icône de champ](media/fields-icon.png)   | champ         |            |  ⌥F
-| ![Icône Interface](media/interface-icon.png)| Interface     | `interface`|  ⌥I
-| ![Icône Mot clé](media/keyword-icon.png)  | keyword       |            |  ⌥K
+| ![Icône de champ](media/fields-icon.png)   | field         |            |  ⌥F
+| ![Icône Interface](media/interface-icon.png)| interface     | `interface`|  ⌥I
+| ![Icône Mot clé](media/keyword-icon.png)  | mot clé       |            |  ⌥K
 | ![Icône Méthode](media/method-icon.png)   | method        |            |  ⌥M
-| ![Icône Espace de noms](media/namespace-icon.png)| Espace de noms     | `namespace`|  ⌥N
-| ![Icône Propriétés](media/props-icon.png)    | Propriété      |            |  ⌥P
+| ![Icône Espace de noms](media/namespace-icon.png)| espace de noms     | `namespace`|  ⌥N
+| ![Icône Propriétés](media/props-icon.png)    | propriété      |            |  ⌥P
 | ![Icône Extrait de code](media/snippet-icon.png)  | extrait       | `class`    |  ⌥S
-| ![Icône Structure](media/struct-icon.png)   | Structure     | `struct`   |  ⌥S
+| ![Icône Structure](media/struct-icon.png)   | structure     | `struct`   |  ⌥S
 
 En cliquant sur une des icônes ou en appuyant sur les touches de raccourci correspondantes, la liste de complétion se limite aux seuls types définis par l’ensemble de filtres.  
 

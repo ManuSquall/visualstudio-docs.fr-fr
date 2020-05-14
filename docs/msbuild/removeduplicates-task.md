@@ -18,17 +18,19 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 235f96b3d67b0ad2e3c3bd1c486c5c9f2eeb86c2
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 90366bab14eefd1be4edac81d6b09b3f57aa3332
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75596006"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "77632782"
 ---
 # <a name="removeduplicates-task"></a>RemoveDuplicates (tâche)
+
 Supprime les éléments en double de la collection d’éléments spécifiée.
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>Paramètres
+
  Le tableau ci-dessous décrit les paramètres de la tâche `RemoveDuplicates` .
 
 |Paramètre|Description|
@@ -36,12 +38,14 @@ Supprime les éléments en double de la collection d’éléments spécifiée.
 |`Filtered`|Paramètre de sortie <xref:Microsoft.Build.Framework.ITaskItem>`[]` facultatif.<br /><br /> Contient une collection d’éléments dont tous les doublons ont été supprimés. L’ordre des éléments d’entrée est préservé, en conservant la première instance de chaque élément en double.|
 |`Inputs`|Paramètre <xref:Microsoft.Build.Framework.ITaskItem>`[]` facultatif.<br /><br /> Collection d’éléments de laquelle supprimer les éléments en double.|
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Notes 
+
  Cette tâche ne prend pas en compte la casse et ne compare pas les métadonnées des éléments lors de la recherche des doublons.
 
- En plus des paramètres énumérés ci-dessus, cette tâche hérite des paramètres de la classe <xref:Microsoft.Build.Tasks.TaskExtension> , qui elle-même hérite de la classe <xref:Microsoft.Build.Utilities.Task> . Pour obtenir la liste de ces paramètres supplémentaires et leurs descriptions, consultez [Classe de base TaskExtension](../msbuild/taskextension-base-class.md).
+ En plus des paramètres énumérés ci-dessus, cette tâche hérite des paramètres de la classe <xref:Microsoft.Build.Tasks.TaskExtension> , qui elle-même hérite de la classe <xref:Microsoft.Build.Utilities.Task> . Pour une liste de ces paramètres supplémentaires et leurs descriptions, voir [TaskExtension classe de base](../msbuild/taskextension-base-class.md).
 
-## <a name="example"></a>Exemple
+## <a name="example"></a> Exemple
+
  L’exemple suivant utilise la tâche `RemoveDuplicates` pour supprimer les éléments en double de la collection d’éléments `MyItems`. Lorsque la tâche est terminée, la collection d’éléments `FilteredItems` contient un élément.
 
 ```xml
@@ -90,6 +94,7 @@ Supprime les éléments en double de la collection d’éléments spécifiée.
 ```
 
 ## <a name="see-also"></a>Voir aussi
+
 - [Informations de référence sur les tâches](../msbuild/msbuild-task-reference.md)
 - [Concepts MSBuild](../msbuild/msbuild-concepts.md)
-- [Tâches MSBuild](../msbuild/msbuild-tasks.md)
+- [Tâches](../msbuild/msbuild-tasks.md)

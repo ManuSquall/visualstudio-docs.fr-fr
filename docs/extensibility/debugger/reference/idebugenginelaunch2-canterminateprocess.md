@@ -1,5 +1,5 @@
 ---
-title: IDebugEngineLaunch2::CanTerminateProcess | Microsoft Docs
+title: IDebugEngineLaunch2::CanTerminateProcess (fr) Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugEngineLaunch2::CanTerminateProcess
 ms.assetid: 7973454d-c957-4123-a0ee-80ebcdbbd2d1
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 2d8f401ae49edb2f77d35104de68280be322a63d
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 91c68e0a0e314015c1f2e6df2a96243c6ce854e7
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66337223"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80730561"
 ---
 # <a name="idebugenginelaunch2canterminateprocess"></a>IDebugEngineLaunch2::CanTerminateProcess
-Détermine si un processus peut être arrêté.
+Détermine si un processus peut être terminé.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -41,13 +41,13 @@ int CanTerminateProcess ( 
 
 ## <a name="parameters"></a>Paramètres
 `pProcess`\
-[in] Un [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md) objet qui représente la fin du processus.
+[dans] Un objet [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md) qui représente le processus à mettre fin.
 
 ## <a name="return-value"></a>Valeur de retour
- En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur. Retourne `S_FALSE` si le moteur ne peut pas mettre fin au processus, par exemple, car l’accès est refusé.
+ En cas `S_OK`de succès, les retours; renvoie autrement un code d’erreur. Retourne `S_FALSE` si le moteur ne peut pas mettre fin au processus, par exemple, parce que l’accès est refusé.
 
 ## <a name="remarks"></a>Notes
- Si cette méthode retourne `S_OK`, puis il la [TerminateProcess](../../../extensibility/debugger/reference/idebugenginelaunch2-terminateprocess.md) méthode peut être appelée pour réellement mettre fin au processus.
+ Si cette `S_OK`méthode revient, alors c’est la méthode [TerminateProcess](../../../extensibility/debugger/reference/idebugenginelaunch2-terminateprocess.md) peut être appelée pour mettre fin au processus.
 
 ## <a name="see-also"></a>Voir aussi
 - [IDebugEngineLaunch2](../../../extensibility/debugger/reference/idebugenginelaunch2.md)

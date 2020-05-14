@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - data-science
 ms.openlocfilehash: 10b5dfee629b5b6e67ab544ca0bdd905ed2a120a
-ms.sourcegitcommit: 978df2feb5e64228d2e3dd430b299a5c234cda17
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/24/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "72888454"
 ---
 # <a name="work-with-sql-server-and-r"></a>Utiliser SQL Server et R
@@ -26,17 +26,17 @@ L’excellente prise en charge de SQL Server par Visual Studio aide les scientif
 
 |   |   |
 |---|---|
-| ![icône d’appareil photo vidéo](../install/media/video-icon.png "Regarder une vidéo") | [Regardez une vidéo (youtube.com)](https://www.youtube.com/watch?v=n4AYr0QIwdQ) qui offre une vue d’ensemble de SQL Server et de R (3 min 3 s). |
+| ![Icône représentant une caméra pour les vidéos](../install/media/video-icon.png "Regarder une vidéo") | [Regardez une vidéo (youtube.com)](https://www.youtube.com/watch?v=n4AYr0QIwdQ) qui offre une vue d’ensemble de SQL Server et de R (3 min 3 s). |
 
 ## <a name="create-and-run-sql-queries"></a>Créer et exécuter des requêtes SQL
 
 RTVS prend en charge l’ajout de requêtes SQL à des projets R, ce qui vous permet de développer des requêtes SQL itérativement dans un contexte distinct jusqu’à obtenir les résultats souhaités.
 
-Pour ajouter un fichier de requête SQL, cliquez sur le projet dans l’Explorateur de solutions, sélectionnez **Ajouter** > **Nouvel élément**, puis sélectionnez le type de fichier **Requête SQL** :
+Pour ajouter un fichier de requête SQL, cliquez à droite sur le projet dans Solution Explorer, **sélectionnez Ajouter** > **un nouvel article**et sélectionnez le type de fichier **SQL Query** :
 
 ![Ajouter un élément de requête SQL à un projet](media/sql-add-item.png)
 
-Cette commande ouvre le fichier dans l’Éditeur Transact-SQL de Visual Studio, qui fournit des fonctionnalités IntelliSense complètes pour SQL et la possibilité d’exécuter des requêtes. Pour utiliser ces fonctionnalités, vous devez vous connecter à une base de données à l’aide du bouton de connexion situé dans la barre d’outils de l’éditeur ou essayer d’exécuter une requête (**Ctrl**+**Maj**+**E**, qui fonctionne également sur une sélection). Dans les deux cas, la boîte de dialogue de connexion apparaît :
+Cette commande ouvre le fichier dans l’Éditeur Transact-SQL de Visual Studio, qui fournit des fonctionnalités IntelliSense complètes pour SQL et la possibilité d’exécuter des requêtes. Pour que ces fonctionnalités fonctionnent, vous devez vous connecter à une base de données à l’aide du bouton de connexion dans la barre d’outils de l’éditeur ou essayer d’exécuter une requête (**Ctrl**+**Shift**+**E**, qui fonctionne également sur une sélection). Dans les deux cas, la boîte de dialogue de connexion apparaît :
 
 ![Boîte de dialogue de connexion SQL](media/sql-connection-dialog.png)
 
@@ -45,7 +45,7 @@ Une fois qu’une connexion est établie, vous pouvez exécuter des requêtes et
 ![Résultats de requête SQL](media/sql-query-results.png)
 
 L’Éditeur Transact-SQL prend en charge de nombreuses autres fonctionnalités, telles que l’affichage du plan d’exécution de la requête et un débogueur de requête.
-Pour plus d’informations, consultez [Utiliser l’Éditeur Transact-SQL pour modifier et exécuter des scripts](https://msdn.microsoft.com/library/hh272706.aspx).
+Pour plus d’informations, consultez [Utiliser l'Éditeur Transact-SQL pour modifier et exécuter des scripts](https://msdn.microsoft.com/library/hh272706.aspx).
 
 ## <a name="work-with-sql-server-stored-procedures"></a>Utiliser des procédures stockées SQL Server
 
@@ -59,11 +59,11 @@ RTVS simplifie le processus de combinaison du code R et SQL (processus plutôt c
 
 |   |   |
 |---|---|
-| ![icône d’appareil photo vidéo](../install/media/video-icon.png "Regarder une vidéo") | [Regardez une vidéo (youtube.com)](https://www.youtube.com/watch?v=dFKIT2OitWQ) qui offre une vue d’ensemble des procédures stockées de R et de SQL Server (6 min 9 s). |
+| ![Icône représentant une caméra pour les vidéos](../install/media/video-icon.png "Regarder une vidéo") | [Regardez une vidéo (youtube.com)](https://www.youtube.com/watch?v=dFKIT2OitWQ) qui offre une vue d’ensemble des procédures stockées de R et de SQL Server (6 min 9 s). |
 
 ### <a name="add-a-database-connection"></a>Ajouter une connexion de base de données
 
-1. Sélectionnez **Outils R** > **Données** > **Ajouter une connexion de base de données** pour afficher la boîte de dialogue **Propriétés de connexion**. Vous spécifiez ici le nom de la source de données (SQL Server dans le cas présent), le nom du serveur, le mode d’authentification et le nom de la base de données. Sélectionnez **Tester la connexion** pour vérifier votre entrée avant de fermer la boîte de dialogue.
+1. Sélectionnez **R Tools** > **Data** > **Add Database Connection** pour faire le dialogue Connection **Properties.** Vous spécifiez ici le nom de la source de données (SQL Server dans le cas présent), le nom du serveur, le mode d’authentification et le nom de la base de données. Sélectionnez **Tester la connexion** pour vérifier votre entrée avant de fermer la boîte de dialogue.
 
     ![Boîte de dialogue de connexion SQL](media/sql-connection-string-dialog.png)
 
@@ -73,7 +73,7 @@ RTVS simplifie le processus de combinaison du code R et SQL (processus plutôt c
 
 ### <a name="write-and-test-a-sql-stored-procedure"></a>Écrire et tester une procédure stockée SQL
 
-Pour ajouter une nouvelle procédure stockée SQL, cliquez sur votre projet, sélectionnez **Ajouter** > **Nouvel élément**, sélectionnez **Procédure stockée SQL avec R** dans la liste des modèles, nommez le fichier, puis sélectionnez **OK**. Le nom de fichier par défaut est *SqlSProc.R* ; pour faciliter la lecture, le nom de fichier *StoredProcedure.R* est utilisé dans le reste de cette section. Si vous avez plusieurs procédures stockées, chaque fichier doit avoir un nom de fichier unique.
+Pour ajouter une nouvelle procédure de stockage SQL, cliquez à droite sur votre projet, **sélectionnez Ajouter** > **un nouvel article**, sélectionnez **SQL Stored Procedure avec R** dans la liste des modèles, donnez au fichier un nom et sélectionnez **OK**. Le nom de fichier par défaut est *SqlSProc.R* ; pour faciliter la lecture, le nom de fichier *StoredProcedure.R* est utilisé dans le reste de cette section. Si vous avez plusieurs procédures stockées, chaque fichier doit avoir un nom de fichier unique.
 
 RTVS crée trois fichiers pour la procédure stockée : un fichier *.R* pour votre code R, un fichier *.Query.sql* pour le code SQL et un fichier *.Template.sql* qui combine les deux. Ces deux derniers fichiers apparaissent dans l’Explorateur de solutions en tant qu’enfants du fichier *.R* :
 
@@ -143,12 +143,12 @@ WITH RESULT SETS ((medallion NVARCHAR(max), hack_license NVARCHAR(max)));
 
 ### <a name="publish-a-sql-stored-procedure"></a>Publier une procédure stockée SQL
 
-1. Sélectionnez la commande de menu **Outils R** > **Données** > **Publier avec des options**.
+1. Sélectionnez les**données R** >  **Tools** > Publish avec la commande de menu**Options.**
 1. Dans la boîte de dialogue qui s’affiche, remplacez **Publier sur** par **Base de données**, spécifiez la cible, sélectionnez **Publier**, et RTVS crée et publie la procédure stockée :
 
     ![Boîte de dialogue de publication de procédure stockée](media/sql-publish-with-options.png)
 
-1. Pour publier toutes les procédures stockées dans un projet, vous pouvez utiliser la commande **Outils R** > **Données** > **Publier les procédures stockées**, qui est également disponible quand vous cliquez avez le bouton droit sur le projet dans l’Explorateur de solutions.
+1. Pour publier toutes les procédures stockées dans un projet, vous pouvez utiliser la commande **R Tools** > **Data** > **Publish Stored Procedures,** qui est également disponible lorsque vous cliquez à droite sur le projet dans Solution Explorer.
 
 > [!Tip]
-> Si l’Explorateur d’objets SQL Server est ouvert dans Visual Studio, votre procédure stockée publiée s’affiche dans le dossier **Programmabilité** > **Procédures stockées** de votre base de données. Vous pouvez aussi l’exécuter à partir de l’Explorateur d’objets en cliquant avec le bouton droit et en sélectionnant **Exécuter la procédure**, ou en l’appelant de façon interactive à partir d’une fenêtre de requête *.sql*.
+> Si vous avez le SQL Server Object Explorer ouvert dans Visual Studio, votre procédure stockée publiée apparaît dans le dossier **Programmability** > **Stored Procedures** de votre base de données. Vous pouvez aussi l’exécuter à partir de l’Explorateur d’objets en cliquant avec le bouton droit et en sélectionnant **Exécuter la procédure**, ou en l’appelant de façon interactive à partir d’une fenêtre de requête *.sql*.

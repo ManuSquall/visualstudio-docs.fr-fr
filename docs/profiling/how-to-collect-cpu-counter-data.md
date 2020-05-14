@@ -14,10 +14,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 98291051a135a95ab72b4c3bfa09743d9620b94e
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74776369"
 ---
 # <a name="how-to-collect-cpu-counter-data"></a>Guide pratique pour collecter les données des compteurs UC
@@ -44,7 +44,7 @@ Il existe deux types d’événements de compteur UC :
 
 - Collecter des données à partir d’un ou plusieurs compteurs lors d’un profilage par instrumentation
 
-- Spécifier un événement de compteur comme intervalle d’échantillonnage lors d’un profilage par échantillonnage Pour plus d’informations, consultez [Guide pratique pour choisir des événements d’échantillonnage](../profiling/how-to-choose-sampling-events.md).
+- Spécifier un événement de compteur comme intervalle d’échantillonnage lors d’un profilage par échantillonnage Pour plus d’informations, voir [Comment : Choisissez des événements d’échantillonnage.](../profiling/how-to-choose-sampling-events.md)
 
 ## <a name="to-collect-cpu-performance-counter-data-when-you-profile-by-instrumentation"></a>Pour collecter des données de compteur de performances UC lors d’un profilage par instrumentation
 
@@ -61,7 +61,7 @@ Il existe deux types d’événements de compteur UC :
 
 ## <a name="see-also"></a>Voir aussi
 
-[Configurer des sessions de performance](../profiling/configuring-performance-sessions.md)
-des propriétés de session de [performance](../profiling/performance-session-properties.md)
-[des compteurs UC et Windows](../profiling/cpu-and-windows-counters.md)
-[Comment : choisir des événements d’échantillonnage](../profiling/how-to-choose-sampling-events.md)
+[Configurer les sessions de](../profiling/configuring-performance-sessions.md)
+performance[Propriétés](../profiling/performance-session-properties.md)
+de session[CPU et Windows compteurs](../profiling/cpu-and-windows-counters.md)
+[Comment: Choisissez des événements d’échantillonnage](../profiling/how-to-choose-sampling-events.md)

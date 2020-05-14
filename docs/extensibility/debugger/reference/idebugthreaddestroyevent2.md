@@ -1,5 +1,5 @@
 ---
-title: IDebugThreadDestroyEvent2 | Microsoft Docs
+title: IDebugThreadDestroyEvent2 - France Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugThreadDestroyEvent2
 ms.assetid: fca3f603-9432-457b-9ddd-8b0ec17da046
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b7d0d2990c5286a277164d58e74ec2d96fa176e7
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: ebc250f485e5507a9b50bc5a8e1c5b4c3bea37ef
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66319995"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80718466"
 ---
 # <a name="idebugthreaddestroyevent2"></a>IDebugThreadDestroyEvent2
-Cette interface est envoyée par le moteur de débogage (dé) pour le Gestionnaire de session de débogage (SDM) lorsqu’un thread a s’exécuter jusqu'à la fin.
+Cette interface est envoyée par le moteur de débogé (DE) au gestionnaire de déboguer de session (SDM) lorsqu’un thread est terminé.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -28,28 +28,28 @@ Cette interface est envoyée par le moteur de débogage (dé) pour le Gestionnai
 IDebugThreadDestroyEvent2 : IUnknown
 ```
 
-## <a name="notes-for-implementers"></a>Notes de publication pour les implémenteurs
- Le D’implémente cette interface pour signaler qu’un thread s’est terminée. Le [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) interface doit être implémentée sur le même objet que cette interface. Utilise le SDM [QueryInterface](/cpp/atl/queryinterface) pour accéder à la `IDebugEvent2` interface.
+## <a name="notes-for-implementers"></a>Notes pour les implémenteurs
+ Le DE implémente cette interface pour signaler qu’un thread est terminé. [L’interface IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) doit être implémentée sur le même objet que cette interface. Le SDM utilise [QueryInterface](/cpp/atl/queryinterface) pour accéder à l’interface. `IDebugEvent2`
 
-## <a name="notes-for-callers"></a>Notes de publication pour les appelants
- Le DE crée et envoie cet objet d’événement pour signaler qu’un thread s’est terminée. L’événement est envoyé à l’aide de la [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) fonction de rappel qui est fournie par le SDM lorsqu’il est attaché au programme en cours de débogage.
+## <a name="notes-for-callers"></a>Notes pour les appelants
+ Le DE crée et envoie cet objet d’événement pour signaler qu’un thread est terminé. L’événement est envoyé en utilisant la fonction de rappel [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) qui est fournie par le SDM lorsqu’il est attaché au programme en cours de débbugged.
 
 ## <a name="methods-in-vtable-order"></a>Méthodes dans l'ordre Vtable
- Le tableau suivant présente les méthodes de `IDebugThreadDestroyEvent2`.
+ Le tableau suivant montre `IDebugThreadDestroyEvent2`les méthodes de .
 
 |Méthode|Description|
 |------------|-----------------|
-|[GetExitCode](../../../extensibility/debugger/reference/idebugthreaddestroyevent2-getexitcode.md)|Obtient le code de sortie du thread.|
+|[GetExitCode](../../../extensibility/debugger/reference/idebugthreaddestroyevent2-getexitcode.md)|Obtient le code de sortie du fil.|
 
 ## <a name="remarks"></a>Notes
- Visual Studio utilise cet événement pour mettre à jour le **Threads** fenêtre.
+ Visual Studio utilise cet événement pour mettre à jour la fenêtre **Threads.**
 
-## <a name="requirements"></a>Configuration requise
- En-tête : msdbg.h
+## <a name="requirements"></a>Spécifications
+ En-tête: msdbg.h
 
- Espace de noms : Microsoft.VisualStudio.Debugger.Interop
+ Namespace: Microsoft.VisualStudio.Debugger.Interop
 
- Assembly : Microsoft.VisualStudio.Debugger.Interop.dll
+ Assemblage: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>Voir aussi
 - [Interfaces de base](../../../extensibility/debugger/reference/core-interfaces.md)

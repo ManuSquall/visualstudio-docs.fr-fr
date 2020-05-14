@@ -1,76 +1,76 @@
 ---
-title: Ajout de projet et modèles d’élément de projet | Microsoft Docs
+title: Ajout de modèles d’éléments de projet et de projet . Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - projects [Visual Studio SDK], adding
 - project items [Visual Studio], adding
 ms.assetid: 8c59217f-56e5-4540-a73b-cd10de189373
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 38ab7a0a14c5a4e832aec330852546b64a41fd0c
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 14eb1a9e2e63fa6e63d3ba2efa4426421e6b5593
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66315858"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80710209"
 ---
-# <a name="add-project-and-project-item-templates"></a>Ajouter le projet et les modèles d’élément de projet
-Lorsque vous créez vos propres types de projet, vous devez fournir la prise en charge pour l’ajout de nouveaux projets et éléments de projet à l’aide de la norme [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] intégrées des boîtes de dialogue de l’environnement (IDE) de développement. Les rubriques suivantes traitent des différentes techniques pour l’ajout de projets et éléments de projet.
+# <a name="add-project-and-project-item-templates"></a>Ajouter des modèles de projet et d’élément de projet
+Lorsque vous créez vos propres types de projets, vous devez vous [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] soutenir pour l’ajout de nouveaux projets et de nouveaux éléments de projet en utilisant les boîtes de dialogue standard intégrées de l’environnement de développement intégré (IDE). Les sujets suivants traitent des différentes techniques d’ajout de projets et d’éléments de projet.
 
-## <a name="in-this-section"></a>Dans cette section
+## <a name="in-this-section"></a>Contenu de cette section
 - [Contexte du projet](../../extensibility/internals/project-context.md)
 
- Explique que le projet fournit la plupart des informations de contexte pour ce qui se passe réellement dans l’environnement.
+ Explique que le projet fournit la plupart des informations contextuelles sur ce qui se passe dans l’environnement.
 
-- [Priorité de projet](../../extensibility/internals/project-priority.md)
+- [Priorité du projet](../../extensibility/internals/project-priority.md)
 
- Explique qu’un élément de projet est généralement un membre d’un projet pour aider à éviter toute ambiguïté sur lequel le projet est utilisé pour ouvrir l’élément.
+ Explique qu’un élément de projet est généralement membre d’un projet pour aider à éviter l’ambiguïté sur le projet utilisé pour ouvrir l’article.
 
-- [Projet fichiers divers](../../extensibility/internals/miscellaneous-files-project.md)
+- [Projet Divers Files](../../extensibility/internals/miscellaneous-files-project.md)
 
- Fournit des informations sur les deux types d’éditeurs qui peuvent être utilisées pour ouvrir des fichiers dans un projet et le rôle de la lecture du projet pour déterminer quel éditeur à utiliser lors de l’ouverture d’un élément de projet.
+ Fournit des informations sur les deux types d’éditeurs qui peuvent être utilisés pour ouvrir des fichiers dans un projet et le rôle que joue le projet dans la détermination de l’éditeur à utiliser lorsqu’un élément de projet est ouvert.
 
-- [Inscrire les modèles de projet et d’élément](../../extensibility/internals/registering-project-and-item-templates.md)
+- [Enregistrer les modèles de projets et d’objets](../../extensibility/internals/registering-project-and-item-templates.md)
 
- Explique ce qui se produit lorsqu’un [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] projet est créé.
+ Explique ce qui [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] se passe lorsqu’un projet est créé.
 
-- [Ajouter des éléments à la boîte de dialogue Ajouter un nouvel élément](../../extensibility/internals/adding-items-to-the-add-new-item-dialog-boxes.md)
+- [Ajouter des éléments à la boîte de dialogue Add New Item](../../extensibility/internals/adding-items-to-the-add-new-item-dialog-boxes.md)
 
- Explique le processus d’ajout d’éléments à la **ajouter un nouvel élément** boîte de dialogue.
+ Explique le processus d’ajout d’éléments à la boîte de dialogue **Add New Item.**
 
-- [Ajouter des répertoires à la boîte de dialogue Nouveau projet](../../extensibility/internals/adding-directories-to-the-new-project-dialog-box.md)
+- [Ajouter des répertoires à la boîte de dialogue du nouveau projet](../../extensibility/internals/adding-directories-to-the-new-project-dialog-box.md)
 
- Fournit un exemple de l’inscription d’un répertoire qui contient les modèles personnalisés mis à disposition par un VSPackage.
+ Fournit un exemple d’enregistrement d’un nouvel annuaire qui contient des modèles personnalisés mis à disposition par un VSPackage.
 
-- [Ajouter des répertoires à la boîte de dialogue Ajouter un nouvel élément](../../extensibility/internals/adding-directories-to-the-add-new-item-dialog-box.md)
+- [Ajouter des répertoires à la boîte de dialogue Add New Item](../../extensibility/internals/adding-directories-to-the-add-new-item-dialog-box.md)
 
- Fournit un exemple de l’inscription d’un nouvel ensemble de répertoires pour les **ajouter un nouvel élément** boîte de dialogue.
+ Fournit un exemple d’enregistrement d’un nouvel ensemble d’annuaires pour la boîte de dialogue **Add New Item.**
 
 - [Commandes définies par l’IDE pour l’extension des systèmes de projet](../../extensibility/internals/ide-defined-commands-for-extending-project-systems.md)
 
- Répertorie les différents types d’éléments de commande utilisés pour l’extension des systèmes de projet.
+ Répertorie différents types d’éléments de commande utilisés pour étendre les systèmes de projet.
 
-- [CATID des objets qui sont généralement utilisés pour étendre des projets](../../extensibility/internals/catids-for-objects-that-are-typically-used-to-extend-projects.md)
+- [CATIDs pour les objets qui sont généralement utilisés pour étendre les projets](../../extensibility/internals/catids-for-objects-that-are-typically-used-to-extend-projects.md)
 
- Répertorie le CATID pour les objets qui sont utilisés pour étendre [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)], [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)], et [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] systèmes de projet.
+ Listes CATIDs pour les objets [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)]qui [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] sont utilisés pour étendre , , et les systèmes de projet.
 
-## <a name="related-sections"></a>Rubriques connexes
-- [Guide pratique pour Ouvrez éditeurs spécifiques du projet](../../extensibility/how-to-open-project-specific-editors.md)
+## <a name="related-sections"></a>Sections connexes
+- [Comment : Ouvrir les éditeurs spécifiques au projet](../../extensibility/how-to-open-project-specific-editors.md)
 
- Fournit des instructions détaillées pour l’ouverture d’un élément intrinsèquement lié à un éditeur spécifique pour un projet.
+ Fournit des instructions étape par étape pour l’ouverture d’un élément intrinsèquement lié à un éditeur spécifique pour un projet.
 
-- [Guide pratique pour Éditeurs standards Open](../../extensibility/how-to-open-standard-editors.md)
+- [Comment : Ouvrir les éditeurs standard](../../extensibility/how-to-open-standard-editors.md)
 
- Fournit des instructions détaillées pour l’ouverture d’un éditeur standard.
+ Fournit des instructions étape par étape pour l’ouverture d’un éditeur standard.
 
-- [Sous-types de projet](../../extensibility/internals/project-subtypes.md)
+- [Sous-types de projets](../../extensibility/internals/project-subtypes.md)
 
- Fournit des liens vers des rubriques conceptuelles de sous-type de projet. Étendent les sous-types de projet existant [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] et [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] projets.
+ Fournit des liens vers des sujets conceptuels de sous-type de projet. Les sous-types de [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] projets étendent les projets existants et existants.
 
-- [Types de projets](../../extensibility/internals/project-types.md)
+- [Types de projet](../../extensibility/internals/project-types.md)
 
- Fournit des liens vers des rubriques supplémentaires qui offrent des informations sur la façon de concevoir de nouveaux types de projet.
+ Fournit des liens vers d’autres sujets qui offrent des informations sur la façon de concevoir de nouveaux types de projets.

@@ -1,28 +1,28 @@
 ---
-title: IDebugComPlusSymbolProvider::UpdateSymbols | Microsoft Docs
+title: IDebugComPlusSymbolProvider::UpdateSymbols Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - UpdateSymbols
 - IDebugComPlusSymbolProvider::UpdateSymbols
 ms.assetid: d530f6f1-4af2-454b-bab0-02478a8fe81e
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: def89659f49b25b09e777abf3df1d71db5506537
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 20a4fa6f6ec52ee556bd62fe303d0e21e4c56d6a
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66352771"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80733504"
 ---
 # <a name="idebugcomplussymbolproviderupdatesymbols"></a>IDebugComPlusSymbolProvider::UpdateSymbols
-Met à jour les symboles de débogage dans la mémoire avec celles à partir du flux de données spécifié.
+Mise à jour des symboles de débogé dans la mémoire avec ceux du flux de données spécifiés.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -44,16 +44,16 @@ int UpdateSymbols (
 
 ## <a name="parameters"></a>Paramètres
 `ulAppDomainID`\
-[in] Identificateur du domaine d’application.
+[dans] Identification du domaine de l’application.
 
 `guidModule`\
-[in] Identificateur unique du module.
+[dans] Identifiant unique du module.
 
 `pUpdateStream`\
-[in] Flux de données qui contient les symboles de débogage mis à jour.
+[dans] Flux de données qui contient les symboles de débogés mis à jour.
 
 ## <a name="example"></a>Exemple
-L’exemple suivant montre comment implémenter cette méthode pour un **CDebugSymbolProvider** objet qui expose le [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md) interface.
+L’exemple suivant montre comment implémenter cette méthode pour un objet **CDebugSymbolProvider** qui expose [l’interface IDebugComPlusSymbolProvider.](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)
 
 ```cpp
 HRESULT CDebugSymbolProvider::UpdateSymbols(
@@ -92,7 +92,7 @@ Error:
 ```
 
 ## <a name="return-value"></a>Valeur de retour
-En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.
+En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
 ## <a name="see-also"></a>Voir aussi
 - [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)

@@ -1,5 +1,5 @@
 ---
-title: 'Procédure : Créer un répertoire de sortie commun'
+title: Guide pratique pour générer dans un répertoire de sortie commun
 ms.date: 11/04/2016
 ms.technology: vs-ide-compile
 ms.topic: conceptual
@@ -14,13 +14,13 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: a1e669789d2117b4bd2ee550dfffb147e46620c4
-ms.sourcegitcommit: 59e5758036223ee866f3de5e3c0ab2b6dbae97b6
-ms.translationtype: HT
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/23/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "68416747"
 ---
-# <a name="how-to-build-to-a-common-output-directory"></a>Procédure : Créer un répertoire de sortie commun
+# <a name="how-to-build-to-a-common-output-directory"></a>Guide pratique pour générer dans un répertoire de sortie commun
 
 Par défaut, [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] génère chaque projet dans une solution dans son propre dossier à l’intérieur de la solution. Vous pouvez changer les chemins de sortie de build de vos projets pour imposer que toutes les sorties soient placées dans le même dossier.
 
@@ -28,7 +28,7 @@ Par défaut, [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] génère 
 
 1. Cliquez sur un projet dans la solution.
 
-2. Dans le menu **Projet**, cliquez sur **Propriétés**.
+2. Dans le menu **Projet** , cliquez sur **Propriétés**.
 
 3. En fonction du type de projet, cliquez sur l’onglet **Compiler** ou sur l’onglet **Générer**, puis définissez comme **Chemin de sortie** un dossier à utiliser pour tous les projets de la solution.
 
@@ -36,5 +36,5 @@ Par défaut, [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] génère 
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Compiler et générer](../ide/compiling-and-building-in-visual-studio.md)
-- [Guide pratique pour changer le répertoire de sortie de build](../ide/how-to-change-the-build-output-directory.md)
+- [Compilation et génération](../ide/compiling-and-building-in-visual-studio.md)
+- [Comment : Changer l’annuaire de sortie de construction](../ide/how-to-change-the-build-output-directory.md)

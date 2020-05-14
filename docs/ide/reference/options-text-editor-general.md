@@ -33,14 +33,14 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ebe526bbac859777edb4c2c78c65a1cdbd27fc85
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: ed55d65555425b04749696b5510cfe799d2a1194
+ms.sourcegitcommit: ce3d0728ec1063ab548dac71c8eaf26d20450acc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75568410"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "80472824"
 ---
-# <a name="options-dialog-box-text-editor--general"></a>Boîte de dialogue Options : éditeur de texte \> général
+# <a name="options-dialog-box-text-editor--general"></a>Boîte de dialogue d’options : Rédacteur général de texte \>
 
 Cette boîte de dialogue vous permet de modifier les paramètres globaux de l’éditeur de code et de texte de Visual Studio. Pour afficher cette boîte de dialogue, sélectionnez **Options** dans le menu **Outils**, développez le dossier **Éditeur de texte**, puis sélectionnez **Général**.
 
@@ -72,7 +72,7 @@ Quand cette option est sélectionnée, vous pouvez appuyer sur **Ctrl** et point
 
 Cochez la case **Ouvrir la définition dans l’aperçu** pour afficher la définition de l’élément dans une fenêtre sans être obligé de quitter votre emplacement actuel dans l’éditeur de code.
 
-## <a name="display"></a>Affichage
+## <a name="display"></a>Afficher
 
 ### <a name="selection-margin"></a>Marge de sélection
 
@@ -80,7 +80,7 @@ Quand cette option est sélectionnée, une marge verticale s’affiche le long d
 
 |Marge de sélection activée|Marge de sélection désactivée|
 | - | - |
-|![Capture d'écran de HTMLpageSelectionMarginOn](../../ide/reference/media/vxselmaron.gif)|![Capture d'écran de HTMLpageSelectionMarginOff](../../ide/reference/media/vxselmaroff.gif)|
+|![Capture d'écran HTMLpageSelectionMarginOn](../../ide/reference/media/vxselmaron.gif)|![Capture d'écran HTMLpageSelectionMarginOff](../../ide/reference/media/vxselmaroff.gif)|
 
 ### <a name="indicator-margin"></a>Marge des indicateurs
 
@@ -94,11 +94,15 @@ Quand elle est sélectionnée, cette option affiche une zone grise autour de la 
 
 Quand cette option est sélectionnée, des lignes verticales alignées avec les blocs de code structurés sont affichées dans l’éditeur, ce qui vous permet d’identifier facilement les différents blocs de code.
 
+### <a name="show-file-health-indicator"></a>Afficher l’indicateur de santé du fichier
+
+Une fois sélectionnée, une barre d’indicateur de santé (erreurs, avertissements), avec des options de nettoyage de code, sera affichée dans le coin inférieur gauche de l’éditeur.
+
 ## <a name="see-also"></a>Voir aussi
 
 - [Options, Éditeur de texte, Tous les langages](../../ide/reference/options-text-editor-all-languages.md)
-- [Options, Éditeur de texte, Tous les langages, Onglets](../../ide/reference/options-text-editor-all-languages-tabs.md)
+- [Options, Éditeur de texte, Tous les langages, Tabulations](../../ide/reference/options-text-editor-all-languages-tabs.md)
 - [Options, Éditeur de texte, Extension de fichier](../../ide/reference/options-text-editor-file-extension.md)
-- [Identification et personnalisation des raccourcis clavier](../../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md)
-- [Personnalisation de l’éditeur](../how-to-change-text-case-in-the-editor.md)
-- [Utilisation d’IntelliSense](../../ide/using-intellisense.md)
+- [Identifier et personnaliser les raccourcis clavier](../../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md)
+- [Personnaliser l’éditeur](../how-to-change-text-case-in-the-editor.md)
+- [Using IntelliSense](../../ide/using-intellisense.md)

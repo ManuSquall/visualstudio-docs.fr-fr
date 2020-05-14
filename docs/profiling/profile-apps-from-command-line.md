@@ -1,6 +1,6 @@
 ---
-title: Mesurer les performances à partir de la ligne de commande
-description: Mesurez les performances de l’UC et l’utilisation de la mémoire managée dans votre application à partir de la ligne de commande.
+title: Mesurer les performances de la ligne de commande
+description: Mesurez les performances du processeur et gérez l’utilisation de la mémoire dans votre application à partir de la ligne de commande.
 ms.custom: ''
 ms.date: 02/21/2020
 ms.topic: conceptual
@@ -14,12 +14,12 @@ manager: jillfra
 monikerRange: '>= vs-2019'
 ms.workload:
 - multiple
-ms.openlocfilehash: c109e2ae1db28f8e08ed7c34a7ee0871a6efe670
-ms.sourcegitcommit: bf2e9d4ff38bf5b62b8af3da1e6a183beb899809
+ms.openlocfilehash: 18850a6e365988abd33b7e2e2a3972ba5cb0a91a
+ms.sourcegitcommit: 9c1cecaff4d9955276eee7865b78d47679dd1e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2020
-ms.locfileid: "77558119"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "80638693"
 ---
 # <a name="measure-application-performance-from-the-command-line"></a>Mesurer les performances d’une application à partir de la ligne de commande
 
@@ -27,11 +27,13 @@ Vous pouvez collecter des informations sur le niveau de performance d’une appl
 
 Dans l’exemple décrit dans cet article, vous collectez des informations sur le niveau de performance du Bloc-notes Microsoft, mais la même méthode peut servir à profiler n’importe quel processus.
 
-## <a name="prerequisites"></a>Conditions préalables requises
+## <a name="prerequisites"></a>Prérequis
 
-* Visual Studio 2019 Preview 3 ou versions ultérieures
+* Visual Studio 2019 ou versions ultérieures
 
 * Connaissance des outils en ligne de commande
+
+* Pour recueillir des informations de performance sur une machine à distance sans visual Studio installé, installez les [outils de performance pour Visual Studio](https://visualstudio.microsoft.com/downloads#performance-tools-for-visual-studio-2019) sur la machine à distance. La version des outils doit correspondre à votre version de Visual Studio.
 
 ## <a name="collect-performance-data"></a>Collecter des données de performances
 
@@ -65,7 +67,7 @@ Pour profiler une application à l’aide des outils CLI de diagnostics Visual S
 
 1. Accédez à la sortie du fichier de la commande précédente et ouvrez-la dans Visual Studio pour examiner les informations collectées.
 
-## <a name="config_file"></a> Fichiers de configuration des agents
+## <a name="agent-configuration-files"></a><a name="config_file"></a> Fichiers de configuration des agents
 
 Les agents de collecte sont des composants interchangeables qui collectent différents types de données en fonction de ce que vous essayez de mesurer.
 

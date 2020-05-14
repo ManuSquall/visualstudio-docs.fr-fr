@@ -21,10 +21,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: e8bb4b2860d40828a96e25ec6e6c73d947dd60c0
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75567656"
 ---
 # <a name="projectconfig-devenvexe"></a>/ProjectConfig (devenv.exe)
@@ -41,29 +41,29 @@ devenv SolutionName {/Build|/Clean|/Deploy|/Rebuild} [SolnConfigName [/Project P
 
 - *SolutionName*
 
-  Requis. Chemin complet et nom du fichier solution.
+  Obligatoire. Chemin complet et nom du fichier solution.
 
 - {`/Build`|`/Clean`|`/Deploy`|`/Rebuild`}
 
-  Requis. [Génère](build-devenv-exe.md), [nettoie](clean-devenv-exe.md), [déploie](deploy-devenv-exe.md) ou [regénère](rebuild-devenv-exe.md) le projet.
+  Obligatoire. [Génère](build-devenv-exe.md), [nettoie](clean-devenv-exe.md), [déploie](deploy-devenv-exe.md) ou [regénère](rebuild-devenv-exe.md) le projet.
 
 - *SolnConfigName*
 
-  Option facultative. Nom de la configuration de solution (par exemple, `Debug` ou `Release`) à appliquer à la solution nommée dans *SolutionName*. Si plusieurs plateformes de solution sont disponibles, vous devez également en spécifier une (par exemple, `Debug|Win32`). Si cet argument n’est pas spécifié ou consiste en une chaîne vide (`""`), l’outil utilise la configuration active de la solution.
+  facultatif. Nom de la configuration de solution (par exemple, `Debug` ou `Release`) à appliquer à la solution nommée dans *SolutionName*. Si plusieurs plateformes de solution sont disponibles, vous devez également en spécifier une (par exemple, `Debug|Win32`). Si cet argument n’est pas spécifié ou consiste en une chaîne vide (`""`), l’outil utilise la configuration active de la solution.
 
-- `/Project` *ProjName*
+- `/Project`*ProjName ProjName*
 
-  Option facultative. Chemin et nom d’un fichier projet dans la solution. Vous pouvez entrer le nom d’affichage du projet ou un chemin d’accès relatif du dossier *SolutionName* au fichier projet. Vous pouvez également saisir le chemin d’accès complet et le nom du fichier projet.
+  facultatif. Chemin et nom d’un fichier projet dans la solution. Vous pouvez entrer le nom d’affichage du projet ou un chemin d’accès relatif du dossier *SolutionName* au fichier projet. Vous pouvez également saisir le chemin d’accès complet et le nom du fichier projet.
 
 - `/ProjectConfig` *ProjConfigName*
 
-  Option facultative. Nom de la configuration de build du projet (par exemple, `Debug` ou `Release`) appliquée au `/Project` nommé. Si plusieurs plateformes de solution sont disponibles, vous devez également en spécifier une (par exemple, `Debug|Win32`).
+  facultatif. Nom de la configuration de build du projet (par exemple, `Debug` ou `Release`) appliquée au `/Project` nommé. Si plusieurs plateformes de solution sont disponibles, vous devez également en spécifier une (par exemple, `Debug|Win32`).
 
-- `/Out` *outputFileName*
+- `/Out`*OutputFilename (en)*
 
-  Option facultative. Nom du fichier auquel vous souhaitez envoyer la sortie de l’outil. Si le fichier existe déjà, l’outil ajoute la sortie à la fin du fichier.
+  facultatif. Nom du fichier auquel vous souhaitez envoyer la sortie de l’outil. Si le fichier existe déjà, l’outil ajoute la sortie à la fin du fichier.
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Notes 
 
 Le commutateur `/ProjectConfig` doit être utilisé avec le commutateur `/Project` dans une commande `/Build`, /`Clean`, `/Deploy` ou `/Rebuild`.
 
@@ -71,7 +71,7 @@ Placez les chaînes contenant des espaces entre des guillemets doubles.
 
 Il est possible d’afficher une synthèse des informations de build, erreurs incluses, dans la fenêtre Commande et dans tous les fichiers journaux spécifiés avec le commutateur `/Out`.
 
-## <a name="example"></a>Exemple
+## <a name="example"></a> Exemple
 
 La commande suivante génère le projet `CSharpWinApp` suivant la configuration de build de projet `Debug` présente dans `MySolution` :
 
@@ -85,6 +85,6 @@ devenv "%USERPROFILE%\source\repos\MySolution\MySolution.sln" /build Debug /proj
 - [/Project (devenv.exe)](../../ide/reference/project-devenv-exe.md)
 - [/Build (devenv.exe)](../../ide/reference/build-devenv-exe.md)
 - [/Clean (devenv.exe)](../../ide/reference/clean-devenv-exe.md)
-- [/Rebuild (devenv.exe)](../../ide/reference/rebuild-devenv-exe.md)
-- [/Deploy (devenv.exe)](../../ide/reference/deploy-devenv-exe.md)
+- [/Reconstruire (devenv.exe)](../../ide/reference/rebuild-devenv-exe.md)
+- [/Déployez (devenv.exe)](../../ide/reference/deploy-devenv-exe.md)
 - [/Out (devenv.exe)](../../ide/reference/out-devenv-exe.md)

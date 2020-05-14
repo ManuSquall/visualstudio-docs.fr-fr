@@ -12,11 +12,11 @@ dev_langs:
 ms.workload:
 - dotnet
 ms.openlocfilehash: da164414cfcca9631eaf59b5e2f6044e70ac9cc5
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75594862"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79301873"
 ---
 # <a name="welcome-to-the-visual-studio-ide--c"></a>Bienvenue dans l’IDE Visual Studio | C\#
 
@@ -26,19 +26,19 @@ ms.locfileid: "75594862"
 
 Nous allons configurer Visual Studio pour utiliser les paramètres d’environnement adaptés aux développeurs C#.
 
-1. Dans la barre de menus, choisissez **Outils** > **Importation et exportation de paramètres**.
+1. Sur la barre de menu, choisissez **Outils** > **Import and Export Settings**.
 
 2. Dans l’Assistant **Importation et exportation de paramètres**, sélectionnez **Réinitialiser tous les paramètres** dans la première page, puis **Suivant**.
 
 3. Dans la page **Enregistrer les paramètres actuels**, sélectionnez une option pour enregistrer ou non vos paramètres actuels, puis choisissez **Suivant**. (Si vous n’avez personnalisé aucun paramètre, sélectionnez **Non, réinitialiser simplement les paramètres en remplaçant mes paramètres actuels**.)
 
-4. Dans la page **Choisir une collection de paramètres par défaut**, choisissez **Visual C#** , puis **Terminer**.
+4. Dans la page **Choisir une collection de paramètres par défaut**, choisissez **Visual C#**, puis **Terminer**.
 
 5. Dans la page **Réinitialisation terminée**, choisissez **Fermer**.
 
 Pour en savoir plus sur les autres façons possibles de personnaliser l’IDE, consultez [Personnaliser Visual Studio](../../ide/personalizing-the-visual-studio-ide.md).
 
-## <a name="next-steps"></a>Étapes suivantes :
+## <a name="next-steps"></a>Étapes suivantes
 
 Explorez davantage Visual Studio en suivant l’un de ces articles d’introduction :
 

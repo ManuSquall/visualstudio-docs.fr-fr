@@ -1,24 +1,24 @@
 ---
-title: IDebugProgram3 | Microsoft Docs
+title: IDebugProgram3 - France Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - IDebugProgram3 interface
 ms.assetid: 4301ba23-c00c-4ce5-8b1e-3f27da312034
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0cfc29f300bc9f28f857424a7a91b4b6bfd3bf82
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 9da63d54f64a4ef7592fdbc4d36e2b31220f82df
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66331530"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80722643"
 ---
 # <a name="idebugprogram3"></a>IDebugProgram3
-Cette interface représente un programme qui s’exécute dans un processus et l’étend [Execute](../../../extensibility/debugger/reference/idebugprogram2-execute.md) en fournissant des informations sur le thread.
+Cette interface représente un programme qui s’exécute dans un processus et étend [Exécuter](../../../extensibility/debugger/reference/idebugprogram2-execute.md) en fournissant des informations de thread.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -26,36 +26,36 @@ Cette interface représente un programme qui s’exécute dans un processus et l
 IDebugProgram3 : IDebugProgram3
 ```
 
-## <a name="notes-for-implementers"></a>Notes de publication pour les implémenteurs
- Le moteur de débogage (dé) et un fournisseur de port personnalisé implémentent cette interface pour représenter un programme dans un processus. Le Gestionnaire de session de débogage (SDM) implémente également cette interface pour fournir des informations à [attacher](../../../extensibility/debugger/reference/idebugprogram2-attach.md).
+## <a name="notes-for-implementers"></a>Notes pour les implémenteurs
+ Le moteur de débogé (DE) et un fournisseur de port personnalisé implémentent cette interface pour représenter un programme dans un processus. Le gestionnaire de débogé de session (SDM) implémente également cette interface pour fournir des informations à [Attach](../../../extensibility/debugger/reference/idebugprogram2-attach.md).
 
-## <a name="notes-for-callers"></a>Notes de publication pour les appelants
- Le [IDebugProgramCreateEvent2](../../../extensibility/debugger/reference/idebugprogramcreateevent2.md) événement retourne cette interface pour un nouveau programme. Cette interface est également utilisée en tant que paramètre pour de nombreuses méthodes sur plusieurs interfaces.
+## <a name="notes-for-callers"></a>Notes pour les appelants
+ [L’événement IDebugProgramCreateEvent2](../../../extensibility/debugger/reference/idebugprogramcreateevent2.md) renvoie cette interface pour un nouveau programme. Cette interface est également utilisée comme paramètre pour de nombreuses méthodes sur plusieurs interfaces.
 
 ## <a name="methods-in-vtable-order"></a>Méthodes dans l'ordre Vtable
- Le tableau suivant présente les méthodes de `IDebugProgram3`.
+ Le tableau suivant montre `IDebugProgram3`les méthodes de .
 
 |Méthode|Description|
 |------------|-----------------|
-|[ExecuteOnThread](../../../extensibility/debugger/reference/idebugprogram3-executeonthread.md)|Exécute le programme. Le thread est retourné pour fournir les informations du débogueur threads sur lesquels l’utilisateur visualise lors de l’exécution.|
+|[ExecuteOnThread](../../../extensibility/debugger/reference/idebugprogram3-executeonthread.md)|Exécute le programme. Le thread est retourné pour donner aux informations de débagé sur le thread que l’utilisateur affiche lors de l’exécution.|
 
-## <a name="requirements"></a>Configuration requise
- En-tête : msdbg.h
+## <a name="requirements"></a>Spécifications
+ En-tête: msdbg.h
 
- Espace de noms : Microsoft.VisualStudio.Debugger.Interop
+ Namespace: Microsoft.VisualStudio.Debugger.Interop
 
- Assembly : Microsoft.VisualStudio.Debugger.Interop.dll
+ Assemblage: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="remarks"></a>Notes
- Un programme est un conteneur de thread en cours d’exécution dans une architecture particulière de l’exécution, pendant un processus est constitué d’un ou plusieurs programmes.
+ Un programme est un conteneur de fil fonctionnant dans une architecture de temps d’exécution particulière, tandis qu’un processus est composé d’un ou plusieurs programmes.
 
 ## <a name="see-also"></a>Voir aussi
 - [Interfaces de base](../../../extensibility/debugger/reference/core-interfaces.md)
 - [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)
 - [GetProgram](../../../extensibility/debugger/reference/idebugthread2-getprogram.md)
-- [Next](../../../extensibility/debugger/reference/ienumdebugprograms2-next.md)
-- [Event](../../../extensibility/debugger/reference/idebugportevents2-event.md)
-- [Attacher](../../../extensibility/debugger/reference/idebugengine2-attach.md)
+- [Suivant](../../../extensibility/debugger/reference/ienumdebugprograms2-next.md)
+- [Événement](../../../extensibility/debugger/reference/idebugportevents2-event.md)
+- [Attach](../../../extensibility/debugger/reference/idebugengine2-attach.md)
 - [DestroyProgram](../../../extensibility/debugger/reference/idebugengine2-destroyprogram.md)
-- [Event](../../../extensibility/debugger/reference/idebugeventcallback2-event.md)
+- [Événement](../../../extensibility/debugger/reference/idebugeventcallback2-event.md)
 - [Attach_V7](../../../extensibility/debugger/reference/idebugprogramnode2-attach-v7.md)

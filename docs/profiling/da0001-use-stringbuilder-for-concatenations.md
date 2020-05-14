@@ -15,23 +15,23 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 0d93de6ce901bfe4d72628f778b18420beb5ebee
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74779504"
 ---
 # <a name="da0001-use-stringbuilder-for-concatenations"></a>DA0001 : Utilisez StringBuilder pour les concaténations
 
 |||
 |-|-|
-|ID de la règle|DA0001|
+|ID de règle|DA0001|
 |Category|Utilisation du .NET Framework|
-|Méthodes de profilage|Échantillonnage<br /><br /> Instrumentation|
+|Méthodes de profilage|échantillonnage<br /><br /> Instrumentation|
 |Message|Utilisez StringBuilder pour les concaténations de chaînes|
-|Type de message|Warning|
+|type de message|Avertissement|
 
-## <a name="cause"></a>Cause
+## <a name="cause"></a>Cause :
  Les appels à System.String.Concat représentent une part importante des données de profilage. Envisagez l’utilisation de la classe <xref:System.Text.StringBuilder> pour construire des chaînes à partir de plusieurs segments.
 
 ## <a name="rule-description"></a>Description de la règle
@@ -40,6 +40,6 @@ ms.locfileid: "74779504"
  La classe StringBuilder est un objet mutable, et, contrairement à System.String, la plupart des méthodes de StringBuilder qui modifient une instance de cette classe retournent une référence à cette même instance. Vous pouvez insérer des caractères ou ajouter du texte à une instance StringBuilder, et supprimer ou remplacer des caractères dans l’instance sans avoir besoin d’allouer une nouvelle instance et de supprimer l’instance d’origine.
 
 ## <a name="how-to-investigate-a-warning"></a>Comment rechercher la cause d’un avertissement
- Double-cliquez sur le message dans la fenêtre **Liste d’erreurs** pour accéder à la [vue Informations relatives à la fonction](../profiling/function-details-view.md) des données de profilage par échantillonnage. Recherchez les sections du programme qui utilisent le plus fréquemment la concaténation de chaînes. Utilisez la classe StringBuilder pour les manipulations de chaînes complexes, y compris les opérations fréquentes de concaténation de chaînes.
+ Double-cliquez sur le message dans la fenêtre **Liste d’erreurs** pour accéder à la vue [Informations relatives à la fonction](../profiling/function-details-view.md) des données de profilage par échantillonnage. Recherchez les sections du programme qui utilisent le plus fréquemment la concaténation de chaînes. Utilisez la classe StringBuilder pour les manipulations de chaînes complexes, y compris les opérations fréquentes de concaténation de chaînes.
 
  Pour plus d’informations sur l’utilisation des chaînes, consultez la section [String Operations](/previous-versions/msp-n-p/ff647790(v=pandp.10)#string-operations) de la rubrique [Chapter 5 - Improving Managed Code Performance](/previous-versions/msp-n-p/ff647790(v=pandp.10)) dans la bibliothèque Microsoft Patterns and Practices.

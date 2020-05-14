@@ -1,31 +1,31 @@
 ---
-title: Atteindre un point d’arrêt | Microsoft Docs
+title: Frapper un point d’arrêt (fr) Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Debugging SDK], hitting breakpoints
 - breakpoints, hitting
 ms.assetid: a77816e3-b15b-46a0-90cd-be7242e4d6c9
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6d95abd66f248ca994d7712f1bf51519022de9d7
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 6e75eb1e807e72f3bd035b5dd0534860f5fd8df2
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66344046"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80738564"
 ---
 # <a name="hit-a-breakpoint"></a>Atteindre un point d’arrêt
-La section suivante décrit le processus lorsque le moteur de débogage (dé) atteint un point d’arrêt pendant l’exécution ou pas à pas :
+La section suivante décrit le processus lorsque le moteur de déboguer (DE) heurte un point d’arrêt en cours d’exécution ou en marchant :
 
-## <a name="troubleshoot-a-hit-breakpoint"></a>Résoudre les problèmes d’un point d’arrêt d’accès
+## <a name="troubleshoot-a-hit-breakpoint"></a>Dépanner un point d’arrêt frappé
 
-1. L’envoie DE un [IDebugBreakpointEvent2](../../extensibility/debugger/reference/idebugbreakpointevent2.md) interface comme une **EVENT_SYNC_STOP**.
+1. Le DE envoie une interface [IDebugBreakpointEvent2](../../extensibility/debugger/reference/idebugbreakpointevent2.md) comme **une EVENT_SYNC_STOP**.
 
-2. Appelle le Gestionnaire de session de débogage (SDM) [IDebugBreakpointEvent2:::EnumBreakpoints](../../extensibility/debugger/reference/idebugbreakpointevent2-enumbreakpoints.md) pour obtenir le point d’arrêt a été atteint.
+2. Le gestionnaire de déboptillement de session (SDM) appelle [IDebugBreakpointEvent2:::EnumBreakpoints](../../extensibility/debugger/reference/idebugbreakpointevent2-enumbreakpoints.md) pour obtenir le point d’arrêt qui a été touché.
 
 ## <a name="see-also"></a>Voir aussi
-- [Appeler des événements de débogueur](../../extensibility/debugger/calling-debugger-events.md)
+- [Événements de débogénaire d’appel](../../extensibility/debugger/calling-debugger-events.md)

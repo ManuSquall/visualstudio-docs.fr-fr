@@ -8,10 +8,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 9702439569fa9db1ff8687e914d5c9d20865e2b0
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "72652471"
 ---
 # <a name="system-generated-logs-collected-by-visual-studio"></a>Journaux générés par le système et collectés par Visual Studio
@@ -72,5 +72,5 @@ Compte tenu de la finalité des données que nous collectons et des contraintes 
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Programme d’amélioration de l’expérience utilisateur Visual Studio](visual-studio-experience-improvement-program.md)
+- [Programme d’amélioration du produit Visual Studio](visual-studio-experience-improvement-program.md)
 - [Diagnostics, commentaires et confidentialité dans Windows 10](https://privacy.microsoft.com/windows-10-feedback-diagnostics-and-privacy)

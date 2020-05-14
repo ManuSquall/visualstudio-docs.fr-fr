@@ -14,17 +14,17 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: fe303f86b282e7e803dacc1dd8f4d3c1d6b72121
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75595811"
 ---
-# <a name="application-page-project-designer-visual-basic"></a>Application, page du Concepteur de projets (Visual Basic)
+# <a name="application-page-project-designer-visual-basic"></a>Page Application, Concepteur de projet (Visual Basic)
 
 Utilisez la page **Application** du Concepteur de projet pour spécifier les paramètres d’application et les propriétés du projet.
 
-Pour accéder à la page **Application**, choisissez un nœud de projet (pas le nœud **Solution**) dans l’**Explorateur de solutions**. Ensuite, choisissez **Projet** > **Propriétés** dans la barre de menus. Quand le **Concepteur de projet** apparaît, sélectionnez l’onglet **Application**.
+Pour accéder à la page **Application**, choisissez un nœud de projet (pas le nœud **Solution**) dans l’**Explorateur de solutions**. Choisissez ensuite **Project** > **Properties** sur la barre de menu. Quand le **Concepteur de projet** apparaît, sélectionnez l’onglet **Application**.
 
 [!INCLUDE[note_settings_general](../../data-tools/includes/note_settings_general_md.md)]
 
@@ -47,7 +47,7 @@ Spécifie l’espace de noms de base pour tous les fichiers du projet. Par exemp
 Si vous effacez l’**espace de noms racine**, vous pouvez spécifier la structure de l’espace de noms de votre projet dans le code.
 
 > [!NOTE]
-> Si vous utilisez le mot clé `Global` dans une [instruction Namespace](/dotnet/visual-basic/language-reference/statements/namespace-statement), vous pouvez définir un espace de noms en dehors de l’espace de noms racine de votre projet. Si vous effacez l’**espace de noms racine**, `Global` devient l’espace de noms de niveau supérieur et vous n’avez plus besoin du mot clé `Global` dans une instruction `Namespace`. Pour plus d’informations, consultez « Mot clé Global dans les instructions Namespace » dans [Espaces de noms dans Visual Basic](/dotnet/visual-basic/programming-guide/program-structure/namespaces).
+> Si vous utilisez le mot clé `Global` dans une [instruction Namespace](/dotnet/visual-basic/language-reference/statements/namespace-statement), vous pouvez définir un espace de noms en dehors de l’espace de noms racine de votre projet. Si vous effacez le `Global` **Root Namespace**, devient l’espace de `Global` nom `Namespace` de haut niveau, ce qui supprime le besoin pour le mot clé dans une déclaration. Pour plus d’informations, consultez « Mot clé Global dans les instructions Namespace » dans [Espaces de noms dans Visual Basic](/dotnet/visual-basic/programming-guide/program-structure/namespaces).
 
 Pour plus d’informations sur la création d’espaces de noms dans votre code, consultez [Instruction Namespace](/dotnet/visual-basic/language-reference/statements/namespace-statement).
 
@@ -86,15 +86,15 @@ Spécifie le formulaire de démarrage ou le point d’entrée de l’application
 
 Si **Activer l’infrastructure de l’application** est sélectionné (par défaut), cette liste est intitulée **Formulaire de démarrage** et affiche uniquement des formulaires, car le framework d’application ne prend en charge que les formulaires de démarrage, et non les objets.
 
-Si le projet est une application de navigateur WPF, cette liste est intitulée **URI de démarrage** et la valeur par défaut est **Page1.xaml**. La liste **URI de démarrage** permet de spécifier la ressource d’interface utilisateur (un élément XAML) que l’application affiche au démarrage. Pour plus d'informations, consultez <xref:System.Windows.Application.StartupUri%2A>.
+Si le projet est une application de navigateur WPF, cette liste est intitulée **URI de démarrage** et la valeur par défaut est **Page1.xaml**. La liste **URI de démarrage** permet de spécifier la ressource d’interface utilisateur (un élément XAML) que l’application affiche au démarrage. Pour plus d’informations, consultez <xref:System.Windows.Application.StartupUri%2A>.
 
 Si **Activer l’infrastructure de l’application** n’est pas sélectionné, cette liste devient **Objet de démarrage**, et affiche des formulaires et des classes ou des modules avec un `Sub Main`.
 
-L’**objet de démarrage** définit le point d’entrée à appeler quand l’application se charge. Cet objet est généralement défini sur le formulaire principal de votre application ou sur la procédure `Sub Main` qui s’exécute quand l’application démarre. Comme les bibliothèques de classes n’ont pas de point d’entrée, la seule option disponible pour cette propriété est **(Aucun)** . Pour plus d’informations, consultez [/main](/dotnet/visual-basic/reference/command-line-compiler/main). Pour accéder à cette propriété par programmation, consultez <xref:VSLangProj.ProjectProperties.StartupObject%2A>.
+L’**objet de démarrage** définit le point d’entrée à appeler quand l’application se charge. Cet objet est généralement défini sur le formulaire principal de votre application ou sur la procédure `Sub Main` qui s’exécute quand l’application démarre. Comme les bibliothèques de classes n’ont pas de point d’entrée, la seule option disponible pour cette propriété est **(Aucun)**. Pour plus d’informations, consultez [/main](/dotnet/visual-basic/reference/command-line-compiler/main). Pour accéder à cette propriété par programmation, consultez <xref:VSLangProj.ProjectProperties.StartupObject%2A>.
 
 ### <a name="icon"></a>Icône
 
-Définit le fichier .ico à utiliser comme icône de votre programme. Sélectionnez **\<Parcourir...>** pour rechercher un graphique existant. Pour plus d’informations, consultez [/win32icon](/dotnet/visual-basic/reference/command-line-compiler/win32icon) (ou [/win32icon (Options du compilateur C#)](/dotnet/csharp/language-reference/compiler-options/win32icon-compiler-option). Pour accéder à cette propriété par programmation, consultez <xref:VSLangProj.ProjectProperties.ApplicationIcon%2A>.
+Définit le fichier .ico à utiliser comme icône de votre programme. Sélectionnez Parcourir ** \<... >** à parcourir pour un graphique existant. Pour plus d’informations, consultez [/win32icon](/dotnet/visual-basic/reference/command-line-compiler/win32icon) (ou [/win32icon (Options du compilateur C#)](/dotnet/csharp/language-reference/compiler-options/win32icon-compiler-option). Pour accéder à cette propriété par programmation, consultez <xref:VSLangProj.ProjectProperties.ApplicationIcon%2A>.
 
 ### <a name="assembly-information"></a>Informations de l’assembly
 
@@ -102,7 +102,7 @@ Cliquez sur ce bouton pour afficher la [boîte de dialogue Informations de l’a
 
 ### <a name="enable-application-framework"></a>Activer l’infrastructure d’application
 
-Spécifie si un projet utilise le framework d’application. Le paramètre de cette option affecte les options disponibles dans **Formulaire de démarrage**/**Objet de démarrage**.
+Spécifie si un projet utilise le framework d’application. Le paramètre de cette option affecte les options disponibles sous **forme**/startup**Objet Startup**.
 
 Si cette case est cochée, votre application utilise le `Sub Main` standard. En cochant cette case, vous activez les fonctionnalités de la section **Propriétés de l’infrastructure d’application Windows** et vous êtes invité à sélectionner un formulaire de démarrage.
 
@@ -110,7 +110,7 @@ Si cette case est décochée, votre application utilise le `Sub Main` personnali
 
 ### <a name="view-windows-settings"></a>Afficher les paramètres Windows
 
-Cliquez sur ce bouton pour générer et ouvrir le fichier *app.manifest*. Visual Studio utilise ce fichier pour générer des données de manifeste pour l’application. Ensuite, définissez le niveau d’exécution demandé par le contrôle de compte d’utilisateur en modifiant la balise `<requestedExecutionLevel>` dans *app.manifest* comme suit :
+Cliquez sur ce bouton pour générer et ouvrir le fichier *app.manifest.* Visual Studio utilise ce fichier pour générer des données de manifeste pour l’application. Ensuite, définissez le niveau d’exécution demandé par l’UAC en modifiant l’étiquette `<requestedExecutionLevel>` dans *app.manifest* comme suit :
 
 `<requestedExecutionLevel level="asInvoker" />`
 
@@ -127,7 +127,7 @@ Les paramètres suivants sont disponibles dans la section **Propriétés de l’
 
 ### <a name="enable-xp-visual-styles"></a>Activer les styles visuels XP
 
-Active ou désactive les styles visuels Windows XP, également appelés *Thèmes Windows XP*. Les styles visuels Windows XP activent, par exemple, les contrôles avec des angles arrondis et des couleurs dynamiques. Les styles sont activés par défaut.
+Active ou désactive les styles visuels Windows XP, également appelés *Thèmes Windows XP*. Les styles visuels Windows XP activent, par exemple, les contrôles avec des angles arrondis et des couleurs dynamiques. Il est activé par défaut.
 
 ### <a name="make-single-instance-application"></a>Créer une application à instance unique
 
@@ -137,7 +137,7 @@ Cochez cette case pour empêcher les utilisateurs d’exécuter plusieurs instan
 
 Cochez cette case pour spécifier que les paramètres `My.Settings` de l’application sont enregistrés quand les utilisateurs éteignent leur ordinateur. La case est cochée par défaut. Si cette option est désactivée, vous pouvez enregistrer manuellement les paramètres de l’application en appelant `My.Settings.Save`.
 
-### <a name="authentication-mode"></a>Mode d’authentification
+### <a name="authentication-mode"></a>Mode d'authentification
 
 Sélectionnez **Windows** (la valeur par défaut) pour spécifier l’utilisation de l’authentification Windows afin d’identifier l’utilisateur actuellement connecté. Vous pouvez récupérer ces informations au moment de l’exécution à l’aide de l’objet `My.User`. Sélectionnez **Défini par l’application** si vous fournissez votre propre code pour authentifier les utilisateurs au lieu d’utiliser les méthodes d’authentification Windows par défaut.
 
@@ -147,13 +147,13 @@ Sélectionnez **À la fermeture du formulaire de démarrage** (valeur par défau
 
 Sélectionnez **Lors de l’arrêt explicite** pour spécifier que l’application doit se fermer quand vous appelez explicitement `Shutdown`.
 
-Sélectionnez **Lors de la fermeture de la dernière fenêtre** pour spécifier que l’application doit se fermer à la fermeture de la dernière fenêtre ou quand vous appelez explicitement `Shutdown`. Il s’agit du paramètre par défaut.
+Sélectionnez **Lors de la fermeture de la dernière fenêtre** pour spécifier que l’application doit se fermer à la fermeture de la dernière fenêtre ou quand vous appelez explicitement `Shutdown`. Il s'agit du paramètre par défaut.
 
 Sélectionnez **Lors de la fermeture de la fenêtre principale** pour spécifier que l’application doit se fermer à la fermeture de la fenêtre principale ou quand vous appelez explicitement `Shutdown`.
 
 ### <a name="splash-screen"></a>Écran de démarrage
 
-Sélectionnez le formulaire à utiliser comme écran de démarrage. Vous devez déjà avoir créé un écran de démarrage à l’aide d’un formulaire ou d’un modèle. La valeur par défaut est **(Aucun)** .
+Sélectionnez le formulaire à utiliser comme écran de démarrage. Vous devez déjà avoir créé un écran de démarrage à l’aide d’un formulaire ou d’un modèle. La valeur par défaut est **(Aucun)**.
 
 ### <a name="view-application-events"></a>Afficher les événements de l’application
 
@@ -169,7 +169,7 @@ Cette propriété s’applique uniquement aux applications WPF (Windows Presenta
 
 Sélectionnez **Lors de l’arrêt explicite** pour spécifier que l’application doit se fermer quand vous appelez explicitement <xref:System.Windows.Application.Shutdown%2A>.
 
-Sélectionnez **Lors de la fermeture de la dernière fenêtre** pour spécifier que l’application doit se fermer à la fermeture de la dernière fenêtre ou quand vous appelez explicitement <xref:System.Windows.Application.Shutdown%2A>. Il s’agit du paramètre par défaut.
+Sélectionnez **Lors de la fermeture de la dernière fenêtre** pour spécifier que l’application doit se fermer à la fermeture de la dernière fenêtre ou quand vous appelez explicitement <xref:System.Windows.Application.Shutdown%2A>. Il s'agit du paramètre par défaut.
 
 Sélectionnez **Lors de la fermeture de la fenêtre principale** pour spécifier que l’application doit se fermer à la fermeture de la fenêtre principale ou quand vous appelez explicitement <xref:System.Windows.Application.Shutdown%2A>.
 
@@ -177,7 +177,7 @@ Pour plus d’informations sur l’utilisation de ce paramètre, consultez <xref
 
 ### <a name="edit-xaml"></a>Modifier XAML
 
-Ce bouton permet d’ouvrir le fichier de définition d’application (Application.xaml) dans l’éditeur XAML. Quand vous cliquez sur ce bouton, *Application.xaml* s’ouvre au niveau du nœud de définition de l’application. Vous devez peut-être modifier ce fichier pour effectuer certaines tâches, comme la définition des ressources. Si le fichier de définition d’application n’existe pas, le Concepteur de projet en crée un.
+Ce bouton permet d’ouvrir le fichier de définition d’application (Application.xaml) dans l’éditeur XAML. Lorsque vous cliquez sur ce bouton, *Application.xaml* s’ouvre sur le nœud de définition d’application. Vous devez peut-être modifier ce fichier pour effectuer certaines tâches, comme la définition des ressources. Si le fichier de définition d’application n’existe pas, le Concepteur de projet en crée un.
 
 ### <a name="view-application-events"></a>Afficher les événements de l’application
 

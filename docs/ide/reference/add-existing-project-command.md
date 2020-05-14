@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 008802546d87bd44137c6d13ee2aef802877e308
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75595876"
 ---
 # <a name="add-existing-project-command"></a>Ajouter un projet existant, commande
@@ -31,16 +31,16 @@ File.AddExistingProject filename
 
 ## <a name="arguments"></a>Arguments
 `filename`\
-Option facultative. Chemin complet et nom (extension comprise) du projet à ajouter à la solution.
+facultatif. Chemin complet et nom (extension comprise) du projet à ajouter à la solution.
 
 Si l’argument `filename` comprend des espaces, il doit être placé entre guillemets.
 
 Si aucun nom de fichier n’est spécifié, la commande ouvre la boîte de dialogue Fichier pour que l’utilisateur puisse sélectionner un projet.
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Notes 
 La saisie semi-automatique tente de deviner le chemin et le nom de fichier à mesure que vous tapez.
 
-## <a name="example"></a>Exemple
+## <a name="example"></a> Exemple
 Cet exemple ajoute le projet [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] (TestProject1) à la solution actuelle.
 
 ```cmd
@@ -49,7 +49,7 @@ Cet exemple ajoute le projet [!INCLUDE[vbprvb](../../code-quality/includes/vbprv
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Visual Studio, commandes](../../ide/reference/visual-studio-commands.md)
-- [Fenêtre Commande](../../ide/reference/command-window.md)
-- [Rechercher/Commande, zone](../../ide/find-command-box.md)
-- [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)
+- [Commandes de studio visuel](../../ide/reference/visual-studio-commands.md)
+- [Commande, fenêtre](../../ide/reference/command-window.md)
+- [Boîte de recherche/commande](../../ide/find-command-box.md)
+- [Alias de commande de studio visuel](../../ide/reference/visual-studio-command-aliases.md)

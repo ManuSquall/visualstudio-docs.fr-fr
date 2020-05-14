@@ -15,10 +15,10 @@ dev_langs:
 ms.workload:
 - multiple
 ms.openlocfilehash: 48672e2d316828019ede7097306517b270062327
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75588679"
 ---
 # <a name="how-to-split-a-class-into-partial-classes-in-class-designer"></a>Guide pratique pour diviser une classe en classes partielles dans le Concepteur de classes
@@ -27,11 +27,11 @@ Vous pouvez utiliser le mot clé `partial` (`Partial` en Visual Basic) pour divi
 
 Les déclarations peuvent figurer dans un ou plusieurs fichiers sources. Toutes les déclarations doivent être dans le même assembly et le même espace de noms.
 
-Les classes partielles sont utiles dans plusieurs situations. Sur un grand projet, par exemple, le fait de séparer une classe en plusieurs fichiers permet à plusieurs programmeurs de travailler sur le projet en même temps. Quand vous utilisez du code généré par Visual Studio, vous pouvez changer la classe sans avoir à recréer le fichier source. (Des exemples de code généré par Visual Studio incluent Windows Forms et le code wrapper de service Web.) Vous pouvez ainsi créer du code qui utilise des classes générées automatiquement sans avoir à modifier le fichier créé par Visual Studio.
+Les classes partielles sont utiles dans plusieurs situations. Sur un grand projet, par exemple, le fait de séparer une classe en plusieurs fichiers permet à plusieurs programmeurs de travailler sur le projet en même temps. Quand vous utilisez du code généré par Visual Studio, vous pouvez changer la classe sans avoir à recréer le fichier source. (Exemples de code généré par Visual Studio, citons windows Forms et code d’emballage de service Web.) Vous pouvez ainsi créer du code qui utilise des classes générées automatiquement sans avoir à modifier le fichier que Visual Studio crée.
 
 Il existe deux types de méthodes partielles. En C#, on parle de méthodes déclarantes et implémentantes. En Visual Basic, on parle de méthodes de déclaration et d’implémentation.
 
-Le **Concepteur de classes** prend en charge les classes et les méthodes partielles. La forme de type du diagramme de classes fait référence à un emplacement de déclaration unique de la classe partielle. Si la classe partielle est définie dans plusieurs fichiers, vous pouvez spécifier l’emplacement de déclaration utilisé par le **Concepteur de classes** en définissant la propriété **Nouvel emplacement de membre** dans la fenêtre **Propriétés**. Autrement dit, quand vous double-cliquez sur une forme de classe, le **Concepteur de classes** accède au fichier source qui contient la déclaration de classe identifiée par la propriété **Nouvel emplacement de membre**. Quand vous double-cliquez sur une méthode partielle dans une forme de classe, le **Concepteur de classes** accède à la déclaration de méthode partielle. En outre, dans la fenêtre **Propriétés**, la propriété **Nom de fichier** référence l’emplacement de la déclaration. Pour les classes partielles, la propriété **Nom de fichier** répertorie tous les fichiers qui contiennent du code de déclaration et d’implémentation pour cette classe. Toutefois, pour les méthodes partielles, la propriété **Nom de fichier** répertorie uniquement le fichier qui contient la déclaration de méthode partielle.
+**Class Designer** prend en charge les classes et les méthodes partielles. La forme de type du diagramme de classes fait référence à un emplacement de déclaration unique de la classe partielle. Si la classe partielle est définie dans plusieurs fichiers, vous pouvez spécifier l’emplacement de la déclaration **que Class Designer** utilisera en définissant la propriété New Member **Location** dans la fenêtre **Propriétés.** Autrement dit, lorsque vous doublez une forme de classe, **Class Designer** va au fichier source qui contient la déclaration de classe identifiée par la propriété New **Member Location.** Lorsque vous doublez une méthode partielle dans une forme de classe, **Class Designer** va à la déclaration de méthode partielle. En outre, dans la fenêtre **Propriétés**, la propriété **Nom de fichier** référence l’emplacement de la déclaration. Pour les classes partielles, la propriété **Nom de fichier** répertorie tous les fichiers qui contiennent du code de déclaration et d’implémentation pour cette classe. Toutefois, pour les méthodes partielles, la propriété **Nom de fichier** répertorie uniquement le fichier qui contient la déclaration de méthode partielle.
 
 L’exemple suivant fractionne la définition de la classe `Employee` en deux déclarations, dont chacune définit une procédure différente. Les deux définitions partielles des exemples peuvent se trouver dans le même fichier source ou dans deux fichiers sources différents.
 
@@ -40,7 +40,7 @@ L’exemple suivant fractionne la définition de la classe `Employee` en deux d�
 
 Pour plus d’informations sur les types partiels en Visual Basic, consultez [Partiel](/dotnet/visual-basic/language-reference/modifiers/partial).
 
-## <a name="example"></a>Exemple
+## <a name="example"></a> Exemple
 
 Pour diviser une définition de classe, utilisez le mot clé `partial` (`Partial` en Visual Basic), comme indiqué dans l’exemple suivant :
 

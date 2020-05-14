@@ -12,7 +12,7 @@ metadata:
   ms.date: 11/02/2018
   ms.author: ghogen
 sections:
-  - title: Publier sur Azure
+  - title: Publication dans Azure
     items:
       - type: paragraph
         text: Déployez votre application sur Azure dans des environnements intermédiaires ou de production avec Visual Studio.
@@ -64,13 +64,13 @@ sections:
         items:
           - image:
               src: 'https://docs.microsoft.com/azure/media/index/Storage.svg'
-            text: Azure Storage
+            text: Stockage Azure
             href: vs-azure-tools-connected-services-storage.md
           - image:
               src: 'https://docs.microsoft.com/azure/media/index/ActiveDirectory.svg'
             text: Azure Active Directory
             href: /azure/active-directory/develop/vs-active-directory-add-connected-service
-  - title: Azure Cloud Services
+  - title: Services cloud Azure
     items:
       - type: paragraph
         text: 'Azure Cloud Services est une technologie à usage général pour la création de services Azure génériques, avec un accès à Stockage Azure et à d’autres ressources Azure.'
@@ -88,7 +88,7 @@ sections:
             html: <p>Déboguer des services cloud localement et dans Azure</p>
             image:
               src: 'https://docs.microsoft.com//media/common/i_debug.svg'
-            title: Débogage
+            title: Déboguer
           - href: vs-azure-tools-performance-profiling-cloud-services.md
             html: <p>Utiliser le profileur Visual Studio</p>
             image:
@@ -98,7 +98,7 @@ sections:
             html: <p>Publier un service cloud sur Azure</p>
             image:
               src: 'https://docs.microsoft.com//media/common/i_deploy.svg'
-            title: Publier
+            title: Publish
           - href: vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines.md
             html: <p>Superviser et diagnostiquer des services cloud et des machines virtuelles s’exécutant dans Azure</p>
             image:

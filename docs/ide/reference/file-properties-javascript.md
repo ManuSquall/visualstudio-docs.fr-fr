@@ -27,10 +27,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: b27f103b2431914efbd22c119e11221b5814dae4
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
-ms.translationtype: HT
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/09/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "68926234"
 ---
 # <a name="file-properties-javascript"></a>Propriétés des fichiers, JavaScript
@@ -52,7 +52,7 @@ La propriété **Action de package** indique ce que Visual Studio doit faire ave
 
 - **Contenu** - Le fichier est inclus dans le manifeste du package. Par exemple, ce paramètre est la valeur par défaut pour un fichier .htm, .js, .css, image, audio ou vidéo.
 
-- **Manifeste** - Le fichier n’est pas inclus dans le manifeste du package. Au lieu de cela, le fichier est utilisé pour l’entrée lors de la génération du manifeste du package. Il s’agit de la valeur par défaut pour le fichier package.appxmanifest.
+- **Manifeste** - Le fichier n’est pas inclus dans le manifeste du paquet. Au lieu de cela, le fichier est utilisé pour l’entrée lors de la génération du manifeste du package. Il s’agit de la valeur par défaut pour le fichier package.appxmanifest.
 
 - **Ressource** - Le fichier n’est pas inclus dans le manifeste du package. Au lieu de cela, le contenu du fichier est indexé dans l’index de ressource de package qui est placé dans le manifeste du package. Il est généralement utilisé pour les fichiers de ressources.
 
@@ -73,7 +73,7 @@ Affiche la langue associée à la référence.
 ### <a name="file-type"></a>Type de fichier
 Type le type de fichier de la référence.
 
-### <a name="file-version"></a>Version du fichier
+### <a name="file-version"></a>Version de fichier
 Affiche la version de fichier de la référence.
 
 ### <a name="identity"></a>Identité
@@ -88,7 +88,7 @@ Affiche le chemin de la référence qui est utilisée dans le projet.
 ### <a name="sdk-path"></a>Chemin du SDK
 Affiche le chemin du fichier du kit SDK référencé.
 
-### <a name="uri"></a>URI
+### <a name="uri"></a>Uri
 Affiche l’URI qui doit être inclus dans les fichiers HTML ou JavaScript du projet pour inclure le fichier comme fichier source.
 
 ### <a name="version"></a>Version

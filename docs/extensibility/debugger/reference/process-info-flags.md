@@ -1,29 +1,29 @@
 ---
-title: PROCESS_INFO_FLAGS | Microsoft Docs
+title: PROCESS_INFO_FLAGS Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
 - PROCESS_INFO_FLAGS
 helpviewer_keywords:
 - PROCESS_INFO_FLAGS enumeration
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: e0694d83409a492a1d950a17ac5e2298ba9b8578
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 36c4cbbe17a109eacd69b76500e8c10d21d2d554
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66309387"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80713961"
 ---
-# <a name="processinfoflags"></a>PROCESS_INFO_FLAGS
+# <a name="process_info_flags"></a>PROCESS_INFO_FLAGS
 
-Décrivent ou spécifient les propriétés d’un processus.
+Décrit ou spécifie les propriétés d’un processus.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -52,27 +52,27 @@ enum enum_PROCESS_INFO_FLAGS { 
 Indique que le processus est un processus système.
 
 `PIFLAG_DEBUGGER_ATTACHED`\
-Indique que le processus est en cours de débogage par un débogueur. Il peut être un [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] débogueur, ou il peut être certains autres débogueur, par exemple WinDbg.
+Indique que le processus est déboqué par un débbugger. Il peut [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] être un débbugger, ou il peut être un autre débbugger, par exemple, WinDbg.
 
 `PIFLAG_PROCESS_STOPPED`\
-Indique que le processus est arrêté. Valide uniquement si `PIFLAG_DEBUGGER_ATTACHED` est également spécifié. Disponible dans Visual Studio 2005 et versions ultérieures.
+Indique que le processus est arrêté. Valable uniquement `PIFLAG_DEBUGGER_ATTACHED` s’il est également spécifié. Disponible en Visual Studio 2005 et plus tard.
 
 `PIFLAG_PROCESS_RUNNING`\
-Indique que le processus est en cours d’exécution. Valide uniquement si `PIFLAG_DEBUGGER_ATTACHED` est également spécifié. Disponible dans Visual Studio 2005 et versions ultérieures.
+Indique que le processus est en cours d’exécution. Valable uniquement `PIFLAG_DEBUGGER_ATTACHED` s’il est également spécifié. Disponible en Visual Studio 2005 et plus tard.
 
 ## <a name="remarks"></a>Notes
 
-Utilisé pour le `Flags` membre de la [PROCESS_INFO](../../../extensibility/debugger/reference/process-info.md) structure.
+Utilisé pour `Flags` le membre de la structure [PROCESS_INFO.](../../../extensibility/debugger/reference/process-info.md)
 
-Ces indicateurs peuvent être combinées avec un opérateur de bits `OR`.
+Ces drapeaux peuvent être combinés avec un peu plus. `OR`
 
-## <a name="requirements"></a>Configuration requise
+## <a name="requirements"></a>Spécifications
 
-En-tête : msdbg.h
+En-tête: msdbg.h
 
-Espace de noms : Microsoft.VisualStudio.Debugger.Interop
+Namespace: Microsoft.VisualStudio.Debugger.Interop
 
-Assembly : Microsoft.VisualStudio.Debugger.Interop.dll
+Assemblage: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>Voir aussi
 

@@ -1,25 +1,25 @@
 ---
-title: Élément EnableEditOfLocationField (modèles Visual Studio) | Microsoft Docs
+title: EnableEditOfLocationField Element (Visual Studio Templates) Microsoft Docs
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
 helpviewer_keywords:
 - EnableEditOfLocationField (Visual Studio project templates)
 ms.assetid: 51a91963-8a3f-4741-928e-bc90c11473bb
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 82a65115ce5df0f57ad9e6ea18a5637e035fed66
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 0e15e2f5c070b8a8c565497c6ba3fc6490b87591
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66334532"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80711995"
 ---
-# <a name="enableeditoflocationfield-element-visual-studio-templates"></a>Élément EnableEditOfLocationField (modèles Visual Studio)
-Spécifie si l’utilisateur peut modifier le champ d’emplacement.
+# <a name="enableeditoflocationfield-element-visual-studio-templates"></a>ActiveEditOfLocationField élément (modèles Visual Studio)
+Précise si l’utilisateur peut modifier le champ de localisation.
 
  \<VSTemplate> \<TemplateData> \<EnableEditOfLocationField>
 
@@ -47,15 +47,15 @@ Spécifie si l’utilisateur peut modifier le champ d’emplacement.
 ## <a name="text-value"></a>Valeur texte
  Une valeur texte est requise.
 
- Le texte doit être `true` ou `false`, qui indique si l’utilisateur peut modifier le **emplacement** zone de texte sur le **nouveau projet** boîte de dialogue.
+ Le texte doit `true` `false`être soit ou, indiquant si oui ou non l’utilisateur peut modifier la boîte de texte **de localisation** sur la boîte de dialogue **Du nouveau projet.**
 
 ## <a name="remarks"></a>Notes
- `EnableEditOfLocationField` est un élément facultatif. La valeur par défaut est `true`, ce qui permet à l’utilisateur de modifier la valeur dans le **emplacement** zone de texte dans le **nouveau projet** boîte de dialogue.
+ `EnableEditOfLocationField` est un élément facultatif. La valeur `true`par défaut est , ce qui permet à l’utilisateur de modifier la valeur dans la boîte de texte **de localisation** dans la boîte de dialogue **New Project.**
 
- Dans le **nouveau projet** boîte de dialogue, le **emplacement** zone de texte spécifie le répertoire dans lequel un nouveau projet est enregistré.
+ Dans la boîte de dialogue **New Project,** la boîte de texte **De localisation** spécifie l’annuaire où un nouveau projet est sauvegardé.
 
 ## <a name="example"></a>Exemple
- L’exemple suivant illustre les métadonnées d’un [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] application de Windows.
+ L’exemple suivant illustre les métadonnées d’une [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] application Windows.
 
 ```
 <VSTemplate Type="Project" Version="3.0.0"
@@ -84,5 +84,5 @@ Spécifie si l’utilisateur peut modifier le champ d’emplacement.
 ```
 
 ## <a name="see-also"></a>Voir aussi
-- [Informations de référence sur les schémas de modèles Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
-- [Création de modèles de projets et d’éléments](../ide/creating-project-and-item-templates.md)
+- [Référence de schéma de modèle de studio visuel](../extensibility/visual-studio-template-schema-reference.md)
+- [Création de modèles de projets et d’objets](../ide/creating-project-and-item-templates.md)

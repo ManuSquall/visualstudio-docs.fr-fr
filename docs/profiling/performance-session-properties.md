@@ -13,10 +13,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 1b3bafa976c8e57f468a3f3f59a3b6b19308fd1b
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74772200"
 ---
 # <a name="performance-session-properties"></a>Propriétés d’une session de performance
@@ -33,21 +33,21 @@ La session de performance présente les pages de propriétés suivantes :
 
 Ces paramètres vous permettent de sélectionner la méthode de profilage, d’ajouter la collection d’objets .NET et les données de durée de vie, ainsi que de spécifier l’emplacement des rapports par défaut et les conventions d’affectation de noms.
 
-Pour plus d'informations, consultez .
+Pour plus d'informations, consultez les pages suivantes :
 
-[Guide pratique pour choisir des méthodes de collecte](../profiling/how-to-choose-collection-methods.md)
+[Comment : Choisissez des méthodes de collecte](../profiling/how-to-choose-collection-methods.md)
 
 [Collecter les données liées à l’allocation et à la durée de vie de la mémoire .NET](../profiling/collecting-dotnet-memory-allocation-and-lifetime-data.md)
 
 - [Guide pratique pour définir les options de nom de fichier des données de performance](../profiling/how-to-set-performance-data-file-name-options.md)
 
-## <a name="launch"></a>Lancer
+## <a name="launch"></a>Launch
 
 Ces paramètres vous permettent de sélectionner des fichiers binaires dans une liste et de spécifier l’ordre de démarrage des fichiers binaires.
 
-Pour plus d’informations, consultez [Guide pratique pour spécifier le fichier binaire à démarrer](../profiling/how-to-specify-the-binary-to-start.md).
+Pour plus d’informations, voir [Comment : Spécifier le binaire pour commencer](../profiling/how-to-specify-the-binary-to-start.md)
 
-## <a name="sampling"></a>Échantillonnage
+## <a name="sampling"></a>échantillonnage
 
 Ces paramètres vous permettent de sélectionner l’événement d’échantillon et l’intervalle d’échantillonnage en cas d’utilisation de l’échantillonnage comme méthode de profilage. Un événement d’échantillon est utilisé pour collecter les données de profilage à l’intervalle spécifié. Par exemple, pour l’événement d’échantillon Cycles d’horloge, si l’intervalle d’échantillonnage a la valeur 10 000 000, les données de profilage sont collectées chaque fois que 10 millions de cycles d’horloge sont effectués. Les quatre types d’événements d’échantillons suivants sont disponibles :
 
@@ -57,12 +57,12 @@ Ces paramètres vous permettent de sélectionner l’événement d’échantillo
 - Compteurs de performance : pour les problèmes de performances de bas niveau
 - Il est possible de spécifier des événements d’échantillon supplémentaires sur la base des compteurs de performance disponibles.
 
-Pour plus d’informations, consultez [Guide pratique pour choisir des événements d’échantillonnage](../profiling/how-to-choose-sampling-events.md).
+Pour plus d’informations, voir [Comment : Choisissez des événements d’échantillonnage](../profiling/how-to-choose-sampling-events.md)
 
-## <a name="binary"></a>Binaire
-Ces paramètres vous permettent de spécifier si vous souhaitez déplacer le fichier binaire instrumenté vers un autre emplacement. Par exemple, si vous profilez *My.DLL* et que vous choisissez de ne pas déplacer le fichier binaire instrumenté, une copie de sauvegarde de *My.DLL* nommée *My.Orig.DLL* est créée. Ensuite, *My.DLL* est modifié en insérant des sondes pour collecter des données. Si vous déplacez le fichier binaire instrumenté, le fichier binaire d’origine n’est pas renommé et le fichier binaire instrumenté est copié dans l’emplacement spécifié pour être utilisé pendant l’instrumentation.
+## <a name="binary"></a>Binary
+Ces paramètres vous permettent de spécifier si vous souhaitez déplacer le fichier binaire instrumenté vers un autre emplacement. Par exemple, si vous dressez le profil *My.DLL* et choisissez de ne pas déplacer le binaire instrumenté, une copie de sauvegarde de *My.DLL* nommée *My.Orig.DLL* est créée. Par la suite, *My.DLL* est modifié en insérant des sondes pour collecter des données. Si vous déplacez le fichier binaire instrumenté, le fichier binaire d’origine n’est pas renommé et le fichier binaire instrumenté est copié dans l’emplacement spécifié pour être utilisé pendant l’instrumentation.
 
-Pour plus d’informations, consultez [Guide pratique pour spécifier le fichier binaire à démarrer](../profiling/how-to-specify-the-binary-to-start.md).
+Pour plus d’informations, voir [Comment : Spécifier le binaire pour commencer](../profiling/how-to-specify-the-binary-to-start.md)
 
 ## <a name="tier-interactions"></a>Interactions de couche
 
@@ -72,9 +72,9 @@ Pour plus d’informations, consultez [Collecte de données d’interaction de c
 
 Ces paramètres vous permettent de collecter les données de performance pour le code JScript dans les pages web [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] et de spécifier les événements de **pré-instrumentation** et de **post-instrumentation** devant se produire avant ou après le processus d’instrumentation.
 
-Pour plus d'informations, consultez .
+Pour plus d'informations, consultez les pages suivantes :
 
-[Guide pratique pour profiler du code JavaScript dans des pages web](../profiling/how-to-profile-javascript-code-in-web-pages.md)
+[Comment : Profil du code JavaScript dans les pages Web](../profiling/how-to-profile-javascript-code-in-web-pages.md)
 
 [Guide pratique pour spécifier des commandes de pré-instrumentation et de post-instrumentation](../profiling/how-to-specify-pre-and-post-instrument-commands.md)
 
@@ -82,29 +82,29 @@ Pour plus d'informations, consultez .
 
 Ces paramètres vous permettent de collecter des données à propos des compteurs de performance de l’UC quand vous utilisez l’instrumentation comme méthode de profilage. Les compteurs de performance portables sont disponibles indépendamment de la conception ou du fabricant de l’UC. Les événements de plateforme sont spécifiques à la conception et au fabricant de l’UC. Pour plus d’informations sur les compteurs de performance de processeur, consultez la documentation spécifique au processeur.
 
-Pour plus d’informations, consultez [Guide pratique pour collecter les données des compteurs UC](../profiling/how-to-collect-cpu-counter-data.md).
+Pour plus d’informations, voir [Comment : Collecter des données de compteur CPU](../profiling/how-to-collect-cpu-counter-data.md)
 
 ## <a name="windows-events"></a>Événements Windows
 
-Pendant le profilage, vous pouvez collecter des données à partir de fournisseurs de suivi d’événements. Vous pouvez afficher les données à l’aide de l’option `/calltrace` de l’outil en ligne de commande *VSPerfReport.exe*. Pour plus d’informations sur le suivi d’événements pour Windows (ETW), consultez [À propos du suivi d’événements](/windows/win32/etw/about-event-tracing).
+Pendant le profilage, vous pouvez collecter des données à partir de fournisseurs de suivi d’événements. Vous pouvez afficher les données en utilisant l’option d’outil `/calltrace` de ligne de commande *VSPerfReport.exe.* Pour plus d’informations sur le suivi d’événements pour Windows (ETW), consultez [À propos du suivi d’événements](/windows/win32/etw/about-event-tracing).
 
-Pour plus d'informations, consultez .
+Pour plus d'informations, consultez les pages suivantes :
 
-[Guide pratique pour collecter les données de suivi d’événements pour Windows (ETW)](../profiling/how-to-collect-event-tracing-for-windows-etw-data.md)
+[Comment : Recueillir le traçage des événements pour les données Windows (ETW)](../profiling/how-to-collect-event-tracing-for-windows-etw-data.md)
 
-[VSPerfReport](../profiling/vsperfreport.md)
+[VSPerfReport](../profiling/vsperfreport.md).
 
 ## <a name="windows-counters"></a>Compteurs Windows
 
 Cette option vous permet de collecter les données des compteurs de l’Analyseur de performances Windows. Pour collecter ces données, cochez la case **Collecter les compteurs de performance Windows**. L’intervalle de collecte peut être défini dans la zone **Intervalle de collecte**. Les options **Catégorie de compteurs** et **Instance** peuvent également être disponibles. Certains compteurs de l’Analyseur de performances Windows par défaut sont disponibles.
 
- Pour plus d’informations, consultez [Guide pratique pour collecter les données des compteurs Windows](../profiling/how-to-collect-windows-counter-data.md).
+ Pour plus d’informations, voir [Comment : Collecter des données de compteur Windows](../profiling/how-to-collect-windows-counter-data.md).
 
 ## <a name="advanced"></a>Avancé
 
 Ces paramètres vous permettent d’ajouter des options au processus d’instrumentation en spécifiant une ou plusieurs options de l’outil de profilage en ligne de commande [VSInstr](../profiling/vsinstr.md). Vous pouvez également spécifier la version du Common Runtime à profiler quand l’application utilise plusieurs versions.
 
-Pour plus d'informations, consultez .
+Pour plus d'informations, consultez les pages suivantes :
 
 [Guide pratique pour spécifier le runtime .NET Framework](../profiling/how-to-specify-the-dotnet-framework-runtime.md)
 
@@ -112,6 +112,6 @@ Pour plus d'informations, consultez .
 
 ## <a name="see-also"></a>Voir aussi
 
-[Vues d’ensemble](../profiling/overviews-performance-tools.md)
-[Configurer des sessions de performances](../profiling/configuring-performance-sessions.md)
-[Contrôler la collecte de données](../profiling/controlling-data-collection.md)
+[Aperçus](../profiling/overviews-performance-tools.md)
+[Configurer les sessions de](../profiling/configuring-performance-sessions.md)
+performance[Contrôlez la collecte de données](../profiling/controlling-data-collection.md)

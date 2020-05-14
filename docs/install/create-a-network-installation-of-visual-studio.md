@@ -1,7 +1,7 @@
 ---
 title: Créer une installation réseau
 description: Découvrez comment créer un point d’installation réseau pour le déploiement de Visual Studio en entreprise.
-ms.date: 10/29/2019
+ms.date: 03/27/2020
 ms.custom: seodec18
 ms.topic: conceptual
 helpviewer_keywords:
@@ -15,12 +15,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: bc31b6c5286e5d02d5fd6d4da441a001f190de90
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.openlocfilehash: 1f9c1ffc0252f0fcd92f026c876adfc8ad694c41
+ms.sourcegitcommit: 273b657e115c1756adb84e0e56b6f2c709bcee76
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/16/2020
-ms.locfileid: "76115378"
+ms.lasthandoff: 04/07/2020
+ms.locfileid: "80759733"
 ---
 # <a name="create-a-network-installation-of-visual-studio"></a>Créer une installation réseau de Visual Studio
 
@@ -33,44 +33,44 @@ De cette façon, les stations de travail clientes peuvent utiliser le même empl
 
 ## <a name="download-the-visual-studio-bootstrapper"></a>Télécharger le programme d’amorçage de Visual Studio
 
-Téléchargez un fichier de programme d’amorçage pour l’édition de Visual Studio souhaitée. Veillez à choisir **Enregistrer**, puis choisissez **ouvrir le dossier**.
+Téléchargez un fichier bootstrapper pour l’édition de Visual Studio que vous voulez. Assurez-vous de choisir **Enregistrer**, puis choisir **dossier ouvert**.
 
 ::: moniker range="vs-2017"
 
-Pour obtenir un programme d’amorçage pour Visual Studio 2017, consultez la page de téléchargement des [versions précédentes de Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/) pour plus d’informations sur la façon de procéder.
+Pour obtenir un bootstrapper pour Visual Studio 2017, consultez la page de téléchargement [des versions précédentes de Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/) pour plus de détails sur la façon de le faire.
 
-L’exécutable du programme d’installation&mdash;ou pour être plus spécifique, le fichier du programme d’amorçage&mdash;doit correspondre ou être similaire à l’un des éléments suivants.
+Votre configuration&mdash;exécutable ou pour être&mdash;plus spécifique, le fichier bootstrapper doit correspondre ou être similaire à l’un des éléments suivants.
 
-| Édition | NomFichier |
+| Édition | Nom de fichier |
 |-------------|-----------------------|
 |Visual Studio Enterprise | **vs_enterprise.exe** |
 |Visual Studio Professional | **vs_professional.exe** |
-|Visual Studio Build Tools   | **vs_buildtools. exe** |
+|Visual Studio Build Tools   | **vs_buildtools.exe** |
 
-Les autres programmes d’amorçage pris en charge incluent **vs_feedbackclient. exe**, **vs_teamexplorer. exe**, **vs_testagent. exe**, **vs_testcontroller. exe**et **vs_testprofessional. exe**.
+D’autres bootstrappers pris en charge comprennent **vs_feedbackclient.exe**, **vs_teamexplorer.exe**, **vs_testagent.exe**, **vs_testcontroller.exe**, et **vs_testprofessional.exe**.
 
 ::: moniker-end
 
 ::: moniker range="vs-2019"
 
-L’exécutable du programme d’installation&mdash;ou pour être plus précis, un fichier de programme d’amorçage&mdash;doit correspondre ou être similaire à l’un des éléments suivants.
+Votre configuration&mdash;exécutable ou pour être&mdash;plus spécifique, un fichier bootstrapper doit correspondre ou être similaire à l’un des éléments suivants.
 
-|Édition | Télécharger|
+|Édition | Téléchargement|
 |-------------|-----------------------|
 |Visual Studio Enterprise | [**vs_enterprise.exe**](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=enterprise&rel=16&utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=network+install&utm_content=download+vs2019) |
 |Visual Studio Professional | [**vs_professional.exe**](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=professional&rel=16&utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=network+install&utm_content=download+vs2019) |
-| Visual Studio Build Tools   | [**vs_buildtools. exe**](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=buildtools&rel=16&utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=offline+install&utm_content=download+vs2019) |
+| Visual Studio Build Tools   | [**vs_buildtools.exe**](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=buildtools&rel=16&utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=offline+install&utm_content=download+vs2019) |
 
-Les autres programmes d’amorçage pris en charge incluent [vs_teamexplorer. exe](https://download.visualstudio.microsoft.com/download/pr/f6473c9f-a5f6-4249-af28-c2fd14b6a0fb/4026077127d25d33789f3882998266946608d8ada378b6ed7c8fff8c07f3dde2/vs_TeamExplorer.exe), [vs_testagent. exe](https://download.visualstudio.microsoft.com/download/pr/f6473c9f-a5f6-4249-af28-c2fd14b6a0fb/1383bf8bcda3d0e986a2e42c14114aaea8a7b085d31aa0623c9f70b2bad130e4/vs_TestAgent.exe)et [vs_testcontroller. exe](https://download.visualstudio.microsoft.com/download/pr/f6473c9f-a5f6-4249-af28-c2fd14b6a0fb/54dcf24b76e7cd9fb8be0ac518a9dfba6daf18fe9b2aa1543411b1cda8820918/vs_TestController.exe).
+D’autres bootstrappers pris en charge comprennent [vs_teamexplorer.exe](https://download.visualstudio.microsoft.com/download/pr/f6473c9f-a5f6-4249-af28-c2fd14b6a0fb/4026077127d25d33789f3882998266946608d8ada378b6ed7c8fff8c07f3dde2/vs_TeamExplorer.exe), [vs_testagent.exe](https://download.visualstudio.microsoft.com/download/pr/f6473c9f-a5f6-4249-af28-c2fd14b6a0fb/1383bf8bcda3d0e986a2e42c14114aaea8a7b085d31aa0623c9f70b2bad130e4/vs_TestAgent.exe), et [vs_testcontroller.exe](https://download.visualstudio.microsoft.com/download/pr/f6473c9f-a5f6-4249-af28-c2fd14b6a0fb/54dcf24b76e7cd9fb8be0ac518a9dfba6daf18fe9b2aa1543411b1cda8820918/vs_TestController.exe).
 
 ::: moniker-end
 
 >[!TIP]
->Si vous avez précédemment téléchargé un fichier de programme d’amorçage et que vous souhaitez vérifier sa version, voici comment procéder. Dans Windows, ouvrez l’Explorateur de fichiers, cliquez avec le bouton droit sur le fichier du programme d’amorçage, choisissez **Propriétés**, cliquez sur l’onglet **Détails** , puis affichez le numéro de **version du produit** . Pour faire correspondre ce nombre à une version de Visual Studio, consultez la page [numéros de build et dates de publication de Visual Studio](visual-studio-build-numbers-and-release-dates.md) .
+>Si vous avez déjà téléchargé un fichier bootstrapper et que vous souhaitez vérifier sa version, voici comment. Dans Windows, ouvrez File Explorer, cliquez à droite sur le fichier bootstrapper, choisissez **les propriétés,** choisissez l’onglet **Détails,** puis consultez le numéro **de version produit.** Pour correspondre à ce nombre à une sortie de Visual Studio, voir le [Visual Studio construire des numéros et la](visual-studio-build-numbers-and-release-dates.md) page de dates de sortie.
 
 ## <a name="create-an-offline-installation-folder"></a>Créer un dossier d’installation hors connexion
 
-Vous devez avoir une connexion Internet pour effectuer cette étape. Pour créer une installation hors connexion avec toutes les langues et toutes les fonctionnalités, utilisez une commande similaire à l’un des exemples suivants.
+Vous devez avoir une connexion Internet pour terminer cette étape. Pour créer une installation hors ligne avec toutes les langues et toutes les fonctionnalités, utilisez une commande similaire à l’un des exemples suivants.
 
    > [!IMPORTANT]
    > Une disposition Visual Studio complète nécessite un minimum de 35 Go d’espace disque et peut être assez longue à télécharger. Consultez la section [Personnaliser la disposition réseau](#customize-the-network-layout) pour plus de détails sur la création d’une disposition comprenant uniquement les composants que vous souhaitez installer.
@@ -90,7 +90,7 @@ Vous devez avoir une connexion Internet pour effectuer cette étape. Pour créer
 
 Vous pouvez modifier response.json pour définir les valeurs par défaut qui sont utilisées lors de l’exécution du programme d’installation.  Par exemple, vous pouvez configurer le fichier `response.json` pour sélectionner un ensemble spécifique de charges de travail sélectionnées automatiquement. Pour plus d’informations, consultez [Automatiser l’installation de Visual Studio avec un fichier réponse](automated-installation-with-response-file.md).
 
-Et, si vous rencontrez un problème avec le programme d’amorçage de Visual Studio en levant une erreur lorsque vous le couplez avec un fichier Response. JSON, consultez la section « échec de l’analyse de l’ID du processus parent » de la page [résoudre les erreurs liées au réseau lorsque vous installez ou utilisez Visual Studio](troubleshooting-network-related-errors-in-visual-studio.md#error-failed-to-parse-id-from-parent-process) pour plus d’informations sur la marche à suivre.
+Et, si vous rencontrez un problème avec le Bootstrapper Visual Studio lancer une erreur lorsque vous l’associez à un fichier response.json, voir le "Failed to analyse ID from parent process" section des [erreurs liées au réseau Troubleshoot lorsque vous installez ou utilisez la](troubleshooting-network-related-errors-in-visual-studio.md#error-failed-to-parse-id-from-parent-process) page Visual Studio pour plus d’informations sur ce qu’il faut faire.
 
 ## <a name="copy-the-layout-to-a-network-share"></a>Copier la disposition sur un partage réseau
 
@@ -100,7 +100,7 @@ L’exemple suivant utilise [xcopy](/windows-server/administration/windows-comma
 
 ::: moniker range="vs-2017"
 
-Exemple :
+Exemple :
 
 ```cmd
 xcopy /e c:\VSLayout \\server\products\VS2017
@@ -123,7 +123,7 @@ xcopy /e c:\VSLayout \\server\products\VS2019
 
 Plusieurs options vous permettent de personnaliser votre disposition réseau. Vous pouvez créer une disposition partielle qui contient uniquement un ensemble spécifique de [paramètres régionaux de langue](use-command-line-parameters-to-install-visual-studio.md#list-of-language-locales), [charges de travail, composants et leurs dépendances recommandées ou facultatives](workload-and-component-ids.md). Cela peut s’avérer utile si vous savez que vous allez uniquement déployer un sous-ensemble de charges de travail sur les stations de travail clientes. Les paramètres de ligne de commande standard permettant de personnaliser la disposition incluent :
 
-* `--add` pour spécifier les [ID de charge de travail ou de composant](workload-and-component-ids.md). <br>Si `--add` est utilisé, seuls les composants et les charges de travail spécifiés avec `--add` sont téléchargés.  Si `--add` n’est pas utilisé, l’ensemble des charges de travail et des composants est téléchargé.
+* `--add`pour spécifier [la charge de travail ou les composants .](workload-and-component-ids.md) <br>Si `--add` est utilisé, seuls les composants et les charges de travail spécifiés avec `--add` sont téléchargés.  Si `--add` n’est pas utilisé, l’ensemble des charges de travail et des composants est téléchargé.
 * `--includeRecommended` pour inclure tous les composants recommandés pour les ID de charge de travail spécifiés
 * `--includeOptional` pour inclure tous les composants recommandés et facultatifs pour les ID de charge de travail spécifiés.
 * `--lang` pour spécifier les [paramètres régionaux de langue](use-command-line-parameters-to-install-visual-studio.md#list-of-language-locales).
@@ -231,14 +231,17 @@ Les administrateurs peuvent déployer Visual Studio sur les stations de travail 
 
 ::: moniker range="vs-2019"
 > [!IMPORTANT]
-> Pour les installations hors connexion, si vous recevez un message d’erreur indiquant « un produit correspondant aux paramètres suivants est introuvable », vérifiez que vous utilisez le commutateur `--noweb` avec la version 16.3.5 ou ultérieure.
+> Pour les installations hors ligne, si vous obtenez un message d’erreur qui dit "Un `--noweb` produit correspondant aux paramètres suivants ne peut pas être trouvé", assurez-vous que vous utilisez le commutateur avec la version 16.3.5 ou plus tard.
 >
 ::: moniker-end
 
 Lorsque vous installez à partir d’une disposition, le contenu qui est installé est acquis à partir de la disposition. Toutefois, si vous sélectionnez un composant qui ne se trouve pas dans la disposition, celui-ci est téléchargé à partir d’Internet.  Si vous voulez empêcher le programme d’installation de Visual Studio de télécharger le contenu manquant dans la disposition, utilisez l’option `--noWeb`. Si `--noWeb` est utilisé et qu’un contenu à installer est absent de la disposition, l’installation échoue.
 
+> [!TIP]
+> Si vous souhaitez installer à partir d’une source hors connexion `--noWeb` `--noUpdateInstaller` sur un ordinateur non connecté à Internet, spécifiez à la fois les options et les options. Le premier empêche le téléchargement de charges de travail mises à jour, composants, et ainsi de suite. Ce dernier empêche l’installateur de s’auto-actualiser sur le Web.
+
 > [!IMPORTANT]
-> L’option `--noWeb` n’empêche pas le programme d’installation de Visual Studio de vérifier la présence de mises à jour. Pour plus d’informations, consultez la page [Contrôler les mises à jour applicables aux déploiements de Visual Studio à partir du réseau](controlling-updates-to-visual-studio-deployments.md).
+> L’option `--noWeb` n’empêche pas la configuration Visual Studio sur un ordinateur connecté à Internet de vérifier les mises à jour. Pour plus d’informations, consultez la page [Contrôler les mises à jour applicables aux déploiements de Visual Studio à partir du réseau](controlling-updates-to-visual-studio-deployments.md).
 
 ### <a name="error-codes"></a>Codes d’erreur
 
@@ -274,13 +277,13 @@ Quand les mises à jour de produit deviennent disponibles, vous avez la possibil
 
 ::: moniker-end
 
-Si vous devez créer une disposition pour une version antérieure de Visual Studio, accédez à [https://my.visualstudio.com](https://my.visualstudio.com) pour télécharger les versions « corrigées » des programmes d’amorçage de Visual Studio.
+Si vous avez besoin de créer une mise en [https://my.visualstudio.com](https://my.visualstudio.com) page pour une version plus ancienne de Visual Studio, allez télécharger des versions "fixes" des bootstrappers Visual Studio.
 
 ### <a name="how-to-get-support-for-your-offline-installer"></a>Comment obtenir de l’assistance pour votre programme d’installation hors connexion
 
 Si vous rencontrez un problème avec votre installation hors connexion, nous voulons le savoir. Le meilleur moyen de nous en faire part est d’utiliser l’outil [Signaler un problème](../ide/how-to-report-a-problem-with-visual-studio.md). Lorsque vous utilisez cet outil, vous pouvez nous envoyer la télémétrie et des journaux, dont nous avons besoin pour nous aider à diagnostiquer et à résoudre le problème.
 
-Nous offrons également une option de support par [**Conversation en direct**](https://visualstudio.microsoft.com/vs/support/#talktous) (en anglais uniquement) pour les problèmes liés à l’installation.
+Nous offrons également une option de support par [**chat sur les installations**](https://visualstudio.microsoft.com/vs/support/#talktous) (en anglais uniquement) pour les problèmes liés à l’installation.
 
 D’autres options de support sont également à votre disposition. Pour obtenir la liste, consultez notre page [Commentaires](../ide/feedback-options.md).
 
@@ -288,9 +291,10 @@ D’autres options de support sont également à votre disposition. Pour obtenir
 
 - [Guide de l’administrateur Visual Studio](visual-studio-administrator-guide.md)
 - [Mettre à jour une installation réseau de Visual Studio](update-a-network-installation-of-visual-studio.md)
-- [Résoudre les erreurs liées au réseau lorsque vous installez ou utilisez Visual Studio](troubleshooting-network-related-errors-in-visual-studio.md)
+- [Erreurs liées au réseau lorsque vous installez ou utilisez Visual Studio](troubleshooting-network-related-errors-in-visual-studio.md)
 - [Contrôler les mises à jour applicables aux déploiements de Visual Studio à partir du réseau](controlling-updates-to-visual-studio-deployments.md)
-- [Cycle de vie et maintenance des produits Visual Studio](/visualstudio/releases/2019/servicing/)
+- [Cycle de vie et entretien du produit Visual Studio](/visualstudio/releases/2019/servicing/)
 - [Mettre à jour Visual Studio tout en étant sur une ligne de base de maintenance](update-servicing-baseline.md)
 - [Utiliser les paramètres de ligne de commande pour installer Visual Studio](use-command-line-parameters-to-install-visual-studio.md)
 - [ID de charge de travail et de composant Visual Studio](workload-and-component-ids.md)
+- [Installer les certificats nécessaires à l’installation hors connexion de Visual Studio](install-certificates-for-visual-studio-offline.md)

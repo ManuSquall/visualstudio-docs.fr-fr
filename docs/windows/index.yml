@@ -10,12 +10,12 @@ metadata:
   monikerRange: '>=vs-2017'
   f1_keywords:
   - MSDNSTART
-  ms.openlocfilehash: 1c4358fb1ceef0773a29c6860ee7b670c2d021b1
-  ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
+  ms.openlocfilehash: 6ec31d2881abbfe2ae55174ea3f3fb15fd34651f
+  ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
   ms.translationtype: HT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 02/15/2020
-  ms.locfileid: "77265558"
+  ms.lasthandoff: 03/21/2020
+  ms.locfileid: "77904059"
 highlightedContent:
   items:
   - title: Configuration et installation
@@ -50,7 +50,7 @@ conceptualContent:
     - text: Déboguer votre code
       itemType: tutorial
       url: ../debugger/debugger-feature-tour.md
-    - text: Tester votre code
+    - text: Test de votre code
       itemType: tutorial
       url: ../test/getting-started-with-unit-testing.md
     - text: Accéder aux données localement ou dans le cloud
@@ -127,19 +127,19 @@ additionalContent:
     - title: Développer
       summary: Écrivez et gérez votre code à l’aide de l’éditeur de code.
       url: ../ide/index-writing-code.yml
-    - title: Générer
+    - title: Build
       summary: Compilez et générez votre code source.
       url: ../ide/compiling-and-building-in-visual-studio.md
-    - title: Débogage
+    - title: Déboguer
       summary: Investiguez et corrigez les bogues dans votre code.
       url: ../debugger/index.yml
-    - title: Tester
+    - title: Test
       summary: Exécutez des tests sur vos projets.
       url: ../test/improve-code-quality.md
     - title: Déployer
       summary: Partagez vos applications et votre code en utilisant Web Deploy, InstallShield, NuGet, l’intégration continue et plus encore.
       url: ../deployment/index.yml
-    - title: Gestion de version
+    - title: Gestion de versions
       summary: Partagez du code à l’aide des technologies de gestion de version comme Git et TFVC.
       url: /azure/devops/repos/index
     - title: DevOps
@@ -148,13 +148,13 @@ additionalContent:
     - title: Mesurer les performances
       summary: Identifiez les goulets d’étranglement et optimisez les performances du code à l’aide des outils de diagnostic.
       url: ../profiling/index.yml
-    - title: Étendre
+    - title: Extend
       summary: Ajoutez vos propres fonctionnalités à l’IDE de Visual Studio pour améliorer votre expérience de développement.
-      url: ../extensibility/index.md
+      url: ../extensibility/index.yml
     - title: Données
       summary: Créez des applications de données qui se connectent à n’importe quel service ou base de données, localement ou dans le cloud.
       url: ../data-tools/accessing-data-in-visual-studio.md
-    - title: Collaborer
+    - title: Travailler en collaboration
       summary: Partagez, modifiez et déboguez votre code dans un environnement de collaboration en temps réel.
       url: /visualstudio/liveshare/
     - title: Développer avec des conteneurs Docker
@@ -202,7 +202,7 @@ additionalContent:
     - title: Autres boîtes à outils
       links:
       - text: Développement d’une extension Visual Studio
-        url: ../extensibility/index.md
+        url: ../extensibility/index.yml
       - text: Développement Linux avec C++
         url: /cpp/linux/
       - text: Développement multiplateforme .NET Core

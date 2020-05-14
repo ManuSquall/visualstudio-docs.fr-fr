@@ -2,7 +2,7 @@
 # [Nouveautés](whats-new-in-subscriptions.md)
 # Abonnements
 ## Acheter des abonnements
-### [Distribution](https://visualstudio.microsoft.com/vs/pricing)
+### [Distribution](buy-activate-retail.md)
 ### Cloud 
 #### [Vue d’ensemble](vscloud-overview.md)
 #### [FAQ sur la facturation](vscloud-billing-faq.md)
@@ -13,7 +13,6 @@
 #### [Gérer les abonnements pour MPN](manage-mpn-subscriptions.md)
 ### [Microsoft for Startups](program-startups.md)
 ## Se connecter 
-### [Activer des abonnements au détail](activate-store-subscriptions.md)
 ### [Se connecter avec des comptes Microsoft](sign-in-msa.md)
 ### [Se connecter avec des comptes professionnels ou scolaires](sign-in-work.md)
 ### [Se connecter avec GitHub](sign-in-github.md)
@@ -28,17 +27,19 @@
 #### [Crédit individuel Azure DevTest](vs-azure.md)
 #### [Azure DevOps](vs-azure-devops.md)
 #### [Azure DevTest - Paiement à l’utilisation](vs-azure-payg.md)
+#### [Azure EA DevTest](azure-ea-devtest.md)
 #### [CAST Highlight](vs-cast.md)
 #### [CloudPilot](vs-cloudpilot.md)
 #### [Enterprise Mobility et Security](vs-ems.md)
-#### [Microsoft 365](vs-m365.md)
-#### [Abonnement Office 365](vs-office365.md)
+#### [Développeur Microsoft 365](vs-m365.md)
+#### [Office 365 ProPlus](vs-office365.md)
 #### [Parasoft](vs-parasoft.md)
 #### [Power BI Pro](vs-pbi.md)
 #### [Visual Studio App Center](vs-visual-studio-app-center.md)
 #### [IDE Visual Studio](vs-ide-benefit.md)
 #### [WhiteSource Bolt](vs-whitesource.md)
 #### [Compte de développeur Windows](vs-windows-dev.md)
+#### [Windows Virtual Desktop](vs-windows-virtual-desktop.md)
 ### Développement professionnel
 #### [Magazine CODE](vs-code-magazine.md)
 #### [DataCamp](vs-datacamp.md)
@@ -73,10 +74,10 @@
 ### [Super administrateurs et administrateurs](admin-roles.md)
 ### [Définir les préférences de contrat](admin-prefs.md)
 ### [Vue d’ensemble](using-admin-portal.md)
-### [Tutoriel vidéo : Utiliser le portail d’administration](https://www.youtube.com/watch?v=XG-E-IDjA-w&list=PLReL099Y5nReJhZ6o8CQFPSBgzGCHX99_&index=3&t=0s)
 ### Assigner des abonnements
 #### [Ajouter des utilisateurs uniques](assign-license.md)
 #### [Ajouter plusieurs utilisateurs](assign-license-bulk.md)
+#### [Affecter des abonnements spécifiques](assign-guid.md)
 ### [Modifier des abonnements](edit-license.md)
 ### [Supprimer des abonnements](delete-license.md)
 ### [Rechercher un abonnement](search-license.md)

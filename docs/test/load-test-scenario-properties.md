@@ -1,5 +1,5 @@
 ---
-title: Propriétés des scénarios de test de charge
+title: Propriétés du scénario de test de charge
 ms.date: 10/19/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -10,10 +10,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: c2011438f1fcb0230cde0de527216456553e7c64
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75584437"
 ---
 # <a name="load-test-scenario-properties"></a>Propriétés des scénarios de test de charge
@@ -24,13 +24,13 @@ Changez les paramètres des propriétés de votre scénario de test de charge da
 
 ## <a name="general"></a>Général
 
-|Les|Définition|
+|Propriété|Définition|
 |-|----------------|
-|**Name**|Nom du scénario.|
+|**Nom   **|Nom du scénario.|
 
 ## <a name="mix"></a>Combinaison
 
-|Les|Définition|
+|Propriété|Définition|
 |-|----------------|
 |**Combinaison de navigateurs**|Spécifie la combinaison de navigateurs web du test de charge. Vous pouvez spécifier différents types de navigateurs web et leur distribution de charge.<br /><br />Choisissez le bouton représentant des points de suspension **(…)** pour ouvrir la boîte de dialogue **Modifier la combinaison de navigateurs** et utilisez **Ajouter** et **Supprimer** pour sélectionner les types de navigateur web dans le test de charge.<br /><br />Pour plus d’informations, consultez [Spécifier des types de navigateurs web](../test/edit-the-test-mix-to-specify-which-web-browsers-types-in-a-load-test-scenario.md).|
 |**Combinaison de réseaux**|Spécifie la combinaison de réseaux pour le test de charge. Vous pouvez spécifier les types de réseau à inclure et leur répartition de charge.<br /><br />Choisissez le bouton de sélection **(…)** pour ouvrir la boîte de dialogue **Modifier la combinaison de réseaux** et utilisez **Ajouter** et **Supprimer** pour sélectionner les types de réseau dans le test de charge.<br /><br />Pour plus d’informations, consultez [Spécifier des types de réseaux virtuels](../test/specify-virtual-network-types-in-a-load-test-scenario.md).|
@@ -39,7 +39,7 @@ Changez les paramètres des propriétés de votre scénario de test de charge da
 
 ## <a name="options"></a>Options
 
-|Les|Définition|
+|Propriété|Définition|
 |-|----------------|
 |**Agents à utiliser**|Spécifie les agents que votre scénario doit utiliser si vous exécutez le test de charge à distance. Par exemple, vous pouvez définir un ensemble spécifique d'agents afin de maintenir une cohérence lorsque vous analysez des tendances de performance. En outre, les agents peuvent être distribués géographiquement, afin qu'il y ait une affinité entre les scripts qu'ils exécutent et l'emplacement des agents.<br /><br />Les agents doivent être séparés par des virgules, par exemple « **Agent1, Agent2, Agent3** ». Si vous laissez la propriété vide, le scénario doit utiliser tous les agents disponibles.<br /><br />Pour plus d’informations, consultez [Guide pratique pour spécifier les agents de test à utiliser](../test/how-to-specify-test-agents-to-use-in-load-test-scenarios.md).|
 |**Appliquer une distribution au rythme**|Valeur booléenne utilisée pour indiquer si vous souhaitez appliquer les délais de distribution classiques au modèle de combinaison de tests sur la base du rythme de l’utilisateur. Cette propriété s’applique uniquement si la propriété **Type de combinaison de tests** a la valeur **Sur la base du rythme de l’utilisateur**.<br /><br />Pour plus d’informations, consultez [Guide pratique pour appliquer une distribution au rythme](../test/how-to-apply-distribution-to-pacing-delay-when-using-a-user-pace-test-mix-model.md).|
@@ -48,12 +48,12 @@ Changez les paramètres des propriétés de votre scénario de test de charge da
 |**Pourcentage de nouveaux utilisateurs**|Valeur numérique qui indique le pourcentage de nouveaux utilisateurs ou des premières visites dans le scénario.<br /><br />Pour plus d’informations, consultez [Guide pratique pour spécifier le pourcentage des utilisateurs virtuels qui utilisent les données du cache web](../test/how-to-specify-the-percentage-of-virtual-users-that-use-web-cache-data.md).|
 |**Profil de réflexion**|Indique si le scénario doit utiliser **Distribution normale**, ou si le profil de réflexion est **Actif** ou **Inactif**.<br /><br />Pour plus d’informations, consultez [Modifier les temps de réflexion pour simuler les délais d’interaction humaine avec un site web](../test/edit-think-times-in-load-test-scenarios.md).|
 
-## <a name="timing"></a>Synchronisation
+## <a name="timing"></a>Minutage
 
-|Les|Définition|
+|Propriété|Définition|
 |-|----------------|
 |**Retarder l’heure de début**|Valeur de temps indiquant le délai en nombre d'heures, de minutes et de secondes à l'issue duquel le scénario démarre après le démarrage du test de charge. Si la propriété **Désactiver pendant le préchauffage** a la valeur **True**, le délai d’attente s’applique à l’issue de la période de préparation.<br /><br />Pour plus d’informations, consultez [Configurer les délais de démarrage des scénarios](../test/configure-scenario-start-delays.md).|
-|**Désactiver pendant le préchauffage**|Valeur booléenne utilisée pour indiquer si le scénario doit être exécuté conformément à la durée de la propriété **Durée de préchauffage** spécifiée dans le paramètre d’exécution du test de charge.<br /><br />Pour plus d’informations sur les propriétés des paramètres d’exécution du test de charge, consultez [Propriétés des paramètres d’exécution pour le test de charge](../test/load-test-run-settings-properties.md).<br /><br />Pour plus d’informations, consultez [Configurer les délais de démarrage des scénarios](../test/configure-scenario-start-delays.md).|
+|**Désactiver pendant le préchauffage**|Valeur booléenne utilisée pour indiquer si le scénario doit être exécuté conformément à la durée de la propriété **Durée de préchauffage** spécifiée dans le paramètre d’exécution du test de charge.<br /><br />Pour plus d’informations sur les propriétés de réglage de l’exécution de test de charge, voir [propriétés de réglages d’exécution de test de charge](../test/load-test-run-settings-properties.md).<br /><br />Pour plus d’informations, consultez [Configurer les délais de démarrage des scénarios](../test/configure-scenario-start-delays.md).|
 |**Temps de réflexion entre les itérations de test**|Valeur numérique utilisée pour spécifier le délai d'attente exprimé en secondes entre les itérations de test.<br /><br />Pour plus d’informations, consultez [Modifier les temps de réflexion pour simuler les délais d’interaction humaine avec un site web](../test/edit-think-times-in-load-test-scenarios.md).|
 
 ## <a name="see-also"></a>Voir aussi

@@ -3,18 +3,18 @@ title: Inspecter les propriétés XAML pendant le débogage | Microsoft Docs
 ms.date: 11/12/2019
 ms.topic: conceptual
 ms.assetid: 390edde4-7b8d-4c89-8d69-55106b7e6b11
-author: mikejo5000
-ms.author: mikejo
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.technology: vs-ide-debug
 ms.workload:
 - uwp
-ms.openlocfilehash: 61893e06f79b14b95ebb5b923eca581b047d979b
-ms.sourcegitcommit: 9801fc66a14c0f855b9ff601fb981a9e5321819e
+ms.openlocfilehash: 36246f959aa49e49aa84defc203075f163c67118
+ms.sourcegitcommit: 9de7d25056da59df0941508c80c0b12766ba6580
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "74072764"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "77706410"
 ---
 # <a name="inspect-xaml-properties-while-debugging"></a>Inspecter les propriétés XAML en phase de débogage 
 
@@ -22,10 +22,10 @@ Vous pouvez obtenir une vue en temps réel de votre code XAML en cours d’exéc
 
 Vous pouvez utiliser ces outils dans les configurations suivantes :
 
-|Type d'application|Système d'exploitation et outils|
+|Type d’application|Système d'exploitation et outils|
 |-----------------|--------------------------------|
 |Applications Windows Presentation Foundation (4.0 et versions ultérieures).|Windows 7 et versions ultérieures|
-|Applications pour la plateforme Windows universelle|Windows 10 et versions ultérieures, avec le [Kit de développement logiciel (SDK) Windows 10](https://dev.windows.com/downloads/windows-10-sdk)|
+|Applications Windows universelles|Windows 10 et versions ultérieures, avec le [Kit de développement logiciel (SDK) Windows 10](https://dev.windows.com/downloads/windows-10-sdk)|
 
 ## <a name="look-at-elements-in-the-live-visual-tree"></a>Examiner les éléments dans l’arborescence d’éléments visuels dynamique
 
@@ -110,12 +110,12 @@ Commençons par une application WPF très simple qui présente une vue Liste et 
 
 1. À présent, examinons les propriétés de l’un des éléments de la zone de liste.
 
-   Sélectionnez le premier élément de zone de liste dans l’**arborescence d’éléments visuels en direct** et cliquez sur l’icône **Afficher les propriétés** dans la barre d’outils. L’**Explorateur de propriétés en direct** doit apparaître. Notez que le champ de **contenu** est « Item1 » et que le champ de**couleur** d' **arrière-plan** >  est **#FFFFFFE0**.
+   Sélectionnez le premier élément de zone de liste dans l’**arborescence d’éléments visuels en direct** et cliquez sur l’icône **Afficher les propriétés** dans la barre d’outils. L’**Explorateur de propriétés en direct** doit apparaître. Notez que le champ de **contenu** est « Item1 » et que le champ **de couleur** d' **arrière-plan** > est **#FFFFFFE0**.
    
 1. Revenez à l’**arborescence d’éléments visuels en direct** et sélectionnez le deuxième élément de zone de liste. L' **Explorateur de propriétés en direct** doit indiquer que le champ de **contenu** est « Item2 » et que le champ de **couleur** d' **arrière-plan** > est **#FFD3D3D3** (selon le thème).
 
    > [!NOTE]
-   > Une bordure jaune autour d’une propriété dans l **'Explorateur de propriétés en direct** signifie que la valeur de propriété est définie via une liaison, par exemple `Color = {BindingExpression}`. Une bordure verte signifie que la valeur est définie à l’aide d’une ressource, par exemple `Color = {StaticResource MyBrush}`.
+   > Une bordure jaune autour d’une propriété dans l **'Explorateur de propriétés en direct** signifie que la valeur de propriété est définie via une liaison, telle que `Color = {BindingExpression}`. Une bordure verte signifie que la valeur est définie à l’aide d’une ressource, par exemple `Color = {StaticResource MyBrush}`.
 
    La structure réelle du code XAML inclut de nombreux éléments qui ne vous intéressent probablement pas directement et, si vous ne connaissez pas bien le code, vous pouvez avoir des difficultés à parcourir l’arborescence pour trouver ce que vous recherchez. Par conséquent, l’**arborescence d’éléments visuels en direct** propose quelques méthodes vous permettant d’utiliser l’interface utilisateur de l’application pour rechercher plus facilement l’élément que vous souhaitez examiner.
 

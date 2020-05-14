@@ -1,10 +1,10 @@
-- name: "SDK Visual\_Studio"
+- name: Kit de développement logiciel Visual Studio
   href: visual-studio-sdk.md
 - name: "Installer le SDK Visual\_Studio"
   href: installing-the-visual-studio-sdk.md
 - name: Commencer à développer des extensions Visual Studio
   href: starting-to-develop-visual-studio-extensions.md
-- name: 'Créez votre première extension : Hello World'
+- name: "Créer votre première extension\_: Hello World"
   href: extensibility-hello-world.md
 - name: "Nouveautés du kit SDK Visual Studio\_2019"
   items:
@@ -24,7 +24,7 @@
       href: set-install-root.md
     - name: Migrer l’enregistrement COM du débogueur
       href: migrate-debugger-com-registration.md
-    - name: Questions fréquemment posées
+    - name: Forum Aux Questions (FAQ)
       href: faq-2017.md
 - name: "Migrer les projets d’extensibilité vers Visual Studio\_2017"
   href: how-to-migrate-extensibility-projects-to-visual-studio-2017.md
@@ -48,7 +48,7 @@
       href: workspace-indexing.md
     - name: Services de langage
       href: workspace-language-services.md
-    - name: Générer
+    - name: Build
       href: workspace-build.md
 - name: Étendre les menus et les commandes
   items:
@@ -138,43 +138,43 @@
           href: editor-imports.md
         - name: Prise en charge d’EditorConfig
           href: supporting-editorconfig.md
-        - name: "Procédure pas à pas\_: Liaison d’un type de contenu à une extension de nom de fichier"
+        - name: "Procédure pas à pas\_: liaison d’un type de contenu à une extension de nom de fichier"
           href: walkthrough-linking-a-content-type-to-a-file-name-extension.md
-        - name: "Procédure pas à pas\_: Création d'un glyphe de marge"
+        - name: "Procédure pas à pas\_: création d’un glyphe de marge"
           href: walkthrough-creating-a-margin-glyph.md
-        - name: "Procédure pas à pas\_: Personnalisation de l’affichage du texte"
+        - name: "Procédure pas à pas\_: personnalisation de l’affichage du texte"
           href: walkthrough-customizing-the-text-view.md
-        - name: "Procédure pas à pas\_: Création d’un ornement, de commandes et de paramètres pour l’affichage (repères de colonne)"
+        - name: "Procédure pas à pas\_: création d’un ornement, de commandes et de paramètres pour l’affichage (repères de colonne)"
           href: walkthrough-creating-a-view-adornment-commands-and-settings-column-guides.md
-        - name: "Procédure pas à pas\_: Mettre du texte en surbrillance"
+        - name: "Procédure pas à pas\_: mise en surbrillance de texte"
           href: walkthrough-highlighting-text.md
         - name: "Procédure pas à pas\_: mode Plan"
           href: walkthrough-outlining.md
-        - name: "Procédure pas à pas\_: Affichage d'accolades correspondantes"
+        - name: "Procédure pas à pas\_: affichage d’accolades correspondantes"
           href: walkthrough-displaying-matching-braces.md
-        - name: "Procédure pas à pas\_: Affichage d’info-bulles Info express"
+        - name: "Procédure pas à pas\_: affichage d’info-bulles Info express"
           href: walkthrough-displaying-quickinfo-tooltips.md
-        - name: "Procédure pas à pas\_: Affichage d'aide sur les signatures"
+        - name: "Procédure pas à pas\_: affichage de l’aide sur les signatures"
           href: walkthrough-displaying-signature-help.md
-        - name: "Procédure pas à pas\_: Affichage de la saisie semi-automatique des instructions"
+        - name: "Procédure pas à pas\_: affichage de la saisie semi-automatique des instructions"
           href: walkthrough-displaying-statement-completion.md
-        - name: "Procédure pas à pas\_: Implémentation d’extraits de code"
+        - name: "Procédure pas à pas\_: implémentation d’extraits de code"
           href: walkthrough-implementing-code-snippets.md
-        - name: "Procédure pas à pas\_: Affichage de suggestions Ampoule"
+        - name: "Procédure pas à pas\_: affichage de suggestions Ampoule"
           href: walkthrough-displaying-light-bulb-suggestions.md
-        - name: "Procédure pas à pas\_: Utilisation d’une commande Shell avec une extension de l’éditeur"
+        - name: "Procédure pas à pas\_: utilisation d’une commande Shell avec une extension de l’éditeur"
           href: walkthrough-using-a-shell-command-with-an-editor-extension.md
-        - name: "Procédure pas à pas\_: Utilisation d'une touche de raccourci avec une extension de l’éditeur"
+        - name: "Procédure pas à pas\_: utilisation d’une touche de raccourci avec une extension de l’éditeur"
           href: walkthrough-using-a-shortcut-key-with-an-editor-extension.md
-        - name: "Procédure pas à pas\_: Accès à l’objet DTE à partir d’une extension de l’éditeur"
+        - name: "Procédure pas à pas\_: accès à l’objet DTE à partir d’une extension de l’éditeur"
           href: walkthrough-accessing-the-dte-object-from-an-editor-extension.md
     - name: Créer des éditeurs et des concepteurs personnalisés
       items:
         - name: Créer des éditeurs et des concepteurs personnalisés
           href: creating-custom-editors-and-designers.md
-        - name: "Procédure pas à pas\_: Création d’un éditeur personnalisé"
+        - name: "Procédure pas à pas\_: création d’un éditeur personnalisé"
           href: walkthrough-creating-a-custom-editor.md
-        - name: "Procédure pas à pas\_: Ajout de fonctionnalités à un éditeur personnalisé"
+        - name: "Procédure pas à pas\_: ajout de fonctionnalités à un éditeur personnalisé"
           href: walkthrough-adding-features-to-a-custom-editor.md
         - name: Initialisation du concepteur et configuration des métadonnées
           href: designer-initialization-and-metadata-configuration.md
@@ -388,13 +388,13 @@
       items:
         - name: Création d’une page de démarrage personnalisée
           href: creating-a-custom-start-page.md
-        - name: "Procédure pas à pas\_: Ajout de code XAML personnalisé à la page de démarrage"
+        - name: "Procédure pas à pas\_: ajout de code XAML personnalisé à la page de démarrage"
           href: walkthrough-adding-custom-xaml-to-the-start-page.md
         - name: Ajout d’un contrôle utilisateur à la page de démarrage
           href: adding-user-control-to-the-start-page.md
         - name: Ajout de commandes Visual Studio à une page de démarrage
           href: adding-visual-studio-commands-to-a-start-page.md
-        - name: "Procédure pas à pas\_: Enregistrement des paramètres utilisateur sur une page de démarrage"
+        - name: "Procédure pas à pas\_: enregistrement des paramètres utilisateur sur une page de démarrage"
           href: walkthrough-saving-user-settings-on-a-start-page.md
         - name: Déploiement de pages de démarrage personnalisées
           href: deploying-custom-start-pages.md
@@ -494,11 +494,11 @@
       href: vsix-project-template.md
     - name: Bien démarrer avec le modèle de projet VSIX
       href: getting-started-with-the-vsix-project-template.md
-    - name: "Procédure pas à pas\_: Publication d'une extension Visual Studio"
+    - name: "Procédure pas à pas\_: publication d’une extension Visual Studio"
       href: walkthrough-publishing-a-visual-studio-extension.md
-    - name: "Procédure pas à pas\_: Publication d’une extension Visual Studio par le biais de la ligne de commande"
+    - name: "Procédure pas à pas\_: publication d’une extension Visual Studio par le biais de la ligne de commande"
       href: walkthrough-publishing-a-visual-studio-extension-via-command-line.md
-    - name: "Procédure pas à pas\_: Créer un pack d’extensions"
+    - name: 'Procédure pas à pas : créer un pack d''extensions'
       href: walkthough-create-extension-pack.md
     - name: Ajouter une dépendance à un package VSIX
       href: how-to-add-a-dependency-to-a-vsix-package.md
@@ -634,7 +634,7 @@
               href: usedcommands-element.md
             - name: Élément UsedCommand
               href: usedcommand-element.md
-        - name: 'Parent, élément'
+        - name: Élément parent
           href: parent-element.md
         - name: Élément Icon
           href: icon-element.md
@@ -784,7 +784,7 @@
           href: capability-flags.md
         - name: Indicateurs de bits utilisés par des commandes spécifiques
           href: bitflags-used-by-specific-commands.md
-        - name: Codes d'erreur
+        - name: Codes d’erreur
           href: error-codes.md
         - name: Chaînes utilisées comme clés pour rechercher un plug-in de contrôle de code source
           href: strings-used-as-keys-for-finding-a-source-control-plug-in.md
@@ -828,11 +828,11 @@
       href: creating-a-software-development-kit.md
     - name: SDK et package NuGet
       href: nuget-versus-sdk-references.md
-    - name: "Procédure pas à pas\_: Création d’un Kit de développement logiciel (SDK) à l’aide de C# ou de Visual Basic"
+    - name: "Procédure pas à pas\_: création d’un SDK en C# ou Visual Basic"
       href: walkthrough-creating-an-sdk-using-csharp-or-visual-basic.md
-    - name: "Procédure pas à pas\_: Création d’un Kit de développement logiciel (SDK) à l’aide de C++"
+    - name: "Procédure pas à pas\_: création d’un SDK en C++"
       href: walkthrough-creating-an-sdk-using-cpp.md
-    - name: "Procédure pas à pas\_: Création d’un Kit de développement logiciel (SDK) à l’aide de JavaScript"
+    - name: "Procédure pas à pas\_: création d’un SDK en JavaScript"
       href: walkthrough-creating-an-sdk-using-javascript.md
 - name: Extensibilité de .NET Compiler Platform (« Roslyn »)
   items:

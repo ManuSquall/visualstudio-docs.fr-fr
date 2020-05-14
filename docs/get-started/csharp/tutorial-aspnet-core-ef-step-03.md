@@ -1,5 +1,5 @@
 ---
-title: 'Étape 3 : Utiliser des données dans une application ASP.NET Core'
+title: 'Étape 3 : Travailler avec les données de votre application de base ASP.NET'
 description: Commencez à travailler avec les données à l’aide d’Entity Framework Core dans votre application web ASP.NET Core avec ce tutoriel vidéo et des instructions détaillées.
 ms.custom: get-started
 ms.date: 03/31/2019
@@ -9,21 +9,21 @@ monikerRange: vs-2019
 ms.topic: tutorial
 ms.devlang: CSharp
 author: ardalis
-ms.author: tglee
+ms.author: ornella
 manager: jillfra
 dev_langs:
 - CSharp
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: e27155cd6504ab66cf52c4ddb0659a84936037a0
-ms.sourcegitcommit: 2bbcba305fd0f8800fd3d9aa16f7647ee27f3a4b
-ms.translationtype: HT
+ms.openlocfilehash: cef0db7e5615d08fb5b22c38604a24124c853ebd
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/17/2019
-ms.locfileid: "68300586"
+ms.lasthandoff: 03/20/2020
+ms.locfileid: "77580070"
 ---
-# <a name="step-3-work-with-data-using-entity-framework"></a>Étape 3 : Travailler avec des données à l’aide d’Entity Framework
+# <a name="step-3-work-with-data-using-entity-framework"></a>Étape 3 : Travailler avec les données à l’aide du Cadre d’entité
 
 Suivez ces étapes pour commencer à travailler avec des données à l’aide d’Entity Framework Core dans votre application web ASP.NET Core.
 
@@ -31,7 +31,7 @@ _Regardez cette vidéo et suivez la procédure pour ajouter des données à votr
 
 > [!VIDEO https://www.youtube.com/embed/dulJCwNrqhM]
 
-## <a name="open-your-project"></a>Ouvrir le projet
+## <a name="open-your-project"></a>Ouvrir votre projet
 
 Si vous avez suivi ces vidéos, ouvrez le projet d’application web que vous avez créé dans la section précédente. Si vous commencez ici, créez un projet et choisissez **Application web ASP.NET**, puis **Application web**. Conservez les autres options par défaut.
 
@@ -54,7 +54,7 @@ public class Game
 
 Nous sommes maintenant prêts à créer les pages qui serviront à gérer notre bibliothèque de jeux. Si l’entreprise peut sembler colossale, elle est en fait extrêmement simple. Nous devons d’abord décider où devra se trouver cette fonctionnalité dans notre application. Ouvrez le dossier Pages dans le projet web et ajoutez-y un nouveau dossier. Appelez-le *Games*.
 
-Maintenant, cliquez avec le bouton droit sur Games et choisissez **Ajouter** > **Nouvel élément généré automatiquement**. Choisissez Razor Pages avec l’option **Entity Framework (CRUD)** . CRUD signifie « create, read, update, delete » pour « créer, lire, mettre à jour, supprimer » ; ce modèle créera des pages pour chacune de ces opérations (y compris une page « Tout lister » et une page « Afficher les détails d’un élément »).
+Maintenant, cliquez à droite sur les jeux et choisissez **Ajouter** > **un nouvel article échafaudé**. Choisissez Razor Pages avec l’option **Entity Framework (CRUD)**. CRUD signifie « create, read, update, delete » pour « créer, lire, mettre à jour, supprimer » ; ce modèle créera des pages pour chacune de ces opérations (y compris une page « Tout lister » et une page « Afficher les détails d’un élément »).
 
 ![Visual Studio 2019 ASP.NET Core – Ajouter des pages générées automatiquement](media/vs-2019/vs2019-add-scaffold.png)
 
@@ -131,9 +131,9 @@ Il n’y a rien d’autre à faire pour commencer à travailler avec des donnée
 
 Dans la vidéo suivante, vous allez apprendre à ajouter la prise en charge de l’API web à votre application.
 
-[Étape 4 : Exposer une API web à partir d’une application ASP.NET Core](tutorial-aspnet-core-ef-step-04.md)
+[Étape 4 : Exposer une API web à partir de votre application de base ASP.NET](tutorial-aspnet-core-ef-step-04.md)
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Razor Pages avec Entity Framework Core dans ASP.NET Core](/aspnet/core/data/ef-rp/intro?view=aspnetcore-2.1&tabs=visual-studio)
+- [Pages Razor avec le noyau de cadre d’entité dans ASP.NET noyau](/aspnet/core/data/ef-rp/intro?view=aspnetcore-2.1&tabs=visual-studio)
 - [Razor Pages ASP.NET Core avec EF Core](/aspnet/core/data/?view=aspnetcore-2.1)

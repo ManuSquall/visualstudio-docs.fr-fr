@@ -1,5 +1,5 @@
 ---
-title: IDebugField::GetTypeInfo | Microsoft Docs
+title: IDebugField::GetTypeInfo - France Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugField::GetTypeInfo method
 ms.assetid: bb5acfa3-04c3-4088-be84-9ff8926cd16f
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: fc48442e27315e289c812c14e0ae70d8b8fd437a
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: faa3464f0396999f36604aa88c429235d4849688
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66333116"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80728781"
 ---
 # <a name="idebugfieldgettypeinfo"></a>IDebugField::GetTypeInfo
-Cette méthode obtient indépendant du type d’informations sur le symbole ou d’un type.
+Cette méthode obtient des informations de type-indépendant sur le symbole ou le type.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -41,15 +41,15 @@ int GetTypeInfo(
 
 ## <a name="parameters"></a>Paramètres
 `pTypeInfo`\
-[out] Retourne les informations de type dans la liste fournie [TYPE_INFO](../../../extensibility/debugger/reference/type-info.md) structure.
+[out] Retourne les informations de type dans la structure [TYPE_INFO](../../../extensibility/debugger/reference/type-info.md) fournie.
 
 ## <a name="return-value"></a>Valeur de retour
- En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.
+ En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
 ## <a name="remarks"></a>Notes
- Indépendant du type informations inclut, par exemple, le domaine d’application, le module et la classe qui contient le symbole.
+ Les informations de type indépendants comprendraient, par exemple, l’AppDomain, le module et la classe qui contient le symbole.
 
 ## <a name="see-also"></a>Voir aussi
-- [GetType](../../../extensibility/debugger/reference/idebugfield-gettype.md)
+- [Gettype](../../../extensibility/debugger/reference/idebugfield-gettype.md)
 - [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)
 - [TYPE_INFO](../../../extensibility/debugger/reference/type-info.md)

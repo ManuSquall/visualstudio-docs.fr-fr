@@ -1,35 +1,35 @@
 ---
-title: Implémentation de commandes | Microsoft Docs
+title: Mise en œuvre du commandement (fr) Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - commands, implementation
 ms.assetid: c782175c-cce4-4bd0-8374-4a897ceb1b3d
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: fbd0a9a1886bc1f8743ac8919bcc9cb39559dd19
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: c7a536120c81c154cf894717a2af6a4e048d56e2
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67824938"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80709577"
 ---
-# <a name="command-implementation"></a>Implémentation de la commande
-Pour implémenter une commande dans un VSPackage, vous devez effectuer les tâches suivantes :
+# <a name="command-implementation"></a>Mise en œuvre du commandement
+Pour implémenter une commande dans un VSPackage, vous devez effectuer les tâches suivantes :
 
-1. Dans le *.vsct* de fichiers, configurer un groupe de commandes et puis ajoutez la commande à celui-ci. Pour plus d’informations, consultez [fichiers Visual Studio command table (.vsct)](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md).
+1. Dans le fichier *.vsct,* configurez un groupe de commandement, puis ajoutez la commande à elle. Pour plus d’informations, consultez [les fichiers visual Studio table de commande (.vsct).](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
 
-2. Inscrire la commande avec Visual Studio.
+2. Enregistrez la commande auprès de Visual Studio.
 
 3. Implémenter la commande.
 
-Les sections suivantes expliquent comment inscrire et implémenter des commandes.
+Les sections suivantes expliquent comment enregistrer et mettre en œuvre les commandes.
 
-## <a name="register-commands-with-visual-studio"></a>Commandes de s’inscrire avec Visual Studio
- Si votre commande doit apparaître dans un menu, vous devez ajouter le <xref:Microsoft.VisualStudio.Shell.ProvideMenuResourceAttribute> à votre VSPackage et les utiliser en tant que valeur le nom du menu ou son ID de ressource.
+## <a name="register-commands-with-visual-studio"></a>Enregistrez les commandes avec Visual Studio
+ Si votre commande doit apparaître sur un <xref:Microsoft.VisualStudio.Shell.ProvideMenuResourceAttribute> menu, vous devez ajouter le à votre VSPackage, et utiliser comme une valeur soit le nom du menu ou son ID de ressource.
 
 ```
 [ProvideMenuResource("Menus.ctmenu", 1)]
@@ -39,7 +39,7 @@ Les sections suivantes expliquent comment inscrire et implémenter des commandes
 
 ```
 
- En outre, vous devez inscrire la commande avec le <xref:Microsoft.VisualStudio.Shell.OleMenuCommandService>. Vous pouvez obtenir ce service à l’aide de la <xref:Microsoft.VisualStudio.Shell.Package.GetService%2A> méthode si votre VSPackage est dérivée de <xref:Microsoft.VisualStudio.Shell.Package>.
+ En outre, vous devez enregistrer <xref:Microsoft.VisualStudio.Shell.OleMenuCommandService>la commande auprès de la . Vous pouvez obtenir ce <xref:Microsoft.VisualStudio.Shell.Package.GetService%2A> service en utilisant la méthode <xref:Microsoft.VisualStudio.Shell.Package>si votre VSPackage est dérivé de .
 
 ```
 OleMenuCommandService mcs = GetService(typeof(IMenuCommandService)) as OleMenuCommandService;
@@ -53,43 +53,43 @@ if ( null != mcs )
 
 ```
 
-## <a name="implement-commands"></a>Commandes de l’implémenter
- Il existe plusieurs manières d’implémenter des commandes. Si vous souhaitez une commande de menu statique, qui est une commande qui s’affiche toujours la même façon et dans le même menu, créer la commande à l’aide de <xref:System.ComponentModel.Design.MenuCommand> comme indiqué dans les exemples dans la section précédente. Pour créer une commande statique, vous devez fournir un gestionnaire d’événements qui est chargé d’exécuter la commande. Étant donné que la commande est toujours activée et visible, il est inutile de fournir son état à Visual Studio. Si vous souhaitez modifier l’état d’une commande selon certaines conditions, vous pouvez créer la commande comme une instance de la <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> classe et, dans son constructeur, fournissez un gestionnaire d’événements pour exécuter la commande et un `QueryStatus` gestionnaire pour notifier Visual Studio lorsque l’état de la commande change. Vous pouvez également implémenter <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> comme partie d’une classe de commande ou, vous pouvez implémenter <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> si vous fournissez une commande en tant que partie d’un projet. Les deux interfaces et la <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> classe tous les avoir des méthodes de notification de Visual Studio d’un changement de l’état d’une commande et d’autres méthodes qui fournissent l’exécution de la commande.
+## <a name="implement-commands"></a>Mettre en œuvre des commandes
+ Il existe un certain nombre de façons de mettre en œuvre les commandes. Si vous voulez une commande de menu statique, qui est une commande qui apparaît <xref:System.ComponentModel.Design.MenuCommand> toujours de la même manière et sur le même menu, créez la commande en utilisant comme indiqué dans les exemples de la section précédente. Pour créer une commande statique, vous devez fournir un gestionnaire d’événements qui est responsable de l’exécution de la commande. Parce que la commande est toujours activée et visible, vous n’avez pas à fournir son statut à Visual Studio. Si vous souhaitez modifier l’état d’une commande en fonction de certaines <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> conditions, vous pouvez créer la commande en tant `QueryStatus` qu’instance de la classe et, dans son constructeur, fournir un gestionnaire d’événement pour exécuter la commande et un gestionnaire pour aviser Visual Studio lorsque l’état de la commande change. Vous pouvez <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> également implémenter dans le <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> cadre d’une classe de commande ou, vous pouvez implémenter si vous fournissez une commande dans le cadre d’un projet. Les deux interfaces <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> et la classe ont toutes des méthodes qui informent Visual Studio d’un changement dans le statut d’une commande, et d’autres méthodes qui fournissent l’exécution de la commande.
 
- Lorsqu’une commande est ajoutée au service de commande, il est une chaîne de commandes. Lorsque vous implémentez les méthodes de notification et l’exécution de statut de la commande, veillez à fournir uniquement cette commande particulière et pour transmettre tous les autres cas, une session sur les autres commandes dans la chaîne. Si vous ne parvenez pas à passer la commande (généralement en retournant <xref:Microsoft.VisualStudio.OLE.Interop.Constants.OLECMDERR_E_NOTSUPPORTED>), Visual Studio peut cesser de fonctionner correctement.
+ Lorsqu’une commande est ajoutée au service de commandement, elle devient l’une d’une chaîne de commandes. Lorsque vous implémentez les méthodes de notification et d’exécution de l’état pour la commande, prenez soin de fournir uniquement cette commande particulière et de transmettre tous les autres cas aux autres commandes de la chaîne. Si vous ne réussissez pas à <xref:Microsoft.VisualStudio.OLE.Interop.Constants.OLECMDERR_E_NOTSUPPORTED>transmettre la commande (généralement en revenant), Visual Studio peut cesser de fonctionner correctement.
 
 ## <a name="querystatus-methods"></a>Méthodes QueryStatus
- Si vous implémentez soit le <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> méthode ou le <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy.QueryStatusCommand%2A> (méthode), recherchez le GUID de la commande jeu auquel appartient la commande et l’ID de la commande. Respectez les règles ci-dessous.
+ Si vous implémentez <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> la <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy.QueryStatusCommand%2A> méthode ou la méthode, vérifiez le GUID de l’ensemble de commande auquel appartient la commande et l’ID de la commande. Respectez les règles ci-dessous.
 
-- Si le GUID n’est pas reconnu, votre implémentation de soit la méthode doit retourner <xref:Microsoft.VisualStudio.OLE.Interop.Constants.OLECMDERR_E_UNKNOWNGROUP>.
+- Si le GUID n’est pas reconnu, <xref:Microsoft.VisualStudio.OLE.Interop.Constants.OLECMDERR_E_UNKNOWNGROUP>votre mise en œuvre de l’une ou l’autre méthode doit revenir .
 
-- Si votre implémentation de deux méthodes reconnaît le GUID, mais n’a pas implémenté la commande, la méthode doit retourner <xref:Microsoft.VisualStudio.OLE.Interop.Constants.OLECMDERR_E_NOTSUPPORTED>.
+- Si votre mise en œuvre de l’une ou l’autre méthode reconnaît le GUID mais n’a pas mis en œuvre la commande, alors la méthode devrait revenir <xref:Microsoft.VisualStudio.OLE.Interop.Constants.OLECMDERR_E_NOTSUPPORTED>.
 
-- Si votre implémentation de deux méthodes reconnaît le GUID et la commande, la méthode doit définir le champ Indicateurs de commande de chaque commande (dans le `prgCmds` paramètre) à l’aide de ce qui suit <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF> indicateurs :
+- Si votre mise en œuvre de l’une ou l’autre méthode reconnaît à la `prgCmds` fois le GUID et la commande, alors la méthode doit définir le champ de commande-drapeaux de chaque commande (dans le paramètre) en utilisant les drapeaux suivants: <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF>
 
-  - `OLECMDF_SUPPORTED`: La commande est prise en charge.
+  - `OLECMDF_SUPPORTED`: La commande est soutenue.
 
   - `OLECMDF_INVISIBLE`: La commande ne doit pas être visible.
 
-  - `OLECMDF_LATCHED`: La commande est activée et a été activée.
+  - `OLECMDF_LATCHED`: La commande est bascule et semble avoir été vérifiée.
 
   - `OLECMDF_ENABLED`: La commande est activée.
 
-  - `OLECMDF_DEFHIDEONCTXTMENU`: La commande doit être masquée s’il apparaît dans un menu contextuel.
+  - `OLECMDF_DEFHIDEONCTXTMENU`: La commande doit être cachée si elle apparaît sur un menu raccourci.
 
-  - `OLECMDF_NINCHED`: La commande est un contrôleur de menu et n’est pas activée, mais sa liste déroulante n’est pas vide et qu’il est toujours disponible. (Cet indicateur est rarement utilisé.)
+  - `OLECMDF_NINCHED`: La commande est un contrôleur de menu et n’est pas activée, mais sa liste de menu déroulant n’est pas vide et est toujours disponible. (Ce drapeau est rarement utilisé.)
 
-- Si la commande a été définie dans le *.vsct* de fichiers avec le `TextChanges` indicateur, définissez les paramètres suivants :
+- Si la commande a été définie dans `TextChanges` le fichier *.vsct* avec le drapeau, définissez les paramètres suivants :
 
-  - Définir le `rgwz` élément de la `pCmdText` paramètre vers le nouveau texte de la commande.
+  - Définissez `rgwz` l’élément du `pCmdText` paramètre au nouveau texte de la commande.
 
-  - Définir le `cwActual` élément de la `pCmdText` paramètre à la taille de la chaîne de commande.
+  - Définissez `cwActual` l’élément du `pCmdText` paramètre à la taille de la chaîne de commande.
 
-En outre, assurez-vous que le contexte actuel n’est pas une fonction d’automatisation, sauf si votre commande est conçu spécifiquement pour gérer les fonctions d’automatisation.
+Aussi, assurez-vous que le contexte actuel n’est pas une fonction d’automatisation, sauf si votre commande est spécifiquement destinée à gérer les fonctions d’automatisation.
 
-Pour indiquer que vous prenez en charge une commande particulière, retourner <xref:Microsoft.VisualStudio.VSConstants.S_OK>. Pour toutes les autres commandes, retourner <xref:Microsoft.VisualStudio.OLE.Interop.Constants.OLECMDERR_E_NOTSUPPORTED>.
+Pour indiquer que vous soutenez <xref:Microsoft.VisualStudio.VSConstants.S_OK>une commande particulière, retour . Pour toutes les autres <xref:Microsoft.VisualStudio.OLE.Interop.Constants.OLECMDERR_E_NOTSUPPORTED>commandes, retour .
 
-Dans l’exemple suivant, la `QueryStatus` méthode tout d’abord permet de s’assurer que le contexte n’est pas une fonction d’automation, puis recherche le bon GUID du jeu de commandes et l’ID de commande. La commande elle-même est définie sur activé et la prise en charge. Aucune autre commande n’est pris en charge.
+Dans l’exemple `QueryStatus` suivant, la méthode permet d’abord de s’assurer que le contexte n’est pas une fonction d’automatisation, puis trouve le GUID et l’ID de commande corrects. La commande elle-même est prête à être activée et soutenue. Aucune autre commande n’est soutenue.
 
 ```csharp
 public int QueryStatus(ref Guid pguidCmdGroup, uint cCmds, OLECMD[] prgCmds, IntPtr pCmdText)
@@ -111,9 +111,9 @@ public int QueryStatus(ref Guid pguidCmdGroup, uint cCmds, OLECMD[] prgCmds, Int
 ```
 
 ## <a name="execution-methods"></a>Méthodes d’exécution
- Implémentation de la `Exec` méthode s’apparente à l’implémentation de la `QueryStatus` (méthode). Tout d’abord, assurez-vous que le contexte n’est pas une fonction d’automatisation. Ensuite, le test pour le GUID et ID de commande. Si le GUID ou ID de commande n’est pas reconnu, retournez <xref:Microsoft.VisualStudio.OLE.Interop.Constants.OLECMDERR_E_NOTSUPPORTED>.
+ La mise `Exec` en œuvre `QueryStatus` de la méthode ressemble à la mise en œuvre de la méthode. Tout d’abord, assurez-vous que le contexte n’est pas une fonction d’automatisation. Ensuite, testez pour le GUID et l’ID de commande. Si l’ID GUID ou commande <xref:Microsoft.VisualStudio.OLE.Interop.Constants.OLECMDERR_E_NOTSUPPORTED>n’est pas reconnu, retour .
 
- Pour gérer la commande, exécuter et retourner <xref:Microsoft.VisualStudio.VSConstants.S_OK> si l’exécution réussit. Votre commande est responsable de la détection d’erreur et de notification ; Par conséquent, retourner un code d’erreur si l’exécution échoue. L’exemple suivant montre comment la méthode d’exécution doit être implémentée.
+ Pour gérer la commande, <xref:Microsoft.VisualStudio.VSConstants.S_OK> exécutez-la et revenez si l’exécution réussit. Votre commande est responsable de la détection et de la notification des erreurs; par conséquent, retournez un code d’erreur en cas d’échec de l’exécution. L’exemple suivant montre comment la méthode d’exécution doit être mise en œuvre.
 
 ```csharp
 public int Exec(ref Guid pguidCmdGroup, uint nCmdID, uint nCmdexecopt, IntPtr pvaIn, IntPtr pvaOut)

@@ -1,5 +1,5 @@
 ---
-title: BP_COND_STYLE | Microsoft Docs
+title: BP_COND_STYLE Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - BP_COND_STYLE enumeration
 ms.assetid: a93b1412-f447-48a1-af9d-38f3dbb3092f
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: ded3d31f9be2d0a02a238ead4bc989cc21b4922a
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: ca704ca186308ea9e44c4fa7edc6617cbac806eb
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66351823"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80738117"
 ---
-# <a name="bpcondstyle"></a>BP_COND_STYLE
-Spécifie le style de condition de point d’arrêt pour en attente et de points d’arrêt liés.
+# <a name="bp_cond_style"></a>BP_COND_STYLE
+Spécifie le style d’état de point d’arrêt pour les points d’arrêt en attente et liés.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -46,23 +46,23 @@ public enum enum_BP_COND_STYLE {
 
 ## <a name="fields"></a>Champs
 `BP_COND_NONE`\
-Se déclenche le point d’arrêt lors de la position du point d’arrêt est atteint. Aucune condition de point d’arrêt spécifiée.
+Allume le point d’arrêt lorsque la position du point d’arrêt est atteinte. Aucune condition de point d’arrêt spécifiée.
 
 `BP_COND_WHEN_TRUE`\
-Se déclenche le point d’arrêt uniquement lorsque l’expression conditionnelle associé au point d’arrêt a la valeur `true`.
+Les feux du point d’arrêt seulement lorsque l’expression conditionnelle associée au point d’arrêt s’évalue à `true`.
 
 `BP_COND_WHEN_CHANGED`\
-Se déclenche le point d’arrêt uniquement lorsque le point d’arrêt associé à la valeur de l’expression conditionnelle a changé dans son évaluation précédente.
+Le point d’arrêt n’est le point d’arrêt que lorsque la valeur de l’expression conditionnelle associée au point d’arrêt a changé par rapport à son évaluation précédente.
 
 ## <a name="remarks"></a>Notes
-Utilisé pour le `styleCondition` membre de la [BP_CONDITION](../../../extensibility/debugger/reference/bp-condition.md) structure.
+Utilisé pour `styleCondition` le membre de la structure [BP_CONDITION.](../../../extensibility/debugger/reference/bp-condition.md)
 
-## <a name="requirements"></a>Configuration requise
-En-tête : msdbg.h
+## <a name="requirements"></a>Spécifications
+En-tête: msdbg.h
 
-Espace de noms : Microsoft.VisualStudio.Debugger.Interop
+Namespace: Microsoft.VisualStudio.Debugger.Interop
 
-Assembly : Microsoft.VisualStudio.Debugger.Interop.dll
+Assemblage: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>Voir aussi
 - [Énumérations](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)

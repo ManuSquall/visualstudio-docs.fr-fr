@@ -14,15 +14,15 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 9f706acfbaee7c6170f74bc655f9172ff6bdd3b4
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75592267"
 ---
 # <a name="how-to-change-between-member-notation-and-association-notation-in-class-designer"></a>Guide pratique pour changer la notation entre les membres et les associations dans le Concepteur de classes
 
-Dans le **Concepteur de classes**, vous pouvez changer la façon dont le diagramme de classes représente une relation d’association entre deux types, en passant de la notation membre à la notation association et vice versa. Les membres affichés sous forme de lignes d’association fournissent souvent une visualisation utile pour comprendre la relation entre les types.
+Dans **Class Designer**, vous pouvez changer la façon dont le diagramme de classe représente une relation d’association entre deux types de la notation des membres à la notation d’association et vice versa. Les membres affichés sous forme de lignes d’association fournissent souvent une visualisation utile pour comprendre la relation entre les types.
 
 > [!NOTE]
 > Les relations d’association peuvent être représentées en tant que champ ou propriété de membre. Pour que vous puissiez passer de la notation membre à la notation association, un type doit avoir un membre d’un autre type. Pour que vous puissiez passer de la notation association à la notation membre, les deux types doivent être connectés par une ligne d’association. Pour plus d’informations, consultez [Guide pratique pour créer des associations entre les types](how-to-create-associations-between-types.md). Si votre projet contient plusieurs diagrammes de classes, les modifications que vous apportez à la façon dont un diagramme affiche les relations d’association n’affectent que ce diagramme. Pour modifier la façon dont un autre diagramme affiche les relations d’association, ouvrez ou affichez le diagramme et effectuez les étapes suivantes.
@@ -46,5 +46,5 @@ Sur le diagramme de classes, cliquez avec le bouton droit sur la ligne d’assoc
 
 - [Guide pratique pour créer l’héritage entre les types](how-to-create-inheritance-between-types.md)
 - [Guide pratique pour afficher l’héritage entre des types](how-to-view-inheritance-between-types.md)
-- [Affichage des types et des relations](designing-and-viewing-classes-and-types.md)
+- [Types et relations d’affichage](designing-and-viewing-classes-and-types.md)
 - [Guide pratique pour visualiser une association de collections](how-to-visualize-a-collection-association.md)

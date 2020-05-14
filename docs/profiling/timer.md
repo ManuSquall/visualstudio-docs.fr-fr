@@ -10,14 +10,14 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: e1bed2715421948385a5b7eb1ddbbac064f3288b
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74778113"
 ---
 # <a name="timer"></a>Minuterie
-L’option **Timer** de *VSPerfCmd.exe* définit l’événement de profilage qui est échantillonné aux cycles d’horloge du processeur et change éventuellement le nombre de cycles dans un intervalle d’échantillonnage (la valeur par défaut étant 10 000 000). Sur un processeur d'1 GHz (un gigahertz), 10 000 000 de cycles d'horloge correspondent environ à 100 échantillons par seconde. Vous pouvez spécifier au minimum 50 000 cycles.
+*L’option VSPerfCmd.exe* **Timer** définit l’événement de profilage qui est échantillonné aux cycles d’horloge du processeur et modifie d’option le nombre de cycles dans un intervalle d’échantillonnage par défaut de 10 000 000. Sur un processeur d'1 GHz (un gigahertz), 10 000 000 de cycles d'horloge correspondent environ à 100 échantillons par seconde. Vous pouvez spécifier au minimum 50 000 cycles.
 
  **Timer** peut être utilisé seulement quand vous utilisez la méthode de profilage par échantillonnage, et seulement sur une ligne de commande qui contient aussi l’option **Launch** ou **Attach**.
 
@@ -31,28 +31,28 @@ L’option **Timer** de *VSPerfCmd.exe* définit l’événement de profilage qu
 VSPerfCmd.exe {/Launch:AppName|/Attach:PID} /Timer[:Cycles] [Options]
 ```
 
-#### <a name="parameters"></a>Parameters
+#### <a name="parameters"></a>Paramètres
  `Cycles` Valeur entière qui spécifie le nombre de cycles d’horloge du processeur dans un intervalle d’échantillonnage. Si `Cycles` n'est pas spécifié, l'intervalle prend la valeur 10 000 000. Spécifiez la valeur sans espace.
 
 ## <a name="required-options"></a>Options obligatoires
  Vous pouvez spécifier **Timer** seulement sur une ligne de commande qui contient une des options suivantes.
 
- **Launch :** `AppName` démarre le profileur et l’application spécifiées par `AppName`.
+ **Lancement:** `AppName` Démarre le profileur et `AppName`l’application spécifiée par .
 
- **Attacher :** `PID` attache le profileur au processus spécifié par l’ID de processus (`PID`).
+ **Attacher :** `PID` Attache le profileur au processus spécifié`PID`par l’ID du processus ().
 
 ## <a name="invalid-options"></a>Options non valides
  Vous ne pouvez pas spécifier les options suivantes sur la même ligne de commande que **Timer**.
 
- **PF**[ **:** `Events`] Définit l’événement d’échantillonnage en fonction des défauts de page et affecte éventuellement à l’intervalle d’échantillonnage la valeur `Events`. L'intervalle de défaut de page par défaut est 10.
+ **PF**[**:**`Events`] Définit l’événement d’échantillonnage aux `Events`défauts de page et définit l’intervalle d’échantillonnage à . L'intervalle de défaut de page par défaut est 10.
 
- **Sys**[ **:** `Events`] Définit l’événement d’échantillonnage en fonction des appels du système d’exploitation et affecte éventuellement à l’intervalle d’échantillonnage la valeur `Events`. L'intervalle Sys par défaut est 10.
+ **Sys**[**:**`Events`] définit l’événement d’échantillonnage aux `Events`appels du système d’exploitation et définit l’intervalle d’échantillonnage à . L'intervalle Sys par défaut est 10.
 
- **Counter**[ **:** `Name,Reload,FriendlyName`] Définit l’événement d’échantillonnage en fonction du compteur de performances du CPU spécifié par `Name`, et affecte éventuellement à l’intervalle d’échantillonnage la valeur `Reload`.
+ **Compteur**[**:**`Name,Reload,FriendlyName`] définit l’événement d’échantillonnage au compteur de performance de processeur spécifié par `Name` et définit l’intervalle d’échantillonnage à `Reload`.
 
- **GC**[ **:** {**Allocation**&#124;**Lifetime**}] Collecte les données de mémoire .NET. Par défaut (**Allocation**), les données sont collectées à chaque événement d’allocation mémoire. Quand le paramètre **Lifetime** est spécifié, les données sont aussi collectées à chaque événement de garbage collection.
+ **GC**[**:**{**Allocation**&#124;**Lifetime**}] Collecte les données de mémoire .NET. Par défaut **(Allocation**), les données sont collectées à chaque événement d’allocation de mémoire. Lorsque le **paramètre à vie** est spécifié, les données sont également recueillies lors de chaque événement de collecte des ordures.
 
-## <a name="example"></a>Exemple
+## <a name="example"></a> Exemple
  Cet exemple illustre comment définir l'intervalle d'échantillonnage du profileur sur 1 000 000 de cycles du processeur.
 
 ```cmd
@@ -61,7 +61,7 @@ VSPerfCmd.exe /Launch:TestApp.exe /Timer:1000000
 ```
 
 ## <a name="see-also"></a>Voir aussi
-- [VSPerfCmd](../profiling/vsperfcmd.md)
+- [Vsperfcmd](../profiling/vsperfcmd.md)
 - [Profiler des applications autonomes](../profiling/command-line-profiling-of-stand-alone-applications.md)
-- [Profiler des applications web ASP.NET](../profiling/command-line-profiling-of-aspnet-web-applications.md)
+- [Profil ASP.NET applications Web](../profiling/command-line-profiling-of-aspnet-web-applications.md)
 - [Profiler des services](../profiling/command-line-profiling-of-services.md)

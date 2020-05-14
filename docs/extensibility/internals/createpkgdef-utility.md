@@ -1,5 +1,5 @@
 ---
-title: Utilitaire CreatePkgDef | Microsoft Docs
+title: CreatePkgDef Utilitaire (fr) Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -8,23 +8,23 @@ helpviewer_keywords:
 - pkgdef
 - createpkgdef
 ms.assetid: c745cb76-47a6-49ff-9eed-16af0f748e35
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6ab5866949d6ccfa9f3b1037abf7801ce40ace3d
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 9f437eb3586dc16bb0b4b9eb60cd303eb90db6c3
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66332284"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80709168"
 ---
 # <a name="createpkgdef-utility"></a>Utilitaire CreatePkgDef
-Prend un fichier .dll pour une extension Visual Studio en tant que paramètre et crée un *.pkgdef* fichier pour accompagner le *.dll* fichier. Le *.pkgdef* fichier contient toutes les informations qui seraient sinon écrits dans le Registre système lors de l’extension est installée.
+Prend un fichier .dll pour une extension Visual Studio comme paramètre et crée un fichier *.pkgdef* pour accompagner le fichier *.dll.* Le fichier *.pkgdef* contient toutes les informations qui seraient autrement écrites au registre du système lorsque l’extension est installée.
 
 > [!NOTE]
-> La plupart des modèles de projet qui sont inclus automatiquement dans le SDK Visual Studio créent *.pkgdef* fichiers dans le cadre du processus de génération. Ce document est destiné à ceux qui souhaitent créer manuellement des packages, ou convertir des packages existants à utiliser *.pkgdef* déploiement.
+> La plupart des modèles de projet qui sont inclus dans le Visual Studio SDK créent automatiquement des fichiers *.pkgdef* dans le cadre du processus de construction. Ce document est destiné à ceux qui veulent créer des paquets manuellement, ou convertir les paquets existants pour utiliser le déploiement *.pkgdef.*
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -33,54 +33,54 @@ CreatePkgDef /out=<FileName> [/codebase] [/assembly] <AssemblyPath>
 ```
 
 ## <a name="arguments"></a>Arguments
-**/out=&lt;FileName&gt;** \
-Obligatoire. Définit le nom de la *.pkgdef* fichier de sortie &lt;FileName&gt;.
+**(out)&lt;Nom de fichier&gt;**\
+Obligatoire. Définit le nom du fichier de sortie &lt; *.pkgdef* à FileName&gt;.
 
-**/codebase**\
-Facultatif. Force l’inscription avec le **CodeBase** utilitaire.
+**/base de code**\
+facultatif. L’enregistrement des forces auprès de l’utilitaire **CodeBase.**
 
-**/assembly**\
-Force l’inscription avec le **Assembly** utilitaire.
+**/assemblage**\
+L’enregistrement des forces auprès de **l’entreprise de l’Assemblée.**
 
-**&lt;AssemblyPath&gt;** \
-Le chemin d’accès de la *.dll* fichier à partir de laquelle vous souhaitez générer le *.pkgdef*.
+**&lt;AssemblyPath (en)&gt;**\
+Le chemin du fichier *.dll* à partir duquel vous voulez générer le *.pkgdef*.
 
 ## <a name="remarks"></a>Notes
-Déploiement à l’aide de l’extension *.pkgdef* fichiers remplace la configuration requise du Registre des versions antérieures de Visual Studio.
+Le déploiement d’extension en utilisant des fichiers *.pkgdef* remplace les exigences de registre des versions antérieures de Visual Studio.
 
 ::: moniker range=">=vs-2019"
 
-Le *.pkgdef* fichiers doivent être installés dans un des emplacements suivants :
+Les fichiers *.pkgdef* doivent être installés dans l’un des endroits suivants :
 
-- *%LocalAppData%\Microsoft\Visual Studio\16.0\Extensions\\*
+- *%localappdata%-Microsoft-Visual Studio 16.0 -Extensions\\*
 
-- *%vsinstalldir%\Common7\IDE\Extensions\\*
+- *%vsinstalldir%-Common7-IDE-Extensions\\*
 
-Si le dossier d’installation est *%localappdata%\Microsoft\Visual Studio\16.0\Extensions\\* , l’extension n’est reconnue par Visual Studio, mais est désactivée par défaut. L’utilisateur peut activer l’extension à l’aide de **gérer les Extensions**.
+Si le dossier d’installation est *%localappdata%-Microsoft-Visual Studio-16.0 -Extensions\\*, l’extension est reconnue par Visual Studio mais est désactivée par défaut. L’utilisateur peut activer l’extension en utilisant **Manage Extensions**.
 
-Si le dossier d’installation est *%vsinstalldir%\Common7\IDE\Extensions\\* , l’extension est activée par défaut.
+Si le dossier d’installation est *%vsinstalldir%-Common7-IDE-Extensions\\*, l’extension est activée par défaut.
 
 > [!NOTE]
-> Le **gérer les Extensions** outil ne peut pas être utilisé pour accéder à une extension, sauf si elle est installée dans le cadre d’un package VSIX.
+> **L’outil Manage Extensions** ne peut pas être utilisé pour accéder à une extension à moins qu’il ne soit installé dans le cadre d’un package VSIX.
 
 ::: moniker-end
 
 ::: moniker range="vs-2017"
 
-Le *.pkgdef* fichiers doivent être installés dans un des emplacements suivants :
+Les fichiers *.pkgdef* doivent être installés dans l’un des endroits suivants :
 
-- *%LocalAppData%\Microsoft\Visual Studio\15.0\Extensions\\*
+- *%localappdata%-Microsoft-Visual Studio 15.0 -Extensions\\*
 
-- *%vsinstalldir%\Common7\IDE\Extensions\\*
+- *%vsinstalldir%-Common7-IDE-Extensions\\*
 
-Si le dossier d’installation est *%localappdata%\Microsoft\Visual Studio\15.0\Extensions\\* , l’extension n’est reconnue par Visual Studio, mais est désactivée par défaut. L’utilisateur peut activer l’extension à l’aide de **Extensions et mises à jour**.
+Si le dossier d’installation est *%localappdata%-Microsoft-Visual Studio-15.0 'Extensions\\*, l’extension est reconnue par Visual Studio, mais est désactivée par défaut. L’utilisateur peut activer l’extension en utilisant **des extensions et des mises à jour**.
 
-Si le dossier d’installation est *%vsinstalldir%\Common7\IDE\Extensions\\* , l’extension est activée par défaut.
+Si le dossier d’installation est *%vsinstalldir%-Common7-IDE-Extensions\\*, l’extension est activée par défaut.
 
 > [!NOTE]
-> Le **Extensions et mises à jour** outil ne peut pas être utilisé pour accéder à une extension, sauf si elle est installée dans le cadre d’un package VSIX.
+> **L’outil Extensions et Mises à jour** ne peut pas être utilisé pour accéder à une extension à moins qu’il ne soit installé dans le cadre d’un package VSIX.
 
 ::: moniker-end
 
 ## <a name="see-also"></a>Voir aussi
-- [Utilitaire CreateExpInstance](../../extensibility/internals/createexpinstance-utility.md)
+- [CréerExpInstance utilitaire](../../extensibility/internals/createexpinstance-utility.md)

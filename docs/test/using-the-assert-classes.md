@@ -12,10 +12,10 @@ ms.workload:
 - multiple
 author: mikejo5000
 ms.openlocfilehash: c36916c79bd783ed2c6ce960b068e85478b9971d
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75592046"
 ---
 # <a name="use-assert-classes-for-unit-testing"></a>Utiliser des classes Assert pour les tests unitaires
@@ -49,4 +49,4 @@ Pour vérifier qu’une exception censée être levée par une méthode dans le 
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Tests unitaires sur votre code](../test/unit-test-your-code.md)
+- [Test unitaire de votre code](../test/unit-test-your-code.md)

@@ -19,11 +19,11 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 8b5cacba328c48b682fe9069d8ab4a9ee21635db
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74779036"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79302902"
 ---
 # <a name="how-to-collect-performance-data-for-a-web-site"></a>Guide pratique pour collecter les données de performances d’un site web
 
@@ -40,7 +40,7 @@ Vous pouvez utiliser **l’Assistant Performance** pour collecter des données d
 
 - Certains utilisateurs peuvent refuser l’accès au profilage à tous les autres utilisateurs.
 
-  Pour plus d’informations, consultez [Profilage et sécurité Windows Vista](../profiling/profiling-and-windows-vista-security.md), ainsi que les options d’administration dans [VSPerfCmd](../profiling/vsperfcmd.md).
+  Pour plus d’informations, voir [Profiling et Windows Vista sécurité](../profiling/profiling-and-windows-vista-security.md) et les options ADMIN dans [VSPerfCmd](../profiling/vsperfcmd.md).
 
 ## <a name="to-profile-a-web-site-project"></a>Pour profiler un projet de site web
 
@@ -56,15 +56,15 @@ Vous pouvez utiliser **l’Assistant Performance** pour collecter des données d
 
     - Pour collecter l’interaction de couche, cochez la case **Activer le profilage d’interaction de couche** .
 
-    - Pour collecter des données du JavaScript s’exécutant dans les pages web, cochez la case **Profiler JavaScript** .
+    - Pour collecter des données à partir du JavaScript en cours d’exécution dans les pages Web, sélectionnez la case à cocher **Profil JavaScript.**
 
-6. Cliquez sur **Next**.
+6. Cliquez sur **Suivant**.
 
 7. Dans la quatrième page de l’Assistant, cliquez sur **Terminer**.
 
 8. Une session de performance est créée pour l’application [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)], et le site web est démarré dans le navigateur. Utilisez les fonctionnalités que vous voulez profiler, puis fermez le navigateur.
 
-     Le profileur génère le fichier de données et affiche la vue Résumé des données dans la fenêtre principale de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].
+     Le profileur génère le fichier de données et affiche la vue Résumé des données dans la fenêtre principale de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] .
 
 ## <a name="to-profile-a-web-site-without-opening-a-project-in-visual-studio"></a>Pour profiler un site web sans ouvrir un projet dans Visual Studio
 
@@ -78,13 +78,13 @@ Vous pouvez utiliser **l’Assistant Performance** pour collecter des données d
 
 5. Dans la zone **Quel URL ou chemin d’accès exécutera votre application web** sur la troisième page de l’Assistant, entrez l’URL de la page d’accueil de l’application, puis cliquez sur **Suivant**.
 
-   - Pour un site web basé sur un serveur (IIS), tapez une URL telle que **<`http://localhost/MySite/default.aspx`>** . Ceci déclenche le profilage de l’application [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] sur l’ordinateur local à la racine de l’application MonSite et le démarrage de la page defaut.aspx dans Internet Explorer pour démarrer la session.
+   - Pour un site Web basé sur un serveur ** < `http://localhost/MySite/default.aspx` **(IIS), tapez une URL telle que . Ceci déclenche le profilage de l’application [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] sur l’ordinateur local à la racine de l’application MonSite et le démarrage de la page defaut.aspx dans Internet Explorer pour démarrer la session.
 
    - Pour un site web basé sur un fichier, tapez un chemin comme file///**c:\sites_web\MonSite\defaut.aspx**. Cela déclenche le profilage de l’application [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] située sur c:\webSites\MySite et l’ouverture de la page `http://localhost:nnnn/MySite/default.aspx` dans Internet Explorer pour démarrer la session.
 
    - Pour les sites externes dont vous souhaitez collecter les données JavaScript, tapez une URL telle que `http://www.contoso.com`.
 
-     Pour plus d’informations, consultez les pages de propriétés un binaire cible [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)].
+     Pour plus d’informations, consultez les pages de propriétés un binaire cible [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] .
 
 6. Dans la troisième page de l’Assistant, vous pouvez choisir d’ajouter des données de profilage d’interaction de couche (TIP), des données du code JavaScript s’exécutant dans les pages web ou les deux.
 
@@ -92,17 +92,17 @@ Vous pouvez utiliser **l’Assistant Performance** pour collecter des données d
 
     - Pour collecter des données du code JavaScript s’exécutant dans les pages web, cochez la case **Profiler JavaScript**.
 
-7. Cliquez sur **Next**.
+7. Cliquez sur **Suivant**.
 
 8. Dans la quatrième page de l’Assistant, cliquez sur **Terminer**.
 
 9. Une session de performance est créée pour l’application ASP.NET et le site web est démarré dans le navigateur. Utilisez les fonctionnalités que vous voulez profiler, puis fermez le navigateur.
 
-     Le profileur génère le fichier de données et affiche la vue Résumé des données dans la fenêtre principale de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].
+     Le profileur génère le fichier de données et affiche la vue Résumé des données dans la fenêtre principale de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] .
 
 ## <a name="see-also"></a>Voir aussi
 
-[Vues d’ensemble](../profiling/overviews-performance-tools.md)
-[Configurer des sessions de performances](../profiling/configuring-performance-sessions.md)
-[Comprendre le fonctionnement des valeurs de données d’instrumentation](../profiling/understanding-instrumentation-data-values.md)
-[Comprendre le fonctionnement des valeurs de données d’échantillonnage](../profiling/understanding-sampling-data-values.md)
+[Aperçus](../profiling/overviews-performance-tools.md)
+[Configurer des sessions de](../profiling/configuring-performance-sessions.md)
+performance Comprendre les valeurs
+[de données d’instrumentation](../profiling/understanding-instrumentation-data-values.md)Comprendre les valeurs de données[d’échantillonnage](../profiling/understanding-sampling-data-values.md)

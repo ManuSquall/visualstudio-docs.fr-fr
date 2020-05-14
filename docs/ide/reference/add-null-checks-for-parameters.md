@@ -10,10 +10,10 @@ dev_langs:
 ms.workload:
 - dotnet
 ms.openlocfilehash: 573a9e56d3aedd55bc571eaaa363b42a53019566
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74782306"
 ---
 # <a name="add-null-checks-for-all-parameters"></a>Ajouter des contrôles de valeurs Null pour tous les paramètres 
@@ -22,17 +22,17 @@ Cette refactorisation s’applique à :
 
 - C# 
 
-**Ce qui suit :** Crée et ajoute des instructions `if` qui vérifient la valeur null de tous les paramètres non activés et Nullable. 
+**Quoi :** Crée et `if` ajoute des déclarations qui vérifient la nullité de tous les paramètres non vérifiés. 
 
-Dans les **cas suivants :** Vous souhaitez ajouter rapidement des vérifications de valeur null pour tous les paramètres de méthode applicables.
+**Quand :** Vous souhaitez ajouter rapidement des contrôles nuls pour tous les paramètres de méthode applicables.
 
-**Pourquoi :** L’écriture de vérifications de valeurs NULL pour un grand nombre de paramètres peut être longue et répétitive. L’utilisation de cette refactorisation est rapide et rend le programme plus robuste.  
+**Pourquoi:** L’écriture de vérifications nulles pour de nombreux paramètres peut prendre beaucoup de temps et répétitive. L’utilisation de cette refactorisation est rapide et rend le programme plus robuste.  
 
-## <a name="how-to"></a>Procédure 
+## <a name="how-to"></a>Procédures 
 
 1. Placez votre curseur sur n’importe quel paramètre de la méthode.
 
-2. Appuyez sur **Ctrl**+ **.** pour afficher le menu **Actions rapides et refactorisations**.
+2. Appuyez **sur Ctrl**+**.** pour afficher le menu **Actions rapides et refactorisations**.
 
    ![Actions rapides et refactorisations](media/add-null-checks-for-all-parameters.png)
    

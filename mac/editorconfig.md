@@ -7,10 +7,10 @@ ms.date: 05/06/2018
 ms.technology: vs-ide-install
 ms.assetid: 26A0DE31-2FBF-4E1B-99FB-083111AA1680
 ms.openlocfilehash: 6f6241c114d636cc8cb01cf5c4bf9ba2b5106701
-ms.sourcegitcommit: ba0fef4f5dca576104db9a5b702670a54a0fcced
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/07/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "73716889"
 ---
 # <a name="creating-and-editing-a-custom-editorconfig-file"></a>Création et modification d’un fichier EditorConfig personnalisé
@@ -52,7 +52,7 @@ EditorConfig prend également en charge les [conventions de codage](/visualstudi
 
     ![Élément de solution affiché dans le panneau Solutions](media/editorconfig-image1a.png)
 
-4. Modifiez le fichier. Exemple :
+4. Modifiez le fichier. Par exemple :
 
     ```EditorConfig
     # This file is the top-most EditorConfig file
@@ -79,13 +79,13 @@ Si votre projet ou solution contient déjà un fichier `.editorconfig`, aucune i
 
 Vous pouvez réutiliser un fichier `.editorconfig` existant dans votre projet. Pour ajouter un fichier existant, effectuez ce qui suit :
 
-1. Cliquez avec le bouton droit sur le dossier à ajouter, puis sélectionnez **Ajouter > Ajouter des fichiers**.
+1. Cliquez à droite sur le dossier que vous souhaitez l’ajouter et sélectionnez **Ajouter > Ajouter des fichiers**.
 
 2. Accédez au répertoire du fichier nécessaire.
 
 3. Les fichiers qui commencent par `.` (par exemple `.editorconfig`) sont des fichiers masqués dans macOS. Vous devez donc appuyer sur **Commande + Maj + .** pour rendre le fichier `.editorconfig` visible.
 
-4. Sélectionnez le fichier `.editorconfig`, puis cliquez sur **Ouvrir** :
+4. Sélectionnez `.editorconfig` le fichier et cliquez sur **Open**:
 
     ![fenêtre d’ajout de nouveau fichier](media/editorconfig-image3b.png)
 
@@ -122,15 +122,15 @@ csharp_new_line_before_open_brace = none
 
 Si vous affectez à `root` la valeur `true`, ce fichier est marqué comme étant au sommet du code base. Tout fichier `.editorconfig` situé plus haut dans le projet est ignoré, comme l’explique la section [Substituer les paramètres d’EditorConfig](#override-editorconfig-settings).
 
-Chaque section, dénotée par des crochets ( **[]** ), spécifie des informations sur les types de fichiers auxquels les propriétés suivantes se rapportent.
+Chaque section, dénotée par des crochets (**[]**), spécifie des informations sur les types de fichiers auxquels les propriétés suivantes se rapportent.
 
 Dans l’exemple ci-dessus, certains paramètres sont appliqués à tous les fichiers du projet tandis que d’autres sont ajoutés uniquement aux fichiers C#. Les captures d’écran ci-dessous montrent une section de code avant et après l’application des paramètres `.editorconfig` :
 
-**Avant** :
+**Avant**:
 
 ![Avant l’application des paramètres editorconfig](media/editorconfig-image4.png)
 
-**Après** :
+**Après**:
 
 ![Après l’application des paramètres editorconfig](media/editorconfig-image5.png)
 

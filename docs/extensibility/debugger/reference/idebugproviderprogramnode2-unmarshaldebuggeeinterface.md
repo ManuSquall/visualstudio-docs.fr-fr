@@ -1,5 +1,5 @@
 ---
-title: IDebugProviderProgramNode2::UnmarshalDebuggeeInterface | Microsoft Docs
+title: IDebugProgramProgramNode2::UnmarshalDebuggeeInterface (fr) Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProviderProgramNode2::UnmarshalDebuggeeInterface
 ms.assetid: 2e4653c5-10f1-493c-9973-f31d266c5d48
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 30163fe2dad42f42dd635eddcc2afdf3e1acaf0a
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 3c0f6e66b6585eafde656cd7be88d0c76bbb3f37
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66350041"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80720702"
 ---
 # <a name="idebugproviderprogramnode2unmarshaldebuggeeinterface"></a>IDebugProviderProgramNode2::UnmarshalDebuggeeInterface
-Obtient une interface spécifiée au-delà des limites de processus.
+Obtient une interface spécifiée au-delà des limites du processus.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -43,16 +43,16 @@ int UnmarshalDebuggeeInterface(
 
 ## <a name="parameters"></a>Paramètres
 `riid`\
-[in] GUID de l’interface à obtenir.
+[dans] GUID de l’interface à obtenir.
 
 `ppvObject`\
-[out] Retourne l’objet qui implémente l’interface souhaitée. [C++] Cela peut être casté directement au type d’interface souhaitée. [C#] utiliser le <xref:System.Runtime.InteropServices.Marshal.GetObjectForIUnknown%2A> méthode pour obtenir l’interface souhaitée.
+[out] Retourne l’objet implémentant l’interface désirée. Cela peut être jeté directement sur le type d’interface souhaité. [C] utiliser <xref:System.Runtime.InteropServices.Marshal.GetObjectForIUnknown%2A> la méthode pour obtenir l’interface désirée.
 
 ## <a name="return-value"></a>Valeur de retour
- En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.
+ En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
 ## <a name="remarks"></a>Notes
- Cette méthode est utilisée lorsque le moteur de débogage est en cours d’exécution le [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] espace de processus et le programme en cours de débogage s’exécute dans son propre espace de processus.
+ Cette méthode est utilisée lorsque le moteur [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] de déboguer fonctionne dans l’espace de processus et le programme étant débogé fonctionne dans son propre espace de processus.
 
 ## <a name="see-also"></a>Voir aussi
 - [IDebugProviderProgramNode2](../../../extensibility/debugger/reference/idebugproviderprogramnode2.md)

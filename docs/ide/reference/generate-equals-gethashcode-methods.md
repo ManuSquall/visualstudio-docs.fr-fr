@@ -8,10 +8,10 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: f9b1a639dd655f4f75b21555396866858b144010
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75569281"
 ---
 # <a name="generate-equals-and-gethashcode-method-overrides-in-visual-studio"></a>Générer des substitutions des méthodes Equals et GetHashCode dans Visual Studio
@@ -24,15 +24,15 @@ Cette génération de code s’applique à :
 
 **Quand :** générez ces substitutions quand vous disposez d’un type qui doit être comparé selon un ou plusieurs champs et non selon l’emplacement de l’objet en mémoire.
 
-**Pourquoi :**
+**Pourquoi:**
 
 - si vous implémentez un type de valeur, vous pouvez substituer la méthode **Equals** afin d’améliorer les performances par rapport à l’implémentation par défaut de la méthode Equals sur ValueType.
 
-- Si vous implémentez un type de référence, vous pouvez substituer la méthode **Equals** si votre type ressemble à un type de base, par exemple Point, String, BigNumber, etc.
+- Si vous implémentez un type de référence, vous devriez envisager de passer outre la méthode **Equals** si votre type ressemble à un type de base, comme Point, String, BigNumber, et ainsi de suite.
 
-- Substituez la méthode **GetHashCode** pour permettre à un type de fonctionner correctement dans une table de hachage. Consultez la section sur les [opérateurs d’égalité](/dotnet/standard/design-guidelines/equality-operators).
+- Remplacer la méthode **GetHashCode** pour permettre à un type de fonctionner correctement dans une table de hachage. Consultez la section sur les [opérateurs d’égalité](/dotnet/standard/design-guidelines/equality-operators).
 
-## <a name="how-to"></a>Procédure
+## <a name="how-to"></a>Procédures
 
 1. Placez votre curseur quelque part sur la ligne de votre déclaration de type.
 
@@ -43,11 +43,11 @@ Cette génération de code s’applique à :
 
 1. Effectuez ensuite l'une des opérations suivantes :
 
-   - Appuyez sur **Ctrl**+ **.** pour afficher le menu **Actions rapides et refactorisations**.
+   - Appuyez **sur Ctrl**+**.** pour afficher le menu **Actions rapides et refactorisations**.
 
    - Cliquez avec le bouton droit et sélectionnez le menu **Actions rapides et refactorisations**.
 
-   - Cliquez sur l'onglet ![Tournevis](../media/screwdriver-icon.png) qui apparaît dans la marge de gauche.
+   - Cliquez sur le bouton ![Tournevis](../media/screwdriver-icon.png) qui apparaît dans la marge de gauche.
 
    ![Générer un aperçu des substitutions](media/overrides-preview-cs.png)
 
@@ -66,5 +66,5 @@ Cette génération de code s’applique à :
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Génération de code](../code-generation-in-visual-studio.md)
+- [Génération de codes](../code-generation-in-visual-studio.md)
 - [Aperçu des modifications](../../ide/preview-changes.md)

@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: d78bc6e1b384f339d80e09fec81d42c1ab8ed103
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75589498"
 ---
 # <a name="how-to-create-a-basic-lambert-shader"></a>Guide pratique pour créer un nuanceur Lambert de base
@@ -48,12 +48,12 @@ L’illustration suivante montre le nuanceur décrit dans ce document appliqué 
 
 ![Éclairage Lambert appliqué à un modèle.](../designers/media/digit-lambert-effect-result.png)
 
-Pour plus d’informations sur l’application d’un nuanceur à un modèle 3D, consultez [Guide pratique pour appliquer un nuanceur à un modèle 3D](../designers/how-to-apply-a-shader-to-a-3-d-model.md).
+Pour plus d’informations sur la façon d’appliquer un ombrageur à un modèle 3D, voir [Comment: Appliquer un Shader à un modèle 3D](../designers/how-to-apply-a-shader-to-a-3-d-model.md).
 
 ## <a name="see-also"></a>Voir aussi
 
 - [Guide pratique pour appliquer un nuanceur à un modèle 3D](../designers/how-to-apply-a-shader-to-a-3-d-model.md)
-- [Guide pratique pour exporter un nuanceur](../designers/how-to-export-a-shader.md)
-- [Comment : créer un nuanceur Phong de base](../designers/how-to-create-a-basic-phong-shader.md)
+- [Procédure : exporter un nuanceur](../designers/how-to-export-a-shader.md)
+- [Comment: Créer un Phong Shader de base](../designers/how-to-create-a-basic-phong-shader.md)
 - [Concepteur de nuanceur](../designers/shader-designer.md)
-- [Nœuds du concepteur de nuanceur](../designers/shader-designer-nodes.md)
+- [Nœuds de concepteur d’Shader](../designers/shader-designer-nodes.md)

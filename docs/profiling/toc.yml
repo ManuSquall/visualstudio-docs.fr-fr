@@ -24,6 +24,8 @@
       href: running-profiling-tools-with-or-without-the-debugger.md
 - name: Guides pratiques
   items:
+    - name: Utiliser les conseils sur les performances
+      href: perftips.md
     - name: Utilisation du processeur
       href: cpu-usage.md
     - name: Utilisation de la mémoire
@@ -32,18 +34,16 @@
           href: analyze-memory-usage.md
         - name: Analyser l’utilisation de la mémoire pour les objets .NET
           href: dotnet-alloc-tool.md
-        - name: Événements de tas ETW natifs personnalisés
-          href: custom-native-etw-heap-events.md
         - name: Utilisation de la mémoire sans le débogueur
           href: memory-usage-without-debugging2.md
+        - name: Événements de tas ETW natifs personnalisés
+          href: custom-native-etw-heap-events.md
     - name: Mesurer les performances à partir de la ligne de commande
       href: profile-apps-from-command-line.md
     - name: Analyser l’utilisation du GPU
       href: gpu-usage.md
     - name: Analyser la consommation des ressources
       href: application-timeline.md
-    - name: Utiliser les conseils sur les performances
-      href: perftips.md
     - name: Analyser l’utilisation du réseau
       href: network-usage.md
     - name: Analyser la mémoire JavaScript

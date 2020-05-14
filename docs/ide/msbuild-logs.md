@@ -16,10 +16,10 @@ ms.workload:
 - multiple
 ms.description: Generate build logs for msbuild projects to collect helpful information when troubleshooting issues.
 ms.openlocfilehash: 07b2c5e941d31ab1be853f9a89af94462329bdf2
-ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77278811"
 ---
 # <a name="troubleshoot-and-create-logs-for-msbuild-problems"></a>Détecter un problème et créer des journaux pour les problèmes MSBuild
@@ -116,7 +116,7 @@ Un fichier Msbuild.binlog sera créé dans le répertoire à partir duquel que v
 
 ## <a name="create-a-detailed-log"></a>Créer un journal détaillé
 
-1. Dans le menu principal de Visual Studio, accédez à **Outils** > **Options** > **Projets et Solutions** >**Générer et exécuter**.
+1. Du menu principal du Visual Studio, **rendez-vous** > sur Tools**Options** > **Projects and Solutions** >**Build and Run**.
 1. Définissez **Commentaires relatifs à la build du projet MSBuild** sur **Détaillé** dans les deux zones de liste déroulante. La première zone contrôle la quantité d’informations sur la build dans la **Fenêtre Sortie** et la seconde zone contrôle la quantité d’informations sur la build dans le fichier \<projectname\>.log qui est créé dans le répertoire intermédiaire du projet pendant la build.
 2. À partir d’une invite de commandes développeur Visual Studio, entrez une de ces commandes, en remplaçant les valeurs de chemin d’accès et de configuration courantes :
 

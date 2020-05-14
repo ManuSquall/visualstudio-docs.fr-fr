@@ -11,10 +11,10 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: 089be3e6f28a939979f6bd97097ea7558824b493
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "62429766"
 ---
 # <a name="quickstart-create-a-python-project-from-a-template-in-visual-studio"></a>Démarrage rapide : Créer un projet Python à partir d’un modèle dans Visual Studio
@@ -23,11 +23,11 @@ Une fois que vous avez [installé la prise en charge de Python dans Visual Studi
 
 1. Démarrez Visual Studio.
 
-1. Dans la barre de menus supérieure, choisissez **Fichier** > **Nouveau** > **Projet**, puis dans la boîte de dialogue **Nouveau projet**, recherchez « flask vide », sélectionnez le modèle **Projet web Flask vide** dans la liste du milieu, donnez un nom au projet, puis sélectionnez **OK** :
+1. À partir de la barre de menu supérieure, choisissez **File** > **New** > **Project**, puis dans la recherche de dialogue **New Project** pour "flacon blanc", sélectionnez le modèle Blank **Flask Web Project** dans la liste du milieu, donnez au projet un nom, et sélectionnez **OK**:
 
     ![Créer un projet avec le modèle Projet Web Flask vide](media/quickstart-python-06-blank-flask-template.png)
 
-1. Visual Studio affiche une boîte de dialogue indiquant **Ce projet nécessite des packages externes.** Cette boîte de dialogue s’affiche, car le modèle comprend un fichier *requirements.txt* qui spécifie une dépendance par rapport à Flask. Visual Studio peut installer les packages automatiquement. Il permet de les installer dans un *environnement virtuel*. Sachant qu’il est recommandé d’utiliser un environnement virtuel plutôt qu’un environnement global, sélectionnez **Installer dans un environnement virtuel** pour continuer.
+1. Visual Studio vous invite avec un dialogue qui dit que **ce projet nécessite des paquets externes.** Cette boîte de dialogue s’affiche, car le modèle comprend un fichier *requirements.txt* qui spécifie une dépendance par rapport à Flask. Visual Studio peut installer les packages automatiquement. Il permet de les installer dans un *environnement virtuel*. Sachant qu’il est recommandé d’utiliser un environnement virtuel plutôt qu’un environnement global, sélectionnez **Installer dans un environnement virtuel** pour continuer.
 
     ![Installer Flask dans un environnement virtuel](media/quickstart-python-07-install-into-virtual-environment.png)
 
@@ -73,27 +73,27 @@ Une fois que vous avez [installé la prise en charge de Python dans Visual Studi
         app.run(HOST, PORT)
     ```
 
-1. Sélectionnez **Déboguer** > **Exécuter sans débogage** pour exécuter l’application et ouvrir un navigateur sur `localhost:5555`.
+1. Sélectionnez **Debug** > **Start sans Debugging** pour exécuter `localhost:5555`l’application et ouvrir un navigateur à .
 
 **Question : Quels sont les autres modèles Python offerts par Visual Studio ?**
 
-**Réponse** : Lorsque la charge de travail Python est installée, Visual Studio offre de nombreux modèles de projet, notamment pour les [infrastructures web Flask, Bottle et Django](../python/python-web-application-project-templates.md), Azure Cloud Services et différents scénarios d’apprentissage automatique. Il existe même un modèle pour créer un projet à partir d’une structure de dossiers existante contenant une application Python. Vous pouvez y accéder par la boîte de dialogue **Fichier** > **Nouveau** > **Projet** en sélectionnant le nœud de langage **Python** et ses nœuds enfants.
+**Réponse** : Lorsque la charge de travail Python est installée, Visual Studio offre de nombreux modèles de projet, notamment pour les [infrastructures web Flask, Bottle et Django](../python/python-web-application-project-templates.md), Azure Cloud Services et différents scénarios de Machine Learning. Il existe même un modèle pour créer un projet à partir d’une structure de dossiers existante contenant une application Python. Vous y accédez par le biais de la boîte de dialogue **File** > **New** > **Project** en sélectionnant le nœud de langue **Python** et ses nœuds pour enfants.
 
-Visual Studio propose également divers *modèles d’éléments* ou de fichiers pour créer rapidement une classe Python, un package Python, un test unitaire Python, des fichiers *web.config*, etc. Quand un projet Python est ouvert, vous pouvez accéder aux modèles d’éléments via la commande de menu **Projet** > **Ajouter un nouvel élément**. Consultez [Référence de modèles d’élément](python-item-templates.md).
+Visual Studio fournit également une variété de modèles de fichiers ou *d’objets* pour créer rapidement une classe Python, un paquet Python, un test d’unité Python, des fichiers *web.config,* et plus encore. Lorsque vous avez un projet Python ouvert, vous accédez à des modèles d’éléments via la commande de menu **Project** > **Add New Item.** Consultez [Référence de modèles d’élément](python-item-templates.md).
 
 Les modèles peuvent faire gagner beaucoup de temps au démarrage d’un projet ou lors de la création d’un fichier. Ils permettent également de se renseigner sur les différents types d’applications et les différentes structures de code. Prenez quelques minutes pour créer des projets et des éléments à partir des modèles pour vous familiariser avec leur contenu.
 
 **Question : Peut-on également utiliser des modèles Cookiecutter ?**
 
-**Réponse** : Oui. En fait, Visual Studio fournit une intégration directe avec Cookiecutter, que vous pouvez découvrir via [Démarrage rapide : Créer un projet à partir d’un modèle Cookiecutter](../python/quickstart-04-python-in-visual-studio-project-from-cookiecutter.md).
+**Réponse** : Oui ! En fait, Visual Studio offre une intégration directe avec Cookiecutter, que vous pouvez en apprendre davantage grâce à [Quickstart: Créer un projet à partir d’un modèle Cookiecutter](../python/quickstart-04-python-in-visual-studio-project-from-cookiecutter.md).
 
 ## <a name="next-steps"></a>Étapes suivantes
 
 > [!div class="nextstepaction"]
-> [Tutoriel : Utiliser Python dans Visual Studio](tutorial-working-with-python-in-visual-studio-step-01-create-project.md)
+> [Tutoriel : Utiliser Python dans Visual Studio](tutorial-working-with-python-in-visual-studio-step-01-create-project.md)
 
 ## <a name="see-also"></a>Voir aussi
 
 - [Identifier manuellement un interpréteur Python existant](managing-python-environments-in-visual-studio.md#manually-identify-an-existing-environment)
-- [Installer la prise en charge de Python dans Visual Studio 2015 et antérieur](installing-python-support-in-visual-studio.md)
+- [Installer la prise en charge de Python dans Visual Studio 2015 et les versions antérieures](installing-python-support-in-visual-studio.md)
 - [Emplacements d’installation](installing-python-support-in-visual-studio.md#install-locations)

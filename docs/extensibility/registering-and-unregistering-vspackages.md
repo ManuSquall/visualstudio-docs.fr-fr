@@ -1,30 +1,30 @@
 ---
-title: Inscription et la désinscription de VSPackages | Microsoft Docs
+title: Enregistrement et non-enregistrement VSPackages (fr) Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - registration, VSPackages
 - VSPackages, registering
 ms.assetid: e25e7a46-6a55-4726-8def-ca316f553d6b
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 701700ba9d5c6db1e5858a2419e1b2c0fa950ae5
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: f345bdbd3cf5858d495937c743b580abf5e3dd50
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66334292"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80701579"
 ---
-# <a name="register-and-unregister-vspackages"></a>Inscrire et désinscrire des VSPackages
-Vous utilisez des attributs pour inscrire un VSPackage, mais
+# <a name="register-and-unregister-vspackages"></a>Inscrivez-vous et enregistrez VSPackages
+Vous utilisez des attributs pour enregistrer un VSPackage, mais
 
-## <a name="register-a-vspackage"></a>Inscrire un VSPackage
- Vous pouvez utiliser des attributs pour contrôler l’inscription de VSPackages gérés. Toutes les informations d’inscription sont contenues dans un *.pkgdef* fichier. Pour plus d’informations sur le fichier d’inscription, consultez [utilitaire CreatePkgDef](../extensibility/internals/createpkgdef-utility.md).
+## <a name="register-a-vspackage"></a>Enregistrez un VSPackage
+ Vous pouvez utiliser des attributs pour contrôler l’enregistrement des VSPackages gérés. Toutes les informations d’enregistrement sont contenues dans un fichier *.pkgdef.* Pour plus d’informations sur l’enregistrement basé sur les fichiers, voir [CreatePkgDef utilitaire](../extensibility/internals/createpkgdef-utility.md).
 
- Le code suivant montre comment utiliser les attributs standard d’inscription pour inscrire votre VSPackage.
+ Le code suivant montre comment utiliser les attributs d’enregistrement standard pour enregistrer votre VSPackage.
 
 ```csharp
 [PackageRegistration(UseManagedResourcesOnly = true)]
@@ -35,16 +35,16 @@ public sealed class BasicPackage : Package
 }
 ```
 
-## <a name="unregister-an-extension"></a>Annuler l’inscription d’une extension
- Si vous avez expérimenté, avec un grand nombre de VSPackages différents et que vous souhaitez les supprimer de l’instance expérimentale, vous pouvez exécuter la **réinitialiser** commande. Recherchez **réinitialiser l’Instance expérimentale de Visual Studio** sur la page de démarrage de votre ordinateur, ou exécutez cette commande à partir de la ligne de commande :
+## <a name="unregister-an-extension"></a>Annuler l’enregistrement d’une extension
+ Si vous avez expérimenté avec un grand nombre de VSPackages différents et que vous voulez les supprimer de l’instance expérimentale, vous pouvez simplement exécuter la commande **Reset.** Recherchez **Réinitialiser l’instance expérimentale Visual Studio** sur la page de départ de votre ordinateur, ou exécutez cette commande à partir de la ligne de commande :
 
 ```cmd
 <location of Visual Studio 2015 install>\"Microsoft Visual Studio 14.0\VSSDK\VisualStudioIntegration\Tools\Bin\CreateExpInstance.exe" /Reset /VSInstance=14.0 /RootSuffix=Exp
 ```
 
- Si vous souhaitez désinstaller une extension que vous avez installée sur votre instance de développement de Visual Studio, accédez à **outils** > **Extensions et mises à jour**, recherchez l’extension et cliquez sur  **Désinstaller**.
+ Si vous souhaitez désinstaller une extension que vous avez installée sur votre instance de développement de Visual Studio, allez à **Tools** > **Extensions and Updates**, trouver l’extension, et cliquez sur **Uninstall**.
 
- Si pour une raison quelconque, aucune de ces méthodes ne réussit à désinstaller l’extension, vous pouvez désinscrire l’assembly VSPackage à partir de la ligne de commande comme suit :
+ Si, pour une raison quelconque, aucune de ces méthodes ne réussit à désinstaller l’extension, vous pouvez désenregistrer l’assemblage VSPackage de la ligne de commande comme suit :
 
 ```cmd
 <location of Visual Studio 2015 install>\"Microsoft Visual Studio 14.0\VSSDK\VisualStudioIntegration\Tools\Bin\regpkg" /unregister <pathToVSPackage assembly>
@@ -52,13 +52,13 @@ public sealed class BasicPackage : Package
 
 <a name="using-a-custom-registration-attribute-to-register-an-extension"></a>
 
-## <a name="use-a-custom-registration-attribute-to-register-an-extension"></a>Utiliser un attribut personnalisé d’inscription pour inscrire une extension
+## <a name="use-a-custom-registration-attribute-to-register-an-extension"></a>Utilisez un attribut d’enregistrement personnalisé pour enregistrer une extension
 
-Dans certains cas, vous devrez peut-être créer un nouvel attribut d’inscription pour votre extension. Vous pouvez utiliser les attributs d’inscription pour ajouter de nouvelles clés de Registre ou pour ajouter de nouvelles valeurs pour les clés existantes. Le nouvel attribut doit dériver de <xref:Microsoft.VisualStudio.Shell.RegistrationAttribute>, et il doit remplacer le <xref:Microsoft.VisualStudio.Shell.RegistrationAttribute.Register%2A> et <xref:Microsoft.VisualStudio.Shell.RegistrationAttribute.Unregister%2A> méthodes.
+Dans certains cas, vous devrez peut-être créer un nouvel attribut d’enregistrement pour votre extension. Vous pouvez utiliser des attributs d’enregistrement pour ajouter de nouvelles clés de registre ou pour ajouter de nouvelles valeurs aux clés existantes. Le nouvel attribut <xref:Microsoft.VisualStudio.Shell.RegistrationAttribute>doit dériver de <xref:Microsoft.VisualStudio.Shell.RegistrationAttribute.Register%2A> , <xref:Microsoft.VisualStudio.Shell.RegistrationAttribute.Unregister%2A> et il doit l’emporter sur les méthodes et les méthodes.
 
-### <a name="create-a-custom-attribute"></a>Créer un attribut personnalisé
+### <a name="create-a-custom-attribute"></a>Création d’un attribut personnalisé
 
-Le code suivant montre comment créer un nouvel attribut d’inscription.
+Le code suivant montre comment créer un nouvel attribut d’enregistrement.
 
 ```csharp
 [AttributeUsage(AttributeTargets.Class, Inherited = true, AllowMultiple = false)]
@@ -67,11 +67,11 @@ public class CustomRegistrationAttribute : RegistrationAttribute
 }
 ```
 
- Le <xref:System.AttributeUsageAttribute> est utilisé sur les classes d’attributs pour spécifier l’élément de programme (classe, méthode, etc.) à laquelle l’attribut se rapporte, qu’il peut être utilisé plusieurs fois et si elle peut être héritée.
+ L’est <xref:System.AttributeUsageAttribute> utilisé sur les classes d’attributs pour spécifier l’élément du programme (classe, méthode, etc.) auquel l’attribut se rapporte, s’il peut être utilisé plus d’une fois, et s’il peut être hérité.
 
-### <a name="create-a-registry-key"></a>Créer une clé de Registre
+### <a name="create-a-registry-key"></a>Créer une clé de registre
 
-Dans le code suivant, l’attribut personnalisé crée un **personnalisé** sous-clé sous la clé pour le VSPackage est en cours d’inscription.
+Dans le code suivant, l’attribut personnalisé crée un sous-clé **personnalisé** sous la clé pour le VSPackage qui est enregistré.
 
 ```csharp
 public override void Register(RegistrationAttribute.RegistrationContext context)
@@ -95,9 +95,9 @@ public override void Unregister(RegistrationContext context)
 }
 ```
 
-### <a name="create-a-new-value-under-an-existing-registry-key"></a>Créer une nouvelle valeur sous une clé de Registre existante
+### <a name="create-a-new-value-under-an-existing-registry-key"></a>Créer une nouvelle valeur en vertu d’une clé de registre existante
 
-Vous pouvez ajouter des valeurs personnalisées à une clé existante. Le code suivant montre comment ajouter une nouvelle valeur à une clé d’inscription de VSPackage.
+Vous pouvez ajouter des valeurs personnalisées à une clé existante. Le code suivant montre comment ajouter une nouvelle valeur à une clé d’enregistrement VSPackage.
 
 ```csharp
 public override void Register(RegistrationAttribute.RegistrationContext context)

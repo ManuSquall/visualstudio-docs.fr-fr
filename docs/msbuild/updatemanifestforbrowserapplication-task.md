@@ -13,32 +13,34 @@ helpviewer_keywords:
 - building XBAP projects [WPF MSBuild]
 - UpdateManifestForBrowserApplication task [WPF MSBuild], parameters
 ms.assetid: 653339f7-654b-4d64-a26a-5c9f27036895
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f7b5122a54fd17c6bbe2a9aab204f5855c40e902
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 079eecd6751f168a7beba32eda6d15eda712bd7f
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62950693"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "77631326"
 ---
 # <a name="updatemanifestforbrowserapplication-task"></a>UpdateManifestForBrowserApplication, tâche
-La tâche <xref:Microsoft.Build.Tasks.Windows.UpdateManifestForBrowserApplication> est exécutée pour ajouter l’élément **\<hostInBrowser />** au manifeste d’application (*\<projectname>.exe.manifest*) quand un projet[!INCLUDE[TLA#tla_xbap](../msbuild/includes/tlasharptla_xbap_md.md)] est généré.
+
+La <xref:Microsoft.Build.Tasks.Windows.UpdateManifestForBrowserApplication> tâche est exécutée pour ajouter ** \<l’élément hostInBrowser />** au manifeste de l’application*\<(nom de projet>.exe.manifest*) lorsqu’un projet d’application de navigateur XAML (XBAP) est construit.
 
 ## <a name="task-parameters"></a>Paramètres de tâche
 
 |Paramètre|Description|
 |---------------|-----------------|
-|`ApplicationManifest`|Paramètre **ITaskItem[]** obligatoire.<br /><br /> Spécifie le chemin d'accès et le nom du fichier manifeste d'application auquel ajouter l'élément `<hostInBrowser />`.|
-|`HostInBrowser`|Paramètre **Boolean** obligatoire.<br /><br /> Spécifie s’il faut modifier le manifeste de l’application pour inclure l’élément **\<hostInBrowser />**. Si la valeur est **true**, un nouvel élément **\<hostInBrowser />** est inclus dans l’élément **\<entryPoint />**. L’inclusion des éléments est cumulative : si un élément **\<hostInBrowser />** existe déjà, il n’est ni supprimé ni remplacé. Au lieu de cela, un autre élément **\<hostInBrowser />** est créé. Si la valeur est **false**, le manifeste de l’application n’est pas modifié.|
+|`ApplicationManifest`|Paramètre **ITaskItem[]** requis.<br /><br /> Spécifie le chemin d'accès et le nom du fichier manifeste d'application auquel ajouter l'élément `<hostInBrowser />`.|
+|`HostInBrowser`|Paramètre **Boolean** obligatoire.<br /><br /> Précise s’il faut modifier le manifeste de l’application pour inclure ** \<l’élément hostInBrowser/>.** Si la valeur est **true**, un nouvel élément **\<hostInBrowser />** est inclus dans l’élément **\<entryPoint />**. L’inclusion des éléments est cumulative : si un ** \<élément hostInBrowser/>** existe déjà, il n’est pas supprimé ou écrasé. Au lieu de cela, un ** \<élément hôte supplémentaireInBrowser />** est créé. Si la valeur est **false**, le manifeste de l’application n’est pas modifié.|
 
-## <a name="remarks"></a>Remarques
- [!INCLUDE[TLA2#tla_xbap#plural](../msbuild/includes/tla2sharptla_xbapsharpplural_md.md)] sont exécutés à l’aide du déploiement de [!INCLUDE[TLA#tla_clickonce](../msbuild/includes/tlasharptla_clickonce_md.md)] et, par conséquent, doivent être publiés avec les manifestes de déploiement et d’application correspondants. [!INCLUDE[TLA#tla_msbuild](../msbuild/includes/tlasharptla_msbuild_md.md)] utilise la tâche [GenerateApplicationManifest](generateapplicationmanifest-task.md) pour générer un manifeste d’application.
+## <a name="remarks"></a>Notes 
 
- Ensuite, pour configurer une application hébergée par un navigateur, un élément supplémentaire, **\<hostInBrowser />**, doit être ajouté au manifeste de l’application, comme indiqué dans l’exemple suivant :
+ Les XAP sont gérés en utilisant le déploiement ClickOnce, de sorte qu’ils doivent être publiés avec le déploiement à l’appui et les manifestes d’application. MSBuild utilise la tâche [GenerateApplicationManifest](generateapplicationmanifest-task.md) pour générer un manifeste d’application.
+
+ Ensuite, pour configurer une application à héberger à partir d’un navigateur, un ** \<élément hôte/>** supplémentaire doit être ajouté au manifeste de l’application, comme le montre l’exemple suivant :
 
 ```xml
 <!--MyXBAPApplication.exe.manifest-->
@@ -54,9 +56,10 @@ La tâche <xref:Microsoft.Build.Tasks.Windows.UpdateManifestForBrowserApplicatio
 />
 ```
 
- La tâche <xref:Microsoft.Build.Tasks.Windows.UpdateManifestForBrowserApplication> est exécutée quand un projet [!INCLUDE[TLA2#tla_xbap](../msbuild/includes/tla2sharptla_xbap_md.md)] est généré pour ajouter l'élément `<hostInBrowser />`.
+ La <xref:Microsoft.Build.Tasks.Windows.UpdateManifestForBrowserApplication> tâche est exécutée lorsqu’un projet XBAP est construit afin d’ajouter l’élément. `<hostInBrowser />`
 
-## <a name="example"></a>Exemple
+## <a name="example"></a> Exemple
+
  L'exemple suivant montre comment s'assurer que l'élément `<hostInBrowser />` est inclus dans un fichier manifeste d'application.
 
 ```xml
@@ -73,9 +76,10 @@ La tâche <xref:Microsoft.Build.Tasks.Windows.UpdateManifestForBrowserApplicatio
 ```
 
 ## <a name="see-also"></a>Voir aussi
-- [Informations de référence sur MSBuild WPF](../msbuild/wpf-msbuild-reference.md)
+
+- [WPF MSBuild référence](../msbuild/wpf-msbuild-reference.md)
 - [Informations de référence sur les tâches](../msbuild/wpf-msbuild-task-reference.md)
-- [Informations de référence sur MSBuild](../msbuild/msbuild-reference.md)
+- [Référence MSBuild](../msbuild/msbuild-reference.md)
 - [Informations de référence sur les tâches](../msbuild/msbuild-task-reference.md)
 - [Générer une application WPF (WPF)](/dotnet/framework/wpf/app-development/building-a-wpf-application-wpf)
 - [Vue d’ensemble des applications du navigateur XAML WPF](/dotnet/framework/wpf/app-development/wpf-xaml-browser-applications-overview)

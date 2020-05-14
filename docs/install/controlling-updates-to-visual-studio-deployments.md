@@ -16,10 +16,10 @@ ms.workload:
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.openlocfilehash: 8743f042c7c33da34895f93e5df3990f6e0b2ed2
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/16/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "76115311"
 ---
 # <a name="control-updates-to-network-based-visual-studio-deployments"></a>Contrôler les mises à jour applicables aux déploiements de Visual Studio à partir du réseau
@@ -30,7 +30,7 @@ Les administrateurs d’entreprise créent souvent une disposition qu’ils héb
 
 Par défaut, Visual Studio continue de rechercher en ligne des mises à jour même si l’installation a été déployée à partir d’un partage réseau. Si une mise à jour est disponible, l’utilisateur peut l’installer. Tout contenu mis à jour qui ne se trouve pas dans la disposition en mode hors connexion est téléchargée à partir du web.
 
-Si vous souhaitez un contrôle direct sur l’emplacement où Visual Studio recherche les mises à jour, vous pouvez changer l’emplacement où il effectue sa recherche. Vous pouvez également déterminer la version avec laquelle vos utilisateurs sont mis à jour. Pour cela, suivez ces étapes :
+Si vous souhaitez un contrôle direct sur l’emplacement où Visual Studio recherche les mises à jour, vous pouvez changer l’emplacement où il effectue sa recherche. Vous pouvez également déterminer la version avec laquelle vos utilisateurs sont mis à jour. Pour ce faire, procédez comme suit :
 
 1. Créez une disposition en mode hors connexion :
 
@@ -90,7 +90,7 @@ Comme décrit plus haut, Visual Studio vérifie l’emplacement à partir duquel
 
 Comme décrit plus haut, Visual Studio vérifie l’emplacement à partir duquel il a été installé, tel qu’un partage réseau ou via Internet, pour voir si des mises à jour sont disponibles. Quand une mise à jour est disponible, Visual Studio avertit l’utilisateur par une icône de notification en bas à droite de la fenêtre.
 
-   ![Icône de notification dans l’IDE de Visual Studio](media/vs-2019/notification-bar.png "Icône de notification dans l’IDE de Visual Studio")
+   ![L’icône de notification dans le Visual Studio IDE](media/vs-2019/notification-bar.png "L’icône de notification dans le Visual Studio IDE")
 
 ::: moniker-end
 
@@ -129,4 +129,4 @@ vsregedit.exe set "C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterpris
 * [Guide de l’administrateur Visual Studio](visual-studio-administrator-guide.md)
 * [Utiliser les paramètres de ligne de commande pour installer Visual Studio](use-command-line-parameters-to-install-visual-studio.md)
 * [Outils de gestion des instances de Visual Studio](tools-for-managing-visual-studio-instances.md)
-* [Cycle de vie et maintenance des produits Visual Studio](/visualstudio/releases/2019/servicing/)
+* [Cycle de vie et entretien du produit Visual Studio](/visualstudio/releases/2019/servicing/)

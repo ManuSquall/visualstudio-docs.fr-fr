@@ -12,10 +12,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: acdfe8f96d30ad881d8c9c0f0a9ff48c3353afee
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74779244"
 ---
 # <a name="filter-report-views"></a>Filtrer les vues des rapports
@@ -37,9 +37,9 @@ Vous pouvez appliquer des filtres aux fichiers de données de profilage pour lim
 
     |Champ|Description|
     |-----------|-----------------|
-    |**Et/ou**|Choisissez **Et** si cette clause et la suivante doivent être vraies pour correspondre à un résultat. Choisissez **Ou** si cette clause ou la suivante peut être vraie pour correspondre à un résultat.|
+    |**Et/Ou**|Choisissez **Et** si cette clause et la suivante doivent être vraies pour correspondre à un résultat. Choisissez **Ou** si cette clause ou la suivante peut être vraie pour correspondre à un résultat.|
     |**Champ**|Sélectionnez le champ du rapport à utiliser dans la clause du filtre dans la liste de champs de données.|
-    |**Operator**|Sélectionnez l’opérateur qui spécifie la relation qui doit exister dans la clause entre le champ et la valeur.<br /><br /> =    Égal<br /><br /> <>  Différent de<br /><br /> <    Inférieur à<br /><br /> >    Supérieur à<br /><br /> <=  Inférieur ou égal à<br /><br /> >=  Supérieur ou égal à|
+    |**Opérateur**|Sélectionnez l’opérateur qui spécifie la relation qui doit exister dans la clause entre le champ et la valeur.<br /><br /> =    Égal<br /><br /> <>  Différent de<br /><br /> <    Inférieur à<br /><br /> >    Supérieur à<br /><br /> <=  Inférieur ou égal à<br /><br /> >=  Supérieur ou égal à|
     |**Valeur**|Sélectionnez ou entrez la valeur à rechercher. Certains champs répertorient les valeurs disponibles.|
 
 #### <a name="to-create-a-profiler-report-filter-from-the-marks-report-view"></a>Pour créer un filtre de rapport de profileur à partir de la vue du rapport Marques

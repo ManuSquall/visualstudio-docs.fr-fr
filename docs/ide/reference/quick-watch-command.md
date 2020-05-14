@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 8f6382a79884bf8c3891a3a191b594bf183efb62
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75565628"
 ---
 # <a name="quick-watch-command"></a>Espion express, commande
@@ -32,13 +32,13 @@ Debug.QuickWatchq [text]
 ## <a name="arguments"></a>Arguments
 
 `text`\
-Option facultative. Texte à ajouter à la boîte de dialogue **Espion express**.
+facultatif. Texte à ajouter à la boîte de dialogue **Espion express**.
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Notes 
 
 Si l’argument `text` est omis, le texte ou mot sélectionné au niveau du curseur est ajouté dans la fenêtre Espion.
 
-## <a name="example"></a>Exemple
+## <a name="example"></a> Exemple
 
 ```cmd
 >Debug.QuickWatch
@@ -47,7 +47,7 @@ Si l’argument `text` est omis, le texte ou mot sélectionné au niveau du curs
 ## <a name="see-also"></a>Voir aussi
 
 - [Définir un espion sur les variables à l’aide des fenêtres Espion et Espion express dans Visual Studio](../../debugger/watch-and-quickwatch-windows.md)
-- [Visual Studio, commandes](../../ide/reference/visual-studio-commands.md)
-- [Fenêtre Commande](../../ide/reference/command-window.md)
-- [Rechercher/Commande, zone](../../ide/find-command-box.md)
-- [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)
+- [Commandes de studio visuel](../../ide/reference/visual-studio-commands.md)
+- [Commande, fenêtre](../../ide/reference/command-window.md)
+- [Boîte de recherche/commande](../../ide/find-command-box.md)
+- [Alias de commande de studio visuel](../../ide/reference/visual-studio-command-aliases.md)

@@ -14,19 +14,19 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: b5392ad3efaee8a3c29e58bd2b75272e4206215a
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75569138"
 ---
-# <a name="how-to-display-line-numbers-in-the-editor"></a>Comment : afficher les numéros de ligne dans l’éditeur
+# <a name="how-to-display-line-numbers-in-the-editor"></a>Comment: Afficher les numéros de ligne dans l’éditeur
 
 Vous pouvez afficher ou masquer la numérotation des lignes dans votre code.
 
 ## <a name="display-line-numbers-in-code"></a>Afficher les numéros de ligne dans le code
 
-1. Dans la barre de menus, choisissez **Outils** > **Options**. Développez le nœud **Éditeur de texte**, puis sélectionnez le langage que vous utilisez ou **Tous les langages** pour activer les numéros de ligne dans tous les langages. (Ou tapez **numéro de ligne** dans la zone de recherche et choisissez **Activer ou désactiver les numéros de ligne** dans les résultats.)
+1. Sur la barre de menu, choisissez **Tools** > **Options**. Développez le nœud **Éditeur de texte**, puis sélectionnez le langage que vous utilisez ou **Tous les langages** pour activer les numéros de ligne dans tous les langages. (Ou tapez **numéro de ligne** dans la zone de recherche et choisissez **Activer ou désactiver les numéros de ligne** dans les résultats.)
 
 2. Cochez la case **Numéros de ligne**.
 

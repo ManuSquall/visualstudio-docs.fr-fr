@@ -3,18 +3,19 @@ title: Abonnements Visual Studio offerts aux startups par le biais du programme 
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 07/28/2019
+ms.assetid: 71af88da-b9fa-4d12-999c-7d461f3df0ec
+ms.date: 03/09/2020
 ms.topic: conceptual
 description: Des détails sur les abonnements sont offerts via le programme Microsoft for Startups.
-ms.openlocfilehash: 087fb820687063c22e98b34b0c3cd2292fb9a35b
-ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
-ms.translationtype: HT
+ms.openlocfilehash: 6c2fdcfc9fa71c1906a1033ac719b07cb0b157a4
+ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/29/2019
-ms.locfileid: "68605742"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "80233255"
 ---
 # <a name="visual-studio-subscriptions-offered-to-startups"></a>Abonnements Visual Studio offerts aux startups
-Les startups éligibles qui rejoignent le programme Microsoft for Startups peuvent gagner 5 [abonnements cloud mensuels](https://visualstudio.microsoft.com/vs/pricing/) à Visual Studio Enterprise. 
+Les startups qualifiées qui rejoignent le programme Microsoft for Startups peuvent obtenir 5 [abonnements cloud mensuels](https://visualstudio.microsoft.com/vs/pricing/)Visual Studio Enterprise. 
 
 ## <a name="subscription-details"></a>Détails de l’abonnement 
 Il s’agit des mêmes abonnements que ceux proposés dans le commerce, sans aucune limitation ou restriction particulière. Chaque abonnement doit être affecté à un utilisateur final (qui est l’utilisateur sous licence) pour que celui-ci puisse exécuter Visual Studio et être reconnu en tant qu’abonné Visual Studio Enterprise dans Azure DevOps Services.
@@ -26,7 +27,7 @@ Les abonnements mensuels renouvelés automatiquement sont facturés
 
 Aucune clé de produit n’est offerte pour déverrouiller le produit. La connexion est l’unique option disponible pour exécuter Visual Studio. Les abonnés Visual Studio peuvent travailler en mode hors connexion pendant 30 jours avant que Visual Studio ne cesse de fonctionner. Quand vous travaillez en ligne, Visual Studio actualise silencieusement et régulièrement l’état de la licence utilisateur pour s’assurer que l’abonnement est toujours valide.
 
-## <a name="frequently-asked-questions"></a>FAQ
+## <a name="frequently-asked-questions"></a>Forum aux questions
 ### <a name="q-how-are-monthly-cloud-subscription-charges-processed"></a>Q : Comment les frais d’abonnement cloud mensuels sont-ils traités ?
 R : Lors du premier achat, nous facturons une quantité au prorata pour couvrir les jours restants du mois en cours. Par exemple, si un achat de 10 abonnements cloud mensuels Visual Studio Professional a été effectué le 15 avril, nous facturons cinq unités, car il reste 50 % du mois (15 jours dans un mois de 30 jours). Le premier mai et chaque mois suivant jusqu’à ce que vous annuliez, les dix unités seront facturées.
 
@@ -38,6 +39,12 @@ R : Quand vous annulez un abonnement cloud Visual Studio, vous annulez le renou
 Avec les abonnements cloud mensuels, les annulations prennent effet le premier jour du mois suivant. Si vous annulez uniquement certains de vos abonnements cloud mensuels, veillez à supprimer les utilisateurs le premier jour du mois suivant pour vous assurer que des abonnements actifs sont toujours affectés aux personnes appropriées.
 
 Pour les abonnements cloud annuels, les annulations prennent effet le premier jour du mois suivant 12 mois à partir de l’achat initial, ou 12 mois à partir de la dernière facturation de renouvellement annuel. Par exemple, si vous avez acheté un abonnement cloud annuel Visual Studio Professional le 3 janvier 2018, il reste actif jusqu’au 1er février 2019, date de son renouvellement automatique pour une autre année. Si vous annulez à tout moment entre cette date et le 1er février 2020, l’abonnement expire le 1er février 2020. Aucune remise n’est accordée en cas d’annulation en cours d’année d’abonnement avec les abonnements cloud annuels.
+
+## <a name="see-also"></a>Voir aussi
+- [Documentation Visual Studio](https://docs.microsoft.com/visualstudio/)
+- [Documentation Azure DevOps](https://docs.microsoft.com/azure/devops/)
+- [Documentation Azure](https://docs.microsoft.com/azure/)
+- [Documentation Microsoft 365](https://docs.microsoft.com/microsoft-365/)
 
 ## <a name="next-steps"></a>Étapes suivantes
 [En savoir plus sur Microsoft for Startups](https://startups.microsoft.com)

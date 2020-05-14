@@ -6,17 +6,17 @@ ms.author: dominicn
 ms.date: 09/19/2019
 ms.assetid: 6958B102-8527-4B40-BC65-3505DB63F9D3
 ms.openlocfilehash: 0c511c448136210038f1034321a2828e5153add1
-ms.sourcegitcommit: 53bc4c11b82882ab658e34c65ae374060f823531
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/19/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "71128389"
 ---
 # <a name="customizing-the-build-system"></a>Personnalisation du système de génération
 
-Le Microsoft Build Engine est une plateforme de création d’applications. Le moteur, également appelé MSBuild, a été développé par Microsoft et permet la création d’applications .NET. Le framework Mono a également sa propre implémentation du moteur de génération de Microsoft, appelée **xbuild**. À ce stade, cependant, xbuild a été supprimé en faveur de l’utilisation de MSBuild sur tous les systèmes d’exploitation.
+Le moteur Microsoft Build est une plate-forme pour la construction d’applications. Le moteur, qui est également connu sous le nom MSBuild, a été développé par Microsoft et permet la construction d’applications .NET. Le cadre Mono a également sa propre mise en œuvre de Microsoft Build Engine, appelé **xbuild**. À ce moment, cependant, xbuild a été progressivement éliminé en faveur de l’utilisation msBuild sur tous les systèmes d’exploitation.
 
-**MSBuild** est utilisé comme système de génération pour les projets dans Visual Studio pour Mac et fonctionne en utilisant un ensemble d’entrées, telles que des fichiers sources, et les transforme en sorties, comme les exécutables. Il réalise ces sorties en appelant des outils, comme le compilateur.
+**MSBuild** est utilisé comme système de construction pour les projets dans Visual Studio pour Mac et fonctionne en prenant un ensemble d’entrées, telles que les fichiers sources, et les transforme en sorties, telles que les exécutables. Il réalise ces sorties en appelant des outils, comme le compilateur.
 
 ## <a name="msbuild-file"></a>Fichier MSBuild
 
@@ -101,5 +101,5 @@ Par exemple, l’extrait de code ci-dessous crée les écrans de lancement d’i
 
 Les ressources suivantes peuvent être utilisées pour obtenir plus d’informations sur MSBuild :
 
-* [MSBuild Overview (Vue d’ensemble de MSBuild)](/visualstudio/msbuild/msbuild)
+* [Aperçu MSBuild](/visualstudio/msbuild/msbuild)
 * [Concepts MSBuild](/visualstudio/msbuild/msbuild-concepts)

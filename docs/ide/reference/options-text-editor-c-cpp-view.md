@@ -12,17 +12,17 @@ manager: markl
 ms.workload:
 - cplusplus
 ms.openlocfilehash: 95963245b15828f374e9812a9bb09d015b21a94b
-ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77278693"
 ---
 # <a name="options-text-editor-cc-view"></a>Options, Éditeur de texte, C/C++, Affichage
 
 Utilisez les pages de propriétés pour changer le comportement par défaut de l’Éditeur de code quand vous programmez en C ou C++.
 
-Pour accéder à cette page de propriétés, choisissez **Outils** > **Options** et développez **Éditeur de texte**, puis **C/C++** , puis choisissez **Affichage**.
+Pour accéder à cette page de propriété, choisissez **Tools** > **Options** et développez **l’éditeur de texte,** puis **C/C,** puis choisissez **View**.
 
 ## <a name="code-squiggles"></a>Tildes dans le code
 
@@ -56,5 +56,5 @@ Vous pouvez activer ou désactiver les paramètres suivants pour gérer la faço
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Définition d’options de l’éditeur spécifiques à un langage](../../ide/reference/setting-language-specific-editor-options.md)
-- [Refactoring in C++ (blog VC)](https://devblogs.microsoft.com/cppblog/all-about-c-refactoring-in-visual-studio-2015-preview/)
+- [Définir des options d’éditeur spécifiques à la langue](../../ide/reference/setting-language-specific-editor-options.md)
+- [Refactorisation en C++ (blog VC)](https://devblogs.microsoft.com/cppblog/all-about-c-refactoring-in-visual-studio-2015-preview/)

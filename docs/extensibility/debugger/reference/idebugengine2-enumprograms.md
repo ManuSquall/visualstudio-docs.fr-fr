@@ -1,5 +1,5 @@
 ---
-title: IDebugEngine2::EnumPrograms | Microsoft Docs
+title: IDebugEngine2:EnumPrograms Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugEngine2::EnumPrograms
 ms.assetid: 56bf98eb-beec-4e5f-9ebe-46c922e54c56
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 05146e92f9f1174d747dbd73488c59f8950c7395
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 5ab53366b228077ab3c3cc6b1ab38ee5d0383dcd
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66330065"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80731095"
 ---
 # <a name="idebugengine2enumprograms"></a>IDebugEngine2::EnumPrograms
-Récupère une liste de tous les programmes en cours de débogage par un moteur de débogage (dé).
+Récupère une liste de tous les programmes étant déboqués par un moteur de débogé (DE).
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -41,10 +41,10 @@ int EnumPrograms( 
 
 ## <a name="parameters"></a>Paramètres
 `ppEnum`\
-[out] Retourne un [IEnumDebugPrograms2](../../../extensibility/debugger/reference/ienumdebugprograms2.md) objet qui contient une liste de tous les programmes en cours de débogage par un DE.
+[out] Retourne un objet [IEnumDebugPrograms2](../../../extensibility/debugger/reference/ienumdebugprograms2.md) qui contient une liste de tous les programmes étant déboqués par un DE.
 
 ## <a name="return-value"></a>Valeur de retour
- En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.
+ En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
 ## <a name="see-also"></a>Voir aussi
 - [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md)

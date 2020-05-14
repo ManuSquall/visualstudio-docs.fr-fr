@@ -1,5 +1,5 @@
 ---
-title: Élément PreviewImage (modèles Visual Studio) | Microsoft Docs
+title: PreviewImage Element (Visual Studio Templates) Microsoft Docs
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -7,20 +7,20 @@ helpviewer_keywords:
 - <PreviewImage> Element (Visual Studio Templates)
 - PreviewImage Element (Visual Studio Templates)
 ms.assetid: d1796f20-523b-4e0d-8ac3-ca87f3b5a9b6
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 86ed3e6f438f399547996245531c2848ac7bdb83
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: f20cfe5f3ef35b23a52972ef1e3b7d9d4adc5a39
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66336093"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80702019"
 ---
-# <a name="previewimage-element-visual-studio-templates"></a>Élément PreviewImage (modèles Visual Studio)
-Spécifie l’image d’aperçu, comme un nom de fichier pour l’image d’aperçu qui apparaîtra dans le **nouveau projet** ou **ajouter un nouvel élément** boîte de dialogue.
+# <a name="previewimage-element-visual-studio-templates"></a>AperçuImage élément (modèles Visual Studio)
+Spécifie l’image de prévisualisation, comme nom de fichier, pour l’image de prévisualisation qui apparaîtra dans la boîte de dialogue **New Project** ou Ajouter un **nouvel élément.**
 
  \<VSTemplate> \<TemplateData> \<PreviewImage>
 
@@ -43,7 +43,7 @@ Spécifie l’image d’aperçu, comme un nom de fichier pour l’image d’aper
 
 |Élément|Description|
 |-------------|-----------------|
-|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Élément requis.<br /><br /> Définit la catégorie du modèle et comment il est affiché dans un le **nouveau projet** ou **ajouter un nouvel élément** boîte de dialogue.|
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Élément requis.<br /><br /> Catégorise le modèle et définit comment il est affiché dans le **nouveau projet** ou la boîte de dialogue Add **New Item.**|
 
 ## <a name="text-value"></a>Valeur texte
  Une valeur texte est requise.
@@ -54,5 +54,5 @@ Spécifie l’image d’aperçu, comme un nom de fichier pour l’image d’aper
  `PreviewImage` est un élément facultatif.
 
 ## <a name="see-also"></a>Voir aussi
-- [Informations de référence sur les schémas de modèles Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
-- [Création de modèles de projets et d’éléments](../ide/creating-project-and-item-templates.md)
+- [Référence de schéma de modèle de studio visuel](../extensibility/visual-studio-template-schema-reference.md)
+- [Création de modèles de projets et d’objets](../ide/creating-project-and-item-templates.md)

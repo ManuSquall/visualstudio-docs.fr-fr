@@ -12,10 +12,10 @@ dev_langs:
 ms.workload:
 - nodejs
 ms.openlocfilehash: 792c74a3b5da5ed6528fa3919a0c60625d1a38ef
-ms.sourcegitcommit: 5806d463780368515e59c2614ed9cfaaa4ab4b91
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/07/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77071945"
 ---
 # <a name="unit-testing-javascript-and-typescript-in-visual-studio"></a>Test unitaire JavaScript et TypeScript dans Visual Studio
@@ -65,12 +65,12 @@ describe('Test Suite 1', function() {
 
 Si vous n’avez pas défini les options de test unitaire dans les propriétés du projet, vous devez vérifier que la propriété **Framework de tests** dans la fenêtre **Propriétés** a pour valeur le framework de tests correct pour vos fichiers de test unitaire. Cette opération est effectuée automatiquement par les modèles de fichier de test unitaire.
 
-![Infrastructure de test](../javascript/media/UnitTestsFrameworkMocha.png)
+![Framework de test](../javascript/media/UnitTestsFrameworkMocha.png)
 
 > [!Note]
 > Les options de test unitaire sont prioritaires sur les paramètres des fichiers individuels.
 
-Après l’ouverture de l’Explorateur de tests (choisissez **Test** > **Fenêtres** > **Explorateur de tests**), Visual Studio détecte et affiche les tests. Si les tests ne sont pas visibles au départ, regénérez le projet pour actualiser la liste.
+Après l’ouverture de Test Explorer (choisissez **Test** > **Windows** > **Test Explorer**), Visual Studio découvre et affiche des tests. Si les tests ne sont pas visibles au départ, regénérez le projet pour actualiser la liste.
 
 ![Explorateur de tests](../javascript/media/UnitTestsDiscoveryMocha.png)
 
@@ -130,7 +130,7 @@ Test execution time: 1.5731 Seconds
 > [!NOTE]
 > Si vous obtenez une erreur indiquant que *vstest.console.exe* est introuvable, vérifiez que vous avez ouvert l’invite de commandes développeur et non une invite de commandes standard.
 
-## <a name="addingFramework"></a>Ajouter la prise en charge d’un framework de tests unitaires
+## <a name="add-support-for-a-unit-test-framework"></a><a name="addingFramework"></a>Ajouter la prise en charge d’un framework de tests unitaires
 
 Vous pouvez ajouter la prise en charge de frameworks de tests supplémentaires en implémentant la logique de découverte et d’exécution à l’aide de JavaScript. Pour cela, ajoutez un dossier portant le nom du framework de tests sous :
 
@@ -174,4 +174,4 @@ En plus des propriétés ci-dessus, vous devez également installer le package N
 </PropertyGroup>
 ```
 
-Certaines infrastructures de test peuvent nécessiter des packages NPM supplémentaires pour la détection des tests. Par exemple, Jest requiert le package NPM jest-Editor-support. Si nécessaire, consultez la documentation relative à l’infrastructure spécifique.
+Certains cadres de test peuvent nécessiter des paquets npm supplémentaires pour la détection des tests. Par exemple, la plaisanterie nécessite le paquet npm de plaisanterie-éditeur-support. Si nécessaire, vérifiez la documentation pour le cadre spécifique.

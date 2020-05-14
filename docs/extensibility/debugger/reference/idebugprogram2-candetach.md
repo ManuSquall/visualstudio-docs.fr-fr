@@ -1,5 +1,5 @@
 ---
-title: IDebugProgram2::CanDetach | Microsoft Docs
+title: IDebugProgram2::CanDetach Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProgram2::CanDetach
 ms.assetid: dcd9ab6c-49e5-447e-aa7c-89f571f4a052
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 6bc8f7ac644a893049592420ad8435ac896a62b0
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 3d03d942bbc052a7ac6bebc6a89c55ec21a1b4c8
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66311483"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80723120"
 ---
 # <a name="idebugprogram2candetach"></a>IDebugProgram2::CanDetach
-Détermine si un moteur de débogage (dé) pouvez détacher du programme.
+Détermine si un moteur de débogé (DE) peut se détacher du programme.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -38,7 +38,7 @@ int CanDetach();
 ```
 
 ## <a name="return-value"></a>Valeur de retour
- Si détacher, retourne `S_OK`; sinon, retourne un code d’erreur. Retourne `S_FALSE` si le D’Impossible de détacher du programme.
+ Si vous pouvez `S_OK`se détacher, retourne; autrement, renvoie un code d’erreur. Retourne `S_FALSE` si le DE ne peut pas se détacher du programme.
 
 ## <a name="see-also"></a>Voir aussi
 - [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)

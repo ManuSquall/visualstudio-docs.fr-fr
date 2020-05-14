@@ -9,10 +9,10 @@ author: angelosp
 ms.author: angelpe
 manager: jillfra
 ms.openlocfilehash: a36ca2535785f72756ad66a69c2ebe4d7d5a373b
-ms.sourcegitcommit: 32144a09ed46e7223ef7dcab647a9f73afa2dd55
-ms.translationtype: HT
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/05/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "67587025"
 ---
 # <a name="file-nesting-in-solution-explorer"></a>Imbrication de fichiers dans l’Explorateur de solutions
@@ -48,21 +48,21 @@ Nous vous recommandons d’utiliser les paramètres **web** comme point de dépa
 
 Concentrons-nous sur le nœud **dependentFileProviders** et ses nœuds enfants. Chaque nœud enfant est un type de règle que Visual Studio peut utiliser pour imbriquer des fichiers. Par exemple, **a le même nom de fichier mais avec une extension différente** est un type de règle. Les règles disponibles sont les suivantes :
 
-* **extensionToExtension** : utilisez ce type de règle pour imbriquer *file.js* sous *file.ts*.
+* **extensionToExtension** : utilisez ce type de règle pour imbriquer *file.js* sous *file.ts*
 
-* **fileSuffixToExtension** : utilisez ce type de règle pour imbriquer *file-vsdoc.js* sous *file.js*.
+* **fileSuffixToExtension** : utilisez ce type de règle pour imbriquer *file-vsdoc.js* sous *file.js*
 
-* **addedExtension** : utilisez ce type de règle pour imbriquer *file.html.css* sous *file.html*.
+* **addedExtension** : utilisez ce type de règle pour imbriquer *file.html.css* sous *file.html*
 
-* **pathSegment** : utilisez ce type de règle pour imbriquer *jquery.min.js* sous *jquery.js*.
+* **pathSegment** : utilisez ce type de règle pour imbriquer *jquery.min.js* sous *jquery.js*
 
-* **allExtensions** : utilisez ce type de règle pour imbriquer *file.* * sous *file.js*.
+* **allExtensions** : utilisez ce type de règle pour imbriquer *file.** sous *file.js*
 
-* **fileToFile** : utilisez ce type de règle pour imbriquer *bower.json* sous *.bowerrc*.
+* **fileToFile** : utilisez ce type de règle pour imbriquer *bower.json* sous *.bowerrc*
 
 ### <a name="the-extensiontoextension-provider"></a>Fournisseur extensionToExtension
 
-Ce fournisseur vous permet de définir des règles d’imbrication de fichiers à l’aide d’extensions de fichiers spécifiques. Prenons l'exemple suivant :
+Ce fournisseur vous permet de définir des règles d’imbrication de fichiers à l’aide d’extensions de fichiers spécifiques. Prenons l’exemple suivant :
 
 ![Règles de l’exemple extentionToExtension](media/filenesting_extensiontoextension.png) ![Effet de l’exemple extentionToExtension](media/filenesting_extensiontoextension_effect.png)
 
@@ -76,7 +76,7 @@ Ce fournisseur vous permet de définir des règles d’imbrication de fichiers �
 
 ### <a name="the-filesuffixtoextension-provider"></a>Fournisseur fileSuffixToExtension
 
-Ce fournisseur fonctionne exactement comme le fournisseur **extensionToExtension**, la seule différence étant que la règle examine le suffixe du fichier et non simplement l’extension. Prenons l'exemple suivant :
+Ce fournisseur fonctionne exactement comme le fournisseur **extensionToExtension**, la seule différence étant que la règle examine le suffixe du fichier et non simplement l’extension. Prenons l’exemple suivant :
 
 ![Règles de l’exemple fileSuffixToExtension](media/filenesting_filesuffixtoextension.png) ![Effet de l’exemple fileSuffixToExtension](media/filenesting_filesuffixtoextension_effect.png)
 
@@ -88,7 +88,7 @@ Ce fournisseur fonctionne exactement comme le fournisseur **extensionToExtension
 
 Ce fournisseur imbrique les fichiers avec une extension supplémentaire sous le fichier sans extension supplémentaire. L’extension supplémentaire doit apparaître uniquement à la fin du nom de fichier complet.
 
-Prenons l'exemple suivant :
+Prenons l’exemple suivant :
 
 ![Règles de l’exemple addedExtension](media/filenesting_addedextension.png) ![Effet de l’exemple addedExtension](media/filenesting_addedextension_effect.png)
 
@@ -101,7 +101,7 @@ Prenons l'exemple suivant :
 
 Ce fournisseur imbrique les fichiers avec une extension supplémentaire sous un fichier sans extension supplémentaire. L’extension supplémentaire doit apparaître uniquement au milieu du nom de fichier complet.
 
-Prenons l'exemple suivant :
+Prenons l’exemple suivant :
 
 ![Règles de l’exemple pathSegment](media/filenesting_pathsegment.png) ![Effet de l’exemple pathSegment](media/filenesting_pathsegment_effect.png)
 
@@ -126,7 +126,7 @@ Prenons l'exemple suivant :
 
 ### <a name="the-allextensions-provider"></a>Fournisseur allExtensions
 
-Ce fournisseur vous permet de définir des règles d’imbrication de fichiers pour les fichiers ayant une extension quelconque mais le même nom de fichier de base. Prenons l'exemple suivant :
+Ce fournisseur vous permet de définir des règles d’imbrication de fichiers pour les fichiers ayant une extension quelconque mais le même nom de fichier de base. Prenons l’exemple suivant :
 
 ![Règles de l’exemple allExtensions](media/filenesting_allextensions.png) ![Effet de l’exemple allExtensions](media/filenesting_allextensions_effect.png)
 
@@ -134,7 +134,7 @@ Ce fournisseur vous permet de définir des règles d’imbrication de fichiers p
 
 ### <a name="the-filetofile-provider"></a>Fournisseur fileToFile
 
-Ce fournisseur vous permet de définir des règles d’imbrication de fichiers basées sur des noms de fichiers entiers. Prenons l'exemple suivant :
+Ce fournisseur vous permet de définir des règles d’imbrication de fichiers basées sur des noms de fichiers entiers. Prenons l’exemple suivant :
 
 ![Règles de l’exemple fileToFile](media/filenesting_filetofile.png) ![Effet de l’exemple fileToFile](media/filenesting_filetofile_effect.png)
 
@@ -181,4 +181,4 @@ Vous pouvez désactiver les règles d’imbrication de fichiers globales pour de
 ## <a name="see-also"></a>Voir aussi
 
 - [Personnaliser l’IDE](../ide/personalizing-the-visual-studio-ide.md)
-- [Solutions et projets dans Visual Studio](solutions-and-projects-in-visual-studio.md)
+- [Solutions et projets en Visual Studio](solutions-and-projects-in-visual-studio.md)

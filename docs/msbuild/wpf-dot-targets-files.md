@@ -12,22 +12,24 @@ helpviewer_keywords:
 - WPF .targets files [WPF MSBuild], introduction
 - WPF .targets files [WPF MSBuild]
 ms.assetid: e85a3ff4-dedd-4ff4-9b22-3a1e94755362
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c61e305868045664af7333bbb7dcce0beed54370
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: d3225777c020272a24ac124bf6d039c2154e2ff3
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62778028"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "77630949"
 ---
 # <a name="wpf-targets-files"></a>Fichiers .Targets WPF
-[!INCLUDE[TLA#tla_winclient](../misc/includes/tlasharptla_winclient_md.md)]étend [!INCLUDE[TLA#tla_msbuild](../msbuild/includes/tlasharptla_msbuild_md.md)] en ajoutant un ensemble de tâches propres à [!INCLUDE[TLA2#tla_wpf](../msbuild/includes/tla2sharptla_wpf_md.md)] qui sont regroupées dans un fichier *.targets* spécial, *Microsoft.WinFX.targets*. Ce fichier combine l’ensemble des tâches [!INCLUDE[TLA2#tla_msbuild](../msbuild/includes/tla2sharptla_msbuild_md.md)] qui sont nécessaires pour créer un projet [!INCLUDE[TLA2#tla_msbuild](../msbuild/includes/tla2sharptla_msbuild_md.md)] dans [!INCLUDE[TLA#tla_winclient](../misc/includes/tlasharptla_winclient_md.md)].
+
+Windows Presentation Foundation (WPF) étend le MSBuild en ajoutant un ensemble de tâches spécifiques au WPF qui sont combinées dans un fichier *spécial .targets,* *Microsoft.WinFX.targets*. Ce fichier combine l’ensemble des tâches MSBuild qui sont nécessaires pour construire un projet MSBuild dans WPF.
 
 ## <a name="see-also"></a>Voir aussi
-- [Fichiers .targets MSBuild](../msbuild/msbuild-dot-targets-files.md)
-- [Informations de référence sur MSBuild](../msbuild/msbuild-reference.md)
+
+- [MSBuild .cibles fichiers](../msbuild/msbuild-dot-targets-files.md)
+- [Référence MSBuild](../msbuild/msbuild-reference.md)
 - [Génération d’une application WPF (WPF)](/dotnet/framework/wpf/app-development/building-a-wpf-application-wpf)

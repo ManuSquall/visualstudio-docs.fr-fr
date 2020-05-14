@@ -10,10 +10,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: ada1f297bbb30fbe636042c87aae42849c1b6b7d
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75595356"
 ---
 # <a name="create-a-data-driven-coded-ui-test"></a>Créer un test codé de l'interface utilisateur piloté par les données
@@ -22,7 +22,7 @@ Pour tester différentes conditions, vous pouvez exécuter vos tests à plusieur
 
 [!INCLUDE [coded-ui-test-deprecation](includes/coded-ui-test-deprecation.md)]
 
-**Spécifications**
+**Configuration requise**
 
 - Visual Studio Enterprise
 - Composant Test codé de l’interface utilisateur
@@ -33,12 +33,12 @@ Cet exemple crée un test codé de l'interface utilisateur qui s'exécute sur l'
 
 ### <a name="step-1---create-a-coded-ui-test"></a>Étape 1 : Créer un test codé de l'interface utilisateur
 
-1. Créez un projet.
+1. Crée un projet.
 
     ![Créer un projet de test d'interface utilisateur codé](../test/media/cuit_datadriven_.png)
 
    > [!NOTE]
-   > Si vous ne voyez pas le modèle **Projet de test codé de l’interface utilisateur**, vous devez [installer le composant de test codé de l’interface utilisateur](../test/use-ui-automation-to-test-your-code.md#install-the-coded-ui-test-component).
+   > Si vous ne voyez pas le modèle **Coded UI Test Project,** vous devez [installer le composant de test d’interface utilisateur codé](../test/use-ui-automation-to-test-your-code.md#install-the-coded-ui-test-component).
 
 2. Choisissez **d’enregistrer les actions**.
 
@@ -64,7 +64,7 @@ Cet exemple crée un test codé de l'interface utilisateur qui s'exécute sur l'
    }
    ```
 
-5. Utilisez la méthode `AddNumbers()` pour vérifier que le test s'exécute. Placez le curseur dans la méthode de test illustrée ci-dessus, ouvrez le menu contextuel (clic droit) et choisissez **Exécuter les tests**. (Raccourci clavier : **Ctrl**+**R**,**T**).
+5. Utilisez la méthode `AddNumbers()` pour vérifier que le test s'exécute. Placez le curseur dans la méthode de test illustrée ci-dessus, ouvrez le menu contextuel (clic droit) et choisissez **Exécuter les tests**. (Raccourci clavier: **Ctrl**+**R**,**T**).
 
     Le résultat du test qui indique si le test a réussi ou a échoué apparaît dans la fenêtre **Explorateur de tests**. Pour ouvrir la fenêtre Explorateur de tests, dans le menu **Test**, choisissez **Fenêtres**, puis **Explorateur de tests**.
 
@@ -92,7 +92,7 @@ Cet exemple crée un test codé de l'interface utilisateur qui s'exécute sur l'
    }
    ```
 
-9. Vérifiez que le test s'exécute à l'aide de la méthode `ValidateSum()`. Placez le curseur dans la méthode de test illustrée ci-dessus, ouvrez le menu contextuel (clic droit) et choisissez **Exécuter les tests**. (Raccourci clavier : **Ctrl**+**R**,**T**).
+9. Vérifiez que le test s'exécute à l'aide de la méthode `ValidateSum()`. Placez le curseur dans la méthode de test illustrée ci-dessus, ouvrez le menu contextuel (clic droit) et choisissez **Exécuter les tests**. (Raccourci clavier: **Ctrl**+**R**,**T**).
 
      À ce stade, toutes les valeurs de paramètre sont définies dans leurs méthodes en tant que constantes. Ensuite, nous allons créer un jeu de données pour créer notre test piloté par les données.
 
@@ -104,7 +104,7 @@ Cet exemple crée un test codé de l'interface utilisateur qui s'exécute sur l'
 
 2. Renseignez le fichier .*csv* avec les données suivantes :
 
-    |Num1|Num2|Sum|
+    |Num1|Num2|SUM|
     |-|-|-|
     |3|4|7|
     |5|6|11|
@@ -140,7 +140,7 @@ Cet exemple crée un test codé de l'interface utilisateur qui s'exécute sur l'
     > [!TIP]
     > Consultez les [exemples d’attributs de source de données](#CreateDataDrivenCUIT_QA_DataSourceAttributes) dans la section des questions et réponses sur l’utilisation d’autres types de source de données tels que XML, SQL Express et Excel.
 
-2. Exécuter le test.
+2. Exécutez le test.
 
      Notez que le test s'exécute via trois itérations. En effet, la source de données qui a été liée contient trois lignes de données. En revanche, vous pouvez remarquer que le test utilise toujours les valeurs de paramètre constantes et additionne 1 + 2 avec une somme de 3 à chaque fois.
 
@@ -199,11 +199,11 @@ Vérifiez que le test est maintenant piloté par les données en l'exécutant de
 
 Vous devez voir le test s'exécuter via trois itérations à l'aide des valeurs incluses dans le fichier .*csv*. La validation doit également fonctionner et le test doit s’afficher comme réussi dans l’Explorateur de tests.
 
-## <a name="q--a"></a>Q et R
+## <a name="q--a"></a>Questions et réponses
 
-### <a name="CreateDataDrivenCUIT_QA_DataSourceAttributes"></a> Quels sont les attributs de la source de données pour d’autres types de source de données, comme SQL Express ou XML ?
+### <a name="what-are-the-data-source-attributes-for-other-data-source-types-such-as-sql-express-or-xml"></a><a name="CreateDataDrivenCUIT_QA_DataSourceAttributes"></a> Quels sont les attributs de la source de données pour d’autres types de source de données, comme SQL Express ou XML ?
 
-**R :** Vous pouvez utiliser les exemples de chaînes de source de données dans le tableau ci-dessous en les copiant dans votre code et en effectuant les personnalisations nécessaires.
+**R:** Vous pouvez utiliser les chaînes de source de données de l’échantillon dans le tableau ci-dessous en les copiant à votre code et en effectuant les personnalisations nécessaires.
 
 **Types de source de données et attributs**
 
@@ -229,15 +229,15 @@ Vous devez voir le test s'exécuter via trois itérations à l'aide des valeurs 
 
 ### <a name="q-why-cant-i-modify-the-code-in-the-uimapdesigner-file"></a>Q : Pourquoi ne puis-je pas modifier le code du fichier UIMap.Designer ?
 
-**R** : Toutes les modifications de code que vous effectuez dans le fichier *UIMapDesigner.cs* sont remplacées chaque fois que vous générez du code dans UIMap - Générateur de test codé de l’interface utilisateur. Dans cet exemple et dans la plupart des cas, les modifications de code nécessaires pour permettre à un test d’utiliser une source de données peuvent être apportées au fichier de code source du test (c’est-à-dire, *CodedUITest1.cs*).
+**R:** Toutes les modifications de code que vous effectuez dans le fichier *UIMapDesigner.cs* seront écrasées chaque fois que vous générerez du code à l’aide de l’interface utilisateur - Coded UI Test Builder. Dans cet exemple et dans la plupart des cas, les modifications de code nécessaires pour permettre à un test d’utiliser une source de données peuvent être apportées au fichier de code source du test (c’est-à-dire, *CodedUITest1.cs*).
 
-Si vous devez modifier une méthode enregistrée, vous devez la copier dans le fichier *UIMap.cs* et la renommer. Le fichier *UIMap.cs* peut être utilisé pour remplacer les méthodes et les propriétés dans le fichier *UIMapDesigner.cs*. Vous devez supprimer la référence à la méthode d’origine dans le fichier Coded *UITest.cs* et la remplacer par le nom de la méthode renommée.
+Si vous devez modifier une méthode enregistrée, vous devez la copier dans le fichier *UIMap.cs* et la renommer. Le *fichier UIMap.cs* peut être utilisé pour remplacer les méthodes et les propriétés dans le fichier *UIMapDesigner.cs.* Vous devez supprimer la référence à la méthode originale dans le fichier *de UITest.cs* codé et la remplacer par le nom de méthode rebaptisé.
 
 ## <a name="see-also"></a>Voir aussi
 
 - [UIMap](/previous-versions/dd580454(v=vs.140))
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert>
-- [Utiliser l’automatisation de l’interface utilisateur pour tester votre code](../test/use-ui-automation-to-test-your-code.md)
+- [Utilisez l’automatisation de l’interface utilisateur pour tester votre code](../test/use-ui-automation-to-test-your-code.md)
 - [Créer des tests codés de l’interface utilisateur](../test/use-ui-automation-to-test-your-code.md)
-- [Bonnes pratiques pour les tests codés de l’interface utilisateur](../test/best-practices-for-coded-ui-tests.md)
-- [Plateformes et configurations prises en charge pour les tests codés de l’interface utilisateur et les enregistrements des actions](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)
+- [Meilleures pratiques pour les tests d’interface utilisateur codés](../test/best-practices-for-coded-ui-tests.md)
+- [Configurations et plates-formes prises en charge pour les tests d’interface utilisateur codés et les enregistrements d’action](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)

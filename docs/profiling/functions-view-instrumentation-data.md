@@ -12,10 +12,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 423b6d61af93c37e6fa83549ed3fa5d422128165
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74779218"
 ---
 # <a name="functions-view---instrumentation-data"></a>Fonctions, vue - données d’instrumentation
@@ -26,15 +26,15 @@ La vue du rapport Fonctions répertorie les données de profilage par nom de fon
 
 |Colonne|Description|
 |------------|-----------------|
-|**Nom de la fonction**|Nom de la fonction.|
+|**Nom de fonction**|Nom de la fonction.|
 |**Adresse de la fonction**|Adresse de la fonction.|
 |**Numéro de ligne de fonction**|Numéro de ligne du début de cette fonction dans le fichier source.|
 |**Nombre d’appels**|Nombre total d'appels passés à cette fonction.|
 |**Fichier source**|Fichier source contenant la définition pour cette fonction.|
-|**Nom de module**|Nom du module qui contient la fonction.|
-|**Chemin de module**|Chemin d’accès du module qui contient la fonction.|
+|**Nom du module**|Nom du module qui contient la fonction.|
+|**Chemin du module**|Chemin d’accès du module qui contient la fonction.|
 |**ID du processus**|ID du processus (PID) de l'exécution du profilage.|
-|**Nom du processus**|nom du processus.|
+|**Nom du processus**|Nom du processus.|
 |**Traitement de sondes du temps exclusif**|Surcharge de temps pour cette fonction qui est provoquée par l'instrumentation. Cela n’inclut pas la surcharge des fonctions appelées par la fonction. Le traitement de sondes a été soustrait de tous les temps exclusifs.|
 |**Traitement des sondes temps inclus**|Surcharge de temps pour cette fonction et ses fonctions enfants qui est provoquée par l'instrumentation. Cela inclut la surcharge dans les fonctions appelées par la fonction. Le traitement de sondes a été soustrait de tous les temps inclusifs.|
 
@@ -83,7 +83,7 @@ La vue du rapport Fonctions répertorie les données de profilage par nom de fon
 |**Temps exclusif d’application min.**|Temps exclusif d’application minimal d’un appel à cette fonction.|
 
 ## <a name="see-also"></a>Voir aussi
-- [Comment : personnaliser les colonnes de la vue rapport](../profiling/how-to-customize-report-view-columns.md)
-- [Mode Fonctions](../profiling/functions-view-sampling-data.md)
-- [Fonctions, vue - échantillonnage](../profiling/functions-view-dotnet-memory-sampling-data.md)
-- [Fonctions, vue - instrumentation](../profiling/functions-view-dotnet-memory-instrumentation-data.md)
+- [Guide pratique pour personnaliser les colonnes de la vue de rapport](../profiling/how-to-customize-report-view-columns.md)
+- [Vue Fonctions](../profiling/functions-view-sampling-data.md)
+- [Vue des fonctions - échantillonnage](../profiling/functions-view-dotnet-memory-sampling-data.md)
+- [Fonctions Vue - instrumentation](../profiling/functions-view-dotnet-memory-instrumentation-data.md)

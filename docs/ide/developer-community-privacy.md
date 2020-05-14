@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 1e87f35778b8aec615410312c0eb7373d4e9969f
-ms.sourcegitcommit: 10d16e18c5f5e482c4c2856e6cacaad283463b65
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/09/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75775890"
 ---
 # <a name="developer-community-data-privacy"></a>Confidentialité des données de la communauté des développeurs
@@ -68,7 +68,7 @@ Si **Signaler un problème** est lancé à partir de Visual Studio, nous collect
 
 - Journaux Python, s’ils existent
 
-- Windows Forms les journaux, s’ils existent
+- Windows Forms journaux, s’ils existent
 
 - Une capture d’écran, si vous choisissez de l’inclure
 
@@ -81,11 +81,11 @@ Si **Signaler un problème** est lancé à partir de Visual Studio, nous collect
   - Le fichier dump.
 
 > [!NOTE]
-> Les fichiers journaux, les captures d’écran et les données d’enregistrement que vous envoyez peuvent accroître considérablement la capacité de Microsoft à comprendre et à résoudre votre problème.  Nous vous recommandons donc de les inclure. Pour protéger votre confidentialité, les fichiers journaux, captures d’écran et données d’enregistrement joints sont envoyés uniquement à Microsoft lorsque vous fournissez une autorisation en soumettant le rapport de problème avec lequel ils sont inclus. Vous pouvez voir quels fichiers sont inclus dans l’étape « Résumé » de la fenêtre « signaler un problème » avant d’envoyer le rapport. Vous pouvez exclure des fichiers journaux système du rapport en désactivent l’option « joindre les journaux système » dans l’étape « Résumé ». Pour référence, consultez la capture d’écran suivante. 
-  > ![signaler un problème-Résumé des journaux collectés](media/report-a-problem-logs-collected.png)
+> Les fichiers journalaux, les captures d’écran et les données d’enregistrement que vous envoyez peuvent augmenter considérablement la capacité de Microsoft à comprendre et à répondre à votre problème.  Nous vous recommandons donc de les inclure. Pour protéger votre vie privée, tous les fichiers journaux, captures d’écran et données d’enregistrement ci-joints ne sont envoyés à Microsoft que lorsque vous fournissez la permission en soumettant le rapport de problème avec lequel ils sont inclus. Vous pouvez voir quels fichiers sont inclus sur l’étape « Résumé » de la fenêtre « Rapport un problème » avant de soumettre le rapport. Vous pouvez exclure les fichiers de journal système du rapport en décochant les « journaux du système d’attachement » dans l’étape « Résumé ». Pour référence, voir la capture d’écran suivante. 
+  > ![Signaler un problème - Résumé des journaux collectés](media/report-a-problem-logs-collected.png)
 
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Comment signaler un problème avec Visual Studio](how-to-report-a-problem-with-visual-studio.md)
+- [Guide pratique pour signaler un problème avec Visual Studio](how-to-report-a-problem-with-visual-studio.md)
 - [Confidentialité des données de rapport de problème C++](/cpp/how-to-report-a-problem-with-the-visual-cpp-toolset#reports-and-privacy)

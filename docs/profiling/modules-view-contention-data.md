@@ -12,10 +12,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 2de844867e9c0a8d95abdaa13f860a6487254bfe
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74780011"
 ---
 # <a name="modules-view---contention-data"></a>Modules, vue - données de conflit
@@ -28,7 +28,7 @@ La vue Modules des données de conflit affiche les données de concurrence regro
 |Colonne|Description|
 |------------|-----------------|
 |**Temps bloqué exclusif**|-   Pour une fonction, durée pendant laquelle l’exécution du code du corps de cette fonction a été bloquée. Le temps bloqué dans les fonctions qui ont été appelées par la fonction n’est pas inclus.<br />-   Pour un module, somme des durées de blocage exclusives des fonctions du module.<br />-   Pour une ligne ou une instruction, durée pendant laquelle l’exécution de cette ligne ou de cette instruction a été bloquée.|
-|**% de temps bloqué exclusif**|-   Pour une fonction ou un module, pourcentage de la durée totale de blocage dans l’exécution du profilage qui était du temps de blocage exclusif de cette fonction ou de ce module.<br />-   Pour une ligne ou une instruction, pourcentage de la durée totale de blocage dans l’exécution du profilage pendant lequel l’exécution de cette ligne ou de cette instruction a été bloquée.|
+|**% de temps bloqué exclusif**|-   Pour une fonction ou un module, pourcentage de la durée totale de blocage dans l’exécution du profilage qui était du temps de blocage exclusif de cette fonction ou de ce module.<br />-   Pour une ligne ou une instruction, pourcentage de la durée totale de blocage dans l’exécution du profilage pendant lequel l’exécution de cette ligne ou de cette instruction a été bloquée.|
 |**Conflits exclusifs**|-   Pour une fonction, nombre de fois où l’exécution de code du corps de la fonction a été bloquée. Les conflits dans les fonctions qui ont été appelées par la fonction ne sont pas incluses.<br />-   Pour un module, somme des conflits exclusifs des fonctions dans le module.<br />-   Pour une ligne ou une instruction, nombre de fois où l’exécution de cette ligne ou de cette instruction a été bloquée.|
 |**% de conflits exclusifs**|-   Pour une fonction ou un module, pourcentage de tous les conflits dans l’exécution du profilage qui étaient des conflits exclusifs de cette fonction ou de ce module.<br />-   Pour une ligne ou une instruction, pourcentage de tous les conflits dans l’exécution du profilage qui étaient des conflits ayant bloqué l’exécution de cette ligne ou de cette instruction.|
 |**Temps bloqué inclusif**|-   Pour une fonction, durée pendant laquelle l’exécution de cette fonction ou d’une des fonctions appelées par cette fonction a été bloquée.<br />-   Pour un module, somme du temps de blocage pendant lequel au moins une fonction du module était sur la pile.<br />-   Pour une ligne ou une instruction, durée pendant laquelle l’exécution de cette ligne ou de cette instruction a été bloquée.|
@@ -36,17 +36,17 @@ La vue Modules des données de conflit affiche les données de concurrence regro
 |**Conflits inclusifs**|-   Pour une fonction, nombre de fois où l’exécution de cette fonction ou d’une des fonctions appelées par cette fonction a été bloquée.<br />-   Pour un module, nombre de conflits dans lesquels au moins une fonction de ce module était sur la pile.<br />-   Pour une ligne ou une instruction, nombre de fois où l’exécution de cette ligne ou de cette instruction a été bloquée.|
 |**% de conflits inclusifs**|-   Pour une fonction ou un module, pourcentage de tous les conflits dans l’exécution du profilage qui étaient des conflits inclufs de cette fonction ou de ce module.<br />-   Pour une ligne ou une instruction, pourcentage de la durée totale de blocage dans l’exécution du profilage pendant lequel cette ligne ou cette instruction s’exécutait.|
 |**Numéro de ligne de fonction**|Numéro de ligne du début de cette fonction dans le fichier source.|
-|**Nom de module**|Nom du module qui contient la fonction, la ligne ou le pointeur d’instruction.|
-|**Chemin de module**|Chemin du module qui contient le module, la fonction, la ligne ou le pointeur d’instruction.|
-|**Nom**|Nom du module ou de la fonction.|
+|**Nom du module**|Nom du module qui contient la fonction, la ligne ou le pointeur d’instruction.|
+|**Chemin du module**|Chemin du module qui contient le module, la fonction, la ligne ou le pointeur d’instruction.|
+|**Nom   **|Nom du module ou de la fonction.|
 |**ID du processus**|ID du processus (PID) de l'exécution du profilage.|
-|**Nom du processus**|nom du processus.|
+|**Nom du processus**|Nom du processus.|
 |**Fichier source**|Fichier source contenant la définition pour cette fonction.|
 
 ## <a name="see-also"></a>Voir aussi
-- [Comment : personnaliser les colonnes de la vue rapport](../profiling/how-to-customize-report-view-columns.md)
+- [Guide pratique pour personnaliser les colonnes de la vue de rapport](../profiling/how-to-customize-report-view-columns.md)
 - [Vue Modules](../profiling/modules-view.md)
-- [Vue des modules - Instrumentation](../profiling/modules-view-dotnet-memory-instrumentation-data.md)
-- [Modules, vue - échantillonnage](../profiling/modules-view-dotnet-memory-sampling-data.md)
+- [Modules Vue - instrumentation](../profiling/modules-view-dotnet-memory-instrumentation-data.md)
+- [Modules Vue - échantillonnage](../profiling/modules-view-dotnet-memory-sampling-data.md)
 - [Vue Modules](../profiling/modules-view-instrumentation-data.md)
 - [Vue Modules](../profiling/modules-view-sampling-data.md)

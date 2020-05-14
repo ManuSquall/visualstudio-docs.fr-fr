@@ -1,5 +1,5 @@
 ---
-title: IDebugManagedObject | Microsoft Docs
+title: IDebugManagedObject - France Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugManagedObject interface
 ms.assetid: 3ae09d34-112c-4285-80ee-9f7f8dc414d7
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6744ae98a0210a6832bce1bdb0cd68f08145f3eb
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 6fbd270aa1b65f05f308d41d22f154fb53b8833d
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66349414"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80727694"
 ---
 # <a name="idebugmanagedobject"></a>IDebugManagedObject
 > [!IMPORTANT]
-> Dans Visual Studio 2015, ce moyen d’implémenter des évaluateurs d’expression est déconseillée. Pour plus d’informations sur l’implémentation des évaluateurs d’expression CLR, consultez [évaluateurs d’Expression CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) et [exemple d’évaluateur d’Expression gérés](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).
+> Dans Visual Studio 2015, cette façon de mettre en œuvre les évaluateurs d’expression est dépréciée. Pour obtenir de l’information sur la mise en œuvre des évaluateurs de l’expression CLR, veuillez consulter [les évaluateurs de l’expression CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) et [l’échantillon d’évaluateur d’expression gérée.](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)
 
- Cette interface permet à l’évaluateur d’expression (EE) pour appeler des méthodes ou propriétés sur les instances de classe de valeur (par exemple, `System.Decimal`) et pour définir leur valeur sans appeler [Evaluate](../../../extensibility/debugger/reference/idebugfunctionobject-evaluate.md) sur le programme en cours de débogage.
+ Cette interface permet à l’évaluateur d’expression (EE) d’appeler `System.Decimal`des propriétés ou des méthodes sur les instances de classe de valeur (par exemple, ) et de définir leur valeur sans appeler [Évaluer](../../../extensibility/debugger/reference/idebugfunctionobject-evaluate.md) le programme étant débogé.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -31,30 +31,30 @@ ms.locfileid: "66349414"
 IDebugManagedObject : IDebugObject
 ```
 
-## <a name="notes-for-implementers"></a>Notes de publication pour les implémenteurs
- Un évaluateur d’expression implémente cette interface pour représenter un objet de code managé comme une variable.
+## <a name="notes-for-implementers"></a>Notes pour les implémenteurs
+ Un évaluateur d’expression implémente cette interface pour représenter un objet de code géré tel qu’une variable.
 
-## <a name="notes-for-callers"></a>Notes de publication pour les appelants
- Pour obtenir cette interface, appelez [GetManagedDebugObject](../../../extensibility/debugger/reference/idebugobject-getmanageddebugobject.md) sur un [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) qui représente une instance d’une classe value.
+## <a name="notes-for-callers"></a>Notes pour les appelants
+ Pour obtenir cette interface, appelez [GetManagedDebugObject](../../../extensibility/debugger/reference/idebugobject-getmanageddebugobject.md) sur un [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) qui représente une instance d’une classe de valeur.
 
 ## <a name="methods-in-vtable-order"></a>Méthodes dans l'ordre Vtable
- Outre les méthodes héritées de [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md), le `IDebugManagedObject` interface expose les méthodes suivantes.
+ En plus des méthodes héritées de [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md), l’interface `IDebugManagedObject` expose les méthodes suivantes.
 
 |Méthode|Description|
 |------------|-----------------|
-|[GetManagedObject](../../../extensibility/debugger/reference/idebugmanagedobject-getmanagedobject.md)|Retourne une interface qui représente l’objet de code managé et à partir de quels tout code managé approprié interface peut être obtenue.|
-|[SetFromManagedObject](../../../extensibility/debugger/reference/idebugmanagedobject-setfrommanagedobject.md)|Définit la valeur de cet objet à la valeur d’un objet de code managé spécifié.|
+|[GetManagedObject](../../../extensibility/debugger/reference/idebugmanagedobject-getmanagedobject.md)|Renvoie une interface qui représente l’objet de code géré et à partir de laquelle toute interface de code gérée appropriée peut être obtenue.|
+|[SetFromManagedObject](../../../extensibility/debugger/reference/idebugmanagedobject-setfrommanagedobject.md)|Définit la valeur de cet objet à la valeur d’un objet de code géré spécifié.|
 
 ## <a name="remarks"></a>Notes
- Un évaluateur d’expression utilise cette interface pour stocker un objet de code managé dans une arborescence d’analyse.
+ Un évaluateur d’expression utilise cette interface pour stocker un objet de code géré dans un arbre d’analyse.
 
-## <a name="requirements"></a>Configuration requise
- En-tête : ee.h
+## <a name="requirements"></a>Spécifications
+ En-tête: ee.h
 
- Espace de noms : Microsoft.VisualStudio.Debugger.Interop
+ Namespace: Microsoft.VisualStudio.Debugger.Interop
 
- Assembly : Microsoft.VisualStudio.Debugger.Interop.dll
+ Assemblage: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>Voir aussi
-- [Expression Evaluation Interfaces](../../../extensibility/debugger/reference/expression-evaluation-interfaces.md)
-- [Evaluate](../../../extensibility/debugger/reference/idebugfunctionobject-evaluate.md)
+- [Interfaces d’évaluation des expressions](../../../extensibility/debugger/reference/expression-evaluation-interfaces.md)
+- [Évaluer](../../../extensibility/debugger/reference/idebugfunctionobject-evaluate.md)

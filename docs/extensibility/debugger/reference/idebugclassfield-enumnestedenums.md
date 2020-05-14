@@ -1,5 +1,5 @@
 ---
-title: IDebugClassField::EnumNestedEnums | Microsoft Docs
+title: IDebugClassField:EnumNestedEnums ( Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugClassField::EnumNestedEnums method
 ms.assetid: 90fd0cef-9145-4de6-91d4-6c881df39d6e
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 5b8d69c79ed1e27d2c65908d02730f46f4ed6f85
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 38ee3ccd1ffd3130bc918da18c631cf08683f064
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66313109"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80734410"
 ---
 # <a name="idebugclassfieldenumnestedenums"></a>IDebugClassField::EnumNestedEnums
-Crée un énumérateur pour les énumérateurs imbriquées de cette classe.
+Crée un enumérateur pour lesumérateurs imbriqués de cette classe.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -41,15 +41,15 @@ int EnumNestedEnums(
 
 ## <a name="parameters"></a>Paramètres
 `ppEnum`\
-[out] Retourne un [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md) objet représentant la liste des énumérations imbriquées. Retourne une valeur null si aucun énumérations imbriquées.
+[out] Retourne un objet [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md) représentant la liste des énumérations imbriquées. Renvoie une valeur nulle s’il n’y a pas de recensements imbriqués.
 
 ## <a name="return-value"></a>Valeur de retour
-En cas de réussite, retourne S_OK, ou retourne S_FALSE s’il en existe aucun énumérateurs imbriqués. Sinon, retourne un code d'erreur.
+En cas de succès, les retours S_OK ou retournent S_FALSE s’il n’y a pas d’énumérateurs imbriqués. Sinon, retourne un code d'erreur.
 
 ## <a name="remarks"></a>Notes
-Chaque élément de l’énumération est un [IDebugEnumField](../../../extensibility/debugger/reference/idebugenumfield.md) objet décrivant une énumération imbriquée.
+Chaque élément de l’énumération est un objet [IDebugEnumField](../../../extensibility/debugger/reference/idebugenumfield.md) décrivant une énumération imbriquée.
 
-Une énumération déclarée à l’intérieur d’une classe est considérée comme une énumération imbriquée. Par exemple, soit :
+Un recensement déclaré à l’intérieur d’une classe est considéré comme une énumération imbriquée. Prenons l’exemple suivant :
 
 ```
 class RootClass {
@@ -57,7 +57,7 @@ class RootClass {
 };
 ```
 
-Le `EnumNestedEnums` méthode retournerait une [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md) objet qui contient un [IDebugEnumField](../../../extensibility/debugger/reference/idebugenumfield.md) objet qui représente le `NestedEnum` énumération.
+La `EnumNestedEnums` méthode rendrait un objet [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md) qui contient un objet `NestedEnum` [IDebugEnumField](../../../extensibility/debugger/reference/idebugenumfield.md) qui représente l’énumération.
 
 ## <a name="see-also"></a>Voir aussi
 - [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md)

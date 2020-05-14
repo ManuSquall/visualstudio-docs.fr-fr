@@ -11,10 +11,10 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: 8b4510ed738fdd2b33389ab4242dbde86cffff8c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "62957730"
 ---
 # <a name="use-ipython-in-the-interactive-window"></a>Utiliser IPython dans la fenêtre interactive
@@ -32,11 +32,11 @@ Pour cette procédure pas à pas, vous devez avoir installé l’environnement [
 
 3. Sélectionnez l’onglet **Vue d’ensemble** et **Utiliser le mode interactif IPython**. (Dans Visual Studio 2015, sélectionnez **Configure interactive options** (Configurer les options interactives) pour ouvrir la boîte de dialogue **Options**, affectez à **Mode interactif** la valeur **IPython**, puis sélectionnez **OK**).
 
-4. Sélectionnez **Ouvrir une fenêtre interactive** pour afficher la **fenêtre interactive** en mode IPython. Vous devrez peut-être réinitialiser la fenêtre si vous venez de changer le mode interactif. Vous devrez peut-être aussi appuyer sur **Entrée** si seule une invite >>> s’affiche pour obtenir une invite similaire à  **[2]**.
+4. Sélectionnez **Ouvrir une fenêtre interactive** pour afficher la **fenêtre interactive** en mode IPython. Vous devrez peut-être réinitialiser la fenêtre si vous venez de changer le mode interactif. Vous devrez peut-être aussi appuyer sur **Entrée** si seule une invite >>> s’affiche pour obtenir une invite similaire à ** [2]**.
 
     ![Fenêtre interactive en mode IPython](media/ipython-repl-03.png)
 
-5. Entrez le code suivant :
+5. Entrez le code suivant :
 
    ```python
    import matplotlib.pyplot as plt
@@ -51,7 +51,7 @@ Pour cette procédure pas à pas, vous devez avoir installé l’environnement [
 
     ![Graphique inline dans la fenêtre interactive](media/ipython-repl-04.png)
 
-7. Au lieu d’effectuer une saisie dans la boucle REPL, vous pouvez écrire du code dans l’éditeur, le sélectionner, cliquer dessus avec le bouton droit et sélectionner la commande **Envoyer vers Interactive** (ou appuyer sur **Ctrl**+**Entrée**). Essayez de coller le code ci-dessous dans un nouveau fichier dans l’éditeur, de le sélectionner à l’aide des touches **Ctrl**+**A**, puis de l’envoyer dans la **fenêtre interactive**. (Visual Studio envoie le code en une seule unité pour éviter de vous donner des graphes intermédiaires ou partiels. Si vous n’avez pas un projet Python ouvert avec un autre environnement sélectionné, Visual Studio ouvre une **fenêtre interactive** pour n’importe quel environnement sélectionné par défaut dans la fenêtre **Environnements Python**.)
+7. Au lieu d’effectuer une saisie dans la boucle REPL, vous pouvez écrire du code dans l’éditeur, le sélectionner, cliquer dessus avec le bouton droit et sélectionner la commande **Envoyer vers Interactive** (ou appuyer sur **Ctrl**+**Entrée**). Essayez de coller le code ci-dessous dans un nouveau fichier dans l’éditeur, en le sélectionnant avec **Ctrl**+**A**, puis en envoyant à la fenêtre **Interactive.** (Visual Studio envoie le code en une seule unité pour éviter de vous donner des graphes intermédiaires ou partiels. Si vous n’avez pas un projet Python ouvert avec un autre environnement sélectionné, Visual Studio ouvre une **fenêtre interactive** pour n’importe quel environnement sélectionné par défaut dans la fenêtre **Environnements Python**.)
 
     ```python
     from mpl_toolkits.mplot3d import Axes3D
@@ -78,7 +78,7 @@ Pour cette procédure pas à pas, vous devez avoir installé l’environnement [
 
 8. Pour afficher les graphiques en dehors de la **fenêtre interactive**, exécutez le code en utilisant cette fois la commande **Déboguer** > **Démarrer sans débogage**.
 
-IPython comporte de nombreuses autres fonctions utiles, par exemple des fonctions de sortie vers l’interpréteur de commandes système, de substitution de variables, de capture de sortie, etc. Pour plus d’informations, consultez la [documentation IPython](https://ipython.org/documentation.html).
+IPython a beaucoup d’autres fonctionnalités utiles telles que s’échapper à la coque du système, substitution variable, capture de sortie, etc. Consultez la [documentation IPython](https://ipython.org/documentation.html) pour en savoir plus.
 
 ## <a name="see-also"></a>Voir aussi
 

@@ -10,17 +10,17 @@ dev_langs:
 helpviewer_keywords:
 - VerifyFileHash task [MSBuild]
 - MSBuild, VerifyFileHash task
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9340657704900feb5ebdc188103109872ee39f5d
-ms.sourcegitcommit: e3b9cbeea282f1b531c6a3f60515ebfe1688aa0e
+ms.openlocfilehash: 53819a642edcdf0419dd445ac32dbde8d14ffb22
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/18/2020
-ms.locfileid: "77439118"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "77579521"
 ---
 # <a name="verifyfilehash-task"></a>VerifyFileHash, tâche
 
@@ -30,16 +30,16 @@ Cette tâche a été ajoutée dans la version 15.8, mais nécessite une [soluti
 
 ## <a name="task-parameters"></a>Paramètres de tâche
 
- Le tableau ci-dessous décrit les paramètres de la tâche `VerifyFileHash`.
+ Le tableau ci-dessous décrit les paramètres de la tâche `VerifyFileHash` .
 
 |Paramètre|Description|
 |---------------|-----------------|
-|`File`|Paramètre `String` requis.<br /><br />Fichier à hacher et à valider.|
+|`File`|Paramètre `String` requis.<br /><br />Le fichier à hachage et validé.|
 |`Hash`|Paramètre `String` requis.<br /><br />Hachage attendu du fichier.|
 |`Algorithm`|Paramètre `String` facultatif.<br /><br />Algorithme. Valeurs autorisées : `SHA256`, `SHA384`, `SHA512`. Valeur par défaut = `SHA256`.|
 |`HashEncoding`|Paramètre `String` facultatif.<br /><br />Encodage à utiliser pour les hachages générés. La valeur par défaut est `hex`. Valeurs autorisées = `hex`, `base64`.|
 
-## <a name="example"></a>Exemple
+## <a name="example"></a> Exemple
 
 L’exemple suivant utilise la tâche `VerifyFileHash` pour vérifier sa propre somme de contrôle.
 
@@ -61,7 +61,7 @@ L’exemple suivant utilise la tâche `VerifyFileHash` pour vérifier sa propre 
 </Project>
 ```
 
-Sur MSBuild 16,5 et versions ultérieures, si vous ne souhaitez pas que la génération échoue lorsque le hachage ne correspond pas, par exemple, si vous utilisez la comparaison de hachage comme condition pour le workflow de contrôle, vous pouvez rétrograder l’avertissement à un message à l’aide du code suivant :
+Sur MSBuild 16.5 et plus tard, si vous ne voulez pas que la construction échoue lorsque le hachage ne correspond pas, comme si vous utilisez la comparaison de hachage comme condition pour le flux de contrôle, vous pouvez déclasser l’avertissement à un message en utilisant le code suivant:
 
 ```xml
   <PropertyGroup>
@@ -87,5 +87,5 @@ Sur MSBuild 16,5 et versions ultérieures, si vous ne souhaitez pas que la gén�
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Tâches :](../msbuild/msbuild-tasks.md)
+- [Tâches](../msbuild/msbuild-tasks.md)
 - [Informations de référence sur les tâches](../msbuild/msbuild-task-reference.md)

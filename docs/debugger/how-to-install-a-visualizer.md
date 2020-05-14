@@ -1,5 +1,5 @@
 ---
-title: 'Comment : installer un visualiseur | Microsoft Docs'
+title: 'Comment : Installer un Visualisateur Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -17,52 +17,54 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2b7dfd28d70b80fd2d0f854b7db3550862b32814
-ms.sourcegitcommit: 8e123bcb21279f2770b28696995450270b4ec0e9
+ms.openlocfilehash: 499d644cc8374b070cedaf058b0e4dc17d155bdc
+ms.sourcegitcommit: 5d1b2895d3a249c6bea30eb12b0ad7c0f0862d85
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "75404375"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "80880258"
 ---
 # <a name="how-to-install-a-visualizer"></a>Comment : installer un visualiseur
 Après avoir créé un visualiseur, vous devez l'installer de sorte qu'il soit disponible dans [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. L'installation d'un visualiseur est un processus simple.
 
 > [!NOTE]
-> Dans les applications UWP, seuls les visualiseurs de texte, HTML, XML et JSON standard sont pris en charge. Les visualiseurs personnalisés (créés par l'utilisateur) ne sont pas pris en charge.
+> Dans les applications UWP, seuls les visualisateurs standard de texte, HTML, XML et JSON sont pris en charge. Les visualiseurs personnalisés (créés par l'utilisateur) ne sont pas pris en charge.
 
 ::: moniker range=">=vs-2019"
-### <a name="to-install-a-visualizer-for-visual-studio-2019"></a>Pour installer un visualiseur pour Visual Studio 2019
+### <a name="to-install-a-visualizer-for-visual-studio-2019"></a>Installer un visualiseur pour Visual Studio 2019
   
-1. Recherchez la DLL qui contient le visualiseur que vous avez généré.
+1. Localisez le DLL qui contient le visualiseur que vous avez construit.
 
-2. Copiez la dll [côté débogueur](create-custom-visualizers-of-data.md#to-create-the-debugger-side) (et toutes les dll dont elle dépend) à l’un des emplacements suivants :
+   Typiquement, il est préférable si à la fois le DLL debugger-côté et le DLL debuggee-côté spécifier **n’importe quel processeur** comme la plate-forme cible. Le DLL debugger-côté doit être soit **n’importe quel processeur** ou **32-bit**. La plate-forme cible pour le DLL debuggee-côté devrait correspondre au processus de débagé.
+
+2. Copiez le [DLL de Côté Debugger](create-custom-visualizers-of-data.md#to-create-the-debugger-side) (et tous les DLL dont il dépend) à l’un ou l’autre des endroits suivants :
 
     - *VisualStudioInstallPath* `\Common7\Packages\Debugger\Visualizers`
 
     - `My Documents\` *VisualStudioVersion* `\Visualizers`
     
-3. Copiez la dll du [côté débogué](create-custom-visualizers-of-data.md#to-create-the-debuggee-side) dans l’un des emplacements suivants :
+3. Copiez le [DLL de Debuggee Side](create-custom-visualizers-of-data.md#to-create-the-debuggee-side) à l’un ou l’autre des endroits suivants :
 
-    - *VisualStudioInstallPath* `\Common7\Packages\Debugger\Visualizers\` *Framework*
+    - *Cadre VisualStudioInstallPath* `\Common7\Packages\Debugger\Visualizers\` *Framework*
 
-    - `My Documents\` *VisualStudioVersion* `\Visualizers\` *Framework*
+    - `My Documents\`*Cadre VisualStudioVersion* `\Visualizers\` *Framework*
 
-    où *Framework* est l’un des éléments suivants :
-    - `net2.0` pour les débogueurs qui exécutent le `.NET Framework` Runtime.
-    - `netstandard2.0` pour les débogueurs à l’aide d’un Runtime qui prend en charge `netstandard 2.0` (`.NET Framework v4.6.1+` ou `.NET Core 2.0+`).
-    - `netcoreapp` pour les débogueurs qui exécutent le `.NET Core` Runtime. (prend en charge `.NET Core 2.0+`)
+    où *le Cadre* est soit :
+    - `net2.0`pour les débagés `.NET Framework` en cours d’exécution de l’heure d’exécution.
+    - `netstandard2.0`pour les débogés à l’aide d’un runtime qui prend en charge `netstandard 2.0` (`.NET Framework v4.6.1+` ou `.NET Core 2.0+`).
+    - `netcoreapp`pour les débagés `.NET Core` en cours d’exécution de l’heure d’exécution. (soutiens `.NET Core 2.0+`)
 
 4. Redémarrez la session de débogage.
 
 > [!NOTE]
-> La procédure est différente dans Visual Studio 2017 et les versions antérieures. Consultez la [version précédente](how-to-install-a-visualizer.md?view=vs-2017) de cet article.
+> La procédure est différente dans Visual Studio 2017 et plus. Voir la [version précédente](how-to-install-a-visualizer.md?view=vs-2017) de cet article.
 ::: moniker-end
 
 ::: moniker range="vs-2017"
-### <a name="to-install-a-visualizer-for-visual-studio-2017-and-older"></a>Pour installer un visualiseur pour Visual Studio 2017 et versions antérieures
+### <a name="to-install-a-visualizer-for-visual-studio-2017-and-older"></a>Installer un visualiseur pour Visual Studio 2017 et plus
 
 > [!IMPORTANT]
-> Seuls les visualiseurs .NET Framework sont pris en charge dans Visual Studio 2017 et versions antérieures.
+> Seuls les visualisateurs cadre .NET sont pris en charge dans Visual Studio 2017 et plus.
 
 1. Recherchez la DLL qui contient le visualiseur que vous avez créé.
 
@@ -80,4 +82,4 @@ Après avoir créé un visualiseur, vous devez l'installer de sorte qu'il soit d
 
 ## <a name="see-also"></a>Voir aussi
 - [Créer des visualiseurs personnalisés](../debugger/create-custom-visualizers-of-data.md)
-- [Guide pratique pour écrire un visualiseur](create-custom-visualizers-of-data.md)
+- [Comment : écrire un visualiseur](create-custom-visualizers-of-data.md)

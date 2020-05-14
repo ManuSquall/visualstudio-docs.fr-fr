@@ -1,27 +1,27 @@
 ---
-title: IDebugIDECallback::DisplayMessage | Microsoft Docs
+title: IDebugIDECallback::DisplayMessage ( Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - IDebugIDECallback::DisplayMessage
 ms.assetid: c19b48ee-b370-4fce-91fe-f82bf1e63179
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 4a80fbc6e621e4cf1619aa310e5f7cd8beba47d7
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 7073cc3d142d0faabe145b775780c177fbf0d732
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66349067"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80727857"
 ---
 # <a name="idebugidecallbackdisplaymessage"></a>IDebugIDECallback::DisplayMessage
-Envoie la chaîne de message spécifié à la fenêtre de sortie du débogueur.
+Envoie la chaîne de message spécifiée à la fenêtre de sortie du débagé.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -39,10 +39,10 @@ int DisplayMessage (
 
 ## <a name="parameters"></a>Paramètres
 `szMessage`\
-[in] Chaîne de message à afficher dans la fenêtre de sortie du débogueur.
+[dans] Chaîne de message à afficher dans la fenêtre de sortie du débagé.
 
 ## <a name="return-value"></a>Valeur de retour
- En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.
+ En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
 ## <a name="see-also"></a>Voir aussi
 - [IDebugIDECallback](../../../extensibility/debugger/reference/idebugidecallback.md)

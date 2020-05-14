@@ -1,20 +1,21 @@
 ---
 title: Refactoriser du code pour convertir une boucle for en instruction foreach
-ms.date: 05/10/2018
+ms.date: 03/10/2020
 ms.topic: reference
-author: TerryGLee
-ms.author: tglee
+author: mikadumont
+ms.author: midumont
 manager: jillfra
 dev_langs:
 - CSharp
+- VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 3539bae5bb2174fa4728fb8b277cce4ce9c48eb9
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: af52761f5cb199c7f842d01589c35501898b09aa
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75570243"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79094603"
 ---
 # <a name="refactoring-to-convert-between-a-for-loop-and-a-foreach-statement"></a>Refactorisation pour effectuer une conversion entre une boucle for et une instruction foreach
 
@@ -28,6 +29,8 @@ Cette refactorisation s’applique à :
 
 - C#
 
+- Visual Basic
+
 > [!NOTE]
 > La refactorisation Action Rapide **Convertir en foreach** est disponible uniquement pour les boucles [for](/dotnet/csharp/language-reference/keywords/for) qui contiennent les trois composants : un initialiseur, une condition et un itérateur.
 
@@ -39,15 +42,15 @@ Les raisons pour lesquelles vous voulez convertir une boucle [for](/dotnet/cshar
 
 - Vous souhaitez simplifier votre code et réduire la probabilité d’erreurs de logique dans l’initialiseur, la condition et l’itérateur.
 
-### <a name="how-to-use-it"></a>Utilisation
+### <a name="how-to-use-it"></a>Comment l’utiliser ?
 
 1. Placez le point insertion dans le mot clé `for`.
 
-1. Appuyez sur **Ctrl**+ **.** ou cliquez sur l’icône en forme de tournevis ![Icône en forme de tournevis](../media/screwdriver-icon.png) dans la marge du fichier de code.
+1. Appuyez **sur Ctrl**+**.** ou cliquez sur l’icône en forme de tournevis ![Icône en forme de tournevis](../media/screwdriver-icon.png) dans la marge du fichier de code.
 
    ![Menu Convertir en 'foreach'](media/convert-to-foreach.png)
 
-1. Sélectionnez **Convertir en 'foreach'** . Vous pouvez aussi sélectionner **Aperçu des modifications** pour ouvrir la boîte de dialogue [Aperçu des modifications](../../ide/preview-changes.md), puis sélectionner **Appliquer**.
+1. Sélectionnez **Convertir en 'foreach'**. Vous pouvez aussi sélectionner **Aperçu des modifications** pour ouvrir la boîte de dialogue [Aperçu des modifications](../../ide/preview-changes.md), puis sélectionner **Appliquer**.
 
 ## <a name="convert-a-foreach-statement-to-a-for-loop"></a>Convertir une instruction foreach en boucle for
 
@@ -57,7 +60,7 @@ Cette refactorisation s’applique à :
 
 - C#
 
-- Visual Basic
+- Visual Basic
 
 ### <a name="why-convert"></a>Pourquoi convertir
 
@@ -67,20 +70,20 @@ Les raisons pour lesquelles vous voulez convertir une instruction [foreach](/dot
 
 - Vous [itérez au sein d’un tableau multidimensionnel ](/dotnet/csharp/programming-guide/arrays/using-foreach-with-arrays) et souhaitez davantage de contrôle sur les éléments du tableau.
 
-### <a name="how-to-use-it"></a>Utilisation
+### <a name="how-to-use-it"></a>Comment l’utiliser ?
 
 1. Placez le point insertion dans le mot clé `foreach` ou `For Each`.
 
-1. Appuyez sur **Ctrl**+ **.** ou cliquez sur l’icône en forme de tournevis ![Icône en forme de tournevis](../media/screwdriver-icon.png) dans la marge du fichier de code.
+1. Appuyez **sur Ctrl**+**.** ou cliquez sur l’icône en forme de tournevis ![Icône en forme de tournevis](../media/screwdriver-icon.png) dans la marge du fichier de code.
 
    ![Menu Convertir en 'for'](media/convert-to-for.png)
 
-1. Sélectionnez **Convertir en 'for'** . Vous pouvez aussi sélectionner **Aperçu des modifications** pour ouvrir la boîte de dialogue [Aperçu des modifications](../../ide/preview-changes.md), puis sélectionner **Appliquer**.
+1. Sélectionnez **Convertir en 'for'**. Vous pouvez aussi sélectionner **Aperçu des modifications** pour ouvrir la boîte de dialogue [Aperçu des modifications](../../ide/preview-changes.md), puis sélectionner **Appliquer**.
 
 1. Étant donné que la refactorisation introduit une nouvelle variable du nombre d’itérations, la zone **Renommer** s’affiche dans l’angle supérieur droit de l’éditeur. Si vous souhaitez choisir un autre nom pour la variable, tapez-le et appuyez sur **Entrée** ou sélectionnez **Appliquer** dans la zone **Renommer**. Si vous ne souhaitez pas choisir un nouveau nom, appuyez sur **Échap** ou sélectionnez **Appliquer** pour faire disparaître la zone **Renommer**.
 
 > [!NOTE]
-> Pour C#, le code généré par ces refactorisations utilise un type explicite ou [var](/dotnet/csharp/language-reference/keywords/var) pour le type des éléments dans la collection. Le type du code généré, explicite ou implicite, dépend des paramètres de style de code qui se trouvent dans la portée. Ces paramètres de style de code particuliers sont configurés au niveau de la machine sous **Outils** > **Options** > **Éditeur de texte** > **C#**  > **Style de code** > **Général** >  **\'Préférences var**, ou au niveau de la solution dans un fichier [EditorConfig](../../ide/editorconfig-language-conventions.md#implicit-and-explicit-types). Si vous modifiez un paramètre de style de code dans **Options**, rouvrez le fichier de code pour appliquer les modifications.
+> Pour C#, le code généré par ces refactorisations utilise un type explicite ou [var](/dotnet/csharp/language-reference/keywords/var) pour le type des éléments dans la collection. Le type du code généré, explicite ou implicite, dépend des paramètres de style de code qui se trouvent dans la portée. Ces paramètres de code particuliers sont configurés au niveau de la machine sous les**\'préférences de****Options** > **l’éditeur** > de texte >  **d’outils****C'** > **Code Style** > **General** > var, ou au niveau de la solution dans un fichier [EditorConfig.](../../ide/editorconfig-language-conventions.md#implicit-and-explicit-types) Si vous modifiez un paramètre de style de code dans **Options**, rouvrez le fichier de code pour appliquer les modifications.
 
 ## <a name="see-also"></a>Voir aussi
 

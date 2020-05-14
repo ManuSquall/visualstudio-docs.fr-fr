@@ -12,10 +12,10 @@ monikerRange: vs-2017
 ms.workload:
 - dotnet
 ms.openlocfilehash: 76ea78f37cbc8c5e2b6df900aa0e3f320346300a
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74779764"
 ---
 # <a name="call-tree-view---net-memory-sampling-data"></a>Vue Arborescence des appels - Données d’échantillonnage de la mémoire .NET
@@ -34,11 +34,11 @@ La vue Arborescence des appels affiche les chemins d’exécution de la fonction
 |Colonne|Description|
 |------------|-----------------|
 |**ID du processus**|ID du processus (PID) de l'exécution du profilage.|
-|**Nom du processus**|nom du processus.|
-|**Nom de module**|Nom du module qui contient la fonction.|
-|**Chemin de module**|Chemin d’accès du module qui contient la fonction.|
+|**Nom du processus**|Nom du processus.|
+|**Nom du module**|Nom du module qui contient la fonction.|
+|**Chemin du module**|Chemin d’accès du module qui contient la fonction.|
 |**Fichier source**|Fichier source contenant la définition pour cette fonction.|
-|**Nom de la fonction**|Nom complet de la fonction.|
+|**Nom de fonction**|Nom complet de la fonction.|
 |**Numéro de ligne de fonction**|Numéro de ligne du début de cette fonction dans le fichier source.|
 |**Adresse de la fonction**|Adresse de la fonction.|
 |**Niveau**|Profondeur de la fonction dans l’arborescence des appels.|

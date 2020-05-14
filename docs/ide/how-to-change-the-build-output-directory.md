@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 37342796f2dd94138136bb837cf6007d19d350c4
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/16/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "76114256"
 ---
 # <a name="how-to-change-the-build-output-directory"></a>Guide pratique pour changer le répertoire de sortie de build
@@ -45,7 +45,7 @@ Vous pouvez spécifier l’emplacement de sortie généré par votre projet en f
    ![Propriété de chemin de sortie pour un projet Visual Studio C#](media/output-path.png)
    
    > [!NOTE]
-   > Certains projets comportent par défaut l’infrastructure et le runtime dans le chemin de la Build. Pour modifier cette valeur, cliquez avec le bouton droit sur le nœud du projet dans **Explorateur de solutions**, sélectionnez **modifier le fichier projet**, puis ajoutez le code suivant :
+   > Certains projets comprendront par défaut le cadre et l’exécution dans la voie de construction. Pour modifier cela, cliquez à droite sur le nœud du projet dans **Solution Explorer**, sélectionnez Edit **Project File**, et ajoutez ce qui suit :
    > ```xml
    > <PropertyGroup>
    >   <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
@@ -60,6 +60,6 @@ Vous pouvez spécifier l’emplacement de sortie généré par votre projet en f
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Générer, page du Concepteur de projets (C#)](../ide/reference/build-page-project-designer-csharp.md)
-- [Général, page de propriétés (projet)](/cpp/build/reference/general-property-page-project)
-- [Compiler et générer](../ide/compiling-and-building-in-visual-studio.md)
+- [Page de construction, Concepteur de projets (C)](../ide/reference/build-page-project-designer-csharp.md)
+- [Page De propriété générale (projet)](/cpp/build/reference/general-property-page-project)
+- [Compilation et génération](../ide/compiling-and-building-in-visual-studio.md)

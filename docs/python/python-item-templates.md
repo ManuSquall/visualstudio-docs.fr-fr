@@ -11,15 +11,15 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: c093dad1364fd5209f51c8e87e3fb99b3c1d3c4a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "62430334"
 ---
 # <a name="python-item-templates"></a>Modèles d’éléments Python
 
-Les modèles d’élément sont disponibles dans les projets Python via la commande de menu **Projet** > **Ajouter un nouvel élément**, ou via la commande **Ajouter** > **Nouvel élément** dans le menu contextuel de **l’Explorateur de solutions**.
+Les modèles d’objets sont disponibles dans les projets Python via la commande **de** > menu Project**Add New Item,** ou la commande **Add** > **New Item** sur le menu context dans Solution **Explorer**.
 
 ![Boîte de dialogue Ajouter un nouvel élément](media/project-item-templates.png)
 
@@ -31,15 +31,15 @@ Le tableau suivant décrit brièvement l’effet de chaque modèle d’élément
 | --- | --- |
 | **Fichier Python vide** | Un fichier vide avec l’extension *.py*. |
 | **Classe Python** | Un fichier *.py* contenant une seule définition de classe Python vide. |
-| **Package Python** | Un dossier contenant un fichier *\_\_init\_\_.py*. |
+| **Forfait Python** | Un dossier qui contient un * \_ \_fichier init\_\_.py.* |
 | **Test unitaire Python** | Un fichier *.py* avec un test unitaire unique basé sur le framework `unittest`, ainsi qu’un appel à `unittest.main()` pour exécuter les tests dans le fichier. |
 | **Page HTML** | Un fichier *.html* avec une structure de page simple composée d’un élément `<head>` et d’un élément `<body>`. |
-| **JavaScript** | Un fichier *.js* vide. |
+| **Javascript** | Un fichier *.js* vide. |
 | **Feuille de style** | Un fichier *.css* contenant un style vide pour `body`. |
 | **Fichier texte** | Un fichier *.txt* vide. |
 | **Application Django 1.9**<br/>**Application Django 1.4** | Un dossier portant le nom de l’application, qui contient les principaux fichiers d’une application Django, comme indiqué dans [Découvrir Django dans Visual Studio, étape 2-2](learn-django-in-visual-studio-step-02-create-an-app.md#step-2-1-create-an-app-with-a-default-structure) pour Django 1.9. Pour Django 1.4, le dossier *migrations*, le fichier *admin.py* et le fichier *apps.py* ne sont pas inclus. |
 | **Fenêtre IronPython WPF** | Une fenêtre WPF composée de deux fichiers côte à côte : un fichier *.xaml* qui définit `<Window>` avec un élément `<Grid>` vide, et un fichier *.py* associé qui charge le fichier XAML à l’aide de la bibliothèque `wpf`. Généralement utilisé dans un projet créé avec un des modèles de projet IronPython. Consultez [Gérer les projets Python - Modèles de projet](managing-python-projects-in-visual-studio.md#project-templates). |
-| **Fichiers de prise en charge des rôles web** | Un dossier *bin* à la racine du projet (quel que soit le dossier sélectionné dans le projet). Le dossier contient un script de déploiement par défaut et un fichier *web.config* pour les rôles web Azure Cloud Services. Le modèle comprend également un fichier *readme.html* qui explique tous les détails. |
+| **Fichiers de prise en charge des rôles Web** | Un dossier *bin* à la racine du projet (quel que soit le dossier sélectionné dans le projet). Le dossier contient un script de déploiement par défaut et un fichier *web.config* pour les rôles web Azure Cloud Services. Le modèle comprend également un fichier *readme.html* qui explique tous les détails. |
 | **Fichiers de prise en charge des rôles de travail** | Un dossier *bin* à la racine du projet (quel que soit le dossier sélectionné dans le projet). Le dossier contient un script de déploiement et de lancement par défaut, ainsi qu’un fichier *web.config*, pour les rôles de travail Azure Cloud Services. Le modèle comprend également un fichier *readme.html* qui explique tous les détails. |
 | **Fichier web.config Azure (FastCGI)** | Un fichier *web.config* qui contient des entrées pour les applications utilisant un objet [WSGI](https://wsgi.readthedocs.io/en/latest/) afin de prendre en charge les connexions entrantes. Ce fichier est généralement déployé à la racine d’un serveur web sous IIS. Pour plus d’informations, voir [Configurer une application pour IIS](configure-web-apps-for-iis-windows.md). |
 | **Fichier web.config Azure (HttpPlatformHandler)** | Un fichier *web.config* qui contient des entrées pour les applications qui sont à l’écoute des connexions entrantes sur un socket. Ce fichier est généralement déployé à la racine d’un serveur web exécutant IIS, tel qu’Azure App Service. Pour plus d’informations, voir [Configurer une application pour IIS](configure-web-apps-for-iis-windows.md). |
@@ -48,6 +48,6 @@ Le tableau suivant décrit brièvement l’effet de chaque modèle d’élément
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Gérer les projets Python - Modèles de projet](managing-python-projects-in-visual-studio.md#project-templates)
+- [Gérer les projets Python – Modèles de projet](managing-python-projects-in-visual-studio.md#project-templates)
 - [Modèles de projet web Python](python-web-application-project-templates.md)
 - [Publier sur Azure App Service](publishing-python-web-applications-to-azure-from-visual-studio.md)

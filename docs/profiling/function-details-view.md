@@ -15,10 +15,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 6e5bd33d9924784220addafca85a63f550df02c7
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74779257"
 ---
 # <a name="function-details-view"></a>Vue Informations relatives à la fonction
@@ -38,7 +38,7 @@ La fenêtre **Vue Informations relatives à la fonction** affiche les informatio
 
 ## <a name="cost-distribution-bar-chart"></a>Graphique à barres Distribution des coûts
 
-### <a name="performance-metrics"></a>Métriques de performances
+### <a name="performance-metrics"></a>Mesures de performances
  Dans la liste déroulante **Métrique de performances**, vous pouvez spécifier les valeurs qui apparaissent dans la vue. Les valeurs disponibles dépendent de la méthode de profilage qui a été utilisée dans le fichier de données de profilage. Les noms entre parenthèses sont les noms des lignes dans le tableau **Détails des performances de la fonction**.
 
 ### <a name="bar-chart"></a>Graphique à barres
@@ -73,7 +73,7 @@ La fenêtre **Vue Informations relatives à la fonction** affiche les informatio
 
 |Colonne|Description|
 |------------|-----------------|
-|**Exclusif**|-   Part de la métrique de performances qui s’est produite dans l’exécution du corps de la fonction.|
+|**Exclusive**|-   Part de la métrique de performances qui s’est produite dans l’exécution du corps de la fonction.|
 |**Dans les appels**|-   Part de la métrique de performances qui s’est produite dans des fonctions appelées par la fonction sélectionnée.|
 |**Inclusive Total**|-   Total des valeurs **Exclusif** et **Dans les appels**.|
 
@@ -82,7 +82,7 @@ La fenêtre **Vue Informations relatives à la fonction** affiche les informatio
 
 ## <a name="cost-distribution-bar-chart-values"></a>Valeurs du graphique à barres Distribution des coûts
 
-### <a name="sampling"></a>Échantillonnage
+### <a name="sampling"></a>échantillonnage
  Le tableau suivant explique les valeurs de la liste Métrique de performances pour les données de profilage recueillies à l’aide de la méthode d’échantillonnage.
 
 |||
@@ -105,7 +105,7 @@ La fenêtre **Vue Informations relatives à la fonction** affiche les informatio
 |**Allocations inclusives (Allocations)**|-   Pour une **Fonction appelante**, nombre d’objets alloués par les instances de la fonction sélectionnée qui ont été appelées par la fonction. Ce nombre inclut les objets alloués par les fonctions appelées par la fonction sélectionnée.<br />-   Pour le **Corps de la fonction**, nombre d’objets alloués par la fonction sélectionnée quand elle exécutait son propre code. Cela exclut les objets alloués dans les fonctions appelées par la fonction sélectionnée.<br />-   Pour une fonction appelée, nombre d’objets alloués par les instances de la fonction qui ont été appelées par la fonction sélectionnée. Ce nombre inclut les objets alloués par les fonctions appelées par la fonction.|
 |**Octets inclusifs (Octets)**|-   Pour une **Fonction appelante**, nombre d’octets alloués par les instances de la fonction sélectionnée qui ont été appelées par la fonction. Ce nombre inclut les octets alloués par les fonctions appelées par la fonction sélectionnée.<br />-   Pour le **Corps de la fonction**, nombre total d’octets alloués par la fonction sélectionnée quand elle exécutait son propre code. Cela exclut les octets alloués dans les fonctions appelées par la fonction sélectionnée.<br />-   Pour une fonction appelée, nombre d’octets alloués par les instances de la fonction qui ont été appelées par la fonction sélectionnée. Ce nombre inclut les octets alloués par les fonctions appelées par la fonction.|
 
-### <a name="concurrency"></a>Concurrency
+### <a name="concurrency"></a>Accès concurrentiel
  Le tableau suivant explique les valeurs de la liste Métrique de performances pour les données de profilage recueillies à l’aide de la méthode de concurrence.
 
 |||

@@ -1,5 +1,5 @@
 ---
-title: Commandes et des Menus qui utilisent des assemblys d’interopérabilité | Microsoft Docs
+title: Commandes et menus qui utilisent des assemblées Interop Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -8,55 +8,55 @@ helpviewer_keywords:
 - commands, handling using interop assemblies
 - command handling with interop assemblies
 ms.assetid: 8f4af525-39e5-4e69-92c8-d3efabe80bb2
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 14625d38a8eae594d1ba63aa1f628c2482be8f30
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: e6c381abe9b4c6ea2a58342e185d7427fa56a180
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66342014"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80709486"
 ---
-# <a name="commands-and-menus-that-use-interop-assemblies"></a>Commandes et des menus qui utilisent des assemblys d’interopérabilité
-Un VSPackage qui implémente des commandes de menu et barre d’outils à l’aide des assemblys d’interopérabilité doit :
+# <a name="commands-and-menus-that-use-interop-assemblies"></a>Commandes et menus qui utilisent des assemblages Interop
+Un VSPackage qui implémente les commandes de menu et de barre d’outils en utilisant des assemblages Interop doit :
 
-- Informe le [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] l’environnement de développement intégré (IDE) sur les commandes prises en charge et s’ils sont actuellement activés.
+- Informez [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] l’environnement de développement intégré (IDE) sur les commandes qu’il prend en charge et si elles sont actuellement activées.
 
-- Respecter les règles (contrat) pour la gestion des commandes.
+- Respectez les règles (contrat) pour le traitement des commandes.
 
-- Implémenter la gestion des commandes à l’aide de manière explicite la <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> ou <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy> interface.
+- Implémentez explicitement la <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy> manipulation des commandes en utilisant l’interface ou l’interface.
 
   La section suivante décrit comment effectuer ces tâches.
 
-## <a name="in-this-section"></a>Dans cette section
-- [Déterminer l’état de la commande à l’aide des assemblys d’interopérabilité](../../extensibility/internals/determining-command-status-by-using-interop-assemblies.md)
+## <a name="in-this-section"></a>Contenu de cette section
+- [Déterminer l’état de commande en utilisant des assemblages Interop](../../extensibility/internals/determining-command-status-by-using-interop-assemblies.md)
 
- Décrit la manière dont un VSPackage notifie l’IDE sur les commandes qu’il prend en charge et s’ils sont actuellement activés.
+ Décrit comment un VSPackage informe l’IDE sur les commandes qu’il prend en charge et si elles sont actuellement activées.
 
-- [Contrats de commande dans les assemblys d’interopérabilité](../../extensibility/internals/command-contracts-in-interop-assemblies.md)
+- [Contrats de commandement dans les assemblées Interop](../../extensibility/internals/command-contracts-in-interop-assemblies.md)
 
- Fournit une définition du contrat de commande de base utilisée par tous les packages VS, implémentation de commandes à l’aide des assemblys d’interopérabilité.
+ Fournit une définition du contrat de commande de base utilisé par tous les VSPackages implémentant les commandes à l’aide d’assemblages Interop.
 
-- [Implémentation de la commande](../../extensibility/internals/command-implementation.md)
+- [Mise en œuvre du commandement](../../extensibility/internals/command-implementation.md)
 
- Fournit une vue d’ensemble de la façon dont un VSPackage implémente une commande.
+ Fournit un aperçu de la façon dont un VSPackage implémente une commande.
 
-- [Inscrire des gestionnaires de commandes d’assembly d’interopérabilité](../../extensibility/internals/registering-interop-assembly-command-handlers.md)
+- [Enregistrez les gestionnaires de commande d’assemblage Interop](../../extensibility/internals/registering-interop-assembly-command-handlers.md)
 
- Décrit les entrées de Registre requises pour signaler à l’IDE qu’un VSPackage fournit un gestionnaire de commandes.
+ Décrit les entrées de registre nécessaires pour aviser l’IDE qu’un VSPackage fournit un gestionnaire de commande.
 
-## <a name="related-sections"></a>Rubriques connexes
-- [Disponibilité de la commande](../../extensibility/internals/command-availability.md)
+## <a name="related-sections"></a>Sections connexes
+- [Disponibilité de commande](../../extensibility/internals/command-availability.md)
 
- Décrit les critères utilisés par l’IDE pour déterminer les commandes de package Visual Studio sont disponibles et quel objet les gère.
+ Décrit les critères utilisés par l’IDE pour déterminer quelles commandes VSPackage sont disponibles et quel objet les gère.
 
 - [Comment VSPackages ajoute des éléments d’interface utilisateur](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)
 
- Fournit des détails sur la création d’une interface utilisateur qui utilise [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] commande prise en charge.
+ Fournit des détails sur la façon [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] de créer une interface utilisateur qui utilise le support de commande.
 
-- [Routage des commandes dans VSPackages](../../extensibility/internals/command-routing-in-vspackages.md)
+- [Itinéraire de commande dans VSPackages](../../extensibility/internals/command-routing-in-vspackages.md)
 
- Vue d’ensemble du processus utilisé pour associer un objet avec la demande de commande correct.
+ Un aperçu du processus utilisé pour relier un objet à la demande de commande correcte.

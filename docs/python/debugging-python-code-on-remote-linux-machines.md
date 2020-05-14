@@ -11,21 +11,21 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: e718a5610d9539e3e2a89af0a9de502ebfd168a7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "62962527"
 ---
 # <a name="remotely-debug-python-code-on-linux"></a>Déboguer à distance du code Python sur Linux
 
-Visual Studio peut lancer et déboguer des applications Python localement et à distance sur un ordinateur Windows (voir [Débogage à distance](../debugger/remote-debugging.md)). Il peut également effectuer un débogage à distance sur un autre système d’exploitation, un appareil différent ou une implémentation Python autre que CPython à l’aide de la [bibliothèque ptvsd](https://pypi.python.org/pypi/ptvsd).
+Visual Studio peut lancer et déboguer des applications Python localement et à distance sur un ordinateur Windows (voir [débugging à distance](../debugger/remote-debugging.md)). Il peut également effectuer un débogage à distance sur un autre système d’exploitation, un appareil différent ou une implémentation Python autre que CPython à l’aide de la [bibliothèque ptvsd](https://pypi.python.org/pypi/ptvsd).
 
 Lorsque vous utilisez ptvsd, le code Python faisant l’objet du débogage héberge le serveur de débogage auquel Visual Studio peut être attaché. Cet hébergement nécessite une petite modification de votre code pour importer et activer le serveur, et peut exiger des configurations du réseau ou du pare-feu sur l’ordinateur distant pour autoriser les connexions TCP.
 
 |   |   |
 |---|---|
-| ![Icône représentant une caméra pour les vidéos](../install/media/video-icon.png "Regarder une vidéo") | Pour une introduction au débogage à distance, regardez la vidéo [Deep Dive: Cross-platform remote debugging](https://youtu.be/y1Qq7BrV6Cc) (youtube.com, 6 min 22 s), qui s’applique à Visual Studio 2015 et 2017. |
+| ![Icône représentant une caméra pour les vidéos](../install/media/video-icon.png "Regarder une vidéo") | Pour une introduction au débogage à distance, visionnez la vidéo [Deep Dive: Cross-platform remote debugging](https://youtu.be/y1Qq7BrV6Cc) (youtube.com, 6 minutes 22 secondes), qui est applicable à Visual Studio 2015 et 2017. |
 
 ## <a name="set-up-a-linux-computer"></a>Configurer un ordinateur Linux
 
@@ -89,13 +89,13 @@ Dans ces étapes, nous allons définir un point d’arrêt simple pour arrêter 
 
 1. (Facultatif) Pour activer la fonctionnalité IntelliSense pour ptvsd sur l’ordinateur local, installez le package ptvsd dans votre environnement Python.
 
-1. Sélectionnez **Déboguer** > **Attacher au processus**.
+1. Sélectionnez **Debug** > **Attacher au processus**.
 
 1. Dans la boîte de dialogue **Attacher au processus** qui s’affiche, définissez **Type de connexion** sur **Python à distance (ptvsd)**. (Dans les versions antérieures de Visual Studio, ces commandes s’appellent **Transport** et **Débogage à distance Python**.)
 
 1. Dans le champ **Cible de la connexion** (**Qualificateur** dans les versions antérieures), entrez `tcp://<ip_address>:5678`, où `<ip_address>` est celle de l’ordinateur distant (qui peut être une adresse explicite ou un nom comme myvm.cloudapp.net) et `:5678` le numéro du port de débogage à distance.
 
-1. Appuyez sur **Entrée** pour remplir la liste des processus ptvsd disponibles sur cet ordinateur :
+1. Appuyez **sur Entrez** pour remplir la liste des processus ptvsd disponibles sur cet ordinateur:
 
     ![Saisie de la cible de la connexion et affichage de la liste des processus](media/remote-debugging-qualifier.png)
 
@@ -120,8 +120,8 @@ Dans ces étapes, nous allons définir un point d’arrêt simple pour arrêter 
 
     | Version de Visual Studio | Version des outils Python/ptvsd |
     | --- | --- |
-    | 2017 15.8 | 4.1.1a9 (débogueur hérité : 3.2.1.0) |
-    | 2017 15.7 | 4.1.1a1 (débogueur hérité : 3.2.1.0) |
+    | 2017 15.8 | 4.1.1a9 (débogueur hérité : 3.2.1.0) |
+    | 2017 15.7 | 4.1.1a1 (débogueur hérité : 3.2.1.0) |
     | 2017 15.4, 15.5, 15.6 | 3.2.1.0 |
     | 2017 15.3 | 3.2.0 |
     | 2017 15.2 | 3.1.0 |

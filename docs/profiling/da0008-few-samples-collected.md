@@ -15,23 +15,23 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 15f8eeb370a3f1e61981e0e936704d33f6b44bbd
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74779439"
 ---
-# <a name="da0008-few-samples-collected"></a>DA0008 : Peu d'échantillons collectés
+# <a name="da0008-few-samples-collected"></a>DA0008 : Peu d'échantillons collectés
 
 |||
 |-|-|
-|ID de la règle|DA0008|
+|ID de règle|DA0008|
 |Category|Utilisation des outils de profilage|
-|Méthode de profilage|Échantillonnage|
+|Méthode de profilage|échantillonnage|
 |Message|Un petit nombre d’échantillons a été collecté. Augmentez la durée d’exécution ou utilisez un taux d’échantillonnage plus rapide pour des résultats plus significatifs.|
-|Type de règle|Informations|
+|Type de règle|Information|
 
-## <a name="cause"></a>Cause
+## <a name="cause"></a>Cause :
  Seuls quelques échantillons ont été collectés pendant l’exécution du profilage.
 
 ## <a name="rule-description"></a>Description de la règle

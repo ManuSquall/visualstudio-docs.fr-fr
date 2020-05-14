@@ -1,5 +1,5 @@
 ---
-title: EXCEPTION_INFO | Microsoft Docs
+title: EXCEPTION_INFO Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - EXCEPTION_INFO structure
 ms.assetid: d046957a-b97d-420b-b46b-c67cbaef709e
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 5c4fc29aee8d14e9c73dcf5665eff3ea611985d1
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: a305d34123d02b1fdbd545a438db4461643ed185
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66337794"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80737020"
 ---
-# <a name="exceptioninfo"></a>EXCEPTION_INFO
-Décrit une exception ou une erreur d’exécution levées par le programme en cours de débogage.
+# <a name="exception_info"></a>EXCEPTION_INFO
+Décrit une erreur d’exception ou de temps d’exécution lancée par le programme étant débogé.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -51,32 +51,32 @@ public struct EXCEPTION_INFO {
 
 ## <a name="members"></a>Membres
 `pProgram`\
-Le [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) objet qui représente le programme dans lequel l’exception s’est produite.
+[L’objet IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) qui représente le programme dans lequel l’exception s’est produite.
 
 `bstrProgramName`\
 Le nom du programme dans lequel l’exception s’est produite.
 
 `bstrExceptionName`\
-Le nom de l’exception.
+Nom de l'exception.
 
 `dwCode`\
-Le code d’identification de l’erreur d’exception ou d’exécution.
+Le code d’identification pour l’erreur d’exception ou de temps d’exécution.
 
 `dwState`\
-Une valeur comprise entre le [EXCEPTION_STATE](../../../extensibility/debugger/reference/exception-state.md) énumération qui définit l’état de l’exception.
+Une valeur de [l’énumération EXCEPTION_STATE](../../../extensibility/debugger/reference/exception-state.md) qui définit l’état de l’exception.
 
 `guidType`\
-L’identificateur de langue GUID, soit `guidLang` ou `guidEng`.
+L’identifiant de langue `guidLang` `guidEng`GUID, soit ou .
 
 ## <a name="remarks"></a>Notes
-Cette structure est passée en tant que paramètre à la [SetException](../../../extensibility/debugger/reference/idebugengine2-setexception.md) et [RemoveSetException](../../../extensibility/debugger/reference/idebugengine2-removesetexception.md) méthodes. Cette structure est également passée à la [GetException](../../../extensibility/debugger/reference/idebugexceptionevent2-getexception.md) méthode doit être renseigné.
+Cette structure est transmise comme paramètre aux méthodes [SetException](../../../extensibility/debugger/reference/idebugengine2-setexception.md) et [RemoveSetException.](../../../extensibility/debugger/reference/idebugengine2-removesetexception.md) Cette structure est également transmise à la méthode [GetException](../../../extensibility/debugger/reference/idebugexceptionevent2-getexception.md) à remplir.
 
-## <a name="requirements"></a>Configuration requise
-En-tête : msdbg.h
+## <a name="requirements"></a>Spécifications
+En-tête: msdbg.h
 
-Espace de noms : Microsoft.VisualStudio.Debugger.Interop
+Namespace: Microsoft.VisualStudio.Debugger.Interop
 
-Assembly : Microsoft.VisualStudio.Debugger.Interop.dll
+Assemblage: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>Voir aussi
 - [Structures et unions](../../../extensibility/debugger/reference/structures-and-unions.md)

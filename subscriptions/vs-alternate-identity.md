@@ -1,17 +1,18 @@
 ---
 title: Identités pour les abonnés Visual Studio
 author: evanwindom
-ms.author: lank
+ms.author: v-evwin
 manager: lank
+ms.assetid: 86f2856c-8adf-4085-9962-f4136679e5ed
 ms.date: 07/19/2019
 ms.topic: conceptual
 description: Comment ajouter une identité secondaire à votre abonnement Visual Studio pour l’utiliser avec Azure DevOps et Azure
-ms.openlocfilehash: e19774f2314280b2e5a995a7d83336f1403682a4
-ms.sourcegitcommit: bcdab788085bd9931d73883fe70cd5831317dca2
+ms.openlocfilehash: ff5166da3cb782c0750b0ce61fdafec375811ff4
+ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "72816558"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "80232013"
 ---
 # <a name="identities-for-visual-studio-subscribers"></a>Identités pour les abonnés Visual Studio
 Quand vous activez votre abonnement Visual Studio, nous lions l’identité (ou connexion) que vous avez utilisée lors de l’activation avec l’abonnement Visual Studio. Ainsi, nous pouvons vous reconnaître dans le [portail des abonnés Visual Studio](https://my.visualstudio.com?wt.mc_id=o~msft~docs), dans Azure DevOps et dans Azure.
@@ -19,7 +20,7 @@ Quand vous activez votre abonnement Visual Studio, nous lions l’identité (ou 
 Dans Azure DevOps, nous vérifions l’état de votre abonnement Visual Studio chaque fois que vous vous connectez, et nous vous octroyons des fonctionnalités automatiquement dans chaque organisation dont vous êtes membre.
 Ces fonctionnalités étant incluses comme avantages réservés aux abonnés, il est possible de vous ajouter gratuitement comme membre de n’importe quelle organisation Azure DevOps lors de l’utilisation d’une identité qui est liée à votre abonnement Visual Studio.
 
-Dans Azure, nous vérifions l’état de votre abonnement Visual Studio quand vous activez votre [crédit individuel Azure DevTest mensuel](https://azure.microsoft.com/pricing/member-offers/credit-for-visual-studio-subscribers/) qui est un avantage pour les abonnés.
+Dans Azure, nous vérifions votre statut d’abonnement Visual Studio lorsque vous activez votre [crédit individuel Mensuel Azure DevTest](https://azure.microsoft.com/pricing/member-offers/credit-for-visual-studio-subscribers/) qui est un avantage d’abonné.
 
 Dans le [portail des abonnés Visual Studio](https://my.visualstudio.com?wt.mc_id=o~msft~docs), vous pouvez éventuellement ajouter une **identité secondaire**, en plus de celle que vous avez utilisée durant l’activation. Nous vous permettons d’ajouter une identité secondaire, si vous avez utilisé un compte Microsoft pour activer votre abonnement. Ainsi, vous pouvez également ajouter un compte professionnel ou scolaire (que vous utilisez pour vous connecter à Visual Studio, à Office 365 ou à votre réseau d’entreprise ou d’établissement scolaire), ce qui vous permet d’accéder à Azure DevOps à la fois avec votre compte personnel, et avec votre compte professionnel ou scolaire.
 
@@ -33,7 +34,7 @@ Pour tous les abonnements, vous pouvez ajouter un « compte professionnel ou sco
 ### <a name="add-the-alternate-account"></a>Ajouter le compte secondaire
 1. Connectez-vous au portail des abonnés Visual Studio à l’aide de votre compte Microsoft (https://my.visualstudio.com).
 2. Cliquez sur l’onglet **Abonnements**.
-3. Choisissez **Ajouter un compte secondaire**.
+3. Choisissez **Ajouter un compte alternatif**.
 4. Ajoutez votre compte professionnel ou scolaire.
     > [!div class="mx-imgBorder"]
     > ![Ajouter un compte professionnel ou scolaire](_img/vs-alternate-identity/enter-alternate-account-my-visual-studio-com-portal.png)
@@ -50,10 +51,22 @@ Votre compte secondaire est ajouté à l’abonnement Visual Studio. Ainsi, les 
 
 R : Azure DevOps doit reconnaître automatiquement votre abonnement quand vous vous connectez avec votre identité principale ou secondaire. Si ce n’est pas le cas, vous pouvez essayer les solutions suivantes :
 
-* Vérifiez que vous disposez d’un abonnement Visual Studio actif incluant [Azure DevOps](vs-azure-devops.md#eligibility) en tant qu’avantage.
+* Vérifiez que vous avez un abonnement Visual Studio actif qui inclut [Azure DevOps](vs-azure-devops.md#eligibility) comme un avantage.
 
 * Vérifiez que vous utilisez une connexion/identité qui est l’identité principale ou secondaire de votre abonnement Visual Studio.
 
 * Accédez au [portail des abonnés Visual Studio](https://my.visualstudio.com?wt.mc_id=o~msft~docs) au moins une fois avant de vous connecter à Azure DevOps.
 
 Si Azure DevOps ne reconnaît toujours pas votre abonnement, contactez le support [Azure DevOps](https://azure.microsoft.com/support/devops/).
+
+## <a name="see-also"></a>Voir aussi
+- [Documentation Visual Studio](https://docs.microsoft.com/visualstudio/)
+- [Documentation Azure DevOps](https://docs.microsoft.com/azure/devops/)
+- [Documentation Azure](https://docs.microsoft.com/azure/)
+- [Documentation Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+
+## <a name="next-steps"></a>Étapes suivantes 
+Pour plus d’informations sur l’utilisation d’Azure, Azure DevOps ou Visual Studio IDE, consultez ces ressources :
+- [Azure](vs-azure.md)
+- [Azure DevOps](vs-azure-devops.md)
+- [Visual Studio](vs-ide-benefit.md)

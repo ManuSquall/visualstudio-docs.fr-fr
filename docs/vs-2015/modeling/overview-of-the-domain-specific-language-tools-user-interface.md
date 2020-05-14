@@ -14,10 +14,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 3bffb1f7fe6449f078c21c14b0a070cbd23db539
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "72652137"
 ---
 # <a name="overview-of-the-domain-specific-language-tools-user-interface"></a>Vue d'ensemble de l'interface utilisateur des outils de langage spécifique à un domaine
@@ -25,7 +25,7 @@ ms.locfileid: "72652137"
 
 Lorsque vous ouvrez pour la première fois une solution des Outils Domain-Specific Language (Outils DSL) dans [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], l’interface utilisateur ressemble à l’image suivante.
 
- ![Concepteur dsl](../modeling/media/dsl-designer.png "|::ref1::|")
+ ![Concepteur dsl](../modeling/media/dsl-designer.png "dsl_designer")
 
  Le tableau suivant explique comment les parties de l’interface utilisateur sont utilisées.
 
@@ -39,7 +39,7 @@ Lorsque vous ouvrez pour la première fois une solution des Outils Domain-Specif
 ## <a name="the-domain-model-diagram"></a>Diagramme du modèle de domaine
  Le diagramme du modèle de domaine est divisé en deux parties. Une partie du diagramme montre les éléments et les relations du modèle. L’autre partie montre comment le modèle doit être affiché et inclut les formes qui sont utilisées pour afficher les éléments et les propriétés du diagramme de modèle. L’image suivante montre les éléments du diagramme.
 
- ![Concepteur dsl avec couloir](../modeling/media/dsl-desinger.png "|::ref2::|")
+ ![Concepteur dsl avec couloir](../modeling/media/dsl-desinger.png "dsl_desinger")
 
  Le tableau suivant décrit certains des éléments du diagramme du modèle de domaine.
 
@@ -50,5 +50,5 @@ Lorsque vous ouvrez pour la première fois une solution des Outils Domain-Specif
 |Formes et connecteurs|Les formes spécifient comment les éléments de modèle doivent être affichés sur un diagramme DSL. Les connecteurs spécifient les lignes d’un diagramme DSL qui peuvent être utilisées pour afficher les relations.<br /><br /> Pour créer une forme ou un connecteur, faites glisser l’outil dans la partie **Éléments du diagramme** du diagramme.|
 |Mappages de formes|Une carte de forme s’affiche sous forme de ligne sur le diagramme du modèle de domaine et lie une forme à la classe de domaine qu’elle affiche, ou un connecteur à la relation de domaine qu’elle affiche.|
 
-## <a name="see-also"></a>Voir aussi
- [Vue d’ensemble de Outils Domain-Specific Language](../modeling/overview-of-domain-specific-language-tools.md) [Outils Domain-specific language Glossaire](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa) [personnalisation et extension d’un langage spécifique à un domaine](../modeling/customizing-and-extending-a-domain-specific-language.md)
+## <a name="see-also"></a> Voir aussi
+ [Aperçu des outils linguistiques spécifiques au domaine](../modeling/overview-of-domain-specific-language-tools.md) Des [outils linguistiques Glossaires](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa) [Personnalisation et extension d’une langue spécifique au domaine](../modeling/customizing-and-extending-a-domain-specific-language.md)

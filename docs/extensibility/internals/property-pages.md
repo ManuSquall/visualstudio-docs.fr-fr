@@ -1,5 +1,5 @@
 ---
-title: Pages de propriétés | Microsoft Docs
+title: Pages de propriété (en anglais) Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -7,75 +7,75 @@ helpviewer_keywords:
 - property pages
 - property pages, changing configuration options
 ms.assetid: b9b3e6e8-1e30-4c89-9862-330265dcf38c
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 51487b35686da9676f201a157ddb8e47afb75ce8
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: ac788f51bcdc52cd39469a272909890333c5016b
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72725059"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80706059"
 ---
 # <a name="property-pages"></a>Pages de propriétés
-Les utilisateurs peuvent afficher et modifier les propriétés dépendantes et indépendantes de la configuration de projet à l’aide des pages de propriétés. Le bouton **pages de propriétés** est activé dans la fenêtre **Propriétés** ou dans la barre d’outils Explorateur de solutions pour les objets qui fournissent une vue de page de propriétés de l’objet sélectionné. Les pages de propriétés sont créées par l’environnement et sont disponibles pour les solutions et les projets. Toutefois, elles peuvent également être mises à disposition pour les éléments de projet qui utilisent des propriétés dépendantes de la configuration. Cette fonctionnalité peut être utilisée lorsque des fichiers dans un projet requièrent des paramètres de commutateur de compilateur différents pour une génération correcte.
+Les utilisateurs peuvent afficher et modifier les propriétés dépendantes de la configuration du projet et indépendantes à l’aide de pages de propriété. Un bouton **Pages de propriété** est activé dans la fenêtre **Propriété** ou sur la barre d’outils Solution Explorer pour les objets qui fournissent une vue de page de propriété de l’objet sélectionné. Les pages de propriété sont créées par l’environnement et sont disponibles pour des solutions et des projets. Ils peuvent cependant également être mis à disposition pour les éléments du projet qui font usage de propriétés dépendantes de la configuration. Cette capacité peut être utilisée lorsque les fichiers d’un projet nécessitent différents paramètres de compilateur de commutateur pour construire correctement.
 
-## <a name="using-property-pages"></a>Utilisation des pages de propriétés
- Si une page de propriétés est déjà affichée et que la sélection change (par exemple, d’une solution à un projet), les informations affichées dans les pages changent pour afficher les propriétés de la nouvelle sélection. S’il n’existe aucune propriété sur l’objet qui prend en charge les pages de propriétés, la page de propriétés est vide.
+## <a name="using-property-pages"></a>Utilisation des pages de propriété
+ Si une page de propriété est déjà affichée et que la sélection change (par exemple, d’une solution à un projet), les informations affichées dans les pages changent pour afficher les propriétés de la nouvelle sélection. S’il n’y a pas de propriétés sur l’objet qui prennent en charge les pages de propriété, la page de propriété est vide.
 
- Si plusieurs objets sont sélectionnés, la page de propriétés affiche l’intersection des propriétés de tous les éléments sélectionnés. Si l’élément sélectionné ne contient pas de propriétés dépendantes de la configuration et que l’utilisateur clique sur le bouton **pages de propriétés** dans la barre d’outils Explorateur de solutions, le focus passe au fenêtre Propriétés. Pour plus d’informations sur le Fenêtre Propriétés et la sélection, consultez [extension des propriétés](../../extensibility/internals/extending-properties.md).
+ Si plusieurs objets sont sélectionnés, la page de propriété affiche l’intersection des propriétés pour tous les éléments sélectionnés. Si l’élément sélectionné ne contient pas de propriétés dépendantes de la configuration et que le bouton **Pages de propriété** sur la barre d’outils Solution Explorer est cliqué, concentrez-vous sur la fenêtre Propriétés. Pour plus d’informations relatives à la fenêtre et la sélection des propriétés, voir [Extending Properties](../../extensibility/internals/extending-properties.md).
 
- Si des propriétés sont affichées pour plusieurs objets et que vous modifiez une valeur dans une page de propriétés, toutes les valeurs des objets sont définies sur la nouvelle valeur même si elles ont été initialement différentes et la page était vide lorsque les propriétés d’un objet individuel étaient affichées.
+ Si les propriétés sont affichées pour plusieurs objets et que vous modifiez une valeur sur une page de propriété, toutes les valeurs des objets sont définies à la nouvelle valeur même si elles étaient initialement différentes et que la page était vide lorsque les propriétés d’un objet individuel étaient affichées.
 
- Il existe deux types généraux de boîtes de dialogue de **pages ProjectProperty** disponibles dans [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Dans le premier cas, pour les projets Visual Basic, par exemple, les pages de propriétés s’affichent à l’aide d’un format de champ, comme illustré dans la capture d’écran suivante. Dans la seconde, présentée plus loin dans cette section, la page de propriétés héberge une grille de propriétés similaire à celle trouvée dans la fenêtre Propriétés.
+ Il existe deux types généraux de boîtes de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]dialogue **ProjectProperty Pages** disponibles dans . Dans le premier, pour les projets Visual Basic, par exemple, les pages de propriété sont affichées à l’aide d’un format de champ, comme indiqué dans la capture d’écran suivante. Dans la seconde, montrée plus tard dans cette section, la page de propriété héberge une grille de propriétés semblable à celle trouvée dans la fenêtre des propriétés.
 
- ![Pages de propriétés de Visual Basic](../../extensibility/internals/media/vsvbproppages.gif "vsVBPropPages") Boîte de dialogue pages de propriétés du projet avec format de champ et arborescence
+ ![Pages de propriété de base visuelle](../../extensibility/internals/media/vsvbproppages.gif "vsVBPropPages") Boîte de dialogue project Property Pages avec format champ et structure d’arbre
 
- L’arborescence de la boîte de dialogue pages de propriétés n’est pas créée à l’aide de <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy>. L’environnement, en fonction du nom de niveau qui lui est transmis par le <xref:Microsoft.VisualStudio.OLE.Interop.ISpecifyPropertyPages> et les interfaces <xref:Microsoft.VisualStudio.Shell.Interop.IVsPropertyPage>, le génère.
+ La structure de l’arbre dans la <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy>boîte de dialogue des pages de propriété n’est pas construite en utilisant . L’environnement, basé sur le nom <xref:Microsoft.VisualStudio.OLE.Interop.ISpecifyPropertyPages> de <xref:Microsoft.VisualStudio.Shell.Interop.IVsPropertyPage> niveau qui lui est transmis par les interfaces et les interfaces, le construit.
 
- Seules deux catégories de niveau supérieur sont disponibles sur les pages de propriétés de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] :
+ Il n’y a que deux [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] catégories de haut niveau disponibles sur les pages de propriété :
 
-- Propriétés communes, qui affichent des informations indépendantes de la configuration pour les objets sélectionnés. Par conséquent, lorsque l’une des sous-catégories de propriétés communes est sélectionnée, les options de configuration, de plateforme et de Configuration Manager dans la partie supérieure de la boîte de dialogue ne sont pas disponibles.
+- Propriétés communes, qui affiche des informations indépendantes de configuration pour l’objet ou les objets sélectionnés. Par conséquent, lorsque l’une des sous-catégories Common Properties est sélectionnée, les options Configuration, Plate-forme et Gestionnaire de configuration en haut de la boîte de dialogue ne sont pas disponibles.
 
-- Propriétés de configuration, qui contiennent des informations dépendantes de la configuration relatives au débogage, à l’optimisation et aux paramètres de build pour la solution ou le projet.
+- Configuration Properties, qui contient des informations dépendantes de la configuration relatives aux paramètres Debugging, Optimization et Build pour la solution ou le projet.
 
-  Vous ne pouvez pas créer de catégories de niveau supérieur supplémentaires, mais vous pouvez choisir de ne pas en afficher l’une ou l’autre dans votre implémentation de `IVsPropertyPage`. Si, par exemple, vous ne disposez pas de propriétés indépendantes de la configuration à afficher pour un objet, vous pouvez choisir de ne pas afficher la catégorie Propriétés communes. Vous affichez les propriétés communes si `ISpecifyPropertyPages` est implémenté à partir de l’objet de navigation et des propriétés de configuration de l’élément lors de l’implémentation de `ISpecifyPropertyPages` dans l’objet de configuration (l’objet implémentant `IVsCfg`, `IVsProjectCfg` et les interfaces associées).
+  Vous ne pouvez pas créer d’autres catégories de haut niveau, mais `IVsPropertyPage`vous pouvez choisir de ne pas afficher l’une ou l’autre dans votre implémentation de . Si, par exemple, vous n’avez pas de propriétés indépendantes de configuration à afficher pour un objet, vous pouvez choisir de ne pas afficher la catégorie Propriétés communes. Vous affichez `ISpecifyPropertyPages` les propriétés communes si elle est implémentée à partir de l’objet de navigation de l’élément et des propriétés configuration lorsque vous implémentez `ISpecifyPropertyPages` dans l’objet de configuration (l’objet implémentant, `IVsCfg` `IVsProjectCfg`et les interfaces connexes).
 
-  Chaque catégorie affichée sous une catégorie de niveau supérieur représente une page de propriétés distincte. Les entrées de catégorie et de sous-catégorie disponibles dans la boîte de dialogue sont déterminées par votre implémentation de `ISpecifyPropertyPages` et `IVsPropertyPage`.
+  Chaque catégorie affichée dans une catégorie de haut niveau représente une page de propriété distincte. Catégorie et sous-catégorie entrées disponibles dans la boîte `ISpecifyPropertyPages` de `IVsPropertyPage`dialogue sont déterminées par votre mise en œuvre et .
 
-  `IDispatch` objets des éléments du conteneur de sélection qui ont des propriétés à afficher sur les pages de propriétés implémentent `ISpecifyPropertyPages` pour énumérer une liste d’ID de classe. Les ID de classe sont passés en tant que variables à `ISpecifyPropertyPages` et sont utilisés pour instancier les pages de propriétés. La liste des ID de classe est également transmise à `IVsPropertyPage` pour créer l’arborescence à gauche de la boîte de dialogue. Les pages de propriétés repassent ensuite les informations à l’objet `IDispatch` qui implémente `ISpecifyPropertyPages` et renseigne les informations pour chaque page.
+  `IDispatch`objets pour les articles dans le conteneur de sélection `ISpecifyPropertyPages` qui ont des propriétés à afficher sur les pages de propriété implémenter une liste d’ID de classe. Les UDI de classe sont `ISpecifyPropertyPages` transmises comme variables et sont utilisées pour instantanér les pages de propriété. La liste des cartes d’été `IVsPropertyPage` de classe est également transmise pour créer la structure de l’arbre à gauche de la boîte de dialogue. Les pages de propriété transmettent `IDispatch` ensuite les `ISpecifyPropertyPages` informations à l’objet qui implémente et remplit les informations pour chaque page.
 
-  Les propriétés de l’objet parcourir sont extraites à l’aide de `IDispatch` pour chaque objet dans le conteneur de sélection.
+  Les propriétés de l’objet `IDispatch` de navigation sont récupérées à l’aide de chaque objet dans le conteneur de sélection.
 
-  L’implémentation d' `Help::DisplayTopicFromF1Keyword` dans votre VSPackage fournit les fonctionnalités du bouton aide.
+  La `Help::DisplayTopicFromF1Keyword` mise en œuvre de votre VSPackage fournit la fonctionnalité pour le bouton Aide.
 
-  Pour plus d’informations, consultez `IDispatch` et `ISpecifyPropertyPages`in MSDN Library.
+  Pour plus d’informations, voir `IDispatch` et `ISpecifyPropertyPages`dans la bibliothèque MSDN.
 
-  Le deuxième type des pages de propriétés affichées dans les exemples héberge une forme de la grille des propriétés, comme illustré dans la capture d’écran suivante.
+  Le deuxième type de pages de propriété affichées dans les échantillons héberge une forme de grille de propriétés, comme indiqué dans la capture d’écran suivante.
 
-  ![Pages de propriétés VC](../../extensibility/internals/media/vsvcproppages.gif "vsVCPropPages") Boîte de dialogue pages de propriétés avec grille des propriétés
+  ![Pages de propriété de VC](../../extensibility/internals/media/vsvcproppages.gif "vsVCPropPages") Boîte de dialogue de pages de propriété avec grille de propriétés
 
-  Les interfaces `IVSMDPropertyBrowser` et `IVSMDPropertyGrid` (déclarées dans vsmanaged. h) sont utilisées pour créer et remplir la grille de propriétés dans une boîte de dialogue ou une fenêtre.
+  Les `IVSMDPropertyBrowser` interfaces `IVSMDPropertyGrid` et (déclaré en vsmanaged.h) sont utilisés pour créer et peupler la grille des propriétés dans une boîte de dialogue ou une fenêtre.
 
-  L’architecture des projets a considérablement changé par rapport aux versions antérieures de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. En particulier, la notion de projet actif a changé. Dans [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], il n’existe aucun concept de projet actif. Dans les environnements de développement précédents, le projet actif était le projet dans lequel les commandes de génération et de déploiement seraient par défaut, quel que soit le contexte. À présent, la solution contrôle et arbitre les commandes de génération et de déploiement qui s’appliquent aux projets.
+  L’architecture des projets a considérablement [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]changé par le passé versions de . En particulier, la notion de projet actif a changé. En [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], il n’y a pas de concept d’un projet actif. Dans les environnements de développement antérieurs, le projet actif était le projet qui construisait et déploierait des commandes par défaut, quel que soit le contexte. Maintenant, les contrôles de solution et les arbitrages qui construisent et déploient des commandes s’appliquent aux projets.
 
-  Ce qui était auparavant un projet actif est maintenant capturé de l’une des trois façons suivantes :
+  Ce qui était auparavant un projet actif est maintenant capturé de l’une des trois façons différentes :
 
-- Projet de démarrage
+- Le projet Startup
 
-   Vous pouvez spécifier un ou des projets à partir de la page de propriétés de la solution qui est démarrée quand l’utilisateur appuie sur F5 ou sélectionne exécuter dans le menu Générer. Cela fonctionne de manière similaire à l’ancien projet actif dans la mesure où son nom est affiché en Explorateur de solutions avec une police en gras.
+   Vous pouvez spécifier un projet ou des projets à partir de la page de propriété de la solution qui sera commencé lorsque l’utilisateur appuie F5 ou sélectionne Run à partir du menu Build. Cela fonctionne d’une manière similaire à l’ancien projet actif dans le sens où son nom est affiché dans Solution Explorer avec une police audacieuse.
 
-   Vous pouvez récupérer le projet de démarrage en tant que propriété dans le modèle Automation en appelant `DTE.Solution.SolutionBuild.StartupProjects`. Dans un VSPackage, vous appelez les méthodes <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionBuildManager2.get_StartupProject%2A> ou <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionBuildManager2.get_StartupProject%2A>. `IVsSolutionBuildManager` est disponible en tant que service par `QueryService` sur SID_SVsSolutionBuildManager. Pour plus d’informations, consultez [objet de configuration de projet](../../extensibility/internals/project-configuration-object.md) et configuration de [solution](../../extensibility/internals/solution-configuration.md).
+   Vous pouvez récupérer le projet de démarrage comme `DTE.Solution.SolutionBuild.StartupProjects`une propriété dans le modèle d’automatisation en appelant . Dans un VSPackage, <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionBuildManager2.get_StartupProject%2A> vous <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionBuildManager2.get_StartupProject%2A> appelez les méthodes ou les méthodes. `IVsSolutionBuildManager`est disponible en `QueryService` service sur SID_SVsSolutionBuildManager. Pour plus d’informations, voir [Project Configuration Object](../../extensibility/internals/project-configuration-object.md) and Solution [Configuration](../../extensibility/internals/solution-configuration.md).
 
-- Configuration de build de solution active
+- Configuration active de construction de solutions
 
-   [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] a une configuration de solution active, disponible dans le modèle Automation en implémentant `DTE.Solution.SolutionBuild.ActiveConfiguration`. Une configuration de solution est une collection qui contient une configuration de projet pour chaque projet dans la solution (chaque projet peut avoir plusieurs configurations, sur plusieurs plateformes, avec des noms différents). Pour plus d’informations sur les pages de propriétés de la solution, consultez Configuration de la [solution](../../extensibility/internals/solution-configuration.md).
+   [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]a une configuration de solution active, disponible `DTE.Solution.SolutionBuild.ActiveConfiguration`dans le modèle d’automatisation par la mise en œuvre . Une configuration de solution est une collection qui contient une configuration de projet pour chaque projet dans la solution (chaque projet peut avoir plusieurs configurations, sur plusieurs plates-formes, avec des noms différents). Pour plus d’informations sur les pages de propriété de la solution, voir [Solution Configuration](../../extensibility/internals/solution-configuration.md).
 
 - Projet actuellement sélectionné
 
-   Implémentez la méthode <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.GetCurrentSelection%2A> pour récupérer la hiérarchie de projet et les éléments de projet sélectionnés. À partir de DTE, vous pouvez utiliser les méthodes `SelectedItems.SelectedItem.Project` et `SelectedItems.SelectedItem.ProjectItem`. Il existe des exemples de code sous ces en-têtes dans les documents de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] de base.
+   Implémentez la <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.GetCurrentSelection%2A> méthode pour récupérer la hiérarchie du projet et l’élément du projet ou les éléments sélectionnés. De DTE, vous `SelectedItems.SelectedItem.Project` utiliseriez les méthodes et `SelectedItems.SelectedItem.ProjectItem` les méthodes. Il y a un code d’échantillon sous ces rubriques dans les documents de base. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]
 
 ## <a name="see-also"></a>Voir aussi
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsPropertyPage>

@@ -1,5 +1,5 @@
 ---
-title: Fonction SccBeginBatch | Microsoft Docs
+title: Fonction SccBeginBatch (fr) Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - SccBeginBatch function
 ms.assetid: 33968183-2e15-4e0d-955b-ca12212d1c25
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6bb145358184117046e14b7b598ce6d4bb4586b0
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 6c7982d8c8c0d71f8c79e9b808be5453d384882d
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66333896"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80701201"
 ---
 # <a name="sccbeginbatch-function"></a>Fonction SccBeginBatch
-Cette fonction démarre une séquence de traitement par lots des opérations de contrôle de code source. Le [SccEndBatch](../extensibility/sccendbatch-function.md) sera appelé pour terminer le lot. Ces lots ne peuvent pas être imbriqués.
+Cette fonction démarre une séquence de lots d’opérations de contrôle des sources. Le [SccEndBatch](../extensibility/sccendbatch-function.md) sera appelé à mettre fin au lot. Ces lots ne peuvent pas être imbriqués.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -31,19 +31,19 @@ SCCRTN SccBeginBatch(void);
 ### <a name="parameters"></a>Paramètres
  Aucun.
 
-## <a name="return-value"></a>Valeur de retour
- L’implémentation de plug-in de contrôle de source de cette fonction est censée retourner l’une des valeurs suivantes :
+## <a name="return-value"></a>Valeur retournée
+ La mise en œuvre plug-in de cette fonction de contrôle source devrait renvoyer l’une des valeurs suivantes :
 
-|Value|Description|
+|Valeur|Description|
 |-----------|-----------------|
-|SCC_OK|Lot d’opérations a démarré avec succès.|
-|SCC_E_UNKNOWNERROR|Erreur non spécifique.|
+|SCC_OK|Le lot d’opérations a commencé avec succès.|
+|SCC_E_UNKNOWNERROR|Défaillance non spécifique.|
 
 ## <a name="remarks"></a>Notes
- Lots de contrôle source sont utilisés pour exécuter les mêmes opérations sur plusieurs projets ou de plusieurs contextes. Lots peuvent être utilisés pour éliminer les boîtes de dialogue de projet redondante à partir de l’expérience utilisateur lors d’une opération par lot. Le `SccBeginBatch` (fonction) et le [SccEndBatch](../extensibility/sccendbatch-function.md) sont utilisés comme une paire de fonction pour indiquer le début et la fin d’une opération. Ils ne peuvent pas être imbriquées. `SccBeginBatch` définit un indicateur qui indique qu’une opération par lot est en cours.
+ Les lots de contrôle de source sont utilisés pour exécuter les mêmes opérations sur plusieurs projets ou contextes multiples. Les lots peuvent être utilisés pour éliminer les boîtes de dialogue redondantes par projet de l’expérience utilisateur au cours d’une opération en lots. La `SccBeginBatch` fonction et le [SccEndBatch](../extensibility/sccendbatch-function.md) sont utilisés comme une paire de fonctions pour indiquer le début et la fin d’une opération. Ils ne peuvent pas être imbriqués. `SccBeginBatch`définit un drapeau indiquant qu’une opération par lots est en cours.
 
- Pendant une opération par lot est en vigueur, le plug-in de contrôle de code source doit présenter au maximum une boîte de dialogue pour toute question à l’utilisateur et s’appliquent de la réponse à partir de cette boîte de dialogue sur toutes les opérations suivantes.
+ Bien qu’une opération par lots soit en vigueur, le plug-in de contrôle source devrait présenter au plus une boîte de dialogue pour toute question à l’utilisateur et appliquer la réponse de cette boîte de dialogue sur toutes les opérations ultérieures.
 
 ## <a name="see-also"></a>Voir aussi
-- [Fonctions d’API source contrôle plug-in](../extensibility/source-control-plug-in-api-functions.md)
+- [Fonctions d’API plug-in de contrôle des sources](../extensibility/source-control-plug-in-api-functions.md)
 - [SccEndBatch](../extensibility/sccendbatch-function.md)

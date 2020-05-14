@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: a863834790683b229c17ad55b9930a2b382c027b
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75589420"
 ---
 # <a name="how-to-model-3d-terrain"></a>Guide pratique pour modéliser un terrain 3D
@@ -29,12 +29,12 @@ Lorsque vous avez terminé, le modèle doit se présenter comme suit :
 
 Avant de commencer, assurez-vous que la fenêtre **Propriétés** et la **Boîte à outils** sont affichées.
 
-1. Créez un modèle 3D avec lequel travailler. Pour plus d’informations sur la façon d’ajouter un modèle à votre projet, consultez la section Bien démarrer de l’article [Éditeur de modèle](../designers/model-editor.md).
+1. Créez un modèle 3D avec lequel travailler. Pour plus d’informations sur la façon d’ajouter un modèle à votre projet, consultez la section Getting Started dans [l’éditeur du modèle](../designers/model-editor.md).
 
 2. Ajoutez un plan à la scène. Dans la **Boîte à outils**, sous **Formes**, sélectionnez **Plan** et déplacez-le vers l’aire de conception.
 
     > [!TIP]
-    > Pour faciliter l’utilisation de l’objet plan, vous pouvez l’encadrer dans l’aire de conception. En mode **Sélection**, sélectionnez l’objet plan, puis dans la barre d’outils de l’éditeur de modèle, choisissez le bouton **Frame Object (Encadrer l’objet)** .
+    > Pour faciliter l’utilisation de l’objet plan, vous pouvez l’encadrer dans l’aire de conception. En mode **Sélection**, sélectionnez l’objet plan, puis dans la barre d’outils de l’éditeur de modèle, choisissez le bouton **Frame Object (Encadrer l’objet)**.
 
 3. Passez en mode de sélection de la face. Dans la barre d’outils de l’éditeur de modèle, choisissez **Sélectionner la face**.
 
@@ -53,8 +53,8 @@ Le modèle de terrain est terminé. Voici à nouveau le modèle final, avec l’
 
 ![Scène 3D illustrant un modèle de terrain](../designers/media/digit-terrain-model.png)
 
-Vous pouvez utiliser ce modèle de terrain pour montrer l’effet du nuanceur de dégradé décrit dans [Guide pratique pour créer un nuanceur de géométrie dégradé](../designers/how-to-create-a-geometry-based-gradient-shader.md).
+Vous pouvez utiliser ce modèle de terrain pour démontrer l’effet de l’ombre de gradient qui est décrit dans [Comment: Créer un ombrage de gradient basé sur la géométrie](../designers/how-to-create-a-geometry-based-gradient-shader.md).
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Éditeur de modèles](../designers/model-editor.md)
+- [Éditeur modèle](../designers/model-editor.md)

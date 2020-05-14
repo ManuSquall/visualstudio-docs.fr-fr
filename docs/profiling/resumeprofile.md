@@ -12,10 +12,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 3d65d5fcf8961493c2b780453f2143de788551a5
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74778308"
 ---
 # <a name="resumeprofile"></a>ResumeProfile
@@ -29,12 +29,12 @@ PROFILE_COMMAND_STATUS PROFILERAPI ResumeProfile(
                        unsigned int dwId);
 ```
 
-#### <a name="parameters"></a>Parameters
+#### <a name="parameters"></a>Paramètres
  `Level`
 
  Indique le niveau du profil auquel la collecte des données de performances peut être appliquée. Les énumérateurs **PROFILE_CONTROL_LEVEL** suivants peuvent être utilisés pour indiquer un des trois niveaux auxquels la collecte des données de performances peut être appliquée :
 
-|Enumerator|Description|
+|Énumérateur|Description|
 |----------------|-----------------|
 |PROFILE_GLOBALLEVEL|Le niveau « global »affecte tous les processus et tous les threads dans l’exécution du profilage.|
 |PROFILE_PROCESSLEVEL|Le niveau « processus » affecte tous les threads qui font partie du processus spécifié.|
@@ -45,9 +45,9 @@ PROFILE_COMMAND_STATUS PROFILERAPI ResumeProfile(
  Identificateur du processus ou du thread généré par le système.
 
 ## <a name="property-valuereturn-value"></a>Valeur de propriété/valeur de retour
- La fonction indique la réussite ou l’échec en utilisant l’énumération **PROFILE_COMMAND_STATUS**. La valeur renvoyée peut être l'une des suivantes :
+ La fonction indique la réussite ou l’échec en utilisant l’énumération **PROFILE_COMMAND_STATUS**. La valeur de retour peut être une des suivantes :
 
-|Enumerator|Description|
+|Énumérateur|Description|
 |----------------|-----------------|
 |PROFILE_ERROR_ID_NOEXIST|L’ID d’élément de profilage n’existe pas.|
 |PROFILE_ERROR_LEVEL_NOEXIST|Le niveau de profilage spécifié n’existe pas.|
@@ -55,7 +55,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI ResumeProfile(
 |PROFILE_ERROR_NOT_YET_IMPLEMENTED|L’appel de fonction du profilage, le niveau de profilage ou la combinaison d’appel et de niveau n’est pas encore implémenté.|
 |PROFILE_OK|L’appel a réussi.|
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Notes 
  La valeur initiale du compteur de pauses/reprises est 0. Chaque appel à SuspendProfile ajoute 1 au nombre de Suspend/Resume ; chaque appel à ResumeProfile soustrait 1.
 
  Quand le nombre de Suspend/Resume est supérieur à 0, l’état Suspend/Resume pour le niveau est ON. Quand le nombre est inférieur ou égal à 0, l’état Suspend/Resume est ON.
@@ -70,7 +70,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI ResumeProfile(
 
  Bibliothèque d’importation : *VSPerf.lib*
 
-## <a name="example"></a>Exemple
+## <a name="example"></a> Exemple
  L’exemple suivant illustre la fonction ResumeProfile. L’exemple suppose qu’un appel à la méthode SuspendProfile a été effectué pour le même thread ou processus identifié par [PROFILE_CURRENTID](../profiling/profile-currentid.md).
 
 ```cpp
@@ -104,4 +104,4 @@ void ExerciseResumeProfile()
 ```
 
 ## <a name="see-also"></a>Voir aussi
-- [Informations de référence sur l’API du profileur Visual Studio (native)](../profiling/visual-studio-profiler-api-reference-native.md)
+- [Visual Studio profiler API référence (native)](../profiling/visual-studio-profiler-api-reference-native.md)

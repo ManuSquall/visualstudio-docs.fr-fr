@@ -1,5 +1,5 @@
 ---
-title: Fonction SccAddFilesFromSCC | Microsoft Docs
+title: SccAddFilesDeSCC Fonction (fr) Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - SccAddFilesFromSCC function
 ms.assetid: f21a3500-ade8-4dd8-8647-10e2179be9c1
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: cfe58c3eef4b09fccb5cd21b714e5987ae1e08aa
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 1d22527644edbf1697112f5cf8b73b8a3f72b774
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66333968"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80701286"
 ---
-# <a name="sccaddfilesfromscc-function"></a>SccAddFilesFromSCC function
-Cette fonction ajoute une liste de fichiers à partir du contrôle de code source au projet actuellement ouvert.
+# <a name="sccaddfilesfromscc-function"></a>SccAddFilesDeSCC fonction
+Cette fonction ajoute une liste de fichiers allant du contrôle source au projet actuellement ouvert.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -41,50 +41,50 @@ SCCRTN SccAddFilesFromSCC(
 ### <a name="parameters"></a>Paramètres
  pContext
 
-[in] Le pointeur de contexte de plug-in de contrôle de code source.
+[dans] Le pointeur de contexte de plug-in de contrôle de source.
 
  hWnd
 
-[in] Handle vers la fenêtre de l’IDE que le plug-in de contrôle de code source peut utiliser en tant que parent pour les boîtes de dialogue qu’il fournit.
+[dans] Une poignée à la fenêtre IDE que le plug-in de contrôle source peut utiliser comme parent pour toutes les boîtes de dialogue qu’il fournit.
 
  lpUser
 
-[in, out] Le nom d’utilisateur (jusqu'à SCC_USER_SIZE, y compris le terminateur null).
+[dans, dehors] Le nom d’utilisateur (jusqu’à SCC_USER_SIZE, y compris le terminateur nul).
 
  lpAuxProjPath
 
-[in, out] Auxiliaire chaîne identifiant le projet (jusqu'à `SCC_PRJPATH_`taille, y compris le terminateur null).
+[dans, dehors] Chaîne auxiliaire identifiant le `SCC_PRJPATH_`projet (jusqu’à SIZE, y compris le terminateur nul).
 
  cFiles
 
-[in] Nombre de fichiers donné par `lpFilePaths`.
+[dans] Nombre de fichiers `lpFilePaths`donnés par .
 
  lpFilePaths
 
-[in, out] Tableau de noms de fichiers à ajouter au projet actuel.
+[dans, dehors] Array de noms de fichiers à ajouter au projet en cours.
 
  lpDestination
 
-[in] Le chemin d’accès de destination où les fichiers doivent être écrites.
+[dans] Le chemin de destination où les fichiers doivent être écrits.
 
  lpComment
 
-[in] Le commentaire à appliquer à chacun des fichiers en cours d’ajout.
+[dans] Le commentaire à appliquer à chacun des fichiers ajoutés.
 
  pbResults
 
-[in, out] Tableau d’indicateurs qui sont le jeu pour indiquer la réussite (différente de zéro ou TRUE) ou l’échec (zéro ou FALSE) pour chaque fichier (taille du tableau doit être au moins `cFiles` long).
+[dans, dehors] Array de drapeaux qui sont réglés pour indiquer le succès (nonzero ou VRAI) ou l’échec (zéro ou FALSE) pour chaque fichier (la taille du tableau doit être au moins `cFiles` long).
 
-## <a name="return-value"></a>Valeur de retour
- L’implémentation de plug-in de contrôle de source de cette fonction est censée retourner l’une des valeurs suivantes :
+## <a name="return-value"></a>Valeur retournée
+ La mise en œuvre plug-in de cette fonction de contrôle source devrait renvoyer l’une des valeurs suivantes :
 
-|Value|Description|
+|Valeur|Description|
 |-----------|-----------------|
-|SCC_E_PROJNOTOPEN|Projet n’est pas ouvert.|
-|SCC_E_OPNOTPERFORMED|Connexion n’est pas le même projet, tel que spécifié par `lpAuxProjPath.`|
-|SCC_E_NOTAUTHORIZED|Utilisateur n’est pas autorisé à mettre à jour de la base de données.|
+|SCC_E_PROJNOTOPEN|Le projet n’est pas ouvert.|
+|SCC_E_OPNOTPERFORMED|La connexion n’est pas au même projet que spécifié par`lpAuxProjPath.`|
+|SCC_E_NOTAUTHORIZED|L’utilisateur n’est pas autorisé à mettre à jour la base de données.|
 |SCC_E_NONSPECIFICERROR|Erreur inconnue.|
 |SCC_I_RELOADFILE|Un fichier ou un projet doit être rechargé.|
 
 ## <a name="see-also"></a>Voir aussi
-- [Fonctions d’API source contrôle plug-in](../extensibility/source-control-plug-in-api-functions.md)
+- [Fonctions d’API plug-in de contrôle des sources](../extensibility/source-control-plug-in-api-functions.md)

@@ -10,12 +10,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: afa29a2fa3d853e61dbbc26c01d389e57116a1a5
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 3e0693b6630f1b4c6a9494a77e223cca23c6dc10
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75593848"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79093601"
 ---
 # <a name="msbuild-targets"></a>Cibles de MSBuild
 
@@ -31,7 +31,7 @@ Les cibles regroupent les tâches dans un ordre particulier et permet au process
 </Target>
 ```
 
- Tout comme les propriétés MSBuild, les cibles peuvent être redéfinies. Par exemple :
+ Tout comme les propriétés MSBuild, les cibles peuvent être redéfinies. Par exemple,
 
 ```xml
 <Target Name="AfterBuild" >
@@ -42,7 +42,7 @@ Les cibles regroupent les tâches dans un ordre particulier et permet au process
 </Target>
 ```
 
- Si AfterBuild s’exécute, il affiche uniquement « Second occurrence ».
+ S’il `AfterBuild` s’exécute, il n’affiche que `AfterBuild` la « deuxième occurrence », parce que la deuxième définition de cache la première.
 
  MSBuild est dépend de l’ordre d’importation, et la dernière définition d’une cible est la définition utilisée.
 
@@ -64,11 +64,11 @@ Les cibles regroupent les tâches dans un ordre particulier et permet au process
 
 Une cible n’est jamais exécutée deux fois au cours d’une même génération, même si une cible suivante de la génération en dépend. Une fois qu’une cible est exécutée, sa contribution à la génération est terminée.
 
-Pour plus d’informations sur l’ordre de génération des cibles, consultez [Ordre de génération des cibles](../msbuild/target-build-order.md).
+Pour plus de détails et plus d’informations sur l’ordre de construction cible, voir [Target build order](../msbuild/target-build-order.md).
 
 ## <a name="target-batching"></a>Traitement par lots des cibles
 
-Un élément cible peut avoir un attribut `Outputs` qui spécifie des métadonnées au format suivant : %(\<métadonnées>). Dans ce cas, MSBuild exécute la cible une fois pour chaque valeur unique de métadonnées, en regroupant par lot les éléments qui ont cette valeur de métadonnées. Par exemple :
+Un élément cible peut avoir un attribut `Outputs` qui spécifie des métadonnées au format suivant : %(\<métadonnées>). Dans ce cas, MSBuild exécute la cible une fois pour chaque valeur unique de métadonnées, en regroupant par lot les éléments qui ont cette valeur de métadonnées. Par exemple,
 
 ```xml
 <ItemGroup>
@@ -102,10 +102,11 @@ Reference: 4.0
 
  Les builds incrémentielles sont des builds optimisées qui permettent de ne pas exécuter les cibles dont les fichiers de sortie sont à jour par rapport à leurs fichiers d’entrée correspondants. Un élément cible peut avoir à la fois un attribut `Inputs`, qui indique les éléments que la cible attend comme entrée, et un attribut `Outputs` qui indique les éléments qu’il produit comme sortie.
 
- Si tous les éléments de sortie sont à jour, MSBuild ignore la cible, ce qui accélère considérablement le processus de génération. C’est ce qu’on appelle une build incrémentielle de la cible. Si seuls certains fichiers sont à jour, MSBuild exécute la cible, sans exécuter ces fichiers. C’est ce qu’on appelle une build incrémentielle partielle de la cible. Pour plus d’informations, consultez [Builds incrémentielles](../msbuild/incremental-builds.md).
+ Si tous les éléments de sortie sont à jour, MSBuild ignore la cible, ce qui accélère considérablement le processus de génération. C’est ce qu’on appelle une build incrémentielle de la cible. Si seuls certains fichiers sont à jour, MSBuild exécute la cible, sans exécuter ces fichiers. C’est ce qu’on appelle une build incrémentielle partielle de la cible. Pour plus d’informations, voir [Les builds incrémentaux](../msbuild/incremental-builds.md).
 
-## <a name="default-build-targets"></a>Cibles de build par défaut
-La liste suivante répertorie les cibles publiques dans Microsoft. Common. CurrentVersion. targets.
+## <a name="default-build-targets"></a>Cibles de construction par défaut
+
+Ce qui suit répertorie les cibles publiques de Microsoft.Common.CurrentVersion.Targets.
 
 ```
 ===================================================
@@ -1014,4 +1015,4 @@ This target gathers the Redist folders from the SDKs which have been resolved.
 ## <a name="see-also"></a>Voir aussi
 
 - [Concepts MSBuild](../msbuild/msbuild-concepts.md)
-- [Guide pratique pour utiliser la même cible dans plusieurs fichiers projet](../msbuild/how-to-use-the-same-target-in-multiple-project-files.md)
+- [Comment : Utiliser la même cible dans plusieurs fichiers de projet](../msbuild/how-to-use-the-same-target-in-multiple-project-files.md)

@@ -1,5 +1,5 @@
 ---
-title: 'Procédure pas à pas : Créer un environnement de build sur plusieurs ordinateurs'
+title: 'Procédure pas à pas : créer un environnement de build sur plusieurs ordinateurs'
 ms.date: 11/04/2016
 ms.technology: vs-ide-compile
 ms.topic: conceptual
@@ -12,19 +12,19 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 11b158854a0026de28cb2fb0a582bbaf764eeaa4
-ms.sourcegitcommit: 85d66dc9fea3fa49018263064876b15aeb6f9584
-ms.translationtype: HT
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/24/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "68461535"
 ---
-# <a name="walkthrough-create-a-multiple-computer-build-environment"></a>Procédure pas à pas : Créer un environnement de build sur plusieurs ordinateurs
+# <a name="walkthrough-create-a-multiple-computer-build-environment"></a>Procédure pas à pas : créer un environnement de build sur plusieurs ordinateurs
 
 Vous pouvez créer un environnement de build dans votre organisation en installant Visual Studio sur un ordinateur hôte, puis en copiant plusieurs fichiers et paramètres sur un autre ordinateur afin qu’il puisse participer aux builds. Vous n’avez pas à installer Visual Studio sur un autre ordinateur.
 
 Ce document ne confère pas de droits pour redistribuer le logiciel en externe ou pour fournir des environnements de build à des tiers.
 
-> Exclusion de responsabilité<br /><br /> Ce document est fourni « en l’état ». Nous avons testé les étapes décrites, mais nous ne pouvons pas tester exhaustivement chaque configuration. Nous tenterons de maintenir le document à jour avec toute information supplémentaire obtenue. Les informations et opinions présentées dans ce document, notamment les URL et autres références à des sites web Internet, peuvent être modifiées sans information préalable. Microsoft n’offre aucune garantie, expresse ou implicite, concernant les informations fournies ici. Vous assumez tous les risques liés à leur utilisation.<br /><br /> Ce document ne vous donne aucun droit légal de propriété intellectuelle quant aux produits Microsoft. Vous pouvez copier et utiliser ce document à titre de référence interne.<br /><br /> Vous n’avez aucune obligation de faire à Microsoft des suggestions, commentaires ou autre retour concernant ce document. Toutefois, tout commentaire que vous fournissez volontairement peut être utilisé dans des produits Microsoft et les spécifications liées ou dans une autre documentation (collectivement, les "Offres Microsoft") qui peuvent elles-mêmes être utilisées par des tiers pour développer leurs propres produits. Par conséquent, si vous envoyez des retours sous forme de commentaires à Microsoft concernant n’importe quelle version de ce document ou les Offres Microsoft auxquelles ils s’appliquent, vous acceptez les points suivants : (a) Microsoft peut librement utiliser, reproduire, autoriser, distribuer et commercialiser vos commentaires dans toute Offre Microsoft ; (b) vous n’accorderez également aux tiers, sans frais, que les droits de brevet nécessaires pour permettre à d’autres produits d’utiliser ou d’interagir avec toutes les parties spécifiques d’un produit Microsoft qui incorporent vos commentaires ; et (c) vous n’enverrez à Microsoft aucun commentaire (i) pour lequel vous avez une raison de croire qu’il est soumis à un brevet, un copyright ou une autre revendication de propriété intellectuelle ou un autre droit envers un tiers ; ou (ii) qui soit soumis aux termes d’un contrat de licence exigeant que toute Offre Microsoft intégrant ou dérivée de ces commentaires, ou d’une autre propriété intellectuelle Microsoft, soit fournie sous licence à tout tiers ou partagée avec celui-ci.
+> Clause d'exclusion de responsabilité<br /><br /> Ce document est fourni « en l’état ». Nous avons testé les étapes décrites, mais nous ne pouvons pas tester exhaustivement chaque configuration. Nous tenterons de maintenir le document à jour avec toute information supplémentaire obtenue. Les informations et les points de vue exprimés dans ce document, y compris les URL et autres références à des sites web, peuvent être modifiés sans préavis. Microsoft n’offre aucune garantie, expresse ou implicite, concernant les informations fournies ici. Vous assumez les risques liés à leur utilisation.<br /><br /> Ce document ne vous accorde aucun droit légal à la propriété intellectuelle pour un produit Microsoft. Vous pouvez copier et utiliser ce document pour un usage interne, à titre de référence.<br /><br /> Vous n’avez aucune obligation de faire à Microsoft des suggestions, commentaires ou autre retour concernant ce document. Toutefois, tout commentaire que vous fournissez volontairement peut être utilisé dans des produits Microsoft et les spécifications liées ou dans une autre documentation (collectivement, les "Offres Microsoft") qui peuvent elles-mêmes être utilisées par des tiers pour développer leurs propres produits. Par conséquent, si vous envoyez des retours sous forme de commentaires à Microsoft concernant n’importe quelle version de ce document ou les Offres Microsoft auxquelles ils s’appliquent, vous acceptez les points suivants : (a) Microsoft peut librement utiliser, reproduire, autoriser, distribuer et commercialiser vos commentaires dans toute Offre Microsoft ; (b) vous n’accorderez également aux tiers, sans frais, que les droits de brevet nécessaires pour permettre à d’autres produits d’utiliser ou d’interagir avec toutes les parties spécifiques d’un produit Microsoft qui incorporent vos commentaires ; et (c) vous n’enverrez à Microsoft aucun commentaire (i) pour lequel vous avez une raison de croire qu’il est soumis à un brevet, un copyright ou une autre revendication de propriété intellectuelle ou un autre droit envers un tiers ; ou (ii) qui soit soumis aux termes d’un contrat de licence exigeant que toute Offre Microsoft intégrant ou dérivée de ces commentaires, ou d’une autre propriété intellectuelle Microsoft, soit fournie sous licence à tout tiers ou partagée avec celui-ci.
 
 Cette procédure pas à pas a été validée sur les systèmes d’exploitation suivants :
 
@@ -42,7 +42,7 @@ Il n’est pas possible d’utiliser l’environnement à plusieurs ordinateurs 
 - Applications UWP. Pour générer des applications UWP, vous devez installer Visual Studio sur l’ordinateur de build.
 - Applications de bureau qui ciblent .NET Framework 4 ou version antérieure. Pour générer ce genre d’applications, vous devez installer Visual Studio ou bien les outils et assemblys de référence .NET (à partir du SDK Windows 7.1) sur l’ordinateur de build.
 
-## <a name="prerequisites"></a>Prérequis
+## <a name="prerequisites"></a>Conditions préalables requises
 
 Visual Studio, avec la charge de travail **Développement Desktop .NET**.
 
@@ -63,7 +63,7 @@ Cette section décrit la copie de fichiers, compilateurs, outils de génération
 - Sur un ordinateur x86, l’emplacement par défaut est *C:\Program Files\Microsoft Visual Studio*.
 - Sur un ordinateur x64, l’emplacement par défaut est *C:\Program Files (x86)\Microsoft Visual Studio*.
 
-Notez que le nom du dossier *Program Files* dépend du système d’exploitation installé. Sur un ordinateur x86, le nom est *Program Files* ; sur un ordinateur x64, le nom est *Program Files (x86)* . Indépendamment de l’architecture du système, cette procédure pas à pas fait référence au dossier *Program Files* sous la forme *%ProgramFiles%* .
+Notez que le nom du dossier *Program Files* dépend du système d’exploitation installé. Sur un ordinateur x86, le nom est *Program Files* ; sur un ordinateur x64, le nom est *Program Files (x86)*. Indépendamment de l’architecture du système, cette procédure pas à pas fait référence au dossier *Program Files* sous la forme *%ProgramFiles%*.
 
 > [!NOTE]
 > Sur l’ordinateur de build, tous les fichiers appropriés doivent se trouver sur le même lecteur. Toutefois, la lettre de ce lecteur peut être différente de la lettre du lecteur sur lequel Visual Studio est installé sur l’ordinateur hôte. Dans tous les cas, vous devez tenir compte de l’emplacement des fichiers quand vous créez des entrées de Registre, comme décrit plus loin dans ce document.
@@ -130,7 +130,7 @@ Notez que le nom du dossier *Program Files* dépend du système d’exploitation
 
     - %ProgramFiles%\Microsoft Visual Studio\\\<version>\\\<édition>\Common7\Tools\vsvars32.bat
 
-4. Les bibliothèques runtime Visual C++ suivantes sont nécessaires uniquement si vous exécutez des sorties de génération sur l’ordinateur de build, par exemple dans le cadre de tests automatisés. Les fichiers se trouvent généralement dans les sous-dossiers du dossier *%ProgramFiles%\Microsoft Visual Studio\\\<version>\\\<édition>\VC\redist\x86* ou *%ProgramFiles%\Microsoft Visual Studio\\\<version>\\\<édition>\VC\redist\x64*, selon l’architecture du système. Sur les systèmes x86, copiez les fichiers binaires x86 dans le dossier *Windows\System32*. Sur les systèmes x64, copiez les fichiers binaires x86 dans le dossier *Windows\SysWOW64*, et les fichiers binaires x64 dans le dossier *Windows\System32*.
+4. Les bibliothèques runtime Visual C++ suivantes sont nécessaires uniquement si vous exécutez des sorties de génération sur l’ordinateur de build, par exemple dans le cadre de tests automatisés. Les fichiers sont généralement situés dans des sous-dossiers dans la *version % ProgramFiles%-Microsoft Visual Studio\\\<>\\ \<édition>-VC-redist-x86* ou *% ProgramFiles% -Microsoft Visual Studio\\\<version>\\ \<édition> 'VC’redist’x64* dossier, selon l’architecture du système. Sur les systèmes x86, copiez les fichiers binaires x86 dans le dossier *Windows\System32*. Sur les systèmes x64, copiez les fichiers binaires x86 dans le dossier *Windows\SysWOW64*, et les fichiers binaires x64 dans le dossier *Windows\System32*.
 
     - \Microsoft.VC110.ATL\atl110.dll
 
@@ -192,7 +192,7 @@ Notez que le nom du dossier *Program Files* dépend du système d’exploitation
 
 Vous devez créer des entrées de Registre pour configurer des paramètres pour MSBuild.
 
-1. Identifiez le dossier parent des entrées du Registre. Toutes les entrées du Registre sont créées sous la même clé parente. Sur un ordinateur x86, la clé parente est **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft**. Sur un ordinateur x64, la clé parente est **HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft**. Indépendamment de l’architecture du système, cette procédure pas à pas fait référence à la clé parente sous la forme %RegistryRoot%.
+1. Identifiez le dossier parent des entrées du Registre. Toutes les entrées du Registre sont créées sous la même clé parente. Sur un ordinateur x86, la clé parente est **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft**. Sur un ordinateur x64, la clé parente est **HKEY_LOCAL_MACHINE-SOFTWARE-Wow6432Node-Microsoft**. Indépendamment de l’architecture du système, cette procédure pas à pas fait référence à la clé parente sous la forme %RegistryRoot%.
 
     > [!NOTE]
     > Si l’architecture de votre ordinateur hôte diffère de celle de votre ordinateur de build, veillez à utiliser la clé parente appropriée sur chaque ordinateur. Cela est particulièrement important si vous automatisez le processus d’exportation.
@@ -203,13 +203,13 @@ Vous devez créer des entrées de Registre pour configurer des paramètres pour 
 
    - **%RegistryRoot%\\.NETFramework\v4.0.30319\AssemblyFoldersEx\VCMSBuild Public Assemblies@(Default)**
 
-   - <strong>%RegistryRoot%\Microsoft SDKs\Windows\v8.0@InstallationFolder</strong>
+   - <strong>%RegistryRoot%-MicrosoftSDKs\Windows\v8.0@InstallationFolder</strong>
 
-   - <strong>%RegistryRoot%\Microsoft SDKs\Windows\v8.0A@InstallationFolder</strong>
+   - <strong>%RegistryRoot%-MicrosoftSDKs\Windows\v8.0A@InstallationFolder</strong>
 
-   - <strong>%RegistryRoot%\Microsoft SDKs\Windows\v8.0A\WinSDK-NetFx40Tools@InstallationFolder</strong>
+   - <strong>%RegistryRoot%-MicrosoftSDKs\Windows\v8.0A\WinSDK-NetFx40Tools@InstallationFolder</strong>
 
-   - <strong>%RegistryRoot%\Microsoft SDKs\Windows\v8.0A\WinSDK-NetFx40Tools-x86@InstallationFolder</strong>
+   - <strong>%RegistryRoot%-MicrosoftSDKs\Windows\v8.0A\WinSDK-NetFx40Tools-x86@InstallationFolder</strong>
 
    - **%RegistryRoot%\VisualStudio\11.0@Source Répertoires**
 
@@ -237,7 +237,7 @@ Vous devez créer des entrées de Registre pour configurer des paramètres pour 
 
    Sur un ordinateur de build x64, créez également l’entrée de Registre suivante, et reportez-vous à l’ordinateur hôte pour déterminer comment la définir.
 
-   - <strong>%RegistryRoot%\Microsoft SDKs\Windows\v8.0A\WinSDK-NetFx40Tools-x64@InstallationFolder</strong>
+   - <strong>%RegistryRoot%-MicrosoftSDKs\Windows\v8.0A\WinSDK-NetFx40Tools-x64@InstallationFolder</strong>
 
    Si votre ordinateur de build est de type x64 et que vous voulez utiliser la version 64 bits de MSBuild, ou si vous utilisez le service de build Team Foundation Server sur un ordinateur x64, créez les entrées de Registre suivantes dans le Registre 64 bits natif. Reportez-vous à l’ordinateur hôte pour savoir comment définir ces entrées.
 
@@ -255,15 +255,15 @@ Pour utiliser MSBuild sur l’ordinateur de build, vous devez définir les varia
 
 ### <a name="use-vcvarsallbat-to-set-environment-variables"></a>Utiliser vcvarsall.bat pour définir des variables d’environnement
 
-Ouvrez une fenêtre **Invite de commandes** sur l’ordinateur de build, puis exécutez *%Program Files%\Microsoft Visual Studio\\\<version>\\\<édition>\VC\vcvarsall.bat*. Vous pouvez utiliser un argument de ligne de commande pour spécifier l’ensemble d’outils à utiliser : compilateur croisé x64, x64 natif ou x86. Si vous ne spécifiez pas d’argument de ligne de commande, l’ensemble d’outils x86 est utilisé.
+Ouvrez une fenêtre **d’invite de commande** sur l’ordinateur de construction et exécutez *% de fichiers de programme % -Microsoft Visual\\\<Studio version>\\ \<édition>'VC-VCvarsall.bat*. Vous pouvez utiliser un argument de ligne de commande pour spécifier l’ensemble d’outils à utiliser : compilateur croisé x64, x64 natif ou x86. Si vous ne spécifiez pas d’argument de ligne de commande, l’ensemble d’outils x86 est utilisé.
 
 Le tableau suivant décrit les arguments pris en charge pour *vcvarsall.bat* :
 
 |Argument Vcvarsall.bat|Compilateur|Architecture de l’ordinateur de build|Architecture de sortie de génération|
 | - |--------------| - | - |
 |x86 (valeur par défaut)|Natif 32 bits|x86, x64|x86|
-|x86_amd64|x64 croisé|x86, x64|X64|
-|amd64|x64 natif|X64|X64|
+|x86_amd64|x64 croisé|x86, x64|x64|
+|amd64|x64 natif|x64|x64|
 
 Si *vcvarsall.bat* s’exécute correctement (autrement dit si aucun message d’erreur ne s’affiche), vous pouvez ignorer l’étape suivante et passer à la section [Installer les assemblys MSBuild dans le GAC (Global Assembly Cache) sur l’ordinateur de build](#install-msbuild-to-gac) de ce document.
 
@@ -287,7 +287,7 @@ Si *vcvarsall.bat* s’exécute correctement (autrement dit si aucun message d�
 
    - %windir%\Microsoft.NET\Framework64\v4.0.30319
 
-## <a name="a-nameinstall-msbuild-to-gac--install-msbuild-assemblies-to-the-global-assembly-cache-gac-on-the-build-computer"></a><a name="install-msbuild-to-gac" /> Installer les assemblys MSBuild dans le GAC (Global Assembly Cache) sur l’ordinateur de build
+## <a name="install-msbuild-assemblies-to-the-global-assembly-cache-gac-on-the-build-computer"></a><a name="install-msbuild-to-gac" /> Installer les assemblys MSBuild dans le GAC (Global Assembly Cache) sur l’ordinateur de build
 
 MSBuild exige que certains assemblys supplémentaires soient installés dans le GAC sur l’ordinateur de build.
 
@@ -333,13 +333,13 @@ Vous pouvez créer un environnement de build qui peut être déployé sur plusie
 
 2. Copiez les répertoires et fichiers, comme décrit dans la section [Copier des fichiers de l’ordinateur hôte vers l’ordinateur de build](../ide/walkthrough-creating-a-multiple-computer-build-environment.md#copy-files-from-the-host-computer-to-the-build-computer) de cette procédure pas à pas, puis collez-les dans le répertoire *%Depot%* que vous venez de créer. Par exemple, effectuez la copie de *%ProgramFiles%\Windows Kits\8.0\bin* vers *%Depot%\Windows Kits\8.0\bin*.
 
-3. Une fois les fichiers collés dans *%Depot%* , effectuez les modifications suivantes :
+3. Une fois les fichiers collés dans *%Depot%*, effectuez les modifications suivantes :
 
     - Dans %Depot%\MSBuild\Microsoft.Cpp\v4.0\v110\Microsoft.CPP.Targets, \Microsoft.Cpp.InvalidPlatforms.targets\\, \Microsoft.cppbuild.targets\\ et \Microsoft.CppCommon.targets\\, remplacez toutes les instances de
 
          AssemblyName="Microsoft.Build.CppTasks.Common.v110, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"
 
-         par celle-ci :
+         to
 
          AssemblyFile="$(VCTargetsPath11)Microsoft.Build.CppTasks.Common.v110.dll".
 
@@ -349,7 +349,7 @@ Vous pouvez créer un environnement de build qui peut être déployé sur plusie
 
          AssemblyName="Microsoft.Build.CppTasks.Common.v110, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"
 
-         par celle-ci :
+         to
 
          AssemblyFile="$(VCTargetsPath11)Microsoft.Build.CppTasks.Common.v110.dll".
 
@@ -409,4 +409,4 @@ Vous pouvez créer un environnement de build qui peut être déployé sur plusie
 ## <a name="see-also"></a>Voir aussi
 
 - [Préparer un ordinateur de test pour lancer un exécutable de débogage](/cpp/windows/preparing-a-test-machine-to-run-a-debug-executable)
-- [Informations de référence sur la ligne de commande](../msbuild/msbuild-command-line-reference.md)
+- [Référence de la ligne de commandement](../msbuild/msbuild-command-line-reference.md)

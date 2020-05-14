@@ -1,30 +1,30 @@
 ---
-title: Champ m_contingentProperties | Microsoft Docs
+title: m_contingentProperties Field ( Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - m_contingentProperties field, Task class [.NET Framework debug engines]
 ms.assetid: 49e8cb36-db39-440b-acda-a325651f1165
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a583f6e42198f3ad01af99ab9bfa164793eada68
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: c216a99042a3b9b67eaa0dc13555c27a1e8bfad9
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66330879"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80738419"
 ---
-# <a name="mcontingentproperties-field"></a>m_contingentProperties field
-Stocke des propriétés supplémentaires de la <xref:System.Threading.Tasks.Task> objet.
+# <a name="m_contingentproperties-field"></a>champ m_contingentProperties
+Stocke des <xref:System.Threading.Tasks.Task> propriétés supplémentaires de l’objet.
 
- **Espace de noms :** <xref:System.Threading.Tasks?displayProperty=fullName>
+ **Espace nom:**<xref:System.Threading.Tasks?displayProperty=fullName>
 
- **Assembly :** mscorlib (dans *mscorlib.dll*)
+ **Assemblée:** mscorlib (en *mscorlib.dll*)
 
- Étant donné que vous ne pouvez pas accéder à ce membre interne du .NET Framework, la syntaxe suivante est fournie en commun Intermediate Language (CIL).
+ Parce que vous ne pouvez pas accéder à ce membre interne à partir du cadre .NET, la syntaxe suivante est fournie dans common Intermediate Language (CIL).
 
 ## <a name="syntax"></a>Syntaxe
 

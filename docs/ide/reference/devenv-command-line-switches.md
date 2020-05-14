@@ -13,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b3ed82bd8ba3845541d7dce628f99fb78b62ab9f
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: ed7a36ad561daf87ec65db0f6c51c9dd7833eb9e
+ms.sourcegitcommit: ddd99f64a3f86508892a6d61e8a33c88fb911cc4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75595707"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "82255556"
 ---
 # <a name="devenv-command-line-switches"></a>Commutateurs de ligne de commande Devenv
 
@@ -52,7 +52,7 @@ Les règles syntaxiques des commutateurs `devenv` ressemblent à celles d’autr
   > [!NOTE]
   > Un seul fichier solution référençant ce projet doit se trouver dans son dossier parent. Si le dossier parent ne contient aucun fichier solution référençant ce projet, ou si le dossier parent contient deux fichiers solution ou plus qui le référencent, un fichier solution temporaire est créé.
 
-- Quand les chemins et les noms de fichier comportent des espaces, vous devez les placer entre des guillemets doubles (""). Par exemple, `"c:\project a\"`.
+- Quand les chemins et les noms de fichier comportent des espaces, vous devez les placer entre des guillemets doubles (""). Par exemple : `"c:\project a\"`.
 
 - Insérez un espace entre les commutateurs et les arguments de la même ligne. Par exemple, la commande `devenv /log output.txt` ouvre l’environnement IDE et écrit toutes les informations de journal de cette session dans le fichier output.txt.
 
@@ -72,10 +72,11 @@ Les commutateurs de ligne de commande suivants affichent l’environnement IDE e
 |[/LCID ou /L](lcid-devenv-exe.md)|Spécifie la langue par défaut pour l’IDE. Si la langue spécifiée n’est pas incluse dans votre installation de Visual Studio, ce paramètre est ignoré.<br /><br /> `devenv /l 1033`|
 |[/Log](log-devenv-exe.md)|Démarre Visual Studio et enregistre toute l’activité dans le fichier journal.<br /><br /> `devenv /log mylogfile.xml`|
 |[/NoSplash](nosplash-devenv-exe.md)|Ouvre l’environnement IDE sans afficher l’écran de démarrage.<br /><br /> `devenv /nosplash File1 File2`|
+|[/ResetSettings](resetsettings-devenv-exe.md)|Restaure les paramètres par défaut de Visual Studio. Éventuellement, réinitialise les paramètres dans le fichier `.vssettings` spécifié.<br /><br /> `devenv /resetsettings mysettings.vssettings`|
 |[/Run ou /R](run-devenv-exe.md)|Compile et exécute la solution spécifiée.<br /><br /> `devenv /run mysln.sln`|
 |[/RunExit](runexit-devenv-exe.md)|Compile et exécute la solution spécifiée, réduit l’IDE pendant l’exécution de la solution et ferme l’IDE une fois la solution exécutée.<br /><br /> `devenv /runexit mysln.sln`|
 |[/SafeMode](safemode-devenv-exe.md)|Lance Visual Studio en mode sans échec. Ce commutateur charge uniquement l’environnement par défaut, les services par défaut et les versions commercialisées des packages tiers.<br /><br /> Ce commutateur ne prend aucun argument.|
-|[/UseEnv](useenv-devenv-exe.md)|Force l’environnement IDE à utiliser les variables d’environnement PATH, INCLUDE, LIBPATH et LIB pour la compilation C++. Ce commutateur est installé avec la charge de travail **Développement Desktop avec C++** . Pour plus d’informations, consultez [Définition du chemin d’accès et des variables d’environnement pour les générations sur la ligne de commande](/cpp/build/setting-the-path-and-environment-variables-for-command-line-builds).|
+|[/UseEnv](useenv-devenv-exe.md)|Force l’environnement IDE à utiliser les variables d’environnement PATH, INCLUDE, LIBPATH et LIB pour la compilation C++. Ce commutateur est installé avec la charge de travail **Développement Desktop avec C++**. Pour plus d'informations, consultez [Setting the Path and Environment Variables for Command-Line Builds](/cpp/build/setting-the-path-and-environment-variables-for-command-line-builds).|
 
 Les commutateurs de ligne de commande suivants n’affichent pas l’environnement IDE.
 
@@ -89,10 +90,9 @@ Les commutateurs de ligne de commande suivants n’affichent pas l’environneme
 |[/Project](project-devenv-exe.md)|Projet à générer, nettoyer ou déployer. Ce commutateur n’est utilisable que si le commutateur `/Build`, `/Rebuild`, `/Clean` ou `/Deploy` est également indiqué.<br /><br /> `devenv mysln.sln /build Debug /project proj1`|
 |[/ProjectConfig](projectconfig-devenv-exe.md)|Spécifie la configuration de projet à générer ou déployer. Ce commutateur n’est utilisable que si le commutateur `/Project` est également indiqué.<br /><br /> `devenv mysln.sln /build Release /project proj1 /projectconfig Release`|
 |[/Rebuild](rebuild-devenv-exe.md)|Efface, puis génère la solution ou le projet spécifié en fonction de la configuration de la solution indiquée.<br /><br /> `devenv mysln.sln /rebuild`|
-|[/ResetSettings](resetsettings-devenv-exe.md)|Restaure les paramètres par défaut de Visual Studio. Éventuellement, réinitialise les paramètres dans le fichier `.vssettings` spécifié.<br /><br /> `devenv /resetsettings mysettings.vssettings`|
 |[/Upgrade](upgrade-devenv-exe.md)|Met à niveau le fichier solution spécifié et tous ses fichiers projet, ou le fichier projet spécifié, avec les formats Visual Studio actuels pour ces fichiers.<br /><br /> `devenv mysln.sln /upgrade`|
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Général, Environnement, boîte de dialogue Options](general-environment-options-dialog-box.md)
+- [Général, environnement, boîte de dialogue Options](general-environment-options-dialog-box.md)
 - [Commutateurs de ligne de commande devenv pour le développement VSPackage](../../extensibility/devenv-command-line-switches-for-vspackage-development.md)

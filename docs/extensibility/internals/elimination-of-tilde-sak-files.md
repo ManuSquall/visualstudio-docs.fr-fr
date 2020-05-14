@@ -1,5 +1,5 @@
 ---
-title: Élimination de ~ SAK fichiers | Microsoft Docs
+title: Élimination des fichiers SAK Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -7,31 +7,31 @@ helpviewer_keywords:
 - ~sak files
 - source control plug-ins, ~SAK files
 ms.assetid: 5277b5fa-073b-4bd1-8ba1-9dc913aa3c50
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e409a08ba295bb55eb1fcfcd2a048a9bdb5ea7c9
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 0294198bb1560f8df6f17170013f88d4fe11e5cf
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66327533"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80708500"
 ---
-# <a name="elimination-of-sak-files"></a>Élimination de ~ les fichiers SAK
-Dans la version 1.2 API plug-in de contrôle Source, le *~ SAK* fichiers ont été remplacés par les indicateurs de capacité et de contrôlent les nouvelles fonctions de détectent si une source de plug-in prend en charge la *MSSCCPRJ* de fichiers et les extractions partagées.
+# <a name="elimination-of-sak-files"></a>Élimination des fichiers SAK
+Dans l’API 1.2 de contrôle des sources, les fichiers *SAK* ont été remplacés par des indicateurs de capacité et de nouvelles fonctions qui détectent si un plug-in de contrôle source prend en charge le fichier *MSSCCPRJ* et les caisses partagées.
 
-## <a name="sak-files"></a>~ Les fichiers SAK
-Visual Studio .NET 2003 créé des fichiers temporaires avec le préfixe *~ SAK*. Ces fichiers sont utilisés pour déterminer si un plug-in de contrôle de code source prend en charge :
+## <a name="sak-files"></a>Fichiers SAK
+Visual Studio .NET 2003 a créé des fichiers temporaires préfixés avec *SAK*. Ces fichiers sont utilisés pour déterminer si un plug-in de contrôle source prend en charge :
 
-- Le *MSSCCPRJ.SCC* fichier.
+- Le fichier *MSSCCPRJ.SCC.*
 
-- Extractions multiples (partagées).
+- Caisses multiples (partagées).
 
-Les plug-ins qui prennent en charge des fonctions avancées fournies dans le 1.2 de API de plug-in de contrôle Source, l’IDE peut détecter ces fonctionnalités sans créer les fichiers temporaires à l’aide des nouvelles fonctionnalités, des indicateurs et des fonctions, détaillées dans les sections suivantes.
+Pour les plug-ins qui prennent en charge les fonctions avancées fournies dans l’API 1.2 de contrôle source, l’IDE peut détecter ces capacités sans créer les fichiers temporaires grâce à l’utilisation de nouvelles capacités, drapeaux et fonctions, détaillés dans les sections suivantes.
 
-## <a name="new-capability-flags"></a>Nouveaux indicateurs de capacité
+## <a name="new-capability-flags"></a>Nouveaux drapeaux de capacité
  `SCC_CAP_SCCFILE`
 
  `SCC_CAP_MULTICHECKOUT`
@@ -41,14 +41,14 @@ Les plug-ins qui prennent en charge des fonctions avancées fournies dans le 1.2
 
 - [SccIsMultiCheckoutEnabled](../../extensibility/sccismulticheckoutenabled-function.md)
 
- Si un plug-in de contrôle de code source prend en charge les extractions multiples (partagées), puis il déclare le `SCC_CAP_MULTICHECKOUT` fonctionnalité et implémente le `SccIsMultiCheckOutEnabled` (fonction). Cette fonction est appelée chaque fois qu’une opération d’extraction se produit sur les projets sous contrôle de code source.
+ Si un plug-in de contrôle source prend en charge plusieurs `SCC_CAP_MULTICHECKOUT` caisses (partagées), il déclare la capacité et implémente la `SccIsMultiCheckOutEnabled` fonction. Cette fonction est appelée chaque fois qu’une opération de caisse se produit sur l’un des projets contrôlés par la source.
 
- Si un plug-in de contrôle de code source prend en charge la création et l’utilisation d’un *MSSCCPRJ.SCC* de fichiers, il déclare le `SCC_CAP_SCCFILE` fonctionnalité et implémente la [SccWillCreateSccFile](../../extensibility/sccwillcreatesccfile-function.md). Cette fonction est appelée avec une liste de fichiers. La fonction retourne `TRUE' or 'FALSE` pour chaque fichier indiquer si Visual Studio doit utiliser un *MSSCCPRJ.SCC* fichier pour celui-ci. Si le plug-in de contrôle de code source choisit de ne pas prendre en charge ces nouvelles fonctionnalités et les fonctions, il peut utiliser la clé de Registre suivante pour désactiver la création de ces fichiers :
+ Si un plug-in de contrôle source prend en charge la création et l’utilisation `SCC_CAP_SCCFILE` d’un fichier *MSSCCPRJ.SCC,* il déclare la capacité et implémente le [SccWillCreateSccFile](../../extensibility/sccwillcreatesccfile-function.md). Cette fonction est appelée avec une liste de fichiers. La fonction `TRUE' or 'FALSE` revient pour chaque fichier pour indiquer si Visual Studio devrait utiliser un fichier *MSSCCPRJ.SCC* pour cela. Si le plug-in de contrôle source choisit de ne pas prendre en charge ces nouvelles capacités et fonctions, il peut utiliser la clé de registre suivante pour désactiver la création de ces fichiers :
 
- **[HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\8.0\SourceControl]DoNotCreateTemporaryFilesInSourceControl** = *dword:00000001*
+ **[HKEY_CURRENT_USER-Software-Microsoft-VisualStudio-8.0-SourceControl] DoNotCreateTemporaryFilesInSourceControl** = *dword:00000001*
 
 > [!NOTE]
-> Si cette clé de Registre est définie sur *DWORD : 00000000*, elle est équivalente à la clé en cours qui n’existe pas, et Visual Studio tente toujours de créer les fichiers temporaires. Toutefois, si la clé de Registre est définie sur *DWORD : 00000001*, Visual Studio ne tente pas de créer les fichiers temporaires. Au lieu de cela, il suppose que le plug-in de contrôle de code source ne prend pas en charge la *MSSCCPRJ.SCC* de fichiers et ne prend pas en charge les extractions partagées.
+> Si cette clé de registre est réglée à *dword:000000000*, il est équivalent à la clé étant inexistante, et Visual Studio tente toujours de créer les fichiers temporaires. Toutefois, si la clé de registre est configuré pour *dword:00000001*, Visual Studio ne tente pas de créer les fichiers temporaires. Au lieu de cela, il suppose que le plug-in de contrôle source ne prend pas en charge le fichier *MSSCCPRJ.SCC* et ne prend pas en charge les caisses partagées.
 
 ## <a name="see-also"></a>Voir aussi
-- [Nouveautés de la Version 1.2 des API de plug-in de contrôle Source](../../extensibility/internals/what-s-new-in-the-source-control-plug-in-api-version-1-2.md)
+- [Nouveauté dans la version API 1.2 du contrôle source](../../extensibility/internals/what-s-new-in-the-source-control-plug-in-api-version-1-2.md)

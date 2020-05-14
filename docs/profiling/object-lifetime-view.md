@@ -18,14 +18,14 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: d4ea486930d0ea9f266b4ee57b69a50f7c570651
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74772622"
 ---
 # <a name="object-lifetime-view"></a>Mode Durée de vie de l'objet
-La vue Durée de vie des objets est disponible quand l’option **Collecter aussi les informations de durée de vie des objets .NET** est activée dans les pages de propriétés de la **session de performance**.
+La vue sur la durée de vie de l’objet est disponible lorsque **les données sur la durée de vie de l’objet .NET sont** vérifiées sur les pages de propriété de la session **de** performance.
 
  Dans le récupérateur de mémoire du .NET Framework gère l’allocation et la libération de mémoire pour votre application. Pour optimiser les performances du garbage collector, le tas managé est divisé en trois générations : 0, 1 et 2. Le récupérateur de mémoire du runtime stocke les nouveaux objets dans la génération 0. Les objets qui survivent aux collectes sont promus et stockés dans les générations 1 et 2.
 
@@ -35,18 +35,18 @@ La vue Durée de vie des objets est disponible quand l’option **Collecter auss
 
 |Colonne|Description|
 |------------|-----------------|
-|**Nom de classe**|Nom de classe du type alloué.|
+|**Nom de la classe**|Nom de classe du type alloué.|
 |**ID du processus**|ID de processus de l’exécution du profilage.|
-|**Nom du processus**|nom du processus.|
-|**Nom de module**|Nom du module qui contient la fonction.|
-|**Chemin de module**|Chemin d’accès du module qui contient la fonction.|
+|**Nom du processus**|Nom du processus.|
+|**Nom du module**|Nom du module qui contient la fonction.|
+|**Chemin du module**|Chemin d’accès du module qui contient la fonction.|
 
 ## <a name="instance-data"></a>Données d’instance
  Les données d’instance indiquent le nombre d’objets du type qui ont été créés lors de l’exécution du profilage, et la génération dans laquelle les objets ont été désalloués par le récupérateur de mémoire.
 
 |Colonne|Description|
 |------------|-----------------|
-|**Instances**|Nombre d’allocations d’objets de ce type.|
+|**Cas**|Nombre d’allocations d’objets de ce type.|
 |**% du nombre total d’instances**|Pourcentage du nombre total d’allocations qui ont été effectuées lors de l’exécution du profilage.|
 |**Instances de la génération 0 collectées**|Nombre d’instances du type qui ont été désallouées dans la génération 0 de l’algorithme de garbage collection.|
 |**Instances de la génération 1 collectées**|Nombre d’instances du type qui ont été désallouées dans la génération 1 de l’algorithme de garbage collection.|
@@ -73,4 +73,4 @@ La vue Durée de vie des objets est disponible quand l’option **Collecter auss
 |**Octets du tas des objets volumineux collectés**|Taille en octets des instances de ce type qui ont été placées dans le tas des objets volumineux et qui ont été collectées lors de l’exécution du profilage.|
 
 ## <a name="see-also"></a>Voir aussi
-- [Vues des données de la mémoire .NET](../profiling/dotnet-memory-data-views.md)
+- [vues de données de mémoire .NET](../profiling/dotnet-memory-data-views.md)

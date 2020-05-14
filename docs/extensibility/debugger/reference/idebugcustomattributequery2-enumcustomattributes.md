@@ -1,5 +1,5 @@
 ---
-title: IDebugCustomAttributeQuery2::EnumCustomAttributes | Microsoft Docs
+title: IDebugCustomAttributeQuery2::EnumCustomAttributes Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugCustomAttributeQuery2::EnumCustomAttributes
 ms.assetid: 94bfce74-aa3d-45f0-8e04-5715faf85217
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: fc9cc9158939ac0cbd7cac482961e2078b8249ad
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 5b00ead2236a36c2fa12e1ad154b9f853aa2224d
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66322232"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80732589"
 ---
 # <a name="idebugcustomattributequery2enumcustomattributes"></a>IDebugCustomAttributeQuery2::EnumCustomAttributes
-Obtient un énumérateur pour tous les attributs personnalisés attachés à ce champ.
+Obtient un enumérateur pour tous les attributs personnalisés attachés à ce champ.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -41,10 +41,10 @@ int EnumCustomAttributes(
 
 ## <a name="parameters"></a>Paramètres
 `ppEnum`\
-[out] Retourne un [IEnumDebugCustomAttributes](../../../extensibility/debugger/reference/ienumdebugcustomattributes.md) représentant la liste des attributs personnalisés de l’objet ; sinon, retourne une valeur null si aucun attribut personnalisé.
+[out] Renvoie un objet [IEnumDebugCustomAttributes](../../../extensibility/debugger/reference/ienumdebugcustomattributes.md) représentant la liste des attributs personnalisés; autrement, renvoie une valeur nulle s’il n’y a pas d’attributs personnalisés.
 
 ## <a name="return-value"></a>Valeur de retour
- En cas de réussite, retourne S_OK ou S_FALSE s’il en existe aucun attribut personnalisé sur ce champ. Sinon, retourne un code d’erreur ;
+ En cas de succès, les retours S_OK ou S_FALSE s’il n’y a pas d’attributs personnalisés sur ce champ. Sinon, renvoie un code d’erreur;
 
 ## <a name="remarks"></a>Notes
  Un champ peut avoir plusieurs attributs personnalisés.

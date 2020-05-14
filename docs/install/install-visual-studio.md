@@ -21,11 +21,11 @@ ms.workload:
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.openlocfilehash: d8e6e3a857c9bbf5577cf395f698f64cfb11bddc
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/16/2020
-ms.locfileid: "76114571"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79302993"
 ---
 # <a name="install-visual-studio"></a>Installation de Visual Studio
 
@@ -68,7 +68,7 @@ Avant de commencer l’installation de Visual Studio :
 
 1. Appliquez les dernières mises à jour Windows Update. Ces mises à jour permettent de garantir que votre ordinateur dispose à la fois des dernières mises à jour de sécurité et des composants système obligatoires pour Visual Studio.
 
-1. Redémarrez. Le redémarrage garantit que les éventuelles installations et mises à jour en attente n’entravent pas l’installation de Visual Studio.
+1. Redémarrage. Le redémarrage garantit que les éventuelles installations et mises à jour en attente n’entravent pas l’installation de Visual Studio.
 
 1. Libérez de l’espace. Supprimez les fichiers et applications inutiles de %SystemDrive%, par exemple en exécutant l’application de nettoyage du disque.
 
@@ -80,7 +80,7 @@ Avant de commencer l’installation de Visual Studio :
 
 1. Appliquez les dernières mises à jour Windows Update. Ces mises à jour permettent de garantir que votre ordinateur dispose à la fois des dernières mises à jour de sécurité et des composants système obligatoires pour Visual Studio.
 
-1. Redémarrez. Le redémarrage garantit que les éventuelles installations et mises à jour en attente n’entravent pas l’installation de Visual Studio.
+1. Redémarrage. Le redémarrage garantit que les éventuelles installations et mises à jour en attente n’entravent pas l’installation de Visual Studio.
 
 1. Libérez de l’espace. Supprimez les fichiers et applications inutiles de %SystemDrive%, par exemple en exécutant l’application de nettoyage du disque.
 
@@ -104,7 +104,7 @@ Ensuite, téléchargez le fichier du programme d’amorçage de Visual Studio.
 
 ::: moniker range="vs-2017"
 
-Pour obtenir un programme d’amorçage pour Visual Studio 2017, consultez la page de téléchargement des [versions précédentes de Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/) pour plus d’informations sur la façon de procéder.
+Pour obtenir un bootstrapper pour Visual Studio 2017, consultez la page de téléchargement [des versions précédentes de Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/) pour plus de détails sur la façon de le faire.
 
 ::: moniker-end
 
@@ -129,19 +129,19 @@ Exécutez le fichier du programme d’amorçage pour installer Visual Studio Ins
 
    Si vous recevez une notification du contrôle de compte d’utilisateur, choisissez **Oui**.
 
-2. Vous devez accepter les [Termes du contrat de licence](https://visualstudio.microsoft.com/license-terms/) Microsoft et la [Déclaration de confidentialité](https://privacy.microsoft.com/privacystatement) Microsoft. Choisissez **Continuer**.
+2. Nous vous demanderons de reconnaître les [conditions de licence](https://visualstudio.microsoft.com/license-terms/) Microsoft et l’énoncé de confidentialité [Microsoft](https://privacy.microsoft.com/privacystatement). Choisissez **Continuer**.
 
-   ![Termes du contrat de licence et déclaration de confidentialité](media/privacy-and-license-terms.png "Termes du contrat de licence Microsoft et déclaration de confidentialité")
+   ![Conditions de licence et déclaration de confidentialité](media/privacy-and-license-terms.png "Conditions de licence Microsoft et déclaration de confidentialité")
 
 ## <a name="step-4---choose-workloads"></a>Étape 4 : Choisir les charges de travail
 
-Une fois le programme d’installation installé, vous pouvez l’utiliser pour personnaliser votre installation en sélectionnant les ensembles de fonctionnalités, ou les charges de travail, que vous souhaitez. Voici comment procéder.
+Une fois le programme d’installation installé, vous pouvez l’utiliser pour personnaliser votre installation en sélectionnant les ensembles de fonctionnalités, ou les charges de travail, que vous souhaitez. Voici comment faire.
 
  ::: moniker range="vs-2017"
 
-1. Recherchez la charge de travail de votre choix dans la **Visual Studio installer**.
+1. Trouvez la charge de travail que vous voulez dans **l’installateur Visual Studio**.
 
-   ![Visual Studio 2017 : installer une charge de travail](../install/media/vs-installer-installing-workloads.png)
+   ![Visual Studio 2017: Installer une charge de travail](../install/media/vs-installer-installing-workloads.png)
 
      Par exemple, choisissez la charge de travail « Développement .NET Desktop ». Elle comprend l’éditeur principal par défaut, qui inclut une prise en charge de la modification du code de base pour plus de 20 langues, la possibilité d’ouvrir et de modifier le code dans n’importe quel dossier sans projet et un contrôle de code source intégré.
 
@@ -153,9 +153,9 @@ Une fois le programme d’installation installé, vous pouvez l’utiliser pour 
 
 ::: moniker range="vs-2019"
 
-1. Recherchez la charge de travail de votre choix dans la **Visual Studio installer**.
+1. Trouvez la charge de travail que vous voulez dans **l’installateur Visual Studio**.
 
-   ![Visual Studio 2019 : installer une charge de travail](../install/media/vs-2019/vs-installer-workloads.png)
+   ![Visual Studio 2019: Installer une charge de travail](../install/media/vs-2019/vs-installer-workloads.png)
 
      Par exemple, choisissez la charge de travail « Développement web et ASP.NET ». Elle comprend l’éditeur principal par défaut, qui inclut une prise en charge de la modification du code de base pour plus de 20 langues, la possibilité d’ouvrir et de modifier le code dans n’importe quel dossier sans projet et un contrôle de code source intégré.
 
@@ -166,21 +166,21 @@ Une fois le programme d’installation installé, vous pouvez l’utiliser pour 
  ::: moniker-end
 
 > [!TIP]
-> À tout moment après l’installation, vous pouvez installer les charges de travail ou les composants que vous n’avez pas installés au début. Si Visual Studio est ouvert, accédez à **Outils** > **Obtenir les outils et fonctionnalités** pour ouvrir Visual Studio Installer. Vous pouvez également ouvrir **Visual Studio Installer** à partir du menu Démarrer. À partir de là, vous pouvez choisir les charges de travail ou les composants à installer. Ensuite, choisissez **Modifier**.
+> À tout moment après l’installation, vous pouvez installer les charges de travail ou les composants que vous n’avez pas installés au début. Si vous avez Visual Studio ouvert, allez à **Tools** > **Get Tools and Features ...** qui ouvre l’installateur Studio visuel. Vous pouvez également ouvrir **Visual Studio Installer** à partir du menu Démarrer. À partir de là, vous pouvez choisir les charges de travail ou les composants à installer. Ensuite, choisissez **Modifier**.
 
 ## <a name="step-5---choose-individual-components-optional"></a>Étape 5 : Choisir des composants individuels (facultatif)
 
-Si vous ne souhaitez pas utiliser la fonctionnalité charges de travail pour personnaliser votre installation de Visual Studio, ou si vous souhaitez ajouter d’autres composants qu’une charge de travail, vous pouvez le faire en installant ou en ajoutant des composants individuels à partir de l’onglet **composants individuels** . Choisissez ce que vous souhaitez, puis suivez les invites.
+Si vous ne souhaitez pas utiliser la fonction charge de travail pour personnaliser votre installation Visual Studio, ou si vous souhaitez ajouter plus de composants qu’une charge de travail installe, vous pouvez le faire en installant ou en ajoutant des composants individuels à partir de **l’onglet Composants individuels.** Choisissez ce que vous voulez, puis suivez les invites.
 
 ::: moniker range="vs-2017"
 
-  ![Visual Studio 2017-installer des composants individuels](media/vs-installer-installing-components.png "Installer les composants individuels de Visual Studio")
+  ![Visual Studio 2017 - Installer des composants individuels](media/vs-installer-installing-components.png "Installer des composants individuels Visual Studio")
 
 ::: moniker-end
 
 ::: moniker range="vs-2019"
 
-  ![Visual Studio 2019-installer des composants individuels](media/vs-2019/vs-installer-individual-components.png "Installer les composants individuels de Visual Studio")
+  ![Visual Studio 2019 - Installer des composants individuels](media/vs-2019/vs-installer-individual-components.png "Installer des composants individuels Visual Studio")
 
 ::: moniker-end
 
@@ -190,13 +190,13 @@ Par défaut, le programme d’installation essaie d’installer la langue du sys
 
 ::: moniker range="vs-2017"
 
-  ![Visual Studio 2017-installer des modules linguistiques](media/vs-installer-installing-language-packs.png "Installer les modules linguistiques de Visual Studio")
+  ![Visual Studio 2017 - Installer des packs linguistiques](media/vs-installer-installing-language-packs.png "Installer des packs de langage Visual Studio")
 
 ::: moniker-end
 
 ::: moniker range="vs-2019"
 
-  ![Visual Studio 2019-installer des modules linguistiques](media/vs-2019/vs-installer-language-packs.png "Installer les modules linguistiques de Visual Studio")
+  ![Visual Studio 2019 - Installer des packs de langue](media/vs-2019/vs-installer-language-packs.png "Installer des packs de langage Visual Studio")
 
 ::: moniker-end
 
@@ -210,7 +210,7 @@ Une autre façon de changer la langue par défaut consiste à exécuter le progr
 
 **Nouveauté de la version 15.7** : vous pouvez désormais réduire l’encombrement de l’installation de Visual Studio sur votre lecteur système. Vous pouvez choisir de déplacer le cache de téléchargement, les composants partagés, les SDK et les outils vers d’autres lecteurs et de conserver Visual Studio sur le lecteur qui l’exécute le plus rapidement.
 
-  ![Visual Studio 2017-modifier les emplacements d’installation](media/installation-options-by-location.png "Modifier l’emplacement d’installation")
+  ![Visual Studio 2017 - Changement d’installation](media/installation-options-by-location.png "Modifier l’emplacement de l’installation")
 
 ::: moniker-end
 
@@ -218,7 +218,7 @@ Une autre façon de changer la langue par défaut consiste à exécuter le progr
 
 Vous pouvez réduire l’empreinte de l’installation de Visual Studio sur votre lecteur système. Vous pouvez choisir de déplacer le cache de téléchargement, les composants partagés, les SDK et les outils vers d’autres lecteurs et de conserver Visual Studio sur le lecteur qui l’exécute le plus rapidement.
 
-  ![Visual Studio 2019-sélectionner les emplacements d’installation](media/vs-2019/vs-installer-installation-locations.png "Sélectionner l’emplacement d’installation")
+  ![Visual Studio 2019 - Sélectionnez les lieux d’installation](media/vs-2019/vs-installer-installation-locations.png "Sélectionnez l’emplacement de l’installation")
 
 ::: moniker-end
 
@@ -237,9 +237,9 @@ Pour plus d’informations, consultez la page [Sélectionner les emplacements d�
 
 3. Sélectionnez un type de projet.
 
-   Par exemple, pour [créer une application C++](/cpp/get-started/tutorial-console-cpp), choisissez **Installé**, développez **Visual C++** , puis choisissez le type de projet C++ à générer.
+   Par exemple, pour [créer une application C++](/cpp/get-started/tutorial-console-cpp), choisissez **Installé**, développez **Visual C++**, puis choisissez le type de projet C++ à générer.
 
-   Pour [créer une application C#](../get-started/csharp/tutorial-console.md), choisissez **Installé**, développez **Visual C#** , puis choisissez le type de projet C# à générer.
+   Pour [créer une application C#](../get-started/csharp/tutorial-console.md), choisissez **Installé**, développez **Visual C#**, puis choisissez le type de projet C# à générer.
 
 ::: moniker-end
 
@@ -247,7 +247,7 @@ Pour plus d’informations, consultez la page [Sélectionner les emplacements d�
 
 1. Une fois l’installation de Visual Studio terminée, choisissez le bouton **Lancer** pour commencer le développement avec Visual Studio.
 
-1. Dans la fenêtre de démarrage, choisissez **Créer un projet**.
+1. Sur la fenêtre de départ, choisissez **Créer un nouveau projet**.
 
 1. Dans la zone de recherche, entrez le type d’application à créer pour voir la liste des modèles disponibles. La liste des modèles varie selon les charges de travail que vous avez choisies lors de l’installation. Pour voir différents modèles, choisissez différentes charges de travail.
 
@@ -261,9 +261,9 @@ Pour plus d’informations, consultez la page [Sélectionner les emplacements d�
 
 ## <a name="see-also"></a>Voir aussi
 
-* [Mettre à jour Visual Studio](update-visual-studio.md)
-* [Modifier Visual Studio](modify-visual-studio.md)
+* [Mettre à jour Visual Studio 2017](update-visual-studio.md)
+* [Modifier Visual Studio 2017](modify-visual-studio.md)
 * [Désinstaller Visual Studio](uninstall-visual-studio.md)
-* [Créer une installation hors connexion de Visual Studio](create-an-offline-installation-of-visual-studio.md)
+* [Créer une installation hors ligne de Visual Studio](create-an-offline-installation-of-visual-studio.md)
 * [Utiliser les paramètres de ligne de commande pour installer Visual Studio](use-command-line-parameters-to-install-visual-studio.md)
 * [Installer Visual Studio pour Mac](/visualstudio/mac/installation)

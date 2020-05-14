@@ -1,5 +1,5 @@
 ---
-title: IDebugContainerField | Microsoft Docs
+title: IDebugContainerField - France Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugContainerField interface
 ms.assetid: a8bbe061-c382-4fe9-a193-3f7d12216041
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d633b7e42f8c7f64a818539694837b954ea31e72
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: a72296517a64c6dcfcb8e347fb00588504aa75a4
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66332514"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80733215"
 ---
 # <a name="idebugcontainerfield"></a>IDebugContainerField
-Cette interface représente un symbole ou un type qui est un conteneur pour d’autres symboles ou les types.
+Cette interface représente un symbole ou un type qui est un conteneur pour d’autres symboles ou types.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -28,29 +28,29 @@ Cette interface représente un symbole ou un type qui est un conteneur pour d’
 IDebugContainerField : IDebugField
 ```
 
-## <a name="notes-for-implementers"></a>Notes de publication pour les implémenteurs
- Un fournisseur de symboles implémente cette interface sur le même objet qui implémente le [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) interface. Cette interface est également la classe de base pour toutes les interfaces qui représentent des conteneurs.
+## <a name="notes-for-implementers"></a>Notes pour les implémenteurs
+ Un fournisseur de symboles implémente cette interface sur le même objet qui implémente l’interface [IDebugField.](../../../extensibility/debugger/reference/idebugfield.md) Cette interface est également la classe de base pour toutes les interfaces qui représentent des conteneurs.
 
-## <a name="notes-for-callers"></a>Notes de publication pour les appelants
- De nombreuses méthodes sur le nombre d’interfaces retournent cette interface. Comme il s’agit d’une classe de base pour tous les conteneurs, des interfaces plus spécialisées peut obtenu à partir de cette interface à l’aide de [QueryInterface](/cpp/atl/queryinterface). Ces interfaces comprennent [IDebugArrayField](../../../extensibility/debugger/reference/idebugarrayfield.md), [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md), [IDebugMethodField](../../../extensibility/debugger/reference/idebugmethodfield.md), et [IDebugPropertyField](../../../extensibility/debugger/reference/idebugpropertyfield.md).
+## <a name="notes-for-callers"></a>Notes pour les appelants
+ De nombreuses méthodes sur de nombreuses interfaces retournent cette interface. Parce qu’il s’agit d’une classe de base pour tous les conteneurs, des interfaces plus spécialisées peuvent obtenir à partir de cette interface en utilisant [QueryInterface](/cpp/atl/queryinterface). Ces interfaces incluent [IDebugArrayField](../../../extensibility/debugger/reference/idebugarrayfield.md), [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md), [IDebugMethodField](../../../extensibility/debugger/reference/idebugmethodfield.md), et [IDebugPropertyField](../../../extensibility/debugger/reference/idebugpropertyfield.md).
 
 ## <a name="methods-in-vtable-order"></a>Méthodes dans l'ordre Vtable
- Outre les méthodes sur le [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) interface, cette interface implémente la méthode suivante :
+ En plus des méthodes de l’interface [IDebugField,](../../../extensibility/debugger/reference/idebugfield.md) cette interface implémente la méthode suivante :
 
 |Méthode|Description|
 |------------|-----------------|
-|[EnumFields](../../../extensibility/debugger/reference/idebugcontainerfield-enumfields.md)|Crée un énumérateur pour les champs du conteneur.|
+|[EnumFields](../../../extensibility/debugger/reference/idebugcontainerfield-enumfields.md)|Crée un enumérateur pour les champs du conteneur.|
 
 ## <a name="remarks"></a>Notes
- Tableaux (conteneurs pour les variables), des classes (conteneurs pour les méthodes et variables) et des méthodes (conteneurs pour les paramètres et variables locales) sont des exemples de conteneurs.
+ Les tableaux (conteneurs pour variables), les classes (conteneurs pour les méthodes et les variables) et les méthodes (conteneurs pour les paramètres et les variables locales) sont autant d’exemples de conteneurs.
 
-## <a name="requirements"></a>Configuration requise
- En-tête : sh.h
+## <a name="requirements"></a>Spécifications
+ En-tête: sh.h
 
- Espace de noms : Microsoft.VisualStudio.Debugger.Interop
+ Namespace: Microsoft.VisualStudio.Debugger.Interop
 
- Assembly : Microsoft.VisualStudio.Debugger.Interop.dll
+ Assemblage: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>Voir aussi
-- [Symbol Provider Interfaces](../../../extensibility/debugger/reference/symbol-provider-interfaces.md)
+- [Interfaces des fournisseurs de symboles](../../../extensibility/debugger/reference/symbol-provider-interfaces.md)
 - [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)

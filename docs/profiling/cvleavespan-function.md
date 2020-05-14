@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 776c24777403b9d88de31e11d0c28fe104666600
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "62974113"
 ---
 # <a name="cvleavespan-function"></a>CvLeaveSpan, fonction
@@ -31,7 +31,7 @@ HRESULT CvLeaveSpan(
 ```
 
 #### <a name="parameters"></a>Paramètres
- `pSpan` Objet d’intervalle retourné par un appel précédent à CvEnterSpan*. Ne peut pas être Null.
+ `pSpan` Objet d’intervalle retourné par un appel précédent à CvEnterSpan*. Ne peut pas avoir la valeur NULL.
 
 ## <a name="return-value"></a>Valeur de retour
  S_OK lorsque le message est correctement écrit. Code d’erreur en cas d’erreur. Utilisez les macros SUCCEEDED/FAILED pour vérifier la condition d’erreur.
@@ -40,4 +40,4 @@ HRESULT CvLeaveSpan(
  **En-tête :** *cvmarkers.h*
 
 ## <a name="see-also"></a>Voir aussi
-- [Informations de référence sur la bibliothèque C++](../profiling/cpp-library-reference.md)
+- [Référence de la bibliothèque de CMD](../profiling/cpp-library-reference.md)

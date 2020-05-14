@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: bd6339b3f55b4a4c9a1e2c90ff3183a36f16c178
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63422096"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "64811547"
 ---
 # <a name="visualize-eventsource-events-as-markers"></a>Visualiser des événements EventSource en tant que marqueurs
 Le visualiseur concurrentiel peut afficher des événements EventSource comme marqueurs, dont vous pouvez contrôler le mode d’affichage. Pour afficher les marqueurs EventSource, inscrivez le GUID du fournisseur ETW à l’aide de la boîte de dialogue [Paramètres avancés](../profiling/advanced-settings-dialog-box-concurrency-visualizer.md). Le visualiseur concurrentiel a des conventions par défaut pour représenter les événements EventSource comme [marqueurs d’indicateurs](../profiling/flag-markers.md), [marqueurs d’intervalles](../profiling/span-markers.md) et [marqueurs de messages](../profiling/message-markers.md). Vous pouvez personnaliser l’affichage des événements EventSource en ajoutant des champs personnalisés aux événements. Pour plus d’informations sur les marqueurs, consultez [Marqueurs du visualiseur concurrentiel](../profiling/concurrency-visualizer-markers.md). Pour plus d’informations sur les événements EventSource, consultez <xref:System.Diagnostics.Tracing>.
@@ -29,16 +29,16 @@ Le visualiseur concurrentiel peut afficher des événements EventSource comme ma
 
 3. Dans tous les autres cas, l’événement est traité en tant que message.
 
-### <a name="importance"></a>Importance
+### <a name="importance"></a>importance
  Le tableau suivant établit une correspondance entre le niveau d’événement et l’importance du marqueur.
 
 |Niveau ETW|Importance dans le visualiseur concurrentiel|
 |---------------|---------------------------------------|
-|win:LogAlways|Normale|
+|win:LogAlways|Normal|
 |win:Critical|Critique|
 |win:Error|Critique|
-|win:Warning|Haute|
-|win:Informational|Normale|
+|win:Warning|Élevé|
+|win:Informational|Normal|
 |win:Verbose|Faible|
 |Supérieur à win:verbose|Faible|
 
@@ -65,16 +65,16 @@ Le visualiseur concurrentiel peut afficher des événements EventSource comme ma
 |3|Indicateur|
 |Toutes les autres erreurs|Message|
 
-### <a name="importance"></a>Importance
+### <a name="importance"></a>importance
  Vous pouvez utiliser le champ `cvImportance`, un octet, pour contrôler le paramètre d’importance d’un événement EventSource. Toutefois, nous vous recommandons de contrôler l’importance affichée d’un événement à l’aide de son niveau (Level).
 
 |Valeur de cvImportance|Importance dans le visualiseur concurrentiel|
 |------------------------|---------------------------------------|
-|0|Normale|
+|0|Normal|
 |1|Critique|
-|2|Haute|
-|3|Haute|
-|4|Normale|
+|2|Élevé|
+|3|Élevé|
+|4|Normal|
 |5|Faible|
 |Toutes les autres erreurs|Faible|
 
@@ -94,4 +94,4 @@ Le visualiseur concurrentiel peut afficher des événements EventSource comme ma
 > L’utilisation de l’ID d’intervalle pour imbriquer des intervalles, permettre à des intervalles de se chevaucher partiellement sur le même thread ou permettre à des intervalles de démarrer sur un thread et de se terminer sur un autre n’est pas prise en charge.
 
 ## <a name="see-also"></a>Voir aussi
-- [Marqueurs du visualiseur concurrentiel](../profiling/concurrency-visualizer-markers.md)
+- [Marqueurs de visualisation de concurrence](../profiling/concurrency-visualizer-markers.md)

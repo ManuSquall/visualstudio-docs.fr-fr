@@ -1,5 +1,5 @@
 ---
-title: IDebugPointerObject::GetBytes | Microsoft Docs
+title: IDebugPointerObject::GetBytes ( Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugPointerObject::GetBytes method
 ms.assetid: e986c188-87fb-4b51-86e9-ee6a0035bdab
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 247e1ff4c934ae581c7a0224c8f8cba8d4e9d946
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 17bc39f65d7c4c42b4f958b559df7c5b7d3bbdf7
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66308869"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80725520"
 ---
 # <a name="idebugpointerobjectgetbytes"></a>IDebugPointerObject::GetBytes
-Obtient la valeur désignée comme une série d’octets consécutifs.
+Obtient la valeur pointée comme une série d’octets consécutifs.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -47,23 +47,23 @@ int GetBytes(
 
 ## <a name="parameters"></a>Paramètres
 `dwStart`\
-[in] Offset, en octets, à partir du début de l’objet désigné.
+[dans] Un décalage, dans les octets, dès le début de l’objet pointé vers.
 
 `dwCount`\
-[in] Le nombre d’octets à récupérer.
+[dans] Le nombre d’octets à récupérer.
 
 `pBytes`\
-[in, out] Un tableau est rempli avec la valeur comme une série d’octets consécutifs, en commençant à l’offset donné à partir de l’objet désigné.
+[dans, dehors] Un tableau qui est rempli avec la valeur comme une série d’octets consécutifs, à partir de la compensation donnée de l’objet pointé vers.
 
 `pdwBytes`\
-[out] Retourne le nombre d’octets réellement récupérées.
+[out] Retourne le nombre d’octets effectivement récupérés.
 
 ## <a name="return-value"></a>Valeur de retour
- En cas de réussite, retourne S_OK ; Sinon, retourne un code d’erreur.
+ En cas de succès, les retours S_OK; autrement, renvoie un code d’erreur.
 
 ## <a name="remarks"></a>Notes
- Cette méthode est utilisée si le pointeur comme représenté par ce [IDebugPointerObject](../../../extensibility/debugger/reference/idebugpointerobject.md) pointe vers un type primitif ou un simple tableau de types primitifs (autrement dit, un tableau qui peut être représenté par une simple séquence d’octets).
+ Cette méthode est utilisée si le pointeur représenté par cet [IDebugPointerObject](../../../extensibility/debugger/reference/idebugpointerobject.md) pointe vers un type primitif ou un simple tableau de types primitifs (c’est-à-dire un tableau qui peut être représenté par une simple séquence d’octets).
 
 ## <a name="see-also"></a>Voir aussi
 - [IDebugPointerObject](../../../extensibility/debugger/reference/idebugpointerobject.md)
-- [SetBytes](../../../extensibility/debugger/reference/idebugpointerobject-setbytes.md)
+- [SetBytes SetBytes](../../../extensibility/debugger/reference/idebugpointerobject-setbytes.md)

@@ -8,10 +8,10 @@ ms.workload:
 - multiple
 author: mikejo5000
 ms.openlocfilehash: ec1025eaa53861fae2cf92395d8842854649fa8c
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75591214"
 ---
 # <a name="analyzing-coded-ui-tests-using-coded-ui-test-logs"></a>Analyse des tests codés de l’interface utilisateur à l’aide des journaux de test codé de l’interface utilisateur
@@ -28,7 +28,7 @@ Selon votre scénario, appliquez l’une des méthodes suivantes pour activer le
 
    1. Déterminez quel processus *QTAgent\*.exe* est lancé lorsque vous exécutez votre test. La seule manière de faire cela est de regarder l’onglet **Détails** dans **Gestionnaire des tâches** Windows.
 
-   2. Ouvrez le fichier *.config* correspondant à partir de la version *%ProgramFiles(x86)%\Microsoft Visual Studio\\\<> dossier\\\<edition>\Common7\IDE*. Par exemple, si le processus qui s’exécute est *QTAgent_40.exe*, ouvrez *QTAgent_40.exe.config*.
+   2. Ouvrez le fichier *.config* correspondant à partir de la *version\\\<%ProgramFiles(x86)% -Microsoft Visual Studio>\\ \<édition>-Common7-IDE* dossier. Par exemple, si le processus qui s’exécute est *QTAgent_40.exe*, ouvrez *QTAgent_40.exe.config*.
 
    2. Modifiez la valeur de **EqtTraceLevel** par le niveau de journal souhaité.
 
@@ -38,7 +38,7 @@ Selon votre scénario, appliquez l’une des méthodes suivantes pour activer le
       <add name="EqtTraceLevel" value="4" />
       ```
 
-   3. Enregistrez le fichier.
+   3. Enregistrez le fichier .
 
 - S’il y a un fichier *App.config* présent dans votre projet de test :
 
@@ -71,7 +71,7 @@ Quand vous exécutez un test codé de l’interface utilisateur avec les modific
      Les tests automatisés s’exécutent, puis un message indique s’ils sont une réussite ou un échec.
 
     > [!TIP]
-    > Pour afficher l’**Explorateur de tests**, choisissez **Test** > **Fenêtres**, puis choisissez **Explorateur de tests**.
+    > Pour voir **Test Explorer**, choisissez **Test** > **Windows**, puis choisissez Test **Explorer**.
 
 4. Choisissez le lien **Sortie** dans les résultats de l’**Explorateur de tests**.
 
@@ -89,5 +89,5 @@ Quand vous exécutez un test codé de l’interface utilisateur avec les modific
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Utiliser l’automatisation de l’interface utilisateur pour tester votre code](../test/use-ui-automation-to-test-your-code.md)
+- [Utilisez l’automatisation de l’interface utilisateur pour tester votre code](../test/use-ui-automation-to-test-your-code.md)
 - [Guide pratique pour exécuter des tests à partir de Microsoft Visual Studio](https://msdn.microsoft.com/Library/1a1207a9-2a33-4a1e-a1e3-ddf0181b1046)

@@ -9,36 +9,36 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d3996ef0db25a6552a1a32cd121dbf2f750d460c
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.openlocfilehash: 84efda930066c4236fa4397fbadf287c6774fdb0
+ms.sourcegitcommit: ce3d0728ec1063ab548dac71c8eaf26d20450acc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/16/2020
-ms.locfileid: "76114470"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "80472780"
 ---
 # <a name="how-to-view-save-and-configure-build-log-files"></a>Guide pratique pour afficher, enregistrer et configurer des fichiers journaux de génération
 
-Après avoir généré un projet dans l’IDE de Visual Studio, vous pouvez consulter les informations sur cette génération dans la fenêtre **Sortie**. Grâce à ces informations, vous pouvez déboguer un échec de génération, par exemple. 
+Après avoir généré un projet dans l’IDE de Visual Studio, vous pouvez consulter les informations sur cette génération dans la fenêtre **Sortie**. Grâce à ces informations, vous pouvez déboguer un échec de génération, par exemple.
 
-- Pour les projets C++, vous pouvez également afficher les mêmes informations dans un fichier *.txt* créé et enregistré automatiquement. 
+- Pour les projets C, vous pouvez également afficher les mêmes informations dans un fichier journal qui est créé et enregistré lorsque vous construisez un projet. 
 
-- Pour les projets de code managé, vous pouvez cliquer dans la fenêtre de sortie de build et appuyer sur **Ctrl**+**S**. Visual Studio vous invite à entrer un emplacement pour enregistrer les informations de la fenêtre **Sortie** dans un fichier *.txt*. 
+- Pour les projets de code gérés, vous pouvez cliquer dans la fenêtre de sortie de construction et appuyer sur **Ctrl**+**S**. Visual Studio vous invite à un emplacement pour enregistrer les informations de la fenêtre **de sortie** dans un fichier journal.
 
 Vous pouvez également utiliser l’IDE pour spécifier les types d’informations à afficher pour chaque génération.
 
-Si vous générez un projet à l’aide de MSBuild, vous pouvez créer un fichier *.txt* pour y enregistrer les informations de build. Pour plus d’informations, consultez [Obtenir des journaux de génération](../msbuild/obtaining-build-logs-with-msbuild.md).
+Si vous construisez n’importe quel type de projet en utilisant MSBuild, vous pouvez créer un fichier journal pour enregistrer des informations sur la construction. Pour plus d’informations, consultez [Obtenir des journaux de génération](../msbuild/obtaining-build-logs-with-msbuild.md).
 
 ## <a name="to-view-the-build-log-file-for-a-c-project"></a>Pour afficher le fichier journal de génération d’un projet C++
 
-1. Dans l’**Explorateur Windows** ou l’**Explorateur de fichiers**, ouvrez le fichier suivant : *\\...\Visual Studio \<Version\>\Projects\\<nom_projet\>\\<nom_projet\>\Debug\\<nom_projet\>.txt*
+1. Dans **Windows Explorer** ou File **Explorer**, ouvrez le fichier suivant (par rapport au dossier racine du projet): *Libération*\\<ProjectName>\>. LogMD ou *Debug\\<\>ProjectName .log*
 
 ## <a name="to-create-a-build-log-file-for-a-managed-code-project"></a>Pour créer un fichier journal de génération d’un projet de code managé
 
-1. Dans la barre de menus, choisissez **Générer** > **Générer la solution**.
+1. Sur la barre de menu, choisissez **Build** > **Build Solution**.
 
 2. Dans la fenêtre **Sortie**, cliquez quelque part dans le texte.
 
-3. Appuyez sur **Ctrl**+**Tab**.
+3. Appuyez **sur Ctrl**+**S**.
 
    Visual Studio vous invite à entrer un emplacement pour enregistrer la sortie de génération.
 
@@ -46,7 +46,7 @@ Vous pouvez également générer des journaux en exécutant MSBuild directement 
 
 ## <a name="to-change-the-amount-of-information-included-in-the-build-log"></a>Pour modifier la quantité d’informations contenues dans le journal de génération
 
-1. Dans la barre de menus, choisissez **Outils** > **Options**.
+1. Sur la barre de menu, choisissez **Tools** > **Options**.
 
 2. Dans la page **Projets et solutions**, choisissez la page **Générer et exécuter**.
 
@@ -54,10 +54,10 @@ Vous pouvez également générer des journaux en exécutant MSBuild directement 
 
     |Niveau de détail|Description|
     | - |-----------------|
-    |**Silencieux**|Affiche uniquement un récapitulatif de la génération.|
-    |**Minimale**|Affiche un récapitulatif de la génération, ainsi que les erreurs, avertissements et messages qui sont classés comme très importants.|
+    |**Calme**|Affiche uniquement un récapitulatif de la génération.|
+    |**Minimales**|Affiche un récapitulatif de la génération, ainsi que les erreurs, avertissements et messages qui sont classés comme très importants.|
     |**Normal**|Affiche un récapitulatif de la génération ; les erreurs, avertissements et messages qui sont classés comme très importants ; et les principales étapes de la génération. Ce niveau de détail est celui que vous utiliserez le plus souvent.|
-    |**Détaillé**|Affiche un récapitulatif de la génération ; les erreurs, avertissements et messages qui sont classés comme très importants ; toutes les étapes de la génération ; et les messages classés comme d’importance normale.|
+    |**Détaillée**|Affiche un récapitulatif de la génération ; les erreurs, avertissements et messages qui sont classés comme très importants ; toutes les étapes de la génération ; et les messages classés comme d’importance normale.|
     |**Diagnostic**|Affiche toutes les données disponibles sur la génération. Vous pouvez utiliser ce niveau de détail pour faciliter le débogage des problèmes liés aux scripts de génération personnalisée et d’autres problèmes de génération.|
 
      Pour plus d’informations, consultez [Options (boîte de dialogue), Projets et solutions, Générer et exécuter](../ide/reference/options-dialog-box-projects-and-solutions-build-and-run.md) et <xref:Microsoft.Build.Framework.LoggerVerbosity>.
@@ -67,9 +67,9 @@ Vous pouvez également générer des journaux en exécutant MSBuild directement 
 
 ## <a name="use-binary-logs-to-make-it-easier-to-browse-large-log-files"></a>Utiliser des journaux binaires pour faciliter la navigation dans les fichiers journaux volumineux
 
-Les journaux binaires sont une fonctionnalité facultative pour les projets .NET qui vous permet d’obtenir une expérience de navigation plus riche, ce qui peut faciliter la recherche d’informations dans les journaux volumineux. Pour utiliser des journaux binaires, installez les [Outils système de projet](https://marketplace.visualstudio.com/items?itemName=VisualStudioProductTeam.ProjectSystemTools). Pour plus d’informations, consultez [https://msbuildlog.com](https://msbuildlog.com) et [Journaux binaires](https://github.com/microsoft/msbuild/blob/master/documentation/wiki/Binary-Log.md).
+Les journaux binaires sont une fonctionnalité facultative pour les projets .NET qui vous permet d’obtenir une expérience de navigation plus riche, ce qui peut faciliter la recherche d’informations dans les journaux volumineux. Pour utiliser des journaux binaires, installez les [Outils système de projet](https://marketplace.visualstudio.com/items?itemName=VisualStudioProductTeam.ProjectSystemTools). Pour plus d’informations, voir [https://msbuildlog.com](https://msbuildlog.com) et connexion [binaire](https://github.com/microsoft/msbuild/blob/master/documentation/wiki/Binary-Log.md)
 
 ## <a name="see-also"></a>Voir aussi
 
 - [Générer et nettoyer des solutions et des projets dans Visual Studio](../ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md)
-- [Compiler et générer](../ide/compiling-and-building-in-visual-studio.md)
+- [Compilation et génération](../ide/compiling-and-building-in-visual-studio.md)

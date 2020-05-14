@@ -1,31 +1,31 @@
 ---
-title: Classe ContingentProperties - membres internes | Microsoft Docs
+title: ContingentProperties Class - Membres internes Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - ContingentProperties class [.NET Framework debug engines]
 - debug engines, ContingentProperties class [.NET Framework]
 ms.assetid: c49d1362-ab1c-4b6d-9950-fcae40e0e66b
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a7b9775ed74e7ae81768f180e596f171b2c99cba
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: c6441cafcc34a06464061b41691ea5faa32fc359
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66344321"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80739103"
 ---
-# <a name="contingentproperties-class---internal-members"></a>Classe ContingentProperties - membres internes
+# <a name="contingentproperties-class---internal-members"></a>ContingentProperties classe - membres internes
 Contient des propriétés supplémentaires pour un <xref:System.Threading.Tasks.Task> objet.
 
- **Espace de noms :** <xref:System.Threading.Tasks?displayProperty=fullName>
+ **Espace nom:**<xref:System.Threading.Tasks?displayProperty=fullName>
 
- **Assembly :** mscorlib (dans mscorlib.dll)
+ **Assemblée:** mscorlib (en mscorlib.dll)
 
- Étant donné que vous ne peut pas accéder à ces membres internes à partir de .NET Framework, la syntaxe suivante est fournie en commun Intermediate Language (CIL).
+ Parce que vous ne pouvez pas accéder à ces membres internes à partir du cadre .NET, la syntaxe suivante est fournie dans common Intermediate Language (CIL).
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -40,10 +40,10 @@ Contient des propriétés supplémentaires pour un <xref:System.Threading.Tasks.
 
 |Nom|Description|
 |----------|-----------------|
-|[m_children](../../extensibility/debugger/m-children-field.md)|La liste des tâches enfants qui sont inscrits auprès de cette tâche.|
+|[m_children](../../extensibility/debugger/m-children-field.md)|Liste des tâches d’enfant qui sont enregistrées dans cette tâche.|
 
 ## <a name="remarks"></a>Notes
- Le .NET Framework initialise les champs de cette classe uniquement lorsqu’elles sont nécessaires.
+ Le cadre .NET n’est para initialisé que lorsque nécessaire.
 
 ## <a name="see-also"></a>Voir aussi
-- [Mécanismes internes d’extension parallèle pour le .NET Framework](../../extensibility/debugger/parallel-extension-internals-for-the-dotnet-framework.md)
+- [Internals d’extension parallèle pour le cadre .NET](../../extensibility/debugger/parallel-extension-internals-for-the-dotnet-framework.md)

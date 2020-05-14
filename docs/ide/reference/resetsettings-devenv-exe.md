@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: eebcf2c6796723e51c3aefdb12575aa89779429f
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75593861"
 ---
 # <a name="resetsettings-devenvexe"></a>/ResetSettings (devenv.exe)
@@ -39,27 +39,27 @@ devenv /ResetSettings [SettingsFile|DefaultCollectionSpecifier]
 
 - *SettingsFile*
 
-  Option facultative. Chemin d’accès complet et nom du fichier de paramètres à appliquer à Visual Studio.
+  facultatif. Chemin d’accès complet et nom du fichier de paramètres à appliquer à Visual Studio.
 
 - *DefaultCollectionSpecifier*
 
-  Option facultative. Spécificateur représentant une collection par défaut de paramètres à restaurer. Choisissez l’un des spécificateurs par défaut du tableau.
+  facultatif. Spécificateur représentant une collection par défaut de paramètres à restaurer. Choisissez l’un des spécificateurs par défaut du tableau.
 
   | Nom de collection par défaut | Spécificateur de collection |
   | --- | --- |
   | **Général** | `General` |
-  | **JavaScript** | `JavaScript` |
-  | **Visual Basic** | `VB` |
-  | **Visual C#** | `CSharp` |
-  | **Visual C++** | `VC` |
-  | **Développement web** | `Web` |
+  | **Javascript** | `JavaScript` |
+  | **Base visuelle** | `VB` |
+  | **Visuel C #** | `CSharp` |
+  | **Visuel C** | `VC` |
+  | **Développement Web** | `Web` |
   | **Développement web (code uniquement)** | `WebCode` |
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Notes 
 
 Si *SettingsFile* n’est pas spécifié, l’environnement IDE s’ouvre avec les paramètres existants.
 
-## <a name="example"></a>Exemple
+## <a name="example"></a> Exemple
 
 Le premier exemple applique les paramètres stockés dans le fichier `MySettings.vssettings`.
 
@@ -73,6 +73,6 @@ devenv /resetsettings CSharp
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Paramètres d’environnement](../environment-settings.md)
+- [Paramètres d'environnement](../environment-settings.md)
 - [Personnaliser l’IDE Visual Studio](../../ide/personalizing-the-visual-studio-ide.md)
 - [Commutateurs de ligne de commande Devenv](../../ide/reference/devenv-command-line-switches.md)

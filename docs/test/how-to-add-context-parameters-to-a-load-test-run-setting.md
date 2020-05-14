@@ -10,15 +10,15 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 05efbba005a9455af3b9d2e8755b580a8af30d0a
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75584476"
 ---
 # <a name="how-to-add-context-parameters-to-a-load-test-run-setting"></a>Guide pratique : Ajouter des paramètres de contexte à un paramètre de série de tests de charge
 
-Après avoir créé votre test de charge à l’aide de l’**Assistant Nouveau test de charge**, vous pouvez utiliser l’**éditeur de test de charge** pour changer les propriétés des scénarios en fonction de vos besoins et objectifs.
+Après avoir créé votre test de charge en utilisant le **New Load Test Wizard**, vous pouvez utiliser **l’éditeur de test de charge** pour modifier les propriétés des scénarios pour répondre à vos besoins et objectifs de test.
 
 [!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
@@ -46,7 +46,7 @@ En outre, en assignant des valeurs différentes à un paramètre de contexte en 
 
   **Définissez Test.UseRunSetting= CorporateStagingWebServer**
 
-  et
+  -et-
 
   **mstest /testcontainer:loadtest1.loadtest**
 
@@ -60,16 +60,16 @@ En outre, en assignant des valeurs différentes à un paramètre de contexte en 
 
      Un nouveau paramètre de contexte est ajouté au dossier **Paramètres de contexte** dans le dossier **Paramètres d’exécution** de l’arborescence du test de charge.
 
-     \- ou -
+     -ou-
 
      Si le paramètre d’exécution contient déjà un dossier **Paramètres de contexte**, vous pouvez cliquer dessus avec le bouton droit, puis choisir **Ajouter un paramètre de contexte**.
 
-4. Dans la fenêtre **Propriétés**, changez la valeur de **Nom** si nécessaire (par exemple, WebServer1). Dans la fenêtre **Propriétés** toujours, remplacez **Valeur** par le paramètre à utiliser (par exemple, `http://CorporateStagingWebServer`).
+4. Dans la fenêtre **Propriétés,** modifiez la valeur du **nom,** le cas échéant (par exemple, WebServer1). Dans la fenêtre **Propriétés,** **changez la valeur** du `http://CorporateStagingWebServer`paramètre que vous souhaitez utiliser (par exemple, ).
 
-5. (Facultatif) Répétez les étapes 3 à 5 et utilisez une chaîne distincte pour la propriété **Valeur** (par exemple `http://CorporateProductionWebServer`).
+5. (Facultatif) Répétez les étapes 3 à 5 et utilisez une `http://CorporateProductionWebServer`chaîne différente pour la propriété **Value** (par exemple, ).
 
 6. Sélectionnez les paramètres d'exécution à activer. Ouvrez le menu contextuel des paramètres d’exécution, puis choisissez **Définir comme actif**.
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Configurer les paramètres de série de tests de charge](../test/configure-load-test-run-settings.md)
+- [Configurer les paramètres d’exécution de test de charge](../test/configure-load-test-run-settings.md)

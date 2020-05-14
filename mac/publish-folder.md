@@ -8,25 +8,25 @@ author: sayedihashimi
 ms.author: sayedha
 manager: unniravindranathan
 ms.prod: visual-studio-mac
-ms.openlocfilehash: 5dfee3999eddd8c4dacdd6180e18a4a50e6535dc
-ms.sourcegitcommit: ba0fef4f5dca576104db9a5b702670a54a0fcced
+ms.openlocfilehash: 0ea70fb1a5898e2415b7f74e93233ca03ea52c45
+ms.sourcegitcommit: b4e0cc76d94fe8cf6d238c4cc09512d17131a195
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73715911"
+ms.lasthandoff: 04/13/2020
+ms.locfileid: "81224496"
 ---
-# <a name="publish-to-a-folder-using-visual-studio-for-mac"></a>Publier dans un dossier à l’aide de Visual Studio pour Mac
+# <a name="publish-to-a-folder-using-visual-studio-for-mac"></a>Publier sur un dossier à l’aide de Visual Studio pour Mac
 
-Vous pouvez utiliser l’outil publier pour publier une console .NET Core ou des applications ASP.NET Core dans un dossier.
+Vous pouvez utiliser l’outil Publier pour publier .NET Core Console ou ASP.NET applications Core à un dossier.
 
-## <a name="prerequisites"></a>Configuration requise
+## <a name="prerequisites"></a>Prérequis
 
-- [Visual Studio 2019 pour Mac](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs4mac2019) installé avec .net Core activé.
-- Une console .NET Core ou un projet de ASP.NET Core. Si vous n’avez pas encore de projet, vous pouvez en [créer un](/visualstudio/mac/create-new-projects?view=vsmac-2019).
+- [Visual Studio 2019 pour Mac](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs4mac2019) installé avec .NET Core activé.
+- Une console .NET Core ou ASP.NET projet Core. Si vous n’avez pas encore de projet, vous pouvez en [créer un](/visualstudio/mac/create-new-projects?view=vsmac-2019).
 
 ## <a name="publish-to-folder"></a>Publier sur un dossier
 
-À l’aide de Visual Studio pour Mac vous pouvez publier vos projets .NET Core dans un dossier à l’aide de l’outil de publication. Après la publication dans un dossier, vous pouvez transférer les fichiers vers un autre environnement. Pour publier sur un dossier, effectuez les étapes suivantes.
+En utilisant Visual Studio pour Mac, vous pouvez publier vos projets .NET Core à un dossier à l’aide de l’outil Publier. Après la publication dans un dossier, vous pouvez transférer les fichiers dans un environnement différent. Pour publier sur un dossier, effectuez les étapes suivantes.
 
  1. Dans le panneau Solutions, cliquez avec le bouton droit sur le projet, puis choisissez **Publier**.
 
@@ -52,7 +52,7 @@ Vous pouvez utiliser l’outil publier pour publier une console .NET Core ou des
 
 ## <a name="customize-publish-options"></a>Personnaliser les options de publication
 
-Pour changer le nom du profil de publication (affiché dans le menu contextuel de publication), renommez le fichier de profil de publication. Veillez à ne pas changer l’extension du fichier (`.puxbml`).
+Pour changer le nom du profil de publication (affiché dans le menu contextuel de publication), renommez le fichier de profil de publication. Veillez à ne pas changer l’extension du fichier (`.pubxml`).
 
 Pour changer le chemin du dossier de publication, ouvrez le profil de publication et modifiez la valeur de `publishUrl`.
 

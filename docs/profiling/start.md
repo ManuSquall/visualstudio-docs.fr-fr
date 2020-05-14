@@ -10,14 +10,14 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: df3ccda9730be02bafb7f7d069a26193a4528d1e
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74778269"
 ---
-# <a name="start"></a>Début
-L’option **Start** est une option de *VSPerfCmd.exe* qui initialise le profileur avec la méthode de profilage spécifiée.
+# <a name="start"></a>Démarrer
+**L’option Démarrer** est une option *VSPerfCmd.exe* qui initialise le profileur à la méthode de profilage spécifiée.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -25,7 +25,7 @@ L’option **Start** est une option de *VSPerfCmd.exe* qui initialise le profile
 VSPerfCmd.exe /Start:Method /Output:FileName [Options]
 ```
 
-#### <a name="parameters"></a>Parameters
+#### <a name="parameters"></a>Paramètres
  `Method` Doit correspondre à l’un des mots clés suivants :
 
 - **TRACE** - Spécifie la méthode d’instrumentation.
@@ -39,14 +39,14 @@ VSPerfCmd.exe /Start:Method /Output:FileName [Options]
 ## <a name="required-options"></a>Options obligatoires
  L’option **Output** doit être spécifiée quand **Start** est spécifié sur la ligne de commande.
 
- **Sortie :** `filename` spécifie le nom du fichier de sortie.
+ **Sortie :** `filename` Spécifie le nom du fichier de sortie.
 
 ## <a name="exclusive-options"></a>Options exclusives
  Les options suivantes peuvent être utilisées seulement avec l’option **Start** sur une ligne de commande.
 
  **CrossSession**&#124;**CS** Active le profilage interprocessus. Les noms **CrossSession** et **CS** de l’option sont tous deux pris en charge.
 
- **User:** [`domain\`]`username` Permet l’accès client au moniteur à partir du compte spécifié.
+ **Utilisateur:**`domain\`[`username` ] Permet au client d’accéder au moniteur à partir du compte spécifié.
 
  **WinCounter:** `Path` [**Automark**:`n`] **WinCounter** spécifie un compteur de performances Windows à inclure en tant que marque dans le fichier de données de profilage. **AutoMark** spécifie l’intervalle en millisecondes entre les collectes du fichier de données.
 
@@ -55,10 +55,10 @@ VSPerfCmd.exe /Start:Method /Output:FileName [Options]
 
  **Status** **Status** s’applique aux processus profilés. Il répertorie les processus et les threads, ainsi que l’état de leur profil actuel (Activé/Désactivé). Par exemple, si un processus est arrêté, **Status** ne l’indique pas dans le rapport. **Status** indique que le processus est profilé ou non.
 
- **Shutdown**[ **:** `Timeout`] Désactive le profileur.
+ **Arrêt**[**:**`Timeout`] éteint le profileur.
 
-## <a name="example"></a>Exemple
- L’exemple suivant montre l’utilisation de l’option **Start** de *VSPerfCmd.exe* pour initialiser le profileur.
+## <a name="example"></a> Exemple
+ L’exemple suivant montre comment utiliser l’option *VSPerfCmd.exe* **Start** pour initialiser le profileur.
 
 ```cmd
 VSPerfCmd.exe /Start:Sample /Output:TestApp.exe.vsp
@@ -66,7 +66,7 @@ VSPerfCmd.exe /Launch:TestApp.exe
 ```
 
 ## <a name="see-also"></a>Voir aussi
-- [VSPerfCmd](../profiling/vsperfcmd.md)
+- [Vsperfcmd](../profiling/vsperfcmd.md)
 - [Profiler des applications autonomes](../profiling/command-line-profiling-of-stand-alone-applications.md)
-- [Profiler des applications web ASP.NET](../profiling/command-line-profiling-of-aspnet-web-applications.md)
+- [Profil ASP.NET applications Web](../profiling/command-line-profiling-of-aspnet-web-applications.md)
 - [Profiler des services](../profiling/command-line-profiling-of-services.md)

@@ -1,5 +1,5 @@
 ---
-title: IEnumDebugFrameInfo2::Next | Microsoft Docs
+title: IEnumDebugFrameInfo2::Next Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IEnumDebugFrameInfo2::Next
 ms.assetid: 64a64eeb-5dea-4119-8a22-03771015d1e5
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: d95ae4b8ee5b6343b922b2b50a7b63889dee798c
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: a5fe15c46066fdbc94b0b7f005ef7a06e1f10cc0
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66350340"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80716704"
 ---
 # <a name="ienumdebugframeinfo2next"></a>IEnumDebugFrameInfo2::Next
-Retourne l’ensemble suivant d’éléments de l’énumération.
+Retourne l'ensemble d'éléments suivants de l'énumération.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -45,16 +45,16 @@ int Next(
 
 ## <a name="parameters"></a>Paramètres
 `celt`\
-[in] Le nombre d’éléments à récupérer. Spécifie également la taille maximale de la `rgelt` tableau.
+[in] Nombre d'éléments à récupérer. Spécifie également la `rgelt` taille maximale du tableau.
 
 `rgelt`\
-[in, out] Tableau de [FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md) éléments doit être renseigné.
+[dans, dehors] Array d’éléments [FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md) à remplir.
 
 `pceltFetched`\
-[out] Retourne le nombre d’éléments réellement retournés dans `rgelt`.
+[out] Retourne le nombre d’éléments effectivement retournés dans `rgelt`.
 
 ## <a name="return-value"></a>Valeur de retour
- En cas de réussite, retourne `S_OK`. Retourne `S_FALSE` si inférieur au nombre demandé d’éléments peut être retournés ; sinon, retourne un code d’erreur.
+ En cas de réussite, retourne `S_OK`. Retours `S_FALSE` si moins que le nombre demandé d’éléments pouvait être retourné; autrement, renvoie un code d’erreur.
 
 ## <a name="see-also"></a>Voir aussi
 - [IEnumDebugFrameInfo2](../../../extensibility/debugger/reference/ienumdebugframeinfo2.md)

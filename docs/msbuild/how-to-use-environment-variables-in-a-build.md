@@ -12,18 +12,20 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4d66fb73972a81e421b6e7343e549b0ef3069001
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: afc679f9b782b8bc9ed3e04a2b8fb684cdbc1a20
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75574416"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "77633783"
 ---
 # <a name="how-to-use-environment-variables-in-a-build"></a>Guide pratique pour utiliser des variables d’environnement dans une build
+
 Lorsque vous générez des projets, il est souvent nécessaire de définir des options de génération à l’aide des informations qui ne figurent pas dans le fichier projet ou dans les fichiers qui composent votre projet. Ces informations sont généralement stockées dans les variables d’environnement.
 
 ## <a name="reference-environment-variables"></a>Référencer des variables d’environnement
- Toutes les variables d’environnement sont disponibles pour le fichier projet [!INCLUDE[vstecmsbuildengine](../msbuild/includes/vstecmsbuildengine_md.md)] ([!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]) en tant que propriétés.
+
+ Toutes les variables de l’environnement sont disponibles pour le fichier de projet Microsoft Build Engine (MSBuild) en tant que propriétés.
 
 > [!NOTE]
 > Si le fichier projet contient une définition explicite d’une propriété qui porte le même nom qu’une variable d’environnement, la propriété du fichier projet remplace la valeur de la variable d’environnement.
@@ -38,14 +40,15 @@ Lorsque vous générez des projets, il est souvent nécessaire de définir des o
 
 #### <a name="to-provide-a-default-value-for-a-property"></a>Pour fournir la valeur par défaut d’une propriété
 
-- Utilisez un attribut `Condition` dans une propriété pour définir la valeur uniquement si la propriété n’a aucune valeur. Par exemple, le code suivant définit la propriété `ToolsPath` sur *c:\tools* uniquement si la variable d’environnement `ToolsPath` n’est pas définie :
+- Utilisez un attribut `Condition` dans une propriété pour définir la valeur uniquement si la propriété n’a aucune valeur. Par exemple, le code `ToolsPath` suivant définit la propriété `ToolsPath` en c : 'outils seulement si la variable d’environnement *n’est* pas définie :
 
      `<ToolsPath Condition="'$(TOOLSPATH)' == ''">c:\tools</ToolsPath>`
 
     > [!NOTE]
     > Comme les noms de propriété ne respectent pas la casse, `$(ToolsPath)` et `$(TOOLSPATH)` référencent la même variable d’environnement ou propriété.
 
-## <a name="example"></a>Exemple
+## <a name="example"></a> Exemple
+
  Le fichier projet suivant utilise des variables d’environnement pour spécifier l’emplacement des répertoires.
 
 ```xml
@@ -63,6 +66,7 @@ Lorsque vous générez des projets, il est souvent nécessaire de définir des o
 ```
 
 ## <a name="see-also"></a>Voir aussi
+
 - [MSBuild](../msbuild/msbuild.md)
 - [Propriétés MSBuild](../msbuild/msbuild-properties.md)
-- [Guide pratique pour générer les mêmes fichiers sources avec des options différentes](../msbuild/how-to-build-the-same-source-files-with-different-options.md)
+- [Comment : Construire les mêmes fichiers source avec différentes options](../msbuild/how-to-build-the-same-source-files-with-different-options.md)

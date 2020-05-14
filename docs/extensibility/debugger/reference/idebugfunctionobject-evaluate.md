@@ -1,5 +1,5 @@
 ---
-title: IDebugFunctionObject::Evaluate | Microsoft Docs
+title: IDebugFunctionObject::Evaluate Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugFunctionObject::Evaluate method
 ms.assetid: 29349ea3-d5c1-4135-aa76-ced073ab9683
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: a3d9ddafe744c2815e3730cd835fb1afe63ffc23
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 529a5f67c808efa258bc0cb9899f546dbb90d431
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66313492"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80728510"
 ---
 # <a name="idebugfunctionobjectevaluate"></a>IDebugFunctionObject::Evaluate
-Appelle la fonction et retourne la valeur obtenue en tant qu’objet.
+Appelle la fonction et renvoie la valeur résultante comme objet.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -47,22 +47,22 @@ int Evaluate(
 
 ## <a name="parameters"></a>Paramètres
 `ppParams`\
-[in] Un tableau de [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) objets représentant les paramètres d’entrée. Chacun de ces paramètres a été créé avec l’un de le `Create` méthodes dans le [IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md) interface.
+[dans] Une gamme d’objets [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) représentant les paramètres d’entrée. Chacun de ces paramètres a été `Create` créé avec l’une des méthodes de l’interface [IDebugFunctionObject.](../../../extensibility/debugger/reference/idebugfunctionobject.md)
 
 `dwParams`\
-[in] Le nombre de paramètres dans le `ppParams` tableau.
+[dans] Le nombre de paramètres `ppParams` dans le tableau.
 
 `dwTimeout`\
-[in] Spécifie la durée maximale, en millisecondes, à attendre avant de retourner à partir de cette méthode. Utilisez `INFINITE` pour attendre indéfiniment.
+[dans] Spécifie le temps maximum, en millisecondes, d’attendre avant de revenir de cette méthode. Utilisez-le `INFINITE` pour attendre indéfiniment.
 
 `ppResult`\
 [out] Retourne un [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) représentant la valeur de la fonction en tant qu’objet.
 
 ## <a name="return-value"></a>Valeur de retour
- En cas de réussite, retourne S_OK ; Sinon, retourne un code d’erreur.
+ En cas de succès, les retours S_OK; autrement, renvoie un code d’erreur.
 
 ## <a name="remarks"></a>Notes
- Cette méthode configure et exécute un appel à la fonction représentée par le [IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md) objet.
+ Cette méthode met en place et exécute un appel à la fonction représentée par [l’objet IDebugFunctionObject.](../../../extensibility/debugger/reference/idebugfunctionobject.md)
 
 ## <a name="see-also"></a>Voir aussi
 - [IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md)

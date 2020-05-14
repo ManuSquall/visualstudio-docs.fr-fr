@@ -16,17 +16,19 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: de2b36f1003515a47774eaa40fda390728940324
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: c54f3c222588cd13711c832d12f7598f0cc5e223
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75591149"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "77634173"
 ---
 # <a name="findappconfigfile-task"></a>FindAppConfigFile (tâche)
+
 Recherche le fichier *app.config*, le cas échéant, dans les listes fournies.
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>Paramètres
+
  Le tableau ci-dessous décrit les paramètres de la tâche `FindAppConfigFile` .
 
 |Paramètre|Description|
@@ -36,9 +38,11 @@ Recherche le fichier *app.config*, le cas échéant, dans les listes fournies.
 |`SecondaryList`|Paramètre <xref:Microsoft.Build.Framework.ITaskItem>`[]` obligatoire.<br /><br /> Spécifie la liste secondaire dans laquelle effectuer les recherches.|
 |`TargetPath`|Paramètre `String` requis.<br /><br /> Spécifie la valeur à ajouter en tant que métadonnées.|
 
-## <a name="remarks"></a>Notes
- En plus des paramètres répertoriés dans le tableau, cette tâche comprend des paramètres qu’elle hérite de la classe <xref:Microsoft.Build.Tasks.TaskExtension>, qui elle-même hérite de la classe <xref:Microsoft.Build.Utilities.Task>. Pour obtenir la liste de ces paramètres supplémentaires et leurs descriptions, consultez [Classe de base TaskExtension](../msbuild/taskextension-base-class.md).
+## <a name="remarks"></a>Notes 
+
+ En plus des paramètres répertoriés dans le tableau, cette tâche comprend des paramètres qu’elle hérite de la classe <xref:Microsoft.Build.Tasks.TaskExtension>, qui elle-même hérite de la classe <xref:Microsoft.Build.Utilities.Task>. Pour une liste de ces paramètres supplémentaires et leurs descriptions, voir [TaskExtension classe de base](../msbuild/taskextension-base-class.md).
 
 ## <a name="see-also"></a>Voir aussi
-- [Tâches MSBuild](../msbuild/msbuild-tasks.md)
+
+- [Tâches](../msbuild/msbuild-tasks.md)
 - [Informations de référence sur les tâches](../msbuild/msbuild-task-reference.md)

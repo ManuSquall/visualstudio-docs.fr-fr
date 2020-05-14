@@ -6,10 +6,10 @@ ms.author: dominicn
 ms.date: 05/06/2018
 ms.assetid: E4CFD03C-03AF-48CA-B409-6DB1CA45E991
 ms.openlocfilehash: 664f2431de7702219ced2ae2af4bd908e814a689
-ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/10/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "74985187"
 ---
 # <a name="sign-in-to-visual-studio-for-mac"></a>Se connecter à Visual Studio pour Mac
@@ -24,7 +24,7 @@ Avant de vous connecter à Visual Studio pour Mac, vérifiez que vous êtes conn
 
 Pour vous connecter à Visual Studio pour Mac, procédez comme suit :
 
-1. Cliquez dans la page d’accueil sur le lien **Se connecter** pour afficher la boîte de dialogue Comptes, puis appuyez sur le bouton **Connexion** :
+1. Cliquez sur le **signe en** lien sur la page Bienvenue pour afficher le dialogue des comptes, et appuyez sur le bouton **Sign In** :
 
     ![Boîte de dialogue Comptes dans Visual Studio pour Mac](media/signing-in-image12.png)
 

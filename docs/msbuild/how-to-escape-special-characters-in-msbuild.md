@@ -13,16 +13,16 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 955739372605b9e4f9fe58f73669322e2724de31
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: f9958ae93e2605ad3c89decb4ac9fabc18102148
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75595005"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "77633874"
 ---
 # <a name="how-to-escape-special-characters-in-msbuild"></a>Guide pratique pour utiliser des caractères spéciaux d’échappement dans MSBuild
 
-Certains caractères ont une signification spéciale dans les fichiers projet [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. Il s’agit par exemple des points-virgules (`;`) et des astérisques (`*`). Pour obtenir la liste complète de ces caractères spéciaux, consultez [Caractères spéciaux MSBuild](../msbuild/msbuild-special-characters.md).
+Certains caractères ont une signification spéciale dans les fichiers projet MSBuild. Il s’agit par exemple des points-virgules (`;`) et des astérisques (`*`). Pour une liste complète de ces personnages spéciaux, voir [MSBuild caractères spéciaux](../msbuild/msbuild-special-characters.md).
 
 Pour pouvoir utiliser ces caractères spéciaux comme littéraux dans un fichier projet, vous devez les spécifier suivant la syntaxe `%<xx>`, où `<xx>` représente la valeur hexadécimale ASCII du caractère.
 
@@ -34,7 +34,7 @@ Par exemple, les caractères spéciaux sont utilisés dans l’attribut `Include
 <Compile Include="MyFile.cs;MyClass.cs"/>
 ```
 
-Si vous souhaitez déclarer un élément dont le nom comporte un point-virgule, vous devez utiliser la syntaxe `%<xx>` pour insérer ce point-virgule dans une séquence d’échappement et empêcher [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] de déclarer deux éléments distincts. Par exemple, l’élément suivant insère le point-virgule dans une séquence d’échappement et déclare un élément nommé `MyFile.cs;MyClass.cs`.
+Si vous souhaitez déclarer un élément qui contient un point-virgule dans le nom, vous devez utiliser la `%<xx>` syntaxe pour échapper au point-virgule et empêcher MSBuild de déclarer deux éléments distincts. Par exemple, l’élément suivant insère le point-virgule dans une séquence d’échappement et déclare un élément nommé `MyFile.cs;MyClass.cs`.
 
 ```xml
 <Compile Include="MyFile.cs%3BMyClass.cs"/>
@@ -53,4 +53,4 @@ Utilisez la notation `%<xx>` à la place du caractère spécial, où `<xx>` repr
 ## <a name="see-also"></a>Voir aussi
 - [Concepts MSBuild](../msbuild/msbuild-concepts.md)
 - [MSBuild](../msbuild/msbuild.md)
-- [Éléments MSBuild](../msbuild/msbuild-items.md)
+- [Éléments](../msbuild/msbuild-items.md)

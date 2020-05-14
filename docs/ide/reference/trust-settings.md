@@ -14,10 +14,10 @@ helpviewer_keywords:
 - trusted files
 - trusted folders
 ms.openlocfilehash: 011673bca7be569b5b350dc264148d5a7890d39c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "62789640"
 ---
 # <a name="configure-trust-settings-for-files-and-folders"></a>Configurer les paramètres d’approbation pour les fichiers et les dossiers
@@ -31,15 +31,15 @@ Visual Studio demande une approbation de l’utilisateur avant d’ouvrir des pr
 
 Pour modifier les paramètres d’approbation, procédez comme suit :
 
-1. Ouvrez **Outils** > **Options** > **Paramètres d’approbation** et sélectionnez le lien **Configurer les paramètres d’approbation** dans le volet de droite.
+1. Open **Tools** > **Options Trust** > **Paramètres** et sélectionnez le lien Configure **Trust Paramètres** dans le volet droit.
 
-2. Choisissez le niveau des vérifications que vous voulez pour les fichiers et les dossiers. Vous pouvez avoir des vérifications différentes pour chacun d’eux. Les options sont les suivantes :
+2. Choisissez le niveau des vérifications que vous voulez pour les fichiers et les dossiers. Vous pouvez avoir des vérifications différentes pour chacun d’eux. Les options sont :
 
-   * **Aucune vérification** : Visual Studio n’effectue aucune vérification.
+   * **Aucune vérification** : Visual Studio n’effectue aucune vérification.
 
-   * **Vérifier la marque de l’attribut web** : si le fichier ou le dossier a la marque de l’attribut web, Visual Studio le bloque et demande l’autorisation de l’ouvrir.
+   * **Vérifier la marque de l’attribut web**: si le fichier ou le dossier a la marque de l’attribut web, Visual Studio le bloque et demande l’autorisation de l’ouvrir.
 
-   * **Vérifier que le chemin est approuvé** : si le chemin du fichier ou du dossier ne fait pas partie des **Chemins approuvés**, Visual Studio le bloque et demande l’autorisation de l’ouvrir.
+   * **Vérifier que le chemin est approuvé** : si le chemin du fichier ou du dossier ne fait pas partie des **Chemins approuvés**, Visual Studio le bloque et demande l’autorisation de l’ouvrir.
 
    ![Options de vérification d’approbation](media/trust-settings.png)
 
@@ -47,7 +47,7 @@ Pour modifier les paramètres d’approbation, procédez comme suit :
 
 Pour ajouter des chemins approuvés, procédez comme suit :
 
-1. Ouvrez **Outils** > **Options** > **Paramètres d’approbation** et sélectionnez le lien **Configurer les paramètres d’approbation** dans le volet de droite.
+1. Open **Tools** > **Options Trust** > **Paramètres** et sélectionnez le lien Configure **Trust Paramètres** dans le volet droit.
 
 2. Cliquez sur **Ajouter** dans la boîte de dialogue **Paramètres d’approbation**, puis sélectionnez **Fichier** ou **Dossier**.
 
@@ -61,7 +61,7 @@ Pour ajouter des chemins approuvés, procédez comme suit :
 
 Pour supprimer des chemins approuvés, procédez comme suit :
 
-1. Ouvrez **Outils** > **Options** > **Paramètres d’approbation** et sélectionnez le lien **Configurer les paramètres d’approbation** dans le volet de droite.
+1. Open **Tools** > **Options Trust** > **Paramètres** et sélectionnez le lien Configure **Trust Paramètres** dans le volet droit.
 
 2. Sélectionnez le chemin que vous voulez supprimer dans la liste **Chemins approuvés**, puis cliquez sur **Supprimer**.
 

@@ -1,43 +1,43 @@
 ---
-title: Contextes du débogueur | Microsoft Docs
+title: Contextes Debugger (fr) Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Debugging SDK], contexts
 ms.assetid: 79808036-b680-4e4c-9c61-4ed43aa11323
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 011999929fd4cb1508bf4958629e622684f35739
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 56825fe299147e60c5ed9dfcefa491a427ab59e4
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66345995"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80738978"
 ---
-# <a name="debugger-contexts"></a>Contextes du débogueur
-Dans [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] débogage, le moteur de débogage (dé) opère simultanément dans plusieurs contextes distinctes, comme suit :
+# <a name="debugger-contexts"></a>Contextes Debugger
+Dans [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] le débogage, le moteur de déboguer (DE) fonctionne simultanément dans plusieurs contextes distincts, comme suit :
 
-- Le contexte de code, qui décrit l’emplacement actuel dans le flux de l’exécution d’un programme.
+- Le contexte du code, qui décrit l’emplacement actuel dans le flux d’exécution d’un programme.
 
-- Le contexte de la documentation ou de la position, qui décrit la position actuelle dans un document source.
+- Le contexte ou la position de la documentation, qui décrit la position actuelle dans un document source.
 
-- Le contexte d’évaluation expression, qui décrit le contexte dans les expressions évaluation aura lieu.
+- Le contexte d’évaluation de l’expression, qui décrit le contexte dans lequel l’évaluation de l’expression aura lieu.
 
-## <a name="in-this-section"></a>Dans cette section
- [Contexte de code](../../extensibility/debugger/code-context.md) contexte de code présente en tant qu’adresse dans le flux d’instructions d’un programme dans les architectures d’exécution d’aujourd'hui par rapport aux langages non traditionnel, où code ne peut pas être représenté par des instructions, mais d’autres moyens.
+## <a name="in-this-section"></a>Contenu de cette section
+ [Contexte du code](../../extensibility/debugger/code-context.md) Discute du contexte du code comme adresse dans le flux d’instructions d’un programme dans les architectures d’aujourd’hui par rapport aux langues non traditionnelles, où le code peut ne pas être représenté par des instructions, mais d’autres moyens.
 
- [Emplacement de document](../../extensibility/debugger/document-position.md) définit la position du document dans le débogage de Visual Studio au moyen d’une abstraction d’une position dans un fichier source connues de l’IDE.
+ [Position du document](../../extensibility/debugger/document-position.md) Définit la position du document dans Visual Studio débogage au moyen d’une abstraction d’une position dans un fichier source connu de l’IDE.
 
- [Contexte de document](../../extensibility/debugger/document-context.md) décrit quel contexte de document représente lors du débogage de Visual Studio par rapport à un fichier source. Explique également comment le Gestionnaire de symboles mappe un contexte de code au contexte de la documentation.
+ [Contexte documentaire](../../extensibility/debugger/document-context.md) Discute du contexte documentaire que représente Visual Studio en ce qui concerne un fichier source. Discute également de la façon dont le gestionnaire de symbole cartographie un contexte de code au contexte de documentation.
 
- [Contexte d’évaluation d’expression](../../extensibility/debugger/expression-evaluation-context.md) fournit des informations sur un contexte d’évaluation d’expression dans Visual Studio. Par exemple, un contexte d’évaluation d’expression associé à un frame de pile fournit le contexte pour évaluer les variables locales, les paramètres de méthode et les membres de classe.
+ [Contexte d’évaluation de l’expression](../../extensibility/debugger/expression-evaluation-context.md) Fournit des informations sur un contexte d’évaluation d’expression dans Visual Studio. Par exemple, un contexte d’évaluation d’expression associé à un cadre de pile fournit le contexte pour évaluer les variables locales, les paramètres de la méthode et les membres du groupe.
 
-## <a name="related-sections"></a>Rubriques connexes
- [Déboguer des concepts](../../extensibility/debugger/debugger-concepts.md) décrit les principaux concepts architectures débogage.
+## <a name="related-sections"></a>Sections connexes
+ [Concepts de débbug](../../extensibility/debugger/debugger-concepts.md) Décrit les principaux concepts architecturaux débogage.
 
- [Déboguer des composants](../../extensibility/debugger/debugger-components.md) fournit une vue d’ensemble de composants, qui incluent le moteur de débogage (DE), évaluateur d’expression (EE) et le Gestionnaire de symboles (SH) de débogage de Visual Studio.
+ [Composants de débogé](../../extensibility/debugger/debugger-components.md) Fournit un aperçu des composants de débogage Visual Studio, qui comprennent le moteur de débogage (DE), l’évaluateur d’expression (EE) et le gestionnaire de symboles (SH).
 
- [Déboguer des tâches](../../extensibility/debugger/debugging-tasks.md) contient des liens vers diverses tâches de débogage, telles que lancement d’un programme et l’évaluation des expressions.
+ [Tâches de débogé](../../extensibility/debugger/debugging-tasks.md) Contient des liens vers diverses tâches de débogage, telles que le lancement d’un programme et l’évaluation des expressions.

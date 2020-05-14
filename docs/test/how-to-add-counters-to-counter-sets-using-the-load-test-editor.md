@@ -11,10 +11,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: b83d9c3624a4a268bfeba8a02b224fb9813ad7d1
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75594329"
 ---
 # <a name="how-to-add-counters-to-counter-sets-using-the-load-test-editor"></a>Guide pratique pour ajouter des compteurs à des ensembles de compteurs à l’aide de l’éditeur de test de charge
@@ -24,9 +24,9 @@ Quand vous créez un test de charge avec l’**Assistant Test de charge**, vous 
 [!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 > [!NOTE]
-> Si vos tests de charge sont répartis entre des ordinateurs distants, les compteurs de contrôleur et d'agent sont automatiquement mappés au contrôleur et aux ensembles de compteurs de l'agent. Pour plus d’informations sur l’utilisation d’ordinateurs distants dans votre test de charge, consultez [Contrôleurs de test et agents de test](configure-test-agents-and-controllers-for-load-tests.md).
+> Si vos tests de charge sont répartis entre des ordinateurs distants, les compteurs de contrôleur et d'agent sont automatiquement mappés au contrôleur et aux ensembles de compteurs de l'agent. Pour plus d’informations sur l’utilisation de machines distantes dans votre test de charge, consultez [Contrôleurs de test et agents de test](configure-test-agents-and-controllers-for-load-tests.md).
 
-Vous gérez vos compteurs dans l’**éditeur de test de charge**. Les ensembles de compteurs qui sont déjà ajoutés au test sont visibles dans le nœud **Ensembles de compteurs** du test de charge. Après avoir créé un test de charge, vous pouvez ajouter de nouveaux compteurs aux ensembles de compteurs existants.
+Vous gérez vos compteurs dans **l’éditeur de test de charge**. Les ensembles de compteurs qui sont déjà ajoutés au test sont visibles dans le nœud **Ensembles de compteurs** du test de charge. Après avoir créé un test de charge, vous pouvez ajouter de nouveaux compteurs aux ensembles de compteurs existants.
 
 ## <a name="to-add-counters-to-a-counter-set"></a>Pour ajouter des compteurs à un ensemble de compteurs
 
@@ -57,7 +57,7 @@ Vous gérez vos compteurs dans l’**éditeur de test de charge**. Les ensembles
 
      Activez la case d’option **Tous les compteurs** pour sélectionner tous les compteurs disponibles.
 
-7. Cliquez sur **OK**.
+7. Choisissez **OK**.
 
     > [!NOTE]
     > Il est également possible d'ajouter des compteurs à un ensemble de compteurs en cliquant sur un compteur ou une catégorie de compteurs, en cliquant sur Copier, puis en le collant sur un autre nœud d'ensemble de compteurs. Il est possible de supprimer les compteurs supplémentaires copiés, mais inutiles.
@@ -65,4 +65,4 @@ Vous gérez vos compteurs dans l’**éditeur de test de charge**. Les ensembles
 ## <a name="see-also"></a>Voir aussi
 
 - [Spécifier les ensembles de compteurs et les règles de seuil des ordinateurs dans un test de charge](../test/specify-counter-sets-and-threshold-rules-for-load-testing.md)
-- [Configurer les paramètres de série de tests de charge](../test/configure-load-test-run-settings.md)
+- [Configurer les paramètres d’exécution de test de charge](../test/configure-load-test-run-settings.md)

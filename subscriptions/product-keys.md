@@ -3,15 +3,16 @@ title: Utilisation des clés de produit | Microsoft Docs
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 07/20/2019
+ms.assetid: 89e3fcf9-fe5d-4266-8dd7-5567d05fe869
+ms.date: 03/09/2020
 ms.topic: conceptual
 description: Découvrez comment obtenir et gérer vos clés de produit dans les abonnements Visual Studio.
-ms.openlocfilehash: 35dee0a03aa50e40b60d4207dcd6e830c9c27383
-ms.sourcegitcommit: 485881e6ba872c7b28a7b17ceaede845e5bea4fe
-ms.translationtype: HT
+ms.openlocfilehash: 138b85d151aff5ecded4e8a69595518d05f12e7b
+ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/22/2019
-ms.locfileid: "68377697"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "80232227"
 ---
 # <a name="using-product-keys-in-visual-studio-subscriptions"></a>Utilisation de clés de produit dans les abonnements Visual Studio
 
@@ -36,7 +37,7 @@ Microsoft s’engage à protéger l’intégrité du programme d’abonnement Vi
 
 La limite de demandes quotidiennes est de dix clés pour tous les abonnements Visual Studio, y compris ceux fournis par MPN, BizSpark, MCT Software & Services et MCT, à l’exception de Visual Studio Professional (MPN) pour lequel la limite de demandes quotidiennes s’élève à sept clés.
 
-Remarque : le nombre de demandes de clés autorisé peut faire l’objet de modifications. Vérifiez ici les limites en vigueur.
+Remarque : Le nombre de demandes de clés autorisées peut changer. Vérifiez ici les limites en vigueur.
 
 Si vous avez demandé le nombre maximal de clés disponibles dans le cadre de votre abonnement dans une période de 24 heures, une erreur vous signale que votre limite a été atteinte. Cette limite est réinitialisée toutes les 24 heures, à partir de 00 h 01 (heure du Pacifique).
 
@@ -62,7 +63,7 @@ Différents types de clés sont disponibles en fonction du produit.
 |    Type de clé           |    Description                                                                                                                                                                                                           |
 |-------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |    Non applicable                    |    L’installation de ce produit ne nécessite pas de clé.                                                       |
-|    Version commercialisée                     |    Les clés de produit commercialisé permettent plusieurs activations et sont utilisées pour les versions commercialisées du produit. Généralement, dix activations sont autorisées par clé, même si un plus grand nombre est souvent permis sur une même machine.                                                       |
+|    Vente au détail                     |    Les clés de produit commercialisé permettent plusieurs activations et sont utilisées pour les versions commercialisées du produit. Généralement, dix activations sont autorisées par clé, même si un plus grand nombre est souvent permis sur une même machine.                                                       |
 |    Activation multiple        |    Une clé d’activation multiple (MAK) vous permet d’activer plusieurs installations d’un produit avec la même clé. Les clés MAK sont généralement utilisées avec les versions de licence en volume d’un produit. En règle générale, une seule clé MAK est fournie par abonnement.    |
 |    Clé d’activation statique    |    Les clés d’activation statiques sont fournies pour les produits qui n’ont pas besoin d’être activés. Elles peuvent être utilisées pour un nombre illimité d’installations.                                                                                                                  |
 |    Clé personnalisée                 |    Les clés personnalisées fournissent des actions ou informations spéciales pour activer ou installer le produit.                                                                                                                                                                |
@@ -74,6 +75,12 @@ Différents types de clés sont disponibles en fonction du produit.
 |
 
 Vous pouvez demander une clé à partir de la page Téléchargements du produit, ou rechercher la clé dont vous avez besoin dans la page [Clés de produit](https://my.visualstudio.com/productkeys).
+
+## <a name="see-also"></a>Voir aussi
+- [Documentation Visual Studio](https://docs.microsoft.com/visualstudio/)
+- [Documentation Azure DevOps](https://docs.microsoft.com/azure/devops/)
+- [Documentation Azure](https://docs.microsoft.com/azure/)
+- [Documentation Microsoft 365](https://docs.microsoft.com/microsoft-365/)
 
 ## <a name="next-steps"></a>Étapes suivantes
 Pour réclamer des clés, accédez à https://my.visualstudio.com/productkeys.  

@@ -94,10 +94,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: dc3b1524b97b68e54574badcb003e608924e476d
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75593614"
 ---
 # <a name="resources-for-troubleshooting-integrated-development-environment-errors"></a>Ressources pour résoudre les erreurs d’environnement de développement intégré
@@ -119,7 +119,7 @@ Vous pouvez accéder aux forums, blogs, conversations et autres ressources sur l
 
 ## <a name="product-support"></a>Support technique
 
-Si vous avez encore des questions après avoir essayé les autres ressources, vous pouvez contacter les services de support Microsoft en visitant le site web [Support Microsoft](https://support.microsoft.com/en-us). Pour plus d’informations sur le support technique disponible dans votre région, consultez la page des [options de commentaires de Visual Studio](../../ide/feedback-options.md) .
+Si vous avez encore des questions après avoir essayé les autres ressources, vous pouvez contacter les services de support Microsoft en visitant le site web [Support Microsoft](https://support.microsoft.com/en-us). Pour plus d’informations sur le support produit disponible dans votre région, consultez la page [d’options de rétroaction Visual Studio.](../../ide/feedback-options.md)
 
 ## <a name="see-also"></a>Voir aussi
 

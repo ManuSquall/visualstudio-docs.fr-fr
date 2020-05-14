@@ -6,15 +6,15 @@ ms.author: dominicn
 ms.date: 02/15/2018
 ms.assetid: E992FA1D-B2AD-4A28-ADC6-47E4FC471060
 ms.openlocfilehash: e6dbe3b04a39a1ffd9a6e1b8f241b497ba8a6563
-ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/10/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "74984847"
 ---
 # <a name="set-up-a-git-repository"></a>Configurer un dépôt Git
 
-GiT est un système de gestion de versions distribué qui permet aux équipes de travailler simultanément sur les mêmes documents. Cela signifie qu’il existe un seul serveur contenant tous les fichiers, mais que quand un dépôt est extrait de cette source centrale, l’intégralité du dépôt est cloné localement sur votre machine.
+Git est un système de gestion de versions distribué qui permet aux équipes de travailler simultanément sur les mêmes documents. Cela signifie qu’il existe un seul serveur contenant tous les fichiers, mais que quand un dépôt est extrait de cette source centrale, l’intégralité du dépôt est cloné localement sur votre machine.
 
 Il existe de nombreux hôtes distants qui vous permettent de travailler avec Git pour la gestion de versions, mais le plus répandu est GitHub. L’exemple ci-dessous utilise un hôte GitHub, mais vous pouvez utiliser n’importe quel hôte Git pour la gestion de versions dans Visual Studio pour Mac.
 
@@ -62,7 +62,7 @@ Si vous avez un projet qui _n’est pas_ déjà dans la gestion de versions, eff
 
     Il est également possible d’utiliser le protocole SSH pour la connexion à Git.
 
-5. Pour tenter de publier l’application sur Git, sélectionnez le dépôt et vérifiez que les deux champs texte **Nom du module** et **Message** sont renseignés :
+5. Pour tenter de publier l’application sur Git, sélectionnez le référentiel et assurez-vous que les champs de nom du **module** et de texte **de message** sont complétés :
 
     ![Essayer de publier le projet sur Git](media/version-control-git7.png)
 
@@ -131,7 +131,7 @@ Visual Studio pour Mac enverra désormais les modifications à votre dépôt dis
 
 Vous serez probablement obligé d’utiliser un dépôt GitHub qui existe uniquement à un emplacement distant, et non sur votre machine locale. Visual Studio pour Mac vous permet d’extraire ce dépôt rapidement. Suivez les étapes ci-dessous pour le cloner sur votre ordinateur :
 
-1. Dans la barre de menus, sélectionnez **Gestion de versions > Extraire** :
+1. Dans la barre de menu, sélectionnez **Contrôle de version > Checkout**:
 
 2. L’onglet **Se connecter au référentiel** s’affiche :
 
@@ -141,14 +141,14 @@ Vous serez probablement obligé d’utiliser un dépôt GitHub qui existe unique
 
     ![url github affichée](media/version-control-git14.png)
 
-4. Remplacez tout le texte dans le champ d’entrée d' **URL** sous l’onglet **se connecter au référentiel** . La plupart des autres champs de cet onglet sont renseignés pour vous, comme illustré dans l’image de l’étape #2.
+4. Remplacez tout le texte dans le champ **d’entrée DE l’URL** dans l’onglet **Connect to Repository.** Cela remplira la plupart des autres champs dans cet onglet pour vous, comme illustré dans l’image à l’étape #2.
 
 5. Entrez le répertoire dans lequel vous souhaitez cloner le dépôt et appuyez sur **Extraire**.
 
 > [!NOTE]
 > Vous risquez de rencontrer des problèmes si le dépôt fait plus de 4 Go.
 
-## <a name="troubleshooting"></a>Résolution des problèmes
+## <a name="troubleshooting"></a>Dépannage
 
 Si vous avez des problèmes d’initialisation de votre projet avec un dépôt distant vide, vous pouvez essayer les étapes suivantes :
 
