@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 862310c8c763ce366798bfacd4f4759d606bb33c
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: 3355636eba7556a472d8ce272437fb07c30714be
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "71128209"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84184159"
 ---
 # <a name="deploy-an-app-to-a-local-folder-using-visual-studio"></a>Déployer une application dans un dossier local à l’aide de Visual Studio
 
@@ -24,29 +24,29 @@ Vous pouvez utiliser l’outil **Publier** pour publier des applications ASP.NET
 [!INCLUDE [quickstart-prereqs](includes/quickstart-prereqs.md)]
 
 > [!NOTE]
-> Si vous devez publier une application de poste de travail Windows sur un dossier local, consultez [Déployer une application de poste de travail avec ClickOnce](how-to-publish-a-clickonce-application-using-the-publish-wizard.md) (C# ou Visual Basic). Pour le CMD/CLI, consultez [Déployez une application native à l’aide de ClickOnce](/cpp/windows/clickonce-deployment-for-visual-cpp-applications) ou, pour C/C, consultez [Déployez une application native à l’aide d’un projet Setup](/cpp/windows/walkthrough-deploying-a-visual-cpp-application-by-using-a-setup-project).
+> Si vous devez publier une application de poste de travail Windows sur un dossier local, consultez [Déployer une application de poste de travail avec ClickOnce](how-to-publish-a-clickonce-application-using-the-publish-wizard.md) (C# ou Visual Basic). Pour C++/ CLR, consultez [Déployer une application native avec ClickOnce](/cpp/windows/clickonce-deployment-for-visual-cpp-applications) ou, pour C/C++, consultez [Déployer une application native avec un projet d’installation](/cpp/windows/walkthrough-deploying-a-visual-cpp-application-by-using-a-setup-project).
 
 ## <a name="deploy-to-a-local-folder"></a>Déployer sur un dossier local
 
 1. Dans l’Explorateur de solutions, cliquez avec le bouton droit sur le projet et choisissez **Publier** (ou utilisez l’élément de menu **Générer** > **Publier**).
 
-    ![La commande Publier sur le menu contextuelle du projet dans Solution Explorer](../deployment/media/quickstart-publish.png "Choisir Publier")
+    ![Commande publier dans le menu contextuel du projet dans Explorateur de solutions](../deployment/media/quickstart-publish.png "Choisir Publier")
 
-1. Si vous avez déjà configuré des profils de publication, le volet **Publier** s’affiche. Cliquez sur **Créer un profil**.
+1. Dans la boîte de dialogue **publier** , sélectionnez **dossier**.
 
-1. Dans la boîte de dialogue **Choisir une cible de publication**, choisissez **Dossier**.
+    ![Choisir un dossier en tant que cible de publication](../deployment/media/quickstart-publish-folder.png "Choisir un dossier")
 
-    ![Choisissez le dossier local comme cible de publication](../deployment/media/quickstart-publish-folder.png "Choisissez Folder")
+1. Entrez un chemin d’accès ou sélectionnez **Parcourir** pour spécifier un dossier.
 
-1. Entrez un chemin ou sélectionnez **Parcourir** pour spécifier un dossier local.
+    ![Spécifier le chemin d’accès au dossier](../deployment/media/quickstart-publish-folder-path.png "Choisir un dossier")
 
 1. Sélectionnez **Publier**. Visual Studio génère le projet et le publie dans le dossier spécifié. Le volet **Publier** des propriétés de projet apparaît, affichant un récapitulatif du profil.
 
     ![Volet de propriétés Publier affichant un récapitulatif du profil](../deployment/media/quickstart-publish-folder-summary.png)
 
-1. Pour configurer les paramètres de déploiement, sélectionnez **Configurer** dans le récapitulatif du profil, puis l’onglet **Paramètres**.
+1. Pour configurer les paramètres de déploiement, sélectionnez **modifier** dans le résumé du profil de publication et sélectionnez l’onglet **paramètres** .
 
-    ![Paramètres de profil](../deployment/media/quickstart-profile-settings.png "Paramètres du profil")
+    ![Paramètres de profil](../deployment/media/quickstart-profile-settings.png "Paramètres de profil")
 
 1. Configurez les options qui permettent de définir s’il faut déployer une configuration Debug ou Release, puis sélectionnez **Enregistrer**.
 

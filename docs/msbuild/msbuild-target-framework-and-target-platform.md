@@ -8,16 +8,16 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c3cccb9bb87d03d1fb285babe2a02cf30cfb9ed9
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 76dcbbf8c5c5c5019c0b45fe97150838d996bfa1
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77633198"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84183351"
 ---
 # <a name="msbuild-target-framework-and-target-platform"></a>Version cible de .NET Framework et plateforme cible MSBuild
 
-Un projet peut être généré pour s’exécuter sur un *framework cible*, qui est une version particulière du .NET Framework, et sur une *plateforme cible*, qui est une architecture logicielle particulière.  Par exemple, vous pouvez cibler une application pour qu’elle s’exécute sur le .NET Framework 2.0, sur une plateforme 32 bits compatible avec la famille de processeurs 802x86 (« x86 »). La combinaison de framework cible et de plateforme cible porte le nom de *contexte cible*.
+Un projet peut être généré pour s’exécuter sur un *framework cible*, qui est une version particulière du .NET Framework, et sur une *plateforme cible*, qui est une architecture logicielle particulière.  Par exemple, vous pouvez cibler une application pour qu’elle s’exécute sur le .NET Framework 2,0 sur une plateforme 32 bits qui est compatible avec la famille de processeurs 80x86 (« x86 »). La combinaison de framework cible et de plateforme cible porte le nom de *contexte cible*.
 
 > [!IMPORTANT]
 > Cet article présente l’ancienne façon de spécifier un framework cible. Les projets de style SDK permettent l’utilisation de différents frameworks cibles, comme .NET Standard. Pour plus d’informations, consultez [Frameworks cibles](/dotnet/standard/frameworks).
@@ -30,13 +30,13 @@ Un projet peut être généré pour s’exécuter sur un *framework cible*, qui 
 
 - .NET Framework 2.0 (inclus dans Visual Studio 2005)
 
-- Le cadre .NET 3.0 (inclus dans Windows Vista)
+- Le .NET Framework 3,0 (inclus dans Windows Vista)
 
-- Le cadre .NET 3.5 (inclus dans Visual Studio 2008)
+- .NET Framework 3,5 (inclus dans Visual Studio 2008)
 
 - .NET Framework 4.5.2
 
-- Le cadre .NET 4.6 (inclus dans Visual Studio 2015)
+- .NET Framework 4,6 (inclus dans Visual Studio 2015)
 
 - .NET Framework 4.6.1
 
@@ -61,7 +61,7 @@ La version cible du .NET Framework est spécifiée dans la propriété `TargetFr
  Un *profil cible* est un sous-ensemble d’un framework cible. Par exemple, le profil Client .NET Framework 4 n'inclut pas de références aux assemblys MSBuild.
 
  > [!NOTE]
- > Les profils cibles ne s’appliquent qu’aux [bibliothèques de classe portables.](/dotnet/standard/cross-platform/cross-platform-development-with-the-portable-class-library)
+ > Les profils cibles s’appliquent uniquement aux [bibliothèques de classes portables](/dotnet/standard/cross-platform/cross-platform-development-with-the-portable-class-library).
 
  Le profil cible est spécifié dans la propriété `TargetFrameworkProfile` d'un fichier projet. Vous pouvez changer le profil cible en utilisant le contrôle de la version cible du .NET Framework dans les pages des propriétés du projet dans l'IDE.
 
@@ -89,7 +89,7 @@ Une *plateforme cible* est la plateforme particulière sur laquelle votre projet
 
 ```
 
-Une *configuration cible* est un sous-ensemble d’une plateforme cible. Par exemple, la configuration `x86``Debug` n’inclut pas la plupart des optimisations du code. La configuration cible est spécifiée dans la propriété de build `Configuration` d'un fichier projet. Vous pouvez changer la configuration cible en utilisant les pages de propriétés du projet ou le **Gestionnaire de configurations**.
+Une *configuration cible* est un sous-ensemble d’une plateforme cible. Par exemple, la configuration `x86` `Debug` n’inclut pas la plupart des optimisations du code. La configuration cible est spécifiée dans la propriété de build `Configuration` d'un fichier projet. Vous pouvez changer la configuration cible en utilisant les pages de propriétés du projet ou le **Gestionnaire de configurations**.
 
 ```xml
 <PropertyGroup>
@@ -101,4 +101,4 @@ Une *configuration cible* est un sous-ensemble d’une plateforme cible. Par exe
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Multitargeting](../msbuild/msbuild-multitargeting-overview.md)
+- [Multi-ciblage](../msbuild/msbuild-multitargeting-overview.md)

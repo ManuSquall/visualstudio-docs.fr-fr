@@ -11,16 +11,16 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dc0d5ce27c3241b89a1baaf540cab4f1f56d24b5
-ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
+ms.openlocfilehash: 16d55c4e729a39f46b4b038490e92f7cb43bf98d
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72911598"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84182870"
 ---
 # <a name="troubleshooting-and-known-issues-for-snapshot-debugging-in-visual-studio"></a>Résolution des problèmes et problèmes connus du débogage de capture instantanée dans Visual Studio.
 
-Si les étapes décrites dans cet article ne permettent pas de résoudre votre problème, recherchez le problème sur la [communauté des développeurs](https://developercommunity.visualstudio.com/spaces/8/index.html) ou signalez un nouveau problème en choisissant **aide** > **Envoyer des commentaires** > **signaler un problème** dans Visual Studio.
+Si les étapes décrites dans cet article ne permettent pas de résoudre votre problème, recherchez le problème sur la [communauté des développeurs](https://developercommunity.visualstudio.com/spaces/8/index.html) ou signalez un nouveau problème en choisissant **aide**  >  **Envoyer des commentaires**  >  **signaler un problème** dans Visual Studio.
 
 ## <a name="issue-attach-snapshot-debugger-encounters-an-http-status-code-error"></a>Problème : « attacher Débogueur de capture instantanée » rencontre une erreur de code d’état HTTP
 
@@ -30,14 +30,38 @@ Si vous voyez l’erreur suivante dans la fenêtre de **sortie** lors de la tent
 
 ### <a name="401-unauthorized"></a>(401) non autorisé
 
-Cette erreur indique que l’appel REST émis par Visual Studio vers Azure utilise des informations d’identification non valides. Un bogue connu avec le module Azure Active Directory Easy OAuth peut générer cette erreur.
+Cette erreur indique que l’appel REST émis par Visual Studio vers Azure utilise des informations d’identification non valides. 
 
 Suivez ces étapes :
 
-* Assurez-vous que votre compte de personnalisation Visual Studio dispose des autorisations d’accès à l’abonnement Azure et à la ressource à laquelle vous vous connectez. Un moyen rapide de déterminer cela consiste à vérifier si la ressource est disponible dans la boîte de dialogue à partir de **Déboguer** > **attacher des débogueur de capture instantanée...**  > **ressource Azure** > **Sélectionnez existant**ou dans Cloud Explorer.
+* Assurez-vous que votre compte de personnalisation Visual Studio dispose des autorisations d’accès à l’abonnement Azure et à la ressource à laquelle vous vous connectez. Un moyen rapide de déterminer cela consiste à vérifier si la ressource est disponible dans la boîte de dialogue à partir de débogueur de capture instantanée d’attachement de **débogage**  >  **...**  >  **Ressource Azure**  >  **Sélectionnez existant**ou dans Cloud Explorer.
 * Si cette erreur persiste, utilisez l’un des canaux de commentaires décrits au début de cet article.
 
-### <a name="403-forbidden"></a>(403) interdit
+Si vous avez activé l’authentification/autorisation (EasyAuth) sur votre App Service, vous pouvez rencontrer une erreur 401 avec LaunchAgentAsync dans le message d’erreur de la pile des appels. Assurez-vous que l' **action à entreprendre lorsque la demande n’est pas authentifiée** est définie sur **autoriser les requêtes anonymes (aucune action)** dans le portail Azure et fournissez un Authorization. JSON dans D:\Home\sites\wwwroot avec le contenu suivant à la place. 
+
+```
+{
+  "routes": [
+    {
+      "path_prefix": "/",
+      "policies": {
+        "unauthenticated_action": "RedirectToLoginPage"
+      }
+    },
+    {
+      "http_methods": [ "POST" ],
+      "path_prefix": "/41C07CED-2E08-4609-9D9F-882468261608/api/agent",
+      "policies": {
+        "unauthenticated_action": "AllowAnonymous"
+      }
+    }
+  ]
+}
+```
+
+Le premier itinéraire sécurise efficacement votre domaine d’application de la même façon que **vous vous connectez avec [IdentityProvider]**. Le deuxième itinéraire expose le point de terminaison SnapshotDebugger AgentLaunch en dehors de l’authentification, qui effectue l’action prédéfinie de démarrage de l’agent de diagnostic SnapshotDebugger *uniquement si* l’extension de site préinstallée SnapshotDebugger est activée pour votre App service. Pour plus d’informations sur la configuration Authorization. JSON, consultez [règles d’autorisation d’URL](https://azure.github.io/AppService/2016/11/17/URL-Authorization-Rules.html).
+
+### <a name="403-forbidden"></a>(403) Interdit
 
 Cette erreur indique que l’autorisation est refusée. Cela peut être dû à de nombreux problèmes différents.
 
@@ -54,8 +78,8 @@ Cette erreur indique que le site Web est introuvable sur le serveur.
 Suivez ces étapes :
 
 * Vérifiez que vous disposez d’un site Web déployé et en cours d’exécution sur la ressource App Service à laquelle vous êtes connecté.
-* Vérifiez que le site est disponible sur https://\<Resource\>. azurewebsites.net
-* Vérifiez que votre application Web personnalisée en cours d’exécution ne retourne pas de code d’État 404 quand vous y accédez à https://\<Resource\>. azurewebsites.net
+* Vérifiez que le site est disponible sur https:// \<resource\> . azurewebsites.net
+* Vérifiez que votre application Web personnalisée en cours d’exécution ne retourne pas de code d’État 404 quand vous y accédez à https:// \<resource\> . azurewebsites.net
 * Si cette erreur persiste, utilisez l’un des canaux de commentaires décrits au début de cet article.
 
 ### <a name="406-not-acceptable"></a>(406) non acceptable
@@ -64,7 +88,7 @@ Cette erreur indique que le serveur n’est pas en mesure de répondre au type d
 
 Suivez ces étapes :
 
-* Vérifiez que votre site est disponible sur https://\<Resource\>. azurewebsites.net
+* Vérifiez que votre site est disponible sur https:// \<resource\> . azurewebsites.net
 * Vérifiez que votre site n’a pas été migré vers de nouvelles instances. Débogueur de capture instantanée utilise la notion de ARRAffinity pour acheminer les demandes vers des instances spécifiques qui peuvent générer cette erreur par intermittence.
 * Si cette erreur persiste, utilisez l’un des canaux de commentaires décrits au début de cet article.
 
@@ -181,8 +205,8 @@ Les journaux d’agent se trouvent aux emplacements suivants :
   - Accédez au site Kudu de votre service App Service (soit votreappservice.**scm**.azurewebsites.net), puis à Console de débogage.
   - Les journaux d’agent sont stockés dans le répertoire D:\home\LogFiles\SiteExtensions\DiagnosticsAgentLogs\.
 - VM/VMSS :
-  - Connectez-vous à votre machine virtuelle. Les journaux d’agent sont stockés  sous C:\WindowsAzure\Logs\Plugins\Microsoft.Azure.Diagnostics.IaaSDiagnostics\<Version>\SnapshotDebuggerAgent_*.txt
-- AKS :
+  - Connectez-vous à votre machine virtuelle. les journaux de l’agent sont stockés comme suit : C:\WindowsAzure\Logs\Plugins\Microsoft.Azure.Diagnostics.IaaSDiagnostics \<Version> \ SnapshotDebuggerAgent_ *. txt
+- AKS
   - Accédez au répertoire /tmp/diag/AgentLogs/*.
 
 ### <a name="enable-profilerinstrumentation-logs"></a>Activer les journaux de profileur/d’instrumentation
@@ -195,7 +219,7 @@ Les journaux d’instrumentation se trouvent aux emplacements suivants :
   - Connectez-vous à votre machine virtuelle et ouvrez l’observateur d’événements.
   - Ouvrez la vue *Journaux Windows > Application*.
   - *Filtrez le journal actuel* par *Source de l’événement* avec des *Points d’arrêt de production* ou le *Moteur d’instrumentation*.
-- AKS :
+- AKS
   - Journalisation du moteur d’instrumentation à l’adresse /tmp/diag/log.txt (définissez MicrosoftInstrumentationEngine_FileLogPath dans le fichier DockerFile).
   - Journalisation ProductionBreakpoint à l’adresse /tmp/diag/shLog.txt.
 
@@ -221,7 +245,7 @@ Le débogage de capture instantanée et Application Insights dépendent d’un I
 ## <a name="see-also"></a>Voir aussi
 
 - [Débogage dans Visual Studio](../debugger/index.yml)
-- [Déboguer des applications ASP.NET en direct à l’aide du Débogueur de capture instantanée](../debugger/debug-live-azure-applications.md)
-- [Déboguer des groupes de machines virtuelles Azure Machines\Virtual ASP.NET en direct à l’aide du Débogueur de capture instantanée](../debugger/debug-live-azure-virtual-machines.md)
-- [Déboguer en direct ASP.NET Azure Kubernetes à l’aide de l’Débogueur de capture instantanée](../debugger/debug-live-azure-kubernetes.md)
-- [FAQ pour le débogage d’instantané](../debugger/debug-live-azure-apps-faq.md)
+- [Déboguer des applications ASP.NET en production avec le Débogueur de capture instantanée](../debugger/debug-live-azure-applications.md)
+- [Déboguer des Machines virtuelles/groupes de machines virtuelles identiques Azure ASP.NET en production avec le Débogueur de capture instantanée](../debugger/debug-live-azure-virtual-machines.md)
+- [Déboguer Azure Kubernetes ASP.NET en production avec le Débogueur de capture instantanée](../debugger/debug-live-azure-kubernetes.md)
+- [Questions fréquentes (FAQ) sur le débogage d’instantané](../debugger/debug-live-azure-apps-faq.md)

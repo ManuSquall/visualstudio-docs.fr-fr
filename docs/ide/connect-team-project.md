@@ -1,16 +1,16 @@
 ---
 title: Se connecter aux projets dans Team Explorer
-ms.date: 03/31/2020
+ms.date: 05/19/2020
 ms.topic: conceptual
 ms.author: tglee
 author: TerryGLee
 ms.manager: jillfra
-ms.openlocfilehash: fe4ce27d8783d457015310ef4d6fadfde230b97c
-ms.sourcegitcommit: ce3d0728ec1063ab548dac71c8eaf26d20450acc
+ms.openlocfilehash: 8b79dff4815b8a03d81d66a3d64d0e23439e4021
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/01/2020
-ms.locfileid: "80472740"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84183702"
 ---
 # <a name="connect-to-projects-in-team-explorer"></a>Se connecter aux projets dans Team Explorer
 
@@ -19,7 +19,7 @@ Utilisez la fenêtre d’outil **Team Explorer** pour coordonner vos efforts de 
 ![Page d’accueil de Team Explorer dans Visual Studio](media/team-explorer/team-explorer.png)
 
 > [!TIP]
-> Si vous ouvrez Visual Studio et que **Team Explorer** n’apparaît pas, ouvrez-le en choisissant **Affichage** > **Team Explorer** dans la barre de menus.
+> Si vous ouvrez Visual Studio et que **Team Explorer** ne s’affiche pas, ouvrez-le en choisissant **Afficher**  >  les**Team Explorer** dans la barre de menus, ou en appuyant sur **CTRL** + **&#92;**, **CTRL** + **M**.
 
 ## <a name="connect-to-a-project-or-repository"></a>Se connecter à un projet ou à un référentiel
 
@@ -44,4 +44,4 @@ Pour se connecter à un projet :
 
 - [Informations de référence sur Team Explorer](reference/team-explorer-reference.md)
 - [Se connecter à un projet (Azure DevOps)](/azure/devops/organizations/projects/connect-to-projects)
-- [Dépannage se connectant à un projet](/azure/devops/user-guide/troubleshoot-connection?view=azure-devops)
+- [Résoudre les problèmes de connexion à un projet](/azure/devops/user-guide/troubleshoot-connection?view=azure-devops)

@@ -1,5 +1,5 @@
 ---
-title: 'Tutorial: Créer une application simple console C'
+title: 'Didacticiel : créer une application console C# simple'
 description: Découvrez comment créer une application console C# dans Visual Studio, étape par étape.
 ms.custom: seodec18, get-started
 ms.date: 02/18/2020
@@ -15,14 +15,14 @@ dev_langs:
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: 528887c477814b7011cf941a9198f83701beee54
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: 00798f5eb7261df0a039c82566018cbb0efe710a
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "78215436"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84183286"
 ---
-# <a name="tutorial-create-a-simple-c-console-app-in-visual-studio"></a>Tutorial: Créer une application simple console C dans Visual Studio
+# <a name="tutorial-create-a-simple-c-console-app-in-visual-studio"></a>Didacticiel : créer une application console C# simple dans Visual Studio
 
 Dans ce tutoriel pour C#, vous allez utiliser Visual Studio afin de créer et d’exécuter une application console tout en découvrant certaines fonctionnalités de l’IDE (environnement de développement intégré) Visual Studio.
 
@@ -46,8 +46,8 @@ Commençons par créer un projet d’application C#. Le type de projet inclut to
 
 1. Ouvrez Visual Studio 2017.
 
-2. De la barre de menu haut, choisissez **File** > **New** > **Project**.
-   (Alternativement, appuyez sur **Ctrl**+**Shift**+**N**).
+2. Dans la barre de menus supérieure, choisissez **fichier**  >  **nouveau**  >  **projet**.
+   (Vous pouvez également appuyer sur **CTRL** + **MAJ** + **N**).
 
 3. Dans le volet gauche de la boîte de dialogue **Nouveau projet**, développez **C#**, puis choisissez **.NET Core**. Dans le volet central, choisissez **Application console (.NET Core)**. Ensuite, nommez le fichier ***Calculator***.
 
@@ -79,7 +79,7 @@ Si vous ne voyez pas le modèle de projet **Application console (.NET Core)**, v
 
 1. Ouvrez Visual Studio 2019.
 
-1. Sur la fenêtre de départ, choisissez **Créer un nouveau projet**.
+1. Dans la fenêtre Démarrer, choisissez **créer un nouveau projet**.
 
    ![Afficher la fenêtre « Créer un projet »](../../get-started/media/vs-2019/create-new-project-dark-theme.png)
 
@@ -100,7 +100,7 @@ Si vous ne voyez pas le modèle de projet **Application console (.NET Core)**, v
    >
    > Après cela, choisissez le bouton **Modifier** dans Visual Studio Installer. Vous pouvez être invité à enregistrer votre travail ; le cas échéant, faites-le. Ensuite, choisissez **Continuer** pour installer la charge de travail. Ensuite, revenez à l’étape 2 de cette procédure « [Créer un projet](#create-a-project) ».
 
-1. Dans la fenêtre **Configurer votre nouveau projet**, tapez ou entrez *Calculator* dans la zone **Nom du projet**. Ensuite, choisissez **Créer**.
+1. Dans la fenêtre **Configurer votre nouveau projet**, tapez ou entrez *Calculator* dans la zone **Nom du projet**. Ensuite, choisissez **créer**.
 
    ![Dans la fenêtre « Configurer votre nouveau projet », nommez votre projet « Calculator »](./media/vs-2019/csharp-name-your-calculator-project.png)
 
@@ -135,11 +135,11 @@ Commençons par quelques notions mathématiques de base relatives aux entiers en
     Notez que, quand vous procédez ainsi, la fonctionnalité IntelliSense dans Visual Studio vous offre la possibilité de renseigner automatiquement l’entrée.
 
     > [!NOTE]
-    > L’animation suivante n’est pas destinée à dupliquer le code précédent. Il est destiné uniquement à montrer comment fonctionne la fonction autocomplete.
+    > L’animation suivante n’est pas destinée à dupliquer le code précédent. Il est destiné uniquement à illustrer le fonctionnement de la fonctionnalité de saisie semi-automatique.
 
     ![Animation de code mathématique avec des entiers qui illustre la fonctionnalité de saisie semi-automatique IntelliSense dans l’IDE Visual Studio](./media/integer-math-intellisense.gif)
 
-1. Choisissez le bouton **Démarrer** vert à côté **de Calculator** pour construire et exécuter votre programme, ou appuyez sur **F5**.
+1. Choisissez le bouton vert **Démarrer** en regard de **calculatrice** pour générer et exécuter votre programme, ou appuyez sur **F5**.
 
    ![Cliquer sur le bouton Calculator pour exécuter l’application à partir de la barre d’outils](./media/csharp-console-calculator-button.png)
 
@@ -241,7 +241,7 @@ Comme dans la capture d’écran suivante, si vous exécutez l’application et 
 
 Corrigeons le code afin qu’il gère les nombres décimaux.
 
-1. Appuyez sur **Ctrl** + **F** pour ouvrir le contrôle De la recherche et **du remplacement.**
+1. Appuyez sur **CTRL**  +  **H** pour ouvrir le contrôle **Rechercher et remplacer** .
 
 1. Remplacez chaque instance de la variable `int` par `float`.
 
@@ -257,7 +257,7 @@ Corrigeons le code afin qu’il gère les nombres décimaux.
 
 Toutefois, l’application ne produit qu’un résultat décimal. Apportons quelques ajustements au code afin que l’application puisse aussi calculer des valeurs décimales.
 
-1. Utilisez le contrôle **Rechercher et remplacer** (**Ctrl** + **F**) pour remplacer chaque instance de la variable `float` en `double`, et chaque instance de la méthode `Convert.ToInt32` en `Convert.ToDouble`.
+1. Utilisez le contrôle **Rechercher et remplacer** (**CTRL**  +  **H**) pour remplacer chaque instance de la `float` variable par `double` , et pour remplacer chaque instance de la `Convert.ToInt32` méthode par `Convert.ToDouble` .
 
 1. Exécutez votre application de calculatrice et divisez **42,5** par **119,75**.
 
@@ -271,21 +271,21 @@ Toutefois, l’application ne produit qu’un résultat décimal. Apportons quel
 
 Nous avons amélioré notre application de calculatrice de base, mais elle ne dispose pas encore des filets de sécurité nécessaires pour gérer les exceptions, comme les erreurs des entrées utilisateur.
 
-Par exemple, si vous essayez de diviser un nombre par zéro, ou entrez un personnage alpha lorsque l’application s’attend à un personnage numérique (ou vice versa), l’application peut cesser de fonctionner, retourner une erreur ou retourner un résultat nonnumérique inattendu.
+Par exemple, si vous essayez de diviser un nombre par zéro, ou d’entrer un caractère alpha lorsque l’application attend un caractère numérique (ou vice versa), l’application peut cesser de fonctionner, retourner une erreur ou retourner un résultat non numérique inattendu.
 
-Passons à travers quelques erreurs d’entrée utilisateur commune, les localiser dans le débbugger si elles apparaissent là, et les fixer dans le code.
+Passons en revue quelques-unes des erreurs d’entrée utilisateur courantes, localisez-les dans le débogueur s’ils y apparaissent, puis corrigez-les dans le code.
 
 > [!TIP]
 > Pour plus d’informations sur le débogueur et son fonctionnement, consultez la page [Premier aperçu du débogueur Visual Studio](../../debugger/debugger-feature-tour.md).
 
 ### <a name="fix-the-divide-by-zero-error"></a>Corriger l’erreur de division par zéro
 
-Lorsque vous essayez de diviser un nombre par zéro, l’application console peut geler et ensuite vous montrer ce qui ne va pas dans l’éditeur de code.
+Lorsque vous essayez de diviser un nombre par zéro, l’application console peut se figer, puis vous montrer ce qui est incorrect dans l’éditeur de code.
 
    ![L’éditeur de code Visual Studio affiche l’erreur de division par zéro](./media/csharp-console-calculator-dividebyzero-error.png)
 
 > [!NOTE]
-> Parfois, l’application ne gèle pas et le débbuggeur ne montrera pas une erreur de division par zéro. Au lieu de cela, l’application pourrait retourner un résultat nonnumérique inattendu, comme un symbole d’infini. Le correctif de code suivant s’applique toujours.
+> Parfois, l’application ne se bloque pas et le débogueur n’affiche pas d’erreur de division par zéro. Au lieu de cela, l’application peut retourner un résultat non numérique inattendu, tel qu’un symbole infini. Le correctif de code suivant s’applique toujours.
 
 Nous allons modifier le code pour gérer cette erreur.
 
@@ -309,7 +309,7 @@ Nous allons modifier le code pour gérer cette erreur.
 
    ![La section « commutateur » modifiée dans l’éditeur de code Visual Studio](./media/csharp-console-calculator-switch-code.png)
 
-Maintenant, quand vous divisez n’importe quel nombre par zéro, l’application vous demande un autre nombre. Encore mieux: Il ne cessera pas de demander jusqu’à ce que vous fournissez un nombre autre que zéro.
+Maintenant, quand vous divisez n’importe quel nombre par zéro, l’application vous demande un autre nombre. Mieux encore : il ne s’arrête pas de demander tant que vous n’avez pas fourni un nombre autre que zéro.
 
    ![L’éditeur de code Visual Studio affiche l’erreur de division par zéro](./media/csharp-console-calculator-dividebyzero.png)
 
@@ -329,7 +329,7 @@ La classe `Calculator` gérera le gros du travail de calcul et la classe `Progra
 
 Nous pouvons commencer.
 
-1. Supprimer tout `Calculator` dans l’espace nom entre ses accolades d’ouverture et de fermeture :
+1. Supprimez tout ce qui se trouve dans l' `Calculator` espace de noms entre ses accolades ouvrantes et fermantes :
 
     ```csharp
     using System;
@@ -468,11 +468,11 @@ Nous pouvons commencer.
 
 1. Si ce n’est déjà fait, fermez l’application de calculatrice.
 
-1. Fermez la vitre **de sortie** dans Visual Studio.
+1. Fermez le volet de **sortie** dans Visual Studio.
 
    ![Fermer le volet Sortie dans Visual Studio](./media/csharp-calculator-close-output-pane.png)
 
-1. Dans Visual Studio, appuyez sur **Ctrl**+**S** pour enregistrer votre application.
+1. Dans Visual Studio, appuyez sur **CTRL** + **S** pour enregistrer votre application.
 
 1. Fermez Visual Studio.
 

@@ -10,12 +10,12 @@ ms.date: 11/13/2017
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: fb1158015f1a7065514511b8d62810c937382b7f
-ms.sourcegitcommit: 9c1cecaff4d9955276eee7865b78d47679dd1e2a
+ms.openlocfilehash: f5ff05fa7c8fe68d7c09f4881efc249a74959b2b
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "80638687"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84180218"
 ---
 # <a name="create-an-ai-project-from-the-azure-machine-learning-gallery-in-visual-studio"></a>Créer un projet IA à partir de la galerie Azure Machine Learning dans Visual Studio
 
@@ -24,7 +24,7 @@ Azure Machine Learning est intégré à Visual Studio Tools pour IA. Vous pouvez
 Une fois que vous avez [installé Visual Studio Tools pour IA](installation.md), il est facile de créer un projet Python à l’aide de recettes prédéfinies dans la galerie d’exemples Azure Machine Learning.
 
 > [!NOTE]
-> Azure Machine Learning Workbench doit être installé. Pour l’installer, consultez le [Guide de démarrage rapide pour installer les services Azure Machine Learning](/azure/machine-learning/preview/quickstart-installation)
+> Azure Machine Learning Workbench doit être installé. 
 
 1. Lancez Visual Studio. Ouvrez **l’Explorateur de serveurs** en ouvrant le menu **AI Tools** (Outils IA) et en choisissant **Sélectionner un cluster**
 

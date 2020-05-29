@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1b183c1939ed48351bc15dacff31c85af46286ad
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 429892e3022854cac157605117f955fd672f8997
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77278517"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84182922"
 ---
 # <a name="run-unit-tests-with-test-explorer"></a>Exécuter des tests unitaires avec l'Explorateur de tests
 
@@ -27,9 +27,7 @@ Visual Studio inclut les infrastructures de tests unitaires Microsoft pour le co
 
 ## <a name="run-tests-in-test-explorer"></a>Exécuter des tests dans l’explorateur de tests
 
-
-Quand vous générez le projet de test, les tests s’affichent dans l’explorateur de tests. Si l’explorateur de tests n’est pas visible, sélectionnez **Test** dans le menu Visual Studio et choisissez **Fenêtres**, puis **Explorateur de tests**.
-
+Lorsque vous [Générez le projet de test](../test/getting-started-with-unit-testing.md), les tests s’affichent dans l’Explorateur de tests. Si l’explorateur de tests n’est pas visible, sélectionnez **Test** dans le menu Visual Studio et choisissez **Fenêtres**, puis **Explorateur de tests**.
 
 ::: moniker range="vs-2017"
 ![Explorateur de tests unitaires](../test/media/ute_failedpassednotrunsummary.png)
@@ -57,7 +55,7 @@ Vous pouvez effectuer la majeure partie du travail de recherche, d’organisatio
 ### <a name="run-tests"></a>Exécuter les tests
 
 ::: moniker range="vs-2017"
-Vous pouvez exécuter tous les tests dans la solution, tous les tests dans un groupe, ou un ensemble de tests que vous sélectionnez. Effectuez l’une des actions suivantes :
+Vous pouvez exécuter tous les tests dans la solution, tous les tests dans un groupe, ou un ensemble de tests que vous sélectionnez. Effectuez l’une des opérations suivantes :
 
 - Pour exécuter tous les tests dans une solution, choisissez **Exécuter tout**.
 
@@ -70,7 +68,7 @@ Vous pouvez exécuter tous les tests dans la solution, tous les tests dans un gr
 La **barre Réussite/Échec** en haut de la fenêtre **Explorateur de tests** est animée pendant l’exécution des tests. À la fin de la série de tests, la **barre Réussite/Échec** devient verte si tous les tests ont réussi ou rouge si un test a échoué.
 ::: moniker-end
 ::: moniker range=">=vs-2019"
-Vous pouvez exécuter tous les tests dans la solution, tous les tests dans un groupe, ou un ensemble de tests que vous sélectionnez. Effectuez l’une des actions suivantes :
+Vous pouvez exécuter tous les tests dans la solution, tous les tests dans un groupe, ou un ensemble de tests que vous sélectionnez. Effectuez l’une des opérations suivantes :
 
 - Pour exécuter tous les tests d’une solution, choisissez l’icône **Exécuter tout**.
 
@@ -125,7 +123,7 @@ Si le test échoue, le volet d'informations affiche également :
 
 ### <a name="view-the-source-code-of-a-test-method"></a>Afficher le code source d'une méthode de test
 
-Pour afficher le code source d’une méthode de test dans l’éditeur Visual Studio, sélectionnez le test puis choisissez **Open Test** sur le menu à clic droit (Clavier: **F12**).
+Pour afficher le code source d’une méthode de test dans l’éditeur Visual Studio, sélectionnez le test, puis choisissez **ouvrir un test** dans le menu contextuel (clavier : **F12**).
 
 ## <a name="group-and-filter-the-test-list"></a>Regrouper et filtrer la liste de tests
 
@@ -161,10 +159,10 @@ Vous pouvez définir vos propres niveaux de hiérarchie et effectuer un regroupe
 ::: moniker range=">=vs-2019"
 |Groupe|Description|
 |-|-----------------|
-|**Durée**|Tests de groupes par temps d’exécution : **rapide,** **moyen,** et **lent.**|
-|**État**|Tests de groupes par résultats d’exécution: **Tests échoués**, **Tests skipped**, **Tests passés**, **Pas d’exécution**|
-|**Cadre cible** | Regroupe les tests en fonction du framework ciblé par leurs projets |
-|**Namespace**|Regroupe les tests en fonction de l’espace de noms conteneur.|
+|**Durée**|Regroupe les tests par heure d’exécution : **rapide**, **moyenne**et **lente**.|
+|**State**|Groupes de tests par résultats d’exécution : **échecs de tests**, **tests ignorés**, **tests réussis**, **non exécutés**|
+|**Framework cible** | Regroupe les tests en fonction du framework ciblé par leurs projets |
+|**Espace de noms**|Regroupe les tests en fonction de l’espace de noms conteneur.|
 |**Projet**|Regroupe les tests en fonction du projet conteneur.|
 |**Classe**|Regroupe les tests en fonction de la classe conteneur.|
 ::: moniker-end
@@ -196,7 +194,7 @@ Vous pouvez créer et enregistrer une liste de tests que vous souhaitez exécute
 
 ![Choisir une sélection](../test/media/ute_playlist.png)
 
-**Pour créer une sélection**, sélectionnez un ou plusieurs tests dans l'Explorateur de tests. Sur le menu à clic droit, choisissez **Ajouter à Playlist** > **NewPlaylist**. Enregistrez le fichier sous le nom et à l'emplacement que vous spécifiez dans la boîte de dialogue **Créer une sélection** .
+**Pour créer une sélection**, sélectionnez un ou plusieurs tests dans l'Explorateur de tests. Dans le menu contextuel, choisissez **Ajouter à la sélection**  >  **NewPlaylist**. Enregistrez le fichier sous le nom et à l'emplacement que vous spécifiez dans la boîte de dialogue **Créer une sélection** .
 
 **Pour ajouter des tests à une sélection**, sélectionnez un ou plusieurs tests dans l'Explorateur de tests. Dans le menu contextuel (clic droit), choisissez **Ajouter à la playlist**, puis la playlist à laquelle vous souhaitez ajouter les tests.
 
@@ -205,17 +203,17 @@ Vous pouvez créer et enregistrer une liste de tests que vous souhaitez exécute
 Si les tests individuels n’ont aucune dépendance qui les empêche d’être exécutés dans n’importe quel ordre, activez l’exécution parallèle des tests avec le bouton bascule ![UTE&#95;parallelicon&#45;small](../test/media/ute_parallelicon-small.png) dans la barre d’outils. Cela peut réduire sensiblement le temps nécessaire pour exécuter tous les tests.
 ::: moniker-end
 ::: moniker range=">=vs-2019"
-Vous pouvez créer et enregistrer une liste de tests que vous souhaitez exécuter ou visualiser en tant que groupe. Lorsque vous sélectionnez une liste de lecture, les tests de la liste sont affichés dans un nouvel onglet Test Explorer. Vous pouvez ajouter un test à plus d’une liste de lecture.
+Vous pouvez créer et enregistrer une liste de tests que vous souhaitez exécuter ou visualiser en tant que groupe. Lorsque vous sélectionnez une sélection, les tests de la liste s’affichent dans un nouvel onglet de l’Explorateur de tests. Vous pouvez ajouter un test à plusieurs sélections.
 
-**Pour créer une sélection**, sélectionnez un ou plusieurs tests dans l'Explorateur de tests. Sur le menu à clic droit, choisissez **Ajouter à Playlist** > **Nouvelle Liste de lecture**.
+**Pour créer une sélection**, sélectionnez un ou plusieurs tests dans l'Explorateur de tests. Dans le menu contextuel, choisissez **Ajouter à la sélection**  >  **nouvelle sélection**.
 
 ![Créer une playlist](../test/media/vs-2019/test-explorer-playlist-16-2.png)
 
-La playlist s’ouvre dans un nouvel onglet Test Explorer. Vous pouvez utiliser cette liste de lecture une fois, puis la jeter, ou vous pouvez cliquer sur le bouton **Enregistrer** dans la barre d’outils de la fenêtre de liste de lecture, puis sélectionner un nom et un emplacement pour enregistrer la liste de lecture.
+La sélection s’ouvre dans un nouvel onglet de l’Explorateur de tests. Vous pouvez utiliser cette playlist une seule fois, puis la supprimer, ou vous pouvez cliquer sur le bouton **Enregistrer** dans la barre d’outils de la fenêtre de sélection, puis sélectionner un nom et un emplacement pour enregistrer la sélection.
 
 ![La playlist s’ouvre sous un onglet distinct de l’Explorateur de tests](../test/media/vs-2019/test-explorer-playlist-tab-16-2.png)
 
-**Pour créer une sélection**, sélectionnez un ou plusieurs tests dans l'Explorateur de tests. Cliquez à droite et choisissez **Ajouter à playlist** > **Nouvelle liste de lecture**.
+**Pour créer une sélection**, sélectionnez un ou plusieurs tests dans l'Explorateur de tests. Cliquez avec le bouton droit et choisissez **Ajouter à la sélection**  >  **nouvelle sélection**.
 
 **Pour ouvrir une playlist**, choisissez l’icône de playlist dans la barre d’outils de Visual Studio, puis sélectionnez dans le menu un fichier de playlist enregistré.
 ::: moniker-end
@@ -271,7 +269,7 @@ Pour filtrer selon un autre critère :
 |**Caractéristique**|Recherche la catégorie et la valeur de caractéristique pour les correspondances. La syntaxe permettant de spécifier les catégories et les valeurs des caractéristiques est définie par l'infrastructure de tests unitaires.|
 |**Projet**|Recherche les noms de projet de test pour les correspondances.|
 |**Message d’erreur**|Recherche les messages d'erreur définis par l'utilisateur retournés par des assertions ayant échoué pour les correspondances.|
-|**Chemin de fichier**|Recherche le nom de fichier qualifié complet des fichiers sources de test pour les correspondances.|
+|**Chemin du fichier**|Recherche le nom de fichier qualifié complet des fichiers sources de test pour les correspondances.|
 |**Nom qualifié complet**|Recherche des correspondances dans le nom complet des espaces de noms, des classes et des méthodes de test.|
 |**Sortie**|Recherche les messages d'erreur définis par l'utilisateur qui sont écrits dans la sortie standard (stdout) ou une erreur standard (stderr). La syntaxe permettant de spécifier les messages de sortie est définie par l'infrastructure de tests unitaires.|
 |**Résultat**|Recherche les noms de catégorie de l'Explorateur de tests pour les correspondances : **Échecs de tests**, **Tests ignorés**, **Tests réussis**.|
@@ -279,12 +277,12 @@ Pour filtrer selon un autre critère :
 ::: moniker range=">=vs-2019"
 |Qualificateur|Description|
 |-|-----------------|
-|**État**|Recherche les noms de catégorie de l'Explorateur de tests pour les correspondances : **Échecs de tests**, **Tests ignorés**, **Tests réussis**.|
+|**State**|Recherche les noms de catégorie de l'Explorateur de tests pour les correspondances : **Échecs de tests**, **Tests ignorés**, **Tests réussis**.|
 |**Caractéristiques**|Recherche la catégorie et la valeur de caractéristique pour les correspondances. La syntaxe permettant de spécifier les catégories et les valeurs des caractéristiques est définie par l'infrastructure de tests unitaires.|
 |**Nom qualifié complet**|Recherche des correspondances dans le nom complet des espaces de noms, des classes et des méthodes de test.|
 |**Projet**|Recherche les noms de projet de test pour les correspondances.|
-|**Cadre cible**|Recherche les noms de catégorie de l'Explorateur de tests pour les correspondances : **Échecs de tests**, **Tests ignorés**, **Tests réussis**.|
-|**Namespace**|Recherche des correspondances dans les espaces de noms de test.|
+|**Framework cible**|Recherche les noms de catégorie de l'Explorateur de tests pour les correspondances : **Échecs de tests**, **Tests ignorés**, **Tests réussis**.|
+|**Espace de noms**|Recherche des correspondances dans les espaces de noms de test.|
 |**Classe**|Recherche des correspondances dans les noms des classes de test.|
 ::: moniker-end
 
@@ -311,7 +309,7 @@ Vous pouvez utiliser l'Explorateur de tests pour démarrer une session de débog
 
 ### <a name="diagnose-test-method-performance-issues"></a>Diagnostiquer les problèmes de performances de méthode de test
 
-Pour diagnostiquer la lenteur d’une méthode de test, sélectionnez-la dans l’Explorateur de tests, puis choisissez **Profiler le test sélectionné** dans le menu contextuel. Voir [le rapport de profilage d’instrumentation](../profiling/understanding-instrumentation-data-values.md?view=vs-2017).
+Pour diagnostiquer la lenteur d’une méthode de test, sélectionnez-la dans l’Explorateur de tests, puis choisissez **Profiler le test sélectionné** dans le menu contextuel. Consultez [rapport de profilage par instrumentation](../profiling/understanding-instrumentation-data-values.md?view=vs-2017).
 
 ### <a name="analyze-unit-test-code-coverage"></a>Analyser la couverture du code de test unitaire
 
@@ -333,7 +331,7 @@ Pour exécuter la couverture du code pour les méthodes de test dans une solutio
 
 ::: moniker range=">=vs-2019"
 
-* Cliquez à droite dans Test Explorer et sélectionnez **La couverture du code d’analyse pour les tests sélectionnés**
+* Cliquez avec le bouton droit dans l’Explorateur de tests et sélectionnez **analyser la couverture du code pour les tests sélectionnés**
 
 ::: moniker-end
 
@@ -343,14 +341,14 @@ Pour plus d’informations, consultez [Utiliser la couverture du code pour déte
 
 ## <a name="test-shortcuts"></a>Raccourcis pour les tests
 
-Les tests peuvent être exécutés à partir de Test Explorer en cliquant à droite dans l’éditeur de code sur un test et en sélectionnant **le test Run** ou en utilisant les [raccourcis Test Explorer](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_testexplorerGLOBAL) par défaut dans Visual Studio. Certains raccourcis dépendent du contexte. Cela signifie qu’ils exécutent ou déboguent les tests en fonction de l’endroit où se trouve votre curseur dans l’éditeur de code. Si le curseur est à l’intérieur d’une méthode de test, cette méthode de test s’exécute. Si le curseur est au niveau de la classe, tous les tests de cette classe s’exécutent. C’est pareil pour le niveau d’espace de noms.
+Les tests peuvent être exécutés à partir de l’Explorateur de tests en cliquant avec le bouton droit dans l’éditeur de code sur un test, puis en sélectionnant **exécuter le test** ou en utilisant les raccourcis de l' [Explorateur de tests](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_testexplorerGLOBAL) par défaut dans Visual Studio. Certains raccourcis dépendent du contexte. Cela signifie qu’ils exécutent ou déboguent les tests en fonction de l’endroit où se trouve votre curseur dans l’éditeur de code. Si le curseur est à l’intérieur d’une méthode de test, cette méthode de test s’exécute. Si le curseur est au niveau de la classe, tous les tests de cette classe s’exécutent. C’est pareil pour le niveau d’espace de noms.
 
 |Commandes fréquentes| Raccourcis clavier|
 |-|------------------------|
-|TestExplorer.DebugAllTestsInContext|**Ctrl**+**R**, **Ctrl**+**T**|
-|TestExplorer.RunAllTestsInContext|**Ctrl**+**R**, **T**|
-|TestExplorer.RunAllTests|**Ctrl**+**R**, **A**|
-|TestExplorer.RepeatLastRun|**Ctrl**+**R**, **L**|
+|TestExplorer.DebugAllTestsInContext|**CTRL** + **R**, **CTRL** + **T**|
+|TestExplorer.RunAllTestsInContext|**CTRL** + **R**, **T**|
+|TestExplorer.RunAllTests|**CTRL** + **R**, **A**|
+|TestExplorer.RepeatLastRun|**CTRL** + **R**, **L**|
 
 > [!NOTE]
 > Vous ne pouvez pas exécuter un test dans une classe abstraite, car les tests sont seulement définis dans les classes abstraites et ne sont pas instanciés. Pour exécuter des tests dans des classes abstraites, créez une classe qui dérive de la classe abstraite.

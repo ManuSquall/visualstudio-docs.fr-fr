@@ -3,15 +3,15 @@ title: Outils de conteneur Visual Studio avec ASP.NET Core et REACT. js
 author: ghogen
 description: Découvrir comment utiliser les outils de conteneur Visual Studio et le client Docker pour Windows
 ms.author: ghogen
-ms.date: 10/16/2019
+ms.date: 05/14/2020
 ms.technology: vs-azure
 ms.topic: quickstart
-ms.openlocfilehash: 47bcdd4de4ffd938d6b9aed5a166a863873f526b
-ms.sourcegitcommit: ddd99f64a3f86508892a6d61e8a33c88fb911cc4
+ms.openlocfilehash: f7dfc0aa1346c4e888f64f7cd8f23add3056c070
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "82255548"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84182784"
 ---
 # <a name="quickstart-use-docker-with-a-react-single-page-app-in-visual-studio"></a>Démarrage rapide : utiliser l’amarrage avec une application à page unique REACT dans Visual Studio
 
@@ -72,16 +72,16 @@ L’étape suivante est différente selon que vous utilisez des conteneurs Linux
 
 Un *fichier Docker*, la recette permettant de créer une image Docker finale, est créé dans le projet. Reportez-vous à la [référence fichier dockerfile](https://docs.docker.com/engine/reference/builder/) pour connaître les commandes qu’il contient.
 
-Ouvrez le *Dockerfile* dans le projet et ajoutez les lignes suivantes pour installer Node.js 10.x dans le conteneur. Veillez à ajouter ces lignes dans la première section, pour ajouter l’installation du gestionnaire de package de nœud *npm.exe* à l’image de base utilisée dans les étapes suivantes.
+Ouvrez le *Dockerfile* dans le projet et ajoutez les lignes suivantes pour installer Node.js 10.x dans le conteneur. Veillez à ajouter ces lignes dans la première section pour ajouter l’installation du gestionnaire de package node *NPM. exe* à l’image de base, ainsi que dans la `build` section.
 
-```
+```Dockerfile
 RUN curl -sL https://deb.nodesource.com/setup_10.x |  bash -
 RUN apt-get install -y nodejs
 ```
 
 Le *Dockerfile* doit ressembler à ceci :
 
-```
+```Dockerfile
 FROM microsoft/dotnet:2.2-aspnetcore-runtime-stretch-slim AS base
 WORKDIR /app
 EXPOSE 80 
@@ -90,6 +90,8 @@ RUN curl -sL https://deb.nodesource.com/setup_10.x |  bash -
 RUN apt-get install -y nodejs
 
 FROM microsoft/dotnet:2.2-sdk-stretch AS build
+RUN curl -sL https://deb.nodesource.com/setup_10.x |  bash -
+RUN apt-get install -y nodejs
 WORKDIR /src
 COPY ["WebApplication37/WebApplication37.csproj", "WebApplication37/"]
 RUN dotnet restore "WebApplication37/WebApplication37.csproj"
@@ -112,7 +114,7 @@ Quand la case **Configurer pour HTTPS** de la boîte de dialogue du nouveau proj
 
 ## <a name="modify-the-dockerfile-windows-containers"></a>Modifier le fichier dockerfile (conteneurs Windows)
 
-Ouvrez le fichier projet en double-cliquant sur le nœud du projet et mettez à jour le fichier projet (*. csproj) en ajoutant la propriété suivante en tant qu' `<PropertyGroup>` enfant de l’élément :
+Ouvrez le fichier projet en double-cliquant sur le nœud du projet et mettez à jour le fichier projet (*. csproj) en ajoutant la propriété suivante en tant qu’enfant de l' `<PropertyGroup>` élément :
 
    ```xml
     <DockerfileFastModeStage>base</DockerfileFastModeStage>
@@ -123,7 +125,7 @@ Mettez à jour le fichier dockerfile en ajoutant les lignes suivantes. Cela va c
    1. Ajouter ``# escape=` `` à la première ligne du fichier dockerfile
    1. Ajoutez les lignes suivantes avant`FROM … base`
 
-      ```
+      ```Dockerfile
       FROM mcr.microsoft.com/powershell:nanoserver-1903 AS downloadnodejs
       SHELL ["pwsh", "-Command", "$ErrorActionPreference = 'Stop';$ProgressPreference='silentlyContinue';"]
       RUN Invoke-WebRequest -OutFile nodejs.zip -UseBasicParsing "https://nodejs.org/dist/v10.16.3/node-v10.16.3-win-x64.zip"; `
@@ -133,17 +135,19 @@ Mettez à jour le fichier dockerfile en ajoutant les lignes suivantes. Cela va c
 
    1. Ajoutez la ligne suivante avant et après`FROM … build`
 
-      ```
+      ```Dockerfile
       COPY --from=downloadnodejs C:\nodejs\ C:\Windows\system32\
       ```
 
    1. Le fichier dockerfile complet doit maintenant ressembler à ceci :
 
-      ```
+      ```Dockerfile
       # escape=`
       #Depending on the operating system of the host machines(s) that will build or run the containers, the image specified in the FROM statement may need to be changed.
       #For more information, please see https://aka.ms/containercompat
       FROM mcr.microsoft.com/powershell:nanoserver-1903 AS downloadnodejs
+      RUN mkdir -p C:\nodejsfolder
+      WORKDIR C:\nodejsfolder
       SHELL ["pwsh", "-Command", "$ErrorActionPreference = 'Stop';$ProgressPreference='silentlyContinue';"]
       RUN Invoke-WebRequest -OutFile nodejs.zip -UseBasicParsing "https://nodejs.org/dist/v10.16.3/node-v10.16.3-win-x64.zip"; `
       Expand-Archive nodejs.zip -DestinationPath C:\; `
@@ -173,7 +177,7 @@ Mettez à jour le fichier dockerfile en ajoutant les lignes suivantes. Cela va c
       ENTRYPOINT ["dotnet", "WebApplication37.dll"]
       ```
 
-1. Mettez à jour le fichier. dockerignore en `**/bin`supprimant le.
+1. Mettez à jour le fichier. dockerignore en supprimant le `**/bin` .
 
 ## <a name="debug"></a>Débogage
 

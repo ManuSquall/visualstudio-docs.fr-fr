@@ -7,12 +7,12 @@ ms.assetid: 89e3fcf9-fe5d-4266-8dd7-5567d05fe869
 ms.date: 03/09/2020
 ms.topic: conceptual
 description: Découvrez comment obtenir et gérer vos clés de produit dans les abonnements Visual Studio.
-ms.openlocfilehash: 138b85d151aff5ecded4e8a69595518d05f12e7b
-ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
+ms.openlocfilehash: 10b09275dc1ba3d20e47c097888677e733e21ced
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "80232227"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84183923"
 ---
 # <a name="using-product-keys-in-visual-studio-subscriptions"></a>Utilisation de clés de produit dans les abonnements Visual Studio
 
@@ -21,6 +21,9 @@ Vos abonnements Visual Studio vous donnent accès à une large gamme de produits
 Les abonnements Visual Studio comprennent généralement cinq clés de produit pour les versions actuelles des produits Windows et Office, et trois clés de produit pour les versions antérieures.
 
 Pour la plupart des clés de produit, chaque clé permet d’effectuer plusieurs activations du produit.  Vous pouvez également installer et utiliser beaucoup de produits pendant au moins 30 jours sans avoir à les activer.  Le nombre d’activations possibles suffit à répondre aux besoins de la plupart des abonnés.  Toutefois, si vous avez atteint le nombre d’activations possibles pour un produit, vous pouvez envoyer une demande de clés supplémentaires en contactant le [service client des abonnements](https://visualstudio.microsoft.com/subscriptions/support/) Visual Studio.
+
+> [!NOTE]
+> Si votre abonnement vous est fourni par votre entreprise ou votre établissement scolaire, l’administrateur de votre abonnement contrôle si vous avez accès aux téléchargements de logiciels.  Si l’accès aux téléchargements est désactivé pour votre abonnement, l’accès aux clés de produit est également désactivé.  Si vous avez besoin de téléchargements et/ou de clés de produit, [Contactez votre administrateur](contact-my-admin.md).
 
 ## <a name="activating-a-product"></a>Activation d’un produit
 L’activation est obligatoire pour certains produits.  En règle générale, dans les abonnements Visual Studio, cela concerne uniquement Windows, Windows Server, les applications clientes Microsoft Office et Expression Studio. Lorsque l’activation est requise, nombre de produits (y compris Windows et Office) vous permettent d’installer et d’utiliser le produit sans activation pendant au moins 30 jours. Si vous réimagez vos ordinateurs fréquemment (au moins tous les 30 jours), il est préférable de NE PAS activer le produit. Les clés de produit fournies dans le cadre de votre abonnement Visual Studio ne permettent pas un nombre illimité d’activations d’un produit.
@@ -63,7 +66,7 @@ Différents types de clés sont disponibles en fonction du produit.
 |    Type de clé           |    Description                                                                                                                                                                                                           |
 |-------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |    Non applicable                    |    L’installation de ce produit ne nécessite pas de clé.                                                       |
-|    Vente au détail                     |    Les clés de produit commercialisé permettent plusieurs activations et sont utilisées pour les versions commercialisées du produit. Généralement, dix activations sont autorisées par clé, même si un plus grand nombre est souvent permis sur une même machine.                                                       |
+|    Retail                     |    Les clés de produit commercialisé permettent plusieurs activations et sont utilisées pour les versions commercialisées du produit. Généralement, dix activations sont autorisées par clé, même si un plus grand nombre est souvent permis sur une même machine.                                                       |
 |    Activation multiple        |    Une clé d’activation multiple (MAK) vous permet d’activer plusieurs installations d’un produit avec la même clé. Les clés MAK sont généralement utilisées avec les versions de licence en volume d’un produit. En règle générale, une seule clé MAK est fournie par abonnement.    |
 |    Clé d’activation statique    |    Les clés d’activation statiques sont fournies pour les produits qui n’ont pas besoin d’être activés. Elles peuvent être utilisées pour un nombre illimité d’installations.                                                                                                                  |
 |    Clé personnalisée                 |    Les clés personnalisées fournissent des actions ou informations spéciales pour activer ou installer le produit.                                                                                                                                                                |
@@ -77,7 +80,7 @@ Différents types de clés sont disponibles en fonction du produit.
 Vous pouvez demander une clé à partir de la page Téléchargements du produit, ou rechercher la clé dont vous avez besoin dans la page [Clés de produit](https://my.visualstudio.com/productkeys).
 
 ## <a name="see-also"></a>Voir aussi
-- [Documentation Visual Studio](https://docs.microsoft.com/visualstudio/)
+- [Documentation de Visual Studio](https://docs.microsoft.com/visualstudio/)
 - [Documentation Azure DevOps](https://docs.microsoft.com/azure/devops/)
 - [Documentation Azure](https://docs.microsoft.com/azure/)
 - [Documentation Microsoft 365](https://docs.microsoft.com/microsoft-365/)

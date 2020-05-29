@@ -18,16 +18,16 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 61ffb650a87fa992a07d749687498cbb8ec6482d
-ms.sourcegitcommit: da5ebc29544fdbdf625ab4922c9777faf2bcae4a
+ms.openlocfilehash: 926c54be9d31a6d0708b33248b6887c0ac7e324e
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "82586824"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84184066"
 ---
 # <a name="msbuild-conditions"></a>Conditions MSBuild
 
-MSBuild prend en charge un ensemble spécifique de conditions qui peuvent être appliquées `Condition` partout où un attribut est autorisé. Le tableau suivant décrit ces conditions.
+MSBuild prend en charge un ensemble spécifique de conditions qui peuvent être appliquées partout où un `Condition` attribut est autorisé. Le tableau suivant décrit ces conditions.
 
 |Condition|Description|
 |---------------|-----------------|
@@ -37,8 +37,8 @@ MSBuild prend en charge un ensemble spécifique de conditions qui peuvent être 
 |Exists(« `stringA` »)|A la valeur `true` si un fichier ou un dossier du nom `stringA` existe.<br /><br /> Par exemple :<br /><br /> `Condition="!Exists('$(builtdir)')"`<br /><br /> Les guillemets simples ne sont pas requis pour les chaînes alphanumériques simples ou les valeurs booléennes, mais ils le sont pour les valeurs vides.|
 |HasTrailingSlash (« `stringA` »)|A la valeur `true` si la chaîne spécifiée contient une barre oblique inverse finale (\\) ou une barre oblique (/).<br /><br /> Par exemple :<br /><br /> `Condition="!HasTrailingSlash('$(OutputPath)')"`<br /><br /> Les guillemets simples ne sont pas requis pour les chaînes alphanumériques simples ou les valeurs booléennes, mais ils le sont pour les valeurs vides.|
 |!|A la valeur `true` si l’opérande a la valeur `false`.|
-|and|A la valeur `true` si les deux opérandes ont la valeur `true`.|
-|ou|A la valeur `true` si l’un des opérandes au moins a la valeur `true`.|
+|`And`|A la valeur `true` si les deux opérandes ont la valeur `true`.|
+|`Or`|A la valeur `true` si l’un des opérandes au moins a la valeur `true`.|
 |()|Mécanisme de regroupement qui prend la valeur `true` si les expressions qu’il contient ont la valeur `true`.|
 |$if$ ( %expression% ), $else$, $endif$|Vérifie si la condition `%expression%` spécifiée correspond à la valeur de chaîne du paramètre de modèle personnalisé transmis. Si la condition `$if$` prend la valeur `true`, ses instructions sont exécutées ; dans le cas contraire, la condition `$else$` est vérifiée. Si la condition `$else$` a la valeur `true`, ses instructions sont exécutées. Dans le cas contraire, la condition `$endif$` met fin à l’évaluation de l’expression.<br /><br /> Pour obtenir des exemples d’utilisation, consultez [logique des paramètres de modèle de projet/d’élément Visual Studio](https://stackoverflow.com/questions/6709057/visual-studio-project-item-template-parameter-logic).|
 

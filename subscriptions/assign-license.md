@@ -7,12 +7,12 @@ ms.assetid: 4e529a43-7aed-4eee-895d-862a631952df
 ms.date: 03/02/2020
 ms.topic: conceptual
 description: Découvrez comment les administrateurs peuvent attribuer des licences aux abonnés
-ms.openlocfilehash: 0810cf9d24f6ac218db59eea87a1c092abaa2a3f
-ms.sourcegitcommit: 1b7412f1a5b039b2b294c6001013f399ea7aa5bc
+ms.openlocfilehash: a90d6f3fec1f619cda397788c130f7514307effd
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "82564158"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84183468"
 ---
 # <a name="assign-licenses-in-the-visual-studio-subscriptions-administration-portal"></a>Attribuer des licences dans le portail d’administration des abonnements Visual Studio
 En tant qu’administrateur des abonnements Visual Studio, vous pouvez utiliser le portail d’administration pour attribuer des abonnements à des utilisateurs individuels ou à des groupes d’utilisateurs.
@@ -20,7 +20,7 @@ En tant qu’administrateur des abonnements Visual Studio, vous pouvez utiliser 
 Pour les groupes d’utilisateurs, vous avez la possibilité de choisir la façon dont vous attribuez les abonnements.  
 - Vous pouvez assigner un abonnement à la fois.
 - Vous pouvez également télécharger rapidement et facilement des listes d’abonnés et leurs informations d’abonnement à l’aide de la fonctionnalité d' [Ajout en bloc](assign-license-bulk.md) .
-- Si votre organisation utilise Microsoft Azure Active Directory (Azure AD), vous pouvez utiliser des groupes de Azure AD pour affecter des abonnements à des groupes d’utilisateurs.  (Cette fonctionnalité est déployée en plusieurs phases et n’est peut-être pas immédiatement disponible pour votre organisation.)
+- Si votre organisation utilise Microsoft Azure Active Directory (Azure AD), vous pouvez [utiliser des groupes de Azure AD pour affecter des abonnements](https://docs.microsoft.com/visualstudio/subscriptions/assign-license-bulk#use-azure-active-directory-groups-to-assign-subscriptions) à des groupes d’utilisateurs.  
 
 
 ## <a name="add-a-single-subscriber"></a>Ajouter un seul abonné
@@ -39,7 +39,11 @@ Voici comment affecter un abonnement Visual Studio à un nouvel utilisateur afin
    > [!div class="mx-imgBorder"]
    > ![Détails de l’abonné](_img/assign-license-add/subscriber-details.png)
 
-    Si vous souhaitez autoriser cet abonné à accéder aux téléchargements de logiciels quand il se connecte au [portail des abonnements Visual Studio](https://my.visualstudio.com?wt.mc_id=o~msft~docs), laissez la case Téléchargements activée dans la section **Paramètres de téléchargement**. Si vous choisissez de désactiver les téléchargements, l’utilisateur n’a pas accès aux téléchargements de logiciels, mais il garde l’accès à tous les autres avantages inclus dans son abonnement.
+    > [!NOTE]
+    > Pour que les membres d’un locataire Azure Active Directory soient visibles lorsque vous entrez un nom d’abonné, l’administrateur doit être membre du locataire. 
+
+
+    Si vous souhaitez autoriser cet abonné à accéder aux téléchargements de logiciels quand il se connecte au [portail des abonnements Visual Studio](https://my.visualstudio.com?wt.mc_id=o~msft~docs), laissez la case Téléchargements activée dans la section **Paramètres de téléchargement**. Si vous choisissez de désactiver les téléchargements, l’utilisateur n’aura pas accès aux téléchargements de logiciels.  L’accès aux clés de produit est également désactivé.  L’abonné aura toujours accès à tous les autres avantages inclus dans l’abonnement.
    > [!div class="mx-imgBorder"]
    > ![Accéder aux téléchargements](media/access-to-downloads.png)
 
@@ -63,6 +67,6 @@ Une fois que vous avez ajouté un abonné, un e-mail d’attribution est envoyé
 
 ## <a name="next-steps"></a>Étapes suivantes
 - Vous avez un grand nombre d’utilisateurs à ajouter ?  Découvrez comment attribuer des abonnements à [plusieurs abonnés](assign-license-bulk.md).
-- Vous avez besoin d’aide ?  Contactez la [prise en charge de l’administration et des abonnements Visual Studio](https://visualstudio.microsoft.com/support/support-overview-vs).
+- Besoin d'aide ?  Contactez la [prise en charge de l’administration et des abonnements Visual Studio](https://visualstudio.microsoft.com/support/support-overview-vs).
 
 

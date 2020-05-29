@@ -1,6 +1,6 @@
 ---
-title: Guide pratique pour générer plusieurs configurations simultanément
-ms.date: 11/04/2016
+title: 'Comment : générer plusieurs configurations'
+ms.date: 05/13/2020
 ms.technology: vs-ide-compile
 ms.topic: conceptual
 ms.assetid: ba830937-3317-4674-8cc2-c0cd565603c5
@@ -9,38 +9,40 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 33cd217a08f62b4919af6d72017176c110cf5e5a
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: b6d6a3b4f9110f85ff42e8b9dcf6dd531c3802e2
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77904085"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84183546"
 ---
-# <a name="how-to-build-multiple-configurations-simultaneously"></a>Guide pratique pour générer plusieurs configurations simultanément
+# <a name="how-to-build-multiple-configurations-in-a-single-build-request"></a>Comment : générer plusieurs configurations dans une demande de build unique
 
-Vous pouvez générer simultanément la plupart des types de projets avec une partie ou même l’ensemble de leurs configurations de build à l’aide de la boîte de dialogue **Générer en tâche de fond**. Toutefois, vous ne pouvez pas générer les types de projets suivants dans plusieurs configurations de build en même temps :
+Vous pouvez générer la plupart des types de projets avec plusieurs ou même tous leurs configurations de build avec une action de l’IDE à l’aide de la boîte de dialogue **générer par lot** . Toutefois, vous ne pouvez pas générer les types de projets suivants dans plusieurs configurations de build en même temps :
 
 1. Applications du [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)] générées pour Windows à l'aide de JavaScript.
 
 2. Tous les projets Visual Basic.
 
-Si une solution contient un projet de ces deux types de projet, alors **Batch Build** n’est pas disponible pour cette solution. Dans ce cas, la commande n’apparaît pas sur le menu **Build.**
+3. Projets CMake.
+
+Si une solution contient un projet de ces deux types de projets, la **génération de lots** n’est pas disponible pour cette solution. Dans ce cas, la commande n’apparaît pas dans le menu **générer** .
 
    Pour plus d’informations sur les configurations de build, consultez [Présentation des configurations de build](../ide/understanding-build-configurations.md).
 
 ## <a name="to-build-a-project-in-multiple-build-configurations"></a>Pour générer un projet dans plusieurs configurations de build
 
-1. Sur la barre de menu, choisissez **Build** > **Batch Build**. Ou, appuyez sur **Ctrl**+**Q** pour `Batch Build`ouvrir la boîte de recherche, et la recherche de .
+1. Dans la barre de menus, choisissez **générer**  >  **génération de lots**. Ou appuyez sur **CTRL** + **Q** pour ouvrir la zone de recherche, puis recherchez `Batch Build` .
 
 2. Dans la colonne **Build**, cochez les cases correspondant aux configurations dans lesquelles vous souhaitez générer un projet.
 
     > [!TIP]
-    > Pour modifier ou créer une configuration de build pour une solution, choisissez **Build** > **Configuration Manager** sur la barre de menu pour ouvrir la boîte de dialogue Configuration **Manager.** Après avoir modifié une configuration de build pour une solution, choisissez le bouton **Régénérer** dans la boîte de dialogue **Générer en tâche de fond** pour mettre à jour toutes les configurations de build pour les projets de la solution.
+    > Pour modifier ou créer une configuration de build pour une solution, choisissez **générer**  >  **Configuration Manager** dans la barre de menus pour ouvrir la boîte de dialogue **Configuration Manager** . Après avoir modifié une configuration de build pour une solution, choisissez le bouton **Régénérer** dans la boîte de dialogue **Générer en tâche de fond** pour mettre à jour toutes les configurations de build pour les projets de la solution.
 
 3. Choisissez le bouton **Build** ou **Régénérer** pour générer le projet avec les configurations que vous avez spécifiées.
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Comment : Créer et modifier des configurations](../ide/how-to-create-and-edit-configurations.md)
+- [Comment : créer et modifier des configurations](../ide/how-to-create-and-edit-configurations.md)
 - [Présentation des configurations de build](../ide/understanding-build-configurations.md)
-- [Construire plusieurs projets en parallèle](../msbuild/building-multiple-projects-in-parallel-with-msbuild.md)
+- [Générer plusieurs projets en parallèle](../msbuild/building-multiple-projects-in-parallel-with-msbuild.md)

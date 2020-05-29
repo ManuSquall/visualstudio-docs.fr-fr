@@ -4,23 +4,27 @@ author: evanwindom
 ms.author: lank
 manager: lank
 ms.assetid: c2853359-18fd-4be4-97a6-02230c862f92
-ms.date: 03/02/2020
+ms.date: 05/10/2020
 ms.topic: conceptual
 description: Découvrez comment les administrateurs peuvent attribuer des licences à plusieurs abonnés à l’aide de la fonctionnalité d’ajout en bloc ou de groupes de Microsoft Azure Active Directory
-ms.openlocfilehash: 7fb9987b0d25da1be8a01f0cef82e019c20460d1
-ms.sourcegitcommit: 1b7412f1a5b039b2b294c6001013f399ea7aa5bc
+ms.openlocfilehash: 41dd3049c790ac790b46d12b976eb3ab6457fcb2
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "82564184"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84182896"
 ---
 # <a name="assign-subscriptions-to-multiple-users"></a>Attribuer des abonnements à plusieurs utilisateurs
 Le portail d’administration des abonnements vous permet d’ajouter des utilisateurs un à la fois ou dans des grands groupes.  Pour ajouter des utilisateurs individuels, consultez [Ajouter des utilisateurs uniques](assign-license.md).
 
 Pour ajouter des groupes d’utilisateurs importants, vous pouvez utiliser la fonctionnalité d’ajout en bloc ou, si votre organisation utilise Microsoft Azure Active Directory (Azure AD), vous pouvez utiliser des groupes de Azure AD. Cet article explique le processus pour les deux options. 
 
+<br>
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4vxNq]
+
 ## <a name="use-bulk-add-to-assign-subscriptions"></a>Utiliser l’ajout en bloc pour affecter des abonnements
-1. Connectez-vous au portail d’administration des abonnements Visual Studio à l’adresse https://manage.visualstudio.com.
+1. Connectez-vous au portail d’administration des abonnements Visual Studio à l’adresse https://manage.visualstudio.com .
 
 2. Pour ajouter plusieurs abonnés à la fois, accédez à l’onglet **gérer les abonnés** . Choisissez l’onglet **Ajouter** , puis choisissez **Ajouter en bloc** dans la liste déroulante.  
 
@@ -32,6 +36,9 @@ Pour ajouter des groupes d’utilisateurs importants, vous pouvez utiliser la fo
    > Téléchargez toujours la dernière version du modèle. L’utilisation d’une version antérieure peut faire échouer le chargement en bloc.
 
 3. Dans la feuille de calcul Excel, renseignez les champs avec les informations relatives aux utilisateurs auxquels vous souhaitez attribuer des abonnements. (La*référence* est un champ facultatif.) Enregistrez le fichier localement une fois que vous avez terminé.
+
+    > [!NOTE]
+    > L’un des champs du modèle permet aux administrateurs d’activer ou de désactiver la capacité des abonnés à télécharger des logiciels.  La désactivation des téléchargements désactive également leur accès aux clés de produit.
 
    Pour faciliter le chargement, respectez les bonnes pratiques suivantes :
 
@@ -74,6 +81,7 @@ Grâce à cette fonctionnalité, il est facile de rester au-dessus de vos affect
 > [!IMPORTANT]
 >
 > Les limitations suivantes s’appliquent à l’utilisation de groupes de Azure AD pour l’ajout d’abonnés :
+> - L’administrateur doit être membre du client AAD lors de l’ajout initial d’un groupe au portail d’administration.  Une fois le groupe ajouté, les modifications apportées à l’appartenance aux groupes ne nécessitent pas d’intervention de l’administrateur. 
 > - Les groupes doivent contenir au moins un membre.  Les groupes vides ne sont pas pris en charge.
 > - Les groupes doivent avoir moins de 1 000 utilisateurs. 
 > - Tous les utilisateurs doivent se trouver au niveau supérieur du groupe.  Les groupes imbriqués ne sont pas pris en charge.
@@ -81,7 +89,11 @@ Grâce à cette fonctionnalité, il est facile de rester au-dessus de vos affect
 > - Tous les membres du groupe doivent avoir une adresse de messagerie associée à leur compte Azure AD.
 > - Les adresses e-mail distinctes pour les notifications ne sont pas prises en charge pour les abonnements ajoutés à l’aide de groupes de Azure AD.  
 
-1. Connectez-vous au portail d’administration des abonnements [https://manage.visualstudio.com](https://manage.visualstudio.com)Visual Studio à l’adresse.
+<br>
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4rvvW]
+
+1. Connectez-vous au portail d’administration des abonnements Visual Studio à l’adresse [https://manage.visualstudio.com](https://manage.visualstudio.com) .
 
 2. Pour ajouter plusieurs abonnés à la fois, accédez à l’onglet **gérer les abonnés** .
 
@@ -106,11 +118,8 @@ Grâce à cette fonctionnalité, il est facile de rester au-dessus de vos affect
 > [!NOTE]
 > Si vous avez déjà attribué des abonnements individuellement à des utilisateurs qui sont ajoutés par la suite dans le cadre d’un groupe de Azure AD, ils sont ajoutés dans le cadre du groupe et ne sont plus répertoriés individuellement. Toutefois, si l’abonnement individuel est destiné à un niveau d’abonnement différent, il aura deux abonnements.  Exemple : si un utilisateur dispose d’un abonnement Visual Studio Professional individuel et s’il est membre d’un groupe auquel vous affectez des abonnements Visual Studio Enterprise, il disposera des deux.  
 
-<br>
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4vxNq]
-
-## <a name="frequently-asked-questions"></a>Forum aux questions
+## <a name="frequently-asked-questions"></a>Questions fréquentes (FAQ)
 ### <a name="q-can-i-choose-multiple-subscription-levels-to-be-assigned-within-an-azure-ad-group"></a>Q : puis-je choisir plusieurs niveaux d’abonnement à affecter au sein d’un groupe de Azure AD ? 
 R : non--tous les membres du groupe reçoivent le même abonnement. 
 
@@ -128,4 +137,4 @@ R : selon la façon dont votre organisation a configuré Azure AD, vous pouvez 
 
 ## <a name="next-steps"></a>Étapes suivantes
 - Vous n’avez qu’un ou deux abonnés à ajouter ?  Consultez [Ajouter des utilisateurs uniques](assign-license.md)
-- Vous avez besoin d’aide ? Contactez la [prise en charge de l’administration et des abonnements Visual Studio](https://visualstudio.microsoft.com/support/support-overview-vs).
+- Besoin d'aide ? Contactez la [prise en charge de l’administration et des abonnements Visual Studio](https://visualstudio.microsoft.com/support/support-overview-vs).

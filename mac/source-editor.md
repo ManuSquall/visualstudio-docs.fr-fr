@@ -5,12 +5,12 @@ author: cobey
 ms.author: cobey
 ms.date: 05/06/2018
 ms.assetid: A018A314-C1C4-4F36-BCB6-2D434208FCFE
-ms.openlocfilehash: d1ea74b4893032252d04ebe5fe5e65ca1eedaeeb
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: c4a22ec0765c39a8bec83f9e2acff7b22b706890
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "68493228"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84173094"
 ---
 # <a name="source-editor"></a>Éditeur de code source
 
@@ -52,7 +52,7 @@ Le retour automatique à la ligne peut vous aider à gérer l’espace quand vou
 
 Le retour automatique à la ligne est désactivé par défaut, mais vous pouvez l’activer via **Préférences** dans Visual Studio pour Mac. 
 
-Pour activer le retour automatique à la ligne, accédez à **Visual Studio > Préférences > Éditeur de texte > Nouvel éditeur > Retour automatique à la ligne** :
+Pour activer le retour automatique à la ligne, accédez à **Visual Studio > préférences > éditeur de texte > retour automatique à la ligne**:
 
 ![Options du retour automatique à la ligne](media/source-neweditor-wordwrap1.png)
 

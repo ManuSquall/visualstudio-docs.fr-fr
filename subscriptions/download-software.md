@@ -7,21 +7,22 @@ ms.assetid: e2f2619c-7736-47e5-a066-5940d5994db9
 ms.date: 03/07/2020
 ms.topic: conceptual
 description: Découvrir comment localiser et télécharger des logiciels Microsoft inclus dans des abonnements Visual Studio
-ms.openlocfilehash: 4196d8bcf256a624f34ae0b66e11f536e3c2c2ec
-ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
+ms.openlocfilehash: 5b21a87f0dc84189381f63274343f5fd7a384c5c
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "80232607"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84180231"
 ---
 # <a name="downloading-software-titles-in-visual-studio-subscriptions"></a>Téléchargement de logiciels inclus dans les abonnements Visual Studio
 En fonction de votre abonnement Visual Studio, de nombreux logiciels Microsoft sont peut-être à votre disposition.  Cet article explique comment localiser et télécharger les logiciels dont vous avez besoin pour tirer le meilleur parti de votre abonnement. 
 
-> [!NOTE]
-> Seuls les téléchargements inclus dans votre abonnement s’affichent dans la page [Téléchargements](https://my.visualstudio.com/downloads/featured).  Si vous avez plusieurs abonnements ou que vous êtes membre de plusieurs programmes, les téléchargements indiqués correspondent à l’**abonnement du niveau le plus élevé** que vous possédez, même si vous consultez actuellement un autre abonnement.  Par exemple, si vous avez un abonnement Visual Studio Enterprise et un abonnement Visual Studio Professional associés à la même pièce d’identité de connexion, les téléchargements affichés seront ceux inclus dans l’abonnement Enterprise, même si vous visionez actuellement vos avantages d’abonnement professionnel.
+Seuls les téléchargements inclus dans votre abonnement s’affichent dans la page [Téléchargements](https://my.visualstudio.com/downloads/featured).  Si vous avez plusieurs abonnements ou que vous êtes membre de plusieurs programmes, les téléchargements indiqués correspondent à l’**abonnement du niveau le plus élevé** que vous possédez, même si vous consultez actuellement un autre abonnement.  Par exemple, si vous avez un abonnement Visual Studio Enterprise et un abonnement Visual Studio Professional à la fois associés au même ID de connexion, les téléchargements affichés sont ceux inclus dans l’abonnement entreprise, même si vous affichez actuellement les avantages de votre abonnement professionnel.  
+
+Si votre abonnement est fourni par votre entreprise ou votre établissement scolaire, l’administrateur de votre abonnement contrôle si vous avez accès aux téléchargements. La désactivation de l’accès aux téléchargements désactive également l’accès aux clés de produit. Si vous n’avez pas accès aux téléchargements et clés de produit et que vous en avez besoin, [Contactez votre administrateur](contact-my-admin.md).
 
 > [!NOTE]
-> Nous sommes au courant d’un problème concernant la disponibilité des clés de produit Office 365.  Nous étudions la cause et mettrons à jour cet article lorsque le problème sera résolu. 
+> Nous avons connaissance d’un problème concernant la disponibilité des clés de produit Office 365.  Nous étudions la cause et allons mettre à jour cet article lorsque le problème est résolu. 
 
 ## <a name="how-do-i-find-downloads-in-the-subscriber-portal"></a>Comment trouver des téléchargements dans le portail des abonnés ?
 Quand vous visitez la page [Téléchargements](https://my.visualstudio.com/downloads/featured?wt.mc_id=o~msft~docs), les téléchargements les plus populaires s’affichent organisés en groupes par type de produit.  Vous pouvez sélectionner l’un des téléchargements les plus fréquents affichés, ou rechercher un produit à l’aide de la barre de recherche située en haut de la page.
@@ -52,17 +53,17 @@ Pour obtenir une clé de produit en vue du téléchargement, cliquez sur la clé
 > ![Réclamation de clés de produit Visual Studio 2019](_img/subscriber-downloads/vs2019-claim-keys.png)
 
 ## <a name="see-also"></a>Voir aussi
-- [Documentation Visual Studio](https://docs.microsoft.com/visualstudio/)
+- [Documentation de Visual Studio](https://docs.microsoft.com/visualstudio/)
 - [Documentation Azure DevOps](https://docs.microsoft.com/azure/devops/)
 - [Documentation Azure](https://docs.microsoft.com/azure/)
 - [Documentation Microsoft 365](https://docs.microsoft.com/microsoft-365/)
 
 ## <a name="next-steps"></a>Étapes suivantes
-Pour en savoir plus sur la localisation, la réclamation et l’exportation des clés de produit, consultez la documentation de nos clés de produit :
+Pour en savoir plus sur la localisation, la revendication et l’exportation des clés de produit, consultez notre documentation sur les clés de produit :
 - [Vue d’ensemble des clés de produit](product-keys.md)
 - [Localiser et réclamer des clés](find-keys.md)
 
-Apprenez à tirer parti d’autres grands avantages tels que :
+Découvrez comment tirer parti d’autres avantages tels que :
 - [Crédit individuel Azure DevTest](vs-azure.md)
 - [Azure DevOps](vs-azure-devops.md)
 - [IDE Visual Studio](vs-ide-benefit.md)
