@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c4b888dbbe7a26e5ff333ec39aa0fdfcec90b429
-ms.sourcegitcommit: da5ebc29544fdbdf625ab4922c9777faf2bcae4a
+ms.openlocfilehash: d45deadc48445e043535e84b36718a14f5b391f6
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "82586201"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84182805"
 ---
 # <a name="reliability-warnings"></a>Avertissements liés à la fiabilité
 
@@ -34,4 +34,6 @@ Les avertissements de fiabilité prennent en charge la fiabilité des bibliothè
 |[CA2004 : Supprimez les appels à GC.KeepAlive](../code-quality/ca2004.md)|Si vous effectuez une conversion en utilisation SafeHandle, supprimez tous les appels à GC. KeepAlive (objet). Dans ce cas, les classes n’ont pas besoin d’appeler GC. KeepAlive, en supposant qu’ils n’ont pas de finaliseur, mais qu’ils reposent sur SafeHandle pour finaliser le handle du système d’exploitation.|
 |[CA2006 : Utilisez SafeHandle pour encapsuler les ressources natives](../code-quality/ca2006.md)|L'utilisation de IntPtr dans du code managé peut être le signe d'un problème potentiel de sécurité et de fiabilité. Toute utilisation de IntPtr doit être passée en revue pour déterminer s’il est nécessaire de recourir à un SafeHandle ou une technologie similaire à la place.|
 |[CA2007 : N’attendez pas directement une Tâche](../code-quality/ca2007.md)|Une méthode asynchrone [attend](/dotnet/csharp/language-reference/keywords/await) directement un <xref:System.Threading.Tasks.Task> .|
-|[Ca2009 : n’appelez pas ToImmutableCollection sur une valeur ImmutableCollection](../code-quality/ca2009.md)|`ToImmutable`la méthode était inutilement appelée sur une collection immuable <xref:System.Collections.Immutable> de l’espace de noms.|
+|[CA2009 : N’appelez pas ToImmutableCollection sur une valeur ImmutableCollection](../code-quality/ca2009.md)|`ToImmutable`la méthode était inutilement appelée sur une collection immuable de l' <xref:System.Collections.Immutable> espace de noms.|
+|[Ca2011 : ne pas assigner la propriété dans son accesseur Set](../code-quality/ca2011.md) | Une valeur a été assignée par erreur à une propriété dans son propre [accesseur Set](/dotnet/csharp/programming-guide/classes-and-structs/using-properties#the-set-accessor). |
+|[Ca2015 : ne définissez pas de finaliseur pour les types dérivés de MemoryManager &lt; T&gt;](../code-quality/ca2015.md) | L’ajout d’un finaliseur à un type dérivé de <xref:System.Buffers.MemoryManager%601> peut permettre la libération de la mémoire pendant qu’il est toujours utilisé par un <xref:System.Span%601> . |

@@ -21,18 +21,18 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9623e8ffb6a315851d26cd06defb62899e429f44
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: c55b0d3487eb18db33805b418882f157d55b1253
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75591253"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84183533"
 ---
 # <a name="manage-references-in-a-project"></a>Gérer les références dans un projet
 
 Avant d’écrire du code pour un composant externe ou un service connecté, vous devez d’abord inclure une référence à celui-ci dans votre projet. Une référence est essentiellement une entrée dans un fichier projet qui contient les informations dont Visual Studio a besoin pour localiser le composant ou le service.
 
-Pour ajouter une référence, cliquez avec le bouton droit sur le nœud **Références** ou **Dépendances** dans l’**Explorateur de solutions**, puis choisissez **Ajouter une référence**. Vous pouvez également cliquer à droite sur le nœud du projet et sélectionner **Add** > **Reference**. Pour plus d’informations, voir [Comment : Ajouter ou supprimer des références](../ide/how-to-add-or-remove-references-by-using-the-reference-manager.md).
+Pour ajouter une référence, cliquez avec le bouton droit sur le nœud **Références** ou **Dépendances** dans l’**Explorateur de solutions**, puis choisissez **Ajouter une référence**. Vous pouvez également cliquer avec le bouton droit sur le nœud du projet et sélectionner **Ajouter**une  >  **référence**. Pour plus d’informations, consultez [Comment : ajouter ou supprimer des références](../ide/how-to-add-or-remove-references-by-using-the-reference-manager.md).
 
 ![Ajouter une référence en Visual C&#43;&#43;](../ide/media/vs2015_cpp_add_reference.png)
 
@@ -56,7 +56,7 @@ Vous pouvez ajouter une référence aux types de composant et service suivants 
 
 Les projets de plateforme Windows universelle (UWP) peuvent créer des références à d’autres projets UWP dans la solution ou à des projets ou fichiers binaires Windows 8.1, à condition que ces projets n’utilisent pas des API dépréciées dans Windows 10. Pour plus d’informations, consultez [Passer de Windows Runtime 8 à la plateforme Windows universelle](/windows/uwp/porting/w8x-to-uwp-root).
 
-Si vous choisissez de retarget Windows 8.1 projets à Windows 10, voir [Port, migrer, et mettre à niveau visual Studio projets](../porting/port-migrate-and-upgrade-visual-studio-projects.md).
+Si vous choisissez de recibler des projets Windows 8.1 vers Windows 10, consultez [Portage, migration et mise à niveau de projets Visual Studio](../porting/port-migrate-and-upgrade-visual-studio-projects.md).
 
 ### <a name="extension-sdk-references"></a>Références du kit SDK d’extension
 
@@ -113,7 +113,7 @@ Pour plus d’informations, consultez [Vue d’ensemble du ciblage des framework
 
 Les références entre projets sont des références aux projets qui contiennent des assemblys. Vous les créez à l’aide de l’onglet **Projets** de la boîte de dialogue Gestionnaire de références. Visual Studio peut trouver un assembly si vous indiquez un chemin d’accès au projet.
 
-Quand vous avez un projet qui produit un assembly, vous devez référencer le projet et non pas utiliser une référence de fichier (voir ci-dessous). Une référence entre projets présente l’avantage de créer une dépendance entre les projets dans le système de build. Le projet dépendant est généré s’il a été modifié depuis la dernière build du projet qui référence. Une référence de fichier ne crée pas de dépendance de build, il est donc possible de générer le projet de référence sans générer le projet dépendant, et la référence peut devenir obsolète. (C’est-à-dire que le projet peut faire référence à une version précédemment construite du projet.) Cela peut entraîner plusieurs versions d’un seul DLL étant nécessaire dans le *répertoire bin,* ce qui n’est pas possible. Quand ce conflit intervient, vous obtenez un message de ce type : « Avertissement : impossible de copier la dépendance ’fichier’ du projet ’projet’ dans le répertoire d’exécution, car elle remplacerait la référence ’fichier’. ». Pour plus d’informations, consultez [Dépanner des références rompues](../ide/troubleshooting-broken-references.md) et [Guide pratique pour créer et supprimer les dépendances d’un projet](../ide/how-to-create-and-remove-project-dependencies.md).
+Quand vous avez un projet qui produit un assembly, vous devez référencer le projet et non pas utiliser une référence de fichier (voir ci-dessous). Une référence entre projets présente l’avantage de créer une dépendance entre les projets dans le système de build. Le projet dépendant est généré s’il a été modifié depuis la dernière build du projet qui référence. Une référence de fichier ne crée pas de dépendance de build, il est donc possible de générer le projet de référence sans générer le projet dépendant, et la référence peut devenir obsolète. (Autrement dit, le projet peut référencer une version précédemment générée du projet.) Cela peut entraîner la nécessité de plusieurs versions d’une même DLL dans le répertoire *bin* , ce qui n’est pas possible. Quand ce conflit intervient, vous obtenez un message de ce type : « Avertissement : impossible de copier la dépendance ’fichier’ du projet ’projet’ dans le répertoire d’exécution, car elle remplacerait la référence ’fichier’. ». Pour plus d’informations, consultez [Dépanner des références rompues](../ide/troubleshooting-broken-references.md) et [Guide pratique pour créer et supprimer les dépendances d’un projet](../ide/how-to-create-and-remove-project-dependencies.md).
 
 > [!NOTE]
 > Une référence de fichier est créée à la place d’une référence entre projets si la version cible du .NET Framework d’un projet est la version 4.5, et si la version cible du .NET Framework de l’autre projet est la version 2, 3, 3.5 ou 4.0.
@@ -128,5 +128,5 @@ Les références de fichiers sont des références directes à des assemblys qui
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Dépannage des références brisées](../ide/troubleshooting-broken-references.md)
+- [Dépanner des références rompues](../ide/troubleshooting-broken-references.md)
 - [Guide pratique pour ajouter ou supprimer des références](../ide/how-to-add-or-remove-references-by-using-the-reference-manager.md)

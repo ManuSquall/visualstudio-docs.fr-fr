@@ -11,12 +11,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c7c41539ec50cb166dfe60690a4722992b29a47a
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: d4689985d159bd832bc3cadfb54eb17fae2ae71a
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79093968"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84183663"
 ---
 # <a name="msbuild-items"></a>Éléments MSBuild
 
@@ -35,7 +35,7 @@ Les éléments MSBuild sont des entrées du système de génération qui représ
 </ItemGroup>
 ```
 
- L’élément *file2.cs* ne remplace pas l’élément *file1.cs*; au lieu de cela, le nom du fichier `Compile` est annexé à la liste des valeurs pour le type d’élément.
+ L’élément *file2.cs* ne remplace pas l’élément *file1.cs*; au lieu de cela, le nom de fichier est ajouté à la liste de valeurs pour le `Compile` type d’élément.
 
  Le code XML suivant crée le même type d’élément en déclarant les deux fichiers dans un attribut `Include`. Notez que les noms de fichiers sont séparés par un point-virgule.
 
@@ -45,7 +45,7 @@ Les éléments MSBuild sont des entrées du système de génération qui représ
 </ItemGroup>
 ```
 
-L’attribut `Include` est un chemin qui est interprété par rapport au dossier du fichier de projet, $(MSBuildProjectPath), même si l’élément est dans un fichier importé tel qu’un fichier *.targets.*
+L' `Include` attribut est un chemin d’accès qui est interprété par rapport au dossier du fichier projet, $ (MSBuildProjectPath), même si l’élément se trouve dans un fichier importé, tel qu’un fichier *. targets* .
 
 ## <a name="create-items-during-execution"></a>Créer des éléments lors de l’exécution
 
@@ -59,9 +59,9 @@ L’attribut `Include` est un chemin qui est interprété par rapport au dossier
 
 ## <a name="reference-items-in-a-project-file"></a>Référencer des éléments dans un fichier projet
 
- Pour référencer des types d’éléments dans tout le fichier projet, vous devez utiliser la syntaxe @(\<ItemType>). Par exemple, vous devez référencer le type d’élément dans l’exemple précédent en utilisant `@(Compile)`. À l’aide de cette syntaxe, vous pouvez transmettre des éléments aux tâches en spécifiant le type d’élément en tant que paramètre de la tâche en question. Pour plus d’informations, voir [Comment : Sélectionnez les fichiers à créer](../msbuild/how-to-select-the-files-to-build.md).
+ Pour référencer des types d’éléments dans tout le fichier projet, vous devez utiliser la syntaxe @(\<ItemType>). Par exemple, vous devez référencer le type d’élément dans l’exemple précédent en utilisant `@(Compile)`. À l’aide de cette syntaxe, vous pouvez transmettre des éléments aux tâches en spécifiant le type d’élément en tant que paramètre de la tâche en question. Pour plus d’informations, consultez [How to : Select the files to Build](../msbuild/how-to-select-the-files-to-build.md).
 
- Par défaut, les éléments d’un type d’élément développé sont séparés par des points-virgules (;). Vous pouvez utiliser la syntaxe @(\<ItemType>, '\<separator>') pour spécifier un séparateur autre que celui indiqué par défaut. Pour plus d’informations, voir [Comment : Afficher une liste d’objets séparées avec des virgules](../msbuild/how-to-display-an-item-list-separated-with-commas.md).
+ Par défaut, les éléments d’un type d’élément développé sont séparés par des points-virgules (;). Vous pouvez utiliser la syntaxe @ ( \<ItemType> , ' \<separator> ') pour spécifier un séparateur autre que celui par défaut. Pour plus d’informations, consultez [Comment : afficher une liste d’éléments séparés par des virgules](../msbuild/how-to-display-an-item-list-separated-with-commas.md).
 
 ## <a name="use-wildcards-to-specify-items"></a>Utiliser des caractères génériques pour spécifier des éléments
 
@@ -97,7 +97,7 @@ Pour plus d’informations sur les caractères génériques, consultez [Guide pr
 </ItemGroup>
 ```
 
- L’attribut `Exclude` affecte uniquement les éléments qui sont ajoutés par l’attribut `Include` dans l’élément Item qui les contient. L’exemple suivant n’exclurait pas le fichier *Form1.cs*, qui a été ajouté dans l’élément précédent.
+ L’attribut `Exclude` affecte uniquement les éléments qui sont ajoutés par l’attribut `Include` dans l’élément Item qui les contient. L’exemple suivant n’exclut pas le fichier *Form1.cs*, qui a été ajouté dans l’élément item précédent.
 
 ```xml
 <Compile Include="*.cs" />
@@ -112,7 +112,7 @@ Pour plus d’informations sur les caractères génériques, consultez [Guide pr
 
  Les métadonnées sont une collection de paires clé-valeur qui sont déclarées dans le fichier projet en tant qu’éléments enfants d’un élément Item. Le nom et la valeur de l’élément enfant correspondent au nom et à la valeur de la métadonnée.
 
- La métadonnée est associée à l’élément Item qui le contient. Par exemple, le XML suivant ajoute `Culture` des `Fr` métadonnées qui ont la valeur à la fois de la *one.cs* et des *éléments two.cs* du type d’article CSFile.
+ La métadonnée est associée à l’élément Item qui le contient. Par exemple, le code XML suivant ajoute des `Culture` métadonnées qui ont la valeur `Fr` aux éléments *One.cs* et *Two.cs* du type d’élément CSFile.
 
 ```xml
 <ItemGroup>
@@ -126,7 +126,7 @@ Pour plus d’informations sur les caractères génériques, consultez [Guide pr
 
 ### <a name="reference-item-metadata-in-a-project-file"></a><a name="BKMK_ReferencingItemMetadata"></a> Référencer des métadonnées d’élément dans un fichier projet
 
- Vous pouvez référencer des métadonnées d’élément dans tout le fichier projet à l’aide de la syntaxe %(\<ItemMetadataName>). En cas d’ambiguïté, vous pouvez qualifier une référence à l’aide du nom du type d’élément. Par exemple, vous pouvez spécifier %(\<ItemType.ItemMetaDataName>). Dans l’exemple suivant, les métadonnées Display permettent de traiter par lots la tâche Message. Pour plus d’informations sur l’utilisation des métadonnées d’élément pour le traitement par lots, consultez [Métadonnées d’élément dans le traitement par lots des tâches](../msbuild/item-metadata-in-task-batching.md).
+ Vous pouvez référencer des métadonnées d’élément dans tout le fichier projet à l’aide de la syntaxe %(\<ItemMetadataName>). En cas d’ambiguïté, vous pouvez qualifier une référence à l’aide du nom du type d’élément. Par exemple, vous pouvez spécifier%( \<ItemType.ItemMetaDataName> ). L’exemple suivant utilise la tâche afficher les métadonnées pour traiter par lots la tâche de message. Pour plus d’informations sur l’utilisation des métadonnées d’élément pour le traitement par lots, consultez [Métadonnées d’élément dans le traitement par lots des tâches](../msbuild/item-metadata-in-task-batching.md).
 
 ```xml
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -144,13 +144,13 @@ Pour plus d’informations sur les caractères génériques, consultez [Guide pr
 </Project>
 ```
 
-### <a name="well-known-item-metadata"></a><a name="BKMK_WellKnownItemMetadata"></a>Métadonnées d’objets bien connues
+### <a name="well-known-item-metadata"></a><a name="BKMK_WellKnownItemMetadata"></a>Métadonnées d’élément connues
 
- Lorsqu’un élément est ajouté à un type d’élément, des métadonnées connues lui sont attribuées. Par exemple, tous les éléments ont les\<métadonnées bien connues %(Filename>), dont la valeur est le nom de fichier de l’élément (sans l’extension). Pour plus d’informations, voir [métadonnées d’objets bien connues](../msbuild/msbuild-well-known-item-metadata.md).
+ Lorsqu’un élément est ajouté à un type d’élément, des métadonnées connues lui sont attribuées. Par exemple, tous les éléments ont les métadonnées%(connues \<Filename> ), dont la valeur est le nom de fichier de l’élément (sans l’extension). Pour plus d’informations, consultez [métadonnées d’éléments connus](../msbuild/msbuild-well-known-item-metadata.md).
 
 ### <a name="transform-item-types-by-using-metadata"></a><a name="BKMK_Transforming"></a> Transformer des types d’éléments à l’aide de métadonnées
 
- Vous pouvez transformer des listes d’éléments en nouvelles listes d’éléments à l’aide de métadonnées. Par exemple, vous pouvez `CppFiles` transformer un type d’élément qui a des éléments qui représentent `@(CppFiles -> '%(Filename).obj')`des fichiers *.cpp* dans une liste correspondante de fichiers *.obj* en utilisant l’expression .
+ Vous pouvez transformer des listes d’éléments en nouvelles listes d’éléments à l’aide de métadonnées. Par exemple, vous pouvez transformer un type `CppFiles` d’élément qui contient des éléments qui représentent des fichiers *. cpp* en une liste correspondante de fichiers *. obj* à l’aide de l’expression `@(CppFiles -> '%(Filename).obj')` .
 
  Le code suivant crée un type d’élément `CultureResource` qui contient des copies de tous les éléments `EmbeddedResource` comportant la métadonnée `Culture`. La valeur de la métadonnée `Culture` devient la valeur de la nouvelle métadonnée `CultureResource.TargetDirectory`.
 
@@ -169,7 +169,7 @@ Pour plus d’informations sur les caractères génériques, consultez [Guide pr
 
 ## <a name="item-definitions"></a>Définitions d’éléments
 
- Depuis .NET Framework 3.5, vous pouvez ajouter des métadonnées par défaut à tout type d’élément à l’aide de l’[élément ItemDefinitionGroup](../msbuild/itemdefinitiongroup-element-msbuild.md). À l’instar des métadonnées connues, les métadonnées par défaut sont associées à tous les éléments du type d’élément que vous spécifiez. Vous pouvez remplacer les métadonnées par défaut dans une définition d’élément de façon explicite. Par exemple, le XML `Compile` suivant donne aux articles *one.cs* et *three.cs* les métadonnées `BuildDay` avec la valeur "lundi". Le code donne l’élément *two.cs* `BuildDay` les métadonnées avec la valeur "mardi".
+ Depuis .NET Framework 3.5, vous pouvez ajouter des métadonnées par défaut à tout type d’élément à l’aide de l’[élément ItemDefinitionGroup](../msbuild/itemdefinitiongroup-element-msbuild.md). À l’instar des métadonnées connues, les métadonnées par défaut sont associées à tous les éléments du type d’élément que vous spécifiez. Vous pouvez remplacer les métadonnées par défaut dans une définition d’élément de façon explicite. Par exemple, le code XML suivant donne les `Compile` éléments *one.cs* et *Three.cs* les métadonnées `BuildDay` avec la valeur « Monday ». Le code donne à l’élément *Two.cs* les métadonnées `BuildDay` avec la valeur « Tuesday ».
 
 ```xml
 <ItemDefinitionGroup>
@@ -185,7 +185,7 @@ Pour plus d’informations sur les caractères génériques, consultez [Guide pr
 </ItemGroup>
 ```
 
- Pour plus d’informations, voir [définitions d’éléments](../msbuild/item-definitions.md).
+ Pour plus d’informations, consultez [définitions d’éléments](../msbuild/item-definitions.md).
 
 ## <a name="attributes-for-items-in-an-itemgroup-of-a-target"></a>Attributs des éléments d’un ItemGroup d’une cible
 
@@ -193,9 +193,9 @@ Pour plus d’informations sur les caractères génériques, consultez [Guide pr
 
 ### <a name="remove-attribute"></a><a name="BKMK_RemoveAttribute"></a>Supprimer l’attribut
 
- L’attribut `Remove` supprime des éléments spécifiques (fichiers) du type d’élément. Cet attribut a été introduit dans le cadre .NET 3.5 (cibles intérieures seulement). Les cibles intérieures et extérieures sont prises en charge à partir de MSBuild 15.0.
+ L’attribut `Remove` supprime des éléments spécifiques (fichiers) du type d’élément. Cet attribut a été introduit dans le .NET Framework 3,5 (dans les cibles internes uniquement). Les cibles internes et externes sont prises en charge à partir de MSBuild 15,0.
 
- L’exemple suivant supprime chaque fichier *.config* du type d’élément Compile.
+ L’exemple suivant supprime tous les fichiers *. config* du type d’élément de compilation.
 
 ```xml
 <Target>
@@ -248,7 +248,7 @@ Output:
 -->
 ```
 
-### <a name="removemetadata-attribute"></a><a name="BKMK_RemoveMetadata"></a>Supprimer l’attributMetadata
+### <a name="removemetadata-attribute"></a><a name="BKMK_RemoveMetadata"></a>Attribut RemoveMetadata
 
  Si un élément est généré au sein d’une cible, l’élément Item peut contenir l’attribut `RemoveMetadata`. Si cet attribut est spécifié, toutes les métadonnées sont transférées de l’élément source vers l’élément cible, à l’exception des métadonnées dont les noms figurent dans la liste de noms séparés par des points-virgules. Pour cet attribut, utiliser une valeur vide revient à ne pas le spécifier. L’attribut `RemoveMetadata` a été introduit dans .NET Framework 4.5.
 
@@ -338,6 +338,261 @@ Output:
 -->
 ```
 
+##  <a name="updating-metadata-on-items-in-an-itemgroup-outside-of-a-target"></a>Mise à jour des métadonnées sur les éléments d’un ItemGroup en dehors d’une cible
+
+Les métadonnées existantes des éléments en dehors des cibles peuvent être mises à jour via l' `Update` attribut. Cet attribut n’est **pas** disponible pour les éléments sous cibles.
+
+```xml
+<Project>
+    <PropertyGroup>
+        <MetadataToUpdate>pencil</MetadataToUpdate>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <Item1 Include="stapler">
+            <Size>medium</Size>
+            <Color>black</Color>
+            <Material>plastic</Material>
+        </Item1>
+        <Item1 Include="pencil">
+            <Size>small</Size>
+            <Color>yellow</Color>
+            <Material>wood</Material>
+        </Item1>
+        <Item1 Include="eraser">
+            <Color>red</Color>
+        </Item1>
+        <Item1 Include="notebook">
+            <Size>large</Size>
+            <Color>white</Color>
+            <Material>paper</Material>
+        </Item1>
+
+        <Item2 Include="notebook">
+            <Size>SMALL</Size>
+            <Color>YELLOW</Color>
+        </Item2>
+
+        <!-- Metadata can be expressed either as attributes or as elements -->
+        <Item1 Update="$(MetadataToUpdate);stapler;er*r;@(Item2)" Price="10" Material="">
+            <Color>RED</Color>
+        </Item1>
+    </ItemGroup>
+
+    <Target Name="MyTarget">
+        <Message Text="Item1: %(Item1.Identity)
+    Size: %(Item1.Size)
+    Color: %(Item1.Color)
+    Material: %(Item1.Material)
+    Price: %(Item1.Price)" />
+    </Target>
+</Project>
+
+<!--  
+Item1: stapler
+    Size: medium
+    Color: RED
+    Material:
+    Price: 10
+Item1: pencil
+    Size: small
+    Color: RED
+    Material:
+    Price: 10
+Item1: eraser
+    Size:
+    Color: RED
+    Material:
+    Price: 10
+Item1: notebook
+    Size: large
+    Color: RED
+    Material:
+    Price: 10
+-->
+```
+
+:::moniker range=">=vs-2019"
+Dans MSBuild version 16,6 et versions ultérieures, l' `Update` attribut prend en charge les références de métadonnées qualifiées pour faciliter l’importation de métadonnées à partir de deux éléments ou plus.
+
+```xml
+<Project>
+    <ItemGroup>
+        <Item1 Include="stapler">
+            <Size>medium</Size>
+            <Color>black</Color>
+            <Material>plastic</Material>
+        </Item1>
+        <Item1 Include="pencil">
+            <Size>small</Size>
+            <Color>yellow</Color>
+            <Material>wood</Material>
+        </Item1>
+        <Item1 Include="eraser">
+            <Size>small</Size>
+            <Color>red</Color>
+            <Material>gum</Material>
+        </Item1>
+        <Item1 Include="notebook">
+            <Size>large</Size>
+            <Color>white</Color>
+            <Material>paper</Material>
+        </Item1>
+
+        <Item2 Include="pencil">
+            <Size>MEDIUM</Size>
+            <Color>RED</Color>
+            <Material>PLASTIC</Material>
+            <Price>10</Price>
+        </Item2>
+
+        <Item3 Include="notebook">
+            <Size>SMALL</Size>
+            <Color>BLUE</Color>
+            <Price>20</Price>
+        </Item3>
+
+        <!-- Metadata can be expressed either as attributes or as elements -->
+        <Item1 Update="@(Item2);er*r;@(Item3)" Size="%(Size)" Color="%(Item2.Color)" Price="%(Item3.Price)" Model="2020">
+            <Material Condition="'%(Item2.Material)' != ''">Premium %(Item2.Material)</Material>
+        </Item1>
+    </ItemGroup>
+
+    <Target Name="MyTarget">
+        <Message Text="Item1: %(Item1.Identity)
+    Size: %(Item1.Size)
+    Color: %(Item1.Color)
+    Material: %(Item1.Material)
+    Price: %(Item1.Price)
+    Model: %(Item1.Model)" />
+    </Target>
+</Project>
+
+<!--  
+Item1: stapler
+    Size: medium
+    Color: black
+    Material: plastic
+    Price:
+    Model:
+Item1: pencil
+    Size: small
+    Color: RED
+    Material: Premium PLASTIC
+    Price:
+    Model: 2020
+Item1: eraser
+    Size: small
+    Color:
+    Material: gum
+    Price:
+    Model: 2020
+Item1: notebook
+    Size: large
+    Color:
+    Material: paper
+    Price: 20
+    Model: 2020
+-->
+```
+
+Remarques :
+- Les métadonnées non qualifiées (% (M)) sont liées au type d’élément mis à jour ( `Item1` dans l’exemple ci-dessus). Les métadonnées qualifiées () sont liées à l' `%(Item2.Color)` ensemble des types d’éléments correspondants capturés à partir de l’expression de mise à jour.
+- Si un élément correspond plusieurs fois dans et entre plusieurs éléments référencés :
+  - La dernière occurrence de chaque type d’élément référencé est capturée (par conséquent, un élément capturé par type d’élément).
+  - Cela correspond au comportement du traitement par lot d’éléments de tâche sous cibles.
+- Où un peut placer des références%() :
+  - Métadonnées
+  - Conditions de métadonnées
+- La correspondance des noms de métadonnées ne respecte pas la casse.
+:::moniker-end
+
+## <a name="updating-metadata-on-items-in-an-itemgroup-of-a-target"></a>Mise à jour des métadonnées sur les éléments d’un ItemGroup d’une cible
+
+Les métadonnées peuvent également être modifiées dans les cibles, par une syntaxe moins expressif que `Update` :
+
+```xml
+<Project>
+    <ItemGroup>
+        <Item1 Include="stapler">
+            <Size>medium</Size>
+            <Color>black</Color>
+            <Material>plastic</Material>
+        </Item1>
+        <Item1 Include="pencil">
+            <Size>small</Size>
+            <Color>yellow</Color>
+            <Material>wood</Material>
+        </Item1>
+        <Item1 Include="eraser">
+            <Size>small</Size>
+            <Color>red</Color>
+            <Material>gum</Material>
+        </Item1>
+        <Item1 Include="notebook">
+            <Size>large</Size>
+            <Color>white</Color>
+            <Material>paper</Material>
+        </Item1>
+
+        <Item2 Include="pencil">
+            <Size>MEDIUM</Size>
+            <Color>RED</Color>
+            <Material>PLASTIC</Material>
+            <Price>10</Price>
+        </Item2>
+
+        <Item2 Include="ruler">
+            <Color>GREEN</Color>
+        </Item2>
+
+    </ItemGroup>
+
+    <Target Name="MyTarget">
+        <ItemGroup>
+            <!-- Metadata can be expressed either as attributes or as elements -->
+            <Item1 Size="GIGANTIC" Color="%(Item2.Color)">
+                <Material Condition="'%(Item2.Material)' != ''">Premium %(Item2.Material)</Material>
+            </Item1>
+        </ItemGroup>
+
+        <Message Text="Item1: %(Item1.Identity)
+    Size: %(Item1.Size)
+    Color: %(Item1.Color)
+    Material: %(Item1.Material)
+    Price: %(Item1.Price)
+    Model: %(Item1.Model)" />
+    </Target>
+</Project>
+
+<!--  
+Item1: stapler
+    Size: GIGANTIC
+    Color: GREEN
+    Material: Premium PLASTIC
+    Price:
+    Model:
+Item1: pencil
+    Size: GIGANTIC
+    Color: GREEN
+    Material: Premium PLASTIC
+    Price:
+    Model:
+Item1: eraser
+    Size: GIGANTIC
+    Color: GREEN
+    Material: Premium PLASTIC
+    Price:
+    Model:
+Item1: notebook
+    Size: GIGANTIC
+    Color: GREEN
+    Material: Premium PLASTIC
+    Price:
+    Model:
+-->
+```
+
 ## <a name="see-also"></a>Voir aussi
 
 - [Item, élément (MSBuild)](../msbuild/item-element-msbuild.md)
@@ -345,7 +600,7 @@ Output:
 - [Concepts MSBuild](../msbuild/msbuild-concepts.md)
 - [MSBuild](../msbuild/msbuild.md)
 - [Guide pratique pour sélectionner des fichiers dans une build](../msbuild/how-to-select-the-files-to-build.md)
-- [Comment : Exclure les fichiers de la construction](../msbuild/how-to-exclude-files-from-the-build.md)
-- [Comment: Afficher une liste d’objets séparés avec des virgules](../msbuild/how-to-display-an-item-list-separated-with-commas.md)
+- [Comment : exclure des fichiers de la Build](../msbuild/how-to-exclude-files-from-the-build.md)
+- [Comment : afficher une liste d’éléments séparés par des virgules](../msbuild/how-to-display-an-item-list-separated-with-commas.md)
 - [Définitions d’éléments](../msbuild/item-definitions.md)
-- [Dosage](../msbuild/msbuild-batching.md)
+- [Traitement par lot](../msbuild/msbuild-batching.md)

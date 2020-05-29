@@ -11,12 +11,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f756d432d9ff4d3824c1f1165c63710e4d10c2e9
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 8210ceeb26c3350822d95f85af7689a37894dba9
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75594888"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84184053"
 ---
 # <a name="obtain-build-logs-with-msbuild"></a>Obtenir des journaux de génération avec MSBuild
 
@@ -47,7 +47,7 @@ msbuild MyProject.proj -t:go -v:diag
 
 Le tableau suivant montre comment le niveau de détail du journal (valeurs de colonne) affecte les types de messages (valeurs de ligne) qui sont enregistrés.
 
-|                                       | Quiet | Minimales | Normal | Détaillé | Diagnostic |
+|                                       | Quiet | Minimal | Normal | Détaillé | Diagnostic |
 |---------------------------------------|:-----:|:-------:|:------:|:--------:|:----------:|
 | Erreurs                                |   ✅   |    ✅    |    ✅   |     ✅    |      ✅     |
 | Avertissements                              |   ✅   |    ✅    |    ✅   |     ✅    |      ✅     |
@@ -64,7 +64,7 @@ Vous pouvez utiliser le commutateur **-fileLogger** (**fl**) pour enregistrer le
 msbuild MyProject.proj -t:go -fileLogger
 ```
 
- Dans l’exemple suivant, le fichier journal est nommé *MyProjectOutput.log*, et le niveau de détail de sa sortie est défini sur `diagnostic`. Vous spécifiez ces deux paramètres en`flp`utilisant le **commutateur -filelogparameters(** ).
+ Dans l’exemple suivant, le fichier journal est nommé *MyProjectOutput.log*, et le niveau de détail de sa sortie est défini sur `diagnostic`. Vous spécifiez ces deux paramètres à l’aide du commutateur **-fileLoggerParameters** ( `flp` ).
 
 ```cmd
 msbuild MyProject.proj -t:go -fl -flp:logfile=MyProjectOutput.log;verbosity=diagnostic
@@ -76,7 +76,7 @@ msbuild MyProject.proj -t:go -fl -flp:logfile=MyProjectOutput.log;verbosity=diag
 
  Dans l’exemple suivant, la totalité du journal est enregistrée dans *msbuild1.log*, les erreurs le sont dans *JustErrors.log* et les avertissements dans *JustWarnings.log*. Cet exemple utilise des numéros de fichier pour chacun des trois fichiers. Les numéros de fichier sont spécifiés juste après les commutateurs **-fl** et **-flp** (par exemple, `-fl1` et `-flp1`).
 
- Les **commutateurs -filelogparameters)** `flp`pour les fichiers 2 et 3 spécifient ce qu’il faut nommer chaque fichier et ce qu’il faut inclure dans chaque fichier. Comme aucun nom n’est spécifié pour le fichier 1, le nom par défaut *msbuild1.log* est utilisé.
+ Les commutateurs **-fileLoggerParameters** ( `flp` ) pour les fichiers 2 et 3 spécifient le nom de chaque fichier et les éléments à inclure dans chaque fichier. Comme aucun nom n’est spécifié pour le fichier 1, le nom par défaut *msbuild1.log* est utilisé.
 
 ```cmd
 msbuild MyProject.proj -t:go -fl1 -fl2 -fl3 -flp2:logfile=JustErrors.log;errorsonly -flp3:logfile=JustWarnings.log;warningsonly
@@ -86,7 +86,7 @@ msbuild MyProject.proj -t:go -fl1 -fl2 -fl3 -flp2:logfile=JustErrors.log;errorso
 
 ## <a name="save-a-binary-log"></a>Enregistrer un journal binaire
 
-Vous pouvez enregistrer le journal en format compressé et binaire en utilisant le **commutateur -binaryLogger** (**bl).** Ce journal inclut une description détaillée du processus de génération et peut être lu par certains outils d’analyse de journaux.
+Vous pouvez enregistrer le journal au format compressé, binaire à l’aide du commutateur **-binaryLogger** (**BL**). Ce journal inclut une description détaillée du processus de génération et peut être lu par certains outils d’analyse de journaux.
 
 Dans l’exemple suivant, un fichier journal binaire est créé avec le nom *binarylogfilename*.
 
@@ -100,12 +100,12 @@ Pour plus d’informations, consultez [Référence de ligne de commande](../msbu
 
  Vous pouvez écrire votre propre enregistreur d’événements en créant un type managé qui implémente l’interface <xref:Microsoft.Build.Framework.ILogger>. Vous pouvez utiliser un enregistreur d’événements personnalisé, par exemple, pour envoyer des erreurs de build par courrier électronique, et les enregistrer dans une base de données ou dans un fichier XML. Pour plus d’informations, consultez l’article [Enregistreurs d’événements de génération](../msbuild/build-loggers.md).
 
- Dans la ligne de commande MSBuild, vous spécifiez le bûcheron personnalisé en utilisant l’interrupteur **-logger.** Vous pouvez également utiliser le commutateur **-noconsolelogger** pour désactiver le enregistreur de console par défaut.
+ Dans la ligne de commande MSBuild, vous spécifiez l’enregistreur d’événements personnalisé à l’aide du commutateur **-logger** . Vous pouvez également utiliser le commutateur **-noconsolelogger** pour désactiver l’enregistreur d’événements de console par défaut.
 
 ## <a name="see-also"></a>Voir aussi
 
 - <xref:Microsoft.Build.Framework.LoggerVerbosity>
-- [Construire des bûcherons](../msbuild/build-loggers.md)
-- [Enregistrement dans un environnement multi-processeur](../msbuild/logging-in-a-multi-processor-environment.md)
+- [Enregistreurs de build](../msbuild/build-loggers.md)
+- [Journalisation dans un environnement multiprocesseur](../msbuild/logging-in-a-multi-processor-environment.md)
 - [Création de journaux de transfert](../msbuild/creating-forwarding-loggers.md)
 - [Concepts MSBuild](../msbuild/msbuild-concepts.md)

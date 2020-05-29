@@ -5,27 +5,27 @@ author: heiligerdankgesang
 ms.author: dominicn
 ms.date: 05/23/2019
 ms.assetid: 5880BB10-0A12-47E2-8A82-7A2D59C4D579
-ms.openlocfilehash: 10fcb52a8e1311f3e8128361ee835f6ddcb3670d
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: fa77993892c79cf29d268aa942b8c77ccb7a2139
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "75678883"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84183953"
 ---
 # <a name="create-a-new-project"></a>Création d'un projet
 
 ## <a name="opening-the-project-creation-dialog"></a>Ouverture de la boîte de dialogue de création de projet
 
-Il existe diverses façons de créer un projet dans Visual Studio pour Mac. Lorsque vous ouvrez Visual Studio pour Mac, la fenêtre de départ est affichée. De là, vous pouvez choisir **Nouveau** qui vous emmène à l’écran de création de projet.
+Il existe diverses façons de créer un projet dans Visual Studio pour Mac. La première fois que vous ouvrez Visual Studio pour Mac, la fenêtre démarrer s’affiche. À partir de là, vous pouvez choisir **nouveau** pour accéder à l’écran de création du projet.
 
 > [!TIP]
-> En outre, dès la fenêtre de départ, vous pouvez également ouvrir et rechercher des projets et des solutions récents. Vous pouvez également ouvrir des projets récents en accédant à la barre de menus et en choisissant **File > Recent Solutions** (Fichier > Solutions récentes).
+> En outre, à partir de la fenêtre Démarrer, vous pouvez également ouvrir et Rechercher des projets et solutions récents. Vous pouvez également ouvrir des projets récents en accédant à la barre de menus et en choisissant **File > Recent Solutions** (Fichier > Solutions récentes).
 
-![Démarrer la fenêtre avec créer un nouveau projet](media/first-run-project.png)
+![Démarrer la fenêtre avec créer un projet](media/first-run-project.png)
 
-Si Visual Studio pour Mac est déjà ouvert avec une solution chargée, vous pouvez créer une solution en accédant à la barre de menus et en choisissant **File > New Solution** (Fichier > Nouvelle solution). La création d’une nouvelle solution de cette façon ferme la solution qui est déjà chargée.
+Si Visual Studio pour Mac est déjà ouvert avec une solution chargée, vous pouvez créer une solution en accédant à la barre de menus et en choisissant **File > New Solution** (Fichier > Nouvelle solution). La création d’une solution de cette façon ferme la solution déjà chargée.
 
-## <a name="creating-a-new-project-from-a-template"></a>Création d’un projet à partir d’un modèle
+## <a name="creating-a-new-project"></a>Création d'un projet
 
 La boîte de dialogue **New Project** (Nouveau projet) affiche par défaut les modèles récemment utilisés, en commençant par ceux les *plus récemment utilisés*.
 
