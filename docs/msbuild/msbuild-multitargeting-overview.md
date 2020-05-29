@@ -8,12 +8,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: af7649a75fbf3ded0cf5d09e9063b49f4fcab1b2
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 609c764192673e4d3f9fbd99a1bc572e9d78db7f
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77633328"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84183520"
 ---
 # <a name="msbuild-multitargeting-overview"></a>Vue d’ensemble du multiciblage MSBuild
 
@@ -36,11 +36,11 @@ MSBuild vous permet de compiler une application pour l’exécuter sur une versi
 
 ## <a name="target-framework-and-platform"></a>Version cible de .NET Framework et plateforme cible
 
- Un *Framework cible* correspond à la version du .NET Framework sur laquelle le projet s’exécute, et une *plateforme cible* à la plateforme système sur laquelle le projet s’exécute.  Par exemple, vous pouvez cibler une application .NET Framework 2.0 pour qu’elle s’exécute sur une plateforme 32 bits compatible avec la famille de processeurs 802x86 (x86). La combinaison de framework cible et de plateforme cible porte le nom de *contexte cible*. Pour plus d’informations, consultez [Version cible de .NET Framework et plateforme cible](../msbuild/msbuild-target-framework-and-target-platform.md).
+ Un *Framework cible* correspond à la version du .NET Framework sur laquelle le projet s’exécute, et une *plateforme cible* à la plateforme système sur laquelle le projet s’exécute.  Par exemple, vous souhaiterez peut-être cibler une application .NET Framework 2,0 pour qu’elle s’exécute sur une plateforme 32 bits compatible avec la famille de processeurs 80x86 (x86). La combinaison de framework cible et de plateforme cible porte le nom de *contexte cible*. Pour plus d’informations, consultez [Version cible de .NET Framework et plateforme cible](../msbuild/msbuild-target-framework-and-target-platform.md).
 
 ## <a name="toolset-toolsversion"></a>Ensemble d'outils (ToolsVersion)
 
- Un ensemble d’outils regroupe les outils, tâches et cibles utilisés pour créer l’application. Un Toolset comprend des compilateurs tels que *csc.exe* et *vbc.exe*, le fichier cibles communes *(microsoft.common.targets*), et le fichier de tâches courantes (*microsoft.common.tasks*). L’ensemble d’outils 4.5 peut être utilisé pour cibler des versions 2.0, 3.0, 3.5, 4 et 4.5 du .NET Framework. Cependant, l’ensemble d’outils 2.0 ne peut être utilisé que pour cibler le .NET Framework version 2.0. Pour plus d’informations, consultez [Ensemble d’outils (ToolsVersion)](../msbuild/msbuild-toolset-toolsversion.md).
+ Un ensemble d’outils regroupe les outils, tâches et cibles utilisés pour créer l’application. Un ensemble d’outils comprend des compilateurs tels que *CSC. exe* et *vbc. exe*, le fichier de cibles communes (*Microsoft. Common. targets*) et le fichier de tâches courantes (*Microsoft. Common. Tasks*). L’ensemble d’outils 4.5 peut être utilisé pour cibler des versions 2.0, 3.0, 3.5, 4 et 4.5 du .NET Framework. Cependant, l’ensemble d’outils 2.0 ne peut être utilisé que pour cibler le .NET Framework version 2.0. Pour plus d’informations, consultez [Ensemble d’outils (ToolsVersion)](../msbuild/msbuild-toolset-toolsversion.md).
 
 ## <a name="reference-assemblies"></a>Assemblys de référence
 
@@ -50,6 +50,6 @@ MSBuild vous permet de compiler une application pour l’exécuter sur une versi
 
  Vous pouvez configurer des cibles et des tâches MSBuild pour qu’elles s’exécutent hors processus avec MSBuild. Vous pouvez ainsi cibler des contextes très différents de celui dans lequel vous vous trouvez.  Par exemple, vous pouvez cibler une application .NET Framework 2.0 32 bits alors que l’ordinateur de développement s’exécute sur une plateforme 64 bits avec le .NET Framework 4.5. Pour plus d’informations, voir [Configurer des cibles et des tâches](../msbuild/configuring-targets-and-tasks.md).
 
-## <a name="troubleshooting"></a>Dépannage
+## <a name="troubleshooting"></a>Résolution des problèmes
 
  Des erreurs peuvent se produire si vous tentez de référencer un assembly qui ne fait pas partie du contexte cible. Pour plus d’informations sur ces erreurs et la procédure à suivre pour y remédier, consultez [Résoudre les problèmes liés aux erreurs de ciblage du .NET Framework](../msbuild/troubleshooting-dotnet-framework-targeting-errors.md).

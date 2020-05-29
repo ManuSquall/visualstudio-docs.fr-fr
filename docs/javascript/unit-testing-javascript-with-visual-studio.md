@@ -11,12 +11,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 792c74a3b5da5ed6528fa3919a0c60625d1a38ef
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 4e3e0b1c1579614454580d2f5446b31c718d7f35
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77071945"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84183104"
 ---
 # <a name="unit-testing-javascript-and-typescript-in-visual-studio"></a>Test unitaire JavaScript et TypeScript dans Visual Studio
 
@@ -28,9 +28,6 @@ Les frameworks pris en charge sont :
 * Tape ([github.com/substack/tape](https://github.com/substack/tape))
 * Jest ([jestjs.io](https://jestjs.io/))
 * Export Runner (ce framework est spécifique à Node.js Tools pour Visual Studio)
-
-> [!WARNING]
-> Un problème dans Tape empêche pour l’instant l’exécution des tests Tape. Si [PR #361](https://github.com/substack/tape/pull/361) est fusionnée, le problème doit être résolu.
 
 Si votre framework préféré n’est pas pris en charge, consultez [Ajouter la prise en charge d’un framework de tests unitaires](#addingFramework) pour plus d’informations sur l’ajout d’une prise en charge.
 
@@ -70,7 +67,7 @@ Si vous n’avez pas défini les options de test unitaire dans les propriétés 
 > [!Note]
 > Les options de test unitaire sont prioritaires sur les paramètres des fichiers individuels.
 
-Après l’ouverture de Test Explorer (choisissez **Test** > **Windows** > **Test Explorer**), Visual Studio découvre et affiche des tests. Si les tests ne sont pas visibles au départ, regénérez le projet pour actualiser la liste.
+Après l’ouverture de l’Explorateur de tests (choisissez **tester**l’Explorateur de  >  **Windows**  >  **tests**Windows), Visual Studio Découvre et affiche les tests. Si les tests ne sont pas visibles au départ, regénérez le projet pour actualiser la liste.
 
 ![Explorateur de tests](../javascript/media/UnitTestsDiscoveryMocha.png)
 
@@ -174,4 +171,4 @@ En plus des propriétés ci-dessus, vous devez également installer le package N
 </PropertyGroup>
 ```
 
-Certains cadres de test peuvent nécessiter des paquets npm supplémentaires pour la détection des tests. Par exemple, la plaisanterie nécessite le paquet npm de plaisanterie-éditeur-support. Si nécessaire, vérifiez la documentation pour le cadre spécifique.
+Certaines infrastructures de test peuvent nécessiter des packages NPM supplémentaires pour la détection des tests. Par exemple, Jest requiert le package NPM jest-Editor-support. Si nécessaire, consultez la documentation relative à l’infrastructure spécifique.

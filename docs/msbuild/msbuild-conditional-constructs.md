@@ -22,16 +22,16 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0a06849c2aa0f4ec0203a7209ffc78be438dba9e
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: a7d6693a24d208cab6bd3b58ce16dcba8a32b190
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77633380"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84184287"
 ---
 # <a name="msbuild-conditional-constructs"></a>Constructions conditionnelles MSBuild
 
-MSBuild fournit un mécanisme pour l’un ou l’autre / ou le traitement avec le [Choisir](../msbuild/choose-element-msbuild.md), [Quand](../msbuild/when-element-msbuild.md), et [autrement](../msbuild/otherwise-element-msbuild.md) des éléments.
+MSBuild fournit un mécanisme de traitement de type/ou avec les éléments [Choose](../msbuild/choose-element-msbuild.md), [When](../msbuild/when-element-msbuild.md)et [otherwise](../msbuild/otherwise-element-msbuild.md) .
 
 ## <a name="use-the-choose-element"></a>Utiliser l’élément Choose
 
@@ -39,7 +39,7 @@ MSBuild fournit un mécanisme pour l’un ou l’autre / ou le traitement avec l
 
  Les éléments `Choose` peuvent être utilisés comme des éléments enfants des éléments `Project`, `When` et `Otherwise`. Les éléments `When` et `Otherwise` peuvent avoir des éléments enfants `ItemGroup`, `PropertyGroup` ou `Choose`.
 
-## <a name="example"></a> Exemple
+## <a name="example"></a>Exemple
 
  L’exemple suivant utilise les éléments `Choose` et `When` pour un traitement de type « soit/soit ». Les propriétés et les éléments du projet sont définis en fonction de la valeur de la propriété `Configuration`.
 
@@ -79,9 +79,21 @@ MSBuild fournit un mécanisme pour l’un ou l’autre / ou le traitement avec l
 </Project>
 ```
 
+Dans cet exemple, une condition sur une constante de compilateur `DEFINED_CONSTANT` est utilisée. Celles-ci sont incluses dans la `DefinedConstants` propriété. L’expression régulière est utilisée pour faire correspondre la constante exacte dans une liste séparée par des points-virgules.
+
+```xml
+<Choose>
+   <When Condition="$([System.Text.RegularExpressions.Regex]::IsMatch(
+         $(DefineConstants), '^(.*;)*DEFINED_CONSTANT(;.*)*$'))">
+      <!-- When DEFINED_CONSTANT is defined. -->
+   </When>
+   <!-- other conditions -->
+</Choose>
+```
+
 ## <a name="see-also"></a>Voir aussi
 
-- [Choisissez l’élément (MSBuild)](../msbuild/choose-element-msbuild.md)
-- [Lorsque l’élément (MSBuild)](../msbuild/when-element-msbuild.md)
+- [Choose, élément (MSBuild)](../msbuild/choose-element-msbuild.md)
+- [When, élément (MSBuild)](../msbuild/when-element-msbuild.md)
 - [Otherwise, élément (MSBuild)](../msbuild/otherwise-element-msbuild.md)
 - [Référence MSBuild](../msbuild/msbuild-reference.md)

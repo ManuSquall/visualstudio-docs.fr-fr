@@ -10,12 +10,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c5f1d34a6d21e6d4f413275ee21651feb7ec3dec
-ms.sourcegitcommit: da5ebc29544fdbdf625ab4922c9777faf2bcae4a
+ms.openlocfilehash: d98d4069ca510cfbb288b88e0ab52b9cd1eb275d
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "82586692"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84183650"
 ---
 # <a name="property-functions"></a>Fonctions de propriétés
 
@@ -45,7 +45,7 @@ $(ProjectOutputFolder.Substring(0,3))
 
 ### <a name="static-property-functions"></a>Fonctions de propriété statique
 
-Dans votre script de génération, vous pouvez accéder aux propriétés et aux méthodes statiques de nombreuses classes système. Pour obtenir la valeur d’une propriété statique, utilisez la syntaxe suivante, où \<Class> est le nom de la classe système et \<Property> le nom de la propriété.
+Dans votre script de génération, vous pouvez accéder aux propriétés et aux méthodes statiques de nombreuses classes système. Pour obtenir la valeur d’une propriété statique, utilisez la syntaxe suivante, où \<Class> est le nom de la classe système et \<Property> est le nom de la propriété.
 
 ```
 $([Class]::Property)
@@ -57,7 +57,7 @@ Par exemple, vous pouvez utiliser le code suivant pour définir une propriété 
 <Today>$([System.DateTime]::Now)</Today>
 ```
 
-Pour appeler une méthode statique, utilisez la syntaxe suivante, où \<Class> est le nom de la classe système, \<Method> le nom de la méthode et (\<Parameters>) la liste des paramètres de la méthode :
+Pour appeler une méthode statique, utilisez la syntaxe suivante, où \<Class> est le nom de la classe système, \<Method> est le nom de la méthode et ( \<Parameters> ) est la liste de paramètres de la méthode :
 
 ```
 $([Class]::Method(Parameters))
@@ -71,57 +71,57 @@ Par exemple, pour définir une propriété de build avec un nouveau GUID, vous p
 
 Dans les fonctions de propriété statique, vous pouvez utiliser toutes les méthodes ou propriétés statiques de ces classes système :
 
-- System.Byte
-- System.Char
-- System.Convert
-- System.DateTime
-- System.Decimal
-- System.Double
-- System.Enum
-- System.Guid
-- System.Int16
-- System.Int32
-- System.Int64
-- System.IO.Path
-- System.Math
-- System.Runtime.InteropServices.OSPlatform
-- System.Runtime.InteropServices.RuntimeInformation
-- System.UInt16
-- System.UInt32
-- System.UInt64
-- System.SByte
-- System.Single
-- System.String
-- System.StringComparer
-- System.TimeSpan
-- System.Text.RegularExpressions.Regex
-- System.UriBuilder
-- System.Version
-- Microsoft.Build.Utilities.ToolLocationHelper
+- <xref:System.Byte?displayProperty=nameWithType>
+- <xref:System.Char?displayProperty=nameWithType>
+- <xref:System.Convert?displayProperty=nameWithType>
+- <xref:System.DateTime?displayProperty=nameWithType>
+- <xref:System.Decimal?displayProperty=nameWithType>
+- <xref:System.Double?displayProperty=nameWithType>
+- <xref:System.Enum?displayProperty=nameWithType>
+- <xref:System.Guid?displayProperty=nameWithType>
+- <xref:System.Int16?displayProperty=nameWithType>
+- <xref:System.Int32?displayProperty=nameWithType>
+- <xref:System.Int64?displayProperty=nameWithType>
+- <xref:System.IO.Path?displayProperty=nameWithType>
+- <xref:System.Math?displayProperty=nameWithType>
+- <xref:System.Runtime.InteropServices.OSPlatform?displayProperty=nameWithType>
+- <xref:System.Runtime.InteropServices.RuntimeInformation?displayProperty=nameWithType>
+- <xref:System.UInt16?displayProperty=nameWithType>
+- <xref:System.UInt32?displayProperty=nameWithType>
+- <xref:System.UInt64?displayProperty=nameWithType>
+- <xref:System.SByte?displayProperty=nameWithType>
+- <xref:System.Single?displayProperty=nameWithType>
+- <xref:System.String?displayProperty=nameWithType>
+- <xref:System.StringComparer?displayProperty=nameWithType>
+- <xref:System.TimeSpan?displayProperty=nameWithType>
+- <xref:System.Text.RegularExpressions.Regex?displayProperty=nameWithType>
+- <xref:System.UriBuilder?displayProperty=nameWithType>
+- <xref:System.Version?displayProperty=nameWithType>
+- <xref:Microsoft.Build.Utilities.ToolLocationHelper?displayProperty=nameWithType>
 
 Vous pouvez également utiliser les méthodes et propriétés statiques suivantes :
 
-- System.Environment::CommandLine
-- System.Environment::ExpandEnvironmentVariables
-- System.Environment::GetEnvironmentVariable
-- System.Environment::GetEnvironmentVariables
-- System.Environment::GetFolderPath
-- System.Environment::GetLogicalDrives
-- System.IO.Directory::GetDirectories
-- System.IO.Directory::GetFiles
-- System.IO.Directory::GetLastAccessTime
-- System.IO.Directory::GetLastWriteTime
-- System.IO.Directory::GetParent
-- System.IO.File::Exists
-- System.IO.File::GetCreationTime
-- System.IO.File::GetAttributes
-- System.IO.File::GetLastAccessTime
-- System.IO.File::GetLastWriteTime
-- System.IO.File::ReadAllText
+- [System.Environment::CommandLine](xref:System.Environment.CommandLine*)
+- [System.Environment::ExpandEnvironmentVariables](xref:System.Environment.ExpandEnvironmentVariables*)
+- [System. Environment :: GetEnvironmentVariable](xref:System.Environment.GetEnvironmentVariable*)
+- [System.Environment::GetEnvironmentVariables](xref:System.Environment.GetEnvironmentVariables*)
+- [System.Environment::GetFolderPath](xref:System.Environment.GetFolderPath*)
+- [System.Environment::GetLogicalDrives](xref:System.Environment.GetLogicalDrives*)
+- [System.IO.Directory::GetDirectories](xref:System.IO.Directory.GetDirectories*)
+- [System.IO.Directory::GetFiles](xref:System.IO.Directory.GetFiles*)
+- [System.IO.Directory::GetLastAccessTime](xref:System.IO.Directory.GetLastAccessTime*)
+- [System.IO.Directory::GetLastWriteTime](xref:System.IO.Directory.GetLastWriteTime*)
+- [System.IO.Directory::GetParent](xref:System.IO.Directory.GetParent*)
+- [System.IO.File::Exists](xref:System.IO.File.Exists*)
+- [System. IO. file :: GetCreationTime](xref:System.IO.File.GetCreationTime*)
+- [System. IO. file :: GetAttributes](xref:System.IO.File.GetAttributes*)
+- [System. IO. file :: GetLastAccessTime](xref:System.IO.File.GetLastAccessTime*)
+- [System. IO. file :: GetLastWriteTime](xref:System.IO.File.GetLastWriteTime*)
+- [System.IO.File::ReadAllText](xref:System.IO.File.ReadAllText*)
 
 ### <a name="calling-instance-methods-on-static-properties"></a>Appeler des méthodes d’instance sur des propriétés statiques
 
-Si vous accédez à une propriété statique qui retourne une instance d'un objet, vous pouvez appeler les méthodes d'instance de cet objet. Pour appeler une méthode d’instance, utilisez la syntaxe suivante, où \<Class> est le nom de la classe système, \<Property> le nom de la propriété, \<Method> le nom de la méthode et (\<Parameters>) la liste des paramètres de la méthode :
+Si vous accédez à une propriété statique qui retourne une instance d'un objet, vous pouvez appeler les méthodes d'instance de cet objet. Pour appeler une méthode d’instance, utilisez la syntaxe suivante, où \<Class> est le nom de la classe système, \<Property> est le nom de la propriété, \<Method> est le nom de la méthode et ( \<Parameters> ) est la liste des paramètres de la méthode :
 
 ```
 $([Class]::Property.Method(Parameters))
@@ -137,7 +137,7 @@ Par exemple, vous pouvez utiliser le code suivant pour définir une propriété 
 
 ### <a name="msbuild-property-functions"></a>Fonctions de propriété MSBuild
 
-Vous pouvez accéder à plusieurs méthodes statiques dans votre build, qui prennent en charge des fonctions liées à l'arithmétique, à la logique au niveau du bit et aux caractères d'échappement. Pour accéder à ces méthodes, utilisez la syntaxe suivante, où \<Method> est le nom de la méthode et \<(Parameters>) la liste des paramètres de la méthode.
+Vous pouvez accéder à plusieurs méthodes statiques dans votre build, qui prennent en charge des fonctions liées à l'arithmétique, à la logique au niveau du bit et aux caractères d'échappement. Vous accédez à ces méthodes en utilisant la syntaxe suivante, où \<Method> est le nom de la méthode et ( \<Parameters> ) est la liste des paramètres de la méthode.
 
 ```
 $([MSBuild]::Method(Parameters))
@@ -174,7 +174,7 @@ Voici une liste de fonctions de propriété MSBuild :
 |string NormalizePath(params string[] path)|Obtient le chemin complet au format canonique du chemin fourni et vérifie qu’il contient les caractères de séparateur de répertoire appropriés au système d’exploitation actuel.|
 |string NormalizeDirectory(params string[] path)|Obtient le chemin complet au format canonique du répertoire fourni et vérifie qu’il contient les caractères de séparateur de répertoire appropriés au système d’exploitation actuel et qu’il se termine par une barre oblique.|
 |string EnsureTrailingSlash(string path)|Si le chemin donné ne se termine pas par une barre oblique, ajoutez-en une. Si le chemin est une chaîne vide, ne le modifiez pas.|
-|string GetPathOfFileAbove(string file, string startingDirectory)|Recherche et retourne le chemin d’accès complet à un fichier dans la structure de répertoires au-dessus de l’emplacement du fichier `startingDirectory`de build actuel, ou basé sur, s’il est spécifié.|
+|string GetPathOfFileAbove(string file, string startingDirectory)|Recherche et retourne le chemin d’accès complet à un fichier dans la structure de répertoires au-dessus de l’emplacement du fichier de build actuel, ou basé sur `startingDirectory` , s’il est spécifié.|
 |GetDirectoryNameOfFileAbove(string startingDirectory, string fileName)|Recherchez et retournez le répertoire d’un fichier dans le répertoire spécifié ou un emplacement dans la structure de répertoires au-dessus de ce répertoire.|
 |string MakeRelative(string basePath, string path)|Rend `path` relatif à `basePath`. `basePath` doit être un répertoire absolu. Si rendre `path` relatif n’est pas possible, il est retourné sous forme de chaîne textuelle. Semblable à `Uri.MakeRelativeUri`.|
 |string ValueOrDefault(string conditionValue, string defaultValue)|Retourne la chaîne dans le paramètre 'defaultValue' seulement si le paramètre 'conditionValue' est vide ; sinon, retourne la valeur conditionValue.|
@@ -342,7 +342,7 @@ Output:
 
 ## <a name="msbuild-condition-functions"></a>Fonctions de condition MSBuild
 
-Les fonctions `Exists` et `HasTrailingSlash` ne sont pas des fonctions de propriété. Elles peuvent être utilisées avec l' `Condition` attribut. Consultez les [Conditions MSBuild](msbuild-conditions.md).
+Les fonctions `Exists` et ne `HasTrailingSlash` sont pas des fonctions de propriété. Elles peuvent être utilisées avec l' `Condition` attribut. Consultez les [Conditions MSBuild](msbuild-conditions.md).
 
 ## <a name="see-also"></a>Voir aussi
 
