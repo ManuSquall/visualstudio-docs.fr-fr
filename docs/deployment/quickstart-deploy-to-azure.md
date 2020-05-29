@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - azure
-ms.openlocfilehash: 4bbff0c2d149afddc355afe5f6c93e9d0aea54c0
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: 842f7912d88031d720f438800ef6b54133ce05c9
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "72806910"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84184494"
 ---
 # <a name="publish-a-web-app-to-azure-app-service-using-visual-studio"></a>Publier une application web sur Azure App Service avec Visual Studio
 
@@ -29,25 +29,35 @@ Cet article décrit comment utiliser l’outil **Publier** pour un déploiement 
 
 [!INCLUDE [quickstart-prereqs-azure](includes/quickstart-prereqs-azure.md)]
 
-## <a name="publish-to-azure-app-service"></a>Publier sur Azure App Service
+## <a name="publish-to-azure-app-service-on-windows"></a>Publier sur Azure App Service sur Windows
 
 1. Dans l’Explorateur de solutions, cliquez avec le bouton droit sur le projet et choisissez **Publier** (ou utilisez l’élément de menu **Générer** > **Publier**).
 
-    ![La commande Publier sur le menu contextuelle du projet dans Solution Explorer](../deployment/media/quickstart-publish.png "Choisir Publier")
+    ![Commande publier dans le menu contextuel du projet dans Explorateur de solutions](../deployment/media/quickstart-publish.png "Choisir Publier")
 
-1. Si vous avez déjà configuré des profils de publication, le volet **Publier** s’affiche, dans lequel vous sélectionnez **Créer un profil**.
+1. Dans la boîte de dialogue **publier** , sélectionnez **Azure**.
 
-1. Dans la boîte de dialogue **Choisir une cible de publication**, choisissez **App Service**.
+    ![Choisir la cible de publication](../deployment/media/quickstart-publish-azure.png)
 
-    ![Choisissez Azure App Service](../deployment/media/quickstart-publish-azure.png "Choisissez Azure App Service")
+1. Sélectionnez * * Azure App Service (Windows) * * et **suivant**.
 
-1. Sélectionnez **Publier**. La boîte de dialogue **Créer App Service** s’affiche. Connectez-vous avec votre compte Azure, si nécessaire, et laissez les paramètres App Service par défaut remplir les champs.
+    ![Choisir Azure App Service sur Linux](../deployment/media/quickstart-publish-windows-select-azure-service.png)
 
-    ![Créer un App Service](../deployment/media/quickstart-publish-settings-app-service.png "Créer azure App Service")
+1. Connectez-vous avec votre compte Azure, si nécessaire. Sélectionnez **créer un nouveau Azure App service...**
 
-1. Sélectionnez **Créer**. Visual Studio déploie l’application sur votre service Azure App Service, et l’application web se charge dans votre navigateur. Le volet **Publier** des propriétés de projet montre l’URL du site et d’autres détails.
+    ![Lien pour créer une nouvelle instance de Azure App Service](../deployment/media/quickstart-publish-windows-create-new-link.png)
 
-    ![Volet de propriétés Publier affichant un récapitulatif du profil](../deployment/media/quickstart-publish-app-service-summary.png)
+1. Dans la boîte de dialogue **créer un Azure App service (Windows)** , le nom de l' **application**, le **groupe de ressources**et les champs d’entrée du plan de **app service** sont remplis. Vous pouvez conserver ces noms ou les changer. Quand vous êtes prêt, sélectionnez **créer**.
+
+    ![Choisir Azure App Service](../deployment/media/quickstart-publish-windows-create-new-dialog.png)
+
+1. Dans la boîte de dialogue **publier** , l’instance nouvellement créée a été automatiquement sélectionnée. Lorsque vous êtes prêt, cliquez sur **Terminer**.
+
+    ![Choisir Azure App Service](../deployment/media/quickstart-publish-windows-select-instance.png)
+
+1. Sélectionnez **Publier**. Visual Studio déploie l’application sur votre service Azure App Service, et l’application web se charge dans votre navigateur. Le volet **Publier** des propriétés de projet montre l’URL du site et d’autres détails.
+
+    ![Volet de propriétés Publier affichant un récapitulatif du profil](../deployment/media/quickstart-publish-windows-summary-page.png)
 
 ## <a name="clean-up-resources"></a>Nettoyer les ressources
 

@@ -12,18 +12,19 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 9f31a3f7ae5e0e0ca4150d88870b9e48493bffcc
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+monikerRange: '>=vs-2019'
+ms.openlocfilehash: f185451a7f12c3c0b24d74d4a24b40d986ec536f
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "76114962"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84184391"
 ---
 # <a name="update-visual-studio-while-on-a-servicing-baseline"></a>Mettre à jour Visual Studio tout en étant sur une ligne de base de maintenance
 
 Nous mettons souvent à jour Visual Studio au cours du cycle de vie du produit. Il existe deux types de mise à jour : 
 
-* **Mises à jour**&mdash;de version mineure par exemple, 16.0 à 16.1&mdash;qui incluent de nouvelles fonctionnalités et composants.  
+* **Mises à jour** &mdash; de version mineures par exemple, 16,0 à 16,1 &mdash; qui incluent de nouveaux composants et fonctionnalités.  
 * **Mises à jour de maintenance**, par exemple de la 16.0.4 à la 16.0.5, qui incluent uniquement les correctifs ciblés pour les problèmes critiques.
 
 Les administrateurs d’entreprise peuvent choisir de conserver leurs clients sur une base de référence de maintenance. Une base de référence de maintenance inclut des mises à jour pour une année au-delà de la base de référence de maintenance suivante.
@@ -88,4 +89,4 @@ Dans le cas d’une installation basée sur Internet, exécutez la nouvelle vers
 * [Outils de détection et de gestion des instances de Visual Studio](tools-for-managing-visual-studio-instances.md)
 * [Guide pratique pour définir des paramètres dans un fichier réponse](automated-installation-with-response-file.md)
 * [Contrôler les mises à jour applicables aux déploiements de Visual Studio à partir du réseau](controlling-updates-to-visual-studio-deployments.md)
-* [Cycle de vie et entretien du produit Visual Studio](/visualstudio/releases/2019/servicing/)
+* [Maintenance et cycle de vie des produits Visual Studio](/visualstudio/releases/2019/servicing/)

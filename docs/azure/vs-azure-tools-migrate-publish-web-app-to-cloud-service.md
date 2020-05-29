@@ -9,25 +9,26 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/10/2017
 ms.author: ghogen
-ms.openlocfilehash: a5f918cac9d2b9e97c047e8823d7702768134336
-ms.sourcegitcommit: 59a8732dc563242590f7c6ccf4ced6c6d195533c
+ms.openlocfilehash: c3d622d52e6ae1c1e25563fdbb05f68a9ecc91d0
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "81489673"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84179997"
 ---
-# <a name="how-to-migrate-and-publish-a-web-application-to-an-azure-cloud-service-from-visual-studio"></a>Migration et publication d’une application web sur un service cloud Azure à partir de Visual Studio
+# <a name="how-to-migrate-and-publish-a-web-application-to-an-azure-cloud-service-from-visual-studio"></a>Procédure : migrer et publier une application Web vers un service Cloud Azure à partir de Visual Studio
 
 Pour tirer parti des services d’hébergement et de l’extensibilité d’Azure, vous pouvez migrer et déployer votre application web sur un service cloud Azure. Seules de légères modifications sont nécessaires. Cet article couvre le déploiement dans des services cloud uniquement ; pour App Service, voir [Déployer une application web dans Azure App Service](/azure/app-service/app-service-deploy-local-git).
 
 > [!Important]
-> Cette migration est uniquement prise en charge pour les projets spécifiques ASP.NET, Silverlight, WCF et WCF Workflow. Elle n'est pas prise en charge pour les projets ASP.NET Core. Voir [Modèles de projet pris en charge](#supported-project-templates).
+> Cette migration est prise en charge uniquement pour les projets de flux de travail ASP.NET, WCF et WCF spécifiques. Elle n'est pas prise en charge pour les projets ASP.NET Core. Voir [Modèles de projet pris en charge](#supported-project-templates).
 
 ## <a name="migrate-a-project-to-cloud-services"></a>Migration d'un projet vers des services cloud
 
-1. Cliquez avec le bouton droit sur le projet d'application web et sélectionnez **Convertir > Convertir en projet de service cloud Microsoft Azure**. (Notez que cette commande n’apparaît pas si vous avez déjà un projet de rôle web dans la solution.)
-1. Visual Studio crée un projet de service cloud dans la solution qui contient le rôle web requis. Le nom de ce projet est le même que celui de votre projet d'application, avec le suffixe `.Azure`.
-1. Visual Studio définit également la propriété **Copie locale** sur vrai pour tous les assemblys qui sont nécessaires pour MVC 2, MVC 3, MVC 4 et Silverlight Business Applications. Cette propriété ajoute ces assemblys au package de services qui est utilisé pour le déploiement.
+1. Cliquez avec le bouton droit sur le nœud de la solution, puis sélectionnez **ajouter > nouveau projet...** et ajouter un nouveau projet de **service Cloud Azure (Classic)** à la solution existante.
+1. Dans la boîte de dialogue **nouveau Microsoft Azure Service Cloud (classique)** , cliquez sur OK sans ajouter de rôles au projet.
+1. Cliquez avec le bouton droit sur le nœud rôles sous le projet services Cloud récemment ajouté, puis sélectionnez **Ajouter un projet de rôle Web dans la solution...**.
+1. Dans la boîte de dialogue **associer au projet de rôle** , sélectionnez le projet que vous souhaitez associer en tant que rôle Web.
 
    > [!Important]
    > Si vous avez d’autres assemblys ou fichiers qui sont requis pour cette application web, vous devez définir manuellement les propriétés de ces fichiers. Pour plus d'informations sur la définition de ces propriétés, consultez [Inclure des fichiers dans le package de services](vs-azure-tools-publishing-a-cloud-service.md#include-files-in-the-service-package).
@@ -79,7 +80,6 @@ Le tableau suivant fournit des détails sur le démarrage de l'application dans 
 | --- | --- |
 | Application Web ASP.NET<br/>(y compris MVC 2, MVC 3, MVC 4) | Sélectionnez l'URL dans l'onglet **Déploiement** du **journal d'activité Azure**. |
 | Application Web vide ASP.NET | Si vous utilisez une page `.aspx` par défaut dans votre application, sélectionnez l'URL dans l'onglet **Déploiement** du **journal d'activité Azure**. Pour accéder à une autre page, entrez une URL au format suivant dans un navigateur : `<deployment_url>/<page_name>.aspx` |
-| Application Silverlight<br/>Silverlight Business Application<br/>Silverlight Navigation Application | Accédez à la page spécifique de votre application en utilisant le format d'URL suivant : `<deployment_url>/<page_name>.aspx` |
 | WCF Service Application<br/>WCF Workflow Service Application | Définissez le fichier `.svc` comme page de démarrage de votre projet de service WCF. Puis accédez à `<deployment_url>/<service_file>.svc` |
 | ASP.NET Dynamic Entities<br/>ASP.NET Dynamic Data Linq to SQL | Mettez à jour la chaîne de connexion comme décrit dans la section suivante. Puis accédez à `<deployment_url>/<page_name>.aspx`. Pour Linq to SQL, vous devez utiliser une base de données Azure SQL. |
 
@@ -117,9 +117,6 @@ Les applications qui peuvent être migrées et publiées sur des services cloud 
 | Web | Application Web vide ASP.NET MVC 2 |
 | Web | Application Web ASP.NET Dynamic Data Entities |
 | Web | Application Web ASP.NET Dynamic Data Linq to SQL |
-| Silverlight | Application Silverlight |
-| Silverlight | Silverlight Business Application |
-| Silverlight | Silverlight Navigation Application |
 | WCF | WCF Service Application |
 | WCF | WCF Workflow Service Application |
 | Workflow | WCF Workflow Service Application |
