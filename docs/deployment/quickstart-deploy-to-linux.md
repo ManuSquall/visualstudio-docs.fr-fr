@@ -9,18 +9,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - azure
-ms.openlocfilehash: 1e05862aa57c24bfa8f17d551762054278dd6e52
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: 1a6500b8b38cc6beef21e7da301ec8e1ef7d4bd6
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "72806875"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84173240"
 ---
 # <a name="publish-an-aspnet-core-app-to-app-service-on-linux-using-visual-studio"></a>Publier une application web ASP.NET Core sur App Service sur Linux à l’aide de Visual Studio
 
 À compter de Visual Studio 2017 version 15.7, vous pouvez publier des applications ASP.NET Core sur Azure App Service Linux (avec des conteneurs) en utilisant une des méthodes suivantes.
 
-* Pour le déploiement continu (ou automatisé) d’applications, utilisez Azure DevOps avec [Azure Pipelines](/azure/devops/pipelines/get-started-yaml?view=azdevops).
+* Pour le déploiement continu (ou automatisé) d’applications, utilisez Azure DevOps avec [Azure Pipelines](https://docs.microsoft.com/azure/devops/pipelines/get-started-yaml?view=azdevops).
 
 * Pour un déploiement ponctuel (ou manuel) d’applications, utilisez l’outil **Publier** de Visual Studio pour publier des applications ASP.NET Core sur App Service pour Linux (avec des conteneurs).
 
@@ -28,25 +28,35 @@ Cet article décrit comment utiliser l’outil **Publier** pour un déploiement 
 
 [!INCLUDE [quickstart-prereqs-azure-linux](includes/quickstart-prereqs-azure-linux.md)]
 
-## <a name="publish-to-app-service-on-linux"></a>Publier sur App Service sur Linux
+## <a name="publish-to-azure-app-service-on-linux"></a>Publier sur Azure App Service sur Linux
 
 1. Dans l’Explorateur de solutions, cliquez avec le bouton droit sur le projet et choisissez **Publier** (ou utilisez l’élément de menu **Générer** > **Publier**).
 
-    ![La commande Publier sur le menu contextuelle du projet dans Solution Explorer](../deployment/media/quickstart-publish.png "Choisir Publier")
+    ![Commande publier dans le menu contextuel du projet dans Explorateur de solutions](../deployment/media/quickstart-publish.png "Choisir Publier")
 
-1. Si vous avez déjà configuré des profils de publication, le volet **Publier** s’affiche, dans lequel vous sélectionnez **Créer un profil**.
+1. Dans la boîte de dialogue **publier** , sélectionnez **Azure**.
 
-1. Dans la boîte de dialogue **Choisir une cible de publication**, choisissez **App Service Linux**.
+    ![Choisir la cible de publication](../deployment/media/quickstart-publish-azure.png)
 
-    ![Choisissez Azure App Service](../deployment/media/quickstart-publish-linux.png "Choisissez Azure App Service")
+1. Sélectionnez **Azure App service (Linux)** et **suivant**.
 
-1. Sélectionnez **Publier**. La boîte de dialogue **Créer App Service** s’affiche. Connectez-vous avec votre compte Azure, si nécessaire, et laissez les paramètres App Service par défaut remplir les champs.
+    ![Choisir Azure App Service sur Linux](../deployment/media/quickstart-publish-linux-select-azure-service.png)
 
-    ![Créer un App Service](../deployment/media/quickstart-publish-settings-app-service-linux.png "Créer azure App Service")
+1. Connectez-vous avec votre compte Azure, si nécessaire. Sélectionnez **créer un nouveau Azure App service...**
 
-1. Sélectionnez **Créer**. Visual Studio déploie l’application sur votre service Azure App Service, et l’application web se charge dans votre navigateur. Le volet **Publier** des propriétés de projet montre l’URL du site et d’autres détails.
+    ![Lien pour créer une nouvelle instance de Azure App Service](../deployment/media/quickstart-publish-linux-create-new-link.png)
 
-    ![Volet de propriétés Publier affichant un récapitulatif du profil](../deployment/media/quickstart-publish-app-service-summary.png)
+1. Dans la boîte de dialogue **créer un Azure App service (Linux)** , les champs nom de l' **application**, **groupe de ressources**et App service d’entrée du **plan** sont renseignés. Vous pouvez conserver ces noms ou les changer. Quand vous êtes prêt, sélectionnez **créer**.
+
+    ![Choisir Azure App Service](../deployment/media/quickstart-publish-linux-create-new-dialog.png)
+
+1. Dans la boîte de dialogue **publier** , l’instance nouvellement créée a été automatiquement sélectionnée. Lorsque vous êtes prêt, cliquez sur **Terminer**.
+
+    ![Choisir Azure App Service](../deployment/media/quickstart-publish-linux-select-instance.png)
+
+1. Sélectionnez **Publier**. Visual Studio déploie l’application sur votre service Azure App Service, et l’application web se charge dans votre navigateur. Le volet **Publier** des propriétés de projet montre l’URL du site et d’autres détails.
+
+    ![Volet de propriétés Publier affichant un récapitulatif du profil](../deployment/media/quickstart-publish-linux-summary-page.png)
 
 ## <a name="clean-up-resources"></a>Nettoyer les ressources
 

@@ -1,16 +1,16 @@
 ---
 title: Configuration d’un dépôt Git
 description: Utilisation de Git et de Subversion dans Visual Studio pour Mac.
-author: jmatthiesen
-ms.author: jomatthi
-ms.date: 02/15/2019
+author: therealjohn
+ms.author: johmil
+ms.date: 05/13/2020
 ms.assetid: E992FA1D-B2AD-4A28-ADC6-47E4FC471060
-ms.openlocfilehash: 9b21ed322d2b22be619a71e474a3b5078607bbe5
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: 7e9dc8728a3115368f1772287362b2a9f21a4309
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "70107887"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84173330"
 ---
 # <a name="set-up-a-git-repository"></a>Configurer un dépôt Git
 
@@ -46,13 +46,13 @@ Si vous avez un projet qui _n’est pas_ déjà dans la gestion de versions, eff
 
 1. Sélectionnez le nom de la solution à partir du Panneau Solutions dans Visual Studio pour Mac.
 
-2. Dans la barre de menus, sélectionnez **Gestion de versions > Publier dans la gestion de versions** pour afficher la boîte de dialogue **Sélectionner un dépôt** :
+2. Dans la barre de menus, sélectionnez **gestion de version > publier dans la gestion de version** pour afficher la boîte de dialogue **cloner le référentiel** :
 
-    ![Démarrer l’extraction dans Visual Studio pour Mac](media/version-control-git4-sml.png)
+    ![Démarrer l’extraction dans Visual Studio pour Mac](media/version-control-git4.png)
 
     Si cet élément de menu est grisé dans le menu, vérifiez que vous avez sélectionné le nom de la solution.
 
-3. Choisissez l’onglet **Dépôts inscrits** et cliquez sur le bouton **Ajouter** :
+3. Choisissez l’onglet **Sélectionner dans inscrit** , puis appuyez sur le bouton **Ajouter** :
 
     ![](media/version-control-git5.png)
 
@@ -62,7 +62,7 @@ Si vous avez un projet qui _n’est pas_ déjà dans la gestion de versions, eff
 
     Il est également possible d’utiliser le protocole SSH pour la connexion à Git.
 
-5. Pour tenter de publier l’application sur Git, sélectionnez le référentiel et assurez-vous que les champs de nom du **module** et de texte **de message** sont complétés :
+5. Pour tenter de publier l’application sur git, sélectionnez le référentiel et assurez-vous que les champs **nom du module** et texte du **message** sont renseignés :
 
     ![Essayer de publier le projet sur Git](media/version-control-git7.png)
 
@@ -81,7 +81,7 @@ Si vous avez un projet qui _n’est pas_ déjà dans la gestion de versions, eff
 
     ![Menu Gestion de version](media/version-control-git10.png)
 
-10. Une fois que vous commencez à procéder à d’autres modifications, sélectionnez **Envoyer les modifications** pour envoyer (push) les modifications au référentiel **distant**. Ceci permet à tous les utilisateurs appropriés de les voir sur github.com :
+10. Une fois que vous avez commencé à apporter des modifications supplémentaires, vous devez d’abord utiliser la **gestion de Version > menu examiner et valider** pour ouvrir l’affichage des États. Une fois que vous avez sélectionné et validé les modifications, sélectionnez **Push** pour envoyer les modifications au référentiel distant. Ceci permet à tous les utilisateurs appropriés de les voir sur github.com :
 
     ![Envoyer (push) des modifications sur un dépôt distant](media/version-control-git11.png)
 
@@ -96,7 +96,7 @@ Suivez les étapes ci-dessous pour envoyer (push) votre nouveau dépôt local ve
 > [!NOTE]
 > Si vous n’avez pas déjà créé un dépôt GitHub, consultez la section [Création d’un dépôt distant sur GitHub](#creating-a-remote-repo-on-github).
 
-1. Créez votre première validation en accédant à **Gestion de version > Examiner la solution et valider** dans la barre de menus.
+1. Créez votre première validation en accédant à **contrôle de Version > examiner et valider** dans la barre de menus.
 
 2. Sous l’onglet État, choisissez **Valider** dans le coin supérieur gauche.
 
@@ -127,28 +127,28 @@ Visual Studio pour Mac enverra désormais les modifications à votre dépôt dis
 
 ![Confirmation de l’exécution de l’opération Push](media/version-control-git11.png)
 
-## <a name="check-out-an-existing-repository"></a>Extraire un dépôt existant
+## <a name="clone-an-existing-repository"></a>Cloner un référentiel existant
 
-Vous serez probablement obligé d’utiliser un dépôt GitHub qui existe uniquement à un emplacement distant, et non sur votre machine locale. Visual Studio pour Mac vous permet d’extraire ce dépôt rapidement. Suivez les étapes ci-dessous pour le cloner sur votre ordinateur :
+Vous serez probablement obligé d’utiliser un dépôt GitHub qui existe uniquement à un emplacement distant, et non sur votre machine locale. Visual Studio pour Mac vous permet de cloner ce référentiel rapidement. Suivez les étapes ci-dessous pour le cloner sur votre ordinateur :
 
-1. Dans la barre de menu, sélectionnez **Contrôle de version > Checkout**:
+1. Dans la barre de menus, sélectionnez **gestion de Version > référentiel clone**:
 
-2. L’onglet **Se connecter au référentiel** s’affiche :
+2. L’onglet **se connecter avec URL** s’affiche :
 
-    ![Onglet Se connecter au référentiel avec les détails entrés](media/version-control-git13.png)
+    ![Onglet se connecter avec l’URL avec les détails entrés](media/version-control-git13.png)
 
 3. Dans la page GitHub du dépôt distant, appuyez sur le bouton **Cloner ou télécharger** et copiez l’URL fournie :
 
     ![url github affichée](media/version-control-git14.png)
 
-4. Remplacez tout le texte dans le champ **d’entrée DE l’URL** dans l’onglet **Connect to Repository.** Cela remplira la plupart des autres champs dans cet onglet pour vous, comme illustré dans l’image à l’étape #2.
+4. Remplacez tout le texte dans le champ d’entrée d' **URL** sous l’onglet **se connecter avec une URL** . La plupart des autres champs de cet onglet sont renseignés pour vous, comme illustré dans l’image de l’étape #2.
 
-5. Entrez le répertoire dans lequel vous souhaitez cloner le dépôt et appuyez sur **Extraire**.
+5. Entrez le répertoire dans lequel vous souhaitez cloner le référentiel et appuyez sur **clone**.
 
 > [!NOTE]
 > Vous risquez de rencontrer des problèmes si le dépôt fait plus de 4 Go.
 
-## <a name="troubleshooting"></a>Dépannage
+## <a name="troubleshooting"></a>Résolution des problèmes
 
 Si vous avez des problèmes d’initialisation de votre projet avec un dépôt distant vide, vous pouvez essayer les étapes suivantes :
 

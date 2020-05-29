@@ -11,12 +11,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e7ddf87f5fa9f937c0272e37f3a6b4aba29f2d6c
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 6b0cb05948f8010964eefe101cbc77d48a149566
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77652792"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84180400"
 ---
 # <a name="customize-your-build"></a>Personnaliser votre build
 
@@ -28,9 +28,9 @@ Un fichier *Directory.Build.rsp* dans ou au-dessus de votre répertoire source e
 
 ## <a name="directorybuildprops-and-directorybuildtargets"></a>Directory.Build.props et Directory.Build.targets
 
-Avant MSBuild version 15, si vous souhaitiez fournir une nouvelle propriété personnalisée aux projets de votre solution, vous deviez ajouter manuellement une référence à cette propriété pour chaque fichier projet de la solution. Ou, vous avez dû définir la propriété dans un fichier *.props,* puis explicitement importer le fichier *.props* dans chaque projet dans la solution, entre autres choses.
+Avant MSBuild version 15, si vous souhaitiez fournir une nouvelle propriété personnalisée aux projets de votre solution, vous deviez ajouter manuellement une référence à cette propriété pour chaque fichier projet de la solution. Ou bien, vous deviez définir la propriété dans un fichier *. props* , puis importer explicitement le fichier *. props* dans chaque projet de la solution, entre autres choses.
 
-Maintenant, vous pouvez ajouter une nouvelle propriété à chaque projet en une seule étape en la définissant dans un seul fichier appelé *Directory.Build.props* dans le dossier racine contenant votre source. Lorsque MSBuild fonctionne, *Microsoft.Common.props* recherche votre structure d’annuaire pour le fichier *Directory.Build.props* (et *Microsoft.Common.targets* cherche *Directory.Build.targets*). S’il en trouve un, il importe la propriété. *Directory.Build.props* est un fichier défini par l’utilisateur qui fournit des personnalisations aux projets sous un répertoire.
+Maintenant, vous pouvez ajouter une nouvelle propriété à chaque projet en une seule étape en la définissant dans un seul fichier appelé *Directory.Build.props* dans le dossier racine contenant votre source. Lorsque MSBuild s’exécute, *Microsoft. Common. props* recherche le fichier *Directory. Build. props* dans votre structure de répertoires (et *Microsoft. Common. targets* recherche *Directory. Build. targets*). S’il en trouve un, il importe la propriété. *Directory. Build. props* est un fichier défini par l’utilisateur qui fournit des personnalisations aux projets situés dans un répertoire.
 
 > [!NOTE]
 > Les systèmes de fichiers Linux respectent la casse. Veillez à ce que la casse du nom de fichier Directory.Build.props corresponde exactement ; sinon, il ne sera pas détecté pendant le processus de build.
@@ -73,7 +73,14 @@ L’emplacement du fichier solution est sans importance pour *Directory.Build.pr
 
 *Directory.Build.props* est importé très tôt dans *Microsoft.Common.props* et les propriétés définies ultérieurement ne sont pas disponibles pour ce dernier. Par conséquent, évitez de faire référence aux propriétés qui ne sont pas encore définies (et qui seront évaluées comme vides).
 
-*Directory.Build.targets* is imported from *Microsoft.Common.targets* after importing *.targets* files from NuGet packages. Il peut donc remplacer les propriétés et les cibles définies dans la quasi-totalité de la logique de build. Dans certains cas, toutefois, il peut être nécessaire de personnaliser le fichier projet après l’importation finale.
+Les propriétés définies dans *Directory. Build. props* peuvent être remplacées ailleurs dans le fichier projet ou dans les fichiers importés. vous devez donc considérer les paramètres dans *Directory. Build. props* comme en spécifiant les valeurs par défaut pour vos projets.
+
+*Directory. Build. targets* est importé à partir de *Microsoft. Common. targets* après l’importation des fichiers *. targets* à partir des packages NuGet. Par conséquent, il peut substituer les propriétés et les cibles définies dans la plupart de la logique de génération, ou définir des propriétés pour tous vos projets, quel que soit l’ensemble des projets.
+
+Lorsque vous devez définir une propriété ou définir une cible pour un projet individuel qui remplace les paramètres antérieurs, placez cette logique dans le fichier projet après l’importation finale. Pour effectuer cette opération dans un projet de type SDK, vous devez d’abord remplacer l’attribut de style SDK par les importations équivalentes. Consultez Guide pratique [pour utiliser des kits de développement logiciel (SDK) de projet MSBuild](how-to-use-project-sdk.md).
+
+> [!NOTE]
+> Le moteur MSBuild lit tous les fichiers importés pendant l’évaluation, avant de commencer l’exécution de la génération pour n’importe quel projet (y compris tout `PreBuildEvent` ), de sorte que ces fichiers ne sont pas censés être modifiés par le `PreBuildEvent` ou par une autre partie du processus de génération. Toutes les modifications ne prennent pas effet avant l’appel suivant de *MSBuild. exe* ou de la génération suivante de Visual Studio.
 
 ### <a name="use-case-multi-level-merging"></a>Cas d’utilisation : Fusion à plusieurs niveaux
 
@@ -102,7 +109,7 @@ Pour que MSBuild fusionne correctement les fichiers « internes » (*2-src* et *
 Voici un résumé de l’approche générale MSBuild :
 
 - Pour un projet donné, MSBuild recherche le premier *Directory.Build.props* vers le haut de la structure de la solution, le fusionne avec les valeurs par défaut et arrête la recherche
-- Si vous souhaitez que plusieurs niveaux soient [`<Import...>`](../msbuild/property-functions.md#msbuild-getpathoffileabove) trouvés et fusionnés, alors (indiqué ci-dessus) le fichier "externe" du fichier "intérieur"
+- Si vous souhaitez que plusieurs niveaux soient recherchés et fusionnés, [`<Import...>`](../msbuild/property-functions.md#msbuild-getpathoffileabove) (voir ci-dessus) le fichier « externe » à partir du fichier « interne »
 - Si le fichier « externe » n’importe pas également un élément situé au-dessus, la recherche s’arrête.
 - Pour contrôler le processus de recherche et de fusion, utilisez `$(DirectoryBuildPropsPath)` et `$(ImportDirectoryBuildProps)`.
 
@@ -189,43 +196,66 @@ Par exemple, vous pouvez définir une nouvelle cible pour écrire un message de 
 </Project>
 ```
 
+La génération de solution est distincte des générations de projet. les paramètres ici n’affectent donc pas les générations de projet.
+
 ## <a name="customize-all-net-builds"></a>Personnaliser toutes les builds .NET
 
-Lors de la maintenance d’un serveur de construction, vous devrez peut-être configurer les paramètres MSBuild à l’échelle mondiale pour tous les appareils sur le serveur.  En principe, vous pouvez modifier les fichiers *Microsoft.Common.Targets* ou *Microsoft.Common.Props,* mais il existe une meilleure façon. Vous pouvez affecter toutes les versions d’un certain type de projet (comme tous les `.targets` `.props` projets C) en utilisant certaines propriétés MSBuild et en ajoutant certaines coutumes et fichiers.
+Lors de la maintenance d’un serveur de builds, vous devrez peut-être configurer les paramètres MSBuild globalement pour toutes les builds sur le serveur.  En principe, vous pouvez modifier les fichiers globaux *Microsoft. Common. targets* ou *Microsoft. Common. props* , mais il existe un meilleur moyen de le faire. Vous pouvez affecter toutes les builds d’un certain type de projet (par exemple, tous les projets C#) en utilisant certaines propriétés MSBuild et en ajoutant certains `.targets` fichiers et personnalisés `.props` .
 
-Pour affecter toutes les builds de base de C ou Visual régies par une installation de MSBuild ou Visual Studio, créez un fichier *Custom.Before.Microsoft.Common.Targets* ou *Custom.After.Microsoft.Common.Targets* avec des cibles qui s’exécuteront avant ou après *Microsoft.Common.targets*, ou un fichier *Custom.Before.Microsoft.Common.Props* ou *Custom.After.Microsoft.Common.Props* avec des propriétés qui seront traitées avant ou après *Microsoft.Common.props*.
+Pour affecter toutes les builds C# ou Visual Basic régies par une installation de MSBuild ou Visual Studio, créez un fichier *personnalisé. Before. Microsoft. Common. targets* ou *Custom. after. Microsoft. Common. targets* avec des cibles qui s’exécutent avant ou après *Microsoft. Common. targets*, ou un fichier *Custom. Before. Microsoft. Common. props* ou *Custom. after. Microsoft. Common. props* avec les propriétés qui seront traitées avant ou après *Microsoft. Common*
 
-Vous pouvez spécifier l’emplacement de ces fichiers en utilisant les propriétés SUIVANTES msBuild :
+Vous pouvez spécifier les emplacements de ces fichiers à l’aide des propriétés MSBuild suivantes :
 
-- CustomBeforeMicrosoftCommonProps CustomBeforeMicrosoftCommonProps CustomBeforeMicrosoftCommonProps CustomBe
+- CustomBeforeMicrosoftCommonProps
 - CustomBeforeMicrosoftCommonTargets
-- CustomAfterMicrosoftCommonProprops
+- CustomAfterMicrosoftCommonProps
 - CustomAfterMicrosoftCommonTargets
-- CustomBeforeMicrosoftCSharpProps CustomBeforeMicrosoftCSharpProps CustomBeforeMicrosoftCSharpProps CustomBe
-- CustomBeforeMicrosoftVisualBasicProps CustomBeforeMicrosoftVisualBasicProps CustomBeforeMicrosoftVisualBasicProps CustomBe
-- CustomAfterMicrosoftCSharpProps CustomAfterMicrosoftCSharpProps CustomAfterMicrosoftCSharpProps CustomAfter
+- CustomBeforeMicrosoftCSharpProps
+- CustomBeforeMicrosoftVisualBasicProps
+- CustomAfterMicrosoftCSharpProps
 - CustomAfterMicrosoftVisualBasicProps
 - CustomBeforeMicrosoftCSharpTargets
-- CustomBeforeMicrosoftVisualBasicTargets CustomBeforeMicrosoftVisualBasicTargets CustomBeforeMicrosoftVisualBasicTargets CustomBe
+- CustomBeforeMicrosoftVisualBasicTargets
 - CustomAfterMicrosoftCSharpTargets
 - CustomAfterMicrosoftVisualBasicTargets
 
-Les versions *communes* de ces propriétés affectent à la fois les projets C et Visual Basic. Vous pouvez définir ces propriétés dans la ligne de commande MSBuild.
+Les versions *courantes* de ces propriétés affectent à la fois les projets C# et Visual Basic. Vous pouvez définir ces propriétés dans la ligne de commande MSBuild.
 
 ```cmd
 msbuild /p:CustomBeforeMicrosoftCommonTargets="C:\build\config\Custom.Before.Microsoft.Common.Targets" MyProject.csproj
 ```
 
-La meilleure approche dépend de votre scénario. Si vous avez un serveur de construction dédié et que vous souhaitez vous assurer que certaines cibles s’exécutent toujours sur toutes les versions du type de projet approprié qui s’exécutent sur ce serveur, l’utilisation d’une coutume `.targets` ou `.props` d’un fichier global est logique.  Si vous voulez que les cibles personnalisées ne s’exécutent que lorsque certaines conditions s’appliquent, utilisez un autre emplacement de fichier et définissez le chemin vers ce fichier en définissant la propriété MSBuild appropriée dans la ligne de commande MSBuild seulement en cas de besoin.
+La meilleure approche dépend de votre scénario. À l’aide de l’extensibilité Visual Studio, vous pouvez personnaliser le système de génération et fournir un mécanisme pour l’installation et la gestion des personnalisations.
+
+Si vous disposez d’un serveur de builds dédié et que vous souhaitez vous assurer que certaines cibles s’exécutent toujours sur toutes les builds du type de projet approprié qui s’exécutent sur ce serveur, l’utilisation d’un fichier ou d’un fichier personnalisé global `.targets` `.props` est logique.  Si vous souhaitez que les cibles personnalisées s’exécutent uniquement lorsque certaines conditions s’appliquent, utilisez un autre emplacement de fichier et définissez le chemin d’accès à ce fichier en définissant la propriété MSBuild appropriée dans la ligne de commande MSBuild uniquement lorsque cela est nécessaire.
 
 > [!WARNING]
-> Visual Studio utilise `.targets` `.props` la coutume ou les fichiers s’il les trouve dans le dossier MSBuild chaque fois qu’il construit un projet du type correspondant. Cela peut avoir des conséquences imprévues, et si elle est faite incorrectement, peut désactiver la capacité de Visual Studio à construire sur votre ordinateur.
+> Visual Studio utilise le `.targets` ou les `.props` fichiers personnalisés s’il les trouve dans le dossier MSBuild chaque fois qu’il génère un projet du type correspondant. Cela peut avoir des conséquences inattendues et, si elle est effectuée de manière incorrecte, peut désactiver la génération de Visual Studio sur votre ordinateur.
 
-## <a name="customize-all-c-builds"></a>Personnaliser toutes les builds de C
+## <a name="customize-c-builds"></a>Personnaliser les builds C++
 
-Pour les projets C, `.targets` la `.props` coutume mentionnée précédemment et les fichiers sont ignorés. Pour les projets C, `.targets` vous pouvez créer des fichiers pour chaque plate-forme et les placer dans les dossiers d’importation appropriés pour ces plates-formes.
+Pour les projets C++, les fichiers *. targets* et *. props* personnalisés mentionnés précédemment ne peuvent pas être utilisés de la même manière pour remplacer les paramètres par défaut. *Directory. Build. props* est importé par *Microsoft. Common. props*, qui est importé dans, `Microsoft.Cpp.Default.props` tandis que la plupart des valeurs par défaut sont définies dans *Microsoft. cpp. props* et pour un certain nombre de propriétés, une condition « si pas encore défini » ne peut pas être utilisée, car la propriété est déjà définie, mais la valeur par défaut doit être différente pour les propriétés de projet spécifiques définies dans `PropertyGroup` avec `Label="Configuration"` (consultez [.](/cpp/build/reference/vcxproj-file-structure)
 
-Le `.targets` fichier de la plate-forme Win32, *Microsoft.Cpp.Win32.targets*, contient l’élément suivant: `Import`
+Toutefois, vous pouvez utiliser les propriétés suivantes pour spécifier le ou les fichiers *. props* à importer automatiquement avant/après * \* Microsoft. cpp.* Files :
+
+- ForceImportAfterCppDefaultProps
+- ForceImportBeforeCppProps
+- ForceImportAfterCppProps
+- ForceImportBeforeCppTargets
+- ForceImportAfterCppTargets
+
+Pour personnaliser les valeurs par défaut des propriétés pour toutes les builds C++, créez un autre fichier *. props* (par exemple, *MyProps. props*) et définissez la `ForceImportAfterCppProps` propriété en `Directory.Build.props` pointant sur celle-ci :
+
+<PropertyGroup><ForceImportAfterCppProps>$ (MsbuildThisFileDirectory) \MyProps.props<ForceImportAfterCppProps>
+</PropertyGroup>
+
+*MyProps. props* sera automatiquement importé à la fin de *Microsoft. cpp. props*.
+
+## <a name="customize-all-c-builds"></a>Personnaliser toutes les builds C++
+
+La personnalisation de l’installation de Visual Studio n’est pas recommandée, car il n’est pas facile d’effectuer le suivi de ces personnalisations, mais si vous étendez Visual Studio pour personnaliser les builds C++ pour une plateforme particulière, vous pouvez créer `.targets` des fichiers pour chaque plateforme et les placer dans les dossiers d’importation appropriés pour ces plateformes dans le cadre d’une extension Visual Studio.
+
+Le `.targets` fichier pour la plateforme Win32, *Microsoft. cpp. Win32. targets*, contient l' `Import` élément suivant :
 
 ```xml
 <Import Project="$(VCTargetsPath)\Platforms\Win32\ImportBefore\*.targets"
@@ -233,7 +263,7 @@ Le `.targets` fichier de la plate-forme Win32, *Microsoft.Cpp.Win32.targets*, co
 />
 ```
 
-Il y a un élément similaire vers la fin du même fichier :
+Il y a un élément similaire près de la fin du même fichier :
 
 ```xml
 <Import Project="$(VCTargetsPath)\Platforms\Win32\ImportAfter\*.targets"
@@ -241,19 +271,21 @@ Il y a un élément similaire vers la fin du même fichier :
 />
 ```
 
-Des éléments d’importation similaires existent pour d’autres plates-formes cibles dans les plates-formes\*de programme de %32 % -MSBuild-Microsoft.Cpp’v-version.
+Des éléments d’importation similaires existent pour d’autres plateformes cibles dans *%ProgramFiles32%\MSBuild\Microsoft.Cpp\v {version} \ plateformes \* .
 
-Une fois `.targets` que vous placez le fichier dans le dossier approprié selon la plate-forme, MSBuild importe votre fichier dans chaque version C POUR cette plate-forme. Vous pouvez `.targets` y mettre plusieurs fichiers, si nécessaire.
+Une fois que vous avez placé le `.targets` fichier dans le `ImportAfter` dossier approprié en fonction de la plateforme, MSBuild importe votre fichier dans chaque Build C++ pour cette plateforme. Vous pouvez y placer plusieurs `.targets` fichiers, si nécessaire. 
+
+À l’aide de l’extensibilité Visual Studio, d’autres personnalisations sont possibles, telles que la définition d’une nouvelle plateforme. Pour plus d’informations, consultez [extensibilité de projet C++](../extensibility/visual-cpp-project-extensibility.md).
 
 ### <a name="specify-a-custom-import-on-the-command-line"></a>Spécifier une importation personnalisée sur la ligne de commande
 
-Pour `.targets` la coutume que vous souhaitez inclure pour une construction spécifique d’un `ForceImportBeforeCppTargets` `ForceImportAfterCppTargets` projet C, définissez l’une ou les deux propriétés et sur la ligne de commande.
+Pour les `.targets` éléments personnalisés que vous souhaitez inclure pour une build spécifique d’un projet C++, définissez l’une des propriétés, ou les deux, `ForceImportBeforeCppTargets` et `ForceImportAfterCppTargets` sur la ligne de commande.
 
 ```cmd
 msbuild /p:ForceImportBeforeCppTargets="C:\build\config\Custom.Before.Microsoft.Cpp.Targets" MyCppProject.vcxproj
 ```
 
-Pour un paramètre global (pour affecter, par exemple, tous les C ' construit pour une plate-forme sur un serveur de construction), il existe deux méthodes. Tout d’abord, vous pouvez définir ces propriétés à l’aide d’une variable d’environnement système qui est toujours définie. Cela fonctionne parce que MSBuild lit toujours l’environnement et crée (ou remplace) des propriétés pour toutes les variables de l’environnement.
+Pour un paramètre global (pour affecter, par exemple, toutes les builds C++ pour une plateforme sur un serveur de builds), il existe deux méthodes. Tout d’abord, vous pouvez définir ces propriétés à l’aide d’une variable d’environnement système qui est toujours définie. Cela fonctionne parce que MSBuild lit toujours l’environnement et crée (ou remplace) des propriétés pour toutes les variables d’environnement.
 
 ## <a name="see-also"></a>Voir aussi
 

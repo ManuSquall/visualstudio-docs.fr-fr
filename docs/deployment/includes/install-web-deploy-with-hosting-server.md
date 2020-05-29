@@ -1,24 +1,24 @@
 ---
-ms.openlocfilehash: 0fc18fab56f5b46ef097cdf699e4f0569dc190c9
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: 1e6c6714720d652fff266e3e852d01982c98e34a
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "68143519"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84173875"
 ---
 Web Deploy 3.6 for Hosting Servers fournit des fonctionnalités de configuration supplémentaires qui permettent de créer le fichier de paramètres de publication à partir de l’IU.
 
-1. Si vous avez Web Deploy 3.6 déjà installé sur Windows Server, désinstaller à l’aide**de programmes** >  **de panneau de** > contrôle**Désinstaller un programme**.
+1. Si Web Deploy 3,6 est déjà installé sur Windows Server, désinstallez-le à l’aide des programmes **du panneau**  >  **Programs**  >  **de configuration désinstaller un programme**.
 
 2. Installez ensuite Web Deploy 3.6 for Hosting Servers sur Windows Server.
 
-    Pour installer Web Deploy for Hosting Servers, utilisez [Web Platform Installer (WebPI)](https://www.microsoft.com/web/downloads/platform.aspx). (Pour trouver le lien vers Web Platform Installer à partir d’IIS, sélectionnez **IIS** dans le volet gauche du Gestionnaire de serveur. Cliquez à droite sur le serveur et sélectionnez **le gestionnaire des services d’information Internet (IIS).**
+    Pour installer Web Deploy for Hosting Servers, utilisez Web Platform Installer (WebPI). (Pour trouver le lien vers Web Platform Installer à partir d’IIS, sélectionnez **IIS** dans le volet gauche du Gestionnaire de serveur. Dans le volet serveur, cliquez avec le bouton droit sur le serveur, puis sélectionnez **Gestionnaire de Internet Information Services (IIS)**. Utilisez ensuite le lien **recevoir de nouveaux composants de plateforme Web** dans la fenêtre **actions** .) Vous pouvez également obtenir le Web Platform Installer (WebPI) à partir des [téléchargements](https://www.microsoft.com/web/downloads/platform.aspx).
 
-    Dans Web Platform Installer, sous l’onglet Applications, se trouve **Web Deploy for Hosting Servers**.
+    Dans l’Web Platform Installer, vous trouverez **Web Deploy 3,6 pour les serveurs d’hébergement** sous l’onglet applications.
 
 3. Si vous n’avez pas encore installé les **Scripts et outils de gestion IIS**, faites-le maintenant.
 
-    Allez sélectionner **les rôles** > de serveur**Web Server (IIS)** > **Outils de gestion**, puis sélectionnez le rôle **IIS Management Scripts and Tools,** cliquez sur **Next**, puis installez le rôle.
+    Accédez à **Sélectionner**  >  outils de gestion**serveur Web rôles serveur (IIS)**  >  **Management Tools**, puis sélectionnez le rôle **scripts et outils de gestion IIS** , cliquez sur **suivant**, puis installez le rôle.
 
     ![Installer les scripts et outils de gestion IIS](../../deployment/media/tutorial-iis-management-scripts-and-tools.png)
 

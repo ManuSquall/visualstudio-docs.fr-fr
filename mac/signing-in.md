@@ -3,20 +3,20 @@ title: Connexion à Visual Studio pour Mac
 description: Guide pratique pour se connecter à Visual Studio pour Mac
 author: heiligerdankgesang
 ms.author: dominicn
-ms.date: 09/18/2019
+ms.date: 01/21/2020
 ms.assetid: E4CFD03C-03AF-48CA-B409-6DB1CA45E991
-ms.openlocfilehash: 9a9cf7871684e0951f66e0f20dcf156b3e625b45
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: d5bfb81264c3503643c51c621cad29df44acef92
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "75844261"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84173189"
 ---
 # <a name="sign-in-to-visual-studio-for-mac"></a>Se connecter à Visual Studio pour Mac
 
 La connexion à Visual Studio pour Mac vous permet [d’activer votre abonnement](enable-subscription.md). Lorsque vous téléchargez Visual Studio pour Mac, vous obtenez toujours l’édition Community par défaut. Si vous disposez d’une licence [professionnelle ou d’entreprise](https://visualstudio.microsoft.com/vs/compare/), vous devez vous connecter lors de la première exécution pour déverrouiller les fonctionnalités supplémentaires. Vous bénéficierez en prime de ce qui suit :
 
-* **Accès au programme Visual Studio Dev Essentials** - Ce programme comprend des offres de logiciels libres, de formation, de soutien et plus encore. Voir [Visual Studio Dev Essentials](https://visualstudio.microsoft.com/dev-essentials/) pour obtenir de plus amples informations.
+* **Accès au programme Visual Studio dev Essentials** : ce programme comprend des offres logicielles gratuites, des formations, un support technique, et bien plus encore. Voir [Visual Studio Dev Essentials](https://visualstudio.microsoft.com/dev-essentials/) pour obtenir de plus amples informations.
 
 * **Connexion automatique à Azure** dans l’IDE sans avoir à fournir à nouveau les informations d’identification pour le même compte.
 
@@ -29,7 +29,7 @@ Si vous décidez de ne pas vous connecter directement, vous pouvez utiliser une 
 > [!TIP]
 > Avant de vous connecter à Visual Studio pour Mac, vérifiez que vous êtes connecté à Internet. > Les abonnements peuvent être activés en ligne uniquement. Si vous n’êtes pas connecté, sélectionnez « Je le ferai plus tard » et connectez-vous via le menu quand vous serez connecté.
 
-Pour vous connecter à Visual Studio pour Mac lors du premier lancement, faites les étapes suivantes :
+Pour vous connecter à Visual Studio pour Mac lors du premier lancement, procédez comme suit :
 
 1. Cliquez sur le bouton **Se connecter avec Microsoft** de la fenêtre de connexion :
 
@@ -39,7 +39,7 @@ Pour vous connecter à Visual Studio pour Mac lors du premier lancement, faites 
 
     ![Boîte de dialogue d’informations d’identification Microsoft](media/signing-in-image13.png)
 
-4. Une fois que vous vous êtes connecté, vous verrez une option pour sélectionner des raccourcis clavier. Choisissez l’option que vous souhaitez utiliser et **continuer**. Vous serez ensuite invité avec le Visual Studio 2019 pour Mac start window. À partir de là, vous pouvez ouvrir ou créer un projet :
+4. Une fois que vous êtes connecté, vous voyez une option permettant de sélectionner des raccourcis clavier. Sélectionnez l’option que vous souhaitez utiliser et **continuez**. Vous serez ensuite invité à utiliser la fenêtre de démarrage de Visual Studio 2019 pour Mac. À partir de là, vous pouvez ouvrir ou créer un projet :
 
     ![Connexion réussie](media/signing-in-image14.png)
 
@@ -51,7 +51,7 @@ Visual Studio pour Mac prend en charge l’ajout de plusieurs comptes à votre c
 
 Pour ajouter des comptes d’utilisateur supplémentaires, choisissez le menu **Visual Studio > Compte...** à partir de Visual Studio pour Mac. Cliquez sur le bouton **Ajouter...** pour entrer des informations d’identification de compte supplémentaires.
 
-![Gérer les comptes](media/signing-in-image15.png)
+![Gérer les comptes](media/user-accounts-login.png)
 
 ## <a name="view-or-change-your-profile-information"></a>Afficher ou modifier vos informations de profil
 
