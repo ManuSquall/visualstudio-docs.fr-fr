@@ -7,12 +7,12 @@ ms.assetid: 59eb35fd-ec94-41ce-b24c-a8a120976bac
 author: CaityBuschlen
 ms.author: cabuschl
 ms.date: 3/3/2020
-ms.openlocfilehash: 7c90cb398e174d5b023668040352de11e1caaee3
-ms.sourcegitcommit: cc58ca7ceae783b972ca25af69f17c9f92a29fc2
+ms.openlocfilehash: 192cb7118a9f431ce2e7a9396b67a919fad10bb9
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/15/2020
-ms.locfileid: "81386168"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84200526"
 ---
 ## <a name="how-do-i-assign-visual-studio-subscriptions"></a>Comment attribuer des abonnements Visual Studio ?
 
@@ -22,7 +22,7 @@ Pour attribuer des abonnements individuellement :
 
 1. Sélectionnez l’[onglet Gérer les abonnés](https://manage.visualstudio.com/subscribers) en haut de la page sur [manage.visualstudio.com](https://manage.visualstudio.com).
 2. Sélectionnez Ajouter et tapez le nom et l’adresse e-mail de l’utilisateur auquel vous souhaitez attribuer un abonnement.
-    - Si votre organisation utilise Azure Active Directory, le champ du nom propose des personnes figurant dans votre annuaire actuel. Vous pouvez effectuer votre choix dans les résultats de la recherche ou ajouter une personne manuellement.
+    1. Si votre organisation utilise Azure Active Directory, le champ du nom propose des personnes figurant dans votre annuaire actuel. Vous pouvez effectuer votre choix dans les résultats de la recherche ou ajouter une personne manuellement.
 3. Si vous souhaitez autoriser l’abonné à accéder aux téléchargements de logiciels quand il se connecte au [portail des abonnements Visual Studio](https://my.visualstudio.com/), laissez la case Téléchargements cochée dans la section Paramètres de téléchargement.
 4. Complétez la section Préférences de communication afin que nous sachions dans quelle langue envoyer l’e-mail d’affectation à vos abonnés.
 5. Si vous souhaitez ajouter des notes associées à l’affectation, utilisez la section Référence.
