@@ -5,27 +5,27 @@ ms.author: jillfra
 manager: jillfra
 monikerRange: vs-2017
 ms.date: 11/13/2017
-ms.topic: conceptual
+ms.topic: how-to
 ms.workload:
 - multiple
-ms.openlocfilehash: d146d801a1519d3282b4e2c5dd72fd23b0df7206
-ms.sourcegitcommit: 9c1cecaff4d9955276eee7865b78d47679dd1e2a
+ms.openlocfilehash: 9bb3aa4a7aa9818f42f99860956e0e2ae73b2b7f
+ms.sourcegitcommit: 48e93538f1e352fc1f972b642bb5fcce2f6834a2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "80638642"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85371584"
 ---
 # <a name="clone-a-repository-of-python-code-in-visual-studio"></a>Cloner un dépôt de code Python dans Visual Studio
 
 Une fois que vous avez [installé Visual Studio Tools pour IA](installation.md), vous pouvez facilement cloner un dépôt de code Python et créer un projet à partir de celui-ci.
 
-1. Pour vous connecter aux référentiels GitHub, exécutez l’installateur Visual Studio, **sélectionnez Modifier**et sélectionnez **l’onglet Composants individuels.** Faites défiler vers le bas vers la section **des outils de code,** sélectionnez **l’extension GitHub pour Visual Studio**, et sélectionnez **Modifier**.
+1. Pour vous connecter aux référentiels GitHub, exécutez le programme d’installation de Visual Studio, sélectionnez **modifier**, puis sélectionnez l’onglet **composants individuels** . faites défiler jusqu’à la section **outils de code** , sélectionnez **extension GitHub pour Visual Studio**, puis sélectionnez **modifier**.
 
     ![Sélection de l’extension GitHub dans le programme d’installation de Visual Studio](media/create-project-repo/installation-github-extension.png)
 
 2. Lancez Visual Studio.
 
-3. Sélectionnez **View > Team Explorer** pour ouvrir la fenêtre Team **Explorer** dans laquelle vous pouvez vous connecter à GitHub ou Azure DevOps, ou cloner un référentiel.
+3. Sélectionnez **afficher > Team Explorer** pour ouvrir la fenêtre **Team Explorer** dans laquelle vous pouvez vous connecter à GitHub ou à Azure DevOps, ou cloner un référentiel.
 
     ![Fenêtre Team Explorer montrant Azure DevOps Services, GitHub et le clonage d’un dépôt](media/create-project-repo/team-explorer-devops.png)
 
@@ -38,13 +38,13 @@ Une fois que vous avez [installé Visual Studio Tools pour IA](installation.md),
 
     ![Fenêtre Team Explorer, création d’un projet à partir d’un clone](media/create-project-repo/team-explorer-new-project.png)
 
-6. Dans le dialogue **new Project** qui apparaît, sélectionnez " From Existing**Python Code**", spécifier un nom pour le projet, définir **l’emplacement** au même dossier que le dépôt, et sélectionnez **OK**. Dans l’Assistant qui apparaît, sélectionnez **Terminer**.
+6. Dans la boîte de dialogue **nouveau projet** qui s’affiche, sélectionnez «**à partir de code python existant**», spécifiez un nom pour le projet, définissez **emplacement** sur le même dossier que le dépôt, puis sélectionnez **OK**. Dans l’Assistant qui apparaît, sélectionnez **Terminer**.
 
 7. Sélectionnez **Affichage > Explorateur de solutions** dans le menu.
 
-8. Dans Solution Explorer, `TensorFlow Examples> MNIST` étendre le nœud, clic `convolutional.py`droit et sélectionnez Set comme startup **File**. Cette étape indique à Visual Studio quel fichier utiliser quand vous exécutez le projet.
+8. Dans Explorateur de solutions, développez le `TensorFlow Examples> MNIST` nœud, cliquez avec le bouton droit `convolutional.py` et sélectionnez **définir comme fichier de démarrage**. Cette étape indique à Visual Studio quel fichier utiliser quand vous exécutez le projet.
 
-9. Appuyez sur **Ctrl**+**F5** ou sélectionnez **Debug > Start Without Debugging** pour exécuter le programme. Si vous voyez une erreur, vérifiez le paramètre du répertoire de travail défini à l’étape précédente.
+9. Appuyez sur **CTRL** + **F5** ou sélectionnez **Déboguer > exécuter sans débogage** pour exécuter le programme. Si vous voyez une erreur, vérifiez le paramètre du répertoire de travail défini à l’étape précédente.
 
 10. Lorsque le programme s’exécute correctement, vous le voyez commencer à télécharger votre jeu de données d’apprentissage et de test, puis effectuer l’apprentissage du modèle et générer votre taux d’erreur. Vous voulez que le taux d’erreur diminue au fil du temps
 

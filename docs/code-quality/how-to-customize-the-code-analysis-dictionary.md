@@ -1,7 +1,7 @@
 ---
 title: 'Comment : personnaliser le dictionnaire d’analyse du code'
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - code analysis dictionary
 - custom dictionary, code analysis
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c3fbcbbfd52e4715dc6ee063ae0bae905eb3e65a
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 01c3ad83cea8dc1a28a817677be102c87ebc8f87
+ms.sourcegitcommit: 48e93538f1e352fc1f972b642bb5fcce2f6834a2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75587522"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85371870"
 ---
 # <a name="how-to-customize-the-code-analysis-dictionary"></a>Comment : personnaliser le dictionnaire d’analyse du code
 
@@ -27,7 +27,7 @@ Par exemple, supposons que votre code contenait une classe nommée **DoorKnokker
 
 ## <a name="to-create-a-custom-dictionary"></a>Pour créer un dictionnaire personnalisé
 
-Créez un fichier nommé **CustomDictionary. xml**.
+Créez un fichier nommé **CustomDictionary.xml**.
 
 Définissez vos mots personnalisés à l’aide de la structure XML suivante :
 
@@ -66,15 +66,15 @@ Vous pouvez modifier le comportement du dictionnaire d’analyse du code en ajou
 
 - [Dictionnaire/mots/non reconnu/Word](../code-quality/how-to-customize-the-code-analysis-dictionary.md#BKMK_DictionaryWordsUnrecognizedWord)
 
-- [Dictionnaire/mots/déconseillé/terme [@PreferredAlternate]](../code-quality/how-to-customize-the-code-analysis-dictionary.md#BKMK_DictionaryWordsDeprecatedTermPreferredAlternate)
+- [Dictionnaire/mots/déconseillé/terme [ @PreferredAlternate ]](../code-quality/how-to-customize-the-code-analysis-dictionary.md#BKMK_DictionaryWordsDeprecatedTermPreferredAlternate)
 
-- [Dictionnaire/mots/composé/terme [@CompoundAlternate]](../code-quality/how-to-customize-the-code-analysis-dictionary.md#BKMK_DictionaryWordsCompoundTermCompoundAlternate)
+- [Dictionnaire/mots/composé/terme [ @CompoundAlternate ]](../code-quality/how-to-customize-the-code-analysis-dictionary.md#BKMK_DictionaryWordsCompoundTermCompoundAlternate)
 
 - [Dictionary/Words/DiscreteExceptions/Term](../code-quality/how-to-customize-the-code-analysis-dictionary.md#BKMK_DictionaryWordsDiscreteExceptionsTerm)
 
 - [Dictionnaire/Acronyms/CasingExceptions/acronyme](../code-quality/how-to-customize-the-code-analysis-dictionary.md#BKMK_DictionaryAcronymsCasingExceptionsAcronym)
 
-### <a name="BKMK_DictionaryWordsRecognizedWord"></a>Dictionnaire/mots/reconnus/Word
+### <a name="dictionarywordsrecognizedword"></a><a name="BKMK_DictionaryWordsRecognizedWord"></a>Dictionnaire/mots/reconnus/Word
 
 Pour inclure un terme dans la liste des termes que l’analyse du code identifie comme correctement orthographié, ajoutez le terme comme texte interne d’un élément Dictionary/Words/recognized/Word. Les termes du dictionnaire/des mots/reconnus/Word ne respectent pas la casse.
 
@@ -95,21 +95,21 @@ Pour inclure un terme dans la liste des termes que l’analyse du code identifie
 
 Les termes du dictionnaire/des mots/nœuds reconnus sont appliqués aux règles d’analyse du code suivantes :
 
-- [CA1701 : La casse des mots composés de chaînes de ressources doit être correcte](../code-quality/ca1701.md)
+- [CA1701 : La casse des mots composés de la chaîne de ressources doit être correcte](../code-quality/ca1701.md)
 
-- [CA1702 : La casse des mots composés doit être correcte](../code-quality/ca1702.md)
+- [CA1702 : La casse des mots composés doit être correcte](../code-quality/ca1702.md)
 
-- [CA1703 : Les chaînes de ressources doit être orthographiées correctement](../code-quality/ca1703.md)
+- [CA1703 : L'orthographe des chaînes de ressources doit être correcte](../code-quality/ca1703.md)
 
-- [CA1704 : Les identificateurs doivent être correctement orthographiés](../code-quality/ca1704.md)
+- [CA1704 : L'orthographe des identificateurs doit être correcte](../code-quality/ca1704.md)
 
-- [CA1709 : La casse des identificateurs doit être correcte](../code-quality/ca1709.md)
+- [CA1709 : La casse des identificateurs doit être correcte](../code-quality/ca1709.md)
 
-- [CA1726 : Utilisez les termes préférés](../code-quality/ca1726.md)
+- [CA1726 : Utilisez les termes par défaut](../code-quality/ca1726.md)
 
-- [CA2204 : Les littéraux doivent être correctement orthographiés](../code-quality/ca2204.md)
+- [CA2204 : Les littéraux doivent être orthographiés correctement](../code-quality/ca2204.md)
 
-### <a name="BKMK_DictionaryWordsUnrecognizedWord"></a>Dictionnaire/mots/non reconnu/Word
+### <a name="dictionarywordsunrecognizedword"></a><a name="BKMK_DictionaryWordsUnrecognizedWord"></a>Dictionnaire/mots/non reconnu/Word
 
 Pour exclure un terme de la liste des termes que l’analyse du code identifie comme étant correctement orthographiés, ajoutez le terme à exclure comme texte interne d’un élément Dictionary/Words/non reconnu/Word. Les termes du dictionnaire/des mots/non reconnus/les éléments Word ne respectent pas la casse.
 
@@ -130,21 +130,21 @@ Pour exclure un terme de la liste des termes que l’analyse du code identifie c
 
 Les termes du nœud dictionnaire/mots/non reconnus sont appliqués aux règles d’analyse du code suivantes :
 
-- [CA1701 : La casse des mots composés de chaînes de ressources doit être correcte](../code-quality/ca1701.md)
+- [CA1701 : La casse des mots composés de la chaîne de ressources doit être correcte](../code-quality/ca1701.md)
 
-- [CA1702 : La casse des mots composés doit être correcte](../code-quality/ca1702.md)
+- [CA1702 : La casse des mots composés doit être correcte](../code-quality/ca1702.md)
 
-- [CA1703 : Les chaînes de ressources doit être orthographiées correctement](../code-quality/ca1703.md)
+- [CA1703 : L'orthographe des chaînes de ressources doit être correcte](../code-quality/ca1703.md)
 
-- [CA1704 : Les identificateurs doivent être correctement orthographiés](../code-quality/ca1704.md)
+- [CA1704 : L'orthographe des identificateurs doit être correcte](../code-quality/ca1704.md)
 
-- [CA1709 : La casse des identificateurs doit être correcte](../code-quality/ca1709.md)
+- [CA1709 : La casse des identificateurs doit être correcte](../code-quality/ca1709.md)
 
-- [CA1726 : Utilisez les termes préférés](../code-quality/ca1726.md)
+- [CA1726 : Utilisez les termes par défaut](../code-quality/ca1726.md)
 
-- [CA2204 : Les littéraux doivent être correctement orthographiés](../code-quality/ca2204.md)
+- [CA2204 : Les littéraux doivent être orthographiés correctement](../code-quality/ca2204.md)
 
-### <a name="BKMK_DictionaryWordsDeprecatedTermPreferredAlternate"></a>Dictionnaire/mots/déconseillé/terme [@PreferredAlternate]
+### <a name="dictionarywordsdeprecatedtermpreferredalternate"></a><a name="BKMK_DictionaryWordsDeprecatedTermPreferredAlternate"></a>Dictionnaire/mots/déconseillé/terme [ @PreferredAlternate ]
 
 Pour inclure un terme dans la liste des termes identifié par l’analyse du code comme étant déconseillé, ajoutez le terme comme texte interne d’un élément Dictionary/Words/Deprecated/term. Un terme déconseillé est un mot qui est correctement orthographié, mais qui ne doit pas être utilisé.
 
@@ -171,17 +171,17 @@ Pour inclure un autre terme suggéré dans l’avertissement, spécifiez le remp
 
 Les termes du nœud dictionnaire/mots/déconseillé sont appliqués aux règles d’analyse du code suivantes :
 
-- [CA1701 : La casse des mots composés de chaînes de ressources doit être correcte](../code-quality/ca1701.md)
+- [CA1701 : La casse des mots composés de la chaîne de ressources doit être correcte](../code-quality/ca1701.md)
 
-- [CA1702 : La casse des mots composés doit être correcte](../code-quality/ca1702.md)
+- [CA1702 : La casse des mots composés doit être correcte](../code-quality/ca1702.md)
 
-- [CA1703 : Les chaînes de ressources doit être orthographiées correctement](../code-quality/ca1703.md)
+- [CA1703 : L'orthographe des chaînes de ressources doit être correcte](../code-quality/ca1703.md)
 
-- [CA1704 : Les identificateurs doivent être correctement orthographiés](../code-quality/ca1704.md)
+- [CA1704 : L'orthographe des identificateurs doit être correcte](../code-quality/ca1704.md)
 
-- [CA1726 : Utilisez les termes préférés](../code-quality/ca1726.md)
+- [CA1726 : Utilisez les termes par défaut](../code-quality/ca1726.md)
 
-### <a name="BKMK_DictionaryWordsCompoundTermCompoundAlternate"></a>Dictionnaire/mots/composé/terme [@CompoundAlternate]
+### <a name="dictionarywordscompoundtermcompoundalternate"></a><a name="BKMK_DictionaryWordsCompoundTermCompoundAlternate"></a>Dictionnaire/mots/composé/terme [ @CompoundAlternate ]
 
 Le dictionnaire intégré identifie certains termes comme des termes simples et discrets plutôt qu’un terme composé. Pour inclure un terme dans la liste des termes que l’analyse du code identifie comme un mot composé et pour spécifier la casse correcte du terme, ajoutez le terme comme texte interne d’un élément Dictionary/Words/Compound-term. Dans l’attribut CompoundAlternate de l’élément term, spécifiez les mots individuels qui composent le terme composé en majuscules la première lettre des mots individuels (casse Pascal). Notez que le terme spécifié dans le texte interne est automatiquement ajouté à la liste Dictionary/Words/DiscreteExceptions.
 
@@ -206,15 +206,15 @@ Le dictionnaire intégré identifie certains termes comme des termes simples et 
 
 Les termes du nœud Dictionary/Words/Compound sont appliqués aux règles d’analyse du code suivantes :
 
-- [CA1701 : La casse des mots composés de chaînes de ressources doit être correcte](../code-quality/ca1701.md)
+- [CA1701 : La casse des mots composés de la chaîne de ressources doit être correcte](../code-quality/ca1701.md)
 
-- [CA1702 : La casse des mots composés doit être correcte](../code-quality/ca1702.md)
+- [CA1702 : La casse des mots composés doit être correcte](../code-quality/ca1702.md)
 
-- [CA1703 : Les chaînes de ressources doit être orthographiées correctement](../code-quality/ca1703.md)
+- [CA1703 : L'orthographe des chaînes de ressources doit être correcte](../code-quality/ca1703.md)
 
-- [CA1704 : Les identificateurs doivent être correctement orthographiés](../code-quality/ca1704.md)
+- [CA1704 : L'orthographe des identificateurs doit être correcte](../code-quality/ca1704.md)
 
-### <a name="BKMK_DictionaryWordsDiscreteExceptionsTerm"></a>Dictionary/Words/DiscreteExceptions/Term
+### <a name="dictionarywordsdiscreteexceptionsterm"></a><a name="BKMK_DictionaryWordsDiscreteExceptionsTerm"></a>Dictionary/Words/DiscreteExceptions/Term
 
 Pour exclure un terme dans la liste des termes que l’analyse du code identifie comme un mot unique et discret lorsque le terme est vérifié par les règles de casse des mots composés, ajoutez le terme comme texte interne d’un élément Dictionary/Words/DiscreteExceptions/Term. Le terme dans l’élément Dictionary/Words/DiscreteExceptions/Term ne respecte pas la casse.
 
@@ -235,11 +235,11 @@ Pour exclure un terme dans la liste des termes que l’analyse du code identifie
 
 Les termes du nœud Dictionary/Words/DiscreteExceptions sont appliqués aux règles d’analyse du code suivantes :
 
-- [CA1701 : La casse des mots composés de chaînes de ressources doit être correcte](../code-quality/ca1701.md)
+- [CA1701 : La casse des mots composés de la chaîne de ressources doit être correcte](../code-quality/ca1701.md)
 
-- [CA1702 : La casse des mots composés doit être correcte](../code-quality/ca1702.md)
+- [CA1702 : La casse des mots composés doit être correcte](../code-quality/ca1702.md)
 
-### <a name="BKMK_DictionaryAcronymsCasingExceptionsAcronym"></a>Dictionnaire/Acronyms/CasingExceptions/acronyme
+### <a name="dictionaryacronymscasingexceptionsacronym"></a><a name="BKMK_DictionaryAcronymsCasingExceptionsAcronym"></a>Dictionnaire/Acronyms/CasingExceptions/acronyme
 
 Pour inclure un acronyme dans la liste des termes que l’analyse du code identifie comme correctement orthographiés et pour indiquer comment l’acronyme est vérifié par les règles de casse des mots composés, ajoutez le terme comme texte interne d’un élément Dictionary/acronymes/CasingExceptions/acronyme. L’acronyme dans l’élément Dictionary/acronymes/CasingExceptions/acronyme respecte la casse.
 
@@ -260,9 +260,9 @@ Pour inclure un acronyme dans la liste des termes que l’analyse du code identi
 
 Les termes du nœud dictionary/acronymes/CasingExceptions sont appliqués aux règles d’analyse de code suivantes :
 
-- [CA1709 : La casse des identificateurs doit être correcte](../code-quality/ca1709.md)
+- [CA1709 : La casse des identificateurs doit être correcte](../code-quality/ca1709.md)
 
-## <a name="BKMK_ToApplyACustomDictionaryToAProject"></a>Pour appliquer un dictionnaire personnalisé à un projet
+## <a name="to-apply-a-custom-dictionary-to-a-project"></a><a name="BKMK_ToApplyACustomDictionaryToAProject"></a>Pour appliquer un dictionnaire personnalisé à un projet
 
 1. Dans **Explorateur de solutions**, utilisez l’une des procédures suivantes :
 
@@ -270,7 +270,7 @@ Les termes du nœud dictionary/acronymes/CasingExceptions sont appliqués aux r�
 
 3. Pour ajouter un dictionnaire partagé entre plusieurs projets, localisez le fichier à partager dans la boîte de dialogue **Ajouter un élément existant** , cliquez sur la flèche vers le bas du bouton **Ajouter** , puis cliquez sur **Ajouter en tant que lien**.
 
-4. Dans **Explorateur de solutions**, cliquez avec le bouton droit sur le nom du fichier **CustomDictionary. xml** , puis cliquez sur **Propriétés**.
+4. Dans **Explorateur de solutions**, cliquez avec le bouton droit sur le nom du fichier **CustomDictionary.xml** , puis cliquez sur **Propriétés**.
 
 5. Dans la liste **action de génération** , sélectionnez **CodeAnalysisDictionary**.
 

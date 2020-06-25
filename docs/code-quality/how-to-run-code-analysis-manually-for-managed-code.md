@@ -1,7 +1,7 @@
 ---
-title: 'Comment : Exécuter l’analyse de code manuellement pour le code géré'
+title: Comment exécuter l’analyse du code manuellement pour le code managé
 ms.date: 11/04/2019
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - code analysis, running
 - run code analysis
@@ -11,23 +11,23 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 5fdeb56a0c0f4c5904a00ec53d64dae87aa4e9a5
-ms.sourcegitcommit: 92361aac3665a934faa081e1d1ea89a067b01c5b
+ms.openlocfilehash: 584ddc9953b6f1522d12722fdd9a24d71e4e1538
+ms.sourcegitcommit: 48e93538f1e352fc1f972b642bb5fcce2f6834a2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/17/2020
-ms.locfileid: "79431382"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85371831"
 ---
-# <a name="how-to-run-code-analysis-manually-for-managed-code-requires-visual-studio-2019-version-165-or-later"></a>Comment : Exécuter l’analyse de code manuellement pour le code géré (nécessite visual Studio 2019 version 16.5 ou plus tard)
-Par défaut, les analyseurs de code .NET Compiler Platform ("Roslyn") analysent votre code de base visuel ou C ou Visual comme vous tapez en effectuant des analyses en direct, ainsi que pendant la construction. Par conséquent, vous n’auriez normalement pas besoin de déclencher manuellement l’analyse de code. Cependant, il existe certains scénarios où vous pouvez déclencher manuellement l’analyse du code:
+# <a name="how-to-run-code-analysis-manually-for-managed-code-requires-visual-studio-2019-version-165-or-later"></a>Comment : exécuter l’analyse du code manuellement pour le code managé (nécessite Visual Studio 2019 version 16,5 ou ultérieure)
+Par défaut, les analyseurs de code .NET Compiler Platform (« Roslyn ») analysent votre code C# ou Visual Basic au fur et à mesure que vous tapez en réalisant une analyse en temps réel, ainsi que pendant la génération. Par conséquent, vous n’avez normalement pas besoin de déclencher manuellement l’analyse du code. Toutefois, dans certains scénarios, vous pouvez être amené à déclencher manuellement l’analyse du code :
 
-- Par défaut, l’analyse de code en direct exécute les analyseurs uniquement pour les fichiers ouverts dans Visual Studio. Toutefois, vous pouvez être intéressé à consulter les avertissements d’analyse de code pour tous les fichiers d’un projet ou d’une solution spécifique. Si c’est le cas, vous souhaitez déclencher l’analyse de code une fois sur un projet ou une solution. Alternativement, vous pouvez activer l’analyse continue de code en direct pour exécuter sur la solution entière. Pour plus d’informations, voir [Comment configurer la portée d’analyse de code en direct pour le code géré](./configure-live-code-analysis-scope-managed-code.md).
-- Vous pouvez préférer le flux de travail d’exécution d’exécution d’analyse de code à la demande à l’analyse en direct continue ou à l’analyse du temps de construction. Si c’est le cas, vous pouvez désactiver l’exécution de l’analyseur pendant l’analyse en direct et/ou la construction. Pour plus d’informations sur l’analyse invalidante, voir [Comment désactiver l’analyse du code source](disable-code-analysis.md). Ensuite, vous souhaitez déclencher manuellement l’analyse de code une fois sur un projet ou une solution. 
+- Par défaut, l’analyse du code en direct exécute des analyseurs uniquement pour les fichiers ouverts dans Visual Studio. Toutefois, vous souhaiterez peut-être afficher des avertissements d’analyse du code pour tous les fichiers d’un projet ou d’une solution spécifique. Si c’est le cas, vous pouvez déclencher l’analyse du code une seule fois sur un projet ou une solution. Vous pouvez également activer l’analyse de code en direct en continu pour l’exécuter sur la totalité de la solution. Pour plus d’informations, consultez [Comment : configurer l’étendue de l’analyse du code en temps réel pour le code managé](./configure-live-code-analysis-scope-managed-code.md).
+- Vous préférerez peut-être un flux de travail d’exécution de l’analyse du code à la demande sur une analyse en temps réel ou une analyse de la génération. Dans ce cas, vous pouvez désactiver l’exécution de l’analyseur lors de l’analyse et/ou de la génération en temps réel. Pour plus d’informations sur la désactivation de l’analyse, consultez [Comment désactiver l’analyse du code source](disable-code-analysis.md). Ensuite, vous pouvez déclencher manuellement l’analyse du code sur un projet ou une solution. 
 
 ### <a name="run-code-analysis-manually"></a>Exécuter l’analyse du code manuellement
 
-1. Dans **Solution Explorer**, cliquez sur le projet.
+1. Dans **Explorateur de solutions**, cliquez sur le projet.
 
-2. Sur le menu **Analyze,** cliquez sur **l’analyse du code d’exécution sur** *le nom du projet*.
+2. Dans le menu **analyser** , cliquez sur **exécuter l’analyse du code sur** le nom du *projet*.
 
-L’analyse du code commencera à s’exécuter en arrière-plan. Vous devriez voir le message **Analyse de code de fonctionnement pour \<le projet>...** dans la barre de statut Visual Studio vers le coin inférieur gauche. Une fois l’analyse de code terminée, le message d’état sera modifié pour **l’analyse \<de code effectuée pour le projet>**. La liste d’erreurs se rafraîchira bientôt avec tous les diagnostics d’analyse de code.
+L’analyse du code commence à s’exécuter en arrière-plan. Vous devez voir le message **exécution de l’analyse du code pour \<project> ...** dans la barre d’état de Visual Studio vers l’angle inférieur gauche. Une fois l’analyse du code terminée, le message d’état passe à l' **analyse \<project> du code terminée pour **. La liste d’erreurs sera bientôt actualisée avec tous les diagnostics d’analyse du code.

@@ -1,7 +1,7 @@
 ---
-title: Générer des mesures de code à partir de l’IDE ou de la ligne de commande
+title: Générer des métriques de code à partir de l’IDE ou de la ligne de commande
 ms.date: 11/02/2018
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - code metrics data
 - code metrics results
@@ -11,33 +11,33 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1abae26ed8a5e5db74f7b0d04db66d9d99930d5c
-ms.sourcegitcommit: ade07bd1cf69b8b494d171ae648cfdd54f7800d3
+ms.openlocfilehash: 078bce0778122b296dcd918d4a9074eed5397f54
+ms.sourcegitcommit: 48e93538f1e352fc1f972b642bb5fcce2f6834a2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "81649321"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85371844"
 ---
-# <a name="how-to-generate-code-metrics-data"></a>Comment : Générer des données de métriques de code
+# <a name="how-to-generate-code-metrics-data"></a>Comment : générer des données de métriques du code
 
-Vous pouvez générer des données de métriques de code de trois façons :
+Vous pouvez générer des données de métriques du code de trois façons :
 
-- En installant [des analyseurs FxCop](#fxcop-analyzers-code-metrics-rules) et en permettant les quatre règles de code (maintenabilité) qu’il contient.
+- En installant les [analyseurs FxCop](#fxcop-analyzers-code-metrics-rules) et en activant les quatre règles de mesure du code (maintenabilité) qu’il contient.
 
-- En choisissant la commande de menu [ **Analyze** > Calculate Code Metrics](#calculate-code-metrics-menu-command) au sein de Visual Studio.
+- En choisissant la commande de menu [ **analyser**les  >  **métriques du code** ](#calculate-code-metrics-menu-command) dans Visual Studio.
 
-- De la [ligne de commande](#command-line-code-metrics) pour les projets C et Visual Basic.
+- À partir de la [ligne de commande](#command-line-code-metrics) pour les projets C# et Visual Basic.
 
-## <a name="fxcop-analyzers-code-metrics-rules"></a>FxCop analyseurs code règles de métriques
+## <a name="fxcop-analyzers-code-metrics-rules"></a>Règles de métriques du code des analyseurs FxCop
 
-Le [paquet FxCopAnalyzers NuGet](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers) comprend plusieurs règles [d’analyse de](roslyn-analyzers-overview.md) mesures de code :
+Le [package NuGet FxCopAnalyzers](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers) comprend plusieurs règles d' [analyseur](roslyn-analyzers-overview.md) de métrique du code :
 
 - [CA1501](ca1501-avoid-excessive-inheritance.md)
 - [CA1502](ca1502.md)
 - [CA1505](ca1505.md)
 - [CA1506](ca1506.md)
 
-Ces règles sont désactivées par défaut, mais vous pouvez les activer à partir de [**Solution Explorer**](use-roslyn-analyzers.md#set-rule-severity-from-solution-explorer) ou dans un fichier [défini par les règles.](using-rule-sets-to-group-code-analysis-rules.md) Par exemple, pour activer la règle CA1502 comme avertissement, votre fichier .ruleset contiendrait l’entrée suivante :
+Ces règles sont désactivées par défaut, mais vous pouvez les activer à partir de [**Explorateur de solutions**](use-roslyn-analyzers.md#set-rule-severity-from-solution-explorer) ou dans un fichier d' [ensemble de règles](using-rule-sets-to-group-code-analysis-rules.md) . Par exemple, pour activer la règle CA1502 comme un avertissement, votre fichier. RuleSet doit contenir l’entrée suivante :
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -50,19 +50,19 @@ Ces règles sont désactivées par défaut, mais vous pouvez les activer à part
 
 ### <a name="configuration"></a>Configuration
 
-Vous pouvez configurer les seuils auxquels le code mesure les règles dans le feu de l’analyseur FxCop.
+Vous pouvez configurer les seuils auxquels les règles de métriques du code dans le package des analyseurs FxCop sont activées.
 
-1. Créer un fichier texte. À titre d’exemple, vous pouvez l’appeler *CodeMetricsConfig.txt*.
+1. Créer un fichier texte. Par exemple, vous pouvez le nommer *CodeMetricsConfig.txt*.
 
-2. Ajoutez les seuils souhaités au fichier texte dans le format suivant :
+2. Ajoutez les seuils souhaités au fichier texte au format suivant :
 
    ```txt
    CA1502: 10
    ```
 
-   Dans cet exemple, la règle [CA1502](ca1502.md) est configurée pour tirer lorsque la complexité cyclomatique d’une méthode est supérieure à 10.
+   Dans cet exemple, la règle [CA1502](ca1502.md) est configurée pour se déclencher lorsque la complexité cyclomatic d’une méthode est supérieure à 10.
 
-3. Dans la fenêtre **Propriétés** de Visual Studio, ou dans le fichier de projet, marquer l’action de construction du fichier de configuration comme [**AdditionalFiles**](../ide/build-actions.md#build-action-values). Par exemple :
+3. Dans la fenêtre **Propriétés** de Visual Studio, ou dans le fichier projet, marquez l’action de génération du fichier de configuration en tant que [**AdditionalFiles**](../ide/build-actions.md#build-action-values). Par exemple :
 
    ```xml
    <ItemGroup>
@@ -70,48 +70,48 @@ Vous pouvez configurer les seuils auxquels le code mesure les règles dans le fe
    </ItemGroup>
    ```
 
-## <a name="calculate-code-metrics-menu-command"></a>Calculer la commande du menu Code Metrics
+## <a name="calculate-code-metrics-menu-command"></a>Commande de menu calculer la métrique du code
 
-Générez des mesures de code pour un ou la totalité de vos projets ouverts dans l’IDE en utilisant le menu **Analyze** > **Calculate Code Metrics.**
+Générez des métriques de code pour un ou tous vos projets ouverts dans l’IDE à l’aide du menu **analyser**les  >  **métriques du code** .
 
-### <a name="generate-code-metrics-results-for-an-entire-solution"></a>Générer des résultats de mesures de code pour toute une solution
+### <a name="generate-code-metrics-results-for-an-entire-solution"></a>Générer les résultats de la métrique du code pour une solution entière
 
-Vous pouvez générer des résultats de mesures de code pour une solution entière de toutes les manières suivantes :
+Vous pouvez générer des résultats de métriques du code pour une solution complète de l’une des manières suivantes :
 
-- De la barre de menu, choisissez **Analysez les** > **mesures** > de code de calcul**pour la solution**.
+- Dans la barre de menus, choisissez **analyser**  >  **calculer la métrique**  >  **du code pour la solution**.
 
-- Dans **Solution Explorer**, cliquez à droite sur la solution, puis choisissez **Calculatez les paramètres de code**.
+- Dans **Explorateur de solutions**, cliquez avec le bouton droit sur la solution, puis choisissez **calculer la métrique du code**.
 
-- Dans la fenêtre **de résultats de code Metrics,** choisissez les mesures de code de calcul pour le bouton **Solution.**
+- Dans la fenêtre résultats de la **métrique du code** , choisissez le bouton calculer la métrique du **code pour la solution** .
 
-Les résultats sont générés et la fenêtre **de résultats de mesures de code** est affichée. Pour afficher les détails des résultats, étendre l’arbre dans la colonne **Hiérarchie.**
+Les résultats sont générés et la fenêtre résultats de la **métrique du code** s’affiche. Pour afficher les détails des résultats, développez l’arborescence dans la colonne **hiérarchie** .
 
-### <a name="generate-code-metrics-results-for-one-or-more-projects"></a>Générer des résultats de mesures de code pour un ou plusieurs projets
+### <a name="generate-code-metrics-results-for-one-or-more-projects"></a>Générer les résultats de la métrique du code pour un ou plusieurs projets
 
-1. Dans **Solution Explorer**, sélectionnez un ou plusieurs projets.
+1. Dans **Explorateur de solutions**, sélectionnez un ou plusieurs projets.
 
-1. À partir de la barre de menu, choisissez **Analysez les** > **mesures** > de code de calcul**pour le projet sélectionné.**
+1. Dans la barre de menus, choisissez **analyser**  >  **calculer la métrique du code**  >  **pour le ou les projets sélectionnés**.
 
-Les résultats sont générés et la fenêtre **de résultats de mesures de code** est affichée. Pour voir les détails des résultats, étendre l’arbre dans la **Hiérarchie**.
+Les résultats sont générés et la fenêtre résultats de la **métrique du code** s’affiche. Pour afficher les détails des résultats, développez l’arborescence dans la **hiérarchie**.
 
 ::: moniker range="vs-2017"
 
 > [!NOTE]
-> La commande **Calculate Code Metrics** ne fonctionne pas pour les projets .NET Core et .NET Standard. Pour calculer les paramètres de code pour un projet .NET Core ou .NET Standard, vous pouvez :
+> La commande **calculer la métrique du code** ne fonctionne pas pour les projets .net Core et .NET standard. Pour calculer la métrique du code pour un projet .NET Core ou .NET Standard, vous pouvez :
 >
-> - Calculer les mesures de code de la ligne de [commande](#command-line-code-metrics) à la place
+> - Calculez à la place la métrique du code à partir de la [ligne de commande](#command-line-code-metrics)
 >
-> - Mise à niveau vers [Visual Studio 2019](https://visualstudio.microsoft.com/downloads)
+> - Mettre à niveau vers [Visual Studio 2019](https://visualstudio.microsoft.com/downloads)
 
 ::: moniker-end
 
-## <a name="command-line-code-metrics"></a>Mesures de code de commande-ligne
+## <a name="command-line-code-metrics"></a>Métriques du code de ligne de commande
 
-Vous pouvez générer des données de métriques de code à partir de la ligne de commande pour les projets C et Visual Basic pour les applications .NET Framework, .NET Core et .NET Standard. Pour exécuter les mesures de code à partir de la ligne de commande, installez le [paquet Microsoft.CodeAnalysis.Metrics NuGet](#microsoftcodeanalysismetrics-nuget-package) ou créez le [Metrics.exe exe exe exe exe exe exe exe](#metricsexe) exécutant vous-même.
+Vous pouvez générer des données de métriques du code à partir de la ligne de commande pour les projets C# et Visual Basic pour les applications .NET Framework, .NET Core et .NET Standard. Pour exécuter les métriques du code à partir de la ligne de commande, installez le [package NuGet Microsoft. CodeAnalysis. Metrics](#microsoftcodeanalysismetrics-nuget-package) ou créez le [Metrics.exe](#metricsexe) exécutable vous-même.
 
-### <a name="microsoftcodeanalysismetrics-nuget-package"></a>Microsoft.CodeAnalysis.Metrics NuGet package
+### <a name="microsoftcodeanalysismetrics-nuget-package"></a>Package NuGet Microsoft. CodeAnalysis. Metrics
 
-La façon la plus simple de générer des données de mesures de code à partir de la ligne de commande est d’installer le paquet [Microsoft.CodeAnalysis.Metrics](https://www.nuget.org/packages/Microsoft.CodeAnalysis.Metrics/) NuGet. Après avoir installé le paquet, exécutez `msbuild /t:Metrics` à partir de l’annuaire qui contient votre fichier de projet. Par exemple :
+Le moyen le plus simple de générer des données de métriques du code à partir de la ligne de commande consiste à installer le package NuGet [Microsoft. CodeAnalysis. Metrics](https://www.nuget.org/packages/Microsoft.CodeAnalysis.Metrics/) . Une fois le package installé, exécutez `msbuild /t:Metrics` à partir du répertoire qui contient votre fichier projet. Par exemple :
 
 ```shell
 C:\source\repos\ClassLibrary3\ClassLibrary3>msbuild /t:Metrics
@@ -134,7 +134,7 @@ Build succeeded.
     0 Error(s)
 ```
 
-Vous pouvez remplacer le nom du `/p:MetricsOutputFile=<filename>`fichier de sortie en spécifiant . Vous pouvez également obtenir des données de `/p:LEGACY_CODE_METRICS_MODE=true`métriques de code de type [héritage](#previous-versions) en spécifiant . Par exemple :
+Vous pouvez remplacer le nom du fichier de sortie en spécifiant `/p:MetricsOutputFile=<filename>` . Vous pouvez également recevoir des données de métriques du code [hérité](#previous-versions) en spécifiant `/p:LEGACY_CODE_METRICS_MODE=true` . Par exemple :
 
 ```shell
 C:\source\repos\ClassLibrary3\ClassLibrary3>msbuild /t:Metrics /p:LEGACY_CODE_METRICS_MODE=true /p:MetricsOutputFile="Legacy.xml"
@@ -158,9 +158,9 @@ Build succeeded.
     0 Error(s)
 ```
 
-### <a name="code-metrics-output"></a>Sortie de mesures du code
+### <a name="code-metrics-output"></a>Sortie de la métrique du code
 
-La sortie XML générée prend le format suivant :
+La sortie XML générée prend le format suivant :
 
 ::: moniker range=">=vs-2019"
 ```xml
@@ -271,25 +271,25 @@ La sortie XML générée prend le format suivant :
 ```
 ::: moniker-end
 
-### <a name="metricsexe"></a>Metrics.exe (en)
+### <a name="metricsexe"></a>Metrics.exe
 
-Si vous ne souhaitez pas installer le paquet NuGet, vous pouvez générer et utiliser le *Metrics.exe exe exécutable* directement. Pour générer le *Metrics.exe exe exe exe exe exe exécutable:*
+Si vous ne souhaitez pas installer le package NuGet, vous pouvez générer et utiliser directement le *Metrics.exe* exécutable. Pour générer le fichier exécutable *Metrics.exe* :
 
-1. Clonez le [repo dotnet/roslyn-analyseurs.](https://github.com/dotnet/roslyn-analyzers)
-2. Open Developer Command Prompt for Visual Studio en tant qu’administrateur.
-3. De la racine de la **répo roslyn-analyseurs,** exécutez la commande suivante :`Restore.cmd`
-4. Changez d’annuaire pour *src-Tools*.
-5. Exécutez la commande suivante pour construire le projet **Metrics.csproj** :
+1. Clonez les [analyseurs dotnet/Roslyn](https://github.com/dotnet/roslyn-analyzers) référentiel.
+2. Ouvrez Invite de commandes développeur pour Visual Studio en tant qu’administrateur.
+3. À partir de la racine de **Roslyn-Analysis** référentiel, exécutez la commande suivante :`Restore.cmd`
+4. Accédez au répertoire *src\Tools*.
+5. Exécutez la commande suivante pour générer le projet **Metrics. csproj** :
 
    ```shell
    msbuild /m /v:m /p:Configuration=Release Metrics.csproj
    ```
 
-   Un exécutable nommé *Metrics.exe* est généré dans le répertoire *des artefacts-bin* sous la racine de pension.
+   Un fichier exécutable nommé *Metrics.exe* est généré dans le répertoire *artifacts\bin* sous la racine référentiel.
 
-#### <a name="metricsexe-usage"></a>Metrics.exe utilisation
+#### <a name="metricsexe-usage"></a>Utilisation de Metrics.exe
 
-Pour exécuter *Metrics.exe*, fournir un projet ou une solution et un fichier de sortie XML comme arguments. Par exemple :
+Pour exécuter *Metrics.exe*, fournissez un projet ou une solution et un fichier XML de sortie comme arguments. Par exemple :
 
 ```shell
 C:\>Metrics.exe /project:ConsoleApp20.csproj /out:report.xml
@@ -299,40 +299,40 @@ Writing output to 'report.xml'...
 Completed Successfully.
 ```
 
-#### <a name="legacy-mode"></a>Mode héritage
+#### <a name="legacy-mode"></a>Mode hérité
 
-Vous pouvez choisir de construire *Metrics.exe* en *mode héritage*. La version mode héritée de l’outil génère des valeurs métriques qui sont plus proches de ce que [les anciennes versions de l’outil généré .](#previous-versions) En outre, en mode héritage, *Metrics.exe* génère des mesures de code pour le même ensemble de types de méthode que les versions précédentes de l’outil généré des mesures de code pour. Par exemple, il ne génère pas de données de mesures de code pour les initialisateurs de champ et de propriété. Le mode Héritage est utile pour la compatibilité vers l’arrière ou si vous avez des portes d’enregistrement de code basées sur les numéros de mesures de code. La commande pour construire *Metrics.exe* en mode héritage est :
+Vous pouvez choisir de générer *Metrics.exe* en *mode hérité*. La version en mode hérité de l’outil génère des valeurs de métriques qui sont plus proches de celles [générées par les anciennes versions de l’outil](#previous-versions). En outre, en mode hérité, *Metrics.exe* génère des métriques de code pour le même jeu de types de méthode que les versions précédentes de l’outil pour lequel des métriques de code ont été générées. Par exemple, il ne génère pas de données de métriques du code pour les initialiseurs de champ et de propriété. Le mode hérité est utile à des fins de compatibilité descendante ou si vous avez des portails d’archivage de code basés sur des numéros de métriques du code. La commande pour générer *Metrics.exe* en mode hérité est :
 
 ```shell
 msbuild /m /v:m /t:rebuild /p:LEGACY_CODE_METRICS_MODE=true Metrics.csproj
 ```
 
-Pour plus d’informations, voir [Active générer des mesures de code en mode héritage](https://github.com/dotnet/roslyn-analyzers/pull/1841).
+Pour plus d’informations, consultez [activer la génération de métriques de code en mode hérité](https://github.com/dotnet/roslyn-analyzers/pull/1841).
 
 ### <a name="previous-versions"></a>Versions précédentes
 
 ::: moniker range=">=vs-2019"
-Visual Studio 2015 comprenait un outil de métriques de code de commande qui a également été appelé *Metrics.exe*. Cette version précédente de l’outil a fait une analyse binaire, c’est-à-dire une analyse basée sur l’assemblage. La nouvelle version de l’outil *Metrics.exe* analyse plutôt le code source. Parce que le nouvel outil *Metrics.exe* est basé sur le code source, les résultats de mesures de code de commande peuvent être différents de ceux générés par l’IDE Visual Studio et par les versions précédentes de *Metrics.exe*. À partir de Visual Studio 2019, le Visual Studio IDE analyse le code source comme l’outil de ligne de commande et les résultats devraient être les mêmes.
+Visual Studio 2015 inclut un outil de mesure du code de ligne de commande, également appelé *Metrics.exe*. Cette version précédente de l’outil a effectué une analyse binaire, c’est-à-dire une analyse basée sur un assembly. La version la plus récente de l’outil *Metrics.exe* analyse le code source à la place. Étant donné que le plus récent outil de *Metrics.exe* est basé sur le code source, les résultats de la métrique du code de ligne de commande peuvent être différents de ceux générés par l’IDE de Visual Studio et par les versions précédentes de *Metrics.exe*. À compter de Visual Studio 2019, l’IDE de Visual Studio analyse le code source comme l’outil en ligne de commande et les résultats doivent être identiques.
 
 ::: moniker-end
 ::: moniker range="vs-2017"
-Visual Studio 2015 comprenait un outil de métriques de code de commande qui a également été appelé *Metrics.exe*. Cette version précédente de l’outil a fait une analyse binaire, c’est-à-dire une analyse basée sur l’assemblage. Le nouvel outil *Metrics.exe* analyse plutôt le code source. Parce que le nouvel outil *Metrics.exe* est basé sur le code source, les résultats de mesures de code de commande sont différents de ceux générés par l’IDE Visual Studio et par les versions précédentes de *Metrics.exe*.
+Visual Studio 2015 inclut un outil de mesure du code de ligne de commande, également appelé *Metrics.exe*. Cette version précédente de l’outil a effectué une analyse binaire, c’est-à-dire une analyse basée sur un assembly. Le nouvel outil de *Metrics.exe* analyse le code source à la place. Étant donné que le nouvel outil de *Metrics.exe* est basé sur le code source, les résultats de la métrique du code de ligne de commande sont différents de ceux générés par l’IDE de Visual Studio et par les versions précédentes de *Metrics.exe*.
 ::: moniker-end
 
-Le nouvel outil de métriques de code de commande calcule des mesures même en présence d’erreurs de code source, tant que la solution et le projet peuvent être chargés.
+Le nouvel outil de métriques de code de ligne de commande calcule les métriques même en présence d’erreurs de code source, à condition que la solution et le projet puissent être chargés.
 
-#### <a name="metric-value-differences"></a>Différences de valeur métriques
+#### <a name="metric-value-differences"></a>Différences de valeur de métrique
 
 ::: moniker range=">=vs-2019"
-A partir de Visual Studio 2019 version 16.4 et Microsoft.CodeAnalysis.Metics `SourceLines` `ExecutableLines` (2.9.5), et remplacer la mesure précédente. `LinesOfCode` Pour les descriptions des nouvelles mesures, voir les [valeurs de mesures du Code](../code-quality/code-metrics-values.md). La `LinesOfCode` mesure est disponible en mode héritage.
+À partir de Visual Studio 2019 version 16,4 et Microsoft. CodeAnalysis. mesures (2.9.5) `SourceLines` , `ExecutableLines` Remplacez la `LinesOfCode` mesure précédente. Pour obtenir une description des nouvelles métriques, consultez valeurs de la [métrique du code](../code-quality/code-metrics-values.md). La `LinesOfCode` métrique est disponible en mode hérité.
 ::: moniker-end
 ::: moniker range="vs-2017"
-La `LinesOfCode` mesure est plus précise et plus fiable dans le nouvel outil de métriques de code de commande. Il est indépendant de toute différence de codegen et ne change pas lorsque la salle d’outils ou le temps d’exécution change. Le nouvel outil compte les lignes de code réelles, y compris les lignes et commentaires vierges.
+La `LinesOfCode` métrique est plus précise et fiable dans le nouvel outil de métriques de code de ligne de commande. Elle est indépendante des différences de CodeGen et ne change pas lorsque l’ensemble d’outils ou le runtime change. Le nouvel outil compte les lignes de code réelles, y compris les lignes vides et les commentaires.
 ::: moniker-end
 
-D’autres mesures `CyclomaticComplexity` `MaintainabilityIndex` telles que et utiliser les mêmes formules que les versions précédentes `IOperations` de *Metrics.exe*, mais le nouvel outil compte le nombre d’instructions (source logique) au lieu de la langue intermédiaire (IL) instructions. Les chiffres seront légèrement différents de ceux générés par le Visual Studio IDE et par les versions précédentes de *Metrics.exe*.
+D’autres métriques telles que `CyclomaticComplexity` et `MaintainabilityIndex` utilisent les mêmes formules que les versions précédentes de *Metrics.exe*, mais le nouvel outil compte le nombre d' `IOperations` instructions (source logique) à la place des instructions de langage intermédiaire (il). Les nombres sont légèrement différents de ceux générés par l’IDE de Visual Studio et par les versions précédentes de *Metrics.exe*.
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Utilisez la fenêtre de résultats de métriques de code](../code-quality/working-with-code-metrics-data.md)
-- [Valeurs de métriques de code](../code-quality/code-metrics-values.md)
+- [Utiliser la fenêtre résultats de la métrique du code](../code-quality/working-with-code-metrics-data.md)
+- [Valeurs de la métrique du code](../code-quality/code-metrics-values.md)

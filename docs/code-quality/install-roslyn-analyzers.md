@@ -1,7 +1,7 @@
 ---
 title: Installer des analyseurs Roslyn
 ms.date: 08/03/2018
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - code analysis, managed code
 - analyzers
@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 9a833cb46811bd97467fdb048272c9feb2bb7873
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: ce30dd25c43f1ac8254dbdb6b04b747a976f3557
+ms.sourcegitcommit: 48e93538f1e352fc1f972b642bb5fcce2f6834a2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75587379"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85371753"
 ---
 # <a name="install-net-compiler-platform-code-analyzers"></a>Installer .NET Compiler Platform analyseurs de code
 
@@ -33,13 +33,13 @@ Visual Studio comprend un ensemble principal d’analyseurs de .NET Compiler Pla
    > [!NOTE]
    > La page www.nuget.org pour chaque package de l’analyseur vous indique la commande à coller dans la **console du gestionnaire de package**. Il y a même un bouton pratique pour copier le texte dans le presse-papiers.
 
-   Les assemblys de l’analyseur sont installés et s’affichent dans **Explorateur de solutions** sous **références** > des **analyseurs**.
+   Les assemblys de l’analyseur sont installés et s’affichent dans **Explorateur de solutions** sous les **References**  >  **analyseurs**de références.
 
 ## <a name="to-install-vsix-analyzers"></a>Pour installer les analyseurs VSIX
 
 ::: moniker range="vs-2017"
 
-1. Dans Visual Studio, sélectionnez **outils** > **extensions et mises à jour**.
+1. Dans Visual Studio, sélectionnez **Outils** > **extensions et mises à jour**.
 
    La boîte de dialogue **Extensions et mises à jour** s’ouvre.
 
@@ -50,7 +50,7 @@ Visual Studio comprend un ensemble principal d’analyseurs de .NET Compiler Pla
 
 ::: moniker range=">=vs-2019"
 
-1. Dans Visual Studio, sélectionnez **extensions** > **gérer les extensions**.
+1. Dans Visual Studio, sélectionnez **Extensions** > **gérer les extensions**.
 
    La boîte de dialogue **gérer les extensions** s’ouvre.
 
@@ -81,17 +81,17 @@ Visual Studio comprend un ensemble principal d’analyseurs de .NET Compiler Pla
 
 ::: moniker range="vs-2017"
 
-Si vous souhaitez vérifier si l’extension est installée, sélectionnez **outils** > **extensions et mises à jour**. Dans la boîte de dialogue **extensions et mises à jour** , sélectionnez la catégorie **installé** sur la gauche, puis recherchez l’extension par nom.
+Si vous souhaitez vérifier si l’extension est installée, sélectionnez **Outils**  >  **extensions et mises à jour**. Dans la boîte de dialogue **extensions et mises à jour** , sélectionnez la catégorie **installé** sur la gauche, puis recherchez l’extension par nom.
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-Si vous souhaitez vérifier si l’extension est installée, sélectionnez **extensions** > **gérer les extensions**. Dans la boîte de dialogue **gérer les extensions** , sélectionnez la catégorie **installé** sur la gauche, puis recherchez l’extension par nom.
+Si vous souhaitez vérifier si l’extension est installée, sélectionnez **Extensions**  >  **gérer les extensions**. Dans la boîte de dialogue **gérer les extensions** , sélectionnez la catégorie **installé** sur la gauche, puis recherchez l’extension par nom.
 
 ::: moniker-end
 
-## <a name="next-steps"></a>Étapes suivantes :
+## <a name="next-steps"></a>Étapes suivantes
 
 > [!div class="nextstepaction"]
 > [Utiliser des analyseurs de code dans Visual Studio](../code-quality/use-roslyn-analyzers.md)
