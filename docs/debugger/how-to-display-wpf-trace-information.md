@@ -1,7 +1,7 @@
 ---
-title: 'Comment : afficher les informations de trace WPF | Microsoft Docs'
+title: Comment afficher les informations de trace WPF | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - CSharp
 - VB
@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 82c3f193c32b4e6a67bb0fe5540aa9d0020e77ea
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 362376176cfb95c4e285f6837c53d277110e3439
+ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72733466"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85349781"
 ---
 # <a name="how-to-display-wpf-trace-information"></a>Comment : afficher les informations de trace WPF
 [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] peut recevoir des informations de trace de débogage envoyées par des applications WPF et afficher ces informations dans la fenêtre **Sortie**. Pour afficher les informations de trace de débogage, le traçage WPF doit être activé.
@@ -85,4 +85,4 @@ ms.locfileid: "72733466"
 8. Cliquez sur **OK**.
 
 ## <a name="see-also"></a>Voir aussi
-- [Débogage de WPF](../debugger/debugging-wpf.md)
+- [Débogage WPF](../debugger/debugging-wpf.md)

@@ -1,7 +1,7 @@
 ---
 title: Actualiser une application UWP | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - CSharp
 - VB
@@ -19,12 +19,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - uwp
-ms.openlocfilehash: 0b1d19c0b607d2c5a09fddc9d4550230e478d57a
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: dd38a758a69b2e19079a2bc2511e7edf5cbfb0ab
+ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72730308"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85348156"
 ---
 # <a name="refresh-a-uwp-app-in-visual-studio"></a>Actualiser une application UWP dans Visual Studio
 
@@ -49,7 +49,7 @@ ms.locfileid: "72730308"
 
 1. Une fois votre projet UWP ouvert dans Visual Studio, sélectionnez **ordinateur local** comme cible de débogage.
 
-     ![Sélectionner la liste de cibles de débogage](../debugger/media/js_select_target.png "JS_Select_Target")
+     ![Sélectionner la liste cible de débogage](../debugger/media/js_select_target.png "JS_Select_Target")
 
 3. Appuyez sur F5 pour exécuter l'application en mode débogage.
 
@@ -62,4 +62,4 @@ ms.locfileid: "72730308"
 8. Basculez vers l'application. L’application est rechargée et le code HTML mis à jour est utilisé pour afficher l’application.
 
 ## <a name="see-also"></a>Voir aussi
-- [Démarrage rapide : déboguer du code HTML et CSS](../debugger/quickstart-debug-html-and-css.md)
+- [Démarrage rapide : déboguer du code HTML et CSS](../debugger/quickstart-debug-html-and-css.md)

@@ -1,7 +1,7 @@
 ---
-title: 'Comment : utiliser le visualiseur de l’arborescence WPF | Microsoft Docs'
+title: Comment utiliser le visualiseur de l’arborescence WPF | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - CSharp
 - VB
@@ -16,17 +16,17 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bbc705a20f8d878d85dc6aba14c64178c76041ac
-ms.sourcegitcommit: 978df2feb5e64228d2e3dd430b299a5c234cda17
+ms.openlocfilehash: 8e210d41541ef2fe0f7f8da149c23dc17645e44f
+ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/24/2019
-ms.locfileid: "72888400"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85348494"
 ---
 # <a name="how-to-use-the-wpf-tree-visualizer"></a>Comment : utiliser le visualiseur de l’arborescence WPF
 Vous pouvez utiliser le visualiseur de l'arborescence WPF pour explorer l'arborescence d'éléments visuels d'un objet WPF et visualiser les propriétés de dépendance WPF pour les objets contenus dans cette arborescence. Pour plus d’informations sur les arborescences d’éléments visuels, consultez [arborescences dans WPF](/dotnet/framework/wpf/advanced/trees-in-wpf). Pour plus d’informations sur les propriétés de dépendance, consultez [vue d’ensemble des propriétés de dépendance](/dotnet/framework/wpf/advanced/dependency-properties-overview).
 
- Lorsque vous ouvrez le visualiseur de l’arborescence WPF, deux volets s’affichent : l' **arborescence visuelle** à gauche et les **Propriétés du** volet _nom_ **:** _type_ à droite. Sélectionnez un objet dans le **volet arborescence** d’éléments visuels, et les **Propriétés du** volet _nom_ **:** _type_ sont automatiquement mises à jour pour afficher les propriétés de cet objet.
+ Lorsque vous ouvrez le visualiseur de l’arborescence WPF, deux volets s’affichent : l' **arborescence visuelle** à gauche et les **Propriétés du** volet _nom_**:**_type_ à droite. Sélectionnez un objet dans le **volet arborescence** d’éléments visuels, et les **Propriétés du** volet _nom_**:**_type_ sont automatiquement mises à jour pour afficher les propriétés de cet objet.
 
  > [!NOTE]
  > Vous pouvez également utiliser l' [arborescence d’éléments visuels en direct et l’Explorateur de propriétés en direct](../xaml-tools/inspect-xaml-properties-while-debugging.md) pour examiner l’arborescence d’éléments visuels des objets WPF. Le visualiseur de l’arborescence WPF est une fonctionnalité héritée qui n’est pas en cours de développement.
@@ -53,7 +53,7 @@ Vous pouvez utiliser le visualiseur de l'arborescence WPF pour explorer l'arbor
 
 ### <a name="to-search-the-properties-list"></a>Pour effectuer une recherche sur la liste des propriétés
 
-- Dans le volet **Propriétés du** _nom_ **:** _, tapez la_ chaîne que vous souhaitez rechercher dans la zone de **filtre** .
+- Dans le volet **Propriétés du** _nom_**:**_, tapez la_ chaîne que vous souhaitez rechercher dans la zone de **filtre** .
 
   Le visualiseur de l'arborescence WPF recherche immédiatement les propriétés qui correspondent à la chaîne que vous avez tapée. À présent, la liste n'affiche que les propriétés correspondant à la chaîne que vous avez tapée. Tapez plus de caractères pour rechercher une correspondance plus pertinente.
 

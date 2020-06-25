@@ -1,7 +1,7 @@
 ---
-title: Écriture de fonctions de raccordement de débogage | Microsoft Docs
+title: Écriture d’une fonction de raccordement de débogage | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - vc.hooks
 dev_langs:
@@ -21,25 +21,25 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 82145d39adc519bfd1324cc36805cea7b97b1664
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 038c976380ff1e1f0a1a7c4c150fc462f6b1d1db
+ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62563371"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85350717"
 ---
 # <a name="debug-hook-function-writing"></a>Écriture de fonctions de raccordement de débogage
 Cette section décrit plusieurs fonctions de raccordement de débogage personnalisées que vous pouvez écrire pour vous permettre d'insérer votre code dans quelques points prédéfinis du traitement normal du débogueur.
 
 ## <a name="in-this-section"></a>Dans cette section
- [Fonctions de raccordement de bloc client](../debugger/client-block-hook-functions.md) fournit des conseils et un prototype pour l’écriture de fonctions qui valident ou reportent le contenu des données stockées dans les blocs _CLIENT_BLOCK.
+ [Fonctions de raccordement de bloc client](../debugger/client-block-hook-functions.md) Fournit des conseils et un prototype pour l’écriture de fonctions qui valident ou signalent le contenu des données stockées dans des blocs _CLIENT_BLOCK.
 
- [Fonctions de raccordement d’allocation](../debugger/allocation-hook-functions.md) définit une fonction de raccordement d’allocation, étudie ses différentes utilisations, souligne les restrictions et fournit un prototype.
+ [Fonctions de raccordement d’allocation](../debugger/allocation-hook-functions.md) Définit une fonction de raccordement d’allocation, explore ses différentes utilisations, présente des restrictions et fournit un prototype.
 
- [Raccordements d’allocation et Allocations de mémoire CRT](../debugger/allocation-hooks-and-c-run-time-memory-allocations.md) décrit la restriction des fonctions de raccordement d’allocation d’ignorer de façon explicite `_CRT_BLOCK` bloque si elles passent des appels aux fonctions de bibliothèque Runtime C qui allouent la mémoire interne. Cette rubrique répertorie également les conséquences si votre raccordement d’allocation n’ignore pas les blocs `_CRT_BLOCK` (avec exemples) et la façon de modifier la fonction de raccordement d’allocation par défaut, **CrtDefaultAllocHook**.
+ [Raccordements d’allocation et allocations de mémoire CRT](../debugger/allocation-hooks-and-c-run-time-memory-allocations.md) Décrit la restriction sur les fonctions de raccordement d’allocation de blocs ignorés explicitement `_CRT_BLOCK` s’ils effectuent des appels à des fonctions de la bibliothèque Runtime C qui allouent de la mémoire interne. Cette rubrique répertorie également les conséquences si votre raccordement d’allocation n’ignore pas les blocs `_CRT_BLOCK` (avec exemples) et la façon de modifier la fonction de raccordement d’allocation par défaut, **CrtDefaultAllocHook**.
 
- [Fonctions de raccordement de rapport](../debugger/report-hook-functions.md) présente `_CrtSetReportHook`, que vous pouvez utiliser pour filtrer des rapports pour vous concentrer sur les types d’allocations spécifiques. Cette rubrique fournit également un prototype.
+ [Fonctions de raccordement de rapport](../debugger/report-hook-functions.md) Aborde `_CrtSetReportHook` les, que vous pouvez utiliser pour filtrer des rapports afin de vous concentrer sur des types d’allocation spécifiques. Cette rubrique fournit également un prototype.
 
-## <a name="related-sections"></a>Rubriques connexes
+## <a name="related-sections"></a>Sections connexes
 
-- [Techniques de débogage CRT](../debugger/crt-debugging-techniques.md) -des liens vers des techniques de débogage pour la bibliothèque Runtime C, y compris à l’aide de la bibliothèque de débogage CRT, les macros pour la création de rapports, les différences entre `malloc` et `_malloc_dbg`, écriture de fonctions de raccordement de débogage et la bibliothèque CRT tas de débogage.
+- [Techniques de débogage CRT](../debugger/crt-debugging-techniques.md) : liens vers les techniques de débogage pour la bibliothèque Runtime C, notamment l’utilisation de la bibliothèque de débogage CRT, les macros pour la création de rapports, les différences entre `malloc` et `_malloc_dbg` , l’écriture de fonctions de raccordement de débogage et le tas de débogage CRT.

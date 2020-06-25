@@ -1,7 +1,7 @@
 ---
-title: 'Procédure : Vérifiez les paramètres des propriétés IIS | Microsoft Docs'
+title: Comment vérifier les paramètres de propriété IIS | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - CSharp
 - VB
@@ -19,23 +19,23 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3dd516151f7a3656da1bae195870e8cc29528cfa
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f37a1ee196b14ec1f8c7b03ffc6e6d826ced02d8
+ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62846426"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85348468"
 ---
-# <a name="how-to-verify-iis-property-settings"></a>Procédure : Vérifier les paramètres des propriétés IIS
+# <a name="how-to-verify-iis-property-settings"></a>Comment : vérifier les paramètres des propriétés IIS
 
 Vous pouvez définir les propriétés d'une application Web à l'aide de l'outil d'administration IIS. Ces propriétés doivent être correctement définies pour que l'application s'exécute. Il est donc souvent nécessaire de vérifier ces paramètres pour pouvoir dépanner.
 
 > [!NOTE]
-> Les boîtes de dialogue et les commandes de menu qui s'affichent peuvent être différentes de celles qui sont décrites dans l'aide, en fonction de vos paramètres actifs ou de l'édition utilisée. Pour modifier vos paramètres, choisissez **Importation et exportation de paramètres** dans le menu **Outils** . Pour plus d’informations, consultez [Réinitialiser les paramètres](../ide/environment-settings.md#reset-settings).
+> Les boîtes de dialogue et les commandes de menu affichées peuvent différer de celles décrites dans l'Aide selon les paramètres actifs ou le mode d'édition. Pour modifier vos paramètres, choisissez **Paramètres d'importation et d'exportation** dans le menu **Outils** . Pour plus d’informations, consultez [Réinitialiser les paramètres](../ide/environment-settings.md#reset-settings).
 
 ## <a name="to-check-iis-settings-for-the-web-application"></a>Pour vérifier les paramètres IIS pour l'application Web
 
-1. Ouvrez le **outils d’administration** fenêtre : Sur le **Démarrer** menu, pointez sur **programmes**, puis cliquez sur **outils d’administration**. Si **Outils d’administration** n’apparaît pas dans le menu **Programmes**, recherchez-le dans le **Panneau de configuration**.
+1. Ouvrez la fenêtre **Outils d’administration** : dans le menu **Démarrer**, pointez sur **Programmes**, puis cliquez sur **Outils d’administration**. Si **Outils d’administration** n’apparaît pas dans le menu **Programmes**, recherchez-le dans le **Panneau de configuration**.
 
    - Sur Windows 2000, sélectionnez **Gestionnaire des services Internet**.
 
@@ -59,7 +59,7 @@ Vous pouvez définir les propriétés d'une application Web à l'aide de l'outil
 
    3. Cliquez sur **OK** pour fermer la boîte de dialogue **Méthodes d’authentification**.
 
-5. Pour une application ATL Server, vérifiez que le verbe DEBUG est associé à votre extension ISAPI. Pour plus d'informations, voir [Procédure : Associer le verbe DEBUG avec l’Extension](https://msdn.microsoft.com/library/50d261d3-4bd4-41c0-b44e-3591086f121e).
+5. Pour une application ATL Server, vérifiez que le verbe DEBUG est associé à votre extension ISAPI. Pour plus d’informations, consultez [Comment : associer le verbe Debug avec l’extension](https://msdn.microsoft.com/library/50d261d3-4bd4-41c0-b44e-3591086f121e).
 
 6. Pour une application [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)], vérifiez que le dossier virtuel de l’application comporte un nom d’application défini dans le **Gestionnaire des services Internet (IIS)**, le **Gestionnaire des services Internet** ou les **Services IIS (Internet Information Services)**.
 
@@ -79,4 +79,4 @@ Vous pouvez définir les propriétés d'une application Web à l'aide de l'outil
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Résolution des problèmes](../debugger/debugging-web-applications-troubleshooting.md)
+- [Dépannage](../debugger/debugging-web-applications-troubleshooting.md)

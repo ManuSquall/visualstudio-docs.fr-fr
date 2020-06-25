@@ -3,7 +3,7 @@ title: En savoir plus sur le débogage d’applications multithread
 description: Débogage à l’aide des fenêtres piles parallèles et espion parallèle dans Visual Studio
 ms.custom: ''
 ms.date: 02/14/2020
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - CSharp
 - VB
@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f280a93022342fd9ca4dcae5cdac1de919fe1657
-ms.sourcegitcommit: 6ef52c2030b37ea7a64fddb32f050ecfb77dd918
+ms.openlocfilehash: 30fd29357ab8b42ea6a8baa6412f9ccf7eafed28
+ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/17/2020
-ms.locfileid: "77416405"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85350509"
 ---
 # <a name="get-started-debugging-multithreaded-applications-c-visual-basic-c"></a>Prise en main du débogage des applications multithread (C#, Visual Basic, C++)
 
@@ -42,28 +42,28 @@ Vous avez tout d’abord besoin d’un projet d’application multithread. Un ex
 
    ::: moniker range=">=vs-2019"
 
-   Si la fenêtre de démarrage n’est pas ouverte, choisissez **fichier** > **fenêtre démarrer**.
+   Si la fenêtre de démarrage n’est pas ouverte **File** , choisissez > **fenêtre démarrage**de fichier.
 
-   Dans la fenêtre de démarrage, choisissez **Créer un projet**.
+   Dans la fenêtre Démarrer, choisissez **créer un nouveau projet**.
 
-   Dans la fenêtre **Créer un projet**, entrez ou tapez *console* dans la zone de recherche. Ensuite, choisissez **C#** , **C++** ou **Visual Basic** dans la liste langue, puis choisissez **Windows** dans la liste plateforme. 
+   Dans la fenêtre **Créer un projet**, entrez ou tapez *console* dans la zone de recherche. Ensuite, choisissez **C#**, **C++** ou **Visual Basic** dans la liste langue, puis choisissez **Windows** dans la liste plateforme. 
 
-   Après avoir appliqué les filtres de langue et de plateforme, choisissez l' **application console (.net Core)** ou C++, pour, le modèle d' **application console** , puis choisissez **suivant**.
+   Après avoir appliqué les filtres de langue et de plateforme, choisissez l' **application console (.net Core)** ou, pour C++, le modèle **application console** , puis choisissez **suivant**.
 
    > [!NOTE]
-   > Si vous ne voyez pas le modèle approprié, accédez à **outils** > **obtenir les outils et fonctionnalités...** , qui ouvre le Visual Studio installer. Choisissez la charge de travail **Développement .NET Desktop** ou **Développement Desktop avec C++** , puis choisissez **Modifier**.
+   > Si vous ne voyez pas le modèle approprié, accédez à **Outils**  >  **obtenir des outils et des fonctionnalités...**, qui ouvre le Visual Studio installer. Choisissez la charge de travail **développement de bureau .net** ou **développement bureautique avec C++** , puis choisissez **modifier**.
 
-   Dans la fenêtre **configurer votre nouveau projet** , tapez ou entrez *MyThreadWalkthroughApp* dans la zone **nom du projet** . Choisissez ensuite **Créer**.
+   Dans la fenêtre **configurer votre nouveau projet** , tapez ou entrez *MyThreadWalkthroughApp* dans la zone **nom du projet** . Ensuite, choisissez **créer**.
 
    ::: moniker-end
    ::: moniker range="vs-2017"
-   Dans la barre de menus supérieure, choisissez **Fichier** > **Nouveau** > **Projet**. Dans le volet gauche de la boîte de dialogue **nouveau projet** , choisissez ce qui suit :
+   Dans la barre de menus supérieure, choisissez **fichier**  >  **nouveau**  >  **projet**. Dans le volet gauche de la boîte de dialogue **nouveau projet** , choisissez ce qui suit :
 
-   - Pour une C# application, sous **Visual C#** , choisissez **Bureau Windows**, puis dans le volet central, choisissez **application console (.NET Framework)** .
-   - Pour une application Visual Basic, sous **Visual Basic**, choisissez **Bureau Windows**, puis dans le volet central, choisissez **application console (.NET Framework)** .
-   - Pour une C++ application, sous **Visual C++** , choisissez **Bureau Windows**,, puis **application console Windows**.
+   - Pour une application C#, sous **Visual c#**, choisissez **Bureau Windows**, puis dans le volet central, choisissez **application console (.NET Framework)**.
+   - Pour une application Visual Basic, sous **Visual Basic**, choisissez **Bureau Windows**, puis dans le volet central, choisissez **application console (.NET Framework)**.
+   - Pour une application C++, sous **Visual C++**, choisissez **Bureau Windows**,, puis **application console Windows**.
 
-   Si vous ne voyez pas **l’application console (.net Core)** ou, C++pour, le modèle de projet d' **application console** , accédez à **Outils** > **obtenir les outils et fonctionnalités...** , qui ouvre le Visual Studio installer. Choisissez la charge de travail **Développement .NET Desktop** ou **Développement Desktop avec C++** , puis choisissez **Modifier**.
+   Si vous ne voyez pas l' **application console (.net Core)** ou, pour C++, le modèle de projet d' **application console** , accédez à **Outils**  >  **obtenir des outils et des fonctionnalités...**, qui ouvre le Visual Studio installer. Choisissez la charge de travail **développement de bureau .net** ou **développement bureautique avec C++** , puis choisissez **modifier**.
 
    Ensuite, tapez un nom tel que *MyThreadWalkthroughApp* , puis cliquez sur **OK**.
 
@@ -232,7 +232,7 @@ Vous avez tout d’abord besoin d’un projet d’application multithread. Un ex
     Console.WriteLine()
     ```
 
-1. Cliquez avec le volet gauche dans la marge gauche de l’instruction `Thread.Sleep` ou `std::this_thread::sleep_for` pour insérer un nouveau point d’arrêt.
+1. Cliquez sur la marge gauche de l' `Thread.Sleep` `std::this_thread::sleep_for` instruction ou pour insérer un nouveau point d’arrêt.
 
     Dans la reliure, un cercle rouge indique qu’un point d’arrêt est défini à cet emplacement.
 
@@ -242,7 +242,7 @@ Vous avez tout d’abord besoin d’un projet d’application multithread. Un ex
 
 3. Dans l’éditeur de code source, localisez la ligne qui contient le point d’arrêt.
 
-### <a name="ShowThreadsInSource"></a>Détection du marqueur de thread  
+### <a name="discover-the-thread-marker"></a><a name="ShowThreadsInSource"></a>Détection du marqueur de thread  
 
 1. Dans la barre d’outils déboguer, sélectionnez le bouton **afficher les threads dans la source** ![afficher les threads dans la source](../debugger/media/dbg-multithreaded-show-threads.png "ThreadMarker").
 
@@ -252,23 +252,23 @@ Vous avez tout d’abord besoin d’un projet d’application multithread. Un ex
 
     Un marqueur de thread peut être partiellement masqué par un point d’arrêt.
 
-4. Placez le pointeur sur le marqueur de thread. Un DataTip s’affiche pour vous indiquer le nom et le numéro d’ID de thread pour chaque thread arrêté. Dans ce cas, le nom est probablement `<noname>`.
+4. Placez le pointeur sur le marqueur de thread. Un DataTip s’affiche pour vous indiquer le nom et le numéro d’ID de thread pour chaque thread arrêté. Dans ce cas, le nom est probablement `<noname>` .
 
 5. Sélectionnez le marqueur de thread pour afficher les options disponibles dans le menu contextuel.
 
-### <a name="ParallelStacks"></a>Afficher les emplacements de thread
+### <a name="view-the-thread-locations"></a><a name="ParallelStacks"></a>Afficher les emplacements de thread
 
 Dans la fenêtre **Piles parallèles** , vous pouvez basculer entre une vue threads et (pour la programmation basée sur des tâches) et vous pouvez afficher les informations de la pile des appels pour chaque thread. Dans cette application, vous pouvez utiliser la vue threads.
 
-1. Ouvrez la fenêtre **Piles parallèles** en choisissant **déboguer** > **Piles parallèles** **Windows** > . Un résultat similaire à ce qui suit doit s’afficher. Les informations exactes diffèrent en fonction de l’emplacement actuel de chaque thread, de votre matériel et de votre langage de programmation.
+1. Ouvrez la fenêtre **Piles parallèles** en choisissant **Déboguer**  >  **Windows**  >  **Piles parallèles**Windows. Un résultat similaire à ce qui suit doit s’afficher. Les informations exactes diffèrent en fonction de l’emplacement actuel de chaque thread, de votre matériel et de votre langage de programmation.
 
     ![Fenêtre piles parallèles](../debugger/media/dbg-multithreaded-parallel-stacks.png "ParallelStacksWindow")
 
     Dans cet exemple, les informations du code managé sont visibles de gauche à droite.
 
-    - Le thread principal (côté gauche) s’est arrêté sur `Thread.Start`, où le point d’arrêt est indiqué par le ![marqueur de thread](../debugger/media/dbg-thread-marker.png "ThreadMarker")de l’icône de marqueur de thread.
-    - Deux threads sont entrés dans le `ServerClass.InstanceMethod`, dont l’un est le thread actuel (flèche jaune), tandis que l’autre thread s’est arrêté dans `Thread.Sleep`.
-    - Un nouveau thread (à droite) démarre également, mais s’arrête sur `ThreadHelper.ThreadStart`.
+    - Le thread principal (côté gauche) s’est arrêté le `Thread.Start` , où le point d’arrêt est indiqué par le ![marqueur de thread](../debugger/media/dbg-thread-marker.png "ThreadMarker")de l’icône de marqueur de thread.
+    - Deux threads ont entré le `ServerClass.InstanceMethod` , dont l’un est le thread actuel (flèche jaune), tandis que l’autre thread s’est arrêté dans `Thread.Sleep` .
+    - Un nouveau thread (à droite) démarre également, mais s’arrête `ThreadHelper.ThreadStart` .
 
 2. Cliquez avec le bouton droit sur entrées dans la fenêtre **Piles parallèles** pour afficher les options disponibles dans le menu contextuel.
 
@@ -279,15 +279,15 @@ Dans la fenêtre **Piles parallèles** , vous pouvez basculer entre une vue thre
 
 ### <a name="set-a-watch-on-a-variable"></a>Définir un espion sur une variable
 
-1. Ouvrez la fenêtre **Espion parallèle** en sélectionnant **déboguer** > **Windows** > **observation** parallèle > **Espion parallèle 1**.
+1. Ouvrez la fenêtre **Espion parallèle** en sélectionnant **Déboguer**  >  **Windows**  >  **parallèle surveiller**  >  **parallèle espion 1**.
 
-2. Sélectionnez la cellule dans laquelle se trouve le texte `<Add Watch>` (ou la cellule d’en-tête vide dans la quatrième colonne) et entrez `data`.
+2. Sélectionnez la cellule où vous voyez le `<Add Watch>` texte (ou la cellule d’en-tête vide dans la quatrième colonne) et entrez `data` .
 
     Les valeurs de la variable de données pour chaque thread s’affichent dans la fenêtre.
 
-3. Sélectionnez la cellule où se trouve le texte de `<Add Watch>` (ou la cellule d’en-tête vide dans la 5e colonne), puis entrez `count`.
+3. Sélectionnez la cellule où vous voyez le `<Add Watch>` texte (ou la cellule d’en-tête vide dans la 5e colonne) et entrez `count` .
 
-    Les valeurs de la variable `count` pour chaque thread s’affichent dans la fenêtre. Si vous ne voyez pas encore cette quantité d’informations, essayez d’appuyer sur **F11** plusieurs fois pour avancer l’exécution des threads dans le débogueur.
+    Les valeurs de la `count` variable pour chaque thread s’affichent dans la fenêtre. Si vous ne voyez pas encore cette quantité d’informations, essayez d’appuyer sur **F11** plusieurs fois pour avancer l’exécution des threads dans le débogueur.
 
     ![Fenêtre Espion parallèle](../debugger/media/dbg-multithreaded-parallel-watch.png "ParallelWatchWindow")
 
@@ -313,7 +313,7 @@ Vous pouvez marquer les threads pour effectuer le suivi des threads importants e
 
 5. Pour supprimer l’indicateur de threads, cliquez avec le bouton droit sur un ou plusieurs threads avec indicateur dans la fenêtre **Espion parallèle** , puis sélectionnez **Supprimer l’indicateur**.
 
-### <a name="bkmk_freeze"></a>Figer et libérer l’exécution des threads
+### <a name="freeze-and-thaw-thread-execution"></a><a name="bkmk_freeze"></a>Figer et libérer l’exécution des threads
 
 > [!TIP]
 > Vous pouvez figer et libérer (suspendre et reprendre) les threads pour contrôler l’ordre dans lequel les threads effectuent le travail. Cela peut vous aider à résoudre les problèmes d’accès concurrentiel tels que les blocages et les conditions de concurrence.
@@ -332,7 +332,7 @@ Vous pouvez marquer les threads pour effectuer le suivi des threads importants e
 
     L’application peut également instancier de nouveaux threads. Les nouveaux threads ne sont pas signalés et ne sont pas figés.
 
-### <a name="bkmk_follow_a_thread"></a>Suivre un thread unique avec des points d’arrêt conditionnels
+### <a name="follow-a-single-thread-with-conditional-breakpoints"></a><a name="bkmk_follow_a_thread"></a>Suivre un thread unique avec des points d’arrêt conditionnels
 
 Il peut être utile de suivre l’exécution d’un thread unique dans le débogueur. Pour ce faire, vous pouvez figer les threads qui ne vous intéressent pas. Dans certains scénarios, vous devrez peut-être suivre un thread unique sans figer d’autres threads, par exemple pour reproduire un bogue particulier. Pour suivre un thread sans figer d’autres threads, vous devez éviter de vous arrêter dans le code, sauf sur le thread qui vous intéresse. Pour ce faire, vous pouvez définir un [point d’arrêt conditionnel](../debugger/using-breakpoints.md#BKMK_Specify_a_breakpoint_condition_using_a_code_expression).
 
@@ -362,7 +362,7 @@ Vous pouvez définir des points d’arrêt sur différentes conditions, telles q
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Déboguer les applications multithread](../debugger/debug-multithreaded-applications-in-visual-studio.md)
+- [Déboguer des applications multithread](../debugger/debug-multithreaded-applications-in-visual-studio.md)
 - [Guide pratique pour basculer vers un autre thread pendant un débogage](../debugger/how-to-switch-to-another-thread-while-debugging.md)
 - [Comment : utiliser la fenêtre pile parallèle](../debugger/using-the-parallel-stacks-window.md)
 - [Guide pratique pour utiliser la fenêtre Espion parallèle](../debugger/how-to-use-the-parallel-watch-window.md)

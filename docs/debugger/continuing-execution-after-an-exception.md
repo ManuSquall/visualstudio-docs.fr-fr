@@ -1,7 +1,7 @@
 ---
 title: Poursuite de l’exécution après une exception | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - CSharp
 - VB
@@ -25,15 +25,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e7be214a950c8cc93d986f97834a848bd9ab824e
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 2e94867d845988b787247c32d32afd35af946972
+ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72745644"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85350678"
 ---
 # <a name="continuing-execution-after-an-exception"></a>Poursuite de l'exécution à la suite d'une exception
-Lorsque le débogueur interrompt l’exécution en raison d’une exception, vous verrez l' **assistance d’exception**, par défaut. Si vous avez désactivé l' **assistance aux exceptions** dans la boîte de dialogue **options** , vous verrez **l’Assistant Exception** C# (ou Visual Basic) ou la boîte de dialogue d' **exception** (C++).
+Lorsque le débogueur interrompt l’exécution en raison d’une exception, vous verrez l' **assistance d’exception**, par défaut. Si vous avez désactivé le **programme d’assistance** de l’exception dans la boîte de dialogue **options** , l' **Assistant Exception** (C# ou Visual Basic) ou la boîte de dialogue d' **exception** (C++) s’affichent.
 
  Lorsque l' **assistance d’exception** s’affiche, vous pouvez essayer de résoudre le problème à l’origine de l’exception.
 

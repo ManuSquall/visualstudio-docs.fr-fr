@@ -2,7 +2,7 @@
 title: Appliquer les modifications en mode arrêt avec modifier & continuer | Microsoft Docs
 ms.custom: seodec18
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - vs.debug.variables.failededit
 dev_langs:
@@ -23,12 +23,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 05340b4922262eb134aca8fef4bf215342e5a997
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: acdd5b85c77b177dfb5f6d8129594967e902337c
+ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72734031"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85350298"
 ---
 # <a name="how-to-apply-edits-in-break-mode-with-edit-and-continue-visual-basic"></a>Comment : appliquer des modifications en mode arrêt à l’aide de la fonction Modifier & Continuer (Visual Basic)
 Vous pouvez utiliser Modifier &amp; Continuer pour modifier votre code en mode Arrêt, puis continuer sans arrêter et redémarrer l'exécution.
@@ -41,17 +41,17 @@ Pour connaître les limitations relatives à l’utilisation de modifier & conti
 
     - Définissez un point d’arrêt dans votre code, puis cliquez sur **Démarrer le débogage** dans le menu **Déboguer** et attendez que l’application parvienne au point d’arrêt.
 
-         ou
+         -ou-
 
     - Démarrez le débogage, puis sélectionnez **Interrompre tout** dans le menu **Déboguer**.
 
-         ou
+         -ou-
 
     - Quand une exception se produit, choisissez **activer la modification** dans l' **Assistant Exception**.
 
 2. Apportez les modifications de code souhaitées et prises en charge.
 
-     Pour plus d’informations, consultez [modifications du codeC# prises en charge (et Visual Basic)](../debugger/supported-code-changes-csharp.md).
+     Pour plus d’informations, consultez [modifications de code prises en charge (C# et Visual Basic)](../debugger/supported-code-changes-csharp.md).
 
     > [!NOTE]
     > Si vous tentez d'effectuer une modification du code qui n'est pas autorisée par l'opération Modifier &amp; Continuer, votre modification est soulignée d'un trait ondulé violet et une tâche s'affiche dans la liste des tâches. Il vous est impossible de continuer l'exécution du code sauf si vous annulez la modification de code non autorisée.
@@ -61,5 +61,5 @@ Pour connaître les limitations relatives à l’utilisation de modifier & conti
      Votre code s'exécute désormais avec les modifications que vous avez appliquées dans le projet.
 
 ## <a name="see-also"></a>Voir aussi
-- [Modifications du code prisesC# en charge (et Visual Basic)](../debugger/supported-code-changes-csharp.md)
-- [Modifier & Continuer (Visual Basic)](../debugger/edit-and-continue-visual-basic.md)
+- [Modifications de code prises en charge (C# et Visual Basic)](../debugger/supported-code-changes-csharp.md)
+- [Modifier &amp; Continuer (Visual Basic)](../debugger/edit-and-continue-visual-basic.md)

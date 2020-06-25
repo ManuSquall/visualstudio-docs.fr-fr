@@ -1,7 +1,7 @@
 ---
 title: Exécuter des applications UWP dans le simulateur | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - CSharp
 - VB
@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: b7d68a23ffba12e9654ac047629bd64ecfae4bb6
-ms.sourcegitcommit: 77ef1dcc71057cd5fdc4733ff0cb6085bd6113e0
+ms.openlocfilehash: 1c208e435e63891c71fe47ebd64c5fe1307e0c82
+ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "73661902"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85348139"
 ---
 # <a name="run-uwp-apps-in-the-simulator"></a>Exécuter des applications UWP dans le simulateur
 
@@ -31,13 +31,13 @@ Le simulateur Visual Studio pour les applications UWP ne s’exécute pas dans u
 > [!IMPORTANT]
 > Le simulateur Visual Studio 2015 n’inclut pas le bouton de géolocalisation. En effet, le simulateur Windows 10 n’inclut pas la simulation de géolocalisation.
 
-## <a name="BKMK_Set_the_simulator_as_the_target"></a> Définir un simulateur comme cible
+## <a name="set-the-simulator-as-the-target"></a><a name="BKMK_Set_the_simulator_as_the_target"></a> Définir un simulateur comme cible
 
-Pour exécuter votre application UWP dans le simulateur, sélectionnez **simulateur** dans la liste déroulante en regard du bouton **Démarrer le débogage** de la barre d’outils **standard** du débogueur. Cette option est disponible uniquement si la **version minimale de la plateforme cible** de votre application est inférieure ou égale au système d’exploitation de votre ordinateur de développement.
+Pour exécuter votre application UWP dans le simulateur, sélectionnez **simulateur** dans la liste déroulante en regard du bouton **Démarrer le débogage** de la barre d’outils **standard** du débogueur. Cette option est disponible uniquement si la **Version minimale de la plateforme cible** de votre application est inférieure ou égale à celle du système d’exploitation de votre ordinateur de développement.
 
 ![Exécution dans le simulateur](../debugger/media/vsrun_f5_simulator.png "VSRUN_F5_Simulator")
 
-## <a name="BKMK_Choose_an_interaction_mode"></a> Choisir un mode d'interaction
+## <a name="choose-an-interaction-mode"></a><a name="BKMK_Choose_an_interaction_mode"></a> Choisir un mode d'interaction
 
 Vous pouvez choisir les modes d’interaction suivants :
 
@@ -49,7 +49,7 @@ Vous pouvez choisir les modes d’interaction suivants :
    
    L’icône de cible unique indique l’emplacement des événements dans le simulateur. Utilisez la souris pour positionner le pointeur.
 
-   ![Une cible doigt Touch](../debugger/media/simulator_onefingerengaged.png "SIMULATOR_OneFingerEngaged")
+   ![Cible tactile à un doigt](../debugger/media/simulator_onefingerengaged.png "SIMULATOR_OneFingerEngaged")
    
    Appuyez sur le bouton gauche de la souris pour activer le mode tactile. Par exemple, cliquez sur le bouton pour simuler une pression simple, ou appuyez sur la touche et maintenez-la enfoncée pendant un déplacement ou un glissement.
 
@@ -81,10 +81,10 @@ Le bouton **Émulation de tactile : pivoter** définit le mode d’interaction s
 
 - Appuyez sur le bouton gauche et tournez la molette de la souris vers l'avant (en s'éloignant de vous) pour faire pivoter l'objet dans le sens des aiguilles d'une montre.
 
-## <a name="BKMK_Enable_or_disable_Always_on_top_mode"></a> Activer ou désactiver le mode Toujours visible
+## <a name="enable-or-disable-always-on-top-mode"></a><a name="BKMK_Enable_or_disable_Always_on_top_mode"></a> Activer ou désactiver le mode Toujours visible
  Définissez la fenêtre du simulateur pour qu'elle s'affiche toujours au-dessus des autres fenêtres. Le bouton **Activer/désactiver la fenêtre au premier plan** active ou désactive le mode **Toujours visible** de la fenêtre du simulateur.
 
-## <a name="BKMK_Change_the_device_orientation"></a> Modifier l'orientation de l'appareil
+## <a name="change-the-device-orientation"></a><a name="BKMK_Change_the_device_orientation"></a> Modifier l'orientation de l'appareil
  Vous pouvez changer l'orientation du périphérique entre le mode Portrait et Paysage en appliquant au simulateur une rotation de 90 degrés dans n'importe quelle direction.
 
 > [!NOTE]
@@ -93,7 +93,7 @@ Le bouton **Émulation de tactile : pivoter** définit le mode d’interaction s
 > [!NOTE]
 > Si vous faites pivoter un simulateur et qu'un bord du simulateur est plus grand que l'écran sur lequel il s'affiche, le simulateur est automatiquement redimensionné à la taille de l'écran. Le simulateur n'est pas redimensionné dans sa taille d'origine si vous lui appliquez une nouvelle rotation.
 
-## <a name="BKMK_Change_the_simulated_screen_size_and_resolution"></a> Modifier la taille et la résolution simulées de l'écran
+## <a name="change-the-simulated-screen-size-and-resolution"></a><a name="BKMK_Change_the_simulated_screen_size_and_resolution"></a> Modifier la taille et la résolution simulées de l'écran
  Pour modifier la taille et la résolution simulées de l’écran, sélectionnez le bouton **Modifier la résolution** dans la palette et choisissez une nouvelle taille et résolution dans la liste.
 
  La taille et la résolution de l'écran sont indiquées en *Largeur écran pouces, largeur pixel X hauteur pixel*. Notez que la taille et la résolution de l'écran sont simulées. Les coordonnées de l’emplacement sur le simulateur sont traduites selon la taille et la résolution de l’appareil sélectionnées.
@@ -101,7 +101,7 @@ Le bouton **Émulation de tactile : pivoter** définit le mode d’interaction s
 > [!NOTE]
 > Enregistrez les versions mises à l'échelle d'images bitmap dans votre application et Windows chargera l'image appropriée à l'échelle actuelle. Pour plus d’informations, consultez présentation [de l’interface utilisateur et](/windows/uwp/layout/design-and-ui-intro)de la conception. Toutefois, si vous modifiez la résolution du simulateur pour que Windows sélectionne une image différente en fonction de la résolution, vous devez arrêter et redémarrer la session de débogage pour afficher la nouvelle image.
 
-## <a name="BKMK_Capture_a_screenshot_of_your_app_for_submission_to_the_Microsoft_Store"></a>Capturer une capture d’écran de votre application pour l’envoyer à Microsoft Store
+## <a name="capture-a-screenshot-of-your-app-for-submission-to-microsoft-store"></a><a name="BKMK_Capture_a_screenshot_of_your_app_for_submission_to_the_Microsoft_Store"></a>Capturer une capture d’écran de votre application pour l’envoyer à Microsoft Store
  Lorsque vous soumettez une application à Microsoft Store, vous devez inclure des captures d’écran de l’application.
 
 > [!NOTE]
@@ -111,9 +111,9 @@ Le bouton **Émulation de tactile : pivoter** définit le mode d’interaction s
 
 - Pour définir l’emplacement où se trouve les captures d’écran, sélectionnez le bouton **Paramètres de capture d’écran** et sélectionnez l’emplacement dans le menu contextuel.
 
-   ![Menu contextuel des paramètres de capture d'écran](../debugger/media/simulator_screenshotsettingscntxmnu.png)
+   ![Menu contextuel des paramètres de capture d’écran](../debugger/media/simulator_screenshotsettingscntxmnu.png)
 
-## <a name="BKMK_Simulate_network_connection_properties"></a> Simuler des propriétés de connexion réseau
+## <a name="simulate-network-connection-properties"></a><a name="BKMK_Simulate_network_connection_properties"></a> Simuler des propriétés de connexion réseau
 
 Vous pouvez aider les utilisateurs de votre application à gérer le coût des connexions réseau limitées en faisant bien comprendre le coût des connexions réseau ou les modifications de l'état du forfait données et en permettant à votre application d'utiliser ces informations pour éviter de subir des frais d'itinérance supplémentaires ou de dépasser la limite de transfert de données spécifiée. Les API [Windows.Networking.Connectivity](/uwp/api/windows.networking.connectivity) vous permettent de répondre aux événements [NetworkStatusChanged](/uwp/api/windows.networking.connectivity.networkinformation) et [TriggerType](/uwp/api/windows.applicationmodel.background.systemtrigger) qui assurent la connexion. Consultez [Comment gérer les contraintes liées au coût des connexions réseau limitées (HTML)](https://msdn.microsoft.com/library/windows/apps/Hh750310.aspx).
 
@@ -153,7 +153,7 @@ Pour plus d’informations sur la gestion des connexions réseau, consultez :
 
 [Comment déclencher des événements d’interruption, de reprise et d’arrière-plan dans des applications UWP](how-to-trigger-suspend-resume-and-background-events-for-windows-store-apps-in-visual-studio.md)
 
-## <a name="BKMK_Navigate_the_simulator_with_the_keyboard"></a> Naviguez dans le simulateur à l'aide du clavier
+## <a name="navigate-the-simulator-with-the-keyboard"></a><a name="BKMK_Navigate_the_simulator_with_the_keyboard"></a> Naviguez dans le simulateur à l'aide du clavier
 
 Vous pouvez naviguer dans la barre d’outils du simulateur en appuyant sur **Ctrl + Alt + flèche haut** pour basculer le focus de la fenêtre du simulateur vers la barre d’outils du simulateur. Utilisez **Flèche haut** et **Flèche bas** pour basculer entre les boutons de la barre d'outils.
 

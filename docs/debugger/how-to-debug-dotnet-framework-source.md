@@ -1,7 +1,7 @@
 ---
-title: 'Procédure : Déboguer une source .NET Framework | Microsoft Docs'
+title: Comment déboguer la source de .NET Framework | Microsoft Docs
 ms.date: 11/19/2018
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - debugging, .NET Framework source
 ms.assetid: fc12e472-ac6a-4e77-8e22-a769e13a03b8
@@ -10,59 +10,59 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 25f40b0528b794863aabdb13ed9785d2b0c551b8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3f043aae44231608fb514e87a05717f4aeb924bc
+ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62894272"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85350093"
 ---
-# <a name="how-to-debug-net-framework-source"></a>Procédure : Déboguer une source .NET Framework
+# <a name="how-to-debug-net-framework-source"></a>Guide pratique pour déboguer une source .NET Framework
 
-Pour déboguer une source .NET Framework, vous devez :
+Pour déboguer .NET Framework source, vous devez :
 
-- Activer le pas à pas détaillé dans la source du .NET Framework.
+- Permet d’effectuer un pas à pas détaillé dans la source de .NET Framework.
 
-- Ont accès aux symboles de débogage pour le code.
+- Avoir accès aux symboles de débogage pour le code.
 
-  Vous pouvez choisir télécharger immédiatement les symboles de débogage, ou définir des options pour le téléchargement plus tard. Si vous ne pas télécharger des symboles immédiatement, ils allez télécharger la prochaine fois que vous démarrez le débogage de votre application. Pendant le débogage, vous pouvez également utiliser le **Modules** ou **pile des appels** windows pour télécharger et charger des symboles.
+  Vous pouvez choisir de télécharger immédiatement les symboles de débogage ou de définir des options pour les télécharger ultérieurement. Si vous ne téléchargez pas les symboles immédiatement, ils seront téléchargés la prochaine fois que vous démarrerez le débogage de votre application. Lors du débogage, vous pouvez également utiliser les fenêtres **modules** ou **pile des appels** pour télécharger et charger des symboles.
 
 ### <a name="to-enable-stepping-into-net-framework-source"></a>Pour activer le pas à pas détaillé dans la source de .NET Framework
 
-1. Sous **outils** (ou **déboguer**) > **Options** > **débogage** > **général**, sélectionnez **source activer .NET Framework pas à pas détaillé**.
+1. Sous **Outils** (ou **débogage**) > **options**  >  **débogage**  >  **général**, sélectionnez **activer l’exécution pas à pas .NET Framework source**.
 
    - Si l'option Uniquement mon code était activée, une boîte de dialogue d'avertissement s'affiche pour signaler que cette option est à présent désactivée. Sélectionnez **OK**.
 
-   - Si vous ne pas un cache de symboles local défini, une boîte de dialogue d’avertissement vous indique qu’un cache de symboles par défaut a été défini. Sélectionnez **OK**.
+   - Si vous n’avez pas défini de cache de symboles local, une boîte de dialogue d’avertissement vous indique qu’un cache de symboles par défaut a été défini. Sélectionnez **OK**.
 
-1. Sélectionnez **OK** pour fermer la **Options** boîte de dialogue.
+1. Sélectionnez **OK** pour fermer la boîte de dialogue **options** .
 
-### <a name="to-set-or-change-symbol-source-locations-and-loading-behavior"></a>Pour définir ou modifier les emplacements de sources de symbole et le comportement de chargement
+### <a name="to-set-or-change-symbol-source-locations-and-loading-behavior"></a>Pour définir ou modifier les emplacements des sources de symboles et le comportement de chargement
 
-1. Sélectionnez le **symboles** catégorie sous **outils** (ou **déboguer**) > **Options** > **dedébogage**.
+1. Sélectionnez la catégorie **symboles** sous **Outils** (ou **débogage**) > **options**de  >  **débogage**.
 
-1. Sur le **symboles** page sous **emplacements du fichier (.pdb) de symboles**, sélectionnez **serveurs de symboles Microsoft** aux accès des symboles à partir des serveurs de symboles publics de Microsoft. Sélectionnez les boutons de barre d’outils pour ajouter d’autres emplacements de symboles et de modifier l’ordre de chargement.
+1. Dans la page **symboles** , sous **emplacements du fichier de symboles (. pdb)**, sélectionnez **serveurs de symboles Microsoft** pour accéder aux symboles à partir des serveurs de symboles publics Microsoft. Sélectionnez les boutons de la barre d’outils pour ajouter d’autres emplacements de symboles et modifier l’ordre de chargement.
 
-1. Pour modifier votre cache de symboles locaux, modifier ou accédez à un autre emplacement sous **mettre en Cache les symboles dans ce répertoire**.
+1. Pour modifier votre cache de symboles local, modifiez ou accédez à un autre emplacement sous les **symboles du cache dans ce répertoire**.
 
 1. Pour télécharger des symboles immédiatement, sélectionnez **charger tous les symboles**. Ce bouton est disponible uniquement pendant le débogage.
 
-   Si vous ne téléchargez les symboles maintenant, vous allez télécharger la prochaine fois que vous démarrez le débogage.
+   Si vous ne téléchargez pas les symboles maintenant, ils seront téléchargés la prochaine fois que vous démarrerez le débogage.
 
-1. Sélectionnez **OK** pour fermer la **Options** boîte de dialogue.
+1. Sélectionnez **OK** pour fermer la boîte de dialogue **options** .
 
-### <a name="to-load-symbols-from-the-modules-or-call-stack-windows"></a>Pour charger des symboles à partir de Modules ou de la pile des appels windows
+### <a name="to-load-symbols-from-the-modules-or-call-stack-windows"></a>Pour charger des symboles à partir des fenêtres modules ou pile des appels
 
-1. Pendant le débogage, ouvrez la fenêtre en sélectionnant **déboguer** > **Windows** > **Modules** (ou appuyez sur **Ctrl + Alt + U**) ou **déboguer** > **Windows** > **pile des appels** (**Ctrl + Alt + C**).
+1. Pendant le débogage, ouvrez la fenêtre en sélectionnant **Déboguer**les  >  **Windows**  >  **modules** Windows (ou appuyez sur **Ctrl + Alt + U**) ou **Déboguer**la pile des  >  **Windows**  >  **appels** Windows (**Ctrl + Alt + C**).
 
-1. Cliquez sur un module pour lequel des symboles n’ont pas été chargés. Dans le **Modules** fenêtre, état de chargement des symboles sont dans le **état du symbole** colonne. Dans le **pile des appels** fenêtre, l’état est dans le **état du Frame** colonne et le frame est grisée.
+1. Cliquez avec le bouton droit sur un module pour lequel les symboles n’ont pas été chargés. Dans la fenêtre **modules** , l’état du chargement des symboles se trouve dans la colonne **État des symboles** . Dans la fenêtre **pile des appels** , l’État est dans la colonne État du **Frame** et le cadre est grisé.
 
-   - Sélectionnez **charger les symboles** dans le menu pour localiser et charger des fichiers de symboles à partir d’un dossier sur votre ordinateur.
+   - Sélectionnez **charger les symboles** dans le menu pour rechercher et charger les fichiers de symboles à partir d’un dossier sur votre ordinateur.
 
-   - Sélectionnez **les informations de chargement de symboles** pour afficher les emplacements le débogueur recherche des symboles.
+   - Sélectionnez **informations** sur le chargement de symboles pour afficher les emplacements où le débogueur a effectué une recherche de symboles.
 
-   - Sélectionnez **paramètres des symboles** pour ouvrir le **symboles** page. Sur le **symboles** page sous **emplacements du fichier (.pdb) de symboles**, sélectionnez **serveurs de symboles Microsoft** aux accès des symboles à partir des serveurs de symboles publics de Microsoft. Sélectionnez les boutons de barre d’outils pour ajouter d’autres emplacements de symboles et de modifier l’ordre de chargement. Sélectionnez **OK** pour fermer la boîte de dialogue.
+   - Sélectionnez **paramètres des symboles** pour ouvrir la page **symboles** . Dans la page **symboles** , sous **emplacements du fichier de symboles (. pdb)**, sélectionnez **serveurs de symboles Microsoft** pour accéder aux symboles à partir des serveurs de symboles publics Microsoft. Sélectionnez les boutons de la barre d’outils pour ajouter d’autres emplacements de symboles et modifier l’ordre de chargement. Sélectionnez **OK** pour fermer la boîte de dialogue.
 
 ### <a name="see-also"></a>Voir aussi
-- [Débogage du code managé](../debugger/debugging-managed-code.md)
-- [Spécifier les fichiers de symbole (.pdb) et les fichiers sources](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)
+- [Débogage de code managé](../debugger/debugging-managed-code.md)
+- [Spécifier les fichiers de symboles (. pdb) et les fichiers sources](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)

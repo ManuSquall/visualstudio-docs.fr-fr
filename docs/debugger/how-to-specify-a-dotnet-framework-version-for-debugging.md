@@ -2,7 +2,7 @@
 title: Spécifier une version de .NET Framework pour le débogage | Microsoft Docs
 ms.custom: seodec18
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - CSharp
 - VB
@@ -17,14 +17,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 1f6107d6396c6228be1d511e81003fbe7faf06c9
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 3ae48670fceb78ff85f395852f0a31414f37e8cf
+ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72732635"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85349066"
 ---
-# <a name="specify-an-older-net-framework-version-for-debugging-c-visual-basic-f"></a>Spécifier une ancienne version de .NET Framework pour le débogageC#(, Visual Basic F#,)
+# <a name="specify-an-older-net-framework-version-for-debugging-c-visual-basic-f"></a>Spécifier une ancienne version de .NET Framework pour le débogage (C#, Visual Basic, F #)
 
 Le débogueur Visual Studio prend en charge le débogage des versions antérieures du Microsoft .NET Framework ainsi que la version actuelle. Si vous démarrez une application à partir de Visual Studio, le débogueur peut toujours identifier la version correcte du .NET Framework pour l’application que vous déboguez. Toutefois, si l’application est déjà en cours d’exécution et que vous démarrez le débogage à l’aide de l' **attachement à**, le débogueur peut ne pas toujours être en mesure d’identifier une version antérieure du .NET Framework. Si cela se produit, un message d'erreur s'affiche qui indique,
 
@@ -48,11 +48,11 @@ Dans les rares cas où cette erreur s’affiche, vous pouvez définir une clé d
 
 4. Accédez à : HKEY_LOCAL_MACHINE\Software\Microsoft\VisualStudio\10.0\AD7Metrics\Engine\\{449EC4CC-30D2-4032-9256-EE18EB41B62B}
 
-    Si la clé n’existe pas, cliquez avec le bouton droit sur HKEY_LOCAL_MACHINE\Software\Microsoft\VisualStudio\10.0\AD7Metrics\Engine, puis cliquez sur **Nouvelle clé**. Nommez la nouvelle clé `{449EC4CC-30D2-4032-9256-EE18EB41B62B}`.
+    Si la clé n’existe pas, cliquez avec le bouton droit sur HKEY_LOCAL_MACHINE\Software\Microsoft\VisualStudio\10.0\AD7Metrics\Engine, puis cliquez sur **Nouvelle clé**. Nommez la nouvelle clé `{449EC4CC-30D2-4032-9256-EE18EB41B62B}` .
 
 5. Après avoir accédé à {449EC4CC-30D2-4032-9256-EE18EB41B62B}, recherchez la clé CLRVersionForDebugging dans la colonne **Nom**.
 
-   1. Si la clé n’existe pas, cliquez avec le bouton droit sur {449EC4CC-30D2-4032-9256-EE18EB41B62B}, puis cliquez sur **Nouvelle valeur de chaîne**. Cliquez ensuite avec le bouton droit sur la nouvelle valeur de chaîne, cliquez sur **Renommer**, puis tapez `CLRVersionForDebugging`.
+   1. Si la clé n’existe pas, cliquez avec le bouton droit sur {449EC4CC-30D2-4032-9256-EE18EB41B62B}, puis cliquez sur **Nouvelle valeur de chaîne**. Cliquez ensuite avec le bouton droit sur la nouvelle valeur de chaîne, cliquez sur **Renommer**et tapez `CLRVersionForDebugging` .
 
 6. Double-cliquez sur **CLRVersionForDebugging**.
 
@@ -60,7 +60,7 @@ Dans les rares cas où cette erreur s’affiche, vous pouvez définir une clé d
 
 8. Cliquez sur **OK**.
 
-9. Fermez l’**Éditeur du Registre**.
+9. Fermez l' **éditeur du Registre**.
 
      Si vous obtenez encore un message d'erreur lorsque vous commencez à déboguer, vérifiez que vous avez entré correctement le numéro de version dans le Registre. Vérifiez également que vous utilisez une version du .NET Framework pris en charge par Visual Studio. Le débogueur est compatible avec la version actuelle et les versions antérieures du .NET Framework, mais il n'offre peut-être pas une compatibilité ascendante avec les futures versions.
 

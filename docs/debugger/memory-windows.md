@@ -2,7 +2,7 @@
 title: Afficher la mémoire pour les variables dans le débogueur | Microsoft Docs
 ms.custom: ''
 ms.date: 10/04/2018
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - vs.debug.memory
 dev_langs:
@@ -24,86 +24,86 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 794400a14cac5b85f813e7a384c650c581a719e2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 51070e06f684c2e873ded76ec8797ed7587745ff
+ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62905576"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85348318"
 ---
-# <a name="use-the-memory-windows-in-the-visual-studio-debugger-c-c-visual-basic-f"></a>Utiliser les fenêtres de mémoire dans le débogueur Visual Studio (C#, C++, Visual Basic, F#)
+# <a name="use-the-memory-windows-in-the-visual-studio-debugger-c-c-visual-basic-f"></a>Utiliser les fenêtres mémoire dans le débogueur Visual Studio (C#, C++, Visual Basic, F #)
 
-Pendant le débogage, le **mémoire** fenêtre affiche l’espace de mémoire à l’aide de votre application.
+Pendant le débogage, la fenêtre **mémoire** affiche l’espace mémoire utilisé par votre application.
 
-Débogueur windows comme **espion**, **automatique**, **variables locales**et le **Espion express** boîte de dialogue vous afficher les variables, lesquelles sont stockées à spécifiques emplacements de mémoire. Le **mémoire** fenêtre vous montre la vue d’ensemble. La vue de la mémoire est pratique pour l’examen de grands fragments de données (mémoires tampons ou longues chaînes, par exemple) qui ne s’affichent pas correctement dans les autres fenêtres.
+Les fenêtres du débogueur, telles que **Espion**, **automatique**, **variables locales**et la boîte de dialogue **Espion express** , affichent des variables qui sont stockées à des emplacements spécifiques en mémoire. La fenêtre **mémoire** vous montre l’image globale. La vue mémoire est pratique pour examiner de grands éléments de données (mémoires tampons ou chaînes volumineuses, par exemple) qui ne s’affichent pas correctement dans les autres fenêtres.
 
-Le **mémoire** fenêtre n’est pas tenu d’afficher des données. Il affiche tous les éléments dans l’espace de mémoire, y compris des données, le code et les bits aléatoires de garbage dans la mémoire non assignée.
+La fenêtre **mémoire** n’est pas limitée à l’affichage des données. Il affiche tout ce qui se trouve dans l’espace mémoire, y compris les données, le code et les bits aléatoires du garbage dans la mémoire non assignée.
 
-Le **mémoire** fenêtre n’est pas disponible pour le script ou le débogage SQL. Ces langues ne reconnaissent pas le concept de mémoire.
+La fenêtre **mémoire** n’est pas disponible pour le débogage de script ou SQL. Ces langages ne reconnaissent pas le concept de mémoire.
 
-## <a name="open-a-memory-window"></a>Ouvrez une fenêtre mémoire
+## <a name="open-a-memory-window"></a>Ouvrir une fenêtre mémoire
 
-Comme les autres fenêtres du débogueur, le **mémoire** windows sont disponibles uniquement pendant une session de débogage.
+Comme les autres fenêtres du débogueur, les fenêtres de **mémoire** sont disponibles uniquement pendant une session de débogage.
 
 >[!IMPORTANT]
->Pour activer la **mémoire** windows, **activer le débogage au niveau des adresses** doit être sélectionnée dans **outils** > **Options** (ou **Déboguer** > **Options**) > **débogage** > **général**.
+>Pour activer les fenêtres de **mémoire** , **activez le débogage au niveau** de l’adresse dans **Outils**  >  **options** (ou options de **débogage**  >  **Options**) > **débogage**  >  **général**.
 
 **Pour ouvrir une fenêtre Mémoire**
 
-1. Assurez-vous que **activer le débogage au niveau des adresses** est sélectionné dans **outils** > **Options** (ou **déboguer**  >  **Options**) > **débogage** > **général**.
+1. Assurez-vous que l’option **activer le débogage au niveau** de l’adresse est sélectionnée dans **Outils**  >  **options** (ou options de **débogage**  >  **Options**) > **débogage**  >  **général**.
 
-1. Démarrer le débogage en sélectionnant la flèche verte, en appuyant sur **F5**, ou en sélectionnant **déboguer** > **démarrer le débogage**.
+1. Démarrez le débogage en sélectionnant la flèche verte, en appuyant sur **F5**ou **en sélectionnant déboguer**  >  **Démarrer le débogage**.
 
-2. Sous **déboguer** > **Windows** > **mémoire**, sélectionnez **mémoire 1**, **mémoire 2**, **Mémoire 3**, ou **mémoire 4**. (Certaines éditions de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] n'offrent qu’un seul **mémoire** fenêtre.)
+2. Sous **Déboguer**la  >  **Windows**  >  **mémoire**Windows, sélectionnez **mémoire 1**, **mémoire 2**, **mémoire 3**ou **mémoire 4**. (Certaines éditions de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] offrent une seule fenêtre de **mémoire** .)
 
-## <a name="move-around-in-the-memory-window"></a>Déplacer dans la fenêtre mémoire
+## <a name="move-around-in-the-memory-window"></a>Se déplacer dans la fenêtre mémoire
 
-L’espace d’adressage d’un ordinateur est volumineux, et vous pouvez facilement perdre votre place en faisant défiler le **mémoire** fenêtre.
+L’espace d’adressage d’un ordinateur est important et vous pouvez facilement perdre votre place en faisant défiler la fenêtre **mémoire** .
 
-Les adresses mémoire supérieures s'affichent au bas de la fenêtre. Pour afficher une adresse supérieure, faites défiler vers le bas. Pour afficher une adresse inférieure, faites défiler vers le haut.
+Les adresses mémoire supérieures s'affichent au bas de la fenêtre. Pour afficher une adresse plus élevée, faites défiler vers le haut. Pour afficher une adresse inférieure, faites défiler vers le haut.
 
-Vous pouvez accéder instantanément à une adresse spécifiée dans le **mémoire** fenêtre à l’aide de glisser-déplacer, ou en entrant l’adresse dans le **adresse** champ. Le **adresse** champ accepte les adresses d’alphanumériques et des expressions qui correspondent à des adresses, tel que `e.User.NonroamableId`.
+Vous pouvez accéder instantanément à une adresse spécifiée dans la fenêtre **mémoire** à l’aide du glisser-déplacer, ou en entrant l’adresse dans le champ **adresse** . Le champ **adresse** accepte les adresses alphanumériques et les expressions qui correspondent à des adresses, telles que `e.User.NonroamableId` .
 
-Pour forcer la réévaluation immédiate d’une expression dans le **adresse** , sélectionnez la flèche arrondie **réévaluer automatiquement** icône.
+Pour forcer la réévaluation immédiate d’une expression dans le champ d' **adresse** , sélectionnez l’icône de réévaluation de la flèche arrondie **automatiquement** .
 
-Par défaut, le **mémoire** traite de la fenêtre **adresse** expressions comme expressions dynamiques, qui sont réévaluées en tant que l’exécution de l’application. Expressions dynamiques peuvent être utiles, par exemple, pour afficher la mémoire survolée par une variable de pointeur.
+Par défaut, la fenêtre **mémoire** traite les expressions d' **adresse** en tant qu’expressions dynamiques, qui sont réévaluées au fur et à mesure de l’exécution de l’application. Les expressions dynamiques peuvent être utiles, par exemple, pour afficher la mémoire affectée par une variable pointeur.
 
-**Pour utiliser la fonction glisser-déplacer pour déplacer vers un emplacement de mémoire :**
+**Pour utiliser le glisser-déplacer pour déplacer vers un emplacement de mémoire :**
 
-1. Dans la fenêtre de débogueur, sélectionnez une adresse mémoire ou une variable pointeur qui contient une adresse mémoire.
+1. Dans une fenêtre du débogueur, sélectionnez une adresse mémoire ou une variable pointeur qui contient une adresse mémoire.
 
-2. Glissez -déplacez l’adresse ou le pointeur dans la **mémoire** fenêtre. Cette adresse apparaît alors dans le **adresse** champ et le **mémoire** fenêtre s’ajuste pour afficher cette adresse en haut.
+2. Glissez-déposez l’adresse ou le pointeur dans la fenêtre **mémoire** . Cette adresse apparaît alors dans le champ **adresse** , et la fenêtre **mémoire** s’ajuste pour afficher cette adresse en haut.
 
-**Pour déplacer vers un emplacement de mémoire en le saisissant dans le champ adresse :**
+**Pour passer à un emplacement de mémoire, entrez-le dans le champ adresse :**
 
-- Tapez ou collez l’adresse ou une expression dans le **adresse** champ et appuyez sur **entrée**, ou choisissez-le dans la liste déroulante dans le **adresse** champ. Le **mémoire** fenêtre s’ajuste pour afficher cette adresse en haut.
+- Tapez ou collez l’adresse ou l’expression dans le champ **adresse** et appuyez sur **entrée**, ou choisissez-la dans la liste déroulante du champ **adresse** . La fenêtre **mémoire** s’ajuste pour afficher cette adresse en haut.
 
 ## <a name="customize-the-memory-window"></a>Personnaliser la fenêtre mémoire
 
-Par défaut, contenu de la mémoire apparaître sous forme d’entiers de 1 octet au format hexadécimal, et la largeur de fenêtre détermine le nombre de colonnes affichées. Vous pouvez personnaliser la façon dont la fenêtre **Mémoire** affiche le contenu de la mémoire.
+Par défaut, le contenu de la mémoire apparaît sous la forme d’entiers de 1 octet au format hexadécimal, et la largeur de la fenêtre détermine le nombre de colonnes affichées. Vous pouvez personnaliser la façon dont la fenêtre **Mémoire** affiche le contenu de la mémoire.
 
-**Pour changer le format du contenu mémoire :**
+**Pour modifier le format du contenu de la mémoire :**
 
-- Avec le bouton droit dans le **mémoire** fenêtre, puis choisissez les formats que vous souhaitez dans le menu contextuel.
+- Cliquez avec le bouton droit dans la fenêtre **mémoire** , puis choisissez les formats souhaités dans le menu contextuel.
 
-**Pour modifier le nombre de colonnes affichées dans la fenêtre Mémoire :**
+**Pour modifier le nombre de colonnes dans la fenêtre mémoire :**
 
-- Sélectionnez la flèche déroulante en regard du **colonnes** champ, puis sélectionnez le nombre de colonnes à afficher, ou sélectionnez **automatique** pour l’ajustement automatique en fonction de la largeur de la fenêtre.
+- Sélectionnez la flèche déroulante en regard du champ **colonnes** , sélectionnez le nombre de colonnes à afficher ou sélectionnez **auto** pour un ajustement automatique en fonction de la largeur de la fenêtre.
 
-Si vous ne souhaitez pas que le contenu de la **mémoire** fenêtre Modifier en tant que votre application s’exécute, vous pouvez désactiver l’évaluation dynamique des expressions.
+Si vous ne souhaitez pas que le contenu de la fenêtre de **mémoire** change au fur et à mesure de l’exécution de votre application, vous pouvez désactiver l’évaluation de l’expression dynamique.
 
-**Pour activer ou désactiver l’évaluation dynamique :**
+**Pour activer/désactiver l’évaluation dynamique :**
 
-- Avec le bouton droit dans le **mémoire** , puis sélectionnez **réévaluer automatiquement** dans le menu contextuel.
+- Cliquez avec le bouton droit dans la fenêtre **mémoire** , puis sélectionnez **réévaluer automatiquement** dans le menu contextuel.
 
   >[!NOTE]
-  >Live expression d’évaluation est un bouton bascule et est activé par défaut, par conséquent, en sélectionnant **réévaluer automatiquement** est désactivée. En sélectionnant **réévaluer automatiquement** à nouveau rallume automatiquement.
+  >L’évaluation de l’expression dynamique est une bascule et est activée par défaut. par conséquent, la sélection de **réévaluer automatiquement** la désactive. Si vous sélectionnez **réévaluer automatiquement** , la réactiver.
 
-Vous pouvez masquer ou afficher la barre d’outils en haut de la fenêtre **Mémoire**. Vous n’aurez pas d’accès à la **adresse** champ ou autres outils lorsque la barre d’outils est masquée.
+Vous pouvez masquer ou afficher la barre d’outils en haut de la fenêtre **Mémoire**. Vous n’avez pas accès au champ **adresse** ou à d’autres outils lorsque la barre d’outils est masquée.
 
 **Pour activer/désactiver l’affichage de la barre d’outils :**
 
-- Avec le bouton droit dans le **mémoire** , puis sélectionnez **afficher la barre d’outils** dans le menu contextuel. La barre d'outils disparaît ou apparaît, selon son état précédent.
+- Cliquez avec le bouton droit dans la fenêtre **mémoire** , puis sélectionnez **afficher la barre d’outils** dans le menu contextuel. La barre d'outils disparaît ou apparaît, selon son état précédent.
 
 ## <a name="follow-a-pointer-through-memory"></a>Suivre un pointeur dans la mémoire
 
@@ -111,11 +111,11 @@ Dans les applications en code natif, vous pouvez utiliser des noms de registres 
 
 **Pour suivre un pointeur dans la mémoire :**
 
-1. Dans le **mémoire** fenêtre **adresse** , entrez une expression de pointeur qui se trouve dans la portée actuelle. Vous devrez la déréférencer en fonction du langage.
+1. Dans le champ **adresse** de la fenêtre **mémoire** , entrez une expression de pointeur qui se trouve dans l’étendue actuelle. Vous devrez la déréférencer en fonction du langage.
 
 2. Appuyez sur **Entrée**.
 
-   Lorsque vous utilisez une commande de débogage telles que **étape**, l’adresse mémoire affichée dans le **adresse** champ et en haut de la **mémoire** fenêtre change automatiquement en tant que le pointeur modifications.
+   Lorsque vous utilisez une commande de débogage telle que l' **étape**, l’adresse mémoire affichée dans le champ **adresse** et en haut de la fenêtre **mémoire** change automatiquement à mesure que le pointeur change.
 
 ## <a name="see-also"></a>Voir aussi
 - [Afficher les données dans le débogueur](../debugger/viewing-data-in-the-debugger.md)

@@ -1,7 +1,7 @@
 ---
-title: 'Comment : modifier les polices | Microsoft Docs'
+title: Modification des polices | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - fonts, SpyHelp
 ms.assetid: 3ee22eb9-978f-4efd-a5e0-f071745496ce
@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2cf933dc7277f0f4c1533ca071a391b78413b029
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 5597d1f7c14e1c37c55751c85e0dc53092c3af1c
+ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72733935"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85350262"
 ---
 # <a name="how-to-change-fonts"></a>Comment : modifier les polices
 Vous pouvez modifier la police, le style de police et la taille de police des fenêtres Spy + +.
@@ -31,6 +31,6 @@ Vous pouvez modifier la police, le style de police et la taille de police des fe
    Si vous sélectionnez **enregistrer la police par défaut** , toutes les fenêtres Spy + + ultérieures utilisent cette police.
 
 ## <a name="see-also"></a>Voir aussi
-- [Utilisation de Spy++](../debugger/using-spy-increment.md)
+- [Utiliser Spy++](../debugger/using-spy-increment.md)
 - [Vues Spy++](../debugger/spy-increment-views.md)
-- [Informations de référence sur Spy++](../debugger/spy-increment-reference.md)
+- [Référence Spy++](../debugger/spy-increment-reference.md)

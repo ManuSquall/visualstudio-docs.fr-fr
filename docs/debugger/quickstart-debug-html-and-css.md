@@ -1,7 +1,7 @@
 ---
 title: Déboguer du code HTML et CSS dans les applications UWP | Microsoft Docs
 ms.date: 07/17/2018
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - VS.WebClient.DomExplorer
 dev_langs:
@@ -17,12 +17,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - uwp
-ms.openlocfilehash: 75bdfe55d516deb34872007a9461a286b4d742e0
-ms.sourcegitcommit: 97623fd6190c43fed0d2ee7af92b01c375282622
+ms.openlocfilehash: 331cb056132a2d90a932ff250c9bdbb7e22e38af
+ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73568915"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85348260"
 ---
 # <a name="debug-html-and-css-in-uwp-apps-in-visual-studio"></a>Déboguer du code HTML et CSS dans les applications UWP dans Visual Studio
 
@@ -32,7 +32,7 @@ Grâce au modèle de débogage interactif fourni par les outils d’inspection D
 
 Pour plus d’informations sur d’autres fonctionnalités de débogage JavaScript, telles que l’utilisation de la fenêtre de la console JavaScript et la définition de points d’arrêt, consultez [démarrage rapide : déboguer](../debugger/quickstart-debug-javascript-using-the-console.md) des applications JavaScript et [Déboguer des applications dans Visual Studio](debugging-windows-store-and-windows-universal-apps.md).
 
-## <a name="InspectingDOM"></a> Examen du modèle DOM en direct
+## <a name="inspecting-the-live-dom"></a><a name="InspectingDOM"></a> Examen du modèle DOM en direct
 L’explorateur DOM affiche une vue de la page rendue ; utilisez l’explorateur DOM pour modifier des valeurs et afficher immédiatement les résultats. Cela vous permet de tester les modifications sans arrêter et redémarrer le débogueur. Le code source de votre projet ne change pas quand vous interagissez avec la page à l’aide de cette méthode. Ainsi, quand vous trouvez les corrections de code souhaitées, vous modifiez votre code source.
 
 > [!TIP]
@@ -46,10 +46,10 @@ Vous pouvez utiliser l’explorateur DOM pour effectuer les tâches suivantes :
 
 - Inspecter la façon dont les styles CSS ont été appliqués aux éléments de page et effectuer un suivi des règles qui ont été appliquées.
 
-  Lorsque vous déboguez des applications, vous devez souvent sélectionner des éléments dans l’explorateur DOM. Quand vous sélectionnez un élément, les valeurs qui s’affichent sous les onglets dans la partie droite de l’explorateur DOM sont automatiquement mises à jour pour refléter l’élément sélectionné dans l’explorateur DOM. Ces onglets sont les suivants : **Styles**, **Calculé**, **Disposition**. Les applications UWP prennent également en charge les onglets **événements** et **modifications** . Pour plus d’informations sur la sélection des éléments, consultez [Selecting elements](#SelectingElements).
+  Lorsque vous déboguez des applications, vous devez souvent sélectionner des éléments dans l’explorateur DOM. Quand vous sélectionnez un élément, les valeurs qui s’affichent sous les onglets dans la partie droite de l’explorateur DOM sont automatiquement mises à jour pour refléter l’élément sélectionné dans l’explorateur DOM. Ces onglets sont les suivants : **Styles**, **Calculé**, **Disposition**. Les applications UWP prennent également en charge les onglets **événements** et **modifications** . Pour plus d’informations sur la sélection des éléments, consultez [Selecting elements](#SelectingElements).
 
 > [!TIP]
-> Si la fenêtre de l’explorateur DOM est fermée, sélectionnez **Déboguer**>**Fenêtres** > **Explorateur DOM** pour la rouvrir. La fenêtre s’ouvre uniquement pendant une session de débogage de script.
+> Si la fenêtre de l’Explorateur DOM est fermée, choisissez **Déboguer**l' > **Windows**  >  **Explorateur DOM** Windows pour la rouvrir. La fenêtre s’ouvre uniquement pendant une session de débogage de script.
 
 Dans la procédure qui suit, nous examinerons le processus de débogage interactif d’une application à l’aide de l’explorateur DOM. Nous créerons une application qui utilise un contrôle `FlipView` , puis nous la déboguerons. L’application contient plusieurs erreurs.
 
@@ -58,13 +58,13 @@ Dans la procédure qui suit, nous examinerons le processus de débogage interact
 
 #### <a name="to-debug-by-inspecting-the-live-dom"></a>Pour déboguer en examinant le modèle DOM en direct
 
-1. Créez une solution dans Visual Studio en sélectionnant **Fichier** > **Nouveau projet**.
+1. Créez une nouvelle solution dans Visual Studio en choisissant **fichier**  >  **nouveau projet**.
 
-2. Choisissez **JavaScript** > **Windows Universal**, puis choisissez **application WinJS**.
+2. Choisissez **JavaScript**  >  **Windows universel**, puis choisissez **application WinJS**.
 
 3. Tapez un nom pour le projet, comme `FlipViewApp`, puis choisissez **OK** pour créer l’application.
 
-4. Dans l’élément BODY de index. html, ajoutez le code suivant :
+4. Dans l’élément BODY de index.html, ajoutez le code suivant :
 
     ```html
     <div id="flipTemplate" data-win-control="WinJS.Binding.Template"
@@ -143,13 +143,13 @@ Dans la procédure qui suit, nous examinerons le processus de débogage interact
 
     L’illustration suivante montre ce que nous voulons voir si nous exécutons cette application. Toutefois, avant de parvenir à ce résultat, il nous faudra corriger un certain nombre de bogues.
 
-    ![Application FlipView présentant les résultats attendus](../debugger/media/js_dom_appfixed.png "JS_DOM_AppFixed")
+    ![Application FlipView affichant les résultats attendus](../debugger/media/js_dom_appfixed.png "JS_DOM_AppFixed")
 
 7. Sélectionnez **ordinateur local** dans la liste déroulante en regard du bouton **Démarrer le débogage** de la barre d’outils **Déboguer** :
 
-    ![Sélectionner la liste de cibles de débogage](../debugger/media/js_select_target.png "JS_Select_Target")
+    ![Sélectionner la liste cible de débogage](../debugger/media/js_select_target.png "JS_Select_Target")
 
-8. Choisissez **Déboguer** > **Démarrer le débogage**, ou appuyez sur F5, pour exécuter votre application en mode débogage.
+8. Choisissez **Déboguer**  >  **Démarrer le débogage**ou appuyez sur F5 pour exécuter votre application en mode débogage.
 
     L’application est exécutée, mais vous verrez un écran essentiellement vide, car le style contient quelques bogues. La première image `FlipView` apparaît dans un petit carré non loin du milieu de l’écran.
 
@@ -175,11 +175,11 @@ Dans la procédure qui suit, nous examinerons le processus de débogage interact
 
     L’illustration suivante montre l’onglet **Calculé** .
 
-    ![Onglet calculé de l’Explorateur DOM](../debugger/media/js_dom_explorer_computed.png "JS_DOM_Explorer_Computed")
+    ![Onglet Calculé de l'explorateur DOM](../debugger/media/js_dom_explorer_computed.png "JS_DOM_Explorer_Computed")
 
 13. Dans la fenêtre principale de l’explorateur DOM, double-cliquez sur le style intraligne pour la hauteur et la largeur de l’élément DIV `fView` . Vous pouvez maintenant modifier les valeurs ici. Dans ce scénario, il est convenu de les supprimer complètement.
 
-14. Dans la fenêtre principale, double-cliquez sur `width: 100px;height: 100px;`, appuyez sur la touche **Suppr** , puis appuyez sur **entrée**. Une fois que vous avez appuyé sur entrée, les nouvelles valeurs sont immédiatement reflétées dans l’application, même si vous n’avez pas arrêté votre session de débogage.
+14. Dans la fenêtre principale, double-cliquez sur `width: 100px;height: 100px;` , appuyez sur la touche **Suppr** , puis appuyez sur **entrée**. Une fois que vous avez appuyé sur entrée, les nouvelles valeurs sont immédiatement reflétées dans l’application, même si vous n’avez pas arrêté votre session de débogage.
 
     > [!IMPORTANT]
     > Comme vous pouvez mettre à jour les attributs dans la fenêtre de l’explorateur DOM, vous pouvez également mettre à jour les valeurs affichées sous les onglets **Styles**, **Calculé**et **Disposition** .
@@ -188,7 +188,7 @@ Dans la procédure qui suit, nous examinerons le processus de débogage interact
 
     À présent, le contrôle `FlipView` est plus grand que la taille de l’écran du simulateur ou de l’émulateur Windows Phone. Ce n’est pas le résultat souhaité. Pour faire une recherche, revenez à Visual Studio.
 
-16. Dans l’explorateur DOM, sélectionnez à nouveau l’onglet **Calculé** et ouvrez la règle de hauteur. L’élément fView affiche toujours une valeur de 100%, comme attendu par le CSS, mais la valeur calculée est égale à la hauteur d’écran de l’application (par exemple, 800px, 667.67 PX ou une autre valeur), ce qui n’est pas ce que nous voulons pour cette application. Pour examiner, dans les étapes suivantes, nous supprimons la hauteur et la largeur de l’élément DIV `fView`.
+16. Dans l’explorateur DOM, sélectionnez à nouveau l’onglet **Calculé** et ouvrez la règle de hauteur. L’élément fView affiche toujours une valeur de 100%, comme attendu par le CSS, mais la valeur calculée est égale à la hauteur d’écran de l’application (par exemple, 800px, 667.67 PX ou une autre valeur), ce qui n’est pas ce que nous voulons pour cette application. Pour examiner, dans les étapes suivantes, nous allons supprimer la hauteur et la largeur de l' `fView` élément div.
 
 17. Sous l’onglet **Styles** , désactivez les propriétés de hauteur et de largeur du sélecteur CSS `#fView` .
 
@@ -198,7 +198,7 @@ Dans la procédure qui suit, nous examinerons le processus de débogage interact
 
     Les choses se sont améliorées. Toutefois, il reste un problème de plus à corriger : les marges sont trop grandes.
 
-19. Pour en comprendre la raison, basculez vers Visual Studio et sélectionnez l’onglet **Disposition** pour examiner le modèle de boîte de l’élément.
+19. Pour examiner, basculez vers Visual Studio et choisissez l’onglet **disposition** pour examiner le modèle de boîte de l’élément.
 
     Dans l’onglet **disposition** , les éléments suivants s’affichent :
 
@@ -206,9 +206,9 @@ Dans la procédure qui suit, nous examinerons le processus de débogage interact
 
       L’illustration suivante montre l’apparence de l’onglet **disposition** si vous utilisez un émulateur avec un décalage et une marge 100 PX).
 
-      ![Onglet disposition de l’Explorateur DOM](../debugger/media/js_dom_explorer_layout.png "JS_DOM_Explorer_Layout")
+      ![Onglet Disposition de l'explorateur DOM](../debugger/media/js_dom_explorer_layout.png "JS_DOM_Explorer_Layout")
 
-      Cela ne semble pas correct. L’onglet **Calculé** indique aussi des valeurs de marge identiques.
+      Cela ne va pas. L’onglet **Calculé** indique aussi des valeurs de marge identiques.
 
 20. Sélectionnez l’onglet **Styles** , et recherchez le sélecteur CSS `#fView` . Vous voyez ici une valeur de 25 % pour la propriété **marge** .
 
@@ -230,7 +230,7 @@ Dans la procédure qui suit, nous examinerons le processus de débogage interact
 
     Pour plus d’informations sur la fonctionnalité d’actualisation, consultez [actualiser une application (JavaScript)](../debugger/refresh-an-app-javascript.md).
 
-## <a name="SelectingElements"></a> Selecting elements
+## <a name="selecting-elements"></a><a name="SelectingElements"></a> Selecting elements
 Il existe trois façons de sélectionner des éléments DOM lors du débogage d’une application :
 
 - Cliquez sur les éléments directement dans la fenêtre de l’explorateur DOM (ou utilisez les touches de direction).
@@ -239,15 +239,15 @@ Il existe trois façons de sélectionner des éléments DOM lors du débogage d�
 
 - Utilisez le bouton `select` , qui est l’une des [JavaScript Console commands](../debugger/javascript-console-commands.md?view=vs-2017).
 
-  Quand vous utilisez la fenêtre de l’explorateur DOM pour sélectionner des éléments et placez le pointeur de la souris sur un élément, l’élément correspondant est mis en surbrillance dans l’application en cours d’exécution. Vous devez cliquer sur l’élément dans l’explorateur DOM pour le sélectionner, ou vous pouvez utiliser les touches de direction pour mettre en surbrillance et sélectionner des éléments. Vous pouvez également sélectionner des éléments dans l’explorateur DOM à l’aide du bouton **Sélectionner un élément** . L'illustration suivante présente le bouton **Sélectionner un élément**.
+  Quand vous utilisez la fenêtre de l’explorateur DOM pour sélectionner des éléments et placez le pointeur de la souris sur un élément, l’élément correspondant est mis en surbrillance dans l’application en cours d’exécution. Vous devez cliquer sur l’élément dans l’explorateur DOM pour le sélectionner, ou vous pouvez utiliser les touches de direction pour mettre en surbrillance et sélectionner des éléments. Vous pouvez également sélectionner des éléments dans l’explorateur DOM à l’aide du bouton **Sélectionner un élément** . L’illustration suivante présente le bouton **Sélectionner un élément** .
 
-  ![Bouton Sélectionner un élément dans l’Explorateur DOM](../debugger/media/js_dom_select_element_button.png "JS_DOM_Select_Element_Button")
+  ![Bouton Sélection d'un élément dans l'explorateur DOM](../debugger/media/js_dom_select_element_button.png "JS_DOM_Select_Element_Button")
 
   Lorsque vous cliquez sur **Sélectionner un élément** (ou appuyez sur Ctrl+B), le mode de sélection est modifié pour vous permettre de sélectionner un élément dans l’explorateur DOM en cliquant dessus dans l’application en cours d’exécution. Après un clic, le mode de sélection normale est restauré. Lorsque vous cliquez sur **Sélectionner un élément**, l’application s’affiche au premier plan et le curseur change pour refléter le nouveau mode de sélection. Quand vous cliquez sur l’élément encadré, l’explorateur DOM s’affiche au premier plan avec l’élément spécifié sélectionné.
 
   Avant de choisir **Sélectionner un élément**, spécifiez si les éléments doivent être mis en surbrillance dans l’application en cours d’exécution en activant le bouton **Afficher les zones de surlignement de la page web pour l’élément sélectionné dans l’arborescence DOM** . Voici une illustration de ce bouton. Les zones de surlignement sont affichées par défaut.
 
-  ![Afficher le bouton en surbrillance de la page Web](../debugger/media/js_dom_display_highlights_button.png "JS_DOM_Display_Highlights_Button")
+  ![Bouton pour afficher les éléments essentiels du site web](../debugger/media/js_dom_display_highlights_button.png "JS_DOM_Display_Highlights_Button")
 
   Quand vous choisissez de mettre en surbrillance des éléments, les éléments pointés dans le simulateur sont mis en surbrillance. Les couleurs des éléments mis en surbrillance correspondent au modèle de boîte qui apparaît sous l’onglet **Disposition** de l’explorateur DOM.
 
@@ -260,6 +260,6 @@ Il existe trois façons de sélectionner des éléments DOM lors du débogage d�
 - [Actualiser une application (JavaScript)](../debugger/refresh-an-app-javascript.md)
 - [Déboguer un contrôle WebView](../debugger/debug-a-webview-control.md)
 - [Raccourcis clavier](../debugger/keyboard-shortcuts-html-and-javascript.md?view=vs-2017)
-- [Commandes de la console JavaScript](../debugger/javascript-console-commands.md?view=vs-2017)
+- [JavaScript Console commands](../debugger/javascript-console-commands.md?view=vs-2017)
 - [Déboguer un exemple de code HTML, CSS et JavaScript](../debugger/debug-html-css-and-javascript-sample-code.md)
 - [Support technique et accessibilité](https://msdn.microsoft.com/library/tzbxw1af(VS.120).aspx)

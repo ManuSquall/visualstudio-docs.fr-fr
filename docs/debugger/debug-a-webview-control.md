@@ -1,7 +1,7 @@
 ---
 title: Déboguer un contrôle WebView (UWP) | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - CSharp
 - VB
@@ -14,16 +14,16 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - uwp
-ms.openlocfilehash: 15c9a2b489aeb091224536bfb87398197f6e4f62
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.openlocfilehash: a96e4db66ec26870ac92c52209d7aa6f22225b21
+ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73188654"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85350639"
 ---
 # <a name="debug-a-webview-control-in-a-uwp-app"></a>Déboguer un contrôle WebView dans une application UWP
 
- Pour inspecter et déboguer des contrôles `WebView` dans une application Windows Runtime, vous pouvez configurer Visual Studio de sorte à attacher le débogueur de scripts au démarrage de l'application. Vous avez deux moyens d’interagir avec les contrôles `WebView` à l’aide du débogueur :
+ Pour inspecter et déboguer des contrôles `WebView` dans une application Windows Runtime, vous pouvez configurer Visual Studio de sorte à attacher le débogueur de scripts au démarrage de l'application. Vous avez deux moyens d’interagir avec `WebView` les contrôles à l’aide du débogueur :
 
 - Ouvrez l’[Explorateur DOM](../debugger/quickstart-debug-html-and-css.md) pour une instance `WebView` et inspectez les éléments DOM, examinez les problèmes de style CSS et testez de manière dynamique les modifications de rendu des styles.
 
@@ -37,7 +37,7 @@ ms.locfileid: "73188654"
 
 3. Sélectionnez **Déboguer**. Dans la liste **Processus d’application**, choisissez **Script**.
 
-     ![Attacher le débogueur de script](../debugger/media/js_dom_webview_script_debugger.png "JS_DOM_WebView_Script_Debugger")
+     ![Attacher le débogueur de scripts](../debugger/media/js_dom_webview_script_debugger.png "JS_DOM_WebView_Script_Debugger")
 
 4. (Facultatif) Pour les versions non Express de Visual Studio, désactivez le débogage juste-à-temps en choisissant **Outils > Options > Débogage > Juste-à-temps**, puis en désactivant le débogage juste-à-temps pour le script.
 
@@ -56,7 +56,7 @@ ms.locfileid: "73188654"
 
 4. Ouvrez la fenêtre de l’Explorateur DOM pour le contrôle `WebView` en choisissant **Déboguer**, **Windows**, **Explorateur DOM**, puis choisissez l’URL du `WebView` que vous voulez inspecter.
 
-     ![Ouverture de l’Explorateur DOM](../debugger/media/js_dom_webview.png "JS_DOM_WebView")
+     ![Ouverture de l'explorateur DOM](../debugger/media/js_dom_webview.png "JS_DOM_WebView")
 
      L'Explorateur DOM associé au `WebView` apparaît sous forme d'un nouvel onglet dans Visual Studio.
 
@@ -76,7 +76,7 @@ ms.locfileid: "73188654"
 
 5. Dans la fenêtre de la console, sélectionnez la page web ou un `iFrame` affiché par le contrôle `WebView` dans la liste **Cible**.
 
-     ![Sélection de la cible dans la fenêtre de la console JavaScript](../debugger/media/js_console_target.png "JS_Console_Target")
+     ![Sélection cible dans la fenêtre de la console JavaScript](../debugger/media/js_console_target.png "JS_Console_Target")
 
     > [!NOTE]
     > À l'aide de la console, vous pouvez interagir avec un seul `WebView`, `iFrame`, contrat de partage ou traitement web à la fois. Chaque élément requiert une instance distincte de l'hôte de plateforme web (WWAHost.exe). Vous pouvez interagir avec un seul hôte à la fois.
@@ -85,4 +85,4 @@ ms.locfileid: "73188654"
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Démarrage rapide : déboguer du code HTML et CSS](../debugger/quickstart-debug-html-and-css.md)
+- [Démarrage rapide : déboguer du code HTML et CSS](../debugger/quickstart-debug-html-and-css.md)

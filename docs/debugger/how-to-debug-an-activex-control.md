@@ -1,7 +1,7 @@
 ---
-title: 'Comment : déboguer un contrôle ActiveX | Microsoft Docs'
+title: Comment déboguer un contrôle ActiveX | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - vc.controls.debug
 dev_langs:
@@ -24,23 +24,23 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 75abf76516d3827a748e1b896d4c2e8c93bb34da
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 76bc982db167624e567f88a1cf139b41cad9feb7
+ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72733868"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85350210"
 ---
 # <a name="how-to-debug-an-activex-control"></a>Comment : déboguer un contrôle ActiveX
 
 > [!NOTE]
-> Les boîtes de dialogue et les commandes de menu qui s'affichent peuvent être différentes de celles qui sont décrites dans l'aide, en fonction de vos paramètres actifs ou de l'édition utilisée. Pour modifier vos paramètres, choisissez Importation et exportation de paramètres dans le menu Outils. Pour plus d’informations, consultez [Réinitialiser les paramètres](../ide/environment-settings.md#reset-settings).
+> Les boîtes de dialogue et les commandes de menu affichées peuvent différer de celles décrites dans l'Aide selon les paramètres actifs ou le mode d'édition. Pour modifier vos paramètres, choisissez Importation et exportation de paramètres dans le menu Outils. Pour plus d’informations, consultez [Réinitialiser les paramètres](../ide/environment-settings.md#reset-settings).
 
 Pour déboguer votre contrôle ActiveX, vous devez spécifier un conteneur (exécutable) à utiliser pour l'exécution du contrôle.
 
 ## <a name="to-specify-a-container-for-the-debug-session"></a>Pour spécifier un conteneur pour une session de débogage
 
-1. Dans l'Explorateur de solutions, sélectionnez le projet.
+1. Dans l’Explorateur de solutions, sélectionnez le projet.
 
 2. Dans le menu **affichage** , cliquez sur **pages de propriétés**.
 

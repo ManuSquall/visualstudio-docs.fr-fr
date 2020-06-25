@@ -3,7 +3,7 @@ title: Déboguer des applications Azure ASP.NET en production
 description: Découvrez comment définir des snappoints et afficher des captures instantanées avec le Débogueur de capture instantanée.
 ms.custom: ''
 ms.date: 03/16/2018
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - debugger
 author: mikejo5000
@@ -12,12 +12,12 @@ manager: jillfra
 ms.workload:
 - aspnet
 - azure
-ms.openlocfilehash: 6944c930ba6357fffeebba417a32cd167bd4debd
-ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
+ms.openlocfilehash: 07ebe8a583717689ca424bf969e7c19e87ebf08e
+ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/30/2019
-ms.locfileid: "70179822"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85350665"
 ---
 # <a name="debug-live-aspnet-azure-apps-using-the-snapshot-debugger"></a>Déboguer des applications Azure ASP.NET en production avec le Débogueur de capture instantanée
 
@@ -25,7 +25,7 @@ Le Débogueur de capture instantanée prend une capture instantanée de vos appl
 
 Les snappoints et les logpoints sont similaires aux points d’arrêt, mais contrairement à ceux-ci, les snappoints n’arrêtent pas l’application lorsqu’ils sont atteints. En règle générale, la capture d’un instantané sur un snappoint prend entre 10 et 20 millisecondes.
 
-Dans ce didacticiel, vous allez effectuer les actions suivantes :
+Ce didacticiel présente les procédures suivantes :
 
 > [!div class="checklist"]
 > * lancer le Débogueur de capture instantanée ;
@@ -49,9 +49,9 @@ Dans ce didacticiel, vous allez effectuer les actions suivantes :
   * Applications ASP.NET exécutées sur .NET Framework version 4.6.1 ou ultérieure.
   * Applications ASP.NET Core exécutées sur .NET Core version 2.0 ou ultérieure sur Windows.
 
-## <a name="open-your-project-and-start-the-snapshot-debugger"></a>Ouvrir le projet et lancer le Débogueur de capture instantanée
+## <a name="open-your-project-and-start-the-snapshot-debugger"></a>Ouvrir votre projet et démarrer le Débogueur de capture instantanée
 
-1. Ouvrez le projet pour lequel vous souhaitez exécuter le débogage de capture instantanée.
+1. Ouvrez le projet pour lequel vous souhaitez exécuter le débogage d’instantané.
 
    > [!IMPORTANT]
    > Il est nécessaire, pour le débogage de capture instantanée, d’ouvrir la *version du code source* publiée sur Azure App Service.
@@ -66,7 +66,7 @@ Dans ce didacticiel, vous allez effectuer les actions suivantes :
 
 ::: moniker range=">=vs-2019"
 
-2. Choisissez **Déboguer > Joindre le Débogueur de capture instantanée…** . Sélectionnez le service Azure App Service sur lequel votre projet est déployé et un compte de stockage Azure, puis cliquez sur **Joindre**. Débogueur de capture instantanée prend également en charge le [service Azure Kubernetes](debug-live-azure-kubernetes.md) et les [machines virtuelles Azure & Virtual Machine Scale sets](debug-live-azure-virtual-machines.md).
+2. Choisissez **Déboguer > attacher débogueur de capture instantanée...**. Sélectionnez le Azure App Service sur lequel votre projet est déployé et un compte de stockage Azure, puis cliquez sur **attacher**. Débogueur de capture instantanée prend également en charge le [service Azure Kubernetes](debug-live-azure-kubernetes.md) et les [machines virtuelles Azure & Virtual Machine Scale sets](debug-live-azure-virtual-machines.md).
 
    ![Lancer le Débogueur de capture instantanée à partir du menu Déboguer](../debugger/media/snapshot-debug-menu-attach.png)
 
@@ -79,7 +79,7 @@ Dans ce didacticiel, vous allez effectuer les actions suivantes :
 
    ::: moniker range="<=vs-2017"
    > [!NOTE]
-   > L’extension de site Application Insights prend également en charge le débogage de capture instantanée. Si vous parvenez à un message d’erreur «extension de site obsolète», consultez [conseils de dépannage et problèmes connus pour](../debugger/debug-live-azure-apps-troubleshooting.md) le débogage d’instantanés pour la mise à niveau des détails.
+   > L’extension de site Application Insights prend également en charge le débogage de capture instantanée. Si vous parvenez à un message d’erreur « extension de site obsolète », consultez [conseils de dépannage et problèmes connus pour le débogage d’instantanés](../debugger/debug-live-azure-apps-troubleshooting.md) pour la mise à niveau des détails.
    ::: moniker-end
    ::: moniker range=">=vs-2019"
    > [!NOTE]
@@ -126,7 +126,7 @@ Une fois qu’un point d’ancrage est défini, vous pouvez soit générer manue
 
 Vous pouvez également ajouter d’autres snappoints à votre application et les activer avec le bouton **Mettre à jour la collecte**.
 
-**Besoin d’aide ?** Voir les pages [Résolution des problèmes et problèmes connus](../debugger/debug-live-azure-apps-troubleshooting.md) et [FAQ du débogage de captures instantanées](../debugger/debug-live-azure-apps-faq.md).
+**Besoin d’aide ?** Voir les pages [Résolution des problèmes et problèmes connus](../debugger/debug-live-azure-apps-troubleshooting.md) et [FAQ du débogage de captures instantanées](../debugger/debug-live-azure-apps-faq.md).
 
 ## <a name="set-a-conditional-snappoint"></a>Définir un snappoint conditionnel
 
@@ -169,4 +169,4 @@ Nous avons vu comment prendre une capture instantanée lorsqu’un snappoint est
 Dans ce tutoriel, vous avez appris à utiliser le Débogueur de capture instantanée pour App Service. Peut-être souhaitez-vous en savoir plus sur cette fonctionnalité.
 
 > [!div class="nextstepaction"]
-> [FAQ pour le débogage d’instantané](../debugger/debug-live-azure-apps-faq.md)
+> [Questions fréquentes (FAQ) sur le débogage d’instantané](../debugger/debug-live-azure-apps-faq.md)

@@ -1,7 +1,7 @@
 ---
 title: Résoudre les problèmes d’installation ou de mise à niveau
 description: Parfois, des problèmes peuvent se produire. Cette page peut vous aider en cas d’échec de l’installation ou de la mise à niveau de Visual Studio.
-ms.date: 03/23/2020
+ms.date: 06/24/2020
 ms.custom: seodec18
 ms.topic: troubleshooting
 helpviewer_keywords:
@@ -15,17 +15,17 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 97cc0dd72b54795342d8c4f66a90bbd1ae4a7272
-ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
+ms.openlocfilehash: 418cc9f75842cb4f3e9d8c0c0753084e2f0633c2
+ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "80233110"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85350808"
 ---
 # <a name="troubleshoot-visual-studio-installation-and-upgrade-issues"></a>Résolution des problèmes d’installation et de mise à niveau de Visual Studio
 
 > [!IMPORTANT]
-> Vous rencontrez un problème d’installation ? Nous pouvons vous aider. Nous offrons une [**option de support de chat d’installation**](https://visualstudio.microsoft.com/vs/support/#talktous) (anglais seulement).
+> Vous rencontrez un problème d’installation ? Nous pouvons vous aider. Nous offrons une option de prise en charge de [**conversation d’installation**](https://visualstudio.microsoft.com/vs/support/#talktous) (en anglais uniquement).
 
 Ce guide de résolution des problèmes inclut des instructions détaillées qui doivent permettre de résoudre la plupart des problèmes d’installation.
 
@@ -47,11 +47,15 @@ Il existe certains problèmes connus avec le programme d’installation de Visua
 
 ::: moniker-end
 
-### <a name="step-2---check-with-the-developer-community"></a>Étape 2 : Vérifier auprès de la communauté de développeurs
+### <a name="step-2---try-repairing-visual-studio"></a>Étape 2-essayer de réparer Visual Studio
+
+La réparation corrige de nombreux problèmes de mise à jour courants. Pour plus d’informations sur le moment et la façon d’utiliser la fonctionnalité de réparation dans Visual Studio, consultez [réparer Visual Studio](repair-visual-studio.md).
+
+### <a name="step-3---check-with-the-developer-community"></a>Étape 3 : consultez la communauté des développeurs
 
 Effectuez une recherche à partir de votre message d’erreur auprès de la [Communauté de développeurs Visual Studio](https://developercommunity.visualstudio.com/spaces/8/index.html). D’autres membres de la communauté ont peut-être une solution documentée à votre problème.
 
-### <a name="step-3---delete-the-visual-studio-installer-directory-to-fix-upgrade-problems"></a>Étape 3 : Supprimer le répertoire du programme d’installation de Visual Studio pour résoudre les problèmes de mise à niveau
+### <a name="step-4---delete-the-visual-studio-installer-directory-to-fix-upgrade-problems"></a>Étape 4 : supprimer le répertoire Visual Studio Installer pour résoudre les problèmes de mise à niveau
 
 Le programme d’amorçage du programme d’installation de Visual Studio est un exécutable léger minimal qui installe le reste du programme d’installation de Visual Studio. La suppression des fichiers du programme d’installation de Visual Studio, puis la réexécution du programme d’amorçage peuvent résoudre certains échecs de mise à jour.
 
@@ -76,7 +80,7 @@ Le programme d’amorçage du programme d’installation de Visual Studio est un
 
 ::: moniker-end
 
-### <a name="step-4---report-a-problem"></a>Étape 4 : Signaler un problème
+### <a name="step-5---report-a-problem"></a>Étape 5-signaler un problème
 
 Dans certaines situations (fichiers endommagés, par exemple), vous devrez peut-être examiner les problèmes au cas par cas. Pour que nous puissions vous aider, effectuez les actions suivantes :
 
@@ -100,28 +104,28 @@ Dans certaines situations (fichiers endommagés, par exemple), vous devrez peut-
 
 ::: moniker-end
 
-### <a name="step-5---run-installcleanupexe-to-remove-installation-files"></a>Étape 5 : Exécuter InstallCleanup.exe pour nettoyer les fichiers d’installation
+### <a name="step-6---run-installcleanupexe-to-remove-installation-files"></a>Étape 6 : exécuter InstallCleanup.exe pour supprimer les fichiers d’installation
 
 En dernier recours, vous pouvez [désinstaller Visual Studio](remove-visual-studio.md) pour supprimer tous les fichiers d’installation et les informations produit.
 
 1. Suivez les instructions de la rubrique [Supprimer Visual Studio](remove-visual-studio.md).
-2. Exécutez à nouveau le programme d’amorçage dans [Étape 3 : supprimer le répertoire de Visual Studio Installer pour résoudre les problèmes de mise à niveau](#step-3---delete-the-visual-studio-installer-directory-to-fix-upgrade-problems).
+2. Réexécutez le programme d’amorçage décrit à l' [étape 4 : supprimez le répertoire Visual Studio installer pour résoudre les problèmes de mise à niveau](#step-4---delete-the-visual-studio-installer-directory-to-fix-upgrade-problems).
 3. Essayez à nouveau d’installer ou de mettre à jour Visual Studio.
 
-### <a name="step-6---contact-us-optional"></a>Étape 6 : Nous contacter (facultatif)
+### <a name="step-7---contact-us-optional"></a>Étape 7-nous contacter (facultatif)
 
 Si aucune des étapes précédentes ne vous permet d’installer ou de mettre à niveau Visual Studio correctement, contactez-nous via notre option de support [**Conversation en direct**](https://visualstudio.microsoft.com/vs/support/#talktous) (en anglais uniquement) pour obtenir une assistance supplémentaire.
 
-## <a name="offline-installations"></a>Installations hors ligne
+## <a name="offline-installations"></a>Installations hors connexion
 
-Voici un tableau de problèmes connus et quelques solution de contournement qui pourraient vous aider lorsque vous créez une [installation hors ligne,](create-an-offline-installation-of-visual-studio.md) puis installer à partir d’une disposition locale.
+Voici un tableau des problèmes connus et des solutions de contournement qui peuvent vous aider lors de la création d’une [installation hors connexion](create-an-offline-installation-of-visual-studio.md) , puis l’installation à partir d’une disposition locale.
 
-| Problème       | Élément                   | Solution |
+| Problème       | Article                   | Solution |
 | ----------- | ---------------------- | -------- |
-| Les utilisateurs n’ont pas accès aux fichiers. | autorisations (ACL) | Assurez-vous d’ajuster les autorisations (ACL) afin qu’ils accordent l’accès Read à d’autres utilisateurs *avant* de partager l’installation hors ligne. |
+| Les utilisateurs n’ont pas accès aux fichiers. | autorisations (ACL) | Veillez à ajuster les autorisations (ACL) afin qu’elles accordent un accès en lecture à d’autres utilisateurs *avant* de partager l’installation hors connexion. |
 | L’installation des nouvelles charges de travail, langues et des nouveaux composants a échoué.  | `--layout`  | Assurez-vous d’avoir un accès Internet si vous installez depuis une disposition partielle et sélectionnez des charges de travail, composants ou langues non téléchargés préalablement dans cette disposition partielle. |
 
-Pour plus d’informations sur la façon de résoudre les problèmes avec une [installation réseau](create-a-network-installation-of-visual-studio.md), voir les erreurs liées au [réseau Troubleshoot lorsque vous installez ou utilisez Visual Studio](troubleshooting-network-related-errors-in-visual-studio.md).
+Pour plus d’informations sur la résolution des problèmes liés à une [installation réseau](create-a-network-installation-of-visual-studio.md), consultez [résoudre les erreurs liées au réseau lorsque vous installez ou utilisez Visual Studio](troubleshooting-network-related-errors-in-visual-studio.md).
 
 ## <a name="installation-logs"></a>Journaux d’installation
 
@@ -131,7 +135,7 @@ Si vous contactez le Support Microsoft, vous devrez peut-être fournir ces journ
 
 Pour collecter les journaux :
 
-1. [Télécharger l’outil](https://www.microsoft.com/download/details.aspx?id=12493).
+1. [Téléchargez l’outil](https://www.microsoft.com/download/details.aspx?id=12493).
 2. Ouvrez une invite de commandes d’administration.
 3. Exécutez `Collect.exe` à partir du répertoire dans lequel vous avez enregistré l’outil.
 4. Le fichier `vslogs.zip` résultant se trouve dans le répertoire `%TEMP%`, par exemple, `C:\Users\YourName\AppData\Local\Temp\vslogs.zip`.
@@ -145,6 +149,7 @@ Si les solutions listées dans ce guide de résolution des problèmes ne vous pe
 
 ## <a name="see-also"></a>Voir aussi
 
+* [Réparer Visual Studio](repair-visual-studio.md)
 * [Supprimer Visual Studio](remove-visual-studio.md)
 * [Installer et utiliser Visual Studio et les services Azure derrière un pare-feu ou un serveur proxy](install-and-use-visual-studio-behind-a-firewall-or-proxy-server.md)
 * [Outils de détection et de gestion des instances de Visual Studio](tools-for-managing-visual-studio-instances.md)

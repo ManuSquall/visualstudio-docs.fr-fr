@@ -1,7 +1,7 @@
 ---
 title: Afficher des informations personnalisées à l’aide de DebuggerDisplay | Microsoft Docs
 ms.date: 01/09/2019
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - attributes, debugger
 - DebuggerDisplay attribute
@@ -12,20 +12,20 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dc2abb054a0e09d0715e708cc4d1d6fcbed476e0
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 3511b52ab8c04d9018336b4d63b0659792835d99
+ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72728671"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85347870"
 ---
-# <a name="tell-the-debugger-what-to-show-using-the-debuggerdisplay-attribute-c-visual-basic-f-ccli"></a>Indiquer au débogueur ce qui doit être affiché à l’aideC#de l’attribut F#DebuggerDisplay C++(, Visual Basic,,/CLI)
+# <a name="tell-the-debugger-what-to-show-using-the-debuggerdisplay-attribute-c-visual-basic-f-ccli"></a>Indiquez au débogueur ce qui doit être affiché à l’aide de l’attribut DebuggerDisplay (C#, Visual Basic, F #, C++/CLI)
 
 La <xref:System.Diagnostics.DebuggerDisplayAttribute> contrôle la façon dont un objet, une propriété ou un champ s’affiche dans les fenêtres de variables du débogueur. Cet attribut peut être appliqué aux éléments suivants : types, délégués, propriétés, champs et assemblys. En cas d’application à un type de base, l’attribut s’applique également à une sous-classe.
 
 L'attribut `DebuggerDisplay` possède un seul argument, qui est une chaîne à afficher dans la colonne valeur des instances du type. Cette chaîne peut contenir des accolades (`{` et `}`). Le texte entre deux accolades est évalué comme un champ, une propriété ou une méthode.
 
-Si une classe possède une méthode `ToString()` substituée, le débogueur utilise la méthode substituée à la place du `{<typeName>}`par défaut. Si vous avez substitué la méthode `ToString()` , le débogueur utilise la méthode substituée à la place du`{<typeName>}`par défaut. Il est donc inutile d’utiliser `DebuggerDisplay`. Si vous utilisez les deux, l’attribut `DebuggerDisplay` est prioritaire sur la méthode `ToString()` remplacée. L’attribut `DebuggerDisplay` a également priorité sur la méthode `ToString()` remplacée dans une sous-classe.
+Si une classe possède une méthode `ToString()` substituée, le débogueur utilise la méthode substituée à la place du `{<typeName>}`par défaut. Si vous avez substitué la méthode `ToString()` , le débogueur utilise la méthode substituée à la place du`{<typeName>}`par défaut. Il est donc inutile d’utiliser `DebuggerDisplay`. Si vous utilisez les deux, l’attribut `DebuggerDisplay` est prioritaire sur la méthode `ToString()` remplacée. L' `DebuggerDisplay` attribut a également priorité sur la méthode substituée `ToString()` dans une sous-classe.
 
 L’évaluation par le débogueur de cet appel `ToString()` implicite dépend d’un paramètre utilisateur dans la boîte de dialogue **Outils / Options / Débogage** . Visual Basic n’implémente pas cette évaluation `ToString()` implicite.
 
@@ -33,7 +33,7 @@ L’évaluation par le débogueur de cet appel `ToString()` implicite dépend d�
 > Si la case **Afficher la structure brute des objets dans des fenêtres de variables** est cochée dans la boîte de dialogue **Outils / Options / Débogage** , l’attribut `DebuggerDisplay` est ignoré.
 
 > [!NOTE]
-> Pour le code natif, cet attribut est pris en C++charge uniquement dans le code/CLI.
+> Pour le code natif, cet attribut est pris en charge uniquement dans le code C++/CLI.
 
 Le tableau suivant montre quelques-unes des utilisations possibles de l'attribut `DebuggerDisplay` et quelques exemples de sorties.
 
@@ -44,7 +44,7 @@ Le tableau suivant montre quelques-unes des utilisations possibles de l'attribut
 
 `DebuggerDisplay` peut également accepter des paramètres nommés.
 
-|Paramètres|Fonction|
+|Paramètres|Objectif|
 |----------------|-------------|
 |`Name`, `Type`|Ces paramètres affectent les colonnes **Nom** et **Type** des fenêtres de variables. (Ils peuvent être appliqués aux chaînes à l'aide de la même syntaxe que le constructeur). Une utilisation excessive ou inappropriée de ces paramètres peut générer un résultat confus.|
 |`Target`, `TargetTypeName`|Spécifie le type cible lorsque l'attribut est utilisé au niveau de l'assembly.|
@@ -98,8 +98,8 @@ L'exemple de code suivant explique l'utilisation de `DebuggerDisplay`, ainsi que
 
 |**Nom**|**Valeur**|**Type**|
 |--------------|---------------|--------------|
-|Touche|"trois"|objet {string}|
-|valeur|3|objet {int}|
+|Clé :|"trois"|objet {string}|
+|Valeur|3|objet {int}|
 
 ```csharp
 [DebuggerDisplay("{value}", Name = "{key}")]
@@ -181,7 +181,7 @@ class MyHashtable
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Utilisation de l’attribut DebuggerTypeProxy](../debugger/using-debuggertypeproxy-attribute.md)
+- [Utilisation de l'attribut DebuggerTypeProxy](../debugger/using-debuggertypeproxy-attribute.md)
 - [Créer des vues personnalisées d’objets gérés](../debugger/create-custom-views-of-managed-objects.md)
-- [Spécificateurs de format en C#](../debugger/format-specifiers-in-csharp.md)
-- [Amélioration du débogage avec les attributs d’affichage de débogueur](/dotnet/framework/debug-trace-profile/enhancing-debugging-with-the-debugger-display-attributes)
+- [Spécificateurs de format en C #](../debugger/format-specifiers-in-csharp.md)
+- [Amélioration du débogage avec les attributs d'affichage de débogueur](/dotnet/framework/debug-trace-profile/enhancing-debugging-with-the-debugger-display-attributes)

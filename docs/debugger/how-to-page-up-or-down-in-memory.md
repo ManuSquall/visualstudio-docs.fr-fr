@@ -1,7 +1,7 @@
 ---
-title: 'Comment : paginer vers le haut ou vers le haut dans la mémoire | Microsoft Docs'
+title: Comment paginer vers le haut ou vers le haut dans la mémoire | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - CSharp
 - VB
@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c9f93b24c9349a28176164d667c96133668cf3f4
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 79216ba29047101c9b9d2c6618cae013640542b8
+ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72733024"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85349417"
 ---
 # <a name="how-to-page-up-or-down-in-memory"></a>Comment : se déplacer d'une page vers le haut ou vers le bas dans la mémoire
 
@@ -48,5 +48,5 @@ Quand vous affichez le contenu de la mémoire dans la fenêtre **Mémoire** ou *
 
 ## <a name="see-also"></a>Voir aussi
 - [Fenêtres Mémoire](../debugger/memory-windows.md)
-- [Guide pratique pour utiliser la fenêtre Code Machine](../debugger/how-to-use-the-disassembly-window.md)
+- [Comment : utiliser la fenêtre Code Machine](../debugger/how-to-use-the-disassembly-window.md)
 - [Affichage des données dans le débogueur](../debugger/viewing-data-in-the-debugger.md)

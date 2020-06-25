@@ -9,12 +9,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 29c74f74bbee19e414b3ee32948f3ca5338e8d53
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: b87ed03c8f513f6a9a750186d8763e56061bed98
+ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75592986"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85350821"
 ---
 # <a name="draw-shapes-and-paths"></a>Dessiner des formes et des tracés
 
@@ -30,7 +30,7 @@ Recherchez des formes dans la fenêtre **Composants**.
 
 Faites glisser la forme de votre choix vers la planche graphique. Vous pouvez ensuite utiliser les poignées de la forme pour la mettre à l’échelle, la faire pivoter, la déplacer ou l’incliner.
 
-![Handles](../designers/media/84261e83-3091-4490-ab58-4218b188439e.png)
+![Poignées](../designers/media/84261e83-3091-4490-ab58-4218b188439e.png)
 
 ## <a name="draw-a-path"></a>Dessiner un tracé
 
@@ -86,9 +86,9 @@ Utilisez l’outil **Sélection** pour sélectionner le tracé. Utilisez l’out
 
 ## <a name="convert-a-shape-to-a-path"></a>Convertir une forme en tracé
 
-Pour modifier une forme à la manière d’un tracé, convertissez la forme en tracé. Sélectionnez la forme, puis sélectionnez **Format** > **Tracé** > **Convertir en tracé**.
+Pour modifier une forme à la manière d’un tracé, convertissez la forme en tracé. Sélectionnez la forme, puis sélectionnez **Format**  >  **chemin d’accès**au format  >  **convertir en tracé**.
 
-**Regardez une brève vidéo :** ![configurer les fonctionnalités installées](../designers/media/bldadminconsoleinitialconfigicon.png) l' [utilisation des chemins d’accès : convertir une forme en tracé](https://www.youtube.com/watch?v=Io5bC0-nH6Q#t=147).
+**Regardez une courte vidéo :** ![Configurer les fonctionnalités installées](../designers/media/bldadminconsoleinitialconfigicon.png) [Utilisation de tracés : convertir une forme en tracé](https://www.youtube.com/watch?v=Io5bC0-nH6Q#t=147).
 
 > [!NOTE]
 > L’option **Convertir en tracé** n’est pas disponible pour les applications UWP qui ont une `TargetPlatformVersion` minimale de 10.0.16299.0 (ou ultérieure).
@@ -99,13 +99,16 @@ Vous pouvez combiner des tracés et des formes pour en faire un seul et même tr
 
 ![Combiner des tracés](../designers/media/2df17a5d-a338-4ef4-96c5-dae51cc1ca8a.png)
 
-|||||
-|-|-|-|-|
-|![Les deux formes avant d'être combinées](../designers/media/b1_1.png)|Les deux formes avant d'être combinées|![Définir une intersection](../designers/media/b1_4.png)|Définir une intersection|
-|![Unir](../designers/media/b1_2.png)|Unir|![Exclure le chevauchement](../designers/media/b1_5.png)|Exclure le chevauchement|
-|![Diviser](../designers/media/b1_3.png)|Diviser|![Soustraire](../designers/media/b1_6.png)|Soustraire|
+|Number|Action|
+|-|-|
+|![Les deux formes avant d'être combinées](../designers/media/b1_1.png)|Les deux formes avant d'être combinées|
+|![Unir](../designers/media/b1_2.png)|Unir|
+|![Diviser](../designers/media/b1_3.png)|Diviser|
+|![Intersect](../designers/media/b1_4.png)|Intersect|
+|![Exclure le chevauchement](../designers/media/b1_5.png)|Exclure le chevauchement|
+|![Soustraire](../designers/media/b1_6.png)|Soustraire|
 
-**Regardez une brève vidéo :** ![configurer les fonctionnalités installées](../designers/media/bldadminconsoleinitialconfigicon.png) l' [utilisation des chemins d’accès : combiner les chemins](https://www.youtube.com/watch?v=Io5bC0-nH6Q#t=195).
+**Regardez une courte vidéo :** ![Configurer les fonctionnalités installées](../designers/media/bldadminconsoleinitialconfigicon.png) [Utilisation de tracés : combiner des tracés](https://www.youtube.com/watch?v=Io5bC0-nH6Q#t=195).
 
 ## <a name="create-a-compound-path"></a>Créer un tracé composite
 
@@ -115,7 +118,7 @@ Vous pouvez à tout moment dissocier un tracé composite après l’avoir créé
 
 ![Dissocier un tracé composite](../designers/media/2157a8aa-d9a7-4de4-8de5-b10d28f08a84.png)
 
-**Regardez une brève vidéo :** ![configurer les fonctionnalités installées](../designers/media/bldadminconsoleinitialconfigicon.png) l' [utilisation des chemins d’accès : créer un tracé composite](https://www.youtube.com/watch?v=Io5bC0-nH6Q).
+**Regardez une courte vidéo :** ![Configurer les fonctionnalités installées](../designers/media/bldadminconsoleinitialconfigicon.png) [Utilisation de tracés : créer un tracé composite](https://www.youtube.com/watch?v=Io5bC0-nH6Q).
 
 ## <a name="create-a-clipping-path"></a>Créer un tracé de détourage
 
@@ -123,4 +126,4 @@ Un tracé de détourage est un tracé ou une forme qui est appliqué à un autre
 
 ![Tracé de détourage](../designers/media/22471e98-a841-4f39-a3ef-36090cf5a625.png)
 
-**Regardez une brève vidéo :** ![configurer les fonctionnalités installées](../designers/media/bldadminconsoleinitialconfigicon.png) l' [utilisation des chemins d’accès : créer un tracé de détourage](https://www.youtube.com/watch?v=Io5bC0-nH6Q#t=232).
+**Regardez une courte vidéo :** ![Configurer les fonctionnalités installées](../designers/media/bldadminconsoleinitialconfigicon.png) [Utilisation de tracés : créer un tracé de détourage](https://www.youtube.com/watch?v=Io5bC0-nH6Q#t=232).

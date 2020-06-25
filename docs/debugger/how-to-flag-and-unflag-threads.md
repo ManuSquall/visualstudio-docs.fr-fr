@@ -1,7 +1,7 @@
 ---
-title: 'Comment : baliser et supprimer l’indicateur de threads | Microsoft Docs'
+title: Comment-baliser et supprimer l’indicateur de threads | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - CSharp
 - VB
@@ -15,14 +15,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 68a2ce8b6ec429b3f7f5cd782c3dac52602eff16
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: e7480f953e2fca57c296d6d1641059993bfa582c
+ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72733237"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85349625"
 ---
-# <a name="how-to-flag-and-unflag-threads-c-visual-basic-c"></a>Comment : baliser et supprimer l’indicateur deC#threads ( C++, Visual Basic,)
+# <a name="how-to-flag-and-unflag-threads-c-visual-basic-c"></a>Guide pratique pour baliser et supprimer l’indicateur de threads (C#, Visual Basic, C++)
 
 Vous pouvez marquer un thread auquel vous souhaitez accorder une attention particulière en le marquant avec une icône dans les fenêtres **Threads**, **Piles parallèles** (vue thread), **Espion parallèle**et **Threads GPU** . Cette icône vous aide, ainsi que d'autres, à distinguer les threads avec indicateur des autres threads.
 
@@ -31,7 +31,7 @@ Les threads avec indicateur reçoivent également un traitement spécial dans la
 ### <a name="to-flag-or-unflag-a-thread"></a>Pour marquer ou supprimer l'indicateur d'un thread
 
 - Dans la fenêtre **Threads** ou **Espion parallèle** , recherchez le thread qui vous intéresse, puis cliquez sur l’icône d’indicateur pour activer ou désactiver l’indicateur.
-- Dans la fenêtre **Piles parallèles** , cliquez avec le bouton droit sur un thread ou un groupe de threads, puis sélectionnez **indicateur/\<thread >** ou sans **indicateur/\<thread >** .
+- Dans la fenêtre **Piles parallèles** , cliquez avec le bouton droit sur un thread ou un groupe de threads, puis sélectionnez ** \<thread> indicateur/** ou sans **indicateur/ \<thread> **.
 
 ### <a name="to-unflag-all-threads"></a>Pour supprimer tous les indicateurs de thread
 
@@ -62,5 +62,5 @@ Les threads avec indicateur reçoivent également un traitement spécial dans la
 
 ## <a name="see-also"></a>Voir aussi
 - [Déboguer les applications multithread](../debugger/debug-multithreaded-applications-in-visual-studio.md)
-- [Bien démarrer avec le débogage d’applications multithread](../debugger/get-started-debugging-multithreaded-apps.md)
+- [Bien démarrer avec le débogage d’applications multithreads](../debugger/get-started-debugging-multithreaded-apps.md)
 - [Procédure pas à pas : déboguer des applications multithread à l’aide de la fenêtre threads](../debugger/how-to-use-the-threads-window.md)

@@ -1,7 +1,7 @@
 ---
-title: 'Comment : restaurer les commandes masquées du débogueur | Microsoft Docs'
+title: Comment-restaurer les commandes masquées du débogueur | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - CSharp
 - VB
@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a45791843abe3051bacb9655c773ac9dfc6b9045
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 13b4db03a75decd41430c282a67276caa60182d8
+ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72732914"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85349378"
 ---
 # <a name="how-to-restore-hidden-debugger-commands"></a>Comment : restaurer les commandes masquées du débogueur
 Lorsque vous installez Visual Studio, vous êtes invité à choisir un jeu de paramètres IDE par défaut pour votre langage de programmation principal. Les paramètres IDE par défaut de quelques langages peuvent masquer certaines commandes de débogueur.
@@ -34,11 +34,11 @@ Lorsque vous installez Visual Studio, vous êtes invité à choisir un jeu de pa
 
 1. Un projet étant ouvert, dans le menu **Outils**, cliquez sur **Personnaliser**.
 
-2. Dans la boîte de dialogue **Personnaliser**, cliquez sur l'onglet **Commandes**.
+2. Dans la boîte de dialogue **Personnaliser** , cliquez sur l’onglet **Commandes** .
 
-3. Dans le menu déroulant **Barre de menus :** , sélectionnez le menu **Déboguer** qui doit contenir la commande restaurée.
+3. Dans le menu déroulant **Barre de menus :**, sélectionnez le menu **Déboguer** qui doit contenir la commande restaurée.
 
-4. Cliquez sur le bouton **Ajouter une commande...** .
+4. Cliquez sur le bouton **Ajouter une commande...**.
 
 5. Dans la zone **Ajouter une commande**, sélectionnez la commande que vous souhaitez ajouter, puis cliquez sur **OK**.
 
@@ -60,13 +60,13 @@ Lorsque vous installez Visual Studio, vous êtes invité à choisir un jeu de pa
 
 3. Sur la page **Enregistrer les paramètres actuels**, enregistrez ou non vos paramètres existants, puis cliquez sur **Suivant**.
 
-4. Sur la page **Choisir une collection de paramètres à importer**, dans le dossier **Paramètres par défaut**, choisissez une collection de paramètres de développement dotés des commandes à utiliser. Si vous ne savez pas quelle collection choisir, essayez **Paramètres de développement généraux** ou **Paramètres de développement Visual C++** , option qui fournit le plus grand nombre de commandes de débogueur.
+4. Sur la page **Choisir une collection de paramètres à importer**, dans le dossier **Paramètres par défaut**, choisissez une collection de paramètres de développement dotés des commandes à utiliser. Si vous ne savez pas quelle collection choisir, essayez **Paramètres de développement généraux** ou **Paramètres de développement Visual C++**, option qui fournit le plus grand nombre de commandes de débogueur.
 
-5. Cliquez sur **Next**.
+5. Cliquez sur **Suivant**.
 
 6. Sur la page **Choisir les paramètres à importer**, sous **Options**, assurez-vous que **Débogage** est sélectionné. Désactivez les autres cases à cocher, sauf si vous souhaitez également importer ces paramètres.
 
-7. Cliquez sur **Finish**.
+7. Cliquez sur **Terminer**.
 
 8. Sur la page **Importation terminée**, examinez les erreurs associées à la réinitialisation de vos paramètres sous **Détails**.
 

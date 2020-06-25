@@ -1,7 +1,7 @@
 ---
-title: 'Comment : modifier une valeur de Registre | Microsoft Docs'
+title: Procédure de modification d’une valeur de Registre | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - vs.debug.register.edit
 dev_langs:
@@ -19,14 +19,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b3ccaa124b64ad462f633e760695f931afaae531
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 8f7a341fa3f8d41bf4788db5bb4b4957fd8cca81
+ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72733418"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85349820"
 ---
-# <a name="how-to-edit-a-register-value-c-c-visual-basic-f"></a>Comment : modifier une valeur de Registre (C#, C++, Visual Basic, F#)
+# <a name="how-to-edit-a-register-value-c-c-visual-basic-f"></a>Comment : modifier une valeur de Registre (C#, C++, Visual Basic, F #)
 
 La fenêtre Registres est disponible uniquement si le débogage au niveau des adresses est activé dans la boîte de dialogue **Options**, nœud **Débogage**.
 
@@ -43,4 +43,4 @@ La fenêtre Registres est disponible uniquement si le débogage au niveau des ad
     > Modifier des valeurs à virgule flottante risque d’entraîner quelques légères imprécisions, dues à la conversion en binaire de la partie décimale des composants fractionnaires. Dans un Registre en virgule flottante, même une modification apparemment anodine risque d'entraîner des changements de certains bits de poids faible.
 
 ## <a name="see-also"></a>Voir aussi
-- [Guide pratique pour utiliser la fenêtre Registres](../debugger/how-to-use-the-registers-window.md)
+- [Comment : utiliser la fenêtre Registres](../debugger/how-to-use-the-registers-window.md)

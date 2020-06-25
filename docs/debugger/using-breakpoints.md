@@ -1,8 +1,8 @@
 ---
-title: Utilisez des points d’arrêt dans le débagénaire . Microsoft Docs
+title: Utiliser des points d’arrêt dans le débogueur | Microsoft Docs
 ms.custom: ''
 ms.date: 10/28/2019
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - vs.debug.breakpointswin
 - vs.debug.disassembly.insert
@@ -34,127 +34,127 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a6a8ee96834fc20186ba6719a7c4f377fea45d6b
-ms.sourcegitcommit: 95f26af1da51d4c83ae78adcb7372b32364d8a2b
+ms.openlocfilehash: fab15d3390e73ad464a334ccbe64ff8d59db77f2
+ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79302034"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85348013"
 ---
-# <a name="use-breakpoints-in-the-visual-studio-debugger"></a>Utilisez des points d’arrêt dans le débbugger Visual Studio
+# <a name="use-breakpoints-in-the-visual-studio-debugger"></a>Utiliser des points d’arrêt dans le débogueur Visual Studio
 
-Les points de rupture sont l’une des techniques de débogage les plus importantes dans la boîte à outils de votre développeur. Vous définissez des points d’arrêt où que vous vouliez interrompre l’exécution des débbuggeurs. Par exemple, vous pouvez voir l’état des variables de code ou regarder la pile d’appels à un certain point d’arrêt.  Si vous essayez de résoudre un avertissement ou un problème tout en utilisant des points d’arrêt, voir [les points de rupture Deshoot dans le debugger Visual Studio](../debugger/troubleshooting-breakpoints.md).
+Les points d’arrêt constituent l’une des techniques de débogage les plus importantes dans la boîte à outils de votre développeur. Vous définissez des points d’arrêt là où vous souhaitez suspendre l’exécution du débogueur. Par exemple, vous souhaiterez peut-être afficher l’état des variables de code ou examiner la pile des appels à un certain point d’arrêt.  Si vous essayez de résoudre un avertissement ou un problème lors de l’utilisation de points d’arrêt, consultez [résoudre les problèmes de points d’arrêt dans le débogueur Visual Studio](../debugger/troubleshooting-breakpoints.md).
 
 > [!NOTE]
-> Si vous connaissez la tâche ou le problème que vous essayez de résoudre, mais vous devez savoir quel genre de point d’arrêt à utiliser, voir [Trouvez votre tâche de débogage](../debugger/find-your-debugging-task.md#pause-running-code).
+> Si vous connaissez la tâche ou le problème que vous tentez de résoudre, mais que vous devez connaître le type de point d’arrêt à utiliser, consultez [Rechercher votre tâche de débogage](../debugger/find-your-debugging-task.md#pause-running-code).
 
-## <a name="set-breakpoints-in-source-code"></a><a name="BKMK_Overview"></a>Définir les points d’arrêt dans le code source
+## <a name="set-breakpoints-in-source-code"></a><a name="BKMK_Overview"></a>Définir des points d’arrêt dans le code source
 
-Vous pouvez définir un point d’arrêt sur n’importe quelle ligne de code exécutable. Par exemple, dans le code C suivant, vous pouvez définir `for` un point d’arrêt `for` sur la déclaration variable, la boucle ou n’importe quel code à l’intérieur de la boucle. Vous ne pouvez pas définir un point d’arrêt sur l’espace de nom ou les déclarations de classe, ou sur la signature de la méthode.
+Vous pouvez définir un point d’arrêt sur n’importe quelle ligne de code exécutable. Par exemple, dans le code C# suivant, vous pouvez définir un point d’arrêt sur la déclaration de variable, la `for` boucle ou tout code à l’intérieur de la `for` boucle. Vous ne pouvez pas définir un point d’arrêt sur les déclarations d’espace de noms ou de classe, ni sur la signature de méthode.
 
-Pour définir un point d’arrêt dans le code source, cliquez sur la marge à gauche à côté d’une ligne de code. Vous pouvez également sélectionner la ligne et appuyer sur **F9**, sélectionnez **Debug** > **Toggle Breakpoint**, ou cliquez à droite et sélectionnez **Breakpoint** > **Insert breakpoint**. Le point d’arrêt apparaît comme un point rouge dans la marge gauche.
+Pour définir un point d’arrêt dans le code source, cliquez dans la marge de gauche située en regard d’une ligne de code. Vous pouvez également sélectionner la ligne et appuyer sur **F9**, **Sélectionner**  >  **basculer le point d’arrêt**ou cliquer avec le bouton droit et sélectionner point d' **arrêt**  >  **Insérer un point d’arrêt**. Le point d’arrêt apparaît sous la forme d’un point rouge dans la marge de gauche.
 
-Pour la plupart des langues, y compris le C, le point d’arrêt et les lignes d’exécution actuelles sont automatiquement mis en évidence. Pour le code CMD, vous pouvez activer la mise en évidence du point d’arrêt et des lignes actuelles en sélectionnant **des outils** (ou **Debug**) > **Options** > **Debugging** >  **Highlight ligne source entière pour les points de rupture et l’instruction actuelle (C seulement)**.
+Pour la plupart des langues, y compris C#, les points d’arrêt et d’exécution actuels sont automatiquement mis en surbrillance. Pour le code C++, vous pouvez activer la mise en surbrillance du point d’arrêt et des lignes actives en sélectionnant **Outils** (ou **Déboguer**) > **options**de  >  **débogage**  >   **mettre en surbrillance la ligne source entière pour les points d’arrêt et l’instruction actuelle (C++ uniquement)**.
 
 ![Définir un point d’arrêt](../debugger/media/basicbreakpoint.png "Point d’arrêt de base")
 
-Lorsque vous déboignez, l’exécution s’arrête au point d’arrêt, avant que le code sur cette ligne soit exécuté. Le symbole de point d’arrêt montre une flèche jaune.
+Lors du débogage, l’exécution s’interrompt au point d’arrêt, avant que le code de cette ligne ne soit exécuté. Le symbole de point d’arrêt affiche une flèche jaune.
 
-Au point d’arrêt dans l’exemple suivant, la valeur de `testInt` est encore de 1. Ainsi, la valeur n’a pas changé depuis que la variable a été paraspéisée (réglée à une valeur de 1) parce que la déclaration en jaune n’a pas encore exécuté.
+Au point d’arrêt dans l’exemple suivant, la valeur de `testInt` est toujours 1. Par conséquent, la valeur n’a pas changé depuis que la variable a été initialisée (définie sur la valeur 1), car l’instruction en jaune n’a pas encore été exécutée.
 
-![L'exécution du point d'arrêt s'est arrêtée](../debugger/media/breakpointexecution.png "Exécution de point de rupture")
+![L'exécution du point d'arrêt s'est arrêtée](../debugger/media/breakpointexecution.png "Exécution du point d’arrêt")
 
-Lorsque le débbuggeur s’arrête au point d’arrêt, vous pouvez regarder l’état actuel de l’application, y compris les [valeurs variables](../debugger/debugger-feature-tour.md#inspect-variables-with-data-tips) et la [pile d’appels](../debugger/how-to-use-the-call-stack-window.md).
+Lorsque le débogueur s’arrête au point d’arrêt, vous pouvez examiner l’état actuel de l’application, y compris les [valeurs des variables](../debugger/debugger-feature-tour.md#inspect-variables-with-data-tips) et la [pile des appels](../debugger/how-to-use-the-call-stack-window.md).
 
-Voici quelques instructions générales pour travailler avec des points d’arrêt.
+Voici quelques instructions générales sur l’utilisation des points d’arrêt.
 
-- Le point d’arrêt est un basculement. Vous pouvez cliquer dessus, appuyer sur **F9**ou utiliser **Debug** > **Toggle Breakpoint** pour le supprimer ou le réinsérer.
+- Le point d’arrêt est un bouton bascule. Vous pouvez cliquer dessus, appuyer sur **F9** **ou utiliser**  >  **basculer le point d’arrêt** pour le supprimer ou le réinsérer.
 
-- Pour désactiver un point d’arrêt sans le supprimer, planer ou cliquer à droite, et sélectionner **le point d’arrêt Désactiver**. Les points d’arrêt désactivés apparaissent comme des points vides dans la marge gauche ou la fenêtre **Breakpoints.** Pour ré-activer un point d’arrêt, planer au-dessus ou à droite, et **sélectionnez Activez le point d’arrêt**.
+- Pour désactiver un point d’arrêt sans le supprimer, pointez dessus ou cliquez dessus avec le bouton droit, puis sélectionnez **désactiver le point d’arrêt**. Les points d’arrêt désactivés apparaissent sous forme de points vides dans la marge de gauche ou la fenêtre **points d’arrêt** . Pour réactiver un point d’arrêt, pointez dessus ou cliquez dessus avec le bouton droit, puis sélectionnez **activer le point d’arrêt**.
 
-- Définissez les conditions et les actions, ajoutez et modifiez les étiquettes, ou exportez un point d’arrêt en le cliquant à droite et en sélectionnant la commande appropriée, ou en planant au-dessus de celui-ci et en sélectionnant **l’icône Paramètres.**
+- Définissez des conditions et des actions, ajoutez et modifiez des étiquettes, ou exportez un point d’arrêt en cliquant dessus avec le bouton droit et en sélectionnant la commande appropriée, ou en pointant dessus et en sélectionnant l’icône **paramètres** .
 
-## <a name="breakpoint-actions-and-tracepoints"></a><a name="BKMK_Print_to_the_Output_window_with_tracepoints"></a>Actions et points de traçabilité
+## <a name="breakpoint-actions-and-tracepoints"></a><a name="BKMK_Print_to_the_Output_window_with_tracepoints"></a>Actions de point d’arrêt et points de trace
 
-Un *point de trace* est un point d’arrêt qui imprime un message à la fenêtre de **sortie.** Un tracepoint peut agir comme une trace temporaire dans le langage de programmation et ne met pas en pause l’exécution du code. Vous créez un point de traçabilité en définissant une action spéciale dans la fenêtre **Paramètres De point de rupture.** Pour des instructions détaillées, voir [Utilisez des tracepoints dans le debugger Visual Studio](../debugger/using-tracepoints.md).
+Un point de *trace* est un point d’arrêt qui affiche un message dans la fenêtre **sortie** . Un point de trace peut agir comme une instruction de trace temporaire dans le langage de programmation et n’interrompt pas l’exécution du code. Pour créer un point de trace, vous devez définir une action spéciale dans la fenêtre **paramètres de point d’arrêt** . Pour obtenir des instructions détaillées, consultez [utiliser des points de trace dans le débogueur Visual Studio](../debugger/using-tracepoints.md).
 
 ## <a name="breakpoint-conditions"></a>Conditions de point d’arrêt
 
-Vous pouvez contrôler quand et où un point d’arrêt s’exécute en définissant des conditions. La condition peut être n’importe quelle expression valide que le débbuggeur reconnaît. Pour plus d’informations sur les expressions valides, consultez [Expressions dans le débogueur](../debugger/expressions-in-the-debugger.md).
+Vous pouvez contrôler quand et où un point d’arrêt s’exécute en définissant des conditions. La condition peut être toute expression valide reconnue par le débogueur. Pour plus d’informations sur les expressions valides, consultez [Expressions dans le débogueur](../debugger/expressions-in-the-debugger.md).
 
-**Pour définir une condition de point d’arrêt :**
+**Pour définir une condition de point d’arrêt :**
 
-1. Cliquez à droite sur le symbole du point d’arrêt et sélectionnez **conditions**. Ou planez au-dessus du symbole de point d’arrêt, sélectionnez **l’icône Paramètres,** puis sélectionnez **les conditions** dans la fenêtre Paramètres de point **de rupture.**
+1. Cliquez avec le bouton droit sur le symbole du point d’arrêt et sélectionnez **conditions**. Ou pointez sur le symbole de point d’arrêt, sélectionnez l’icône des **paramètres** , puis sélectionnez **conditions** dans la fenêtre **paramètres de point d’arrêt** .
 
-   Vous pouvez également définir des conditions dans la fenêtre **Breakpoints** en cliquant à droite sur un point d’arrêt et en sélectionnant **paramètres,** puis en sélectionnant les **conditions**.
+   Vous pouvez également définir des conditions dans la fenêtre **points d’arrêt** en cliquant avec le bouton droit sur un point d’arrêt et en sélectionnant **paramètres**, puis en sélectionnant **conditions**.
 
    ![Paramètres de point d’arrêt](../debugger/media/breakpointsettings.png "BreakpointSettings")
 
-2. Dans le dropdown, sélectionnez **l’expression conditionnelle**, **Hit Count**, ou **Filtre**, et définissez la valeur en conséquence.
+2. Dans la liste déroulante, sélectionnez **expression conditionnelle**, **nombre d’accès**ou **filtre**, puis définissez la valeur en conséquence.
 
-3. Sélectionnez **Fermer** ou appuyez sur **Ctrl**+**Enter** pour fermer la fenêtre Paramètres De **point de** rupture. Ou, à partir de la fenêtre **Breakpoints,** sélectionnez **OK** pour fermer le dialogue.
+3. Sélectionnez **Fermer** ou appuyez sur **CTRL** + **entrée** pour fermer la fenêtre **paramètres de point d’arrêt** . Ou bien, dans la fenêtre **points d’arrêt** , sélectionnez **OK** pour fermer la boîte de dialogue.
 
-Les points de rupture avec **+** les conditions définies apparaissent avec un symbole dans le code source et les fenêtres **Breakpoints.**
+Les points d’arrêt avec des conditions définies apparaissent avec un **+** symbole dans les fenêtres code source et **points d’arrêt** .
 
 <a name="BKMK_Specify_a_breakpoint_condition_using_a_code_expression"></a>
 ### <a name="create-a-conditional-expression"></a>Créer une expression conditionnelle
 
-Lorsque vous sélectionnez **l’expression conditionnelle**, vous pouvez choisir entre deux conditions: **Est vrai** ou **Lorsqu’il est changé**. Choisir **est vrai** de se briser lorsque l’expression est satisfaite, ou Quand **changé** pour casser lorsque la valeur de l’expression a changé.
+Quand vous sélectionnez **expression conditionnelle**, vous avez le choix entre deux conditions : **est true** ou **en cas de modification**. Choisissez **est true** pour arrêter quand l’expression est satisfaite ou **lorsque** la valeur de l’expression a été modifiée pour s’arrêter lorsque la valeur de l’expression a changé.
 
-Dans l’exemple suivant, le point d’arrêt n’est atteint que lorsque la valeur est de `testInt` **4**:
+Dans l’exemple suivant, le point d’arrêt est atteint uniquement lorsque la valeur de `testInt` est **4**:
 
-![La condition de point d'arrêt a la valeur true](../debugger/media/breakpointconditionistrue.png "Breakpoint est vrai")
+![La condition de point d'arrêt a la valeur true](../debugger/media/breakpointconditionistrue.png "Le point d’arrêt est true")
 
-Dans l’exemple suivant, le point d’arrêt n’est atteint que lorsque la valeur des `testInt` modifications :
+Dans l’exemple suivant, le point d’arrêt est atteint uniquement lorsque la valeur de `testInt` change :
 
-![Point d’arrêt Lorsqu’il est modifié](../debugger/media/breakpointwhenchanged.png "Point d’arrêt Lorsqu’il est modifié")
+![Point d’arrêt en cas de modification](../debugger/media/breakpointwhenchanged.png "Point d’arrêt en cas de modification")
 
-Si vous définissez une condition de point d’arrêt dont la syntaxe est incorrecte, un message d’avertissement s’affiche. Si vous spécifiez une condition de point d’arrêt avec une syntaxe valide, mais dont la sémantique n’est pas valide, un message d’avertissement apparaît quand le point d’arrêt est atteint pour la première fois. Dans les deux cas, le débbuggeur se casse lorsqu’il atteint le point d’arrêt invalide. Le point d’arrêt n’est ignoré que si la condition est valide et prend la valeur `false`.
+Si vous définissez une condition de point d’arrêt dont la syntaxe est incorrecte, un message d’avertissement s’affiche. Si vous spécifiez une condition de point d’arrêt avec une syntaxe valide, mais dont la sémantique n’est pas valide, un message d’avertissement apparaît quand le point d’arrêt est atteint pour la première fois. Dans les deux cas, le débogueur s’arrête lorsqu’il atteint le point d’arrêt non valide. Le point d’arrêt n’est ignoré que si la condition est valide et prend la valeur `false`.
 
 >[!NOTE]
->Le comportement du champ **Quand changé** est différent pour les différents langages de programmation.
->- Pour le code natif, le débbuggeur ne considère pas la première évaluation de la condition comme un changement, donc ne touche pas le point d’arrêt sur la première évaluation.
->- Pour le code géré, le débbuggeur frappe le point d’arrêt de la première évaluation après **la sélection de When changed.**
+>Le comportement du champ **en cas de modification** est différent selon le langage de programmation.
+>- Pour le code natif, le débogueur ne considère pas la première évaluation de la condition comme étant une modification, donc n’atteint pas le point d’arrêt de la première évaluation.
+>- Pour le code managé, le débogueur atteint le point d’arrêt lors de la première évaluation après que la **modification a été** sélectionnée.
 
 <a name="using-object-ids-in-breakpoint-conditions-c-and-f"></a>
-### <a name="use-object-ids-in-conditional-expressions-c-and-f-only"></a>Utilisez des ID d’objets dans des expressions conditionnelles (C et F seulement)
+### <a name="use-object-ids-in-conditional-expressions-c-and-f-only"></a>Utiliser les ID d’objet dans les expressions conditionnelles (C# et F # uniquement)
 
- Il ya des moments où vous voulez observer le comportement d’un objet spécifique. Par exemple, vous pouvez savoir pourquoi un objet a été inséré dans une collection plus d’une fois. En C# et en F#, vous pouvez créer des ID d’objet pour des instances spécifiques de [types référence](/dotnet/csharp/language-reference/keywords/reference-types) et les utiliser dans des conditions de point d’arrêt. L’ID d’objet est généré par les services de débogage du Common Language Runtime (CLR) et associé à l’objet.
+ Il peut arriver que vous souhaitiez observer le comportement d’un objet spécifique. Par exemple, vous souhaiterez peut-être savoir pourquoi un objet a été inséré plusieurs fois dans une collection. En C# et en F#, vous pouvez créer des ID d’objet pour des instances spécifiques de [types référence](/dotnet/csharp/language-reference/keywords/reference-types) et les utiliser dans des conditions de point d’arrêt. L’ID d’objet est généré par les services de débogage du Common Language Runtime (CLR) et associé à l’objet.
 
-**Pour créer un identifiant d’objet :**
+**Pour créer un ID d’objet :**
 
-1. Définissez un point d’arrêt dans le code quelque place après la création de l’objet.
+1. Définissez un point d’arrêt dans le code après la création de l’objet.
 
-2. Commencez à déboguer, et lorsque l’exécution s’arrête au point d’arrêt, sélectionnez **Debug** > **Windows** > **Locals** ou **Alt**+**4** pour ouvrir la fenêtre **local.**
+2. Démarrez le débogage et, lorsque l’exécution s’interrompt au point d’arrêt, sélectionnez **Déboguer**  >  **Windows**  >  les**paramètres régionaux** Windows ou **ALT** + **4** pour ouvrir la fenêtre **variables locales** .
 
-   Trouvez l’instance d’objet spécifique dans la fenêtre **Locals,** cliquez dessus à droite et **sélectionnez Make Object ID**.
+   Recherchez l’instance d’objet spécifique dans la fenêtre **variables locales** , cliquez dessus avec le bouton droit, puis sélectionnez **créer un ID d’objet**.
 
-   Vous devriez **$** voir un plus un numéro dans la fenêtre **des sections locales.** Il s’agit de l’ID d’objet.
+   Vous devez voir un **$** plus un chiffre dans la fenêtre **variables locales** . Il s’agit de l’ID d’objet.
 
-3. Ajoutez un nouveau point d’arrêt au point que vous souhaitez étudier; par exemple, lorsque l’objet doit être ajouté à la collection. Cliquez avec le bouton droit sur le point d’arrêt et sélectionnez **Conditions**.
+3. Ajoutez un nouveau point d’arrêt au point que vous souhaitez examiner. par exemple, lorsque l’objet doit être ajouté à la collection. Cliquez avec le bouton droit sur le point d’arrêt et sélectionnez **Conditions**.
 
-4. Utilisez l’ID d’objet dans le champ **Expression conditionnelle.** Par exemple, si `item` la variable est l’objet à ajouter à la collection, sélectionnez \<Est **vrai** et type élément **n\<>**, où n> est le numéro d’identification de l’objet.
+4. Utilisez l’ID d’objet dans le champ **expression conditionnelle** . Par exemple, si la variable `item` est l’objet à ajouter à la collection, sélectionnez **a la valeur true** et tapez **Item = = \<n> $**, où \<n> est le numéro d’ID d’objet.
 
    L’exécution s’arrête au point où cet objet doit être ajouté à la collection.
 
-   Pour supprimer l’identifiant d’objet, cliquez à droite sur la variable dans la fenêtre **Locals** et **sélectionnez Supprimer l’identifiant d’objet**.
+   Pour supprimer l’ID de l’objet, cliquez avec le bouton droit sur la variable dans la fenêtre **variables locales** , puis sélectionnez **Supprimer l’ID**de l’objet.
 
 > [!NOTE]
 > Les ID d’objet créent des références faibles et n’empêchent pas l’objet de subir une récupération de mémoire. Leur validité ne vaut que pour la session de débogage active.
 
-### <a name="set-a-hit-count-condition"></a>Définir une condition de nombre de coups
+### <a name="set-a-hit-count-condition"></a>Définir une condition de nombre d’accès
 
-Si vous soupçonnez qu’une boucle dans votre code commence à se comporter mal après un certain nombre d’itérations, vous pouvez définir un point d’arrêt pour arrêter l’exécution après ce nombre de coups, plutôt que d’avoir à appuyer à plusieurs reprises **sur F5** pour atteindre cette itération.
+Si vous pensez qu’une boucle de votre code commence à être incorrect après un certain nombre d’itérations, vous pouvez définir un point d’arrêt pour arrêter l’exécution après ce nombre d’accès, au lieu de devoir appuyer à plusieurs reprises sur **F5** pour atteindre cette itération.
 
-Dans **les conditions** dans la fenêtre Paramètres de point **d’arrêt,** sélectionnez **Hit Count,** puis spécifiez le nombre d’itérations. Dans l’exemple suivant, le point d’arrêt est configuré pour frapper sur toutes les autres itérations:
+Sous **conditions** dans la fenêtre **paramètres de point d’arrêt** , sélectionnez nombre d' **accès**, puis spécifiez le nombre d’itérations. Dans l’exemple suivant, le point d’arrêt est défini sur hit à chaque autre itération :
 
-![Nombre de coups de point de rupture](../debugger/media/breakpointhitcount.png "BreakpointHitCount")
+![Nombre d’accès aux points d’arrêt](../debugger/media/breakpointhitcount.png "BreakpointHitCount")
 
 ### <a name="set-a-filter-condition"></a>Définir une condition de filtre
 
 Vous pouvez limiter le déclenchement d’un point d’arrêt seulement sur des appareils spécifiés ou dans des processus et des threads spécifiés.
 
-Dans **les conditions** dans la fenêtre Paramètres de point **d’arrêt,** sélectionnez **filtre,** puis entrez une ou plusieurs des expressions suivantes :
+Sous **conditions** dans la fenêtre **paramètres de point d’arrêt** , sélectionnez **filtre**, puis entrez une ou plusieurs des expressions suivantes :
 
 - MachineName = "nom"
 - ProcessId = valeur
@@ -164,52 +164,52 @@ Dans **les conditions** dans la fenêtre Paramètres de point **d’arrêt,** s�
 
 Placez les valeurs de chaîne entre guillemets doubles. Vous pouvez combiner des clauses à l’aide de `&` (AND), `||` (OR), `!` (NOT) et de parenthèses.
 
-## <a name="set-function-breakpoints"></a><a name="BKMK_Set_a_breakpoint_in_a_source_file"></a>Définir les points d’arrêt de la fonction
+## <a name="set-function-breakpoints"></a><a name="BKMK_Set_a_breakpoint_in_a_source_file"></a>Définir des points d’arrêt sur fonction
 
-Vous pouvez briser l’exécution lorsqu’une fonction est appelée. Ceci est utile, par exemple, lorsque vous connaissez le nom de la fonction, mais pas son emplacement. Il est également utile si vous avez des fonctions avec le même nom et que vous voulez briser sur tous (tels que les fonctions surchargées ou des fonctions dans différents projets).
+Vous pouvez arrêter l’exécution lorsqu’une fonction est appelée. Cela est utile, par exemple, lorsque vous connaissez le nom de la fonction, mais pas son emplacement. Elle est également utile si vous avez des fonctions portant le même nom et que vous souhaitez les arrêter toutes (telles que des fonctions surchargées ou des fonctions dans différents projets).
 
-**Pour définir un point d’arrêt de la fonction :**
+**Pour définir un point d’arrêt sur fonction :**
 
-1. Sélectionnez **Debug** > **New Breakpoint** > **Function Breakpoint**, ou appuyez sur **Alt**+**F9** > **Ctrl**+**B**.
+1. Sélectionnez **Déboguer**le point d’arrêt de la fonction de point d'  >  **arrêt**  >  **Function Breakpoint**ou appuyez sur **ALT** + **F9**  >  **CTRL** + **B**.
 
-   Vous pouvez également sélectionner **New** > **Function Breakpoint** dans la fenêtre **Breakpoints.**
+   Vous pouvez également sélectionner **nouveau**  >  **point d’arrêt sur fonction** dans la fenêtre **points d’arrêt** .
 
-1. Dans le **dialogue New Function Breakpoint,** entrez le nom de fonction dans la boîte **nom de fonction.**
+1. Dans la boîte de dialogue **nouveau point d’arrêt sur fonction** , entrez le nom de la fonction dans la zone nom de la **fonction** .
 
-   Pour réduire la spécification de la fonction :
+   Pour affiner la spécification de la fonction :
 
-   - Utilisez le nom de fonction entièrement qualifié.
+   - Utilisez le nom complet de la fonction.
 
      Exemple : `Namespace1.ClassX.MethodA()`
 
-   - Ajouter les types de paramètres d’une fonction surchargée.
+   - Ajoutez les types de paramètres d’une fonction surchargée.
 
      Exemple : `MethodA(int, string)`
 
-   - Utilisez le symbole '!' pour spécifier le module.
+   - Utilisez le symbole «  ! » pour spécifier le module.
 
      Exemple : `App1.dll!MethodA`
 
-   - Utilisez l’opérateur de contexte dans le C.C. natif.
+   - Utilisez l’opérateur de contexte en C++ natif.
 
      `{function, , [module]} [+<line offset from start of method>]`
 
      Exemple : `{MethodA, , App1.dll}+2`
 
-1. Dans le **décrocheur de la langue,** choisissez la langue de la fonction.
+1. Dans la liste déroulante **langue** , choisissez la langue de la fonction.
 
 1. Sélectionnez **OK**.
 
-### <a name="set-a-function-breakpoint-using-a-memory-address-native-c-only"></a>Définissez un point d’arrêt de fonction à l’aide d’une adresse mémoire (native CMD seulement)
- Vous pouvez utiliser l’adresse d’un objet pour définir un point d’arrêt de fonction sur une méthode appelée par un exemple spécifique d’une classe.  Par exemple, compte tenu d’un objet de type `my_class`adressable, vous pouvez définir un point d’arrêt de fonction sur la `my_method` méthode que l’instance appelle.
+### <a name="set-a-function-breakpoint-using-a-memory-address-native-c-only"></a>Définir un point d’arrêt sur fonction à l’aide d’une adresse mémoire (C++ natif uniquement)
+ Vous pouvez utiliser l’adresse d’un objet pour définir un point d’arrêt sur fonction sur une méthode appelée par une instance spécifique d’une classe.  Par exemple, à partir d’un objet adressable de type `my_class` , vous pouvez définir un point d’arrêt sur fonction sur la `my_method` méthode appelée par l’instance.
 
-1. Définissez un point d’arrêt quelque part après l’arrivée instantanée de l’instance de la classe.
+1. Définissez un point d’arrêt quelque part après l’instanciation de l’instance de la classe.
 
-2. Trouvez l’adresse de l’instance (par exemple, `0xcccccccc`).
+2. Recherchez l’adresse de l’instance (par exemple, `0xcccccccc` ).
 
-3. Sélectionnez **Debug** > **New Breakpoint** > **Function Breakpoint**, ou appuyez sur **Alt**+**F9** > **Ctrl**+**B**.
+3. Sélectionnez **Déboguer**le point d’arrêt de la fonction de point d'  >  **arrêt**  >  **Function Breakpoint**ou appuyez sur **ALT** + **F9**  >  **CTRL** + **B**.
 
-4. Ajoutez ce qui suit à la boîte **de nom de fonction** et sélectionnez la langue de **CMD.**
+4. Ajoutez le code suivant à la zone nom de la **fonction** , puis sélectionnez langage **C++** .
 
    ```cpp
    ((my_class *) 0xcccccccc)->my_method
@@ -217,111 +217,111 @@ Vous pouvez briser l’exécution lorsqu’une fonction est appelée. Ceci est u
 
 ::: moniker range=">= vs-2019"
 
-## <a name="set-data-breakpoints-net-core-30-or-higher"></a><a name="BKMK_set_a_data_breakpoint_managed"></a>Définir les points d’arrêt des données (.NET Core 3.0 ou plus)
+## <a name="set-data-breakpoints-net-core-30-or-higher"></a><a name="BKMK_set_a_data_breakpoint_managed"></a>Définir des points d’arrêt sur variable (.NET Core 3,0 ou version ultérieure)
 
-Les points d’arrêt de données cassent l’exécution lorsque la propriété d’un objet spécifique change.
+Les points d’arrêt sur variable interrompent l’exécution lorsque la propriété d’un objet spécifique change.
 
-**Définir un point d’arrêt de données**
+**Pour définir un point d’arrêt sur variable**
 
-1. Dans un projet .NET Core, commencez à débogage et attendez qu’un point d’arrêt soit atteint.
+1. Dans un projet .NET Core, démarrez le débogage et attendez qu’un point d’arrêt soit atteint.
 
-2. Dans la fenêtre **Autos**, **Watch**, ou **Locals,** cliquez à droite sur une propriété et **sélectionnez Pause lorsque** la valeur change dans le menu contexte.
+2. Dans la fenêtre **automatique**, **Espion**ou **variables locales** , cliquez avec le bouton droit sur une propriété et sélectionnez **arrêter quand la valeur change** dans le menu contextuel.
 
-    ![Point d’arrêt de données gérés](../debugger/media/managed-data-breakpoint.png "Point d’arrêt de données gérés")
+    ![Point d’arrêt sur données managées](../debugger/media/managed-data-breakpoint.png "Point d’arrêt sur données managées")
 
-Les points d’arrêt de données dans .NET Core ne fonctionneront pas pour :
+Les points d’arrêt sur variable dans .NET Core ne fonctionnent pas pour :
 
-- Propriétés qui ne sont pas extensibles dans la pointe d’outils, les sections locales, les automobiles ou la fenêtre de montre
+- Propriétés qui ne peuvent pas être développées dans l’info-bulle, les variables locales, la fonction automatique ou la Fenêtre Espion
 - Variables statiques
 - Classes avec l’attribut DebuggerTypeProxy
 - Champs à l’intérieur des structs
 
 ::: moniker-end
 
-## <a name="set-data-breakpoints-native-c-only"></a><a name="BKMK_set_a_data_breakpoint_native_cplusplus"></a>Définir des points d’arrêt de données (natif Cmd seulement)
+## <a name="set-data-breakpoints-native-c-only"></a><a name="BKMK_set_a_data_breakpoint_native_cplusplus"></a>Définir des points d’arrêt sur variable (C++ natif uniquement)
 
- Les points d’arrêt de données cassent l’exécution lorsqu’une valeur stockée à une adresse mémoire spécifiée change. Si la valeur est lue mais pas modifiée, l’exécution ne s’interrompt pas.
+ Les points d’arrêt sur variable interrompent l’exécution lorsqu’une valeur stockée à une adresse mémoire spécifiée change. Si la valeur est lue mais pas modifiée, l’exécution ne s’interrompt pas.
 
-**Pour définir un point d’arrêt de données :**
+**Pour définir un point d’arrêt sur variable :**
 
-1. Dans le cadre d’un projet de CMD, commencez à débogage et attendez qu’un point d’arrêt soit atteint. Sur le menu **Debug,** choisissez **New Breakpoint** > **Data Breakpoint**
+1. Dans un projet C++, démarrez le débogage et attendez qu’un point d’arrêt soit atteint. Dans le menu **Déboguer** , choisissez **nouveau**point d’arrêt des  >  **données** de point d’arrêt
 
-    Vous pouvez également sélectionner **le nouveau** > **point d’arrêt de données** dans la fenêtre **Breakpoints** ou cliquer à droite sur un élément de la fenêtre **Autos,** **Watch**, ou **Locals** et sélectionner **Break lorsque** la valeur change dans le menu context.
+    Vous pouvez également sélectionner **nouveau**  >  **point d’arrêt** sur les données dans la fenêtre **points d’arrêt** ou cliquer avec le bouton droit sur un élément dans la fenêtre **automatique**, **Espion**ou **variables locales** et sélectionner **arrêter lorsque des modifications de valeur sont effectuées** dans le menu contextuel.
 
-2. Dans la boîte **d’adresse,** tapez une adresse mémoire ou une expression qui s’évalue à une adresse mémoire. Par exemple, tapez `&avar` pour interrompre l’exécution quand le contenu de la variable `avar` change.
+2. Dans la zone **adresse** , tapez une adresse mémoire ou une expression qui prend la valeur d’une adresse mémoire. Par exemple, tapez `&avar` pour interrompre l’exécution quand le contenu de la variable `avar` change.
 
 3. Dans la zone déroulante **Nombre d’octets** , sélectionnez le nombre d’octets que le débogueur doit surveiller. Par exemple, si vous sélectionnez **4**, le débogueur surveille les quatre octets à partir de `&avar` et interrompt l’exécution si l’un de ces octets change de valeur.
 
-Les points d’arrêt de données ne fonctionnent pas dans les conditions suivantes :
+Les points d’arrêt sur variable ne fonctionnent pas dans les conditions suivantes :
 - Un processus qui n’est pas en cours de débogage écrit à l’emplacement mémoire.
 - L’emplacement mémoire est partagé entre plusieurs processus.
-- L’emplacement de mémoire est mis à jour dans le noyau. Par exemple, si la mémoire est transmise `ReadFile` à la fonction Windows 32 bits, la mémoire sera mise à jour à partir du mode noyau, de sorte que le débbuggeur ne se casse pas sur la mise à jour.
-- Lorsque l’expression de la montre est plus grande que 4 octets sur le matériel 32 bits et 8 octets sur le matériel 64 bits. Il s’agit d’une limitation de l’architecture x86.
+- L’emplacement de mémoire est mis à jour dans le noyau. Par exemple, si la mémoire est transmise à la fonction Windows 32 bits `ReadFile` , la mémoire est mise à jour à partir du mode noyau, de sorte que le débogueur ne s’arrête pas sur la mise à jour.
+- Où l’expression espionne est supérieure à 4 octets sur le matériel 32 bits et 8 octets sur le matériel 64 bits. Il s’agit d’une limitation de l’architecture x86.
 
 > [!NOTE]
-> - Les points d’arrêt de données dépendent d’adresses mémoire spécifiques. L’adresse d’une variable passe d’une session de débogage à l’autre, de sorte que les points d’arrêt des données sont automatiquement désactivés à la fin de chaque session de débogage.
+> - Les points d’arrêt sur variable dépendent d’adresses mémoire spécifiques. L’adresse d’une variable change d’une session de débogage à la suivante, de sorte que les points d’arrêt sur variable sont automatiquement désactivés à la fin de chaque session de débogage.
 >
-> - Si vous définissez un point d’arrêt sur une variable locale, ce point d’arrêt reste activé quand la fonction s’arrête. Cependant, l’adresse mémoire n’est plus applicable, et le comportement du point d’arrêt est donc imprévisible. Si vous définissez un point d’arrêt de données sur une variable locale, vous devez supprimer ou désactiver le point d’arrêt avant la fin de la fonction.
+> - Si vous définissez un point d’arrêt sur une variable locale, ce point d’arrêt reste activé quand la fonction s’arrête. Cependant, l’adresse mémoire n’est plus applicable, et le comportement du point d’arrêt est donc imprévisible. Si vous définissez un point d’arrêt sur une variable locale, vous devez supprimer ou désactiver le point d’arrêt avant la fin de la fonction.
 
 ## <a name="manage-breakpoints-in-the-breakpoints-window"></a><a name="BKMK_Specify_advanced_properties_of_a_breakpoint_"></a> Gérer les points d’arrêt dans la fenêtre Points d’arrêt
 
- Vous pouvez utiliser la fenêtre **Breakpoints** pour voir et gérer tous les points d’arrêt de votre solution. Cet emplacement centralisé est particulièrement utile dans une grande solution, ou pour les scénarios complexes de débogage où les points d’arrêt sont critiques.
+ Vous pouvez utiliser la fenêtre **points d’arrêt** pour afficher et gérer tous les points d’arrêt de votre solution. Cet emplacement centralisé est particulièrement utile dans une solution de grande taille ou pour des scénarios de débogage complexes où les points d’arrêt sont critiques.
 
-Dans la fenêtre **Breakpoints,** vous pouvez rechercher, trier, filtrer, activer/désactiver ou supprimer les points d’arrêt. Vous pouvez également définir des conditions et des actions, ou ajouter une nouvelle fonction ou un nouveau point d’arrêt de données.
+Dans la fenêtre **points d’arrêt** , vous pouvez rechercher, trier, filtrer, activer/désactiver ou supprimer des points d’arrêt. Vous pouvez également définir des conditions et des actions, ou ajouter une nouvelle fonction ou un point d’arrêt de données.
 
-Pour ouvrir la fenêtre **Breakpoints,** sélectionnez **Debug** > **Windows** > **Breakpoints**, ou appuyez sur **Alt**+**F9** ou **Ctrl**+**Alt**+**B**.
+Pour ouvrir la fenêtre **points d’arrêt** , sélectionnez **Déboguer**les points d'  >  **Windows**  >  **arrêt**Windows, ou appuyez sur **ALT** + **F9** ou **CTRL** + **ALT** + **B**.
 
-![Fenêtre de breakpoints](../debugger/media/breakpointswindow.png "Points d'arrêt (fenêtre)")
+![Fenêtre points d’arrêt](../debugger/media/breakpointswindow.png "Points d'arrêt (fenêtre)")
 
-Pour sélectionner les colonnes à afficher dans la fenêtre **Breakpoints,** sélectionnez **Afficher les colonnes**. Sélectionnez un en-tête de colonne pour trier la liste des points d’arrêt par cette colonne.
+Pour sélectionner les colonnes à afficher dans la fenêtre **points d’arrêt** , sélectionnez Afficher les **colonnes**. Sélectionnez un en-tête de colonne pour trier la liste des points d’arrêt par cette colonne.
 
 ### <a name="breakpoint-labels"></a><a name="BKMK_Set_a_breakpoint_at_a_function_return_in_the_Call_Stack_window"></a> Étiquettes de point d’arrêt
-Vous pouvez utiliser des étiquettes pour trier et filtrer la liste des points d’arrêt dans la fenêtre **Breakpoints.**
+Vous pouvez utiliser des étiquettes pour trier et filtrer la liste des points d’arrêt dans la fenêtre **points d’arrêt** .
 
-1. Pour ajouter une étiquette à un point d’arrêt, cliquez à droite sur le point d’arrêt du code source ou de la fenêtre **Breakpoints,** puis sélectionnez **les étiquettes Edit**. Ajouter une nouvelle étiquette ou choisir une étiquette existante, puis sélectionnez **OK**.
-2. Trier la liste de point d’arrêt dans la fenêtre **Breakpoints** en sélectionnant les **étiquettes,** **conditions,** ou d’autres en-têtes de colonne. Vous pouvez sélectionner les colonnes à afficher en sélectionnant les **colonnes d’affichage** dans la barre d’outils.
+1. Pour ajouter une étiquette à un point d’arrêt, cliquez avec le bouton droit sur le point d’arrêt dans le code source ou la fenêtre **points d’arrêt** , puis sélectionnez **modifier les étiquettes**. Ajoutez une nouvelle étiquette ou choisissez-en une existante, puis sélectionnez **OK**.
+2. Triez la liste des points d’arrêt dans la fenêtre **points d’arrêt** en sélectionnant les **étiquettes**, les **conditions**ou d’autres en-têtes de colonnes. Vous pouvez sélectionner les colonnes à afficher en sélectionnant **afficher les colonnes** dans la barre d’outils.
 
 ### <a name="export-and-import-breakpoints"></a>Exporter et importer les points d'arrêt
- Pour économiser ou partager l’état et l’emplacement de vos points d’arrêt, vous pouvez les exporter ou les importer.
+ Pour enregistrer ou partager l’État et l’emplacement de vos points d’arrêt, vous pouvez les exporter ou les importer.
 
-- Pour exporter un point d’arrêt unique vers un fichier XML, cliquez à droite sur le point d’arrêt du code source ou de la fenêtre **Breakpoints,** et sélectionnez **Export** ou **Export sélectionnés**. Sélectionnez un emplacement d’exportation, puis sélectionnez **Enregistrer**. L’emplacement par défaut est le dossier de solution.
-- Pour exporter plusieurs points d’arrêt, dans la fenêtre **Breakpoints,** sélectionnez les cases à côté des points d’arrêt, ou entrez les critères de recherche dans le champ **de recherche.** Sélectionnez **l’exportation tous les points d’arrêt correspondant à l’icône actuelle des critères de recherche** et enregistrez le fichier.
-- Pour exporter tous les points d’arrêt, désélectionner toutes les cases et laisser le champ **de recherche** vide. Sélectionnez **l’exportation tous les points d’arrêt correspondant à l’icône actuelle des critères de recherche** et enregistrez le fichier.
-- Pour importer des points d’arrêt, dans la fenêtre **Breakpoints,** sélectionnez les **points d’arrêt Import à partir d’une** icône de fichier, naviguez vers l’emplacement du fichier XML et sélectionnez **Open**.
+- Pour exporter un point d’arrêt unique vers un fichier XML, cliquez avec le bouton droit sur le point d’arrêt dans la fenêtre code source ou **points d’arrêt** , puis sélectionnez **Exporter** ou **Exporter la sélection**. Sélectionnez un emplacement d’exportation, puis cliquez sur **Enregistrer**. L’emplacement par défaut est le dossier de solution.
+- Pour exporter plusieurs points d’arrêt, dans la fenêtre **points d’arrêt** , activez les cases à cocher en regard des points d’arrêt ou entrez des critères de recherche dans le champ de **recherche** . Sélectionnez l’icône **exporter tous les points d’arrêt correspondant aux critères de recherche actuels** , puis enregistrez le fichier.
+- Pour exporter tous les points d’arrêt, désélectionnez toutes les zones et laissez le champ de **recherche** vide. Sélectionnez l’icône **exporter tous les points d’arrêt correspondant aux critères de recherche actuels** , puis enregistrez le fichier.
+- Pour importer des points d’arrêt, dans la fenêtre **points d’arrêt** , sélectionnez l’icône **Importer les points d’arrêt à partir d’un fichier** , accédez à l’emplacement du fichier XML, puis sélectionnez **ouvrir**.
 
-## <a name="set-breakpoints-from-debugger-windows"></a><a name="BKMK_Set_a_breakpoint_from_debugger_windows"></a>Définir les points d’arrêt des fenêtres de débbugger
+## <a name="set-breakpoints-from-debugger-windows"></a><a name="BKMK_Set_a_breakpoint_from_debugger_windows"></a>Définir des points d’arrêt à partir des fenêtres du débogueur
 
-Vous pouvez également définir les points d’arrêt à partir de la **pile d’appels** et **démonter** les fenêtres démontage.
+Vous pouvez également définir des points d’arrêt à partir des fenêtres **pile des appels** et débogueur du **code machine** .
 
-### <a name="set-a-breakpoint-in-the-call-stack-window"></a>Définissez un point d’arrêt dans la fenêtre Call Stack
+### <a name="set-a-breakpoint-in-the-call-stack-window"></a>Définir un point d’arrêt dans la fenêtre pile des appels
 
- Pour vous casser à l’instruction ou à la ligne à laquelle une fonction d’appel retourne, vous pouvez définir un point d’arrêt dans la fenêtre **Call Stack.**
+ Pour arrêter l’instruction ou la ligne à laquelle une fonction appelante retourne, vous pouvez définir un point d’arrêt dans la fenêtre **pile des appels** .
 
-**Pour définir un point d’arrêt dans la fenêtre Call Stack :**
+**Pour définir un point d’arrêt dans la fenêtre pile des appels :**
 
-1. Pour ouvrir la fenêtre **Call Stack,** vous devez être mis en pause pendant le débogage. Sélectionnez **Debug** > **Windows** > **Call Stack**, ou appuyez sur **Ctrl**+**Alt**+**C**.
+1. Pour ouvrir la fenêtre **pile des appels** , vous devez être suspendu pendant le débogage. Sélectionnez **Déboguer**la  >  **Windows**  >  **pile des appels**Windows ou appuyez sur **CTRL** + **ALT** + **C**.
 
-2. Dans la fenêtre **Call Stack,** cliquez à droite sur la fonction d’appel et **sélectionnez Breakpoint** > **Insert Breakpoint**, ou appuyez sur **F9**.
+2. Dans la fenêtre **pile des appels** , cliquez avec le bouton droit sur la fonction appelante, sélectionnez point d' **arrêt**  >  **Insérer un point d’arrêt**ou appuyez sur **F9**.
 
-   Un symbole de point d’arrêt apparaît à côté du nom d’appel de fonction dans la marge gauche de la pile d’appel.
+   Un symbole de point d’arrêt apparaît en regard du nom de l’appel de fonction dans la marge de gauche de la pile des appels.
 
-Le point de rupture de pile d’appel apparaît dans la fenêtre **Breakpoints** comme une adresse, avec un emplacement de mémoire qui correspond à la prochaine instruction exécutable dans la fonction.
+Le point d’arrêt de pile des appels apparaît dans la fenêtre **points d’arrêt** sous la forme d’une adresse, avec un emplacement de mémoire qui correspond à la prochaine instruction exécutable de la fonction.
 
-Le débagé se casse à l’instruction.
+Le débogueur s’arrête au niveau de l’instruction.
 
 Pour plus d’informations sur la pile des appels, consultez [Comment : utiliser la fenêtre Pile des appels](../debugger/how-to-use-the-call-stack-window.md).
 
-Pour tracer visuellement les points d’arrêt pendant l’exécution du code, voir [les méthodes de carte sur la pile d’appel tout en débogage](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md).
+Pour suivre visuellement des points d’arrêt pendant l’exécution du code, consultez [mapper des méthodes sur la pile des appels pendant le débogage](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md).
 
-### <a name="set-a-breakpoint-in-the-disassembly-window"></a>Définissez un point d’arrêt dans la fenêtre de démontage
+### <a name="set-a-breakpoint-in-the-disassembly-window"></a>Définir un point d’arrêt dans la fenêtre Code machine
 
-1. Pour ouvrir la fenêtre **de démontage,** vous devez être mis en pause pendant le débogage. Sélectionnez **Debug** > **Windows** > **Disassembly**, ou appuyez sur **Alt**+**8**.
+1. Pour ouvrir la fenêtre **code machine** , vous devez être suspendu pendant le débogage. Sélectionnez **Déboguer**le  >  **Windows**  >  **code machine**Windows ou appuyez sur **ALT** + **8**.
 
-2. Dans la fenêtre **démontage,** cliquez sur la marge gauche de l’instruction à laquelle vous voulez vous briser. Vous pouvez également le sélectionner et appuyez sur **F9**, ou clic droit et **sélectionnez Breakpoint** > **Insert Breakpoint**.
+2. Dans la fenêtre **code machine** , cliquez dans la marge de gauche de l’instruction que vous souhaitez arrêter. Vous pouvez également le sélectionner et appuyer sur **F9**, ou cliquer avec le bouton droit et sélectionner **point d’arrêt**  >  **Insérer un point d’arrêt**.
 
 ## <a name="see-also"></a>Voir aussi
 
 - [Qu’est-ce que le débogage ?](../debugger/what-is-debugging.md)
-- [Écrivez un meilleur code C à l’aide de Visual Studio](../debugger/write-better-code-with-visual-studio.md)
-- [Premier regard sur le débogage](../debugger/debugger-feature-tour.md)
-- [Points d’arrêt de dépannage dans le debugger Visual Studio](../debugger/troubleshooting-breakpoints.md)
+- [Écrire du code C# amélioré à l’aide de Visual Studio](../debugger/write-better-code-with-visual-studio.md)
+- [Premier aperçu du débogage](../debugger/debugger-feature-tour.md)
+- [Résoudre les problèmes de points d’arrêt dans le débogueur Visual Studio](../debugger/troubleshooting-breakpoints.md)

@@ -1,7 +1,7 @@
 ---
-title: 'Comment : utiliser les contrôles natifs au moment de l’exécution | Microsoft Docs'
+title: Comment utiliser les contrôles natifs au moment de l’exécution | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - c.runtime.errorchecks
 dev_langs:
@@ -37,15 +37,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 954cf8436a9f0653685b41920cad84698ae50abb
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 5fccf510719aa5e960c12fdc807d6375ee31d3d0
+ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72732159"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85348845"
 ---
 # <a name="how-to-use-native-run-time-checks"></a>Comment : utiliser les contrôles natifs à l'exécution
-Dans un projet Visual C++ Studio, vous pouvez utiliser le [runtime_checks](/cpp/preprocessor/runtime-checks) natif pour intercepter les erreurs d’exécution courantes, telles que :
+Dans un projet Visual Studio C++, vous pouvez utiliser des [runtime_checks](/cpp/preprocessor/runtime-checks) natifs pour intercepter les erreurs d’exécution courantes, telles que :
 
 - Un pointeur de pile détérioré.
 
@@ -57,7 +57,7 @@ Dans un projet Visual C++ Studio, vous pouvez utiliser le [runtime_checks](/cpp/
 
 - Une perte de données par suite d'une assignation à une variable plus courte.
 
-  Si vous utilisez **/RTC** dans une version optimisée ( **/O**), il en résulte une erreur du compilateur. Un pragma `runtime_checks` n'a aucun effet s'il est utilisé dans une version optimisée.
+  Si vous utilisez **/RTC** dans une version optimisée (**/O**), il en résulte une erreur du compilateur. Un pragma `runtime_checks` n'a aucun effet s'il est utilisé dans une version optimisée.
 
   Si les contrôles à l'exécution sont activés dans le programme que vous déboguez, par défaut, le programme s'arrête et entre dans le débogueur en cas d'erreur. Vous pouvez modifier ce comportement par défaut pour tout contrôle d'exécution. Pour plus d’informations, consultez [gestion des exceptions avec le débogueur](../debugger/managing-exceptions-with-the-debugger.md).
 
@@ -67,7 +67,7 @@ Dans un projet Visual C++ Studio, vous pouvez utiliser le [runtime_checks](/cpp/
 
 - [Personnalisation des contrôles d'exécution avec la bibliothèque Runtime C](../debugger/native-run-time-checks-customization.md)
 
-- [Utilisation de contrôles d'exécution sans la bibliothèque Runtime C](../debugger/using-run-time-checks-without-the-c-run-time-library.md)
+- [Utilisation de contrôles d’exécution sans la bibliothèque Runtime C](../debugger/using-run-time-checks-without-the-c-run-time-library.md)
 
 ### <a name="to-enable-native-run-time-checks-in-a-debug-build"></a>Pour activer les contrôles natifs à l'exécution dans une version Debug
 
@@ -81,4 +81,4 @@ Dans un projet Visual C++ Studio, vous pouvez utiliser le [runtime_checks](/cpp/
 - [Débogage dans Visual Studio](../debugger/index.yml)
 - [Présentation du débogueur](../debugger/debugger-feature-tour.md)
 - [runtime_checks](/cpp/preprocessor/runtime-checks)
-- [Vérifications des erreurs au moment de l’exécution](/cpp/c-runtime-library/run-time-error-checking)
+- [Vérification des erreurs au moment de l’exécution](/cpp/c-runtime-library/run-time-error-checking)

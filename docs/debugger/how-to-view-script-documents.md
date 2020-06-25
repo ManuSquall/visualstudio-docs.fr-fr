@@ -1,7 +1,7 @@
 ---
-title: 'Comment : afficher des documents de script | Microsoft Docs'
+title: Comment afficher des documents de script | Microsoft Docs
 ms.date: 11/05/2019
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - CSharp
 - VB
@@ -15,25 +15,25 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5e362e0504c4ed2584bbbbea687fe3c58fc79edb
-ms.sourcegitcommit: ba0fef4f5dca576104db9a5b702670a54a0fcced
+ms.openlocfilehash: dcd9823e414005a1711ddccf9d972da929090920
+ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73714439"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85348442"
 ---
 # <a name="how-to-view-script-documents-javascript"></a>Comment : afficher des documents de script (JavaScript)
 
 Les fichiers de script côté serveur sont visibles dans Explorateur de solutions. Les fichiers de script côté client sont visibles uniquement lorsque vous êtes en mode débogage ou en mode arrêt. Les fichiers de script côté client apparaissent dans le nœud **documents de script** .
 
-Pour certains types d’applications qui génèrent dynamiquement des pages, il est plus facile d’entrer en mode arrêt et de déboguer lorsque vous définissez un point d’arrêt à partir d’un document de script chargé dans le navigateur. De même, vous pouvez ajouter l’instruction `debugger` à partir d’un document de script chargé pour passer en mode arrêt. Cet article explique comment afficher ces documents.
+Pour certains types d’applications qui génèrent dynamiquement des pages, il est plus facile d’entrer en mode arrêt et de déboguer lorsque vous définissez un point d’arrêt à partir d’un document de script chargé dans le navigateur. De même, vous pouvez ajouter l' `debugger` instruction à partir d’un document de script chargé pour passer en mode arrêt. Cet article explique comment afficher ces documents.
 
 > [!NOTE]
-> Avant de [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)], les fichiers de script côté client générés à partir du script côté serveur apparaissaient dans la fenêtre Explorateur de scripts.
+> Avant [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)] , les fichiers de script côté client générés à partir du script côté serveur apparaissaient dans la fenêtre Explorateur de scripts.
 
 ### <a name="to-view-a-server-side-script-document"></a>Pour afficher un document de script côté serveur
 
-1. Dans l’**Explorateur de solutions**, ouvrez le nœud **\<Chemin du site web>** .
+1. Dans **Explorateur de solutions**, ouvrez le **\<Website Pathname>** nœud.
 
 2. Double-cliquez sur le fichier de script que vous souhaitez afficher.
 

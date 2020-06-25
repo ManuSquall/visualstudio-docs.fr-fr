@@ -2,7 +2,7 @@
 title: Déboguer une application multithread
 description: Déboguer à l’aide de la fenêtre threads et de la barre d’outils emplacement de débogage dans Visual Studio
 ms.date: 02/14/2020
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - CSharp
 - VB
@@ -17,14 +17,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: eb7b7850d8d7582110152d248683f89981933215
-ms.sourcegitcommit: 6ef52c2030b37ea7a64fddb32f050ecfb77dd918
+ms.openlocfilehash: 33375a8970638765d02a94e6e3e9cd8afc1a0fe7
+ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/17/2020
-ms.locfileid: "77416371"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85348650"
 ---
-# <a name="walkthrough-debug-a-multithreaded-app-using-the-threads-window-c-visual-basic-c"></a>Procédure pas à pas : déboguer une application multithread à l'C#aide de la C++fenêtre threads (, Visual Basic,)
+# <a name="walkthrough-debug-a-multithreaded-app-using-the-threads-window-c-visual-basic-c"></a>Procédure pas à pas : déboguer une application multithread à l’aide de la fenêtre threads (C#, Visual Basic, C++)
 
 Plusieurs éléments de l’interface utilisateur de Visual Studio vous aident à déboguer des applications multithread. Cet article présente les fonctionnalités de débogage multithread dans la fenêtre de l’éditeur de code, la barre d’outils **emplacement de débogage** et la fenêtre **Threads** . Pour plus d’informations sur les autres outils de débogage des applications multithread, consultez [prise en main du débogage d’applications multithread](../debugger/get-started-debugging-multithreaded-apps.md).
 
@@ -38,27 +38,27 @@ Créez le projet d’application multithread suivant à utiliser dans ce didacti
 
    ::: moniker range=">=vs-2019"
 
-   Si la fenêtre de démarrage n’est pas ouverte, choisissez **fichier** > **fenêtre démarrer**.
+   Si la fenêtre de démarrage n’est pas ouverte **File** , choisissez > **fenêtre démarrage**de fichier.
 
-   Dans la fenêtre de démarrage, choisissez **Créer un projet**.
+   Dans la fenêtre Démarrer, choisissez **créer un nouveau projet**.
 
    Dans la fenêtre **Créer un projet**, entrez ou tapez *console* dans la zone de recherche. Ensuite, choisissez **C#** ou **C++** dans la liste langue, puis choisissez **Windows** dans la liste plateforme. 
 
-   Après avoir appliqué les filtres de langue et de plateforme, choisissez l' **application console (.net Core)** ou C++, pour, le modèle d' **application console** , puis choisissez **suivant**.
+   Après avoir appliqué les filtres de langue et de plateforme, choisissez l' **application console (.net Core)** ou, pour C++, le modèle **application console** , puis choisissez **suivant**.
 
    > [!NOTE]
-   > Si vous ne voyez pas le modèle approprié, accédez à **outils** > **obtenir les outils et fonctionnalités...** , qui ouvre le Visual Studio installer. Choisissez la charge de travail **Développement .NET Desktop** ou **Développement Desktop avec C++** , puis choisissez **Modifier**.
+   > Si vous ne voyez pas le modèle approprié, accédez à **Outils**  >  **obtenir des outils et des fonctionnalités...**, qui ouvre le Visual Studio installer. Choisissez la charge de travail **développement de bureau .net** ou **développement bureautique avec C++** , puis choisissez **modifier**.
 
-   Dans la fenêtre **configurer votre nouveau projet** , tapez ou entrez *MyThreadWalkthroughApp* dans la zone **nom du projet** . Choisissez ensuite **Créer**.
+   Dans la fenêtre **configurer votre nouveau projet** , tapez ou entrez *MyThreadWalkthroughApp* dans la zone **nom du projet** . Ensuite, choisissez **créer**.
 
    ::: moniker-end
    ::: moniker range="vs-2017"
-   Dans la barre de menus supérieure, choisissez **Fichier** > **Nouveau** > **Projet**. Dans le volet gauche de la boîte de dialogue **nouveau projet** , choisissez ce qui suit :
+   Dans la barre de menus supérieure, choisissez **fichier**  >  **nouveau**  >  **projet**. Dans le volet gauche de la boîte de dialogue **nouveau projet** , choisissez ce qui suit :
 
-   - Pour une C# application, sous **Visual C#** , choisissez **Bureau Windows**, puis dans le volet central, choisissez **application console (.NET Framework)** .
-   - Pour une C++ application, sous **Visual C++** , choisissez **Bureau Windows**,, puis **application console Windows**.
+   - Pour une application C#, sous **Visual c#**, choisissez **Bureau Windows**, puis dans le volet central, choisissez **application console (.NET Framework)**.
+   - Pour une application C++, sous **Visual C++**, choisissez **Bureau Windows**,, puis **application console Windows**.
 
-   Si vous ne voyez pas **l’application console (.net Core)** ou, C++pour, le modèle de projet d' **application console** , accédez à **Outils** > **obtenir les outils et fonctionnalités...** , qui ouvre le Visual Studio installer. Choisissez la charge de travail **Développement .NET Desktop** ou **Développement Desktop avec C++** , puis choisissez **Modifier**.
+   Si vous ne voyez pas l' **application console (.net Core)** ou, pour C++, le modèle de projet d' **application console** , accédez à **Outils**  >  **obtenir des outils et des fonctionnalités...**, qui ouvre le Visual Studio installer. Choisissez la charge de travail **développement de bureau .net** ou **développement bureautique avec C++** , puis choisissez **modifier**.
 
    Ensuite, tapez un nom tel que *MyThreadWalkthroughApp* , puis cliquez sur **OK**.
 
@@ -67,9 +67,9 @@ Créez le projet d’application multithread suivant à utiliser dans ce didacti
 
    Un nouveau projet console s'affiche. Une fois le projet créé, un fichier source s’affiche. Selon le langage que vous avez choisi, le fichier source peut être appelé *Program.cs*, *MyThreadWalkthroughApp. cpp*ou *Module1. vb*.
 
-1. Remplacez le code du fichier source par l' C# exemple de C++ code ou de la [prise en main du débogage d’applications multithread](../debugger/get-started-debugging-multithreaded-apps.md).
+1. Remplacez le code du fichier source par l’exemple de code C# ou C++ issu de la [prise en main du débogage des applications multithread](../debugger/get-started-debugging-multithreaded-apps.md).
 
-1. Sélectionnez **Fichier** > **Enregistrer tout**.
+1. Sélectionnez **fichier**  >  **enregistrer tout**.
 
 ## <a name="start-debugging"></a>Démarrer le débogage
 
@@ -85,25 +85,25 @@ Créez le projet d’application multithread suivant à utiliser dans ce didacti
    Console.WriteLine();
    ```
 
-1. Définissez un point d’arrêt sur la ligne de `Console.WriteLine();` en cliquant dans la marge gauche, ou en sélectionnant la ligne et en appuyant sur **F9**.
+1. Définissez un point d’arrêt sur la `Console.WriteLine();` ligne en cliquant dans la marge gauche, ou en sélectionnant la ligne et en appuyant sur **F9**.
 
    Le point d’arrêt apparaît sous la forme d’un cercle rouge dans la marge gauche, à côté de la ligne de code.
 
-1. Sélectionnez **Déboguer** > **Démarrer le débogage**ou appuyez sur **F5**.
+1. Sélectionnez **Déboguer**  >  **Démarrer le débogage**ou appuyez sur **F5**.
 
    L’application démarre en mode débogage et s’interrompt au point d’arrêt.
 
-1. En mode arrêt, ouvrez la fenêtre **Threads** en sélectionnant **déboguer** > les **Threads** **Windows** > . Vous devez être dans une session de débogage pour ouvrir ou voir les **Threads** et les autres fenêtres de débogage.
+1. En mode arrêt, ouvrez la fenêtre **Threads** en sélectionnant **Déboguer**les  >  **Windows**  >  **Threads**Windows. Vous devez être dans une session de débogage pour ouvrir ou voir les **Threads** et les autres fenêtres de débogage.
 
 ## <a name="examine-thread-markers"></a>Examiner les marqueurs de thread
 
-1. Dans le code source, localisez la ligne de `Console.WriteLine();`.
+1. Dans le code source, localisez la `Console.WriteLine();` ligne.
 
    1. Cliquez avec le bouton droit dans la fenêtre **Threads** , puis sélectionnez **afficher les threads dans la source** ![afficher les threads dans la source](../debugger/media/dbg-multithreaded-show-threads.png "ThreadMarker") dans le menu.
 
    La marge à côté de la ligne de code source affiche maintenant un ![marqueur de thread](../debugger/media/dbg-thread-marker.png "Marqueur de thread")icône de *marqueur de thread* . Le marqueur de thread indique qu'un thread est interrompu à cet emplacement. S’il existe plusieurs threads arrêtés à l’emplacement, l’icône ![plusieurs threads](../debugger/media/dbg-multithreaded-show-threads.png "threads multiples") s’affiche.
 
-1. Placez le pointeur sur le marqueur de thread. Un DataTip apparaît, affichant le nom et le numéro d’ID de thread pour le thread ou les threads arrêtés. Les noms de threads peuvent être `<No Name>`.
+1. Placez le pointeur sur le marqueur de thread. Un DataTip apparaît, affichant le nom et le numéro d’ID de thread pour le thread ou les threads arrêtés. Les noms de thread peuvent être `<No Name>` .
 
    >[!TIP]
    >Pour faciliter l’identification des threads sans nom, vous pouvez les renommer dans la fenêtre **Threads** . Cliquez avec le bouton droit sur le thread, puis sélectionnez **Renommer**.
@@ -118,9 +118,9 @@ Baliser et supprimer les indicateurs de thread à partir de l’éditeur de code
 
 ### <a name="flag-and-unflag-threads-in-source-code"></a>Marquer et supprimer les indicateurs de thread dans le code source
 
-1. Ouvrez la barre d’outils **emplacement de débogage** en sélectionnant **Afficher** > **barres d’outils** > **emplacement de débogage**. Vous pouvez également cliquer avec le bouton droit dans la zone de la barre d’outils et sélectionner **emplacement de débogage**.
+1. Ouvrez la barre d’outils **emplacement de débogage** en sélectionnant **Afficher**l'  >  **Toolbars**  >  **emplacement de débogage**. Vous pouvez également cliquer avec le bouton droit dans la zone de la barre d’outils et sélectionner **emplacement de débogage**.
 
-1. La barre d’outils **emplacement de débogage** comporte trois champs : **processus**, **thread**et **Frame de pile**. Déposez la liste des **Threads** et notez le nombre de threads. Dans la liste des **Threads** , le thread en cours d’exécution est marqué par un symbole de **>** .
+1. La barre d’outils **emplacement de débogage** comporte trois champs : **processus**, **thread**et **Frame de pile**. Déposez la liste des **Threads** et notez le nombre de threads. Dans la liste des **Threads** , le thread en cours d’exécution est marqué par un **>** symbole.
 
 1. Dans la fenêtre de code source, placez le curseur sur une icône de marqueur de thread dans la reliure, puis sélectionnez l’icône d’indicateur (ou l’une des icônes d’indicateur vides) dans le DataTip. L’icône d’indicateur devient rouge.
 
@@ -141,7 +141,7 @@ Baliser et supprimer les indicateurs de thread à partir de l’éditeur de code
 
 Dans la fenêtre **Threads** , les threads avec indicateur ont des icônes d’indicateur rouge en regard de celles-ci, tandis que les threads sans indicateur, s’ils sont affichés, ont des icônes vides.
 
-![Threads, fenêtre](../debugger/media/dbg-threads-window.png "Fenêtre Threads")
+![Fenêtre Threads](../debugger/media/dbg-threads-window.png "Fenêtre Threads")
 
 Sélectionnez une icône d’indicateur pour définir l’état du thread sur marqué ou sans indicateur, en fonction de son état actuel.
 
@@ -158,7 +158,7 @@ La deuxième colonne de la fenêtre **Threads** (sans en-tête) est la colonne d
 La colonne **emplacement** indique où chaque thread apparaît dans le code source. Sélectionnez la flèche de développement en regard de l’entrée d' **emplacement** , ou pointez sur l’entrée pour afficher une pile des appels partielle pour ce thread.
 
 >[!TIP]
->Pour obtenir une vue graphique des piles des appels pour les threads, utilisez la fenêtre [Piles parallèles](../debugger/using-the-parallel-stacks-window.md) . Pour ouvrir la fenêtre, pendant le débogage, sélectionnez **Déboguer**> **Piles parallèles** **Windows** > .
+>Pour obtenir une vue graphique des piles des appels pour les threads, utilisez la fenêtre [Piles parallèles](../debugger/using-the-parallel-stacks-window.md) . Pour ouvrir la fenêtre, pendant le débogage, sélectionnez **Déboguer**les >  **Windows**  >  **Piles parallèles**Windows.
 
 En plus des **indicateurs**, des **désindicateurs**et des **désindicateurs tous les threads**, le menu contextuel des éléments de la fenêtre de **thread** contient les éléments suivants :
 
@@ -168,14 +168,14 @@ En plus des **indicateurs**, des **désindicateurs**et des **désindicateurs tou
 - **Renommer**, qui vous permet de modifier le nom du thread.
 - [Figer et libérer des](#bkmk_freeze) commandes.
 
-## <a name="bkmk_freeze"></a>Figer et libérer l’exécution des threads
+## <a name="freeze-and-thaw-thread-execution"></a><a name="bkmk_freeze"></a>Figer et libérer l’exécution des threads
 
 Vous pouvez figer et libérer, ou suspendre et reprendre, les threads pour contrôler l’ordre dans lequel les threads effectuent le travail. Figer et libérer des threads peut vous aider à résoudre les problèmes d’accès concurrentiel, tels que les blocages et les conditions de concurrence.
 
 > [!TIP]
 > Pour suivre un thread unique sans figer d’autres threads, ce qui est également un scénario de débogage courant, consultez [prise en main du débogage d’applications multithread](../debugger/get-started-debugging-multithreaded-apps.md#bkmk_follow_a_thread).
 
-**Pour figer et libérer des threads :**
+**Pour geler et dégeler les threads :**
 
 1. Dans la fenêtre **Threads** , cliquez avec le bouton droit sur n’importe quel thread, puis sélectionnez **figer**. Une icône de **Pause** dans la colonne **thread en cours** indique que le thread est figé.
 
@@ -208,5 +208,5 @@ Avec le marqueur de thread dans le code source, vous pouvez basculer uniquement 
 Vous avez maintenant appris les bases du débogage des applications multithread. Vous pouvez observer, marquer et supprimer l’indicateur, et figer et libérer des threads à l’aide de la fenêtre **Threads** , de la liste des **Threads** dans la barre d’outils **emplacement de débogage** ou des marqueurs de thread dans l’éditeur de code source.
 
 ## <a name="see-also"></a>Voir aussi
-- [Déboguer les applications multithread](../debugger/debug-multithreaded-applications-in-visual-studio.md)
+- [Déboguer des applications multithread](../debugger/debug-multithreaded-applications-in-visual-studio.md)
 - [Guide pratique pour basculer vers un autre thread pendant un débogage](../debugger/how-to-switch-to-another-thread-while-debugging.md)

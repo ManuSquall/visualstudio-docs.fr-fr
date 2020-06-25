@@ -1,7 +1,7 @@
 ---
-title: 'Comment : Rechercher la DLL dans laquelle votre programme s’est bloqué dans | Microsoft Docs'
+title: Comment rechercher la DLL dans laquelle votre programme s’est bloqué dans | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - vs.debug.dll
 dev_langs:
@@ -22,14 +22,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bff4f164e16a65efe4ec3d1f057025168eab8cd2
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 155fd74dc6e01f88bf04fe21b77ebdae6b04437f
+ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72733267"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85349534"
 ---
-# <a name="how-to-find-which-dll-your-program-crashed-in-c-c-visual-basic-f"></a>Comment : Rechercher la dll dans laquelle votre programme s’est bloquéC#( C++,, Visual Basic F#,)
+# <a name="how-to-find-which-dll-your-program-crashed-in-c-c-visual-basic-f"></a>Comment : Rechercher la DLL en panne dans votre programme (C#, C++, Visual Basic, F #)
 
  Si votre application tombe en panne pendant un appel à une DLL système ou au code de quelqu'un d'autre, vous devez rechercher la DLL active au moment de l'incident. Si une panne survient dans une DLL en dehors de votre programme, vous pouvez identifier l’emplacement en utilisant la fenêtre **Modules**.
 
@@ -51,4 +51,4 @@ ms.locfileid: "72733267"
 
 ## <a name="see-also"></a>Voir aussi
 - [Débogage de projets DLL](../debugger/debugging-dll-projects.md)
-- [Guide pratique pour utiliser la fenêtre Modules](../debugger/how-to-use-the-modules-window.md)
+- [Comment : utiliser la fenêtre Modules](../debugger/how-to-use-the-modules-window.md)

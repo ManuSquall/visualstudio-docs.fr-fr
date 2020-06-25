@@ -1,7 +1,7 @@
 ---
-title: 'Procédure : Déboguer du Code injecté | Microsoft Docs'
+title: Comment déboguer du code injecté | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - vs.debug.injected
 dev_langs:
@@ -24,25 +24,25 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 35d2343343bf554df7592c8616e7697d88665baf
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a63a593a907908205d6724f3faf2c06d405bf0e2
+ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62847781"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85350041"
 ---
-# <a name="how-to-debug-injected-code"></a>Procédure : Déboguer du code injecté
+# <a name="how-to-debug-injected-code"></a>Comment : déboguer du code injecté
 
 > [!NOTE]
-> Les boîtes de dialogue et les commandes de menu qui s'affichent peuvent être différentes de celles qui sont décrites dans l'aide, en fonction de vos paramètres actifs ou de l'édition utilisée. Pour modifier vos paramètres, choisissez Importation et exportation de paramètres dans le menu Outils. Pour plus d’informations, consultez [Réinitialiser les paramètres](../ide/environment-settings.md#reset-settings).
+> Les boîtes de dialogue et les commandes de menu affichées peuvent différer de celles décrites dans l'Aide selon les paramètres actifs ou le mode d'édition. Pour modifier vos paramètres, choisissez Importation et exportation de paramètres dans le menu Outils. Pour plus d’informations, consultez [Réinitialiser les paramètres](../ide/environment-settings.md#reset-settings).
 
-L'utilisation d'attributs peut simplifier considérablement la programmation en C++. Pour plus d’informations, consultez [Concepts](/cpp/windows/attributed-programming-concepts). Certains attributs sont interprétés directement par le compilateur. D'autres injectent du code dans la source du programme, code qui est ensuite traité par le compilateur. Ce code injecté simplifie la programmation en réduisant la quantité de code à écrire. Parfois, cependant, un bogue peut provoquer un échec de l'application pendant l'exécution du code injecté. Dans ce cas, vous voudrez probablement examiner le code injecté. Visual Studio vous permet de visualiser le code injecté de deux façons :
+L'utilisation d'attributs peut simplifier considérablement la programmation en C++. Pour plus d’informations, consultez [concepts](/cpp/windows/attributed-programming-concepts). Certains attributs sont interprétés directement par le compilateur. D'autres injectent du code dans la source du programme, code qui est ensuite traité par le compilateur. Ce code injecté simplifie la programmation en réduisant la quantité de code à écrire. Parfois, cependant, un bogue peut provoquer un échec de l'application pendant l'exécution du code injecté. Dans ce cas, vous voudrez probablement examiner le code injecté. Visual Studio vous permet de visualiser le code injecté de deux façons :
 
 - Vous pouvez l’afficher dans la fenêtre **Code Machine**.
 
 - Avec [/Fx](/cpp/build/reference/fx-merge-injected-code), vous pouvez créer un fichier source fusionné contenant le code d’origine et le code injecté.
 
-La fenêtre **Code Machine** affiche les instructions en langage assembleur qui correspondent au code source et au code injecté par des attributs. En outre, **cette** fenêtre peut afficher l’annotation du code source.
+La fenêtre **Code Machine** affiche les instructions en langage assembleur qui correspondent au code source et au code injecté par des attributs. En outre, la fenêtre code **machine** peut afficher l’annotation de code source.
 
 ## <a name="to-turn-on-source-annotation"></a>Pour activer l'annotation de la source
 

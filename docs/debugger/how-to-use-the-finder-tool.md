@@ -1,7 +1,7 @@
 ---
-title: 'Comment : utiliser l’outil Finder | Microsoft Docs'
+title: Comment utiliser l’outil Finder | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - Window Finder Tool
 ms.assetid: 5841926b-08c3-4e43-88bd-4223d04f9aef
@@ -10,17 +10,17 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f96fe87137c6b14e32fb2648e93c54a1c5b094a0
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 7833502c1f36adb654ecc4cc4d3b4dfb742a85b8
+ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72732167"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85348728"
 ---
 # <a name="how-to-use-the-finder-tool"></a>Comment : utiliser l'outil Recherche
 Vous pouvez utiliser l’outil recherche de la boîte de dialogue **Rechercher une fenêtre** pour afficher des propriétés ou des messages de la fenêtre. L’outil Finder peut également localiser les fenêtres enfants désactivées et déterminer la fenêtre à mettre en évidence si les fenêtres enfants désactivées se chevauchent.
 
- ![Boîte&#43; &#43; de dialogue de la fenêtre de recherche Spy](../debugger/media/icon_spy--_find.png "Icon_Spy + + _Find") Outil Finder dans la boîte de dialogue Rechercher une fenêtre
+ ![Boîte de dialogue Rechercher une fenêtre de&#43;&#43; Spy](../debugger/media/icon_spy--_find.png "_Find Icon_Spy + +") Outil Finder dans la boîte de dialogue Rechercher une fenêtre
 
  La figure ci-dessus illustre la boîte de dialogue Rechercher une fenêtre après l’étape 3 ci-dessous.
 
@@ -36,7 +36,7 @@ Vous pouvez utiliser l’outil recherche de la boîte de dialogue **Rechercher u
 
     Lorsque vous faites glisser l’outil, la boîte de dialogue **Rechercher une fenêtre** affiche des détails sur la fenêtre sélectionnée.
 
-   - ou
+   - ou -
 
      Si vous avez le handle de la fenêtre que vous souhaitez examiner (par exemple, copié à partir du débogueur), tapez-le dans la zone de texte **handle** .
 
@@ -45,11 +45,11 @@ Vous pouvez utiliser l’outil recherche de la boîte de dialogue **Rechercher u
 
 4. Sous **Afficher**, sélectionnez **Propriétés** ou **messages**.
 
-5. Cliquez sur **OK**.
+5. Appuyez sur **OK**.
 
     Si vous avez sélectionné **Propriétés**, la [boîte de dialogue Propriétés](../debugger/window-properties-dialog-box.md) de la fenêtre s’ouvre. Si vous avez sélectionné **messages**, une fenêtre d' [affichage des messages](../debugger/messages-view.md) s’ouvre.
 
 ## <a name="see-also"></a>Voir aussi
 - [Vues Spy++](../debugger/spy-increment-views.md)
-- [Utilisation de Spy++](../debugger/using-spy-increment.md)
-- [Informations de référence sur Spy++](../debugger/spy-increment-reference.md)
+- [Utiliser Spy++](../debugger/using-spy-increment.md)
+- [Référence Spy++](../debugger/spy-increment-reference.md)

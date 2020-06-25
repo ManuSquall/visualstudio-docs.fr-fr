@@ -1,27 +1,27 @@
 ---
 title: Inspecter votre application avec le débogage d’historique | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 ms.assetid: 629b5d93-39b2-430a-b8ba-d2a47fdf2584
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dea338f940cca0ce24cc200ed933adadb7d5643f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: efabc8cd185daed4f018e3e4209e391b5bc39f44
+ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62848215"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85350444"
 ---
-# <a name="inspect-your-app-with-intellitrace-historical-debugging-in-visual-studio-c-visual-basic-c"></a>Inspecter votre application avec IntelliTrace dans Visual Studio de débogage historique (C#, Visual Basic, C++)
+# <a name="inspect-your-app-with-intellitrace-historical-debugging-in-visual-studio-c-visual-basic-c"></a>Inspecter votre application avec le débogage d’historique IntelliTrace dans Visual Studio (C#, Visual Basic, C++)
 
-Vous pouvez utiliser [le débogage d’historique](../debugger/historical-debugging.md) à déplacer vers le haut et les transférer via l’exécution de votre application et inspecter son état.
+Vous pouvez utiliser le [débogage d’historique](../debugger/historical-debugging.md) pour vous déplacer vers l’avant et l’arrière dans l’exécution de votre application et inspecter son état.
 
 Vous pouvez utiliser IntelliTrace dans Visual Studio Enterprise Edition, mais pas dans les éditions Professional ou Community.
 
-## <a name="navigate-your-code-with-historical-debugging"></a>Parcourir votre code avec le débogage d’historique
+## <a name="navigate-your-code-with-historical-debugging"></a>Naviguer dans votre code avec le débogage d’historique
 
 Commençons par un programme simple qui contient un bogue. Dans une application de console C#, ajoutez le code suivant :
 
@@ -51,9 +51,9 @@ private static int AddInt(int add)
 }
 ```
 
-Nous partons du principe que la valeur attendue de `resultInt` après l’appel de `AddAll()` est 20 (le résultat de 20 incrémentations de `testInt`). (Nous supposons également que vous ne voyez pas le bogue dans `AddInt()`). Mais le résultat est bien 44. Comment trouver le bogue sans parcourir 10 fois `AddAll()` ? Nous pouvons utiliser le débogage d’historique pour simplifier et accélérer l’identification du bogue. Voici comment :
+Nous partons du principe que la valeur attendue de `resultInt` après l’appel de `AddAll()` est 20 (le résultat de 20 incrémentations de `testInt`). (Nous partons également du principe que vous ne pouvez pas voir le bogue dans `AddInt()` ). Mais le résultat est en fait 44. Comment trouver le bogue sans parcourir 10 fois `AddAll()` ? Nous pouvons utiliser le débogage d’historique pour simplifier et accélérer l’identification du bogue. Voici comment faire :
 
-1. Dans **Outils > Options > IntelliTrace > Général**, vérifiez qu’IntelliTrace est activé, puis sélectionnez **événements IntelliTrace et informations d’appels**. Si vous ne sélectionnez pas cette option, vous ne verrez pas la marge de navigation (comme expliqué ci-dessous).
+1. Dans **outils > Options > intellitrace > général**, assurez-vous qu’IntelliTrace est activé, puis sélectionnez **événements IntelliTrace et informations sur les appels**. Si vous ne sélectionnez pas cette option, vous ne verrez pas la marge de navigation (comme expliqué ci-dessous).
 
 2. Définissez un point d’arrêt sur la ligne `Console.WriteLine(resultInt);` .
 
@@ -61,7 +61,7 @@ Nous partons du principe que la valeur attendue de `resultInt` après l’appel 
 
 4. Ouvrez la fenêtre **Outils de diagnostic** (**Déboguer > Afficher les outils de diagnostic**). La fenêtre de code doit ressembler à ce qui suit :
 
-    ![Fenêtre de code sur le point d’arrêt](../debugger/media/historicaldebuggingbreakpoint.png "HistoricalDebuggingBreakpoint")
+    ![Fenêtre de code au point d'arrêt](../debugger/media/historicaldebuggingbreakpoint.png "HistoricalDebuggingBreakpoint")
 
 5. Vous devez voir une double flèche en regard de la marge de gauche, juste au-dessus du point d'arrêt. Cette zone est appelée « marge de navigation » et est utilisée pour le débogage d’historique. Cliquez sur la flèche.
 
@@ -79,5 +79,5 @@ Nous partons du principe que la valeur attendue de `resultInt` après l’appel 
 
 Cette procédure ne présente que succinctement ce que vous pouvez faire avec le débogage d’historique.
 
-- Pour afficher les instantanés pendant le débogage, consultez [Inspecter les États d’application précédent à l’aide d’IntelliTrace](../debugger/view-historical-application-state.md).
+- Pour afficher les instantanés pendant le débogage, consultez [inspecter les États d’application précédents à l’aide d’IntelliTrace](../debugger/view-historical-application-state.md).
 - Pour en savoir plus sur les différents paramètres et les effets des différents boutons de la marge de navigation, consultez [Fonctionnalités d’IntelliTrace](../debugger/intellitrace-features.md).

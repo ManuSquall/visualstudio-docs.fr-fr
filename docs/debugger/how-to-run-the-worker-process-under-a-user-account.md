@@ -2,7 +2,7 @@
 title: Exécuter un processus de travail sous un compte d’utilisateur | Microsoft Docs
 ms.custom: seodec18
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - CSharp
 - VB
@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5905ad87eb534013bdfd786a79e40e46087dff55
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 6ac5bee0ffa05aa275782c57fc9b7b1c369bf65d
+ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72732818"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85349404"
 ---
 # <a name="how-to-run-the-worker-process-under-a-user-account"></a>Comment : exécuter le processus de travail sous un compte d'utilisateur
 Pour configurer votre ordinateur afin de pouvoir exécuter le processus de traitement [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] (aspnet_wp.exe ou w3wp.exe) sous un compte d'utilisateur, procédez comme suit.
@@ -45,7 +45,7 @@ Pour configurer votre ordinateur afin de pouvoir exécuter le processus de trait
 
 4. Sur [!INCLUDE[winxpsvr](../debugger/includes/winxpsvr_md.md)], IIS 6.0 est installé par défaut. Le processus de traitement correspondant est w3wp.exe. Pour fonctionner en mode IIS 6.0 avec aspnet_wp.exe comme processus de traitement, procédez selon les étapes suivantes :
 
-   1. Cliquez sur **Démarrer**, puis sur **Outils d'administration** et choisissez **Services Internet (IIS)** .
+   1. Cliquez sur **Démarrer**, puis sur **Outils d'administration** et choisissez **Services Internet (IIS)**.
 
    2. Dans la boîte de dialogue **Services Internet** , cliquez avec le bouton droit sur le dossier **Sites Web** et choisissez **Propriétés**.
 

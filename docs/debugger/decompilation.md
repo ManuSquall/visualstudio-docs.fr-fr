@@ -1,7 +1,7 @@
 ---
-title: Décompiler le code .NET tout en débogage Microsoft Docs
+title: Décompiler du code .NET pendant le débogage | Microsoft Docs
 ms.date: 2/2/2020
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - CSharp
 helpviewer_keywords:
@@ -13,103 +13,103 @@ manager: jillfra
 ms.workload:
 - multiple
 monikerRange: '>= vs-2019'
-ms.openlocfilehash: d63c05120842d52dd54359e128d0cc5f2a195817
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: b7d9ed2f2ceeae21b85fdb8227e65715cb07bc8b
+ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79508743"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85350561"
 ---
-# <a name="generate-source-code-from-net-assemblies-while-debugging"></a>Générer du code source à partir d’assemblages .NET tout en débogage
+# <a name="generate-source-code-from-net-assemblies-while-debugging"></a>Générer du code source à partir d’assemblys .NET pendant le débogage
 
-Lorsque vous débogagez une application .NET, vous pouvez constater que vous voulez afficher le code source que vous n’avez pas. Par exemple, casser une exception ou utiliser la pile d’appels pour naviguer vers un emplacement source.
+Lors du débogage d’une application .NET, il se peut que vous souhaitiez afficher le code source dont vous n’avez pas besoin. Par exemple, l’arrêt sur une exception ou l’utilisation de la pile des appels pour naviguer jusqu’à un emplacement source.
 
 > [!NOTE]
-> * La génération de code source (décomposition) n’est disponible que pour les applications .NET et est basée sur le projet open source [ILSpy.](https://github.com/icsharpcode/ILSpy)
-> * La décomposition n’est disponible que dans Visual Studio 2019 16.5 et plus tard.
-> * L’application de l’attribut [SuppressIldasmAttribute](https://docs.microsoft.com/dotnet/api/system.runtime.compilerservices.suppressildasmattribute) à un assemblage ou à un module empêche Visual Studio de tenter la décomposition.
+> * La génération de code source (décompilation) est uniquement disponible pour les applications .NET et est basée sur le projet [ILSpy](https://github.com/icsharpcode/ILSpy) Open source.
+> * La décompilation est disponible uniquement dans Visual Studio 2019 16,5 et versions ultérieures.
+> * L’application de l’attribut [SuppressIldasmAttribute](https://docs.microsoft.com/dotnet/api/system.runtime.compilerservices.suppressildasmattribute) à un assembly ou à un module empêche Visual Studio de tenter une décompilation.
 
-## <a name="generate-source-code"></a>Générer du code source
+## <a name="generate-source-code"></a>Générer le code source
 
-Lorsque vous débugging et aucun code source n’est disponible, Visual Studio affiche le document **Source Non Trouvé,** ou si vous n’avez pas de symboles pour l’assemblage, le document **No Symbols Loaded.** Les deux documents disposent **d’une** option de code source de décomposition qui génère du code C pour l’emplacement actuel. Le code Cmd généré peut ensuite être utilisé comme n’importe quel autre code source. Vous pouvez afficher le code, inspecter les variables, définir les points de rupture, etc.
+Lorsque vous effectuez un débogage et qu’aucun code source n’est disponible, Visual Studio affiche le document **source introuvable** ou, si vous n’avez pas de symboles pour l’assembly, le document **aucun symbole n'** a été chargé. Les deux documents ont une option de **code source Decompile** qui génère du code C# pour l’emplacement actuel. Le code C# généré peut ensuite être utilisé comme tout autre code source. Vous pouvez afficher le code, inspecter les variables, définir des points d’arrêt, etc.
 
 ### <a name="no-symbols-loaded"></a>Aucun symbole chargé
 
-L’illustration suivante montre le message **No Symbols Loaded.**
+L’illustration suivante montre le message **aucun symbole chargé** .
 
-![Capture d’écran d’aucun document chargé de symbole](media/decompilation-no-symbol-found.png)
+![Capture d’écran de document aucun symbole chargé](media/decompilation-no-symbol-found.png)
 
-### <a name="source-not-found"></a>Source non trouvée
+### <a name="source-not-found"></a>Source introuvable
 
-L’illustration suivante montre le message **Source Non Trouvé.**
+L’illustration suivante montre le message **source introuvable** .
 
-![Capture d’écran de la source non trouvé document](media/decompilation-no-source-found.png)
+![Capture d’écran du document source introuvable](media/decompilation-no-source-found.png)
 
-## <a name="generate-and-embed-sources-for-an-assembly"></a>Générer et intégrer des sources pour un assemblage
+## <a name="generate-and-embed-sources-for-an-assembly"></a>Générer et incorporer des sources pour un assembly
 
-En plus de générer du code source pour un emplacement spécifique, vous pouvez générer tout le code source pour un assemblage .NET donné. Pour ce faire, rendez-vous sur la fenêtre **Modules** et dans le menu contextuelle d’un assemblage .NET, puis sélectionnez la commande **de code source Decompile.** Visual Studio génère un fichier de symbole pour l’assemblage, puis intègre la source dans le fichier symbole. Dans une étape ultérieure, vous pouvez [extraire](#extract-and-view-the-embedded-source-code) le code source intégré.
+En plus de générer le code source d’un emplacement spécifique, vous pouvez générer tout le code source d’un assembly .NET donné. Pour ce faire, accédez à la fenêtre **modules** et, dans le menu contextuel d’un assembly .net, puis sélectionnez la commande **décompiler le code source** . Visual Studio génère un fichier de symboles pour l’assembly, puis incorpore la source dans le fichier de symboles. Dans une étape ultérieure, vous pouvez [extraire](#extract-and-view-the-embedded-source-code) le code source incorporé.
 
-![Capture d’écran du menu contexte d’assemblage dans la fenêtre des modules avec commande source de décomposition.](media/decompilation-decompile-source-code.png)
+![Capture d’écran du menu contextuel de l’assembly dans la fenêtre modules avec la commande source Decompile.](media/decompilation-decompile-source-code.png)
 
-## <a name="extract-and-view-the-embedded-source-code"></a>Extraire et afficher le code source intégré
+## <a name="extract-and-view-the-embedded-source-code"></a>Extraire et afficher le code source incorporé
 
-Vous pouvez extraire des fichiers sources qui sont intégrés dans un fichier symbole à l’aide de la commande **de code source d’extraction** dans le menu contextuelle de la fenêtre **Modules.**
+Vous pouvez extraire les fichiers sources incorporés dans un fichier de symboles à l’aide de la commande **extraire le code source** dans le menu contextuel de la fenêtre **modules** .
 
-![Capture d’écran du menu contexte d’assemblage dans la fenêtre des modules avec la commande de sources d’extrait.](media/decompilation-extract-source-code.png)
+![Capture d’écran du menu contextuel de l’assembly dans la fenêtre modules avec la commande extraire les sources.](media/decompilation-extract-source-code.png)
 
-Les fichiers source extraits sont ajoutés à la solution sous forme [de fichiers divers.](../ide/reference/miscellaneous-files.md) La fonction fichiers divers est éteinte par défaut dans Visual Studio. Vous pouvez activer cette fonctionnalité à partir des **outils** > **Options** > **Environnement** > **Documents** > Afficher des fichiers divers dans la case à cocher Solution**Explorer.** Sans activer cette fonctionnalité, vous ne serez pas en mesure d’ouvrir le code source extrait.
+Les fichiers sources extraits sont ajoutés à la solution en tant que [fichiers divers](../ide/reference/miscellaneous-files.md). La fonctionnalité fichiers divers est désactivée par défaut dans Visual Studio. Vous pouvez activer cette fonctionnalité à partir **Tools**de la  >  case à cocher outils**options**des  >  documents d'**environnement**  >  **Documents**  >  **afficher les fichiers divers dans Explorateur de solutions** . Si vous n’activez pas cette fonctionnalité, vous ne pourrez pas ouvrir le code source extrait.
 
-![Capture d’écran de la page d’option d’outils avec option de fichiers divers activé.](media/decompilation-tools-options-misc-files.png)
+![Capture d’écran de la page d’options outils avec l’option fichiers divers activée.](media/decompilation-tools-options-misc-files.png)
 
-Les fichiers source extraits apparaissent dans les fichiers divers de **Solution Explorer**.
+Les fichiers sources extraits apparaissent dans les fichiers divers de **Explorateur de solutions**.
 
-![Capture d’écran de l’explorateur de solution avec des fichiers divers.](media/decompilation-solution-explorer.png)
+![Capture d’écran de l’Explorateur de solutions avec fichiers divers.](media/decompilation-solution-explorer.png)
 
 ## <a name="known-limitations"></a>Limitations connues
 
-### <a name="requires-break-mode"></a>Nécessite un mode de rupture
+### <a name="requires-break-mode"></a>Nécessite le mode arrêt
 
-Générer du code source à l’aide de la décomposition n’est possible que lorsque le débbuggeur est en mode pause et que l’application est mise en pause. Par exemple, Visual Studio entre en mode pause lorsqu’il heurte un point d’arrêt ou une exception. Vous pouvez facilement déclencher Visual Studio pour casser la prochaine fois![que](media/decompilation-break-all.png)votre code s’exécute en utilisant la commande **Break All** ( Break all icon ).
+La génération du code source à l’aide de la décompilation est possible uniquement lorsque le débogueur est en mode arrêt et que l’application est suspendue. Par exemple, Visual Studio passe en mode arrêt lorsqu’il atteint un point d’arrêt ou une exception. Vous pouvez facilement déclencher l’arrêt de Visual Studio lors de la prochaine exécution de votre code à l’aide de la commande **arrêter tout** ( ![ icône arrêter tout ](media/decompilation-break-all.png) ).
 
-### <a name="decompilation-limitations"></a>Limitations de décomposition
+### <a name="decompilation-limitations"></a>Limitations de décompilation
 
-Générer du code source à partir du format intermédiaire (IL) qui est utilisé dans les assemblages .NET a certaines limites inhérentes. En tant que tel, le code source généré ne ressemble pas au code source d’origine. La plupart des différences se trouvent dans des endroits où les informations contenues dans le code source d’origine ne sont pas nécessaires au moment de l’exécution. Par exemple, des informations telles que l’espace blanc, les commentaires et les noms des variables locales ne sont pas nécessaires au moment de l’exécution. Nous vous recommandons d’utiliser la source générée pour comprendre comment le programme est exécuté et non pas comme un remplacement pour le code source d’origine.
+La génération de code source à partir du format intermédiaire (IL) utilisé dans les assemblys .NET présente des limitations inhérentes. Par conséquent, le code source généré ne ressemble pas au code source d’origine. La plupart des différences résident dans les endroits où les informations du code source d’origine ne sont pas nécessaires au moment de l’exécution. Par exemple, les informations telles que les espaces blancs, les commentaires et les noms des variables locales ne sont pas nécessaires au moment de l’exécution. Nous vous recommandons d’utiliser la source générée pour comprendre comment le programme s’exécute et non en remplacement du code source d’origine.
 
-### <a name="debug-optimized-or-release-assemblies"></a>Assemblages de débbug optimisés ou de libération
+### <a name="debug-optimized-or-release-assemblies"></a>Déboguer des assemblys optimisés ou de version
 
-Lorsque vous débogiez le code qui a été décomposé à partir d’un assemblage qui a été compilé à l’aide d’optimisations compilateurs, vous pouvez rencontrer les questions suivantes:
-- Les points d’arrêt ne peuvent pas toujours se lier à l’emplacement d’approvisionnement correspondant.
-- Le pas peut ne pas toujours marcher à l’endroit correct.
+Lors du débogage du code qui a été décompilé à partir d’un assembly qui a été compilé à l’aide des optimisations du compilateur, vous pouvez rencontrer les problèmes suivants :
+- Les points d’arrêt ne sont pas toujours liés à l’emplacement de l’approvisionnement correspondant.
+- L’exécution pas à pas ne passe pas toujours à l’emplacement correct.
 - Les variables locales peuvent ne pas avoir de noms exacts.
-- Certaines variables peuvent ne pas être disponibles pour évaluation.
+- Certaines variables peuvent ne pas être disponibles pour l’évaluation.
 
-Plus de détails peuvent être trouvés dans le numéro GitHub: [ICSharpCode.Decompiler intégration dans VS Debugger](https://github.com/icsharpcode/ILSpy/issues/1901).
+Pour plus d’informations, consultez le problème GitHub : [icsharpcode. décompilateur Integration dans vs Debugger](https://github.com/icsharpcode/ILSpy/issues/1901).
 
-### <a name="decompilation-reliability"></a>Fiabilité de décomposition
+### <a name="decompilation-reliability"></a>Fiabilité de la décompilation
 
-Un pourcentage relativement faible de tentatives de décomposition peut entraîner un échec. Ceci est dû à une erreur de référence nulle point de séquence dans ILSpy.  Nous avons atténué l’échec en attrapant ces problèmes et en échouant gracieusement à la tentative de décomposition.
+Un pourcentage relativement faible de tentatives de décompilation peut entraîner un échec. Cela est dû à une erreur de référence null de point de séquence dans ILSpy.  Nous avons atténué l’échec en interceptant ces problèmes et en faisant échouer la tentative de décompilation.
 
-Plus de détails peuvent être trouvés dans le numéro GitHub: [ICSharpCode.Decompiler intégration dans VS Debugger](https://github.com/icsharpcode/ILSpy/issues/1901).
+Pour plus d’informations, consultez le problème GitHub : [icsharpcode. décompilateur Integration dans vs Debugger](https://github.com/icsharpcode/ILSpy/issues/1901).
 
-### <a name="limitations-with-async-code"></a>Limitations avec code async
+### <a name="limitations-with-async-code"></a>Limitations du code asynchrone
 
-Les résultats des modules de décomposition avec des modèles de code async/await peuvent être incomplets ou échouer complètement. La mise en œuvre ILSpy des machines d’État async/await et de rendement n’est que partiellement mise en œuvre. 
+Les résultats de la décompilation des modules avec des modèles de code Async/await peuvent être incomplets ou échouer entièrement. L’implémentation ILSpy de Async/await et yield State-machines n’est implémentée que partiellement. 
 
-Plus de détails peuvent être trouvés dans le numéro GitHub: [PDB Generator Status](https://github.com/icsharpcode/ILSpy/issues/1422).
+Pour plus d’informations, consultez le problème GitHub : [État du générateur PDB](https://github.com/icsharpcode/ILSpy/issues/1422).
 
 ### <a name="just-my-code"></a>Uniquement mon code
 
-Les paramètres [Just My Code (JMC)](https://docs.microsoft.com/visualstudio/debugger/just-my-code) permettent à Visual Studio de passer au-dessus du système, du cadre, de la bibliothèque et d’autres appels non-utilisateurs. Au cours d’une session de débogage, la fenêtre **Modules** montre quels modules de code le débbuggeur traite comme Mon Code (code utilisateur).
+Les paramètres [uniquement mon code (uniquement mon code)](https://docs.microsoft.com/visualstudio/debugger/just-my-code) permettent à Visual Studio d’effectuer un pas à pas principal dans le système, l’infrastructure, la bibliothèque et d’autres appels non utilisateur. Pendant une session de débogage, la fenêtre **modules** affiche les modules de code que le débogueur traite comme mon code (code utilisateur).
 
-La décomposition des modules optimisés ou de sortie produit du code non utilisateur. Si le débogénaire se casse dans votre code non utilisateur en décomposition, par exemple, la fenêtre **No Source** apparaît. Pour désactiver Just My Code, naviguez vers des > options **d’outils** > **Options** (ou **de déboptées** > **Options**) > **Debugging****General**, puis désélectionner Enable Just **My Code**.
+La décompilation des modules optimisés ou de version génère du code non-utilisateur. Si le débogueur s’arrête dans votre code non-utilisateur décompilé, par exemple, la fenêtre **aucune source** s’affiche. Pour désactiver uniquement mon code, accédez à **Outils**  >  **options** (ou options de **débogage**  >  **Options**) > **débogage**  >  **général**, **Enable Just My Code**puis désactivez uniquement mon code.
 
 ### <a name="extracted-sources"></a>Sources extraites
 
-Le code source extrait d’un assemblage a les limites suivantes :
+Le code source extrait d’un assembly présente les limitations suivantes :
 - Le nom et l’emplacement des fichiers générés ne sont pas configurables.
 - Les fichiers sont temporaires et seront supprimés par Visual Studio.
-- Les fichiers sont placés dans un seul dossier et toute hiérarchie de dossier que les sources d’origine n’ont pas été utilisées.
-- Le nom de fichier de chaque fichier contient un hachage de chèques du fichier.
+- Les fichiers sont placés dans un dossier unique et toute hiérarchie de dossiers dont les sources d’origine n’avaient pas été utilisées.
+- Le nom de fichier de chaque fichier contient un hachage de somme de contrôle du fichier.
 
-### <a name="generated-code-is-c-only"></a>Le code généré est C
-La décomposition ne génère que des fichiers de code source dans le C. Il n’y a pas d’option pour générer des fichiers dans une autre langue.
+### <a name="generated-code-is-c-only"></a>Le code généré est C# uniquement
+La décompilation génère uniquement des fichiers de code source en C#. Il n’existe aucune option pour générer des fichiers dans d’autres langues.

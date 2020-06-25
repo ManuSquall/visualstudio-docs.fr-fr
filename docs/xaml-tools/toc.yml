@@ -2,6 +2,8 @@
   href: index.yml
 - name: Vue d’ensemble du langage XAML
   href: xaml-overview.md
+- name: Éditeur de code XAML
+  href: xaml-code-editor.md
 - name: "Concepteur\_XAML"
   items:
     - name: Concevoir en XAML dans Visual Studio et Blend

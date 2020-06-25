@@ -1,7 +1,7 @@
 ---
-title: 'Procédure : Afficher et masquer les groupes de registres | Microsoft Docs'
+title: Comment afficher et masquer des groupes de registres | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - vs.debug.registergroups
 dev_langs:
@@ -19,23 +19,23 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5a904bfcf147d72dde16ffe0fbf9e754c2c356bb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f08e31f67f9626c15dee0b6b4b8202a0370c976b
+ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62847798"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85349898"
 ---
-# <a name="how-to-display-and-hide-register-groups-c-c-visual-basic-f"></a>Procédure : Afficher et masquer les groupes de registres (C#, C++, Visual Basic, F#)
+# <a name="how-to-display-and-hide-register-groups-c-c-visual-basic-f"></a>Comment : afficher et masquer des groupes de registres (C#, C++, Visual Basic, F #)
 
 La fenêtre **Registres** est disponible uniquement si le débogage au niveau des adresses est activé dans la boîte de dialogue **Options**, nœud **Débogage**, catégorie **Général**.
 
 Pour des raisons de clarté, la fenêtre **Registres** classe les registres par groupes. Si vous cliquez avec le bouton droit sur la fenêtre **Registres**, un menu contextuel contenant ces groupes s’affiche. Vous pouvez afficher ou masquer les groupes selon vos besoins en suivant la procédure ci-dessous.
 
 > [!NOTE]
-> Les boîtes de dialogue et les commandes de menu qui s'affichent peuvent être différentes de celles qui sont décrites dans l'aide, en fonction de vos paramètres actifs ou de l'édition utilisée. Pour modifier vos paramètres, choisissez **Importation et exportation de paramètres** dans le menu **Outils** . Pour plus d’informations, consultez [Réinitialiser les paramètres](../ide/environment-settings.md#reset-settings).
+> Les boîtes de dialogue et les commandes de menu affichées peuvent différer de celles décrites dans l'Aide selon les paramètres actifs ou le mode d'édition. Pour modifier vos paramètres, choisissez **Paramètres d'importation et d'exportation** dans le menu **Outils** . Pour plus d’informations, consultez [Réinitialiser les paramètres](../ide/environment-settings.md#reset-settings).
 
-## <a name="display-or-hide-register-groups"></a>Afficher ou masquer des groupes de registres
+## <a name="display-or-hide-register-groups"></a>Afficher ou masquer les groupes de registres
 
 1. Cliquez avec le bouton droit sur la fenêtre **Registres**.
 
@@ -45,4 +45,4 @@ Pour des raisons de clarté, la fenêtre **Registres** classe les registres par 
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Guide pratique pour utiliser la fenêtre Registres](../debugger/how-to-use-the-registers-window.md)
+- [Comment : utiliser la fenêtre Registres](../debugger/how-to-use-the-registers-window.md)

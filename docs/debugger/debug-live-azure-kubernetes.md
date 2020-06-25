@@ -1,9 +1,9 @@
 ---
 title: Déboguer ASP.NET Azure Kubernetes Services en production
-description: Découvrez comment définir des snappoints et afficher des instantanés avec le Débogueur de capture instantanée.
+description: Découvrez comment définir des snappoints et afficher des captures instantanées avec le Débogueur de capture instantanée.
 ms.custom: ''
 ms.date: 02/11/2019
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - debugger
 author: poppastring
@@ -13,12 +13,12 @@ monikerRange: '>= vs-2019'
 ms.workload:
 - aspnet
 - azure
-ms.openlocfilehash: 6eb7af4ead7cd58a0ccf36cbeb2b9fc56e890315
-ms.sourcegitcommit: 59e5758036223ee866f3de5e3c0ab2b6dbae97b6
+ms.openlocfilehash: e0f062108f19b38c6bf6514eda78098f493b3f78
+ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68415753"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85350652"
 ---
 # <a name="debug-live-aspnet-azure-kubernetes-services-using-the-snapshot-debugger"></a>Déboguer ASP.NET Azure Kubernetes Services en production avec le Débogueur de capture instantanée
 
@@ -26,7 +26,7 @@ Le Débogueur de capture instantanée prend une capture instantanée de vos appl
 
 Les snappoints et les logpoints sont similaires aux points d’arrêt, mais contrairement à ceux-ci, les snappoints n’arrêtent pas l’application lorsqu’ils sont atteints. En règle générale, la capture d’un instantané sur un snappoint prend entre 10 et 20 millisecondes.
 
-Dans ce didacticiel, vous allez effectuer les actions suivantes :
+Ce didacticiel présente les procédures suivantes :
 
 > [!div class="checklist"]
 > * lancer le Débogueur de capture instantanée ;
@@ -54,7 +54,7 @@ Dans ce didacticiel, vous allez effectuer les actions suivantes :
     > [!IMPORTANT]
     > Pour le débogage d’instantané, vous devez ouvrir la *même version de code source* que celle publiée dans votre service Azure Kubernetes.
 
-1. Choisissez **Déboguer > Joindre le Débogueur de capture instantanée...** . Sélectionnez la ressource AKS sur laquelle votre application web est déployée et un compte de stockage Azure, puis cliquez sur **Joindre**. Débogueur de capture instantanée prend également en charge les [Azure App service](debug-live-azure-applications.md) et les [machines virtuelles Azure & Virtual Machine Scale sets](debug-live-azure-virtual-machines.md).
+1. Choisissez **Déboguer > attacher débogueur de capture instantanée...**. Sélectionnez la ressource AKS sur laquelle votre application Web est déployée et un compte de stockage Azure, puis cliquez sur **attacher**. Débogueur de capture instantanée prend également en charge les [Azure App service](debug-live-azure-applications.md) et les [machines virtuelles Azure & Virtual Machine Scale sets](debug-live-azure-virtual-machines.md).
 
     ![Lancer le Débogueur de capture instantanée à partir du menu Déboguer](../debugger/media/snapshot-debug-menu-attach.png)
 
@@ -104,7 +104,7 @@ Une fois qu’un point d’ancrage est défini, vous pouvez soit générer manue
 
 Vous pouvez également ajouter d’autres snappoints à votre application et les activer avec le bouton **Mettre à jour la collecte**.
 
-**Besoin d’aide ?** Voir les pages [Résolution des problèmes et problèmes connus](../debugger/debug-live-azure-apps-troubleshooting.md) et [FAQ du débogage de captures instantanées](../debugger/debug-live-azure-apps-faq.md).
+**Besoin d’aide ?** Voir les pages [Résolution des problèmes et problèmes connus](../debugger/debug-live-azure-apps-troubleshooting.md) et [FAQ du débogage de captures instantanées](../debugger/debug-live-azure-apps-faq.md).
 
 ## <a name="set-a-conditional-snappoint"></a>Définir un snappoint conditionnel
 
@@ -147,4 +147,4 @@ Nous avons vu comment prendre une capture instantanée lorsqu’un snappoint est
 Dans ce tutoriel, vous avez appris à utiliser le Débogueur de capture instantanée pour Azure Kubernetes. Peut-être souhaitez-vous en savoir plus sur cette fonctionnalité.
 
 > [!div class="nextstepaction"]
-> [FAQ pour le débogage d’instantané](../debugger/debug-live-azure-apps-faq.md)
+> [Questions fréquentes (FAQ) sur le débogage d’instantané](../debugger/debug-live-azure-apps-faq.md)

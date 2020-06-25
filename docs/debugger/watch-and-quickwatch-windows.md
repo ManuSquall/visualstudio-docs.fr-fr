@@ -1,8 +1,8 @@
 ---
-title: Réglez une montre sur les variables . Microsoft Docs
+title: Définir un espion sur les variables | Microsoft Docs
 ms.custom: seodec18
 ms.date: 10/11/2018
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - vs.debug.watch
 helpviewer_keywords:
@@ -17,26 +17,26 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ea3d2a1e82e92473859fef29754fbb831cf3685b
-ms.sourcegitcommit: 95f26af1da51d4c83ae78adcb7372b32364d8a2b
+ms.openlocfilehash: 6ab66089de25b7648b13e1ba05f88ab55b7868df
+ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79302006"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85348026"
 ---
-# <a name="watch-variables-with-watch-windows-and-quickwatch"></a>Regarder les variables avec les fenêtres Watch et QuickWatch
+# <a name="watch-variables-with-watch-windows-and-quickwatch"></a>Surveiller les variables avec les fenêtres espion et espion Express
 
-Pendant que vous débugging, vous pouvez utiliser **watch** windows et **QuickWatch** pour regarder les variables et les expressions. Les fenêtres ne sont disponibles que lors d’une séance de débogage.
+Pendant le débogage, vous pouvez utiliser les fenêtres **Espion** et **Espion express** pour surveiller les variables et les expressions. Les fenêtres sont uniquement disponibles pendant une session de débogage.
 
-**Les** fenêtres de montre peuvent afficher plusieurs variables à la fois tout en débogage. Le dialogue **QuickWatch** affiche une seule variable à la fois, et doit être fermé avant que le débogage puisse continuer.
+Les fenêtres **Espion** peuvent afficher plusieurs variables à la fois lors du débogage. La boîte de dialogue **Espion express** affiche une seule variable à la fois et doit être fermée pour que le débogage puisse continuer.
 
-Si c’est la première fois que vous avez essayé de déboguer du code, vous pouvez lire [Debugging pour les débutants absolus](../debugger/debugging-absolute-beginners.md) et [les techniques et les outils Debugging](../debugger/write-better-code-with-visual-studio.md) avant de passer par cet article.
+S’il s’agit de la première fois que vous essayez de déboguer du code, vous souhaiterez peut-être lire le [débogage pour les débutants](../debugger/debugging-absolute-beginners.md) et les [techniques de débogage et les outils de débogage](../debugger/write-better-code-with-visual-studio.md) avant de passer en revue cet article.
 
-## <a name="observe-variables-with-a-watch-window"></a>Observer les variables avec une fenêtre de montre
+## <a name="observe-variables-with-a-watch-window"></a>Observer les variables avec un Fenêtre Espion
 
-Vous pouvez ouvrir plus d’une fenêtre **de montre,** et observer plus d’une variable dans une fenêtre **de montre.**
+Vous pouvez ouvrir plusieurs fenêtres **Espion** et observer plusieurs variables dans une fenêtre **Espion** .
 
-Par exemple, pour définir une `a`montre `b`sur `c` les valeurs de , , et dans le code suivant:
+Par exemple, pour définir un espion sur les valeurs de `a` , `b` et `c` dans le code suivant :
 
 ```C++
 int main()
@@ -58,85 +58,85 @@ int main()
 
 ```
 
-1. Définissez un point `c = a + b;` d’arrêt sur la ligne en cliquant sur la marge gauche, en sélectionnant **Debug** > **Toggle Breakpoint**, ou en appuyant sur **F9**.
+1. Définissez un point d’arrêt sur la `c = a + b;` ligne en cliquant dans la marge de **Debug**gauche, en sélectionnant  >  **basculer le point d’arrêt**ou en appuyant sur **F9**.
 
-1. Commencez à débogage en sélectionnant la flèche **de démarrage** verte ou **Debug** > **Start Debugging**, ou appuyez sur **F5**. L’exécution s’arrête au point d’arrêt.
+1. Démarrez le débogage en sélectionnant la flèche verte de **démarrage** **ou Déboguer**  >  **Démarrer le débogage**, ou appuyez sur **F5**. L’exécution s’interrompt au point d’arrêt.
 
-1. Ouvrez une fenêtre **Watch** en sélectionnant **Debug** > **Windows** > **Watch** > **Watch 1**, ou en appuyant sur **Ctrl**+**Alt**+**W** > **1**.
+1. Ouvrez une fenêtre **Espion** en sélectionnant **Déboguer**  >  **Windows**  >  **Watch**  >  **regarder 1**ou en appuyant sur **CTRL** + **ALT** + **W**  >  **1**.
 
-   Vous pouvez ouvrir des fenêtres **de montre** supplémentaires en sélectionnant les fenêtres **2**, **3**, ou **4**.
+   Vous pouvez ouvrir des fenêtres **Espion** supplémentaires en sélectionnant Windows **2**, **3**ou **4**.
 
-1. Dans la fenêtre **Watch,** sélectionnez une `a`rangée vide, et tapez variable . Faites la `b` même `c`chose pour et .
+1. Dans la fenêtre **Espion** , sélectionnez une ligne vide, puis tapez variable `a` . Procédez de la même façon pour `b` et `c` .
 
-   ![Regarder les variables](../debugger/media/watchvariables.png "RegarderVariables")
+   ![Surveiller des variables](../debugger/media/watchvariables.png "WatchVariables")
 
-1. Continuer à débogage en sélectionnant **Debug** > **Step Into** ou en appuyant sur **F11** au besoin pour avancer. Les valeurs variables de la fenêtre **Watch** changent `for` au fur et à mesure que vous itérerez à travers la boucle.
+1. Poursuivez le débogage en sélectionnant étape de **débogage**  >  **dans** ou en appuyant sur **F11** si nécessaire pour avancer. Les valeurs des variables dans la fenêtre **Espion** changent à mesure que vous itérez au sein de la `for` boucle.
 
 >[!NOTE]
->Pour le Cmd seulement,
->- Vous devrez peut-être qualifier le contexte d’un nom variable ou d’une expression qui utilise un nom variable. Le contexte est la fonction, le fichier source ou le module où se trouve une variable. Si vous devez qualifier le contexte, utilisez la syntaxe [contextuelle (C)](../debugger/context-operator-cpp.md) dans la fenêtre **Name** in the **Watch.**
+>Pour C++ uniquement,
+>- Vous devrez peut-être qualifier le contexte d’un nom de variable ou une expression qui utilise un nom de variable. Le contexte est la fonction, le fichier source ou le module où se trouve une variable. Si vous devez qualifier le contexte, utilisez la syntaxe de l' [opérateur de contexte (C++)](../debugger/context-operator-cpp.md) dans le **nom** dans la fenêtre **Espion** .
 >
->- Vous pouvez ajouter des noms de registre et des noms variables à l’aide ** $ \<du nom&nbsp;du registre>** ou ** @ \<enregistrer&nbsp;** le nom>à la fenêtre **Nom** dans la **montre.** Pour plus d’informations, consultez [Pseudovariables](../debugger/pseudovariables.md).
+>- Vous pouvez ajouter des noms de registres et des noms de variables à l’aide de **$\<register&nbsp;name>** ou **@\<register&nbsp;name>** au **nom** dans la fenêtre **Espion** . Pour plus d’informations, consultez [Pseudovariables](../debugger/pseudovariables.md).
 
-## <a name="use-expressions-in-a-watch-window"></a>Utiliser des expressions dans une fenêtre de montre
+## <a name="use-expressions-in-a-watch-window"></a>Utiliser des expressions dans un Fenêtre Espion
 
-Vous pouvez observer toute expression valide reconnue par le débbuggeur dans une fenêtre **de montre.**
+Vous pouvez observer toute expression valide reconnue par le débogueur dans une fenêtre **Espion** .
 
-Par exemple, pour le code de la section précédente, vous `(a + b + c) / 3` pouvez obtenir la moyenne des trois valeurs en entrant dans la fenêtre **Watch** :
+Par exemple, pour le code de la section précédente, vous pouvez obtenir la moyenne des trois valeurs en entrant `(a + b + c) / 3` dans la fenêtre **Espion** :
 
-![Regarder l’expression](../debugger/media/watchexpression.png "Regarder l’expression")
+![Expression Watch](../debugger/media/watchexpression.png "Expression Watch")
 
-Les règles d’évaluation des expressions dans la fenêtre **Watch** sont généralement les mêmes que les règles d’évaluation des expressions dans le langage du code. Si une expression a une erreur de syntaxe, attendez-vous à la même erreur de compilateur que dans l’éditeur de code. Par exemple, une faute de frappe dans l’expression précédente produit cette erreur dans la fenêtre **Watch** :
+Les règles d’évaluation des expressions dans la fenêtre **Espion** sont généralement les mêmes que celles relatives à l’évaluation des expressions dans le langage de code. Si une expression contient une erreur de syntaxe, attendez-vous à la même erreur de compilation que dans l’éditeur de code. Par exemple, une faute de frappe dans l’expression ci-dessus génère cette erreur dans la fenêtre **Espion** :
 
-![Regarder l’erreur d’expression](../debugger/media/watchexpressionerror.png "Regarder l’erreur d’expression")
+![Erreur d’expression espionne](../debugger/media/watchexpressionerror.png "Erreur d’expression espionne")
 
-Un cercle avec deux lignes ondulées icône peut apparaître dans la fenêtre **de la montre.** Cette icône signifie que le débbuggeur n’évalue pas l’expression en raison d’une dépendance potentielle de fil croisé. L’évaluation du code nécessite que d’autres threads de votre application s’exécutent temporairement, mais puisque vous êtes en mode pause, tous les threads de votre application sont généralement arrêtés. Permettre à d’autres threads de s’exécuter temporairement peut avoir des effets inattendus sur l’état de votre application, et le débbuggeur peut ignorer des événements tels que les points d’arrêt et les exceptions sur ces fils.
+Un cercle avec deux lignes ondulées peut apparaître dans la fenêtre **Espion** . Cette icône signifie que le débogueur n’évalue pas l’expression en raison d’une dépendance entre threads potentielle. L’évaluation du code nécessite l’exécution temporaire d’autres threads dans votre application, mais comme vous êtes en mode arrêt, tous les threads de votre application sont généralement arrêtés. Permettre à d’autres threads de s’exécuter temporairement peut avoir des effets inattendus sur l’état de votre application, et le débogueur peut ignorer des événements tels que des points d’arrêt et des exceptions sur ces threads.
 
 ::: moniker range=">= vs-2019" 
-## <a name="search-in-the-watch-window"></a>Rechercher dans la fenêtre Watch
+## <a name="search-in-the-watch-window"></a>Rechercher dans le Fenêtre Espion
 
-Vous pouvez rechercher des mots clés dans les colonnes nom, valeur et type de la fenêtre **Watch** à l’aide de la barre de recherche au-dessus de chaque fenêtre. Frappez ENTER ou sélectionnez l’une des flèches pour exécuter une recherche. Pour annuler une recherche en cours, sélectionnez l’icône "x" dans la barre de recherche.
+Vous pouvez rechercher des mots clés dans les colonnes nom, valeur et type de la fenêtre **Espion** à l’aide de la barre de recherche au-dessus de chaque fenêtre. Appuyez sur entrée ou sélectionnez l’une des flèches pour exécuter une recherche. Pour annuler une recherche en cours, sélectionnez l’icône « x » dans la barre de recherche.
 
-Utilisez les flèches gauche et droite (Shift-F3 et F3, respectivement) pour naviguer entre les allumettes trouvées.
+Utilisez les flèches gauche et droite (Maj + F3 et F3, respectivement) pour naviguer entre les correspondances trouvées.
 
-![Rechercher dans Watch Window](../debugger/media/ee-search-watch.png "Rechercher dans Watch Window")
+![Rechercher dans la fenêtre Espion](../debugger/media/ee-search-watch.png "Rechercher dans la fenêtre Espion")
 
-Pour rendre votre recherche plus ou moins approfondie, utilisez le dropdown **Search Deeper** en haut de la fenêtre **Watch** pour sélectionner le nombre de niveaux de profondeur que vous souhaitez rechercher dans des objets imbriqués. 
+Pour que votre recherche soit plus ou moins complète, utilisez la liste déroulante de **recherche plus approfondie** en haut de la fenêtre **Espion** pour sélectionner le nombre de niveaux que vous souhaitez rechercher dans les objets imbriqués. 
 
-## <a name="pin-properties-in-the-watch-window"></a>Propriétés d’épingle dans la fenêtre de montre
+## <a name="pin-properties-in-the-watch-window"></a>Épingler les propriétés dans le Fenêtre Espion
 
 >[!NOTE]
-> Cette fonctionnalité est prise en charge dans .NET Core 3.0 ou plus.
+> Cette fonctionnalité est prise en charge dans .NET Core 3,0 ou version ultérieure.
 
-Vous pouvez inspecter rapidement les objets par leurs propriétés dans la fenêtre Watch avec **l’outil Pinnable Properties.**  Pour utiliser cet outil, survolez une propriété et sélectionnez l’icône de broche qui apparaît ou en clic droit et sélectionnez le **membre Pin comme** option préférée dans le menu contextuelle résultant.  Cela bouillonne jusqu’à cette propriété en haut de la liste des propriétés de l’objet, et le nom et la valeur de la propriété est affiché dans la colonne **de** valeur.  Pour défoncé une propriété, sélectionnez à nouveau l’icône de la broche ou sélectionnez le **membre Unpin comme** option préférée dans le menu contextuelle.
+Vous pouvez inspecter rapidement des objets en fonction de leurs propriétés dans le Fenêtre Espion à l’aide de l’outil **Propriétés regroupement** .  Pour utiliser cet outil, pointez sur une propriété et sélectionnez l’icône d’épingle qui s’affiche ou cliquez avec le bouton droit et sélectionnez l’option **épingler le membre en tant que favori** dans le menu contextuel résultant.  Cela propage cette propriété vers le haut de la liste de propriétés de l’objet, et le nom et la valeur de la propriété s’affichent dans la colonne **valeur** .  Pour désépingler une propriété, sélectionnez à nouveau l’icône d’épingle ou sélectionnez l’option **détacher le membre en tant que favori** dans le menu contextuel.
 
-![Propriétés d’épingle dans la fenêtre de montre](../debugger/media/basic-pin-watch.gif "Propriétés d’épingle dans la fenêtre de montre")
+![Épingler les propriétés dans le Fenêtre Espion](../debugger/media/basic-pin-watch.gif "Épingler les propriétés dans le Fenêtre Espion")
 
-Vous pouvez également basculer les noms de propriété et filtrer les propriétés non épinglées lors de l’affichage de la liste des propriétés de l’objet dans la fenêtre De la montre.  Vous pouvez accéder aux deux options en sélectionnant les boutons dans la barre d’outils au-dessus de la fenêtre de la montre.
+Vous pouvez également activer/désactiver les noms de propriété et exclure les propriétés non épinglées lors de l’affichage de la liste de propriétés de l’objet dans la Fenêtre Espion.  Vous pouvez accéder aux deux options en sélectionnant les boutons de la barre d’outils au-dessus de la fenêtre Espion.
 
 ::: moniker-end
 
-### <a name="refresh-watch-values"></a><a name="bkmk_refreshWatch"></a>Rafraîchir les valeurs de la montre
+### <a name="refresh-watch-values"></a><a name="bkmk_refreshWatch"></a>Actualiser les valeurs de la surveillance
 
-Une icône de rafraîchissement (flèche circulaire) peut apparaître dans la fenêtre de la **montre** lorsqu’une expression est évaluée. L’icône de rafraîchissement indique une erreur ou une valeur périmée.
+Une icône d’actualisation (flèche circulaire) peut apparaître dans la fenêtre **Espion** lorsqu’une expression est évaluée. L’icône d’actualisation indique une erreur ou une valeur obsolète.
 
-Pour actualiser la valeur, sélectionnez l’icône de rafraîchissement ou appuyez sur la barre d’espace. Le débogueur essaie de réévaluer l'expression. Cependant, vous ne pouvez pas vouloir ou être en mesure de réévaluer l’expression, selon pourquoi la valeur n’a pas été évaluée.
+Pour actualiser la valeur, sélectionnez l’icône d’actualisation ou appuyez sur la barre d’espace. Le débogueur essaie de réévaluer l'expression. Toutefois, vous pouvez ne pas vouloir réévaluer l’expression, en fonction de la raison pour laquelle la valeur n’a pas été évaluée.
 
-Planer au-dessus de l’icône de rafraîchissement ou voir la colonne **de valeur** pour la raison que l’expression n’a pas été évaluée. En voici plusieurs raisons :
+Pointez sur l’icône d’actualisation ou consultez la colonne **valeur** pour la raison pour laquelle l’expression n’a pas été évaluée. En voici plusieurs raisons :
 
-- Une erreur s’est produite au fur et à mesure que l’expression était évaluée, comme dans l’exemple précédent. Un délai d’attente peut se produire, ou une variable peut être hors de portée.
+- Une erreur s’est produite lors de l’évaluation de l’expression, comme dans l’exemple précédent. Un délai d’expiration peut se produire ou une variable peut être hors de portée.
 
-- L’expression a un appel de fonction qui pourrait déclencher un effet secondaire dans l’application. Voir [Effets secondaires Expression](#bkmk_sideEffects).
+- L’expression contient un appel de fonction qui peut déclencher un effet secondaire dans l’application. Consultez [effets secondaires](#bkmk_sideEffects)de l’expression.
 
-- L’évaluation automatique des propriétés et des appels de fonction implicites est désactivée.
+- L’évaluation automatique des propriétés et des appels de fonction implicite est désactivée.
 
-Si l’icône de rafraîchissement apparaît parce que l’évaluation automatique des propriétés et des appels de fonction implicite est désactivée, vous pouvez l’activer en sélectionnant **l’évaluation de propriété d’activation et d’autres appels implicites** de fonction dans les options > **d’outils** > **Debugging** > **général.** **Tools**
+Si l’icône d’actualisation apparaît parce que l’évaluation automatique des propriétés et les appels de fonction implicite est désactivée, vous pouvez l’activer en sélectionnant activer l’évaluation de la **propriété et d’autres appels de fonction implicite** dans **Outils**  >  **options**  >  **débogage**  >  **général**.
 
-Pour démontrer à l’aide de l’icône de rafraîchissement :
+Pour illustrer l’utilisation de l’icône d’actualisation :
 
-1. Dans **Tools** > **Options** > **Debugging** > **General**, effacer l’évaluation de propriété Enable et **d’autres appels de fonction implicites coche.**
+1. Dans **Outils**  >  **options**  >  **débogage**  >  **général**, désactivez la case à cocher **activer l’évaluation de la propriété et d’autres appels de fonction implicite** .
 
-1. Entrez le code suivant, et dans la `list.Count` fenêtre de la **montre,** définissez une montre sur la propriété.
+1. Entrez le code suivant et, dans la fenêtre **Espion** , définissez un espion sur la `list.Count` propriété.
 
    ```csharp
    static void Main(string[] args)
@@ -147,36 +147,36 @@ Pour démontrer à l’aide de l’icône de rafraîchissement :
    }
    ```
 
-1. Démarrez le débogage. La fenêtre **Watch** montre quelque chose comme le message suivant:
+1. Démarrez le débogage. La fenêtre **Espion** affiche un message semblable au suivant :
 
-   ![Montre De rafraîchissement](../debugger/media/refreshwatch.png "Montre De rafraîchissement")
+   ![Actualiser l’espion](../debugger/media/refreshwatch.png "Actualiser l’espion")
 
-1. Pour actualiser la valeur, sélectionnez l’icône de rafraîchissement ou appuyez sur la barre d’espace. Le débbuggeur réévalue l’expression.
+1. Pour actualiser la valeur, sélectionnez l’icône d’actualisation ou appuyez sur la barre d’espace. Le débogueur réévalue l’expression.
 
-### <a name="expression-side-effects"></a><a name="bkmk_sideEffects"></a>Effets secondaires d’expression
+### <a name="expression-side-effects"></a><a name="bkmk_sideEffects"></a>Effets secondaires de l’expression
 
-L’évaluation de certaines expressions peut modifier la valeur d’une variable, ou autrement affecter l’état de votre application. Par exemple, l’évaluation de l’expression suivante modifie la valeur de `var1`:
+L’évaluation de certaines expressions peut modifier la valeur d’une variable ou affecter l’état de votre application. Par exemple, l’évaluation de l’expression suivante modifie la valeur de `var1`:
 
 ```csharp
 var1 = var2
 ```
 
-Ce code peut provoquer un [effet secondaire](https://en.wikipedia.org/wiki/Side_effect_\(computer_science\)). Les effets secondaires peuvent rendre le débogage plus difficile en modifiant le fonctionnement de votre application.
+Ce code peut provoquer un [effet secondaire](https://en.wikipedia.org/wiki/Side_effect_\(computer_science\)). Les effets secondaires peuvent compliquer le débogage en modifiant le mode de fonctionnement de votre application.
 
-Une expression avec des effets secondaires n’est évaluée qu’une seule fois, lorsque vous y entrez pour la première fois. Après cela, l’expression semble grisée dans la fenêtre de la **montre,** et d’autres évaluations sont désactivées. La colonne de pointe ou **de valeur** explique que l’expression provoque un effet secondaire. Vous pouvez forcer la réévaluation en sélectionnant l’icône de rafraîchissement qui apparaît à côté de la valeur.
+Une expression avec des effets secondaires n’est évaluée qu’une seule fois, lorsque vous l’entrez pour la première fois. Après cela, l’expression apparaît grisée dans la fenêtre **Espion** et les évaluations suivantes sont désactivées. La colonne info-bulle ou **valeur** explique que l’expression provoque un effet secondaire. Vous pouvez forcer la réévaluation en sélectionnant l’icône d’actualisation qui apparaît en regard de la valeur.
 
-Une façon d’empêcher la désignation d’effets secondaires est d’éteindre l’évaluation automatique de la fonction. Dans **Tools** > **Options** > **Debugging** > **General**, désélection Enable évaluation de la propriété et autres appels de fonction **implicite**.
+Une façon d’empêcher la désignation des effets secondaires est de désactiver l’évaluation automatique des fonctions. Dans **Outils**  >  **options**  >  **débogage**  >  **général**, désélectionnez **activer l’évaluation de la propriété et d’autres appels de fonction implicite**.
 
-Pour C seulement, lorsque l’évaluation des propriétés ou des appels de fonction implicite est désactivé, vous pouvez forcer l’évaluation en ajoutant le modificateur de format **ac** à un **nom** variable dans la fenêtre **de montre.** Voir [les spécificateurs de format en C .](../debugger/format-specifiers-in-csharp.md)
+Pour C# uniquement, lorsque l’évaluation des propriétés ou des appels de fonction implicite est désactivée, vous pouvez forcer l’évaluation en ajoutant le modificateur de format **AC** à un **nom** de variable dans la fenêtre **Espion** . Consultez [spécificateurs de format en C#](../debugger/format-specifiers-in-csharp.md).
 
-## <a name="use-object-ids-in-the-watch-window-c-and-visual-basic"></a><a name="bkmk_objectIds"></a>Utilisez des DIU d’objets dans la fenêtre Watch (C et Visual Basic)
+## <a name="use-object-ids-in-the-watch-window-c-and-visual-basic"></a><a name="bkmk_objectIds"></a>Utiliser les ID d’objet dans le Fenêtre Espion (C# et Visual Basic)
 
-Parfois, vous voulez observer le comportement d’un objet spécifique. Par exemple, vous pouvez suivre un objet mentionné par une variable locale après que cette variable a disparu de portée. Dans le C et Visual Basic, vous pouvez créer des cartes d’identité d’objet pour des cas spécifiques de types de référence, et les utiliser dans la fenêtre **Watch** et dans des conditions de point de rupture. L’ID d’objet est généré par les services de débogage du Common Language Runtime (CLR) et associé à l’objet.
+Vous pouvez parfois observer le comportement d’un objet spécifique. Par exemple, vous pouvez souhaiter effectuer le suivi d’un objet référencé par une variable locale une fois que cette variable est hors de portée. En C# et Visual Basic, vous pouvez créer des ID d’objet pour des instances spécifiques de types référence et les utiliser dans la fenêtre **Espion** et dans les conditions de point d’arrêt. L’ID d’objet est généré par les services de débogage du Common Language Runtime (CLR) et associé à l’objet.
 
 > [!NOTE]
-> Les pièces d’ID d’objet créent des références faibles qui n’empêchent pas l’objet d’être ramassé. Leur validité ne vaut que pour la session de débogage active.
+> Les ID d’objet créent des références faibles qui n’empêchent pas l’objet d’être récupéré par le garbage collector. Leur validité ne vaut que pour la session de débogage active.
 
-Dans le code `MakePerson()` suivant, `Person` la méthode crée une variable locale :
+Dans le code suivant, la `MakePerson()` méthode crée un `Person` à l’aide d’une variable locale :
 
 ```csharp
 class Person
@@ -211,59 +211,59 @@ public class Program
 }
 ```
 
-Pour connaître le nom `Person` de `DoSomething()` la méthode, vous pouvez `Person` ajouter une référence à l’IDENTIFIANT d’objet dans la fenêtre **Watch.**
+Pour déterminer le nom du `Person` dans la `DoSomething()` méthode, vous pouvez ajouter une référence à l’ID d' `Person` objet dans la fenêtre **Espion** .
 
-1. Définissez un point d’arrêt dans le code après la création de l’objet. `Person`
+1. Définissez un point d’arrêt dans le code après la création de l' `Person` objet.
 
 1. Démarrez le débogage.
 
-1. Lorsque l’exécution s’arrête au point d’arrêt, ouvrez la fenêtre **des sections locales** en choisissant **Debug** > **Windows** > **Locals**.
+1. Lorsque l’exécution s’interrompt au point d’arrêt, ouvrez la fenêtre **variables locales** en choisissant **Déboguer**les  >  **Windows**  >  **paramètres régionaux**Windows.
 
-1. Dans la fenêtre **Locals,** `Person` cliquez à droite sur la variable et sélectionnez **Make Object ID**.
+1. Dans la fenêtre **variables locales** , cliquez avec le bouton droit sur la `Person` variable et sélectionnez **créer un ID d’objet**.
 
-   Vous devriez voir un**$** signe d’un dollar ( ) plus un numéro dans la fenêtre **local,** qui est l’id d’objet.
+   Vous devez voir un signe dollar ( **$** ) plus un nombre dans la fenêtre **variables locales** , qui est l’ID d’objet.
 
-1. Ajoutez l’ID d’objet à la fenêtre **De la montre** en cliquant à droite sur l’identifiant d’objet et en sélectionnant Add **Watch**.
+1. Ajoutez l’ID d’objet dans la fenêtre **Espion** en cliquant avec le bouton droit sur l’ID d’objet et en sélectionnant **Ajouter un espion**.
 
-1. Définissez un autre `DoSomething()` point d’arrêt dans la méthode.
+1. Définissez un autre point d’arrêt dans la `DoSomething()` méthode.
 
-1. Poursuivez le débogage. Lorsque l’exécution `DoSomething()` s’arrête dans la `Person` méthode, la fenêtre **Watch** affiche l’objet.
+1. Poursuivez le débogage. Lorsque l’exécution est suspendue dans la `DoSomething()` méthode, la fenêtre **Espion** affiche l' `Person` objet.
 
    > [!NOTE]
-   > Si vous voulez voir les propriétés `Person.Name`de l’objet, telles que , vous devez activer l’évaluation de la propriété en sélectionnant des options > **d’outils** > **Debugging** > **General** > **Enable évaluation de la propriété et d’autres appels de fonction implicite**. **Tools**
+   > Si vous souhaitez afficher les propriétés de l’objet, par exemple `Person.Name` , vous devez activer l’évaluation de la propriété en sélectionnant **Outils**  >  **options**  >  **débogage**  >  **général**  >  **activer l’évaluation de la propriété et d’autres appels de fonction implicite**.
 
-## <a name="dynamic-view-and-the-watch-window"></a>Vue dynamique et la fenêtre de montre
+## <a name="dynamic-view-and-the-watch-window"></a>Affichage dynamique et Fenêtre Espion
 
-Certaines langues de script (par exemple, JavaScript ou Python) utilisent la saisie dynamique ou [de canard,](https://en.wikipedia.org/wiki/Duck_typing) et la version .NET 4.0 et prend en charge plus tard les objets qui sont difficiles à observer dans les fenêtres de débogage normales.
+Certains langages de script (par exemple, JavaScript ou python) utilisent le typage dynamique ou [canard](https://en.wikipedia.org/wiki/Duck_typing) , et .net version 4,0 et versions ultérieures prennent en charge les objets difficiles à observer dans les fenêtres de débogage normales.
 
-La fenêtre **Watch** affiche ces objets comme des objets <xref:System.Dynamic.IDynamicMetaObjectProvider> dynamiques, qui sont créés à partir de types qui implémentent l’interface. Les nœuds d’objets dynamiques montrent les membres dynamiques des objets dynamiques, mais n’autorisent pas l’édition des valeurs du membre.
+La fenêtre **Espion** affiche ces objets en tant qu’objets dynamiques, qui sont créés à partir des types qui implémentent l' <xref:System.Dynamic.IDynamicMetaObjectProvider> interface. Les nœuds d’objets dynamiques affichent les membres dynamiques des objets dynamiques, mais n’autorisent pas la modification des valeurs de membre.
 
-Pour actualiser les valeurs **Dynamic View,** sélectionnez l’icône [de rafraîchissement](#bkmk_refreshWatch) à côté du nœud d’objet dynamique.
+Pour actualiser les valeurs de l' **affichage dynamique** , sélectionnez l' [icône Actualiser](#bkmk_refreshWatch) en regard du nœud objet dynamique.
 
-Pour afficher uniquement la **vue dynamique** pour un objet, ajoutez un spécificateur de format **dynamique** d’après le nom dynamique de l’objet dans la fenêtre **Watch** :
+Pour afficher uniquement l' **affichage dynamique** pour un objet, ajoutez un spécificateur de format **dynamique** après le nom de l’objet dynamique dans la fenêtre **Espion** :
 
 - Pour C# : `ObjectName, dynamic`
 - Pour Visual Basic : `$dynamic, ObjectName`
 
 >[!NOTE]
->- Le débingière C N’est pas automatiquement réévaluer les valeurs de la **vision dynamique** lorsque vous entrez dans la ligne de code suivante.
->- Le débbuggeur Visual Basic actualise automatiquement les expressions ajoutées par la **vue dynamique**.
->- L’évaluation des membres d’une **vue dynamique** peut avoir des [effets secondaires](https://en.wikipedia.org/wiki/Side_effect_\(computer_science\)).
+>- Le débogueur C# ne réévalue pas automatiquement les valeurs de l' **affichage dynamique** lorsque vous parcourez la ligne de code suivante.
+>- Le débogueur Visual Basic actualise automatiquement les expressions ajoutées par le biais de l' **affichage dynamique**.
+>- L’évaluation des membres d’un **affichage dynamique** peut avoir des [effets secondaires](https://en.wikipedia.org/wiki/Side_effect_\(computer_science\)).
 
-**Pour insérer une nouvelle variable de montre qui jette un objet vers un objet dynamique :**
+**Pour insérer une nouvelle variable Watch qui effectue un cast d’un objet en objet dynamique :**
 
-1. Cliquez à droite sur n’importe quel enfant d’une **vue dynamique**.
-1. Choisissez **Add Watch**. Le `object.name` `((dynamic) object).name` devient et apparaît dans une nouvelle fenêtre **de montre.**
+1. Cliquez avec le bouton droit sur l’un des enfants d’un **affichage dynamique**.
+1. Choisissez **Ajouter un espion**. Le `object.name` devient `((dynamic) object).name` et s’affiche dans une nouvelle fenêtre **Espion** .
 
-Le débogénaire ajoute également un nœud d’enfant **Dynamic View** de l’objet à la fenêtre **Autos.** Pour ouvrir la fenêtre **Autos,** lors du débogage, sélectionnez **Debug** > **Windows** > **Autos**.
+Le débogueur ajoute également un nœud enfant de **vue dynamique** de l’objet à la fenêtre **automatique** . Pour ouvrir la fenêtre **automatique** , pendant le débogage, sélectionnez **Déboguer**  >  **Windows**  >  **automatique**.
 
-**Dynamic View** améliore également le débogage pour les objets COM. Lorsque le débbuggeur arrive à un objet COM enveloppé dans **System.__ComObject**, il ajoute un nœud **Vision dynamique** pour l’objet.
+L' **affichage dynamique** améliore également le débogage pour les objets com. Quand le débogueur obtient un objet COM encapsulé dans **System. __ComObject**, il ajoute un nœud **affichage dynamique** pour l’objet.
 
-## <a name="observe-a-single-variable-or-expression-with-quickwatch"></a>Observez une seule variable ou expression avec QuickWatch
+## <a name="observe-a-single-variable-or-expression-with-quickwatch"></a>Observer une variable ou une expression unique avec espion Express
 
-Vous pouvez utiliser **QuickWatch** pour observer une seule variable.
+Vous pouvez utiliser la fenêtre **Espion express** pour observer une variable unique.
 
-Par exemple, pour le code suivant :
+Par exemple, pour le code suivant :
 
 ```csharp
 static void Main(string[] args)
@@ -278,32 +278,32 @@ static void Main(string[] args)
 }
 ```
 
-Pour observer `a` la variable,
+Pour observer la `a` variable,
 
 1. Définissez un point d’arrêt sur la ligne `a = a + b;` .
 
-1. Démarrez le débogage. L’exécution s’arrête au point d’arrêt.
+1. Démarrez le débogage. L’exécution s’interrompt au point d’arrêt.
 
-1. Sélectionnez `a` la variable dans le code.
+1. Sélectionnez la variable `a` dans le code.
 
-1. Sélectionnez **Debug** > **QuickWatch**, appuyez sur **Shift**+**F9**, ou cliquez à droite et sélectionnez **QuickWatch**.
+1. Sélectionnez **Déboguer**  >  **Espion express**, appuyez sur **MAJ** + **F9**, ou cliquez avec le bouton droit et sélectionnez **Espion express**.
 
-   Le dialogue **QuickWatch** apparaît. La `a` variable est dans la boîte **d’expression** avec une **valeur** de **1**.
+   La boîte de dialogue **Espion express** s’affiche. La `a` variable se trouve dans la zone **expression** avec **Value** la valeur **1**.
 
-   ![Variable QuickWatch](../debugger/media/quickwatchvariable.png "Variable QuickWatch")
+   ![Variable espion Express](../debugger/media/quickwatchvariable.png "Variable espion Express")
 
-1. Pour évaluer une expression à l’aide `a + b` de la variable, tapez une expression comme dans la boîte **Expression,** et **sélectionnez Reevaluate**.
+1. Pour évaluer une expression à l’aide de la variable, tapez une expression telle que `a + b` dans la zone **expression** , puis sélectionnez **réévaluer**.
 
-   ![Expression QuickWatch](../debugger/media/quickwatchexpression.png "Expression QuickWatch")
+   ![Expression espion Express](../debugger/media/quickwatchexpression.png "Expression espion Express")
 
-1. Pour ajouter la variable ou l’expression de **QuickWatch** à la fenêtre **Watch,** sélectionnez **Add Watch**.
+1. Pour ajouter la variable ou l’expression d' **Espion express** à la fenêtre **Espion** , sélectionnez **Ajouter un espion**.
 
-1. Sélectionnez **Près** pour fermer la fenêtre **QuickWatch.** (**QuickWatch** est un dialogue modal, de sorte que vous ne pouvez pas continuer à débogage tant qu’il est ouvert.)
+1. Sélectionnez **Fermer** pour fermer la fenêtre **Espion express** . (**Espion express** étant une boîte de dialogue modale, vous ne pouvez pas continuer le débogage tant qu’il est ouvert.)
 
-1. Poursuivez le débogage. Vous pouvez observer la variable dans la fenêtre **Watch.**
+1. Poursuivez le débogage. Vous pouvez observer la variable dans la fenêtre **Espion** .
 
 ## <a name="see-also"></a>Voir aussi
 - [Qu’est-ce que le débogage ?](../debugger/what-is-debugging.md)
 - [Techniques et outils de débogage](../debugger/write-better-code-with-visual-studio.md)
-- [Premier regard sur le débogage](../debugger/debugger-feature-tour.md)
-- [Fenêtres Debugger](../debugger/debugger-windows.md)
+- [Premier aperçu du débogage](../debugger/debugger-feature-tour.md)
+- [Fenêtres du débogueur](../debugger/debugger-windows.md)

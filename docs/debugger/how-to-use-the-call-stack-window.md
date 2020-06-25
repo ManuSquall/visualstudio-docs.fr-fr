@@ -2,7 +2,7 @@
 title: Afficher la pile des appels dans le débogueur | Microsoft Docs
 ms.custom: seodec18
 ms.date: 10/29/2018
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - vs.debug.callstack
 dev_langs:
@@ -29,12 +29,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 21573f1f8bd49782739027f7dfc2034bb7501a2f
-ms.sourcegitcommit: 08c144d290da373df841f04fc799e3133540a541
+ms.openlocfilehash: aa91807459ea5c2d8f576891d0eafc35336347bc
+ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72535981"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85348741"
 ---
 # <a name="view-the-call-stack-and-use-the-call-stack-window-in-the-debugger"></a>Afficher la pile des appels et utiliser la fenêtre pile des appels dans le débogueur
 
@@ -54,7 +54,7 @@ Lorsque les [symboles de débogage](#bkmk_symbols) ne sont pas disponibles pour 
 
 - Pendant le débogage, dans le menu **Déboguer** , sélectionnez **Windows > pile des appels**.
 
-  ![Fenêtre pile des appels](../debugger/media/dbg_basics_callstack_window.png "CallStackWindow")
+  ![Fenêtre Pile des appels](../debugger/media/dbg_basics_callstack_window.png "CallStackWindow")
 
 Une flèche jaune identifie le frame de pile où le pointeur d'exécution se trouve actuellement. Par défaut, les informations de ce frame de pile s’affichent dans les fenêtres source, **variables locales**, **automatique**, **Espion**et code **machine** . Pour modifier le contexte du débogueur en un autre Frame sur la pile, [basculez vers un autre frame de pile](#bkmk_switch).
 
@@ -66,7 +66,7 @@ Le code non-utilisateur est un code qui n’est pas affiché lorsque [uniquement
 
 `[<External Code>]`
 
-## <a name="bkmk_switch"></a>Basculer vers un autre frame de pile (modifier le contexte du débogueur)
+## <a name="switch-to-another-stack-frame-change-the-debugger-context"></a><a name="bkmk_switch"></a>Basculer vers un autre frame de pile (modifier le contexte du débogueur)
 
 1. Dans la fenêtre **pile des appels** , cliquez avec le bouton droit sur le frame de pile dont vous souhaitez afficher le code et les données.
 
@@ -96,25 +96,25 @@ Le code non-utilisateur est un code qui n’est pas affiché lorsque [uniquement
 
 Dans Visual Studio Enterprise (uniquement), vous pouvez afficher les cartes de code pour la pile des appels pendant le débogage.
 
-- Dans la fenêtre **Pile des appels**, ouvrez le menu contextuel. Choisissez **afficher la pile des appels sur la carte du code** (**Ctrl**  + **MAJ**  +  **`** ).
+- Dans la fenêtre **Pile des appels**, ouvrez le menu contextuel. Choisissez **afficher la pile des appels sur la carte du code** (**CTRL**  +  **MAJ**  +  **`** ).
 
     Pour plus d’informations, consultez [mapper des méthodes sur la pile des appels pendant le débogage](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md).
 
 ![Afficher la pile d’appels sur la carte du code](../debugger/media/dbg_basics_show_call_stack_on_code_map.gif "ShowCallStackOnCodeMap")
 
-## <a name="view-the-disassembly-code-for-a-function-on-the-call-stack-c-c-visual-basic-f"></a>Afficher le code machine d’une fonction dans la pile des appels (C#, C++, Visual Basic, F#)
+## <a name="view-the-disassembly-code-for-a-function-on-the-call-stack-c-c-visual-basic-f"></a>Afficher le code machine d’une fonction dans la pile des appels (C#, C++, Visual Basic, F #)
 
 - Dans la fenêtre **Pile des appels**, cliquez avec le bouton droit sur la fonction dont vous voulez afficher le code machine, puis sélectionnez **Atteindre le code machine**.
 
 ## <a name="change-the-optional-information-displayed"></a>Modifier les informations facultatives affichées
 
-- Cliquez avec le bouton droit dans la fenêtre **pile des appels** et définissez ou désélectionnez **Afficher \<** _les informations que vous souhaitez_  **>** .
+- Cliquez avec le bouton droit dans la fenêtre **pile des appels** et définissez ou désélectionnez **afficher \<**_the information that you want_**> **.
 
-## <a name="bkmk_symbols"></a>Charger les symboles pour un moduleC#( C++,, Visual Basic F#,)
+## <a name="load-symbols-for-a-module-c-c-visual-basic-f"></a><a name="bkmk_symbols"></a>Charger des symboles pour un module (C#, C++, Visual Basic, F #)
 
 Dans la fenêtre **Pile des appels**, vous pouvez charger des symboles de débogage pour du code qui ne possède actuellement aucun symbole chargé. Ces symboles peuvent être des symboles .NET ou système téléchargés à partir des serveurs de symboles publics Microsoft, ou des symboles dans un chemin d’accès aux symboles sur l’ordinateur que vous déboguez.
 
-Consultez [Spécifier les fichiers de symbole (.pdb) et les fichiers sources](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md).
+Consultez [spécifier les fichiers de symboles (. pdb) et les fichiers sources](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md).
 
 ### <a name="to-load-symbols"></a>Pour charger des symboles
 
@@ -132,7 +132,7 @@ Consultez [Spécifier les fichiers de symbole (.pdb) et les fichiers sources](..
 
 3. Dans la boîte de dialogue **Options**, cliquez sur l’icône de dossier.
 
-     Un curseur apparaît dans la zone **Emplacements du fichier de symboles (.pdb)** .
+     Un curseur apparaît dans la zone **Emplacements du fichier de symboles (.pdb)**.
 
 4. Entrez un chemin d’accès au répertoire de l’emplacement des symboles sur l’ordinateur que vous déboguez. Pour le débogage local et distant, il s’agit d’un chemin d’accès sur votre ordinateur local.
 
@@ -140,7 +140,7 @@ Consultez [Spécifier les fichiers de symbole (.pdb) et les fichiers sources](..
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Code mixte et informations manquantes dans la fenêtre Pile des appels](../debugger/mixed-code-and-missing-information-in-the-call-stack-window.md)
+- [Code mixte et informations manquantes dans la fenêtre pile des appels](../debugger/mixed-code-and-missing-information-in-the-call-stack-window.md)
 - [Affichage des données dans le débogueur](../debugger/viewing-data-in-the-debugger.md)
-- [Spécifier les fichiers de symbole (.pdb) et les fichiers sources](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)
+- [Spécifier les fichiers de symboles (. pdb) et les fichiers sources](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)
 - [Utilisation des points d’arrêt](../debugger/using-breakpoints.md)

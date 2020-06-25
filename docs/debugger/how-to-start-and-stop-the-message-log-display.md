@@ -1,7 +1,7 @@
 ---
-title: 'Procédure : Démarrer et arrêter l’affichage du journal des messages | Microsoft Docs'
+title: Guide pratique pour démarrer et arrêter l’affichage du journal des messages | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - message log display, starting
 - logging, starting message log display
@@ -12,20 +12,20 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9f1fd5a7b7951056f65604bdea67eddcc3e696da
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 7165e9a9d3a4d935e01870b6049307b5a85bdce8
+ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64825012"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85349040"
 ---
-# <a name="how-to-start-and-stop-the-message-log-display"></a>Procédure : Démarrer et arrêter l’affichage du journal des messages
-Quand un [vue Messages](../debugger/messages-view.md) fenêtre est active, un **Start Logging** ou **Stop Logging** choix s’affiche sur Spy ++ **Messages** menu et le correspondant **Start Logging** ou **Stop Logging** bouton de barre d’outils devienne actif.
+# <a name="how-to-start-and-stop-the-message-log-display"></a>Comment : démarrer et arrêter l'affichage du journal des messages
+Quand une fenêtre d' [affichage des messages](../debugger/messages-view.md) est active, un choix **Démarrer** l’enregistrement ou **arrêter l’enregistrement** s’affiche dans le menu **messages** Spy + + et le bouton **Démarrer la journalisation** ou **arrêter** l’enregistrement dans la barre d’outils est activé.
 
 ### <a name="to-start-the-message-log-display"></a>Pour démarrer l’affichage du journal des messages
 
-1. À partir de la **Messages** menu, choisissez **Start Logging**.
+1. Dans le menu **messages** , choisissez **Démarrer la journalisation**.
 
 ### <a name="to-stop-the-message-log-display"></a>Pour arrêter l’affichage du journal des messages
 
-1. À partir de la **Messages** menu, choisissez **Stop Logging**.
+1. Dans le menu **messages** , choisissez **arrêter l’enregistrement**.

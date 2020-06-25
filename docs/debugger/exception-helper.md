@@ -1,7 +1,7 @@
 ---
 title: Inspecter une exception-Visual Studio | Microsoft Docs
 ms.date: 1/18/2020
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - CSharp
 - VB
@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2dae1609486ec4f3462be89b0526467dd7414647
-ms.sourcegitcommit: 8cbced0fb46959a3a2494852df1e41db1177a26c
+ms.openlocfilehash: 75d044ed5ddaf4b7eb7a66bc09c8b3de3502a50f
+ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "76829788"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85350496"
 ---
 # <a name="inspect-an-exception-using-the-exception-helper"></a>Inspecter une exception à l’aide de l’assistance d’exception 
 
@@ -38,7 +38,7 @@ Quand le débogueur s’arrête sur une exception, une icône d’erreur d’exc
 Vous pouvez lire instantanément le type d’exception et le message d’exception dans le programme d’assistance de l’exception, et si l’exception a été levée ou non. Vous pouvez inspecter et afficher les propriétés de l’objet exception en cliquant sur le lien **afficher les détails** .
 
 ## <a name="analyze-null-references"></a>Analyser les références null
-À compter de Visual Studio 2017, pour .net et C/C++ code, lorsque vous atteignez une `NullReferenceException` ou un `AccessViolation`, des informations d’analyse null s’affichent dans le programme d’assistance de l’exception. L’analyse s’affiche sous forme de texte sous le message d’exception. Dans l’illustration ci-dessous, les informations s’affichent sous la forme «**s** a la valeur null ».
+À compter de Visual Studio 2017, pour le code .net et C/C++, quand vous appuyez `NullReferenceException` sur un ou un `AccessViolation` , vous voyez des informations d’analyse null dans le programme d’assistance de l’exception. L’analyse s’affiche sous forme de texte sous le message d’exception. Dans l’illustration ci-dessous, les informations s’affichent sous la forme «**s** a la valeur null ».
 
 ![Analyse null de l’assistance d’exception](media/debugger-exception-helper-default.png)
 
@@ -55,9 +55,9 @@ Si l’exception contient des exceptions internes ([innerException](https://docs
 ![Assistance d’exception avec l’exception interne](media/debugger-exception-helper-innerexception.png)
 
 ## <a name="inspect-rethrown-exceptions"></a>Inspecter les exceptions levées à nouveau
-Dans les cas où une exception a été `thrown` l’assistance d’exception affiche la pile des appels à partir de la première fois que l’exception a été levée. Si l’exception a été levée plusieurs fois, seule la pile des appels de l’exception d’origine est affichée.
+Dans les cas où une exception s’est produite, `thrown` l’assistance d’exception affiche la pile des appels de la première fois que l’exception a été levée. Si l’exception a été levée plusieurs fois, seule la pile des appels de l’exception d’origine est affichée.
 
 ![Exception Helper avec exceptions levées à nouveau](media/debugger-exception-helper-innerexception.png)
 
 ## <a name="share-a-debug-session-with-live-share"></a>Partager une session de débogage avec Live Share
-À partir de l’assistance d’exception, vous pouvez démarrer une session de [Live share](https://docs.microsoft.com/visualstudio/liveshare/) en utilisant le lien **démarrer la session Live share...** . Toute personne qui rejoint la session de Live Share peut voir l’assistance de l’exception, ainsi que toutes les autres informations de débogage.
+À partir de l’assistance d’exception, vous pouvez démarrer une session de [Live share](https://docs.microsoft.com/visualstudio/liveshare/) en utilisant le lien **démarrer la session Live share...**. Toute personne qui rejoint la session de Live Share peut voir l’assistance de l’exception, ainsi que toutes les autres informations de débogage.

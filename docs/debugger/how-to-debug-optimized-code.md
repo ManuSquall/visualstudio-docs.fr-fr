@@ -1,7 +1,7 @@
 ---
-title: 'Comment : déboguer le code optimisé | Microsoft Docs'
+title: Guide pratique pour déboguer du code optimisé | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - vs.debug
 dev_langs:
@@ -21,17 +21,17 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 590925a894f1bf9bfe70d9dd1bf6142fcb6a2e34
-ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
+ms.openlocfilehash: e3c08ce9605560173d6f29817372dee4af8d622e
+ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72430667"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85349976"
 ---
 # <a name="how-to-debug-optimized-code"></a>Comment : déboguer le code optimisé
 
 > [!NOTE]
-> Les boîtes de dialogue et les commandes de menu qui s'affichent peuvent être différentes de celles qui sont décrites dans l'aide, en fonction de vos paramètres actifs ou de l'édition utilisée. Pour modifier vos paramètres, choisissez Importation et exportation de paramètres dans le menu Outils. Pour plus d’informations, consultez [Réinitialiser les paramètres](../ide/environment-settings.md#reset-settings).
+> Les boîtes de dialogue et les commandes de menu affichées peuvent différer de celles décrites dans l'Aide selon les paramètres actifs ou le mode d'édition. Pour modifier vos paramètres, choisissez Importation et exportation de paramètres dans le menu Outils. Pour plus d’informations, consultez [Réinitialiser les paramètres](../ide/environment-settings.md#reset-settings).
 
 > [!NOTE]
 > L’option de compilateur [/Zo (Améliorer le débogage optimisé)](/cpp/build/reference/zo-enhance-optimized-debugging) (introduite dans Visual Studio Update 3) génère des informations de débogage plus détaillées pour le code optimisé (projets qui ne sont pas générés avec l’option de compilateur **/Od**. Consultez [Options /O (Optimiser le code)](/cpp/build/reference/o-options-optimize-code)). Cela inclut la prise en charge améliorée pour le débogage des variables locales et des fonctions inline.
@@ -52,7 +52,7 @@ ms.locfileid: "72430667"
 
   Les variables globales et statiques s'affichent toujours correctement. C'est également le cas pour les dispositions de structures. Si un pointeur désigne une structure et que la valeur de ce pointeur est correcte, chaque variable membre de la structure affichera la valeur correcte.
 
-  En raison de ces limitations, vous devez effectuer le débogage en utilisant si possible une version non optimisée de votre programme. Par défaut, l’optimisation est désactivée dans la configuration Debug C++ d’un programme et activée dans la configuration Release.
+  En raison de ces limitations, vous devez effectuer le débogage en utilisant si possible une version non optimisée de votre programme. Par défaut, l’optimisation est désactivée dans la configuration Debug d’un programme C++ et activée dans la configuration Release.
 
   Mais un bogue peut apparaître uniquement dans une version optimisée d'un programme. Dans ce cas, vous devez déboguer le code optimisé.
 
@@ -66,15 +66,15 @@ ms.locfileid: "72430667"
 
 4. Dans la boîte de dialogue **Pages de propriétés**, vérifiez que `Debug` est sélectionné dans la liste déroulante **Configuration**.
 
-5. Dans la vue Dossiers sur le côté gauche, sélectionnez le dossier **C/C++** .
+5. Dans la vue Dossiers sur le côté gauche, sélectionnez le dossier **C/C++**.
 
-6. Sous le dossier **C++** , sélectionnez `Optimization`.
+6. Sous le dossier **C++**, sélectionnez `Optimization`.
 
-7. Dans la liste des propriétés affichée à droite, recherchez `Optimization`. Le paramètre en regard de la propriété indique probablement `Disabled (`[/Od](/cpp/build/reference/od-disable-debug)`)`. Sélectionnez une des autres options (`Minimum Size``(`[/O1](/cpp/build/reference/o1-o2-minimize-size-maximize-speed)`)`, `Maximum Speed``(`[/O2](/cpp/build/reference/o1-o2-minimize-size-maximize-speed)`)`, `Full Optimization``(`[/Ox](/cpp/build/reference/ox-full-optimization)`)` ou `Custom`).
+7. Dans la liste des propriétés affichée à droite, recherchez `Optimization`. Le paramètre en regard de ce paramètre indique probablement `Disabled (` [/OD](/cpp/build/reference/od-disable-debug) `)` . Choisissez l’une des autres options ( `Minimum Size``(` [/O1](/cpp/build/reference/o1-o2-minimize-size-maximize-speed) `)` , `Maximum Speed``(` [/O2](/cpp/build/reference/o1-o2-minimize-size-maximize-speed) `)` , `Full Optimization``(` [/Ox](/cpp/build/reference/ox-full-optimization) `)` ou `Custom` ).
 
 8. Si vous avez choisi l'option `Custom` pour `Optimization`, vous pouvez maintenant définir des options pour l'une des autres propriétés affichées dans la liste des propriétés.
 
-9. Sélectionnez le nœud Propriétés de configuration,C++C/, ligne de commande de la page Propriétés du projet, puis ajoutez `(`[/zo](/cpp/build/reference/zo-enhance-optimized-debugging)`)` à la zone de texte **options supplémentaires** .
+9. Sélectionnez le nœud Propriétés de configuration, C/C++, ligne de commande de la page Propriétés du projet et ajoutez `(` [/zo](/cpp/build/reference/zo-enhance-optimized-debugging) `)` à la zone de texte **options supplémentaires** .
 
     > [!WARNING]
     > `/Zo` nécessite Visual Studio 2013 Update 3 ou une version ultérieure.

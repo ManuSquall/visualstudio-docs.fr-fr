@@ -11,6 +11,8 @@
         - name: Vue d'ensemble
           displayName: msbuild concepts
           href: msbuild-concepts.md
+        - name: Comment MSBuild génère des projets
+          href: build-process-overview.md
         - name: Propriétés
           items:
             - name: MSBuild (propriétés)

@@ -1,8 +1,8 @@
 ---
-title: Afficher le Code machine dans le débogueur | Microsoft Docs
+title: Afficher le code machine dans le débogueur | Microsoft Docs
 ms.custom: seodec18
 ms.date: 10/30/2018
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - vs.debug.disassembly
 dev_langs:
@@ -22,55 +22,55 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 43214ee122b3aa5c3907b9176631f2dc22c9178e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 0570aec5e8571e75cf64418a2c8c7c95cf507d31
+ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62846388"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85348702"
 ---
-# <a name="view-disassembly-code-in-the-visual-studio-debugger-c-c-visual-basic-f"></a>Afficher le code machine dans le débogueur Visual Studio (C#, C++, Visual Basic, F#)
+# <a name="view-disassembly-code-in-the-visual-studio-debugger-c-c-visual-basic-f"></a>Afficher le code machine dans le débogueur Visual Studio (C#, C++, Visual Basic, F #)
 
-La fenêtre **Code Machine** affiche le code assembleur correspondant aux instructions créées par le compilateur. Si vous déboguez du code managé, ces instructions assembleur correspondent au code natif créé par le compilateur juste-à-temps (JIT), pas le Microsoft intermediate langage MSIL () créé par le compilateur de Visual Studio.
+La fenêtre **Code Machine** affiche le code assembleur correspondant aux instructions créées par le compilateur. Si vous déboguez du code managé, ces instructions d’assembly correspondent au code natif créé par le compilateur juste-à-temps (JIT), et non au langage MSIL (Microsoft Intermediate Language) créé par le compilateur Visual Studio.
 
 > [!NOTE]
-> Pour tirer pleinement parti de la **désassemblage** fenêtre, comprendre ou Découvrez les principes fondamentaux de [programmation en langage assembleur](https://wikipedia.org/wiki/Assembly_language).
+> Pour tirer pleinement parti de la **fenêtre** code machine, comprenez ou apprenez les principes fondamentaux de la [programmation en langage assembleur](https://wikipedia.org/wiki/Assembly_language).
 
-Cette fonctionnalité est disponible uniquement si le débogage au niveau des adresses est activé. Il n’est pas disponible pour le script ou le débogage SQL.
+Cette fonctionnalité n’est disponible que si le débogage au niveau de l’adresse est activé. Elle n’est pas disponible pour le débogage de script ou SQL.
 
 Outre les instructions en assembleur, la fenêtre **Code Machine** peut afficher les informations facultatives suivantes :
 
-- L'adresse mémoire de chaque instruction. Pour les applications natives, il est l’adresse réelle de la mémoire. Pour Visual Basic ou C#, il est un décalage à partir du début de la fonction.
+- L'adresse mémoire de chaque instruction. Pour les applications natives, il s’agit de l’adresse mémoire réelle. Pour Visual Basic ou C#, il s’agit d’un offset à partir du début de la fonction.
 
 - Le code source dont est tiré le code assembleur.
 
-- Code les octets, autrement dit, les représentations d’octets de la machine réelles ou des instructions MSIL.
+- Octets de code, autrement dit, les représentations d’octets de l’ordinateur réel ou les instructions MSIL.
 
 - Les noms des symboles pour les adresses mémoire.
 
 - Les numéros de ligne correspondant au code source.
 
-Instructions en langage assembleur sont constituées de *mnémoniques*, qui sont des abréviations des noms d’instructions, et *symboles* des variables, des registres et des constantes. Chaque instruction en langage machine est représentée par un mnémonique en langage assembleur éventuellement suivie d’un ou plusieurs symboles.
+Les instructions en langage assembleur consistent en des *mnémoniques*, qui sont des abréviations pour les noms d’instruction et des *symboles* pour les variables, les registres et les constantes. Chaque instruction de langage machine est représentée par un mnémonique en langage assembleur, éventuellement suivi d’un ou de plusieurs symboles.
 
-Code assembleur dépend des registres du processeur ou, pour le code managé, le common language runtime enregistre. Vous pouvez utiliser la **désassemblage** fenêtre avec le **inscrit** fenêtre, ce qui vous permet d’examiner le contenu du Registre.
+Le code assembleur s’appuie fortement sur les registres du processeur ou, pour le code managé, common language runtime registres. Vous pouvez utiliser la fenêtre **code machine** avec la fenêtre **registres** , qui vous permet d’examiner le contenu du Registre.
 
-Pour afficher les instructions du code machine dans leur format numérique brut, plutôt que comme langage d’assembly, utilisez le **mémoire** fenêtre ou sélectionnez **octets de Code** dans le menu contextuel dans le **code machine**  fenêtre.
+Pour afficher les instructions de code machine sous leur forme numérique brute, plutôt qu’en tant que langage assembleur, utilisez la fenêtre **mémoire** ou sélectionnez **octets de code** dans le menu contextuel de **la fenêtre Code machine.**
 
 ## <a name="use-the-disassembly-window"></a>Utiliser la fenêtre Code Machine
 
-Pour activer la **désassemblage** fenêtre, sous **outils** > **Options** (ou **outils**  >  **Options**) > **débogage**, sélectionnez **activer le débogage au niveau des adresses**.
+Pour activer la fenêtre **code machine** , sous **Tools**  >  **options** des outils (ou options des **Outils**  >  **Options**) > **débogage**, sélectionnez **activer le débogage au niveau de l’adresse**.
 
-Pour ouvrir le **désassemblage** fenêtre pendant le débogage, sélectionnez **Windows** > **désassemblage** ou appuyez sur **Alt** + **8**.
+Pour ouvrir la fenêtre **code machine** pendant le débogage, sélectionnez **Windows**  >  **code machine** ou appuyez sur **ALT** + **8**.
 
 > [!NOTE]
-> Les boîtes de dialogue et les commandes de menu qui s'affichent peuvent être différentes de celles qui sont décrites dans l'aide, en fonction de vos paramètres actifs ou de l'édition utilisée. Pour modifier vos paramètres, choisissez **Importation et exportation de paramètres** dans le menu **Outils** . Pour plus d’informations, consultez [Réinitialiser les paramètres](../ide/environment-settings.md#reset-settings).
+> Les boîtes de dialogue et les commandes de menu affichées peuvent différer de celles décrites dans l'Aide selon les paramètres actifs ou le mode d'édition. Pour modifier vos paramètres, choisissez **Paramètres d'importation et d'exportation** dans le menu **Outils** . Pour plus d’informations, consultez [Réinitialiser les paramètres](../ide/environment-settings.md#reset-settings).
 
-Pour activer ou désactiver les informations facultatives, cliquez sur le **désassemblage** fenêtre, puis activez ou désactivez les options souhaitées dans le menu contextuel.
+Pour activer ou désactiver des informations facultatives, cliquez avec le bouton droit dans la fenêtre **code machine** , puis définissez ou désactivez les options souhaitées dans le menu contextuel.
 
-Une flèche jaune dans la marge gauche marque le point d’exécution actuel. Pour le code natif, le point d’exécution correspond au compteur de programme de l’UC. Cet emplacement montre l'instruction suivante qui sera exécutée dans votre programme.
+Une flèche jaune dans la marge de gauche marque le point d’exécution actuel. Pour le code natif, le point d’exécution correspond au compteur de programme de l’UC. Cet emplacement montre l'instruction suivante qui sera exécutée dans votre programme.
 
 ## <a name="see-also"></a>Voir aussi
 
 * [Déplacement d’une page vers le haut ou vers le bas dans la mémoire](../debugger/how-to-page-up-or-down-in-memory.md)
 * [Affichage des données dans le débogueur](../debugger/viewing-data-in-the-debugger.md)
-* [Guide pratique pour utiliser la fenêtre Registres](../debugger/how-to-use-the-registers-window.md)
+* [Comment : utiliser la fenêtre registres](../debugger/how-to-use-the-registers-window.md)

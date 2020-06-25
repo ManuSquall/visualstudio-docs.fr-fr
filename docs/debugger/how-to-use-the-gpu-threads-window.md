@@ -1,7 +1,7 @@
 ---
 title: Affichage des threads GPU dans le débogueur | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - vs.debug.gputthreads
 - vs.debug.gputhreads
@@ -18,15 +18,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 972b21c4535df37dd81da6aceaa062b39176469c
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: cbbb49a1017fb0bc65300f3c16050db4954e1103
+ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72732084"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85348715"
 ---
 # <a name="how-to-use-the-gpu-threads-window-c"></a>Comment : utiliser la fenêtre threads GPU (C++)
-Dans la fenêtre Threads GPU, vous pouvez visualiser et utiliser les threads qui s'exécutent sur le GPU dans l'application que vous déboguez. Pour plus d’informations sur les applications qui s’exécutent sur le GPU, consultez [ C++ vue d’ensemble du amp](/cpp/parallel/amp/cpp-amp-overview).
+Dans la fenêtre Threads GPU, vous pouvez visualiser et utiliser les threads qui s'exécutent sur le GPU dans l'application que vous déboguez. Pour plus d’informations sur les applications qui s’exécutent sur le GPU, consultez [C++ amp vue d’ensemble](/cpp/parallel/amp/cpp-amp-overview).
 
  La fenêtre Threads GPU contient une table dans laquelle chaque ligne représente un ensemble de threads GPU qui ont les mêmes valeurs dans toutes les colonnes. Vous pouvez trier, réorganiser, supprimer et regrouper les éléments qui figurent dans les colonnes. Vous pouvez marquer ou supprimer l'indicateur, figer et libérer (reprendre) les threads à partir de la fenêtre Threads GPU. Les colonnes suivantes sont affichées dans la fenêtre Threads GPU :
 
@@ -52,13 +52,13 @@ Dans la fenêtre Threads GPU, vous pouvez visualiser et utiliser les threads qui
 
 ### <a name="to-display-the-gpu-threads-window"></a>Pour afficher la fenêtre Threads GPU
 
-1. Dans l' **Explorateur de solutions**, ouvrez le menu contextuel du projet et choisissez **Propriétés**.
+1. Dans **Explorateur de solutions**, ouvrez le menu contextuel du projet, puis choisissez **Propriétés**.
 
 2. Dans la fenêtre **Pages de propriétés** du projet, sous **Propriétés de configuration**, choisissez **Débogage**.
 
 3. Dans la liste **Débogueur à lancer**, sélectionnez **Débogueur Windows local**. Dans la liste **Type de débogueur**, sélectionnez **GPU uniquement**. Vous devez choisir le débogueur pour désactiver des points d'arrêt dans le code qui s'exécute sur le GPU.
 
-4. Sélectionnez le bouton **OK** .
+4. Choisissez le bouton **OK**.
 
 5. Définissez un point d'arrêt dans le code GPU.
 
@@ -104,5 +104,5 @@ Dans la fenêtre Threads GPU, vous pouvez visualiser et utiliser les threads qui
 
 ## <a name="see-also"></a>Voir aussi
 - [Déboguer les applications multithread](../debugger/debug-multithreaded-applications-in-visual-studio.md)
-- [Guide pratique pour utiliser la fenêtre Espion parallèle](../debugger/how-to-use-the-parallel-watch-window.md)
-- [Procédure pas-à-pas : débogage d’une application C++ AMP](/cpp/parallel/amp/walkthrough-debugging-a-cpp-amp-application)
+- [Comment : utiliser la fenêtre Espion parallèle](../debugger/how-to-use-the-parallel-watch-window.md)
+- [Procédure pas à pas : débogage d’une application C++ AMP](/cpp/parallel/amp/walkthrough-debugging-a-cpp-amp-application)

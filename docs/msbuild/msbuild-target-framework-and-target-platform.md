@@ -8,12 +8,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 76dcbbf8c5c5c5019c0b45fe97150838d996bfa1
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: 2c55ce57adb5b86941b5953732d57a642eb4f943
+ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84183351"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85350834"
 ---
 # <a name="msbuild-target-framework-and-target-platform"></a>Version cible de .NET Framework et plateforme cible MSBuild
 
@@ -95,7 +95,7 @@ Une *configuration cible* est un sous-ensemble d’une plateforme cible. Par exe
 <PropertyGroup>
    <PlatformTarget>x86</PlatformTarget>
    <Configuration>Debug</Configuration>
-<PropertyGroup>
+</PropertyGroup>
 
 ```
 
