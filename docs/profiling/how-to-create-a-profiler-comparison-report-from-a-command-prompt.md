@@ -1,7 +1,7 @@
 ---
 title: Guide pratique pour créer un rapport de comparaison du profileur à partir d’une invite de commandes | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 ms.assetid: 00548d16-eb5b-46f7-8a65-862f98a43831
 author: mikejo5000
 ms.author: mikejo
@@ -9,12 +9,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: d0328e04067770f8837d10d532abb67d16c65e50
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 8f9679a99ee23886f660914d8914001e395ff797
+ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74776425"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85328650"
 ---
 # <a name="how-to-create-a-profiler-comparison-report-from-a-command-prompt"></a>Guide pratique pour créer un rapport de comparaison du profileur à partir d’une invite de commandes
 Vous pouvez générer un rapport des Outils de profilage [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] qui compare les données de performances de deux fichiers de données de profilage (.*vsp* ou .*vsps*). Le rapport montre les différences, les régressions de performances et les améliorations qui se sont produites d’une session de profilage à l’autre. Les valeurs du rapport présentent le delta, ou la modification, à partir de la base de référence du premier fichier que vous spécifiez. Le delta est calculé en déterminant la différence entre l’ancienne valeur, qui est la valeur de la base de référence, et la valeur résultant de la nouvelle analyse. Les comparaisons des données du profileur peuvent être basées sur les fonctions du code, les modules de l’application, les lignes, les pointeurs d’instruction et les types.
@@ -25,7 +25,7 @@ Vous pouvez générer un rapport des Outils de profilage [!INCLUDE[vsprvs](../co
 
  Utilisez la syntaxe suivante pour créer le rapport de comparaison :
 
- **VSPerfReport /diff** `VspFileName1` *VspFileName2* [**/**`Options`]  
+ **VSPerfReport/diff** `VspFileName1` *Nomfichiervsp2* [ **/** `Options` ]  
 
  Vous pouvez ajouter des options du tableau suivant à la ligne de commande **VSPerfReport /diff**.
 

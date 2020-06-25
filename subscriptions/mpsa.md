@@ -7,17 +7,17 @@ ms.assetid: b331c837-3524-42b7-820e-b4fdd5e12793
 ms.date: 03/03/2020
 ms.topic: conceptual
 description: Abonnements Visual Studio dans un programme MPSA (Microsoft Products and Services Agreement)
-ms.openlocfilehash: e59929404febda5a07ba13f7dc230ab89e09addf
-ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
+ms.openlocfilehash: d38da1784eb543519f1a36ba7342f0b13ab2b1ac
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "80232205"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85289350"
 ---
 # <a name="visual-studio-subscriptions-in-a-microsoft-products-and-services-agreement-mpsa"></a>Abonnements Visual Studio dans un programme MPSA (Microsoft Products and Services Agreement)
 Si vous avez acheté des abonnements Visual Studio via le programme MPSA, il existe quelques éléments à connaître avant de devenir administrateur des abonnements Visual Studio et d’attribuer des abonnements à vos utilisateurs. Si vous avez déjà été configuré comme administrateur, vous pouvez accéder directement au [portail d’administration](https://manage.visualstudio.com/) des abonnements Visual Studio.
 
-Les clients MPSA gèrent désormais les ressources achetées via MPSA dans un nouveau portail appelé [Business Center](https://businessaccount.microsoft.com/Customer), qui prend en charge des fonctionnalités similaires à celles du Centre de gestion des licences en volume (VLSC). Il s’agit notamment de consulter votre résumé de licence, commandes, téléchargements, clés, utilisateurs, etc. Cependant, les abonnements Visual Studio dans MPSA se comportent un peu comme Cloud Services. Business Center utilise également des comptes professionnels pour la connexion à la place des comptes Microsoft. Si votre organisation utilise des services cloud comme Office 365 ou Azure Active Directory, et que votre e-mail fait partie de l’un de ces deux services, il s’agit déjà d’un compte professionnel. Ceci vous permet de vous inscrire auprès de Business Center avec votre mot de passe existant. Si votre organisation n’utilise pas de services cloud et que votre e-mail n’est pas du tout un compte professionnel, vous pouvez l’utiliser pour vous inscrire auprès de Business Center.
+Les clients MPSA gèrent désormais les ressources achetées via MPSA dans un nouveau portail appelé [Business Center](https://businessaccount.microsoft.com/Customer), qui prend en charge des fonctionnalités similaires à celles du Centre de gestion des licences en volume (VLSC). Cela inclut l’affichage du récapitulatif des licences, des commandes, des téléchargements, des clés, des utilisateurs, etc. Toutefois, les abonnements Visual Studio dans MPSA se comportent de la même façon que les services Cloud. Business Center utilise également des comptes professionnels pour la connexion à la place des comptes Microsoft. Si votre organisation utilise des services cloud comme Office 365 ou Azure Active Directory, et que votre e-mail fait partie de l’un de ces deux services, il s’agit déjà d’un compte professionnel. Ceci vous permet de vous inscrire auprès de Business Center avec votre mot de passe existant. Si votre organisation n’utilise pas de services cloud et que votre e-mail n’est pas du tout un compte professionnel, vous pouvez l’utiliser pour vous inscrire auprès de Business Center.
 
 En outre, le [portail d’administration](https://manage.visualstudio.com/) des abonnements Visual Studio est l’emplacement où les abonnements sont attribués aux abonnés une fois que vous devenez administrateur des abonnements Visual Studio. Dans MPSA, les abonnements Visual Studio doivent être provisionnés dans leur portail de gestion respectif, qui est le portail d’administration des abonnements Visual Studio. Pour ce faire, vous devez associer votre compte d’achats à un locataire (autrement dit, contoso.onmicrosoft.com).
 
@@ -44,12 +44,12 @@ Une fois que vous répondez aux critères ci-dessus, vous pouvez procéder à l�
 4. Sélectionnez votre **locataire** (autrement dit, contoso.onmicrosoft.com).
 5. Cliquez sur **Associate Domain** (Associer le domaine).
 
-Après l’association, tous les utilisateurs répondant aux critères vont généralement être provisionnés en tant qu’administrateurs des abonnements Visual Studio en quelques minutes. Toutefois, dans certains cas, cela peut prendre jusqu’à 24 heures. Une fois que votre locataire est provisionné, vous êtes en mesure d’accéder au portail d’administration des abonnements Visual Studio. Si cela prend plus de 24 heures, veuillez communiquer avec MPSA Support à l’aide de ces étapes :
-1. Connectez-vous àhttps://www.microsoft.com/licensing/mpsa/default
-2. Cliquez sur le menu **Plus** en haut de la page. 
-3. Choisissez **l’aide**
-4. Choisissez **l’aide aux licences**
-5. Sélectionnez l’option de support qui répond le mieux à vos besoins. 
+Après l’association, tous les utilisateurs répondant aux critères vont généralement être provisionnés en tant qu’administrateurs des abonnements Visual Studio en quelques minutes. Toutefois, dans certains cas, cela peut prendre jusqu’à 24 heures. Une fois que votre locataire est provisionné, vous êtes en mesure d’accéder au portail d’administration des abonnements Visual Studio. Si cette opération prend plus de 24 heures, contactez le support MPSA en procédant comme suit :
+1. Se connecter à<https://www.microsoft.com/licensing/mpsa/default>
+2. Cliquez sur le menu **plus** en haut de la page. 
+3. Choisir la **prise en charge**
+4. Choisir la **prise en charge des licences**
+5. Sélectionnez l’option de support qui correspond le mieux à vos besoins. 
 
 > [!NOTE]
 > Si de nouveaux utilisateurs répondent aux critères des étapes 2 et 5 (après l’association), vous devez contacter le support MPSA. Le support MPSA vous prêtera assistance pour provisionner les nouveaux administrateurs des abonnements Visual Studio.
@@ -63,15 +63,15 @@ Pour obtenir une explication plus détaillée de ce processus, vous pouvez utili
 > Quand vous avez terminé le processus de prise de contrôle de domaine, vous devez respecter les critères des cinq étapes de la section Association prélocataire (locataire managé). Une fois que les critères sont satisfaits, vous devez uniquement contacter le support MPSA pour provisionner d’autres administrateurs des abonnements Visual Studio.
 
 ## <a name="see-also"></a>Voir aussi
-- [Documentation Visual Studio](https://docs.microsoft.com/visualstudio/)
+- [Documentation de Visual Studio](https://docs.microsoft.com/visualstudio/)
 - [Documentation Azure DevOps](https://docs.microsoft.com/azure/devops/)
 - [Documentation Azure](https://docs.microsoft.com/azure/)
 - [Documentation Microsoft 365](https://docs.microsoft.com/microsoft-365/)
 
 ## <a name="next-steps"></a>Étapes suivantes
 En savoir plus sur la gestion des abonnements Visual Studio.
-- [Attribuer des abonnements individuels](assign-license.md)
+- [Affecter des abonnements individuels](assign-license.md)
 - [Attribuer plusieurs abonnements](assign-license-bulk.md)
 - [Modifier des abonnements](edit-license.md)
-- [Supprimer les abonnements](delete-license.md)
+- [Supprimer des abonnements](delete-license.md)
 - [Déterminer l’utilisation maximale](maximum-usage.md)

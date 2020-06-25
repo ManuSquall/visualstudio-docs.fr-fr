@@ -18,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 22d61fe30e9eb68697f073ca0bcfbcc515e513dd
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 14556467e0907818333695b3388b2d11f3467ed7
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79431447"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85289155"
 ---
 # <a name="usingtask-element-msbuild"></a>Élément UsingTask (MSBuild)
 
@@ -31,7 +31,7 @@ Mappe la tâche référencée dans un élément [Task](../msbuild/task-element-m
 
  \<Project> \<UsingTask>
 
-## <a name="syntax"></a>Syntaxe
+## <a name="syntax"></a>Syntax
 
 ```xml
 <UsingTask TaskName="TaskName"
@@ -41,7 +41,7 @@ Mappe la tâche référencée dans un élément [Task](../msbuild/task-element-m
 ```
 
 > [!NOTE]
-> Contrairement aux propriétés et aux articles, le *premier* `UsingTask` élément qui s’applique à un `TaskName` sera utilisé; pour remplacer les tâches, `UsingTask` vous devez définir un nouveau *avant* l’existant.
+> Contrairement aux propriétés et aux éléments, le *premier* `UsingTask` élément qui s’applique à un `TaskName` est utilisé ; pour remplacer des tâches, vous devez définir un nouveau `UsingTask` *avant* celui existant.
 
 ## <a name="attributes-and-elements"></a>Attributs et éléments
 
@@ -51,8 +51,10 @@ Mappe la tâche référencée dans un élément [Task](../msbuild/task-element-m
 
 |Attribut|Description|
 |---------------|-----------------|
+|`Architecture`|Attribut facultatif.<br /><br /> Spécifie que la tâche doit s’exécuter dans un processus du nombre de bits spécifié. Si le processus actuel ne satisfait pas à la spécification, la tâche est exécutée dans un processus hôte de tâche qui le fait.<br /><br /> Les valeurs prises en charge sont `x86` (32-bit), `x64` (64 bits), `CurrentArchitecture` et `*` (n’importe quelle architecture).|  
 |`AssemblyName`|L'attribut `AssemblyName` ou `AssemblyFile` est requis.<br /><br /> Nom de l'assembly à charger. L'attribut `AssemblyName` accepte les assemblys avec nom fort, bien que les noms forts ne soient pas obligatoires. L'utilisation de cet attribut équivaut au chargement d'un assembly à l'aide de la méthode <xref:System.Reflection.Assembly.Load%2A> dans .NET.<br /><br /> Vous ne pouvez pas utiliser cet attribut si l'attribut `AssemblyFile` est utilisé.|
 |`AssemblyFile`|L'attribut `AssemblyName` ou `AssemblyFile` est requis.<br /><br /> Chemin d'accès de l'assembly. Cet attribut accepte les chemins d'accès complets ou relatifs. Les chemins d'accès relatifs sont relatifs au répertoire du fichier projet ou du fichier .targets où l'élément `UsingTask` est déclaré. L'utilisation de cet attribut équivaut au chargement d'un assembly à l'aide de la méthode <xref:System.Reflection.Assembly.LoadFrom%2A> dans .NET.<br /><br /> Vous ne pouvez pas utiliser cet attribut si l'attribut `AssemblyName` est utilisé.|
+|`Runtime`|Attribut facultatif.<br /><br /> Spécifie que la tâche doit s’exécuter dans un .NET Framework Runtime de la version spécifiée. Si le processus actuel ne satisfait pas à la spécification, la tâche est exécutée dans un processus hôte de tâche qui le fait. Non pris en charge dans MSBuild .NET Core.<br /><br /> Les valeurs prises en charge sont `CLR2` (.NET Framework 3,5), `CLR4` (.NET Framework 4.7.2 ou version ultérieure), `CurrentRuntime` et `*` (n’importe quel Runtime).|  
 |`TaskFactory`|Attribut facultatif.<br /><br /> Spécifie la classe incluse dans l'assembly qui est responsable de la génération des instances du nom `Task` spécifié.  L'utilisateur peut également spécifier un `Task` en tant qu'élément enfant que la fabrique de tâches reçoit et utilise pour générer la tâche. Le contenu de `Task` est propre à la fabrique de tâches.|
 |`TaskName`|Attribut requis.<br /><br /> Nom de la tâche à référencer à partir d'un assembly. Si des ambiguïtés sont possibles, cet attribut doit toujours spécifier des espaces de noms complets. S'il existe des ambiguïtés, MSBuild choisit une correspondance arbitraire, laquelle peut produire des résultats inattendus.|
 |`Condition`|Attribut facultatif.<br /><br /> Condition à évaluer. Pour plus d’informations, consultez l’article [Conditions (Conditions MSBuild)](../msbuild/msbuild-conditions.md).|
@@ -68,9 +70,9 @@ Mappe la tâche référencée dans un élément [Task](../msbuild/task-element-m
 
 | Élément | Description |
 | - | - |
-| [Projet](../msbuild/project-element-msbuild.md) | Élément racine requis d’un fichier de projet MSBuild. |
+| [Projet](../msbuild/project-element-msbuild.md) | Élément racine requis d’un fichier projet MSBuild. |
 
-## <a name="remarks"></a>Notes 
+## <a name="remarks"></a>Remarques
 
  Les variables d'environnement, propriétés de ligne de commande, propriétés au niveau du projet et éléments au niveau du projet peuvent être référencés n'importe où dans les éléments `UsingTask` inclus dans le fichier projet, directement ou via un fichier projet importé. Pour plus d’informations, consultez l’article [Tâches MSBuild](../msbuild/msbuild-tasks.md).
 
@@ -79,9 +81,9 @@ Mappe la tâche référencée dans un élément [Task](../msbuild/task-element-m
 
  Dans MSBuild 4.0, les tâches peuvent être chargées à partir de fichiers *.overridetask*.
 
-L’assemblage contenant la tâche `Task` personnalisée est chargé lorsque l’est utilisé pour la première fois.
+L’assembly contenant la tâche personnalisée est chargé lors de la `Task` première utilisation de.
 
-## <a name="example"></a> Exemple
+## <a name="example"></a>Exemple
 
  L'exemple suivant montre comment utiliser l'élément `UsingTask` avec un attribut `AssemblyName`.
 
@@ -98,7 +100,7 @@ L’assemblage contenant la tâche `Task` personnalisée est chargé lorsque l�
 </UsingTask>
 ```
 
-## <a name="example"></a> Exemple
+## <a name="example"></a>Exemple
 
  L'exemple suivant montre comment utiliser l'élément `UsingTask` avec un attribut `AssemblyFile`.
 
@@ -110,5 +112,6 @@ L’assemblage contenant la tâche `Task` personnalisée est chargé lorsque l�
 ## <a name="see-also"></a>Voir aussi
 
 - [Tâches](../msbuild/msbuild-tasks.md)
+- [Procédure : configurer des cibles et des tâches](../msbuild/how-to-configure-targets-and-tasks.md)   
 - [Informations de référence sur les tâches](../msbuild/msbuild-task-reference.md)
-- [Référence du schéma de fichier de projet](../msbuild/msbuild-project-file-schema-reference.md)
+- [Référence du schéma de fichier projet](../msbuild/msbuild-project-file-schema-reference.md)

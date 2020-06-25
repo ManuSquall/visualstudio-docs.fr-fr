@@ -2,17 +2,17 @@
 title: Animer des objets dans le concepteur XAML
 titleSuffix: Blend for Visual Studio
 ms.date: 07/31/2019
-ms.topic: conceptual
+ms.topic: how-to
 ms.assetid: fb88fa26-e835-47f5-9771-2f279441c83c
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: ab5be23d2756c1afc38f5ea071fe10a621c5cf2e
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: e568b5e19d7d5f8034ba2bd3b96e3b6968c4b5fe
+ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75593047"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85328496"
 ---
 # <a name="animate-objects-in-xaml-designer"></a>Animer des objets dans le concepteur XAML
 

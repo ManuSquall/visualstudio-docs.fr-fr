@@ -1,7 +1,7 @@
 ---
-title: 'DA0006 : Remplacez Equals() pour les types valeur | Microsoft Docs'
+title: DA0006-override est égal à () pour les types valeur | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - vs.performance.rules.DAOverrideEquals
 - vs.performance.6
@@ -14,12 +14,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 9e097d6d8c9a7b82fac53fd37951644eb7eb5e59
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: e87669ac58fd81faea117e45aaeb6c1a1b5a60d6
+ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74779530"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85328231"
 ---
 # <a name="da0006-override-equals-for-value-types"></a>DA0006 : Remplacer Equals() pour les types valeur
 
@@ -31,7 +31,7 @@ ms.locfileid: "74779530"
 |Message|Remplacer Equals et l’opérateur d’égalité pour les types valeur.|
 |Type de messages|Avertissement|
 
-## <a name="cause"></a>Cause :
+## <a name="cause"></a>Cause
  Les appels à la méthode Equals ou aux opérateurs d’égalité d’un type valeur public représentent une part importante des données de profilage. Implémentez une méthode plus efficace.
 
 ## <a name="rule-description"></a>Description de la règle

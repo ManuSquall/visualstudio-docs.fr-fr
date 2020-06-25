@@ -9,15 +9,14 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 73d8653b2bcf06801c18e21d9a13b21843abc7d7
-ms.sourcegitcommit: 9de7d25056da59df0941508c80c0b12766ba6580
+ms.openlocfilehash: 447725fd27ab81b85890d37a8f0df8a35ad5fbee
+ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "77706377"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85328471"
 ---
 # <a name="troubleshooting-xaml-hot-reload"></a>Résolution des problèmes de rechargement à chaud XAML
 
@@ -35,26 +34,26 @@ La fonctionnalité est activée par défaut. Lorsque vous commencez à déboguer
 
 ![Rechargement à chaud XAML disponible](../debugger/media/xaml-hot-reload-available.png)
 
-Si vous ne voyez pas la barre d’outils dans l’application, ouvrez **options** de **débogage** >  > **général**. Assurez-vous que les deux options, **activer les outils de débogage de l’interface utilisateur pour XAML** et **activer le rechargement à chaud XAML** sont sélectionnées.
+Si vous ne voyez pas la barre d’outils dans l’application, ouvrez Options de **débogage**  >  **Options**  >  **général**. Assurez-vous que les deux options, **activer les outils de débogage de l’interface utilisateur pour XAML** et **activer le rechargement à chaud XAML** sont sélectionnées.
 
 ![Activer le rechargement à chaud XAML](../debugger/media/xaml-hot-reload-enable.png)
 
-Si ces options sont sélectionnées, accédez à arborescence d’éléments visuels dynamique (**Déboguer** > l’arborescence d’éléments **visuels en direct**de **Windows** > ) et assurez-vous que l’option Afficher les **Outils d’exécution dans** la barre d’outils de l’application (à l’extrême gauche) est sélectionnée.
+Si ces options sont sélectionnées, accédez à l’arborescence d’éléments visuels dynamique (**Déboguer**  >  **Windows**  >  l’arborescence d’éléments**visuels Windows Live**) et assurez-vous que l’option Afficher les outils d' **exécution dans** la barre d’outils de l’application (à l’extrême gauche) est sélectionnée.
 
 ![Activer le rechargement à chaud XAML](../debugger/media/xaml-hot-reload-show-runtime-tools.png)
 
 ## <a name="verify-that-you-use-start-debugging-rather-than-attach-to-process"></a>Vérifier que vous utilisez démarrer le débogage plutôt que attacher au processus
 
-Le rechargement à chaud XAML nécessite que la variable d’environnement `ENABLE_XAML_DIAGNOSTICS_SOURCE_INFO` soit définie sur 1 au moment du démarrage de l’application. Visual Studio définit cela automatiquement dans le cadre de la commande de **débogage** > **Démarrer le débogage** (ou **F5**). Si vous souhaitez utiliser le rechargement à chaud XAML avec la commande **Debug** > **attacher au processus** , définissez la variable d’environnement vous-même.
+Le rechargement à chaud XAML nécessite que la variable `ENABLE_XAML_DIAGNOSTICS_SOURCE_INFO` d’environnement soit définie sur 1 au moment du démarrage de l’application. Visual Studio définit cela automatiquement dans le cadre de **la commande Déboguer**  >  **Démarrer le débogage** (ou **F5**). Si vous souhaitez utiliser à la place le rechargement à chaud XAML avec la commande **Déboguer**  >  **attacher au processus** , définissez la variable d’environnement vous-même.
 
 > [!NOTE]
-> Pour définir une variable d’environnement, utilisez le bouton Démarrer pour rechercher « variable d’environnement », puis choisissez **modifier les variables d’environnement système**. Dans la boîte de dialogue qui s’ouvre, choisissez **variables d’environnement**, ajoutez-la en tant que variable utilisateur et définissez la valeur sur `1`. Pour nettoyer, supprimez la variable lorsque vous avez terminé le débogage.
+> Pour définir une variable d’environnement, utilisez le bouton Démarrer pour rechercher « variable d’environnement », puis choisissez **modifier les variables d’environnement système**. Dans la boîte de dialogue qui s’ouvre, choisissez **variables d’environnement**, ajoutez-la en tant que variable utilisateur, puis affectez la valeur à `1` . Pour nettoyer, supprimez la variable lorsque vous avez terminé le débogage.
 
 ## <a name="verify-that-your-msbuild-properties-are-correct"></a>Vérifier que vos propriétés MSBuild sont correctes
 
-Par défaut, les informations sur la source sont incluses dans une configuration de débogage. Il est contrôlé par les propriétés MSBuild dans vos fichiers projet (tels que *. csproj). Pour WPF, la propriété est `XamlDebuggingInformation`, qui doit avoir la valeur `True`. Pour UWP, la propriété est `DisableXbfLineInfo`, qui doit avoir la valeur `False`. Par exemple :
+Par défaut, les informations sur la source sont incluses dans une configuration de débogage. Il est contrôlé par les propriétés MSBuild dans vos fichiers projet (tels que *. csproj). Pour WPF, la propriété est `XamlDebuggingInformation` , qui doit avoir la valeur `True` . Pour UWP, la propriété est `DisableXbfLineInfo` , qui doit avoir la valeur `False` . Par exemple :
 
-WPF
+WPF :
 
 `<XamlDebuggingInformation>True</XamlDebuggingInformation>`
 

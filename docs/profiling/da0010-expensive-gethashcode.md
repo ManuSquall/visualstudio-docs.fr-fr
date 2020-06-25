@@ -1,7 +1,7 @@
 ---
-title: 'DA0010 : Fonction GetHashCode coûteuse | Microsoft Docs'
+title: 'DA0010 : GetHashCode coûteux | Microsoft Docs'
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - vs.performance.rules.DAExpensiveGetHashCode
 - vs.performance.DA0010
@@ -14,14 +14,14 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 9ce982c7a98fd12749c66c89e47bd895d2fb6a5d
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: e94e30281163a9834453a14ca8900da616a6b884
+ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74777684"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85328202"
 ---
-# <a name="da0010-expensive-gethashcode"></a>DA0010 : GetHashCode coûteux
+# <a name="da0010-expensive-gethashcode"></a>DA0010 : Fonction GetHashCode coûteuse
 
 |||
 |-|-|
@@ -31,7 +31,7 @@ ms.locfileid: "74777684"
 |Message|Les fonctions GetHashCode doivent être peu coûteuses et n’allouer aucune mémoire. Réduisez si possible la complexité de la fonction de code de hachage.|
 |type de message|Avertissement|
 
-## <a name="cause"></a>Cause :
+## <a name="cause"></a>Cause
  Les appels à la méthode GetHashCode du type représentent une part importante des données de profilage, ou la méthode alloue de la mémoire.
 
 ## <a name="rule-description"></a>Description de la règle

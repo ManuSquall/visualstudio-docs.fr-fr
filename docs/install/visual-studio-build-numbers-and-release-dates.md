@@ -5,19 +5,19 @@ description: Liste des versions publiées et des numéros de build de Visual Stu
 author: ornellaalt
 ms.author: ornella
 manager: jillfra
-ms.date: 05/27/2020
+ms.date: 06/23/2020
 ms.topic: reference
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 open_to_public_contributors: false
-ms.openlocfilehash: f286262e77064f38e3ce09a32ec5dec82a22fe89
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: fd2e26dcb026b25923b08c572aa203d06a076844
+ms.sourcegitcommit: 60315ba949aca1ff06fe431dbcbcfb0fedc1e8d3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84183195"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85292917"
 ---
 # <a name="visual-studio-build-numbers-and-release-dates"></a>Numéros de builds et dates de publication de Visual Studio
 
@@ -29,32 +29,37 @@ Le tableau suivant liste les numéros de build et les dates de publication de Vi
 
 | **Version**| **Channel** | **Date de publication** | **Version de build** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
-| 16.4.9 | Libérer | 27 mai 2020 | 16.4.30120.98 |
+| 16.7.0 | Preview 3 | 23 juin, 2020 | 16.7.30218.91 |
+| 16.0.15 | Libérer | 9 juin 2020 | 16.0.28803.753 |
+| 16.6.2 | Libérer | 9 juin 2020 | 16.6.30204.135 |
+| 16.7.0 | Préversion 2 | 2 juin 2020 | 16.7.30128.36 |
+| 16.6.1 | Libérer | 1er juin 2020 | 16.6.30128.74 |
+| 16.4.9 | Libérer | 27 mai 2020 | 16.4.30120.98 |
 | 16.7.0 | Preview 1 | 19 mai 2020 | 16.7.30114.128 |
 | 16.6.0 | Libérer | 19 mai 2020 | 16.6.30114.105 |
-| 16.5.5 | Libérer | 12 mai, 2020 | 16.5.30104.148 |
-| 16.4.8 | Libérer | 12 mai, 2020 | 16.4.30107.140 |
-| 16.0.14 | Libérer | 12 mai, 2020 | 16.0.28803.735 |
+| 16.5.5 | Libérer | 12 mai 2020 | 16.5.30104.148 |
+| 16.4.8 | Libérer | 12 mai 2020 | 16.4.30107.140 |
+| 16.0.14 | Libérer | 12 mai 2020 | 16.0.28803.735 |
 | 16.6.0 | Préversion 6 | 7 mai, 2020 | 16.6.30105.148 |
 | 16.6.0 | Préversion 5 | 30 avril 2020 | 16.6.30028.174 |
 | 16.6.0 | Preview 4 | 23 avril 2020 | 16.6.30021.99 |
 | 16.6.0 | Preview 3 | 16 avril 2020 | 16.6.30014.187 |
-| 16.0.13 | Libérer | 14 avril 2020 | 16.0.28803.718 |
-| 16.4.7 | Libérer | 14 avril 2020 | 16.4.30011.19 |
-| 16.5.4 | Libérer | 14 avril 2020 | 16.5.30011.22 |
-| 16.5.3 | Libérer | 7 avril 2020 | 16.5.30002.166 |
-| 16.6.0 | Préversion 2.1 | 2 avril 2020 | 16.6.30001.183 |
+| 16.0.13 | Libérer | 14 avril 2020 | 16.0.28803.718 |
+| 16.4.7 | Libérer | 14 avril 2020 | 16.4.30011.19 |
+| 16.5.4 | Libérer | 14 avril 2020 | 16.5.30011.22 |
+| 16.5.3 | Libérer | 7 avril 2020 | 16.5.30002.166 |
+| 16.6.0 | Préversion 2.1 | 2 avril 2020 | 16.6.30001.183 |
 | 16.5.2 | Libérer | 31 mars 2020 | 16.5.29926.136 |
 | 16.6.0 | Préversion 2 | 26 mars, 2020 | 16.6.29924.181 |
-| 16.5.1 | Libérer | 24 mars, 2020 | 16.5.29920.165 |
-| 16.6.0 | Preview 1 | 16 mars, 2020 | 16.6.29911.98 |
-| 16.5.0 | Libérer | 16 mars, 2020 | 16.5.29911.84 |
-| 16.4.6 | Libérer | 10 mars 2020  | 16.4.29905.134 |
-| 16.0.12 | Libérer | 10 mars 2020 | 16.0.28803.697 |
+| 16.5.1 | Libérer | 24 mars 2020 | 16.5.29920.165 |
+| 16.6.0 | Preview 1 | 16 mars 2020 | 16.6.29911.98 |
+| 16.5.0 | Libérer | 16 mars 2020 | 16.5.29911.84 |
+| 16.4.6 | Libérer | 10 mars 2020  | 16.4.29905.134 |
+| 16.0.12 | Libérer | 10 mars 2020 | 16.0.28803.697 |
 | 16.5.0 | Préversion 5 | 2 mars 2020 | 16.5.29827.131 |
 | 16.5.0 | Preview 4 | Le 25 février 2020 | 16.5.29820.132 |
 | 16.5.0 | Preview 3 | 19 février 2020 | 16.5.29814.53 |
-| 16.4.5 | Libérer | 11 février 2020 | 16.4.29806.167 |
+| 16.4.5 | Libérer | Février 11, 2020 | 16.4.29806.167 |
 | 16.4.4 | Libérer | 31 janvier 2020 | 16.4.29728.190 |
 | 16.5.0 | Préversion 2 | 22 janvier 2020 | 16.5.29721.120 |
 | 16.4.3 | Libérer | 14 janvier 2020 | 16.4.29709.97 |
@@ -71,20 +76,20 @@ Le tableau suivant liste les numéros de build et les dates de publication de Vi
 | 16.4.0 | Preview 4 | 6 novembre 2019 | 16.4.29505.145 |
 | 16.3.8 | Libérer | 5 novembre 2019 | 16.3.29503.13 |
 | 16.4.0 | Preview 3 | 4 novembre 2019 | 16.4.29430.225 |
-| 16.3.7 | Libérer | 29 octobre 2019 | 16.3.29424.173 |
+| 16.3.7 | Libérer | 29 octobre 2019 | 16.3.29424.173 |
 | 16.3.6 | Libérer | 22 octobre 2019 | 16.3.29418.71 |
-| 16.3.5 | Libérer | 15 octobre 2019 | 16.3.29411.108 |
-| 16.4.0 | Préversion 2 | 15 octobre 2019 | 16.4.29411.138 |
-| 16.0.9 | Libérer | 15 octobre 2019 | 16.0.28803.598 |
+| 16.3.5 | Libérer | 15 octobre 2019 | 16.3.29411.108 |
+| 16.4.0 | Préversion 2 | 15 octobre 2019 | 16.4.29411.138 |
+| 16.0.9 | Libérer | 15 octobre 2019 | 16.0.28803.598 |
 | 16.3.4 | Libérer | 10 octobre 2019 | 16.3.29409.12 |
-| 16.3.3 | Libérer | 8 octobre 2019 | 16.3.29403.142 |
-| 16.3.2 | Libérer | 1er octobre 2019 | 16.3.29326.143 |
+| 16.3.3 | Libérer | 8 octobre 2019 | 16.3.29403.142 |
+| 16.3.2 | Libérer | 1 octobre 2019 | 16.3.29326.143 |
 | 16.3.1 | Libérer | 25 septembre 2019 | 16.3.29324.140 |
-| 16.4.0 | Preview 1 | 23 septembre 2019 | 16.4.29319.158 |
-| 16.3.0 | Libérer | 23 septembre 2019 | 16.3.29318.209 |
+| 16.4.0 | Preview 1 | 23 septembre 2019 | 16.4.29319.158 |
+| 16.3.0 | Libérer | 23 septembre 2019 | 16.3.29318.209 |
 | 16.3.0 | Preview 4 | 16 septembre 2019 | 16.3.29311.281 |
-| 16.2.5 | Libérer | 10 septembre 2019 | 16.2.29306.81 |
-| 16.0.8 | Libérer | 10 septembre 2019 | 16.0.28803.584 |
+| 16.2.5 | Libérer | 10 septembre 2019 | 16.2.29306.81 |
+| 16.0.8 | Libérer | 10 septembre 2019 | 16.0.28803.584 |
 | 16.2.4 | Libérer | 5 septembre 2019 | 16.2.29230.47 |
 | 16.3.0 | Preview 3 | 4 septembre 2019 | 16.3.29230.61 |
 | 16.2.3 | Libérer | 20 août 2019 | 16.2.29215.179 |
@@ -92,8 +97,8 @@ Le tableau suivant liste les numéros de build et les dates de publication de Vi
 | 16.3.0 | Préversion 2 | 13 août 2019 | 16.3.29209.152 |
 | 16.0.7 | Libérer | 13 août 2019 | 16.0.28803.571 |
 | 16.2.1 | Libérer | 6 août 2019 | 16.2.29201.188 |
-| 16.2.0 | Libérer | 24 juillet 2019 | 16.2.29123.88 |
-| 16.3.0 | Preview 1 | 24 juillet 2019 | 16.3.29123.89 |
+| 16.2.0 | Libérer | 24 juillet 2019 | 16.2.29123.88 |
+| 16.3.0 | Preview 1 | 24 juillet 2019 | 16.3.29123.89 |
 | 16.2.0 | Preview 4 | 16 juillet 2019 | 16.2.29111.141 |
 | 16.1.6 | Libérer | 9 juillet 2019 | 16.1.29102.190 |
 | 16.0.6 | Libérer | 9 juillet 2019 | 16.0.28803.540 |
@@ -107,16 +112,16 @@ Le tableau suivant liste les numéros de build et les dates de publication de Vi
 | 16.1.1 | Libérer | 24 mai 2019 | 16.1.28922.388 |
 | 16.1.0 | Libérer | 21 mai 2019 | 16.1.28917.181 |
 | 16.2.0 | Preview 1 | 21 mai 2019 | 16.2.28917.182 |
-| 16.0.4 | Libérer | 14 mai 2019 | 16.0.28803.452 |
+| 16.0.4 | Libérer | 14 mai 2019 | 16.0.28803.452 |
 | 16.1.0 | Preview 3 | 6 mai 2019 | 16.1.28902.138 |
 | 16.0.3 | Libérer | 30 avril 2019 | 16.0.28803.352 |
 | 16.1.0 | Préversion 2 | 23 avril 2019 | 16.1.28822.285 |
-| 16.0.2 | Libérer | 18 avril 2019 | 16.0.28803.202 |
+| 16.0.2 | Libérer | 18 avril 2019 | 16.0.28803.202 |
 | 16.1.0 | Preview 1 | 10 avril 2019 | 16.1.28809.33 |
 | 16.0.1 | Libérer | 9 avril 2019 | 16.0.28803.156 |
 | 16.0.1 | Preview 1 | 9 avril 2019 | 16.0.28803.156 |
-| 16.0.0 | Libérer | 2 avril 2019 | 16.0.28729.10 |
-| 16.0.0 | Préversion 5 | 2 avril 2019 | 16.0.28729.10 |
+| 16.0.0 | Libérer | 2 avril 2019 | 16.0.28729.10 |
+| 16.0.0 | Préversion 5 | 2 avril 2019 | 16.0.28729.10 |
 | 16.0.0 | Release Candidate 4 (RC 4) | 26 mars 2019 | 16.0.28721.148 |
 | 16.0.0 | Préversion 4.4 | 26 mars 2019 | 16.0.28721.148 |
 | 16.0.0 | Release Candidate 3 (RC.3) | 19 mars 2019 | 16.0.28714.193 |
@@ -143,31 +148,32 @@ Le tableau suivant liste les numéros de build et les dates de publication de Vi
 
 ::: moniker range="vs-2017"
 
-## <a name="visual-studio-2017"></a>Visual Studio 2017
+## <a name="visual-studio-2017"></a>Visual Studio 2017
 
 Le tableau suivant répertorie les numéros de build et les dates de publication de Visual Studio 2017, à ce jour.
 
 | **Version**| **Channel** | **Date de publication** | **Version de build** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
-| 15.9.23 | Libérer | 12 mai, 2020 | 15.9.28307.1146 |
-| 15.9.22 | Libérer | 14 avril 2020 | 15.9.28307.1093 |
-| 15.9.21 | Libérer | 10 mars 2020 | 15.9.28307.1064 |
-| 15.9.20 | Libérer | 11 février 2020 | 15.9.28307.1033 |
+| 15.9.24 | Libérer | 9 juin 2020 | 15.9.28307.1177 |
+| 15.9.23 | Libérer | 12 mai 2020 | 15.9.28307.1146 |
+| 15.9.22 | Libérer | 14 avril 2020 | 15.9.28307.1093 |
+| 15.9.21 | Libérer | 10 mars 2020 | 15.9.28307.1064 |
+| 15.9.20 | Libérer | Février 11, 2020 | 15.9.28307.1033 |
 | 15.9.19 | Libérer | 14 janvier 2020 | 15.9.28307.1000 |
 | 15.0.28 | Libérer | 11 décembre 2019 | 15.0.26228.102 |
 | 15.9.18 | Libérer | 10 décembre 2019 | 15.9.28307.960 |
-| 15.9.17 | Libérer | 15 octobre 2019 | 15.9.28307.905 |
-| 15.9.16 | Libérer | 10 septembre 2019 | 15.9.28307.858 |
-| 15.0.27 | Libérer | 10 septembre 2019 | 15.0.26228.98 |
+| 15.9.17 | Libérer | 15 octobre 2019 | 15.9.28307.905 |
+| 15.9.16 | Libérer | 10 septembre 2019 | 15.9.28307.858 |
+| 15.0.27 | Libérer | 10 septembre 2019 | 15.0.26228.98 |
 | 15.9.15 | Libérer | 13 août 2019 | 15.9.28307.812 |
 | 15.0.26 | Libérer | 13 août 2019 | 15.0.26228.96 |
 | 15.9.14 | Libérer | 9 juillet 2019 | 15.9.28307.770 |
 | 15.0.25 | Libérer | 9 juillet 2019 | 15.0.26228.92 |
 | 15.9.13 | Libérer | 11 juin 2019 | 15.9.28307.718 |
 | 15.0.24 | Libérer | 11 juin 2019 | 15.0.26228.88 |
-| 15.9.12 | Libérer | 14 mai 2019 | 15.9.28307.665 |
-| 15.0.23 | Libérer | 14 mai 2019 | 15.0.26228.85 |
-| 15.9.11 | Libérer | 2 avril 2019 | 15.9.28307.586 |
+| 15.9.12 | Libérer | 14 mai 2019 | 15.9.28307.665 |
+| 15.0.23 | Libérer | 14 mai 2019 | 15.0.26228.85 |
+| 15.9.11 | Libérer | 2 avril 2019 | 15.9.28307.586 |
 | 15.9.10 | Libérer | 25 mars 2019 | 15.9.28307.557 |
 | 15.9.9 | Libérer | 12 mars 2019 | 15.9.28307.518 |
 | 15.0.22 | Libérer | 12 mars 2019 | 15.0.26228.76 |
@@ -262,7 +268,7 @@ Le tableau suivant répertorie les numéros de build et les dates de publication
 | 15.0.6 | Libérer | 14 novembre 2017 | 15.0.26228.17 |
 | 15.4.3 | Libérer | 8 novembre 2017 | 15.0.27004.2008 |
 | 15.5.0 Préversion 3 | Préversion | 6 novembre 2017 | 15.0.27102.0 |
-| 15.4.2 | Libérer | 31 octobre 2017 | 15.0.27004.2006 |
+| 15.4.2 | Libérer | 31 octobre 2017 | 15.0.27004.2006 |
 | 15.5.0 Préversion 2 | Préversion | 23 octobre 2017 | 15.0.27019.1 |
 | 15.4.1 | Libérer | 19 octobre 2017 | 15.0.27004.2005 |
 | 15.5 préversion 1 | Préversion | 11 octobre 2017 | 15.0.27009.1 |
@@ -325,7 +331,7 @@ Le tableau suivant répertorie les numéros de build et les dates de publication
 
 ## <a name="see-also"></a>Voir aussi
 
-* [Rythme de publication de Visual Studio](/visualstudio/productinfo/release-rhythm/)
+* [Fréquence des versions de Visual Studio](/visualstudio/productinfo/release-rhythm/)
 * [Guide de l’administrateur Visual Studio](visual-studio-administrator-guide.md)
 * [Utiliser les paramètres de ligne de commande pour installer Visual Studio](use-command-line-parameters-to-install-visual-studio.md)
 * [Outils de détection et de gestion des instances de Visual Studio](tools-for-managing-visual-studio-instances.md)

@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: 69f4f4c2b55670d510652b44a203b9f0eafcc53a
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: b8002d9e911c8d8c07a5aaf5286168e49a374a7c
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "68143545"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85292161"
 ---
 
 1. Fermez et rouvrez la console de gestion IIS pour afficher les options de configuration mises à jour dans l’IU.
@@ -12,6 +12,8 @@ ms.locfileid: "68143545"
 2. Dans IIS, cliquez avec le bouton droit sur le **site web par défaut**, choisissez **Déployer** > **Activer la publication Web Deploy**.
 
     ![Configurer la configuration Web Deploy](../../deployment/media/tutorial-configure-web-deploy-publishing.png)
+
+   Si vous ne voyez pas le menu **déployer** , reportez-vous à la section précédente pour vérifier que Web Deploy est en cours d’exécution.
 
 3. Dans la boîte de dialogue **Activer la publication Web Deploy**, examinez les paramètres.
 

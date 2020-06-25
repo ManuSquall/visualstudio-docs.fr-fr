@@ -9,41 +9,41 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0614552bbbadd9a472e0780db6f277d423446966
-ms.sourcegitcommit: aa302af53de342e75793bd05b10325939dc69b53
+ms.openlocfilehash: bd48ac8f5753521240ed3feb6003d945786820a3
+ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2020
-ms.locfileid: "75886453"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85329084"
 ---
 # <a name="display-data-in-blend-for-visual-studio"></a>Afficher des données dans Blend pour Visual Studio
 
 Vous pouvez afficher des exemples de données dans votre concepteur à mesure que vous personnalisez la disposition de vos pages. Vous pouvez générer des exemples de données de toutes pièces ou en utilisant une classe existante. Vous pouvez aussi vous connecter à des *données en direct* qui s’affichent dans votre application au moment où vous l’exécutez.
 
 > [!NOTE]
-> Le volet **données** dans Blend est pris en charge uniquement pour les projets qui ciblent .NET Framework. Elle n’est pas prise en charge pour les projets UWP ou les projets qui ciblent .NET Core. 
+> Le volet **données** dans Blend est pris en charge uniquement pour les projets qui ciblent .NET Framework. Elle n’est pas prise en charge pour les projets UWP ou les projets qui ciblent .NET Core.
 
-## <a name="generate-sample-data"></a>Générer un échantillon de données
+## <a name="generate-sample-data"></a>Générer un exemple de données
 
-Pour générer des exemples de données, ouvrez un document XAML. Dans le panneau **données** , choisissez le bouton **créer un exemple de données** ![créer un exemple d’icône de données](../designers/media/30540d76-7256-43ce-b5d9-4b2edf3d339f.png), puis choisissez **nouvel exemple de données**.
+Pour générer des exemples de données, ouvrez un document XAML. Dans le panneau **Données**, choisissez le bouton **Créer des exemples de données** ![Icône de création d’exemples de données](../designers/media/30540d76-7256-43ce-b5d9-4b2edf3d339f.png), puis **Nouvel exemple de données**.
 
 Définissez la structure de vos données dans le panneau **Données** et liez-la aux éléments d'interface utilisateur d'une page.
 
 ![Panneau Données](../designers/media/496d7ebc-fe46-42f6-95a8-57b0e5be5d49.png)
 
-Si vous souhaitez que vos exemples de données apparaissent dans vos pages lorsque vous exécutez l’application, choisissez **options de source de données** ![icône Options de source de données](../designers/media/ae1fd260-4f84-420d-b196-45fde357d81d.png), puis sélectionnez **activer lors**de l’exécution de l’application.
+Si vous souhaitez que vos exemples de données apparaissent dans vos pages au moment où vous exécutez l’application, choisissez **Options de source de données** ![Icône des options de source de données](../designers/media/ae1fd260-4f84-420d-b196-45fde357d81d.png), puis **Activer lorsque l’application est exécutée**.
 
 ![Élément de menu Activer lorsque l’application est exécutée](../designers/media/05d5356d-91bb-4e6b-b3f7-29b76852c4b3.png)
 
-**Regardez une brève vidéo :** ![icône de lecture](../designers/media/bldadminconsoleinitialconfigicon.PNG) [créer des exemples de données à partir de zéro](https://www.bing.com/videos/search?q=blend%20data&qs=n&form=QBVR&pq=blend%20data&sc=8-7&sp=-1&sk=#view=detail&mid=F8F2449A76956D480FD2F8F2449A76956D480FD2).
+**Regardez une courte vidéo :** ![Icône de lecture](../designers/media/bldadminconsoleinitialconfigicon.PNG) [Créer des exemples de données à partir de zéro](https://www.bing.com/videos/search?q=blend%20data&qs=n&form=QBVR&pq=blend%20data&sc=8-7&sp=-1&sk=#view=detail&mid=F8F2449A76956D480FD2F8F2449A76956D480FD2).
 
 ## <a name="generate-sample-data-from-a-class"></a>Générer des exemples de données à partir d'une classe
 
 Si vous avez déjà créé des classes qui décrivent la structure de vos données, vous pouvez générer des exemples de données à partir de celles-ci.
 
-Pour générer des exemples de données à partir d’une classe, ouvrez un document XAML, puis dans le volet **données** , cliquez sur le bouton **créer un exemple de données** ![créer un exemple de données](../designers/media/30540d76-7256-43ce-b5d9-4b2edf3d339f.png) icône, puis cliquez sur créer un **exemple de données à partir de la classe**.
+Pour générer des exemples de données à partir d’une classe, ouvrez un document XAML, puis, dans le panneau **Données**, cliquez sur le bouton **Créer des exemples de données** ![Icône de création d’exemples de données](../designers/media/30540d76-7256-43ce-b5d9-4b2edf3d339f.png), puis cliquez sur **Créer un exemple de données à partir de la classe**.
 
-**Regardez une brève vidéo :** ![icône de lecture](../designers/media/bldadminconsoleinitialconfigicon.PNG) [combiner une liaison de données avec Blend](https://www.youtube.com/watch?v=LSwPB6CAvjg).
+**Regardez une courte vidéo :** ![Icône de lecture](../designers/media/bldadminconsoleinitialconfigicon.PNG) [Combiner une liaison de données avec Blend](https://www.youtube.com/watch?v=LSwPB6CAvjg).
 
 ## <a name="see-also"></a>Voir aussi
 

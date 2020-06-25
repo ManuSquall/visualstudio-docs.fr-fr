@@ -1,7 +1,7 @@
 ---
 title: CvEnterSpan, fonction | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - cvmarkers/CvEnterSpanVA
 - cvmarkers/CvEnterSpanW
@@ -24,12 +24,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8d501f7c1e75f5b63c82c34f2dc0a4913d7a88c7
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: a5bb034d4a2501175d117256364082966a97af8a
+ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "62552630"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85328975"
 ---
 # <a name="cventerspan-function"></a>CvEnterSpan, fonction
 Marque le début d’un nouvel intervalle.
@@ -114,10 +114,10 @@ HRESULT CvEnterSpanExVA(
 
  `ppSpan` Adresse de la variable qui doit contenir l’objet d’intervalle résultant. L’adresse ne peut pas être Null et la variable peut avoir n’importe quelle valeur.
 
-## <a name="return-value"></a>Valeur de retour
+## <a name="return-value"></a>Valeur renvoyée
  S_OK lorsque le message est correctement écrit. Code d’erreur en cas d’erreur. Utilisez les macros SUCCEEDED/FAILED pour vérifier la condition d’erreur.
 
-## <a name="requirements"></a>Spécifications
+## <a name="requirements"></a>Configuration requise
  **En-tête :** *cvmarkers.h*
 
  **Unicode** : CvEnterSpanW, CvEnterSpanVW, CvEnterSpanExW, CvEnterSpanExVW
@@ -125,4 +125,4 @@ HRESULT CvEnterSpanExVA(
  **ANSI** : CvEnterSpanA, CvEnterSpanVA, CvEnterSpanExA, CvEnterSpanExVW
 
 ## <a name="see-also"></a>Voir aussi
-- [Référence de la bibliothèque de CMD](../profiling/cpp-library-reference.md)
+- [Informations de référence sur la bibliothèque C++](../profiling/cpp-library-reference.md)

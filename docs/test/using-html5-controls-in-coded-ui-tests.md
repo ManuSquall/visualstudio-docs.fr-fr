@@ -1,18 +1,18 @@
 ---
 title: Utilisation de contrôles HTML5 dans des tests codés de l'interface utilisateur
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 13f5da784a43df5146a66ca868bb6add9a702906
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 3519d1cc030c69880bcc047b4b4123785c4fb8b2
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75585585"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85289337"
 ---
 # <a name="using-html5-controls-in-coded-ui-tests"></a>Utilisation de contrôles HTML5 dans des tests codés de l’interface utilisateur
 
@@ -38,18 +38,18 @@ Les tests codés de l'interface utilisateur incluent la prise en charge d'une pa
 
 |Action|Enregistrement|Code généré|
 |-|---------------|-|
-|**Lire audio**<br /><br /> Directement à partir du contrôle ou dans le menu contextuel (clic droit) du contrôle.|Play \<nom> Audio from 00:00:00|HtmlAudio.Play(TimeSpan)|
-|**Rechercher un moment précis dans le fichier audio**|Seek \<nom> Audio to 00:01:48|HtmlAudio.Seek(TimeSpan)|
-|**Suspendre la lecture du fichier audio**<br /><br /> Directement à partir du contrôle ou dans le menu contextuel (clic droit) du contrôle.|Pause \<nom> Audio at 00:01:53|HtmlAudio.Pause(TimeSpan)|
-|**Désactiver le son**<br /><br /> Directement à partir du contrôle ou dans le menu contextuel (clic droit) du contrôle.|Mute \<nom> Audio|HtmlAudio.Mute()|
-|**Réactiver le son**<br /><br /> Directement à partir du contrôle ou dans le menu contextuel (clic droit) du contrôle.|Unmute \<nom> Audio|HtmlAudio.Unmute()|
-|**Modifier le volume audio**|Set volume of \<nom> Audio to 79%|HtmlAudio.SetVolume(float)|
+|**Lire l’audio**<br /><br /> Directement à partir du contrôle ou dans le menu contextuel (clic droit) du contrôle.|Lire l' \<name> audio de 00:00:00|HtmlAudio.Play(TimeSpan)|
+|**Rechercher un moment précis dans le fichier audio**|Rechercher \<name> du son sur 00:01:48|HtmlAudio.Seek(TimeSpan)|
+|**Suspendre la lecture du fichier audio**<br /><br /> Directement à partir du contrôle ou dans le menu contextuel (clic droit) du contrôle.|Suspendre l' \<name> audio à 00:01:53|HtmlAudio.Pause(TimeSpan)|
+|**Désactiver le son**<br /><br /> Directement à partir du contrôle ou dans le menu contextuel (clic droit) du contrôle.|Désactiver le \<name> son|HtmlAudio.Mute()|
+|**Réactiver le son**<br /><br /> Directement à partir du contrôle ou dans le menu contextuel (clic droit) du contrôle.|Activer le \<name> son|HtmlAudio.Unmute()|
+|**Modifier le volume audio**|Définir le volume de l' \<name> audio sur 79%|HtmlAudio.SetVolume(float)|
 
 Consultez [HTMLAudioElement](https://developer.mozilla.org/docs/Web/API/HTMLAudioElement) pour obtenir une liste de propriétés sur lesquelles vous pouvez ajouter une assertion.
 
-**Propriétés de recherche :** Les propriétés `HtmlAudio` `Id`de `Name` `Title`recherche pour sont , et .
+**Propriétés de recherche :** Les propriétés de recherche pour `HtmlAudio` sont `Id` , `Name` et `Title` .
 
-**Propriétés de filtre :** Les propriétés `HtmlAudio` `Src`de `Class` `ControlDefinition` filtre `TagInstance`pour sont , , et .
+**Propriétés du filtre :** Les propriétés de filtre `HtmlAudio` pour `Src` sont `Class` , `ControlDefinition` et `TagInstance` .
 
 > [!NOTE]
 > La durée de Seek et Pause peut être considérable. Lors de la lecture, le test codé de l'interface utilisateur attend que la durée spécifiée dans `(TimeSpan)` soit écoulée avant de suspendre l'audio. Si dans certaines circonstances particulières, la durée spécifiée s'est écoulée avant l'activation de la commande Pause, une exception est levée.
@@ -61,18 +61,18 @@ Consultez [HTMLAudioElement](https://developer.mozilla.org/docs/Web/API/HTMLAudi
 
 |Action|Enregistrement|Code généré|
 |-|---------------|-|
-|**Lecture vidéo**<br /><br /> Directement à partir du contrôle ou dans le menu contextuel (clic droit) du contrôle.|Play \<nom> Video from 00:00:00|HtmlVideo.Play(TimeSpan)|
-|**Rechercher un moment précis dans le fichier vidéo**|Seek \<nom> Video to 00:01:48|HtmlVideo.Seek(TimeSpan)|
-|**Suspendre la lecture du fichier vidéo**<br /><br /> Directement à partir du contrôle ou dans le menu contextuel (clic droit) du contrôle.|Pause \<nom> Video at 00:01:53|HtmlVideo.Pause(TimeSpan)|
-|**Désactiver le son de la vidéo**<br /><br /> Directement à partir du contrôle ou dans le menu contextuel (clic droit) du contrôle.|Mute \<nom> Video|HtmlVideo.Mute()|
-|**Réactiver le son de la vidéo**<br /><br /> Directement à partir du contrôle ou dans le menu contextuel (clic droit) du contrôle.|Unmute \<nom> Video|HtmlVideo.Unmute()|
-|**Modifier le volume de la vidéo**|Set volume of \<nom> Video to 79%||
+|**Lecture vidéo**<br /><br /> Directement à partir du contrôle ou dans le menu contextuel (clic droit) du contrôle.|Lire la \<name> vidéo à partir de 00:00:00|HtmlVideo.Play(TimeSpan)|
+|**Rechercher un moment précis dans le fichier vidéo**|Recherche \<name> de vidéos sur 00:01:48|HtmlVideo.Seek(TimeSpan)|
+|**Suspendre la lecture du fichier vidéo**<br /><br /> Directement à partir du contrôle ou dans le menu contextuel (clic droit) du contrôle.|Suspendre la \<name> vidéo à 00:01:53|HtmlVideo.Pause(TimeSpan)|
+|**Désactiver le son de la vidéo**<br /><br /> Directement à partir du contrôle ou dans le menu contextuel (clic droit) du contrôle.|\<name>Vidéo muet|HtmlVideo.Mute()|
+|**Réactiver le son de la vidéo**<br /><br /> Directement à partir du contrôle ou dans le menu contextuel (clic droit) du contrôle.|Vidéo muette \<name>|HtmlVideo.Unmute()|
+|**Modifier le volume de la vidéo**|Définir le volume de la \<name> vidéo sur 79%||
 
 Consultez [HTMLVideoElement](https://developer.mozilla.org/docs/Web/HTML/Element/video) pour obtenir une liste de propriétés sur lesquelles vous pouvez ajouter une assertion.
 
-**Propriétés de recherche :** Les propriétés `HtmlVideo` `Id`de `Name` `Title`recherche pour sont , et .
+**Propriétés de recherche :** Les propriétés de recherche pour `HtmlVideo` sont `Id` , `Name` et `Title` .
 
-**Propriétés de filtre :** Les propriétés `HtmlVideo` `Src`de `Poster` `Class`filtre `ControlDefinition` `TagInstance`pour sont , , , et .
+**Propriétés du filtre :** Les propriétés de filtre `HtmlVideo` pour `Src` sont `Poster` , `Class` , `ControlDefinition` et `TagInstance` .
 
 > [!NOTE]
 > Si vous rembobinez ou avancez rapidement la vidéo à l'aide d'étiquettes-30s ou +30s, celle-ci est agrégée pour rechercher le moment précis.
@@ -85,6 +85,6 @@ Consultez [HTMLVideoElement](https://developer.mozilla.org/docs/Web/HTML/Element
 ## <a name="see-also"></a>Voir aussi
 
 - [Éléments HTML](https://developer.mozilla.org/docs/Web/HTML/Element)
-- [Utilisez l’automatisation de l’interface utilisateur pour tester votre code](../test/use-ui-automation-to-test-your-code.md)
+- [Utiliser UI Automation pour tester votre code](../test/use-ui-automation-to-test-your-code.md)
 - [Créer des tests codés de l’interface utilisateur](../test/use-ui-automation-to-test-your-code.md)
-- [Configurations et plates-formes prises en charge pour les tests d’interface utilisateur codés et les enregistrements d’action](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)
+- [Configurations et plateformes prises en charge pour les tests codés de l’interface utilisateur et les enregistrements des actions](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)

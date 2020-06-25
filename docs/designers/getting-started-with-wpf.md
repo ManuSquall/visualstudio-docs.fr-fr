@@ -1,19 +1,19 @@
 ---
 title: Qu’est-ce que WPF ?
 ms.date: 04/16/2018
-ms.topic: conceptual
+ms.topic: overview
 ms.assetid: f3be98cb-870f-472c-9da5-cb815e4f6598
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: eb58a1a7bee7b07cc9b5434f7fa3e6bd295060d2
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 350b43741ec7e5646eefce225ecd157b6781ada1
+ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75589537"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85328432"
 ---
 # <a name="get-started-with-wpf"></a>Bien démarrer avec WPF
 
@@ -27,13 +27,13 @@ Cette section contient des rubriques de présentation et d’aide à la prise en
 |-|-|
 |Je veux rentrer dans le vif du sujet...|[Procédure pas à pas : ma première application de bureau WPF](/dotnet/framework/wpf/getting-started/walkthrough-my-first-wpf-desktop-application)|
 |Je souhaite comparer les outils de conception XAML...|[Concevoir du code XAML dans Visual Studio et Blend pour Visual Studio](../xaml-tools/designing-xaml-in-visual-studio.md)|
-|Vous débutez avec .NET ?|[Guide .NET](/dotnet/standard/)<br /><br />[Application Essentials](/dotnet/standard/application-essentials)<br /><br />[Démarrer avec Visual C #](../ide/quickstart-csharp-console.md)|
-|En savoir plus sur WPF...|[Vue d’ensemble de WPF](/dotnet/framework/wpf/introduction-to-wpf)<br /><br />[Vue d’ensemble XAML (WPF)](/dotnet/framework/wpf/advanced/xaml-overview-wpf)<br /><br />[Commandes](/dotnet/framework/wpf/controls/)<br /><br />[Vue d’ensemble de la liaison de données](/dotnet/desktop-wpf/data/data-binding-overview)<br /><br />[Liaison de données WPF avec LINQ à XML](/dotnet/framework/wpf/data/wpf-data-binding-with-linq-to-xml-overview)|
-|Vous êtes développeur Windows Forms ?|[Contrôles des formulaires Windows et contrôles WPF équivalents](/dotnet/framework/wpf/advanced/windows-forms-controls-and-equivalent-wpf-controls)<br /><br />[Scénarios pris en charge dans le cadre de l’interopérabilité WPF et Windows Forms](/dotnet/framework/wpf/advanced/wpf-and-windows-forms-interoperation)|
+|Vous débutez avec .NET ?|[Guide .NET](/dotnet/standard/)<br /><br />[Application Essentials](/dotnet/standard/application-essentials)<br /><br />[Prise en main de Visual C #](../ide/quickstart-csharp-console.md)|
+|En savoir plus sur WPF...|[Vue d’ensemble de WPF](/dotnet/framework/wpf/introduction-to-wpf)<br /><br />[Vue d’ensemble du langage XAML (WPF)](/dotnet/framework/wpf/advanced/xaml-overview-wpf)<br /><br />[Contrôles](/dotnet/framework/wpf/controls/)<br /><br />[Vue d’ensemble de la liaison de données](/dotnet/desktop-wpf/data/data-binding-overview)<br /><br />[Liaison de données WPF avec LINQ to XML](/dotnet/framework/wpf/data/wpf-data-binding-with-linq-to-xml-overview)|
+|Vous êtes développeur Windows Forms ?|[Contrôles Windows Forms et contrôles WPF équivalents](/dotnet/framework/wpf/advanced/windows-forms-controls-and-equivalent-wpf-controls)<br /><br />[Scénarios pris en charge dans le cadre de l’interopérabilité WPF et Windows Forms](/dotnet/framework/wpf/advanced/wpf-and-windows-forms-interoperation)|
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Guide de bureau pour WPF](/dotnet/desktop-wpf/overview/index)
+- [Guide du Bureau pour WPF](/dotnet/desktop-wpf/overview/index)
 - [Bibliothèque de classes (WPF)](/dotnet/framework/wpf/class-library-wpf)
-- [Ressources communautaires WPF](/dotnet/framework/wpf/getting-started/community-feedback)
+- [Ressources de la communauté WPF](/dotnet/framework/wpf/getting-started/community-feedback)
 - [Vue d’ensemble du développement d’applications](/dotnet/framework/wpf/app-development/index)

@@ -1,7 +1,7 @@
 ---
-title: 'DA0008 : Peu d’échantillons collectés | Microsoft Docs'
+title: Exemples DA0008-rares collectés | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - vs.performance.rules.DATooFewSamples
 - vs.performance.8
@@ -14,14 +14,14 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 15f8eeb370a3f1e61981e0e936704d33f6b44bbd
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: ea56799500a0b2b831145fcb968550dbf7b60a45
+ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74779439"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85328187"
 ---
-# <a name="da0008-few-samples-collected"></a>DA0008 : Peu d'échantillons collectés
+# <a name="da0008-few-samples-collected"></a>DA0008 : Peu d’échantillons collectés
 
 |||
 |-|-|
@@ -31,7 +31,7 @@ ms.locfileid: "74779439"
 |Message|Un petit nombre d’échantillons a été collecté. Augmentez la durée d’exécution ou utilisez un taux d’échantillonnage plus rapide pour des résultats plus significatifs.|
 |Type de règle|Information|
 
-## <a name="cause"></a>Cause :
+## <a name="cause"></a>Cause
  Seuls quelques échantillons ont été collectés pendant l’exécution du profilage.
 
 ## <a name="rule-description"></a>Description de la règle

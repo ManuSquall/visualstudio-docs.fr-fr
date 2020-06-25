@@ -2,19 +2,19 @@
 title: Attacher le profileur à une application .NET pour collecter des données de mémoire
 ms.custom: seodec18
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - dotnet
-ms.openlocfilehash: 04dcf800074476b285a07e36db5a85fa3a366585
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: dbe8f0cdb976dfb687071b231b2907b6b7124b3a
+ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74779127"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85328739"
 ---
 # <a name="how-to-attach-the-profiler-to-a-net-framework-stand-alone-application-to-collect-memory-data-by-using-the-command-line"></a>Guide pratique pour attacher le profileur à une application .NET Framework autonome et collecter des données de mémoire en utilisant la ligne de commande
 
@@ -48,30 +48,30 @@ Pour que vous puissiez mettre fin à une session de profilage, le profileur ne d
 
 3. Démarrez le profileur. Tapez :
 
-     **VSPerfCmd /start:sample /output:** `OutputFile` [ ]`Options`
+     **VSPerfCmd/start : exemple/output :** `OutputFile` [`Options`]
 
    - L’option [/start](../profiling/start.md)**:sample** initialise le profileur.
 
-   - La [/sortie](../profiling/output.md)**:** `OutputFile` option est requise avec **/démarrer**. `OutputFile` spécifie le nom et l’emplacement du fichier de données profilage (.vsp).
+   - L’option [/Output](../profiling/output.md)**:** `OutputFile` est requise avec **/Start**. `OutputFile` spécifie le nom et l’emplacement du fichier de données profilage (.vsp).
 
      Vous pouvez utiliser l’une des options suivantes avec l’option **/start:sample**.
 
      | Option | Description |
      | - | - |
-     | [/utilisateur](../profiling/user-vsperfcmd.md) **:**:`Domain`**\\**[ ]`UserName` | Spécifie le nom de domaine et d’utilisateur du compte propriétaire du processus profilé. Cette option n’est nécessaire que si le processus s’exécute sous le compte d’un utilisateur autre que celui connecté. Le propriétaire du processus est répertorié dans la colonne Nom d’utilisateur, sous l’onglet Processus du gestionnaire des tâches de Windows. |
+     | [/User](../profiling/user-vsperfcmd.md) **:**[ `Domain` **\\** ]`UserName` | Spécifie le nom de domaine et d’utilisateur du compte propriétaire du processus profilé. Cette option n’est nécessaire que si le processus s’exécute sous le compte d’un utilisateur autre que celui connecté. Le propriétaire du processus est répertorié dans la colonne Nom d’utilisateur, sous l’onglet Processus du gestionnaire des tâches de Windows. |
      | [/crosssession &#124; /cs](../profiling/crosssession.md) | Active le profilage des processus dans d’autres sessions. Cette option est nécessaire si l’application s’exécute dans une autre session. L’identificateur de session est répertorié dans la colonne ID de session, sous l’onglet Processus du gestionnaire des tâches de Windows. **/CS** peut être spécifié comme abréviation de **/crosssession**. |
-     | [/wincounter](../profiling/wincounter.md) **:**`WinCounterPath` | Spécifie le compteur de performances Windows dont les données doivent être collectées au cours du profilage. |
-     | [/automark](../profiling/automark.md) **:**`Interval` | À utiliser avec **/wincounter** uniquement. Spécifie le nombre de millisecondes écoulées entre les événements de collecte du compteur de performances Windows. La valeur par défaut est de 500 ms. |
+     | [/WinCounter](../profiling/wincounter.md) **:**`WinCounterPath` | Spécifie le compteur de performances Windows dont les données doivent être collectées au cours du profilage. |
+     | [/AutoMark](../profiling/automark.md) **:**`Interval` | À utiliser avec **/wincounter** uniquement. Spécifie le nombre de millisecondes écoulées entre les événements de collecte du compteur de performances Windows. La valeur par défaut est de 500 ms. |
 
 4. Si nécessaire, démarrez l’application cible de la façon habituelle.
 
 5. Attachez le profileur à l’application cible. Tapez :
 
-     **VSPerfCmd**[/attach](../profiling/attach.md) **:**`PID`&#124;`ProcName`[[/targetclr](../profiling/targetclr.md)**:**`Version`]  
+     **VSPerfCmd**[/Attach](../profiling/attach.md) **:**{ `PID`&#124;`ProcName` } [[/TargetCLR](../profiling/targetclr.md)**:** `Version` ]  
 
     - `PID` spécifie l’ID de processus de l’application cible. `ProcessName` spécifie le nom du processus. Notez que si vous spécifiez `ProcessName` et que plusieurs processus de même nom sont en cours d’exécution, les résultats sont imprévisibles. Vous pouvez afficher les ID de processus de tous les processus en cours d’exécution dans le gestionnaire des tâches de Windows.
 
-    - **/targetclr:** `Version` spécifie la version de l’heure de l’exécution de la langue commune (CLR) au profil lorsque plus d’une version de l’exécution est chargée dans une application. facultatif.
+    - **/TargetCLR :** `Version` spécifie la version du common language runtime (CLR) à profiler lorsque plusieurs versions du runtime sont chargées dans une application. facultatif.
 
 ## <a name="control-data-collection"></a>Contrôler la collecte des données
 
@@ -83,9 +83,9 @@ Pendant l’exécution de l’application cible, vous pouvez contrôler la colle
 
     |Option|Description|
     |------------|-----------------|
-    |[/globalon /globaloff](../profiling/globalon-and-globaloff.md)|Démarre (**/globalon**) ou arrête (**/globaloff**) la collecte des données pour tous les processus.|
-    |[/processon](../profiling/processon-and-processoff.md) **:** `PID` [/processoff](../profiling/processon-and-processoff.md) **:**`PID`|Démarre (**/processon**) ou arrête (**/processoff**) la collecte des données pour le processus spécifié par le `PID`.|
-    |[/attacher](../profiling/attach.md) **:**:`PID`&#124;`ProcName`'/détache '**' '** `ProcName`' ' ' ' ' '&#124;' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' [' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' '](../profiling/detach.md)`PID`|**/attach** démarre la collecte de données pour le processus spécifié par le `PID` ou par le nom du processus (ProcName). **/détacher** arrête la collecte de données pour le processus spécifié ou pour tous les processus si un processus spécifique n’est pas spécifié.|
+    |[/GlobalOn/globaloff](../profiling/globalon-and-globaloff.md)|Démarre (**/globalon**) ou arrête (**/globaloff**) la collecte des données pour tous les processus.|
+    |[/ProcessOn](../profiling/processon-and-processoff.md) **:** `PID` [/ProcessOff](../profiling/processon-and-processoff.md) **:**`PID`|Démarre (**/processon**) ou arrête (**/processoff**) la collecte des données pour le processus spécifié par le `PID`.|
+    |[/Attach](../profiling/attach.md) **:**{ `PID`&#124;`ProcName` } [/Detach](../profiling/detach.md)[**:**{ `PID`&#124;`ProcName` }]|**/attach** démarre la collecte de données pour le processus spécifié par le `PID` ou par le nom du processus (ProcName). **/Detach** arrête la collecte de données pour le processus spécifié ou pour tous les processus si aucun processus spécifique n’est spécifié.|
 
 ## <a name="end-the-profiling-session"></a>Arrêter la session de profilage
 
@@ -95,7 +95,7 @@ Pour que vous puissiez mettre fin à une session de profilage, le profileur ne d
 
 1. Effectuez l’une des opérations suivantes pour détacher le profileur de l’application cible :
 
-    - Type **VSPerfCmd /detach**
+    - Tapez **VSPerfCmd/detach**
 
          -ou-
 
@@ -103,7 +103,7 @@ Pour que vous puissiez mettre fin à une session de profilage, le profileur ne d
 
 2. Fermez le profileur. Tapez :
 
-     **VSPerfCmd**  [/shutdown](../profiling/shutdown.md)
+     **VSPerfCmd**  [/Shutdown](../profiling/shutdown.md)
 
 3. (Facultatif) Effacez les variables d’environnement de profilage. Tapez :
 
@@ -111,5 +111,5 @@ Pour que vous puissiez mettre fin à une session de profilage, le profileur ne d
 
 ## <a name="see-also"></a>Voir aussi
 
-[Profil applications](../profiling/command-line-profiling-of-stand-alone-applications.md)
-autonomes[.NET vues de données de mémoire](../profiling/dotnet-memory-data-views.md)
+[Profiler des applications](../profiling/command-line-profiling-of-stand-alone-applications.md) 
+ autonomes [Vues de données de mémoire .net](../profiling/dotnet-memory-data-views.md)

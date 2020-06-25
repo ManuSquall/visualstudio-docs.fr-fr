@@ -1,7 +1,7 @@
 ---
-title: Guide pratique pour choisir une méthode de collecte | Microsoft Docs
+title: 'Comment : choisir des méthodes de collecte | Microsoft Docs'
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - performance tools, choosing collection method
 - profiling tools, choosing collection method
@@ -12,12 +12,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 3c633e12b2e0bf157ffd94ef06a5898fdc3ec830
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 4dbc54fc394f75778f74d9b6b02e93882129cdb9
+ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74776343"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85329269"
 ---
 # <a name="how-to-choose-collection-methods"></a>Guide pratique pour choisir des méthodes de collecte
 
@@ -36,7 +36,7 @@ Vous pouvez utiliser la propriété **Method** de session de performance pour sp
 | **Échantillonnage de l’UC** | Collecte les statistiques d’application qui sont utiles pour l’analyse initiale et l’analyse des problèmes d’utilisation du processeur. |
 | **Instrumentation** | Collecte des données de minutage détaillées utiles pour une analyse approfondie et pour l’analyse des problèmes de performances d’E/S. |
 | **Allocation de mémoire .NET** | Collecte les données d’allocation de mémoire du .NET Framework à l’aide de la méthode de profilage par échantillonnage. |
-| **Concurrence** | Collecte des données numériques concernant les conflits de ressources. |
+| **Concurrency** | Collecte des données numériques concernant les conflits de ressources. |
 
 ## <a name="performance-explorer"></a>Explorateur de performances
 
@@ -92,6 +92,6 @@ Vous pouvez utiliser la propriété **Method** de session de performance pour sp
 
 ## <a name="see-also"></a>Voir aussi
 
-[Configurer des sessions de](../profiling/configuring-performance-sessions.md)
-performance[Comprendre les valeurs de données d’échantillonnage Propriétés](../profiling/understanding-sampling-data-values.md)
-[de session de performance](../profiling/performance-session-properties.md)
+[Configurer des sessions](../profiling/configuring-performance-sessions.md) 
+ de performance [Comprendre les valeurs](../profiling/understanding-sampling-data-values.md) 
+ des données d’échantillonnage [Propriétés](../profiling/performance-session-properties.md) de la session de performance

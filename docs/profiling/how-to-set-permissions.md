@@ -1,7 +1,7 @@
 ---
-title: Guide pratique pour définir les autorisations | Microsoft Docs
+title: Comment définir des autorisations | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - profiling, setting permissions
 - security [Visual Studio ALM], setting permissions
@@ -14,12 +14,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: c1ab7705c7ab46b07b08b707ce447f37c581036a
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 03f508bd2ff904898d77cd5ac07c30992da63b46
+ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74774587"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85328939"
 ---
 # <a name="how-to-set-permissions"></a>Guide pratique pour définir les autorisations
 
@@ -36,7 +36,7 @@ Les membres du groupe Utilisateurs peuvent exécuter les outils de profilage si 
 
 ## <a name="to-create-a-user-account-that-has-user-permissions"></a>Pour créer un compte d’utilisateur disposant d’autorisations utilisateurs
 
-1. Cliquez à droite **mon ordinateur,** puis cliquez sur **Gérer**.
+1. Cliquez avec le bouton droit sur **poste de travail** , puis cliquez sur **gérer**.
 
      La fenêtre **Gestion de l’ordinateur** s’ouvre.
 
@@ -48,7 +48,7 @@ Les membres du groupe Utilisateurs peuvent exécuter les outils de profilage si 
 
 4. Renseignez les champs de cette boîte de dialogue avec les informations du compte d’utilisateur que vous créez. Permet de spécifier un mot de passe. Cochez éventuellement la case qui exige que l’utilisateur modifie le mot de passe à la prochaine connexion.
 
-5. Cliquez **sur Créer** et ensuite cliquez sur **Fermer**.
+5. Cliquez sur **créer** , puis sur **Fermer**.
 
      Le nouvel utilisateur apparaît dans le groupe Utilisateurs, un groupe d’utilisateurs qui ne disposent pas d’autorisations d’administrateur.
 
@@ -64,13 +64,13 @@ Les membres du groupe Utilisateurs peuvent exécuter les outils de profilage si 
 
 2. Cliquez avec le bouton droit sur le dossier, puis cliquez sur **Propriétés**.
 
-     Le ** \<nom du dossier>** boîte de dialogue Properties apparaît.
+     La boîte de dialogue ** \<folder name> Propriétés** s’affiche.
 
 3. Cliquez sur l’onglet **Sécurité**.
 
 4. Cliquez sur le nom du compte de l’utilisateur dans la zone **Noms de groupes ou d’utilisateurs**.
 
-5. Dans la zone **Autorisations pour \<nom_utilisateur>**, cochez la case en regard de **Contrôle total**.
+5. Dans la zone **autorisations \<user name> pour** , activez la case à cocher **contrôle total**.
 
 6. Cliquez sur **OK**.
 
@@ -104,7 +104,7 @@ Les membres du groupe Utilisateurs peuvent exécuter les outils de profilage si 
     vsperfcmd /admin:security,allow,<right[,right],<user name|group name>
     ```
 
-     Cette commande accorde au compte \<nom_utilisateur> ou \<nom_groupe> l’accès aux outils de profilage. L’option \<right> détermine les fonctionnalités de profilage accessibles à l’utilisateur. \<right> option peut avoir une ou plusieurs des valeurs suivantes :
+     Cette commande accorde au \<user name> compte ou l' \<group name> accès aux outils de profilage. L' \<right> option détermine les fonctionnalités de profilage auxquelles l’utilisateur peut accéder. L' \<right> option peut être une ou plusieurs des valeurs suivantes :
 
     - FullAccess : autorise l’accès à toutes les méthodes de profilage, notamment la collecte des données de performance à partir des services, l’échantillonnage et le profilage intersession.
 
@@ -122,6 +122,6 @@ Les membres du groupe Utilisateurs peuvent exécuter les outils de profilage si 
 
 ## <a name="see-also"></a>Voir aussi
 
-[Configurer les sessions de](../profiling/configuring-performance-sessions.md)
-performance[VSPerfCmd](../profiling/vsperfcmd.md)
-[Profiling et Windows Vista Security](../profiling/profiling-and-windows-vista-security.md)
+[Configurer des sessions](../profiling/configuring-performance-sessions.md) 
+ de performance [VSPerfCmd](../profiling/vsperfcmd.md) 
+ [Profilage et sécurité Windows Vista](../profiling/profiling-and-windows-vista-security.md)

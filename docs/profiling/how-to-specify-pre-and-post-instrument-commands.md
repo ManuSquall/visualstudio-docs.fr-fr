@@ -1,7 +1,7 @@
 ---
-title: Guide pratique pour spécifier des commandes de pré-instrumentation et de post-instrumentation | Microsoft Docs
+title: Guide pratique pour spécifier des commandes de pré-instrumentation et de publication | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - vs.performance.property.instrument
 helpviewer_keywords:
@@ -15,12 +15,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 22ad5558ed01e5bb1b8d12b7a4cc65b4d677d0cd
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: ba91e04342b9b78e3c6acae5296857a6f00f2aba
+ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74778711"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85328995"
 ---
 # <a name="how-to-specify-pre--and-post-instrument-commands"></a>Guide pratique pour spécifier des commandes de pré-instrumentation et de post-instrumentation
 
@@ -45,7 +45,7 @@ Pour obtenir le chemin des outils de profilage, consultez [Spécifier le chemin 
 3. Tapez la commande dans la zone de texte **Ligne de commande** sous **Événements de pré-instrumentation**.
 
     > [!NOTE]
-    > Vous pouvez cliquer sur le bouton ellipsis **(...)** qui est adjacent à la boîte **de ligne de commande** pour naviguer et sélectionner le fichier approprié .exe, .cmd, ou .bat.
+    > Vous pouvez cliquer sur le bouton de sélection **(...)** qui est adjacent à la zone **ligne de commande** pour rechercher et sélectionner le fichier. exe,. cmd ou. bat approprié.
 
 4. Cliquez sur **OK**.
 
@@ -64,7 +64,7 @@ Pour obtenir le chemin des outils de profilage, consultez [Spécifier le chemin 
 3. Tapez la commande dans la zone de texte **Ligne de commande** sous **Événements de post-instrumentation**.
 
     > [!NOTE]
-    > Vous pouvez cliquer sur le bouton ellipsis **(...)** qui est adjacent à la boîte **de ligne de commande** pour naviguer et sélectionner le fichier approprié .exe, .cmd, ou .bat.
+    > Vous pouvez cliquer sur le bouton de sélection **(...)** qui est adjacent à la zone **ligne de commande** pour rechercher et sélectionner le fichier. exe,. cmd ou. bat approprié.
 
 4. Cliquez sur **OK**.
 

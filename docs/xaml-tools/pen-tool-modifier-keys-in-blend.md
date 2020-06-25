@@ -2,19 +2,19 @@
 title: Touches de modification de l'outil Plume
 titleSuffix: Blend for Visual Studio
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 ms.assetid: c3ab14c6-a320-46db-a6b3-7fd1ca261587
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 95a00fe4b87a0a9e1ee55497b84c59536d66d285
-ms.sourcegitcommit: ade07bd1cf69b8b494d171ae648cfdd54f7800d3
+ms.openlocfilehash: 2e3f025e31a36edebdd318435d233efd2aab4857
+ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "81649444"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85328374"
 ---
 # <a name="pen-tool-modifier-keys-in-blend-for-visual-studio"></a>Touches de modification de l’outil Plume dans Blend pour Visual Studio
 
@@ -26,7 +26,7 @@ Le tableau suivant répertorie les raccourcis que vous pouvez utiliser pour modi
 |Créer un point pour commencer un segment de ligne courbe|Cliquez pour créer le point, puis faites glisser pour ajuster les poignées de tangente, avant de relâcher le bouton de la souris.|![Créer un point pour commencer un segment de ligne courbe](../designers/media/0bfb1b71-80ac-4ad4-aed8-40e09f8b7ab8.png)<br /><br /> Pointeur du stylet|
 |Ajustez la dernière tangente sans la contrainte de lissage, ce qui vous permet de faire un angle aigu|Cliquez pour créer le point, puis appuyez sur **Alt** avant de relâcher le bouton de la souris.|![Ajuster la dernière tangente sans la contrainte de lissage](../designers/media/317e5475-b70c-489f-9477-110a98639ade.png)<br /><br /> Pointeur d'ajustement du stylet|
 |Divisez la dernière tangente, de façon à ce que les points de terminaison de la tangente fonctionnent indépendamment, ce qui vous permet de faire un angle aigu.|Cliquez pour créer le point, puis maintenez la touche **Alt** enfoncée et faites glisser avant de relâcher le bouton de la souris.|![Diviser la dernière tangente de façon à ce que les points de terminaison de la tangente fonctionnent indépendamment](../designers/media/317e5475-b70c-489f-9477-110a98639ade.png)<br /><br /> Pointeur d'ajustement du stylet|
-|Déplacez le point de terminaison de la tangente autour du nouveau point par incréments de 15 degrés.|Cliquez pour créer le nouveau point, puis maintenez **Shift**+**Alt** et faites glisser avant de libérer le bouton de la souris|![Déplacez le point de terminaison de la tangente autour du nouveau point par incréments de 15 degrés.](../designers/media/317e5475-b70c-489f-9477-110a98639ade.png)<br /><br /> Pointeur d'ajustement du stylet|
+|Déplacez le point de terminaison de la tangente autour du nouveau point par incréments de 15 degrés.|Cliquez pour créer le point, puis maintenez la **touche Maj** + **ALT** enfoncée et faites glisser avant de relâcher le bouton de la souris.|![Déplacez le point de terminaison de la tangente autour du nouveau point par incréments de 15 degrés.](../designers/media/317e5475-b70c-489f-9477-110a98639ade.png)<br /><br /> Pointeur d'ajustement du stylet|
 |Réduire la tangente à un point de terminaison à une longueur nulle|Cliquez sur le point de terminaison.|![Réduire la tangente à un point de terminaison à une longueur nulle](../designers/media/317e5475-b70c-489f-9477-110a98639ade.png)<br /><br /> Pointeur d'ajustement du stylet|
 |Ajouter un nouveau point à un tracé existant|Cliquez sur le tracé à l'emplacement où vous voulez le nouveau point.|![Ajouter un nouveau point à un tracé existant](../designers/media/b004ad5a-33a4-46ae-81c0-20be0d819332.png)<br /><br /> Pointeur d'insertion du stylet|
 |Supprimer un point dans un tracé|Placez le curseur sur un point existant et cliquez.|![Supprimer un point du chemin](../designers/media/08a64b78-f3df-4730-8169-c56b5631b071.png)<br /><br /> Pointeur de suppression du stylet|

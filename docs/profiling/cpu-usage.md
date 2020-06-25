@@ -2,25 +2,25 @@
 title: Analyser l’utilisation de l’UC | Microsoft Docs
 ms.custom: seodec18
 ms.date: 04/02/2020
-ms.topic: conceptual
+ms.topic: how-to
 ms.assetid: 7501a20d-04a1-480f-a69c-201524aa709d
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 88272af1733dbbaf7f46743388a8ecb6522e9f1a
-ms.sourcegitcommit: 9c1cecaff4d9955276eee7865b78d47679dd1e2a
+ms.openlocfilehash: b372e0f30c91a605be047e921bc2b7672a1cf468
+ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "80638837"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85329438"
 ---
 # <a name="analyze-cpu-usage"></a>Analyser l’utilisation de l’UC
 
 Une bonne façon de commencer l’investigation des problèmes de performances dans votre application consiste à comprendre son utilisation de l’UC. L’outil de performances **Utilisation de l’UC** montre le temps et le pourcentage de l’UC consacré à l’exécution du code dans les applications C++, C#/Visual Basic et JavaScript.
 
-Vous pouvez exécuter l’outil **Utilisation de l’UC** sur un projet Visual Studio ouvert ou sur une application du Microsoft Store installée, ou bien l’attacher à une application ou un processus en cours d’exécution. Pour plus d’informations, voir [outils de profilage Run avec ou sans le débbugger](../profiling/running-profiling-tools-with-or-without-the-debugger.md).
+Vous pouvez exécuter l’outil **Utilisation de l’UC** sur un projet Visual Studio ouvert ou sur une application du Microsoft Store installée, ou bien l’attacher à une application ou un processus en cours d’exécution. Pour plus d’informations, consultez [exécuter les outils de profilage avec ou sans le débogueur](../profiling/running-profiling-tools-with-or-without-the-debugger.md).
 
 Vous pouvez exécuter l’outil **Utilisation de l’UC** avec ou sans débogage. Dans le débogueur, vous pouvez activer et désactiver le profilage de l’UC, et afficher une répartition par fonction de l’utilisation de l’UC. Vous pouvez afficher les résultats de l’utilisation de l’UC quand l’exécution est suspendue, par exemple à un point d’arrêt.
 
@@ -33,23 +33,23 @@ En règle générale, c’est l’ordinateur local qui réplique le mieux l’ex
 
 ## <a name="collect-cpu-usage-data"></a>Collecter les données d'utilisation de l'UC
 
-1. Dans le projet Visual Studio, définissez la configuration de la solution pour **libérer** et sélectionner **Local Windows Debugger** (ou Local **Machine**) comme cible de déploiement.
+1. Dans le projet Visual Studio, définissez la configuration de solution sur **Release** et sélectionnez **débogueur Windows local** (ou **ordinateur local**) comme cible de déploiement.
 
     ![Sélectionner la version et l'ordinateur local](../profiling/media/cpuuse_selectreleaselocalmachine.png "Sélectionner la version et l'ordinateur local")
 
-1. Sélectionnez **Debug** > **Performance Profiler**.
+1. Sélectionnez **Déboguer**le  >  **profileur de performances**.
 
 1. Sous **Outils disponibles**, sélectionnez **Utilisation de l’UC**, puis **Démarrer**.
 
-    ![Sélectionner l’utilisation du processeur](../profiling/media/cpuuse_lib_choosecpuusage.png "Sélectionner l’utilisation du processeur")
+    ![Sélectionner l’utilisation de l’UC](../profiling/media/cpuuse_lib_choosecpuusage.png "Sélectionner l’utilisation de l’UC")
 
 4. Une fois que l’application a démarré, la session de diagnostic commence et affiche les données d’utilisation de l’UC. Quand vous avez terminé la collecte des données, sélectionnez **Arrêter la collecte**.
 
-   ![Arrêter la collecte de données d’utilisation de CPU](../profiling/media/cpu_use_wt_stopcollection.png "Arrêter la collecte de données d’utilisation de CPU")
+   ![Arrêter la collecte des données d’utilisation de l’UC](../profiling/media/cpu_use_wt_stopcollection.png "Arrêter la collecte des données d’utilisation de l’UC")
 
    L'outil Utilisation de l'UC analyse les données et affiche le rapport.
 
-   ![Rapport d’utilisation de l’UPC](../profiling/media/cpu_use_wt_report.png "Rapport d’utilisation de l’UPC")
+   ![Rapport d’utilisation de l’UC](../profiling/media/cpu_use_wt_report.png "Rapport d’utilisation de l’UC")
 
 ## <a name="analyze-the-cpu-usage-report"></a>Analyser le rapport d'utilisation de l'UC
 
@@ -74,10 +74,10 @@ Pour afficher l’arborescence des appels, sélectionnez le nœud parent dans le
 #### <a name="call-tree-structure"></a><a name="BKMK_Call_tree_structure"></a> Structure de l’arborescence des appels
 
 ::: moniker range=">=vs-2019"
-![Structure d’arbre d’appel](../profiling/media/vs-2019/cpu-use-wt-getmaxnumbercalltree-annotated.png "Structure de l'arborescence des appels")
+![Structure de l’arborescence des appels](../profiling/media/vs-2019/cpu-use-wt-getmaxnumbercalltree-annotated.png "Structure de l'arborescence des appels")
 ::: moniker-end
 ::: moniker range="vs-2017"
-![Structure d’arbre d’appel](../profiling/media/cpu_use_wt_getmaxnumbercalltree_annotated.png "Structure de l'arborescence des appels")
+![Structure de l’arborescence des appels](../profiling/media/cpu_use_wt_getmaxnumbercalltree_annotated.png "Structure de l'arborescence des appels")
 ::: moniker-end
 
 |||
@@ -108,17 +108,17 @@ Pour rechercher un nom de fonction, utilisez la zone de recherche. Placez le cur
 ![Rechercher du code externe imbriqué](../profiling/media/cpu_use_wt_showexternalcodetoowide_found.png "Rechercher du code externe imbriqué")
 ::: moniker-end
 
-### <a name="asynchronous-functions-in-the-cpu-usage-call-tree"></a><a name="BKMK_Asynchronous_functions_in_the_CPU_Usage_call_tree"></a>Fonctions asynchrones dans l’arbre d’appel d’utilisation de CPU
+### <a name="asynchronous-functions-in-the-cpu-usage-call-tree"></a><a name="BKMK_Asynchronous_functions_in_the_CPU_Usage_call_tree"></a>Fonctions asynchrones dans l’arborescence des appels de l’utilisation de l’UC
 
  Quand le compilateur rencontre une méthode asynchrone, il crée une classe masquée pour contrôler l’exécution de la méthode. Conceptuellement, la classe est une machine à états. Elle a des fonctions générées par le compilateur qui appellent de façon asynchrone les méthodes d’origine ainsi que les rappels, le planificateur et les itérateurs nécessaires pour les exécuter. Quand une méthode parente appelle la méthode d’origine, le compilateur supprime la méthode du contexte d’exécution du parent et exécute les méthodes de la classe masquée dans le contexte du code système et framework qui contrôle l’exécution de l’application. Les méthodes asynchrones sont souvent, mais pas toujours, exécutées sur un ou plusieurs threads différents. Ce code est affiché dans l’arborescence des appels **Utilisation de l’UC** en tant qu’enfants du nœud **[Code externe]** situé immédiatement sous le nœud supérieur de l’arborescence.
 
 Dans l’exemple suivant, les deux premiers nœuds sous **[Code externe]** sont les méthodes générées par le compilateur de la classe de la machine à états. Le troisième nœud est l’appel à la méthode d’origine.
 
-![Noeud asynchrone](media/cpu_use_wt_getmaxnumberasync_selected.png "Noeud asynchrone")
+![Nœud asynchrone](media/cpu_use_wt_getmaxnumberasync_selected.png "Nœud asynchrone")
 
 Développez les méthodes générées pour voir ce qui se passe :
 
-![Noeud asynchrone élargi](media/cpu_use_wt_getmaxnumberasync_expandedcalltree.png "Noeud asynchrone élargi")
+![Nœud asynchrone développé](media/cpu_use_wt_getmaxnumberasync_expandedcalltree.png "Nœud asynchrone développé")
 
 - `MainPage::GetMaxNumberAsyncButton_Click` gère simplement la liste des valeurs de la tâche, calcule le nombre maximal de résultats et affiche la sortie.
 

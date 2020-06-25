@@ -1,7 +1,7 @@
 ---
-title: Guide pratique pour sérialiser les informations de symboles | Microsoft Docs
+title: Comment sérialiser les informations de symboles | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - VS.ToolsOptionsPages.Performance.General
 helpviewer_keywords:
@@ -14,12 +14,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 202c30b1786e7e3ddb27583ddaeda9180d680b53
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: d28df6d36b1b91974483ae793e6e57f064974183
+ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74774885"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85328530"
 ---
 # <a name="how-to-serialize-symbol-information"></a>Guide pratique pour sérialiser les informations de symboles
 Vous pouvez sérialiser les symboles nécessaires à l’analyse de votre application. La sérialisation de symboles permet d’ajouter des symboles au fichier .*vsp*. L’ajout d’informations de symboles au fichier .*vsp* permet aux autres utilisateurs d’analyser un rapport de performances sans avoir accès aux symboles d’origine. Si les symboles ne sont pas sérialisés, vous devez disposer des fichiers .*exe* et .*pdb* instrumentés d’origine pour analyser le fichier .*vsp*.
@@ -36,5 +36,5 @@ Vous pouvez sérialiser les symboles nécessaires à l’analyse de votre applic
 
 ## <a name="see-also"></a>Voir aussi
 - [Configurer des sessions de performance](../profiling/configuring-performance-sessions.md)
-- [Comment : Informations de symbole De windows de référence](../profiling/how-to-reference-windows-symbol-information.md)
+- [Comment : référencer les informations de symboles Windows](../profiling/how-to-reference-windows-symbol-information.md)
 - [Guide pratique pour enregistrer des fichiers de rapports analysés](/previous-versions/visualstudio/visual-studio-2010/bb763106\(v\=vs.100\))

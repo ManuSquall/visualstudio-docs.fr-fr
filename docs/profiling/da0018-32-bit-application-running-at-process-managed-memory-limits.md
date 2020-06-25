@@ -1,7 +1,7 @@
 ---
-title: 'DA0018 : Application 32 bits s’exécutant aux limites de la mémoire managée du processus | Microsoft Docs'
+title: Application DA0018-32 bits s’exécutant aux limites de la mémoire managée du processus | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - vs.performance.18
 - vs.performance.DA0018
@@ -13,12 +13,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - dotnet
-ms.openlocfilehash: d7bebd25f499131b4beda109ebb9ac468c2435b1
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 43535ed4a2e4e3a941b18fe315c3a5015639a0c6
+ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74780063"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85328441"
 ---
 # <a name="da0018-32-bit-application-running-at-process-managed-memory-limits"></a>DA0018 : application 32 bits s'exécutant aux limites de la mémoire managée du processus
 
@@ -32,7 +32,7 @@ ms.locfileid: "74780063"
 
  Lorsque vous effectuez un profilage à l’aide de la méthode d’échantillonnage, de mémoire .NET ou de conflit des ressources, vous devez collecter au moins 10 échantillons pour déclencher cette règle.
 
-## <a name="cause"></a>Cause :
+## <a name="cause"></a>Cause
  Les données système collectées pendant le profilage indiquent que les tas de mémoire .NET Framework approchent de la taille maximale autorisée pour les tas managés d’un processus 32 bits. Cette taille maximale est une valeur par défaut. Elle est basée sur la quantité totale d’espace d’adressage de processus pouvant être allouée pour les octets privés. La valeur signalée correspond à la valeur maximale des tas qui a été observée quand le processus profilé était actif. Effectuez un nouveau profilage à l’aide de la méthode de profilage de mémoire .NET et optimisez la manière dont l’application utilise les ressources managées.
 
  Si la taille des tas managés approche de la limite définie par défaut, il se peut que vous deviez appeler plus fréquemment le processus de garbage collection automatique. La surcharge de la gestion de la mémoire sera ainsi augmentée.
@@ -47,7 +47,7 @@ ms.locfileid: "74780063"
  Lorsque la taille totale des tas managés approche de la limite définie par défaut, la surcharge de la gestion de mémoire augmente généralement jusqu’à affecter la réactivité et la scalabilité de l’application.
 
 ## <a name="how-to-investigate-a-warning"></a>Comment rechercher la cause d’un avertissement
- Double-cliquez sur le message dans la fenêtre Error List pour naviguer vers la vue [Marks.](../profiling/marks-view.md) Accédez aux colonnes **Mémoire CLR .NET\\Nombre d’octets dans tous les tas** et **Nombre total d’octets validés**. Déterminez s’il existe des phases spécifiques de l’exécution du programme durant lesquelles l’allocation de mémoire allouée est plus importante. Comparez les valeurs de la colonne **Nombre d’octets dans tous les tas** au taux de garbage collection signalé dans les colonnes **Mémoire CLR .NET\\Nombre de collections de la génération 0**, **Mémoire CLR .NET\\Nombre de collections de la génération 1** et **Mémoire CLR .NET\\Nombre de collections de la génération 2**, pour déterminer si le modèle des allocations de mémoire managée affecte le taux de garbage collection.
+ Double-cliquez sur le message dans la fenêtre Liste d’erreurs pour accéder à la vue [marques](../profiling/marks-view.md) . Accédez aux colonnes **Mémoire CLR .NET\\Nombre d’octets dans tous les tas** et **Nombre total d’octets validés**. Déterminez s’il existe des phases spécifiques de l’exécution du programme durant lesquelles l’allocation de mémoire allouée est plus importante. Comparez les valeurs de la colonne **Nombre d’octets dans tous les tas** au taux de garbage collection signalé dans les colonnes **Mémoire CLR .NET\\Nombre de collections de la génération 0**, **Mémoire CLR .NET\\Nombre de collections de la génération 1** et **Mémoire CLR .NET\\Nombre de collections de la génération 2**, pour déterminer si le modèle des allocations de mémoire managée affecte le taux de garbage collection.
 
  Dans une application .NET Framework, le common language runtime limite la taille totale des tas managés à une taille légèrement inférieure à la moitié de la taille maximale de la partie privée d’un espace d’adressage de processus. Pour un processus 32 bits s’exécutant sur un ordinateur 32 bits, la taille maximale de la partie privée de l’espace d’adressage de processus est de 2 Go. Lorsque la taille totale des tas managés commence à approcher de la limite par défaut, la surcharge de la gestion de mémoire peut augmenter et entraîner une baisse des performances de l’application.
 
@@ -59,9 +59,9 @@ ms.locfileid: "74780063"
 
 - Allégez les contraintes architecturales associées à la taille maximale de la mémoire virtuelle d’un processus 32 bits.
 
-  Pour optimiser la manière dont l’application utilise les ressources de mémoire managée, collectez des données d’allocation de mémoire managée lors d’une exécution de profilage par allocation de mémoire .NET. Examinez les rapports [.NET Memory Data Views](../profiling/dotnet-memory-data-views.md) pour comprendre le modèle d’allocation de mémoire de l’application.
+  Pour optimiser la manière dont l’application utilise les ressources de mémoire managée, collectez des données d’allocation de mémoire managée lors d’une exécution de profilage par allocation de mémoire .NET. Consultez les rapports [vues de données de mémoire .net](../profiling/dotnet-memory-data-views.md) pour comprendre le modèle d’allocation de mémoire de l’application.
 
-  Utilisez la vue à vie de [l’objet](../profiling/object-lifetime-view.md) pour déterminer lequel des objets de données du programme survit en génération, puis récupéré à partir de là.
+  Utilisez la [vue durée de vie des objets](../profiling/object-lifetime-view.md) pour déterminer quels objets de données du programme survivent dans la génération, puis être récupérés à partir de là.
 
   Consultez la [vue Allocations](../profiling/dotnet-memory-allocations-view.md) pour connaître le chemin d’exécution qui a entraîné ces allocations.
 

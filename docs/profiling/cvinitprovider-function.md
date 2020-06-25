@@ -1,7 +1,7 @@
 ---
 title: CvInitProvider, fonction | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - cvmarkers/CvInitProvider
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a97be63cd782397e984fd8dbce7da844efa07540
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: b06190568454977bfcb54d65db9011fc979f7591
+ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "62552665"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85329569"
 ---
 # <a name="cvinitprovider-function"></a>CvInitProvider, fonction
 Initialise le fournisseur de marqueurs. Doit être appelée avant toute autre fonction du kit SDK du visualiseur concurrentiel.
@@ -39,8 +39,8 @@ HRESULT CvInitProvider(
 ## <a name="return-value"></a>Valeur retournée
  S_OK lorsque le fournisseur est correctement initialisé, ou code d’erreur en cas d’erreur. Utilisez les macros SUCCEEDED/FAILED pour vérifier la condition d’erreur.
 
-## <a name="requirements"></a>Spécifications
+## <a name="requirements"></a>Configuration requise
  **En-tête :** *cvmarkers.h*
 
 ## <a name="see-also"></a>Voir aussi
-- [Référence de la bibliothèque de CMD](../profiling/cpp-library-reference.md)
+- [Informations de référence sur la bibliothèque C++](../profiling/cpp-library-reference.md)

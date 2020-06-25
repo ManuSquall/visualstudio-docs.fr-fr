@@ -1,7 +1,7 @@
 ---
-title: Guide pratique pour choisir des événements d’échantillonnage | Microsoft Docs
+title: Comment choisir des événements d’échantillonnage | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - vs.performance.property.sampling
 helpviewer_keywords:
@@ -19,12 +19,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 82462ae5052150da7761dfcd855e5339e1b7d821
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 8473ca1f5829faa2a76b5560132c7aada152dc3a
+ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74779049"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85329278"
 ---
 # <a name="how-to-choose-sampling-events"></a>Guide pratique pour choisir des événements d’échantillonnage
 Par défaut, les outils de profilage de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] collectent les données de performances à un intervalle correspondant à un nombre de cycles processeur utilisés par le processus profilé. Le nombre de cycles par défaut dans un intervalle est de 10 000 000, ce qui correspond approximativement à 0,01 seconde sur un ordinateur 1 GHz. Vous pouvez modifier le nombre de cycles d’un intervalle, ainsi que l’événement d’échantillon. Les événements d’échantillons suivants sont disponibles :
@@ -61,7 +61,7 @@ Par défaut, les outils de profilage de [!INCLUDE[vsprvs](../code-quality/includ
 
 ## <a name="see-also"></a>Voir aussi
 - [Configurer des sessions de performance](../profiling/configuring-performance-sessions.md)
-- [Comment : Choisissez des méthodes de collecte](../profiling/how-to-choose-collection-methods.md)
+- [Comment : choisir des méthodes de collection](../profiling/how-to-choose-collection-methods.md)
 - [Compteurs UC et Windows](../profiling/cpu-and-windows-counters.md)
 - [Comprendre le fonctionnement des valeurs de données d’échantillonnage](../profiling/understanding-sampling-data-values.md)
 - [Profiler à partir de la ligne de commande](../profiling/using-the-profiling-tools-from-the-command-line.md)

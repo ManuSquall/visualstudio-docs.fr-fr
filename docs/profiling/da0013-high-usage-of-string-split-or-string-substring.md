@@ -1,7 +1,7 @@
 ---
-title: 'DA0013 : Utilisation intensive de String.Split ou de String.Substring | Microsoft Docs'
+title: DA0013-utilisation intensive de String. Split ou String. Substring | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - vs.performance.13
 - vs.performance.rules.DAAvoidStringSubstr
@@ -17,14 +17,14 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: d42469ac5236a41eda96af5d1fe896a5ed84a321
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 49c403c401a3a60213519d0b01131e811f5105dd
+ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74779402"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85328091"
 ---
-# <a name="da0013-high-usage-of-stringsplit-or-stringsubstring"></a>DA0013 : Utilisation intensive de String.Split/String.Substring
+# <a name="da0013-high-usage-of-stringsplit-or-stringsubstring"></a>DA0013 : Utilisation intensive de String.Split ou de String.Substring
 
 |||
 |-|-|
@@ -34,7 +34,7 @@ ms.locfileid: "74779402"
 |Message|Limitez l'utilisation des fonctions String.Split et String.Substring.|
 |Type de règle|Avertissement|
 
-## <a name="cause"></a>Cause :
+## <a name="cause"></a>Cause
  Les appels aux méthodes System.String.Split ou System.String.Substring représentent une part importante des données de profilage. Utilisez System.String.IndexOf ou System.String.IndexOfAny si vous testez l’existence d’une sous-chaîne dans une chaîne.
 
 ## <a name="rule-description"></a>Description de la règle

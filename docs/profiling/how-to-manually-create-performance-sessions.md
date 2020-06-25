@@ -1,7 +1,7 @@
 ---
 title: Guide pratique pour créer manuellement des sessions de performance | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - vs.performance.wizard.dllpage
 - vs.performance.wizard.exepage
@@ -15,12 +15,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 46c0f1bfeee785feebf1d643b0796c1308053403
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 0a1701322bec623c6bb2657f78ecdcc1dc16dde1
+ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74778828"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85327673"
 ---
 # <a name="how-to-manually-create-performance-sessions"></a>Guide pratique pour créer manuellement des sessions de performance
 Vous pouvez créer manuellement des sessions de performance. Pour cela, vous n’êtes pas obligé d’ouvrir un projet dans [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Pour plus d’informations, consultez [Configurer des sessions de performances](../profiling/configuring-performance-sessions.md).
@@ -39,4 +39,4 @@ Vous pouvez créer manuellement des sessions de performance. Pour cela, vous n�
 
 ## <a name="see-also"></a>Voir aussi
 - [Explorateur de performances](../profiling/performance-explorer.md)
-- [Commencer](../profiling/getting-started-with-performance-tools.md)
+- [Bien démarrer](../profiling/getting-started-with-performance-tools.md)

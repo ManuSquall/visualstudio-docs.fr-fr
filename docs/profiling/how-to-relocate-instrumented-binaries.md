@@ -1,7 +1,7 @@
 ---
-title: 'Comment : déplacer des binaires instrumentés | Microsoft Docs'
+title: Comment déplacer des binaires instrumentés | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - vs.performance.property.binaries
 helpviewer_keywords:
@@ -15,12 +15,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: cddbb0b3e27b841441937b7256ea32d722e25f5e
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 92ec3bb107c5921c6ac0113e18f1dc35ec3dd07a
+ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74774898"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85328814"
 ---
 # <a name="how-to-relocate-instrumented-binaries"></a>Guide pratique pour déplacer des binaires instrumentés
 
@@ -38,5 +38,5 @@ Lors de l’instrumentation, des sondes sont insérées dans le fichier binaire 
 
 ## <a name="see-also"></a>Voir aussi
 
-[Configurer les sessions de](../profiling/configuring-performance-sessions.md)
-performance[VSInstr](../profiling/vsinstr.md)
+[Configurer des sessions](../profiling/configuring-performance-sessions.md) 
+ de performance [VSInstr](../profiling/vsinstr.md)

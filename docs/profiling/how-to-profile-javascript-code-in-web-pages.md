@@ -1,7 +1,7 @@
 ---
-title: Guide pratique pour profiler du code JavaScript dans des pages web | Microsoft Docs
+title: Comment profiler du code JavaScript dans des pages Web | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - JavaScript performance profiling
 - Profiling Tools,JavaScript
@@ -12,12 +12,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 07c628b3c1f0be1c7ecc615dcae44f7736aa884e
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 9c0af520502a0d6bb67d17786ab18fba920fcbbb
+ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74775304"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85328890"
 ---
 # <a name="how-to-profile-javascript-code-in-web-pages"></a>Guide pratique pour profiler du code JavaScript dans des pages web
 

@@ -1,14 +1,14 @@
 ---
-ms.openlocfilehash: 1e6c6714720d652fff266e3e852d01982c98e34a
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: a292b37a50bbf667fa5b23f18879cd79c3f76805
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84173875"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85292058"
 ---
 Web Deploy 3.6 for Hosting Servers fournit des fonctionnalités de configuration supplémentaires qui permettent de créer le fichier de paramètres de publication à partir de l’IU.
 
-1. Si Web Deploy 3,6 est déjà installé sur Windows Server, désinstallez-le à l’aide des programmes **du panneau**  >  **Programs**  >  **de configuration désinstaller un programme**.
+1. Si Web Deploy est déjà installé sur Windows Server, désinstallez-le à l’aide des programmes **du panneau**  >  **Programs**  >  **de configuration désinstaller un programme**.
 
 2. Installez ensuite Web Deploy 3.6 for Hosting Servers sur Windows Server.
 
@@ -24,6 +24,12 @@ Web Deploy 3.6 for Hosting Servers fournit des fonctionnalités de configuratio
 
     Les scripts et les outils sont nécessaires pour permettre la génération du fichier de paramètres de publication.
 
-4. (Facultatif) Vérifiez que Web Deploy s’exécute correctement en ouvrant **Panneau de configuration > Système et sécurité > Outils d’administration > Services**, puis en vérifiant que le **Service de l’agent de déploiement web** est en cours d’exécution (le nom du service est différent dans les anciennes versions).
+4. Facultatif Vérifiez que Web Deploy s’exécute correctement en ouvrant **le panneau de configuration > système et sécurité > outils d’administration > services**, puis assurez-vous que :
 
-    Si le service de l’agent n’est pas en cours d’exécution, démarrez-le. S’il n’est pas présent, accédez à **Panneau de configuration > Programmes > Désinstaller un programme**, recherchez **Microsoft Web Deploy\<version>**. Choisissez **Changer** l’installation et veillez à choisir **Sera installé sur le disque dur local** pour les composants Web Deploy. Effectuez les étapes relatives au changement de l’installation.
+    * Le **service Web Deployment agent** est en cours d’exécution (le nom du service est différent dans les versions antérieures).
+
+    * Le **service de gestion Web** est en cours d’exécution.
+
+    Si l’un des services de l’agent n’est pas en cours d’exécution, redémarrez le **service Web Deployment agent**.
+
+    Si le service Web Deployment Agent n’est pas présent, accédez à **panneau de configuration > programmes > désinstaller un programme**, recherchez **Microsoft \<version> Web Deploy **. Choisissez **Changer** l’installation et veillez à choisir **Sera installé sur le disque dur local** pour les composants Web Deploy. Effectuez les étapes relatives au changement de l’installation.
