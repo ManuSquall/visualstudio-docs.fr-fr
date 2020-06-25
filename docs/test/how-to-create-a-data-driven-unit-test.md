@@ -1,7 +1,7 @@
 ---
 title: Créer des tests unitaires pilotés par les données
 ms.date: 05/08/2019
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - vs.test.testresults.unittest.datadriven
 - vs.test.testresults.unittest.datadriven.failure
@@ -14,14 +14,14 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: f50dad637d9efa2db347ff9f1b4828abf8c733af
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 936c6b2ee9e05d059c09c2aa074829b35b6ca5fd
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75589186"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85287985"
 ---
-# <a name="how-to-create-a-data-driven-unit-test"></a>Comment : Créer un test unitaire axé sur les données
+# <a name="how-to-create-a-data-driven-unit-test"></a>Comment : créer un test unitaire piloté par les données
 
 Vous pouvez utiliser l’infrastructure de test unitaire de Microsoft pour le code managé afin de configurer une méthode de test unitaire permettant de récupérer des valeurs auprès d’une source de données. La méthode est exécutée successivement pour chaque ligne de la source de données, ce qui permet de tester facilement diverses entrées à l’aide d’une seule méthode.
 
@@ -160,7 +160,7 @@ int x = Convert.ToInt32(TestContext.DataRow["FirstNumber"]);
 
 ## <a name="run-the-test-and-view-results"></a>Exécuter le test et afficher les résultats
 
-Une fois que vous avez fini d’écrire une méthode de test, générez le projet de test. La méthode de test apparaît dans l’**Explorateur de tests**, dans le groupe **Tests non exécutés**. Tandis que vous exécutez, écrivez et réexécutez vos tests, **l’Explorateur de tests** affiche les résultats dans les groupes **Échecs de tests**, **Tests réussis** et **Tests non exécutés**. Vous pouvez choisir **Run All** pour exécuter tous vos tests, ou choisir **Run** pour choisir un sous-ensemble de tests à exécuter.
+Une fois que vous avez fini d’écrire une méthode de test, générez le projet de test. La méthode de test apparaît dans l’**Explorateur de tests**, dans le groupe **Tests non exécutés**. Tandis que vous exécutez, écrivez et réexécutez vos tests, **l’Explorateur de tests** affiche les résultats dans les groupes **Échecs de tests**, **Tests réussis** et **Tests non exécutés**. Vous pouvez choisir **exécuter tout** pour exécuter tous vos tests, ou choisir **exécuter** pour choisir un sous-ensemble de tests à exécuter.
 
 La barre des résultats des tests en haut de l’**Explorateur de tests** s’anime pendant l’exécution de votre test. À la fin de la série de tests, la barre est verte en cas de réussite de tous les tests, ou rouge en cas d’échec de l’un des tests. Un résumé de la série de tests s’affiche dans le volet d’informations, en bas de la fenêtre **Explorateur de tests**. Sélectionnez un test pour en afficher les détails dans le volet inférieur.
 
@@ -178,5 +178,5 @@ Quand la méthode testée est corrigée et que le test est réexécuté, la barr
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext.DataRow%2A?displayProperty=fullName>
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert?displayProperty=fullName>
 - [Test unitaire de votre code](../test/unit-test-your-code.md)
-- [Exécuter des tests unitaires avec Test Explorer](../test/run-unit-tests-with-test-explorer.md)
+- [Exécuter des tests unitaires avec l'Explorateur de tests](../test/run-unit-tests-with-test-explorer.md)
 - [Écrire des tests unitaires pour .NET avec l’infrastructure de tests unitaires Microsoft](../test/unit-test-your-code.md)

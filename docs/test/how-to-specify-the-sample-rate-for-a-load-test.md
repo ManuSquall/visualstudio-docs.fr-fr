@@ -1,19 +1,19 @@
 ---
 title: "Comment : spécifier un taux d'échantillonnage d'un paramètre d'exécution des tests de charge"
 ms.date: 10/19/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - load tests, run settings
 ms.assetid: 51cbe7d6-5dfd-4842-bca3-f7f8a665dc84
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 63b6b9479347b076b7bd9e350e80e4bfa2a36d69
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: ab77354226028397d5875137ed331860a4b32925
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75594823"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85287387"
 ---
 # <a name="how-to-specify-the-sample-rate-for-a-load-test-run-setting"></a>Guide pratique pour spécifier le taux d’échantillonnage d’un paramètre d’exécution des tests de charge
 
@@ -21,9 +21,9 @@ Après avoir créé votre test de charge avec l’**Assistant Nouveau test de ch
 
 [!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
-À l’aide de l’**éditeur de test de charge**, vous pouvez modifier la valeur de la propriété **Taux d’échantillonnage** d’un paramètre d’exécution dans la fenêtre **Propriétés**. Pour une liste complète des propriétés des paramètres d’exécution et de leurs descriptions, voir [les propriétés des paramètres d’exécution de test de charge](../test/load-test-run-settings-properties.md).
+À l’aide de l’**éditeur de test de charge**, vous pouvez modifier la valeur de la propriété **Taux d’échantillonnage** d’un paramètre d’exécution dans la fenêtre **Propriétés**. Pour obtenir la liste complète des propriétés des paramètres d’exécution et leurs descriptions, consultez [Propriétés des paramètres d’exécution du test de charge](../test/load-test-run-settings-properties.md).
 
-Choisissez une valeur appropriée pour la propriété **Taux d’échantillonnage** du paramètre d’exécution d’un test de charge selon la durée de votre test de charge. Un taux d'échantillonnage moins élevé, tel que la valeur par défaut de cinq secondes, nécessite une capacité d'espace supplémentaire dans la base de données des résultats du test de charge. Pour les tests de charge de plus longue durée, l'augmentation du taux d'échantillonnage permet de réduire le volume de données collectées. Pour plus d’informations, voir [Comment : Spécifier le taux d’échantillon pour un réglage d’essai de charge](../test/how-to-specify-the-sample-rate-for-a-load-test.md).
+Choisissez une valeur appropriée pour la propriété **Taux d’échantillonnage** du paramètre d’exécution d’un test de charge selon la durée de votre test de charge. Un taux d'échantillonnage moins élevé, tel que la valeur par défaut de cinq secondes, nécessite une capacité d'espace supplémentaire dans la base de données des résultats du test de charge. Pour les tests de charge de plus longue durée, l'augmentation du taux d'échantillonnage permet de réduire le volume de données collectées. Pour plus d’informations, consultez [Comment : spécifier le taux d’échantillonnage d’un paramètre d’exécution de test de charge](../test/how-to-specify-the-sample-rate-for-a-load-test.md).
 
 Voici quelques instructions sur les taux d'échantillonnage :
 
@@ -52,5 +52,5 @@ Voici quelques instructions sur les taux d'échantillonnage :
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Configurer les paramètres d’exécution de test de charge](../test/configure-load-test-run-settings.md)
+- [Configurer les paramètres d’exécution des tests de charge](../test/configure-load-test-run-settings.md)
 - [Propriétés des scénarios de test de charge](../test/load-test-scenario-properties.md)

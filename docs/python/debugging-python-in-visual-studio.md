@@ -1,7 +1,7 @@
 ---
 title: Déboguer du code Python
 description: Visual Studio fournit de riches fonctionnalités de débogage du code Python, y compris la définition de points d’arrêt, l’exécution pas à pas, l’inspection des valeurs, la gestion des exceptions et le débogage dans la fenêtre interactive.
-ms.date: 03/13/2019
+ms.date: 05/12/2020
 ms.topic: conceptual
 author: JoshuaPartlow
 ms.author: joshuapa
@@ -10,16 +10,16 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 4678e3508c16b38fec2a10cdeb79bc499eaf15fd
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 293e431fb00f6817fdbba19186613345cb90275a
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79302888"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85285645"
 ---
 # <a name="debug-your-python-code"></a>Déboguer votre code Python
 
-Visual Studio offre une expérience complète de débogage pour Python, y compris l’attachement à des processus en cours d’exécution, l’évaluation des expressions dans la **montre** et les fenêtres **immédiates,** l’inspection des variables locales, points d’arrêt, étape in /out / sur les déclarations, **Set Next Statement**, et plus encore.
+Visual Studio fournit une expérience de débogage complète pour Python, y compris l’attachement à des processus en cours d’exécution, l’évaluation d’expressions dans les fenêtres **Espion** et **exécution** , l’inspection de variables locales, les points d’arrêt, les instructions pas à pas détaillé/hors connexion, la définition de l' **instruction suivante**, etc.
 
 Consultez également les articles ci-après concernant le débogage propre à un scénario :
 
@@ -40,18 +40,18 @@ Consultez également les articles ci-après concernant le débogage propre à un
 
 Le flux de travail de débogage de base implique la définition de points d’arrêt, l’exécution de code pas à pas, l’inspection de valeurs et la gestion des exceptions, comme décrit dans les sections suivantes.
 
-Une session de débogage commence par la commande **Debug** > **Start Debugging,** le bouton **Démarrer** sur la barre d’outils ou la clé **F5.** Ces opérations lancent le fichier de démarrage de votre projet (indiqué en gras dans **l’Explorateur de solutions**) avec l’environnement actif du projet et tous les arguments de ligne de commande ou chemins de recherche qui ont été spécifiés dans **Propriétés du projet** (consultez la section [Options de débogage d’un projet](#project-debugging-options)). Visual Studio 2017 version 15.6 et ultérieures vous avertit si vous n’avez pas de fichier de démarrage défini ; les versions antérieures peuvent ouvrir une fenêtre de sortie avec l’interpréteur Python en cours d’exécution, ou la fenêtre de sortie s’affiche brièvement et disparaît. Dans tous les cas, cliquez avec le bouton droit sur le fichier approprié et sélectionnez **Définir comme fichier de démarrage**.
+Une session de débogage commence **par la**commande Déboguer  >  **Démarrer le débogage** , le bouton **Démarrer** de la barre d’outils ou la touche **F5** . Ces opérations lancent le fichier de démarrage de votre projet (indiqué en gras dans **l’Explorateur de solutions**) avec l’environnement actif du projet et tous les arguments de ligne de commande ou chemins de recherche qui ont été spécifiés dans **Propriétés du projet** (consultez la section [Options de débogage d’un projet](#project-debugging-options)). Visual Studio 2017 version 15.6 et ultérieures vous avertit si vous n’avez pas de fichier de démarrage défini ; les versions antérieures peuvent ouvrir une fenêtre de sortie avec l’interpréteur Python en cours d’exécution, ou la fenêtre de sortie s’affiche brièvement et disparaît. Dans tous les cas, cliquez avec le bouton droit sur le fichier approprié et sélectionnez **Définir comme fichier de démarrage**.
 
 > [!Note]
 > Le débogueur démarre toujours avec l’environnement Python actif associé au projet. Pour changer d’environnement, activez-en un autre en suivant les instructions de la page [Sélectionner un environnement Python pour un projet](selecting-a-python-environment-for-a-project.md).
 
 ### <a name="breakpoints"></a>Points d’arrêt
 
-Les points d’arrêt arrêtent l’exécution du code au niveau d’un point marqué, ce qui vous permet d’inspecter l’état du programme. Définissez les points de rupture en cliquant sur la marge gauche de l’éditeur de code ou en cliquant à droite sur une ligne de code et en sélectionnant **breakpoint** > **d’insertion**de point de rupture . Un point rouge apparaît sur chaque ligne comportant un point d’arrêt.
+Les points d’arrêt arrêtent l’exécution du code au niveau d’un point marqué, ce qui vous permet d’inspecter l’état du programme. Définissez des points d’arrêt en cliquant dans la marge de gauche de l’éditeur de code ou en cliquant avec le bouton droit sur une ligne de code et en sélectionnant **point d’arrêt**  >  **Insérer un point d’arrêt**. Un point rouge apparaît sur chaque ligne comportant un point d’arrêt.
 
 ![Points d’arrêt qui apparaissent dans Visual Studio](media/debugging-breakpoints.png)
 
-En cliquant sur le point rouge ou en cliquant à droite sur la ligne de code et la sélection du**point de** rupture **De breakpoint** > supprime le point d’arrêt. Vous pouvez également le désactiver sans le supprimer à l’aide de la commande **Breakpoint** > **Disable Breakpoint.**
+Cliquez sur le point rouge ou cliquez avec le bouton droit sur la ligne de code et sélectionnez **point d’arrêt**  >  **supprimer le point** d’arrêt pour supprimer le point d’arrêt. Vous pouvez également le désactiver **sans le supprimer**à l’aide de la commande de  >  **désactivation** du point d’arrêt.
 
 > [!Note]
 > Certains points d’arrêt dans Python peuvent surprendre les développeurs habitués à d’autres langages de programmation. Dans Python, l’intégralité du fichier correspond à du code exécutable, de sorte que Python exécute le fichier lorsqu’il est chargé pour traiter n’importe quelle définition de fonction ou de classe de niveau supérieur. Si un point d’arrêt a été défini, il est possible que le débogueur marque un arrêt à mi-chemin d’une déclaration de classe. Même s’il peut sembler surprenant, ce comportement est correct.
@@ -68,13 +68,13 @@ Une fois arrêté au niveau d’un point d’arrêt, vous disposez de différent
 
 | Fonctionnalité | Séquence de touches | Description |
 | --- | --- | --- |
-| **Continuer** | **F5 F5** | Exécute le code jusqu’au point d’arrêt suivant. |
-| **Entrez dans** | **F11** | Exécute l’instruction suivante et s’arrête. Si l’instruction suivante correspond à l’appel d’une fonction, le débogueur s’arrête à la première ligne de la fonction appelée. |
+| **Continuer** | **F5** | Exécute le code jusqu’au point d’arrêt suivant. |
+| **Pas à pas détaillé** | **F11** | Exécute l’instruction suivante et s’arrête. Si l’instruction suivante correspond à l’appel d’une fonction, le débogueur s’arrête à la première ligne de la fonction appelée. |
 | **Pas à pas principal** | **F10** | Exécute l’instruction suivante, y compris l’appel d’une fonction (en exécutant la totalité de son code) et l’application de toute valeur renvoyée. Le mode pas à pas principal vous permet d’ignorer facilement les fonctions que vous n’avez pas besoin de déboguer. |
-| **Pas à pas sortant** | **Quart de travail**+**F11** | Exécute le code jusqu’à la fin de la fonction actuelle, puis procède à une exécution pas à pas jusqu’à l’instruction appelante.  Cette commande est utile quand vous n’avez pas besoin de déboguer le reste de la fonction actuelle. |
-| **Courir à Cursor** | **Ctrl**+**F10** | Exécute le code jusqu’à l’emplacement du signe insertion dans l’éditeur. Cette commande vous permet d’ignorer facilement un segment de code que vous n’avez pas besoin de déboguer. |
-| **Définir la prochaine déclaration** | **Ctrl**+**Shift**+**F10** | Redéfinit le point d’exécution actuel dans le code sur l’emplacement du signe insertion. Cette commande vous permet d’omettre totalement l’exécution d’un segment de code donné, par exemple quand vous savez que le code est défectueux ou qu’il produit un effet indésirable. |
-| **Afficher l'instruction suivante** | **Alt**+**Num** **&#42;**| Vous renvoie à la prochaine instruction à exécuter. Cette commande est utile si vous avez parcouru votre code et que vous ne vous souvenez pas de l’endroit où le débogueur s’est arrêté. |
+| **Pas à pas sortant** | **MAJ** + **F11** | Exécute le code jusqu’à la fin de la fonction actuelle, puis procède à une exécution pas à pas jusqu’à l’instruction appelante.  Cette commande est utile quand vous n’avez pas besoin de déboguer le reste de la fonction actuelle. |
+| **Exécuter jusqu’au curseur** | **CTRL** + **F10** | Exécute le code jusqu’à l’emplacement du signe insertion dans l’éditeur. Cette commande vous permet d’ignorer facilement un segment de code que vous n’avez pas besoin de déboguer. |
+| **Définir l’instruction suivante** | **CTRL** + **MAJ** + **F10** | Redéfinit le point d’exécution actuel dans le code sur l’emplacement du signe insertion. Cette commande vous permet d’omettre totalement l’exécution d’un segment de code donné, par exemple quand vous savez que le code est défectueux ou qu’il produit un effet indésirable. |
+| **Afficher l'instruction suivante** | **ALT** + **Nombre** **&#42;**| Vous renvoie à la prochaine instruction à exécuter. Cette commande est utile si vous avez parcouru votre code et que vous ne vous souvenez pas de l’endroit où le débogueur s’est arrêté. |
 
 ### <a name="inspect-and-modify-values"></a>Inspecter et modifier les valeurs
 
@@ -114,7 +114,7 @@ Si une erreur survient dans votre programme lors du débogage, mais que vous ne 
 
 À ce stade, vous pouvez inspecter l’état du programme, y compris la pile des appels. Toutefois, si vous essayez d’exécuter le code pas à pas, l’exception continue d’être levée jusqu’à ce qu’elle soit gérée ou que votre programme se ferme.
 
-La commande de menu **Debug** > **Windows** > **Exception Settings** apporte une fenêtre dans laquelle vous pouvez étendre Python **Exceptions**:
+La commande de menu **Déboguer**les  >  **Windows**  >  **paramètres d’exception** Windows affiche une fenêtre dans laquelle vous pouvez développer des **exceptions python**:
 
 ![Fenêtre d’exceptions dans le débogueur Visual Studio](media/debugging-exception-settings.png)
 
@@ -126,7 +126,7 @@ Pour configurer une exception absente de cette liste, ajoutez-la en cliquant sur
 
 ## <a name="project-debugging-options"></a>Options de débogage d’un projet
 
-Par défaut, le débogueur démarre votre programme avec le lanceur Python standard, sans aucun argument de ligne de commande et aucun autre chemin d’accès ni condition spéciaux. Les options de démarrage sont modifiées grâce aux propriétés de débogé du projet accessibles en cliquant à droite sur votre projet dans **Solution Explorer**, en sélectionnant **les propriétés**et en sélectionnant l’onglet **Debug.**
+Par défaut, le débogueur démarre votre programme avec le lanceur Python standard, sans aucun argument de ligne de commande et aucun autre chemin d’accès ni condition spéciaux. Les options de démarrage sont modifiées par le biais des propriétés de débogage du projet accessibles en cliquant avec le bouton droit sur votre projet dans **Explorateur de solutions**, en sélectionnant **Propriétés**et en sélectionnant l’onglet **Déboguer** .
 
 ![Propriétés de débogage du projet dans le débogueur Visual Studio](media/debugging-project-properties.png)
 
@@ -143,11 +143,11 @@ Par défaut, le débogueur démarre votre programme avec le lanceur Python stand
 
 | Option | Description |
 | --- | --- |
-| **Chemins de recherche** | Ces valeurs correspondent à ce qui est indiqué dans le nœud **Search Paths** du projet dans **Solution Explorer**. Vous pouvez modifier cette valeur à cet emplacement, mais il est plus facile d’utiliser **l’Explorateur de solutions** qui vous permet de parcourir les dossiers et convertit automatiquement les chemins sous leur forme relative. |
+| **Chemins de recherche** | Ces valeurs correspondent à ce qui est indiqué dans le nœud **chemins de recherche** du projet dans **Explorateur de solutions**. Vous pouvez modifier cette valeur à cet emplacement, mais il est plus facile d’utiliser **l’Explorateur de solutions** qui vous permet de parcourir les dossiers et convertit automatiquement les chemins sous leur forme relative. |
 | **Arguments de script** | Ces arguments sont ajoutés à la commande utilisée pour lancer votre script, apparaissant après le nom de fichier du script. Le premier argument spécifié à cet emplacement est disponible pour votre script sous la forme `sys.argv[1]`, le deuxième argument apparaît sous la forme `sys.argv[2]`, etc. |
 | **Interpreter Arguments (Arguments d’interpréteur)** | Ces arguments sont ajoutés à la ligne de commande du lanceur avant le nom de votre script. Les arguments couramment indiqués à cet emplacement sont `-W ...` pour contrôler les avertissements, `-O` pour optimiser légèrement votre programme et `-u` pour utiliser des E/S non mises en mémoire tampon. Les utilisateurs IronPython utilisent généralement ce champ pour transmettre des options `-X`, telles que `-X:Frames` ou `-X:MTA`. |
-| **Chemin d’interprète** | Remplace le chemin d’accès associé à l’environnement actuel. La valeur peut être utile pour lancer votre script avec un interpréteur non standard. |
-| **Variables de l’environnement** | Dans cette zone de texte multiligne, ajoutez des entrées sous la forme \<NOM>=\<VALEUR>. Étant donné que ce paramètre est appliqué en dernier, en plus de toutes les variables de l’environnement global existantes, et après `PYTHONPATH` est défini selon le paramètre Search **Paths,** il peut être utilisé pour remplacer manuellement l’une de ces autres variables. |
+| **Chemin de l’interpréteur** | Remplace le chemin d’accès associé à l’environnement actuel. La valeur peut être utile pour lancer votre script avec un interpréteur non standard. |
+| **Variables d’environnement** | Dans cette zone de texte multiligne, ajoutez des entrées du formulaire \<NAME> = \<VALUE> . Étant donné que ce paramètre est appliqué en dernier, en plus de toutes les variables d’environnement globales existantes, et après que `PYTHONPATH` est défini en fonction du paramètre **chemins de recherche** , il peut être utilisé pour remplacer manuellement l’une de ces autres variables. |
 
 ## <a name="immediate-and-interactive-windows"></a>Fenêtres Exécution et Interactive
 
@@ -155,7 +155,7 @@ Dans le cadre d’une session de débogage, vous pouvez utiliser deux fenêtres 
 
 La fenêtre **Exécution** (**Débogage** > **Fenêtres** > **Exécution**) est utilisée pour une évaluation rapide des expressions Python et pour l’inspection ou l’affectation de variables au sein du programme en cours d’exécution. Pour plus d’informations, consultez l’article général [Fenêtre Exécution](../ide/reference/immediate-window.md).
 
-La **fenêtre interactive de débogage Python** (**Débogage** > **Fenêtres** > **Fenêtre interactive de débogage Python**) est plus élaborée, car elle offre une expérience [REPL interactive](python-interactive-repl-in-visual-studio.md) complète au cours du débogage, notamment pour l’écriture et l’exécution de code. Il se connecte automatiquement à n’importe quel processus commencé dans le débagé à l’aide du lanceur Standard Python (y compris les processus attachés par **Debug** > **Attach to Process**). Toutefois, cette fenêtre n’est pas disponible en cas d’utilisation du débogage C/C++ en mode mixte.
+La **fenêtre interactive de débogage Python** (**Débogage** > **Fenêtres** > **Fenêtre interactive de débogage Python**) est plus élaborée, car elle offre une expérience [REPL interactive](python-interactive-repl-in-visual-studio.md) complète au cours du débogage, notamment pour l’écriture et l’exécution de code. Il se connecte automatiquement à tout processus démarré dans le débogueur à l’aide du lanceur python standard (y compris les processus attachés via le **débogage**  >  **d’attachement au processus**). Toutefois, cette fenêtre n’est pas disponible en cas d’utilisation du débogage C/C++ en mode mixte.
 
 ![Fenêtre de débogage Python interactive](media/debugging-interactive.png)
 
@@ -180,17 +180,17 @@ Outre les [commandes REPL standard](python-interactive-repl-in-visual-studio.md#
 | `$up`, `$u` | | Remonte le frame actuel d’un niveau dans la trace de la pile. |
 | `$where`, `$w`, `$bt` | Répertorie les frames du thread actuel. |
 
-Notez que les fenêtres de débaillement standard telles que **les processus,** **les fils**et la **pile d’appels** ne sont pas synchronisées avec la fenêtre Interactive **Debug.** La modification du processus, du thread ou du frame actifs dans la **fenêtre interactive de débogage** n’affecte pas les autres fenêtres du débogueur. De même, la modification du processus, du thread ou du frame actifs dans les autres fenêtres du débogueur n’affecte pas la **fenêtre interactive de débogage**.
+Notez que les fenêtres du débogueur standard telles que les **processus**, les **Threads**et la **pile des appels** ne sont pas synchronisées avec la fenêtre **interactive de débogage** . La modification du processus, du thread ou du frame actifs dans la **fenêtre interactive de débogage** n’affecte pas les autres fenêtres du débogueur. De même, la modification du processus, du thread ou du frame actifs dans les autres fenêtres du débogueur n’affecte pas la **fenêtre interactive de débogage**.
 
 <a name="use-the-experimental-debugger"></a>
 
 ## <a name="use-the-legacy-debugger"></a>Utiliser le débogueur hérité
 
-Visual Studio 2017 version 15.8 et les versions ultérieures utilisent un débogueur basé sur ptvsd version 4.1+. Cette version de ptvsd est compatible avec Python 2.7 et Python 3.5+. Si vous utilisez Python 2.6, 3.1 à 3.4, ou IronPython, Visual Studio affiche l’erreur, **Le débogueur ne prend pas en charge cet environnement Python** :
+Visual Studio 2017 version 15.8 et les versions ultérieures utilisent un débogueur basé sur ptvsd version 4.1+. Les versions 16,5 et ultérieures de Visual Studio 2019 utilisent un débogueur basé sur debugpy. Ces versions du débogueur sont compatibles avec Python 2,7 et Python 3.5 +. Si vous utilisez Python 2.6, 3.1 à 3.4, ou IronPython, Visual Studio affiche l’erreur, **Le débogueur ne prend pas en charge cet environnement Python** :
 
 ![Le débogueur ne prend pas en charge cette erreur d’environnement Python quand il est utilisé](media/debugging-experimental-incompatible-error.png)
 
-Dans les cas de figure de ce type, vous devez utiliser l’ancien débogueur (ce qui correspond à la valeur par défaut dans Visual Studio 2017 versions 15.7 et antérieures). Sélectionnez la commande de menu **Tools** > **Options,** naviguez vers **Python** > **Debugging**et sélectionnez **l’option Debugger d’utilisation de l’héritage.**
+Dans les cas de figure de ce type, vous devez utiliser l’ancien débogueur (ce qui correspond à la valeur par défaut dans Visual Studio 2017 versions 15.7 et antérieures). Sélectionnez la commande de menu **Outils**  >  **options** , naviguez jusqu’à **Python**  >  **débogage**Python, puis sélectionnez l’option **utiliser le débogueur hérité** .
 
 Si vous avez installé une ancienne version de ptvsd dans l’environnement actuel (par exemple une ancienne version 4.0.x ou une version 3.x nécessaire au débogage à distance), Visual Studio peut afficher une erreur ou un avertissement.
 
@@ -221,7 +221,8 @@ Pour gérer votre installation de ptvsd :
 
 ## <a name="troubleshooting"></a>Dépannage
 
-Si vous rencontrez des problèmes avec le débogueur, commencez par mettre à niveau votre version de ptvsd :
+### <a name="for-visual-studio-2019-version-164-and-earlier-upgrade-ptvsd"></a>Pour Visual Studio 2019 (version 16,4 ou antérieure), mettez à niveau ptvsd
+Si vous rencontrez des problèmes avec le débogueur, commencez par mettre à niveau votre version du débogueur comme suit :
 
 1. Accédez à l’onglet **Packages** de la fenêtre **Environnements Python**.
 
@@ -229,7 +230,10 @@ Si vous rencontrez des problèmes avec le débogueur, commencez par mettre à ni
 
     ![Commande de mise à niveau ptvsd dans la fenêtre Environnements Python](media/debugging-experimental-upgrade-ptvsd.png)
 
-Si les problèmes persistent, signalez-les dans le [référentiel GitHub PTVS](https://github.com/Microsoft/ptvs/issues).
+   Si les problèmes persistent, signalez-les dans le [référentiel GitHub PTVS](https://github.com/Microsoft/ptvs/issues).
+
+   > [!NOTE]
+   > Pour Visual Studio 2019 version 16,5 et versions ultérieures, debugpy fait partie de la charge de travail python de Visual Studio et est mis à jour en même temps que Visual Studio.
 
 ### <a name="enable-debugger-logging"></a>Activer la journalisation du débogueur
 
@@ -237,7 +241,7 @@ Au cours d’une enquête sur un problème de débogueur, Microsoft est suscepti
 
 Les étapes suivantes permettent le débogage dans la session active de Visual Studio :
 
-1. Ouvrez une fenêtre de commande dans Visual Studio à l’aide de la commande **view** > **Other Windows** > **Command Window.**
+1. Ouvrez une fenêtre de commande dans Visual Studio à l’aide de la commande de menu **Afficher**les autres fenêtres de  >  **Other Windows**  >  **commande** Windows.
 
 1. Entrez la commande suivante :
 

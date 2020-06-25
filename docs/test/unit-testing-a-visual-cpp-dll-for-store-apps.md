@@ -1,20 +1,20 @@
 ---
-title: Comment tester un DLL C POUR les applications UWP
+title: Comment tester une DLL C++ pour les applications UWP
 ms.date: 05/01/2019
-ms.topic: conceptual
+ms.topic: how-to
 ms.author: corob
 manager: jillfra
 ms.workload:
 - uwp
 author: corob-msft
-ms.openlocfilehash: 540ff59838343988e7a27f42f8a10d723de1f649
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 7b556f085ae4e4a9c610aefa87b3f9125fb27042
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77274448"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85285607"
 ---
-# <a name="how-to-test-a-c-dll"></a>Comment tester un DLL C
+# <a name="how-to-test-a-c-dll"></a>Comment tester une DLL C++
 
 Cette rubrique décrit une manière de créer des tests unitaires pour une DLL C++ destinée à des applications de plateforme Windows universelle (UWP) avec le framework de test Microsoft pour C++. La DLL RooterLib illustre de vagues souvenirs de la théorie de limite du calcul en implémentant une fonction qui calcule une estimation de la racine carrée d'un nombre donné. La DLL peut ensuite être incluse dans une application UWP pour montrer à l’utilisateur les choses amusantes qu’il est possible de faire avec les mathématiques.
 
@@ -58,7 +58,7 @@ Commencez par créer un projet de test. Dans le menu **Fichier**, choisissez **N
 
          Lorsque les tests sont exécutés, une instance de chaque classe de test est créée. Les méthodes de test sont appelées dans un ordre non défini. Vous pouvez définir des méthodes spéciales qui sont appelées avant et après chaque module, classe ou méthode. Pour plus d’informations, consultez [Utilisation de Microsoft.VisualStudio.TestTools.CppUnitTestFramework](how-to-use-microsoft-test-framework-for-cpp.md).
 
-## <a name="verify-that-the-tests-run-in-test-explorer"></a><a name="Verify_that_the_tests_run_in_Test_Explorer"></a>Vérifier que les tests sont exécutés dans Test Explorer
+## <a name="verify-that-the-tests-run-in-test-explorer"></a><a name="Verify_that_the_tests_run_in_Test_Explorer"></a>Vérifier que les tests s’exécutent dans l’Explorateur de tests
 
 1. Insérez le code de test :
 
@@ -73,7 +73,7 @@ Commencez par créer un projet de test. Dans le menu **Fichier**, choisissez **N
 
 2. Dans le menu **Test**, choisissez **Exécuter**, puis **Exécuter tout**.
 
-     Le projet de test est généré et exécuté. La fenêtre **Test Explorer** apparaît, et le test est répertorié dans les **tests passés**. La vitre **sommaire** au bas de la fenêtre fournit des détails supplémentaires sur le test sélectionné.
+     Le projet de test est généré et exécuté. La fenêtre **Explorateur de tests** s’affiche et le test est listé sous **tests réussis**. Le volet **Résumé** en bas de la fenêtre fournit des détails supplémentaires sur le test sélectionné.
 
      ![Explorateur de tests](../test/media/ute_cpp_testexplorer_testmethod1.png)
 
@@ -130,7 +130,7 @@ Dans **l’Explorateur de solutions**, choisissez le nom de la solution. Dans le
 
     2. Dans la boîte de dialogue **Page de propriétés de RooterLib**, développez **Propriétés de configuration**, **C++**, puis choisissez **Préprocesseur**.
 
-    3. Choisissez ** \<Edit ... >** de la liste **des définitions préprocesseur,** puis ajouter `ROOTERLIB_EXPORTS` dans la boîte de dialogue **Préprocessor Definitions.**
+    3. Choisissez dans **\<Edit...>** la liste **définitions de préprocesseur** , puis ajoutez `ROOTERLIB_EXPORTS` dans la boîte de dialogue Définitions de **préprocesseur** .
 
 4. Ajoutez des implémentations minimales des fonctions déclarées. Ouvrez *RooterLib.cpp*, puis ajoutez le code suivant :
 
@@ -166,7 +166,7 @@ Dans **l’Explorateur de solutions**, choisissez le nom de la solution. Dans le
        #include "..\RooterLib\RooterLib.h"
        ```
 
-3. Ajoutez un test qui utilise la fonction importée. Ajoutez le code suivant à *unittest1.cpp*:
+3. Ajoutez un test qui utilise la fonction importée. Ajoutez le code suivant à *UnitTest1. cpp*:
 
    ```cpp
    TEST_METHOD(BasicTest)
@@ -188,15 +188,15 @@ Dans **l’Explorateur de solutions**, choisissez le nom de la solution. Dans le
 
 4. Générez la solution.
 
-    Le nouveau test apparaît dans **Test Explorer** dans le nœud Not **Run Tests.**
+    Le nouveau test s’affiche dans l' **Explorateur de tests** dans le nœud **tests non exécutés** .
 
-5. Dans **Test Explorer**, choisissez Run **All**.
+5. Dans l' **Explorateur de tests**, choisissez **exécuter tout**.
 
     ![Test de base réussi](../test/media/ute_cpp_testexplorer_basictest.png)
 
    Vous avez configuré le test et les projets de code, et vérifié que vous pouviez exécuter des tests exécutant les fonctions du projet de code. Maintenant, vous pouvez commencer à écrire le code et les tests réels.
 
-## <a name="iteratively-augment-the-tests-and-make-them-pass"></a><a name="Iteratively_augment_the_tests_and_make_them_pass"></a>Iteratively augmenter les tests et les faire passer
+## <a name="iteratively-augment-the-tests-and-make-them-pass"></a><a name="Iteratively_augment_the_tests_and_make_them_pass"></a>Augmenter itérativement les tests et les faire passer
 
 1. Ajoutez un nouveau test :
 
@@ -219,7 +219,7 @@ Dans **l’Explorateur de solutions**, choisissez le nom de la solution. Dans le
     >
     > Lorsque vos utilisateurs modifient leurs spécifications, désactivez les tests qui ne sont plus corrects. Écrivez de nouveaux tests et utilisez-les l'un après l'autre, de la même façon incrémentielle.
 
-2. Dans **Test Explorer**, choisissez Run **All**.
+2. Dans l' **Explorateur de tests**, choisissez **exécuter tout**.
 
 3. Le test échoue.
 
@@ -249,14 +249,14 @@ Dans **l’Explorateur de solutions**, choisissez le nom de la solution. Dans le
 
     ```
 
-5. Construire la solution, puis dans **Test Explorer**, choisissez **Run All**.
+5. Générez la solution, puis, dans l' **Explorateur de tests**, choisissez **exécuter tout**.
 
      Les deux tests réussissent.
 
 > [!TIP]
 > Développez le code en ajoutant les tests individuellement. Assurez-vous que tous les tests réussissent après chaque itération.
 
-## <a name="debug-a-failing-test"></a><a name="Debug_a_failing_test"></a>Debug un test défaillant
+## <a name="debug-a-failing-test"></a><a name="Debug_a_failing_test"></a>Déboguer un test ayant échoué
 
 1. Ajoutez un autre test à *unittest1.cpp* :
 
@@ -289,9 +289,9 @@ Dans **l’Explorateur de solutions**, choisissez le nom de la solution. Dans le
    };
    ```
 
-2. Dans **Test Explorer**, choisissez Run **All**.
+2. Dans l' **Explorateur de tests**, choisissez **exécuter tout**.
 
-    Le test échoue. Choisissez le nom de test dans **Test Explorer**. L'échec d'assertion est mis en surbrillance. Le message d’échec est visible dans le volet détail de **Test Explorer**.
+    Le test échoue. Choisissez le nom du test dans l' **Explorateur de tests**. L'échec d'assertion est mis en surbrillance. Le message d’échec est visible dans le volet d’informations de l' **Explorateur de tests**.
 
     ![NegativeRangeTests, échec](../test/media/ute_cpp_testexplorer_negativerangetest_fail.png)
 
@@ -319,13 +319,13 @@ Dans **l’Explorateur de solutions**, choisissez le nom de la solution. Dans le
 
        ```
 
-   1. Dans **Test Explorer**, choisissez Run **All** pour tester la méthode corrigée et assurez-vous que vous n’avez pas introduit de régression.
+   1. Dans l' **Explorateur de tests**, choisissez **exécuter tout** pour tester la méthode corrigée et assurez-vous que vous n’avez pas introduit une régression.
 
    Toutes les tests réussissent maintenant.
 
    ![Tous les tests sont concluants](../test/media/ute_ult_alltestspass.png)
 
-## <a name="refactor-the-code-without-changing-tests"></a><a name="Refactor_the_code_without_changing_tests"></a>Refactor le code sans changer les tests
+## <a name="refactor-the-code-without-changing-tests"></a><a name="Refactor_the_code_without_changing_tests"></a>Refactoriser le code sans modifier les tests
 
 1. Simplifiez le calcul central dans la fonction `SquareRoot` :
 

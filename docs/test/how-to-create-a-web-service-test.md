@@ -1,7 +1,7 @@
 ---
 title: Créer un test de service web
 ms.date: 10/19/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - Web performance tests, creating Web service tests
 - Web services [Visual Studio ALM], creating
@@ -10,16 +10,16 @@ ms.assetid: fbcd57ee-06ad-4260-8694-09f8e0f93e39
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 7a6e42d6d92a74a0fc8be96c966b9146b7888b9e
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 67aff3b1486224c93a6a8302feb96caea91afcff
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75589095"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85287894"
 ---
 # <a name="how-to-create-a-web-service-test"></a>Guide pratique pour créer un test de service web
 
-Vous pouvez utiliser un test de performances web pour tester des services web. En utilisant les options **De demande d’insertion** et **d’insérer** sur les demandes de service Web, vous pouvez personnaliser les demandes individuelles dans l’éditeur **de tests de performance Web** pour localiser les pages de service Web. En général, vous n'affichez pas ces pages dans l'application web. Par conséquent, vous devez personnaliser la requête pour accéder à ces pages.
+Vous pouvez utiliser un test de performances web pour tester des services web. À l’aide des options **Insérer** une requête et **Insérer un service Web** , vous pouvez personnaliser les demandes individuelles dans le **éditeur de test de performances Web** pour localiser les pages du service Web. En général, vous n'affichez pas ces pages dans l'application web. Par conséquent, vous devez personnaliser la requête pour accéder à ces pages.
 
 [!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
@@ -33,7 +33,7 @@ Visual Studio Enterprise
 
 1. Créez un test de performances web. Dès que le navigateur s’ouvre, choisissez **Arrêter**.
 
-2. Dans **l’éditeur de test de performance Web**, cliquez à droite sur le test de performance web et **sélectionnez Ajouter la demande de service Web**.
+2. Dans le **éditeur de test de performances Web**, cliquez avec le bouton droit sur le test de performances de site Web et sélectionnez **Ajouter une demande de service Web**.
 
 3. Dans la propriété **Url** de la nouvelle requête, tapez le nom du service web, par exemple **http://localhost/storecsvs/InstantOrder.asmx**.
 
@@ -64,14 +64,14 @@ Visual Studio Enterprise
 
 10. Vous devez remplacer toutes les valeurs d'espace réservé par des valeurs valides pour que le test réussisse. Dans l'exemple précédent, vous devez remplacer les deux instances de `string` et un `int`. Cette opération de service web ne se termine que si un utilisateur inscrit passe une commande.
 
-11. Cliquez à droite sur la demande de service Web et **sélectionnez Ajouter url QueryString Paramètre**.
+11. Cliquez avec le bouton droit sur la demande de service Web et sélectionnez **Ajouter un paramètre QueryString d’URL**.
 
 12. Assignez un nom et une valeur au paramètre de chaîne de requête. Dans l’exemple précédent, le nom est `op` et la valeur `CheckStatus`. Cela identifie l'opération de service web à exécuter.
 
     > [!NOTE]
     > Vous pouvez utiliser la liaison de données dans le corps SOAP pour remplacer n'importe quelle valeur d'espace réservé par des valeurs liées aux données à l'aide de la syntaxe `{{DataSourceName.TableName.ColumnName}}`.
 
-13. Exécutez le test. Dans le volet supérieur de l'**Afficheur des résultats des tests de performances web**, sélectionnez la requête de service web. Dans la vitre inférieure, sélectionnez l’onglet Navigateur Web. Le XML qui est retourné par le service Web, et les résultats de toutes les opérations, seront affichés.
+13. Exécutez le test. Dans le volet supérieur de l'**Afficheur des résultats des tests de performances web**, sélectionnez la requête de service web. Dans le volet inférieur, sélectionnez l’onglet navigateur Web. Le code XML retourné par le service Web, ainsi que les résultats de toutes les opérations, s’affichent.
 
 ## <a name="see-also"></a>Voir aussi
 

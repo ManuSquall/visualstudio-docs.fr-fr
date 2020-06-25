@@ -1,19 +1,19 @@
 ---
 title: Analyser l’activité des utilisateurs virtuels pour les tests de charge
 ms.date: 10/19/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - virtual user activity chart, viewing
 ms.assetid: 8bda19b3-91c1-4daf-b6c7-09108bddadff
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: c997f27e65a8e3992239fac78d52b0b4f19670c3
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 64b69ba926e3c978efa60bd9946da94d846c383f
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "78169402"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85288401"
 ---
 # <a name="how-to-analyze-what-virtual-users-are-doing-during-a-load-test-using-the-virtual-user-activity-chart"></a>Guide pratique pour analyser l’activité des utilisateurs virtuels lors d’un test de charge à l’aide du graphique d’activités des utilisateurs virtuels
 
@@ -43,7 +43,7 @@ Les procédures suivantes montrent comment consulter le **graphique d'activités
 
 2. Pointez sur un détail du graphique. Notez que les informations suivantes sont affichées dans l'info-bulle :
 
-   - **Id utilisateur**
+   - **ID d’utilisateur**
 
    - **Scénario**
 
@@ -57,7 +57,7 @@ Les procédures suivantes montrent comment consulter le **graphique d'activités
 
    - **Réseau**
 
-   - **Heure de début**
+   - **Heure de Début**
 
    - **Durée**
 
@@ -72,7 +72,7 @@ Les procédures suivantes montrent comment consulter le **graphique d'activités
 
 ## <a name="to-use-filtering-options-in-the-virtual-user-activity-chart"></a>Pour utiliser les options de filtrage dans le graphique d'activités des utilisateurs virtuels
 
-1. Dans la **légende des détails**, utilisez la liste d’abandon pour sélectionner soit **Test**, **Page**, ou **Transaction**.
+1. Dans la **légende détails**, utilisez la liste déroulante pour sélectionner **test**, **page**ou **transaction**.
 
     **Panneau Légende du détail**
 
@@ -99,11 +99,11 @@ Les procédures suivantes montrent comment consulter le **graphique d'activités
    - **Afficher les résultats avec des erreurs** Affiche les résultats comportant des erreurs pouvant être utiles au débogage.
 
      > [!NOTE]
-     > La liste des types d’erreurs qui sont répertoriés dans les **résultats du Salon avec des erreurs** nœud peut être étudiée plus loin en choisissant le bouton **Tables** dans la barre **d’outils Web Performance Test Results Viewer.** Pour plus d’informations, voir [Analyser les résultats des tests de charge et les erreurs dans la vue Des tables](../test/analyze-load-test-results-and-errors-in-the-tables-view.md).
+     > La liste des types d’erreurs répertoriés sous le nœud **afficher les résultats avec des erreurs** peut être examinée en cliquant sur le bouton **tables** dans la barre d’outils de la **visionneuse de résultats des tests performances de site Web** . Pour plus d’informations, consultez [analyser les résultats et les erreurs des tests de charge dans la vue tables](../test/analyze-load-test-results-and-errors-in-the-tables-view.md).
 
      Le **graphique d'activités des utilisateurs virtuels** est mis à jour en conséquence.
 
 ## <a name="see-also"></a>Voir aussi
 
 - [Analyse de l’activité des utilisateurs virtuels dans la vue Détails](../test/analyze-load-test-virtual-user-activity-in-the-details-view.md)
-- [Procédure pas à pas : utilisation du tableau virtuel de l’activité utilisateur pour isoler les problèmes](../test/walkthrough-use-the-virtual-user-activity-chart-to-isolate-issues.md)
+- [Procédure pas à pas : utilisation du graphique d’activités des utilisateurs virtuels pour isoler les problèmes](../test/walkthrough-use-the-virtual-user-activity-chart-to-isolate-issues.md)

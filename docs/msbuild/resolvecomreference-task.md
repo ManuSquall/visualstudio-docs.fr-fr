@@ -18,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3fdc6c6ccd58bcc83cc37ff3a9f7888af837ed6e
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: b99e743cf5bc9e3e634a8738e30d17c8e5517191
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75595200"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85286178"
 ---
 # <a name="resolvecomreference-task"></a>ResolveComReference, tâche
 
@@ -36,8 +36,8 @@ Prend une liste d’un ou plusieurs noms de bibliothèques de types ou de fichie
 |Paramètre|Description|
 |---------------|-----------------|
 |`DelaySign`|Paramètre `Boolean` facultatif.<br /><br /> Si la valeur est `true`, place la clé publique dans l’assembly. Si la valeur est `false`, signe complètement l’assembly.|
-|`EnvironmentVariables`|Paramètre `String[]` facultatif.<br /><br /> Tableau de paires de variables d'environnement, séparées par un signe égal. Ces variables sont transmises au *tlbimp.exe* et *à l’aximp.exe* engendré en plus, ou sélectivement dominant, du bloc d’environnement régulier.|
-|`ExecuteAsTool`|Paramètre `Boolean` facultatif.<br /><br /> Si `true`, fonctionne *tlbimp.exe* et *aximp.exe* à partir du cadre cible approprié out-of-proc pour générer les assemblages d’emballage nécessaires. Ce paramètre permet le multiciblage.|
+|`EnvironmentVariables`|Paramètre `String[]` facultatif.<br /><br /> Tableau de paires de variables d'environnement, séparées par un signe égal. Ces variables sont passées à la *tlbimp.exe* et à la *aximp.exe* générées en plus du bloc environnement normal ou en remplacement de manière sélective.|
+|`ExecuteAsTool`|Paramètre `Boolean` facultatif.<br /><br /> Si `true` , exécute *tlbimp.exe* et *aximp.exe* à partir de la version cible de .NET Framework appropriée pour générer les assemblys de wrapper nécessaires. Ce paramètre permet le multiciblage.|
 |`IncludeVersionInInteropName`|Paramètre `Boolean` facultatif.<br /><br /> Si la valeur est `true`, la version de la typelib sera incluse dans le nom du wrapper. Par défaut, il s’agit de `false`.|
 |`KeyContainer`|Paramètre `String` facultatif.<br /><br /> Spécifie un conteneur qui contient une paire de clés publique/privée.|
 |`KeyFile`|Paramètre `String` facultatif.<br /><br /> Spécifie un élément qui contient une paire de clés publique/privée.|
@@ -78,11 +78,21 @@ Prend une liste d’un ou plusieurs noms de bibliothèques de types ou de fichie
 > [!NOTE]
 > Plus vous fournissez d’informations pour identifier de façon univoque une bibliothèque de types, plus grande est la possibilité que la tâche aboutisse au fichier correct sur le disque.
 
-## <a name="remarks"></a>Notes 
+## <a name="remarks"></a>Remarques
 
-En plus des paramètres énumérés ci-dessus, cette tâche hérite des paramètres de la classe <xref:Microsoft.Build.Utilities.Task>. Pour une liste de ces paramètres supplémentaires et de leurs descriptions, voir [Classe de base de tâche](../msbuild/task-base-class.md).
+En plus des paramètres énumérés ci-dessus, cette tâche hérite des paramètres de la classe <xref:Microsoft.Build.Utilities.Task>. Pour obtenir la liste de ces paramètres supplémentaires et leurs descriptions, consultez [classe de base de tâche](../msbuild/task-base-class.md).
 
 La DLL COM n’a pas besoin d’être inscrite sur la machine pour que cette tâche fonctionne.
+
+## <a name="msb4803-error"></a>Erreur MSB4803
+
+Si vous essayez d’exécuter un projet qui utilise la `ResolveCOMReference` tâche à partir des `dotnet` commandes CLI, vous recevez l’erreur :
+
+```output
+MSB4803: The task "ResolveComReference" is not supported on the .NET Core version of MSBuild. Please use the .NET Framework version of MSBuild.
+```
+
+Cette tâche n’est pas prise en charge sur la version .NET Core de MSBuild, qui est utilisée lorsque vous exécutez la `dotnet build` commande à partir de la ligne de commande. Essayez de générer le projet en appelant [MSBuild.exe](msbuild-command-line-reference.md) à partir de la invite de commandes développeur Visual Studio, car cela utilise la version .NET Framework de MSBuild.
 
 ## <a name="see-also"></a>Voir aussi
 

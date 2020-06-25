@@ -1,7 +1,7 @@
 ---
 title: Ajouter une source de données à un test de performances de site Web
 ms.date: 10/03/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - Web performance tests, walkthroughs
 - Web performance tests, data binding (database)
@@ -9,12 +9,12 @@ ms.assetid: 2ada376d-f168-455d-9643-6acb535360c1
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 7c7f947be01500b0d45b81d404206722ac71084a
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 94ad53e4ac3d65bfe6cf08bf03f1f79c2075e03d
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75565407"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85289064"
 ---
 # <a name="add-a-data-source-to-a-web-performance-test"></a>Ajouter une source de données à un test de performances de site Web
 
@@ -227,7 +227,7 @@ Votre solution doit également inclure un test de performances web qui parcourt 
 
      ![Sélectionner le fournisseur de données .NET Framework pour OLE DB](../test/media/web_test_databinding_adddatasourcecolortext2.png)
 
-7. Choisissez **Advanced**.
+7. Choisissez **avancé**.
 
      ![Choisir Avancé](../test/media/web_test_databinding_advanced.png)
 
@@ -249,7 +249,7 @@ Votre solution doit également inclure un test de performances web qui parcourt 
 
 ### <a name="q-how-do-i-use-an-xml-file-as-a-data-source"></a>Q : Comment utiliser un fichier XML comme source de données ?
 
-**R:** Oui.
+**R :** Oui.
 
 1. Créez un dossier pour organiser vos artefacts de base de données de projets et ajouter un élément.
 

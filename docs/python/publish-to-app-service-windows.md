@@ -11,12 +11,12 @@ ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: c8e7c040fb4d6df507ed5721407655accf067fb9
-ms.sourcegitcommit: da5ebc29544fdbdf625ab4922c9777faf2bcae4a
+ms.openlocfilehash: 0564e9d36fafb32dfdefa1e5a581d298da744a0a
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "82586554"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85289168"
 ---
 # <a name="publishing-to-azure-app-service-on-windows"></a>Publier sur Azure App Service sous Linux
 
@@ -63,7 +63,7 @@ Avec un abonnement Azure actif, créez un service App Service avec une applicati
 
 Pour créer un service App Service temporaire sans avoir besoin d’un abonnement Azure, procédez comme suit :
 
-1. Ouvrez votre navigateur sur [https://azure.microsoft.com/try/app-service/web/](https://azure.microsoft.com/try/app-service/web/).
+1. Ouvrez votre navigateur sur [https://azure.microsoft.com/try/app-service/web/](https://azure.microsoft.com/try/app-service/web/) .
 1. Sélectionnez **Application web** pour le type d’application, puis sélectionnez **Suivant**.
 1. Sélectionnez **Site vide**, puis **Créer**.
 1. Connectez-vous à l’aide de la connexion de réseau social de votre choix. Après un bref instant, votre site est prêt à l’adresse URL affichée.
@@ -79,7 +79,7 @@ Si vous le souhaitez, vous pouvez également installer le package `bottle` en su
 
 La publication sur Azure App Service à partir de Visual Studio 2017 et ultérieur copie seulement les fichiers de votre projet sur le serveur. Par conséquent, il est nécessaire de créer les fichiers nécessaires pour configurer l’environnement du serveur.
 
-1. Dans Visual Studio **Explorateur de solutions**, cliquez avec le bouton droit sur le projet et sélectionnez **Ajouter > nouvel élément...**. Dans la boîte de dialogue qui s’affiche, sélectionnez le modèle « Azure Web. config (Fast CGI) », puis cliquez sur OK. Cette opération crée un fichier `web.config` dans le dossier racine de votre projet.
+1. Dans Visual Studio **Explorateur de solutions**, cliquez avec le bouton droit sur le projet et sélectionnez **Ajouter > nouvel élément...**. Dans la boîte de dialogue qui s’affiche, sélectionnez le modèle « Azure web.config (Fast CGI) », puis cliquez sur OK. Cette opération crée un fichier `web.config` dans le dossier racine de votre projet.
 
 1. Modifiez l’entrée `PythonHandler` dans `web.config` afin que le chemin corresponde au chemin d’installation de Python sur le serveur (voir [Informations de référence sur IIS](https://www.iis.net/configreference) (iis.net) pour plus de détails). Par exemple, pour Python 3.6.1 x64, l’entrée doit être la suivante :
 
@@ -129,7 +129,7 @@ La publication sur Azure App Service à partir de Visual Studio 2017 et ultérie
     ALLOWED_HOSTS = ['vspython-test-02.azurewebsites.net']
     ```
 
-    Si vous ne parvenez pas à ajouter votre URL au tableau, vous obtenez l’erreur suivante : « DisallowedHost pour / En-tête HTTP_HOST non valides : '\<URL du site\>'. Il peut être nécessaire d’ajouter '\<URL du site\>' à ALLOWED_HOSTS. »
+    Si vous n’ajoutez pas votre URL au tableau, l’erreur « DisallowedHost at/Invalid HTTP_HOST header : « » est générée \<site URL\> . Vous devrez peut-être ajouter « \<site URL\> » à ALLOWED_HOSTS.»
 
     Notez que lorsque le tableau est vide, Django autorise automatiquement « localhost », mais l’ajout de votre URL de production retire cette autorisation. Pour cette raison, vous pouvez souhaiter conserver des copies de développement et de production distinctes de `settings.py`, ou utiliser des variables d’environnement pour contrôler les valeurs d’exécution.
 
@@ -209,7 +209,7 @@ Dans le cadre de ce processus, Visual Studio effectue également les étapes sui
 - Créer un fichier `web.config` sur le serveur, qui contient des pointeurs appropriés vers la fonction `wsgi_app` de l’application et vers l’interpréteur Python 3.4 par défaut d’App Service.
 - Désactiver le traitement des fichiers dans le dossier `static` du projet (les règles concernées sont dans `web.config`).
 - Publier l’environnement virtuel sur le serveur.
-- Ajouter un fichier `web.debug.config` et les outils de débogage ptvsd pour permettre le débogage distant.
+- Ajoutez un `web.debug.config` fichier et les outils de débogage pour activer le débogage distant. Pour Visual Studio 2019 version 16,4 et les versions antérieures, les outils de débogage sont ptvsd. Pour Visual Studio 2019 version 16,5 et versions ultérieures, les outils de débogage sont debugpy.
 
 Comme indiqué précédemment, ces étapes automatiques simplifient le processus de publication, mais elles rendent plus difficile le contrôle de l’environnement Python. Par exemple, le fichier `web.config` est créé seulement sur le serveur, mais il n’est pas ajouté à votre projet. Le processus de publication prend aussi plus de temps, car il copie tout l’environnement virtuel à partir de votre ordinateur de développement, au lieu de s’appuyer sur la configuration du serveur.
 

@@ -1,7 +1,7 @@
 ---
 title: Codage d'une règle d'extraction personnalisée pour un test de performances de site Web
 ms.date: 10/19/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - extraction rules
 - Web performance tests, creating custom extraction rules
@@ -13,12 +13,12 @@ dev_langs:
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 92cce705135daa8bc54a7fab301cf5dcd8cf96d6
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 00001662667ed7020909d23cf3cfbd4b8437eabf
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75591175"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85288882"
 ---
 # <a name="code-a-custom-extraction-rule-for-a-web-performance-test"></a>Coder une règle d’extraction personnalisée pour un test de performances web
 
@@ -46,15 +46,15 @@ Vous pouvez créer vos propres règles d'extraction. Pour cela, vous dérivez vo
 
 6. (Facultatif) Dans le projet de test, ajoutez une référence au projet de bibliothèque de classes qui contient la règle d’extraction personnalisée.
 
-7. Dans le projet Test, ouvrez un test de performance Web dans **l’éditeur de tests de performance Web**.
+7. Dans le projet de test, ouvrez un test de performances de site Web dans la **éditeur de test de performances Web**.
 
-8. Pour ajouter la règle d’extraction personnalisée, cliquez à droite sur une demande de test de performance Web et **sélectionnez Ajouter la règle d’extraction**.
+8. Pour ajouter la règle d’extraction personnalisée, cliquez avec le bouton droit sur une demande de test de performances de site Web et sélectionnez **Ajouter une règle d’extraction**.
 
      La boîte de dialogue **Ajouter une règle d’extraction** s’affiche. Votre règle de validation personnalisée apparaît dans la liste **Sélectionner une règle** avec les règles de validation prédéfinies. Sélectionnez votre règle d’extraction personnalisée, puis choisissez **OK**.
 
 9. Exécutez votre test de performances web.
 
-## <a name="example"></a> Exemple
+## <a name="example"></a>Exemple
 
 Le code suivant illustre une implémentation d'une règle d'extraction personnalisée. Cette règle d'extraction extrait la valeur d'un champ d'entrée spécifié. Utilisez cet exemple comme point de départ pour vos propres règles d'extraction personnalisées.
 

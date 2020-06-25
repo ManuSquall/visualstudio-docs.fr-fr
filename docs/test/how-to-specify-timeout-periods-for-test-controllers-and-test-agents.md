@@ -1,7 +1,7 @@
 ---
 title: Délais d’expiration des contrôleurs de test et des agents de test
 ms.date: 10/19/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - agents, configuring
 - agetns, timeouts
@@ -11,12 +11,12 @@ ms.assetid: 777d0db5-0073-458a-a2a3-58b1c1f24c60
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 64ce566369f2c60a52e9026e8f92fc30836d523c
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 7b06dc7d363cefd568a6e1432582744f486fa222
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75594758"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85287283"
 ---
 # <a name="how-to-specify-timeout-periods-for-test-controllers-and-test-agents"></a>Guide pratique pour spécifier les délais d’expiration des contrôleurs de test et des agents de test
 
@@ -46,7 +46,7 @@ Pour modifier les divers paramètres de délai d'attente d'un contrôleur de tes
 
 ## <a name="to-specify-agent-timeout-options-for-a-test-controller"></a>Pour spécifier les options d’expiration de l’agent d’un contrôleur de test
 
-1. Ouvrez le fichier de configuration *QTCcontroller.exe.config* XML situé dans *%ProgramFiles (x86)% -Microsoft Visual Studio-2017-Enterprise-Common7-IDE*.
+1. Ouvrez le fichier de configuration XML *QTCcontroller.exe.config* situé dans *% ProgramFiles (x86)% \ Microsoft Visual Studio\2017\Enterprise\Common7\IDE*.
 
 2. Recherchez l’étiquette `<appSettings>`.
 
@@ -80,7 +80,7 @@ Pour modifier les divers paramètres de délai d'attente d'un contrôleur de tes
 
 ## <a name="to-specify-agent-timeout-options-for-a-test-agent"></a>Pour spécifier les options d’expiration de l’agent d’un agent de test
 
-1. Ouvrez le fichier de configuration *QTAgentService.exe.config* XML situé dans *%ProgramFiles (x86)% -Microsoft Visual Studio-2017-Enterprise-Common7-IDE*.
+1. Ouvrez le fichier de configuration XML *QTAgentService.exe.config* situé dans *% ProgramFiles (x86)% \ Microsoft Visual Studio\2017\Enterprise\Common7\IDE*.
 
 2. Recherchez l’étiquette `<appSettings>`.
 
@@ -116,5 +116,5 @@ Pour modifier les divers paramètres de délai d'attente d'un contrôleur de tes
 
 - [Installer et configurer des agents de test](../test/lab-management/install-configure-test-agents.md)
 - [Modifier les paramètres de journalisation du test de charge](../test/modify-load-test-logging-settings.md)
-- [Configurer les ports pour les contrôleurs d’essai et les agents d’essai](../test/configure-ports-for-test-controllers-and-test-agents.md)
+- [Configurer des ports pour les contrôleurs de test et les agents de test](../test/configure-ports-for-test-controllers-and-test-agents.md)
 - [Guide pratique pour lier un contrôleur de test ou un agent de test à une carte réseau](../test/how-to-bind-a-test-controller-or-test-agent-to-a-network-adapter.md)

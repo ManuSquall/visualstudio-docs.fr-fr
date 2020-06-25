@@ -1,18 +1,18 @@
 ---
 title: Installer des frameworks de tests unitaires tierces
 ms.date: 04/01/2019
-ms.topic: conceptual
+ms.topic: how-to
 ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: b70e26adc7c0c9a8dc409d9b4b971b233418b8e1
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: fb9a08d0d3119724e8db631841aca35c6c6e9fe5
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75594277"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85286971"
 ---
 # <a name="install-unit-test-frameworks"></a>Installer des frameworks de tests unitaires
 
@@ -38,7 +38,7 @@ Mettez à jour vers l’adaptateur de test stable le plus récent afin de béné
 
 ### <a name="to-update-to-the-latest-stable-test-adapter-version"></a>Pour mettre à jour vers la version stable la plus récente de l’adaptateur de test
 
-1. Ouvrez le gestionnaire de forfait Nuget pour votre solution en naviguant vers **Outils** > **NuGet Package Manager** > **Gérer les forfaits NuGet pour la solution**.
+1. Ouvrez le gestionnaire de package NuGet pour votre solution en accédant à **Outils**  >  **Gestionnaire de package NuGet**  >  **gérer les packages NuGet pour la solution**.
 
 2. Cliquez sur l’onglet **Mises à jour**, puis recherchez les adaptateurs de test MSTest, NUnit ou xUnit installés.
 

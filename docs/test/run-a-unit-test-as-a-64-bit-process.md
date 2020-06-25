@@ -1,7 +1,7 @@
 ---
 title: Exécuter un test unitaire comme processus 64 bits
 ms.date: 03/10/2020
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - unit tests, creating
 - unit tests, running
@@ -10,12 +10,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: d6c6839f8c4702d88d1022116231c6f22b5dbf21
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 04895e3dd72a7cb4f0373c970db0f12582506ef9
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79093905"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85285554"
 ---
 # <a name="run-a-unit-test-as-a-64-bit-process"></a>Exécuter un test unitaire comme processus 64 bits
 
@@ -23,22 +23,22 @@ Si vous avez un ordinateur 64 bits, vous pouvez exécuter des tests unitaires e
 
 ## <a name="to-run-a-unit-test-as-a-64-bit-process"></a>Pour exécuter un test unitaire en tant que processus 64 bits
 
-1. Si votre code ou tests ont été compilés comme 32 bits/x86, mais vous voulez maintenant les exécuter comme un processus 64 bits, recompliquez-les comme **N’importe quel processeur**.
+1. Si votre code ou vos tests ont été compilés en tant que 32 bits/x86, mais que vous souhaitez maintenant les exécuter en tant que processus 64 bits, recompilez-les comme **n’importe quel processeur**.
 
    ::: moniker range="vs-2017"
-   Alternativement, Dans Visual Studio 2017, vous pouvez également compiler votre projet en **64 bits**.
+   Dans Visual Studio 2017, vous pouvez également compiler votre projet sous la forme **64 bits**.
    ::: moniker-end
 
     > [!TIP]
     > Pour une flexibilité maximale, compilez vos projets de test avec la configuration **N’importe quelle UC**. Vous pouvez ensuite les exécuter sur des agents 32 bits et 64 bits. La compilation de projets de test avec la configuration **64 bits** ne présente aucun avantage particulier.
 
-2. Définissez les tests unitaires pour qu’ils s’exécutent comme un processus 64 bits.
+2. Définissez les tests unitaires pour qu’ils s’exécutent en tant que processus 64 bits.
 
    ::: moniker range=">=vs-2019"
-   Dans le menu Visual Studio, choisissez **Test**, puis choisissez **Processor Architecture pour les projets AnyCPU**. Choisissez **x64** pour exécuter les tests en tant que processus 64 bits.
+   Dans le menu Visual Studio, choisissez **test**, puis **architecture de processeur pour les projets AnyCPU**. Choisissez **x64** pour exécuter les tests en tant que processus 64 bits.
    ::: moniker-end
    ::: moniker range="vs-2017"
-   Dans le menu Visual Studio, choisissez **Test**, puis choisissez **Test Settings**, puis choisissez **Processor Architecture**. Choisissez **x64** pour exécuter les tests en tant que processus 64 bits.
+   Dans le menu Visual Studio, choisissez **test**, paramètres de **test**, puis **architecture de processeur**. Choisissez **x64** pour exécuter les tests en tant que processus 64 bits.
    ::: moniker-end
 
    \- ou -
@@ -47,5 +47,5 @@ Si vous avez un ordinateur 64 bits, vous pouvez exécuter des tests unitaires e
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Exécuter des tests unitaires avec Test Explorer](../test/run-unit-tests-with-test-explorer.md)
+- [Exécuter des tests unitaires avec l'Explorateur de tests](../test/run-unit-tests-with-test-explorer.md)
 - [Test unitaire de votre code](../test/unit-test-your-code.md)

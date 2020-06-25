@@ -1,7 +1,7 @@
 ---
 title: Ensembles de compteurs de test de charge
 ms.date: 10/19/2016
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - vs.test.load.dialog.countersetmapping
 helpviewer_keywords:
@@ -13,12 +13,12 @@ ms.assetid: 64315c2f-a0b2-4378-be16-0774b99beef5
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 224ac14a0d670648f8047a82a8abef0c2b7b2654
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 1eeb99d58a9fc0547d118c529878d8b02cc83dda
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "76113426"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85287686"
 ---
 # <a name="how-to-manage-counter-sets-using-the-load-test-editor"></a>Guide pratique pour gérer des ensembles de compteurs à l’aide de l’éditeur de test de charge
 
@@ -50,7 +50,7 @@ La gestion d'ensembles de compteurs implique le choix du jeu d'ordinateurs à pa
     > [!NOTE]
     > Cela ne s'applique que si votre test de charge comporte plusieurs paramètres d'exécution.
 
-4. (Facultatif) Choisissez **Ajout ordinateur** pour ajouter un nouvel ordinateur à monitorer. Le système vous invite à entrer un nom. Tapez le nom d'un ordinateur et des nœuds s'affichent sous la nouvelle entrée. Par exemple **ASP.NET**, **IIS**, **SQL** et d’autres. Activez les cases à cocher en regard des nœuds que vous souhaitez sélectionner. Les nouveaux compteurs apparaissent dans le volet **Aperçu des sélections**.
+4. (Facultatif) Choisissez **Ajout ordinateur** pour ajouter un nouvel ordinateur à monitorer. Vous êtes invité à entrer un nom. Tapez le nom d'un ordinateur et des nœuds s'affichent sous la nouvelle entrée. Par exemple **ASP.NET**, **IIS**, **SQL** et d’autres. Activez les cases à cocher en regard des nœuds que vous souhaitez sélectionner. Les nouveaux compteurs apparaissent dans le volet **Aperçu des sélections**.
 
 5. (Facultatif) Dans la zone de texte **Étiquettes d’ordinateur**, tapez une étiquette à associer à l’ordinateur. Par exemple, « TestMachine12 dans lab3 ».
 
@@ -64,4 +64,4 @@ La gestion d'ensembles de compteurs implique le choix du jeu d'ordinateurs à pa
 
 - [Contrôleurs de test et agents de test](configure-test-agents-and-controllers-for-load-tests.md)
 - [Spécifier les ensembles de compteurs et les règles de seuil des ordinateurs dans un test de charge](../test/specify-counter-sets-and-threshold-rules-for-load-testing.md)
-- [Configurer les paramètres d’exécution de test de charge](../test/configure-load-test-run-settings.md)
+- [Configurer les paramètres d’exécution des tests de charge](../test/configure-load-test-run-settings.md)

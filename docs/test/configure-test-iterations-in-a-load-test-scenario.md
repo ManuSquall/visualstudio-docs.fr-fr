@@ -1,7 +1,7 @@
 ---
 title: Configuration des itérations de tests pour un test de charge
 ms.date: 10/19/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - load tests, scenarios, iterations
 - load test, iterations
@@ -10,12 +10,12 @@ ms.assetid: ac480fb7-f4f7-47dc-9ae5-98be3aca4fba
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: e95ca27ace50c7b28d1ffb1d3fc02589daddee2d
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 6adbdedf8a71319877c5527e00e0e7c5e73fa6b1
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75590980"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85288778"
 ---
 # <a name="configure-test-iterations-in-a-load-test-scenario"></a>Configurer les itérations de tests dans un scénario de test de charge
 
@@ -39,7 +39,7 @@ Si le test de charge est basé sur la durée, et si cette dernière expire avant
 Lorsque le nombre d'itérations du scénario est atteint, le scénario cesse de s'exécuter, mais tous les autres scénarios actifs continuent de s'exécuter.
 
 > [!NOTE]
-> Une propriété connexe est la propriété **Unique** sur une source de données de test Web, qui se déplace séquentiellement à travers les données, rangée par rangée, mais seulement une fois pour chaque enregistrement. Pour plus d’informations, consultez [Ajouter une source de données à un test de performances web](../test/add-a-data-source-to-a-web-performance-test.md).
+> Une propriété associée est la propriété **unique** sur une source de données de test Web, qui se déplace de manière séquentielle dans les données ligne par ligne, mais une seule fois pour chaque enregistrement. Pour plus d’informations, consultez [Ajouter une source de données à un test de performances web](../test/add-a-data-source-to-a-web-performance-test.md).
 
 La propriété **Nombre maximal d’itérations de test** est utile pour diverses situations. Certains testeurs de charge privilégient les tests basés sur l'itération tandis que d'autres testeurs de charge privilégient les tests basés sur la durée.
 
@@ -71,7 +71,7 @@ La propriété **Temps de réflexion entre les itérations de tests** est défin
 La propriété **Temps de réflexion entre les itérations de tests** est utilisée pour spécifier la durée en secondes à l’issue de laquelle l’itération de test démarre.
 
 > [!NOTE]
-> Pour une liste complète des propriétés du scénario de test de charge et de leurs descriptions, voir [propriétés de scénario de test de charge](../test/load-test-scenario-properties.md).
+> Pour obtenir la liste complète des propriétés du scénario de test de charge et leurs descriptions, consultez [Propriétés du scénario de test de charge](../test/load-test-scenario-properties.md).
 
 ### <a name="to-specify-the-think-time-between-test-iterations"></a>Pour spécifier le temps de réflexion entre les itérations de test
 

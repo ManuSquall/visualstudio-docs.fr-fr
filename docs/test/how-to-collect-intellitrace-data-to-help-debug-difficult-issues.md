@@ -1,7 +1,7 @@
 ---
 title: Données IntelliTrace
 ms.date: 10/13/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - IntelliTrace, configuring test settings
 - Diagnostic Data Adapter, InteliTrace
@@ -11,16 +11,16 @@ ms.assetid: 02b6716f-569e-4961-938a-e790a0c74b5c
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: adc77ee87bbbf07d04fd7c01a554c7c074e5bf7f
-ms.sourcegitcommit: 5d1b2895d3a249c6bea30eb12b0ad7c0f0862d85
+ms.openlocfilehash: d0983967d42c6daa89b9a690b93fb97872e98603
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "80880219"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85288254"
 ---
 # <a name="how-to-collect-intellitrace-data-to-help-debug-difficult-issues"></a>Guide pratique pour collecter des données IntelliTrace pour aider au débogage des problèmes difficiles
 
-Vous pouvez configurer l’adaptateur de données diagnostiques pour IntelliTrace pour recueillir des informations spécifiques sur les traces diagnostiques dans Visual Studio. Avec cet adaptateur, le test peut collecter des événements de diagnostic significatifs pouvant être utilisés ultérieurement par un développeur pour repérer la cause d'un bogue dans le code. L'adaptateur de données de diagnostic pour IntelliTrace peut être utilisé pour des tests manuels ou automatisés.
+Vous pouvez configurer l’adaptateur de données de diagnostic pour IntelliTrace afin de collecter des informations de trace de diagnostic spécifiques dans Visual Studio. Avec cet adaptateur, le test peut collecter des événements de diagnostic significatifs pouvant être utilisés ultérieurement par un développeur pour repérer la cause d'un bogue dans le code. L'adaptateur de données de diagnostic pour IntelliTrace peut être utilisé pour des tests manuels ou automatisés.
 
 [!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
@@ -44,7 +44,7 @@ Les données collectées dans le fichier IntelliTrace accroissent l'efficacité 
 La procédure suivante décrit comment configurer les données IntelliTrace que vous souhaitez collecter. Ces étapes valent aussi bien pour l’éditeur de configuration de Microsoft Test Manager que pour la boîte de dialogue Paramètres de test de Visual Studio.
 ::: moniker-end
 ::: moniker range=">=vs-2019"
-La procédure suivante décrit comment configurer les données IntelliTrace que vous souhaitez collecter. Ces étapes s’appliquent à la boîte de dialogue Test Settings dans Visual Studio.
+La procédure suivante décrit comment configurer les données IntelliTrace que vous souhaitez collecter. Ces étapes s’appliquent à la boîte de dialogue Paramètres de test dans Visual Studio.
 ::: moniker-end
 
 > [!NOTE]
@@ -65,7 +65,7 @@ Avant d’effectuer les étapes de cette procédure, vous devez ouvrir les param
 
 2. Sélectionnez **IntelliTrace**.
 
-3. Si vous ajoutez IntelliTrace pour un rôle de client web ou pour une application web ASP.NET, vous devez également sélectionner **ASP.NET proxy client pour IntelliTrace et Test Impact**.
+3. Si vous ajoutez IntelliTrace pour un rôle de client Web ou pour une application Web ASP.NET, vous devez également sélectionner le **proxy client ASP.net pour IntelliTrace et l’impact de test**.
 
      Ce proxy vous permet de collecter des informations sur les appels http d’un client à un serveur web pour les adaptateurs de données de diagnostic d’impact de test et IntelliTrace.
 
@@ -81,7 +81,7 @@ Avant d’effectuer les étapes de cette procédure, vous devez ouvrir les param
     > [!WARNING]
     > Si vous activez la collecte de données IntelliTrace, la collecte des données de couverture du code ne fonctionnera pas.
 
-5. Choisissez l’onglet **Général.** Sélectionnez les **événements IntelliTrace uniquement** pour enregistrer des événements diagnostiques importants qui ont un impact minimal sur les performances lorsque vous testez.
+5. Choisissez l’onglet **général** . Sélectionnez **événements IntelliTrace uniquement** pour enregistrer des événements de diagnostic significatifs qui ont un impact minimal sur les performances lorsque vous testez.
 
      -ou-
 
@@ -89,7 +89,7 @@ Avant d’effectuer les étapes de cette procédure, vous devez ouvrir les param
 
 6. Pour collecter des données à partir de votre application ASP.NET qui s’exécute sur Internet Information Services, sélectionnez **Collecter des données à partir d’une application ASP.NET exécutée sur Internet Information Services**. Installez et configurez votre agent de test sur le rôle serveur web. Consultez [Installer et configurer des agents de test](../test/lab-management/install-configure-test-agents.md).
 
-7. Choisissez l’onglet **Modules.** Sélectionnez les **données collecter de tous les modules à l’exception de ce qui suit** et utilisez **Ajouter** pour ajouter à la liste des modules et **supprimer** pour supprimer un module. Cette option vous permet d'inclure tous les modules en cours d'exécution sur le système, à l'exception des modules que vous spécifiez.
+7. Choisissez l’onglet **modules** . Sélectionnez **collecter les données de tous les modules à l’exception des suivants** et utilisez **Ajouter** pour ajouter à la liste des modules et **supprimer** pour supprimer un module. Cette option vous permet d'inclure tous les modules en cours d'exécution sur le système, à l'exception des modules que vous spécifiez.
 
      -ou-
 
@@ -98,22 +98,22 @@ Avant d’effectuer les étapes de cette procédure, vous devez ouvrir les param
     > [!NOTE]
     > Si possible, sélectionnez les processus spécifiques que vous souhaitez surveiller. Cela est recommandé pour une performance optimale.
 
-8. Choisissez l’onglet **Processus.** Sélectionnez **les données collecter de tous les processus, sauf les suivants** et utilisez **Ajouter** à la liste des processus et **supprimer** pour supprimer un processus. Cette option vous permet d'inclure tous les processus qui s'exécutent sur le système, à l'exception des processus que vous spécifiez.
+8. Choisissez l’onglet **processus** . Sélectionnez **collecter les données de tous les processus à l’exception des éléments suivants** et utilisez **Ajouter** pour ajouter à la liste des processus et **supprimer** pour supprimer un processus. Cette option vous permet d'inclure tous les processus qui s'exécutent sur le système, à l'exception des processus que vous spécifiez.
 
      -ou-
 
      Sélectionnez **Collecter les données des processus spécifiés uniquement**, et utilisez **Ajouter** pour ajouter un processus à la liste et **Supprimer** pour supprimer un processus. Cette option vous permet de spécifier quels processus doivent être utilisés.
 
-9. (Facultatif) Choisissez l’onglet **Événements IntelliTrace.** Sélectionnez ou effacez chaque catégorie d’événements IntelliTrace que vous souhaitez inclure ou exclure lorsque vous collectez des événements diagnostiques.
+9. Facultatif Choisissez l’onglet **événements IntelliTrace** . Sélectionnez ou désactivez chaque catégorie d’événement IntelliTrace que vous souhaitez inclure ou exclure lorsque vous collectez des événements de diagnostic.
 
 10. (Facultatif) Développez chaque catégorie d'événement IntelliTrace et activez ou désactivez chaque événement spécifique à inclure ou exclure dans les événements IntelliTrace.
 
-11. (Facultatif) Choisissez l’onglet **Advanced.** Ensuite, choisissez la flèche à côté **de la quantité maximale d’espace disque pour l’enregistrement** et sélectionnez la taille maximale que vous souhaitez activer pour le fichier IntelliTrace à utiliser.
+11. Facultatif Choisissez l’onglet **avancé** . Ensuite, cliquez sur la flèche en regard de **quantité maximale d’espace disque pour l’enregistrement** , puis sélectionnez la taille maximale que vous souhaitez activer pour le fichier IntelliTrace à utiliser.
 
     > [!NOTE]
     > Si vous augmentez la taille de l'enregistrement, un problème de délai d'expiration peut se produire lorsque vous enregistrez cet enregistrement avec vos résultats de test.
 
-12. Si vous utilisez Microsoft Test Manager (déprécié dans Visual Studio 2017), choisissez **Save**. Si vous utilisez Visual Studio, choisissez **OK**. Les paramètres IntelliTrace sont maintenant configurés et enregistrés pour vos paramètres de test.
+12. Si vous utilisez Microsoft Test Manager (déconseillé dans Visual Studio 2017), choisissez **Enregistrer**. Si vous utilisez Visual Studio, choisissez **OK**. Les paramètres IntelliTrace sont maintenant configurés et enregistrés pour vos paramètres de test.
 
     ::: moniker range="vs-2017"
     > [!NOTE]
@@ -121,7 +121,7 @@ Avant d’effectuer les étapes de cette procédure, vous devez ouvrir les param
     ::: moniker-end
     ::: moniker range=">=vs-2019"
     > [!NOTE]
-    > Pour réinitialiser la configuration de cet adaptateur de données diagnostiques, choisissez **Reset à la configuration par défaut** dans Visual Studio.
+    > Pour réinitialiser la configuration de cet adaptateur de données de diagnostic, choisissez **rétablir la configuration par défaut** dans Visual Studio.
     ::: moniker-end
 
 ## <a name="see-also"></a>Voir aussi

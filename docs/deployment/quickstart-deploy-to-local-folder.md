@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3355636eba7556a472d8ce272437fb07c30714be
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: da13cb2b249146c7a29abbab03b66f77594abf4b
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84184159"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85285402"
 ---
 # <a name="deploy-an-app-to-a-local-folder-using-visual-studio"></a>Déployer une application dans un dossier local à l’aide de Visual Studio
 
@@ -34,7 +34,7 @@ Vous pouvez utiliser l’outil **Publier** pour publier des applications ASP.NET
 
 1. Dans la boîte de dialogue **publier** , sélectionnez **dossier**.
 
-    ![Choisir un dossier en tant que cible de publication](../deployment/media/quickstart-publish-folder.png "Choisir un dossier")
+    ![Choisir un dossier en tant que cible de publication](../deployment/media/quickstart-publish-folder-new.png "Choisir un dossier")
 
 1. Entrez un chemin d’accès ou sélectionnez **Parcourir** pour spécifier un dossier.
 

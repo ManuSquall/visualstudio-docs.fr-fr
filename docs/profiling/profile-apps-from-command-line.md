@@ -1,6 +1,6 @@
 ---
-title: Mesurer les performances de la ligne de commande
-description: Mesurez les performances du processeur et gérez l’utilisation de la mémoire dans votre application à partir de la ligne de commande.
+title: Mesurer les performances à partir de la ligne de commande
+description: Mesurez les performances de l’UC et l’utilisation de la mémoire managée dans votre application à partir de la ligne de commande.
 ms.custom: ''
 ms.date: 02/21/2020
 ms.topic: conceptual
@@ -14,12 +14,12 @@ manager: jillfra
 monikerRange: '>= vs-2019'
 ms.workload:
 - multiple
-ms.openlocfilehash: 18850a6e365988abd33b7e2e2a3972ba5cb0a91a
-ms.sourcegitcommit: 9c1cecaff4d9955276eee7865b78d47679dd1e2a
+ms.openlocfilehash: ba5915e687bd4e1f6afb200f4ca3e7a866c6151c
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "80638693"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85285842"
 ---
 # <a name="measure-application-performance-from-the-command-line"></a>Mesurer les performances d’une application à partir de la ligne de commande
 
@@ -33,7 +33,7 @@ Dans l’exemple décrit dans cet article, vous collectez des informations sur l
 
 * Connaissance des outils en ligne de commande
 
-* Pour recueillir des informations de performance sur une machine à distance sans visual Studio installé, installez les [outils de performance pour Visual Studio](https://visualstudio.microsoft.com/downloads#performance-tools-for-visual-studio-2019) sur la machine à distance. La version des outils doit correspondre à votre version de Visual Studio.
+* Pour collecter des informations sur les performances d’un ordinateur distant sur lequel Visual Studio n’est pas installé, installez les [Outils d’exécution de performances pour Visual Studio](https://visualstudio.microsoft.com/downloads#remote-tools-for-visual-studio-2019) sur l’ordinateur distant. La version des outils doit correspondre à votre version de Visual Studio.
 
 ## <a name="collect-performance-data"></a>Collecter des données de performances
 
@@ -53,9 +53,9 @@ Pour profiler une application à l’aide des outils CLI de diagnostics Visual S
 
    Les arguments qui doivent être inclus sont les suivants :
 
-   * \<*id*> identifie la session de collecte. L’ID doit être un nombre compris entre 1 et 255.
-   * \<*pid*> correspond au PID du processus à profiler, dans ce cas le PID identifié à l’étape 1.
-   * \<*configFile*> correspond au fichier de configuration de l’agent de collecte que vous souhaitez lancer. Pour plus d’informations, consultez [Fichiers de configuration des agents](#config_file).
+   * \<*id*>Identifie la session de collecte. L’ID doit être un nombre compris entre 1 et 255.
+   * \<*pid*>, PID du processus que vous souhaitez profiler, dans le cas présent, le PID que vous avez trouvé à l’étape 1
+   * \<*configFile*>, fichier de configuration de l’agent de collecte que vous souhaitez lancer. Pour plus d’informations, consultez [Fichiers de configuration des agents](#config_file).
 
 1. Redimensionnez le Bloc-notes ou tapez quelque chose pour que des informations de profilage intéressantes soient collectées.
 
@@ -73,10 +73,20 @@ Les agents de collecte sont des composants interchangeables qui collectent diff�
 
 Pour des raisons pratiques, vous pouvez stocker ces informations dans un fichier de configuration d’agent. Le fichier de configuration est un fichier *.json* qui contient au minimum le nom du fichier *.dll* et son CLSID COM. Voici des exemples de fichiers de configuration que vous pouvez trouver dans le dossier suivant :
 
-```<Visual Studio installation folder>\2019\Preview\Team Tools\DiagnosticsHub\Collector\AgentConfigs\```
+```<Visual Studio installation folder>Team Tools\DiagnosticsHub\Collector\AgentConfigs\```
 
-* CpuUsage configurations (Base/High/Low), qui correspond aux données collectées pour l’outil de profilage [Utilisation de l’UC](../profiling/cpu-usage.md).
-* DotNetObjectAlloc configurations (Base/Low), qui correspond aux données collectées pour l’[outil d’allocation d’objets .NET](../profiling/dotnet-alloc-tool.md).
+Pour télécharger et afficher les fichiers de configuration de l’agent, consultez les liens suivants :
+
+- https://aka.ms/vs/diaghub/agentconfig/cpubase
+- https://aka.ms/vs/diaghub/agentconfig/cpuhigh
+- https://aka.ms/vs/diaghub/agentconfig/cpulow
+- https://aka.ms/vs/diaghub/agentconfig/database
+- https://aka.ms/vs/diaghub/agentconfig/dotnetasyncbase
+- https://aka.ms/vs/diaghub/agentconfig/dotnetallocbase
+- https://aka.ms/vs/diaghub/agentconfig/dotnetalloclow
+
+Les configurations CpuUsage (base/haute/basse) correspondent aux données collectées pour l’outil de profilage de l’utilisation de l' [UC](../profiling/cpu-usage.md) .
+Les configurations DotNetObjectAlloc (base/faible) correspondent aux données collectées pour l' [outil d’allocation d’objets .net](../profiling/dotnet-alloc-tool.md).
 
 Les configurations Base/Low/High font référence au taux d’échantillonnage. Par exemple, Low correspond à 100 échantillons/seconde et High à 4 000 échantillons/seconde.
 

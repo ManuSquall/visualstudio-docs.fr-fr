@@ -1,6 +1,6 @@
 ---
 title: Exécuter des outils de profilage avec ou sans le débogueur | Microsoft Docs
-ms.date: 04/02/2020
+ms.date: 5/26/2020
 ms.topic: conceptual
 ms.assetid: 3fcdccad-c1bd-4c67-bcec-bf33a8fb5d63
 author: mikejo5000
@@ -8,131 +8,169 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cf544b3bec9b492f1d1669549ba5501a52f7d5f2
-ms.sourcegitcommit: 9c1cecaff4d9955276eee7865b78d47679dd1e2a
+ms.openlocfilehash: 45632967c39348e8dc78dc3e2fb95227dcd86d7d
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "80638810"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85285895"
 ---
 # <a name="run-profiling-tools-with-or-without-the-debugger"></a>Exécuter des outils de profilage avec ou sans le débogueur
 
-Visual Studio propose un choix d’outils de mesure et de profilage des performances. Certains outils, tels que **Utilisation de l’UC** et **Utilisation de la mémoire**, peuvent s’exécuter avec ou sans le débogueur et sur des configurations de build Release ou Debug. Les outils du **Profileur de performances** tels que **Chronologie de l’application** peuvent s’exécuter sur des builds Release ou Debug. Les outils intégrés au débogueur tels que la fenêtre **Outils de diagnostic** et l’onglet **Événements** s’exécutent uniquement pendant les sessions de débogage.
+Visual Studio propose un choix d’outils de mesure et de profilage des performances. Certains outils, tels que l’utilisation de l’UC et l’utilisation de la mémoire, peuvent s’exécuter avec ou sans le débogueur, ainsi que pour les configurations de build de mise en version ou de débogage. Les outils du profileur de performances comme chronologie de l’application peuvent s’exécuter sur des versions Debug ou Release. Les outils intégrés au débogueur, comme la fenêtre Outils de diagnostic et l’onglet événements, s’exécutent uniquement pendant les sessions de débogage.
 
 >[!NOTE]
 >Vous pouvez utiliser les outils de performances non intégrés au débogueur avec Windows 7 et ultérieur. Windows 8 ou ultérieur est nécessaire pour exécuter les outils de profilage intégrés au débogueur.
 
-Le **Profileur de performances** non intégré au débogueur et les **Outils de diagnostic** intégrés au débogueur fournissent des informations et des expériences différentes. Les outils intégrés au débogueur montrent les points d’arrêt et les valeurs des variables. Les outils non intégrés au débogueur offrent des résultats plus proches de l’expérience des utilisateurs finaux.
+Le Profileur de performances non intégré au débogueur et les Outils de diagnostic intégrés au débogueur fournissent des informations et des expériences différentes. Les outils intégrés au débogueur montrent les points d’arrêt et les valeurs des variables. Les outils non intégrés au débogueur offrent des résultats plus proches de l’expérience des utilisateurs finaux.
 
-Pour vous aider à décider quels outils et résultats utiliser, tenez compte des points suivants :
+Pour déterminer les outils et les résultats à utiliser, prenez en compte les éléments suivants :
 
 - Les problèmes de performances externes, comme les problèmes de réactivité du réseau ou d’E/S de fichier, se ressembleront dans tous les outils, qu’ils soient intégrés ou non au débogueur.
-- Pour les problèmes provoqués par des appels nécessitant une utilisation importante du processeur, il peut exister des différences de performances considérables entre les builds Release et Debug. Vérifiez si le problème existe dans les builds Release.
-- Si le problème se produit uniquement pendant les builds Debug, vous n’avez probablement pas besoin d’exécuter les outils non intégrés au débogueur. Pour les problèmes liés aux builds Release, déterminez si les outils du débogueur vous seront d’une aide quelconque pour un examen approfondi.
-- Les builds Release fournissent certaines optimisations comme l’incorporation des constantes et des appels de fonction, le nettoyage des chemins de code inutilisés ou encore des modes de stockage de variables inutilisables par le débogueur. Les valeurs de performances mentionnées dans les outils intégrés au débogueur sont moins précises, car les builds Debug n’offrent pas ces optimisations.
-- Le débogueur lui-même affecte les performances quand il effectue des opérations de débogage nécessaires telles que l’interception des exceptions et des événements de chargement de module.
-- Les valeurs de performances des builds Release fournies dans les outils du **Profileur de performances** sont plus précises. Les résultats fournis par les outils intégrés au débogueur sont plus utiles en comparaison avec d’autres mesures liées au débogage.
-
-Pour l’utilisation du processeur, vous pouvez exécuter l’outil sur une machine à distance à l’aide des outils de ligne de commande.
+- Pour les problèmes provoqués par les appels nécessitant une utilisation intensive du processeur, il peut y avoir des différences de performances considérables entre les versions release et Debug. Vérifiez si le problème existe dans les versions release.
+- Si le problème se produit uniquement pendant les versions de débogage, vous n’avez probablement pas besoin d’exécuter les outils de non-débogage. Pour les problèmes de version Release, déterminez si les outils du débogueur vous aideront à approfondir l’investigation.
+- Les builds Release fournissent certaines optimisations comme l’incorporation des constantes et des appels de fonction, le nettoyage des chemins de code inutilisés ou encore des modes de stockage de variables inutilisables par le débogueur. Les nombres de performances dans les outils intégrés au débogueur sont moins précis, car les versions de débogage n’ont pas ces optimisations.
+- Le débogueur lui-même modifie les performances, car il effectue des opérations de débogueur telles que l’interception des événements d’exception et de chargement de module.
+- Les valeurs de performances des builds Release fournies dans les outils du Profileur de performances sont plus précises. Les résultats fournis par les outils intégrés au débogueur sont plus utiles en comparaison avec d’autres mesures liées au débogage.
 
 ## <a name="collect-profiling-data-while-debugging"></a><a name="BKMK_Quick_start__Collect_diagnostic_data"></a> Collecter les données de profilage pendant le débogage
 
-Lorsque vous commencez à débogage dans Visual Studio en sélectionnant **Debug** > **Start Debugging** ou en appuyant sur **F5**, la fenêtre **Diagnostic Tools** apparaît par défaut. Pour l’ouvrir manuellement, sélectionnez **Debug** > **Windows** > **Show Diagnostic Tools**. La fenêtre **Outils de diagnostic** affiche des informations sur l’utilisation du processeur, la mémoire de traitement et les événements.
+Quand vous démarrez le débogage dans Visual Studio en sélectionnant **Déboguer**  >  **Démarrer**le débogage, ou en appuyant sur **F5**, la fenêtre de **outils de diagnostic** s’affiche par défaut. Pour l’ouvrir manuellement, sélectionnez **Déboguer**  >  **fenêtres**  >  **afficher les outils de diagnostic**. La fenêtre **Outils de diagnostic** affiche des informations sur l’utilisation du processeur, la mémoire de traitement et les événements.
 
-![Outils de diagnostic](../profiling/media/diagnostictools-update1.png "Outils de diagnostic")
+![Capture d’écran de la fenêtre Outils de diagnostic](../profiling/media/diagnostictoolswindow.png " Fenêtre Outils de diagnostic")
 
-- Utilisez l’icône **Paramètres** dans la barre d’outils pour sélectionner s’il y a lieu d’afficher **l’utilisation de la mémoire** ou **l’utilisation du processeur**.
+- Utilisez l’icône **Paramètres** dans la barre d’outils pour sélectionner si vous souhaitez afficher **Utilisation de la mémoire**, **Analyse de l’IU** ou **Utilisation de l’UC**.
 
-- Sélectionnez **Paramètres** dans la liste déroulante **Paramètres** pour ouvrir les **pages de propriétés des outils de diagnostic** avec davantage d’options.
+- Sélectionnez **paramètres** dans la liste déroulante **paramètres** pour ouvrir les **pages de propriétés outils de diagnostic** avec davantage d’options.
 
-- Si vous exécutez Visual Studio Enterprise, vous pouvez activer ou désactiver IntelliTrace sous Visual Studio **Tools** > **Options** > **IntelliTrace**.
+- Si vous exécutez Visual Studio Enterprise, vous pouvez activer ou désactiver IntelliTrace en accédant à **Outils**  >  **options**  >  **IntelliTrace**.
 
 La session de diagnostic se termine quand vous arrêtez le débogage.
 
 ### <a name="the-events-tab"></a>Onglet Événements
 
-Pendant une session de débogage, l’onglet **Événements** de la fenêtre **Outils de diagnostic** liste les événements de diagnostic qui se produisent. Les préfixes de catégories (**Point d’arrêt**, **Fichier** et autres) vous permettent de trouver rapidement la catégorie qui vous intéresse dans la liste, ou d’ignorer celles qui ne vous intéressent pas.
+Pendant une session de débogage, l’onglet Événements de la fenêtre Outils de diagnostic liste les événements de diagnostic qui se produisent. Le *point d’arrêt*des préfixes de catégorie, le *fichier*, etc. vous permettent d’analyser rapidement la liste d’une catégorie, ou d’ignorer les catégories qui ne vous intéressent pas.
 
-Utilisez la liste déroulante **Filtre** pour filtrer les événements en sélectionnant ou en désélectionnant des catégories d’événements spécifiques.
+Utilisez la liste déroulante **filtre** pour filtrer les événements dans et hors de l’affichage, en sélectionnant ou en effaçant des catégories spécifiques d’événements.
 
-![Filtre d’événement diagnostique](../profiling/media/diagnosticeventfilter.png "Filtre d’événement diagnostique")
+![Capture d’écran du filtre des événements de diagnostic](../profiling/media/diagnosticeventfilter.png "Filtre d’événement de diagnostic")
 
-Utilisez la zone de recherche pour trouver une chaîne spécifique dans la liste des événements. Voici les résultats de recherche de la chaîne « name » avec mise en correspondance de quatre événements :
+Utilisez la zone de recherche pour trouver une chaîne spécifique dans la liste des événements. Voici les résultats d’une recherche portant sur le *nom* de chaîne qui correspond à quatre événements :
 
-![Recherche d’événements diagnostiques](../profiling/media/diagnosticseventsearch.png "Recherche d’événements diagnostiques")
+![Capture d’écran de la recherche d’événements de diagnostic](../profiling/media/diagnosticseventsearch.png "Recherche d’événements de diagnostic")
 
 Pour plus d’informations, consultez [Searching and filtering the Events tab of the Diagnostic Tools window](https://devblogs.microsoft.com/devops/searching-and-filtering-the-events-tab-of-the-diagnostic-tools-window/).
 
 ## <a name="collect-profiling-data-without-debugging"></a>Collecter les données de profilage sans débogage
 
-Pour recueillir des données de performances sans débogage, vous pouvez exécuter les outils du **Profileur de performances**. L’exécution de certains des outils de profilage nécessite des privilèges d’administrateur. Vous pouvez ouvrir Visual Studio en tant qu’administrateur, ou vous pouvez exécuter les outils en tant qu’administrateur quand vous démarrez la session de diagnostic.
+Pour recueillir des données de performances sans débogage, vous pouvez exécuter les outils du Profileur de performances.
 
-1. Avec un projet ouvert dans Visual Studio, définissez la configuration de la solution pour **libérer** et sélectionnez **Local Windows Debugger** (ou **Local Machine**) comme cible de déploiement.
+1. Avec un projet ouvert dans Visual Studio, définissez la configuration de solution sur **Release**, puis sélectionnez **débogueur Windows local**   (ou **ordinateur local**) comme cible de déploiement.
 
-1. Sélectionnez **Debug** > **Performance Profiler**, ou appuyez sur **Alt**+**F2**.
+1. Sélectionnez **Déboguer**le  >  **profileur de performances**ou appuyez sur **ALT** + **F2**.
 
-1. Dans la page de lancement des diagnostics, sélectionnez un ou plusieurs outils à exécuter. Seuls les outils applicables au type de projet, au système d'exploitation et au langage de programmation sont affichés. Sélectionnez **Afficher tous les outils** pour voir aussi les outils qui sont désactivés pour cette session de diagnostic. Vous pourriez effectuer les choix suivants pour une application C# UWP :
+1. Sur la page lancement des outils de diagnostic, sélectionnez un ou plusieurs outils à exécuter. Seuls les outils applicables au type de projet, au système d’exploitation et au langage de programmation sont affichés. Sélectionnez **Afficher tous les outils** pour voir aussi les outils qui sont désactivés pour cette session de diagnostic.
 
-   ![Sélectionner les outils de diagnostic](../profiling/media/diag_selecttool.png "DIAG_SelectTool")
+   ![Capture d’écran des outils de diagnostic](../profiling/media/diaghubsummarypage.png "DIAG_SelectTool")
 
 1. Pour démarrer la session de diagnostic, sélectionnez **Démarrer**.
 
-   Pendant l’exécution de la session, certains outils affichent des graphes de données en temps réel dans la page des outils de diagnostic.
+   Pendant l’exécution de la session, certains outils affichent des graphiques de données en temps réel sur la page outils de diagnostic, ainsi que des contrôles pour suspendre et reprendre la collecte des données.
 
-    ![Recueillir des données sur le Centre de performance et de diagnostic](../profiling/media/pdhub_collectdata.png "Hub collecte des données")
+    ![Capture d’écran de la collecte de données sur le Hub performances et diagnostics](../profiling/media/diaghubcollectdata.png "Collecte de données par le Hub")
 
 1. Pour terminer la session de diagnostic, sélectionnez **Arrêter la collecte**.
 
-   Les données analysées apparaissent dans la page **Rapport**.
+   Les données analysées s’affichent sur la page du **rapport** .
 
-Vous pouvez enregistrer les rapports et les ouvrir à partir de la liste **Sessions récemment ouvertes** dans la page de lancement des outils de diagnostic.
+Vous pouvez enregistrer les rapports et les ouvrir à partir de la liste **sessions récemment ouvertes** sur la page de lancement de outils de diagnostic.
 
-![Ouvrir un fichier de session de diagnostic enregistré](../profiling/media/pdhub_openexistingdiagsession.png "PDHUB_OpenExistingDiagSession")
+![Capture d’écran de Outils de diagnostic liste des sessions récemment ouvertes](../profiling/media/diaghubopenexistingdiagsession.png "PDHUB_OpenExistingDiagSession")
 
-### <a name="the-profiling-report"></a>Le rapport de profilage
- ![Rapport d'outils de diagnostic](../profiling/media/diag_report.png "DIAG_Report")
+## <a name="collect-profiling-data-from-the-command-line"></a>Collecter les données de profilage à partir de la ligne de commande
 
-|||
-|-|-|
-|![Étape 1](../profiling/media/procguid_1.png "ProcGuid_1")|La chronologie indique la durée de la session de profilage, les événements d'activation du cycle de vie de l'application et les marques utilisateur.|
-|![Étape 2](../profiling/media/procguid_2.png "ProcGuid_2")|Vous pouvez limiter le rapport à une partie de la chronologie en faisant glisser les barres bleues pour sélectionner une zone de la chronologie.|
-|![Étape 3](../profiling/media/procguid_3.png "ProcGuid_3")|Chaque outil de diagnostic affiche un ou plusieurs graphes principaux. Si votre session de diagnostic comportait plusieurs outils, tous leurs graphes principaux sont affichés.|
-|![Étape 4](../profiling/media/procguid_4.png "ProcGuid_4")|Vous pouvez réduire ou développer les graphes de chaque outil.|
-|![Étape 5](../profiling/media/procguid_6.png "ProcGuid_6")|Quand les données sont tirées de plusieurs outils, les détails des outils sont collectés sous des onglets.|
-|![Étape 6](../profiling/media/procguid_6a.png "ProcGuid_6a")|La partie inférieure du rapport contient une ou plusieurs vues de détails pour chaque outil. Vous pouvez filtrer la vue en sélectionnant des régions de la chronologie.|
+Pour mesurer les données de performances à partir de la ligne de commande, vous pouvez utiliser VSDiagnostics.exe, qui est inclus avec Visual Studio ou le Outils de contrôle à distance. Cela est utile pour capturer les traces de performances sur les systèmes où Visual Studio n’est pas installé, ou pour générer un script pour la collecte des traces de performances. Lorsque vous utilisez VSDiagnostics.exe, vous commencez une session de diagnostic qui capture et stocke les données de profilage jusqu’à l’arrêt de l’outil. À ce stade, ces données sont exportées dans un fichier. diagsession, et vous pouvez ouvrir ce fichier dans Visual Studio pour analyser les résultats.
 
-## <a name="run-diagnostic-sessions-on-installed-or-running-apps"></a>Exécuter des sessions de diagnostic sur des applications installées ou en cours d’exécution
+### <a name="launch-an-application"></a>Lancer une application
 
-Outre le démarrage de votre application à partir du projet Visual Studio, vous pouvez également exécuter les sessions de diagnostic sur d'autres cibles. Par exemple, vous souhaiterez peut-être diagnostiquer les problèmes de performances sur une application installée à partir du Windows Store. Dans le Profileur de performance, sélectionnez parmi la liste d’abandon en vertu **de La cible de changement**.
+1. Ouvrez une invite de commandes et accédez au répertoire avec VSDiagnostics.exe :
 
-![Choisir la cible d'analyse des outils de diagnostic](../profiling/media/pdhub_chooseanalysistarget.png "PDHUB_ChooseAnalysisTarget")
+   ```
+   <Visual Studio Install Folder>\Team Tools\DiagnosticsHub\Collector\
+   ```
 
-Vous pouvez démarrer des applications qui sont déjà installées, ou attacher les outils de diagnostic à des applications et des processus qui sont déjà en cours d’exécution.
+2. Démarrez VSDiagnostics.exe à l’aide de la commande suivante :
 
-Si vous choisissez **Exécutable** comme cible d’analyse, vous pouvez entrer le chemin vers un .exe sur une machine locale ou *distante.* Dans les deux cas, le *.exe* fonctionne localement. Cependant, nous vous recommandons de profiler votre application en ouvrant la solution dans Visual Studio.
+   ```
+   VSDiagnostics.exe start <id> /launch:<appToLaunch> /loadConfig:<configFile>
+   ```
 
-Pour une application UWP, lorsque vous **sélectionnez l’application Running App** ou **l’application installée,** vous sélectionnez l’application à partir d’une liste qui trouve les applications sur la cible de déploiement spécifiée. Cette cible peut être un ordinateur local ou distant. Pour profiler une application UWP sur une machine à distance, vous devez sélectionner **Universal (Protocole Non crypté)** dans la boîte de dialogue **Remote Connections.**
+   Vous devez inclure les arguments suivants :
 
-![Choisir une application en cours d'exécution ou installée pour le diagnostic](../profiling/media/pdhub_selectrunningapp.png "PDHUB_SelectRunningApp")
+   - \<id\>: Identifie la session de collecte. L’ID doit être un nombre compris entre 1 et 255.
+   - \<appToLaunch\>: Fichier exécutable à lancer et Profiler.
+   - \<configFile\>: Fichier de configuration de l’agent de collecte que vous souhaitez lancer.
 
-> [!NOTE]
-> Pour d’autres scénarios nécessitant une utilisation à distance des outils de profilage, voir [Les performances de l’application Measure de la ligne de commande](../profiling/profile-apps-from-command-line.md). Vous pouvez utiliser les outils de ligne de commande avec L’utilisation de processeur et l’outil d’allocation d’objets .NET.
+3. Pour arrêter la collecte et afficher les résultats, suivez les étapes de la section « arrêter la collecte » plus loin dans cet article.
 
-## <a name="see-also"></a>Voir aussi
+### <a name="attach-to-an-existing-application"></a>Attacher à une application existante
 
-Voici quelques billets de blog et articles MSDN de l’équipe de développement Diagnostics :
-- [Magazine MSDN : Analyser les performances pendant le débogage dans Visual Studio 2015](https://msdn.microsoft.com/magazine/dn973013.aspx)
+1. Ouvrez une application, telle que le bloc-notes, puis ouvrez le **Gestionnaire des tâches** pour accéder à son ID de processus (PID). Dans le gestionnaire des tâches, recherchez le PID sous l’onglet **Détails**   .
+2. Ouvrez une invite de commandes, puis accédez au répertoire contenant l’exécutable de l’agent de collecte. En règle générale, c’est ici :
 
-- [Magazine MSDN : IntelliTrace permet de diagnostiquer les problèmes plus rapidement](https://msdn.microsoft.com/magazine/dn973014.aspx)
+   ```
+   <Visual Studio installation folder>\2019\Preview\Team Tools\DiagnosticsHub\Collector\
+   ```
 
-- [Billet de blog : Diagnosing Event Handler Leaks with the Memory Usage Tool in Visual Studio 2015](https://devblogs.microsoft.com/devops/diagnosing-event-handler-leaks-with-the-memory-usage-tool-in-visual-studio-2015/)
+3. Démarrez le fichier VSDiagnostics.exe en tapant la commande suivante.
 
-- [Vidéo : Historical Debugging with IntelliTrace in Microsoft Visual Studio Ultimate 2015](https://channel9.msdn.com/Events/Ignite/2015/BRK3716)
+   ```
+   VSDiagnostics.exe start <id> /attach:<pid> /loadConfig:<configFile>
+   ```
 
-- [Vidéo : Debugging Performance Issues Using Visual Studio 2015](https://channel9.msdn.com/Events/Build/2015/3-731)
+   Vous devez inclure les arguments suivants :
 
-- [Conseils sur les performances : Performance Information at-a-glance while Debugging with Visual Studio](https://devblogs.microsoft.com/devops/perftips-performance-information-at-a-glance-while-debugging-with-visual-studio/)
+   - \<id\>: Identifie la session de collecte. L’ID doit être un nombre compris entre 1 et 255.
+   - \<pid\>: PID du processus que vous souhaitez profiler, qui est dans ce cas le PID que vous avez trouvé à l’étape 1.
+   - \<configFile\>: Fichier de configuration de l’agent de collecte que vous souhaitez lancer. Pour plus d’informations, consultez [fichiers de configuration pour les agents](../profiling/profile-apps-from-command-line.md).
 
-- [Diagnostic Tools debugger window in Visual Studio 2015](https://devblogs.microsoft.com/devops/diagnostic-tools-debugger-window-in-visual-studio-2015/)
+4. Pour arrêter la collecte et afficher les résultats, suivez les étapes de la section suivante.
 
-- [IntelliTrace dans Visual Studio Enterprise 2015](https://devblogs.microsoft.com/devops/intellitrace-in-visual-studio-ultimate-2015/)
+### <a name="stop-collection"></a>Arrêter la collecte
+
+1. Arrêtez la session de collecte et envoyez la sortie vers un fichier, en tapant la commande suivante.
+
+   ```
+   VSDiagnostics.exe stop <id> /output:<path to file>
+   ```
+
+2. Accédez à la sortie du fichier de la commande précédente et ouvrez-la dans Visual Studio pour examiner les informations collectées.
+
+## <a name="agent-configuration-files"></a> Fichiers de configuration des agents
+
+Les agents de collecte sont des composants interchangeables qui collectent différents types de données, en fonction de ce que vous essayez de mesurer.
+Pour des raisons pratiques, vous pouvez stocker ces informations dans un fichier de configuration d’agent. Le fichier de configuration est un fichier. JSON qui contient au minimum le nom du fichier. dll et son CLSID COM. Voici des exemples de fichiers de configuration que vous pouvez trouver dans le dossier suivant :
+
+```
+<Visual Studio installation folder>\Team Tools\DiagnosticsHub\Collector\AgentConfigs\
+```
+
+Pour télécharger et afficher les fichiers de configuration de l’agent, consultez les liens suivants :
+
+- https://aka.ms/vs/diaghub/agentconfig/cpubase
+- https://aka.ms/vs/diaghub/agentconfig/cpuhigh
+- https://aka.ms/vs/diaghub/agentconfig/cpulow
+- https://aka.ms/vs/diaghub/agentconfig/database
+- https://aka.ms/vs/diaghub/agentconfig/dotnetasyncbase
+- https://aka.ms/vs/diaghub/agentconfig/dotnetallocbase
+- https://aka.ms/vs/diaghub/agentconfig/dotnetalloclow
+
+Les configurations CpuUsage (base/haute/basse) correspondent aux données collectées pour l’outil de profilage de l’utilisation de l' [UC](../profiling/cpu-usage.md) .
+Les configurations DotNetObjectAlloc (base/faible) correspondent aux données collectées pour l' [outil d’allocation d’objets .net](../profiling/dotnet-alloc-tool.md).
+
+Les configurations Base/Low/High font référence au taux d’échantillonnage. Par exemple, Low correspond à 100 échantillons/seconde et High à 4 000 échantillons/seconde.
+Pour que l’outil VSDiagnostics.exe fonctionne avec un agent de collecte, il requiert à la fois une DLL et un CLSID COM pour l’agent approprié. L’agent peut également avoir des options de configuration supplémentaires. Si vous utilisez un agent sans fichier de configuration, utilisez le format de la commande suivante :
+
+```
+VSDiagnostics.exe start <id> /attach:<pid> /loadAgent:<agentCLSID>;<agentName>[;<config>]
+```

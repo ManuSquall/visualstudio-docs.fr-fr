@@ -1,24 +1,24 @@
 ---
 title: Prise en main de Graphics Diagnostics | Microsoft Docs
 ms.custom: seodec18
-ms.date: 05/26/2017
+ms.date: 06/08/2020
 ms.topic: conceptual
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 575b0254768ac359e43cd5b04c23a220549ac973
-ms.sourcegitcommit: bf2e9d4ff38bf5b62b8af3da1e6a183beb899809
+ms.openlocfilehash: 473946353a1ea044464e409a75a838eaf52a1483
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2020
-ms.locfileid: "77557919"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85286542"
 ---
 # <a name="getting-started-with-visual-studio-graphics-diagnostics"></a>Prise en main de Visual Studio Graphics Diagnostics
 Dans cette section, vous allez vous préparer à utiliser Graphics Diagnostics pour la première fois, puis vous allez capturer des frames à partir d’une application Direct3D et les examiner dans Graphics Analyzer.
 
-## <a name="requirements"></a>Spécifications
+## <a name="requirements"></a>Configuration requise
  Pour utiliser Graphics Diagnostics dans Visual Studio, vous devez utiliser Visual Studio Enterprise, Visual Studio Professional ou Visual Studio Community.  D’autres éditions, y compris les Visual Studio Code, ne contiennent pas cette fonctionnalité.
 
  [!INCLUDE[downloadvs](../includes/downloadvs_md.md)]
@@ -28,7 +28,7 @@ Dans cette section, vous allez vous préparer à utiliser Graphics Diagnostics p
 
  Pour plus d’informations sur l’installation de la fonctionnalité Outils Graphics, consultez [Installer Outils Graphics pour Windows 10](#InstallGraphicsTools).
 
-## <a name="InstallGraphicsTools"></a> Installer Outils Graphics pour Windows 10
+## <a name="install-graphics-tools-for-windows-10"></a><a name="InstallGraphicsTools"></a> Installer Outils Graphics pour Windows 10
  Dans Windows 10, l’infrastructure Graphics Diagnostics est fournie par une fonctionnalité facultative de Windows appelée *Outils Graphics*. Cette fonctionnalité est nécessaire pour capturer et lire les informations graphiques sur Windows 10, indépendamment du fait que l'application capturée cible ou non une version antérieure de Windows, ou indépendamment de la version de Direct3D utilisée. Vous pouvez choisir d'installer la fonctionnalité Outils Graphics à l'avance. Sinon, elle est installée à la demande la première fois que vous démarrez une session Graphics Diagnostics à partir de Visual Studio.
 
 #### <a name="to-install-graphics-tools-for-windows-10"></a>Pour installer Outils Graphics pour Windows 10
@@ -52,12 +52,18 @@ Dans cette section, vous allez vous préparer à utiliser Graphics Diagnostics p
  Une fois que vous avez tout ce dont vous avez besoin, vous êtes prêt à utiliser Graphics Diagnostics. Suivez simplement cette procédure.
 
 ### <a name="1---create-a-direct3d-app"></a>1 - Créer une application Direct3D
- Si vous avez déjà votre propre application Direct3D pour explorer Graphics Diagnostics avec, c’est génial ! Dans le cas contraire, utilisez l’une des options suivantes :
 
+Si vous avez déjà votre propre application Direct3D pour explorer Graphics Diagnostics avec, c’est génial ! Dans le cas contraire, utilisez l’une des options suivantes :
+
+::: moniker range=">=vs-2019"
+Téléchargez un exemple à partir de l' [exemple de jeu Direct3D](https://docs.microsoft.com/samples/microsoft/windows-universal-samples/simple3dgamedx/).
+::: moniker-end
+::: moniker range="vs-2017"
 - Les modèles de projet **application DirectX 11 (Windows universel)** ou **application DirectX 12 (Windows universel)** pour Windows 10.
 - [Exemple d’UAP Direct3D 12](https://code.msdn.microsoft.com/Direct3D-12-UAP-Sample-ecb1779f) pour Windows 10.
+::: moniker-end
 
-  Assurez-vous que vous pouvez générer l'application avant de continuer.
+Assurez-vous que vous pouvez générer et exécuter l’application avant de poursuivre. Choisissez **générer**générer la  >  **solution** pour vous assurer qu’il se génère sans erreur. Choisissez ensuite **Déboguer**  >  **exécuter sans débogage** (**CTRL + F5**) pour vous assurer qu’il s’exécute correctement. En fonction de l’ordinateur que vous testez avec l’outil, vous devrez peut-être ajuster la plateforme et la cible de débogage pour l’exemple. Par exemple, pour tester la plateforme x64 sur votre ordinateur hôte Visual Studio, choisissez **x64** comme plateforme de solution et **ordinateur local** comme cible de débogage. 
 
 ### <a name="2---start-a-graphics-diagnostics-session"></a>2 - Démarrer une session Graphics Diagnostics
  Maintenant, vous êtes prêt à démarrer votre première session Graphics Diagnostics. Dans Visual Studio, dans le menu principal, choisissez **Déboguer, graphiques, démarrer le débogage graphique**, ou appuyez simplement sur **Alt + F5**. Cela entraîne le démarrage de votre application dans Graphics Diagnostics et l’affichage des fenêtres de session de diagnostic dans Visual Studio.

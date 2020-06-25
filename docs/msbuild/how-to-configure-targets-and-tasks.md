@@ -8,12 +8,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fe2955feb50a28e5ba631cdeddd169973a42ed25
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 3ccb29f0ea6322a3f6bbfac5c3c0817892f74644
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77633887"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85288895"
 ---
 # <a name="how-to-configure-targets-and-tasks"></a>Guide pratique pour configurer les cibles et les tâches
 
@@ -115,3 +115,4 @@ Les paramètres `MSBuildRuntime` et `MSBuildArchitecture` représentent le moyen
 ## <a name="see-also"></a>Voir aussi
 
 - [Configurer les cibles et les tâches](../msbuild/configuring-targets-and-tasks.md)
+- [Élément UsingTask](../msbuild/usingtask-element-msbuild.md)

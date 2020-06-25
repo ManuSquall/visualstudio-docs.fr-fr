@@ -11,16 +11,16 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 70ce19a6dcd9c61b0e14d0d88c52072f59f87fb9
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: d345d532c29931577edbe0441003cc80b069e335
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77631157"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85289142"
 ---
 # <a name="walkthrough-create-an-inline-task"></a>Procédure pas à pas : Créer une tâche inline
 
-Les tâches MSBuild sont généralement créées en compilant une classe qui implémente l’interface <xref:Microsoft.Build.Framework.ITask>. À compter du .NET Framework version 4, vous pouvez créer des tâches inline dans le fichier projet. Vous n’êtes pas obligé de créer un assembly séparé pour héberger la tâche. Pour plus d’informations, voir [tâches Inline](../msbuild/msbuild-inline-tasks.md).
+Les tâches MSBuild sont généralement créées en compilant une classe qui implémente l’interface <xref:Microsoft.Build.Framework.ITask>. À compter du .NET Framework version 4, vous pouvez créer des tâches inline dans le fichier projet. Vous n’êtes pas obligé de créer un assembly séparé pour héberger la tâche. Pour plus d’informations, consultez [tâches Inline](../msbuild/msbuild-inline-tasks.md).
 
  Cette procédure pas à pas montre comment créer et exécuter les tâches inline suivantes :
 
@@ -46,11 +46,11 @@ Pour créer et exécuter les tâches, utilisez Visual Studio et la **fenêtre d�
 
 #### <a name="to-create-and-modify-a-project-file"></a>Pour créer et modifier un fichier projet
 
-1. Dans Visual Studio, créez un nouveau projet à l’aide du modèle **d’application de formulaires Windows** C. Dans le champ **Nom**, saisissez `InlineTasks`. Tapez un **Emplacement** pour la solution, par exemple, *D:\\*. Vérifiez que l’option **Créer un répertoire pour la solution** est sélectionnée, que l’option **Ajouter au contrôle de code source** ne l’est pas et que **Nom de solution** correspond à **InlineTasks**.
+1. Dans Visual Studio, créez un nouveau projet à l’aide du modèle **application C# Windows Forms** . Dans le champ **Nom**, saisissez `InlineTasks`. Tapez un **Emplacement** pour la solution, par exemple, *D:\\*. Vérifiez que l’option **Créer un répertoire pour la solution** est sélectionnée, que l’option **Ajouter au contrôle de code source** ne l’est pas et que **Nom de solution** correspond à **InlineTasks**.
 
 3. Cliquez sur **OK** pour créer le fichier projet.
 
-3. Dans **Solution Explorer**, cliquez à droite sur le nœud du projet **InlineTasks,** puis cliquez sur **Unload Project**.
+3. Dans **Explorateur de solutions**, cliquez avec le bouton droit sur le nœud de projet **InlineTasks** , puis cliquez sur **décharger le projet**.
 
 4. Recliquez avec le bouton droit sur le nœud du projet, puis cliquez sur **Modifier BuildApp.csproj**.
 
@@ -86,7 +86,7 @@ Pour créer et exécuter les tâches, utilisez Visual Studio et la **fenêtre d�
 
 3. Enregistrez le fichier projet.
 
-   Ce code crée une tâche inline qui s’appelle Bonjour `Using` et n’a pas de paramètres, de références ou de directives. La tâche Hello contient une seule ligne de code, qui affiche un message de type Hello sur l’appareil de journalisation par défaut, généralement la fenêtre de console.
+   Ce code crée une tâche Inline nommée Hello et n’a pas de paramètres, de références ou de `Using` directives. La tâche Hello contient une seule ligne de code, qui affiche un message de type Hello sur l’appareil de journalisation par défaut, généralement la fenêtre de console.
 
 ### <a name="run-the-hello-task"></a>Exécuter la tâche Hello
 
@@ -96,9 +96,9 @@ Pour créer et exécuter les tâches, utilisez Visual Studio et la **fenêtre d�
 
 1. Cliquez sur **Démarrer**, sur **Tous les programmes**, puis recherchez le dossier **Visual Studio Tools** et cliquez sur **Invite de commandes Visual Studio**.
 
-2. Dans la **fenêtre d’invite de commande**, localiser le dossier qui contient le fichier de projet, dans ce cas, *D: 'InlineTasks’InlineTasks\\*.
+2. Dans la **fenêtre d’invite de commandes**, recherchez le dossier qui contient le fichier projet, dans le cas présent, *D:\InlineTasks\InlineTasks \\ *.
 
-3. Tapez **la msbuild** sans interrupteurs de commande, puis appuyez **sur Enter**. Par défaut, cela construit le fichier *InlineTasks.csproj* et traite la cible par défaut TestBuild, qui invoque la tâche Bonjour.
+3. Tapez **MSBuild** sans commutateurs de commande, puis appuyez sur **entrée**. Par défaut, cette opération génère le fichier *InlineTasks. csproj* et traite la cible par défaut TestBuild, qui appelle la tâche Hello.
 
 4. Examinez la sortie dans la **fenêtre d’invite de commandes**. Vous devez normalement voir cette ligne :
 
@@ -133,7 +133,7 @@ Pour créer et exécuter les tâches, utilisez Visual Studio et la **fenêtre d�
    </Target>
    ```
 
-2. Dans la **fenêtre d’invite de commande**, **tapez msbuild** sans commutateurs de commande, puis appuyez **sur Entrez**. Par défaut, cette commande traite la cible par défaut TestBuild, qui appelle la tâche Echo.
+2. Dans la **fenêtre d’invite de commandes**, tapez **MSBuild** sans commutateurs de commande, puis appuyez sur **entrée**. Par défaut, cette commande traite la cible par défaut TestBuild, qui appelle la tâche Echo.
 
 3. Examinez la sortie dans la **fenêtre d’invite de commandes**. Vous devez normalement voir cette ligne :
 
@@ -170,7 +170,7 @@ Pour créer et exécuter les tâches, utilisez Visual Studio et la **fenêtre d�
    </Target>
    ```
 
-2. Dans la **fenêtre d’invite de commande**, **tapez msbuild** sans commutateurs de commande, puis appuyez **sur Entrez**. Par défaut, cette commande traite la cible par défaut TestBuild, qui appelle la tâche Echo.
+2. Dans la **fenêtre d’invite de commandes**, tapez **MSBuild** sans commutateurs de commande, puis appuyez sur **entrée**. Par défaut, cette commande traite la cible par défaut TestBuild, qui appelle la tâche Echo.
 
 3. Examinez la sortie dans la **fenêtre d’invite de commandes**. Vous devez normalement voir cette ligne :
 
@@ -226,7 +226,7 @@ Pour créer et exécuter les tâches, utilisez Visual Studio et la **fenêtre d�
    </Target>
    ```
 
-2. Dans la **fenêtre d’invite de commande**, **tapez msbuild** sans commutateurs de commande, puis appuyez **sur Entrez**. Par défaut, cette commande traite la cible par défaut TestBuild, qui appelle la tâche RegX.
+2. Dans la **fenêtre d’invite de commandes**, tapez **MSBuild** sans commutateurs de commande, puis appuyez sur **entrée**. Par défaut, cette commande traite la cible par défaut TestBuild, qui appelle la tâche RegX.
 
 3. Examinez la sortie dans la **fenêtre d’invite de commandes**. Vous devez normalement voir ces lignes :
 
@@ -250,20 +250,22 @@ Pour créer et exécuter les tâches, utilisez Visual Studio et la **fenêtre d�
 
 ### <a name="handle-reserved-characters"></a>Gérer les caractères réservés
 
- L’analyseur MSBuild traite les tâches inline au format XML. Les caractères qui ont une signification réservée au format XML, par exemple « \< » et « > », sont détectés et gérés comme s’il s’agissait de code XML, et non de code source .NET. Pour inclure les caractères réservés dans des expressions de code telles que `Files.Length > 0`, écrivez l’élément `Code` de telle sorte que son contenu figure dans une expression CDATA, comme suit :
+ L’analyseur MSBuild traite les tâches inline au format XML. Les caractères qui ont une signification réservée en XML, par exemple, « \<" and "> », sont détectés et gérés comme s’il s’agissait de XML, et non du code source .net. Pour inclure les caractères réservés dans des expressions de code telles que `Files.Length > 0`, écrivez l’élément `Code` de telle sorte que son contenu figure dans une expression CDATA, comme suit :
 
  ```xml
 <Code Type="Fragment" Language="cs">
   <![CDATA[
 
-  // Your code goes here.
-
+  if (Files.Length > 0)
+  {
+      // Your code goes here.
+  }
   ]]>
 </Code>
 ```
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Tâches en ligne](../msbuild/msbuild-inline-tasks.md)
+- [Tâches Inline](../msbuild/msbuild-inline-tasks.md)
 - [Tâches](../msbuild/msbuild-tasks.md)
 - [Cibles](../msbuild/msbuild-targets.md)

@@ -18,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 634916d9ab4ef0ce3119fcb5695301598992f38c
-ms.sourcegitcommit: 93859158465eab3423a0c0435f06490f0a456a57
+ms.openlocfilehash: 785f3f7d350a21ae31fe9ee4657b967b63e40f2d
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/27/2020
-ms.locfileid: "82167296"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85288921"
 ---
 # <a name="exec-task"></a>Exec (tâche)
 
@@ -41,7 +41,7 @@ Le tableau ci-dessous décrit les paramètres de la tâche `Exec`.
 |`CustomErrorRegularExpression`|Paramètre `String` facultatif.<br /><br /> Spécifie une expression régulière utilisée pour détecter les lignes d’erreur dans la sortie de l’outil. C’est utile pour les outils qui produisent une sortie à la mise en forme inhabituelle.<br /><br />Par défaut : `null` (aucun traitement personnalisé).|
 |`CustomWarningRegularExpression`|Paramètre `String` facultatif.<br /><br /> Spécifie une expression régulière utilisée pour détecter les lignes d’avertissement dans la sortie de l’outil. C’est utile pour les outils qui produisent une sortie à la mise en forme inhabituelle.<br /><br />Par défaut : `null` (aucun traitement personnalisé).|
 |`EchoOff`|Paramètre `Boolean` facultatif.<br /><br /> Si la valeur est `true`, la tâche n’émet pas la forme développée de `Command` dans le journal MSBuild.<br /><br />Par défaut : `false`.|
-|`ExitCode`|Paramètre en lecture seule de sortie `Int32` facultatif.<br /><br /> Spécifie le code de sortie fourni par la commande exécutée.|
+|`ExitCode`|Paramètre en lecture seule de sortie `Int32` facultatif.<br /><br /> Spécifie le code de sortie fourni par la commande exécutée, sauf que si la tâche a enregistré des erreurs, mais que le processus a un code de sortie égal à 0 (succès), `ExitCode` a la valeur-1.|
 |`IgnoreExitCode`|Paramètre `Boolean` facultatif.<br /><br /> Si la valeur est `true`, la tâche ignore le code de sortie fourni par la commande exécutée. Sinon, la tâche retourne `false` si la commande exécutée retourne un code de sortie différent de zéro.<br /><br />Par défaut : `false`.|
 |`IgnoreStandardErrorWarningFormat`|Paramètre `Boolean` facultatif.<br /><br /> Si la valeur est `false`, sélectionne des lignes dans la sortie qui correspondent au format d’erreur/avertissement standard, et les enregistre en tant qu’erreurs/avertissements. Si la valeur est `true`, désactiver ce comportement.<br /><br />Par défaut : `false`.|
 |`Outputs`|Paramètre de sortie <xref:Microsoft.Build.Framework.ITaskItem>`[]` facultatif.<br /><br /> Contient les éléments de sortie de la tâche. La tâche `Exec` ne les définit pas elle-même. Au lieu de cela, vous pouvez les fournir comme si elle les définissait, pour qu’ils puissent être utilisés ultérieurement dans le projet.|
@@ -51,7 +51,7 @@ Le tableau ci-dessous décrit les paramètres de la tâche `Exec`.
 
 [!INCLUDE [ToolTaskExtension arguments](includes/tooltaskextension-base-params.md)]
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
 
 Cette tâche est utile quand une tâche MSBuild spécifique pour le travail que vous souhaitez effectuer n’est pas disponible. Toutefois, la tâche `Exec`, contrairement à une tâche plus spécifique, ne peut pas effectuer de traitement ou d’opérations conditionnelles supplémentaires en fonction du résultat de l’outil ou de la commande exécutée.
 

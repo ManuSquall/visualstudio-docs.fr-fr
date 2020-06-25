@@ -1,7 +1,7 @@
 ---
 title: Créer des rapports de performances de test de charge à l’aide de Microsoft Excel
 ms.date: 10/19/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - load tests, creating Excel reports
 - load tests, reporting
@@ -9,12 +9,12 @@ ms.assetid: b87fb196-9973-4512-a924-088788def4ea
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 8134d2652c1654a65ac303838bd1209a5d061bd0
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: a94a44d0a826cbda1d50b212f61bef86ad29f05c
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75589069"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85287816"
 ---
 # <a name="how-to-create-load-test-performance-reports-using-microsoft-excel"></a>Guide pratique pour créer des rapports de performances de test de charge à l’aide de Microsoft Excel
 
@@ -58,11 +58,11 @@ Vous pouvez générer des rapports Excel dans **l’Analyseur de test de charge*
    - Une fois un test de charge terminé, dans la page **Résultats du test de charge**, choisissez le bouton **Créer un rapport Excel** dans la barre d’outils.
 
       > [!NOTE]
-      > Si le bouton **Create Excel Report** est désactivé dans la barre d’outils Web Performance Test Results **Viewer,** vous devrez peut-être exécuter Microsoft Excel une fois avant qu’il ne soit activé. Quand Visual Studio Enterprise est installé, le complément de test de charge de Visual Studio Enterprise est copié vers votre ordinateur pour Microsoft Excel ; toutefois, Microsoft Excel doit être exécuté pour terminer le processus d'installation du complément.
+      > Si le bouton **créer un rapport Excel** est désactivé dans la barre d’outils de la **visionneuse des résultats des tests performances de site Web** , vous devrez peut-être exécuter Microsoft Excel une seule fois pour l’activer. Quand Visual Studio Enterprise est installé, le complément de test de charge de Visual Studio Enterprise est copié vers votre ordinateur pour Microsoft Excel ; toutefois, Microsoft Excel doit être exécuté pour terminer le processus d'installation du complément.
 
       Microsoft Excel s’ouvre avec **l’Assistant Générer un rapport de test de charge**.
 
-   **Ou**
+   **OR**
 
    1. Ouvrez Microsoft Excel, sélectionnez l’onglet **Test de charge** dans le ruban **Office**, puis choisissez **Rapport de test de charge**.
 
@@ -85,7 +85,7 @@ Vous pouvez générer des rapports Excel dans **l’Analyseur de test de charge*
    > [!NOTE]
    > Vous ne pouvez créer un rapport de comparaison que sur la base de deux résultats de test de charge. Si vous sélectionnez un seul résultat de test de charge ou plus de deux résultats de test de charge, un message d'avertissement s'affiche.
 
-8. Dans le **Select, les compteurs de votre** page de rapport, sous **Certains, un ou plusieurs compteurs à ajouter au rapport** une liste extensible de compteurs est disponible pour personnaliser votre rapport. Sélectionnez les compteurs à partir desquels vous souhaitez comparer les deux séries de tests sélectionnées dans le rapport et cliquez sur **Terminer**.
+8. Dans la page **Sélectionner les compteurs pour votre rapport** , sous **Sélectionner un ou plusieurs compteurs à ajouter au rapport** , vous disposez d’une liste de compteurs pouvant être développée pour personnaliser votre rapport. Sélectionnez les compteurs à partir desquels vous souhaitez comparer les deux séries de tests sélectionnées dans le rapport et cliquez sur **Terminer**.
 
 9. Le rapport du classeur Excel est créé avec les onglets de feuille de calcul suivants :
 
@@ -113,11 +113,11 @@ Vous pouvez générer des rapports Excel dans **l’Analyseur de test de charge*
    - Une fois un test de charge terminé, dans la page **Résultats du test de charge**, choisissez le bouton **Créer un rapport Excel** dans la barre d’outils.
 
       > [!NOTE]
-      > Si le bouton **Create Excel Report** est désactivé dans la barre d’outils Web Performance Test Results **Viewer,** vous devrez peut-être exécuter Microsoft Excel une fois avant qu’il ne soit activé. Quand Visual Studio Enterprise est installé, le complément de test de charge de Visual Studio Enterprise est copié vers votre ordinateur pour Microsoft Excel ; toutefois, Microsoft Excel doit être exécuté pour terminer le processus d'installation du complément.
+      > Si le bouton **créer un rapport Excel** est désactivé dans la barre d’outils de la **visionneuse des résultats des tests performances de site Web** , vous devrez peut-être exécuter Microsoft Excel une seule fois pour l’activer. Quand Visual Studio Enterprise est installé, le complément de test de charge de Visual Studio Enterprise est copié vers votre ordinateur pour Microsoft Excel ; toutefois, Microsoft Excel doit être exécuté pour terminer le processus d'installation du complément.
 
       Microsoft Excel s’ouvre avec **l’Assistant Générer un rapport de test de charge**.
 
-   **Ou**
+   **OR**
 
    1. Ouvrez Microsoft Excel, sélectionnez l’onglet **Test de charge** dans le ruban **Office**, puis choisissez **Rapport de test de charge**.
 

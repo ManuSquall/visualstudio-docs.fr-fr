@@ -1,7 +1,7 @@
 ---
 title: Modification de tests de charge
 ms.date: 10/19/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - Load Test Editor
 - load tests, Load Test Editor
@@ -9,12 +9,12 @@ ms.assetid: ba16ed02-137e-40bf-a4cb-45d87d922d37
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: c61c13f6a9eca416a52221ba9da37be820dd4b89
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: b95689871a987c018720c529743b8447f39b2bf6
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75593224"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85288700"
 ---
 # <a name="edit-load-tests"></a>Modifier des tests de charge
 
@@ -38,7 +38,7 @@ Pour plus d’informations, consultez [Modifier les scénarios de test de charge
 
 ## <a name="configure-and-manage-performance-counter-sets"></a>Configurer et gérer des ensembles de compteurs de performances
 
-Les tests de charge fournissent des ensembles de compteurs nommés, organisés par technologie, qui sont utiles lorsque vous analysez des données de compteur de performance. Les ensembles de compteurs incluent Test de charge, IIS, ASP.NET et SQL. Lorsque vous créez un test de charge avec le **New Load Test Wizard**, un ensemble initial de compteurs prédéfinis et importants est configuré pour les ordinateurs que vous spécifiez pour inclure dans le test de charge. Vous gérez vos compteurs dans **l’éditeur de test de charge**.
+Les tests de charge fournissent des ensembles de compteurs nommés, organisés par technologie, qui sont utiles lorsque vous analysez des données de compteur de performance. Les ensembles de compteurs incluent Test de charge, IIS, ASP.NET et SQL. Quand vous créez un test de charge avec le **nouveau Assistant test de charge**, un ensemble initial de compteurs prédéfinis et importants est configuré pour les ordinateurs que vous spécifiez à inclure dans le test de charge. Vous gérez vos compteurs dans **l’éditeur de test de charge**.
 
 Pour plus d’informations, consultez [Spécifier les ensembles de compteurs et des règles de seuil pour les ordinateurs dans un test de charge](../test/specify-counter-sets-and-threshold-rules-for-load-testing.md).
 

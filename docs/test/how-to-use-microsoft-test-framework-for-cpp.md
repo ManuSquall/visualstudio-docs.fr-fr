@@ -1,19 +1,19 @@
 ---
 title: Utiliser le framework de tests unitaires Microsoft pour C++
-description: Utilisez le cadre de test unitaire Microsoft pour créer des tests unitaires pour votre code CMD.
+description: Utilisez l’infrastructure de tests unitaires Microsoft pour C++ pour créer des tests unitaires pour votre code C++.
 ms.date: 01/08/2020
-ms.topic: conceptual
+ms.topic: how-to
 ms.author: corob
 manager: markl
 ms.workload:
 - cplusplus
 author: corob-msft
-ms.openlocfilehash: 5c8cb794ce7891e74610f1a73164ce403d294925
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: a9393fd248f4e6520c261d405bc624a75d8cf69f
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75755568"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85287114"
 ---
 # <a name="use-the-microsoft-unit-testing-framework-for-c-in-visual-studio"></a>Utiliser le framework de tests unitaires Microsoft pour C++ dans Visual Studio
 
@@ -29,11 +29,11 @@ Dans certains cas, par exemple lors du test de fonctions non exportées dans une
 
 1. Modifiez les propriétés du projet de façon à inclure les fichiers d’en-tête et les fichiers bibliothèques nécessaires aux tests unitaires.
 
-   1. Dans Solution Explorer, sur le menu raccourci du projet que vous testez, choisissez **Properties**. La fenêtre des propriétés du projet s'ouvre.
+   1. Dans Explorateur de solutions, dans le menu contextuel du projet que vous testez, choisissez **Propriétés**. La fenêtre des propriétés du projet s'ouvre.
 
-   1. Dans le dialogue sur les pages de propriété, sélectionnez **Configuration Properties** > **VCMD Directories**.
+   1. Dans la boîte de dialogue pages de propriétés, sélectionnez **Propriétés de configuration**  >  **Répertoires VC + +**.
 
-   1. Cliquez sur la flèche vers le ** \< **bas dans les rangées suivantes et choisissez Edit>. Ajoutez ces chemins :
+   1. Cliquez sur la flèche vers le bas dans les lignes suivantes et choisissez **\<Edit>** . Ajoutez ces chemins :
 
       | Répertoire | Propriété |
       |-| - |
@@ -46,27 +46,27 @@ Dans certains cas, par exemple lors du test de fonctions non exportées dans une
 
 ## <a name="to-link-the-tests-to-the-object-or-library-files"></a><a name="object_files"></a> Pour lier les tests aux fichiers objets ou bibliothèques
 
-Si le code testé n’exporte pas les fonctions que vous souhaitez tester, vous pouvez ajouter le fichier **.obj** ou **.lib** à la dépendance du projet de test. Modifier les propriétés du projet de test pour inclure les en-têtes et les fichiers de bibliothèque ou d’objet qui sont nécessaires pour les tests unitaires.
+Si le code testé n’exporte pas les fonctions que vous souhaitez tester, vous pouvez ajouter le fichier de sortie **. obj** ou **. lib** aux dépendances du projet de test. Modifiez les propriétés du projet de test pour inclure les en-têtes et les fichiers d’objets ou de bibliothèque requis pour le test unitaire.
 
 1. Dans l’Explorateur de solutions, dans le menu contextuel du projet de test, choisissez **Propriétés**. La fenêtre des propriétés du projet s'ouvre.
 
-1. Sélectionnez la page > **d’entrée De Lien de** > **Input** **propriétés de configuration,** puis sélectionnez **des dépendances supplémentaires**.
+1. Sélectionnez la page d’entrée de l’éditeur de liens **Propriétés de configuration**  >  **Linker**  >  **Input** , puis sélectionnez **dépendances supplémentaires**.
 
-   Choisissez **Modifier**, puis ajoutez les noms des fichiers **.obj** ou **.lib**. N’utilisez pas les noms complets du chemin.
+   Choisissez **Modifier**, puis ajoutez les noms des fichiers **.obj** ou **.lib**. N’utilisez pas les noms de chemins d’accès complets.
 
-1. Sélectionnez la page > **Générale** De > **Connexion**de **propriétés de configuration,** puis sélectionnez **des annuaires de bibliothèque supplémentaires.**
+1. Sélectionnez la page **Propriétés de configuration**  >  **éditeur de liens**  >  **général** , puis sélectionnez **autres répertoires de bibliothèque**.
 
    Choisissez **Modifier**, puis ajoutez le chemin d’accès au répertoire des fichiers **.obj** ou **.lib**. Le chemin d’accès se trouve généralement dans le dossier de build du projet testé.
 
-1. Sélectionnez la page **Configuration Properties** > **VCMD Directories,** puis **sélectionnez Inclure les annuaires**.
+1. Sélectionnez la page **Propriétés de configuration**des  >  **Répertoires VC + +** , puis sélectionnez **répertoires Include**.
 
    Choisissez **Modifier**, puis ajoutez le répertoire d’en-tête du projet testé.
 
 ## <a name="write-the-tests"></a>Écrire les tests
 
-Tout fichier *.cpp* avec des classes de test doit inclure "CppUnitTest.h" et avoir une instruction d’utilisation pour `using namespace Microsoft::VisualStudio::CppUnitTestFramework`. Le projet de test est déjà configuré pour vous. Il contient également une définition d’espace de noms et une TEST_CLASS avec une TEST_METHOD pour vous aider à démarrer. Vous pouvez modifier le nom de l’espace de nom et les noms entre parenthèses dans la classe et les macros de méthode.
+Tout fichier *. cpp* avec les classes de test doit inclure « CppUnitTest. h » et avoir une instruction using pour `using namespace Microsoft::VisualStudio::CppUnitTestFramework` . Le projet de test est déjà configuré pour vous. Il contient également une définition d’espace de noms et une TEST_CLASS avec une TEST_METHOD pour vous aider à démarrer. Vous pouvez modifier le nom de l’espace de noms et les noms entre parenthèses dans les macros de la classe et de la méthode.
 
-Le cadre de test définit des macros spéciales pour l’initialisation des modules de test, des classes et des méthodes, et pour le nettoyage des ressources après la fin des tests. Ces macros génèrent du code à exécuter avant qu’une classe ou une méthode ne soit accessible pour la première fois, et après le dernier test. Pour plus d’informations, consultez [Initialiser et nettoyer](microsoft-visualstudio-testtools-cppunittestframework-api-reference.md#Initialize_and_cleanup).
+L’infrastructure de test définit des macros spéciales pour l’initialisation des modules, des classes et des méthodes de test, ainsi que pour le nettoyage des ressources une fois les tests terminés. Ces macros génèrent du code à exécuter avant la première consultation d’une classe ou d’une méthode, et après l’exécution du dernier test. Pour plus d’informations, consultez [Initialiser et nettoyer](microsoft-visualstudio-testtools-cppunittestframework-api-reference.md#Initialize_and_cleanup).
 
 Utilisez les méthodes statiques de la classe [Assert](microsoft-visualstudio-testtools-cppunittestframework-api-reference.md#general_asserts) pour définir des conditions de test. Utilisez la classe [Logger](microsoft-visualstudio-testtools-cppunittestframework-api-reference.md#logger) pour écrire des messages dans la **fenêtre Sortie**. Ajouter des attributs aux méthodes de test
 
@@ -74,17 +74,17 @@ Utilisez les méthodes statiques de la classe [Assert](microsoft-visualstudio-te
 
 1. Dans le menu **Test**, choisissez **Fenêtres** > **Explorateur de tests**.
 
-1. Si tous vos tests ne sont pas visibles dans la fenêtre, construisez le projet de test en cliquant à droite sur son nœud dans **Solution Explorer** et en choisissant **Build** or **Rebuild**.
+1. Si tous vos tests ne sont pas visibles dans la fenêtre, générez le projet de test en cliquant avec le bouton droit sur son nœud dans **Explorateur de solutions** et en choisissant **générer** ou **régénérer**.
 
-1. Dans **Test Explorer**, choisissez Run **All**, ou sélectionnez les tests spécifiques que vous souhaitez exécuter. Cliquez avec le bouton droit sur un test pour accéder à d’autres options, notamment son exécution en mode débogage avec des points d’arrêt activés.
+1. Dans l' **Explorateur de tests**, choisissez **exécuter tout**ou sélectionnez les tests spécifiques que vous souhaitez exécuter. Cliquez avec le bouton droit sur un test pour accéder à d’autres options, notamment son exécution en mode débogage avec des points d’arrêt activés.
 
-1. Dans la **fenêtre de sortie** choisir les **tests** dans `Logger` le drop-down pour afficher les messages écrits par la classe:
+1. Dans la **fenêtre Sortie** choisissez **tests** dans la liste déroulante pour afficher les messages écrits par la `Logger` classe :
 
    ![Fenêtre Sortie C++ affichant des messages de test](media/cpp-test-output-window.png)
 
 ## <a name="define-traits-to-enable-grouping"></a>Définir des caractéristiques pour permettre le regroupement
 
-Vous pouvez définir des traits sur les méthodes de test, qui vous permettent de classer et de classer les tests de groupe dans **Test Explorer**. Pour définir une caractéristique, utilisez la macro `TEST_METHOD_ATTRIBUTE` . Par exemple, pour définir une caractéristique nommée `TEST_MY_TRAIT`:
+Vous pouvez définir des caractéristiques sur les méthodes de test, ce qui vous permet de catégoriser et de regrouper les tests dans l' **Explorateur de tests**. Pour définir une caractéristique, utilisez la macro `TEST_METHOD_ATTRIBUTE` . Par exemple, pour définir une caractéristique nommée `TEST_MY_TRAIT`:
 
 ```cpp
 #define TEST_MY_TRAIT(traitValue) TEST_METHOD_ATTRIBUTE(L"MyTrait", traitValue)
@@ -108,7 +108,7 @@ TEST_METHOD(Method1)
 
 ### <a name="c-trait-attribute-macros"></a>Macros d'attribut de fonctionnalités C++
 
-Les caractéristiques prédéfinies suivantes se trouvent dans `CppUnitTest.h`. Pour plus d’informations, consultez [le cadre de test de l’unité Microsoft pour la référence API](microsoft-visualstudio-testtools-cppunittestframework-api-reference.md).
+Les caractéristiques prédéfinies suivantes se trouvent dans `CppUnitTest.h`. Pour plus d’informations, consultez [la référence sur l’API de l’infrastructure de tests unitaires Microsoft pour C++](microsoft-visualstudio-testtools-cppunittestframework-api-reference.md).
 
 |Macro|Description|
 |-|-----------------|

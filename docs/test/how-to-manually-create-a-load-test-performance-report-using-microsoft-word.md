@@ -1,7 +1,7 @@
 ---
 title: Créer un rapport de performances de test de charge à l’aide de Microsoft Word
 ms.date: 10/19/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - load tests, reporting
 - load tests, creating Word reports
@@ -9,12 +9,12 @@ ms.assetid: 3b864c75-2699-48c1-a2b4-9651f108c267
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: c3deee8d35f06e50dbe22001e8a2fa81b41563e0
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: f630c0e5c054185dcc0dcb87f553dff8dd2ad8f7
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "76113446"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85287595"
 ---
 # <a name="how-to-manually-create-a-load-test-performance-report-using-microsoft-word"></a>Guide pratique pour créer manuellement un rapport de performances de test de charge à l’aide de Microsoft Word
 
@@ -30,7 +30,7 @@ Vous pouvez créer manuellement des rapports de test de charge en copiant et en 
 
 ## <a name="copy-summary-view-data"></a>Copier les données du mode Résumé
 
-1. Dans les résultats des **tests de charge**, si la vue sommaire n’est pas actuellement affichée, cliquez sur **Résumé** dans la barre d’outils.
+1. Dans la **résultats des tests de charge**, si la vue de résumé n’est pas affichée, cliquez sur **Résumé** dans la barre d’outils.
 
 2. En mode Résumé, cliquez avec le bouton droit et sélectionnez **Sélectionner tout**.
 
@@ -42,9 +42,9 @@ Vous pouvez créer manuellement des rapports de test de charge en copiant et en 
 
 ## <a name="copy-graph-view-data"></a>Copier les données de la vue Graphiques
 
-1. Dans les **résultats de test de charge**, si la vue graphique n’est pas actuellement affichée, choisissez des **graphiques** dans la barre d’outils.
+1. Dans la **résultats des tests de charge**, si la vue graphiques n’est pas affichée, choisissez **graphiques** dans la barre d’outils.
 
-2. (Facultatif) Faites un zoom avant sur le graphique spécifique à copier dans votre document Microsoft Word, comme l’indique l’illustration suivante. Pour plus d’informations, voir [Comment : Zoom sur une région du graphique.](../test/how-to-zoom-in-on-a-region-of-the-graph-in-load-test-results.md)
+2. (Facultatif) Faites un zoom avant sur le graphique spécifique à copier dans votre document Microsoft Word, comme l’indique l’illustration suivante. Pour plus d’informations, consultez [Comment : effectuer un zoom avant sur une région du graphique](../test/how-to-zoom-in-on-a-region-of-the-graph-in-load-test-results.md).
 
      ![Contrôle de zoom de l'affichage de graphiques](../test/media/ltest_zoomcontrol.png)
 

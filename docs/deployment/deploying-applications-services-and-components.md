@@ -23,12 +23,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f10831ac398ef8fb48337436dd33253cfb32f26c
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: ab0d62efb8abc3cfbae365312a009bc6d2efea43
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84183000"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85286352"
 ---
 # <a name="first-look-at-deployment-in-visual-studio"></a>Présentation du déploiement dans Visual Studio
 
@@ -48,7 +48,7 @@ Le déploiement dans un dossier local est généralement utilisé pour les tests
 
 ## <a name="publish-to-azure"></a>Publication dans Azure
 
-- **ASP.net**, **ASP.net Core**, **python**et **Node. js**: publiez sur Azure App service ou Azure App service Linux (à l’aide de conteneurs) à l’aide de l’une des méthodes suivantes.
+- **ASP.net**, **ASP.net Core**, **python**et **Node.js**: publiez sur Azure App service ou Azure App service Linux (à l’aide de conteneurs) à l’aide de l’une des méthodes suivantes.
 
   - Pour le déploiement continu (ou automatisé) d’applications, utilisez Azure DevOps avec [Azure Pipelines](/azure/devops/pipelines/get-started-yaml?view=azdevops).
 
@@ -58,7 +58,7 @@ Le déploiement dans un dossier local est généralement utilisé pour les tests
 
   Pour utiliser l’outil **Publier**, cliquez avec le bouton droit sur le projet dans l’Explorateur de solutions et choisissez **Publier**. (Si vous avez déjà configuré des profils de publication, vous devez cliquer sur **créer un nouveau profil**.) Dans la boîte de dialogue publier, choisissez **app service** ou **machines virtuelles Azure**, puis suivez les étapes de configuration.
 
-  ![Choisir Azure App Service](../deployment/media/quickstart-publish-azure.png "Choisir Azure App Service")
+  ![Choisir Azure App Service](../deployment/media/quickstart-publish-azure-new.png "Choisir Azure App Service")
 
   À compter de Visual Studio 2017 version 15.7, vous pouvez déployer des applications ASP.NET Core sur **App Service pour Linux**.
 
@@ -91,7 +91,7 @@ Le déploiement dans un dossier local est généralement utilisé pour les tests
 
 - **UWP** : Vous pouvez empaqueter votre application et la déployer à l’aide des éléments de menu. Pour plus d’informations, consultez [Empaqueter une application UWP à l’aide de Visual Studio](/windows/uwp/packaging/packaging-uwp-apps).
 
-    ![Créer un package d'application](../deployment/media/feature-tour-create-app-package.jpg)
+    ![Créer un package d'application](../deployment/media/feature-tour-create-app-package.png)
 
 - **Windows Desktop** : Vous pouvez déployer sur Microsoft Store à l’aide du Pont du bureau à partir de Visual Studio 2017 version 15.4. Pour ce faire, commencez par créer un projet de création de packages d’application Windows. Pour plus d’informations, consultez [Empaqueter une application de bureau pour Microsoft Store (Pont du bureau)](/windows/uwp/porting/desktop-to-uwp-packaging-dot-net).
 

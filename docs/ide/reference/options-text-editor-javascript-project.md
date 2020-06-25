@@ -1,6 +1,6 @@
 ---
 title: Options, Éditeur de texte, JavaScript, Projet
-ms.date: 1/15/2019
+ms.date: 06/19/2020
 ms.technology: vs-javascript
 ms.topic: reference
 f1_keywords:
@@ -13,16 +13,16 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 190cbdb2a8096415985d83fc525b997572d252c2
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: f6e4f5ff4e1081bbbe6aced4465afb40318048a5
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "68605931"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85285359"
 ---
 # <a name="options-text-editor-javascript-project"></a>Options, Éditeur de texte, JavaScript, Projet
 
-Utilisez la page **Projet** de la boîte de dialogue **Options** pour spécifier les options de projet JavaScript et TypeScript dans l’éditeur de code. Pour accéder à cette page, sur la barre de menu, choisissez **Tools** > **Options**, puis développez **Text Editor** > **JavaScript/TypeScript** > **Project**.
+Utilisez la page **Projet** de la boîte de dialogue **Options** pour spécifier les options de projet JavaScript et TypeScript dans l’éditeur de code. Pour accéder à cette page, dans la barre de menus, choisissez **Outils**  >  **options**, puis développez **éditeur de texte**  >  **projet JavaScript/machine à écrire**  >  **Project**.
 
 ## <a name="project-analysis-options"></a>Options d’analyse du projet
 
@@ -40,7 +40,9 @@ Ces options vous permettent de choisir s’il faut afficher les projets virtuels
 
 ## <a name="compile-on-save"></a>Compiler lors de l’enregistrement
 
-Ces options déterminent si les fichiers TypeScript qui ne font pas partie du projet sont compilés automatiquement. Cochez la case, puis choisissez le type de génération de code à utiliser.
+Ces options déterminent si les fichiers TypeScript qui ne font pas partie du projet sont compilés automatiquement. Visual Studio compile à l’aide de la dernière version de la machine à écrire installée dans *C:\Program Files (x86) \Microsoft SDKs\TypeScript*.
+
+Cochez la case, puis choisissez le type de génération de code à utiliser.
 
 ### <a name="uielement-list"></a>Liste des éléments de l'interface utilisateur
 
@@ -63,8 +65,8 @@ Ces options déterminent comment l’éditeur traite les fichiers TypeScript qui
 |Option|Description|
 |------------|-----------------|
 |**Infrastructure React**|Quand cette option est sélectionnée, l’éditeur de code émet une extension de fichier *.js*.|
-|**Préserver**|Quand cette option est sélectionnée, l’éditeur de code conserve le JSX en tant que partie de la sortie et émet une extension de fichier *.jsx*.|
+|**Économiser**|Quand cette option est sélectionnée, l’éditeur de code conserve le JSX en tant que partie de la sortie et émet une extension de fichier *.jsx*.|
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Général, Environnement, Options Dialog Box](../../ide/reference/general-environment-options-dialog-box.md)
+- [Général, environnement, boîte de dialogue Options](../../ide/reference/general-environment-options-dialog-box.md)

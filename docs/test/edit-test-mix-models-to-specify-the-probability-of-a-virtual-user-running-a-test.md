@@ -1,7 +1,7 @@
 ---
 title: Modification des modèles de combinaison de tests
 ms.date: 10/19/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - load tests, scenarios
 - load tests, virtual users
@@ -9,12 +9,12 @@ ms.assetid: e3b7d952-9012-400a-8131-3444390a6066
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 62c817a2df6c56f70ab2217292feeb545cf66c85
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 8ce54af89164b1a71c7328d04635c8735eec1b28
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75593211"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85288648"
 ---
 # <a name="edit-test-mix-models-to-specify-the-probability-of-a-virtual-user-running-a-test"></a>Modifier les modèles de combinaison de tests pour spécifier la probabilité d’exécution d’un test par un utilisateur virtuel
 
@@ -28,28 +28,28 @@ Vous pouvez spécifier l'une des options de modèle de combinaison de tests suiv
 
 - **Sur la base du nombre total de tests :** détermine les tests de performances web ou tests unitaires qui sont exécutés quand un utilisateur virtuel démarre une itération de test. À la fin du test de charge, le nombre de fois où un test particulier exécuté correspond à la distribution de test assignée. Utilisez ce modèle de combinaison de tests lorsque vous basez la combinaison de tests sur les pourcentages de transaction dans un journal IIS ou dans les données de production.
 
-- **Basé sur le nombre d’utilisateurs virtuels :** Détermine le pourcentage d’utilisateurs virtuels qui exécuteront une performance Web particulière ou un test unitaire. À tout point pendant le test de charge, le nombre d'utilisateurs qui exécutent un test particulier correspond d'aussi près que possible à la distribution assignée de la manière la plus fidèle possible. Utilisez ce modèle de combinaison de tests lorsque vous basez la combinaison de tests sur le pourcentage d'utilisateurs qui exécutent un test particulier.
+- **En fonction du nombre d’utilisateurs virtuels :** Détermine le pourcentage d’utilisateurs virtuels qui exécuteront un test de performances Web ou un test unitaire particulier. À tout point pendant le test de charge, le nombre d'utilisateurs qui exécutent un test particulier correspond d'aussi près que possible à la distribution assignée de la manière la plus fidèle possible. Utilisez ce modèle de combinaison de tests lorsque vous basez la combinaison de tests sur le pourcentage d'utilisateurs qui exécutent un test particulier.
 
-- **Basé sur le rythme de l’utilisateur:** Au cours du test de chargement, chaque test de performance Web ou test unitaire est exécuté un nombre spécifié de fois par utilisateur, par heure. Utilisez ce modèle de combinaison de tests lorsque vous souhaitez que les utilisateurs virtuels exécutent des tests à un certain rythme dans le test de charge.
+- **En fonction du rythme de l’utilisateur :** Au cours du test de charge, chaque test de performances de site Web ou test unitaire est exécuté un nombre spécifié de fois par utilisateur et par heure. Utilisez ce modèle de combinaison de tests lorsque vous souhaitez que les utilisateurs virtuels exécutent des tests à un certain rythme dans le test de charge.
 
-- **Sur la base de l’ordre séquentiel :** Chaque utilisateur virtuel exécute les performances Web ou les tests unitaires dans l’ordre de définie des tests dans le scénario. L'utilisateur virtuel continue à parcourir les tests dans cet ordre jusqu'à ce que le test de charge soit terminé.
+- **En fonction de l’ordre séquentiel :** Chaque utilisateur virtuel exécute les tests de performances Web ou les tests unitaires dans l’ordre dans lequel les tests sont définis dans le scénario. L'utilisateur virtuel continue à parcourir les tests dans cet ordre jusqu'à ce que le test de charge soit terminé.
 
 ## <a name="tasks"></a>Tâches
 
 |Tâches|Rubriques associées|
 |-|-----------------------|
 |**Spécification de la combinaison de tests pour votre test de charge :** quand vous créez un test de charge, vous spécifiez les paramètres du test de charge dans l’**Assistant Nouveau test de charge**. Dans l'**Assistant Nouveau test de charge**, vous choisissez les tests Web et unitaires à ajouter au scénario initial. Après avoir ajouté des tests au scénario, vous spécifiez la combinaison de tests pour le scénario.<br /><br /> Vous utilisez les options de modélisation de charge pour prédire l’utilisation réelle attendue d’un site web ou d’une application dont vous testez la charge. Il est important de le faire parce qu'un test de charge qui n'est pas basé sur un modèle de charge précis peut générer des résultats trompeurs.|-   [Émuler l’utilisation réelle attendue d’une application ou d’un site web](../test/emulate-real-world-usage-of-a-web-site-in-a-load-test-using-test-mix-models.md)|
-|**Modifier le modèle de mix de test :** Vous pouvez modifier un scénario de test de chargement pour utiliser l’un des modèles de mix de test en utilisant **l’éditeur de test de charge**.||
-|**Configurer le rythme d’un modèle de combinaison de tests basé sur le rythme de l’utilisateur :** si votre scénario de test de charge est configuré pour utiliser le modèle de combinaison de tests **Sur la base du rythme de l’utilisateur**, vous pouvez spécifier le mode de configuration du rythme de distribution.|-   [Comment : Appliquer la distribution au délai de rythme lors de l’utilisation d’un modèle de mixage de test de rythme utilisateur](../test/how-to-apply-distribution-to-pacing-delay-when-using-a-user-pace-test-mix-model.md)|
+|**Modifiez le modèle de combinaison de tests :** Vous pouvez modifier un scénario de test de charge pour utiliser l’un des modèles de combinaison de tests à l’aide de l' **éditeur de test de charge**.||
+|**Configurer le rythme d’un modèle de combinaison de tests basé sur le rythme de l’utilisateur :** si votre scénario de test de charge est configuré pour utiliser le modèle de combinaison de tests **Sur la base du rythme de l’utilisateur**, vous pouvez spécifier le mode de configuration du rythme de distribution.|-   [Comment : appliquer une distribution au rythme lors de l’utilisation d’un modèle de combinaison de tests du rythme de l’utilisateur](../test/how-to-apply-distribution-to-pacing-delay-when-using-a-user-pace-test-mix-model.md)|
 
 ## <a name="change-the-test-mix-model-in-a-scenario"></a>Changer le modèle de combinaison de tests dans un scénario
 
-Après avoir créé votre test de charge en utilisant le **New Load Test Wizard**, vous pouvez utiliser **l’éditeur de test de charge** pour modifier les propriétés des scénarios pour répondre à vos besoins et objectifs de test.
+Après avoir créé votre test de charge à l’aide de la **nouvelle Assistant test de charge**, vous pouvez utiliser la **éditeur de test de charge** pour modifier les propriétés des scénarios afin de répondre à vos besoins et vos objectifs de test.
 
 > [!NOTE]
-> Pour une liste complète des propriétés des paramètres de charge et de leurs descriptions, voir [propriétés de scénario de test de charge](../test/load-test-scenario-properties.md).
+> Pour obtenir la liste complète des propriétés des paramètres de charge et leurs descriptions, consultez [Propriétés du scénario de test de charge](../test/load-test-scenario-properties.md).
 
-À l’aide de **l’éditeur de test de charge**, vous pouvez modifier le modèle de mixage de test dans un scénario de test de charge en modifiant la propriété Test Mix **Type** dans la fenêtre **Propriétés.**
+À l’aide de l' **éditeur de test de charge**, vous pouvez modifier le modèle de combinaison de tests dans un scénario de test de charge en modifiant la propriété **type de combinaison de tests** dans la fenêtre **Propriétés** .
 
 ### <a name="to-change-the-test-mix-model"></a>Pour modifier le modèle de combinaison de tests
 

@@ -1,21 +1,21 @@
 ---
 title: Créer un paramètre de test pour un test de charge distribué
 ms.date: 10/19/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - test settings, for distributed load tests
 ms.assetid: b63d4b71-3b74-4872-b2d1-f0bd1a9a8544
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 3129aa5139533db0783c168c3489e071fe9339b5
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 625f4720e94f6ec0b3b9751c28ad18e0a9f38bbd
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75589139"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85288002"
 ---
-# <a name="how-to-create-a-test-settings-file-for-a-distributed-load-test"></a>Comment : Créer un fichier de paramètres de test pour un test de chargement distribué
+# <a name="how-to-create-a-test-settings-file-for-a-distributed-load-test"></a>Comment : créer un fichier de paramètres de test pour un test de charge distribué
 
 Configurez des *paramètres de test* pour vos tests de charge afin de pouvoir distribuer ces tests sur plusieurs ordinateurs en utilisant des agents de test et des contrôleurs de test. Vous pouvez aussi configurer des paramètres de test pour utiliser des *adaptateurs de données de diagnostic*, qui spécifient les types de données que vous voulez collecter ou la façon d’affecter les ordinateurs de test quand vous exécutez des tests de charge depuis Visual Studio.
 
@@ -33,7 +33,7 @@ Les paramètres de test de Visual Studio sont stockés dans un fichier. Les para
 
 Lorsque vous exécutez vos tests, vous sélectionnez les paramètres de test à utiliser comme paramètres de test actifs en fonction de vos besoins pour cette série de tests. Le fichier de paramètres de test est stocké dans votre solution. L’extension du nom de fichier est *.testsettings*.
 
-Lorsque vous ajoutez un projet de test de performance web et de chargement à une solution, un fichier *Default.testsettings* est créé. Le fichier est ajouté automatiquement à la solution dans le dossier **Éléments de solution**. Ce fichier exécute localement vos tests sans adaptateur de données de diagnostic. Vous pouvez ajouter un autre fichier *.testsettings* ou modifier un fichier *.testsettings* pour spécifier les adaptateurs de données de diagnostic et les contrôleurs de test.
+Quand vous ajoutez un projet de test de performances de site Web et de charge à une solution, un fichier *. testsettings par défaut* est créé. Le fichier est ajouté automatiquement à la solution dans le dossier **Éléments de solution**. Ce fichier exécute localement vos tests sans adaptateur de données de diagnostic. Vous pouvez ajouter un autre fichier *.testsettings* ou modifier un fichier *.testsettings* pour spécifier les adaptateurs de données de diagnostic et les contrôleurs de test.
 
 Le contrôleur de test aura des agents pouvant être utilisés pour chaque rôle dans vos paramètres de test. Pour plus d’informations sur les contrôleurs de test et les agents de test, consultez [Gérer les contrôleurs de test et les agents de test avec Visual Studio](../test/manage-test-controllers-and-test-agents.md).
 
@@ -41,7 +41,7 @@ Utilisez les étapes suivantes pour créer et supprimer des paramètres de test 
 
 ## <a name="create-a-test-settings-file"></a>Créer un fichier de paramètres de test
 
-1. Dans **Solution Explorer**, à droite-clic Solutions **Items**, **pointez**ajouter , puis choisissez **nouvel article**.
+1. Dans **Explorateur de solutions**, cliquez avec le bouton droit sur **éléments de solution**, pointez sur **Ajouter**, puis choisissez **nouvel élément**.
 
      La boîte de dialogue **Ajouter un nouvel élément** s'affiche.
 
@@ -51,7 +51,7 @@ Utilisez les étapes suivantes pour créer et supprimer des paramètres de test 
 
 4. Choisissez **Ajouter**.
 
-     Le nouveau fichier des paramètres de test apparaît dans **Solution Explorer**, sous le dossier **Solution Items.**
+     Le nouveau fichier de paramètres de test s’affiche dans **Explorateur de solutions**, sous le dossier **éléments de solution** .
 
 5. La boîte de dialogue **Paramètres de test** s’affiche. La page **Général** est sélectionnée.
 
@@ -89,7 +89,7 @@ Utilisez les étapes suivantes pour créer et supprimer des paramètres de test 
     > [!IMPORTANT]
     > Les autres rôles que vous créez et que vous définissez n’exécutent pas de tests. Ils sont utilisés seulement pour collecter des données en fonction des adaptateurs de données et de diagnostic que vous spécifiez pour les rôles dans la page **Données et diagnostic**.
 
-16. Pour limiter les agents qui peuvent être utilisés pour un rôle, sélectionnez le rôle et choisissez ensuite **Ajouter** dans la barre d’outils sous **les attributs agent pour le rôle choisi**.
+16. Pour limiter les agents pouvant être utilisés pour un rôle, sélectionnez le rôle, puis choisissez **Ajouter** dans la barre d’outils sous **attributs de l’agent pour le rôle sélectionné**.
 
      La boîte de dialogue **Règle de sélection d’agent** s’affiche.
 
@@ -111,7 +111,7 @@ Utilisez les étapes suivantes pour créer et supprimer des paramètres de test 
 
      Pour plus d'informations sur chaque adaptateur de données de diagnostic et sur la façon de le configurer, consultez la rubrique associée qui est présentée dans le tableau ci-dessous.
 
-     Pour plus d’informations sur les adaptateurs de données diagnostiques, consultez [collecter des informations diagnostiques à l’aide de paramètres de test](../test/collect-diagnostic-information-using-test-settings.md).
+     Pour plus d’informations sur les adaptateurs de données de diagnostic, consultez [collecter des informations de diagnostic à l’aide de paramètres de test](../test/collect-diagnostic-information-using-test-settings.md).
 
      **Adaptateurs de données de diagnostic pour les tests de charge**
 
@@ -119,8 +119,8 @@ Utilisez les étapes suivantes pour créer et supprimer des paramètres de test 
     |-|-------------------------|-|
     |**Proxy client ASP.NET pour l’impact de test et IntelliTrace :** ce proxy permet de collecter des informations sur les appels HTTP d’un client à un serveur web pour les adaptateurs de données de diagnostic d’impact de test et IntelliTrace.|![Icône Information](../test/media/vc364f4.gif)<br /><br /> À moins que vous ayez un besoin spécifique de collecter des informations système pour les ordinateurs d'agents de test, n'incluez pas cet adaptateur. **Attention :** Nous ne recommandons pas l’utilisation de l’adaptateur IntelliTrace dans les tests de charge en raison des problèmes qui peuvent se produire à cause du volume important de données collectées. <br /><br /> Les données d'impact de test ne sont pas collectées à l'aide des tests de charge.||
     |**IntelliTrace :** Vous pouvez configurer des informations de trace de diagnostic spécifiques qui sont stockées dans un fichier journal. Un fichier journal comporte l’extension *.tdlog*. Si vous exécutez votre test et qu'une de ses étapes échoue, vous pouvez créer un bogue. Le fichier journal contenant la trace de diagnostic est automatiquement joint à ce bogue. Les données collectées dans le fichier journal augmentent l'efficacité du débogage en réduisant le temps nécessaire à la reproduction et au diagnostic d'une erreur dans le code. À partir de ce fichier journal, la session locale peut être recréée sur un autre ordinateur. Cela réduit le risque lié à l'impossibilité de reproduire un bogue.<br /><br /> Pour plus d’informations, consultez [Collecter les données IntelliTrace](../test/how-to-collect-intellitrace-data-to-help-debug-difficult-issues.md).|![Icône Important](../test/media/vc364f3.gif)<br /><br /> Nous ne recommandons pas l'utilisation de l'adaptateur IntelliTrace dans les tests de charge en raison des problèmes qui peuvent se produire à cause du volume important de données collectées et consignées. Vous devez essayer d'utiliser l'adaptateur IntelliTrace uniquement dans les tests de charge dont l'exécution ne dure pas longtemps et qui n'utilisent pas de nombreux agents de test.|[Guide pratique pour collecter des données IntelliTrace pour aider au débogage des problèmes difficiles](../test/how-to-collect-intellitrace-data-to-help-debug-difficult-issues.md)|
-    |**ASP.NET Profiler:** Vous pouvez créer un paramètre de test qui comprend ASP.NET profilage, qui recueille des données de performance sur ASP.NET applications Web.|L’adaptateur de données de diagnostic du profileur ASP.NET profile le processus Internet Information Services (IIS) : il ne fonctionne donc pas avec un serveur web de développement. Pour profiler le site web dans votre test de charge, vous devez installer un agent de test sur l’ordinateur sur lequel IIS est en cours d’exécution. L'agent de test ne générera pas charge, mais sera uniquement un agent de collection. Pour plus d’informations, consultez [Installer et configurer des agents de test](../test/lab-management/install-configure-test-agents.md).|[Comment : Configurer ASP.NET profiler pour les tests de chargement à l’aide des paramètres de test](../test/how-to-configure-aspnet-profiler-for-load-tests-using-test-settings.md)|
-    |**Journal des événements :** vous pouvez configurer un paramètre de test pour inclure la collecte des journaux des événements, qui sera intégrée aux résultats des tests.||[Comment configurer la collecte de journaux d’événements à l’aide des paramètres de test](https://msdn.microsoft.com/48d67891-6018-4549-83e3-213d5d824a02)|
+    |**Profileur ASP.net :** Vous pouvez créer un paramètre de test incluant le profilage ASP.NET, qui collecte les données de performances sur les applications Web ASP.NET.|L’adaptateur de données de diagnostic du profileur ASP.NET profile le processus Internet Information Services (IIS) : il ne fonctionne donc pas avec un serveur web de développement. Pour profiler le site web dans votre test de charge, vous devez installer un agent de test sur l’ordinateur sur lequel IIS est en cours d’exécution. L'agent de test ne générera pas charge, mais sera uniquement un agent de collection. Pour plus d’informations, consultez [Installer et configurer des agents de test](../test/lab-management/install-configure-test-agents.md).|[Comment : configurer ASP.NET Profiler pour les tests de charge à l’aide de paramètres de test](../test/how-to-configure-aspnet-profiler-for-load-tests-using-test-settings.md)|
+    |**Journal des événements :** vous pouvez configurer un paramètre de test pour inclure la collecte des journaux des événements, qui sera intégrée aux résultats des tests.||[Comment : configurer la collecte des journaux des événements à l’aide de paramètres de test](https://msdn.microsoft.com/48d67891-6018-4549-83e3-213d5d824a02)|
     |**Émulation de réseau :** vous pouvez spécifier que vous voulez appliquer une charge réseau artificielle à votre test à l’aide d’un paramètre de test. L'émulation de réseau affecte les communications établies vers et depuis l'ordinateur en émulant une vitesse de connexion réseau particulière (par exemple, une connexion d'accès à distance). **Remarque :** L’émulation de réseau ne peut pas être utilisée pour augmenter la vitesse de connexion réseau.|L'adaptateur de l'émulation de réseau est ignoré par les tests de charge. Les tests de charge utilisent plutôt les paramètres spécifiés dans la combinaison de réseaux du scénario de test de charge.<br /><br /> Pour plus d’informations, consultez [Spécifier des types de réseaux virtuels](../test/specify-virtual-network-types-in-a-load-test-scenario.md).||
     |**Informations système :** Vous pouvez configurer un paramètre de test pour inclure les informations système sur les ordinateurs où est exécuté le collecteur de données et de diagnostic des informations système. Les informations système sont spécifiées dans les résultats des tests à l'aide d'un paramètre de test.|![Icône d'informations](../test/media/vc364f4.gif)<br /><br /> Vous pouvez collecter les informations système à la fois sur les agents de charge et le système en cours de test.|Aucune configuration n'est requise pour collecter ces informations.|
     |**Impact de test :** vous pouvez collecter des informations sur les méthodes de votre code d’application utilisées lors de l’exécution d’un cas de test. Associées aux modifications apportées au code d'application par les développeurs, ces informations peuvent servir à déterminer les tests impactés par ces modifications.|Les données d'impact de test ne sont pas collectées avec les tests de charge.||
@@ -160,7 +160,7 @@ Utilisez les étapes suivantes pour créer et supprimer des paramètres de test 
     2. Utilisez la liste déroulante **Exécuter les tests dans un processus 32 bits ou 64 bits** pour indiquer si vous souhaitez exécuter les tests de performances web et les tests unitaires dans votre test de charge en mode 32 bits ou 64 bits.
 
         > [!NOTE]
-        > Pour une flexibilité maximale, vous devez compiler vos performances Web et charger des projets de test en utilisant la configuration **CPU.** Vous pouvez ensuite les exécuter sur des agents 32 bits et 64 bits. La compilation des performances Web et des projets de test de charge en utilisant la configuration **64 bits** n’offre aucun avantage.
+        > Pour une flexibilité maximale, vous devez compiler vos projets de test de performances de site Web et de charge à l’aide de la configuration **Any CPU** . Vous pouvez ensuite les exécuter sur des agents 32 bits et 64 bits. La compilation de projets de test de performances Web et de charge à l’aide de la configuration **64 bits** n’offre aucun avantage.
 
 25. (Facultatif) Pour limiter la durée de chaque série de tests et des tests individuels, sélectionnez **Délais d’attente des tests**.
 
@@ -176,7 +176,7 @@ Utilisez les étapes suivantes pour créer et supprimer des paramètres de test 
 
 ## <a name="remove-a-test-settings-file-from-your-solution"></a>Supprimer un fichier de paramètres de test de votre solution
 
-Sous le dossier **d’éléments de solution** dans **Solution Explorer**, cliquez à droite sur les paramètres de test que vous souhaitez supprimer, puis choisissez **Supprimer**.
+Sous le dossier **éléments de solution** de **Explorateur de solutions**, cliquez avec le bouton droit sur les paramètres de test que vous souhaitez supprimer, puis choisissez **supprimer**.
 
 Le fichier de paramètres de test est supprimé de votre solution.
 

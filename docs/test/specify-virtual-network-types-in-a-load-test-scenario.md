@@ -1,7 +1,7 @@
 ---
 title: Spécification de types de réseaux virtuels dans un scénario de test de charge
 ms.date: 10/19/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - load tests, scenarios
 - load tests, adding networks
@@ -12,12 +12,12 @@ ms.assetid: 3c4f7874-081a-4ec4-9510-4d6d7d863a11
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 60fa2bd38f3d7e594e9af7ba8ec544518bdbb920
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: c1d87e9681650cd22cc713788b42360ba3460bdc
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "76115300"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85286594"
 ---
 # <a name="specify-virtual-network-types-in-a-load-test-scenario"></a>Spécifier des types de réseaux virtuels dans un scénario de test de charge
 
@@ -95,9 +95,9 @@ Le bouton **Distribuer** permet d’allouer les valeurs en pourcentage de maniè
 > [!WARNING]
 > Le bouton **Distribuer** permet de remplacer les éléments verrouillés.
 
-Il est également possible de taper **%** les valeurs en pourcentage directement dans la colonne au lieu d’utiliser les curseurs. Si vous entrez directement une valeur en pourcentage, les autres éléments ne s'ajustent pas automatiquement.
+Il est également possible de taper les valeurs en pourcentage directement dans la **%** colonne au lieu d’utiliser les curseurs. Si vous entrez directement une valeur en pourcentage, les autres éléments ne s'ajustent pas automatiquement.
 
 > [!NOTE]
-> Les curseurs sont désactivés lorsque le total ne s’élève pas à **%** 100%, ou lorsque les valeurs en pourcentage inscrites dans la colonne sont des décimales.
+> Les curseurs sont désactivés lorsque le total n’est pas ajouté à 100% ou lorsque les valeurs de pourcentage entrées dans la **%** colonne sont des décimales.
 
 Lorsque vous entrez des valeurs en pourcentage manuellement, vous devez vous assurer que la somme de tous les éléments est 100 %. Lorsque vous enregistrez une combinaison, si la somme n'est pas égale à 100 %, vous serez invité à accepter les valeurs en pourcentage telles qu'elles sont ou à revenir en arrière pour les ajuster. Si vous choisissez de les accepter tels qu'ils sont, ils seront recalculés au prorata de 100 %.  Par exemple, si deux éléments sont disponibles et que vous les définissez manuellement à 80 % et 40 %, le premier élément aura pour valeur 66,67 % (80 divisé par 120) et le deuxième élément sera défini à 33,33 % (40 divisé par 120).

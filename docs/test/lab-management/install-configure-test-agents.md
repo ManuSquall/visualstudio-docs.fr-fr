@@ -1,7 +1,7 @@
 ---
 title: Installer des agents de test et des contrôleurs de test
 ms.date: 04/17/2019
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - configure test agents, test lab
 author: mikejo5000
@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 271e9253daf4ab23a5fb06a189ac3042bc925b2a
-ms.sourcegitcommit: 5d1b2895d3a249c6bea30eb12b0ad7c0f0862d85
+ms.openlocfilehash: 3c374951b4d4875e4e754035ac52afb7f8fc5a2e
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "80880271"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85286893"
 ---
 # <a name="install-test-agents-and-test-controllers"></a>Installer des agents de test et des contrôleurs de test
 
@@ -26,7 +26,7 @@ Vous pouvez aussi vous demander s’il ne serait pas plus facile [d’utiliser l
 
 Le tableau suivant présente la configuration système requise pour l’installation de l’agent de test ou du contrôleur de test pour Visual Studio :
 
-| Élément | Spécifications |
+| Article | Configuration requise |
 | ---- | ------------ |
 | **Agent** | Windows 10<br />Windows 8, Windows 8.1<br />Windows 7 Service Pack 1<br />Windows Server 2016 Standard et Datacenter<br />Windows Server 2012 R2 |
 | **Contrôleur** | Windows 10<br />Windows 8, Windows 8.1<br />Windows 7 Service Pack 1<br />Windows Server 2016 Standard et Datacenter<br />Windows Server 2012 R2 |
@@ -57,9 +57,9 @@ Vous pouvez combiner des versions différentes de TFS, Microsoft Test Manager, d
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
-## <a name="compatible-versions-of-tfs-the-test-controller-and-test-agent"></a>Versions compatibles de TFS, le contrôleur de test et l’agent de test
+## <a name="compatible-versions-of-tfs-the-test-controller-and-test-agent"></a>Versions compatibles de TFS, du contrôleur de test et de l’agent de test
 
-Vous pouvez mélanger différentes versions de TFS, le contrôleur de test et l’agent de test, selon le tableau suivant :
+Vous pouvez mélanger différentes versions de TFS, le contrôleur de test et l’agent de test, conformément au tableau suivant :
 
 | TFS | Contrôleur | Agent |
 | --- | -------------------------------------- | ---------- | ----- |
@@ -85,5 +85,5 @@ Le tableau suivant présente les scénarios pris en charge par les Agents pour V
 | - | - |
 | Flux de travail Générer-Déployer-Tester dans Visual Studio | Les utilisateurs peuvent employer un [pipeline de build](/azure/devops/pipelines/index?view=vsts) (pas une build XAML) pour générer, déployer et tester des scénarios dans TFS. |
 | Test de charge (test des performances) avec des ordinateurs distants locaux | Utilisez le contrôleur de test et les agents des test de la version 2013 Update 5 pour exécuter les tests de charge localement. |
-| Exécution à distance des tests automatisés de Microsoft Test Manager (déprécié dans Visual Studio 2017) à l’aide d’un environnement de laboratoire | Actuellement, il n’existe pas d’alternative à ce scénario. Nous vous recommandons d’utiliser la tâche Exécuter les tests fonctionnels dans les définitions de build et de mise en production (pas dans une build XAML) pour exécuter les tests à distance. |
+| Exécution à distance de tests automatisés à partir de Microsoft Test Manager (déconseillés dans Visual Studio 2017) à l’aide d’un environnement Lab | Actuellement, il n’existe pas d’alternative à ce scénario. Nous vous recommandons d’utiliser la tâche Exécuter les tests fonctionnels dans les définitions de build et de mise en production (pas dans une build XAML) pour exécuter les tests à distance. |
 | Développeurs exécutant les tests à distance dans Visual Studio | N'est plus pris en charge. |

@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 1f188b40938c62ae8c3692f096217618f9cb7ff6
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: b3b8a67d1b01d7f3a3ada7b391423676b9294e8d
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84183741"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85286302"
 ---
 # <a name="walkthrough-writing-a-visualizer-in-c"></a>Procédure pas à pas : écriture d’un visualiseur en C\#
 
@@ -60,7 +60,7 @@ Suivez les étapes ci-dessous pour créer un visualiseur.
 
 3. Dans **Explorateur de solutions**, cliquez avec le bouton droit sur **références** , puis choisissez **Ajouter une référence** dans le menu contextuel.
 
-4. Dans la boîte de dialogue **Ajouter une référence** , sous l’onglet **Parcourir** , sélectionnez **Parcourir** et recherchez Microsoft. VisualStudio. DebuggerVisualizers. dll.
+4. Dans la boîte de dialogue **Ajouter une référence** , sous l’onglet **Parcourir** , sélectionnez **Parcourir** et recherchez le Microsoft.VisualStudio.DebuggerVisualizers.DLL.
 
     Vous pouvez trouver la DLL dans le sous-répertoire * \<Visual Studio Install Directory> \Common7\IDE\PublicAssemblies* du répertoire d’installation de Visual Studio.
 
@@ -106,7 +106,7 @@ Suivez les étapes ci-dessous pour créer un visualiseur.
 
 1. Dans **Explorateur de solutions**, cliquez avec le bouton droit sur **références** , puis choisissez **Ajouter une référence** dans le menu contextuel.
 
-2. Dans la boîte de dialogue **Ajouter une référence** , sous l’onglet **Parcourir** , sélectionnez **Parcourir**, puis recherchez System. Windows. Forms. dll.
+2. Dans la boîte de dialogue **Ajouter une référence** , sous l’onglet **Parcourir** , sélectionnez **parcourir**, puis recherchez le System.Windows.Forms.DLL.
 
     Vous pouvez trouver la DLL dans *C:\Windows\Microsoft.NET\Framework\v4.0.30319*.
 
@@ -187,7 +187,7 @@ Dans le code côté débogueur, vous spécifiez le type à visualiser (la source
 
 1. Dans **Explorateur de solutions**, cliquez avec le bouton droit sur **MyTestConsole** et choisissez **Ajouter une référence** dans le menu contextuel.
 
-2. Dans la boîte de dialogue **Ajouter une référence** , cliquez sur l’onglet **Parcourir** , puis sur Microsoft. VisualStudio. DebuggerVisualizers. dll.
+2. Dans la boîte de dialogue **Ajouter une référence** , cliquez sur l’onglet **Parcourir** , puis sur Microsoft.VisualStudio.DebuggerVisualizers.DLL.
 
 3. Cliquez sur **OK**.
 
@@ -231,9 +231,11 @@ Dans le code côté débogueur, vous spécifiez le type à visualiser (la source
 
     L’application console démarre et le visualiseur apparaît et affiche la chaîne « Hello, World ».
 
-   Félicitations ! Vous venez de générer et de tester votre premier visualiseur.
+   Félicitations ! Vous venez de générer et de tester votre premier visualiseur.
 
    Pour utiliser votre visualiseur dans [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] au lieu de simplement l'appeler de l'atelier de test, vous devez l'installer. Pour plus d’informations, consultez [Comment : installer un visualiseur](../debugger/how-to-install-a-visualizer.md).
+
+::: moniker range="vs-2017"
 
 ## <a name="create-a-visualizer-using-the-visualizer-item-template"></a>Créer un visualiseur à l’aide du modèle d’élément de visualiseur
 
@@ -268,6 +270,7 @@ Tout d’abord, vous devez créer un projet de bibliothèque de classes.
 5. Cliquez sur **Add**.
 
    C’est tout. Examinez le fichier SecondVisualizer.cs et affichez le code que le modèle a ajouté pour vous. Poursuivez et expérimentez le code. Maintenant que vous connaissez les principes de base, vous avez la possibilité de créer vos propres visualiseurs plus complexes et utiles.
+::: moniker-end
 
 ## <a name="see-also"></a>Voir aussi
 

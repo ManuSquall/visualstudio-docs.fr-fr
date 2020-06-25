@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 24b8416508ee5800ab581a1a58cedee1e5725cab
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: d99cbf4aaa30e1afb95a98743c223edee94d98fe
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84184443"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85286296"
 ---
 # <a name="secure-clickonce-applications"></a>Sécuriser des applications ClickOnce
 Les applications[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] sont soumises aux contraintes de sécurité d'accès du code dans .NET Framework afin d'aider à limiter l'accès du code aux opérations et aux ressources protégées. Pour cette raison, il est important de comprendre les implications de la sécurité d'accès du code afin d'écrire vos applications [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] en conséquence. Vos applications peuvent utiliser des zones de confiance totale ou de confiance partielle, telles que les zones intranet et Internet, pour limiter l'accès.
@@ -50,7 +50,7 @@ Les applications[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)
  Pour plus d’informations sur la sécurité d’accès du code et sur ClickOnce, consultez [sécurité d’accès du code pour les applications ClickOnce](../deployment/code-access-security-for-clickonce-applications.md).
 
 ## <a name="code-signing-certificates"></a>Certificats de signature de code
- Pour publier une application à l'aide du déploiement [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] , vous pouvez signer les manifestes d'application et de déploiement de l'application en utilisant une paire de clés publique/privée. Les outils utilisés pour la signature d'un manifeste sont disponibles sur la page **Signature** du **Concepteur de projets**. Pour plus d'informations, consultez [Signing Page, Project Designer](../ide/reference/signing-page-project-designer.md). Vous pouvez également signer les manifestes avec un fichier de clé pendant le processus de publication, à l’aide de l’Assistant Publication.
+ Pour publier une application à l'aide du déploiement [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] , vous pouvez signer les manifestes d'application et de déploiement de l'application en utilisant une paire de clés publique/privée. Les outils utilisés pour la signature d'un manifeste sont disponibles sur la page **Signature** du **Concepteur de projets**. Pour plus d'informations, consultez [Signing Page, Project Designer](../ide/reference/signing-page-project-designer.md).
 
  Une fois les manifestes signés, les informations sur l'éditeur qui prennent comme base la signature Authenticode seront affichées pour l'utilisateur dans la boîte de dialogue d'autorisations lors de l'installation, afin de signaler à l'utilisateur que l'application provient d'une source fiable.
 

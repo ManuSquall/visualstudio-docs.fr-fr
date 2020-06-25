@@ -1,18 +1,18 @@
 ---
 title: Les tests unitaires ciblent une version antérieure du .NET Framework
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
 author: mikejo5000
-ms.openlocfilehash: 32380ddc802d1421f39d4920073fc277876cfef4
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 670ec672c55d591496e26435db5a3112c345a44d
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75596019"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85288167"
 ---
 # <a name="how-to-configure-unit-tests-to-target-an-earlier-version-of-the-net-framework"></a>Guide pratique pour configurer des tests unitaires pour cibler une version antérieure du .NET Framework
 
@@ -24,7 +24,7 @@ Vous pouvez créer des projets de test unitaire qui ciblent des versions spécif
 
 - Vous pouvez exécuter des tests unitaires qui ciblent une version spécifique du .NET Framework à partir de Visual Studio sur votre machine locale.
 
-- Vous pouvez exécuter des tests unitaires qui ciblent une version spécifique du cadre .NET en utilisant *MSTest.exe* de l’invite de commande.
+- Vous pouvez exécuter des tests unitaires qui ciblent une version spécifique du .NET Framework à l’aide de *MSTest.exe* à partir de l’invite de commandes.
 
 - Vous pouvez exécuter des tests unitaires sur un agent de build dans le cadre d’une build.
 
@@ -32,7 +32,7 @@ Vous pouvez créer des projets de test unitaire qui ciblent des versions spécif
 
 Les fonctionnalités listées ci-dessus vous permettent également d’écrire des tests unitaires et des tests d’intégration pour les applications SharePoint à l’aide de Visual Studio. Pour plus d’informations sur le développement d’applications SharePoint à l’aide de Visual Studio, consultez [Créer des solutions SharePoint](../sharepoint/create-sharepoint-solutions.md), [Générer et déboguer des solutions SharePoint](../sharepoint/building-and-debugging-sharepoint-solutions.md) et [Vérifier et déboguer du code SharePoint](../sharepoint/verifying-and-debugging-sharepoint-code.md).
 
-**Limites**
+**Limitations**
 
 Les limitations suivantes s’appliquent quand vous reciblez vos projets de test pour utiliser des versions antérieures du .NET Framework :
 
@@ -64,7 +64,7 @@ Les limitations suivantes s’appliquent quand vous reciblez vos projets de test
 
 ## <a name="retargeting-for-c-unit-test-projects"></a>Reciblage pour les projets de test unitaire C#
 
-1. Créez un nouveau projet **de test d’unité** CMD.
+1. Créez un projet de **projet de test unitaire** C#.
 
 2. Dans **l’Explorateur de solutions**, choisissez **Propriétés** dans le menu contextuel de votre nouveau projet de test C#.
 
@@ -83,9 +83,9 @@ Les limitations suivantes s’appliquent quand vous reciblez vos projets de test
 
 2. Dans **l’Explorateur de solutions**, choisissez **Décharger le projet** à partir de votre nouveau projet de test C++.
 
-3. Dans **l’Explorateur de solutions**, choisissez le projet de test C++ déchargé, puis choisissez **Modifier \<nom_projet>.vcxproj**.
+3. Dans **Explorateur de solutions**, choisissez le projet de test C++ déchargé, puis choisissez **modifier \<project name> . vcxproj**.
 
-   Le fichier *.vcxproj s’ouvre* dans l’éditeur.
+   Le fichier *. vcxproj* s’ouvre dans l’éditeur.
 
 4. Affectez la version 3.5 ou une version ultérieure à `TargetFrameworkVersion` dans le `PropertyGroup` nommé `"Globals"`. Ne spécifiez pas de version client :
 
@@ -100,7 +100,7 @@ Les limitations suivantes s’appliquent quand vous reciblez vos projets de test
       </PropertyGroup>
     ```
 
-5. Enregistrer et fermer le fichier *.vcxproj.*
+5. Enregistrez et fermez le fichier *. vcxproj* .
 
 6. Dans l’**Explorateur de solutions**, choisissez **Recharger le projet** dans le menu contextuel de votre nouveau projet de test C++.
 
@@ -108,4 +108,4 @@ Les limitations suivantes s’appliquent quand vous reciblez vos projets de test
 
 - [Créer des solutions SharePoint](../sharepoint/create-sharepoint-solutions.md)
 - [Générer et déboguer des solutions SharePoint](../sharepoint/building-and-debugging-sharepoint-solutions.md)
-- [Les paramètres avancés de compilation dialog box (Visual Basic)](../ide/reference/advanced-compiler-settings-dialog-box-visual-basic.md)
+- [Paramètres avancés du compilateur, boîte de dialogue (Visual Basic)](../ide/reference/advanced-compiler-settings-dialog-box-visual-basic.md)

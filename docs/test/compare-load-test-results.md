@@ -1,7 +1,7 @@
 ---
 title: Comparaison des résultats des tests de charge
 ms.date: 10/19/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - load tests, reporting
 - load tests, results
@@ -9,12 +9,12 @@ ms.assetid: 31874114-459a-45d5-9f8b-2ea503627db8
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: f85800ea59545ad64a821d1bb8c003ba6eef8c26
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: d2390b7efde62d475008dcb17aa24ed69ebf4bf5
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75589342"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85288843"
 ---
 # <a name="report-load-tests-results-for-test-comparisons-or-trend-analysis"></a>Créer des rapports sur les résultats des tests de charge pour les comparaisons de tests ou l’analyse des tendances
 
@@ -41,8 +41,8 @@ Le fichier de feuille de calcul peut être partagé avec les parties prenantes s
 
 |Tâches|Rubriques associées|
 |-|-|
-|**Créez un rapport sur le rendement et le stress :** Vous pouvez créer des rapports sur vos tests de charge et de performance Web, en utilisant Microsoft Excel.|- [Comment : Créer des rapports de performance de test de charge à l’aide de Microsoft Excel](../test/how-to-create-load-test-performance-reports-using-microsoft-excel.md)|
-|**Créez manuellement un rapport sur les performances et le stress en utilisant Microsoft Word :** Vous pouvez créer manuellement des rapports sur vos tests de charge et de performance Web en copiant et en collent les données sommaires, de table et de graphiques à un document Microsoft Word.|- [Comment : Créer manuellement un rapport de performance de test de charge à l’aide de Microsoft Word](../test/how-to-manually-create-a-load-test-performance-report-using-microsoft-word.md)|
+|**Créer un rapport de performances et de stress :** Vous pouvez créer des rapports sur vos tests de charge et de performances de site Web à l’aide de Microsoft Excel.|- [Comment : créer des rapports de performances de test de charge à l’aide de Microsoft Excel](../test/how-to-create-load-test-performance-reports-using-microsoft-excel.md)|
+|**Créez manuellement un rapport de performances et de stress à l’aide de Microsoft Word :** Vous pouvez créer manuellement des rapports sur vos tests de charge et de performances de site Web en copiant et collant les données de synthèse, de table et de graphique dans un document Microsoft Word.|- [Comment : créer manuellement un rapport de performances de test de charge à l’aide de Microsoft Word](../test/how-to-manually-create-a-load-test-performance-report-using-microsoft-word.md)|
 
 ## <a name="see-also"></a>Voir aussi
 

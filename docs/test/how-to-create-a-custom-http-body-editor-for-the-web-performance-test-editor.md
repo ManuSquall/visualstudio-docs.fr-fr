@@ -1,19 +1,19 @@
 ---
 title: Créer un éditeur de corps HTTP personnalisé pour l’éditeur de test de performances Web
 ms.date: 10/19/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - Web performance tests, custom HTTP body editor
 ms.assetid: a0b2d8ff-3e2a-487e-9172-90047174f336
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: efc9a959fa02b62583e7bf366e8c580b2876a4a1
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 02faf2a6c495d7fd5566c8f4291ecaad20ef5eb7
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75589199"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85288141"
 ---
 # <a name="how-to-create-a-custom-http-body-editor-for-the-web-performance-test-editor"></a>Guide pratique pour créer un éditeur de corps HTTP personnalisé pour l’éditeur de test de performances web
 
@@ -49,7 +49,7 @@ Ces interfaces sont contenues dans l'espace de noms <xref:Microsoft.VisualStudio
 
 1. Cliquez sur **Oui**.
 
-1. Dans **Solution Explorer**, cliquez à droite sur le nœud **Références** et sélectionnez Ajouter **référence**.
+1. Dans **Explorateur de solutions**, cliquez avec le bouton droit sur le nœud **références** et sélectionnez **Ajouter une référence**.
 
 1. La boîte de dialogue **Ajouter une référence** s’affiche.
 
@@ -127,7 +127,7 @@ Quand la modification du corps chaîne est effectuée et que l’utilisateur cli
 
    La boîte de dialogue **Ajouter un nouvel élément** s’affiche.
 
-2. Sélectionnez **Classe**.
+2. Sélectionnez **classe**.
 
 3. Dans la zone de texte **Nom**, tapez un nom explicite pour la classe, par exemple `MessageEditorPlugins`.
 
@@ -264,14 +264,14 @@ Quand la modification du corps chaîne est effectuée et que l’utilisateur cli
 
 ## <a name="build-and-deploy-the-plug-ins"></a>Générer et déployer les plug-ins
 
-1. Dans le menu **Générer**, choisissez **Générer \<nom du projet de bibliothèque de contrôles Windows Forms>**.
+1. Dans le menu **générer** , choisissez **Générer \<Windows Form Control Library project name> **.
 
 2. Fermez toutes les instances de Visual Studio.
 
    > [!NOTE]
    > Fermer Visual Studio permet de garantir que le fichier *.dll* n’est pas verrouillé avant d’essayer de le copier.
 
-3. Copiez le fichier *.dll* résultant depuis le dossier *bin\debug* de votre projet (par exemple *MessageEditors.dll*) vers *%ProgramFiles%\Microsoft Visual Studio\2017\\\<édition>\Common7\IDE\PrivateAssemblies\WebTestPlugins*.
+3. Copiez le fichier *. dll* résultant du dossier *bin\Debug* de votre projet (par exemple, *MessageEditors.dll*) dans *%ProgramFiles%\Microsoft Visual Studio\2017 \\ \<edition> \Common7\IDE\PrivateAssemblies\WebTestPlugins*.
 
 4. Ouvrez Visual Studio.
 
@@ -283,9 +283,9 @@ Quand la modification du corps chaîne est effectuée et que l’utilisateur cli
 
 2. Créez un test de performances web et entrez l’URL d’un service web dans le navigateur.
 
-3. Lorsque vous avez terminé l’enregistrement, dans l’éditeur de test de performance Web, élargissez la demande pour le service web et sélectionnez soit un **corps à cordes** ou un corps **binaire**.
+3. Une fois l’enregistrement terminé, dans la éditeur de test de performances Web, développez la demande pour le service Web et sélectionnez un **corps de chaîne** ou un **corps binaire**.
 
-4. Dans la fenêtre **Propriétés,** sélectionnez soit Corps de chaîne ou corps binaire et choisissez l’ellipsis **(...)**.
+4. Dans la fenêtre **Propriétés** , sélectionnez corps chaîne ou corps binaire, puis cliquez sur le bouton de sélection **(...)**.
 
    La boîte de dialogue **Modifier les données du corps HTTP** s’affiche.
 
@@ -305,9 +305,9 @@ Pour plus d’informations, consultez [Page Application, Concepteur de projets (
 - <xref:System.Windows.Forms.UserControl>
 - <xref:System.Windows.Forms.RichTextBox>
 - [Créer un code et des plug-ins personnalisés pour les tests de charge](../test/create-custom-code-and-plug-ins-for-load-tests.md)
-- [Comment : Créer un plug-in au niveau de la demande](../test/how-to-create-a-request-level-plug-in.md)
+- [Comment : créer un plug-in de niveau demande](../test/how-to-create-a-request-level-plug-in.md)
 - [Coder une règle d’extraction personnalisée pour un test de performances web](../test/code-a-custom-extraction-rule-for-a-web-performance-test.md)
 - [Coder une règle de validation personnalisée pour un test de performances web](../test/code-a-custom-validation-rule-for-a-web-performance-test.md)
 - [Guide pratique pour créer un plug-in de test de charge](../test/how-to-create-a-load-test-plug-in.md)
 - [Générer et exécuter un test de performances de site Web codé](../test/generate-and-run-a-coded-web-performance-test.md)
-- [Comment : Créer un add-in Visual Studio pour le Visual Performance Test Results Viewer](../test/how-to-create-an-add-in-for-the-web-performance-test-results-viewer.md)
+- [Comment : créer un complément Visual Studio pour la visionneuse de Résultats des tests performances de site Web](../test/how-to-create-an-add-in-for-the-web-performance-test-results-viewer.md)

@@ -1,19 +1,19 @@
 ---
 title: 'Comment : créer un adaptateur de données de diagnostic'
 ms.date: 10/19/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - Diagnostic Data Adapter, creating
 ms.assetid: bd7ad36c-54cb-4d2a-9aea-9d10ad98d7ba
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 5b198d8d3e9156b8a38325034bf19ce96b742d9e
-ms.sourcegitcommit: 5d1b2895d3a249c6bea30eb12b0ad7c0f0862d85
+ms.openlocfilehash: 43519a96e0718a0864065864d9dd4fbd2ac16b23
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "80880154"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85288076"
 ---
 # <a name="how-to-create-a-diagnostic-data-adapter"></a>Guide pratique pour créer un adaptateur de données de diagnostic
 
@@ -23,7 +23,7 @@ Pour créer un *adaptateur de données de diagnostic*, vous devez créer une bib
 
 Vous pouvez créer un adaptateur de données de diagnostic qui affecte l'ordinateur où vos tests sont exécutés, ou un ordinateur qui fait partie de l'environnement que vous utilisez pour exécuter votre application testée. Il est par exemple possible de collecter des fichiers sur l’ordinateur de test où sont exécutés les tests ou sur l’ordinateur ayant le rôle de serveur web de l’application.
 
-Vous pouvez donner à votre adaptateur de données diagnostiques un nom amical qui s’affiche lorsque vous créez vos paramètres de test à l’aide de Visual Studio ou microsoft Test Manager (déprécié dans Visual Studio 2017). Les paramètres de test vous permettent de définir le rôle d'ordinateur qui exécutera des adaptateurs de données de diagnostic spécifiques dans votre environnement lors de l'exécution de vos tests. Vous pouvez également configurer vos adaptateurs de données de diagnostic lorsque vous créez vos paramètres de test. Il est par exemple possible de créer un adaptateur de données de diagnostic qui collecte des journaux personnalisés auprès de votre serveur web. Lorsque vous créez vos paramètres de test, vous pouvez choisir d’exécuter cet adaptateur de données de diagnostic sur le ou les ordinateurs qui prennent en charge ce rôle de serveur web et modifier la configuration de vos paramètres de test de façon à collecter uniquement les trois derniers journaux créés. Pour plus d’informations sur les paramètres de test, consultez [collecter des informations diagnostiques à l’aide des paramètres de test](../test/collect-diagnostic-information-using-test-settings.md).
+Vous pouvez attribuer à votre adaptateur de données de diagnostic un nom convivial qui s’affiche lorsque vous créez vos paramètres de test à l’aide de Visual Studio ou Microsoft Test Manager (déconseillé dans Visual Studio 2017). Les paramètres de test vous permettent de définir le rôle d'ordinateur qui exécutera des adaptateurs de données de diagnostic spécifiques dans votre environnement lors de l'exécution de vos tests. Vous pouvez également configurer vos adaptateurs de données de diagnostic lorsque vous créez vos paramètres de test. Il est par exemple possible de créer un adaptateur de données de diagnostic qui collecte des journaux personnalisés auprès de votre serveur web. Lorsque vous créez vos paramètres de test, vous pouvez choisir d’exécuter cet adaptateur de données de diagnostic sur le ou les ordinateurs qui prennent en charge ce rôle de serveur web et modifier la configuration de vos paramètres de test de façon à collecter uniquement les trois derniers journaux créés. Pour plus d’informations sur les paramètres de test, consultez [collecter des informations de diagnostic à l’aide de paramètres de test](../test/collect-diagnostic-information-using-test-settings.md).
 
 Les événements sont déclenchés lorsque vous exécutez vos tests afin que votre adaptateur de données de diagnostic puisse exécuter des tâches à ce stade du test.
 
@@ -68,7 +68,7 @@ Pour obtenir un exemple complet de projet d’adaptateur de données de diagnost
 
    3. Choisissez **OK**.
 
-4. Ajoutez les `using` directives suivantes à votre fichier de classe :
+4. Ajoutez les `using` directives suivantes à votre fichier de classe :
 
    ```csharp
    using Microsoft.VisualStudio.TestTools.Common;
@@ -255,9 +255,9 @@ Pour obtenir un exemple complet de projet d’adaptateur de données de diagnost
 
 14. Pour plus d’informations sur la configuration de vos paramètres de test pour l’utilisation d’un environnement durant l’exécution de vos tests, consultez [Collecter les données de diagnostic dans les tests manuels (Azure Test Plans)](/azure/devops/test/mtm/collect-more-diagnostic-data-in-manual-tests?view=vsts).
 
-15. Pour sélectionner votre adaptateur de données diagnostiques, vous devez d’abord sélectionner un réglage de test existant ou en créer un nouveau chez Visual Studio ou Microsoft Test Manager (déprécié dans Visual Studio 2017). L’adaptateur s’affiche sous l’onglet **Données et diagnostics** de vos paramètres de test avec le nom convivial que vous avez assigné à la classe.
+15. Pour sélectionner votre adaptateur de données de diagnostic, vous devez d’abord sélectionner des paramètres de test existants ou en créer un à partir de Visual Studio ou Microsoft Test Manager (déconseillé dans Visual Studio 2017). L’adaptateur s’affiche sous l’onglet **Données et diagnostics** de vos paramètres de test avec le nom convivial que vous avez assigné à la classe.
 
-16. Définissez ces paramètres de test comme actifs. Pour plus d’informations sur les paramètres de test, consultez [collecter des informations diagnostiques à l’aide des paramètres de test](../test/collect-diagnostic-information-using-test-settings.md).
+16. Définissez ces paramètres de test comme actifs. Pour plus d’informations sur les paramètres de test, consultez [collecter des informations de diagnostic à l’aide de paramètres de test](../test/collect-diagnostic-information-using-test-settings.md).
 
 17. Exécutez vos tests à l'aide des paramètres de test, en sélectionnant votre adaptateur de données de diagnostic.
 

@@ -11,12 +11,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6b0cb05948f8010964eefe101cbc77d48a149566
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: 6c52c6b584db94ff3cbe8dc041c00ebe969c9faf
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84180400"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85288934"
 ---
 # <a name="customize-your-build"></a>Personnaliser votre build
 
@@ -80,7 +80,7 @@ Les propriétés définies dans *Directory. Build. props* peuvent être remplac�
 Lorsque vous devez définir une propriété ou définir une cible pour un projet individuel qui remplace les paramètres antérieurs, placez cette logique dans le fichier projet après l’importation finale. Pour effectuer cette opération dans un projet de type SDK, vous devez d’abord remplacer l’attribut de style SDK par les importations équivalentes. Consultez Guide pratique [pour utiliser des kits de développement logiciel (SDK) de projet MSBuild](how-to-use-project-sdk.md).
 
 > [!NOTE]
-> Le moteur MSBuild lit tous les fichiers importés pendant l’évaluation, avant de commencer l’exécution de la génération pour n’importe quel projet (y compris tout `PreBuildEvent` ), de sorte que ces fichiers ne sont pas censés être modifiés par le `PreBuildEvent` ou par une autre partie du processus de génération. Toutes les modifications ne prennent pas effet avant l’appel suivant de *MSBuild. exe* ou de la génération suivante de Visual Studio.
+> Le moteur MSBuild lit tous les fichiers importés pendant l’évaluation, avant de commencer l’exécution de la génération pour n’importe quel projet (y compris tout `PreBuildEvent` ), de sorte que ces fichiers ne sont pas censés être modifiés par le `PreBuildEvent` ou par une autre partie du processus de génération. Toutes les modifications ne prennent pas effet tant que l’appel suivant de *MSBuild.exe* ou la génération suivante de Visual Studio n’est pas effectué.
 
 ### <a name="use-case-multi-level-merging"></a>Cas d’utilisation : Fusion à plusieurs niveaux
 
@@ -182,7 +182,7 @@ La même structure de répertoires fait l’objet d’une recherche dans `$(MSBu
 ## <a name="customize-the-solution-build"></a>Personnaliser la génération de la solution
 
 > [!IMPORTANT]
-> La personnalisation de la génération de la solution de cette façon s’applique uniquement aux générations de ligne de commande avec *MSBuild.exe*. Elle **ne s’applique pas** aux générations à l’intérieur de Visual Studio.
+> La personnalisation de la génération de la solution de cette façon s’applique uniquement aux générations de ligne de commande avec *MSBuild.exe*. Elle **ne s’applique pas** aux générations à l’intérieur de Visual Studio. Pour cette raison, il n’est pas recommandé de mettre en place la personnalisation au niveau de la solution. Une meilleure solution pour personnaliser tous les projets dans une solution consiste à utiliser les fichiers *Directory. Build. props* et *Directory. Build. targets* dans le dossier de solution, comme indiqué ailleurs dans cet article.
 
 Quand MSBuild génère un fichier solution, il le convertit en interne en fichier projet, puis génère ce dernier. Le fichier projet généré importe `before.{solutionname}.sln.targets` avant de définir des cibles et `after.{solutionname}.sln.targets` après avoir importé les cibles, notamment les cibles installées dans les répertoires `$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\SolutionFile\ImportBefore` et `$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\SolutionFile\ImportAfter`.
 

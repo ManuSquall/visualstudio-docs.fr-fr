@@ -1,7 +1,7 @@
 ---
 title: Lier un contrôleur de test ou un agent de test à une carte réseau
 ms.date: 10/19/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - controllers, netwrok adapter
 - agents, configuring
@@ -11,12 +11,12 @@ ms.assetid: 7eb9290a-f9f6-4e41-9caa-796fcfaf0610
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 6383d7a16839ba8934bb7f91664379e99da17a36
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 925df819b903be3de3d44127243f3b18d1e9aff5
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75594784"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85288245"
 ---
 # <a name="how-to-bind-a-test-controller-or-test-agent-to-a-network-adapter"></a>Guide pratique pour lier un contrôleur de test ou un agent de test à une carte réseau
 
@@ -25,7 +25,7 @@ Si un ordinateur, sur lequel le contrôleur de test ou l’agent de test est ins
 > [!WARNING]
 > Lors de la configuration d'un agent de test, vous pouvez recevoir l'erreur suivante :
 >
-> **Erreur 8110. Ne peut pas se connecter à l’ordinateur de contrôleur spécifié ou accéder à l’objet contrôleur**
+> **Erreur 8110. Impossible de se connecter à l’ordinateur contrôleur spécifié ou d’accéder à l’objet contrôleur**
 >
 > Cette erreur peut être provoquée par l'installation du contrôleur de test sur un ordinateur doté de plusieurs cartes réseau. Il est également possible d'installer avec succès des agents et de ne pas rencontrer ce problème avant d'exécuter un test.
 
@@ -55,7 +55,7 @@ Si un ordinateur, sur lequel le contrôleur de test ou l’agent de test est ins
 
      `net stop vsttcontroller`
 
-3. Ouvrez le fichier de configuration XML *QTCcontroller.exe.config* qui se trouve dans *%ProgramFiles(x86)%\Microsoft Visual Studio\2017\\\<édition>\Common7\IDE*.
+3. Ouvrez le fichier config XML *QTCcontroller.exe.config* situé dans *%ProgramFiles(x86)%\Microsoft Visual Studio\2017\\\<edition>\Common7\IDE*.
 
 4. recherchez la balise `<appSettings>`.
 
@@ -101,7 +101,7 @@ Si un ordinateur, sur lequel le contrôleur de test ou l’agent de test est ins
 
      **net stop vsttagent**
 
-3. Ouvrez le fichier de configuration XML *QTAgentService.exe.config* qui se trouve dans *%ProgramFiles(x86)%\Microsoft Visual Studio\2017\\\<édition>\Common7\IDE*.
+3. Ouvrez le fichier config XML *QTAgentService.exe.config* situé dans *%ProgramFiles(x86)%\Microsoft Visual Studio\2017\\\<edition>\Common7\IDE*.
 
 4. recherchez la balise `<appSettings>`.
 
@@ -132,5 +132,5 @@ Si un ordinateur, sur lequel le contrôleur de test ou l’agent de test est ins
 
 - [Installer et configurer des agents de test](../test/lab-management/install-configure-test-agents.md)
 - [Modifier les paramètres de journalisation du test de charge](../test/modify-load-test-logging-settings.md)
-- [Configurer les ports pour les contrôleurs d’essai et les agents d’essai](../test/configure-ports-for-test-controllers-and-test-agents.md)
-- [Comment : Spécifier les délais d’attente pour les contrôleurs d’essai et les agents d’essai](../test/how-to-specify-timeout-periods-for-test-controllers-and-test-agents.md)
+- [Configurer des ports pour les contrôleurs de test et les agents de test](../test/configure-ports-for-test-controllers-and-test-agents.md)
+- [Comment : spécifier les périodes de délai d’attente pour les contrôleurs de test et les agents de test](../test/how-to-specify-timeout-periods-for-test-controllers-and-test-agents.md)

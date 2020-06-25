@@ -16,12 +16,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 533f87eba9032efa7dc60ac682bbe400cb640727
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: f7e6a79198ad54d3432f30fe9b57b3133a94165e
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77634433"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85288960"
 ---
 # <a name="combinepath-task"></a>CombinePath (tâche)
 
@@ -37,9 +37,35 @@ Combine les chemins spécifiés en un chemin unique.
 |`Paths`|Paramètre <xref:Microsoft.Build.Framework.ITaskItem>`[]` obligatoire.<br /><br /> Liste de chemins individuels à combiner avec BasePath pour former le chemin combiné. Les chemins peuvent être relatifs ou absolus.|
 |`CombinedPaths`|Paramètre de sortie <xref:Microsoft.Build.Framework.ITaskItem>`[]` facultatif.<br /><br /> Chemin combiné créé par cette tâche.|
 
-## <a name="remarks"></a>Notes 
+## <a name="remarks"></a>Remarques
 
- En plus des paramètres énumérés ci-dessus, cette tâche hérite des paramètres de la classe <xref:Microsoft.Build.Tasks.TaskExtension> , qui elle-même hérite de la classe <xref:Microsoft.Build.Utilities.Task> . Pour une liste de ces paramètres supplémentaires et leurs descriptions, voir [TaskExtension classe de base](../msbuild/taskextension-base-class.md).
+ En plus des paramètres énumérés ci-dessus, cette tâche hérite des paramètres de la classe <xref:Microsoft.Build.Tasks.TaskExtension> , qui elle-même hérite de la classe <xref:Microsoft.Build.Utilities.Task> . Pour obtenir la liste de ces paramètres supplémentaires et leurs descriptions, consultez [classe de base TaskExtension](../msbuild/taskextension-base-class.md).
+
+ L’exemple suivant montre comment créer une structure de dossier de sortie à l’aide `CombinePath` de pour construire la propriété `$(OutputDirectory)` en combinant un chemin d’accès racine `$(PublishRoot)` concaténé avec `$(ReleaseDirectory)` et une liste de sous-dossiers `$(LangDirectories)` .
+
+ ```xml
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <PublishRoot>C:\Site1\Release</PublishRoot>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <LangDirectories Include="en-us\;fr-fr\"/>
+  </ItemGroup>
+
+  <Target Name="CreateOutputDirectories" AfterTargets="Build">
+    <CombinePath BasePath="$(PublishRoot)" Paths="@(LangDirectories)" >
+      <Output TaskParameter="CombinedPaths" ItemName="OutputDirectories"/>
+    </CombinePath>
+    <MakeDir Directories="@(OutputDirectories)" />
+  </Target>
+```
+
+La seule propriété qui `CombinePath` autorise à être une liste est `Paths` , auquel cas la sortie est également une liste. Ainsi, si `$(PublishRoot)` est *C:\Site1 \\ *et `$(ReleaseDirectory)` est *Release \\ *et `@(LangDirectories)` est *en-US \; fr-fr \\ *, cet exemple crée les dossiers :
+
+- C:\Site1\Release\en-us\
+- C:\Site1\Release\fr-fr\
 
 ## <a name="see-also"></a>Voir aussi
 

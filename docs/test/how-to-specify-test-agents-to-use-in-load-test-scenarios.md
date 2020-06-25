@@ -1,7 +1,7 @@
 ---
 title: spécifier les agents de test à utiliser dans les scénarios de test de charge
 ms.date: 10/19/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - test agents, load tests
 - load tests, scenarios
@@ -12,23 +12,23 @@ ms.assetid: e86806dd-5897-4e4c-bfd4-8d687fb72a6e
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: d23d565752d81bff960027090ddaaf88e9d78ed5
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 5d9e22200a63544b4539f7bf78c48d5711974776
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75588926"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85287491"
 ---
 # <a name="how-to-specify-test-agents-to-use-in-load-test-scenarios"></a>Guide pratique pour spécifier les agents de test à utiliser dans les scénarios de test de charge
 
-Après avoir créé votre test de charge en utilisant le **New Load Test Wizard**, vous pouvez utiliser **l’éditeur de test de charge** pour modifier les propriétés des scénarios pour répondre à vos besoins et objectifs de test.
+Après avoir créé votre test de charge à l’aide de la **nouvelle Assistant test de charge**, vous pouvez utiliser la **éditeur de test de charge** pour modifier les propriétés des scénarios afin de répondre à vos besoins et vos objectifs de test.
 
 [!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 > [!NOTE]
 > Pour obtenir une liste complète des propriétés des scénarios de test de charge et leurs descriptions, consultez [Propriétés du scénario de test de charge](../test/load-test-scenario-properties.md).
 
-Les agents sont spécifiés en utilisant **l’éditeur de test de charge** pour changer les agents **d’utiliser** la propriété dans la fenêtre **propriété.**
+Les agents sont spécifiés à l’aide de la **éditeur de test de charge** pour modifier la propriété **agents à utiliser** dans la fenêtre **Propriétés** .
 
 Vous pouvez spécifier les agents que votre scénario doit utiliser si vous vous servez de contrôleurs et d'agents pour exécuter le test de charge à distance. Par exemple, vous pouvez définir un ensemble spécifique d'agents afin de maintenir une cohérence lorsque vous analysez des tendances de performance. En outre, les agents peuvent être distribués géographiquement, afin qu'il y ait une affinité entre les scripts qu'ils exécutent et l'emplacement des agents.
 
@@ -39,7 +39,7 @@ Pour plus d’informations, consultez [Contrôleurs de test et agents de test](c
 
 Il existe une autre raison selon laquelle une partie des agents peuvent comporter des logiciels installés dont la présence est obligatoire pour un scénario particulier.
 
-Vous pouvez contrôler la sélection des agents pour une série de tests donnée à l'aide de rôles dans les paramètres de test. Pour plus d’informations, consultez [Collectez des informations diagnostiques à l’aide de paramètres de test](../test/collect-diagnostic-information-using-test-settings.md).
+Vous pouvez contrôler la sélection des agents pour une série de tests donnée à l'aide de rôles dans les paramètres de test. Pour plus d’informations, consultez [collecter des informations de diagnostic à l’aide de paramètres de test](../test/collect-diagnostic-information-using-test-settings.md).
 
 Si l'utilisation de l'UC d'un ordinateur agent de test est supérieure à 75 % ou si la mémoire physique disponible de cet ordinateur est inférieure à 10 %, ajoutez des agents à votre test de charge afin de garantir que l'ordinateur agent ne se transforme pas en goulot d'étranglement dans votre test de charge.
 
@@ -67,6 +67,6 @@ Si l'utilisation de l'UC d'un ordinateur agent de test est supérieure à 75 % 
 ## <a name="see-also"></a>Voir aussi
 
 - [Modifier les scénarios de test de charge](../test/edit-load-test-scenarios.md)
-- [Procédure pas à pas : créer et exécuter un test de charge](../test/walkthrough-create-and-run-a-load-test.md)
+- [Procédure pas à pas : Créer et exécuter un test de charge](../test/walkthrough-create-and-run-a-load-test.md)
 - [Contrôleurs de test et agents de test](configure-test-agents-and-controllers-for-load-tests.md)
 - [Propriétés des scénarios de test de charge](../test/load-test-scenario-properties.md)

@@ -7,12 +7,12 @@ ms.assetid: c2853359-18fd-4be4-97a6-02230c862f92
 ms.date: 05/10/2020
 ms.topic: conceptual
 description: Découvrez comment les administrateurs peuvent attribuer des licences à plusieurs abonnés à l’aide de la fonctionnalité d’ajout en bloc ou de groupes de Microsoft Azure Active Directory
-ms.openlocfilehash: 41dd3049c790ac790b46d12b976eb3ab6457fcb2
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: bc5f4a9bfc78dd3139202872bdf8d70a050f4039
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84182896"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85289129"
 ---
 # <a name="assign-subscriptions-to-multiple-users"></a>Attribuer des abonnements à plusieurs utilisateurs
 Le portail d’administration des abonnements vous permet d’ajouter des utilisateurs un à la fois ou dans des grands groupes.  Pour ajouter des utilisateurs individuels, consultez [Ajouter des utilisateurs uniques](assign-license.md).
@@ -24,18 +24,18 @@ Pour ajouter des groupes d’utilisateurs importants, vous pouvez utiliser la fo
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4vxNq]
 
 ## <a name="use-bulk-add-to-assign-subscriptions"></a>Utiliser l’ajout en bloc pour affecter des abonnements
-1. Connectez-vous au portail d’administration des abonnements Visual Studio à l’adresse https://manage.visualstudio.com .
+1. Connectez-vous au portail d’administration des abonnements Visual Studio à l’adresse <https://manage.visualstudio.com> .
 
-2. Pour ajouter plusieurs abonnés à la fois, accédez à l’onglet **gérer les abonnés** . Choisissez l’onglet **Ajouter** , puis choisissez **Ajouter en bloc** dans la liste déroulante.  
+1. Pour ajouter plusieurs abonnés à la fois, accédez à l’onglet **gérer les abonnés** . Choisissez l’onglet **Ajouter** , puis choisissez **Ajouter en bloc** dans la liste déroulante.  
 
-2. L’ajout en bloc utilise un modèle Microsoft Excel pour télécharger les informations de l’abonné. Dans la boîte de dialogue permettant de charger plusieurs abonnés, cliquez sur **Télécharger** pour télécharger le modèle.
+1. L’ajout en bloc utilise un modèle Microsoft Excel pour télécharger les informations de l’abonné. Dans la boîte de dialogue permettant de charger plusieurs abonnés, cliquez sur **Télécharger** pour télécharger le modèle.
    > [!div class="mx-imgBorder"]
    > ![Télécharger le modèle Excel pour charger plusieurs abonnés](media/download-template-upload-subscribers.png)
    >
    > [!NOTE]
    > Téléchargez toujours la dernière version du modèle. L’utilisation d’une version antérieure peut faire échouer le chargement en bloc.
 
-3. Dans la feuille de calcul Excel, renseignez les champs avec les informations relatives aux utilisateurs auxquels vous souhaitez attribuer des abonnements. (La*référence* est un champ facultatif.) Enregistrez le fichier localement une fois que vous avez terminé.
+1. Dans la feuille de calcul Excel, renseignez les champs avec les informations relatives aux utilisateurs auxquels vous souhaitez attribuer des abonnements. (La*référence* est un champ facultatif.) Enregistrez le fichier localement une fois que vous avez terminé.
 
     > [!NOTE]
     > L’un des champs du modèle permet aux administrateurs d’activer ou de désactiver la capacité des abonnés à télécharger des logiciels.  La désactivation des téléchargements désactive également leur accès aux clés de produit.
@@ -48,11 +48,11 @@ Pour ajouter des groupes d’utilisateurs importants, vous pouvez utiliser la fo
     - Assurez-vous que tous les champs obligatoires sont remplis. 
     - Vérifiez la colonne **message d’erreur** .  Si des erreurs sont répertoriées, résolvez-les avant de tenter de charger le fichier. 
 
-4. Revenez au portail d’administration des abonnements Visual Studio. Dans la boîte de dialogue permettant de **charger plusieurs abonnés**, cliquez sur **Parcourir**.
+1. Revenez au portail d’administration des abonnements Visual Studio. Dans la boîte de dialogue permettant de **charger plusieurs abonnés**, cliquez sur **Parcourir**.
    > [!div class="mx-imgBorder"]
    > ![Accéder à votre modèle enregistré pour charger plusieurs abonnés](media/bulk-add-browse-saved-template.png)
 
-5. Accédez au fichier Excel que vous avez enregistré, puis cliquez sur **OK**.
+1. Accédez au fichier Excel que vous avez enregistré, puis cliquez sur **OK**.
    > [!div class="mx-imgBorder"]
    > ![Charger le modèle Excel pour charger plusieurs abonnés](media/bulk-upload-subscribers.png)
 
@@ -119,7 +119,7 @@ Grâce à cette fonctionnalité, il est facile de rester au-dessus de vos affect
 > Si vous avez déjà attribué des abonnements individuellement à des utilisateurs qui sont ajoutés par la suite dans le cadre d’un groupe de Azure AD, ils sont ajoutés dans le cadre du groupe et ne sont plus répertoriés individuellement. Toutefois, si l’abonnement individuel est destiné à un niveau d’abonnement différent, il aura deux abonnements.  Exemple : si un utilisateur dispose d’un abonnement Visual Studio Professional individuel et s’il est membre d’un groupe auquel vous affectez des abonnements Visual Studio Enterprise, il disposera des deux.  
 
 
-## <a name="frequently-asked-questions"></a>Questions fréquentes (FAQ)
+## <a name="frequently-asked-questions"></a>Forum aux questions
 ### <a name="q-can-i-choose-multiple-subscription-levels-to-be-assigned-within-an-azure-ad-group"></a>Q : puis-je choisir plusieurs niveaux d’abonnement à affecter au sein d’un groupe de Azure AD ? 
 R : non--tous les membres du groupe reçoivent le même abonnement. 
 

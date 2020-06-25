@@ -1,7 +1,7 @@
 ---
 title: Effectuer un zoom sur les graphiques des résultats des tests de charge
 ms.date: 10/19/2016
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - vs.test.load.monitor.graphzoom
 helpviewer_keywords:
@@ -11,12 +11,12 @@ ms.assetid: 729b4c30-4bc3-4698-91b3-17a676897443
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: a22f1a9b6aa772224b217b5de4136687df1462a1
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 836e4f30e2c84bf0093366f4cc38a2cb7f58b545
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75594355"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85287023"
 ---
 # <a name="how-to-zoom-in-on-a-region-of-the-graph-in-load-test-results"></a>Guide pratique pour faire un zoom sur une région du graphique des résultats d’un test de charge
 
@@ -43,7 +43,7 @@ Pour revenir aux contrôles de zoom horizontal et vertical afin d’afficher la 
 
 Dans l’illustration précédente, un zoom avant a été appliqué au graphique **Système testé** pour étudier les problèmes de seuil. Les violations de seuils ont été activées à l’aide de l’option **Afficher les violations de seuils sur le graphique** de la liste déroulante **Options de graphique** dans la barre d’outils.
 
-Pour plus d’informations, voir [Les résultats des tests de charge Analyse dans la vue graphiques](../test/analyze-load-test-results-in-the-graphs-view.md).
+Pour plus d’informations, consultez [analyser les résultats des tests de charge dans la vue graphiques](../test/analyze-load-test-results-in-the-graphs-view.md).
 
 ## <a name="display-graphs"></a>Afficher des graphiques
 
@@ -57,7 +57,7 @@ Pour afficher des graphes :
 
      \- ou -
 
-     Voir les détails d'un test de charge exécuté par le passé. Pour plus d’informations, voir [Comment : Accéder aux résultats des tests de charge pour analyse](../test/how-to-access-load-test-results-for-analysis.md).
+     Voir les détails d'un test de charge exécuté par le passé. Pour plus d’informations, consultez [Comment : accéder aux résultats des tests de charge pour l’analyse](../test/how-to-access-load-test-results-for-analysis.md).
 
 3. Choisissez **Graphiques** si vos graphiques ne sont pas affichés.
 
@@ -73,7 +73,7 @@ Lorsque plusieurs graphiques sont affichés, vous pouvez les garder synchronisé
 
 ### <a name="to-synchronize-zooming-and-scrolling"></a>Pour synchroniser le zoom et le défilement
 
-1. Sur **l’analyseur de test de charge**, choisissez **Synchronize Horizontal Zoom Controls**.
+1. Dans l' **Analyseur de test de charge**, choisissez **synchroniser les contrôles de zoom horizontal**.
 
      Lorsque le bouton **Synchroniser les contrôles de zoom horizontal** est sélectionné, si vous un faites un zoom et faites défiler l’échelle de temps d’un graphique en particulier, ce zoom et ce défilement sont également répercutés sur les autres graphiques.
 
@@ -117,4 +117,4 @@ Lorsque plusieurs graphiques sont affichés, vous pouvez les garder synchronisé
 
 - [Analyser les résultats des tests de charge dans la vue Graphiques](../test/analyze-load-test-results-in-the-graphs-view.md)
 - [Analyser les résultats des tests de charge](../test/analyze-load-test-results-using-the-load-test-analyzer.md)
-- [Comment : Ajouter et supprimer des compteurs sur des graphiques](../test/how-to-add-and-delete-counters-on-graphs-in-load-test-results.md)
+- [Procédure : ajouter et supprimer des compteurs sur des graphiques](../test/how-to-add-and-delete-counters-on-graphs-in-load-test-results.md)

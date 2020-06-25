@@ -1,7 +1,7 @@
 ---
 title: Spécifier le nombre d’itérations de tests dans un paramètre de série de tests de charge
 ms.date: 10/19/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - load tests, properties
 - load tests, run settings
@@ -9,21 +9,21 @@ ms.assetid: 45a625db-b3e7-4d64-beda-b9a76248096d
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 446da348c1a947e6c59b8ad60d9bd0799d0d4322
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: b022c747235f131f530df62e49c7204a97ce0872
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75588939"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85287478"
 ---
 # <a name="how-to-specify-the-number-of-test-iterations-in-a-load-test-run-setting"></a>Guide pratique pour spécifier le nombre d’itérations de tests dans un paramètre de test de charge
 
 Après avoir créé votre test de charge avec l’**Assistant Nouveau test de charge**, vous pouvez utiliser l’**éditeur de test de charge** pour changer les propriétés des scénarios en fonction de vos besoins et objectifs. Pour plus d’informations, consultez [Procédure pas à pas : création et exécution d’un test de charge](../test/walkthrough-create-and-run-a-load-test.md).
 
-À l’aide de **l’éditeur de test de charge**, vous pouvez modifier la propriété **d’itérations** de test d’une valeur de paramètres d’exécution dans la fenêtre **Propriétés.** La propriété **Test Iterations** spécifie le nombre d’itérations à exécuter sur toutes les performances Web et les tests unitaires dans tous les scénarios d’un test de charge à l’aide de **l’éditeur de test de charge**.
+À l’aide de l' **éditeur de test de charge**, vous pouvez modifier la propriété **itérations de test** d’une valeur de paramètres d’exécution dans la fenêtre **Propriétés** . La propriété **itérations de tests** spécifie le nombre d’itérations à exécuter sur tous les tests unitaires et de performances de site Web dans tous les scénarios d’un test de charge à l’aide de l' **éditeur de test de charge**.
 
 > [!NOTE]
-> Pour une liste complète des propriétés des paramètres d’exécution et de leurs descriptions, voir [les propriétés des paramètres d’exécution de test de charge](../test/load-test-run-settings-properties.md).
+> Pour obtenir la liste complète des propriétés des paramètres d’exécution et leurs descriptions, consultez [Propriétés des paramètres d’exécution du test de charge](../test/load-test-run-settings-properties.md).
 
 [!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
@@ -45,5 +45,5 @@ Après avoir créé votre test de charge avec l’**Assistant Nouveau test de ch
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Configurer les paramètres d’exécution de test de charge](../test/configure-load-test-run-settings.md)
+- [Configurer les paramètres d’exécution des tests de charge](../test/configure-load-test-run-settings.md)
 - [Propriétés des scénarios de test de charge](../test/load-test-scenario-properties.md)

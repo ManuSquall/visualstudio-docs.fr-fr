@@ -1,7 +1,7 @@
 ---
 title: Déboguer les fonctions de l’API Windows | Microsoft Docs
 ms.custom: seodec18
-ms.date: 11/04/2016
+ms.date: 06/03/2020
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.api
@@ -22,25 +22,33 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e7b5f3842160f4ffc6cecd41e65dd05ab7566dd0
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: c4141cc1c1bee201435c63317c662181113dff70
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72734350"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85286401"
 ---
 # <a name="how-can-i-debug-windows-api-functions"></a>Comment puis-je déboguer des fonctions API Windows ?
 Si vous voulez déboguer une fonction API Windows qui a chargé les symboles NT, vous devez effectuer les opérations suivantes.
 
 ### <a name="to-set-a-breakpoint-on-a-windows-api-function-with-nt-symbols-loaded"></a>Pour définir un point d'arrêt sur une fonction API Windows qui a chargé des symboles NT
 
-- Entrez le nom de la fonction ainsi que le nom du fichier DLL dans lequel la fonction réside. Dans du code 32 bits, utilisez la forme décorée du nom de la fonction. Pour définir un point d’arrêt sur **MessageBeep**, par exemple, vous devez entrer ce qui suit.
+- Dans le [point d’arrêt sur fonction](../debugger/using-breakpoints.md#BKMK_Set_a_breakpoint_in_a_source_file), entrez le nom de la fonction ainsi que le nom de la dll dans laquelle la fonction réside (consultez [opérateur de contexte](../debugger/context-operator-cpp.md)). Dans du code 32 bits, utilisez la forme décorée du nom de la fonction. Pour définir un point d’arrêt sur **MessageBeep**, par exemple, vous devez entrer ce qui suit.
 
     ```cpp
     {,,USER32.DLL}_MessageBeep@4
     ```
 
      Pour obtenir le nom décoré, consultez [affichage des noms décorés](https://msdn.microsoft.com/library/f79e2717-a4db-4d12-a689-69830cce2be0).
+
+     Vous pouvez tester le nom décoré et l’afficher dans le code machine. Pendant la suspension de la fonction dans le débogueur Visual Studio, cliquez avec le bouton droit sur la fonction dans l’éditeur de code ou dans la fenêtre pile des appels, puis sélectionnez atteindre le code **machine**.
+
+- Dans le code 64 bits, vous pouvez utiliser le nom non décoré.
+
+    ```cpp
+    {,,USER32.DLL}MessageBeep
+    ```
 
 ## <a name="see-also"></a>Voir aussi
 - [Forum Aux Questions sur le débogage du code natif](../debugger/debugging-native-code-faqs.md)

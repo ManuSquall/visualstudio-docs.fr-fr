@@ -1,6 +1,6 @@
 ---
 title: Porter, migrer et mettre à niveau des projets
-description: Une référence pour le soutien des projets créés dans les versions actuelles et antérieures de Visual Studio.
+description: Référence pour la prise en charge des projets créés dans les versions actuelles et antérieures de Visual Studio.
 ms.date: 11/26/2019
 ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
@@ -19,18 +19,18 @@ helpviewer_keywords:
 - conversion, projects
 - asset compatibility
 - projects, conversion
-ms.openlocfilehash: 221fd38b6035c1e41d9a768f5e30117dd3f4d35c
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 7ae4e0f865b35787663313277eb4df37169b72b7
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75406348"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85286061"
 ---
 # <a name="project-migration-and-upgrade-reference-for-visual-studio"></a>Informations de référence sur la migration et la mise à niveau de projets pour Visual Studio
 
 ::: moniker range="vs-2017"
 
-Chaque version de Visual Studio prend généralement en charge la plupart des types précédents de projets, de fichiers et d’autres actifs. Vous pouvez travailler avec eux [comme vous l’avez toujours](../ide/solutions-and-projects-in-visual-studio.md)fait, et à condition que vous ne dépendiez pas de fonctionnalités plus nouvelles, Visual Studio tente de préserver la compatibilité à l’envers avec les versions précédentes comme Visual Studio 2015, Visual Studio 2013 et Visual Studio 2012. (Pour connaître les fonctionnalités spécifiques à telle ou telle version, consultez les [Notes de publication](/visualstudio/releasenotes/vs2017-relnotes/).)
+Chaque version de Visual Studio prend généralement en charge la plupart des types précédents de projets, de fichiers et d’autres ressources. Vous pouvez les utiliser [comme vous](../ide/solutions-and-projects-in-visual-studio.md)le souhaitez toujours et, à condition de ne pas dépendre de nouvelles fonctionnalités, Visual Studio tente de préserver la compatibilité descendante avec les versions antérieures telles que visual studio 2015, Visual Studio 2013 et visual studio 2012. (Pour connaître les fonctionnalités spécifiques à telle ou telle version, consultez les [Notes de publication](/visualstudio/releasenotes/vs2017-relnotes/).)
 
 La prise en charge de certains types de projet change également avec le temps. Une version plus récente de Visual Studio peut cesser de prendre en charge certains projets, ou nécessiter la mise à jour d’un projet et lui faire perdre sa compatibilité descendante. Pour connaître l’état actuel des problèmes de migration, reportez-vous au [site de la communauté des développeurs Visual Studio](https://developercommunity.visualstudio.com).
 
@@ -47,7 +47,7 @@ Si un type de projet ou de fichier n’est pas listé ici alors qu’il le devra
 
 | Type de projet | Support |
 | --- | --- |
-| Projets .NET Core (.xproj) | Les projets créés avec Visual Studio 2015 utilisaient des outils d’aperçu qui incluaient un fichier projet xproj. Dans Visual Studio 2017, le format xproj n’est pas pris en charge autre que pour la migration vers le format csproj. Lorsque vous ouvrez un fichier xproj, vous êtes invité à migrer le fichier vers le format csproj de style SDK. (Une sauvegarde du fichier xproj est faite.) Les projets csproj de style SDK ne sont pas pris en charge dans Visual Studio 2015 et plus tôt. Pour plus d’informations, voir [Les projets Migrating .NET Core au format csproj](/dotnet/core/migration/#visual-studio).|
+| Projets .NET Core (.xproj) | Les projets créés avec Visual Studio 2015 utilisaient des outils d’aperçu qui incluaient un fichier projet xproj. Dans Visual Studio 2017, le format xproj n’est pas pris en charge pour la migration vers le format csproj. Lorsque vous ouvrez un fichier xproj, vous êtes invité à migrer le fichier vers le format csproj de type SDK. (Une sauvegarde du fichier xproj est effectuée.) Les projets csproj de style SDK ne sont pas pris en charge dans Visual Studio 2015 et versions antérieures. Pour plus d’informations, consultez [migration de projets .net Core au format csproj](/dotnet/core/migration/#visual-studio).|
 | Application web ASP.NET et application web ASP.NET Core avec Application Insights activé | Pour chaque utilisateur de Visual Studio, les informations sur les ressources sont stockées dans le Registre pour chaque instance utilisateur. Ces informations sont utilisées quand un utilisateur n’a pas de projet ouvert et qu’il souhaite rechercher des données Azure Application Insights. Visual Studio 2015 n’utilise pas le même emplacement du Registre que Visual Studio 2017 et n’entre pas en conflit.<br/><br/>Une fois qu’un utilisateur crée une application web ASP.NET ou une Application web ASP.NET Core, la ressource est stockée dans le fichier .suo. L’utilisateur peut ouvrir le projet dans Visual Studio 2015 ou 2017 et les informations de ressource servent dans les deux cas tant que Visual Studio prend en charge les projets et solutions utilisés dans les deux versions. Les utilisateurs doivent s’authentifier une seule fois sur chaque produit. Par exemple, si un projet est créé avec Visual Studio 2015 et ouvert dans Visual Studio 2017, l’utilisateur doit s’authentifier sur Visual Studio 2017. |
 | C#/Visual Basic Webform ou Windows Form | Vous pouvez ouvrir le projet dans Visual Studio 2017 et Visual Studio 2015. |
 | Projets de test unitaire de base de données (csproj, vbproj) | Les anciens projets de test unitaire de données sont chargés dans Visual Studio 2017, mais ils utilisent la version de dépendances placée dans le GAC. Pour mettre à niveau le projet de test unitaire afin d’utiliser les dernières dépendances, cliquez avec le bouton droit sur le projet dans l’Explorateur de solutions, puis sélectionnez **Convertir en projet de tests unitaires SQL Server**. |
@@ -77,13 +77,13 @@ Si un type de projet ou de fichier n’est pas listé ici alors qu’il le devra
 
 ## <a name="how-visual-studio-decides-when-to-migrate-a-project"></a>Comment Visual Studio décide quand migrer un projet
 
-En règle générale, chaque nouvelle version de Visual Studio cherche à maintenir une compatibilité avec les versions antérieures. Ainsi, vous pouvez ouvrir, modifier et générer le même projet dans différentes versions. Toutefois, en raison de certains changements inévitables au fil du temps, certains types de projet ne peuvent plus être pris en charge. (Voir [Le ciblage et la compatibilité](/visualstudio/productinfo/vs2017-compatibility-vs) des plateformes pour lesquels les types de projets sont pris en charge dans Visual Studio 2017.) Dans ces cas, une version plus récente de Visual Studio ne chargera pas le projet et n’offre pas de trajectoire de migration; vous devez maintenir ce projet dans une version précédente de Visual Studio qui ne le soutenir.
+En règle générale, chaque nouvelle version de Visual Studio cherche à maintenir une compatibilité avec les versions antérieures. Ainsi, vous pouvez ouvrir, modifier et générer le même projet dans différentes versions. Toutefois, en raison de certains changements inévitables au fil du temps, certains types de projet ne peuvent plus être pris en charge. (Consultez [ciblage et compatibilité](/visualstudio/productinfo/vs2017-compatibility-vs) de la plateforme pour lesquels les types de projets sont pris en charge dans Visual Studio 2017.) Dans ce cas, une version plus récente de Visual Studio ne charge pas le projet et n’offre pas de chemin de migration. vous devez conserver ce projet dans une version antérieure de Visual Studio qui le prend en charge.
 
 Dans d’autres cas, la version plus récente de Visual Studio peut ouvrir un projet, mais elle doit mettre à jour ou faire migrer le projet, ce qui le rend incompatible avec les versions antérieures. Visual Studio utilise un certain nombre de critères pour déterminer si une telle migration est nécessaire :
 
 - Compatibilité avec les versions cibles des plateformes, jusqu’à Visual Studio 2013 RTM.
 
-- Compatibilité des composants design-time avec les versions antérieures de Visual Studio. (À savoir différentes chaînes de Visual Studio 2017; Visual Studio 2015 RTM & Mise à jour 3; Visual Studio 2013 RTM & Mise à jour 5; Visual Studio 2012 Mise à jour 4; Studio visuel 2010 SP 1.) Visual Studio 2017 vise à échouer gracieusement avec des actifs dépréciés de conception-temps sans les corrompre, de sorte que les versions précédentes peuvent encore ouvrir le projet.
+- Compatibilité des composants design-time avec les versions antérieures de Visual Studio. (À savoir, différents canaux de Visual Studio 2017 ; Mise à jour 3 de Visual Studio 2015 RTM & Visual Studio 2013 RTM & Update 5 ; Visual Studio 2012, mise à jour 4 ; Visual Studio 2010 SP 1.) Visual Studio 2017 vise à échouer correctement avec les ressources au moment de la conception dépréciées sans les corrompre, de sorte que les versions précédentes peuvent toujours ouvrir le projet.
 
 - Vérifier que les nouveaux composants design-time n’entraînent pas de problèmes de compatibilité avec les versions antérieures, jusqu’à Visual Studio 2013 RTM & Update 5.
 
@@ -106,31 +106,32 @@ Pour plus d’informations, consultez les articles suivants :
 
 ## <a name="see-also"></a>Voir aussi
 
-[Informations de référence sur la migration et la mise à niveau de projets pour Visual Studio 2019](port-migrate-and-upgrade-visual-studio-projects.md?view=vs-2019)
+- [Informations de référence sur la migration et la mise à niveau de projets pour Visual Studio 2019](port-migrate-and-upgrade-visual-studio-projects.md?view=vs-2019)
+- [Maintenance et cycle de vie des produits Visual Studio](/visualstudio/releases/2019/servicing/)
 
 ::: moniker-end
 
 ::: moniker range="vs-2019"
 
-Chaque nouvelle version de Visual Studio prend en charge la plupart des types de projets, de fichiers et d’autres actifs. Vous pouvez travailler avec eux [comme vous l’avez toujours](../ide/solutions-and-projects-in-visual-studio.md)fait, à condition que vous ne dépendiez pas de fonctionnalités plus nouvelles.
+Chaque nouvelle version de Visual Studio prend en charge la plupart des types de projets, de fichiers et d’autres ressources. Vous pouvez les utiliser [comme vous le souhaitez](../ide/solutions-and-projects-in-visual-studio.md), à condition de ne pas dépendre de fonctionnalités plus récentes.
 
-Nous essayons de préserver la compatibilité à l’envers avec les versions précédentes, telles que Visual Studio 2017, Visual Studio 2015, Visual Studio 2013 et Visual Studio 2012. Cependant, le soutien à certains types de projets change au fil du temps. Une version plus récente de Visual Studio pourrait ne pas prendre en charge certains projets du tout, ou il pourrait vous exiger que vous mettez à jour un projet de sorte qu’il n’est plus compatible à l’envers. 
+Nous essayons de préserver la compatibilité descendante avec les versions antérieures, telles que Visual Studio 2017, Visual Studio 2015, Visual Studio 2013 et Visual Studio 2012. Toutefois, la prise en charge de certains types de projets change dans le temps. Une version plus récente de Visual Studio peut ne pas prendre en charge certains projets, ou vous devrez peut-être mettre à jour un projet pour qu’il ne soit plus compatible avec les versions antérieures.
 
 > [!NOTE]
-> Pour connaître l’état actuel des problèmes de migration, reportez-vous à la [Communauté des développeurs Visual Studio](https://developercommunity.visualstudio.com). Et pour en savoir plus sur les fonctionnalités spécifiques à quelle version Visual Studio, voir les [notes de sortie](/visualstudio/releases/2019/release-notes/).
+> Pour connaître l’état actuel des problèmes de migration, reportez-vous à la [Communauté des développeurs Visual Studio](https://developercommunity.visualstudio.com). Pour en savoir plus sur les fonctionnalités spécifiques à la version de Visual Studio, consultez les [notes de publication](/visualstudio/releases/2019/release-notes/).
 
 > [!IMPORTANT]
-> Certains types de projets exigent des charges de travail spécifiques. Si la charge de travail n’est pas installée, Visual Studio signale un type de projet inconnu ou non compatible. Dans ce cas, vérifiez vos [options d’installation dans l’installateur Visual Studio](../install/modify-visual-studio.md) et réessayez. Pour plus d’informations sur le support du projet dans Visual Studio 2019, consultez la page [De ciblage et compatibilité](/visualstudio/releases/2019/compatibility) de la plate-forme.
+> Certains types de projets nécessitent des charges de travail spécifiques. Si la charge de travail n’est pas installée, Visual Studio signale un type de projet inconnu ou non compatible. Dans ce cas, vérifiez les [options d’installation dans le Visual Studio installer](../install/modify-visual-studio.md) , puis réessayez. Pour plus d’informations sur la prise en charge des projets dans Visual Studio 2019, consultez la page [ciblage et compatibilité](/visualstudio/releases/2019/compatibility) de la plateforme.
 
 ## <a name="project-types"></a>Types de projet
 
 La liste suivante décrit la prise en charge dans Visual Studio 2019 de projets qui ont été créés dans des versions antérieures.
 
-Si vous ne voyez pas un projet ou un type de fichier répertorié ici qui devrait l’être, consultez la [version Visual Studio 2017 de cet article](/visualstudio/porting/port-migrate-and-upgrade-visual-studio-projects?view=vs-2017). Vous pouvez également utiliser les **commentaires Envoyer sur** > ce bouton**de page** au bas de cette page pour fournir des détails de votre projet. (Si vous utilisez le contrôle anonyme « Cette page est-elle utile ? », nous ne pourrons pas répondre à votre commentaire.)
+Si vous ne voyez pas un projet ou un type de fichier répertorié ici, consultez la [version Visual Studio 2017 de cet article](/visualstudio/porting/port-migrate-and-upgrade-visual-studio-projects?view=vs-2017). Vous pouvez également utiliser le bouton **Envoyer des commentaires à propos**  >  de**cette page** au bas de cette page pour fournir des détails sur votre projet. (Si vous utilisez le contrôle anonyme « Cette page est-elle utile ? », nous ne pourrons pas répondre à votre commentaire.)
 
 | Type de projet | Support |
 | --- | --- |
-| Projets .NET Core (.xproj) | Les projets créés avec Visual Studio 2015 utilisaient des outils d’aperçu qui incluaient un fichier projet xproj.<br/><br/>Visual Studio 2017: Le format xproj n’est pas pris en charge autre que pour la migration vers le format csproj. Lorsque vous ouvrez un fichier xproj, vous êtes invité à migrer le fichier vers le format csproj de style SDK. (Une sauvegarde du fichier xproj est faite.) Les projets csproj de style SDK ne sont pas pris en charge dans Visual Studio 2015 et plus tôt. <br/><br/>Visual Studio 2019: Dans la version 16.3 et plus tard, vous ne pouvez pas charger ou migrer des projets xproj. Pour plus d’informations, voir [Les projets Migrating .NET Core au format csproj](/dotnet/core/migration/#visual-studio).|
+| Projets .NET Core (.xproj) | Les projets créés avec Visual Studio 2015 utilisaient des outils d’aperçu qui incluaient un fichier projet xproj.<br/><br/>Visual Studio 2017 : le format xproj n’est pas pris en charge pour la migration vers le format csproj. Lorsque vous ouvrez un fichier xproj, vous êtes invité à migrer le fichier vers le format csproj de type SDK. (Une sauvegarde du fichier xproj est effectuée.) Les projets csproj de style SDK ne sont pas pris en charge dans Visual Studio 2015 et versions antérieures. <br/><br/>Visual Studio 2019 : dans la version 16,3 et les versions ultérieures, vous ne pouvez pas charger ou migrer des projets xproj. Pour plus d’informations, consultez [migration de projets .net Core au format csproj](/dotnet/core/migration/#visual-studio).|
 | Application web ASP.NET et application web ASP.NET Core avec Application Insights activé | Pour chaque utilisateur de Visual Studio, les informations sur les ressources sont stockées dans le Registre pour chaque instance utilisateur. Ces informations sont utilisées quand un utilisateur n’a pas de projet ouvert et qu’il souhaite rechercher des données Azure Application Insights. Visual Studio 2015 n’utilise pas le même emplacement du Registre que Visual Studio 2017, et Visual Studio 2019 ne provoque pas de conflit.<br/><br/>Une fois qu’un utilisateur crée une application web ASP.NET ou une Application web ASP.NET Core, la ressource est stockée dans le fichier .suo. L’utilisateur peut ouvrir le projet dans Visual Studio 2015, Visual Studio 2017 ou Visual Studio 2019, et les informations de ressource servent dans les deux cas tant que Visual Studio prend en charge les projets et solutions utilisés dans les deux versions. Les utilisateurs doivent s’authentifier une seule fois sur chaque produit. Par exemple, si un projet est créé avec Visual Studio 2017 et ouvert dans Visual Studio 2019, l’utilisateur doit s’authentifier sur Visual Studio 2019. |
 | C#/Visual Basic Webform ou Windows Form | Vous pouvez ouvrir le projet dans Visual Studio 2019, Visual Studio 2017 et Visual Studio 2015. |
 | Test codé de l’interface utilisateur | Le test codé de l’interface utilisateur qui permet d’effectuer des tests fonctionnels automatisés et pilotés par l’interface utilisateur est déprécié dans Visual Studio 2019. <br/><br/>Visual Studio 2019 sera la dernière version prenant en charge le test codé de l’interface utilisateur. Nous vous recommandons d’utiliser Selenium pour tester les applications web et Appium avec WinAppDriver pour tester les applications de bureau et UWP. |
@@ -165,30 +166,30 @@ Si vous ne voyez pas un projet ou un type de fichier répertorié ici qui devrai
 | Windows Communication Foundation, Windows Workflow Foundation | Vous pouvez ouvrir ce projet dans Visual Studio 2019, Visual Studio 2017, Visual Studio 2015, Visual Studio 2013 et Visual Studio 2012. |
 | Windows Presentation Foundation | Vous pouvez ouvrir ce projet dans Visual Studio 2019, Visual Studio 2017, Visual Studio 2013, Visual Studio 2012 et Visual Studio 2010 SP1. |
 | Applications Windows Phone | Les projets pour Windows Phone ne sont pas pris en charge dans Visual Studio 2019. <br/><br/>Pour gérer les applications Windows Phone 8.x, utilisez Visual Studio 2015. Pour gérer les projets Windows Phone 7.x, utilisez Visual Studio 2012. |
-| Applications Windows Store | Les projets Windows universels JavaScript ne sont pas pris en charge dans Visual Studio 2019. Pour conserver ces projets, utilisez Visual Studio 2017. <br/><br/>Les kits SDK Windows 10 antérieurs à la version Windows 10 Fall Creators Update (build 16299) ont été supprimés du programme d’installation de Visual Studio 2019. Vous pouvez télécharger manuellement les kits SDK plus anciens ou recibler vos projets pour utiliser les kits SDK plus récents.<br/><br/>Les projets Windows universels qui utilisent project.json ne sont pas pris en charge. Nous vous recommandons de mettre à niveau ces projets pour utiliser des références de package. Vous pouvez également ajouter une référence à Microsoft.NET.Test.Sdk version 16.0.0.0 dans le fichier project.json.<br/><br/>Les projets pour Windows Store 8.1 et 8.0 ne sont pas pris en charge dans Visual Studio 2019. Pour gérer ces applications, continuez à utiliser Visual Studio 2015. |
+| Applications du Windows Store | Les projets Windows universels JavaScript ne sont pas pris en charge dans Visual Studio 2019. Pour conserver ces projets, utilisez Visual Studio 2017. <br/><br/>Les kits SDK Windows 10 antérieurs à la version Windows 10 Fall Creators Update (build 16299) ont été supprimés du programme d’installation de Visual Studio 2019. Vous pouvez télécharger manuellement les kits SDK plus anciens ou recibler vos projets pour utiliser les kits SDK plus récents.<br/><br/>Les projets Windows universels qui utilisent project.json ne sont pas pris en charge. Nous vous recommandons de mettre à niveau ces projets pour utiliser des références de package. Vous pouvez également ajouter une référence à Microsoft.NET.Test.Sdk version 16.0.0.0 dans le fichier project.json.<br/><br/>Les projets pour Windows Store 8.1 et 8.0 ne sont pas pris en charge dans Visual Studio 2019. Pour gérer ces applications, continuez à utiliser Visual Studio 2015. |
 | Xamarin | L’extension Xamarin Live Player pour Visual Studio et Visual Studio pour Mac a été supprimée. Cela supprime l’écran de jumelage et toute intégration. À la place, utilisez le générateur d’aperçu Xamarin.Forms intégré.<br/><br/>L’émulateur Visual Studio pour Android a été supprimé de Visual Studio Installer. À la place, utilisez la nouvelle prise en charge Hyper-V dans l’émulateur Google Android. |
 
 ## <a name="migrate-a-project"></a>Migrer un projet
 
-Bien que nous essayons de maintenir la compatibilité avec les versions précédentes, il peut y avoir des changements qui ne sont pas compatibles avec les versions précédentes. (Voir [Le ciblage et la compatibilité](/visualstudio/releases/2019/compatibility) des plateformes pour lesquels les types de projets sont pris en charge dans Visual Studio 2019.) Lorsque cela se produit, une version plus récente de Visual Studio ne chargera pas le projet ou n’offrira pas de trajectoire de migration. Vous devrez peut-être maintenir ce projet dans une version précédente de Visual Studio.
+Bien que nous tentions de maintenir la compatibilité avec les versions précédentes, il peut y avoir des modifications qui ne sont pas compatibles avec les versions précédentes. (Consultez [ciblage et compatibilité](/visualstudio/releases/2019/compatibility) de la plateforme pour lesquels les types de projets sont pris en charge dans Visual Studio 2019.) Dans ce cas, une version plus récente de Visual Studio ne charge pas le projet ou n’offre pas de chemin de migration. Vous devrez peut-être gérer ce projet dans une version antérieure de Visual Studio.
 
-Parfois, la nouvelle version de Visual Studio peut ouvrir un projet, mais elle doit mettre à jour ou migrer le projet d’une manière qui pourrait le rendre incompatible avec les versions précédentes. Visual Studio utilise un certain nombre de critères pour déterminer si une telle migration est nécessaire :
+Parfois, la version plus récente de Visual Studio peut ouvrir un projet, mais elle doit mettre à jour ou migrer le projet d’une manière qui peut le rendre incompatible avec les versions précédentes. Visual Studio utilise un certain nombre de critères pour déterminer si une telle migration est nécessaire :
 
 - Compatibilité avec les versions cibles des plateformes, jusqu’à Visual Studio 2013 RTM.
 
-- Compatibilité des composants design-time avec les versions antérieures de Visual Studio. (À savoir différentes chaînes de Visual Studio 2019, Visual Studio 2017; Visual Studio 2015 RTM & Mise à jour 3; Visual Studio 2013 RTM & Mise à jour 5; Visual Studio 2012 Mise à jour 4; Studio visuel 2010 SP 1.) Visual Studio 2019 vise à échouer gracieusement avec des actifs dépréciés de conception-temps sans les corrompre, de sorte que les versions précédentes peuvent encore ouvrir le projet.
+- Compatibilité des composants design-time avec les versions antérieures de Visual Studio. (À savoir, différents canaux de Visual Studio 2019, Visual Studio 2017 ; Mise à jour 3 de Visual Studio 2015 RTM & Visual Studio 2013 RTM & Update 5 ; Visual Studio 2012, mise à jour 4 ; Visual Studio 2010 SP 1.) Visual Studio 2019 vise à échouer correctement avec les ressources au moment de la conception dépréciées sans les corrompre, de sorte que les versions précédentes peuvent toujours ouvrir le projet.
 
 - Vérifier que les nouveaux composants design-time n’entraînent pas de problèmes de compatibilité avec les versions antérieures, jusqu’à Visual Studio 2013 RTM & Update 5.
 
-L’équipe d’ingénierie qui possède le type de projet examine ces critères et fait l’appel en ce qui concerne le soutien, la compatibilité et la migration. Encore une fois, nous essayons de maintenir la compatibilité entre les versions Visual Studio de sorte que lorsque vous créez et modifiez des projets dans une version de Visual Studio, il fonctionne juste dans d’autres versions.
+L’équipe d’ingénierie qui possède le type de projet examine ces critères et effectue l’appel là où le support, la compatibilité et la migration sont concernés. Là encore, nous essayons de maintenir la compatibilité entre les versions de Visual Studio. ainsi, lorsque vous créez et modifiez des projets dans une version de Visual Studio, cela fonctionne uniquement dans d’autres versions.
 
-Parfois, la compatibilité n’est pas possible. Ensuite, Visual Studio ouvre l’assistant de mise à niveau pour faire les changements à sens unique nécessaires. Ces changements à sens unique `ToolsVersion` peuvent impliquer la modification de la propriété dans le fichier du projet, qui indique exactement quelle version de MSBuild peut transformer le code source du projet en artefacts runnables et déployables que vous voulez. 
+Parfois, la compatibilité n’est pas possible. Ensuite, Visual Studio ouvre l’Assistant Mise à niveau pour effectuer les modifications unidirectionnelles nécessaires. Ces modifications à sens unique peuvent impliquer la modification `ToolsVersion` de la propriété dans le fichier projet, qui désigne exactement la version de MSBuild qui peut transformer le code source du projet en artefacts exécutables et déployables que vous souhaitez.
 
-Ce qui rend un projet incompatible avec les versions précédentes de Visual Studio n’est `ToolsVersion`pas la version *Visual Studio,* mais la version *MSBuild,* tel que déterminé par . Si votre version de Visual Studio contient la chaîne `ToolsVersion` d’outils MSBuild qui correspond à la dans un projet, puis Visual Studio peut invoquer cette chaîne d’outils pour construire le projet.
+Ce qui rend un projet incompatible avec les versions précédentes de Visual Studio n’est pas la version de *Visual Studio* , mais la version de *MSBuild* , telle que déterminée par `ToolsVersion` . Si votre version de Visual Studio contient le chaîne d’outils MSBuild qui correspond au `ToolsVersion` dans un projet, Visual Studio peut appeler ce chaîne d’outils pour générer le projet.
 
-Pour maintenir la compatibilité avec les projets que vous avez créés dans les versions précédentes, Visual Studio 2019 comprend les fauteuils d’outils MSBuild nécessaires pour prendre en charge `ToolsVersion` 15, 14, 12 et 4. Les projets qui utilisent l’une de ces valeurs de `ToolsVersion` doivent entraîner la réussite de la build. (Sujet, encore une fois, à savoir si Visual Studio 2019 prend en charge le type de projet, tel que décrit sur [le ciblage et la compatibilité de la plate-forme](/visualstudio/releases/2019/compatibility).)
+Pour assurer la compatibilité avec les projets que vous avez créés dans les versions antérieures, Visual Studio 2019 comprend les chaînes MSBuild nécessaires pour prendre en charge les `ToolsVersion` 15, 14, 12 et 4. Les projets qui utilisent l’une de ces valeurs de `ToolsVersion` doivent entraîner la réussite de la build. (Sujet, à nouveau, si Visual Studio 2019 prend en charge le type de projet, comme décrit dans [ciblage et compatibilité](/visualstudio/releases/2019/compatibility)de la plateforme.)
 
-Vous pourriez être tenté de mettre à jour manuellement ou de migrer un projet à une valeur plus nouvelle. `ToolsVersion` Il n’est pas nécessaire de faire un tel changement, et serait probablement générer de nombreuses erreurs et avertissements que vous devez corriger pour obtenir le projet de construire à nouveau. En outre, si Visual Studio `ToolsVersion` ne prend pas en charge un spécifique à l’avenir, alors le projet déclenche le processus de migration du projet lorsque vous l’ouvrez parce que sa `ToolsVersion` valeur doit être changée.
+Vous pouvez être tenté de mettre à jour ou de migrer manuellement un projet vers une valeur plus récente `ToolsVersion` . Il n’est pas nécessaire d’apporter une telle modification et de générer probablement de nombreux avertissements et erreurs que vous devez corriger pour que le projet soit de nouveau généré. En outre, si Visual Studio ne prend pas en charge un spécifique `ToolsVersion` à l’avenir, le projet déclenche le processus de migration de projet lorsque vous l’ouvrez, car sa `ToolsVersion` valeur doit être modifiée.
 
 ## <a name="next-steps"></a>Étapes suivantes
 
@@ -199,6 +200,7 @@ Pour plus d’informations, consultez les articles suivants :
 
 ## <a name="see-also"></a>Voir aussi
 
-[Informations de référence sur la migration et la mise à niveau de projets pour Visual Studio 2017](/visualstudio/porting/port-migrate-and-upgrade-visual-studio-projects?view=vs-2017)
+- [Informations de référence sur la migration et la mise à niveau de projets pour Visual Studio 2017](/visualstudio/porting/port-migrate-and-upgrade-visual-studio-projects?view=vs-2017)
+- [Maintenance et cycle de vie des produits Visual Studio](/visualstudio/releases/2019/servicing/)
 
 ::: moniker-end

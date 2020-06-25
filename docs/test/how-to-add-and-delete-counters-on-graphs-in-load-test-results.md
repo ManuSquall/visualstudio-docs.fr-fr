@@ -1,7 +1,7 @@
 ---
 title: Ajouter et supprimer des compteurs sur des graphes dans les résultats des tests de charge
 ms.date: 10/19/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - load test results graphs, adding counters
 - load test results graph
@@ -11,12 +11,12 @@ ms.assetid: 81536233-1962-40d9-9511-0b4633814d90
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: acb08edf74d3ca35a2449f588976681d679caeb4
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 2b2cefc56d299c9ec917aea555aec1cd9ca53887
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "76115179"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85288466"
 ---
 # <a name="how-to-add-and-delete-counters-on-graphs-in-load-test-results"></a>Comment : ajouter et supprimer des compteurs sur des graphiques dans les résultats des tests de charge
 
@@ -26,7 +26,7 @@ Vous pouvez utiliser le volet **Compteurs** pour ajouter des compteurs de perfor
 
 [!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
-**Considérations d’intervalle de contre-échantillonnage de performance**
+**Considérations sur l’intervalle d’échantillonnage des compteurs de performances**
 
 Choisissez une valeur pour la propriété **Taux d’échantillonnage** dans les paramètres d’exécution d’un test de charge en fonction de la longueur de votre test de charge. Un taux d'échantillonnage moins élevé, tel que la valeur par défaut de cinq secondes, nécessite une capacité d'espace supplémentaire dans la base de données des résultats du test de charge. Pour les tests de charge de plus longue durée, l'augmentation du taux d'échantillonnage permet de réduire le volume de données collectées. Pour plus d’informations, voir [Guide pratique : Spécifier l’échantillonnage](../test/how-to-specify-the-sample-rate-for-a-load-test.md).
 
@@ -39,7 +39,7 @@ Voici quelques instructions sur les taux d'échantillonnage :
 |8 à 24 heures|30 secondes|
 |> 24 heures|60 secondes|
 
-**Considérations pour inclure les détails de synchronisation pour recueillir des données percentile**
+**Considérations relatives à l’inclusion de détails de minuterie pour collecter des données de centile**
 
 Les paramètres d’exécution de l’éditeur de test de charge contiennent une propriété nommée **Stockage des détails de minuterie**. Si la propriété **Stockage des détails de minuterie** est activée, le temps nécessaire à l’exécution de chaque test, transaction et page individuels pendant le test de charge est stocké dans le référentiel des résultats des tests de charge. Ainsi, les données du 90e et du 95e centiles s’affichent dans **l’Analyseur de test de charge** des tables Tests, Transactions et Pages.
 
@@ -47,7 +47,7 @@ Vous avez deux possibilités pour activer la propriété **Stockage des détails
 
 La capacité d'espace requise dans le référentiel des résultats du test de charge pour stocker les détails de minuterie pouvait être très élevée, en particulier pour les longs tests de charge. En outre, le temps nécessaire pour stocker ces données dans le référentiel des résultats du test de charge à la fin du test de charge est plus long, étant donné que ces données sont stockées sur les agents de test de charge jusqu’à la fin de l’exécution du test de charge. Lorsque le test de charge est terminé, les données sont stockées dans le référentiel. Par défaut, la propriété **Stockage des détails de minuterie** est activée. Si cela pose un problème pour votre environnement de test, vous pouvez affecter la valeur **Aucun** à la propriété **Stockage des détails de minuterie**.
 
-Pour plus d’informations, voir [Comment : Spécifier la propriété de stockage des détails de synchronisation.](../test/how-to-specify-the-timing-details-storage-property-for-a-load-test.md)
+Pour plus d’informations, consultez [Comment : spécifier la propriété de stockage des détails de minuterie](../test/how-to-specify-the-timing-details-storage-property-for-a-load-test.md).
 
 ## <a name="to-display-a-particular-performance-counter-on-a-load-test-graph"></a>Pour afficher un compteur de performance particulier sur un graphique de test de charge
 
@@ -85,4 +85,4 @@ Pour plus d’informations, voir [Comment : Spécifier la propriété de stockag
 ## <a name="see-also"></a>Voir aussi
 
 - [Analyser les résultats des tests de charge dans la vue Graphiques](../test/analyze-load-test-results-in-the-graphs-view.md)
-- [Comment : Créer des graphiques personnalisés](../test/how-to-create-custom-graphs-in-load-test-results.md)
+- [Comment : créer des graphiques personnalisés](../test/how-to-create-custom-graphs-in-load-test-results.md)

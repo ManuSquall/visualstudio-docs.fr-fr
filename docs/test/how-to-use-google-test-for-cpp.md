@@ -2,18 +2,18 @@
 title: Guide pratique pour utiliser Google Test pour C++
 description: Utilisez Google Test pour créer des tests unitaires C++ dans Visual Studio.
 ms.date: 05/06/2017
-ms.topic: conceptual
+ms.topic: how-to
 ms.author: corob
 manager: markl
 ms.workload:
 - cplusplus
 author: corob-msft
-ms.openlocfilehash: 31078b060c94f3253232d22681a1a5dae47e03b6
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: bf4db1c01fc79d32f7e498c265b74dec34f67e48
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77279296"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85287244"
 ---
 # <a name="how-to-use-google-test-for-c-in-visual-studio"></a>Guide pratique pour utiliser Google Test pour C++ dans Visual Studio
 
@@ -53,19 +53,19 @@ Dans la boîte de dialogue **Configuration du projet de test** qui s’affiche, 
 
 ## <a name="set-additional-options"></a>Définir des options supplémentaires
 
-Dans le menu principal, choisissez **Tools** > **Options** > **Test Adapt adaptateur pour Google Test** pour définir des options supplémentaires. Pour plus d’informations sur ces paramètres, consultez la documentation de Google Test.
+Dans le menu principal, choisissez **Outils**  >  **options**  >  **adaptateur de test pour Google test** pour définir des options supplémentaires. Pour plus d’informations sur ces paramètres, consultez la documentation de Google Test.
 
 ![Paramètres du projet Google Test](media/cpp-gtest-settings.png)
 
 ## <a name="add-include-directives"></a>Ajouter des directives include
 
-Dans votre fichier test *.cpp,* ajoutez toutes les directives nécessaires `#include` pour rendre les types et les fonctions de votre programme visibles au code de test. En règle générale, le programme est un niveau au-dessus dans l’arborescence des dossiers. Si vous tapez `#include "../"`, une fenêtre IntelliSense apparaît et vous permet de sélectionner le chemin complet du fichier d’en-tête.
+Dans votre fichier test *. cpp* , ajoutez toutes les `#include` directives nécessaires pour rendre les types et les fonctions de votre programme visibles au code de test. En règle générale, le programme est un niveau au-dessus dans l’arborescence des dossiers. Si vous tapez `#include "../"`, une fenêtre IntelliSense apparaît et vous permet de sélectionner le chemin complet du fichier d’en-tête.
 
 ![Ajouter des directives #include](media/cpp-gtest-includes.png)
 
 ## <a name="write-and-run-tests"></a>Écrire et exécuter des tests
 
-Vous êtes maintenant prêt à écrire et à exécuter des tests Google. Consultez [l’amorce Google Test](https://github.com/google/googletest/blob/master/googletest/docs/primer.md) pour plus d’informations sur les macros de test. Pour plus d’informations sur la découverte, l’exécution et le regroupement de vos tests avec **l’Explorateur de tests**, consultez [Exécuter des tests unitaires avec l’Explorateur de tests](run-unit-tests-with-test-explorer.md).
+Vous êtes maintenant prêt à écrire et à exécuter des tests Google. Pour plus d’informations sur les macros de test, consultez le [Google test Primer](https://github.com/google/googletest/blob/master/googletest/docs/primer.md) . Pour plus d’informations sur la découverte, l’exécution et le regroupement de vos tests avec **l’Explorateur de tests**, consultez [Exécuter des tests unitaires avec l’Explorateur de tests](run-unit-tests-with-test-explorer.md).
 
 ## <a name="see-also"></a>Voir aussi
 

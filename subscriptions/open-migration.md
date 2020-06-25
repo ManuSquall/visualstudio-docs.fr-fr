@@ -7,12 +7,12 @@ ms.assetid: 6866dfab-c4fa-428e-bb0d-7b202c81f770
 ms.date: 03/09/2020
 ms.topic: conceptual
 description: Découvrez comment les partenaires gèrent les abonnements Visual Studio pour leurs clients.
-ms.openlocfilehash: 7d62025c5e8198a11c013b4ba4adf32a3d09c2dc
-ms.sourcegitcommit: 1b7412f1a5b039b2b294c6001013f399ea7aa5bc
+ms.openlocfilehash: 5afe34b0a28e950225e18761d22854703f466f60
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "82564210"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85289025"
 ---
 # <a name="partners-managing-subscriptions-on-behalf-of-customers"></a>Partenaires gérant des abonnements pour le compte de clients
 Pour gérer les abonnements dans le [portail d’administration des abonnements](https://manage.visualstudio.com)Visual Studio, il existe quelques étapes que les partenaires doivent suivre. 
@@ -30,7 +30,7 @@ Cela s’applique aux partenaires qui ont déjà accès au [portail d’administ
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4vkAG]
 
 Étapes à suivre par les partenaires pour ajouter une nouvelle licence :
-- Connectez-vous à https://manage.visualstudio.com.
+- Connectez-vous à <https://manage.visualstudio.com>.
 - Sélectionnez la liste déroulante accord et faites défiler vers le bas pour accéder à la **nouvelle licence Open**.
 - Dans le panneau contextuel, entrez le numéro d’autorisation, le numéro de licence et l’adresse e-mail du client figurant sur le contrat, cochez la case, puis cliquez sur **Envoyer**.
 
@@ -52,7 +52,7 @@ Cela s’applique aux nouveaux partenaires qui placent les nouvelles commandes d
 
 ## <a name="new-partners-visiting-the-visual-studio-subscriptions-administration-portal-directly"></a>Nouveaux partenaires visitant directement le portail d’administration des abonnements Visual Studio
 Ce scénario s’applique aux nouveaux partenaires qui ont déjà placé de nouvelles commandes de licence ouverte, mais qui n’ont pas été inscrits sur le [VLSC](https://www.microsoft.com/Licensing/servicecenter/default.aspx) et accèdent directement au [portail d’administration des abonnements Visual Studio](https://manage.visualstudio.com).  Procédez comme suit :
-- Visitez https://manage.visualstudio.com.
+- Visitez <https://manage.visualstudio.com>.
 - Vous recevez une erreur indiquant que vous n’êtes pas un utilisateur reconnu.
 - Sélectionnez l’option d’inscription **Partenaires OLP** et entrez le numéro d’autorisation, le numéro de licence et l’adresse e-mail du client utilisée dans la commande, cochez la case, puis cliquez sur **Envoyer**.
 
@@ -72,4 +72,4 @@ Ce scénario s’applique aux nouveaux partenaires qui ont déjà placé de nouv
 
 ## <a name="next-steps"></a>Étapes suivantes
 - Visitez le [portail d’administration des abonnements](https://manage.visualstudio.com) Visual Studio pour gérer les abonnements.
-- Vous avez besoin d’aide ? Contactez le [Support technique sur l’administration et les abonnements Visual Studio](https://visualstudio.microsoft.com/support/support-overview-vs).
+- Besoin d'aide ? Contactez le [Support technique sur l’administration et les abonnements Visual Studio](https://visualstudio.microsoft.com/support/support-overview-vs).

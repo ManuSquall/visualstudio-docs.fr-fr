@@ -1,7 +1,7 @@
 ---
 title: Utiliser un environnement lab pour DevOps
 ms.date: 05/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - lab environment, test lab
 ms.author: mikejo
@@ -9,12 +9,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 499f335edabe77d001a1a2486e7b559abe6c7a8a
-ms.sourcegitcommit: 5d1b2895d3a249c6bea30eb12b0ad7c0f0862d85
+ms.openlocfilehash: 2f4733bd52e44409ec9c2cc9a1e8828864712ceb
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "80880336"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85286828"
 ---
 # <a name="use-a-lab-environment-for-your-devops"></a>Utiliser un environnement lab pour votre DevOps
 
@@ -64,7 +64,7 @@ Si vous utilisez Lab Management conjointement à System Center Virtual Machine M
 
 * **Reproduire rapidement des configurations d’ordinateurs** : vous pouvez stocker des collections de machines virtuelles qui sont configurées pour recréer des environnements de production classiques. Vous pourrez ensuite exécuter chaque série de tests sur une nouvelle copie d’un environnement stocké.
 
-* **Reproduisez les conditions exactes d’un bogue** - Lorsqu’une exécution de test échoue, vous pouvez stocker une copie de l’état de votre environnement de laboratoire et y accéder à partir de vos résultats de construction ou d’un élément de travail.
+* **Reproduire les conditions exactes d’un bogue** : quand une série de tests échoue, vous pouvez stocker une copie de l’état de votre environnement Lab et y accéder à partir des résultats de votre build ou d’un élément de travail.
 
 * **Exécuter simultanément plusieurs copies d’un environnement lab** : il est possible d’exécuter simultanément plusieurs copies d’un environnement lab sans conflits de noms.
 

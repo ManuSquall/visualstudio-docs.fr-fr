@@ -18,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c058a5986f72192a86d0e554d9e0d0b9bdce1b42
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: a62b4df06d1c180a6a6d62b0231dce1136fb8059
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84173510"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85288973"
 ---
 # <a name="itemgroup-element-msbuild"></a>ItemGroup, élément (MSBuild)
 
@@ -32,7 +32,7 @@ Contient un ensemble d’éléments [Item](../msbuild/item-element-msbuild.md) d
 \<Project>
 \<ItemGroup>
 
-## <a name="syntax"></a>Syntaxe
+## <a name="syntax"></a>Syntax
 
 ```xml
 <ItemGroup Condition="'String A' == 'String B'"
@@ -51,7 +51,7 @@ Les sections suivantes décrivent des attributs, des éléments enfants et des �
 |Attribut|Description|
 |---------------|-----------------|
 |`Condition`|Attribut facultatif. Condition à évaluer. Pour plus d’informations, consultez l’article [Conditions (Conditions MSBuild)](../msbuild/msbuild-conditions.md).|
-|`Label`|Attribut facultatif. Identifie le `ItemGroup`.|
+|`Label`|Attribut facultatif. Identifie le `ItemGroup`. |
 
 ### <a name="child-elements"></a>Éléments enfants
 
@@ -90,6 +90,8 @@ L’exemple de code suivant illustre les collections d’éléments définis par
 Dans un fichier projet simple, vous utilisez normalement un seul `ItemGroup` élément, mais vous pouvez également utiliser plusieurs `ItemGroup` éléments. Quand plusieurs `ItemGroup` éléments sont utilisés, les éléments sont combinés en un seul `ItemGroup` . Par exemple, certains éléments peuvent être inclus `ItemGroup` dans un élément distinct qui est défini dans un fichier importé.
 
 ItemGroup enfants peut avoir des conditions appliquées à l’aide de l' `Condition` attribut. Dans ce cas, les éléments sont ajoutés uniquement à la liste d’éléments si la condition est satisfaite. Voir les [Conditions MSBuild](msbuild-conditions.md)
+
+L' `Label` attribut est utilisé dans certains systèmes de génération comme un moyen de contrôler les comportements de génération. Vous pouvez l’utiliser uniquement dans les déclarations, comme un moyen de créer des scripts MSBuild plus compréhensibles, ou en tant que paramètre de contrôle pour affecter des actions de génération.
 
 ## <a name="see-also"></a>Voir aussi
 

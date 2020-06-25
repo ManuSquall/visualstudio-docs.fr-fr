@@ -1,7 +1,7 @@
 ---
 title: Créer un plug-in au niveau de la requête pour les tests de performances web
 ms.date: 10/19/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - request-level plug-in, creating
 - Web performance tests, requests
@@ -9,16 +9,16 @@ ms.assetid: d0b5b23c-7e94-4637-be6c-2620a5442d46
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: b6e57f92a3f45983321a866f3524974ea99dba82
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 03de870da2cd75c8a254010db682903f314cc10d
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75589147"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85287972"
 ---
 # <a name="how-to-create-a-request-level-plug-in"></a>Guide pratique pour créer un plug-in de niveau requête
 
-*Les demandes* sont les déclarations déclaratives qui constituent des tests de performance Web. Les plug-ins de tests de performances de site Web vous permettent d'isoler et de réutiliser du code en dehors des principales instructions déclaratives de votre test de performances web. Vous pouvez créer des plug-ins et les ajouter à une requête individuelle aussi bien qu'au test de performances web qui la contient. Un *plug-in de requête* personnalisé permet d’appeler du code quand une requête particulière est exécutée dans un test de performances web.
+Les *requêtes* sont les instructions déclaratives qui constituent des tests de performances Web. Les plug-ins de tests de performances de site Web vous permettent d'isoler et de réutiliser du code en dehors des principales instructions déclaratives de votre test de performances web. Vous pouvez créer des plug-ins et les ajouter à une requête individuelle aussi bien qu'au test de performances web qui la contient. Un *plug-in de requête* personnalisé permet d’appeler du code quand une requête particulière est exécutée dans un test de performances web.
 
 [!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
@@ -30,23 +30,23 @@ En outre, vous pouvez utiliser des plug-ins de requête de test de performances 
 
 ## <a name="to-create-a-request-level-plug-in"></a>Pour créer un plug-in de niveau demande
 
-1. Dans **Solution Explorer**, cliquez à droite sur la solution, sélectionnez **Ajouter** puis choisissez new **Project**.
+1. Dans **Explorateur de solutions**, cliquez avec le bouton droit sur la solution, sélectionnez **Ajouter** , puis choisissez **nouveau projet**.
 
 2. Créez un projet de **Bibliothèque de classes**.
 
-3. Dans **Solution Explorer**, cliquez à droite sur le dossier **Références** dans la nouvelle bibliothèque de classe et **sélectionnez Ajouter référence**.
+3. Dans **Explorateur de solutions**, cliquez avec le bouton droit sur le dossier **références** dans la nouvelle bibliothèque de classes, puis sélectionnez **Ajouter une référence**.
 
      La boîte de dialogue **Ajouter une référence** s’affiche.
 
 4. Choisissez l’onglet **.NET**, faites défiler la liste vers le bas, sélectionnez **Microsoft.VisualStudio.QualityTools.WebTestFramework**, puis cliquez sur **OK**
 
-     La référence à **Microsoft.VisualStudio.QualityTools.WebTestFramework** est ajoutée au dossier **de référence** dans **Solution Explorer**.
+     La référence à **Microsoft. VisualStudio. QualityTools. WebTestFramework** est ajoutée au dossier de **référence** dans **Explorateur de solutions**.
 
-5. Dans **Solution Explorer**, cliquez à droite sur le nœud supérieur du projet de test de performance web et de charge qui contient le test de chargement auquel vous souhaitez ajouter le plug-in de test de test de performance Web. Sélectionnez **Ajouter une référence**.
+5. Dans **Explorateur de solutions**, cliquez avec le bouton droit sur le nœud supérieur du projet de test de performances de site Web et de charge qui contient le test de charge auquel vous souhaitez ajouter le plug-in de test de test de performances de site Web. Sélectionnez **Ajouter une référence**.
 
-     La **boîte de dialogue Add Reference est affichée**.
+     La **boîte de dialogue Ajouter une référence s’affiche**.
 
-6. Choisissez l’onglet **Projets,** sélectionnez le **projet de bibliothèque de classe** et choisissez ensuite **OK** .
+6. Choisissez l’onglet **projets** , sélectionnez le **projet de bibliothèque de classes** , puis choisissez **OK** .
 
 7. Dans **l’éditeur de code**, écrivez le code de votre plug-in. Commencez par créer une classe publique qui dérive de <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestRequestPlugin>.
 
@@ -74,14 +74,14 @@ En outre, vous pouvez utiliser des plug-ins de requête de test de performances 
     > [!WARNING]
     > Vous risquez de rencontrer l’erreur suivante si vous exécutez un test de performances web ou un test de charge qui utilise votre plug-in :
     >
-    > **Demande a échoué: Exception dans \<plug-in> événement: Impossible\<de charger le fichier ou l’assemblage 'Plug-in name'.dll fichier>, Version n.n.n.n\<>, Culture neutre, PublicKeyToken-null' ou l’une de ses dépendances. Le système ne peut pas trouver le fichier spécifié.**
+    > **Échec de la requête : exception dans l' \<plug-in> événement : impossible de charger le fichier ou l’assembly' \<"Plug-in name".dll file> , version = \<n.n.n.n> , culture = neutral, PublicKeyToken = null’ou l’une de ses dépendances. Le système ne peut pas trouver le fichier spécifié.**
     >
     > Cela se produit si vous effectuez des modifications du code dans l’un de vos plug-ins et si vous créez une autre version de la DLL **(Version=0.0.0.0)**. Toutefois, le plug-in fait toujours référence à la version du plug-in d’origine. Pour résoudre ce problème, procédez comme suit :
     >
     > 1. Dans le projet de test de performances web et de charge, un message d'avertissement s'affiche dans les références. Supprimez et rajoutez la référence à la DLL de votre plug-in.
     > 2. Supprimez le plug-in de votre test ou de l'emplacement approprié, puis rajoutez-le.
 
-## <a name="example"></a> Exemple
+## <a name="example"></a>Exemple
 
 Vous pouvez utiliser le code suivant pour créer un plug-in de test de performances web personnalisé qui affiche deux boîtes de dialogue. La première boîte de dialogue affiche l’URL associée à la requête à laquelle vous joignez le complément de requête. La deuxième boîte de dialogue affiche le nom de l'ordinateur de l'agent.
 

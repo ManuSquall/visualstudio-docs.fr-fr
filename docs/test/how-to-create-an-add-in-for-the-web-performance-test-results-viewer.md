@@ -1,7 +1,7 @@
 ---
 title: Créer un complément pour l’Afficheur de résultats de test de performances Web
 ms.date: 10/20/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - Web performance tests, Visual Studio Add-in
 - Visual Studio Add-in, Web performance tests
@@ -9,14 +9,14 @@ ms.assetid: 1118c604-4b1b-4b21-a04e-45995b676fa8
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: a6da2686a5a68325101e7161a51a8144e7ef42b6
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 736c43a83a956c02b760b4909a427a82c6fa9e4c
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75589082"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85287829"
 ---
-# <a name="how-to-create-an-add-in-for-the-web-performance-test-results-viewer"></a>Comment : Créer un add-in pour le Visual Performance Test Results Viewer
+# <a name="how-to-create-an-add-in-for-the-web-performance-test-results-viewer"></a>Comment : créer un complément pour la visionneuse de Résultats des tests performances de site Web
 
 Pour étendre l’interface utilisateur de **l’Afficheur de résultats de test de performances web**, utilisez les espaces de noms suivants :
 
@@ -24,7 +24,7 @@ Pour étendre l’interface utilisateur de **l’Afficheur de résultats de test
 
 - <xref:Microsoft.VisualStudio.TestTools.WebTesting>
 
-En outre, vous devez ajouter une référence à LoadTestPackage DLL, qui est situé dans le *dossier %ProgramFiles (x86)% -Microsoft Visual Studio\\\<>-Enterprise-Common7-IDE-PrivateAssemblies* dossier.
+En outre, vous devez ajouter une référence à la DLL LoadTestPackage, qui se trouve dans le dossier *% ProgramFiles (x86)% \ Microsoft Visual Studio \\ \<version> \Enterprise\Common7\IDE\PrivateAssemblies* .
 
 Pour étendre l’interface utilisateur de **l’Afficheur de résultats de test de performances web**, vous devez créer un complément Visual Studio et un contrôle utilisateur. Les procédures suivantes expliquent comment les créer et comment implémenter les classes nécessaires pour étendre l’interface utilisateur de **l’Afficheur de résultats de test de performances web**.
 
@@ -37,7 +37,7 @@ Pour étendre l’interface utilisateur de **l’Afficheur de résultats de test
 Créez ou ouvrez une solution qui ne soit pas en production et dans laquelle vous puissiez effectuer des tests. Elle doit contenir une application web ASP.NET et un projet de test de performances web et de charge comportant un ou plusieurs tests de performances web pour l’application web ASP.NET.
 
 > [!NOTE]
-> Vous pouvez créer une application web ASP.NET et un projet de test de performance web et de charge qui contient des tests de performance Web en suivant les procédures dans [Comment : Créer un test de service Web](../test/how-to-create-a-web-service-test.md) et générer et exécuter un test de performance Web [codé](../test/generate-and-run-a-coded-web-performance-test.md).
+> Vous pouvez créer une application Web ASP.NET et un projet de test de performances Web et de charge qui contient des tests de performances de site Web en suivant les procédures décrites dans [Comment : créer un test de service Web](../test/how-to-create-a-web-service-test.md) et [générer et exécuter un test de performances Web codé](../test/generate-and-run-a-coded-web-performance-test.md).
 
 ## <a name="create-a-visual-studio-add-in"></a>Créer un complément Visual Studio
 
@@ -49,13 +49,13 @@ Vous utiliserez le **Gestionnaire de compléments** à la fin de cet article.
 
 ### <a name="to-create-an-add-in-by-using-the-add-in-wizard"></a>Pour créer un complément en utilisant l'Assistant Complément
 
-1. Dans **Solution Explorer**, cliquez à droite sur la solution, choisissez **Ajouter,** puis sélectionnez **New Project**.
+1. Dans **Explorateur de solutions**, cliquez avec le bouton droit sur la solution, choisissez **Ajouter**, puis sélectionnez **nouveau projet**.
 
 2. Créez un projet **Complément Visual Studio**.
 
     **L’Assistant Complément** Visual Studio démarre.
 
-3. Choisissez **La prochaine**.
+3. Choisissez **Suivant**.
 
 4. Dans la page **Sélectionner un langage de programmation**, sélectionnez le langage de programmation que vous souhaitez utiliser pour écrire le complément.
 
@@ -64,13 +64,13 @@ Vous utiliserez le **Gestionnaire de compléments** à la fin de cet article.
 
 5. Dans la page **Sélectionner une application hôte**, sélectionnez **Visual Studio** et désactivez **Visual Studio Macros**.
 
-6. Choisissez **La prochaine**.
+6. Choisissez **Suivant**.
 
 7. Entrez le nom et la description de votre complément dans la page **Entrer un nom et une description**.
 
      Une fois le complément créé, ses nom et description s’affichent dans la liste **Compléments disponibles** dans le **Gestionnaire de compléments**. Indiquez suffisamment d'informations dans la description de votre complément afin que les utilisateurs puissent connaître l'utilité de votre complément, son fonctionnement, etc.
 
-8. Choisissez **La prochaine**.
+8. Choisissez **Suivant**.
 
 9. Dans la page **Choisir les options du complément**, sélectionnez **Je souhaite que mon complément soit chargé en même temps que l’application hôte**.
 
@@ -80,7 +80,7 @@ Vous utiliserez le **Gestionnaire de compléments** à la fin de cet article.
 
      Les informations que vous pouvez ajouter dans la boîte de dialogue **À propos de** de Visual Studio incluent notamment le numéro de version, des informations relatives à la prise en charge, des données relatives à la licence, etc.
 
-12. Choisissez **La prochaine**.
+12. Choisissez **Suivant**.
 
 13. Vous pouvez vérifier les options sélectionnées dans la page **Résumé**. Si vous êtes satisfait, choisissez **Terminer** pour créer le complément. Pour effectuer une modification, choisissez le bouton **Précédent**.
 
@@ -90,7 +90,7 @@ Vous utiliserez le **Gestionnaire de compléments** à la fin de cet article.
 
     Après avoir créé un complément, vous devez l’inscrire auprès de Visual Studio avant de l’activer dans le **Gestionnaire de compléments**. Pour cela, vous devez utiliser un fichier XML avec l’extension de fichier *.addin*.
 
-    Le fichier *.addin* décrit les informations dont Visual Studio a besoin pour afficher **l’add-in In Manager**. Lorsque Visual Studio démarre, il semble dans l’emplacement du fichier *.addin* pour tous les fichiers *disponibles .addin.* Si des fichiers sont trouvés, Visual Studio lit le fichier XML et transmet au **Gestionnaire de compléments** les informations dont il a besoin pour démarrer le complément quand un utilisateur clique dessus.
+    Le fichier *. AddIn* décrit les informations requises par Visual Studio pour afficher le complément dans le **Gestionnaire de compléments**. Au démarrage de Visual Studio, il recherche les fichiers *. AddIn* disponibles dans l’emplacement du fichier. *AddIn* . Si des fichiers sont trouvés, Visual Studio lit le fichier XML et transmet au **Gestionnaire de compléments** les informations dont il a besoin pour démarrer le complément quand un utilisateur clique dessus.
 
     Le fichier *.addin* est créé automatiquement lors de la création d’un complément à l’aide de **l’Assistant Complément**.
 
@@ -109,7 +109,7 @@ Le complément Visual Studio créé dans les procédures précédentes référen
 
 ### <a name="to-create-a-control-to-be-used-in-the-web-test-results-viewer"></a>Pour créer un contrôle à utiliser dans l'Afficheur des résultats de test Web
 
-1. Dans **Solution Explorer**, cliquez à droite sur la solution, choisissez **Ajouter,** puis sélectionnez **New Project**.
+1. Dans **Explorateur de solutions**, cliquez avec le bouton droit sur la solution, choisissez **Ajouter**, puis sélectionnez **nouveau projet**.
 
 2. Créez un projet **Bibliothèque de contrôles Windows Forms**.
 
@@ -133,7 +133,7 @@ Le complément Visual Studio créé dans les procédures précédentes référen
 
     7. Choisissez **Fermer**.
 
-5. Dans la fenêtre **Propriétés,** modifier la <xref:System.Windows.Forms.DataGridView> propriété **(Nom)** du **résultatControlDataGridView**.
+5. Dans la fenêtre **Propriétés** , affectez à la propriété **(Name)** de la <xref:System.Windows.Forms.DataGridView> valeur **par resultControlDataGridView**.
 
 6. Cliquez avec le bouton droit sur l’aire de conception et sélectionnez **Afficher le code**.
 
@@ -158,7 +158,7 @@ Le complément Visual Studio créé dans les procédures précédentes référen
 
 ## <a name="add-code-to-the-webperftestresultsvieweraddin"></a>Ajouter du code au projet WebPerfTestResultsViewerAddin
 
-1. Dans **Solution Explorer**, cliquez à droite sur le nœud **Références** dans le projet WebPerfTestResultsViewerAddin et sélectionnez Add **Reference**.
+1. Dans **Explorateur de solutions**, cliquez avec le bouton droit sur le nœud **références** dans le projet WebPerfTestResultsViewerAddin, puis sélectionnez **Ajouter une référence**.
 
 2. Dans la boîte de dialogue **Ajouter une référence**, choisissez l’onglet **.NET**.
 
@@ -170,7 +170,7 @@ Le complément Visual Studio créé dans les procédures précédentes référen
 
 6. Dans la boîte de dialogue **Ajouter une référence**, choisissez l’onglet **Parcourir**.
 
-7. Choisissez le drop-down pour Regarder et naviguer **à** *%ProgramFiles (x86)%-Microsoft Visual Studio-2017-Enterprise-Common7-IDE-PrivateAssemblies* et sélectionnez le fichier *Microsoft.VisualStudio.QualityTools.LoadTestPackage.dll.*
+7. Choisissez la liste déroulante pour **regarder dans** et accédez à *% ProgramFiles (x86)% \ Microsoft Visual Studio\2017\Enterprise\Common7\IDE\PrivateAssemblies* et sélectionnez le fichier *Microsoft.VisualStudio.QualityTools.LoadTestPackage.dll* .
 
 8. Choisissez **OK**.
 
@@ -180,7 +180,7 @@ Le complément Visual Studio créé dans les procédures précédentes référen
 
 11. Sous **Nom du projet**, sélectionnez le projet **WebPerfTestResultsViewerControl**, puis choisissez **OK**.
 
-12. Si le fichier *Connect.cs* n’est pas encore ouvert, dans **Solution Explorer**, cliquez à droite sur le fichier **Connect.cs** dans le projet WebPerfTestResultsViewerAddin et sélectionnez Code **De vue**.
+12. Si le fichier *Connect.cs* n’est pas encore ouvert, dans **Explorateur de solutions**, cliquez avec le bouton droit sur le fichier **Connect.cs** dans le projet WebPerfTestResultsViewerAddin, puis sélectionnez **afficher le code**.
 
 13. Dans le fichier *Connect.cs*, ajoutez les instructions Using suivantes :
 
@@ -204,7 +204,7 @@ Le complément Visual Studio créé dans les procédures précédentes référen
     private Dictionary<Guid, List<UserControl>> m_controls = new Dictionary<Guid, List<UserControl>>();        private List<string> temporaryFilePaths = new List<string>();
     ```
 
-15. Le *fichier Connect.cs* instantanés d’une classe <xref:Extensibility.IDTExtensibility2> nommée Connect de la classe et comprend également quelques méthodes pour la mise en œuvre de l’add-in Visual Studio. La méthode OnConnection est l'une de ces méthodes. Elle reçoit une notification lorsque le complément est chargé. Dans la méthode OnConnection, vous utiliserez la classe LoadTestPackageExt pour créer votre package d’extensibilité pour **l’Afficheur de résultats de test de performances web**. Ajoutez le code suivant à la méthode OnConnection :
+15. Le fichier *Connect.cs* instancie une classe nommée Connect à partir de la <xref:Extensibility.IDTExtensibility2> classe et propose également des méthodes pour implémenter le complément Visual Studio. La méthode OnConnection est l'une de ces méthodes. Elle reçoit une notification lorsque le complément est chargé. Dans la méthode OnConnection, vous utiliserez la classe LoadTestPackageExt pour créer votre package d’extensibilité pour **l’Afficheur de résultats de test de performances web**. Ajoutez le code suivant à la méthode OnConnection :
 
     ```csharp
     public void OnConnection(object application, ext_ConnectMode connectMode, object addInInst, ref Array custom)
@@ -254,13 +254,13 @@ Le complément Visual Studio créé dans les procédures précédentes référen
 
 ## <a name="add-code-to-the-webperftestresultsviewercontrol"></a>Ajouter du code au WebPerfTestResultsViewerControl
 
-1. Dans **Solution Explorer**, cliquez à droite sur le nœud du projet WebPerfTestResultsViewerControl et sélectionnez **propriétés**.
+1. Dans **Explorateur de solutions**, cliquez avec le bouton droit sur le nœud de projet WebPerfTestResultsViewerControl et sélectionnez **Propriétés**.
 
-2. Sélectionnez l’onglet **Application**, choisissez la liste déroulante **Framework cible**, puis sélectionnez **.NET Framework 4** (ou ultérieur). Fermez la fenêtre **Propriétés.**
+2. Sélectionnez l’onglet **Application**, choisissez la liste déroulante **Framework cible**, puis sélectionnez **.NET Framework 4** (ou ultérieur). Fermez la fenêtre **Propriétés** .
 
    Cette opération est nécessaire pour prendre en charge les références DLL requises afin d’étendre **l’Afficheur de résultats de test de performances web**.
 
-3. Dans **Solution Explorer**, dans le projet WebPerfTestResultsViewerControl, cliquez à droite sur le nœud **Références** et **sélectionnez Ajouter référence**.
+3. Dans **Explorateur de solutions**, dans le projet WebPerfTestResultsViewerControl, cliquez avec le bouton droit sur le nœud **références** et sélectionnez **Ajouter une référence**.
 
 4. Dans la boîte de dialogue **Ajouter une référence**, cliquez sur l’onglet **.NET**.
 
@@ -324,15 +324,15 @@ Le complément Visual Studio créé dans les procédures précédentes référen
 
 Pour améliorer la sécurité en empêchant les compléments nuisibles de s’activer automatiquement, Visual Studio fournit différents paramètres dans une page **Options Outils** nommée **Sécurité des compléments/macros**.
 
-En outre, cette page d’options vous permet de spécifier les dossiers dans lesquels Visual Studio recherche *. Fichiers* d’enregistrement AddIn. Cela améliore la sécurité en vous permettant de limiter les emplacements dans lesquels les fichiers d’inscription *.AddIn* peuvent être lus. Cela permet d’éviter que des fichiers *.AddIn* malveillants ne soient involontairement utilisés.
+En outre, cette page d’options vous permet de spécifier les dossiers dans lesquels Visual Studio recherche *. *Fichiers d’enregistrement de complément. Cela améliore la sécurité en vous permettant de limiter les emplacements dans lesquels les fichiers d’inscription *.AddIn* peuvent être lus. Cela permet d’éviter que des fichiers *.AddIn* malveillants ne soient involontairement utilisés.
 
 **Paramètres de sécurité des compléments**
 
 Les paramètres de la page d’options pour la sécurité des compléments sont les suivants :
 
-- **Laisser les composants add-in se charger.** Option sélectionnée par défaut. Quand ce paramètre est activé, le chargement des compléments est autorisé dans Visual Studio. Quand il est désactivé, le chargement des compléments est interdit dans Visual Studio.
+- **Autoriser le chargement des composants de compléments.** Option sélectionnée par défaut. Quand ce paramètre est activé, le chargement des compléments est autorisé dans Visual Studio. Quand il est désactivé, le chargement des compléments est interdit dans Visual Studio.
 
-- **Laissez les composants Add-in à charger à partir d’une URL.** Cette option est désélectionnée par défaut. Lorsqu’elle est sélectionnée, le chargement des compléments à partir de sites web externes est autorisé. Quand il est désactivé, le chargement des compléments distants est interdit dans Visual Studio. Si, pour une raison ou une autre, un complément ne peut pas se charger, il ne peut pas l'être non plus depuis le Web. Ce paramètre contrôle uniquement le chargement de la DLL complémentaire. Les fichiers d’inscription *.Addin* doivent toujours se trouver sur le système local.
+- **Autoriser le chargement des composants de compléments à partir d’une URL.** Cette option est désélectionnée par défaut. Lorsqu’elle est sélectionnée, le chargement des compléments à partir de sites web externes est autorisé. Quand il est désactivé, le chargement des compléments distants est interdit dans Visual Studio. Si, pour une raison ou une autre, un complément ne peut pas se charger, il ne peut pas l'être non plus depuis le Web. Ce paramètre contrôle uniquement le chargement de la DLL complémentaire. Les fichiers d’inscription *.Addin* doivent toujours se trouver sur le système local.
 
 ## <a name="see-also"></a>Voir aussi
 

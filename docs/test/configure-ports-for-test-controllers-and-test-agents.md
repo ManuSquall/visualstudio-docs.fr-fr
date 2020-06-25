@@ -1,7 +1,7 @@
 ---
 title: Configurer les ports des contrôleurs de test et des agents de test
 ms.date: 10/19/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - firewalls, configuring for test agents
 - firewalls, configuring for test controllers
@@ -13,12 +13,12 @@ ms.assetid: 211edbd7-9fe4-4251-ba85-8bec4363261b
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 2228f5ac4dce4743fa6dafbb321f0106b5d6cc11
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 7889feffc41d6bb64b85b4ea95a17a4a986d22df
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75595941"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85288817"
 ---
 # <a name="configure-ports-for-test-controllers-and-test-agents"></a>Configurer les ports des contrôleurs de test et des agents de test
 
@@ -49,7 +49,7 @@ Le port par défaut utilisé par le contrôleur de test est 6901 et le port par
 
    Vous pouvez obtenir des notifications de pare-feu lorsque le contrôleur de test essaie de se connecter au client pour la première fois.
 
-   Sur Windows Server 2008, les notifications pare-feu sont désactivées par défaut et vous devez ajouter manuellement des exceptions pare-feu pour les programmes clients (*devenv.exe*, *mstest.exe*, *mlm.exe*) afin qu’il puisse accepter les connexions entrantes.
+   Sur Windows Server 2008, les notifications de pare-feu sont désactivées par défaut et vous devez ajouter manuellement des exceptions de pare-feu pour les programmes clients (*devenv.exe*, *mstest.exe*, *mlm.exe*) afin qu’il puisse accepter les connexions entrantes.
 
 ## <a name="outgoing-connections"></a>Connexions sortantes
 
@@ -65,7 +65,7 @@ Des ports TCP aléatoires sont utilisés pour toutes les connexions sortantes.
 
 Suivez les instructions ci-après pour configurer les ports d'un contrôleur de test et des agents de test.
 
-- **Service de contrôleur** Modifier la valeur du port en éditant le *fichier %ProgramFiles(x86)%-Microsoft Visual Studio-2017-Enterprise-Common7-IDE-QTCcontroller.exe.config* :
+- **Service de contrôleur** Modifiez la valeur du port en modifiant le fichier *% ProgramFiles (x86)% \ Microsoft Visual Studio\2017\Enterprise\Common7\IDE\QTCcontroller.exe.config* :
 
     ```xml
     <appSettings>
@@ -73,7 +73,7 @@ Suivez les instructions ci-après pour configurer les ports d'un contrôleur de 
     </appSettings>
     ```
 
-- **Service d’agent** Modifier le port en éditant le *fichier %ProgramFiles(x86)%-Microsoft Visual Studio-2017-Enterprise-Common7-IDE-QTAgentService.exe.config* :
+- **Service agent** Modifiez le port en modifiant le fichier *% ProgramFiles (x86)% \ Microsoft Visual Studio\2017\Enterprise\Common7\IDE\QTAgentService.exe.config* :
 
     ```xml
     <appSettings>
@@ -81,7 +81,7 @@ Suivez les instructions ci-après pour configurer les ports d'un contrôleur de 
     </appSettings>
     ```
 
-- **Client** Utilisez l’éditeur du registre pour ajouter les valeurs suivantes du registre **(DWORD).** Le client utilisera l'un des ports de la plage spécifiée pour la réception des données envoyées par le contrôleur de test :
+- **Client** Utilisez l’éditeur du Registre pour ajouter les valeurs de Registre suivantes (**DWORD**). Le client utilisera l'un des ports de la plage spécifiée pour la réception des données envoyées par le contrôleur de test :
 
      **HKEY_LOCAL_MACHINE\SOFTWARE\MICROSOFT\VisualStudio\12.0\EnterpriseTools\QualityTools\ListenPortRange\PortRangeStart**
 

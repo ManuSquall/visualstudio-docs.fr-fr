@@ -1,6 +1,6 @@
 ---
 title: 'Comment : installer un visualiseur | Microsoft Docs'
-ms.date: 11/04/2016
+ms.date: 06/10/2020
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c79fd5522447378b879443eb8dccabfe7081af4f
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: 99d8c0b0181286465ffe8321470d035961803a64
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84183624"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85286386"
 ---
 # <a name="how-to-install-a-visualizer"></a>Comment : installer un visualiseur
 Après avoir créé un visualiseur, vous devez l'installer de sorte qu'il soit disponible dans [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. L'installation d'un visualiseur est un processus simple.
@@ -53,6 +53,10 @@ Après avoir créé un visualiseur, vous devez l'installer de sorte qu'il soit d
     - `net2.0`pour les débogueurs exécutant le `.NET Framework` Runtime.
     - `netstandard2.0`pour les débogueurs utilisant un Runtime qui prend en charge `netstandard 2.0` ( `.NET Framework v4.6.1+` ou `.NET Core 2.0+` ).
     - `netcoreapp`pour les débogueurs exécutant le `.NET Core` Runtime. (prend en charge `.NET Core 2.0+` )
+
+   Une DLL côté programme débogué est nécessaire si vous souhaitez créer un visualiseur autonome. Cette DLL contient le code de l’objet de données, qui peut implémenter des méthodes de <xref:Microsoft.VisualStudio.DebuggerVisualizers.VisualizerObjectSource> .
+
+   Si vous multiciblez le code côté débogué, la DLL côté programme débogué doit être placée dans le dossier pour les TFM avec un minimum pris en charge.
 
 4. Redémarrez la session de débogage.
 

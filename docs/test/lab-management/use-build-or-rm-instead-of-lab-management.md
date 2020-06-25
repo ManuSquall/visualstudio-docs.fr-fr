@@ -1,7 +1,7 @@
 ---
 title: Utiliser Azure Pipelines pour les tests automatisés
 ms.date: 10/19/2018
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - automated testing, lab management, test lab
 ms.author: mikejo
@@ -9,19 +9,19 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: ca762c103ab5b3d3e94b3117dd9570787562b002
-ms.sourcegitcommit: 5d1b2895d3a249c6bea30eb12b0ad7c0f0862d85
+ms.openlocfilehash: 37455c05a010681eac343287abf25aad642328c7
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "80880128"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85286841"
 ---
 # <a name="use-azure-test-plans-instead-of-lab-management-for-automated-testing"></a>Utiliser Azure Test Plans au lieu de Lab Management pour les tests automatisés
 
 Si vous utilisez Microsoft Test Manager et Lab Management pour les tests automatisés ou pour l’automatisation du cycle générer-déployer-tester, cette rubrique vous explique comment atteindre les mêmes objectifs en utilisant les fonctionnalités de [build et de mise en production](/azure/devops/pipelines/index?view=vsts) d’Azure Pipelines et Team Foundation Server (TFS).
 
 > [!NOTE]
-> Microsoft Test Manager est déprécié dans Visual Studio 2017 et supprimé dans Visual Studio 2019.
+> Microsoft Test Manager est déconseillé dans Visual Studio 2017 et supprimé dans Visual Studio 2019.
 
 ## <a name="build-deploy-test-automation"></a>Automatisation du cycle générer-déployer-tester
 
