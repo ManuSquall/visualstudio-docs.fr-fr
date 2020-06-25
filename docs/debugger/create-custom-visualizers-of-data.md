@@ -19,14 +19,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 70c16b603f1c38eeb3e71718937e7c669ae8ebc9
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: 0e184507415810f64060b0d2b2e92a825d642d2e
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84184547"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85280874"
 ---
 # <a name="create-custom-data-visualizers"></a>Créer des visualiseurs de données personnalisés
+
  Un *visualiseur* fait partie de l' [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] interface utilisateur du débogueur qui affiche une variable ou un objet de manière appropriée à son type de données. Par exemple, un visualiseur HTML interprète une chaîne HTML et affiche le résultat tel qu’il apparaîtrait dans une fenêtre de navigateur. Un visualiseur bitmap interprète une structure bitmap et affiche le graphique qu’il représente. Certains visualiseurs vous permettent de modifier et d’afficher les données.
 
  Le débogueur [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] comprend six visualiseurs standard. Les visualiseurs de texte, HTML, XML et JSON fonctionnent sur les objets String. Le visualiseur de l’arborescence WPF affiche les propriétés d’une arborescence d’éléments visuels d’objets WPF. Le visualiseur de DataSet fonctionne pour les objets DataSet, DataView et DataTable.
@@ -74,11 +75,23 @@ Pour créer l’interface utilisateur du visualiseur côté débogueur, vous cr�
 
 ### <a name="to-create-the-visualizer-object-source-for-the-debuggee-side"></a>Pour créer la source de l’objet du visualiseur pour le côté débogué
 
-Vous spécifiez le type à visualiser (la source de l’objet côté débogué) à l’aide <xref:System.Diagnostics.DebuggerVisualizerAttribute> de dans le code côté débogueur.
+Dans le code côté débogueur, modifiez le <xref:System.Diagnostics.DebuggerVisualizerAttribute> , en lui donnant le type à visualiser (la source de l’objet côté débogué) ( <xref:Microsoft.VisualStudio.DebuggerVisualizers.VisualizerObjectSource> ). La `Target` propriété définit la source de l’objet. Si vous omettez la source de l’objet, le visualiseur utilise une source d’objet par défaut.
 
-1. Dans le code côté débogueur, modifiez le <xref:System.Diagnostics.DebuggerVisualizerAttribute> , en lui donnant la source de l’objet ( <xref:Microsoft.VisualStudio.DebuggerVisualizers.VisualizerObjectSource> ). La `Target` propriété définit la source de l’objet. Si vous omettez la source de l’objet, le visualiseur utilise une source d’objet par défaut.
+::: moniker range=">=vs-2019"
+Le code côté programme débogué contient la source de l’objet qui est visualisée. L’objet de données peut remplacer les méthodes de <xref:Microsoft.VisualStudio.DebuggerVisualizers.VisualizerObjectSource> . Une DLL côté programme débogué est nécessaire si vous souhaitez créer un visualiseur autonome.
+::: moniker-end
 
-1. Pour permettre au visualiseur de modifier et d’afficher des objets de données, substituez les `TransferData` `CreateReplacementObject` méthodes ou de <xref:Microsoft.VisualStudio.DebuggerVisualizers.VisualizerObjectSource> .
+Dans le code côté débogué :
+
+- Pour permettre au visualiseur de modifier les objets de données, la source de l’objet doit hériter de <xref:Microsoft.VisualStudio.DebuggerVisualizers.VisualizerObjectSource> et substituer les `TransferData` `CreateReplacementObject` méthodes ou.
+
+- Si vous devez prendre en charge le MULTICIBLAGE dans votre visualiseur, vous pouvez utiliser les monikers de la version cible du .NET Framework (TFM) suivants dans le fichier projet côté débogué.
+
+   ```xml
+   <TargetFrameworks>net20;netstandard2.0;netcoreapp2.0</TargetFrameworks>
+   ```
+
+   Il s’agit du seul TFM pris en charge.
 
 ## <a name="see-also"></a>Voir aussi
 

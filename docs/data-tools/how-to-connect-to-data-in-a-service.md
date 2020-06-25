@@ -1,7 +1,7 @@
 ---
 title: 'Comment : se connecter à des données dans un service'
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - data [Visual Studio], connecting to web services
 - data sources, creating from web services
@@ -16,12 +16,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 01ad796faa8c722ba088143da814305844136aa3
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 0b49840a2190abfd223edf5643b8d70da1a59d6b
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75586521"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85282226"
 ---
 # <a name="how-to-connect-to-data-in-a-service"></a>Guide pratique pour se connecter à des données dans un service
 
@@ -49,15 +49,15 @@ Une fois l’Assistant terminé, une référence de service est ajoutée à votr
 
 5. Cliquez sur **OK** pour ajouter une référence de service à votre projet.
 
-6. Cliquez sur **Finish**.
+6. Cliquez sur **Terminer**.
 
      La source de données est ajoutée à la fenêtre **Sources de données**.
 
-## <a name="next-steps"></a>Étapes suivantes :
+## <a name="next-steps"></a>Étapes suivantes
 
 Pour ajouter des fonctionnalités à votre application, sélectionnez un élément dans la fenêtre **sources de données** et faites-le glisser sur un formulaire pour créer des contrôles liés. Pour plus d’informations, consultez [lier des contrôles à des données dans Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md).
 
 ## <a name="see-also"></a>Voir aussi
 
 - [Lier des contrôles WPF à un service de données WCF](../data-tools/bind-wpf-controls-to-a-wcf-data-service.md)
-- [Services Windows Communication Foundation et services de données WCF dans Visual Studio](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md)
+- [Services de Windows Communication Foundation et services de données WCF dans Visual Studio](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md)

@@ -11,12 +11,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 54a80ef606a553846ef5be7a86ed4183f3ffde57
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: fc87c4690978d33f6fdc8e0f5bc937cb16e6e915
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "62958235"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85279807"
 ---
 # <a name="step-3-serve-static-files-add-pages-and-use-template-inheritance"></a>Étape 3 : Prendre en charge les fichiers statiques, ajouter des pages et utiliser l’héritage du modèle
 
@@ -63,9 +63,9 @@ STATIC_ROOT = posixpath.join(*(BASE_DIR.split(os.path.sep) + ['static']))
 
 Vous pouvez organiser les fichiers à l’aide d’une structure de dossiers dans le dossier *static* de votre choix, puis utiliser les chemins relatifs au sein de ce dossier pour faire référence aux fichiers. Pour illustrer ce processus, les étapes suivantes permettent d’ajouter un fichier CSS à l’application, puis d’utiliser cette feuille de style dans le modèle *index.html* :
 
-1. Dans **Solution Explorer**, cliquez à droite sur le dossier **HelloDjangoApp** dans le projet Visual Studio, **sélectionnez Ajouter** > **un nouveau dossier**et nommez le dossier `static`.
+1. Dans **Explorateur de solutions**, cliquez avec le bouton droit sur le dossier **HelloDjangoApp** dans le projet Visual Studio, sélectionnez **Ajouter**  >  **un nouveau dossier**, puis nommez le dossier `static` .
 
-1. Cliquez avec le bouton droit sur le dossier **static** et sélectionnez **Ajouter** > **Nouvel élément**. Dans le dialogue qui apparaît, sélectionnez le `site.css`modèle **Stylesheet,** nommez le fichier et sélectionnez **OK**. Le fichier **site.css** apparaît dans le projet et est ouvert dans l’éditeur. Votre structure de dossiers doit apparaître semblable à l’image suivante :
+1. Cliquez avec le bouton droit sur le dossier **static** et sélectionnez **Ajouter** > **Nouvel élément**. Dans la boîte de dialogue qui s’affiche, sélectionnez le modèle de **feuille de style** , nommez le fichier `site.css` , puis sélectionnez **OK**. Le fichier **site.css** apparaît dans le projet et est ouvert dans l’éditeur. Votre structure de dossiers doit apparaître semblable à l’image suivante :
 
     ![Structure de fichier statique comme indiqué dans l’Explorateur de solutions](media/django/step03-static-file-structure.png)
 
@@ -102,6 +102,22 @@ Réponse : la ligne `{% load staticfiles %}` est nécessaire avant de faire ré
 ### <a name="question-are-there-any-conventions-for-organizing-static-files"></a>Question : Existe-t-il des conventions pour organiser des fichiers statiques ?
 
 Réponse : vous pouvez ajouter d’autres fichiers CSS, JavaScript et HTML dans votre dossier *static* comme vous le souhaitez. Une façon classique d’organiser des fichiers statiques consiste à créer des sous-dossiers nommés *fonts*, *scripts* et *content* (pour les feuilles de style et autres fichiers). Dans chaque cas, n’oubliez pas d’inclure ces dossiers dans le chemin d’accès relatif au fichier dans les références `{% static %}`.
+
+### <a name="question-can-i-complete-the-same-task-without-using-the--load-staticfiles--tag"></a>Question : puis-je effectuer la même tâche sans utiliser la balise {% Load staticfiles%} ?
+
+Réponse : Oui, vous pouvez.
+
+```html
+<html>
+    <head>
+        <title>{{ title }}</title>
+        <link rel="stylesheet" type="text/css" href="../../static/site.css" />
+    </head>
+    <body>
+        <span class="message">{{ message }}</span>{{ content }}
+    </body>
+</html>
+```
 
 ## <a name="step-3-3-add-a-page-to-the-app"></a>Étape 3-3 : ajouter une page à l’application
 
@@ -160,11 +176,11 @@ Les étapes suivantes ajoutent une page « À propos » au projet « HelloDja
     <div><a href="about">About</a></div>
     ```
 
-1. Enregistrez tous les fichiers à l’aide de la commande de menu**Enregistrer tous** **les fichiers,** > ou appuyez simplement sur **Ctrl**+**Shift**+**S**. (Techniquement, cette étape n’est pas nécessaire puisque l’exécution du projet dans Visual Studio enregistre automatiquement les fichiers. Toutefois, c’est une commande bonne à connaître !)
+1. Enregistrez tous les fichiers à l’aide de la commande de menu **fichier**  >  **enregistrer tout** ou appuyez simplement sur **CTRL** + **MAJ** + **S**. (Techniquement, cette étape n’est pas nécessaire puisque l’exécution du projet dans Visual Studio enregistre automatiquement les fichiers. Toutefois, c’est une commande bonne à connaître !)
 
 1. Exécutez le projet pour observer les résultats et contrôler la navigation entre les pages. Fermez le serveur une fois terminé.
 
-### <a name="question-i-tried-using-index-for-the-link-to-the-home-page-but-it-didnt-work-why"></a>Question : j’ai essayé d’utiliser « index » pour le lien vers la page d’accueil, mais cela n’a pas fonctionné. Pourquoi ?
+### <a name="question-i-tried-using-index-for-the-link-to-the-home-page-but-it-didnt-work-why"></a>Question : j’ai essayé d’utiliser « index » pour le lien vers la page d’accueil, mais cela n’a pas fonctionné. Pourquoi ?
 
 Réponse : bien que la fonction d’affichage dans *views.py* soit nommée `index`, les modèles de routage d’URL dans le fichier *urls.py* du projet Django ne contiennent pas une expression régulière qui correspond à la chaîne « index ». Pour faire correspondre cette chaîne, vous devez ajouter une autre entrée pour le modèle `^index$`.
 

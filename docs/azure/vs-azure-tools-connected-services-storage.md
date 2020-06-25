@@ -6,15 +6,15 @@ manager: jillfra
 assetId: 521ec044-ad4b-4828-8864-01decde2e758
 ms.custom: vs-azure
 ms.workload: azure-vs
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 03/26/2017
 ms.author: ghogen
-ms.openlocfilehash: ca65086ce7ce09a1ca288c2f5cd04c31e00f8e95
-ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
+ms.openlocfilehash: ddb0f2610473841a69ec69600cf9ef83cb898340
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72911896"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85280681"
 ---
 # <a name="adding-azure-storage-by-using-visual-studio-connected-services"></a>Ajout de stockage Azure à l’aide des services connectés de Visual Studio
 
@@ -74,7 +74,7 @@ Quand vous avez terminé la boîte de dialogue, Visual Studio ajoute des référ
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Forum MSDN : stockage Azure](https://social.msdn.microsoft.com/forums/azure/home?forum=windowsazuredata)
+- [Forum MSDN : Stockage Azure](https://social.msdn.microsoft.com/forums/azure/home?forum=windowsazuredata)
 - [Blog de l’équipe Stockage Microsoft Azure](https://blogs.msdn.microsoft.com/windowsazurestorage/)
-- [Documentation d’Azure Storage](/azure/storage/)
+- [Documentation sur le stockage Azure](/azure/storage/)
 - [Services connectés (Visual Studio pour Mac)](/visualstudio/mac/connected-services)

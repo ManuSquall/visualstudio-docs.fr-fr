@@ -1,23 +1,23 @@
 ---
 title: Impossible de supprimer la propriété
 ms.date: 11/04/2016
-ms.topic: reference
+ms.topic: error-reference
 ms.assetid: 55873f74-7834-4ec1-8815-eeeb65618d87
 author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 29344a2443708d9ddaed3d90a186ab8424638664
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 91fce94babf443c974a49885263b8e7eb77d9eaa
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72640485"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85281343"
 ---
-# <a name="the-property-property-name-cannot-be-deleted"></a>Impossible de supprimer la propriété \<nom de la propriété>
+# <a name="the-property-property-name-cannot-be-deleted"></a>Impossible de supprimer la propriété \<property name>
 
-La propriété \<nom de la propriété> ne peut pas être supprimée parce qu’elle est définie en tant que **Propriété de discriminateur** pour l’héritage entre \<nom de la classe> et \<nom de la classe>
+La propriété \<property name> ne peut pas être supprimée, car elle est définie en tant que **propriété de discriminateur** pour l’héritage entre \<class name> et\<class name>
 
 La propriété sélectionnée est définie comme **Propriété de discriminateur** pour l’héritage entre les classes indiquées dans le message d’erreur. Les propriétés ne peuvent pas être supprimées si elles participent à la configuration d'héritage entre des classes de données.
 

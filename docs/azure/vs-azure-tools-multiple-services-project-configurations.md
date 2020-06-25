@@ -6,21 +6,21 @@ manager: jillfra
 assetId: a4fb79ed-384f-4183-9f74-5cac257206b9
 ms.custom: vs-azure
 ms.workload: azure-vs
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 11/11/2017
 ms.author: ghogen
-ms.openlocfilehash: 7b9df8c5609c92a6b6631d1ed9fdda8d65e9b605
-ms.sourcegitcommit: 95f26af1da51d4c83ae78adcb7372b32364d8a2b
+ms.openlocfilehash: 8c9f65291d43a55ee75840591698c26fdde6e967
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79301698"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85280542"
 ---
 # <a name="configuring-your-azure-project-in-visual-studio-to-use-multiple-service-configurations"></a>Configuration de votre projet Azure dans Visual Studio pour utiliser plusieurs configurations de service
 
 Un projet de service cloud Azure dans Visual Studio inclut trois fichiers de configuration : `ServiceDefinition.csdef`, `ServiceConfiguration.Local.cscfg` et `ServiceConfiguration.Cloud.cscfg` :
 
-- `ServiceDefinition.csdef` est déployé sur Azure pour décrire les prérequis du service cloud et de ses rôles, et pour fournir les paramètres applicables à toutes les instances. Les paramètres peuvent être lus à l’heure de l’exécution à l’aide de l’API Azure Service Hosting Runtime. Ce fichier peut être mis à jour sur Azure uniquement lorsque le service cloud est arrêté.
+- `ServiceDefinition.csdef` est déployé sur Azure pour décrire les prérequis du service cloud et de ses rôles, et pour fournir les paramètres applicables à toutes les instances. Les paramètres peuvent être lus au moment de l’exécution à l’aide de l’API du runtime d’hébergement du service Azure. Ce fichier peut être mis à jour sur Azure uniquement lorsque le service cloud est arrêté.
 - `ServiceConfiguration.Local.cscfg` et `ServiceConfiguration.Cloud.cscfg` fournissent les valeurs des paramètres dans le fichier de définition, et spécifient le nombre d'instances à exécuter pour chaque rôle. Le fichier « Local » contient les valeurs utilisées dans le débogage local ; le fichier « Cloud » est déployé sur Azure en tant que `ServiceConfiguration.cscfg` et fournit les paramètres de l'environnement du serveur. Ce fichier peut être mis à jour lorsque votre service cloud est en cours d’exécution dans Azure.
 
 Les paramètres de configuration sont gérés et modifiés dans Visual Studio à l'aide des pages de propriétés du rôle concerné (cliquez avec le bouton droit sur le rôle, sélectionnez **Propriétés** ou double-cliquez sur le rôle). Les modifications peuvent être étendues à la configuration choisie dans la liste déroulante **Configuration du service**. Les propriétés des rôles web et de travail sont similaires, sauf si elles sont décrites dans les sections suivantes.
@@ -39,13 +39,13 @@ Sélectionne le `ServiceConfiguration.*.cscfg` affecté par les modifications. P
 
 Définir la propriété count de l’ **Instance** au nombre d'instances que le service doit exécuter pour ce rôle.
 
-Définir la propriété **Taille de la machine virtuelle** sur **Très petite**, **Petite**, **Moyenne**, **Grande** ou **Très grande**.  Pour plus d’informations, voir [Tailles pour les services cloud](/azure/cloud-services/cloud-services-sizes-specs).
+Définir la propriété **Taille de la machine virtuelle** sur **Très petite**, **Petite**, **Moyenne**, **Grande** ou **Très grande**.  Pour plus d’informations, consultez [tailles des services Cloud](/azure/cloud-services/cloud-services-sizes-specs).
 
 ### <a name="startup-action-web-role-only"></a>Action de démarrage (rôle web uniquement)
 
 Définissez cette propriété pour spécifier que Visual Studio doit lancer un navigateur web pour les points de terminaison HTTP, les points de terminaison HTTPS, ou les deux lorsque vous commencez le débogage.
 
-**L’option de point de terminaison HTTPS** n’est disponible que si vous avez déjà défini un critère d’évaluation HTTPS pour votre rôle. Vous pouvez définir un point de terminaison HTTPS sur la page Propriétés des **Points de terminaison** .
+L’option **point de terminaison HTTPS** est disponible uniquement si vous avez déjà défini un point de terminaison HTTPS pour votre rôle. Vous pouvez définir un point de terminaison HTTPS sur la page Propriétés des **Points de terminaison** .
 
 Si vous avez déjà ajouté un point de terminaison HTTPS, l'option point de terminaison HTTPS est activée par défaut et Visual Studio lance un navigateur pour ce point de terminaison lorsque vous démarrez le débogage, ainsi qu'un navigateur pour votre point de terminaison HTTP, à condition d'activer les deux options de démarrage.
 
@@ -55,7 +55,7 @@ Par défaut, les diagnostics sont activés pour le rôle web. Le projet de servi
 
 ## <a name="settings-page"></a>Page Paramètres
 
-Sur la page **Paramètres**, vous pouvez ajouter des paramètres à une configuration sous la forme de paires nom-valeur. Code en cours d’exécution dans le rôle peut lire les valeurs de vos paramètres de configuration au moment de l’exécution en utilisant les classes fournies par la [bibliothèque gérée Azure](/previous-versions/azure/dn602775(v=azure.11)), en particulier, la méthode [GetConfigurationSettingValue.](/previous-versions/azure/reference/ee772857(v=azure.100))
+Sur la page **Paramètres**, vous pouvez ajouter des paramètres à une configuration sous la forme de paires nom-valeur. Le code qui s’exécute dans le rôle peut lire les valeurs de vos paramètres de configuration au moment de l’exécution à l’aide des classes fournies par la [bibliothèque managée Azure](/previous-versions/azure/dn602775(v=azure.11)), en particulier la méthode [GetConfigurationSettingValue](/previous-versions/azure/reference/ee772857(v=azure.100)) .
 
 ### <a name="configuring-a-connection-string-for-a-storage-account"></a>Configuration d’une chaîne de connexion pour un compte de stockage
 

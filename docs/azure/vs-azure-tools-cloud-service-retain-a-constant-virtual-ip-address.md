@@ -6,15 +6,15 @@ manager: jillfra
 assetId: 4a58e2c6-7a79-4051-8a2c-99182ff8b881
 ms.custom: vs-azure
 ms.workload: azure-vs
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 03/21/2017
 ms.author: ghogen
-ms.openlocfilehash: ae9064b6aba283c8d2fb8d1e5ec02ef1bd70e199
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
-ms.translationtype: HT
+ms.openlocfilehash: e7e7d9a6c1c417b3802ef1f94ac51fec14bf682a
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66260723"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85280848"
 ---
 # <a name="retain-a-constant-virtual-ip-address-for-an-azure-cloud-service"></a>Conserver une adresse IP virtuelle constante pour un service cloud Azure
 Lors de la mise à jour d’un service cloud hébergé dans Azure, vérifiez que l’adresse IP virtuelle du service n’est pas modifiée. De nombreux services de gestion de domaine utilisent la méthode DNS (Domain Name System), une méthode d’enregistrement pour stocker des noms de domaine et qui fonctionne uniquement si l’adresse IP virtuelle est inchangée. Utilisez l’**Assistant Publication** dans Azure Tools pour garantir que l’adresse IP virtuelle de votre service cloud ne change pas lors de sa mise à jour. Pour plus d’informations sur l’utilisation de la gestion de domaine DNS pour les services cloud, consultez [Configuration d’un nom de domaine personnalisé pour un service cloud Azure](/azure/cloud-services/cloud-services-custom-domain-name-portal).
@@ -35,7 +35,7 @@ Vous pouvez spécifier les paramètres de déploiement dans l’**Assistant Publ
 
     ![Publication d’application Azure : page de connexion](./media/vs-azure-tools-cloud-service-retain-a-constant-virtual-ip-address/azure-publish-signin.png)
 
-4. Dans l’onglet **Paramètres communs**, vérifiez que le nom du service cloud vers lequel vous souhaitez effectuer le déploiement, **l’environnement**, la **configuration de build** et la **configuration du service** sont corrects.
+4. Sous l’onglet **paramètres communs** , vérifiez que le nom du service Cloud vers lequel vous effectuez le déploiement, l' **environnement**, la **configuration de build**et la configuration du **service** sont tous corrects.
 
     ![Publication d’application Azure : onglet Paramètres communs](./media/vs-azure-tools-cloud-service-retain-a-constant-virtual-ip-address/azure-publish-common-settings.png)
 

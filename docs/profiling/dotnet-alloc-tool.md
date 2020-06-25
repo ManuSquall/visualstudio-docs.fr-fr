@@ -1,5 +1,5 @@
 ---
-title: Analyser l’utilisation de la mémoire pour les objets .NET Microsoft Docs
+title: Analyser l’utilisation de la mémoire pour les objets .NET | Microsoft Docs
 ms.date: 12/9/2019
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,95 +9,134 @@ ms.author: sashe
 manager: AndSter
 ms.workload:
 - multiple
-ms.openlocfilehash: 9518ffd618a6d82505feca33b37b5151a3a9f961
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 2a812ea3dcddc2fa6093b2b5b99684d1d5194654
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75898468"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85280033"
 ---
-# <a name="analyze-memory-usage-using-the-net-object-allocation-tool"></a>Analyser l’utilisation de la mémoire à l’aide de l’outil .NET Object Allocation
+# <a name="analyze-memory-usage-by-using-the-net-object-allocation-tool"></a>Analyser l’utilisation de la mémoire à l’aide de l’outil d’allocation d’objets .NET
 
-Vous pouvez voir combien de mémoire votre application utilise et quels chemins de code allouent le plus de mémoire à l’aide de l’outil .NET Object Allocation.
+Vous pouvez voir la quantité de mémoire utilisée par votre application et les chemins de code qui allouent le plus de mémoire à l’aide de l’outil d’allocation d’objets .NET.
 
-Après avoir exécuté l’outil, vous pouvez voir les chemins d’exécution de fonction où les objets sont attribués de sorte que vous puissiez remonter à la racine de l’arbre d’appel qui prend la plus grande quantité de mémoire.
+Après avoir exécuté l’outil, vous pouvez voir les chemins d’exécution des fonctions où les objets sont alloués. Vous pouvez ensuite effectuer le suivi jusqu’à la racine de l’arborescence des appels qui occupe la plus grande partie de la mémoire.
 
 ## <a name="setup"></a>Programme d’installation
 
-1. Ouvrez le Profileer performance **(Alt et F2)** en Studio Visuel.
-2.  Sélectionnez la case de **suivi de suivi de l’allocation d’objets .NET.**
+1. Appuyez sur **ALT + F2** pour ouvrir le profileur de performances dans Visual Studio.
 
-![Diag Hub](../profiling/media/diaghub.png "Diag Hub")
+1. Activez la case à cocher **suivi d’allocation d’objets .net** .
 
-> [!NOTE]
-> Le projet de démarrage est sélectionné comme **cible d’analyse** par défaut, mais cela peut être modifié pour le processus d’exécution, les exécutables, les applications en cours d’exécution et les applications installées en ouvrant le menu de dropdown **Change Target,** puis en sélectionnant parmi les options disponibles.
+   ![L’outil de suivi d’allocation d’objets dotnet sélectionné](../profiling/media/dotnetalloctoolselected.png "L’outil de suivi d’allocation d’objets dotnet sélectionné")
 
-   L’outil .NET Object Allocation ne prend actuellement pas en charge les exécutions via le menu dropdown. Vous devrez passer par le système de projet exe pour utiliser l’outil. Pour ce faire, fermez votre solution actuelle (**File** -> **Close Solution**) et frappez ensuite **File** -> Open un projet ou une**solution** -> sélectionnez votre fichier .exe.
+1. Sélectionnez le bouton **Démarrer** pour exécuter l’outil.
 
-![Cible de l'analyse](../profiling/media/analysistarget.png "Cible de l'analyse")
+1. Une fois l’exécution de l’outil terminée, parcourez le scénario que vous souhaitez profiler dans votre application. Sélectionnez ensuite **arrêter la collecte** ou fermez votre application pour afficher vos données.
 
-3. Cliquez sur le bouton **Démarrer** pour exécuter l’outil.
+   ![Fenêtre d’arrêt de la collecte](../profiling/media/stopcollectionlighttheme.png "Fenêtre d’arrêt de la collecte")
 
-![Stop Collection](../profiling/media/stopcollection.png "Arrêter la collection")
+1. Sélectionnez l’onglet **allocation** . le contenu de la fenêtre ressemble à la capture d’écran suivante.
 
-4. Une fois que l’outil commence à fonctionner, passez par le scénario souhaité dans votre application, puis appuyez **sur Stop Collection** ou fermez votre application pour voir vos données.
-5. Cliquez sur **l’onglet Allocation** et vous devriez voir une image similaire à celle indiquée ci-dessous.
+   ![Onglet allocation](../profiling/media/allocationview.png "Onglet allocation")
 
-![Allocation](../profiling/media/allocation.png "Allocation")
+Vous pouvez maintenant analyser l’allocation de mémoire des objets.
 
-Félicitations ! Vous pouvez maintenant analyser l’allocation de mémoire des objets.
+Pendant la collecte, l’outil de suivi peut ralentir l’application profilée. Si les performances de l’outil de suivi ou de l’application sont lentes et si vous n’avez pas besoin d’effectuer le suivi de chaque objet, vous pouvez ajuster le taux d’échantillonnage. Pour ce faire, sélectionnez le symbole d’engrenage en regard de l’outil de suivi dans la page Résumé du profileur.
+
+![Paramètres de l’outil d’allocation dotnet](../profiling/media/dotnetallocsettings.png "Paramètres de l’outil d’allocation dotnet")
+
+Ajustez le taux d’échantillonnage au taux de votre choix. Cette modification permet d’accélérer les performances de votre application pendant la collecte et l’analyse.
+
+![Taux d’échantillonnage ajusté](../profiling/media/adjustedsamplingratedotnetalloctool.png "Taux d’échantillonnage ajusté")
+
+Pour plus d’informations sur la façon de rendre l’outil plus efficace, consultez [optimisation des paramètres du profileur](../profiling/optimize-profiler-settings.md).
 
 ## <a name="understand-your-data"></a>Comprendre vos données
 
-### <a name="collection"></a>Collection
+![Graphique pour l’outil d’allocation dotnet](../profiling/media/graphdotnetalloc.png "Graphique pour l’outil d’allocation dotnet")
 
-![Collection](../profiling/media/collection.png "Collection")
+Dans la vue graphique précédente, le graphique du haut affiche le nombre d’objets actifs dans votre application. Le graphique **Delta d’objet** inférieur affiche le pourcentage de modification des objets d’application. Les barres rouges indiquent quand garbage collection a eu lieu.
 
-La vue de collecte vous permet de voir combien d’objets ont été collectés lors de la collecte des ordures et combien ont été conservés. Cette vue fournit également quelques graphiques à secteurs pour visualiser les objets collectés et survécus par type.
+![Graphique filtré de la durée d’allocation dotnet](../profiling/media/graphdotnetalloctimefiltered.png "Graphique filtré de la durée d’allocation dotnet")
 
-- La colonne **Collectée** montre le nombre d’objets recueillis par le éboueur.
-- La colonne **Survived** montre le nombre d’objets qui ont survécu après la course du collecteur d’ordures.
+Vous pouvez filtrer les données tabulaires pour afficher l’activité uniquement pour une plage de temps spécifiée. Vous pouvez également effectuer un zoom avant ou arrière sur le graphique.
 
 ### <a name="allocation"></a>Allocation
 
-![Répartition élargie](../profiling/media/allocationexpanded.png "Répartition élargie")
+![Affichage de l’allocation développé](../profiling/media/allocationexpandedlight.png "Affichage de l’allocation développé")
 
-La vue d’allocation vous permet de voir l’emplacement des objets qui allouent de la mémoire et la quantité de mémoire que ces objets attribuent.
+La vue **allocation** affiche l’emplacement des objets qui allouent de la mémoire et la quantité de mémoire allouée par ces objets.
 
-- La colonne **Nom** est une liste de différentes classes et structures qui prennent la mémoire. Chaque élément dans la colonne est un nœud qui peut être élargi s’il ya des éléments dans cette catégorie de prendre la mémoire. (**Vue d’allocation** seulement)
-- La colonne **Total (Allocations)** affiche le nombre d’objets dans un type d’allocation particulier qui prennent la mémoire. (**Allocation**, **Arbre d’appel**, et Vue des **fonctions)**
-- La colonne **Self (Allocations)** affiche le nombre d’objets dans un élément individuel qui prend la mémoire. (**Allocation**, **Arbre d’appel**, et Vue des **fonctions)**
-- Ces trois colonnes sont triables. Dans le cas de la colonne **Nom,** les éléments sont triés par ordre alphabétique (vers l’avant ou vers l’arrière). Pour **Total** et **Auto (Allocations),** vous pouvez trier numériquement (de plus en plus ou de façon décroissante).
-- Les colonnes **De taille totale (Octets)** et **de taille autonome (Octets)** ne sont pas allumées par défaut. Pour les activer, cliquez à droite sur les colonnes **Nom,** **Total** ou **Auto (Allocations),** puis cliquez sur les options **Taille totale** et **taille autonome** pour les ajouter au graphique. Les deux colonnes sont similaires à **Total (Allocations)** et **Self (Allocations)** sauf qu’au lieu de montrer le nombre d’objets prenant la mémoire, elles montrent la quantité totale de mémoire dans les octets que ces objets prennent. [Vue d’allocation seulement]
+- La **Type**   colonne de type est une liste de classes et de structures qui occupent de la mémoire. Double-cliquez sur un type pour afficher son suivi en tant qu’arborescence des appels inversée. Dans l’affichage **allocation** uniquement, vous pouvez voir les éléments de la catégorie sélectionnée qui occupent de la mémoire.
 
-### <a name="call-tree"></a>Appelez l’arbre
+- La colonne **allocations**   affiche le nombre d’objets qui occupent de la mémoire dans une fonction ou un type d’allocation particulier. Cette colonne s’affiche uniquement dans les vues **allocation**, **arborescence des appels**et **fonctions**   .
 
-![Appelez l’arbre](../profiling/media/calltree.png "Appelez l’arbre")
+- Les colonnes **octets**   et **taille moyenne (octets)**   n’apparaissent pas par défaut. Pour les afficher, cliquez avec le bouton droit sur la colonne **type**   ou **allocations**   , puis sélectionnez les options **octets**   et **taille moyenne (octets)**   pour les ajouter au graphique. 
 
-La vue **Call Tree** vous permet de voir les chemins d’exécution de fonction qui contiennent des objets allouant beaucoup de mémoire.
+   Les deux colonnes sont similaires au **total (allocations)** et **auto (allocations)**, sauf qu’elles indiquent la quantité de mémoire occupée au lieu du nombre d’objets qui occupent de la mémoire. Ces colonnes s’affichent uniquement dans la vue **allocation** .
 
-- La colonne **de nom de fonction** indique le processus ou le nom de la fonction contenant des objets allouant la mémoire en fonction du niveau du nœud que vous inspectez.
-- Les colonnes **Total** et **Auto (Allocations)** affichent les mêmes informations que la vue **d’allocation.**
-- La colonne **de nom du module** affiche le module qui contient la fonction ou le processus qui appelle.
+- La colonne **nom du module**   affiche le module qui contient la fonction ou le processus appelant.
 
-![Chemin chaud](../profiling/media/hotpath.png "Chemin réactif")
+Toutes ces colonnes peuvent être triées. Pour les colonnes de **type** et de **nom de module** , vous pouvez trier les éléments par ordre alphabétique dans l’ordre croissant ou décroissant. Pour les **allocations**, les **octets**   et la **taille moyenne (octets)**, vous pouvez trier les éléments en accroissant ou en diminuant la valeur numérique.
 
-- Le bouton **Expand Hot Path** met en évidence une voie d’exécution de fonction qui contient beaucoup d’objets qui allouent la mémoire. L’algorithme commence à un nœud d’intérêt sélectionné par l’utilisateur et met en évidence le chemin de la plupart des allocations, guidant un utilisateur dans leur enquête.
-- Le bouton **Show Hot Path** bascule sur ou hors des icônes de flamme qui indiquent quel nœud font partie du Sentier **Chaud.**
+#### <a name="symbols"></a>symboles
+
+Les symboles suivants apparaissent dans les onglets **allocation**, **arborescence des appels**et **fonctions** :
+
+- ![Le type valeur Symbol](../profiling/media/valuetypeicon.png "Symbole du type de valeur") -un type valeur comme Integer
+
+- ![Symbole de collection de type valeur](../profiling/media/valuetypecollectionicon.png "Symbole de collection de type valeur") : une collection de type valeur comme un tableau d’entiers
+
+- ![Symbole du type référence](../profiling/media/referencetypeicon.png "Symbole du type de référence") : un type référence comme String
+
+- ![Symbole de collection de type référence](../profiling/media/referencetypecollectionicon.png "Symbole de collection de type référence") -une collection de type référence comme un tableau de chaînes
+
+### <a name="call-tree"></a>Arborescence des appels
+
+![La vue arborescence des appels](../profiling/media/calltreelight.png "La vue arborescence des appels")
+
+La vue **arborescence des appels**   affiche les chemins d’exécution des fonctions qui contiennent des objets qui allouent de la mémoire.
+
+- La colonne nom de la **fonction**   affiche le processus ou le nom de la fonction contenant des objets qui allouent de la mémoire. L’affichage est basé sur le niveau du nœud que vous Inspectez.
+- Les colonnes **total (allocations)** et **taille totale (octets)**   affichent le nombre d’objets alloués et la quantité de mémoire utilisée par une fonction et toutes les autres fonctions qu’elle appelle.
+- Les colonnes **auto (allocations)** et **auto-size (octets)** affichent le nombre d’objets alloués et la quantité de mémoire utilisée par une fonction ou un type d’allocation sélectionnés.
+- La colonne **taille moyenne (octets)** affiche les mêmes informations que dans la vue **allocations** .
+- La colonne **nom du module**   affiche le module qui contient la fonction ou le processus appelant.
+
+   ![Un chemin réactif développé](../profiling/media/hotpathlight.png "Un chemin réactif développé")
+
+- Le bouton **développer le chemin réactif** met en surbrillance une voie d’exécution de fonction qui contient de nombreux objets qui allouent de la mémoire. L’algorithme démarre sur un nœud que vous sélectionnez et met en surbrillance le chemin d’accès de la plupart des allocations, ce qui vous guide dans votre investigation.
+- Le bouton **afficher le chemin réactif** affiche ou masque les symboles de flamme qui indiquent les nœuds faisant partie du chemin réactif.
 
 ### <a name="functions"></a>Fonctions
 
-![Fonctions](../profiling/media/functions.png "Fonctions")
+![Vue fonctions](../profiling/media/functionslight.png "Vue fonctions")
 
-La vue **Fonctions** affiche les processus, les modules et les fonctions qui allouent la mémoire.
+La vue **fonctions** affiche les processus, les modules et les fonctions qui allouent de la mémoire.
 
-- La colonne **Nom** affiche les processus comme les nœuds de niveau le plus élevé. Sous les processus sont des modules, et sous les modules sont des fonctions.
-- Les colonnes **Total** et **Auto (Allocations)** affichent les mêmes informations que la vue **d’allocation.**
+- La colonne **nom** affiche les processus en tant que nœuds de niveau supérieur. Sous, les processus sont des modules et les modules sous sont des fonctions.
+- Ces colonnes affichent les mêmes informations que dans les vues **allocation** et **arborescence des appels** :
 
-Les **allocations**, **l’arbre d’appel**, et les vues **de fonctions** contiennent tous le **show Just My Code**, Afficher le code **autochtone**, et les options **de recherche** :
+   - **Total (allocations)**
+   - **Soi-même (allocations)**
+   - **Taille totale (octets)**
+   - **Taille automatique (octets)**
+   - **Taille moyenne (octets)**
 
-![Barre de filtre](../profiling/media/filterbar.png "Barre de filtre")
+### <a name="collection"></a>Collection
 
-- **Afficher Just My Code** effondre les systèmes, les cadres et autres codes non utilisateurs et dans les images **[Code externe]** afin que le code utilisateur puisse être concentré sur. Pour plus d’informations, voir [Code utilisateur Debug avec Just My Code](../debugger/just-my-code.md).
-- **Afficher le code autochtone** affiche le code natif dans la cible d’analyse, y compris le code non utilisateur s’il est sélectionné.
-- La **boîte de filtre** vous permet de filtrer la colonne **nom** ou nom **de fonction** en fonction du paramètre que vous fournissez. Il suffit de taper dans le champ et la table doit filtrer vers le bas pour afficher uniquement les types qui contiennent la chaîne fournie.
+![Vue de collection](../profiling/media/collectionlight.png "Vue de collection")
+
+La vue **collection** indique le nombre d’objets qui ont été collectés ou conservés pendant la garbage collection. Cette vue affiche également les graphiques en secteurs pour visualiser les objets collectés et survivants par type.
+
+- La colonne **collecté** affiche le nombre d’objets collectés par le garbage collector.
+- La colonne **survécu** affiche le nombre d’objets qui ont survécu après l’exécution du garbage collector.
+
+### <a name="filtering-tools"></a>Outils de filtrage
+
+Les vues **allocations**, **arborescence des appels**et **fonctions** contiennent toutes les options afficher les **uniquement mon code** et **afficher le code natif** et filtre.
+
+- **Affichez uniquement mon code** réduit les systèmes, les infrastructures et tout autre code utilisateur dans des frames **[code externe]** afin que vous puissiez vous concentrer uniquement sur votre code. Pour plus d’informations, consultez [déboguer le code utilisateur avec uniquement mon code](../debugger/just-my-code.md).
+- **Afficher le code natif** affiche le code natif dans la cible d’analyse et peut inclure du code qui n’est pas un utilisateur.
+- Avec la zone de filtre, vous pouvez filtrer la colonne **nom** ou **nom de fonction** en fonction de la valeur que vous fournissez. Entrez une valeur de chaîne dans la zone. La table affiche alors uniquement les types qui contiennent cette chaîne.

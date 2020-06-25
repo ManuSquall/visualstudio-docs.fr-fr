@@ -1,7 +1,7 @@
 ---
 title: Passer des données entre des formulaires
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -17,12 +17,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 358cdc4822aa0da1d980f22196618aeaada4b1be
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 198eb09cabe16c72415520aa493a3395cdbf6d48
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75586365"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85281875"
 ---
 # <a name="pass-data-between-forms"></a>Passer des données entre des formulaires
 
@@ -47,7 +47,7 @@ Cette procédure pas à pas décrit notamment les tâches suivantes :
 
 - Transfert de données entre formulaires.
 
-## <a name="prerequisites"></a>Configuration requise
+## <a name="prerequisites"></a>Prérequis
 
 Cette procédure pas à pas utilise SQL Server Express base de données locale et l’exemple de base de données Northwind.
 
@@ -69,7 +69,7 @@ Cette procédure pas à pas utilise SQL Server Express base de données locale e
 
 1. Dans Visual Studio, dans le menu **Fichier**, sélectionnez **Nouveau** > **Projet**.
 
-2. Développez **Visual C#**  ou **Visual Basic** dans le volet gauche, puis sélectionnez **Bureau Windows**.
+2. Développez **Visual C#** ou **Visual Basic** dans le volet gauche, puis sélectionnez **Bureau Windows**.
 
 3. Dans le volet central, sélectionnez le type de projet d' **application Windows Forms** .
 
@@ -81,13 +81,13 @@ Cette procédure pas à pas utilise SQL Server Express base de données locale e
 
 1. Pour ouvrir la fenêtre **sources de données** , dans le menu **données** , cliquez sur Afficher les **sources de données**.
 
-2. Dans la fenêtre **Sources de données**, sélectionnez **Ajouter une nouvelle source de données** pour démarrer l’Assistant **Configuration de source de données**.
+2. Dans la fenêtre **sources de données** , sélectionnez Ajouter une **nouvelle source de données** pour démarrer l’Assistant Configuration de source de **données** .
 
 3. Sélectionnez **Base de données** dans la page **Choisir un type de source de données** , puis cliquez sur **Suivant**.
 
 4. Dans la page **Choisir un modèle de base de données**, vérifiez que **Dataset** est spécifié, puis cliquez sur **Suivant**.
 
-5. Dans la page **Choisir votre connexion de données**, effectuez l’une des opérations suivantes :
+5. Dans la page **choisir votre connexion de données** , effectuez l’une des opérations suivantes :
 
     - Si une connexion de données à l’exemple de base de données Northwind est disponible dans la liste déroulante, sélectionnez-la.
 
@@ -152,13 +152,13 @@ Ajoutez une requête TableAdapter à Form2 pour charger les commandes du client 
     > [!NOTE]
     > Vérifiez que la syntaxe du paramètre est correcte pour votre base de données. Par exemple, dans Microsoft Access, la clause WHERE est de type : `WHERE CustomerID = ?`.
 
-6. Cliquez sur **Next**.
+6. Cliquez sur **Suivant**.
 
-7. Pour le **nom remplir un DataTableMethod**, tapez `FillByCustomerID`.
+7. Pour le **nom DataTableMethod**, tapez `FillByCustomerID` .
 
 8. Désactivez l’option **Retourner un DataTable**, puis cliquez sur **Suivant**.
 
-9. Cliquez sur **Finish**.
+9. Cliquez sur **Terminer**.
 
 ## <a name="create-a-method-on-form2-to-pass-data-to"></a>Créer une méthode sur Form2 pour passer des données à
 
@@ -184,13 +184,13 @@ Ajoutez une requête TableAdapter à Form2 pour charger les commandes du client 
      [!code-csharp[VbRaddataDisplaying#2](../data-tools/codesnippet/CSharp/pass-data-between-forms_2.cs)]
      [!code-vb[VbRaddataDisplaying#2](../data-tools/codesnippet/VisualBasic/pass-data-between-forms_2.vb)]
 
-## <a name="run-the-app"></a>Exécuter l'application
+## <a name="run-the-app"></a>Exécuter l’application
 
-- Appuyez sur **F5** pour exécuter l’application.
+- Appuyez sur **F5** pour exécuter l'application.
 
 - Double-cliquez sur un enregistrement client dans **Form1** pour ouvrir **Form2** avec les commandes de ce client.
 
-## <a name="next-steps"></a>Étapes suivantes :
+## <a name="next-steps"></a>Étapes suivantes
 
 Selon les exigences de votre application, vous pouvez exécuter différentes étapes après le transfert de données entre formulaires. Vous pouvez apporter à cette procédure pas à pas les améliorations suivantes :
 

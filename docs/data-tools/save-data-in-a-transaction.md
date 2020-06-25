@@ -1,7 +1,7 @@
 ---
 title: 'Procédure pas à pas : enregistrer des données dans une transaction'
 ms.date: 09/08/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -17,18 +17,18 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: c0efdda51a52b18697828e1772eb4a71435753e8
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: caeb06ac3f38293b493463ff456e222f148ef93a
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75586235"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85281628"
 ---
 # <a name="walkthrough-save-data-in-a-transaction"></a>Procédure pas à pas : enregistrer des données dans une transaction
 
-Cette procédure pas à pas montre comment enregistrer des données dans une transaction à l’aide de l’espace de noms <xref:System.Transactions>. Dans cette procédure pas à pas, vous allez créer une application Windows Forms. Vous allez utiliser l’Assistant Configuration de source de données pour créer un jeu de données pour deux tables de l’exemple de base de données Northwind. Vous allez ajouter des contrôles liés aux données à un Windows Form et modifier le code du bouton enregistrer du BindingNavigator pour mettre à jour la base de données à l’intérieur d’une TransactionScope.
+Cette procédure pas à pas montre comment enregistrer des données dans une transaction à l’aide de l' <xref:System.Transactions> espace de noms. Dans cette procédure pas à pas, vous allez créer une application Windows Forms. Vous allez utiliser l’Assistant Configuration de source de données pour créer un jeu de données pour deux tables de l’exemple de base de données Northwind. Vous allez ajouter des contrôles liés aux données à un Windows Form et modifier le code du bouton enregistrer du BindingNavigator pour mettre à jour la base de données à l’intérieur d’une TransactionScope.
 
-## <a name="prerequisites"></a>Configuration requise
+## <a name="prerequisites"></a>Prérequis
 
 Cette procédure pas à pas utilise SQL Server Express base de données locale et l’exemple de base de données Northwind.
 
@@ -52,7 +52,7 @@ La première étape consiste à créer une **Application Windows Forms**.
 
 1. Dans Visual Studio, dans le menu **Fichier**, sélectionnez **Nouveau** > **Projet**.
 
-2. Développez **Visual C#**  ou **Visual Basic** dans le volet gauche, puis sélectionnez **Bureau Windows**.
+2. Développez **Visual C#** ou **Visual Basic** dans le volet gauche, puis sélectionnez **Bureau Windows**.
 
 3. Dans le volet central, sélectionnez le type de projet d' **application Windows Forms** .
 
@@ -62,7 +62,7 @@ La première étape consiste à créer une **Application Windows Forms**.
 
 ## <a name="create-a-database-data-source"></a>Créer une source de données de base de données
 
-Cette étape utilise l' **Assistant Configuration de source de données** pour créer une source de données basée sur les tables `Customers` et `Orders` de l’exemple de base de données Northwind.
+Cette étape utilise l' **Assistant Configuration de source de données** pour créer une source de données basée sur les `Customers` `Orders` tables et de l’exemple de base de données Northwind.
 
 1. Pour ouvrir la fenêtre **sources de données** , dans le menu **données** , sélectionnez Afficher les **sources de données**.
 
@@ -74,7 +74,7 @@ Cette étape utilise l' **Assistant Configuration de source de données** pour c
 
     - Si une connexion de données à l’exemple de base de données Northwind est disponible dans la liste déroulante, sélectionnez-la.
 
-         \- ou -
+         -ou-
 
     - Sélectionnez **Nouvelle connexion** pour lancer la boîte de dialogue **Ajouter/Modifier une connexion** et créez une connexion à la base de données Northwind.
 
@@ -84,23 +84,23 @@ Cette étape utilise l' **Assistant Configuration de source de données** pour c
 
 7. Dans l’écran **choisir vos objets de base de données** , développez le nœud **tables** .
 
-8. Sélectionnez les tables `Customers` et `Orders`, puis sélectionnez **Terminer**.
+8. Sélectionnez les `Customers` `Orders` tables et, puis sélectionnez **Terminer**.
 
      **NorthwindDataSet** est ajouté à votre projet et les tables `Customers` et `Orders` apparaissent dans la fenêtre **Sources de données**.
 
 ## <a name="add-controls-to-the-form"></a>Ajouter des contrôles au formulaire
 
-Pour créer des contrôles liés aux données, vous pouvez faire glisser des éléments depuis la fenêtre **Sources de données** vers votre formulaire.
+Vous pouvez créer les contrôles liés aux données en faisant glisser des éléments depuis la fenêtre **sources de données** vers votre formulaire.
 
 1. Dans la fenêtre **sources de données** , développez le nœud **Customers** .
 
 2. Faites glisser le nœud **Customers** depuis la fenêtre **Sources de données** vers **Form1**.
 
-   Un contrôle <xref:System.Windows.Forms.DataGridView> et une barre d'outils (<xref:System.Windows.Forms.BindingNavigator>) pour parcourir les enregistrements apparaissent dans le formulaire. [NorthwindDataSet](../data-tools/dataset-tools-in-visual-studio.md), `CustomersTableAdapter`, <xref:System.Windows.Forms.BindingSource>et <xref:System.Windows.Forms.BindingNavigator> apparaissent dans la barre d’état des composants.
+   Un contrôle <xref:System.Windows.Forms.DataGridView> et une barre d'outils (<xref:System.Windows.Forms.BindingNavigator>) pour parcourir les enregistrements apparaissent dans le formulaire. [NorthwindDataSet](../data-tools/dataset-tools-in-visual-studio.md), `CustomersTableAdapter` , <xref:System.Windows.Forms.BindingSource> et <xref:System.Windows.Forms.BindingNavigator> apparaissent dans la barre d’état des composants.
 
 3. Faites glisser le nœud **Orders** associé (pas le nœud **Orders** principal, mais le nœud de la table enfant connexe sous la colonne **Fax** ) vers le formulaire sous **CustomersDataGridView**.
 
-   Un <xref:System.Windows.Forms.DataGridView> s'affiche dans le formulaire. Une `OrdersTableAdapter` et <xref:System.Windows.Forms.BindingSource> apparaissent dans la barre d’état des composants.
+   Un <xref:System.Windows.Forms.DataGridView> s'affiche dans le formulaire. `OrdersTableAdapter`Et <xref:System.Windows.Forms.BindingSource> apparaissent dans la barre d’état des composants.
 
 ## <a name="add-a-reference-to-the-systemtransactions-assembly"></a>Ajouter une référence à l’assembly System. transactions
 
@@ -116,7 +116,7 @@ Les transactions utilisent l’espace de noms <xref:System.Transactions>. Une r�
 
 ## <a name="modify-the-code-in-the-bindingnavigators-saveitem-button"></a>Modifier le code dans le bouton SaveItem du BindingNavigator
 
-Pour la première table déplacée dans votre formulaire, du code est ajouté par défaut au `click` événement du bouton enregistrer sur la <xref:System.Windows.Forms.BindingNavigator>. Vous devez manuellement ajouter du code pour mettre à jour toutes les tables supplémentaires. Pour cette procédure pas à pas, nous refactorisons le code d’enregistrement existant en dehors du gestionnaire d’événements Click du bouton enregistrer. Nous créons également quelques méthodes supplémentaires pour fournir une fonctionnalité de mise à jour spécifique selon que la ligne doit être ajoutée ou supprimée.
+Pour la première table déplacée dans votre formulaire, du code est ajouté par défaut à l' `click` événement du bouton enregistrer sur le <xref:System.Windows.Forms.BindingNavigator> . Vous devez manuellement ajouter du code pour mettre à jour toutes les tables supplémentaires. Pour cette procédure pas à pas, nous refactorisons le code d’enregistrement existant en dehors du gestionnaire d’événements Click du bouton enregistrer. Nous créons également quelques méthodes supplémentaires pour fournir une fonctionnalité de mise à jour spécifique selon que la ligne doit être ajoutée ou supprimée.
 
 ### <a name="to-modify-the-auto-generated-save-code"></a>Pour modifier le code d'enregistrement généré automatiquement
 
@@ -129,13 +129,13 @@ Pour la première table déplacée dans votre formulaire, du code est ajouté pa
 
 L'ordre de rapprochement des modifications des données associées est comme suit :
 
-- Supprimer les enregistrements enfants. (Dans ce cas, supprimez les enregistrements de la table `Orders`.)
+- Supprimer les enregistrements enfants. (Dans ce cas, supprimez les enregistrements de la `Orders` table.)
 
-- Supprimer les enregistrements parents. (Dans ce cas, supprimez les enregistrements de la table `Customers`.)
+- Supprimer les enregistrements parents. (Dans ce cas, supprimez les enregistrements de la `Customers` table.)
 
-- Insérez les enregistrements parents. (Dans ce cas, insérez les enregistrements dans la table `Customers`.)
+- Insérez les enregistrements parents. (Dans ce cas, insérez des enregistrements dans la `Customers` table.)
 
-- Insérer des enregistrements enfants. (Dans ce cas, insérez les enregistrements dans la table `Orders`.)
+- Insérer des enregistrements enfants. (Dans ce cas, insérez des enregistrements dans la `Orders` table.)
 
 ### <a name="to-delete-existing-orders"></a>Pour supprimer des commandes existantes
 
@@ -165,9 +165,9 @@ L'ordre de rapprochement des modifications des données associées est comme sui
      [!code-vb[VbRaddataSaving#8](../data-tools/codesnippet/VisualBasic/save-data-in-a-transaction_5.vb)]
      [!code-csharp[VbRaddataSaving#8](../data-tools/codesnippet/CSharp/save-data-in-a-transaction_5.cs)]
 
-## <a name="run-the-application"></a>Exécuter l'application
+## <a name="run-the-application"></a>Exécuter l’application
 
-Appuyez sur **F5** pour exécuter l’application.
+Appuyez sur **F5** pour exécuter l'application.
 
 ## <a name="see-also"></a>Voir aussi
 

@@ -1,7 +1,7 @@
 ---
 title: Enregistrer un dataset au format XML
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -16,31 +16,31 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 3198b94b1248f20b178e85e9e75a2765e6191c28
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: cc8854581903ab58a327ff18be7b3b7c0f860a3b
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75586300"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85281732"
 ---
 # <a name="save-a-dataset-as-xml"></a>Enregistrer un dataset au format XML
 
-Accédez aux données XML d’un DataSet en appelant les méthodes XML disponibles sur le DataSet. Pour enregistrer les données au format XML, vous pouvez appeler la méthode <xref:System.Data.DataSet.GetXml%2A> ou la méthode <xref:System.Data.DataSet.WriteXml%2A> d’un <xref:System.Data.DataSet>.
+Accédez aux données XML d’un DataSet en appelant les méthodes XML disponibles sur le DataSet. Pour enregistrer les données au format XML, vous pouvez appeler la <xref:System.Data.DataSet.GetXml%2A> méthode ou la <xref:System.Data.DataSet.WriteXml%2A> méthode d’un <xref:System.Data.DataSet> .
 
-L’appel de la méthode <xref:System.Data.DataSet.GetXml%2A> retourne une chaîne qui contient les données de toutes les tables de données du DataSet au format XML.
+L’appel de la <xref:System.Data.DataSet.GetXml%2A> méthode retourne une chaîne qui contient les données de toutes les tables de données du DataSet au format XML.
 
-L’appel de la méthode <xref:System.Data.DataSet.WriteXml%2A> envoie les données au format XML à un fichier que vous spécifiez.
+L’appel de la <xref:System.Data.DataSet.WriteXml%2A> méthode envoie les données au format XML à un fichier que vous spécifiez.
 
 ## <a name="to-save-the-data-in-a-dataset-as-xml-to-a-variable"></a>Pour enregistrer les données d’un DataSet au format XML dans une variable
 
-- La méthode <xref:System.Data.DataSet.GetXml%2A> retourne un <xref:System.String>. Déclarez une variable de type <xref:System.String> et assignez-lui les résultats de la méthode <xref:System.Data.DataSet.GetXml%2A>.
+- La méthode <xref:System.Data.DataSet.GetXml%2A> retourne un <xref:System.String>. Déclarez une variable de type <xref:System.String> et assignez-lui les résultats de la <xref:System.Data.DataSet.GetXml%2A> méthode.
 
      [!code-vb[VbRaddataSaving#12](../data-tools/codesnippet/VisualBasic/save-a-dataset-as-xml_1.vb)]
      [!code-csharp[VbRaddataSaving#12](../data-tools/codesnippet/CSharp/save-a-dataset-as-xml_1.cs)]
 
 ## <a name="to-save-the-data-in-a-dataset-as-xml-to-a-file"></a>Pour enregistrer les données d’un DataSet au format XML dans un fichier
 
-- La méthode <xref:System.Data.DataSet.WriteXml%2A> a plusieurs surcharges. Déclarez une variable et attribuez-lui un chemin d’accès valide pour enregistrer le fichier. Le code suivant montre comment enregistrer les données dans un fichier :
+- La <xref:System.Data.DataSet.WriteXml%2A> méthode a plusieurs surcharges. Déclarez une variable et attribuez-lui un chemin d’accès valide pour enregistrer le fichier. Le code suivant montre comment enregistrer les données dans un fichier :
 
      [!code-vb[VbRaddataSaving#13](../data-tools/codesnippet/VisualBasic/save-a-dataset-as-xml_2.vb)]
      [!code-csharp[VbRaddataSaving#13](../data-tools/codesnippet/CSharp/save-a-dataset-as-xml_2.cs)]

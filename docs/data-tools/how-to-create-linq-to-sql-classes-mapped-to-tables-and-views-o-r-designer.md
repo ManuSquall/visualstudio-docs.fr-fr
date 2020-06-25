@@ -1,32 +1,32 @@
 ---
 title: Mapper des classes LINQ to SQL à des tables/vues (Concepteur O-R)
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 ms.assetid: 0fb78bbc-7a78-4ab4-b32f-85ece912e660
 author: ghogen
 ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: b0e3103c1b4faa62ff82dafe8ba4aa0ef9193f06
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 19b634973e555fd037d20c3ad359ccbb1465c894
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75586495"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85282122"
 ---
 # <a name="how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-or-designer"></a>Guide pratique pour créer des classes LINQ to SQL mappées à des tables et à des vues (Concepteur O/R)
 
-Les classes [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] mappées à des tables de base de données et à des vues sont appelées *classes d’entité*. La classe d'entité mappe à un enregistrement, alors que les propriétés individuelles d'une classe d'entité mappent aux colonnes individuelles qui composent un enregistrement. Créez des classes d’entité basées sur des tables ou des vues de base de données en faisant glisser des tables ou des vues à partir de **Explorateur de serveurs** ou **Explorateur de base de données** vers les [outils de LINQ to SQL dans Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md). Le **Concepteur O/R** génère les classes et applique les attributs de [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] spécifiques pour activer les fonctionnalités de [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] (les fonctionnalités de communication et de modification des données de l' <xref:System.Data.Linq.DataContext>). Pour plus d’informations sur les classes [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)], consultez [modèle objet LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/the-linq-to-sql-object-model).
+Les classes [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] mappées à des tables de base de données et à des vues sont appelées *classes d’entité*. La classe d'entité mappe à un enregistrement, alors que les propriétés individuelles d'une classe d'entité mappent aux colonnes individuelles qui composent un enregistrement. Créez des classes d’entité basées sur des tables ou des vues de base de données en faisant glisser des tables ou des vues à partir de **Explorateur de serveurs** ou **Explorateur de base de données** vers les [outils de LINQ to SQL dans Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md). Le **Concepteur O/R** génère les classes et applique les [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] attributs spécifiques pour activer les [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] fonctionnalités (fonctionnalités de communication et de modification des données du <xref:System.Data.Linq.DataContext> ). Pour plus d’informations sur [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] les classes, consultez [le modèle objet LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/the-linq-to-sql-object-model).
 
 > [!NOTE]
 > Le **Concepteur O/R** est un mappeur relationnel objet simple, car il ne prend en charge que les relations de mappage 1:1. En d'autres termes, une classe d'entité peut uniquement avoir une relation de mappage 1:1 avec une table ou une vue de base de données. Le mappage complexe, tel que le mappage d'une classe d'entité à plusieurs tables, n'est pas pris en charge. Toutefois, vous pouvez mapper une classe d'entité à une vue qui joint plusieurs tables associées.
 
 ## <a name="create-linq-to-sql-classes-that-are-mapped-to-database-tables-or-views"></a>Créer des classes LINQ to SQL mappées à des tables ou des vues de base de données
 
-Le fait de faire glisser des tables ou des vues à partir de **Explorateur de serveurs** ou **Explorateur de base de données** vers le **Concepteur O/R** crée des classes d’entité en plus des méthodes de <xref:System.Data.Linq.DataContext> utilisées pour effectuer des mises à jour.
+Le fait de faire glisser des tables ou des vues à partir de **Explorateur de serveurs** ou **Explorateur de base de données** vers le **Concepteur O/R** crée des classes d’entité en plus des <xref:System.Data.Linq.DataContext> méthodes utilisées pour effectuer des mises à jour.
 
-Par défaut, le runtime de [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] crée la logique pour enregistrer dans la base de données les modifications apportées à une classe d'entité qui peut être mise à jour. Cette logique est basée sur le schéma de la table (les définitions de colonne et les informations de clé primaire). Si vous ne souhaitez pas ce comportement, vous pouvez configurer une classe d’entité pour utiliser des procédures stockées afin d’effectuer des insertions, des mises à jour et des suppressions au lieu d’utiliser le comportement par défaut [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] au moment de l’exécution. Pour plus d’informations, consultez [Comment : assigner des procédures stockées pour effectuer des mises à jour, des insertions et des suppressions (Concepteur O/R)](../data-tools/how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-o-r-designer.md).
+Par défaut, le runtime de [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] crée la logique pour enregistrer dans la base de données les modifications apportées à une classe d'entité qui peut être mise à jour. Cette logique est basée sur le schéma de la table (les définitions de colonne et les informations de clé primaire). Si vous ne souhaitez pas ce comportement, vous pouvez configurer une classe d’entité pour utiliser des procédures stockées afin d’effectuer des insertions, des mises à jour et des suppressions au lieu d’utiliser le comportement par défaut au moment de l' [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] exécution. Pour plus d’informations, consultez [Comment : assigner des procédures stockées pour effectuer des mises à jour, des insertions et des suppressions (Concepteur O/R)](../data-tools/how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-o-r-designer.md).
 
 [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]
 

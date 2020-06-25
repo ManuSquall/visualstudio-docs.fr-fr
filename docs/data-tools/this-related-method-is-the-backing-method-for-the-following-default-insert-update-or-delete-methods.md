@@ -1,25 +1,25 @@
 ---
 title: Cette méthode associée est la méthode de sauvegarde des méthodes d'insertion, de mise à jour ou de suppression par défaut
 ms.date: 11/04/2016
-ms.topic: reference
+ms.topic: error-reference
 ms.assetid: 62afa6da-97cf-48b9-8de3-33e4d72a0377
 author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 8a7a422cff33fd361b784fd9cae6d5053fbe84fa
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 60634bb2cdc0cf85bfaee441a3fb3d3eb55b3159
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72639661"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85281277"
 ---
 # <a name="this-related-method-is-the-backing-method-for-the-following-default-insert-update-or-delete-methods"></a>Cette méthode associée est la méthode de sauvegarde des méthodes d'insertion, de mise à jour ou de suppression par défaut
 
-Cette méthode associée est la méthode de stockage pour les méthodes de `Insert`, `Update` ou `Delete` par défaut suivantes. Si vous la supprimez, ces méthodes seront aussi supprimées. Voulez-vous continuer ?
+Cette méthode associée est la méthode de stockage pour les méthodes par défaut `Insert` , `Update` ou `Delete` . Si vous la supprimez, ces méthodes seront aussi supprimées. Voulez-vous continuer ?
 
-La méthode `DataContext` sélectionnée est actuellement utilisée comme l’une des méthodes `Insert`, `Update` ou `Delete` pour l’une des classes d’entité sur le **Concepteur O/R**. La suppression de la méthode sélectionnée entraîne la classe d’entité qui utilisait cette méthode pour rétablir le comportement par défaut au moment de l’exécution pour effectuer l’insertion, la mise à jour ou la suppression pendant une mise à jour.
+La `DataContext` méthode sélectionnée est actuellement utilisée comme l’une des `Insert` `Update` méthodes, ou `Delete` pour l’une des classes d’entité sur le **Concepteur O/R**. La suppression de la méthode sélectionnée entraîne la classe d’entité qui utilisait cette méthode pour rétablir le comportement par défaut au moment de l’exécution pour effectuer l’insertion, la mise à jour ou la suppression pendant une mise à jour.
 
 ## <a name="selected-method-options"></a>Options de méthode sélectionnées
 

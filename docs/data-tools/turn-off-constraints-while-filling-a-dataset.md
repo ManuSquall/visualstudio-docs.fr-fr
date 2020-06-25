@@ -1,7 +1,7 @@
 ---
 title: Désactiver les contraintes pendant le remplissage d’un dataset
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - DataRow.BeginEdit
 - DataRow.EndEdit
@@ -20,21 +20,21 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 13cde04c3a10833c25fdc351d730b866f876e8da
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 7bdb225a5b310f6f602619b2afcee610c3e9258b
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75586131"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85281264"
 ---
 # <a name="turn-off-constraints-while-filling-a-dataset"></a>Désactiver les contraintes pendant le remplissage d’un dataset
 
 Si un DataSet contient des contraintes (telles que des contraintes de clé étrangère), il peut déclencher des erreurs liées à l’ordre des opérations effectuées sur le jeu de données. Par exemple, si vous chargez des enregistrements enfants avant de charger des enregistrements parents connexes, vous risquez de violer une contrainte et de générer une erreur. Dès que vous chargez un enregistrement enfant, la contrainte vérifie l’enregistrement parent associé et génère une erreur.
 
-Si aucun mécanisme n’autorise l’interruption temporaire de contrainte, une erreur est déclenchée chaque fois que vous tentez de charger un enregistrement dans la table enfant. Une autre façon d’interrompre toutes les contraintes dans un jeu de données consiste à utiliser les propriétés <xref:System.Data.DataRow.BeginEdit%2A>et <xref:System.Data.DataRow.EndEdit%2A>.
+Si aucun mécanisme n’autorise l’interruption temporaire de contrainte, une erreur est déclenchée chaque fois que vous tentez de charger un enregistrement dans la table enfant. Une autre façon d’interrompre toutes les contraintes dans un DataSet est d’utiliser les <xref:System.Data.DataRow.BeginEdit%2A> Propriétés, et <xref:System.Data.DataRow.EndEdit%2A> .
 
 > [!NOTE]
-> Les événements de validation (par exemple, <xref:System.Data.DataTable.ColumnChanging> et <xref:System.Data.DataTable.RowChanging>) ne sont pas déclenchés lorsque les contraintes sont désactivées.
+> Les événements de validation (par exemple <xref:System.Data.DataTable.ColumnChanging> et <xref:System.Data.DataTable.RowChanging> ) ne sont pas déclenchés lorsque les contraintes sont désactivées.
 
 ## <a name="to-suspend-update-constraints-programmatically"></a>Pour suspendre des contraintes Update par programmation
 

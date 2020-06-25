@@ -6,15 +6,15 @@ manager: jillfra
 assetId: 7d8f1ac9-e439-47e0-a183-0642c4ea1920
 ms.custom: vs-azure
 ms.workload: azure-vs
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 03/21/2017
 ms.author: ghogen
-ms.openlocfilehash: bc3c58343c699833a5a12eee6f79c023f57a2e85
-ms.sourcegitcommit: 59a8732dc563242590f7c6ccf4ced6c6d195533c
+ms.openlocfilehash: 477b7860c320730d6362cdb7e0fcb46ad3bc7d17
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "81489647"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85280529"
 ---
 # <a name="using-the-visual-studio-publish-azure-application-wizard"></a>Utilisation de l’Assistant Publication d’application Azure dans Visual Studio
 
@@ -97,7 +97,7 @@ Diagnostics vous permet de résoudre les problèmes d’un service cloud Azure (
 
 ## <a name="summary-page"></a>Page de résumé
 
-![Récapitulatif](./media/vs-azure-tools-publish-azure-application-wizard/summary.png)
+![Résumé](./media/vs-azure-tools-publish-azure-application-wizard/summary.png)
 
 **Profil cible** : vous pouvez choisir de créer un profil de publication à partir des paramètres que vous avez choisis. Par exemple, vous pouvez créer un profil pour un environnement de test et un autre pour la production. Pour enregistrer ce profil, choisissez l'icône **Enregistrer**. L'Assistant crée le profil et l'enregistre dans le projet Visual Studio. Pour modifier le nom du profil, ouvrez la liste **Profil cible**, puis sélectionnez **&lt;Gérer...&gt;**.
 
@@ -118,6 +118,6 @@ Une fois que vous avez configuré tous les paramètres de déploiement de votre 
 
 - [Test des performances d’un service cloud](./vs-azure-tools-performance-profiling-cloud-services.md)
 
-- [Configurer les diagnostics pour azure Cloud Services et Virtual Machines](./vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines.md).
+- [Configuration des diagnostics pour les services Cloud et les machines virtuelles Azure](./vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines.md).
 
-- [Qu’est-ce que Les aperçus d’applications?](/azure/application-insights/app-insights-overview)
+- [Présentation d’Application Insights](/azure/application-insights/app-insights-overview)

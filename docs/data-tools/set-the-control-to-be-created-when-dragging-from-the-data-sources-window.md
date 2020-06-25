@@ -1,7 +1,7 @@
 ---
 title: Définir le contrôle à créer lors d’une opération de glisser-déplacer à partir de la fenêtre sources de données
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - Data Sources Window, select controls
 - Windows Forms, displaying data
@@ -13,12 +13,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 5193f3e3a0a1f4a06cc4830036ecf63806a1dbee
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 8f5a3cf2d1f34ca9a3d0c2918a8f3f0a3e05260f
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75586183"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85281537"
 ---
 # <a name="set-the-control-to-be-created-when-dragging-from-the-data-sources-window"></a>Définir le contrôle à créer lors d’une opération de glisser-déplacer à partir de la fenêtre Sources de données
 
@@ -37,7 +37,7 @@ Dans ce contexte, le terme *objet* fait référence à un objet métier personna
 2. Dans la fenêtre **sources de données** , sélectionnez l’élément qui représente la table de données ou l’objet que vous souhaitez définir.
 
    > [!TIP]
-   > Si la fenêtre **sources de données** n’est pas ouverte, vous pouvez l’ouvrir en sélectionnant **Afficher** > d’autres **sources de données** **Windows** > .
+   > Si la fenêtre **sources de données** n’est pas ouverte, vous pouvez l’ouvrir en sélectionnant **Afficher**d'  >  **autres**  >  **sources de données**Windows.
 
 3. Cliquez sur le menu déroulant de l’élément, puis cliquez sur l’un des éléments suivants dans le menu :
 
