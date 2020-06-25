@@ -1,22 +1,21 @@
 ---
 title: Inspecter les propriétés XAML pendant le débogage | Microsoft Docs
 ms.date: 11/12/2019
-ms.topic: conceptual
+ms.topic: how-to
 ms.assetid: 390edde4-7b8d-4c89-8d69-55106b7e6b11
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.technology: vs-ide-debug
 ms.workload:
 - uwp
-ms.openlocfilehash: 36246f959aa49e49aa84defc203075f163c67118
-ms.sourcegitcommit: 9de7d25056da59df0941508c80c0b12766ba6580
+ms.openlocfilehash: 1c8ac187f5602d1c422fe5699d36deee70341b0f
+ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "77706410"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85331080"
 ---
-# <a name="inspect-xaml-properties-while-debugging"></a>Inspecter les propriétés XAML en phase de débogage 
+# <a name="inspect-xaml-properties-while-debugging"></a>Inspecter les propriétés XAML en phase de débogage
 
 Vous pouvez obtenir une vue en temps réel de votre code XAML en cours d’exécution à l’aide de l’**arborescence d’éléments visuels en direct** et de l’**Explorateur de propriétés en direct**. Ces outils affichent une arborescence des éléments de l'interface utilisateur de votre application XAML en cours d'exécution et montrent les propriétés d'exécution de tout élément d'interface utilisateur que vous sélectionnez.
 
@@ -25,7 +24,7 @@ Vous pouvez utiliser ces outils dans les configurations suivantes :
 |Type d’application|Système d'exploitation et outils|
 |-----------------|--------------------------------|
 |Applications Windows Presentation Foundation (4.0 et versions ultérieures).|Windows 7 et versions ultérieures|
-|Applications Windows universelles|Windows 10 et versions ultérieures, avec le [Kit de développement logiciel (SDK) Windows 10](https://dev.windows.com/downloads/windows-10-sdk)|
+|Applications pour la plateforme Windows universelle|Windows 10 et versions ultérieures, avec le [Kit de développement logiciel (SDK) Windows 10](https://dev.windows.com/downloads/windows-10-sdk)|
 
 ## <a name="look-at-elements-in-the-live-visual-tree"></a>Examiner les éléments dans l’arborescence d’éléments visuels dynamique
 
@@ -33,7 +32,7 @@ Commençons par une application WPF très simple qui présente une vue Liste et 
 
 ### <a name="create-the-project"></a>Créer le projet
 
-1. Créez une application C# WPF (**fichier** > **nouveau** **projet** > , tapezC# « WPF », puis choisissez **application WPF (.net Core)** ou **application WPF (.NET Framework)** ). Nommez-la **TestXAML**.
+1. Créez une application WPF c# (**fichier**  >  **nouveau**  >  **projet**, tapez « C# WPF », puis choisissez **application WPF (.net Core)** ou **application WPF (.NET Framework)**). Nommez-la **TestXAML**.
 
 1. Modifiez MainWindow.xaml comme suit :
 
@@ -78,48 +77,48 @@ Commençons par une application WPF très simple qui présente une vue Liste et 
 
    Quand la fenêtre s’affiche, la barre d’outils dans l’application s’affiche dans votre application en cours d’exécution.
 
-   ::: moniker range=">= vs-2019" 
-   ![Fenêtre principale de l’application](../debugger/media/vs-2019/livevisualtree-app.png "LiveVIsualTree-application")
+   ::: moniker range=">= vs-2019"
+   ![Fenêtre principale de l'application](../debugger/media/vs-2019/livevisualtree-app.png "LiveVIsualTree-application")
    ::: moniker-end
-   ::: moniker range="vs-2017" 
-   ![Fenêtre principale de l’application](../debugger/media/livevisualtree-app.png "LiveVIsualTree-application")
+   ::: moniker range="vs-2017"
+   ![Fenêtre principale de l'application](../debugger/media/livevisualtree-app.png "LiveVIsualTree-application")
    ::: moniker-end
 
 1. Maintenant, cliquez sur le bouton **Ajouter un élément** plusieurs fois pour ajouter de nouveaux éléments à la liste.
 
 ### <a name="inspect-xaml-properties"></a>Inspecter les propriétés XAML
 
-1. Ensuite, ouvrez la fenêtre arborescence d’éléments **visuels en direct** en cliquant sur le bouton très à gauche de la barre d’outils dans l’application (ou en accédant à **déboguer > arborescence d’éléments visuels en direct de Windows >** ). Une fois qu’elle est ouverte, faites-la glisser en dehors de sa position d’ancrage pour que nous puissions examiner cette fenêtre et la fenêtre de **Propriétés en direct** côte à côte.
+1. Ensuite, ouvrez la fenêtre arborescence d’éléments **visuels en direct** en cliquant sur le bouton très à gauche de la barre d’outils dans l’application (ou en accédant à **déboguer > arborescence d’éléments visuels en direct de Windows >**). Une fois qu’elle est ouverte, faites-la glisser en dehors de sa position d’ancrage pour que nous puissions examiner cette fenêtre et la fenêtre de **Propriétés en direct** côte à côte.
 
 1. Dans la fenêtre **Arborescence d’éléments visuels en direct**, développez le nœud **ContentPresenter**. Il doit contenir des nœuds pour le bouton et la zone de liste. Développez la zone de liste (puis **ScrollContentPresenter** et **ItemsPresenter**) pour rechercher les éléments de zone de liste.
 
-   ::: moniker range=">= vs-2019" 
+   ::: moniker range=">= vs-2019"
    Si vous ne voyez pas le nœud **ContentPresenter** , activez/désactivez l’icône **afficher uniquement mon code XAML** dans la barre d’outils. À compter de Visual Studio 2019 version 16,4, la vue des éléments XAML est simplifiée par défaut à l’aide de la fonctionnalité juste mon XAML. Vous pouvez également [désactiver ce paramètre](../debugger/general-debugging-options-dialog-box.md) dans les options pour toujours afficher tous les éléments XAML.
    ::: moniker-end
 
    La fenêtre doit ressembler à ceci :
 
-   ::: moniker range=">= vs-2019" 
-   ![ListBoxItem dans l’arborescence d’éléments visuels dynamique](../debugger/media/vs-2019/livevisualtree-listboxitems.png "LiveVisualTree-ListBoxItem")
+   ::: moniker range=">= vs-2019"
+   ![ListBoxItems dans l'arborescence d'éléments visuels dynamique](../debugger/media/vs-2019/livevisualtree-listboxitems.png "LiveVisualTree-ListBoxItem")
    ::: moniker-end
-   ::: moniker range="vs-2017" 
-   ![ListBoxItem dans l’arborescence d’éléments visuels dynamique](../debugger/media/livevisualtree-listboxitems.png "LiveVisualTree-ListBoxItem")
+   ::: moniker range="vs-2017"
+   ![ListBoxItems dans l'arborescence d'éléments visuels dynamique](../debugger/media/livevisualtree-listboxitems.png "LiveVisualTree-ListBoxItem")
    ::: moniker-end
 
 1. Revenez à la fenêtre d'application et ajoutez quelques éléments. Vous devriez voir des éléments de zone de liste supplémentaires dans l’**arborescence d’éléments visuels en direct**.
 
 1. À présent, examinons les propriétés de l’un des éléments de la zone de liste.
 
-   Sélectionnez le premier élément de zone de liste dans l’**arborescence d’éléments visuels en direct** et cliquez sur l’icône **Afficher les propriétés** dans la barre d’outils. L’**Explorateur de propriétés en direct** doit apparaître. Notez que le champ de **contenu** est « Item1 » et que le champ **de couleur** d' **arrière-plan** > est **#FFFFFFE0**.
-   
-1. Revenez à l’**arborescence d’éléments visuels en direct** et sélectionnez le deuxième élément de zone de liste. L' **Explorateur de propriétés en direct** doit indiquer que le champ de **contenu** est « Item2 » et que le champ de **couleur** d' **arrière-plan** > est **#FFD3D3D3** (selon le thème).
+   Sélectionnez le premier élément de zone de liste dans l’**arborescence d’éléments visuels en direct** et cliquez sur l’icône **Afficher les propriétés** dans la barre d’outils. L’**Explorateur de propriétés en direct** doit apparaître. Notez que le champ de **contenu** est « Item1 » et que le champ de couleur d' **arrière-plan**  >  **Color** est **#FFFFFFE0**.
+
+1. Revenez à l’**arborescence d’éléments visuels en direct** et sélectionnez le deuxième élément de zone de liste. L' **Explorateur de propriétés en direct** doit indiquer que le champ de **contenu** est « Item2 » et que le champ de couleur d' **arrière-plan**  >  **Color** est **#FFD3D3D3** (selon le thème).
 
    > [!NOTE]
-   > Une bordure jaune autour d’une propriété dans l **'Explorateur de propriétés en direct** signifie que la valeur de propriété est définie via une liaison, telle que `Color = {BindingExpression}`. Une bordure verte signifie que la valeur est définie à l’aide d’une ressource, par exemple `Color = {StaticResource MyBrush}`.
+   > Une bordure jaune autour d’une propriété dans l **'Explorateur de propriétés en direct** signifie que la valeur de propriété est définie via une liaison, telle que `Color = {BindingExpression}` . Une bordure verte signifie que la valeur est définie à l’aide d’une ressource, telle que `Color = {StaticResource MyBrush}` .
 
    La structure réelle du code XAML inclut de nombreux éléments qui ne vous intéressent probablement pas directement et, si vous ne connaissez pas bien le code, vous pouvez avoir des difficultés à parcourir l’arborescence pour trouver ce que vous recherchez. Par conséquent, l’**arborescence d’éléments visuels en direct** propose quelques méthodes vous permettant d’utiliser l’interface utilisateur de l’application pour rechercher plus facilement l’élément que vous souhaitez examiner.
 
-   ::: moniker range=">= vs-2019" 
+   ::: moniker range=">= vs-2019"
    **Sélectionnez l’élément dans l’application en cours d’exécution**. Vous pouvez activer ce mode quand vous sélectionnez le bouton le plus à gauche de la barre d’outils de l’**arborescence d’éléments visuels en direct**. Quand ce mode est activé, vous pouvez sélectionner un élément d’interface utilisateur dans l’application et l’**arborescence d’éléments visuels en direct** (ainsi que la **visionneuse de propriétés en direct**) est automatiquement mise à jour pour afficher le nœud dans l’arborescence correspondant à cet élément, et ses propriétés. À compter de Visual Studio 2019 version 16,4, vous pouvez [configurer le comportement de la sélection des éléments](../debugger/general-debugging-options-dialog-box.md).
 
    **Afficher les ornements de disposition dans l’application en cours d’exécution**. Vous pouvez activer ce mode quand vous sélectionnez le bouton situé immédiatement à droite du bouton Activer la sélection. Quand l’option **Afficher les ornements de disposition** est activée, la fenêtre d’application affiche des lignes horizontales et verticales le long des limites de l’objet sélectionné pour vous permettre de voir sur quoi il est aligné, ainsi que des rectangles montrant les marges. Par exemple, activez à la fois l' **élément de sélection** et la **disposition d’affichage** sur, puis sélectionnez le bloc de texte ajouter un **élément** dans l’application. Vous devez voir le nœud du bloc de texte dans l’**arborescence d’éléments visuels en direct** et les propriétés du bloc de texte dans la **visionneuse de propriétés en direct**, ainsi que les lignes horizontales et verticales sur les limites du bloc de texte.
@@ -129,7 +128,7 @@ Commençons par une application WPF très simple qui présente une vue Liste et 
    **Aperçu de la sélection**. Vous pouvez activer ce mode en sélectionnant le troisième bouton en partant de la gauche dans la barre d'outils de l'arborescence d'éléments visuels dynamique. Ce mode affiche le code XAML dans lequel l'élément a été déclaré, si vous avez accès au code source de l'application. Sélectionnez **Sélectionner un élément** et **prévisualiser la sélection**, puis sélectionnez le bouton dans notre application de test. Le fichier MainWindow.xaml s'ouvre dans Visual Studio et le curseur est placé sur la ligne où le bouton est défini.
    ::: moniker-end
 
-   ::: moniker range="vs-2017" 
+   ::: moniker range="vs-2017"
    **Activer la sélection dans l’application en cours d’exécution**. Vous pouvez activer ce mode quand vous sélectionnez le bouton le plus à gauche de la barre d’outils de l’**arborescence d’éléments visuels en direct**. Quand ce mode est activé, vous pouvez sélectionner un élément d’interface utilisateur dans l’application et l’**arborescence d’éléments visuels en direct** (ainsi que la **visionneuse de propriétés en direct**) est automatiquement mise à jour pour afficher le nœud dans l’arborescence correspondant à cet élément, et ses propriétés.
 
    **Afficher les ornements de disposition dans l’application en cours d’exécution**. Vous pouvez activer ce mode quand vous sélectionnez le bouton situé immédiatement à droite du bouton Activer la sélection. Quand l’option **Afficher les ornements de disposition** est activée, la fenêtre d’application affiche des lignes horizontales et verticales le long des limites de l’objet sélectionné pour vous permettre de voir sur quoi il est aligné, ainsi que des rectangles montrant les marges. Par exemple, activez les deux options **Activer la sélection** et **Afficher la disposition**, puis sélectionnez le bloc de texte **Ajouter un élément** dans l’application. Vous devez voir le nœud du bloc de texte dans l’**arborescence d’éléments visuels en direct** et les propriétés du bloc de texte dans la **visionneuse de propriétés en direct**, ainsi que les lignes horizontales et verticales sur les limites du bloc de texte.

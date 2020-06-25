@@ -1,7 +1,7 @@
 ---
 title: VSPerfReport | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - command-line tools, VSPerfReporttool
 - performance tools, VSPerfReport tool
@@ -16,12 +16,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 282bb801625429d639e625a0a5edb02a8fb4da25
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 54d5de2395c0ce95bc0c20c3ae7810b2762122fa
+ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74777983"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85329952"
 ---
 # <a name="vsperfreport"></a>VSPerfReport
 L’outil en ligne de commande VSPerfReport permet de créer des rapports à l’aide des fichiers de données des outils de profilage [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Le format de rapport par défaut est un fichier .*csv*.
@@ -52,10 +52,10 @@ VSPerfReport [/U] /diff vspfilename1 vspfilename2 [/options]
 |-------------|-----------------|
 |**U**|La sortie du rapport et la sortie de la console redirigée sont écrites au format Unicode. Doit être la première option spécifiée.|
 |**Summary:**[*types*]|Crée un ou plusieurs types de rapports.<br /><br /> -   `All` : tous les types de rapport sont générés.<br />-   `CallerCallee` : relations parent/enfant entre les fonctions.<br />-   `Function` : fonctions appelées.<br />-   `CallTree` : hiérarchie des fonctions appelées.<br />-   `Counter` : toutes les marques ainsi que les valeurs des compteurs de performances Windows.<br />-   `Ip` : instructions profilées.<br />-   `Life` : durée de vie des objets alloués (disponible lorsque les données d’allocation ont été collectées).<br />-   `Line` : données de profil de la ligne du code source.<br />-   `Header` : le rapport contient des informations d’en-tête de fichier.<br />-   `Mark` : toutes les marques.<br />-   `Module` : modules profilés.<br />-   `Process` : processus profilés.<br />-   `Thread` : threads profilés.<br />-   `Type` : types alloués.<br />-   `Contention` : contentions de ressource.<br />-   `RuleWarnings` : problèmes de règles de performance.<br />-   `ETW` : tous les événements de suivi d’événements pour Windows (ETW) collectés dans l’exécution du profilage. Le fichier de données .etl doit être à son emplacement d’origine ou dans le répertoire qui contient le fichier .vsp ou .vsps.|
-|**Xml**|Rapport de sortie au format XML.|
+|**Langage**|Rapport de sortie au format XML.|
 |**CallTrace**|Crée une liste d’entrées et de sorties de fonction, d’événements ETW et de marques.|
 |**ClearPackedSymbols**|Supprime les symboles précédemment incorporés d’un fichier de données du profileur. Exécutez cette commande avant d’exécuter PackSymbols une deuxième fois.|
-|**SymbolPath:**`path`|Spécifie un ou plusieurs chemins de recherche ou serveurs de symboles qui contiennent les symboles pour le fichier de données du profileur.|
+|**SymbolPath :**`path`|Spécifie un ou plusieurs chemins de recherche ou serveurs de symboles qui contiennent les symboles pour le fichier de données du profileur.|
 |**DebugSymPath**|Répertorie les emplacements dans lesquels la recherche des symboles est effectuée et indique si des symboles sont trouvés. Cette option est utile pour résoudre les problèmes de résolution de symboles.|
 |**PackSymbols**|Enregistre les symboles dans le fichier de données de profilage (.vsp) pour que les fichiers de symboles (.*pdb*) ne soient pas nécessaires à l’analyse.|
 |**Output:** *chemin*&#124;*nom_fichier*|Spécifie un autre emplacement pour les fichiers de rapport générés. Par défaut, les rapports sont créés dans le répertoire actif.|
@@ -70,25 +70,25 @@ VSPerfReport [/U] /diff vspfilename1 vspfilename2 [/options]
 
 |Options|Description|
 |-------------|-----------------|
-|**JustMyCode****:**[`caller`: [][,`callee`]]|Affiche uniquement les appels de fonction d’application utilisateur et masque les appels système.<br /><br /> -   Aucun paramètre : masque toutes les fonctions système.<br />-   `caller` : affiche un niveau de fonctions système qui appellent des fonctions d’application.<br />-   `callee` : affiche un niveau de fonctions système appelées par les fonctions d’application utilisateur.|
-|**StartTime:**[*valeur*]|Affiche uniquement les données collectées après la valeur (en millisecondes).|
-|**EndTime:**[*valeur*]|Affiche uniquement les données collectées avant la valeur (en millisecondes).|
+|**JustMyCode**[**:**[ `caller` ] [, `callee` ]]|Affiche uniquement les appels de fonction d’application utilisateur et masque les appels système.<br /><br /> -   Aucun paramètre : masque toutes les fonctions système.<br />-   `caller` : affiche un niveau de fonctions système qui appellent des fonctions d’application.<br />-   `callee` : affiche un niveau de fonctions système appelées par les fonctions d’application utilisateur.|
+|**StartTime :**[*valeur*]|Affiche uniquement les données collectées après la valeur (en millisecondes).|
+|**EndTime :**[*valeur*]|Affiche uniquement les données collectées avant la valeur (en millisecondes).|
 |**FilterFile:** `VSPFFile`|Spécifie l’emplacement d’un fichier filtre qui a été généré à partir de la fenêtre Rapport de performances de Visual Studio.|
-|**MsFilter:**[*début, durée*]|Affiche uniquement les données de `starttime` jusqu’à la fin de `duration` (en millisecondes).|
-|**Processus:**[*pid*]|Affiche uniquement les données du processus spécifié.|
-|**Thread:**[*threadid*]|Affiche uniquement les données du thread spécifié.|
-|**Thread:**[*threadid,processid*]|Affiche uniquement les données du thread spécifié associé au processus spécifié.|
+|**MsFilter :**[*StartTime, Duration*]|Affiche uniquement les données de `starttime` jusqu’à la fin de `duration` (en millisecondes).|
+|**Processus :**[*PID*]|Affiche uniquement les données du processus spécifié.|
+|**Thread :**[*ThreadID*]|Affiche uniquement les données du thread spécifié.|
+|**Thread :**[*ThreadID, ProcessId*]|Affiche uniquement les données du thread spécifié associé au processus spécifié.|
 
 ## <a name="difference-report-options"></a>Options du rapport des différences
  Le tableau suivant décrit les options disponibles pour comparer des fichiers de rapport.
 
 |Options|Description|
 |-------------|-----------------|
-|**Diff**  `vspfile1 vspfile2`|Compare deux fichiers de rapports (.*vsp* ou .*vsps*). Les options de résumé sont ignorées à l’aide de l’option diff.|
+|**Différenci**  `vspfile1 vspfile2`|Compare deux fichiers de rapports (.*vsp* ou .*vsps*). Les options de résumé sont ignorées à l’aide de l’option diff.|
 |**Diff:**[*value*]|Au-dessous de cette valeur de seuil, la différence entre deux valeurs est ignorée. De même, les nouvelles données avec des valeurs en dessous de ce seuil ne sont pas affichées.|
-|**DiffTable:**[*nom de table*]|Utilise cette table spécifique pour comparer des fichiers. La valeur par défaut est la table des fonctions.|
-|**DiffColumn:**[*nom de colonne*]|Utilise cette colonne spécifique pour comparer des valeurs. La valeur par défaut est la colonne de pourcentage d’échantillons exclusifs.|
+|**DiffTable :**[*TableName*]|Utilise cette table spécifique pour comparer des fichiers. La valeur par défaut est la table des fonctions.|
+|**DiffColumn :**[*ColumnName*]|Utilise cette colonne spécifique pour comparer des valeurs. La valeur par défaut est la colonne de pourcentage d’échantillons exclusifs.|
 |**QueryDiffTables**|Affiche les tables et colonnes valides pour les deux fichiers de rapports fournis.|
 
 ## <a name="see-also"></a>Voir aussi
-- [Vues du rapport des performances](../profiling/performance-report-views.md)
+- [Vues des rapports de performances](../profiling/performance-report-views.md)

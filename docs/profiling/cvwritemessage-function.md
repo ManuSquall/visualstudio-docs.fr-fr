@@ -1,7 +1,7 @@
 ---
 title: CvWriteMessage, fonction | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - cvmarkers/CvWriteMessageW
 - cvmarkers/CvWriteMessageExW
@@ -26,12 +26,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ea9fd21c346a61939683ee05e3cb9ef3123cc03d
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 66fb584090a0b6483c18f8254eb4a96b6186d51e
+ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "62936658"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85332124"
 ---
 # <a name="cvwritemessage-function"></a>CvWriteMessage, fonction
 Écrit un message dans le fichier de trace du visualiseur concurrentiel.
@@ -106,7 +106,7 @@ HRESULT CvWriteMessageExVA(
 ## <a name="return-value"></a>Valeur retournée
  S_OK lorsque le message est correctement écrit. Code d’erreur en cas d’erreur. Utilisez les macros SUCCEEDED/FAILED pour vérifier la condition d’erreur.
 
-## <a name="requirements"></a>Spécifications
+## <a name="requirements"></a>Configuration requise
  **En-tête :** *cvmarkers.h*
 
  **Unicode** : CvWriteMessageW, CvWriteMessageVW, CvWriteMessageExW, CvWriteMessageExVW
@@ -114,4 +114,4 @@ HRESULT CvWriteMessageExVA(
  **ANSI** : CvWriteMessageA, CvWriteMessageVA, CvWriteMessageExA, CvWriteMessageExVA
 
 ## <a name="see-also"></a>Voir aussi
-- [Référence de la bibliothèque de CMD](../profiling/cpp-library-reference.md)
+- [Informations de référence sur la bibliothèque C++](../profiling/cpp-library-reference.md)

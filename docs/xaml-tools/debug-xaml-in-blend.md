@@ -6,15 +6,14 @@ ms.assetid: 29a37182-2a2c-47e4-a4a9-2d5412738fed
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.technology: vs-ide-debug
 ms.workload:
 - uwp
-ms.openlocfilehash: 04bd4540de47ec8a9da86069acb33770f9c800b8
-ms.sourcegitcommit: 9de7d25056da59df0941508c80c0b12766ba6580
+ms.openlocfilehash: d5d40878e40641b9a54a411af122f6207a02a7a1
+ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "77706370"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85331041"
 ---
 # <a name="debug-xaml-in-blend"></a>Déboguer XAML dans Blend
 
@@ -53,13 +52,13 @@ L’exemple suivant vous guide à travers une session de débogage XAML simple d
 
 2. Dans la liste des types de projets, cliquez sur **Windows universel**.
 
-3. Dans la liste des modèles de projet, cliquez sur **application vide (Windows universel)** .
+3. Dans la liste des modèles de projet, cliquez sur **application vide (Windows universel)**.
 
-4. Dans la zone de texte **nom** , tapez `DebuggingSample`.
+4. Dans la zone de texte **nom** , tapez `DebuggingSample` .
 
 5. Dans la zone de texte **Emplacement**, vérifiez l’emplacement du projet.
 
-6. Dans la liste **Langage**, cliquez sur **Visual C#** , puis sur **OK** pour créer le projet.
+6. Dans la liste **Langage**, cliquez sur **Visual C#**, puis sur **OK** pour créer le projet.
 
 7. Cliquez avec le bouton droit sur l’aire de conception, puis cliquez sur **Afficher la source** pour passer à la vue **Fractionné**.
 
@@ -89,11 +88,11 @@ L’exemple suivant vous guide à travers une session de débogage XAML simple d
     </Grid>
     ```
 
-10. Appuyez sur **Ctrl**+**MAJ**+**B** pour générer le projet.
+10. Appuyez sur **CTRL** + **MAJ** + **B** pour générer le projet.
 
     Un message d’erreur s’affiche vous indiquant que le projet ne peut pas être généré et le volet **Résultats** listant les erreurs apparaît au bas de l’application.
 
-    ![Déboguer du XAML dans Blend pour Visual Studio](../debugger/media/blend_debugxaml_xaml.png "blend_debugXAML_XAML")
+    ![Déboguer XAML dans Blend pour Visual Studio](../debugger/media/blend_debugxaml_xaml.png "blend_debugXAML_XAML")
 
 ### <a name="resolve-xaml-errors"></a>Résoudre les erreurs XAML
 
@@ -103,17 +102,17 @@ Quand des erreurs XAML sont détectées, l'aire de conception affiche une alert
 
 1. Double-cliquez sur la première erreur de la liste. La description est « la valeur «< » n’est pas valide dans un attribut.» Lorsque vous double-cliquez sur l'erreur, le pointeur trouve l'emplacement correspondant dans le code. Le `<` est valide, étant placé devant `Button` et non pas devant un attribut, comme indiqué dans le message d'erreur. Si vous examinez la ligne de code précédente, vous remarquez que le guillemet anglais fermant de l'attribut `Top` est manquant. Tapez le guillemet anglais fermant. Notez que la liste d’erreurs dans le volet **Résultats** est mise à jour au fur et à mesure de vos modifications.
 
-2. Double-cliquez sur la description « 0 » n’est pas valide au début d’un nom.» `Margin="0,149,0,0"` semble bien formée. Toutefois, notez que le codage en couleur de `Margin` n'est pas le même que celui des autres instances de `Margin` dans le code. L'absence de guillemets anglais fermants dans la paire nom/valeur précédente (`VerticalAlignment="Top`) fait que `Margin="` est lu comme faisant partie de la valeur de l'attribut précédent, et 0 est lu comme le début de la paire nom/ valeur. Tapez le guillemet anglais fermant pour `Top`. La liste d’erreurs dans le volet **Résultats** est mise à jour au fur et à mesure de vos modifications.
+2. Double-cliquez sur la description « 0 » n’est pas valide au début d’un nom.» `Margin="0,149,0,0"`semble être correctement construit. Toutefois, notez que le codage en couleur de `Margin` n'est pas le même que celui des autres instances de `Margin` dans le code. L'absence de guillemets anglais fermants dans la paire nom/valeur précédente (`VerticalAlignment="Top`) fait que `Margin="` est lu comme faisant partie de la valeur de l'attribut précédent, et 0 est lu comme le début de la paire nom/ valeur. Tapez le guillemet anglais fermant pour `Top`. La liste d’erreurs dans le volet **Résultats** est mise à jour au fur et à mesure de vos modifications.
 
 3. Double-cliquez sur l'erreur restante : « Le Bouton de balise XML de fermeture ne correspond pas » Le pointeur se trouve sur la balise **Grid** de début (`</Grid>`), indiquant que l’erreur est située à l’intérieur de l’objet `Grid`. Notez que l’étiquette de fermeture est manquante dans le deuxième objet `Button`. Une fois le `/` de fermeture ajouté, la liste du volet **Résultats** est mise à jour. Ces erreurs initiales sont à présent résolues, mais deux erreurs supplémentaires ont été identifiées.
 
 4. Double-cliquez sur « Le membre "contenu" n'est pas reconnu ou n'est pas accessible. ». Le `c` dans `content` devrait être en majuscules. Remplacez le « c » minuscule par un « c » majuscule.
 
-5. Double-cliquez sur « la propriété’mame’n’existe pas dans l’espace de noms `http://schemas.microsoft.com/winfx/2006/xaml` ». Le « M » dans « Mame » devrait être un « N ». Remplacez le « M » par un « N ». Maintenant que le code XAML peut être analysé, l'application s'affiche sur l'aire de conception.
+5. Double-cliquez sur « la propriété’mame’n’existe pas dans l' `http://schemas.microsoft.com/winfx/2006/xaml` espace de noms. » Le « M » dans « Mame » devrait être un « N ». Remplacez le « M » par un « N ». Maintenant que le code XAML peut être analysé, l'application s'affiche sur l'aire de conception.
 
-    ![Débogage XAML dans Blend pour Visual Studio](../debugger/media/blend_debugartboard_xaml.png "blend_debugArtboard_XAML")
+    ![Débogage de XAML dans Blend pour Visual Studio](../debugger/media/blend_debugartboard_xaml.png "blend_debugArtboard_XAML")
 
-    Appuyez sur **Ctrl**+**MAJ**+**B** pour générer votre projet et confirmer qu’il n’y a pas d’erreurs restantes.
+    Appuyez sur **CTRL** + **MAJ** + **B** pour générer votre projet et confirmer qu’il n’y a pas d’erreurs restantes.
 
 ## <a name="debug-in-visual-studio"></a>Déboguer dans Visual Studio
 
@@ -121,6 +120,6 @@ Vous pouvez ouvrir Blend Projects dans Visual Studio pour déboguer plus facilem
 
 Pour plus d’informations sur le débogage de votre application, consultez [Déboguer des applications UWP dans Visual Studio](../debugger/debugging-windows-store-and-windows-universal-apps.md).
 
-## <a name="get-help"></a>Obtenir de l'aide
+## <a name="get-help"></a>Aide
 
 Si vous avez besoin d’aide supplémentaire sur le débogage de votre application Blend, vous pouvez rechercher des publications relatives à votre problème sur les forums de la [communauté d’applications UWP](https://social.msdn.microsoft.com/Forums/windowsapps/home?category=windowsapps) ou publier une question.

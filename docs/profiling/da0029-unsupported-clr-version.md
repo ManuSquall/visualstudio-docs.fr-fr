@@ -1,7 +1,7 @@
 ---
-title: 'DA0029 : version CLR non prise en charge | Microsoft Docs'
+title: DA0029-version CLR non prise en charge | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - vs.performance.29
 - vs.performance.rules.DA0029
@@ -16,12 +16,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: dbc0bfcdb49557e56711b60dca11977a3504d907
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 266bf906c37ae6de4bdcb9b7be9688b95bcaa8a4
+ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74777513"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85332381"
 ---
 # <a name="da0029-unsupported-clr-version"></a>DA0029 : version CLR non prise en charge
 
@@ -33,7 +33,7 @@ ms.locfileid: "74777513"
 |Message|Une version CLR non prise en charge a été détectée lors de la collection. Les symboles managés peuvent ne pas être résolus correctement.|
 |Type de règle|Information.|
 
-## <a name="cause"></a>Cause :
+## <a name="cause"></a>Cause
  Vous essayez de profiler une application qui utilise le [!INCLUDE[net_v11_long](../profiling/includes/net_v11_long_md.md)], qui n’est pas pris en charge par les Outils de profilage.
 
 ## <a name="rule-description"></a>Description de la règle

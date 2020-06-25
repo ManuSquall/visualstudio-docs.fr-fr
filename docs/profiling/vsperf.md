@@ -1,7 +1,7 @@
 ---
 title: VSPerf | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 ms.assetid: b5854e62-279e-4850-bfeb-0c6ef82f4805
 author: mikejo5000
 ms.author: mikejo
@@ -9,12 +9,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 051c983920ddc80909d721e569c5efb5ecd33a7c
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 00f8543c2fdb204a165292844cb5bf5b925c63e8
+ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74779933"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85330485"
 ---
 # <a name="vsperf"></a>VSPerf
 Utilisez l’outil en ligne de commande **VsPerf** pour :
@@ -43,7 +43,7 @@ Utilisez l’outil en ligne de commande **VsPerf** pour :
 |-|-|
 |**/launch:{exécutable}**|Démarre et commence le profilage du fichier exécutable spécifié.|
 |**/args:{arguments_exécutable}**|Spécifie les arguments de ligne de commande à passer à la cible de **/launch**.|
-|**/console**|Exécute la cible **/launch** dans une nouvelle fenêtre de commande.|
+|**/Console**|Exécute la cible **/launch** dans une nouvelle fenêtre de commande.|
 
 ## <a name="all-applications"></a>Toutes les applications
  Ces options s’appliquent à toutes les applications Windows 8 ou Windows Server 2012.
@@ -53,11 +53,11 @@ Utilisez l’outil en ligne de commande **VsPerf** pour :
 |**/attach:{PID&#124;nom_processus}[,PID&#124;nom_processus]...**|Collecte les données des processus spécifiés.<br /><br /> Utilisez le Gestionnaire des tâches pour afficher l’ID de processus (PID) et les noms de processus des applications en cours d’exécution.|
 |**/file:{nom_rapport}**|facultatif. Spécifie le fichier de sortie (écrase le fichier existant).<br /><br /> Utilisez uniquement avec /package ou /attach.|
 |**/pause**|Suspendre la collecte de données.|
-|**/CV**|Reprendre la collecte de données.|
-|**/stop**|Arrêter la collecte de données et terminer les processus cibles.|
-|**/détacher**|Arrêter la collecte de données, sans interrompre l’exécution des processus cibles.|
-|**/statut**|Afficher l’état du profileur.|
+|**/RESUME**|Reprendre la collecte de données.|
+|**/Stop**|Arrêter la collecte de données et terminer les processus cibles.|
+|**/Detach**|Arrêter la collecte de données, sans interrompre l’exécution des processus cibles.|
+|**/Status**|Afficher l’état du profileur.|
 
 ## <a name="see-also"></a>Voir aussi
-- [Outils de performance sur les applications Windows 8 et Windows Server 2012](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md)
+- [Outils d’analyse des performances sur les applications Windows 8 et Windows Server 2012](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md)
 - [Profiler à partir de la ligne de commande](../profiling/using-the-profiling-tools-from-the-command-line.md)

@@ -1,7 +1,7 @@
 ---
-title: 'DA0004 : Utilisation intensive du processeur | Microsoft Docs'
+title: DA0004-utilisation intensive du processeur | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - vs.performance.rules.DAHighProcessorUsage
 - vs.performance.rules.DA0004
@@ -14,12 +14,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: b324d26d21920bae9f03f909b2eab0c1ce7ab419
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: b3a067ae9e884ca7f6a4592dbd827eb0c028876a
+ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74777723"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85332052"
 ---
 # <a name="da0004-high-processor-usage"></a>DA0004 : Utilisation intensive du processeur
 
@@ -33,7 +33,7 @@ ms.locfileid: "74777723"
 
  Lorsque vous effectuez un profilage à l’aide de la méthode d’échantillonnage, de mémoire .NET ou de conflit des ressources, vous devez collecter au moins 10 échantillons pour déclencher cette règle.
 
-## <a name="cause"></a>Cause :
+## <a name="cause"></a>Cause
  L’utilisation du processeur (UC) était élevée dans les données de profilage qui ont été collectées à l’aide de la méthode d’instrumentation. Utilisez la méthode de profilage par échantillonnage lorsque vous profilez une application utilisant le processeur de manière intensive.
 
 ## <a name="rule-description"></a>Description de la règle

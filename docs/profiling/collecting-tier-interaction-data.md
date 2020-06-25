@@ -1,7 +1,7 @@
 ---
 title: Collecte de données d’interaction de couche | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - vs.performance.property.tierinteraction
 helpviewer_keywords:
@@ -15,12 +15,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: e01259fdd23e60a1408addc10a6af3a12479c9f2
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 4f7b2a2bb5efd86d052247825a29a06c7f5ad109
+ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74772816"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85331591"
 ---
 # <a name="collect-tier-interaction-data"></a>Collecter les données d’interaction de couche
 
@@ -48,4 +48,4 @@ En raison d’un bogue dans l’Assistant Performance, vous devez ajouter l’op
 
 ## <a name="see-also"></a>Voir aussi
 
-[Vue des interactions de niveau](../profiling/tier-interactions-view.md)
+[Vue interactions de couche](../profiling/tier-interactions-view.md)

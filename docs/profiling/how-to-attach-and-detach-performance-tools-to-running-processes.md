@@ -2,7 +2,7 @@
 title: Attacher les outils d’analyse des performances à des processus en cours d’exécution
 ms.custom: seodec18
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - vs.performance.attach
 helpviewer_keywords:
@@ -18,12 +18,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 4c4ae54d6b90166de31c338a5e606eaf31ecd6cc
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 58bbf5fa291d71b26cd303a7d43719fde8605c0a
+ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74779166"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85331137"
 ---
 # <a name="how-to-attach-and-detach-performance-tools-to-running-processes"></a>Guide pratique pour attacher les outils d’analyse des performances à des processus en cours d’exécution ou les en détacher
 Le profileur peut être utilisé pour attacher ou détacher des outils du processus en cours afin de faciliter l’échantillonnage et la collecte des données de performances. Vous pouvez utiliser cette méthode pour profiler un processus lorsque vous voulez éviter de collecter des données sur le temps de chargement de l’application ou pour surveiller les performances d’un processus après qu’il a atteint un certain état.
@@ -39,7 +39,7 @@ Le profileur peut être utilisé pour attacher ou détacher des outils du proces
 
 - Refuser à tout le monde l’accès au profilage
 
-  Pour plus d’informations, voir [Profiling et Windows Vista sécurité](../profiling/profiling-and-windows-vista-security.md) et les options ADMIN dans [VSPerfCmd](../profiling/vsperfcmd.md).
+  Pour plus d’informations, consultez [profilage et sécurité Windows Vista](../profiling/profiling-and-windows-vista-security.md) , ainsi que les options d’administration dans [VSPerfCmd](../profiling/vsperfcmd.md).
 
 ### <a name="to-attach-to-a-running-process"></a>Pour établir un attachement à un processus en cours d'exécution
 
@@ -63,7 +63,7 @@ Le profileur peut être utilisé pour attacher ou détacher des outils du proces
 
 ## <a name="see-also"></a>Voir aussi
 - [Contrôler la collecte des données](../profiling/controlling-data-collection.md)
-- [Aperçu de la séance de performance](../profiling/performance-session-overview.md)
+- [Vue d’ensemble de la session de performance](../profiling/performance-session-overview.md)
 - [Guide pratique pour démarrer et terminer la collecte des données de performances](../profiling/how-to-start-and-end-performance-data-collection.md)
 - [Profilage et sécurité Windows Vista](../profiling/profiling-and-windows-vista-security.md)
-- [Vsperfcmd](../profiling/vsperfcmd.md)
+- [VSPerfCmd](../profiling/vsperfcmd.md)

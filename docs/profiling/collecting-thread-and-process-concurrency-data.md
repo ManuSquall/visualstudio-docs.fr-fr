@@ -1,7 +1,7 @@
 ---
 title: Collecte de données de concurrence de threads et de processus | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - concurrency profiling method
 - Profiling Tools, concurrency method
@@ -11,12 +11,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: e8fda0300aad4a331366fac0a9ebd1b559cecc9d
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 39f33f2df5ad4723a612a44d1d0301bd60ed80d7
+ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74779517"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85331609"
 ---
 # <a name="collect-thread-and-process-concurrency-data"></a>Collecter les données concurrentielles de threads et de processus
 
@@ -32,14 +32,14 @@ Vous pouvez spécifier la méthode de profilage d’accès concurrentiel à l’
 
 Vous pouvez spécifier des options supplémentaires dans la boîte de dialogue des _pages de propriétés_**session de performance** . Pour ouvrir la boîte de dialogue :
 
-- Dans **Performance Explorer**, cliquez à droite sur le nom de la session de performance, puis cliquez sur **Properties**.
+- Dans **Explorateur de performances**, cliquez avec le bouton droit sur le nom de la session de performance, puis cliquez sur **Propriétés**.
 
 Les tâches du tableau suivant décrivent les options que vous pouvez spécifier dans la boîte de dialogue _Session de performance_**Pages de propriétés** quand vous effectuez un profilage à l’aide de la méthode d’accès concurrentiel.
 
 |Tâche|Contenu associé|
 |----------|---------------------|
-|Dans la page **Général**, spécifiez les détails d’affectation de noms pour le fichier de données de profilage (.vsp) généré.|- [Comment : Définir les options de nom de fichier de données de performance](../profiling/how-to-set-performance-data-file-name-options.md)|
-|Si votre solution de code contient plusieurs projets .exe, dans la page **Lancer**, spécifiez l’application à démarrer.|- [Comment: Spécifier le binaire pour commencer](../profiling/how-to-specify-the-binary-to-start.md)|
-|Dans la page **Interaction de couche** , ajoutez les données d’appel ADO.NET à l’exécution du profilage.|- [Recueillir des données d’interaction de niveau](../profiling/collecting-tier-interaction-data.md)|
-|Dans la page **Compteurs Windows** , spécifiez un ou plusieurs compteurs de performance de système d’exploitation à ajouter aux données de profilage en tant que marques.|- [Comment : Collecter des données de compteur Windows](../profiling/how-to-collect-windows-counter-data.md)|
-|Sur la page **Advanced,** spécifiez la version du délai d’exécution .NET Framework pour profiler si vos modules d’application utilisent plusieurs versions. Par défaut, la première version chargée est profilée.|- [Comment: Spécifier le temps d’exécution .NET Framework](../profiling/how-to-specify-the-dotnet-framework-runtime.md)|
+|Dans la page **Général**, spécifiez les détails d’affectation de noms pour le fichier de données de profilage (.vsp) généré.|- [Procédure : définir les options de nom de fichier de données de performances](../profiling/how-to-set-performance-data-file-name-options.md)|
+|Si votre solution de code contient plusieurs projets .exe, dans la page **Lancer**, spécifiez l’application à démarrer.|- [Comment : spécifier le binaire à démarrer](../profiling/how-to-specify-the-binary-to-start.md)|
+|Dans la page **Interaction de couche** , ajoutez les données d’appel ADO.NET à l’exécution du profilage.|- [Collecter les données d’interaction de couche](../profiling/collecting-tier-interaction-data.md)|
+|Dans la page **Compteurs Windows** , spécifiez un ou plusieurs compteurs de performance de système d’exploitation à ajouter aux données de profilage en tant que marques.|- [Comment : collecter les données des compteurs Windows](../profiling/how-to-collect-windows-counter-data.md)|
+|Dans la page **avancé** , spécifiez la version du .NET Framework au moment de l’exécution pour le profilage si vos modules d’application utilisent plusieurs versions. Par défaut, la première version chargée est profilée.|- [Comment : spécifier le Runtime .NET Framework](../profiling/how-to-specify-the-dotnet-framework-runtime.md)|

@@ -1,7 +1,7 @@
 ---
-title: Guide pratique pour spécifier le fichier binaire à démarrer | Microsoft Docs
+title: Guide pratique pour spécifier le fichier binaire à démarrer | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - vs.performance.property.itemlaunch
 helpviewer_keywords:
@@ -14,16 +14,16 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: fd3379b9769cfd6bfe1335b12545e635a9bde782
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 7f7cfd0d7a578d2ddaff28e9821f1d190bb2e10d
+ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74778685"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85331454"
 ---
 # <a name="how-to-specify-the-binary-to-start"></a>Guide pratique pour spécifier le binaire à démarrer
 
-Pour profiler les binaires, tels que les ** \<** LDL, vous devez saisir des informations dans la boîte de dialogue Target> Property Pages. Ces informations indiquent où le projet DLL peut trouver l’application appelante.
+Pour profiler des fichiers binaires, tels que des dll, vous devez entrer des informations dans la boîte de dialogue ** \<Target> pages de propriétés** . Ces informations indiquent où le projet DLL peut trouver l’application appelante.
 
 1. Dans l’**Explorateur de performances**, cliquez avec le bouton droit sur le fichier binaire cible, puis cliquez sur **Propriétés**.
 

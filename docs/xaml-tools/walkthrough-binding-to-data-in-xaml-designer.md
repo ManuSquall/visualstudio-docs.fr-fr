@@ -1,7 +1,7 @@
 ---
 title: Effectuer une liaison de données dans le concepteur XAML
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - VS.XamlDesigner.DataBinding
 dev_langs:
@@ -10,12 +10,12 @@ dev_langs:
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: 1abe14c443432d0da0ab0c53b33f9321034228be
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: f57d4f24348ff805669832ce6db9e8e4e79e4569
+ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75592930"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85330750"
 ---
 # <a name="walkthrough-bind-to-data-in-xaml-designer"></a>Procédure pas à pas : effectuer une liaison de données dans le concepteur XAML
 
@@ -85,13 +85,13 @@ Dans le concepteur XAML, vous pouvez définir des propriétés de liaison de don
 
 1. Une fois le contrôle `TextBlock` sélectionné, dans la fenêtre Propriétés, choisissez le marqueur de propriété à droite de la propriété **Text**, puis **Créer une liaison de données**. (Le marqueur de propriété se présente comme une petite case.)
 
-1. Dans la boîte de dialogue Créer une liaison de données, dans la zone **Chemin d’accès**, choisissez la propriété **ItemCount : (int32)** , puis le bouton **OK**.
+1. Dans la boîte de dialogue Créer une liaison de données, dans la zone **Chemin d’accès**, choisissez la propriété **ItemCount : (int32)**, puis le bouton **OK**.
 
      L’illustration suivante montre la boîte de dialogue **Créer une liaison de données** avec la propriété **ItemCount** sélectionnée.
 
      ![Boîte de dialogue Créer une liaison de données](../designers/media/xaml_create_data_binding.png)
 
-1. Appuyez sur **F5** pour exécuter l'application.
+1. Appuyez sur **F5** pour exécuter l’application.
 
      Le contrôle `TextBlock` doit afficher la valeur par défaut 0 sous forme de texte.
 

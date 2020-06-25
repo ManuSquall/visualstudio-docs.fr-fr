@@ -1,7 +1,7 @@
 ---
-title: Guide pratique pour configurer la réduction du bruit dans les vues Rapports | Microsoft Docs
+title: Configuration de la réduction du bruit dans les vues de rapport | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - vs.performance.noisereduction.dialog
 helpviewer_keywords:
@@ -15,12 +15,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: ccfb9dab504bc3fa9405bb56c9fce82ed18820ac
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 2920d2d7f6a77fe8fdbd62a0788f570818390eea
+ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74776330"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85330804"
 ---
 # <a name="how-to-configure-noise-reduction-in-report-views"></a>Guide pratique pour configurer la réduction du bruit dans les vues Rapports
 Vous pouvez configurer la réduction du bruit dans les rapports de performances en limitant la quantité de données affichées dans la vue Arborescence des appels et la vue Allocation. La réduction du bruit vous permet de repérer plus rapidement les problèmes de performances. Cette fonctionnalité est utile lorsque vous analysez des rapports de performances.
@@ -78,7 +78,7 @@ Vous pouvez configurer la réduction du bruit dans les rapports de performances 
 4. Cliquez sur **OK**.
 
 ## <a name="see-also"></a>Voir aussi
-- [Personnaliser les points de vue du rapport sur les outils de performance](../profiling/customizing-performance-tools-report-views.md)
-- [Comment : Exclure ou inclure des fonctions courtes de l’instrumentation](../profiling/how-to-exclude-or-include-short-functions-from-instrumentation.md)
-- [Afficher l’arbre d’appel](../profiling/call-tree-view.md)
+- [Personnaliser les vues de rapport des outils de performances](../profiling/customizing-performance-tools-report-views.md)
+- [Comment : exclure ou inclure les fonctions courtes de l’instrumentation](../profiling/how-to-exclude-or-include-short-functions-from-instrumentation.md)
+- [Vue Arborescence des appels](../profiling/call-tree-view.md)
 - [Vue Allocations](../profiling/dotnet-memory-allocations-view.md)

@@ -1,7 +1,7 @@
 ---
-title: Guide pratique pour collecter les données des compteurs Windows | Microsoft Docs
+title: Procédure de collecte des données des compteurs Windows | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - vs.performance.property.syscounter
 - vs.performance.property.wincounter
@@ -15,16 +15,16 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: c85187fd54d61fdf40956c8aee3c0a222d95a313
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 16e29d82d1cee2237886d88a24929b4c794464a5
+ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74776317"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85330873"
 ---
 # <a name="how-to-collect-windows-counter-data"></a>Guide pratique pour collecter les données des compteurs Windows
 
-Les compteurs Windows sont des compteurs de performances système dont les données peuvent être collectées à intervalles réguliers pendant le profilage. Dans la vue Marques du rapport Outils de profilage, une ligne est étiquetée **AutoMark** pour chaque intervalle de collecte. Cette ligne contient des colonnes qui décrivent les valeurs de compteur de performances avec cet intervalle. Pour limiter l’analyse à une période de temps comprise entre deux marques particulières, sélectionnez les marques, cliquez à droite, puis sélectionnez **filtre par** > **les marques** dans le menu raccourci.
+Les compteurs Windows sont des compteurs de performances système dont les données peuvent être collectées à intervalles réguliers pendant le profilage. Dans la vue Marques du rapport Outils de profilage, une ligne est étiquetée **AutoMark** pour chaque intervalle de collecte. Cette ligne contient des colonnes qui décrivent les valeurs de compteur de performances avec cet intervalle. Pour limiter l’analyse à un laps de temps entre deux marques particulières, sélectionnez les marques, cliquez avec le bouton droit, puis sélectionnez **Filtrer par**  >  **marques** dans le menu contextuel.
 
 > [!NOTE]
 > Les fonctionnalités de sécurité renforcée de Windows 8 et Windows Server 2012 ont imposé des changements importants dans la façon dont le profileur Visual Studio collecte les données sur ces plateformes. Les applications UWP nécessitent aussi de nouvelles techniques de collecte. Consultez [Outils d’analyse des performances sur les applications Windows 8 et Windows Server 2012](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).
@@ -45,10 +45,10 @@ Les compteurs Windows sont des compteurs de performances système dont les donn�
 
 7. Sélectionnez les compteurs que vous voulez utiliser pour profiler votre application.
 
-8. Cliquez sur **Appliquer**.
+8. Cliquez sur **appliquer.**
 
 ## <a name="see-also"></a>Voir aussi
 
-[Configurer les sessions de](../profiling/configuring-performance-sessions.md)
-performance[Propriétés](../profiling/performance-session-properties.md)
-de session[CPU et Windows compteurs](../profiling/cpu-and-windows-counters.md)
+[Configurer des sessions](../profiling/configuring-performance-sessions.md) 
+ de performance Propriétés de la [session de performance](../profiling/performance-session-properties.md) 
+ [Compteurs UC et Windows](../profiling/cpu-and-windows-counters.md)

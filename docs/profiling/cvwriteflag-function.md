@@ -1,7 +1,7 @@
 ---
 title: CvWriteFlag, fonction | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - cvmarkers/CvWriteFlagExVA
 - cvmarkers/CvWriteFlagExW
@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3a5a388c8f838f182d2f1f3d3f56f84b8fbf10e6
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 396edc736f61ae76aab7263bcd15bb0bfad13204
+ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "62936678"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85332156"
 ---
 # <a name="cvwriteflag-function"></a>CvWriteFlag, fonction
 Écrit un indicateur dans le fichier de trace du visualiseur concurrentiel.
@@ -76,7 +76,7 @@ HRESULT CvWriteFlagExVA(
 ## <a name="return-value"></a>Valeur retournée
  S_OK lorsque le message est correctement écrit. Code d’erreur en cas d’erreur. Utilisez les macros SUCCEEDED/FAILED pour vérifier la condition d’erreur.
 
-## <a name="requirements"></a>Spécifications
+## <a name="requirements"></a>Configuration requise
  **En-tête :** *cvmarkers.h*
 
  **Unicode** : CvWriteFlagExW, CvWriteFlagExVW
@@ -84,4 +84,4 @@ HRESULT CvWriteFlagExVA(
  <strong>ANSI</strong> : CvWriteFlagExA, CvWriteFlagExVA
 
 ## <a name="see-also"></a>Voir aussi
-- [Référence de la bibliothèque de CMD](../profiling/cpp-library-reference.md)
+- [Informations de référence sur la bibliothèque C++](../profiling/cpp-library-reference.md)

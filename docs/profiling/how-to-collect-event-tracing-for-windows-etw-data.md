@@ -1,7 +1,7 @@
 ---
-title: Guide pratique pour collecter les données de suivi d’événements pour Windows (ETW) | Microsoft Docs
+title: Procédure de collecte des données de Suivi d’v nements pour Windows (ETW) | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - vs.performance.property.events
 helpviewer_keywords:
@@ -14,12 +14,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 2fa0547682351d1a7ba4efe4ce3b4350b906462c
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 0545ee7fe64d26e21d2a9f34def8dd618c08e630
+ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74779023"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85330908"
 ---
 # <a name="how-to-collect-event-tracing-for-windows-etw-data"></a>Guide pratique pour collecter les données ETW (suivi d’événements pour Windows)
 

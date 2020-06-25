@@ -1,7 +1,7 @@
 ---
-title: Guide pratique pour installer le profileur autonome | Microsoft Docs
+title: Comment installer le profileur autonome | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - performance tools, installing stand-alone profiler
 - profiling tools, stand-alone profiler
@@ -12,12 +12,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: ec0f211db3d9906d83d9bcf7c7a0ab79ec3e1b7f
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 950927510d4c7acd77db22e80dff59946c0d6c20
+ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77557829"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85330137"
 ---
 # <a name="how-to-install-the-stand-alone-profiler"></a>Guide pratique pour installer le profileur autonome
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] fournit un profileur autonome basé sur la ligne de commande qui peut être exécuté sans installer l’IDE [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Cette situation se produit quand un environnement de développement n’est pas ou ne peut pas être installé sur un ordinateur. Par exemple, vous ne devez pas installer un environnement de développement sur un serveur web de production.
@@ -31,7 +31,7 @@ ms.locfileid: "77557829"
 
 1. Recherchez le programme d’installation de profil autonome (*vs_standaloneprofiler.exe*) où vous avez téléchargé les outils d’analyse des performances et exécutez-le.
 
-2. Ajoutez le chemin pour *vsinstr.exe* à la trajectoire du système.
+2. Ajoutez le chemin d’accès pour *vsinstr.exe* au chemin d’accès système.
 
    > [!NOTE]
    > Pour obtenir le chemin des outils de profilage, consultez [Spécifier le chemin des outils en ligne de commande](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md). Les versions 64 bits et 32 bits des outils sont disponibles sur les ordinateurs 64 bits. Pour utiliser les outils en ligne de commande du profileur, vous devez ajouter le chemin des outils à la variable d’environnement PATH dans la fenêtre d’invite de commandes, ou l’ajouter à la commande.
@@ -48,12 +48,12 @@ ms.locfileid: "77557829"
     **start %COMSPEC%**
 
    > [!NOTE]
-   > Pour des instructions détaillées sur la façon de configurer le paquet serveur symbole, voir [Comment: Informations de symbole Windows de référence](../profiling/how-to-reference-windows-symbol-information.md).
+   > Pour obtenir des instructions détaillées sur la façon de configurer le package du serveur de symboles, consultez [Guide pratique pour référencer les informations de symboles Windows](../profiling/how-to-reference-windows-symbol-information.md).
 
 6. Utilisez l’outil [VSPerfReport](../profiling/vsperfreport.md) pour sérialiser vos symboles dans le fichier de profilage de données (.vsp). Utilisez les commutateurs **VSPerfReport /summary:all /packsymbols**. Si aucun symbole n’est inséré dans votre fichier de données, vérifiez que la variable d’environnement _NT_SYMBOL_PATH est définie.
 
 ## <a name="see-also"></a>Voir aussi
 - [Profiler à partir de la ligne de commande](../profiling/using-the-profiling-tools-from-the-command-line.md)
-- [Procédure pas à pas : profilage de la ligne de commandement à l’aide d’instruments](command-line-profiling-of-stand-alone-applications.md)
-- [Comment : Informations de symbole De windows de référence](../profiling/how-to-reference-windows-symbol-information.md)
+- [Procédure pas à pas : profilage à partir de la ligne de commande à l’aide d’instrumentation](command-line-profiling-of-stand-alone-applications.md)
+- [Comment : référencer les informations de symboles Windows](../profiling/how-to-reference-windows-symbol-information.md)
 - [VSPerfReport](../profiling/vsperfreport.md)

@@ -1,7 +1,7 @@
 ---
-title: 'DA0506 : Octets privés alloués maximum au processus en cours de profilage | Microsoft Docs'
+title: DA0506-nombre maximal d’octets privés alloués pour le processus en cours de profilage | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - vs.performance.rules.DA0506
 - vs.performance.DA0506
@@ -13,14 +13,14 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 7600e65beb3035fac6d5ea58b25f6965d681f83a
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 46215f44cad7b6125af4aa34cf42e58dbad3771f
+ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74779309"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85330264"
 ---
-# <a name="da0506-maximum-private-bytes-allocated-for-the-process-being-profiled"></a>DA0506 : nombre maximal d'octets privés alloués pour le processus en cours de profilage
+# <a name="da0506-maximum-private-bytes-allocated-for-the-process-being-profiled"></a>DA0506 : Octets privés alloués au maximum au processus en cours de profilage
 
 |||
 |-|-|

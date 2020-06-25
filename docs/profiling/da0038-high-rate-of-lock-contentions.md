@@ -1,7 +1,7 @@
 ---
-title: 'DA0038 : Taux élevé de conflits de verrou | Microsoft Docs'
+title: DA0038-taux élevé de conflits de verrou | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - vs.performance.38
 - vs.performance.rules.DA0038
@@ -13,12 +13,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: d8e0218b01a162a3af8c35009bc8e733f5c386ef
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 8bb810fcc284ba4905e50153e3778552ab178291
+ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74777500"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85332350"
 ---
 # <a name="da0038-high-rate-of-lock-contentions"></a>DA0038 : Taux élevé de conflits de verrou
 
@@ -32,7 +32,7 @@ ms.locfileid: "74777500"
 
  Lorsque vous effectuez un profilage à l’aide de la méthode d’échantillonnage, de mémoire .NET ou de conflit des ressources, vous devez collecter au moins 25 échantillons pour déclencher cette règle.
 
-## <a name="cause"></a>Cause :
+## <a name="cause"></a>Cause
  Les données relatives aux performances système qui sont collectées avec les données de profilage indiquent qu’un taux très élevé de conflits de verrouillage a été relevé lors de l’exécution de l’application. Effectuez un nouveau profilage à l’aide de la méthode de profilage d’accès concurrentiel pour rechercher la cause des conflits.
 
 ## <a name="rule-description"></a>Description de la règle

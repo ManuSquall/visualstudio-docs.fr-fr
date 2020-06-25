@@ -1,7 +1,7 @@
 ---
-title: 'DA0026 : Traitement du temps processeur noyau excessif | Microsoft Docs'
+title: DA0026-traitement du temps processeur noyau excessif | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - vs.performance.rules.DA0026
 - vs.performance.DA0026
@@ -13,14 +13,14 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 2c8b4cb63eb4647ddab4220ed6729894fe8a456f
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 38452ce95b299be11e20150440c815127b66d061
+ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74777487"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85332397"
 ---
-# <a name="da0026-excessive-kernel-cpu-time-processing"></a>DA0026 : Traitement du temps processeur noyau excessif
+# <a name="da0026-excessive-kernel-cpu-time-processing"></a>DA0026 : Traitement temps CPU noyaux excessif
 
 |||
 |-|-|
@@ -32,7 +32,7 @@ ms.locfileid: "74777487"
 
  Lorsque vous effectuez un profilage à l’aide de la méthode d’échantillonnage, de mémoire .NET ou de conflit des ressources, vous devez collecter au moins 10 échantillons pour déclencher cette règle.
 
-## <a name="cause"></a>Cause :
+## <a name="cause"></a>Cause
  Le temps processeur qui a été exécuté en mode noyau a dépassé le temps passé en mode utilisateur. Effectuez de nouveau un profilage et un échantillonnage du nombre d’appels système (syscalls) pour déterminer la cause des durées élevées d’exécution en mode noyau.
 
 ## <a name="rule-description"></a>Description de la règle

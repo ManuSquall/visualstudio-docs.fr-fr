@@ -1,7 +1,7 @@
 ---
-title: 'DA0022 : Taux élevé de garbage collection Gen 2 | Microsoft Docs'
+title: DA0022-taux élevé de garbage collection Gen 2 | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - vs.performance.DA0022
 - vs.performance.rules.DA0022
@@ -13,12 +13,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 4e1fa46162f2aea74c5b3cb8396ad5e8d4c9a4cf
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: ca411b334cbfc63110887ed0d8c0dc2eccd5a873
+ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74779374"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85332410"
 ---
 # <a name="da0022-high-rate-of-gen-2-garbage-collections"></a>DA0022 : Taux élevé de garbage collection Gen 2
 
@@ -32,7 +32,7 @@ ms.locfileid: "74779374"
 
  Lorsque vous effectuez un profilage à l’aide de la méthode d’échantillonnage, de mémoire .NET ou de conflit des ressources, vous devez collecter au moins 10 échantillons pour déclencher cette règle.
 
-## <a name="cause"></a>Cause :
+## <a name="cause"></a>Cause
  Les données relatives aux performances système qui ont été collectées pendant le profilage indiquent qu’une importante quantité de mémoire allouée aux objets .NET Framework a été récupérée dans la génération 2 du garbage collection, par rapport aux garbage collections de génération 0 et 1.
 
 ## <a name="rule-description"></a>Description de la règle

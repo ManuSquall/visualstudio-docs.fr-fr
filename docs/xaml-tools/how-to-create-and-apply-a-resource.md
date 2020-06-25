@@ -1,7 +1,7 @@
 ---
 title: Guide pratique pour créer et appliquer une ressource
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - VS.XamlDesigner.CreateResource
 - VS.XamlDesigner.EditResource
@@ -11,12 +11,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2ac633f94c237bdff418375903e99f6f2da9e776
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 2301ce14fcd3d2d8a9c5d003a05186513d950cd4
+ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75592965"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85330115"
 ---
 # <a name="how-to-create-and-apply-a-resource"></a>Guide pratique pour créer et appliquer une ressource
 
@@ -24,7 +24,7 @@ Les styles et les modèles des éléments du concepteur XAML sont stockés dans 
 
 Quand vous créez une ressource à partir d’une propriété existante ([Style](xref:Windows.UI.Xaml.Style) ou [ControlTemplate](xref:Windows.UI.Xaml.Controls.ControlTemplate)), la boîte de dialogue **Créer une ressource** vous permet de définir la ressource au niveau de l’application, du document ou de l’élément. Ces niveaux déterminent où vous pouvez utiliser la ressource. Par exemple, si vous définissez la ressource au niveau de l'élément, elle peut être appliquée uniquement à l'élément sur lequel vous l'avez créée. Vous pouvez également choisir de stocker la ressource dans un [dictionnaire de ressources](/windows/uwp/design/controls-and-patterns/resourcedictionary-and-xaml-resource-references). Il s'agit d'un fichier distinct que vous pouvez réutiliser dans un autre projet.
 
-## <a name="create-a-new-resource"></a>Créer une ressource
+## <a name="create-a-new-resource"></a>Créer une nouvelle ressource
 
 1. Après avoir ouvert un fichier XAML dans le concepteur XAML, créez un élément ou choisissez un élément dans la fenêtre Structure du document.
 
@@ -34,7 +34,7 @@ Quand vous créez une ressource à partir d’une propriété existante ([Style]
 
      ![Boîte de dialogue Créer une ressource](../designers/media/xaml_create_resource.png)
 
-3. Dans la zone **Nom (Clé)** , entrez un nom de clé. C'est le nom que vous pouvez utiliser pour que d'autres éléments fassent référence à la ressource.
+3. Dans la zone **Nom (Clé)**, entrez un nom de clé. C'est le nom que vous pouvez utiliser pour que d'autres éléments fassent référence à la ressource.
 
 4. Sous **Définir dans**, choisissez l’option qui spécifie où vous voulez définir la ressource :
 
@@ -52,9 +52,9 @@ Quand vous créez une ressource à partir d’une propriété existante ([Style]
 
 1. Dans la fenêtre Structure du document, choisissez l’élément auquel vous souhaitez appliquer une ressource.
 
-2. Effectuez l'une des actions suivantes :
+2. Effectuez l’une des actions suivantes :
 
-   - Appliquer une ressource à une propriété. Dans la fenêtre **Propriétés**, cliquez sur le marqueur de propriété en regard de la valeur de propriété, choisissez **Ressource locale** ou **Ressource système**, puis sélectionnez une ressource disponible dans la liste qui apparaît.
+   - Appliquer une ressource à une propriété. Dans la fenêtre **Propriétés** , choisissez le marqueur de propriété en regard de la valeur de propriété, choisissez **ressource locale** ou **ressource système**, puis choisissez une ressource disponible dans la liste qui s’affiche.
 
       L’absence d’une ressource peut s’expliquer par le fait que son type ne correspond pas au type de la propriété.
 

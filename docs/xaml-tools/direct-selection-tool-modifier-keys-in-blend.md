@@ -1,26 +1,26 @@
 ---
-title: Touches modificatrices de l'outil Sélection directe
+title: Touches de modification de l’outil Sélection directe
 titleSuffix: Blend for Visual Studio
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 ms.assetid: 21f9b951-dc2b-4d09-bd70-75caed8fb964
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d1ac2ee5c5e71dd08e7c9aee81e640cf6f856b6f
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 0931eef87bce1a942e9c8740d248d213f1b778a4
+ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72650954"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85332312"
 ---
 # <a name="direct-selection-tool-modifier-keys-in-blend-for-visual-studio"></a>Touches de modification de l’outil Sélection directe dans Blend pour Visual Studio
 
-Le tableau suivant répertorie les raccourcis que vous pouvez utiliser pour modifier la forme d’un tracé existant avec l’outil **Sélection directe** ![outil Sélection directe](../designers/media/6dd6571f-c116-451d-8dd2-1f88b8406362.png). Pour ajouter ou supprimer des points sur un tracé existant, ou pour joindre deux tracés existants, utilisez l’outil **Stylet**.
+Le tableau suivant répertorie les raccourcis que vous pouvez utiliser pour modifier la forme d’un tracé existant avec l’outil **Sélection directe**![outil Sélection directe](../designers/media/6dd6571f-c116-451d-8dd2-1f88b8406362.png). Pour ajouter ou supprimer des points sur un tracé existant, ou pour joindre deux tracés existants, utilisez l’outil **Stylet**.
 
-|Pour|Faites cela|Pointeur|
+|Pour effectuer cette action|Action|Pointeur|
 | - |-------------|-------------|
 |Faire apparaître les poignées de tangente pour un point d’un tracé|Cliquez sur un point d'un tracé.|![Faire apparaître les poignées de tangente pour un point d’un tracé](../designers/media/cfcc5f41-a666-4524-a958-50b9051130ca.png)<br /><br /> Déplacer le pointeur de point|
 |Déplacer un point sur un tracé|Faire glisser un point sur un tracé|![Déplacer un point sur un tracé](../designers/media/cfcc5f41-a666-4524-a958-50b9051130ca.png)<br /><br /> Déplacer le pointeur de point|

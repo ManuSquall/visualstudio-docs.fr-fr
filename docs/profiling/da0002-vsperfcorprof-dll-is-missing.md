@@ -1,7 +1,7 @@
 ---
-title: 'DA0002 : VSPerfCorProf.dll est manquant | Microsoft Docs'
+title: DA0002-VSPerfCorProf.dll est manquant | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - vs.performance.DA0002
 - vs.performance.2
@@ -14,24 +14,24 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: f768a35e7c50ec55867ae49901718063ca39bd0b
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 73cf890ebbee31e2fa681727b0c72e0ce71d3585
+ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74777749"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85332100"
 ---
-# <a name="da0002-vsperfcorprofdll-is-missing"></a>DA0002 : VSPerfCorProf.dll manquant
+# <a name="da0002-vsperfcorprofdll-is-missing"></a>DA0002 : VSPerfCorProf.dll est manquant
 
 |||
 |-|-|
 |ID de règle|DA0002|
 |Category|Utilisation des outils de profilage|
 |Méthodes de profilage|Profilage avec les outils en ligne de commande VSPerfCmd et VSPerfASPNETCmd|
-|Message|Il semble que le fichier a été collecté sans bien définir les variables de l’environnement avec *VSPerfCLREnv.cmd*. Les symboles pour des fichiers binaires managés peuvent ne pas être résolus.|
+|Message|Il semble que le fichier ait été collecté sans définir correctement les variables d’environnement avec *VSPerfCLREnv. cmd*. Les symboles pour des fichiers binaires managés peuvent ne pas être résolus.|
 |Type de règle|Information|
 
-## <a name="cause"></a>Cause :
+## <a name="cause"></a>Cause
  Le profileur n’a pas trouvé *VSPerfCorProf.dll* lors de l’exécution du profilage. Cet avertissement se produit quand les outils en ligne de commande pour la collecte de données du profileur sont utilisés sans l’outil *VSPerfCLREnv.cmd* pour initialiser les variables d’environnement nécessaires. L’avertissement peut également se déclencher si un autre profileur est en cours d’exécution quand les outils de profilage démarrent.
 
 ## <a name="rule-description"></a>Description de la règle

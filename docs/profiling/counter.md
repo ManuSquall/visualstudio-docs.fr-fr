@@ -1,7 +1,7 @@
 ---
 title: Counter | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 ms.assetid: aa4b4cdb-e6ea-433a-9579-56f3785e1385
 author: mikejo5000
 ms.author: mikejo
@@ -9,12 +9,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 9e2f1684257ed39560fa0ea049d3296a6e45cdd7
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 64c882514d6bcf27de36a6ca4420fbaf671c72f2
+ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74779478"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85331191"
 ---
 # <a name="counter"></a>Compteur
 L’option **Counter** collecte les données des compteurs de performance de processeur (matériels).
@@ -45,13 +45,13 @@ VSPerfCmd.exe /Start:Method /Counter:Name[,Reload[,FriendlyName]][/Counter:Name[
 ## <a name="required-options"></a>Options obligatoires
  L’option Counter peut uniquement être utilisée avec l’une des options suivantes :
 
- **Démarrer :** `Trace` Initialise le profileur pour utiliser la méthode d’instrumentation.
+ **Démarrer :** `Trace` Initialise le profileur pour utiliser la méthode d’instrumentation.
 
- **Lancement :** `AppName` Démarre l’application spécifiée et le profileur. Le profileur doit être initialisé pour utiliser la méthode par échantillonnage.
+ **Lancer :** `AppName` Démarre l’application spécifiée et le profileur. Le profileur doit être initialisé pour utiliser la méthode par échantillonnage.
 
- **Attachez :** `PID` Démarre le profileur et le fixe au processus spécifié par l’ID du processus. Le profileur doit être initialisé pour utiliser la méthode par échantillonnage.
+ **Attacher :** `PID` Démarre le profileur et l’attache au processus spécifié par l’ID de processus. Le profileur doit être initialisé pour utiliser la méthode par échantillonnage.
 
-## <a name="example"></a> Exemple
+## <a name="example"></a>Exemple
  L’exemple de méthode par échantillonnage montre comment échantillonner une application toutes les 1 000 occurrences du compteur de profileur générique NonHaltedCycles.
 
  L’exemple de méthode par instrumentation montre comment initialiser le profileur pour collecter les événements de compteur L2InstructionFetches. Le nom de compteur L2InstructionFetches est spécifique au processeur.
@@ -66,7 +66,7 @@ VSPerfCmd.exe /Start:Trace /Output:TestApp.exe.vsp /Counter:L2InstructionFetches
 ```
 
 ## <a name="see-also"></a>Voir aussi
-- [Vsperfcmd](../profiling/vsperfcmd.md)
+- [VSPerfCmd](../profiling/vsperfcmd.md)
 - [Profiler des applications autonomes](../profiling/command-line-profiling-of-stand-alone-applications.md)
-- [Profil ASP.NET applications Web](../profiling/command-line-profiling-of-aspnet-web-applications.md)
+- [Profiler des applications Web ASP.NET](../profiling/command-line-profiling-of-aspnet-web-applications.md)
 - [Profiler des services](../profiling/command-line-profiling-of-services.md)

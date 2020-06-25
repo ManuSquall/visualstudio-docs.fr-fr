@@ -1,7 +1,7 @@
 ---
 title: WinCounter | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 ms.assetid: ff319ffc-f249-4c3f-9eb2-06e392e3ae80
 author: mikejo5000
 ms.author: mikejo
@@ -9,12 +9,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 9455d596e27526f6075ad3b667ac441b12511d58
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 672d472d4e592782f7ae06920c518b154fba6cba
+ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74779842"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85329884"
 ---
 # <a name="wincounter"></a>WinCounter
 L’option **WinCounter** spécifie un compteur de performances Windows ou d’application à collecter à des intervalles définis pendant l’exécution du profil. Les compteurs de performances Windows et d’application sont répertoriés en tant que marques dans le fichier de données de profilage. Vous pouvez spécifier plusieurs compteurs de performances à collecter dans des options distinctes.
@@ -37,14 +37,14 @@ VSPerfCmd.exe /Start:Method /Wincounter:Path [/WinCounter:Path] [AutoMark:Millis
 ## <a name="required-options"></a>Options obligatoires
  L’option **WinCounter** peut être utilisée seulement avec l’option **Start**.
 
- **Démarrage :** `Method` **L’option Démarrer** initialise le profileur à la méthode de profilage spécifiée.
+ **Démarrer :** `Method` L’option **Start** Initialise le profileur avec la méthode de profilage spécifiée.
 
 ## <a name="exclusive-options"></a>Options exclusives
  L’option **AutoMark** peut être utilisée seulement avec l’option **WinCounter**.
 
- **AutoMark :** `Milliseconds` Specifie le nombre de millisecondes entre la collecte de données du compteur de performances Windows.
+ **Marque AutoMark :** `Milliseconds` Spécifie le nombre de millisecondes entre la collecte des données du compteur de performance Windows.
 
-## <a name="example"></a> Exemple
+## <a name="example"></a>Exemple
  Dans l’exemple suivant, deux compteurs de performance Windows sont configurés être collectés à un intervalle de 1 000 millisecondes.
 
 ```cmd
@@ -52,7 +52,7 @@ VSPerfCmd.exe /Start:Sample /Output:TestApp.exe.vsp /WinCounter:"\Processor(0)\%
 ```
 
 ## <a name="see-also"></a>Voir aussi
-- [Vsperfcmd](../profiling/vsperfcmd.md)
+- [VSPerfCmd](../profiling/vsperfcmd.md)
 - [Profiler des applications autonomes](../profiling/command-line-profiling-of-stand-alone-applications.md)
-- [Profil ASP.NET applications Web](../profiling/command-line-profiling-of-aspnet-web-applications.md)
+- [Profiler des applications Web ASP.NET](../profiling/command-line-profiling-of-aspnet-web-applications.md)
 - [Profiler des services](../profiling/command-line-profiling-of-services.md)

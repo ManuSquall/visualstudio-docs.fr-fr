@@ -2,7 +2,7 @@
 title: Analyser l’utilisation de mémoire JavaScript dans les applications UWP | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - JavaScript
 helpviewer_keywords:
@@ -20,12 +20,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: cfbc0dcecbf9b30afdfb268117e34c2fcfc0341e
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 22a9c7a4b58613c0c4bd94ea4f4ce6162f620553
+ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "73189387"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85331268"
 ---
 # <a name="analyze-javascript-memory-usage-in-uwp-apps"></a>Analyser l’utilisation de mémoire JavaScript dans les applications UWP
 L’analyseur de mémoire JavaScript est disponible dans Visual Studio pour vous aider à comprendre l’utilisation de la mémoire et à rechercher les fuites de mémoire dans vos applications UWP générées pour Windows en JavaScript. Les applications dédiées aux applications Windows universelles sont prises en charge.
@@ -51,7 +51,7 @@ L’analyseur de mémoire JavaScript est disponible dans Visual Studio pour vous
 
 2. Si vous exécutez l’application à partir de Visual Studio, dans la barre d’outils **Standard**, dans la liste **Démarrer le débogage**, choisissez la cible de débogage de votre projet : **Ordinateur local** ou **Appareil**.
 
-3. Sur la barre de menu, choisissez **Debug** > **Performance Profiler**.
+3. Dans la barre de menus, choisissez **Déboguer**le  >  **profileur de performances**.
 
      Par défaut, le projet de démarrage actif est analysé. Si vous souhaitez modifier la cible d'analyse, sélectionnez **Modifier la cible**.
 
@@ -75,7 +75,7 @@ L’analyseur de mémoire JavaScript est disponible dans Visual Studio pour vous
 
      Interagissez avec l'application pour tester les scénarios appropriés d'utilisation de la mémoire et examinez le graphique de mémoire, comme décrit dans les sections suivantes.
 
-6. Passez à Visual Studio en appuyant sur **Alt**+**Tab**.
+6. Basculez vers Visual Studio en appuyant sur **ALT** + **Tab**.
 
 7. Pour afficher les données que l'analyseur de mémoire rassemble, sélectionnez **Prendre un instantané du tas**. Consultez [View a snapshot summary](#view-a-snapshot-summary) plus loin dans cette rubrique.
 
@@ -84,19 +84,19 @@ L’analyseur de mémoire JavaScript est disponible dans Visual Studio pour vous
 
  Utilisez les vues suivantes pour aider à identifier les fuites de mémoire dans une application :
 
-- [Voir le résumé de l’utilisation de la mémoire en direct](#view-live-memory-usage-summary). Utilisez le graphique d'utilisation de la mémoire pour rechercher des augmentations soudaines de l'utilisation de la mémoire ou une utilisation de la mémoire en constante augmentation résultant d'actions particulières. Utilisez la vue du résumé dynamique d'utilisation de la mémoire pour prendre des instantanés du tas. Les instantanés apparaissent sous forme de collection sous le graphique d'utilisation de la mémoire.
+- [Affichez le résumé de l’utilisation de la mémoire active](#view-live-memory-usage-summary). Utilisez le graphique d'utilisation de la mémoire pour rechercher des augmentations soudaines de l'utilisation de la mémoire ou une utilisation de la mémoire en constante augmentation résultant d'actions particulières. Utilisez la vue du résumé dynamique d'utilisation de la mémoire pour prendre des instantanés du tas. Les instantanés apparaissent sous forme de collection sous le graphique d'utilisation de la mémoire.
 
     > [!TIP]
     > Vous verrez un pic d'activité dans l'utilisation de la mémoire en prenant un instantané. Utilisez les résumés des instantanés pour obtenir une indication plus exacte de l'évolution.
 
-- [Voir un résumé instantané](#view-a-snapshot-summary). Vous pouvez consulter les informations résumées relatives aux instantanés pendant ou après une session de profilage de mémoire. Utilisez les résumés des instantanés pour les lier aux détails d'un instantané et aux vues comparées des instantanés.
+- [Affichez un résumé des instantanés](#view-a-snapshot-summary). Vous pouvez consulter les informations résumées relatives aux instantanés pendant ou après une session de profilage de mémoire. Utilisez les résumés des instantanés pour les lier aux détails d'un instantané et aux vues comparées des instantanés.
 
     > [!TIP]
     > En général, les vues comparées des instantanés fournissent les informations les plus utiles sur les fuites de mémoire.
 
-- [Afficher les détails de l’instantané](#view-snapshot-details). Affiche des données détaillées relatives à l'utilisation de la mémoire pour un instantané unique.
+- [Affichez les détails](#view-snapshot-details)de l’instantané. Affiche des données détaillées relatives à l'utilisation de la mémoire pour un instantané unique.
 
-- [Afficher un diff instantané](#view-a-snapshot-diff). Affiche les valeurs comparées pour différents instantanés. Ces vues affichent les différences de taille d'objets et de nombre d'objets.
+- [Affichez une comparaison d’instantanés](#view-a-snapshot-diff). Affiche les valeurs comparées pour différents instantanés. Ces vues affichent les différences de taille d'objets et de nombre d'objets.
 
 ## <a name="isolate-a-memory-leak"></a>Isolate a memory leak
  La procédure suivante présente un flux de travail qui peut vous aider à utiliser l'analyseur de mémoire JavaScript plus efficacement. Ces étapes peuvent s'avérer utiles si vous pensez que votre application rencontre une fuite de mémoire. Pour obtenir un didacticiel qui vous guide dans le processus d’identification d’une fuite de mémoire dans une application active, consultez [Procédure pas à pas : rechercher une fuite de mémoire (JavaScript)](javascript-memory.md).
@@ -112,7 +112,7 @@ L’analyseur de mémoire JavaScript est disponible dans Visual Studio pour vous
    > [!TIP]
    > En répétant le scénario de test plusieurs fois, vous contribuez à garantir le filtrage du travail d'initialisation dans les résultats.
 
-5. Passez à Visual Studio (appuyez **sur Alt**+**Tab**).
+5. Basculez vers Visual Studio (appuyez sur **ALT** + **Tab**).
 
 6. Prenez un instantané du tas de base en sélectionnant **Prendre un instantané du tas**.
 
@@ -226,7 +226,7 @@ L’analyseur de mémoire JavaScript est disponible dans Visual Studio pour vous
 
   Les trois vues montrent des types de valeur semblables, notamment :
 
-- **Identifier(s)**. Nom qui identifie le mieux l'objet. Par exemple, pour des éléments HTML, les détails de l'instantané montrent la valeur de l'attribut ID, le cas échéant.
+- **Identificateur (s)**. Nom qui identifie le mieux l'objet. Par exemple, pour des éléments HTML, les détails de l'instantané montrent la valeur de l'attribut ID, le cas échéant.
 
 - **Type**. Type de l'objet (par exemple, élément de lien HTML ou élément div).
 
@@ -234,7 +234,7 @@ L’analyseur de mémoire JavaScript est disponible dans Visual Studio pour vous
 
 - **Taille de retenue**. Somme de la taille de l'objet et de la taille de tous les objets enfants n'ayant pas d'autres parents. Pour des raisons pratiques, il s'agit de la quantité de mémoire retenue par l'objet. De ce fait, si vous supprimez l'objet, vous libérez la quantité de mémoire spécifiée.
 
-- **Comptez**. Nombre d'instances de l'objet. Cette valeur s'affiche uniquement dans la vue Types.
+- **Nombre**. Nombre d'instances de l'objet. Cette valeur s'affiche uniquement dans la vue Types.
 
 ## <a name="view-a-snapshot-diff"></a>Visualiser une comparaison d'instantanés
  Dans l'analyseur de mémoire JavaScript, vous pouvez comparer un instantané à l'instantané précédent dans les vues comparées des instantanés.
@@ -255,22 +255,22 @@ L’analyseur de mémoire JavaScript est disponible dans Visual Studio pour vous
 
   Pour filtrer les informations différentielles entre les instantanés, choisissez l'un des filtres **Portée** en haut des vues différentielles.
 
-- **Objets créés à partir de l’instantané n°\<numéro>**. Ce filtre montre les différences entre les objets ajoutés au tas et retirés du tas par rapport à l'instantané de base et l'instantané précédent. Par exemple, si le résumé des instantanés montre +205 / -195 dans le nombre d'objets, ce filtre indique les dix objets qui ont été ajoutés, mais pas supprimés.
+- **Objets restants de l' \<number> instantané n °**. Ce filtre montre les différences entre les objets ajoutés au tas et retirés du tas par rapport à l'instantané de base et l'instantané précédent. Par exemple, si le résumé des instantanés montre +205 / -195 dans le nombre d'objets, ce filtre indique les dix objets qui ont été ajoutés, mais pas supprimés.
 
   > [!TIP]
   > Pour afficher les informations les plus utiles dans ce filtre, suivez les étapes décrites dans [Isolate a memory leak](#isolate-a-memory-leak).
 
-- **Objets ajoutés entre les instantanés n° \<numéro> et n° \<numéro>**. Ce filtre montre tous les objets ajoutés au tas à partir de l'instantané précédent.
+- **Objets ajoutés entre les instantanés n ° \<number> et # \<number> **. Ce filtre montre tous les objets ajoutés au tas à partir de l'instantané précédent.
 
-- **Tous les objets de l’instantané n° \<numéro>**. Ce paramètre de filtre ne filtre aucun objet du tas.
+- **Tous les objets de l' \<number> instantané n °**. Ce paramètre de filtre ne filtre aucun objet du tas.
 
-  Pour afficher les références d’objets qui ne correspondent pas au filtre **De portée** en cours, sélectionnez Afficher les références **non assorties** dans la liste ![des paramètres Paramètres déposer&#45;liste vers](../profiling/media/js_mem_settings.png "JS_Mem_Settings") le bas dans le coin supérieur droit de la vitre. Si vous activez ce paramètre, les références incohérentes sont affichées en texte gris.
+  Pour afficher les références d’objet qui ne correspondent pas au filtre d' **étendue** actuel, sélectionnez **afficher les références non correspondantes** dans la liste déroulante paramètres de la liste de paramètres ![&#45;dans l’analyseur de mémoire](../profiling/media/js_mem_settings.png "JS_Mem_Settings") , dans le coin supérieur droit du volet. Si vous activez ce paramètre, les références incohérentes sont affichées en texte gris.
 
 > [!TIP]
 > Nous recommandons de suivre les étapes décrites dans [Isolate a memory leak](#isolate-a-memory-leak) puis d'utiliser le filtre **Portée** des objets restants pour identifier plus facilement les objets qui présentent une fuite de mémoire.
 
 ## <a name="view-objects-by-dominator"></a>Afficher les objets par dominateur
- Dans les vues Types et Dominators, vous pouvez choisir d’afficher les objets dans leurs dominateurs (il s’agit de la vue par défaut sous l’onglet **Dominators**). Quand cette vue est sélectionnée, seuls les dominateurs sont affichés dans la vue de niveau supérieur des objets. (Les objets qui sont des descendants d’objets non globaux sont cachés de la vue de haut niveau.) Pour certaines applications, cela peut clarifier quels objets sont à l’origine d’une fuite de mémoire en réduisant le bruit dans les données.
+ Dans les vues Types et Dominators, vous pouvez choisir d’afficher les objets dans leurs dominateurs (il s’agit de la vue par défaut sous l’onglet **Dominators**). Quand cette vue est sélectionnée, seuls les dominateurs sont affichés dans la vue de niveau supérieur des objets. (Les objets qui sont des descendants d’objets non globaux sont masqués dans la vue de niveau supérieur.) Pour certaines applications, cela peut clarifier les objets qui provoquent une fuite de mémoire en réduisant le bruit dans les données.
 
  Pour basculer la vue des objets par dominateur, choisisse le bouton **Plier les objets par dominateur** . ![Plier les objets dans leurs dominateurs](../profiling/media/js_mem_fold_objects.png "JS_Mem_Fold_Objects")
 
@@ -290,7 +290,7 @@ L’analyseur de mémoire JavaScript est disponible dans Visual Studio pour vous
 > [!NOTE]
 > Les références circulaires sont indiquées par un astérisque (*) et une info-bulle, et ne peuvent pas être développées. Dans le cas contraire, cela vous empêcherez de parcourir l'arborescence et d'identifier les objets qui retiennent de la mémoire.
 
- Si vous voulez aider d’une aide supplémentaire à identifier des objets **équivalents, choisissez des identifiants d’objets d’affichage** dans la liste des paramètres Paramètres baissent&#45;liste vers le ![bas dans l’analyseur](../profiling/media/js_mem_settings.png "JS_Mem_Settings") de mémoire dans le coin supérieur droit de la vitre supérieure. Cette option affiche les ID d'objet en regard des noms d'objet dans la liste **Identificateur(s)** (les ID apparaissent dans toutes les vues, pas seulement dans la liste des références d'objet). Les objets qui possèdent le même ID sont des références partagées.
+ Si vous souhaitez obtenir une aide supplémentaire pour identifier les objets équivalents, choisissez **afficher les ID d’objet** dans la liste des paramètres liste ![déroulante&#45;liste](../profiling/media/js_mem_settings.png "JS_Mem_Settings") déroulante de l’analyseur de mémoire dans l’angle supérieur droit du volet supérieur. Cette option affiche les ID d'objet en regard des noms d'objet dans la liste **Identificateur(s)** (les ID apparaissent dans toutes les vues, pas seulement dans la liste des références d'objet). Les objets qui possèdent le même ID sont des références partagées.
 
  L'illustration suivante montre la liste des références d'objet pour un élément sélectionné avec des ID affichés.
 
@@ -299,7 +299,7 @@ L’analyseur de mémoire JavaScript est disponible dans Visual Studio pour vous
 ## <a name="show-built-in-objects"></a>Afficher les objets intégrés
  Par défaut, les vues Dominators et Types affichent uniquement les objets que vous créez dans votre application. Cela vous aide à exclure les informations superflues et à isoler les problèmes liés à l'application. Cependant, il peut parfois être utile d'afficher tous les objets générés par le runtime JavaScript pour votre application.
 
- Pour afficher ces objets, choisissez **Afficher les intégrés** dans la liste des paramètres Paramètres déposer&#45;liste vers le ![bas dans l’analyseur](../profiling/media/js_mem_settings.png "JS_Mem_Settings") de mémoire dans le coin supérieur droit de la vitre.
+ Pour afficher ces objets, choisissez **afficher les composants intégrés** dans la liste ![déroulante](../profiling/media/js_mem_settings.png "JS_Mem_Settings") paramètres de la liste de paramètres&#45;liste déroulante dans l’analyseur de mémoire, dans le coin supérieur droit du volet.
 
 ## <a name="save-diagnostic-session-files"></a>Enregistrer les fichiers de diagnostic de session
  Les résumés d’instantanés de diagnostic et les vues de détails qui leur sont associées sont enregistrés en tant que fichiers .*diagsession*. L'**Explorateur de solutions** affiche les sessions de diagnostic précédentes dans le dossier Sessions de diagnostic. Dans l' **Explorateur de solutions**, vous pouvez ouvrir les sessions précédentes, ou supprimer ou renommer des fichiers.
@@ -324,7 +324,7 @@ L’analyseur de mémoire JavaScript est disponible dans Visual Studio pour vous
 > [!TIP]
 > Utilisez `console.takeHeapSnapshot` pour accélérer l'analyse lorsque vous répétez les scénarios d'utilisation de la mémoire.
 
- Ces commandes lèvent une exception si vous les ajoutez à votre application et exécutez l'application en dehors de l'analyseur de mémoire JavaScript. Toutefois, vous pouvez tester si ces commandes existent avant des utiliser. (Les commandes n’existent pas au début de la phase de démarrage de la session.) Pour vérifier si vous `takeHeapSnapshot`pouvez appeler en toute sécurité, utilisez ce code :
+ Ces commandes lèvent une exception si vous les ajoutez à votre application et exécutez l'application en dehors de l'analyseur de mémoire JavaScript. Toutefois, vous pouvez tester si ces commandes existent avant des utiliser. (Les commandes n’existent pas au début de la phase de démarrage de la session.) Pour vérifier si vous pouvez appeler sans risque `takeHeapSnapshot` , utilisez ce code :
 
 ```javascript
 if (console && console.takeHeapSnapshot) {
@@ -347,13 +347,13 @@ if (performance && performance.mark) {
 
 ## <a name="tips-to-identify-memory-issues"></a>Conseils pour identifier les problèmes de mémoire
 
-- Suivez le flux de travail dans [Isoler une fuite de mémoire](#isolate-a-memory-leak) et utilisez le filtre **Objets créés à partir de l’instantané n° \<numéro>** dans une vue de comparaison pour identifier les objets qui peuvent présenter des fuites de mémoire.
+- Suivez le flux de travail décrit dans [isoler une fuite de mémoire](#isolate-a-memory-leak) et utilisez les **objets restants à partir de l’instantané # \<number> ** Filter dans une vue diff pour identifier les candidats potentiels aux fuites de mémoire.
 
 - Utilisez [Rechercher un objet dans l'arborescence des objets](#find-an-object-in-the-object-tree) pour voir où un objet est référencé dans la hiérarchie de la mémoire. La vue Racines montre comment un objet est enraciné à l'objet global, ce qui l'empêche de faire l'objet d'un garbage collection.
 
 - Quand il est difficile d'identifier la cause d'un problème de mémoire, utilisez les différentes vues (telles que Dominators et Types) pour rechercher des points communs, en particulier pour faciliter l'identification d'un objet (ou de quelques objets) pouvant contenir des références à de nombreux autres objets qui apparaissent dans la vue.
 
-- Recherchez les objets qui sont conservés par inadvertance dans la mémoire après que l'utilisateur a accédé à une nouvelle page. Il s'agit d'une cause fréquente de problèmes de mémoire. Par exemple :
+- Recherchez les objets qui sont conservés par inadvertance dans la mémoire après que l'utilisateur a accédé à une nouvelle page. Il s'agit d'une cause fréquente de problèmes de mémoire. Par exemple :
 
   - l'utilisation incorrecte de la fonction [URL.CreateObjectUrl](https://developer.mozilla.org/docs/Web/API/URL/createObjectURL) peut entraîner ce problème.
 

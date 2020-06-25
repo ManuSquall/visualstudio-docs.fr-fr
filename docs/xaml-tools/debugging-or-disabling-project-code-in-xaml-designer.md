@@ -1,17 +1,17 @@
 ---
 title: Déboguer ou désactiver le code de projet dans le Concepteur XAML
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 ms.assetid: ac600581-8fc8-49e3-abdf-1569a3483d74
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: ce29bcef43877ec8a41235545652278645cad123
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: fba240c29cb8142a9ec4b4d28c71112c1974a5b1
+ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75592993"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85331058"
 ---
 # <a name="debug-or-disable-project-code-in-xaml-designer"></a>Déboguer ou désactiver le code de projet dans le Concepteur XAML
 
@@ -35,7 +35,7 @@ Quand le code de projet est désactivé, Visual Studio affiche des espaces rése
 
 1. Dans la boîte de dialogue de l’exception non gérée, choisissez le lien **Cliquez ici pour recharger le concepteur** .
 
-2. Dans la barre de menus, choisissez **Déboguer** > **Démarrer le débogage** pour générer et exécuter l’application.
+2. Dans la barre de menus, choisissez **Déboguer**  >  **Démarrer le débogage** pour générer et exécuter l’application.
 
      Si l’application se génère et s’exécute correctement, l’exception au moment de la conception est peut-être due à votre code de projet s’exécutant dans le concepteur.
 
@@ -53,7 +53,7 @@ Quand le code de projet est désactivé, Visual Studio affiche des espaces rése
 
 5. Définissez un point d’arrêt dans votre code de projet.
 
-6. Dans la nouvelle instance de Visual Studio, dans la barre de menus, choisissez **Déboguer** > **Attacher au processus**.
+6. Dans la nouvelle instance de Visual Studio, dans la barre de menus, choisissez **Déboguer**  >  **attacher au processus**.
 
 7. Dans la boîte de dialogue **Attacher au processus** , dans la liste **Processus disponibles** , choisissez **XDesProc.exe**, puis cliquez sur le bouton **Attacher** .
 
@@ -61,7 +61,7 @@ Quand le code de projet est désactivé, Visual Studio affiche des espaces rése
 
      Il s’agit ici du processus destiné au concepteur XAML de la première instance de Visual Studio.
 
-8. Dans la première instance de Visual Studio, dans la barre de menus, choisissez **Déboguer** > **Démarrer le débogage**.
+8. Dans la première instance de Visual Studio, dans la barre de menus, choisissez **Déboguer**  >  **Démarrer le débogage**.
 
      Vous pouvez maintenant parcourir pas à pas votre code qui s’exécute dans le concepteur.
 

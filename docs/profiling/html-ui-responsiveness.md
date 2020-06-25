@@ -2,7 +2,7 @@
 title: Analyser la réactivité de l’interface utilisateur HTML dans les applications UWP | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - JavaScript
 helpviewer_keywords:
@@ -17,12 +17,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - uwp
-ms.openlocfilehash: a483d1382ea1f67c14aa4674016331bfe0f76e7d
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 9fdc2b7fc459d655748444759913cab903dfe782
+ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "73189372"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85331415"
 ---
 # <a name="analyze-html-ui-responsiveness-in-universal-windows-apps"></a>Analyser la réactivité de l’interface utilisateur HTML dans les applications Windows universelles
 Cette rubrique explique comment isoler les problèmes de performances dans vos applications avec le profileur de réactivité de l’interface utilisateur, qui est un outil d’analyse des performances disponible pour les applications Windows universelles.
@@ -40,7 +40,7 @@ Cette rubrique explique comment isoler les problèmes de performances dans vos a
 
 1. Si vous exécutez l’application à partir de Visual Studio, sur la barre d’outils **Standard**, dans la liste **Démarrer le débogage**, choisissez une cible de déploiement, par exemple **Ordinateur local** ou **Appareil**.
 
-2. Sur le menu **Debug,** choisissez **Performance Profiler**.
+2. Dans le menu **Déboguer** , choisissez **profileur de performances**.
 
      Pour modifier la cible d’analyse du profileur, choisissez **Modifier la cible**.
 
@@ -76,11 +76,11 @@ Cette rubrique explique comment isoler les problèmes de performances dans vos a
 
 1. Ouvrez votre application dans Visual Studio.
 
-2. Testez votre application afin d'identifier les problèmes de réactivité de l'interface utilisateur. (Appuyez sur **Ctrl**+**F5** pour démarrer votre application sans débogage.)
+2. Testez votre application afin d'identifier les problèmes de réactivité de l'interface utilisateur. (Appuyez sur **CTRL** + **F5** pour démarrer votre application sans débogage.)
 
      Si vous identifiez un problème, continuez à tester pour essayer de limiter la période pendant laquelle le problème survient ou tenter d'identifier les éléments déclencheurs.
 
-3. Passez à Visual Studio (appuyez sur **Alt**+**Tab**) et arrêtez votre application (**Shift**+**F5**).
+3. Basculez vers Visual Studio (appuyez sur **ALT** + **Tab**) et arrêtez votre application (**MAJ** + **F5**).
 
 4. Le cas échéant, vous pouvez ajouter des marques utilisateur à votre code à l'aide de [Marquer du code pour l'analyser](#ProfileMark).
 
@@ -109,7 +109,7 @@ Cette rubrique explique comment isoler les problèmes de performances dans vos a
 
      L'illustration suivante montre le graphique d'utilisation de l'UC. Une zone d'intérêt est mise en surbrillance.
 
-     ![Graphique d’utilisation du processeur](../profiling/media/js_htmlvizprof_cpu_util.png "JS_HTMLVizProf_CPU_Util")
+     ![Graphique d’utilisation de l’UC](../profiling/media/js_htmlvizprof_cpu_util.png "JS_HTMLVizProf_CPU_Util")
 
 11. Utilisez la [Visualiser les détails de la chronologie](#TimelineDetails) pour obtenir des informations détaillées sur les événements qui s'exécutent trop souvent ou qui durent trop longtemps. Recherchez par exemple les éléments suivants :
 
@@ -197,7 +197,7 @@ if (performance.mark && performance.measure) {
 
  Cet exemple montre à quoi ressemble le graphique d'utilisation de l'UC :
 
- ![Graphique d’utilisation du processeur](../profiling/media/js_htmlvizprof_cpu_util.png "JS_HTMLVizProf_CPU_Util")
+ ![Graphique d’utilisation de l’UC](../profiling/media/js_htmlvizprof_cpu_util.png "JS_HTMLVizProf_CPU_Util")
 
  Utilisez ce graphique pour :
 
@@ -276,7 +276,7 @@ if (performance.mark && performance.measure) {
 
  ![Filtrage de la chronologie en fonction d'un événement](../profiling/media/js_htmlvizprofiler_filtertoevent.png "JS_HTMLVizProfiler_FilterToEvent")
 
-### <a name="filter-events"></a><a name="FilterEvents"></a>Événements de filtre
+### <a name="filter-events"></a><a name="FilterEvents"></a>Filtrer les événements
  Vous pouvez exclure des événements du graphique des détails de chronologie pour éliminer le bruit dans les données, ou pour éliminer des données sans intérêt pour votre scénario d'analyse de performances. Vous pouvez filtrer par nom d'événement ou durée de l'événement, ou en utilisant des filtres spécifiques décrits ci-après.
 
  Pour exclure le décodage d'image, le téléchargement spéculatif et les événements de GC, désactivez l'option **Activité en arrière-plan** à partir de l'icône de filtre dans le volet inférieur. Comme ces événements ne font l'objet que de peu d'actions, ils sont masqués par défaut.
@@ -307,11 +307,11 @@ if (performance.mark && performance.measure) {
 ## <a name="profiler-event-reference"></a>Profiler event reference
  Les événements du profileur sont classés et colorés dans le profileur de réactivité de l'interface utilisateur. Voici les catégories d'événements :
 
-- **Chargement.** Indique le temps passé à la récupération des ressources d'application et à l'analyse du code HTML et CSS lors du premier chargement de l'application. Les demandes réseau peuvent être incluses.
+- **Cours.** Indique le temps passé à la récupération des ressources d'application et à l'analyse du code HTML et CSS lors du premier chargement de l'application. Les demandes réseau peuvent être incluses.
 
 - **Script.** Indique le temps passé à l'analyse et à l'exécution du code JavaScript. Sont inclus les événements DOM, les minuteries, l'évaluation des scripts et le framework d'animation. Sont compris le code utilisateur et le code de bibliothèque.
 
-- **Gc.** Indique le temps passé à effectuer le garbage collection.
+- **GC.** Indique le temps passé à effectuer le garbage collection.
 
 - **Style.** Indique le temps passé à analyser le code CSS et à calculer la présentation et la disposition des éléments.
 
@@ -340,9 +340,9 @@ if (performance.mark && performance.measure) {
 |Minuterie|Création de scripts|Une minuterie planifiée s'est écoulée et a provoqué l'exécution de sa fonction de rappel associée.|
 |Fonction de rappel asynchrone Windows Runtime|Création de scripts|Une opération asynchrone qui a déclenché une fonction de rappel `Promise` a été effectuée par un objet Runtime Windows.|
 |Événement Windows Runtime|Création de scripts|Un événement qui s'est produit sur un objet Windows Runtime a déclenché un écouteur inscrit.|
-|Nettoyage de la mémoire|GC|Du temps a été passé à collecter de la mémoire pour des objets qui n'étaient plus utilisés.|
-|Calcul du code CSS|Style|Des modifications ont été apportées au DOM qui ont nécessité de recalculer les propriétés de style de tous les éléments affectés.|
-|Disposition|Style|Des modifications ont été apportées au DOM qui ont nécessité de recalculer la taille et/ou la position de tous les éléments affectés.|
+|Garbage collection|GC|Du temps a été passé à collecter de la mémoire pour des objets qui n'étaient plus utilisés.|
+|Calcul du code CSS|Styles|Des modifications ont été apportées au DOM qui ont nécessité de recalculer les propriétés de style de tous les éléments affectés.|
+|Layout|Styles|Des modifications ont été apportées au DOM qui ont nécessité de recalculer la taille et/ou la position de tous les éléments affectés.|
 |Peinture|Rendu|Des modifications visuelles ont été apportées au DOM et il a été tenté d'effectuer un nouveau rendu de parties de la page.|
 |Couche de rendu|Rendu|Des modifications visuelles ont été apportées à un fragment du DOM (appelé une couche) rendu indépendamment et ces modifications ont nécessité le rendu d'une partie de la page.|
 |Décodage d'image|Décodage d'image|Une image a été incluse dans le DOM et il a été tenté de décompresser et décoder le format initial de l'image en bitmap.|

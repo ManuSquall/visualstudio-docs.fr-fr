@@ -1,21 +1,22 @@
 ---
 title: Éditeur de code XAML
+description: Visite guidée de l’éditeur de code XAML dans Visual Studio
 ms.date: 06/16/2020
-ms.topic: conceptual
+ms.topic: overview
 monikerRange: vs-2019
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: d789ac099e6d0bba7a44f0d6efd7a19beec54c19
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: 6421fd0139b04262ac5f1e835f010c1372c034ee
+ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85290446"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85329181"
 ---
 # <a name="xaml-code-editor"></a>Éditeur de code XAML
 
-L’éditeur de code XAML dans l' [IDE de Visual Studio](../get-started/visual-studio-ide.md) comprend tous les outils dont vous avez besoin pour créer des applications WPF et UWP pour la plate-forme Windows, et pour [Xamarin. Forms](/xamarin/xamarin-forms/user-interface/text/editor/). Cet article présente le rôle joué par l’éditeur de code lorsque vous développez des applications basées sur XAML et les fonctionnalités qui sont uniques à l’éditeur de code XAML dans Visual Studio 2019.
+L’éditeur de code XAML dans l' [IDE de Visual Studio](../get-started/visual-studio-ide.md) comprend tous les outils dont vous avez besoin pour créer des applications WPF et UWP pour la plate-forme Windows, et pour [Xamarin. Forms](/xamarin/xamarin-forms/user-interface/text/editor/). Cet article présente le rôle joué par l’éditeur de code lorsque vous développez des applications basées sur XAML, ainsi que les fonctionnalités qui sont uniques à l’éditeur de code XAML dans Visual Studio 2019.
 
 Pour commencer, jetons un coup d’œil à l’IDE (environnement de développement intégré) avec un projet WPF ouvert. L’illustration suivante montre plusieurs des principaux outils de l’IDE que vous allez utiliser avec l’éditeur de code XAML.
 
@@ -182,7 +183,7 @@ La plupart des fonctionnalités suivantes sont universellement disponibles dans 
 
 Les extraits de code sont de petits blocs de code réutilisables que vous pouvez insérer dans dans un fichier de code à l’aide de la commande de menu contextuel **Insérer un extrait** ou d’une combinaison de raccourcis clavier (**CTRL** + **K**, **CTRL** + **X**). Nous avons amélioré [IntelliSense](../ide/using-intellisense.md) afin qu’il prenne en charge l’utilisation d’extraits de code XAML, qui fonctionnent pour les extraits de code intégrés et pour tous les extraits de code personnalisés que vous ajoutez manuellement. Certains extraits de code XAML prêts à l’emploi incluent `#region` ,,, `Column definition` `Row definition` `Setter` et `Tag` .
 
-![Éditeur de code XAML avec les options de #region affichées dans IntelliSense](media/xaml-code-snippets.png "Capture d’écran de l’éditeur de code XAML avec les options de #region affichées dans IntelliSense")
+![L’éditeur de code XAML avec les options d’extrait de code XAML affichées dans IntelliSense](media/xaml-code-snippets.png "Capture d’écran de l’éditeur de code XAML avec les options d’extrait de code XAML affichées dans IntelliSense")
 
 Pour plus d’informations, consultez les pages [extraits de code](../ide/code-snippets.md) et [extraits de code C#](../ide/visual-csharp-code-snippets.md) .
 

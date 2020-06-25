@@ -1,7 +1,7 @@
 ---
 title: WaitStart | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 ms.assetid: 6c737177-2dfb-4150-963e-a49ac9aaa591
 author: mikejo5000
 ms.author: mikejo
@@ -9,12 +9,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 1cbabcf86afa9770f1616c7e4e508af1c9afa1ba
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: b42936d9d87ad80b48b7fdc71cdf0fd3fa965af2
+ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74779855"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85329892"
 ---
 # <a name="waitstart"></a>WaitStart
 Quand l’option WaitStart est utilisée, la sous-commande Start de *VSPerfCmd.exe* est retournée uniquement après l’initialisation du profileur ou après le nombre spécifié de secondes. Par défaut, la commande Start est retournée immédiatement. Si la sous-commande Start est retournée sans initialiser le profileur, une erreur est retournée. Si le nombre de secondes n’est pas spécifié, la commande Start attend indéfiniment.
@@ -33,11 +33,11 @@ VSPerfCmd.exe /Start:Method /Output:FileName[Options] /WaitStart[:Seconds]
 ## <a name="required-options"></a>Options obligatoires
  L’option WaitStart ne peut être utilisée qu’avec la sous-commande Start.
 
- **Sortie :** `filename` Spécifie le nom du fichier de sortie.
+ **Sortie :** `filename` Spécifie le nom du fichier de sortie.
 
-## <a name="remarks"></a>Notes 
+## <a name="remarks"></a>Remarques
 
-## <a name="example"></a> Exemple
+## <a name="example"></a>Exemple
  Dans cet exemple de fichier de commandes, la commande Start attend 5 secondes que le profileur s’initialise.
 
 ```cmd

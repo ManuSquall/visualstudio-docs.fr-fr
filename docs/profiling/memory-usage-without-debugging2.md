@@ -2,7 +2,7 @@
 title: Analyser l’utilisation de la mémoire sans débogage | Microsoft Docs
 ms.custom: ''
 ms.date: 04/02/2020
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - CSharp
 - VB
@@ -13,38 +13,38 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5af369669245bca9c5de74566dd8594164acf8bb
-ms.sourcegitcommit: 9c1cecaff4d9955276eee7865b78d47679dd1e2a
+ms.openlocfilehash: 62ac71a3aa707958bd0c7f107185d141e339b2b7
+ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "80638825"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85332137"
 ---
 # <a name="analyze-memory-usage-without-the-debugger"></a>Analyser l’utilisation de la mémoire sans débogage
 
 L’outil **Utilisation de la mémoire** permet de superviser l’utilisation de la mémoire par votre application. Vous pouvez l’utiliser pour étudier les effets en temps réel sur la mémoire des scénarios que vous développez activement dans Visual Studio. Vous pouvez prendre des instantanés des états de la mémoire de l’application, et comparer les instantanés pour trouver les causes racines des problèmes de mémoire.
 
-**L’outil d’utilisation de la mémoire** peut fonctionner avec ou sans le [débbugger](../profiling/running-profiling-tools-with-or-without-the-debugger.md). Dans cet article, nous montrons comment utiliser l’outil **d’utilisation de** la mémoire sans le débbugger dans le Visual Studio **Performance Profiler**.
+L’outil utilisation de la **mémoire** peut s’exécuter [avec ou sans le débogueur](../profiling/running-profiling-tools-with-or-without-the-debugger.md). Dans cet article, nous expliquons comment utiliser l’outil utilisation de la **mémoire** sans le débogueur dans le **profileur de performances**de Visual Studio.
 
 ## <a name="memory-usage-diagnostic-sessions"></a>Sessions de diagnostic d’utilisation de la mémoire
 
 **Pour démarrer une session de diagnostic d’utilisation de la mémoire**
 
-1. Ouvrez un projet en Studio Visuel.
+1. Ouvrez un projet dans Visual Studio.
 
-   L’outil Memory Use prend en charge les applications .NET, ASP.NET, natives ou en mode mixte (.NET et natif).
+   L’outil utilisation de la mémoire prend en charge les applications .NET, ASP.NET, natives ou en mode mixte (.NET et natif).
 
-1. Dans le menu Debug, définissez la configuration de la solution pour **libérer** et sélectionnez **Local Windows Debugger** (ou **Local Machine**) comme cible de déploiement.
+1. Dans le menu Déboguer, définissez la configuration de la solution sur **version finale** , puis sélectionnez **débogueur Windows local** (ou **ordinateur local**) comme cible de déploiement.
 
-1. Sur la barre de menu, choisissez **Debug** > **Performance Profiler**.
+1. Dans la barre de menus, choisissez **Déboguer**le  >  **profileur de performances**.
 
-1. Sous **les outils disponibles**, sélectionnez **l’utilisation de la mémoire,** puis sélectionnez **Démarrer**.
+1. Sous **outils disponibles**, sélectionnez **utilisation**de la mémoire, puis cliquez sur **Démarrer**.
 
    ![Commencer une session de diagnostic de l'utilisation de la mémoire](../profiling/media/memuse_start_diagnosticssession.png "Commencer une session de diagnostic de l'utilisation de la mémoire")
 
 ### <a name="monitor-memory-use"></a>Surveiller l'utilisation de la mémoire
 
-Lorsque vous démarrez une session de diagnostic, votre application démarre, et la fenêtre **Diagnostic Tools** affiche un graphique de chronologie de l’utilisation de la mémoire de votre application.
+Quand vous démarrez une session de diagnostic, votre application démarre et la fenêtre **outils de diagnostic** affiche un graphique chronologique de l’utilisation de la mémoire de votre application.
 
 ![Page de vue d'ensemble de l'utilisation de la mémoire](../profiling/media/memuse__reportoverview.png "MEMUSE__ReportOverview")
 
@@ -60,7 +60,7 @@ Pour recueillir des instantanés, sélectionnez **Prendre un instantané** quand
 
 Pour arrêter une session de surveillance sans créer de rapport, fermez simplement la fenêtre de diagnostic. Pour générer un rapport quand vous avez terminé la collecte ou la prise d’instantanés, sélectionnez **Arrêter la collecte**.
 
-![Stop Collection](../profiling/media/memuse__stopcollection.png "Arrêter la collection")
+![Arrêter la collecte](../profiling/media/memuse__stopcollection.png "Arrêter la collection")
 
 ## <a name="memory-usage-reports"></a>Rapports d’utilisation de la mémoire
 
@@ -93,13 +93,13 @@ Dans un rapport d’instantané, vous pouvez développer les entrées **Type d�
 
 Si un **Type d’objet** est bleu, vous pouvez le sélectionner pour accéder à l’objet dans le code source, dans une fenêtre distincte.
 
-Les types que vous ne pouvez pas identifier ou dont l’implication dans votre code que vous ne comprenez pas sont probablement .NET, système d’exploitation, ou objets compilateur. L’ outil **Utilisation de la mémoire** affiche ces objets s’ils sont impliqués dans les chaînes de propriétés de vos objets.
+Les types que vous ne pouvez pas identifier ou dont l’implication dans votre code ne comprend pas sont probablement des objets .NET, du système d’exploitation ou du compilateur. L’ outil **Utilisation de la mémoire** affiche ces objets s’ils sont impliqués dans les chaînes de propriétés de vos objets.
 
 Dans le rapport d’instantané :
 
 - L’arborescence **Tas managé** montre les types et instances du rapport. La sélection d’un type ou d’une instance affiche les arborescences **Chemins d’accès à la racine** et **Objets référencés** pour l’élément sélectionné.
 
-- **L’arbre Chemins à la Racine** montre la chaîne d’objets qui font référence à un type ou une instance. Le collecteur d’ordures .NET nettoie la mémoire d’un objet seulement lorsque toutes les références à celui-ci ont été libérés.
+- L’arborescence **chemins d’accès à la racine** affiche la chaîne d’objets qui référencent un type ou une instance. Le garbage collector .NET nettoie la mémoire pour un objet uniquement lorsque toutes les références à ce dernier ont été libérées.
 
 - L’arborescence **Types référencés** ou **Objets référencés** montre les objets référencés par le type ou l’instance sélectionné.
 
@@ -119,7 +119,7 @@ De nombreux types dans les applications ne sont pas très intéressants pour les
 
  Un rapport détaillé d’instantané décrit un instantané spécifique d’une session de diagnostic. Pour ouvrir le rapport, sélectionnez le lien de taille ou d’objets dans un volet de l’instantané.
 
- ![Liens vers un rapport instantané dans un volet instantané](../profiling/media/memuse_snapshotview_snapshotdetailslinks.png "Liens vers un rapport instantané dans un volet instantané")
+ ![Liens vers le rapport d’instantané dans un volet d’instantané](../profiling/media/memuse_snapshotview_snapshotdetailslinks.png "Liens vers le rapport d’instantané dans un volet d’instantané")
 
 Les deux liens ouvrent le même rapport. La seule différence concerne l’ordre de tri de départ de l’arborescence **Tas managé**. Le lien de taille trie le rapport en fonction de la colonne **Taille inclusive (octets)**. Le lien d’objets trie le rapport en fonction de la colonne **Nombre**. Vous pouvez changer l’ordre ou la colonne de tri après l’ouverture du rapport.
 
@@ -139,16 +139,16 @@ L’arborescence **Tas managé** dans un rapport détaillé d’instantané comp
 |**Module**|Module qui contient l’objet.|
 
 ### <a name="paths-to-root-tree-snapshot-details-reports"></a><a name="BKMK_Paths_to_Root_tree__Snapshot_details_"></a> Arborescence Chemins d’accès à la racine (rapports de détails de l’instantané)
-L’arborescence **Chemins d’accès à la racine** montre la chaîne d’objets qui référencent un type ou une instance. Le collecteur d’ordures .NET nettoie la mémoire d’un objet seulement lorsque toutes les références à celui-ci ont été libérés.
+L’arborescence **Chemins d’accès à la racine** montre la chaîne d’objets qui référencent un type ou une instance. Le garbage collector .NET nettoie la mémoire pour un objet uniquement lorsque toutes les références à ce dernier ont été libérées.
 
 Pour un type dans l’arborescence **Chemins d’accès à la racine**, le nombre d’objets qui comportent des références à ce type est affiché dans la colonne **Nombre de références**.
 
-![Chemins à l’arbre de racine pour les types](../profiling/media/memuse_snapshotdetails_type_pathstoroottree.png "Chemins à l’arbre de racine pour les types")
+![Chemins d’accès à l’arborescence racine pour les types](../profiling/media/memuse_snapshotdetails_type_pathstoroottree.png "Chemins d’accès à l’arborescence racine pour les types")
 
 ### <a name="referenced-types-or-referenced-objects-tree-snapshot-details-reports"></a><a name="BKMK_Referenced_Objects_tree__Snapshot_details_"></a> Arborescence Types référencés ou Objets référencés (rapports détaillés de l’instantané)
 L’arborescence **Types référencés** ou **Objets référencés** montre les objets référencés par le type ou l’instance sélectionné.
 
-![Arbre d’objets référencés pour les instances](../profiling/media/memuse_snapshotdetails_referencedobjects_instance.png "Arbre d’objets référencés pour les instances")
+![Arborescence des objets référencés pour les instances](../profiling/media/memuse_snapshotdetails_referencedobjects_instance.png "Arborescence des objets référencés pour les instances")
 
 Une arborescence **Types référencés** dans un rapport détaillé d’instantané comporte les colonnes suivantes. Une arborescence **Objets référencés** n’a pas de colonne **Nombre de références**.
 
@@ -166,7 +166,7 @@ Un rapport différentiel d’instantanés montre les changements entre un instan
 
 Les deux liens ouvrent le même rapport. La seule différence concerne l’ordre de tri de départ de l’arborescence **Tas managé** dans le rapport. Le lien de taille trie le rapport en fonction de la colonne **Différence de taille inclusive (octets)**. Le lien d’objets trie le rapport en fonction de la colonne **Différence de nombre**. Vous pouvez changer l’ordre ou la colonne de tri après l’ouverture du rapport.
 
- ![Liens vers un rapport de différence dans un volet instantané](../profiling/media/memuse_snapshotview_snapshotdifflinks.png "Liens vers un rapport de différence dans un volet instantané")
+ ![Liens vers le rapport de différences dans un volet d’instantané](../profiling/media/memuse_snapshotview_snapshotdifflinks.png "Liens vers le rapport de différences dans un volet d’instantané")
 
 ### <a name="managed-heap-tree-snapshot-diff-reports"></a><a name="BKMK_Managed_Heap_tree__Snapshot_diff_"></a> Arborescence Tas managé (rapports différentiels d’instantanés)
 
@@ -179,7 +179,7 @@ L’arborescence **Tas managé** dans un rapport différentiel d’instantanés 
 |||
 |-|-|
 |**Type d'objet**|Nom du type ou instance de l'objet.|
-|**Count**|Nombre d'instances d'un type dans l'instantané principal. **Le compte** est toujours 1 pour un exemple.|
+|**Count**|Nombre d'instances d'un type dans l'instantané principal. **Count** est toujours 1 pour une instance.|
 |**Différence de nombre**|Pour un type, différence du nombre d'instances du type entre l'instantané principal et l'instantané précédent. Le champ est vide pour une instance.|
 |**Taille (octets)**|Taille des objets dans l’instantané principal, moins la taille des objets dans les objets. Pour un type, **Taille (octets)** et **Taille inclusive (octets)** sont les totaux des tailles des instances du type.|
 |**Diff. taille totale (octets)**|Pour un type, différence de taille totale des instances du type entre l’instantané principal et l’instantané précédent, moins la taille des objets dans les instances. Le champ est vide pour une instance.|
@@ -189,11 +189,11 @@ L’arborescence **Tas managé** dans un rapport différentiel d’instantanés 
 
 ### <a name="paths-to-root-tree-snapshot-diff-reports"></a><a name="BKMK_Paths_to_Root_tree__Snapshot_diff_"></a> Arborescence Chemins d’accès à la racine (rapports différentiels d’instantanés)
 
-L’arborescence **Chemins d’accès à la racine** montre la chaîne d’objets qui référencent un type ou une instance. Le collecteur d’ordures .NET nettoie la mémoire d’un objet seulement lorsque toutes les références à celui-ci ont été libérés.
+L’arborescence **Chemins d’accès à la racine** montre la chaîne d’objets qui référencent un type ou une instance. Le garbage collector .NET nettoie la mémoire pour un objet uniquement lorsque toutes les références à ce dernier ont été libérées.
 
 Pour un type dans l’arborescence **Chemins d’accès à la racine**, le nombre d’objets qui comportent des références à ce type est affiché dans la colonne **Nombre de références**. La différence de nombre par rapport à l’instantané précédent se trouve dans la colonne **Différence au niveau du nombre de références**.
 
- ![Chemins à l’arbre de racine dans un rapport diff](../profiling/media/memuse_snapshotdiff_pathstoroot_instance_all.png "Chemins à l’arbre de racine dans un rapport diff")
+ ![Chemins d’accès à l’arborescence racine dans un rapport diff](../profiling/media/memuse_snapshotdiff_pathstoroot_instance_all.png "Chemins d’accès à l’arborescence racine dans un rapport diff")
 
 ### <a name="referenced-types-or-referenced-objects-tree-snapshot-diff-reports"></a><a name="BKMK_Referenced_Objects_tree__Snapshot_diff_"></a> Arborescence Types référencés ou Objets référencés (rapports différentiels d’instantanés)
 
@@ -219,4 +219,4 @@ Une arborescence **Types référencés** dans un rapport différentiel d’insta
 - [Profilage dans Visual Studio](../profiling/index.yml)
 - [Découvrir les outils de profilage](../profiling/profiling-feature-tour.md)
 - [Bonnes pratiques pour les performances des applications UWP en C++, C# et Visual Basic](/previous-versions/windows/apps/hh750313\(v\=win.10\))
-- [Diagnostiquer les problèmes de mémoire avec le nouvel outil d’utilisation de la mémoire dans Visual Studio](https://devblogs.microsoft.com/devops/diagnosing-memory-issues-with-the-new-memory-usage-tool-in-visual-studio/)
+- [Diagnostic des problèmes de mémoire avec le nouvel outil utilisation de la mémoire dans Visual Studio](https://devblogs.microsoft.com/devops/diagnosing-memory-issues-with-the-new-memory-usage-tool-in-visual-studio/)

@@ -1,7 +1,7 @@
 ---
 title: VSPerfCLREnv | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - command-line tools, VSPerfCLREnv
 - command line, tools
@@ -14,12 +14,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 2163ebb9b363de8ee638998dbe56fd76f5a891c8
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 828768b59e4ab465e4723d399d406b994fa8c8ce
+ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74779907"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85330432"
 ---
 # <a name="vsperfclrenv"></a>VSPerfCLREnv
 
@@ -101,10 +101,10 @@ Pour profiler un service managé tel qu’une application web ASP.NET qui est la
 
 |Option|Description|
 |------------|-----------------|
-|**Hors tension**|Supprime les variables d’environnement pour le profilage .NET standard. Utilisez cette option quand les options VSPerfClrEnv non globales ont été utilisées pour définir les variables d’environnement du profileur.|
+|**Préférable**|Supprime les variables d’environnement pour le profilage .NET standard. Utilisez cette option quand les options VSPerfClrEnv non globales ont été utilisées pour définir les variables d’environnement du profileur.|
 |**GlobalOff**|Supprime les variables d’environnement pour le profilage .NET global. Utilisez cette option quand l’application a été démarrée par le système d’exploitation et pas par le profileur.|
 
-## <a name="remarks"></a>Notes 
+## <a name="remarks"></a>Remarques
 
 Ces options ne sont pas obligatoires pour le profilage d’une application managée si celle-ci est démarrée à l’aide de l’Explorateur de performances dans l’IDE. L’Explorateur de performances définit automatiquement tous les paramètres d’environnement obligatoires.
 

@@ -1,19 +1,19 @@
 ---
-title: Guide pratique pour utiliser le kit SDK des marqueurs du visualiseur concurrentiel | Microsoft Docs
+title: Guide pratique pour utiliser le kit de développement logiciel (SDK) marqueurs du visualiseur concurrentiel | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 ms.assetid: 19a45032-f8a7-4137-890e-2ceeec938b8d
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2d97ea90963f70d3a06c669f08473bab27fa08bd
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 0782744236777fb84a6d87f93f59697275df1c11
+ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "68870329"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85331382"
 ---
 # <a name="how-to-use-the-concurrency-visualizer-markers-sdk"></a>Guide pratique pour utiliser le kit SDK des marqueurs du visualiseur concurrentiel
 Cette rubrique montre comment utiliser le kit SDK du visualiseur concurrentiel pour créer des étendues et écrire des indicateurs, des messages et des alertes.
@@ -126,7 +126,7 @@ Cette rubrique montre comment utiliser le kit SDK du visualiseur concurrentiel p
 
 4. Dans la barre de menus, choisissez **Analyser**, **Visualiseur concurrentiel** et **Commencer par le projet en cours** pour exécuter l’application et afficher le visualiseur concurrentiel. L’illustration suivante montre les trois étendues et les trois marqueurs dans la vue Threads du visualiseur concurrentiel.
 
-     ![Visualiseur concurrentiel avec marqueurs et alertes](../profiling/media/cvmarkersmanaged.png "CvMarkersManaged CvMarkersManaged CvMarkersManaged CvMark")
+     ![Visualiseur concurrentiel avec marqueurs et alertes](../profiling/media/cvmarkersmanaged.png "CvMarkersManaged")
 
 5. Ajoutez du code pour créer une série de marqueurs de client à l’aide de la méthode statique [CreateMarkerSeries](/previous-versions/hh694171(v=vs.140)). La classe [MarkerSeries](/previous-versions/hh694127(v=vs.140)) contient des méthodes pour créer des étendues et écrire des indicateurs, des messages et des alertes.
 
@@ -164,7 +164,7 @@ Cette rubrique montre comment utiliser le kit SDK du visualiseur concurrentiel p
 
 6. Démarrez le projet actuel pour afficher le visualiseur concurrentiel. Les trois séries de marqueurs s’affichent dans leurs propres couloirs dans la vue Threads. L’illustration suivante présente les trois nouvelles étendues.
 
-     ![Visualiseur concurrentiel avec 3 séries de marqueurs personnalisées](../profiling/media/cvmarkerseriesmanaged.png "CvMarkerSeriesManaged CvMarkerSeriesManaged CvMarkerSeriesManaged CvMark")
+     ![Visualiseur concurrentiel avec 3 séries de marqueurs personnalisées](../profiling/media/cvmarkerseriesmanaged.png "CvMarkerSeriesManaged")
 
 ## <a name="see-also"></a>Voir aussi
-- [SDK du visualiseur concurrentiel](../profiling/concurrency-visualizer-sdk.md)
+- [Kit de développement logiciel (SDK) du visualiseur concurrentiel](../profiling/concurrency-visualizer-sdk.md)

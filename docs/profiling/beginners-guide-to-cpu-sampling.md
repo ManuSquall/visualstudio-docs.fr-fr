@@ -2,7 +2,7 @@
 title: Guide du débutant en échantillonnage de l’UC
 ms.custom: seodec18
 ms.date: 02/27/2017
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - vs.performance.wizard.intropage
 helpviewer_keywords:
@@ -16,12 +16,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: c6a5a0eb84e4f06fd1b4dd248a1bce952b2c7197
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: a58803747e0da411012226325c390352edf4e919
+ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74779803"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85330592"
 ---
 # <a name="beginners-guide-to-cpu-sampling"></a>Guide du débutant en échantillonnage de l’UC
 Vous pouvez utiliser les outils de profilage de Visual Studio pour analyser les problèmes de performances dans votre application. Cette procédure montre comment utiliser des données **d’échantillonnage**.
@@ -33,10 +33,10 @@ Vous pouvez utiliser les outils de profilage de Visual Studio pour analyser les 
 
  La méthode **d’échantillonnage** collecte les informations relatives aux fonctions qui s’exécutent dans votre application aux intervalles spécifiés. Une fois que vous avez terminé une exécution de profilage, la vue **Résumé** des données de profilage affiche l’arborescence des appels de fonctions les plus actifs, appelée **chemin réactif**, où la plupart du travail de l’application a été effectué. Cette vue répertorie également les fonctions qui effectuaient le plus de travail individuel et fournit un graphique chronologique que vous pouvez utiliser pour vous concentrer sur des segments spécifiques de la session d'échantillonnage.
 
- Si **l’échantillonnage** ne vous fournit pas les données dont vous avez besoin, les méthodes de collecte d’autres outils de profilage fournissent des types d’informations différents qui peuvent vous être utiles. Pour plus d’informations sur ces autres méthodes, voir [Comment : Choisissez des méthodes de collecte.](../profiling/how-to-choose-collection-methods.md)
+ Si **l’échantillonnage** ne vous fournit pas les données dont vous avez besoin, les méthodes de collecte d’autres outils de profilage fournissent des types d’informations différents qui peuvent vous être utiles. Pour plus d’informations sur ces autres méthodes, consultez [Comment : choisir des méthodes de collection](../profiling/how-to-choose-collection-methods.md).
 
 > [!TIP]
-> Si vous profilez du code qui appelle des fonctions Windows, vous devez vérifier que vous disposez des fichiers .*pdb* les plus récents. Sans ces fichiers, vos vues de rapports répertorient des noms de fonctions Windows cryptés et difficiles à comprendre. Pour plus d’informations sur la façon de vous assurer que vous avez les fichiers dont vous avez besoin, voir [Comment: Référence des informations du symbole Windows](../profiling/how-to-reference-windows-symbol-information.md).
+> Si vous profilez du code qui appelle des fonctions Windows, vous devez vérifier que vous disposez des fichiers .*pdb* les plus récents. Sans ces fichiers, vos vues de rapports répertorient des noms de fonctions Windows cryptés et difficiles à comprendre. Pour plus d’informations sur la façon de s’assurer que vous disposez des fichiers dont vous avez besoin, consultez [Guide pratique pour référencer les informations de symboles Windows](../profiling/how-to-reference-windows-symbol-information.md).
 
 ## <a name="create-and-run-a-performance-session"></a>Créer et exécuter une session de performance
  Pour obtenir les données que vous devez analyser, vous devez d'abord créer une session de performance, puis exécuter cette session. **L’Assistant Performance** vous permet de faire les deux.
@@ -69,7 +69,7 @@ Vous pouvez utiliser les outils de profilage de Visual Studio pour analyser les 
 
  Nous vous recommandons de commencer à analyser vos données en examinant le **chemin réactif**, puis la liste des fonctions qui effectuent la majeure partie du travail, et enfin, en vous concentrant sur d’autres fonctions à l’aide de la **chronologie Résumé**. Vous pouvez également consulter des avertissements et des suggestions de profilage dans la fenêtre **Liste d’erreurs**.
 
- Notez bien que la méthode d'échantillonnage peut ne pas vous donner les informations dont vous avez besoin. Par exemple, les échantillons sont collectés uniquement lorsque l'application exécute le code du mode utilisateur. Par conséquent, certaines fonctionnalités, telles que les opérations d'entrée et de sortie, ne sont pas capturées par l'échantillonnage. Les outils de profilage fournissent plusieurs méthodes de collection qui peuvent vous permettre de vous concentrer sur les données importantes. Pour plus d’informations sur les autres méthodes, voir [Comment : Choisissez des méthodes de collecte.](../profiling/how-to-choose-collection-methods.md)
+ Notez bien que la méthode d'échantillonnage peut ne pas vous donner les informations dont vous avez besoin. Par exemple, les échantillons sont collectés uniquement lorsque l'application exécute le code du mode utilisateur. Par conséquent, certaines fonctionnalités, telles que les opérations d'entrée et de sortie, ne sont pas capturées par l'échantillonnage. Les outils de profilage fournissent plusieurs méthodes de collection qui peuvent vous permettre de vous concentrer sur les données importantes. Pour plus d’informations sur les autres méthodes, consultez [Comment : choisir des méthodes de collection](../profiling/how-to-choose-collection-methods.md).
 
  Chaque zone numérotée dans l'illustration est en rapport avec une étape de la procédure.
 
@@ -122,11 +122,11 @@ Vous pouvez utiliser les outils de profilage de Visual Studio pour analyser les 
 
 4. Une fois que vous avez réexécuté la session, un autre fichier de données est ajouté au dossier *Rapports* de la session dans **l’Explorateur de performances**. Sélectionnez les données de profilage d’origine et les nouvelles données de profilage, cliquez avec le bouton droit sur la sélection, puis cliquez sur **Comparer les rapports de performances**.
 
-     Une nouvelle fenêtre de rapport s'ouvre et affiche les résultats de la comparaison. Pour plus d’informations sur la façon d’utiliser la vue de comparaison, voir [Comment : Comparer les fichiers de données de performance](../profiling/how-to-compare-performance-data-files.md).
+     Une nouvelle fenêtre de rapport s'ouvre et affiche les résultats de la comparaison. Pour plus d’informations sur l’utilisation de la vue de comparaison, consultez [Comment : comparer des fichiers de données de performances](../profiling/how-to-compare-performance-data-files.md).
 
 ## <a name="see-also"></a>Voir aussi
 - [Explorateur de performances](../profiling/performance-explorer.md)
-- [Commencer](../profiling/getting-started-with-performance-tools.md)
-- [Vues d’ensemble](../profiling/overviews-performance-tools.md)
+- [Bien démarrer](../profiling/getting-started-with-performance-tools.md)
+- [Vues d'ensemble](../profiling/overviews-performance-tools.md)
 - [Profilage dans Visual Studio](../profiling/index.yml)
 - [Découvrir les outils de profilage](../profiling/profiling-feature-tour.md)
