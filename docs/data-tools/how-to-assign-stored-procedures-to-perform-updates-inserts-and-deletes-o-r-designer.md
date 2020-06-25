@@ -1,23 +1,23 @@
 ---
 title: Utiliser des procédures stockées dans LINQ to SQL pour mettre à jour des données (Concepteur O/R)
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 ms.assetid: e88224ab-ff61-4a3a-b6b8-6f3694546cac
 author: ghogen
 ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 8028171cf3255de3484bb89a374bfc22a2625b1a
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: e657de71fbf1e7c29074a09f5c51211be7b4395f
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75586547"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85282317"
 ---
 # <a name="how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-or-designer"></a>Guide pratique pour affecter des procédures stockées pour effectuer des mises à jour, des insertions et des suppressions (Concepteur O/R)
 
-Les procédures stockées peuvent être ajoutées au **Concepteur O/R** et exécutées comme méthodes <xref:System.Data.Linq.DataContext> typiques. Elles peuvent également être utilisées pour substituer le comportement par défaut LINQ to SQL au moment de l’exécution qui effectue des insertions, des mises à jour et des suppressions lorsque des modifications sont enregistrées à partir de classes d’entité dans une base de données (par exemple, lors de l’appel de la méthode <xref:System.Data.Linq.DataContext.SubmitChanges%2A>).
+Les procédures stockées peuvent être ajoutées au **Concepteur O/R** et exécutées comme méthodes <xref:System.Data.Linq.DataContext> typiques. Elles peuvent également être utilisées pour substituer le comportement par défaut LINQ to SQL au moment de l’exécution qui effectue des insertions, des mises à jour et des suppressions lorsque des modifications sont enregistrées à partir de classes d’entité dans une base de données (par exemple, lors de l’appel de la <xref:System.Data.Linq.DataContext.SubmitChanges%2A> méthode).
 
 > [!NOTE]
 > Si votre procédure stockée retourne des valeurs qui doivent être renvoyées au client (par exemple, les valeurs sont calculées dans la procédure stockée), créez des paramètres de sortie dans vos procédures stockées. Si vous ne pouvez pas utiliser de paramètres de sortie, écrivez une implémentation de méthode partielle au lieu de vous fier aux substitutions générées par le Concepteur O/R. Les membres mappés aux valeurs générées par base de données doivent avoir les valeurs appropriées lorsque les opérations INSERT ou UPDATE se sont correctement achevées. Pour plus d’informations, consultez [responsabilités du développeur en matière de substitution du comportement par défaut](/dotnet/framework/data/adonet/sql/linq/responsibilities-of-the-developer-in-overriding-default-behavior).
@@ -51,7 +51,7 @@ Par défaut, la logique de mise à jour d’une base de données (insertions, mi
 
 8. Sélectionnez la procédure stockée voulue dans la liste **Personnaliser**.
 
-9. Inspectez la liste des **Arguments de méthode** et des **Propriétés de classe** pour vérifier que les **Arguments de méthode** mappent aux **Propriétés de classe** appropriées. Mappez les arguments de méthode d’origine (`Original_<ArgumentName>`) aux propriétés d’origine (`<PropertyName> (Original)`) pour les commandes `Update` et `Delete`.
+9. Inspectez la liste des **Arguments de méthode** et des **Propriétés de classe** pour vérifier que les **Arguments de méthode** mappent aux **Propriétés de classe** appropriées. Mappez les arguments de méthode d’origine ( `Original_<ArgumentName>` ) aux propriétés d’origine ( `<PropertyName> (Original)` ) pour les `Update` `Delete` commandes et.
 
     > [!NOTE]
     > Par défaut, les arguments de méthode sont mappés à des propriétés de classe lorsque les noms correspondent. Si les noms de propriété ont été modifiés et ne correspondent plus entre la table et la classe d'entité, vous devrez peut-être sélectionner la propriété de classe équivalente à mapper si le Concepteur O/R ne peut pas déterminer le mappage correct.

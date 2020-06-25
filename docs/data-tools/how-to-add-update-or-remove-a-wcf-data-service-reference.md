@@ -1,7 +1,7 @@
 ---
 title: 'Comment : ajouter, mettre à jour ou supprimer une référence de service de données WCF'
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - service references [Visual Studio]
 - WCF Data Service reference
@@ -14,12 +14,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 494e85049a173749d418276340389ebe826a0b0b
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: f5f5a1e14a6eab7537c8ce64636f0f34378ad7f0
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84184227"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85282369"
 ---
 # <a name="how-to-add-update-or-remove-a-wcf-data-service-reference"></a>Guide pratique pour ajouter, mettre à jour ou supprimer une référence de service de données WCF
 
@@ -57,7 +57,7 @@ Vous pouvez utiliser le nœud **services connectés** dans **Explorateur de solu
 
 1. Cliquez sur **Ok** pour ajouter la référence au projet.
 
-     Un client de service (proxy) est généré, et les métadonnées qui décrivent le service sont ajoutées au fichier *app. config* .
+     Un client de service (proxy) est généré, et les métadonnées qui décrivent le service sont ajoutées au fichier *app.config* .
 ::: moniker-end
 ::: moniker range=">=vs-2019"
 1. Dans **Explorateur de solutions**, double-cliquez ou appuyez sur le nœud **services connectés** .
@@ -86,7 +86,7 @@ Vous pouvez utiliser le nœud **services connectés** dans **Explorateur de solu
 
 1. Cliquez sur **Terminer** pour ajouter la référence au projet.
 
-     Un client de service (proxy) est généré, et les métadonnées qui décrivent le service sont ajoutées au fichier *app. config* .
+     Un client de service (proxy) est généré, et les métadonnées qui décrivent le service sont ajoutées au fichier *app.config* .
 
 ::: moniker-end
 
@@ -108,7 +108,7 @@ Vous pouvez utiliser le nœud **services connectés** dans **Explorateur de solu
 
 1. Cliquez sur **Ok** pour ajouter la référence au projet.
 
-    Un client de service (proxy) génère, et les métadonnées qui décrivent le service sont ajoutées au fichier *app. config* .
+    Un client de service (proxy) génère, et les métadonnées qui décrivent le service sont ajoutées au fichier *app.config* .
 ::: moniker-end
 ::: moniker range=">=vs-2019"
 1. Dans **Explorateur de solutions**, double-cliquez ou appuyez sur le nœud **services connectés** . 
@@ -129,7 +129,7 @@ Vous pouvez utiliser le nœud **services connectés** dans **Explorateur de solu
 
 1. Cliquez sur **Terminer** pour ajouter la référence au projet.
 
-    Un client de service (proxy) génère, et les métadonnées qui décrivent le service sont ajoutées au fichier *app. config* .
+    Un client de service (proxy) génère, et les métadonnées qui décrivent le service sont ajoutées au fichier *app.config* .
 
 ::: moniker-end
 
@@ -151,7 +151,7 @@ Si une référence de service n’est plus utilisée, vous pouvez la supprimer d
 
 - Dans **Explorateur de solutions**, cliquez avec le bouton droit sur la référence de service, puis cliquez sur **supprimer**.
 
-     Le client de service sera supprimé de la solution, et les métadonnées qui décrivent le service seront supprimées du fichier *app. config* .
+     Le client de service sera supprimé de la solution, et les métadonnées qui décrivent le service seront supprimées du fichier *app.config* .
 
     > [!NOTE]
     > Tout code qui fait référence à la référence de service doit être supprimé manuellement.

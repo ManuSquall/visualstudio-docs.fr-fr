@@ -2,7 +2,7 @@
 title: Guide pratique pour configurer des projets et cibler des plateformes
 ms.date: 08/16/2019
 ms.technology: vs-ide-compile
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - project settings [Visual Studio], targeting platforms
 - platforms, targeting specific CPUs
@@ -18,16 +18,16 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9cbe4bc3f982ae18b9f85fe8bf5c21495c98beee
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: a58b60e23bf08fb86a8dd7bc09d760085b6ea25f
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "76112541"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85284597"
 ---
 # <a name="how-to-configure-projects-to-target-platforms"></a>Guide pratique pour configurer des projets et cibler des plateformes
 
-Visual Studio vous permet de configurer vos applications pour cibler différentes plateformes, notamment des plateformes 64 bits. Pour plus d’informations sur le support de la plate-forme 64 bits dans Visual Studio, voir [applications 64 bits](/dotnet/framework/64-bit-apps).
+Visual Studio vous permet de configurer vos applications pour cibler différentes plateformes, notamment des plateformes 64 bits. Pour plus d’informations sur la prise en charge de la plateforme 64 bits dans Visual Studio, consultez [applications 64 bits](/dotnet/framework/64-bit-apps).
 
 ## <a name="target-platforms-with-the-configuration-manager"></a>Cibler des plateformes avec le Gestionnaire de configurations
 
@@ -35,11 +35,11 @@ Le **Gestionnaire de configurations** vous permet d’ajouter rapidement une nou
 
 ### <a name="to-configure-a-project-to-target-a-64-bit-platform"></a>Pour configurer un projet pour cibler une plateforme 64 bits
 
-1. Sur la barre de menu, choisissez **Build** > **Configuration Manager**.
+1. Dans la barre de menus, choisissez **générer**  >  **Configuration Manager**.
 
 2. Dans la liste **Plateforme de la solution active**, choisissez une plateforme 64 bits pour la solution à cibler, puis choisissez le bouton **Fermer**.
 
-    1. Si la plate-forme que vous voulez n’apparaît pas dans la liste **de la plate-forme de solution Active,** choisissez **New**.
+    1. Si la plateforme souhaitée ne figure pas dans la liste **plateforme de la solution active** , choisissez **nouveau**.
 
          La boîte de dialogue **Nouvelle plateforme de solution** s’affiche.
 
@@ -51,6 +51,10 @@ Le **Gestionnaire de configurations** vous permet d’ajouter rapidement une nou
     3. Si vous souhaitez copier les paramètres d’une configuration de plateforme actuelle, choisissez-la, puis choisissez le bouton **OK**.
 
 Les propriétés de tous les projets qui ciblent la plateforme 64 bits sont mises à jour et la prochaine génération du projet est optimisée pour les plateformes 64 bits.
+
+> [!NOTE]
+> Le nom de la plateforme **Win32** est utilisé pour les projets C++, et cela signifie **x86**. Visual Studio prend en compte les plateformes au niveau du projet et les plateformes de niveau solution, et les plateformes de projet proviennent des systèmes de projet spécifiques au langage. Les projets C++ utilisent **Win32** et **x64**, mais les plateformes de solution utilisent **x86** et **x64**. Quand vous choisissez **x86** comme configuration de solution, Visual Studio sélectionne la plateforme **Win32** pour les projets C++. Pour afficher à la fois les paramètres de plateforme de niveau projet et de plateforme au niveau de la solution, ouvrez **Configuration Manager** et notez les deux paramètres de plateforme. La plateforme au niveau de la solution est présentée dans la liste déroulante plateforme de la **solution active** , et le tableau indique la plateforme au niveau du projet pour chaque projet.
+> ![Capture d’écran montrant la plateforme de la solution et la plateforme de projet](media/project-platform-win32.png)
 
 ## <a name="target-platforms-in-the-project-designer"></a>Cibler des plateformes dans le Concepteur de projet
 
@@ -68,7 +72,7 @@ L’exécution de cette tâche varie suivant le langage de programmation que vou
 
 Parfois, vous devez modifier manuellement le fichier projet pour une configuration personnalisée. C’est le cas quand vous avez des conditions qui ne peuvent pas être spécifiées dans l’IDE, comme dans l’exemple suivant comprenant deux références pour deux plateformes différentes.
 
-### <a name="example-referencing-x86-and-x64-assemblies-and-dlls"></a>Exemple : Référencement des assemblages et des DLL x86 et x64
+### <a name="example-referencing-x86-and-x64-assemblies-and-dlls"></a>Exemple : référencement d’assemblys et de dll x86 et x64
 
 Vous pouvez avoir les versions x86 et x64 d’un assembly ou d’une DLL .NET. Pour configurer votre projet de manière à utiliser ces références, ajoutez d’abord la référence, puis ouvrez le fichier projet et modifiez-le pour ajouter un `ItemGroup` avec une condition qui fait référence à la fois à la configuration et à la plateforme cible.  Par exemple, supposons que le binaire que vous référencez est ClassLibrary1 et qu’il existe des chemins différents pour les configurations Debug et Release, ainsi que des versions x86 et x64.  Ensuite, utilisez quatre éléments `ItemGroup` avec toutes les combinaisons de paramètres, comme suit :
 
@@ -120,4 +124,4 @@ Pour plus d’informations sur le fichier projet, consultez [Informations de ré
 - [/platform (options du compilateur C#)](/dotnet/csharp/language-reference/compiler-options/platform-compiler-option)
 - [Applications 64 bits](/dotnet/framework/64-bit-apps)
 - [Prise en charge de l’IDE Visual Studio 64 bits](../ide/visual-studio-ide-64-bit-support.md)
-- [Présentation du fichier projet](/aspnet/web-forms/overview/deployment/web-deployment-in-the-enterprise/understanding-the-project-file)
+- [Fonctionnement du fichier projet](/aspnet/web-forms/overview/deployment/web-deployment-in-the-enterprise/understanding-the-project-file)

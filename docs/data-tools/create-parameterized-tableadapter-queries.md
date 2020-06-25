@@ -1,7 +1,7 @@
 ---
 title: Créer des requêtes TableAdapter paramétrées
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -18,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 98e1ee8a279933cc2cc59abe70b6ea8af4850676
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: a2b94e10dd09d26a17a7574db97880567f7725cd
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75586742"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85282603"
 ---
 # <a name="create-parameterized-tableadapter-queries"></a>Créer des requêtes TableAdapter paramétrées
 
@@ -40,7 +40,7 @@ Vous créez des requêtes TableAdapter paramétrées dans le **Concepteur de Dat
 
 - Créez un TableAdapter, en ajoutant une clause WHERE avec les paramètres souhaités à l'instruction SQL. Pour plus d’informations, consultez [créer et configurer des TableAdapters](../data-tools/create-and-configure-tableadapters.md).
 
-     \- ou -
+     -ou-
 
 - Ajoutez une requête à un TableAdapter existant, en ajoutant une clause WHERE avec les paramètres souhaités à l'instruction SQL.
 
@@ -65,7 +65,7 @@ Vous créez des requêtes TableAdapter paramétrées dans le **Concepteur de Dat
 
 4. Tapez un nom dans la zone **Nom de la nouvelle requête** si vous créez une requête.
 
-     \- ou -
+     -ou-
 
      Sélectionnez une requête dans la zone **Nom de la requête existante**.
 
@@ -77,7 +77,7 @@ Vous créez des requêtes TableAdapter paramétrées dans le **Concepteur de Dat
 
 ### <a name="query-for-null-values"></a>Requête pour les valeurs null
 
-Les paramètres TableAdapter peuvent recevoir des valeurs NULL lorsque vous souhaitez rechercher des enregistrements qui n’ont pas de valeur actuelle. Par exemple, considérez la requête suivante qui a un paramètre `ShippedDate` dans sa clause `WHERE` :
+Les paramètres TableAdapter peuvent recevoir des valeurs NULL lorsque vous souhaitez rechercher des enregistrements qui n’ont pas de valeur actuelle. Par exemple, considérez la requête suivante qui a un `ShippedDate` paramètre dans sa `WHERE` clause :
 
 ```sql
 SELECT CustomerID, OrderDate, ShippedDate
@@ -94,9 +94,9 @@ Pour permettre à une requête d’accepter des valeurs NULL :
 
 1. Dans le **Concepteur de DataSet**, sélectionnez la requête TableAdapter qui doit accepter des valeurs de paramètre null.
 
-2. Dans la fenêtre **Propriétés** , sélectionnez **paramètres**, puis cliquez sur le bouton de sélection ( **...** ) pour ouvrir l' **éditeur de collections Parameters**.
+2. Dans la fenêtre **Propriétés** , sélectionnez **paramètres**, puis cliquez sur le bouton de sélection (**...**) pour ouvrir l' **éditeur de collections Parameters**.
 
-3. Sélectionnez le paramètre qui autorise les valeurs NULL et affectez à la propriété **AllowDBNull** la valeur `true`.
+3. Sélectionnez le paramètre qui autorise les valeurs NULL et affectez à la propriété **AllowDBNull** la valeur `true` .
 
 ## <a name="see-also"></a>Voir aussi
 

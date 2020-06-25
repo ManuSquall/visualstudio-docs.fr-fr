@@ -1,7 +1,7 @@
 ---
 title: Personnaliser des menus et des barres d’outils
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - vs.renametoolbar
 - vs.customize.toolbars
@@ -27,12 +27,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ed425b120d5d47fb684294ce17bd7d48374c638e
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: ed85d3a3406cf7abf4bc08e728cc647d605e16ae
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79301852"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85284397"
 ---
 # <a name="how-to-customize-menus-and-toolbars-in-visual-studio"></a>Guide pratique pour personnaliser des menus et des barres d’outils dans Visual Studio
 
@@ -43,7 +43,7 @@ Vous pouvez personnaliser Visual Studio non seulement en ajoutant et en supprima
 
 ## <a name="add-remove-or-move-a-menu-on-the-menu-bar"></a>Ajouter, supprimer ou déplacer un menu dans la barre de menus
 
-1. Sur la barre de menu, choisissez **Tools** > **Customize**.
+1. Dans la barre de menus, choisissez **Outils**  >  **personnaliser**.
 
      La boîte de dialogue **Personnaliser** s’affiche.
 
@@ -59,7 +59,7 @@ Vous pouvez personnaliser Visual Studio non seulement en ajoutant et en supprima
 
 ## <a name="add-remove-or-move-a-toolbar"></a>Ajouter, supprimer ou déplacer une barre d’outils
 
-1. Sur la barre de menu, choisissez **Tools** > **Customize**.
+1. Dans la barre de menus, choisissez **Outils**  >  **personnaliser**.
 
      La boîte de dialogue **Personnaliser** s’affiche.
 
@@ -79,11 +79,11 @@ Vous pouvez personnaliser Visual Studio non seulement en ajoutant et en supprima
         Vous pouvez également faire glisser le bord gauche d'une barre d'outils pour placer cette dernière n'importe où dans la zone d'ancrage principale.
 
         > [!NOTE]
-        > Pour plus d’informations sur la façon d’améliorer la convivialité et l’accessibilité des barres d’outils, voir [Comment : Définir les options d’accessibilité IDE](../ide/reference/how-to-set-ide-accessibility-options.md).
+        > Pour plus d’informations sur l’amélioration de l’utilisation et de l’accessibilité des barres d’outils, consultez Guide pratique [pour définir les options d’accessibilité](../ide/reference/how-to-set-ide-accessibility-options.md)de l’IDE.
 
 ## <a name=""></a><a name="customizing_menu">Personnaliser un menu ou une barre d’outils</a>
 
-1. Sur la barre de menu, choisissez **Tools** > **Customize**.
+1. Dans la barre de menus, choisissez **Outils**  >  **personnaliser**.
 
     La boîte de dialogue **Personnaliser** s’affiche.
 
@@ -105,7 +105,7 @@ Vous pouvez personnaliser Visual Studio non seulement en ajoutant et en supprima
 
 ## <a name="reset-a-menu-or-a-toolbar"></a>Réinitialiser un menu ou une barre d’outils
 
-1. Sur la barre de menu, choisissez **Tools** > **Customize**.
+1. Dans la barre de menus, choisissez **Outils**  >  **personnaliser**.
 
     La boîte de dialogue **Personnaliser** s’affiche.
 

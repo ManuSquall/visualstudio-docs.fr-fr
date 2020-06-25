@@ -1,21 +1,21 @@
 ---
 title: Impossible d’extraire les informations de schéma pour l’objet de base de données
 ms.date: 11/04/2016
-ms.topic: reference
+ms.topic: error-reference
 ms.assetid: a1c8f833-c918-4a86-9679-d2a791f938a9
 author: ghogen
 ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 13b6c4874200bf81e8afdd444066d81e67f9d66f
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: f730484ade07689f2a50e19a263adbcd10693151
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75586832"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85282694"
 ---
-# <a name="could-not-retrieve-schema-information-for-database-object-object-name"></a>Impossible de récupérer les informations de schéma pour l’objet de base de données \<nom de l’objet>
+# <a name="could-not-retrieve-schema-information-for-database-object-object-name"></a>Impossible d’extraire les informations de schéma pour l’objet de base de données \<object name>
 
 Ce message apparaît généralement quand un objet dans l’**Explorateur de serveurs** ou l’**Explorateur de bases de données** est copié dans le Presse-papiers, supprimé de la base de données, puis collé dans le concepteur. Parce que l'objet de base de données n'existe plus, ce message apparaît.
 

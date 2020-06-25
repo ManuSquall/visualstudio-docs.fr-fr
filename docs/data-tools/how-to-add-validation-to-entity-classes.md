@@ -1,7 +1,7 @@
 ---
 title: Guide pratique pour ajouter une validation à des classes d’entité
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -11,12 +11,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 3ccd83662700794e60572eed923d10452595d726
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 5d408c67b2e54fecd6404bac93d93ecfb35de162
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75586560"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85282343"
 ---
 # <a name="how-to-add-validation-to-entity-classes"></a>Guide pratique pour ajouter une validation à des classes d’entité
 La *validation* de classes d’entité est le processus qui consiste à valider que les valeurs entrées dans des objets de données sont conformes aux contraintes du schéma d’un objet et également aux règles établies pour l’application. Il est conseillé de valider les données avant d'envoyer des mises à jour à la base de données sous-jacente pour réduire les erreurs. Une telle validation permet aussi de réduire le nombre potentiel d'allers-retours entre une application et la base de données.
@@ -62,7 +62,7 @@ Cette procédure indique comment valider des données lorsque la valeur d'une co
 
     Pour les projets C# :
 
-    Étant C# donné que les projets ne génèrent pas automatiquement de gestionnaires d’événements, vous pouvez utiliser IntelliSense pour créer les méthodes partielles de modification de colonne. Tapez `partial`, puis un espace pour accéder à la liste de méthodes partielles disponibles. Cliquez sur la méthode de modification de colonne de la colonne à laquelle la validation doit être ajoutée. Le code suivant ressemble au code généré lorsque vous sélectionnez une méthode partielle de modification de colonne :
+    Comme les projets C# ne génèrent pas automatiquement de gestionnaires d’événements, vous pouvez utiliser IntelliSense pour créer les méthodes partielles de modification de colonne. Tapez `partial`, puis un espace pour accéder à la liste de méthodes partielles disponibles. Cliquez sur la méthode de modification de colonne de la colonne à laquelle la validation doit être ajoutée. Le code suivant ressemble au code généré lorsque vous sélectionnez une méthode partielle de modification de colonne :
 
     ```csharp
     partial void OnCOLUMNNAMEChanging(COLUMNDATATYPE value)
@@ -106,7 +106,7 @@ Outre la vérification des valeurs lors des modifications, vous avez la possibil
 
     Pour les projets C# :
 
-    Étant C# donné que les projets ne génèrent pas automatiquement de gestionnaires d’événements, vous pouvez utiliser IntelliSense pour créer la méthode `UpdateCLASSNAME` partielle. Tapez `partial`, puis un espace pour accéder à la liste de méthodes partielles disponibles. Cliquez sur la méthode de mise à jour pour la classe sur laquelle vous souhaitez ajouter la validation. Le code suivant ressemble au code généré lorsque vous sélectionnez une méthode partielle `UpdateCLASSNAME` :
+    Comme les projets C# ne génèrent pas automatiquement de gestionnaires d’événements, vous pouvez utiliser IntelliSense pour créer la `UpdateCLASSNAME` méthode partielle. Tapez `partial`, puis un espace pour accéder à la liste de méthodes partielles disponibles. Cliquez sur la méthode de mise à jour pour la classe sur laquelle vous souhaitez ajouter la validation. Le code suivant ressemble au code généré lorsque vous sélectionnez une `UpdateCLASSNAME` méthode partielle :
 
     ```csharp
     partial void UpdateCLASSNAME(CLASSNAME instance)

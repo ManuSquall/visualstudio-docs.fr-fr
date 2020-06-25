@@ -1,18 +1,18 @@
 ---
 title: Mode de barre et mode de mappage pour la barre de défilement
 ms.date: 03/20/2020
-ms.topic: conceptual
+ms.topic: how-to
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c66cda1b90d11a44f744faf0012a3e41212d33dd
-ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
+ms.openlocfilehash: 5d1b659dabed2337013ffb84ff48277f0edacb09
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "79988559"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85283981"
 ---
 # <a name="how-to-customize-the-scroll-bar"></a>Procédure : Personnaliser la barre de défilement
 
@@ -54,7 +54,7 @@ Le *mode barre* affiche les indicateurs d’annotation dans la barre de défilem
 
 ### <a name="map-mode"></a>Mode mappage
 
-*Le mode carte* affiche les lignes de code, en miniature, sur la barre de défilement. Vous pouvez choisir la largeur de la colonne de mappage en sélectionnant une valeur dans **Vue d’ensemble de la source**. Pour permettre un aperçu plus grand du code quand vous placez le pointeur sur le mappage, sélectionnez l’option **Afficher une info-bulle d’aperçu**. Les zones réduites sont grisées différemment et se développent quand vous double-cliquez dessus.
+Le *mode carte* affiche des lignes de code, en miniature, sur la barre de défilement. Vous pouvez choisir la largeur de la colonne de mappage en sélectionnant une valeur dans **Vue d’ensemble de la source**. Pour permettre un aperçu plus grand du code quand vous placez le pointeur sur le mappage, sélectionnez l’option **Afficher une info-bulle d’aperçu**. Les zones réduites sont grisées différemment et se développent quand vous double-cliquez dessus.
 
 > [!TIP]
 > Vous pouvez désactiver l’affichage du code miniature en mode mappage en définissant **Vue d’ensemble de la source** sur **Désactivé**. Si l’option **Afficher une info-bulle d’aperçu** est sélectionnée, vous voyez toujours un aperçu du code à cet emplacement quand vous placez votre pointeur sur la barre de défilement, et le curseur va toujours à cet emplacement dans le fichier quand vous cliquez.
@@ -68,7 +68,7 @@ L’image suivante illustre l’option **Afficher une info-bulle d’aperçu** :
 ![Barre de défilement Visual Studio avec une info-bulle](../ide/media/enhancedscrollbarsearchtooltip.png)
 
 > [!TIP]
-> Pour changer les couleurs que vous voyez en mode carte, choisissez **Tools** > **Options** > **Environment** > **Fonts and Colors**. Ensuite, dans **les éléments d’affichage**, choisissez l’un des éléments qui sont précédés avec "Aperçu", faire les changements de couleur que vous voulez, puis choisir **OK**.
+> Pour modifier les couleurs affichées en mode carte, choisissez **Outils**  >  **options**  >  **environnement**  >  **polices et couleurs**. Ensuite, dans **éléments affichés**, choisissez l’un des éléments précédés de « vue d’ensemble », apportez les modifications souhaitées à la couleur, puis cliquez sur **OK**.
 
 ## <a name="see-also"></a>Voir aussi
 

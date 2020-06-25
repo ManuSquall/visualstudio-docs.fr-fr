@@ -1,7 +1,7 @@
 ---
 title: Création de modèles d’élément multifichier
 ms.date: 01/02/2018
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - Visual Studio templates, creating multi-file item templates
 - multi-file item templates
@@ -9,12 +9,12 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: e8a6e5358a87e3d64b341c89b8ffd4cd3cf3e325
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 4a4f0c50fc0a3fe21da560356d3551ca85ef9d66
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75593731"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85284423"
 ---
 # <a name="how-to-create-multi-file-item-templates"></a>Guide pratique pour créer des modèles d’élément multifichiers
 
@@ -36,7 +36,7 @@ Vous pouvez créer un modèle d’élément multifichier de la même manière qu
 
 1. Créez le modèle d’élément comme vous le feriez manuellement pour un modèle d’élément à un seul fichier, mais incluez chaque fichier qui constitue l’élément multifichier.
 
-1. Dans le fichier XML *.vstemplate*, ajoutez un élément `ProjectItem` pour chaque fichier, puis ajoutez un attribut `TargetFileName` à cet élément. Affectez à l’attribut `TargetFileName` la valeur *$fileinputname$.FileExtension*, où *FileExtension* représente l’extension du fichier inclus dans le modèle. Par exemple :
+1. Dans le fichier XML *.vstemplate*, ajoutez un élément `ProjectItem` pour chaque fichier, puis ajoutez un attribut `TargetFileName` à cet élément. Affectez à l’attribut `TargetFileName` la valeur *$fileinputname$.FileExtension*, où *FileExtension* représente l’extension du fichier inclus dans le modèle. Par exemple :
 
     ```xml
     <ProjectItem TargetFileName="$fileinputname$.vb">
@@ -53,19 +53,19 @@ Vous pouvez créer un modèle d’élément multifichier de la même manière qu
      > [!NOTE]
      > Quand vous ajoutez à un projet un élément dérivé de ce modèle, les noms de fichiers dérivent du nom que l’utilisateur entre dans la boîte de dialogue **Ajouter un nouvel élément**.
 
-1. Sélectionnez les fichiers à inclure dans votre modèle, cliquez à droite sur la sélection et choisissez **Envoyer à** > **compressé (zippé) dossier**.
+1. Sélectionnez les fichiers à inclure dans votre modèle, cliquez avec le bouton droit sur la sélection, puis choisissez **Envoyer vers**le  >  **dossier compressé**.
 
-   Les fichiers que vous avez sélectionnés sont compressés dans un fichier *.zip.*
+   Les fichiers que vous avez sélectionnés sont compressés dans un fichier *. zip* .
 
-1. Copiez le fichier *.zip* à l’emplacement des modèles d’élément utilisateur. Par défaut, le répertoire est : *%USERPROFILE%\Documents\Visual Studio \<Version\>\Templates\ItemTemplates*. Pour plus d’informations, voir [Comment : Localiser et organiser des modèles](../ide/how-to-locate-and-organize-project-and-item-templates.md).
+1. Copiez le fichier *.zip* à l’emplacement des modèles d’élément utilisateur. Par défaut, le répertoire est *%USERPROFILE%\Documents\Visual Studio \<Version\> \Templates\ItemTemplates*. Pour plus d’informations, consultez Guide pratique [pour localiser et organiser les modèles](../ide/how-to-locate-and-organize-project-and-item-templates.md).
 
 1. Fermez Visual Studio, puis rouvrez-le.
 
-1. Créez un nouveau projet ou ouvrez un projet existant, puis choisissez **le projet** > **Ajouter un nouvel article** ou appuyer sur **Ctrl**+**Shift**+**A**.
+1. Créez un projet ou ouvrez un projet existant, puis choisissez **projet**  >  **Ajouter un nouvel élément** ou appuyez sur **CTRL** + **MAJ** + **a**.
 
    Le modèle d’élément multifichier apparaît dans la boîte de dialogue **Ajouter un nouvel élément**.
 
-## <a name="example"></a> Exemple
+## <a name="example"></a>Exemple
 
 L’exemple suivant présente un modèle Windows Forms. Quand vous créez un élément à partir de ce modèle, les noms des trois fichiers créés correspondent aux noms entrés dans la boîte de dialogue **Ajouter un nouvel élément**.
 
@@ -94,7 +94,7 @@ L’exemple suivant présente un modèle Windows Forms. Quand vous créez un él
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Créer des modèles de projets et d’objets](../ide/creating-project-and-item-templates.md)
-- [Comment : Créer des modèles d’objets](../ide/how-to-create-item-templates.md)
+- [Créer des modèles de projet et d’élément](../ide/creating-project-and-item-templates.md)
+- [Comment : créer des modèles d’élément](../ide/how-to-create-item-templates.md)
 - [Paramètres de modèle](../ide/template-parameters.md)
-- [Comment : Remplacer les paramètres dans un modèle](../ide/how-to-substitute-parameters-in-a-template.md)
+- [Comment : substituer des paramètres dans un modèle](../ide/how-to-substitute-parameters-in-a-template.md)

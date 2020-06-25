@@ -2,7 +2,7 @@
 title: Guide pratique pour créer et modifier des configurations
 ms.date: 06/21/2017
 ms.technology: vs-ide-compile
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - solution build configurations, editing
 - build configurations, creating
@@ -19,12 +19,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 754d2ceef776ab0dea2d8d51151d4170839173b9
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: a5b3ecd4abb05148130b0d87e287cbe199557951
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "76114699"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85284501"
 ---
 # <a name="how-to-create-and-edit-configurations"></a>Guide pratique pour créer et modifier des configurations
 
@@ -40,7 +40,7 @@ Vous pouvez utiliser la boîte de dialogue **Gestionnaire de configurations** po
 Pour ouvrir la boîte de dialogue **Gestionnaire de configurations**, dans l’**Explorateur de solutions**, ouvrez le menu contextuel de la solution, puis choisissez **Gestionnaire de configurations**.
 
 > [!NOTE]
-> Si la commande **Gestionnaire de configurations** n’apparaît pas dans le menu contextuel, regardez sous le menu **Générer**, dans la barre de menus. S’il n’y apparaît pas non plus, sur la barre de menu, choisissez **Tools** > **Options**, puis dans la vitre gauche de la boîte de dialogue **Options,** élargissez **Les projets et solutions** > **générales,** et dans la bonne partie, sélectionnez la case à cocher des **configurations de construction avancées Show.**
+> Si la commande **Gestionnaire de configurations** n’apparaît pas dans le menu contextuel, regardez sous le menu **Générer**, dans la barre de menus. Si ce n’est pas le cas, dans la barre de menus, choisissez **Outils**  >  **options**, puis dans le volet gauche de la boîte de dialogue **options** , développez **projets et solutions**  >  **général**, puis dans le volet droit, activez la case à cocher **afficher les configurations de build avancées** .
 
 Dans la boîte de dialogue **Gestionnaire de configurations**, vous pouvez utiliser la liste déroulante **Configuration de la solution active** pour sélectionner une configuration de build à l’échelle de la solution, modifier une configuration existante ou créer une nouvelle configuration. Vous pouvez utiliser la liste déroulante **Plateforme de la solution active** pour sélectionner la plateforme ciblée par la configuration, modifier une plateforme existante ou ajouter une nouvelle plateforme. Le volet **Contextes des projets** répertorie les projets de la solution. Pour chaque projet, vous pouvez sélectionner une plateforme et une configuration spécifiques au projet, modifier celles existantes, ou créer une nouvelle configuration et ajouter une nouvelle plateforme. Vous pouvez également cocher les cases qui indiquent si chaque projet est inclus lorsque vous utilisez la configuration à l’échelle de la solution pour générer ou déployer la solution.
 

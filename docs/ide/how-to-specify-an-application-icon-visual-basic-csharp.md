@@ -1,7 +1,7 @@
 ---
 title: Guide pratique pour spécifier une icône d’application (Visual Basic, C#)
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - icons [Visual Studio], application
 - application properties [Visual Studio], icons
@@ -11,12 +11,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 7e78bd32bf9c21829adeb04a22cd30abb47a3379
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 20e5d8a915c1621b26c070976f27db56d8f2c84e
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75596136"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85284059"
 ---
 # <a name="how-to-specify-an-application-icon-visual-basic-c"></a>Guide pratique pour spécifier une icône d’application (Visual Basic, C#)
 
@@ -31,15 +31,15 @@ La propriété `Icon` est accessible dans le volet **Application** du **Concepte
 
 1. Dans l’**Explorateur de solutions**, choisissez un nœud de projet (pas le nœud **Solution**).
 
-1. Sur la barre de menu, choisissez **Project** > **Properties**.
+1. Dans la barre de menus, choisissez Propriétés du **projet**  >  **Properties**.
 
 1. Quand le **Concepteur de projet** apparaît, choisissez l’onglet **Application**.
 
-1. **(Visual Basic)** &mdash;Dans la liste **Icon,** choisissez un fichier icône *(.ico).*
+1. **(Visual Basic)** &mdash; Dans la liste **icône** , choisissez un fichier icône (*. ico*).
 
-    **C -**&mdash;Près de la liste **Icône,** choisissez le ** \<bouton Parcourir... >,** puis naviguez à l’emplacement du fichier icône que vous voulez.
+    **C#** &mdash; Près de la liste **icône** , choisissez le **\<Browse...>** bouton, puis accédez à l’emplacement du fichier icône souhaité.
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Page d’application, Concepteur de projet (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md)
-- [Page d’application, Concepteur de projet (C)](../ide/reference/application-page-project-designer-csharp.md)
+- [Page application, concepteur de projets (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md)
+- [Page application, concepteur de projets (C#)](../ide/reference/application-page-project-designer-csharp.md)

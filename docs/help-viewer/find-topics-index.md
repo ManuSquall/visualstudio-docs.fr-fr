@@ -1,7 +1,7 @@
 ---
 title: Utiliser l’index de la visionneuse d’aide
 ms.date: 11/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - Index tab [Help Viewer]
 - Help Viewer, using the index
@@ -15,12 +15,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0f80b0d63bc7e7fdb89f69607e4529e18f26cc30
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
-ms.translationtype: HT
+ms.openlocfilehash: ff72fc3e65b48e195c8ffc9587bdbb3c5fc382be
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67825941"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85284956"
 ---
 # <a name="find-topics-by-using-the-help-viewer-index"></a>Rechercher des rubriques à l’aide de l’index de l’application Help Viewer
 
@@ -45,7 +45,7 @@ Sous l’onglet **Index**, effectuez l’une des tâches suivantes :
 
 L’utilisation de l’index est un processus simple ; toutefois, comprendre comment mieux entrer des mots clés peut rendre vos recherches d’index plus productives.
 
-### <a name="general-guidelines"></a>Indications générales
+### <a name="general-guidelines"></a>Recommandations générales
 
 - Faites défiler les entrées d’index. Toutes les rubriques ne sont pas indexées de la même façon, et celle qui peut vous aider peut être plus haut ou plus bas que prévu dans la liste.
 
@@ -75,10 +75,10 @@ Si vous ne trouvez pas d’entrée pour le mot ou l’expression que vous avez e
 
 - Entrez un synonyme du mot ou du verbe que vous recherchez.
 
-    Par exemple, si vous avez entré le terme « génération », essayez « création » à la place.
+    Par exemple, si vous avez entré le terme « construction », essayez « création » à la place.
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Guide pratique pour rechercher des rubriques dans la table des matières](../help-viewer/find-topics-toc.md)
-- [Guide pratique pour rechercher des rubriques](../help-viewer/find-topics.md)
+- [Comment : Rechercher des rubriques dans la table des matières](../help-viewer/find-topics-toc.md)
+- [Comment : Rechercher des rubriques](../help-viewer/find-topics.md)
 - [Microsoft Help Viewer](../help-viewer/overview.md)

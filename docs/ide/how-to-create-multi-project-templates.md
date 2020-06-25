@@ -1,7 +1,7 @@
 ---
 title: Créer des modèles à projets multiples
 ms.date: 04/17/2019
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - Visual Studio templates, creating multi-project
 - project templates, multi-project
@@ -9,12 +9,12 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: 6da7464f5e22e186edff7671744c2605bee3c9ad
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: b71af98c7d72e0b3a510f3968f3d0770cd5401df
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75591084"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85284410"
 ---
 # <a name="how-to-create-multi-project-templates"></a>Guide pratique pour créer des modèles à plusieurs projets
 
@@ -30,9 +30,9 @@ Les modèles à plusieurs projets se comportent différemment des modèles à pr
 
 Un modèle à plusieurs projets doit inclure les éléments suivants, compressés dans un fichier *.zip* :
 
-- Un fichier *de vstemplate* racine pour l’ensemble du modèle multi-projet. Ce fichier *vstemplate* racine contient des métadonnées qui s’affichent dans la boîte de dialogue où vous créez un projet. Il spécifie également où trouver les fichiers *vstemplate* pour les projets du modèle. Ce fichier doit se trouver à la racine du fichier *.zip*.
+- Fichier *VSTemplate* racine pour l’ensemble du modèle à plusieurs projets. Ce fichier *vstemplate* racine contient des métadonnées qui s’affichent dans la boîte de dialogue où vous créez un projet. Il spécifie également où trouver les fichiers *vstemplate* pour les projets du modèle. Ce fichier doit se trouver à la racine du fichier *.zip*.
 
-- Deux dossiers ou plus contenant les fichiers exigés pour un modèle de projet complet sont nécessaires. Les dossiers comprennent tous les fichiers de code pour le projet, ainsi qu’un fichier *vstemplate* pour le projet.
+- Deux dossiers ou plus contenant les fichiers exigés pour un modèle de projet complet sont nécessaires. Les dossiers incluent tous les fichiers de code du projet, ainsi qu’un fichier *VSTemplate* pour le projet.
 
 Par exemple, le fichier *.zip* d’un modèle à plusieurs projets contenant deux projets peut comporter les fichiers et répertoires suivants :
 
@@ -44,16 +44,16 @@ Par exemple, le fichier *.zip* d’un modèle à plusieurs projets contenant deu
 - *\Project2\Project2.vbproj*
 - *\Project2\Class.vb*
 
-Le fichier *de vstemplate* racine pour un modèle multi-projet diffère d’un modèle d’un seul projet de la manière suivante :
+Le fichier *VSTemplate* racine d’un modèle à plusieurs projets diffère d’un modèle à projet unique des manières suivantes :
 
-- L’attribut **Type** de l’élément **VSTemplate** a la valeur **ProjectGroup** au lieu de **Project**. Par exemple :
+- L’attribut **Type** de l’élément **VSTemplate** a la valeur **ProjectGroup** au lieu de **Project**. Par exemple :
 
     ```xml
     <VSTemplate Version="2.0.0" Type="ProjectGroup"
         xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">
     ```
 
-- L’élément **TemplateContent** contient un élément **ProjectCollection** ayant un ou plusieurs éléments **ProjectTemplateLink** qui définissent les chemins des fichiers *vstemplate* des projets inclus. Par exemple :
+- L’élément **TemplateContent** contient un élément **ProjectCollection** ayant un ou plusieurs éléments **ProjectTemplateLink** qui définissent les chemins des fichiers *vstemplate* des projets inclus. Par exemple :
 
     ```xml
     <TemplateContent>
@@ -69,7 +69,7 @@ Le fichier *de vstemplate* racine pour un modèle multi-projet diffère d’un m
     ```
 
 > [!TIP]
-> Si vous souhaitez que seul le modèle à plusieurs projets s’affiche dans la boîte de dialogue du nouveau projet et pas les projets individuels qu’il contient, marquez les modèles internes comme [masqués](../extensibility/hidden-element-visual-studio-templates.md). Par exemple :
+> Si vous souhaitez que seul le modèle à plusieurs projets s’affiche dans la boîte de dialogue du nouveau projet et pas les projets individuels qu’il contient, marquez les modèles internes comme [masqués](../extensibility/hidden-element-visual-studio-templates.md). Par exemple :
 >
 > ```xml
 > <VSTemplate Type="Project" ... >
@@ -94,7 +94,7 @@ Le fichier *de vstemplate* racine pour un modèle multi-projet diffère d’un m
    > <ProjectTemplateLink ProjectName="MyProject" CopyParameters="true">...</ProjectTemplateLink>
    > ```
 
-3. Sur le menu du **projet,** choisissez **Export Template**.
+3. Dans le menu **projet** , choisissez **Exporter le modèle**.
 
    L’Assistant **Exportation de modèle** s’ouvre.
 
@@ -111,19 +111,19 @@ Le fichier *de vstemplate* racine pour un modèle multi-projet diffère d’un m
 
 7. Extrayez le contenu du fichier *.zip* de chaque projet dans le sous-répertoire correspondant que vous avez créé.
 
-8. Dans le répertoire de base, créez un fichier XML portant une extension *.vstemplate*. Ce fichier contient les métadonnées du modèle à plusieurs projets. Consultez l’exemple qui suit pour la structure du fichier. Assurez-vous de spécifier le chemin relatif vers le fichier *vstemplate* de chaque projet.
+8. Dans le répertoire de base, créez un fichier XML portant une extension *.vstemplate*. Ce fichier contient les métadonnées du modèle à plusieurs projets. Consultez l’exemple qui suit pour la structure du fichier. Veillez à spécifier le chemin d’accès relatif au fichier *VSTemplate* de chaque projet.
 
-9. Sélectionnez tous les fichiers dans l’annuaire de base, et à partir du bon clic ou du menu contextuelle, choisissez **Envoyer à** > **compressé (zippé) dossier**.
+9. Sélectionnez tous les fichiers dans le répertoire de base, puis, dans le menu contextuel, cliquez avec le bouton droit et choisissez **Envoyer vers**le  >  **dossier compressé (zippé)**.
 
    Les fichiers et dossiers sont compressés dans un fichier *.zip*.
 
-10. Copiez le fichier *.zip* dans le répertoire des modèles de projet utilisateur. Par défaut, ce répertoire est : *%USERPROFILE%\Documents\Visual Studio \<version\>\Templates\ProjectTemplates*.
+10. Copiez le fichier *.zip* dans le répertoire des modèles de projet utilisateur. Par défaut, ce répertoire est *%USERPROFILE%\Documents\Visual Studio \<version\> \Templates\ProjectTemplates*.
 
-11. Dans Visual Studio, choisissez **File** > **New** > **Project** et vérifiez que votre modèle apparaît.
+11. Dans Visual Studio, choisissez **fichier**  >  **nouveau**  >  **projet** et vérifiez que votre modèle apparaît.
 
 ## <a name="two-project-example"></a>Exemple avec deux projets
 
-Cet exemple montre un fichier de base *de vstemplate* racine multi-projet. Dans cet exemple, le modèle a deux projets, **My Windows Application** et **My Class Library**. L’attribut **ProjectName** de l’élément **ProjectTemplateLink** spécifie le nom donné au projet.
+Cet exemple montre un fichier *VSTemplate* racine à plusieurs projets de base. Dans cet exemple, le modèle a deux projets, **My Windows Application** et **My Class Library**. L’attribut **ProjectName** de l’élément **ProjectTemplateLink** spécifie le nom donné au projet.
 
 > [!TIP]
 > Si l’attribut **ProjectName** n’est pas spécifié, le nom du fichier *vstemplate* est utilisé comme nom de projet.
@@ -188,8 +188,8 @@ Cet exemple utilise l’élément **SolutionFolder** pour diviser les projets en
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Création de modèles de projets et d’objets](../ide/creating-project-and-item-templates.md)
-- [Comment : Créer des modèles de projet](../ide/how-to-create-project-templates.md)
+- [Création de modèles de projet et d’élément](../ide/creating-project-and-item-templates.md)
+- [Comment : créer des modèles de projet](../ide/how-to-create-project-templates.md)
 - [Informations de référence sur les schémas de modèles Visual Studio (extensibilité)](../extensibility/visual-studio-template-schema-reference.md)
-- [Élément SolutionFolder (modèles Visual Studio)](../extensibility/solutionfolder-element-visual-studio-templates.md)
+- [SolutionFolder, élément (modèles Visual Studio)](../extensibility/solutionfolder-element-visual-studio-templates.md)
 - [Élément ProjectTemplateLink (modèles Visual Studio)](../extensibility/projecttemplatelink-element-visual-studio-templates.md)

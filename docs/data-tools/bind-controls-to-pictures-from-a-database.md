@@ -1,7 +1,7 @@
 ---
 title: Lier des contrôles à des images d’une base de données
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - images [Visual Basic], displaying on Windows Forms
 - data binding [Windows Forms], pictures
@@ -17,16 +17,16 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: a4155a246516bef074a56e5644712912b2ce5af6
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: e9093c2a2d7cec95e4fdd08ff4273ae8f8126a36
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75587002"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85282982"
 ---
 # <a name="bind-controls-to-pictures-from-a-database"></a>Lier des contrôles à des images d’une base de données
 
-Vous pouvez utiliser la fenêtre **sources de données** pour lier une image d’une base de données à un contrôle dans votre application. Par exemple, vous pouvez lier une image à un contrôle <xref:System.Windows.Controls.Image> dans une application WPF, ou à un contrôle <xref:System.Windows.Forms.PictureBox> dans une application Windows Forms.
+Vous pouvez utiliser la fenêtre **sources de données** pour lier une image d’une base de données à un contrôle dans votre application. Par exemple, vous pouvez lier une image à un <xref:System.Windows.Controls.Image> contrôle dans une application WPF, ou à un <xref:System.Windows.Forms.PictureBox> contrôle dans une application Windows Forms.
 
 Les images d’une base de données sont généralement stockées en tant que tableaux d’octets. Les éléments de la fenêtre **sources de données** qui sont stockés en tant que tableaux d’octets ont leur type de contrôle défini sur None par défaut, car les tableaux d’octets peuvent contenir **n'** importe quel élément d’un tableau d’octets simple au fichier exécutable d’une application volumineuse. Pour créer un contrôle lié aux données pour un élément de tableau d’octets dans la fenêtre **sources de données** qui représente une image, vous devez sélectionner le contrôle à créer.
 
@@ -39,7 +39,7 @@ La procédure suivante suppose que la fenêtre **sources de données** est déj�
 2. Dans la fenêtre **sources de données** , développez la table ou l’objet souhaité pour afficher ses colonnes ou ses propriétés.
 
    > [!TIP]
-   > Si la fenêtre **sources de données** n’est pas ouverte, ouvrez-la en sélectionnant **Afficher** > d’autres **sources de données** **Windows** > .
+   > Si la fenêtre **sources de données** n’est pas ouverte, ouvrez-la en sélectionnant **Afficher**d'  >  **autres**  >  **sources de données**Windows.
 
 3. Sélectionnez la colonne ou la propriété qui contient vos données image, puis sélectionnez l’un des contrôles suivants dans la liste déroulante de contrôle :
 

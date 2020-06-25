@@ -2,7 +2,7 @@
 title: Guide pratique pour générer dans un répertoire de sortie commun
 ms.date: 11/04/2016
 ms.technology: vs-ide-compile
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - output directory
 - builds [Visual Studio], common directory
@@ -13,12 +13,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a1e669789d2117b4bd2ee550dfffb147e46620c4
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 9a499b5ca5ea64dd9ded10f82b1af43258f346d3
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "68416747"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85284774"
 ---
 # <a name="how-to-build-to-a-common-output-directory"></a>Guide pratique pour générer dans un répertoire de sortie commun
 
@@ -37,4 +37,4 @@ Par défaut, [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] génère 
 ## <a name="see-also"></a>Voir aussi
 
 - [Compilation et génération](../ide/compiling-and-building-in-visual-studio.md)
-- [Comment : Changer l’annuaire de sortie de construction](../ide/how-to-change-the-build-output-directory.md)
+- [Comment : modifier le répertoire de sortie de génération](../ide/how-to-change-the-build-output-directory.md)

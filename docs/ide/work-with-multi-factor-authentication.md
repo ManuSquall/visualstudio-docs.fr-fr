@@ -1,5 +1,5 @@
 ---
-title: Utiliser des comptes qui requièrent l’authentification multifacteur
+title: Utiliser des comptes qui demandent une authentification multifacteur
 ms.date: 05/27/2020
 ms.topic: conceptual
 description: Découvrez comment utiliser Visual Studio avec des comptes qui requièrent l’authentification multifacteur.
@@ -9,12 +9,12 @@ manager: jillfra
 ms.workload:
 - multiple
 monikerRange: '>=vs-2019'
-ms.openlocfilehash: 696664aa5aa92a3e9a675df4803a3e65e3e81f36
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: 699580689bcf00d00d2a6e07f814be4d1265bb1d
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84185615"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85283544"
 ---
 # <a name="how-to-use-visual-studio-with-accounts-that-require-multi-factor-authentication"></a>Comment utiliser Visual Studio avec des comptes qui requièrent l’authentification multifacteur
 
@@ -33,7 +33,11 @@ Dans la version 16,6, nous avons ajouté de nouvelles fonctionnalités à Visual
 > [!WARNING]
 > Le fait de ne pas utiliser ce flux de travail peut déclencher une dégradation de plusieurs invites d’authentification supplémentaires lors de l’ajout ou de la réauthentification de comptes Visual Studio. 
 
-### <a name="enabling-system-web-browser"></a>Activation du navigateur Web système  
+### <a name="enabling-system-web-browser"></a>Activation du navigateur Web système
+
+> [!NOTE] 
+> Pour une expérience optimale, nous vous recommandons de supprimer les données du navigateur Web par défaut de votre système avant de procéder à ce flux de travail. En outre, si vous avez des comptes professionnels ou scolaires dans vos paramètres Windows 10 sous **accès professionnel ou scolaire**, vérifiez qu’ils sont correctement authentifiés.
+
 Pour activer ce flux de travail, accédez à la boîte de dialogue Options de Visual Studio **(outils > options...)**, sélectionnez l’onglet **comptes** , puis choisissez **navigateur Web système** sous la liste déroulante **Ajouter et réauthentifier les comptes à l’aide de :** . 
 
 :::image type="content" source="media/select-system-web-browser.png" alt-text="Dans le menu, sélectionnez navigateur Web système.":::
@@ -43,20 +47,22 @@ Une fois le flux de travail du navigateur Web système activé, vous pouvez vous
 </br>
 :::image type="content" source="media/add-personalization-account.png" alt-text="Ajoutez un nouveau compte de personnalisation à Visual Studio." border="false":::
 
-Cette action ouvre le navigateur Web par défaut de votre système, vous demande de vous connecter à votre compte et de valider toute stratégie d’authentification MFA requise. 
+Cette action ouvre le navigateur Web par défaut de votre système, vous demande de vous connecter à votre compte et de valider toute stratégie d’authentification MFA requise.
+
+En fonction de vos activités de développement et de la configuration des ressources, vous pouvez être invité à entrer à nouveau vos informations d’identification au cours de votre session. Cela peut se produire lorsque vous ajoutez une nouvelle ressource ou essayez d’accéder à une ressource sans avoir préalablement rempli ses exigences d’autorisation d’autorité de certification/authentification MFA.
 
 > [!NOTE] 
-> Gardez votre navigateur ouvert tout au long du processus pour une expérience optimale, car la fermeture du navigateur peut déclencher des invites d’autorisation supplémentaires. 
+> Pour une expérience optimale, gardez votre navigateur ouvert jusqu’à ce que toutes les stratégies d’autorité de certification/MFA soient validées pour vos ressources. La fermeture du navigateur peut entraîner la perte de l’État MFA précédemment créé et peut demander des invites d’autorisation supplémentaires.
 
 ## <a name="reauthenticating-an-account"></a>Réauthentification d’un compte  
 En cas de problème avec votre compte, Visual Studio peut vous demander de saisir à nouveau vos informations d’identification de compte.  
 
 :::image type="content" source="media/reauthenticate-account.png" alt-text="Réauthentifier votre compte Visual Studio.":::
 
-En cliquant sur **réentrer vos informations d’identification** , vous ouvrez le navigateur Web par défaut de votre système et vous tentez d’actualiser automatiquement vos informations d’identification. En cas d’échec, vous êtes invité à vous connecter à votre compte et à valider toute stratégie d’authentification MFA requise. 
+En cliquant sur **réentrer vos informations d’identification** , vous ouvrez le navigateur Web par défaut de votre système et vous tentez d’actualiser automatiquement vos informations d’identification. En cas d’échec, vous êtes invité à vous connecter à votre compte et à valider toute stratégie d’autorité de certification/MFA requise.
 
 > [!NOTE] 
-> Gardez votre navigateur ouvert tout au long du processus pour une expérience optimale, car la fermeture du navigateur peut déclencher des invites d’autorisation supplémentaires. 
+> Pour une expérience optimale, gardez votre navigateur ouvert jusqu’à ce que toutes les stratégies d’autorité de certification/MFA soient validées pour vos ressources. La fermeture du navigateur peut entraîner la perte de l’État MFA précédemment créé et peut demander des invites d’autorisation supplémentaires.
 
 ## <a name="how-to-opt-out-of-using-a-specific-azure-active-directory-tenant-in-visual-studio"></a>Comment refuser l’utilisation d’un locataire Azure Active Directory spécifique dans Visual Studio
 

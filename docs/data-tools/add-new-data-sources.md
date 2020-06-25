@@ -1,7 +1,7 @@
 ---
 title: Ajouter de nouvelles sources de données
 ms.date: 11/21/2018
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - vs.datasource.datasourcefieldspicker
 helpviewer_keywords:
@@ -13,105 +13,110 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 555d32eb295e944060d2efe0b843e9d157b7c675
-ms.sourcegitcommit: 95f26af1da51d4c83ae78adcb7372b32364d8a2b
+ms.openlocfilehash: 2e8ad5bf65ad25d197785c3e720ec01c7bdc6f9d
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79302251"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85283045"
 ---
 # <a name="add-new-data-sources"></a>Ajouter de nouvelles sources de données
 
-Dans le cadre des outils de données .NET dans Visual Studio, la source de *données* terme se réfère à des objets .NET qui se connectent à un magasin de données et de rendre les données disponibles à une application .NET. Les concepteurs de Visual Studio peuvent consommer la sortie de la source de données pour générer le code de la plaque chauffante qui lie les données aux formulaires lorsque vous faites glisser et larguer des objets de base de données à partir de la fenêtre **Data Sources.** Ce type de source de données peut être :
+:::moniker range="vs-2019"
+> [!NOTE]
+> Les fonctionnalités décrites dans cet article s’appliquent à .NET Framework Windows Forms et le développement WPF. Dans Visual Studio 2019 (et versions antérieures), les fonctionnalités ne sont pas prises en charge pour le développement .NET Core, pour WPF et Windows Forms.
+:::moniker-end
 
-- Une classe dans un modèle de cadre d’entité qui est associée à une sorte de base de données.
+Dans le contexte de .NET Data Tools dans Visual Studio, le terme « *source de données* » fait référence aux objets .net qui se connectent à un magasin de données et mettent les données à la disposition d’une application .net. Les concepteurs Visual Studio peuvent utiliser la sortie de la source de données pour générer le code réutilisable qui lie les données aux formulaires quand vous faites glisser et déposez des objets de base de données à partir de la fenêtre **sources de données** . Ce type de source de données peut être :
 
-- Un ensemble de données qui est associé à une sorte de base de données.
+- Classe dans un modèle de Entity Framework qui est associé à un type de base de données.
 
-- Une classe qui représente un service réseau tel qu’un service de données de la Windows Communication Foundation (WCF) ou un service REST.
+- Jeu de données associé à un type de base de données.
 
-- Une classe qui représente un service SharePoint.
+- Classe qui représente un service réseau tel qu’un service de données Windows Communication Foundation (WCF) ou un service REST.
+
+- Classe qui représente un service SharePoint.
 
 - Une classe ou une collection dans votre solution.
 
 > [!NOTE]
-> Si vous n’utilisez pas de fonctionnalités, de jeux de données, de cadre d’entité, de LINQ à SQL, WCF ou SharePoint, le concept de « source de données » ne s’applique pas. Il suffit de se connecter directement à la base de données en utilisant les objets SQLCommand et de communiquer directement avec la base de données.
+> Si vous n’utilisez pas les fonctionnalités de liaison de données, DataSets, Entity Framework, LINQ to SQL, WCF ou SharePoint, le concept de « source de données » ne s’applique pas. Il vous suffit de vous connecter directement à la base de données à l’aide des objets SQLCommand et de communiquer directement avec la base de données.
 
-Vous créez et modifiez des sources de données en utilisant le **Data Source Configuration Wizard** dans une application Windows Forms ou Windows Presentation Foundation. Pour Entity Framework, créez d’abord vos classes d’entités, puis commencez l’assistant en sélectionnant **Project** > **Add New Data Source** (décrit plus en détail plus tard dans cet article).
+Vous créez et modifiez des sources de données à l’aide de l' **Assistant Configuration de source de données** dans une application Windows Forms ou Windows Presentation Foundation. Pour Entity Framework, commencez par créer vos classes d’entité, puis démarrez l’Assistant en sélectionnant **projet**  >  **Ajouter une nouvelle source de données** (décrit plus en détail plus loin dans cet article).
 
 ![Assistant Configuration de source de données](../data-tools/media/data-source-configuration-wizard.png)
 
 ## <a name="data-sources-window"></a>Fenêtre Sources de données
 
-Après avoir créé une source de données, il apparaît dans la fenêtre de l’outil **Sources de données.**
+Une fois que vous avez créé une source de données, celle-ci s’affiche dans la fenêtre outil **sources de données** .
 
 > [!TIP]
-> Pour ouvrir la fenêtre **Data Sources,** assurez-vous que votre projet est ouvert, puis appuyez sur **Shift**+**Alt**+**D** ou choisissez **Voir** > **d’autres** > sources**de données**Windows .
+> Pour ouvrir la fenêtre **sources de données** , assurez-vous que votre projet est ouvert, puis appuyez sur **MAJ** + **ALT** + **D** ou choisissez **Afficher**d'  >  **autres**  >  **sources de données**Windows.
 
-Vous pouvez faire glisser une source de données de la fenêtre **Data Sources** sur une surface ou un contrôle de conception de formulaires. Cela provoque l’généré du code de la plaque chauffante qui affiche les données du magasin de données.
+Vous pouvez faire glisser une source de données depuis la fenêtre **sources de données** vers une aire de conception de formulaire ou un contrôle. Cela entraîne la génération d’un code réutilisable qui affiche les données du magasin de données.
 
-L’illustration suivante montre un jeu de données qui a été déposé sur un formulaire Windows. Si vous sélectionnez **F5** sur l’application, les données de la base de données sous-jacente apparaissent dans les contrôles du formulaire.
+L’illustration suivante montre un jeu de données qui a été supprimé dans un Windows Form. Si vous sélectionnez **F5** sur l’application, les données de la base de données sous-jacente s’affichent dans les contrôles du formulaire.
 
-![Opération de traînée de source de données](../data-tools/media/raddata-data-source-drag-operation.png)
+![Opération glisser de source de données](../data-tools/media/raddata-data-source-drag-operation.png)
 
-## <a name="data-source-for-a-database-or-a-database-file"></a>Source de données pour une base de données ou un fichier de base de données
+## <a name="data-source-for-a-database-or-a-database-file"></a>Source de données d’une base de données ou d’un fichier de base de données
 
-Vous pouvez créer un jeu de données ou un modèle cadre d’entité à utiliser comme source de données pour une base de données ou un fichier de base de données.
+Vous pouvez créer un DataSet ou un modèle de Entity Framework à utiliser comme source de données pour une base de données ou un fichier de base de données.
 
 ### <a name="dataset"></a>Dataset
 
-Pour créer un jeu de données en tant que source de données, exécutez le **Data Source Configuration Wizard** en sélectionnant **Project** > **Add New Data Source**. Choisissez le type de source de données **de base** de données et suivez les invites pour spécifier une nouvelle connexion de base de données ou existante, soit un fichier de base de données.
+Pour créer un DataSet en tant que source de données, exécutez l' **Assistant Configuration de source de données** en sélectionnant **projet**  >  **Ajouter une nouvelle source de données**. Choisissez le type **de source de données de la base de** données, puis suivez les invites pour spécifier une connexion de base de données nouvelle ou existante ou un fichier de base de données.
 
 ### <a name="entity-classes"></a>Classes Entity
 
-Créer un modèle cadre d’entité comme source de données :
+Pour créer un modèle de Entity Framework comme source de données :
 
-1. Exécutez **l’Assistant modèle de données d’entité** pour créer les classes d’entités. Sélectionnez **Projet** > **Ajouter un nouvel élément** > **ADO.NET modèle de données d’entité**.
+1. Exécutez l' **assistant Entity Data Model** pour créer les classes d’entité. Sélectionnez **projet**  >  **Ajouter un nouvel élément**  >  **ADO.NET Entity Data Model**.
 
-   ![Nouvel élément de projet modèle de cadre d’entité](../data-tools/media/raddata-new-entity-framework-model-project-item.png)
+   ![Nouvel élément de projet de modèle de Entity Framework](../data-tools/media/raddata-new-entity-framework-model-project-item.png)
 
-1. Choisissez la méthode que vous voulez générer le modèle par.
+1. Choisissez la méthode par laquelle vous souhaitez générer le modèle.
 
    ![Entity Data Model (assistant)](../data-tools/media/raddata-entity-data-model-wizard.png)
 
-1. Ajoutez le modèle comme source de données. Les classes générées apparaissent dans le Magicien de configuration **de source de données** lorsque vous choisissez la catégorie **Objets.**
+1. Ajoutez le modèle en tant que source de données. Les classes générées apparaissent dans l **'Assistant Configuration de source de données** lorsque vous choisissez la catégorie **objets** .
 
-   ![Assistant de configuration de source de données avec des classes d’entités](../data-tools/media/raddata-data-source-configuration-wizard-with-entity-classes.png)
+   ![Assistant Configuration de source de données avec des classes d’entité](../data-tools/media/raddata-data-source-configuration-wizard-with-entity-classes.png)
 
-## <a name="data-source-for-a-service"></a>Source de données pour un service
+## <a name="data-source-for-a-service"></a>Source de données d’un service
 
-Pour créer une source de données à partir d’un service, exécutez **l’assistant de configuration de source de données** et choisissez le type de source de données **service.** Il s’agit simplement d’un raccourci vers la boîte de dialogue **Add Service Reference,** à laquelle vous pouvez également accéder en cliquant à droite sur le projet dans **Solution Explorer** et en sélectionnant la référence de **service Add**.
+Pour créer une source de données à partir d’un service, exécutez l' **Assistant Configuration de source de données** et choisissez le type de source de données du **service** . Il s’agit simplement d’un raccourci vers la boîte de dialogue **Ajouter une référence de service** , à laquelle vous pouvez également accéder en cliquant avec le bouton droit sur le projet dans **Explorateur de solutions** et en sélectionnant **Ajouter une référence de service**.
 
-Lorsque vous créez une source de données à partir d’un service, Visual Studio ajoute une référence de service à votre projet. Visual Studio crée également des objets proxy qui correspondent aux objets que le service retourne. Par exemple, un service qui renvoie un jeu de données est représenté dans votre projet sous forme d’ensemble de données; un service qui renvoie un type spécifique est représenté dans votre projet au fur et à mesure que le type est retourné.
+Quand vous créez une source de données à partir d’un service, Visual Studio ajoute une référence de service à votre projet. Visual Studio crée également des objets proxy qui correspondent aux objets retournées par le service. Par exemple, un service qui retourne un jeu de données est représenté dans votre projet sous la forme d’un jeu de données ; un service qui retourne un type spécifique est représenté dans votre projet sous la forme du type retourné.
 
-Vous pouvez créer une source de données à partir des types de services suivants :
+Vous pouvez créer une source de données à partir des types de services suivants :
 
 - [Services de données WCF](/dotnet/framework/data/wcf/wcf-data-services-overview)
 
 - [Services WCF](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md)
 
-- SERVICES WEB
+- Services web
 
     > [!NOTE]
-    > Les éléments qui apparaissent dans la fenêtre **Sources de données** dépendent des données que le service retourne. Certains services peuvent ne pas fournir suffisamment d’informations pour que l’**Assistant Configuration de source de données** puisse créer des objets pouvant être liés. Par exemple, si le service renvoie un jeu de données nontypé, aucun élément n’apparaît dans la fenêtre **Sources de données** lorsque vous terminez l’assistant. C’est parce que les jeux de données non cartographiques ne fournissent pas un schéma, et donc l’assistant n’a pas assez d’informations pour créer la source de données.
+    > Les éléments qui s’affichent dans la fenêtre **sources de données** dépendent des données retournées par le service. Certains services peuvent ne pas fournir suffisamment d’informations pour que l’**Assistant Configuration de source de données** puisse créer des objets pouvant être liés. Par exemple, si le service retourne un DataSet non typé, aucun élément ne s’affiche dans la fenêtre **sources de données** lorsque vous terminez l’Assistant. Cela est dû au fait que les datasets non typés ne fournissent pas de schéma et, par conséquent, que l’Assistant ne dispose pas de suffisamment d’informations pour créer la source de données.
 
-## <a name="data-source-for-an-object"></a>Source de données pour un objet
+## <a name="data-source-for-an-object"></a>Source de données d’un objet
 
-Vous pouvez créer une source de données à partir de n’importe quel objet qui expose une ou plusieurs propriétés publiques en exécutant le **Data Source Configuration Wizard,** puis en sélectionnant le type de source de données **d’objet.** Toutes les propriétés publiques d’un objet sont affichées dans la fenêtre **Data Sources.** Si vous utilisez Entity Framework et avez généré un modèle, c’est là que vous trouvez les classes d’entités qui sont les sources de données de votre application.
+Vous pouvez créer une source de données à partir de n’importe quel objet qui expose une ou plusieurs propriétés publiques en exécutant l' **Assistant Configuration de source de données** , puis en sélectionnant le type de source de données de l' **objet** . Toutes les propriétés publiques d’un objet sont affichées dans la fenêtre **sources de données** . Si vous utilisez Entity Framework et que vous avez généré un modèle, c’est là que vous trouvez les classes d’entité qui sont les sources de données pour votre application.
 
-Sur la page **Sélectionner les objets de données,** étendre les nœuds dans la vue de l’arbre pour localiser les objets que vous souhaitez lier. La vue de l’arbre contient des nœuds pour votre projet et pour les assemblages et autres projets qui sont référencés par votre projet.
+Dans la page **Sélectionner les objets de données** , développez les nœuds dans l’arborescence pour rechercher les objets que vous souhaitez lier. L’arborescence contient des nœuds pour votre projet et pour les assemblys et d’autres projets référencés par votre projet.
 
-Si vous souhaitez vous lier à un objet dans un assemblage ou un projet qui n’apparaît pas dans la vue de l’arbre, cliquez sur **Ajouter la référence** et utilisez la boîte de dialogue de référence **Ajouter** pour ajouter une référence à l’assemblage ou au projet. Après avoir ajouté la référence, l’assemblage ou le projet est ajouté à la vue de l’arbre.
-
-> [!NOTE]
-> Vous devrez peut-être construire le projet qui contient vos objets avant que les objets n’apparaissent dans la vue de l’arbre.
+Si vous souhaitez établir une liaison à un objet d’un assembly ou d’un projet qui n’apparaît pas dans l’arborescence, cliquez sur **Ajouter une référence** et utilisez la **boîte de dialogue Ajouter une référence** pour ajouter une référence à l’assembly ou au projet. Une fois la référence ajoutée, l’assembly ou le projet est ajouté à l’arborescence.
 
 > [!NOTE]
-> Pour prendre en charge la liaison de <xref:System.ComponentModel.ITypedList> données <xref:System.ComponentModel.IListSource> de drag-and-drop, les objets qui implémentent l’interface ou l’interface doivent avoir un constructeur par défaut. Dans le cas contraire, Visual Studio ne peut pas instantanéiser l’objet source de données, et il affiche une erreur lorsque vous faites glisser l’élément à la surface de conception.
+> Vous devrez peut-être générer le projet qui contient vos objets pour que les objets s’affichent dans l’arborescence.
 
-## <a name="data-source-for-a-sharepoint-list"></a>Source de données pour une liste SharePoint
+> [!NOTE]
+> Pour prendre en charge la liaison de données par glisser-déplacer, les objets qui implémentent l' <xref:System.ComponentModel.ITypedList> <xref:System.ComponentModel.IListSource> interface ou doivent avoir un constructeur par défaut. Dans le cas contraire, Visual Studio ne peut pas instancier l’objet source de données et affiche une erreur lorsque vous faites glisser l’élément vers l’aire de conception.
 
-Vous pouvez créer une source de données à partir d’une liste SharePoint en exécutant **l’assistant de configuration de source de données** et en sélectionnant le type de source de données **SharePoint.** SharePoint expose les données via WCF Data Services, de sorte que la création d’une source de données SharePoint est la même chose que la création d’une source de données à partir d’un service. La sélection de l’élément **SharePoint** dans le **Data Source Configuration Wizard** ouvre la boîte de dialogue Add Service **Reference,** où vous vous connectez au service de données SharePoint en pointant vers le serveur SharePoint. Cela nécessite le SharePoint SDK.
+## <a name="data-source-for-a-sharepoint-list"></a>Source de données d’une liste SharePoint
+
+Vous pouvez créer une source de données à partir d’une liste SharePoint en exécutant l **'Assistant Configuration de source de données** et en sélectionnant le type de source de données **SharePoint** . SharePoint expose des données par le biais de WCF Data Services, donc la création d’une source de données SharePoint est identique à la création d’une source de données à partir d’un service. La sélection de l’élément **SharePoint** dans l **'Assistant Configuration de source de données** ouvre la boîte de dialogue **Ajouter une référence de service** , où vous vous connectez au service de données SharePoint en pointant sur le serveur SharePoint. Cela nécessite le kit de développement logiciel (SDK) SharePoint.
 
 ## <a name="see-also"></a>Voir aussi
 

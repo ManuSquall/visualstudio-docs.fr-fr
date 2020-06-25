@@ -5,13 +5,13 @@ description: Vue d’ensemble du processus de génération des outils de contene
 ms.author: ghogen
 ms.date: 06/06/2019
 ms.technology: vs-azure
-ms.topic: conceptual
-ms.openlocfilehash: 1b23d918621d79756fd77a1dd9b98009b2769ed3
-ms.sourcegitcommit: 596f92fcc84e6f4494178863a66aed85afe0bb08
+ms.topic: reference
+ms.openlocfilehash: 427a70d9bc4f6ef326ffb16e7d26df9d8fae2365
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/28/2020
-ms.locfileid: "82189489"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85283201"
 ---
 # <a name="container-tools-build-properties"></a>Propriétés de build des outils de conteneur
 
@@ -25,7 +25,7 @@ Pour définir la valeur d’une propriété, modifiez le fichier projet. Par exe
 </PropertyGroup>
 ```
 
-Vous pouvez ajouter le paramètre de propriété à un `PropertyGroup` élément existant, ou s’il n’y en a pas `PropertyGroup` , créer un nouvel élément.
+Vous pouvez ajouter le paramètre de propriété à un `PropertyGroup` élément existant, ou s’il n’y en a pas, créer un nouvel `PropertyGroup` élément.
 
 Le tableau suivant présente les propriétés MSBuild disponibles pour les projets de conteneur. La version du package NuGet s’applique à [Microsoft. VisualStudio. Azure. Containers. Tools. targets](https://www.nuget.org/packages/Microsoft.VisualStudio.Azure.Containers.Tools.Targets/).
 

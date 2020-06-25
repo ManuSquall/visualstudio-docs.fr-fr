@@ -16,12 +16,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6589d40d8f897eb8df7f108f53973af268d1edc9
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 87bce70f83be2af80f93cf9888432257f6139732
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75588393"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85285142"
 ---
 # <a name="class-view-and-object-browser-icons"></a>Icônes Affichage de classes et Explorateur d’objets
 
@@ -34,14 +34,19 @@ L’**affichage de classes** et l’**Explorateur d’objets** affichent des ic�
 |![Symbole d'interface Lollipop](../ide/media/vxinterface_icon.gif)|Interface|![Symbole de la propriété](../ide/media/vxproperty_icon.gif)|Propriété|
 |![Symbole de la structure](../ide/media/vxstruct_icon.gif)|Structure|![Icône de champ](../ide/media/vxfield_icon.gif)|Champ ou variable|
 |![Symbole Union](../ide/media/vxunion_icon.gif)|Union|![Symbole d'événement](../ide/media/vxevent_icon.gif)|Événement|
-|![Symbole d'énumération](../ide/media/vxenum_icon.gif)|Enum|![Icône de constante](../ide/media/vxconstant_icon.gif)|Constant|
+|![Symbole d'énumération](../ide/media/vxenum_icon.gif)|Énumération|![Icône de constante](../ide/media/vxconstant_icon.gif)|Constant|
 |![Symbole de définition du type](../ide/media/vxtypedef_icon.gif)|TypeDef|![Symbole d'élément d'énumération](../ide/media/vxenumitem_icon.gif)|Élément enum|
 |![Symbole du module Visual Studio](../ide/media/vxmodule_icon.gif)|Module|![Symbole d'élément de carte](../ide/media/vxmapitem_icon.gif)|Élément Map|
-|![Symbole de méthode d'extension](../ide/media/extensionmethod.gif)|Méthode d'extension|![Symbole de déclaration](../ide/media/vxmethod_icon.gif)|Déclaration externe|
-|![Symbole de délégué](../ide/media/vxdelegate_icon.gif)|Déléguer|![Icône d'erreur pour l'affichage de classes et l'explorateur d'objets](../ide/media/erroricon.gif)|Error|
+|![Symbole de méthode d'extension](../ide/media/extensionmethod.gif)|Méthode d’extension|![Symbole de déclaration](../ide/media/vxmethod_icon.gif)|Déclaration externe|
+|![Symbole de délégué](../ide/media/vxdelegate_icon.gif)|Délégué|![Icône d'erreur pour l'affichage de classes et l'explorateur d'objets](../ide/media/erroricon.gif)|Erreur|
 |![Symbole d'exception](../ide/media/vxexception_icon.gif)|Exception|![Symbole du modèle](../ide/media/vxtemplate_icon.gif)|Modèle|
-|![Symbole de carte](../ide/media/vxmap_icon.gif)|Mappage|![Symbole de point d'exclamation d'erreur](../ide/media/vxerror_icon.gif)|Unknown|
+|![Symbole de carte](../ide/media/vxmap_icon.gif)|Carte|![Symbole de point d'exclamation d'erreur](../ide/media/vxerror_icon.gif)|Unknown|
 |![Symbole de transfert de type](../ide/media/ob_type_forward.gif)|Transfert de type|||
+
+> [!TIP]
+> Pour afficher au mieux les icônes de cette page, assurez-vous que votre thème de Microsoft Docs est défini sur **clair**. Vous pouvez basculer ce thème de couleur à partir du contrôle situé en bas à gauche de la page, comme indiqué dans la capture d’écran suivante :
+>
+> ![Thème docs](../ide/media/toggle-docs-color-theme.png "Activer/désactiver le thème de couleur pour les pages Microsoft Docs")
 
 ## <a name="signal-icons"></a>Icônes de signalisation
 
@@ -49,7 +54,7 @@ Les icônes de signalisation suivantes s’appliquent à toutes les icônes pré
 
 |Icône|Description|
 |----------|-----------------|
-|\<Aucune icône de signalisation>|Public. Accessible à partir de n’importe où dans le composant et à partir de tout composant qui y fait référence.|
+|\<No Signal Icon>|Public. Accessible à partir de n’importe où dans le composant et à partir de tout composant qui y fait référence.|
 |![Symbole Signal protégé](../ide/media/vxsignal_icon_key.gif)|Protégée. Accessible à partir de la classe ou le type conteneur, ou à partir de celles ou ceux dérivés de la classe ou du type conteneur.|
 |![Symbole Signal privé](../ide/media/vxsignal_icon_lock.gif)|Privé. Accessible uniquement dans la classe ou le type conteneur.|
 |![Symbole Signal Sealed](../ide/media/vxsignal_icon_envelope.gif)|Sealed.|

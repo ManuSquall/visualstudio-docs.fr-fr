@@ -1,7 +1,7 @@
 ---
 title: Ajouter des références dans le Gestionnaire de références
 ms.date: 08/02/2019
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - VS.ReferenceManager
 helpviewer_keywords:
@@ -21,16 +21,16 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dfad622a7587246836161cd79bb5b759151df1ef
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 5f67c41f860417a27a6003a19672d4cd617d37a6
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75595308"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85284724"
 ---
 # <a name="how-to-add-or-remove-references-by-using-the-reference-manager"></a>Guide pratique pour ajouter ou supprimer des références à l’aide du Gestionnaire de références
 
-Vous pouvez utiliser la boîte de dialogue Gestionnaire de références pour ajouter et gérer des références aux composants développés par vous, par Microsoft ou par une autre société. Si vous développez une application Windows universelle, votre projet référence automatiquement toutes les DLL correctes du kit SDK Windows. Si vous développez une application .NET, votre projet fait automatiquement référence *à mscorlib.dll*. Certaines API .NET sont exposées dans des composants que vous devez ajouter manuellement. Les références à des composants COM ou à des composants personnalisés doivent être ajoutées manuellement.
+Vous pouvez utiliser la boîte de dialogue Gestionnaire de références pour ajouter et gérer des références aux composants développés par vous, par Microsoft ou par une autre société. Si vous développez une application Windows universelle, votre projet référence automatiquement toutes les DLL correctes du kit SDK Windows. Si vous développez une application .NET, votre projet référence automatiquement *mscorlib.dll*. Certaines API .NET sont exposées dans des composants que vous devez ajouter manuellement. Les références à des composants COM ou à des composants personnalisés doivent être ajoutées manuellement.
 
 ## <a name="reference-manager-dialog-box"></a>Boîte de dialogue Gestionnaire de références
 
@@ -38,9 +38,9 @@ La boîte de dialogue Gestionnaire de références affiche différentes catégor
 
 - **Assemblys**, avec les sous-groupes **Framework** et **Extensions**
 
-- **COM** répertorie tous les composants COM disponibles pour le référencement
+- **Com** répertorie tous les composants COM pouvant être référencés
 
-- **Projets**
+- **Projet**
 
 - **Projets partagés**
 
@@ -50,7 +50,7 @@ La boîte de dialogue Gestionnaire de références affiche différentes catégor
 
 ## <a name="add-a-reference"></a>Ajouter une référence
 
-1. Dans l’**Explorateur de solutions**, cliquez avec le bouton droit sur le nœud **Références** ou **Dépendances**, puis choisissez ** Ajouter une référence **. Vous pouvez également cliquer à droite sur le nœud du projet et sélectionner **Add** > **Reference**.
+1. Dans l’**Explorateur de solutions**, cliquez avec le bouton droit sur le nœud **Références** ou **Dépendances**, puis choisissez ** Ajouter une référence **. Vous pouvez également cliquer avec le bouton droit sur le nœud du projet et sélectionner **Ajouter**une  >  **référence**.
 
    Le **Gestionnaire de références** s’ouvre et affiche la liste des références disponibles par groupe.
 
@@ -58,9 +58,9 @@ La boîte de dialogue Gestionnaire de références affiche différentes catégor
 
 ## <a name="assemblies-tab"></a>Onglet Assemblys
 
-L’onglet **Assemblys** liste tous les assemblys .NET qui sont disponibles pour le référencement. L’onglet **Assemblys** ne répertorie pas les assemblys du Global Assembly Cache (GAC), car ceux-ci appartiennent à l’environnement d’exécution. Si vous déployez ou copiez une application qui contient une référence à une assemblée enregistrée dans le GAC, l’assemblage ne sera pas déployé ou copié avec l’application, quel que soit le paramètre **Copy Local.** Pour plus d’informations, consultez [Gérer les références dans un projet](../ide/managing-references-in-a-project.md).
+L’onglet **Assemblys** liste tous les assemblys .NET qui sont disponibles pour le référencement. L’onglet **Assemblys** ne répertorie pas les assemblys du Global Assembly Cache (GAC), car ceux-ci appartiennent à l’environnement d’exécution. Si vous déployez ou copiez une application qui contient une référence à un assembly inscrit dans le GAC, l’assembly ne sera ni déployé ni copié avec l’application, quel que soit le paramètre de **copie locale** . Pour plus d’informations, consultez [Gérer les références dans un projet](../ide/managing-references-in-a-project.md).
 
-Quand vous ajoutez manuellement une référence à l’un des espaces de noms EnvDTE (<xref:EnvDTE>, <xref:EnvDTE80>, <xref:EnvDTE90>, <xref:EnvDTE90a> ou <xref:EnvDTE100>), affectez la valeur **False** à la propriété **Incorporer les types interop**, dans la fenêtre **Propriétés**. La mise en place de cette propriété à **True** peut causer des problèmes de construction en raison de certaines propriétés EnvDTE qui ne peuvent pas être intégrées.
+Quand vous ajoutez manuellement une référence à l’un des espaces de noms EnvDTE (<xref:EnvDTE>, <xref:EnvDTE80>, <xref:EnvDTE90>, <xref:EnvDTE90a> ou <xref:EnvDTE100>), affectez la valeur **False** à la propriété **Incorporer les types interop**, dans la fenêtre **Propriétés**. L’affectation de la **valeur true** à cette propriété peut entraîner des problèmes de génération en raison de certaines propriétés EnvDTE qui ne peuvent pas être incorporées.
 
 Tous les projets d’application de bureau contiennent une référence implicite à **mscorlib**. Les projets Visual Basic contiennent une référence implicite à <xref:Microsoft.VisualBasic>. Tous les projets contiennent une référence implicite à **System.Core**, même s’il est supprimé de la liste des références.
 
@@ -68,15 +68,15 @@ Si un type de projet ne prend pas en charge les assemblys, l’onglet ne s’aff
 
 L’onglet **Assemblys** comprend deux sous-onglets :
 
-1. **Le cadre** répertorie toutes les assemblées qui constituent le cadre ciblé.
+1. **Framework** répertorie tous les assemblys qui constituent le Framework ciblé.
 
    Pour les projets qui ne ciblent pas .NET Core ou la plateforme Windows universelle, l’onglet **Framework** énumère les assemblys du framework ciblé. L’utilisateur doit ajouter les références nécessaires à l’application.
 
-   Les projets Windows universel contiennent des références à tous les assemblys dans le framework ciblé par défaut. Dans les projets gérés, un nœud lu uniquement sous le dossier **Références** dans **Solution Explorer** indique la référence à l’ensemble du cadre. En conséquence, l’onglet **Cadre** n’énumère aucune des assemblées du cadre et affiche plutôt le message suivant : « Toutes les assemblées-cadres sont déjà référencées. Utilisez l’Explorateur d’objets pour explorer les références dans le Framework. ».
+   Les projets Windows universel contiennent des références à tous les assemblys dans le framework ciblé par défaut. Dans les projets managés, un nœud en lecture seule dans le dossier **références** de **Explorateur de solutions** indique la référence à l’ensemble de l’infrastructure. En conséquence, l’onglet **Framework** n’énumère pas les assemblys du Framework et affiche à la place le message suivant : «tous les assemblys du Framework sont déjà référencés. Utilisez l’Explorateur d’objets pour explorer les références dans le Framework. ».
 
-2. **Les extensions** répertorient tous les assemblages que les fournisseurs externes de composants et de contrôles ont élaborés pour étendre le cadre ciblé. Selon l'objectif de l'application utilisateur, ces assemblys peuvent être nécessaires.
+2. **Extensions** répertorie tous les assemblys que les fournisseurs externes de composants et les contrôles ont développés pour étendre le Framework ciblé. Selon l'objectif de l'application utilisateur, ces assemblys peuvent être nécessaires.
 
-   **Les extensions** sont peuplées en énumérant les assemblées enregistrées aux endroits suivants :
+   Les **Extensions** sont remplies en énumérant les assemblys qui sont enregistrés dans les emplacements suivants :
 
    Machine 32 bits :
    - `HKEY_CURRENT_USER\SOFTWARE\Microsoft\[Target Framework Identifier]\v[Target Framework Version]\AssemblyFoldersEx\[UserComponentName]\@default=[Disk location of assemblies]`
@@ -127,13 +127,13 @@ Selon la version du framework de votre projet, certains composants de la liste p
 
   - `[HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\.NETFramework\<VersionMinimum>\AssemblyFoldersEx\MyAssemblies]@="<AssemblyLocation>"`
 
-  *VersionMinimum\> est la version cadre la plus basse qui s’applique. \<* Si * \<VersionMinimum\> * est v3.0, les dossiers spécifiés dans *AssemblyFoldersEx* s’appliquent aux projets qui ciblent .NET Framework 3.0 et plus tard.
+  *\<VersionMinimum\>* est la version de Framework la plus basse qui s’applique. Si *\<VersionMinimum\>* a la valeur v 3.0, les dossiers spécifiés dans *AssemblyFoldersEx* s’appliquent aux projets qui ciblent .NET Framework 3,0 et versions ultérieures.
 
-  *AssemblyLocation\> est l’annuaire des assemblées que vous souhaitez apparaître dans la boîte de dialogue Add Reference, par exemple, C: 'MyAssemblies . \<* **Add Reference** *C:\MyAssemblies*
+  *\<AssemblyLocation\>* est le répertoire des assemblys que vous souhaitez afficher dans la boîte de dialogue **Ajouter une référence** , par exemple *c:\MyAssemblies)*.
 
   La création de la clé de Registre sous le nœud `HKEY_LOCAL_MACHINE` permet à tous les utilisateurs de voir les assemblys à l’emplacement spécifié dans la boîte de dialogue **Ajouter une référence**. La création de la clé de Registre sous le nœud `HKEY_CURRENT_USER` affecte uniquement le paramètre de l’utilisateur actuel.
 
-  Rouvrez la boîte de dialogue **Ajouter une référence**. Les assemblages doivent apparaître sur l’onglet **.NET.** S’ils ne le font pas, assurez-vous que les assemblages sont situés dans le répertoire *AssemblyLocation* spécifié, redémarrez Visual Studio, et essayez à nouveau.
+  Rouvrez la boîte de dialogue **Ajouter une référence**. Les assemblys doivent apparaître sous l’onglet **.net** . Si ce n’est pas le cas, assurez-vous que les assemblys se trouvent dans le répertoire *AssemblyLocation* spécifié, redémarrez Visual Studio, puis réessayez.
 
 ## <a name="projects-tab"></a>Onglet Projets
 
@@ -151,7 +151,7 @@ Ajoutez une référence à un projet partagé sous l’onglet **Projets partagé
 ## <a name="universal-windows-tab"></a>Onglet Windows universel
 
 L’onglet **Windows universel** liste tous les SDK spécifiques aux plateformes sur lesquelles des systèmes d’exploitation Windows s’exécutent.
-Cet onglet comporte deux sous-groupes : **Core** et **Extensions**.
+Cet onglet comporte deux sous-groupes : **Core** et **Extensions**.
 
 ### <a name="core-subgroup"></a>Sous-groupe Principal
 
@@ -159,11 +159,11 @@ Les projets d’application Windows universelles ont une référence au SDK Wind
 
 ### <a name="extensions-subgroup"></a>Sous-groupe Extensions
 
-**Extensions** répertorie l’utilisateur SDKs qui étendent la plate-forme Windows ciblée.
+**Extensions** répertorie les kits de développement logiciel (SDK) utilisateur qui étendent la plateforme Windows ciblée.
 
-Un kit SDK est une collection de fichiers que Visual Studio traite comme un seul composant. Dans l’onglet **Extensions,** les SDK qui s’appliquent au projet à partir duquel la boîte de dialogue du gestionnaire de référence a été invoquée sont répertoriées comme des entrées uniques. Une fois ajouté à un projet, tout le contenu du kit SDK est utilisé par Visual Studio afin que l’utilisateur n’ait rien d’autre à faire pour l’exploiter dans IntelliSense, la boîte à outils, les concepteurs, l’Explorateur d’objets, la création, le déploiement, le débogage et l’empaquetage.
+Un kit SDK est une collection de fichiers que Visual Studio traite comme un seul composant. Sous l’onglet **Extensions** , les kits de développement logiciel (SDK) qui s’appliquent au projet à partir duquel la boîte de dialogue Gestionnaire de références a été appelée sont répertoriés en tant qu’entrées uniques. Une fois ajouté à un projet, tout le contenu du kit SDK est utilisé par Visual Studio afin que l’utilisateur n’ait rien d’autre à faire pour l’exploiter dans IntelliSense, la boîte à outils, les concepteurs, l’Explorateur d’objets, la création, le déploiement, le débogage et l’empaquetage.
 
-Pour plus d’informations sur la façon d’afficher votre SDK dans l’onglet **Extensions,** voir [Créer une trousse de développement logiciel](../extensibility/creating-a-software-development-kit.md).
+Pour plus d’informations sur l’affichage de votre SDK sous l’onglet **Extensions** , consultez [création d’un kit de développement logiciel](../extensibility/creating-a-software-development-kit.md)(SDK).
 
 > [!NOTE]
 > Si un projet référence un SDK qui dépend d’un autre SDK, Visual Studio n’utilise pas le second SDK, sauf si vous ajoutez manuellement une référence à celui-ci. Quand un utilisateur choisit un SDK sous l’onglet **Extensions**, la boîte de dialogue Gestionnaire de références l’aide à identifier les dépendances du SDK en les listant dans le volet d’informations.
@@ -172,11 +172,11 @@ Si un type de projet ne prend pas en charge les extensions, cet onglet n’appar
 
 ## <a name="com-tab"></a>Onglet COM
 
-**L’onglet COM** répertorie tous les composants COM disponibles pour le référencement. Si vous souhaitez ajouter une référence à une DLL COM inscrite qui contient un manifeste interne, annulez d'abord l'inscription de la DLL. Sinon, Visual Studio ajoute la référence d’assembly en tant que contrôle ActiveX, et non en tant que DLL native.
+L’onglet **com** répertorie tous les composants COM pouvant être référencés. Si vous souhaitez ajouter une référence à une DLL COM inscrite qui contient un manifeste interne, annulez d'abord l'inscription de la DLL. Sinon, Visual Studio ajoute la référence d’assembly en tant que contrôle ActiveX, et non en tant que DLL native.
 
 Si un type de projet ne prend pas en charge COM, l’onglet ne s’affiche pas dans la boîte de dialogue Gestionnaire de références.
 
-## <a name="browse"></a>...
+## <a name="browse"></a>Parcourir
 
 Vous pouvez utiliser le bouton **Parcourir** pour rechercher un composant dans le système de fichiers.
 
@@ -186,11 +186,11 @@ Un projet peut référencer un composant qui cible une version différente du fr
 
 Vous ne pouvez pas accéder à un kit SDK et l’ajouter à votre projet. Vous pouvez uniquement rechercher un fichier (par exemple un assembly ou un fichier *.winmd*) et l’ajouter à votre projet.
 
-Lorsque vous faites une référence de fichier à un WinMD, la mise en page attendue est que le * \<FileName>.winmd*, * \<FileName>.dll*, et * \<FileName>.pri* fichiers sont tous placés côte à côte. Si vous référencez un fichier WinMD dans les scénarios suivants, un ensemble incomplet de fichiers est copié dans le répertoire de sortie du projet et, par conséquent, des erreurs de rendu et d'exécution se produisent.
+Lors d’une référence de fichier à un WinMD, la disposition attendue est que les fichiers * \<FileName> . WinMD*, * \<FileName> . dll*et * \<FileName> . pri* sont placés les uns à côté des autres. Si vous référencez un fichier WinMD dans les scénarios suivants, un ensemble incomplet de fichiers est copié dans le répertoire de sortie du projet et, par conséquent, des erreurs de rendu et d'exécution se produisent.
 
-- **Composant natif** : un projet natif crée un fichier WinMD pour chaque ensemble d’espaces de noms disjoint et une DLL qui contient l’implémentation. Les WinMD auront des noms disparates. En référençant ce fichier de composant natif, MSBuild ne détecte pas que les WinMD nommés différemment constituent un même composant. Par conséquent, seuls les * \<fichiers nommés* à l’identique>.dll et * \<FileName>.winmd* seront copiés, et des erreurs de temps d’exécution se produiront. Pour contourner ce problème, créez un kit SDK d’extension. Pour plus d’informations, consultez [Créer un kit SDK](../extensibility/creating-a-software-development-kit.md).
+- **Composant natif** : un projet natif crée un fichier WinMD pour chaque ensemble d’espaces de noms disjoint et une DLL qui contient l’implémentation. Les WinMD auront des noms disparates. En référençant ce fichier de composant natif, MSBuild ne détecte pas que les WinMD nommés différemment constituent un même composant. Par conséquent, seuls les * \<FileName> . dll* et * \<FileName> . winmd* portant le même nom seront copiés et des erreurs d’exécution se produiront. Pour contourner ce problème, créez un kit SDK d’extension. Pour plus d’informations, consultez [Créer un kit SDK](../extensibility/creating-a-software-development-kit.md).
 
-- **Utilisation de contrôles** : au minimum, un contrôle XAML comprend un fichier *\<nom_fichier>.winmd*, *\<nom_fichier>.dll*, *\<nom_fichier>.pri*, *\<nom_xaml>.xaml* et *\<nom_image>.jpg*. Lorsque le projet est construit, les fichiers de ressources qui sont associés à la référence de fichier ne seront pas copiés dans l’annuaire de sortie du projet, et seuls * \<FileName>.winmd*, * \<FileName>.dll* et * \<FileName>.pri* seront copiés. Une erreur de construction est enregistrée pour informer l’utilisateur que les ressources * \<XamlName>.xaml* et * \<ImageName>.jpg* sont manquantes. Pour que l'opération réussisse, l'utilisateur doit copier manuellement les fichiers de ressources dans le répertoire de sortie du projet pour la génération et le débogage/l'exécution. Pour contourner ce problème, créez un kit SDK d’extension en suivant les étapes décrites dans [Créer un kit SDK](../extensibility/creating-a-software-development-kit.md), ou modifiez le fichier projet pour ajouter la propriété suivante :
+- **Consommation de contrôles** : au minimum, un contrôle XAML se compose d’un fichier *\<FileName>.winmd*, *\<FileName>.dll*, *\<FileName>.pri*, *\<XamlName>.xaml* et *\<ImageName>.jpg*. Lorsque le projet est généré, les fichiers de ressources associés à la référence de fichier ne sont pas copiés dans le répertoire de sortie du projet, et seuls les fichiers * \<FileName> . winmd*, * \<FileName> . dll* et * \<FileName> . pri* sont copiés. Une erreur de build est journalisée pour informer l’utilisateur que les ressources * \<XamlName> . Xaml* et * \<ImageName> . jpg* sont manquantes. Pour que l'opération réussisse, l'utilisateur doit copier manuellement les fichiers de ressources dans le répertoire de sortie du projet pour la génération et le débogage/l'exécution. Pour contourner ce problème, créez un kit SDK d’extension en suivant les étapes décrites dans [Créer un kit SDK](../extensibility/creating-a-software-development-kit.md), ou modifiez le fichier projet pour ajouter la propriété suivante :
 
     ```xml
     <PropertyGroup>
@@ -203,9 +203,9 @@ Lorsque vous faites une référence de fichier à un WinMD, la mise en page atte
 
 ## <a name="recent"></a>Récent
 
-**Assemblages**, **COM**, **Windows**, et Parcourir chacun **supporte** un onglet **récent,** qui énumère la liste des composants qui ont été récemment ajoutés aux projets.
+Les **assemblys**, **com**, **Windows**et **Parcourir** prennent tous en charge un onglet **récent** , qui énumère la liste des composants récemment ajoutés aux projets.
 
-## <a name="search"></a>Recherche
+## <a name="search"></a>Rechercher
 
 La barre de recherche de la boîte de dialogue Gestionnaire de références fonctionne sur l’onglet actif. Par exemple, si un utilisateur tape « System » dans la barre de recherche alors que l’onglet **Solution** est actif, la recherche ne renvoie aucun résultat à moins que la solution soit composée d’un nom de projet contenant « System ».
 

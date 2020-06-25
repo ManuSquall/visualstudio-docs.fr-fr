@@ -10,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1e87f35778b8aec615410312c0eb7373d4e9969f
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 4f5b8e2d65454d75c08d3efc26af2fd93b22153b
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75775890"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85284800"
 ---
 # <a name="developer-community-data-privacy"></a>Confidentialité des données de la communauté des développeurs
 
@@ -40,7 +40,8 @@ Si vous êtes soucieux de la confidentialité des données, ne placez pas d’in
 3. Ajoutez la description et les autres informations, images et pièces jointes de fichier nécessaires à la reproduction. Choisissez le bouton **Envoyer** pour envoyer ces informations en privé.
 
    > [!NOTE]
-   > Les fichiers joints sont limités à 10 et ils ne doivent pas dépasser 2 Go. Si vous devez charger un fichier plus volumineux, vous pouvez envoyer un nouveau rapport de problème ou demander une URL de chargement à un employé de Microsoft dans un commentaire privé.
+   > Sur le site Web de la communauté des développeurs, il existe une limite de 2 Go sur les fichiers joints et un maximum de 10 fichiers. Si vous devez charger un fichier plus volumineux, vous pouvez envoyer un nouveau rapport de problème ou demander une URL de chargement à un employé de Microsoft dans un commentaire privé.
+   > Lorsque nous fermons un problème, les pièces jointes associées seront supprimées après 90 jours.
 
 Pour assurer votre confidentialité et ne pas dévoiler d’informations sensibles au public, veillez à limiter toutes les interactions avec Microsoft aux réponses sous un commentaire à visibilité restreinte. Le fait de répondre à d’autres commentaires peut vous amener à divulguer accidentellement des informations sensibles.
 
@@ -68,7 +69,7 @@ Si **Signaler un problème** est lancé à partir de Visual Studio, nous collect
 
 - Journaux Python, s’ils existent
 
-- Windows Forms journaux, s’ils existent
+- Windows Forms les journaux, s’ils existent
 
 - Une capture d’écran, si vous choisissez de l’inclure
 
@@ -81,8 +82,8 @@ Si **Signaler un problème** est lancé à partir de Visual Studio, nous collect
   - Le fichier dump.
 
 > [!NOTE]
-> Les fichiers journalaux, les captures d’écran et les données d’enregistrement que vous envoyez peuvent augmenter considérablement la capacité de Microsoft à comprendre et à répondre à votre problème.  Nous vous recommandons donc de les inclure. Pour protéger votre vie privée, tous les fichiers journaux, captures d’écran et données d’enregistrement ci-joints ne sont envoyés à Microsoft que lorsque vous fournissez la permission en soumettant le rapport de problème avec lequel ils sont inclus. Vous pouvez voir quels fichiers sont inclus sur l’étape « Résumé » de la fenêtre « Rapport un problème » avant de soumettre le rapport. Vous pouvez exclure les fichiers de journal système du rapport en décochant les « journaux du système d’attachement » dans l’étape « Résumé ». Pour référence, voir la capture d’écran suivante. 
-  > ![Signaler un problème - Résumé des journaux collectés](media/report-a-problem-logs-collected.png)
+> Les fichiers journaux, les captures d’écran et les données d’enregistrement que vous envoyez peuvent accroître considérablement la capacité de Microsoft à comprendre et à résoudre votre problème.  Nous vous recommandons donc de les inclure. Pour protéger votre confidentialité, les fichiers journaux, captures d’écran et données d’enregistrement joints sont envoyés uniquement à Microsoft lorsque vous fournissez une autorisation en soumettant le rapport de problème avec lequel ils sont inclus. Vous pouvez voir quels fichiers sont inclus dans l’étape « Résumé » de la fenêtre « signaler un problème » avant d’envoyer le rapport. Vous pouvez exclure des fichiers journaux système du rapport en désactivent l’option « joindre les journaux système » dans l’étape « Résumé ». Pour référence, consultez la capture d’écran suivante. 
+  > ![Signaler un problème-Résumé des journaux collectés](media/report-a-problem-logs-collected.png)
 
 
 ## <a name="see-also"></a>Voir aussi

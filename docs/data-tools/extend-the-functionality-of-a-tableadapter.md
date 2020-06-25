@@ -1,7 +1,7 @@
 ---
 title: Étendre les fonctionnalités d’un TableAdapter
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -15,12 +15,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 34a5c1601071a36ca11005503e2f443a72ca3dfe
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 245ea6791fde96c1ff08d43d138c522f43749c6b
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75586638"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85282421"
 ---
 # <a name="extend-the-functionality-of-a-tableadapter"></a>Étendre les fonctionnalités d’un TableAdapter
 
@@ -32,9 +32,9 @@ Les classes partielles permettent à du code pour une classe spécifique d’êt
 
 ## <a name="locate-tableadapters-in-code"></a>Localiser des TableAdapters dans le code
 
-Alors que les TableAdapters sont conçus avec l' **Concepteur de DataSet**, les classes TableAdapter générées ne sont pas des classes imbriquées de <xref:System.Data.DataSet>. Les TableAdapters se trouvent dans un espace de noms basé sur le nom du jeu de données associé du TableAdapter. Par exemple, si votre application contient un dataset nommé `HRDataSet`, les TableAdapters se trouvent dans l’espace de noms `HRDataSetTableAdapters`. (La convention d’affectation de noms suit ce modèle : *DatasetName* + `TableAdapters`).
+Alors que les TableAdapters sont conçus avec l' **Concepteur de DataSet**, les classes TableAdapter générées ne sont pas des classes imbriquées de <xref:System.Data.DataSet> . Les TableAdapters se trouvent dans un espace de noms basé sur le nom du jeu de données associé du TableAdapter. Par exemple, si votre application contient un dataset nommé `HRDataSet` , les TableAdapters se trouvent dans l' `HRDataSetTableAdapters` espace de noms. (La Convention d’affectation de noms suit ce modèle : *NomGroupeDonnées*  +  `TableAdapters` ).
 
-L’exemple suivant suppose qu’un TableAdapter nommé `CustomersTableAdapter`se trouve dans un projet avec `NorthwindDataSet`.
+L’exemple suivant suppose qu’un TableAdapter nommé `CustomersTableAdapter` est dans un projet avec `NorthwindDataSet` .
 
 ### <a name="to-create-a-partial-class-for-a-tableadapter"></a>Pour créer une classe partielle pour un TableAdapter
 
@@ -42,7 +42,7 @@ L’exemple suivant suppose qu’un TableAdapter nommé `CustomersTableAdapter`s
 
 2. Nommez la classe `CustomersTableAdapterExtended`.
 
-3. Sélectionnez **Ajouter** .
+3. Sélectionnez **Ajouter**.
 
 4. Remplacez le code par l’espace de noms et le nom de classe partiels appropriés pour votre projet, comme suit :
 

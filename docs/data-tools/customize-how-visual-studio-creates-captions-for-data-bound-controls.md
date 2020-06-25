@@ -1,7 +1,7 @@
 ---
 title: Personnaliser les légendes pour les contrôles liés aux données
 ms.date: 11/03/2017
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - Label captions, Data Sources window
 - smart captions
@@ -13,12 +13,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: f7780cfb3b266de6f477e74d1b352cf6b24aab42
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.openlocfilehash: 085542f912cc5747c2012adb05e6097b5891ed60
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/16/2020
-ms.locfileid: "76113663"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85282577"
 ---
 # <a name="customize-how-visual-studio-creates-captions-for-data-bound-controls"></a>Personnaliser la façon dont Visual Studio crée des légendes pour les contrôles liés aux données
 
@@ -53,12 +53,12 @@ Le tableau suivant répertorie les paramètres par défaut internes pour ces val
 
 |Élément de Registre|Valeur par défaut|Explication|
 |-------------------|-------------------|-----------------|
-|**SmartCaptionExpression**|**(\\\p{Ll})(\\\p{Lu})&#124;_+**|Correspond à un caractère minuscule suivi d’un caractère majuscule ou un trait de soulignement.|
+|**SmartCaptionExpression**|**( \\ \p{ll}) ( \\ \p{Lu}) &#124;_ +**|Correspond à un caractère minuscule suivi d’un caractère majuscule ou un trait de soulignement.|
 |**SmartCaptionReplacement**|**$1 $2**|**$1** représente tous les caractères correspondants dans les premières parenthèses de l’expression, et **$2** représente tous les caractères correspondants dans les secondes. Le remplacement correspond à la première correspondance, à un espace, puis à la deuxième correspondance.|
-|**SmartCaptionSuffix**|**:**|Représente un caractère ajouté à la chaîne retournée. Par exemple, si la légende est `Company Name`, le suffixe le rend `Company Name:`|
+|**SmartCaptionSuffix**|**:**|Représente un caractère ajouté à la chaîne retournée. Par exemple, si la légende est `Company Name` , le suffixe le fait`Company Name:`|
 
 > [!CAUTION]
-> Soyez très prudent lorsque vous faites quoi que ce soit dans l’éditeur du Registre. Sauvegardez le registre avant de le modifier. Si vous utilisez l’éditeur du registre de façon incorrecte, vous risquez de provoquer de sérieux problèmes pouvant vous obliger à réinstaller votre système d’exploitation. Microsoft ne garantit pas que les problèmes que vous provoquez à l’aide de l’éditeur du Registre peuvent être résolus de manière incorrecte. Les opérations exécutées dans l'Éditeur du Registre le sont à vos propres risques.
+> Soyez très prudent lorsque vous faites quoi que ce soit dans l’éditeur du Registre. Sauvegardez le registre avant de le modifier. Si vous utilisez l’éditeur du registre de façon incorrecte, vous risquez de provoquer de sérieux problèmes pouvant vous obliger à réinstaller votre système d’exploitation. Microsoft ne garantit pas que les problèmes que vous provoquez à l’aide de l’éditeur du Registre peuvent être résolus de manière incorrecte. Utilisez l’Éditeur du Registre à vos propres risques.
 >
 > Pour plus d’informations sur la sauvegarde, la modification et la restauration du Registre, consultez les [informations du Registre Windows pour les utilisateurs expérimentés](https://support.microsoft.com/help/256986/windows-registry-information-for-advanced-users).
 
@@ -68,17 +68,17 @@ Le tableau suivant répertorie les paramètres par défaut internes pour ces val
 
 2. Tapez `regedit` dans la boîte de dialogue **exécuter** , puis cliquez sur **OK**.
 
-3. Développez le nœud **HKEY_CURRENT_USER** > **logiciel** > **Microsoft** > **VisualStudio** .
+3. Développez le nœud **HKEY_CURRENT_USER**  >  **logiciel**  >  **Microsoft**  >  **VisualStudio** .
 
 ::: moniker range="vs-2017"
 
-4. Cliquez avec le bouton droit sur le nœud **15,0** , puis créez une nouvelle **clé** nommée `Data Designers`.
+4. Cliquez avec le bouton droit sur le nœud **15,0** , puis créez une nouvelle **clé** nommée `Data Designers` .
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-4. Cliquez avec le bouton droit sur le nœud **16,0** , puis créez une nouvelle **clé** nommée `Data Designers`.
+4. Cliquez avec le bouton droit sur le nœud **16,0** , puis créez une nouvelle **clé** nommée `Data Designers` .
 
 ::: moniker-end
 
@@ -108,17 +108,17 @@ Le tableau suivant répertorie les paramètres par défaut internes pour ces val
 
 2. Tapez `regedit` dans la boîte de dialogue **exécuter** , puis cliquez sur **OK**.
 
-3. Développez le nœud **HKEY_CURRENT_USER** > **logiciel** > **Microsoft** > **VisualStudio** .
+3. Développez le nœud **HKEY_CURRENT_USER**  >  **logiciel**  >  **Microsoft**  >  **VisualStudio** .
 
 ::: moniker range="vs-2017"
 
-4. Cliquez avec le bouton droit sur le nœud **15,0** , puis créez une nouvelle **clé** nommée `Data Designers`.
+4. Cliquez avec le bouton droit sur le nœud **15,0** , puis créez une nouvelle **clé** nommée `Data Designers` .
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-4. Cliquez avec le bouton droit sur le nœud **16,0** , puis créez une nouvelle **clé** nommée `Data Designers`.
+4. Cliquez avec le bouton droit sur le nœud **16,0** , puis créez une nouvelle **clé** nommée `Data Designers` .
 
 ::: moniker-end
 

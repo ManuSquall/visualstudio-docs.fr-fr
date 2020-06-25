@@ -1,7 +1,7 @@
 ---
 title: Changer la signature de la méthode
-description: Supprimez ou modifiez l’ordre des paramètres d’une méthode. Cliquez avec le bouton droit sur la méthode, sélectionnez Actions rapides et refactorisations, puis sélectionnez Changer la signature.
-ms.date: 01/26/2018
+description: Ajoutez, supprimez ou modifiez l’ordre des paramètres d’une méthode. Cliquez avec le bouton droit sur la méthode, sélectionnez Actions rapides et refactorisations, puis sélectionnez Changer la signature.
+ms.date: 06/08/2020
 ms.topic: reference
 author: mikadumont
 ms.author: midumont
@@ -14,12 +14,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 97c03c798732b5d722b2dc49f3ec7ffa490b4f06
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 947f44700ef43815eb29bc3e90563afe1be68f2b
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "68711265"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85283872"
 ---
 # <a name="change-a-method-signature-refactoring"></a>Changer une signature de méthode (refactorisation)
 
@@ -51,7 +51,7 @@ Cette refactorisation s’applique à :
 
    - **Clavier**
       - Appuyez sur **Ctrl+R**, puis **Ctrl+V**.  (Notez que le raccourci clavier peut varier en fonction du profil que vous avez sélectionné.)
-      - Appuyez **sur Ctrl**+**.** pour afficher le menu **Actions rapides et refactorisations**, puis sélectionnez **Modifier la signature** dans la fenêtre contextuelle d’aperçu.
+      - Appuyez sur **CTRL** + **.** pour afficher le menu **Actions rapides et refactorisations**, puis sélectionnez **Modifier la signature** dans la fenêtre contextuelle d’aperçu.
    - **Souris**
       - Sélectionnez **Modifier > Refactoriser > Supprimer les paramètres**.
       - Sélectionnez **Modifier > Refactoriser > Réorganiser les paramètres**.
@@ -59,19 +59,27 @@ Cette refactorisation s’applique à :
 
 3. Dans la boîte de dialogue **Modifier la signature** qui s’affiche, vous pouvez utiliser les boutons sur le côté droit pour modifier la signature de la méthode :
 
-   ![Boîte de dialogue Modifier la signature](media/changesignature-dialog-cs.png)
+   ![Boîte de dialogue Modifier la signature](media/change-signature.png)
 
    | Bouton | Description
    | ------ | ---
    | **Haut/bas** | Déplacer le paramètre sélectionné vers le haut ou le bas de la liste
+   | **Ajouter** | Ajouter un nouveau paramètre à la liste
    | **Supprimer** | Supprimer le paramètre sélectionné de la liste
-   | **Restaurer** | Restaurer le paramètre barré sélectionné dans la liste
+   | **Restauration** | Restaurer le paramètre barré sélectionné dans la liste
 
    > [!TIP]
-   > Utilisez la case à **cocher des modifications de référence Preview** pour [voir quel sera le résultat](../../ide/preview-changes.md) avant de s’y engager.
+   > Utilisez la case à cocher **aperçu des modifications** de la référence pour [Voir le résultat](../../ide/preview-changes.md) avant de le valider.
 
-4. Lorsque vous avez terminé, appuyez sur le bouton **OK** pour appliquer les modifications.
+4. Si vous sélectionnez **Ajouter** dans la boîte de dialogue **modifier la signature** , la boîte de dialogue **Ajouter un paramètre** s’ouvre. La boîte de dialogue **Ajouter un paramètre** vous permet d’ajouter un nom de type et un nom de paramètre. Vous pouvez choisir de rendre le paramètre obligatoire ou facultatif avec une valeur par défaut. Vous pouvez ensuite ajouter une valeur au site d’appel et choisir un argument nommé pour cette valeur, ou vous pouvez introduire une variable TODO. La variable TODO place un TODO dans votre code afin que vous puissiez consulter chaque erreur et parcourir indépendamment chaque site d’appel, puis décider de ce qui doit être transmis. Pour les paramètres facultatifs, vous avez la possibilité d’omettre complètement le site d’appel.
 
+    ![Boîte de dialogue Ajouter un paramètre-C #](media/add-parameter-dialog.png)
+
+5. Lorsque vous avez terminé d’ajouter un paramètre, cliquez sur le bouton **OK** pour afficher un aperçu des modifications.
+
+    ![Boîte de dialogue Modifier la signature](media/change-signature.png)
+
+6. Appuyez sur **OK** pour afficher les modifications.
    - C# :
 
       ![Résultat du changement de la signature (C#)](media/changesignature-result-cs.png)

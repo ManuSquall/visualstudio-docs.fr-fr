@@ -1,6 +1,6 @@
 ---
 title: Développer du code sans projets ni solutions
-ms.date: 02/21/2018
+ms.date: 06/22/2020
 ms.topic: conceptual
 helpviewer_keywords:
 - open folder [Visual Studio]
@@ -11,12 +11,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d7a9459868d569a7466dccf92e4b548c0500bf80
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 75aeb721ea5625523d29e20193ac406037abedc2
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75596292"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85284891"
 ---
 # <a name="develop-code-in-visual-studio-without-projects-or-solutions"></a>Développer du code dans Visual Studio sans projets ni solutions
 
@@ -28,19 +28,27 @@ Une fois que vous avez ouvert vos fichiers de code dans Visual Studio, l’**Exp
 
 Vous pouvez ouvrir du code dans Visual Studio de différentes façons :
 
-- Sur la barre de menu Visual Studio, choisissez **File** > **Open** > **Folder,** puis naviguez vers l’emplacement du code.
+- Dans la barre de menus de Visual Studio, choisissez **fichier**  >  **ouvrir**  >  le**dossier**, puis accédez à l’emplacement du code.
 
 - Dans le menu contextuel (clic droit) d’un dossier contenant le code, choisissez la commande **Ouvrir dans Visual Studio**.
 
 ::: moniker range="vs-2017"
 - Choisissez le lien **Ouvrir le dossier** dans la **Page de démarrage** de Visual Studio.
+
+    > [!IMPORTANT]
+    > Tout le code ne peut pas être ouvert à l’aide du lien **ouvrir le dossier** à partir de la **page de démarrage**de Visual Studio. Par exemple, si votre fichier de code a été enregistré dans le cadre d’une solution &mdash; en d’autres termes, dans un fichier. sln, &mdash; vous devez utiliser l’une des autres options répertoriées ici pour ouvrir votre code.
+
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 - Choisissez le lien **Ouvrir le dossier** dans la fenêtre de démarrage.
+
+    > [!IMPORTANT]
+    > Tout le code ne peut pas être ouvert à l’aide du lien **ouvrir le dossier** de la fenêtre de démarrage de Visual Studio. Par exemple, si votre fichier de code a été enregistré dans le cadre d’une solution &mdash; en d’autres termes, dans un fichier. sln, &mdash; vous devez utiliser l’une des autres options répertoriées ici pour ouvrir votre code.
+
 ::: moniker-end
 
-- Si vous êtes un utilisateur de clavier, appuyez sur **Ctrl**+**Shift**+**Alt**+**O** dans Visual Studio.
+- Si vous êtes un utilisateur du clavier, appuyez sur **CTRL** + **MAJ** + **ALT** + **O** dans Visual Studio.
 
 - Ouvrez le code d’un référentiel GitHub cloné.
 
@@ -54,7 +62,7 @@ L’exemple suivant montre comment cloner un référentiel GitHub, puis ouvrir s
 
    ![Bouton de clonage GitHub](./media/VSIDE_Code_Clone.png)
 
-1. Dans Visual Studio, choisissez l’onglet **Team Explorer** pour ouvrir **Team Explorer**. Si vous ne voyez pas l’onglet, ouvrez-le de **View** > **Team Explorer**.
+1. Dans Visual Studio, choisissez l’onglet **Team Explorer** pour ouvrir **Team Explorer**. Si vous ne voyez pas l’onglet, ouvrez-le à partir de l' **affichage**  >  **Team Explorer**.
 
 1. Dans Team Explorer, sous la section relative aux **référentiels Git locaux** , choisissez la commande **Cloner**, puis collez l’URL de la page GitHub dans la zone de texte.
 
@@ -62,7 +70,7 @@ L’exemple suivant montre comment cloner un référentiel GitHub, puis ouvrir s
 
 1. Cliquez sur le bouton **Cloner** pour cloner les fichiers du projet dans un référentiel Git local. Ceci peut prendre plusieurs minutes, selon la taille du référentiel.
 
-1. Une fois que le repo a été cloné dans votre système, dans **Team Explorer**, choisissez la commande **Open** sur le menu contexte (clic droit) de la pension nouvellement clonée.
+1. Une fois le référentiel cloné sur votre système, dans **Team Explorer**, choisissez la commande **ouvrir** dans le menu contextuel (clic droit) du référentiel récemment cloné.
 
    ![Dépôt cloné](./media/VSIDE_Code_Clone3.png)
 
@@ -93,7 +101,7 @@ Si votre codebase utilise des outils de génération personnalisés, vous devez 
 
 Si votre codebase contient du code Python ou JavaScript, il est inutile de configurer les fichiers *.json*, mais vous devez installer la charge de travail correspondante. Il vous faudra également configurer le script de démarrage :
 
-1. Installez la charge [de travail de développement de Node.js](https://visualstudio.microsoft.com/vs/node-js/) ou de développement [Python](https://visualstudio.microsoft.com/vs/python/) en choisissant **Tools** > **Get Tools and Features,** ou en fermant Visual Studio et en exécutant l’installateur visual Studio.
+1. Installez la charge de travail développement [Node.js](https://visualstudio.microsoft.com/vs/node-js/) ou de [développement python](https://visualstudio.microsoft.com/vs/python/) en choisissant **Outils**  >  **accéder aux outils et aux fonctionnalités**, ou en fermant Visual Studio et en exécutant l’Visual Studio installer.
 
    ![Charges de travail de développement Node.js et Python](media/python_nodejs_workloads.png)
 
@@ -118,6 +126,6 @@ Le texte du bouton **Démarrer** évolue pour refléter le fait que le projet es
 ## <a name="see-also"></a>Voir aussi
 
 - [Personnaliser des tâches de génération et de débogage](../ide/customize-build-and-debug-tasks-in-visual-studio.md)
-- [Ouvrir des projets de dossier pour C++](/cpp/build/open-folder-projects-cpp)
+- [Projets Dossier ouvert pour C++](/cpp/build/open-folder-projects-cpp)
 - [Projets CMake en C++](/cpp/build/cmake-projects-in-visual-studio)
 - [Écriture de code dans l’éditeur de code et de texte](../ide/writing-code-in-the-code-and-text-editor.md)

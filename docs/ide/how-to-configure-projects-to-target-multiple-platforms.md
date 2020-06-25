@@ -2,7 +2,7 @@
 title: Guide pratique pour configurer des projets et cibler plusieurs plateformes
 ms.date: 11/04/2016
 ms.technology: vs-ide-compile
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - projects [Visual Studio], targeting platforms
 - platforms, changing target platforms
@@ -12,12 +12,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5b86a5c95131a4dcb2e6af199b57e9c8302790b5
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 0618d571258817b5e9653a38a7801c2e4d14e687
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "76114454"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85284566"
 ---
 # <a name="how-to-configure-projects-to-target-multiple-platforms"></a>Guide pratique pour configurer des projets et cibler plusieurs plateformes
 
@@ -29,7 +29,7 @@ La boîte de dialogue **Gestionnaire de configurations** vous permet de créer e
 
 1. Dans le menu **Générer**, cliquez sur **Gestionnaire de configuration**.
 
-2. Dans la **zone Plateforme de la solution active**, sélectionnez la plateforme que votre solution doit cibler, ou sélectionnez **\<Nouveau>** pour créer une nouvelle plateforme. Visual Studio compile votre application de façon à cibler la plateforme qui est définie comme plateforme active dans la boîte de dialogue **Gestionnaire de configurations**.
+2. Dans la **zone plateforme de la solution active**, sélectionnez la plateforme que votre solution doit cibler, ou choisissez **\<New>** de créer une nouvelle plateforme. Visual Studio compile votre application de façon à cibler la plateforme qui est définie comme plateforme active dans la boîte de dialogue **Gestionnaire de configurations**.
 
 ## <a name="remove-a-platform"></a>Supprimer une plateforme
 
@@ -37,7 +37,7 @@ Si vous constatez que vous n’avez pas besoin d’une plateforme, vous pouvez l
 
 1. Dans le menu **Générer**, cliquez sur **Gestionnaire de configuration**.
 
-2. Dans la **zone Plateforme de la solution active**, sélectionnez **\<Modifier>**. La boîte de dialogue **Modifier les plateformes de solution** s’affiche.
+2. Dans la **zone plateforme de la solution active**, sélectionnez **\<Edit>** . La boîte de dialogue **Modifier les plateformes de solution** s’affiche.
 
 3. Cliquez sur la plateforme à supprimer, puis sur **Supprimer**.
 
@@ -63,6 +63,6 @@ Si vous constatez que vous n’avez pas besoin d’une plateforme, vous pouvez l
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Comment : Créer et modifier des configurations](../ide/how-to-create-and-edit-configurations.md)
+- [Comment : créer et modifier des configurations](../ide/how-to-create-and-edit-configurations.md)
 - [Présentation des configurations de build](../ide/understanding-build-configurations.md)
 - [Générer et nettoyer des solutions et des projets dans Visual Studio](../ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md)

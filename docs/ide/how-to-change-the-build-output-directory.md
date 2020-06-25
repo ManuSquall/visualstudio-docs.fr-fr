@@ -2,7 +2,7 @@
 title: Guide pratique pour changer le répertoire de sortie de build
 ms.date: 05/15/2019
 ms.technology: vs-ide-compile
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - output directory, changing
 ms.assetid: a8333c89-afb2-4b1d-b2e2-9146da852402
@@ -11,12 +11,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 37342796f2dd94138136bb837cf6007d19d350c4
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: e4c2f2445bc7139c5bbc80a35905e24c319c9dfa
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "76114256"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85284644"
 ---
 # <a name="how-to-change-the-build-output-directory"></a>Guide pratique pour changer le répertoire de sortie de build
 
@@ -45,7 +45,7 @@ Vous pouvez spécifier l’emplacement de sortie généré par votre projet en f
    ![Propriété de chemin de sortie pour un projet Visual Studio C#](media/output-path.png)
    
    > [!NOTE]
-   > Certains projets comprendront par défaut le cadre et l’exécution dans la voie de construction. Pour modifier cela, cliquez à droite sur le nœud du projet dans **Solution Explorer**, sélectionnez Edit **Project File**, et ajoutez ce qui suit :
+   > Certains projets comportent par défaut l’infrastructure et le runtime dans le chemin de la Build. Pour modifier cette valeur, cliquez avec le bouton droit sur le nœud du projet dans **Explorateur de solutions**, sélectionnez **modifier le fichier projet**, puis ajoutez le code suivant :
    > ```xml
    > <PropertyGroup>
    >   <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
@@ -60,6 +60,6 @@ Vous pouvez spécifier l’emplacement de sortie généré par votre projet en f
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Page de construction, Concepteur de projets (C)](../ide/reference/build-page-project-designer-csharp.md)
-- [Page De propriété générale (projet)](/cpp/build/reference/general-property-page-project)
+- [Générer, page du concepteur de projets (C#)](../ide/reference/build-page-project-designer-csharp.md)
+- [Général, page de propriétés (projet)](/cpp/build/reference/general-property-page-project)
 - [Compilation et génération](../ide/compiling-and-building-in-visual-studio.md)

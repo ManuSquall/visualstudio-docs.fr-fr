@@ -1,7 +1,7 @@
 ---
 title: Créer et configurer des datasets
 ms.date: 11/21/2018
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - typed datasets, creating
 - datasets, creating
@@ -11,22 +11,22 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 8222b1985ab7f765be9b06fdd6abf7cb1e1cb2dc
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 1065c5efdcf73016e61ee0f016511579d41acd88
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75586911"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85282746"
 ---
 # <a name="how-to-create-and-configure-datasets-in-visual-studio"></a>Comment : créer et configurer des datasets dans Visual Studio
 
 Un jeu de données est un ensemble d’objets qui stockent des données à partir d’une base de données en mémoire et prennent en charge le suivi des modifications pour permettre les opérations de création, lecture, mise à jour et suppression (CRUD) sur ces données sans qu’il soit nécessaire de toujours les connecter à la base de données. Les jeux de données ont été conçus pour des *formulaires simples sur* des applications métier de données. Pour les nouvelles applications, envisagez d’utiliser Entity Framework pour stocker et modéliser des données en mémoire. Pour travailler avec des jeux de données, vous devez avoir une connaissance de base des concepts de base de données.
 
-Vous pouvez créer une classe de <xref:System.Data.DataSet> typée dans Visual Studio au moment du design à l’aide de l' **Assistant Configuration de source de données**. Pour plus d’informations sur la création de jeux de données par programme, consultez [création d’un jeu de données (ADO.net)](/dotnet/framework/data/adonet/dataset-datatable-dataview/creating-a-dataset).
+Vous pouvez créer une classe typée <xref:System.Data.DataSet> dans Visual Studio au moment du design à l’aide de l' **Assistant Configuration de source de données**. Pour plus d’informations sur la création de jeux de données par programme, consultez [création d’un jeu de données (ADO.net)](/dotnet/framework/data/adonet/dataset-datatable-dataview/creating-a-dataset).
 
 ## <a name="create-a-new-dataset-by-using-the-data-source-configuration-wizard"></a>Créer un nouveau DataSet à l’aide de l’Assistant Configuration de source de données
 
-1. Ouvrez votre projet dans Visual Studio, puis choisissez **projet** > **Ajouter une nouvelle source de données** pour démarrer l' **Assistant Configuration de source de données**.
+1. Ouvrez votre projet dans Visual Studio, puis choisissez **projet**  >  **Ajouter une nouvelle source de données** pour démarrer l' **Assistant Configuration de source de données**.
 
 2. Choisissez le type de source de données à laquelle vous souhaitez vous connecter.
 
@@ -40,13 +40,13 @@ Vous pouvez créer une classe de <xref:System.Data.DataSet> typée dans Visual S
 
      ![Choisir des objets de base de données](../data-tools/media/raddata-chose-objects.png)
 
-5. Cliquez sur **Finish**.
+5. Cliquez sur **Terminer**.
 
    Le jeu de données apparaît sous la forme d’un nœud dans **Explorateur de solutions**.
 
    ![Jeu de données dans Explorateur de solutions](../data-tools/media/dataset-in-solution-explorer.png)
 
-6. Cliquez sur le nœud du DataSet dans **Explorateur de solutions** pour ouvrir le DataSet dans le **Concepteur de DataSet**. Chaque table du jeu de données est associée à un objet `TableAdapter`, qui est représenté en bas. L’adaptateur de table est utilisé pour remplir le DataSet et éventuellement pour envoyer des commandes à la base de données.
+6. Cliquez sur le nœud du DataSet dans **Explorateur de solutions** pour ouvrir le DataSet dans le **Concepteur de DataSet**. Chaque table du DataSet possède un objet associé `TableAdapter` , qui est représenté en bas. L’adaptateur de table est utilisé pour remplir le DataSet et éventuellement pour envoyer des commandes à la base de données.
 
    ![Concepteur de DataSet](../data-tools/media/dataset-designer.png)
 
@@ -82,11 +82,11 @@ Cette procédure montre comment ajouter une table à partir de la même base de 
 
 1. Ouvrez votre dataset dans le **Concepteur de DataSet**.
 
-2. Faites glisser une classe <xref:System.Data.DataTable> de l’onglet **DataSet** de la **boîte à outils** vers le **Concepteur de DataSet**.
+2. Faites glisser une <xref:System.Data.DataTable> classe de l’onglet **DataSet** de la **boîte à outils** vers le **Concepteur de DataSet**.
 
-3. Ajoutez des colonnes pour définir votre table de données. Cliquez avec le bouton droit sur la table et choisissez **ajouter** > **colonne**. Utilisez la fenêtre **Propriétés** pour définir le type de données de la colonne et une clé si nécessaire.
+3. Ajoutez des colonnes pour définir votre table de données. Cliquez avec le bouton droit sur la table et choisissez **Ajouter**une  >  **colonne**. Utilisez la fenêtre **Propriétés** pour définir le type de données de la colonne et une clé si nécessaire.
 
-Les tables autonomes doivent implémenter `Fill` logique dans les tables autonomes afin que vous puissiez les remplir avec des données. Pour plus d’informations sur le remplissage de tables de données autonomes, consultez [remplissage d’un DataSet à partir d’un DataAdapter](/dotnet/framework/data/adonet/populating-a-dataset-from-a-dataadapter).
+Les tables autonomes doivent implémenter `Fill` une logique dans les tables autonomes afin que vous puissiez les remplir avec des données. Pour plus d’informations sur le remplissage de tables de données autonomes, consultez [remplissage d’un DataSet à partir d’un DataAdapter](/dotnet/framework/data/adonet/populating-a-dataset-from-a-dataadapter).
 
 ## <a name="see-also"></a>Voir aussi
 

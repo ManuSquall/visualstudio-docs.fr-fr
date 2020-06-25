@@ -2,7 +2,7 @@
 title: Guide pratique pour spécifier des événements de build (Visual Basic)
 ms.date: 11/04/2016
 ms.technology: vs-ide-compile
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - pre-build events
 - events [Visual Studio], builds
@@ -15,12 +15,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 33cf9cadc8fbf091fb213926fb25b232d14dc0d7
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 5986576fdf668aba952609dbf241e31d4b3dbf3d
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "76115105"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85283968"
 ---
 # <a name="how-to-specify-build-events-visual-basic"></a>Guide pratique pour spécifier des événements de build (Visual Basic)
 
@@ -44,14 +44,14 @@ Les événements de build sont spécifiés dans la boîte de dialogue **Événem
 4. Entrez les arguments de ligne de commande pour votre action pré-build ou post-build, puis cliquez sur **OK**.
 
     > [!NOTE]
-    > Ajoutez `call` une déclaration avant toutes les commandes post-build qui exécutent des fichiers *.bat.* Par exemple, `call C:\MyFile.bat` ou `call C:\MyFile.bat call C:\MyFile2.bat`.
+    > Ajoutez une `call` instruction avant toutes les commandes postérieures à la génération qui exécutent des fichiers *. bat* . Par exemple, `call C:\MyFile.bat` ou `call C:\MyFile.bat call C:\MyFile2.bat`.
 
     > [!NOTE]
     > Si votre événement pré-build ou post-build ne s’exécute pas correctement, vous pouvez terminer la génération en faisant en sorte que l’action d’événement s’achève avec un code autre que zéro (0), qui indique une action réussie.
 
 ## <a name="example-how-to-change-manifest-information-using-a-post-build-event"></a>Exemple : comment changer des informations de manifeste à l’aide d’un événement postbuild
 
-La procédure suivante montre comment définir la version minimale du système d’exploitation dans le manifeste de l’application à l’aide d’une commande *.exe* appelée à partir d’un événement post-construction (le fichier *.exe.manifest* dans l’annuaire du projet). La version minimale du système d’exploitation est un nombre en quatre parties, tel que 4.10.0.0. Pour ce faire, la commande modifie la section `<dependentOS>` du manifeste :
+La procédure suivante indique comment définir la version minimale du système d’exploitation dans le manifeste de l’application à l’aide d’une commande *. exe* appelée à partir d’un événement après génération (fichier *. exe. manifest* dans le répertoire du projet). La version minimale du système d’exploitation est un nombre en quatre parties, tel que 4.10.0.0. Pour ce faire, la commande modifie la section `<dependentOS>` du manifeste :
 
 ```xml
 <dependentOS>
@@ -63,11 +63,11 @@ La procédure suivante montre comment définir la version minimale du système d
 
 ### <a name="to-create-an-exe-command-to-change-the-application-manifest"></a>Pour créer une commande .exe afin de modifier le manifeste d’application
 
-1. Créez une application console pour la commande. Dans le menu **Fichier**, cliquez sur **Nouveau**, puis sur **Projet**.
+1. Créez une application console pour la commande. Dans le menu **fichier** , cliquez sur **nouveau**, puis sur **projet**.
 
 2. Dans la boîte de dialogue **Nouveau projet**, dans le nœud **Visual Basic**, sélectionnez **Windows**, puis le modèle **Application console**. Nommez le projet `ChangeOSVersionVB`.
 
-3. Dans *Module1.vb*, ajoutez la `Imports` ligne suivante aux autres instructions en haut du fichier :
+3. Dans *Module1. vb*, ajoutez la ligne suivante aux autres `Imports` instructions en haut du fichier :
 
    ```vb
    Imports System.Xml
@@ -116,7 +116,7 @@ La procédure suivante montre comment définir la version minimale du système d
    End Sub
    ```
 
-   La commande prend deux arguments. Le premier argument est le chemin vers le manifeste de l’application (c’est-à-dire le dossier dans lequel le processus de construction crée le manifeste, typiquement * \<ProjectName>.publish*). Le second argument est la nouvelle version du système d’exploitation.
+   La commande prend deux arguments. Le premier argument est le chemin d’accès au manifeste d’application (autrement dit, le dossier dans lequel le processus de génération crée le manifeste, en général * \<ProjectName> . Publish*). Le second argument est la nouvelle version du système d’exploitation.
 
 5. Dans le menu **Générer**, cliquez sur **Générer la solution**.
 
@@ -126,7 +126,7 @@ La procédure suivante montre comment définir la version minimale du système d
 
 ### <a name="to-invoke-a-post-build-event-to-change-the-application-manifest"></a>Pour appeler un événement post-build afin de modifier le manifeste d’application
 
-1. Créez une application Windows pour le projet à publier. Dans le menu **Fichier**, cliquez sur **Nouveau**, puis sur **Projet**.
+1. Créez une application Windows pour le projet à publier. Dans le menu **fichier** , cliquez sur **nouveau**, puis sur **projet**.
 
 2. Dans la boîte de dialogue **Nouveau projet**, dans le nœud **Visual Basic**, sélectionnez **Bureau Windows**, puis le modèle **Application Windows Forms**. Nommez le projet `VBWinApp`.
 3. Après avoir sélectionné le projet dans l’**Explorateur de solutions**, dans le menu **Projet**, cliquez sur **Propriétés**.
@@ -165,7 +165,7 @@ La procédure suivante montre comment définir la version minimale du système d
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Page Compile, Concepteur de projet (Visual Basic)](../ide/reference/compile-page-project-designer-visual-basic.md)
-- [Page Publier, Concepteur de projet](../ide/reference/publish-page-project-designer.md)
-- [Ligne de commande de l’événement prébuild/postbuild, boîte de dialogue](../ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md)
+- [Page compiler, concepteur de projets (Visual Basic)](../ide/reference/compile-page-project-designer-visual-basic.md)
+- [Page publier, concepteur de projets](../ide/reference/publish-page-project-designer.md)
+- [Ligne de commande de l’événement pré-build/après génération (boîte de dialogue)](../ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md)
 - [Guide pratique pour spécifier des événements de build (C#)](../ide/how-to-specify-build-events-csharp.md)

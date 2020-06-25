@@ -9,16 +9,16 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 735a4cc533312bcfa3823410780b09caa4f53fde
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: 4aa978098c459d9e55ef0dc1423080357e067a5b
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84173939"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85282759"
 ---
 # <a name="create-a-simple-data-application-with-wpf-and-entity-framework-6"></a>Créer une application de données simple avec WPF et Entity Framework 6
 
-Cette procédure pas à pas montre comment créer une application de base « formulaires sur des données » dans Visual Studio. L’application utilise SQL Server base de données locale, la base de données Northwind, Entity Framework 6 et Windows Presentation Foundation. Il montre comment effectuer une liaison de données de base avec un affichage maître-détail et un navigateur de liaisons personnalisé avec des boutons pour **déplacer**vers le bas, déplacer vers le **haut**, déplacer **vers le début**, **déplacer vers la fin**, **mettre à jour** et **supprimer**.
+Cette procédure pas à pas montre comment créer une application de base « formulaires sur des données » dans Visual Studio. L’application utilise SQL Server base de données locale, la base de données Northwind, Entity Framework 6 (pas Entity Framework Core) et Windows Presentation Foundation pour .NET Framework (pas .NET Core). Il montre comment effectuer une liaison de données de base avec un affichage maître-détail et un navigateur de liaisons personnalisé avec des boutons pour **déplacer**vers le bas, déplacer vers le **haut**, déplacer **vers le début**, **déplacer vers la fin**, **mettre à jour** et **supprimer**.
 
 Cet article se concentre sur l’utilisation des outils de données dans Visual Studio et ne tente pas d’expliquer les technologies sous-jacentes en toute profondeur. Il part du principe que vous avez une connaissance de base de XAML, Entity Framework et SQL. Cet exemple ne montre pas non plus l’architecture MVVM (Model-View-ViewModel), qui est standard pour les applications WPF. Toutefois, vous pouvez copier ce code dans votre propre application MVVM avec quelques modifications.
 

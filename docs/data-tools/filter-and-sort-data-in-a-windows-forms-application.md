@@ -1,7 +1,7 @@
 ---
 title: Filtrer et trier des données dans une application Windows Forms
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -19,32 +19,32 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 596397cc22cf0f0134463256c0861127dcfb81e1
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 7c420896a883146cf60de414100fc41080220e36
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75586612"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85282382"
 ---
 # <a name="filter-and-sort-data-in-a-windows-forms-application"></a>Filtrer et trier des données dans une application Windows Forms
 
-Vous filtrez les données en définissant la propriété <xref:System.Windows.Forms.BindingSource.Filter%2A> sur une expression de chaîne qui retourne les enregistrements souhaités.
+Vous filtrez les données en affectant <xref:System.Windows.Forms.BindingSource.Filter%2A> à la propriété une expression de chaîne qui retourne les enregistrements souhaités.
 
-Vous triez les données en définissant la propriété <xref:System.Windows.Forms.BindingSource.Sort%2A> sur le nom de la colonne sur laquelle vous souhaitez effectuer le tri. Ajoutez `DESC` pour effectuer un tri dans l’ordre décroissant, ou ajoutez `ASC` pour effectuer un tri dans l’ordre croissant.
+Vous triez les données en définissant la <xref:System.Windows.Forms.BindingSource.Sort%2A> propriété sur le nom de la colonne sur laquelle vous souhaitez effectuer le tri ; ajouter pour effectuer un `DESC` tri dans l’ordre décroissant ou pour effectuer un tri `ASC` dans l’ordre croissant.
 
 > [!NOTE]
-> Si votre application n’utilise pas de composants <xref:System.Windows.Forms.BindingSource>, vous pouvez filtrer et trier les données à l’aide d’objets <xref:System.Data.DataView>. Pour plus d’informations, consultez les [DataView](/dotnet/framework/data/adonet/dataset-datatable-dataview/dataviews).
+> Si votre application n’utilise pas de <xref:System.Windows.Forms.BindingSource> composants, vous pouvez filtrer et trier les données à l’aide d' <xref:System.Data.DataView> objets. Pour plus d’informations, consultez les [DataView](/dotnet/framework/data/adonet/dataset-datatable-dataview/dataviews).
 
 ## <a name="to-filter-data-by-using-a-bindingsource-component"></a>Pour filtrer des données à l’aide d’un composant BindingSource
 
-- Affectez à la propriété <xref:System.Windows.Forms.BindingSource.Filter%2A> l’expression que vous souhaitez retourner. Par exemple, le code suivant retourne les clients dont le `CompanyName` commence par « B » :
+- Affectez <xref:System.Windows.Forms.BindingSource.Filter%2A> à la propriété l’expression que vous souhaitez retourner. Par exemple, le code suivant retourne les clients avec un `CompanyName` qui commence par « B » :
 
      [!code-csharp[VbRaddataDisplaying#6](../data-tools/codesnippet/CSharp/filter-and-sort-data-in-a-windows-forms-application_1.cs)]
      [!code-vb[VbRaddataDisplaying#6](../data-tools/codesnippet/VisualBasic/filter-and-sort-data-in-a-windows-forms-application_1.vb)]
 
 ## <a name="to-sort-data-by-using-a-bindingsource-component"></a>Pour trier des données à l’aide d’un composant BindingSource
 
-- Définissez la propriété <xref:System.Windows.Forms.BindingSource.Sort%2A> sur la colonne sur laquelle vous souhaitez effectuer le tri. Par exemple, le code suivant trie les clients sur la colonne `CompanyName` dans l’ordre décroissant :
+- Affectez <xref:System.Windows.Forms.BindingSource.Sort%2A> à la propriété la colonne sur laquelle vous souhaitez effectuer le tri. Par exemple, le code suivant trie les clients sur la `CompanyName` colonne dans l’ordre décroissant :
 
      [!code-csharp[VbRaddataDisplaying#7](../data-tools/codesnippet/CSharp/filter-and-sort-data-in-a-windows-forms-application_2.cs)]
      [!code-vb[VbRaddataDisplaying#7](../data-tools/codesnippet/VisualBasic/filter-and-sort-data-in-a-windows-forms-application_2.vb)]

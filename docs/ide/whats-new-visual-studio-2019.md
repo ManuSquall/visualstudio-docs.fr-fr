@@ -15,19 +15,19 @@ ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: a6321e840941958fb2618a551a0212d6dc797cfb
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: 6b5058e0f1fabbf834a1adfb20d4f3a9a11094f5
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84183377"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85283591"
 ---
 # <a name="whats-new-in-visual-studio-2019"></a>Nouveautés de Visual Studio 2019
 
 **Mise à jour pour la [version 16,6](/visualstudio/releases/2019/release-notes/)**
 
 >[!div class="button"]
->[Télécharger Visual Studio 2019](https://visualstudio.microsoft.com/downloads)
+>[Télécharger Visual Studio 2019](https://visualstudio.microsoft.com/downloads)
 
 Visual Studio évolue constamment pour répondre aux besoins des développeurs. Dans la vidéo suivante de la bibliothèque de **[Builds de Microsoft](https://mybuild.microsoft.com/)** , rejoignez-nous pour une présentation de certaines des fonctionnalités les plus [récentes](/visualstudio/releases/2019/release-notes/) , ainsi qu’un [Aperçu](/visualstudio/releases/2019/release-notes-preview/) de ce que vous venez de faire : <br><br>*Longueur vidéo : 44,58 minutes*
 
@@ -227,5 +227,9 @@ Vous vous demandez peut-être quel est l'intérêt d'envoyer des commentaires à
 * [Notes de publication de Visual Studio 2019](/visualstudio/releases/2019/release-notes/)
 * [Notes de publication de Visual Studio 2019 pour Mac](/visualstudio/releasenotes/vs2019-mac-relnotes/)
 * [Nouveautés du kit de développement logiciel (SDK) Visual Studio 2019](../extensibility/whats-new-visual-studio-2019-sdk.md)
+* [Nouveautés de C++ dans Visual Studio](/cpp/overview/what-s-new-for-visual-cpp-in-visual-studio.md)
+* [Nouveautés de C# 8,0](/dotnet/csharp/whats-new/csharp-8.md)
+* [Nouveautés de .NET Core 3.1](/dotnet/core/whats-new/dotnet-core-3-1.md)
+* [Nouveautés de .NET Framework](/dotnet/framework/whats-new.md)
 * [Conférence Microsoft Build](https://www.microsoft.com/build)
 * [Conférence Microsoft Ignite](https://www.microsoft.com/ignite)

@@ -1,7 +1,7 @@
 ---
 title: Lier des contrôles à des données
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - data, displaying
 - data sources, displaying data
@@ -13,12 +13,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 9e0746de34a16dc181baff3c8b843b123c2ae434
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 3d812316de46caf7480146003f7ba1950ae3b9e2
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75587028"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85283032"
 ---
 # <a name="bind-controls-to-data-in-visual-studio"></a>Lier des contrôles à des données dans Visual Studio
 
@@ -32,11 +32,11 @@ Dans le contexte de la liaison de données, une source de données représente l
 
 | Source de données | Prise en charge du glisser-déplacer dans le **Concepteur Windows Forms** | Prise en charge du glisser-déplacer dans le **Concepteur WPF** | Prise en charge du glisser-déplacer dans le **Concepteur Silverlight** |
 | - | - | - | - |
-| Groupe de données | Oui | Oui | Non |
+| Dataset | Oui | Oui | Non |
 | Entity Data Model | Oui<sup>1</sup> | Oui | Oui |
-| Classes LINQ to SQL | Non<sup>2</sup> | Non<sup>2</sup> | Non<sup>2</sup> |
+| Classes LINQ to SQL | Non <sup>2</sup> | Non <sup>2</sup> | Non <sup>2</sup> |
 | Services (notamment [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)], les services WCF et les services web) | Oui | Oui | Oui |
-| Objet | Oui | Oui | Oui |
+| Object | Oui | Oui | Oui |
 | SharePoint | Oui | Oui | Oui |
 
 1. Générez le modèle à l’aide de l’Assistant **Entity Data Model** , puis faites glisser ces objets vers le concepteur.
@@ -45,7 +45,7 @@ Dans le contexte de la liaison de données, une source de données représente l
 
 ## <a name="data-sources-window"></a>Fenêtre Sources de données
 
-Les sources de données peuvent être utilisées par votre projet sous la forme d’éléments dans la fenêtre **Sources de données**. Cette fenêtre est visible quand une aire de conception de formulaire est la fenêtre active dans votre projet, ou vous pouvez l’ouvrir (quand un projet est ouvert) en choisissant **afficher** > d’autres **sources de données** **Windows** > . Vous pouvez faire glisser des éléments à partir de cette fenêtre pour créer des contrôles liés aux données sous-jacentes, et vous pouvez également configurer les sources de données en cliquant avec le bouton droit.
+Les sources de données peuvent être utilisées par votre projet sous la forme d’éléments dans la fenêtre **Sources de données**. Cette fenêtre est visible quand une aire de conception de formulaire est la fenêtre active dans votre projet, ou vous pouvez l’ouvrir (quand un projet est ouvert) en choisissant **Afficher**d'  >  **autres**  >  **sources de données**Windows. Vous pouvez faire glisser des éléments à partir de cette fenêtre pour créer des contrôles liés aux données sous-jacentes, et vous pouvez également configurer les sources de données en cliquant avec le bouton droit.
 
 ![Fenêtre Sources de données](../data-tools/media/raddata-data-sources-window.png)
 
@@ -55,9 +55,9 @@ Pour chaque type de données qui apparaît dans la fenêtre **Sources de donnée
 
 Le tableau suivant répertorie certaines des tâches les plus courantes que vous effectuez pour lier des contrôles à des données.
 
-|Tâche|En savoir plus|
+|Tâche|Informations complémentaires|
 |----------| - |
-|Ouvrez la fenêtre **Sources de données**.|Ouvrez une aire de conception dans l’éditeur, puis choisissez **afficher** > **sources de données**.|
+|Ouvrez la fenêtre **Sources de données**.|Ouvrez une aire de conception dans l’éditeur, puis choisissez **Afficher**les  >  **sources de données**.|
 |Ajoutez une source de données à votre projet.|[Ajouter de nouvelles sources de données](../data-tools/add-new-data-sources.md)|
 |Définissez le contrôle créé lorsque vous faites glisser un élément de la fenêtre **Sources de données** vers le concepteur.|[Définir le contrôle à créer lors d’une opération de glisser-déplacer à partir de la fenêtre Sources de données](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md)|
 |Modifiez la liste des contrôles associés aux éléments dans la fenêtre **Sources de données**.|[Ajouter des contrôles personnalisés à la fenêtre Sources de données](../data-tools/add-custom-controls-to-the-data-sources-window.md)|
@@ -69,4 +69,4 @@ Le tableau suivant répertorie certaines des tâches les plus courantes que vous
 ## <a name="see-also"></a>Voir aussi
 
 - [Outils de données Visual Studio pour .NET](../data-tools/visual-studio-data-tools-for-dotnet.md)
-- [Liaison de données Windows Forms](/dotnet/framework/winforms/windows-forms-data-binding)
+- [Liaison de données Windows Forms](/dotnet/framework/winforms/windows-forms-data-binding)

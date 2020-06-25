@@ -1,7 +1,7 @@
 ---
 title: Ajouter un code à des DataSets dans des applications multiniveau
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -13,12 +13,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 3d35ff68144e92af12f2ee6284076118493c6be9
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: a57a05ddb8317ea31b852ded369ad7ef69d40bd0
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75587119"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85283084"
 ---
 # <a name="add-code-to-datasets-in-n-tier-applications"></a>Ajouter un code à des DataSets dans des applications multiniveau
 
@@ -32,7 +32,7 @@ Par défaut, après avoir séparé le jeu de données et le code du TableAdapter
 > Lorsque vous séparez des DataSets et des TableAdapters (en définissant la propriété **DataSet Project** ), les classes DataSet partielles existantes dans le projet ne sont pas déplacées automatiquement. Les classes partielles de DataSet existantes doivent être déplacées manuellement vers le projet de DataSet.
 
 > [!NOTE]
-> Quand le code de validation doit être ajouté, le DataSet typé fournit des fonctionnalités permettant de générer des gestionnaires d’événements <xref:System.Data.DataTable.ColumnChanging> et <xref:System.Data.DataTable.RowChanging>. Pour plus d’informations, consultez [Ajouter une validation à un DataSet multicouche](../data-tools/add-validation-to-an-n-tier-dataset.md).
+> Quand le code de validation doit être ajouté, le DataSet typé fournit des fonctionnalités pour générer des <xref:System.Data.DataTable.ColumnChanging> <xref:System.Data.DataTable.RowChanging> gestionnaires d’événements et. Pour plus d’informations, consultez [Ajouter une validation à un DataSet multicouche](../data-tools/add-validation-to-an-n-tier-dataset.md).
 
 ## <a name="to-add-code-to-datasets-in-n-tier-applications"></a>Pour ajouter du code à des jeux de données dans des applications multicouches
 
@@ -65,7 +65,7 @@ Par défaut, après avoir séparé le jeu de données et le code du TableAdapter
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Vue d’ensemble des applications de données multiniveaux](../data-tools/n-tier-data-applications-overview.md)
+- [Vue d’ensemble des applications de données multicouches](../data-tools/n-tier-data-applications-overview.md)
 - [Guide pratique pour ajouter du code aux TableAdapters dans des applications multiniveaux](../data-tools/add-code-to-tableadapters-in-n-tier-applications.md)
 - [Créer et configurer des TableAdapters](create-and-configure-tableadapters.md)
 - [Vue d’ensemble de la mise à jour hiérarchique](hierarchical-update.md)

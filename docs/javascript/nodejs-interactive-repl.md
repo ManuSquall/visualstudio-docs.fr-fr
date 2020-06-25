@@ -2,7 +2,7 @@
 title: Utiliser l’environnement REPL Node.js
 description: Visual Studio prend en charge l’interaction avec le runtime Node.js
 ms.date: 12/04/2018
-ms.topic: conceptual
+ms.topic: how-to
 ms.devlang: javascript
 author: mikejo5000
 ms.author: mikejo
@@ -11,12 +11,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: faed930c60869010f740cf0a1e118a40299ce782
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 8b2bbbdf478f27f936d4897f2ff773baa4cca1d6
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "62840660"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85285002"
 ---
 # <a name="work-with-the-nodejs-interactive-window"></a>Utilisation de la fenêtre interactive Node.js
 
@@ -28,7 +28,7 @@ Vous pouvez ouvrir la fenêtre interactive en cliquant avec le bouton droit sur 
 
 ![Fenêtre interactive Node.js dans le menu contextuel du projet](../javascript/media/interactivewindow-open-from-project.png)
 
-Les clés raccourcies par défaut pour ouvrir la fenêtre interactive Node.js sont **[CTRL] - K, N**. Ou, vous pouvez ouvrir la fenêtre à partir de la barre d’outils en choisissant **View** > **Windows** > **Node.js Fenêtre interactive**.
+Les touches de raccourci par défaut pour ouvrir la fenêtre interactive Node.js sont **[Ctrl] + K, N**. Vous pouvez ouvrir la fenêtre à partir de la barre d’outils en choisissant **Afficher**  >  **Windows**  >  **Node.js fenêtre interactive**.
 
 ## <a name="use-the-repl"></a>Utiliser l’environnement REPL
 

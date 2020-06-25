@@ -1,7 +1,7 @@
 ---
 title: Se connecter à des données dans une base de données Access
 ms.date: 07/18/2019
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - data [Visual Studio], connecting
 - connecting to data, Access databases
@@ -12,18 +12,18 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: deb163779110c50560787b35ad7744f90f6a7f36
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 03c92476e8083106a0d301655be3a1779709c1c1
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75586859"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85282733"
 ---
 # <a name="connect-to-data-in-an-access-database"></a>Se connecter à des données dans une base de données Access
 
 Vous pouvez vous connecter à une base de données Access (fichier *. mdb* ou *. accdb* ) à l’aide de Visual Studio. Après avoir défini la connexion, les données s’affichent dans la fenêtre **Sources de données**. À partir de là, vous pouvez faire glisser des tables ou des vues sur votre aire de conception.
 
-## <a name="prerequisites"></a>Configuration requise
+## <a name="prerequisites"></a>Prérequis
 
 Pour utiliser ces procédures, vous avez besoin d’un projet Windows Forms ou WPF et d’une base de données Access (fichier *. accdb* ) ou d’une base de données Access 2000-2003 (fichier *. mdb* ). Suivez la procédure qui correspond à votre type de fichier.
 
@@ -33,13 +33,13 @@ Connectez-vous aux bases de données créées avec Office 365, Access 2013, Acce
 
 1. Ouvrez un Windows Forms ou un projet d’application WPF dans Visual Studio.
 
-2. Pour ouvrir la fenêtre **sources de données** , dans le menu **affichage** , sélectionnez autres **sources de données** **Windows** > .
+2. Pour ouvrir la fenêtre **sources de données** , dans le menu **affichage** , sélectionnez autres sources de **Other Windows**  >  **données**Windows.
 
    ![Afficher d'autres sources de données Windows](../data-tools/media/viewdatasources.png)
 
 3. Dans la fenêtre **Sources de données** , cliquez sur **Ajouter une nouvelle source de données**.
 
-   L’Assistant **Configuration de source de données** s’ouvre.
+   L' **Assistant Configuration de source de données** s’ouvre.
 
 4. Sélectionnez **base de données** dans la page **choisir un type de source de données** , puis sélectionnez **suivant**.
 
@@ -49,7 +49,7 @@ Connectez-vous aux bases de données créées avec Office 365, Access 2013, Acce
 
    La boîte de dialogue **Ajouter une connexion** s’ouvre.
 
-7. Si la **source de données** n’est pas définie sur **fichier de base de données Microsoft Access (OLE DB)** , sélectionnez le bouton **modifier** .
+7. Si la **source de données** n’est pas définie sur **fichier de base de données Microsoft Access**, sélectionnez le bouton **modifier** .
 
    La boîte de dialogue **modifier la source de données** s’ouvre. Dans la liste des sources de données, choisissez **fichier de base de données Microsoft Access**. Dans la liste déroulante **fournisseur de données** , sélectionnez **.NET Framework fournisseur de données pour OLE DB**, puis choisissez **OK**.
 
@@ -59,11 +59,11 @@ Connectez-vous aux bases de données créées avec Office 365, Access 2013, Acce
 
 10. Sélectionnez **suivant** dans la page **choisir votre connexion de données** .
 
-    Vous pouvez obtenir une boîte de dialogue indiquant que le fichier de données ne se trouve pas dans votre projet actuel. Sélectionnez **Oui** ou **Non**.
+    Vous pouvez obtenir une boîte de dialogue indiquant que le fichier de données ne se trouve pas dans votre projet actuel. Sélectionnez **Oui** ou **non**.
 
 11. Sélectionnez **suivant** dans la page **enregistrer la chaîne de connexion dans le fichier de configuration de l’application** .
 
-12. Développez le nœud **Tables** dans la page **Choisir vos objets de base de données**.
+12. Développez le nœud **tables** dans la page **choisir vos objets de base de données** .
 
 13. Sélectionnez les tables ou les vues que vous souhaitez inclure dans votre jeu de données, puis sélectionnez **Terminer**.
 
@@ -75,13 +75,13 @@ Connectez-vous aux bases de données créées avec Access 2000-2003 à l’aide 
 
 1. Ouvrez un Windows Forms ou un projet d’application WPF dans Visual Studio.
 
-2. Dans le menu **affichage** , sélectionnez **autres** Sources de **données**Windows > .
+2. Dans le menu **affichage** , sélectionnez **autres**  >  **sources de données**Windows.
 
    ![Afficher d'autres sources de données Windows](../data-tools/media/viewdatasources.png)
 
 3. Dans la fenêtre **Sources de données** , cliquez sur **Ajouter une nouvelle source de données**.
 
-    L’Assistant **Configuration de source de données** s’ouvre.
+    L' **Assistant Configuration de source de données** s’ouvre.
 
 4. Sélectionnez **base de données** dans la page **choisir un type de source de données** , puis sélectionnez **suivant**.
 
@@ -89,7 +89,7 @@ Connectez-vous aux bases de données créées avec Access 2000-2003 à l’aide 
 
 6. Dans la page **Choisir votre connexion de données**, sélectionnez **Nouvelle connexion** pour configurer une nouvelle connexion de données.
 
-7. Si la source de données n’est pas un **fichier de base de données Microsoft Access (OLE DB)** , sélectionnez **modifier** pour ouvrir la boîte de dialogue **modifier la source de données** et sélectionnez **fichier de base de données Microsoft Access**, puis cliquez sur **OK**.
+7. Si la source de données n’est pas un **fichier de base de données Microsoft Access (OLE DB)**, sélectionnez **modifier** pour ouvrir la boîte de dialogue **modifier la source de données** et sélectionnez **fichier de base de données Microsoft Access**, puis cliquez sur **OK**.
 
 8. Dans le **nom du fichier de base de données**, spécifiez le chemin d’accès et le nom du fichier *. mdb* auquel vous souhaitez vous connecter, puis sélectionnez **OK**.
 
@@ -99,13 +99,13 @@ Connectez-vous aux bases de données créées avec Access 2000-2003 à l’aide 
 
 10. Sélectionnez **suivant** dans la page **enregistrer la chaîne de connexion dans le fichier de configuration de l’application** .
 
-11. Développez le nœud **Tables** dans la page **Choisir vos objets de base de données**.
+11. Développez le nœud **tables** dans la page **choisir vos objets de base de données** .
 
 12. Sélectionnez les tables ou les vues que vous souhaitez dans votre jeu de données, puis sélectionnez **Terminer**.
 
     Le jeu de données est ajouté à votre projet, et les tables et vues s’affichent dans la fenêtre **Sources de données**.
 
-## <a name="next-steps"></a>Étapes suivantes :
+## <a name="next-steps"></a>Étapes suivantes
 
 Le DataSet que vous venez de créer est disponible dans la fenêtre **sources de données** . Vous pouvez à présent effectuer l’une des tâches suivantes :
 
@@ -113,10 +113,10 @@ Le DataSet que vous venez de créer est disponible dans la fenêtre **sources de
 
 - Ouvrez la source de données dans le **Concepteur de DataSet** pour ajouter ou modifier les objets qui composent le jeu de données.
 
-- Ajoutez une logique de validation au <xref:System.Data.DataTable.ColumnChanging> ou <xref:System.Data.DataTable.RowChanging> événement des tables de données dans le DataSet (consultez [valider des données dans des datasets](../data-tools/validate-data-in-datasets.md)).
+- Ajoutez une logique de validation à l' <xref:System.Data.DataTable.ColumnChanging> <xref:System.Data.DataTable.RowChanging> événement ou des tables de données dans le DataSet (consultez [valider des données dans des datasets](../data-tools/validate-data-in-datasets.md)).
 
 ## <a name="see-also"></a>Voir aussi
 
 - [Ajouter des connexions](../data-tools/add-new-connections.md)
 - [Vue d’ensemble de la liaison de données WPF](/dotnet/framework/wpf/data/data-binding-overview)
-- [Liaison de données Windows Forms](/dotnet/framework/winforms/data-binding-and-windows-forms)
+- [Liaison de données Windows Forms](/dotnet/framework/winforms/data-binding-and-windows-forms)

@@ -1,18 +1,18 @@
 ---
 title: Ajouter de nouvelles connexions
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 author: ghogen
 ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 65c4e28eb9dfa3e3677f70d0557bb53ad8f9c3b2
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 5f6f34c28a6bbba236a4d90e2f936fad0b2a3f60
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75587067"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85283058"
 ---
 # <a name="add-new-connections"></a>Ajouter de nouvelles connexions
 
@@ -26,7 +26,7 @@ Vous pouvez tester votre connexion à une base de données ou à un service, et 
 
    Installez cette fenêtre manuellement en tant qu’extension Visual Studio à partir de [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.CloudExplorerForVS). Fournit des fonctionnalités spécialisées pour l’exploration et la connexion aux services Azure.
 
-- Explorateur d'objets SQL Server
+- Explorateur d’objets SQL Server
 
    Installé avec SQL Server Data Tools et visible dans le menu **affichage** . Si vous ne le voyez pas, accédez à **programmes et fonctionnalités** dans le panneau de configuration, recherchez Visual Studio, puis sélectionnez **modifier** pour réexécuter le programme d’installation après avoir activé la case à cocher pour SQL Server Data Tools. Utilisez **Explorateur d’objets SQL Server** pour afficher les bases de données SQL (si elles ont un fournisseur ADO.net), créer des bases de données, modifier des schémas, créer des procédures stockées, récupérer des chaînes de connexion, afficher les données, et bien plus encore. Les bases de données SQL qui n’ont pas de fournisseur ADO.NET installé ne s’affichent pas ici, mais vous pouvez toujours vous y connecter par programmation.
 

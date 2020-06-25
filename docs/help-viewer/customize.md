@@ -1,7 +1,7 @@
 ---
 title: Personnaliser la Visionneuse d'aide
 ms.date: 11/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - hv_options
 helpviewer_keywords:
@@ -13,12 +13,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8edcdee8ffe4c2b8a97f4ed65ae86f925db42b1c
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
-ms.translationtype: HT
+ms.openlocfilehash: 5d1f4de5e5ace63f748c6a75d45d8311ea3eb71b
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67825024"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85284970"
 ---
 # <a name="customize-the-help-viewer"></a>Personnaliser Help Viewer
 Vous pouvez personnaliser la disposition des fenêtres Help Viewer, ainsi que d’autres options telles que la taille de la police, le nombre maximal de résultats et l’affichage ou non du contenu en anglais.
@@ -43,7 +43,7 @@ Pour ouvrir la boîte de dialogue **Options de la visionneuse**, sélectionnez l
 |Changer la taille de la police du texte qui s’affiche|Choisissez une taille dans la liste **Taille du texte**.|
 |Changer le nombre maximal de résultats de recherche qui s’affichent sous l’onglet **Recherche**|Choisissez une valeur dans la liste **Nombre maximal de résultats de recherche**.|
 |Changer le nombre maximal d’entrées d’historique qui s’affichent dans la fenêtre **Favoris**|Choisissez une valeur dans la liste **Nombre maximal d’entrées d’historique enregistrées**.|
-|Ajouter ou non le contenu en anglais quand vous affichez le contenu d’une version d’un produit dans une langue autre que l’anglais|Cochez ou décochez la case **Inclure le contenu en anglais dans tous les onglets de navigation et l’aide demandée via la touche F1**. **Attention :**  Cette fonctionnalité contrôle également la possibilité de télécharger le contenu en anglais sous l’onglet **Gérer le contenu**.|
+|Ajouter ou non le contenu en anglais quand vous affichez le contenu d’une version d’un produit dans une langue autre que l’anglais|Cochez ou décochez la case **Inclure le contenu en anglais dans tous les onglets de navigation et l’aide demandée via la touche F1**. **Attention :** Cette fonctionnalité contrôle également la possibilité de télécharger, ou non, le contenu en anglais sous l’onglet **Gérer le contenu**.|
 
 ## <a name="see-also"></a>Voir aussi
 

@@ -11,12 +11,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 91c712ce396000ff9babaf70335edfd5709a3000
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: cb1d5196874956d54c01504288a4d948b12abea8
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84183091"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85283565"
 ---
 # <a name="tutorial-create-an-aspnet-core-app-with-typescript-in-visual-studio"></a>Didacticiel : créer une application ASP.NET Core avec une machine à écrire dans Visual Studio
 
@@ -34,7 +34,7 @@ Si vous n’avez pas encore installé Visual Studio, accédez à la page [Télé
 
 ::: moniker-end
 
-Dans ce tutoriel, vous allez apprendre à :
+Dans ce tutoriel, vous allez découvrir comment :
 > [!div class="checklist"]
 > * Créer un projet ASP.NET Core
 > * Ajouter le package NuGet pour la prise en charge de la machine à écrire
@@ -97,9 +97,9 @@ Dans ce didacticiel, vous commencez avec un projet simple contenant du code pour
 
 1. Cliquez avec le bouton droit sur le nœud du projet et choisissez **ajouter > nouvel élément**. Choisissez le **fichier de configuration de la machine à écrire JSON**, puis cliquez sur **Ajouter**.
 
-   Visual Studio ajoute le fichier *tsconfig. JSON* à la racine du projet. Vous pouvez utiliser ce fichier pour [configurer les options](https://www.typescriptlang.org/docs/handbook/tsconfig-json.html) du compilateur de machine à écrire.
+   Visual Studio ajoute le *tsconfig.jssur* le fichier à la racine du projet. Vous pouvez utiliser ce fichier pour [configurer les options](https://www.typescriptlang.org/docs/handbook/tsconfig-json.html) du compilateur de machine à écrire.
 
-1. Ouvrez *tsconfig. JSON* et remplacez le code par défaut par le code suivant :
+1. Ouvrez *tsconfig.jssur* et remplacez le code par défaut par le code suivant :
 
    ```json
    {
@@ -162,7 +162,7 @@ Dans ce didacticiel, vous commencez avec un projet simple contenant du code pour
 
     Sélectionnez `lastName` cette option pour rajouter le nom au code.
 
-1. Ouvrez le dossier *views/page de démarrage* , puis ouvrez *index. html*.
+1. Ouvrez le dossier *views/page de démarrage* , puis ouvrez *index. cshtml*.
 
 1. Ajoutez le code HTML suivant à la fin du fichier.
 
@@ -189,7 +189,7 @@ Dans ce didacticiel, vous commencez avec un projet simple contenant du code pour
 
    Bien que l’application soit générée automatiquement lorsque vous l’exécutez, nous souhaitons examiner un problème qui se produit pendant le processus de génération.
 
-1. Ouvrez le dossier *wwwroot/js* . vous trouverez deux nouveaux fichiers, *app. js* et le fichier de mappage source, *app. js. map*. Ces fichiers sont générés par le compilateur de machine à écrire.
+1. Ouvrez le dossier *wwwroot/js* . vous trouverez deux nouveaux fichiers, *app.js* et le fichier de mappage source, *app.js. map*. Ces fichiers sont générés par le compilateur de machine à écrire.
 
    Les fichiers de mappage source sont requis pour le débogage.
 
@@ -224,7 +224,7 @@ Dans ce didacticiel, vous commencez avec un projet simple contenant du code pour
    >[!NOTE]
    > Pour les projets ASP.NET Core, vous pouvez également utiliser le [Gestionnaire de bibliothèque](https://docs.microsoft.com/aspnet/core/client-side/libman/?view=aspnetcore-3.1) ou le fil à la place de NPM pour installer des fichiers JavaScript et CSS côté client.
 
-1. Dans cet exemple, ajoutez un fichier de définition de machine à écrire pour jQuery à votre projet. Incluez ce qui suit dans votre fichier *Package. JSON* .
+1. Dans cet exemple, ajoutez un fichier de définition de machine à écrire pour jQuery à votre projet. Incluez ce qui suit dans votre *package.js* fichier.
 
    ```json
    "devDependencies": {
@@ -237,7 +237,7 @@ Dans ce didacticiel, vous commencez avec un projet simple contenant du code pour
 1. Si le package dans Explorateur de solutions n’est pas installé, cliquez avec le bouton droit sur le nœud NPM et choisissez **restaurer les packages**.
 
    >[!NOTE]
-   > Dans certains scénarios, Explorateur de solutions peut indiquer qu’un package NPM n’est pas synchronisé avec *Package. JSON* en raison d’un problème connu décrit [ici](https://github.com/aspnet/Tooling/issues/479). Par exemple, le package peut apparaître comme n’étant pas installé lors de son installation. Dans la plupart des cas, vous pouvez mettre à jour Explorateur de solutions en supprimant *Package. JSON*, en redémarrant Visual Studio et en rajoutant le fichier *Package. JSON* , comme décrit précédemment dans cet article.
+   > Dans certains scénarios, Explorateur de solutions peut indiquer qu’un package NPM n’est pas synchronisé avec *package.js* en raison d’un problème connu décrit [ici](https://github.com/aspnet/Tooling/issues/479). Par exemple, le package peut apparaître comme n’étant pas installé lors de son installation. Dans la plupart des cas, vous pouvez mettre à jour Explorateur de solutions en supprimant *package.jssur*, en redémarrant Visual Studio, puis en rajoutant le *package.jssur* le fichier, comme décrit précédemment dans cet article.
 
 1. Dans Explorateur de solutions, cliquez avec le bouton droit sur le dossier scripts et choisissez **Ajouter**  >  **un nouvel élément**.
 

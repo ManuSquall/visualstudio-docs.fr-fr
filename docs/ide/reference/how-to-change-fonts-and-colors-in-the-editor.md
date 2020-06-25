@@ -1,6 +1,6 @@
 ---
 title: Changer les polices et les couleurs de l’éditeur
-ms.date: 11/26/2018
+ms.date: 06/01/2020
 ms.topic: conceptual
 helpviewer_keywords:
 - editors, fonts
@@ -14,16 +14,16 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c7347ba6bf599e34d9555f6acaeb03cf396a5855
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 2d58270b11c810e357af00fbec249c9a659890fb
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75595564"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85283699"
 ---
-# <a name="how-to-change-fonts-and-colors-for-the-editor-in-visual-studio"></a>Comment: Changer les polices et les couleurs pour l’éditeur dans Visual Studio
+# <a name="how-to-change-fonts-and-colors-for-the-editor-in-visual-studio"></a>Comment : modifier les polices et les couleurs de l’éditeur dans Visual Studio
 
-Vous pouvez modifier le visage de police par défaut, ajuster la taille de la police et modifier les couleurs de premier plan et de fond pour divers **éléments d’affichage** de texte dans l’éditeur de code. Quand vous changez les paramètres de police, gardez à l’esprit les informations suivantes :
+Vous pouvez modifier le type de police par défaut, ajuster la taille de la police et modifier les couleurs de premier plan et d’arrière-plan pour différents **éléments d’affichage** de texte dans l’éditeur de code. Quand vous changez les paramètres de police, gardez à l’esprit les informations suivantes :
 
 - Les paramètres **Police** et **Taille** s’appliquent à l’ensemble des éléments texte de tous les éditeurs Visual Studio.
 
@@ -31,20 +31,29 @@ Vous pouvez modifier le visage de police par défaut, ajuster la taille de la po
 
 - Les options **Premier plan de l’élément**, **Arrière-plan de l’élément** et **Gras** peuvent être définies pour chaque type d’élément de texte. Par exemple, si vous modifiez des couleurs et que vous sélectionnez **Gras** pour les éléments **Commentaire** et **Signets**, les autres types d’éléments de texte ne sont pas affectés.
 
+> [!IMPORTANT]
+> Pour savoir comment personnaliser les polices et les couleurs de l’IDE et non uniquement pour l’éditeur de code, consultez la page **[Comment : modifier les polices et les couleurs dans Visual Studio](../../ide/how-to-change-fonts-and-colors-in-visual-studio.md)** .
+
 ## <a name="change-the-default-font-face-size-and-colors"></a>Changer le type, la taille et les couleurs de police par défaut
 
-1. Sélectionnez **Options** dans le menu **Outils**. Sous **l’environnement**, sélectionnez [Fonts et Couleurs](../../ide/reference/fonts-and-colors-environment-options-dialog-box.md).
+1. Sélectionnez **Options** dans le menu **Outils**. Sous **environnement**, sélectionnez **polices et couleurs**.
 
-2. Dans **Afficher les paramètres de**, sélectionnez **Éditeur de texte**.
+1. Dans **Afficher les paramètres de**, sélectionnez **Éditeur de texte**.
 
-3. Modifiez les options **Police** et **Taille** pour changer le type et la taille de la police pour tous les éléments de texte dans tous les éditeurs.
+   ![Capture d’écran de la boîte de dialogue Options pour modifier les polices et les couleurs dans l’éditeur](../../ide/media/fonts-colors-text-editor.png "Capture d’écran de la boîte de dialogue Options pour modifier les polices et les couleurs de l’éditeur")
 
-4. Sélectionnez l’élément approprié dans **Éléments affichés**, puis modifiez les options **Premier plan de l’élément** et **Arrière-plan de l’élément**.
+1. Modifiez les options **Police** et **Taille** pour changer le type et la taille de la police pour tous les éléments de texte dans tous les éditeurs.
+
+1. Sélectionnez l’élément approprié dans **Éléments affichés**, puis modifiez les options **Premier plan de l’élément** et **Arrière-plan de l’élément**.
 
     > [!TIP]
-    > Cliquez sur **Utiliser les valeurs par défaut** pour réinitialiser les paramètres par défaut.
+    > Cliquez sur **utiliser les valeurs par défaut** pour rétablir les paramètres par défaut.
 
-5. Cliquez sur **OK**.
+1. Cliquez sur **OK**.
+
+## <a name="next-steps"></a>Étapes suivantes
+
+Pour en savoir plus sur les modifications de police et de couleur que vous pouvez apporter à l’IDE à l’aide de la boîte de dialogue **options** , consultez la page [polices et couleurs, environnement, boîte de dialogue Options](../../ide/reference/fonts-and-colors-environment-options-dialog-box.md) .
 
 ## <a name="see-also"></a>Voir aussi
 

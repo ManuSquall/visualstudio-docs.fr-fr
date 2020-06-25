@@ -1,7 +1,7 @@
 ---
 title: Utiliser la table des matières de la visionneuse d’aide
 ms.date: 11/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - hv_contents
 helpviewer_keywords:
@@ -15,23 +15,23 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bd55a95675505648179161ae3fb7cacea6a83104
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
-ms.translationtype: HT
+ms.openlocfilehash: f9bd332b5767dbfffcfbaa44637e0cc92051f7b1
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67825076"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85284930"
 ---
-# Procédure : rechercher des rubriques dans la table des matières
+# Guide pratique pour rechercher des rubriques dans la table des matières
 
-Sous l’onglet **Sommaire**, vous pouvez utiliser la table des matières pour rechercher des informations. La table des matières est une liste extensible qui contient toutes les rubriques des livres installés. Pour obtenir des informations d’accessibilité sur la navigation dans la table des matières, consultez [Touches de raccourci (Help Viewer)](../help-viewer/shortcut-keys.md).
+Sous l’onglet **Sommaire**, vous pouvez utiliser la table des matières pour rechercher des informations. La table des matières est une liste extensible qui contient toutes les rubriques des livres installés. Pour plus d’informations sur la navigation dans la table des matières, consultez [touches de raccourci (visionneuse d’aide)](../help-viewer/shortcut-keys.md).
 
 > [!IMPORTANT]
 > Le nombre de rubriques disponibles dans la table des matières dépend du filtre que vous avez sélectionné.
 
 ## Filtrer la table des matières
 
-Vous pouvez filtrer la table des matières pour réduire le nombre de rubriques qui s’affichent sous l’onglet **Sommaire**. Les titres apparaissent dans la liste que s'ils contiennent la racine du terme que vous spécifiez. Par exemple, si vous spécifiez le filtre « configurer », seuls les titres qui contiennent « configure » ou « configurer » s'affichent. Les nœuds dont les titres ne contiennent pas le terme sont réduits à un seul nœud avec des points de suspension ( **...** ).
+Vous pouvez filtrer la table des matières pour limiter l’étendue des rubriques qui s’affichent sous l’onglet **Sommaire** . les titres apparaissent dans la liste uniquement s’ils contiennent la racine du terme que vous spécifiez. Par exemple, si vous spécifiez le filtre « configurer », seuls les titres qui contiennent « configure » ou « configurer » s'affichent. Les nœuds dont les titres ne contiennent pas le terme sont réduits à un seul nœud avec des points de suspension (**...**).
 
 1. Choisissez l’onglet **Sommaire**.
 
@@ -46,12 +46,12 @@ Si vous avez ouvert une rubrique à l'aide des fonctionnalités d'index ou de re
 
 1. Affichez une rubrique.
 
-2. Cliquez dans la barre d’outils sur le bouton **Afficher la rubrique dans le sommaire**, ou appuyez sur **Ctrl**+**S**.
+2. Cliquez sur le bouton **afficher la rubrique dans le sommaire** dans la barre d’outils, ou appuyez sur **CTRL** + **S**.
 
      L’onglet **Sommaire** s’ouvre et affiche l’emplacement de la rubrique dans la table des matières.
 
 ## Voir aussi
 
-- [Guide pratique pour rechercher des rubriques dans l’index](../help-viewer/find-topics-index.md)
-- [Guide pratique pour rechercher des rubriques](../help-viewer/find-topics.md)
+- [Comment : Rechercher des rubriques dans l’index](../help-viewer/find-topics-index.md)
+- [Comment : Rechercher des rubriques](../help-viewer/find-topics.md)
 - [Microsoft Help Viewer](../help-viewer/overview.md)

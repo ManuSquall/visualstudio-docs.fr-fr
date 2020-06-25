@@ -1,6 +1,6 @@
 ---
-title: Générer un champ privé à partir d’un constructeur
-ms.date: 03/10/2020
+title: Générer un champ privé et une propriété à partir d’un constructeur
+ms.date: 06/20/2020
 ms.topic: reference
 author: mikadumont
 ms.author: midumont
@@ -10,34 +10,34 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 4eb5dd39d0fb2d4cd9ba8ade0d0408d6e36a4854
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 56bd361d2bffb4ff17b03ac6743837032d1934e1
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79094017"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85283721"
 ---
-# <a name="generate-private-field-from-constructor"></a>Générer un champ privé à partir d’un constructeur
+# <a name="generate-private-field-and-property-from-constructor"></a>Générer un champ privé et une propriété à partir d’un constructeur
 
 Cette refactorisation s’applique à : 
 
 - C# 
 
-- Visual Basic
+**Ce qui suit :** Générez un champ ou une propriété privé à partir d’un constructeur. 
 
-**Quoi :** Générer un champ privé à partir d’un constructeur. 
+Dans les **cas suivants :** Vous souhaitez ajouter et initialiser rapidement un champ ou une propriété privé à partir d’un constructeur.
 
-**Quand :** Vous souhaitez rapidement ajouter un champ privé à partir d’un constructeur.
-
-**Pourquoi:** Écrire des champs privés peut prendre beaucoup de temps et répétitif. L’utilisation de cette refactorisation est rapide et rend le programme plus robuste.
+**Pourquoi :** L’écriture de champs et de propriétés privés peut être longue et répétitive. L’utilisation de cette refactorisation est rapide et rend le programme plus robuste.
 
 ## <a name="how-to"></a>Procédures 
 
-1. Placez votre curseur sur le nom du paramètre dans le constructeur.
+1. Placez le curseur sur le nom du paramètre dans le constructeur.
 
-2. Appuyez **sur Ctrl**+**.** pour afficher le menu **Actions rapides et refactorisations**.
+2. Appuyez sur **CTRL** + **.** pour afficher le menu **Actions rapides et refactorisations**.
    
-3. Sélectionnez l’option pour **créer et initialiser le champ**.
+3. Sélectionnez ensuite l’une des options suivantes :
+
+- **Créez et initialisez le champ** ou **créez et initialisez la propriété**.
 
    ![Générer un champ privé à partir d’un constructeur](media/generate-private-field-from-constructor.png)
 

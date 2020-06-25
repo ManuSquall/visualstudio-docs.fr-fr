@@ -1,7 +1,7 @@
 ---
 title: Ajouter du code aux TableAdapters dans des applications multiniveaux
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -14,12 +14,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: e5d240726030a3a08d184b3015f56f65d9168e9f
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.openlocfilehash: 3ea451ac60de971677ee2f7910b28b334c67dff3
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/16/2020
-ms.locfileid: "76113319"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85283097"
 ---
 # <a name="add-code-to-tableadapters-in-n-tier-applications"></a>Ajouter du code aux TableAdapters dans des applications multiniveaux
 Vous pouvez étendre les fonctionnalités d’un TableAdapter en créant un fichier de classe partielle pour le TableAdapter et en y ajoutant du code (au lieu d’ajouter du code au fichier *NomGroupeDonnées. DataSet. designer* ). Les classes partielles permettent à du code pour une classe spécifique d’être divisé entre plusieurs fichiers physiques. Pour plus d’informations, consultez [Partial](/dotnet/visual-basic/language-reference/modifiers/partial) ou [Partial (type)](/dotnet/csharp/language-reference/keywords/partial-type).
@@ -32,7 +32,7 @@ Par défaut, après avoir séparé le jeu de données et le code du TableAdapter
 > Quand vous séparez les datasets et les TableAdapters (en définissant la propriété **Projet DataSet**), les classes DataSet partielles existantes dans le projet ne sont pas déplacées automatiquement. Les classes de DataSet partielles existantes doivent être déplacées manuellement vers le projet de DataSet.
 
 > [!NOTE]
-> Le DataSet fournit des fonctionnalités permettant de générer des gestionnaires d’événements <xref:System.Data.DataTable.ColumnChanging> et <xref:System.Data.DataTable.RowChanging> lorsque la validation est nécessaire. Pour plus d’informations, consultez [Ajouter une validation à un DataSet multicouche](../data-tools/add-validation-to-an-n-tier-dataset.md).
+> Le DataSet fournit des fonctionnalités pour générer des <xref:System.Data.DataTable.ColumnChanging> <xref:System.Data.DataTable.RowChanging> gestionnaires d’événements et lorsque la validation est nécessaire. Pour plus d’informations, consultez [Ajouter une validation à un DataSet multicouche](../data-tools/add-validation-to-an-n-tier-dataset.md).
 
 [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]
 
@@ -48,7 +48,7 @@ Par défaut, après avoir séparé le jeu de données et le code du TableAdapter
 
 4. Ajoutez du code à l’intérieur de la déclaration de classe partielle.
 
-5. L’exemple suivant indique où ajouter du code au `CustomersTableAdapter` dans le `NorthwindDataSet`:
+5. L’exemple suivant indique où ajouter du code à `CustomersTableAdapter` dans le `NorthwindDataSet` :
 
     ```vb
     Partial Public Class CustomersTableAdapter
@@ -67,7 +67,7 @@ Par défaut, après avoir séparé le jeu de données et le code du TableAdapter
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Vue d’ensemble des applications de données multiniveaux](../data-tools/n-tier-data-applications-overview.md)
-- [Guide pratique pour ajouter du code à des datasets dans des applications multiniveaux](../data-tools/add-code-to-datasets-in-n-tier-applications.md)
+- [Vue d’ensemble des applications de données multicouches](../data-tools/n-tier-data-applications-overview.md)
+- [Ajouter du code à des jeux de données dans des applications multicouches](../data-tools/add-code-to-datasets-in-n-tier-applications.md)
 - [Créer et configurer des TableAdapters](create-and-configure-tableadapters.md)
 - [Vue d’ensemble de la mise à jour hiérarchique](hierarchical-update.md)

@@ -1,7 +1,7 @@
 ---
 title: Installer la documentation d’aide locale
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - hv_manage
 helpviewer_keywords:
@@ -23,12 +23,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 20755447ccac7f5720bdb2df2a96cd9dbec5b730
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
-ms.translationtype: HT
+ms.openlocfilehash: 70bb90856fb88738bbc82434c47e375ea453fd08
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67824956"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85284904"
 ---
 # <a name="install-and-manage-local-content"></a>Installer et gérer du contenu local
 
@@ -51,7 +51,7 @@ Par défaut, Help Viewer installe le contenu à partir d’un service en ligne M
 
     - Entrez le chemin d’un fichier *.msha* ou l’URL d’un point de terminaison de service.
 
-    - Choisissez le bouton de navigation ( **...** ) pour accéder à un fichier *.msha*.
+    - Choisissez le bouton de navigation (**...**) pour accéder à un fichier *.msha*.
 
     - Dans la liste, choisissez la dernière entrée utilisée.
 

@@ -1,7 +1,7 @@
 ---
 title: Mettre à jour des modèles d’élément de projet existants
 ms.date: 01/02/2018
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - item templates, updating
 - Visual Studio templates, updating
@@ -10,12 +10,12 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: 44f99646330d3c8a75bd94310bc0adf9073f9d49
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: d5d9726ecbf3cb7c403f682aadb197a26b0dc26b
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75591357"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85283916"
 ---
 # <a name="how-to-update-existing-templates"></a>Guide pratique pour mettre à jour des modèles existants
 
@@ -23,21 +23,21 @@ Une fois que vous avez créé un modèle et compressé les fichiers dans un fich
 
 ## <a name="use-the-export-template-wizard"></a>Utiliser l’Assistant Exportation de modèle
 
-Visual Studio fournit un **assistant modèle d’exportation** qui peut être utilisé pour mettre à jour un modèle existant:
+Visual Studio fournit un **Assistant exportation de modèle** qui peut être utilisé pour mettre à jour un modèle existant :
 
-1. Choisissez **File** > **New** > **Project** dans la barre de menu.
+1. Choisissez **fichier**  >  **nouveau**  >  **projet** dans la barre de menus.
 
 1. Sélectionnez le modèle que vous voulez mettre à jour et continuez dans les étapes pour créer le nouveau projet.
 
 1. Modifiez le projet dans Visual Studio. Par exemple, changez le type de sortie ou ajoutez un nouveau fichier au projet.
 
-1. Sur le menu du **projet,** choisissez **Export Template**.
+1. Dans le menu **projet** , choisissez **Exporter le modèle**.
 
     L’Assistant **Exportation de modèle** s’ouvre.
 
 1. Suivez les instructions de l’Assistant pour exporter le modèle en tant que fichier *.zip*.
 
-1. (Facultatif) Placez le fichier *.zip* dans le répertoire suivant : *%USERPROFILE%\Documents\Visual Studio \<version\>\Templates\ProjectTemplates* afin de le rendre disponible pour la sélection. Vous devez effectuer cette étape si vous n’avez pas sélectionné l’option **Importer automatiquement le modèle dans Visual Studio** dans l’**Assistant Exportation de modèle**.
+1. Facultatif Placez le fichier *. zip* dans le répertoire suivant : *%USERPROFILE%\Documents\Visual Studio \<version\> \Templates\ProjectTemplates* pour le rendre disponible pour la sélection. Vous devez effectuer cette étape si vous n’avez pas sélectionné l’option **Importer automatiquement le modèle dans Visual Studio** dans l’**Assistant Exportation de modèle**.
 
 1. Supprimez l’ancien fichier *.zip* du modèle.
 
@@ -47,27 +47,27 @@ Vous pouvez mettre à jour un modèle existant sans utiliser l’**Assistant Exp
 
 ### <a name="to-manually-update-an-existing-template"></a>Pour mettre à jour manuellement un modèle existant
 
-1. Localiser le fichier *.zip* qui contient le modèle. Les modèles de projet utilisateur se trouvent dans *%USERPROFILE%\Documents\Visual Studio \<version\>\Templates\ProjectTemplates*.
+1. Localisez le fichier *. zip* qui contient le modèle. Les modèles de projet utilisateur se trouvent dans *%USERPROFILE%\Documents\Visual Studio \<version\> \Templates\ProjectTemplates*.
 
-1. Extraire le fichier *.zip.*
+1. Extrayez le fichier *. zip* .
 
 1. Modifiez ou supprimez les fichiers modèles actuels ou ajoutez de nouveaux fichiers au modèle.
 
 1. Ouvrez, modifiez et enregistrez le fichier XML *.vstemplate* pour prendre en charge le comportement mis à jour ou les nouveaux fichiers.
 
-    Pour plus d’informations sur le schéma *.vstemplate*, consultez [Informations de référence sur les schémas de modèles Visual Studio (extensibilité)](../extensibility/visual-studio-template-schema-reference.md). Pour plus d’informations sur ce que vous pouvez paramétriser dans les fichiers source, voir [paramètres Template](../ide/template-parameters.md).
+    Pour plus d’informations sur le schéma *.vstemplate*, consultez [Informations de référence sur les schémas de modèles Visual Studio (extensibilité)](../extensibility/visual-studio-template-schema-reference.md). Pour plus d’informations sur ce que vous pouvez paramétrer dans les fichiers sources, consultez [paramètres de modèle](../ide/template-parameters.md).
 
-1. Sélectionnez les fichiers dans votre modèle, et à partir du bon clic ou du menu contextuelle, et choisissez **Envoyer à** > **compressé (zippé) dossier**.
+1. Sélectionnez les fichiers dans votre modèle, puis dans le menu contextuel, cliquez avec le bouton droit et choisissez **Envoyer vers**le  >  **dossier compressé**.
 
-    Les fichiers que vous avez sélectionnés sont compressés dans un fichier *.zip.*
+    Les fichiers que vous avez sélectionnés sont compressés dans un fichier *. zip* .
 
-1. Mettez le nouveau fichier *.zip* dans le même répertoire que l’ancien fichier *.zip.*
+1. Placez le nouveau fichier *. zip* dans le même répertoire que l’ancien fichier *. zip* .
 
-1. Supprimer les fichiers de modèle extraits et l’ancien fichier *.zip* modèle.
+1. Supprimez les fichiers de modèles extraits et l’ancien fichier *. zip* du modèle.
 
 ## <a name="see-also"></a>Voir aussi
 
 - [Personnaliser des modèles](../ide/customizing-project-and-item-templates.md)
-- [Créer des modèles de projets et d’objets](../ide/creating-project-and-item-templates.md)
-- [Référence de schéma de modèle de studio visuel](../extensibility/visual-studio-template-schema-reference.md)
+- [Créer des modèles de projet et d’élément](../ide/creating-project-and-item-templates.md)
+- [Référence du schéma de modèle Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
 - [Paramètres de modèle](../ide/template-parameters.md)
