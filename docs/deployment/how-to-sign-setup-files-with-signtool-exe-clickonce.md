@@ -1,7 +1,7 @@
 ---
-title: 'Procédure : Connexion fichiers d’installation avec SignTool.exe (ClickOnce) | Microsoft Docs'
+title: Comment signer des fichiers d’installation avec SignTool.exe (ClickOnce) | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -18,14 +18,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2f31ebeb18790ddf76c42585868aea8a04547bfb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f9e1911b6e86058b7f078f40fa10ca5e0e4e53c0
+ms.sourcegitcommit: 3f491903e0c10db9a3f3fc0940f7b587fcbf9530
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62928404"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "85382066"
 ---
-# <a name="how-to-sign-setup-files-with-signtoolexe-clickonce"></a>Procédure : Signer des fichiers d’installation avec SignTool.exe (ClickOnce)
+# <a name="how-to-sign-setup-files-with-signtoolexe-clickonce"></a>Guide pratique pour signer des fichiers avec SignTool.exe (ClickOnce)
 Vous pouvez utiliser *SignTool.exe* pour signer un programme d’installation (*setup.exe*). Ce processus aide à garantir que les fichiers falsifiés ne sont pas installés sur les ordinateurs des utilisateurs finaux.
 
  Par défaut, ClickOnce dispose de manifestes signés, ainsi que d'un programme d'installation signé. Toutefois, si vous souhaitez modifier ultérieurement les paramètres du programme d'installation, vous devrez également signer le programme d'installation. Si vous modifiez les paramètres après avoir signé le programme d'installation, la signature sera endommagée.
@@ -38,7 +38,7 @@ Vous pouvez utiliser *SignTool.exe* pour signer un programme d’installation (*
 
 2. Sélectionnez le projet dans **l’Explorateur de solutions**.
 
-3. Dans le menu **Projet**, cliquez sur **Propriétés** de *NomProjet*.
+3. Dans le menu **projet** , cliquez sur **Propriétés**de *NomProjet* .
 
 4. Dans la page **Connexion**, décochez **Signer les manifestes ClickOnce**.
 

@@ -1,7 +1,7 @@
 ---
-title: 'Procédure : Spécifier une Page de publication pour une Application ClickOnce | Microsoft Docs'
+title: Guide pratique pour spécifier une page de publication pour une application ClickOnce | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -17,47 +17,47 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 29d83dd1a232ae1cf0437c1ab6d4662acef2900d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: acf7178a6b5456d048421533b8497682d69c2ee0
+ms.sourcegitcommit: 3f491903e0c10db9a3f3fc0940f7b587fcbf9530
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62928339"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "85381962"
 ---
-# <a name="how-to-specify-a-publish-page-for-a-clickonce-application"></a>Procédure : Spécifier une page de publication pour une application ClickOnce
-Lorsque vous publiez un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] application, une page de Web par défaut (publish.htm) est générée et publiée avec l’application. Cette page contient le nom de l’application, un lien pour installer l’application et/ou les composants requis et un lien vers une rubrique d’aide décrivant [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]. Le **Page Publier** propriété pour votre projet vous permet de spécifier un nom pour la page Web pour votre [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] application.
+# <a name="how-to-specify-a-publish-page-for-a-clickonce-application"></a>Guide pratique pour spécifier une page de publication pour une application ClickOnce
+Lors de la publication d’une [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] application, une page Web par défaut (publish.htm) est générée et publiée avec l’application. Cette page contient le nom de l’application, un lien pour installer l’application et/ou les composants requis, ainsi qu’un lien vers une rubrique d’aide décrivant [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] . La propriété **page de publication** de votre projet vous permet de spécifier un nom pour la page Web de votre [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] application.
 
- Une fois que la page de publication a été spécifiée, la prochaine fois que vous publiez, il sera copié à l’emplacement de publication ; elle ne sera pas remplacée si vous publiez à nouveau. Si vous souhaitez personnaliser l’apparence de la page, vous pouvez le faire sans craindre de perdre vos modifications. Pour plus d'informations, voir [Procédure : Personnaliser la page web par défaut de ClickOnce](../deployment/how-to-customize-the-default-web-page-for-a-clickonce-application.md).
+ Une fois la page de publication spécifiée, la prochaine fois que vous publiez, elle sera copiée dans l’emplacement de publication. elle ne sera pas remplacée si vous publiez à nouveau. Si vous souhaitez personnaliser l’apparence de la page, vous pouvez le faire sans vous soucier de perdre vos modifications. Pour plus d’informations, consultez [Comment : personnaliser la page Web par défaut de ClickOnce](../deployment/how-to-customize-the-default-web-page-for-a-clickonce-application.md).
 
- Le **Page Publier** propriété peut être définie le **Options de publication** boîte de dialogue, accessible à partir de la **publier** volet de la **le Concepteur de projets**.
+ La propriété **page de publication** peut être définie dans la boîte de dialogue Options de **publication** , accessible à partir du volet **publier** du **Concepteur de projet**.
 
 ### <a name="to-specify-a-custom-web-page-for-a-clickonce-application"></a>Pour spécifier une page Web personnalisée pour une application ClickOnce
 
-1. Après avoir sélectionné un projet dans l’ **Explorateur de solutions**, dans le menu **Projet** , cliquez sur **Propriétés**.
+1. Quand un projet est sélectionné dans **Explorateur de solutions**, dans le menu **projet** , cliquez sur **Propriétés**.
 
-2. Sélectionnez le **publier** volet.
+2. Sélectionnez le volet **publier** .
 
-3. Cliquez sur le **Options** bouton pour ouvrir la **Options de publication** boîte de dialogue.
+3. Cliquez sur le bouton **options** pour ouvrir la boîte de dialogue **options de publication** .
 
-4. Cliquez sur **déploiement**.
+4. Cliquez sur **Déploiement**.
 
-5. Dans le **Options de publication** boîte de dialogue zone, assurez-vous que le **page web de déploiement ouverts après la publication** case à cocher est activée (elle doit être sélectionnée par défaut).
+5. Dans la boîte de dialogue **options de publication** , assurez-vous que la case à cocher **ouvrir la page Web de déploiement après la publication** est activée (elle doit être sélectionnée par défaut).
 
-6. Dans le **page web de déploiement** zone, entrez le nom de votre page Web, puis cliquez sur **OK**.
+6. Dans la zone **page Web de déploiement** , entrez le nom de votre page Web, puis cliquez sur **OK**.
 
-### <a name="to-prevent-the-publish-page-from-launching-each-time-you-publish"></a>Pour empêcher le lancement de chaque fois que vous publiez la page de publication
+### <a name="to-prevent-the-publish-page-from-launching-each-time-you-publish"></a>Pour empêcher le lancement de la page de publication chaque fois que vous publiez
 
-1. Après avoir sélectionné un projet dans l’ **Explorateur de solutions**, dans le menu **Projet** , cliquez sur **Propriétés**.
+1. Quand un projet est sélectionné dans **Explorateur de solutions**, dans le menu **projet** , cliquez sur **Propriétés**.
 
-2. Sélectionnez le **publier** volet.
+2. Sélectionnez le volet **publier** .
 
-3. Cliquez sur le **Options** bouton pour ouvrir la **Options de publication** boîte de dialogue.
+3. Cliquez sur le bouton **options** pour ouvrir la boîte de dialogue **options de publication** .
 
-4. Cliquez sur **déploiement**.
+4. Cliquez sur **Déploiement**.
 
-5. Dans le **Options de publication** boîte de dialogue, désactivez le **page web de déploiement ouverts après la publication** case à cocher.
+5. Dans la boîte de dialogue **options de publication** , désactivez la case à cocher **ouvrir la page Web de déploiement après la publication** .
 
 ## <a name="see-also"></a>Voir aussi
 - [Publier des applications ClickOnce](../deployment/publishing-clickonce-applications.md)
-- [Guide pratique pour publier une application ClickOnce à l’aide de l’Assistant Publication](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)
+- [Comment : publier une application ClickOnce à l’aide de l’Assistant Publication](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)
 - [Guide pratique pour personnaliser la page web par défaut de ClickOnce](../deployment/how-to-customize-the-default-web-page-for-a-clickonce-application.md)

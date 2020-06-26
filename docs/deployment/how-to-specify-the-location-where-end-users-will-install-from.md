@@ -1,7 +1,7 @@
 ---
-title: 'Procédure : spécifier l’emplacement à partir duquel les utilisateurs finaux vont installer | Microsoft Docs'
+title: Comment spécifier l’emplacement à partir duquel les utilisateurs finaux vont installer | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -17,32 +17,32 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 993c654ccd16f2d51d86a46a716edd611ae154dd
-ms.sourcegitcommit: bf2e9d4ff38bf5b62b8af3da1e6a183beb899809
+ms.openlocfilehash: e28ad8353858b35fc1c4e83f0511a58b4162dc9d
+ms.sourcegitcommit: 3f491903e0c10db9a3f3fc0940f7b587fcbf9530
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2020
-ms.locfileid: "77557613"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "85381936"
 ---
 # <a name="how-to-specify-the-location-where-end-users-will-install-from"></a>Guide pratique pour spécifier l’emplacement à partir duquel les utilisateurs finaux effectueront l’installation
-Lors de la publication d’une application [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)], l’emplacement où les utilisateurs accèdent au téléchargement et à l’installation de l’application n’est pas nécessairement l’emplacement où vous publiez initialement l’application. Par exemple, dans certaines organisations, un développeur peut publier une application sur un serveur intermédiaire, puis un administrateur déplace l’application vers un serveur Web.
+Lors de la publication d’une [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] application, l’emplacement où les utilisateurs accèdent au téléchargement et à l’installation de l’application n’est pas nécessairement l’emplacement où vous publiez initialement l’application. Par exemple, dans certaines organisations, un développeur peut publier une application sur un serveur intermédiaire, puis un administrateur déplace l’application vers un serveur Web.
 
-Dans ce cas, vous pouvez utiliser la propriété `Installation URL` pour spécifier le serveur Web sur lequel les utilisateurs doivent accéder pour télécharger l’application. Cela est nécessaire pour que le manifeste d’application sache où rechercher les mises à jour.
+Dans ce cas, vous pouvez utiliser la `Installation URL` propriété pour spécifier le serveur Web sur lequel les utilisateurs doivent accéder pour télécharger l’application. Cela est nécessaire pour que le manifeste d’application sache où rechercher les mises à jour.
 
-La propriété `Installation URL` peut être définie sur la page **publier** du **Concepteur de projets**.
+La `Installation URL` propriété peut être définie sur la page **publier** du **Concepteur de projets**.
 
 > [!NOTE]
-> La propriété `Installation URL` peut également être définie à l’aide de **Assistant Publication**. Pour plus d’informations, consultez [Comment : publier une application ClickOnce à l’aide de l’Assistant Publication](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md).
+> La `Installation URL` propriété peut également être définie à l’aide de **Assistant Publication**. Pour plus d’informations, consultez [Comment : publier une application ClickOnce à l’aide de l’Assistant Publication](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md).
 
 ### <a name="to-specify-an-installation-url"></a>Pour spécifier une URL d’installation
 
 1. Après avoir sélectionné un projet dans l’ **Explorateur de solutions**, dans le menu **Projet** , cliquez sur **Propriétés**.
 
-2. Cliquez sur l’onglet **Publier**.
+2. Cliquez sur l'onglet **Publier**.
 
-3. Dans le champ URL d’installation, entrez l’emplacement d’installation à l’aide d’une URL complète au format `https://www.contoso.com/ApplicationName`ou d’un chemin d’accès UNC au format `\Server\ApplicationName`.
+3. Dans le champ URL d’installation, entrez l’emplacement d’installation à l’aide d’une URL complète au format `https://www.contoso.com/ApplicationName` , ou un chemin d’accès UNC utilisant le format `\Server\ApplicationName` .
 
 ## <a name="see-also"></a>Voir aussi
 - [Guide pratique pour spécifier l’endroit où Visual Studio copie les fichiers](../deployment/how-to-specify-where-visual-studio-copies-the-files.md)
 - [Publication d’applications ClickOnce](../deployment/publishing-clickonce-applications.md)
-- [Guide pratique pour publier une application ClickOnce à l’aide de l’Assistant Publication](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)
+- [Comment : publier une application ClickOnce à l’aide de l’Assistant Publication](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)

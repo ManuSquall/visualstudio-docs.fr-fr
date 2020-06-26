@@ -1,19 +1,19 @@
 ---
-title: 'Comment : inclure des composants requis avec une application ClickOnce | Microsoft Docs'
+title: Comment inclure les composants requis avec une application ClickOnce | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 ms.assetid: c66bf0a5-8c93-4e68-a224-3b29ac36fe4d
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 94ed90b9fcdd0c4ffe35789d00de4bbbd4aaa355
-ms.sourcegitcommit: bf2e9d4ff38bf5b62b8af3da1e6a183beb899809
+ms.openlocfilehash: 957b375a3f3a00e653118b59c48b7233197c30ca
+ms.sourcegitcommit: 3f491903e0c10db9a3f3fc0940f7b587fcbf9530
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2020
-ms.locfileid: "77557631"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "85382391"
 ---
 # <a name="how-to-include-prerequisites-with-a-clickonce-application"></a>Guide pratique pour inclure les composants requis avec une application ClickOnce
 Avant de distribuer les logiciels requis avec une application [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)], vous devez d'abord télécharger les packages d'installation de ces composants requis sur votre ordinateur de développement. Quand vous publiez une application et que vous choisissez **Télécharger les composants requis à partir de l’emplacement de mon application**, une erreur se produit lorsque les packages d’installation ne sont pas dans le dossier **Packages**.
@@ -21,20 +21,20 @@ Avant de distribuer les logiciels requis avec une application [!INCLUDE[ndpteccl
 > [!NOTE]
 > Pour ajouter un package d’installation pour le .NET Framework, consultez [Guide de déploiement .NET Framework pour les développeurs](/dotnet/framework/deployment/deployment-guide-for-developers).
 
-## <a name="Package"></a> Pour ajouter un package d’installation à l’aide de Package.xml
+## <a name="to-add-an-installer-package-by-using-packagexml"></a><a name="Package"></a> Pour ajouter un package d’installation à l’aide de Package.xml
 
 1. Dans l’Explorateur de fichiers, ouvrez le dossier **Packages**.
 
-    Par défaut, le chemin d’accès est `%ProgramFiles(x86)%\Microsoft SDKs\ClickOnce Bootstrapper\Packages\`.
+    Par défaut, le chemin d’accès est `%ProgramFiles(x86)%\Microsoft SDKs\ClickOnce Bootstrapper\Packages\` .
 
 2. Ouvrez le dossier des composants prérequis que vous voulez ajouter, puis ouvrez le dossier de langage de votre version installée de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] (par exemple, **fr** pour le français).
 
 3. Dans le Bloc-notes, ouvrez le fichier *Package.xml*.
 
-4. Localisez l’élément **Name** qui contient `http://go.microsoft.com/fwlink`, puis copiez l’URL. Incluez la partie **LinkID**.
+4. Localisez l’élément **Name** qui contient `http://go.microsoft.com/fwlink` et copiez l’URL. Incluez la partie **LinkID**.
 
    > [!NOTE]
-   > Si aucun élément **Name** ne contient `http://go.microsoft.com/fwlink`, ouvrez le fichier **Product. xml** dans le dossier racine pour le composant requis et recherchez la chaîne **fwlink** .
+   > Si aucun élément **Name** ne contient `http://go.microsoft.com/fwlink` , ouvrez le fichier **Product.xml** dans le dossier racine pour le composant requis et recherchez la chaîne **fwlink** .
 
    > [!IMPORTANT]
    > Certains composants requis ont plusieurs packages d'installation (par exemple, pour les systèmes 32 bits ou 64 bits). Si plusieurs éléments **Name** contiennent **fwlink**, vous devez répéter les étapes restantes pour chacun d’entre eux.
@@ -45,7 +45,7 @@ Avant de distribuer les logiciels requis avec une application [!INCLUDE[ndpteccl
 
 6. Copiez le fichier dans le dossier racine du composant requis.
 
-    Par exemple, pour les composants requis de Windows Installer 4.5, copiez le fichier dans le dossier *\Packages\WindowsInstaller4_5*.
+    Par exemple, pour la condition préalable Windows Installer 4,5, copiez le fichier dans le dossier *\packages\ WindowsInstaller4_5* .
 
     Vous pouvez maintenant distribuer le package d'installation avec votre application.
 

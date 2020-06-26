@@ -1,7 +1,7 @@
 ---
-title: 'Procédure : Créer un manifeste de Package | Microsoft Docs'
+title: Comment créer un manifeste de package | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - FSharp
 - VB
@@ -18,29 +18,29 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d8083ca9a8d3025b1760edde96279a0cd557f722
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: dc3a1263136fe4c50b2c7020e1557a7a693691b6
+ms.sourcegitcommit: 3f491903e0c10db9a3f3fc0940f7b587fcbf9530
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62899738"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "85382521"
 ---
-# <a name="how-to-create-a-package-manifest"></a>Procédure : Créer un manifeste de package
-Pour déployer les composants requis pour votre application, vous pouvez utiliser un package de programme d’amorçage. Un package de programme d’amorçage contient un fichier de manifeste de produit unique, mais un manifeste de package pour chacun des paramètres régionaux. Les fonctionnalités partagées entre les différentes versions localisées doit être placé dans le manifeste de produit.
+# <a name="how-to-create-a-package-manifest"></a>Guide pratique pour créer un manifeste de package
+Pour déployer les composants requis pour votre application, vous pouvez utiliser un package du programme d’amorçage. Un package du programme d’amorçage contient un fichier manifeste de produit unique, mais un manifeste de package pour chaque paramètre régional. Les fonctionnalités partagées entre différentes versions localisées doivent être placées dans le manifeste du produit.
 
- Pour plus d’informations sur les manifestes de produit, consultez [Comment : Créer un manifeste de produit](../deployment/how-to-create-a-product-manifest.md).
+ Pour plus d’informations sur les manifestes de produit, consultez [Comment : créer un manifeste de produit](../deployment/how-to-create-a-product-manifest.md).
 
 ## <a name="create-the-package-manifest"></a>Créer le manifeste du package
 
 #### <a name="to-create-the-package-manifest"></a>Pour créer le manifeste du package
 
-1. Créez un répertoire pour le package de programme d’amorçage. Cet exemple utilise *C:\package*.
+1. Créez un répertoire pour le package du programme d’amorçage. Cet exemple utilise *C:\package*.
 
-2. Créez un sous-répertoire avec le nom des paramètres régionaux, telles que *en* pour l’anglais.
+2. Créez un sous-répertoire avec le nom des paramètres régionaux *, par exemple en pour* l’anglais.
 
-3. Dans Visual Studio, créez un fichier XML nommé *package.xml*et enregistrez-le dans le *C:\package\en* dossier.
+3. Dans Visual Studio, créez un fichier XML nommé *package.xml*, puis enregistrez-le dans le dossier *C:\package\en*
 
-4. Ajoutez du code XML pour répertorier le nom du package du programme d’amorçage, la culture pour ce manifeste de package localisé et le contrat de licence facultatif. Le code XML suivant utilise les variables `DisplayName` et `Culture`, qui sont définies dans un élément ultérieur.
+4. Ajoutez XML pour répertorier le nom du package du programme d’amorçage, la culture pour ce manifeste du package localisé et le contrat de licence facultatif. Le code XML suivant utilise les variables `DisplayName` et `Culture` , qui sont définies dans un élément ultérieur.
 
     ```xml
     <Package
@@ -50,7 +50,7 @@ Pour déployer les composants requis pour votre application, vous pouvez utilise
         LicenseAgreement="eula.txt">
     ```
 
-5. Ajoutez du code XML pour répertorier tous les fichiers qui se trouvent dans le répertoire de paramètres régionaux spécifiques. Le code XML suivant utilise un fichier nommé *eula.txt* qui s’applique à la **en** paramètres régionaux.
+5. Ajoutez XML pour répertorier tous les fichiers qui se trouvent dans le répertoire spécifique aux paramètres régionaux. Le code XML suivant utilise un fichier nommé *eula.txt* qui s’applique **aux paramètres régionaux** .
 
     ```xml
     <PackageFiles>
@@ -58,7 +58,7 @@ Pour déployer les composants requis pour votre application, vous pouvez utilise
     </PackageFiles>
     ```
 
-6. Ajoutez le code XML pour définir des chaînes localisables pour le package de programme d’amorçage. Le code XML suivant ajoute des chaînes d’erreur pour le **en** paramètres régionaux.
+6. Ajoutez XML pour définir des chaînes localisables pour le package du programme d’amorçage. Le code XML suivant ajoute des chaînes d’erreur **pour les paramètres** régionaux.
 
     ```xml
       <Strings>
@@ -71,10 +71,10 @@ Pour déployer les composants requis pour votre application, vous pouvez utilise
     </Strings>
     ```
 
-7. Copie le *C:\package* dossier dans le répertoire du programme d’amorçage de Visual Studio. Pour Visual Studio 2010, il s’agit du *\Program Files\Microsoft SDKs\Windows\v7.0A\Bootstrapper\Packages* directory.
+7. Copiez le dossier *C:\package* dans le répertoire du programme d’amorçage de Visual Studio. Pour Visual Studio 2010, il s’agit du répertoire *\Program Files\Microsoft SDKs\Windows\v7.0A\Bootstrapper\Packages*
 
 ## <a name="example"></a>Exemple
- Le manifeste du package contient des informations de paramètres régionaux spécifiques, tels que les messages d’erreur, les termes du contrat de licence de logiciel et les modules linguistiques.
+ Le manifeste du package contient des informations spécifiques aux paramètres régionaux, telles que les messages d’erreur, les termes du contrat de licence logiciel et les modules linguistiques.
 
 ```xml
 <?xml version="1.0" encoding="utf-8" ?>
@@ -99,4 +99,4 @@ installing this package.</String>
 ```
 
 ## <a name="see-also"></a>Voir aussi
-- [Informations de référence sur le schéma de produit et de package](../deployment/product-and-package-schema-reference.md)
+- [Référence du schéma de produit et de package](../deployment/product-and-package-schema-reference.md)

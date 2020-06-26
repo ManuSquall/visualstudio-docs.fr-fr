@@ -1,7 +1,7 @@
 ---
-title: 'Procédure : Définir une Zone de sécurité pour une Application ClickOnce | Microsoft Docs'
+title: Comment définir une zone de sécurité pour une application ClickOnce | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -16,23 +16,23 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 31a61dd337fce614c1271f994a42ec90f3be8acb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 51515339c24ea8a0507c47d0399cde9e423f71a0
+ms.sourcegitcommit: 3f491903e0c10db9a3f3fc0940f7b587fcbf9530
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62898387"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "85382131"
 ---
-# <a name="how-to-set-a-security-zone-for-a-clickonce-application"></a>Procédure : Définir une zone de sécurité pour une application ClickOnce
+# <a name="how-to-set-a-security-zone-for-a-clickonce-application"></a>Guide pratique pour définir une zone de sécurité pour une application ClickOnce
 Quand vous définissez des autorisations de sécurité d’accès du code pour une application ClickOnce, vous devez d’abord définir un ensemble d’autorisations de base dans la page **Sécurité** du **Concepteur de projet**.
 
- Dans la plupart des cas, vous pouvez aussi sélectionner la zone **Internet** qui contient un ensemble limité d’autorisations, ou la zone **Intranet local** qui fournit un ensemble plus complet d’autorisations. Si votre application nécessite des autorisations personnalisées, sélectionnez la zone de sécurité **Personnalisée** pour les définir. Pour plus d’informations sur la définition d’autorisations personnalisées, consultez [Comment : Définir des autorisations personnalisées pour une Application ClickOnce](../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md).
+ Dans la plupart des cas, vous pouvez aussi sélectionner la zone **Internet** qui contient un ensemble limité d’autorisations, ou la zone **Intranet local** qui fournit un ensemble plus complet d’autorisations. Si votre application nécessite des autorisations personnalisées, sélectionnez la zone de sécurité **Personnalisée** pour les définir. Pour plus d’informations sur la définition d’autorisations personnalisées, consultez [How to: Set Custom Permissions for a ClickOnce Application](../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md).
 
 ### <a name="to-set-a-security-zone"></a>Pour définir une zone de sécurité
 
-1. Après avoir sélectionné un projet dans l’ **Explorateur de solutions**, dans le menu **Projet** , cliquez sur **Propriétés**.
+1. Quand un projet est sélectionné dans **Explorateur de solutions**, dans le menu **projet** , cliquez sur **Propriétés**.
 
-2. Cliquez sur l'onglet **Sécurité** .
+2. Cliquez sur l’onglet **Sécurité**.
 
 3. Cochez la case **Activer les paramètres de sécurité ClickOnce** .
 
@@ -43,6 +43,6 @@ Quand vous définissez des autorisations de sécurité d’accès du code pour u
 5. Dans la liste déroulante **Zone à partir de laquelle votre application sera installée** , sélectionnez une zone de sécurité.
 
 ## <a name="see-also"></a>Voir aussi
-- [Guide pratique pour Définir des autorisations personnalisées pour une application ClickOnce](../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md)
+- [Guide pratique pour définir des autorisations personnalisées pour une application ClickOnce](../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md)
 - [Sécuriser des applications ClickOnce](../deployment/securing-clickonce-applications.md)
 - [Sécurité d’accès du code pour les applications ClickOnce](../deployment/code-access-security-for-clickonce-applications.md)

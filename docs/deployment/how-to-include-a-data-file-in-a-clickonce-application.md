@@ -1,7 +1,7 @@
 ---
-title: 'Procédure : Inclure un fichier de données dans une Application ClickOnce | Microsoft Docs'
+title: Guide pratique pour inclure un fichier de données dans une application ClickOnce | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -16,41 +16,41 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fd2db09937ad76c0ea4c990fcdba5c34a0f8f66c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7630d1b363afa7caeae361f607f4b73929fbba1b
+ms.sourcegitcommit: 3f491903e0c10db9a3f3fc0940f7b587fcbf9530
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62898634"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "85382404"
 ---
-# <a name="how-to-include-a-data-file-in-a-clickonce-application"></a>Procédure : Inclure un fichier de données dans une application ClickOnce
-Chaque [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] application que vous installez est affectée à un répertoire de données sur le disque local de l’ordinateur de destination dans lequel l’application peut gérer ses propres données. Fichiers de données peuvent inclure n’importe quel type de fichiers : fichiers texte, fichiers XML ou même base de données Microsoft Access (*.mdb*) les fichiers. Les procédures suivantes vous montrent comment ajouter un fichier de données de n’importe quel type dans votre [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] application.
+# <a name="how-to-include-a-data-file-in-a-clickonce-application"></a>Guide pratique pour inclure un fichier de données dans une application ClickOnce
+Chaque [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] application que vous installez se voit attribuer un répertoire de données sur le disque local de l’ordinateur de destination, où l’application peut gérer ses propres données. Les fichiers de données peuvent inclure des fichiers de n’importe quel type : fichiers texte, fichiers XML ou même fichiers de base de données Microsoft Access (*. mdb*). Les procédures suivantes vous montrent comment ajouter un fichier de données de n’importe quel type dans votre [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] application.
 
 ### <a name="to-include-a-data-file-by-using-mageexe"></a>Pour inclure un fichier de données à l’aide de Mage.exe
 
-1. Ajouter le fichier de données à votre répertoire de l’application avec le reste des fichiers de votre application.
+1. Ajoutez le fichier de données à votre répertoire d’application avec le reste des fichiers de votre application.
 
-    En règle générale, le répertoire de votre application sera un répertoire étiqueté avec la version actuelle du déploiement, par exemple, v1.0.0.0.
+    En règle générale, le répertoire de votre application est un répertoire étiqueté avec la version actuelle du déploiement, par exemple, v 1.0.0.0.
 
-2. Mettre à jour votre manifeste d’application vers le fichier de données de liste.
+2. Mettez à jour le manifeste de votre application pour répertorier le fichier de données.
 
     `mage -u v1.0.0.0\Application.manifest -FromDirectory v1.0.0.0`
 
-    Pour effectuer cette tâche permet de recréer la liste des fichiers dans votre manifeste d’application et génère aussi automatiquement les signatures de hachage.
+    Cette tâche permet de recréer la liste des fichiers dans le manifeste de votre application et de générer automatiquement les signatures de hachage.
 
-3. Ouvrez le manifeste d’application dans votre texte favori ou votre éditeur XML et recherchez le `file` élément pour votre fichier récemment ajouté.
+3. Ouvrez le manifeste de l’application dans votre éditeur de texte ou XML préféré et recherchez l' `file` élément correspondant à votre fichier récemment ajouté.
 
-    Si vous avez ajouté un fichier XML nommé `Data.xml`, le fichier doit ressembler à l’exemple de code suivant.
+    Si vous avez ajouté un fichier XML nommé `Data.xml` , le fichier doit ressembler à l’exemple de code suivant.
 
    `<file name="Data.xml" hash="23454C18A2DC1D23E5B391FEE299B1F235067C59" hashalg="SHA1" asmv2:size="39500" />`
 
-4. Ajoutez l’attribut `type` à cet élément et lui fournir une valeur de `data`.
+4. Ajoutez l’attribut `type` à cet élément et fournissez-lui la valeur `data` .
 
    `<file name="Data.xml" writeableType="applicationData" hash="23454C18A2DC1D23E5B391FEE299B1F235067C59" hashalg="SHA1" asmv2:size="39500" />`
 
-5. Signer à nouveau votre manifeste d’application à l’aide de votre paire de clés ou un certificat et signer à nouveau votre manifeste de déploiement.
+5. Signez à nouveau votre manifeste d’application à l’aide de votre paire de clés ou certificat, puis resignez votre manifeste de déploiement.
 
-    Vous devez resigner votre manifeste de déploiement, car son hachage du manifeste d’application a changé.
+    Vous devez signer à nouveau votre manifeste de déploiement, car son hachage du manifeste de l’application a changé.
 
     `mage -s app manifest -cf cert_file -pwd password`
 
@@ -60,27 +60,27 @@ Chaque [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] applica
 
 ### <a name="to-include-a-data-file-by-using-mageuiexe"></a>Pour inclure un fichier de données à l’aide de MageUI.exe
 
-1. Ajouter le fichier de données à votre répertoire de l’application avec le reste des fichiers de votre application.
+1. Ajoutez le fichier de données à votre répertoire d’application avec le reste des fichiers de votre application.
 
-2. En règle générale, le répertoire de votre application sera un répertoire étiqueté avec la version actuelle du déploiement, par exemple, v1.0.0.0.
+2. En règle générale, le répertoire de votre application est un répertoire étiqueté avec la version actuelle du déploiement, par exemple, v 1.0.0.0.
 
-3. Sur le **fichier** menu, cliquez sur **ouvrir** pour ouvrir votre manifeste d’application.
+3. Dans le menu **fichier** , cliquez sur **ouvrir** pour ouvrir le manifeste de votre application.
 
-4. Sélectionnez le **fichiers** onglet.
+4. Sélectionnez l’onglet **fichiers** .
 
-5. Dans la zone de texte en haut de l’onglet, entrez le répertoire qui contient les fichiers de votre application, puis cliquez sur **Populate**.
+5. Dans la zone de texte en haut de l’onglet, entrez le répertoire qui contient les fichiers de votre application, puis cliquez sur **remplir**.
 
      Votre fichier de données s’affiche dans la grille.
 
-6. Définir le **Type de fichier** valeur du fichier de données à **données**.
+6. Définissez la valeur de **type de fichier** du fichier de données sur **données**.
 
-7. Enregistrez le manifeste d’application et signer à nouveau le fichier.
+7. Enregistrez le manifeste de l’application, puis signez à nouveau le fichier.
 
-     *MageUI.exe* vous invite à resigner le fichier.
+     *MageUI.exe* vous invite à signer à nouveau le fichier.
 
 8. Signer à nouveau votre manifeste de déploiement
 
-     Vous devez resigner votre manifeste de déploiement, car son hachage du manifeste d’application a changé.
+     Vous devez signer à nouveau votre manifeste de déploiement, car son hachage du manifeste de l’application a changé.
 
 ## <a name="see-also"></a>Voir aussi
 - [Accéder aux données locales et distantes dans les applications ClickOnce](../deployment/accessing-local-and-remote-data-in-clickonce-applications.md)

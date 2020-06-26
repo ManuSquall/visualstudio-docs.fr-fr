@@ -1,8 +1,8 @@
 ---
-title: Indiquez où copier les fichiers | Microsoft Docs
+title: Spécifier l’emplacement de copie des fichiers | Microsoft Docs
 ms.custom: seodec18
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -16,17 +16,17 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ec54a2d3150b0e8e11b19d2ca739324d7388f1f0
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: f0618a6e0b74c16efaaf8a70b7b8745e0f3dd142
+ms.sourcegitcommit: 3f491903e0c10db9a3f3fc0940f7b587fcbf9530
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63407651"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "85381715"
 ---
-# <a name="how-to-specify-where-visual-studio-copies-the-files"></a>Procédure : spécifier l’endroit où Visual Studio copie les fichiers
+# <a name="how-to-specify-where-visual-studio-copies-the-files"></a>Guide pratique pour spécifier l’endroit où Visual Studio copie les fichiers
 Quand vous publiez une application à l'aide de ClickOnce, la propriété `Publish Location` indique l'emplacement de destination des fichiers d'application et du manifeste. Il peut s'agir d'un chemin d'accès de fichier ou du chemin d'accès à un serveur FTP.
 
- Vous pouvez spécifier la propriété `Publish Location` dans la page **Publier** du **Concepteur de projets** ou en utilisant l’Assistant Publication. Pour plus d'informations, voir [Procédure : publier une application ClickOnce à l’aide de l’Assistant Publication](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md).
+ Vous pouvez spécifier la propriété `Publish Location` dans la page **Publier** du **Concepteur de projets** ou en utilisant l’Assistant Publication. Pour plus d’informations, consultez [Comment : publier une application ClickOnce à l’aide de l’Assistant Publication](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md).
 
 > [!NOTE]
 > Quand vous installez plusieurs versions d'une application via ClickOnce, l'installation déplace les versions antérieures de cette application dans un dossier nommé Archive, à l'emplacement de publication que vous avez spécifié. Cet archivage permet d’éviter la présence de dossiers de la version précédente dans le répertoire d’installation.
@@ -35,16 +35,16 @@ Quand vous publiez une application à l'aide de ClickOnce, la propriété `Publi
 
 1. Après avoir sélectionné un projet dans l’ **Explorateur de solutions**, dans le menu **Projet** , cliquez sur **Propriétés**.
 
-2. Cliquez sur l’onglet **Publier**.
+2. Cliquez sur l'onglet **Publier**.
 
 3. Dans le champ **Emplacement de publication**, entrez l’emplacement de publication dans l’un des formats suivants :
 
-   - Pour publier vers un partage de fichiers ou un chemin de disque, entrez le chemin sous forme de chemin UNC (*\\\Serveur\Nom_application*) ou de chemin de fichier (*C:\Déploiement\Nom_application*).
+   - Pour publier sur un partage de fichiers ou un chemin d’accès de disque, entrez le chemin d’accès UNC (* \\ \Server\ApplicationName*) ou un chemin d’accès de fichier (*C:\Deploy\ApplicationName*).
 
-   - Pour publier vers un serveur FTP, entrez le chemin dans le format suivant : <em>ftp://ftp.microsoft.com/\<Nom_application></em>.
+   - Pour publier sur un serveur FTP, entrez le chemin d’accès au <em>format \<ApplicationName> ftp://ftp.Microsoft.com/</em>.
 
-     Notez que du texte doit figurer dans la zone **Emplacement de publication** pour que le bouton Parcourir (**...**) fonctionne.
+     Notez que le texte doit être présent dans la zone **emplacement de publication** pour que le bouton de navigation (**...**) fonctionne.
 
 ## <a name="see-also"></a>Voir aussi
 - [Publication d’applications ClickOnce](../deployment/publishing-clickonce-applications.md)
-- [Guide pratique pour publier une application ClickOnce à l’aide de l’Assistant Publication](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)
+- [Comment : publier une application ClickOnce à l’aide de l’Assistant Publication](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)
