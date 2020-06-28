@@ -1,7 +1,7 @@
 ---
 title: IDiaSymbol::get_isSplitted | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9511551a2f3530adc14bee0f6eec3cf360b41c03
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 2c2bae3d054aa8e331db3a345743e4f0e9c20b49
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72740053"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85463175"
 ---
 # <a name="idiasymbolget_issplitted"></a>IDiaSymbol::get_isSplitted
 Récupère un indicateur qui spécifie si le symbole de données a été fractionné en une agrégation ou une collection d’autres symboles. le compilateur traite les symboles comme des entités distinctes, même s’ils font vraiment partie d’un plus grand symbole.
@@ -33,23 +33,23 @@ HRESULT get_isSplitted(
 #### <a name="parameters"></a>Paramètres
  `pFlag`
 
-à Retourne `TRUE` si le symbole a été fractionné en un agrégat de symboles ; Sinon, retourne `FALSE`.
+à Retourne `TRUE` si le symbole a été fractionné en un agrégat de symboles ; sinon, retourne `FALSE` .
 
-## <a name="return-value"></a>Valeur de retour
- En cas de réussite, retourne `S_OK` ; Sinon, retourne `S_FALSE` ou un code d’erreur.
+## <a name="return-value"></a>Valeur renvoyée
+ En cas de réussite, retourne `S_OK` ; sinon, retourne `S_FALSE` ou code d’erreur.
 
 > [!NOTE]
-> Une valeur de retour de `S_FALSE` signifie que la propriété n’est pas disponible pour le symbole.
+> Une valeur de retour `S_FALSE` signifie que la propriété n’est pas disponible pour le symbole.
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
  La méthode [IDiaSymbol :: get_isAggregated](../../debugger/debug-interface-access/idiasymbol-get-isaggregated.md) retourne `TRUE` pour tous les symboles qui font partie d’un symbole de fractionnement.
 
-## <a name="requirements"></a>spécifications
+## <a name="requirements"></a>Configuration requise
 
-|Exigence|Description|
+|Condition requise|Description|
 |-----------------|-----------------|
 |En-tête :|dia2.h|
-|Version :|DIA SDK v 8.0|
+|Version :|DIA SDK v 8.0|
 
 ## <a name="see-also"></a>Voir aussi
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

@@ -1,7 +1,7 @@
 ---
 title: Block | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -14,20 +14,20 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c39c69900859957f0d0746c688334f31c8419d5f
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 45e1d97c694806857d9ee7920e6d4fd640db4582
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72745472"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85462266"
 ---
-# <a name="block"></a>Bloc
-Chaque bloc de code est identifié par un symbole de `SymTagBlock`. Les symboles de bloc sont utilisés pour identifier les étendues imbriquées dans les fonctions.
+# <a name="block"></a>Bloquer
+Chaque bloc de code est identifié par un `SymTagBlock` symbole. Les symboles de bloc sont utilisés pour identifier les étendues imbriquées dans les fonctions.
 
 ## <a name="properties"></a>Propriétés
  Le tableau suivant présente les propriétés qui sont valides pour ce type de symbole.
 
-|Property|Type de données|Description|
+|Propriété|Type de données|Description|
 |--------------|---------------|-----------------|
 |[IDiaSymbol::get_addressOffset](../../debugger/debug-interface-access/idiasymbol-get-addressoffset.md)|`DWORD`|Partie décalage de l’emplacement ; Pour plus d’informations, consultez l' [énumération LocationType (](../../debugger/debug-interface-access/locationtype.md).|
 |[IDiaSymbol::get_addressSection](../../debugger/debug-interface-access/idiasymbol-get-addresssection.md)|`DWORD`|Partie section de l’emplacement ; Pour plus d’informations, consultez l' [énumération LocationType (](../../debugger/debug-interface-access/locationtype.md).|

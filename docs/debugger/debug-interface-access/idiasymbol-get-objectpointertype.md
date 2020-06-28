@@ -1,7 +1,7 @@
 ---
 title: IDiaSymbol::get_objectPointerType | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e4254a121ce29578438f4ee7264345aa30bafd7e
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 1ae9ce8d655d9229b5e9c9f547b0dade6ad503e6
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72739622"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85462685"
 ---
 # <a name="idiasymbolget_objectpointertype"></a>IDiaSymbol::get_objectPointerType
 Récupère le type du pointeur d’objet pour une méthode de classe.
@@ -35,14 +35,14 @@ HRESULT get_objectPointerType ( 
 
 à Retourne un objet [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) qui représente le pointeur d’objet pour une méthode de classe.
 
-## <a name="return-value"></a>Valeur de retour
- En cas de réussite, retourne `S_OK` ; Sinon, retourne `S_FALSE` ou un code d’erreur.
+## <a name="return-value"></a>Valeur renvoyée
+ En cas de réussite, retourne `S_OK` ; sinon, retourne `S_FALSE` ou un code d’erreur.
 
 > [!NOTE]
-> Une valeur de retour de `S_FALSE` signifie que la propriété n’est pas disponible pour le symbole.
+> Une valeur de retour `S_FALSE` signifie que la propriété n’est pas disponible pour le symbole.
 
-## <a name="remarks"></a>Notes
- Cette propriété s’applique uniquement aux symboles avec un type d' [énumération SymTagEnum](../../debugger/debug-interface-access/symtagenum.md) de `SymTagFunctionType`.
+## <a name="remarks"></a>Remarques
+ Cette propriété s’applique uniquement aux symboles dont le type d' [énumération SymTagEnum](../../debugger/debug-interface-access/symtagenum.md) est `SymTagFunctionType` .
 
 ## <a name="see-also"></a>Voir aussi
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

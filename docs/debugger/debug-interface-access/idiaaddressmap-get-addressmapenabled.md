@@ -1,7 +1,7 @@
 ---
 title: IDiaAddressMap::get_addressMapEnabled | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b518cf3728279ea8db267d01867fa66ceae35b21
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: e23f5752229ece7ecac02362c294bc661d109039
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72745177"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85468594"
 ---
 # <a name="idiaaddressmapget_addressmapenabled"></a>IDiaAddressMap::get_addressMapEnabled
 Indique si un mappage d’adresses a été établi pour une session particulière.
@@ -35,13 +35,13 @@ HRESULT get_addressMapEnabled ( 
 
 à Retourne `TRUE` si le mappage d’adresse est activé.
 
-## <a name="return-value"></a>Valeur de retour
- En cas de réussite, retourne `S_OK` ; Sinon, retourne un code d’erreur.
+## <a name="return-value"></a>Valeur renvoyée
+ En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
  Les après-processeurs exécutables mettent parfois à jour l’exécutable. DIA contient un mécanisme qui permet de prendre en charge la traduction de symboles vers la nouvelle disposition.
 
- Les applications clientes peuvent définir le mappage d’adresses pour une session particulière en obtenant l’interface [IDiaAddressMap](../../debugger/debug-interface-access/idiaaddressmap.md) à partir de l’interface [IDiaSession](../../debugger/debug-interface-access/idiasession.md) et en appelant la méthode [IDiaAddressMap :: set_addressMap](../../debugger/debug-interface-access/idiaaddressmap-set-addressmap.md) suivie d’un appel à la [méthode IDiaAddressMap ::p méthode ut_addressMapEnabled](../../debugger/debug-interface-access/idiaaddressmap-put-addressmapenabled.md) . La méthode `get_addressMapEnabled` retourne les résultats de l’appel de la méthode `put_addressMapEnabled`.
+ Les applications clientes peuvent définir le mappage d’adresses pour une session particulière en obtenant l’interface [IDiaAddressMap](../../debugger/debug-interface-access/idiaaddressmap.md) à partir de l’interface [IDiaSession](../../debugger/debug-interface-access/idiasession.md) et en appelant la méthode [IDiaAddressMap :: set_addressMap](../../debugger/debug-interface-access/idiaaddressmap-set-addressmap.md) suivie d’un appel à la méthode [IDiaAddressMap ::p ut_addressMapEnabled](../../debugger/debug-interface-access/idiaaddressmap-put-addressmapenabled.md) . La `get_addressMapEnabled` méthode retourne les résultats de l’appel de la `put_addressMapEnabled` méthode.
 
 ## <a name="see-also"></a>Voir aussi
 - [IDiaAddressMap](../../debugger/debug-interface-access/idiaaddressmap.md)

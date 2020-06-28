@@ -1,7 +1,7 @@
 ---
 title: IDiaDataSource::loadDataFromIStream | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b2bcf657b4404ed72059351175d124a9c07abb46
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 7a6a19d926ead4c2c38ff69544311caa1f726b3e
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72744950"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85468510"
 ---
 # <a name="idiadatasourceloaddatafromistream"></a>IDiaDataSource::loadDataFromIStream
 Prépare les données de débogage stockées dans un fichier de base de données du programme (. pdb) accessible via un flux de données en mémoire.
@@ -33,19 +33,19 @@ HRESULT loadDataFromIStream ( 
 #### <a name="parameters"></a>Paramètres
  pIStream
 
-dans Objet <xref:IStream> représentant le flux de données à utiliser.
+dans <xref:IStream>Objet représentant le flux de données à utiliser.
 
-## <a name="return-value"></a>Valeur de retour
- En cas de réussite, retourne `S_OK` ; Sinon, retourne un code d’erreur. Le tableau suivant indique les valeurs de retour possibles pour cette méthode.
+## <a name="return-value"></a>Valeur renvoyée
+ En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur. Le tableau suivant indique les valeurs de retour possibles pour cette méthode.
 
-|valeur|Description|
+|Valeur|Description|
 |-----------|-----------------|
 |E_PDB_FORMAT|Tentative d’accès à un fichier avec un format obsolète.|
 |E_INVALIDARG|Paramètre non valide.|
 |E_UNEXPECTED|La source de données a déjà été préparée.|
 
-## <a name="remarks"></a>Notes
- Cette méthode permet d’obtenir les données de débogage d’un fichier exécutable à partir de la mémoire via un objet <xref:IStream>.
+## <a name="remarks"></a>Remarques
+ Cette méthode permet d’obtenir les données de débogage d’un fichier exécutable à partir de la mémoire via un <xref:IStream> objet.
 
  Pour charger un fichier. pdb sans validation, utilisez la méthode [IDiaDataSource :: loadDataFromPdb](../../debugger/debug-interface-access/idiadatasource-loaddatafrompdb.md) .
 

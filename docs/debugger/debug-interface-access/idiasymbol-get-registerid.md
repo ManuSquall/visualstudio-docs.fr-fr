@@ -1,7 +1,7 @@
 ---
 title: IDiaSymbol::get_registerId | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6ffd349b56c4292de04d5d7a38e82eeafed6775e
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: f252d02a137ada627c0c546e1f1ac79118f76de9
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72739468"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85462475"
 ---
 # <a name="idiasymbolget_registerid"></a>IDiaSymbol::get_registerId
-Récupère l’indicateur de registre de l’emplacement lorsque l' [énumération LocationType (](../../debugger/debug-interface-access/locationtype.md) a la valeur `LocIsEnregistered`.
+Récupère l’indicateur de registre de l’emplacement lorsque l' [énumération LocationType (](../../debugger/debug-interface-access/locationtype.md) a la valeur `LocIsEnregistered` .
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -35,14 +35,14 @@ HRESULT get_registerId ( 
 
 à Retourne l’indicateur de registre de l’emplacement.
 
-## <a name="return-value"></a>Valeur de retour
- En cas de réussite, retourne `S_OK` ; Sinon, retourne `S_FALSE` ou un code d’erreur.
+## <a name="return-value"></a>Valeur renvoyée
+ En cas de réussite, retourne `S_OK` ; sinon, retourne `S_FALSE` ou un code d’erreur.
 
 > [!NOTE]
-> Une valeur de retour de `S_FALSE` signifie que la propriété n’est pas disponible pour le symbole.
+> Une valeur de retour `S_FALSE` signifie que la propriété n’est pas disponible pour le symbole.
 
-## <a name="remarks"></a>Notes
- Si le symbole est relatif à un registre, autrement dit, si l' [énumération LocationType (](../../debugger/debug-interface-access/locationtype.md) du symbole est définie sur `LocIsRegRel`, utilisez la méthode `get_registerId` suivie d’un appel à la méthode [IDiaSymbol :: get_Offset](../../debugger/debug-interface-access/idiasymbol-get-offset.md) pour obtenir le décalage à partir du registre où le symbole est trouvées.
+## <a name="remarks"></a>Remarques
+ Si le symbole est relatif à un registre, autrement dit, si l' [énumération LocationType (](../../debugger/debug-interface-access/locationtype.md) du symbole est définie sur `LocIsRegRel` , utilisez la `get_registerId` méthode suivie d’un appel à la méthode [IDiaSymbol :: get_Offset](../../debugger/debug-interface-access/idiasymbol-get-offset.md) pour obtenir le décalage à partir du registre où se trouve le symbole.
 
 ## <a name="see-also"></a>Voir aussi
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

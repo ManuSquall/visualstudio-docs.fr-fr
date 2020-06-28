@@ -1,7 +1,7 @@
 ---
 title: IDiaEnumDebugStreamData | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f5929f6f36c183d3a580ab605d313695cb584664
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: b12c0c8823bbaf687e7157c272b64e50e7dd02b1
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72744842"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85468426"
 ---
 # <a name="idiaenumdebugstreamdata"></a>IDiaEnumDebugStreamData
 Fournit l’accès aux enregistrements dans un flux de données de débogage.
@@ -29,7 +29,7 @@ IDiaEnumDebugStreamData : IUnknown
 ```
 
 ## <a name="methods-in-vtable-order"></a>Méthodes dans l'ordre Vtable
-Le tableau suivant présente les méthodes de `IDiaEnumDebugStreamData`.
+Le tableau suivant présente les méthodes de `IDiaEnumDebugStreamData` .
 
 |Méthode|Description|
 |------------|-----------------|
@@ -42,11 +42,11 @@ Le tableau suivant présente les méthodes de `IDiaEnumDebugStreamData`.
 |[IDiaEnumDebugStreamData::Reset](../../debugger/debug-interface-access/idiaenumdebugstreamdata-reset.md)|Rétablit le début de la séquence énumérée.|
 |[IDiaEnumDebugStreamData::Clone](../../debugger/debug-interface-access/idiaenumdebugstreamdata-clone.md)|Crée un énumérateur qui contient la même séquence énumérée que l’énumérateur actuel.|
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
 Cette interface représente un flux d’enregistrements dans un flux de données de débogage. La taille et l’interprétation de chaque enregistrement dépendent du flux de données d’où provient l’enregistrement. Cette interface fournit efficacement l’accès aux octets de données brutes dans le fichier de symboles.
 
 ## <a name="notes-for-callers"></a>Notes pour les appelants
-Appelez les méthodes [IDiaEnumDebugStreams :: Item](../../debugger/debug-interface-access/idiaenumdebugstreams-item.md) ou [IDiaEnumDebugStreams :: Next](../../debugger/debug-interface-access/idiaenumdebugstreams-next.md) pour obtenir un objet `IDiaEnumDebugStreamData`.
+Appelez les méthodes [IDiaEnumDebugStreams :: Item](../../debugger/debug-interface-access/idiaenumdebugstreams-item.md) ou [IDiaEnumDebugStreams :: Next](../../debugger/debug-interface-access/idiaenumdebugstreams-next.md) pour obtenir un `IDiaEnumDebugStreamData` objet.
 
 ## <a name="example"></a>Exemple
  Cet exemple montre comment accéder à un flux de données unique et à ses enregistrements.
@@ -102,12 +102,12 @@ void PrintStreamData(IDiaEnumDebugStreamData* pStream)
 }
 ```
 
-## <a name="requirements"></a>spécifications
+## <a name="requirements"></a>Configuration requise
 En-tête : Dia2. h
 
 Bibliothèque : diaguids. lib
 
-DLL : Msdia80. dll
+DLL : msdia80.dll
 
 ## <a name="see-also"></a>Voir aussi
 - [Interfaces (SDK Debug Interface Access)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)

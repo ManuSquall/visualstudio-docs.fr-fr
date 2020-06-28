@@ -1,7 +1,7 @@
 ---
 title: IDiaAddressMap::put_imageAlign | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2b1a6bf037dc87d84fab21622571158fb0682f60
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: ad9a97dd2e50b5bc131975321306bf8d9d52501e
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72745050"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85468566"
 ---
 # <a name="idiaaddressmapput_imagealign"></a>IDiaAddressMap::put_imageAlign
 Définit l’alignement de l’image.
@@ -35,16 +35,16 @@ HRESULT put_imageAlign ( 
 
 dans Nouvelle valeur d’alignement d’image pour l’exécutable.
 
-## <a name="return-value"></a>Valeur de retour
- En cas de réussite, retourne `S_OK`; Sinon, retourne un code d’erreur.
+## <a name="return-value"></a>Valeur renvoyée
+ En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
  Les images (exécutables chargés) sont alignées sur les limites de mémoire spécifiées. Cet alignement peut être affecté par l’architecture système actuelle et par les options de compilation et de liaison temporelle. L’alignement d’image est toujours sur les limites d’octets. Les valeurs d’alignement d’image suivantes sont valides : 1, 2, 4, 8, 16, 32 et 64 limites d’octets.
 
  L’alignement de l’image actuelle peut être récupéré à l’aide d’un appel à la méthode [IDiaAddressMap :: get_imageAlign](../../debugger/debug-interface-access/idiaaddressmap-get-imagealign.md) .
 
 > [!NOTE]
-> L’image est déjà chargée au moment où cette méthode peut être appelée. La méthode `put_imageAlign` est généralement utilisée lorsque l’image a été déplacée ou modifiée et qu’un nouvel alignement est nécessaire.
+> L’image est déjà chargée au moment où cette méthode peut être appelée. La `put_imageAlign` méthode est généralement utilisée lorsque l’image a été déplacée ou modifiée et qu’un nouvel alignement est nécessaire.
 
 ## <a name="see-also"></a>Voir aussi
 - [IDiaAddressMap](../../debugger/debug-interface-access/idiaaddressmap.md)

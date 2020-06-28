@@ -1,7 +1,7 @@
 ---
 title: DiaAddressMapEntry | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 54b326116b1e1b677a997b264cf0c168a93febb0
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 8cae8159c893229f02e9598e932d7bc19efc2f4a
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72745266"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85468678"
 ---
 # <a name="diaaddressmapentry"></a>DiaAddressMapEntry
 Décrit une entrée dans une table d’adresses.
@@ -32,24 +32,24 @@ struct DiaAddressMapEntry {
 ```
 
 ## <a name="elements"></a>Éléments
-`rva` une adresse virtuelle relative (RVA) dans l’image A.
+`rva`Une adresse virtuelle relative (RVA) dans l’image A.
 
-`rvaTo` l’adresse virtuelle relative `rva` est mappée à dans l’image B.
+`rvaTo`L’adresse virtuelle relative `rva` est mappée à dans l’image B.
 
-## <a name="remarks"></a>Notes
-Une carte d’adresses fournit une traduction d’une disposition d’image (A) à une autre (B). Tableau de `DiaAddressMapEntry` structures triées par `rva` définit un mappage d’adresses.
+## <a name="remarks"></a>Remarques
+Une carte d’adresses fournit une traduction d’une disposition d’image (A) à une autre (B). Un tableau de `DiaAddressMapEntry` structures triées par `rva` définit un mappage d’adresses.
 
-Pour traduire une adresse, `addrA`, dans l’image A en adresse, `addrB`, dans l’image B, procédez comme suit :
+Pour traduire une adresse, `addrA` , dans l’image A en une adresse, `addrB` , dans l’image B, procédez comme suit :
 
-1. Recherchez l’entrée dans la carte, `e`, avec la plus grande `rva` inférieure ou égale à `addrA`.
+1. Recherchez l’entrée dans la carte, `e` , avec la valeur la plus grande `rva` inférieure ou égale à `addrA` .
 
-2. Définir `delta = addrA - e.rva`.
+2. Définissez `delta = addrA - e.rva`.
 
-3. Définir `addrB = e.rvaTo + delta`.
+3. Définissez `addrB = e.rvaTo + delta`.
 
-    Un tableau de structures de `DiaAddressMapEntry` est passé à la méthode [IDiaAddressMap :: set_addressMap](../../debugger/debug-interface-access/idiaaddressmap-set-addressmap.md) .
+    Un tableau de `DiaAddressMapEntry` structures est passé à la méthode [IDiaAddressMap :: set_addressMap](../../debugger/debug-interface-access/idiaaddressmap-set-addressmap.md) .
 
-## <a name="requirements"></a>spécifications
+## <a name="requirements"></a>Configuration requise
 En-tête : Dia2. h
 
 ## <a name="see-also"></a>Voir aussi

@@ -1,7 +1,7 @@
 ---
 title: IDiaSymbol::get_noStackOrdering | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a9c93119ee89355c9aae5c91caa185c9a1a6bb5d
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: c82b8c4836d97f02fa84aec500d961911f993df3
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72739723"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85462790"
 ---
 # <a name="idiasymbolget_nostackordering"></a>IDiaSymbol::get_noStackOrdering
 Cette fonction récupère un indicateur qui indique si aucun classement de la pile n’a pu être effectué dans le cadre de la vérification de la mémoire tampon de la pile (option de compilateur[/GS (vérification de la sécurité de la mémoire tampon)](/cpp/build/reference/gs-buffer-security-check) ).
@@ -33,21 +33,21 @@ HRESULT get_noStackOrdering(
 #### <a name="parameters"></a>Paramètres
  `pRetVal`
 
-à Retourne `TRUE` si aucun classement de la pile n’a pu être effectué dans le cadre de la vérification de la mémoire tampon de la pile. Sinon, retourne `FALSE`.
+à Retourne `TRUE` si aucun classement de pile n’a pu être effectué dans le cadre de la vérification de la mémoire tampon de la pile ; sinon, retourne `FALSE` .
 
-## <a name="return-value"></a>Valeur de retour
- En cas de réussite, retourne `S_OK` ; Sinon, retourne `S_FALSE` ou un code d’erreur.
+## <a name="return-value"></a>Valeur renvoyée
+ En cas de réussite, retourne `S_OK` ; sinon, retourne `S_FALSE` ou un code d’erreur.
 
 > [!NOTE]
-> Une valeur de retour de `S_FALSE` signifie que la propriété n’est pas disponible pour le symbole.
+> Une valeur de retour `S_FALSE` signifie que la propriété n’est pas disponible pour le symbole.
 
-## <a name="requirements"></a>spécifications
+## <a name="requirements"></a>Configuration requise
 
-|Exigence|Description|
+|Condition requise|Description|
 |-----------------|-----------------|
 |En-tête :|dia2.h|
-|Version :|DIA SDK v 8.0|
+|Version :|DIA SDK v 8.0|
 
 ## <a name="see-also"></a>Voir aussi
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
-- [/GS (vérification de la sécurité des mémoires tampons)](/cpp/build/reference/gs-buffer-security-check)
+- [/GS (vérification de la sécurité de la mémoire tampon)](/cpp/build/reference/gs-buffer-security-check)

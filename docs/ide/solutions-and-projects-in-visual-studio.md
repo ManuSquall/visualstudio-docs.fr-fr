@@ -1,6 +1,6 @@
 ---
 title: Solutions et projets
-ms.date: 10/05/2017
+ms.date: 06/26/2020
 ms.topic: conceptual
 f1_keywords:
 - vs.addnewitem
@@ -20,12 +20,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 742ee7a8450c5d2cf4d7a167a1977b3c1c18ef21
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: ad0ee64afa78a962271d2b702ee525287c5b2457
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85285229"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85468728"
 ---
 # <a name="solutions-and-projects-in-visual-studio"></a>Solutions et projets dans Visual Studio
 
@@ -74,13 +74,16 @@ Après avoir créé un nouveau projet, vous pouvez utiliser **l’Explorateur de
 
 De nombreuses commandes de menu sont disponibles dans le menu contextuel sur différents éléments de **l’Explorateur de solutions**. Ces commandes incluent la génération d’un projet, la gestion de packages NuGet, l’ajout d’une référence, l’affectation d’un nouveau nom de fichier et l’exécution de tests, entre autres. La barre d’outils en haut de **l’Explorateur de solutions** comprend des boutons pour basculer d’un affichage de solutions à un affichage de dossiers, afficher les fichiers cachés, réduire tous les nœuds et bien plus encore.
 
+> [!TIP]
+> Si vous avez fermé Explorateur de solutions et que vous souhaitez l’ouvrir à nouveau, choisissez **fenêtre**  >  **Réinitialiser la disposition de fenêtre** dans la barre de menus.
+
 Pour les projets ASP.NET Core, vous pouvez personnaliser la façon dont les fichiers sont imbriqués dans **l’Explorateur de solutions**. Pour plus d’informations, consultez [Personnaliser l’imbrication de fichiers dans l’Explorateur de solutions](file-nesting-solution-explorer.md).
 
-> [!TIP]
-> Pour afficher une liste de certaines des icônes qui apparaissent dans Explorateur de solutions, consultez la page [icônes de l’Explorateur d’objets et de affichage de classes](class-view-and-object-browser-icons.md) .
+Pour afficher une liste de certaines des icônes qui apparaissent dans Explorateur de solutions, consultez [affichage de classes et icônes](class-view-and-object-browser-icons.md)de l’Explorateur d’objets.
 
 ## <a name="see-also"></a>Voir aussi
 
 - [IDE Visual Studio](../get-started/visual-studio-ide.md)
+- [Porter, migrer et mettre à niveau des projets](../porting/port-migrate-and-upgrade-visual-studio-projects.md)
 - [Projets et solutions (Visual Studio pour Mac)](/visualstudio/mac/projects-and-solutions)
 - [Ajouter et supprimer des éléments de projet (Visual Studio pour Mac)](/visualstudio/mac/add-and-remove-project-items)

@@ -1,7 +1,7 @@
 ---
 title: FunctionArgType | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -12,20 +12,20 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e3508c785dc583f6f40b055372aaf93e7f3c24a5
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: c732e91649116529d30591ba9182d65d4007c211
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72745076"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85468615"
 ---
 # <a name="functionargtype"></a>FunctionArgType
-Chaque paramètre d’une fonction est identifié par un symbole de `SymTagFunctionArgType`.
+Chaque paramètre d’une fonction est identifié par un `SymTagFunctionArgType` symbole.
 
 ## <a name="properties"></a>Propriétés
  Le tableau suivant présente des propriétés valides supplémentaires pour ce type de symbole.
 
-|Property|Type de données|Description|
+|Propriété|Type de données|Description|
 |--------------|---------------|-----------------|
 |[IDiaSymbol::get_classParent](../../debugger/debug-interface-access/idiasymbol-get-classparent.md)|`IDiaSymbol*`|Symbole du parent FunctionType.|
 |[IDiaSymbol::get_classParentId](../../debugger/debug-interface-access/idiasymbol-get-classparentid.md)|`DWORD`|ID du symbole parent de la classe.|

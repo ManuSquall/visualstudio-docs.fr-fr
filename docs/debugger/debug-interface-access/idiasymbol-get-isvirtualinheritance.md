@@ -1,7 +1,7 @@
 ---
 title: IDiaSymbol::get_isVirtualInheritance | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 ms.assetid: 72906b92-dd4a-42e3-9b24-b77628fa48c1
@@ -10,15 +10,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7716d9688677eb12d603b208decc0f737bb1c6ca
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 67b35a40de94bec45ce9ea1f5b50472f234192d3
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72740011"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85463154"
 ---
 # <a name="idiasymbolget_isvirtualinheritance"></a>IDiaSymbol::get_isVirtualInheritance
-Spécifie si le pointeur de `this` pointe vers un membre de données avec l’héritage virtuel.
+Spécifie si le `this` pointeur pointe vers un membre de données avec l’héritage virtuel.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -30,10 +30,10 @@ HRESULT get_isVirtualInheritance(
 #### <a name="parameters"></a>Paramètres
  `pRetVal`
 
-à Pointeur vers un `BOOL` qui spécifie si le pointeur de `this` pointe vers un membre de données avec héritage virtuel.
+à Pointeur vers un `BOOL` qui spécifie si le `this` pointeur pointe vers un membre de données avec héritage virtuel.
 
-## <a name="return-value"></a>Valeur de retour
- En cas de réussite, retourne `S_OK` ; Sinon, retourne `S_FALSE` ou un code d’erreur.
+## <a name="return-value"></a>Valeur renvoyée
+ En cas de réussite, retourne `S_OK` ; sinon, retourne `S_FALSE` ou un code d’erreur.
 
 ## <a name="see-also"></a>Voir aussi
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

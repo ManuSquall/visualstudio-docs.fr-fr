@@ -1,7 +1,7 @@
 ---
 title: IDiaSymbol::get_RValueReference | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 43ef604b55cd29d7acf86f38d307dff3958d0162
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: b8123ca0a9679a46e8e411d817f42ae8497f3ef3
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72739409"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85462405"
 ---
 # <a name="idiasymbolget_rvaluereference"></a>IDiaSymbol::get_RValueReference
 Récupère un indicateur qui spécifie si un type pointeur est une référence rvalue. Utilisez lorsque l' [énumération SymTagEnum](../../debugger/debug-interface-access/symtagenum.md) est définie sur un type pointeur.
@@ -33,22 +33,22 @@ HRESULT get_RValueReference (
 #### <a name="parameters"></a>Paramètres
  `pRetVal`
 
-à Retourne `TRUE` si le pointeur est une référence rvalue ; Sinon, retourne `FALSE`.
+à Retourne `TRUE` si le pointeur est une référence rvalue ; sinon, retourne `FALSE` .
 
-## <a name="return-value"></a>Valeur de retour
- En cas de réussite, retourne `S_OK` ; Sinon, retourne `S_FALSE` ou un code d’erreur.
+## <a name="return-value"></a>Valeur renvoyée
+ En cas de réussite, retourne `S_OK` ; sinon, retourne `S_FALSE` ou un code d’erreur.
 
 > [!NOTE]
-> Une valeur de retour de `S_FALSE` signifie que la propriété n’est pas disponible pour le symbole.
+> Une valeur de retour `S_FALSE` signifie que la propriété n’est pas disponible pour le symbole.
 
 ## <a name="remarks"></a>Notes
 
-## <a name="requirements"></a>spécifications
+## <a name="requirements"></a>Spécifications
  En-tête : Dia2. h
 
  Bibliothèque : diaguids. lib
 
- DLL : msdia100. dll
+ DLL : msdia100.dll
 
 ## <a name="see-also"></a>Voir aussi
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

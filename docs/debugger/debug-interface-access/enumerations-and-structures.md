@@ -1,7 +1,7 @@
 ---
 title: Énumérations et structures | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6769af8a417c111de6c8dfc68cd7cda548eaa24c
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 5c7441e25533ca29f84d55779942b0bfb785dd9f
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72745223"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85468657"
 ---
 # <a name="enumerations-and-structures"></a>Énumérations et structures
 
@@ -92,13 +92,13 @@ Il s’agit des énumérations et des structures utilisées par le kit de dével
 
 Décrit une entrée dans une table d’adresses.
 
-### <a name="related-sections"></a>Rubriques connexes
+### <a name="related-sections"></a>Sections connexes
 
 [Interfaces (SDK Debug Interface Access)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)
 
 Spécifie les interfaces fournies par le kit de développement logiciel (SDK) DIA.
 
-[Constantes (Kit de développement logiciel Debug Interface Access)](../../debugger/debug-interface-access/constants-debug-interface-access-sdk.md)
+[Constantes (Kit de développement logiciel Debug Interface Access)](../../debugger/debug-interface-access/constants-debug-interface-access-sdk.md)
 
 Spécifie les constantes qui sont disponibles dans le kit de développement DIA (SDK).
 

@@ -1,7 +1,7 @@
 ---
 title: IDiaSymbol::get_paramBasePointerRegisterId | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 09bdfb5d276e4dc7414c78529c2a6f1644597cd3
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 2fe29506c0d25d2afc9914c21774dbf353a7a341
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72739514"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85462580"
 ---
 # <a name="idiasymbolget_parambasepointerregisterid"></a>IDiaSymbol::get_paramBasePointerRegisterId
-Récupère l’ID du Registre qui contient un pointeur de base vers les paramètres. Utilisez lorsque l' [énumération SymTagEnum](../../debugger/debug-interface-access/symtagenum.md) a la valeur `SymTagFunction`.
+Récupère l’ID du Registre qui contient un pointeur de base vers les paramètres. Utilisez lorsque l' [énumération SymTagEnum](../../debugger/debug-interface-access/symtagenum.md) a la valeur `SymTagFunction` .
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -35,20 +35,20 @@ HRESULT get_paramBasePointerRegisterId ( 
 
 à Retourne l’ID du Registre qui contient un pointeur de base vers les paramètres.
 
-## <a name="return-value"></a>Valeur de retour
- En cas de réussite, retourne `S_OK` ; Sinon, retourne `S_FALSE` ou un code d’erreur.
+## <a name="return-value"></a>Valeur renvoyée
+ En cas de réussite, retourne `S_OK` ; sinon, retourne `S_FALSE` ou un code d’erreur.
 
 > [!NOTE]
-> Une valeur de retour de `S_FALSE` signifie que la propriété n’est pas disponible pour le symbole.
+> Une valeur de retour `S_FALSE` signifie que la propriété n’est pas disponible pour le symbole.
 
 ## <a name="remarks"></a>Notes
 
-## <a name="requirements"></a>spécifications
+## <a name="requirements"></a>Spécifications
  En-tête : Dia2. h
 
  Bibliothèque : diaguids. lib
 
- DLL : msdia100. dll
+ DLL : msdia100.dll
 
 ## <a name="see-also"></a>Voir aussi
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

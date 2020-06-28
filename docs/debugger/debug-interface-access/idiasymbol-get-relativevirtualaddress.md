@@ -1,7 +1,7 @@
 ---
 title: IDiaSymbol::get_relativeVirtualAddress | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a5425ab60987c93e4697989176e005ee669afbef
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 3e7ff0b8a9227cd05086f84e5db1a569fb2ffb2f
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72739428"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85462454"
 ---
 # <a name="idiasymbolget_relativevirtualaddress"></a>IDiaSymbol::get_relativeVirtualAddress
-Récupère l’adresse virtuelle relative (RVA) de l’emplacement. Utilisez lorsque l' [énumération LocationType (](../../debugger/debug-interface-access/locationtype.md) a la valeur `LocIsStatic`.
+Récupère l’adresse virtuelle relative (RVA) de l’emplacement. Utilisez lorsque l' [énumération LocationType (](../../debugger/debug-interface-access/locationtype.md) a la valeur `LocIsStatic` .
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -35,11 +35,11 @@ HRESULT get_relativeVirtualAddress ( 
 
 à Retourne l’adresse virtuelle relative de l’emplacement.
 
-## <a name="return-value"></a>Valeur de retour
- En cas de réussite, retourne `S_OK` ; Sinon, retourne `S_FALSE` ou un code d’erreur.
+## <a name="return-value"></a>Valeur renvoyée
+ En cas de réussite, retourne `S_OK` ; sinon, retourne `S_FALSE` ou un code d’erreur.
 
 > [!NOTE]
-> Une valeur de retour de `S_FALSE` signifie que la propriété n’est pas disponible pour le symbole.
+> Une valeur de retour `S_FALSE` signifie que la propriété n’est pas disponible pour le symbole.
 
 ## <a name="example"></a>Exemple
 

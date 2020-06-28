@@ -1,7 +1,7 @@
 ---
 title: IDiaSymbol::get_packed | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 420ba5b56342b4b1d5b8e4c2756aa828e5fe53b4
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 73694e46f66014c251dbe3760dfade7baea566da
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72739521"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85462587"
 ---
 # <a name="idiasymbolget_packed"></a>IDiaSymbol::get_packed
 Récupère un indicateur qui spécifie si le type de données défini par l’utilisateur (UDT) est compressé.
@@ -33,15 +33,15 @@ HRESULT get_packed ( 
 #### <a name="parameters"></a>Paramètres
  `pRetVal`
 
-à Retourne `TRUE` si le type défini par l’utilisateur est compressé ; Sinon, retourne `FALSE`.
+à Retourne `TRUE` si le type défini par l’utilisateur est compressé ; sinon, retourne `FALSE` .
 
-## <a name="return-value"></a>Valeur de retour
- En cas de réussite, retourne `S_OK` ; Sinon, retourne `S_FALSE` ou un code d’erreur.
+## <a name="return-value"></a>Valeur renvoyée
+ En cas de réussite, retourne `S_OK` ; sinon, retourne `S_FALSE` ou un code d’erreur.
 
 > [!NOTE]
-> Une valeur de retour de `S_FALSE` signifie que la propriété n’est pas disponible pour le symbole.
+> Une valeur de retour `S_FALSE` signifie que la propriété n’est pas disponible pour le symbole.
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
  Condensé signifie que tous les membres du type défini par l’utilisateur sont positionnés aussi près que possible, sans remplissage intermédiaire à aligner sur les limites de la mémoire.
 
 ## <a name="see-also"></a>Voir aussi

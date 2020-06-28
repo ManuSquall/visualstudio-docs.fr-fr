@@ -1,7 +1,7 @@
 ---
 title: Compiland | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -13,22 +13,22 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ccb4ca05374c86912cd48956262645b80fb14e40
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 65c6a9460415112f9d86af6d5cf8766ad7d55f97
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72745439"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85462259"
 ---
 # <a name="compiland"></a>Compiland
-Il existe un symbole de `SymTagCompiland` pour chaque compiland lié au fichier. exe. Les informations de compiland sont réparties entre les symboles avec une balise de `SymTagCompiland`, qui peuvent être récupérées sans charger des symboles compiland supplémentaires et des symboles avec une balise de `SymTagCompilandDetails`, ce qui peut nécessiter le chargement de symboles supplémentaires.
+Il y a un `SymTagCompiland` symbole pour chaque compiland lié au fichier. exe. Les informations de compiland sont réparties entre les symboles avec une `SymTagCompiland` balise, qui peuvent être récupérées sans charger des symboles compiland supplémentaires, et les symboles avec une `SymTagCompilandDetails` balise, qui peuvent nécessiter le chargement de symboles supplémentaires.
 
 ## <a name="properties"></a>Propriétés
  Le tableau suivant présente les propriétés qui sont valides pour ce type de symbole.
 
-|Property|Type de données|Description|
+|Propriété|Type de données|Description|
 |--------------|---------------|-----------------|
-|[IDiaSymbol::get_editAndContinueEnabled](../../debugger/debug-interface-access/idiasymbol-get-editandcontinueenabled.md)|`BOOL`|`TRUE` si Modifier & continuer a été activé lors de la compilation.|
+|[IDiaSymbol::get_editAndContinueEnabled](../../debugger/debug-interface-access/idiasymbol-get-editandcontinueenabled.md)|`BOOL`|`TRUE`Si modifier & continuer a été activé lors de la compilation.|
 |[IDiaSymbol::get_lexicalParent](../../debugger/debug-interface-access/idiasymbol-get-lexicalparent.md)|`IDiaSymbol*`|Symbole du fichier. exe.|
 |[IDiaSymbol::get_lexicalParentId](../../debugger/debug-interface-access/idiasymbol-get-lexicalparentid.md)|`DWORD`|ID du symbole parent lexical.|
 |[IDiaSymbol::get_libraryName](../../debugger/debug-interface-access/idiasymbol-get-libraryname.md)|`BSTR`|Nom de la bibliothèque ou du fichier objet à partir duquel l’objet a été chargé.|

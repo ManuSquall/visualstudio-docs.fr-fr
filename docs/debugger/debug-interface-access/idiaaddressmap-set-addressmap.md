@@ -1,7 +1,7 @@
 ---
 title: IDiaAddressMap::set_addressMap | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8414788af44d78943088b78b2d3e42a5a8d8c50b
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 4af506da822a7f8e38a8952d7c1d0d15fc1995d2
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72745026"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85468552"
 ---
 # <a name="idiaaddressmapset_addressmap"></a>IDiaAddressMap::set_addressMap
 Fournit un mappage d’adresses pour prendre en charge les traductions de disposition d’image.
@@ -35,7 +35,7 @@ HRESULT set_addressMap ( 
 #### <a name="parameters"></a>Paramètres
  `cbData`
 
-dans Nombre d’éléments dans le paramètre `data`.
+dans Nombre d’éléments dans le `data` paramètre.
 
  `data[]`
 
@@ -43,13 +43,13 @@ dans Tableau de structures de [structure DiaAddressMapEntry](../../debugger/debu
 
  `imagetoSymbols`
 
-[in] `TRUE` si le paramètre `data` définit une carte de la nouvelle disposition d’image à la disposition d’origine (comme décrit par les symboles de débogage). `FALSE` si `data` est une carte à laquelle la nouvelle disposition d’image provient de la disposition d’origine.
+[in] `TRUE` Si le `data` paramètre définit un mappage de la nouvelle disposition d’image à la disposition d’origine (comme décrit par les symboles de débogage). `FALSE`Si `data` est une carte à laquelle la nouvelle disposition d’image provient de la disposition d’origine.
 
-## <a name="return-value"></a>Valeur de retour
- En cas de réussite, retourne `S_OK` ; Sinon, retourne un code d’erreur.
+## <a name="return-value"></a>Valeur renvoyée
+ En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
-## <a name="remarks"></a>Notes
- En règle générale, le DIA récupère les mappages de traduction d’adresses à partir du fichier de base de données du programme (. pdb). Si ces valeurs sont manquantes, la méthode [IDiaAddressMap :: set_imageHeaders](../../debugger/debug-interface-access/idiaaddressmap-set-imageheaders.md) est appelée deux fois, une fois avec le paramètre `imagetoSymbols` défini sur `TRUE` et une fois avec le paramètre `imagetoSymbols` défini sur `FALSE`. Les traductions de mappage d’adresses ne peuvent pas être activées à l’aide de la méthode [IDiaAddressMap ::P ut_addressmapenabled](../../debugger/debug-interface-access/idiaaddressmap-put-addressmapenabled.md) , sauf si les deux mappages de traduction sont fournis.
+## <a name="remarks"></a>Remarques
+ En règle générale, le DIA récupère les mappages de traduction d’adresses à partir du fichier de base de données du programme (. pdb). Si ces valeurs sont manquantes, la méthode [IDiaAddressMap :: set_imageHeaders](../../debugger/debug-interface-access/idiaaddressmap-set-imageheaders.md) est appelée deux fois, une fois avec le `imagetoSymbols` paramètre défini sur `TRUE` et une fois avec le `imagetoSymbols` paramètre défini sur `FALSE` . Les traductions de mappage d’adresses ne peuvent pas être activées à l’aide de la méthode [IDiaAddressMap ::p ut_addressMapEnabled](../../debugger/debug-interface-access/idiaaddressmap-put-addressmapenabled.md) , sauf si les deux mappages de traduction sont fournis.
 
 ## <a name="see-also"></a>Voir aussi
 - [DiaAddressMapEntry, structure](../../debugger/debug-interface-access/diaaddressmapentry.md)

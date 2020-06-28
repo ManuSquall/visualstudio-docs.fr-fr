@@ -1,7 +1,7 @@
 ---
 title: Dimension | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -12,20 +12,20 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0e6c5e956ddc3c03caf2fa27d31d7aafa4bea158
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: c36937e51eeef53a0a1fa5f24582221c5a209144
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72745252"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85468671"
 ---
 # <a name="dimension"></a>Dimension
-Chaque tableau FORTRAN a une dimension qui est identifiée par un symbole de `SymTagDimension`.
+Chaque tableau FORTRAN a une dimension qui est identifiée par un `SymTagDimension` symbole.
 
 ## <a name="properties"></a>Propriétés
  Le tableau suivant présente des propriétés valides supplémentaires pour ce type de symbole.
 
-|Property|Type de données|Description|
+|Propriété|Type de données|Description|
 |--------------|---------------|-----------------|
 |[IDiaSymbol::get_lowerBound](../../debugger/debug-interface-access/idiasymbol-get-lowerbound.md)|`IDiaSymbol*`|Limite inférieure d’une dimension de tableau FORTRAN.|
 |[IDiaSymbol::get_lowerBoundId](../../debugger/debug-interface-access/idiasymbol-get-lowerboundid.md)|`DWORD`|ID du symbole de limite inférieure.|

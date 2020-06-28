@@ -1,5 +1,5 @@
 ---
-title: Configurer la portée d’analyse de code en direct pour le code géré
+title: Configurer l’étendue de l’analyse du code en temps réel pour le code managé
 ms.date: 03/23/2018
 ms.topic: conceptual
 helpviewer_keywords:
@@ -7,74 +7,74 @@ helpviewer_keywords:
 - background analysis
 - analysis scope
 - full solution analysis
-author: jillre
-ms.author: jillfra
+author: Mikejo5000
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 300e3f276a45cfe2115311c7d27eedce365616cf
-ms.sourcegitcommit: 92361aac3665a934faa081e1d1ea89a067b01c5b
+ms.openlocfilehash: 5b1e4362755bbbfa9ea220fcbdf92abf92723521
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/17/2020
-ms.locfileid: "79432237"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85462121"
 ---
-# <a name="how-to-configure-live-code-analysis-scope-for-managed-code"></a>Comment : Configurer la portée d’analyse de code en direct pour le code géré
+# <a name="how-to-configure-live-code-analysis-scope-for-managed-code"></a>Comment : configurer l’étendue de l’analyse du code en temps réel pour le code managé
 
-## <a name="what-is-live-code-analysis-for-managed-code"></a>Qu’est-ce que « Analyse de code en direct » pour le code géré ?
-Visual Studio exécute un tas d’analyses de code en direct, également appelée *analyse de fond,* tandis que vous modifiez des fichiers sources dans l’éditeur. Une partie de celui-ci est nécessaire une analyse minimale pour une expérience acceptable d’édition Visual Studio IDE. Une partie est pour une meilleure réactivité pour les fonctionnalités IDE. Alors que certains d’entre elles sont d’activer des fonctionnalités IDE supplémentaires, telles que les diagnostics et les correctifs de code des analyseurs Roslyn. Sur la base de la fonctionnalité, ces analyses peuvent être regroupées comme suit :
+## <a name="what-is-live-code-analysis-for-managed-code"></a>Qu’est-ce que l’analyse de code en direct pour le code managé ?
+Visual Studio exécute une série d’analyses de code en direct, également appelées *analyse d’arrière-plan*, pendant que vous modifiez des fichiers sources dans l’éditeur. Une analyse minimale est nécessaire pour une expérience de modification de l’IDE de Visual Studio acceptable. Certaines d’entre elles sont destinées à améliorer la réactivité des fonctionnalités de l’IDE. Bien qu’il s’agit d’activer des fonctionnalités IDE supplémentaires, telles que les diagnostics et les correctifs de code des analyseurs Roslyn. Selon les fonctionnalités, ces analyses peuvent être regroupées comme suit :
 
-- **Calcul de fond des diagnostics**: Analyse pour calculer les erreurs, les avertissements et les suggestions dans les fichiers sources. Ces diagnostics apparaissent comme des entrées dans la liste d’erreurs et comme des gribouillis dans l’éditeur. Ils peuvent être classés en deux catégories :
-    - Diagnostics de compilateur de C et Visual Basic
-    - Diagnostics d’analyseur roslyn, qui comprend :
+- **Calcul en arrière-plan des diagnostics**: analyse pour calculer les erreurs, les avertissements et les suggestions dans les fichiers sources. Ces diagnostics s’affichent sous la forme d’entrées dans la liste d’erreurs et de tildes dans l’éditeur. Elles peuvent être classées en deux catégories :
+    - Diagnostics du compilateur C# et Visual Basic
+    - Diagnostics de l’analyseur Roslyn, notamment :
 
         - Analyseurs IDE intégrés pour les suggestions de style de code et
-        - Paquets d’analyseurs tiers [installés](./install-roslyn-analyzers.md) pour des projets dans la solution actuelle.
+        - Packages de l’analyseur tiers [installés](./install-roslyn-analyzers.md) pour les projets de la solution actuelle.
 
-- **Autres analyses de fond**: Analyse pour améliorer la réactivité et l’interaction Visual Studio pour les fonctionnalités IDE. Voici quelques exemples de telles analyses :
-    - Analyse de fond des fichiers ouverts.
-    - Compilation de fond de projets avec des fichiers ouverts pour réaliser des symboles pour améliorer la réactivité de certaines fonctionnalités IDE.
-    - Construire la syntaxe et les caches de symboles.
-    - Détection de l’association de concepteur pour les fichiers sources, tels que les formulaires, les contrôles, etc.
+- **Autres analyses en arrière-plan**: analyse pour améliorer la réactivité et l’interaction de Visual Studio pour les fonctionnalités IDE. Voici quelques exemples de ces analyses :
+    - Analyse en arrière-plan des fichiers ouverts.
+    - Compilation en arrière-plan de projets avec des fichiers ouverts pour réaliser des symboles afin d’améliorer la réactivité de certaines fonctionnalités de l’IDE.
+    - Génération de la syntaxe et des caches de symboles.
+    - Détection de l’Association de concepteur pour les fichiers sources, tels que les formulaires, les contrôles, etc.
 
-## <a name="default-analysis-scope"></a>Portée d’analyse par défaut
+## <a name="default-analysis-scope"></a>Étendue de l’analyse par défaut
 
-Par défaut, l’analyse de code en direct pour le calcul de fond des diagnostics s’exécute pour tous les fichiers qui sont _ouverts_ dans Visual Studio. Peu _d’autres analyses_ de fond mentionnées ci-dessus exécutent pour tous les projets, qui ont au moins un fichier ouvert. Bien que peu d’analyses de fond s’exécutent pour l’ensemble de la solution.
+Par défaut, l’analyse du code en temps réel pour le calcul en arrière-plan des Diagnostics s’exécute pour tous les fichiers _ouverts_ dans Visual Studio. Quelques-unes des _autres analyses en arrière-plan_ mentionnées ci-dessus s’exécutent pour tous les projets, qui ont au moins un fichier ouvert. Tandis que peu d’analyses en arrière-plan s’exécutent pour l’ensemble de la solution.
 
-## <a name="custom-analysis-scope"></a>Portée d’analyse personnalisée
+## <a name="custom-analysis-scope"></a>Étendue de l’analyse personnalisée
 
-La portée par défaut de chaque analyse de fond a été réglée pour l’expérience utilisateur optimale, la fonctionnalité et les performances pour la majorité des scénarios et solutions des clients. Cependant, il y a des cas où les clients peuvent vouloir personnaliser cette portée pour diminuer ou augmenter l’analyse de fond. Par exemple :
+L’étendue par défaut de chaque analyse en arrière-plan a été optimisée pour l’expérience utilisateur optimale, les fonctionnalités et les performances pour la majorité des scénarios et solutions clients. Toutefois, dans certains cas, les clients peuvent souhaiter personnaliser cette étendue pour réduire ou augmenter l’analyse en arrière-plan. Par exemple :
 
-- Mode d’économie d’énergie : Si les utilisateurs fonctionnent sur la batterie de l’ordinateur portable, ils peuvent vouloir minimiser la consommation d’énergie pour une plus longue durée de vie de la batterie. Dans ce scénario, ils voudraient minimiser l’analyse des antécédents.
-- Analyse de code à la demande : Si les utilisateurs préfèrent désactiver l’exécution d’analyseur en direct et exécuter manuellement l’analyse de code à la demande, ils voudraient minimiser l’analyse de fond. Voir [comment : Exécuter manuellement l’analyse de code à la demande](./how-to-run-code-analysis-manually-for-managed-code.md).
-- Analyse complète des solutions : Si les utilisateurs veulent toujours voir tous les diagnostics dans tous les fichiers de la solution, qu’ils soient ouverts ou non dans l’éditeur. Dans ce scénario, ils voudraient maximiser la portée de l’analyse de fond à une solution complète.
+- Mode économie d’énergie : si les utilisateurs s’exécutent sur une batterie d’ordinateurs portables, ils peuvent réduire la consommation d’énergie pour une durée de vie de batterie plus longue. Dans ce scénario, ils souhaitent réduire l’analyse en arrière-plan.
+- Analyse du code à la demande : si les utilisateurs préfèrent désactiver l’exécution de l’analyseur en temps réel et exécuter manuellement l’analyse du code à la demande, ils souhaitent réduire l’analyse en arrière-plan. Consultez [Comment : exécuter manuellement l’analyse du code à la demande](./how-to-run-code-analysis-manually-for-managed-code.md).
+- Analyse complète de la solution : si les utilisateurs souhaitent toujours voir tous les diagnostics dans tous les fichiers de la solution, qu’ils soient ouverts ou non dans l’éditeur. Dans ce scénario, ils souhaitent maximiser l’étendue de l’analyse en arrière-plan à la solution complète.
 
-À partir de Visual Studio 2019 version 16.5, les utilisateurs peuvent personnaliser explicitement la portée de toutes les analyses de code en direct, y compris le calcul des diagnostics, pour les projets C et Visual Basic. Les portées d’analyse disponibles sont les suivante :
+À compter de Visual Studio 2019 version 16,5, les utilisateurs peuvent personnaliser explicitement l’étendue de l’ensemble de l’analyse du code en direct, y compris le calcul des diagnostics, pour les projets C# et Visual Basic. Les étendues d’analyse disponibles sont les suivantes :
 
-- **Document actuel**: minimise la portée d’analyse de code en direct pour ne l’exécuter que pour le fichier actuel ou visible dans l’éditeur.
-- **Documents ouverts**: Portée d’analyse de code en direct par défaut, telle que décrite dans la section ci-dessus.
-- **Solution complète**: maximise la portée d’analyse de code en direct pour exécuter pour tous les fichiers et projets dans l’ensemble de la solution.
+- **Document actif**: réduit l’étendue de l’analyse du code en temps réel pour qu’elle s’exécute uniquement pour le fichier actif ou visible dans l’éditeur.
+- **Documents ouverts**: étendue de l’analyse du code en direct par défaut, comme décrit dans la section ci-dessus.
+- **Solution complète**: optimise l’étendue de l’analyse du code en temps réel pour l’exécution de tous les fichiers et projets de l’ensemble de la solution.
 
-Vous pouvez choisir l’une des portées d’analyse personnalisée ci-dessus dans le dialogue Tools Options en suivant les étapes ci-dessous :
+Vous pouvez choisir l’une des étendues d’analyse personnalisées ci-dessus dans la boîte de dialogue Options des outils en suivant les étapes ci-dessous :
 
-1. Pour ouvrir la boîte de dialogue **Options,** sur le menu bar de Visual Studio, choisissez **Tools** > **Options**.
+1. Pour ouvrir la boîte de dialogue **options** , dans la barre de menus de Visual Studio, choisissez **Outils**  >  **options**.
 
-2. Dans la boîte de dialogue **Options,** choisissez **Text Editor** > **CMD** ou **Basic** > **Advanced**.
+2. Dans la boîte de dialogue **options** , choisissez **éditeur de texte**  >  **C#** ou **Basic**  >  **avancé**.
 
-3. Sélectionnez la **portée d’analyse de fond** souhaitée pour personnaliser la portée de l’analyse. Choisissez **OK** quand vous avez terminé.
+3. Sélectionnez l' **étendue d’analyse en arrière-plan** souhaitée pour personnaliser l’étendue de l’analyse. Lorsque vous avez terminé, choisissez **OK** .
 
-![Portée d’analyse.](./media/background-analysis-scope.png)
+![Étendue de l’analyse.](./media/background-analysis-scope.png)
 
 > [!NOTE]
-> Avant visual Studio 2019 version 16.5, les utilisateurs peuvent personnaliser la portée d’analyse pour le calcul des diagnostics à toute la solution à l’aide de la case à cocher **d’analyse** de solution complète Enable à partir de **Tools** > **Options** > **Text Editor** > **C OU** **Basic** > **Advanced** tab. Il n’y a pas de support pour minimiser la portée d’analyse de fond dans les versions visual Studio antérieures.
+> Avant Visual Studio 2019 version 16,5, les utilisateurs peuvent personnaliser l’étendue de l’analyse pour le calcul des diagnostics sur la totalité de la solution à l’aide de la case à cocher **activer l’analyse complète** de la solution dans **Outils**  >  **options**  >  **éditeur de texte**  >  **C#** ou **Basic**  >  onglet**avancé** de base. Il n’existe aucune prise en charge pour réduire l’étendue de l’analyse en arrière-plan dans les versions antérieures de Visual Studio.
 
-## <a name="automatically-minimize-live-code-analysis-scope"></a>Minimisez automatiquement la portée de l’analyse du code en direct
+## <a name="automatically-minimize-live-code-analysis-scope"></a>Réduire automatiquement l’étendue de l’analyse du code en direct
 
-Si Visual Studio détecte que 200 Mo ou moins de mémoire système est à sa disposition, il minimise automatiquement la portée d’analyse de code en direct à "Document actuel". Si cela se produit, une alerte apparaît vous informant que Visual Studio a désactivé certaines fonctionnalités. Un bouton vous permet de revenir à la portée d’analyse préalable si vous le souhaitez.
+Si Visual Studio détecte que 200 Mo ou moins de mémoire système est disponible, il réduit automatiquement l’étendue de l’analyse du code en temps réel en « document actif ». Dans ce cas, une alerte s’affiche vous informant que Visual Studio a désactivé certaines fonctionnalités. Un bouton vous permet de revenir à l’étendue d’analyse précédente si vous le souhaitez.
 
-![Texte d’alerte minimisant la portée de l’analyse](./media/fsa_alert.png)
+![Texte d’alerte minimisant l’étendue de l’analyse](./media/fsa_alert.png)
 
 ## <a name="see-also"></a>Voir aussi
 
 - [Suspension automatique de fonctionnalités](./automatic-feature-suspension.md)
-- [Demande de fonctionnalité de mode d’économie d’énergie](https://github.com/dotnet/roslyn/issues/38429)
+- [Demande de fonctionnalité du mode d’économie d’énergie](https://github.com/dotnet/roslyn/issues/38429)

@@ -1,7 +1,7 @@
 ---
 title: IDiaSymbol::get_isLTCG | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1d3fa97d5612b61151d9c435b91f500c87af0b23
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 009fcf437f56852e324e392f6a5691dd23e23ebc
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72740214"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85463364"
 ---
 # <a name="idiasymbolget_isltcg"></a>IDiaSymbol::get_isLTCG
 Récupère un indicateur qui spécifie si le [compiland](../../debugger/debug-interface-access/compiland.md) a été lié au commutateur de l’éditeur de liens [/LTCG (génération de code durant l’édition de liens)](/cpp/build/reference/ltcg-link-time-code-generation), qui facilite l’optimisation de l’ensemble du programme. Ce commutateur s’applique uniquement au code managé.
@@ -33,20 +33,20 @@ HRESULT get_iSLTCG(
 #### <a name="parameters"></a>Paramètres
  pFlag
 
-à Retourne `TRUE` si le `compiland` a été lié à l’aide du commutateur de l’éditeur de liens/LTCG ; Sinon, retourne `FALSE`.
+à Retourne `TRUE` si le `compiland` a été lié avec le commutateur de l’éditeur de liens/LTCG ; sinon, retourne `FALSE` .
 
-## <a name="return-value"></a>Valeur de retour
- En cas de réussite, retourne `S_OK` ; Sinon, retourne `S_FALSE` ou un code d’erreur.
+## <a name="return-value"></a>Valeur renvoyée
+ En cas de réussite, retourne `S_OK` ; sinon, retourne `S_FALSE` ou un code d’erreur.
 
 > [!NOTE]
-> Une valeur de retour de `S_FALSE` signifie que la propriété n’est pas disponible pour le symbole.
+> Une valeur de retour `S_FALSE` signifie que la propriété n’est pas disponible pour le symbole.
 
-## <a name="requirements"></a>spécifications
+## <a name="requirements"></a>Configuration requise
 
-|Exigence|Description|
+|Condition requise|Description|
 |-----------------|-----------------|
 |En-tête :|dia2.h|
-|Version :|DIA SDK v 8.0|
+|Version :|DIA SDK v 8.0|
 
 ## <a name="see-also"></a>Voir aussi
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

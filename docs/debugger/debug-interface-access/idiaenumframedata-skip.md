@@ -1,7 +1,7 @@
 ---
 title: IDiaEnumFrameData::Skip | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c49aaf1f648a52e1701088b6579eda55cde6c355
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 02c56c0b49844b72384d641a53eb513c2a504acb
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72744572"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85468307"
 ---
 # <a name="idiaenumframedataskip"></a>IDiaEnumFrameData::Skip
 Ignore un nombre spécifié d’éléments de données de frame dans une séquence d’énumération.
@@ -35,8 +35,8 @@ HRESULT Skip ( 
 
 dans Nombre d’éléments de données de frame dans la séquence d’énumération à ignorer.
 
-## <a name="return-value"></a>Valeur de retour
- En cas de réussite, retourne `S_OK`; Sinon, retourne `S_FALSE` s’il n’y a plus d’enregistrements à ignorer.
+## <a name="return-value"></a>Valeur renvoyée
+ En cas de réussite, retourne `S_OK` ; sinon, retourne `S_FALSE` s’il n’y a plus d’enregistrements à ignorer.
 
 ## <a name="see-also"></a>Voir aussi
 - [IDiaEnumFrameData](../../debugger/debug-interface-access/idiaenumframedata.md)

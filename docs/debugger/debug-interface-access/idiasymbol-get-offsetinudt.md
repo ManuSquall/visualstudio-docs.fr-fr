@@ -1,7 +1,7 @@
 ---
 title: IDiaSymbol::get_offsetInUdt | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f0eeffba743d7fae1d473c45eb350fbfc8bcd0b9
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: cb70f66ca23f9710b2d41e39b4cd626829a095d0
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72739568"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85462608"
 ---
 # <a name="idiasymbolget_offsetinudt"></a>IDiaSymbol::get_offsetInUdt
 Récupère le décalage au début d’un type défini par l’utilisateur (UDT) d’un membre dans l’UDT.
@@ -35,21 +35,21 @@ HRESULT get_offsetInUdt( 
 
 à Retourne le décalage en octets de l’emplacement du symbole.
 
-## <a name="return-value"></a>Valeur de retour
- En cas de réussite, retourne `S_OK` ; Sinon, retourne `S_FALSE` ou un code d’erreur.
+## <a name="return-value"></a>Valeur renvoyée
+ En cas de réussite, retourne `S_OK` ; sinon, retourne `S_FALSE` ou un code d’erreur.
 
 > [!NOTE]
-> Une valeur de retour de `S_FALSE` signifie que la propriété n’est pas disponible pour le symbole.
+> Une valeur de retour `S_FALSE` signifie que la propriété n’est pas disponible pour le symbole.
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
  Cette fonction est utilisée uniquement dans les enregistrements locaux dans une build optimisée.
 
-## <a name="requirements"></a>spécifications
+## <a name="requirements"></a>Configuration requise
  En-tête : Dia2. h
 
  Bibliothèque : diaguids. lib
 
- DLL : msdia100. dll
+ DLL : msdia100.dll
 
 ## <a name="see-also"></a>Voir aussi
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

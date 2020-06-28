@@ -1,7 +1,7 @@
 ---
 title: IDiaSymbol::get_lowerBoundId | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8d3685512521d5fc919f4c9b1752a039ae1085bc
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 7a8adc32ab715ee81ce5a74c01431d452475c74e
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72739824"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85462923"
 ---
 # <a name="idiasymbolget_lowerboundid"></a>IDiaSymbol::get_lowerBoundId
 Récupère l’identificateur de symbole de la limite inférieure d’une dimension de tableau FORTRAN.
@@ -35,13 +35,13 @@ HRESULT get_lowerBoundId ( 
 
 à Retourne l’ID de symbole du symbole qui représente la limite inférieure d’une dimension de tableau FORTRAN.
 
-## <a name="return-value"></a>Valeur de retour
- En cas de réussite, retourne `S_OK` ; Sinon, retourne `S_FALSE` ou un code d’erreur.
+## <a name="return-value"></a>Valeur renvoyée
+ En cas de réussite, retourne `S_OK` ; sinon, retourne `S_FALSE` ou un code d’erreur.
 
 > [!NOTE]
-> Une valeur de retour de `S_FALSE` signifie que la propriété n’est pas disponible pour le symbole.
+> Une valeur de retour `S_FALSE` signifie que la propriété n’est pas disponible pour le symbole.
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
  L’identificateur est une valeur unique créée par le kit de développement logiciel (SDK) DIA pour marquer tous les symboles comme étant uniques.
 
 ## <a name="see-also"></a>Voir aussi

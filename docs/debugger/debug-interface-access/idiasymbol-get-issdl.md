@@ -1,7 +1,7 @@
 ---
 title: IDiaSymbol::get_isSdl | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 ms.assetid: 6aa0e116-da75-4643-a4d7-d8e142231e21
@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 01503bca82046ace7f27cf4f80c163944009e89b
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: abca9e52087a8cebd44ee21f9791a2ce290731d0
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72740067"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85463203"
 ---
 # <a name="idiasymbolget_issdl"></a>IDiaSymbol::get_isSdl
 Spécifie si le module est compilé avec l’option/SDL.
@@ -30,10 +30,10 @@ HRESULT get_isSdl(
 #### <a name="parameters"></a>Paramètres
  `pRetVal`
 
-à Pointeur vers une `BOOL` qui spécifie si le module est compilé avec l’option/SDL.
+à Pointeur vers un `BOOL` qui spécifie si le module est compilé avec l’option/SDL.
 
-## <a name="return-value"></a>Valeur de retour
- En cas de réussite, retourne `S_OK` ; Sinon, retourne `S_FALSE` ou un code d’erreur.
+## <a name="return-value"></a>Valeur renvoyée
+ En cas de réussite, retourne `S_OK` ; sinon, retourne `S_FALSE` ou un code d’erreur.
 
 ## <a name="see-also"></a>Voir aussi
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

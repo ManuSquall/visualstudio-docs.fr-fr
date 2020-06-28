@@ -1,7 +1,7 @@
 ---
 title: BasicType | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3fff76abdecdd8613a462225278053ef4f6d9694
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: b7d9df59d5a3075bf63d619a03e8fe31da6991a1
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72745475"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85462280"
 ---
 # <a name="basictype"></a>BasicType
 Spécifie le type de base du symbole.
@@ -52,44 +52,44 @@ enum BasicType {
 ## <a name="elements"></a>Éléments
 btNoType aucun type de base n’est spécifié.
 
-btVoid type de base est un `void`.
+btVoid type de base est un `void` .
 
-btChar type de base est un `char` (CC++ /type).
+btChar de base est un type `char` (C/C++).
 
-btWChar type de base est un caractère étendu (Unicode) (`WCHAR`).
+btWChar type de base est un caractère étendu (Unicode) ( `WCHAR` ).
 
-btInt type de base est `signed int` (CC++ /type).
+btInt type de base est `signed int` (type C/C++).
 
-btUInt type de base est `unsigned int` (CC++ /type).
+btUInt type de base est `unsigned int` (type C/C++).
 
-btFloat type de base est un nombre à virgule flottante (`FLOAT`).
+btFloat type de base est un nombre à virgule flottante ( `FLOAT` ).
 
-btBCD type de base est un nombre décimal codé binaire (`BCD`).
+btBCD type de base est un nombre décimal codé binaire ( `BCD` ).
 
-btBool type de base est un booléen (`BOOL`).
+btBool type de base est un booléen ( `BOOL` ).
 
-btLong type de base est un `long int` (CC++ /type).
+btLong de base est un type `long int` (C/C++).
 
-btULong type de base est un `unsigned long int` (CC++ /type).
+btULong de base est un `unsigned long int` type (C/C++).
 
 btCurrency type de base est Currency.
 
-btDate type de base est date/heure (`DATE`).
+btDate type de base est date/heure ( `DATE` ).
 
-btVariant type de base est une structure de type variable (`VARIANT`).
+btVariant type de base est une structure de type variable ( `VARIANT` ).
 
 btComplex type de base est un nombre complexe.
 
 btBit type de base est un peu.
 
-btBSTR Basic type est une chaîne de base ou binaire (`BSTR`).
+btBSTR type de base est une chaîne de base ou binaire ( `BSTR` ).
 
-btHresult type de base est un `HRESULT`.
+btHresult type de base est un `HRESULT` .
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
 Les valeurs de cette énumération sont retournées par la méthode [IDiaSymbol :: get_baseType](../../debugger/debug-interface-access/idiasymbol-get-basetype.md) .
 
-## <a name="requirements"></a>spécifications
+## <a name="requirements"></a>Configuration requise
 En-tête : cvconst. h
 
 ## <a name="see-also"></a>Voir aussi

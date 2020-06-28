@@ -1,7 +1,7 @@
 ---
 title: IDiaSymbol::get_overloadedOperator | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: edd4fb03715d02d3886bf410fc916896a51eca26
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 2be214ee5a2e566ae8e79989279ea3f8a52164d6
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72739542"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85462594"
 ---
 # <a name="idiasymbolget_overloadedoperator"></a>IDiaSymbol::get_overloadedOperator
 Récupère un indicateur qui spécifie si le type de données défini par l’utilisateur a des opérateurs surchargés.
@@ -33,13 +33,13 @@ HRESULT get_overloadedOperator ( 
 #### <a name="parameters"></a>Paramètres
  `pRetVal`
 
-à Retourne `TRUE` si le type de données défini par l’utilisateur a des opérateurs surchargés ; Sinon, retourne `FALSE`.
+à Retourne `TRUE` si le type de données défini par l’utilisateur a des opérateurs surchargés ; sinon, retourne `FALSE` .
 
-## <a name="return-value"></a>Valeur de retour
- En cas de réussite, retourne `S_OK` ; Sinon, retourne `S_FALSE` ou un code d’erreur.
+## <a name="return-value"></a>Valeur renvoyée
+ En cas de réussite, retourne `S_OK` ; sinon, retourne `S_FALSE` ou un code d’erreur.
 
 > [!NOTE]
-> Une valeur de retour de `S_FALSE` signifie que la propriété n’est pas disponible pour le symbole.
+> Une valeur de retour `S_FALSE` signifie que la propriété n’est pas disponible pour le symbole.
 
 ## <a name="see-also"></a>Voir aussi
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

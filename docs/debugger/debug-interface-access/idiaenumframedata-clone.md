@@ -1,7 +1,7 @@
 ---
 title: IDiaEnumFrameData::Clone | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 47f6119eac1d48a7819f67bc57660c53e6b93b54
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 2c7325c861e8e5186faa4056edd9b282ab47e64d
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72744663"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85468363"
 ---
 # <a name="idiaenumframedataclone"></a>IDiaEnumFrameData::Clone
 Crée un énumérateur qui contient le même état d’énumération que l’énumérateur actuel.
@@ -35,8 +35,8 @@ HRESULT Clone( 
 
 à Retourne un objet [IDiaEnumFrameData](../../debugger/debug-interface-access/idiaenumframedata.md) qui contient un doublon de l’énumérateur. Les données de frame ne sont pas dupliquées, mais uniquement l’énumérateur.
 
-## <a name="return-value"></a>Valeur de retour
- En cas de réussite, retourne `S_OK`; Sinon, retourne un code d’erreur.
+## <a name="return-value"></a>Valeur renvoyée
+ En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
 ## <a name="see-also"></a>Voir aussi
 - [IDiaEnumFrameData](../../debugger/debug-interface-access/idiaenumframedata.md)

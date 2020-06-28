@@ -1,7 +1,7 @@
 ---
 title: IDiaSymbol::get_numberOfRegisterIndices | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 ms.assetid: 1ec8b8ea-e423-4327-8dc0-a390e6e3ffb0
@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6074f8d4954ced530640bedcd60ab397a2840e98
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 21ca59f0cef5e8e4a1771d2a20da12af17ec6fb5
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72739658"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85462727"
 ---
 # <a name="idiasymbolget_numberofregisterindices"></a>IDiaSymbol::get_numberOfRegisterIndices
 Récupère le nombre d’index de registre.
@@ -32,8 +32,8 @@ HRESULT get_numberOfRegisterIndices(
 
 à Pointeur vers un `DWORD` qui contient le nombre d’index de registre.
 
-## <a name="return-value"></a>Valeur de retour
- En cas de réussite, retourne `S_OK` ; Sinon, retourne `S_FALSE` ou un code d’erreur.
+## <a name="return-value"></a>Valeur renvoyée
+ En cas de réussite, retourne `S_OK` ; sinon, retourne `S_FALSE` ou un code d’erreur.
 
 ## <a name="see-also"></a>Voir aussi
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

@@ -1,7 +1,7 @@
 ---
 title: IDiaEnumDebugStreams::Item | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7a07669e36d397550c28d1cc4a5de2ad300763e6
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 27484ce70b9e98ef7351d03d00ed91515b34e9af
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72744741"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85468405"
 ---
 # <a name="idiaenumdebugstreamsitem"></a>IDiaEnumDebugStreams::Item
 Récupère un flux de débogage au moyen d’un index ou d’un nom.
@@ -34,14 +34,14 @@ HRESULT Item (
 #### <a name="parameters"></a>Paramètres
 index
 
-dans Index ou nom du flux de débogage à récupérer. Si un variant entier est utilisé, il doit être compris entre 0 et `count`-1, où `count` est retourné par la méthode [IDiaEnumDebugStreams :: get_Count](../../debugger/debug-interface-access/idiaenumdebugstreams-get-count.md) .
+dans Index ou nom du flux de débogage à récupérer. Si une variante entière est utilisée, elle doit être comprise entre 0 et `count` -1, où `count` est retourné par la méthode [IDiaEnumDebugStreams :: get_Count](../../debugger/debug-interface-access/idiaenumdebugstreams-get-count.md) .
 
-flux de données
+flux
 
 à Retourne un objet [IDiaEnumDebugStreamData](../../debugger/debug-interface-access/idiaenumdebugstreamdata.md) qui représente le flux de débogage spécifié.
 
-## <a name="return-value"></a>Valeur de retour
-En cas de réussite, retourne `S_OK` ; Sinon, retourne un code d’erreur.
+## <a name="return-value"></a>Valeur renvoyée
+En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
 ## <a name="example"></a>Exemple
 

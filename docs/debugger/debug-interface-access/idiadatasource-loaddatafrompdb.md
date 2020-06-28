@@ -1,7 +1,7 @@
 ---
 title: IDiaDataSource::loadDataFromPdb | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7526ba6e62c9df22a2338adc80f5d56578502cdb
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 582b211b83ed519470100b7c5b47184c2256894f
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72744938"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85468496"
 ---
 # <a name="idiadatasourceloaddatafrompdb"></a>IDiaDataSource::loadDataFromPdb
 Ouvre et prépare un fichier de base de données du programme (. pdb) comme source de données de débogage.
@@ -35,17 +35,17 @@ pdbPath
 
 dans Chemin d’accès au fichier. pdb.
 
-## <a name="return-value"></a>Valeur de retour
-En cas de réussite, retourne `S_OK` ; Sinon, retourne un code d’erreur. Le tableau suivant indique les valeurs de retour possibles pour cette méthode.
+## <a name="return-value"></a>Valeur renvoyée
+En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur. Le tableau suivant indique les valeurs de retour possibles pour cette méthode.
 
-|valeur|Description|
+|Valeur|Description|
 |-----------|-----------------|
 |E_PDB_NOT_FOUND|Impossible d’ouvrir le fichier ou de déterminer que le format du fichier n’est pas valide.|
 |E_PDB_FORMAT|Tentative d’accès à un fichier avec un format obsolète.|
 |E_INVALIDARG|Paramètre non valide.|
 |E_UNEXPECTED|La source de données a déjà été préparée.|
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
 Cette méthode charge les données de débogage directement à partir d’un fichier. pdb.
 
 Pour valider le fichier. pdb par rapport à des critères spécifiques, utilisez la méthode [IDiaDataSource :: loadAndValidateDataFromPdb](../../debugger/debug-interface-access/idiadatasource-loadandvalidatedatafrompdb.md) .

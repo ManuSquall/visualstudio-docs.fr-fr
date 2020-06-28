@@ -1,7 +1,7 @@
 ---
 title: IDiaSymbol::get_liveRangeStartRelativeVirtualAddress | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ea82e9d1dee4b82e78ea3f6409acfdcfc30b2a27
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 8a594ad4db1d06e541da93a4efb1b6f30a000f51
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72739893"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85463021"
 ---
 # <a name="idiasymbolget_liverangestartrelativevirtualaddress"></a>IDiaSymbol::get_liveRangeStartRelativeVirtualAddress
 Retourne le début de la plage d’adresses dans laquelle le symbole local est valide.
@@ -35,20 +35,20 @@ HRESULT get_liveRangeStartRelativeVirtualAddress ( 
 
 à Retourne le début de la plage d’adresses.
 
-## <a name="return-value"></a>Valeur de retour
- En cas de réussite, retourne `S_OK` ; Sinon, retourne un code d’erreur. L’adresse virtuelle relative retournée est le début de la plage dans laquelle le symbole est valide.
+## <a name="return-value"></a>Valeur renvoyée
+ En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur. L’adresse virtuelle relative retournée est le début de la plage dans laquelle le symbole est valide.
 
 > [!NOTE]
 > Un code d’erreur retourné signifie que le symbole n’a pas d’informations de plage active.
 
 ## <a name="remarks"></a>Notes
 
-## <a name="requirements"></a>spécifications
+## <a name="requirements"></a>Spécifications
  En-tête : Dia2. h
 
  Bibliothèque : diaguids. lib
 
- DLL : msdia100. dll
+ DLL : msdia100.dll
 
 ## <a name="see-also"></a>Voir aussi
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

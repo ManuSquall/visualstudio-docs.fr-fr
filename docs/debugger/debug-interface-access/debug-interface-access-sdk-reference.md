@@ -1,7 +1,7 @@
 ---
 title: Référence du kit de développement logiciel Debug interface Access | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5aa8e898a4f045f739eed156e181346a9a6e2df3
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 7fb49ee4ccd49d848b4d770459352c685469fb7b
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72745269"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85468699"
 ---
 # <a name="debug-interface-access-sdk-reference"></a>Debug Interface Access, référence du SDK
 
@@ -35,16 +35,16 @@ Une référence complète à toutes les interfaces fournies par le kit de dével
 
 Une référence complète à toutes les énumérations et structures requises par les interfaces.
 
-[Constantes (Kit de développement logiciel Debug Interface Access)](../../debugger/debug-interface-access/constants-debug-interface-access-sdk.md)
+[Constantes (Kit de développement logiciel Debug Interface Access)](../../debugger/debug-interface-access/constants-debug-interface-access-sdk.md)
 
 Décrit un certain nombre de chaînes et leurs étiquettes qui peuvent être utilisées avec les interfaces.
 
-## <a name="related-sections"></a>Rubriques connexes
+## <a name="related-sections"></a>Sections connexes
 
-[Symboles et étiquettes de symbole](../../debugger/debug-interface-access/symbols-and-symbol-tags.md)
+[Balises Symbols et Symbol](../../debugger/debug-interface-access/symbols-and-symbol-tags.md)
 
 Décrit les symboles et la façon dont ils sont identifiés par type.
 
 ## <a name="see-also"></a>Voir aussi
 
-- [SDK Debug Interface Access](../../debugger/debug-interface-access/debug-interface-access-sdk.md)
+- [Kit de développement logiciel de Debug Interface Access](../../debugger/debug-interface-access/debug-interface-access-sdk.md)

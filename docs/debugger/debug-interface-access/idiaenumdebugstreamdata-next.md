@@ -1,7 +1,7 @@
 ---
 title: IDiaEnumDebugStreamData::Next | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: acdab0a565613194c67aa85484316a235c91dbf6
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 117d16a9c010bbed2c14544f6cc94c4782701e34
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72744798"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85468447"
 ---
 # <a name="idiaenumdebugstreamdatanext"></a>IDiaEnumDebugStreamData::Next
 Récupère un nombre spécifié d’enregistrements dans la séquence énumérée.
@@ -43,9 +43,9 @@ dans Nombre d’enregistrements à récupérer.
 
 dans Taille de la mémoire tampon de données, en octets.
 
- cbData
+ pcbData
 
-à Retourne le nombre d’octets retournés. Si `data` a la valeur NULL, `pcbData` contient le nombre total d’octets de données disponibles pour tous les enregistrements demandés.
+à Retourne le nombre d’octets retournés. Si `data` a la valeur null, `pcbData` contient le nombre total d’octets de données disponibles pour tous les enregistrements demandés.
 
  data[]
 
@@ -53,9 +53,9 @@ dans Taille de la mémoire tampon de données, en octets.
 
  pceltFetched
 
-[in, out] Retourne le nombre d’enregistrements dans `data`.
+[in, out] Retourne le nombre d’enregistrements dans `data` .
 
-## <a name="return-value"></a>Valeur de retour
+## <a name="return-value"></a>Valeur renvoyée
  En cas de réussite, retourne `S_OK`. Retourne `S_FALSE` s’il n’y a plus d’enregistrements. Sinon, retourne un code d'erreur.
 
 ## <a name="see-also"></a>Voir aussi

@@ -1,7 +1,7 @@
 ---
 title: Annotation | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -13,20 +13,20 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ebb4d71924882d0fdd54181a8692ba2eacb0a2bd
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 2e1adc922021d1e2bcc9b55de0b5986ee0c1766d
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72745538"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85462378"
 ---
 # <a name="annotation"></a>Annotation
-Un code de programme d’emplacement peut être annoté avec un symbole de `SymTagAnnotation`.
+Un code de programme d’emplacement peut être annoté avec un `SymTagAnnotation` symbole.
 
 ## <a name="properties"></a>Propriétés
  Le tableau suivant présente les propriétés qui sont valides pour ce type de symbole.
 
-|Property|Type de données|Description|
+|Propriété|Type de données|Description|
 |--------------|---------------|-----------------|
 |[IDiaSymbol::get_addressOffset](../../debugger/debug-interface-access/idiasymbol-get-addressoffset.md)|`DWORD`|Partie décalage de l’emplacement ; Pour plus d’informations, consultez l' [énumération LocationType (](../../debugger/debug-interface-access/locationtype.md).|
 |[IDiaSymbol::get_addressSection](../../debugger/debug-interface-access/idiasymbol-get-addresssection.md)|`DWORD`|Partie section de l’emplacement ; Pour plus d’informations, consultez l' [énumération LocationType (](../../debugger/debug-interface-access/locationtype.md).|

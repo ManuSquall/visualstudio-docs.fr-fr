@@ -1,7 +1,7 @@
 ---
 title: IDiaEnumDebugStreamData::Item | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e221516198d186dd08c353123ce4236f0be1383c
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 4696d8fdab9720796db1c6b5dff25b7bcfe49e01
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72744820"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85468454"
 ---
 # <a name="idiaenumdebugstreamdataitem"></a>IDiaEnumDebugStreamData::Item
 Récupère l’enregistrement spécifié.
@@ -36,22 +36,22 @@ HRESULT Item ( 
 #### <a name="parameters"></a>Paramètres
  index
 
-dans Index de l’enregistrement à récupérer. L’index se trouve dans la plage 0 à `count`-1, où `count` est retourné par [IDiaEnumDebugStreamData :: get_Count](../../debugger/debug-interface-access/idiaenumdebugstreamdata-get-count.md).
+dans Index de l’enregistrement à récupérer. L’index se trouve dans la plage de 0 à `count` -1, où `count` est retourné par [IDiaEnumDebugStreamData :: get_Count](../../debugger/debug-interface-access/idiaenumdebugstreamdata-get-count.md).
 
  cbData
 
 dans Taille de la mémoire tampon de données, en octets.
 
- cbData
+ pcbData
 
-à Retourne le nombre d’octets retournés. Si `data` est `NULL`, `pcbData` contient le nombre total d’octets de données disponibles dans l’enregistrement spécifié.
+à Retourne le nombre d’octets retournés. Si `data` a `NULL` la valeur, `pcbData` contient le nombre total d’octets de données disponibles dans l’enregistrement spécifié.
 
  data[]
 
 à Mémoire tampon qui est renseignée avec les données de l’enregistrement de flux de débogage.
 
-## <a name="return-value"></a>Valeur de retour
- En cas de réussite, retourne `S_OK` ; Sinon, retourne un code d’erreur. Retourne `E_INVALIDARG` pour les paramètres non valides et si le paramètre `index` est hors limites.
+## <a name="return-value"></a>Valeur renvoyée
+ En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur. Retourne `E_INVALIDARG` pour les paramètres non valides et si le `index` paramètre est hors limites.
 
 ## <a name="see-also"></a>Voir aussi
 - [IDiaEnumDebugStreamData](../../debugger/debug-interface-access/idiaenumdebugstreamdata.md)

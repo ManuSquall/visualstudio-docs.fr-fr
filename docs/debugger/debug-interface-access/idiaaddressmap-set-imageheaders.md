@@ -1,7 +1,7 @@
 ---
 title: IDiaAddressMap::set_imageHeaders | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ef17e1073c67ede75d075b18773129c287349c0d
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 8ded09d64a071c12e14de1597c21aad3872cacf4
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72745013"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85468545"
 ---
 # <a name="idiaaddressmapset_imageheaders"></a>IDiaAddressMap::set_imageHeaders
 Définit les en-têtes d’image pour activer la traduction d’adresses virtuelles relative.
@@ -39,19 +39,19 @@ dans Nombre d’octets de données d’en-tête. Doit être `n*sizeof(IMAGE_SECT
 
  data[]
 
-dans Tableau de structures de `IMAGE_SECTION_HEADER` à utiliser comme en-têtes d’image.
+dans Tableau de `IMAGE_SECTION_HEADER` structures à utiliser comme en-têtes d’image.
 
  originalHeaders
 
-dans Affectez la valeur `FALSE` si les en-têtes d’image proviennent de la nouvelle image, `TRUE` s’ils reflètent l’image d’origine avant une mise à niveau. En général, cette valeur est définie sur `TRUE` uniquement en association avec les appels à la méthode [IDiaAddressMap :: set_addressMap](../../debugger/debug-interface-access/idiaaddressmap-set-addressmap.md) .
+dans Affectez la valeur `FALSE` si les en-têtes d’image proviennent de la nouvelle image, `TRUE` s’ils reflètent l’image d’origine avant une mise à niveau. En règle générale, il est défini sur `TRUE` uniquement en association avec les appels à la méthode [IDiaAddressMap :: set_addressMap](../../debugger/debug-interface-access/idiaaddressmap-set-addressmap.md) .
 
-## <a name="return-value"></a>Valeur de retour
- En cas de réussite, retourne `S_OK` ; Sinon, retourne un code d’erreur.
+## <a name="return-value"></a>Valeur renvoyée
+ En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
-## <a name="remarks"></a>Notes
- La structure `IMAGE_SECTION_HEADER` est déclarée dans Winnt. h et représente le format d’en-tête de la section image de l’exécutable.
+## <a name="remarks"></a>Remarques
+ La `IMAGE_SECTION_HEADER` structure est déclarée dans Winnt. h et représente le format d’en-tête de la section image de l’exécutable.
 
- Les calculs d’adresses virtuelles relatifs dépendent des valeurs de `IMAGE_SECTION_HEADER`. En règle générale, le DIA les récupère à partir du fichier de base de données du programme (. pdb). Si ces valeurs sont manquantes, le DIA n’est pas en mesure de calculer des adresses virtuelles relatives et la méthode [IDiaAddressMap :: get_relativeVirtualAddressEnabled](../../debugger/debug-interface-access/idiaaddressmap-get-relativevirtualaddressenabled.md) retourne `FALSE`. Le client doit ensuite appeler la méthode [IDiaAddressMap ::P ut_relativevirtualaddressenabled](../../debugger/debug-interface-access/idiaaddressmap-put-relativevirtualaddressenabled.md) pour activer les calculs d’adresses virtuelles relatifs après avoir fourni les en-têtes d’image manquants à partir de l’image elle-même.
+ Les calculs d’adresses virtuelles relatifs dépendent des `IMAGE_SECTION_HEADER` valeurs. En règle générale, le DIA les récupère à partir du fichier de base de données du programme (. pdb). Si ces valeurs sont manquantes, le DIA n’est pas en mesure de calculer des adresses virtuelles relatives et la méthode [IDiaAddressMap :: get_relativeVirtualAddressEnabled](../../debugger/debug-interface-access/idiaaddressmap-get-relativevirtualaddressenabled.md) retourne `FALSE` . Le client doit ensuite appeler la méthode [IDiaAddressMap ::p ut_relativeVirtualAddressEnabled](../../debugger/debug-interface-access/idiaaddressmap-put-relativevirtualaddressenabled.md) pour activer les calculs d’adresses virtuelles relatifs après avoir fourni les en-têtes d’image manquants à partir de l’image elle-même.
 
 ## <a name="see-also"></a>Voir aussi
 - [IDiaAddressMap](../../debugger/debug-interface-access/idiaaddressmap.md)

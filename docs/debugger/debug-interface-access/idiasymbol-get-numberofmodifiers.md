@@ -1,7 +1,7 @@
 ---
 title: IDiaSymbol::get_numberOfModifiers | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 ms.assetid: 61ff7431-1994-4f7e-a182-1817f16f60a9
@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e034f081f8a279a65134c40e5ee485cd1d08d9b3
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 42f1e1b4e918acce3bfd749532283f6e3fb6e1ac
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72739669"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85462741"
 ---
 # <a name="idiasymbolget_numberofmodifiers"></a>IDiaSymbol::get_numberOfModifiers
 Récupère le nombre de modificateurs appliqués au type d’origine.
@@ -32,8 +32,8 @@ HRESULT get_numberOfModifiers(
 
 à Pointeur vers un `DWORD` qui spécifie le nombre de modificateurs appliqués au type d’origine.
 
-## <a name="return-value"></a>Valeur de retour
- En cas de réussite, retourne `S_OK` ; Sinon, retourne `S_FALSE` ou un code d’erreur.
+## <a name="return-value"></a>Valeur renvoyée
+ En cas de réussite, retourne `S_OK` ; sinon, retourne `S_FALSE` ou un code d’erreur.
 
 ## <a name="see-also"></a>Voir aussi
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

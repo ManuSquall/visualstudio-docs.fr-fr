@@ -1,7 +1,7 @@
 ---
 title: CV_call_e | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5deb59d4bbee06e505ba10bf1d4f08b1b06aa62d
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: afab1aef58616bfa925fd9f37aacf195eb569c96
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72745350"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85462140"
 ---
 # <a name="cv_call_e"></a>CV_call_e
 Spécifie la Convention d’appel d’une fonction.
@@ -47,14 +47,14 @@ CV_CALL_NEAR_STD spécifie une convention d’appel de fonction à l’aide d’
 
 CV_CALL_NEAR_SYS spécifie une convention d’appel de fonction à l’aide d’un appel near System.
 
-CV_CALL_THISCALL spécifie une convention d’appel de fonction à l’aide de `this` appel (pointeur `this` passé dans le registre).
+CV_CALL_THISCALL spécifie une convention d’appel de fonction à l’aide `this` d’un appel ( `this` pointeur passé dans le registre).
 
 CV_CALL_CLRCALL spécifie une convention d’appel de fonction utilisée par le Common Language Runtime (CLR) (également appelé Convention d’appel de code managé).
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
 Les valeurs de cette énumération sont retournées par un appel à la méthode [IDiaSymbol :: get_callingConvention](../../debugger/debug-interface-access/idiasymbol-get-callingconvention.md) .
 
-## <a name="requirements"></a>spécifications
+## <a name="requirements"></a>Configuration requise
 En-tête : cvconst. h
 
 ## <a name="see-also"></a>Voir aussi

@@ -1,7 +1,7 @@
 ---
 title: CV_access_e | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bbe338ba9d3aa6cbc795606c3fa285526afdfd36
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 00be9f52b8cac067e1d8482fe0378737c68909c4
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72745370"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85462147"
 ---
 # <a name="cv_access_e"></a>CV_access_e
 Spécifie la portée de la visibilité (niveau d’accès) des variables et des fonctions membres.
@@ -33,16 +33,16 @@ typedef enum CV_access_e {
 ```
 
 ## <a name="elements"></a>Éléments
-Le membre CV_private a un accès privé.
+CV_private membre possède un accès privé.
 
-Le membre CV_protected a un accès protégé.
+CV_protected membre a accès protégé.
 
-Le membre CV_public a un accès public.
+CV_public membre a un accès public.
 
-## <a name="remarks"></a>Notes
-Le spécificateur d’accès `friend` n’est pas inclus ici, car il est généralement utilisé par les fonctions non-membres qui ont accès aux éléments privés et protégés de la classe. Utilisez la méthode [IDiaSymbol :: get_symTag](../../debugger/debug-interface-access/idiasymbol-get-symtag.md) pour rechercher des symboles avec accès `SymTagFriend`.
+## <a name="remarks"></a>Remarques
+Le `friend` spécificateur d’accès n’est pas inclus ici, car il est généralement utilisé par les fonctions non-membres qui ont accès aux éléments privés et protégés de la classe. Utilisez la méthode [IDiaSymbol :: get_symTag](../../debugger/debug-interface-access/idiasymbol-get-symtag.md) pour rechercher des symboles avec `SymTagFriend` accès.
 
-## <a name="requirements"></a>spécifications
+## <a name="requirements"></a>Configuration requise
 En-tête : cvconst. h
 
 ## <a name="see-also"></a>Voir aussi

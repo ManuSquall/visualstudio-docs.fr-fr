@@ -1,7 +1,7 @@
 ---
 title: CustomType | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -12,20 +12,20 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: be5ed68ef6923bfc58ebc072f27268e8d4e163b2
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: b5398cbd4b2678bd435673eb8b30155d3593d34c
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72745373"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85462154"
 ---
 # <a name="customtype"></a>CustomType
-Les types définis par le fournisseur (types spécifiques au compilateur) sont identifiés par un symbole de `SymTagCustomType`.
+Les types définis par le fournisseur (types spécifiques au compilateur) sont identifiés par un `SymTagCustomType` symbole.
 
 ## <a name="properties"></a>Propriétés
  Le tableau suivant présente des propriétés valides supplémentaires pour ce type de symbole.
 
-|Property|Type de données|Description|
+|Propriété|Type de données|Description|
 |--------------|---------------|-----------------|
 |[IDiaSymbol::get_oemId](../../debugger/debug-interface-access/idiasymbol-get-oemid.md)|`DWORD`|Identificateur de l’OEM.|
 |[IDiaSymbol::get_oemSymbolId](../../debugger/debug-interface-access/idiasymbol-get-oemsymbolid.md)|`DWORD`|ID interne de l’OEM.|

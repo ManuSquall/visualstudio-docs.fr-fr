@@ -1,7 +1,7 @@
 ---
 title: IDiaEnumDebugStreamData::Skip | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f2f331d7a91e9dbc6dbf0dea2e8a5b91f08de584
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 1df1f15e87275da05467de76221d9de2ac6bf237
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72744826"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85468433"
 ---
 # <a name="idiaenumdebugstreamdataskip"></a>IDiaEnumDebugStreamData::Skip
 Ignore un nombre spécifié d’enregistrements dans une séquence énumérée.
@@ -35,8 +35,8 @@ HRESULT Skip ( 
 
 dans Nombre d’enregistrements à ignorer dans la séquence énumérée.
 
-## <a name="return-value"></a>Valeur de retour
- En cas de réussite, retourne `S_OK` ; Sinon, retourne `S_FALSE` s’il n’y a plus d’enregistrements à ignorer.
+## <a name="return-value"></a>Valeur renvoyée
+ En cas de réussite, retourne `S_OK` ; sinon, retourne `S_FALSE` s’il n’y a plus d’enregistrements à ignorer.
 
 ## <a name="see-also"></a>Voir aussi
 - [IDiaEnumDebugStreamData](../../debugger/debug-interface-access/idiaenumdebugstreamdata.md)
