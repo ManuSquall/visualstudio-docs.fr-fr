@@ -1,7 +1,7 @@
 ---
 title: IDiaEnumSymbolsByAddr | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7d8cddaa39635be534e2247b48a370ed88b29ab4
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 92062883ea97fdc6251ffa600e31230fb448f73b
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72743811"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85467581"
 ---
 # <a name="idiaenumsymbolsbyaddr"></a>IDiaEnumSymbolsByAddr
 Énumère par adresse les différents symboles contenus dans la source de données.
@@ -29,7 +29,7 @@ IDiaEnumSymbolsByAddr : IUnknown
 ```
 
 ## <a name="methods-in-vtable-order"></a>Méthodes dans l'ordre Vtable
-Le tableau suivant présente les méthodes de `IDiaEnumSymbolsByAddr`.
+Le tableau suivant présente les méthodes de `IDiaEnumSymbolsByAddr` .
 
 |Méthode|Description|
 |------------|-----------------|
@@ -40,8 +40,8 @@ Le tableau suivant présente les méthodes de `IDiaEnumSymbolsByAddr`.
 |[IDiaEnumSymbolsByAddr::Prev](../../debugger/debug-interface-access/idiaenumsymbolsbyaddr-prev.md)|Récupère les symboles précédents dans l’ordre par adresse. Met à jour la position de l’énumérateur en fonction du nombre d’éléments extraits.|
 |[IDiaEnumSymbolsByAddr::Clone](../../debugger/debug-interface-access/idiaenumsymbolsbyaddr-clone.md)|Effectue une copie d’un objet.|
 
-## <a name="remarks"></a>Notes
-Cette interface fournit des symboles regroupés par adresse. Pour utiliser des symboles regroupés par type, par exemple `SymTagUDT` (type défini par l’utilisateur) ou `SymTagBaseClass`, utilisez l’interface [IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md) .
+## <a name="remarks"></a>Remarques
+Cette interface fournit des symboles regroupés par adresse. Pour utiliser des symboles regroupés par type, par exemple `SymTagUDT` (type défini par l’utilisateur) ou `SymTagBaseClass` , utilisez l’interface [IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md) .
 
 ## <a name="notes-for-callers"></a>Notes pour les appelants
 Obtenez cette interface en appelant la méthode [IDiaSession :: getSymbolsByAddr](../../debugger/debug-interface-access/idiasession-getsymbolsbyaddr.md) .
@@ -93,12 +93,12 @@ void ShowSymbolsByAddress(IDiaSession *pSession)
 }
 ```
 
-## <a name="requirements"></a>spécifications
+## <a name="requirements"></a>Configuration requise
 En-tête : Dia2. h
 
 Bibliothèque : diaguids. lib
 
-DLL : Msdia80. dll
+DLL : msdia80.dll
 
 ## <a name="see-also"></a>Voir aussi
 - [Interfaces (SDK Debug Interface Access)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)

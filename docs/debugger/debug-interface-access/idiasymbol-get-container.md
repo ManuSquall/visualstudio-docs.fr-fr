@@ -1,7 +1,7 @@
 ---
 title: IDiaSymbol::get_container | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0533eb2cdea1dd3e1bea3d64e2b94ce29a09353d
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 62bb2f29d737aeb09cc228038be96480922e204c
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72740781"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85464029"
 ---
 # <a name="idiasymbolget_container"></a>IDiaSymbol::get_container
 Cette fonction récupère un pointeur vers un symbole représentant le parent/conteneur de ce symbole.
@@ -35,18 +35,18 @@ HRESULT get_container(
 
 à Retourne un pointeur vers un `IDiaSymbol` contenant des informations sur le conteneur de ce symbole.
 
-## <a name="return-value"></a>Valeur de retour
+## <a name="return-value"></a>Valeur renvoyée
  En cas de réussite, retourne S_OK ; Sinon, retourne S_FALSE ou un code d’erreur.
 
 > [!NOTE]
-> La valeur de retour S_FALSE signifie que la propriété n’est pas disponible pour le symbole.
+> Une valeur de retour de S_FALSE signifie que la propriété n’est pas disponible pour le symbole.
 
-## <a name="requirements"></a>spécifications
+## <a name="requirements"></a>Configuration requise
 
-|Exigence|Description|
+|Condition requise|Description|
 |-----------------|-----------------|
 |En-tête :|dia2.h|
-|Version :|DIA SDK v 8.0|
+|Version :|DIA SDK v 8.0|
 
 ## <a name="see-also"></a>Voir aussi
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

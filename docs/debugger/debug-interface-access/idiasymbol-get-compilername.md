@@ -1,7 +1,7 @@
 ---
 title: IDiaSymbol::get_compilerName | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3fd64d2f1a18df2d41a7d39f4ce474d601e194c7
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 49491d2d9934a20e9d40c0dcd5aadeed3ef27ca7
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72740814"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85464078"
 ---
 # <a name="idiasymbolget_compilername"></a>IDiaSymbol::get_compilerName
 Retourne le nom du compilateur utilisé pour générer le [compiland](../../debugger/debug-interface-access/compiland.md).
@@ -31,22 +31,22 @@ HRESULT get_compilerName (
 ```
 
 #### <a name="parameters"></a>Paramètres
- `pName` pointeur vers un BSTR qui contiendra le nom Unicode du compilateur.
+ `pName`Pointeur vers un BSTR qui contient le nom Unicode du compilateur.
 
-## <a name="return-value"></a>Valeur de retour
- En cas de réussite, retourne `S_OK` ; Sinon, retourne `S_FALSE` ou un code d’erreur.
+## <a name="return-value"></a>Valeur renvoyée
+ En cas de réussite, retourne `S_OK` ; sinon, retourne `S_FALSE` ou un code d’erreur.
 
 > [!NOTE]
-> Une valeur de retour de `S_FALSE` signifie que la propriété n’est pas disponible pour le symbole.
+> Une valeur de retour `S_FALSE` signifie que la propriété n’est pas disponible pour le symbole.
 
 ## <a name="remarks"></a>Notes
 
-## <a name="requirements"></a>spécifications
+## <a name="requirements"></a>Spécifications
 
-|Exigence|Description|
+|Condition requise|Description|
 |-----------------|-----------------|
 |En-tête :|dia2.h|
-|Version :|DIA SDK v 8.0|
+|Version :|DIA SDK v 8.0|
 
 ## <a name="see-also"></a>Voir aussi
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

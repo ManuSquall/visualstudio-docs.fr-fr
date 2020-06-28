@@ -1,7 +1,7 @@
 ---
 title: IDiaSession::symsAreEquiv | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 61cfc582f11670af8c956c3334681284ce5172a6
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: fe609d53571e6ffcd8e18919f0351e29c0329b46
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72741870"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85465362"
 ---
 # <a name="idiasessionsymsareequiv"></a>IDiaSession::symsAreEquiv
 Vérifie si deux symboles sont équivalents.
@@ -40,8 +40,8 @@ dans Premier objet [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol
 
 dans Deuxième `IDiaSymbol` objet utilisé dans la comparaison.
 
-## <a name="return-value"></a>Valeur de retour
- Si les symboles sont équivalents, retourne `S_OK` ; Sinon, retourne `S_FALSE`, les symboles ne sont pas équivalents. Sinon, retourne un code d’erreur.
+## <a name="return-value"></a>Valeur renvoyée
+ Si les symboles sont équivalents, retourne `S_OK` ; sinon, retourne `S_FALSE` , les symboles ne sont pas équivalents. Sinon, retourne un code d’erreur.
 
 ## <a name="see-also"></a>Voir aussi
 - [IDiaSession](../../debugger/debug-interface-access/idiasession.md)

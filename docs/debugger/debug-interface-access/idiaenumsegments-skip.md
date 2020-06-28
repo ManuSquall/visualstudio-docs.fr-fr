@@ -1,7 +1,7 @@
 ---
 title: IDiaEnumSegments::Skip | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: efedd0e24c96259f1c9e9b6fc7522ee250bd4b25
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: a17d8be6292a67475ae259e519749ba2422894a0
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72744166"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85467952"
 ---
 # <a name="idiaenumsegmentsskip"></a>IDiaEnumSegments::Skip
 Ignore un nombre spécifié de segments dans une séquence d’énumération.
@@ -35,8 +35,8 @@ HRESULT Skip ( 
 
 dans Nombre de segments dans la séquence d’énumération à ignorer.
 
-## <a name="return-value"></a>Valeur de retour
- En cas de réussite, retourne `S_OK` ; Sinon, retourne `S_FALSE` s’il n’y a plus de segments à ignorer.
+## <a name="return-value"></a>Valeur renvoyée
+ En cas de réussite, retourne `S_OK` ; sinon, retourne `S_FALSE` s’il n’y a plus de segments à ignorer.
 
 ## <a name="see-also"></a>Voir aussi
 - [IDiaEnumSegments](../../debugger/debug-interface-access/idiaenumsegments.md)

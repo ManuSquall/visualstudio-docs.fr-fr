@@ -1,7 +1,7 @@
 ---
 title: IDiaSymbol::get_hasEH | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1f08cd539d3042ff0715a5c84445e4cc40214a41
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 178bc2744e74867c1954474a20e8c3640ade49c5
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72740536"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85463756"
 ---
 # <a name="idiasymbolget_haseh"></a>IDiaSymbol::get_hasEH
-Récupère un indicateur qui spécifie si la fonction contient une gestion des exceptions C++de style non managée (par exemple, un bloc try/catch).
+Récupère un indicateur qui spécifie si la fonction contient une gestion des exceptions de style C++ non managée (par exemple, un bloc try/catch).
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -33,20 +33,20 @@ HRESULT get_hasEH(
 #### <a name="parameters"></a>Paramètres
  `pFlag`
 
-à Retourne `TRUE` si la fonction a une C++gestion des exceptions de style quelconque ; Sinon, retourne `FALSE`.
+à Retourne `TRUE` si la fonction a une gestion des exceptions de style C++; sinon, retourne `FALSE` .
 
-## <a name="return-value"></a>Valeur de retour
- En cas de réussite, retourne `S_OK` ; Sinon, retourne `S_FALSE` ou un code d’erreur.
+## <a name="return-value"></a>Valeur renvoyée
+ En cas de réussite, retourne `S_OK` ; sinon, retourne `S_FALSE` ou code d’erreur.
 
 > [!NOTE]
-> Une valeur de retour de `S_FALSE` signifie que la propriété n’est pas disponible pour le symbole.
+> Une valeur de retour `S_FALSE` signifie que la propriété n’est pas disponible pour le symbole.
 
-## <a name="requirements"></a>spécifications
+## <a name="requirements"></a>Configuration requise
 
-|Exigence|Description|
+|Condition requise|Description|
 |-----------------|-----------------|
 |En-tête :|dia2.h|
-|Version :|DIA SDK v 8.0|
+|Version :|DIA SDK v 8.0|
 
 ## <a name="see-also"></a>Voir aussi
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

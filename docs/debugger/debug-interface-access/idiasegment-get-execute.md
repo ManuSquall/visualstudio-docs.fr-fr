@@ -1,7 +1,7 @@
 ---
 title: IDiaSegment::get_execute | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4a2673880b80f229b05f5efba5c5dfb708aec0f7
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 349b9b865223e2df0083e12d4c8bfd26ae2c2643
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72742446"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85466006"
 ---
 # <a name="idiasegmentget_execute"></a>IDiaSegment::get_execute
 Récupère un indicateur qui signale si le segment est exécutable.
@@ -33,9 +33,9 @@ HRESULT get_execute ( 
 #### <a name="parameters"></a>Paramètres
  `pRetVal`
 
-à Retourne `TRUE` si le segment est marqué comme exécutable ; Sinon, retourne `FALSE`.
+à Retourne `TRUE` si le segment est marqué comme exécutable ; sinon, retourne `FALSE` .
 
-## <a name="return-value"></a>Valeur de retour
+## <a name="return-value"></a>Valeur renvoyée
  En cas de réussite, retourne `S_OK`. Retourne `S_FALSE` si cette propriété n’est pas prise en charge. Sinon, retourne un code d'erreur.
 
 ## <a name="see-also"></a>Voir aussi

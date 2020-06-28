@@ -1,7 +1,7 @@
 ---
 title: IDiaSession::findLines | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d6082bfe8a3eee00d425441ff44a6eadd1c36e27
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 1a9867c3997a73f349ba7a9989cb8450f9bd2d3c
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72742125"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85465677"
 ---
 # <a name="idiasessionfindlines"></a>IDiaSession::findLines
 Récupère les numéros de ligne dans le module de journalisation et les identificateurs de fichier source spécifiés.
@@ -45,8 +45,8 @@ dans Objet [IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile
 
 à Retourne un objet [IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md) qui contient une liste des numéros de ligne récupérés.
 
-## <a name="return-value"></a>Valeur de retour
- En cas de réussite, retourne `S_OK` ; Sinon, retourne un code d’erreur.
+## <a name="return-value"></a>Valeur renvoyée
+ En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
 ## <a name="see-also"></a>Voir aussi
 - [IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md)

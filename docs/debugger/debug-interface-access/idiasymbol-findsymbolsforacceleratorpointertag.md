@@ -1,7 +1,7 @@
 ---
 title: IDiaSymbol::findSymbolsForAcceleratorPointerTag | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 ms.assetid: fb66852c-c5f7-4140-b9fe-20cb4e51a9fe
@@ -10,15 +10,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1544471bd4ff9166d4c8f4c10f48840db6f576f3
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 3219312a96e5ad23c0eef519d077faedacb2b824
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72741127"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85464421"
 ---
 # <a name="idiasymbolfindsymbolsforacceleratorpointertag"></a>IDiaSymbol::findSymbolsForAcceleratorPointerTag
-Retourne le nombre de balises de pointeur d' C++ accélérateur dans une fonction de stub amp.
+Retourne le nombre de balises de pointeur d’accélérateur dans une fonction stub C++ AMP.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -35,10 +35,10 @@ dans Valeur de balise de pointeur pour laquelle les enregistrements de symboles 
 
  `ppResult`
 
-à Pointeur vers un pointeur d’interface `IDiaEnumSymbols` qui est initialisé avec le résultat.
+à Pointeur vers un `IDiaEnumSymbols` pointeur d’interface qui est initialisé avec le résultat.
 
-## <a name="return-value"></a>Valeur de retour
- En cas de réussite, retourne `S_OK` ; Sinon, retourne `S_FALSE` ou un code d’erreur.
+## <a name="return-value"></a>Valeur renvoyée
+ En cas de réussite, retourne `S_OK` ; sinon, retourne `S_FALSE` ou un code d’erreur.
 
 ## <a name="see-also"></a>Voir aussi
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

@@ -1,7 +1,7 @@
 ---
 title: IDiaSession::findSymbolByRVAEx | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8d9b27cee1c8df3eb26d64f4f860c33e0d4bf45f
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 807025265de5c088f1af24ec76402cdbf3a516a7
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72742034"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85465551"
 ---
 # <a name="idiasessionfindsymbolbyrvaex"></a>IDiaSession::findSymbolByRVAEx
 Récupère un type de symbole spécifié qui contient ou est le plus proche de, une adresse virtuelle relative (RVA) et un offset spécifiés.
@@ -48,10 +48,10 @@ dans Type de symbole à trouver. Les valeurs sont extraites de l’énumération
 
  `displacement`
 
-à Retourne une valeur spécifiant un offset à partir de l’adresse virtuelle relative spécifiée dans `rva`.
+à Retourne une valeur spécifiant un offset à partir de l’adresse virtuelle relative spécifiée dans `rva` .
 
-## <a name="return-value"></a>Valeur de retour
- En cas de réussite, retourne `S_OK` ; Sinon, retourne un code d’erreur.
+## <a name="return-value"></a>Valeur renvoyée
+ En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
 ## <a name="example"></a>Exemple
 

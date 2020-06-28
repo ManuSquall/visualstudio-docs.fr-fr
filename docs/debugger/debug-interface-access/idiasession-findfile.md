@@ -1,7 +1,7 @@
 ---
 title: IDiaSession::findFile | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d9751127007b4e7823cf6d2ae35ed2fe80cb83b8
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 2ba8422ed2be8f06ac64fb9c7fa81c5b1b3c3f3c
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72742281"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85465824"
 ---
 # <a name="idiasessionfindfile"></a>IDiaSession::findFile
 Récupère les fichiers sources par compiland et nom.
@@ -40,7 +40,7 @@ dans Objet [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) qui
 
  `name`
 
-dans Spécifie le nom du fichier source à récupérer. Définissez ce paramètre sur `NULL` pour tous les fichiers sources à récupérer.
+dans Spécifie le nom du fichier source à récupérer. Affectez à ce paramètre la valeur `NULL` pour tous les fichiers sources à récupérer.
 
  `option`
 
@@ -50,8 +50,8 @@ dans Spécifie les options de comparaison appliquées à la recherche de nom. Le
 
 à Retourne un objet [IDiaEnumSourceFiles](../../debugger/debug-interface-access/idiaenumsourcefiles.md) qui contient une liste des fichiers sources récupérés.
 
-## <a name="return-value"></a>Valeur de retour
- En cas de réussite, retourne `S_OK`; Sinon, retourne un code d’erreur.
+## <a name="return-value"></a>Valeur renvoyée
+ En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
 ## <a name="example"></a>Exemple
 

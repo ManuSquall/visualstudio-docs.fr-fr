@@ -1,7 +1,7 @@
 ---
 title: IDiaEnumTables::Next | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 688652fe3915e1974d5d0e1d04fb1ac075863d8c
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 9d425e16e18338c0269ccbf88030a47c7b184507
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72743742"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85467525"
 ---
 # <a name="idiaenumtablesnext"></a>IDiaEnumTables::Next
 Récupère un nombre spécifié de tables dans la séquence d’énumération.
@@ -45,7 +45,7 @@ dans Nombre de tables dans l’énumérateur à récupérer.
 
 à Retourne le nombre de tables dans l’énumérateur extrait.
 
-## <a name="return-value"></a>Valeur de retour
+## <a name="return-value"></a>Valeur renvoyée
  En cas de réussite, retourne `S_OK`. Retourne `S_FALSE` s’il n’y a plus de tables. Sinon, retourne un code d'erreur.
 
 ## <a name="see-also"></a>Voir aussi

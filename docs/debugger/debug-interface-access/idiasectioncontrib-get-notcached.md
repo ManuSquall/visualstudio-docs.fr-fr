@@ -1,7 +1,7 @@
 ---
 title: IDiaSectionContrib::get_notCached | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 210f923c894c423fbdba75b1deb503ea83068a0d
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 47a7c0703568d044bcda93fde7c9ecee0dea52a3
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72742597"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85466209"
 ---
 # <a name="idiasectioncontribget_notcached"></a>IDiaSectionContrib::get_notCached
 Récupère un indicateur qui indique si la section ne peut pas être mise en cache.
@@ -33,9 +33,9 @@ HRESULT get_notCached ( 
 #### <a name="parameters"></a>Paramètres
  `pRetVal`
 
-à Retourne `TRUE` si la section ne peut pas être mise en cache ; Sinon, retourne `FALSE`.
+à Retourne `TRUE` si la section ne peut pas être mise en cache ; sinon, retourne `FALSE` .
 
-## <a name="return-value"></a>Valeur de retour
+## <a name="return-value"></a>Valeur renvoyée
  En cas de réussite, retourne `S_OK`. Retourne `S_FALSE` si cette propriété n’est pas prise en charge. Sinon, retourne un code d'erreur.
 
 ## <a name="see-also"></a>Voir aussi

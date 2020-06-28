@@ -1,7 +1,7 @@
 ---
 title: IDiaSymbol::get_addressTaken | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f452aa01f29d25ad1674c6bc2f5494a745733793
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 6b62a848d70b59a1764220c806123b0edd03edf2
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72741060"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85464351"
 ---
 # <a name="idiasymbolget_addresstaken"></a>IDiaSymbol::get_addressTaken
 Récupère un indicateur qui indique si un autre symbole fait référence à l’adresse de ce symbole.
@@ -33,28 +33,28 @@ HRESULT get_addressTaken ( 
 #### <a name="parameters"></a>Paramètres
  `pRetVal`
 
-à Retourne `TRUE` si un autre symbole fait référence à cette adresse ; Sinon, retourne `FALSE`.
+à Retourne `TRUE` si un autre symbole fait référence à cette adresse ; sinon, retourne `FALSE` .
 
-## <a name="return-value"></a>Valeur de retour
- En cas de réussite, retourne `S_OK` ; Sinon, retourne `S_FALSE` ou un code d’erreur.
+## <a name="return-value"></a>Valeur renvoyée
+ En cas de réussite, retourne `S_OK` ; sinon, retourne `S_FALSE` ou un code d’erreur.
 
 > [!NOTE]
-> Une valeur de retour de `S_FALSE` signifie que la propriété n’est pas disponible pour le symbole.
+> Une valeur de retour `S_FALSE` signifie que la propriété n’est pas disponible pour le symbole.
 
 ## <a name="example"></a>Exemple
- Dans l’exemple suivant, `B` référence `A`. Par conséquent, la méthode de `get_addressTaken` de `A`de symboles retourne `TRUE`.
+ Dans l’exemple suivant, `B` références `A` . Par conséquent, `A` la `get_addressTaken` méthode du symbole retourne `TRUE` .
 
 ```C++
 int A  = 0;
 int* B = &A;
 ```
 
-## <a name="requirements"></a>spécifications
+## <a name="requirements"></a>Configuration requise
 
-|Exigence|Description|
+|Condition requise|Description|
 |-----------------|-----------------|
 |En-tête :|dia2.h|
-|Version :|DIA SDK v 7.0|
+|Version :|DIA SDK v 7.0|
 
 ## <a name="see-also"></a>Voir aussi
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

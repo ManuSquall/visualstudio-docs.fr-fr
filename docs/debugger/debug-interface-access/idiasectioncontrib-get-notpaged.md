@@ -1,7 +1,7 @@
 ---
 title: IDiaSectionContrib::get_notPaged | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cae6940ce69bf9cd39c1002cc522af993fc59b6d
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 1a1bf780bebf0bf93de0a23a2c8ddc99d21ff110
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72742582"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85466202"
 ---
 # <a name="idiasectioncontribget_notpaged"></a>IDiaSectionContrib::get_notPaged
 Récupère un indicateur qui signale si la section ne peut pas être paginée en mémoire.
@@ -32,9 +32,9 @@ HRESULT get_notPaged ( 
 
 #### <a name="parameters"></a>Paramètres
  `pRetVal`
-- [out, retval] Retourne `TRUE` si la section ne peut pas être paginée ; Sinon, retourne `FALSE`.
+- [out, retval] Retourne `TRUE` si la section ne peut pas être paginée ; sinon, retourne `FALSE` .
 
-## <a name="return-value"></a>Valeur de retour
+## <a name="return-value"></a>Valeur renvoyée
  En cas de réussite, retourne `S_OK`. Retourne `S_FALSE` si cette propriété n’est pas prise en charge. Sinon, retourne un code d'erreur.
 
 ## <a name="see-also"></a>Voir aussi

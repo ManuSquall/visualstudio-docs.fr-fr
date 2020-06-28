@@ -1,7 +1,7 @@
 ---
 title: IDiaLoadCallback2::RestrictDBGAccess | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 79756c2f9ab9e69fa45041e2ddaa2ff2119c27c5
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 8fd54587127d434f79cf8d80aa130f5135bb7aeb
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72743013"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85466713"
 ---
 # <a name="idialoadcallback2restrictdbgaccess"></a>IDiaLoadCallback2::RestrictDBGAccess
 Détermine si la recherche d’informations de débogage est autorisée à partir des fichiers. dbg.
@@ -29,9 +29,9 @@ HRESULT RestrictDBGAccess();
 ```
 
 ## <a name="return-value"></a>Valeur de retour
- En cas de réussite, retourne `S_OK` ; Sinon, retourne un code d’erreur.
+ En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
  Toute valeur de retour autre que `S_OK` pour empêcher la recherche d’informations de débogage à partir de fichiers. dbg.
 
 ## <a name="see-also"></a>Voir aussi

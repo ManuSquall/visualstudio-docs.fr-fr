@@ -1,7 +1,7 @@
 ---
 title: IDiaPropertyStorage::ReadBOOL | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d776e37bab189e61d0264f4cbda24f89cb4501ce
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 7d94e38ade7b44d7458a0918080214d00e0000aa
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72742935"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85466608"
 ---
 # <a name="idiapropertystoragereadbool"></a>IDiaPropertyStorage::ReadBOOL
-Lit `BOOL` valeurs dans un jeu de propriétés.
+Lit les `BOOL` valeurs dans un jeu de propriétés.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -34,17 +34,17 @@ HRESULT ReadBOOL ( 
 #### <a name="parameters"></a>Paramètres
  `id`
 
-dans Identificateur de la propriété à lire (`PROPID` est défini dans WTypes. h en tant que `ULONG`).
+dans Identificateur de la propriété à lire ( `PROPID` défini dans WTypes. h en tant que `ULONG` ).
 
  `pValue`
 
 à Retourne la valeur de la propriété.
 
-## <a name="return-value"></a>Valeur de retour
- En cas de réussite, retourne `S_OK` ; Sinon, retourne un code d’erreur. Retourne `E_INVALIDARG` si la propriété n’est pas de type `BOOL`.
+## <a name="return-value"></a>Valeur renvoyée
+ En cas de réussite, retourne `S_OK` ; sinon, retourne un code d’erreur. Retourne `E_INVALIDARG` si la propriété n’est pas de type `BOOL` .
 
-## <a name="remarks"></a>Notes
- Pour obtenir des résultats cohérents, interprétez la valeur `BOOL` afin que les valeurs autres que zéro soient `TRUE` et zéro est `FALSE`.
+## <a name="remarks"></a>Remarques
+ Pour obtenir des résultats cohérents, interpréter la `BOOL` valeur de sorte que les valeurs autres que zéro soient `TRUE` et zéro est `FALSE` .
 
 ## <a name="see-also"></a>Voir aussi
 - [IDiaPropertyStorage](../../debugger/debug-interface-access/idiapropertystorage.md)
