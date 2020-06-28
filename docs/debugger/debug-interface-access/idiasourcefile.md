@@ -1,7 +1,7 @@
 ---
 title: IDiaSourceFile | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 08334c59ea061cee1618c76aa61ec6aa6fb8d7d4
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: c28559eb3b936505cf03c6499dd79178554645bf
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72741776"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85465163"
 ---
 # <a name="idiasourcefile"></a>IDiaSourceFile
 Représente un fichier source.
@@ -29,7 +29,7 @@ IDiaSourceFile : IUnknown
 ```
 
 ## <a name="methods-in-vtable-order"></a>Méthodes dans l'ordre Vtable
-Le tableau suivant présente les méthodes de `IDiaSourceFile`.
+Le tableau suivant présente les méthodes de `IDiaSourceFile` .
 
 |Méthode|Description|
 |------------|-----------------|
@@ -39,10 +39,10 @@ Le tableau suivant présente les méthodes de `IDiaSourceFile`.
 |[IDiaSourceFile::get_compilands](../../debugger/debug-interface-access/idiasourcefile-get-compilands.md)|Récupère un énumérateur du compilands avec des numéros de ligne référençant ce fichier.|
 |[IDiaSourceFile::get_checksum](../../debugger/debug-interface-access/idiasourcefile-get-checksum.md)|Récupère les octets de somme de contrôle.|
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
 
 ## <a name="notes-for-callers"></a>Notes pour les appelants
-Obtenez cette interface en appelant les méthodes [IDiaEnumSourceFiles :: Item](../../debugger/debug-interface-access/idiaenumsourcefiles-item.md) ou [IDiaEnumSourceFiles :: Next](../../debugger/debug-interface-access/idiaenumsourcefiles-next.md) . Pour plus d’informations, consultez l’exemple.
+Obtenez cette interface en appelant les méthodes [IDiaEnumSourceFiles :: Item](../../debugger/debug-interface-access/idiaenumsourcefiles-item.md) ou [IDiaEnumSourceFiles :: Next](../../debugger/debug-interface-access/idiaenumsourcefiles-next.md) . Pour plus de détails, voir les exemples.
 
 ## <a name="example"></a>Exemple
 Cette fonction affiche les noms de tous les fichiers sources contribuant à la table spécifiée.
@@ -72,12 +72,12 @@ void ShowSourceFiles(IDiaTable *pTable)
 }
 ```
 
-## <a name="requirements"></a>spécifications
+## <a name="requirements"></a>Configuration requise
 En-tête : Dia2. h
 
 Bibliothèque : diaguids. lib
 
-DLL : Msdia80. dll
+DLL : msdia80.dll
 
 ## <a name="see-also"></a>Voir aussi
 - [Interfaces (SDK Debug Interface Access)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)

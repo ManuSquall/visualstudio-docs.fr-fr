@@ -1,7 +1,7 @@
 ---
 title: IDiaSession::findLinesByAddr | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 328589df0e662ca27db634017005344d44491275
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 24c6d927d129a8005bf2e43c6bb69d6523cb8790
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72742118"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85465670"
 ---
 # <a name="idiasessionfindlinesbyaddr"></a>IDiaSession::findLinesByAddr
 Récupère les lignes d’un compiland spécifié qui contiennent une adresse spécifiée.
@@ -50,8 +50,8 @@ dans Spécifie le nombre d’octets de la plage d’adresses à couvrir avec cet
 
 à Retourne un objet [IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md) qui contient une liste de tous les numéros de ligne qui couvrent la plage d’adresses spécifiée.
 
-## <a name="return-value"></a>Valeur de retour
-En cas de réussite, retourne `S_OK`; Sinon, retourne un code d’erreur.
+## <a name="return-value"></a>Valeur renvoyée
+En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
 ## <a name="example"></a>Exemple
 Cet exemple montre une fonction qui obtient tous les numéros de ligne contenus dans une fonction à l’aide de l’adresse et de la longueur de la fonction.

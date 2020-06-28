@@ -1,7 +1,7 @@
 ---
 title: IDiaSymbol::get_hasSEH | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7e96216b5e33031405df3b01a3f76412a544bb51
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: e0f9e7b1dc2fb5a338dc2cd2edbf3cf9d0eb2441
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72740438"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85463665"
 ---
 # <a name="idiasymbolget_hasseh"></a>IDiaSymbol::get_hasSEH
-Récupère un indicateur qui spécifie si la fonction contient une [gestion structurée des exceptions (C++C/)](/cpp/cpp/structured-exception-handling-c-cpp) (par exemple, des blocs _ _ try/\__except).
+Récupère un indicateur qui spécifie si la fonction contient une [gestion structurée des exceptions (C/C++)](/cpp/cpp/structured-exception-handling-c-cpp) (par exemple, des blocs __try/ \_ _except).
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -33,21 +33,21 @@ HRESULT get_hasSEH(
 #### <a name="parameters"></a>Paramètres
  `pFlag`
 
-à Retourne `TRUE` si la fonction contient des blocs de gestion des exceptions structurés ; Sinon, retourne `FALSE`.
+à Retourne `TRUE` si la fonction contient des blocs de gestion structurée des exceptions ; sinon, retourne `FALSE` .
 
-## <a name="return-value"></a>Valeur de retour
- En cas de réussite, retourne `S_OK` ; Sinon, retourne `S_FALSE` ou un code d’erreur.
+## <a name="return-value"></a>Valeur renvoyée
+ En cas de réussite, retourne `S_OK` ; sinon, retourne `S_FALSE` ou code d’erreur.
 
 > [!NOTE]
-> Une valeur de retour de `S_FALSE` signifie que la propriété n’est pas disponible pour le symbole.
+> Une valeur de retour `S_FALSE` signifie que la propriété n’est pas disponible pour le symbole.
 
-## <a name="requirements"></a>spécifications
+## <a name="requirements"></a>Configuration requise
 
-|Exigence|Description|
+|Condition requise|Description|
 |-----------------|-----------------|
 |En-tête :|dia2.h|
-|Version :|DIA SDK v 8.0|
+|Version :|DIA SDK v 8.0|
 
 ## <a name="see-also"></a>Voir aussi
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
-- [Gestion structurée des exceptions (C/C++)](/cpp/cpp/structured-exception-handling-c-cpp)
+- [Structured Exception Handling (C/C++)](/cpp/cpp/structured-exception-handling-c-cpp)

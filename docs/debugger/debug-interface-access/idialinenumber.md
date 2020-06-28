@@ -1,7 +1,7 @@
 ---
 title: IDiaLineNumber | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 819fe28b9ba3fb95e749f0be53702dd7fdccf008
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: c5b1bafd47f4888d9fa352553c4337d0c6c932bd
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72743103"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85466790"
 ---
 # <a name="idialinenumber"></a>IDiaLineNumber
 Accède aux informations qui décrivent le processus de mappage d’un bloc d’octets de texte image à un numéro de ligne de fichier source.
@@ -29,7 +29,7 @@ IDiaLineNumber : IUnknown
 ```
 
 ## <a name="methods-in-vtable-order"></a>Méthodes dans l'ordre Vtable
-Le tableau suivant présente les méthodes de `IDiaLineNumber`.
+Le tableau suivant présente les méthodes de `IDiaLineNumber` .
 
 |Méthode|Description|
 |------------|-----------------|
@@ -48,13 +48,13 @@ Le tableau suivant présente les méthodes de `IDiaLineNumber`.
 |[IDiaLineNumber::get_statement](../../debugger/debug-interface-access/idialinenumber-get-statement.md)|Récupère un indicateur qui spécifie que ces informations de ligne décrivent le début d’une instruction dans la source du programme.|
 |[IDiaLineNumber::get_compilandId](../../debugger/debug-interface-access/idialinenumber-get-compilandid.md)|Récupère l’identificateur unique pour le compiland qui a participé à cette ligne.|
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
 
 ## <a name="notes-for-callers"></a>Notes pour les appelants
 Obtenez cette interface en appelant les méthodes [IDiaEnumLineNumbers :: Item](../../debugger/debug-interface-access/idiaenumlinenumbers-item.md) ou [IDiaEnumLineNumbers :: Next](../../debugger/debug-interface-access/idiaenumlinenumbers-next.md) .
 
 ## <a name="example"></a>Exemple
-La fonction suivante affiche les numéros de ligne utilisés dans une fonction (représentée par `pSymbol`).
+La fonction suivante affiche les numéros de ligne utilisés dans une fonction (représentée par `pSymbol` ).
 
 ```C++
 void dumpFunctionLines( IDiaSymbol* pSymbol, IDiaSession* pSession )
@@ -134,12 +134,12 @@ void dumpFunctionLines( IDiaSymbol* pSymbol, IDiaSession* pSession )
 }
 ```
 
-## <a name="requirements"></a>spécifications
+## <a name="requirements"></a>Configuration requise
 En-tête : Dia2. h
 
 Bibliothèque : diaguids. lib
 
-DLL : Msdia80. dll
+DLL : msdia80.dll
 
 ## <a name="see-also"></a>Voir aussi
 - [Interfaces (SDK Debug Interface Access)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)

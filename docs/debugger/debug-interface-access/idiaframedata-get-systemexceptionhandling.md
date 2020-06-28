@@ -1,7 +1,7 @@
 ---
 title: IDiaFrameData::get_systemExceptionHandling | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9e73ed8ae4aacf739463b1c6ab1f8f30c51a7fb2
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 78a40caf8f2f974386f43ba9aeecfbdc4c71c766
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72743492"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85467203"
 ---
 # <a name="idiaframedataget_systemexceptionhandling"></a>IDiaFrameData::get_systemExceptionHandling
 Récupère un indicateur qui signale si la gestion des exceptions système est en vigueur.
@@ -33,15 +33,15 @@ HRESULT get_systemExceptionHandling ( 
 #### <a name="parameters"></a>Paramètres
  pRetVal
 
-à Retourne `TRUE` si la gestion des exceptions système est activée ; Sinon, retourne `FALSE`.
+à Retourne `TRUE` si la gestion des exceptions système est activée ; sinon, retourne `FALSE` .
 
-## <a name="return-value"></a>Valeur de retour
+## <a name="return-value"></a>Valeur renvoyée
  En cas de réussite, retourne `S_OK`. Retourne `S_FALSE` si cette propriété n’est pas prise en charge. Sinon, retourne un code d'erreur.
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
  La gestion des exceptions système est plus communément connue sous le nom de gestion structurée des exceptions.
 
- Pour déterminer si C++ la gestion des exceptions est activée, appelez la méthode [IDiaFrameData :: get_cplusplusExceptionHandling](../../debugger/debug-interface-access/idiaframedata-get-cplusplusexceptionhandling.md) .
+ Pour déterminer si la gestion des exceptions C++ est activée, appelez la méthode [IDiaFrameData :: get_cplusplusExceptionHandling](../../debugger/debug-interface-access/idiaframedata-get-cplusplusexceptionhandling.md) .
 
 ## <a name="see-also"></a>Voir aussi
 - [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)

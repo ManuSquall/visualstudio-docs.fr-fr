@@ -1,6 +1,6 @@
 ---
 title: Questions fréquentes (FAQ) sur l’Explorateur de tests
-ms.date: 08/14/2019
+ms.date: 06/25/2020
 ms.topic: conceptual
 helpviewer_keywords:
 - Test Explorer
@@ -14,28 +14,18 @@ ms.workload:
 - multiple
 author: kendrahavens
 manager: jillfra
-ms.openlocfilehash: cec8ea3ea091ab1ea65bcad2bd4cca139fd74042
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: cf22c54da4af43c4953a8b92620031a14e25ec05
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75846809"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85468741"
 ---
 # <a name="visual-studio-test-explorer-faq"></a>FAQ concernant l’Explorateur de tests Visual Studio
-::: moniker range=">=vs-2019"
-
-## <a name="where-is-group-by-traits-in-visual-studio-2019"></a>Où est le regroupement par caractéristiques dans Visual Studio 2019 ?
-Ce regroupement par caractéristiques a été déplacé et est devenu une colonne. Avec la hiérarchie multiniveau et personnalisable dans Visual Studio 2019 version 16.2, nous avons pensé que l’inclusion des caractéristiques sous forme de regroupement créait une complexité visuelle inutile. Nous sommes à l’écoute de votre feedback sur cette conception ! https://developercommunity.visualstudio.com/content/problem/588029/no-longer-able-to-group-by-trait-in-test-explorer.html
-
-Pour le moment, vous pouvez cliquer avec le bouton droit sur la colonne dans l’Explorateur de tests et sélectionner Colonnes. Cochez la colonne Caractéristique pour la faire apparaître dans l’Explorateur de tests. Vous pouvez désormais filtrer cette colonne en fonction des caractéristiques qui vous intéressent.
-
-![Afficher la colonne Caractéristique](media/vs-2019/trait-column.png)
-![Filtrer la colonne Caractéristique](media/vs-2019/trait-column-filter.png)
-::: moniker-end
 
 ## <a name="dynamic-test-discovery"></a>Découverte de tests dynamique
 
-**Test Explorer ne découvre pas mes tests qui sont définis dynamiquement. (Par exemple, théories, adaptateurs personnalisés, traits personnalisés, #ifdefs, etc.) Comment puis-je découvrir ces tests ?**
+**L’Explorateur de tests ne découvre pas mes tests qui sont définis dynamiquement. (Par exemple, théories, adaptateurs personnalisés, caractéristiques personnalisées, #ifdefs, etc.) Comment puis-je découvrir ces tests ?**
 
 ::: moniker range=">=vs-2019"
 Générez votre projet pour exécuter la découverte basée sur les assemblys.
@@ -43,7 +33,7 @@ Générez votre projet pour exécuter la découverte basée sur les assemblys.
 ::: moniker range="vs-2017"
 Générez votre projet et vérifiez que la découverte basée sur les assemblys est activée sous **Outils** > **Options** > **Test**.
 ::: moniker-end
-La [découverte de tests en temps réel](https://devblogs.microsoft.com/dotnet/real-time-test-discovery/) correspond à la découverte de tests basée sur les sources. Il ne peut pas découvrir les tests qui utilisent `#ifdef` des théories, des adaptateurs personnalisés, des traits personnalisés, des déclarations, et plus encore parce qu’ils sont définis au moment de l’exécution. Une build est nécessaire pour trouver ces tests avec précision. Dans Visual Studio 2017 version 15.6 et ultérieure, la découverte basée sur les assemblys (le découvreur traditionnel) s’exécute seulement après les builds. En d’autres termes, la découverte de tests en temps réel trouve autant de tests que possible au fur et à mesure que vous effectuez des modifications, et la découverte basée sur les assemblys permet de faire apparaître les tests définis dynamiquement après une build. La découverte de tests en temps réel améliore la réactivité, tout en vous permettant d’obtenir des résultats complets et précis après une build.
+La [découverte de tests en temps réel](https://devblogs.microsoft.com/dotnet/real-time-test-discovery/) correspond à la découverte de tests basée sur les sources. Elle ne peut pas découvrir les tests qui utilisent des théories, des adaptateurs personnalisés, des caractéristiques personnalisées, des `#ifdef` instructions, etc., car elles sont définies au moment de l’exécution. Une build est nécessaire pour trouver ces tests avec précision. Dans Visual Studio 2017 version 15.6 et ultérieure, la découverte basée sur les assemblys (le découvreur traditionnel) s’exécute seulement après les builds. En d’autres termes, la découverte de tests en temps réel trouve autant de tests que possible au fur et à mesure que vous effectuez des modifications, et la découverte basée sur les assemblys permet de faire apparaître les tests définis dynamiquement après une build. La découverte de tests en temps réel améliore la réactivité, tout en vous permettant d’obtenir des résultats complets et précis après une build.
 
 ## <a name="test-explorer--plus-symbol"></a>Symbole « + » (plus) de l’Explorateur de tests
 
@@ -56,7 +46,7 @@ Le signe plus (+) indique que d’autres tests peuvent être découverts après
 ::: moniker range="vs-2017"
 ## <a name="assembly-based-discovery"></a>Découverte basée sur les assemblys
 
-**La découverte basée sur l’assemblage ne fonctionne plus pour mon projet. Comment puis-je le retourner?**
+**La découverte basée sur les assemblys ne fonctionne plus pour mon projet. Comment faire le réactiver ?**
 
 Accédez à **Outils** > **Options** > **Test** et cochez la case **Découvrez également les tests des assemblys générés après les builds**.
 
@@ -65,7 +55,7 @@ Accédez à **Outils** > **Options** > **Test** et cochez la case **Découvrez �
 
 ## <a name="real-time-test-discovery"></a>Découverte de tests en temps réel
 
-**Les tests apparaissent maintenant dans Test Explorer pendant que je tape, sans avoir à construire mon projet. Qu’est-ce qui a changé ?**
+**Les tests s’affichent désormais dans l’Explorateur de tests pendant que je tape, sans avoir à générer mon projet. Qu’est-ce qui a changé ?**
 
 Cette fonctionnalité s’appelle la [découverte de tests en temps réel](https://devblogs.microsoft.com/dotnet/real-time-test-discovery/). Elle utilise un analyseur Roslyn pour trouver les tests et remplir l’Explorateur de tests en temps réel, sans que vous ayez à générer votre projet. Pour plus d’informations sur le comportement de la découverte de tests pour les tests définis dynamiquement, par exemple les théories ou les caractéristiques personnalisées, consultez [Découverte de tests dynamique](#dynamic-test-discovery).
 
@@ -79,7 +69,7 @@ La [découverte de tests en temps réel](https://devblogs.microsoft.com/dotnet/r
 
 **Comment activer les journaux pour l’Explorateur de tests ?**
 
-Naviguez vers **Tools** > **Options** > **Test** et y trouver la section Enregistrement.
+Accédez à **Outils**  >  **options**  >  **test** et recherchez la section journalisation ici.
 
 ## <a name="uwp-test-discovery"></a>Découverte de tests UWP
 
@@ -91,13 +81,11 @@ Les tests UWP ciblent un runtime différent quand l’application est déployée
 
 **Comment fonctionne le tri des résultats de tests dans l’affichage des hiérarchies ?**
 
-L’affichage des hiérarchies trie les tests par ordre alphabétique et non par résultat. Les autres paramètres de regroupement trient normalement les résultats de tests par résultat, puis par ordre alphabétique. Consultez les différentes options de regroupement dans l’image suivante à des fins de comparaison. Vous pouvez fournir des commentaires sur la conception [dans ce problème GitHub](https://github.com/Microsoft/vstest/issues/1425).
-
-![SortingExamples](media/testex-sortingex.png)
+L’affichage des hiérarchies trie les tests par ordre alphabétique et non par résultat. Les paramètres Group by précédents ont trié les résultats des tests par résultat, puis par ordre alphabétique. Vous pouvez toujours activer le tri par résultat en cliquant avec le bouton droit sur l’en-tête de colonne dans l’Explorateur de tests, en activant la colonne État, puis en cliquant sur l’en-tête de colonne État pour appliquer le tri sur cette colonne. Vous pouvez fournir des commentaires sur la conception dans ce [problème GitHub](https://github.com/Microsoft/vstest/issues/1425).
 
 ## <a name="test-explorer-hierarchy-view"></a>Vue de la hiérarchie de l’Explorateur de tests
 
-**Dans la vue de la hiérarchie, il y a des icônes passées, échouées, ignorées et non exécutées à côté des groupes parent-noeuds. Que signifient ces icônes ?**
+**Dans l’affichage des hiérarchies, il existe des icônes réussite, échec, ignoré et ne pas exécuter en regard des regroupements de nœuds parents. Que signifient ces icônes ?**
 
 Les icônes en regard des regroupements Projet, Espace de noms et Classe indiquent l’état des tests dans le regroupement. Consultez le tableau suivant.
 
@@ -111,7 +99,7 @@ Le filtre de chemin d’accès du fichier dans la zone de recherche de l’**Exp
 
 ## <a name="remove-undocumented-interfaces"></a>Supprimer des interfaces non documentées
 
-**Certaines API liées aux tests ne sont plus présentes dans Visual Studio 2019. Qu’est-ce qui a changé ?**
+**Certaines API liées aux tests ne sont plus présentes dans Visual Studio 2019. Qu’est-ce qui a changé ?**
 
 Dans Visual Studio 2019, certaines API de fenêtre de test, qui étaient auparavant dites publiques mais qui n’ont jamais été officiellement documentées, seront retirées. Elles avaient été marquées comme étant « déconseillées » dans Visual Studio 2017 pour avertir à l’avance les personnes chargées de la maintenance des extensions. À notre connaissance, très peu d’extensions avaient trouvé ces API et en dépendaient. Il s’agit notamment de `IGroupByProvider`, `IGroupByProvider<T>`, `KeyComparer`, `ISearchFilter`, `ISearchFilterToken`, `ISearchToken` et `SearchFilterTokenType`. Si ce changement affecte votre extension, faites-le nous savoir en entrant un bogue auprès de la [Communauté des développeurs](https://developercommunity.visualstudio.com).
 
@@ -121,13 +109,13 @@ Dans Visual Studio 2019, certaines API de fenêtre de test, qui étaient aupara
 
 Tous les projets de test doivent inclure leur référence d’adaptateur de test .NET NuGet dans leur fichier .csproj. Dans le cas contraire, la sortie de test suivante s’affiche dans le projet si la découverte par une extension de l’adaptateur de test est lancée après une build ou si l’utilisateur tente d’exécuter les tests sélectionnés :
 
-**Le {} projet de test ne fait référence à aucun adaptateur NuGet .NET. La découverte ou l’exécution des tests pourrait ne pas fonctionner pour ce projet. Il est recommandé de référencer les adaptateurs de test NuGet dans chaque projet de test .NET dans la solution.**
+**Le projet {} de test ne fait référence à aucun adaptateur NuGet .net. La découverte de tests ou l’exécution peut ne pas fonctionner pour ce projet. Il est recommandé de référencer des adaptateurs de test NuGet dans chaque projet de test .NET de la solution.**
 
 Au lieu d’utiliser des extensions d’adaptateur de test, les projets doivent utiliser les packages NuGet de l’adaptateur de test. Cette exigence améliore considérablement les performances et entraîne moins de problèmes avec l’intégration continue. En savoir plus sur la dépréciation de l’Extension de l’adaptateur de Test .NET dans les [notes de version](/visualstudio/releasenotes/vs2017-relnotes-v15.8#testadapterextension).
 
 ::: moniker range="vs-2017"
 > [!NOTE]
-> Si vous utilisez l’adaptateur de test NUnit 2 et que vous ne pouvez pas migrer vers l’adaptateur de test NUnit 3, vous pouvez désactiver ce nouveau comportement de découverte dans la version 15.8 visual Studio dans **Tools** > **Options** > **Test**.
+> Si vous utilisez l’adaptateur de test NUnit 2 et que vous ne parvenez pas à migrer vers l’adaptateur de test NUnit 3, vous pouvez désactiver ce nouveau comportement de découverte dans Visual Studio version 15,8 dans **Outils**  >  **options**  >  **test**.
 
 ![Comportement de l’adaptateur de l’Explorateur de tests dans les options des outils](media/testex-adapterbehavior.png)
 ::: moniker-end
@@ -136,9 +124,9 @@ Au lieu d’utiliser des extensions d’adaptateur de test, les projets doivent 
 
 **Mes tests UWP ne sont plus exécutés dans Visual Studio 2017 versions 15.7 et ultérieures.**
 
-Les projets de test UWP récents spécifient une propriété de génération de plateforme de test qui permet de meilleures performances pour identifier les applications de test. Si vous avez un projet de test UWP qui a été parasécé avant la version 15.7 de Visual Studio, vous pouvez voir cette erreur dans les**tests** **de sortie** > :
+Les projets de test UWP récents spécifient une propriété de génération de plateforme de test qui permet de meilleures performances pour identifier les applications de test. Si vous avez un projet de test UWP qui a été initialisé avant Visual Studio version 15,7, vous pouvez voir cette erreur dans les tests de **sortie**  >  **Tests**:
 
-**System.AggregateException: Une ou plusieurs erreurs se sont produites. ---> System.InvalidOperationException: Le testcontainer suivant n’a {} pas été trouvé à Microsoft.VisualStudio.TestWindow.Controller.TestContainerProvider \<GetTestContainerAsync>d__61.MoveNext()**
+**System.AggregateException : Une ou plusieurs erreurs se sont produites. ---> System.InvalidOperationException : Le TestContainer suivant est introuvable {} sur Microsoft.VisualStudio.TestWindow.Controller.TestContainerProvider \<GetTestContainerAsync>d__61.MoveNext()**
 
 Pour résoudre ce problème :
 
@@ -153,7 +141,12 @@ Pour résoudre ce problème :
 ```XML
 <SDKReference Include="TestPlatform.Universal, Version=$(UnitTestPlatformVersion)" />
 ```
+::: moniker range=">=vs-2019"
+## <a name="using-preview-features"></a>Utilisation des fonctionnalités en version préliminaire
 
+Dans Visual Studio 2019, vous pouvez choisir des fonctionnalités en version préliminaire dans **outils > Options > environnement > fonctionnalités préliminaires**.
+::: moniker-end
+::: moniker range=">=vs-2017"
 ## <a name="using-feature-flags"></a>Utiliser les indicateurs de fonctionnalités
 
 **Comment puis-je activer les indicateurs de fonctionnalités pour tester les nouvelles fonctionnalités de test ?**
@@ -170,7 +163,7 @@ vsregedit set “C:\Program Files (x86)\Microsoft Visual Studio\Preview\Enterpri
 
 > [!NOTE]
 > Vous pouvez désactiver l’indicateur à l’aide de la même commande, en utilisant la valeur 0 au lieu de 1 après dword.
-
+::: moniker-end
 ## <a name="see-also"></a>Voir aussi
 
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting?displayProperty=fullName>
