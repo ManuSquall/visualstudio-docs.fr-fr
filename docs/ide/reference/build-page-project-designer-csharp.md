@@ -9,17 +9,17 @@ helpviewer_keywords:
 - Build options [C#]
 - Project Designer, Build page
 ms.assetid: 77ff1bfc-d633-4634-ba29-9afdb6d7e362
-author: TerryGLee
-ms.author: tglee
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 85bf50c653d82a7de22d5a81fd81c38db0db1be8
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 7da7414b9cf454e861c8407633de7851dcb86df3
+ms.sourcegitcommit: 9e15138a34532b222e80f6b42b1a9de7b2fe0175
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "76923264"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "85419222"
 ---
 # <a name="build-page-project-designer-c"></a>Générer, page du Concepteur de projets (C#)
 
@@ -42,7 +42,7 @@ Spécifie les paramètres de configuration à afficher ou à modifier. Les param
 
 **Plateforme**
 
-Spécifie les paramètres de plateforme à afficher ou à modifier. Le paramètre par défaut est **Active (Any CPU)**. Vous pouvez modifier la plateforme active à l’aide du **Gestionnaire de configurations**. Pour plus d’informations, voir [Comment : Créer et modifier les configurations](../../ide/how-to-create-and-edit-configurations.md).
+Spécifie les paramètres de plateforme à afficher ou à modifier. Le paramètre par défaut est **Active (Any CPU)**. Vous pouvez modifier la plateforme active à l’aide du **Gestionnaire de configurations**. Pour plus d’informations, consultez [Comment : créer et modifier des configurations](../../ide/how-to-create-and-edit-configurations.md).
 
 ## <a name="general"></a>Général
 
@@ -50,7 +50,7 @@ Les options suivantes vous permettent de configurer plusieurs paramètres du com
 
 **Symboles de compilation conditionnelle**
 
-Spécifie les symboles sur lesquels effectuer la compilation conditionnelle. Séparez les symboles par un point-virgule (« ; »). Pour plus d’informations, voir [/définir (Options de compilateur C)](/dotnet/csharp/language-reference/compiler-options/define-compiler-option).
+Spécifie les symboles sur lesquels effectuer la compilation conditionnelle. Séparez les symboles par un point-virgule (« ; »). Pour plus d’informations, consultez [/define (options du compilateur C#)](/dotnet/csharp/language-reference/compiler-options/define-compiler-option).
 
 **Définir la constante DEBUG**
 
@@ -68,9 +68,9 @@ Pour plus d’informations, consultez [/platform (options du compilateur C#)](/d
 
 **Nullable**
 
-Spécifie le contexte nul à l’échelle du projet. Cette option d’interface utilisateur a été introduite dans Visual Studio 16.5, et n’est activée que pour les projets qui utilisent C 8.0 ou plus tard.
+Spécifie le contexte Nullable de l’ensemble du projet. Cette option d’interface utilisateur a été introduite dans Visual Studio 16,5 et n’est activée que pour les projets qui utilisent C# 8,0 ou version ultérieure.
 
-Pour plus d’informations, voir [Nullable Contexts](/dotnet/csharp/nullable-references#nullable-contexts).
+Pour plus d’informations, consultez [contextes Nullable](/dotnet/csharp/nullable-references#nullable-contexts).
 
 **Préférer 32 bits**
 
@@ -92,7 +92,7 @@ Autorise la compilation du code utilisant le mot clé [unsafe](/dotnet/csharp/l
 
 **Optimiser le code**
 
-Active ou désactive les optimisations effectuées par le compilateur pour réduire la taille de votre fichier de sortie, et le rendre plus rapide et plus efficace. Pour plus d’informations, voir [/optimiser (Options de compilateur C)](/dotnet/csharp/language-reference/compiler-options/optimize-compiler-option).
+Active ou désactive les optimisations effectuées par le compilateur pour réduire la taille de votre fichier de sortie, et le rendre plus rapide et plus efficace. Pour plus d’informations, consultez [/optimize (options du compilateur C#)](/dotnet/csharp/language-reference/compiler-options/optimize-compiler-option).
 
 ## <a name="errors-and-warnings"></a>Erreurs et avertissements
 
@@ -108,16 +108,16 @@ Empêche le compilateur de générer un ou plusieurs avertissements. Séparez le
 
 ## <a name="treat-warnings-as-errors"></a>Considérer les avertissements comme des erreurs
 
-Les paramètres suivants sont utilisés pour spécifier quels avertissements sont traités comme des erreurs. Sélectionnez l’une des options suivantes pour indiquer dans quelles circonstances retourner une erreur quand la génération rencontre un avertissement. Pour plus d’informations, voir [/warnaserror (Options de compilateur C)](/dotnet/csharp/language-reference/compiler-options/warnaserror-compiler-option).
+Les paramètres suivants sont utilisés pour spécifier quels avertissements sont traités comme des erreurs. Sélectionnez l’une des options suivantes pour indiquer dans quelles circonstances retourner une erreur quand la génération rencontre un avertissement. Pour plus d’informations, consultez [/warnaserror (options du compilateur C#)](/dotnet/csharp/language-reference/compiler-options/warnaserror-compiler-option).
 
-**Aucun** - Ne traite aucun avertissement comme des erreurs.
+**None** : ne considère aucun avertissement comme des erreurs.
 
-**Tous** - Traite tous les avertissements comme des erreurs.
+**All** : traite tous les avertissements comme des erreurs.
 
-**Avertissements spécifiques** - Traite les avertissements spécifiés comme des erreurs. Séparez les numéros des avertissements par une virgule ou un point-virgule.
+**Avertissements spécifiques** : traite les avertissements spécifiés comme des erreurs. Séparez les numéros des avertissements par une virgule ou un point-virgule.
 
 > [!TIP]
-> Si vous ne voulez pas que les avertissements d’analyse de code soient traités comme des erreurs, voir [l’analyse du Code FAQ](../../code-quality/analyzers-faq.md#treat-warnings-as-errors).
+> Si vous ne souhaitez pas que les avertissements de l’analyse du code soient traités comme des erreurs, consultez [FAQ sur l’analyse du code](../../code-quality/analyzers-faq.md#treat-warnings-as-errors).
 
 ## <a name="output"></a>Output
 
@@ -148,4 +148,4 @@ Cliquez pour afficher la [boîte de dialogue Paramètres de génération avancé
 ## <a name="see-also"></a>Voir aussi
 
 - [Informations de référence sur les propriétés de projet](../../ide/reference/project-properties-reference.md)
-- [Options de compilateur C](/dotnet/csharp/language-reference/compiler-options/index)
+- [Options du compilateur C#](/dotnet/csharp/language-reference/compiler-options/index)

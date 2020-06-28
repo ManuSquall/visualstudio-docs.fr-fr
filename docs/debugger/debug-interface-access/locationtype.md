@@ -1,7 +1,7 @@
 ---
 title: LocationType | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dc40cc6cc8e821db7c28a4647e36e7bad241b29f
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: b2fafbb25d52df6082736431727222c788d73476
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72738645"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85461216"
 ---
 # <a name="locationtype"></a>LocationType
 Indique le type d’informations d’emplacement contenu dans un symbole.
@@ -42,36 +42,36 @@ enum LocationType {
 ```
 
 ## <a name="elements"></a>Éléments
-les informations d’emplacement de `LocIsNull` ne sont pas disponibles.
+`LocIsNull`Les informations d’emplacement ne sont pas disponibles.
 
-`LocIsStatic` emplacement est statique.
+`LocIsStatic`L’emplacement est statique.
 
-`LocIsTLS` emplacement se trouve dans le stockage local des threads.
+`LocIsTLS`L’emplacement se trouve dans le stockage local des threads.
 
-`LocIsRegRel` emplacement est Register-relative.
+`LocIsRegRel`L’emplacement est Register-relative.
 
-`LocIsThisRel` emplacement est `this` relatif.
+`LocIsThisRel`L’emplacement est `this` -relative.
 
-`LocIsEnregistered` emplacement se trouve dans un registre.
+`LocIsEnregistered`L’emplacement se trouve dans un registre.
 
-`LocIsBitField` emplacement est dans un champ de bits.
+`LocIsBitField`L’emplacement est un champ de bits.
 
-`LocIsSlot` emplacement est un emplacement MSIL (Microsoft Intermediate Language).
+`LocIsSlot`L’emplacement est un emplacement MSIL (Microsoft Intermediate Language).
 
-`LocIsIlRel` emplacement est relatif à MSIL.
+`LocIsIlRel`L’emplacement est relatif à MSIL.
 
-`LocInMetaData` emplacement se trouve dans les métadonnées.
+`LocInMetaData`L’emplacement se trouve dans les métadonnées.
 
-`LocIsConstant` emplacement est dans une valeur constante.
+`LocIsConstant`L’emplacement est dans une valeur constante.
 
-`LocTypeMax` le nombre de types d’emplacement dans cette énumération.
+`LocTypeMax`Nombre de types d’emplacement dans cette énumération.
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
 Les propriétés disponibles pour l’interface [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) dépendent de l’emplacement du symbole dans le fichier image. Pour plus d’informations, consultez [emplacements des symboles](../../debugger/debug-interface-access/symbol-locations.md).
 
 Les valeurs de cette énumération sont retournées par un appel à la méthode [IDiaSymbol :: get_locationType](../../debugger/debug-interface-access/idiasymbol-get-locationtype.md) .
 
-## <a name="requirements"></a>spécifications
+## <a name="requirements"></a>Configuration requise
 En-tête : cvconst. h
 
 ## <a name="see-also"></a>Voir aussi

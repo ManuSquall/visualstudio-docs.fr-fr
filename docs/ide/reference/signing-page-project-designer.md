@@ -15,17 +15,17 @@ helpviewer_keywords:
 - Project Designer, Signing page
 - Signing page in Project Designer
 ms.assetid: dab3ba13-2f92-4827-92bd-1be3c35bc48b
-author: TerryGLee
-ms.author: tglee
+author: Mikejo5000
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 516e2aaf4a55ad6422200f9fef1cbbf2d435af7b
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: fee2244792d73924793ae82def1f533b909403c5
+ms.sourcegitcommit: 9e15138a34532b222e80f6b42b1a9de7b2fe0175
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75597332"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "85418858"
 ---
 # <a name="signing-page-project-designer"></a>Page Signature, Concepteur de projets
 
@@ -79,9 +79,9 @@ Cette option utilise l’outil Al.exe fourni par le kit SDK Windows pour signer 
 
 Liste **Choisir un fichier de clé de nom fort**
 
-Permet de spécifier un fichier de clé de nom fort nouveau ou existant pour signer l’assembly. Sélectionnez ** \<Parcourir... >** de sélectionner un fichier clé existant.
+Permet de spécifier un fichier de clé de nom fort nouveau ou existant pour signer l’assembly. Sélectionnez **\<Browse...>** pour sélectionner un fichier de clé existant.
 
-Sélectionnez ** \<New... >** pour créer un nouveau fichier clé avec lequel signer l’assemblage. La boîte de dialogue **Créer une clé de nom fort** s’ouvre. Vous pouvez l’utiliser pour spécifier un nom de fichier de clé et pour protéger le fichier de clé avec un mot de passe. Le mot de passe doit comporter au moins 6 caractères. Si vous spécifiez un mot de passe, un fichier d’échange d’informations personnelles (.pfx) est créé. Si vous ne spécifiez pas de mot de passe, un fichier de clé de nom fort (.snk) est créé.
+Sélectionnez **\<New...>** cette option pour créer un nouveau fichier de clé avec lequel signer l’assembly. La boîte de dialogue **Créer une clé de nom fort** s’ouvre. Vous pouvez l’utiliser pour spécifier un nom de fichier de clé et pour protéger le fichier de clé avec un mot de passe. Le mot de passe doit comporter au moins 6 caractères. Si vous spécifiez un mot de passe, un fichier d’échange d’informations personnelles (.pfx) est créé. Si vous ne spécifiez pas de mot de passe, un fichier de clé de nom fort (.snk) est créé.
 
 Bouton **Modifier le mot de passe**
 
@@ -102,7 +102,7 @@ Notez qu’un projet à signature différée ne s’exécute pas et ne peut pas 
 
 - [Informations de référence sur les propriétés de projet](../../ide/reference/project-properties-reference.md)
 - [Gestion d’assembly et signature de manifeste](../../ide/managing-assembly-and-manifest-signing.md)
-- [Comment : Signer l’application et les manifestes de déploiement](../../ide/how-to-sign-application-and-deployment-manifests.md)
+- [Comment : signer des manifestes d’application et de déploiement](../../ide/how-to-sign-application-and-deployment-manifests.md)
 - [Guide pratique pour signer un assembly (Visual Studio)](../managing-assembly-and-manifest-signing.md#how-to-sign-an-assembly-in-visual-studio)
 - [Comment : signer un assembly avec un nom fort](/dotnet/framework/app-domains/how-to-sign-an-assembly-with-a-strong-name)
-- [Assemblys avec noms forts](/dotnet/framework/app-domains/strong-named-assemblies)
+- [Assemblys avec nom fort](/dotnet/framework/app-domains/strong-named-assemblies)

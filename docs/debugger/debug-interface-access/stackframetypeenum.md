@@ -1,7 +1,7 @@
 ---
 title: StackFrameTypeEnum | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 20b0c9dd106e5744a369ddaa6cb870788f7464d3
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 3f83cdb163881366a1a0bede95a07e1dae1fc50a
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72738552"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85461097"
 ---
 # <a name="stackframetypeenum"></a>StackFrameTypeEnum
 Spécifie le type de frame de pile.
@@ -36,22 +36,22 @@ enum StackFrameTypeEnum {
 ```
 
 ## <a name="elements"></a>Éléments
-pointeur de frame `FrameTypeFPO` omis ; Informations FPO disponibles.
+`FrameTypeFPO`Pointeur de frame omis ; Informations FPO disponibles.
 
-`FrameTypeTrap` trame d’interruption du noyau.
+`FrameTypeTrap`Trame d’interruption du noyau.
 
-`FrameTypeTSS` trame d’interruption du noyau.
+`FrameTypeTSS`Trame d’interruption du noyau.
 
-`FrameTypeStandard` frame de pile EBP standard.
+`FrameTypeStandard`Frame de pile EBP standard.
 
-pointeur de frame `FrameTypeFrameData` omis ; Informations sur les données de frame disponibles.
+`FrameTypeFrameData`Pointeur de frame omis ; Informations sur les données de frame disponibles.
 
-Frame de `FrameTypeUnknown` qui ne contient aucune information de débogage.
+`FrameTypeUnknown`Frame qui ne contient aucune information de débogage.
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
 Les valeurs de cette énumération sont retournées par un appel à la méthode [IDiaStackFrame :: get_Type](../../debugger/debug-interface-access/idiastackframe-get-type.md) .
 
-## <a name="requirements"></a>spécifications
+## <a name="requirements"></a>Configuration requise
 En-tête : cvconst. h
 
 ## <a name="see-also"></a>Voir aussi

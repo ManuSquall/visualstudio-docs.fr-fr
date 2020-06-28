@@ -3,7 +3,7 @@ title: Modifier Visual Studio 2017
 titleSuffix: ''
 description: Découvrez comment modifier Visual Studio, étape par étape.
 ms.date: 02/10/2019
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - modify Visual Studio
 - change visual studio
@@ -17,12 +17,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 57aa5531eb6d6517b520991ababefc38b25a9a2d
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 2ec3ae3f253997b86c2403ce57d5e8db6e9920b4
+ms.sourcegitcommit: 9e15138a34532b222e80f6b42b1a9de7b2fe0175
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77125349"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "85419183"
 ---
 # <a name="modify-visual-studio-by-adding-or-removing-workloads-and-components"></a>Modifier Visual Studio en ajoutant ou supprimant des charges de travail et des composants
 
@@ -34,21 +34,21 @@ Il est facile de modifier Visual Studio afin d’inclure uniquement ce que vous 
 
 ::: moniker range="vs-2017"
 
-Nous avons simplifié le travail de personnalisation des tâches Visual Studio, mais aussi de Visual Studio à proprement parler. Pour ce faire, ouvrez le nouvel installateur visual studio et effectuez les modifications que vous voulez.
+Nous avons simplifié le travail de personnalisation des tâches Visual Studio, mais aussi de Visual Studio à proprement parler. Pour ce faire, ouvrez le nouveau Visual Studio Installer et apportez les modifications souhaitées.
 
 ::: moniker-end
 
 Voici comment faire.
 
 >[!IMPORTANT]
->Pour installer, mettre à jour ou modifier Visual Studio, vous devez vous connecter avec un compte qui dispose d’autorisations Administrateur. Pour plus d’informations, voir [les autorisations des utilisateurs et Visual Studio](../ide/user-permissions-and-visual-studio.md).
+>Pour installer, mettre à jour ou modifier Visual Studio, vous devez vous connecter avec un compte qui dispose d’autorisations Administrateur. Pour plus d’informations, consultez [autorisations utilisateur et Visual Studio](../ide/user-permissions-and-visual-studio.md).
 
 >[!NOTE]
-> Les procédures suivantes supposent que vous avez une connexion Internet.
+> Les procédures suivantes supposent que vous disposez d’une connexion Internet.
 >
 > Pour plus d’informations sur la façon de modifier une installation [hors connexion](create-an-offline-installation-of-visual-studio.md) de Visual Studio précédemment créée, consultez la page [Mettre à jour une installation réseau de Visual Studio](update-a-network-installation-of-visual-studio.md) et la page [Contrôler les mises à jour applicables aux déploiements de Visual Studio à partir du réseau](controlling-updates-to-visual-studio-deployments.md).
 
-## <a name="open-the-visual-studio-installer"></a>Ouvrez l’installateur visual studio
+## <a name="open-the-visual-studio-installer"></a>Ouvrez le Visual Studio Installer
 
 ::: moniker range="vs-2017"
 
@@ -56,12 +56,12 @@ Voici comment faire.
 
      Par exemple, sur un ordinateur exécutant Windows 10, sélectionnez **Démarrer**, puis faites défiler jusqu’à la lettre **V** où il est répertorié comme **Visual Studio Installer**.
 
-     ![Installateur de studio visuel](media/locate-the-visual-studio-installer.png "Localiser l’installateur Microsoft Visual Studio")
+     ![Programme d’installation de Visual Studio](media/locate-the-visual-studio-installer.png "Localiser le programme d’installation de Microsoft Visual Studio")
 
      >[!TIP]
      >Sur certains ordinateurs, le programme d’installation de Visual Studio peut être répertorié sous la lettre **« M »** comme **Microsoft, programme d’installation de Visual Studio**.<br/><br/> Ou bien, vous pouvez trouver Visual Studio Installer à l’emplacement suivant :`C:\Program Files (x86)\Microsoft Visual Studio\Installer\vs_installer.exe`
 
-1. Ouvrez l’installateur, puis choisissez **Modifier**.
+1. Ouvrez le programme d’installation, puis choisissez **modifier**.
 
      ![Lancer ou modifier Visual Studio](media/modify-visual-studio.png "Modifier Visual Studio 2017")
 
@@ -78,7 +78,7 @@ Voici comment faire.
 
      Par exemple, sur un ordinateur exécutant Windows 10, sélectionnez **Démarrer**, puis faites défiler jusqu’à la lettre **V** où il est répertorié comme **Visual Studio Installer**.
 
-     ![Ouvrez l’installateur visual studio à partir de Windows](media/vs-2019/vs-installer-windows-start.png "Ouvrez l’installateur visual studio")
+     ![Ouvrir le Visual Studio Installer à partir de Windows](media/vs-2019/vs-installer-windows-start.png "Ouvrez le Visual Studio Installer")
 
      > [!NOTE]
      > Vous trouverez également Visual Studio Installer à l’emplacement suivant :
@@ -92,7 +92,7 @@ Voici comment faire.
      ![Mettre à jour ou modifier Visual Studio](media/vs-2019/vs-installer-modify.png "Mettre à jour ou modifier Visual Studio 2019")
 
      > [!IMPORTANT]
-     > Si vous disposez d’une mise à jour en attente, le bouton Modifier est à un emplacement différent. De cette façon, vous pouvez modifier Visual Studio sans le mettre à jour, si vous le souhaitez. Choisissez **plus**, puis choisissez **Modifier**.
+     > Si vous disposez d’une mise à jour en attente, le bouton Modifier est à un emplacement différent. De cette façon, vous pouvez modifier Visual Studio sans le mettre à jour, si vous le souhaitez. Choisissez **plus**, puis **modifier**.
      >
      > ![Mettre à jour ou modifier Visual Studio](media/vs-2019/modify-update-visual-studio.png "Mettre à jour ou modifier Visual Studio 2019")
 
@@ -104,19 +104,19 @@ Voici comment faire.
 
  Les [charges de travail](https://visualstudio.microsoft.com/vs/support/selecting-workloads-visual-studio-2017/) contiennent les fonctionnalités dont vous avez besoin pour le langage de programmation ou la plateforme que vous utilisez. Utilisez les charges de travail pour modifier Visual Studio pour qu’il prenne en charge le travail à effectuer, au moment où vous voulez l’effectuer.
 
-1. Dans l’installateur Visual Studio, choisissez l’onglet **Charges de travail,** puis sélectionnez ou désélectionner les charges de travail que vous voulez.
+1. Dans la Visual Studio Installer, choisissez l’onglet **charges de travail** , puis sélectionnez ou désélectionnez les charges de travail de votre choix.
 
-    ![Boîte de dialogue de configuration de Visual Studio 2017](media/modify-workloads.png "Choisissez une charge de travail dans Visual Studio 2019")
+    ![Boîte de dialogue de configuration de Visual Studio 2017](media/modify-workloads.png "Choisir une charge de travail dans Visual Studio 2019")
 
 1. Indiquez si vous voulez accepter l’option **Installer pendant le téléchargement** par défaut ou l’option **Tout télécharger, puis installer**.
 
-    ![Options de configuration Visual Studio 2017](media/vs-2019/vs-installer-choose-install-or-download.png "Choisissez d’installer lors du téléchargement ou de télécharger d’abord et d’installer plus tard")
+    ![Options d’installation de Visual Studio 2017](media/vs-2019/vs-installer-choose-install-or-download.png "Choisir d’installer pendant le téléchargement ou le téléchargement d’abord et l’installation ultérieure")
 
     L’option « Tout télécharger, puis installer » s’avère pratique si vous voulez d’abord tout télécharger pour installer plus tard.
 
 1. Choisissez **Modifier**.
 
-1. Une fois les nouvelles charges de travail installées, choisissez **Launch** de l’installateur Visual Studio pour ouvrir Visual Studio.
+1. Une fois les nouvelles charges de travail installées, choisissez **lancer** à partir de la Visual Studio installer pour ouvrir Visual Studio.
 
 ::: moniker-end
 
@@ -125,34 +125,34 @@ Voici comment faire.
  Les charges de travail contiennent les fonctionnalités dont vous avez besoin pour le langage de programmation ou la plateforme que vous utilisez. Utilisez les charges de travail pour modifier Visual Studio pour qu’il prenne en charge le travail à effectuer, au moment où vous voulez l’effectuer.
 
  > [!TIP]
->Pour plus d’informations sur les paquets d’outils et de composants dont vous avez besoin pour le développement, voir [les charges de travail Visual Studio](https://visualstudio.microsoft.com/vs/#workloads).
+>Pour plus d’informations sur les outils et les groupes de composants dont vous avez besoin pour le développement, consultez [charges de travail Visual Studio](https://visualstudio.microsoft.com/vs/#workloads).
 
-1. Dans l’installateur Visual Studio, choisissez l’onglet **Charges de travail,** puis sélectionnez ou désélectionner les charges de travail que vous voulez.
+1. Dans le Visual Studio Installer, choisissez l’onglet **charges de travail** , puis sélectionnez ou désélectionnez les charges de travail de votre choix.
 
-    ![Dialogue d’installation Visual Studio 2019](media/vs-2019/vs-installer-modify-workloads.png "Choisissez une charge de travail dans Visual Studio 2019")
+    ![Boîte de dialogue d’installation de Visual Studio 2019](media/vs-2019/vs-installer-modify-workloads.png "Choisir une charge de travail dans Visual Studio 2019")
 
 1. Indiquez si vous voulez accepter l’option **Installer pendant le téléchargement** par défaut ou l’option **Tout télécharger, puis installer**.
 
-    ![Options de configuration Visual Studio 2019](media/vs-2019/vs-installer-choose-install-or-download.png "Choisissez d’installer lors du téléchargement ou de télécharger d’abord et d’installer plus tard")
+    ![Options d’installation de Visual Studio 2019](media/vs-2019/vs-installer-choose-install-or-download.png "Choisir d’installer pendant le téléchargement ou le téléchargement d’abord et l’installation ultérieure")
 
     L’option « Tout télécharger, puis installer » s’avère pratique si vous voulez d’abord tout télécharger pour installer plus tard.
 
 1. Choisissez **Modifier**.
 
-1. Une fois les nouvelles charges de travail installées, choisissez **Launch** de l’installateur Visual Studio pour ouvrir Visual Studio.
+1. Une fois les nouvelles charges de travail installées, choisissez **lancer** à partir de la Visual Studio installer pour ouvrir Visual Studio.
 
 ::: moniker-end
 
 ## <a name="modify-individual-components"></a>Modifier des composants individuels
 
-Si vous ne souhaitez pas utiliser les charges de travail pour personnaliser votre installation Visual Studio, choisissez **l’onglet Composants individuels** dans l’installateur visual Studio, sélectionnez les composants que vous voulez, puis suivez les invites.
+Si vous ne souhaitez pas utiliser les charges de travail pour personnaliser votre installation de Visual Studio, choisissez l’onglet **composants individuels** dans le Visual Studio installer, sélectionnez les composants souhaités, puis suivez les invites.
 
 >[!TIP]
-> Pour plus d’informations sur le volet SQL Server Data Tools (SSDT), consultez [Téléchargez et installez SSDT pour Visual Studio](/sql/ssdt/download-sql-server-data-tools-ssdt?view=sql-server-ver15).
+> Pour plus d’informations sur le composant SQL Server Data Tools (SSDT), consultez [Télécharger et installer SSDT pour Visual Studio](/sql/ssdt/download-sql-server-data-tools-ssdt?view=sql-server-ver15).
 
-## <a name="modify-language-packs"></a>Modifier les packs linguistiques
+## <a name="modify-language-packs"></a>Modifier les modules linguistiques
 
-Par défaut, l’installateur correspond à la langue du système d’exploitation lorsqu’il s’exécute pour la première fois. Cependant, vous pouvez changer la langue quand vous voulez. Pour ce faire, choisissez **l’onglet Packs Langue** dans l’installateur Visual Studio, sélectionnez la langue que vous préférez, puis suivez les invites.
+Par défaut, le programme d’installation correspond à la langue du système d’exploitation lorsqu’il s’exécute pour la première fois. Toutefois, vous pouvez modifier la langue chaque fois que vous le souhaitez. Pour ce faire, choisissez l’onglet **modules linguistiques** dans la Visual Studio installer, sélectionnez la langue de votre choix, puis suivez les invites.
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 

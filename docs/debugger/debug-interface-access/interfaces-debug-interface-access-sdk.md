@@ -1,7 +1,7 @@
 ---
 title: Interfaces (kit de développement logiciel de debug interface Access) | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a0aa48ae0d3c3b6b05ea469baea1a1e1aa106667
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 902a3d361eb06288a0e50e9f384b67a2a8c61aa1
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72738694"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85461272"
 ---
 # <a name="interfaces-debug-interface-access-sdk"></a>Interfaces (Kit de développement logiciel Debug Interface Access)
 Les méthodes sont répertoriées par ordre alphabétique sous chaque interface dans la table des matières et sur la page interface dans l’ordre vtable.
@@ -157,12 +157,12 @@ Décrit les propriétés d’une instance de symbole.
 
 Énumère une table de source de données DIA.
 
-## <a name="related-sections"></a>Rubriques connexes
+## <a name="related-sections"></a>Sections connexes
 [Énumérations et structures](../../debugger/debug-interface-access/enumerations-and-structures.md)
 
 Décrit les énumérations et les structures utilisées par les différentes interfaces du kit de développement logiciel (SDK) DIA.
 
-[Constantes (Kit de développement logiciel Debug Interface Access)](../../debugger/debug-interface-access/constants-debug-interface-access-sdk.md)
+[Constantes (Kit de développement logiciel Debug Interface Access)](../../debugger/debug-interface-access/constants-debug-interface-access-sdk.md)
 
 Décrit les constantes disponibles dans le kit de développement logiciel (SDK) DIA.
 

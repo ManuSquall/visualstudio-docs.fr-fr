@@ -1,7 +1,7 @@
 ---
-title: 'Erreur : échec de l’ouverture de session à distance du groupe de travail | Microsoft Docs'
+title: 'Erreur : échec d’ouverture de session à distance du groupe de travail | Microsoft Docs'
 ms.date: 11/04/2016
-ms.topic: troubleshooting
+ms.topic: error-reference
 f1_keywords:
 - vs.debug.error.workgroup_remote_logon_failure
 dev_langs:
@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9d1ee0cfbd021eb7d6a03a791713d187d3c8877c
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 97045215098b1f59d5f76a928e9e0a1ab8362756
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72736257"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85460090"
 ---
 # <a name="error-workgroup-remote-logon-failure"></a>Erreur : Échec d'ouverture de session à distance du groupe de travail
 Cette erreur affiche le message suivant :
@@ -32,7 +32,7 @@ Cette erreur affiche le message suivant :
 
  **Cause**
 
- Cette erreur peut se produire lorsque vous déboguez à partir d'un ordinateur au sein d'un groupe de travail et que vous tentez de vous connecter à un ordinateur distant. Plusieurs causes sont possibles :
+ Cette erreur peut se produire lorsque vous déboguez à partir d'un ordinateur au sein d'un groupe de travail et que vous tentez de vous connecter à un ordinateur distant. Les causes possibles sont les suivantes :
 
 - Il n'existe pas de compte avec le nom et le mot de passe correspondants sur l'ordinateur distant.
 
@@ -71,8 +71,8 @@ Cette erreur affiche le message suivant :
 
 5. Dans la boîte de dialogue **Accès réseau : modèle de partage et de sécurité pour les comptes locaux**, remplacez la valeur par **Classique - les utilisateurs locaux s’authentifient eux-mêmes** et cliquez sur le bouton **Appliquer**.
 
-     ![Options de sécurité de la stratégie de sécurité locale](../debugger/media/dbg_err_localsecuritypolicy_securityoptions_networkaccess.png "DBG_ERR_LocalSecurityPolicy_SecurityOptions_NetworkAccess")
+     ![Options de sécurité de stratégie de sécurité locale](../debugger/media/dbg_err_localsecuritypolicy_securityoptions_networkaccess.png "DBG_ERR_LocalSecurityPolicy_SecurityOptions_NetworkAccess")
 
 ## <a name="see-also"></a>Voir aussi
-- [Erreurs et résolution des problèmes du débogage distant](../debugger/remote-debugging-errors-and-troubleshooting.md)
-- [Remote Debugging](../debugger/remote-debugging.md)
+- [Erreurs de débogage distant et dépannage](../debugger/remote-debugging-errors-and-troubleshooting.md)
+- [Débogage à distance](../debugger/remote-debugging.md)

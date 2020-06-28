@@ -1,7 +1,7 @@
 ---
 title: 'Erreur : l’exécution de Transact-SQL s’est terminée sans débogage | Microsoft Docs'
 ms.date: 11/08/2018
-ms.topic: troubleshooting
+ms.topic: error-reference
 f1_keywords:
 - vs.debug.error.sqlde_sql_executed_but_not_debugged
 dev_langs:
@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e86e24f775d8470b54ed7b9c54d27a5d3c1ee8da
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.openlocfilehash: e141fac7fba1939811c722d8e08f49531111ff7e
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/13/2020
-ms.locfileid: "75916301"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85460245"
 ---
 # <a name="error-transact-sql-execution-ended-without-debugging"></a>Erreur : L'exécution de Transact-SQL s'est terminée sans débogage
 
@@ -51,4 +51,4 @@ Deux comptes sont concernés :
 - [Configuration du débogage SQL](/previous-versions/visualstudio/visual-studio-2010/s4sszxst(v=vs.100))
 - [Comment : définir des autorisations de SQL Server pour le débogage](https://msdn.microsoft.com/84e088d0-0409-41d4-841b-f5d4b0fda414)
 - [Paramètres et préparation du débogueur](../debugger/debugger-settings-and-preparation.md)
-- [Remote Debugging](../debugger/remote-debugging.md)
+- [Débogage à distance](../debugger/remote-debugging.md)

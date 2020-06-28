@@ -5,7 +5,7 @@ ms.custom: seodec18, get-started
 ms.date: 04/23/2019
 ms.technology: vs-ide-general
 ms.prod: visual-studio-windows
-ms.topic: conceptual
+ms.topic: tutorial
 dev_langs:
 - VB
 ms.assetid: f84339c7-d617-4f56-bfcd-af2215c347ba
@@ -14,14 +14,14 @@ ms.author: ornella
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: d850f709921120fcb85f78f46eb0307d29801d11
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: bc57e3d104d7f8427e97eb6b3dd97ca3e89bc49e
+ms.sourcegitcommit: 9e15138a34532b222e80f6b42b1a9de7b2fe0175
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77579951"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "85419209"
 ---
-# <a name="tutorial-create-a-simple-application-with-visual-basic"></a>Tutorial: Créer une application simple avec Visual Basic
+# <a name="tutorial-create-a-simple-application-with-visual-basic"></a>Didacticiel : créer une application simple avec Visual Basic
 
 Avec ce didacticiel, vous allez vous familiariser avec la plupart des outils, boîtes de dialogue et concepteurs que vous pouvez utiliser lorsque vous développez des applications avec Visual Studio. Vous allez créer une application « Hello, World », concevoir l’interface utilisateur, ajouter du code et déboguer des erreurs, tout en découvrant l’utilisation de l’environnement de développement intégré ([IDE](visual-studio-ide.md)).
 
@@ -63,7 +63,7 @@ Lorsque vous créez une application dans Visual Studio, vous créez d'abord un p
 
 ::: moniker range="vs-2017"
 
-1. Créez un projet. Sur la barre de menu, sélectionnez **File** > **New** > **Project**.
+1. Créez un projet. Dans la barre de menus, sélectionnez **fichier**  >  **nouveau**  >  **projet**.
 
      ![Dans la barre de menus, choisissez Fichier, Nouveau, Projet](../media/exploreide-filenewproject.png)
 
@@ -100,23 +100,23 @@ Après avoir créé le projet, vous pouvez le personnaliser. Dans la fenêtre **
 
 ### <a name="change-the-name-of-mainwindowxaml"></a>Changer le nom de MainWindow.xaml
 
-Donnons un nom plus spécifique à MainWindow. Dans **Solution Explorer**, cliquez à droite sur *MainWindow.xaml* et choisissez **Rename**. Rebaptiser le fichier à *Greetings.xaml*.
+Donnons un nom plus spécifique à MainWindow. Dans **Explorateur de solutions**, cliquez avec le bouton droit sur *MainWindow. Xaml* , puis choisissez **Renommer**. Renommez le fichier avec *Greetings. Xaml*.
 
 ## <a name="design-the-user-interface-ui"></a>Créer l'interface utilisateur
 
-Si le concepteur n’est pas ouvert, sélectionnez *Greetings.xaml* dans **Solution Explorer**, et appuyez sur **Shift**+**F7** pour ouvrir le concepteur.
+Si le concepteur n’est pas ouvert, sélectionnez *Greetings. Xaml* dans **Explorateur de solutions**, puis appuyez sur **MAJ** + **F7** pour ouvrir le concepteur.
 
 Nous allons ajouter trois types de contrôles à cette application : un contrôle <xref:System.Windows.Controls.TextBlock>, deux contrôles <xref:System.Windows.Controls.RadioButton> et un contrôle <xref:System.Windows.Controls.Button>.
 
 ### <a name="add-a-textblock-control"></a>Pour ajouter un contrôle TextBlock
 
-1. Appuyez sur **Ctrl**+**Q** pour activer la boîte de recherche et tape **toolbox**. Choisissez **Affichage > Boîte à outils** dans la liste des résultats.
+1. Appuyez sur **CTRL** + **Q** pour activer la zone de recherche et tapez **boîte à outils**. Choisissez **Affichage > Boîte à outils** dans la liste des résultats.
 
 2. Dans la fenêtre **Boîte à outils**, développez le nœud **Contrôles WPF communs** pour afficher le contrôle TextBlock.
 
      ![Boîte à outils avec le contrôle TextBlock en surbrillance](../media/exploreide-textblocktoolbox.png)
 
-3. Ajoutez un contrôle TextBlock à l’aire de conception en choisissant l’élément **TextBlock** et en le faisant glisser vers la fenêtre de l’aire de conception. Centrez le contrôle vers le haut de la fenêtre. Dans Visual Studio 2019 et plus tard, vous pouvez utiliser les directives rouges pour centrer le contrôle.
+3. Ajoutez un contrôle TextBlock à l’aire de conception en choisissant l’élément **TextBlock** et en le faisant glisser vers la fenêtre de l’aire de conception. Centrez le contrôle vers le haut de la fenêtre. Dans Visual Studio 2019 et versions ultérieures, vous pouvez utiliser les recommandations en rouge pour centrer le contrôle.
 
 Votre fenêtre doit ressembler à l'illustration suivante :
 
@@ -146,7 +146,7 @@ Vous ajouterez ensuite deux contrôles [RadioButton](/dotnet/framework/wpf/contr
 
      ![Fenêtre Boîte à outils avec contrôle RadioButton sélectionné](../media/exploreide-radiobuttontoolbox.png)
 
-2. Ajoutez deux contrôles RadioButton à l’aire de conception en choisissant l’élément **RadioButton** et en le faisant glisser vers la fenêtre de l’aire de conception. Déplacez les boutons (en les sélectionnant et en utilisant les flèches) pour les placer côte à côte sous le contrôle TextBlock. Utilisez les lignes directrices rouges pour aligner les contrôles.
+2. Ajoutez deux contrôles RadioButton à l’aire de conception en choisissant l’élément **RadioButton** et en le faisant glisser vers la fenêtre de l’aire de conception. Déplacez les boutons (en les sélectionnant et en utilisant les flèches) pour les placer côte à côte sous le contrôle TextBlock. Utilisez les indications rouges pour aligner les contrôles.
 
      Votre fenêtre doit se présenter comme suit :
 
@@ -162,7 +162,7 @@ Vous pouvez maintenant afficher du texte pour chaque contrôle RadioButton. La p
 
 ### <a name="add-display-text-for-each-radio-button"></a>Ajouter un texte à afficher pour chaque case d’option
 
-Mettre à jour l’attribut `"Goodbye"` **contenu** pour et `HelloButton` `GoodbyeButton` vers `"Hello"` et dans le XAML. Le balisage XAML doit maintenant ressembler à l’exemple suivant :
+Mettez à jour l’attribut **content** pour `HelloButton` et `GoodbyeButton` vers `"Hello"` et `"Goodbye"` dans le XAML. Le balisage XAML doit maintenant ressembler à l’exemple suivant :
 
    ```xaml
    <Grid>
@@ -186,7 +186,7 @@ Le dernier élément de l’interface utilisateur que vous ajouterez est un cont
 
 ### <a name="add-the-button-control"></a>Ajouter le contrôle bouton
 
-1. Dans la fenêtre **Boîte à outils**, recherchez le contrôle **Button**, puis ajoutez-le à l’aire de conception sous les contrôles RadioButton en le faisant glisser vers le formulaire en mode Design. Si vous utilisez Visual Studio 2019 ou plus tard, une ligne rouge vous aide à centrer le contrôle.
+1. Dans la fenêtre **Boîte à outils**, recherchez le contrôle **Button**, puis ajoutez-le à l’aire de conception sous les contrôles RadioButton en le faisant glisser vers le formulaire en mode Design. Si vous utilisez Visual Studio 2019 ou une version ultérieure, une ligne rouge vous aide à centrer le contrôle.
 
 2. Dans l’affichage XAML, changez la valeur de l’élément **Content** du contrôle Button de `Content="Button"` en `Content="Display"`, puis enregistrez les modifications.
 
@@ -238,7 +238,7 @@ Dans cette étape, vous recherchez l’erreur que nous avons provoquée précéd
 
    ![Capture d’écran de message IOException](../media/exploreide-ioexception.png)
 
-2. Arrêtez le débogage en choisissant **Debug** > **Stop Debugging**.
+2. Arrêtez le débogueur en sélectionnant **Déboguer**  >  **arrêter le débogage**.
 
 Nous avons renommé *MainWindow.xaml* en *Greetings.xaml* au début de ce didacticiel, mais le code continue de faire référence à *MainWindow.xaml* comme URI de démarrage de l’application. Cela explique pourquoi le projet ne démarre pas.
 
@@ -248,7 +248,7 @@ Nous avons renommé *MainWindow.xaml* en *Greetings.xaml* au début de ce didact
 
 2. Remplacez `StartupUri="MainWindow.xaml"` par `StartupUri="Greetings.xaml"`, puis enregistrez les modifications.
 
-Recommencez le débagé (appuyez sur **F5**). Vous devriez voir la fenêtre **Salutations** de l’application.
+Redémarrez le débogueur (appuyez sur **F5**). Vous devez voir la fenêtre **Greetings** de l’application.
 
 ::: moniker range="vs-2017"
 ![Capture d’écran de l’application en cours d’exécution](media/exploreide-wpf-running-app.png)
@@ -261,11 +261,11 @@ Recommencez le débagé (appuyez sur **F5**). Vous devriez voir la fenêtre **Sa
 
 ### <a name="debug-with-breakpoints"></a>Déboguer à l’aide de points d’arrêt
 
-Vous pouvez tester le code pendant le débogage en ajoutant des points d’arrêt. Vous pouvez ajouter des points d’arrêt en choisissant **Debug** > **Toggle Breakpoint**, en cliquant sur la marge gauche de l’éditeur à côté de la ligne de code où vous voulez que la pause se produise, ou en appuyant sur **F9**.
+Vous pouvez tester le code pendant le débogage en ajoutant des points d’arrêt. Vous pouvez ajouter des points d’arrêt en choisissant **Déboguer**  >  le**point d’arrêt**, en cliquant dans la marge de gauche de l’éditeur à côté de la ligne de code où vous souhaitez que le saut se produise, ou en appuyant sur **F9**.
 
 #### <a name="add-breakpoints"></a>Ajouter des points d’arrêt
 
-1. Ouvrez *Greetings.xaml.vb*, et sélectionnez la ligne suivante :`MessageBox.Show("Hello.")`
+1. Ouvrez *Greetings. Xaml. vb*, puis sélectionnez la ligne suivante :`MessageBox.Show("Hello.")`
 
 2. Ajoutez un point d’arrêt en appuyant sur **F9** ou à partir du menu en sélectionnant **Déboguer**, puis **Basculer le point d’arrêt**.
 
@@ -281,7 +281,7 @@ Vous pouvez tester le code pendant le débogage en ajoutant des points d’arrê
 
    ![Capteur d’écran de point d’arrêt dans le débogueur](media/exploreide-debugbreakpoint.png)
 
-6. Sur la barre de menu, choisissez **Debug** > **Step Out**.
+6. Dans la barre de menus, choisissez **Déboguer**  >  **pas à pas sortant**.
 
      L’application reprend l’exécution et une boîte de message affiche le mot « Hello ».
 
@@ -291,42 +291,42 @@ Vous pouvez tester le code pendant le débogage en ajoutant des points d’arrê
 
      La ligne `MessageBox.Show("Goodbye.")` est mise en surbrillance en jaune.
 
-9. Choisissez la clé **F5** pour continuer à débogage. Lorsque la boîte de message s'affiche, choisissez le bouton **OK** sur la boîte de message pour la fermer.
+9. Appuyez sur la touche **F5** pour continuer le débogage. Lorsque la boîte de message s'affiche, choisissez le bouton **OK** sur la boîte de message pour la fermer.
 
 10. Fermez la fenêtre d’application pour arrêter le débogage.
 
-11. Sur la barre de menu, choisissez **Debug** > **Disable All Breakpoints**.
+11. Dans la barre de menus, choisissez **Déboguer**  >  **Désactiver tous les points d’arrêt**.
 
-### <a name="view-a-representation-of-the-ui-elements"></a>Afficher une représentation des éléments de l’assurance-chômage
+### <a name="view-a-representation-of-the-ui-elements"></a>Afficher une représentation des éléments d’interface utilisateur
 
-Dans l’application en cours d’exécution, vous devriez voir un widget qui apparaît en haut de votre fenêtre. Il s’agit d’un aide de temps d’exécution qui fournit un accès rapide à certaines fonctionnalités de débogage utile. Cliquez sur le premier bouton, **Allez à l’arbre visuel en direct**. Vous devriez voir une fenêtre avec un arbre qui contient tous les éléments visuels de votre page. Élargissez les nœuds pour trouver les boutons que vous avez ajoutés.
+Dans l’application en cours d’exécution, vous devriez voir un widget qui apparaît en haut de la fenêtre. Il s’agit d’une application auxiliaire de Runtime qui fournit un accès rapide à certaines fonctionnalités de débogage utiles. Cliquez sur le premier bouton, puis sur **arborescence d’éléments visuels en direct**. Vous devez voir une fenêtre avec une arborescence qui contient tous les éléments visuels de votre page. Développez les nœuds pour rechercher les boutons que vous avez ajoutés.
 
-![Capture d’écran de la fenêtre Live Visual Tree](media/vs-2019/exploreide-live-visual-tree.png)
+![Capture d’écran de la fenêtre d’arborescence d’éléments visuels dynamique](media/vs-2019/exploreide-live-visual-tree.png)
 
 ### <a name="build-a-release-version-of-the-application"></a>Générer une version Release de l'application
 
 Maintenant que vous avez vérifié que tout fonctionne, vous pouvez préparer une version Release de l’application.
 
-1. Sur le menu principal, sélectionnez la solution **Build** > **Clean** pour supprimer les fichiers intermédiaires et les fichiers de sortie qui ont été créés lors des versions précédentes. Cette opération n'est pas nécessaire, mais elle nettoie les sorties des versions Debug.
+1. Dans le menu principal, sélectionnez **générer**une  >  **solution propre** pour supprimer les fichiers intermédiaires et les fichiers de sortie créés pendant les générations précédentes. Cette opération n'est pas nécessaire, mais elle nettoie les sorties des versions Debug.
 
 2. Remplacez la configuration de build **Debug** pour HelloWPFApp par **Release** à l’aide du contrôle de liste déroulante de la barre d’outils (« Debug » est actuellement affiché).
 
-3. Construire la solution en choisissant **Build** > **Build Solution**.
+3. Générez la solution en choisissant **générer**  >  **générer la solution**.
 
-Félicitations ! Vous avez terminé ce didacticiel. Vous pouvez trouver le *.exe* que vous avez construit sous votre solution et répertoire de projet (*... 'HelloWPFApp’HelloWPFApp’bin 'Release*).
+Félicitations ! Vous avez terminé ce didacticiel. Vous pouvez trouver le fichier *. exe* que vous avez généré dans le répertoire de votre solution et de votre projet (*. ..\HelloWPFApp\HelloWPFApp\bin\Release*).
 
 ## <a name="see-also"></a>Voir aussi
 
 ::: moniker range="vs-2017"
 
-- [Quoi de neuf dans Visual Studio 2017](../../ide/whats-new-visual-studio-2017.md)
+- [Nouveautés de Visual Studio 2017](../../ide/whats-new-visual-studio-2017.md)
 - [Conseils de productivité](../../ide/productivity-features.md)
 
 ::: moniker-end
 
 ::: moniker range="vs-2019"
 
-- [Nouveautés de Visual Studio 2019](../../ide/whats-new-visual-studio-2019.md)
+- [Nouveautés de Visual Studio 2019](../../ide/whats-new-visual-studio-2019.md)
 - [Conseils de productivité](../../ide/productivity-features.md)
 
 ::: moniker-end

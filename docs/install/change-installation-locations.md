@@ -3,7 +3,7 @@ title: Sélectionner les emplacements d'installation
 description: Découvrez comment réduire l’empreinte de l’installation de Visual Studio sur votre lecteur système en plaçant le cache de téléchargement, les composants partagés, les kits SDK et les outils sur d’autres lecteurs. Par exemple, déplacez des fichiers depuis le lecteur C vers le lecteur D.
 ms.date: 03/30/2019
 ms.custom: seodec18
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - change installation locations for Visual Studio
 - select an installation location for Visual Studio files
@@ -16,12 +16,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 7f80d3c30c536e58811f8ca92676694b6d010010
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 5751ddeca2ba690ec29ff905ec7e8330a7199eab
+ms.sourcegitcommit: 9e15138a34532b222e80f6b42b1a9de7b2fe0175
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "76111787"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "85419118"
 ---
 # <a name="select-the-installation-locations-in-visual-studio"></a>Sélectionner les emplacements d’installation dans Visual Studio
 
@@ -33,7 +33,7 @@ Vous pouvez réduire l’empreinte de l’installation de Visual Studio sur votr
 
 ::: moniker range="vs-2017"
 
-**Nouveau dans la version 15.7**: Vous pouvez réduire l’empreinte d’installation de Visual Studio sur votre lecteur système en changeant l’emplacement de certains de ses fichiers. Plus précisément, vous pouvez utiliser un autre emplacement pour le cache de téléchargement, les composants partagés, les SDK et les fichiers des outils.
+**Nouveauté de la version 15,7**: vous pouvez réduire l’encombrement d’installation de Visual Studio sur votre lecteur système en modifiant l’emplacement de certains de ses fichiers. Plus précisément, vous pouvez utiliser un autre emplacement pour le cache de téléchargement, les composants partagés, les SDK et les fichiers des outils.
 
 ::: moniker-end
 
@@ -46,18 +46,18 @@ Vous êtes prêt à commencer ? Voici comment faire.
 
 1. Quand vous installez Visual Studio, choisissez l’onglet **Emplacements d’installation**.
 
-   ![Visual Studio 2017 - Sélectionnez l’emplacement de l’installation](media/vs-installation-locations.png "Sélectionnez l’emplacement d’installation.")
+   ![Visual Studio 2017-sélectionner l’emplacement d’installation](media/vs-installation-locations.png "Sélectionnez l’emplacement d’installation.")
 
 1. Dans la section **IDE Visual Studio**, acceptez la valeur par défaut. Visual Studio installe le noyau du produit et inclut les fichiers propres à cette version de Visual Studio.
 
-   ![Section IDE de Studio Visuel de l’onglet Emplacements d’installation](media/vs-installation-locations-ide.png "Acceptez la valeur par défaut pour la section Visual Studio IDE de l’onglet Installations Location.")
+   ![Section IDE de Visual Studio de l’onglet emplacements d’installation](media/vs-installation-locations-ide.png "Acceptez la valeur par défaut de la section IDE de Visual Studio de l’onglet emplacement des installations.")
 
    > [!TIP]
    > Si votre lecteur système est un disque SSD (Solid-State Drive), nous vous recommandons d’accepter l’emplacement par défaut sur votre lecteur système. Pourquoi ? Quand vous développez avec Visual Studio, vous lisez et écrivez un grand nombre de fichiers, ce qui augmente l’activité E/S du disque. Il est conseillé de choisir votre lecteur le plus rapide pour gérer la charge.
 
 1. Dans la section **Cache de téléchargement**, indiquez si vous voulez conserver le cache de téléchargement, puis choisissez où stocker ses fichiers.
 
-     ![Télécharger la section Cache de l’onglet Lieux d’installation](media/vs-installation-locations-cache.png "Choisissez de conserver le cache de téléchargement après l’installation, puis spécifier le lecteur où vous voulez stocker des fichiers.")
+     ![Section cache de téléchargement de l’onglet emplacements d’installation](media/vs-installation-locations-cache.png "Indiquez si vous souhaitez conserver le cache de téléchargement après l’installation, puis spécifiez le lecteur sur lequel vous souhaitez stocker les fichiers.")
 
     1. Cochez ou décochez **Conserver le cache de téléchargement après l’installation**.
 
@@ -72,7 +72,7 @@ Vous êtes prêt à commencer ? Voici comment faire.
 
 1. Dans la section **Composants partagés, outils et SDK**, spécifiez le lecteur où stocker les fichiers qui sont partagés par les installations côte à côte de Visual Studio. Les SDK et les outils sont également stockés dans ce répertoire.
 
-   ![Section composants, outils et SDKs partagés de l’onglet Emplacements d’installation](media/vs-installation-locations-shared.png "Spécifiez l’emplacement où vous souhaitez stocker des composants, des outils et des SDK partagés.")
+   ![Section composants partagés, outils et kits de développement logiciel de l’onglet emplacements d’installation](media/vs-installation-locations-shared.png "Spécifiez l’emplacement où vous souhaitez stocker les composants partagés, les outils et les kits de développement logiciel (SDK).")
 
 ::: moniker-end
 
@@ -80,7 +80,7 @@ Vous êtes prêt à commencer ? Voici comment faire.
 
 1. Quand vous installez Visual Studio, choisissez l’onglet **Emplacements d’installation**.
 
-   ![Visual Studio 2019 - Sélectionnez l’emplacement de l’installation](media/vs-2019/vs-installer-installation-locations.png "Sélectionnez l’emplacement d’installation.")
+   ![Visual Studio 2019-sélectionner l’emplacement d’installation](media/vs-2019/vs-installer-installation-locations.png "Sélectionnez l’emplacement d’installation.")
 
 1. Dans la section **IDE Visual Studio**, acceptez la valeur par défaut. Visual Studio installe le noyau du produit et inclut les fichiers propres à cette version de Visual Studio.
 

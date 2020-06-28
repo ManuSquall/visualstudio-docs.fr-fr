@@ -1,7 +1,7 @@
 ---
 title: UsingNameSpace | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9d078e8af5f579556fb865a4d92084220afecc83
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 3662bdc61cd98a36161bd8972a98cb4f168bc452
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72738433"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85460964"
 ---
 # <a name="usingnamespace"></a>UsingNameSpace
-Certains symboles peuvent être référencés par l’espace de noms et seront par la suite identifiés par une balise `SymTagUsingNameSpace`.
+Certains symboles peuvent être référencés par l’espace de noms et seront par la suite identifiés par une `SymTagUsingNameSpace` balise.
 
 > [!NOTE]
 > La balise de symbole UsingNamespace apparaît uniquement dans le code managé.
@@ -28,7 +28,7 @@ Certains symboles peuvent être référencés par l’espace de noms et seront p
 ## <a name="properties"></a>Propriétés
  Le tableau suivant présente les propriétés qui sont valides pour ce type de symbole.
 
-|Property|Type de données|Description|
+|Propriété|Type de données|Description|
 |--------------|---------------|-----------------|
 |[IDiaSymbol::get_lexicalParent](../../debugger/debug-interface-access/idiasymbol-get-lexicalparent.md)|`IDiaSymbol*`|Symbole du compiland, du bloc ou de la fonction englobant.|
 |[IDiaSymbol::get_lexicalParentId](../../debugger/debug-interface-access/idiasymbol-get-lexicalparentid.md)|`DWORD`|ID du symbole parent lexical.|

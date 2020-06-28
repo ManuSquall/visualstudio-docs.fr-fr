@@ -1,7 +1,7 @@
 ---
 title: Emplacements des symboles | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f972d0d072aa36cab608c85305588f6bbd5d47d4
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 125245f38be5588f2661b45162ffde24e5930ad7
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72738536"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85461076"
 ---
 # <a name="symbol-locations"></a>Emplacements des symboles
 La plupart des symboles ont un emplacement défini dans le fichier image. L’emplacement d’un symbole est spécifié avec une valeur de l’énumération d' [énumération LocationType (](../../debugger/debug-interface-access/locationtype.md) . Le symbole peut prendre en charge des propriétés supplémentaires en fonction de son emplacement.
@@ -27,7 +27,7 @@ La plupart des symboles ont un emplacement défini dans le fichier image. L’em
 
 |Type d’emplacement|Propriétés supplémentaires|
 |-------------------|---------------------------|
-|`LocIsNull`|none|
+|`LocIsNull`|aucun|
 |`LocIsStatic`|[IDiaSymbol::get_addressOffset](../../debugger/debug-interface-access/idiasymbol-get-addressoffset.md)<br /><br /> [IDiaSymbol::get_addressSection](../../debugger/debug-interface-access/idiasymbol-get-addresssection.md)<br /><br /> [IDiaSymbol :: get_relativeVirtualAddress](../../debugger/debug-interface-access/idiasymbol-get-relativevirtualaddress.md) (si les adresses virtuelles relatives sont activées)<br /><br /> [IDiaSymbol :: get_virtualAddress](../../debugger/debug-interface-access/idiasymbol-get-virtualaddress.md) (si la base de l’image a été définie sur une valeur différente de zéro)|
 |`LocIsTLS`|[IDiaSymbol::get_addressSection](../../debugger/debug-interface-access/idiasymbol-get-addresssection.md)<br /><br /> [IDiaSymbol::get_addressOffset](../../debugger/debug-interface-access/idiasymbol-get-addressoffset.md)|
 |`LocIsRegRel`|[IDiaSymbol::get_registerId](../../debugger/debug-interface-access/idiasymbol-get-registerid.md)<br /><br /> [IDiaSymbol::get_offset](../../debugger/debug-interface-access/idiasymbol-get-offset.md)|
@@ -53,4 +53,4 @@ La plupart des symboles ont un emplacement défini dans le fichier image. L’em
 - [IDiaSymbol::get_value](../../debugger/debug-interface-access/idiasymbol-get-value.md)
 - [IDiaSymbol::get_virtualAddress](../../debugger/debug-interface-access/idiasymbol-get-virtualaddress.md)
 - [LocationType, énumération](../../debugger/debug-interface-access/locationtype.md)
-- [Symboles et étiquettes de symbole](../../debugger/debug-interface-access/symbols-and-symbol-tags.md)
+- [Balises Symbols et Symbol](../../debugger/debug-interface-access/symbols-and-symbol-tags.md)

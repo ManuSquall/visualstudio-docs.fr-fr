@@ -1,7 +1,7 @@
 ---
-title: 'Erreur : impossible de définir le point d’arrêt des données | Microsoft Docs'
+title: Erreur-Impossible de définir le point d’arrêt des données | Microsoft Docs
 ms.date: 12/3/2019
-ms.topic: troubleshooting
+ms.topic: error-reference
 f1_keywords:
 - vs.debug.error.unable_to_set_data_breakpoint
 dev_langs:
@@ -15,12 +15,12 @@ ms.author: waan
 manager: caslan
 ms.workload:
 - multiple
-ms.openlocfilehash: 18fa63f2a6f4b6d789bad6f813cb3956a636a2d2
-ms.sourcegitcommit: 8e123bcb21279f2770b28696995450270b4ec0e9
+ms.openlocfilehash: dab5e146d510601c6e93582b6b128abcd964b4a7
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "75404087"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85459933"
 ---
 # <a name="troubleshooting-data-breakpoint-errors"></a>Dépannage des erreurs de point d’arrêt de données
 Cette page vous guidera lors de la résolution des erreurs courantes rencontrées lors de l’utilisation de l’instruction « arrêter quand la valeur est modifiée »
@@ -44,7 +44,7 @@ Vous trouverez ci-dessous une liste des erreurs qui peuvent se produire lors de 
 
     - « Arrêter lorsque la valeur change » sur une variable qui n’est pas développée à partir d’une liste déroulante.
         - Le débogueur doit en interne connaître l’objet contenant le champ dont vous souhaitez effectuer le suivi. Le garbage collector peut déplacer votre objet dans le tas afin que le débogueur doive connaître l’objet qui contient la variable que vous souhaitez suivre. 
-        - **Solution de contournement**: Si vous êtes dans une méthode au sein de l’objet sur lequel vous souhaitez définir un point d’arrêt sur variable, remontez d’un frame et utilisez la fenêtre `locals/autos/watch` pour développer l’objet et définir un point d’arrêt sur le champ de votre choix.
+        - **Solution de contournement**: Si vous êtes dans une méthode au sein de l’objet sur lequel vous souhaitez définir un point d’arrêt sur variable, remontez d’un frame et utilisez la `locals/autos/watch` fenêtre pour développer l’objet et définir un point d’arrêt sur le champ souhaité.
 
 - *« Les points d’arrêt sur variable ne sont pas pris en charge pour les champs statiques ou les propriétés statiques. »*
     
@@ -56,17 +56,17 @@ Vous trouverez ci-dessous une liste des erreurs qui peuvent se produire lors de 
 
 - *« La valeur de la propriété a changé et ne peut plus être suivie ».*
 
-    - Une propriété peut modifier la manière dont elle est calculée au moment de l’exécution. dans ce cas, le nombre de variables dont dépend la propriété augmente et peut dépasser la limite matérielle. Voir `"The property is dependent on more memory than can be tracked by the hardware."` ci-dessous.
+    - Une propriété peut modifier la manière dont elle est calculée au moment de l’exécution. dans ce cas, le nombre de variables dont dépend la propriété augmente et peut dépasser la limite matérielle. Consultez `"The property is dependent on more memory than can be tracked by the hardware."` ci-dessous.
 
 - *« La propriété dépend d’un nombre de mémoire supérieur à celui qui peut être suivi par le matériel. »*
     
     - Chaque architecture possède un nombre défini d’octets et de points d’arrêt de données matérielles qu’elle peut prendre en charge, et la propriété pour laquelle vous souhaitez définir un point d’arrêt de données a dépassé cette limite. Reportez-vous au tableau des [limitations matérielles de point d’arrêt de données](#data-breakpoint-hardware-limitations) pour déterminer le nombre de composants matériels pris en charge et les octets de données disponibles pour l’architecture que vous utilisez. 
     - **Solution de contournement**: définissez un point d’arrêt sur une valeur susceptible d’être modifiée dans la propriété.
 
-- *« Les points d’arrêt sur variable ne sont pas C# pris en charge lors de l’utilisation de l’évaluateur d’expression hérité ».*
+- *« Les points d’arrêt sur variable ne sont pas pris en charge lors de l’utilisation de l’évaluateur d’expression C# hérité ».*
 
-    - Les points d’arrêt sur variable ne sont pris en C# charge que sur l’évaluateur d’expression non hérité. 
-    - **Solution**: vous désactivez C# l’évaluateur d’expression hérité en accédant à `Debug -> Options` puis sous `Debugging -> General` décochez `"Use the legacy C# and VB expression evaluators"`.
+    - Les points d’arrêt sur variable ne sont pris en charge que sur l’évaluateur d’expression C# non hérité. 
+    - **Solution**: vous désactivez l’évaluateur d’expression C# hérité en accédant `Debug -> Options` alors à `Debugging -> General` décocher `"Use the legacy C# and VB expression evaluators"` .
 
 ## <a name="data-breakpoint-hardware-limitations"></a>Limitations matérielles des points d’arrêt de données
 
@@ -80,7 +80,7 @@ L’architecture (configuration de plateforme) sur laquelle votre programme s’
 | ARM64 | 2 | 8 |
 
 ## <a name="provide-feedback"></a>Fournir des commentaires
-Pour tout problème ou suggestion concernant cette fonctionnalité, faites-le nous savoir via l’aide > Envoyer des commentaires > [signaler un problème](../ide/how-to-report-a-problem-with-visual-studio.md) dans l’IDE ou dans la [communauté des développeurs](https://developercommunity.visualstudio.com/).
+Pour tout problème ou suggestion concernant cette fonctionnalité, faites-le nous savoir via l’aide > envoyer des commentaires > [signaler un problème](../ide/how-to-report-a-problem-with-visual-studio.md) dans l’IDE ou dans la [communauté des développeurs](https://developercommunity.visualstudio.com/).
 
 ## <a name="see-also"></a>Voir aussi
 - [Utilisation de « arrêter quand la valeur change » dans .net Core 3,0](using-breakpoints.md#BKMK_set_a_data_breakpoint_native_cplusplus).

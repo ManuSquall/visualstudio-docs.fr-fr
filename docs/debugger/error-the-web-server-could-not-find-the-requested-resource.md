@@ -1,7 +1,7 @@
 ---
-title: 'Erreur : le serveur Web n’a pas pu trouver la ressource demandée | Microsoft Docs'
+title: Erreur-le serveur Web n’a pas pu trouver la ressource demandée | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: troubleshooting
+ms.topic: error-reference
 dev_langs:
 - CSharp
 - VB
@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e5c9b428a03595f387c5ff6fb6f0b8ca35172752
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 5cce9afe8f27b25a01c0f6276164522a78a2ed9a
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72737249"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85460349"
 ---
 # <a name="error-the-web-server-could-not-find-the-requested-resource"></a>Erreur : le serveur web n’a pas trouvé la ressource demandée
 Pour des raisons de sécurité, IIS a retourné une erreur générique.
@@ -33,4 +33,4 @@ Cette erreur peut avoir de nombreuses causes supplémentaires. Certaines des cau
  Pour plus d’informations sur la résolution des problèmes liés à IIS, consultez [Administration et gestion IIS](/iis/manage/provisioning-and-managing-iis/iis-management-and-administration).
 
 ## <a name="see-also"></a>Voir aussi
-- [Erreur : le serveur web est verrouillé et bloque l’exécution du verbe DEBUG](../debugger/error-the-web-server-has-been-locked-down-and-is-blocking-the-debug-verb.md)
+- [Erreur : le serveur Web a été verrouillé et bloque le verbe de débogage](../debugger/error-the-web-server-has-been-locked-down-and-is-blocking-the-debug-verb.md)

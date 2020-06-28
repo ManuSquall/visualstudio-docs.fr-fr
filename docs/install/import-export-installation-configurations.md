@@ -3,7 +3,7 @@ title: Importer ou exporter des configurations d’installation
 titleSuffix: ''
 description: Découvrez comment exporter la configuration de votre installation dans un fichier .vsconfig à partager avec d’autres utilisateurs et comment l’importer pour le cloner.
 ms.date: 05/18/2019
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - vs.about
 helpviewer_keywords:
@@ -18,12 +18,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 12d22334094b848350d44d245685532fed196389
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 4dcad21ce0a77e18bed0b077f731a509916e9e63
+ms.sourcegitcommit: 9e15138a34532b222e80f6b42b1a9de7b2fe0175
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "76114843"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "85418819"
 ---
 # <a name="import-or-export-installation-configurations"></a>Importer ou exporter des configurations d’installation
 
@@ -70,7 +70,7 @@ Lorsque vous êtes prêt à importer un fichier de configuration de l’installa
 
 ## <a name="automatically-install-missing-components"></a>Installer automatiquement les composants manquants
 
-**Nouveau dans Visual Studio 2019**: Lorsque vous enregistrez un fichier .vsconfig sur votre répertoire de racine de solution, puis ouvrez une solution, Visual Studio détecte automatiquement quels composants sont manquants et vous invite à les installer.
+**Nouveauté de Visual studio 2019**: quand vous enregistrez un fichier. vsconfig dans le répertoire racine de votre solution, puis que vous ouvrez une solution, Visual Studio détecte automatiquement les composants manquants et vous invite à les installer.
 
 ![L’Explorateur de solutions suggère des composants supplémentaires](../install/media/vs-2019/solution-explorer-config-file.png)
 

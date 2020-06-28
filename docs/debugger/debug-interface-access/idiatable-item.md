@@ -1,7 +1,7 @@
 ---
 title: IDiaTable::Item | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d402f5ad54d5c0f487cebb3a8c53f68d17828ed4
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 18efd1113d66d36b99dd33eb3e79cb0cc7e8bb05
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72738725"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85461300"
 ---
 # <a name="idiatableitem"></a>IDiaTable::Item
 Récupère une référence à l’entrée spécifiée dans la table.
@@ -34,19 +34,19 @@ HRESULT Item ( 
 #### <a name="parameters"></a>Paramètres
  `index`
 
-dans Index de l’entrée de table dans la plage 0 à `count`-1, où `count` est retourné par la méthode [IDiaTable :: get_Count](../../debugger/debug-interface-access/idiatable-get-count.md).
+dans Index de l’entrée de table dans la plage de 0 à `count` -1, où `count` est retourné par la méthode [IDiaTable :: get_Count](../../debugger/debug-interface-access/idiatable-get-count.md).
 
  `element`
 
-à Retourne un objet `IUnknown` qui représente l’entrée de table spécifiée.
+à Retourne un `IUnknown` objet qui représente l’entrée de table spécifiée.
 
-## <a name="return-value"></a>Valeur de retour
- En cas de réussite, retourne `S_OK`; Sinon, retourne un code d’erreur.
+## <a name="return-value"></a>Valeur renvoyée
+ En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
-## <a name="remarks"></a>Notes
- Une table représente une collection d’objets. En fonction de ces objets, le paramètre d’élément peut être casté en interface appropriée. Par exemple, si une table contient des objets [IDiaSegment](../../debugger/debug-interface-access/idiasegment.md) , le paramètre d’élément peut être casté en interface `IDiaSegment`.
+## <a name="remarks"></a>Remarques
+ Une table représente une collection d’objets. En fonction de ces objets, le paramètre d’élément peut être casté en interface appropriée. Par exemple, si une table contient des objets [IDiaSegment](../../debugger/debug-interface-access/idiasegment.md) , le paramètre d’élément peut être casté en `IDiaSegment` interface.
 
- Une approche plus courante consiste à appeler la méthode `QueryInterface` dans l’interface [IDiaTable](../../debugger/debug-interface-access/idiatable.md) pour l’interface d’énumérateur appropriée et à utiliser les méthodes spécifiques de l’énumérateur pour accéder au contenu de la table. Pour obtenir un exemple, consultez l’interface [IDiaEnumInjectedSources](../../debugger/debug-interface-access/idiaenuminjectedsources.md) .
+ Une approche plus courante consiste à appeler la `QueryInterface` méthode dans l’interface [IDiaTable](../../debugger/debug-interface-access/idiatable.md) pour l’interface d’énumérateur appropriée et à utiliser les méthodes spécifiques de l’énumérateur pour accéder au contenu de la table. Pour obtenir un exemple, consultez l’interface [IDiaEnumInjectedSources](../../debugger/debug-interface-access/idiaenuminjectedsources.md) .
 
 ## <a name="see-also"></a>Voir aussi
 - [IDiaTable](../../debugger/debug-interface-access/idiatable.md)

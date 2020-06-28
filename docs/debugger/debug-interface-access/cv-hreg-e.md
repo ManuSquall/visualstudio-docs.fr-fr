@@ -1,7 +1,7 @@
 ---
 title: CV_HREG_e | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -12,18 +12,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: aac055930e9d1b016bbdc4949cbbdbee798cfaa2
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: ee15d5b4d6a0959397d8d62753455c7a26f01f78
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72745314"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85462106"
 ---
 # <a name="cv_hreg_e"></a>CV_HREG_e
 Spécifie un registre cible.
 
 > [!NOTE]
-> Étant donné que l’énumération `CV_HREG_e` est trop volumineuse pour être dupliquée dans son intégralité ici, une version abrégée est fournie en tant que référence. Les entrées manquantes sont nonotées en italique. L’énumération complète est disponible dans le fichier d’en-tête cvconst. h.
+> Étant donné que l' `CV_HREG_e` énumération est trop volumineuse pour être dupliquée dans son intégralité ici, une version abrégée est fournie en tant que référence. Les entrées manquantes sont nonotées en italique. L’énumération complète est disponible dans le fichier d’en-tête cvconst. h.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -417,21 +417,21 @@ CV_M4_ * registres utilisés par le processeur de la série MIPS 4000.
 
 CV_ALPHA_ * registres utilisés par le processeur de série Digital Equipment Corporation Alpha AXP.
 
-Registres CV_PPC_ * utilisés par le processeur Motorola/IBM PowerPC.
+CV_PPC_ * registres utilisés par le processeur Motorola/IBM PowerPC.
 
-CV_SH3_ * et CV_SH_ \* registres utilisés par Hitachi SH3 et le processeur de série Hitachi SH.
+Les registres CV_SH3_ * et CV_SH_ \* utilisés par Hitachi SH3 et le processeur de série Hitachi sh.
 
-Registres CV_ARM_ * utilisés par les processeurs ARM (Advanced RISC machine).
+CV_ARM_ * registres utilisés par les processeurs ARM (Advanced RISC machine).
 
 CV_IA64_ * registres utilisés par les processeurs de la série Intel IA64.
 
-Registres CV_TRI_ * utilisés par le processeur TriCore Infineon Technologies.
+CV_TRI_ * registres utilisés par le processeur TriCore Infineon Technologies.
 
 CV_AM33_ * registres utilisés par Matsushita/Panasonic AM33 et les processeurs associés.
 
 CV_M32R_ * registres utilisés par le processeur M32R Mitsubishi.
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
 Chaque type de processeur utilise son propre ensemble unique de registres.
 
 Les valeurs de cette énumération sont passées aux méthodes suivantes :
@@ -446,7 +446,7 @@ Les valeurs de cette énumération sont passées aux méthodes suivantes :
 
 - [IDiaStackFrame::get_registerValue](../../debugger/debug-interface-access/idiastackframe-get-registervalue.md)
 
-## <a name="requirements"></a>Configuration requise :
+## <a name="requirements"></a>Conditions requises :
 En-tête : cvconst. h
 
 ## <a name="see-also"></a>Voir aussi

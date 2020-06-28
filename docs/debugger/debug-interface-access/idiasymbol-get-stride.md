@@ -1,7 +1,7 @@
 ---
 title: IDiaSymbol::get_stride | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 ms.assetid: 4264742a-3d91-44b9-9d14-87adbc77f0f0
@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b1ff294e45404d312d445c4b76f05cc3e0d7dd95
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: f3853c6883ed5feab420f0b689c0c614d57aecd7
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72739290"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85461955"
 ---
 # <a name="idiasymbolget_stride"></a>IDiaSymbol::get_stride
 Récupère le Stride de la matrice ou du tableau strided.
@@ -32,8 +32,8 @@ HRESULT get_stride(
 
 à Pointeur vers un `DWORD` qui contient le Stride.
 
-## <a name="return-value"></a>Valeur de retour
- En cas de réussite, retourne `S_OK` ; Sinon, retourne `S_FALSE` ou un code d’erreur.
+## <a name="return-value"></a>Valeur renvoyée
+ En cas de réussite, retourne `S_OK` ; sinon, retourne `S_FALSE` ou un code d’erreur.
 
 ## <a name="see-also"></a>Voir aussi
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

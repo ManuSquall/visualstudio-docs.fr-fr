@@ -1,7 +1,7 @@
 ---
-title: 'Erreur : Le processus cible s’est arrêté avec le code &#39;code&#39; lors de l’évaluation de la fonction &#39;fonction&#39; | Microsoft Docs'
+title: 'Erreur : le processus cible s’est terminé avec le code &#39;code&#39; lors de l’évaluation de la fonction &#39;fonction&#39; | Microsoft Docs'
 ms.date: 4/06/2018
-ms.topic: troubleshooting
+ms.topic: error-reference
 f1_keywords:
 - vs.debug.error.process_exit_during_func_eval
 author: mikejo5000
@@ -9,39 +9,39 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 75d82b6011a0dfa7f2c388e7d5f39a9ebabcd663
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d1721196becf1f746d81fa7e3d4ff5f0371e3f57
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62850815"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85460776"
 ---
-# <a name="error-the-target-process-exited-with-code-39code39-while-evaluating-the-function-39function39"></a>Erreur : Le processus cible s’est arrêté avec le code &#39;code&#39; lors de l’évaluation de la fonction &#39;(fonction)&#39;
+# <a name="error-the-target-process-exited-with-code-39code39-while-evaluating-the-function-39function39"></a>Erreur : le processus cible s’est terminé avec le code &#39;code&#39; lors de l’évaluation de la fonction &#39;fonction&#39;
 
-Texte du message complet : Le processus cible s’est arrêté avec le code 'code' lors de l’évaluation de la fonction 'fonction'.
+Texte complet du message : le processus cible s’est terminé avec le code’code’lors de l’évaluation de la fonction’Function'.
 
-Pour le rendre plus facile à inspecter l’état d’objets .NET, le débogueur force automatiquement le processus débogué à exécuter du code supplémentaire (en général, les méthodes d’accesseur Get de propriété et `ToString` fonctions). Dans la plupart des scénarios, ces fonctions terminent correctement ou lever des exceptions qui peuvent être interceptées par le débogueur. Toutefois, il existe certains cas dans lequel les exceptions ne peut pas être interceptées, car elles franchissent les limites de noyau, nécessitent le pompage de messages utilisateur ou sont irrécupérables. Comme un résultat, un accesseur Get de propriété ou la méthode ToString qui exécute le code qui soit explicitement met fin au processus (par exemple, appelle `ExitProcess()`) ou lève une exception non gérée ne peut pas être interceptée (par exemple, `StackOverflowException`) prendra fin le processus débogué et à la fin de la session de débogage. Si vous rencontrez ce message d’erreur, cela s’est produite.
+Pour faciliter l’inspection de l’état des objets .NET, le débogueur force automatiquement le processus débogué à exécuter du code supplémentaire (en général, les méthodes et les fonctions de l’accesseur Get de la propriété `ToString` ). Dans la plupart des scénarios, ces fonctions s’exécutent correctement ou lèvent des exceptions qui peuvent être interceptées par le débogueur. Toutefois, dans certaines circonstances, les exceptions ne peuvent pas être interceptées, car elles traversent les limites du noyau, nécessitent la pompage des messages utilisateur ou ne sont pas récupérables. Par conséquent, une méthode Getter ou ToString de propriété qui exécute du code qui termine explicitement le processus (par exemple, appelle `ExitProcess()` ) ou lève une exception non gérée qui ne peut pas être interceptée (par exemple, `StackOverflowException` ) met fin au processus débogué et met fin à la session de débogage. Si vous rencontrez ce message d’erreur, cela s’est produit.
 
-Une des raisons courantes pour résoudre ce problème sont que lorsque le débogueur évalue une propriété qui s’appelle elle-même, cela peut entraîner une exception de dépassement de capacité de pile. L’exception de dépassement de capacité de pile ne peut pas être récupérée et le processus cible s’arrête.
+Ce problème est souvent dû au fait que lorsque le débogueur évalue une propriété qui s’appelle elle-même, cela peut entraîner une exception de dépassement de capacité de la pile. L’exception de dépassement de capacité de la pile ne peut pas être récupérée et le processus cible se termine.
 
 ## <a name="to-correct-this-error"></a>Pour corriger cette erreur
 
 Il existe deux solutions possibles à ce problème.
 
-### <a name="solution-1-prevent-the-debugger-from-calling-the-getter-property-or-tostring-method"></a>Solution #1 : Empêcher le débogueur de l’appel de la propriété d’accesseur Get ou la méthode ToString 
+### <a name="solution-1-prevent-the-debugger-from-calling-the-getter-property-or-tostring-method"></a>Solution #1 : empêcher le débogueur d’appeler la propriété Getter ou la méthode ToString 
 
-Le message d’erreur vous indiquera le nom de la fonction que le débogueur a essayé d’appeler. Avec le nom de la fonction, vous pouvez essayer de réévaluer cette fonction à partir de la **immédiat** fenêtre pour déboguer la version d’évaluation. Le débogage est possible lors de l’évaluation de la **immédiat** fenêtre car, contrairement aux évaluations implicites à partir de la **automatique/variables locales/espion** windows, le débogueur s’arrête sur les exceptions non gérées.
+Le message d’erreur indique le nom de la fonction que le débogueur a essayé d’appeler. Avec le nom de la fonction, vous pouvez essayer de réévaluer cette fonction à partir de la fenêtre **exécution** pour déboguer l’évaluation. Le débogage est possible lors de l’évaluation à partir de la fenêtre **exécution** car, contrairement aux évaluations implicites des fenêtres **automatique/variables locales/espion** , le débogueur s’arrête sur les exceptions non gérées.
 
-Si vous pouvez modifier cette fonction, vous pouvez empêcher le débogueur de l’appel de l’accesseur Get de propriété ou `ToString` (méthode). Essayez l’une des opérations suivantes :
+Si vous pouvez modifier cette fonction, vous pouvez empêcher le débogueur d’appeler la méthode ou l’accesseur Get de propriété `ToString` . Essayez l’une des opérations suivantes :
 
-* Modifier la méthode à un autre type de code en plus d’un accesseur Get de propriété ou méthode ToString et le problème disparaîtra.
-    - ou -
-* (Pour `ToString`) définir un `DebuggerDisplay` attribut sur le type et vous peut avoir le débogueur à évaluer un élément autre que `ToString`.
-    - ou -
-* (Pour un accesseur Get de propriété) Placez le `[System.Diagnostics.DebuggerBrowsable(DebuggerBrowsableState.Never)]` attribut sur la propriété. Cela peut être utile si vous avez une méthode qui doit rester une propriété pour des raisons de compatibilité d’API, mais il doit être une méthode.
+* Remplacez la méthode par un autre type de code, en plus d’une méthode Getter ou d’une méthode ToString de propriété. le problème disparaît.
+    -ou-
+* (Pour `ToString` ) Définissez un `DebuggerDisplay` attribut sur le type et vous pouvez faire en sorte que le débogueur évalue autre chose que `ToString` .
+    -ou-
+* (Pour un accesseur Get de propriété) Placez l' `[System.Diagnostics.DebuggerBrowsable(DebuggerBrowsableState.Never)]` attribut sur la propriété. Cela peut être utile si vous avez une méthode qui doit rester une propriété pour des raisons de compatibilité d’API, mais qu’elle doit être une méthode.
 
-Si vous ne pouvez pas modifier cette méthode, vous pourrez peut-être interrompre le processus cible à une autre instruction et l’évaluation de nouvelle tentative.
+Si vous ne pouvez pas modifier cette méthode, vous pourrez peut-être interrompre le processus cible à une autre instruction et retenter l’évaluation.
 
-### <a name="solution-2-disable-all-implicit-evaluation"></a>Solution #2 : Désactiver l’évaluation implicite tous les
+### <a name="solution-2-disable-all-implicit-evaluation"></a>#2 de solution : désactiver toutes les évaluations implicites
 
-Si les solutions précédentes ne résolvent pas le problème, accédez à **outils** > **Options**et désactivez le paramètre **débogage**  >   **Général** > **activer l’évaluation de la propriété et d’autres appels de fonction implicite**. Cela désactive la plupart des évaluations de fonction implicite et devrait résoudre le problème.
+Si les solutions précédentes ne résolvent pas le problème, accédez à **Outils**  >  **options**et décochez la case définir le **débogage**  >  **général**  >  **activer l’évaluation de la propriété et d’autres appels de fonction implicite**. Cela désactivera la plupart des évaluations de fonctions implicites et devrait résoudre le problème.

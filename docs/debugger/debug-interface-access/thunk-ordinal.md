@@ -1,7 +1,7 @@
 ---
 title: THUNK_ORDINAL | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1de2d6c9700dcb7b1106c3693d855bb1d8ae2cfa
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: d2fe7c62ce04e61a8476731ed14ee14f60e2b044
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72738495"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85461041"
 ---
 # <a name="thunk_ordinal"></a>THUNK_ORDINAL
 Désigne les types de thunks.
@@ -39,24 +39,24 @@ typedef enum THUNK_ORDINAL {
 ```
 
 ## <a name="elements"></a>Éléments
-Thunk THUNK_ORDINAL_NOTYPE standard.
+THUNK_ORDINAL_NOTYPE thunk standard.
 
-THUNK_ORDINAL_ADJUSTOR un thunk de réglage `this`.
+THUNK_ORDINAL_ADJUSTOR un `this` thunk de réglage.
 
-Thunk d’appel virtuel THUNK_ORDINAL_VCALL.
+THUNK_ORDINAL_VCALL le thunk d’appel virtuel.
 
-THUNK_ORDINAL_PCODE P-code thunk.
+THUNK_ORDINAL_PCODE le thunk de code P.
 
-Thunk de chargement différé THUNK_ORDINAL_LOAD.
+THUNK_ORDINAL_LOAD le thunk de chargement différé.
 
-THUNK_ORDINAL_TRAMP_INCREMENTAL incrémentielle trampoline thunk (un thunk trampoline est utilisé pour rebondir les appels d’un espace mémoire à un autre).
+THUNK_ORDINAL_TRAMP_INCREMENTAL thunk trampoline incrémentiel (un thunk trampoline est utilisé pour rebondir les appels d’un espace mémoire à un autre).
 
-Thunk THUNK_ORDINAL_TRAMP_BRANCHISLAND Branch point trampoline.
+THUNK_ORDINAL_TRAMP_BRANCHISLAND thunk point de branche trampoline.
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
 Les valeurs de cette énumération sont retournées à partir d’un appel à la méthode [IDiaSymbol :: get_thunkOrdinal](../../debugger/debug-interface-access/idiasymbol-get-thunkordinal.md) .
 
-## <a name="requirements"></a>spécifications
+## <a name="requirements"></a>Configuration requise
 En-tête : cvconst. h
 
 ## <a name="see-also"></a>Voir aussi

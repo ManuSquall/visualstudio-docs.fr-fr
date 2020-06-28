@@ -1,7 +1,7 @@
 ---
 title: IDiaSymbol::getSrcLineOnTypeDefn | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 ms.assetid: ad554d18-9988-4b64-ad71-e7594c266e94
@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9f28dc5e60343cc6aacdf456d5475afbfc7db5e9
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: e19ce48a8716952f53a1caa6a44fd5ba3d817f4e
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72738783"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85461349"
 ---
 # <a name="idiasymbolgetsrclineontypedefn"></a>IDiaSymbol::getSrcLineOnTypeDefn
 Récupère le fichier source et le numéro de ligne qui indiquent où un type défini par l’utilisateur spécifié est défini.
@@ -30,10 +30,10 @@ HRESULT getSrcLineOnTypeDefn(
 #### <a name="parameters"></a>Paramètres
  `ppResult`
 
-à Objet `IDiaLineNumber` qui contient le fichier source et le numéro de ligne où l’utilisateur est défini.
+à `IDiaLineNumber`Objet qui contient le fichier source et le numéro de ligne où le est défini par l’utilisateur.
 
-## <a name="return-value"></a>Valeur de retour
- En cas de réussite, retourne `S_OK` ; Sinon, retourne `S_FALSE` ou un code d’erreur.
+## <a name="return-value"></a>Valeur renvoyée
+ En cas de réussite, retourne `S_OK` ; sinon, retourne `S_FALSE` ou un code d’erreur.
 
 ## <a name="see-also"></a>Voir aussi
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

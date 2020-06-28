@@ -1,7 +1,7 @@
 ---
-title: "Erreur : vous n’êtes pas autorisé à inspecter l'&#39;identité du processus | Microsoft Docs"
+title: 'Erreur : vous n’êtes pas autorisé à inspecter l’identité du processus&#39;s | Microsoft Docs'
 ms.date: 11/04/2016
-ms.topic: troubleshooting
+ms.topic: error-reference
 dev_langs:
 - CSharp
 - VB
@@ -12,23 +12,23 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cad229f80676c3d1f7a7d23ad7a29729c834929b
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: f8bd1bc11d42d8aed0b816a667fe5adcc139a42c
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72736219"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85459920"
 ---
-# <a name="error-you-do-not-have-permission-to-inspect-the-process39s-identity"></a>Erreur : vous n’êtes pas autorisé à inspecter l'&#39;identité du processus
+# <a name="error-you-do-not-have-permission-to-inspect-the-process39s-identity"></a>Erreur : vous n’êtes pas autorisé à inspecter l’identité du processus&#39;s
 Vous n'êtes pas autorisé à inspecter l'identité du processus. Cela peut être dû à la configuration de votre système.
 
  Le débogueur n'a pas pu inspecter l'identité du processus, qui contient des informations nécessaires au débogage. La cause la plus probable est la désactivation des services Terminal Server. Les services Terminal Server sont activés par défaut. Pour les réactiver, procédez comme suit.
 
 ### <a name="to-enable-terminal-services"></a>Pour activer les services Terminal Server
 
-1. Cliquez sur **Démarrer**, puis choisissez **Panneau de configuration**.
+1. Cliquez sur **Démarrer** , puis sur **panneau de configuration**.
 
-2. Dans le Panneau de configuration, sélectionnez si nécessaire **Basculer vers l’affichage classique**, puis double-cliquez sur **Outils d’administration**.
+2. Dans le panneau de configuration, choisissez **basculer vers l’affichage classique**, si nécessaire, puis double-cliquez sur **Outils d’administration**.
 
 3. Dans la fenêtre **Outils d’administration**, double-cliquez sur **Gestion de l’ordinateur**.
 
@@ -44,7 +44,7 @@ Vous n'êtes pas autorisé à inspecter l'identité du processus. Cela peut êtr
 
 8. Cliquez sur **OK**.
 
-9. Redémarrez l'ordinateur.
+9. Redémarrez l’ordinateur.
 
      Cette procédure n'active pas automatiquement le Bureau à distance. Pour activer le Bureau à distance sur votre ordinateur, effectuez la procédure supplémentaire suivante.
 
@@ -56,11 +56,11 @@ Vous n'êtes pas autorisé à inspecter l'identité du processus. Cela peut êtr
 
      La fenêtre **Propriétés système** s’affiche.
 
-3. Cliquez sur **À distance**.
+3. Cliquez sur **Distant**.
 
 4. Sous **Bureau à distance**, sélectionnez **Autoriser les utilisateurs à se connecter à distance à cet ordinateur**.
 
 5. Cliquez sur **OK**.
 
 ## <a name="see-also"></a>Voir aussi
-- [Erreurs et résolution des problèmes du débogage distant](../debugger/remote-debugging-errors-and-troubleshooting.md)
+- [Erreurs de débogage distant et dépannage](../debugger/remote-debugging-errors-and-troubleshooting.md)

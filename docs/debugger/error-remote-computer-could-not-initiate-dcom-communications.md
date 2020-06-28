@@ -1,7 +1,7 @@
 ---
 title: 'Erreur : l’ordinateur distant n’a pas pu initialiser les communications DCOM | Microsoft Docs'
 ms.date: 11/04/2016
-ms.topic: troubleshooting
+ms.topic: error-reference
 f1_keywords:
 - vs.debug.error.unmarshal_callback_failed
 dev_langs:
@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2d61fe145a8dc301c928b81f9b57f1a574865a1d
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 8a1f5216953adc1b257e432b1e4f1eb4d041b836
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72737549"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85460702"
 ---
 # <a name="error-remote-computer-could-not-initiate-dcom-communications"></a>Erreur : L'ordinateur distant n'a pas pu initier les communications DCOM
 Une erreur DCOM s'est produite lorsque l'ordinateur distant a tenté de communiquer avec l'ordinateur local. L'ordinateur local est l'ordinateur qui
@@ -39,4 +39,4 @@ Une erreur DCOM s'est produite lorsque l'ordinateur distant a tenté de communiq
 3. Pour restaurer l'authentification Windows, tentez de redémarrer les deux ordinateurs. Vérifiez si les journaux des événements de l'ordinateur local ou distant contiennent des erreurs Kerberos et contactez les administrateurs de domaines pour les problèmes connus.
 
 ## <a name="see-also"></a>Voir aussi
- [Remote Debugging](../debugger/remote-debugging.md)
+ [Débogage à distance](../debugger/remote-debugging.md)

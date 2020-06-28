@@ -1,7 +1,7 @@
 ---
 title: IDiaSymbol::get_undecoratedNameEx | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 48efbc249d076853e12bc54d2e8a8d438570e740
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 25942c76d8e568d6354c9a6a2b2c69c806cde352
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72738996"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85461601"
 ---
 # <a name="idiasymbolget_undecoratednameex"></a>IDiaSymbol::get_undecoratedNameEx
-Récupère une partie ou la totalité d’un nom non décoré pour C++ un nom décoré (liaison).
+Récupère une partie ou l’intégralité d’un nom non décoré pour un nom décoré C++ (liaison).
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -38,21 +38,21 @@ dans Spécifie une combinaison d’indicateurs qui contrôlent ce qui est retour
 
  `pRetVal`
 
-à Retourne le nom non décoré pour un C++ nom décoré.
+à Retourne le nom non décoré pour un nom décoré C++.
 
-## <a name="return-value"></a>Valeur de retour
- En cas de réussite, retourne `S_OK`; Sinon, retourne `S_FALSE` ou un code d’erreur.
+## <a name="return-value"></a>Valeur renvoyée
+ En cas de réussite, retourne `S_OK` ; sinon, retourne `S_FALSE` ou un code d’erreur.
 
 > [!NOTE]
-> Une valeur de retour de `S_FALSE` signifie que la propriété n’est pas disponible pour le symbole.
+> Une valeur de retour `S_FALSE` signifie que la propriété n’est pas disponible pour le symbole.
 
-## <a name="remarks"></a>Notes
- La `undecorateOptions` peut être une combinaison des indicateurs suivants.
+## <a name="remarks"></a>Remarques
+ `undecorateOptions`Peut être une combinaison des indicateurs suivants.
 
 > [!NOTE]
 > Les noms des indicateurs ne sont pas définis dans le kit de développement logiciel (SDK) DIA. vous devez donc ajouter les déclarations à votre code ou utiliser les valeurs brutes.
 
-|Indicateur|valeur|Description|
+|Indicateur|Valeur|Description|
 |----------|-----------|-----------------|
 |UNDNAME_COMPLETE|0x0000|Active l’indécoration complète.|
 |UNDNAME_NO_LEADING_UNDERSCORES|0x0001|Supprime les traits de soulignement de début des mots clés étendus Microsoft.|
@@ -62,10 +62,10 @@ dans Spécifie une combinaison d’indicateurs qui contrôlent ce qui est retour
 |UNDNAME_NO_ALLOCATION_LANGUAGE|0x0010|Désactive l’expansion du spécificateur de langage de déclaration.|
 |UNDNAME_RESERVED1|0x0020|RÉSERVÉ.|
 |UNDNAME_RESERVED2|0x0040|RÉSERVÉ.|
-|UNDNAME_NO_THISTYPE|0x0060|Désactive tous les modificateurs sur le type de `this`.|
+|UNDNAME_NO_THISTYPE|0x0060|Désactive tous les modificateurs sur le `this` type.|
 |UNDNAME_NO_ACCESS_SPECIFIERS|0x0080|Désactive l’expansion des spécificateurs d’accès pour les membres.|
 |UNDNAME_NO_THROW_SIGNATURES|0x0100|Désactive l’expansion de « Throw-signatures » pour les fonctions et les pointeurs vers les fonctions.|
-|UNDNAME_NO_MEMBER_TYPE|0x0200|Désactive l’expansion des membres `static` ou `virtual`.|
+|UNDNAME_NO_MEMBER_TYPE|0x0200|Désactive l’expansion des `static` membres ou `virtual` .|
 |UNDNAME_NO_RETURN_UDT_MODEL|0x0400|Désactive l’expansion du modèle Microsoft pour les retours UDT.|
 |UNDNAME_32_BIT_DECODE|0x0800|Décore les noms décorés de 32 bits.|
 |UNDNAME_NAME_ONLY|0x1000|Obtient uniquement le nom de la déclaration principale ; retourne simplement [Scope ::] Name.  Développe les paramètres de modèle.|

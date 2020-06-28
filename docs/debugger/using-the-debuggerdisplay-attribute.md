@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3511b52ab8c04d9018336b4d63b0659792835d99
-ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
+ms.openlocfilehash: 2387c5e9a920f0811a65ca400d8da48aa81dccd3
+ms.sourcegitcommit: 9e15138a34532b222e80f6b42b1a9de7b2fe0175
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/25/2020
-ms.locfileid: "85347870"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "85418780"
 ---
 # <a name="tell-the-debugger-what-to-show-using-the-debuggerdisplay-attribute-c-visual-basic-f-ccli"></a>Indiquez au débogueur ce qui doit être affiché à l’aide de l’attribut DebuggerDisplay (C#, Visual Basic, F #, C++/CLI)
 
@@ -27,10 +27,10 @@ L'attribut `DebuggerDisplay` possède un seul argument, qui est une chaîne à a
 
 Si une classe possède une méthode `ToString()` substituée, le débogueur utilise la méthode substituée à la place du `{<typeName>}`par défaut. Si vous avez substitué la méthode `ToString()` , le débogueur utilise la méthode substituée à la place du`{<typeName>}`par défaut. Il est donc inutile d’utiliser `DebuggerDisplay`. Si vous utilisez les deux, l’attribut `DebuggerDisplay` est prioritaire sur la méthode `ToString()` remplacée. L' `DebuggerDisplay` attribut a également priorité sur la méthode substituée `ToString()` dans une sous-classe.
 
-L’évaluation par le débogueur de cet appel `ToString()` implicite dépend d’un paramètre utilisateur dans la boîte de dialogue **Outils / Options / Débogage** . Visual Basic n’implémente pas cette évaluation `ToString()` implicite.
+Le fait que le débogueur évalue cet appel implicite `ToString()` dépend d’un paramètre utilisateur dans la boîte de dialogue **Outils/Options/débogage** .
 
 > [!IMPORTANT]
-> Si la case **Afficher la structure brute des objets dans des fenêtres de variables** est cochée dans la boîte de dialogue **Outils / Options / Débogage** , l’attribut `DebuggerDisplay` est ignoré.
+> Si la case à cocher **afficher la structure brute des objets dans les fenêtres de variables** est activée dans la boîte de dialogue **Outils/Options/débogage** , l' `DebuggerDisplay` attribut est ignoré.
 
 > [!NOTE]
 > Pour le code natif, cet attribut est pris en charge uniquement dans le code C++/CLI.
@@ -98,7 +98,7 @@ L'exemple de code suivant explique l'utilisation de `DebuggerDisplay`, ainsi que
 
 |**Nom**|**Valeur**|**Type**|
 |--------------|---------------|--------------|
-|Clé :|"trois"|objet {string}|
+|Clé|"trois"|objet {string}|
 |Valeur|3|objet {int}|
 
 ```csharp

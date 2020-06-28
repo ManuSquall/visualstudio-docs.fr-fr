@@ -1,7 +1,7 @@
 ---
 title: NameSearchOptions | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 61905c0c6c40d893cc8723b711d67690133a7155
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 696ad3e659b503b27da73056dafb57c5852d5133
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72738614"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85461174"
 ---
 # <a name="namesearchoptions"></a>NameSearchOptions
 Spécifie les options de recherche pour les noms de symboles et de fichiers.
@@ -45,17 +45,17 @@ enum NameSearchOptions {
 ## <a name="elements"></a>Éléments
 `nsNone` Aucune option n’est spécifiée.
 
-`nsfCaseSensitive` applique une correspondance de nom respectant la casse.
+`nsfCaseSensitive`Applique une correspondance de nom respectant la casse.
 
-`nsfCaseInsensitive` applique une correspondance de nom qui ne respecte pas la casse.
+`nsfCaseInsensitive`Applique une correspondance de nom ne respectant pas la casse.
 
-`nsfFNameExt` traite les noms comme des chemins d’accès et applique une correspondance de nom filename. ext.
+`nsfFNameExt`Traite les noms comme des chemins d’accès et applique une correspondance de nom de nom de fichier. ext.
 
-`nsfRegularExpression` applique une correspondance de nom respectant la casse à l’aide d’astérisques (*) et de points d’interrogation ( ?) comme caractères génériques. (Les autres caractères d’expressions régulières courantes ne sont pas pris en charge.)
+`nsfRegularExpression`Applique une correspondance de nom respectant la casse à l’aide d’astérisques (*) et de points d’interrogation ( ?) comme caractères génériques. (Les autres caractères d’expressions régulières courantes ne sont pas pris en charge.)
 
-`nsfUndecoratedName` s’applique uniquement aux symboles qui ont des noms non décorés et décorés.
+`nsfUndecoratedName`S’applique uniquement aux symboles qui ont des noms non décorés et décorés.
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
 Les valeurs de cette énumération sont passées aux méthodes suivantes :
 
 - [IDiaSession::findChildren](../../debugger/debug-interface-access/idiasession-findchildren.md)
@@ -64,7 +64,7 @@ Les valeurs de cette énumération sont passées aux méthodes suivantes :
 
 - [IDiaSymbol::findChildren](../../debugger/debug-interface-access/idiasymbol-findchildren.md)
 
-## <a name="requirements"></a>spécifications
+## <a name="requirements"></a>Configuration requise
 En-tête : Dia2. h
 
 ## <a name="see-also"></a>Voir aussi

@@ -7,17 +7,17 @@ f1_keywords:
 - Microsoft.VisualStudio.Publish.BaseProvider.Dialog.Bootstrapper
 helpviewer_keywords:
 - Prerequisites dialog box
-author: TerryGLee
-ms.author: tglee
+author: Mikejo5000
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0ecbba1a1c5e8670fd9adcafdfed8cec21dd3912
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: cf555a9a4b7c73e4e204bcc42e6b57d3ab96cd01
+ms.sourcegitcommit: 9e15138a34532b222e80f6b42b1a9de7b2fe0175
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75567903"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "85419170"
 ---
 # <a name="prerequisites-dialog-box"></a>Composants requis, boîte de dialogue
 
@@ -31,7 +31,7 @@ Pour accéder à la boîte de dialogue, sélectionnez un nœud de projet dans l�
 
 |Élément|Description|
 |-------------|-----------------|
-|**Créer un programme d’installation des composants requis**|Inclut les composants requis dans le programme d’installation de votre application (*setup.exe*) afin qu’ils soient installés avant votre application, par ordre de dépendance. Cette option est sélectionnée par défaut. Si elle n’est pas activée, aucun fichier *Setup.exe* n’est créé.|
+|**Créer un programme d’installation des composants requis**|Inclut les composants requis dans le programme d’installation de votre application (*setup.exe*) afin qu’ils soient installés avant votre application, par ordre de dépendance. Cette option est activée par défaut. Si elle n’est pas activée, aucun fichier *Setup.exe* n’est créé.|
 |**Choisir les composants requis à installer**|Spécifie s’il faut installer des composants tels que le .NET Framework et les bibliothèques runtime C++.<br /><br />Par exemple, en cochant la case en regard de **SQL Server 2012 Express**, vous indiquez au programme d’installation qu’il doit vérifier si ce composant est installé sur l’ordinateur cible et qu’il doit l’installer si ce n’est déjà fait.<br /><br />Pour plus d’informations sur les packages de composants requis, consultez [Informations sur les composants requis](#prerequisites-information).|
 |**Télécharger les composants requis à partir du site web du fournisseur de composants**|Fait en sorte que les composants requis soient installés à partir du site web du fournisseur. Il s'agit de l'option par défaut.|
 |**Télécharger les composants requis à partir de l’emplacement de mon application**|Fait en sorte que les composants requis soient installés à partir du même emplacement que l'application. Copie tous les packages de composants requis à l'emplacement de publication. Pour que cette option fonctionne, les packages de composants requis doivent être sur l'ordinateur de développement.|
@@ -46,7 +46,7 @@ Les composants requis qui apparaissent dans la boîte de dialogue **Composants r
 
 |Élément|Description|
 |-------------|-----------------|
-|**.NET Framework 3.5 SP1**|Ce package installe les éléments suivants :<br /><br /> - .NET Framework versions 2.0, 3.0 et 3.5.<br />- Prise en charge de toutes les versions de .NET Framework sur les systèmes d’exploitation 32 bits (x86) et 64 bits (x64).<br />- Modules linguistiques pour chaque version de .NET Framework installée avec le package.<br />- Service Packs pour .NET Framework 2.0 et 3.0.<br /><br /> .NET Framework 3.0 est inclus avec Windows Vista et .NET Framework 3.5 avec Visual Studio. .NET Framework 3.5 est requis pour tous les projets Visual Basic et C# qui sont compilés pour les systèmes d’exploitation 32 bits et dont la version cible de .NET Framework est **.NET Framework 3.5**, ainsi que pour les projets Visual Basic et C# compilés pour les systèmes d’exploitation 64 bits. (IA64 n’est pas pris en charge.) Notez que les projets Visual Basic et CMD sont compilés pour toute architecture CPU par défaut. Pour plus d’informations, consultez [Vue d’ensemble du ciblage des frameworks](../../ide/visual-studio-multi-targeting-overview.md) et [Déployer les prérequis pour les applications 64 bits](../../deployment/deploying-prerequisites-for-64-bit-applications.md).|
+|**.NET Framework 3.5 SP1**|Ce package installe les éléments suivants :<br /><br /> - .NET Framework versions 2.0, 3.0 et 3.5.<br />- Prise en charge de toutes les versions de .NET Framework sur les systèmes d’exploitation 32 bits (x86) et 64 bits (x64).<br />- Modules linguistiques pour chaque version de .NET Framework installée avec le package.<br />- Service Packs pour .NET Framework 2.0 et 3.0.<br /><br /> .NET Framework 3.0 est inclus avec Windows Vista et .NET Framework 3.5 avec Visual Studio. .NET Framework 3.5 est requis pour tous les projets Visual Basic et C# qui sont compilés pour les systèmes d’exploitation 32 bits et dont la version cible de .NET Framework est **.NET Framework 3.5**, ainsi que pour les projets Visual Basic et C# compilés pour les systèmes d’exploitation 64 bits. (IA64 n’est pas pris en charge.) Notez que les projets Visual Basic et C# sont compilés pour toute architecture d’UC par défaut. Pour plus d’informations, consultez [Vue d’ensemble du ciblage des frameworks](../../ide/visual-studio-multi-targeting-overview.md) et [Déployer les prérequis pour les applications 64 bits](../../deployment/deploying-prerequisites-for-64-bit-applications.md).|
 |**Microsoft .NET Framework 4.x**|Ce package installe .NET Framework 4.x pour les plateformes x64 et x86.|
 |**Microsoft System CLR Types pour SQL Server 2014 (x64 et x86)**|Ce package installe Microsoft System CLR Types pour SQL Server 2014 pour les plateformes x64 ou x86.|
 |**SQL Server 2008 R2 Express**|Ce package installe Microsoft SQL Server 2008 R2 Express, qui est une version gratuite de Microsoft SQL Server 2008 R2, une base de données idéale pour les petites applications web, de serveur ou de poste de travail. Il peut être utilisé gratuitement pour le développement et la production.|
@@ -58,7 +58,7 @@ Les composants requis qui apparaissent dans la boîte de dialogue **Composants r
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Publier la page, Concepteur de projets](../../ide/reference/publish-page-project-designer.md)
-- [Conditions préalables au déploiement des applications](../../deployment/application-deployment-prerequisites.md)
+- [Page Publier, Concepteur de projets](../../ide/reference/publish-page-project-designer.md)
+- [Conditions préalables pour le déploiement d’applications](../../deployment/application-deployment-prerequisites.md)
 - [Déploiement des prérequis pour les applications 64 bits](../../deployment/deploying-prerequisites-for-64-bit-applications.md)
 - [Vue d’ensemble du ciblage des frameworks](../../ide/visual-studio-multi-targeting-overview.md)

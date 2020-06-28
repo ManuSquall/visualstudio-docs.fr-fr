@@ -9,23 +9,23 @@ helpviewer_keywords:
 - Project Designer, Debug page
 - Debug page in Project Designer
 ms.assetid: ef11eae9-df96-4e20-aabd-2678ba317140
-author: TerryGLee
-ms.author: tglee
+author: Mikejo5000
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 16be10dc69f203e52eb0dccc0e0738399d37ee3d
-ms.sourcegitcommit: ade07bd1cf69b8b494d171ae648cfdd54f7800d3
+ms.openlocfilehash: 406b3ecdc0e4e3f0d45c22fc9201bd37c6031152
+ms.sourcegitcommit: 9e15138a34532b222e80f6b42b1a9de7b2fe0175
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "81649434"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "85418741"
 ---
 # <a name="debug-page-project-designer"></a>Page Déboguer, Concepteur de projets
 
 Utilisez la page **Déboguer** du **Concepteur de projets** afin de définir des propriétés pour le comportement de débogage dans un projet Visual Basic ou C#.
 
-Pour accéder à la page **Déboguer**, sélectionnez un nœud de projet dans **l’Explorateur de solutions**. Dans le menu **Projet**, choisissez **\<nom_projet>Propriétés**. Quand le **Concepteur de projets** s’affiche, cliquez sur l’onglet **Déboguer**.
+Pour accéder à la page **Déboguer**, sélectionnez un nœud de projet dans **l’Explorateur de solutions**. Dans le menu **projet** , choisissez ** \<ProjectName> Propriétés**. Quand le **Concepteur de projets** s’affiche, cliquez sur l’onglet **Déboguer**.
 
 > [!NOTE]
 > Cette rubrique ne s’applique pas aux applications UWP. Consultez [Démarrer une session de débogage (VB, C#, C++ et XAML)](../../debugger/start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md) pour les applications UWP.
@@ -64,7 +64,7 @@ Choisissez cette option pour spécifier qu’une URL particulière doit être ac
 
 Dans cette zone de texte, entrez les arguments de la ligne de commande à utiliser pour le débogage.
 
-**Annuaire de travail**
+**Répertoire de travail**
 
 Dans cette zone de texte, entrez le répertoire à partir duquel le projet sera lancé. Vous pouvez aussi cliquer sur le bouton Parcourir (**...**) pour sélectionner un répertoire.
 
@@ -85,7 +85,7 @@ Cochez ou décochez cette case pour activer ou désactiver le débogage des proc
 ## <a name="see-also"></a>Voir aussi
 
 - [Présentation du débogueur](../../debugger/debugger-feature-tour.md)
-- [Paramètres de projet pour les configurations de débbug de C](../../debugger/project-settings-for-csharp-debug-configurations.md)
-- [Paramètres de projet pour une configuration visuelle de base de débbug](../../debugger/project-settings-for-a-visual-basic-debug-configuration.md)
-- [Applications ClickOnce sécurisées](../../deployment/securing-clickonce-applications.md)
+- [Paramètres de projet pour des configurations Debug C#](../../debugger/project-settings-for-csharp-debug-configurations.md)
+- [Paramètres de projet pour une configuration Debug Visual Basic](../../debugger/project-settings-for-a-visual-basic-debug-configuration.md)
+- [Sécuriser les applications ClickOnce](../../deployment/securing-clickonce-applications.md)
 - [Guide pratique pour créer et modifier des configurations](../../ide/how-to-create-and-edit-configurations.md)

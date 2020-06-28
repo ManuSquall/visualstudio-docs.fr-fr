@@ -1,7 +1,7 @@
 ---
 title: IDiaSymbol::get_subTypeId | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 ms.assetid: 0f899920-4fc5-4de8-84a3-cd98c57bf124
@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 66c7a05ef6b8e90eda2b29bdbb7d33fcf25a2af2
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 6afdaca05fa65dcf362433c38506451ba472957f
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72739268"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85461941"
 ---
 # <a name="idiasymbolget_subtypeid"></a>IDiaSymbol::get_subTypeId
 Récupère l’ID de sous-type.
@@ -32,8 +32,8 @@ HRESULT get_subTypeId(
 
 à Pointeur vers un `DWORD` qui contient l’ID de sous-type.
 
-## <a name="return-value"></a>Valeur de retour
- En cas de réussite, retourne `S_OK` ; Sinon, retourne `S_FALSE` ou un code d’erreur.
+## <a name="return-value"></a>Valeur renvoyée
+ En cas de réussite, retourne `S_OK` ; sinon, retourne `S_FALSE` ou un code d’erreur.
 
 ## <a name="see-also"></a>Voir aussi
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

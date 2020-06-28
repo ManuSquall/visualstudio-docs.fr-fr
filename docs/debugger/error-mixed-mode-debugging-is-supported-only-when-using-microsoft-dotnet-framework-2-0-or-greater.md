@@ -1,7 +1,7 @@
 ---
 title: 'Erreur : le débogage en mode mixte est pris en charge uniquement lors de l’utilisation de Microsoft .NET Framework 2,0 ou version ultérieure | Microsoft Docs'
 ms.date: 11/04/2016
-ms.topic: troubleshooting
+ms.topic: error-reference
 f1_keywords:
 - vs.debug.error.interop_unsupported_to_old
 dev_langs:
@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: c85dac85146c59d8aeba9f9cf85351b5bc17a81c
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: de19f6b735f990b0e419c040291e1bf538f680f5
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72737610"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85460622"
 ---
 # <a name="error-mixed-mode-debugging-is-supported-only-when-using-microsoft-net-framework-20-or-greater"></a>Erreur : Le débogage en mode mixte est uniquement pris en charge lorsque vous utilisez Microsoft .NET Framework 2.0 ou version ultérieure
 Pour déboguer du code natif et managé mixte, vous devez avoir .NET Framework version 2,0, 3,0. 3.5 ou 4. Le débogage en mode mixte avec des versions antérieures du .NET Framework n’est pas pris en charge.
@@ -29,4 +29,4 @@ Pour déboguer du code natif et managé mixte, vous devez avoir .NET Framework v
 - Mettez à niveau les .NET Framework vers la version 2,0, 3,0, 3,5 ou 4,0.
 
 ## <a name="see-also"></a>Voir aussi
-- [Remote Debugging](../debugger/remote-debugging.md)
+- [Débogage à distance](../debugger/remote-debugging.md)

@@ -11,21 +11,21 @@ helpviewer_keywords:
 - pre-build events
 - post-build events
 ms.assetid: 3fff9ae5-213c-46ea-a660-1d70acb6c922
-author: TerryGLee
-ms.author: tglee
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 6629f41657a546ffb5fb48e0b6efb5f4f0dd50cb
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: a56093ab14b9be72f99e36b03eefe7abb895183f
+ms.sourcegitcommit: 9e15138a34532b222e80f6b42b1a9de7b2fe0175
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75596877"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "85419053"
 ---
 # <a name="build-events-page-project-designer-c"></a>Événements de build, page du Concepteur de projets (C#)
 
-Utilisez la page **Événements de build** du **Concepteur de projets** pour spécifier des instructions de configuration de build. Vous pouvez également spécifier les conditions dans lesquelles les événements post-build sont exécutés. Pour plus d’informations, voir [Comment : Spécifier les événements de construction (C)](../../ide/how-to-specify-build-events-csharp.md) et [comment : Spécifier les événements de construction (visual basic)](../../ide/how-to-specify-build-events-visual-basic.md).
+Utilisez la page **Événements de build** du **Concepteur de projets** pour spécifier des instructions de configuration de build. Vous pouvez également spécifier les conditions dans lesquelles les événements post-build sont exécutés. Pour plus d’informations, consultez [Comment : spécifier des événements de build (C#)](../../ide/how-to-specify-build-events-csharp.md) et [Comment : spécifier des événements de build (Visual Basic)](../../ide/how-to-specify-build-events-visual-basic.md).
 
 ## <a name="uielement-list"></a>Liste des éléments de l'interface utilisateur
 
@@ -46,7 +46,7 @@ Spécifie les commandes à exécuter avant le début de la génération. Pour ta
 
 **Ligne de commande d'événement après génération**
 
-Spécifie les commandes à exécuter à l’issue de la génération. Pour taper de longues commandes, cliquez sur **Edit Post-build** pour afficher la boîte de **dialogue de la ligne de commandement d’événements pré-construction/post-construction**.
+Spécifie les commandes à exécuter à l’issue de la génération. Pour taper de longues commandes, cliquez sur **modifier après génération** pour afficher la boîte de **dialogue ligne de commande de l’événement pré-build/après génération**.
 
 > [!NOTE]
 > Ajoutez une instruction `call` avant toutes les commandes post-build qui exécutent des fichiers .bat. Par exemple, `call C:\MyFile.bat` ou `call C:\MyFile.bat call C:\MyFile2.bat`.
@@ -61,15 +61,15 @@ Spécifie les conditions suivantes pour l’événement post-build à exécuter,
 |**En cas de build réussie**|L’événement post-build est exécuté si la build réussit. Ainsi, l’événement est exécuté même pour un projet à jour, à condition que la build soit un succès.|
 |**Lorsque la build met à jour la sortie du projet**|L’événement post-build n’est exécuté que quand le fichier de sortie du compilateur (.exe ou .dll) est différent du fichier de sortie précédent. Ainsi, un événement post-build n’est pas exécuté si un projet est à jour.|
 
-## <a name="in-the-project-file"></a>Dans le dossier du projet
+## <a name="in-the-project-file"></a>Dans le fichier projet
 
-Dans les versions précédentes de Visual Studio, lorsque vous modifiez le paramètre **PreBuildEvent** `PostBuildEvent` ou **PostBuildEvent** dans l’IDE, Visual Studio ajoute une propriété ou une `PreBuildEvent` propriété au fichier du projet. Ainsi, par exemple, si votre paramètre de ligne de commande **PreBuildEvent** dans l’IDE est le suivant :
+Dans les versions antérieures de Visual Studio, lorsque vous modifiez le paramètre **PreBuildEvent** ou **POSTBUILDEVENT** dans l’IDE, Visual Studio ajoute `PreBuildEvent` une `PostBuildEvent` propriété ou au fichier projet. Par exemple, si votre paramètre de ligne de commande **PreBuildEvent** dans l’IDE est le suivant :
 
 ```input
 "$(ProjectDir)PreBuildEvent.bat" "$(ProjectDir)..\" "$(ProjectDir)" "$(TargetDir)"
 ```
 
-puis le paramètre de fichier de projet est :
+le paramètre du fichier projet est alors :
 
 ```xml
 <PropertyGroup>
@@ -77,7 +77,7 @@ puis le paramètre de fichier de projet est :
 </PropertyGroup>
 ```
 
-Pour les projets .NET Core, Visual Studio 2019 (et Visual Studio 2017 `PreBuild` `PostBuild` dans des mises à jour plus récentes) ajoute une cible MSBuild nommée ou pour les paramètres **PreBuildEvent** et **PostBuildEvent.** Ces cibles utilisent les **attributs BeforeTargets** et **AfterTargets,** que MSBuild reconnaît. Par exemple, pour l’exemple précédent, Visual Studio génère maintenant le code suivant :
+Pour les projets .NET Core, Visual Studio 2019 (et Visual Studio 2017 dans les mises à jour plus récentes) ajoute une cible MSBuild nommée `PreBuild` ou `PostBuild` pour les paramètres **PreBuildEvent** et **PostBuildEvent** . Ces cibles utilisent les attributs **BeforeTargets** et **AfterTargets** , que MSBuild reconnaît. Par exemple, dans l’exemple précédent, Visual Studio génère désormais le code suivant :
 
 ```xml
 <Target Name="PreBuild" BeforeTargets="PreBuildEvent">
@@ -85,7 +85,7 @@ Pour les projets .NET Core, Visual Studio 2019 (et Visual Studio 2017 `PreBuild`
 </Target>
 ```
 
-Pour un événement post-construction, `PostBuild` utilisez le `AfterTargets` `PostBuildEvent`nom et définissez l’attribut à .
+Pour un événement après génération, utilisez le nom `PostBuild` et affectez à l’attribut la valeur `AfterTargets` `PostBuildEvent` .
 
 ```xml
 <Target Name="PostBuild" AfterTargets="PostBuildEvent">
@@ -94,11 +94,11 @@ Pour un événement post-construction, `PostBuild` utilisez le `AfterTargets` `P
 ```
 
 > [!NOTE]
-> Ces changements de dossiers de projet ont été apportés pour soutenir des projets de type SDK. Si vous migrez manuellement un fichier de projet de l’ancien format au `PreBuildEvent` `PostBuildEvent` format de style `PreBuild` `PostBuild` SDK, vous devez supprimer les propriétés et les remplacer par et les cibles comme indiqué dans le code précédent. Pour savoir comment savoir si votre projet est un projet de style SDK, consultez [le format du projet Check](/nuget/resources/check-project-format).
+> Ces modifications de fichier projet ont été apportées pour prendre en charge les projets de style SDK. Si vous migrez un fichier projet de l’ancien format vers le format de style SDK manuellement, vous devez supprimer les `PreBuildEvent` `PostBuildEvent` Propriétés et et les remplacer par les `PreBuild` cibles et, `PostBuild` comme indiqué dans le code précédent. Pour savoir comment savoir si votre projet est un projet de type SDK, consultez vérifier le [format du projet](/nuget/resources/check-project-format).
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Comment : Spécifier des événements de construction (visual basic)](../../ide/how-to-specify-build-events-visual-basic.md)
-- [Comment : Spécifier les événements de construction (C)](../../ide/how-to-specify-build-events-csharp.md)
+- [Comment : spécifier des événements de build (Visual Basic)](../../ide/how-to-specify-build-events-visual-basic.md)
+- [Comment : spécifier des événements de build (C#)](../../ide/how-to-specify-build-events-csharp.md)
 - [Informations de référence sur les propriétés de projet](../../ide/reference/project-properties-reference.md)
-- [Compilation et construction](../../ide/compiling-and-building-in-visual-studio.md)
+- [Compilation et génération](../../ide/compiling-and-building-in-visual-studio.md)

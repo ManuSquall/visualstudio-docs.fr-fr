@@ -1,7 +1,7 @@
 ---
-title: 'Erreur : le débogage&#39;n’est pas possible, car un débogueur du noyau est activé sur le système | Microsoft Docs'
+title: 'Erreur : le débogage n’est pas&#39;possible, car un débogueur du noyau est activé sur le système | Microsoft Docs'
 ms.date: 11/04/2016
-ms.topic: troubleshooting
+ms.topic: error-reference
 f1_keywords:
 - vs.debug.error.kernel_dbg_enabled
 dev_langs:
@@ -16,14 +16,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2a966869ff1d200a51c6019a6ae937bea7c447bd
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 80c27ef642697a8514a0809095b980d8c38a47d8
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72737746"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85460863"
 ---
-# <a name="error-debugging-isn39t-possible-because-a-kernel-debugger-is-enabled-on-the-system"></a>Erreur : le débogage&#39;n’est pas possible, car un débogueur du noyau est activé sur le système
+# <a name="error-debugging-isn39t-possible-because-a-kernel-debugger-is-enabled-on-the-system"></a>Erreur : le débogage n’est pas&#39;possible, car un débogueur du noyau est activé sur le système
 Lorsque vous déboguez du code managé, le message d'erreur suivant peut s'afficher :
 
 ```cmd
@@ -42,21 +42,21 @@ Debugging isn't possible because a kernel debugger is enabled on the system
 
 - Mettez votre application à niveau pour utiliser la version CLR 4.0 ou 4.5
 
-   - ou -
+   Ou
 
 - Désactivez le débogage du noyau et déboguez dans [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].
 
-   - ou -
+   Ou
 
 - Déboguez à l'aide du débogueur du noyau au lieu de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].
 
-   - ou -
+   Ou
 
 - Dans le débogueur du noyau, désactivez les exceptions en mode utilisateur.
 
 #### <a name="to-disable-kernel-debugging-in-the-current-session"></a>Pour désactiver le débogage du noyau dans la session active
 
-- À l'invite de commandes, tapez :
+- À l’invite de commandes, tapez :
 
     ```cmd
     Kdbgctrl.exe -d
@@ -64,13 +64,13 @@ Debugging isn't possible because a kernel debugger is enabled on the system
 
 #### <a name="to-disable-kernel-debugging-for-all-sessions-windows-vista-and-windows-7"></a>Pour désactiver le débogage du noyau pour toutes les sessions (Windows Vista et Windows 7)
 
-1. À l'invite de commandes, tapez :
+1. À l’invite de commandes, tapez :
 
     ```cmd
     bcdedit /debug off
     ```
 
-2. Redémarrez l'ordinateur.
+2. Redémarrez l’ordinateur.
 
 #### <a name="to-disable-kernel-debugging-for-all-sessions-other-windows-operating-systems"></a>Pour désactiver le débogage du noyau pour toutes les sessions (systèmes d'exploitation autres que Windows)
 
@@ -88,7 +88,7 @@ Debugging isn't possible because a kernel debugger is enabled on the system
     /baudrate
     ```
 
-3. Redémarrez l'ordinateur.
+3. Redémarrez l’ordinateur.
 
 #### <a name="to-debug-with-the-kernel-debugger"></a>Pour déboguer avec le débogueur du noyau
 

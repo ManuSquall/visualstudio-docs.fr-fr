@@ -1,7 +1,7 @@
 ---
 title: Thunk | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -13,22 +13,22 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e7361ab06adf6e692fe3e44955375eb08fa0bf05
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 90eeaefd8784be3e381c72dd452a23c56e0df47d
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72738477"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85461034"
 ---
 # <a name="thunk"></a>Thunk
-Chaque `thunk` est identifiée par une balise `SymTagThunk`.
+Chaque `thunk` est identifiée par une `SymTagThunk` balise.
 
 ## <a name="properties"></a>Propriétés
  Le tableau suivant présente les propriétés qui sont valides pour ce type de symbole.
 
-|Property|Type de données|Description|
+|Propriété|Type de données|Description|
 |--------------|---------------|-----------------|
-|[IDiaSymbol::get_access](../../debugger/debug-interface-access/idiasymbol-get-access.md)|`DWORD`|Attribut de modificateur d’accès, l’une des valeurs d' [énumération CV_access_e](../../debugger/debug-interface-access/cv-access-e.md) (uniquement dans dia SDK v 8.0 ou ultérieur).|
+|[IDiaSymbol::get_access](../../debugger/debug-interface-access/idiasymbol-get-access.md)|`DWORD`|Attribut de modificateur d’accès, l’une des CV_access_e valeurs d' [énumération](../../debugger/debug-interface-access/cv-access-e.md) (uniquement dans dia SDK v 8.0 ou version ultérieure).|
 |[IDiaSymbol::get_addressOffset](../../debugger/debug-interface-access/idiasymbol-get-addressoffset.md)|`DWORD`|Partie décalage de l’emplacement ; Pour plus d’informations, consultez l' [énumération LocationType (](../../debugger/debug-interface-access/locationtype.md).|
 |[IDiaSegment::get_addressSection](../../debugger/debug-interface-access/idiasegment-get-addresssection.md)|`DWORD`|Partie section de l’emplacement ; Pour plus d’informations, consultez l' [énumération LocationType (](../../debugger/debug-interface-access/locationtype.md).|
 |[IDiaSymbol::get_classParent](../../debugger/debug-interface-access/idiasymbol-get-classparent.md)|`IDiaSymbol*`|Englobant la classe parent, le cas échéant (uniquement sous DIA SDK V 8.0 ou version ultérieure).|
@@ -52,11 +52,11 @@ Chaque `thunk` est identifiée par une balise `SymTagThunk`.
 |[IDiaSymbol::get_thunkOrdinal](../../debugger/debug-interface-access/idiasymbol-get-thunkordinal.md)|`DWORD`|Type de thunk, tel que défini par l' [énumération THUNK_ORDINAL](../../debugger/debug-interface-access/thunk-ordinal.md).|
 |[IDiaSymbol::get_type](../../debugger/debug-interface-access/idiasymbol-get-type.md)|`IDiaSymbol*`|Type de ce thunk (uniquement dans DIA SDK V 8.0 ou version ultérieure).|
 |[IDiaSymbol::get_typeId](../../debugger/debug-interface-access/idiasymbol-get-typeid.md)|`DWORD`|ID du symbole de type (uniquement dans DIA SDK V 8.0 ou version ultérieure).|
-|[IDiaSymbol::get_unalignedType](../../debugger/debug-interface-access/idiasymbol-get-unalignedtype.md)|`BOOL`|`TRUE` si le thunk n’est pas aligné (uniquement dans DIA SDK V 8.0 ou version ultérieure).|
-|[IDiaSymbol::get_virtual](../../debugger/debug-interface-access/idiasymbol-get-virtual.md)|`BOOL`|`TRUE` si le thunk est virtuel (uniquement dans DIA SDK V 8.0 ou version ultérieure).|
+|[IDiaSymbol::get_unalignedType](../../debugger/debug-interface-access/idiasymbol-get-unalignedtype.md)|`BOOL`|`TRUE`Si le thunk n’est pas aligné (uniquement dans DIA SDK V 8.0 ou version ultérieure),|
+|[IDiaSymbol::get_virtual](../../debugger/debug-interface-access/idiasymbol-get-virtual.md)|`BOOL`|`TRUE`Si le thunk est virtuel (uniquement dans DIA SDK V 8.0 ou version ultérieure).|
 |[IDiaSymbol::get_virtualAddress](../../debugger/debug-interface-access/idiasymbol-get-virtualaddress.md)|`ULONGLONG`|Position de ce thunk dans l’image exécutable.|
 |[IDiaSymbol::get_virtualBaseOffset](../../debugger/debug-interface-access/idiasymbol-get-virtualbaseoffset.md)|`DWORD`|Décalage de la table virtuelle avec ce thunk (uniquement dans le kit de développement logiciel (SDK) DIA version 8.0 ou ultérieure).|
-|[IDiaSymbol::get_volatileType](../../debugger/debug-interface-access/idiasymbol-get-volatiletype.md)|`BOOL`|`TRUE` si le thunk est marqué comme volatile (uniquement dans DIA SDK V 8.0 ou version ultérieure).|
+|[IDiaSymbol::get_volatileType](../../debugger/debug-interface-access/idiasymbol-get-volatiletype.md)|`BOOL`|`TRUE`Si le thunk est marqué comme volatile (uniquement dans DIA SDK V 8.0 ou version ultérieure).|
 
 ## <a name="see-also"></a>Voir aussi
 - [Hiérarchie lexicale des types de symboles](../../debugger/debug-interface-access/lexical-hierarchy-of-symbol-types.md)

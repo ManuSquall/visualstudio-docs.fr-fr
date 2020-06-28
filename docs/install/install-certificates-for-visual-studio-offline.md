@@ -3,7 +3,7 @@ title: Installer les certificats nécessaires à une installation hors connexion
 description: Découvrez comment installer des certificats pour une installation hors connexion de Visual Studio.
 ms.date: 08/08/2019
 ms.custom: seodec18
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - '{{PLACEHOLDER}}'
 - '{{PLACEHOLDER}}'
@@ -15,12 +15,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: b2570876ddaa03753b1c0d3fb9f9ddc772bbbcb8
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 525294d2cf3c33dfdb1c5796dabf1c2a7a78bf91
+ms.sourcegitcommit: 9e15138a34532b222e80f6b42b1a9de7b2fe0175
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "76114660"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "85418806"
 ---
 # <a name="install-certificates-required-for-visual-studio-offline-installation"></a>Installer les certificats nécessaires à l’installation hors connexion de Visual Studio
 
@@ -136,12 +136,12 @@ Les trois fichiers .P12 figurant dans ce dossier contiennent chacun un certifica
 
 * **ManifestSignCertificates.p12** contient :
   * Certificat intermédiaire : **Microsoft Code Signing PCA 2011**
-    * Non requis. Le cas échéant, améliore les performances dans certains scénarios.
+    * Non obligatoire. Le cas échéant, améliore les performances dans certains scénarios.
   * Certificat racine : **Microsoft Root Certificate Authority 2011**
     * Obligatoire sur les systèmes Windows 7 Service Pack 1 qui ne disposent pas des dernières mises à jour Windows.
 * **ManifestCounterSignCertificates.p12** contient :
   * Certificat intermédiaire : **Microsoft Time-Stamp PCA 2010**
-    * Non requis. Le cas échéant, améliore les performances dans certains scénarios.
+    * Non obligatoire. Le cas échéant, améliore les performances dans certains scénarios.
   * Certificat racine : **Microsoft Root Certificate Authority 2010**
     * Obligatoire pour les systèmes Windows 7 Service Pack 1 qui ne disposent pas des dernières mises à jour Windows.
 * **Vs_installer_opc.SignCertificates.p12** contient :
@@ -178,7 +178,7 @@ Quand une signature est vérifiée dans un environnement en ligne, les API Windo
 
 Une manière de vérifier l’installation du système consiste à suivre ces étapes :
 
-1. Exécuter **mmc.exe**.<br/>
+1. Exécutez **mmc.exe**.<br/>
   a. Cliquez sur **Fichier** et sélectionnez **Ajouter/Supprimer un composant logiciel enfichable**.<br/>
   b. Double-cliquez sur **Certificats**, sélectionnez **Compte d’ordinateur** et cliquez sur **Suivant**.<br/>
   c. Sélectionnez **Ordinateur local**, cliquez sur **Terminer**, puis sur **OK**.<br/>
@@ -197,7 +197,7 @@ Une manière de vérifier l’installation du système consiste à suivre ces é
 
 Si les noms des certificats ne figuraient pas dans les colonnes **Délivré à**, ils doivent être installés.  Si un certificat intermédiaire se trouve uniquement dans le magasin de certificats intermédiaires de **l’utilisateur actuel**, il n’est disponible que pour l’utilisateur connecté. Vous devrez peut-être l’installer pour les autres utilisateurs.
 
-## <a name="install-visual-studio"></a>Installation de Visual Studio
+## <a name="install-visual-studio"></a>Installer Visual Studio
 
 Après avoir installé les certificats, vous pouvez poursuivre le déploiement de Visual Studio en suivant les instructions de la section [Déploiement à partir d’une installation réseau](create-a-network-installation-of-visual-studio.md#deploy-from-a-network-installation) de « Créer une installation réseau de Visual Studio ».
 

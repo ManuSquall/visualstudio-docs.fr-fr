@@ -1,7 +1,7 @@
 ---
 title: CV_CPU_TYPE_e | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -12,18 +12,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ccc83062427ac2ecd3f340d6e1dbbe4d988ab0af
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 82a482b570d3ed22d1b9dfe2ca3c8248a0185911
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72745323"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85462113"
 ---
 # <a name="cv_cpu_type_e"></a>CV_CPU_TYPE_e
 Spécifie le processeur cible.
 
 > [!NOTE]
-> Le processeur est identifié dans l’élément d’énumération après le préfixe `CV_CFL_*`.
+> Le processeur est identifié dans l’élément d’énumération après le `CV_CFL_*` préfixe.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -98,7 +98,7 @@ typedef enum CV_CPU_TYPE_e {
 ## <a name="remarks"></a>Notes
 Les valeurs de cette énumération sont retournées par un appel à la méthode [IDiaSymbol :: get_Platform](../../debugger/debug-interface-access/idiasymbol-get-platform.md) .
 
-## <a name="requirements"></a>spécifications
+## <a name="requirements"></a>Configuration requise
 En-tête : cvconst. h
 
 ## <a name="see-also"></a>Voir aussi
