@@ -1,7 +1,7 @@
 ---
 title: IDiaSegment::get_virtualAddress | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 94958fb51f6742bf07cc5a4cd34da059c05adc23
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: dd06959a382c56a888d8d39da0c40b39a028ed28
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72742355"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85465943"
 ---
 # <a name="idiasegmentget_virtualaddress"></a>IDiaSegment::get_virtualAddress
 Récupère l’adresse virtuelle (VA) du début de la section.
@@ -35,7 +35,7 @@ HRESULT get_virtualAddress ( 
 
 à Retourne le VA du début de la section.
 
-## <a name="return-value"></a>Valeur de retour
+## <a name="return-value"></a>Valeur renvoyée
  En cas de réussite, retourne `S_OK`. Retourne `S_FALSE` si cette propriété n’est pas prise en charge. Sinon, retourne un code d'erreur.
 
 ## <a name="see-also"></a>Voir aussi

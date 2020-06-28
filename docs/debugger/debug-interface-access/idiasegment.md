@@ -1,7 +1,7 @@
 ---
 title: IDiaSegment | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 855b40f3d35d884a366e8fdc36ed1ec4f2bef85a
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: d248bd5dcacf2c852076bc1dddbcd40d149ebf67
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72742340"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85465880"
 ---
 # <a name="idiasegment"></a>IDiaSegment
 Mappe les données du numéro de section aux segments de l’espace d’adressage.
@@ -29,7 +29,7 @@ IDiaSegment : IUnknown
 ```
 
 ## <a name="methods-in-vtable-order"></a>Méthodes dans l'ordre Vtable
-Le tableau suivant présente les méthodes de `IDiaSegment`.
+Le tableau suivant présente les méthodes de `IDiaSegment` .
 
 |Méthode|Description|
 |------------|-----------------|
@@ -43,11 +43,11 @@ Le tableau suivant présente les méthodes de `IDiaSegment`.
 |[IDiaSegment::get_relativeVirtualAddress](../../debugger/debug-interface-access/idiasegment-get-relativevirtualaddress.md)|Récupère l’adresse virtuelle relative (RVA) du début de la section.|
 |[IDiaSegment::get_virtualAddress](../../debugger/debug-interface-access/idiasegment-get-virtualaddress.md)|Récupère l’adresse virtuelle (VA) du début de la section.|
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
 Étant donné que le kit de développement logiciel (SDK) DIA effectue déjà des traductions du décalage de section vers des adresses virtuelles relatives, la plupart des applications n’utilisent pas les informations de la carte de segment.
 
 ## <a name="notes-for-callers"></a>Notes pour les appelants
-Obtenez cette interface en appelant les méthodes [IDiaEnumSegments :: Item](../../debugger/debug-interface-access/idiaenumsegments-item.md) ou [IDiaEnumSegments :: Next](../../debugger/debug-interface-access/idiaenumsegments-next.md) . Pour plus d’informations, consultez l’exemple.
+Obtenez cette interface en appelant les méthodes [IDiaEnumSegments :: Item](../../debugger/debug-interface-access/idiaenumsegments-item.md) ou [IDiaEnumSegments :: Next](../../debugger/debug-interface-access/idiaenumsegments-next.md) . Pour plus de détails, voir les exemples.
 
 ## <a name="example"></a>Exemple
 Cette fonction affiche l’adresse de tous les segments d’une table et le symbole le plus proche.
@@ -93,12 +93,12 @@ void ShowSegments(IDiaTable *pTable, IDiaSession *pSession)
 }
 ```
 
-## <a name="requirements"></a>spécifications
+## <a name="requirements"></a>Configuration requise
 En-tête : Dia2. h
 
 Bibliothèque : diaguids. lib
 
-DLL : Msdia80. dll
+DLL : msdia80.dll
 
 ## <a name="see-also"></a>Voir aussi
 - [Interfaces (SDK Debug Interface Access)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)

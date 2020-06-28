@@ -1,7 +1,7 @@
 ---
 title: IDiaEnumSourceFiles | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 091d2f5996d53341e57c5c1b2125609642a156eb
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 810ccbfc47a7fabaefdca5a1f6c158b328c4509c
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72744024"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85467847"
 ---
 # <a name="idiaenumsourcefiles"></a>IDiaEnumSourceFiles
 Énumère les différents fichiers sources contenus dans la source de données.
@@ -29,25 +29,25 @@ IDiaEnumSourceFiles : IUnknown
 ```
 
 ## <a name="methods-in-vtable-order"></a>Méthodes dans l'ordre Vtable
-Le tableau suivant présente les méthodes de `IDiaEnumSourceFiles`.
+Le tableau suivant présente les méthodes de `IDiaEnumSourceFiles` .
 
 |Méthode|Description|
 |------------|-----------------|
-|[IDiaEnumSourceFiles::get__NewEnum](../../debugger/debug-interface-access/idiaenumsourcefiles-get-newenum.md)|Récupère la version `IEnumVARIANT Interface` de cet énumérateur.|
+|[IDiaEnumSourceFiles::get__NewEnum](../../debugger/debug-interface-access/idiaenumsourcefiles-get-newenum.md)|Récupère la `IEnumVARIANT Interface` version de cet énumérateur.|
 |[IDiaEnumSourceFiles::get_Count](../../debugger/debug-interface-access/idiaenumsourcefiles-get-count.md)|Récupère le nombre de fichiers sources.|
 |[IDiaEnumSourceFiles::Item](../../debugger/debug-interface-access/idiaenumsourcefiles-item.md)|Récupère un fichier source au moyen d’un index.|
 |[IDiaEnumSourceFiles::Next](../../debugger/debug-interface-access/idiaenumsourcefiles-next.md)|Récupère un nombre spécifié de fichiers sources dans la séquence d’énumération.|
 |[IDiaEnumSourceFiles::Skip](../../debugger/debug-interface-access/idiaenumsourcefiles-skip.md)|Ignore un nombre spécifié de fichiers sources dans une séquence d’énumération.|
-|[IDiaEnumSourceFiles::Reset](../../debugger/debug-interface-access/idiaenumsourcefiles-reset.md)|Réinitialise une séquence d’énumération au début.|
+|[IDiaEnumSourceFiles::Reset](../../debugger/debug-interface-access/idiaenumsourcefiles-reset.md)|Réinitialise une séquence d'énumération.|
 |[IDiaEnumSourceFiles::Clone](../../debugger/debug-interface-access/idiaenumsourcefiles-clone.md)|Crée un énumérateur qui contient le même état d’énumération que l’énumérateur actuel.|
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
 
 ## <a name="notes-for-callers"></a>Notes pour les appelants
-Obtenez cette interface en appelant la méthode `QueryInterface` sur un objet [IDiaTable](../../debugger/debug-interface-access/idiatable.md) . Pour plus d’informations, consultez l’exemple.
+Obtenez cette interface en appelant la `QueryInterface` méthode sur un objet [IDiaTable](../../debugger/debug-interface-access/idiatable.md) . Pour plus de détails, voir les exemples.
 
 ## <a name="example"></a>Exemple
-Cet exemple montre comment obtenir l’interface `IDiaEnumSourceFiles` à partir de la liste de tables dans un objet de session DIA. Pour obtenir un exemple d’accès aux informations du fichier source, consultez l’interface [IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md) .
+Cet exemple montre comment obtenir l' `IDiaEnumSourceFiles` interface à partir de la liste de tables dans un objet de session dia. Pour obtenir un exemple d’accès aux informations du fichier source, consultez l’interface [IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md) .
 
 ```C++
 
@@ -79,12 +79,12 @@ IDiaEnumSourceFiles* GetEnumSourceFiles(IDiaSession *pSession)
 }
 ```
 
-## <a name="requirements"></a>spécifications
+## <a name="requirements"></a>Configuration requise
 En-tête : Dia2. h
 
 Bibliothèque : diaguids. lib
 
-DLL : Msdia80. dll
+DLL : msdia80.dll
 
 ## <a name="see-also"></a>Voir aussi
 - [Interfaces (SDK Debug Interface Access)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)

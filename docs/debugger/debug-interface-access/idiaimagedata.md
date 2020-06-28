@@ -1,7 +1,7 @@
 ---
 title: IDiaImageData | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 75a81ae23db90b06915e7090a9f2918be3ff18ae
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 39bc89e9b41f4d1c384476e673d116cb1cd08159
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72743406"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85467133"
 ---
 # <a name="idiaimagedata"></a>IDiaImageData
 Expose les détails de l’emplacement de base et des décalages de mémoire du module ou de l’image.
@@ -29,7 +29,7 @@ IDiaImageData : IUnknown
 ```
 
 ## <a name="methods-in-vtable-order"></a>Méthodes dans l'ordre Vtable
-Le tableau suivant présente les méthodes de `IDiaImageData`.
+Le tableau suivant présente les méthodes de `IDiaImageData` .
 
 |Méthode|Description|
 |------------|-----------------|
@@ -37,14 +37,14 @@ Le tableau suivant présente les méthodes de `IDiaImageData`.
 |[IDiaImageData::get_virtualAddress](../../debugger/debug-interface-access/idiaimagedata-get-virtualaddress.md)|Récupère l’emplacement dans la mémoire virtuelle de l’image.|
 |[IDiaImageData::get_imageBase](../../debugger/debug-interface-access/idiaimagedata-get-imagebase.md)|Récupère l’emplacement de mémoire dans lequel l’image doit être basée.|
 
-## <a name="remarks"></a>Notes
-Certains flux de débogage (XDATA, PDATA) contiennent des copies de données également stockées dans l’image. Ces objets de données de flux peuvent être interrogés pour l’interface `IDiaImageData`. Pour plus d’informations, consultez la section « Remarques pour les appelants » dans cette rubrique.
+## <a name="remarks"></a>Remarques
+Certains flux de débogage (XDATA, PDATA) contiennent des copies de données également stockées dans l’image. Ces objets de données de flux peuvent être interrogés pour l' `IDiaImageData` interface. Pour plus d’informations, consultez la section « Remarques pour les appelants » dans cette rubrique.
 
 ## <a name="notes-for-callers"></a>Notes pour les appelants
-Obtenez cette interface en appelant `QueryInterface` sur un objet [IDiaEnumDebugStreamData](../../debugger/debug-interface-access/idiaenumdebugstreamdata.md) . Notez que tous les flux de débogage ne prennent pas en charge l’interface `IDiaImageData`. Par exemple, actuellement, seuls les flux XDATA et PDATA prennent en charge l’interface `IDiaImageData`.
+Obtenez cette interface en appelant `QueryInterface` sur un objet [IDiaEnumDebugStreamData](../../debugger/debug-interface-access/idiaenumdebugstreamdata.md) . Notez que tous les flux de débogage ne prennent pas en charge l' `IDiaImageData` interface. Par exemple, actuellement, seuls les flux XDATA et PDATA prennent en charge l' `IDiaImageData` interface.
 
 ## <a name="example"></a>Exemple
-Cet exemple recherche tous les flux de débogage qui prennent en charge l’interface `IDiaImageData`. Si un flux de données de ce type est trouvé, certaines informations sur ce flux sont affichées.
+Cet exemple recherche tous les flux de débogage qui prennent en charge l' `IDiaImageData` interface. Si un flux de données de ce type est trouvé, certaines informations sur ce flux sont affichées.
 
 ```C++
 void ShowImageData(IDiaSession *pSession)
@@ -110,12 +110,12 @@ void ShowImageData(IDiaSession *pSession)
 }
 ```
 
-## <a name="requirements"></a>spécifications
+## <a name="requirements"></a>Configuration requise
 En-tête : Dia2. h
 
 Bibliothèque : diaguids. lib
 
-DLL : Msdia80. dll
+DLL : msdia80.dll
 
 ## <a name="see-also"></a>Voir aussi
 - [Interfaces (SDK Debug Interface Access)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)

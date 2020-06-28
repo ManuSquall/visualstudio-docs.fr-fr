@@ -1,7 +1,7 @@
 ---
 title: IDiaSymbol::findSymbolsByRVAForAcceleratorPointerTag | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 ms.assetid: 024ccd78-5867-4ca7-bc26-548758e9ac53
@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f0d05946db816e6bd209e364e11d5091163941a4
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: de63223afda4ce5d00358fe3c06cabe90f2689aa
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72741151"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85464435"
 ---
 # <a name="idiasymbolfindsymbolsbyrvaforacceleratorpointertag"></a>IDiaSymbol::findSymbolsByRVAForAcceleratorPointerTag
 Pour une valeur de balise correspondante donnée, cette méthode retourne une énumération des symboles contenus dans cette fonction stub à une adresse virtuelle relative spécifiée.
@@ -40,13 +40,13 @@ dans RVA utilisé pour filtrer les symboles qui correspondent à la variable poi
 
  `ppResult`
 
-à Pointeur vers un pointeur d’interface `IDiaEnumSymbols` qui est initialisé avec le résultat.
+à Pointeur vers un `IDiaEnumSymbols` pointeur d’interface qui est initialisé avec le résultat.
 
-## <a name="return-value"></a>Valeur de retour
- En cas de réussite, retourne `S_OK` ; Sinon, retourne `S_FALSE` ou un code d’erreur.
+## <a name="return-value"></a>Valeur renvoyée
+ En cas de réussite, retourne `S_OK` ; sinon, retourne `S_FALSE` ou un code d’erreur.
 
-## <a name="remarks"></a>Notes
- Appelez cette méthode uniquement sur une interface `IDiaSymbol` qui correspond à une fonction stub d’accélérateur.
+## <a name="remarks"></a>Remarques
+ Appelez cette méthode uniquement sur une `IDiaSymbol` interface qui correspond à une fonction stub d’accélérateur.
 
 ## <a name="see-also"></a>Voir aussi
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

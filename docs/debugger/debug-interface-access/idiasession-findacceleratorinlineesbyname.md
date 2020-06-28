@@ -1,7 +1,7 @@
 ---
 title: IDiaSession::findAcceleratorInlineesByName | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 ms.assetid: e203e5c2-6563-43fa-be56-3063955043ab
@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 007477d3f0de3767b0c5ef0af977f969505884ed
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: abd6f8afb7275503fa3de855575e9dcb6dad0fb3
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72742308"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85465845"
 ---
 # <a name="idiasessionfindacceleratorinlineesbyname"></a>IDiaSession::findAcceleratorInlineesByName
 Retourne une énumération de symboles pour les frames insérés correspondant au nom de fonction inline spécifié.
@@ -37,17 +37,17 @@ dans Nom de la fonction inline dans lequel effectuer la recherche.
 
  `option`
 
-dans Options de recherche de nom à utiliser lors de la recherche de frames insérés correspondant à `name`. Pour plus d’informations, consultez [énumération NameSearchOptions](../../debugger/debug-interface-access/namesearchoptions.md).
+dans Options de recherche de nom à utiliser lors de la recherche de frames Inline correspondant à `name` . Pour plus d’informations, consultez [énumération NameSearchOptions](../../debugger/debug-interface-access/namesearchoptions.md).
 
  `ppResult`
 
-à Pointeur vers un pointeur d’interface `IDiaEnumSymbols` qui est initialisé avec le résultat.
+à Pointeur vers un `IDiaEnumSymbols` pointeur d’interface qui est initialisé avec le résultat.
 
-## <a name="return-value"></a>Valeur de retour
- En cas de réussite, retourne `S_OK`; Sinon, retourne un code d’erreur.
+## <a name="return-value"></a>Valeur renvoyée
+ En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
-## <a name="remarks"></a>Notes
- Cette fonction recherche des Inlines uniquement dans les fonctions d’accélérateur. Elle ignore les C++ enregistrements de procédures natives.
+## <a name="remarks"></a>Remarques
+ Cette fonction recherche des Inlines uniquement dans les fonctions d’accélérateur. Elle ignore les enregistrements de procédures C++ natifs.
 
 ## <a name="see-also"></a>Voir aussi
 - [IDiaSession](../../debugger/debug-interface-access/idiasession.md)

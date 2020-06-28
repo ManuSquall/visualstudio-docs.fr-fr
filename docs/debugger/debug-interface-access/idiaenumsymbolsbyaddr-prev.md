@@ -1,7 +1,7 @@
 ---
 title: IDiaEnumSymbolsByAddr::Prev | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 70265976e5c6e7c2b3f536f2b8648aaba44df528
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 8fe7ced486524c7409532e140f48f841b5e55078
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72743861"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85467644"
 ---
 # <a name="idiaenumsymbolsbyaddrprev"></a>IDiaEnumSymbolsByAddr::Prev
 Récupère les symboles précédents dans l’ordre par adresse.
@@ -45,10 +45,10 @@ dans Nombre de symboles dans l’énumérateur à récupérer.
 
 à Retourne le nombre de symboles dans l’énumérateur extrait.
 
-## <a name="return-value"></a>Valeur de retour
+## <a name="return-value"></a>Valeur renvoyée
  En cas de réussite, retourne `S_OK`. Retourne `S_FALSE` s’il n’y a pas de symboles précédents. Sinon, retourne un code d'erreur.
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
  Cette méthode met à jour la position de l’énumérateur en fonction du nombre d’éléments extraits.
 
 ## <a name="see-also"></a>Voir aussi

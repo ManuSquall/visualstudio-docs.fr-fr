@@ -1,7 +1,7 @@
 ---
 title: IDiaSymbol::get_isAcceleratorGroupSharedLocal | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 ms.assetid: 17a20542-5b45-478f-bb80-0d56031aadb5
@@ -10,15 +10,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1d6cf755121f851e652cce251ace2105e6773822
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 1110f0882e8281955fa4efdf41a1355405bdd557
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72740330"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85463504"
 ---
 # <a name="idiasymbolget_isacceleratorgroupsharedlocal"></a>IDiaSymbol::get_isAcceleratorGroupSharedLocal
-Récupère un indicateur qui indique si le symbole correspond à une variable locale partagée de groupe dans le code compilé pour C++ un accélérateur amp.
+Récupère un indicateur qui signale si le symbole correspond à une variable locale partagée de groupe dans le code compilé pour un C++ AMP Accelerator.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -30,10 +30,10 @@ HRESULT get_isAcceleratorGroupSharedLocal(
 #### <a name="parameters"></a>Paramètres
  `pFlag`
 
-à Pointeur vers une `BOOL` qui indique si le symbole correspond à une variable locale partagée de groupe dans le code compilé pour C++ un accélérateur amp. Si `TRUE`, les méthodes `get_baseDataSlot` et `get_baseDataOffset` peuvent être utilisées pour obtenir les informations d’emplacement de stockage de la variable.
+à Pointeur vers un `BOOL` qui indique si le symbole correspond à une variable locale partagée de groupe dans le code compilé pour un C++ amp Accelerator. Si `TRUE` la valeur est, les `get_baseDataSlot` `get_baseDataOffset` méthodes et peuvent être utilisées pour obtenir les informations relatives à l’emplacement de stockage de la variable.
 
-## <a name="return-value"></a>Valeur de retour
- En cas de réussite, retourne `S_OK`; Sinon, retourne `S_FALSE` ou un code d’erreur.
+## <a name="return-value"></a>Valeur renvoyée
+ En cas de réussite, retourne `S_OK` ; sinon, retourne `S_FALSE` ou un code d’erreur.
 
 ## <a name="see-also"></a>Voir aussi
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

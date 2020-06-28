@@ -1,7 +1,7 @@
 ---
 title: IDiaEnumSymbolsByAddr::symbolByRVA | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b4c34ce4105da6d50dc2bc9a0554f9539c1b2177
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: eb6f2f4486f943064ef4c29d16c98003aa3ff088
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72743832"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85467623"
 ---
 # <a name="idiaenumsymbolsbyaddrsymbolbyrva"></a>IDiaEnumSymbolsByAddr::symbolByRVA
 Positionne l’énumérateur en effectuant une recherche par adresse virtuelle relative (RVA).
@@ -40,7 +40,7 @@ dans Adresse relative au début de l’image.
 
 à Retourne un objet [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) représentant le symbole trouvé.
 
-## <a name="return-value"></a>Valeur de retour
+## <a name="return-value"></a>Valeur renvoyée
  En cas de réussite, retourne `S_OK`. Retourne `S_FALSE` si le symbole est introuvable. Sinon, retourne un code d'erreur.
 
 ## <a name="see-also"></a>Voir aussi

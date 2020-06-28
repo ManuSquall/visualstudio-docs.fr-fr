@@ -1,7 +1,7 @@
 ---
 title: IDiaSymbol::get_framePointerPresent | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1fce085f134b844d7e53e19d9e2ec057aa8a89ca
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: e5ccc4c679c7bb20d5b419fe2c04ab5ea8dce904
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72740669"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85463903"
 ---
 # <a name="idiasymbolget_framepointerpresent"></a>IDiaSymbol::get_framePointerPresent
-Récupère un indicateur qui spécifie si le pointeur de frame est présent. Utilisez lorsque l' [énumération SymTagEnum](../../debugger/debug-interface-access/symtagenum.md) a la valeur `SymTagFunction`.
+Récupère un indicateur qui spécifie si le pointeur de frame est présent. Utilisez lorsque l' [énumération SymTagEnum](../../debugger/debug-interface-access/symtagenum.md) a la valeur `SymTagFunction` .
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -33,22 +33,22 @@ HRESULT get_framePointerPresent( 
 #### <a name="parameters"></a>Paramètres
  `pRetVal`
 
-[out]] Retourne `TRUE` si le pointeur de frame est présent ; Sinon, retourne `FALSE`.
+[out]] Retourne `TRUE` si le pointeur de frame est présent ; sinon, retourne `FALSE` .
 
-## <a name="return-value"></a>Valeur de retour
- En cas de réussite, retourne `S_OK` ; Sinon, retourne `S_FALSE` ou un code d’erreur.
+## <a name="return-value"></a>Valeur renvoyée
+ En cas de réussite, retourne `S_OK` ; sinon, retourne `S_FALSE` ou un code d’erreur.
 
 > [!NOTE]
-> Une valeur de retour de `S_FALSE` signifie que la propriété n’est pas disponible pour le symbole.
+> Une valeur de retour `S_FALSE` signifie que la propriété n’est pas disponible pour le symbole.
 
 ## <a name="remarks"></a>Notes
 
-## <a name="requirements"></a>spécifications
+## <a name="requirements"></a>Spécifications
  En-tête : Dia2. h
 
  Bibliothèque : diaguids. lib
 
- DLL : msdia100. dll
+ DLL : msdia100.dll
 
 ## <a name="see-also"></a>Voir aussi
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

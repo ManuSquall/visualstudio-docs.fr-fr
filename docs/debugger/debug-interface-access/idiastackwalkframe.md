@@ -1,7 +1,7 @@
 ---
 title: IDiaStackWalkFrame | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5b2657127726e387e81a5b28c639abbaa5399019
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: ee80b9bbb6d16f2aa4264491593d1864bdade690
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72741440"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85464806"
 ---
 # <a name="idiastackwalkframe"></a>IDiaStackWalkFrame
 Conserve le contexte de la pile entre les appels de la méthode [IDiaFrameData :: Execute](../../debugger/debug-interface-access/idiaframedata-execute.md) .
@@ -29,7 +29,7 @@ IDiaStackWalkFrame : IUnknown
 ```
 
 ## <a name="methods-in-vtable-order"></a>Méthodes dans l'ordre Vtable
- Le tableau suivant présente les méthodes de `IDiaStackWalkFrame`.
+ Le tableau suivant présente les méthodes de `IDiaStackWalkFrame` .
 
 |Méthode|Description|
 |------------|-----------------|
@@ -39,18 +39,18 @@ IDiaStackWalkFrame : IUnknown
 |[IDiaStackWalkFrame::searchForReturnAddress](../../debugger/debug-interface-access/idiastackwalkframe-searchforreturnaddress.md)|Recherche l’adresse de retour de la fonction la plus proche dans le frame de pile spécifié.|
 |[IDiaStackWalkFrame::searchForReturnAddressStart](../../debugger/debug-interface-access/idiastackwalkframe-searchforreturnaddressstart.md)|Recherche dans le frame de pile spécifié une adresse de retour à l’adresse spécifiée ou à proximité de celle-ci.|
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
  Cette interface est utilisée pendant l’exécution du programme pour lire et écrire des registres, ainsi que pour accéder à la mémoire et rechercher les adresses de retour.
 
 ## <a name="notes-for-callers"></a>Notes pour les appelants
- L’application cliente implémente cette interface et passe une instance de l’interface à la méthode [IDiaFrameData :: Execute](../../debugger/debug-interface-access/idiaframedata-execute.md) . La même instance de cette interface est réutilisée et à nouveau pour maintenir l’état des registres lors de chaque appel de la méthode `execute`. La méthode `execute` utilise également cette interface pour déterminer l’adresse de retour.
+ L’application cliente implémente cette interface et passe une instance de l’interface à la méthode [IDiaFrameData :: Execute](../../debugger/debug-interface-access/idiaframedata-execute.md) . La même instance de cette interface est réutilisée et à nouveau pour maintenir l’état des registres lors de chaque appel de la `execute` méthode. La `execute` méthode utilise également cette interface pour déterminer l’adresse de retour.
 
-## <a name="requirements"></a>spécifications
+## <a name="requirements"></a>Configuration requise
  En-tête : Dia2. h
 
  Bibliothèque : diaguids. lib
 
- DLL : Msdia80. dll
+ DLL : msdia80.dll
 
 ## <a name="see-also"></a>Voir aussi
 - [Interfaces (SDK Debug Interface Access)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)

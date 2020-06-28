@@ -1,7 +1,7 @@
 ---
 title: IDiaStackFrame::get_cplusplusExceptionHandling | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d78a4c73d7954f48c87c1eafec4d0b35fc1292ef
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: ebc2e4042185b17d7e2f670456cf124c5ce079fe
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72741752"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85465120"
 ---
 # <a name="idiastackframeget_cplusplusexceptionhandling"></a>IDiaStackFrame::get_cplusplusExceptionHandling
-Récupère un indicateur qui signale si C++ la gestion des exceptions est en vigueur.
+Récupère un indicateur qui signale si la gestion des exceptions C++ est en vigueur.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -33,13 +33,13 @@ HRESULT get_cplusplusExceptionHandling ( 
 #### <a name="parameters"></a>Paramètres
  `pRetVal`
 
-à Retourne `TRUE` si C++ la gestion des exceptions est appliquée pour ce frame ; Sinon, retourne`FALSE`.
+à Retourne `TRUE` si la gestion des exceptions C++ est appliquée pour ce frame ; sinon, retourne `FALSE` .
 
-## <a name="return-value"></a>Valeur de retour
+## <a name="return-value"></a>Valeur renvoyée
  En cas de réussite, retourne `S_OK`. Retourne `S_FALSE` si la propriété n’est pas prise en charge. Sinon, retourne un code d'erreur.
 
-## <a name="remarks"></a>Notes
- C++la gestion des exceptions n’est pas identique à la gestion structurée ou à la gestion des exceptions système.
+## <a name="remarks"></a>Remarques
+ La gestion des exceptions C++ n’est pas identique à la gestion structurée ou à la gestion des exceptions système.
 
  Pour déterminer si la gestion structurée des exceptions est en vigueur, appelez la méthode [IDiaStackFrame :: get_systemExceptionHandling](../../debugger/debug-interface-access/idiastackframe-get-systemexceptionhandling.md) .
 

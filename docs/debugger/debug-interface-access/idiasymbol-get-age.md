@@ -1,7 +1,7 @@
 ---
 title: IDiaSymbol::get_age | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 28a78094d9779a0da35052808dfb8d5f42972894
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: b8fc198573123c24a3c48068b50161d0aa7f3b60
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72741036"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85464344"
 ---
 # <a name="idiasymbolget_age"></a>IDiaSymbol::get_age
 Récupère la valeur d’âge d’un fichier. pdb.
@@ -35,21 +35,21 @@ HRESULT get_age ( 
 
 à Retourne la valeur d’âge d’un fichier. pdb.
 
-## <a name="return-value"></a>Valeur de retour
- En cas de réussite, retourne `S_OK`; Sinon, retourne `S_FALSE` ou un code d’erreur.
+## <a name="return-value"></a>Valeur renvoyée
+ En cas de réussite, retourne `S_OK` ; sinon, retourne `S_FALSE` ou code d’erreur.
 
 > [!NOTE]
-> Une valeur de retour de `S_FALSE` signifie que la propriété n’est pas disponible pour le symbole.
+> Une valeur de retour `S_FALSE` signifie que la propriété n’est pas disponible pour le symbole.
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
  L’âge ne correspond pas nécessairement à une valeur d’heure connue ; Il est généralement utilisé pour déterminer si un fichier. pdb n’est pas synchronisé avec un fichier. exe correspondant.
 
-## <a name="requirements"></a>spécifications
+## <a name="requirements"></a>Configuration requise
 
-|Exigence|Description|
+|Condition requise|Description|
 |-----------------|-----------------|
 |En-tête :|dia2.h|
-|Version :|DIA SDK v 7.0|
+|Version :|DIA SDK v 7.0|
 
 ## <a name="see-also"></a>Voir aussi
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

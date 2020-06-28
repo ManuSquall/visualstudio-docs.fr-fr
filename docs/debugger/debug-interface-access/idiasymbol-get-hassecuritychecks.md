@@ -1,7 +1,7 @@
 ---
 title: IDiaSymbol::get_hasSecurityChecks | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 11fd7f70da9ae47b9858f8265d0608e3d6994ef7
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: a8d544a2172655df91e7156bc3f0d53b236490d1
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72740466"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85463672"
 ---
 # <a name="idiasymbolget_hassecuritychecks"></a>IDiaSymbol::get_hasSecurityChecks
 Récupère un indicateur qui spécifie si le compiland ou la fonction a été compilé avec des vérifications de sécurité de dépassement de mémoire tampon (par exemple, le commutateur de compilateur [/GS (vérification de la sécurité de la mémoire tampon)](/cpp/build/reference/gs-buffer-security-check) ).
@@ -33,21 +33,21 @@ HRESULT get_hasSecurityChecks(
 #### <a name="parameters"></a>Paramètres
  `pFlag`
 
-à Retourne `TRUE` si la fonction a des contrôles de sécurité ; Sinon, retourne `FALSE`.
+à Retourne `TRUE` si la fonction a des contrôles de sécurité ; sinon, retourne `FALSE` .
 
-## <a name="return-value"></a>Valeur de retour
- En cas de réussite, retourne `S_OK` ; Sinon, retourne `S_FALSE` ou un code d’erreur.
+## <a name="return-value"></a>Valeur renvoyée
+ En cas de réussite, retourne `S_OK` ; sinon, retourne `S_FALSE` ou un code d’erreur.
 
 > [!NOTE]
-> Une valeur de retour de `S_FALSE` signifie que la propriété n’est pas disponible pour le symbole.
+> Une valeur de retour `S_FALSE` signifie que la propriété n’est pas disponible pour le symbole.
 
-## <a name="requirements"></a>spécifications
+## <a name="requirements"></a>Configuration requise
 
-|Exigence|Description|
+|Condition requise|Description|
 |-----------------|-----------------|
 |En-tête :|dia2.h|
-|Version :|DIA SDK v 8.0|
+|Version :|DIA SDK v 8.0|
 
 ## <a name="see-also"></a>Voir aussi
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
-- [/GS (vérification de la sécurité des mémoires tampons)](/cpp/build/reference/gs-buffer-security-check)
+- [/GS (vérification de la sécurité de la mémoire tampon)](/cpp/build/reference/gs-buffer-security-check)

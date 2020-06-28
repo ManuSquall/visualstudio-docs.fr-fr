@@ -1,7 +1,7 @@
 ---
 title: IDiaSession | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f983275974ed0ec3fb0e6091f5b9e73cdccd76ef
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: e7fb8c5336a14180b3742fa02a91e6532b6e5831
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72741855"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85465348"
 ---
 # <a name="idiasession"></a>IDiaSession
 Fournit un contexte de requête pour les symboles de débogage.
@@ -29,12 +29,12 @@ IDiaSession : IUnknown
 ```
 
 ## <a name="methods"></a>Méthodes
-Le tableau suivant présente les méthodes de `IDiaSession`.
+Le tableau suivant présente les méthodes de `IDiaSession` .
 
 |Méthode|Description|
 |------------|-----------------|
-|[IDiaSession::get_loadAddress](../../debugger/debug-interface-access/idiasession-get-loadaddress.md)|Récupère l’adresse de chargement du fichier exécutable qui correspond aux symboles dans ce magasin de symboles. Il s’agit de la même valeur que celle qui a été transmise à la méthode `put_loadAddress`.|
-|[IDiaSession::put_loadAddress](../../debugger/debug-interface-access/idiasession-put-loadaddress.md)|Définit l’adresse de chargement du fichier exécutable qui correspond aux symboles dans ce magasin de symboles. **Remarque :**  Il est important d’appeler cette méthode lorsque vous recevez un objet `IDiaSession` et avant de commencer à utiliser l’objet.|
+|[IDiaSession::get_loadAddress](../../debugger/debug-interface-access/idiasession-get-loadaddress.md)|Récupère l’adresse de chargement du fichier exécutable qui correspond aux symboles dans ce magasin de symboles. Il s’agit de la même valeur que celle qui a été transmise à la `put_loadAddress` méthode.|
+|[IDiaSession::put_loadAddress](../../debugger/debug-interface-access/idiasession-put-loadaddress.md)|Définit l’adresse de chargement du fichier exécutable qui correspond aux symboles dans ce magasin de symboles. **Remarque :**  Il est important d’appeler cette méthode lorsque vous recevez un `IDiaSession` objet et avant de commencer à utiliser l’objet.|
 |[IDiaSession::get_globalScope](../../debugger/debug-interface-access/idiasession-get-globalscope.md)|Récupère une référence à la portée globale.|
 |[IDiaSession::getEnumTables](../../debugger/debug-interface-access/idiasession-getenumtables.md)|Récupère un énumérateur pour toutes les tables contenues dans le magasin de symboles.|
 |[IDiaSession::getSymbolsByAddr](../../debugger/debug-interface-access/idiasession-getsymbolsbyaddr.md)|Récupère un énumérateur pour tous les symboles nommés aux emplacements statiques.|
@@ -62,7 +62,7 @@ Le tableau suivant présente les méthodes de `IDiaSession`.
 |[IDiaSession::findInlineeLines](../../debugger/debug-interface-access/idiasession-findinlineelines.md)|Récupère une énumération qui permet à un client d’itérer au sein des informations de numéro de ligne de toutes les fonctions qui sont Inline, directement ou indirectement, par le symbole parent spécifié.|
 |[IDiaSession::findInlineeLinesByAddr](../../debugger/debug-interface-access/idiasession-findinlineelinesbyaddr.md)|Récupère une énumération qui permet à un client d’itérer au sein des informations de numéro de ligne de toutes les fonctions qui sont Inline, directement ou indirectement, par le symbole parent spécifié et qui sont contenues dans la plage d’adresses spécifiée.|
 |[IDiaSession::findInlineeLinesByRVA](../../debugger/debug-interface-access/idiasession-findinlineelinesbyrva.md)|Récupère une énumération qui permet à un client d’itérer au sein des informations de numéro de ligne de toutes les fonctions qui sont Inline, directement ou indirectement, par le symbole parent spécifié et qui sont contenues dans l’adresse virtuelle relative (RVA) spécifiée.|
-|[IDiaSession::findInlineeLinesByVA](../../debugger/debug-interface-access/idiasession-findinlineelinesbyva.md)|Récupère une énumération qui permet à un client d’itérer au sein des informations de numéro de ligne de toutes les fonctions qui sont Inline, directement ou indirectement, par le symbole parent spécifié et qui sont contenues dans l’adresse virtuelle (VA) spécifiée.|
+|[IDiaSession::findInlineLinesByVA](../../debugger/debug-interface-access/idiasession-findinlineelinesbyva.md)|Récupère une énumération qui permet à un client d’itérer au sein des informations de numéro de ligne de toutes les fonctions qui sont Inline, directement ou indirectement, par le symbole parent spécifié et qui sont contenues dans l’adresse virtuelle (VA) spécifiée.|
 |[IDiaSession::findInlineeLinesByLinenum](../../debugger/debug-interface-access/idiasession-findinlineelinesbylinenum.md)|Récupère une énumération qui permet à un client d’itérer au sein des informations de numéro de ligne de toutes les fonctions qui sont Inline, directement ou indirectement, dans le fichier source et le numéro de ligne spécifiés.|
 |[IDiaSession::findInlineesByName](../../debugger/debug-interface-access/idiasession-findinlineesbyname.md)|Récupère une énumération qui permet à un client d’itérer au sein des informations de numéro de ligne de toutes les fonctions inline qui correspondent à un nom spécifié.|
 |[IDiaSession::findSymbolsForAcceleratorPointerTag](../../debugger/debug-interface-access/idiasession-findsymbolsforacceleratorpointertag.md)|Retourne une énumération de symboles pour la variable à laquelle correspond la valeur de balise spécifiée dans la fonction stub d’accélérateur parente.|
@@ -70,11 +70,11 @@ Le tableau suivant présente les méthodes de `IDiaSession`.
 |[IDiaSession::findAcceleratorInlineesByName](../../debugger/debug-interface-access/idiasession-findacceleratorinlineesbyname.md)|Retourne une énumération de symboles pour les frames insérés correspondant au nom de fonction inline spécifié.|
 |[IDiaSession::findAcceleratorInlineesByLinenum](../../debugger/debug-interface-access/idiasession-findacceleratorinlineesbylinenum.md)|Retourne une énumération de symboles pour les frames inclus qui correspondent à l’emplacement source spécifié.|
 
-## <a name="remarks"></a>Notes
-Il est important d’appeler la méthode [IDiaSession ::P ut_loadaddress](../../debugger/debug-interface-access/idiasession-put-loadaddress.md) après avoir créé l’objet `IDiaSession`, et la valeur transmise à la méthode `put_loadAddress` doit être différente de zéro, pour que toutes les propriétés d’adresse virtuelle (va) des symboles soient accessibles. L’adresse de chargement provient du programme chargé de l’exécutable en cours de débogage. Par exemple, vous pouvez appeler la fonction Win32 `GetModuleInformation` pour récupérer l’adresse de chargement de l’exécutable, en fonction d’un handle de l’exécutable.
+## <a name="remarks"></a>Remarques
+Il est important d’appeler la méthode [IDiaSession ::p ut_loadAddress](../../debugger/debug-interface-access/idiasession-put-loadaddress.md) après la création de l' `IDiaSession` objet, et la valeur transmise à la `put_loadAddress` méthode doit être différente de zéro, pour que les propriétés d’adresse virtuelle (va) des symboles soient accessibles. L’adresse de chargement provient du programme chargé de l’exécutable en cours de débogage. Par exemple, vous pouvez appeler la fonction Win32 `GetModuleInformation` pour récupérer l’adresse de chargement de l’exécutable, en fonction d’un handle de l’exécutable.
 
 ## <a name="example"></a>Exemple
-Cet exemple montre comment obtenir l’interface `IDiaSession` dans le cadre d’une initialisation générale du kit de développement logiciel (SDK) DIA.
+Cet exemple montre comment obtenir l' `IDiaSession` interface dans le cadre d’une initialisation générale du kit de développement logiciel (SDK) dia.
 
 ```C++
 CComPtr<IDiaDataSource> pSource;
@@ -109,19 +109,19 @@ void InitializeDIA(const char *szFilename)
 }
 ```
 
-## <a name="requirements"></a>spécifications
+## <a name="requirements"></a>Configuration requise
 En-tête : Dia2. h
 
 Bibliothèque : diaguids. lib
 
-DLL : Msdia80. dll
+DLL : msdia80.dll
 
 ## <a name="see-also"></a>Voir aussi
 - [Interfaces (SDK Debug Interface Access)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)
-- [Vue d’ensemble](../../debugger/debug-interface-access/overview-debug-interface-access-sdk.md)
-- [Exe](../../debugger/debug-interface-access/exe.md)
+- [Vue d'ensemble](../../debugger/debug-interface-access/overview-debug-interface-access-sdk.md)
+- [Exécutable](../../debugger/debug-interface-access/exe.md)
 - [IDiaAddressMap](../../debugger/debug-interface-access/idiaaddressmap.md)
 - [IDiaDataSource](../../debugger/debug-interface-access/idiadatasource.md)
 - [IDiaDataSource::openSession](../../debugger/debug-interface-access/idiadatasource-opensession.md)
 - [IDiaSymbol::findChildren](../../debugger/debug-interface-access/idiasymbol-findchildren.md)
-- [Interrogation du fichier .Pdb](../../debugger/debug-interface-access/querying-the-dot-pdb-file.md)
+- [Interrogation du fichier .Pdb](../../debugger/debug-interface-access/querying-the-dot-pdb-file.md)

@@ -1,7 +1,7 @@
 ---
 title: IDiaSession::findChildren | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cca6778e5697c5f8821322c19d706d733d7f2b9f
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: dcc62ed0b4a1f0a9ddd43ef692f748db4d9b6f10
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72742301"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85465838"
 ---
 # <a name="idiasessionfindchildren"></a>IDiaSession::findChildren
 Récupère tous les enfants d’un identificateur parent spécifié qui correspondent au nom et au type de symbole.
@@ -37,7 +37,7 @@ HRESULT findChildren ( 
 #### <a name="parameters"></a>Paramètres
  `parent`
 
-dans Objet [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) qui représente le parent. Si ce symbole parent est une fonction, un module ou un bloc, ses enfants lexicaux sont retournés dans `ppResult`. Si le symbole parent est un type, ses enfants de classe sont retournés. Si ce paramètre est `NULL`, `symtag` doit avoir la valeur `SymTagExe` ou `SymTagNull`, qui retourne l’étendue globale (fichier. exe).
+dans Objet [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) qui représente le parent. Si ce symbole parent est une fonction, un module ou un bloc, ses enfants lexicaux sont retournés dans `ppResult` . Si le symbole parent est un type, ses enfants de classe sont retournés. Si ce paramètre a `NULL` `symtag` la valeur, doit avoir `SymTagExe` la valeur ou `SymTagNull` , qui retourne l’étendue globale (fichier. exe).
 
  `symtag`
 
@@ -45,7 +45,7 @@ dans Spécifie la balise de symbole des enfants à récupérer. Les valeurs sont
 
  `name`
 
-dans Spécifie le nom des enfants à récupérer. Affectez la valeur `NULL` pour tous les enfants à récupérer.
+dans Spécifie le nom des enfants à récupérer. Affectez à la valeur `NULL` pour tous les enfants à récupérer.
 
  `compareFlags`
 
@@ -55,11 +55,11 @@ dans Spécifie les options de comparaison appliquées à la correspondance de no
 
 à Retourne un objet [IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md) qui contient la liste des symboles enfants récupérés.
 
-## <a name="return-value"></a>Valeur de retour
- En cas de réussite, retourne `S_OK` ; Sinon, retourne un code d’erreur.
+## <a name="return-value"></a>Valeur renvoyée
+ En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
 ## <a name="example"></a>Exemple
- L’exemple suivant montre comment rechercher les variables locales de la fonction `pFunc` qui correspondent au nom `szVarName`.
+ L’exemple suivant montre comment rechercher les variables locales de la fonction `pFunc` qui correspondent au nom `szVarName` .
 
 ```C++
 IDiaEnumSymbols* pEnum;
@@ -67,7 +67,7 @@ pSession->findChildren( pFunc, SymTagData, szVarName, nsCaseSensitive, &pEnum );
 ```
 
 ## <a name="see-also"></a>Voir aussi
-- [Vue d’ensemble](../../debugger/debug-interface-access/overview-debug-interface-access-sdk.md)
+- [Vue d'ensemble](../../debugger/debug-interface-access/overview-debug-interface-access-sdk.md)
 - [IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md)
 - [IDiaSession](../../debugger/debug-interface-access/idiasession.md)
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

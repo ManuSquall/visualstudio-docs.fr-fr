@@ -1,7 +1,7 @@
 ---
 title: IDiaLoadCallback::RestrictSymbolServerAccess | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 87d590af5162d3efd2ef2c9702a3fe9f45250993
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 01bc4d1bd1109b3e481449dae164001257da3415
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72743021"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85466727"
 ---
 # <a name="idialoadcallbackrestrictsymbolserveraccess"></a>IDiaLoadCallback::RestrictSymbolServerAccess
 Détermine si l’accès est autorisé à un serveur de symboles pour résoudre les symboles.
@@ -29,9 +29,9 @@ HRESULT RestrictSymbolServerAccess();
 ```
 
 ## <a name="return-value"></a>Valeur de retour
- En cas de réussite, retourne `S_OK`; Sinon, retourne un code d’erreur.
+ En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
  Tout code de retour autre que `S_OK` empêche l’utilisation d’un serveur de symboles pour résoudre les symboles.
 
 ## <a name="see-also"></a>Voir aussi

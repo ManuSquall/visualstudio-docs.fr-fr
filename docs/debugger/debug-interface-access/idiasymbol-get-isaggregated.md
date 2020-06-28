@@ -1,7 +1,7 @@
 ---
 title: IDiaSymbol::get_isAggregated | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ee36d1901f7acb5bc7e41ac72b8dc03b15bc45c8
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 02e1a3a831ccd7394c58af4b744f0be8b905d763
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72740298"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85463483"
 ---
 # <a name="idiasymbolget_isaggregated"></a>IDiaSymbol::get_isAggregated
 Récupère un indicateur qui spécifie si le symbole de données fait partie d’un agrégat ou d’une collection de symboles ; le compilateur traite les symboles agrégés comme des entités distinctes, mais ils font véritablement partie d’un symbole unique plus grand.
@@ -33,23 +33,23 @@ HRESULT get_isAggregated(
 #### <a name="parameters"></a>Paramètres
  `pFlag`
 
-à Retourne `TRUE` si les données font partie d’une agrégation de symboles fractionnés à partir d’un symbole parent ; Sinon, retourne `FALSE`.
+à Retourne `TRUE` si les données font partie d’une agrégation de symboles fractionnés à partir d’un symbole parent ; sinon, retourne `FALSE` .
 
-## <a name="return-value"></a>Valeur de retour
- En cas de réussite, retourne `S_OK` ; Sinon, retourne `S_FALSE` ou un code d’erreur.
+## <a name="return-value"></a>Valeur renvoyée
+ En cas de réussite, retourne `S_OK` ; sinon, retourne `S_FALSE` ou un code d’erreur.
 
 > [!NOTE]
-> Une valeur de retour de `S_FALSE` signifie que la propriété n’est pas disponible pour le symbole.
+> Une valeur de retour `S_FALSE` signifie que la propriété n’est pas disponible pour le symbole.
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
  La méthode [IDiaSymbol :: get_isSplitted](../../debugger/debug-interface-access/idiasymbol-get-issplitted.md) est `TRUE` pour le symbole qui est le parent des symboles agrégés.
 
-## <a name="requirements"></a>spécifications
+## <a name="requirements"></a>Configuration requise
 
-|Exigence|Description|
+|Condition requise|Description|
 |-----------------|-----------------|
 |En-tête :|dia2.h|
-|Version :|DIA SDK v 8.0|
+|Version :|DIA SDK v 8.0|
 
 ## <a name="see-also"></a>Voir aussi
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

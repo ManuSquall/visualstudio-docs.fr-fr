@@ -1,7 +1,7 @@
 ---
 title: IDiaFrameData::get_lengthLocals | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ff67d3b7e9466451c7e7f79bf4137ec21f629e04
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: c97049b1a0bdfe6b168b9141f5f36418e4a4a5b5
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72743598"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85467329"
 ---
 # <a name="idiaframedataget_lengthlocals"></a>IDiaFrameData::get_lengthLocals
 Récupère le nombre d’octets de variables locales faisant l’objet d’un push sur la pile.
@@ -35,10 +35,10 @@ HRESULT get_lengthLocals ( 
 
 à Retourne le nombre d’octets de variables locales.
 
-## <a name="return-value"></a>Valeur de retour
+## <a name="return-value"></a>Valeur renvoyée
  En cas de réussite, retourne `S_OK`. Retourne `S_FALSE` si cette propriété n’est pas prise en charge. Sinon, retourne un code d'erreur.
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
  La valeur retournée par cette méthode est généralement utilisée dans l’interprétation d’une chaîne de programme (consultez la méthode [IDiaFrameData :: get_program](../../debugger/debug-interface-access/idiaframedata-get-program.md) pour la définition d’une chaîne de programme).
 
 ## <a name="see-also"></a>Voir aussi

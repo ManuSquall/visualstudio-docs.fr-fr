@@ -1,7 +1,7 @@
 ---
 title: IDiaSymbol::get_bitPosition | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 709bb7e57ee6260ffcd7d8b1421526d3dd41052a
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 636f553d72dc73f463d7b9814230f4b80cdda535
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72740904"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85464169"
 ---
 # <a name="idiasymbolget_bitposition"></a>IDiaSymbol::get_bitPosition
-Récupère la position de bit de l’emplacement. Utilisé lorsque l' [énumération LocationType (](../../debugger/debug-interface-access/locationtype.md) est `LocIsBitField`.
+Récupère la position de bit de l’emplacement. Utilisé lorsque l' [énumération LocationType (](../../debugger/debug-interface-access/locationtype.md) est `LocIsBitField` .
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -35,18 +35,18 @@ HRESULT get_bitPosition ( 
 
 à Retourne la position de bit de l’emplacement.
 
-## <a name="return-value"></a>Valeur de retour
- En cas de réussite, retourne `S_OK` ; Sinon, retourne `S_FALSE` ou un code d’erreur.
+## <a name="return-value"></a>Valeur renvoyée
+ En cas de réussite, retourne `S_OK` ; sinon, retourne `S_FALSE` ou code d’erreur.
 
 > [!NOTE]
-> Une valeur de retour de `S_FALSE` signifie que la propriété n’est pas disponible pour le symbole.
+> Une valeur de retour `S_FALSE` signifie que la propriété n’est pas disponible pour le symbole.
 
-## <a name="requirements"></a>spécifications
+## <a name="requirements"></a>Configuration requise
 
-|Exigence|Description|
+|Condition requise|Description|
 |-----------------|-----------------|
 |En-tête :|dia2.h|
-|Version :|DIA SDK v 7.0|
+|Version :|DIA SDK v 7.0|
 
 ## <a name="see-also"></a>Voir aussi
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

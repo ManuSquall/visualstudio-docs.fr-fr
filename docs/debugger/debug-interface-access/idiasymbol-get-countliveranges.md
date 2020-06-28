@@ -1,7 +1,7 @@
 ---
 title: IDiaSymbol::get_countLiveRanges | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 990673afdb01b1471ad75d65036610c486e735c4
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 89a6198a73adc5a9f4afec1f3b40302263660a29
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72740747"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85463973"
 ---
 # <a name="idiasymbolget_countliveranges"></a>IDiaSymbol::get_countLiveRanges
 Récupère le nombre de plages d’adresses valides associées au symbole local.
@@ -35,15 +35,15 @@ HRESULT get_countLiveRanges ( 
 
 à Retourne le nombre de plages d’adresses.
 
-## <a name="return-value"></a>Valeur de retour
- En cas de réussite, retourne `S_OK` ; Sinon, retourne un code d’erreur.
+## <a name="return-value"></a>Valeur renvoyée
+ En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
-## <a name="requirements"></a>spécifications
+## <a name="requirements"></a>Configuration requise
  En-tête : Dia2. h
 
  Bibliothèque : diaguids. lib
 
- DLL : msdia100. dll
+ DLL : msdia100.dll
 
 ## <a name="see-also"></a>Voir aussi
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

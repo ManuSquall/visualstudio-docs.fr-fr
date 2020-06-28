@@ -1,7 +1,7 @@
 ---
 title: IDiaLoadCallback::NotifyOpenDBG | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 70607af90469594491223afa5f316dc63bf935b3
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 0d4572df216e04e645cae92bf479d17166edc256
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72743082"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85466748"
 ---
 # <a name="idialoadcallbacknotifyopendbg"></a>IDiaLoadCallback::NotifyOpenDBG
 Appelée lorsqu’un fichier candidat. dbg a été ouvert.
@@ -38,10 +38,10 @@ dans Chemin d’accès complet du fichier. dbg.
 
  `resultCode`
 
-dans Code qui indique la réussite (`S_OK`) ou l’échec de la charge appliquée à ce fichier.
+dans Code qui indique la réussite ( `S_OK` ) ou l’échec de la charge appliquée à ce fichier.
 
-## <a name="return-value"></a>Valeur de retour
- En cas de réussite, retourne `S_OK`; Sinon, retourne un code d’erreur. Le code de retour est généralement ignoré.
+## <a name="return-value"></a>Valeur renvoyée
+ En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur. Le code de retour est généralement ignoré.
 
 ## <a name="see-also"></a>Voir aussi
 - [IDiaLoadCallback2](../../debugger/debug-interface-access/idialoadcallback2.md)

@@ -1,7 +1,7 @@
 ---
 title: IDiaPropertyStorage::Enum | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 00bd1ea5e20d30fa1d2c32101b56f55d169f1ce2
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 89c5b6418e832dd145837e579cfded3f47022e00
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72742942"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85466601"
 ---
 # <a name="idiapropertystorageenum"></a>IDiaPropertyStorage::Enum
 Obtient un énumérateur pour les propriétés dans cet ensemble.
@@ -33,10 +33,10 @@ HRESULT Enum ( 
 #### <a name="parameters"></a>Paramètres
  `ppenum`
 
-à Retourne un objet `IEnumSTATPROPSTG` (dans l’espace de noms Microsoft. VisualStudio. OLE. Interop) représentant une énumération de propriétés.
+à Retourne un `IEnumSTATPROPSTG` objet (dans l’espace de noms Microsoft. VisualStudio. OLE. Interop) représentant une énumération de propriétés.
 
-## <a name="return-value"></a>Valeur de retour
- En cas de réussite, retourne `S_OK` ; Sinon, retourne un code d’erreur.
+## <a name="return-value"></a>Valeur renvoyée
+ En cas de réussite, retourne `S_OK` ; sinon, retourne un code d’erreur.
 
 ## <a name="see-also"></a>Voir aussi
 - [IDiaPropertyStorage](../../debugger/debug-interface-access/idiapropertystorage.md)

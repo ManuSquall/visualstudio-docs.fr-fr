@@ -1,7 +1,7 @@
 ---
 title: IDiaSymbol::get_baseType | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0a3d1bb8b2f3095fd35488c47f823e7b3603995b
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: aea1205abf5c7a4bf7e4fd6b035651cc7ad52be6
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72740918"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85464204"
 ---
 # <a name="idiasymbolget_basetype"></a>IDiaSymbol::get_baseType
 Récupère le type de base pour ce symbole<em>.</em>
@@ -35,13 +35,13 @@ HRESULT get_baseType (
 
 à Retourne une valeur de l’énumération d' [énumération BasicType](../../debugger/debug-interface-access/basictype.md) qui spécifie le type de base du symbole.
 
-## <a name="return-value"></a>Valeur de retour
-En cas de réussite, retourne `S_OK` ; Sinon, retourne `S_FALSE` ou un code d’erreur.
+## <a name="return-value"></a>Valeur renvoyée
+En cas de réussite, retourne `S_OK` ; sinon, retourne `S_FALSE` ou un code d’erreur.
 
 > [!NOTE]
-> Une valeur de retour de `S_FALSE` signifie que la propriété n’est pas disponible pour le symbole.
+> Une valeur de retour `S_FALSE` signifie que la propriété n’est pas disponible pour le symbole.
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
 Le type de base pour un symbole peut être déterminé en obtenant tout d’abord le type du symbole, puis en interrogeant ce type retourné pour le type de base. Notez que certains symboles peuvent ne pas avoir de type de base (par exemple, un nom de structure).
 
 ## <a name="example"></a>Exemple
@@ -59,12 +59,12 @@ if (pType->get_type( &pBaseType ) == S_OK)
 }
 ```
 
-## <a name="requirements"></a>spécifications
+## <a name="requirements"></a>Configuration requise
 
-|Exigence|Description|
+|Condition requise|Description|
 |-----------------|-----------------|
 |En-tête :|dia2.h|
-|Version :|DIA SDK v 7.0|
+|Version :|DIA SDK v 7.0|
 
 ## <a name="see-also"></a>Voir aussi
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

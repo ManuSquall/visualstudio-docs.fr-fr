@@ -1,7 +1,7 @@
 ---
 title: IDiaStackWalkHelper::searchForReturnAddress | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 548475f45c9f7b0ec90e305e146b9c5f7b4fb20d
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 6b5be71af46845f413264c24f29272cf167f20e9
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72741343"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85464687"
 ---
 # <a name="idiastackwalkhelpersearchforreturnaddress"></a>IDiaStackWalkHelper::searchForReturnAddress
 Recherche l’adresse de retour de la fonction la plus proche dans le frame de pile spécifié.
@@ -40,8 +40,8 @@ dans Objet [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.m
 
 à Retourne l’adresse de retour de la fonction la plus proche.
 
-## <a name="return-value"></a>Valeur de retour
- En cas de réussite, retourne `S_OK` ; Sinon, retourne un code d’erreur.
+## <a name="return-value"></a>Valeur renvoyée
+ En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
 ## <a name="see-also"></a>Voir aussi
 - [IDiaStackWalkHelper](../../debugger/debug-interface-access/idiastackwalkhelper.md)

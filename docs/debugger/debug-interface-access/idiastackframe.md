@@ -1,7 +1,7 @@
 ---
 title: IDiaStackFrame | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a54bd52f3783bb0bedc279cffafab2f21e0b0f39
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: e3cadcfd8fed1818e18d276503c0843e0567addf
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72741559"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85464911"
 ---
 # <a name="idiastackframe"></a>IDiaStackFrame
 Expose les propriétés d’un frame de pile.
@@ -33,9 +33,9 @@ Voici les méthodes prises en charge par cette interface :
 
 |Méthode|Description|
 |------------|-----------------|
-|[IDiaStackFrame::get_allocatesBasePointer](../../debugger/debug-interface-access/idiastackframe-get-allocatesbasepointer.md)|Récupère un indicateur qui spécifie que le pointeur de base est alloué pour le code de cette plage d’adresses. Cette méthode est dépréciée.|
+|[IDiaStackFrame::get_allocatesBasePointer](../../debugger/debug-interface-access/idiastackframe-get-allocatesbasepointer.md)|Récupère un indicateur qui spécifie que le pointeur de base est alloué pour le code de cette plage d’adresses. Cette méthode est déconseillée.|
 |[IDiaStackFrame::get_base](../../debugger/debug-interface-access/idiastackframe-get-base.md)|Récupère la base d’adresse du frame.|
-|[IDiaStackFrame::get_cplusplusExceptionHandling](../../debugger/debug-interface-access/idiastackframe-get-cplusplusexceptionhandling.md)|Récupère un indicateur qui spécifie C++ que la gestion des exceptions est en vigueur.|
+|[IDiaStackFrame::get_cplusplusExceptionHandling](../../debugger/debug-interface-access/idiastackframe-get-cplusplusexceptionhandling.md)|Récupère un indicateur qui spécifie que la gestion des exceptions C++ est en vigueur.|
 |[IDiaStackFrame::get_functionStart](../../debugger/debug-interface-access/idiastackframe-get-functionstart.md)|Récupère un indicateur qui spécifie que le bloc contient le point d’entrée d’une fonction.|
 |[IDiaStackFrame::get_lengthLocals](../../debugger/debug-interface-access/idiastackframe-get-lengthlocals.md)|Récupère le nombre d’octets de variables locales faisant l’objet d’un push sur la pile.|
 |[IDiaStackFrame::get_lengthParams](../../debugger/debug-interface-access/idiastackframe-get-lengthparams.md)|Récupère le nombre d’octets de paramètres faisant l’objet d’un push sur la pile.|
@@ -50,11 +50,11 @@ Voici les méthodes prises en charge par cette interface :
 |[IDiaStackFrame::get_systemExceptionHandling](../../debugger/debug-interface-access/idiastackframe-get-systemexceptionhandling.md)|Récupère un indicateur qui spécifie que la gestion des exceptions système est en vigueur.|
 |[IDiaStackFrame::get_type](../../debugger/debug-interface-access/idiastackframe-get-type.md)|Récupère le type de frame.|
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
 Un frame de pile est une abstraction d’un appel de fonction pendant son exécution.
 
 ## <a name="notes-for-callers"></a>Notes pour les appelants
-Obtenez cette interface en appelant la méthode [IDiaEnumStackFrames :: Next](../../debugger/debug-interface-access/idiaenumstackframes-next.md) . Pour obtenir un exemple d’obtention de l’interface `IDiaStackFrame`, consultez l’interface [IDiaEnumStackFrames](../../debugger/debug-interface-access/idiaenumstackframes.md) .
+Obtenez cette interface en appelant la méthode [IDiaEnumStackFrames :: Next](../../debugger/debug-interface-access/idiaenumstackframes-next.md) . Pour obtenir un exemple d’obtention de l’interface, consultez l’interface [IDiaEnumStackFrames](../../debugger/debug-interface-access/idiaenumstackframes.md) `IDiaStackFrame` .
 
 ## <a name="example"></a>Exemple
 Cet exemple affiche différents attributs d’un frame de pile.
@@ -100,12 +100,12 @@ void PrintStackFrame(IDiaStackFrame* pFrame)
 }
 ```
 
-## <a name="requirements"></a>spécifications
+## <a name="requirements"></a>Configuration requise
 En-tête : Dia2. h
 
 Bibliothèque : diaguids. lib
 
-DLL : Msdia80. dll
+DLL : msdia80.dll
 
 ## <a name="see-also"></a>Voir aussi
 - [Interfaces (SDK Debug Interface Access)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)

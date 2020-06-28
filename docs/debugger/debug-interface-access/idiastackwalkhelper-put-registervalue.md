@@ -1,7 +1,7 @@
 ---
 title: IDiaStackWalkHelper::put_registerValue | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 619ed78584a9fe897b19d6ac2ffd4c28838c61ab
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: d6a2fd6c7fbca54593a547a1f014fbe7726c814c
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72741370"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85464701"
 ---
 # <a name="idiastackwalkhelperput_registervalue"></a>IDiaStackWalkHelper::put_registerValue
 Définit la valeur d’un registre.
@@ -34,16 +34,16 @@ HRESULT put_registerValue ( 
 #### <a name="parameters"></a>Paramètres
  `index`
 
-dans Valeur de l’énumération d' [énumération CV_HREG_e](../../debugger/debug-interface-access/cv-hreg-e.md) qui spécifie le registre dans lequel écrire.
+dans Valeur de l’énumération d' [énumération CV_HREG_e](../../debugger/debug-interface-access/cv-hreg-e.md) spécifiant le registre dans lequel écrire.
 
  `NewVal`
 
 dans Nouvelle valeur de registre.
 
-## <a name="return-value"></a>Valeur de retour
- En cas de réussite, retourne `S_OK` ; Sinon, retourne un code d’erreur.
+## <a name="return-value"></a>Valeur renvoyée
+ En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
  En dépit de la taille de la valeur, une implémentation doit stocker uniquement ce que le registre contient normalement. Par exemple, un registre 8 bits contiendra uniquement les 8 bits les plus bas de la valeur donnée.
 
 ## <a name="see-also"></a>Voir aussi

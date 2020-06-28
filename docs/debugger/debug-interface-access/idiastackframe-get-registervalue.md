@@ -1,7 +1,7 @@
 ---
 title: IDiaStackFrame::get_registerValue | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d270b9b177367c9a15c2b64f6f8bc5607c5a459d
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 42bd724e4f25b5475f89af32f5793ede8d66594a
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72741625"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85464967"
 ---
 # <a name="idiastackframeget_registervalue"></a>IDiaStackFrame::get_registerValue
 Récupère la valeur d’un registre spécifié, telle qu’elle est stockée dans le frame de pile.
@@ -34,14 +34,14 @@ HRESULT get_registerValue(
 #### <a name="parameters"></a>Paramètres
  `registerIndex`
 
-dans L’une des valeurs d’énumération de l' [énumération CV_HREG_e](../../debugger/debug-interface-access/cv-hreg-e.md) .
+dans L’une des CV_HREG_e valeurs d’énumération d' [énumération](../../debugger/debug-interface-access/cv-hreg-e.md) .
 
  `pRetVal`
 
 à Valeur stockée dans le registre.
 
-## <a name="return-value"></a>Valeur de retour
- En cas de réussite, retourne `S_OK` ; Sinon, retourne le code d’erreur.
+## <a name="return-value"></a>Valeur renvoyée
+ En cas de réussite, retourne `S_OK` ; sinon, retourne le code d’erreur.
 
 ## <a name="see-also"></a>Voir aussi
 - [IDiaStackFrame](../../debugger/debug-interface-access/idiastackframe.md)

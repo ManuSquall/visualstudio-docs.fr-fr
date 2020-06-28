@@ -1,7 +1,7 @@
 ---
 title: IDiaSymbol::get_hfaDouble | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 30a393f2725b4924a02bbaed12aef8b60273ffd0
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: f294f2b64676f746cd9d155fe8c3580edc5f9821
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72740422"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85463623"
 ---
 # <a name="idiasymbolget_hfadouble"></a>IDiaSymbol::get_hfaDouble
 Récupère un indicateur qui spécifie si un type défini par l’utilisateur (UDT) contient des données d’agrégat à virgule flottante (HFA) homogènes de type double.
@@ -33,22 +33,22 @@ HRESULT get_hfaDouble( 
 #### <a name="parameters"></a>Paramètres
  `pRetVal`
 
-à Retourne `TRUE` si l’UDT contient des données HFA de type double ; Sinon, retourne `FALSE`.
+à Retourne `TRUE` si l’UDT contient des données HFA de type double ; sinon, retourne `FALSE` .
 
-## <a name="return-value"></a>Valeur de retour
- En cas de réussite, retourne `S_OK` ; Sinon, retourne `S_FALSE` ou un code d’erreur.
+## <a name="return-value"></a>Valeur renvoyée
+ En cas de réussite, retourne `S_OK` ; sinon, retourne `S_FALSE` ou un code d’erreur.
 
 > [!NOTE]
-> Une valeur de retour de `S_FALSE` signifie que la propriété n’est pas disponible pour le symbole.
+> Une valeur de retour `S_FALSE` signifie que la propriété n’est pas disponible pour le symbole.
 
 ## <a name="remarks"></a>Notes
 
-## <a name="requirements"></a>spécifications
+## <a name="requirements"></a>Spécifications
  En-tête : Dia2. h
 
  Bibliothèque : diaguids. lib
 
- DLL : msdia100. dll
+ DLL : msdia100.dll
 
 ## <a name="see-also"></a>Voir aussi
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

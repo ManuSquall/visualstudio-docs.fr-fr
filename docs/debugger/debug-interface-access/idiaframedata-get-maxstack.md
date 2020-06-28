@@ -1,7 +1,7 @@
 ---
 title: IDiaFrameData::get_maxStack | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fc5eaa20c5167897ccb19d5e142656ed314a91e6
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: c266c5e823bd77315d184133947df225935fbcb3
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72743525"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85467294"
 ---
 # <a name="idiaframedataget_maxstack"></a>IDiaFrameData::get_maxStack
 Récupère le nombre maximal d’octets ayant fait l’objet d’un push sur la pile dans le frame.
@@ -35,10 +35,10 @@ HRESULT get_maxStack ( 
 
 à Retourne le nombre maximal d’octets ayant fait l’objet d’un push sur la pile.
 
-## <a name="return-value"></a>Valeur de retour
+## <a name="return-value"></a>Valeur renvoyée
  En cas de réussite, retourne `S_OK`. Retourne `S_FALSE` si cette propriété n’est pas prise en charge. Sinon, retourne un code d'erreur.
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
  La valeur retournée par cette méthode est généralement utilisée dans l’interprétation d’une chaîne de programme (consultez la méthode [IDiaFrameData :: get_program](../../debugger/debug-interface-access/idiaframedata-get-program.md) pour la définition d’une chaîne de programme).
 
 ## <a name="see-also"></a>Voir aussi

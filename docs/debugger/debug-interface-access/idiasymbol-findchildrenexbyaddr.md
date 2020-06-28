@@ -1,7 +1,7 @@
 ---
 title: IDiaSymbol::findChildrenExByAddr | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4dc49d9501e72fb81849943144973574a0d55fef
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 9c0fcba05cb21aa3d19b79ac26ca5c70ace12e6d
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72741285"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85464575"
 ---
 # <a name="idiasymbolfindchildrenexbyaddr"></a>IDiaSymbol::findChildrenExByAddr
 Récupère les enfants du symbole qui sont valides à une adresse spécifiée.
@@ -37,11 +37,11 @@ HRESULT findChildrenExByAddr ( 
 #### <a name="parameters"></a>Paramètres
  `symtag`
 
-dans Spécifie les balises de symboles des enfants à récupérer, comme défini dans l' [énumération SymTagEnum](../../debugger/debug-interface-access/symtagenum.md). Affectez la valeur `SymTagNull` pour tous les enfants à récupérer.
+dans Spécifie les balises de symboles des enfants à récupérer, comme défini dans l' [énumération SymTagEnum](../../debugger/debug-interface-access/symtagenum.md). Affectez à la valeur `SymTagNull` pour tous les enfants à récupérer.
 
  `name`
 
-dans Spécifie le nom des enfants à récupérer. Affectez la valeur `NULL` pour tous les enfants à récupérer.
+dans Spécifie le nom des enfants à récupérer. Affectez à la valeur `NULL` pour tous les enfants à récupérer.
 
  `compareFlags`
 
@@ -55,18 +55,18 @@ dans Adresse du symbole.
 
 à Retourne un objet [IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md) qui contient une liste des symboles enfants récupérés.
 
-## <a name="return-value"></a>Valeur de retour
- Retourne `S_OK` si au moins un enfant du symbole a été trouvé, ou retourne `S_FALSE` si aucun enfant n’a été trouvé ; Sinon, retourne un code d’erreur.
+## <a name="return-value"></a>Valeur renvoyée
+ Retourne `S_OK` si au moins un enfant du symbole a été trouvé, ou retourne `S_FALSE` si aucun enfant n’a été trouvé ; sinon, retourne un code d’erreur.
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
  Les symboles locaux retournés incluent des informations de plage dynamique.
 
-## <a name="requirements"></a>spécifications
+## <a name="requirements"></a>Configuration requise
  En-tête : Dia2. h
 
  Bibliothèque : diaguids. lib
 
- DLL : msdia100. dll
+ DLL : msdia100.dll
 
 ## <a name="see-also"></a>Voir aussi
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

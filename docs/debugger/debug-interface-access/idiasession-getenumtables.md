@@ -1,7 +1,7 @@
 ---
 title: IDiaSession::getEnumTables | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 41679304986f5de948119a2958524b8f269ceb42
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 4b9b229de3818b00379d95a5c19e35c7e83c845e
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72741921"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85465425"
 ---
 # <a name="idiasessiongetenumtables"></a>IDiaSession::getEnumTables
 Récupère un énumérateur pour toutes les tables contenues dans le magasin de symboles.
@@ -35,11 +35,11 @@ HRESULT getEnumTables (
 
 à Retourne un objet [IDiaEnumTables](../../debugger/debug-interface-access/idiaenumtables.md) . Utilisez cette interface pour énumérer les tables dans le magasin de symboles.
 
-## <a name="return-value"></a>Valeur de retour
-En cas de réussite, retourne `S_OK` ; Sinon, retourne un code d’erreur.
+## <a name="return-value"></a>Valeur renvoyée
+En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
 ## <a name="example"></a>Exemple
-Cet exemple présente une fonction générale qui utilise la méthode `getEnumTables` pour obtenir un objet énumérateur spécifique. Si l’énumérateur est trouvé, la fonction retourne un pointeur qui peut être casté en l’interface souhaitée ; Sinon, la fonction retourne `NULL`.
+Cet exemple présente une fonction générale qui utilise la `getEnumTables` méthode pour obtenir un objet énumérateur spécifique. Si l’énumérateur est trouvé, la fonction retourne un pointeur qui peut être casté en l’interface souhaitée ; Sinon, la fonction retourne `NULL` .
 
 ```C++
 IUnknown *GetTable(IDiaSession *pSession, REFIID iid)

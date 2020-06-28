@@ -1,7 +1,7 @@
 ---
 title: IDiaLoadCallback::NotifyDebugDir | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6618440cab9b9042ec371383f6c809ca1d0d11f7
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 032e628512b7c601a6409f6f70ba0b0c3cabb37c
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72743092"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85466755"
 ---
 # <a name="idialoadcallbacknotifydebugdir"></a>IDiaLoadCallback::NotifyDebugDir
 Appelé lorsqu’un répertoire de débogage a été trouvé dans le fichier. exe.
@@ -35,7 +35,7 @@ HRESULT NotifyDebugDir ( 
 #### <a name="parameters"></a>Paramètres
  `fExecutable`
 
-[in] `TRUE` si le répertoire de débogage est lu à partir d’un exécutable (au lieu d’un fichier. dbg).
+[in] `TRUE` Si le répertoire de débogage est lu à partir d’un exécutable (au lieu d’un fichier. dbg).
 
  `cbData`
 
@@ -45,15 +45,15 @@ dans Nombre d’octets de données dans le répertoire de débogage.
 
 dans Tableau qui est renseigné avec le répertoire de débogage.
 
-## <a name="return-value"></a>Valeur de retour
- En cas de réussite, retourne `S_OK` ; Sinon, retourne un code d’erreur. Le code de retour est généralement ignoré.
+## <a name="return-value"></a>Valeur renvoyée
+ En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur. Le code de retour est généralement ignoré.
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
  La méthode [IDiaDataSource :: loadDataForExe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md) appelle ce rappel lorsqu’il trouve un répertoire de débogage pendant le traitement du fichier exécutable.
 
  Cette méthode supprime la nécessité pour le client de rétroconcevoir le fichier exécutable et/ou de débogage pour prendre en charge les informations de débogage autres que celles figurant dans le fichier. pdb. Avec ces données, le client peut reconnaître le type d’informations de débogage disponibles et s’il réside dans le fichier exécutable ou le fichier. dbg.
 
- La plupart des clients n’ont pas besoin de ce rappel, car la méthode `IDiaDataSource::loadDataForExe` ouvre en toute transparence les fichiers. pdb et. dbg si nécessaire pour servir les symboles.
+ La plupart des clients n’ont pas besoin de ce rappel, car la `IDiaDataSource::loadDataForExe` méthode ouvre en toute transparence les fichiers. pdb et. dbg si nécessaire pour servir les symboles.
 
 ## <a name="see-also"></a>Voir aussi
 - [IDiaLoadCallback2](../../debugger/debug-interface-access/idialoadcallback2.md)

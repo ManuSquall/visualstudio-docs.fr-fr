@@ -1,7 +1,7 @@
 ---
 title: IDiaSectionContrib::get_initializedData | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6386fc6bb460f7e0947680a9776af7646f1bec14
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: ae43ee519f0c0d03be9697b4361f6ff939d2b411
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72742632"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85466258"
 ---
 # <a name="idiasectioncontribget_initializeddata"></a>IDiaSectionContrib::get_initializedData
 Récupère un indicateur qui signale si la section contient des données initialisées.
@@ -33,9 +33,9 @@ HRESULT get_initializedData ( 
 #### <a name="parameters"></a>Paramètres
  `pRetVal`
 
-à Retourne `TRUE` si la section contient des données initialisées ; Sinon, retourne `FALSE`.
+à Retourne `TRUE` si la section contient des données initialisées ; sinon, retourne `FALSE` .
 
-## <a name="return-value"></a>Valeur de retour
+## <a name="return-value"></a>Valeur renvoyée
  En cas de réussite, retourne `S_OK`. Retourne `S_FALSE` si cette propriété n’est pas prise en charge. Sinon, retourne un code d'erreur.
 
 ## <a name="see-also"></a>Voir aussi

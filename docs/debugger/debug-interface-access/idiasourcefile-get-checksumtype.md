@@ -1,7 +1,7 @@
 ---
 title: IDiaSourceFile::get_checksumType | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c85c6ce8f03534c3ed810e530dbd12d8c6d115be
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 88a192c9328d37447f12226a3d564ecae58fe41f
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72741829"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85465320"
 ---
 # <a name="idiasourcefileget_checksumtype"></a>IDiaSourceFile::get_checksumType
 Récupère le type de somme de contrôle.
@@ -35,19 +35,19 @@ HRESULT get_checksumType ( 
 
 à Retourne le type de somme de contrôle.
 
-## <a name="return-value"></a>Valeur de retour
- En cas de réussite, retourne `S_OK`; Sinon, retourne un code d’erreur.
+## <a name="return-value"></a>Valeur renvoyée
+ En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
  Le type de somme de contrôle est une valeur qui peut être mappée à un algorithme de somme de contrôle. Par exemple, le format de fichier PDB standard peut généralement avoir l’une des valeurs suivantes :
 
 |Type de checksum|Étiquette CryptoAPI|Description|
 |-------------------|---------------------|-----------------|
-|0|\<aucune>|Aucun checksum présent.|
+|0|\<none>|Aucun checksum présent.|
 |1|`CALG_MD5`|somme de contrôle générée avec l’algorithme de hachage MD5.|
 |2|`CALG_SHA1`|somme de contrôle générée avec l’algorithme de hachage SHA1.|
 
- Les étiquettes `CryptoAPI` proviennent de l’énumération `ALG_ID`. Pour plus d’informations sur les algorithmes de hachage, consultez la section `CryptoAPI` de la [!INCLUDE[winsdkshort](../../debugger/debug-interface-access/includes/winsdkshort_md.md)]Microsoft.
+ Les `CryptoAPI` étiquettes proviennent de l' `ALG_ID` énumération. Pour plus d’informations sur les algorithmes de hachage, consultez la `CryptoAPI` section de Microsoft [!INCLUDE[winsdkshort](../../debugger/debug-interface-access/includes/winsdkshort_md.md)] .
 
  Pour obtenir les octets de somme de contrôle réels pour le fichier source, appelez la méthode [IDiaSourceFile :: get_checksum](../../debugger/debug-interface-access/idiasourcefile-get-checksum.md) .
 
