@@ -7,13 +7,13 @@ ms.assetid: 1530ca0a-f23f-44f1-9bde-792ea1265085
 author: CaityBuschlen
 ms.author: cabuschl
 ms.date: 3/3/2020
-ms.openlocfilehash: 2e9d864003447248b6669286a34be34bd37383c6
-ms.sourcegitcommit: cc58ca7ceae783b972ca25af69f17c9f92a29fc2
+ms.openlocfilehash: 0b36155b46d4e2d161fdf7b70e861790a66c7c7e
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/15/2020
-ms.locfileid: "81386208"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85503475"
 ---
-## <a name="how-do-my-end-users-activate-their-subscription"></a>Comment les utilisateurs finaux activent leurs abonnement ?
+## <a name="how-do-my-end-users-activate-their-visual-studio-subscription"></a>Comment les utilisateurs finaux activent leurs abonnement Visual Studio ?
 
 L’abonnement est actif et peut être utilisé dès qu’il a été affecté à partir du [portail d’administration de Visual Studio](https://manage.visualstudio.com/subscribers). Votre abonné peut se connecter directement au [portail des abonnés Visual Studio](https://my.visualstudio.com/) ou à l’IDE VS ; il recevra un e-mail de bienvenue lui indiquant que l’abonnement a été attribué.
