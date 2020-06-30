@@ -15,17 +15,17 @@ caps.latest.revision: 18
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: b471387db3ce52944ffad3841dc7e946c4d44873
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 61b0157200ddff4cb8335118b30832a0c8950f65
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72661875"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85542283"
 ---
 # <a name="ca1032-implement-standard-exception-constructors"></a>CA1032 : Implémenter des constructeurs d'exception standard
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Élément|Valeur|
 |-|-|
 |TypeName|ImplementStandardExceptionConstructors|
 |CheckId|CA1032|
@@ -46,7 +46,7 @@ ms.locfileid: "72661875"
 
 - NewException protected ou Private (SerializationInfo, StreamingContext)
 
-  Ne pas fournir le jeu complet de constructeurs peut rendre difficile une gestion des exceptions correcte. Par exemple, le constructeur qui a la signature `NewException(string, Exception)` est utilisé pour créer des exceptions provoquées par d’autres exceptions. Sans ce constructeur, vous ne pouvez pas créer et lever une instance de votre exception personnalisée qui contient une exception interne (imbriquée), ce que le code managé doit faire dans une telle situation. Les trois premiers constructeurs d’exception sont publics par Convention. Le quatrième constructeur est protégé dans les classes non scellées et privé dans les classes sealed. Pour plus d’informations, consultez [CA2229 : implémenter des constructeurs de sérialisation](../code-quality/ca2229-implement-serialization-constructors.md)
+  Ne pas fournir le jeu complet de constructeurs peut rendre difficile une gestion des exceptions correcte. Par exemple, le constructeur qui possède la signature `NewException(string, Exception)` est utilisé pour créer des exceptions provoquées par d’autres exceptions. Sans ce constructeur, vous ne pouvez pas créer et lever une instance de votre exception personnalisée qui contient une exception interne (imbriquée), ce que le code managé doit faire dans une telle situation. Les trois premiers constructeurs d’exception sont publics par Convention. Le quatrième constructeur est protégé dans les classes non scellées et privé dans les classes sealed. Pour plus d’informations, consultez [CA2229 : implémenter des constructeurs de sérialisation](../code-quality/ca2229-implement-serialization-constructors.md)
 
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations
  Pour corriger une violation de cette règle, ajoutez les constructeurs manquants à l’exception et assurez-vous qu’ils ont l’accessibilité correcte.

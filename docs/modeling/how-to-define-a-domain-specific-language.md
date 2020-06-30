@@ -1,7 +1,7 @@
 ---
 title: 'Comment : définir un langage spécifique à un domaine'
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - vs.dsltools.dsldesigner.domainrelationship
 - vs.dsltools.dsldesigner.domainclass
@@ -16,19 +16,19 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 00ade696290e4b8d3c32fa335fc4bf07509aef1c
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: ca9cc6b853ea95cedcb0ce109b9618fc0eb455ba
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75594680"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85542751"
 ---
 # <a name="how-to-define-a-domain-specific-language"></a>Comment : définir un langage spécifique à un domaine
 Pour définir un langage spécifique à un domaine (DSL), vous devez créer une solution Visual Studio à partir d’un modèle. Le composant principal de la solution est le diagramme de définition DSL, qui est stocké dans DslDefinition.dsl. La définition DSL définit les classes et les formes de la solution DSL. Après avoir modifié et ajouté à ces éléments, vous pouvez ajouter du code programme pour personnaliser la solution DSL plus en détail.
 
 Si vous débutez avec DSL, nous vous recommandons d’utiliser le **laboratoire d’outils DSL**, que vous trouverez dans ce site : [Kit de développement logiciel de visualisation et de modélisation](https://code.msdn.microsoft.com/Visualization-and-Modeling-313535db)
 
-## <a name="templates"></a>Sélection d’une solution de modèle
+## <a name="selecting-a-template-solution"></a><a name="templates"></a>Sélection d’une solution de modèle
 
 Pour définir un DSL, vous devez avoir installé les composants suivants :
 
@@ -66,9 +66,9 @@ Pour créer un langage spécifique à un domaine, vous devez créer une nouvelle
 
    - Sélectionnez le **langage minimal** dans d’autres cas, ou si vous n’êtes pas certain.
 
-   - Sélectionnez **Concepteur WinForm minimal** ou **Concepteur WPF minimal** pour créer un DSL affiché sur un Windows Forms ou une surface WPF. Vous devrez écrire du code pour définir l'éditeur. Pour plus d’informations, consultez les rubriques suivantes :
+   - Sélectionnez **Concepteur WinForm minimal** ou **Concepteur WPF minimal** pour créer un DSL affiché sur un Windows Forms ou une surface WPF. Vous devrez écrire du code pour définir l'éditeur. Pour plus d'informations, voir les rubriques suivantes :
 
-        [Création d’un langage spécifique à un domaine basé sur Windows Forms](../modeling/creating-a-windows-forms-based-domain-specific-language.md)
+        [Création d'un langage spécifique à un domaine basé sur Windows Forms](../modeling/creating-a-windows-forms-based-domain-specific-language.md)
 
         [Création d’un langage spécifique à un domaine basé sur WPF](../modeling/creating-a-wpf-based-domain-specific-language.md)
 
@@ -80,7 +80,7 @@ Pour créer un langage spécifique à un domaine, vous devez créer une nouvelle
 
 4. Vous pouvez ajuster les paramètres sur les autres pages ou conserver les valeurs par défaut.
 
-5. Cliquez sur **Finish**.
+5. Cliquez sur **Terminer**.
 
     L'Assistant crée une solution qui contient deux ou trois projets et il génère du code à partir de la définition DSL.
 
@@ -90,7 +90,7 @@ Pour créer un langage spécifique à un domaine, vous devez créer une nouvelle
 
    Cette solution définit un langage spécifique à un domaine. Pour plus d’informations, consultez [vue d’ensemble de l’interface utilisateur de outils Domain-specific language](../modeling/overview-of-the-domain-specific-language-tools-user-interface.md).
 
-### <a name="test-the-solution"></a>test de la solution
+### <a name="test-the-solution"></a>Tester la solution
  Le modèle de solution fournit une solution DSL opérationnelle, que vous pouvez modifier ou utiliser telle quelle.
 
  Pour tester la solution, appuyez sur F5 ou Ctrl+F5. Une nouvelle instance de Visual Studio s’ouvre en mode expérimental.
@@ -115,13 +115,13 @@ Pour créer un langage spécifique à un domaine, vous devez créer une nouvelle
 
 - La classe racine apparaît dans l’angle supérieur gauche du diagramme de définition DSL, sous **classes et relations**. Affectez-lui un nom différent de la solution DSL. Par exemple, un DSL nommé **MusicLibrary** peut avoir une classe racine nommée **Music**.
 
-- La classe Diagram apparaît dans la partie inférieure droite du diagramme de définition DSL, dans la colonne **éléments du diagramme** . Vous devrez peut-être faire défiler la page vers la droite pour la voir. Il est généralement nommé**diagramme**YourDsl.
+- La classe Diagram apparaît dans la partie inférieure droite du diagramme de définition DSL, dans la colonne **éléments du diagramme** . Vous devrez peut-être faire défiler la page vers la droite pour la voir. Il est généralement nommé _YourDsl_**diagramme**YourDsl.
 
 - Si vous avez utilisé le modèle de **déroulement des tâches** et que vous souhaitez créer des diagrammes avec des couloirs, conservez et renommez la classe de domaine d’acteur et la forme ActorSwimlane.
 
   Supprimez ou renommez d'autres classes en fonction de vos exigences.
 
-## <a name="patterns"></a>Modèles pour la définition d’un DSL
+## <a name="patterns-for-defining-a-dsl"></a><a name="patterns"></a>Modèles pour la définition d’un DSL
  Nous vous recommandons de développer une solution DSL en ajoutant ou en ajustant une ou deux fonctionnalités à la fois. Ajoutez une fonctionnalité, exécutez la solution DSL et testez-la, puis ajoutez une ou deux fonctionnalités supplémentaires. Une solution DSL ordinaire peut être constituée des éléments suivants :
 
 - Une classe de domaine, la relation d'incorporation qui connecte l'élément au modèle, la forme requise pour afficher les éléments de cette classe sur le diagramme et l'outil d'élément qui permet aux utilisateurs de créer des éléments.
@@ -148,7 +148,7 @@ Pour créer un langage spécifique à un domaine, vous devez créer une nouvelle
 > [!NOTE]
 > Le terme « modèle » fait référence à une instance de votre solution DSL créée par les utilisateurs. Elle est généralement affichée sous forme de diagramme. Cette rubrique traite du diagramme de définition DSL et des diagrammes de modèles qui apparaissent lors de l'utilisation de votre solution DSL.
 
-## <a name="classes"></a>Définition des classes de domaine
+## <a name="defining-domain-classes"></a><a name="classes"></a>Définition des classes de domaine
  Les classes de domaine représentent les concepts de votre solution DSL. Les instances sont des *éléments de modèle*. Par exemple, dans un DSL **MusicLibrary** , vous pouvez avoir des classes de domaine nommées **album** et **chanson**.
 
  Pour créer une classe de domaine, vous pouvez faire glisser à partir de l’outil **classe de domaine nommée** vers le diagramme, puis renommer la classe.
@@ -190,7 +190,7 @@ Pour créer un langage spécifique à un domaine, vous devez créer une nouvelle
 
  Cliquez sur **Propriétés de domaine** dans la classe, appuyez sur la touche entrée, puis tapez le nom d’une propriété. Le type par défaut d'une propriété de domaine est String. Si vous souhaitez modifier le type, sélectionnez la propriété de domaine et définissez le **type** dans la fenêtre **Propriétés** . Si le type que vous souhaitez ne figure pas dans la liste déroulante, consultez [Ajout de types de propriété](#addTypes).
 
- **Définissez une propriété de nom d’élément.** Sélectionnez une propriété de domaine qui peut servir à identifier des éléments dans l'explorateur de langage. Par exemple, dans la classe de domaine Morceau, vous pourriez sélectionner la propriété de domaine Titre. Dans la fenêtre **Propriétés** , définissez le **nom d’élément** sur `true`.
+ **Définissez une propriété de nom d'élément.**  Sélectionnez une propriété de domaine qui peut servir à identifier des éléments dans l'explorateur de langage. Par exemple, dans la classe de domaine Morceau, vous pourriez sélectionner la propriété de domaine Titre. Dans la fenêtre **Propriétés** , affectez à **nom d’élément** la valeur `true` .
 
 ### <a name="create-derived-domain-classes"></a>Créer des classes de domaine dérivées
  Si vous souhaitez qu'une classe de domaine ait des variantes qui héritent de ses propriétés et relations, créez des classes qui en dérivent. Par exemple, Album peut avoir des classes dérivées WMA et MP3.
@@ -214,13 +214,13 @@ Pour créer un langage spécifique à un domaine, vous devez créer une nouvelle
 
 1. **Cliquez sur transformer tous les modèles** dans la barre d’outils de Explorateur de solutions pour générer le code du concepteur DSL. Vous pouvez automatiser cette étape. Pour plus d’informations, consultez [automatisation de la transformation de tous les modèles](/previous-versions/visualstudio/visual-studio-2012/ff521399\(v\=vs.110\)).
 
-2. **Générez et exécutez le DSL.** Appuyez sur F5 ou sur CTRL + F5 pour exécuter une nouvelle instance de Visual Studio en mode expérimental. Dans l’instance expérimentale de Visual Studio, ouvrez ou créez un fichier avec l’extension de nom de fichier de votre DSL.
+2. **Générez et exécutez la solution DSL.** Appuyez sur F5 ou sur CTRL + F5 pour exécuter une nouvelle instance de Visual Studio en mode expérimental. Dans l’instance expérimentale de Visual Studio, ouvrez ou créez un fichier avec l’extension de nom de fichier de votre DSL.
 
-3. **Ouvrez l’Explorateur.** La fenêtre de l’Explorateur de langage, généralement appelée *YourLanguage* Explorer, est située à côté du diagramme. Si cette fenêtre n'est pas visible, elle est peut-être sous un onglet sous l'Explorateur de solutions. Si vous ne le trouvez pas, dans le menu **affichage** , pointez sur **autres fenêtres**, puis cliquez sur *YourLanguage* **Explorer**.
+3. **Ouvrez l'explorateur.** La fenêtre de l’Explorateur de langage, généralement appelée *YourLanguage* Explorer, est située à côté du diagramme. Si cette fenêtre n'est pas visible, elle est peut-être sous un onglet sous l'Explorateur de solutions. Si vous ne le trouvez pas, dans le menu **affichage** , pointez sur **autres fenêtres**, puis cliquez sur *YourLanguage* **Explorer**.
 
      Votre explorateur présente une arborescence du modèle.
 
-4. **Créez de nouveaux éléments.** Cliquez avec le bouton droit sur le nœud racine en haut, puis cliquez sur **Ajouter un nouveau**_YourClass_.
+4. **Créez des éléments.** Cliquez avec le bouton droit sur le nœud racine en haut, puis cliquez sur **Ajouter un nouveau**_YourClass_.
 
      Une nouvelle instance de votre classe apparaît dans votre explorateur de langage.
 
@@ -230,7 +230,7 @@ Pour créer un langage spécifique à un domaine, vous devez créer une nouvelle
 
 7. **Enregistrez le fichier, fermez-le, puis**rouvrez-le. Toutes les instances que vous avez créées doivent être visibles dans l'explorateur, une fois que vous avez développé les nœuds.
 
-## <a name="shapes"></a>Définition de formes sur le diagramme
+## <a name="defining-shapes-on-the-diagram"></a><a name="shapes"></a>Définition de formes sur le diagramme
  Vous pouvez définir des classes d'éléments qui apparaissent sur un diagramme sous forme de rectangles, d'ellipses ou d'icônes.
 
 #### <a name="to-define-a-class-of-elements-that-appear-as-shapes-on-a-diagram"></a>Pour définir une classe d'éléments qui apparaissent en tant que formes sur un diagramme
@@ -263,7 +263,7 @@ Pour créer un langage spécifique à un domaine, vous devez créer une nouvelle
 
    5. Dans la boîte de dialogue **Sélectionner une image** , cliquez sur le menu déroulant sous **nom du fichier**, puis sélectionnez l’image.
 
-4. **Ajoutez des éléments décoratifs de texte à la forme pour afficher les propriétés du domaine.**
+4. **Ajoutez des décorateurs de texte à la forme pour afficher les propriétés de domaine.**
 
     Pour afficher le nom ou le titre de l'élément de modèle, vous aurez probablement besoin d'au moins un décorateur de texte.
 
@@ -273,7 +273,7 @@ Pour créer un langage spécifique à un domaine, vous devez créer une nouvelle
 
     Cliquez sur l’outil **mappage d’élément de diagramme** , sur la classe de domaine, puis sur la classe de forme.
 
-6. **Mappez les propriétés aux éléments décoratifs de texte.**
+6. **Mappez les propriétés aux décorateurs de texte.**
 
    1. Sélectionnez la ligne grise entre la classe de domaine et la forme de classe qui représente le mappage d'élément de diagramme.
 
@@ -287,7 +287,7 @@ Pour créer un langage spécifique à un domaine, vous devez créer une nouvelle
 
       ![Fenêtre de mappages des formes et des détails DSL](../modeling/media/dsldetailswindow.png)
 
-7. **Créez un élément de boîte à outils pour créer des éléments de la classe de domaine.**
+7. **Fabriquez un élément de boîte à outils pour créer des éléments de la classe de domaine.**
 
    1. Dans l' **Explorateur DSL**, développez le nœud **éditeur** et tous ses sous-nœuds.
 
@@ -312,9 +312,9 @@ Pour créer un langage spécifique à un domaine, vous devez créer une nouvelle
 
 1. **Cliquez sur transformer tous les modèles** dans la barre d’outils de Explorateur de solutions pour générer le code du concepteur DSL.
 
-2. **Générez et exécutez le DSL.** Appuyez sur F5 ou sur CTRL + F5 pour exécuter une nouvelle instance de Visual Studio en mode expérimental. Dans l’instance expérimentale de Visual Studio, ouvrez ou créez un fichier avec l’extension de nom de fichier de votre DSL.
+2. **Générez et exécutez la solution DSL.** Appuyez sur F5 ou sur CTRL + F5 pour exécuter une nouvelle instance de Visual Studio en mode expérimental. Dans l’instance expérimentale de Visual Studio, ouvrez ou créez un fichier avec l’extension de nom de fichier de votre DSL.
 
-3. **Vérifiez que les outils d’élément s’affichent dans la boîte à outils.**
+3. **Vérifiez que les outils d'éléments apparaissent dans la boîte à outils.**
 
 4. **Créez des formes** en faisant glisser un outil sur le diagramme de modèle.
 
@@ -326,7 +326,7 @@ Pour créer un langage spécifique à un domaine, vous devez créer une nouvelle
 
    Après avoir testé une forme, vous souhaiterez peut-être ajuster certaines de ses propriétés et ajouter certaines fonctionnalités avancées. Pour plus d’informations, consultez [personnalisation et extension d’un langage spécifique à un domaine](../modeling/customizing-and-extending-a-domain-specific-language.md).
 
-## <a name="references"></a>Définition des relations de référence
+## <a name="defining-reference-relationships"></a><a name="references"></a>Définition des relations de référence
  Vous pouvez définir une relation de référence entre n'importe quelle classe de domaine source et n'importe quelle classe de domaine cible. Les relations de référence sont généralement affichées sur un diagramme sous forme de connecteurs, qui sont des lignes entre des formes.
 
  Par exemple, si Albums et Artistes sont affichés en tant que formes sur votre diagramme, vous pourriez définir une relation nommée ArtistesApparusSurAlbums qui relie des Artistes aux Albums sur lesquels ils ont travaillé. Voir l'exemple sur la figure.
@@ -344,7 +344,7 @@ Pour créer un langage spécifique à un domaine, vous devez créer une nouvelle
 
  **Ajustez les multiplicités de chaque rôle**, si nécessaire. Si vous souhaitez que chaque Personne ait au plus un Responsable, affectez la valeur 0..1 à la multiplicité qui apparaît sous l'étiquette Responsable sur le diagramme.
 
- **Ajoutez des propriétés de domaine à la relation.** Sur la figure, la relation Artist-Album a une propriété de rôle.
+ **Ajoutez des propriétés de domaine à la relation.**  Sur la figure, la relation Artist-Album a une propriété de rôle.
 
  **Définissez la propriété autoriser les doublons de la relation,** si plusieurs liens de la même classe peuvent exister entre la même paire d’éléments de modèle. Par exemple, vous pourriez autoriser un Enseignant à enseigner plusieurs Sujets au même Étudiant.
 
@@ -388,15 +388,15 @@ Pour créer un langage spécifique à un domaine, vous devez créer une nouvelle
 
 1. **Cliquez sur transformer tous les modèles** dans la barre d’outils de Explorateur de solutions pour générer le code du concepteur DSL.
 
-2. **Générez et exécutez le DSL.** Appuyez sur F5 ou sur CTRL + F5 pour exécuter une nouvelle instance de Visual Studio en mode expérimental. Dans l’instance expérimentale de Visual Studio, ouvrez ou créez un fichier avec l’extension de nom de fichier de votre DSL.
+2. **Générez et exécutez la solution DSL.** Appuyez sur F5 ou sur CTRL + F5 pour exécuter une nouvelle instance de Visual Studio en mode expérimental. Dans l’instance expérimentale de Visual Studio, ouvrez ou créez un fichier avec l’extension de nom de fichier de votre DSL.
 
-3. **Vérifiez que l’outil de connexion apparaît dans la boîte à outils.**
+3. **Vérifiez que l'outil de connexion apparaît dans la boîte à outils.**
 
 4. **Créez des formes** en faisant glisser un outil sur le diagramme de modèle.
 
 5. **Créer des connexions** entre les formes. Cliquez sur l'outil de connecteur, cliquez sur une forme, puis sur une autre forme.
 
-6. **Vérifiez que vous ne pouvez pas créer de connexions entre des classes inappropriées.** Par exemple, si votre relation est entre Albums et Artistes, vérifiez que vous ne pouvez pas lier Artistes à Artistes.
+6. **Vérifiez que vous ne pouvez pas créer des connexions entre des classes inappropriées.**  Par exemple, si votre relation est entre Albums et Artistes, vérifiez que vous ne pouvez pas lier Artistes à Artistes.
 
 7. **Vérifiez que les multiplicités sont correctes. Par exemple, vérifiez que vous ne pouvez pas connecter une personne à plusieurs responsables.**
 
@@ -408,7 +408,7 @@ Pour créer un langage spécifique à un domaine, vous devez créer une nouvelle
 
    Après avoir testé un connecteur, vous souhaiterez peut-être ajuster certaines de ses propriétés et ajouter certaines fonctionnalités avancées. Pour plus d’informations, consultez [personnalisation et extension d’un langage spécifique à un domaine](../modeling/customizing-and-extending-a-domain-specific-language.md).
 
-## <a name="compartments"></a>Définition de formes qui contiennent des listes : formes de compartiments
+## <a name="defining-shapes-that-contain-lists-compartment-shapes"></a><a name="compartments"></a>Définition de formes qui contiennent des listes : formes de compartiments
  Une forme de compartiment contient une ou plusieurs listes d'éléments. Par exemple, dans une solution DSL de bibliothèque musicale, vous pourriez utiliser des formes de compartiments pour représenter des albums. Dans chaque album figure une liste de morceaux.
 
  ![Forme de compartiment](../modeling/media/compartmentshape.png)
@@ -466,7 +466,7 @@ Pour créer un langage spécifique à un domaine, vous devez créer une nouvelle
 
 #### <a name="to-define-a-tool-for-creating-the-shape"></a>Pour définir un outil pour la création de la forme
 
-1. **Créez un élément de boîte à outils pour créer des éléments de la classe de domaine.**
+1. **Fabriquez un élément de boîte à outils pour créer des éléments de la classe de domaine.**
 
 2. Dans l' **Explorateur DSL**, développez le nœud **éditeur** et tous ses sous-nœuds.
 
@@ -489,9 +489,9 @@ Pour créer un langage spécifique à un domaine, vous devez créer une nouvelle
 
 1. **Cliquez sur transformer tous les modèles** dans la barre d’outils de Explorateur de solutions pour générer le code du concepteur DSL.
 
-2. **Générez et exécutez le DSL.** Appuyez sur F5 ou sur CTRL + F5 pour exécuter une nouvelle instance de Visual Studio en mode expérimental. Dans l’instance expérimentale de Visual Studio, ouvrez ou créez un fichier avec l’extension de nom de fichier de votre DSL.
+2. **Générez et exécutez la solution DSL.** Appuyez sur F5 ou sur CTRL + F5 pour exécuter une nouvelle instance de Visual Studio en mode expérimental. Dans l’instance expérimentale de Visual Studio, ouvrez ou créez un fichier avec l’extension de nom de fichier de votre DSL.
 
-3. **Vérifiez que l’outil apparaît dans la boîte à outils.**
+3. **Vérifiez que l'outil apparaît dans la boîte à outils.**
 
 4. Faites glisser l'outil sur le diagramme de modèle. Une forme est créée.
 
@@ -536,7 +536,7 @@ Pour créer un langage spécifique à un domaine, vous devez créer une nouvelle
 
 7. Sélectionnez le lien ou l'élément dans la forme de compartiment. Le lien et l'élément doivent tous deux apparaître.
 
-## <a name="ports"></a>Définition des ports sur la limite d’une autre forme
+## <a name="defining-ports-on-the-boundary-of-another-shape"></a><a name="ports"></a>Définition des ports sur la limite d’une autre forme
  Un port est une forme qui se trouve à la limite d'une autre forme.
 
  Les ports peuvent aussi servir à fournir un point de connexion fixe sur une autre forme, sur lequel l'utilisateur peut dessiner des connecteurs. Dans ce cas, vous pouvez rendre la forme de port transparente.
@@ -545,7 +545,7 @@ Pour créer un langage spécifique à un domaine, vous devez créer une nouvelle
 
 - Il existe une classe de domaine qui représente le conteneur des ports, `Component`.
 
-- Il existe une classe de domaine qui représente des ports. Dans l'exemple, il s'agit de `ComponentPort`.
+- Il existe une classe de domaine qui représente des ports. dans l’exemple, il s’agit de `ComponentPort`.
 
 - Il existe une relation d'incorporation de la classe de domaine de conteneur à la classe de domaine de port. Pour plus d’informations, consultez [définition des classes de domaine](#classes).
 
@@ -559,7 +559,7 @@ Pour créer un langage spécifique à un domaine, vous devez créer une nouvelle
 
   Pour plus d’informations, consultez [Propriétés des formes de port](../modeling/properties-of-port-shapes.md).
 
-## <a name="swimlanes"></a>Définition d’une solution DSL avec des couloirs
+## <a name="defining-a-dsl-that-has-swimlanes"></a><a name="swimlanes"></a>Définition d’une solution DSL avec des couloirs
  Les couloirs sont des partitions horizontales ou verticales d'un diagramme. Chaque couloir correspond à un élément de modèle. Votre définition DSL nécessite une classe de domaine pour les éléments de couloirs.
 
  Le meilleur moyen de créer une solution DSL avec des couloirs consiste à créer une solution DSL et à choisir le modèle de solution Flux de tâches. Dans la définition DSL, la classe Acteur est la classe de domaine mappée au couloir. Renommez celle-ci et les autres classes en fonction de votre projet.
@@ -570,7 +570,7 @@ Pour créer un langage spécifique à un domaine, vous devez créer une nouvelle
 
  Pour plus d’informations, consultez [Propriétés des couloirs](../modeling/properties-of-swimlanes.md).
 
-## <a name="addTypes"></a>Ajout de types de propriété
+## <a name="adding-property-types"></a><a name="addTypes"></a>Ajout de types de propriété
 
 ### <a name="domain-enumerations-and-literals"></a>Littéraux et énumérations de domaine
  Une énumération de domaine est un type avec plusieurs valeurs littérales.
@@ -586,7 +586,7 @@ Pour créer un langage spécifique à un domaine, vous devez créer une nouvelle
 
  Pour ajouter un type, cliquez avec le bouton droit sur la racine du modèle dans l’Explorateur DSL, puis cliquez sur **Ajouter un nouveau type externe**. Dans le Fenêtre Propriétés, affectez à Name la valeur **Color** et à l’espace de noms la valeur **System. Drawing**. Ce type apparaît maintenant dans l’Explorateur DSL sous **types de domaines**. Vous pouvez le choisir chaque fois que vous définissez le type d'une propriété de domaine.
 
-## <a name="custom"></a>Personnalisation du DSL
+## <a name="customizing-the-dsl"></a><a name="custom"></a>Personnalisation du DSL
  À l'aide des techniques décrites dans cette rubrique, vous pouvez rapidement créer une solution DSL avec une notation visuelle, un formulaire XML lisible et les outils de base nécessaires pour générer du code et d'autres artefacts.
 
  Il existe deux méthodes pour étendre la définition DSL :
@@ -606,22 +606,22 @@ Pour créer un langage spécifique à un domaine, vous devez créer une nouvelle
 
  Voir aussi [Comment : modifier l’espace de noms d’un langage spécifique à un domaine](../modeling/how-to-change-the-namespace-of-a-domain-specific-language.md).
 
-## <a name="trouble"></a> Dépannage
+## <a name="troubleshooting"></a><a name="trouble"></a> Dépannage
  Le tableau suivant mentionne certains des problèmes les plus courants qui peuvent être rencontrés lors de la conception d'une solution DSL, avec quelques suggestions de solution. D’autres conseils sont disponibles sur le [Forum extensibilité des outils de visualisation](https://social.msdn.microsoft.com/Forums/vstudio/en-US/home?forum=dslvsarchx).
 
-| Problem (Problème) | Suggestion |
+| Problème | Suggestion |
 |-|-|
 | Les modifications que j'ai apportées dans le fichier de définition DSL n'ont aucun effet. | Cliquez sur **transformer tous les modèles** dans la barre d’outils ci-dessus Explorateur de solutions, puis régénérez la solution. |
 | Les formes indiquent le nom d'un décorateur au lieu de la valeur de propriété. | Configurez le mappage de décorateur. Sur le diagramme de définition DSL, cliquez sur le mappage d'élément de diagramme, c'est-à-dire la ligne grise entre la classe de domaine et la classe de forme.<br /><br /> Ouvrez la fenêtre **Détails DSL** . Si vous ne le voyez pas, dans le menu Affichage, pointez sur **autres fenêtres**, puis cliquez sur **Détails DSL**.<br /><br /> Cliquez sur l’onglet **mappages décoratifs** . Sélectionnez le nom de l’élément décoratif. Vérifiez que la case correspondante est cochée. Sous **propriété d’affichage**, sélectionnez le nom d’une propriété de domaine.<br /><br /> Pour plus d’informations, consultez [formes sur le diagramme](#shapes). |
 | Dans l'Explorateur DSL, je ne parviens pas à ajouter de collection. Par exemple, quand je clique avec le bouton droit sur Outils, il n'y a pas de commande « Ajouter un outil » dans le menu.<br /><br /> Dans l'explorateur de ma solution DSL, je ne parviens pas à ajouter d'élément à une liste. | Cliquez avec le bouton droit sur l'élément au-dessus du nœud concerné. Quand vous souhaitez ajouter un élément à une liste, la commande Ajouter ne se trouve pas dans le nœud de la liste, mais dans son propriétaire. |
 | J'ai créé une classe de domaine, mais je ne parviens pas à créer d'instances dans l'explorateur de langage. | Chaque classe de domaine, à l'exception de la racine, doit être la cible d'une relation d'incorporation. |
 | Dans l'explorateur de ma solution DSL, les éléments sont affichés uniquement avec leur nom de type. | Dans la définition DSL, sélectionnez une propriété de domaine de la classe et, dans la Fenêtre Propriétés, affectez la valeur true à nom de l' **élément** . |
-| Ma solution DSL s'ouvre toujours dans l'éditeur XML. | Cela peut être dû à une erreur lors de la lecture du fichier. Toutefois, même après avoir corrigé cette erreur, vous devez réinitialiser de manière explicite l'éditeur pour qu'il soit votre concepteur DSL.<br /><br /> Cliquez avec le bouton droit sur l’élément de projet, cliquez sur **Ouvrir avec** , puis sélectionnez * YourLanguage ***Designer (par défaut)** . |
+| Ma solution DSL s'ouvre toujours dans l'éditeur XML. | Cela peut être dû à une erreur lors de la lecture du fichier. Toutefois, même après avoir corrigé cette erreur, vous devez réinitialiser de manière explicite l'éditeur pour qu'il soit votre concepteur DSL.<br /><br /> Cliquez avec le bouton droit sur l’élément de projet, cliquez sur **Ouvrir avec** , puis sélectionnez * YourLanguage ***Designer (par défaut)**. |
 | La boîte à outils de ma solution DSL n'apparaît pas après que j'ai modifié les noms des assemblys. | Inspecter et mettre à jour **DslPackage\GeneratedCode\Package.TT** pour plus d’informations, consultez [Comment : modifier l’espace de noms d’un langage spécifique à un domaine](../modeling/how-to-change-the-namespace-of-a-domain-specific-language.md). |
-| La boîte à outils de ma solution DSL n'apparaît pas, mais je n'ai pas modifié le nom de l'assembly.<br /><br /> Ou une boîte de message apparaît et signale l'échec du chargement d'une extension. | Réinitialisez l'instance expérimentale et regénérez votre solution.<br /><br /> 1. dans le menu Démarrer de Windows, sous **tous les programmes**, développez [!INCLUDE[vssdk_current_long](../misc/includes/vssdk_current_long_md.md)], puis **Outils**, puis cliquez sur **Réinitialiser l’instance expérimentale Microsoft Visual Studio**.<br />2. dans le menu **générer** , cliquez sur **régénérer la solution**. |
+| La boîte à outils de ma solution DSL n'apparaît pas, mais je n'ai pas modifié le nom de l'assembly.<br /><br /> Ou une boîte de message apparaît et signale l'échec du chargement d'une extension. | Réinitialisez l'instance expérimentale et regénérez votre solution.<br /><br /> 1. dans le menu Démarrer de Windows, sous **tous les programmes**, développez successivement [!INCLUDE[vssdk_current_long](../misc/includes/vssdk_current_long_md.md)] , puis **Outils**, puis cliquez sur **Réinitialiser l’instance expérimentale Microsoft Visual Studio**.<br />2. dans le menu **générer** , cliquez sur **régénérer la solution**. |
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Bien démarrer avec les langages spécifiques à un domaine](../modeling/getting-started-with-domain-specific-languages.md)
-- [Création d’un langage spécifique à un domaine basé sur Windows Forms](../modeling/creating-a-windows-forms-based-domain-specific-language.md)
+- [Mise en route des langages spécifiques à un domaine](../modeling/getting-started-with-domain-specific-languages.md)
+- [Création d'un langage spécifique à un domaine basé sur Windows Forms](../modeling/creating-a-windows-forms-based-domain-specific-language.md)
 - [Création d’un langage spécifique à un domaine basé sur WPF](../modeling/creating-a-wpf-based-domain-specific-language.md)

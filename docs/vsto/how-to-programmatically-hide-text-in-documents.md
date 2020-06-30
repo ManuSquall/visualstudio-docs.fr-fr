@@ -1,7 +1,7 @@
 ---
-title: 'Procédure : Masquer du texte dans des documents par programmation'
+title: 'Comment : masquer du texte dans des documents par programmation'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -13,14 +13,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 1da471ff1911cdda4a62ef9c150236b3a225342f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 4dae19d196f830e5187fa395473c0a5482cb1d03
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62812766"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85543310"
 ---
-# <a name="how-to-programmatically-hide-text-in-documents"></a>Procédure : Masquer du texte dans des documents par programmation
+# <a name="how-to-programmatically-hide-text-in-documents"></a>Comment : masquer du texte dans des documents par programmation
   Vous pouvez masquer du texte dans un document en définissant la propriété <xref:Microsoft.Office.Interop.Word._Font.Hidden%2A> de <xref:Microsoft.Office.Interop.Word.Range.Font%2A> pour une plage de texte particulière.
 
  Par exemple, vous pouvez masquer temporairement le texte dans un <xref:Microsoft.Office.Tools.Word.Bookmark> (dans une personnalisation au niveau du document) ou un <xref:Microsoft.Office.Interop.Word.Bookmark> (dans un complément VSTO) avant d’envoyer un document à une imprimante.
@@ -41,7 +41,7 @@ ms.locfileid: "62812766"
 
 3. Passez la plage d’un signet à la méthode `HideText` , imprimez le document, puis passez la même plage à la méthode `UnhideText` .
 
-     Vous pouvez utiliser l’exemple de code suivant dans une personnalisation au niveau du document. Pour utiliser cet exemple, exécutez-le à partir de la classe `ThisDocument` dans votre projet.
+     L'exemple de code suivant peut être utilisé dans une personnalisation au niveau du document. Pour utiliser cet exemple, exécutez-le à partir de la classe `ThisDocument` dans votre projet.
 
      [!code-vb[Trin_VstcoreWordAutomation#107](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#107)]
      [!code-csharp[Trin_VstcoreWordAutomation#107](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#107)]
@@ -52,11 +52,11 @@ ms.locfileid: "62812766"
      [!code-csharp[Trin_VstcoreWordAutomationAddIn#107](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#107)]
 
 ## <a name="compile-the-code"></a>Compiler le code
- Cet exemple de code suppose que le document contient un <xref:Microsoft.Office.Tools.Word.Bookmark> contrôle (dans une personnalisation au niveau du document) ou <xref:Microsoft.Office.Interop.Word.Bookmark> contrôle (dans un complément VSTO) nommé `bookmark1`.
+ Cet exemple de code suppose que le document contient un <xref:Microsoft.Office.Tools.Word.Bookmark> contrôle (dans une personnalisation au niveau du document) ou un <xref:Microsoft.Office.Interop.Word.Bookmark> contrôle (dans un complément VSTO) nommé `bookmark1` .
 
 ## <a name="see-also"></a>Voir aussi
-- [Guide pratique pour Imprimer des documents par programmation](../vsto/how-to-programmatically-print-documents.md)
-- [Guide pratique pour Définir et sélectionner des plages dans les documents par programmation](../vsto/how-to-programmatically-define-and-select-ranges-in-documents.md)
-- [Guide pratique pour Réinitialisation par programmation des plages dans des documents Word](../vsto/how-to-programmatically-reset-ranges-in-word-documents.md)
-- [Guide pratique pour Mettre à jour par programme de texte d’un signet](../vsto/how-to-programmatically-update-bookmark-text.md)
-- [Paramètres optionnels dans les solutions Office](../vsto/optional-parameters-in-office-solutions.md)
+- [Comment : imprimer des documents par programmation](../vsto/how-to-programmatically-print-documents.md)
+- [Comment : définir et sélectionner des plages dans les documents par programmation](../vsto/how-to-programmatically-define-and-select-ranges-in-documents.md)
+- [Comment : réinitialiser des plages dans les documents Word par programmation](../vsto/how-to-programmatically-reset-ranges-in-word-documents.md)
+- [Comment : mettre à jour le texte d’un signet par programmation](../vsto/how-to-programmatically-update-bookmark-text.md)
+- [Paramètres facultatifs dans les solutions Office](../vsto/optional-parameters-in-office-solutions.md)

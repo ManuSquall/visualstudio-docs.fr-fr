@@ -4,17 +4,17 @@ ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - Domain-Specific Language, domain properties
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 44fcc45191d6c1e42256a503e98f753b54535e5f
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 0342146f604d86dd93ce25ed20e6ab393c581ea9
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72748316"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85544168"
 ---
 # <a name="properties-of-domain-properties"></a>Propriétés des propriétés de domaine
 Une *propriété de domaine* est une fonctionnalité d’un élément de modèle qui peut contenir une valeur. Par exemple, la classe de domaine `Person` pourrait avoir des propriétés `Name` et `BirthDate`. Dans la définition DSL, les propriétés de domaine sont énumérées dans la zone de classe de domaine sur le diagramme et sous la classe de domaine dans l'Explorateur DSL. Pour plus d’informations, consultez [comment définir un langage spécifique à un domaine](../modeling/how-to-define-a-domain-specific-language.md).
@@ -32,20 +32,20 @@ Une *propriété de domaine* est une fonctionnalité d’un élément de modèle
 
   Quand vous sélectionnez une propriété de domaine dans un diagramme ou dans l'Explorateur DSL, les éléments suivants sont visibles dans la fenêtre Propriétés. Pour plus d’informations sur l’utilisation de ces éléments, consultez [personnalisation et extension d’un langage spécifique à un domaine](../modeling/customizing-and-extending-a-domain-specific-language.md).
 
-|Property|Description|Valeur par défaut|
+|Propriété|Description|Valeur par défaut|
 |-|-|-|
-|**Description**|Description utilisée pour documenter l'interface utilisateur du concepteur généré.|\<aucune>|
-|**Nom complet**|Non affiché dans le concepteur généré pour cette propriété de domaine. Il peut contenir des espaces et une ponctuation, par exemple « Titre du morceau ».|\<aucune>|
-|**Fournisseur de nom d’élément**|Applicable uniquement si vous avez affecté la valeur `Is Element Name` à `true`. Vous pouvez écrire du code qui fournit un nom pour un nouvel élément d'une classe de domaine et qui remplace le comportement par défaut.<br /><br /> Dans un fichier de code dans le projet DSL, créez une classe dérivée de <xref:Microsoft.VisualStudio.Modeling.ElementNameProvider>.<br /><br /> Ensuite, dans l'Explorateur DSL, cliquez avec le bouton droit sur la racine de la solution DSL, puis cliquez sur Ajouter un type externe. Entrez le nom de votre classe.<br /><br /> Sélectionnez de nouveau cette propriété de domaine et sélectionnez le nom de la classe dans la liste déroulante.|\<aucune>|
-|**Getter (modificateur d’accès)**|Niveau d'accès de la classe de domaine (`public` ou `internal`). Contrôle l'étendue selon laquelle le code de programme peut accéder à la propriété.|`public`|
-|**Mot clé d’aide**|Mot clé facultatif servant à indexer l'aide F1 pour cette propriété de domaine.|\<aucune>|
-|**Est consultable**|Si `True`, la propriété de domaine est présentée à l'utilisateur dans la fenêtre de propriétés quand des modèles de cette solution DSL sont ouverts.<br /><br /> Si `False`, la propriété de domaine est masquée dans l'interface utilisateur.<br /><br /> Si vous souhaitez que la propriété de domaine soit visible mais en lecture seule, définissez **est lecture seule de l’interface utilisateur**.|`True`|
-|**Est un nom d’élément**|Si `True`, cette propriété de domaine est affichée comme nom de son élément de modèle dans l'Explorateur DSL.<br /><br /> Les nouveaux éléments de modèle reçoivent une valeur par défaut unique pour cette propriété. Si vous souhaitez contrôler la façon dont ces valeurs sont générées, définissez le **fournisseur de nom d’élément**.|`False`|
-|**Est en lecture seule de l’interface utilisateur**|Si `True`, la valeur de la propriété de domaine ne peut pas être modifiée à l'aide de l'interface utilisateur. Elle peut quand même être définie par des programmes et sera visible dans la fenêtre Propriétés.<br /><br /> Si vous souhaitez masquer la propriété de domaine de l’utilisateur, Set **peut être exploré**. Si vous souhaitez contrôler l’accès par les programmes, définissez le **modificateur d’accès Setter**.|`False`|
-|**Espèces**|Genre de propriété de domaine (`Normal`, `Calculated` ou `CustomStorage`). Pour plus d’informations, consultez [Propriétés de stockage calculées et personnalisées](../modeling/calculated-and-custom-storage-properties.md).|`Normal`|
-|**Nom**|Nom de cette propriété de domaine. Il doit s’agir d’un identificateur valide, par exemple **titremorceau**.|\<aucune>|
-|**Notes**|Remarques informelles associées à cette propriété de domaine.|\<aucune>|
-|**Modificateur d’accès Setter**|Modificateur d'accès pour la méthode Setter. Contrôle l'étendue selon laquelle le code de programme peut définir la propriété.|`public`|
+|**Description**|Description utilisée pour documenter l'interface utilisateur du concepteur généré.|\<none>|
+|**Nom complet**|Non affiché dans le concepteur généré pour cette propriété de domaine. Il peut contenir des espaces et une ponctuation, par exemple « Titre du morceau ».|\<none>|
+|**Element Name Provider**|Applicable uniquement si vous avez affecté la valeur `Is Element Name` à `true`. Vous pouvez écrire du code qui fournit un nom pour un nouvel élément d'une classe de domaine et qui remplace le comportement par défaut.<br /><br /> Dans un fichier de code dans le projet DSL, créez une classe dérivée de <xref:Microsoft.VisualStudio.Modeling.ElementNameProvider>.<br /><br /> Ensuite, dans l'Explorateur DSL, cliquez avec le bouton droit sur la racine de la solution DSL, puis cliquez sur Ajouter un type externe. Entrez le nom de votre classe.<br /><br /> Sélectionnez de nouveau cette propriété de domaine et sélectionnez le nom de la classe dans la liste déroulante.|\<none>|
+|**Getter Access Modifier**|Niveau d'accès de la classe de domaine (`public` ou `internal`). Contrôle l'étendue selon laquelle le code de programme peut accéder à la propriété.|`public`|
+|**Help Keyword**|Mot clé facultatif servant à indexer l'aide F1 pour cette propriété de domaine.|\<none>|
+|**Is Browsable**|Si `True`, la propriété de domaine est présentée à l'utilisateur dans la fenêtre de propriétés quand des modèles de cette solution DSL sont ouverts.<br /><br /> Si `False`, la propriété de domaine est masquée dans l'interface utilisateur.<br /><br /> Si vous souhaitez que la propriété de domaine soit visible mais en lecture seule, définissez **est lecture seule de l’interface utilisateur**.|`True`|
+|**Is Element Name**|Si `True`, cette propriété de domaine est affichée comme nom de son élément de modèle dans l'Explorateur DSL.<br /><br /> Les nouveaux éléments de modèle reçoivent une valeur par défaut unique pour cette propriété. Si vous souhaitez contrôler la façon dont ces valeurs sont générées, définissez le **fournisseur de nom d’élément**.|`False`|
+|**Is UI Read Only**|Si `True`, la valeur de la propriété de domaine ne peut pas être modifiée à l'aide de l'interface utilisateur. Elle peut quand même être définie par des programmes et sera visible dans la fenêtre Propriétés.<br /><br /> Si vous souhaitez masquer la propriété de domaine de l’utilisateur, Set **peut être exploré**. Si vous souhaitez contrôler l’accès par les programmes, définissez le **modificateur d’accès Setter**.|`False`|
+|**Type**|Genre de propriété de domaine (`Normal`, `Calculated` ou `CustomStorage`). Pour plus d’informations, consultez [Propriétés de stockage calculées et personnalisées](../modeling/calculated-and-custom-storage-properties.md).|`Normal`|
+|**Nom**|Nom de cette propriété de domaine. Il doit s’agir d’un identificateur valide, par exemple **titremorceau**.|\<none>|
+|**Notes**|Remarques informelles associées à cette propriété de domaine.|\<none>|
+|**Setter Access Modifier**|Modificateur d'accès pour la méthode Setter. Contrôle l'étendue selon laquelle le code de programme peut définir la propriété.|`public`|
 |**Type**|Type de propriété. Pour ajouter à la liste des types disponibles, cliquez avec le bouton droit sur la racine du DSL dans l’Explorateur DSL, puis cliquez sur **Ajouter un type externe**.|`String`|
 
 ## <a name="see-also"></a>Voir aussi

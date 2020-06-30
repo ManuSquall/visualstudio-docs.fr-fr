@@ -1,7 +1,7 @@
 ---
-title: 'Procédure : Installer les assemblys PIA (Primary Interop Assembly) Office'
+title: 'Comment : installer les assemblys PIA (Primary Interop Assembly) Office'
 ms.date: 08/14/2019
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -13,14 +13,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ee6755a2d795d2018136785986a5a346ddc07dc6
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.openlocfilehash: b6f90b568f98abe5026525a60723efb59f737235
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69551794"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85544779"
 ---
-# <a name="how-to-install-office-primary-interop-assemblies"></a>Procédure : Installer les assemblys PIA (Primary Interop Assembly) Office
+# <a name="how-to-install-office-primary-interop-assemblies"></a>Comment : installer les assemblys PIA (Primary Interop Assembly) Office
   Installez les assemblys PIA (Primary Interop Assembly) Microsoft Office lorsque vous installez Office.
 
 [!include[Add-ins note](includes/addinsnote.md)]
@@ -29,15 +29,15 @@ ms.locfileid: "69551794"
 
 1. Assurez-vous que vous disposez d'une version du .NET Framework qui n'est pas antérieure à 2.0.
 
-2. Installez Microsoft Office et assurez-vous que la fonctionnalité **prise en charge** de la programmabilité .net est sélectionnée pour les applications que vous souhaitez étendre (cette fonctionnalité est incluse dans l’installation par défaut).
+2. Installez Microsoft Office et assurez-vous que la fonctionnalité **prise en charge de la programmabilité .net** est sélectionnée pour les applications que vous souhaitez étendre (cette fonctionnalité est incluse dans l’installation par défaut).
 
     > [!WARNING]
     > Par défaut, les assemblys PIA sont incorporés dans votre solution lorsque vous les générez, de sorte que vous n’avez pas à distribuer les assemblys PIA aux utilisateurs comme condition préalable à l’utilisation de votre complément VSTO ou de la personnalisation.
 
 ## <a name="see-also"></a>Voir aussi
-- [Assemblys PIA (Primary Interop Assembly) Office](../vsto/office-primary-interop-assemblies.md)
-- [Guide pratique pour Cibler des applications Office par le biais d’assemblys PIA](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md)
-- [Guide pratique pour Configurer un ordinateur pour développer des solutions Office](../vsto/how-to-configure-a-computer-to-develop-office-solutions.md)
-- [Guide pratique pour Installer le Visual Studio Tools pour le package redistribuable Office Runtime](../vsto/how-to-install-the-visual-studio-tools-for-office-runtime-redistributable.md)
-- [Vue d’ensemble du &#40;développement des solutions Office VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)
-- [Prise en &#40;main du développement Office dans Visual Studio&#41;](../vsto/getting-started-office-development-in-visual-studio.md)
+- [assemblys PIA (Primary Interop Assembly) Office](../vsto/office-primary-interop-assemblies.md)
+- [Comment : cibler des applications Office par le biais d’assemblys PIA](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md)
+- [Comment : configurer un ordinateur pour développer des solutions Office](../vsto/how-to-configure-a-computer-to-develop-office-solutions.md)
+- [Comment : installer le Visual Studio Tools pour le package redistribuable Office Runtime](../vsto/how-to-install-the-visual-studio-tools-for-office-runtime-redistributable.md)
+- [Vue d’ensemble du développement de solutions Office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)
+- [Prise en main &#40;le développement Office dans Visual Studio&#41;](../vsto/getting-started-office-development-in-visual-studio.md)

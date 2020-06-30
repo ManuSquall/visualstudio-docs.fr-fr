@@ -1,18 +1,18 @@
 ---
 title: Utilisation de plusieurs langages spécifiques à un domaine dans une solution
 ms.date: 11/04/2016
-ms.topic: conceptual
-author: jillre
-ms.author: jillfra
+ms.topic: how-to
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b5d21d3954a402e7ce8eb26c34d6a6a5c237309a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: f2eef29db24da3be0a9376ea76a9a1a551af9e1a
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72658346"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85542595"
 ---
 # <a name="multiple-dsls-in-one-solution"></a>Utilisation de plusieurs langages spécifiques à un domaine dans une solution
 
@@ -36,23 +36,23 @@ Il existe différentes techniques pour intégrer plusieurs DSL. Pour plus d’in
 
       `string dslProjectName = "Dsl2";`
 
-   - Dans la solution VSIX, ajoutez les projets \* DSL * et DslPackage. Il se peut que vous souhaitiez placer chaque paire dans son propre dossier de solution.
+   - Dans la solution VSIX, ajoutez les projets DSL * et DslPackage \* . Il se peut que vous souhaitiez placer chaque paire dans son propre dossier de solution.
 
 2. Regroupez les manifestes VSIX des DSL :
 
-   1. Ouvrez _YourVsixProject_ **\Source.extension.manifest**.
+   1. Ouvrez _YourVsixProject_**\Source.extension.manifest**.
 
    2. Pour chaque DSL, choisissez **Ajouter du contenu** et ajoutez :
 
-       - `Dsl*` projet en tant que **Composant MEF**
+       - `Dsl*`projet en tant que **Composant MEF**
 
-       - `DslPackage*` projet en tant que **Composant MEF**
+       - `DslPackage*`projet en tant que **Composant MEF**
 
-       - `DslPackage*` projet en tant que **package vs**
+       - `DslPackage*`projet en tant que **package vs**
 
 3. Générez la solution.
 
-   Le VSIX résultant installera les deux DSL. Vous pouvez les tester à l’aide de la touche F5 ou déployer _YourVsixProject_ **\bin\Debug \\ \*. vsix**.
+   Le VSIX résultant installera les deux DSL. Vous pouvez les tester à l’aide de la touche F5 ou déployer _YourVsixProject_**\bin\Debug \\ \* . vsix**.
 
 ## <a name="see-also"></a>Voir aussi
 

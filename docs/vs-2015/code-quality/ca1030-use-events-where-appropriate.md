@@ -15,17 +15,17 @@ caps.latest.revision: 18
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 7ab3a576b5014799e470260567a4942b5c3ef9de
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 1313c5ee79a7a13d3eb937a3431b13ea393857d1
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72661922"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85544519"
 ---
 # <a name="ca1030-use-events-where-appropriate"></a>CA1030 : Utiliser des événements lorsque cela est approprié
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Élément|Valeur|
 |-|-|
 |TypeName|UseEventsWhereAppropriate|
 |CheckId|CA1030|
@@ -39,17 +39,17 @@ ms.locfileid: "72661922"
 
 - RemoveOn
 
-- Flammes
+- Feu
 
 - Génère
 
 ## <a name="rule-description"></a>Description de la règle
  Cette règle détecte des méthodes qui présentent des noms qui ordinairement seraient utilisés pour des événements. Les événements suivent le modèle de conception observateur ou publication-abonnement. ils sont utilisés lorsqu’un changement d’État dans un objet doit être communiqué à d’autres objets. Si une méthode est appelée en réponse à une modification d’état clairement définie, la méthode doit être appelée par un gestionnaire d’événements. Les objets qui appellent la méthode doivent déclencher des événements au lieu d'appeler directement la méthode.
 
- Des exemples courants d’événements se trouvent dans les applications de l’interface utilisateur, où une action de l’utilisateur, telle qu’un clic sur un bouton, entraîne l’exécution d’un segment de code. Le modèle d’événement [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] n’est pas limité aux interfaces utilisateur ; elle doit être utilisée partout où vous devez communiquer des modifications d’État à un ou plusieurs objets.
+ Des exemples courants d’événements se trouvent dans les applications de l’interface utilisateur, où une action de l’utilisateur, telle qu’un clic sur un bouton, entraîne l’exécution d’un segment de code. Le [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] modèle d’événement n’est pas limité aux interfaces utilisateur ; il doit être utilisé partout où vous devez communiquer des modifications d’État à un ou plusieurs objets.
 
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations
- Si la méthode est appelée lorsque l’état d’un objet change, vous devez envisager de modifier la conception pour utiliser le modèle d’événement [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)].
+ Si la méthode est appelée lorsque l’état d’un objet change, vous devez envisager de modifier la conception pour utiliser le [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] modèle d’événement.
 
 ## <a name="when-to-suppress-warnings"></a>Quand supprimer les avertissements
- Supprimez un avertissement de cette règle si la méthode ne fonctionne pas avec le modèle d’événement [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)].
+ Supprimez un avertissement de cette règle si la méthode ne fonctionne pas avec le [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] modèle d’événement.

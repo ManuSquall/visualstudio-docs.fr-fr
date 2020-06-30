@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 62ac71a3aa707958bd0c7f107185d141e339b2b7
-ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
+ms.openlocfilehash: 5fe336962a9d631a01438fdd4620fd27e2affc44
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "85332137"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85543349"
 ---
 # <a name="analyze-memory-usage-without-the-debugger"></a>Analyser l’utilisation de la mémoire sans débogage
 
@@ -76,7 +76,7 @@ Les chiffres sont des liens qui permettent d’ouvrir des vues de rapports déta
 
   ![Liens de la vue Instantané](../profiling/media/memuse__snapshotview_numbered.png "Liens de la vue Instantané")
 
-|||
+|Image|Description|
 |-|-|
 |![Étape 1](../profiling/media/procguid_1.png "ProcGuid_1")|Nombre total d’octets en mémoire au moment où l’instantané a été pris.<br /><br /> Sélectionnez ce lien pour afficher un rapport détaillé de l’instantané, trié d’après la taille totale des instances du type.|
 |![Étape 2](../profiling/media/procguid_2.png "ProcGuid_2")|Nombre total d’objets en mémoire au moment où l’instantané a été pris.<br /><br /> Sélectionnez ce lien pour afficher un rapport détaillé de l’instantané, trié d’après le nombre total d’instances des types.|
@@ -130,7 +130,7 @@ Les deux liens ouvrent le même rapport. La seule différence concerne l’ordre
 
 L’arborescence **Tas managé** dans un rapport détaillé d’instantané comporte les colonnes suivantes :
 
-|||
+|Nom|Description|
 |-|-|
 |**Type d'objet**|Nom du type ou instance de l'objet.|
 |**Count**|Nombre d'instances d'objet du type. La valeur **Nombre** est toujours égale à 1 pour une instance.|
@@ -152,7 +152,7 @@ L’arborescence **Types référencés** ou **Objets référencés** montre les 
 
 Une arborescence **Types référencés** dans un rapport détaillé d’instantané comporte les colonnes suivantes. Une arborescence **Objets référencés** n’a pas de colonne **Nombre de références**.
 
-|||
+|Nom|Description|
 |-|-|
 |**Type d’objet** ou **Instance**|Nom du type ou de l’instance.|
 |**Nombre de références**|Pour les types, nombre d’instances d’objets du type.|
@@ -176,7 +176,7 @@ Les deux liens ouvrent le même rapport. La seule différence concerne l’ordre
 
 L’arborescence **Tas managé** dans un rapport différentiel d’instantanés comporte les colonnes suivantes :
 
-|||
+|Nom|Description|
 |-|-|
 |**Type d'objet**|Nom du type ou instance de l'objet.|
 |**Count**|Nombre d'instances d'un type dans l'instantané principal. **Count** est toujours 1 pour une instance.|
@@ -203,7 +203,7 @@ L’arborescence **Types référencés** ou **Objets référencés** montre les 
 
 Une arborescence **Types référencés** dans un rapport différentiel d’instantanés comporte les colonnes suivantes. Une arborescence **Objets référencés** comporte les colonnes **Instance**, **Taille (octets)**, **Taille Inclusive (octets)** et **Module**.
 
-|||
+|Nom|Description|
 |-|-|
 |**Type d’objet** ou **Instance**|Nom du type ou instance de l'objet.|
 |**Nombre de références**|Nombre d'instances d'un type dans l'instantané principal.|

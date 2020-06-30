@@ -15,17 +15,17 @@ caps.latest.revision: 18
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 9574ff022e0d5407b2683e5ba7a6b2e0cde5201e
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 2e720c1c491e88b6d89fb4b1f0175e8bc8a56e27
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72669233"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85544051"
 ---
 # <a name="ca1703-resource-strings-should-be-spelled-correctly"></a>CA1703 : L'orthographe des chaînes de ressources doit être correcte
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Élément|Valeur|
 |-|-|
 |TypeName|ResourceStringsShouldBeSpelledCorrectly|
 |CheckId|CA1703|
@@ -47,8 +47,8 @@ ms.locfileid: "72669233"
  Ne supprimez aucun avertissement de cette règle. Les mots correctement orthographiés réduisent le temps nécessaire pour apprendre les nouvelles bibliothèques logicielles.
 
 ## <a name="related-rules"></a>Règles associées
- [CA1701 : La casse des mots composés de chaînes de ressources doit être correcte](../code-quality/ca1701-resource-string-compound-words-should-be-cased-correctly.md)
+ [CA1701 : La casse des mots composés de la chaîne de ressources doit être correcte](../code-quality/ca1701-resource-string-compound-words-should-be-cased-correctly.md)
 
- [CA1704 : Les identificateurs doivent être correctement orthographiés](../code-quality/ca1704-identifiers-should-be-spelled-correctly.md)
+ [CA1704 : L'orthographe des identificateurs doit être correcte](../code-quality/ca1704-identifiers-should-be-spelled-correctly.md)
 
- [CA2204 : Les littéraux doivent être correctement orthographiés](../code-quality/ca2204-literals-should-be-spelled-correctly.md)
+ [CA2204 : Les littéraux doivent être orthographiés correctement](../code-quality/ca2204-literals-should-be-spelled-correctly.md)

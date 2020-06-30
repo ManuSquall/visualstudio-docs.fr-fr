@@ -13,12 +13,12 @@ ms.assetid: ba237712-f8c4-4d13-854b-ab4a16afa309
 caps.latest.revision: 128
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 5d24a6725a50cc892a1bf4170127158ac835bfe4
-ms.sourcegitcommit: 0b8497b720eb06bed8ce2194731177161b65eb84
+ms.openlocfilehash: f3252ea7cada8261a97832e4e621849e0fb0c91e
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2020
-ms.locfileid: "82072604"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85543713"
 ---
 # <a name="welcome-to-visual-studio-2015"></a>Bienvenue dans Visual Studio 2015
 [!INCLUDE[vs2017banner](includes/vs2017banner.md)]
@@ -30,27 +30,27 @@ Bienvenue dans Visual Studio ! Nous vous offrons tout ce dont vous avez besoin p
 >
 > Cliquez ici pour accéder aux notes de version de [Visual Studio 2017](https://www.visualstudio.com/news/releasenotes/vs2017-relnotes).
 
- Téléchargez [Visual Studio Community 2015](https://visualstudio.microsoft.com/vs/older-downloads/) gratuitement pour commencer à coder immédiatement. Pour un développement multiplateforme, veillez à installer les packages facultatifs. Vous pouvez obtenir plus de fonctionnalités avec Visual Studio Professional ou Visual Studio Enterprise.
+ Téléchargez gratuitement [Visual Studio Community 2015](https://visualstudio.microsoft.com/vs/older-downloads/) pour commencer à coder immédiatement. Pour un développement multiplateforme, veillez à installer les packages facultatifs. Vous pouvez obtenir plus de fonctionnalités avec Visual Studio Professional ou Visual Studio Enterprise.
 
- Lancez-vous, créez un projet et commencez à écrire du code. Choisissez le type d’application que vous voulez créer. Ou vous pouvez faire une visite de [l’IDE Visual Studio](./ide/visual-studio-ide.md) pour vous familiariser avec les outils.
+ Lancez-vous, créez un projet et commencez à écrire du code. Choisissez le type d’application que vous voulez créer. Vous pouvez vous faire une visite guidée de l' [IDE de Visual Studio](./ide/visual-studio-ide.md) pour vous familiariser avec les outils.
 
  Pensez aussi à explorer notre [galerie de code](https://code.msdn.microsoft.com/) dans laquelle vous trouverez des exemples qui vous permettront de développer votre application plus rapidement.
 
- Vous pouvez installer Visual Studio 2015 en le téléchargeant à partir de [Téléchargements Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/). Pour en savoir plus sur le processus d’installation, voir [Install Visual Studio 2015](./install/install-visual-studio-2015.md).
+ Vous pouvez installer Visual Studio 2015 en le téléchargeant à partir de [Téléchargements Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/). Pour en savoir plus sur le processus d’installation, consultez [installer Visual Studio 2015](./install/install-visual-studio-2015.md).
 
 ## <a name="extend-visual-studio"></a>Extension de Visual Studio
  Ajoutez votre propre extension Visual Studio afin d’inclure un outil ou un script que vous utilisez souvent en codage. Vous pouvez créer des éléments de menu et des fenêtres d’outils personnalisés afin d’intégrer vos propres outils dans l’environnement de développement de Visual Studio. Vous pouvez prolonger l’éditeur Visual Studio pour analyser ou fixer le code, ou ajouter un nouveau type de projet de manière à inclure exactement ce dont vous avez besoin.
 
  Pour obtenir la dernière version des outils d’extensibilité de Visual Studio (Visual Studio SDK), consultez [Visual Studio SDK](./extensibility/visual-studio-sdk.md).
 
- Vous pouvez utiliser la [plate-forme de compilateur .NET (Roslyn)](https://github.com/dotnet/Roslyn) pour écrire vos propres analyseurs de code et générateurs de code. 
+ Vous pouvez utiliser le [.NET Compiler Platform (Roslyn)](https://github.com/dotnet/Roslyn) pour écrire vos propres analyseurs de code et générateurs de code. 
 
- Trouvez des extensions pour le Visual Studio IDE dans le [Visual Studio Marketplace](https://visualstudiogallery.msdn.microsoft.com/). Les extensions sur le marché sont créées par les développeurs Microsoft ainsi que par notre communauté de développement.
+ Recherchez des extensions pour l’IDE Visual Studio dans la [Visual Studio Marketplace](https://visualstudiogallery.msdn.microsoft.com/). Les extensions de la place de marché sont créées par des développeurs Microsoft et notre communauté de développement.
 
 ## <a name="build-apps-for-android-ios-and-windows"></a>Créer des applications pour Android, iOS et Windows
- À l’aide de Visual Studio, créez des applications pour les appareils Android, iOS et Windows. En savoir plus sur [cross-Platform Mobile Development in Visual Studio](./cross-platform/cross-platform-mobile-development-in-visual-studio.md).
+ À l’aide de Visual Studio, créez des applications pour les appareils Android, iOS et Windows. En savoir plus sur [le développement mobile multiplateforme dans Visual Studio](./cross-platform/cross-platform-mobile-development-in-visual-studio.md).
 
- Pour plus d’informations sur Universal Windows Apps (UWP), voir [Quelle est une plate-forme Windows universelle (UWP) app?](https://docs.microsoft.com/windows/uwp/get-started/universal-application-platform-guide).
+ Pour plus d’informations sur les applications Windows universelles (UWP), consultez [qu’est-ce qu’une application plateforme Windows universelle (UWP) ?](https://docs.microsoft.com/windows/uwp/get-started/universal-application-platform-guide).
 
  Choisissez les outils dont vous avez besoin en fonction des exigences de votre application et du langage utilisé.
 
@@ -60,7 +60,7 @@ Bienvenue dans Visual Studio ! Nous vous offrons tout ce dont vous avez besoin p
 
 - [Visual Studio Tools pour Unity](./cross-platform/visual-studio-tools-for-unity.md) : développement de jeux en 2D/3D en C#.
 
-- [C POUR le développement mobile interplateforme](./cross-platform/visual-cpp-for-cross-platform-mobile-development.md): Bibliothèques de code partagées et applications dans le C
+- [C++ pour le développement mobile multiplateforme](./cross-platform/visual-cpp-for-cross-platform-mobile-development.md): bibliothèques de code partagées et applications en c++
 
 - [Visual Studio Emulator for Android](./cross-platform/visual-studio-emulator-for-android.md): émulateur Visual Studio pour Android : déboguez et testez vos applications Android, quel que soit l’IDE
 
@@ -73,13 +73,13 @@ Bienvenue dans Visual Studio ! Nous vous offrons tout ce dont vous avez besoin p
 
 - Intégrez les API REST Office 365 à votre propre application pour vous connecter aux données stockées dans le cloud. Pour plus d’informations, consultez [ces exemples](https://docs.microsoft.com/samples/browse/?products=office-365&term=REST).
 
-## <a name="write-great-web-apps-with-aspnet"></a>Écrivez d’excellentes applications web avec ASP.NET
- [ASP.NET 5](https://docs.microsoft.com/aspnet/core/?view=aspnetcore-3.0) est une mise à jour majeure de MVC, WebAPI et SignalR, et s’exécute sur Windows, Mac et Linux.  ASP.NET a été conçu à partir de zéro pour vous fournir une pile maigre et composable .NET pour la construction d’applications et de services Web modernes basés sur le cloud.
+## <a name="write-great-web-apps-with-aspnet"></a>Écrire des applications Web exceptionnelles avec ASP.NET
+ [ASP.NET 5](https://docs.microsoft.com/aspnet/core/?view=aspnetcore-3.0) est une mise à jour majeure de MVC, WebAPI et SignalR, et s’exécute sur Windows, Mac et Linux.  ASP.NET a été conçu dès le départ pour vous fournir une pile .NET épurée et composable pour la création d’applications et de services Web modernes basés sur le Cloud.
 
 ## <a name="build-test-and-manage-your-code"></a>Créer, tester et gérer votre code
 
 ### <a name="check-in-your-code"></a>Archiver votre code
- Si vous travaillez en équipe, vous devez transmettre les dernières versions du code de sorte que tous les membres utilisent la même base de code. Visual Studio s’intègre en toute transparence à Visual Studio Team Services ou Team Foundation Server pour fournir la gestion de version avec Git ou TFVC (Team Foundation Version Control). Utilisez Visual Studio Team Services pour stocker votre code dans le cloud sans avoir à gérer un serveur local. Utilisez Team Foundation Server si vous voulez gérer un serveur local. Chaque fois que vous créez un projet de code, vous avez la possibilité de l’ajouter au contrôle de version. Pour en savoir plus sur le système de contrôle de version qui est le mieux pour vos besoins, voir [Choisir le bon contrôle de version pour votre projet](https://docs.microsoft.com/azure/devops/repos/tfvc/comparison-git-tfvc?view=azure-devops).
+ Si vous travaillez en équipe, vous devez transmettre les dernières versions du code de sorte que tous les membres utilisent la même base de code. Visual Studio s’intègre en toute transparence à Visual Studio Team Services ou Team Foundation Server pour fournir la gestion de version avec Git ou TFVC (Team Foundation Version Control). Utilisez Visual Studio Team Services pour stocker votre code dans le cloud sans avoir à gérer un serveur local. Utilisez Team Foundation Server si vous voulez gérer un serveur local. Chaque fois que vous créez un projet de code, vous avez la possibilité de l’ajouter au contrôle de version. Pour en savoir plus sur le système de gestion de version le mieux adapté à vos besoins, consultez [choix de la gestion de version appropriée pour votre projet](https://docs.microsoft.com/azure/devops/repos/tfvc/comparison-git-tfvc?view=azure-devops).
 
 ### <a name="build-your-app"></a>Générer votre application
  Vous pouvez [générer votre application localement](./ide/compiling-and-building-in-visual-studio.md) et vérifier qu’elle fonctionne correctement. Utilisez ensuite les [outils de débogage](./debugger/debugging-in-visual-studio.md) pour résoudre les éventuels problèmes qu’elle présente. Vous pouvez également créer des projets sur des serveurs partagés ou dans le cloud. Automatisez votre processus de génération pour générer le code que les développeurs de votre équipe ont vérifié dans le contrôle de version. Par exemple, vous pouvez générer un ou plusieurs projets la nuit ou chaque fois le code est archivé.
@@ -94,13 +94,23 @@ Bienvenue dans Visual Studio ! Nous vous offrons tout ce dont vous avez besoin p
 
 ## <a name="whats-new"></a>Nouveautés
 
-|||||
-|-|-|-|-|
-|[Quoi de neuf dans Visual Studio 2015](./what-s-new-in-visual-studio-2015.md)|[Quoi de neuf pour C #](https://msdn.microsoft.com/library/9f18dc26-27fa-4603-a639-b573f07a117b)|[Quoi de neuf dans le cadre .NET](https://msdn.microsoft.com/library/1d971dd7-10fc-4692-8dac-30ca308fc0fa)|[Quoi de neuf pour Azure DevOps Server](/azure/devops/server/whats-new)|
-|[Nouveautés dans C++](https://docs.microsoft.com/previous-versions/hh409293(v=vs.140))|[Quoi de neuf pour Visual Basic](https://msdn.microsoft.com/library/d7e97396-7f42-4873-a81c-4ebcc4b6ca02)|[Nouveautés de JavaScript](https://docs.microsoft.com/visualstudio/javascript/javascript-in-visual-studio?view=vs-2015#whats-new-in-javascript)||
-|[Python](./python/getting-started-with-python.md)||||
+- [Nouveautés de Visual Studio 2015](./what-s-new-in-visual-studio-2015.md)
 
-## <a name="in-this-section"></a>Contenu de cette section
+- [Nouveautés de C #](https://msdn.microsoft.com/library/9f18dc26-27fa-4603-a639-b573f07a117b)
+
+- [Nouveautés de .NET Framework](https://msdn.microsoft.com/library/1d971dd7-10fc-4692-8dac-30ca308fc0fa)
+
+- [Nouveautés de Azure DevOps Server](/azure/devops/server/whats-new)
+
+- [Nouveautés dans C++](https://docs.microsoft.com/previous-versions/hh409293(v=vs.140))
+
+- [Nouveautés dans Visual Basic](https://msdn.microsoft.com/library/d7e97396-7f42-4873-a81c-4ebcc4b6ca02)
+
+- [Nouveautés de JavaScript](https://docs.microsoft.com/visualstudio/javascript/javascript-in-visual-studio?view=vs-2015#whats-new-in-javascript)
+
+- [Python](./python/getting-started-with-python.md)
+
+## <a name="in-this-section"></a>Dans cette section
 
 - [Nouveautés de Visual Studio 2015](./what-s-new-in-visual-studio-2015.md)
 
@@ -120,7 +130,7 @@ Bienvenue dans Visual Studio ! Nous vous offrons tout ce dont vous avez besoin p
 
 - [C#](https://docs.microsoft.com/dotnet/csharp/?view=vs-2015)
 
-- [Visuel C](https://msdn.microsoft.com/library/e8dcc44c-a3e2-4ffe-887c-fd15b18dc458)
+- [Visual C++](https://msdn.microsoft.com/library/e8dcc44c-a3e2-4ffe-887c-fd15b18dc458)
 
 - [JavaScript](./javascript/javascript-in-visual-studio.md)
 

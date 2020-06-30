@@ -1,23 +1,23 @@
 ---
 title: Définition d'une image d'arrière-plan dans un schéma
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 author: JoshuaPartlow
 ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1bdf30636a6c7fee1463cbe554058f0802a5f6f0
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 7701bf0ba1467b481f6da64d3c2e229be77a7fe7
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75591955"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85542582"
 ---
 # <a name="setting-a-background-image-on-a-diagram"></a>Définition d'une image d'arrière-plan dans un schéma
 Dans le kit de développement logiciel (SDK) de visualisation et de modélisation Visual Studio, vous pouvez définir l’image d’arrière-plan d’un concepteur généré à l’aide de code personnalisé.
 
-## <a name="setting-the-background-image"></a>Définition de l'image d'arrière-plan
+## <a name="setting-the-background-image"></a>Définir l'image d'arrière-plan
 
 #### <a name="to-set-a-background-image-for-a-generated-designer"></a>Pour définir une image d'arrière-plan pour un concepteur généré
 
@@ -53,7 +53,7 @@ Dans le kit de développement logiciel (SDK) de visualisation et de modélisatio
 
 16. Dans la boîte de dialogue **Ajouter un nouvel élément** , dans la liste **modèles** , cliquez sur **fichier de code**.
 
-17. Dans la zone **nom** , tapez `BackgroundImage.cs`, puis cliquez sur **Ajouter**.
+17. Dans la zone **nom** , tapez `BackgroundImage.cs` , puis cliquez sur **Ajouter**.
 
 18. Copiez le code suivant dans le fichier BackgroundImage.cs, en ajustant l'espace de noms, le nom de la classe de diagramme et le nom de la ressource de fichier image.
 
@@ -103,7 +103,7 @@ Dans le kit de développement logiciel (SDK) de visualisation et de modélisatio
 ## <a name="see-also"></a>Voir aussi
 
 - [Définition de formes et de connecteurs](../modeling/defining-shapes-and-connectors.md)
-- [Personnalisation des champs de texte et d’image](../modeling/customizing-text-and-image-fields.md)
+- [Personnalisation des champs de texte et d'image](../modeling/customizing-text-and-image-fields.md)
 - [Navigation et mise à jour d’un modèle dans le code de programme](../modeling/navigating-and-updating-a-model-in-program-code.md)
 - [Écriture de code pour personnaliser un langage spécifique à un domaine](../modeling/writing-code-to-customise-a-domain-specific-language.md)
 

@@ -1,7 +1,7 @@
 ---
-title: 'Procédure : Ouvrir des solutions Office sans exécuter le code'
+title: 'Comment : ouvrir des solutions Office sans exécuter de code'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -18,39 +18,39 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 366416e4f18435bd01391657eb2fc4f65f8a4d62
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: d84515c2c3159b61b96f77555b23eef0df0ae961
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63441782"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85543479"
 ---
-# <a name="how-to-open-office-solutions-without-running-code"></a>Procédure : Ouvrir des solutions Office sans exécuter le code
-  Une solution Microsoft Office créée avec des extensions de code managé s’exécute même si le paramètre de sécurité dans l’application Office de l’utilisateur final est défini sur élevé. Il s’agit, car la sécurité du code assembly .NET est gérée par Microsoft .NET Framework, et non par Microsoft Office.
+# <a name="how-to-open-office-solutions-without-running-code"></a>Comment : ouvrir des solutions Office sans exécuter de code
+  Une solution Microsoft Office créée avec des extensions de code managé s’exécute même si le paramètre de sécurité de l’application Office de l’utilisateur final est défini sur élevé. Cela est dû au fait que la sécurité du code de l’assembly .NET est gérée par l’infrastructure Microsoft .NET, et non par Microsoft Office.
 
- Toutefois, voici les heures lorsque vous souhaiterez ouvrir un document sans exécuter le code. Par exemple, le contenu susceptible de modifier le code qui s’exécute lorsque le document s’ouvre, mais que vous souhaitez mettre à jour de l’apparence du document avant les modifications de code il. Ou vous souhaiterez peut-être envoyer le document avec certaines informations qu’il contient, à une personne, et vous ne souhaitez pas que le code pour exécuter et éventuellement modifier le contenu.
+ Toutefois, il peut arriver que vous souhaitiez ouvrir un document sans exécuter le code. Par exemple, le code qui s’exécute lorsque le document s’ouvre peut modifier le contenu, mais vous souhaitez mettre à jour la manière dont le document ressemble avant que le code ne le modifie. Vous pouvez également envoyer le document contenant certaines informations à l’utilisateur, et vous ne souhaitez pas que le code s’exécute et éventuellement modifier son contenu.
 
  [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]
 
- Il existe plusieurs manières d’ouvrir un document ou classeur qui contient des extensions de code managé sans exécuter le code d’assembly.
+ Il existe plusieurs façons d’ouvrir un document ou un classeur qui contient des extensions de code managé sans exécuter le code de l’assembly.
 
-## <a name="to-bypass-the-assembly-by-using-the-shift-key"></a>Pour ignorer l’assembly à l’aide de la touche MAJ enfoncée
+## <a name="to-bypass-the-assembly-by-using-the-shift-key"></a>Pour ignorer l’assembly à l’aide de la touche Maj
 
-- Ouvrir des documents et classeurs à partir de la **fichier** menu tout en maintenant enfoncée la **MAJ** clé afin d’éviter de Word et Excel de déclencher des événements d’initialisation pendant que le document s’ouvre.
+- Ouvrez les documents et les classeurs à partir du menu **fichier** tout en maintenant la touche **MAJ** enfoncée pour empêcher Word et Excel de déclencher des événements d’initialisation pendant l’ouverture du document.
 
     > [!NOTE]
-    > Si vous ouvrez un document ou classeur à partir de la **mise en route** volet des tâches, enfoncée **MAJ** n’ignore pas le code. En outre, maintenez la touche MAJ n’empêche pas d’événements de se déclencher après que le document est ouvert.
+    > Si vous ouvrez un document ou un classeur à partir du volet de tâches **prise en main** , le fait de maintenir la **touche Maj** enfoncée ne contourne pas le code. En outre, maintenir la touche Maj enfoncée n’empêche pas les événements d’être déclenchés une fois que le document est ouvert.
 
-     Cette méthode est utile si vous souhaitez ouvrir un document pour apporter des modifications sans le code en cours d’exécution et modification d’abord le document.
+     Cette méthode est utile si vous souhaitez ouvrir un document pour apporter des modifications sans que le code soit en cours d’exécution et modifier d’abord le document.
 
-## <a name="to-bypass-an-assembly-by-renaming-or-removing-it"></a>Pour ignorer un assembly en renommant ou en supprimant
+## <a name="to-bypass-an-assembly-by-renaming-or-removing-it"></a>Pour ignorer un assembly en le renommant ou en le supprimant
 
-- Si vous avez les autorisations nécessaires sur l’ordinateur où se trouve l’assembly, vous pouvez renommer ou supprimer l’assembly afin que le document ou le classeur ne peut pas le trouver. Cela entraîne une erreur qui est déclenchée chaque fois que le document Office est ouvert.
+- Si vous disposez des autorisations nécessaires sur l’ordinateur où se trouve l’assembly, vous pouvez renommer ou supprimer l’assembly afin que le document ou le classeur ne puisse pas le trouver. Une erreur se produit chaque fois que le document Office est ouvert.
 
-     Si la solution est utilisée par plusieurs personnes, cette méthode empêche la solution en cours d’exécution pour l’ensemble d'entre eux. Cela peut être utile si un problème se trouve dans le code ou un serveur référencé et que vous souhaitez arrêter tous les utilisateurs de l’exécuter.
+     Si la solution est utilisée par plusieurs personnes, cette méthode empêche la solution de s’exécuter pour toutes. Cela peut être utile si un problème se trouve dans le code ou un serveur référencé et si vous souhaitez empêcher tous les utilisateurs de l’exécuter.
 
 ## <a name="see-also"></a>Voir aussi
-- [Sécurisez les solutions Office](../vsto/securing-office-solutions.md)
+- [Sécuriser les solutions Office](../vsto/securing-office-solutions.md)
 - [Déployer une solution Office](../vsto/deploying-an-office-solution.md)
 - [Concevoir et créer des solutions Office](../vsto/designing-and-creating-office-solutions.md)
 - [Manifestes d’application et de déploiement dans les solutions Office](../vsto/application-and-deployment-manifests-in-office-solutions.md)

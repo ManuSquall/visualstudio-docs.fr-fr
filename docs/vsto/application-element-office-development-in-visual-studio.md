@@ -1,8 +1,8 @@
 ---
-title: '&lt;application&gt; élément (développement Office dans Visual Studio)'
+title: '&lt;application &gt; , élément (développement Office dans Visual Studio)'
 titleSuffix: ''
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - VB
 - CSharp
@@ -13,14 +13,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 80652f6752b87cf0413b0b3166b0cf3292231c25
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3540df77b4498376dcde389730e17e7506647fb8
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62942895"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85543739"
 ---
-# <a name="ltapplicationgt-element-office-development-in-visual-studio"></a>&lt;application&gt; élément (développement Office dans Visual Studio)
+# <a name="ltapplicationgt-element-office-development-in-visual-studio"></a>&lt;application &gt; , élément (développement Office dans Visual Studio)
   L’élément `application` de l’espace de noms `vstav3` encapsule la description de solutions Office. Les éléments enfants sont différents pour les personnalisations au niveau du document et les compléments VSTO.
 
 ## <a name="syntax-for-document-level-customizations"></a>Syntaxe pour les personnalisations au niveau du document
@@ -56,12 +56,12 @@ ms.locfileid: "62942895"
 ## <a name="elements-and-attributes"></a>Éléments et attributs
  L’élément `application` de l’espace de noms `vstav3` est le nœud qui encapsule toutes les informations propres à la personnalisation contenues dans l’espace de noms `vstov4` .
 
- L’élément `application` ne possède pas d’attributs.
+ L’élément `application` ne comporte pas d’attributs.
 
  L’élément `application` possède l’élément suivant.
 
 ### <a name="customization"></a>Personnalisation
- Le rôle de la `customization` élément dans le `vstov3` espace de noms est défini dans [ &#60;personnalisation&#62; élément &#40;développement Office dans Visual Studio&#41;](../vsto/customization-element-office-development-in-visual-studio.md).
+ Le rôle de l' `customization` élément dans l' `vstov3` espace de noms est défini dans [&#60;personnalisation&#62; élément &#40;développement Office dans Visual Studio&#41;](../vsto/customization-element-office-development-in-visual-studio.md).
 
 ## <a name="document-level-customization-example"></a>Exemple de personnalisation au niveau du document
 

@@ -1,9 +1,9 @@
 ---
-title: '&lt;entryPointsCollection&gt; élément (développement Office dans Visual Studio)'
+title: '&lt;&gt;élément entryPointsCollection (développement Office dans Visual Studio)'
 titleSuffix: ''
 ms.custom: seodec18
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - VB
 - CSharp
@@ -16,17 +16,17 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 4e877e186538622b3604e850040cbed0b018911d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ffa3c76f0f1afa0c9c445cfaf6f5f92484a73ba7
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62951890"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85543557"
 ---
-# <a name="ltentrypointscollectiongt-element-office-development-in-visual-studio"></a>&lt;entryPointsCollection&gt; élément (développement Office dans Visual Studio)
+# <a name="ltentrypointscollectiongt-element-office-development-in-visual-studio"></a>&lt;&gt;élément entryPointsCollection (développement Office dans Visual Studio)
   L’élément `entryPointsCollection` de l’espace de noms `vstav3` contient tous les éléments `entryPoints` associés aux solutions Office.
 
-## <a name="syntax"></a>Syntaxe
+## <a name="syntax"></a>Syntax
 
 ```xml
 <entryPointsCollection>
@@ -49,12 +49,12 @@ ms.locfileid: "62951890"
  `entryPointsCollection` comporte les éléments suivants.
 
 ### <a name="entrypoints"></a>entryPoints
- Obligatoire. Le rôle de la `entryPoints` élément dans le `vstav3` espace de noms est défini dans [ &#60;entryPoints&#62; élément &#40;développement Office dans Visual Studio&#41;](../vsto/entrypoints-element-office-development-in-visual-studio.md).
+ Obligatoire. Le rôle de l' `entryPoints` élément dans l' `vstav3` espace de noms est défini dans [&#60;élément entryPoints&#62; &#40;développement Office dans Visual Studio&#41;](../vsto/entrypoints-element-office-development-in-visual-studio.md).
 
 ## <a name="document-level-customization-example"></a>Exemple de personnalisation au niveau du document
 
 ### <a name="description"></a>Description
- L’exemple de code suivant illustre l’élément `entryPointsCollection` d’un manifeste d’application pour une solution au niveau du document déployée à l’aide de [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]. Cet exemple de code fait partie d’un exemple plus complet fourni dans [manifestes d’Application pour les solutions Office](../vsto/application-manifests-for-office-solutions.md).
+ L’exemple de code suivant illustre l’élément `entryPointsCollection` d’un manifeste d’application pour une solution au niveau du document déployée à l’aide de [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]. Cet exemple de code fait partie d’un exemple plus complet fourni dans [les manifestes d’application pour les solutions Office](../vsto/application-manifests-for-office-solutions.md).
 
 ### <a name="code"></a>Code
 
@@ -100,7 +100,7 @@ ms.locfileid: "62951890"
 ## <a name="vsto-add-in-example"></a>Exemple de complément VSTO
 
 ### <a name="description"></a>Description
- L’exemple de code suivant illustre l’élément `entryPointsCollection` d’un manifeste d’application pour une solution au niveau du document déployée à l’aide de [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]. Cet exemple de code fait partie d’un exemple plus complet fourni dans [manifestes d’Application pour les solutions Office](../vsto/application-manifests-for-office-solutions.md).
+ L’exemple de code suivant illustre l’élément `entryPointsCollection` d’un manifeste d’application pour une solution au niveau du document déployée à l’aide de [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]. Cet exemple de code fait partie d’un exemple plus complet fourni dans [les manifestes d’application pour les solutions Office](../vsto/application-manifests-for-office-solutions.md).
 
 ### <a name="code"></a>Code
 
@@ -119,10 +119,10 @@ ms.locfileid: "62951890"
   </vstav3:entryPointsCollection>
 ```
 
-## <a name="multi-project-deployment-example"></a>Exemple de déploiement à projets multiples
+## <a name="multi-project-deployment-example"></a>Exemple de déploiement de plusieurs projets
 
 ### <a name="description"></a>Description
- L’exemple de code suivant illustre un élément `entryPointsCollection` de manifeste d’application pour le déploiement de plusieurs projets contenant deux solutions Office. Cet exemple de code fait partie d’un exemple plus complet fourni dans [manifestes d’Application pour les solutions Office](../vsto/application-manifests-for-office-solutions.md).
+ L’exemple de code suivant illustre un élément `entryPointsCollection` de manifeste d’application pour le déploiement de plusieurs projets contenant deux solutions Office. Cet exemple de code fait partie d’un exemple plus complet fourni dans [les manifestes d’application pour les solutions Office](../vsto/application-manifests-for-office-solutions.md).
 
 ### <a name="code"></a>Code
 

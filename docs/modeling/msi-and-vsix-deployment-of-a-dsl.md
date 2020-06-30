@@ -1,23 +1,23 @@
 ---
 title: Déploiement MSI et VSIX d'un langage spécifique à un domaine
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 author: JoshuaPartlow
 ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 96922848adf053e3b728196a445407f3d5f86428
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 6d4de8d7560cb43115a30e29516e0e88b4d02d21
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75590187"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85542614"
 ---
 # <a name="msi-and-vsix-deployment-of-a-dsl"></a>Déploiement MSI et VSIX d'un langage spécifique à un domaine
 Vous pouvez installer un langage spécifique à un domaine sur votre ordinateur ou sur d’autres ordinateurs. Visual Studio doit déjà être installé sur l’ordinateur cible.
 
-## <a name="which"></a>Choix entre un déploiement VSIX et un déploiement MSI
+## <a name="choosing-between-vsix-and-msi-deployment"></a><a name="which"></a>Choix entre un déploiement VSIX et un déploiement MSI
  Il existe deux méthodes de déploiement d’un langage spécifique à un domaine :
 
 |Méthode|Avantages|
@@ -25,7 +25,7 @@ Vous pouvez installer un langage spécifique à un domaine sur votre ordinateur 
 |VSX (extension Visual Studio)|Très facile à déployer : copiez et exécutez le fichier **. vsix** à partir du projet DslPackage.<br /><br /> Pour plus d’informations [, consultez Installation et désinstallation d’une solution DSL à l’aide de VSX](#Installing).|
 |MSI (fichier du programme d’installation)|-Permet à l’utilisateur d’ouvrir Visual Studio en double-cliquant sur un fichier DSL.<br />-Associe une icône au type de fichier DSL sur l’ordinateur cible.<br />-Associe un XSD (schéma XML) au type de fichier DSL. Cela évite les avertissements lorsque le fichier est chargé dans Visual Studio.<br /><br /> Vous devez ajouter un projet d’installation à votre solution pour créer un MSI.<br /><br /> Pour plus d’informations, consultez [déploiement d’une solution DSL à l’aide d’un fichier MSI](#msi).|
 
-## <a name="Installing"></a>Installer et désinstaller un DSL à l’aide de VSX
+## <a name="install-and-uninstall-a-dsl-by-using-the-vsx"></a><a name="Installing"></a>Installer et désinstaller un DSL à l’aide de VSX
 
 Lorsque votre solution DSL est installée par cette méthode, l’utilisateur peut ouvrir un fichier DSL à partir de Visual Studio, mais ce fichier ne peut pas être ouvert à partir de l’Explorateur Windows.
 
@@ -35,9 +35,9 @@ Lorsque votre solution DSL est installée par cette méthode, l’utilisateur pe
 
    1. Dans **Explorateur de solutions**, cliquez avec le bouton droit sur le projet **DslPackage** , puis cliquez sur **ouvrir le dossier dans l’Explorateur de fichiers**.
 
-   2. Localisez le fichier **bin\\\*\\** _YourProject_ **. DslPackage. vsix**
+   2. Localisez le **fichier \\ \* \\ bin**_YourProject_**. DslPackage. vsix**
 
-2. Copiez le fichier **. vsix** sur l’ordinateur cible sur lequel vous souhaitez installer le DSL. Il peut s’agir de votre propre ordinateur ou d’un autre ordinateur.
+2. Copiez le fichier **. vsix** sur l’ordinateur cible sur lequel vous souhaitez installer le DSL. Il peut s’agir de votre propre ordinateur ou d’un autre.
 
    - L’ordinateur cible doit avoir l’une des éditions de [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] qui prend en charge DSL au moment de l’exécution. Pour plus d’informations, consultez [éditions de Visual Studio prises en charge pour la visualisation & le kit de développement logiciel Modeling SDK](../modeling/supported-visual-studio-editions-for-visualization-amp-modeling-sdk.md).
 
@@ -63,7 +63,7 @@ Lorsque votre solution DSL est installée par cette méthode, l’utilisateur pe
 
    *LocalAppData* **\Microsoft\VisualStudio\10.0\Extensions**
 
-## <a name="msi"></a>Déploiement d’une solution DSL dans un MSI
+## <a name="deploying-a-dsl-in-an-msi"></a><a name="msi"></a>Déploiement d’une solution DSL dans un MSI
  En définissant un fichier MSI (Windows Installer) pour votre DSL, vous pouvez autoriser les utilisateurs à ouvrir des fichiers DSL à partir de l’Explorateur Windows. Vous pouvez également associer une icône et une brève description à votre extension de nom de fichier. En outre, le MSI peut installer un XSD qui peut être utilisé pour valider des fichiers DSL. Si vous le souhaitez, vous pouvez ajouter d’autres composants à la MSI qui seront installés en même temps.
 
  Pour plus d’informations sur les fichiers MSI et d’autres options de déploiement, consultez [déploiement d’applications, de services et de composants](../deployment/deploying-applications-services-and-components.md).
@@ -72,11 +72,11 @@ Lorsque votre solution DSL est installée par cette méthode, l’utilisateur pe
 
 ### <a name="to-deploy-a-dsl-in-an-msi"></a>Pour déployer un DSL dans un MSI
 
-1. Définissez `InstalledByMsi` dans le manifeste de l’extension. Cela empêche l’installation et la désinstallation de la VSX, sauf par le MSI. Cela est important si vous incluez d’autres composants dans le MSI.
+1. Défini `InstalledByMsi` dans le manifeste de l’extension. Cela empêche l’installation et la désinstallation de la VSX, sauf par le MSI. Cela est important si vous incluez d’autres composants dans le MSI.
 
    1. Ouvrir DslPackage\source.extension.tt
 
-   2. Insérez la ligne suivante avant `<SupportedProducts>`:
+   2. Insérez la ligne suivante avant `<SupportedProducts>` :
 
        ```xml
        <InstalledByMsi>true</InstalledByMsi>
@@ -102,11 +102,11 @@ Lorsque votre solution DSL est installée par cette méthode, l’utilisateur pe
 
     Visual Studio crée un fichier nommé **CreateMsiSetupProject. vdproj**.
 
-6. Dans l’Explorateur Windows, copiez Dsl\\\*.vdproj vers un nouveau dossier nommé le programme d’installation.
+6. Dans l’Explorateur Windows, copiez DSL \\ *. vdproj vers un nouveau dossier nommé Setup.
 
     (Si vous le souhaitez, vous pouvez maintenant exclure CreateMsiSetupProject.tt de votre projet DSL.)
 
-7. Dans **Explorateur de solutions**, ajoutez **le programme d’installation\\\*. vdproj** en tant que projet existant.
+7. Dans **Explorateur de solutions**, ajoutez **Setup \\ \* . vdproj** en tant que projet existant.
 
 8. Dans le menu **projet** , cliquez sur **dépendances du projet**.
 

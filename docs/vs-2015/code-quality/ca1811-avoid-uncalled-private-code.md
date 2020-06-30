@@ -15,17 +15,17 @@ caps.latest.revision: 22
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: ccc439e0d84d1fced4ba0359385a6964356d5df6
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 223b2ff9aa25ddd94a3c62eb9e641127a1cace4e
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72668457"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85543817"
 ---
 # <a name="ca1811-avoid-uncalled-private-code"></a>CA1811 : Évitez le recours à du code privé non appelé
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Élément|Valeur|
 |-|-|
 |TypeName|AvoidUncalledPrivateCode|
 |CheckId|CA1811|
@@ -41,7 +41,7 @@ ms.locfileid: "72668457"
 
 - Constructeurs de sérialisation.
 
-- Les méthodes marquées avec <xref:System.Runtime.InteropServices.ComRegisterFunctionAttribute?displayProperty=fullName> ou <xref:System.Runtime.InteropServices.ComUnregisterFunctionAttribute?displayProperty=fullName>.
+- Méthodes marquées avec <xref:System.Runtime.InteropServices.ComRegisterFunctionAttribute?displayProperty=fullName> ou <xref:System.Runtime.InteropServices.ComUnregisterFunctionAttribute?displayProperty=fullName> .
 
 - Membres qui sont des substitutions.
 
@@ -55,8 +55,8 @@ ms.locfileid: "72668457"
  Il est possible de supprimer sans risque un avertissement de cette règle.
 
 ## <a name="related-rules"></a>Règles associées
- [CA1812 : Évitez les classes internes non instanciées](../code-quality/ca1812-avoid-uninstantiated-internal-classes.md)
+ [CA1812 : Évitez les classes internes non instanciées](../code-quality/ca1812-avoid-uninstantiated-internal-classes.md)
 
  [CA1801 : Passez en revue les paramètres inutilisés](../code-quality/ca1801-review-unused-parameters.md)
 
- [CA1804 : Supprimez les variables locales inutilisées](../code-quality/ca1804-remove-unused-locals.md)
+ [CA1804 : Supprimez les variables locales inutilisées](../code-quality/ca1804-remove-unused-locals.md)

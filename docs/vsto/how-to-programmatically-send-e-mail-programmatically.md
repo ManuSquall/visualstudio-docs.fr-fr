@@ -1,7 +1,7 @@
 ---
-title: 'Procédure : Envoyer un courrier électronique par programmation'
+title: 'Comment : envoyer un message électronique par programmation'
 ms.date: 08/14/2019
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -15,14 +15,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 72d033add2ba8320b14eebd5af700ab225d34410
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.openlocfilehash: c56527f18857ad3c4ac82060ffd5794b72ac017c
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69551755"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85543258"
 ---
-# <a name="how-to-programmatically-send-email"></a>Procédure : Envoyer un courrier électronique par programmation
+# <a name="how-to-programmatically-send-email"></a>Comment : envoyer un message électronique par programmation
   Cet exemple envoie un message électronique aux contacts dont le nom de domaine est **example.com** dans leurs adresses e-mail.
 
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]
@@ -42,6 +42,6 @@ ms.locfileid: "69551755"
 
 ## <a name="see-also"></a>Voir aussi
 - [Utiliser des éléments de messagerie](../vsto/working-with-mail-items.md)
-- [Guide pratique pour Créer un élément de messagerie par programmation](../vsto/how-to-programmatically-create-an-e-mail-item.md)
-- [Guide pratique pour Accéder par programme aux contacts Outlook](../vsto/how-to-programmatically-access-outlook-contacts.md)
-- [Guide pratique : Effectuer des actions par programme lors de la réception d’un message électronique](../vsto/how-to-programmatically-perform-actions-when-an-e-mail-message-is-received.md)
+- [Comment : créer un élément de courrier électronique par programmation](../vsto/how-to-programmatically-create-an-e-mail-item.md)
+- [Comment : accéder aux contacts Outlook par programmation](../vsto/how-to-programmatically-access-outlook-contacts.md)
+- [Comment : effectuer des actions par programmation lors de la réception d’un message électronique](../vsto/how-to-programmatically-perform-actions-when-an-e-mail-message-is-received.md)

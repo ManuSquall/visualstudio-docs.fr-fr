@@ -1,7 +1,7 @@
 ---
-title: 'Procédure : Afficher des commentaires de feuille de calcul par programmation'
+title: 'Comment : afficher des commentaires de feuille de calcul par programmation'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -13,14 +13,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: cc030fed25409f5c034abfd07f1f9358bfea593b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 0fc84e2726cd7a70b8fc59b0f1ac2b3377f9c4af
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62812694"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85543362"
 ---
-# <a name="how-to-programmatically-display-worksheet-comments"></a>Procédure : Afficher des commentaires de feuille de calcul par programmation
+# <a name="how-to-programmatically-display-worksheet-comments"></a>Comment : afficher des commentaires de feuille de calcul par programmation
   Vous pouvez afficher et masquer des commentaires dans des feuilles de calcul Microsoft Office Excel par programmation.
 
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]
@@ -40,6 +40,6 @@ ms.locfileid: "62812694"
      [!code-vb[Trin_VstcoreExcelAutomationAddIn#21](../vsto/codesnippet/VisualBasic/trin_vstcoreexcelautomationaddin/ThisAddIn.vb#21)]
 
 ## <a name="see-also"></a>Voir aussi
-- [Travailler avec des feuilles de calcul](../vsto/working-with-worksheets.md)
-- [Guide pratique pour Ajouter et supprimer des commentaires de feuille de calcul par programmation](../vsto/how-to-programmatically-add-and-delete-worksheet-comments.md)
-- [Éléments hôtes et la vue d’ensemble des contrôles hôtes](../vsto/host-items-and-host-controls-overview.md)
+- [Utiliser des feuilles de calcul](../vsto/working-with-worksheets.md)
+- [Comment : ajouter et supprimer des commentaires de feuille de calcul par programmation](../vsto/how-to-programmatically-add-and-delete-worksheet-comments.md)
+- [Vue d’ensemble des éléments hôtes et des contrôles hôtes](../vsto/host-items-and-host-controls-overview.md)

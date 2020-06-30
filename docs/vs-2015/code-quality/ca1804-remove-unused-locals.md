@@ -15,17 +15,17 @@ caps.latest.revision: 20
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 824a65e765f21748b97292beea64ea6c9bd64a1b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 4bd57d76acd0c46e39bb2c01449146715abc0666
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72671561"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85543882"
 ---
 # <a name="ca1804-remove-unused-locals"></a>CA1804 : Supprimez les variables locales inutilisées
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Élément|Valeur|
 |-|-|
 |TypeName|RemoveUnusedLocals|
 |CheckId|CA1804|
@@ -39,7 +39,7 @@ ms.locfileid: "72671561"
  Les variables locales inutilisées et les assignations inutiles augmentent la taille d'un assembly et font baisser les performances.
 
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations
- Pour corriger une violation de cette règle, supprimez ou utilisez la variable locale. Notez que le C# compilateur inclus avec [!INCLUDE[dnprdnlong](../includes/dnprdnlong-md.md)] supprime les variables locales inutilisées lorsque l’option `optimize` est activée.
+ Pour corriger une violation de cette règle, supprimez ou utilisez la variable locale. Notez que le compilateur C# inclus dans [!INCLUDE[dnprdnlong](../includes/dnprdnlong-md.md)] supprime les variables locales inutilisées lorsque l' `optimize` option est activée.
 
 ## <a name="when-to-suppress-warnings"></a>Quand supprimer les avertissements
  Supprimez un avertissement de cette règle si la variable a été émise par le compilateur. Il est également possible de supprimer un avertissement de cette règle, ou de désactiver la règle, si les performances et la maintenance du code ne sont pas des préoccupations principales.
@@ -51,10 +51,10 @@ ms.locfileid: "72671561"
  [!code-vb[FxCop.Performance.UnusedLocals#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Performance.UnusedLocals/vb/FxCop.Performance.UnusedLocals.vb#1)]
 
 ## <a name="related-rules"></a>Règles associées
- [CA1809 : Évitez le surplus de variables locales](../code-quality/ca1809-avoid-excessive-locals.md)
+ [CA1809 : Évitez le surplus de variables locales](../code-quality/ca1809-avoid-excessive-locals.md)
 
- [CA1811 : Évitez le recours à du code privé non appelé](../code-quality/ca1811-avoid-uncalled-private-code.md)
+ [CA1811 : Évitez le recours à du code privé non appelé](../code-quality/ca1811-avoid-uncalled-private-code.md)
 
- [CA1812 : Évitez les classes internes non instanciées](../code-quality/ca1812-avoid-uninstantiated-internal-classes.md)
+ [CA1812 : Évitez les classes internes non instanciées](../code-quality/ca1812-avoid-uninstantiated-internal-classes.md)
 
  [CA1801 : Passez en revue les paramètres inutilisés](../code-quality/ca1801-review-unused-parameters.md)

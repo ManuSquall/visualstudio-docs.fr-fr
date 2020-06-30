@@ -1,9 +1,9 @@
 ---
-title: '&lt;formRegion&gt; élément (développement Office dans Visual Studio)'
+title: '&lt;formRegion &gt; , élément (développement Office dans Visual Studio)'
 titleSuffix: ''
 ms.custom: seodec18
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - VB
 - CSharp
@@ -14,17 +14,17 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 33bc2ce58f90f37a1219427558a01bd13e5654df
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9e13576ef673728d673d0351cf289a80944584bd
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62414535"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85543530"
 ---
-# <a name="ltformregiongt-element-office-development-in-visual-studio"></a>&lt;formRegion&gt; élément (développement Office dans Visual Studio)
-  Le `formRegion` élément de la `vstov4` espace de noms identifie une zone de formulaire Microsoft Office Outlook associée à un composant logiciel complément VSTO.
+# <a name="ltformregiongt-element-office-development-in-visual-studio"></a>&lt;formRegion &gt; , élément (développement Office dans Visual Studio)
+  L' `formRegion` élément de l' `vstov4` espace de noms identifie une zone de formulaire Microsoft Office Outlook associée à un complément VSTO.
 
-## <a name="syntax"></a>Syntaxe
+## <a name="syntax"></a>Syntax
 
 ```xml
 <formRegion
@@ -35,7 +35,7 @@ ms.locfileid: "62414535"
 ```
 
 ## <a name="elements-and-attributes"></a>Éléments et attributs
- L’élément `formRegion` de l’espace de noms `vstov4` identifie une zone de formulaire associée à un complément VSTO Outlook. Il est obligatoire uniquement pour les compléments VSTO Outlook qui incluent des zones de formulaire.
+ L’élément `formRegion` de l’espace de noms `vstov4` identifie une zone de formulaire associée à un complément VSTO Outlook. Il est uniquement obligatoire pour les compléments VSTO Outlook qui incluent des zones de formulaire.
 
  Plusieurs éléments `formRegion` peuvent être définis à l’intérieur d’un élément `formRegions` pour un même complément VSTO.
 
@@ -57,7 +57,7 @@ ms.locfileid: "62414535"
 |`name`|Obligatoire. Identifie le formulaire associé à la zone de formulaire.|
 
 ## <a name="example"></a>Exemple
- L’exemple de code suivant illustre un élément `formRegion` dans le manifeste d’application d’un complément VSTO Outlook déployé à l’aide de [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]. Cette zone de formulaire est associée à trois classes de message. Cet exemple de code fait partie d’un exemple plus complet fourni dans [manifestes d’Application pour les solutions Office](../vsto/application-manifests-for-office-solutions.md).
+ L’exemple de code suivant illustre un élément `formRegion` dans le manifeste d’application d’un complément VSTO Outlook déployé à l’aide de [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]. Cette zone de formulaire est associée à trois classes de message. Cet exemple de code fait partie d’un exemple plus complet fourni dans [les manifestes d’application pour les solutions Office](../vsto/application-manifests-for-office-solutions.md).
 
 ```xml
 <vstov4:formRegion

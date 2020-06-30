@@ -1,7 +1,7 @@
 ---
 title: 'Comment : modifier la position d’un onglet sur le ruban'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: bf943f9df4499b30e294e4d7e8bf48b25aa52eab
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: 8f821ea2a469fc06f80a7aaea96d07274d02a81d
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72985984"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85544857"
 ---
 # <a name="how-to-change-the-position-of-a-tab-on-the-ribbon"></a>Comment : modifier la position d’un onglet sur le ruban
   Vous pouvez modifier l’ordre des onglets personnalisés sur un ruban à l’aide de l' **éditeur de collections Tab**. Vous pouvez positionner les onglets personnalisés avant ou après un onglet intégré sur le ruban. Un onglet intégré est un onglet qui se trouve déjà sur le ruban d’une application Microsoft Office. Par exemple, l’onglet **données** est un onglet intégré dans Excel.
@@ -59,6 +59,6 @@ ms.locfileid: "72985984"
 ## <a name="see-also"></a>Voir aussi
 - [Vue d’ensemble du ruban](../vsto/ribbon-overview.md)
 - [Concepteur de ruban](../vsto/ribbon-designer.md)
-- [Élément XML Ribbon](../vsto/ribbon-xml.md)
+- [Ribbon XML](../vsto/ribbon-xml.md)
 - [Procédure pas à pas : création d’un onglet personnalisé à l’aide du concepteur de ruban](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)
 - [Procédure pas à pas : création d’un onglet personnalisé à l’aide du ruban XML](../vsto/walkthrough-creating-a-custom-tab-by-using-ribbon-xml.md)

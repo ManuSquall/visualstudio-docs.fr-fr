@@ -11,12 +11,12 @@ ms.assetid: 0b40d495-f17f-4bb9-ace8-b365a7172784
 caps.latest.revision: 26
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 6220afc2bdf75cc22529c65d5514f5f9e0766555
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.openlocfilehash: 907b71d82a3c630bedc48209e735d9cf817432ad
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/13/2020
-ms.locfileid: "75919212"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85543154"
 ---
 # <a name="visual-studio-shell-integrated"></a>Visual Studio Shell (intégré)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,28 +26,27 @@ Le shell intégré de Visual Studio comprend l’environnement de développement
  L’interpréteur de commandes intégré de Visual Studio est en fait une combinaison de l’interpréteur de commandes isolé de Visual Studio plus une installation supplémentaire qui inclut des composants intégrés à l’interpréteur de commandes.  Votre application shell intégrée doit inclure à la fois le package redistribuable Shell isolé et le package redistribuable Shell intégré, à la fois à partir des [Packages redistribuables de l’interpréteur](https://visualstudio.microsoft.com/vs/older-downloads/isolated-shell/)de commandes Microsoft Visual Studio.  
   
 > [!NOTE]
-> avant de pouvoir accéder aux packages redistribuables du shell isolé et intégré, vous serez invité à répondre à un petit questionnaire.  Une fois le questionnaire rempli, vous serez redirigé vers une page Visual Studio Connect avec des liens de téléchargement de packages redistribuables.  Vous trouverez les liens de téléchargement lors des visites suivantes sur le site Visual Studio Connect sous l’onglet  **&#124; programmes Visual Studio 2015 intégré et environnement isolé** .  
+> Avant de pouvoir accéder aux packages redistribuables de l’interpréteur de commandes isolé et intégré, vous serez invité à fournir une brève enquête client.  Après avoir complété l’enquête, vous serez redirigé vers une page de connexion à Visual Studio avec des liens de téléchargement de packages redistribuables.  Vous trouverez les liens de téléchargement lors des visites suivantes sur le site Visual Studio Connect sous l’onglet **programmes &#124; Visual studio 2015 intégré et Shell isolé** .  
   
  Si vous installez votre application shell intégrée sur le même ordinateur qu’une version complète de Visual Studio, les composants de votre application sont intégrés directement dans Visual Studio.  
   
 ## <a name="features-in-the-integrated-shell"></a>Fonctionnalités de l’interpréteur de commandes intégré  
   
-|||  
+|Domaine de fonctionnalités|Fonctionnalité|  
 |-|-|  
-|Domaine de fonctionnalités|Composant|  
-|Prise en charge linguistique|-Aucun|  
+|Prise en charge de la langue|-Aucun|  
 |IDE|<ul><li>Paramètres<br /><br /> <ul><li>Créer des paramètres</li><li>Importer et exporter des paramètres</li><li>Réinitialiser les paramètres</li></ul></li><li>Intégration de la **boîte à outils**</li><li>Intégration de **liste des tâches**</li><li>Intégration de l’aide</li><li>**Options** , boîte de dialogue</li><li>Gestion des polices et des couleurs</li><li>Fenêtre **sortie**</li><li>Fenêtre **commande**</li><li>Gestion des fenêtres</li><li>Commandes, menus et combinaisons de touches</li><li>Runtime de langage spécifique à un domaine (DSL)</li></ul>|  
 |Système de projet et types de projets|-Solutions et dossiers de solution<br />-Gestionnaire de configuration de solution<br />-Gestion des éléments<br />-Solutions à projet unique et à projets multiples<br />-Concepteur d’applications (propriétés simplifiées du projet)<br />-Ajouter une référence Web<br />-Ajouter une référence de service<br />-Projet unique<br />-Types de projets de site Web<br />-Projets d’application Web|  
-|Générer|-Étapes de génération personnalisée dans l’IDE<br />-Précompilation pour la protection de la propriété intellectuelle (IP)<br />-Signature du code<br />     MSBuild|  
-|Éditeur|-Outils de navigation du code (recherche unifiée, définition de la source, héritage)<br />-Navigation dans le code<br />-   IntelliSense<br />-   SmartTags<br />-Refactorisation<br />-Listing convivial<br />-Filtrage IntelliSense<br />-   la fenêtre **définition de code**|  
-|Designer|-Windows Presentation Foundation designer<br />-Concepteur Windows Forms<br />-Concepteur Web et éditeur HTML|  
-|Données|-   **Explorateur de serveurs** (simplifié : données uniquement). Voir la remarque 1.<br />-   la fenêtre **sources de données**<br />-Jeu complet de contrôles de données<br />-Éditeur XML<br />-Liaison de données à la source de données locale (. MDF ou. MDB<br />-Liaison de données à l’objet<br />-Liaison de données au service Web<br />-Liaison de données au serveur de base de données local<br />-Liaison de données au serveur de base de données distant<br />-Outils DDL pour les données distantes<br />-   **Explorateur de serveurs** extensibilité (exemples[!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)])|  
-|Débogueur|-Débogage local. Voir la remarque 2.<br />-Débogage managé<br />-Débogage local<br />-Attacher au processus local<br />-Attacher au processus distant<br />-Délégué anonyme<br />-Domaines d’application<br />-Débogage ASPX<br />-Attributs<br />-Break pendant Func-eval<br />-Points d’arrêt<br />-Contraintes de point d’arrêt<br />-CallStack<br />fenêtre de **commande** -   <br />-Débogage inter-threads<br />-Conseils sur les données<br />-Visualiseur de données<br />-Prise en charge du débogueur pour les Assistants Débogage managé (MDA)<br />-Prise en charge du débogueur pour le redirecteur de type<br />-Prise en charge de DTEEvents pour le banc d’or<br />-UNIQUEMENT mon code pas à pas<br />-Test AppID du débogueur (DBGCLR)<br />-Profil du débogueur<br />-Outils et options du débogueur<br />-Iterator de débogage<br />-Évaluation d’une expression au moment du design<br />- C# Évaluateur d’expression<br />-Code machine<br />-Modifier & continuer<br />-Fenêtres de l’évaluateur d’expression (espion, variables locales, automatique)<br />-Helper d’exception<br />-   Exceptions<br />-Exécution<br />- Génériques<br />-Obtention de la source de droite<br />-HPC/débogage de cluster<br />-Le débogage multilingue intégré<br />-Débogage d’interopérabilité<br />-Débogage juste-à-temps<br />-Débogage local<br />-Débogage managé<br />-Contrôle manuel (fenêtre processus)<br />-   Mémoire<br />-Prise en charge du minidump<br />-Modules<br />-Débogage multiprocessus<br />-Débogage natif<br />-Nouvelle prise en charge du moteur de débogage<br />-Débogage de code optimisé<br />-Filtrage Windows en sortie<br />-Processus d’hébergement pour le débogage managé<br />-Processus<br />-   Quickwatch<br />-Registres<br />-S’inscrit dans la pile<br />-Débogage à distance<br />-Valeurs de retour<br />-Débogage de script<br />-Prise en charge du service source<br />-Sécurité<br />-Côte à côte<br />-SQL<br />-Serveur de symboles<br />-Points de trace<br />-Thread<br />-Visualisations<br />-Débogueur XSLT (Extensible Stylesheet Language Transformations)|  
+|Build|-Étapes de génération personnalisée dans l’IDE<br />-Précompilation pour la protection de la propriété intellectuelle (IP)<br />-Signature du code<br />     MSBuild|  
+|Éditeur|-Outils de navigation du code (recherche unifiée, définition de la source, héritage)<br />-Navigation dans le code<br />-IntelliSense<br />-SmartTags<br />-Refactorisation<br />-Listing convivial<br />-Filtrage IntelliSense<br />-   Fenêtre **définition de code**|  
+|Concepteur|-Windows Presentation Foundation designer<br />-Concepteur Windows Forms<br />-Concepteur Web et éditeur HTML|  
+|Données|-   **Explorateur de serveurs** (simplifié : données uniquement). Voir la remarque 1.<br />-   Fenêtre **sources de données**<br />-Jeu complet de contrôles de données<br />-Éditeur XML<br />-Liaison de données à la source de données locale (. MDF ou. MDB<br />-Liaison de données à l’objet<br />-Liaison de données au service Web<br />-Liaison de données au serveur de base de données local<br />-Liaison de données au serveur de base de données distant<br />-Outils DDL pour les données distantes<br />-   Extensibilité des **Explorateur de serveurs** ( [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] exemples)|  
+|Débogueur|-Débogage local. Voir la remarque 2.<br />-Débogage managé<br />-Débogage local<br />-Attacher au processus local<br />-Attacher au processus distant<br />-Délégué anonyme<br />-Domaines d’application<br />-Débogage ASPX<br />-Attributs<br />-Break pendant Func-eval<br />-Points d’arrêt<br />-Contraintes de point d’arrêt<br />-CallStack<br />-   Fenêtre **commande**<br />-Débogage inter-threads<br />-Conseils sur les données<br />-Visualiseur de données<br />-Prise en charge du débogueur pour les Assistants Débogage managé (MDA)<br />-Prise en charge du débogueur pour le redirecteur de type<br />-Prise en charge de DTEEvents pour le banc d’or<br />-UNIQUEMENT mon code pas à pas<br />-Test AppID du débogueur (DBGCLR)<br />-Profil du débogueur<br />-Outils et options du débogueur<br />-Iterator de débogage<br />-Évaluation d’une expression au moment du design<br />-Évaluateur d’expression C#<br />-Code machine<br />-Modifier & continuer<br />-Fenêtres de l’évaluateur d’expression (espion, variables locales, automatique)<br />-Helper d’exception<br />-Exceptions<br />-Exécution<br />- Génériques<br />-Obtention de la source de droite<br />-HPC/débogage de cluster<br />-Le débogage multilingue intégré<br />-Débogage d’interopérabilité<br />-Débogage juste-à-temps<br />-Débogage local<br />-Débogage managé<br />-Contrôle manuel (fenêtre processus)<br />-   Mémoire<br />-Prise en charge du minidump<br />-Modules<br />-Débogage multiprocessus<br />-Débogage natif<br />-Nouvelle prise en charge du moteur de débogage<br />-Débogage de code optimisé<br />-Filtrage Windows en sortie<br />-Processus d’hébergement pour le débogage managé<br />-Processus<br />-Espion express<br />-Registres<br />-S’inscrit dans la pile<br />-Débogage à distance<br />-Valeurs de retour<br />-Débogage de script<br />-Prise en charge du service source<br />-Sécurité<br />-Côte à côte<br />-SQL<br />-Serveur de symboles<br />-Points de trace<br />-Thread<br />-Visualisations<br />-Débogueur XSLT (Extensible Stylesheet Language Transformations)|  
 |Support 64 bits|-débogage 64 bits pour le code managé et le code natif, tous les langages<br />-prise en charge native x64|  
 |Contrôle de code source (SCC)|-Intégration SCC de base. Voir la remarque 3.<br />-Vérification des outils et options|  
 |Extensibilité|-Utiliser les VSPackages et les composants MEF|  
   
-## <a name="notes"></a>Remarques  
+## <a name="notes"></a>Notes  
   
 #### <a name="1-data-tools"></a>1. outils de données  
  L’environnement intégré comprend des outils de développement de base de données tels que la prise en charge de l’extensibilité des données et le **Explorateur de solutions**simplifié. Toutefois, les rapports SQL Server Express, SQL Reporting et Crystal ne sont pas inclus dans l’interpréteur de commandes intégré.  
@@ -79,4 +78,4 @@ Le shell intégré de Visual Studio comprend l’environnement de développement
 - Aucun langage Visual Studio ou les modèles de projet ou d’élément de projet associés ne sont inclus dans l’interpréteur de commandes intégré. Aucune implémentation spécifique à une langue d’autres fonctionnalités n’est incluse, par exemple Visual Basic des extraits de code.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Présentation de l’extension de Visual Studio](https://msdn.microsoft.com/library/3e9078d7-2763-4cc4-8e20-fac69d747f59)
+ [Vue d’ensemble de l’extension de Visual Studio](https://msdn.microsoft.com/library/3e9078d7-2763-4cc4-8e20-fac69d747f59)

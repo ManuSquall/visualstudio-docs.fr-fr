@@ -1,7 +1,7 @@
 ---
-title: Iwefdebuggingsupport, interface
+title: Interface Iwefdebuggingsupport,
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: interface
 dev_langs:
 - VB
 - CSharp
@@ -10,17 +10,17 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a71adf5371275fbbdc19cdf09be96ef900ec073d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 0a4883d36c1833c66a2539380184521b070f5c2a
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62583761"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85544727"
 ---
-# <a name="iwefdebuggingsupport-interface"></a>Iwefdebuggingsupport, interface
-  Implémenté par un environnement de débogage, tels que Visual Studio, afin de faciliter le débogage des applications pour Office. L’application Office, telles que Word ou Excel, obtient cette interface à partir de Visual Studio, puis appelle les méthodes sur l’interface à certains points pendant la session de débogage.
+# <a name="iwefdebuggingsupport-interface"></a>Interface Iwefdebuggingsupport,
+  Implémenté par un environnement de débogage, tel que Visual Studio, pour faciliter le débogage des applications pour Office. L’application Office, telle que Word ou Excel, obtient cette interface à partir de Visual Studio, puis appelle les méthodes sur l’interface à certains points pendant la session de débogage.
 
-## <a name="syntax"></a>Syntaxe
+## <a name="syntax"></a>Syntax
 
 ```csharp
 [
@@ -37,9 +37,9 @@ interface IWefDebuggingSupport : IUnknown
 ```
 
 ## <a name="methods"></a>Méthodes
- Le tableau suivant répertorie les méthodes qui définit l’iwefdebuggingsupport, interface.
+ Le tableau suivant répertorie les méthodes définies par l’interface Iwefdebuggingsupport,.
 
 |Nom|Description|
 |----------|-----------------|
-|[Getautoinsertextensions, méthode](../vsto/getautoinsertextensions-method.md)|Obtient des informations sur les applications pour Office qui doivent être insérés automatiquement pendant le débogage.|
-|[Setwefprocessid, méthode](../vsto/setwefprocessid-method.md)|Fournit l’identificateur de processus qui exécutera le contenu de l’infrastructure d’Extensions Web (WEF).|
+|[Méthode Getautoinsertextensions,](../vsto/getautoinsertextensions-method.md)|Obtient des informations sur les applications pour Office qui doivent être insérées automatiquement pendant le débogage.|
+|[Méthode Setwefprocessid,](../vsto/setwefprocessid-method.md)|Fournit l’identificateur de processus qui exécutera le contenu WEF (Web extensions Framework).|

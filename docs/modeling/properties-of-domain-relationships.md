@@ -4,37 +4,37 @@ ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - Domain-Specific Language, domain relationships
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d08f453c3c52f8520dacc26f9b636fd8c8bcafde
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 2de06e33b26f7af66dc0670193561758c5fa5896
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72747474"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85544155"
 ---
 # <a name="properties-of-domain-relationships"></a>Propriétés des relations de domaine
 Les propriétés du tableau suivant sont associées à une relation de domaine. Pour plus d’informations sur les relations de domaine, consultez [Présentation des modèles, des classes et des relations](../modeling/understanding-models-classes-and-relationships.md). Pour plus d’informations sur l’utilisation de ces propriétés, consultez [personnalisation et extension d’un langage spécifique à un domaine](../modeling/customizing-and-extending-a-domain-specific-language.md).
 
-|Property|Description|Valeur par défaut|
+|Propriété|Description|Default|
 |-|-|-|
-|Modificateur d'accès|Niveau d’accès de la relation de domaine (`public` ou `internal`).|`public`|
-|Attributs personnalisés|Utilisé pour ajouter des attributs à la classe de code source qui est générée à partir de la relation de domaine.|\<aucune>|
-|Génère un doublon dérivé|Si `True`, une classe de base et une classe partielle (pour prendre en charge la personnalisation via des substitutions) sont générées. Pour plus d’informations, consultez [substitution et extension des classes générées](../modeling/overriding-and-extending-the-generated-classes.md).|`False`|
-|A un constructeur personnalisé|Si `True`, indique qu’un constructeur personnalisé est fourni dans le code source. Pour plus d’informations, consultez [substitution et extension des classes générées](../modeling/overriding-and-extending-the-generated-classes.md).|`False`|
-|Modificateur d’héritage|Décrit le type d’héritage de la classe de code source qui est généré à partir de la relation de domaine (`none`, `abstract` ou `sealed`).|\<aucune>|
-|Autorise les doublons|Si `True`, des liens dupliqués de la relation de domaine peuvent être créés entre les deux mêmes éléments.|`False`|
-|Relations de base|Si la relation de domaine est dérivée, il s’agit de la relation de base de la relation de domaine.|\<aucune>|
-|Est en incorporation|Si `True`, la relation de domaine est une relation d’incorporation. Si `False`, la relation est une relation de référence.|\<both >|
-|Name|Nom de la relation de domaine.|Nom actuel|
+|Modificateur d'accès|Niveau d’accès de la relation de domaine ( `public` ou `internal` ).|`public`|
+|Attributs personnalisés|Utilisé pour ajouter des attributs à la classe de code source qui est générée à partir de la relation de domaine.|\<none>|
+|Génère un doublon dérivé|Si `True` la valeur est, une classe de base et une classe partielle (pour prendre en charge la personnalisation via des substitutions) sont générées. Pour plus d’informations, consultez [substitution et extension des classes générées](../modeling/overriding-and-extending-the-generated-classes.md).|`False`|
+|A un constructeur personnalisé|Si `True` , indique qu’un constructeur personnalisé est fourni dans le code source. Pour plus d’informations, consultez [substitution et extension des classes générées](../modeling/overriding-and-extending-the-generated-classes.md).|`False`|
+|Modificateur d’héritage|Décrit le type d’héritage de la classe de code source qui est généré à partir de la relation de domaine ( `none` , `abstract` ou `sealed` ).|\<none>|
+|Autorise les doublons|Si `True` la condition est, des liens dupliqués de la relation de domaine peuvent être créés entre les deux mêmes éléments.|`False`|
+|Relations de base|Si la relation de domaine est dérivée, il s’agit de la relation de base de la relation de domaine.|\<none>|
+|Est en incorporation|Si `True` la, la relation de domaine est une relation d’incorporation. Si `False` , la relation est une relation de référence.|\<both>|
+|Nom|Nom de la relation de domaine.|Nom actuel|
 |Espace de noms|Espace de noms affilié à la relation de domaine.|Espace de noms actuel|
-|Notes|Notes informelles associées à la relation de domaine.|\<aucune>|
-|Description|Description utilisée pour documenter le code et utilisée dans l’interface utilisateur du concepteur généré.|\<aucune>|
-|Display Name|Nom affiché dans le concepteur généré pour la relation de domaine.|\<aucune>|
-|Help Keyword|Mot clé facultatif utilisé pour indexer l’aide F1 pour la relation de domaine.|\<aucune>|
+|Notes|Notes informelles associées à la relation de domaine.|\<none>|
+|Description|Description utilisée pour documenter le code et utilisée dans l’interface utilisateur du concepteur généré.|\<none>|
+|Nom complet|Nom affiché dans le concepteur généré pour la relation de domaine.|\<none>|
+|Help Keyword|Mot clé facultatif utilisé pour indexer l’aide F1 pour la relation de domaine.|\<none>|
 
 ## <a name="see-also"></a>Voir aussi
 

@@ -15,17 +15,17 @@ caps.latest.revision: 23
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: f81aec5973d1915ba646c20c3b84186443678754
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 67a3588a857a0eea7d338217f975ed593dfdad52
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72669098"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85543700"
 ---
 # <a name="ca1716-identifiers-should-not-match-keywords"></a>CA1716 : Les identificateurs ne doivent pas correspondre à des mots clés
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Élément|Valeur|
 |-|-|
 |TypeName|IdentifiersShouldNotMatchKeywords|
 |CheckId|CA1716|
@@ -46,10 +46,10 @@ ms.locfileid: "72669098"
 
 - C++/CLI
 
-  La comparaison ne respectant pas la casse est utilisée pour les mots clés [!INCLUDE[vbprvb](../includes/vbprvb-md.md)], et la comparaison respectant la casse est utilisée pour les autres langages.
+  La comparaison ne respectant pas la casse est utilisée pour [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] les mots clés, et la comparaison respectant la casse est utilisée pour les autres langages.
 
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations
  Sélectionnez un nom qui n’apparaît pas dans la liste des mots clés.
 
 ## <a name="when-to-suppress-warnings"></a>Quand supprimer les avertissements
- Vous pouvez supprimer un avertissement de cette règle si vous êtes convaincu que l’identificateur ne confondra pas les utilisateurs de l’API et que la bibliothèque est utilisable dans toutes les langues disponibles dans le [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)].
+ Vous pouvez supprimer un avertissement de cette règle si vous êtes convaincu que l’identificateur ne confondra pas les utilisateurs de l’API et que la bibliothèque est utilisable dans toutes les langues disponibles dans le [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] .

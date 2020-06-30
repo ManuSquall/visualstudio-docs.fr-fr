@@ -1,7 +1,7 @@
 ---
-title: 'Procédure : Ajouter des contrôles XMLNodes à des documents Word'
+title: 'Comment : ajouter des contrôles XMLNodes à des documents Word'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -13,62 +13,62 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b54a341cd9dd949f892537ee384afb4984aecc02
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 95fc165c1a3123d68529f6ccaea99fea963c2a67
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63419692"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85543492"
 ---
-# <a name="how-to-add-xmlnodes-controls-to-word-documents"></a>Procédure : Ajouter des contrôles XMLNodes à des documents Word
-  **Important** les informations mentionnées dans cette rubrique concernant Microsoft Word sont présentée exclusivement pour le bénéfice et l’utilisation des individus et les organisations qui se trouvent en dehors des États-Unis et ses territoires ou qui utilisent ou développement les programmes qui s’exécutent sur des produits de Microsoft Word qui ont été concédés sous licence par Microsoft avant janvier 2010, lorsque Microsoft supprimé une implémentation de fonctionnalités spécifiques liés à XML personnalisé à partir de Microsoft Word. Ces informations concernant Microsoft Word ne peuvent pas être lues ou utilisées par les individus ou organisations dans les États-Unis ou dans ses territoires qui sont à l’aide d’ou de développer des programmes qui s’exécutent sur des produits de Microsoft Word qui ont été concédés sous licence par Microsoft après le 10 janvier 2010 ; ces produits ne comportent pas le même que les produits sous licence avant cette date ou acheté et concédés sous licence pour une utilisation en dehors des États-Unis.
+# <a name="how-to-add-xmlnodes-controls-to-word-documents"></a>Comment : ajouter des contrôles XMLNodes à des documents Word
+  **Important** Les informations fournies dans cette rubrique concernant Microsoft Word sont présentées exclusivement pour l’avantage et l’utilisation des personnes et des organisations situées en dehors du États-Unis et de ses territoires, ou qui utilisent ou développent des programmes qui s’exécutent sur les produits Microsoft Word qui étaient sous licence par Microsoft avant le 2010 du 1er janvier, lorsque Microsoft a supprimé une implémentation de fonctionnalités particulières liées au code XML personnalisé de Ces informations relatives à Microsoft Word peuvent ne pas être lues ou utilisées par des personnes ou des organisations du États-Unis ou de ses territoires qui utilisent ou développent des programmes qui s’exécutent sur, les produits Microsoft Word qui étaient sous licence par Microsoft après le 10 janvier 2010 ; ces produits ne se comportent pas de la même façon que les produits sous licence avant cette date ou achetés et sous licence pour une utilisation en dehors du États-Unis.
 
  [!INCLUDE[appliesto_wdalldoc](../vsto/includes/appliesto-wdalldoc-md.md)]
 
- Lorsque vous mappez un élément de schéma XML répétitif à un document Microsoft Office Word, Visual Studio ajoute automatiquement un <xref:Microsoft.Office.Tools.Word.XMLNodes> contrôle à votre document.
+ Quand vous mappez un élément de schéma XML répétitif à un document Word Microsoft Office, Visual Studio ajoute automatiquement un <xref:Microsoft.Office.Tools.Word.XMLNodes> contrôle à votre document.
 
- Pour plus d’informations sur le mappage des éléments non répétés du schéma XML, consultez [Comment : Ajouter des contrôles XMLNode à des documents Word](../vsto/how-to-add-xmlnode-controls-to-word-documents.md).
+ Pour plus d’informations sur le mappage d’éléments de schéma XML non répétitifs, consultez [Comment : ajouter des contrôles XMLNode à des documents Word](../vsto/how-to-add-xmlnode-controls-to-word-documents.md).
 
 > [!NOTE]
-> Le <xref:Microsoft.Office.Tools.Word.XMLNodes> contrôle n’est pas disponible à partir de la **boîte à outils** ou le **des Sources de données** fenêtre, de la même manière il créé par programmation.
+> Le <xref:Microsoft.Office.Tools.Word.XMLNodes> contrôle n’est pas disponible à partir de la **boîte à outils** ou de la fenêtre **sources de données** , et il n’est pas non plus possible de le créer par programmation.
 
  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]
 
 ### <a name="to-add-an-xmlnodes-control-to-a-document"></a>Pour ajouter un contrôle XMLNodes à un document
 
-1. Dans le document dans le concepteur Visual Studio, dans le ruban, cliquez sur le **développeur** onglet.
+1. Dans le document dans le concepteur Visual Studio, sur le ruban, cliquez sur l’onglet **développeur** .
 
     > [!NOTE]
-    > Si l'onglet **Développeur** n'est pas visible, vous devez tout d'abord l'afficher. Pour plus d'informations, voir [Procédure : Afficher l’onglet Développeur sur le ruban](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).
+    > Si l'onglet **Développeur** n'est pas visible, vous devez tout d'abord l'afficher. Pour plus d’informations, consultez [Comment : afficher l’onglet Développeur sur le ruban](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).
 
-2. Dans le **XML** de groupe, cliquez sur **schéma**.
+2. Dans le groupe **XML** , cliquez sur **schéma**.
 
-     Le **modèles et compléments** boîte de dialogue s’ouvre.
+     La boîte de dialogue **modèles et compléments** s’ouvre.
 
-3. Cliquez sur le **schéma XML** onglet.
+3. Cliquez sur l’onglet **schéma XML** .
 
-4. Cliquez sur **Ajouter schéma**.
+4. Cliquez sur **Ajouter un schéma**.
 
-     Le **ajouter un schéma** boîte de dialogue s’ouvre.
+     La boîte de dialogue **Ajouter un schéma** s’ouvre.
 
-5. Sélectionnez un schéma XML qui contient les éléments de schéma extensible cliquez sur **Open**.
+5. Sélectionnez un schéma XML qui contient des éléments de schéma répétitifs et cliquez sur **ouvrir**.
 
-     Le **les paramètres de schéma** boîte de dialogue s’affiche.
+     La boîte de dialogue **paramètres de schéma** s’affiche.
 
-6. Affecter un alias ou cliquez sur **OK** pour ajouter le schéma sans alias.
+6. Affectez un alias ou cliquez sur **OK** pour ajouter le schéma sans alias.
 
-     Le schéma est ajouté à la **ajouter un schéma** boîte de dialogue.
+     Le schéma est ajouté à la boîte de dialogue **Ajouter un schéma** .
 
-7. Dans le **ajouter un schéma** boîte de dialogue, cliquez sur **OK**.
+7. Dans la boîte de dialogue **Ajouter un schéma** , cliquez sur **OK**.
 
-     Le **Structure XML** s’ouvre le volet de tâches.
+     Le volet Office **structure XML** s’ouvre.
 
-8. Cliquez sur l’élément de schéma répétitif dans le **Structure XML** volet de tâches pour l’ajouter au document.
+8. Cliquez sur l’élément schéma répétitif dans le volet Office **structure XML** pour l’ajouter au document.
 
      Un <xref:Microsoft.Office.Tools.Word.XMLNodes> contrôle est créé et ajouté au projet.
 
 ## <a name="see-also"></a>Voir aussi
-- [XMLNodes, contrôle](../vsto/xmlnodes-control.md)
+- [XMLNodes (contrôle)](../vsto/xmlnodes-control.md)
 - [Automatiser Word à l’aide d’objets étendus](../vsto/automating-word-by-using-extended-objects.md)
-- [Éléments hôtes et la vue d’ensemble des contrôles hôtes](../vsto/host-items-and-host-controls-overview.md)
-- [Limitations de programmation des éléments hôtes et contrôles hôtes](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)
+- [Vue d’ensemble des éléments hôtes et des contrôles hôtes](../vsto/host-items-and-host-controls-overview.md)
+- [Limitations de programmation des éléments hôtes et des contrôles hôtes](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)

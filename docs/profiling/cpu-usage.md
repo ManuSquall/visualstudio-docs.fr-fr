@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b372e0f30c91a605be047e921bc2b7672a1cf468
-ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
+ms.openlocfilehash: e5ab97f3db8e5d44aa649455c313a5681ed93c8c
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "85329438"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85543388"
 ---
 # <a name="analyze-cpu-usage"></a>Analyser l’utilisation de l’UC
 
@@ -61,7 +61,7 @@ Le rapport de diagnostic est trié par **Total UC**, du plus élevé au plus bas
 
 ### <a name="cpu-usage-data-columns"></a><a name="BKMK_Call_tree_data_columns"></a> Colonnes de données d’utilisation de l’UC
 
-|||
+|Nom|Description|
 |-|-|
 |**Total UC [unité, %]**|![Équation de données total (%)](../profiling/media/cpu_use_wt_totalpercentequation.png "CPU_USE_WT_TotalPercentEquation")<br /><br /> Millisecondes et pourcentage d’UC utilisés par les appels à la fonction, et fonctions appelées par la fonction, durant la plage de temps sélectionnée. Cette information est différente du graphe chronologique **Utilisation de l’UC**, qui compare l’activité totale de l’UC durant une plage de temps à la quantité totale d’UC disponible.|
 |**Temps UC exclusif [unité, %]**|![Équation auto (%)](../profiling/media/cpu_use_wt_selflpercentequation.png "CPU_USE_WT_SelflPercentEquation")<br /><br /> Millisecondes et pourcentage d’UC utilisés par les appels à la fonction durant la plage de temps sélectionnée, à l’exclusion des fonctions appelées par la fonction.|
@@ -80,7 +80,7 @@ Pour afficher l’arborescence des appels, sélectionnez le nœud parent dans le
 ![Structure de l’arborescence des appels](../profiling/media/cpu_use_wt_getmaxnumbercalltree_annotated.png "Structure de l'arborescence des appels")
 ::: moniker-end
 
-|||
+|Image|Description|
 |-|-|
 |![Étape 1](../profiling/media/procguid_1.png "ProcGuid_1")|Le nœud de premier niveau des arborescences d’appels de l’outil Utilisation de l’UC est un pseudo-nœud.|
 |![Étape 2](../profiling/media/procguid_2.png "ProcGuid_2")|Dans la plupart des applications, quand l’option **Afficher le code externe** est désactivée, le nœud de second niveau est un nœud **[Code externe]**. Le nœud contient le code système et framework qui démarre et arrête l’application, dessine l’interface utilisateur, contrôle la planification des threads et fournit d’autres services de bas niveau à l’application.|

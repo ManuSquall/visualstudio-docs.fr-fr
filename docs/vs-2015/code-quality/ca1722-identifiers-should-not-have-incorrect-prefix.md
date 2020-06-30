@@ -15,17 +15,17 @@ caps.latest.revision: 18
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 0f50c5aca934886f03a54692d98a6be3f8bb5562
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: a7f4f932f8e2db9a558d7440d8965ce5924043b8
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72671578"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85544480"
 ---
 # <a name="ca1722-identifiers-should-not-have-incorrect-prefix"></a>CA1722 : Les identificateurs ne doivent pas porter un préfixe incorrect
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Élément|Valeur|
 |-|-|
 |TypeName|IdentifiersShouldNotHaveIncorrectPrefix|
 |CheckId|CA1722|
@@ -49,4 +49,4 @@ ms.locfileid: "72671578"
  Ne supprimez aucun avertissement de cette règle.
 
 ## <a name="related-rules"></a>Règles associées
- [CA1715 : Les identificateurs doivent avoir un préfixe correct](../code-quality/ca1715-identifiers-should-have-correct-prefix.md)
+ [CA1715 : Les identificateurs doivent être dotés d'un préfixe correct](../code-quality/ca1715-identifiers-should-have-correct-prefix.md)

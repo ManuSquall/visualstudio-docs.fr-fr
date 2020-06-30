@@ -1,9 +1,9 @@
 ---
-title: '&lt;point d’entrée&gt; élément (développement Office dans Visual Studio)'
+title: '&lt;entryPoint &gt; , élément (développement Office dans Visual Studio)'
 titleSuffix: ''
 ms.custom: seodec18
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - VB
 - CSharp
@@ -16,17 +16,17 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: bd3da83a25a05690e56d229f61ee709473171dd7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 17f57b90b7c6aa4c254b2b55ee838a3086193ef7
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62799777"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85543596"
 ---
-# <a name="ltentrypointgt-element-office-development-in-visual-studio"></a>&lt;point d’entrée&gt; élément (développement Office dans Visual Studio)
+# <a name="ltentrypointgt-element-office-development-in-visual-studio"></a>&lt;entryPoint &gt; , élément (développement Office dans Visual Studio)
   Chaque élément `entryPoint` de l’espace de noms `vstav3` identifie un assembly de personnalisation qui doit être exécuté lorsque cette application [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] est installée.
 
-## <a name="syntax"></a>Syntaxe
+## <a name="syntax"></a>Syntax
 
 ```xml
 <entryPoint class>
@@ -39,7 +39,7 @@ ms.locfileid: "62799777"
 
  Chaque élément `entryPoint` peut contenir un seul assembly de personnalisation. Plusieurs éléments `entryPoint` peuvent être définis dans un manifeste d’application.
 
- L’élément `entryPoint` a les attributs suivants :
+ L’élément `entryPoint` a les attributs suivants.
 
 |Attribut|Description|
 |---------------|-----------------|
@@ -50,12 +50,12 @@ ms.locfileid: "62799777"
 ### <a name="assemblyidentity"></a>assemblyIdentity
  Obligatoire. L’élément `assemblyIdentity` de l’espace de noms `vstav3` fait référence à un élément `assemblyIdentity` du manifeste d’application [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] .
 
- Le rôle de `assemblyIdentity` et ses attributs est défini dans [ &#60;assemblyIdentity&#62; élément &#40;application ClickOnce&#41;](../deployment/assemblyidentity-element-clickonce-application.md).
+ Le rôle de `assemblyIdentity` et de ses attributs est défini dans [&#60;élément assemblyIdentity&#62; &#40;&#41;d’application ClickOnce ](../deployment/assemblyidentity-element-clickonce-application.md).
 
 ## <a name="document-level-customization-example"></a>Exemple de personnalisation au niveau du document
 
 ### <a name="description"></a>Description
- L’exemple de code suivant illustre les éléments `entryPoint` d’un manifeste d’application pour une solution Office au niveau du document déployée à l’aide de [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]. Cet exemple de code fait partie d’un exemple plus complet fourni dans [manifestes d’Application pour les solutions Office](../vsto/application-manifests-for-office-solutions.md).
+ L’exemple de code suivant illustre les éléments `entryPoint` d’un manifeste d’application pour une solution Office au niveau du document déployée à l’aide de [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]. Cet exemple de code fait partie d’un exemple plus complet fourni dans [les manifestes d’application pour les solutions Office](../vsto/application-manifests-for-office-solutions.md).
 
 ### <a name="code"></a>Code
 
@@ -97,7 +97,7 @@ ms.locfileid: "62799777"
 ## <a name="vsto-add-in-example"></a>Exemple de complément VSTO
 
 ### <a name="description"></a>Description
- L’exemple de code suivant illustre un élément `entryPoint` d’un manifeste d’application pour une solution Office au niveau de l’application déployée à l’aide de [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]. Cet exemple de code fait partie d’un exemple plus complet fourni dans [manifestes d’Application pour les solutions Office](../vsto/application-manifests-for-office-solutions.md).
+ L’exemple de code suivant illustre un élément `entryPoint` d’un manifeste d’application pour une solution Office au niveau de l’application déployée à l’aide de [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]. Cet exemple de code fait partie d’un exemple plus complet fourni dans [les manifestes d’application pour les solutions Office](../vsto/application-manifests-for-office-solutions.md).
 
 ### <a name="code"></a>Code
 

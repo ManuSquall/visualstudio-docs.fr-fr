@@ -15,17 +15,17 @@ caps.latest.revision: 23
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: f611cb899a2386c47e1370214a74c2a5da52584f
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 22a33c852b941b4c7e7398416aa1e74e69ff1786
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72669200"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85544038"
 ---
-# <a name="ca1708-identifiers-should-differ-by-more-than-case"></a>CA1708 : Les identificateurs ne doivent pas différer que par leur casse
+# <a name="ca1708-identifiers-should-differ-by-more-than-case"></a>CA1708 : Les identificateurs ne doivent pas différer uniquement par leur casse
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Élément|Valeur|
 |-|-|
 |TypeName|IdentifiersShouldDifferByMoreThanCase|
 |CheckId|CA1708|
@@ -44,7 +44,7 @@ ms.locfileid: "72669200"
  Sélectionnez un nom unique lorsqu’il est comparé à d’autres identificateurs sans respect de la casse.
 
 ## <a name="when-to-suppress-warnings"></a>Quand supprimer les avertissements
- Ne supprimez aucun avertissement de cette règle. La bibliothèque n’est peut-être pas utilisable dans toutes les langues disponibles dans le [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)].
+ Ne supprimez aucun avertissement de cette règle. La bibliothèque n’est peut-être pas utilisable dans toutes les langues disponibles dans le [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] .
 
 ## <a name="example-of-a-violation"></a>Exemple de violation
  L’exemple suivant illustre une violation de cette règle.
@@ -52,4 +52,4 @@ ms.locfileid: "72669200"
  [!code-csharp[FxCop.Naming.IdentifiersShouldDifferByMoreThanCase#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Naming.IdentifiersShouldDifferByMoreThanCase/cs/FxCop.Naming.IdentifiersShouldDifferByMoreThanCase.cs#1)]
 
 ## <a name="related-rules"></a>Règles associées
- [CA1709 : La casse des identificateurs doit être correcte](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)
+ [CA1709 : La casse des identificateurs doit être correcte](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)

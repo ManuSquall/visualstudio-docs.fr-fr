@@ -15,17 +15,17 @@ caps.latest.revision: 21
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: d23d9cc6006997c82451ac061e3ee0353e59b1b9
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: d39c8d9d09cf457738df87e3c2e6e109f7bc1696
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72671497"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85543856"
 ---
 # <a name="ca1809-avoid-excessive-locals"></a>CA1809 : Évitez le surplus de variables locales
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Élément|Valeur|
 |-|-|
 |TypeName|AvoidExcessiveLocals|
 |CheckId|CA1809|
@@ -45,4 +45,4 @@ ms.locfileid: "72671497"
  Il est possible de supprimer sans risque un avertissement de cette règle, ou de désactiver la règle, si les performances ne sont pas un problème.
 
 ## <a name="related-rules"></a>Règles associées
- [CA1804 : Supprimez les variables locales inutilisées](../code-quality/ca1804-remove-unused-locals.md)
+ [CA1804 : Supprimez les variables locales inutilisées](../code-quality/ca1804-remove-unused-locals.md)

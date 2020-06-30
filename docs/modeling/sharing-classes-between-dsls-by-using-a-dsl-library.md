@@ -1,18 +1,18 @@
 ---
 title: Partage de classes entre plusieurs DSL à l'aide d'une bibliothèque DSL
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 author: JoshuaPartlow
 ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4bfadc1777dfb4ba0c8ea712cfd39becc47f54a1
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.openlocfilehash: 38496141d6fcdd33f3bf5185c3f50b1bf961d832
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/16/2020
-ms.locfileid: "76111363"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85542543"
 ---
 # <a name="sharing-classes-between-dsls-by-using-a-dsl-library"></a>Partage de classes entre plusieurs DSL à l'aide d'une bibliothèque DSL
 Dans le kit de développement logiciel (SDK) de visualisation et de modélisation Visual Studio, vous pouvez créer une définition DSL incomplète que vous pouvez importer dans un autre langage DSL. Cela vous permet de factoriser des parties courantes de modèles similaires.
@@ -31,7 +31,7 @@ Dans le kit de développement logiciel (SDK) de visualisation et de modélisatio
 
      Pour définir une relation que les importateurs peuvent utiliser, créez deux classes de domaine et créez la relation entre elles.
 
-     Envisagez de définir le **modificateur d’héritage** des classes de domaine sur `Abstract`.
+     Envisagez de définir le **modificateur d’héritage** des classes de domaine sur `Abstract` .
 
 3. Vous pouvez ajouter des éléments que vous définissez dans l’Explorateur DSL, tels que les générateurs de connexions.
 
@@ -39,9 +39,9 @@ Dans le kit de développement logiciel (SDK) de visualisation et de modélisatio
 
 5. Cliquez sur **transformer tous les modèles**.
 
-6. créer le projet ;
+6. Créez le projet.
 
-7. Lorsque vous distribuez le DSL pour d’autres personnes à utiliser, vous devez fournir à la fois l’assembly compilé (DLL) et le `DslDefinition.dsl`de fichiers. Vous pouvez trouver l’assembly compilé dans un dossier sous `Dsl\bin\*`
+7. Lorsque vous distribuez le DSL pour d’autres personnes à utiliser, vous devez fournir à la fois l’assembly compilé (DLL) et le fichier `DslDefinition.dsl` . Vous pouvez trouver l’assembly compilé dans un dossier sous`Dsl\bin\*`
 
 #### <a name="to-import-a-dsl-library"></a>Pour importer une bibliothèque DSL
 

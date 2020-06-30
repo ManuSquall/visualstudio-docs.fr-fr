@@ -2,7 +2,7 @@
 title: Configurer Python sur Azure App Service (Windows)
 description: Guide pratique pour installer un interpréteur et des bibliothèques Python sur Azure App Service, et pour configurer correctement des applications web faisant référence à cet interpréteur.
 ms.date: 01/07/2019
-ms.topic: conceptual
+ms.topic: how-to
 author: JoshuaPartlow
 ms.author: joshuapa
 manager: jillfra
@@ -11,12 +11,12 @@ ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: 7ffe0de939eba8af38c132fc3de5c96a9499e3f0
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 34fd56b37113467b7cbb2dfb8ac6fdba01b79cc6
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "62535958"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85543752"
 ---
 # <a name="how-to-set-up-a-python-environment-on-azure-app-service-windows"></a>Guide pratique pour configurer un environnement Python sur Azure App Service (Windows)
 
@@ -94,7 +94,7 @@ Cette action ouvre la page de description de l’extension, qui contient le chem
 
 Si vous avez des difficultés à voir le chemin pour l’extension, vous pouvez le trouver manuellement en utilisant la console :
 
-1. Sur votre page App Service, sélectionnez la**console** **Outils de développement** > .
+1. Sur la page App service, sélectionnez la **console outils de développement**  >  **Console**.
 1. Entrez la commande `ls ../home` ou `dir ..\home` pour afficher les dossiers des extensions de niveau supérieur, par exemple *Python361x64*.
 1. Entrez une commande telle que `ls ../home/python361x64` ou `dir ..\home\python361x64` pour vérifier qu’il contient *python.exe* et d’autres fichiers de l’interpréteur.
 
@@ -162,7 +162,7 @@ L’interpréteur Python installé via une extension de site n’est qu’une pa
 
 Pour installer des packages directement dans l’environnement du serveur, utilisez une des méthodes suivantes :
 
-| Méthodes | Usage |
+| Méthodes | Utilisation |
 | --- | --- |
 | [Console Kudu d’Azure App Service](#azure-app-service-kudu-console) | Installe des packages de façon interactive. Les packages doivent être du Python pur ou doivent publier des wheels. |
 | [API REST Kudu](#kudu-rest-api) | Peut être utilisée pour automatiser l’installation de packages.  Les packages doivent être du Python pur ou doivent publier des wheels. |
@@ -173,11 +173,11 @@ Pour installer des packages directement dans l’environnement du serveur, utili
 
 La [console Kudu](https://github.com/projectkudu/kudu/wiki/Kudu-console) vous donne un accès direct à partir d’une ligne de commande avec des privilèges élevés au serveur App Service et à son système de fichiers. Il s’agit d’un outil précieux pour le débogage, qui autorise en outre les opérations CLI, comme l’installation de packages.
 
-1. Ouvrez Kudu à partir de votre page App Service sur le portail Azure en sélectionnant **des outils** > de développement**outils avancés**, puis en sélectionnant **Go**. Cette action accède à une URL qui est la même que l’URL de base de votre service App Service, excepté que `.scm` y est inséré. Par exemple, si votre URL de base est `https://vspython-test.azurewebsites.net/`, Kudu se trouve sur `https://vspython-test.scm.azurewebsites.net/` (que vous pouvez mettre en signet) :
+1. Ouvrez Kudu à partir de votre page App service sur le portail Azure en sélectionnant Outils de **développement**  >  **Outils avancés**, puis sélectionnez **OK**. Cette action accède à une URL qui est la même que l’URL de base de votre service App Service, excepté que `.scm` y est inséré. Par exemple, si votre URL de base est `https://vspython-test.azurewebsites.net/`, Kudu se trouve sur `https://vspython-test.scm.azurewebsites.net/` (que vous pouvez mettre en signet) :
 
     ![Console Kudu pour Azure App Service](media/python-on-azure-console01.png)
 
-1. Sélectionnez de la >  **console Debug****CMD** pour ouvrir la console, dans laquelle vous pouvez naviguer dans votre installation Python et voir quelles bibliothèques sont déjà là.
+1. Sélectionnez **console de débogage**  >  **cmd** pour ouvrir la console, dans laquelle vous pouvez accéder à votre installation Python et voir les bibliothèques qui existent déjà.
 
 1. Pour installer un package unique :
 
@@ -193,7 +193,7 @@ La [console Kudu](https://github.com/projectkudu/kudu/wiki/Kudu-console) vous do
 
     b. Exécutez la commande `python.exe -m pip install --upgrade -r d:\home\site\wwwroot\requirements.txt`.
 
-    L’utilisation *de requirements.txt* est recommandée car il est facile de reproduire votre paquet exact défini à la fois localement et sur le serveur. N’oubliez pas d’accéder à la console après avoir déployé des changements sur *requirements.txt*, et de réexécuter la commande.
+    L’utilisation de *requirements.txt* est recommandée, car il est facile de reproduire votre ensemble exact de packages à la fois localement et sur le serveur. N’oubliez pas d’accéder à la console après avoir déployé des changements sur *requirements.txt*, et de réexécuter la commande.
 
 > [!Note]
 > Comme il n’y a pas de compilateur C sur App Service, vous devez installer le format wheel pour les packages avec des modules d’extension natifs. De nombreux packages populaires fournissent leur propre format wheel. Pour les packages qui ne le font pas, utilisez `pip wheel <package_name>` sur votre ordinateur de développement local, puis chargez le format wheel sur votre site. Pour obtenir un exemple, consultez [Gérer les packages requis avec requirements.txt](managing-required-packages-with-requirements-txt.md).

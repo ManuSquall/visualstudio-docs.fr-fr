@@ -1,20 +1,20 @@
 ---
 title: 'Comment : modifier l’espace de noms d’un langage spécifique à un domaine'
 ms.date: 10/31/2018
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - Domain-Specific Language, namespace
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b64a61c02f44db0ce70b758331d0d70f7bb8014d
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 3ff7c73694cb53f7fbea21514feeaab4abce3f29
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72653765"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85542673"
 ---
 # <a name="how-to-change-the-namespace-of-a-domain-specific-language"></a>Comment : modifier l’espace de noms d’un langage spécifique à un domaine
 
@@ -46,9 +46,9 @@ Vous pouvez modifier l’espace de noms d’un langage spécifique à un domaine
 
 10. Réinitialisez l’instance expérimentale de Visual Studio.
 
-    1. Supprimez **\utilisateurs \\** _{your name}_ **\AppData\Local\Microsoft\VisualStudio \\ \*Exp**.
+    1. Supprimer **\Utilisateurs \\ **_{votre nom}_**\AppData\Local\Microsoft\VisualStudio \\ \* exp**.
 
-    2. Dans le menu **Démarrer** de Windows, choisissez **tous les programmes**  > **Microsoft Visual Studio Kit de développement logiciel (SDK) 2010**  > **Outils**  > **Réinitialiser l’instance expérimentale**.
+    2. Dans le menu **Démarrer** de Windows, choisissez **tous les programmes**  >  **Microsoft Visual Studio outils du kit de développement logiciel (SDK) 2010**  >  **Tools**  >  **Réinitialiser l’instance expérimentale**.
 
 11. Dans le menu **générer** , choisissez **régénérer la solution**.
 

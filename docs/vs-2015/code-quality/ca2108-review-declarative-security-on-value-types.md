@@ -15,17 +15,17 @@ caps.latest.revision: 18
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: a05b7098d75d368f893b2504f7663675611bc0ce
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 03918353b66c36698b5d17b332da052b6d95c87a
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72658720"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85544389"
 ---
-# <a name="ca2108-review-declarative-security-on-value-types"></a>CA2108 : Vérifiez la sécurité déclarative dans les types valeur
+# <a name="ca2108-review-declarative-security-on-value-types"></a>CA2108 : Vérifiez la sécurité déclarative dans les types valeur
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Élément|Valeur|
 |-|-|
 |TypeName|ReviewDeclarativeSecurityOnValueTypes|
 |CheckId|CA2108|
@@ -45,7 +45,7 @@ ms.locfileid: "72658720"
  Vous pouvez supprimer un avertissement de cette règle si un appelant peut obtenir des instances du type valeur dans son état par défaut sans compromettre la sécurité.
 
 ## <a name="example"></a>Exemple
- L’exemple suivant montre une bibliothèque contenant un type valeur qui ne respecte pas cette règle. Notez que le type `StructureManager` suppose qu’un appelant qui passe une instance du type valeur a l’autorisation de créer ou d’accéder à l’instance.
+ L’exemple suivant montre une bibliothèque contenant un type valeur qui ne respecte pas cette règle. Notez que le `StructureManager` type suppose qu’un appelant qui passe une instance du type valeur a l’autorisation de créer ou d’accéder à l’instance.
 
  [!code-csharp[FxCop.Security.DemandOnValueType#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Security.DemandOnValueType/cs/FxCop.Security.DemandOnValueType.cs#1)]
 
@@ -57,7 +57,7 @@ ms.locfileid: "72658720"
  Cet exemple produit la sortie suivante.
 
  **Constructeur personnalisé de structure : échec de la requête.** 
-**nouvelles valeurs SecuredTypeStructure 100 100** 
-**nouvelles valeurs SecuredTypeStructure 200 200**
+ **Nouvelles valeurs SecuredTypeStructure 100 100** 
+ **Nouvelles valeurs SecuredTypeStructure 200 200**
 ## <a name="see-also"></a>Voir aussi
  [Liaison des demandes](https://msdn.microsoft.com/library/a33fd5f9-2de9-4653-a4f0-d9df25082c4d) [de données et de modélisation](https://msdn.microsoft.com/library/8c37635d-e2c1-4b64-a258-61d9e87405e6)

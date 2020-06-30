@@ -1,5 +1,5 @@
 ---
-title: Création d’une interface utilisateur à l’aide de Blend
+title: Création d'une interface utilisateur à l'aide de Blend
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-designers
@@ -11,12 +11,12 @@ caps.latest.revision: 33
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 36a0772730718047f2b9d6fc6bc36c30a211a2af
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 1a65f42dafca696bfa638964b825410b576d4845
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72657989"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85544285"
 ---
 # <a name="creating-a-ui-by-using-blend-for-visual-studio"></a>Création d'une interface utilisateur à l'aide de Blend pour Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ Blend pour Visual Studio vous aide à concevoir des applications de bureau Wind
 > [!NOTE]
 > Pour parcourir les fonctionnalités de conception partagées telles que la planche graphique, la fenêtre Structure du document et la fenêtre Périphérique, consultez [Création d’une interface utilisateur à l’aide du concepteur XAML](../designers/creating-a-ui-by-using-xaml-designer-in-visual-studio.md).
 
- **Dans cette rubrique** :
+ **Dans cette rubrique**:
 
 - [Présentation du panneau Outils](#Tools)
 
@@ -40,12 +40,12 @@ Blend pour Visual Studio vous aide à concevoir des applications de bureau Wind
 
 - [Présentation du panneau Propriétés](#Properties)
 
-## <a name="Tools"></a> Présentation du panneau Outils
+## <a name="tour-of-the-tools-panel"></a><a name="Tools"></a>Présentation du panneau Outils
  Vous pouvez utiliser le panneau **Outils** dans Blend pour Visual Studio pour créer et modifier les objets de votre application. Vous créez les objets en sélectionnant un outil, puis en dessinant sur la planche graphique à l'aide de la souris.
 
  ![Panneau Outils](../designers/media/blend5toolspanel.png "Blend5Toolspanel")
 
-|||||
+|Image|Type d’outil|Image|Type d’outil|
 |-|-|-|-|
 |![](../designers/media/b1-1.png "B1_1")|**Outils de sélection** Permet de sélectionner les objets et les tracés.<br /><br /> L’outil **Sélection directe** permet de sélectionner les objets imbriqués et les segments de tracé.|![Légende A](../designers/media/b5-label-a.png "b5_label_A")|**Outils Dégradé et Pinceau**|
 |![](../designers/media/b1-2.png "B1_2")|**Outils d’affichage** Permet d’ajuster la vue de la planche graphique, par exemple pour l’affichage panoramique et le zoom.|![Légende B](../designers/media/b5-label-b.png "b5_label_B")|**Outils de tracé**|
@@ -56,12 +56,12 @@ Blend pour Visual Studio vous aide à concevoir des applications de bureau Wind
 
  **Regardez une courte vidéo :** ![Configurer les fonctionnalités installées](../designers/media/bldadminconsoleinitialconfigicon.PNG "Installées bldadminconsoleinitialconfigicon") [La barre d’outils](https://www.youtube.com/watch?v=VkdUJcvoo54&list=PLBDF977B2F1DAB358&index=4).
 
-## <a name="Assets"></a> Présentation du panneau Composants
+## <a name="tour-of-the-assets-panel"></a><a name="Assets"></a>Présentation du panneau composants
  Tous les contrôles se trouvent dans le panneau **Composants**, à l’image de la **boîte à outils** de Visual Studio. Outre les contrôles, vous y trouverez tout ce que vous pouvez ajouter à la planche graphique dans le panneau **Composants**, notamment des styles, des médias, des comportements et des effets.
 
- ![Panneau composants](../designers/media/blend5-assets-panel.png "Blend5_Assets_panel")
+ ![Panneau Composants](../designers/media/blend5-assets-panel.png "Blend5_Assets_panel")
 
-|||
+|Image|Description|
 |-|-|
 |![](../designers/media/b1-1.png "B1_1")|**Zone de recherche** Tapez un élément dans la zone **Rechercher** pour filtrer la liste des composants.|
 |![](../designers/media/b1-2.png "B1_2")|**Mode Grille et mode Liste** Passez du **mode Grille** au **mode Liste**, et inversement, dans l’affichage des composants.|
@@ -69,12 +69,12 @@ Blend pour Visual Studio vous aide à concevoir des applications de bureau Wind
 |![](../designers/media/b1-4.png "B1_4")|**Styles** Affiche tous les styles contenus dans le dictionnaire de ressources.|
 |![](../designers/media/b1-5.png "B1_5")|**Description** Affiche une description de la catégorie ou sous-catégorie de composants sélectionnée.|
 
-## <a name="Objects"></a> Présentation du panneau Objets et chronologie
+## <a name="tour-of-the-objects-and-timeline-panel"></a><a name="Objects"></a>Présentation du panneau Objets et chronologie
  Ce panneau permet de disposer les objets sur la planche graphique et éventuellement de les animer.
 
- ![Panneau objet et chronologie en mode animation](../designers/media/b5-object-timeline-animation.png "b5_object_timeline_animation")
+ ![Volet Objets et chronologie en mode animation](../designers/media/b5-object-timeline-animation.png "b5_object_timeline_animation")
 
-|||
+|Image|Description|
 |-|-|
 |![](../designers/media/b1-1.png "B1_1")|**Liste d’objets** Affiche une arborescence visuelle d’un document. Vous pouvez explorer divers niveaux de détail. Vous pouvez aussi ajouter des couches pour mieux disposer les objets sur la planche graphique. Vous pouvez ainsi les verrouiller et les masquer en groupe.|
 |![](../designers/media/b1-2.png "B1_2")|**Indicateur du mode d’enregistrement** Indique si vous enregistrez les modifications apportées aux propriétés dans une chronologie.|
@@ -93,12 +93,12 @@ Blend pour Visual Studio vous aide à concevoir des applications de bureau Wind
 |![](../designers/media/b1-15.png "B1_15")|**Zoom de la chronologie** Permet de définir la résolution du zoom de la chronologie. Un zoom avant permet de modifier une animation avec plus de détails, alors qu'un zoom arrière donne un plus large aperçu de ce qu'il se passe sur une période plus longue. Si vous faites un zoom avant, mais que vous ne pouvez pas définir d’image clé à un moment précis dans le temps, vérifiez que la résolution d’alignement définie est suffisamment élevée.|
 |![Légende 16](../designers/media/b5-label-16.png "b5_label_16")|**Zone de composition de la chronologie** Permet d’afficher la chronologie et de déplacer des images clés en les faisant glisser ou via leurs menus contextuels.|
 
-## <a name="Properties"></a> Présentation du panneau Propriétés
+## <a name="tour-of-the-properties-panel"></a><a name="Properties"></a>Présentation du panneau Propriétés
  Cet panneau permet d'afficher et de modifier les propriétés d'un objet. Vous pouvez aussi les définir directement sur la planche graphique. Dans ce cas, les modifications apportées aux propriétés sont répercutées dans le panneau **Propriétés**.
 
  ![Panneau Propriétés](../designers/media/blend5-properties-panel.png "Blend5_properties_panel")
 
- **Catégories** Permet de développer et de réduire les catégories de propriétés. Cliquez sur **développer** ![](../designers/media/6375953d-074c-421a-bbb3-6f5055b67b64.png "6375953d-074c-421a-bbb3-6f5055b67b64") et **réduire** ![réduire](../designers/media/b5-collapse-button.png "b5_collapse_button") pour afficher ou masquer les détails de catégorie.
+ **Catégories** Permet de développer et de réduire les catégories de propriétés. Cliquez sur **Développer** ![](../designers/media/6375953d-074c-421a-bbb3-6f5055b67b64.png "6375953d-074c-421a-bbb3-6f5055b67b64") et **Réduire** ![Réduire](../designers/media/b5-collapse-button.png "b5_collapse_button") pour afficher ou masquer les détails de catégorie.
 
 |                                                                                                         |                                                                                                                                                                                                                                  |
 |---------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|

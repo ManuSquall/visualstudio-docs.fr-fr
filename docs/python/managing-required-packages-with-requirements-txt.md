@@ -2,7 +2,7 @@
 title: Gérer les dépendances de package à l’aide d’un fichier requirements.txt
 description: Fichier requirements.txt contenant les dépendances d’un projet. Si vous recevez un projet contenant un fichier requirements.txt, vous pouvez installer ces dépendances en toute simplicité, en une seule étape.
 ms.date: 03/18/2019
-ms.topic: conceptual
+ms.topic: how-to
 author: JoshuaPartlow
 ms.author: joshuapa
 manager: jillfra
@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: a1853df63354801ebf0413d3c8707135cb9bb800
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 9179ca2b77e7a6d3ae5b5dffded06524114a0f8d
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "62535705"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85544116"
 ---
 # <a name="manage-required-packages-with-requirementstxt"></a>Gérer les packages requis avec requirements.txt
 
@@ -39,7 +39,7 @@ Techniquement, vous pouvez utiliser n’importe quel nom de fichier pour suivre 
 
 Dans la mesure où les fichiers *requirements.txt* sont destinés à figer les exigences d’un environnement, tous les packages installés sont écrits avec des versions précises. L’utilisation de versions précises vous assure une reproduction simple de votre environnement sur un autre ordinateur. Les packages sont inclus même s’ils ont été installés avec une plage de versions, en tant que dépendance d’un autre package, ou avec un programme d’installation autre que pip.
 
-Si un package ne peut pas être installé par pip et s’il apparaît dans un fichier *requirements.txt*, cela entraîne l’échec de l’ensemble de l’installation. Dans ce cas, modifiez manuellement le fichier à exclure de ce package ou utilisez [les options de pip](https://pip.readthedocs.org/en/latest/reference/pip_install.html#requirements-file-format) pour faire référence à une version installable du package. Par exemple, vous pouvez [`pip wheel`](https://pip.readthedocs.org/en/latest/reference/pip_wheel.html) utiliser pour compiler `--find-links <path>` une dépendance et ajouter l’option à vos *exigences.txt*:
+Si un package ne peut pas être installé par pip et s’il apparaît dans un fichier *requirements.txt*, cela entraîne l’échec de l’ensemble de l’installation. Dans ce cas, modifiez manuellement le fichier à exclure de ce package ou utilisez [les options de pip](https://pip.readthedocs.org/en/latest/reference/pip_install.html#requirements-file-format) pour faire référence à une version installable du package. Par exemple, vous préférerez peut-être utiliser [`pip wheel`](https://pip.readthedocs.org/en/latest/reference/pip_wheel.html) pour compiler une dépendance et ajouter l' `--find-links <path>` option à votre *requirements.txt*:
 
 ```output
 C:\Project>pip wheel azure

@@ -13,17 +13,17 @@ caps.latest.revision: 15
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: bf5e841fdccbd6a41d0e7ee61c9f5278c6a882e3
-ms.sourcegitcommit: da5ebc29544fdbdf625ab4922c9777faf2bcae4a
+ms.openlocfilehash: 667dc76019259faa12d41b7e4b7bf383bcda2258
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "82586868"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85542920"
 ---
 # <a name="da0023-high-gc-cpu-time"></a>DA0023 : Temps processeur GC élevé
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||  
+|Élément|Valeur|  
 |-|-|  
 |ID de règle|DA0023|  
 |Category|Utilisation du .NET Framework|  

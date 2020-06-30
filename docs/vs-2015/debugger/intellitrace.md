@@ -22,12 +22,12 @@ caps.latest.revision: 142
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: a3a3e68874bb3295f6696bbdadb3c470a7f2a4ad
-ms.sourcegitcommit: da5ebc29544fdbdf625ab4922c9777faf2bcae4a
+ms.openlocfilehash: c379054506672f36368b6da99c40a0a75a25e0ac
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "82586627"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85543921"
 ---
 # <a name="intellitrace"></a>IntelliTrace
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,7 +46,7 @@ Vous pouvez consacrer moins de temps au débogage de votre application quand vou
   
 ## <a name="what-do-you-want-to-do"></a>Que voulez-vous faire ?  
   
-|||  
+|Scénario|Articles|  
 |-|-|  
 |**Déboguer mon application avec IntelliTrace :**<br /><br /> -Afficher les événements passés.<br />-Afficher les informations sur les appels avec des événements passés.<br />-Enregistrer ma session IntelliTrace.<br />-Contrôler les données collectées par IntelliTrace.|-   [Procédure pas à pas : utilisation d’IntelliTrace](../debugger/walkthrough-using-intellitrace.md)<br />     [Fonctionnalités IntelliTrace](../debugger/intellitrace-features.md)<br />-   [Configurer IntelliTrace](https://msdn.microsoft.com/7657ecab-e07e-4b1b-872d-f05d966be37e)<br />-   [Débogage d’historique](../debugger/historical-debugging.md)|  
 |**Collecter les données IntelliTrace pendant une session de test dans Test Manager**|-   [Collecter plus de données de diagnostic dans des tests manuels](https://msdn.microsoft.com/library/bb5a2cc0-84f5-4dfe-9560-ca3d313aefd2)|  
@@ -55,7 +55,7 @@ Vous pouvez consacrer moins de temps au débogage de votre application quand vou
   
 ## <a name="what-apps-can-i-debug-with-intellitrace"></a><a name="IntelliTraceSupport"></a>Quelles applications peuvent être déboguées à l'aide d'IntelliTrace ?  
   
-|||  
+|Niveau de support|Types d’applications|  
 |-|-|  
 |**Pris en charge**|-Les applications Visual Basic et Visual C# qui utilisent .NET Framework version 2,0 ou ultérieure.<br />     Vous pouvez déboguer la plupart des applications, notamment ASP.NET, Microsoft Azure, Windows Forms, WCF, WPF, Windows Workflow, SharePoint 2010 et SharePoint 2013, ainsi que les applications 64 bits.<br />     Pour déboguer des applications SharePoint avec IntelliTrace, consultez [procédure pas à pas : débogage d’une application SharePoint à l’aide d’IntelliTrace](https://msdn.microsoft.com/library/4bd80d2f-f680-4bf4-81c3-f14e8185f6a4).<br />     Pour déboguer des applications Microsoft Azure avec IntelliTrace, consultez [débogage d’un service Cloud publié avec IntelliTrace et Visual Studio](../azure/vs-azure-tools-intellitrace-debug-published-cloud-services.md).|  
 |**Prise en charge limitée**|-F # applications sur une base expérimentale<br />-Applications du Windows Store prises en charge pour les événements uniquement|  
@@ -174,7 +174,7 @@ Vous pouvez consacrer moins de temps au débogage de votre application quand vou
   
  La collecte d'informations sur les appels peut ralentir votre application de manière significative. Cela peut également augmenter la taille des fichiers journaux IntelliTrace (.iTrace) que vous enregistrez sur le disque. Pour minimiser ces effets, collectez des informations sur les appels uniquement pour les modules qui vous intéressent.  Pour modifier la taille maximale de vos fichiers .iTrace, accédez à **Outils**, **Options**, **IntelliTrace**, **Avancé**. Consultez [configurer IntelliTrace](https://msdn.microsoft.com/7657ecab-e07e-4b1b-872d-f05d966be37e).  
   
-## <a name="in-this-section"></a>Contenu de cette section  
+## <a name="in-this-section"></a>Dans cette section  
  [Fonctionnalités IntelliTrace](../debugger/intellitrace-features.md)  
   
  [Configurer IntelliTrace](https://msdn.microsoft.com/7657ecab-e07e-4b1b-872d-f05d966be37e)  

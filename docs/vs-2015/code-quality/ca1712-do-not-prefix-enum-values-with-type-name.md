@@ -15,21 +15,21 @@ caps.latest.revision: 17
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 8c79ed71290d54f97bb4ed143d32095b157e2e3e
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 4773a34ab7112434813990b4d25cbeeb865f3a08
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72669125"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85543895"
 ---
 # <a name="ca1712-do-not-prefix-enum-values-with-type-name"></a>CA1712 : N'ajoutez pas le nom de type en guise de préfixe à des valeurs enum
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Élément|Valeur|
 |-|-|
 |TypeName|DoNotPrefixEnumValuesWithTypeName|
 |CheckId|CA1712|
-|Catégorie|Microsoft.Naming|
+|Category|Microsoft. Naming|
 |Modification avec rupture|Rupture|
 
 ## <a name="cause"></a>Cause
@@ -38,7 +38,7 @@ ms.locfileid: "72669125"
 ## <a name="rule-description"></a>Description de la règle
  Les noms des membres de l’énumération n’ont pas le préfixe du nom de type, car les informations de type doivent être fournies par les outils de développement.
 
- Les conventions d’affectation de noms fournissent une apparence commune pour les bibliothèques qui ciblent le common language runtime. Cela réduit le temps nécessaire à pour apprendre une nouvelle bibliothèque de logiciels et augmente la confiance des clients à ce que la bibliothèque ait été développée par une personne expérimentée dans le développement de code géré.
+ Les conventions d’affectation de noms fournissent une recherche commune pour les bibliothèques qui ciblent le common language runtime. Cela réduit le temps nécessaire à pour apprendre une nouvelle bibliothèque de logiciels et augmente la confiance des clients à ce que la bibliothèque ait été développée par une personne expérimentée dans le développement de code géré.
 
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations
  Pour corriger une violation de cette règle, supprimez le préfixe de nom de type du membre de l’énumération.
@@ -54,11 +54,11 @@ ms.locfileid: "72669125"
  [!code-vb[FxCop.Naming.EnumValues#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Naming.EnumValues/vb/FxCop.Naming.EnumValues.vb#1)]
 
 ## <a name="related-rules"></a>Règles associées
- [CA1711 : Les identificateurs ne doivent pas avoir un suffixe incorrect](../code-quality/ca1711-identifiers-should-not-have-incorrect-suffix.md)
+ [CA1711 : Les identificateurs ne doivent pas porter un suffixe incorrect](../code-quality/ca1711-identifiers-should-not-have-incorrect-suffix.md)
 
- [CA1027 : Marquez les énumérations avec FlagsAttribute](../code-quality/ca1027-mark-enums-with-flagsattribute.md)
+ [CA1027 : Marquer les enums avec FlagsAttribute](../code-quality/ca1027-mark-enums-with-flagsattribute.md)
 
- [CA2217 : Ne marquez pas les énumérations avec FlagsAttribute](../code-quality/ca2217-do-not-mark-enums-with-flagsattribute.md)
+ [CA2217 : Ne marquez pas les enums avec l'attribut FlagsAttribute](../code-quality/ca2217-do-not-mark-enums-with-flagsattribute.md)
 
 ## <a name="see-also"></a>Voir aussi
  <xref:System.Enum?displayProperty=fullName>

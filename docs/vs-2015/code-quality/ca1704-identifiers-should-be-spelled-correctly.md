@@ -15,17 +15,17 @@ caps.latest.revision: 27
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 56ac5e60964621859c77bf53dc4f6c14480b4a83
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: b5e078fc1bb7fe247d541e7695e98c2de76c2466
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72669237"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85544064"
 ---
-# <a name="ca1704-identifiers-should-be-spelled-correctly"></a>CA1704 : Les identificateurs doivent être correctement orthographiés
+# <a name="ca1704-identifiers-should-be-spelled-correctly"></a>CA1704 : L'orthographe des identificateurs doit être correcte
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Élément|Valeur|
 |-|-|
 |TypeName|IdentifiersShouldBeSpelledCorrectly|
 |CheckId|CA1704|
@@ -46,12 +46,12 @@ ms.locfileid: "72669237"
 
 - Les traits de soulignement signifient la fin d’un jeton et sont supprimés. Par exemple, Hello_world régit « Hello », « World ».
 
-- Les perluète incorporées sont supprimées. Par exemple, pour & tapis régit sous forme de « format ».
+- Les perluète incorporées sont supprimées. Par exemple, pour&tapis régit sous forme de « format ».
 
   Par défaut, la version anglaise (en) du vérificateur d’orthographe est utilisée. Aucun autre dictionnaire de langue n’est actuellement disponible.
 
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations
- Pour corriger une violation de cette règle, corrigez l’orthographe du mot ou ajoutez le mot à un dictionnaire personnalisé nommé CustomDictionary. Xml. Placez le dictionnaire dans le répertoire d’installation de l’outil, dans le répertoire du projet ou dans le répertoire associé à l’outil sous le profil de l’utilisateur (%USERPROFILE%\Application Data \\...). Pour savoir comment ajouter le dictionnaire personnalisé à un projet dans [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], consultez [Comment : personnaliser le dictionnaire d’analyse du code](../code-quality/how-to-customize-the-code-analysis-dictionary.md)
+ Pour corriger une violation de cette règle, corrigez l’orthographe du mot ou ajoutez le mot à un dictionnaire personnalisé nommé CustomDictionary.xml. Placez le dictionnaire dans le répertoire d’installation de l’outil, dans le répertoire du projet ou dans le répertoire associé à l’outil sous le profil de l’utilisateur (%USERPROFILE%\Application Data \\ ...). Pour savoir comment ajouter le dictionnaire personnalisé à un projet dans [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] , consultez [Comment : personnaliser le dictionnaire d’analyse du code](../code-quality/how-to-customize-the-code-analysis-dictionary.md)
 
 - Ajoutez des mots qui ne doivent pas provoquer une violation sous le dictionnaire/mots/chemin d’accès reconnu.
 
@@ -90,17 +90,17 @@ ms.locfileid: "72669237"
  Supprimez un avertissement de cette règle uniquement si le mot est intentionnellement mal orthographié et que le mot s’applique à un ensemble limité de la bibliothèque. Les mots correctement orthographiés réduisent la courbe d’apprentissage requise pour les nouvelles bibliothèques logicielles.
 
 ## <a name="related-rules"></a>Règles associées
- [CA2204 : Les littéraux doivent être correctement orthographiés](../code-quality/ca2204-literals-should-be-spelled-correctly.md)
+ [CA2204 : Les littéraux doivent être orthographiés correctement](../code-quality/ca2204-literals-should-be-spelled-correctly.md)
 
- [CA1703 : Les chaînes de ressources doit être orthographiées correctement](../code-quality/ca1703-resource-strings-should-be-spelled-correctly.md)
+ [CA1703 : L'orthographe des chaînes de ressources doit être correcte](../code-quality/ca1703-resource-strings-should-be-spelled-correctly.md)
 
- [CA1709 : La casse des identificateurs doit être correcte](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)
+ [CA1709 : La casse des identificateurs doit être correcte](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)
 
- [CA1708 : Les identificateurs ne doivent pas différer que par leur casse](../code-quality/ca1708-identifiers-should-differ-by-more-than-case.md)
+ [CA1708 : Les identificateurs ne doivent pas différer uniquement par leur casse](../code-quality/ca1708-identifiers-should-differ-by-more-than-case.md)
 
- [CA1707 : Les identificateurs ne doivent pas contenir de traits de soulignement](../code-quality/ca1707-identifiers-should-not-contain-underscores.md)
+ [CA1707 : Les identificateurs ne doivent pas contenir de traits de soulignement](../code-quality/ca1707-identifiers-should-not-contain-underscores.md)
 
- [CA1726 : Utilisez les termes préférés](../code-quality/ca1726-use-preferred-terms.md)
+ [CA1726 : Utilisez les termes par défaut](../code-quality/ca1726-use-preferred-terms.md)
 
 ## <a name="see-also"></a>Voir aussi
  [Guide pratique pour personnaliser le dictionnaire d’analyse du code](../code-quality/how-to-customize-the-code-analysis-dictionary.md)

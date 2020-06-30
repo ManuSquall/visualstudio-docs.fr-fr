@@ -2,7 +2,7 @@
 title: IPython REPL (fenêtre interactive)
 description: Utilisez la fenêtre interactive de Visual Studio en mode IPython pour un environnement de développement interactif convivial avec des fonctionnalités de calcul parallèle interactives.
 ms.date: 01/28/2019
-ms.topic: conceptual
+ms.topic: how-to
 author: JoshuaPartlow
 ms.author: joshuapa
 manager: jillfra
@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 8b4510ed738fdd2b33389ab4242dbde86cffff8c
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: b1fe36a4ee74ca1b41c1db1d79a6e4683c1f2b1f
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "62957730"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85542426"
 ---
 # <a name="use-ipython-in-the-interactive-window"></a>Utiliser IPython dans la fenêtre interactive
 
@@ -51,7 +51,7 @@ Pour cette procédure pas à pas, vous devez avoir installé l’environnement [
 
     ![Graphique inline dans la fenêtre interactive](media/ipython-repl-04.png)
 
-7. Au lieu d’effectuer une saisie dans la boucle REPL, vous pouvez écrire du code dans l’éditeur, le sélectionner, cliquer dessus avec le bouton droit et sélectionner la commande **Envoyer vers Interactive** (ou appuyer sur **Ctrl**+**Entrée**). Essayez de coller le code ci-dessous dans un nouveau fichier dans l’éditeur, en le sélectionnant avec **Ctrl**+**A**, puis en envoyant à la fenêtre **Interactive.** (Visual Studio envoie le code en une seule unité pour éviter de vous donner des graphes intermédiaires ou partiels. Si vous n’avez pas un projet Python ouvert avec un autre environnement sélectionné, Visual Studio ouvre une **fenêtre interactive** pour n’importe quel environnement sélectionné par défaut dans la fenêtre **Environnements Python**.)
+7. Au lieu d’effectuer une saisie dans la boucle REPL, vous pouvez écrire du code dans l’éditeur, le sélectionner, cliquer dessus avec le bouton droit et sélectionner la commande **Envoyer vers Interactive** (ou appuyer sur **Ctrl**+**Entrée**). Essayez de coller le code ci-dessous dans un nouveau fichier dans l’éditeur, en le sélectionnant avec **CTRL** + **a**, puis en envoyant à la fenêtre **interactive** . (Visual Studio envoie le code en une seule unité pour éviter de vous donner des graphes intermédiaires ou partiels. Si vous n’avez pas un projet Python ouvert avec un autre environnement sélectionné, Visual Studio ouvre une **fenêtre interactive** pour n’importe quel environnement sélectionné par défaut dans la fenêtre **Environnements Python**.)
 
     ```python
     from mpl_toolkits.mplot3d import Axes3D
@@ -78,7 +78,7 @@ Pour cette procédure pas à pas, vous devez avoir installé l’environnement [
 
 8. Pour afficher les graphiques en dehors de la **fenêtre interactive**, exécutez le code en utilisant cette fois la commande **Déboguer** > **Démarrer sans débogage**.
 
-IPython a beaucoup d’autres fonctionnalités utiles telles que s’échapper à la coque du système, substitution variable, capture de sortie, etc. Consultez la [documentation IPython](https://ipython.org/documentation.html) pour en savoir plus.
+IPython possède de nombreuses autres fonctionnalités utiles, telles que l’échappement vers l’interpréteur de commandes système, la substitution de variables, la capture de sortie, etc. Pour plus d’informations, consultez la [documentation de IPython](https://ipython.org/documentation.html) .
 
 ## <a name="see-also"></a>Voir aussi
 

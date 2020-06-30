@@ -1,7 +1,7 @@
 ---
-title: Getautoinsertextensions, méthode
+title: Méthode Getautoinsertextensions,
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - VB
 - CSharp
@@ -10,15 +10,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: fb767ec7301a1d4e0f29003971b017339228fc9f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f5d88af6f24306b7b243359c9797a2cb7e7449bc
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62972276"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85543505"
 ---
-# <a name="getautoinsertextensions-method"></a>Getautoinsertextensions, méthode
-  Obtient des informations sur les applications pour Office qui doivent être insérés automatiquement pendant le débogage.
+# <a name="getautoinsertextensions-method"></a>Méthode Getautoinsertextensions,
+  Obtient des informations sur les applications pour Office qui doivent être insérées automatiquement pendant le débogage.
 
  Cette méthode est réservée à une utilisation ultérieure.
 
@@ -34,10 +34,10 @@ HRESULT GetAutoInsertExtensions(
 
 |Paramètre|Description|
 |---------------|-----------------|
-|*psaExtensionNames*|Les noms d’extension des applications pour Office.|
+|*psaExtensionNames*|Noms d’extension des applications pour Office.|
 
-## <a name="return-value"></a>Valeur de retour
+## <a name="return-value"></a>Valeur renvoyée
  Valeur HRESULT qui indique si la méthode a réussi.
 
-## <a name="remarks"></a>Notes
- Chaque application pour Office doit être inséré est retournée comme un nom d’extension application Office, ce qui correspond à une valeur sous **HKEY_CURRENT_USER\Software\Microsoft\Office\WEF\Developer**. L’hôte doit rechercher ces valeurs dans le Registre et puis insère automatiquement les extensions.
+## <a name="remarks"></a>Remarques
+ Chaque application pour Office à insérer est retournée sous la forme d’un nom d’extension d’application Office, qui correspond à une valeur sous **HKEY_CURRENT_USER \software\microsoft\office\wef\developer**. L’hôte doit rechercher ces valeurs dans le registre, puis insérer automatiquement les extensions.

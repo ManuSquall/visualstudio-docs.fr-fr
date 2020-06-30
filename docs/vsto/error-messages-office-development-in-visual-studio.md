@@ -3,7 +3,7 @@ title: Messages d’erreur (développement Office dans Visual Studio)
 titleSuffix: ''
 ms.custom: seodec18
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: error-reference
 dev_langs:
 - VB
 - CSharp
@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6f00597c7d0cd55deb3a8747f6d23c658d83c2e4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7eb12578f10847c9afc6cbcef67e9b3d3b678db5
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62951981"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85543544"
 ---
 # <a name="error-messages-office-development-in-visual-studio"></a>Messages d’erreur (développement Office dans Visual Studio)
   Chaque rubrique de message d’erreur fournit des informations sur les causes possibles d’une erreur et les solutions potentielles.

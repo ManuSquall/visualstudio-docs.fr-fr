@@ -15,23 +15,23 @@ caps.latest.revision: 21
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 854e9a492f422957e64e1a4b6a00bc7c39b81c46
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.openlocfilehash: f9dc15cec4012d2b63eb5f21c25bd709961c95c8
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/13/2020
-ms.locfileid: "75919235"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85544077"
 ---
 # <a name="ca1702-compound-words-should-be-cased-correctly"></a>CA1702 : La casse des mots composés doit être correcte
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Pour obtenir la documentation la plus récente sur Visual Studio, consultez [ca1702 : la casse des mots composés doit être correcte](/visualstudio/code-quality/ca1702-compound-words-should-be-cased-correctly).
 
-|||
+|Élément|Valeur|
 |-|-|
 |TypeName|CompoundWordsShouldBeCasedCorrectly|
 |CheckId|CA1702|
-|Catégorie|Microsoft.Naming|
+|Category|Microsoft. Naming|
 |Modification avec rupture|Avec rupture-en cas de déclenchement sur les assemblys.<br /><br /> Sans rupture-en cas de déclenchement sur les paramètres de type.|
 
 ## <a name="cause"></a>Cause
@@ -40,7 +40,7 @@ Pour obtenir la documentation la plus récente sur Visual Studio, consultez [ca1
 ## <a name="rule-description"></a>Description de la règle
  Le nom de l’identificateur est fractionné en mots basés sur la casse. Chaque combinaison contiguë à deux mots est vérifiée par la bibliothèque du vérificateur d’orthographe Microsoft. S’il est reconnu, l’identificateur produit une violation de la règle. Les exemples de mots composés qui provoquent une violation sont « CheckSum » et « multipart », qui doivent respecter la casse « checksum » et « multipart », respectivement. En raison de l’utilisation courante précédente, plusieurs exceptions sont intégrées à la règle, et plusieurs mots uniques sont signalés, tels que « Toolbar » et « filename », qui doivent respecter la casse de deux mots distincts (dans ce cas, « ToolBar » et « FileName »).
 
- Les conventions d’affectation de noms fournissent une apparence commune pour les bibliothèques qui ciblent le common language runtime. Cela réduit la courbe d’apprentissage requise pour les nouvelles bibliothèques logicielles et augmente la confiance des clients dans la mesure où la bibliothèque a été développée par une personne ayant une expertise dans le développement de code géré.
+ Les conventions d’affectation de noms fournissent une recherche commune pour les bibliothèques qui ciblent le common language runtime. Cela réduit la courbe d’apprentissage requise pour les nouvelles bibliothèques logicielles et augmente la confiance des clients dans la mesure où la bibliothèque a été développée par une personne ayant une expertise dans le développement de code géré.
 
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations
  Modifiez le nom pour qu’il respecte la casse.
@@ -49,11 +49,11 @@ Pour obtenir la documentation la plus récente sur Visual Studio, consultez [ca1
  Il est possible de supprimer sans risque un avertissement de cette règle si les deux parties du mot composé sont reconnues par le dictionnaire d’orthographe et si l’objectif est d’utiliser deux mots.
 
 ## <a name="related-rules"></a>Règles associées
- [CA1701 : La casse des mots composés de chaînes de ressources doit être correcte](../code-quality/ca1701-resource-string-compound-words-should-be-cased-correctly.md)
+ [CA1701 : La casse des mots composés de la chaîne de ressources doit être correcte](../code-quality/ca1701-resource-string-compound-words-should-be-cased-correctly.md)
 
- [CA1709 : La casse des identificateurs doit être correcte](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)
+ [CA1709 : La casse des identificateurs doit être correcte](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)
 
- [CA1708 : Les identificateurs ne doivent pas différer que par leur casse](../code-quality/ca1708-identifiers-should-differ-by-more-than-case.md)
+ [CA1708 : Les identificateurs ne doivent pas différer uniquement par leur casse](../code-quality/ca1708-identifiers-should-differ-by-more-than-case.md)
 
 ## <a name="see-also"></a>Voir aussi
  Conventions de mise en [majuscules](https://msdn.microsoft.com/library/4c4ea526-9203-486f-b72d-29d61c5b3c6d) des [directives de nommage](https://msdn.microsoft.com/library/fc076d66-9b5f-42d3-aa65-61d970c794a3)
