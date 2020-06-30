@@ -16,12 +16,12 @@ caps.latest.revision: 22
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: fddcff8bb51216097689a86bd25718a0727c2b45
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 5294840e4669f28f4e8a04978274ad130d1397ee
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72672936"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85535731"
 ---
 # <a name="code-analysis-for-managed-code-warnings"></a>Analyse du code pour les avertissements liés au code managé
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ L’outil Analyse du code managé fournit des avertissements qui indiquent des v
 
 |Élément|Description|
 |----------|-----------------|
-|Tapez|TypeName de la règle.|
+|Type|TypeName de la règle.|
 |CheckId|Identificateur unique de la règle. CheckId et Category sont utilisés pour la suppression à la source d’un avertissement.|
 |Category|Catégorie de l’avertissement.|
 |Modification avec rupture|Indique si la correction d’une violation de la règle constitue une modification avec rupture. Une modification avec rupture signifie qu’un assembly qui présente une dépendance à la cible ayant provoqué la violation ne se recompile pas avec la nouvelle version corrigée ou peut échouer au moment de l’exécution en raison de la modification. Quand plusieurs corrections sont possibles et qu’au moins l’une d’elles est une modification avec rupture et qu’une autre ne l’est pas, les caractéristiques « Avec rupture » et « Sans rupture » sont toutes deux spécifiées.|
@@ -45,19 +45,19 @@ L’outil Analyse du code managé fournit des avertissements qui indiquent des v
 
 ## <a name="in-this-section"></a>Dans cette section
 
-|||
+|Élément|Valeur|
 |-|-|
 |[Avertissements par CheckId](../code-quality/code-analysis-warnings-for-managed-code-by-checkid.md)|Répertorie tous les avertissements par CheckId.|
-|[Avertissements relatifs au chiffrement](../code-quality/cryptography-warnings.md)|Avertissements gérant la sécurité des bibliothèques et des applications via l’utilisation correcte du chiffrement.|
-|[Avertissements liés à la conception](../code-quality/design-warnings.md)|Avertissements gérant la conception correcte des bibliothèques, telle qu’elle est spécifiée dans les règles de conception de [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] .|
-|[Avertissements liés à la globalisation](../code-quality/globalization-warnings.md)|Avertissements gérant les applications et les bibliothèques universelles.|
-|[Avertissements liés à l’interopérabilité](../code-quality/interoperability-warnings.md)|Avertissements gérant l’interaction avec les clients COM.|
-|[Avertissements liés à la facilité de maintenance](../code-quality/maintainability-warnings.md)|Avertissements gérant la maintenance des bibliothèques et des applications.|
-|[Mobility Warnings](../code-quality/mobility-warnings.md)|Avertissements gérant l’optimisation de la consommation d’énergie.|
-|[Avertissements liés à l’affectation de noms](../code-quality/naming-warnings.md)|Avertissements gérant le respect des conventions d’affectation des noms définies dans les règles de conception de [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] .|
-|[Avertissements liés aux performances](../code-quality/performance-warnings.md)|Avertissements gérant les hautes performances des applications et des bibliothèques.|
-|[Avertissements liés à la portabilité](../code-quality/portability-warnings.md)|Avertissements gérant la portabilité sur différentes plateformes.|
-|[Avertissements liés à la fiabilité](../code-quality/reliability-warnings.md)|Avertissements gérant la fiabilité des bibliothèques et des applications, notamment une utilisation adaptée des threads et de la mémoire.|
-|[Avertissements liés à la sécurité](../code-quality/security-warnings.md)|Avertissements gérant la sécurité des bibliothèques et des applications.|
-|[Avertissements liés à l’utilisation](../code-quality/usage-warnings.md)|Avertissements gérant l’utilisation adéquate de [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)].|
-|[Erreurs de stratégie d’analyse du code](../code-quality/code-analysis-policy-errors.md)|Erreurs qui se produisent si la stratégie d’analyse du code n’est pas satisfaite au moment de l’archivage.|
+|[Avertissements de chiffrement](../code-quality/cryptography-warnings.md)|Avertissements gérant la sécurité des bibliothèques et des applications via l’utilisation correcte du chiffrement.|
+|[Avertissements de conception](../code-quality/design-warnings.md)|Avertissements gérant la conception correcte des bibliothèques, telle qu’elle est spécifiée dans les règles de conception de [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] .|
+|[Avertissements de globalisation](../code-quality/globalization-warnings.md)|Avertissements gérant les applications et les bibliothèques universelles.|
+|[Avertissements d’interopérabilité](../code-quality/interoperability-warnings.md)|Avertissements gérant l’interaction avec les clients COM.|
+|[Avertissements de maintenabilité](../code-quality/maintainability-warnings.md)|Avertissements gérant la maintenance des bibliothèques et des applications.|
+|[Avertissements relatifs à la mobilité](../code-quality/mobility-warnings.md)|Avertissements gérant l’optimisation de la consommation d’énergie.|
+|[Avertissements d’attribution de noms](../code-quality/naming-warnings.md)|Avertissements gérant le respect des conventions d’affectation des noms définies dans les règles de conception de [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] .|
+|[Avertissements relatifs aux performances](../code-quality/performance-warnings.md)|Avertissements gérant les hautes performances des applications et des bibliothèques.|
+|[Avertissements de portabilité](../code-quality/portability-warnings.md)|Avertissements gérant la portabilité sur différentes plateformes.|
+|[Avertissements de fiabilité](../code-quality/reliability-warnings.md)|Avertissements gérant la fiabilité des bibliothèques et des applications, notamment une utilisation adaptée des threads et de la mémoire.|
+|[Avertissements de sécurité](../code-quality/security-warnings.md)|Avertissements gérant la sécurité des bibliothèques et des applications.|
+|[Avertissements d’utilisation](../code-quality/usage-warnings.md)|Avertissements gérant l’utilisation adéquate de [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)].|
+|[Code Analysis Policy Errors](../code-quality/code-analysis-policy-errors.md)|Erreurs qui se produisent si la stratégie d’analyse du code n’est pas satisfaite au moment de l’archivage.|

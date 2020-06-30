@@ -8,12 +8,12 @@ ms.devlang: dotnet
 ms.topic: how-to
 ms.date: 07/23/2019
 ms.author: ghogen
-ms.openlocfilehash: 18e2789af3a699dacee9a9e8c1f1846ee8622800
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: f1c02e1fdc0c72ac23cb65605f324608a7fc33d7
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85283175"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85536888"
 ---
 # <a name="deploy-to-docker-hub"></a>Déployer sur Docker Hub
 
@@ -29,17 +29,17 @@ Si vous n’avez pas de référentiel du hub d’ancrage, créez-en un dans le h
 
 1. Cliquez avec le bouton droit sur le nœud du projet et choisissez **publier...**. Un écran affichant les options de déploiement s’affiche.
 
-   ![](media/deploy-docker-hub/container-tools-docker-hub-deploy.png)
+   ![Capture d’écran des options de déploiement](media/deploy-docker-hub/container-tools-docker-hub-deploy.png)
 
 1. Sous **choisir une cible de publication**, choisissez **Container Registry**, puis cliquez sur **hub d’ancrage**. La boîte de dialogue **hub d’ancrage** s’affiche.
 
-   ![](media/deploy-docker-hub/container-tools-docker-hub-credentials.png)
+   ![Capture d’écran de la boîte de dialogue Hub Dockr](media/deploy-docker-hub/container-tools-docker-hub-credentials.png)
 
 1. Si vous vous connectez à votre propre référentiel (ne faisant pas partie d’une organisation), laissez la case à cocher **publier sur un dépôt personnel** cochée. Si le référentiel est détenu par une organisation, désactivez la case à cocher, puis entrez le nom de l’organisation. Entrez votre nom d’utilisateur et votre mot de passe pour votre compte d’ancrage qui dispose des autorisations d’accès au référentiel auquel vous vous connectez, puis sélectionnez **Enregistrer**.  
 
-   Visual Studio tente de déployer votre image sur le hub d’ancrage.  En cas de réussite, l’écran de **publication** s’affiche avec l’URL de l’image du référentiel, la balise d’image, le référentiel et la configuration de build * * (par exemple, **Release**).
+   Visual Studio tente de déployer votre image sur le hub d’ancrage.  En cas de réussite, l’écran de **publication** s’affiche avec l’URL de l’image du référentiel, la balise d’image, le référentiel et la configuration de build (par exemple, **Release**).
 
-   ![](media/deploy-docker-hub/container-tools-docker-hub-finished.png)
+   ![Capture d’écran de l’écran de publication](media/deploy-docker-hub/container-tools-docker-hub-finished.png)
 
 1. Vous pouvez mettre à jour l’image à tout moment en cliquant sur le bouton **publier** dans cette page.  Vous pouvez modifier ou supprimer le profil en utilisant les liens sous l’URL.
 

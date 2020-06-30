@@ -1,7 +1,7 @@
 ---
-title: 'Procédure : Enregistrer des documents par programmation'
+title: 'Comment : enregistrer des documents par programmation'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -13,14 +13,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b4fbf8e4cb67d5216dc17c325911bb243fae6e1c
-ms.sourcegitcommit: 5b34052a1c7d86179d7898ed532babb2d9dad4a3
+ms.openlocfilehash: 464d131261ecfb0a64a3ca279007ff9332cdb2e4
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69490606"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85537590"
 ---
-# <a name="how-to-programmatically-save-documents"></a>Procédure : Enregistrer des documents par programmation
+# <a name="how-to-programmatically-save-documents"></a>Comment : enregistrer des documents par programmation
 
 Il existe plusieurs façons d’enregistrer Microsoft Office documents Word. Vous pouvez enregistrer un document sans modifier le nom du document, ou vous pouvez enregistrer un document sous un nouveau nom.
 
@@ -53,29 +53,29 @@ Il existe plusieurs façons d’enregistrer Microsoft Office documents Word. Vou
 
 ## <a name="save-a-document-with-a-new-name"></a>Enregistrer un document sous un nouveau nom
 
-Utilisez la `SaveAs` méthode pour enregistrer un document sous un nouveau nom. Vous pouvez utiliser cette méthode de l' <xref:Microsoft.Office.Tools.Word.Document> élément hôte dans un projet Word au niveau du document ou d’un objet <xref:Microsoft.Office.Interop.Word.Document> natif dans n’importe quel projet Word. Cette méthode requiert que vous spécifiiez le nouveau nom de fichier, mais les autres arguments sont facultatifs.
+Utilisez la `SaveAs` méthode pour enregistrer un document sous un nouveau nom. Vous pouvez utiliser cette méthode de l' <xref:Microsoft.Office.Tools.Word.Document> élément hôte dans un projet Word au niveau du document ou d’un <xref:Microsoft.Office.Interop.Word.Document> objet natif dans n’importe quel projet Word. Cette méthode requiert que vous spécifiiez le nouveau nom de fichier, mais les autres arguments sont facultatifs.
 
 > [!NOTE]
-> Si vous affichez la boîte de dialogue **Enregistrer** sous dans <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.DocumentBeforeSave> le gestionnaire d' `ThisDocument` événements de et que vous définissez le paramètre *Cancel* sur **false**, l’application peut se fermer de manière inattendue. Si vous affectez la **valeur true**au paramètre *Cancel* , un message d’erreur s’affiche pour indiquer que l’enregistrement automatique a été désactivé.
+> Si vous affichez la boîte de dialogue **Enregistrer** sous dans le <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.DocumentBeforeSave> Gestionnaire d’événements de et que vous `ThisDocument` Définissez le paramètre *Cancel* sur **false**, l’application peut se fermer de manière inattendue. Si vous affectez la **valeur true**au paramètre *Cancel* , un message d’erreur s’affiche pour indiquer que l’enregistrement automatique a été désactivé.
 
 ### <a name="to-save-the-document-associated-with-a-document-level-customization-with-a-new-name"></a>Pour enregistrer le document associé à une personnalisation au niveau du document sous un nouveau nom
 
 1. Appelez la `SaveAs` méthode de la `ThisDocument` classe dans votre projet, à l’aide d’un chemin d’accès qualifié complet et d’un nom de fichier. Si un fichier du même nom existe déjà dans ce dossier, il est automatiquement remplacé. Pour utiliser cet exemple de code, exécutez-le à partir de la classe `ThisDocument` .
 
     > [!NOTE]
-    > La `SaveAs` méthode lève une exception si un répertoire cible n’existe pas ou s’il existe d’autres problèmes lors de l’enregistrement d’un fichier. Il est recommandé d’utiliser un`try...catch` bloc autour de la `SaveAs` méthode ou à l’intérieur d’une méthode d’appel.
+    > La `SaveAs` méthode lève une exception si un répertoire cible n’existe pas ou s’il existe d’autres problèmes lors de l’enregistrement d’un fichier. Il est recommandé d’utiliser un `try...catch` bloc autour de la `SaveAs` méthode ou à l’intérieur d’une méthode d’appel.
 
      [!code-vb[Trin_VstcoreWordAutomation#10](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#10)]
      [!code-csharp[Trin_VstcoreWordAutomation#10](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#10)]
 
 ### <a name="to-save-a-native-document-with-a-new-name"></a>Pour enregistrer un document natif sous un nouveau nom
 
-1. Appelez la <xref:Microsoft.Office.Interop.Word._Document.SaveAs%2A> méthode <xref:Microsoft.Office.Interop.Word.Document> du que vous souhaitez enregistrer, à l’aide d’un chemin d’accès qualifié complet et d’un nom de fichier. Si un fichier du même nom existe déjà dans ce dossier, il est automatiquement remplacé.
+1. Appelez la <xref:Microsoft.Office.Interop.Word._Document.SaveAs%2A> méthode du <xref:Microsoft.Office.Interop.Word.Document> que vous souhaitez enregistrer, à l’aide d’un chemin d’accès qualifié complet et d’un nom de fichier. Si un fichier du même nom existe déjà dans ce dossier, il est automatiquement remplacé.
 
      L’exemple de code suivant enregistre le document actif sous un nouveau nom. Pour utiliser cet exemple de code, exécutez-le à partir de la classe `ThisDocument` ou `ThisAddIn` de votre projet.
 
     > [!NOTE]
-    > La <xref:Microsoft.Office.Interop.Word._Document.SaveAs%2A> méthode lève une exception si un répertoire cible n’existe pas ou s’il existe d’autres problèmes lors de l’enregistrement d’un fichier. Il est recommandé d’utiliser un **bloc try... bloc catch** autour de <xref:Microsoft.Office.Interop.Word._Document.SaveAs%2A> la méthode ou à l’intérieur d’une méthode d’appel.
+    > La <xref:Microsoft.Office.Interop.Word._Document.SaveAs%2A> méthode lève une exception si un répertoire cible n’existe pas ou s’il existe d’autres problèmes lors de l’enregistrement d’un fichier. Il est recommandé d’utiliser un **bloc try... bloc catch** autour de la <xref:Microsoft.Office.Interop.Word._Document.SaveAs%2A> méthode ou à l’intérieur d’une méthode d’appel.
 
      [!code-vb[Trin_VstcoreWordAutomationAddIn#10](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb#10)]
      [!code-csharp[Trin_VstcoreWordAutomationAddIn#10](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#10)]
@@ -84,13 +84,13 @@ Utilisez la `SaveAs` méthode pour enregistrer un document sous un nouveau nom. 
 
 Cet exemple de code doit respecter la condition suivante :
 
-- Pour enregistrer un document par nom, un document nommé *NewDocument. doc* doit exister dans un répertoire nommé *test* sur le lecteur C.
+- Pour enregistrer un document par nom, un document nommé *NewDocument.doc* doit exister dans un répertoire nommé *test* sur le lecteur C.
 
 - Pour enregistrer un document sous un nouveau nom, un répertoire nommé *test* doit exister sur le lecteur C.
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Guide pratique : Fermer des documents par programmation](../vsto/how-to-programmatically-close-documents.md)
-- [Guide pratique : Ouvrir des documents existants par programmation](../vsto/how-to-programmatically-open-existing-documents.md)
+- [Comment : fermer des documents par programmation](../vsto/how-to-programmatically-close-documents.md)
+- [Comment : ouvrir des documents existants par programmation](../vsto/how-to-programmatically-open-existing-documents.md)
 - [Élément hôte de document](../vsto/document-host-item.md)
 - [Paramètres facultatifs dans les solutions Office](../vsto/optional-parameters-in-office-solutions.md)

@@ -15,17 +15,17 @@ caps.latest.revision: 15
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 78702298bab484a95bb8108150415ec0b31ede7d
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: ad467e880b3281a75db2627108af0e0b2f90ea99
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72662907"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85534457"
 ---
-# <a name="ca2214-do-not-call-overridable-methods-in-constructors"></a>CA2214 : N'appelez pas de méthodes substituables dans les constructeurs
+# <a name="ca2214-do-not-call-overridable-methods-in-constructors"></a>CA2214 : N'appelez pas de méthodes substituables dans les constructeurs
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Élément|Valeur|
 |-|-|
 |TypeName|DoNotCallOverridableMethodsInConstructors|
 |CheckId|CA2214|
@@ -45,7 +45,7 @@ ms.locfileid: "72662907"
  Ne supprimez aucun avertissement de cette règle. Le constructeur doit être repensé pour éliminer l’appel à la méthode virtuelle.
 
 ## <a name="example"></a>Exemple
- L’exemple suivant illustre l’effet de la violation de cette règle. L’application de test crée une instance de `DerivedType`, ce qui entraîne l’exécution de son constructeur de classe de base (`BadlyConstructedType`). le constructeur de `BadlyConstructedType` appelle incorrectement la méthode virtuelle `DoSomething`. Comme le montre la sortie, `DerivedType.DoSomething()` s’exécute, et avant l’exécution du constructeur de `DerivedType`.
+ L’exemple suivant illustre l’effet de la violation de cette règle. L’application de test crée une instance de `DerivedType` , ce qui entraîne l’exécution du constructeur de la classe de base ( `BadlyConstructedType` ). `BadlyConstructedType`le constructeur de n’appelle pas correctement la méthode virtuelle `DoSomething` . Comme le montre la sortie, `DerivedType.DoSomething()` s’exécute, et avant `DerivedType` l’exécution du constructeur de.
 
  [!code-csharp[FxCop.Usage.CtorVirtual#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Usage.CtorVirtual/cs/FxCop.Usage.CtorVirtual.cs#1)]
  [!code-vb[FxCop.Usage.CtorVirtual#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Usage.CtorVirtual/vb/FxCop.Usage.CtorVirtual.vb#1)]
@@ -53,5 +53,5 @@ ms.locfileid: "72662907"
  Cet exemple produit la sortie suivante.
 
  **Appel du constructeur de base.** 
-**un fait dérivé est appelé-Initialized ? Aucune** 
-**appelant le constructeur dérivé.**
+ **Un fait dérivé est appelé-Initialized ? Aucun** 
+ **constructeur dérivé appelant.**

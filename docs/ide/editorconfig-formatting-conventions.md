@@ -13,12 +13,12 @@ manager: jillfra
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: 136744514e5e2e49ec92a443ac590eb5cc34418a
-ms.sourcegitcommit: c3b6af7367bef67a02c37404534229b935f713a9
+ms.openlocfilehash: 0490912683fd683398c89e8e69b62dd3824ee04b
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "80892760"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85533469"
 ---
 # <a name="formatting-conventions"></a>Conventions de mise en forme
 
@@ -40,7 +40,7 @@ Pour de nombreuses règles, vous spécifiez `true` (préférer ce style) ou `fal
 
 Les règles de mise en forme mentionnées dans cette section s’appliquent aux langages C# et Visual Basic.
 
-- [Organiser les utilisations](#organize-using-directives)
+- [Organiser les using](#organize-using-directives)
   - dotnet_sort_system_directives_first
   - dotnet_separate_import_directive_groups
 
@@ -59,7 +59,7 @@ dotnet_separate_import_directive_groups = true
 
 #### <a name="dotnet_sort_system_directives_first"></a>dotnet\_sort\_system\_directives_first
 
-|||
+|Propriété|Valeur|
 |-|-|
 | **Nom de la règle** | dotnet_sort_system_directives_first |
 | **Langues applicables** | C# et Visual Basic |
@@ -82,7 +82,7 @@ using System.Threading.Tasks;
 
 #### <a name="dotnet_separate_import_directive_groups"></a>dotnet\_separate\_import\_directive\_groups
 
-|||
+|Propriété|Valeur|
 |-|-|
 | **Nom de la règle** | dotnet_separate_import_directive_groups |
 | **Langues applicables** | C# et Visual Basic |
@@ -108,7 +108,7 @@ using Octokit;
 
 Les règles de mise en forme mentionnées dans cette section s’appliquent uniquement au code C#.
 
-- [Options Newline](#new-line-options)
+- [Options de saut de ligne](#new-line-options)
   - csharp_new_line_before_open_brace
   - csharp_new_line_before_else
   - csharp_new_line_before_catch
@@ -116,7 +116,7 @@ Les règles de mise en forme mentionnées dans cette section s’appliquent uniq
   - csharp_new_line_before_members_in_object_initializers
   - csharp_new_line_before_members_in_anonymous_types
   - csharp_new_line_between_query_expression_clauses
-- [Options d’indentation](#indentation-options)
+- [Options de mise en retrait](#indentation-options)
   - csharp_indent_case_contents
   - csharp_indent_switch_labels
   - csharp_indent_labels
@@ -149,7 +149,7 @@ Les règles de mise en forme mentionnées dans cette section s’appliquent uniq
 - [Options d’encapsulage](#wrap-options)
   - csharp_preserve_single_line_statements
   - csharp_preserve_single_line_blocks
-- [Utilisation d’options directive](#using-directive-options) 
+- [Utilisation des options de directive](#using-directive-options) 
   - csharp_using_directive_placement
 
 ### <a name="new-line-options"></a>Options de nouvelle ligne
@@ -174,7 +174,7 @@ csharp_new_line_between_query_expression_clauses = true
 
 Cette règle vise à déterminer si une accolade ouvrante `{` doit être placée sur la même ligne que le code précédent, ou sur une nouvelle ligne. Pour cette règle, vous spécifiez à la place **all**, **none**, ou un ou plusieurs éléments de code tels que **methods** ou **proprerties**, pour définir quand cette règle doit être appliquée. Pour spécifier plusieurs éléments de code, séparez-les par une virgule (,).
 
-|||
+|Propriété|Valeur|
 |-|-|
 | **Nom de la règle** | csharp_new_line_before_open_brace |
 | **Langues applicables** | C# |
@@ -203,7 +203,7 @@ void MyMethod() {
 
 #### <a name="csharp_new_line_before_else"></a>csharp\_new\_line\_before_else
 
-|||
+|Propriété|Valeur|
 |-|-|
 | **Nom de la règle** | csharp_new_line_before_else |
 | **Langues applicables** | C# |
@@ -231,7 +231,7 @@ if (...) {
 
 #### <a name="csharp_new_line_before_catch"></a>csharp\_new\_line\_before_catch
 
-|||
+|Propriété|Valeur|
 |-|-|
 | **Nom de la règle** | csharp_new_line_before_catch |
 | **Langues applicables** | C# |
@@ -259,7 +259,7 @@ try {
 
 #### <a name="csharp_new_line_before_finally"></a>csharp\_new\_line\_before_finally
 
-|||
+|Propriété|Valeur|
 |-|-|
 | **Nom de la règle** | csharp_new_line_before_finally |
 | **Langues applicables** | C# |
@@ -292,7 +292,7 @@ try {
 
 #### <a name="csharp_new_line_before_members_in_object_initializers"></a>csharp\_new\_line\_before\_members\_in\_object_initializers
 
-|||
+|Propriété|Valeur|
 |-|-|
 | **Nom de la règle** | csharp_new_line_before_members_in_object_initializers |
 | **Langues applicables** | C# |
@@ -318,7 +318,7 @@ var z = new B()
 
 #### <a name="csharp_new_line_before_members_in_anonymous_types"></a>csharp\_new\_line\_before\_members\_in\_anonymous_types
 
-|||
+|Propriété|Valeur|
 |-|-|
 | **Nom de la règle** | csharp_new_line_before_members_in_anonymous_types |
 | **Langues applicables** | C# |
@@ -344,7 +344,7 @@ var z = new
 
 #### <a name="csharp_new_line_between_query_expression_clauses"></a>csharp_new_line_between_query_expression_clauses
 
-|||
+|Propriété|Valeur|
 |-|-|
 | **Nom de la règle** | csharp_new_line_between_query_expression_clauses |
 | **Langues applicables** | C# |
@@ -383,7 +383,7 @@ csharp_indent_case_contents_when_block = true
 
 #### <a name="csharp_indent_case_contents"></a>csharp\_indent\_case_contents
 
-|||
+|Propriété|Valeur|
 |-|-|
 | **Nom de la règle** | csharp_indent_case_contents |
 | **Langues applicables** | C# |
@@ -425,7 +425,7 @@ switch(c) {
 
 #### <a name="csharp_indent_switch_labels"></a>csharp\_indent\_switch_labels
 
-|||
+|Propriété|Valeur|
 |-|-|
 | **Nom de la règle** | csharp_indent_switch_labels |
 | **Langues applicables** | C# |
@@ -464,7 +464,7 @@ default:
 
 #### <a name="csharp_indent_labels"></a>csharp\_indent_labels
 
-|||
+|Propriété|Valeur|
 |-|-|
 | **Nom de la règle** | csharp_indent_labels |
 | **Langues applicables** | C# |
@@ -516,7 +516,7 @@ class C
 
 #### <a name="csharp_indent_block_contents"></a>csharp_indent_block_contents
 
-|||
+|Propriété|Valeur|
 |-|-|
 | **Nom de la règle** | csharp_indent_block_contents |
 | **Langues applicables** | C# |
@@ -540,7 +540,7 @@ Console.WriteLine("Hello");
 
 #### <a name="csharp_indent_braces"></a>csharp_indent_braces
 
-|||
+|Propriété|Valeur|
 |-|-|
 | **Nom de la règle** | csharp_indent_braces |
 | **Langues applicables** | C# |
@@ -564,7 +564,7 @@ static void Hello()
 
 #### <a name="csharp_indent_case_contents_when_block"></a>csharp_indent_case_contents_when_block
 
-|||
+|Propriété|Valeur|
 |-|-|
 | **Nom de la règle** | csharp_indent_case_contents_when_block |
 | **Langues applicables** | C# |
@@ -623,7 +623,7 @@ csharp_space_between_square_brackets = false
 
 #### <a name="csharp_space_after_cast"></a>csharp\_space\_after_cast
 
-|||
+|Propriété|Valeur|
 |-|-|
 | **Nom de la règle** | csharp_space_after_cast |
 | **Langues applicables** | C# |
@@ -642,7 +642,7 @@ int y = (int)x;
 
 #### <a name="csharp_space_after_keywords_in_control_flow_statements"></a>csharp_space_after_keywords_in_control_flow_statements
 
-|||
+|Propriété|Valeur|
 |-|-|
 | **Nom de la règle** | csharp_space_after_keywords_in_control_flow_statements |
 | **Langues applicables** | C# |
@@ -661,7 +661,7 @@ for(int i;i<x;i++) { ... }
 
 #### <a name="csharp_space_between_parentheses"></a>csharp_space_between_parentheses
 
-|||
+|Propriété|Valeur|
 |-|-|
 | **Nom de la règle** | csharp_space_between_parentheses |
 | **Langues applicables** | C# |
@@ -685,7 +685,7 @@ int y = ( int )x;
 
 #### <a name="csharp_space_before_colon_in_inheritance_clause"></a>csharp\_space\_before\_colon\_in\_inheritance_clause
 
-|||
+|Propriété|Valeur|
 |-|-|
 | **Nom de la règle** | csharp_space_before_colon_in_inheritance_clause |
 | **Langues applicables** | C# |
@@ -720,7 +720,7 @@ class C: I
 
 #### <a name="csharp_space_after_colon_in_inheritance_clause"></a>csharp\_space\_after\_colon\_in\_inheritance_clause
 
-|||
+|Propriété|Valeur|
 |-|-|
 | **Nom de la règle** | csharp_space_after_colon_in_inheritance_clause |
 | **Langues applicables** | C# |
@@ -755,7 +755,7 @@ class C :I
 
 #### <a name="csharp_space_around_binary_operators"></a>csharp\_space\_around\_binary_operators
 
-|||
+|Propriété|Valeur|
 |-|-|
 | **Nom de la règle** | csharp_space_around_binary_operators |
 | **Langues applicables** | C# |
@@ -779,7 +779,7 @@ return x  *  (x-y);
 
 #### <a name="csharp_space_between_method_declaration_parameter_list_parentheses"></a>csharp_space_between_method_declaration_parameter_list_parentheses
 
-|||
+|Propriété|Valeur|
 |-|-|
 | **Nom de la règle** | csharp_space_between_method_declaration_parameter_list_parentheses |
 | **Langues applicables** | C# |
@@ -798,7 +798,7 @@ void Bark(int x) { ... }
 
 #### <a name="csharp_space_between_method_declaration_empty_parameter_list_parentheses"></a>csharp_space_between_method_declaration_empty_parameter_list_parentheses
 
-|||
+|Propriété|Valeur|
 |-|-|
 | **Nom de la règle** | csharp_space_between_method_declaration_empty_parameter_list_parentheses |
 | **Langues applicables** | C# |
@@ -833,7 +833,7 @@ void Goo(int x)
 
 #### <a name="csharp_space_between_method_declaration_name_and_open_parenthesis"></a>csharp_space_between_method_declaration_name_and_open_parenthesis
 
-|||
+|Propriété|Valeur|
 |-|-|
 | **Nom de la règle** | csharp_space_between_method_declaration_name_and_open_parenthesis |
 | **Langues applicables** | C# |
@@ -851,7 +851,7 @@ void M() { }
 
 #### <a name="csharp_space_between_method_call_parameter_list_parentheses"></a>csharp_space_between_method_call_parameter_list_parentheses
 
-|||
+|Propriété|Valeur|
 |-|-|
 | **Nom de la règle** | csharp_space_between_method_call_parameter_list_parentheses |
 | **Langues applicables** | C# |
@@ -870,7 +870,7 @@ MyMethod(argument);
 
 #### <a name="csharp_space_between_method_call_empty_parameter_list_parentheses"></a>csharp_space_between_method_call_empty_parameter_list_parentheses
 
-|||
+|Propriété|Valeur|
 |-|-|
 | **Nom de la règle** | csharp_space_between_method_call_empty_parameter_list_parentheses |
 | **Langues applicables** | C# |
@@ -905,7 +905,7 @@ void Goo(int x)
 
 #### <a name="csharp_space_between_method_call_name_and_opening_parenthesis"></a>csharp_space_between_method_call_name_and_opening_parenthesis
 
-|||
+|Propriété|Valeur|
 |-|-|
 | **Nom de la règle** | csharp_space_between_method_call_name_and_opening_parenthesis |
 | **Langues applicables** | C# |
@@ -940,7 +940,7 @@ void Goo(int x)
 
 #### <a name="csharp_space_after_comma"></a>csharp_space_after_comma
 
-|||
+|Propriété|Valeur|
 |-|-|
 | **Nom de la règle** | csharp_space_after_comma |
 | **Langues applicables** | C# |
@@ -958,7 +958,7 @@ int[] x = new int[] { 1,2,3,4,5 }
 
 #### <a name="csharp_space_before_comma"></a>csharp_space_before_comma
 
-|||
+|Propriété|Valeur|
 |-|-|
 | **Nom de la règle** | csharp_space_before_comma |
 | **Langues applicables** | C# |
@@ -976,7 +976,7 @@ int[] x = new int[] { 1, 2, 3, 4, 5 };
 
 #### <a name="csharp_space_after_dot"></a>csharp_space_after_dot
 
-|||
+|Propriété|Valeur|
 |-|-|
 | **Nom de la règle** | csharp_space_after_dot |
 | **Langues applicables** | C# |
@@ -994,7 +994,7 @@ this.Goo();
 
 #### <a name="csharp_space_before_dot"></a>csharp_space_before_dot
 
-|||
+|Propriété|Valeur|
 |-|-|
 | **Nom de la règle** | csharp_space_before_dot |
 | **Langues applicables** | C# |
@@ -1012,7 +1012,7 @@ this.Goo();
 
 #### <a name="csharp_space_after_semicolon_in_for_statement"></a>csharp_space_after_semicolon_in_for_statement
 
-|||
+|Propriété|Valeur|
 |-|-|
 | **Nom de la règle** | csharp_space_after_semicolon_in_for_statement |
 | **Langues applicables** | C# |
@@ -1030,7 +1030,7 @@ for (int i = 0;i < x.Length;i++)
 
 ##### <a name="csharp_space_before_semicolon_in_for_statement"></a>csharp_space_before_semicolon_in_for_statement
 
-|||
+|Propriété|Valeur|
 |-|-|
 | **Nom de la règle** | csharp_space_before_semicolon_in_for_statement |
 | **Langues applicables** | C# |
@@ -1048,7 +1048,7 @@ for (int i = 0; i < x.Length; i++)
 
 #### <a name="csharp_space_around_declaration_statements"></a>csharp_space_around_declaration_statements
 
-|||
+|Propriété|Valeur|
 |-|-|
 | **Nom de la règle** | csharp_space_around_declaration_statements |
 | **Langues applicables** | C# |
@@ -1066,7 +1066,7 @@ int x = 0;
 
 #### <a name="csharp_space_before_open_square_brackets"></a>csharp_space_before_open_square_brackets
 
-|||
+|Propriété|Valeur|
 |-|-|
 | **Nom de la règle** | csharp_space_before_open_square_brackets |
 | **Langues applicables** | C# |
@@ -1084,7 +1084,7 @@ int[] numbers = new int[] { 1, 2, 3, 4, 5 };
 
 #### <a name="csharp_space_between_empty_square_brackets"></a>csharp_space_between_empty_square_brackets
 
-|||
+|Propriété|Valeur|
 |-|-|
 | **Nom de la règle** | csharp_space_between_empty_square_brackets |
 | **Langues applicables** | C# |
@@ -1102,7 +1102,7 @@ int[] numbers = new int[] { 1, 2, 3, 4, 5 };
 
 #### <a name="csharp_space_between_square_brackets"></a>csharp_space_between_square_brackets
 
-|||
+|Propriété|Valeur|
 |-|-|
 | **Nom de la règle** | csharp_space_between_square_brackets |
 | **Langues applicables** | C# |
@@ -1133,7 +1133,7 @@ csharp_preserve_single_line_blocks = true
 
 #### <a name="csharp_preserve_single_line_statements"></a>csharp_preserve_single_line_statements
 
-|||
+|Propriété|Valeur|
 |-|-|
 | **Nom de la règle** | csharp_preserve_single_line_statements |
 | **Langues applicables** | C# |
@@ -1153,7 +1153,7 @@ string name = "John";
 
 #### <a name="csharp_preserve_single_line_blocks"></a>csharp_preserve_single_line_blocks
 
-|||
+|Propriété|Valeur|
 |-|-|
 | **Nom de la règle** | csharp_preserve_single_line_blocks |
 | **Langues applicables** | C# |
@@ -1173,9 +1173,9 @@ public int MyProperty
 }
 ```
 
-### <a name="using-directive-options"></a>Utilisation d’options directive
+### <a name="using-directive-options"></a>Utilisation des options de directive
 
-Cette règle de formatage concerne l’utilisation de directives placées à l’intérieur par rapport à l’extérieur d’un espace de nom.
+Cette règle de mise en forme concerne l’utilisation des directives using placées à l’intérieur et à l’extérieur d’un espace de noms.
 
 Exemple de fichier *.editorconfig* :
 
@@ -1188,12 +1188,12 @@ csharp_using_directive_placement = inside_namespace
 
 #### <a name="csharp_using_directive_placement"></a>csharp_using_directive_placement
 
-|||
+|Propriété|Valeur|
 |-|-|
 | **Nom de la règle** | csharp_using_directive_placement |
 | **Langues applicables** | C# |
 | **Version introduite** | Visual Studio 2019 version 16.1 |
-| **Valeurs** | `outside_namespace`- Quitter en utilisant des directives en dehors de l’espace nom<br /><br />`inside_namespace`- Laisser en utilisant des directives à l’intérieur de l’espace nom |
+| **Valeurs** | `outside_namespace`-Laissez les directives using en dehors de l’espace de noms<br /><br />`inside_namespace`-Laissez les directives using à l’intérieur de l’espace de noms |
 
 Exemples de code :
 
@@ -1217,4 +1217,4 @@ namespace Conventions
 
 - [Conventions de langage](editorconfig-language-conventions.md)
 - [Conventions d'attribution d'un nom](editorconfig-naming-conventions.md)
-- [Paramètres de convention de codage .NET pour EditorConfig](editorconfig-code-style-settings-reference.md)
+- [Paramètres de Convention de codage .NET pour EditorConfig](editorconfig-code-style-settings-reference.md)

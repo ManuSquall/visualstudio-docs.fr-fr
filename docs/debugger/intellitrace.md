@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2be69003d14d2c246f95249b5db0b1fa7d470598
-ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
+ms.openlocfilehash: 4cbe14e1bf8c3a5e010e3c9e887a208b7e045b4c
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72911439"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85536511"
 ---
 # <a name="intellitrace-for-visual-studio-enterprise-c-visual-basic-c"></a>IntelliTrace pour Visual Studio Enterprise (C#, Visual Basic, C++)
 
@@ -37,26 +37,26 @@ Vous pouvez consacrer moins de temps au débogage de votre application quand vou
 
 Vous pouvez utiliser IntelliTrace dans Visual Studio Enterprise Edition (mais pas dans les éditions Professional ou Community).
 
-## <a name="what-do-you-want-to-do"></a>Que voulez-vous faire ?
+## <a name="what-do-you-want-to-do"></a>Que voulez-vous faire ?
 
-|||
+|Scénario|Titre|
 |-|-|
-|**Déboguer mon application avec IntelliTrace :**<br /><br /> - Me montrer les événements passés.<br />- Me montrer les informations sur les appels avec les événements passés.<br />- Enregistrer ma session IntelliTrace.<br />- Vérifier les données collectées par IntelliTrace.|- [inspecter les États d’application précédents à l’aide d’IntelliTrace](../debugger/view-historical-application-state.md)<br />- [Procédure pas à pas : utilisation d’IntelliTrace](../debugger/walkthrough-using-intellitrace.md)<br />- [Fonctionnalités IntelliTrace](../debugger/intellitrace-features.md)<br />- [Débogage d’historique](../debugger/historical-debugging.md)|
+|**Déboguer mon application avec IntelliTrace :**<br /><br /> - Me montrer les événements passés.<br />- Me montrer les informations sur les appels avec les événements passés.<br />- Enregistrer ma session IntelliTrace.<br />- Vérifier les données collectées par IntelliTrace.|- [Inspecter les États d’application précédents à l’aide d’IntelliTrace](../debugger/view-historical-application-state.md)<br />- [Procédure pas à pas : utilisation d’IntelliTrace](../debugger/walkthrough-using-intellitrace.md)<br />- [Fonctionnalités IntelliTrace](../debugger/intellitrace-features.md)<br />- [Débogage d’historique](../debugger/historical-debugging.md)|
 |**Collecter des données IntelliTrace à partir d'applications déployées**|- [Utilisation du collecteur autonome IntelliTrace](../debugger/using-the-intellitrace-stand-alone-collector.md)|
 |**Démarrer le débogage à partir d'un fichier journal IntelliTrace (fichier .iTrace).**|- [Utilisation des données IntelliTrace enregistrées](../debugger/using-saved-intellitrace-data.md)|
 
-## <a name="IntelliTraceSupport"></a>Quelles applications peuvent être déboguées à l'aide d'IntelliTrace ?
+## <a name="what-apps-can-i-debug-with-intellitrace"></a><a name="IntelliTraceSupport"></a>Quelles applications peuvent être déboguées à l'aide d'IntelliTrace ?
 
-| | |
+| Niveau de support| Types d’applications |
 |---------------------| - |
 | **Prise en charge complète** | - Applications Visual Basic et Visual C# qui utilisent .NET Framework 2.0 ou versions ultérieures.<br/>Vous pouvez déboguer la plupart des applications, notamment ASP.NET, Microsoft Azure, Windows Forms, WCF, WPF, Windows Workflow, SharePoint 2010 et SharePoint 2013, ainsi que les applications 64 bits.<br/>Pour déboguer des applications SharePoint avec IntelliTrace, consultez [procédure pas à pas : débogage d’une application SharePoint à l’aide d’IntelliTrace](../sharepoint/walkthrough-debugging-a-sharepoint-application-by-using-intellitrace.md).<br/> Pour déboguer des applications Microsoft Azure avec IntelliTrace, consultez [débogage d’un service Cloud publié avec IntelliTrace et Visual Studio](../azure/vs-azure-tools-intellitrace-debug-published-cloud-services.md). |
-| **Prise en charge limitée** | - C++ les applications ciblant Windows prennent en charge l’affichage des instantanés à l’aide d’IntelliTrace. Seuls les événements de débogueur et d’exception sont pris en charge.<br />-Applications .NET Core et ASP.NET Core prises en charge pour certains événements uniquement (événements du contrôleur MVC, ADO.NET et HTTPClient) dans le débogage local. Le collecteur autonome n’est pas pris en charge pour les applications .NET Core ou ASP.NET Core.<br />- Applications F# à titre expérimental<br />-Applications UWP prises en charge pour les événements uniquement |
+| **Prise en charge limitée** | -Les applications C++ ciblant Windows prennent en charge l’affichage des instantanés à l’aide d’IntelliTrace. Seuls les événements de débogueur et d’exception sont pris en charge.<br />-Applications .NET Core et ASP.NET Core prises en charge pour certains événements uniquement (événements du contrôleur MVC, ADO.NET et HTTPClient) dans le débogage local. Le collecteur autonome n’est pas pris en charge pour les applications .NET Core ou ASP.NET Core.<br />- Applications F# à titre expérimental<br />-Applications UWP prises en charge pour les événements uniquement |
 | **Non pris en charge** | -Autres langages et scripts<br />-Windows Services, Silverlight, Xbox ou Windows Mobile Apps |
 
 > [!NOTE]
 > Si vous souhaitez déboguer un processus qui est déjà en cours d’exécution, vous pouvez collecter uniquement les événements IntelliTrace (aucune information sur les appels). Vous pouvez attacher à un processus 32 bits ou 64 bits sur l’ordinateur local uniquement. Les événements qui se produisent avant l’attachement au processus ne sont pas collectés.
 
-## <a name="IntelliTraceVSTraditional"></a> Pourquoi déboguer à l'aide d'IntelliTrace ?
+## <a name="why-debug-with-intellitrace"></a><a name="IntelliTraceVSTraditional"></a> Pourquoi déboguer à l'aide d'IntelliTrace ?
 
 Qu'il soit traditionnel ou *en direct*, le débogage affiche uniquement l'état actuel de votre application avec des données limitées sur les événements passés. Vous devez déduire ces événements en fonction de l'état actuel de l'application ou recréer ces événements en réexécutant votre application.
 
@@ -88,7 +88,7 @@ Voici quelques exemples pour vous aider à effectuer un débogage avec IntelliTr
 
   Cela est utile lorsque vous souhaitez diagnostiquer les problèmes liés aux applications du déploiement. Consultez [utiliser le collecteur autonome IntelliTrace](../debugger/using-the-intellitrace-stand-alone-collector.md).
 
-## <a name="WhatData"></a> Quelles sont les données collectées par IntelliTrace ?
+## <a name="what-data-does-intellitrace-collect"></a><a name="WhatData"></a> Quelles sont les données collectées par IntelliTrace ?
 
 **Collecter les informations sur les événements**
 
@@ -114,11 +114,11 @@ Par défaut, IntelliTrace enregistre uniquement les événements IntelliTrace :
 
   - Exceptions traitées où l'exception est levée et interceptée
 
-  - Exceptions non traitées
+  - Exceptions non prises en charge
 
 - **Événements .NET Framework**
 
-  Par défaut, IntelliTrace enregistre les événements .NET Framework les plus courants. Par exemple, pour un événement <xref:System.Windows.Forms.CheckBox.CheckedChanged?displayProperty=nameWithType>, IntelliTrace collecte l’État et le texte de la case à cocher.
+  Par défaut, IntelliTrace enregistre les événements .NET Framework les plus courants. Par exemple, pour un <xref:System.Windows.Forms.CheckBox.CheckedChanged?displayProperty=nameWithType> événement, IntelliTrace collecte l’État et le texte de la case à cocher.
 
 - **Événements d'application SharePoint 2010 et SharePoint 2013**
 
@@ -126,13 +126,13 @@ Par défaut, IntelliTrace enregistre uniquement les événements IntelliTrace :
 
   Lorsque vous ouvrez le fichier .iTrace, vous pouvez entrer un ID de corrélation SharePoint pour rechercher sa requête web correspondante, afficher les événements inscrits, puis démarrer le débogage à partir d'un événement spécifique. Si le fichier contient des exceptions non gérées, vous pouvez choisir un ID de corrélation pour commencer à déboguer une exception.
 
-  Consultez :
+  Consultez l'article :
 
   - [Utiliser le collecteur autonome IntelliTrace](../debugger/using-the-intellitrace-stand-alone-collector.md)
 
   - [Utilisation des données IntelliTrace enregistrées](../debugger/using-saved-intellitrace-data.md)
 
-  - [Procédure pas à pas : débogage d’une application SharePoint avec IntelliTrace](../sharepoint/walkthrough-debugging-a-sharepoint-application-by-using-intellitrace.md)
+  - [Procédure pas à pas : débogage d'une application SharePoint avec IntelliTrace](../sharepoint/walkthrough-debugging-a-sharepoint-application-by-using-intellitrace.md)
 
 **Capturer des instantanés**
 
@@ -161,7 +161,7 @@ Consultez [inspecter votre application avec le débogage d’historique](../debu
 
 Pour contrôler la quantité d'informations sur les appels qu'IntelliTrace collecte, spécifiez uniquement les modules qui vous intéressent. Cela peut améliorer les performances de votre application pendant la collecte. Consultez la section [contrôler la quantité d’informations collectées par IntelliTrace](../debugger/intellitrace-features.md#ControlCallData) dans les fonctionnalités IntelliTrace.
 
-## <a name="AffectPerformance"></a> Mon application peut-elle être ralentie par IntelliTrace ?
+## <a name="will-intellitrace-slow-down-my-application"></a><a name="AffectPerformance"></a> Mon application peut-elle être ralentie par IntelliTrace ?
 
 Par défaut, IntelliTrace collecte uniquement les données des événements IntelliTrace sélectionnés. Votre application peut être ralentie ou non, en fonction de la structure et de l'organisation de votre code. Par exemple, si IntelliTrace enregistre souvent un événement, cela peut ralentir votre application. Cela peut aussi vous inciter à refactoriser votre application.
 

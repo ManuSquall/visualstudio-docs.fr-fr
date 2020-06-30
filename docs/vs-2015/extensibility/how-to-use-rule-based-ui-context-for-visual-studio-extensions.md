@@ -1,49 +1,49 @@
 ---
-title: 'Procédure : Utiliser le contexte de l’interface utilisateur basée sur une règle avec des Extensions | Microsoft Docs'
+title: 'Comment : utiliser le contexte de l’interface utilisateur basé sur des règles pour les extensions | Microsoft Docs'
 ms.date: 11/15/2016
 ms.topic: conceptual
 ms.assetid: 8dd2cd1d-d8ba-49b9-870a-45acf3a3259d
 caps.latest.revision: 8
 ms.author: gregvanl
-ms.openlocfilehash: ccdba95816d77e5282e978d508da581d9240ef06
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 26f66f635b2c248af01067d9dbd96fd997593593
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62425747"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85535562"
 ---
-# <a name="how-to-use-rule-based-ui-context-for-visual-studio-extensions"></a>Procédure : Utiliser le contexte de l’interface utilisateur basé sur une règle pour les extensions Visual Studio
+# <a name="how-to-use-rule-based-ui-context-for-visual-studio-extensions"></a>Guide pratique pour utiliser le contexte de l’interface utilisateur basé sur une règle pour les extensions Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Visual Studio permet le chargement de VSPackages lorsque certains connu <xref:Microsoft.VisualStudio.Shell.UIContext>s sont activés. Toutefois, ces contextes d’interface utilisateur ne sont pas très bien plus précis, ne laissant les auteurs de l’extension aucun choix mais permettant de sélectionner un contexte d’interface utilisateur disponible qui active avant la virgule, ils voulaient réellement le VSPackage à charger. Pour obtenir la liste des contextes d’interface utilisateur bien connus, consultez <xref:Microsoft.VisualStudio.Shell.KnownUIContexts>.
+Visual Studio permet le chargement de VSPackages lorsque certains s connus <xref:Microsoft.VisualStudio.Shell.UIContext> sont activés. Toutefois, ces contextes d’interface utilisateur ne sont pas très importants, ce qui laisse les auteurs d’extensions non choisis mais pour choisir un contexte d’interface utilisateur disponible qui s’active avant le point où ils voulaient vraiment que le VSPackage se charge. Pour obtenir la liste des contextes d’interface utilisateur connus, consultez <xref:Microsoft.VisualStudio.Shell.KnownUIContexts> .
 
- Le chargement de packages peut avoir un impact sur les performances et leur chargement plus tôt qu’ils sont requis n’est pas la meilleure pratique. Visual Studio 2015 introduit le concept de contextes d’interface utilisateur basée sur des règles, un mécanisme qui permet aux auteurs d’extension définir les conditions précises sous lesquelles un contexte d’interface utilisateur est activé et chargé de VSPackages associés.
+ Le chargement des packages peut avoir un impact sur les performances et le chargement plus tôt que nécessaire n’est pas la meilleure pratique. Visual Studio 2015 a introduit le concept de contextes d’interface utilisateur basés sur des règles, un mécanisme qui permet aux auteurs d’extensions de définir les conditions précises sous lesquelles un contexte d’interface utilisateur est activé et les VSPackages associés chargés.
 
-## <a name="rule-based-ui-context"></a>Contexte de l’interface utilisateur basée sur la règle
- Une « règle » se compose d’un nouveau contexte de l’interface utilisateur (un GUID) et une expression booléenne qui fait référence à un ou plusieurs « conditions » associé logique « et », « ou », « non » les opérations. « Conditions » sont évaluées de manière dynamique lors de l’exécution et l’expression est réévaluée chaque fois qu’un de ses modifications des termes du contrat. Lorsque l’expression a la valeur true, le contexte de l’interface utilisateur associée est activé. Sinon, le contexte de l’interface utilisateur est désactivé.
+## <a name="rule-based-ui-context"></a>Contexte de l’interface utilisateur basée sur des règles
+ Une « règle » se compose d’un nouveau contexte d’interface utilisateur (GUID) et d’une expression booléenne qui fait référence à un ou plusieurs « termes » associés à des opérations logiques « and », « or », « not ». Les « termes » sont évalués de manière dynamique au moment de l’exécution et l’expression est réévaluée chaque fois que l’un de ses termes change. Lorsque l’expression prend la valeur true, le contexte d’interface utilisateur associé est activé. Dans le cas contraire, le contexte de l’interface utilisateur est désactivé.
 
- Basée sur une règle de contexte de l’interface utilisateur peut être utilisé de plusieurs façons :
+ Le contexte de l’interface utilisateur basé sur des règles peut être utilisé de plusieurs façons :
 
-1. Spécifier des contraintes de visibilité pour les commandes et fenêtres Outil. Vous pouvez masquer les commandes/outils windows jusqu'à ce que la règle du contexte d’interface utilisateur est remplie.
+1. Spécifiez les contraintes de visibilité pour les commandes et les fenêtres outil. Vous pouvez masquer les fenêtres commandes/outils jusqu’à ce que la règle de contexte d’interface utilisateur soit remplie.
 
-2. Contraintes de charge en tant qu’automatique : de charge automatique des packages uniquement lorsque la règle est remplie.
+2. Pour les contraintes de chargement automatique : charger automatiquement les packages uniquement lorsque la règle est remplie
 
-3. Tâche différée : retarder le chargement jusqu'à ce qu’un intervalle spécifié écoulé et la règle est toujours respectée.
+3. Tâche retardée : retarder le chargement jusqu’à ce qu’un intervalle spécifié soit atteint et que la règle soit toujours remplie.
 
-   Le mécanisme peut être utilisé par n’importe quelle extension de Visual Studio.
+   Le mécanisme peut être utilisé par n’importe quelle extension Visual Studio.
 
-## <a name="create-a-rule-based-ui-context"></a>Créer un contexte d’interface utilisateur basée sur la règle
- Supposons que vous avez une extension appelée TestPackage, qui offre une commande de menu qui s’applique uniquement aux fichiers avec l’extension de « .config ». Avant de VS2015, la meilleure option a été charger TestPackage lorsque <xref:Microsoft.VisualStudio.Shell.KnownUIContexts.SolutionExistsAndFullyLoadedContext%2A> contexte d’interface utilisateur a été activé. Ceci n’est pas efficace, car la solution chargée ne peut pas contenir même un fichier .config. Nous voir comment le contexte d’interface utilisateur basée sur des règles peut être utilisé pour activer un contexte d’interface utilisateur uniquement quand un fichier avec l’extension .config est sélectionnée et charge TestPackage lorsque ce contexte d’interface utilisateur est activé.
+## <a name="create-a-rule-based-ui-context"></a>Créer un contexte d’interface utilisateur basé sur des règles
+ Supposons que vous avez une extension appelée TestPackage, qui offre une commande de menu qui s’applique uniquement aux fichiers avec l’extension « . config ». Avant VS2015, la meilleure option consistait à charger TestPackage lorsque le <xref:Microsoft.VisualStudio.Shell.KnownUIContexts.SolutionExistsAndFullyLoadedContext%2A> contexte de l’interface utilisateur était activé. Cela n’est pas efficace, car la solution chargée ne peut même pas contenir un fichier. config. Voyons comment vous pouvez utiliser le contexte de l’interface utilisateur basé sur les règles pour activer un contexte d’interface utilisateur uniquement lorsqu’un fichier avec l’extension. config est sélectionné, et charger TestPackage quand ce contexte d’interface utilisateur est activé.
 
-1. Définir un nouveau GUID UIContext et ajouter à la classe VSPackage <xref:Microsoft.VisualStudio.Shell.ProvideAutoLoadAttribute> et <xref:Microsoft.VisualStudio.Shell.ProvideUIContextRuleAttribute>.
+1. Définissez un nouveau GUID UIContext et ajoutez à la classe VSPackage <xref:Microsoft.VisualStudio.Shell.ProvideAutoLoadAttribute> et à <xref:Microsoft.VisualStudio.Shell.ProvideUIContextRuleAttribute> .
 
-    Par exemple, supposons un nouveau UIContext « UIContextGuid » doit être ajoutée. Le GUID créé (vous pouvez créer un GUID en cliquant sur Outils -> créer un guid) est « 8B40D5E2-5626-42AE-99EF-3DD1EFF46E7B ». Vous ajoutez ensuite le code suivant à l’intérieur de votre classe de package :
+    Supposons, par exemple, qu’un nouveau UIContext « UIContextGuid » soit ajouté. Le GUID créé (vous pouvez créer un GUID en cliquant sur outils-> créer un GUID) est « 8B40D5E2-5626-42AE-99EF-3DD1EFF46E7B ». Vous ajoutez ensuite les éléments suivants dans votre classe de package :
 
    ```csharp
    public const string UIContextGuid = "8B40D5E2-5626-42AE-99EF-3DD1EFF46E7B";
    ```
 
-    Pour les attributs, ajoutez ce qui suit : (Les détails de ces attributs seront expliquées plus loin)
+    Pour les attributs, ajoutez ce qui suit : (les détails de ces attributs seront expliqués plus tard)
 
    ```csharp
    [ProvideAutoLoad(TestPackage.UIContextGuid)]
@@ -54,17 +54,17 @@ Visual Studio permet le chargement de VSPackages lorsque certains connu <xref:Mi
        termValues: new[] { "HierSingleSelectionName:.config$" })]
    ```
 
-    Ces métadonnées définir le nouveau GUID UIContext (8B40D5E2-5626-42AE-99EF-3DD1EFF46E7B) et une expression faisant référence à un terme unique, « DotConfig ». Le terme « DotConfig » a la valeur true lorsque la sélection actuelle dans la hiérarchie active a un nom qui correspond au modèle d’expression régulière «\\.config$ » (se termine par « .config »). La valeur (valeur par défaut) définit un nom facultatif pour la règle utile pour le débogage.
+    Ces métadonnées définissent le nouveau GUID UIContext (8B40D5E2-5626-42AE-99EF-3DD1EFF46E7B) et une expression faisant référence à un terme unique, « DotConfig ». Le terme « DotConfig » prend la valeur true chaque fois que la sélection actuelle dans la hiérarchie Active a un nom qui correspond au modèle d’expression régulière « \\ . config $ » (se termine par « . config »). La valeur (par défaut) définit un nom facultatif pour la règle utile pour le débogage.
 
-    Les valeurs de l’attribut sont ajoutées à pkgdef généré pendant la génération par la suite.
+    Les valeurs de l’attribut sont ajoutées à l’attribut pkgdef généré au moment de la génération par la suite.
 
-2. Dans le fichier VSCT pour les commandes de la TestPackage, ajoutez l’indicateur « DynamicVisibility » pour les commandes appropriées :
+2. Dans le fichier VSCT pour les commandes de TestPackage, ajoutez l’indicateur « DynamicVisibility » aux commandes appropriées :
 
    ```xml
    <CommandFlag>DynamicVisibility</CommandFlag>
    ```
 
-3. Dans la section de la visibilité de la VSCT, lier les commandes appropriées pour le nouveau UIContext GUID défini dans #1 :
+3. Dans la section de visibilité de VSCT, liez les commandes appropriées au nouveau GUID UIContext défini dans #1 :
 
    ```xml
    <VisibilityConstraints>
@@ -72,30 +72,30 @@ Visual Studio permet le chargement de VSPackages lorsque certains connu <xref:Mi
    </VisibilityConstraints>
    ```
 
-4. Dans la section Symbols, ajoutez la définition de la UIContext :
+4. Dans la section Symbols, ajoutez la définition de UIContext :
 
    ```xml
    <GuidSymbol name="guidTestUIContext" value="{8B40D5E2-5626-42AE-99EF-3DD1EFF46E7B}" />
    ```
 
-    À présent, les commandes de menu contextuel pour les fichiers *.config sera visibles uniquement lorsque l’élément sélectionné dans l’Explorateur de solutions est un fichier de « .config » et le package ne sera pas chargé jusqu'à ce qu’un de ces commandes est sélectionné.
+    Désormais, les commandes de menu contextuel pour les fichiers *. config sont visibles uniquement lorsque l’élément sélectionné dans l’Explorateur de solutions est un fichier « . config » et que le package ne sera pas chargé tant que l’une de ces commandes n’est pas sélectionnée.
 
-   Ensuite, nous allons utiliser un débogueur pour confirmer que le package charge uniquement lorsque nous comme prévu. Pour déboguer TestPackage :
+   Ensuite, nous allons utiliser un débogueur pour confirmer que le package se charge uniquement quand nous le pensons. Pour déboguer TestPackage :
 
-5. Définir un point d’arrêt dans le <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A> (méthode).
+5. Définissez un point d’arrêt dans la <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A> méthode.
 
-6. Générer le TestPackage et démarrer le débogage.
+6. Générez le TestPackage et démarrez le débogage.
 
-7. Créez un projet ou ouvrez un.
+7. Créez un projet ou ouvrez-en un.
 
-8. Sélectionnez n’importe quel fichier avec une extension autre que .config. Le point d’arrêt ne doit pas être atteint.
+8. Sélectionnez un fichier portant une extension autre que. config. Le point d’arrêt ne doit pas être atteint.
 
 9. Sélectionnez le fichier App.Config.
 
-   Le TestPackage charge et s’arrête au point d’arrêt.
+   Le TestPackage se charge et s’arrête au point d’arrêt.
 
-## <a name="adding-more-rules-for-ui-context"></a>Ajout de davantage de règles pour le contexte d’interface utilisateur
- Étant donné que les règles de contexte d’interface utilisateur sont des expressions booléennes, vous pouvez ajouter des règles plus restreintes pour un contexte d’interface utilisateur. Par exemple, dans le contexte de l’interface utilisateur ci-dessus, vous pouvez spécifier que la règle s’applique uniquement quand une solution avec un projet est chargée. De cette façon, les commandes n’apparaîtront pas si vous ouvrez un fichier de « .config » en tant que fichier autonome, et non comme partie d’un projet.
+## <a name="adding-more-rules-for-ui-context"></a>Ajout de règles supplémentaires pour le contexte de l’interface utilisateur
+ Étant donné que les règles de contexte d’interface utilisateur sont des expressions booléennes, vous pouvez ajouter des règles restreintes pour un contexte d’interface utilisateur. Par exemple, dans le contexte de l’interface utilisateur ci-dessus, vous pouvez spécifier que la règle s’applique uniquement quand une solution avec un projet est chargée. De cette façon, les commandes ne s’affichent pas si vous ouvrez un fichier « . config » en tant que fichier autonome, et non dans le cadre d’un projet.
 
 ```csharp
 [ProvideAutoLoad(TestPackage.UIContextGuid)]
@@ -106,10 +106,10 @@ Visual Studio permet le chargement de VSPackages lorsque certains connu <xref:Mi
     termValues: new[] { VSConstants.UICONTEXT_SolutionHasSingleProject_string , VSConstants.UICONTEXT_SolutionHasMultipleProjects_string , "HierSingleSelectionName:.config$" })]
 ```
 
- Maintenant l’expression fait référence à trois termes. Les deux premiers termes, « SingleProject » et « MultipleProjects », font référence à d’autres contextes d’interface utilisateur bien connue (par leurs GUID). Le troisième « DotConfig » est le contexte de l’interface utilisateur basée sur une règle définie précédemment.
+ À présent, l’expression fait référence à trois termes. Les deux premiers termes, « SingleProject » et « MultipleProjects », font référence à d’autres contextes d’interface utilisateur connus (par leurs GUID). Le troisième terme « DotConfig » est le contexte de l’interface utilisateur basé sur des règles que nous avons défini précédemment.
 
-## <a name="delayed-activation"></a>Délai d’Activation
- Règles peuvent avoir un délai « facultatif ». Le délai spécifié en millisecondes. Le cas échéant, le délai provoque l’activation ou la désactivation de contexte d’interface utilisateur d’une règle peut être différé par cet intervalle de temps. Si les modifications de règle au avant l’intervalle du délai, puis rien ne se produit. Ce mécanisme peut être utilisé pour « échelonner les étapes d’initialisation - en particulier l’initialisation unique sans s’appuyer sur les minuteurs ou de l’inscription aux notifications inactives ».
+## <a name="delayed-activation"></a>Activation différée
+ Les règles peuvent avoir un « délai » facultatif. Le délai est exprimé en millisecondes. S’il est présent, le délai entraîne le report de l’activation ou de la désactivation du contexte d’interface utilisateur d’une règle par cet intervalle de temps. Si la règle est de nouveau modifiée avant l’intervalle de délai, rien ne se produit. Ce mécanisme peut être utilisé pour « échelonner » les étapes d’initialisation, en particulier l’initialisation unique sans compter sur les minuteurs ou l’inscription pour les notifications inactives.
 
  Par exemple, vous pouvez spécifier votre règle de charge de test pour avoir un délai de 100 millisecondes :
 
@@ -124,28 +124,28 @@ Visual Studio permet le chargement de VSPackages lorsque certains connu <xref:Mi
 ```
 
 ## <a name="term-types"></a>Types de terme
- Voici les différents types de terme qui sont prises en charge :
+ Voici les différents types de termes pris en charge :
 
-|||
+|Type de terme|Description|
 |-|-|
-|{nnnnnnnn-nnnn-nnnn-nnnn-nnnnnnnnnnnn}|Le GUID fait référence à un contexte d’interface utilisateur. Le terme sera true chaque fois que le contexte de l’interface utilisateur est active et false sinon.|
-|HierSingleSelectionName:\<pattern>|Le terme sera true chaque fois que la sélection dans la hiérarchie active est un élément unique et le nom de l’élément sélectionné correspond à l’expression régulière .net donnée par « pattern ».|
-|UserSettingsStoreQuery:\<query>|« query » représente un chemin d’accès complet dans la banque de paramètres utilisateur qui doit correspondre à une valeur différente de zéro. La requête est divisée en une « collection » et le « propertyName » à la dernière barre oblique.|
-|ConfigSettingsStoreQuery:\<query>|« query » représente un chemin d’accès complet dans le magasin de paramètres de configuration qui doit correspondre à une valeur différente de zéro. La requête est divisée en une « collection » et le « propertyName » à la dernière barre oblique.|
-|ActiveProjectFlavor:\<projectTypeGuid>|Le terme sera true chaque fois que le projet actuellement sélectionné est versionné (agrégé) et a une version de mise en correspondance du GUID du type de projet donné.|
-|ActiveEditorContentType:\<contentType>|Le terme aura la valeur true lorsque le document sélectionné est un éditeur de texte avec le type de contenu donné.|
-|ActiveProjectCapability :\<Expression >|Le terme est true lorsque les fonctionnalités de projet actif correspond à l’expression fournie. Une expression peut être quelque chose comme VB &#124; CSharp|
-|SolutionHasProjectCapability :\<Expression >|Similaire à ci-dessus mais terme a la valeur true lorsque la solution a n’importe quel projet chargé qui correspond à l’expression.|
-|SolutionHasProjectFlavor:\<projectTypeGuid>|Le terme sera true chaque fois qu’une solution de projet qui est versionnés (agrégé) et a une version de mise en correspondance du GUID du type de projet donné.|
+|{nnnnnnnn-nnnn-nnnn-nnnn-nnnnnnnnnnnn}|Le GUID fait référence à un contexte d’interface utilisateur. Le terme est vrai chaque fois que le contexte de l’interface utilisateur est actif et false dans le cas contraire.|
+|HierSingleSelectionName:\<pattern>|Le terme est vrai chaque fois que la sélection dans la hiérarchie Active est un élément unique et que le nom de l’élément sélectionné correspond à l’expression régulière .net donnée par « Pattern ».|
+|UserSettingsStoreQuery:\<query>|« requête » représente un chemin d’accès complet dans le magasin des paramètres utilisateur, qui doit correspondre à une valeur différente de zéro. La requête est fractionnée en « collection » et « propertyName » à la dernière barre oblique.|
+|ConfigSettingsStoreQuery:\<query>|« requête » représente un chemin d’accès complet dans le magasin des paramètres de configuration, qui doit correspondre à une valeur différente de zéro. La requête est fractionnée en « collection » et « propertyName » à la dernière barre oblique.|
+|ActiveProjectFlavor:\<projectTypeGuid>|Le terme sera vrai chaque fois que le projet actuellement sélectionné est aromatisé (agrégé) et qu’un parfum correspond au GUID du type de projet donné.|
+|ActiveEditorContentType:\<contentType>|Le terme est true lorsque le document sélectionné est un éditeur de texte avec le type de contenu donné.|
+|ActiveProjectCapability:\<Expression>|Le terme est true lorsque les fonctionnalités de projet actives correspondent à l’expression fournie. Une expression peut être telle que VB &#124; CSharp|
+|SolutionHasProjectCapability:\<Expression>|Semblable à ci-dessus, mais term a la valeur true lorsque la solution a un projet chargé qui correspond à l’expression.|
+|SolutionHasProjectFlavor:\<projectTypeGuid>|Le terme sera vrai chaque fois qu’une solution a un projet qui est aromatisé (agrégé) et dont le parfum correspond au GUID du type de projet donné.|
 
-## <a name="compatibility-with-cross-version-extension"></a>Compatibilité avec l’extension d’entre versions
- Contextes d’interface utilisateur en est une nouvelle fonctionnalité dans Visual Studio 2015 et ne serait pas être déplacée vers les versions antérieures de règles. Ceci pose un problème avec les extensions/packages qui ciblent plusieurs versions de Visual Studio qui doivent être chargés automatiquement dans Visual Studio 2013 et versions antérieures, mais peuvent tirer parti des contextes d’interface utilisateur basé sur une règle afin d’éviter d’être chargées automatiquement dans Visual Studio 2015.
+## <a name="compatibility-with-cross-version-extension"></a>Compatibilité avec l’extension Cross-version
+ Les contextes d’interface utilisateur basés sur des règles sont une nouvelle fonctionnalité de Visual Studio 2015 et ne sont pas portées vers des versions antérieures. Cela crée un problème avec les extensions/packages qui ciblent plusieurs versions de Visual Studio qui devraient être chargées automatiquement dans Visual Studio 2013 et versions antérieures, mais peuvent tirer parti des contextes d’interface utilisateur basés sur des règles pour empêcher le chargement automatique dans Visual Studio 2015.
 
- Pour prendre en charge ces packages, AutoLoadPackages dans le Registre peuvent maintenant fournir un indicateur dans son champ de valeur pour indiquer que l’entrée doit être ignorée dans Visual Studio 2015 et versions ultérieures. Cela est possible en ajoutant une option d’indicateurs pour <xref:Microsoft.VisualStudio.Shell.PackageAutoLoadFlags>. Les VSPackages peuvent maintenant ajouter **SkipWhenUIContextRulesActive** option leurs <xref:Microsoft.VisualStudio.Shell.ProvideAutoLoadAttribute> attribut pour indiquer l’entrée doit être ignorée dans Visual Studio 2015 et versions ultérieures.
+ Pour prendre en charge de tels packages, les entrées AutoLoadPackages dans le registre peuvent désormais fournir un indicateur dans le champ valeur pour indiquer que l’entrée doit être ignorée dans Visual Studio 2015 et versions ultérieures. Pour ce faire, vous pouvez ajouter une option Flags à <xref:Microsoft.VisualStudio.Shell.PackageAutoLoadFlags> . Les VSPackages peuvent maintenant ajouter l’option **SkipWhenUIContextRulesActive** à leur <xref:Microsoft.VisualStudio.Shell.ProvideAutoLoadAttribute> attribut pour indiquer que l’entrée doit être ignorée dans Visual Studio 2015 et versions ultérieures.
 
-## <a name="extensible-ui-context-rules"></a>Règles de contexte de l’interface utilisateur extensible
- Parfois, les packages ne pouvez pas utiliser les règles de contexte d’interface utilisateur statiques. Par exemple, supposons que vous disposez d’un package prenant en charge d’extensibilité, telles que l’état de la commande est basée sur les types d’éditeur qui sont pris en charge par les fournisseurs MEF importés. La commande est activée s’il existe une extension prenant en charge le type de modification actuelle. Dans ce cas le package lui-même ne peut pas utiliser une règle de contexte d’interface utilisateur statique, dans la mesure où les termes du contrat pourrait être modifié selon le MEF extensions sont disponibles.
+## <a name="extensible-ui-context-rules"></a>Règles de contexte d’interface utilisateur extensible
+ Parfois, les packages ne peuvent pas utiliser de règles de contexte d’interface utilisateur statiques. Par exemple, supposons que vous disposiez d’un package prenant en charge l’extensibilité, de sorte que l’état de la commande est basé sur les types d’éditeur pris en charge par les fournisseurs MEF importés. La commande est activée si une extension prend en charge le type d’édition actuel. Dans ce cas, le package lui-même ne peut pas utiliser une règle de contexte d’interface utilisateur statique, car les termes changent en fonction des extensions MEF disponibles.
 
- Pour prendre en charge ces packages, les contextes d’interface utilisateur basé sur une règle prend en charge une expression codée en dur « * » qui indique tous les termes ci-dessous il sera joint avec ou. Cela permet le package principal définir une règle connue en fonction de contexte d’interface utilisateur et lier son état de la commande à ce contexte. Par la suite n’importe quelle extension MEF ciblée pour le package principal peut ajouter ses termes du contrat pour les éditeurs, qu'il prend en charge sans affecter les autres conditions ou l’expression de référence.
+ Pour prendre en charge de tels packages, les contextes d’interface utilisateur basés sur des règles prennent en charge une expression codée en dur « * » qui indique que tous les termes ci-dessous seront joints avec ou. Cela permet au package principal de définir un contexte d’interface utilisateur basé sur une règle connue et de lier son état de commande à ce contexte. Par la suite, toute extension MEF ciblée pour le package maître peut ajouter ses termes aux éditeurs pris en charge sans affecter d’autres termes ou l’expression principale.
 
- Le constructeur <xref:Microsoft.VisualStudio.Shell.ProvideExtensibleUIContextRuleAttribute.%23ctor%2A> documentation illustre la syntaxe pour les règles de contexte d’interface utilisateur extensibles.
+ La documentation du constructeur <xref:Microsoft.VisualStudio.Shell.ProvideExtensibleUIContextRuleAttribute.%23ctor%2A> illustre la syntaxe des règles de contexte d’interface utilisateur extensible.

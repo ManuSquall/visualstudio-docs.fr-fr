@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 58e233be301630b00031bb90cd95fc78c2697c4e
-ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
+ms.openlocfilehash: 867477fd3e490f91e81fb91c8be267ede83c8d2c
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/25/2020
-ms.locfileid: "85348429"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85536563"
 ---
 # <a name="debug-only-user-code-with-just-my-code"></a>Déboguer uniquement le code utilisateur avec Uniquement mon code
 
@@ -196,7 +196,7 @@ Un fichier *.. natstepfilter* est un fichier XML avec la syntaxe suivante :
 
 <a name="BKMK_JS_User_and_non_user_code"></a>JavaScript Uniquement mon code contrôle l’affichage pas à pas et la pile des appels en classant le code dans l’une de ces classifications :
 
-|||
+|classification ;|Description|
 |-|-|
 |**MyCode**|Code utilisateur dont vous êtes propriétaire et que vous contrôlez.|
 |**LibraryCode**|Le code non-utilisateur des bibliothèques que vous utilisez régulièrement et votre application s’appuie sur pour fonctionner correctement (par exemple, WinJS ou jQuery).|
@@ -279,7 +279,7 @@ Les spécifications de ce fichier remplacent les classifications par défaut et 
 
 Les paires clé-valeur **Eval**, **Function** et **ScriptBlock** déterminent comment le code généré dynamiquement est classifié :
 
-|||
+|Nom|Description|
 |-|-|
 |**Eval**|un script qui est exécuté en passant une chaîne à la fonction `eval` fournie par l'hôte. Par défaut, le script Eval est classifié comme **MyCode**.|
 |**Fonction**|un script qui est exécuté en passant une chaîne au constructeur `Function`. Par défaut, le script Function est classé comme **LibraryCode**.|
@@ -295,7 +295,7 @@ Vous pouvez changer la valeur en un de ces mots clés :
 
 Les paires clé-valeur **MyCode**, **Libraries** et **Unrelated** spécifient les URL ou les fichiers que vous voulez inclure dans une classification :
 
-|||
+|Nom|Description|
 |-|-|
 |**MyCode**|Un tableau d’URL ou de fichiers qui sont classés comme **MyCode**.|
 |**Bibliothèques**|Un tableau d’URL ou de fichiers qui sont classifiés comme **LibraryCode**.|

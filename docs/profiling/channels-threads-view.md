@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 94ac6e9e85a2d7dd504b2d2bd83bd1bbdb265ea0
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: f18a636d83210b2329d103b1babdf47e697fd5c7
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "62776775"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85537083"
 ---
 # <a name="channels-threads-view"></a>Canaux (vue Threads)
 Le visualiseur concurrentiel montre quatre types de canaux : les canaux de threads, les canaux de disques, les canaux de marqueurs et les canaux GPU.
@@ -25,7 +25,7 @@ Le visualiseur concurrentiel montre quatre types de canaux : les canaux de thre
 ## <a name="thread-channels"></a>Canaux de threads
  Un canal de thread affiche l’état d’un seul thread, à l’aide d’un système de couleurs. Lorsque vous pointez sur le nom du canal, la fonction de démarrage du thread en question s’affiche. Le visualiseur concurrentiel détecte plusieurs types de threads. Les types les plus courants sont présentés dans le tableau suivant.
 
-|||
+|Thread|Description|
 |-|-|
 |Thread principal|Thread qui a démarré l’application.|
 |Thread de travail|Thread qui a été créé par le thread principal de l’application.|
@@ -48,4 +48,4 @@ Le visualiseur concurrentiel montre quatre types de canaux : les canaux de thre
  Les canaux GPU affichent des informations concernant l’activité DirectX 11 sur le système.  Chaque moteur DirectX qui est associé à la carte graphique dispose d’un canal distinct.  Chaque segment correspond à la durée de traitement d’un paquet DMA.
 
 ## <a name="see-also"></a>Voir aussi
-- [Vue de fils](../profiling/threads-view-parallel-performance.md)
+- [Vue threads](../profiling/threads-view-parallel-performance.md)

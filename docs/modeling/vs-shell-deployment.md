@@ -1,31 +1,31 @@
 ---
 title: Déploiement du shell VS
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 author: JoshuaPartlow
 ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3ca497244a806324d9d2315fa1b1b89404838ff3
-ms.sourcegitcommit: 7b60e81414a82c6d34f6de1a1f56115c9cd26943
+ms.openlocfilehash: d8793312e0ed022fc7210508efdf20a81b293f0f
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "81444997"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85535848"
 ---
 # <a name="vs-shell-deployment"></a>Déploiement du shell VS
 
-Une coque isolée vous permet de déterminer quelle fonctionnalité Visual Studio vous devez interagir avec votre langage spécifique au domaine et comment cette solution doit apparaître. Pour plus d’informations sur la coquille isolée Visual Studio, voir [Customizing the Isolated Shell](https://docs.microsoft.com/visualstudio/extensibility/customizing-the-isolated-shell).
+Un interpréteur de commandes isolé vous permet de déterminer les fonctionnalités Visual Studio dont vous avez besoin pour interagir avec votre langage spécifique à un domaine et comment cette solution doit s’afficher. Pour plus d’informations sur le shell isolé Visual Studio, consultez [Personnalisation de l’interpréteur de commandes isolé](https://docs.microsoft.com/visualstudio/extensibility/customizing-the-isolated-shell).
 
-Pour définir une shell Visual Studio comme cible de déploiement :
+Pour définir un shell Visual Studio en tant que cible de déploiement :
 
-1. Dans le projet **DslPackage,** ouvert **source.extension.tt**.
+1. Dans le projet **DslPackage** , ouvrez **source.extension.TT**.
 
-2. Sous `<SupportedProducts>` insert:
+2. Sous `<SupportedProducts>` Insérer :
 
    ```xml
    <IsolatedShell Version="1.0">MyIsolatedShell</IsolatedShell>
    ```
 
-   Remplacez *MyIsolatedShell* par le nom de votre paquet de coquillages isolés.
+   Remplacez *MyIsolatedShell* par le nom de votre package d’interpréteur de commandes isolé.

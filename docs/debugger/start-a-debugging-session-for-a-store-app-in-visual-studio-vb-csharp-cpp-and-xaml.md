@@ -35,12 +35,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: b11ea380f9012bc64f577d2da54a4a88b9f94daf
-ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
+ms.openlocfilehash: c4e025603fef11e278aee21b3c44f8d35d7cd34b
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/25/2020
-ms.locfileid: "85348234"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85536550"
 ---
 # <a name="start-a-debugging-session-for-a-uwp-app"></a>Commencer une session de débogage pour une application UWP
 
@@ -76,7 +76,7 @@ Le débogage se poursuit jusqu’à ce qu’un point d’arrêt soit atteint, qu
 
 Vous pouvez définir la cible de débogage dans la barre d’outils Visual Studio ou dans la page de propriétés débogage du projet. Sélectionnez l’une des options suivantes :
 
-|||
+|Nom|Description|
 |-|-|
 |**Ordinateur local**|Déboguez l'application dans la session active sur votre ordinateur local.|
 |**Simulator**|Déboguez l’application dans le simulateur Visual Studio pour les applications UWP. Le simulateur est une fenêtre de bureau qui simule les fonctions de l’appareil, telles que les gestes tactiles et la rotation du périphérique, qui peuvent ne pas exister sur l’ordinateur local. L’option de simulateur est disponible uniquement si la **version minimale de la plateforme cible** de votre application est inférieure ou égale au système d’exploitation sur l’ordinateur local. Pour plus d’informations, consultez [exécuter des applications UWP dans le simulateur](../debugger/run-windows-store-apps-in-the-simulator.md).|
@@ -114,7 +114,7 @@ Dans les applications C++, Visual Studio débogue le code natif par défaut. Vou
 
 - Pour les applications C++, sélectionnez l’un des débogueurs suivants dans la liste déroulante **type** de débogueur de la page de propriétés **débogage** .
 
-|||
+|Nom|Description|
 |-|-|
 |**Managé uniquement**|Déboguez le code managé dans votre application. Le code JavaScript et le code natif C/C++ sont ignorés.|
 |**Natif uniquement**|Déboguez le code natif C/C++ dans votre application. Le code managé et le code JavaScript sont ignorés.|

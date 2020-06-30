@@ -17,12 +17,12 @@ caps.latest.revision: 40
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 5e817bc76a76c3d0af0e3509ef14312ac1b98acf
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: efdbf1b96e1dc49f5b9c48cebe6cededc9ea7c6e
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72669803"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85534145"
 ---
 # <a name="design-time-code-generation-by-using-t4-text-templates"></a>Génération de code durant la conception à l'aide de modèles de texte T4
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ Les modèles de texte T4 au moment du design vous permettent de générer du cod
 > [!NOTE]
 > Un *modèle* est une source de données qui décrit un aspect particulier d’une application. Il peut assumer n'importe quelle forme, dans n'importe quel genre de fichier ou de base de données. Il n’est pas obligatoire qu’il soit dans un format spécifique, tel qu’un modèle UML ou un modèle de langage spécifique à un domaine. Les modèles les plus courants assument la forme de tableaux ou de fichiers XML.
 
- Vous connaissez sans doute déjà le concept de génération de code. Quand vous définissez des ressources dans un fichier **. resx** dans votre solution [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], un ensemble de classes et de méthodes est généré automatiquement. Le fichier de ressources simplifie et rend plus fiable la modification des ressources, par rapport à la modification manuelle des classes et des méthodes. Avec les modèles de texte, vous pouvez générer du code de la même façon à partir d'une source que vous avez conçue vous-même.
+ Vous connaissez sans doute déjà le concept de génération de code. Quand vous définissez des ressources dans un fichier **. resx** de votre [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] solution, un ensemble de classes et de méthodes est généré automatiquement. Le fichier de ressources simplifie et rend plus fiable la modification des ressources, par rapport à la modification manuelle des classes et des méthodes. Avec les modèles de texte, vous pouvez générer du code de la même façon à partir d'une source que vous avez conçue vous-même.
 
  Un modèle de texte contient une combinaison du texte que vous souhaitez générer et du code de programme qui génère des parties variables du texte. Le code de programme vous permet de répéter ou d'omettre de manière conditionnelle des parties du texte généré. Le texte généré peut lui-même être du code de programme qui constituera une partie de votre application.
 
@@ -42,7 +42,7 @@ Les modèles de texte T4 au moment du design vous permettent de générer du cod
 
 #### <a name="to-create-a-design-time-t4-template-in-visual-studio"></a>Pour créer un modèle T4 au moment de la conception dans Visual Studio
 
-1. Créez un projet de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ou ouvrez-en un existant.
+1. Créez un [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] projet ou ouvrez-en un existant.
 
      Par exemple, dans le menu **fichier** , choisissez **nouveau**, **projet**.
 
@@ -61,13 +61,13 @@ Les modèles de texte T4 au moment du design vous permettent de générer du cod
 
      Si vous avez ajouté le modèle à un projet [!INCLUDE[vbprvb](../includes/vbprvb-md.md)], l'attribut de langage est « `VB` ».
 
-4. Ajoutez du texte à la fin du fichier. Exemple :
+4. Ajoutez du texte à la fin du fichier. Par exemple :
 
     ```
     Hello, world!
     ```
 
-5. Enregistrez le fichier.
+5. Enregistrez le fichier .
 
      Vous pouvez voir un message d' **avertissement de sécurité** vous demandant de confirmer que vous souhaitez exécuter le modèle. Cliquez sur **OK**.
 
@@ -125,12 +125,12 @@ Les modèles de texte T4 au moment du design vous permettent de générer du cod
 
    Notez que les instructions sont placées entre des signes `<#...#>` et les expressions uniques entre des signes `<#=...#>`. Pour plus d’informations, consultez [écriture d’un modèle de texte T4](../modeling/writing-a-t4-text-template.md).
 
-   Si vous écrivez le code généré en [!INCLUDE[vbprvb](../includes/vbprvb-md.md)], la directive `template` doit contenir `language="VB"`. `"C#"` est la valeur par défaut.
+   Si vous écrivez le code généré en [!INCLUDE[vbprvb](../includes/vbprvb-md.md)], la directive `template` doit contenir `language="VB"`. La valeur par défaut est `"C#"`.
 
 ## <a name="debugging-a-design-time-t4-text-template"></a>Débogage d'un modèle de texte T4 au moment de la conception
  Pour déboguer un modèle de texte
 
-- Insérez `debug="true"` dans la directive `template`. Exemple :
+- Insérez `debug="true"` dans la directive `template`. Par exemple :
 
    `<#@ template debug="true" hostspecific="false" language="C#" #>`
 
@@ -141,7 +141,7 @@ Les modèles de texte T4 au moment du design vous permettent de générer du cod
   Le modèle s'exécute et s'arrête aux points d'arrêt. Vous pouvez examiner les variables et parcourir le code de manière normale.
 
 > [!TIP]
-> Avec `debug="true"`, le mappage du code généré au modèle de texte est plus précis car davantage de directives de numérotation de lignes sont insérées dans le code généré. Si vous ne le spécifiez pas, les points d'arrêt risquent d'arrêter l'exécution dans l'état incorrect.
+> `debug="true"`rend le mappage du code généré plus précisément pour le modèle de texte, en insérant plus de directives de numérotation de ligne dans le code généré. Si vous ne le spécifiez pas, les points d'arrêt risquent d'arrêter l'exécution dans l'état incorrect.
 >
 > Mais vous pouvez laisser la clause dans la directive de modèle même quand vous ne déboguez pas. Cela ne provoque qu'une très faible dégradation des performances.
 
@@ -276,8 +276,8 @@ Les modèles de texte T4 au moment du design vous permettent de générer du cod
 
  Le type de `this.Host` (en VB, `Me.Host`) est `Microsoft.VisualStudio.TextTemplating.ITextTemplatingEngineHost`.
 
-### <a name="getting-data-from-includevsprvsincludesvsprvs-mdmd"></a>Obtention de données à partir de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]
- Pour utiliser des services fournis dans [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], définissez l'attribut `hostSpecific` et chargez l'assembly `EnvDTE`. Vous pouvez ensuite utiliser IServiceProvider.GetCOMService() pour accéder à DTE et d'autres services. Exemple :
+### <a name="getting-data-from-vsprvs"></a>Obtention de données à partir de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]
+ Pour utiliser des services fournis dans [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], définissez l'attribut `hostSpecific` et chargez l'assembly `EnvDTE`. Vous pouvez ensuite utiliser IServiceProvider.GetCOMService() pour accéder à DTE et d'autres services. Par exemple :
 
 ```scr
 <#@ template hostspecific="true" language="C#" #>
@@ -295,7 +295,7 @@ Number of projects in this VS solution:  <#= dte.Solution.Projects.Count #>
 > [!TIP]
 > Un modèle de texte s'exécute dans son propre domaine d'application et les services sont accessibles par le marshaling. Dans cette circonstance, GetCOMService() est plus fiable que GetService().
 
-## <a name="Regenerating"></a>Régénération automatique du code
+## <a name="regenerating-the-code-automatically"></a><a name="Regenerating"></a>Régénération automatique du code
  En général, plusieurs fichiers d'une solution [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] sont générés avec un seul modèle d'entrée. Chaque fichier est généré à partir de son propre modèle, mais les modèles font tous référence au même modèle.
 
  Si le modèle source change, vous devez réexécuter tous les modèles de la solution. Pour effectuer cette opération manuellement, choisissez **transformer tous les modèles** dans le menu **générer** .
@@ -312,7 +312,7 @@ Number of projects in this VS solution:  <#= dte.Solution.Projects.Count #>
 
  Pour plus d’informations, consultez [génération de code dans un processus de génération](../modeling/code-generation-in-a-build-process.md).
 
-## <a name="error-reporting"></a>Signalement des erreurs
+## <a name="error-reporting"></a>Envoie de rapports d’erreurs
  Pour placer des messages d'erreur et d'avertissement dans la fenêtre d'erreur de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], vous pouvez appliquer les méthodes suivantes :
 
 ```
@@ -320,8 +320,8 @@ Error("An error message");
 Warning("A warning message");
 ```
 
-## <a name="Converting"></a>Conversion d’un fichier existant en modèle
- L'un des avantages des modèles, c'est que leur apparence se rapproche des fichiers qu'ils génèrent, avec en plus du code de programme inséré. Cela nous suggère une méthode utile pour créer un modèle. Commencez par créer un fichier ordinaire en tant que prototype, tel qu’un fichier [!INCLUDE[csprcs](../includes/csprcs-md.md)], puis introduisez progressivement du code de génération qui fait varier le fichier résultant.
+## <a name="converting-an-existing-file-to-a-template"></a><a name="Converting"></a>Conversion d’un fichier existant en modèle
+ L'un des avantages des modèles, c'est que leur apparence se rapproche des fichiers qu'ils génèrent, avec en plus du code de programme inséré. Cela nous suggère une méthode utile pour créer un modèle. Commencez par créer un fichier ordinaire en tant que prototype, tel qu’un [!INCLUDE[csprcs](../includes/csprcs-md.md)] fichier, puis introduisez progressivement du code de génération qui fait varier le fichier résultant.
 
 #### <a name="to-convert-an-existing-file-to-a-design-time-template"></a>Pour convertir un fichier existant en modèle au moment de la conception
 
@@ -333,10 +333,10 @@ Warning("A warning message");
 
 4. Vérifiez les propriétés suivantes du fichier **. TT** :
 
-    |||
+    |Propriété|Valeur|
     |-|-|
-    |**Outil personnalisé =**|**TextTemplatingFileGenerator**|
-    |**Action de génération =**|**Aucun**|
+    |**Custom Tool =**|**TextTemplatingFileGenerator**|
+    |**Build Action =**|**Aucun**|
 
 5. Insérez les lignes suivantes au début du fichier :
 
@@ -349,7 +349,7 @@ Warning("A warning message");
 
      Définissez l'attribut `extension` sur l'extension de nom de fichier correspondant au type de fichier que vous souhaitez générer, par exemple `.cs`, `.resx` ou `.xml`.
 
-6. Enregistrez le fichier.
+6. Enregistrez le fichier .
 
      Un fichier auxiliaire est créé, avec l’extension spécifiée. Ses propriétés sont correctes pour le type de fichier. Par exemple, la propriété **action de génération** d’un fichier. cs est **compiled**.
 
@@ -364,11 +364,11 @@ Warning("A warning message");
 
 |Étape suivante|Rubrique|
 |---------------|-----------|
-|Écrire et déboguer un modèle de texte plus avancé, avec du code qui utilise des fonctions auxiliaires, des fichiers inclus et des données externes.|[Écriture d’un modèle de texte T4](../modeling/writing-a-t4-text-template.md)|
-|Générer des documents à partir de modèles au moment de l'exécution.|[Génération de texte à l’exécution à l’aide des modèles de texte T4](../modeling/run-time-text-generation-with-t4-text-templates.md)|
-|Exécuter la génération de texte en dehors de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].|[Génération de fichiers avec l’utilitaire TextTransform](../modeling/generating-files-with-the-texttransform-utility.md)|
+|Écrire et déboguer un modèle de texte plus avancé, avec du code qui utilise des fonctions auxiliaires, des fichiers inclus et des données externes.|[Écriture d'un modèle de texte T4](../modeling/writing-a-t4-text-template.md)|
+|Générer des documents à partir de modèles au moment de l'exécution.|[Génération de texte durant l'exécution à l'aide des modèles de texte T4](../modeling/run-time-text-generation-with-t4-text-templates.md)|
+|Exécuter la génération de texte en dehors de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].|[Génération de fichiers avec l'utilitaire TextTransform](../modeling/generating-files-with-the-texttransform-utility.md)|
 |Transformer vos données sous la forme d’un langage spécifique à un domaine.|[Génération de code à partir d’un langage spécifique à un domaine](../modeling/generating-code-from-a-domain-specific-language.md)|
-|Écrire des processeurs de directive pour transformer vos propres sources de données.|[Personnalisation d’une transformation de texte T4](../modeling/customizing-t4-text-transformation.md)|
+|Écrire des processeurs de directive pour transformer vos propres sources de données.|[Personnalisation d'une transformation de texte T4](../modeling/customizing-t4-text-transformation.md)|
 
 ## <a name="see-also"></a>Voir aussi
- [Instructions relatives à l’écriture de modèles de texte T4](../modeling/guidelines-for-writing-t4-text-templates.md)
+ [Instructions relatives à l'écriture de modèles de texte T4](../modeling/guidelines-for-writing-t4-text-templates.md)

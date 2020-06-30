@@ -14,12 +14,12 @@ manager: jillfra
 ms.workload:
 - uwp
 monikerRange: vs-2017
-ms.openlocfilehash: 0fc78a84d0c2f86e8db6c4703cc7404a32508d72
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 524eb76696414cbbdba72266cc732ccb7e089f86
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "73144733"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85537239"
 ---
 # <a name="analyze-energy-use-in-uwp-apps"></a>Analyser la consommation d’énergie dans les applications UWP
 
@@ -124,7 +124,7 @@ if (performance && performance.mark) {
 
  ![Page du rapport du profileur d'énergie](../profiling/media/energyprof_all.png "ENERGYPROF_All")
 
-|||
+|Image|Description|
 |-|-|
 |![Étape 1](../profiling/media/procguid_1.png "ProcGuid_1")|Le fichier de rapport est nommé Report*AAAAMMJJ-HHMM*.diagsession. Vous pouvez modifier le nom du rapport si vous décidez de l'enregistrer.|
 |![Étape 2](../profiling/media/procguid_2.png "ProcGuid_2")|La chronologie indique la durée de la session de profilage, les événements d'activation du cycle de vie de l'application et les marques utilisateur.|
@@ -140,7 +140,7 @@ if (performance && performance.mark) {
 ## <a name="optimize-energy-use"></a>Optimiser l'utilisation d'énergie
  Outre la transmission des données, les connexions réseau entraînent des coûts énergétiques pour initialiser, gérer, et arrêter la connexion. Certains réseaux maintiennent la connexion un certain temps après l'envoi ou la réception des données pour permettre la transmission de données supplémentaires sur une connexion unique. Vous pouvez utiliser le volet **Ressources (activées/désactivées)** pour examiner la façon dont votre application interagit avec la connexion.
 
- ![Ressources &#40;sur&#47;hors&#41; vitre](../profiling/media/energyprof_resources.png "ENERGYPROF_Resources")
+ ![&#40;des ressources sur&#47;désactivation du volet&#41;](../profiling/media/energyprof_resources.png "ENERGYPROF_Resources")
 
  Si les barres **Réseau** et **Transfert de données** indiquent que la connexion est ouverte pendant de longues périodes pour transmettre par intermittence une série de petits paquets de données, vous pouvez traiter les données par lots pour les envoyer en une seule transmission, réduire la durée d'ouverture du réseau et économiser ainsi un coût énergétique.
 
@@ -154,7 +154,7 @@ if (performance && performance.mark) {
 
    Le simulateur Visual Studio pour les applications UWP vous permet de simuler les propriétés de connexion aux données des API d’informations réseau. Consultez [Exécuter des applications UWP dans le simulateur](../debugger/run-windows-store-apps-in-the-simulator.md)
 
-- Les outils **Utilisation de l’UC** peuvent vous aider à réduire la charge processeur quand elle est due à des fonctions inefficaces. Voir [Analysez l’utilisation du processeur](../profiling/beginners-guide-to-performance-profiling.md).
+- Les outils **Utilisation de l’UC** peuvent vous aider à réduire la charge processeur quand elle est due à des fonctions inefficaces. Consultez [analyser l’utilisation de l’UC](../profiling/beginners-guide-to-performance-profiling.md).
 
 ## <a name="see-also"></a>Voir aussi
 
