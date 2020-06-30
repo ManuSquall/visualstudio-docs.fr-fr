@@ -1,7 +1,7 @@
 ---
-title: 'Procédure : Ouvrir des documents existants par programmation'
+title: 'Comment : ouvrir des documents existants par programmation'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -13,28 +13,28 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 490dda6e5357cd0933c6a8b494cc4373038e5c1c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: eba4d110b06147db384a4d7aafe01c7d9f272ba3
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62812386"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85519897"
 ---
-# <a name="how-to-programmatically-open-existing-documents"></a>Procédure : Ouvrir des documents existants par programmation
-  Le <xref:Microsoft.Office.Interop.Word.Documents.Open%2A> méthode ouvre le document Microsoft Office Word existant spécifié par un chemin d’accès et un nom qualifié complet. Cette méthode retourne un <xref:Microsoft.Office.Interop.Word.Document> qui représente le document ouvert.
+# <a name="how-to-programmatically-open-existing-documents"></a>Comment : ouvrir des documents existants par programmation
+  La <xref:Microsoft.Office.Interop.Word.Documents.Open%2A> méthode ouvre le document Microsoft Office Word existant spécifié par un chemin d’accès complet et un nom de fichier. Cette méthode retourne un <xref:Microsoft.Office.Interop.Word.Document> qui représente le document ouvert.
 
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]
 
 ## <a name="to-open-a-document"></a>Pour ouvrir un document
 
-- Appelez le <xref:Microsoft.Office.Interop.Word.Documents.Open%2A> méthode de la <xref:Microsoft.Office.Interop.Word.Documents> collection et fournir un chemin d’accès au document.
+- Appelez la <xref:Microsoft.Office.Interop.Word.Documents.Open%2A> méthode de la <xref:Microsoft.Office.Interop.Word.Documents> collection et fournissez un chemin d’accès au document.
 
      [!code-vb[Trin_VstcoreWordAutomation#5](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#5)]
      [!code-csharp[Trin_VstcoreWordAutomation#5](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#5)]
 
 ## <a name="to-open-a-document-as-read-only"></a>Pour ouvrir un document en lecture seule
 
-- Appeler le <xref:Microsoft.Office.Interop.Word.Documents.Open%2A> (méthode), fournissez un chemin d’accès au document et définissez le *ReadOnly* l’argument de **True** dans l’appel de méthode.
+- Appelez la <xref:Microsoft.Office.Interop.Word.Documents.Open%2A> méthode, fournissez un chemin d’accès au document et affectez à l’argument *ReadOnly* la **valeur true** dans l’appel de méthode.
 
      [!code-vb[Trin_VstcoreWordAutomation#6](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#6)]
      [!code-csharp[Trin_VstcoreWordAutomation#6](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#6)]
@@ -42,9 +42,9 @@ ms.locfileid: "62812386"
 ## <a name="compile-the-code"></a>Compiler le code
  Cet exemple de code doit respecter la condition suivante :
 
-- Un document nommé *NouveauDocument.doc* doit exister dans un répertoire nommé *Test* sur le lecteur C.
+- Un document nommé *NewDocument.doc* doit exister dans un répertoire nommé *test* sur le lecteur C.
 
 ## <a name="see-also"></a>Voir aussi
-- [Guide pratique pour Créer par programme des documents](../vsto/how-to-programmatically-create-new-documents.md)
-- [Guide pratique pour Fermer des documents par programmation](../vsto/how-to-programmatically-close-documents.md)
-- [Paramètres optionnels dans les solutions Office](../vsto/optional-parameters-in-office-solutions.md)
+- [Comment : créer des documents par programmation](../vsto/how-to-programmatically-create-new-documents.md)
+- [Comment : fermer des documents par programmation](../vsto/how-to-programmatically-close-documents.md)
+- [Paramètres facultatifs dans les solutions Office](../vsto/optional-parameters-in-office-solutions.md)

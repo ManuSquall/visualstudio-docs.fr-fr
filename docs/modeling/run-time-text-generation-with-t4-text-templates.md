@@ -1,7 +1,7 @@
 ---
 title: Génération de texte durant l'exécution à l'aide des modèles de texte T4
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - CSharp
 - VB
@@ -15,12 +15,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 26897bee69f7c0e969cd42feb7604321294641fb
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 344e15b69bf3e8308c62c6fa1074720b0cd7618d
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75595369"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85520833"
 ---
 # <a name="run-time-text-generation-with-t4-text-templates"></a>Génération de texte durant l'exécution à l'aide des modèles de texte T4
 
@@ -53,16 +53,16 @@ Notez que le modèle est une page HTML dans laquelle les parties variables ont �
 
 ### <a name="to-create-a-run-time-text-template"></a>Pour créer un modèle de texte au moment de l’exécution
 
-1. Dans Explorateur de solutions, dans le menu contextuel de votre projet, choisissez **ajouter** > **nouvel élément**.
+1. Dans Explorateur de solutions, dans le menu contextuel de votre projet, choisissez **Ajouter**  >  **un nouvel élément**.
 
-2. Dans la boîte de dialogue **Ajouter un nouvel élément** , sélectionnez **modèle de texte Runtime**. (Dans Visual Basic Regardez sous **éléments communs** > **général**.)
+2. Dans la boîte de dialogue **Ajouter un nouvel élément** , sélectionnez **modèle de texte Runtime**. (Dans Visual Basic regarder sous **éléments communs**  >  **Général**.)
 
 3. Tapez un nom pour votre fichier de modèle.
 
     > [!NOTE]
     > Le nom du fichier de modèle sera utilisé comme nom de classe dans le code généré. Par conséquent, il ne doit pas contenir d’espaces ni de signes de ponctuation.
 
-4. Sélectionnez **Ajouter**.
+4. Choisissez **Ajouter**.
 
     Un nouveau fichier avec l’extension **. TT**est créé. Sa propriété **outil personnalisé** est définie sur **valeur TextTemplatingFilePreprocessor**. Il contient les lignes suivantes :
 
@@ -80,7 +80,7 @@ Un bon moyen de créer un modèle consiste à convertir un exemple existant de l
 
 ### <a name="to-convert-an-existing-text-file-to-a-run-time-template"></a>Pour convertir un fichier texte existant en modèle au moment de l’exécution
 
-1. Incluez le fichier dans votre projet Visual Studio. Dans Explorateur de solutions, dans le menu contextuel du projet, choisissez **ajouter** > **élément existant**.
+1. Incluez le fichier dans votre projet Visual Studio. Dans Explorateur de solutions, dans le menu contextuel du projet, choisissez **Ajouter**un  >  **élément existant**.
 
 2. Définissez la propriété **outils personnalisés** du fichier sur **valeur TextTemplatingFilePreprocessor**. Dans Explorateur de solutions, dans le menu contextuel du fichier, choisissez **Propriétés**.
 
@@ -91,7 +91,7 @@ Un bon moyen de créer un modèle consiste à convertir un exemple existant de l
 
 4. Supprimez les espaces ou la ponctuation de la partie principale du nom de fichier. Par exemple, « mon Page.tt Web » serait incorrect, mais « MyWebPage.tt » est correct. Le nom de fichier sera utilisé comme nom de classe dans le code généré.
 
-5. Insérez la ligne suivante au début du fichier. Si vous travaillez dans un projet Visual Basic, remplacez «C#» par « vb ».
+5. Insérez la ligne suivante au début du fichier. Si vous travaillez dans un projet Visual Basic, remplacez « C# » par « VB ».
 
     `<#@ template language="C#" #>`
 
@@ -119,7 +119,7 @@ This report is Company Confidential.
 
 ### <a name="embedded-program-code"></a>Code du programme incorporé
 
-Vous pouvez insérer du code de programme entre `<#` et `#>`. Par exemple :
+Vous pouvez insérer du code de programme entre `<#` et `#>` . Par exemple :
 
 ```csharp
 <table>
@@ -144,7 +144,7 @@ Vous pouvez insérer du code de programme entre `<#` et `#>`. Par exemple :
 </table>
 ```
 
-Notez que les instructions sont insérées entre les `<# ... #>` et les expressions sont insérées entre `<#= ... #>`. Pour plus d’informations, consultez [écriture d’un modèle de texte T4](../modeling/writing-a-t4-text-template.md).
+Notez que les instructions sont insérées entre `<# ... #>` et les expressions sont insérées entre `<#= ... #>` . Pour plus d’informations, consultez [écriture d’un modèle de texte T4](../modeling/writing-a-t4-text-template.md).
 
 ## <a name="using-the-template"></a>Utilisation du modèle
 
@@ -152,7 +152,7 @@ Notez que les instructions sont insérées entre les `<# ... #>` et les expressi
 
 Lorsque vous enregistrez le fichier **. TT** , un fichier. **CS** ou **. vb** subsidiaire est généré. Pour afficher ce fichier dans **Explorateur de solutions**, développez le nœud de fichier **. TT** . Dans un projet Visual Basic, choisissez tout d’abord **Afficher tous les fichiers** dans la barre d’outils **Explorateur de solutions** .
 
-Notez que le fichier subsidiaire contient une classe partielle qui contient une méthode appelée `TransformText()`. Vous pouvez appeler cette méthode à partir de votre application.
+Notez que le fichier subsidiaire contient une classe partielle qui contient une méthode appelée `TransformText()` . Vous pouvez appeler cette méthode à partir de votre application.
 
 ### <a name="generating-text-at-run-time"></a>Génération de texte au moment de l’exécution
 
@@ -262,7 +262,7 @@ System.IO.File.WriteAllText("outputPage.html", pageContent)
 
 #### <a name="passing-data-in-template-properties"></a>Passage de données dans les propriétés de modèle
 
-Une autre façon de passer des données au modèle consiste à ajouter des propriétés publiques à la classe de modèle dans une définition de classe partielle. Votre application peut définir les propriétés avant d’appeler `TransformText()`.
+Une autre façon de passer des données au modèle consiste à ajouter des propriétés publiques à la classe de modèle dans une définition de classe partielle. Votre application peut définir les propriétés avant d’appeler `TransformText()` .
 
 Vous pouvez également ajouter des champs à votre classe de modèle dans une définition partielle. Cela vous permet de passer des données entre les exécutions consécutives du modèle.
 
@@ -272,15 +272,15 @@ De nombreux développeurs préfèrent éviter d’écrire de grands corps de cod
 
 ### <a name="assemblies-and-references"></a>Assemblys et références
 
-Si vous souhaitez que votre code de modèle référence un assembly .NET ou un autre assembly tel que **System. Xml. dll**, ajoutez-le aux **références** de votre projet de la manière habituelle.
+Si vous souhaitez que votre code de modèle référence un assembly .NET ou un autre assembly tel que **System.Xml.dll**, ajoutez-le aux **références** de votre projet de la manière habituelle.
 
-Si vous souhaitez importer un espace de noms de la même façon qu’une instruction `using`, vous pouvez le faire avec la directive `import` :
+Si vous souhaitez importer un espace de noms de la même façon qu’une `using` instruction, vous pouvez le faire avec la `import` directive :
 
 ```
 <#@ import namespace="System.Xml" #>
 ```
 
-Ces directives doivent être placées au début du fichier, immédiatement après la directive `<#@template`.
+Ces directives doivent être placées au début du fichier, immédiatement après la `<#@template` directive.
 
 ### <a name="shared-content"></a>Contenu partagé
 
@@ -296,19 +296,19 @@ La directive include peut être utilisée n’importe où dans le texte d’un f
 
 ### <a name="inheritance-between-run-time-text-templates"></a>Héritage entre les modèles de texte au moment de l’exécution
 
-Vous pouvez partager du contenu entre les modèles au moment de l’exécution en écrivant un modèle de classe de base, qui peut être abstrait. Utilisez le paramètre `inherits` de la directive `<@#template#>` pour référencer une autre classe de modèle Runtime.
+Vous pouvez partager du contenu entre les modèles au moment de l’exécution en écrivant un modèle de classe de base, qui peut être abstrait. Utilisez le `inherits` paramètre de la `<@#template#>` directive pour référencer une autre classe de modèle d’exécution.
 
 #### <a name="inheritance-pattern-fragments-in-base-methods"></a>Modèle d’héritage : fragments dans les méthodes de base
 
 Dans le modèle utilisé dans l’exemple qui suit, notez les points suivants :
 
-- La classe de base `SharedFragments` définit des méthodes dans des blocs de fonctionnalité de classe `<#+ ... #>`.
+- La classe de base `SharedFragments` définit des méthodes dans des blocs de fonctionnalité de classe `<#+ ... #>` .
 
 - La classe de base ne contient pas de texte libre. Au lieu de cela, tous ses blocs de texte se produisent à l’intérieur des méthodes de fonctionnalité de classe.
 
-- La classe dérivée appelle les méthodes définies dans `SharedFragments`.
+- La classe dérivée appelle les méthodes définies dans `SharedFragments` .
 
-- L’application appelle la méthode `TextTransform()` de la classe dérivée, mais ne transforme pas la classe de base `SharedFragments`.
+- L’application appelle la `TextTransform()` méthode de la classe dérivée, mais ne transforme pas la classe de base `SharedFragments` .
 
 - Les classes de base et les classes dérivées sont des modèles de texte d’exécution ; autrement dit, la propriété de l' **outil personnalisé** est définie sur **valeur TextTemplatingFilePreprocessor**.
 
@@ -415,7 +415,7 @@ string result = t1.TransformText();
 Console.WriteLine(result);
 ```
 
-**Résultat obtenu :**
+**Résultat :**
 
 ```
 Here is the description for this derived template:
@@ -436,5 +436,5 @@ Les modèles au moment de l’exécution peuvent être utilisés dans n’import
 ## <a name="see-also"></a>Voir aussi
 
 - [Génération de code et modèles de texte T4](../modeling/code-generation-and-t4-text-templates.md)
-- [Écriture d’un modèle de texte T4](../modeling/writing-a-t4-text-template.md)
+- [Écriture d'un modèle de texte T4](../modeling/writing-a-t4-text-template.md)
 - [Boîte à outils T4](http://olegsych.com/T4Toolbox/)

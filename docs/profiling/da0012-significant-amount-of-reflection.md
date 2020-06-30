@@ -14,16 +14,16 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: eb574afbe1f9ac843868dabf5af88fdbc24599ef
-ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
+ms.openlocfilehash: df8b9c80b3d3b12cb556947a7ca77b3141fb853d
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "85328170"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85520639"
 ---
 # <a name="da0012-significant-amount-of-reflection"></a>DA0012 : Quantité importante de réflexion
 
-|||
+|Élément|Valeur|
 |-|-|
 |ID de règle|DA0012|
 |Category|Utilisation du .NET Framework|

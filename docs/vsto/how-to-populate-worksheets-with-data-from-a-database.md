@@ -1,7 +1,7 @@
 ---
 title: 'Comment : remplir des feuilles de calcul avec des données d’une base de données'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 0a1e01f5c9fc1372cda4d7d31f8ba56b90e166e7
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: 1b594014b2564b5730c1895a007294ee66e07637
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72985857"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85520118"
 ---
 # <a name="how-to-populate-worksheets-with-data-from-a-database"></a>Comment : remplir des feuilles de calcul avec des données d’une base de données
 
@@ -41,9 +41,9 @@ L'exemple suivant montre comment ajouter des contrôles liés aux données dans 
 
 L’un des contrôles suivants est créé sur la feuille de calcul :
 
-- Si vous faites glisser un champ, un contrôle de <xref:Microsoft.Office.Tools.Excel.NamedRange> est créé sur la feuille de calcul. Pour plus d’informations, consultez [NamedRange, contrôle](../vsto/namedrange-control.md).
+- Si vous faites glisser un champ, un <xref:Microsoft.Office.Tools.Excel.NamedRange> contrôle est créé sur la feuille de calcul. Pour plus d’informations, consultez [NamedRange, contrôle](../vsto/namedrange-control.md).
 
-- Si vous faites glisser une table, un contrôle de <xref:Microsoft.Office.Tools.Excel.ListObject> est créé sur la feuille de calcul. Pour plus d’informations, consultez [ListObject Control](../vsto/listobject-control.md).
+- Si vous faites glisser une table, un <xref:Microsoft.Office.Tools.Excel.ListObject> contrôle est créé sur la feuille de calcul. Pour plus d’informations, consultez [ListObject Control](../vsto/listobject-control.md).
 
 Vous pouvez ajouter un contrôle différent en sélectionnant la table ou le champ dans la fenêtre **sources de données** , puis en choisissant un autre contrôle dans la liste déroulante.
 

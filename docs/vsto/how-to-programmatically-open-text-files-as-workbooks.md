@@ -1,7 +1,7 @@
 ---
-title: 'Procédure : Ouvrir des fichiers texte en tant que classeurs par programmation'
+title: 'Comment : ouvrir des fichiers texte en tant que classeurs par programmation'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -14,15 +14,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 61e51f6274bc22ed0d34d33f5ff85bfbfbd927bd
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7a0f1b384aafb491183a750f17653ab55f2003e2
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62812454"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85519827"
 ---
-# <a name="how-to-programmatically-open-text-files-as-workbooks"></a>Procédure : Ouvrir des fichiers texte en tant que classeurs par programmation
-  Vous pouvez ouvrir un fichier texte comme un classeur. Vous devez passer le nom du fichier texte que vous souhaitez ouvrir. Vous pouvez spécifier plusieurs paramètres facultatifs, tels que le numéro de ligne à démarrer l’analyse et le format de colonne des données dans le fichier.
+# <a name="how-to-programmatically-open-text-files-as-workbooks"></a>Comment : ouvrir des fichiers texte en tant que classeurs par programmation
+  Vous pouvez ouvrir un fichier texte en tant que classeur. Vous devez passer le nom du fichier texte que vous souhaitez ouvrir. Vous pouvez spécifier plusieurs paramètres facultatifs, tels que le numéro de ligne sur lequel commencer l’analyse et le format de colonne des données dans le fichier.
 
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]
 
@@ -31,16 +31,16 @@ ms.locfileid: "62812454"
  [!code-vb[Trin_VstcoreExcelAutomation#80](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#80)]
 
 ## <a name="compile-the-code"></a>Compiler le code
- Cet exemple nécessite les composants suivants :
+ Cet exemple requiert les composants suivants :
 
-- Un fichier texte délimité par des virgules nommé `Test.txt` qui contient au moins trois lignes de texte.
+- Fichier texte délimité par des virgules nommé `Test.txt` qui contient au moins trois lignes de texte.
 
-- Le fichier texte `Test.txt` à stocker sur le lecteur C.
+- Fichier texte `Test.txt` à stocker sur le lecteur C.
 
 ## <a name="see-also"></a>Voir aussi
-- [Travailler avec des classeurs](../vsto/working-with-workbooks.md)
-- [Guide pratique pour Ouvrir des classeurs par programmation](../vsto/how-to-programmatically-open-workbooks.md)
-- [Guide pratique pour Créer par programmation des classeurs](../vsto/how-to-programmatically-create-new-workbooks.md)
-- [Guide pratique pour Enregistrer des classeurs par programmation](../vsto/how-to-programmatically-save-workbooks.md)
-- [Guide pratique pour Fermer des classeurs par programmation](../vsto/how-to-programmatically-close-workbooks.md)
-- [Paramètres optionnels dans les solutions Office](../vsto/optional-parameters-in-office-solutions.md)
+- [Utiliser des classeurs](../vsto/working-with-workbooks.md)
+- [Comment : ouvrir des classeurs par programmation](../vsto/how-to-programmatically-open-workbooks.md)
+- [Comment : créer des classeurs par programmation](../vsto/how-to-programmatically-create-new-workbooks.md)
+- [Comment : enregistrer des classeurs par programmation](../vsto/how-to-programmatically-save-workbooks.md)
+- [Comment : fermer des classeurs par programmation](../vsto/how-to-programmatically-close-workbooks.md)
+- [Paramètres facultatifs dans les solutions Office](../vsto/optional-parameters-in-office-solutions.md)

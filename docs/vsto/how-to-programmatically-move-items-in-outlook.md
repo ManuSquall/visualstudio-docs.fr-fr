@@ -1,7 +1,7 @@
 ---
-title: 'Procédure : Déplacer des éléments dans Outlook par programmation'
+title: 'Comment : déplacer des éléments dans Outlook par programmation'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -12,15 +12,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 3dcbfbe7b6e6ac5bacb9e8e36e43d780d3051903
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 97f686a47d18fa91909de489f12f9c7a8c1306d1
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62812557"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85519910"
 ---
-# <a name="how-to-programmatically-move-items-in-outlook"></a>Procédure : Déplacer des éléments dans Outlook par programmation
-  Cet exemple déplace les messages électroniques non lus à partir de la **boîte de réception** dans un dossier nommé **Test**. L’exemple déplace uniquement les messages qui contiennent le mot **Test** dans le `Subject` champ.
+# <a name="how-to-programmatically-move-items-in-outlook"></a>Comment : déplacer des éléments dans Outlook par programmation
+  Cet exemple déplace les messages électroniques non lus de la **boîte de réception** vers un dossier nommé **test**. L’exemple déplace uniquement les messages qui contiennent le mot **test** dans le `Subject` champ.
 
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]
 
@@ -30,12 +30,12 @@ ms.locfileid: "62812557"
 ## <a name="compile-the-code"></a>Compiler le code
  Cet exemple nécessite :
 
-- Un dossier de courrier Outlook nommé **Test**.
+- Un dossier de messagerie Outlook nommé **test**.
 
-- Un message électronique entrant avec le mot **Test** dans le `Subject` champ.
+- Message électronique qui arrive avec le mot **test** dans le `Subject` champ.
 
 ## <a name="see-also"></a>Voir aussi
-- [Travailler avec des dossiers](../vsto/working-with-folders.md)
-- [Guide pratique pour Récupérer par programme un dossier par nom](../vsto/how-to-programmatically-retrieve-a-folder-by-name.md)
-- [Guide pratique pour Rechercher par programmation dans un dossier spécifique](../vsto/how-to-programmatically-search-within-a-specific-folder.md)
-- [Guide pratique pour Effectuer des actions par programme lorsqu’un message électronique est reçu.](../vsto/how-to-programmatically-perform-actions-when-an-e-mail-message-is-received.md)
+- [Utiliser des dossiers](../vsto/working-with-folders.md)
+- [Comment : récupérer un dossier par nom par programmation](../vsto/how-to-programmatically-retrieve-a-folder-by-name.md)
+- [Comment : effectuer une recherche par programmation dans un dossier spécifique](../vsto/how-to-programmatically-search-within-a-specific-folder.md)
+- [Comment : effectuer des actions par programmation lors de la réception d’un message électronique](../vsto/how-to-programmatically-perform-actions-when-an-e-mail-message-is-received.md)
