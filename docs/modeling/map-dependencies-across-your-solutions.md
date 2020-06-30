@@ -1,7 +1,7 @@
 ---
-title: Cartes du code
+title: Cartes de code
 ms.date: 05/16/2018
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - vs.progression.codemap
 - vs.progression.standardgraphsdialog
@@ -16,12 +16,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a6e4efbc0cf950781c84eadf974ea87943d9828c
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 771a6ccf4749a3464204d3da75f4d403d1ab2dd5
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75594576"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85532715"
 ---
 # <a name="map-dependencies-with-code-maps"></a>Mapper des dépendances avec des cartes de code
 
@@ -36,22 +36,22 @@ Pour créer et modifier des cartes de code, vous avez besoin de l’édition Vis
 
 Vous pouvez mapper les dépendances de code dans les langages suivants :
 
-- Visual C# ou Visual Basic dans une solution ou des assemblys ( *. dll* ou *. exe*)
+- Visual C# ou Visual Basic dans une solution ou des assemblys (*. dll* ou *. exe*)
 
-- Code C ou C++ code natif ou managé dans C++ des projets visuels, des fichiers d’en-tête ( *. h* ou `#include`) ou des fichiers binaires
+- Code C ou C++ natif ou managé dans des projets Visual C++, des fichiers d’en-tête (*. h* ou `#include` ) ou des fichiers binaires
 
-- Projets X++ et assemblys créés à partir de modules .NET pour Microsoft Dynamics AX
+- projets et assemblys X++ créés à partir de modules .NET pour Microsoft Dynamics AX.
 
 > [!NOTE]
-> Pour les projets autres C# que ou Visual Basic, il existe moins d’options pour démarrer une carte de code ou ajouter des éléments à une carte de code existante. Par exemple, vous ne pouvez pas cliquer avec le bouton droit sur un objet dans l’éditeur de texte d’un projet C++ et l’ajouter à une carte de code. Toutefois, vous pouvez glisser-déplacer des éléments de code individuels ou des fichiers à partir de **Explorateur de solutions**, **affichage de classes**et l' **Explorateur d’objets**.
+> Pour les projets autres que C# ou Visual Basic, il existe moins d’options pour démarrer une carte de code ou ajouter des éléments à une carte de code existante. Par exemple, vous ne pouvez pas cliquer avec le bouton droit sur un objet dans l’éditeur de texte d’un projet C++ et l’ajouter à une carte de code. Toutefois, vous pouvez glisser-déplacer des éléments de code individuels ou des fichiers à partir de **Explorateur de solutions**, **affichage de classes**et l' **Explorateur d’objets**.
 
 ## <a name="install-code-map-and-live-dependency-validation"></a>Installer la carte de code et la validation de dépendances dynamiques
 
 Pour créer une carte de code dans Visual Studio, commencez par installer les composants de la **carte de code** et de la **validation des dépendances dynamiques** :
 
-1. Ouvrez **Visual Studio installer**. Vous pouvez l’ouvrir à partir du menu Démarrer de Windows ou dans Visual Studio en sélectionnant **outils** > **accéder à outils et fonctionnalités**.
+1. Ouvrez **Visual Studio installer**. Vous pouvez l’ouvrir à partir du menu Démarrer de Windows ou dans Visual Studio en sélectionnant **Outils**  >  **accéder aux outils et aux fonctionnalités**.
 
-1. Sélectionnez l’onglet **Composants individuels**.
+1. Sélectionnez l'onglet **Composants individuels**.
 
 1. Faites défiler jusqu’à la section **outils de code** , puis sélectionnez **carte de code** et **validation de dépendances dynamiques**.
 
@@ -67,7 +67,7 @@ Vous pouvez créer une carte de code vide et y faire glisser des éléments, not
 
 Pour ajouter une carte de code vide :
 
-1. Dans l’ **Explorateur de solutions**, ouvrez le menu contextuel du nœud racine de votre solution. Choisissez **ajouter** > **nouvel élément**.
+1. Dans l’ **Explorateur de solutions**, ouvrez le menu contextuel du nœud racine de votre solution. Choisissez **Ajouter**  >  **un nouvel élément**.
 
 2. Dans la boîte de dialogue **Ajouter un nouvel élément** , sous **installé**, choisissez la catégorie **général** .
 
@@ -78,13 +78,13 @@ Pour ajouter une carte de code vide :
 
    Une carte vide apparaît dans le dossier **éléments de solution** de votre solution.
 
-De même, vous pouvez créer un nouveau fichier de mappage de code sans l’ajouter à votre solution en sélectionnant **Architecture** > **nouvelle carte de code** ou **fichier** > nouveau **fichier** **de** > .
+De même, vous pouvez créer un nouveau fichier de mappage de code sans l’ajouter à votre solution en sélectionnant **architecture**  >  **nouvelle carte de code** ou **fichier**  >  **nouveau**  >  **fichier**.
 
 ## <a name="generate-a-code-map-for-your-solution"></a>Générer une carte de code pour votre solution
 
 Pour afficher toutes les dépendances dans votre solution :
 
-1. Dans la barre de menus, choisissez **Architecture** > **générer une carte du code pour la solution**. Si votre code n’a pas changé depuis la dernière fois que vous l’avez créé, vous pouvez sélectionner **Architecture** > **générer une carte de code pour la solution sans génération à** la place.
+1. Dans la barre de menus, choisissez **architecture**  >  **générer une carte du code pour la solution**. Si votre code n’a pas changé depuis la dernière fois que vous l’avez créé, vous pouvez sélectionner **architecture**  >  **générer une carte du code pour la solution sans génération à** la place.
 
    ![Générer une commande de carte du code](../modeling/media/codemapsarchitecturemenu.png)
 
@@ -104,7 +104,7 @@ Pour afficher toutes les dépendances dans votre solution :
 
    ![Développement d’un nœud dans une carte du code](../modeling/media/dependencygraph_containment.png)
 
-   Ou bien, sélectionnez l’élément et appuyez sur la touche plus ( **+** ) du clavier. Pour explorer des niveaux plus profonds de code, procédez de même pour les espaces de noms, les types et les membres.
+   Ou utilisez le clavier en sélectionnant l’élément, puis en appuyant sur la touche plus ( **+** ). Pour explorer des niveaux plus profonds de code, procédez de même pour les espaces de noms, les types et les membres.
 
    > [!TIP]
    > Pour plus d’informations sur l’utilisation des cartes de code à l’aide de la souris, du clavier et de la fonction tactile, consultez [Parcourir et réorganiser des cartes de code](../modeling/browse-and-rearrange-code-maps.md).
@@ -146,7 +146,7 @@ Pour afficher toutes les dépendances dans votre solution :
 
     ![Sélectionner des éléments pour afficher les relations](../modeling/media/codemapsviewnewrelationships.png)
 
-Voir également :
+Voir aussi :
 
 - [Parcourir et réorganiser des cartes de code](../modeling/browse-and-rearrange-code-maps.md)
 - [Personnaliser des cartes de code en modifiant les fichiers DGML](../modeling/customize-code-maps-by-editing-the-dgml-files.md)
@@ -162,7 +162,7 @@ Supposons que vous ayez une révision du code à effectuer dans certains fichier
 
    ![Sélectionner les éléments à mapper](../modeling/media/codemapsselectinsolutionexplorer.png)
 
-1. Dans la barre d’outils **Explorateur de solutions** , choisissez **afficher sur la carte du code** ![bouton créer un graphique à partir des nœuds sélectionnés](../modeling/media/createnewgraphfromselectedbutton.gif). Ou bien, ouvrez le menu contextuel d’un ou d’un groupe d’éléments et choisissez **afficher sur la carte de code**.
+1. Dans la barre d’outils **Explorateur de solutions** , choisissez **afficher sur la carte de code** ![ créer un graphique à partir des nœuds sélectionnés ](../modeling/media/createnewgraphfromselectedbutton.gif) . Ou bien, ouvrez le menu contextuel d’un ou d’un groupe d’éléments et choisissez **afficher sur la carte de code**.
 
    Vous pouvez également faire glisser des éléments depuis **Explorateur de solutions**, **affichage de classes**ou l' **Explorateur d’objets**, dans une carte de code [nouvelle](#add-a-code-map) ou existante. Pour inclure la hiérarchie parente de vos éléments, appuyez sur la touche **CTRL** et maintenez-la enfoncée pendant que vous faites glisser des éléments ou utilisez le bouton **inclure les parents** dans la barre d’outils de la carte de code pour spécifier l’action par défaut. Vous pouvez également faire glisser des fichiers d’assembly en dehors de Visual Studio, par exemple à partir de l' **Explorateur Windows**.
 
@@ -177,19 +177,19 @@ Supposons que vous ayez une révision du code à effectuer dans certains fichier
 
    ![Développer un nœud dans une carte de code](../modeling/media/dependencygraph_containment.png)
 
-   Pour développer tous les éléments, sélectionnez-les à l’aide de la **touche Ctrl**+**un**, ouvrez le menu contextuel de la carte, puis choisissez **groupe** > **développer**. Toutefois, cette option n’est pas disponible si le développement de tous les groupes crée une carte inutilisable ou entraîne des problèmes de mémoire.
+   Pour développer tous les éléments, sélectionnez-les à l’aide de la **touche Ctrl** + **A**, puis ouvrez le menu contextuel de la carte et choisissez **groupe**  >  **développer**. Toutefois, cette option n’est pas disponible si le développement de tous les groupes crée une carte inutilisable ou entraîne des problèmes de mémoire.
 
 5. Continuez à développer les éléments qui vous intéressent, juste jusqu’au niveau de la classe et du membre, si nécessaire.
 
    ![Développer les groupes au niveau de la classe et du membre](../modeling/media/codemapsexpandtoclassandmember.png)
 
-   Pour afficher les membres qui figurent dans le code, mais qui n’apparaissent pas sur la carte, cliquez sur l’icône récupérer à l’écran les **enfants** ![icône récupérer les enfants](../modeling/media/dependencygraph_deletednodesicon.png) dans le coin supérieur gauche d’un groupe.
+   Pour afficher les membres qui figurent dans le code, mais qui n’apparaissent pas sur la carte, cliquez sur l’icône récupérer à l’icône des **enfants** récupérer les ![ enfants ](../modeling/media/dependencygraph_deletednodesicon.png) dans le coin supérieur gauche d’un groupe.
 
 6. Pour afficher d’autres d’éléments associés à ceux présents sur la carte, sélectionnez un élément et choisissez **Afficher les éléments associés** dans la barre d’outils de la carte de code, puis sélectionnez le type d’éléments associés à ajouter à la carte. Vous pouvez également sélectionner un ou plusieurs éléments, ouvrir le menu contextuel, puis choisir l’option **Afficher** pour le type d’éléments associés à ajouter à la carte. Par exemple :
 
     Pour un **assembly**, choisissez :
 
-    |||
+    |Option|Description|
     |-|-|
     |**Afficher les assemblys qui sont référencés par cela**|Ajoutez les assemblys que cet assembly référence. Les assemblys externes apparaissent dans le groupe **Externes** .|
     |**Afficher les assemblys qui référencent cela**|Ajoutez les assemblys de la solution qui référencent cet assembly.|
@@ -198,7 +198,7 @@ Supposons que vous ayez une révision du code à effectuer dans certains fichier
 
     Pour une **classe** ou une **interface**, choisissez :
 
-    |||
+    |Option|Description|
     |-|-|
     |**Afficher les types de base**|Pour une classe, ajoutez la classe de base et les interfaces implémentées.<br /><br /> Pour une interface, ajoutez des interfaces de base.|
     |**Afficher les types dérivés**|Pour une classe, ajoutez des classes dérivées.<br /><br /> Pour une interface, ajoutez les interfaces dérivées et les structures et classes d’implémentation.|
@@ -211,7 +211,7 @@ Supposons que vous ayez une révision du code à effectuer dans certains fichier
 
      Pour une **méthode**, choisissez :
 
-    |||
+    |Option|Description|
     |-|-|
     |**Afficher les méthodes qui sont appelées par cela**|Ajoutez les méthodes que cette méthode appelle.|
     |**Afficher les champs qui sont référencés par cela**|Ajoutez les champs que cette méthode référence.|
@@ -221,14 +221,14 @@ Supposons que vous ayez une révision du code à effectuer dans certains fichier
 
      Pour un **champ** ou une **propriété**, choisissez :
 
-    |||
+    |Option|Description|
     |-|-|
     |**Afficher le type conteneur**|Ajoutez le type de parent.|
     |**Afficher le type conteneur, l’espace de noms contenant et l’assembly conteneur**|Ajoutez la hiérarchie de conteneurs parents.|
 
     ![Afficher les méthodes appelées par ce membre](../modeling/media/codemapsshowrelatedmethods.png)
 
-7. La carte affiche les relations. Dans cet exemple, la carte affiche les méthodes appelées par la méthode `Find` et leur emplacement dans la solution ou en externe.
+7. La carte affiche les relations. Dans cet exemple, la carte affiche les méthodes appelées par la `Find` méthode et leur emplacement dans la solution ou en externe.
 
    ![Afficher les dépendances spécifiques dans une carte du code](../modeling/media/codemapsspecificdependenciesintro.png)
 
@@ -240,7 +240,7 @@ Supposons que vous ayez une révision du code à effectuer dans certains fichier
 
 - [Vidéo : comprendre la conception à partir du code avec les cartes de code Visual Studio 2015](https://channel9.msdn.com/Events/Visual-Studio/Connect-event-2015/502)
 - [Utiliser des cartes du code pour déboguer vos applications](../modeling/use-code-maps-to-debug-your-applications.md)
-- [Mapper les méthodes sur la pile des appels pendant le débogage](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md)
+- [Mapper les méthodes sur la pile des appels tout en déboguant](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md)
 - [Rechercher des problèmes potentiels à l’aide des analyseurs de carte du code](../modeling/find-potential-problems-using-code-map-analyzers.md)
 - [Parcourir et réorganiser des cartes de code](../modeling/browse-and-rearrange-code-maps.md)
 - [Personnaliser des cartes de code en modifiant les fichiers DGML](../modeling/customize-code-maps-by-editing-the-dgml-files.md)

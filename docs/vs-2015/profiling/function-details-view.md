@@ -14,12 +14,12 @@ caps.latest.revision: 19
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 107730fbb2dd78ddc9de8eaddc006bf01562af16
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 24e9d76e959c0c05abe3ac48f5c4d43afecec47a
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68141885"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85532728"
 ---
 # <a name="function-details-view"></a>Vue Informations relatives à la fonction
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,7 +40,7 @@ La fenêtre **Vue Informations relatives à la fonction** affiche les informatio
   
 ## <a name="cost-distribution-bar-chart"></a>Graphique à barres Distribution des coûts  
   
-### <a name="performance-metrics"></a>Métriques de performances  
+### <a name="performance-metrics"></a>Mesures de performances  
  Dans la liste déroulante **Métrique de performances**, vous pouvez spécifier les valeurs qui apparaissent dans la vue. Les valeurs disponibles dépendent de la méthode de profilage qui a été utilisée dans le fichier de données de profilage. Les noms entre parenthèses sont les noms des lignes dans le tableau **Détails des performances de la fonction**.  
   
 ### <a name="bar-chart"></a>Graphique à barres  
@@ -75,7 +75,7 @@ La fenêtre **Vue Informations relatives à la fonction** affiche les informatio
   
 |Colonne|Description|  
 |------------|-----------------|  
-|**Exclusif**|-   Part de la métrique de performances qui s’est produite dans l’exécution du corps de la fonction.|  
+|**Exclusive**|-   Part de la métrique de performances qui s’est produite dans l’exécution du corps de la fonction.|  
 |**Dans les appels**|-   Part de la métrique de performances qui s’est produite dans des fonctions appelées par la fonction sélectionnée.|  
 |**Inclusive Total**|-   Total des valeurs **Exclusif** et **Dans les appels**.|  
   
@@ -84,17 +84,17 @@ La fenêtre **Vue Informations relatives à la fonction** affiche les informatio
   
 ## <a name="cost-distribution-bar-chart-values"></a>Valeurs du graphique à barres Distribution des coûts  
   
-### <a name="sampling"></a>Échantillonnage  
+### <a name="sampling"></a>échantillonnage  
  Le tableau suivant explique les valeurs de la liste Métrique de performances pour les données de profilage recueillies à l’aide de la méthode d’échantillonnage.  
   
-|||  
+|Métrique|Description|
 |-|-|  
 |**Échantillons inclusifs (Échantillons collectés)**|-   Pour une fonction appelante, nombre d’échantillons recueillis quand la fonction sélectionnée a été appelée par cette fonction appelante.<br />-   Pour le corps de fonction, nombre d’échantillons recueillis quand la fonction sélectionnée exécutait son propre code.<br />-   Pour une fonction appelée, nombre d’échantillons recueillis quand la fonction appelée s’exécutait en raison d’un appel de la fonction sélectionnée.|  
   
 ### <a name="instrumentation"></a>Instrumentation  
  Le tableau suivant explique les valeurs de la liste Métrique de performances pour les données de profilage recueillies à l’aide de la méthode d’instrumentation.  
   
-|||  
+|Métrique|Description|  
 |-|-|  
 |**Temps inclusif écoulé (Temps écoulé)**|Le temps écoulé inclut le temps consacré aux appels au système d’exploitation, comme dans le cas de changements de contexte ou d’opérations d’E/S.<br /><br /> -   Pour une **Fonction appelante**, temps consacré à exécuter les instances de la fonction sélectionnée qui ont été appelées par la fonction. Cela comprend le temps passé dans des fonctions appelées par la fonction sélectionnée.<br />-   Pour le **Corps de la fonction**, temps total consacré à exécuter le code de la fonction sélectionnée. Cela exclut le temps passé dans des fonctions appelées.<br />-   Pour une fonction appelée, temps consacré à exécuter les instances de la fonction qui ont été appelées par la fonction sélectionnée. Le total comprend le temps passé dans des fonctions appelées par la fonction. Cela comprend le temps passé dans des fonctions appelées par la fonction sélectionnée.|  
 |**Temps inclusif d’application (Temps d’application)**|Le temps d’application n’inclut pas le temps consacré aux appels au système d’exploitation, comme dans le cas de changements de contexte ou d’opérations d’E/S.<br /><br /> -   Pour une **Fonction appelante**, temps d’application consacré à exécuter les instances de la fonction sélectionnée qui ont été appelées par la fonction. Cela comprend le temps passé dans des fonctions appelées par la fonction sélectionnée.<br />-   Pour le **Corps de la fonction**, temps d’application total consacré à exécuter le code de la fonction sélectionnée. Cela exclut le temps passé dans des fonctions appelées.<br />-   Pour une fonction appelée, temps d’application consacré à exécuter les instances de la fonction qui ont été appelées par la fonction sélectionnée. Le total comprend le temps passé dans des fonctions appelées par la fonction.|  
@@ -102,15 +102,15 @@ La fenêtre **Vue Informations relatives à la fonction** affiche les informatio
 ### <a name="net-memory"></a>Mémoire .NET  
  Le tableau suivant explique les valeurs de la liste Métrique de performances pour les données de profilage recueillies à l’aide de la méthode de profilage de mémoire .NET.  
   
-|||  
+|Métrique|Description|  
 |-|-|  
 |**Allocations inclusives (Allocations)**|-   Pour une **Fonction appelante**, nombre d’objets alloués par les instances de la fonction sélectionnée qui ont été appelées par la fonction. Ce nombre inclut les objets alloués par les fonctions appelées par la fonction sélectionnée.<br />-   Pour le **Corps de la fonction**, nombre d’objets alloués par la fonction sélectionnée quand elle exécutait son propre code. Cela exclut les objets alloués dans les fonctions appelées par la fonction sélectionnée.<br />-   Pour une fonction appelée, nombre d’objets alloués par les instances de la fonction qui ont été appelées par la fonction sélectionnée. Ce nombre inclut les objets alloués par les fonctions appelées par la fonction.|  
 |**Octets inclusifs (Octets)**|-   Pour une **Fonction appelante**, nombre d’octets alloués par les instances de la fonction sélectionnée qui ont été appelées par la fonction. Ce nombre inclut les octets alloués par les fonctions appelées par la fonction sélectionnée.<br />-   Pour le **Corps de la fonction**, nombre total d’octets alloués par la fonction sélectionnée quand elle exécutait son propre code. Cela exclut les octets alloués dans les fonctions appelées par la fonction sélectionnée.<br />-   Pour une fonction appelée, nombre d’octets alloués par les instances de la fonction qui ont été appelées par la fonction sélectionnée. Ce nombre inclut les octets alloués par les fonctions appelées par la fonction.|  
   
-### <a name="concurrency"></a>Concurrency  
+### <a name="concurrency"></a>Accès concurrentiel  
  Le tableau suivant explique les valeurs de la liste Métrique de performances pour les données de profilage recueillies à l’aide de la méthode de concurrence.  
   
-|||  
+|Métrique|Description|  
 |-|-|  
 |**Conflits inclusifs (Conflits)**|-   Pour une **Fonction appelante**, nombre d’événements de conflits de ressources qui se sont produits dans les instances de la fonction sélectionnée appelées par la fonction. Ce nombre inclut les événements de conflits dans les fonctions appelées par la fonction sélectionnée.<br />-   Pour le **Corps de la fonction**, nombre total d’événements de conflits qui se sont produits quand la fonction exécutait son propre code. Cela exclut les conflits se produisant dans les fonctions appelées par la fonction sélectionnée.<br />-   Pour une fonction appelée, nombre d’événements de conflits qui se sont produits dans les instances de la fonction appelées par la fonction sélectionnée. Ce nombre inclut les événements de conflits qui se sont produits dans les fonctions appelées par la fonction.|  
 |**Temps bloqué inclusif (Temps bloqué)**|-   Pour une fonction appelante, temps consacré aux événements de conflits de ressources pour les instances de la fonction sélectionnée appelées par la fonction. Ce temps inclut le temps bloqué dans les fonctions appelées par la fonction sélectionnée.<br />-   Pour le **Corps de la fonction**, temps total consacré aux événements de conflits qui se sont produits quand la fonction exécutait son propre code. Cela exclut les conflits se produisant dans les fonctions appelées par la fonction sélectionnée.<br />-   Pour une fonction appelée, temps consacré aux événements de conflits de ressources pour les instances de la fonction appelées par la fonction sélectionnée. Ce temps inclut le temps bloqué dans les fonctions appelées par la fonction.|

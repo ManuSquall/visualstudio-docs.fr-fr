@@ -1,7 +1,7 @@
 ---
 title: "Procédure pas à pas : génération de code à l'aide de modèles de texte"
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - walkthroughs [text templates], generating application code
 - walkthroughs [text templates]
@@ -10,12 +10,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ff583874778a2f1affd589ef260c6b9eac6b5d06
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 181c1ccbeaff0aadee1b3d5ebd255b854b915277
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75593507"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85532058"
 ---
 # <a name="walkthrough-generate-code-by-using-text-templates"></a>Procédure pas à pas : générer du code à l’aide de modèles de texte
 
@@ -28,7 +28,7 @@ L’espace de noms System.Xml fournit des outils complets pour charger un docume
 Dans cet exemple de projet, un modèle lit un exemple de fichier XML et génère des classes qui correspondent à chaque type de nœud. Dans le code écrit manuellement, vous pouvez utiliser ces classes pour parcourir le fichier XML. Vous pouvez également exécuter votre application sur tout autre fichier qui utilise les mêmes types de nœuds. L’objectif de l’exemple de fichier XML est de fournir des exemples de tous les types de nœuds que vous souhaitez que votre application puisse gérer.
 
 > [!NOTE]
-> L’application [xsd. exe](/dotnet/standard/serialization/xml-schema-definition-tool-xsd-exe), qui est incluse dans Visual Studio, peut générer des classes fortement typées à partir de fichiers XML. Le modèle présenté ici est fourni comme exemple.
+> L' [xsd.exe](/dotnet/standard/serialization/xml-schema-definition-tool-xsd-exe)d’application, qui est inclus dans Visual Studio, peut générer des classes fortement typées à partir de fichiers XML. Le modèle présenté ici est fourni comme exemple.
 
 Voici l’exemple de fichier :
 
@@ -83,7 +83,7 @@ Dans ce projet, un seul fichier de modèle est utilisé pour générer les class
 
 Vous pouvez appliquer cette technique à tout projet de code. Cette procédure pas à pas utilise un projet C#, et à des fins de test nous utilisons une application console.
 
-1. Dans le menu **Fichier** , cliquez sur **Nouveau** , puis sur **Projet**.
+1. Dans le menu **fichier** , cliquez sur **nouveau** , puis sur **projet**.
 
 2. Cliquez sur le nœud **Visual C#** puis, dans le volet **Modèles** , cliquez sur **Application console**.
 
@@ -93,7 +93,7 @@ L’objectif de ce fichier consiste à fournir des exemples des types de nœuds 
 
 Le fichier doit faire partie du projet pour que le modèle puisse le lire, mais il ne sera pas généré dans l’application compilée.
 
-1. Dans l’ **Explorateur de solutions**, cliquez avec le bouton droit sur le projet, cliquez sur **Ajouter** , puis sur **Nouvel élément**.
+1. Dans **Explorateur de solutions**, cliquez avec le bouton droit sur le projet, cliquez sur **Ajouter** , puis sur **nouvel élément**.
 
 2. Dans la boîte de dialogue **Ajouter un nouvel élément** , sélectionnez **Fichier XML** dans le volet **Modèles** .
 
@@ -144,7 +144,7 @@ Ajoutez un fichier de modèle de texte et définissez l’extension de sortie su
 
 4. Dans la directive de sortie, affectez « .cs » comme attribut d’extension, pour que le modèle génère un fichier C#. Dans un projet Visual Basic, vous choisiriez « .vb ».
 
-5. Enregistrez le fichier. À ce stade, le fichier de modèle de texte doit contenir ces lignes :
+5. Enregistrez le fichier . À ce stade, le fichier de modèle de texte doit contenir ces lignes :
 
     ```
     <#@ template debug="false" hostspecific="true" language="C#" #>
@@ -270,7 +270,7 @@ Vous pouvez ajouter plus de détails tels que les propriétés des nœuds enfant
 
 ### <a name="access-the-visual-studio-api"></a>Accéder à l’API Visual Studio
 
-La définition de l’attribut `hostspecific` de la directive `<#@template#>` permet au modèle d’obtenir l’accès à l’API Visual Studio. Le modèle peut utiliser cette API pour obtenir l’emplacement des fichiers projet, pour éviter d’utiliser un chemin absolu dans le code du modèle.
+La définition `hostspecific` de l’attribut de la `<#@template#>` directive permet au modèle d’obtenir l’accès à l’API Visual Studio. Le modèle peut utiliser cette API pour obtenir l’emplacement des fichiers projet, pour éviter d’utiliser un chemin absolu dans le code du modèle.
 
 ```
 <#@ template debug="false" hostspecific="true" language="C#" #>
@@ -430,5 +430,5 @@ Si vous avez vu des erreurs de compilation ou de transformation du modèle dans 
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Génération de code au moment du design à l’aide de modèles de texte T4](../modeling/design-time-code-generation-by-using-t4-text-templates.md)
-- [Écriture d’un modèle de texte T4](../modeling/writing-a-t4-text-template.md)
+- [Génération de code durant la conception à l'aide de modèles de texte T4](../modeling/design-time-code-generation-by-using-t4-text-templates.md)
+- [Écriture d'un modèle de texte T4](../modeling/writing-a-t4-text-template.md)
