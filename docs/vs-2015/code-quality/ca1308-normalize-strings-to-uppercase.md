@@ -15,17 +15,17 @@ caps.latest.revision: 13
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: dfe8495184bf4daadb3bf8899ee2857a9743c842
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: c068fcda7d03ae91435c040d2110d632668d832a
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72661386"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85538734"
 ---
 # <a name="ca1308-normalize-strings-to-uppercase"></a>CA1308 : Normaliser les chaînes en majuscules
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Élément|Valeur|
 |-|-|
 |TypeName|NormalizeStringsToUppercase|
 |CheckId|CA1308|
@@ -45,4 +45,4 @@ ms.locfileid: "72661386"
  Il est possible de supprimer sans risque un message d’avertissement lorsque vous ne faites pas de décision de sécurité basée sur le résultat (par exemple, quand vous l’affichez dans l’interface utilisateur).
 
 ## <a name="see-also"></a>Voir aussi
- [Avertissements liés à la globalisation](../code-quality/globalization-warnings.md)
+ [Avertissements de globalisation](../code-quality/globalization-warnings.md)

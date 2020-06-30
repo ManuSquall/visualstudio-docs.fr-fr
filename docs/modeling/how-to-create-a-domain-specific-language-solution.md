@@ -1,7 +1,7 @@
 ---
 title: 'Comment : créer une solution de langage spécifique à un domaine'
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - vs.dsltools.designerwizard
 helpviewer_keywords:
@@ -13,17 +13,17 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 175da19782927f8c84b9fae0e6d9820a22bd891a
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 844f3eb97ed9e07aa8125688d2bfe8944249b008
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75594667"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85541789"
 ---
 # <a name="how-to-create-a-domain-specific-language-solution"></a>Comment : créer une solution de langage spécifique à un domaine
 Un langage spécifique à un domaine (DSL) est créé à l’aide d’une solution Visual Studio spécialisée.
 
-## <a name="prerequisites"></a>Configuration requise
+## <a name="prerequisites"></a>Prérequis
 
 Avant de commencer cette procédure, installez les composants suivants :
 
@@ -38,7 +38,7 @@ Avant de commencer cette procédure, installez les composants suivants :
 1. Démarrez l’Assistant DSL en créant un projet de **Concepteur Domain-specific language** .
 
    > [!NOTE]
-   > De préférence, le nom que vous choisissez pour le projet doit être un identificateur C# visuel valide, car il peut être utilisé pour générer du code.
+   > De préférence, le nom que vous choisissez pour le projet doit être un identificateur Visual C# valide, car il peut être utilisé pour générer du code.
 
    ::: moniker range="vs-2017"
 
@@ -65,7 +65,7 @@ Avant de commencer cette procédure, installez les composants suivants :
    > [!NOTE]
    > Si un message s’affiche pour vous avertir que vous n’exécutez pas de modèles de texte provenant de sources non approuvées, cliquez sur **OK**. Vous pouvez définir ce message pour qu’il ne s’affiche plus.
 
-## <a name="settings"></a>Pages de l’Assistant Concepteur DSL
+## <a name="the-dsl-designer-wizard-pages"></a><a name="settings"></a>Pages de l’Assistant Concepteur DSL
  Vous pouvez ne pas modifier les valeurs par défaut de plusieurs champs. Toutefois, veillez à définir le champ extension de fichier.
 
 ### <a name="solution-settings-page"></a>Page Paramètres de la solution
@@ -73,7 +73,7 @@ Avant de commencer cette procédure, installez les composants suivants :
 Choisissez un modèle similaire à la DSL que vous souhaitez créer. Les différents modèles offrent des points de départ pratiques. Lorsque vous sélectionnez un modèle de solution, l’Assistant affiche une description. Pour plus d’informations sur les modèles de solution, consultez [choix d’un modèle de solution de langage spécifique à un domaine](../modeling/choosing-a-domain-specific-language-solution-template.md).
 
  **Comment voulez-vous nommer votre langage spécifique à un domaine ?**
-La valeur par défaut est le nom de la solution. Le code est généré à partir de cette valeur. Il doit être valide en tant C# que nom de classe.
+La valeur par défaut est le nom de la solution. Le code est généré à partir de cette valeur. Elle doit être valide en tant que nom de classe C#.
 
 ### <a name="file-extension-page"></a>Page extension de fichier
  **Quelle extension les fichiers doivent-ils utiliser ?**

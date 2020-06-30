@@ -1,7 +1,7 @@
 ---
-title: 'Procédure : Réactiver un complément qui a été désactivé'
+title: 'Comment : réactiver un complément VSTO qui a été désactivé'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - VST.Warning.DisabledAddIn
 dev_langs:
@@ -16,20 +16,20 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 9cdb05328d2a59eb61c57f8f028ade1af0f7ce2f
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 3575e119f4da3ca3050a28243104fb4773089cf3
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63418813"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85541256"
 ---
-# <a name="how-to-re-enable-a-vsto-add-in-that-has-been-disabled"></a>Procédure : Réactiver un complément qui a été désactivé
+# <a name="how-to-re-enable-a-vsto-add-in-that-has-been-disabled"></a>Comment : réactiver un complément VSTO qui a été désactivé
   Les applications Microsoft Office peuvent désactiver les compléments VSTO qui se comportent de façon inattendue. Si une application ne charge pas votre complément VSTO quand vous essayez de la déboguer, cela peut-être dû au fait qu'elle a désactivé votre complément VSTO de manière forcée ou en douceur.
 
  [!INCLUDE[appliesto_allapp](../vsto/includes/appliesto-allapp-md.md)]
 
-## <a name="hard-disabled-vsto-add-ins"></a>Compléments VSTO de désactivation « dure »
- La désactivation dure peut se produire quand un complément, VSTO entraîne la fermeture inattendue de l’application. Elle peut également se produire sur votre ordinateur de développement si vous arrêtez le débogueur pendant que le gestionnaire d'événements <xref:Microsoft.Office.Tools.AddIn.Startup> de votre complément VSTO est en cours d'exécution.
+## <a name="hard-disabled-vsto-add-ins"></a>Compléments VSTO désactivés en dur
+ La désactivation dure peut se produire quand un complément VSTO entraîne la fermeture inattendue de l’application. Elle peut également se produire sur votre ordinateur de développement si vous arrêtez le débogueur pendant que le gestionnaire d'événements <xref:Microsoft.Office.Tools.AddIn.Startup> de votre complément VSTO est en cours d'exécution.
 
 ### <a name="to-re-enable-a-vsto-add-in"></a>Pour réactiver un complément VSTO
 
@@ -49,7 +49,7 @@ ms.locfileid: "63418813"
 
 7. Cliquez sur **Fermer**.
 
-## <a name="soft-disabled-vsto-add-ins"></a>Compléments VSTO désactivés en douceur
+## <a name="soft-disabled-vsto-add-ins"></a>Compléments VSTO désactivés de façon réversible
  La désactivation en douceur peut se produire quand un complément VSTO génère une erreur qui n'entraîne pas la fermeture inattendue de l'application. Par exemple, une application peut entraîner la désactivation en douceur d'un complément VSTO, si ce dernier lève une exception non gérée pendant l'exécution du gestionnaire d'événements <xref:Microsoft.Office.Tools.AddIn.Startup> .
 
 > [!NOTE]
@@ -74,6 +74,6 @@ ms.locfileid: "63418813"
 7. Cliquez sur **OK**.
 
 ## <a name="see-also"></a>Voir aussi
-- [Générer des solutions Office](../vsto/building-office-solutions.md)
-- [Déboguez des projets Office](../vsto/debugging-office-projects.md)
-- [Programmer des Compléments VSTO](../vsto/programming-vsto-add-ins.md)
+- [Créer des solutions Office](../vsto/building-office-solutions.md)
+- [Déboguer des projets Office](../vsto/debugging-office-projects.md)
+- [Programmer les compléments VSTO](../vsto/programming-vsto-add-ins.md)

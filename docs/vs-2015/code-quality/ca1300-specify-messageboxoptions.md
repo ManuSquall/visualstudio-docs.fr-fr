@@ -15,17 +15,17 @@ caps.latest.revision: 21
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 3e21866fce69f768d927882d3ddd47ae3e431265
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: af0017a7ee6918a80a93ca90c7cf3de78885d61f
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72663609"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85539189"
 ---
 # <a name="ca1300-specify-messageboxoptions"></a>CA1300 : Spécifier MessageBoxOptions
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Élément|Valeur|
 |-|-|
 |TypeName|SpecifyMessageBoxOptions|
 |CheckId|CA1300|
@@ -33,13 +33,13 @@ ms.locfileid: "72663609"
 |Modification avec rupture|Sans rupture|
 
 ## <a name="cause"></a>Cause
- Une méthode appelle une surcharge de la méthode <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> qui ne prend pas d’argument <xref:System.Windows.Forms.MessageBoxOptions?displayProperty=fullName>.
+ Une méthode appelle une surcharge de la <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> méthode qui ne prend pas d' <xref:System.Windows.Forms.MessageBoxOptions?displayProperty=fullName> argument.
 
 ## <a name="rule-description"></a>Description de la règle
- Pour afficher correctement une boîte de message pour les cultures qui utilisent un ordre de lecture de droite à gauche, les membres <xref:System.Windows.Forms.MessageBoxOptions> et <xref:System.Windows.Forms.MessageBoxOptions> de l’énumération <xref:System.Windows.Forms.MessageBoxOptions> doivent être passés à la méthode <xref:System.Windows.Forms.MessageBox.Show%2A>. Examinez la propriété <xref:System.Windows.Forms.Control.RightToLeft%2A?displayProperty=fullName> du contrôle conteneur pour déterminer s’il faut utiliser un ordre de lecture de droite à gauche.
+ Pour afficher correctement une boîte de message pour les cultures qui utilisent un ordre de lecture de droite à gauche, les <xref:System.Windows.Forms.MessageBoxOptions> <xref:System.Windows.Forms.MessageBoxOptions> membres et de l' <xref:System.Windows.Forms.MessageBoxOptions> énumération doivent être passés à la <xref:System.Windows.Forms.MessageBox.Show%2A> méthode. Examinez la <xref:System.Windows.Forms.Control.RightToLeft%2A?displayProperty=fullName> propriété du contrôle conteneur pour déterminer s’il faut utiliser un ordre de lecture de droite à gauche.
 
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations
- Pour corriger une violation de cette règle, appelez une surcharge de la méthode <xref:System.Windows.Forms.MessageBox.Show%2A> qui accepte un argument <xref:System.Windows.Forms.MessageBoxOptions>.
+ Pour corriger une violation de cette règle, appelez une surcharge de la <xref:System.Windows.Forms.MessageBox.Show%2A> méthode qui prend un <xref:System.Windows.Forms.MessageBoxOptions> argument.
 
 ## <a name="when-to-suppress-warnings"></a>Quand supprimer les avertissements
  Il est possible de supprimer sans risque un avertissement de cette règle lorsque la bibliothèque de code n’est pas localisée pour une culture qui utilise un ordre de lecture de droite à gauche.
@@ -51,4 +51,4 @@ ms.locfileid: "72663609"
  [!code-vb[FxCop.Globalization.SpecifyMBOptions#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Globalization.SpecifyMBOptions/vb/FxCop.Globalization.SpecifyMBOptions.vb#1)]
 
 ## <a name="see-also"></a>Voir aussi
- [ressources de <xref:System.Resources.ResourceManager?displayProperty=fullName> dans les applications de bureau](https://msdn.microsoft.com/library/8ad495d4-2941-40cf-bf64-e82e85825890)
+ <xref:System.Resources.ResourceManager?displayProperty=fullName>[Ressources dans les applications de bureau](https://msdn.microsoft.com/library/8ad495d4-2941-40cf-bf64-e82e85825890)

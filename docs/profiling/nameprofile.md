@@ -12,12 +12,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: d9f0c9a3259186e1581a4673cdc18d1554e92b3c
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: cc887c6bcef9f8b7307d9d6aa570d6458d87f377
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74778490"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85541698"
 ---
 # <a name="nameprofile"></a>NameProfile
 La fonction `NameProfile` affecte une chaîne au processus ou au thread spécifié.
@@ -74,7 +74,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI NameProfile(
 |NAME_ERROR_TEXTTRUNCATED|Le texte du nom dépassait 32 caractères, y compris le caractère null, et a donc été tronqué.|
 |NAME_OK|Le nom a été inscrit.|
 
-## <a name="remarks"></a>Notes 
+## <a name="remarks"></a>Remarques
  Vous ne pouvez affecter qu’un seul nom à chaque processus ou thread. Une fois qu’un élément de profilage est nommé, les appels suivants à NameProfile pour cet élément sont ignorés.
 
  Si un même nom est affecté à différents threads ou processus, le rapport comprend les données provenant de tous les éléments de ce niveau portant ce nom.
@@ -89,13 +89,13 @@ PROFILE_COMMAND_STATUS PROFILERAPI NameProfile(
 
 ## <a name="function-information"></a>Informations sur la fonction
 
-|||
+|Élément|Valeur|
 |-|-|
 |**En-tête**|Inclure *VSPerf.h*|
 |**Bibliothèque**|Utiliser *VSPerf.lib*|
 |**Unicode**|Implémenté en tant que `NameProfileW` (Unicode) et `NameProfileA` (ANSI).|
 
-## <a name="example"></a> Exemple
+## <a name="example"></a>Exemple
  Le code suivant illustre l’appel de la fonction NameProfile. L’exemple suppose l’utilisation de macros de chaîne Win32 et les paramètres de compilateur pour ANSI afin de déterminer si le code appelle la fonction compatible ANSI.
 
 ```cpp
@@ -134,4 +134,4 @@ void ExerciseNameProfile()
 ```
 
 ## <a name="see-also"></a>Voir aussi
-- [Visual Studio profiler API référence (native)](../profiling/visual-studio-profiler-api-reference-native.md)
+- [Informations de référence sur l’API du profileur Visual Studio (natif)](../profiling/visual-studio-profiler-api-reference-native.md)

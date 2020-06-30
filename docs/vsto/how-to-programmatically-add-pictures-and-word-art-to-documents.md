@@ -1,7 +1,7 @@
 ---
 title: Ajouter des images et des illustrations Word à des documents par programmation
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -16,14 +16,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 45b3030875539035f93bd340354e7041028200d2
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: 621051c827b08e66d68bc348401c2a939e279bcf
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71253825"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85538084"
 ---
-# <a name="how-to-programmatically-add-pictures-and-word-art-to-documents"></a>Procédure : Ajouter des images et des illustrations Word à des documents par programmation
+# <a name="how-to-programmatically-add-pictures-and-word-art-to-documents"></a>Comment : ajouter des images et des mots WordArt à des documents par programmation
   Vous pouvez ajouter des images et des objets de dessin à vos documents au moment du design ou de l'exécution. WordArt vous permet d'ajouter du texte décoratif aux documents Microsoft Office Word. Ces effets de texte spéciaux sont des objets de dessin que vous pouvez personnaliser et insérer dans votre document.
 
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]
@@ -97,11 +97,11 @@ ms.locfileid: "71253825"
 
 ## <a name="compile-the-code"></a>Compiler le code
 
-- Une image nommée *SamplePicture. jpg* doit exister sur le lecteur C.
+- Une image nommée *SamplePicture.jpg* doit exister sur le lecteur C.
 
 ## <a name="see-also"></a>Voir aussi
-- [Guide pratique pour Ouvrir des documents existants par programmation](../vsto/how-to-programmatically-open-existing-documents.md)
-- [Guide pratique pour Insérer du texte dans des documents Word par programmation](../vsto/how-to-programmatically-insert-text-into-word-documents.md)
-- [Guide pratique pour Restaurer par programmation les sélections après les recherches](../vsto/how-to-programmatically-restore-selections-after-searches.md)
-- [Guide pratique pour Enregistrer des documents par programmation](../vsto/how-to-programmatically-save-documents.md)
+- [Comment : ouvrir des documents existants par programmation](../vsto/how-to-programmatically-open-existing-documents.md)
+- [Comment : insérer du texte dans des documents Word par programmation](../vsto/how-to-programmatically-insert-text-into-word-documents.md)
+- [Comment : restaurer des sélections après des recherches par programmation](../vsto/how-to-programmatically-restore-selections-after-searches.md)
+- [Comment : enregistrer des documents par programmation](../vsto/how-to-programmatically-save-documents.md)
 - [Paramètres facultatifs dans les solutions Office](../vsto/optional-parameters-in-office-solutions.md)

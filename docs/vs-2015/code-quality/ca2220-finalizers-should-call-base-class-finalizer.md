@@ -15,17 +15,17 @@ caps.latest.revision: 16
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 1a4538c66d351956da8168d4f84c1895190ab453
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 5d9139314d52c4c50de84a45f227e6df5715bf02
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72663586"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85540658"
 ---
-# <a name="ca2220-finalizers-should-call-base-class-finalizer"></a>CA2220 : Les finaliseurs doivent appeler le finaliseur de leur classe de base
+# <a name="ca2220-finalizers-should-call-base-class-finalizer"></a>CA2220 : Les finaliseurs doivent appeler le finaliseur de leur classe de base
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Élément|Valeur|
 |-|-|
 |TypeName|FinalizersShouldCallBaseClassFinalizer|
 |CheckId|CA2220|
@@ -33,19 +33,19 @@ ms.locfileid: "72663586"
 |Modification avec rupture|Sans rupture|
 
 ## <a name="cause"></a>Cause
- Type qui substitue <xref:System.Object.Finalize%2A?displayProperty=fullName> n’appelle pas la méthode <xref:System.Object.Finalize%2A> dans sa classe de base.
+ Un type qui substitue <xref:System.Object.Finalize%2A?displayProperty=fullName> n’appelle pas la <xref:System.Object.Finalize%2A> méthode dans sa classe de base.
 
 ## <a name="rule-description"></a>Description de la règle
- La finalisation doit être propagée par le biais de la hiérarchie d'héritage. Pour ce faire, les types doivent appeler leur classe de base <xref:System.Object.Finalize%2A> méthode à partir de leur propre méthode <xref:System.Object.Finalize%2A>. Le C# compilateur ajoute automatiquement l’appel au finaliseur de la classe de base.
+ La finalisation doit être propagée par le biais de la hiérarchie d'héritage. Pour garantir cela, les types doivent appeler leur <xref:System.Object.Finalize%2A> méthode de classe de base à partir de leur propre <xref:System.Object.Finalize%2A> méthode. Le compilateur C# ajoute automatiquement l’appel au finaliseur de la classe de base.
 
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations
- Pour corriger une violation de cette règle, appelez la méthode <xref:System.Object.Finalize%2A> du type de base à partir de votre méthode <xref:System.Object.Finalize%2A>.
+ Pour corriger une violation de cette règle, appelez la méthode du type <xref:System.Object.Finalize%2A> de base à partir de votre <xref:System.Object.Finalize%2A> méthode.
 
 ## <a name="when-to-suppress-warnings"></a>Quand supprimer les avertissements
  Ne supprimez aucun avertissement de cette règle. Certains compilateurs qui ciblent le common language runtime insèrent un appel au finaliseur du type de base dans le langage MSIL (Microsoft Intermediate Language). Si un avertissement de cette règle est signalé, votre compilateur n’insère pas l’appel et vous devez l’ajouter à votre code.
 
 ## <a name="example"></a>Exemple
- L’exemple de Visual Basic suivant montre un type `TypeB` qui appelle correctement la méthode <xref:System.Object.Finalize%2A> dans sa classe de base.
+ L’exemple de Visual Basic suivant illustre un type `TypeB` qui appelle correctement la <xref:System.Object.Finalize%2A> méthode dans sa classe de base.
 
  [!code-vb[FxCop.Usage.IDisposableBaseCalled#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Usage.IDisposableBaseCalled/vb/FxCop.Usage.IDisposableBaseCalled.vb#1)]
 

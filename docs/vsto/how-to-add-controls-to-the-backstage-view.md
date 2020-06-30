@@ -1,7 +1,7 @@
 ---
 title: 'Comment : ajouter des contrôles au mode Backstage '
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -20,17 +20,17 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 87cea877928baf52b0442ed9b0d952fcf649f155
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: 5b4ea5cdcd869f16f987e9431359511831af9573
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72986007"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85538344"
 ---
 # <a name="how-to-add-controls-to-the-backstage-view"></a>Comment : ajouter des contrôles au mode Backstage
   Vous pouvez utiliser le concepteur de ruban pour ajouter des contrôles au menu qui s’ouvre lorsque vous cliquez sur l’onglet **fichier** . Quand vous exécutez l’application, les contrôles que vous ajoutez à l’onglet **fichier** apparaissent un groupe nommé **Add-ins**.
 
- Vous ne pouvez pas positionner les contrôles avant ou après les contrôles prédéfinis à l’aide du concepteur de ruban dans Visual Studio. Un contrôle intégré est un contrôle qui est déjà affiché en mode Backstage. Si vous souhaitez positionner les contrôles avant ou après les contrôles prédéfinis, vous devez utiliser un ruban XML. Pour plus d’informations sur le **Ruban (XML)** , consultez [Ruban XML](../vsto/ribbon-xml.md). Pour plus d’informations sur la personnalisation du mode Backstage, consultez [Introduction au mode Backstage office 2010 pour les développeurs](/previous-versions/office/developer/office-2010/ee691833(v=office.14)) et [Personnalisation du mode backstage d’Office 2010 pour les développeurs](/previous-versions/office/developer/office-2010/ee815851(v=office.14)).
+ Vous ne pouvez pas positionner les contrôles avant ou après les contrôles prédéfinis à l’aide du concepteur de ruban dans Visual Studio. Un contrôle intégré est un contrôle qui est déjà affiché en mode Backstage. Si vous souhaitez positionner les contrôles avant ou après les contrôles prédéfinis, vous devez utiliser un ruban XML. Pour plus d’informations sur le **Ruban (XML)**, consultez [Ruban XML](../vsto/ribbon-xml.md). Pour plus d’informations sur la personnalisation du mode Backstage, consultez [Introduction au mode Backstage office 2010 pour les développeurs](/previous-versions/office/developer/office-2010/ee691833(v=office.14)) et [Personnalisation du mode backstage d’Office 2010 pour les développeurs](/previous-versions/office/developer/office-2010/ee815851(v=office.14)).
 
  [!INCLUDE[appliesto_ribbon](../vsto/includes/appliesto-ribbon-md.md)]
 
@@ -46,7 +46,7 @@ ms.locfileid: "72986007"
 
 3. À partir de l’onglet **contrôles de ruban Office** de la **boîte à outils**, faites glisser l’un des contrôles suivants sur le concepteur de menus :
 
-    - Button
+    - Bouton
 
     - Case à cocher
 
@@ -65,6 +65,6 @@ ms.locfileid: "72986007"
 ## <a name="see-also"></a>Voir aussi
 - [Vue d’ensemble du ruban](../vsto/ribbon-overview.md)
 - [Concepteur de ruban](../vsto/ribbon-designer.md)
-- [Élément XML Ribbon](../vsto/ribbon-xml.md)
+- [Ribbon XML](../vsto/ribbon-xml.md)
 - [Comment : commencer à personnaliser le ruban](../vsto/how-to-get-started-customizing-the-ribbon.md)
 - [Procédure pas à pas : création d’un onglet personnalisé à l’aide du concepteur de ruban](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)

@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 72729253d008ae5b7c38815e7c5db7636538c812
-ms.sourcegitcommit: da5ebc29544fdbdf625ab4922c9777faf2bcae4a
+ms.openlocfilehash: 97f5243b775f19d77bc8d5a5c1d29fddadd9f1c7
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "82586841"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85541776"
 ---
 # <a name="create-sharepoint-solutions"></a>Créer des solutions SharePoint
   Vous pouvez créer des applications SharePoint dans Visual Studio au lieu de les créer dans SharePoint Designer. Visual Studio privilégie un développement SharePoint rapide en fournissant des fonctionnalités telles que des outils de débogage avancés, IntelliSense, la saisie semi-automatique des instructions et des modèles de projet. Visual Studio tire également parti de langages et outils .NET Framework avancés. Vous pouvez développer des projets SharePoint à l'aide de Visual Basic ou de Visual C#, et vous pouvez développer des applications pour les projets SharePoint à l'aide de JavaScript.
@@ -27,11 +27,11 @@ ms.locfileid: "82586841"
 > [!NOTE]
 > Découvrez comment utiliser le nouveau [modèle de complément SharePoint](/sharepoint/dev/sp-add-ins/sharepoint-add-ins) pour étendre l’expérience SharePoint de vos utilisateurs. Ces compléments ont une empreinte très faible par rapport aux solutions SharePoint, et vous pouvez les créer en utilisant presque toutes les technologies de programmation web, comme HTML5, JavaScript, CSS3 et XML.
 
-|||
+|Zone de contenu|Articles|
 |-|-|
 |![Documentation](../sharepoint/media/vs-icon-documentation.gif "Documentation")|**Documentation**<br /><br /> -   [Prise en main &#40;le développement SharePoint dans Visual Studio&#41;](../sharepoint/getting-started-sharepoint-development-in-visual-studio.md)<br />-   [Développer des solutions SharePoint](../sharepoint/developing-sharepoint-solutions.md)<br />-   [Localiser des solutions SharePoint](../sharepoint/localizing-sharepoint-solutions.md)<br />-   [Générer et déboguer des solutions SharePoint](../sharepoint/building-and-debugging-sharepoint-solutions.md)<br />-   [Empaqueter et déployer des solutions SharePoint](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)<br />-   [Étendre les outils SharePoint dans Visual Studio](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md)|
 |![Documentation](../sharepoint/media/vs-icon-documentation.gif "Documentation")|**Tâches proposées**<br /><br /> -   [Procédure pas à pas : création d’une colonne de site, d’un type de contenu et d’une liste pour SharePoint](../sharepoint/walkthrough-create-a-site-column-content-type-and-list-for-sharepoint.md)<br />-   [Comment : créer un récepteur d’événements](../sharepoint/how-to-create-an-event-receiver.md)<br />-   [Comment : créer un modèle BDC](../sharepoint/how-to-create-a-bdc-model.md)<br />-   [Comment : créer un composant WebPart SharePoint](../sharepoint/how-to-create-a-sharepoint-web-part.md)<br />-   [Comment : créer un contrôle utilisateur pour une page d’application SharePoint ou un composant WebPart](../sharepoint/how-to-create-a-user-control-for-a-sharepoint-application-page-or-web-part.md)|
-|![Procédures pas à pas](../sharepoint/media/vs-icon-walkthroughs.gif "Procédures pas à pas")|**Procédures pas à pas**<br /><br /> -   [Procédures pas à pas pour le développement SharePoint](../sharepoint/sharepoint-development-walkthroughs.md)|
+|![Procédures pas à pas](../sharepoint/media/vs-icon-walkthroughs.gif "Procédures pas à pas")|**Procédures pas à pas**<br /><br /> -   [Procédures pas à pas pour le développement SharePoint](../sharepoint/sharepoint-development-walkthroughs.md)|
 |![Exemples de code](../sharepoint/media/vs-icon-codesamples.gif "Exemples de code")|**Exemples de code**<br /><br /> -   [Exemples de développement SharePoint](../sharepoint/sharepoint-development-samples.md)<br />-   [Téléchargements pour les développeurs SharePoint](/sharepoint/dev/)|
 |![Entrainement](../sharepoint/media/vs-icon-training.gif "Entrainement")|**Entrainement**<br /><br /> -   [Apprendre le développement SharePoint](/sharepoint/dev/)|
 |![Forums](../sharepoint/media/vs-icon-forums.gif "Forums")|**Forums**<br /><br /> -   [Développement SharePoint avec Visual Studio](https://social.msdn.microsoft.com/Forums/vstudio/home?forum=vssharepointdevelopment)<br />-   [SharePoint 2010](https://social.msdn.microsoft.com/Forums/sharepoint/home?category=sharepoint2010,sharepoint)|

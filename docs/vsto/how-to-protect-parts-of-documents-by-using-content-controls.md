@@ -1,7 +1,7 @@
 ---
-title: 'Procédure : Protéger des parties de documents à l’aide de contrôles de contenu'
+title: 'Comment : protéger des parties de documents à l’aide de contrôles de contenu'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -18,14 +18,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 129962209d8cfa541a34bc1575a73382cd63d7c4
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: b03521023ea0b4d92bd3125f256d2230de9bba03
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71254663"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85541347"
 ---
-# <a name="how-to-protect-parts-of-documents-by-using-content-controls"></a>Procédure : Protéger des parties de documents à l’aide de contrôles de contenu
+# <a name="how-to-protect-parts-of-documents-by-using-content-controls"></a>Comment : protéger des parties de documents à l’aide de contrôles de contenu
   Quand vous protégez une partie d'un document, vous empêchez les utilisateurs de modifier ou de supprimer le contenu dans cette partie du document. Il existe plusieurs manières de protéger des parties d'un document Microsoft Office Word à l'aide de contrôles de contenu :
 
 - Vous pouvez protéger un contrôle de contenu.
@@ -34,10 +34,10 @@ ms.locfileid: "71254663"
 
   [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]
 
-## <a name="EditDeleteControl"></a>Protéger un contrôle de contenu
+## <a name="protect-a-content-control"></a><a name="EditDeleteControl"></a>Protéger un contrôle de contenu
  Vous pouvez empêcher les utilisateurs de modifier ou supprimer un contrôle de contenu en définissant les propriétés du contrôle dans un projet au niveau du document, au moment du design ou au moment de l'exécution.
 
- Vous pouvez également protéger les contrôles de contenu que vous ajoutez à un document au moment de l'exécution à l'aide d'un projet de complément VSTO. Pour plus d'informations, voir [Procédure : Ajoutez des contrôles de contenu à](../vsto/how-to-add-content-controls-to-word-documents.md)des documents Word.
+ Vous pouvez également protéger les contrôles de contenu que vous ajoutez à un document au moment de l'exécution à l'aide d'un projet de complément VSTO. Pour plus d’informations, consultez [Comment : ajouter des contrôles de contenu à des documents Word](../vsto/how-to-add-content-controls-to-word-documents.md).
 
 ### <a name="to-protect-a-content-control-at-design-time"></a>Pour protéger un contrôle de contenu au moment du design
 
@@ -53,7 +53,7 @@ ms.locfileid: "71254663"
 
 ### <a name="to-protect-a-content-control-at-run-time"></a>Pour protéger un contrôle de contenu au moment de l'exécution
 
-1. Affectez `LockContents` la valeur **true** à la propriété du contrôle de contenu pour empêcher les utilisateurs de modifier le contrôle `LockContentControl` , puis affectez la valeur **true** à la propriété pour empêcher les utilisateurs de supprimer le contrôle.
+1. Affectez la valeur `LockContents` **true** à la propriété du contrôle de contenu pour empêcher les utilisateurs de modifier le contrôle, puis affectez la valeur `LockContentControl` **true** à la propriété pour empêcher les utilisateurs de supprimer le contrôle.
 
      L'exemple de code suivant illustre l'utilisation des propriétés <xref:Microsoft.Office.Tools.Word.RichTextContentControl.LockContents%2A> et <xref:Microsoft.Office.Tools.Word.RichTextContentControl.LockContentControl%2A> de deux objets <xref:Microsoft.Office.Tools.Word.RichTextContentControl> distincts dans un projet au niveau du document. Pour exécuter ce code, ajoutez-le à la classe `ThisDocument` dans votre projet, puis appelez la méthode `AddProtectedContentControls` à partir du gestionnaire d'événements `ThisDocument_Startup` .
 
@@ -82,7 +82,7 @@ ms.locfileid: "71254663"
 2. Dans le ruban, cliquez sur l'onglet **Développeur** .
 
     > [!NOTE]
-    > Si l'onglet **Développeur** n'est pas visible, vous devez tout d'abord l'afficher. Pour plus d'informations, voir [Procédure : Affichez l’onglet Développeur sur le](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md)ruban.
+    > Si l'onglet **Développeur** n'est pas visible, vous devez tout d'abord l'afficher. Pour plus d’informations, consultez [Comment : afficher l’onglet Développeur sur le ruban](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).
 
 3. Dans le groupe **contrôles** , cliquez sur le bouton déroulant de **Groupe** , puis sur **groupe**.
 
@@ -105,7 +105,7 @@ ms.locfileid: "71254663"
 ## <a name="see-also"></a>Voir aussi
 - [Automatiser Word à l’aide d’objets étendus](../vsto/automating-word-by-using-extended-objects.md)
 - [Contrôles de contenu](../vsto/content-controls.md)
-- [Guide pratique pour Ajouter des contrôles de contenu à des documents Word](../vsto/how-to-add-content-controls-to-word-documents.md)
+- [Comment : ajouter des contrôles de contenu à des documents Word](../vsto/how-to-add-content-controls-to-word-documents.md)
 - [Vue d’ensemble des éléments hôtes et des contrôles hôtes](../vsto/host-items-and-host-controls-overview.md)
 - [Limitations de programmation des éléments hôtes et des contrôles hôtes](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)
 - [Ajouter des contrôles aux documents Office au moment de l’exécution](../vsto/adding-controls-to-office-documents-at-run-time.md)
