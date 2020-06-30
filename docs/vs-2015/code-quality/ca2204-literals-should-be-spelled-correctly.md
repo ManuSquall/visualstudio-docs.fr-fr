@@ -15,17 +15,17 @@ caps.latest.revision: 21
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: d3e94f308936f898e555b1ad38e6a9d50051a276
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: ecf829251cbeab600cb95f8f0c0b0173cd7338d4
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72659539"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85546274"
 ---
-# <a name="ca2204-literals-should-be-spelled-correctly"></a>CA2204 : Les littéraux doivent être correctement orthographiés
+# <a name="ca2204-literals-should-be-spelled-correctly"></a>CA2204 : Les littéraux doivent être orthographiés correctement
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Élément|Valeur|
 |-|-|
 |TypeName|LiteralsShouldBeSpelledCorrectly|
 |CheckId|CA2204|
@@ -38,7 +38,7 @@ ms.locfileid: "72659539"
 ## <a name="rule-description"></a>Description de la règle
  Cette règle vérifie une chaîne littérale transmise en tant que valeur à un paramètre ou à une propriété lorsqu’un ou plusieurs des cas suivants sont vrais :
 
-- L’attribut <xref:System.ComponentModel.LocalizableAttribute> du paramètre ou de la propriété a la valeur true.
+- L' <xref:System.ComponentModel.LocalizableAttribute> attribut du paramètre ou de la propriété a la valeur true.
 
 - Le nom du paramètre ou de la propriété contient « Text », « message » ou « Caption ».
 
@@ -55,6 +55,6 @@ ms.locfileid: "72659539"
  Ne supprimez aucun avertissement de cette règle. Les mots correctement orthographiés réduisent la courbe d’apprentissage requise pour les nouvelles bibliothèques logicielles.
 
 ## <a name="related-rules"></a>Règles associées
- [CA1704 : Les identificateurs doivent être correctement orthographiés](../code-quality/ca1704-identifiers-should-be-spelled-correctly.md)
+ [CA1704 : L'orthographe des identificateurs doit être correcte](../code-quality/ca1704-identifiers-should-be-spelled-correctly.md)
 
- [CA1703 : Les chaînes de ressources doit être orthographiées correctement](../code-quality/ca1703-resource-strings-should-be-spelled-correctly.md)
+ [CA1703 : L'orthographe des chaînes de ressources doit être correcte](../code-quality/ca1703-resource-strings-should-be-spelled-correctly.md)

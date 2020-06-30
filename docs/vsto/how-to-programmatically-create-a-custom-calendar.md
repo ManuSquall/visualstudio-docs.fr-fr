@@ -1,7 +1,7 @@
 ---
-title: 'Procédure : Créer un calendrier personnalisé par programmation'
+title: 'Comment : créer un calendrier personnalisé par programmation'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -14,15 +14,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 653340d3a682664670998c874344bfc931105892
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: aab9e14c7fa4b4c70b2e61eca382af2ce787148c
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62575219"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85546053"
 ---
-# <a name="how-to-programmatically-create-a-custom-calendar"></a>Procédure : Créer un calendrier personnalisé par programmation
-  Cet exemple crée un nouveau dossier de calendrier nommé **PersonalCalendar**, puis crée un nouvel élément de rendez-vous et l’ajoute au dossier calendrier. Le code affiche ensuite le dossier calendrier.
+# <a name="how-to-programmatically-create-a-custom-calendar"></a>Comment : créer un calendrier personnalisé par programmation
+  Cet exemple crée un dossier de calendrier nommé **PersonalCalendar**, puis crée un nouvel élément de rendez-vous et l’ajoute au dossier calendrier. Le code affiche ensuite le dossier calendrier.
 
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]
 
@@ -31,5 +31,5 @@ ms.locfileid: "62575219"
 
 ## <a name="see-also"></a>Voir aussi
 - [Utiliser des éléments de calendrier](../vsto/working-with-calendar-items.md)
-- [Guide pratique pour Créer des rendez-vous par programmation](../vsto/how-to-programmatically-create-appointments.md)
-- [Guide pratique pour Créer par programmation une demande de réunion](../vsto/how-to-programmatically-create-a-meeting-request.md)
+- [Comment : créer des rendez-vous par programmation](../vsto/how-to-programmatically-create-appointments.md)
+- [Comment : créer une demande de réunion par programmation](../vsto/how-to-programmatically-create-a-meeting-request.md)

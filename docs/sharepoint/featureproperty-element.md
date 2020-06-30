@@ -1,5 +1,5 @@
 ---
-title: FeatureProperty, élément | Microsoft Docs
+title: Élément FeatureProperty | Microsoft Docs
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -12,17 +12,17 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 20d24192d8613a4f41d9cdfc04371fb9c9d02076
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 61eeea33c6941624ed18a00db482590590a44a8f
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62967303"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85546521"
 ---
 # <a name="featureproperty-element"></a>FeatureProperty (élément)
-  Représente une propriété personnalisée qui est incluse avec une fonctionnalité lorsqu’elle est déployée vers SharePoint. Après le déployée d’une fonctionnalité, vous pouvez accéder à la propriété dans votre code.
+  Représente une propriété personnalisée qui est incluse avec une fonctionnalité lorsqu’elle est déployée sur SharePoint. Une fois qu’une fonctionnalité a été déployée, vous pouvez accéder à la propriété dans votre code.
 
-## <a name="syntax"></a>Syntaxe
+## <a name="syntax"></a>Syntax
 
 ```xml
 <FeatureProperty Key = "Key of the property value"
@@ -36,8 +36,8 @@ ms.locfileid: "62967303"
 
 |Attribut|Description|
 |---------------|-----------------|
-|**Key**|Requis **xs : String** attribut.<br /><br /> La clé qui est utilisée pour stocker et récupérer la valeur de propriété. Chaque propriété doit avoir une clé qui est unique au sein de la fonctionnalité.|
-|**Valeur**|Requis **xs : String** attribut.<br /><br /> Valeur de la propriété.|
+|**Clé**|Attribut **XS : String** requis.<br /><br /> Clé utilisée pour stocker et récupérer la valeur de la propriété. Chaque propriété doit avoir une clé qui est unique dans la fonctionnalité.|
+|**Valeur**|Attribut **XS : String** requis.<br /><br /> Valeur de propriété.|
 
 ### <a name="child-elements"></a>Éléments enfants
  Aucun.
@@ -46,20 +46,20 @@ ms.locfileid: "62967303"
 
 |Élément|Description|
 |-------------|-----------------|
-|[FeatureProperties](../sharepoint/featureproperties-element.md)|Représente une collection de valeurs de propriété qui sont incluses avec une fonctionnalité lorsqu’elle est déployée vers SharePoint.|
+|[FeatureProperties](../sharepoint/featureproperties-element.md)|Représente une collection de valeurs de propriétés qui sont incluses avec une fonctionnalité lorsqu’elle est déployée sur SharePoint.|
 
-## <a name="remarks"></a>Notes
- Pour plus d’informations sur les propriétés de fonctionnalité, consultez [fournir des informations de déploiement du package et dans les éléments de projet](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md).
+## <a name="remarks"></a>Remarques
+ Pour plus d’informations sur les propriétés de fonctionnalité, consultez [fourniture d’informations de package et de déploiement dans les éléments de projet](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md).
 
 ## <a name="element-information"></a>Informations sur les éléments
 
-|||
+|Propriété|Valeur|
 |-|-|
-|**Espace de noms**|http:\/\/schemas.microsoft.com/VisualStudio/<br>2010/SharePointTools/SharePointProjectItemModel|
-|**Nom de schéma**|Schéma d’élément de projet SharePoint|
-|**Fichier de validation**|ProjectItemModelSchema.xsd|
+|**Espace de noms**|http : \/ \/ schemas.Microsoft.com/VisualStudio/<br>2010/SharePointTools/SharePointProjectItemModel|
+|**Nom du schéma**|Schéma d’élément de projet SharePoint|
+|**Fichier de validation**|ProjectItemModelSchema. xsd|
 |**Peut être vide**|Non|
 
 ## <a name="see-also"></a>Voir aussi
-- [Référence de schéma élément de projet SharePoint](../sharepoint/sharepoint-project-item-schema-reference.md)
+- [Référence du schéma d’élément de projet SharePoint](../sharepoint/sharepoint-project-item-schema-reference.md)
 - [Fournir des informations d’empaquetage et de déploiement dans les éléments de projet](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md)

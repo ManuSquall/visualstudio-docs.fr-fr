@@ -1,7 +1,7 @@
 ---
-title: 'Procédure : Afficher des erreurs d’interface utilisateur du complément'
+title: 'Comment : afficher les erreurs d’interface utilisateur du complément'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -15,21 +15,21 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 78cc4d2e85e2f7a5347fe0c8927c855160fbb511
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 49985589c021192454bf0dd58929c9ef5646aec9
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63441787"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85545780"
 ---
-# <a name="how-to-show-add-in-user-interface-errors"></a>Procédure : Afficher des erreurs d’interface utilisateur du complément
-  Par défaut, si un complément, VSTO tente de manipuler l’interface utilisateur de Microsoft Office (IU) et échoue, aucun message d’erreur ne s’affiche. Toutefois, vous pouvez configurer les applications Microsoft Office pour afficher des messages en cas d’erreur liée à l’interface utilisateur. Vous pouvez utiliser ces messages pour aider à déterminer pourquoi un ruban personnalisé n’apparaît pas, ou pourquoi un ruban apparaît mais pas les contrôles.
+# <a name="how-to-show-add-in-user-interface-errors"></a>Comment : afficher les erreurs d’interface utilisateur du complément
+  Par défaut, si un complément VSTO tente de manipuler la Microsoft Office interface utilisateur et échoue, aucun message d’erreur n’est affiché. Toutefois, vous pouvez configurer les applications Microsoft Office pour afficher des messages en cas d’erreur liée à l’interface utilisateur. Vous pouvez utiliser ces messages pour vous aider à déterminer pourquoi un ruban personnalisé n’apparaît pas, ou pourquoi un ruban apparaît mais aucun contrôle n’apparaît.
 
  [!INCLUDE[appliesto_ribbon](../vsto/includes/appliesto-ribbon-md.md)]
 
 ## <a name="to-show-vsto-add-in-user-interface-errors"></a>Pour afficher les erreurs d’interface utilisateur du complément VSTO
 
-1. Démarrez l’application.
+1. Lancez l’application.
 
 2. Cliquez sur l'onglet **Fichier** .
 

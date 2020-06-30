@@ -15,12 +15,12 @@ caps.latest.revision: 59
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 9bfd13bda3e3d7ba416772123ac59ff0136a3725
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.openlocfilehash: 2fb9fa4d9c4faaf01ec64e9eb722af8589de5588
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72665819"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85548094"
 ---
 # <a name="default-keyboard-shortcuts-in-visual-studio"></a>Raccourcis clavier par défaut dans Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,66 +29,116 @@ Pour accéder plus facilement à diverses commandes et fenêtres dans Visual Stu
 
  Pour obtenir la liste des raccourcis clavier courants et d’autres informations sur la productivité, consultez [Conseils et astuces](../ide/tips-and-tricks-for-visual-studio.md) et [Conseils de productivité](../ide/productivity-tips-for-visual-studio.md).
 
- Les sections du tableau suivant incluent des commandes globales, au sens où vous pouvez y accéder en tout point de Visual Studio à l'aide des raccourcis clavier indiqués :
+ Les sections de la liste suivante incluent des commandes globales dans la mesure où vous pouvez y accéder depuis n’importe où dans Visual Studio à l’aide de raccourcis clavier :
 
-|||||
-|-|-|-|-|
-|[Analyser](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_analyze)|[Edition](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_edit)|[Projet](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_project)|[Test](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_test)|
-|[Architecture](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_architecture)|[Menus contextuels de l’éditeur](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_editorContext)|[Menus contextuels Projet et Solution](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_projectContext)|[Explorateur de tests](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_testexplorerGLOBAL)|
-|[Générer](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_build)|[Fichier](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_file)|[Refactoriser](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_refactor)|[Outils](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_tools)|
-|[Menus contextuels de l’affichage de classes](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_classview)|[Aide](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_help)|[Explorateur de solutions](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_solutionexplorerGLOBAL)|[Affichage](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_view)|
-|[Déboguer](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_debug)|[Test de charge](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_loadtest)|[Équipe](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_team)|[Fenêtre](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_window)|
-|[Menus contextuels du débogueur](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_debugger)|[Autres menus contextuels](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_otherContext)|[Menus contextuels Team Foundation](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_TFcontext)|[Azure](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_windowsazure)|
-|[Hub de diagnostic](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_diagnostics)||||
+- [Analyser](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_analyze)
+- [Modifier](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_edit)
+- [Projet](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_project)
+- [Test](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_test)|
+- [Architecture](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_architecture)
+- [Menus contextuels de l’éditeur](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_editorContext)
+- [Menus contextuels projet et solution](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_projectContext)
+- [Explorateur de tests](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_testexplorerGLOBAL)
+- [Générer](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_build)
+- [File](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_file)
+- [Refactorisation](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_refactor)
+- [outils](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_tools)
+- [Affichage de classes les menus contextuels](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_classview)
+- [Aide](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_help)
+- [Explorateur de solutions](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_solutionexplorerGLOBAL)
+- [Afficher](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_view)
+- [Déboguer](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_debug)
+- [Test de charge](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_loadtest)
+- [Équipe](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_team)
+- [Window](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_window)
+- [Menus contextuels du débogueur](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_debugger)
+- [Autres menus contextuels](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_otherContext)
+- [Menus contextuels Team Foundation](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_TFcontext)
+- [Microsoft Azure](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_windowsazure)
+- [Hub de diagnostic](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_diagnostics)
 
- Chaque section du tableau suivant inclut les commandes dont les raccourcis clavier sont spécifiques au contexte correspondant au nom de la section.
+ Chaque section de la liste suivante comprend des commandes pour lesquelles les raccourcis clavier sont spécifiques au contexte pour lequel la section est nommée.
 
-|||||
-|-|-|-|-|
-|[ADO.NET Entity Data Model Designer](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_ADONET)|[Diagramme de couche](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_layerDiagram)|[Concepteur de paramètres](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_SettingsDesigner)|[Éditeur d’images VC](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_vcimageeditor)|
-|[Diagramme de classes](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_classDiagram)|[Éditeur de ressources managées](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_managedResources)|[Explorateur de solutions](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_SolutionExplorer)|[Éditeur de chaînes VC](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_vcstringeditor)|
-|[Éditeur de test codé de l’interface utilisateur](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_codedUItest)|[Fenêtre de l’éditeur de fusion](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_MergeEditor)|[Team Explorer](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_TeamExplorer)|[Concepteur de vues](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_viewDesigner)|
-|[Éditeur DataSet](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_dataset)|[Microsoft SQL Server Data Tools, Comparaison de schémas](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_SchemaCompare)|[Éditeur des détails Team Foundation Build](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_TFBuild)|[Visual Studio](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_visualstudio)|
-|[Visionneuse de différences](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_diff)|[Microsoft SQL Server Data Tools, Concepteur de tables](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_TableDesigner)|[Explorateur de tests](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_TestExplorer)|[Concepteur Windows Forms](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_wfdesigner)|
-|[Explorateur DOM](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_DOM)|[Microsoft SQL Server Data Tools, Éditeur T-SQL](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_TSQLeditor)|[Éditeur de texte](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_TextEditor)|[Éditeur d’élément de travail](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_workItemEditor)|
-|[F# Interactive](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_FSharp)|[Microsoft SQL Server Data Tools, Éditeur T-SQL PDW](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_linkfix)|[Diagramme d’activités UML](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_UMLactivityDiagram)|[Affichage des requêtes d’élément de travail](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_WIqueryview)|
-|[Éditeur de document de graphique](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_graphDoc)|[Inspecteur de page](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_PageInspector)|[Diagramme de classes UML](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_UMLclassDiagram)|[Affichage des résultats des éléments de travail](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_WIresultsview)|
-|[Graphics Diagnostics](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_graphicsDebugger)|[Concepteur de requêtes](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_QueryDesigner)|[Diagramme de composant UML](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_UMLcomponentDiagram)|[Concepteur de flux de travail](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_workflowdesigner)|
-|[Éditeur HTML](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_HTMLeditor)|[Résultats de requête](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_QueryResults)|[Diagramme de cas d’usage UML](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_UMLusecaseDiagram)|[Concepteur XAML](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_xamluidesigner)|
-|[Éditeur HTML, mode Création](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_HTMLeditorDesign)|[Concepteur de rapports](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_ReportDesigner)|[Éditeur d’accélérateurs VC](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_vcaccelerator)|[Éditeur XML (Texte)](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_xmlTextEditor)|
-|[Éditeur HTML en mode Source](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_HTMLeditorSource)|[Diagramme de séquence](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_SequenceDiagram)|[Éditeur de boîtes de dialogue VC](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_vcdialogeditor)|[Concepteur de schémas XML](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_xmlSchemaDesigner)|
+- [ADO.NET Entity Data Model Designer](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_ADONET)
+- [Diagramme de couche](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_layerDiagram)
+- [Concepteur de paramètres](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_SettingsDesigner)
+- [Éditeur d'images VC](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_vcimageeditor)
+- [Diagramme de classes](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_classDiagram)
+- [Éditeur de ressources managées](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_managedResources)
+- [Explorateur de solutions](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_SolutionExplorer)
+- [Éditeur de chaînes VC](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_vcstringeditor)
+- [Éditeur de test codé de l’interface utilisateur](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_codedUItest)
+- [Fenêtre de l’éditeur de fusion](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_MergeEditor)
+- [Team Explorer](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_TeamExplorer)
+- [Concepteur de vue](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_viewDesigner)
+- [Éditeur DataSet](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_dataset)
+- [Microsoft SQL Server Data Tools, Comparaison de schémas](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_SchemaCompare)
+- [Éditeur des détails Team Foundation Build](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_TFBuild)
+- [Visual Studio](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_visualstudio)
+- [Visionneuse de différences](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_diff)
+- [Microsoft SQL Server Data Tools, Concepteur de tables](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_TableDesigner)
+- [Explorateur de tests](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_TestExplorer)
+- [Concepteur Windows Forms](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_wfdesigner)
+- [Explorateur DOM](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_DOM)
+- [Outils de données Microsoft SQL Server, éditeur T-SQL](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_TSQLeditor)
+- [Éditeur de texte](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_TextEditor)
+- [Éditeur d’éléments de travail](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_workItemEditor)
+- [F# Interactive](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_FSharp)
+- [Outils de données Microsoft SQL Server, éditeur T-SQL PDW](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_linkfix)
+- [Diagramme d’activités UML](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_UMLactivityDiagram)
+- [Affichage des requêtes d’élément de travail](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_WIqueryview)
+- [Éditeur de document de graphique](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_graphDoc)
+- [Inspecteur de page](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_PageInspector)
+- [Diagramme de classes UML](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_UMLclassDiagram)
+- [Affichage des résultats des éléments de travail](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_WIresultsview)
+- [Graphics Diagnostics](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_graphicsDebugger)
+- [Concepteur de requêtes](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_QueryDesigner)
+- [Diagramme de composant UML](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_UMLcomponentDiagram)
+- [Concepteur de flux de travail](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_workflowdesigner)
+- [Éditeur HTML](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_HTMLeditor)
+- [Résultats de la requête](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_QueryResults)
+- [Diagramme de cas d’usage UML](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_UMLusecaseDiagram)
+- [Concepteur d’interface utilisateur XAML](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_xamluidesigner)
+- [Éditeur HTML en mode Design](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_HTMLeditorDesign)
+- [Concepteur de rapports](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_ReportDesigner)
+- [Éditeur d’accélérateurs VC](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_vcaccelerator)
+- [Éditeur XML (texte)](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_xmlTextEditor)
+- [Éditeur HTML en mode Source](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_HTMLeditorSource)
+- [Diagramme de séquence](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_SequenceDiagram)
+- [Éditeur de boîtes de dialogue VC](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_vcdialogeditor)
+- [Concepteur de schémas XML](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_xmlSchemaDesigner)
 
-## <a name="bkmk_global"></a> Global
+## <a name="global"></a><a name="bkmk_global"></a>Généralités
 
-### <a name="bkmk_analyze"></a> Analyser
+### <a name="analyze"></a><a name="bkmk_analyze"></a>Analyse
 
 |Commandes|Raccourcis clavier|
 |--------------|------------------------|
 |Analyze.NavigateBackward|Maj+Alt+3|
 |Analyze.NavigateForward|Maj+Alt+4|
 
-### <a name="bkmk_architecture"></a> Architecture
+### <a name="architecture"></a><a name="bkmk_architecture"></a>SOA
 
 |Commandes|Raccourcis clavier|
 |--------------|------------------------|
 |Architecture.NewDiagram|Ctrl+\\, Ctrl+N|
 
-### <a name="bkmk_build"></a> Générer
+### <a name="build"></a><a name="bkmk_build"></a>Build
 
 |Commandes|Raccourcis clavier|
 |--------------|------------------------|
 |Build.BuildSolution|Ctrl+Maj+B|
-|Build.Cancel|Ctrl+Break|
+|Build.Cancel|Ctrl+Pause|
 |Build.Compile|Ctrl+F7|
 |Build.RunCodeAnalysisonSolution|Alt+F11|
 
-### <a name="bkmk_classview"></a> Menus contextuels de l’affichage de classes
+### <a name="class-view-context-menus"></a><a name="bkmk_classview"></a>Affichage de classes les menus contextuels
 
 |Commandes|Raccourcis clavier|
 |--------------|------------------------|
-|ClassViewContextMenus.ClassViewMultiselectProjectreferencesItems.Properties|Alt+Entrée|
+|ClassViewContextMenus.ClassViewMultiselectProjectreferencesItems.Properties|Alt + Entrée|
 
-### <a name="bkmk_debug"></a> Déboguer
+### <a name="debug"></a><a name="bkmk_debug"></a>Debug
 
 |Commandes|Raccourcis clavier|
 |--------------|------------------------|
@@ -156,7 +206,7 @@ Pour accéder plus facilement à diverses commandes et fenêtres dans Visual Stu
 |Debug.Watch3|Ctrl+Alt+W, 3|
 |Debug.Watch4|Ctrl+Alt+W, 4|
 
-### <a name="bkmk_debugger"></a> Menus contextuels du débogueur
+### <a name="debugger-context-menus"></a><a name="bkmk_debugger"></a>Menus contextuels du débogueur
 
 |Commandes|Raccourcis clavier|
 |--------------|------------------------|
@@ -164,20 +214,20 @@ Pour accéder plus facilement à diverses commandes et fenêtres dans Visual Stu
 |DebuggerContextMenus.BreakpointsWindow.GoToDisassembly|Alt+F9, A|
 |DebuggerContextMenus.BreakpointsWindow.GoToSourceCode|Alt+F9, S|
 
-### <a name="bkmk_diagnostics"></a> Hub de diagnostic
+### <a name="diagnostics-hub"></a><a name="bkmk_diagnostics"></a>Hub de diagnostic
 
 |Commande|Raccourci clavier|
 |-------------|-----------------------|
 |DiagnosticsHub.StopCollection|Ctrl+Alt+F2|
 
-### <a name="bkmk_edit"></a> Edition
+### <a name="edit"></a><a name="bkmk_edit"></a> Modifier
 
 |Commandes||
 |--------------|-|
 |Edit.Copy|Ctrl+C<br /><br /> ou<br /><br /> Ctrl+Insert|
 |Edit.Cut|Ctrl+X<br /><br /> ou<br /><br /> Maj+Suppr|
 |Edit.CycleClipboardRing|Ctrl+Maj+V<br /><br /> ou<br /><br /> Ctrl+Maj+Insert|
-|Edit.Delete|Supprimer|
+|Edit.Delete|DELETE|
 |Edit.Find|Ctrl+F|
 |Edit.FindAllReferences|Maj+F12|
 |Edit.FindinFiles|Ctrl+Maj+F|
@@ -194,7 +244,7 @@ Pour accéder plus facilement à diverses commandes et fenêtres dans Visual Stu
 |Edit.GoToPrevLocation|Maj+F8|
 |Edit.InsertSnippet|Ctrl+K, Ctrl+X|
 |Edit.MoveControlDown|Ctrl+Bas|
-|Edit.MoveControlDownGrid|Flèche bas|
+|Edit.MoveControlDownGrid|Flèche Bas|
 |Edit.MoveControlLeft|Ctrl+Gauche|
 |Edit.MoveControlLeftGrid|Gauche|
 |Edit.MoveControlRight|Ctrl+Droite|
@@ -204,7 +254,7 @@ Pour accéder plus facilement à diverses commandes et fenêtres dans Visual Stu
 |Edit.NavigateTo|Ctrl+,|
 |Edit.NextBookmark|Ctrl+K, Ctrl+N|
 |Edit.NextBookmarkInFolder|Ctrl+Maj+K, Ctrl+Maj+N|
-|Edit.OpenFile|CTRL+MAJ+G|
+|Edit.OpenFile|Ctrl + Maj + G|
 |Edit.Paste|Ctrl+V<br /><br /> ou<br /><br /> Maj+Insert|
 |Edit.PreviousBookmark|Ctrl+K, Ctrl+P|
 |Edit.PreviousBookmarkInFolder|Ctrl+Maj+K, Ctrl+Maj+P|
@@ -216,7 +266,7 @@ Pour accéder plus facilement à diverses commandes et fenêtres dans Visual Stu
 |Edit.SelectAll|Ctrl+A|
 |Edit.SelectNextControl|Onglet|
 |Edit.SelectPreviousControl|Maj+Tab|
-|Edit.ShowTileGrid|Entrée|
+|Edit.ShowTileGrid|Entrez|
 |Edit.SizeControlDown|Ctrl+Maj+Bas|
 |Edit.SizeControlDownGrid|Maj+Bas|
 |Edit.SizeControlLeft|Ctrl+Maj+Gauche|
@@ -229,7 +279,7 @@ Pour accéder plus facilement à diverses commandes et fenêtres dans Visual Stu
 |Edit.SurroundWith|Ctrl+K, Ctrl+S|
 |Edit.Undo|Ctrl+Z<br /><br /> ou<br /><br /> Alt+Retour arrière|
 
-### <a name="bkmk_editorContext"></a> Menus contextuels de l’éditeur
+### <a name="editor-context-menus"></a><a name="bkmk_editorContext"></a>Menus contextuels de l’éditeur
 
 |Commandes|Raccourcis clavier|
 |--------------|------------------------|
@@ -240,7 +290,7 @@ Pour accéder plus facilement à diverses commandes et fenêtres dans Visual Stu
 |EditorContextMenus.CodeWindow.ToggleHeaderCodeFile|Ctrl+K, Ctrl+O|
 |EditorContextMenus.CodeWindow.ViewCallHierarchy|Ctrl+K, Ctrl+T<br /><br /> ou<br /><br /> Ctrl+K, T|
 
-### <a name="bkmk_file"></a> Fichier
+### <a name="file"></a><a name="bkmk_file"></a>Txt
 
 |Commandes|Raccourcis clavier|
 |--------------|------------------------|
@@ -256,7 +306,7 @@ Pour accéder plus facilement à diverses commandes et fenêtres dans Visual Stu
 |File.SaveSelectedItems|Ctrl+S|
 |File.ViewinBrowser|Ctrl+Maj+W|
 
-### <a name="bkmk_help"></a> Aide
+### <a name="help"></a><a name="bkmk_help"></a>Aide
 
 |Commandes|Raccourcis clavier|
 |--------------|------------------------|
@@ -265,19 +315,19 @@ Pour accéder plus facilement à diverses commandes et fenêtres dans Visual Stu
 |Help.ViewHelp|Ctrl+F1|
 |Help.WindowHelp|Maj+F1|
 
-### <a name="bkmk_loadtest"></a> Test de charge
+### <a name="load-test"></a><a name="bkmk_loadtest"></a>Test de charge
 
 |Commande|Raccourci clavier|
 |-------------|-----------------------|
 |LoadTest.JumpToCounterPane|Ctrl+R, Q|
 
-### <a name="bkmk_otherContext"></a> Autres menus contextuels
+### <a name="other-context-menus"></a><a name="bkmk_otherContext"></a>Autres menus contextuels
 
 |Commande|Raccourci clavier|
 |-------------|-----------------------|
-|OtherContextMenus.MicrosoftDataEntityDesignContext.AddNewDiagram|Insert|
+|OtherContextMenus.MicrosoftDataEntityDesignContext.AddNewDiagram|Insérer|
 
-### <a name="bkmk_project"></a> Projet
+### <a name="project"></a><a name="bkmk_project"></a> Projet
 
 |Commandes|Raccourcis clavier|
 |--------------|------------------------|
@@ -289,14 +339,14 @@ Pour accéder plus facilement à diverses commandes et fenêtres dans Visual Stu
 |Project.Publishselectedfiles|Alt+;, Alt+P|
 |Project.Replaceselectedfilesfromserver|Alt+;, Alt+R|
 
-### <a name="bkmk_projectContext"></a> Menus contextuels Projet et Solution
+### <a name="project-and-solution-context-menus"></a><a name="bkmk_projectContext"></a>Menus contextuels projet et solution
 
 |Commandes|Raccourcis clavier|
 |--------------|------------------------|
 |ProjectandSolutionContextMenus.Item.MoveDown|Alt+Bas|
 |ProjectandSolutionContextMenus.Item.MoveUp|Alt+Haut|
 
-### <a name="bkmk_refactor"></a> Refactoriser
+### <a name="refactor"></a><a name="bkmk_refactor"></a>Refactoriser
 
 |Commandes|Raccourcis clavier|
 |--------------|------------------------|
@@ -307,7 +357,7 @@ Pour accéder plus facilement à diverses commandes et fenêtres dans Visual Stu
 |Refactor.Rename|Ctrl+R, Ctrl+R|
 |Refactor.ReorderParameters|Ctrl+R, Ctrl+O|
 
-### <a name="bkmk_solutionexplorerGLOBAL"></a> Explorateur de solutions
+### <a name="solution-explorer"></a><a name="bkmk_solutionexplorerGLOBAL"></a>Explorateur de solutions
 
 |Commandes|Raccourcis clavier|
 |--------------|------------------------|
@@ -315,7 +365,7 @@ Pour accéder plus facilement à diverses commandes et fenêtres dans Visual Stu
 |SolutionExplorer.PendingChangesFilter|Ctrl+[, P<br /><br /> ou<br /><br /> Ctrl+[, Ctrl+P|
 |SolutionExplorer.SyncWithActiveDocument|Ctrl+[, S<br /><br /> ou<br /><br /> Ctrl+[, Ctrl+S|
 
-### <a name="bkmk_team"></a> Équipe
+### <a name="team"></a><a name="bkmk_team"></a>Travail
 
 |Commandes|Raccourcis clavier|
 |--------------|------------------------|
@@ -324,7 +374,7 @@ Pour accéder plus facilement à diverses commandes et fenêtres dans Visual Stu
 |Team.Git.GoToGitCommits|Ctrl+0, Ctrl+O<br /><br /> ou<br /><br /> Ctrl+0, O|
 |Team.TeamExplorerSearch|Ctrl+'|
 
-### <a name="bkmk_TFcontext"></a> Menus contextuels Team Foundation
+### <a name="team-foundation-context-menus"></a><a name="bkmk_TFcontext"></a>Menus contextuels Team Foundation
 
 |Commandes|Raccourcis clavier|
 |--------------|------------------------|
@@ -339,14 +389,14 @@ Pour accéder plus facilement à diverses commandes et fenêtres dans Visual Stu
 |TeamFoundationContextMenus.Commands.GoToWebAccess|Ctrl+0, Ctrl+A<br /><br /> ou<br /><br /> Ctrl+0, A|
 |TeamFoundationContextMenus.Commands.GoToWorkItems|Ctrl+0, Ctrl+W<br /><br /> ou<br /><br /> Ctrl+0, W|
 
-### <a name="bkmk_test"></a> Tester
+### <a name="test"></a><a name="bkmk_test"></a>Test
 
 |Commandes|Raccourcis clavier|
 |--------------|------------------------|
 |Test.UseCodedUITestBuilder|Ctrl+\\, Ctrl+C|
 |Test.UseExistingActionRecording|Ctrl+\\, Ctrl+A|
 
-### <a name="bkmk_testexplorerGLOBAL"></a> Explorateur de tests
+### <a name="test-explorer"></a><a name="bkmk_testexplorerGLOBAL"></a> Explorateur de tests
 
 |Commandes|Raccourcis clavier|
 |--------------|------------------------|
@@ -356,7 +406,7 @@ Pour accéder plus facilement à diverses commandes et fenêtres dans Visual Stu
 |TestExplorer.RunAllTests|Ctrl+R, A|
 |TestExplorer.RunAllTestsInContext|Ctrl+R, T|
 
-### <a name="bkmk_tools"></a> Outils
+### <a name="tools"></a><a name="bkmk_tools"></a> Outils
 
 |Commandes|Raccourcis clavier|
 |--------------|------------------------|
@@ -365,7 +415,7 @@ Pour accéder plus facilement à diverses commandes et fenêtres dans Visual Stu
 |Tools.ForceGC|Ctrl+Maj+Alt+F12, Ctrl+Maj+Alt+F12|
 |Tools.GoToCommandLine|Ctrl+/|
 
-### <a name="bkmk_view"></a> Affichage
+### <a name="view"></a><a name="bkmk_view"></a>Affichage
 
 |Commandes|Raccourcis clavier|
 |--------------|------------------------|
@@ -414,7 +464,7 @@ Pour accéder plus facilement à diverses commandes et fenêtres dans Visual Stu
 |View.ZoomIn|Ctrl+Maj+.|
 |View.ZoomOut|Ctrl+Maj+,|
 
-### <a name="bkmk_window"></a> Fenêtre
+### <a name="window"></a><a name="bkmk_window"></a>Fenetre
 
 |Commandes|Raccourcis clavier|
 |--------------|------------------------|
@@ -445,14 +495,14 @@ Pour accéder plus facilement à diverses commandes et fenêtres dans Visual Stu
 |Window.SolutionExplorerSearch|Ctrl+;|
 |Window.WindowSearch|Alt+`|
 
-### <a name="bkmk_windowsazure"></a> Azure
+### <a name="azure"></a><a name="bkmk_windowsazure"></a>Bleu
 
 |Commandes|Raccourcis clavier|
 |--------------|------------------------|
 |WindowsAzure.RetryMobileServiceScriptOperation|Ctrl+Num *, Ctrl+R|
 |WindowsAzure.ShowMobileServiceScriptErrorDetails|Ctrl+Num *, Ctrl+D|
 
-## <a name="bkmk_ADONET"></a> ADO.NET Entity Data Model Designer
+## <a name="adonet-entity-data-model-designer"></a><a name="bkmk_ADONET"></a>Concepteur de Entity Data Model ADO.NET
 
 |Commandes|Raccourcis clavier|
 |--------------|------------------------|
@@ -467,7 +517,7 @@ Pour accéder plus facilement à diverses commandes et fenêtres dans Visual Stu
 |View.EntityDataModelBrowser|Ctrl+1|
 |View.EntityDataModelMappingDetails|Ctrl+2|
 
-## <a name="bkmk_classDiagram"></a> Diagramme de classes
+## <a name="class-diagram"></a><a name="bkmk_classDiagram"></a>Diagramme de classes
 
 |Commandes|Raccourcis clavier|
 |--------------|------------------------|
@@ -476,10 +526,10 @@ Pour accéder plus facilement à diverses commandes et fenêtres dans Visual Stu
 |Edit.Delete|Ctrl+Suppr|
 |Edit.ExpandCollapseBaseTypeList|Maj+Alt+B|
 |Edit.NavigateToLollipop|Maj+Alt+L|
-|Edit.RemovefromDiagram|Supprimer|
-|View.ViewCode|Touche Entrée|
+|Edit.RemovefromDiagram|DELETE|
+|View.ViewCode|Entrez|
 
-## <a name="bkmk_codedUItest"></a> Éditeur de test codé de l’interface utilisateur
+## <a name="coded-ui-test-editor"></a><a name="bkmk_codedUItest"></a>Éditeur de test codé de l’interface utilisateur
 
 |Commandes|Raccourcis clavier|
 |--------------|------------------------|
@@ -490,18 +540,17 @@ Pour accéder plus facilement à diverses commandes et fenêtres dans Visual Stu
 |OtherContextMenus.UITestEditorContextMenu.Movecode|Ctrl+Alt+C|
 |OtherContextMenus.UITestEditorContextMenu.Splitintoanewmethod|Ctrl+Maj+T|
 
-## <a name="bkmk_dataset"></a> Éditeur DataSet
+## <a name="dataset-editor"></a><a name="bkmk_dataset"></a>Éditeur de DataSet
 
 |Commandes|Raccourcis clavier|
 |--------------|------------------------|
-|OtherContextMenus.ColumnContext.InsertColumn|Insert|
+|OtherContextMenus.ColumnContext.InsertColumn|Insérer|
 |OtherContextMenus.DbTableContext.Add.Column|Ctrl+L|
 
-## <a name="bkmk_diff"></a> Visionneuse de différences
+## <a name="difference-viewer"></a><a name="bkmk_diff"></a>Visionneuse de différences
 
-|||
-|-|-|
 |Commandes|Raccourcis clavier|
+|-|-|
 |Diff.IgnoreTrimWhitespace|Ctrl+\\, Ctrl+Barre d’espace|
 |Diff.InlineView|Ctrl+\\, Ctrl+1|
 |Diff.LeftOnlyView|Ctrl+\\, Ctrl+3|
@@ -514,7 +563,7 @@ Pour accéder plus facilement à diverses commandes et fenêtres dans Visual Stu
 |EditorContextMenus.CodeWindow.AddComment|Ctrl+Maj+K|
 |EditorContextMenus.CodeWindow.EditLocalFile|Ctrl+Maj+P|
 
-## <a name="bkmk_DOM"></a> Explorateur DOM
+## <a name="dom-explorer"></a><a name="bkmk_DOM"></a>Explorateur DOM
 
 |Commandes|Raccourcis clavier|
 |--------------|------------------------|
@@ -522,29 +571,29 @@ Pour accéder plus facilement à diverses commandes et fenêtres dans Visual Stu
 |DOMExplorer.SelectElement|Ctrl+B|
 |DOMExplorer.ShowLayout|Ctrl+Maj+I|
 
-## <a name="bkmk_FSharp"></a> F# Interactive
+## <a name="f-interactive"></a><a name="bkmk_FSharp"></a>F# Interactive
 
 |Commande|Raccourci clavier|
 |-------------|-----------------------|
-|OtherContextMenus.FSIConsoleContext.CancelInteractiveEvaluation|Ctrl+Break|
+|OtherContextMenus.FSIConsoleContext.CancelInteractiveEvaluation|Ctrl+Pause|
 
-## <a name="bkmk_graphDoc"></a> Éditeur de document de graphique
+## <a name="graph-document-editor"></a><a name="bkmk_graphDoc"></a>Éditeur de document de graphique
 
 |Commandes|Raccourcis clavier|
 |--------------|------------------------|
-|ArchitectureContextMenus.DirectedGraphContextMenu.Advanced.Add.AddNode|Insert|
+|ArchitectureContextMenus.DirectedGraphContextMenu.Advanced.Add.AddNode|Insérer|
 |ArchitectureContextMenus.DirectedGraphContextMenu.Advanced.Select.BothDependencies|B|
 |ArchitectureContextMenus.DirectedGraphContextMenu.Advanced.Select.IncomingDependencies|I|
 |ArchitectureContextMenus.DirectedGraphContextMenu.Advanced.Select.OutgoingDependencies|O|
 |ArchitectureContextMenus.DirectedGraphContextMenu.NewComment|Ctrl+Maj+K<br /><br /> ou<br /><br /> Ctrl+E, C|
-|ArchitectureContextMenus.DirectedGraphContextMenu.Remove|Supprimer|
+|ArchitectureContextMenus.DirectedGraphContextMenu.Remove|DELETE|
 |ArchitectureContextMenus.DirectedGraphContextMenu.Rename|F2|
 
-## <a name="bkmk_graphicsDebugger"></a> Graphics Diagnostics
+## <a name="graphics-diagnostics"></a><a name="bkmk_graphicsDebugger"></a>Graphics Diagnostics
 
 |Commandes|Raccourcis clavier|
 |--------------|------------------------|
-|Debug.Graphics.CaptureFrame|Aucun.|
+|Debug.Graphics.CaptureFrame|None|
 |Graphics.MovePixelSelectionDown|Maj+Alt+Bas|
 |Graphics.MovePixelSelectionLeft|Maj+Alt+Gauche|
 |Graphics.MovePixelSelectionRight|Maj+Alt+Droite|
@@ -554,13 +603,13 @@ Pour accéder plus facilement à diverses commandes et fenêtres dans Visual Stu
 |Graphics.ZoomIn|Maj+Alt+=|
 |Graphics.ZoomOut|Maj+Alt+-|
 
-## <a name="bkmk_HTMLeditor"></a> Éditeur HTML
+## <a name="html-editor"></a><a name="bkmk_HTMLeditor"></a>Éditeur HTML
 
 |Commande|Raccourci clavier|
 |-------------|-----------------------|
 |OtherContextMenus.HTMLContext.GoToController|Ctrl+M, Ctrl+G|
 
-## <a name="bkmk_HTMLeditorDesign"></a> Éditeur HTML, mode Création
+## <a name="html-editor-design-view"></a><a name="bkmk_HTMLeditorDesign"></a>Éditeur HTML en mode Design
 
 |Commandes|Raccourcis clavier|
 |--------------|------------------------|
@@ -583,7 +632,7 @@ Pour accéder plus facilement à diverses commandes et fenêtres dans Visual Stu
 |View.ViewMarkup|Maj+F7|
 |Window.PreviousTab|Ctrl+Pg préc|
 
-## <a name="bkmk_HTMLeditorSource"></a> Éditeur HTML en mode Source
+## <a name="html-editor-source-view"></a><a name="bkmk_HTMLeditorSource"></a>Éditeur HTML en mode Source
 
 |Commandes|Raccourcis clavier|
 |--------------|------------------------|
@@ -593,20 +642,20 @@ Pour accéder plus facilement à diverses commandes et fenêtres dans Visual Stu
 |View.ViewDesigner|Maj+F7|
 |Window.PreviousTab|Ctrl+Pg préc|
 
-## <a name="bkmk_layerDiagram"></a> Diagramme de couche
+## <a name="layer-diagram"></a><a name="bkmk_layerDiagram"></a>Diagramme de couche
 
 |Commande|Raccourci clavier|
 |-------------|-----------------------|
 |Edit.Delete|Maj+Suppr|
 
-## <a name="bkmk_managedResources"></a> Éditeur de ressources managées
+## <a name="managed-resources-editor"></a><a name="bkmk_managedResources"></a>Éditeur de ressources managées
 
 |Commandes|Raccourcis clavier|
 |--------------|------------------------|
 |Edit.EditCell|F2|
-|Edit.Remove|Supprimer|
+|Edit.Remove|DELETE|
 |Edit.RemoveRow|Ctrl+Suppr|
-|Edit.SelectionCancel|Échap|
+|Edit.SelectionCancel|Caractère d'échappement|
 |Resources.Audio|Ctrl+4|
 |Resources.Files|Ctrl+5|
 |Resources.Icons|Ctrl+3|
@@ -614,7 +663,7 @@ Pour accéder plus facilement à diverses commandes et fenêtres dans Visual Stu
 |Resources.Other|Ctrl+6|
 |Resources.Strings|Ctrl+1|
 
-## <a name="bkmk_MergeEditor"></a> Fenêtre de l’éditeur de fusion
+## <a name="merge-editor-window"></a><a name="bkmk_MergeEditor"></a>Fenêtre de l’éditeur de fusion
 
 |Commandes|Raccourcis clavier|
 |--------------|------------------------|
@@ -622,7 +671,7 @@ Pour accéder plus facilement à diverses commandes et fenêtres dans Visual Stu
 |TeamFoundationContextMenus.MergeContextMenu.SetFocusonResultWindow|Alt+2|
 |TeamFoundationContextMenus.MergeContextMenu.SetFocusonRightWindow|Alt+3|
 
-## <a name="bkmk_SchemaCompare"></a> Microsoft SQL Server Data Tools, Comparaison de schémas
+## <a name="microsoft-sql-server-data-tools-schema-compare"></a><a name="bkmk_SchemaCompare"></a>Microsoft SQL Server Data Tools, Comparaison de schémas
 
 |Commandes|Raccourcis clavier|
 |--------------|------------------------|
@@ -633,7 +682,7 @@ Pour accéder plus facilement à diverses commandes et fenêtres dans Visual Stu
 |SQL.SSDTSchemaCompareStop|Alt+Break|
 |SQL.SSDTSchemaCompareWriteUpdates|Maj+Alt+U|
 
-## <a name="bkmk_TableDesigner"></a> Microsoft SQL Server Data Tools, Concepteur de tables
+## <a name="microsoft-sql-server-data-tools-table-designer"></a><a name="bkmk_TableDesigner"></a> Microsoft SQL Server Data Tools, Concepteur de tables
 
 |Commandes|Raccourcis clavier|
 |--------------|------------------------|
@@ -644,7 +693,7 @@ Pour accéder plus facilement à diverses commandes et fenêtres dans Visual Stu
 |SQL.Rename|F2<br /><br /> ou<br /><br /> Ctrl+R, R<br /><br /> ou<br /><br /> Ctrl+R, Ctrl+R|
 |ViewFileInScriptPanel|Maj+Alt+Pg suiv|
 
-## <a name="bkmk_TSQLeditor"></a> Microsoft SQL Server Data Tools, Éditeur T-SQL
+## <a name="microsoft-sql-server-data-tools-t-sql-editor"></a><a name="bkmk_TSQLeditor"></a> Microsoft SQL Server Data Tools, Éditeur T-SQL
 
 |Commandes|Raccourcis clavier|
 |--------------|------------------------|
@@ -665,7 +714,7 @@ Pour accéder plus facilement à diverses commandes et fenêtres dans Visual Stu
 |TSqlEditorCloneQuery|Ctrl+Alt+N|
 |TSqlEditorDatabaseCombo|Maj+Alt+Pg suiv|
 
-## <a name="bkmk_linkfix"></a> Microsoft SQL Server Data Tools, Éditeur T-SQL PDW
+## <a name="microsoft-sql-server-data-tools-t-sql-pdw-editor"></a><a name="bkmk_linkfix"></a> Microsoft SQL Server Data Tools, Éditeur T-SQL PDW
 
 |Commandes|Raccourcis clavier|
 |--------------|------------------------|
@@ -680,13 +729,13 @@ Pour accéder plus facilement à diverses commandes et fenêtres dans Visual Stu
 |TSqlEditorCloneQuery|Ctrl+Alt+N|
 |TSqlEditorDatabaseCombo|Maj+Alt+Pg suiv|
 
-## <a name="bkmk_PageInspector"></a> Inspecteur de page
+## <a name="page-inspector"></a><a name="bkmk_PageInspector"></a>Inspecteur de page
 
 |Commande|Raccourci clavier|
 |-------------|-----------------------|
 |PageInspector.Minimize|F12|
 
-## <a name="bkmk_QueryDesigner"></a> Concepteur de requêtes
+## <a name="query-designer"></a><a name="bkmk_QueryDesigner"></a>Concepteur de requêtes
 
 |Commandes|Raccourcis clavier|
 |--------------|------------------------|
@@ -699,7 +748,7 @@ Pour accéder plus facilement à diverses commandes et fenêtres dans Visual Stu
 |QueryDesigner.Results|Ctrl+4|
 |QueryDesigner.SQL|Ctrl+3|
 
-## <a name="bkmk_QueryResults"></a> Résultats de requête
+## <a name="query-results"></a><a name="bkmk_QueryResults"></a>Résultats de la requête
 
 |Commandes|Raccourcis clavier|
 |--------------|------------------------|
@@ -707,17 +756,17 @@ Pour accéder plus facilement à diverses commandes et fenêtres dans Visual Stu
 |SQL.QueryResultsRefresh|Maj+Alt+R|
 |SQL.QueryResultsStop|Alt+Break|
 
-## <a name="bkmk_ReportDesigner"></a> Concepteur de rapports
+## <a name="report-designer"></a><a name="bkmk_ReportDesigner"></a>Concepteur de rapports
 
 |Commandes|Raccourcis clavier|
 |--------------|------------------------|
-|Edit.BreakLine|Entrée|
+|Edit.BreakLine|Entrez|
 |Edit.CharLeft|Gauche|
 |Edit.CharLeftExtend|Maj+Gauche|
 |Edit.CharRight|Flèche droite|
 |Edit.CharRightExtend|Maj+Droite|
 |Edit.InsertTab|Onglet|
-|Edit.LineDown|Flèche bas|
+|Edit.LineDown|Flèche Bas|
 |Edit.LineDownExtend|Maj+Bas|
 |Edit.LineUp|Flèche haut|
 |Edit.LineUpExtend|Maj+Haut|
@@ -733,14 +782,14 @@ Pour accéder plus facilement à diverses commandes et fenêtres dans Visual Stu
 |Edit.TabLeft|Maj+Tab|
 |View.ReportData|Ctrl+Alt+D|
 
-## <a name="bkmk_SequenceDiagram"></a> Diagramme de séquence
+## <a name="sequence-diagram"></a><a name="bkmk_SequenceDiagram"></a>Diagramme de séquence
 
 |Commandes|Raccourcis clavier|
 |--------------|------------------------|
 |ArchitectureDesigner.Sequence.NavigateToCode|F12|
 |Edit.Delete|Maj+Suppr|
 
-## <a name="bkmk_SettingsDesigner"></a> Concepteur de paramètres
+## <a name="settings-designer"></a><a name="bkmk_SettingsDesigner"></a>Concepteur de paramètres
 
 |Commandes|Raccourcis clavier|
 |--------------|------------------------|
@@ -749,17 +798,17 @@ Pour accéder plus facilement à diverses commandes et fenêtres dans Visual Stu
 |Edit.SelectionCancel|Échap|
 |View.ViewCode|F7|
 
-## <a name="bkmk_SolutionExplorer"></a> Explorateur de solutions
+## <a name="solution-explorer"></a><a name="bkmk_SolutionExplorer"></a>Explorateur de solutions
 
 |Commande|Raccourci clavier|
 |-------------|-----------------------|
 |ClassViewContextMenus.ClassViewProject.View.ViewinPageInspector|Ctrl+K, Ctrl+G|
 
-## <a name="bkmk_TeamExplorer"></a> Team Explorer
+## <a name="team-explorer"></a><a name="bkmk_TeamExplorer"></a> Team Explorer
 
 |Commande|Raccourci clavier|
 |-------------|-----------------------|
-|Edit.Delete|Supprimer|
+|Edit.Delete|DELETE|
 |File.Rename|F2|
 |TeamFoundationContextMenus.Commands.GoToTeamExplorerNavigation|Alt+Origine|
 |TeamFoundationContextMenus.Commands.GoToTeamExplorerNextSectionContent|Alt+Bas|
@@ -780,23 +829,23 @@ Pour accéder plus facilement à diverses commandes et fenêtres dans Visual Stu
 |TeamFoundationContextMenus.MyWorkPageInProgress.TfsContextMyWorkPageNewLinkedWI|Maj+Alt+L|
 |View.Refresh|F5|
 
-## <a name="bkmk_TFBuild"></a> Éditeur des détails Team Foundation Build
+## <a name="team-foundation-build-detail-editor"></a><a name="bkmk_TFBuild"></a> Éditeur des détails Team Foundation Build
 
 |Commande|Raccourci clavier|
 |-------------|-----------------------|
 |View.Refresh|F5|
 
-## <a name="bkmk_TestExplorer"></a> Explorateur de tests
+## <a name="test-explorer"></a><a name="bkmk_TestExplorer"></a> Explorateur de tests
 
 |Commande|Raccourci clavier|
 |-------------|-----------------------|
 |TestExplorer.OpenTest|F12|
 
-## <a name="bkmk_TextEditor"></a> Éditeur de texte
+## <a name="text-editor"></a><a name="bkmk_TextEditor"></a>Éditeur de texte
 
 |                             Commandes                              |                  Raccourcis clavier                   |
 |-------------------------------------------------------------------|-------------------------------------------------------|
-|                          Edit.BreakLine                           |     Entrée<br /><br /> ou<br /><br /> Maj+Entrée      |
+|                          Edit.BreakLine                           |     Entrez<br /><br /> ou<br /><br /> Maj + Entrée      |
 |                           Edit.CharLeft                           |                      Gauche                       |
 |                        Edit.CharLeftExtend                        |                   Maj+Gauche                    |
 |                     Edit.CharLeftExtendColumn                     |                 Maj+Alt+Gauche                  |
@@ -831,15 +880,15 @@ Pour accéder plus facilement à diverses commandes et fenêtres dans Visual Stu
 |                          Edit.InsertTab                           |                          Onglet                          |
 |                           Edit.LineCut                            |                        Ctrl+L                         |
 |                          Edit.LineDelete                          |                     Ctrl+Maj+L                      |
-|                           Edit.LineDown                           |                      Flèche bas                       |
+|                           Edit.LineDown                           |                      Flèche Bas                       |
 |                        Edit.LineDownExtend                        |                   Maj+Bas                    |
 |                     Edit.LineDownExtendColumn                     |                 Maj+Alt+Bas                  |
-|                           Edit.LineEnd                            |                          Fin                          |
+|                           Edit.LineEnd                            |                          End                          |
 |                        Edit.LineEndExtend                         |                       Maj+Fin                       |
 |                     Edit.LineEndExtendColumn                      |                     Maj+Alt+Fin                     |
 |                        Edit.LineOpenAbove                         |                      Ctrl+Entrée                       |
 |                        Edit.LineOpenBelow                         |                   Ctrl+Maj+Entrée                    |
-|                          Edit.LineStart                           |                         Début                          |
+|                          Edit.LineStart                           |                         Accueil                          |
 |                       Edit.LineStartExtend                        |                      Maj+Origine                       |
 |                    Edit.LineStartExtendColumn                     |                    Maj+Alt+Début                     |
 |                        Edit.LineTranspose                         |                      Maj+Alt+T                      |
@@ -852,7 +901,7 @@ Pour accéder plus facilement à diverses commandes et fenêtres dans Visual Stu
 |                    Edit.MoveSelectedLinesDown                     |                    Alt+Bas                     |
 |                     Edit.MoveSelectedLinesUp                      |                     Alt+Haut                      |
 |                   Edit.NextHighlightedReference                   |                 Ctrl+Maj+Bas                 |
-|                         Edit.OvertypeMode                         |                        Insert                         |
+|                         Edit.OvertypeMode                         |                        Insérer                         |
 |                           Edit.PageDown                           |                         Pg suiv                          |
 |                        Edit.PageDownExtend                        |                      Maj+PgDn                       |
 |                            Edit.PageUp                            |                         Pg préc                          |
@@ -868,7 +917,7 @@ Pour accéder plus facilement à diverses commandes et fenêtres dans Visual Stu
 |                        Edit.ScrollLineDown                        |                    Ctrl+Bas                    |
 |                         Edit.ScrollLineUp                         |                     Ctrl+Haut                     |
 |                      Edit.SelectCurrentWord                       |                        Ctrl+W                         |
-|                       Edit.SelectionCancel                        |                        Échap                         |
+|                       Edit.SelectionCancel                        |                        Caractère d'échappement                         |
 |                      Edit.SelectToLastGoBack                      |                        Ctrl+=                         |
 |                       Edit.ShowCodeLensMenu                       |                        Alt+\`                         |
 |                      Edit.StopHidingCurrent                       |                    Ctrl+M, Ctrl+U                     |
@@ -896,48 +945,48 @@ Pour accéder plus facilement à diverses commandes et fenêtres dans Visual Stu
 |                      Edit.WordPreviousExtend                      |                 Ctrl+Maj+Gauche                 |
 |                   Edit.WordPreviousExtendColumn                   |               Ctrl+Maj+Alt+Gauche               |
 |                        Edit.WordTranspose                         |                     Ctrl+Maj+T                      |
-|        EditorContextMenus.CodeWindow.ExecuteInInteractive         |                       Alt+Entrée                       |
+|        EditorContextMenus.CodeWindow.ExecuteInInteractive         |                       Alt + Entrée                       |
 |      EditorContextMenus.CodeWindow.ExecuteLineInInteractive       |                         Alt+'                         |
 |         OtherContextMenus.HTMLContext.ViewinPageInspector         |                    Ctrl+K, Ctrl+G                     |
 |   TeamFoundationContextMenus.Annotate.TfsAnnotateMoveNextRegion   |                       Alt+PgDn                        |
 | TeamFoundationContextMenus.Annotate.TfsAnnotateMovePreviousRegion |                       Alt+Pg préc                        |
 
-## <a name="bkmk_UMLactivityDiagram"></a> Diagramme d’activités UML
+## <a name="uml-activity-diagram"></a><a name="bkmk_UMLactivityDiagram"></a> Diagramme d’activités UML
 
 |Commande|Raccourci clavier|
 |-------------|-----------------------|
 |Edit.Delete|Maj+Suppr|
 
-## <a name="bkmk_UMLclassDiagram"></a> Diagramme de classes UML
+## <a name="uml-class-diagram"></a><a name="bkmk_UMLclassDiagram"></a> Diagramme de classes UML
 
 |Commande|Raccourci clavier|
 |-------------|-----------------------|
 |Edit.DeleteFromModel|Maj+Suppr|
 
-## <a name="bkmk_UMLcomponentDiagram"></a> Diagramme de composant UML
+## <a name="uml-component-diagram"></a><a name="bkmk_UMLcomponentDiagram"></a> Diagramme de composant UML
 
 |Commande|Raccourci clavier|
 |-------------|-----------------------|
 |Edit.DeleteFromModel|Maj+Suppr|
 
-## <a name="bkmk_UMLusecaseDiagram"></a> Diagramme de cas d’usage UML
+## <a name="uml-use-case-diagram"></a><a name="bkmk_UMLusecaseDiagram"></a> Diagramme de cas d’usage UML
 
 |Commande|Raccourci clavier|
 |-------------|-----------------------|
 |Edit.DeleteFromModel|Maj+Suppr|
 
-## <a name="bkmk_vcaccelerator"></a> Éditeur d’accélérateurs VC
+## <a name="vc-accelerator-editor"></a><a name="bkmk_vcaccelerator"></a> Éditeur d’accélérateurs VC
 
 |Commandes|Raccourcis clavier|
 |--------------|------------------------|
-|Edit.NewAccelerator|Insert|
+|Edit.NewAccelerator|Insérer|
 |Edit.NextKeyTyped|Ctrl+W|
 
-## <a name="bkmk_vcdialogeditor"></a> Éditeur de boîtes de dialogue VC
+## <a name="vc-dialog-editor"></a><a name="bkmk_vcdialogeditor"></a> Éditeur de boîtes de dialogue VC
 
 |Commandes|Raccourcis clavier|
 |--------------|------------------------|
-|Edit.MoveControlDown|Flèche bas|
+|Edit.MoveControlDown|Flèche Bas|
 |Edit.MoveControlLeft|Gauche|
 |Edit.MoveControlRight|Flèche droite|
 |Edit.MoveControlUp|Flèche haut|
@@ -967,7 +1016,7 @@ Pour accéder plus facilement à diverses commandes et fenêtres dans Visual Stu
 |Format.TestDialog|Ctrl+T|
 |Format.ToggleGuides|CTRL+G|
 
-## <a name="bkmk_vcimageeditor"></a> Éditeur d’images VC
+## <a name="vc-image-editor"></a><a name="bkmk_vcimageeditor"></a>Éditeur d’images VC
 
 |Commandes|Raccourcis clavier|
 |--------------|------------------------|
@@ -987,7 +1036,7 @@ Pour accéder plus facilement à diverses commandes et fenêtres dans Visual Stu
 |Image.LineTool|Ctrl+L|
 |Image.MagnificationTool|Ctrl+M|
 |Image.Magnify|Ctrl+Maj+M|
-|Image.NewImageType|Insert|
+|Image.NewImageType|Insérer|
 |Image.NextColor|Ctrl+]<br /><br /> ou<br /><br /> Ctrl+Droite|
 |Image.NextRightColor|Ctrl+Maj+]<br /><br /> ou<br /><br /> Ctrl+Maj+Droite|
 |Image.OutlinedEllipseTool|Maj+Alt+P|
@@ -1009,13 +1058,13 @@ Pour accéder plus facilement à diverses commandes et fenêtres dans Visual Stu
 |Image.ZoomIn|Ctrl+Maj+.<br /><br /> ou<br /><br /> Ctrl+Haut|
 |Image.ZoomOut|Ctrl+Maj+,<br /><br /> ou<br /><br /> Ctrl+Bas|
 
-## <a name="bkmk_vcstringeditor"></a> Éditeur de chaînes VC
+## <a name="vc-string-editor"></a><a name="bkmk_vcstringeditor"></a>Éditeur de chaînes VC
 
 |Commande|Raccourci clavier|
 |-------------|-----------------------|
-|Edit.NewString|Insert|
+|Edit.NewString|Insérer|
 
-## <a name="bkmk_viewDesigner"></a> Concepteur de vues
+## <a name="view-designer"></a><a name="bkmk_viewDesigner"></a>Concepteur de vues
 
 |Commandes|Raccourcis clavier|
 |--------------|------------------------|
@@ -1028,27 +1077,27 @@ Pour accéder plus facilement à diverses commandes et fenêtres dans Visual Stu
 |QueryDesigner.Results|Ctrl+4|
 |QueryDesigner.SQL|Ctrl+3|
 
-## <a name="bkmk_visualstudio"></a> Visual Studio
+## <a name="visual-studio"></a><a name="bkmk_visualstudio"></a>Visual Studio
 
 |Commande|Raccourci clavier|
 |-------------|-----------------------|
 |OtherContextMenus.ORDesignerContext.HideMethodsPane|Ctrl+1|
 
-## <a name="bkmk_wfdesigner"></a> Concepteur Windows Forms
+## <a name="windows-forms-designer"></a><a name="bkmk_wfdesigner"></a>Concepteur Windows Forms
 
 |Commandes|Raccourcis clavier|
 |--------------|------------------------|
-|Edit.BreakLine|Entrée|
+|Edit.BreakLine|Entrez|
 |Edit.CharLeft|Gauche|
 |Edit.CharLeftExtend|Maj+Gauche|
 |Edit.CharRight|Flèche droite|
 |Edit.CharRightExtend|Maj+Droite|
-|Edit.DocumentEnd|Fin|
+|Edit.DocumentEnd|End|
 |Edit.DocumentEndExtend|Maj+Fin|
 |Edit.DocumentStart|Accueil|
 |Edit.DocumentStartExtend|Maj+Origine|
 |Edit.InsertTab|Onglet|
-|Edit.LineDown|Flèche bas|
+|Edit.LineDown|Flèche Bas|
 |Edit.LineDownExtend|Maj+Haut|
 |Edit.LineUp|Flèche haut|
 |Edit.LineUpExtend|Maj+Bas|
@@ -1056,14 +1105,14 @@ Pour accéder plus facilement à diverses commandes et fenêtres dans Visual Stu
 |Edit.MoveControlLeft|Ctrl+Gauche|
 |Edit.MoveControlRight|Ctrl+Droite|
 |Edit.MoveControlUp|Ctrl+Haut|
-|Edit.SelectionCancel|Échap|
+|Edit.SelectionCancel|Caractère d'échappement|
 |Edit.SizeControlDown|Ctrl+Maj+Bas|
 |Edit.SizeControlLeft|Ctrl+Maj+Gauche|
 |Edit.SizeControlRight|Ctrl+Maj+Droite|
 |Edit.SizeControlUp|Ctrl+Maj+Haut|
 |Edit.TabLeft|Maj+Tab|
 
-## <a name="bkmk_workItemEditor"></a> Éditeur d’élément de travail
+## <a name="work-item-editor"></a><a name="bkmk_workItemEditor"></a> Éditeur d’élément de travail
 
 |Commandes|Raccourcis clavier|
 |--------------|------------------------|
@@ -1071,7 +1120,7 @@ Pour accéder plus facilement à diverses commandes et fenêtres dans Visual Stu
 |Edit.RefreshWorkItem|F5|
 |Team.NewLinkedWorkItem|Maj+Alt+L|
 
-## <a name="bkmk_WIqueryview"></a> Affichage des requêtes d’élément de travail
+## <a name="work-item-query-view"></a><a name="bkmk_WIqueryview"></a> Affichage des requêtes d’élément de travail
 
 |Commandes|Raccourcis clavier|
 |--------------|------------------------|
@@ -1082,7 +1131,7 @@ Pour accéder plus facilement à diverses commandes et fenêtres dans Visual Stu
 |Team.Refresh|F5|
 |Window.Toggle|Maj+Alt+V|
 
-## <a name="bkmk_WIresultsview"></a> Affichage des résultats des éléments de travail
+## <a name="work-item-results-view"></a><a name="bkmk_WIresultsview"></a>Affichage des résultats des éléments de travail
 
 |Commandes|Raccourcis clavier|
 |--------------|------------------------|
@@ -1095,7 +1144,7 @@ Pour accéder plus facilement à diverses commandes et fenêtres dans Visual Stu
 |Team.Refresh|F5|
 |Window.Toggle|Maj+Alt+V|
 
-## <a name="bkmk_workflowdesigner"></a> Concepteur de flux de travail
+## <a name="workflow-designer"></a><a name="bkmk_workflowdesigner"></a>Concepteur de flux de travail
 
 |Commandes|Raccourcis clavier|
 |--------------|------------------------|
@@ -1123,7 +1172,7 @@ Pour accéder plus facilement à diverses commandes et fenêtres dans Visual Stu
 |WorkflowDesigner.ZoomIn|Ctrl+Num +|
 |WorkflowDesigner.ZoomOut|Ctrl+Num -|
 
-## <a name="bkmk_xamluidesigner"></a> Concepteur XAML
+## <a name="xaml-ui-designer"></a><a name="bkmk_xamluidesigner"></a> Concepteur XAML
 
 |Commandes|Raccourcis clavier|
 |--------------|------------------------|
@@ -1139,14 +1188,14 @@ Pour accéder plus facilement à diverses commandes et fenêtres dans Visual Stu
 |View.EdgeRightMoveRight|Ctrl+Maj+Alt+.|
 |Exécuter le code de projet|Ctrl+F9|
 
-## <a name="bkmk_xmlTextEditor"></a> Éditeur XML (Texte)
+## <a name="xml-text-editor"></a><a name="bkmk_xmlTextEditor"></a> Éditeur XML (Texte)
 
 |Commandes|Raccourcis clavier|
 |--------------|------------------------|
 |XML.StartXSLTDebugging|Alt+F5|
 |XML.StartXSLTWithoutDebugging|Ctrl+Alt+F5|
 
-## <a name="bkmk_xmlSchemaDesigner"></a> Concepteur de schémas XML
+## <a name="xml-schema-designer"></a><a name="bkmk_xmlSchemaDesigner"></a> Concepteur de schémas XML
 
 |Commandes|Raccourcis clavier|
 |--------------|------------------------|
@@ -1154,7 +1203,7 @@ Pour accéder plus facilement à diverses commandes et fenêtres dans Visual Stu
 |GraphView.LefttoRight|Alt+flèche droite|
 |GraphView.RighttoLeft|Alt+flèche gauche|
 |GraphView.ToptoBottom|Alt+Bas|
-|OtherContextMenus.GraphView.RemovefromWorkspace|Supprimer|
+|OtherContextMenus.GraphView.RemovefromWorkspace|DELETE|
 |XsdDesigner.ShowContentModelView|Ctrl+2|
 |XsdDesigner.ShowGraphView|Ctrl+3|
 |XsdDesigner.ShowStartView|Ctrl+1|

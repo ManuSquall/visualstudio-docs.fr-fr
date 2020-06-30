@@ -1,7 +1,7 @@
 ---
-title: Autoriser le code de s’exécuter derrière des documents avec des autorisations restreintes
+title: Autoriser le code à s’exécuter derrière des documents avec des autorisations restreintes
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -17,39 +17,39 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 32e42954958fda71d54c3c0ac2685928644e7461
-ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
+ms.openlocfilehash: 15cfb7ebf2f4f71e892820206f0dd1d006639992
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/30/2019
-ms.locfileid: "66402243"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85547509"
 ---
-# <a name="how-to-permit-code-to-run-behind-documents-with-restricted-permissions"></a>Procédure : Autoriser le code de s’exécuter derrière des documents avec des autorisations restreintes
-  Vous pouvez utiliser la fonctionnalité Information Rights Management (IRM) de Microsoft Office pour restreindre les autorisations à un document ou classeur. Par défaut, le code derrière un document Microsoft Office Word restreint ou un classeur Microsoft Office Excel n’est pas autorisé à exécuter. Vous pouvez modifier la valeur par défaut afin que vos extensions de code managé peuvent accéder au modèle objet, et votre solution fonctionnera.
+# <a name="how-to-permit-code-to-run-behind-documents-with-restricted-permissions"></a>Comment : autoriser le code à s’exécuter derrière des documents avec des autorisations restreintes
+  Vous pouvez utiliser la fonctionnalité de Rights Management d’informations (IRM) de Microsoft Office pour restreindre les autorisations d’accès à un document ou à un classeur. Par défaut, le code derrière un document Word restreint Microsoft Office ou Microsoft Office classeur Excel n’est pas autorisé à s’exécuter. Vous pouvez modifier la valeur par défaut afin que vos extensions de code managé puissent accéder au modèle objet et que votre solution fonctionne.
 
  [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]
 
- Vous devez être l’auteur du document ou classeur ou ont un accès contrôle total pour pouvoir modifier les paramètres d’autorisation.
+ Vous devez être l’auteur du document ou du classeur, ou disposer d’un accès contrôle total pour pouvoir modifier les paramètres d’autorisation.
 
-## <a name="to-permit-code-to-run-behind-documents-with-restricted-permissions"></a>Pour autoriser le code de s’exécuter derrière des documents avec des autorisations restreintes
+## <a name="to-permit-code-to-run-behind-documents-with-restricted-permissions"></a>Pour permettre au code de s’exécuter derrière des documents avec des autorisations restreintes
 
 1. Ouvrez le document ou le classeur dans Word ou Excel.
 
-2. Cliquez sur le **fichier** onglet, pointez sur **préparation**, pointez sur **restreindre l’autorisation**, puis cliquez sur **accès restreint**.
+2. Cliquez sur l’onglet **fichier** , pointez sur **préparer**, pointez sur **restreindre l’autorisation**, puis cliquez sur **accès restreint**.
 
    > [!NOTE]
-   > À la première utilisation, vous êtes invité à installer le client Windows Rights Management. Après avoir installé le client, vous devrez peut-être répéter ces étapes.
+   > Lors de la première utilisation, vous êtes invité à installer le client Windows Rights Management. Après avoir installé le client, vous devrez peut-être répéter les étapes.
 
-3. Dans le **autorisation** boîte de dialogue, sélectionnez **restreindre l’autorisation à ce document**, puis cliquez sur **plus d’Options**.
+3. Dans la boîte de dialogue **autorisation** , sélectionnez **restreindre l’autorisation à ce document**, puis cliquez sur **autres options**.
 
-4. Sous **des autorisations supplémentaires pour les utilisateurs**, sélectionnez **accéder par programmation au contenu**.
+4. Sous **autorisations supplémentaires pour les utilisateurs**, sélectionnez **accéder au contenu par programme**.
 
-   Word ou Excel autorise un accès par programmation au modèle objet.
+   Word ou Excel autorise l’accès par programme au modèle objet.
 
 ## <a name="see-also"></a>Voir aussi
-- [Information rights management et vue d’ensemble des extensions de code managé](../vsto/information-rights-management-and-managed-code-extensions-overview.md)
+- [Présentation de la gestion des droits relatifs à l’information et des extensions de code managé](../vsto/information-rights-management-and-managed-code-extensions-overview.md)
 - [Protection des documents dans les solutions au niveau du document](../vsto/document-protection-in-document-level-solutions.md)
-- [Protection de mot de passe des documents Office](../vsto/password-protection-on-office-documents.md)
+- [Protection par mot de passe sur les documents Office](../vsto/password-protection-on-office-documents.md)
 - [Concevoir et créer des solutions Office](../vsto/designing-and-creating-office-solutions.md)
-- [Sécurisez les solutions Office](../vsto/securing-office-solutions.md)
+- [Sécuriser les solutions Office](../vsto/securing-office-solutions.md)
 - [Déployer une solution Office](../vsto/deploying-an-office-solution.md)

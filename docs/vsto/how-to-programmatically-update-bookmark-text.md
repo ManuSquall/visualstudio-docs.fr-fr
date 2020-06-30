@@ -1,7 +1,7 @@
 ---
-title: 'Procédure : Mettre à jour par programme de texte d’un signet'
+title: 'Comment : mettre à jour le texte d’un signet par programmation'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -14,15 +14,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 436fefd425da46cea6a8cd1aba95fb9eb14362f7
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 9b76c239606a4bf0d6da203bd4eea45a11162706
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63418962"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85546950"
 ---
-# <a name="how-to-programmatically-update-bookmark-text"></a>Procédure : Mettre à jour par programme de texte d’un signet
-  Vous pouvez insérer un texte dans un signet d'espace réservé d'un document Microsoft Office Word afin de pouvoir récupérer le texte ultérieurement, ou pour remplacer le texte d'un signet. Si vous développez une personnalisation au niveau du document, vous pouvez également mettre à jour le texte dans un contrôle <xref:Microsoft.Office.Tools.Word.Bookmark> lié aux données. Pour plus d’informations, consultez [lier des données aux contrôles dans les solutions Office](../vsto/binding-data-to-controls-in-office-solutions.md).
+# <a name="how-to-programmatically-update-bookmark-text"></a>Comment : mettre à jour le texte d’un signet par programmation
+  Vous pouvez insérer un texte dans un signet d'espace réservé d'un document Microsoft Office Word afin de pouvoir récupérer le texte ultérieurement, ou pour remplacer le texte d'un signet. Si vous développez une personnalisation au niveau du document, vous pouvez également mettre à jour le texte dans un contrôle <xref:Microsoft.Office.Tools.Word.Bookmark> lié aux données. Pour plus d’informations, consultez [lier des données à des contrôles dans les solutions Office](../vsto/binding-data-to-controls-in-office-solutions.md).
 
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]
 
@@ -30,15 +30,15 @@ ms.locfileid: "63418962"
 
 - Un contrôle hôte <xref:Microsoft.Office.Tools.Word.Bookmark>.
 
-   Les contrôles <xref:Microsoft.Office.Tools.Word.Bookmark> étendent les objets <xref:Microsoft.Office.Interop.Word.Bookmark> natifs en activant la liaison de données et en exposant les événements. Pour plus d’informations sur les contrôles hôtes, consultez [éléments hôtes et héberger de vue d’ensemble des contrôles](../vsto/host-items-and-host-controls-overview.md).
+   Les contrôles <xref:Microsoft.Office.Tools.Word.Bookmark> étendent les objets <xref:Microsoft.Office.Interop.Word.Bookmark> natifs en activant la liaison de données et en exposant les événements. Pour plus d’informations sur les contrôles hôtes, consultez [vue d’ensemble des éléments hôtes et des contrôles hôtes](../vsto/host-items-and-host-controls-overview.md).
 
-- Un objet <xref:Microsoft.Office.Interop.Word.Bookmark> natif.
+- Objet <xref:Microsoft.Office.Interop.Word.Bookmark> natif.
 
    Les objets <xref:Microsoft.Office.Interop.Word.Bookmark> n'ont pas de fonctionnalités de liaison de données ou d'événements.
 
-  Lorsque vous assignez un texte à un signet, le comportement diffère entre un <xref:Microsoft.Office.Interop.Word.Bookmark> et un <xref:Microsoft.Office.Tools.Word.Bookmark>. Pour plus d’informations, consultez [Bookmark (contrôle)](../vsto/bookmark-control.md).
+  Lorsque vous assignez un texte à un signet, le comportement diffère entre un <xref:Microsoft.Office.Interop.Word.Bookmark> et un <xref:Microsoft.Office.Tools.Word.Bookmark>. Pour plus d’informations, consultez [contrôle Bookmark](../vsto/bookmark-control.md).
 
-## <a name="use-host-controls"></a>Utiliser les contrôles hôtes
+## <a name="use-host-controls"></a>Utiliser des contrôles hôtes
 
 ### <a name="to-update-bookmark-contents-using-a-bookmark-control"></a>Pour mettre à jour le contenu d'un signet à l'aide d'un contrôle Bookmark
 
@@ -50,7 +50,7 @@ ms.locfileid: "63418962"
      [!code-vb[Trin_VstcoreWordAutomation#63](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#63)]
      [!code-csharp[Trin_VstcoreWordAutomation#63](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#63)]
 
-2. Affecter le *newText* de chaîne pour le <xref:Microsoft.Office.Tools.Word.Bookmark.Text%2A> propriété de la <xref:Microsoft.Office.Tools.Word.Bookmark>.
+2. Assignez la chaîne *NewText* à la <xref:Microsoft.Office.Tools.Word.Bookmark.Text%2A> propriété de <xref:Microsoft.Office.Tools.Word.Bookmark> .
 
      [!code-vb[Trin_VstcoreWordAutomation#64](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#64)]
      [!code-csharp[Trin_VstcoreWordAutomation#64](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#64)]
@@ -67,9 +67,9 @@ ms.locfileid: "63418962"
      [!code-vb[Trin_VstcoreWordAutomation#65](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#65)]
      [!code-csharp[Trin_VstcoreWordAutomation#65](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#65)]
 
-2. Affecter le *newText* de chaîne pour le <xref:Microsoft.Office.Interop.Word.Range.Text%2A> propriété du signet, ce qui supprime automatiquement le signet. Puis, ajoutez de nouveau le signet à la collection <xref:Microsoft.Office.Interop.Word.Bookmarks>.
+2. Assignez la chaîne *NewText* à la <xref:Microsoft.Office.Interop.Word.Range.Text%2A> propriété du signet, qui supprime automatiquement le signet. Puis, ajoutez de nouveau le signet à la collection <xref:Microsoft.Office.Interop.Word.Bookmarks>.
 
-     Vous pouvez utiliser l’exemple de code suivant dans une personnalisation au niveau du document.
+     L'exemple de code suivant peut être utilisé dans une personnalisation au niveau du document.
 
      [!code-vb[Trin_VstcoreWordAutomation#66](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#66)]
      [!code-csharp[Trin_VstcoreWordAutomation#66](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#66)]
@@ -80,6 +80,6 @@ ms.locfileid: "63418962"
      [!code-csharp[Trin_VstcoreWordAutomationAddIn#66](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#66)]
 
 ## <a name="see-also"></a>Voir aussi
-- [Guide pratique pour Insérer du texte dans les documents Word par programmation](../vsto/how-to-programmatically-insert-text-into-word-documents.md)
-- [Vue d’ensemble du modèle d’objet Word](../vsto/word-object-model-overview.md)
-- [Bookmark (contrôle)](../vsto/bookmark-control.md)
+- [Comment : insérer du texte dans des documents Word par programmation](../vsto/how-to-programmatically-insert-text-into-word-documents.md)
+- [Vue d’ensemble du modèle objet Word](../vsto/word-object-model-overview.md)
+- [Bookmark, contrôle](../vsto/bookmark-control.md)

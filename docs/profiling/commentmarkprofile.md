@@ -12,12 +12,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: d45bab6b909fffa107158236d9050632f114c530
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 2972f9d470bebe3a65b7d525aa2b358d68ad5f1c
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74772783"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85546586"
 ---
 # <a name="commentmarkprofile"></a>CommentMarkProfile
 La fonction `CommentMarkProfile` insère un marqueur numérique et une chaîne de texte dans le fichier .*vsp*. Pour que la marque et le commentaire soient insérés, le profilage du thread qui contient la fonction `CommentMarkProfile` doit être activé.
@@ -52,7 +52,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI CommentMarkProfile(
 |MARK_TEXTTOOLONG|La chaîne dépasse le maximum de 256 caractères. La chaîne de commentaire est tronquée, et la marque et le commentaire sont enregistrés.|
 |MARK_OK|MARK_OK est retourné pour indiquer la réussite.|
 
-## <a name="remarks"></a>Notes 
+## <a name="remarks"></a>Remarques
  L’état du profilage du thread qui contient la fonction de profil de marque doit être Activé lors de l’insertion de marques et de commentaires avec la commande VSInstr Mark ou avec des fonctions (CommentMarkAtProfile, CommentMarkProfile ou MarkProfile).
 
  Les marques de profil sont globales dans l’étendue. Par exemple, une marque de profil insérée dans un thread peut être utilisée pour marquer le début ou la fin d’un segment de données dans n’importe quel thread du fichier .*vsp*.
@@ -65,13 +65,13 @@ PROFILE_COMMAND_STATUS PROFILERAPI CommentMarkProfile(
 
 ## <a name="function-information"></a>Informations sur la fonction
 
-|||
+|Élément|Valeur|
 |-|-|
 |**En-tête**|Inclure VSPerf.h|
 |**Bibliothèque**|Utiliser VSPerf.lib|
 |**Unicode**|Implémenté en tant que `CommentMarkProfileW` (Unicode) et `CommentMarkProfileA` (ANSI).|
 
-## <a name="example"></a> Exemple
+## <a name="example"></a>Exemple
  Le code suivant illustre l’appel de la fonction CommentMarkProfile. L’exemple suppose l’utilisation de macros de chaîne Win32 et des paramètres de compilateur Unicode pour déterminer si le code appelle la fonction [!INCLUDE[vcpransi](../profiling/includes/vcpransi_md.md)].
 
 ```cpp
@@ -111,4 +111,4 @@ void ExerciseCommentMarkProfile()
 ```
 
 ## <a name="see-also"></a>Voir aussi
-- [Visual Studio profiler API référence (native)](../profiling/visual-studio-profiler-api-reference-native.md)
+- [Informations de référence sur l’API du profileur Visual Studio (natif)](../profiling/visual-studio-profiler-api-reference-native.md)

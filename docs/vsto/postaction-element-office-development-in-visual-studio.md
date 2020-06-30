@@ -1,7 +1,7 @@
 ---
-title: '&lt;postAction&gt; élément (développement Office dans Visual Studio)'
+title: '&lt;&gt;élément postAction (développement Office dans Visual Studio)'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - VB
 - CSharp
@@ -14,17 +14,17 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 53cf47ef9a78ebb54c377e19b4f7fbad444bbfcd
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 149aa0cf8543f5b5b1b5ada18a8b2f0e58f063d0
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62976533"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85546937"
 ---
-# <a name="ltpostactiongt-element-office-development-in-visual-studio"></a>&lt;postAction&gt; élément (développement Office dans Visual Studio)
+# <a name="ltpostactiongt-element-office-development-in-visual-studio"></a>&lt;&gt;élément postAction (développement Office dans Visual Studio)
   L’élément `postAction` de l’espace de noms `vstav3` contient les éléments `entrypoint` et tous les éléments `postActionData` associés à des actions de post-déploiement, lesquelles s’exécutent après l’installation des solutions Office.
 
-## <a name="syntax"></a>Syntaxe
+## <a name="syntax"></a>Syntax
 
 ```xml
 <postAction>
@@ -36,22 +36,22 @@ ms.locfileid: "62976533"
 ```
 
 ## <a name="elements-and-attributes"></a>Éléments et attributs
- L’élément `postAction` est facultatif et se trouve dans l’espace de noms `vstav3` . Il existe un seul élément `postAction` défini dans un manifeste de l’application pour chaque action de post-déploiement.
+ L’élément `postAction` est facultatif et se trouve dans l’espace de noms `vstav3` . Il existe un élément `postAction` défini dans un manifeste de l’application pour chaque action de post-déploiement.
 
  L’élément `postAction` ne comporte pas d’attributs.
 
  `postAction` comporte les éléments suivants.
 
-### <a name="entrypoint"></a>entrypoint
- Optionnel. Le rôle de la `entryPoint` élément dans le `vstav3` espace de noms est défini dans [ &#60;entryPoints&#62; élément &#40;développement Office dans Visual Studio&#41;](../vsto/entrypoints-element-office-development-in-visual-studio.md).
+### <a name="entrypoint"></a>entryPoint
+ facultatif. Le rôle de l' `entryPoint` élément dans l' `vstav3` espace de noms est défini dans [&#60;élément entryPoints&#62; &#40;développement Office dans Visual Studio&#41;](../vsto/entrypoints-element-office-development-in-visual-studio.md).
 
 ### <a name="postactiondata"></a>postActionData
- Optionnel. Le rôle de la `postActionData` élément dans le `vstav3` espace de noms est défini dans [ &#60;postActionData&#62; élément &#40;développement Office dans Visual Studio&#41;](../vsto/postactiondata-element-office-development-in-visual-studio.md).
+ facultatif. Le rôle de l' `postActionData` élément dans l' `vstav3` espace de noms est défini dans [&#60;élément postActionData&#62; &#40;développement Office dans Visual Studio&#41;](../vsto/postactiondata-element-office-development-in-visual-studio.md).
 
-## <a name="post-deployment-action-example"></a>Exemple d’action de post-déploiement
+## <a name="post-deployment-action-example"></a>Exemple d’action de postconnexion
 
 ### <a name="description"></a>Description
- L’exemple de code suivant illustre l’élément `postAction` d’un manifeste de l’application pour une solution Office déployée à l’aide de [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]. Cet exemple de code fait partie d’un exemple plus complet fourni dans [manifestes d’Application pour les solutions Office](../vsto/application-manifests-for-office-solutions.md).
+ L’exemple de code suivant illustre l’élément `postAction` d’un manifeste de l’application pour une solution Office déployée à l’aide de [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]. Cet exemple de code fait partie d’un exemple plus complet fourni dans [les manifestes d’application pour les solutions Office](../vsto/application-manifests-for-office-solutions.md).
 
 ### <a name="code"></a>Code
 

@@ -1,7 +1,7 @@
 ---
-title: 'Procédure : Ajouter un volet Office personnalisé à une application'
+title: 'Comment : ajouter un volet de tâches personnalisé à une application'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -13,36 +13,36 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 88ac74d0e2c666926c5b88976146878991729628
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 0df4d51795f01c98790f1d5b0525c45cc71899ab
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63427919"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85546209"
 ---
-# <a name="how-to-add-a-custom-task-pane-to-an-application"></a>Procédure : Ajouter un volet Office personnalisé à une application
+# <a name="how-to-add-a-custom-task-pane-to-an-application"></a>Comment : ajouter un volet de tâches personnalisé à une application
   Vous pouvez ajouter un volet des tâches personnalisé aux applications répertoriées ci-dessus à l’aide du complément VSTO. Pour plus d’informations, consultez [volets de tâches personnalisés](../vsto/custom-task-panes.md).
 
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]
 
 > [!NOTE]
-> Il est possible que pour certains des éléments de l’interface utilisateur de Visual Studio, votre ordinateur affiche des noms ou des emplacements différents de ceux indiqués dans les instructions suivantes. L’édition de Visual Studio dont vous disposez et les paramètres que vous utilisez déterminent ces éléments. Pour plus d’informations, consultez [Personnaliser l’IDE Visual Studio](../ide/personalizing-the-visual-studio-ide.md).
+> Il est possible que pour certains des éléments de l'interface utilisateur de Visual Studio, votre ordinateur affiche des noms ou des emplacements différents de ceux indiqués dans les instructions suivantes. L'édition de Visual Studio dont vous disposez et les paramètres que vous utilisez déterminent ces éléments. Pour plus d’informations, consultez [Personnaliser l’IDE Visual Studio](../ide/personalizing-the-visual-studio-ide.md).
 
-## <a name="add-a-custom-task-pane-to-an-application"></a>Ajouter un volet Office personnalisé à une application
+## <a name="add-a-custom-task-pane-to-an-application"></a>Ajouter un volet de tâches personnalisé à une application
 
 ### <a name="to-add-a-custom-task-pane-to-an-application"></a>Pour ajouter un volet des tâches personnalisé à une application
 
-1. Ouvrez ou créez un projet de complément VSTO pour l'une des applications répertoriées ci-dessus. Pour plus d'informations, voir [Procédure : Créer des projets Office dans Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
+1. Ouvrez ou créez un projet de complément VSTO pour l'une des applications répertoriées ci-dessus. Pour plus d’informations, consultez [Comment : créer des projets Office dans Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
 
 2. Dans le menu **Projet** , cliquez sur **Ajouter un contrôle utilisateur**.
 
-3. Dans le **ajouter un nouvel élément** boîte de dialogue, changez le nom du nouveau contrôle utilisateur à **MyUserControl**, puis cliquez sur **ajouter**.
+3. Dans la boîte de dialogue **Ajouter un nouvel élément** , remplacez le nom du nouveau contrôle utilisateur par **MyUserControl**, puis cliquez sur **Ajouter**.
 
      Le contrôle utilisateur s'ouvre dans le concepteur.
 
-4. Ajouter un ou plusieurs contrôles Windows Forms à partir de la **boîte à outils** au contrôle utilisateur.
+4. Ajoutez un ou plusieurs contrôles Windows Forms de la **boîte à outils** au contrôle utilisateur.
 
-5. Ouvrez le **ThisAddIn.cs** ou **ThisAddIn.vb** fichier de code.
+5. Ouvrez le fichier de code **ThisAddIn.cs** ou **ThisAddIn. vb** .
 
 6. Ajoutez le code suivant à la classe `ThisAddIn` . Ce code déclare des instances de `MyUserControl` et <xref:Microsoft.Office.Tools.CustomTaskPane> en tant que membres de la classe `ThisAddIn` .
 
@@ -59,5 +59,5 @@ ms.locfileid: "63427919"
 
 ## <a name="see-also"></a>Voir aussi
 - [Personnalisation de l’interface utilisateur Office](../vsto/office-ui-customization.md)
-- [Volets Office personnalisés](../vsto/custom-task-panes.md)
-- [Procédure pas à pas : Automatiser une application à partir d’un volet Office personnalisé](../vsto/walkthrough-automating-an-application-from-a-custom-task-pane.md)
+- [Volets des tâches personnalisés](../vsto/custom-task-panes.md)
+- [Procédure pas à pas : automatiser une application à partir d’un volet de tâches personnalisé](../vsto/walkthrough-automating-an-application-from-a-custom-task-pane.md)

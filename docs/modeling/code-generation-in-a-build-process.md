@@ -1,7 +1,7 @@
 ---
 title: Génération de code dans un processus de génération
 ms.date: 03/22/2018
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - text templates, build tasks
 - text templates, transforming by using msbuild
@@ -13,12 +13,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: e01136b845124d74c22ceb1c7cab877a8e2d1d04
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 1fd7538782bff80ee12ac0aa0e66c0daa4da2d5c
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75590551"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85546716"
 ---
 # <a name="invoke-text-transformation-in-the-build-process"></a>Appeler la transformation de texte dans le processus de génération
 
@@ -26,7 +26,7 @@ La [transformation de texte](../modeling/code-generation-and-t4-text-templates.m
 
 Il existe quelques différences en matière de possibilités offertes par les tâches de génération, selon le moteur de génération que vous utilisez. Lorsque vous générez la solution dans Visual Studio, un modèle de texte peut accéder à l’API Visual Studio (EnvDTE) si l’attribut [hostspecific = "true"](../modeling/t4-template-directive.md) est défini. Mais cela n’est pas vrai lorsque vous générez la solution à partir de la ligne de commande ou lorsque vous lancez une génération de serveur par le biais de Visual Studio. Dans ces situations, la génération est exécutée par MSBuild et un autre hôte T4 est utilisé. Cela signifie que vous ne pouvez pas accéder à des éléments tels que des noms de fichiers projet de la même façon quand vous générez un modèle de texte à l’aide de MSBuild. Toutefois, vous pouvez [passer des informations d’environnement dans des modèles de texte et des processeurs de directive en utilisant des paramètres de build](#parameters).
 
-## <a name="buildserver"></a>Configurer vos ordinateurs
+## <a name="configure-your-machines"></a><a name="buildserver"></a>Configurer vos ordinateurs
 
 Pour activer les tâches de génération sur votre ordinateur de développement, installez le kit de développement logiciel Modeling SDK pour Visual Studio.
 
@@ -36,22 +36,22 @@ Si [votre serveur de builds](/azure/devops/pipelines/agents/agents) s’exécute
 
 - % ProgramFiles (x86)% \ Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VisualStudio\v16.0\TextTemplating
 
-  - Microsoft. VisualStudio. TextTemplating. Sdk. Host. 15. dll
+  - Microsoft.VisualStudio.TextTemplating.Sdk.Host.15.0.dll
   - Microsoft.TextTemplating.Build.Tasks.dll
   - Microsoft.TextTemplating.targets
 
 - % ProgramFiles (x86)% \ Microsoft Visual Studio\2019\Community\VSSDK\VisualStudioIntegration\Common\Assemblies\v4.0
 
-  - Microsoft. VisualStudio. TextTemplating. 15. dll
-  - Microsoft. VisualStudio. TextTemplating. interfaces. 15. dll
-  - Microsoft. VisualStudio. TextTemplating. VSHost. 15. dll
+  - Microsoft.VisualStudio.TextTemplating.15.0.dll
+  - Microsoft.VisualStudio.TextTemplating.Interfaces.15.0.dll
+  - Microsoft.VisualStudio.TextTemplating.VSHost.15.0.dll
 
 - % ProgramFiles (x86)% \ Microsoft Visual Studio\2019\Community\Common7\IDE\PublicAssemblies
 
-  - Microsoft. VisualStudio. TextTemplating. Modeling. 15. dll
+  - Microsoft.VisualStudio.TextTemplating.Modeling.15.0.dll
 
 > [!TIP]
-> Si vous recevez une `MissingMethodException` pour une méthode Microsoft. CodeAnalysis lors de l’exécution des cibles de génération TextTemplating sur un serveur de builds, assurez-vous que les assemblys Roslyn se trouvent dans un répertoire nommé *Roslyn* qui se trouve dans le même répertoire que l’exécutable de génération (par exemple, *MSBuild. exe*).
+> Si vous recevez une `MissingMethodException` pour une méthode Microsoft. CodeAnalysis lors de l’exécution des cibles de génération TextTemplating sur un serveur de builds, assurez-vous que les assemblys Roslyn se trouvent dans un répertoire nommé *Roslyn* qui se trouve dans le même répertoire que l’exécutable de génération (par exemple, *msbuild.exe*).
 
 ## <a name="edit-the-project-file"></a>Modifier le fichier projet
 
@@ -184,7 +184,7 @@ Ces propriétés sont utilisées uniquement par MSBuild. Elles n'affectent pas l
 </ItemGroup>
 ```
 
-Un dossier utile pour la redirection est `$(IntermediateOutputPath)`.
+Un dossier utile pour la redirection est `$(IntermediateOutputPath)` .
 
 Si vous spécifiez un nom de fichier de sortie, il est prioritaire par rapport à l’extension spécifiée dans la directive de sortie des modèles.
 
@@ -220,7 +220,7 @@ $(IncludeFolders);$(MSBuildProjectDirectory)\Include;AnotherFolder;And\Another</
 </PropertyGroup>
 ```
 
-## <a name="parameters"></a>Passer les données de contexte de build dans les modèles
+## <a name="pass-build-context-data-into-the-templates"></a><a name="parameters"></a>Passer les données de contexte de build dans les modèles
 
 Vous pouvez définir des valeurs de paramètre dans le fichier projet. Par exemple, vous pouvez passer des propriétés de [Build](../msbuild/msbuild-properties.md) et des [variables d’environnement](../msbuild/how-to-use-environment-variables-in-a-build.md):
 
@@ -252,9 +252,9 @@ Dim value = Host.ResolveParameterValue("-", "-", "parameterName")
 ```
 
 > [!NOTE]
-> `ResolveParameterValue` obtient les données de `T4ParameterValues` uniquement lorsque vous utilisez MSBuild. Lorsque vous transformez le modèle à l’aide de Visual Studio, les paramètres ont des valeurs par défaut.
+> `ResolveParameterValue`Obtient les données à partir de `T4ParameterValues` uniquement lorsque vous utilisez MSBuild. Lorsque vous transformez le modèle à l’aide de Visual Studio, les paramètres ont des valeurs par défaut.
 
-## <a name="msbuild"></a>Utiliser les propriétés de projet dans les directives d’assembly et include
+## <a name="use-project-properties-in-assembly-and-include-directives"></a><a name="msbuild"></a>Utiliser les propriétés de projet dans les directives d’assembly et include
 
 Les macros Visual Studio telles que **$ (SolutionDir)** ne fonctionnent pas dans MSBuild. Vous pouvez utiliser des propriétés de projet à la place.
 
@@ -283,13 +283,13 @@ Désormais, vous pouvez utiliser votre propriété de projet dans les directives
 
 Ces directives obtiennent des valeurs à partir de T4parameterValues dans MSBuild et les hôtes Visual Studio.
 
-## <a name="q--a"></a>Q et R
+## <a name="q--a"></a>Questions et réponses
 
 **Pourquoi souhaite-t-il transformer des modèles dans le serveur de builds ? J’ai déjà transformé les modèles dans Visual Studio avant d’avoir archivé mon code.**
 
 Si vous mettez à jour un fichier inclus ou un autre fichier lu par le modèle, Visual Studio ne transforme pas automatiquement le fichier. La transformation des modèles dans le cadre de la génération permet de s’assurer que tout est à jour.
 
-**Quelles sont les autres options disponibles pour la transformation des modèles de texte ?**
+**Quelles sont les autres options en matière de transformation de modèles de texte ?**
 
 - L' [utilitaire TextTransform](../modeling/generating-files-with-the-texttransform-utility.md) peut être utilisé dans des scripts de commande. Dans la plupart des cas, il est plus facile d’utiliser MSBuild.
 
@@ -303,13 +303,13 @@ Si vous mettez à jour un fichier inclus ou un autre fichier lu par le modèle, 
 
 ::: moniker range="vs-2017"
 
-- Il y a de bonnes recommandations dans le modèle de MSbuild T4 sur `%ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\msbuild\Microsoft\VisualStudio\v15.0\TextTemplating\Microsoft.TextTemplating.targets`
+- Il y a de bonnes recommandations dans le modèle de MSbuild T4 à l’adresse`%ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\msbuild\Microsoft\VisualStudio\v15.0\TextTemplating\Microsoft.TextTemplating.targets`
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-- Il y a de bonnes recommandations dans le modèle de MSbuild T4 sur `%ProgramFiles(x86)%\Microsoft Visual Studio\2019\Enterprise\msbuild\Microsoft\VisualStudio\v16.0\TextTemplating\Microsoft.TextTemplating.targets`
+- Il y a de bonnes recommandations dans le modèle de MSbuild T4 à l’adresse`%ProgramFiles(x86)%\Microsoft Visual Studio\2019\Enterprise\msbuild\Microsoft\VisualStudio\v16.0\TextTemplating\Microsoft.TextTemplating.targets`
 
 ::: moniker-end
 

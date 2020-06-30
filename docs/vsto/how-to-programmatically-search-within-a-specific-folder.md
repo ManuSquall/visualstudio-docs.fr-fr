@@ -1,7 +1,7 @@
 ---
-title: 'Procédure : Rechercher par programmation dans un dossier spécifique'
+title: 'Comment : effectuer une recherche par programmation dans un dossier spécifique'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -12,15 +12,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5ac3dbb169fee82a55cc41b773d3616c56f83534
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8f5e0f098edcffce07eb2c3f243b994d1a53cdf9
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62961899"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85547015"
 ---
-# <a name="how-to-programmatically-search-within-a-specific-folder"></a>Procédure : Rechercher par programmation dans un dossier spécifique
-  Cet exemple de code utilise le `Find` et `FindNext` méthodes pour rechercher du texte dans le champ objet des messages électroniques qui se trouvent dans le **boîte de réception**. Cette méthode utilise un filtre de chaîne à rechercher la lettre T comme la lettre de départ de la `Subject` texte.
+# <a name="how-to-programmatically-search-within-a-specific-folder"></a>Comment : effectuer une recherche par programmation dans un dossier spécifique
+  Cet exemple de code utilise `Find` les `FindNext` méthodes et pour rechercher du texte dans le champ objet des messages électroniques qui se trouvent dans la **boîte de réception**. Cette méthode utilise un filtre de chaîne pour vérifier la lettre T comme lettre de départ du `Subject` texte.
 
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]
 
@@ -28,6 +28,6 @@ ms.locfileid: "62961899"
  [!code-csharp[Trin_OL_SearchFolder#1](../vsto/codesnippet/CSharp/Trin_OL_SearchFolder/thisaddin.cs#1)]
 
 ## <a name="see-also"></a>Voir aussi
-- [Travailler avec des dossiers](../vsto/working-with-folders.md)
-- [Vue d’ensemble du modèle d’objet Outlook](../vsto/outlook-object-model-overview.md)
-- [Guide pratique pour Récupérer par programme un dossier par nom](../vsto/how-to-programmatically-retrieve-a-folder-by-name.md)
+- [Utiliser des dossiers](../vsto/working-with-folders.md)
+- [Vue d’ensemble du modèle objet Outlook](../vsto/outlook-object-model-overview.md)
+- [Comment : récupérer un dossier par nom par programmation](../vsto/how-to-programmatically-retrieve-a-folder-by-name.md)

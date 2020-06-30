@@ -1,7 +1,7 @@
 ---
 title: 'Comment : ajouter des commandes à des menus contextuels'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 82c26022f0c88f1ce125c64f5ec3b2df8d20346e
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: 1ad27481799718d9d2b0872d7a43837fc822ca40
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72986031"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85546196"
 ---
 # <a name="how-to-add-commands-to-shortcut-menus"></a>Comment : ajouter des commandes à des menus contextuels
   Cette rubrique montre comment ajouter des commandes à un menu contextuel dans une application Office à l’aide d’un complément VSTO.
@@ -27,11 +27,11 @@ ms.locfileid: "72986031"
 
 ### <a name="to-add-commands-to-shortcut-menus-in-office"></a>Pour ajouter des commandes à des menus contextuels dans Office
 
-1. Ajoutez un élément **Ribbon XML** à un projet au niveau du document ou de complément VSTO. Pour plus d’informations, consultez [Comment : prendre en main la personnalisation du ruban](../vsto/how-to-get-started-customizing-the-ribbon.md). Vers l'avant
+1. Ajoutez un élément **Ribbon XML** à un projet au niveau du document ou de complément VSTO. Pour plus d’informations, consultez [Comment : prendre en main la personnalisation du ruban](../vsto/how-to-get-started-customizing-the-ribbon.md). Dans
 
 2. Dans l’**Explouateur de solutions**, sélectionnez **ThisAddin.cs** ou **ThisAddin.vb**.
 
-3. Dans la barre de menus, sélectionnez **Afficher** > **Code**.
+3. Dans la barre de menus, choisissez **Afficher**le  >  **code**.
 
      Le fichier de classe **ThisAddin** s’ouvre dans l’éditeur de code.
 
@@ -40,9 +40,9 @@ ms.locfileid: "72986031"
      [!code-csharp[Trin_WordAddIn_Menus#1](../vsto/codesnippet/CSharp/trin_wordaddin_menus.cs/thisaddin.cs#1)]
      [!code-vb[Trin_WordAddIn_Menus#1](../vsto/codesnippet/VisualBasic/trin_wordaddin_menus.vb/thisaddin.vb#1)]
 
-5. Dans l’ **Explorateur de solutions**, sélectionnez le fichier XML de ruban. Par défaut, le fichier XML du ruban se nomme *Ribbon1. xml*.
+5. Dans l’ **Explorateur de solutions**, sélectionnez le fichier XML de ruban. Par défaut, le fichier XML du ruban est nommé *Ribbon1.xml*.
 
-6. Dans la barre de menus, sélectionnez **Afficher** > **Code**.
+6. Dans la barre de menus, choisissez **Afficher**le  >  **code**.
 
      Le fichier XML de ruban s’ouvre dans l’éditeur de code.
 
@@ -72,7 +72,7 @@ ms.locfileid: "72986031"
 
 8. Dans l’ **Explorateur de solutions**, choisissez **MyRibbon.cs** ou **MyRibbon.vb**.
 
-9. Ajoutez une méthode de rappel à la classe `Ribbon1` pour chaque contrôle que vous souhaitez gérer.
+9. Ajoutez une méthode de rappel à la `Ribbon1` classe pour chaque contrôle que vous souhaitez gérer.
 
      La méthode de rappel suivante gère le bouton **Mon bouton** . Ce code ajoute une chaîne au document actif à l’emplacement actuel du curseur.
 

@@ -1,18 +1,18 @@
 ---
 title: Incorporation d'un schéma dans un Windows Form
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 author: JoshuaPartlow
 ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 94425c9f3bc586847f43589f7abdcef2295cf1b9
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.openlocfilehash: 3e81a5ff10cd6e309ffbf17e40ffbaa9ec88f185
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/16/2020
-ms.locfileid: "76114628"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85547626"
 ---
 # <a name="embed-a-diagram-in-a-windows-form"></a>Incorporer un diagramme dans un Windows Form
 
@@ -67,7 +67,7 @@ Vous pouvez incorporer un diagramme DSL dans un contrôle Windows, qui apparaît
 
 ## <a name="update-the-form-using-store-events"></a>Mettre à jour le formulaire à l’aide des événements Store
 
-1. Dans le concepteur de formulaires, ajoutez une **zone de liste** nommée `listBox1`. Cette opération affiche une liste des éléments du modèle. Elle est synchronisée avec le modèle à l’aide d' *événements de magasin*. Pour plus d’informations, consultez les [gestionnaires d’événements propagent les modifications en dehors du modèle](../modeling/event-handlers-propagate-changes-outside-the-model.md).
+1. Dans le concepteur de formulaires, ajoutez une **zone de liste** nommée `listBox1` . Cette opération affiche une liste des éléments du modèle. Elle est synchronisée avec le modèle à l’aide d' *événements de magasin*. Pour plus d’informations, consultez les [gestionnaires d’événements propagent les modifications en dehors du modèle](../modeling/event-handlers-propagate-changes-outside-the-model.md).
 
 2. Dans le fichier de code personnalisé, remplacez les autres méthodes de la classe DocView :
 

@@ -1,7 +1,7 @@
 ---
-title: 'Procédure : Récupérer par programme un dossier par nom'
+title: 'Comment : récupérer un dossier par nom par programmation'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -12,14 +12,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a494f954f3f670fb796b33a0dbd01e2512ad1d26
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 901de848b22f344ded2d71b11e9859917b8382d4
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62955727"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85547106"
 ---
-# <a name="how-to-programmatically-retrieve-a-folder-by-name"></a>Procédure : Récupérer par programme un dossier par nom
+# <a name="how-to-programmatically-retrieve-a-folder-by-name"></a>Comment : récupérer un dossier par nom par programmation
   Cet exemple obtient une référence à un dossier personnalisé nommé, puis affiche le contenu du dossier.
 
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]
@@ -33,7 +33,7 @@ ms.locfileid: "62955727"
 - Un dossier nommé TestFolder.
 
 ## <a name="see-also"></a>Voir aussi
-- [Travailler avec des dossiers](../vsto/working-with-folders.md)
-- [Guide pratique pour Rechercher par programmation dans un dossier spécifique](../vsto/how-to-programmatically-search-within-a-specific-folder.md)
-- [Guide pratique pour Rechercher un contact spécifique par programmation](../vsto/how-to-programmatically-search-for-a-specific-contact.md)
-- [Guide pratique pour Créer par programmation des éléments de dossier personnalisés](../vsto/how-to-programmatically-create-custom-folder-items.md)
+- [Utiliser des dossiers](../vsto/working-with-folders.md)
+- [Comment : effectuer une recherche par programmation dans un dossier spécifique](../vsto/how-to-programmatically-search-within-a-specific-folder.md)
+- [Comment : Rechercher un contact spécifique par programmation](../vsto/how-to-programmatically-search-for-a-specific-contact.md)
+- [Comment : créer des éléments de dossier personnalisés par programmation](../vsto/how-to-programmatically-create-custom-folder-items.md)

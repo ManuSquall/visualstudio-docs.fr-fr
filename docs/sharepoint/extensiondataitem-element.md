@@ -1,5 +1,5 @@
 ---
-title: ExtensionDataItem, élément | Microsoft Docs
+title: Élément ExtensionDataItem | Microsoft Docs
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -12,17 +12,17 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 658fb63227f4c4532038d537bde7cc10ca2c4f5e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 295ee649cec01e50b237b4fad1798806d460727b
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62967381"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85546547"
 ---
 # <a name="extensiondataitem-element"></a>ExtensionDataItem (élément)
-  Un élément de données personnalisé qui est associé à l’élément de projet SharePoint, au format clé/valeur. La clé et la valeur doivent être des chaînes.
+  Élément de données personnalisé associé à l’élément de projet SharePoint, au format clé/valeur. La clé et la valeur doivent être des chaînes.
 
-## <a name="syntax"></a>Syntaxe
+## <a name="syntax"></a>Syntax
 
 ```xml
 <ExtensionDataItem Key = "Key of the data item"
@@ -36,8 +36,8 @@ ms.locfileid: "62967381"
 
 |Attribut|Description|
 |---------------|-----------------|
-|**Key**|Requis **xs : string** attribut.<br /><br /> La clé qui est utilisée pour stocker et récupérer l’élément de données.|
-|**Valeur**|Requis **xs : String** attribut.<br /><br /> La valeur de l’élément de données.|
+|**Clé**|Attribut **XS : String** requis.<br /><br /> Clé utilisée pour stocker et récupérer l’élément de données.|
+|**Valeur**|Attribut **XS : String** requis.<br /><br /> Valeur de l’élément de données.|
 
 ### <a name="child-elements"></a>Éléments enfants
  Aucun.
@@ -46,19 +46,19 @@ ms.locfileid: "62967381"
 
 |Élément|Description|
 |-------------|-----------------|
-|[ExtensionData](../sharepoint/extensiondata-element.md)|Représente une collection d’éléments de données personnalisés qui sont associés à l’élément de projet SharePoint.|
+|[ExtensionData](../sharepoint/extensiondata-element.md)|Représente une collection d’éléments de données personnalisés associés à l’élément de projet SharePoint.|
 
-## <a name="remarks"></a>Notes
- Lorsque vous associez des données personnalisées à un élément de projet SharePoint à l’aide de la <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItem.ExtensionData%2A> propriété d’un <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItem> Visual Studio enregistre les données dans un nouvel objet **ExtensionDataItem** élément dans le `.spdata` de fichiers pour le élément de projet. Pour plus d’informations, consultez [enregistrer les données dans les extensions du système de projet SharePoint](../sharepoint/saving-data-in-extensions-of-the-sharepoint-project-system.md).
+## <a name="remarks"></a>Remarques
+ Lorsque vous associez des données personnalisées à un élément de projet SharePoint à l’aide <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItem.ExtensionData%2A> de la propriété d’un <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItem> objet, Visual Studio enregistre les données dans un nouvel élément **ExtensionDataItem** dans le `.spdata` fichier pour l’élément de projet. Pour plus d’informations, consultez [enregistrer des données dans les extensions du système de projet SharePoint](../sharepoint/saving-data-in-extensions-of-the-sharepoint-project-system.md).
 
 ## <a name="element-information"></a>Informations sur les éléments
 
-|||
+|Propriété|Valeur|
 |-|-|
-|**Espace de noms**|http:\/\/schemas.microsoft.com/VisualStudio/<br>2010/SharePointTools/SharePointProjectItemModel|
-|**Nom de schéma**|Schéma d’élément de projet SharePoint|
-|**Fichier de validation**|ProjectItemModelSchema.xsd|
+|**Espace de noms**|http : \/ \/ schemas.Microsoft.com/VisualStudio/<br>2010/SharePointTools/SharePointProjectItemModel|
+|**Nom du schéma**|Schéma d’élément de projet SharePoint|
+|**Fichier de validation**|ProjectItemModelSchema. xsd|
 |**Peut être vide**|Non|
 
 ## <a name="see-also"></a>Voir aussi
-- [Référence de schéma élément de projet SharePoint](../sharepoint/sharepoint-project-item-schema-reference.md)
+- [Référence du schéma d’élément de projet SharePoint](../sharepoint/sharepoint-project-item-schema-reference.md)

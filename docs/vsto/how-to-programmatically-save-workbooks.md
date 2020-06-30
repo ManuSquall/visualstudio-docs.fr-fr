@@ -1,7 +1,7 @@
 ---
-title: 'Procédure : Enregistrer des classeurs par programmation'
+title: 'Comment : enregistrer des classeurs par programmation'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -14,14 +14,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f82e469997a7d072ab04e4c5ef6df0f36a8dc9ec
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 6b45449f72275ac154a433cad725a2867062cc5e
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63419485"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85547080"
 ---
-# <a name="how-to-programmatically-save-workbooks"></a>Procédure : Enregistrer des classeurs par programmation
+# <a name="how-to-programmatically-save-workbooks"></a>Comment : enregistrer des classeurs par programmation
   Il existe plusieurs façons d'enregistrer un classeur. Vous pouvez le faire sans modifier le chemin d’accès. Si le classeur n'a pas été enregistré auparavant, vous devez l'enregistrer en spécifiant un chemin d'accès. Sans chemin d’accès explicite, Microsoft Office Excel enregistre le fichier dans le dossier actif avec le nom qui lui a été attribué lors de sa création. Vous pouvez également enregistrer une copie du classeur sans modifier le classeur ouvert en mémoire.
 
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]
@@ -46,7 +46,7 @@ ms.locfileid: "63419485"
  Vous pouvez enregistrer le classeur spécifié dans un nouvel emplacement ou avec un nouveau nom, en spécifiant éventuellement un format de fichier, un mot de passe, un mode d'accès, etc.
 
 > [!NOTE]
-> Vous souhaiterez peut-être définir la <xref:Microsoft.Office.Interop.Excel._Application.DisplayAlerts%2A> propriété **False** avant d’enregistrer le classeur avec un nouveau chemin d’accès car l’enregistrement sous certains formats requiert une interaction. Si cette propriété **False** conduit Excel à utiliser toutes les valeurs par défaut.
+> Vous souhaiterez peut-être affecter la valeur <xref:Microsoft.Office.Interop.Excel._Application.DisplayAlerts%2A> **false** à la propriété avant d’enregistrer le classeur avec un nouveau chemin d’accès, car l’enregistrement dans certains formats nécessite une interaction. Si vous affectez à cette propriété la **valeur false** , Excel utilise toutes les valeurs par défaut.
 
 ### <a name="to-save-a-workbook-associated-with-a-document-level-customization"></a>Pour enregistrer un classeur associé à une personnalisation au niveau du document
 
@@ -80,12 +80,12 @@ ms.locfileid: "63419485"
      [!code-vb[Trin_VstcoreExcelAutomationAddIn#5](../vsto/codesnippet/VisualBasic/trin_vstcoreexcelautomationaddin/ThisAddIn.vb#5)]
 
 ## <a name="robust-programming"></a>Programmation fiable
- L'annulation interactive d'une quelconque des méthodes qui enregistrent ou copient le classeur génère une erreur d'exécution dans votre code. Par exemple, si votre procédure appelle la <xref:Microsoft.Office.Tools.Excel.Workbook.SaveAs%2A> méthode mais ne pas désactiver les invites d’Excel, et l’utilisateur clique sur **Annuler** lorsque vous y êtes invité, Excel génère une erreur d’exécution.
+ L'annulation interactive d'une quelconque des méthodes qui enregistrent ou copient le classeur génère une erreur d'exécution dans votre code. Par exemple, si votre procédure appelle la <xref:Microsoft.Office.Tools.Excel.Workbook.SaveAs%2A> méthode, mais ne désactive pas les invites d’Excel, et que votre utilisateur clique sur **Annuler** lorsque vous y êtes invité, Excel déclenche une erreur d’exécution.
 
 ## <a name="see-also"></a>Voir aussi
-- [Travailler avec des classeurs](../vsto/working-with-workbooks.md)
+- [Utiliser des classeurs](../vsto/working-with-workbooks.md)
 - [Élément hôte de classeur](../vsto/workbook-host-item.md)
-- [Guide pratique pour Fermer des classeurs par programmation](../vsto/how-to-programmatically-close-workbooks.md)
-- [Limitations de programmation des éléments hôtes et contrôles hôtes](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)
-- [Paramètres optionnels dans les solutions Office](../vsto/optional-parameters-in-office-solutions.md)
-- [Éléments hôtes et la vue d’ensemble des contrôles hôtes](../vsto/host-items-and-host-controls-overview.md)
+- [Comment : fermer des classeurs par programmation](../vsto/how-to-programmatically-close-workbooks.md)
+- [Limitations de programmation des éléments hôtes et des contrôles hôtes](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)
+- [Paramètres facultatifs dans les solutions Office](../vsto/optional-parameters-in-office-solutions.md)
+- [Vue d’ensemble des éléments hôtes et des contrôles hôtes](../vsto/host-items-and-host-controls-overview.md)

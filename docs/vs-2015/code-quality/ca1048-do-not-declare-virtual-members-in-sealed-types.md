@@ -15,17 +15,17 @@ caps.latest.revision: 15
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 9f843efe0aa17b6e87fdb047e1f98a3715ae11af
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 19ae3a4fdc620343f18aa0845c33e1d73529adfe
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72603325"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85546794"
 ---
-# <a name="ca1048-do-not-declare-virtual-members-in-sealed-types"></a>CA1048 : Ne pas déclarer les membres virtuels dans les types sealed
+# <a name="ca1048-do-not-declare-virtual-members-in-sealed-types"></a>CA1048 : Ne pas déclarer les membres virtuels dans les types sealed
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Élément|Valeur|
 |-|-|
 |TypeName|DoNotDeclareVirtualMembersInSealedTypes|
 |CheckId|CA1048|
@@ -33,12 +33,12 @@ ms.locfileid: "72603325"
 |Modification avec rupture|Rupture|
 
 ## <a name="cause"></a>Cause
- Un type public est sealed et déclare une méthode qui est à la fois `virtual` (`Overridable` dans Visual Basic) et non final. Cette règle ne signale pas de violations pour les types délégués, qui doivent suivre ce modèle.
+ Un type public est sealed et déclare une méthode qui est à la fois `virtual` ( `Overridable` en Visual Basic) et non final. Cette règle ne signale pas de violations pour les types délégués, qui doivent suivre ce modèle.
 
 ## <a name="rule-description"></a>Description de la règle
  Les types déclarent des méthodes comme étant virtuelles afin d'hériter de types en mesure de substituer l'implémentation de la méthode virtuelle. Par définition, vous ne pouvez pas hériter d’un type sealed, ce qui rend inutile une méthode virtuelle sur un type sealed.
 
- Les compilateurs et C# .NET Visual Basic ne permettent pas aux types de violer cette règle.
+ Les compilateurs .NET et C# Visual Basic ne permettent pas aux types de violer cette règle.
 
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations
  Pour corriger une violation de cette règle, rendez la méthode non virtuelle ou rendez le type héritable.

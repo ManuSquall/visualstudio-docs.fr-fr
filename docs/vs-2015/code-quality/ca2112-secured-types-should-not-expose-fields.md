@@ -15,17 +15,17 @@ caps.latest.revision: 17
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: b9c91a7c9833d3d9d5ae283c28ae4d437bd07734
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 4267b4f55f78106a4d1e8f3b2f9b296be9ddf618
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72658746"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85546534"
 ---
-# <a name="ca2112-secured-types-should-not-expose-fields"></a>CA2112 : Les types sécurisés ne doivent pas exposer de champs
+# <a name="ca2112-secured-types-should-not-expose-fields"></a>CA2112 : Les types sécurisés ne doivent pas exposer de champs
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Élément|Valeur|
 |-|-|
 |TypeName|SecuredTypesShouldNotExposeFields|
 |CheckId|CA2112|
@@ -45,7 +45,7 @@ ms.locfileid: "72658746"
  Pour les problèmes de sécurité et pour une bonne conception, vous devez corriger les violations en rendant les champs publics non publics. Vous pouvez supprimer un avertissement de cette règle si le champ ne contient pas d’informations qui doivent rester sécurisées et que vous ne vous fiez pas au contenu du champ.
 
 ## <a name="example"></a>Exemple
- L’exemple suivant est composé d’un type de bibliothèque (`SecuredTypeWithFields`) avec des champs non sécurisés, un type (`Distributor`) qui peut créer des instances du type de bibliothèque et qui passe des instances à des types ne sont pas autorisés à les créer, et le code d’application qui peut lire un champs de l’instance, même s’il n’a pas l’autorisation qui sécurise le type.
+ L’exemple suivant est composé d’un type de bibliothèque ( `SecuredTypeWithFields` ) avec des champs non sécurisés, d’un type ( `Distributor` ) qui peut créer des instances du type de bibliothèque et qui passe des instances à des types n’ont pas l’autorisation de les créer, et du code d’application qui peut lire les champs d’une instance, même s’il n’a pas l’autorisation qui sécurise le type.
 
  Le code de bibliothèque suivant enfreint la règle.
 
@@ -64,11 +64,11 @@ ms.locfileid: "72658746"
  Cet exemple produit la sortie suivante.
 
  **Création d’une instance de SecuredTypeWithFields.** 
-**champs de type sécurisé : 22, 33** 
-**modification du champ du type sécurisé...** 
-**champs d’objet mis en cache : 99, 33**
+ **Champs de type sécurisés : 22, 33** 
+ **Modification du champ du type sécurisé...** 
+ **Champs de l’objet mis en cache : 99, 33**
 ## <a name="related-rules"></a>Règles associées
- [CA1051 : Ne déclarez pas de champs d’instances visibles](../code-quality/ca1051-do-not-declare-visible-instance-fields.md)
+ [CA1051 : Ne pas déclarer de champs d'instances visibles](../code-quality/ca1051-do-not-declare-visible-instance-fields.md)
 
 ## <a name="see-also"></a>Voir aussi
  [Liaison des demandes](https://msdn.microsoft.com/library/a33fd5f9-2de9-4653-a4f0-d9df25082c4d) [de données et de modélisation](https://msdn.microsoft.com/library/8c37635d-e2c1-4b64-a258-61d9e87405e6)

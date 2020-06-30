@@ -11,17 +11,17 @@ caps.latest.revision: 13
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: ab621ade120a257508eddbf9527f674b5fda8748
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 2316d6e555fa091d26392aee71b774489c81a379
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72610191"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85546391"
 ---
-# <a name="ca2146-types-must-be-at-least-as-critical-as-their-base-types-and-interfaces"></a>CA2146 : Les types doivent être au moins aussi critiques que les types de base et les interfaces
+# <a name="ca2146-types-must-be-at-least-as-critical-as-their-base-types-and-interfaces"></a>CA2146 : Les types doivent être au moins aussi critiques que les types de base et les interfaces
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Élément|Valeur|
 |-|-|
 |TypeName|TypesMustBeAtLeastAsCriticalAsBaseTypes|
 |CheckId|CA2146|
@@ -29,7 +29,7 @@ ms.locfileid: "72610191"
 |Modification avec rupture|Rupture|
 
 ## <a name="cause"></a>Cause
- Un type transparent est dérivé d’un type qui est marqué avec le <xref:System.Security.SecuritySafeCriticalAttribute> ou le <xref:System.Security.SecurityCriticalAttribute>, ou un type qui est marqué avec l’attribut <xref:System.Security.SecuritySafeCriticalAttribute> est dérivé d’un type marqué avec l’attribut <xref:System.Security.SecurityCriticalAttribute>.
+ Un type transparent est dérivé d’un type qui est marqué avec <xref:System.Security.SecuritySafeCriticalAttribute> ou <xref:System.Security.SecurityCriticalAttribute> , ou un type qui est marqué avec l' <xref:System.Security.SecuritySafeCriticalAttribute> attribut est dérivé d’un type qui est marqué avec l' <xref:System.Security.SecurityCriticalAttribute> attribut.
 
 ## <a name="rule-description"></a>Description de la règle
  Cette règle se déclenche lorsqu’un type dérivé a un attribut de transparence de sécurité qui n’est pas aussi critique que son type de base ou l’interface implémentée. Seuls les types critiques peuvent dériver des types de base critiques ou implémenter des interfaces critiques, et seuls les types critiques ou critiques sécurisés peuvent dériver des types de base critiques sécurisés ou implémenter des interfaces critiques sécurisées. Les violations de cette règle dans la transparence de niveau 2 entraînent une <xref:System.TypeLoadException> pour le type dérivé.

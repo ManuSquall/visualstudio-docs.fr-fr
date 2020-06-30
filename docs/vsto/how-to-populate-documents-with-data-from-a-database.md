@@ -1,7 +1,7 @@
 ---
 title: 'Comment : remplir des documents avec des données d’une base de données'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 907b3deeadd0a56f9e47a6e17a40579a0c9ffa64
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: 8470ec4acf686c016088c5f474539a1ab7ed85df
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72985885"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85547197"
 ---
 # <a name="how-to-populate-documents-with-data-from-a-database"></a>Comment : remplir des documents avec des données d’une base de données
 

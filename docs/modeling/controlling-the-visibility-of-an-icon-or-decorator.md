@@ -1,18 +1,18 @@
 ---
 title: Contrôle de la visibilité d'une icône ou d'un élément décoratif
 ms.date: 11/04/2016
-ms.topic: conceptual
-author: jillre
-ms.author: jillfra
+ms.topic: how-to
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 76db7caa14050c924706763214e92a6ee3d68975
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 1d2082f7e26d3e335ed88bbced0f59d6d6c4780c
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72748498"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85546640"
 ---
 # <a name="controlling-the-visibility-of-an-icon-or-decorator"></a>Contrôle de la visibilité d'une icône ou d'un élément décoratif
 Un élément *décoratif* est une icône ou une ligne de texte qui apparaît sur une forme dans un langage spécifique à un domaine (DSL). Vous pouvez faire en sorte que l’élément décoratif apparaisse et disparaisse en fonction de l’état des propriétés dans le modèle. Par exemple, sur une forme représentant une personne, vous pouvez avoir différentes icônes qui s’affichent en fonction du sexe, du nombre d’enfants, etc. de la personne.
@@ -58,13 +58,13 @@ Un élément *décoratif* est une icône ou une ligne de texte qui apparaît sur
 
 1. Ajoutez une propriété de domaine calculé à la classe de domaine. Dans la fenêtre **Propriétés** , définissez les valeurs suivantes :
 
-     **IsBrowsable =** `False` **: masque la propriété de l’utilisateur**
+     **IsBrowsable =** `False` **: masque la propriété de l’utilisateur**    
 
-     **Genre =** `Calculated` **: vous fournirez le code qui calcule sa valeur**
+     **Genre =** `Calculated` **-cela signifie que vous allez fournir le code qui calcule sa valeur**    
 
      **Nom** de l’exemple **DecoratorControl**
 
-     @No__t_1 de **Type** `Boolean`
+     **Entrer** = `Boolean`
 
      Pour plus d’informations, consultez [Propriétés de stockage calculées et personnalisées](../modeling/calculated-and-custom-storage-properties.md).
 
@@ -76,7 +76,7 @@ Un élément *décoratif* est une icône ou une ligne de texte qui apparaît sur
 
     3. Dans **propriété de filtre**, sélectionnez la propriété de contrôle **DecoratorControl**.
 
-    4. Sous **entrées de visibilité**, entrez `True`.
+    4. Sous **entrées de visibilité**, entrez `True` .
 
 3. Cliquez sur **transformer tous les modèles** dans la barre d’outils **Explorateur de solutions** .
 
@@ -88,7 +88,7 @@ Un élément *décoratif* est une icône ou une ligne de texte qui apparaît sur
 
 6. Notez l’espace de noms, la classe et la méthode qui sont manquants.  Par exemple, société. FamilyTree. Person. GetDecoratorControlValue ().
 
-7. Dans un fichier de code séparé, écrivez une définition de classe partielle qui contient la méthode manquante. Exemple :
+7. Dans un fichier de code séparé, écrivez une définition de classe partielle qui contient la méthode manquante. Par exemple :
 
     ```
     namespace Company.FamilyTree

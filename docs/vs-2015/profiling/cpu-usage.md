@@ -9,17 +9,17 @@ caps.latest.revision: 12
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: f699666216d38c34583ebeb15e2bb6ba4953b671
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 7732a5757281e83c501a8258dd1d44b4f329a87a
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74300751"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85548055"
 ---
-# <a name="cpu-usage"></a>Utilisation du processeur
+# <a name="cpu-usage"></a>Utilisation de l'UC
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Quand vous devez examiner les problèmes de performances de votre application, il est utile de commencer par comprendre comment elle utilise le processeur. L’outil **Utilisation du processeur** vous montre où le processeur exécute du code Visual C++, Visual C#/Visual Basic et JavaScript.  
+Lorsque vous devez étudier les problèmes de performances de votre application, un bon point de départ consiste à comprendre son utilisation du processeur. L’outil **Utilisation du processeur** vous montre où le processeur exécute du code Visual C++, Visual C#/Visual Basic et JavaScript.  
   
  À compter de Visual Studio 2015 Update 1, vous pouvez afficher une répartition par fonction de l’utilisation du processeur sans quitter le débogueur. Vous pouvez activer et désactiver le profilage du processeur pendant le débogage, et afficher les résultats quand l’exécution est arrêtée, par exemple à un point d’arrêt. Pour plus d’informations, consultez [Profile Your CPU in the Debugger in Visual Studio 2015](https://devblogs.microsoft.com/devops/profile-your-cpu-in-the-debugger-in-visual-studio-2015/).  
   
@@ -27,11 +27,11 @@ Quand vous devez examiner les problèmes de performances de votre application, i
   
  Le hub Performances et diagnostics vous offre bien d'autres options pour exécuter et gérer votre session de diagnostic. Par exemple, vous pouvez exécuter l’outil **Utilisation du processeur** sur les ordinateurs locaux ou distants, ou bien dans un simulateur ou un émulateur. Vous pouvez analyser les performances d'un projet ouvert dans Visual Studio, attaché à une application en cours d'exécution, ou démarrer une application installée à partir du Windows Store. Pour plus d’informations, consultez [exécuter les outils de profilage sans débogage](https://msdn.microsoft.com/library/e97ce1a4-62d6-4b8e-a2f7-61576437ff01)  
   
-## <a name="BKMK_Collect_CPU_usage_data"></a> Collecter les données d’utilisation de l’UC  
+## <a name="collect-cpu-usage-data"></a><a name="BKMK_Collect_CPU_usage_data"></a>Collecter les données d’utilisation de l’UC  
   
 1. Dans Visual Studio, définissez la configuration de solution sur **Version finale** et choisissez la cible de déploiement.  
   
-    ![Sélectionner la version et l’ordinateur local](../profiling/media/cpuuse-selectreleaselocalmachine.png "CPUUSE_SelectReleaseLocalMachine")  
+    ![Sélectionner la version et l'ordinateur local](../profiling/media/cpuuse-selectreleaselocalmachine.png "CPUUSE_SelectReleaseLocalMachine")  
   
    - L'exécution de l'application en mode **Version finale** vous offre une meilleure vue des performances réelles de votre application.  
   
@@ -41,17 +41,17 @@ Quand vous devez examiner les problèmes de performances de votre application, i
   
    - Pour les applications Windows Phone, la collecte des données directement à partir de l' **Appareil** fournit les données les plus précises.  
   
-2. Dans le menu **Déboguer** , choisissez **Profileur de performances**.  
+2. Dans le menu **Déboguer** , choisissez **profileur de performances...**.  
   
 3. Choisissez **Utilisation de l'UC** , puis **Démarrer**.  
   
-    ![Choisir l’utilisation de l’UC](../profiling/media/cpuuse-lib-choosecpuusage.png "CPUUSE_LIB_ChooseCpuUsage")  
+    ![Choisir l'utilisation de l'UC](../profiling/media/cpuuse-lib-choosecpuusage.png "CPUUSE_LIB_ChooseCpuUsage")  
   
-4. Lorsque l'application démarre, cliquez sur **Obtenir le nombre maximal**. Attendez environ une seconde après que la sortie s'est affichée, puis choisissez **Obtenir le nombre maximal asynchrone**. Le temps de pause entre les clics de bouton permet d'isoler plus facilement les routines de clic de bouton dans le rapport de diagnostic.  
+4. Lorsque l'application démarre, cliquez sur **Obtenir le nombre maximal**. Attendez environ une seconde après que la sortie s'est affichée, puis choisissez **Obtenir le nombre maximal asynchrone**. L'attente entre les clics de bouton permet plus facilement d'isoler les routines de clic de bouton dans le rapport de diagnostic.  
   
 5. Quand apparaît la deuxième ligne de sortie, choisissez **Arrêter la collecte** dans le hub Performances et diagnostics.  
   
-   ![Arrêter la collecte de données CpuUsage](../profiling/media/cpu-use-wt-stopcollection.png "CPU_USE_WT_StopCollection")  
+   ![Arrêter la collecte des données CpuUsage](../profiling/media/cpu-use-wt-stopcollection.png "CPU_USE_WT_StopCollection")  
   
    L'outil Utilisation de l'UC analyse les données et affiche le rapport.  
   
@@ -59,27 +59,27 @@ Quand vous devez examiner les problèmes de performances de votre application, i
   
 ## <a name="analyze-the-cpu-usage-report"></a>Analyser le rapport d'utilisation de l'UC  
   
-### <a name="BKMK_The_CPU_Usage_call_tree"></a> Arborescence des appels d'utilisation du processeur  
+### <a name="the-cpu-usage-call-tree"></a><a name="BKMK_The_CPU_Usage_call_tree"></a> Arborescence des appels d'utilisation du processeur  
  Pour commencer la présentation des informations sur l'arborescence des appels, sélectionnez de nouveau le segment `GetMaxNumberButton_Click` et consultez les détails d'arborescence des appels.  
   
-#### <a name="BKMK_Call_tree_structure"></a> Structure de l'arborescence des appels  
- ![GetMaxNumberButton&#95;cliquer sur arborescence des appels](../profiling/media/cpu-use-wt-getmaxnumbercalltree-annotated.png "CPU_USE_WT_GetMaxNumberCallTree_annotated")  
+#### <a name="call-tree-structure"></a><a name="BKMK_Call_tree_structure"></a> Structure de l’arborescence des appels  
+ ![GetMaxNumberButton&#95;cliquez sur arborescence des appels](../profiling/media/cpu-use-wt-getmaxnumbercalltree-annotated.png "CPU_USE_WT_GetMaxNumberCallTree_annotated")  
   
-|||  
+|Image|Description|  
 |-|-|  
-|![Étape 1](../profiling/media/procguid-1.png "ProcGuid_1")|Le nœud de niveau supérieur des arborescences d'appels de l'outil Utilisation de l'UC est un pseudo-nœud|  
-|![Étape 2](../profiling/media/procguid-2.png "ProcGuid_2")|Dans la plupart des applications, quand l'option **Afficher le code externe** est désactivée, le nœud de deuxième niveau est un nœud **[Code externe]** contenant le code système et de l'infrastructure qui démarre et arrête l'application, dessine l'interface utilisateur, contrôle la planification des threads et fournit d'autres services de niveau inférieur à l'application.|  
-|![Étape 3](../profiling/media/procguid-3.png "ProcGuid_3")|Les enfants du nœud de deuxième niveau sont les méthodes en code utilisateur et des routines asynchrones appelées ou créées par le code système et d'infrastructure de deuxième niveau.|  
+|![Étape 1](../profiling/media/procguid-1.png "ProcGuid_1")|Le nœud de premier niveau des arborescences d'appels de l'outil Utilisation de l'UC est un pseudo-nœud|  
+|![Étape 2](../profiling/media/procguid-2.png "ProcGuid_2")|Dans la plupart des applications, quand l'option **Afficher le code externe** est désactivée, le nœud de deuxième niveau est un nœud **[Code externe]** contenant le code système et de l'infrastructure qui démarre et arrête l'application, dessine l'interface utilisateur, contrôle la planification des threads et fournit d'autres services de niveau inférieur à l'application.|  
+|![Étape 3](../profiling/media/procguid-3.png "ProcGuid_3")|Les enfants du nœud de deuxième niveau sont les méthodes en code utilisateur et des routines asynchrones appelées ou créées par le code système et d'infrastructure de deuxième niveau.|  
 |![Étape 4](../profiling/media/procguid-4.png "ProcGuid_4")|Les nœuds enfants d'une méthode contiennent des données seulement pour les appels de la méthode parente. Lorsque l'option **Afficher le Code externe** est désactivée, les méthodes d'application peuvent également contenir un nœud **[Code externe]** .|  
   
-#### <a name="BKMK_External_Code"></a> Code externe  
- Le code externe représente des fonctions des composants système et de l'infrastructure exécutés par le code que vous écrivez. Le code externe inclut les fonctions qui démarrent et arrêtent l'application, dessinent l'interface utilisateur, contrôlent les threads et fournissent d'autres services de bas niveau à l'application. Dans la plupart des cas, vous ne serez pas intéressé par le code externe ; par conséquent, l'arborescence des appels de l'utilisation du processeur regroupe les fonctions externes d'une méthode utilisateur en un seul nœud **[Code externe]** .  
+#### <a name="external-code"></a><a name="BKMK_External_Code"></a>Code externe  
+ Le code externe correspond aux fonctions des composants système et infrastructure exécutés par le code que vous écrivez. Le code externe inclut les fonctions qui démarrent et arrêtent l'application, dessinent l'interface utilisateur, contrôlent les threads et fournissent d'autres services de bas niveau à l'application. Dans la plupart des cas, vous ne serez pas intéressé par le code externe ; par conséquent, l'arborescence des appels de l'utilisation du processeur regroupe les fonctions externes d'une méthode utilisateur en un seul nœud **[Code externe]** .  
   
  Quand vous voulez afficher les chemins d'appel du code externe, choisissez **Afficher le code externe** dans la liste **Filtrer la vue** , puis **Appliquer**.  
   
- ![Choisir filtrer l’affichage, puis afficher le code externe](../profiling/media/cpu-use-wt-filterview.png "CPU_USE_WT_FilterView")  
+ ![Choisir Filtrer l'affichage, puis Afficher le code externe](../profiling/media/cpu-use-wt-filterview.png "CPU_USE_WT_FilterView")  
   
- N'oubliez pas que de nombreuses chaînes d'appel en code externe sont profondément imbriquées, la largeur de la colonne Nom de fonction ne peut pas dépasser la largeur d'affichage de presque tous les moniteurs d'ordinateur, sauf les plus larges. Si tel est le cas, les noms de fonction sont affichés sous forme de **[…]** :  
+ N'oubliez pas que de nombreuses chaînes d'appel en code externe sont profondément imbriquées, la largeur de la colonne Nom de fonction ne peut pas dépasser la largeur d'affichage de presque tous les moniteurs d'ordinateur, sauf les plus larges. Si tel est le cas, les noms de fonction sont affichés sous forme de **[…]**:  
   
  ![Code externe imbriqué dans l’arborescence des appels](../profiling/media/cpu-use-wt-showexternalcodetoowide.png "CPU_USE_WT_ShowExternalCodeTooWide")  
   
@@ -87,28 +87,28 @@ Quand vous devez examiner les problèmes de performances de votre application, i
   
  ![Rechercher du code externe imbriqué](../profiling/media/cpu-use-wt-showexternalcodetoowide-found.png "CPU_USE_WT_ShowExternalCodeTooWide_Found")  
   
-### <a name="BKMK_Call_tree_data_columns"></a> Colonnes des données de l'arborescence des appels  
+### <a name="call-tree-data-columns"></a><a name="BKMK_Call_tree_data_columns"></a> Colonnes des données de l’arborescence des appels  
   
-|||  
+|Propriété|Description|
 |-|-|  
-|**% d'utilisation processeur exclusif**|![Équation de données total (%)](../profiling/media/cpu-use-wt-totalpercentequation.png "CPU_USE_WT_TotalPercentEquation")<br /><br /> Pourcentage de l'activité processeur de l'application durant la période sélectionnée qui a été utilisé par les appels à la fonction et aux fonctions appelées par la fonction. Notez que cette information est différente du graphique chronologique **Utilisation du processeur** qui compare l'activité totale de l'application dans une plage de temps à la capacité totale disponible de l'UC.|  
-|**% d'utilisation processeur inclusif**|![Équation auto (%)](../profiling/media/cpu-use-wt-selflpercentequation.png "CPU_USE_WT_SelflPercentEquation")<br /><br /> Pourcentage de l'activité processeur de l'application durant la période sélectionnée qui a été utilisé par les appels à la fonction, sans compter l'activité des fonctions appelées par la fonction.|  
-|**Total processeur (ms)**|Nombre de millisecondes écoulées en appels à la fonction durant la période sélectionnée et aux fonctions qui ont été appelées par la fonction.|  
-|**Processeur auto (ms)**|Nombre de millisecondes écoulées en appels à la fonction durant la période sélectionnée et aux fonctions qui ont été appelées par la fonction.|  
-|**Module**|Nom du module contenant la fonction ou nombre de modules contenant les fonctions dans un nœud [Code externe].|  
+|**Processeur total (%)**|![Équation de données total (%)](../profiling/media/cpu-use-wt-totalpercentequation.png "CPU_USE_WT_TotalPercentEquation")<br /><br /> Pourcentage de l'activité du processeur de l'application dans la plage de temps sélectionnée qui a été utilisé par les appels de la fonction et les fonctions appelées par la fonction. Notez que cette information est différente du graphique chronologique **Utilisation du processeur** qui compare l'activité totale de l'application dans une plage de temps à la capacité totale disponible de l'UC.|  
+|**Processeur auto (%)**|![Équation auto (%)](../profiling/media/cpu-use-wt-selflpercentequation.png "CPU_USE_WT_SelflPercentEquation")<br /><br /> Pourcentage de l'activité du processeur de l'application dans la plage de temps sélectionnée qui a été utilisé par les appels de la fonction, à l'exclusion de l'activité des fonctions appelées par la fonction.|  
+|**Total processeur (ms)**|Nombre de millisecondes utilisées par les appels à la fonction dans la plage de temps sélectionnée et les fonctions appelées par la fonction.|  
+|**Processeur auto (ms)**|Nombre de millisecondes utilisées par les appels à la fonction dans la plage de temps sélectionnée et les fonctions appelées par la fonction.|  
+|**Module**|Nom du module contenant la fonction, ou le nombre de modules contenant les fonctions dans un nœud [Code externe].|  
   
-### <a name="BKMK_Asynchronous_functions_in_the_CPU_Usage_call_tree"></a> Fonctions asynchrones de l’arborescence des appels de l’utilisation du processeur  
- Quand le compilateur rencontre une méthode asynchrone, il crée une classe masquée pour contrôler l'exécution de la méthode. Conceptuellement, la classe est une machine à états qui inclut la liste des fonctions générées par le compilateur qui appellent les opérations de la méthode d'origine en mode asynchrone, ainsi que les rappels, le planificateur et les itérateurs requis. Quand la méthode d'origine est appelée par une méthode parente, le runtime supprime la méthode du contexte d'exécution du parent et exécute les méthodes de la classe masquée dans le contexte du code système et de l'infrastructure qui contrôle l'exécution de l'application. Les méthodes asynchrones sont souvent, mais pas toujours, exécutées sur un ou plusieurs threads différents. Ce code est affiché dans l'arborescence des appels de l'utilisation du processeur en tant qu'enfants du nœud **[Code externe]** situé immédiatement sous le nœud supérieur de l'arborescence.  
+### <a name="asynchronous-functions-in-the-cpu-usage-call-tree"></a><a name="BKMK_Asynchronous_functions_in_the_CPU_Usage_call_tree"></a> Fonctions asynchrones de l'arborescence des appels de l'utilisation du processeur  
+ Lorsque le compilateur rencontre une méthode asynchrone, il crée une classe masquée pour contrôler l'exécution de la méthode. Conceptuellement, la classe est une machine à états qui inclut la liste des fonctions générées par le compilateur qui appellent les opérations de la méthode d'origine en mode asynchrone, ainsi que les rappels, le planificateur et les itérateurs requis. Quand la méthode d'origine est appelée par une méthode parente, le runtime supprime la méthode du contexte d'exécution du parent et exécute les méthodes de la classe masquée dans le contexte du code système et de l'infrastructure qui contrôle l'exécution de l'application. Les méthodes asynchrones sont souvent, mais pas toujours, exécutées sur un ou plusieurs threads différents. Ce code est affiché dans l'arborescence des appels de l'utilisation du processeur en tant qu'enfants du nœud **[Code externe]** situé immédiatement sous le nœud supérieur de l'arborescence.  
   
  Pour le voir dans notre exemple, resélectionnez le segment `GetMaxNumberAsyncButton_Click` dans la chronologie.  
   
- ![GetMaxNumberAsyncButton&#95;cliquer sur la sélection de rapport](../profiling/media/cpu-use-wt-getmaxnumberasync-selected.png "CPU_USE_WT_GetMaxNumberAsync_Selected")  
+ ![GetMaxNumberAsyncButton&#95;cliquez sur sélection du rapport](../profiling/media/cpu-use-wt-getmaxnumberasync-selected.png "CPU_USE_WT_GetMaxNumberAsync_Selected")  
   
  Les deux premiers nœuds sous **[Code externe]** sont les méthodes générées par le compilateur de la classe de la machine d'état. Le troisième nœud est l'appel de la méthode d'origine. En développant les méthodes générées, vous avez un aperçu de ce qui se passe.  
   
- ![Arborescence des&#95;appels GetMaxNumberAsyncButton Click développée](../profiling/media/cpu-use-wt-getmaxnumberasync-expandedcalltree.png "CPU_USE_WT_GetMaxNumberAsync_ExpandedCallTree")  
+ ![GetMaxNumberAsyncButton développé&#95;cliquez sur arborescence des appels](../profiling/media/cpu-use-wt-getmaxnumberasync-expandedcalltree.png "CPU_USE_WT_GetMaxNumberAsync_ExpandedCallTree")  
   
-- `MainPage::GetMaxNumberAsyncButton_Click` a une action très réduite : elle gère une liste de valeurs de tâche, calcule le maximum des résultats et affiche la sortie.  
+- `MainPage::GetMaxNumberAsyncButton_Click` se contente de gérer la liste des valeurs de la tâche, de calculer le nombre maximal de résultats et d'affiche la sortie.  
   
 - `MainPage+<GetMaxNumberAsyncButton_Click>d__3::MoveNext` affiche l'activité requise pour planifier et lancer les 48 tâches qui encapsulent l'appel à `GetNumberAsync`.  
   

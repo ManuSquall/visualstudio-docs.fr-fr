@@ -1,7 +1,7 @@
 ---
-title: 'Procédure : Enregistrer des documents Visio par programmation'
+title: 'Comment : enregistrer des documents Visio par programmation'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -13,14 +13,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 85a45da13594a6f204e91f93ddcee64acb29c493
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 891a5c44159d10aacbb767cbc5376ae1d62252b0
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63419392"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85547054"
 ---
-# <a name="how-to-programmatically-save-visio-documents"></a>Procédure : Enregistrer des documents Visio par programmation
+# <a name="how-to-programmatically-save-visio-documents"></a>Comment : enregistrer des documents Visio par programmation
   Il existe plusieurs façons d’enregistrer des documents Microsoft Office Visio :
 
 - Enregistrer les modifications dans un document existant.
@@ -57,7 +57,7 @@ ms.locfileid: "63419392"
      [!code-csharp[Trin_VstcoreVisioAutomationAddIn#10](../vsto/codesnippet/CSharp/trin_vstcorevisioautomationaddin/ThisAddIn.cs#10)]
      [!code-vb[Trin_VstcoreVisioAutomationAddIn#10](../vsto/codesnippet/VisualBasic/trin_vstcorevisioautomationaddin/ThisAddIn.vb#10)]
 
-## <a name="save-a-document-with-a-new-name-and-specified-arguments"></a>Enregistrer un document sous un nouveau nom et les arguments spécifiés
+## <a name="save-a-document-with-a-new-name-and-specified-arguments"></a>Enregistrer un document sous un nouveau nom et des arguments spécifiés
  Utilisez la méthode `Microsoft.Office.Interop.Visio.Document.SaveAsEx` pour enregistrer un document sous un nouveau nom et spécifier tous les arguments devant être appliqués au document.
 
 ### <a name="to-save-document-with-a-new-name-and-specified-arguments"></a>Pour enregistrer un document sous un nouveau nom avec des arguments spécifiés
@@ -72,12 +72,12 @@ ms.locfileid: "63419392"
 ## <a name="compile-the-code"></a>Compiler le code
  Cet exemple de code doit respecter la condition suivante :
 
-- Pour enregistrer un document qui possède un nouveau nom, un répertoire nommé `Test` doit se trouver dans le *Mes Documents* dossier (pour Windows XP et versions antérieures) ou le *Documents* dossier (Windows Vista).
+- Pour enregistrer un document portant un nouveau nom, un répertoire nommé `Test` doit se trouver dans le dossier *Mes documents* (pour Windows XP et versions antérieures) ou le dossier *documents* (pour Windows Vista).
 
 ## <a name="see-also"></a>Voir aussi
 - [Solutions Visio](../vsto/visio-solutions.md)
-- [Présentation du modèle objet de Visio](../vsto/visio-object-model-overview.md)
-- [Guide pratique pour Créer par programme des documents Visio](../vsto/how-to-programmatically-create-new-visio-documents.md)
-- [Guide pratique pour Ouvrir des documents Visio par programmation](../vsto/how-to-programmatically-open-visio-documents.md)
-- [Guide pratique pour Fermer des documents Visio par programmation](../vsto/how-to-programmatically-close-visio-documents.md)
-- [Guide pratique pour Imprimer des documents Visio par programmation](../vsto/how-to-programmatically-print-visio-documents.md)
+- [Vue d’ensemble du modèle objet Visio](../vsto/visio-object-model-overview.md)
+- [Comment : créer des documents Visio par programmation](../vsto/how-to-programmatically-create-new-visio-documents.md)
+- [Comment : ouvrir des documents Visio par programmation](../vsto/how-to-programmatically-open-visio-documents.md)
+- [Comment : fermer des documents Visio par programmation](../vsto/how-to-programmatically-close-visio-documents.md)
+- [Comment : imprimer des documents Visio par programmation](../vsto/how-to-programmatically-print-visio-documents.md)

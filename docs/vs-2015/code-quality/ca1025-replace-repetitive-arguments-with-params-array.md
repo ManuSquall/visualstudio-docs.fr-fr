@@ -15,17 +15,17 @@ caps.latest.revision: 16
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 21d13611a3c4dd11eb691c746f8746347fb9a83b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 84809341d7898aeb3defe0447f2a2f1142eb460a
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72661968"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85546625"
 ---
 # <a name="ca1025-replace-repetitive-arguments-with-params-array"></a>CA1025 : Remplacer les arguments répétitifs par un tableau params
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Élément|Valeur|
 |-|-|
 |TypeName|ReplaceRepetitiveArgumentsWithParamsArray|
 |CheckId|CA1025|
@@ -36,7 +36,7 @@ ms.locfileid: "72661968"
  Une méthode publique ou protégée dans un type public a plus de trois paramètres, et ses trois derniers paramètres sont du même type.
 
 ## <a name="rule-description"></a>Description de la règle
- Utilisez un tableau de paramètres au lieu d’arguments répétés lorsque le nombre exact d’arguments est inconnu et que les arguments de la variable sont du même type, ou peuvent être passés en tant que même type. Par exemple, la méthode <xref:System.Console.WriteLine%2A> fournit une surcharge à usage général qui utilise un tableau de paramètres pour accepter un nombre quelconque d’arguments <xref:System.Object>.
+ Utilisez un tableau de paramètres au lieu d’arguments répétés lorsque le nombre exact d’arguments est inconnu et que les arguments de la variable sont du même type, ou peuvent être passés en tant que même type. Par exemple, la <xref:System.Console.WriteLine%2A> méthode fournit une surcharge à usage général qui utilise un tableau de paramètres pour accepter un nombre quelconque d' <xref:System.Object> arguments.
 
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations
  Pour corriger une violation de cette règle, remplacez les arguments répétés par un tableau de paramètres.

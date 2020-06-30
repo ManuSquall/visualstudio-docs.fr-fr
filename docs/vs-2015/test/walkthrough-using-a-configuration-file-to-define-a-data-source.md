@@ -12,12 +12,12 @@ ms.assetid: 95fa5214-b12e-4e1f-84e5-cc4c2d86b0d7
 caps.latest.revision: 34
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 64ac9835a085908645713f95f1f07c283d807852
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 3f669c4dcfb91579ac50270914112cd6388e2743
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72657057"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85547977"
 ---
 # <a name="walkthrough-using-a-configuration-file-to-define-a-data-source"></a>Procédure pas à pas : utilisation d'un fichier de configuration pour définir une source de données
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ Cette procédure pas à pas illustre comment utiliser une source de données dé
 
 - accès aux sources de données à l'aide de la classe <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataSourceAttribute>.
 
-## <a name="prerequisites"></a>Configuration requise
+## <a name="prerequisites"></a>Prérequis
  Pour exécuter cette procédure pas à pas, vous avez besoin des éléments suivants :
 
 - Visual Studio Enterprise
@@ -47,7 +47,7 @@ Cette procédure pas à pas illustre comment utiliser une source de données dé
 
 #### <a name="to-add-an-appconfig-file-to-the-project"></a>Pour ajouter un fichier app.config au projet
 
-1. Si votre projet de test contient déjà un fichier app.config, accédez à [Définir une section de configuration personnalisée](#DefineCustomConfigurationSection).
+1. Si votre projet de test a déjà un fichier app.config, accédez à [définir une section de configuration personnalisée](#DefineCustomConfigurationSection).
 
 2. Cliquez avec le bouton droit sur votre projet de test dans l’**Explorateur de solutions**, pointez sur **Ajouter**, puis cliquez sur **Nouvel élément**.
 
@@ -55,7 +55,7 @@ Cette procédure pas à pas illustre comment utiliser une source de données dé
 
 3. Sélectionnez le modèle **Fichier de configuration de l’application**, puis cliquez sur **Ajouter**.
 
-## <a name="DefineCustomConfigurationSection"></a> Définir une section de configuration personnalisée
+## <a name="define-a-custom-configuration-section"></a><a name="DefineCustomConfigurationSection"></a>Définir une section de configuration personnalisée
  Examinez le fichier app.config. Il contient au moins la déclaration XML et un élément racine.
 
 #### <a name="to-add-the-custom-configuration-section-to-the-appconfig-file"></a>Pour ajouter la section de configuration personnalisée au fichier app.config
@@ -66,7 +66,7 @@ Cette procédure pas à pas illustre comment utiliser une source de données dé
 
 3. Dans l'élément `section`, ajoutez un attribut nommé `name` et assignez-lui une valeur égale à `microsoft.visualstudio.testtools`. Ajoutez un autre attribut nommé `type` et assignez-lui une valeur égale à `Microsoft.VisualStudio.TestTools.UnitTesting.TestConfigurationSection, Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a`
 
-   L'élément `section` doit être similaire à ce qui suit :
+   L'élément `section` doit être similaire à ce qui suit : 
 
 ```
 <section name="microsoft.visualstudio.testtools" type="Microsoft.VisualStudio.TestTools.UnitTesting.TestConfigurationSection, Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"/>
@@ -84,7 +84,7 @@ Cette procédure pas à pas illustre comment utiliser une source de données dé
 
 2. Dans l'élément `connectionStrings`, créez deux éléments `add`.
 
-3. Dans le premier élément `add`, créez les attributs et valeurs suivants pour une connexion à une base de données Microsoft Access :
+3. Dans le premier élément `add`, créez les attributs et valeurs suivants pour une connexion à une base de données Microsoft Access : 
 
 |Attribut|Valeurs|
 |---------------|------------|
@@ -92,17 +92,17 @@ Cette procédure pas à pas illustre comment utiliser une source de données dé
 |`connectionString`|`"Provider=Microsoft.Jet.OLEDB.4.0; Data Source=C:\testdatasource.accdb; Persist Security Info=False;"`|
 |`providerName`|`"System.Data.OleDb"`|
 
- Dans le deuxième élément `add`, créez les attributs et valeurs suivants pour une connexion à une feuille de calcul Microsoft Excel :
+ Dans le deuxième élément `add`, créez les attributs et valeurs suivants pour une connexion à une feuille de calcul Microsoft Excel : 
 
-|||
+|Attribut|Valeurs|
 |-|-|
 |`name`|`"MyExcelConn"`|
 |`connectionString`|`"Dsn=Excel Files;dbq=data.xlsx;defaultdir=.; driverid=790;maxbuffersize=2048;pagetimeout=5"`|
 |`providerName`|`"System.Data.Odbc"`|
 
- L'élément `connectionStrings` doit être similaire à ce qui suit :
+ L'élément `connectionStrings` doit être similaire à ce qui suit : 
 
-```
+```xml
 <connectionStrings>
     <add name="MyJetConn" connectionString="Provider=Microsoft.Jet.OLEDB.4.0; Data Source=C:\testdatasource.accdb; Persist Security Info=False;" providerName="System.Data.OleDb" />
     <add name="MyExcelConn" connectionString="Dsn=Excel Files;dbq=data.xlsx;defaultdir=.; driverid=790;maxbuffersize=2048;pagetimeout=5" providerName="System.Data.Odbc" />
@@ -130,27 +130,27 @@ Cette procédure pas à pas illustre comment utiliser une source de données dé
 
 3. Dans l'élément `dataSources`, créez deux éléments `add`.
 
-4. Dans le premier élément `add`, créez les attributs et valeurs suivants pour une source de données Microsoft Access :
+4. Dans le premier élément `add`, créez les attributs et valeurs suivants pour une source de données Microsoft Access : 
 
-|Attribut|Valeurs|
+|Attribut|Valeur|
 |---------------|------------|
 |`name`|`"MyJetDataSource"`|
 |`connectionString`|`"MyJetConn"`|
 |`dataTableName`|`"MyDataTable"`|
 |`dataAccessMethod`|`"Sequential"`|
 
- Dans le deuxième élément `add`, créez les attributs et valeurs suivants pour une source de données Microsoft Excel :
+ Dans le deuxième élément `add`, créez les attributs et valeurs suivants pour une source de données Microsoft Excel : 
 
-|||
+|Attribut|Valeur|
 |-|-|
 |`Name`|`"MyExcelDataSource"`|
 |`connectionString`|`"MyExcelConn"`|
 |`dataTableName`|`"Sheet1$"`|
 |`dataAccessMethod`|`"Sequential"`|
 
- L'élément `microsoft.visualstudio.testtools` doit être similaire à ce qui suit :
+ L'élément `microsoft.visualstudio.testtools` doit être similaire à ce qui suit : 
 
-```
+```xml
 <microsoft.visualstudio.testtools>
     <dataSources>
         <add name="MyJetDataSource" connectionString="MyJetConn" dataTableName="MyDataTable" dataAccessMethod="Sequential"/>
@@ -161,7 +161,7 @@ Cette procédure pas à pas illustre comment utiliser une source de données dé
 
  Le fichier app.config final doit ressembler à ceci :
 
-```
+```xml
 <?xml version="1.0" encoding="utf-8" ?>
 <configuration>
     <configSections>
@@ -223,7 +223,7 @@ Cette procédure pas à pas illustre comment utiliser une source de données dé
 
 2. Remplacez le contenu généré automatiquement du test unitaire par le code suivant :
 
-    ```
+    ```csharp
     using System;
     using Microsoft.VisualStudio.TestTools.UnitTesting;
 

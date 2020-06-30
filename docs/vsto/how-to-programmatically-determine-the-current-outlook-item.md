@@ -1,7 +1,7 @@
 ---
-title: 'Procédure : Déterminer par programme l’élément Outlook actuel'
+title: 'Comment : déterminer l’élément Outlook actuel par programmation'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -15,15 +15,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5566538b428502c8e63e752463b0271daeac2918
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 94d7e16b011b153a43e3d1666451a90b0e44c8b1
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62814817"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85547158"
 ---
-# <a name="how-to-programmatically-determine-the-current-outlook-item"></a>Procédure : Déterminer par programme l’élément Outlook actuel
-  Cet exemple utilise le `Explorer.SelectionChange` événement pour afficher le nom du dossier actuel et des informations sur l’élément sélectionné. Le code affiche ensuite l’élément sélectionné.
+# <a name="how-to-programmatically-determine-the-current-outlook-item"></a>Comment : déterminer l’élément Outlook actuel par programmation
+  Cet exemple utilise l' `Explorer.SelectionChange` événement pour afficher le nom du dossier actif et des informations sur l’élément sélectionné. Le code affiche ensuite l’élément sélectionné.
 
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]
 
@@ -34,9 +34,9 @@ ms.locfileid: "62814817"
 ## <a name="compile-the-code"></a>Compiler le code
  Cet exemple nécessite :
 
-- Rendez-vous, de contacts et éléments de messagerie dans Microsoft Office Outlook.
+- Éléments de rendez-vous, de contact et de courrier électronique dans Microsoft Office Outlook.
 
 ## <a name="see-also"></a>Voir aussi
-- [Vue d’ensemble du modèle d’objet Outlook](../vsto/outlook-object-model-overview.md)
-- [Guide pratique pour Récupérer par programme un dossier par nom](../vsto/how-to-programmatically-retrieve-a-folder-by-name.md)
-- [Guide pratique pour Rechercher un contact spécifique par programmation](../vsto/how-to-programmatically-search-for-a-specific-contact.md)
+- [Vue d’ensemble du modèle objet Outlook](../vsto/outlook-object-model-overview.md)
+- [Comment : récupérer un dossier par nom par programmation](../vsto/how-to-programmatically-retrieve-a-folder-by-name.md)
+- [Comment : Rechercher un contact spécifique par programmation](../vsto/how-to-programmatically-search-for-a-specific-contact.md)

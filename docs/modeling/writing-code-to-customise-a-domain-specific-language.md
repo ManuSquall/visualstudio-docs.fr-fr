@@ -4,17 +4,17 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language, programming
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3954f271d4bcdc222841bbcb435cdadf115ac263
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: b67a50623eb1924c4a18b57524c409f7eba6ab20
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72748135"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85546872"
 ---
 # <a name="write-code-to-customize-a-domain-specific-language"></a>Écrire du code pour personnaliser un langage spécifique à un domaine
 
@@ -24,7 +24,7 @@ Il existe plusieurs contextes dans lesquels vous pouvez écrire du code qui fonc
 
 - **Commandes personnalisées.** Vous pouvez créer une commande que les utilisateurs peuvent appeler en cliquant avec le bouton droit sur le diagramme et en modifiant le modèle. Pour plus d’informations, consultez [Comment : ajouter une commande au menu contextuel](../modeling/how-to-add-a-command-to-the-shortcut-menu.md).
 
-- **Validation.** Vous pouvez écrire du code qui vérifie que le modèle est dans un état correct. Pour plus d’informations, consultez [validation dans un langage spécifique à un domaine](../modeling/validation-in-a-domain-specific-language.md).
+- **Métrage.** Vous pouvez écrire du code qui vérifie que le modèle est dans un état correct. Pour plus d’informations, consultez [validation dans un langage spécifique à un domaine](../modeling/validation-in-a-domain-specific-language.md).
 
 - **Substitution du comportement par défaut.** Vous pouvez modifier de nombreux aspects du code généré à partir de DslDefinition. DSL. Pour plus d’informations, consultez [substitution et extension des classes générées](../modeling/overriding-and-extending-the-generated-classes.md).
 

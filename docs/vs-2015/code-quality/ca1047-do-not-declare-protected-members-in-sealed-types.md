@@ -15,17 +15,17 @@ caps.latest.revision: 18
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: ebc6732e559b70e753a44b14cf45b7de9fc150d4
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: e115b4d327f1ac45673de491ceaffc90941e1111
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72668183"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85546781"
 ---
 # <a name="ca1047-do-not-declare-protected-members-in-sealed-types"></a>CA1047 : Ne pas déclarer les membres protégés dans les types sealed
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Élément|Valeur|
 |-|-|
 |TypeName|DoNotDeclareProtectedMembersInSealedTypes|
 |CheckId|CA1047|
@@ -33,12 +33,12 @@ ms.locfileid: "72668183"
 |Modification avec rupture|Sans rupture|
 
 ## <a name="cause"></a>Cause
- Un type public est `sealed` (`NotInheritable` en Visual Basic) et déclare un membre protégé ou un type imbriqué protégé. Cette règle ne signale pas de violations pour les méthodes de <xref:System.Object.Finalize%2A>, qui doivent suivre ce modèle.
+ Un type public est `sealed` ( `NotInheritable` en Visual Basic) et déclare un membre protégé ou un type imbriqué protégé. Cette règle ne signale pas de violations pour les <xref:System.Object.Finalize%2A> méthodes, qui doivent suivre ce modèle.
 
 ## <a name="rule-description"></a>Description de la règle
  Les types déclarent des membres protégés afin que des types qui héritent puissent accéder au membre ou le substituer. Par définition, vous ne pouvez pas hériter d’un type sealed, ce qui signifie que les méthodes protégées sur les types sealed ne peuvent pas être appelées.
 
- Le C# compilateur émet un avertissement pour cette erreur.
+ Le compilateur C# émet un avertissement pour cette erreur.
 
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations
  Pour corriger une violation de cette règle, modifiez le niveau d’accès du membre en privé ou rendez le type héritable.

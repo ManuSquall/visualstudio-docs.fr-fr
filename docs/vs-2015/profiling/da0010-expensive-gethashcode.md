@@ -14,25 +14,25 @@ caps.latest.revision: 16
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: a0a2947f0bd6758de62a4a11d78390d38a503271
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.openlocfilehash: af234cd130d06c2a76c5ddbc958a67eb064d9128
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/13/2020
-ms.locfileid: "75919030"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85547574"
 ---
-# <a name="da0010-expensive-gethashcode"></a>DA0010 : GetHashCode coûteux
+# <a name="da0010-expensive-gethashcode"></a>DA0010 : Fonction GetHashCode coûteuse
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Pour obtenir la documentation la plus récente sur Visual Studio, consultez [DA0010 : GetHashCode coûteux](/visualstudio/profiling/da0010-expensive-gethashcode).  
 
-|||  
+|Élément|Valeur|  
 |-|-|  
-|ID de la règle|DA0010|  
-|Catégorie|Utilisation du .NET Framework|  
-|Méthodes de profilage|Échantillonnage<br /><br /> Mémoire .NET|  
+|ID de règle|DA0010|  
+|Category|Utilisation du .NET Framework|  
+|Méthodes de profilage|échantillonnage<br /><br /> Mémoire .NET|  
 |Message|Les fonctions GetHashCode doivent être peu coûteuses et n’allouer aucune mémoire. Réduisez si possible la complexité de la fonction de code de hachage.|  
-|Type de message|Warning|  
+|type de message|Avertissement|  
   
 ## <a name="cause"></a>Cause  
  Les appels à la méthode GetHashCode du type représentent une part importante des données de profilage, ou la méthode alloue de la mémoire.  

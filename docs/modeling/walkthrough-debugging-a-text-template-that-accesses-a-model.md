@@ -1,18 +1,18 @@
 ---
 title: "Procédure pas à pas : débogage d'un modèle de texte accédant à un modèle"
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 author: JoshuaPartlow
 ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f592cfbd46e0f4fc3a64ecaabadf17a6754480c0
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: e33297bba899c1843b8601c031d7669531a1bd3f
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75593523"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85546898"
 ---
 # <a name="walkthrough-debugging-a-text-template-that-accesses-a-model"></a>Procédure pas à pas : débogage d'un modèle de texte accédant à un modèle
 Lorsque vous modifiez ou ajoutez des modèles de texte dans une solution de langage spécifique à un domaine, vous pouvez recevoir des erreurs lorsque le moteur transforme le modèle en code source ou lors de la compilation du code généré. La procédure pas à pas suivante présente certaines des opérations que vous pouvez effectuer pour déboguer un modèle de texte.
@@ -42,10 +42,10 @@ Lorsque vous modifiez ou ajoutez des modèles de texte dans une solution de lang
 
 2. Ajoutez un fichier texte nommé `DebugTest.tt` au projet de débogage.
 
-3. Assurez-vous que la propriété **outil personnalisé** de DebugTest.TT est définie sur `TextTemplatingFileGenerator`.
+3. Assurez-vous que la propriété **outil personnalisé** de DebugTest.TT a la valeur `TextTemplatingFileGenerator` .
 
 ## <a name="debugging-directives-that-access-a-model-from-a-text-template"></a>Directives de débogage qui accèdent à un modèle à partir d’un modèle de texte
- Avant de pouvoir accéder à un modèle à partir des instructions et des expressions d’un modèle de texte, vous devez d’abord appeler un processeur de directive généré. L’appel du processeur de directive généré rend les classes de votre modèle disponibles pour le code de modèle de texte sous forme de propriétés. Pour plus d’informations, consultez [l’accès à des modèles à partir de modèles de texte](../modeling/accessing-models-from-text-templates.md).
+ Avant de pouvoir accéder à un modèle à partir des instructions et des expressions d’un modèle de texte, vous devez d’abord appeler un processeur de directive généré. L’appel du processeur de directive généré rend les classes de votre modèle disponibles pour le code de modèle de texte sous forme de propriétés. Pour plus d’informations, consultez [accès aux modèles à partir de modèles de texte](../modeling/accessing-models-from-text-templates.md).
 
  Dans les procédures suivantes, vous allez déboguer un nom de directive incorrect et un nom de propriété incorrect.
 
@@ -93,11 +93,11 @@ Lorsque vous modifiez ou ajoutez des modèles de texte dans une solution de lang
 
      **Le processeur nommé « DebuggingTestLanguageDirectiveProcessor » ne prend pas en charge la directive nommée « modelRoot ». La transformation ne sera pas exécutée.**
 
-     Dans ce cas, l’appel de directive contient un nom de directive incorrect. Vous avez spécifié `modelRoot` comme nom de directive, mais le nom de directive correct est `DebuggingTestLanguage`.
+     Dans ce cas, l’appel de directive contient un nom de directive incorrect. Vous avez spécifié `modelRoot` comme nom de directive, mais le nom de directive correct est `DebuggingTestLanguage` .
 
 3. Double-cliquez sur l’erreur dans la fenêtre **liste d’erreurs** pour accéder au code.
 
-4. Pour corriger le code, remplacez le nom de la directive par `DebuggingTestLanguage`.
+4. Pour corriger le code, remplacez le nom de la directive par `DebuggingTestLanguage` .
 
      La modification est mise en surbrillance.
 
@@ -157,13 +157,13 @@ Lorsque vous modifiez ou ajoutez des modèles de texte dans une solution de lang
 
      (C#)
 
-     **Compilation de la transformation : Microsoft. VisualStudio. TextTemplating\<GUID >. GeneratedTextTransformation’ne contient pas de définition pour’ExampleModel'**
+     **Compilation de la transformation : Microsoft. VisualStudio. TextTemplating \<GUID> . GeneratedTextTransformation’ne contient pas de définition pour’ExampleModel'**
 
      (Visual Basic)
 
-     **Compilation de la transformation : 'ExampleModel’n’est pas membre du GUID de’Microsoft. VisualStudio. TextTemplating\<>. GeneratedTextTransformation'.**
+     **Compilation de la transformation : 'ExampleModel’n’est pas un membre de’Microsoft. VisualStudio. TextTemplating \<GUID> . GeneratedTextTransformation'.**
 
-     Dans ce cas, le code de modèle de texte contient un nom de propriété incorrect. Vous avez spécifié `ExampleModel` comme nom de propriété, mais le nom de propriété correct est `LibraryModel`. Vous pouvez trouver le nom de propriété correct dans le paramètre fournit, comme indiqué dans le code suivant :
+     Dans ce cas, le code de modèle de texte contient un nom de propriété incorrect. Vous avez spécifié `ExampleModel` en tant que nom de propriété, mais le nom de propriété correct est `LibraryModel` . Vous pouvez trouver le nom de propriété correct dans le paramètre fournit, comme indiqué dans le code suivant :
 
     ```
     <#@ DebuggingTestLanguage processor="DebuggingTestLanguageDirectiveProcessor" requires="fileName='Sample.ddd'" provides="ExampleModel=LibraryModel" #>

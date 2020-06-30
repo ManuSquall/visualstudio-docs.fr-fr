@@ -1,7 +1,7 @@
 ---
-title: 'Procédure : Rechercher un contact spécifique par programmation'
+title: 'Comment : Rechercher un contact spécifique par programmation'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -13,14 +13,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: feff583d28bf53f4bffc9b425d52902688b80a4b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8d8b2302586fc09fcfec6420d97374197eae7e67
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63000322"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85547067"
 ---
-# <a name="how-to-programmatically-search-for-a-specific-contact"></a>Procédure : Rechercher un contact spécifique par programmation
+# <a name="how-to-programmatically-search-for-a-specific-contact"></a>Comment : Rechercher un contact spécifique par programmation
   Cet exemple recherche dans un dossier de contacts Outlook un contact spécifique par nom et prénom. L’exemple suppose qu’un contact nommé **John Evans** existe dans le dossier de contacts.
 
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]
@@ -31,4 +31,4 @@ ms.locfileid: "63000322"
 
 ## <a name="see-also"></a>Voir aussi
 - [Utiliser des éléments de contact](../vsto/working-with-contact-items.md)
-- [Commencer à programmer des Compléments VSTO](../vsto/getting-started-programming-vsto-add-ins.md)
+- [Prise en main de la programmation de compléments VSTO](../vsto/getting-started-programming-vsto-add-ins.md)

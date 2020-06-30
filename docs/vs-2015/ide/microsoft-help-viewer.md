@@ -20,12 +20,12 @@ caps.latest.revision: 27
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 14bae318e052d0c1eb0e23638c0ad78b70e62f7d
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: ad2a26e36c83c4a3b3ad051504bc3944663ee2ad
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72670409"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85544974"
 ---
 # <a name="microsoft-help-viewer"></a>Microsoft Help Viewer
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,7 +35,7 @@ Vous pouvez installer et afficher le contenu de divers produits et technologies 
 > [!WARNING]
 > Quand vous installez Visual Studio, vous obtenez la visionneuse d'aide. Pour commencer à lire les rubriques d'aide dans la visionneuse d’aide plutôt que sur le site de téléchargement MSDN, accédez au menu **Aide** de Visual Studio, sélectionnez **Définir les préférences pour l’aide**, puis **Lancer dans la visionneuse d’aide**. Les rubriques d’aide hors connexion pour une version donnée de Visual Studio sont disponibles uniquement après la version release finale de cette version.
 
- Vous pouvez effectuer les opérations suivantes :
+ Vous pouvez effectuer les opérations suivantes :
 
 - Rechercher et télécharger des ensembles de contenu, aussi appelés livres.
 
@@ -50,7 +50,7 @@ Vous pouvez installer et afficher le contenu de divers produits et technologies 
 ## <a name="navigating-the-help-viewer"></a>Navigation dans la visionneuse d'aide
  Vous pouvez trouver des informations dans le contenu installé à l’aide des onglets de navigation, afficher le contenu installé sous l’onglet ou les onglets de la rubrique et gérer le contenu à l’aide de l’onglet **gérer le contenu** . Vous pouvez également effectuer des tâches supplémentaires à l’aide des boutons de la barre d’outils et Rechercher des informations supplémentaires dans l’angle inférieur droit de la fenêtre.
 
-|||
+|Scénario|Description|
 |-|-|
 |Navigation|Sous l’onglet **Contenu**, vous pouvez afficher le contenu installé sous forme de hiérarchie et spécifier des critères pour filtrer les titres qui apparaissent.<br /><br /> Sous l’onglet **Recherche**, vous pouvez rechercher des termes n’importe où dans le contenu, y compris dans les titres de rubrique et le code.<br /><br /> Sous l’onglet **Index**, vous pouvez rechercher dans l’index, spécifier des critères pour filtrer les entrées et rechercher les entrées d’index contenant ou commençant par du texte que vous spécifiez.<br /><br /> Sous l’onglet **Favoris**, vous pouvez enregistrer des liens vers des rubriques que vous utilisez fréquemment, et vous pouvez afficher une liste de rubriques que vous avez récemment consultées.|
 |Affichage des rubriques|Chaque rubrique apparaît dans un onglet, et vous pouvez ouvrir plusieurs rubriques en même temps.|

@@ -9,12 +9,12 @@ caps.latest.revision: 7
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 92bbfc3612a34d354dee6288d66f2cf96c1e107c
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: f3ed1bd914655109606c1472227fb73c10d5b7a0
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85289389"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85547613"
 ---
 # <a name="user-accounts-and-updates"></a>Comptes d’utilisateur et mises à jour
 
@@ -27,7 +27,7 @@ Visual Studio lui-même est un environnement connecté. En vous connectant, vous
 
 ## <a name="in-this-section"></a>Dans cette section
 
-|||
+|Intitulé|Description|
 |-|-|
 |[Connexion à Visual Studio](../ide/signing-in-to-visual-studio.md)|Décrit comment et pourquoi se connecter à Visual Studio.|
 |[Utiliser plusieurs comptes d’utilisateur](../ide/work-with-multiple-user-accounts.md)|Décrit comment associer plusieurs comptes Microsoft et/ou professionnels ou d'établissement scolaire pour activer l'accès aux ressources et aux services à partir de tous vos comptes.|

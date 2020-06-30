@@ -8,17 +8,17 @@ caps.latest.revision: 7
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 9d4ca2668f2d6241e9a3cca88b4722ee5348abc3
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 27d837c09e5f2f90796c149bf58d1114d7e6352d
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72667408"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85546313"
 ---
-# <a name="ca2153-avoid-handling-corrupted-state-exceptions"></a>CA2153 : éviter la gestion des exceptions d’état endommagé
+# <a name="ca2153-avoid-handling-corrupted-state-exceptions"></a>CA2153 : Éviter la gestion des exceptions d’état endommagé
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Élément|Valeur|
 |-|-|
 |TypeName|AvoidHandlingCorruptedStateExceptions|
 |CheckId|CA2153|
@@ -38,7 +38,7 @@ ms.locfileid: "72667408"
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations
  Pour résoudre cet avertissement, vous devez effectuer l’une des opérations suivantes :
 
- 1. Supprimer l’attribut `HandleProcessCorruptedStateExceptions`. Cela a pour effet de rétablir le comportement du runtime par défaut selon lequel les CSE ne sont pas passées aux gestionnaires catch.
+ 1. Supprimez l'attribut `HandleProcessCorruptedStateExceptions`. Cela a pour effet de rétablir le comportement du runtime par défaut selon lequel les CSE ne sont pas passées aux gestionnaires catch.
 
  2. Supprimer le gestionnaire catch général et privilégier les gestionnaires qui interceptent des types d’exceptions spécifiques.  Cela peut inclure des CSE si le code du gestionnaire arrive à les gérer en toute sécurité (ce qui est très rare).
 
@@ -68,7 +68,7 @@ void TestMethod1()
 }
 ```
 
-### <a name="solution-1"></a>Solution 1
+### <a name="solution-1"></a>Solution 1
  Supprimez l’attribut HandleProcessCorruptedExceptions pour faire en sorte que les exceptions ne soient pas gérées.
 
 ```
@@ -89,7 +89,7 @@ void TestMethod1()
 }
 ```
 
-### <a name="solution-2"></a>Solution 2
+### <a name="solution-2"></a>Solution 2
  Supprimez le gestionnaire catch général et interceptez uniquement des types d’exceptions spécifiques.
 
 ```
@@ -110,7 +110,7 @@ void TestMethod1()
 }
 ```
 
-### <a name="solution-3"></a>Solution 3
+### <a name="solution-3"></a>Solution 3
  Levez à nouveau l’exception.
 
 ```

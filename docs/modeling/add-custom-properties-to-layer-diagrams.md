@@ -1,7 +1,7 @@
 ---
 title: Ajouter des propriétés personnalisées à des diagrammes de dépendance
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - dependency diagrams, adding custom properties
 author: JoshuaPartlow
@@ -9,12 +9,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3623a0c2380188cbb16f6186bddc3f3f2f0c3bd7
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 3c68d8a75ca8203a790684506ffd44b3d890648a
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75590590"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85546912"
 ---
 # <a name="add-custom-properties-to-dependency-diagrams"></a>Ajouter des propriétés personnalisées à des diagrammes de dépendance
 
@@ -38,14 +38,14 @@ Si vous souhaitez simplement que votre code joigne des valeurs à n’importe qu
 >     <MefComponent>Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer.Provider.dll</MefComponent>
 >     ```
 >
-> 3. Dans la section **Visual Studio Tools** du menu Démarrer de l’application Visual Studio, ouvrez **invite de commandes développeur**. entrez :
+> 3. Dans la section **Visual Studio Tools** du menu Démarrer de l’application Visual Studio, ouvrez **invite de commandes développeur**. Entrez :
 >
 >      `devenv /rootSuffix /updateConfiguration`
 >
 >      `devenv /rootSuffix Exp /updateConfiguration`
 > 4. Redémarrez Visual Studio.
 
-**Vérifier que votre code se trouve dans un projet VSIX**
+**Vérifier que votre code se trouve dans un projet VSIX**
 
 Si votre propriété fait partie d’une commande, d’un mouvement ou d’un projet de validation, vous n’avez rien à ajouter. Le code de votre propriété personnalisée doit être défini dans un projet d'extensibilité Visual Studio défini en tant que composant MEF. Pour plus d’informations, consultez [Ajouter des commandes et des mouvements aux diagrammes de dépendances](../modeling/add-commands-and-gestures-to-layer-diagrams.md) ou [Ajouter une validation d’architecture personnalisée aux diagrammes de dépendance](../modeling/add-custom-architecture-validation-to-layer-diagrams.md).
 
@@ -162,4 +162,4 @@ namespace MyNamespace
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Extension des diagrammes de dépendance](../modeling/extend-layer-diagrams.md)
+- [Étendre des diagrammes de dépendance](../modeling/extend-layer-diagrams.md)

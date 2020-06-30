@@ -1,7 +1,7 @@
 ---
-title: 'Procédure : Fermer des classeurs par programmation'
+title: 'Comment : fermer des classeurs par programmation'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -13,14 +13,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ea2ec3162ae7ffdee20f65452f67b0ddf4cc2dd1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3d3fe0f929632bd7021def9f6597182aa8fea87b
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62575401"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85547496"
 ---
-# <a name="how-to-programmatically-close-workbooks"></a>Procédure : Fermer des classeurs par programmation
+# <a name="how-to-programmatically-close-workbooks"></a>Comment : fermer des classeurs par programmation
   Vous pouvez fermer le classeur actif ou spécifier un classeur à fermer.
 
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]
@@ -42,7 +42,7 @@ ms.locfileid: "62575401"
      [!code-csharp[Trin_VstcoreExcelAutomationAddIn#1](../vsto/codesnippet/CSharp/trin_vstcoreexcelautomationaddin/ThisAddIn.cs#1)]
      [!code-vb[Trin_VstcoreExcelAutomationAddIn#1](../vsto/codesnippet/VisualBasic/trin_vstcoreexcelautomationaddin/ThisAddIn.vb#1)]
 
-## <a name="close-a-workbook-that-you-specify-by-name"></a>Fermer un classeur dont vous spécifiez par nom
+## <a name="close-a-workbook-that-you-specify-by-name"></a>Fermer un classeur dont vous spécifiez le nom
  Pour fermer un classeur dont vous spécifiez le nom, vous devez procéder de la même manière que pour les compléments VSTO et les personnalisations au niveau du document.
 
 ### <a name="to-close-a-workbook-that-you-specify-by-name"></a>Pour fermer un classeur dont vous spécifiez le nom
@@ -53,9 +53,9 @@ ms.locfileid: "62575401"
      [!code-vb[Trin_VstcoreExcelAutomationAddIn#2](../vsto/codesnippet/VisualBasic/trin_vstcoreexcelautomationaddin/ThisAddIn.vb#2)]
 
 ## <a name="see-also"></a>Voir aussi
-- [Travailler avec des classeurs](../vsto/working-with-workbooks.md)
-- [Guide pratique pour Enregistrer des classeurs par programmation](../vsto/how-to-programmatically-save-workbooks.md)
-- [Guide pratique pour Ouvrir des classeurs par programmation](../vsto/how-to-programmatically-open-workbooks.md)
-- [Limitations de programmation des éléments hôtes et contrôles hôtes](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)
-- [Paramètres optionnels dans les solutions Office](../vsto/optional-parameters-in-office-solutions.md)
-- [Éléments hôtes et la vue d’ensemble des contrôles hôtes](../vsto/host-items-and-host-controls-overview.md)
+- [Utiliser des classeurs](../vsto/working-with-workbooks.md)
+- [Comment : enregistrer des classeurs par programmation](../vsto/how-to-programmatically-save-workbooks.md)
+- [Comment : ouvrir des classeurs par programmation](../vsto/how-to-programmatically-open-workbooks.md)
+- [Limitations de programmation des éléments hôtes et des contrôles hôtes](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)
+- [Paramètres facultatifs dans les solutions Office](../vsto/optional-parameters-in-office-solutions.md)
+- [Vue d’ensemble des éléments hôtes et des contrôles hôtes](../vsto/host-items-and-host-controls-overview.md)

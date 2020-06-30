@@ -15,17 +15,17 @@ caps.latest.revision: 16
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 519faf2d49cb74d60d342d6bcf449f211076b0b4
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 118c29473db09d5ed0a4fa447e27e593a88f98b3
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72661085"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85546755"
 ---
-# <a name="ca1046-do-not-overload-operator-equals-on-reference-types"></a>CA1046 : Ne pas surcharger l'opérateur égal à sur les types référence
+# <a name="ca1046-do-not-overload-operator-equals-on-reference-types"></a>CA1046 : Ne pas surcharger l'opérateur égal à sur les types référence
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Élément|Valeur|
 |-|-|
 |TypeName|DoNotOverloadOperatorEqualsOnReferenceTypes|
 |CheckId|CA1046|
@@ -57,11 +57,11 @@ ms.locfileid: "72661085"
  Cet exemple produit la sortie suivante.
 
  **a = New (2, 2) et b = New (2, 2) sont égaux ? Aucun** 
-**c et un n’est égal ? Oui** 
-**b et a = = ? Non** 
-**c et a sont = = ? Oui**
+ **c et un n’est égal ? Oui** 
+ **b et a sont = = ? Aucun** 
+ **c et un ne sont = = ? Oui**
 ## <a name="related-rules"></a>Règles associées
- [CA1013 : Surchargez l’opérateur égal lors de la surcharge de l’opérateur d’addition et de soustraction](../code-quality/ca1013-overload-operator-equals-on-overloading-add-and-subtract.md)
+ [CA1013 : Surchargez l'opérateur égal lors de la surcharge de l'opérateur d'addition et de soustraction](../code-quality/ca1013-overload-operator-equals-on-overloading-add-and-subtract.md)
 
 ## <a name="see-also"></a>Voir aussi
- <xref:System.Object.Equals%2A?displayProperty=fullName> [opérateurs d’égalité](https://msdn.microsoft.com/library/bc496a91-fefb-4ce0-ab4c-61f09964119a)
+ <xref:System.Object.Equals%2A?displayProperty=fullName>[Opérateurs d’égalité](https://msdn.microsoft.com/library/bc496a91-fefb-4ce0-ab4c-61f09964119a)

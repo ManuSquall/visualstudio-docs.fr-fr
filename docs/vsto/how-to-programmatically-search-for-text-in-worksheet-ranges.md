@@ -1,7 +1,7 @@
 ---
 title: 'Comment : Rechercher du texte dans les plages de la feuille de calcul par programmation'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -14,22 +14,22 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 0ffc06c2f50f7a304ef76ac1451ee47419143afb
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: 4d35d24f9132a9b279316b53fbb13e3bfa094994
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72985822"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85547028"
 ---
 # <a name="how-to-programmatically-search-for-text-in-worksheet-ranges"></a>Comment : Rechercher du texte dans les plages de la feuille de calcul par programmation
-  La méthode <xref:Microsoft.Office.Interop.Excel.Range.Find%2A> de l’objet <xref:Microsoft.Office.Interop.Excel.Range> vous permet de rechercher du texte dans la plage. Ce texte peut également être l’une des chaînes d’erreur qui peuvent s’afficher dans une cellule de feuille de calcul telle que `#NULL!` ou `#VALUE!`. Pour plus d’informations sur les chaînes d’erreur, consultez [valeurs d’erreur de cellule](/office/vba/excel/Concepts/Cells-and-Ranges/cell-error-values).
+  La <xref:Microsoft.Office.Interop.Excel.Range.Find%2A> méthode de l' <xref:Microsoft.Office.Interop.Excel.Range> objet vous permet de rechercher du texte dans la plage. Ce texte peut également être l’une des chaînes d’erreur qui peuvent s’afficher dans une cellule de feuille de calcul telle que `#NULL!` ou `#VALUE!` . Pour plus d’informations sur les chaînes d’erreur, consultez [valeurs d’erreur de cellule](/office/vba/excel/Concepts/Cells-and-Ranges/cell-error-values).
 
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]
 
- L’exemple suivant recherche une plage nommée `Fruits` et modifie la police des cellules qui contiennent le mot « apples ». Cette procédure utilise également la méthode <xref:Microsoft.Office.Interop.Excel.Range.FindNext%2A>, qui utilise les paramètres de recherche précédemment définis pour répéter la recherche. Vous spécifiez la cellule après laquelle effectuer la recherche, et la méthode <xref:Microsoft.Office.Interop.Excel.Range.FindNext%2A> gère le reste.
+ L’exemple suivant recherche dans une plage nommée `Fruits` et modifie la police des cellules qui contiennent le mot « apples ». Cette procédure utilise également la <xref:Microsoft.Office.Interop.Excel.Range.FindNext%2A> méthode, qui utilise les paramètres de recherche précédemment définis pour répéter la recherche. Vous spécifiez la cellule après laquelle effectuer la recherche, et la <xref:Microsoft.Office.Interop.Excel.Range.FindNext%2A> méthode gère le reste.
 
 > [!NOTE]
-> La recherche de la méthode <xref:Microsoft.Office.Interop.Excel.Range.FindNext%2A> revient au début de la plage de recherche après qu’elle a atteint la fin de la plage. Votre code doit vérifier que la recherche n’est pas entourée dans une boucle infinie. L’exemple de procédure illustre une manière de gérer cela à l’aide de la propriété <xref:Microsoft.Office.Interop.Excel.Range.Address%2A>.
+> La <xref:Microsoft.Office.Interop.Excel.Range.FindNext%2A> recherche de la méthode revient au début de la plage de recherche après qu’elle a atteint la fin de la plage. Votre code doit vérifier que la recherche n’est pas entourée dans une boucle infinie. L’exemple de procédure illustre une manière de gérer cela à l’aide de la <xref:Microsoft.Office.Interop.Excel.Range.Address%2A> propriété.
 
 ## <a name="to-search-for-text-in-a-worksheet-range"></a>Pour rechercher du texte dans une plage de feuille de calcul
 
@@ -48,7 +48,7 @@ ms.locfileid: "72985822"
     [!code-csharp[Trin_VstcoreExcelAutomation#60](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#60)]
     [!code-vb[Trin_VstcoreExcelAutomation#60](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#60)]
 
-4. Comparez la première plage trouvée (`firstFind`) à **rien**. Si `firstFind` ne contient aucune valeur, le code stocke la plage trouvée (`currentFind`).
+4. Comparez la première plage trouvée ( `firstFind` ) à **rien**. Si `firstFind` ne contient aucune valeur, le code stocke la plage trouvée ( `currentFind` ).
 
     [!code-csharp[Trin_VstcoreExcelAutomation#61](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#61)]
     [!code-vb[Trin_VstcoreExcelAutomation#61](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#61)]

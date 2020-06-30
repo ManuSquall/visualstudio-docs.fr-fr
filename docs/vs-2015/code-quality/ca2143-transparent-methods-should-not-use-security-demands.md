@@ -11,17 +11,17 @@ caps.latest.revision: 14
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: bcfce9a80d02e525212d3f59173df4a7e8fbe968
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: ca8f049da83b99da7d36ebf74e756dd95f738d64
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72662705"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85546469"
 ---
 # <a name="ca2143-transparent-methods-should-not-use-security-demands"></a>CA2143 : Les méthodes transparentes ne doivent pas utiliser de demandes de sécurité
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Élément|Valeur|
 |-|-|
 |TypeName|TransparentMethodsShouldNotDemand|
 |CheckId|CA2143|
@@ -29,13 +29,13 @@ ms.locfileid: "72662705"
 |Modification avec rupture|Rupture|
 
 ## <a name="cause"></a>Cause
- Un type ou une méthode tranparent est marqué de manière déclarative avec une <xref:System.Security.Permissions.SecurityAction?displayProperty=fullName> `.Demand` demande ou la méthode appelle la méthode <xref:System.Security.CodeAccessPermission.Demand%2A?displayProperty=fullName>.
+ Une méthode ou un type tranparent est marqué de manière déclarative avec une <xref:System.Security.Permissions.SecurityAction?displayProperty=fullName> `.Demand` demande ou la méthode appelle la <xref:System.Security.CodeAccessPermission.Demand%2A?displayProperty=fullName> méthode.
 
 ## <a name="rule-description"></a>Description de la règle
  Le code transparent de sécurité ne doit pas être responsable de la vérification de la sécurité d’une opération. Par conséquent, il ne doit pas demander d’autorisations. Le code transparent de sécurité doit utiliser des demandes complètes pour prendre des décisions de sécurité et le code critique sécurisé ne doit pas dépendre du code transparent pour l’exécution de ces demandes. Tout code qui effectue des vérifications de sécurité, comme les demandes de sécurité, doit plutôt être critique sécurisé.
 
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations
- En général, pour corriger une violation de cette règle, marquez la méthode avec l’attribut <xref:System.Security.SecuritySafeCriticalAttribute>. Vous pouvez également supprimer la demande.
+ En général, pour corriger une violation de cette règle, marquez la méthode avec l' <xref:System.Security.SecuritySafeCriticalAttribute> attribut. Vous pouvez également supprimer la demande.
 
 ## <a name="when-to-suppress-warnings"></a>Quand supprimer les avertissements
  Ne supprimez aucun avertissement de cette règle.
@@ -46,4 +46,4 @@ ms.locfileid: "72662705"
  [!code-csharp[FxCop.Security.CA2143.TransparentMethodsShouldNotDemand#1](../snippets/csharp/VS_Snippets_CodeAnalysis/fxcop.security.ca2143.transparentmethodsshouldnotdemand/cs/ca2143 - transparentmethodsshouldnotdemand.cs#1)]
 
 ## <a name="see-also"></a>Voir aussi
- [CA2142 : Le code transparent ne doit pas être protégé avec des LinkDemands](../code-quality/ca2142-transparent-code-should-not-be-protected-with-linkdemands.md)
+ [CA2142 : Le code transparent ne doit pas être protégé avec des LinkDemands](../code-quality/ca2142-transparent-code-should-not-be-protected-with-linkdemands.md)

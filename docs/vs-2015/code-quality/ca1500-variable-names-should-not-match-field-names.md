@@ -15,30 +15,30 @@ caps.latest.revision: 25
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 5753cc660d626098d234fbce93c0bf0269e52bb3
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.openlocfilehash: 9565bc1ae3166c0475e8af7f0fde381497309b01
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/13/2020
-ms.locfileid: "75919048"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85547912"
 ---
 # <a name="ca1500-variable-names-should-not-match-field-names"></a>CA1500 : Les noms de variables ne doivent pas être identiques aux noms de champs
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Pour obtenir la documentation la plus récente sur Visual Studio, consultez [ca1500 : les noms de variables ne doivent pas correspondre aux noms de champs](/visualstudio/code-quality/ca1500-variable-names-should-not-match-field-names).
 
-|||
+|Élément|Valeur|
 |-|-|
 |TypeName|VariableNamesShouldNotMatchFieldNames|
 |CheckId|CA1500|
-|Catégorie|Microsoft.Maintainability|
+|Category|Microsoft. maintenabilité|
 |Modification avec rupture|En cas de déclenchement sur un paramètre portant le même nom qu’un champ :<br /><br /> -Sans rupture : si le champ et la méthode qui déclarent le paramètre ne peuvent pas être vus à l’extérieur de l’assembly, quelle que soit la modification que vous apportez.<br />-Break : Si vous modifiez le nom du champ et que vous pouvez le voir à l’extérieur de l’assembly.<br />-Break : Si vous modifiez le nom du paramètre et que la méthode qui le déclare peut être affichée à l’extérieur de l’assembly.<br /><br /> En cas de déclenchement sur une variable locale qui porte le même nom qu’un champ :<br /><br /> -Sans rupture : si le champ ne peut pas être affiché à l’extérieur de l’assembly, quelle que soit la modification que vous apportez.<br />-Sans rupture : Si vous modifiez le nom de la variable locale et que vous ne modifiez pas le nom du champ.<br />-Break : Si vous modifiez le nom du champ et qu’il est visible à l’extérieur de l’assembly.|
 
 ## <a name="cause"></a>Cause
  Une méthode d’instance déclare un paramètre ou une variable locale dont le nom correspond à un champ d’instance du type déclarant. Pour intercepter les variables locales qui violent la règle, l’assembly testé doit être généré à l’aide des informations de débogage et le fichier de base de données du programme (. pdb) associé doit être disponible.
 
 ## <a name="rule-description"></a>Description de la règle
- Lorsque le nom d’un champ d’instance correspond à un paramètre ou à un nom de variable locale, le champ d’instance est accessible à l’aide du mot clé `this` (`Me` dans [!INCLUDE[vbprvb](../includes/vbprvb-md.md)]) quand il se trouve dans le corps de la méthode. Lors de la maintenance du code, il est facile d’oublier cette différence et de supposer que la variable locale/de paramètre fait référence au champ d’instance, ce qui génère des erreurs. Cela est vrai surtout pour les corps de méthode longs.
+ Lorsque le nom d’un champ d’instance correspond à un paramètre ou à un nom de variable locale, le champ d’instance est accessible à l’aide du `this` `Me` mot clé (en) à l' [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] intérieur du corps de la méthode. Lors de la maintenance du code, il est facile d’oublier cette différence et de supposer que la variable locale/de paramètre fait référence au champ d’instance, ce qui génère des erreurs. Cela est vrai surtout pour les corps de méthode longs.
 
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations
  Pour corriger une violation de cette règle, renommez le paramètre/la variable ou le champ.

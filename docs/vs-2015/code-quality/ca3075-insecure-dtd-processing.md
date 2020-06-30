@@ -8,21 +8,21 @@ caps.latest.revision: 19
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 2ce5390ce8d649ab2c57eccde34506d6831b8193
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: d8cd78b529618504b5f14905a764c369da249fe2
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74300973"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85545169"
 ---
-# <a name="ca3075-insecure-dtd-processing"></a>CA3075 : traitement DTD non sécurisé
+# <a name="ca3075-insecure-dtd-processing"></a>CA3075 : Traitement DTD non sécurisé
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Élément|Valeur|
 |-|-|
 |TypeName|InsecureDTDProcessing|
 |CheckId|CA3075|
-|Catégorie|Microsoft.Security|
+|Category|Microsoft.Security|
 |Modification avec rupture|Sans rupture|
 
 ## <a name="cause"></a>Cause
@@ -35,13 +35,13 @@ ms.locfileid: "74300973"
 
 - La propriété <xref:System.Xml.XmlNode.InnerXml%2A> dans le code XML est définie.
 
-- <xref:System.Xml.XmlReaderSettings.DtdProcessing%2A> propriété a la valeur parse.
+- <xref:System.Xml.XmlReaderSettings.DtdProcessing%2A>la propriété a la valeur parse.
 
 - L’entrée non fiable est traitée avec <xref:System.Xml.XmlResolver> au lieu de <xref:System.Xml.XmlSecureResolver> .
 
-- XmlReader.<xref:System.Xml.XmlReader.Create%2A> la méthode est appelée avec une instance de <xref:System.Xml.XmlReaderSettings> non sécurisée ou sans instance.
+- XmlReader.<xref:System.Xml.XmlReader.Create%2A> la méthode est appelée avec une instance non sécurisée <xref:System.Xml.XmlReaderSettings> ou aucune instance.
 
-- <xref:System.Xml.XmlReader> est créé avec des valeurs ou des paramètres par défaut non sécurisés.
+- <xref:System.Xml.XmlReader>est créé avec des valeurs ou des paramètres par défaut non sécurisés.
 
   Dans chacun de ces cas, le résultat est le même : le contenu du système de fichiers ou des partages réseau de l’ordinateur où le code XML est traité sera exposé à la personne malveillante et peut ensuite être utilisé comme un vecteur d’attaque par déni de service.
 
@@ -49,15 +49,15 @@ ms.locfileid: "74300973"
 
 - Interceptez et traitez toutes les exceptions XmlTextReader correctement pour éviter la divulgation d’informations de chemin.
 
-- Utilisez la <xref:System.Xml.XmlSecureResolver> pour restreindre les ressources auxquelles XmlTextReader peut accéder.
+- Utilisez le  <xref:System.Xml.XmlSecureResolver> pour limiter les ressources auxquelles XmlTextReader peut accéder.
 
-- N’autorisez pas l' <xref:System.Xml.XmlReader> à ouvrir des ressources externes en affectant à la propriété <xref:System.Xml.XmlResolver> la **valeur null**.
+- N’autorisez pas le  <xref:System.Xml.XmlReader> à ouvrir des ressources externes en affectant <xref:System.Xml.XmlResolver> à la propriété la **valeur null**.
 
 - Vérifiez que la propriété <xref:System.Data.DataViewManager.DataViewSettingCollectionString%2A> de <xref:System.Data.DataViewManager> est affectée depuis une source fiable.
 
   .NET 3.5 et versions antérieures
 
-- Désactivez le traitement DTD si vous utilisez des sources non fiables en affectant à la propriété <xref:System.Xml.XmlReaderSettings.ProhibitDtd%2A> la **valeur true** .
+- Désactivez le traitement DTD si vous utilisez des sources non fiables en affectant  <xref:System.Xml.XmlReaderSettings.ProhibitDtd%2A> à la propriété la **valeur true** .
 
 - La classe XmlTextReader a une demande d’héritage de confiance totale. Pour plus d’informations, consultez [demandes d’héritage](https://msdn.microsoft.com/28b9adbb-8f08-4f10-b856-dbf59eb932d9) .
 

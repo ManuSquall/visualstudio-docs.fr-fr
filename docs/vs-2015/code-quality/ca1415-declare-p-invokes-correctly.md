@@ -15,17 +15,17 @@ caps.latest.revision: 17
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 922cd713867e1e1017a0f13490a08c0950b2afbf
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: b9931d29c818d95785146558637c32237e2c5276
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72652676"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85547847"
 ---
 # <a name="ca1415-declare-pinvokes-correctly"></a>CA1415 : Déclarer correctement les méthodes P/Invoke
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Élément|Valeur|
 |-|-|
 |TypeName|DeclarePInvokesCorrectly|
 |CheckId|CA1415|
@@ -36,7 +36,7 @@ ms.locfileid: "72652676"
  Une méthode d’appel de code non managé est déclarée de manière incorrecte.
 
 ## <a name="rule-description"></a>Description de la règle
- Une méthode d’appel de code non managé accède au code non managé et est définie à l’aide du mot clé `Declare` dans [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] ou <xref:System.Runtime.InteropServices.DllImportAttribute?displayProperty=fullName>. Actuellement, cette règle recherche des déclarations de méthode d’appel de code non managé qui ciblent des fonctions Win32 qui ont un pointeur vers un paramètre de structure OVERLAPPED et le paramètre managé correspondant n’est pas un pointeur vers une structure <xref:System.Threading.NativeOverlapped?displayProperty=fullName>.
+ Une méthode d’appel de plateforme accède au code non managé et est définie à l’aide du `Declare` mot clé dans [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] ou <xref:System.Runtime.InteropServices.DllImportAttribute?displayProperty=fullName> . Actuellement, cette règle recherche des déclarations de méthode d’appel de code non managé qui ciblent des fonctions Win32 qui ont un pointeur vers un paramètre de structure OVERLAPPED et le paramètre managé correspondant n’est pas un pointeur vers une <xref:System.Threading.NativeOverlapped?displayProperty=fullName> structure.
 
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations
  Pour corriger une violation de cette règle, déclarez correctement la méthode d’appel de code non managé.

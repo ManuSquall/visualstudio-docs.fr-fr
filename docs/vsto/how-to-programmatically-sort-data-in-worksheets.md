@@ -1,7 +1,7 @@
 ---
-title: 'Procédure : Trier les données dans des feuilles de calcul par programmation'
+title: 'Comment : trier des données dans des feuilles de calcul par programmation'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -15,14 +15,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: eeef19a04245d74d99050930cc3f66da627ffdd9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 08fa461dc55bf42857e21a5419cab6a0ff147173
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62961782"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85546976"
 ---
-# <a name="how-to-programmatically-sort-data-in-worksheets"></a>Procédure : Trier les données dans des feuilles de calcul par programmation
+# <a name="how-to-programmatically-sort-data-in-worksheets"></a>Comment : trier des données dans des feuilles de calcul par programmation
   Vous pouvez trier les données contenues dans les listes et les plages de feuille de calcul au moment de l'exécution. Le code suivant trie une plage à colonnes multiples nommée `Fruits` sur les données de la première colonne, puis sur les données de la deuxième colonne.
 
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]
@@ -36,7 +36,7 @@ ms.locfileid: "62961782"
     [!code-csharp[Trin_VstcoreExcelAutomation#78](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#78)]
     [!code-vb[Trin_VstcoreExcelAutomation#78](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#78)]
 
-   Placez le code suivant dans *Sheet1.vb* ou *Sheet1.cs* pour trier les données dans un <xref:Microsoft.Office.Tools.Excel.ListObject> contrôle. Le code suppose que vous avez un contrôle <xref:Microsoft.Office.Tools.Excel.ListObject> nommé `fruitList` dans une feuille de calcul nommée `Sheet1`.
+   Placez le code suivant dans *Feuil1. vb* ou *Sheet1.cs* pour trier les données dans un <xref:Microsoft.Office.Tools.Excel.ListObject> contrôle. Le code suppose que vous avez un contrôle <xref:Microsoft.Office.Tools.Excel.ListObject> nommé `fruitList` dans une feuille de calcul nommée `Sheet1`.
 
 ### <a name="to-sort-data-in-a-listobject-control"></a>Pour trier les données d'un contrôle ListObject
 
@@ -45,7 +45,7 @@ ms.locfileid: "62961782"
      [!code-csharp[Trin_VstcoreExcelAutomation#79](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#79)]
      [!code-vb[Trin_VstcoreExcelAutomation#79](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#79)]
 
-## <a name="sort-data-in-a-vsto-add-in"></a>Trier des données dans un complément, VSTO
+## <a name="sort-data-in-a-vsto-add-in"></a>Trier des données dans un complément VSTO
 
 ### <a name="to-sort-data-in-a-native-range"></a>Pour trier les données d'une plage native
 
@@ -62,10 +62,10 @@ ms.locfileid: "62961782"
      [!code-vb[Trin_VstcoreExcelAutomationAddIn#24](../vsto/codesnippet/VisualBasic/trin_vstcoreexcelautomationaddin/ThisAddIn.vb#24)]
 
 ## <a name="see-also"></a>Voir aussi
-- [Travailler avec des feuilles de calcul](../vsto/working-with-worksheets.md)
-- [Guide pratique pour Remplir par programmation automatiquement des plages avec des données soumises à modification incrémentielle](../vsto/how-to-programmatically-automatically-fill-ranges-with-incrementally-changing-data.md)
-- [Guide pratique pour Faire référence par programmation aux plages de feuille de calcul dans le code](../vsto/how-to-programmatically-refer-to-worksheet-ranges-in-code.md)
-- [Guide pratique pour Appliquer des styles à des plages dans les classeurs par programmation](../vsto/how-to-programmatically-apply-styles-to-ranges-in-workbooks.md)
-- [NamedRange (contrôle)](../vsto/namedrange-control.md)
+- [Utiliser des feuilles de calcul](../vsto/working-with-worksheets.md)
+- [Comment : remplir automatiquement des plages par programmation avec des données à modification incrémentielle](../vsto/how-to-programmatically-automatically-fill-ranges-with-incrementally-changing-data.md)
+- [Comment : faire référence aux plages de la feuille de calcul dans le code par programmation](../vsto/how-to-programmatically-refer-to-worksheet-ranges-in-code.md)
+- [Comment : appliquer des styles à des plages dans des classeurs par programmation](../vsto/how-to-programmatically-apply-styles-to-ranges-in-workbooks.md)
+- [NamedRange, contrôle](../vsto/namedrange-control.md)
 - [ListObject (contrôle)](../vsto/listobject-control.md)
-- [Paramètres optionnels dans les solutions Office](../vsto/optional-parameters-in-office-solutions.md)
+- [Paramètres facultatifs dans les solutions Office](../vsto/optional-parameters-in-office-solutions.md)

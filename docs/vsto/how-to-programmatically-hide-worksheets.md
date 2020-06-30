@@ -1,7 +1,7 @@
 ---
-title: 'Procédure : Masquer des feuilles de calcul par programmation'
+title: 'Comment : masquer des feuilles de calcul par programmation'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -13,19 +13,19 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f1fca54350900b2ed252efc324308d1168c6da53
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 83cf1f63a67525dca4cf9dbb5a4916da5d70b4ce
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62812465"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85547405"
 ---
-# <a name="how-to-programmatically-hide-worksheets"></a>Procédure : Masquer des feuilles de calcul par programmation
+# <a name="how-to-programmatically-hide-worksheets"></a>Comment : masquer des feuilles de calcul par programmation
   Vous pouvez afficher ou masquer une feuille de calcul dans un classeur. Pour masquer une feuille de calcul, utilisez l’élément hôte de feuille de calcul ou accédez à la feuille de calcul à l’aide de la collection Sheets du classeur.
 
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]
 
-## <a name="use-the-worksheet-host-item"></a>Utilisez l’élément hôte de feuille de calcul
+## <a name="use-the-worksheet-host-item"></a>Utiliser l’élément hôte de feuille de calcul
  Si la feuille de calcul a été ajoutée au moment du design dans une personnalisation au niveau du document, utilisez la propriété <xref:Microsoft.Office.Tools.Excel.Worksheet.Visible%2A> pour masquer la feuille de calcul spécifiée.
 
 ### <a name="to-hide-a-worksheet-using-a-worksheet-host-item"></a>Pour masquer une feuille de calcul à l’aide d’un élément hôte de feuille de calcul
@@ -35,10 +35,10 @@ ms.locfileid: "62812465"
      [!code-csharp[Trin_VstcoreExcelAutomation#25](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#25)]
      [!code-vb[Trin_VstcoreExcelAutomation#25](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#25)]
 
-## <a name="use-the-sheets-collection-of-the-excel-workbook"></a>Utilisez la collection Sheets du classeur Excel
+## <a name="use-the-sheets-collection-of-the-excel-workbook"></a>Utiliser la collection Sheets du classeur Excel
  Accédez aux feuilles de calcul via la collection <xref:Microsoft.Office.Interop.Excel.Sheets> Microsoft Office Excel dans les cas suivants :
 
-- Vous souhaitez masquer une feuille de calcul dans un composant logiciel complément VSTO.
+- Vous souhaitez masquer une feuille de calcul dans un complément VSTO.
 
 - La feuille de calcul à masquer a été créée au moment de l’exécution dans une personnalisation au niveau du document.
 
@@ -50,9 +50,9 @@ ms.locfileid: "62812465"
      [!code-vb[Trin_VstcoreExcelAutomation#26](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#26)]
 
 ## <a name="see-also"></a>Voir aussi
-- [Travailler avec des feuilles de calcul](../vsto/working-with-worksheets.md)
-- [Guide pratique pour Supprimer par programmation des feuilles de calcul des classeurs](../vsto/how-to-programmatically-delete-worksheets-from-workbooks.md)
-- [Guide pratique pour Déplacer des feuilles de calcul dans les classeurs par programmation](../vsto/how-to-programmatically-move-worksheets-within-workbooks.md)
-- [Guide pratique pour Protéger des feuilles de calcul par programmation](../vsto/how-to-programmatically-protect-worksheets.md)
-- [Éléments hôtes et la vue d’ensemble des contrôles hôtes](../vsto/host-items-and-host-controls-overview.md)
+- [Utiliser des feuilles de calcul](../vsto/working-with-worksheets.md)
+- [Comment : supprimer des feuilles de calcul à partir de classeurs par programmation](../vsto/how-to-programmatically-delete-worksheets-from-workbooks.md)
+- [Comment : déplacer des feuilles de calcul dans des classeurs par programmation](../vsto/how-to-programmatically-move-worksheets-within-workbooks.md)
+- [Comment : protéger des feuilles de calcul par programmation](../vsto/how-to-programmatically-protect-worksheets.md)
+- [Vue d’ensemble des éléments hôtes et des contrôles hôtes](../vsto/host-items-and-host-controls-overview.md)
 - [Accès global aux objets dans les projets Office](../vsto/global-access-to-objects-in-office-projects.md)

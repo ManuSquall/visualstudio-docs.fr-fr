@@ -1,7 +1,7 @@
 ---
-title: 'Procédure : Créer par programmation une demande de réunion'
+title: 'Comment : créer une demande de réunion par programmation'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -14,14 +14,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 62ccf3b170b05e5954bc217f032480ecd1f8a921
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 48233a051b42b01d5dce2c1a0fb4819882897d3f
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62575157"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85546014"
 ---
-# <a name="how-to-programmatically-create-a-meeting-request"></a>Procédure : Créer par programmation une demande de réunion
+# <a name="how-to-programmatically-create-a-meeting-request"></a>Comment : créer une demande de réunion par programmation
   Cet exemple crée une demande de réunion dans Microsoft Office Outlook, et l’envoie au participant nécessaire.
 
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]
@@ -32,4 +32,4 @@ ms.locfileid: "62575157"
 
 ## <a name="see-also"></a>Voir aussi
 - [Utiliser des éléments de calendrier](../vsto/working-with-calendar-items.md)
-- [Commencer à programmer des Compléments VSTO](../vsto/getting-started-programming-vsto-add-ins.md)
+- [Prise en main de la programmation de compléments VSTO](../vsto/getting-started-programming-vsto-add-ins.md)

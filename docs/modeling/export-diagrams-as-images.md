@@ -1,7 +1,7 @@
 ---
 title: Exporter des diagrammes en tant qu'images
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - modeling diagrams, saving
 - diagrams - modeling, saving modeling diagrams
@@ -11,16 +11,16 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 56b7839985871333bb120057efde92e58baebdec
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 2e433e47d04a2beb1521aba65be664f7c7efd44f
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75596617"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85547600"
 ---
 # <a name="export-diagrams-as-images"></a>Exporter des diagrammes en tant qu'images
 
-Dans Visual Studio, vous pouvez enregistrer des diagrammes de modélisation dans des formats en lecture seule afin de pouvoir les partager avec des parties prenantes, des utilisateurs ou des membres de l’équipe de projet qui n’utilisent pas la même version de Visual Studio.
+Dans Visual Studio, vous pouvez enregistrer des diagrammes de modélisation dans des formats en lecture seule pour pouvoir les partager avec les parties prenantes, les utilisateurs ou les membres de l'équipe de projet qui n'utilisent pas la même version de Visual Studio.
 
 Pour connaître les éditions de Visual Studio qui prennent en charge cette fonctionnalité, consultez [prise en charge d’édition pour les outils d’architecture et de modélisation](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
@@ -38,7 +38,7 @@ Pour connaître les éditions de Visual Studio qui prennent en charge cette fonc
 
 2. Dans la liste **nom** , sélectionnez **Microsoft XPS document Writer**, puis cliquez sur **OK**.
 
-3. Dans la boîte de dialogue **enregistrer le fichier sous** , enregistrez le fichier en tant que fichier **Document XPS (\*. Xps)** .
+3. Dans la boîte de dialogue **enregistrer le fichier sous** , enregistrez le fichier sous la forme d’un fichier de **document XPS ( \* . Xps)** .
 
 ## <a name="see-also"></a>Voir aussi
 

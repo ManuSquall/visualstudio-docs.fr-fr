@@ -13,17 +13,17 @@ caps.latest.revision: 19
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 9df1a954c2ae090e57341d489878d15d6f3f1867
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 0af30f31e7ee63c521a3a7c1acbafbb1cd109832
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72654985"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85548016"
 ---
 # <a name="customizing-file-storage-and-xml-serialization"></a>Personnalisation du stockage de fichiers et de la sérialisation XML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Lorsque l’utilisateur enregistre une instance, ou un *modèle*, d’un langage spécifique à un domaine (DSL) dans [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], un fichier XML est créé ou mis à jour. Le fichier peut être rechargé pour recréer le modèle dans le magasin.
+Lorsque l’utilisateur enregistre une instance, ou un *modèle*, d’un langage spécifique à un domaine (DSL) dans [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] , un fichier XML est créé ou mis à jour. Le fichier peut être rechargé pour recréer le modèle dans le magasin.
 
  Vous pouvez personnaliser le schéma de sérialisation en ajustant les paramètres sous **comportement de sérialisation XML** dans l’Explorateur DSL. Il existe un nœud sous le **comportement de sérialisation XML** pour chaque classe de domaine, propriété et relation. Les relations sont situées sous leurs classes sources. Il y a également des nœuds correspondant aux classes de formes, de connecteurs et de diagrammes.
 
@@ -54,11 +54,11 @@ Lorsque l’utilisateur enregistre une instance, ou un *modèle*, d’un langage
 ## <a name="the-default-serialization-scheme"></a>Schéma de sérialisation par défaut
  Pour créer un exemple pour cette rubrique, la définition DSL suivante a été utilisée.
 
- ![Modèle d’arbre &#45; de famille du diagramme de définition DSL](../modeling/media/familyt-person.png "FamilyT_Person")
+ ![Diagramme de définition DSL &#45; modèle d’arbre généalogique](../modeling/media/familyt-person.png "FamilyT_Person")
 
  Ce DSL a été utilisé pour créer un modèle qui a l’apparence suivante à l’écran.
 
- ![Diagramme de l’arborescence des familles, boîte à outils et Explorateur](../modeling/media/familyt-instance.png "FamilyT_Instance")
+ ![Diagramme d'arbre généalogique, boîte à outils et explorateur](../modeling/media/familyt-instance.png "FamilyT_Instance")
 
  Ce modèle a été enregistré puis rouvert dans l’éditeur de texte XML :
 
@@ -81,28 +81,28 @@ Lorsque l’utilisateur enregistre une instance, ou un *modèle*, d’un langage
 
  Notez les points suivants sur le modèle sérialisé :
 
-- Chaque nœud XML a un nom qui est identique à un nom de classe de domaine, sauf que la lettre initiale est en minuscules. Par exemple : `familyTreeModel` et `person`.
+- Chaque nœud XML a un nom qui est identique à un nom de classe de domaine, sauf que la lettre initiale est en minuscules. Par exemple, `familyTreeModel` et `person`.
 
 - Les propriétés de domaine, telles que Name et Annéenaissance, sont sérialisées en tant qu’attributs dans les nœuds XML. Là encore, le premier caractère du nom de la propriété est converti en minuscules.
 
 - Chaque relation est sérialisée sous la forme d’un nœud XML imbriqué à l’intérieur de la terminaison source de la relation. Le nœud porte le même nom que la propriété du rôle source, mais avec un caractère initial en minuscules.
 
-     Par exemple, dans la définition DSL, un rôle nommé **People** est issu de la classe **FamilyTree** .  Dans le XML, il est représenté par le nœud nommé `people` imbriqué dans le nœud `familyTreeModel`.
+     Par exemple, dans la définition DSL, un rôle nommé **People** est issu de la classe **FamilyTree** .  Dans le XML, il est représenté par le nœud appelé `people` imbriqué dans le `familyTreeModel` nœud.
 
-- La terminaison cible de chaque relation d’incorporation est sérialisée comme un nœud imbriqué sous la relation. Par exemple, le nœud `people` contient plusieurs nœuds `person`.
+- La terminaison cible de chaque relation d’incorporation est sérialisée comme un nœud imbriqué sous la relation. Par exemple, le `people` nœud contient plusieurs `person` nœuds.
 
 - La terminaison cible de chaque relation de référence est sérialisée comme *moniker*, qui encode une référence à l’élément cible.
 
-     Par exemple, sous un nœud `person`, il peut y avoir une relation `children`. Ce nœud contient des monikers tels que :
+     Par exemple, sous un `person` nœud, il peut y avoir une `children` relation. Ce nœud contient des monikers tels que :
 
     ```
     <personMoniker name="/f817b728-e920-458e-bb99-98edc469d78f/Elizabeth I" />
     ```
 
 ## <a name="understanding-monikers"></a>Fonctionnement des monikers
- Les monikers sont utilisés pour représenter des références croisées entre les différentes parties des fichiers de modèle et de diagramme. Ils sont également utilisés dans le fichier `.diagram` pour faire référence aux nœuds dans le fichier de modèle. Il existe deux formes de moniker :
+ Les monikers sont utilisés pour représenter des références croisées entre les différentes parties des fichiers de modèle et de diagramme. Ils sont également utilisés dans le `.diagram` fichier pour faire référence aux nœuds dans le fichier de modèle. Il existe deux formes de moniker :
 
-- Les *monikers d’ID* guillemets du GUID de l’élément cible. Exemple :
+- Les *monikers d’ID* guillemets du GUID de l’élément cible. Par exemple :
 
   ```
   <personShapeMoniker Id="f79734c0-3da1-4d72-9514-848fa9e75157" />
@@ -127,29 +127,29 @@ Lorsque l’utilisateur enregistre une instance, ou un *modèle*, d’un langage
 
 1. Assurez-vous que la **clé de moniker** est `false` pour chaque propriété de domaine dans la classe et ses classes de base.
 
-    1. Dans l’Explorateur DSL, développez **sérialisation XML Behavior\Class data \\**  _\<the classe de domaine >_ **données \Element**.
+    1. Dans l’Explorateur DSL, développez **sérialisation XML données \\ Behavior\Class données** _\<the domain class>_ **\Element**.
 
     2. Vérifiez que la **clé de moniker** est `false` pour chaque propriété de domaine.
 
     3. Si la classe de domaine a une classe de base, répétez la procédure dans cette classe.
 
-2. Définissez l' **ID de sérialisation**  =  `true` pour la classe de domaine.
+2. Définissez **Serialize Id**  =  `true` l’ID de sérialisation de la classe de domaine.
 
      Cette propriété se trouve sous **comportement de sérialisation XML**.
 
 #### <a name="to-set-a-domain-class-to-be-referenced-by-qualified-key-monikers"></a>Pour définir une classe de domaine à référencer par des monikers de clé qualifiés
 
-- Set **est une clé de moniker** pour une propriété de domaine d’une classe de domaine existante. Le type de la propriété doit être `string`.
+- Set **est une clé de moniker** pour une propriété de domaine d’une classe de domaine existante. Le type de la propriété doit être `string` .
 
-    1. Dans l’Explorateur DSL, développez **sérialisation XML Behavior\Class data \\**  _\<the classe de domaine >_ **données \Element**, puis sélectionnez la propriété de domaine.
+    1. Dans l’Explorateur DSL, développez **sérialisation XML Behavior\Class \\ données** _\<the domain class>_ **\Element données**, puis sélectionnez la propriété de domaine.
 
-    2. Dans la Fenêtre Propriétés, définissez la **clé de moniker** sur `true`.
+    2. Dans la Fenêtre Propriétés, définissez la **clé de moniker** sur `true` .
 
 - \- ou -
 
      Créez une classe de domaine à l’aide de l’outil de **classe de domaine nommé** .
 
-     Cet outil crée une classe qui a une propriété de domaine nommée Name. Le **est le nom d’élément** et les propriétés de **clé de moniker** de cette propriété de domaine sont initialisées à `true`.
+     Cet outil crée une classe qui a une propriété de domaine nommée Name. Le **est le nom d’élément** et les propriétés de **clé de moniker** de cette propriété de domaine sont initialisées à `true` .
 
 - \- ou -
 
@@ -160,13 +160,13 @@ Lorsque l’utilisateur enregistre une instance, ou un *modèle*, d’un langage
 
  Il existe plusieurs méthodes qui permettent d’éviter cette situation :
 
-- Set **est le nom d’élément**  =  `true` pour la propriété de domaine Key. Sélectionnez la propriété de domaine dans le diagramme de définition DSL, puis définissez la valeur dans la Fenêtre Propriétés.
+- Set **est**  =  `true` le nom d’élément de la propriété de domaine Key. Sélectionnez la propriété de domaine dans le diagramme de définition DSL, puis définissez la valeur dans la Fenêtre Propriétés.
 
      Lorsque l’utilisateur crée une nouvelle instance de la classe, cette valeur entraîne l’attribution automatique d’une valeur différente à la propriété de domaine. Le comportement par défaut ajoute un nombre à la fin du nom de la classe. Cela n’empêche pas l’utilisateur de changer le nom en un doublon, mais il aide dans le cas où l’utilisateur ne définit pas la valeur avant d’enregistrer le modèle.
 
-- Activez la validation pour le DSL. Dans l’Explorateur DSL, sélectionnez Editor\Validation, puis définissez les propriétés **uses...** sur `true`.
+- Activez la validation pour le DSL. Dans l’Explorateur DSL, sélectionnez Editor\Validation et définissez les propriétés **uses...** sur `true` .
 
-     Il existe une méthode de validation générée automatiquement qui vérifie les ambiguïtés. La méthode se trouve dans la catégorie de validation `Load`. Cela permet de s’assurer que l’utilisateur est averti qu’il n’est pas possible de rouvrir le fichier.
+     Il existe une méthode de validation générée automatiquement qui vérifie les ambiguïtés. La méthode figure dans la `Load` catégorie validation. Cela permet de s’assurer que l’utilisateur est averti qu’il n’est pas possible de rouvrir le fichier.
 
      Pour plus d’informations, consultez [validation dans un langage spécifique à un domaine](../modeling/validation-in-a-domain-specific-language.md).
 
@@ -193,7 +193,7 @@ Lorsque l’utilisateur enregistre une instance, ou un *modèle*, d’un langage
 
  Notez qu’étant donné qu’un GUID est unique, il n’est jamais préfixé par le moniker de son parent.
 
- Si vous savez qu’une propriété de domaine particulière aura toujours une valeur unique dans un modèle, vous pouvez définir le **qualificateur de moniker** pour `true` pour cette propriété. Cela entraînera son utilisation en tant que qualificateur, sans utiliser le moniker du parent. Par exemple, si vous définissez à la fois le **qualificateur de moniker** et la **clé de moniker** pour la propriété de domaine title de la classe album, le nom ou l’identificateur du modèle n’est pas utilisé dans les monikers pour l’album et ses enfants incorporés :
+ Si vous savez qu’une propriété de domaine particulière aura toujours une valeur unique dans un modèle, vous pouvez définir le **qualificateur de moniker** à `true` pour cette propriété. Cela entraînera son utilisation en tant que qualificateur, sans utiliser le moniker du parent. Par exemple, si vous définissez à la fois le **qualificateur de moniker** et la **clé de moniker** pour la propriété de domaine title de la classe album, le nom ou l’identificateur du modèle n’est pas utilisé dans les monikers pour l’album et ses enfants incorporés :
 
 ```
 <albumMoniker name="Jazz after Teatime" />
@@ -236,7 +236,7 @@ Lorsque l’utilisateur enregistre une instance, ou un *modèle*, d’un langage
 
     ```
 
-- Définissez la **représentation**  = **élément** pour avoir une propriété de domaine enregistrée en tant qu’élément plutôt que comme valeur d’attribut.
+- Définissez **Representation**  =  l'**élément** de représentation pour qu’une propriété de domaine soit enregistrée en tant qu’élément et non en tant que valeur d’attribut.
 
     ```
     <person name="Elizabeth I" birthYear="1533">
@@ -269,37 +269,35 @@ Lorsque l’utilisateur enregistre une instance, ou un *modèle*, d’un langage
 ### <a name="xml-class-data"></a>Données de classe XML
  Ces éléments se trouvent dans l’Explorateur DSL sous **sérialisation XML Behavior\Class données**.
 
-|||
+|Propriété|Description|
 |-|-|
-|Property|Description|
 |A un schéma d’élément personnalisé|Si la valeur est true, indique que la classe de domaine a un schéma d’élément personnalisé|
 |Est personnalisé|Affectez la valeur **true** si vous souhaitez écrire votre propre code de sérialisation et de désérialisation pour cette classe de domaine.<br /><br /> Générez la solution et examinez les erreurs pour découvrir des instructions détaillées.|
 |Classe de domaine|Classe de domaine à laquelle ce nœud de données de classe s’applique. Lecture seule.|
-|Nom de l'élément|Nom de nœud XML pour les éléments de cette classe. La valeur par défaut est une version en minuscules du nom de classe de domaine.|
-|Nom d’attribut de moniker|Nom de l’attribut utilisé dans les éléments moniker pour contenir la référence. Si ce champ est vide, le nom de la propriété ou de l’ID de clé est utilisé.<br /><br /> Dans cet exemple, il s’agit de « Name » : `<personMoniker name="/Mike Nash"/>`|
-|Nom de l’élément moniker|Nom de l’élément XML utilisé pour les monikers qui font référence aux éléments de cette classe.<br /><br /> La valeur par défaut est une version en minuscules du nom de classe avec le suffixe « moniker ». Par exemple, `personMoniker`.|
-|Nom de type de moniker|Nom du type xsd généré pour les monikers aux éléments de cette classe. Le schéma XSD se trouve dans le **code Dsl\Generated \\ \*Schema. xsd**|
+|Nom de l’élément|Nom de nœud XML pour les éléments de cette classe. La valeur par défaut est une version en minuscules du nom de classe de domaine.|
+|Nom d’attribut de moniker|Nom de l’attribut utilisé dans les éléments moniker pour contenir la référence. Si vide, le nom de la propriété ou l'identificateur de clé est utilisé.<br /><br /> Dans cet exemple, il s’agit de « Name » :`<personMoniker name="/Mike Nash"/>`|
+|Nom de l’élément moniker|Nom de l’élément XML utilisé pour les monikers qui font référence aux éléments de cette classe.<br /><br /> La valeur par défaut est une version en minuscules du nom de classe avec le suffixe « moniker ». Par exemple : `personMoniker`.|
+|Nom de type de moniker|Nom du type XSD généré pour les monikers aux éléments de cette classe. Le schéma XSD se trouve dans **Dsl\Generated code \\ \* Schema. xsd**|
 |ID de sérialisation|Si la valeur est true, le GUID de l’élément est inclus dans le fichier. Cela doit avoir la valeur true s’il n’y a aucune propriété marquée comme **clé de moniker** et que la DSL définit des relations de référence à cette classe.|
-|Nom de type|Nom du type XML généré dans le XSD à partir de la classe de domaine désignée.|
+|Nom de type|Nom du type XML généré dans XSD à partir de la classe de domaine indiquée.|
 |Notes|Notes informelles associées à cet élément|
 
 ### <a name="xml-property-data"></a>Données de propriété XML
  Les nœuds de propriété XML se trouvent sous les nœuds de classe.
 
-|||
+|Propriété|Description|
 |-|-|
-|Property|Description|
-|Propriété de domaine|Propriété à laquelle s’appliquent les données de configuration de sérialisation XML. Lecture seule.|
+|Propriété de domaine|Propriété à laquelle les données de configuration de sérialisation XML s'appliquent. Lecture seule.|
 |Est une clé de moniker|Si la valeur est true, la propriété est utilisée comme clé pour créer des monikers qui référencent des instances de cette classe de domaine.|
-|Qualificateur de moniker|Si la valeur est true, la propriété est utilisée pour créer le qualificateur dans les monikers. Si la valeur est false et si SerializeId n’a pas la valeur true pour cette classe de domaine, les monikers sont qualifiés par le moniker de l’élément parent dans l’arborescence d’incorporation.|
-|Représenter|Si Attribute, la propriété est sérialisée en tant qu’attribut XML ; Si l’élément est sérialisé en tant qu’élément ; Si vous l’ignorez, il n’est pas sérialisé.|
-|Nom XML|Nom utilisé pour l’attribut ou l’élément XML représentant la propriété. Par défaut, il s’agit d’une version en minuscules du nom de la propriété de domaine.|
+|Qualificateur de moniker|Si la valeur est True, la propriété est utilisée pour créer le qualificateur dans les monikers. Si la valeur est false et si SerializeId n’a pas la valeur true pour cette classe de domaine, les monikers sont qualifiés par le moniker de l’élément parent dans l’arborescence d’incorporation.|
+|Représentation|Si Attribute, la propriété est sérialisée en tant qu'attribut XML ; si Element, elle est sérialisée en tant qu'élément ; si Ignore, elle n'est pas sérialisée.|
+|Nom XML|Nom utilisé pour l'attribut ou l'élément XML représentant la propriété. Par défaut, il s’agit d’une version en minuscules du nom de la propriété de domaine.|
 |Notes|Notes informelles associées à cet élément|
 
 ### <a name="xml-role-data"></a>Données de rôle XML
  Les nœuds de données de rôle se trouvent sous les nœuds de la classe source.
 
-|Property|Description|
+|Propriété|Description|
 |--------------|-----------------|
 |A un moniker personnalisé|Affectez la valeur true si vous souhaitez fournir votre propre code pour générer et résoudre les monikers qui parcourent cette relation.<br /><br /> Pour obtenir des instructions détaillées, générez la solution, puis double-cliquez sur les messages d’erreur.|
 |Relation de domaine|Spécifie la relation à laquelle ces options s’appliquent. Lecture seule.|

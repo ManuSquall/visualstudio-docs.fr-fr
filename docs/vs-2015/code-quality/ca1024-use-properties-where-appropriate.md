@@ -15,17 +15,17 @@ caps.latest.revision: 23
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: b190e007cfdb016e54148cf0295c68baf68c5033
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: a240a6eea86075bbf7f721f8620b6d135d594c20
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72661963"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85546664"
 ---
-# <a name="ca1024-use-properties-where-appropriate"></a>CA1024 : Utiliser les propriétés lorsque cela est approprié
+# <a name="ca1024-use-properties-where-appropriate"></a>CA1024 : Utiliser les propriétés lorsque cela est approprié
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Élément|Valeur|
 |-|-|
 |TypeName|UsePropertiesWhereAppropriate|
 |CheckId|CA1024|
@@ -33,7 +33,7 @@ ms.locfileid: "72661963"
 |Modification avec rupture|Rupture|
 
 ## <a name="cause"></a>Cause
- Une méthode publique ou protégée a un nom qui commence par `Get`, ne prend aucun paramètre et retourne une valeur qui n’est pas un tableau.
+ Une méthode publique ou protégée a un nom qui commence par `Get` , ne prend aucun paramètre et retourne une valeur qui n’est pas un tableau.
 
 ## <a name="rule-description"></a>Description de la règle
  Dans la plupart des cas, les propriétés représentent des données et des méthodes qui effectuent des actions. Les propriétés sont accessibles comme les champs, ce qui les rend plus faciles à utiliser. Une méthode est un bon candidat à devenir une propriété si l’une de ces conditions est présente :
@@ -67,7 +67,7 @@ ms.locfileid: "72661963"
 ## <a name="controlling-property-expansion-in-the-debugger"></a>Contrôle de l’expansion des propriétés dans le débogueur
  L’une des raisons pour lesquelles les programmeurs évitent d’utiliser une propriété est parce qu’ils ne souhaitent pas que le débogueur le développe automatiquement. Par exemple, la propriété peut impliquer l’allocation d’un objet volumineux ou l’appel d’un P/Invoke, mais elle peut ne pas avoir d’effets secondaires observables.
 
- Vous pouvez empêcher le débogueur d’étendre automatiquement les propriétés en appliquant <xref:System.Diagnostics.DebuggerBrowsableAttribute?displayProperty=fullName>. L’exemple suivant montre que cet attribut est appliqué à une propriété d’instance.
+ Vous pouvez empêcher le débogueur d’étendre automatiquement les propriétés en appliquant <xref:System.Diagnostics.DebuggerBrowsableAttribute?displayProperty=fullName> . L’exemple suivant montre que cet attribut est appliqué à une propriété d’instance.
 
 ```vb
 Imports System

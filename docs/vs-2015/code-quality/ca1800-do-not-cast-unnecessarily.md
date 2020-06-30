@@ -1,5 +1,5 @@
 ---
-title: 'CA1800 : Ne pas effectuer de cast inutilement | Microsoft Docs'
+title: 'CA1800 : n’effectuez pas de cast inutilement | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -15,21 +15,21 @@ caps.latest.revision: 19
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 466309cef8905faa9b659e2d3652975d815767fb
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 757d66ef719b3a1f39a9164dfd50ce1fcf8799db
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72663106"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85547795"
 ---
 # <a name="ca1800-do-not-cast-unnecessarily"></a>CA1800 : N'effectuez pas de cast inutilement
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Élément|Valeur|
 |-|-|
 |TypeName|DoNotCastUnnecessarily|
 |CheckId|CA1800|
-|Catégorie|Microsoft. performance|
+|Category|Microsoft. performance|
 |Modification avec rupture|Sans rupture|
 
 ## <a name="cause"></a>Cause
@@ -38,7 +38,7 @@ ms.locfileid: "72663106"
 ## <a name="rule-description"></a>Description de la règle
  Les casts en doublon font baisser les performances, surtout lorsque les casts sont exécutés au sein d'instructions d'itération compactes. Pour les opérations de cast en doublon explicites, stockez le résultat du cast dans une variable locale et utilisez la variable locale à la place des opérations de conversion en double.
 
- Si l' C# opérateur `is` est utilisé pour déterminer si le cast aboutit avant l’exécution du cast réel, envisagez de tester le résultat de l’opérateur `as` à la place. Cela fournit les mêmes fonctionnalités sans l’opération de conversion implicite effectuée par l’opérateur `is`.
+ Si l' `is` opérateur C# est utilisé pour déterminer si le cast aboutit avant l’exécution du cast réel, envisagez de tester le résultat de l’opérateur à la `as` place. Cela fournit les mêmes fonctionnalités sans l’opération de conversion implicite effectuée par l' `is` opérateur.
 
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations
  Pour corriger une violation de cette règle, modifiez l’implémentation de la méthode afin de réduire le nombre d’opérations de conversion.
@@ -47,15 +47,15 @@ ms.locfileid: "72663106"
  Il est possible de supprimer sans risque un avertissement de cette règle, ou d’ignorer complètement la règle, si les performances ne sont pas un problème.
 
 ## <a name="example"></a>Exemple
- L’exemple suivant montre une méthode qui enfreint la règle à l’aide de C# l’opérateur `is`. Une deuxième méthode remplit la règle en remplaçant l’opérateur `is` par un test par rapport au résultat de l’opérateur `as`, ce qui réduit le nombre d’opérations de conversion par itération de deux à un.
+ L’exemple suivant montre une méthode qui enfreint la règle à l’aide de l' `is` opérateur C#. Une deuxième méthode remplit la règle en remplaçant l' `is` opérateur par un test par rapport au résultat de l' `as` opérateur, ce qui réduit le nombre d’opérations de conversion par itération de deux à un.
 
  [!code-csharp[FxCop.Performance.UnnecessaryCastsAsIs#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Performance.UnnecessaryCastsAsIs/cs/FxCop.Performance.UnnecessaryCastsAsIs.cs#1)]
 
 ## <a name="example"></a>Exemple
- L’exemple suivant montre une méthode, `start_Click`, qui a plusieurs casts explicites en double, qui violent la règle, et une méthode, `reset_Click`, qui satisfait la règle en stockant le cast dans une variable locale.
+ L’exemple suivant montre une méthode, `start_Click` , qui a plusieurs casts explicites en double, qui violent la règle, et une méthode, `reset_Click` , qui satisfait la règle en stockant le cast dans une variable locale.
 
  [!code-csharp[FxCop.Performance.UnnecessaryCasts#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Performance.UnnecessaryCasts/cs/FxCop.Performance.UnnecessaryCasts.cs#1)]
  [!code-vb[FxCop.Performance.UnnecessaryCasts#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Performance.UnnecessaryCasts/vb/FxCop.Performance.UnnecessaryCasts.vb#1)]
 
 ## <a name="see-also"></a>Voir aussi
- [as](https://msdn.microsoft.com/library/a9be126b-cbf4-4990-a70d-d0e1983cad0e) [is](https://msdn.microsoft.com/library/bc62316a-d41f-4f90-8300-c6f4f0556e43)
+ [tel](https://msdn.microsoft.com/library/a9be126b-cbf4-4990-a70d-d0e1983cad0e) [is](https://msdn.microsoft.com/library/bc62316a-d41f-4f90-8300-c6f4f0556e43) quel

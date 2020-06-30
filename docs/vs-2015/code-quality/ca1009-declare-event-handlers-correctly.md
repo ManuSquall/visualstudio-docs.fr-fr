@@ -15,17 +15,17 @@ caps.latest.revision: 21
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 261013ed844b6c5ba37c544c7745a77378c0c722
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 6a4a4e2e6990772b50568043c4d18ff29248571d
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72668922"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85547886"
 ---
-# <a name="ca1009-declare-event-handlers-correctly"></a>CA1009 : Déclarer les gestionnaires d'événements correctement
+# <a name="ca1009-declare-event-handlers-correctly"></a>CA1009 : Déclarer les gestionnaires d'événements correctement
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Élément|Valeur|
 |-|-|
 |TypeName|DeclareEventHandlersCorrectly|
 |CheckId|CA1009|
@@ -38,7 +38,7 @@ ms.locfileid: "72668922"
 ## <a name="rule-description"></a>Description de la règle
  Les méthodes du gestionnaire d'événements acceptent deux paramètres. Le premier est de type <xref:System.Object?displayProperty=fullName> et est nommé’sender'. Il s'agit de l'objet qui déclenche l'événement. Le deuxième paramètre est de type <xref:System.EventArgs?displayProperty=fullName> et est nommé’e'. Il s'agit des données qui sont associées à l'événement. Par exemple, si l’événement est déclenché chaque fois qu’un fichier est ouvert, les données d’événement contiennent généralement le nom du fichier.
 
- Les méthodes de gestionnaire d’événements ne doivent pas retourner de valeur. Dans le C# langage de programmation, cela est indiqué par le type de retour `void`. Un gestionnaire d’événements peut appeler plusieurs méthodes dans plusieurs objets. Si les méthodes étaient autorisées à retourner une valeur, plusieurs valeurs de retour se produiront pour chaque événement, et seule la valeur de la dernière méthode appelée serait disponible.
+ Les méthodes de gestionnaire d’événements ne doivent pas retourner de valeur. Dans le langage de programmation C#, cela est indiqué par le type de retour `void` . Un gestionnaire d’événements peut appeler plusieurs méthodes dans plusieurs objets. Si les méthodes étaient autorisées à retourner une valeur, plusieurs valeurs de retour se produiront pour chaque événement, et seule la valeur de la dernière méthode appelée serait disponible.
 
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations
  Pour corriger une violation de cette règle, corrigez la signature, le type de retour ou les noms de paramètres du délégué. Pour plus d’informations, consultez l’exemple suivant.
@@ -47,14 +47,14 @@ ms.locfileid: "72668922"
  Ne supprimez aucun avertissement de cette règle.
 
 ## <a name="example"></a>Exemple
- L’exemple suivant montre un délégué qui est adapté à la gestion des événements. Les méthodes qui peuvent être appelées par ce gestionnaire d’événements sont conformes à la signature spécifiée dans les règles de conception. `AlarmEventHandler` est le nom de type du délégué. `AlarmEventArgs` dérive de la classe de base pour les données d’événement, <xref:System.EventArgs> et contient les données d’événement d’alarme.
+ L’exemple suivant montre un délégué qui est adapté à la gestion des événements. Les méthodes qui peuvent être appelées par ce gestionnaire d’événements sont conformes à la signature spécifiée dans les règles de conception. `AlarmEventHandler`est le nom de type du délégué. `AlarmEventArgs`dérive de la classe de base pour les données d’événement, <xref:System.EventArgs> et contient les données d’événement d’alarme.
 
  [!code-cpp[FxCop.Design.EventsTwoParams#1](../snippets/cpp/VS_Snippets_CodeAnalysis/FxCop.Design.EventsTwoParams/cpp/FxCop.Design.EventsTwoParams.cpp#1)]
  [!code-csharp[FxCop.Design.EventsTwoParams#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Design.EventsTwoParams/cs/FxCop.Design.EventsTwoParams.cs#1)]
  [!code-vb[FxCop.Design.EventsTwoParams#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Design.EventsTwoParams/vb/FxCop.Design.EventsTwoParams.vb#1)]
 
 ## <a name="related-rules"></a>Règles associées
- [CA2109 : Passez en revue les gestionnaires d’événements visibles](../code-quality/ca2109-review-visible-event-handlers.md)
+ [CA2109 : Passez en revue les gestionnaires d'événements visibles](../code-quality/ca2109-review-visible-event-handlers.md)
 
 ## <a name="see-also"></a>Voir aussi
  <xref:System.EventArgs?displayProperty=fullName> <xref:System.Object?displayProperty=fullName>

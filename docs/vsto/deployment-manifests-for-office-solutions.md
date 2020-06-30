@@ -1,7 +1,7 @@
 ---
 title: Manifestes de déploiement pour les solutions Office
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - VB
 - CSharp
@@ -15,26 +15,26 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 3c96f0d87f5a49add1f0e8cebb61bab9659277e6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3540420d07bd158b19f0b078f01cfdb37ce18beb
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62972393"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85547548"
 ---
 # <a name="deployment-manifests-for-office-solutions"></a>Manifestes de déploiement pour les solutions Office
-  Un manifeste de déploiement est un fichier XML qui décrit les paramètres de déploiement d’une solution Office et identifie la version actuelle de l’application.
+  Un manifeste de déploiement est un fichier XML qui décrit les paramètres de déploiement d’une solution Office et identifie la version de l’application actuelle.
 
- Le développement Office dans Visual Studio utilise le [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] schéma de manifeste de déploiement défini dans le [manifeste de déploiement ClickOnce](../deployment/clickonce-deployment-manifest.md) référence.
+ Le développement Office dans Visual Studio utilise le [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] schéma de manifeste de déploiement défini dans la référence du [manifeste de déploiement ClickOnce](../deployment/clickonce-deployment-manifest.md) .
 
-## <a name="remarks"></a>Notes
- Le fichier manifeste de déploiement pour les solutions Office, identifie la version actuelle et autres paramètres de déploiement. Il fait référence au manifeste d’application et décrit la version actuelle de la solution et tous les fichiers au sein de la solution.
+## <a name="remarks"></a>Remarques
+ Le fichier manifeste de déploiement pour les solutions Office identifie la version actuelle et d’autres paramètres de déploiement. Il fait référence au manifeste d’application et décrit la version actuelle de la solution, ainsi que tous les fichiers qu’elle contient.
 
 ## <a name="file-name-syntax"></a>Syntaxe du nom de fichier
- Le nom d’un fichier de manifeste de déploiement doit se terminer par le *.vsto* extension. Bien qu’il soit une norme [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] diffère de l’extension de manifeste de déploiement, pour activer le Visual Studio Tools pour Office runtime gérer le fichier.
+ Le nom d’un fichier manifeste de déploiement doit se terminer par l’extension *. vsto* . Bien qu’il s’agisse d’un [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] manifeste de déploiement standard, l’extension est différente pour permettre au runtime Office d’Visual Studio Tools de gérer le fichier.
 
 ## <a name="example"></a>Exemple
- L’exemple de code suivant illustre un manifeste de déploiement pour un Visual Studio Tools pour la solution Office.
+ L’exemple de code suivant illustre un manifeste de déploiement pour une solution Visual Studio Tools pour Office.
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>

@@ -1,7 +1,7 @@
 ---
-title: 'Procédure : Fermer des documents par programmation'
+title: 'Comment : fermer des documents par programmation'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -13,14 +13,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 504fe863c746a788e797d3a84c4cd0b3d6c3d19b
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 18dc4099f4c1df17efbe2dd3c213332bb73b52c4
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63422469"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85547457"
 ---
-# <a name="how-to-programmatically-close-documents"></a>Procédure : Fermer des documents par programmation
+# <a name="how-to-programmatically-close-documents"></a>Comment : fermer des documents par programmation
   Vous pouvez fermer le document actif ou spécifier un document à fermer.
 
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]
@@ -48,7 +48,7 @@ ms.locfileid: "63422469"
      [!code-vb[Trin_VstcoreWordAutomationAddIn#3](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb#3)]
      [!code-csharp[Trin_VstcoreWordAutomationAddIn#3](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#3)]
 
-## <a name="close-a-document-that-you-specify-by-name"></a>Fermer un document que vous spécifiez par nom
+## <a name="close-a-document-that-you-specify-by-name"></a>Fermer un document dont vous spécifiez le nom
  La procédure de fermeture d’un document dont vous spécifiez le nom est la même pour les compléments VSTO et les personnalisations au niveau du document.
 
 ### <a name="to-close-a-document-that-you-specify-by-name"></a>Pour fermer un document dont vous spécifiez le nom
@@ -62,8 +62,8 @@ ms.locfileid: "63422469"
      [!code-csharp[Trin_VstcoreWordAutomation#4](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#4)]
 
 ## <a name="see-also"></a>Voir aussi
-- [Guide pratique pour Ouvrir des documents existants par programmation](../vsto/how-to-programmatically-open-existing-documents.md)
-- [Guide pratique pour Enregistrer des documents par programmation](../vsto/how-to-programmatically-save-documents.md)
-- [Éléments hôtes et la vue d’ensemble des contrôles hôtes](../vsto/host-items-and-host-controls-overview.md)
-- [Limitations de programmation des éléments hôtes et contrôles hôtes](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)
-- [Paramètres optionnels dans les solutions Office](../vsto/optional-parameters-in-office-solutions.md)
+- [Comment : ouvrir des documents existants par programmation](../vsto/how-to-programmatically-open-existing-documents.md)
+- [Comment : enregistrer des documents par programmation](../vsto/how-to-programmatically-save-documents.md)
+- [Vue d’ensemble des éléments hôtes et des contrôles hôtes](../vsto/host-items-and-host-controls-overview.md)
+- [Limitations de programmation des éléments hôtes et des contrôles hôtes](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)
+- [Paramètres facultatifs dans les solutions Office](../vsto/optional-parameters-in-office-solutions.md)

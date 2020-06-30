@@ -1,7 +1,7 @@
 ---
-title: 'Procédure : Afficher par programme une chaîne dans une cellule de feuille de calcul'
+title: 'Comment : afficher une chaîne dans une cellule de feuille de calcul par programmation'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -13,41 +13,41 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a9760d019fa80d4ecae63633c38ac9df60932202
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ed93451942ccb0376c78ebb0e99b269a658131de
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62813021"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85545923"
 ---
-# <a name="how-to-programmatically-display-a-string-in-a-worksheet-cell"></a>Procédure : Afficher par programme une chaîne dans une cellule de feuille de calcul
-  Cet exemple montre comment afficher du texte dans une cellule par programme. Pour afficher le texte dans la cellule, utilisez un <xref:Microsoft.Office.Tools.Excel.NamedRange> contrôle ou un objet de plage Excel natif.
+# <a name="how-to-programmatically-display-a-string-in-a-worksheet-cell"></a>Comment : afficher une chaîne dans une cellule de feuille de calcul par programmation
+  Cet exemple montre comment afficher du texte dans une cellule par programmation. Pour afficher du texte dans une cellule, utilisez un objet de type <xref:Microsoft.Office.Tools.Excel.NamedRange> contrôle ou une plage Excel native.
 
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]
 
 ## <a name="use-a-namedrange-control"></a>Utiliser un contrôle NamedRange
- Cet exemple utilise un <xref:Microsoft.Office.Tools.Excel.NamedRange> contrôle nommé `message`. Le contrôle doit être ajouté à une personnalisation au niveau du document au moment du design. Le code suivant doit être placé dans une classe sheet et non dans le `ThisWorkbook` classe.
+ Cet exemple utilise un <xref:Microsoft.Office.Tools.Excel.NamedRange> contrôle nommé `message` . Le contrôle doit être ajouté à une personnalisation au niveau du document au moment du Design. Le code suivant doit être placé dans une classe Sheet et non dans la `ThisWorkbook` classe.
 
-### <a name="to-display-text-in-a-namedrange-control"></a>Pour afficher le texte dans un contrôle NamedRange
+### <a name="to-display-text-in-a-namedrange-control"></a>Pour afficher du texte dans un contrôle NamedRange
 
-1. Définissez la valeur de la <xref:Microsoft.Office.Tools.Excel.NamedRange> le contrôle à **Hello World**.
+1. Définissez la valeur du <xref:Microsoft.Office.Tools.Excel.NamedRange> contrôle sur **Hello World**.
 
      [!code-csharp[Trin_VstcoreExcelAutomation#68](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#68)]
      [!code-vb[Trin_VstcoreExcelAutomation#68](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#68)]
 
-## <a name="use-a-native-excel-range"></a>Utiliser une plage Excel native
- Le code suivant crée une nouvelle plage par programmation et puis lui affecte une valeur.
+## <a name="use-a-native-excel-range"></a>Utiliser une plage Excel Native
+ Le code suivant crée une nouvelle plage par programme, puis lui assigne une valeur.
 
-### <a name="to-display-text-in-an-excel-range"></a>Pour afficher le texte dans une plage Excel
+### <a name="to-display-text-in-an-excel-range"></a>Pour afficher du texte dans une plage Excel
 
-1. Extraire la plage à la cellule **A1** sur `Sheet1` et définissez la valeur sur **Hello World**.
+1. Récupérez la plage à la cellule **a1** `Sheet1` et définissez la valeur sur **Hello World**.
 
      [!code-csharp[Trin_VstcoreExcelAutomation#69](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#69)]
      [!code-vb[Trin_VstcoreExcelAutomation#69](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#69)]
 
 ## <a name="see-also"></a>Voir aussi
-- [Procédure pas à pas : Collecter des données à l’aide d’un formulaire Windows](../vsto/walkthrough-collecting-data-using-a-windows-form.md)
+- [Procédure pas à pas : collecter des données à l’aide d’un Windows Form](../vsto/walkthrough-collecting-data-using-a-windows-form.md)
 - [Résoudre les problèmes des solutions Office](../vsto/troubleshooting-office-solutions.md)
-- [NamedRange (contrôle)](../vsto/namedrange-control.md)
+- [NamedRange, contrôle](../vsto/namedrange-control.md)
 - [Accès global aux objets dans les projets Office](../vsto/global-access-to-objects-in-office-projects.md)
-- [Paramètres optionnels dans les solutions Office](../vsto/optional-parameters-in-office-solutions.md)
+- [Paramètres facultatifs dans les solutions Office](../vsto/optional-parameters-in-office-solutions.md)
