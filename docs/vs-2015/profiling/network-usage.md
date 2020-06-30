@@ -9,12 +9,12 @@ caps.latest.revision: 12
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 6de07c705129aaef705d0c9651d53fdf35e6d0c0
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: 20f7003bbcd319a6a8487d496697d3dcd0b7a18a
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75850750"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85548419"
 ---
 # <a name="network-usage"></a>Utilisation du réseau
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,9 +29,9 @@ L’outil de diagnostic **Réseau** de Visual Studio collecte les données relat
 ## <a name="collecting-network-tool-data"></a>Collecte des données de l'outil Réseau  
  Vous devez exécuter l’outil **Réseau** avec un projet Visual Studio ouvert sur l’ordinateur Visual Studio.  
   
-1. Ouvrez le projet dans Visual Studio.  
+1. Ouvrez le projet dans Visual Studio.  
   
-2. Dans le menu, cliquez sur **Déboguer/profileur de performances...** . Choisissez **réseau**, puis **Démarrer**.  
+2. Dans le menu, cliquez sur **Déboguer/profileur de performances...**. Choisissez **réseau**, puis **Démarrer**.  
   
 3. L'outil Réseau commence à collecter le trafic HTTP de votre application.  
   
@@ -41,7 +41,7 @@ L’outil de diagnostic **Réseau** de Visual Studio collecte les données relat
   
    La fenêtre de rapport doit se présenter comme ceci :  
   
-   ![Fenêtre réseau](../profiling/media/network-fullwindow.png "NETWORK_FullWindow")  
+   ![Fenêtre Réseau](../profiling/media/network-fullwindow.png "NETWORK_FullWindow")  
   
 ## <a name="analyzing-data"></a>Analyse des données  
  Vous pouvez analyser le trafic HTTP capturé pendant l'exécution de votre application, ou même après la fermeture de l'application, en sélectionnant l'une des opérations réseau affichées sur la vue récapitulative.  
@@ -52,15 +52,15 @@ L’outil de diagnostic **Réseau** de Visual Studio collecte les données relat
   
  Les vues des détails **Réseau** affichent des informations supplémentaires sur une opération réseau dans la vue de résumé.  
   
- ![Volet Détails de l’outil réseau](../profiling/media/network-detailsviewpane.png "NETWORK_DetailsViewPane")  
+ ![Volet de détails de l'outil de réseau](../profiling/media/network-detailsviewpane.png "NETWORK_DetailsViewPane")  
   
-|||  
+|Nom|Description|  
 |-|-|  
 |**En-têtes**|Informations sur les en-têtes de demande de l'événement.|  
 |**Corps**|Données de charge utile de la demande et de la réponse.|  
 |**Paramètres**|Noms et valeurs des paramètres de la chaîne de requête.|  
-|**Cookies**|Données de cookie de la demande et de la réponse.|  
-|**Minutages**|Graphique des étapes lors de l'acquisition des ressources sélectionnées.|  
+|**Internes**|Données de cookie de la demande et de la réponse.|  
+|**Horaires**|Graphique des étapes lors de l'acquisition des ressources sélectionnées.|  
   
  La barre de **résumé** de l’outil Réseau indique le nombre d’opérations réseau affichées à un moment donné, la quantité de données qui ont été transférées, le temps qu’il a fallu pour les télécharger et le nombre d’erreurs (demandes avec des réponses 4xx ou 5xx).  
   
@@ -75,5 +75,5 @@ L’outil de diagnostic **Réseau** de Visual Studio collecte les données relat
   
 ## <a name="see-also"></a>Voir aussi  
  [Exécuter les outils de profilage sans débogage](https://msdn.microsoft.com/library/e97ce1a4-62d6-4b8e-a2f7-61576437ff01)   
- [Blog Visual Studio : Présentation de l’inspecteur de réseau de Visual Studio](https://blogs.msdn.com/b/visualstudio/)   
+ [Blog Visual Studio : présentation de l’inspecteur de réseau de Visual Studio](https://blogs.msdn.com/b/visualstudio/)   
  [Vidéo Channel 9 : Diagnostics tools – New Network Profiler](https://channel9.msdn.com/Series/ConnectOn-Demand/206)

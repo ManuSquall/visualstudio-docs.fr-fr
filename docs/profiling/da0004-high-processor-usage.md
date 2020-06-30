@@ -14,16 +14,16 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: b3a067ae9e884ca7f6a4592dbd827eb0c028876a
-ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
+ms.openlocfilehash: e0ac8d8558ee73903898e920ed8174c73ea66c4d
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "85332052"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85548172"
 ---
 # <a name="da0004-high-processor-usage"></a>DA0004 : Utilisation intensive du processeur
 
-|||
+|Élément|Valeur|
 |-|-|
 |ID de règle|DA0004|
 |Category|Utilisation des outils de profilage|

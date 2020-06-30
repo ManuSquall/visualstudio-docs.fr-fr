@@ -12,12 +12,12 @@ caps.latest.revision: 21
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 1c2134c38a3910a5dd1308990b0788002a7ded2d
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: MTE95
+ms.openlocfilehash: 7cac308de96c3edc2dfe5c7577b0bee8077bf9e7
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63441902"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85548434"
 ---
 # <a name="nameprofile"></a>NameProfile
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -52,7 +52,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI NameProfile(
   
   Indique le niveau du profil auquel la collecte des données de performances peut être appliquée. Les valeurs de **PROFILE_CONTROL_LEVEL** suivantes peuvent être utilisés pour indiquer un des trois niveaux auxquels la collecte des données de performances peut être appliquée :  
   
-|Enumerator|Description|  
+|Énumérateur|Description|  
 |----------------|-----------------|  
 |PROFILE_GLOBALLEVEL|Le niveau « global »affecte tous les processus et tous les threads dans l’exécution du profilage.|  
 |PROFILE_PROCESSLEVEL|Le niveau « processus » affecte tous les threads qui font partie du processus spécifié.|  
@@ -65,7 +65,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI NameProfile(
 ## <a name="property-valuereturn-value"></a>Valeur de propriété/valeur de retour  
  La fonction indique la réussite ou l’échec en utilisant l’énumération **PROFILE_COMMAND_STATUS**. La valeur de retour peut être une des suivantes :  
   
-|Enumerator|Description|  
+|Énumérateur|Description|  
 |----------------|-----------------|  
 |NAME_ERROR_ID_NOEXIST|L’élément de profilage spécifié n’existe pas.|  
 |NAME_ERROR_INVALID_NAME|Le nom n'est pas valide.|  
@@ -91,9 +91,9 @@ PROFILE_COMMAND_STATUS PROFILERAPI NameProfile(
   
 ## <a name="function-information"></a>Informations sur la fonction  
   
-|||  
+|Élément|Description|  
 |-|-|  
-|**Header**|Inclure VSPerf.h|  
+|**En-tête**|Inclure VSPerf.h|  
 |**Bibliothèque**|Utiliser VSPerf.lib|  
 |**Unicode**|Implémenté en tant que `NameProfileW` (Unicode) et `NameProfileA` (ANSI).|  
   
@@ -136,4 +136,4 @@ void ExerciseNameProfile()
 ```  
   
 ## <a name="see-also"></a>Voir aussi  
- [Informations de référence sur l’API du profileur Visual Studio (native)](../profiling/visual-studio-profiler-api-reference-native.md)
+ [Informations de référence sur l’API du profileur Visual Studio (natif)](../profiling/visual-studio-profiler-api-reference-native.md)

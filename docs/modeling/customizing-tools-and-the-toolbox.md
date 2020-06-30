@@ -1,7 +1,7 @@
 ---
 title: Personnalisation des outils et de la boîte à outils
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - vs.dsltools.dsldesigner.selectiondialog
 - vs.dsltools.dsldesigner.selecticondialog
@@ -13,18 +13,18 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2e8e9fc3a9ecbadc47c3390d2d4a9b504a316658
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 685da1184706e106f3bdd2088b4d937e0aa7cc9f
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75589719"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85548289"
 ---
 # <a name="customizing-tools-and-the-toolbox"></a>Personnalisation des outils et de la boîte à outils
 
 Vous devez définir les éléments de boîte à outils pour les éléments que les utilisateurs sont autorisés à ajouter à leurs modèles. Il existe deux types d'outils : les outils d'élément et les outils de connexion. Dans le concepteur généré, un utilisateur peut sélectionner un outil d'élément pour déplacer des formes vers le diagramme et sélectionner un outil de connexion pour tracer des liens entre les formes. En général, les outils d'élément permettent aux utilisateurs d'ajouter des instances de classes de domaine à leurs modèles et les outils de connexion d'ajouter des instances de relations de domaine.
 
-## <a name="ToolboxDef"></a>Définition de la boîte à outils
+## <a name="how-the-toolbox-is-defined"></a><a name="ToolboxDef"></a>Définition de la boîte à outils
  Dans l'Explorateur DSL, développez le nœud Éditeur et les nœuds sous-jacents. Généralement, vous voyez une arborescence qui se présente ainsi :
 
 ```
@@ -69,7 +69,7 @@ La propriété **Générateur de connexions** d’un outil de connexion fait ré
 
 3. Définissez la propriété **icône de boîte à outils** pour faire référence à une image bitmap 16x16.
 
-     Si vous souhaitez définir une nouvelle icône, créez un fichier bitmap dans Explorateur de solutions dans le dossier **Dsl\Resources** . Le fichier doit avoir les valeurs de propriétés suivantes : **action de génération** = **contenu**; **Copiez dans le répertoire de sortie** = **ne pas copier**.
+     Si vous souhaitez définir une nouvelle icône, créez un fichier bitmap dans Explorateur de solutions dans le dossier **Dsl\Resources** . Le fichier doit avoir les valeurs de propriété suivantes : générer le contenu de l' **action**  =  **Content**; **Copier dans le répertoire**  =  de sortie **Ne pas copier**.
 
 4. **Pour un outil d’élément :** Définissez la propriété de **classe** de l’outil pour faire référence à une classe de domaine concrète qui est mappée à une forme.
 
@@ -79,7 +79,7 @@ La propriété **Générateur de connexions** d’un outil de connexion fait ré
 
      Si l’outil n’apparaît pas, arrêtez Visual Studio expérimental. Dans le menu **Démarrer** de Windows, exécutez **Reset the Microsoft Visual Studio instance expérimentale 2010**. Dans le menu **Générer**, cliquez sur **Régénérer la solution**. Puis, testez à nouveau le DSL.
 
-## <a name="customizing"></a>Personnalisation des outils d’élément
+## <a name="customizing-element-tools"></a><a name="customizing"></a>Personnalisation des outils d’élément
  Par défaut, l'outil crée une seule instance de la classe spécifiée, mais vous pouvez modifier ce comportement de deux façons :
 
 - Définissez Directives de fusion d'éléments sur d'autres classes, en leur permettant d'accepter de nouvelles instances de cette classe et de créer des liens supplémentaires lorsque le nouvel élément est créé. Par exemple, vous pouvez autoriser l'utilisateur à déposer un Commentaire sur un autre élément et à créer ainsi un lien de référence entre les deux éléments.
@@ -90,7 +90,7 @@ La propriété **Générateur de connexions** d’un outil de connexion fait ré
 
 - Écrivez le code pour personnaliser l'outil de telle sorte qu'il puisse créer des groupes d'éléments. L'outil est initialisé par des méthodes de ToolboxHelper.cs que vous pouvez remplacer. Pour plus d’informations, consultez [création de groupes d’éléments à partir d’un outil](#groups).
 
-## <a name="groups"></a>Création de groupes d’éléments à partir d’un outil
+## <a name="creating-groups-of-elements-from-a-tool"></a><a name="groups"></a>Création de groupes d’éléments à partir d’un outil
  Chaque outil d'élément contient un prototype des éléments qu'il doit créer. Par défaut, chaque outil d'élément crée un seul élément, mais il est également possible de créer un groupe d'objets liés avec un seul outil. Pour ce faire, vous initialisez l'outil avec un <xref:Microsoft.VisualStudio.Modeling.ElementGroupPrototype> qui contient les éléments liés.
 
  L'exemple suivant est extrait d'un DSL dans lequel se trouve un type Transistor. Chaque Transistor possède trois Terminaux nommés. L'outil d'élément pour Transistors stocke un prototype contenant quatre éléments de modèle et trois liens de relation. Lorsque l'utilisateur déplace l'outil sur le diagramme, le prototype est instancié et lié à la racine du modèle.
@@ -139,7 +139,7 @@ using Microsoft.VisualStudio.Modeling.Diagrams;
 }  }    }
 ```
 
-## <a name="connections"></a>Personnalisation des outils de connexion
+## <a name="customizing-connection-tools"></a><a name="connections"></a>Personnalisation des outils de connexion
  Généralement, vous créez un outil d'élément lorsque vous créez une classe de connecteurs. Une autre solution consiste à surcharger un outil en autorisant les types des deux extrémités à déterminer le type de la relation. Par exemple, vous pouvez définir un outil de connexion capable de créer à la fois des relations de type Personne-Personne et des relations de type Personne-Ville.
 
  Les outils de connexion invoquent les générateurs de connexions. Utilisez les générateurs de connexions pour spécifier de quelle façon les utilisateurs peuvent lier les éléments dans le concepteur généré. Les générateurs de connexions spécifient les éléments qui peuvent être liés et le type de lien créé entre eux.
@@ -184,17 +184,17 @@ using Microsoft.VisualStudio.Modeling.Diagrams;
 
  Dans l'exemple Diagramme de composants, le générateur de connexions de la relation de domaine Connexion est personnalisé pour limiter les connexions qui peuvent être établies entre les ports. L'illustration suivante montre que vous ne pouvez établir des connexions qu'à partir des éléments `OutPort` vers les éléments `InPort`, mais que vous pouvez imbriquer des composants les uns à l'intérieur des autres.
 
- **Connexion entrante à un port sortant d’un composant imbriqué**
+ **Connexion entrante vers un OutPort à partir d'un composant imbriqué**
 
  ![Générateur de connexions](../modeling/media/connectionbuilder_3.png)
 
  Par conséquent, il se peut que vous vouliez spécifier qu'une connexion puisse aller d'un composant imbriqué vers un OutPort. Pour spécifier une telle connexion, vous définissez **utilise l’acceptation personnalisée** sur le type d' **inport** comme rôle source et le type de **port** comme rôle cible dans la fenêtre **Détails DSL** , comme indiqué dans les illustrations suivantes :
 
- **Directive de connexion de lien dans l’Explorateur DSL**
+ **Directive de connexion de liens dans l'Explorateur DSL**
 
  ![Image du générateur de connexions](../modeling/media/connectionbuilder_4a.png)
 
- **Directive de connexion de lien dans la fenêtre Détails DSL**
+ **Directive de connexion de liens dans la fenêtre Détails DSL**
 
  ![Directive de connexion de lien dans la fenêtre Détails DSL](../modeling/media/connectionbuilder_4b.png)
 

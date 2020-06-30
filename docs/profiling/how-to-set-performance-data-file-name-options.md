@@ -9,12 +9,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 368dfd4c67277305672a89be9e5ab811d341b009
-ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
+ms.openlocfilehash: 1fc548f5e051be878382d81bd040accbb13e9755
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "85330024"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85548120"
 ---
 # <a name="how-to-set-performance-data-file-name-options"></a>Guide pratique pour définir les options de nom de fichier des données de performance
 
@@ -24,7 +24,7 @@ Par défaut, vous enregistrez un fichier de données de profilage (.*vsp*) à l�
 
 Vous pouvez modifier tout paramètre d’attribution de nom dans la page **Général** de la boîte de dialogue des propriétés pour la session de performance.
 
-|||
+|Paramètre|Description|
 |-|-|
 |*Chemin d’accès*|Répertoire qui contient le rapport. L’emplacement par défaut est le dossier de solution ou l’emplacement par défaut pour les projets et solutions de l’utilisateur.|
 |*VSP-fichier*|Nom du fichier de données de profilage. Le nom par défaut est le nom de la solution ou du fichier exécutable profilés.|
@@ -39,7 +39,7 @@ Vous pouvez modifier tout paramètre d’attribution de nom dans la page **Gén�
 
 3. Sous **Rapport**, modifiez les paramètres suivants :
 
-    |||
+    |Nom|Description|
     |-|-|
     |**Emplacement du rapport**|Spécifiez un répertoire pour le stockage des fichiers de données de profilage.|
     |**Nom du rapport**|Spécifiez un nom de base pour les fichiers.|

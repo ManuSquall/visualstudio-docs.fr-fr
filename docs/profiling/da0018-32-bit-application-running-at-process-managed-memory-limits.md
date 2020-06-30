@@ -13,16 +13,16 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - dotnet
-ms.openlocfilehash: 43535ed4a2e4e3a941b18fe315c3a5015639a0c6
-ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
+ms.openlocfilehash: 74fed5f0dcbac45f603f16743eb2635fcf35292a
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "85328441"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85548146"
 ---
 # <a name="da0018-32-bit-application-running-at-process-managed-memory-limits"></a>DA0018 : application 32 bits s'exécutant aux limites de la mémoire managée du processus
 
-|||
+|Élément|Valeur|
 |-|-|
 |ID de règle|DA0018|
 |Category|Utilisation des outils de profilage|

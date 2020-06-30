@@ -12,12 +12,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: c9f434df1a2956daf49dbb6a6c5c55f06c743d44
-ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
+ms.openlocfilehash: 2fe1ae2870e2e48d092f303f3e7458e7498c0ba5
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "85328632"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85548159"
 ---
 # <a name="how-to-create-a-profiling-tools-call-trace-report"></a>Guide pratique pour créer un rapport de suivi d’appels des Outils de profilage
 Le *rapport de suivi des appels* des Outils de profilage [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] liste les informations chronologiques de chaque point d’entrée et de sortie des fonctions de votre application, et de chaque appel effectué par votre fonction à d’autres fonctions. Les rapports de suivi des appels sont disponibles pour les données de profilage seulement si elles ont été collectées avec la méthode d’instrumentation.
@@ -33,7 +33,7 @@ Le *rapport de suivi des appels* des Outils de profilage [!INCLUDE[vsprvs](../co
 
      *chemin_outils* **VSPerfReport** *VSPFile*  **/CallTrace [/Xml]**
 
-    |||
+    |Élément|Description|
     |-|-|
     |*chemin_outils*|Chemin des outils en ligne de commande des Outils de profilage. Pour plus d’informations, consultez [Spécifier le chemin d’accès aux outils en ligne de commande](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md).|
     |*fichier_VSP*|Données de profilage (.* vsp* ou. *vsps*) txt. Les chemins complets et partiels sont acceptés.|

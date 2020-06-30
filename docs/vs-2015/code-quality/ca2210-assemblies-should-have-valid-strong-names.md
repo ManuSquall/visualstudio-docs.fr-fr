@@ -15,17 +15,17 @@ caps.latest.revision: 25
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 6109e0dc18f98d0b22dfb5c548bd12447b53e61d
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 8f800a550717abfabdfb9296fc8f6de49d127d73
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72662982"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85548198"
 ---
-# <a name="ca2210-assemblies-should-have-valid-strong-names"></a>CA2210 : Les assemblys doivent porter des noms forts valides
+# <a name="ca2210-assemblies-should-have-valid-strong-names"></a>CA2210 : Les assemblys doivent porter des noms forts valides
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Élément|Valeur|
 |-|-|
 |TypeName|AssembliesShouldHaveValidStrongNames|
 |CheckId|CA2210|
@@ -46,7 +46,7 @@ ms.locfileid: "72662982"
 
 - L’assembly n’a pas été correctement signé ou la signature a échoué.
 
-- L’assembly exige que les paramètres du Registre passent la vérification. Par exemple, l’outil Strong Name Tool (SN. exe) a été utilisé pour ignorer la vérification de l’assembly.
+- L’assembly exige que les paramètres du Registre passent la vérification. Par exemple, l’outil Strong Name Tool (Sn.exe) a été utilisé pour ignorer la vérification de l’assembly.
 
   Le nom fort protège les clients du chargement à leur insu d'un assembly falsifié. Les assemblys sans noms forts ne doivent pas être déployés hors de scénarios très limités. Si vous partagez ou distribuez des assemblys qui ne sont pas signés correctement, ceux-ci peuvent être falsifiés, le Common Language Runtime peut ne pas les charger ou l'utilisateur peut être amené à désactiver une vérification sur son ordinateur. Un assembly sans nom fort présente les inconvénients suivants :
 
@@ -63,15 +63,15 @@ ms.locfileid: "72662982"
 
  Utilisez l’une des procédures suivantes :
 
-- Utilisez l’outil Assembly Linker (al. exe) fourni par le kit de développement logiciel (SDK) [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)].
+- Utilisez l’outil Assembly Linker (Al.exe) fourni par le [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] Kit de développement logiciel (SDK).
 
-- Pour le [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] v 1.0 ou v 1.1, utilisez l’attribut <xref:System.Reflection.AssemblyKeyFileAttribute?displayProperty=fullName> ou <xref:System.Reflection.AssemblyKeyNameAttribute?displayProperty=fullName>.
+- Pour [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] v 1.0 ou v 1.1, utilisez l' <xref:System.Reflection.AssemblyKeyFileAttribute?displayProperty=fullName> <xref:System.Reflection.AssemblyKeyNameAttribute?displayProperty=fullName> attribut ou.
 
-- Pour la [!INCLUDE[dnprdnlong](../includes/dnprdnlong-md.md)], utilisez l’option du compilateur `/keyfile` ou `/keycontainer` option [/keyfile (spécifier une clé ou une paire de clés pour signer un assembly)](https://msdn.microsoft.com/library/9b71f8c0-541c-4fe5-a0c7-9364f42ecb06) ou [/keycontainer (spécifier un conteneur de clé pour signer un assembly)](https://msdn.microsoft.com/library/94882d12-b77a-49c7-96d0-18a31aee001e) dans C++).
+- Pour [!INCLUDE[dnprdnlong](../includes/dnprdnlong-md.md)] , utilisez l’option de `/keyfile` compilateur ou l' `/keycontainer` option [de compilateur/keyfile (spécifier une clé ou une paire de clés pour signer un assembly)](https://msdn.microsoft.com/library/9b71f8c0-541c-4fe5-a0c7-9364f42ecb06) ou [/keycontainer (spécifier un conteneur de clé pour signer un assembly)](https://msdn.microsoft.com/library/94882d12-b77a-49c7-96d0-18a31aee001e) , option de l’éditeur de liens en C++).
 
   **Pour signer votre assembly avec un nom fort dans Visual Studio**
 
-1. Dans [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], ouvrez votre solution.
+1. Dans [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] , ouvrez votre solution.
 
 2. Dans **Explorateur de solutions**, cliquez avec le bouton droit sur votre projet, puis cliquez sur **Propriétés.**
 
@@ -89,11 +89,11 @@ ms.locfileid: "72662982"
 
    **Pour signer votre assembly avec un nom fort en dehors de Visual Studio**
 
-- Utilisez l’outil Strong Name Tool (SN. exe) fourni par le kit de développement logiciel (SDK) [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]. Pour plus d’informations, consultez [Sn.exe (Strong Name Tool)](https://msdn.microsoft.com/library/c1d2b532-1b8e-4c7a-8ac5-53b801135ec6).
+- Utilisez l’outil Strong Name (Sn.exe) fourni par le kit de [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] développement logiciel (SDK). Pour plus d’informations, consultez [Sn.exe (outil Strong Name Tool)](https://msdn.microsoft.com/library/c1d2b532-1b8e-4c7a-8ac5-53b801135ec6).
 
 ## <a name="when-to-suppress-warnings"></a>Quand supprimer les avertissements
  Supprimez un avertissement de cette règle uniquement si l’assembly est utilisé dans un environnement où la falsification du contenu n’est pas un problème.
 
 ## <a name="see-also"></a>Voir aussi
  <xref:System.Reflection.AssemblyKeyFileAttribute?displayProperty=fullName> <xref:System.Reflection.AssemblyKeyNameAttribute?displayProperty=fullName>
- [Comment : signer un assembly avec un nom fort](https://msdn.microsoft.com/library/2c30799a-a826-46b4-a25d-c584027a6c67) [sn. exe (Strong Name Tool)](https://msdn.microsoft.com/library/c1d2b532-1b8e-4c7a-8ac5-53b801135ec6)
+ [Comment : signer un assembly avec un nom fort](https://msdn.microsoft.com/library/2c30799a-a826-46b4-a25d-c584027a6c67) [Sn.exe (outil Strong Name Tool)](https://msdn.microsoft.com/library/c1d2b532-1b8e-4c7a-8ac5-53b801135ec6)
