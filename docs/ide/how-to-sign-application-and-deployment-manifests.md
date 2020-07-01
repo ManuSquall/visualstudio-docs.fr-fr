@@ -13,17 +13,17 @@ helpviewer_keywords:
 - key files [Visual Studio]
 - assemblies [Visual Studio], signing
 ms.assetid: 64173505-8bfb-41cf-a0de-b9075173f3a2
-author: TerryGLee
-ms.author: tglee
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fbf25301095ac5ff438514c37f61337e46342860
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 7e04827dd8d8d393af8bc3448df75a7503c8eec3
+ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75596162"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85769782"
 ---
 # <a name="how-to-sign-application-and-deployment-manifests"></a>Guide pratique pour signer des manifestes d’application et de déploiement
 
@@ -71,7 +71,7 @@ Pour plus d’informations sur la création de fichiers de clés, consultez [Gui
 4. Entrez le mot de passe pour accéder au fichier de clé, puis sélectionnez **Entrée**.
 
 > [!NOTE]
-> Le fichier *.pfx* ne peut pas inclure d’informations de chaînage des certificats. Si c’est le cas, l’erreur d’importation suivante se produira : **ne peut pas trouver le certificat et la clé privée pour le décryptage.** Pour supprimer les informations d’enchaînement des certificats, vous pouvez utiliser *Certmgr.msc* et [désactiver la possibilité](/previous-versions/aa730868(v=vs.80)) **d’inclure tous les certificats** lors de l’exportation du fichier .pfx.
+> Le fichier *.pfx* ne peut pas inclure d’informations de chaînage des certificats. Si c’est le cas, l’erreur d’importation suivante se produit : **le certificat et la clé privée sont introuvables pour le déchiffrement**. Pour supprimer les informations de chaînage de certificats, vous pouvez utiliser *Certmgr. msc* et [désactiver l’option](/previous-versions/aa730868(v=vs.80)) permettant d' **inclure tous les certificats** lors de l’exportation du fichier *. pfx.
 
 ## <a name="sign-using-a-test-certificate"></a>Signer en utilisant un certificat de test
 
@@ -113,7 +113,7 @@ Par défaut, ClickOnce génère automatiquement des manifestes signés, sauf si 
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Assemblées de bien-être](/dotnet/framework/app-domains/strong-named-assemblies)
+- [Assemblys avec nom fort](/dotnet/framework/app-domains/strong-named-assemblies)
 - [Guide pratique pour créer une paire de clés publique/privée](/dotnet/framework/app-domains/how-to-create-a-public-private-key-pair)
-- [Page Signature, Concepteur de projet](../ide/reference/signing-page-project-designer.md)
+- [Signature, page du concepteur de projets](../ide/reference/signing-page-project-designer.md)
 - [Sécurité et déploiement ClickOnce](../deployment/clickonce-security-and-deployment.md)

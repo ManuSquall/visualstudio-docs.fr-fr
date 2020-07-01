@@ -1,7 +1,7 @@
 ---
 title: Guide pratique pour afficher l'héritage entre les types (Concepteur de classes)
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - vs.classdesigner.AssociationTypeNotFoundError
 helpviewer_keywords:
@@ -14,16 +14,16 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 47907493451841b631d561bfddb74676a460ff29
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: d5c35279421ad17e62afe707d62dbc879d03b384
+ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75591773"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85769900"
 ---
 # <a name="how-to-view-inheritance-between-types-in-class-designer"></a>Guide pratique pour afficher l’héritage entre les types dans le Concepteur de classes
 
-Vous pouvez trouver la relation d’héritage, si elle existe, entre un type de base et ses types dérivés sur un diagramme de classe dans **Class Designer**. Pour créer une relation d’héritage entre deux types, s’il n’en n’existe aucune, consultez [Guide pratique pour créer un héritage entre des types](how-to-create-inheritance-between-types.md).
+Vous pouvez rechercher la relation d’héritage, si elle existe, entre un type de base et ses types dérivés sur un diagramme de classes dans **Concepteur de classes**. Pour créer une relation d’héritage entre deux types, s’il n’en n’existe aucune, consultez [Guide pratique pour créer un héritage entre des types](how-to-create-inheritance-between-types.md).
 
 ## <a name="to-find-the-base-type"></a>Pour rechercher le type de base
 
@@ -48,4 +48,4 @@ Vous pouvez également cliquer avec le bouton droit sur le type dont vous souhai
 ## <a name="see-also"></a>Voir aussi
 
 - [Guide pratique pour créer des associations entre des types](how-to-create-associations-between-types.md)
-- [Types et relations d’affichage](designing-and-viewing-classes-and-types.md)
+- [Affichage des types et des relations](designing-and-viewing-classes-and-types.md)

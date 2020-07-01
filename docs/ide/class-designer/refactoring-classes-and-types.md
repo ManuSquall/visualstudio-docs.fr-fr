@@ -1,7 +1,7 @@
 ---
 title: Renommer et déplacer des classes et des types dans le Concepteur de classes
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - vs.ClassDesigner.OverrideMembersDialog
 helpviewer_keywords:
@@ -19,12 +19,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6e060f044af666f5a4357e527819286d3bd87267
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: baf0e9d9d0f4bb45ef965f64c256bd9360af112b
+ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75590746"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85768602"
 ---
 # <a name="refactor-classes-and-types-in-class-designer"></a>Refactoriser des classes et des types dans le Concepteur de classes
 
@@ -43,7 +43,7 @@ Quand vous refactorisez du code, vous le rendez plus facile à comprendre et à 
 
 ## <a name="rename-types-and-type-members"></a>Renommer des types et des membres de type
 
-Dans Class Designer, vous pouvez renommer un type ou un membre d’un type sur le diagramme de classe ou dans la fenêtre **Propriétés.** Dans la fenêtre **Détails de classe,** vous pouvez changer le nom d’un membre, mais pas un type. Le changement de nom d'un type ou d'un membre de type se propage à toutes les fenêtres et tous les emplacements de code où apparaissait l'ancien nom.
+Dans Concepteur de classes, vous pouvez renommer un type ou un membre d’un type dans le diagramme de classes ou dans la fenêtre **Propriétés** . Dans la fenêtre **Détails de classe** , vous pouvez modifier le nom d’un membre, mais pas un type. Le changement de nom d'un type ou d'un membre de type se propage à toutes les fenêtres et tous les emplacements de code où apparaissait l'ancien nom.
 
 ### <a name="rename-in-the-class-designer"></a>Attribuer un nouveau nom dans le Concepteur de classes
 
@@ -57,20 +57,20 @@ Dans Class Designer, vous pouvez renommer un type ou un membre d’un type sur l
 
 1. Pour afficher la fenêtre **Détails de classe**, cliquez avec le bouton droit sur le type ou le membre de type, puis sélectionnez **Détails de classe**.
 
-     La fenêtre **Class Details** apparaît.
+     La fenêtre **Détails de classe** s’affiche.
 
 2. Dans la colonne **Nom** , changez le nom du membre de type.
 
 3. Pour déplacer le focus hors de la cellule, appuyez sur la touche **Entrée** ou cliquez en dehors de la cellule.
 
     > [!NOTE]
-    > Dans la fenêtre **Détails de classe,** vous pouvez changer le nom d’un membre, mais pas un type.
+    > Dans la fenêtre **Détails de classe** , vous pouvez modifier le nom d’un membre, mais pas un type.
 
 ### <a name="rename-in-the-properties-window"></a>Attribuer un nouveau nom dans la fenêtre Propriétés
 
 1. Dans le diagramme de classes ou la fenêtre **Détails de classe**, cliquez avec le bouton droit sur le type ou le membre, puis sélectionnez **Propriétés**.
 
-     La fenêtre **Propriétés** apparaît et affiche les propriétés pour le type ou le membre de type.
+     La fenêtre **Propriétés** apparaît et affiche les propriétés du type ou du membre de type.
 
 2. Dans la propriété **Nom** , changez le nom du type ou du membre de type.
 

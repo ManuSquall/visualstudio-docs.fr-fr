@@ -1,19 +1,19 @@
 ---
 title: 'Comment : créer une texture de base'
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 ms.assetid: 0222e8bf-d29f-421b-9b1f-123d500fa179
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 916be87824a86e96d6fcb791cf8181d70e1e8104
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: b356d8596581b1c289d9b9aa13a3d5b362e39e58
+ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75589451"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85769091"
 ---
 # <a name="how-to-create-a-basic-texture"></a>Guide pratique pour créer une texture de base
 
@@ -49,7 +49,7 @@ Avant de commencer, assurez-vous que la fenêtre **Propriétés** est affichée.
 
 4. Définissez la couleur de premier plan en choisissant du noir complètement transparent. Dans la fenêtre **Propriétés**, dans le groupe de propriétés **Couleurs**, sélectionnez **Premier plan**. Définissez les valeurs des propriétés **R**, **V**, **B** et **A** situées en regard du sélecteur de couleurs sur `0`.
 
-5. Sur la barre d’outils Image Editor, choisissez l’outil **Fill,** puis appuyez et maintenez la clé **Shift** et choisissez n’importe quel point de l’image. L’utilisation de la clé **Shift** provoque la valeur alpha de la couleur de remplissage pour remplacer la couleur dans l’image; sinon, la valeur alpha est utilisée pour mélanger la couleur de remplissage avec la couleur dans l’image.
+5. Dans la barre d’outils de l’éditeur d’images, choisissez l’outil **remplissage** , puis appuyez et maintenez la touche **MAJ** enfoncée et choisissez n’importe quel point dans l’image. Si vous utilisez la touche **MAJ** , la valeur alpha de la couleur de remplissage remplace la couleur dans l’image. dans le cas contraire, la valeur alpha est utilisée pour mélanger la couleur de remplissage avec la couleur de l’image.
 
     > [!IMPORTANT]
     > Cette étape, associée à la sélection de couleur de l’étape précédente, permet de s’assurer que l’image de base est préparée pour la texture de la cible que vous dessinez. Lorsque l’image est remplie de noir transparent, et parce que la bordure de la cible est noire, il n’existe pas d’artefact de crénelage autour de la cible.
@@ -64,7 +64,7 @@ Avant de commencer, assurez-vous que la fenêtre **Propriétés** est affichée.
 
 10. Vérifiez que l’anticrénelage est activé. Dans la fenêtre **Propriétés**, dans le groupe de propriétés **Apparence**, assurez-vous que la propriété **Anticrénelage** est définie.
 
-11. À l’aide de l’outil **Ellipse**, tracez un cercle des coordonnées de pixel `(3, 3)` aux coordonnées de pixel `(508, 508)`. Pour dessiner le cercle plus facilement, vous pouvez appuyer et tenir la clé **Shift** pendant que vous dessinez.
+11. À l’aide de l’outil **Ellipse**, tracez un cercle des coordonnées de pixel `(3, 3)` aux coordonnées de pixel `(508, 508)`. Pour dessiner le cercle plus facilement, vous pouvez appuyer sur la touche **MAJ** et la maintenir enfoncée pendant que vous dessinez.
 
     > [!NOTE]
     > Les coordonnées en pixels de l’emplacement actuel du pointeur sont affichées sur la barre d’état Visual Studio.
@@ -85,8 +85,8 @@ La texture de cible est complète. Voici l’image finale, affichée avec la tra
 
 ![Texture cible « Bullseye » complète](../designers/media/gfx_image_demo_bullseye.png)
 
-Ensuite, vous pouvez générer des niveaux MIP pour cette texture. Pour plus d’informations, voir [Comment : Créer et modifier les niveaux de MIP](../designers/how-to-create-and-modify-mip-levels.md).
+Ensuite, vous pouvez générer des niveaux MIP pour cette texture. Pour plus d’informations, consultez [Comment : créer et modifier des niveaux MIP](../designers/how-to-create-and-modify-mip-levels.md).
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Image Editor](../designers/image-editor.md)
+- [Éditeur d’images](../designers/image-editor.md)

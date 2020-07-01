@@ -1,19 +1,19 @@
 ---
 title: 'Comment : modifier l’ordinateur de lecture Graphics Diagnostics | Microsoft Docs'
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 ms.assetid: 1b9aa3ea-29a0-4e21-bc57-936f33537b5c
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5a41caf3f866c4a21d0a44fc69932066b2b7d923
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 4f057e2e4f9d39fd3c5d985b3f0d19751d508614
+ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72735048"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85769377"
 ---
 # <a name="how-to-change-the-graphics-diagnostics-playback-machine"></a>Comment : modifier l'ordinateur de lecture Graphics Diagnostics
 Vous pouvez lire les informations graphiques à l’aide de votre ordinateur local ou à l’aide d’un ordinateur ou d’un appareil distant.
@@ -25,7 +25,7 @@ Vous pouvez lire les informations graphiques à l’aide de votre ordinateur loc
 
 1. Dans la fenêtre de document du journal de graphisme, choisissez le lien de lecture de l' **ordinateur** . La boîte de dialogue **connexions du débogueur distant** s’affiche.
 
-2. Sous **configuration manuelle**, dans la propriété **adresse** , entrez `localhost`.
+2. Sous **configuration manuelle**, dans la propriété **adresse** , entrez `localhost` .
 
 3. Définissez la propriété **mode d’authentification** sur **aucun**.
 
@@ -49,4 +49,4 @@ Vous pouvez lire les informations graphiques à l’aide de votre ordinateur loc
 > La boîte de dialogue **connexions du débogueur distant** peut également afficher des cibles de débogage distant qui sont directement connectées à votre ordinateur de développement ou qui se trouvent sur le même sous-réseau. Vous pouvez utiliser l’une de ces cibles de débogage distant en tant qu’ordinateur de lecture Graphics Diagnostics sans le configurer manuellement. Dans la boîte de dialogue **connexions du débogueur distant** , sélectionnez la cible souhaitée, puis cliquez sur le bouton **Sélectionner** .
 
 ## <a name="see-also"></a>Voir aussi
-- [Document journal de graphisme](graphics-log-document.md)
+- [Document de journal Graphics](graphics-log-document.md)

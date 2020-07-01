@@ -1,24 +1,24 @@
 ---
 title: Concevoir des applications Windows Forms
 ms.date: 08/09/2019
-ms.topic: conceptual
+ms.topic: overview
 helpviewer_keywords:
 - Windows Forms Designer
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: 171cdffa569b342bdbc7dd0da1c8da218e1d622c
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 03619582a30893c161c44c880a0d9cf6c9766d0b
+ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75589888"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85768755"
 ---
 # <a name="windows-forms-designer-overview"></a>Vue d’ensemble du Concepteur Windows Forms
 
 Le Concepteur Windows Forms dans Visual Studio fournit une solution de développement rapide pour la création d’applications basées sur Windows Forms. Le Concepteur Windows Forms vous permet d'ajouter facilement des contrôles à un formulaire, de les organiser et d'écrire du code pour leurs événements. Pour plus d’informations sur Windows Forms, consultez [Vue d’ensemble de Windows Forms](/dotnet/framework/winforms/windows-forms-overview).
 
-## <a name="functionality"></a>Fonctionnalités
+## <a name="functionality"></a>Fonctionnalité
 
 À l’aide du concepteur, vous pouvez :
 
@@ -37,9 +37,9 @@ Le Concepteur Windows Forms dans Visual Studio fournit une solution de développ
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Aperçu des formulaires Windows](/dotnet/framework/winforms/windows-forms-overview)
-- [Contrôles des formulaires Windows](/dotnet/framework/winforms/controls/)
-- [Entrée de l’utilisateur dans les formulaires Windows](/dotnet/framework/winforms/user-input-in-windows-forms)
+- [Présentation de Windows Forms](/dotnet/framework/winforms/windows-forms-overview)
+- [Contrôles Windows Forms](/dotnet/framework/winforms/controls/)
+- [Entrée d’utilisateur dans Windows Forms](/dotnet/framework/winforms/user-input-in-windows-forms)
 - [Liaison de données Windows Forms](/dotnet/framework/winforms/windows-forms-data-binding)
 - [Améliorer des applications Windows Forms](/dotnet/framework/winforms/advanced/)
 - Informations de référence sur l’API <xref:System.Windows.Forms?displayProperty=fullName>

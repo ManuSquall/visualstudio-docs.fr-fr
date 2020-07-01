@@ -1,19 +1,19 @@
 ---
 title: 'Procédure : créer un nuanceur Lambert de base'
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 ms.assetid: ec5c10fb-9600-4240-8280-d59451ea1d68
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d78bc6e1b384f339d80e09fec81d42c1ab8ed103
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: b6f9e5cf95b3766b6c6ceb93c740870a91cfc6af
+ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75589498"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85769201"
 ---
 # <a name="how-to-create-a-basic-lambert-shader"></a>Guide pratique pour créer un nuanceur Lambert de base
 
@@ -48,12 +48,12 @@ L’illustration suivante montre le nuanceur décrit dans ce document appliqué 
 
 ![Éclairage Lambert appliqué à un modèle.](../designers/media/digit-lambert-effect-result.png)
 
-Pour plus d’informations sur la façon d’appliquer un ombrageur à un modèle 3D, voir [Comment: Appliquer un Shader à un modèle 3D](../designers/how-to-apply-a-shader-to-a-3-d-model.md).
+Pour plus d’informations sur l’application d’un nuanceur à un modèle 3D, consultez [Comment : appliquer un nuanceur à un modèle 3D](../designers/how-to-apply-a-shader-to-a-3-d-model.md).
 
 ## <a name="see-also"></a>Voir aussi
 
 - [Guide pratique pour appliquer un nuanceur à un modèle 3D](../designers/how-to-apply-a-shader-to-a-3-d-model.md)
 - [Procédure : exporter un nuanceur](../designers/how-to-export-a-shader.md)
-- [Comment: Créer un Phong Shader de base](../designers/how-to-create-a-basic-phong-shader.md)
-- [Concepteur de nuanceur](../designers/shader-designer.md)
-- [Nœuds de concepteur d’Shader](../designers/shader-designer-nodes.md)
+- [Comment : créer un nuanceur Phong de base](../designers/how-to-create-a-basic-phong-shader.md)
+- [Concepteur Shader](../designers/shader-designer.md)
+- [Nœuds du concepteur Shader](../designers/shader-designer-nodes.md)

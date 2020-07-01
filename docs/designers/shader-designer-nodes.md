@@ -1,19 +1,19 @@
 ---
 title: Nœuds du concepteur Shader
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: overview
 ms.assetid: f5192fbd-c78f-40a8-a4d4-443209610268
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 23877f9b94b498d87a89ae8e657aa2fe52984953
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 75d13aaf5d5b4257ff6ec7c2efc52adbdca7df92
+ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "72634923"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85768786"
 ---
 # <a name="shader-designer-nodes"></a>Nœuds du concepteur Shader
 Les articles de cette section de la documentation contiennent des informations sur les différents nœuds du concepteur Shader pour créer des effets graphiques.
@@ -43,9 +43,9 @@ Comme le concepteur Shader doit finalement générer le code source HLSL afin qu
 
 |Intitulé|Description|
 |-----------|-----------------|
-|[Nœuds constants](../designers/constant-nodes.md)|Décrit les nœuds que vous pouvez utiliser pour représenter des valeurs littérales et des informations d’état de vertex interpolées dans les calculs de nuanceurs. Comme l’état de vertex est interpolé, et donc différent pour chaque pixel, chaque instance du nuanceur de pixels reçoit une version différente de la constante.|
-|[Nœuds paramètres](../designers/parameter-nodes.md)|Décrit les nœuds que vous pouvez utiliser pour représenter la position de l’appareil-photo, les propriétés matérielles, les paramètres d’éclairage, l’heure et d’autres informations sur l’état de l’application dans les calculs de nuanceurs.|
+|[Nœuds de constantes](../designers/constant-nodes.md)|Décrit les nœuds que vous pouvez utiliser pour représenter des valeurs littérales et des informations d’état de vertex interpolées dans les calculs de nuanceurs. Comme l’état de vertex est interpolé, et donc différent pour chaque pixel, chaque instance du nuanceur de pixels reçoit une version différente de la constante.|
+|[Nœuds de paramètres](../designers/parameter-nodes.md)|Décrit les nœuds que vous pouvez utiliser pour représenter la position de l’appareil-photo, les propriétés matérielles, les paramètres d’éclairage, l’heure et d’autres informations sur l’état de l’application dans les calculs de nuanceurs.|
 |[Nœuds de textures](../designers/texture-nodes.md)|Décrit les nœuds que vous pouvez utiliser pour échantillonner différents types de texture, ainsi que des géométries, et pour produire ou transformer des coordonnées de texture avec des techniques courantes.|
-|[Nœuds de mathématiques](../designers/math-nodes.md)|Décrit les nœuds que vous pouvez utiliser pour effectuer des opérations d’algèbre, de logique, de trigonométrie, et d’autres opérations mathématiques qui correspondent directement aux instructions HLSL.|
+|[Nœuds mathématiques](../designers/math-nodes.md)|Décrit les nœuds que vous pouvez utiliser pour effectuer des opérations d’algèbre, de logique, de trigonométrie, et d’autres opérations mathématiques qui correspondent directement aux instructions HLSL.|
 |[Nœuds utilitaires](../designers/utility-nodes.md)|Décrit les nœuds que vous pouvez utiliser pour exécuter des calculs d’éclairage courants et d’autres opérations courantes qui ne correspondent pas directement aux instructions HLSL.|
-|[Nœuds de filtre](../designers/filter-nodes.md)|Décrit les nœuds que vous pouvez utiliser pour effectuer le filtrage de la texture et le filtrage des couleurs.|
+|[Nœuds de filtres](../designers/filter-nodes.md)|Décrit les nœuds que vous pouvez utiliser pour effectuer le filtrage de la texture et le filtrage des couleurs.|

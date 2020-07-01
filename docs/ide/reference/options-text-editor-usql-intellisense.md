@@ -5,21 +5,21 @@ ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.U-SQL.IntelliSense
 - VS.ToolsOptionsPages.Text_Editor.HQL.IntelliSense
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 04f7a66884238856ba6988b9f1e8c648f4ff1d16
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 91d2af8bfcd8c9d80b589e01aedd535afbd1a913
+ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "72666652"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85769471"
 ---
 # <a name="options-text-editor-u-sql-intellisense"></a>Options, Éditeur de texte, U-SQL, IntelliSense
 
-Utilisez la page d’options **IntelliSense** pour modifier certains paramètres de l’éditeur de texte pour U-SQL. Pour accéder à cette page d’options, choisissez **Tools** > **Options**, puis choisissez Text **Editor** > **U-SQL** > **IntelliSense**.
+Utilisez la page d’options **IntelliSense** pour modifier certains paramètres de l’éditeur de texte pour U-SQL. Pour accéder à cette page d’options, choisissez **Outils**  >  **options**, puis **éditeur**  >  **de texte U-SQL**  >  **IntelliSense**.
 
 ## <a name="intellisense-settings"></a>Paramètres IntelliSense
 
@@ -29,7 +29,7 @@ Cochez une case pour activer **Info Express** ou **Intellisense**. Info Express 
 
 - **Afficher la liste de saisie semi-automatique après la saisie d’un caractère**
 
-   Quand cette option est sélectionnée et que vous commencez à taper, IntelliSense affiche automatiquement la liste de saisie semi-automatique. Si vous ne sélectionnez pas cette option, l’achèvement d’IntelliSense est toujours disponible sur le menu IntelliSense ou en appuyant sur **Ctrl** + **Spacebar**.
+   Quand cette option est sélectionnée et que vous commencez à taper, IntelliSense affiche automatiquement la liste de saisie semi-automatique. Si vous ne sélectionnez pas cette option, la saisie semi-automatique IntelliSense est toujours disponible dans le menu IntelliSense ou en appuyant sur **CTRL**  +  **espace**.
 
 - **Placer les mots clés dans les listes de saisie semi-automatique**
 
@@ -55,5 +55,5 @@ Cochez une case pour activer **Info Express** ou **Intellisense**. Info Express 
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Général, Environnement, Options Dialog Box](../../ide/reference/general-environment-options-dialog-box.md)
+- [Général, environnement, boîte de dialogue Options](../../ide/reference/general-environment-options-dialog-box.md)
 - [Using IntelliSense](../../ide/using-intellisense.md)

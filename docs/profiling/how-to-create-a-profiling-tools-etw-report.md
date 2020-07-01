@@ -9,12 +9,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 622015ecbc2730c5b0a8cdf7b2ba92c4f5963886
-ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
+ms.openlocfilehash: 5fe610ea87c492e0bf562fe00145c3abaf76b8ef
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "85329820"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85520625"
 ---
 # <a name="how-to-create-a-profiling-tools-etw-report"></a>Guide pratique pour créer un rapport de suivi d’événements pour Windows (ETW) des outils de profilage
 Le rapport Suivi d’événements pour Windows (ETW) répertorie les événements de suivi d’événements pour Windows enregistrés dans une session de performances des outils de profilage de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Les données ETW sont collectées dans un fichier binaire (.* fichier ETL*). Pour plus d’informations sur ce rapport, consultez le [rapport suivi d’v nements pour Windows (ETW)](../profiling/event-tracing-for-windows-etw-report.md).
@@ -34,7 +34,7 @@ Le rapport Suivi d’événements pour Windows (ETW) répertorie les événement
 
      *chemin_outils* **VSPerfReport** *fichier_VSP*  **/Summary:ETW [/Xml]**
 
-    |||
+    |Élément|Description|
     |-|-|
     |*chemin_outils*|Chemin de l’utilitaire Outils de profilage. Pour plus d’informations, consultez [Spécifier le chemin d’accès aux outils en ligne de commande](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md).|
     |*fichier_VSP*|Données de profilage (.* vsp* ou. *vsps*) txt. Les chemins complets et partiels sont acceptés.|

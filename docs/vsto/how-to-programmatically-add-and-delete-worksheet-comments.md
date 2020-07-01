@@ -1,7 +1,7 @@
 ---
-title: 'Procédure : Ajouter et supprimer des commentaires de feuille de calcul par programmation'
+title: 'Comment : ajouter et supprimer des commentaires de feuille de calcul par programmation'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -14,14 +14,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d7251efb4c7917b67b7b6e7642c78c1cd1041997
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: dc02a659c50a5b207f2f53d0a8781b0d23419301
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62967694"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85520079"
 ---
-# <a name="how-to-programmatically-add-and-delete-worksheet-comments"></a>Procédure : Ajouter et supprimer des commentaires de feuille de calcul par programmation
+# <a name="how-to-programmatically-add-and-delete-worksheet-comments"></a>Comment : ajouter et supprimer des commentaires de feuille de calcul par programmation
   Vous pouvez ajouter et supprimer des commentaires dans des feuilles de calcul Microsoft Office Excel par programmation. Vous pouvez ajouter des commentaires uniquement à des cellules individuelles, et non à des plages de cellules.
 
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]
@@ -61,6 +61,6 @@ ms.locfileid: "62967694"
      [!code-vb[Trin_VstcoreExcelAutomationAddIn#19](../vsto/codesnippet/VisualBasic/trin_vstcoreexcelautomationaddin/ThisAddIn.vb#19)]
 
 ## <a name="see-also"></a>Voir aussi
-- [Travailler avec des feuilles de calcul](../vsto/working-with-worksheets.md)
-- [Guide pratique pour Afficher des commentaires de feuille de calcul par programmation](../vsto/how-to-programmatically-display-worksheet-comments.md)
-- [NamedRange (contrôle)](../vsto/namedrange-control.md)
+- [Utiliser des feuilles de calcul](../vsto/working-with-worksheets.md)
+- [Comment : afficher des commentaires de feuille de calcul par programmation](../vsto/how-to-programmatically-display-worksheet-comments.md)
+- [NamedRange, contrôle](../vsto/namedrange-control.md)

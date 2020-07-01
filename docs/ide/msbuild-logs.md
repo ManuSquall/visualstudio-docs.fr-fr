@@ -2,7 +2,7 @@
 title: Détecter un problème et créer des journaux pour les problèmes MSBuild
 ms.date: 06/27/2019
 ms.technology: vs-ide-compile
-ms.topic: conceptual
+ms.topic: troubleshooting
 helpviewer_keywords:
 - msbuild logs"
 author: corob-msft
@@ -15,12 +15,12 @@ dev_langs:
 ms.workload:
 - multiple
 ms.description: Generate build logs for msbuild projects to collect helpful information when troubleshooting issues.
-ms.openlocfilehash: 07b2c5e941d31ab1be853f9a89af94462329bdf2
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: ae91f7b9c90f0b06c449d26f67fe4fcc3434518e
+ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77278811"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85768697"
 ---
 # <a name="troubleshoot-and-create-logs-for-msbuild-problems"></a>Détecter un problème et créer des journaux pour les problèmes MSBuild
 
@@ -106,7 +106,7 @@ Si vous compilez dans l’IDE Visual Studio (avec commentaires relatifs à la Fe
     Msbuild /p:Configuration="MyConfiguration";Platform="x86" /bl MySolution.sln
     ```
 
-    or
+    ou
 
     ```cmd
     Msbuild /p:/p:SolutionDir="c:\MySolutionDir\";Configuration="MyConfiguration";Platform="Win32" /bl MyProject.vcxproj
@@ -116,15 +116,15 @@ Un fichier Msbuild.binlog sera créé dans le répertoire à partir duquel que v
 
 ## <a name="create-a-detailed-log"></a>Créer un journal détaillé
 
-1. Du menu principal du Visual Studio, **rendez-vous** > sur Tools**Options** > **Projects and Solutions** >**Build and Run**.
-1. Définissez **Commentaires relatifs à la build du projet MSBuild** sur **Détaillé** dans les deux zones de liste déroulante. La première zone contrôle la quantité d’informations sur la build dans la **Fenêtre Sortie** et la seconde zone contrôle la quantité d’informations sur la build dans le fichier \<projectname\>.log qui est créé dans le répertoire intermédiaire du projet pendant la build.
+1. Dans le menu principal de Visual Studio, accédez à **Outils**  >  **options**  >  **projets et solutions**  > **générer et exécuter**.
+1. Définissez **Commentaires relatifs à la build du projet MSBuild** sur **Détaillé** dans les deux zones de liste déroulante. Les contrôles les plus hauts génèrent un niveau de détail dans le **fenêtre Sortie** et le deuxième contrôle génèrent des commentaires dans le \<projectname\> fichier. log créé dans le répertoire intermédiaire de chaque projet pendant la génération.
 2. À partir d’une invite de commandes développeur Visual Studio, entrez une de ces commandes, en remplaçant les valeurs de chemin d’accès et de configuration courantes :
 
     ```cmd
     Msbuild /p:Configuration="MyConfiguration";Platform="x86" /fl MySolution.sln
     ```
 
-    or
+    ou
 
     ```cmd
     Msbuild /p:/p:SolutionDir="c:\MySolutionDir\";Configuration="MyConfiguration";Platform="Win32" /fl MyProject.vcxproj

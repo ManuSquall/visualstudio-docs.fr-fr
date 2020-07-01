@@ -1,19 +1,19 @@
 ---
 title: 'Comment : créer un nuanceur de texture avec nuances de gris'
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 ms.assetid: 79181d81-44af-445e-9a18-03483dd70260
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1b74e956a74ff4c04dbc5a1c990fab708937d8f5
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 2a311456fd3f8eab12c24e26c32349f208e0a723
+ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "76112617"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85769074"
 ---
 # <a name="how-to-create-a-grayscale-texture-shader"></a>Guide pratique pour créer un nuanceur de texture avec nuances de gris
 
@@ -49,8 +49,8 @@ Certaines formes peuvent fournir de meilleurs aperçus pour certains nuanceurs. 
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Comment : Appliquer un ombrageur à un modèle 3D](../designers/how-to-apply-a-shader-to-a-3-d-model.md)
-- [Comment: Exporter un ombrageur](../designers/how-to-export-a-shader.md)
-- [Image Editor](../designers/image-editor.md)
-- [Concepteur de nuanceur](../designers/shader-designer.md)
+- [Comment : appliquer un nuanceur à un modèle 3D](../designers/how-to-apply-a-shader-to-a-3-d-model.md)
+- [Comment : exporter un nuanceur](../designers/how-to-export-a-shader.md)
+- [Éditeur d’images](../designers/image-editor.md)
+- [Concepteur Shader](../designers/shader-designer.md)
 - [Nœuds du concepteur Shader](../designers/shader-designer-nodes.md)

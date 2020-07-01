@@ -1,7 +1,7 @@
 ---
 title: Utilisation de composants 3D dans votre jeu ou votre application
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - VC.Project.ImageContentTask.ContentOutput
 - VC.Project.MeshContentTask.ContentOutput
@@ -15,14 +15,14 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d38f87970d5f9ff6d90befc61073cc4ed3d4ca92
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 3821262a456f9e3e764555fce5fc883b42d4ae9e
+ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75589823"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85768658"
 ---
-# <a name="how-to-use-3d-assets-in-your-game-or-app"></a>Comment : Utilisez des actifs 3D dans votre jeu ou application
+# <a name="how-to-use-3d-assets-in-your-game-or-app"></a>Procédure : Utiliser des composants 3D dans votre jeu ou votre application
 
 Cet article explique comment vous pouvez utiliser Visual Studio pour traiter des composants 3D et les inclure dans vos builds.
 
@@ -71,9 +71,9 @@ Voici les trois types d’éléments de pipeline de contenu et leurs types de fi
 
 |Type d'élément|Types de fichiers sources|Format des fichiers de sortie|
 |---------------| - | - |
-|**Pipeline de contenu d’image**|Portable Network Graphics (*.png*)<br /><br /> JPEG (*.jpg*, *.jpeg*, *.jpe*, *.jfif*)<br /><br /> Surface de tirage direct (*.dds*)<br /><br /> Format d’échange graphique (*.gif*)<br /><br /> Bitmap (*.bmp*, *.dib*)<br /><br /> Tagged Image File Format (*.tif*, *.tiff*)<br /><br /> Targa (*.tga*)|DirectDraw Surface (*.dds*)|
-|**Pipeline de contenu de maillage**|Fichier d’échange AutoDesk FBX (*.fbx*)<br /><br /> Fichier DAE Collada (*.dae*)<br /><br /> Fichier Wavefront OBJ (*.obj*)|Fichier de maille 3D (*.cmo*)|
-|**Pipeline de contenu de nuanceur**|Graphe de nuanceur visuel (*.dgsl*)|Compiled Shader Output (*.cso*)|
+|**Pipeline de contenu d’image**|Portable Network Graphics (*.png*)<br /><br /> JPEG (*. jpg*, *. jpeg*, *. jpe*, *. JFIF*)<br /><br /> Surface de dessin directe (*. DDS*)<br /><br /> Format Graphics Interchange (*. gif*)<br /><br /> Bitmap (*. bmp*, *. dib*)<br /><br /> Tagged Image File Format (*.tif*, *.tiff*)<br /><br /> Targa (*. tga*)|DirectDraw Surface (*.dds*)|
+|**Pipeline de contenu de maillage**|Fichier d’échange AutoDesk FBX (*.fbx*)<br /><br /> Fichier DAE Collada (*.dae*)<br /><br /> Fichier Wavefront OBJ (*.obj*)|fichier de maillage 3D (*. Directeur marketing*)|
+|**Pipeline de contenu de nuanceur**|Graphe de nuanceur visuel (*.dgsl*)|Sortie du nuanceur compilé (*. CSO*)|
 
 ## <a name="configure-asset-content-pipeline-properties"></a>Configurer les propriétés du pipeline de contenu des composants
 
@@ -97,7 +97,7 @@ Quand vous utilisez l'outil de pipeline de contenu d'image pour générer une re
 
 |Propriété|Description|
 |--------------|-----------------|
-|**Compresser**|Spécifie le type de compression utilisé pour le fichier de sortie.<br /><br /> Options disponibles :<br /><br /> -   **Pas de compression**<br />-   **compression BC1_UNORM**<br />-   **Compression BC1_UNORM_SRGB**<br />-   **compression BC2_UNORM**<br />-   **Compression BC2_UNORM_SRGB**<br />-   **compression BC3_UNORM**<br />-   **Compression BC3_UNORM_SRGB**<br />-   **Compression BC4_UNORM**<br />-   **Compression BC4_SNORM**<br />-   **Compression BC5_UNORM**<br />-   **Compression BC5_SNORM**<br />-   **Compression BC6H_UF16**<br />-   **Compression BC6H_SF16**<br />-   **Compression BC7_UNORM**<br />-   **Compression BC7_UNORM_SRGB**<br /><br /> Pour plus d’informations sur les formats de compression pris en charge dans les différentes versions de DirectX, consultez [Guide de programmation pour DXGI](/windows/win32/direct3ddxgi/dx-graphics-dxgi-overviews).|
+|**Dens**|Spécifie le type de compression utilisé pour le fichier de sortie.<br /><br /> Options disponibles :<br /><br /> -   **Aucune compression**<br />-   **Compression BC1_UNORM**<br />-   **Compression BC1_UNORM_SRGB**<br />-   **Compression BC2_UNORM**<br />-   **Compression BC2_UNORM_SRGB**<br />-   **Compression BC3_UNORM**<br />-   **Compression BC3_UNORM_SRGB**<br />-   **Compression BC4_UNORM**<br />-   **Compression BC4_SNORM**<br />-   **Compression BC5_UNORM**<br />-   **Compression BC5_SNORM**<br />-   **Compression BC6H_UF16**<br />-   **Compression BC6H_SF16**<br />-   **Compression BC7_UNORM**<br />-   **Compression BC7_UNORM_SRGB**<br /><br /> Pour plus d’informations sur les formats de compression pris en charge dans les différentes versions de DirectX, consultez [Guide de programmation pour DXGI](/windows/win32/direct3ddxgi/dx-graphics-dxgi-overviews).|
 |Convertir dans un format alpha prémultiplié|**Oui** pour convertir l’image dans un format alpha prémultiplié dans le fichier de sortie ; sinon, **Non**. Seul le fichier de sortie est modifié ; l'image source est inchangée.|
 |**Générer des mips**|**Oui** pour générer une chaîne MIP complète au moment de la génération et l’inclure dans le fichier de sortie ; sinon, **Non**. Si la valeur **Non** est sélectionnée et que le fichier source contient déjà une chaîne mipmap, le fichier de sortie a une chaîne MIP ; sinon, le fichier de sortie n’a pas de chaîne MIP.|
 |**Sortie de contenu**|Spécifie le nom du fichier de sortie. **Important :** La modification de l’extension du nom de fichier de sortie n’a aucun effet sur son format.|
@@ -214,7 +214,7 @@ cbuffer MiscVars : register(b3)
 |Intitulé|Description|
 |-----------|-----------------|
 |[Guide pratique pour exporter une texture qui contient des mipmaps](../designers/how-to-export-a-texture-that-contains-mipmaps.md)|Explique comment utiliser le pipeline de contenu d'image pour exporter une texture qui contient des mipmaps précalculés.|
-|[Comment: Exporter une texture qui a prémultiplié alpha](../designers/how-to-export-a-texture-that-has-premultiplied-alpha.md)|Explique comment utiliser le pipeline de contenu d'image pour exporter une texture qui contient des valeurs alpha prémultipliées.|
-|[Comment : Exporter une texture pour une utilisation avec les applications Direct2D ou JavaScript](../designers/how-to-export-a-texture-for-use-with-direct2d-or-javascipt-apps.md)|Explique comment utiliser le pipeline de contenu d'image pour exporter une texture utilisable dans une application Direct2D ou Javascript.|
-|[Travailler avec des actifs 3D pour les jeux et les applications](../designers/working-with-3-d-assets-for-games-and-apps.md)|Décrit les outils d’édition fournis par Visual Studio pour créer et manipuler des composants 3D, qui comprennent les textures, les images, les modèles 3D et les nuanceurs.|
-|[Comment: Exporter un ombrageur](../designers/how-to-export-a-shader.md)|Explique comment exporter un nuanceur à partir du concepteur Shader.|
+|[Comment : exporter une texture qui a une valeur alpha prémultipliée](../designers/how-to-export-a-texture-that-has-premultiplied-alpha.md)|Explique comment utiliser le pipeline de contenu d'image pour exporter une texture qui contient des valeurs alpha prémultipliées.|
+|[Comment : exporter une texture pour l’utiliser avec des applications Direct2D ou JavaScript](../designers/how-to-export-a-texture-for-use-with-direct2d-or-javascipt-apps.md)|Explique comment utiliser le pipeline de contenu d'image pour exporter une texture utilisable dans une application Direct2D ou Javascript.|
+|[Utilisation des ressources 3D pour les jeux et les applications](../designers/working-with-3-d-assets-for-games-and-apps.md)|Décrit les outils d’édition fournis par Visual Studio pour créer et manipuler des composants 3D, qui comprennent les textures, les images, les modèles 3D et les nuanceurs.|
+|[Comment : exporter un nuanceur](../designers/how-to-export-a-shader.md)|Explique comment exporter un nuanceur à partir du concepteur Shader.|

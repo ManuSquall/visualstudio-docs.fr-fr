@@ -1,19 +1,19 @@
 ---
 title: 'Comment : créer un nuanceur de couleur de base'
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 ms.assetid: c301328a-079a-49e8-b688-4749c01657c0
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 162632f0043d23fb111a9e455c1100f9506924a8
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 0fe0fc31f3be758e16042de6133399b2df6b65c5
+ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75589511"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85769162"
 ---
 # <a name="how-to-create-a-basic-color-shader"></a>Guide pratique pour créer un nuanceur de couleur de base
 
@@ -46,7 +46,7 @@ Certaines formes peuvent fournir de meilleurs aperçus pour certains nuanceurs. 
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Comment : Appliquer un ombrageur à un modèle 3D](../designers/how-to-apply-a-shader-to-a-3-d-model.md)
-- [Comment: Exporter un ombrageur](../designers/how-to-export-a-shader.md)
-- [Concepteur de nuanceur](../designers/shader-designer.md)
+- [Comment : appliquer un nuanceur à un modèle 3D](../designers/how-to-apply-a-shader-to-a-3-d-model.md)
+- [Comment : exporter un nuanceur](../designers/how-to-export-a-shader.md)
+- [Concepteur Shader](../designers/shader-designer.md)
 - [Nœuds du concepteur Shader](../designers/shader-designer-nodes.md)

@@ -1,19 +1,19 @@
 ---
 title: 'Procédure : créer un nuanceur de texture de base'
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 ms.assetid: 5af113fb-6415-4be0-8b23-10fddb10e80a
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ac74155b8de4669d959d9b14e9be20ada2ec51d9
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 30925a9b1814bd636258696fef817be9903f8006
+ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75589472"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85769086"
 ---
 # <a name="how-to-create-a-basic-texture-shader"></a>Guide pratique pour créer un nuanceur de texture de base
 
@@ -48,11 +48,11 @@ L’illustration suivante présente le graphique du nuanceur terminé ainsi qu�
 
 ![Graphique du nuanceur et un aperçu de ses effets](../designers/media/digit-texture-effect.png)
 
-Certaines formes peuvent fournir de meilleurs aperçus pour certains nuanceurs. Pour plus d’informations sur la façon de prévisualiser les ombrageurs dans le Shader Designer, voir [Shader Designer](../designers/shader-designer.md)
+Certaines formes peuvent fournir de meilleurs aperçus pour certains nuanceurs. Pour plus d’informations sur l’aperçu des nuanceurs dans le concepteur de nuanceur, consultez [Shader designer](../designers/shader-designer.md) .
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Comment : Appliquer un ombrageur à un modèle 3D](../designers/how-to-apply-a-shader-to-a-3-d-model.md)
-- [Image Editor](../designers/image-editor.md)
-- [Concepteur de nuanceur](../designers/shader-designer.md)
+- [Comment : appliquer un nuanceur à un modèle 3D](../designers/how-to-apply-a-shader-to-a-3-d-model.md)
+- [Éditeur d’images](../designers/image-editor.md)
+- [Concepteur Shader](../designers/shader-designer.md)
 - [Nœuds du concepteur Shader](../designers/shader-designer-nodes.md)

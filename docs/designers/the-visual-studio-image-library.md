@@ -1,7 +1,7 @@
 ---
 title: bibliothèque d'images
 ms.date: 11/04/2016
-ms.topic: sample
+ms.topic: conceptual
 helpviewer_keywords:
 - animation [Visual Studio]
 - graphics [Visual Studio], Image Library
@@ -16,12 +16,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2599238e18415fb494d3d72fdf24305d7ba1b0b4
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: 88dc33f4dcc8edf0b7793a726a0b626360b9edb1
+ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "75589901"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85768667"
 ---
 # <a name="the-visual-studio-image-library"></a>Bibliothèque d’images Visual Studio
 
@@ -34,4 +34,4 @@ La bibliothèque d’images est divisée en cinq catégories : éléments commu
 ## <a name="see-also"></a>Voir aussi
 
 - [Installer Visual Studio](../install/install-visual-studio.md)
-- [Images, bitmaps et métafiles](/dotnet/framework/winforms/advanced/images-bitmaps-and-metafiles)
+- [Images, bitmaps et sous-fichiers](/dotnet/framework/winforms/advanced/images-bitmaps-and-metafiles)

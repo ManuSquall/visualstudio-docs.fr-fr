@@ -1,5 +1,5 @@
 ---
-title: 'Erreur : Le service débogueur distant Visual Studio sur l’ordinateur cible ne peut pas se reconnecter à cet ordinateur | Microsoft Docs'
+title: 'Erreur : le service Débogueur distant Visual Studio sur l’ordinateur cible ne peut pas se reconnecter à cet ordinateur | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -16,29 +16,28 @@ caps.latest.revision: 15
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 8f598d765e45b1f97d6a3e95d1ad57c325ea38fe
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 80a7de83f118b38d9a3c71f1c7e7febf48e0f5bc
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65697347"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85520508"
 ---
-# <a name="error-the-visual-studio-remote-debugger-service-on-the-target-computer-cannot-connect-back-to-this-computer"></a>Erreur : Le service de débogueur distant Visual Studio sur l’ordinateur cible ne peut pas se reconnecter à cet ordinateur
+# <a name="error-the-visual-studio-remote-debugger-service-on-the-target-computer-cannot-connect-back-to-this-computer"></a>Erreur : Le service Débogueur distant Visual Studio sur l'ordinateur cible ne peut pas se reconnecter à cet ordinateur
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Cette erreur signifie que le service Débogueur distant Visual Studio s'exécute sous un compte d'utilisateur qui ne peut pas être authentifié lorsqu'il se connecte à l'ordinateur à partir duquel vous déboguez.  
   
  Le tableau suivant répertorie les comptes autorisés à accéder à l'ordinateur:  
   
-|||||  
-|-|-|-|-|  
-||Compte LocalSystem|Compte de domaine|Comptes locaux avec les mêmes nom d'utilisateur et mot de passe sur les deux ordinateurs|  
+|Scénario|Compte LocalSystem|Compte du domaine|Comptes locaux avec les mêmes nom d'utilisateur et mot de passe sur les deux ordinateurs|  
+|-|-|-|-|-|  
 |Deux ordinateurs sur le même domaine|Oui|Oui|Oui|  
 |Deux ordinateurs sur des domaines qui ont un niveau de confiance bidirectionnel|Non|Non|Oui|  
 |Un ordinateur, ou les deux, dans un groupe de travail|Non|Non|Oui|  
 |Ordinateurs sur des domaines différents|Non|Non|Oui|  
   
- En outre :  
+ Informations supplémentaires :  
   
 - Le compte sous lequel vous exécutez le service Débogueur distant Visual Studio doit être un administrateur sur l'ordinateur distant afin qu'il puisse déboguer tout processus.  
   
@@ -48,7 +47,7 @@ Cette erreur signifie que le service Débogueur distant Visual Studio s'exécute
   
 ### <a name="to-correct-this-error"></a>Pour corriger cette erreur  
   
-1. Assurez-vous que le service Débogueur distant Visual Studio est correctement installé sur l'ordinateur distant. Pour plus d’informations, consultez [définir Up the Remote Tools sur l’appareil](https://msdn.microsoft.com/library/90f45630-0d26-4698-8c1f-63f85a12db9c).  
+1. Assurez-vous que le service Débogueur distant Visual Studio est correctement installé sur l'ordinateur distant. Pour plus d’informations, consultez [configurer le outils de contrôle à distance sur l’appareil](https://msdn.microsoft.com/library/90f45630-0d26-4698-8c1f-63f85a12db9c).  
   
 2. Exécutez le service Débogueur distant sous un compte qui peut accéder à l'ordinateur hôte du débogueur, comme indiqué dans le tableau précédent.  
   
@@ -77,5 +76,5 @@ Cette erreur signifie que le service Débogueur distant Visual Studio s'exécute
 - Exécutez le Remote Debugging Monitor comme une application au lieu d'un service.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Erreurs de débogage à distance et dépannage](../debugger/remote-debugging-errors-and-troubleshooting.md)   
- [Remote Debugging](../debugger/remote-debugging.md)
+ [Erreurs de débogage distant et dépannage](../debugger/remote-debugging-errors-and-troubleshooting.md)   
+ [Débogage à distance](../debugger/remote-debugging.md)

@@ -1,19 +1,19 @@
 ---
 title: 'Comment : créer un nuanceur de géométrie dégradé'
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 ms.assetid: 4b204405-ba95-4c5e-bd51-ec033a3ebfb6
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 96326910a04294e30c410cc96bf9c600bfb3f17c
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 1e10fd5266ba39febe6261f41437c10c19b5c82f
+ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75589450"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85769103"
 ---
 # <a name="how-to-create-a-geometry-based-gradient-shader"></a>Guide pratique pour créer un nuanceur de géométrie dégradé
 
@@ -56,13 +56,13 @@ L’illustration suivante montre le nuanceur, décrit dans ce document, appliqu�
 
 ![Effet dégradé appliqué à un modèle de terrain 3D](../designers/media/digit-gradient-effect-result.png)
 
-Pour plus d’informations sur la façon d’appliquer un ombrageur à un modèle 3D, voir [Comment: Appliquer un ombrageur sur un modèle 3D](../designers/how-to-apply-a-shader-to-a-3-d-model.md).
+Pour plus d’informations sur l’application d’un nuanceur à un modèle 3D, consultez [Comment : appliquer un nuanceur à un modèle 3D](../designers/how-to-apply-a-shader-to-a-3-d-model.md).
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Comment : Appliquer un ombrageur à un modèle 3D](../designers/how-to-apply-a-shader-to-a-3-d-model.md)
-- [Comment: Exporter un ombrageur](../designers/how-to-export-a-shader.md)
-- [Comment : Terrain 3D modèle](../designers/how-to-model-3-d-terrain.md)
-- [Comment: Créer un ombreur de texture à l’échelle grise](../designers/how-to-create-a-grayscale-texture-shader.md)
-- [Concepteur de nuanceur](../designers/shader-designer.md)
+- [Comment : appliquer un nuanceur à un modèle 3D](../designers/how-to-apply-a-shader-to-a-3-d-model.md)
+- [Comment : exporter un nuanceur](../designers/how-to-export-a-shader.md)
+- [Comment : modéliser un terrain 3D](../designers/how-to-model-3-d-terrain.md)
+- [Comment : créer un nuanceur de texture avec nuances de gris](../designers/how-to-create-a-grayscale-texture-shader.md)
+- [Concepteur Shader](../designers/shader-designer.md)
 - [Nœuds du concepteur Shader](../designers/shader-designer-nodes.md)

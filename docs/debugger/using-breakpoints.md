@@ -1,7 +1,7 @@
 ---
 title: Utiliser des points d’arrêt dans le débogueur | Microsoft Docs
 ms.custom: ''
-ms.date: 10/28/2019
+ms.date: 06/30/2020
 ms.topic: how-to
 f1_keywords:
 - vs.debug.breakpointswin
@@ -34,12 +34,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fab15d3390e73ad464a334ccbe64ff8d59db77f2
-ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
+ms.openlocfilehash: 57b2ea6a0c69387043057bc07957a757ed351f99
+ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/25/2020
-ms.locfileid: "85348013"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85769402"
 ---
 # <a name="use-breakpoints-in-the-visual-studio-debugger"></a>Utiliser des points d’arrêt dans le débogueur Visual Studio
 
@@ -50,7 +50,7 @@ Les points d’arrêt constituent l’une des techniques de débogage les plus i
 
 ## <a name="set-breakpoints-in-source-code"></a><a name="BKMK_Overview"></a>Définir des points d’arrêt dans le code source
 
-Vous pouvez définir un point d’arrêt sur n’importe quelle ligne de code exécutable. Par exemple, dans le code C# suivant, vous pouvez définir un point d’arrêt sur la déclaration de variable, la `for` boucle ou tout code à l’intérieur de la `for` boucle. Vous ne pouvez pas définir un point d’arrêt sur les déclarations d’espace de noms ou de classe, ni sur la signature de méthode.
+Vous pouvez définir un point d’arrêt sur n’importe quelle ligne de code exécutable. Par exemple, dans le code C# suivant, vous pouvez définir un point d’arrêt sur la ligne de code avec l’assignation de variable ( `int testInt = 1` ), la `for` boucle ou tout code à l’intérieur de la `for` boucle. Vous ne pouvez pas définir un point d’arrêt sur les signatures de méthode, les déclarations pour un espace de noms ou une classe, ou les déclarations de variable s’il n’y a aucune assignation et aucune méthode Getter/Setter.
 
 Pour définir un point d’arrêt dans le code source, cliquez dans la marge de gauche située en regard d’une ligne de code. Vous pouvez également sélectionner la ligne et appuyer sur **F9**, **Sélectionner**  >  **basculer le point d’arrêt**ou cliquer avec le bouton droit et sélectionner point d' **arrêt**  >  **Insérer un point d’arrêt**. Le point d’arrêt apparaît sous la forme d’un point rouge dans la marge de gauche.
 

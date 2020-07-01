@@ -13,12 +13,12 @@ caps.latest.revision: 111
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 46790d762369ade78af6c10272fc92e4d5b53fca
-ms.sourcegitcommit: da5ebc29544fdbdf625ab4922c9777faf2bcae4a
+ms.openlocfilehash: 81eedeeb9a1b2470e87f0d865996ad3e456723fe
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "82586788"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85520547"
 ---
 # <a name="using-the-intellitrace-stand-alone-collector"></a>Utilisation du collecteur autonome IntelliTrace
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -223,7 +223,7 @@ Le **collecteur autonome IntelliTrace** vous permet de collecter des données de
 
      `Start-IntelliTraceCollection "SharePoint - 80" "C:\IntelliTraceCollector\collection_plan.ASP.NET.default.xml" "C:\IntelliTraceLogFiles"`
 
-    |||
+    |Élément|Description|
     |-|-|
     |*ApplicationPool*|Nom du pool d’applications dans lequel votre application s’exécute.|
     |*PathToCollectionPlan*|Chemin d’accès à un plan de collecte, un fichier .xml qui configure les paramètres du collecteur.<br /><br /> Vous pouvez spécifier un plan qui est fourni avec le collecteur. Les plans suivants fonctionnent avec les applications web et SharePoint :<br /><br /> -   collection_plan.ASP.NET.default.xml<br />     Collecte uniquement les événements IntelliTrace et les événements SharePoint, y compris les exceptions, les appels de base de données et les demandes de serveur web.<br />-   collection_plan.ASP.NET.trace.xml<br />     Collecte les appels de fonction et toutes les données du plan collection_plan.ASP.NET.default.xml. Ce plan est approprié pour une analyse détaillée, mais il risque de ralentir votre application davantage que le plan collection_plan.ASP.NET.default.xml.<br /><br /> Pour éviter de ralentir votre application, personnalisez ces plans ou créez votre propre plan. Pour des raisons de sécurité, placez tous les plans personnalisés dans le même emplacement sécurisé que les fichiers du collecteur. Consultez [Créer et personnaliser des plans de collecte IntelliTrace](https://devblogs.microsoft.com/devops/modifying-an-intellitrace-collection-plan-for-the-stand-alone-collector/) et [Comment puis-je obtenir le maximum de données sans ralentir mon application ?](#Minimizing) **Remarque :**  Par défaut, la taille maximale du fichier. iTrace est de 100 Mo. Quand le fichier .iTrace atteint cette limite, le collecteur supprime les entrées les plus anciennes du fichier pour faire de la place aux nouvelles entrées. Pour changer cette limite, modifiez l’attribut `MaximumLogFileSize` du plan de collecte. <br /><br /> *Où puis-je trouver des versions localisées de ces plans de collecte ?*<br /><br /> Les plans de collecte localisés sont situés dans les sous-dossiers du collecteur.|
@@ -256,13 +256,13 @@ Le **collecteur autonome IntelliTrace** vous permet de collecter des données de
 
 1. Pour démarrer votre application et collecter des données en même temps, utilisez la syntaxe suivante :
 
-     `\IntelliTraceSC.exe launch /cp:` `/f:` *FullPathToIntelliTraceCollectorExecutable>\<PathToCollectionPlan>* *FullPathToITraceFileDirectoryAndFileName \<>* *PathToAppExecutableFileAndFileName \<>* * \<*
+     *\<FullPathToIntelliTraceCollectorExecutable>* `\IntelliTraceSC.exe launch /cp:` *\<PathToCollectionPlan>* `/f:` *\<FullPathToITraceFileDirectoryAndFileName>* *\<PathToAppExecutableFileAndFileName>*
 
      Par exemple, pour collecter des données d’une application nommée **MyApp**, exécutez :
 
      `C:IntelliTraceCollectorIntelliTraceSC.exe launch /cp:"C:IntelliTraceCollectorcollection_plan.ASP.NET.default.xml" /f:"C:IntelliTraceLogFilesMyApp.itrace" "C:MyAppMyApp.exe"`
 
-    |||
+    |Élément|Description|
     |-|-|
     |*FullPathToIntelliTraceCollectorExecutable*|Chemin d’accès complet à l’exécutable du collecteur (IntelliTraceSC.exe).|
     |*PathToCollectionPlan*|Chemin d’accès à un plan de collecte, un fichier .xml qui configure les paramètres du collecteur.<br /><br /> Vous pouvez spécifier un plan qui est fourni avec le collecteur. Les plans suivants fonctionnent avec les applications managées :<br /><br /> -   collection_plan.ASP.NET.default.xml<br />     Collecte uniquement les événements IntelliTrace, y compris les exceptions, les appels de base de données et les demandes de serveur web.<br />-   collection_plan.ASP.NET.trace.xml<br />     Collecte les appels de fonction et toutes les données du plan collection_plan.ASP.NET.default.xml. Ce plan est approprié pour une analyse détaillée, mais il risque de ralentir votre application davantage que le plan collection_plan.ASP.NET.default.xml.<br /><br /> Pour éviter de ralentir votre application, personnalisez ces plans ou créez votre propre plan. Pour des raisons de sécurité, placez tous les plans personnalisés dans le même emplacement sécurisé que les fichiers du collecteur. Consultez [Créer et personnaliser des plans de collecte IntelliTrace](https://devblogs.microsoft.com/devops/modifying-an-intellitrace-collection-plan-for-the-stand-alone-collector/) et [Comment puis-je obtenir le maximum de données sans ralentir mon application ?](#Minimizing) **Remarque :**  Par défaut, la taille maximale du fichier. iTrace est de 100 Mo. Quand le fichier .iTrace atteint cette limite, le collecteur supprime les entrées les plus anciennes du fichier pour faire de la place aux nouvelles entrées. Pour changer cette limite, modifiez l’attribut `MaximumLogFileSize` du plan de collecte. <br /><br /> *Où puis-je trouver des versions localisées de ces plans de collecte ?*<br /><br /> Les plans de collecte localisés sont situés dans les sous-dossiers du collecteur.|
@@ -402,5 +402,5 @@ Le **collecteur autonome IntelliTrace** vous permet de collecter des données de
 ### <a name="forums"></a>Forums
  [Débogueur Visual Studio](https://social.msdn.microsoft.com/Forums/vsdebug)
 
-### <a name="videos"></a>Videos
+### <a name="videos"></a>Vidéos
  [Vidéo Channel 9 : Collecte et analyse des données dans l’environnement de production](https://s.ch9.ms/Series/Visual-Studio-2012-Premium-and-Ultimate-Overview/Visual-Studio-Ultimate-2012-Collecting-and-analyzing-data-in-production)

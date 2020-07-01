@@ -1,7 +1,7 @@
 ---
-title: 'Procédure : Supprimer par programmation tous les commentaires des documents'
+title: 'Comment : supprimer tous les commentaires des documents par programmation'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -13,14 +13,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 78b73cfe13d2374afad22dd322a80fe69acfb838
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 4b2b0e2be92ca5d4b548b297d01f8ec31b779510
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62955830"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85519884"
 ---
-# <a name="how-to-programmatically-remove-all-comments-from-documents"></a>Procédure : Supprimer par programmation tous les commentaires des documents
+# <a name="how-to-programmatically-remove-all-comments-from-documents"></a>Comment : supprimer tous les commentaires des documents par programmation
   Utilisez la méthode `DeleteAllComments` pour supprimer tous les commentaires d’un document Microsoft Office Word.
 
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]
@@ -32,7 +32,7 @@ ms.locfileid: "62955830"
      [!code-vb[Trin_VstcoreWordAutomation#119](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#119)]
      [!code-csharp[Trin_VstcoreWordAutomation#119](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#119)]
 
-## <a name="to-remove-all-comments-from-a-document-by-using-a-vsto-add-in"></a>Pour supprimer tous les commentaires d’un document en utilisant un complément, VSTO
+## <a name="to-remove-all-comments-from-a-document-by-using-a-vsto-add-in"></a>Pour supprimer tous les commentaires d’un document à l’aide d’un complément VSTO
 
 1. Appelez la méthode <xref:Microsoft.Office.Interop.Word._Document.DeleteAllComments%2A> du <xref:Microsoft.Office.Interop.Word.Document> à partir duquel vous souhaitez supprimer les commentaires.
 
@@ -42,5 +42,5 @@ ms.locfileid: "62955830"
      [!code-csharp[Trin_VstcoreWordAutomationAddIn#119](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#119)]
 
 ## <a name="see-also"></a>Voir aussi
-- [Guide pratique pour Ajouter par programmation des commentaires à du texte dans des documents](../vsto/how-to-programmatically-add-comments-to-text-in-documents.md)
+- [Comment : ajouter des commentaires à du texte dans des documents par programmation](../vsto/how-to-programmatically-add-comments-to-text-in-documents.md)
 - [Élément hôte de document](../vsto/document-host-item.md)

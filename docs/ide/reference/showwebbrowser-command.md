@@ -8,17 +8,17 @@ helpviewer_keywords:
 - ShowWebBrowser command
 - View.ShowWebBrowser command
 ms.assetid: c6a4fbd6-8e9d-45cc-8b2f-93990d065e78
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b8c97659cc6036433c5bcf2547a9f88aee56f451
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: f8266a7c70544d8a320658fcd8b9f5ad249162fe
+ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "72747712"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85769571"
 ---
 # <a name="showwebbrowser-command"></a>Afficher le navigateur Web, commande
 
@@ -44,10 +44,10 @@ facultatif. Spécifie que la page s’affiche dans une nouvelle instance du navi
 
 facultatif. Spécifie que la page s’affiche dans le navigateur web par défaut en dehors de l’environnement IDE.
 
-## <a name="remarks"></a>Notes 
+## <a name="remarks"></a>Remarques
 L’alias de la commande **ShowWebBrowser** est **navigate** ou **nav**.
 
-## <a name="example"></a> Exemple
+## <a name="example"></a>Exemple
 L’exemple suivant affiche la page d’accueil de Microsoft Docs dans un navigateur web en dehors de l’IDE. S’il y a déjà une instance du navigateur web ouverte, elle est utilisée ; sinon, une nouvelle instance est démarrée.
 
 ```cmd
@@ -56,7 +56,7 @@ L’exemple suivant affiche la page d’accueil de Microsoft Docs dans un naviga
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Commandes de studio visuel](../../ide/reference/visual-studio-commands.md)
-- [Commande, fenêtre](../../ide/reference/command-window.md)
-- [Boîte de recherche/commande](../../ide/find-command-box.md)
-- [Alias de commande de studio visuel](../../ide/reference/visual-studio-command-aliases.md)
+- [Commandes Visual Studio](../../ide/reference/visual-studio-commands.md)
+- [Fenêtre commande](../../ide/reference/command-window.md)
+- [Zone Rechercher/commande](../../ide/find-command-box.md)
+- [Alias de commandes Visual Studio](../../ide/reference/visual-studio-command-aliases.md)

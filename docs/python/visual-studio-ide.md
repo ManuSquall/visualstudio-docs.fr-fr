@@ -2,7 +2,7 @@
 title: Vue d’ensemble de Visual Studio pour les développeurs Python
 titleSuffix: ''
 ms.date: 03/13/2019
-ms.topic: conceptual
+ms.topic: overview
 author: JoshuaPartlow
 ms.author: joshuapa
 manager: jillfra
@@ -11,26 +11,26 @@ dev_langs:
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 8b8b656aaefe4440e811378da2b84d1b944d4fb1
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: b97655efac3fc42f5e5790e32c97de169e61a6b5
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "73661933"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85520586"
 ---
 # <a name="welcome-to-the-visual-studio-ide--python"></a>Bienvenue dans l’IDE Visual Studio | Python
 
 *L’environnement de développement intégré* de Visual Studio est une plateforme de lancement créative pour Python (et d’autres langages) qui permet de modifier, déboguer et tester du code, puis de publier une application. Un environnement de développement intégré (IDE) est un programme riche en fonctionnalités qui peut être utilisé pour de nombreux aspects du développement de logiciels. En plus de l’éditeur et du débogueur standard fournis par la plupart des IDE, Visual Studio offre des outils de complétion du code, des environnements REPL interactifs et d’autres fonctionnalités qui facilitent le processus de développement logiciel.
 
-[![Studio visuel avec un projet Python](media/tour-ide-overview.png)](media/tour-ide-overview.png#lightbox)
+[![Visual Studio avec un projet python](media/tour-ide-overview.png)](media/tour-ide-overview.png#lightbox)
 
 Cette image montre Visual Studio avec un projet Python ouvert et plusieurs fenêtres Outil essentielles et souvent utilisées :
 
-- [**Solution Explorer**](../ide/solutions-and-projects-in-visual-studio.md) (en haut à droite) vous permet de visualiser, naviguer et gérer vos fichiers de code. **Solution Explorer** peut vous aider à organiser votre code en groupant les fichiers en [solutions et projets](../get-started/tutorial-projects-solutions.md).
+- [**Explorateur de solutions**](../ide/solutions-and-projects-in-visual-studio.md) (en haut à droite) vous permet d’afficher, de parcourir et de gérer vos fichiers de code. **Explorateur de solutions** pouvez vous aider à organiser votre code en regroupant les fichiers dans des [solutions et des projets](../get-started/tutorial-projects-solutions.md).
   - À côté de **l’Explorateur de solutions** se trouvent les [**Environnements Python**](managing-python-environments-in-visual-studio.md), qui permettent de gérer les différents interpréteurs Python installés sur l’ordinateur.
 
   ::: moniker range=">=vs-2019"
-  - Vous pouvez également ouvrir et exécuter du code Python dans un dossier sans créer de fichiers projet et solution Visual Studio. Pour plus d’informations, voir [Quickstart: Open and run Python code in a folder](quickstart-05-python-visual-studio-open-folder.md).
+  - Vous pouvez également ouvrir et exécuter du code Python dans un dossier sans créer de fichiers projet et solution Visual Studio. Pour plus d’informations, consultez [démarrage rapide : ouvrir et exécuter du code python dans un dossier](quickstart-05-python-visual-studio-open-folder.md).
   ::: moniker-end
 
 - La [fenêtre de l’éditeur](../ide/writing-code-in-the-code-and-text-editor.md) (au centre), où vous passerez sans doute la plupart de votre temps, affiche le contenu des fichiers. C’est là que vous pourrez [modifier le code Python](editing-python-code-in-visual-studio.md), parcourir la structure de votre code et définir des points d’arrêt au cours des sessions de débogage. Avec Python, il est également possible de sélectionner du code et d’appuyer sur Ctrl+Entrée pour l’exécuter dans une [fenêtre REPL interactive](python-interactive-repl-in-visual-studio.md).
@@ -44,7 +44,7 @@ Cette image montre Visual Studio avec un projet Python ouvert et plusieurs fenê
 
 Visual Studio est disponible pour Windows et Mac ; toutefois, Python n’est pris en charge que sur Visual Studio pour Windows.
 
-Il y a trois éditions de Visual Studio sur Windows : Communauté, Professionnel et Entreprise. Consultez [Comparez les IDE Visual Studio](https://visualstudio.microsoft.com/vs/compare/) pour en savoir plus sur les fonctionnalités prises en charge dans chaque édition.
+Il existe trois éditions de Visual Studio sur Windows : Community, Professional et Enterprise. Consultez [Comparez les IDE Visual Studio](https://visualstudio.microsoft.com/vs/compare/) pour en savoir plus sur les fonctionnalités prises en charge dans chaque édition.
 
 ## <a name="popular-productivity-features"></a>Fonctionnalités de productivité populaires
 
@@ -106,7 +106,7 @@ Voici quelques-unes des fonctionnalités populaires de Visual Studio qui vous ai
 
 - [Débogage](debugging-python-in-visual-studio.md)
 
-    Visual Studio offre une expérience complète de débogage pour Python, y compris l’attachement à des processus en cours d’exécution, l’évaluation des expressions dans la **montre** et les fenêtres **immédiates,** l’inspection des variables locales, points d’arrêt, étape in /out / sur les déclarations, **Set Next Statement**, et plus encore. Vous pouvez également déboguer du code Python à distance sur des ordinateurs Linux.
+    Visual Studio fournit une expérience de débogage complète pour Python, y compris l’attachement à des processus en cours d’exécution, l’évaluation d’expressions dans les fenêtres **Espion** et **exécution** , l’inspection de variables locales, les points d’arrêt, les instructions pas à pas détaillé/hors connexion, la définition de l' **instruction suivante**, etc. Vous pouvez également déboguer du code Python à distance sur des ordinateurs Linux.
 
     ![Déboguer du code Python dans Visual Studio](media/remote-debugging-breakpoint-hit.png)
 
@@ -122,7 +122,7 @@ Voici quelques-unes des fonctionnalités populaires de Visual Studio qui vous ai
 
     ![Rapport de performances de profilage](media/profiling-results.png)
 
-- [Test unitaire](unit-testing-python-in-visual-studio.md)
+- [Tests unitaires](unit-testing-python-in-visual-studio.md)
 
     Visual Studio assure une prise en charge intégrée de la découverte, de l’exécution et du débogage de tests unitaires, le tout dans le contexte de l’IDE.
 
@@ -133,7 +133,7 @@ Voici quelques-unes des fonctionnalités populaires de Visual Studio qui vous ai
 Explorez plus en profondeur Python dans Visual Studio en suivant l’un des guides de démarrage rapide ou tutoriels suivants :
 
 > [!div class="nextstepaction"]
-> [Quickstart: Créer une application web avec Flask](../ide/quickstart-python.md?toc=/visualstudio/python/toc.json&bc=/visualstudio/python/_breadcrumb/toc.json)
+> [Démarrage rapide : créer une application Web avec le flacon](../ide/quickstart-python.md?toc=/visualstudio/python/toc.json&bc=/visualstudio/python/_breadcrumb/toc.json)
 
 > [!div class="nextstepaction"]
 > [Utiliser Python dans Visual Studio](tutorial-working-with-python-in-visual-studio-step-01-create-project.md)

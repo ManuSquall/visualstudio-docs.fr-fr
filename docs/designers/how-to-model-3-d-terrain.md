@@ -1,19 +1,19 @@
 ---
 title: Guide pratique pour modéliser un terrain 3D
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 ms.assetid: f779b1fd-82a9-4a11-8ab7-c1c9caabc883
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a863834790683b229c17ad55b9930a2b382c027b
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 12f19363d9024f8e7e2deb69a8038b8854eb50e4
+ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75589420"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85768964"
 ---
 # <a name="how-to-model-3d-terrain"></a>Guide pratique pour modéliser un terrain 3D
 
@@ -29,7 +29,7 @@ Lorsque vous avez terminé, le modèle doit se présenter comme suit :
 
 Avant de commencer, assurez-vous que la fenêtre **Propriétés** et la **Boîte à outils** sont affichées.
 
-1. Créez un modèle 3D avec lequel travailler. Pour plus d’informations sur la façon d’ajouter un modèle à votre projet, consultez la section Getting Started dans [l’éditeur du modèle](../designers/model-editor.md).
+1. Créez un modèle 3D avec lequel travailler. Pour plus d’informations sur l’ajout d’un modèle à votre projet, consultez la section Prise en main dans l' [éditeur de modèle](../designers/model-editor.md).
 
 2. Ajoutez un plan à la scène. Dans la **Boîte à outils**, sous **Formes**, sélectionnez **Plan** et déplacez-le vers l’aire de conception.
 
@@ -53,8 +53,8 @@ Le modèle de terrain est terminé. Voici à nouveau le modèle final, avec l’
 
 ![Scène 3D illustrant un modèle de terrain](../designers/media/digit-terrain-model.png)
 
-Vous pouvez utiliser ce modèle de terrain pour démontrer l’effet de l’ombre de gradient qui est décrit dans [Comment: Créer un ombrage de gradient basé sur la géométrie](../designers/how-to-create-a-geometry-based-gradient-shader.md).
+Vous pouvez utiliser ce modèle de terrain pour illustrer l’effet du nuanceur de dégradé décrit dans [How to : Create a Geometry gradient Shader](../designers/how-to-create-a-geometry-based-gradient-shader.md).
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Éditeur modèle](../designers/model-editor.md)
+- [Éditeur de modèle](../designers/model-editor.md)

@@ -1,19 +1,19 @@
 ---
 title: Guide pratique pour créer un modèle 3D de base
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 ms.assetid: a0d97966-2df8-449b-a8cf-5a19684dc773
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ce16e436172a7d369f2df8342f6b027b574056ab
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: dbd0b2a092e47eab053d4150fd2139fb0dbdf6ea
+ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75589524"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85769264"
 ---
 # <a name="how-to-create-a-basic-3d-model"></a>Guide pratique pour créer un modèle 3D de base
 
@@ -58,7 +58,7 @@ Avant de commencer, assurez-vous que la fenêtre **Propriétés** et la **Boîte
 
     ![Un côté du cube a été plus extrudé.](../designers/media/gfx_model_demo_house_extend.png)
 
-7. Effectuez une triangulation du modèle. Sur la barre d’outils Model Editor, choisissez **Advanced** > **Tools** > **Triangulate**.
+7. Effectuez une triangulation du modèle. Dans la barre d’outils de l' **Advanced**éditeur de modèle, choisissez  >  **Outils**de  >  **triangulation**avancés.
 
 8. Créez le toit de la maison. Passez en mode de sélection d’arête en choisissant **Sélectionner le bord** dans la barre d’outils de l’éditeur de modèle, puis choisissez le cube pour l’activer. Maintenez enfoncée la touche **Ctrl** tout en sélectionnant les arêtes illustrées ici :
 
@@ -70,10 +70,10 @@ Avant de commencer, assurez-vous que la fenêtre **Propriétés** et la **Boîte
 
    ![Modèle terminé de la maison simplifiée](../designers/media/gfx_model_demo_house_final.png)
 
-   Ensuite, vous pouvez appliquer un nuanceur à ce modèle 3D. Pour plus d’informations, voir [Comment : Appliquer un ombrageur sur un modèle 3D.](../designers/how-to-apply-a-shader-to-a-3-d-model.md)
+   Ensuite, vous pouvez appliquer un nuanceur à ce modèle 3D. Pour plus d’informations, consultez [Comment : appliquer un nuanceur à un modèle 3D](../designers/how-to-apply-a-shader-to-a-3-d-model.md).
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Comment : Terrain 3D modèle](../designers/how-to-model-3-d-terrain.md)
-- [Éditeur modèle](../designers/model-editor.md)
+- [Comment : modéliser un terrain 3D](../designers/how-to-model-3-d-terrain.md)
+- [Éditeur de modèle](../designers/model-editor.md)
 - [Concepteur Shader](../designers/shader-designer.md)

@@ -6,4 +6,4 @@ ms.contentlocale: fr-FR
 ms.lasthandoff: 10/18/2019
 ms.locfileid: "68151304"
 ---
-.NET Framework 4.5
+.NET Framework 4.5

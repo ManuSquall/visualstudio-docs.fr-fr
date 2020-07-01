@@ -3,17 +3,17 @@ title: Nœuds constants
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: 2c798a50-a2d7-459b-9879-ad4ad8290c9b
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 86fd5a9b2d179a27ec0cf34f5388b30ebb563ad4
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 6868a5dc7cbace1d061c43cd507d32c271436a26
+ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "72637356"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85769313"
 ---
 # <a name="constant-nodes"></a>Nœuds de constantes
 
@@ -31,7 +31,7 @@ Même si chaque instance de nuanceur de pixels ne reçoit qu’un ensemble de va
 |----------|-------------|----------------|
 |**Vecteur d’appareil photo**|Vecteur qui s’étend du pixel actuel à l’appareil photo dans l’espace universel.<br /><br /> Vous pouvez l’utiliser pour calculer les réflexions dans l’espace universel.<br /><br /> **Sortie**<br /><br /> `Output`: `float3`<br /> Vecteur du pixel actuel à l’appareil photo.|None|
 |**Constante de couleur**|Valeur de constante de couleur.<br /><br /> **Sortie**<br /><br /> `Output`: `float4`<br /> Valeur de la couleur.|**Sortie**<br /> Valeur de la couleur.|
-|**Constante**|Valeur scalaire de constante.<br /><br /> **Sortie**<br /><br /> `Output`: `float`<br /> Valeur scalaire.|**Sortie**<br /> Valeur scalaire.|
+|**Constant**|Valeur scalaire de constante.<br /><br /> **Sortie**<br /><br /> `Output`: `float`<br /> Valeur scalaire.|**Sortie**<br /> Valeur scalaire.|
 |**Constante 2D**|Constante vectorielle à deux composants.<br /><br /> **Sortie**<br /><br /> `Output`: `float2`<br /> Valeur vectorielle.|**Sortie**<br /> Valeur vectorielle.|
 |**Constante 3D**|Constante vectorielle à trois composants.<br /><br /> **Sortie**<br /><br /> `Output`: `float3`<br /> Valeur vectorielle.|**Sortie**<br /> Valeur vectorielle.|
 |**Constante 4D**|Constante vectorielle à quatre composants.<br /><br /> **Sortie**<br /><br /> `Output`: `float4`<br /> Valeur de la couleur.|**Sortie**<br /> Valeur vectorielle.|
@@ -42,6 +42,6 @@ Même si chaque instance de nuanceur de pixels ne reçoit qu’un ensemble de va
 |**Position à l’écran**|Position du pixel actuel, exprimée en coordonnées d’écran.<br /><br /> Les coordonnées d’écran sont basées sur la fenêtre d’affichage actuelle. Les composants x et y contiennent les coordonnées d’écran, le composant z contient la profondeur normalisée dans la plage [0, 1], et le composant w contient la valeur de profondeur dans l’espace d’affichage.<br /><br /> **Sortie**<br /><br /> `Output`: `float4`<br /> Position du pixel actuel.|None|
 |**Normale de surface**|Normale de surface du pixel actuel dans l’espace d’objets.<br /><br /> Vous pouvez l’utiliser pour calculer les contributions de l’éclairage et les réflexions dans l’espace d’objets.<br /><br /> **Sortie**<br /><br /> `Output`: `float3`<br /> Normale de surface du pixel actuel.|None|
 |**Vecteur d’appareil photo de l’espace tangent**|Vecteur qui s’étend du pixel actuel à l’appareil photo dans l’espace tangent.<br /><br /> Vous pouvez l’utiliser pour calculer les réflexions dans l’espace tangent.<br /><br /> **Sortie**<br /><br /> `Output`: `float3`<br /> Vecteur du pixel actuel à l’appareil photo.|None|
-|**Direction de la lumière de l’espace tangent**|Vecteur qui définit la direction dans laquelle la lumière est diffusée depuis une source de lumière dans l’espace tangent du pixel actuel.<br /><br /> Vous pouvez l’utiliser pour calculer les contributions spéculaires et d’éclairage dans l’espace tangent.<br /><br /> **Sortie:**<br /><br /> `Output`: `float3`<br /> Vecteur du pixel actuel à une source de lumière.|None|
+|**Direction de la lumière de l’espace tangent**|Vecteur qui définit la direction dans laquelle la lumière est diffusée depuis une source de lumière dans l’espace tangent du pixel actuel.<br /><br /> Vous pouvez l’utiliser pour calculer les contributions spéculaires et d’éclairage dans l’espace tangent.<br /><br /> **Output:**<br /><br /> `Output`: `float3`<br /> Vecteur du pixel actuel à une source de lumière.|None|
 |**Normale universelle**|Normale de surface du pixel actuel dans l’espace universel.<br /><br /> Vous pouvez l’utiliser pour calculer les contributions de l’éclairage et les réflexions dans l’espace universel.<br /><br /> **Sortie**<br /><br /> `Output`: `float3`<br /> Normale de surface du pixel actuel.|None|
-|**Position universelle**|Position du pixel actuel dans l'espace universel.<br /><br /> **Sortie**<br /><br /> `Output`: `float4`<br /> Position du pixel actuel.|None|
+|**Position universelle**|Position du pixel actuel dans l'espace universel.<br /><br /> **Sortie**<br /><br /> `Output`: `float4`<br /> Position du pixel actuel.|Aucune|

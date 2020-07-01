@@ -1,7 +1,7 @@
 ---
 title: Utiliser la liste des tâches
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - TaskListWindow
 - VS.TaskList
@@ -14,12 +14,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: db39850350f99e6c046996f6408973cbc6543868
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: abd6d73c7b312cf00062307370ba2f7aebe6694e
+ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75594225"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85768618"
 ---
 # <a name="use-the-task-list"></a>Utiliser la liste des tâches
 
@@ -36,7 +36,7 @@ Pour ouvrir la **liste des tâches**, sélectionnez **Affichage** > **Liste des 
 
 ![Fenêtre Liste des tâches](../ide/media/vs2015_task_list.png)
 
-Pour modifier l’ordre de tri de la liste, sélectionnez l’en-tête d’une colonne. Pour affiner davantage vos résultats de recherche, appuyez sur **Shift** et cliquez sur un en-tête de deuxième colonne. Comme alternative, dans le menu contextuel, vous pouvez sélectionner **Trier par**, puis choisir un en-tête. Pour affiner vos résultats de recherche, appuyez sur **Maj** et choisissez un deuxième en-tête.
+Pour modifier l’ordre de tri de la liste, sélectionnez l’en-tête d’une colonne. Pour affiner vos résultats de recherche, appuyez sur **MAJ** et cliquez sur un deuxième en-tête de colonne. Comme alternative, dans le menu contextuel, vous pouvez sélectionner **Trier par**, puis choisir un en-tête. Pour affiner vos résultats de recherche, appuyez sur **Maj** et choisissez un deuxième en-tête.
 
 Pour afficher ou masquer des colonnes, dans le menu contextuel, choisissez **Afficher les colonnes**. Sélectionnez les colonnes que vous souhaitez afficher ou masquer.
 
@@ -104,11 +104,11 @@ Un *raccourci* est un signet dans le code qui est suivi dans la **liste des tâc
 
 ### <a name="create-a-shortcut"></a>Créer un raccourci
 
-Pour créer un raccourci, insérez le pointeur dans le code à l’emplacement souhaité du nouveau raccourci. Choisissez **Edit** > **Bookmarks** > **Ajouter Task List Shortcut** ou appuyez sur **Ctrl**+**K**, **Ctrl**+**H**.
+Pour créer un raccourci, insérez le pointeur dans le code à l’emplacement souhaité du nouveau raccourci. Choisissez **modifier**les  >  **signets**  >  **Ajouter liste des tâches raccourci** ou appuyez sur **CTRL** + **K**, **CTRL** + **H**.
 
 Pour parcourir les raccourcis figurant dans le code, choisissez un raccourci dans la liste, puis **Tâche suivante** ou **Tâche précédente** dans le menu contextuel.
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Liste des tâches, Environnement, Boîte de dialogue Options](../ide/reference/task-list-environment-options-dialog-box.md)
+- [Liste des tâches, environnement, boîte de dialogue Options](../ide/reference/task-list-environment-options-dialog-box.md)
 - [Commentaires de tâche (Visual Studio pour Mac)](/visualstudio/mac/task-comments)

@@ -1,19 +1,19 @@
 ---
 title: Guide pratique pour exporter une texture qui a des valeurs alpha prémultipliées
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 ms.assetid: 05348afa-f079-4f53-a05b-ecd91d13adab
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 84017bef80f42bd1848833b957abd88297d1e12d
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: a1325b5bc0009ba0c022d37be70ca6aab7cc8084
+ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "72635485"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85768919"
 ---
 # <a name="how-to-export-a-texture-that-has-premultiplied-alpha"></a>Guide pratique pour exporter une texture qui contient des valeurs alpha prémultipliées
 
@@ -40,9 +40,9 @@ Les valeurs alpha prémultipliées offrent plusieurs avantages par rapport aux v
 
 1. Commencez par une texture de base. Chargez un fichier image existant ou créez-en un comme décrit dans [Guide pratique pour créer une texture de base](../designers/how-to-create-a-basic-texture.md).
 
-2. Configurez le fichier de texture pour qu’il soit traité par le pipeline de contenus d’image. Dans l’**Explorateur de solutions**, ouvrez le menu contextuel du fichier de texture, puis choisissez **Propriétés**. Sur la page **Configuration Properties** > **General,** définissez la propriété **de type article** sur le pipeline de **contenu d’image**. Vérifiez que la propriété **Contenu** est définie sur **Oui** et que **Exclure de la génération** est défini sur **Non**, puis choisissez le bouton **Appliquer**. La page des propriétés de configuration du **Pipeline de contenus d’image** apparaît.
+2. Configurez le fichier de texture pour qu’il soit traité par le pipeline de contenus d’image. Dans l’**Explorateur de solutions**, ouvrez le menu contextuel du fichier de texture, puis choisissez **Propriétés**. Dans la page **Propriétés de configuration**  >  **général** , définissez la propriété **type d’élément** sur **pipeline de contenu d’image**. Vérifiez que la propriété **Contenu** est définie sur **Oui** et que **Exclure de la génération** est défini sur **Non**, puis choisissez le bouton **Appliquer**. La page des propriétés de configuration du **Pipeline de contenus d’image** apparaît.
 
-3. Configurez le pipeline de contenus d’image pour générer des valeurs alpha prémultipliées. Sur la page **Configuration Properties** > **Image Content Pipeline** > **General,** définissez la propriété **de format alpha pré-multipliée** à Yes **(/generatepremultipliedalpha).**
+3. Configurez le pipeline de contenus d’image pour générer des valeurs alpha prémultipliées. Dans la page **Propriétés de configuration**  >  **pipeline de contenu d’image**  >  **général** , définissez la propriété **convertir au format alpha prémultiplié** sur **Oui (/generatepremultipliedalpha)**.
 
 4. Choisissez le bouton **OK**.
 

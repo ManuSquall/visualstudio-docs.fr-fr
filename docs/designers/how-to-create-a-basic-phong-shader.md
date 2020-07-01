@@ -1,19 +1,19 @@
 ---
 title: 'Comment : créer un nuanceur Phong de base'
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 ms.assetid: c7c69da8-142b-4d3b-9be9-4be0d5970b25
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f3059048f44524b9a838a8dfefc948ec4018dd05
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 718607d74be1a74a799f8de9f4883e1df9fb7ef5
+ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75589485"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85769191"
 ---
 # <a name="how-to-create-a-basic-phong-shader"></a>Guide pratique pour créer un nuanceur Phong de base
 
@@ -46,7 +46,7 @@ Avant de commencer, veillez à ce que la fenêtre **Propriétés** et la **Boît
 
 ![Graphique du nuanceur et un aperçu de ses effets](../designers/media/digit-lighting-graph.png)
 
-Certaines formes peuvent fournir de meilleurs aperçus pour certains nuanceurs. Pour plus d’informations sur la façon de prévisualiser les ombrageurs dans le Concepteur Shader, voir la section Previewing Shaders dans [Shader Designer](../designers/shader-designer.md)
+Certaines formes peuvent fournir de meilleurs aperçus pour certains nuanceurs. Pour plus d’informations sur la façon d’afficher un aperçu des nuanceurs dans le concepteur de nuanceur, consultez la section aperçu des nuanceurs dans le [Concepteur de nuanceur](../designers/shader-designer.md) .
 
 L’illustration suivante montre le nuanceur décrit dans ce document appliqué à un modèle 3D. La propriété **MaterialSpecular** est définie sur (1,00, 0,50, 0,20, 0,00), et sa propriété **MaterialSpecularPower** est définie sur 16.
 
@@ -57,12 +57,12 @@ L’illustration suivante montre le nuanceur décrit dans ce document appliqué 
 
 ![Éclairage Phong appliqué à un modèle](../designers/media/digit-lighting-model.png)
 
-Pour plus d’informations sur la façon d’appliquer un ombrageur à un modèle 3D, voir [Comment: Appliquer un ombrageur sur un modèle 3D](../designers/how-to-apply-a-shader-to-a-3-d-model.md).
+Pour plus d’informations sur l’application d’un nuanceur à un modèle 3D, consultez [Comment : appliquer un nuanceur à un modèle 3D](../designers/how-to-apply-a-shader-to-a-3-d-model.md).
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Comment : Appliquer un ombrageur à un modèle 3D](../designers/how-to-apply-a-shader-to-a-3-d-model.md)
-- [Comment: Exporter un ombrageur](../designers/how-to-export-a-shader.md)
-- [Comment: Créer un ombragé Lambert de base](../designers/how-to-create-a-basic-lambert-shader.md)
-- [Concepteur de nuanceur](../designers/shader-designer.md)
+- [Comment : appliquer un nuanceur à un modèle 3D](../designers/how-to-apply-a-shader-to-a-3-d-model.md)
+- [Comment : exporter un nuanceur](../designers/how-to-export-a-shader.md)
+- [Comment : créer un nuanceur Lambert de base](../designers/how-to-create-a-basic-lambert-shader.md)
+- [Concepteur Shader](../designers/shader-designer.md)
 - [Nœuds du concepteur Shader](../designers/shader-designer-nodes.md)

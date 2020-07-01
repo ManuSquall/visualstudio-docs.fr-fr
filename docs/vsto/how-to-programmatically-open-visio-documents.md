@@ -1,7 +1,7 @@
 ---
-title: 'Procédure : Ouvrir des documents Visio par programmation'
+title: 'Comment : ouvrir des documents Visio par programmation'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -13,15 +13,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b863040bcceb4e86aae7ed4efd83c2466eec12c6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: eb21d201c282461cbe82005f56bed023bb022209
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62812249"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85519988"
 ---
-# <a name="how-to-programmatically-open-visio-documents"></a>Procédure : Ouvrir des documents Visio par programmation
-  Il existe deux méthodes pour ouvrir des documents Microsoft Office Visio : Ouvrez et OpenEx. La méthode OpenEx est identique à la méthode Open, à ceci près qu’il fournisse des arguments dans lesquels l’appelant peut indiquer comment le document s’ouvre.
+# <a name="how-to-programmatically-open-visio-documents"></a>Comment : ouvrir des documents Visio par programmation
+  Il existe deux méthodes pour ouvrir des documents Microsoft Office Visio existants : Open et OpenEx. La méthode OpenEx est identique à la méthode Open, à la différence qu’elle fournit des arguments dans lesquels l’appelant peut spécifier la manière dont le document s’ouvre.
 
  Pour plus d’informations sur le modèle objet, consultez la documentation de référence de VBA pour la méthode [Microsoft.Office.Interop.Visio.Documents.Open](/office/vba/api/Visio.Documents.Open) et la méthode [Microsoft.Office.Interop.Visio.Documents.OpenEx](/office/vba/api/Visio.Documents.OpenEx) .
 
@@ -46,12 +46,12 @@ ms.locfileid: "62812249"
 ## <a name="compile-the-code"></a>Compiler le code
  Cet exemple de code doit respecter la condition suivante :
 
-- Un document Visio nommé `myDrawing.vsd` doit se trouver dans un répertoire nommé `Test` dans le *Mes Documents* dossier (pour Windows XP et versions antérieures) ou le *Documents* dossier (Windows Vista).
+- Un document Visio nommé `myDrawing.vsd` doit se trouver dans un répertoire nommé `Test` dans le dossier *Mes documents* (pour Windows XP et versions antérieures) ou dans le dossier *documents* (pour Windows Vista).
 
 ## <a name="see-also"></a>Voir aussi
 - [Solutions Visio](../vsto/visio-solutions.md)
-- [Présentation du modèle objet de Visio](../vsto/visio-object-model-overview.md)
-- [Guide pratique pour Créer par programme des documents Visio](../vsto/how-to-programmatically-create-new-visio-documents.md)
-- [Guide pratique pour Fermer des documents Visio par programmation](../vsto/how-to-programmatically-close-visio-documents.md)
-- [Guide pratique pour Enregistrer des documents Visio par programmation](../vsto/how-to-programmatically-save-visio-documents.md)
-- [Guide pratique pour Imprimer des documents Visio par programmation](../vsto/how-to-programmatically-print-visio-documents.md)
+- [Vue d’ensemble du modèle objet Visio](../vsto/visio-object-model-overview.md)
+- [Comment : créer des documents Visio par programmation](../vsto/how-to-programmatically-create-new-visio-documents.md)
+- [Comment : fermer des documents Visio par programmation](../vsto/how-to-programmatically-close-visio-documents.md)
+- [Comment : enregistrer des documents Visio par programmation](../vsto/how-to-programmatically-save-visio-documents.md)
+- [Comment : imprimer des documents Visio par programmation](../vsto/how-to-programmatically-print-visio-documents.md)

@@ -2,7 +2,7 @@
 title: Refactoriser du code Python
 description: Visual Studio permet de refactoriser facilement du code Python en renommant les identificateurs, en extrayant les méthodes, en ajoutant des importations et en supprimant les importations inutilisées.
 ms.date: 03/13/2019
-ms.topic: conceptual
+ms.topic: how-to
 author: JoshuaPartlow
 ms.author: joshuapa
 manager: jillfra
@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: db1a551e20c597f98052471910bcb696c878675f
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: ea735dd5cc3da8d5509961dbc8b27eb6106fd2af
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "62429848"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85520560"
 ---
 # <a name="refactor-python-code"></a>Refactoriser du code Python
 
@@ -42,7 +42,7 @@ Visual Studio fournit plusieurs commandes pour transformer et nettoyer automatiq
 ## <a name="extract-method"></a>Extraire la méthode
 
 1. Sélectionnez les lignes de code ou l’expression à extraire dans une méthode distincte.
-2. Sélectionnez la commande de menu de méthode **Edit** > **Refactor** > **Extract** ou le type **Ctrl**+**R** > **M**.
+2. Sélectionnez la **Edit**  >  commande de menu modifier la méthode d’extraction de**refactorisation**  >  **Extract method** ou **Appuyez sur CTRL** + **R**  >  **M**.
 3. Dans la boîte de dialogue qui s’affiche, entrez un nouveau nom de méthode, indiquez vers où l’extraire, puis sélectionnez toutes les variables de fermeture. Les variables qui ne sont pas sélectionnées pour la fermeture sont transformées en arguments de méthode :
 
    ![Boîte de dialogue Extraire la méthode](media/code-refactor-extract-method-1.png)

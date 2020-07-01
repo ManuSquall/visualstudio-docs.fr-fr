@@ -16,17 +16,17 @@ caps.latest.revision: 26
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: e7258ec98937e7ea84773e788234e5a34772e9d4
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 797c071cdc74c36afeece304bfa4c708d7bf7147
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72652196"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85521210"
 ---
-# <a name="ca2100-review-sql-queries-for-security-vulnerabilities"></a>CA2100 : Rechercher des failles de sécurité dans des requêtes SQL
+# <a name="ca2100-review-sql-queries-for-security-vulnerabilities"></a>CA2100 : Vérifier si les requêtes SQL présentent des failles de sécurité
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Élément|Valeur|
 |-|-|
 |TypeName|ReviewSqlQueriesForSecurityVulnerabilities|
 |CheckId|CA2100|
@@ -34,7 +34,7 @@ ms.locfileid: "72652196"
 |Modification avec rupture|Sans rupture|
 
 ## <a name="cause"></a>Cause
- Une méthode définit la propriété <xref:System.Data.IDbCommand.CommandText%2A?displayProperty=fullName> à l’aide d’une chaîne générée à partir d’un argument de chaîne à la méthode.
+ Une méthode définit la <xref:System.Data.IDbCommand.CommandText%2A?displayProperty=fullName> propriété à l’aide d’une chaîne générée à partir d’un argument de chaîne à la méthode.
 
 ## <a name="rule-description"></a>Description de la règle
  Cette règle suppose que l’argument de chaîne contient des entrées d’utilisateur. Une chaîne de commande SQL générée par une entrée d'utilisateur est vulnérable aux attaques par injection de code SQL. Dans une attaque par injection SQL, un utilisateur malveillant fournit des entrées qui modifient la conception d’une requête en tentant d’endommager ou d’obtenir un accès non autorisé à la base de données sous-jacente. Les techniques classiques incluent l’injection d’un guillemet simple ou d’une apostrophe, qui est le délimiteur de chaîne littérale SQL ; deux tirets, ce qui signifie un commentaire SQL ; et un point-virgule, qui indique qu’une nouvelle commande suit. Si l’entrée utilisateur doit faire partie de la requête, utilisez l’un des éléments suivants, par ordre d’efficacité, pour réduire le risque d’attaque.
@@ -45,7 +45,7 @@ ms.locfileid: "72652196"
 
 - Validez l’entrée utilisateur pour le type et le contenu avant de générer la chaîne de commande.
 
-  Les types de [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] suivants implémentent la propriété <xref:System.Data.IDbCommand.CommandText%2A> ou fournissent des constructeurs qui définissent la propriété à l’aide d’un argument de chaîne.
+  Les [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] types suivants implémentent la <xref:System.Data.IDbCommand.CommandText%2A> propriété ou fournissent des constructeurs qui définissent la propriété à l’aide d’un argument de chaîne.
 
 - <xref:System.Data.Odbc.OdbcCommand?displayProperty=fullName> et <xref:System.Data.Odbc.OdbcDataAdapter?displayProperty=fullName>
 
@@ -80,11 +80,11 @@ string query = String.Format("SELECT TOP {0} FROM Table", x);
  Il est possible de supprimer sans risque un avertissement de cette règle si le texte de la commande ne contient aucune entrée d’utilisateur.
 
 ## <a name="example"></a>Exemple
- L’exemple suivant montre une méthode, `UnsafeQuery`, qui enfreint la règle et une méthode, `SaferQuery`, qui satisfait la règle à l’aide d’une chaîne de commande paramétrable.
+ L’exemple suivant montre une méthode, `UnsafeQuery` , qui enfreint la règle et une méthode, `SaferQuery` , qui satisfait la règle à l’aide d’une chaîne de commande paramétrable.
 
  [!code-cpp[FxCop.Security.ReviewSqlQueries#1](../snippets/cpp/VS_Snippets_CodeAnalysis/FxCop.Security.ReviewSqlQueries/cpp/FxCop.Security.ReviewSqlQueries.cpp#1)]
  [!code-csharp[FxCop.Security.ReviewSqlQueries#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Security.ReviewSqlQueries/cs/FxCop.Security.ReviewSqlQueries.cs#1)]
  [!code-vb[FxCop.Security.ReviewSqlQueries#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Security.ReviewSqlQueries/vb/FxCop.Security.ReviewSqlQueries.vb#1)]
 
 ## <a name="see-also"></a>Voir aussi
- [Vue d’ensemble de la sécurité](https://msdn.microsoft.com/library/33e09965-61d5-48cc-9e8c-3b047cc4f194)
+ [Présentation de la sécurité](https://msdn.microsoft.com/library/33e09965-61d5-48cc-9e8c-3b047cc4f194)
