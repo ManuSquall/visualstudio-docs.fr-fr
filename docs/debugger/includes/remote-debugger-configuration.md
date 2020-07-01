@@ -20,29 +20,29 @@ ms.contentlocale: fr-FR
 ms.lasthandoff: 07/15/2019
 ms.locfileid: "68149176"
 ---
-1. Sur l’ordinateur distant, rechercher et démarrer le **débogueur distant** à partir de la **Démarrer** menu. 
+1. Sur l’ordinateur distant, recherchez et démarrez le **débogueur distant** à partir du menu **Démarrer** . 
    
-   Si vous n’avez les autorisations administratives sur l’ordinateur distant, cliquez sur le **débogueur distant** application et sélectionnez **exécuter en tant qu’administrateur**. Sinon, simplement démarrer normalement.
+   Si vous ne disposez pas d’autorisations d’administration sur l’ordinateur distant, cliquez avec le bouton droit sur l’application du **débogueur distant** et sélectionnez **exécuter en tant qu’administrateur**. Dans le cas contraire, démarrez-le normalement.
 
-   Si vous envisagez d’attacher à un processus qui s’exécute en tant qu’administrateur, ou s’exécute sous un autre utilisateur de compte (comme IIS), cliquez sur le **débogueur distant** application et sélectionnez **exécuter en tant qu’administrateur**. Pour plus d’informations, consultez [exécuter le débogueur distant en tant qu’administrateur](../remote-debugging-errors-and-troubleshooting.md#run-the-remote-debugger-as-an-administrator).
+   Si vous envisagez d’effectuer un attachement à un processus qui s’exécute en tant qu’administrateur ou s’il s’exécute sous un compte d’utilisateur différent (par exemple, IIS), cliquez avec le bouton droit sur l’application du **débogueur distant** et sélectionnez **exécuter en tant qu’administrateur**. Pour plus d’informations, consultez [exécuter le débogueur distant en tant qu’administrateur](../remote-debugging-errors-and-troubleshooting.md#run-the-remote-debugger-as-an-administrator).
    
-1. La première fois que vous démarrez le débogueur distant (ou avant que vous l’avez configuré), le **Configuration du débogage distant** boîte de dialogue s’affiche.  
+1. La première fois que vous démarrez le débogueur distant (ou avant de le configurer), la boîte de dialogue **configuration du débogage distant** s’affiche.  
   
-    ![Configuration du débogueur distant](../media/remotedebuggerconfwizardpage.png "configuration du débogueur distant")  
+    (../media/remotedebuggerconfwizardpage.png "Configuration du débogueur distant") ![configuration du débogueur distant]  
   
-1. Si l’API des Services Web Windows n’est pas installé, ce qui se produit uniquement sur Windows Server 2008 R2, sélectionnez le **installer** bouton.  
+1. Si l’API des services Web Windows n’est pas installée, ce qui se produit uniquement sur Windows Server 2008 R2, cliquez sur le bouton **installer** .  
   
-1. Sélectionnez au moins un type de réseau à utiliser les outils à distance sur. Si les ordinateurs sont connectés à un domaine, vous devez choisir le premier élément. Si les ordinateurs sont connectés à un groupe de travail ou un groupe résidentiel, choisissez la deuxième ou troisième élément comme il convient.  
+1. Sélectionnez au moins un type de réseau sur lequel vous souhaitez utiliser les outils de contrôle à distance. Si les ordinateurs sont connectés à un domaine, vous devez choisir le premier élément. Si les ordinateurs sont connectés via un groupe de travail ou un groupe résidentiel, choisissez le deuxième ou le troisième élément, le cas échéant.  
   
 1. Sélectionnez **configurer le débogage distant** pour configurer le pare-feu et démarrer le débogueur distant.  
   
-1. Lors de la configuration est terminée, le **débogueur distant** fenêtre s’affiche.
+1. Une fois la configuration terminée, la fenêtre du **débogueur distant** s’affiche.
   
-    ![Fenêtre du débogueur distante](../media/remotedebuggerwindow.png "fenêtre du débogueur distant")
+    Fenêtre du débogueur ![distant fenêtre]du(../media/remotedebuggerwindow.png "débogueur distant")
   
-    Le débogueur distant est maintenant en attente pour une connexion. Utiliser le nom du serveur et le port numéro indiqué pour définir la configuration de la connexion à distance dans Visual Studio.  
+    Le débogueur distant attend maintenant une connexion. Utilisez le nom du serveur et le numéro de port indiqués pour définir la configuration de la connexion à distance dans Visual Studio.  
   
-Pour arrêter le débogueur distant, sélectionnez **fichier** > **Exit**. Vous pouvez le redémarrer à partir de la **Démarrer** menu, ou à partir de la ligne de commande :  
+Pour arrêter le débogueur distant, sélectionnez **fichier**  >  **quitter**. Vous pouvez le redémarrer à partir du menu **Démarrer** ou à partir de la ligne de commande :  
   
 ```cmd
 <Remote debugger installation directory>\msvsmon.exe

@@ -20,4 +20,4 @@ ms.contentlocale: fr-FR
 ms.lasthandoff: 07/15/2019
 ms.locfileid: "68146778"
 ---
-Windows 2000
+Windows 2000
