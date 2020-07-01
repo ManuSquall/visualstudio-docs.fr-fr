@@ -1,21 +1,21 @@
 ---
 title: Ajouter des commandes et des mouvements aux diagrammes de dépendance
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - dependency diagrams, adding custom commands
 - dependency diagrams, adding custom gestures
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d54936c61606b67c298992cd003723327042eb0a
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 4ff23e07bd6e81b11d94a8256c33b57b4b0c558c
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72747669"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85531389"
 ---
 # <a name="add-commands-and-gestures-to-dependency-diagrams"></a>Ajouter des commandes et des mouvements aux diagrammes de dépendance
 
@@ -26,7 +26,7 @@ Si vous le souhaitez, vous pouvez définir plusieurs commandes et gestionnaires 
 > [!NOTE]
 > Vous pouvez également personnaliser la validation de l’architecture, dans laquelle le code source des utilisateurs est comparé aux diagrammes de dépendance. Vous devez définir la validation de l’architecture dans un projet Visual Studio distinct. Vous pouvez l’ajouter à la même extension VSIX que d’autres extensions. Pour plus d’informations, consultez [Ajouter une validation d’architecture personnalisée aux diagrammes de dépendance](../modeling/add-custom-architecture-validation-to-layer-diagrams.md).
 
-## <a name="requirements"></a>spécifications
+## <a name="requirements"></a>Spécifications
 
 Consultez [Spécifications](../modeling/extend-layer-diagrams.md#requirements).
 
@@ -38,13 +38,13 @@ Pour créer une extension, la méthode la plus rapide consiste à utiliser le mo
 
    Le modèle crée un projet qui contient un petit exemple fonctionnel.
 
-2. Pour tester l’extension, appuyez sur **Ctrl** +**F5** ou **F5**.
+2. Pour tester l’extension, appuyez sur **CTRL** + **F5** ou **F5**.
 
     Une instance expérimentale de Visual Studio démarre. Dans ce cas, créez un diagramme de dépendance. Votre extension de commande ou de mouvement doit fonctionner dans ce diagramme.
 
 3. Fermez l’instance expérimentale et modifiez l’exemple de code.
 
-4. Vous pouvez ajouter plusieurs gestionnaires de mouvements ou de commandes au même projet. Pour plus d’informations, consultez l’une des sections suivantes :
+4. Vous pouvez ajouter plusieurs gestionnaires de mouvements ou de commandes au même projet. Pour plus d’informations, consultez l’une des sections suivantes :
 
     [Définition d’une commande de menu](#command)
 
@@ -83,7 +83,7 @@ Si vous souhaitez créer une extension VSIX qui contient des commandes, des vali
 
     3. Pour **Source**, sélectionnez **Projet dans la solution actuelle** et sélectionnez le nom de votre projet de gestionnaire de mouvements ou de commande.
 
-    4. Enregistrez le fichier.
+    4. Enregistrez le fichier .
 
 5. Revenez au projet de gestionnaire de mouvements ou de commandes et ajoutez les références de projet suivantes :
 
@@ -96,19 +96,19 @@ Si vous souhaitez créer une extension VSIX qui contient des commandes, des vali
    |Microsoft.VisualStudio.Modeling.Sdk.[version]|Définir des extensions de modélisation|
    |Microsoft.VisualStudio.Modeling.Sdk.Diagrams.[version]|Mettre à jour des formes et des diagrammes|
 
-6. Modifiez le fichier de classe dans le projet de bibliothèque de classes C# pour contenir le code de votre extension. Pour plus d’informations, consultez l’une des sections suivantes :
+6. Modifiez le fichier de classe dans le projet de bibliothèque de classes C# pour contenir le code de votre extension. Pour plus d’informations, consultez l’une des sections suivantes :
 
      [Définition d’une commande de menu](#command)
 
      [Définition d’un gestionnaire de mouvements](#gesture)
 
-7. Pour tester la fonctionnalité, appuyez sur **Ctrl** +**F5** ou **F5**.
+7. Pour tester la fonctionnalité, appuyez sur **CTRL** + **F5** ou **F5**.
 
    Une instance expérimentale de Visual Studio s’ouvre. Dans cette instance, créez ou ouvrez un diagramme de dépendance.
 
 8. Pour installer l’extension VSIX dans l’instance principale de Visual Studio, ou sur un autre ordinateur, recherchez le fichier **. vsix** dans le répertoire **bin** du projet VSIX. Copiez-le sur l’ordinateur sur lequel vous souhaitez installer l’extension VSIX. Double-cliquez sur le fichier VSIX dans l’Explorateur de fichiers.
 
-## <a name="command"></a> Définition d’une commande de menu
+## <a name="defining-a-menu-command"></a><a name="command"></a> Définition d’une commande de menu
 
 Vous pouvez ajouter plusieurs définitions de commandes de menu à un projet de commande ou de mouvement existant. Chaque commande est définie par une classe dont les caractéristiques sont les suivantes :
 
@@ -212,7 +212,7 @@ namespace MyLayerExtension // Change to your preference.
 }
 ```
 
-## <a name="gesture"></a> Définition d’un gestionnaire de mouvements
+## <a name="defining-a-gesture-handler"></a><a name="gesture"></a> Définition d’un gestionnaire de mouvements
 
 Un gestionnaire de mouvements répond lorsque l’utilisateur fait glisser des éléments sur le diagramme de dépendance, et lorsque l’utilisateur double-clique n’importe où dans le diagramme.
 
@@ -246,7 +246,7 @@ Notez les points suivants concernant les gestionnaires de mouvements :
 
      **OnDragDrop** : appelée quand l’utilisateur dépose un élément sur le diagramme.
 
-- Le premier argument de chaque méthode est un `IShape`, à partir duquel vous pouvez obtenir l’élément de couche. Exemple :
+- Le premier argument de chaque méthode est un `IShape`, à partir duquel vous pouvez obtenir l’élément de couche. Par exemple :
 
     ```csharp
     public void OnDragDrop(IShape target, IDataObject data)
@@ -263,4 +263,4 @@ Notez les points suivants concernant les gestionnaires de mouvements :
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Ajout d’une validation d’architecture personnalisée aux diagrammes de dépendance](../modeling/add-custom-architecture-validation-to-layer-diagrams.md)
+- [Ajouter une validation d’architecture personnalisée aux diagrammes de dépendance](../modeling/add-custom-architecture-validation-to-layer-diagrams.md)

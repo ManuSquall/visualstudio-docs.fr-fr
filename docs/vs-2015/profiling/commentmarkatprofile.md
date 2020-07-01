@@ -12,12 +12,12 @@ caps.latest.revision: 16
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 35ef5e1033224969f4dae1e42036b860f89bbd8f
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: MTE95
+ms.openlocfilehash: 36ebd4a2cd130d63b030e80696dbdde7ff179706
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63416665"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85531519"
 ---
 # <a name="commentmarkatprofile"></a>CommentMarkAtProfile
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,7 +49,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI CommentMarkAtProfile (
 ## <a name="property-valuereturn-value"></a>Valeur de propriété/valeur de retour  
  La fonction indique la réussite ou l’échec en utilisant l’énumération **PROFILE_COMMAND_STATUS**. La valeur de retour peut être une des suivantes :  
   
-|Enumerator|Description|  
+|Énumérateur|Description|  
 |----------------|-----------------|  
 |MARK_ERROR_MARKER_RESERVED|Le paramètre est inférieur ou égal à zéro. Ces valeurs sont réservées. La marque et le commentaire ne sont pas enregistrés.|  
 |MARK_ERROR_MODE_NEVER|Le mode de profilage a été défini sur NEVER quand la fonction a été appelée. La marque et le commentaire ne sont pas enregistrés.|  
@@ -70,9 +70,9 @@ PROFILE_COMMAND_STATUS PROFILERAPI CommentMarkAtProfile (
   
 ## <a name="function-information"></a>Informations sur la fonction  
   
-|||  
+|Élément|Valeur|  
 |-|-|  
-|**Header**|Inclure VSPerf.h|  
+|**En-tête**|Inclure VSPerf.h|  
 |**Bibliothèque**|Utiliser VSPerf.lib|  
 |**Unicode**|Implémenté en tant que CommentMarkAtProfileW (Unicode) et CommentMarkAtProfileA (ANSI).|  
   
@@ -118,4 +118,4 @@ void ExerciseCommentMarkAtProfile(void)
 ```  
   
 ## <a name="see-also"></a>Voir aussi  
- [Informations de référence sur l’API du profileur Visual Studio (native)](../profiling/visual-studio-profiler-api-reference-native.md)
+ [Informations de référence sur l’API du profileur Visual Studio (natif)](../profiling/visual-studio-profiler-api-reference-native.md)
