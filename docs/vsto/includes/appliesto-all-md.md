@@ -6,4 +6,4 @@ ms.contentlocale: fr-FR
 ms.lasthandoff: 07/15/2019
 ms.locfileid: "68144245"
 ---
-  **S’applique à :** Les informations contenues dans cette rubrique s’applique au document\-projets et ajouter de VSTO de niveau\-dans les projets. Consultez [fonctionnalités disponibles par type d’application et de projet Office](../../vsto/features-available-by-office-application-and-project-type.md).
+  **S’applique à :** Les informations contenues dans cette rubrique s’appliquent aux \- projets de niveau document et aux projets de compléments VSTO \- . Consultez [fonctionnalités disponibles par type d’application et de projet Office](../../vsto/features-available-by-office-application-and-project-type.md).

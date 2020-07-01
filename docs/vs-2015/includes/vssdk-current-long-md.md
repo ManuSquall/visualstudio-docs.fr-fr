@@ -6,4 +6,4 @@ ms.contentlocale: fr-FR
 ms.lasthandoff: 07/15/2019
 ms.locfileid: "68181524"
 ---
- SDK Visual Studio 
+ Kit de développement logiciel Visual Studio 
