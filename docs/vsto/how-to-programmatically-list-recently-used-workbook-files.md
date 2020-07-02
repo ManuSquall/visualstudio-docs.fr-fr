@@ -1,7 +1,7 @@
 ---
-title: 'Procédure : Liste récemment utilisés par programmation les fichiers de classeur'
+title: 'Comment : répertorier les fichiers de classeur récemment utilisés par programmation'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -15,26 +15,26 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 954a106b87d0ee941aa9c3a6c9c35579d1cb3d54
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 4f4f34a8ed848d548b2e23d3f9a3cf3c603c7cad
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62812532"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85541360"
 ---
-# <a name="how-to-programmatically-list-recently-used-workbook-files"></a>Procédure : Liste récemment utilisés par programmation les fichiers de classeur
-  Le <xref:Microsoft.Office.Interop.Excel._Application.RecentFiles%2A> propriété retourne une collection qui contient les noms de tous les fichiers qui apparaissent dans la liste de Microsoft Office Excel des fichiers récemment utilisés. La longueur de la liste varie en fonction du nombre de fichiers que l’utilisateur a choisi de conserver. Vous pouvez afficher les résultats dans une plage.
+# <a name="how-to-programmatically-list-recently-used-workbook-files"></a>Comment : répertorier les fichiers de classeur récemment utilisés par programmation
+  La <xref:Microsoft.Office.Interop.Excel._Application.RecentFiles%2A> propriété retourne une collection qui contient les noms de tous les fichiers qui apparaissent dans la Microsoft Office liste Excel des fichiers récemment utilisés. La longueur de la liste varie selon le nombre de fichiers que l’utilisateur a sélectionnés à conserver. Vous pouvez afficher les résultats dans une plage.
 
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]
 
-## <a name="to-list-recently-used-workbooks-in-a-range-object"></a>Pour répertorier récemment des classeurs utilisés dans un objet range
+## <a name="to-list-recently-used-workbooks-in-a-range-object"></a>Pour répertorier les classeurs récemment utilisés dans un objet Range
 
-1. Parcourez la liste des fichiers récents et afficher les noms dans les cellules relatif à un <xref:Microsoft.Office.Interop.Excel.Range> objet.
+1. Parcourez la liste des fichiers récents et affichez les noms dans les cellules relatives à un <xref:Microsoft.Office.Interop.Excel.Range> objet.
 
      [!code-csharp[Trin_VstcoreExcelAutomationAddIn#9](../vsto/codesnippet/CSharp/trin_vstcoreexcelautomationaddin/ThisAddIn.cs#9)]
      [!code-vb[Trin_VstcoreExcelAutomationAddIn#9](../vsto/codesnippet/VisualBasic/trin_vstcoreexcelautomationaddin/ThisAddIn.vb#9)]
 
 ## <a name="see-also"></a>Voir aussi
-- [Travailler avec des classeurs](../vsto/working-with-workbooks.md)
-- [NamedRange (contrôle)](../vsto/namedrange-control.md)
-- [Paramètres optionnels dans les solutions Office](../vsto/optional-parameters-in-office-solutions.md)
+- [Utiliser des classeurs](../vsto/working-with-workbooks.md)
+- [NamedRange, contrôle](../vsto/namedrange-control.md)
+- [Paramètres facultatifs dans les solutions Office](../vsto/optional-parameters-in-office-solutions.md)

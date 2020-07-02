@@ -15,23 +15,23 @@ caps.latest.revision: 9
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: fa0d771d99ac8e7a4f4091db90a607cce970bc38
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.openlocfilehash: 10649b4106a280089fd6b086167c7e92bff1300b
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/13/2020
-ms.locfileid: "75917827"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85545247"
 ---
-# <a name="ca1903-use-only-api-from-targeted-framework"></a>CA1903 : Utiliser uniquement l'API à partir du Framework cible
+# <a name="ca1903-use-only-api-from-targeted-framework"></a>CA1903 : Utiliser uniquement l'API à partir du Framework cible
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Pour obtenir la documentation la plus récente sur Visual Studio, consultez [CA1903 : Use only API from Targeted Framework](/visualstudio/code-quality/ca1903-use-only-api-from-targeted-framework).
 
-|||
+|Élément|Valeur|
 |-|-|
 |TypeName|UseOnlyApiFromTargetedFramework|
 |CheckId|CA1903|
-|Catégorie|Microsoft. Portability|
+|Category|Microsoft. Portability|
 |Modification avec rupture|Rupture : lorsqu’elle est déclenchée par rapport à la signature d’un membre ou d’un type visible de l’extérieur.<br /><br /> Sans rupture : lorsqu’elle est déclenchée dans le corps d’une méthode.|
 
 ## <a name="cause"></a>Cause
@@ -42,13 +42,13 @@ Pour obtenir la documentation la plus récente sur Visual Studio, consultez [CA1
 
  **Dépendances du Framework cible et du Service Pack**
 
-|||
+|Élément|Valeur|
 |-|-|
 |Quand la version cible du .NET Framework|Se déclenche sur les utilisations des membres introduits dans|
 |.NET Framework 2.0|.NET Framework 2,0 SP1, .NET Framework 2,0 SP2|
 |.NET Framework 3.0|.NET Framework 2,0 SP1, .NET Framework 2,0 SP2, .NET Framework 3,0 SP1, .NET Framework 3,0 SP2|
-|.NET Framework 3.5|.NET Framework 3.5 SP1|
-|.NET Framework 4|Non applicable|
+|.NET Framework 3.5|.NET Framework 3.5 SP1|
+|.NET Framework 4|N/A|
 
  Pour modifier le Framework cible d’un projet, consultez [ciblage d’une version spécifique de .NET Framework](../ide/targeting-a-specific-dotnet-framework-version.md).
 

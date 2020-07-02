@@ -15,17 +15,17 @@ caps.latest.revision: 19
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 53c99e34bf253b0962d054685ce637c3849a2857
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: aa0b73b6608f0dfd5daa4b770b7d780e64704c99
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72671594"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85544428"
 ---
-# <a name="ca1724-type-names-should-not-match-namespaces"></a>CA1724 : les noms de types ne doivent pas être identiques aux espaces de noms
+# <a name="ca1724-type-names-should-not-match-namespaces"></a>CA1724 : Les noms de types ne doivent pas être identiques aux espaces de noms
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Élément|Valeur|
 |-|-|
 |TypeName|TypeNamesShouldNotMatchNamespaces|
 |CheckId|CA1724|
@@ -33,13 +33,13 @@ ms.locfileid: "72671594"
 |Modification avec rupture|Rupture|
 
 ## <a name="cause"></a>Cause
- Un nom de type correspond à un [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] noms d’espaces de noms dans une comparaison qui ne respecte pas la casse.
+ Un nom de type correspond à un nom [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] d’espace de noms dans une comparaison qui ne respecte pas la casse.
 
 ## <a name="rule-description"></a>Description de la règle
  Les noms de types ne doivent pas correspondre aux noms d'espaces de noms définis dans la bibliothèque de classes [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]. Enfreindre cette règle peut réduire la facilité d'utilisation de la bibliothèque.
 
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations
- Sélectionnez un nom de type qui ne correspond pas au nom d’un espace de noms de la bibliothèque de classes [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)].
+ Sélectionnez un nom de type qui ne correspond pas au nom d’un [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] espace de noms de bibliothèque de classes.
 
 ## <a name="when-to-suppress-warnings"></a>Quand supprimer les avertissements
  Pour un nouveau développement, aucun scénario connu ne se produit lorsque vous devez supprimer un avertissement de cette règle. Avant de supprimer l’avertissement, réfléchissez bien à la façon dont les utilisateurs de votre bibliothèque peuvent être confondus par le nom correspondant. Pour les bibliothèques d’expédition, vous devrez peut-être supprimer un avertissement de cette règle.

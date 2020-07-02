@@ -13,25 +13,25 @@ caps.latest.revision: 12
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 7fcb38184a1d432ca036be88c4d957c0e4d4f419
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.openlocfilehash: 7ae2b836549918fa1179e4e70d51d760efbe2c35
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/13/2020
-ms.locfileid: "75917162"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85544922"
 ---
 # <a name="da0039-very-high-rate-of-lock-contentions"></a>DA0039 : Taux très élevé de conflits de verrou
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Pour obtenir la documentation la plus récente sur Visual Studio, consultez [DA0039 : taux très élevé de conflits de verrouillage](/visualstudio/profiling/da0039-very-high-rate-of-lock-contentions).  
   
-|||  
+|Élément|Valeur|  
 |-|-|  
-|ID de la règle|DA0039|  
-|Catégorie|Utilisation du .NET Framework|  
-|Méthodes de profilage|Échantillonnage<br /><br /> Instrumentation<br /><br /> Mémoire .NET|  
+|ID de règle|DA0039|  
+|Category|Utilisation du .NET Framework|  
+|Méthodes de profilage|échantillonnage<br /><br /> Instrumentation<br /><br /> Mémoire .NET|  
 |Message|Un taux très élevé de conflits de verrou .NET se produit. Analysez la raison de ce conflit de verrou en exécutant un profil Concurrence.|  
-|Type de règle|Warning|  
+|Type de règle|Avertissement|  
   
  Lorsque vous effectuez un profilage à l’aide de la méthode d’échantillonnage, de mémoire .NET ou de conflit des ressources, vous devez collecter au moins 25 échantillons pour déclencher cette règle.  
   
@@ -39,7 +39,7 @@ Pour obtenir la documentation la plus récente sur Visual Studio, consultez [DA0
  Les données relatives aux performances système qui sont collectées avec les données de profilage indiquent qu’un taux excessif de conflits de verrouillage a été relevé lors de l’exécution de l’application. Effectuez un nouveau profilage à l’aide de la méthode de profilage d’accès concurrentiel pour rechercher la cause des conflits.  
   
 ## <a name="rule-description"></a>Description de la règle  
- Les verrous sont utilisés pour protéger des sections critiques du code qui doivent être exécutées séquentiellement par un thread à la fois dans une application multithread. Le common language runtime (CLR) Microsoft .NET fournit un ensemble complet de primitives de synchronisation et de verrouillage. Par exemple, le langage C# prend en charge l’instruction lock (SyncLock en Visual Basic). Une application managée peut appeler les méthodes `Monitor.Enter` et `Monitor.Exit` de l’espace de noms System. Threading pour acquérir et libérer un verrou directement. .NET Framework prend en charge d’autres primitives de synchronisation et de verrouillage, y compris des classes qui prennent en charge Mutex, ReaderWriterLock et Semaphore. Pour plus d’informations, consultez [Présentation des primitives de synchronisation](https://msdn.microsoft.com/library/ms228964.aspx) dans le guide du développeur .NET Framework, sur le site MSDN. Les classes .NET Framework sont elles-mêmes superposées à des services de synchronisation de niveau inférieur intégrés au système d’exploitation Windows. Ceux-ci incluent des objets section critiques, ainsi que de nombreuses fonctions d’attente (wait) et fonctions signalant des événements. Pour plus d’informations, consultez la section [Synchronisation](https://msdn.microsoft.com/library/ms686353.aspx) dans la documentation « Développement Win32 et COM » sur MSDN Library.  
+ Les verrous sont utilisés pour protéger des sections critiques du code qui doivent être exécutées séquentiellement par un thread à la fois dans une application multithread. Le common language runtime (CLR) Microsoft .NET fournit un ensemble complet de primitives de synchronisation et de verrouillage. Par exemple, le langage C# prend en charge l’instruction lock (SyncLock en Visual Basic). Une application managée peut appeler `Monitor.Enter` les `Monitor.Exit` méthodes et de l’espace de noms System. Threading pour acquérir et libérer un verrou directement. .NET Framework prend en charge d’autres primitives de synchronisation et de verrouillage, y compris des classes qui prennent en charge Mutex, ReaderWriterLock et Semaphore. Pour plus d’informations, consultez [Présentation des primitives de synchronisation](https://msdn.microsoft.com/library/ms228964.aspx) dans le guide du développeur .NET Framework, sur le site MSDN. Les classes .NET Framework sont elles-mêmes superposées à des services de synchronisation de niveau inférieur intégrés au système d’exploitation Windows. Ceux-ci incluent des objets section critiques, ainsi que de nombreuses fonctions d’attente (wait) et fonctions signalant des événements. Pour plus d’informations, consultez la section [Synchronisation](https://msdn.microsoft.com/library/ms686353.aspx) dans la documentation « Développement Win32 et COM » sur MSDN Library.  
   
  Derrière les classes .NET Framework et les objets Windows natifs qui sont utilisés pour la synchronisation et le verrouillage se trouvent des emplacements de mémoire partagée qui doivent être modifiés à l’aide d’opérations à blocage. Les opérations à blocage utilisent des instructions spécifiques au matériel qui opèrent sur des emplacements de mémoire partagée pour modifier leur état à l’aide d’opérations atomiques. Les opérations atomiques sont cohérentes sur tous les processeurs de l’ordinateur. Les objets Lock et WaitHandle sont des objets .NET qui utilisent automatiquement des opérations à blocage lorsqu’ils sont définis ou réinitialisés. D’autres structures de données de mémoire partagée de votre application peuvent nécessiter que vous utilisiez des opérations à blocage afin d’être mises à jour de manière thread-safe. Pour plus d’informations, consultez [Opérations à blocage](https://msdn.microsoft.com/library/sbhbke0y.aspx) dans la section .NET Framework de MSDN Library.  
   

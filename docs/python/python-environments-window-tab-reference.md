@@ -2,7 +2,7 @@
 title: Référence sur la fenêtre Environnements Python
 description: Cet article donne des informations sur chacun des onglets qui s’affichent sur la fenêtre Environnements Python dans Visual Studio.
 ms.date: 03/18/2019
-ms.topic: conceptual
+ms.topic: reference
 author: JoshuaPartlow
 ms.author: joshuapa
 manager: jillfra
@@ -10,21 +10,21 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 578f73aabfb8b5a4c8336c8611f634b8947c8885
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: f08709c5231b2981db67900f47b49503269e948b
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79302769"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85545494"
 ---
 # <a name="python-environments-window-tabs-reference"></a>Référence sur les onglets de la fenêtre Environnements Python
 
 Pour ouvrir la fenêtre **Environnements Python** :
 
-- Sélectionnez la **commande de** > menu View**Other Windows** > **Python Environments.**
-- Cliquez à droite sur le nœud **Python Environments** pour un projet dans **Solution Explorer** et sélectionnez View All **Python Environments**.
+- Sélectionnez la commande de menu **Afficher**d'  >  **autres**  >  **environnements Windows python** .
+- Cliquez avec le bouton droit sur le nœud **environnements python** d’un projet dans **Explorateur de solutions** , puis sélectionnez **Afficher tous les environnements python**.
 
-Si vous élargissez la fenêtre **Python Environments** assez large, ces options sont affichées sous forme d’onglets, que vous trouverez peut-être plus commodes pour travailler avec. Dans un souci de clarté, les onglets de cet article apparaissent dans l’affichage développé.
+Si vous agrandissez suffisamment la fenêtre **environnements python** , ces options s’affichent sous la forme d’onglets, que vous pouvez trouver plus pratique à utiliser. Dans un souci de clarté, les onglets de cet article apparaissent dans l’affichage développé.
 
 ::: moniker range="vs-2017"
 ![Affichage développé de la fenêtre Environnements Python](media/environments/environments-expanded-view.png)
@@ -50,17 +50,17 @@ Fournit des commandes et des informations de base pour l’environnement :
 | **Visit the distributor’s website (Visiter le site web du serveur de distribution)** | Dans un navigateur, ouvre l’URL fournie par la distribution Python. Python 3.x, par exemple, accède à python.org. |
 | **Ouvrir une fenêtre interactive** | Ouvre la [fenêtre (REPL) interactive](python-interactive-repl-in-visual-studio.md) pour cet environnement au sein de Visual Studio, en appliquant tous les [scripts de démarrage (voir ci-dessous)](#startup-scripts). |
 | **Explorer les scripts interactifs** | Consultez [Scripts de démarrage](#startup-scripts). |
-| **Utiliser le mode interactif IPython** | Lorsqu’il est défini, ouvre la fenêtre **Interactive** avec IPython par défaut. Cela permet d’activer les tracés inline, ainsi que la syntaxe IPython étendue telle que `name?`pour afficher l’aide, et `!command` pour les commandes de l’interpréteur de commandes. Cette option est recommandée lors de l’utilisation d’une distribution Anaconda, car elle nécessite des packages supplémentaires. Pour plus d’informations, consultez [Utiliser IPython dans la fenêtre interactive](interactive-repl-ipython.md). |
+| **Utiliser le mode interactif IPython** | Lorsque cette option est définie, ouvre la fenêtre **interactive** avec IPython par défaut. Cela permet d’activer les tracés inline, ainsi que la syntaxe IPython étendue telle que `name?`pour afficher l’aide, et `!command` pour les commandes de l’interpréteur de commandes. Cette option est recommandée lors de l’utilisation d’une distribution Anaconda, car elle nécessite des packages supplémentaires. Pour plus d’informations, consultez [Utiliser IPython dans la fenêtre interactive](interactive-repl-ipython.md). |
 | **Ouvrir dans PowerShell** | Démarre l’interpréteur dans une fenêtre Commande PowerShell. |
-| (Liens du dossier et du programme) | Offrez un accès rapide au dossier d’installation de l’environnement, à l’interprète *python.exe* et à l’interprète *pythonw.exe.* Le premier s’ouvre dans l’Explorateur Windows et les deux autres ouvrent une fenêtre de console. |
+| (Liens du dossier et du programme) | Vous permet d’accéder rapidement au dossier d’installation de l’environnement, à l’interpréteur *python.exe* et à l’interpréteur de *pythonw.exe* . Le premier s’ouvre dans l’Explorateur Windows et les deux autres ouvrent une fenêtre de console. |
 
 ### <a name="startup-scripts"></a>Scripts de démarrage
 
-Quand vous utilisez des fenêtres interactives dans votre flux de travail quotidien, vous développez probablement des fonctions d’assistance que vous utilisez régulièrement. Par exemple, vous pouvez créer une fonction qui ouvre un DataFrame dans Excel, puis enregistrer ce code comme script de démarrage afin qu’il soit toujours disponible dans la fenêtre **Interactive.**
+Quand vous utilisez des fenêtres interactives dans votre flux de travail quotidien, vous développez probablement des fonctions d’assistance que vous utilisez régulièrement. Par exemple, vous pouvez créer une fonction qui ouvre un tableau dans Excel, puis enregistrer ce code en tant que script de démarrage afin qu’il soit toujours disponible dans la fenêtre **interactive** .
 
-Les scripts de démarrage contiennent du code que la fenêtre **interactive** charge et exécute automatiquement, y compris les importations, les définitions de fonctions, et littéralement n’importe quoi d’autre. Ces scripts sont référencés de deux manières :
+Les scripts de démarrage contiennent du code que la fenêtre **interactive** charge et exécute automatiquement, y compris les importations, les définitions de fonctions et littéralement tout autre caractère. Ces scripts sont référencés de deux manières :
 
-1. Lorsque vous installez un environnement, Visual Studio crée une *version Documents-Visual Studio \<de dossier>-Python\\\<Scripts environnement>* où &lt;la version&gt; est la &lt;&gt; version Visual Studio (comme 2017 ou 2019) et l’environnement correspond au nom de l’environnement. Vous pouvez facilement accéder au dossier spécifique à l’environnement avec la commande **Explorer les scripts interactifs**. Quand vous démarrez la fenêtre **Interactive** pour cet environnement, elle charge et exécute tous les fichiers *.py* qui s’y trouvent dans l’ordre alphabétique.
+1. Quand vous installez un environnement, Visual Studio crée un dossier *Documents\Visual Studio \<version> \Python scripts \\ \<environment> * où &lt; version &gt; est la version de Visual Studio (par exemple, 2017 ou 2019) et &lt; &gt; l’environnement correspond au nom de l’environnement. Vous pouvez facilement accéder au dossier spécifique à l’environnement avec la commande **Explorer les scripts interactifs**. Quand vous démarrez la fenêtre **Interactive** pour cet environnement, elle charge et exécute tous les fichiers *.py* qui s’y trouvent dans l’ordre alphabétique.
 
 1. Le contrôle **Scripts** sous l’onglet **Outils** > **Options** > **Python** > **Fenêtres interactives** (consultez [Options des fenêtres interactives](python-support-options-and-settings-in-visual-studio.md#interactive-windows-options)) est destiné à spécifier un dossier supplémentaire pour les scripts de démarrage qui sont chargés et exécutés dans tous les environnements. Toutefois, cette fonctionnalité ne fonctionne pas actuellement.
 
@@ -82,8 +82,8 @@ S’il est disponible, l’onglet **Configure** contient les informations décri
 | **Chemin de l’interpréteur** | Chemin de l’exécutable de l’interpréteur. En règle générale, il s’agit du chemin de préfixe suivi de **python.exe** |
 | **Interpréteur en mode fenêtre** | Chemin de l’exécutable qui n’est pas celui de la console. Bien souvent, il s’agit du chemin de préfixe suivi de **pythonw.exe**. |
 | **Chemin d’accès à la bibliothèque**<br/>(s’il est disponible) | Spécifie la racine de la bibliothèque standard, mais cette valeur peut être ignorée si Visual Studio est en mesure de demander un chemin d’accès plus précis à partir de l’interpréteur. |
-| **Version linguistique** | Sélectionnée à partir du menu déroulant. |
-| **Architecture** | Normalement détecté et rempli automatiquement, sinon spécifie **32 bits** ou **64 bits**. |
+| **Version du langage** | Sélectionnée à partir du menu déroulant. |
+| **Architecture** | Normalement détecté et renseigné automatiquement, sinon spécifie **32** bits ou **64 bits**. |
 | **Path environment variable** (Variable d’environnement de chemin d’accès) | La variable d’environnement que l’interpréteur utilise pour rechercher les chemins de recherche. Visual Studio modifie la valeur de la variable lors du démarrage de Python pour qu’il contienne les chemins de recherche du projet. En général, cette propriété doit avoir la valeur **PYTHONPATH**, mais certains interpréteurs utilisent une autre valeur. |
 
 ## <a name="packages-tab"></a>Onglet packages
@@ -105,7 +105,7 @@ La saisie d’un terme de recherche filtre la liste des packages installés, ain
 ![Onglet packages, Environnements Python, avec recherche de « num »](media/environments/environments-pip-tab-2019.png)
 ::: moniker-end
 
-Comme vous pouvez le voir dans l’image ci-dessus, les résultats de la recherche affichent plusieurs packages qui correspondent au terme de recherche. Toutefois, la première entrée de la liste est une commande qui permet d’exécuter **pip install \<nom>** directement. Si vous êtes sous l’onglet **Packages (Conda)**, vous voyez plutôt **conda install \<nom>**  :
+Comme vous pouvez le voir dans l’image ci-dessus, les résultats de la recherche affichent un certain nombre de packages qui correspondent au terme de recherche ; la première entrée de la liste, toutefois, est une commande permettant d’exécuter l' **installation \<name> PIP** directement. Si vous êtes sous l’onglet **packages (Conda)** , vous voyez à la place **Conda installer \<name> **:
 
 ::: moniker range="vs-2017"
 ![Onglet de packages Conda montrant une commande d’installation conda](media/environments/environments-conda-tab-install.png)
@@ -127,15 +127,15 @@ L’installation d’un package crée des sous-dossiers dans le dossier *Lib* de
 
 ### <a name="grant-administrator-privileges-for-package-install"></a>Octroyer des privilèges d’administrateur pour l’installation des packages
 
-Au moment d’installer des packages dans un environnement situé dans une zone protégée du système de fichiers, par exemple *c:\Program Files\Anaconda3\Lib*, Visual Studio doit exécuter `pip install` avec une élévation de privilèges pour lui permettre de créer des sous-dossiers de package. Lorsque l’élévation est requise, Visual Studio affiche l’invite, **les privilèges de l’administrateur peuvent être nécessaires pour installer, mettre à jour ou supprimer des paquets pour cet environnement**:
+Au moment d’installer des packages dans un environnement situé dans une zone protégée du système de fichiers, par exemple *c:\Program Files\Anaconda3\Lib*, Visual Studio doit exécuter `pip install` avec une élévation de privilèges pour lui permettre de créer des sous-dossiers de package. Lorsque l’élévation est requise, Visual Studio affiche l’invite, **des privilèges d’administrateur peuvent être nécessaires pour installer, mettre à jour ou supprimer des packages pour cet environnement**:
 
 ![Invite d’élévation pour l’installation de packages](media/environments/environments-pip-elevate.png)
 
-**Élever les privilèges maintenant** accorde des privilèges d’administrateur à pip pour une seule opération, pouvant aussi faire l’objet d’une demande d’autorisations du système d’exploitation. Sélection **Continuer sans privilèges administrateur tente** d’installer le paquet, mais pip échoue lorsque vous essayez de créer des dossiers avec des sorties telles que **l’erreur: ne pouvait pas créer «C: 'Fichier de programme 'Anaconda3'Lib’site-packages’png.py': Permission refusée.**
+**Élever les privilèges maintenant** accorde des privilèges d’administrateur à pip pour une seule opération, pouvant aussi faire l’objet d’une demande d’autorisations du système d’exploitation. La sélection de l’option **continuer sans privilèges d’administrateur** tente d’installer le package, mais le PIP échoue lors de la tentative de création de dossiers avec une sortie telle que **erreur : impossible de créer’C:\Program Files\Anaconda3\Lib\site-packages\png.py' : autorisation refusée.**
 
-En sélectionnant **Toujours élever les privilèges pour l’installation et la suppression des packages**, vous empêchez la boîte de dialogue de s’afficher pour l’environnement en question. Pour faire apparaître le dialogue à nouveau, allez à **Tools** > **Options** > **Python** > **General** et sélectionnez le bouton, **Réinitialisez tous les dialogues cachés en permanence**.
+En sélectionnant **Toujours élever les privilèges pour l’installation et la suppression des packages**, vous empêchez la boîte de dialogue de s’afficher pour l’environnement en question. Pour que la boîte de dialogue s’affiche à nouveau, accédez à **Outils**  >  **options**  >  **python**  >  **général** , puis sélectionnez le bouton **Réinitialiser toutes les boîtes de dialogue masquées définitivement**.
 
-Dans ce même onglet **Options,** vous pouvez également sélectionner **Toujours exécuter pip en tant qu’administrateur** pour supprimer le dialogue pour tous les environnements. Consultez [Options - Onglet Général](python-support-options-and-settings-in-visual-studio.md#general-options).
+Dans cet onglet **options** , vous pouvez également sélectionner **toujours exécuter PIP comme administrateur** pour supprimer la boîte de dialogue pour tous les environnements. Consultez [Options - Onglet Général](python-support-options-and-settings-in-visual-studio.md#general-options).
 
 ### <a name="security-restrictions-with-older-versions-of-python"></a>Restrictions de sécurité avec les versions antérieures de Python
 
@@ -143,7 +143,7 @@ Quand Python 2.6, 3.1 et 3.2 sont utilisés, Visual Studio affiche un avertis
 
 ![Message concernant les restrictions d’installation de pip avec l’ancienne version de Python](media/environments/environments-old-version-restriction.png)
 
-La raison de l’avertissement est qu’avec `pip install` ces anciennes versions de Python, ne contient pas de prise en charge pour la couche de sécurité des transports (TLS) 1.2, qui est nécessaire pour télécharger des paquets à partir de la source du paquet, pypi.org. Les builds De Python personnalisées peuvent prendre `pip install` en charge TLS 1.2 dans ce cas peut fonctionner.
+La raison de cet avertissement est que, avec ces anciennes versions de Python, `pip install` ne prend pas en charge la couche de sécurité de transport (TLS) 1,2, qui est nécessaire pour télécharger des packages à partir de la source du package, Pypi.org. Les builds python personnalisées peuvent prendre en charge TLS 1,2, auquel cas `pip install` peut fonctionner.
 
 Il est possible de télécharger le *get-pip.py* approprié pour un package à partir de [bootstrap.pypa.io](https://bootstrap.pypa.io/), de télécharger manuellement un package à partir de [pypi.org](https://pypi.org/), puis d’installer le package à partir de cette copie locale.
 
@@ -157,9 +157,9 @@ Affiche l’état actuel de la base de données de saisie semi-automatique Intel
 ![Onglet IntelliSense, Environnements Python](media/environments/environments-intellisense-tab.png)
 
 - Dans Visual Studio 2017 version 15.5 et antérieures, les complétions IntelliSense dépendent d’une base de données qui a été compilée pour cette bibliothèque. La génération de la base de données est effectuée en arrière-plan quand une bibliothèque est installée, mais peut prendre du temps et ne pas être terminée lorsque vous démarrez l’écriture de code.
-- Visual Studio 2017 versions 15.6 et ultérieures utilise une méthode plus rapide pour fournir des complétions qui ne dépendent pas de la base de données par défaut. Pour cette raison, l’onglet est étiqueté **IntelliSense [base de données désactivée]**. Vous pouvez activer la base de données en effaçant l’option **Tools** > **Options** > **Python** > **Experimental** > Use nouveau style**IntelliSense pour les environnements**.
+- Visual Studio 2017 versions 15.6 et ultérieures utilise une méthode plus rapide pour fournir des complétions qui ne dépendent pas de la base de données par défaut. Pour cette raison, l’onglet est étiqueté **IntelliSense [base de données désactivée]**. Vous pouvez activer la base de données en désactivant l’option Options des **Outils**  >  **Options**  >  **python**  >  **expérimental**  >  **utiliser le nouveau style IntelliSense pour les environnements**.
 
-Lorsque Visual Studio détecte un nouvel environnement (ou que vous en ajoutez un), il commence automatiquement à compiler la base de données en analysant les fichiers source de la bibliothèque. Ce processus peut prendre entre une minute et plus d’une heure, selon ce qui est installé. (Anaconda, par exemple, est livré avec de nombreuses bibliothèques et prend un certain temps pour compiler la base de données.) Une fois terminé, vous obtenez IntelliSense détaillé et n’avez pas besoin de rafraîchir la base de données à nouveau (avec le bouton **Refresh DB)** jusqu’à ce que vous installez plus de bibliothèques.
+Lorsque Visual Studio détecte un nouvel environnement (ou que vous en ajoutez un), il commence automatiquement à compiler la base de données en analysant les fichiers source de la bibliothèque. Ce processus peut prendre entre une minute et plus d’une heure, selon ce qui est installé. (Anaconda, par exemple, est fourni avec de nombreuses bibliothèques et prend un certain temps pour compiler la base de données.) Une fois l’opération terminée, vous bénéficiez d’IntelliSense détaillé et vous n’avez pas besoin d’actualiser à nouveau la base de données (avec le bouton **Actualiser** la base de données) jusqu’à ce que vous installiez
 
 Les bibliothèques pour lesquelles les données n’ont pas été compilées sont marquées d’un **!**  ; si la base de données d’un environnement n’est pas complète, un **!** apparaît également en regard de celle-ci dans la liste principale des environnements.
 

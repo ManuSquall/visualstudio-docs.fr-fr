@@ -15,17 +15,17 @@ caps.latest.revision: 19
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 099e5f3f9a09eef57ce1b888601f61e85ceb97c5
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 846ce010cddfd505bb967ec612a5c31dd8321977
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72643406"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85544324"
 ---
 # <a name="ca2122-do-not-indirectly-expose-methods-with-link-demands"></a>CA2122 : N'exposez pas indirectement des méthodes avec des demandes de liaison
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Élément|Valeur|
 |-|-|
 |TypeName|DoNotIndirectlyExposeMethodsWithLinkDemands|
 |CheckId|CA2122|
@@ -36,7 +36,7 @@ ms.locfileid: "72643406"
  Un membre public ou protégé a des [demandes de liaison](https://msdn.microsoft.com/library/a33fd5f9-2de9-4653-a4f0-d9df25082c4d) et est appelé par un membre qui n’effectue aucune vérification de sécurité.
 
 ## <a name="rule-description"></a>Description de la règle
- Une demande de liaison vérifie uniquement les autorisations de l’appelant immédiat. Si un membre `X` ne fait aucune demande de sécurité de ses appelants et appelle le code protégé par une demande de liaison, un appelant sans l’autorisation nécessaire peut utiliser `X` pour accéder au membre protégé.
+ Une demande de liaison vérifie uniquement les autorisations de l’appelant immédiat. Si un membre `X` ne fait aucune demande de sécurité de ses appelants et appelle du code protégé par une demande de liaison, un appelant sans l’autorisation nécessaire peut utiliser `X` pour accéder au membre protégé.
 
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations
  Ajoutez des données de sécurité [et une modélisation](https://msdn.microsoft.com/library/8c37635d-e2c1-4b64-a258-61d9e87405e6) ou une demande de liaison au membre afin qu’il ne fournisse plus d’accès non sécurisé au membre protégé à la demande de liaison.
@@ -45,7 +45,7 @@ ms.locfileid: "72643406"
  Pour supprimer sans risque un avertissement de cette règle, vous devez vous assurer que votre code n’accorde pas à ses appelants l’accès aux opérations ou aux ressources qui peuvent être utilisées de manière destructrice.
 
 ## <a name="example"></a>Exemple
- Les exemples suivants illustrent une bibliothèque qui enfreint la règle et une application qui illustre la faiblesse de la bibliothèque. L’exemple de bibliothèque fournit deux méthodes qui enfreignent ensemble la règle. La méthode `EnvironmentSetting` est sécurisée par une demande de liaison pour un accès illimité à des variables d’environnement. La méthode `DomainInformation` ne fait aucune demande de sécurité de ses appelants avant d’appeler `EnvironmentSetting`.
+ Les exemples suivants illustrent une bibliothèque qui enfreint la règle et une application qui illustre la faiblesse de la bibliothèque. L’exemple de bibliothèque fournit deux méthodes qui enfreignent ensemble la règle. La `EnvironmentSetting` méthode est sécurisée par une demande de liaison pour un accès illimité aux variables d’environnement. La `DomainInformation` méthode ne fait aucune demande de sécurité de ses appelants avant d’appeler `EnvironmentSetting` .
 
  [!code-csharp[FxCop.Security.UnsecuredDoNotCall#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Security.UnsecuredDoNotCall/cs/FxCop.Security.UnsecuredDoNotCall.cs#1)]
 

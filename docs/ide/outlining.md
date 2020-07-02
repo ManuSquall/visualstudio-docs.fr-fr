@@ -15,21 +15,21 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 781c9a6bc30f7d3a29bcb89e743600e6b29e6445
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 07ad01726b57073cad3a5a2876a4b22667d3770a
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75585754"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85545442"
 ---
-# <a name="outlining"></a>Mode Plan
+# <a name="outlining"></a>mode Plan
 
-Vous pouvez choisir de cacher un code de la vue en s’effondrant une région de code de sorte qu’il apparaît sous un signe positif (**+**). Pour développer une zone réduite, vous devez cliquer sur le signe plus (+). Si vous êtes un utilisateur de clavier, vous pouvez choisir **Ctrl**+**M**+**M** pour s’effondrer et se développer. Vous pouvez aussi réduire une zone en mode Plan en double-cliquant sur n’importe quelle ligne dans la zone dans la marge de mode Plan, affichée juste à gauche du code. Vous pouvez afficher le contenu d’une zone réduite sous forme d’info-bulle quand vous pointez sur la partie réduite.
+Vous pouvez choisir de masquer du code dans la vue en réduisant une région de code pour qu’elle apparaisse sous un signe plus ( **+** ). Pour développer une zone réduite, vous devez cliquer sur le signe plus (+). Si vous êtes un utilisateur du clavier, vous pouvez choisir **CTRL** + **m** + **m** pour réduire et développer. Vous pouvez aussi réduire une zone en mode Plan en double-cliquant sur n’importe quelle ligne dans la zone dans la marge de mode Plan, affichée juste à gauche du code. Vous pouvez afficher le contenu d’une zone réduite sous forme d’info-bulle quand vous pointez sur la partie réduite.
 
 > [!NOTE]
 > Cette rubrique s’applique à Visual Studio sur Windows. Pour Visual Studio pour Mac, consultez [Éditeur de code Source (Visual Studio pour Mac)](/visualstudio/mac/source-editor).
 
-Les zone dans la marge de mode Plan sont également mises en surbrillance quand vous pointez sur la marge avec la souris. La couleur de mise en surbrillance par défaut peut sembler plutôt fade dans certaines configurations de couleur. Vous pouvez le modifier dans **Tools** > **Options** > **Environment** > **Fonts et Colors** > **Collapsible Region**.
+Les zone dans la marge de mode Plan sont également mises en surbrillance quand vous pointez sur la marge avec la souris. La couleur de mise en surbrillance par défaut peut sembler plutôt fade dans certaines configurations de couleur. Vous pouvez le modifier dans **Outils**  >  **options**  >  **environnement**  >  **polices et couleurs**  >  **zone réductible**.
 
 Quand vous travaillez dans du code en mode Plan, vous pouvez développer les sections sur lesquelles vous souhaitez travailler, les réduire quand vous avez terminé, puis basculer vers d’autres sections. Quand vous ne souhaitez pas afficher le mode Plan, vous pouvez utiliser la commande **Arrêter le mode Plan** pour supprimer les informations de mode Plan sans endommager le code sous-jacent.
 
@@ -38,18 +38,18 @@ Les commandes **Annuler** et **Restaurer** du menu **Edition** affectent ces act
 > [!CAUTION]
 > Quand vous modifiez une zone en mode Plan, vous risquez de perdre le mode Plan. Par exemple, une suppression ou une opération de remplacement peut effacer la fin de la zone.
 
-Les commandes suivantes peuvent être trouvées sur le sous-mois **Edit** > **Outlining.**
+Les commandes suivantes se trouvent dans le sous **Edit**  >  -menu modifier le**mode plan** .
 
-|||
+|Nom|Description|
 |-|-|
-|Masquer la sélection|(**Ctrl**+**M**, **Ctrl**+**H**) - Effondre un bloc de code sélectionné qui `if` ne serait normalement pas disponible pour la mise en ligne, par exemple un bloc. Pour supprimer la zone personnalisée, utilisez **Arrêter le masquage actuel** (ou **Ctrl**+**M**, **Ctrl**+**U**). Non disponible en Visual Basic.|
+|Masquer la sélection|(**CTRL** + **M**, **CTRL** + **H**)-réduit un bloc de code sélectionné qui ne serait normalement pas disponible pour le mode plan, par exemple un `if` bloc. Pour supprimer la zone personnalisée, utilisez **Arrêter le masquage actuel** (ou **Ctrl**+**M**, **Ctrl**+**U**). Non disponible en Visual Basic.|
 |Activer/Désactiver le développement du mode Plan|- Inverse l’état masqué ou développé actuel de la section en mode Plan la plus intérieure quand le curseur se trouve dans une section réduite imbriquée.|
-|Activer/Désactiver toutes les régions en mode Plan|(**Ctrl**+**M**, **Ctrl**+**L**) - Définit toutes les régions à la même état effondré ou élargi. Si certaines zones sont développées et d’autres réduites, les zones réduites sont développées.|
-|Arrêter le mode Plan|(**Ctrl**+**M**, **Ctrl**+**P**) - Supprime toutes les informations décrivant pour l’ensemble du document.|
-|Arrêter le masquage actuel|(**Ctrl**+**M**, **Ctrl**+**U**) - Supprime les informations décrivantes pour la région actuellement sélectionnée définie par l’utilisateur. Non disponible en Visual Basic.|
-|Réduire aux définitions|(**Ctrl**+**M**, **Ctrl**+**O**) - Effondre les membres de tous types.|
-|Réduire le bloc :\<limite logique>|(C) Effondre une région dans la fonction contenant le point d’insertion. Par exemple, si le point d’insertion se trouve à l’intérieur d’une boucle, celle-ci est masquée.|
-|Réduire tout dans : \<structures logiques>|(C) Effondre toutes les structures à l’intérieur de la fonction.|
+|Activer/Désactiver toutes les régions en mode Plan|(**CTRL** + **M**, **CTRL** + **L**)-définit toutes les régions sur le même État réduit ou développé. Si certaines zones sont développées et d’autres réduites, les zones réduites sont développées.|
+|Arrêter le mode Plan|(**CTRL** + **M**, **CTRL** + **P**)-supprime toutes les informations en mode plan pour le document entier.|
+|Arrêter le masquage actuel|(**CTRL** + **M**, **CTRL** + **U**)-supprime les informations de mode plan pour la zone définie par l’utilisateur actuellement sélectionnée. Non disponible en Visual Basic.|
+|Réduire aux définitions|(**CTRL** + **M**, **CTRL** + **O**)-réduit les membres de tous les types.|
+|Réduire le bloc :\<logical boundary>|C++ Réduit une zone dans la fonction contenant le point d’insertion. Par exemple, si le point d’insertion se trouve à l’intérieur d’une boucle, celle-ci est masquée.|
+|Réduire tout dans :\<logical structures>|C++ Réduit toutes les structures à l’intérieur de la fonction.|
 
 Vous pouvez également utiliser le SDK Visual Studio pour définir les zones de texte que vous souhaitez développer ou réduire. Consultez [Procédure pas à pas : mode Plan](../extensibility/walkthrough-outlining.md).
 

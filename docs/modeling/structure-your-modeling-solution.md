@@ -1,18 +1,18 @@
 ---
 title: Structurer votre solution de modélisation
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 author: JoshuaPartlow
 ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 57edf4253840294968238793bf9f3b24326a1e3f
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: cc4eba7dc4d185cbd8eb4f1b073fce8b0c9fb07e
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75591942"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85545039"
 ---
 # <a name="structure-your-modeling-solution"></a>Structurer votre solution de modélisation
 
@@ -72,7 +72,7 @@ Dans un projet de taille moyenne ou grande, la structure de l'équipe est basée
 
 #### <a name="use-a-separate-package-for-each-layer"></a>Utiliser un package distinct pour chaque couche
 
-1. Dans la solution de chaque couche, ajoutez le projet de modélisation Architecture. Dans **l’Explorateur de solutions**, cliquez sur le nœud solution, pointez sur **ajouter**, puis cliquez sur **projet existant**. Le projet de modélisation unique est maintenant accessible à partir de chaque solution : le projet Architecture et le projet de développement de chaque couche.
+1. Dans la solution de chaque couche, ajoutez le projet de modélisation Architecture. Dans **Explorateur de solutions**, cliquez avec le bouton droit sur le nœud de la solution, pointez sur **Ajouter**, puis cliquez sur **projet existant**. Le projet de modélisation unique est maintenant accessible à partir de chaque solution : le projet Architecture et le projet de développement de chaque couche.
 
 2. Dans le modèle partagé, créez un package pour chaque couche : dans **Explorateur de solutions**, sélectionnez le projet de modélisation. Dans l' **Explorateur de modèles UML**, cliquez avec le bouton droit sur le nœud racine du modèle, pointez sur **Ajouter**, puis cliquez sur **package**.
 
@@ -102,11 +102,11 @@ Par exemple, si vous utilisez fréquemment des solutions qui ont des couches Pr�
 
 4. Suivez les instructions de l'Assistant et sélectionnez les projets que vous souhaitez inclure dans le modèle, fournissez un nom et une description pour le modèle et spécifiez un emplacement de sortie.
 
-## <a name="watch-a-video"></a>Regardez une vidéo
+## <a name="watch-a-video"></a>Regarder une vidéo
 
 [Organiser et gérer vos modèles](https://channel9.msdn.com/blogs/clinted/uml-with-vs-2010-part-9-organizing-and-managing-your-models)
 
 ## <a name="see-also"></a>Voir aussi
 
 - [Utiliser des modèles dans votre processus de développement](../modeling/use-models-in-your-development-process.md)
-- [Guide des outils d’architecture Visual Studio](../modeling/visual-studio-architecture-tooling-guidance.md)
+- [Guide des outils d'architecture Visual Studio](../modeling/visual-studio-architecture-tooling-guidance.md)

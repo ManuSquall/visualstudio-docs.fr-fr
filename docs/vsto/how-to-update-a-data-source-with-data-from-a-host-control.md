@@ -1,7 +1,7 @@
 ---
-title: 'Procédure : Mettre à jour une source de données avec les données d’un contrôle hôte'
+title: 'Comment : mettre à jour une source de données avec les données d’un contrôle hôte'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -15,14 +15,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 41ccdc77c58ef95a63e3e5273b7ea00d4f942681
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: 8384b35583517a832763f5229d2b526ca10190ad
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71255672"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85541243"
 ---
-# <a name="how-to-update-a-data-source-with-data-from-a-host-control"></a>Procédure : Mettre à jour une source de données avec les données d’un contrôle hôte
+# <a name="how-to-update-a-data-source-with-data-from-a-host-control"></a>Comment : mettre à jour une source de données avec les données d’un contrôle hôte
   Vous pouvez lier un contrôle hôte à une source de données et mettre à jour la source de données avec les modifications apportées aux données dans le contrôle. Deux étapes principales constituent ce processus :
 
 1. Mise à jour de la source de données en mémoire avec les données modifiées dans le contrôle. En général, la source de données en mémoire est un <xref:System.Data.DataSet>, un <xref:System.Data.DataTable>ou un objet de données.
@@ -54,7 +54,7 @@ ms.locfileid: "71255672"
 
 #### <a name="to-set-a-control-to-automatically-update-the-in-memory-data-source-by-using-code"></a>Pour configurer un contrôle pour qu’il mette automatiquement à jour la source de données en mémoire à l’aide de code
 
-1. Utilisez le mode System. Windows. Forms. DataSourceUpdateMode. OnPropertyChanged de <xref:System.Windows.Forms.Binding> l’objet qui lie le contrôle à la source de données. Il existe deux options de mise à jour de la source de données :
+1. Utilisez le mode System. Windows. Forms. DataSourceUpdateMode. OnPropertyChanged de l' <xref:System.Windows.Forms.Binding> objet qui lie le contrôle à la source de données. Il existe deux options de mise à jour de la source de données :
 
    - Pour mettre à jour la source de données lorsque le contrôle est validé, affectez à cette propriété la valeur System. Windows. Forms. DataSourceUpdateMode. OnValidation.
 
@@ -76,7 +76,7 @@ ms.locfileid: "71255672"
 
 3. Dans la fenêtre **Propriétés** , développez la propriété **(DataBindings)** .
 
-4. En regard de la propriété **(avancé)** , cliquez sur le bouton de sélection (capture d'![écran VisualStudioEllipsesButton](../vsto/media/vbellipsesbutton.png "VisualStudioEllipsesButton screenshot")).
+4. En regard de la propriété **(avancé)** , cliquez sur le bouton de sélection (![capture d’écran VisualStudioEllipsesButton](../vsto/media/vbellipsesbutton.png "Capture d'écran de VisualStudioEllipsesButton")).
 
 5. Dans la boîte de dialogue **Mise en forme et liaison avancée** , cliquez sur la liste déroulante **Mode de mise à jour de la source de données** et sélectionnez l’une des valeurs suivantes :
 
@@ -107,7 +107,7 @@ ms.locfileid: "71255672"
 
      Le TableAdapter est généré automatiquement lorsque vous ajoutez un contrôle lié aux données à un document ou à un classeur au moment du Design. Le TableAdapter connecte le DataSet typé dans votre projet à la base de données. Pour plus d’informations, consultez [vue d’ensemble de TableAdapter](../data-tools/fill-datasets-by-using-tableadapters.md#tableadapter-overview).
 
-     L’exemple de code suivant suppose que vous disposez d’une connexion à la table Customers dans la base de données Northwind et que votre projet contient `customersTableAdapter` un TableAdapter nommé et un `northwindDataSet`DataSet typé nommé.
+     L’exemple de code suivant suppose que vous disposez d’une connexion à la table Customers dans la base de données Northwind et que votre projet contient un TableAdapter nommé `customersTableAdapter` et un DataSet typé nommé `northwindDataSet` .
 
      [!code-csharp[Trin_VstcoreDataExcel#21](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet1.cs#21)]
      [!code-vb[Trin_VstcoreDataExcel#21](../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet1.vb#21)]
@@ -116,8 +116,8 @@ ms.locfileid: "71255672"
 - [Lier des données à des contrôles dans les solutions Office](../vsto/binding-data-to-controls-in-office-solutions.md)
 - [Enregistrer les données dans la base de données](../data-tools/save-data-back-to-the-database.md)
 - [Guide pratique pour mettre à jour les données à l’aide d’un TableAdapter](../data-tools/update-data-by-using-a-tableadapter.md)
-- [Guide pratique pour Parcourir les enregistrements de base de données dans une feuille de calcul](../vsto/how-to-scroll-through-database-records-in-a-worksheet.md)
-- [Guide pratique pour Remplir des feuilles de calcul avec des données d’une base de données](../vsto/how-to-populate-worksheets-with-data-from-a-database.md)
-- [Guide pratique pour Remplir des documents avec des données d’objets](../vsto/how-to-populate-documents-with-data-from-objects.md)
-- [Guide pratique pour Remplir des documents avec des données d’une base de données](../vsto/how-to-populate-documents-with-data-from-a-database.md)
-- [Guide pratique pour Remplir des documents avec des données de services](../vsto/how-to-populate-documents-with-data-from-services.md)
+- [Comment : faire défiler des enregistrements de base de données dans une feuille de calcul](../vsto/how-to-scroll-through-database-records-in-a-worksheet.md)
+- [Comment : remplir des feuilles de calcul avec des données d’une base de données](../vsto/how-to-populate-worksheets-with-data-from-a-database.md)
+- [Comment : remplir des documents avec des données d’objets](../vsto/how-to-populate-documents-with-data-from-objects.md)
+- [Comment : remplir des documents avec des données d’une base de données](../vsto/how-to-populate-documents-with-data-from-a-database.md)
+- [Comment : remplir des documents avec des données de services](../vsto/how-to-populate-documents-with-data-from-services.md)

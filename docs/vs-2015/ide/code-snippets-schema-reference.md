@@ -14,12 +14,12 @@ caps.latest.revision: 21
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 9f105406888a9bf17899a4d47305cc1ed20d763f
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 67bc1a18b4e4cbfdf69fe917c0d0fdff09832983
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72620109"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85545026"
 ---
 # <a name="code-snippets-schema-reference"></a>Référence de schéma des extraits de code
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,20 +28,20 @@ Les extraits de code IntelliSense sont des parties de code précréées et prêt
 
 ## <a name="intellisense-code-snippets-schema-elements"></a>Éléments du schéma des extraits de code IntelliSense
 
-||||
+|Élément|Élément|Élément|
 |-|-|-|
-|[Assembly, élément](../ide/code-snippets-schema-reference.md#assembly)|[HelpUrl, élément](../ide/code-snippets-schema-reference.md#helpurl)|[References, élément](../ide/code-snippets-schema-reference.md#references)|
-|[Author, élément](../ide/code-snippets-schema-reference.md#author)|[ID, élément](../ide/code-snippets-schema-reference.md#id)|[Shortcut, élément](../ide/code-snippets-schema-reference.md#shortcut)|
-|[Code, élément](../ide/code-snippets-schema-reference.md#code)|[Import, élément](../ide/code-snippets-schema-reference.md#import)|[Snippet, élément](../ide/code-snippets-schema-reference.md#snippet)|
+|[Élément Assembly](../ide/code-snippets-schema-reference.md#assembly)|[Élément HelpUrl,](../ide/code-snippets-schema-reference.md#helpurl)|[References, élément](../ide/code-snippets-schema-reference.md#references)|
+|[Élément Author](../ide/code-snippets-schema-reference.md#author)|[ID, élément](../ide/code-snippets-schema-reference.md#id)|[Shortcut, élément](../ide/code-snippets-schema-reference.md#shortcut)|
+|[Élément de code](../ide/code-snippets-schema-reference.md#code)|[Élément Import](../ide/code-snippets-schema-reference.md#import)|[Élément Snippet](../ide/code-snippets-schema-reference.md#snippet)|
 |[CodeSnippet, élément](../ide/code-snippets-schema-reference.md#codesnippet)|[Imports, élément](../ide/code-snippets-schema-reference.md#imports)|[SnippetType, élément](../ide/code-snippets-schema-reference.md#snippettype)|
-|[CodeSnippets, élément](../ide/code-snippets-schema-reference.md#codesnippets)|[Keyword, élément](../ide/code-snippets-schema-reference.md#keyword)|[SnippetTypes, élément](../ide/code-snippets-schema-reference.md#snippettypes)|
+|[Élément CodeSnippets,](../ide/code-snippets-schema-reference.md#codesnippets)|[Keyword, élément](../ide/code-snippets-schema-reference.md#keyword)|[Élément SnippetTypes,](../ide/code-snippets-schema-reference.md#snippettypes)|
 |[Declarations, élément](../ide/code-snippets-schema-reference.md#declarations)|[Keywords, élément](../ide/code-snippets-schema-reference.md#keywords)|[Title, élément](../ide/code-snippets-schema-reference.md#title)|
-|[Default, élément](../ide/code-snippets-schema-reference.md#default)|[Literal, élément](../ide/code-snippets-schema-reference.md#literal)|[ToolTip, élément](../ide/code-snippets-schema-reference.md#tooltip)|
-|[Description, élément](../ide/code-snippets-schema-reference.md#description)|[Namespace, élément](../ide/code-snippets-schema-reference.md#namespace)|[Type, élément](../ide/code-snippets-schema-reference.md#type)|
-|[Function, élément](../ide/code-snippets-schema-reference.md#function)|[Object, élément](../ide/code-snippets-schema-reference.md#object)|[Url, élément](../ide/code-snippets-schema-reference.md#url)|
+|[Default, élément](../ide/code-snippets-schema-reference.md#default)|[Élément Literal](../ide/code-snippets-schema-reference.md#literal)|[ToolTip, élément](../ide/code-snippets-schema-reference.md#tooltip)|
+|[Description, élément](../ide/code-snippets-schema-reference.md#description)|[Namespace, élément](../ide/code-snippets-schema-reference.md#namespace)|[Élément type](../ide/code-snippets-schema-reference.md#type)|
+|[Function, élément](../ide/code-snippets-schema-reference.md#function)|[Object, élément](../ide/code-snippets-schema-reference.md#object)|[Élément URL](../ide/code-snippets-schema-reference.md#url)|
 |[Header, élément](../ide/code-snippets-schema-reference.md#header)|[Reference, élément](../ide/code-snippets-schema-reference.md#reference)||
 
-## <a name="assembly"></a> Assembly, élément
+## <a name="assembly-element"></a><a name="assembly"></a>Assembly (élément)
  Spécifie le nom de l'assembly référencé par l'extrait de code.
 
 > [!NOTE]
@@ -55,13 +55,13 @@ Les extraits de code IntelliSense sont des parties de code précréées et prêt
 </Assembly>
 ```
 
-|Parent, élément|Description|
+|Élément parent|Description|
 |--------------------|-----------------|
 |[Reference, élément](../ide/code-snippets-schema-reference.md#reference)|Contient des informations à propos des références d'assembly requises par l'extrait de code.|
 
  Une valeur texte est requise. Ce texte spécifie l'assembly auquel l'extrait de code fait référence.
 
-## <a name="author"></a> Author, élément
+## <a name="author-element"></a><a name="author"></a> Author, élément
  Spécifie le nom de l'auteur de l'extrait de code. Le **Gestionnaire des extraits de code** affiche le nom stocké dans l’élément `Author` de l’extrait de code.
 
 ```xml
@@ -71,13 +71,13 @@ Les extraits de code IntelliSense sont des parties de code précréées et prêt
 
 ```
 
-|Parent, élément|Description|
+|Élément parent|Description|
 |--------------------|-----------------|
 |[Header, élément](../ide/code-snippets-schema-reference.md#header)|Contient des informations générales sur l'extrait de code.|
 
  Une valeur texte est requise. Ce texte spécifie l'auteur de l'extrait de code.
 
-## <a name="code"></a> Code, élément
+## <a name="code-element"></a><a name="code"></a> Élément Code
  Fournit de petits blocs d'extraits de code à un conteneur.
 
  Deux mots réservés peuvent être utilisés dans le texte de l'élément `Code` : `$end$` et `$selected$`. `$end$` marque l'emplacement pour placer le curseur après insertion de l'extrait de code. `$selected$` représente le texte sélectionné dans le document qui sera inséré dans l'extrait de code lorsqu'il est appelé. Par exemple, étant donné un extrait de code qui inclut :
@@ -140,13 +140,13 @@ is a great color. I love Blue.
 |`SQL`|Identifie un extrait de code SQL.|
 |`HTML`|Identifie un extrait de code HTML.|
 
-|Parent, élément|Description|
+|Élément parent|Description|
 |--------------------|-----------------|
-|[Snippet, élément](../ide/code-snippets-schema-reference.md#snippet)|Contient les références, importations, déclarations et code de l'extrait de code.|
+|[Élément Snippet](../ide/code-snippets-schema-reference.md#snippet)|Contient les références, importations, déclarations et code de l'extrait de code.|
 
  Une valeur texte est requise. Ce texte spécifie le code, avec les littéraux et les objets, que vous pouvez utiliser lorsque cet extrait de code est inséré dans un projet.
 
-## <a name="codesnippet"></a> CodeSnippet, élément
+## <a name="codesnippet-element"></a><a name="codesnippet"></a>Élément CodeSnippet
  Vous permet de spécifier un titre et plusieurs extraits de code IntelliSense que vous pouvez insérer dans des fichiers de Visual Studio Code.
 
 ```xml
@@ -164,13 +164,13 @@ is a great color. I love Blue.
 |Élément enfant|Description|
 |-------------------|-----------------|
 |[Header, élément](../ide/code-snippets-schema-reference.md#header)|Élément requis. Contient des informations générales sur l'extrait de code. Il doit y avoir un seul élément `Header` dans un extrait de code.|
-|[Snippet, élément](../ide/code-snippets-schema-reference.md#snippet)|Élément requis. Contient le code qui sera inséré par Visual Studio. Il doit y avoir un seul élément `Snippet` dans un extrait de code.|
+|[Élément Snippet](../ide/code-snippets-schema-reference.md#snippet)|Élément requis. Contient le code qui sera inséré par Visual Studio. Il doit y avoir un seul élément `Snippet` dans un extrait de code.|
 
-|Parent, élément|Description|
+|Élément parent|Description|
 |--------------------|-----------------|
-|[CodeSnippets, élément](../ide/code-snippets-schema-reference.md#codesnippets)|Élément racine du schéma XML de l'extrait de code.|
+|[Élément CodeSnippets,](../ide/code-snippets-schema-reference.md#codesnippets)|Élément racine du schéma XML de l'extrait de code.|
 
-## <a name="codesnippets"></a> CodeSnippets, élément
+## <a name="codesnippets-element"></a><a name="codesnippets"></a>Élément CodeSnippets,
  Regroupe les éléments [CodeSnippet](../ide/code-snippets-schema-reference.md#codesnippet). L'élément `CodeSnippets` est l'élément racine du schéma XML de l'extrait de code.
 
 ```xml
@@ -184,7 +184,7 @@ is a great color. I love Blue.
 |-------------------|-----------------|
 |[CodeSnippet, élément](../ide/code-snippets-schema-reference.md#codesnippet)|Élément facultatif. Élément parent pour toutes les données d'extrait de code. Un élément `CodeSnippet` peut ne contenir aucun élément `CodeSnippets` ou en contenir plusieurs.|
 
-## <a name="declarations"></a> Declarations, élément
+## <a name="declarations-element"></a><a name="declarations"></a>Declarations, élément
  Spécifie les littéraux et les objets qui composent un extrait de code que vous pouvez modifier.
 
 ```xml
@@ -197,14 +197,14 @@ is a great color. I love Blue.
 
 |Élément enfant|Description|
 |-------------------|-----------------|
-|[Literal, élément](../ide/code-snippets-schema-reference.md#literal)|Élément facultatif. Définit les littéraux de l'extrait de code que vous pouvez modifier. Un élément `Literal` peut ne contenir aucun élément `Declarations` ou en contenir plusieurs.|
+|[Élément Literal](../ide/code-snippets-schema-reference.md#literal)|Élément facultatif. Définit les littéraux de l'extrait de code que vous pouvez modifier. Un élément `Literal` peut ne contenir aucun élément `Declarations` ou en contenir plusieurs.|
 |[Object, élément](../ide/code-snippets-schema-reference.md#object)|Élément facultatif. Définit les objets de l'extrait de code que vous pouvez modifier. Un élément `Object` peut ne contenir aucun élément `Declarations` ou en contenir plusieurs.|
 
-|Parent, élément|Description|
+|Élément parent|Description|
 |--------------------|-----------------|
-|[Snippet, élément](../ide/code-snippets-schema-reference.md#snippet)|Contient les références, importations, déclarations et code de l'extrait de code.|
+|[Élément Snippet](../ide/code-snippets-schema-reference.md#snippet)|Contient les références, importations, déclarations et code de l'extrait de code.|
 
-## <a name="default"></a> Default, élément
+## <a name="default-element"></a><a name="default"></a>Élément par défaut
  Spécifie la valeur par défaut du littéral ou de l'objet d'un extrait de code IntelliSense.
 
 ```xml
@@ -214,14 +214,14 @@ is a great color. I love Blue.
 
 ```
 
-|Parent, élément|Description|
+|Élément parent|Description|
 |--------------------|-----------------|
-|[Literal, élément](../ide/code-snippets-schema-reference.md#literal)|Définit les champs littéraux de l'extrait de code que vous pouvez modifier.|
+|[Élément Literal](../ide/code-snippets-schema-reference.md#literal)|Définit les champs littéraux de l'extrait de code que vous pouvez modifier.|
 |[Object, élément](../ide/code-snippets-schema-reference.md#object)|Définit les champs objet de l'extrait de code que vous pouvez modifier.|
 
  Une valeur texte est requise. Ce texte spécifie la valeur par défaut du littéral ou de l'objet qui remplit les champs de l'extrait de code que vous pouvez modifier.
 
-## <a name="description"></a> Description, élément
+## <a name="description-element"></a><a name="description"></a>Description, élément
  Spécifie des informations relatives à la description du contenu d'un extrait de code IntelliSense.
 
 ```xml
@@ -230,13 +230,13 @@ is a great color. I love Blue.
 </Description>
 ```
 
-|Parent, élément|Description|
+|Élément parent|Description|
 |--------------------|-----------------|
 |[Header, élément](../ide/code-snippets-schema-reference.md#header)|Contient des informations générales sur l'extrait de code.|
 
  Une valeur texte est requise. Ce texte décrit l'extrait de code.
 
-## <a name="function"></a> Function, élément
+## <a name="function-element"></a><a name="function"></a>Function, élément
  Spécifie une fonction à exécuter lorsque le littéral ou l'objet reçoit le focus dans Visual Studio.
 
 > [!NOTE]
@@ -248,14 +248,14 @@ is a great color. I love Blue.
 </Function>
 ```
 
-|Parent, élément|Description|
+|Élément parent|Description|
 |--------------------|-----------------|
-|[Literal, élément](../ide/code-snippets-schema-reference.md#literal)|Définit les champs littéraux de l'extrait de code que vous pouvez modifier.|
+|[Élément Literal](../ide/code-snippets-schema-reference.md#literal)|Définit les champs littéraux de l'extrait de code que vous pouvez modifier.|
 |[Object, élément](../ide/code-snippets-schema-reference.md#object)|Définit les champs objet de l'extrait de code que vous pouvez modifier.|
 
  Une valeur texte est requise. Ce texte spécifie une fonction à exécuter lorsque le littéral ou le champ objet reçoit le focus dans Visual Studio.
 
-## <a name="header"></a> Header, élément
+## <a name="header-element"></a><a name="header"></a>Header, élément
  Spécifie des informations d'ordre général sur l'extrait de code IntelliSense.
 
 ```xml
@@ -273,19 +273,19 @@ is a great color. I love Blue.
 
 |Élément enfant|Description|
 |-------------------|-----------------|
-|[Author, élément](../ide/code-snippets-schema-reference.md#author)|Élément facultatif. Nom de la personne ou de la société qui a créé l'extrait de code. Il peut y avoir zéro ou un élément `Author` dans un élément `Header`.|
+|[Élément Author](../ide/code-snippets-schema-reference.md#author)|Élément facultatif. Nom de la personne ou de la société qui a créé l'extrait de code. Il peut y avoir zéro ou un élément `Author` dans un élément `Header`.|
 |[Description, élément](../ide/code-snippets-schema-reference.md#description)|Élément facultatif. Description de l'extrait de code. Il peut y avoir zéro ou un élément `Description` dans un élément `Header`.|
-|[HelpUrl, élément](../ide/code-snippets-schema-reference.md#helpurl)|Élément facultatif. URL contenant plus d'informations sur l'extrait de code. Il peut y avoir zéro ou un élément `HelpURL` dans un élément . **Remarque :**  Visual Studio n'utilise pas l'élément `HelpUrl`. L'élément fait partie du schéma XML des extraits de code IntelliSense et tout extrait de code contenant l'élément est validé mais la valeur de l'élément n'est jamais utilisée.|
+|[Élément HelpUrl,](../ide/code-snippets-schema-reference.md#helpurl)|Élément facultatif. URL contenant plus d'informations sur l'extrait de code. Il peut y avoir zéro ou un élément `HelpURL` dans un élément . **Remarque** : Visual Studio n’utilise pas l’élément `HelpUrl`. L'élément fait partie du schéma XML des extraits de code IntelliSense et tout extrait de code contenant l'élément est validé mais la valeur de l'élément n'est jamais utilisée.|
 |[Keywords, élément](../ide/code-snippets-schema-reference.md#keywords)|Élément facultatif. Groupe les éléments `Keyword`. Il peut y avoir zéro ou un élément `Keywords` dans un élément `Header`.|
 |[Shortcut, élément](../ide/code-snippets-schema-reference.md#shortcut)|Élément facultatif. Spécifie le texte du raccourci qui peut être utilisé pour insérer l'extrait de code. Il peut y avoir zéro ou un élément `Shortcut` dans un élément `Header`.|
-|[SnippetTypes, élément](../ide/code-snippets-schema-reference.md#snippettypes)|Élément facultatif. Groupe les éléments `SnippetType`. Il peut y avoir zéro ou un élément `SnippetTypes` dans un élément `Header`. S'il n'y a pas d'éléments `SnippetTypes`, l'extrait de code est toujours valide.|
+|[Élément SnippetTypes,](../ide/code-snippets-schema-reference.md#snippettypes)|Élément facultatif. Groupe les éléments `SnippetType`. Il peut y avoir zéro ou un élément `SnippetTypes` dans un élément `Header`. S'il n'y a pas d'éléments `SnippetTypes`, l'extrait de code est toujours valide.|
 |[Title, élément](../ide/code-snippets-schema-reference.md#title)|Élément requis. Nom convivial de l'extrait de code. Un élément `Title` doit contenir exactement un élément `Header`.|
 
-|Parent, élément|Description|
+|Élément parent|Description|
 |--------------------|-----------------|
 |[CodeSnippet, élément](../ide/code-snippets-schema-reference.md#codesnippet)|Élément parent pour toutes les données d'extrait de code.|
 
-## <a name="helpurl"></a> HelpUrl, élément
+## <a name="helpurl-element"></a><a name="helpurl"></a>Élément HelpUrl,
  Spécifie une URL qui fournit des informations supplémentaires sur un extrait de code.
 
 > [!NOTE]
@@ -298,13 +298,13 @@ is a great color. I love Blue.
 
 ```
 
-|Parent, élément|Description|
+|Élément parent|Description|
 |--------------------|-----------------|
 |[Header, élément](../ide/code-snippets-schema-reference.md#header)|Contient des informations générales sur l'extrait de code.|
 
  Une valeur texte est facultative. Ce texte spécifie l'URL à visiter pour plus d'informations sur un extrait de code.
 
-## <a name="id"></a> ID, élément
+## <a name="id-element"></a><a name="id"></a>ID, élément
  Spécifie l'identificateur unique d'un élément `Literal` ou `Object`. Deux objets ou littéraux d'un même extrait de code ne peuvent avoir la même valeur texte dans leurs éléments `ID`. Les littéraux et objets ne peuvent pas contenir d'élément `ID` avec une valeur de fin. La valeur `$end$` est réservée et utilisée pour marquer l'emplacement du curseur après que l'extrait de code a été inséré.
 
 ```xml
@@ -314,14 +314,14 @@ is a great color. I love Blue.
 
 ```
 
-|Parent, élément|Description|
+|Élément parent|Description|
 |--------------------|-----------------|
-|[Literal, élément](../ide/code-snippets-schema-reference.md#literal)|Définit les champs littéraux de l'extrait de code que vous pouvez modifier.|
+|[Élément Literal](../ide/code-snippets-schema-reference.md#literal)|Définit les champs littéraux de l'extrait de code que vous pouvez modifier.|
 |[Object, élément](../ide/code-snippets-schema-reference.md#object)|Définit les champs objet de l'extrait de code que vous pouvez modifier.|
 
  Une valeur texte est requise. Ce texte spécifie l'identificateur unique de l'objet ou du littéral.
 
-## <a name="import"></a> Import, élément
+## <a name="import-element"></a><a name="import"></a>Élément Import
  Spécifie les espaces de noms importés et utilisés par un extrait de code IntelliSense.
 
 > [!NOTE]
@@ -338,11 +338,11 @@ is a great color. I love Blue.
 |-------------------|-----------------|
 |[Namespace, élément](../ide/code-snippets-schema-reference.md#namespace)|Élément requis. Spécifie l'espace de noms utilisé par l'extrait de code. Un élément `Namespace` doit contenir exactement un élément `Import`.|
 
-|Parent, élément|Description|
+|Élément parent|Description|
 |--------------------|-----------------|
 |[Imports, élément](../ide/code-snippets-schema-reference.md#imports)|Élément grouping pour les éléments **Import**.|
 
-## <a name="imports"></a> Importations, élément
+## <a name="imports-element"></a><a name="imports"></a>Élément Imports
  Groupe des éléments `Import` individuels.
 
 > [!NOTE]
@@ -356,13 +356,13 @@ is a great color. I love Blue.
 
 |Élément enfant|Description|
 |-------------------|-----------------|
-|[Import, élément](../ide/code-snippets-schema-reference.md#import)|Élément facultatif. Contient les espaces de noms importés pour l'extrait de code. Un élément **Import** peut ne contenir aucun élément `Imports` ou en contenir plusieurs.|
+|[Élément Import](../ide/code-snippets-schema-reference.md#import)|Élément facultatif. Contient les espaces de noms importés pour l'extrait de code. Un élément **Import** peut ne contenir aucun élément `Imports` ou en contenir plusieurs.|
 
-|Parent, élément|Description|
+|Élément parent|Description|
 |--------------------|-----------------|
-|[Snippet, élément](../ide/code-snippets-schema-reference.md#snippet)|Contient les références, importations, déclarations et code de l'extrait de code.|
+|[Élément Snippet](../ide/code-snippets-schema-reference.md#snippet)|Contient les références, importations, déclarations et code de l'extrait de code.|
 
-## <a name="keyword"></a> Keyword, élément
+## <a name="keyword-element"></a><a name="keyword"></a> Keyword, élément
  Spécifie un mot clé personnalisé pour l'extrait de code. Les mots clés d'extrait de code sont utilisés par Visual Studio et représentent une manière standard pour les fournisseurs de contenu en ligne d'ajouter des mots clés personnalisés pour les recherches ou la catégorisation.
 
 ```xml
@@ -371,13 +371,13 @@ is a great color. I love Blue.
 </Keyword>
 ```
 
-|Parent, élément|Description|
+|Élément parent|Description|
 |--------------------|-----------------|
 |[Keywords, élément](../ide/code-snippets-schema-reference.md#keywords)|Groupe des éléments `Keyword` individuels.|
 
  Une valeur texte est requise. Mot clé pour l'extrait de code.
 
-## <a name="keywords"></a> Keywords, élément
+## <a name="keywords-element"></a><a name="keywords"></a>Keywords, élément
  Groupe des éléments `Keyword` individuels. Les mots clés d'extrait de code sont utilisés par Visual Studio et représentent une manière standard pour les fournisseurs de contenu en ligne d'ajouter des mots clés personnalisés pour les recherches ou la catégorisation.
 
 ```xml
@@ -391,11 +391,11 @@ is a great color. I love Blue.
 |-------------------|-----------------|
 |[Keyword, élément](../ide/code-snippets-schema-reference.md#keyword)|Élément facultatif. Contient les mots clés de l'extrait de code. Un élément `Keyword` peut ne contenir aucun élément `Keywords` ou en contenir plusieurs.|
 
-|Parent, élément|Description|
+|Élément parent|Description|
 |--------------------|-----------------|
 |[Header, élément](../ide/code-snippets-schema-reference.md#header)|Contient des informations générales sur l'extrait de code.|
 
-## <a name="literal"></a> Literal, élément
+## <a name="literal-element"></a><a name="literal"></a>Élément Literal
  Définit les littéraux de l'extrait de code que vous pouvez modifier. L'élément `Literal` est utilisé pour identifier le remplacement d'une partie de code entièrement contenue dans l'extrait de code, mais qui sera probablement personnalisée après avoir été insérée dans le code. Par exemple, les chaînes littérales, les valeurs numériques et certains noms de variables doivent être déclarés comme des littéraux.
 
  Les littéraux et les objets ne peuvent pas contenir d’élément **ID** avec la valeur selected ou end. La valeur `$selected$` représente le texte sélectionné dans le document qui sera inséré dans l'extrait de code lorsqu'il est appelé. `$end$` marque l'emplacement pour placer le curseur après insertion de l'extrait de code.
@@ -418,13 +418,13 @@ is a great color. I love Blue.
 |[Default, élément](../ide/code-snippets-schema-reference.md#default)|Élément requis. Spécifie la valeur par défaut du littéral lorsque vous insérez l'extrait de code. Un élément `Default` doit contenir exactement un élément `Literal`.|
 |[Function, élément](../ide/code-snippets-schema-reference.md#function)|Élément facultatif. Spécifie une fonction à exécuter lorsque le littéral reçoit le focus dans Visual Studio. Il peut y avoir zéro ou un élément `Function` dans un élément `Literal`.|
 |[ID, élément](../ide/code-snippets-schema-reference.md#id)|Élément requis. Spécifie l'identificateur unique du littéral. Un élément `ID` doit contenir exactement un élément `Literal`.|
-|[ToolTip, élément](../ide/code-snippets-schema-reference.md#tooltip)|Élément facultatif. Décrit la valeur attendue et l'utilisation du littéral. Un élément **peut contenir zéro ou un élément**Tooltip`Literal`.|
+|[ToolTip, élément](../ide/code-snippets-schema-reference.md#tooltip)|Élément facultatif. Décrit la valeur attendue et l'utilisation du littéral. Un élément ** peut contenir zéro ou un élément **Tooltip`Literal`.|
 
-|Parent, élément|Description|
+|Élément parent|Description|
 |--------------------|-----------------|
 |[Declarations, élément](../ide/code-snippets-schema-reference.md#declarations)|Contient les littéraux et les objets d'un extrait de code que vous pouvez modifier.|
 
-## <a name="namespace"></a> Namespace, élément
+## <a name="namespace-element"></a><a name="namespace"></a>Namespace, élément
  Spécifie l'espace de noms qui doit être importé pour compiler l'extrait de code et l'exécuter. L'espace de noms spécifié dans l'élément `Namespace` est ajouté automatiquement au début du code à une instruction `Imports`, s'il n'y figure pas déjà.
 
 > [!NOTE]
@@ -436,13 +436,13 @@ is a great color. I love Blue.
 </Namespace>
 ```
 
-|Parent, élément|Description|
+|Élément parent|Description|
 |--------------------|-----------------|
-|[Import, élément](../ide/code-snippets-schema-reference.md#import)|Importe l'espace de noms spécifié.|
+|[Élément Import](../ide/code-snippets-schema-reference.md#import)|Importe l'espace de noms spécifié.|
 
  Une valeur texte est requise. Ce texte spécifie un espace de noms que l'extrait de code considère comme importé.
 
-## <a name="object"></a> Object, élément
+## <a name="object-element"></a><a name="object"></a>Élément Object
  Définit les objets de l'extrait de code que vous pouvez modifier. L'élément `Object` est utilisé pour identifier un élément qui est requis par l'extrait de code, mais qui est vraisemblablement en dehors de l'extrait de code lui-même. Par exemple, les contrôles Windows Forms, les contrôles ASP.NET, les instances d'objet et les instances de type doivent être déclarées comme objets. Les déclarations d'objet requièrent qu'un type soit spécifié, ce qui est fait avec l'élément `Type`.
 
 ```xml
@@ -464,14 +464,14 @@ is a great color. I love Blue.
 |[Default, élément](../ide/code-snippets-schema-reference.md#default)|Élément requis. Spécifie la valeur par défaut du littéral lorsque vous insérez l'extrait de code. Un élément `Default` doit contenir exactement un élément `Literal`.|
 |[Function, élément](../ide/code-snippets-schema-reference.md#function)|Élément facultatif. Spécifie une fonction à exécuter lorsque le littéral reçoit le focus dans Visual Studio. Il peut y avoir zéro ou un élément `Function` dans un élément `Literal`.|
 |[ID, élément](../ide/code-snippets-schema-reference.md#id)|Élément requis. Spécifie l'identificateur unique du littéral. Un élément `ID` doit contenir exactement un élément `Literal`.|
-|[ToolTip, élément](../ide/code-snippets-schema-reference.md#tooltip)|Élément facultatif. Décrit la valeur attendue et l'utilisation du littéral. Un élément **peut contenir zéro ou un élément**Tooltip`Literal`.|
-|[Type, élément](../ide/code-snippets-schema-reference.md#type)|Élément requis. Spécifie le type de l'objet. Un élément `Type` doit contenir exactement un élément `Object`.|
+|[ToolTip, élément](../ide/code-snippets-schema-reference.md#tooltip)|Élément facultatif. Décrit la valeur attendue et l'utilisation du littéral. Un élément ** peut contenir zéro ou un élément **Tooltip`Literal`.|
+|[Élément type](../ide/code-snippets-schema-reference.md#type)|Élément requis. Spécifie le type de l'objet. Un élément `Type` doit contenir exactement un élément `Object`.|
 
-|Parent, élément|Description|
+|Élément parent|Description|
 |--------------------|-----------------|
 |[Declarations, élément](../ide/code-snippets-schema-reference.md#declarations)|Contient les littéraux et les objets d'un extrait de code que vous pouvez modifier.|
 
-## <a name="reference"></a> Reference, élément
+## <a name="reference-element"></a><a name="reference"></a> Reference, élément
  Spécifie des informations sur les références d'assembly requises par l'extrait de code.
 
 > [!NOTE]
@@ -486,14 +486,14 @@ is a great color. I love Blue.
 
 |Élément enfant|Description|
 |-------------------|-----------------|
-|[Assembly, élément](../ide/code-snippets-schema-reference.md#assembly)|Élément requis. Spécifie le nom de l'assembly référencé par l'extrait de code. Un élément `Assembly` doit contenir exactement un élément `Reference`.|
-|[Url, élément](../ide/code-snippets-schema-reference.md#url)|Élément facultatif. Contient une URL qui fournit plus d'informations sur l'assembly référencé. Il peut y avoir zéro ou un élément `Url` dans un élément `Reference`.|
+|[Élément Assembly](../ide/code-snippets-schema-reference.md#assembly)|Élément requis. Spécifie le nom de l'assembly référencé par l'extrait de code. Un élément `Assembly` doit contenir exactement un élément `Reference`.|
+|[Élément URL](../ide/code-snippets-schema-reference.md#url)|Élément facultatif. Contient une URL qui fournit plus d'informations sur l'assembly référencé. Il peut y avoir zéro ou un élément `Url` dans un élément `Reference`.|
 
-|Parent, élément|Description|
+|Élément parent|Description|
 |--------------------|-----------------|
 |[References, élément](../ide/code-snippets-schema-reference.md#references)|Élément de regroupement pour les éléments `Reference`.|
 
-## <a name="references"></a> References, élément
+## <a name="references-element"></a><a name="references"></a>References, élément
  Groupe des éléments `Reference` individuels.
 
 > [!NOTE]
@@ -509,11 +509,11 @@ is a great color. I love Blue.
 |-------------------|-----------------|
 |[Reference, élément](../ide/code-snippets-schema-reference.md#reference)|Élément facultatif. Contient des informations à propos des références d'assembly de l'extrait de code. Un élément `Reference` peut ne contenir aucun élément `References` ou en contenir plusieurs.|
 
-|Parent, élément|Description|
+|Élément parent|Description|
 |--------------------|-----------------|
-|[Snippet, élément](../ide/code-snippets-schema-reference.md#snippet)|Contient les références, importations, déclarations et code de l'extrait de code.|
+|[Élément Snippet](../ide/code-snippets-schema-reference.md#snippet)|Contient les références, importations, déclarations et code de l'extrait de code.|
 
-## <a name="shortcut"></a> Shortcut, élément
+## <a name="shortcut-element"></a><a name="shortcut"></a>Shortcut, élément
  Spécifie le texte de raccourci utilisé pour insérer l'extrait de code. La valeur texte d'un élément `Shortcut` peut contenir uniquement des signes alphanumériques, des traits d'union (-) et des traits de soulignement (_).
 
 > [!CAUTION]
@@ -525,13 +525,13 @@ is a great color. I love Blue.
 </Shortcut>
 ```
 
-|Parent, élément|Description|
+|Élément parent|Description|
 |--------------------|-----------------|
 |[Header, élément](../ide/code-snippets-schema-reference.md#header)|Contient des informations générales sur l'extrait de code.|
 
  Une valeur texte est facultative. Ce texte est utilisé comme raccourci pour insérer l'extrait de code.
 
-## <a name="snippet"></a> Snippet, élément
+## <a name="snippet-element"></a><a name="snippet"></a>Élément Snippet
  Spécifie les références, les importations, les déclarations et le code de l'extrait de code.
 
 ```xml
@@ -546,16 +546,16 @@ is a great color. I love Blue.
 
 |Élément enfant|Description|
 |-------------------|-----------------|
-|[Code, élément](../ide/code-snippets-schema-reference.md#code)|Élément requis. Spécifie le code que vous souhaitez insérer dans un fichier documentation. Un élément `Code` doit contenir exactement un élément `Snippet`.|
+|[Élément de code](../ide/code-snippets-schema-reference.md#code)|Élément requis. Spécifie le code que vous souhaitez insérer dans un fichier documentation. Un élément `Code` doit contenir exactement un élément `Snippet`.|
 |[Declarations, élément](../ide/code-snippets-schema-reference.md#declarations)|Élément facultatif. Spécifie les littéraux et les objets qui composent un extrait de code que vous pouvez modifier. Il peut y avoir zéro ou un élément `Declarations` dans un élément `Snippet`.|
 |[Imports, élément](../ide/code-snippets-schema-reference.md#imports)|Élément facultatif. Groupe des éléments `Import` individuels. Il peut y avoir zéro ou un élément `Imports` dans un élément `Snippet`.|
 ||Élément facultatif. Groupe des éléments `Reference` individuels. Il peut y avoir zéro ou un élément `References` dans un élément `Snippet`.|
 
-|Parent, élément|Description|
+|Élément parent|Description|
 |--------------------|-----------------|
 |[CodeSnippet, élément](../ide/code-snippets-schema-reference.md#codesnippet)|Vous permet de spécifier un titre et plusieurs extraits de code IntelliSense que vous pouvez insérer dans des fichiers de Visual Studio Code.|
 
-## <a name="snippettype"></a> SnippetType, élément
+## <a name="snippettype-element"></a><a name="snippettype"></a>SnippetType, élément
  Spécifie la manière dont Visual Studio insère l'extrait de code.
 
 ```xml
@@ -564,9 +564,9 @@ is a great color. I love Blue.
 <SnippetType>
 ```
 
-|Parent, élément|Description|
+|Élément parent|Description|
 |--------------------|-----------------|
-|[SnippetTypes, élément](../ide/code-snippets-schema-reference.md#snippettypes)|Groupe les éléments `SnippetType`.|
+|[Élément SnippetTypes,](../ide/code-snippets-schema-reference.md#snippettypes)|Groupe les éléments `SnippetType`.|
 
  Le texte doit avoir l'une des valeurs suivantes :
 
@@ -576,7 +576,7 @@ is a great color. I love Blue.
 
 - `Refactoring` : spécifie que l'extrait de code est utilisé pendant la refactorisation Visual C#. `Refactoring` ne peut pas être utilisé dans les extraits de code personnalisés.
 
-## <a name="snippettypes"></a> SnippetTypes, élément
+## <a name="snippettypes-element"></a><a name="snippettypes"></a> SnippetTypes, élément
  Groupe des éléments `SnippetType` individuels. Si l'élément `SnippetTypes` est absent, l'extrait de code peut être inséré n'importe où dans le code.
 
 ```xml
@@ -590,11 +590,11 @@ is a great color. I love Blue.
 |-------------------|-----------------|
 |[SnippetType, élément](../ide/code-snippets-schema-reference.md#snippettype)|Élément facultatif. Spécifie la manière dont Visual Studio insère l'extrait de code dans le code. Un élément `SnippetType` peut ne contenir aucun élément `SnippetTypes` ou en contenir plusieurs.|
 
-|Parent, élément|Description|
+|Élément parent|Description|
 |--------------------|-----------------|
 |[Header, élément](../ide/code-snippets-schema-reference.md#header)|Spécifie des informations générales sur l'extrait de code.|
 
-## <a name="title"></a> Title, élément
+## <a name="title-element"></a><a name="title"></a>Title, élément
  Spécifie le titre de l'extrait de code. Le titre stocké dans l’élément `Title` de l’extrait de code apparaît dans le **Sélecteur d’extraits de code**, ainsi que dans la description de l’extrait de code située dans le **Gestionnaire des extraits de code**.
 
 ```xml
@@ -603,13 +603,13 @@ is a great color. I love Blue.
 <Title>
 ```
 
-|Parent, élément|Description|
+|Élément parent|Description|
 |--------------------|-----------------|
 |[Header, élément](../ide/code-snippets-schema-reference.md#header)|Spécifie des informations générales sur l'extrait de code.|
 
  Une valeur texte est requise. Ce texte spécifie le titre de l'extrait de code.
 
-## <a name="tooltip"></a> ToolTip, élément
+## <a name="tooltip-element"></a><a name="tooltip"></a>ToolTip, élément
  Décrit la valeur attendue et l'utilisation d'un littéral ou d'un objet d'extrait de code que Visual Studio affiche dans une info-bulle lorsqu'il insère l'extrait de code dans un projet. Le texte d'Info-bulle est affiché lorsque la souris pointe sur le littéral ou sur l'objet après que l'extrait de code a été inséré.
 
 ```xml
@@ -618,14 +618,14 @@ is a great color. I love Blue.
 </ToolTip>
 ```
 
-|Parent, élément|Description|
+|Élément parent|Description|
 |--------------------|-----------------|
-|[Literal, élément](../ide/code-snippets-schema-reference.md#literal)|Définit les champs littéraux de l'extrait de code que vous pouvez modifier.|
+|[Élément Literal](../ide/code-snippets-schema-reference.md#literal)|Définit les champs littéraux de l'extrait de code que vous pouvez modifier.|
 |[Object, élément](../ide/code-snippets-schema-reference.md#object)|Définit les champs objet de l'extrait de code que vous pouvez modifier.|
 
  Une valeur texte est requise. Ce texte spécifie la description de l'info-bulle à associer à l'objet ou au littéral dans l'extrait de code.
 
-## <a name="type"></a> Type, élément
+## <a name="type-element"></a><a name="type"></a>Élément type
  Spécifie le type de l'objet. L'élément `Object` est utilisé pour identifier un élément qui est requis par l'extrait de code, mais qui est vraisemblablement en dehors de l'extrait de code lui-même. Par exemple, les contrôles Windows Forms, les contrôles ASP.NET, les instances d'objet et les instances de type doivent être déclarées comme objets. Les déclarations d'objet requièrent qu'un type soit spécifié, ce qui est fait avec l'élément `Type`.
 
 ```xml
@@ -634,13 +634,13 @@ is a great color. I love Blue.
 </Type>
 ```
 
-|Parent, élément|Description|
+|Élément parent|Description|
 |--------------------|-----------------|
 |[Object, élément](../ide/code-snippets-schema-reference.md#object)|Définit les champs objet de l'extrait de code que vous pouvez modifier.|
 
  Une valeur texte est requise. Ce texte spécifie le type de l'objet.
 
-## <a name="url"></a> Url, élément
+## <a name="url-element"></a><a name="url"></a>Élément URL
  Spécifie une URL qui fournit des informations supplémentaires sur l'assembly référencé.
 
 > [!NOTE]
@@ -652,11 +652,11 @@ is a great color. I love Blue.
 </Url>
 ```
 
-|Parent, élément|Description|
+|Élément parent|Description|
 |--------------------|-----------------|
 |[Reference, élément](../ide/code-snippets-schema-reference.md#reference)|Spécifie les références d'assembly requises par l'extrait de code.|
 
  Une valeur texte est requise. Ce texte spécifie une URL avec plus d'informations sur l'assembly référencé. Cette URL est affichée lorsque la référence ne peut pas être ajoutée au projet.
 
 ## <a name="see-also"></a>Voir aussi
- Les [extraits de Code](../ide/code-snippets.md) [Walkthrough : Création d’un extrait de code](../ide/walkthrough-creating-a-code-snippet.md)
+ [Code Snippets](../ide/code-snippets.md) [Procédures pas à pas des extraits de code : création d’un extrait de code](../ide/walkthrough-creating-a-code-snippet.md)

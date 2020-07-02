@@ -1,7 +1,7 @@
 ---
 title: Analyser et modéliser votre architecture
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: overview
 helpviewer_keywords:
 - diagrams - modeling
 - architecture
@@ -17,12 +17,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f0c9bbb0e98fe717e696aa974f4af5ba29de498e
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: e1db28867ea47752aa74b7898c44e797c0704594
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75590577"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85544220"
 ---
 # <a name="analyze-and-model-your-architecture"></a>Analyser et modéliser votre architecture
 
@@ -38,20 +38,20 @@ Voir [scénario : modifier votre conception à l’aide de la visualisation et 
 
 ## <a name="article-reference"></a>Référence de l’article
 
-|||
+|Scénario|Articles|
 |-|-|
-|**Visualiser du code**:<br /><br />-Consultez l’organisation et les relations du code en créant des cartes de code. Visualisez les dépendances entre les assemblys, les espaces de noms, les classes, les méthodes et ainsi de suite.<br />-Consultez la structure de classe et les membres d’un projet spécifique en créant des diagrammes de classes à partir du code.<br />-Recherchez des conflits entre votre code et sa conception en créant des diagrammes de dépendance pour valider le code.|- [Visualiser du code](../modeling/visualize-code.md)<br />- [utilisation des classes et d’autres types (Concepteur de classes)](../ide/class-designer/designing-and-viewing-classes-and-types.md)<br />[vidéo - : comprendre la conception à partir du code avec les cartes de code Visual Studio 2015](https://channel9.msdn.com/Events/Visual-Studio/Connect-event-2015/502)<br />- [vidéo : valider vos dépendances d’architecture en temps réel](https://sec.ch9.ms/sessions/69613110-c334-4f25-bb36-08e5a93456b5/170ValidateArchitectureDependenciesWithVisualStudio.mp4)|
-|**Définir l’architecture**:<br /><br />-Définir et appliquer des contraintes sur les dépendances entre les composants de votre code en créant des diagrammes de dépendance.|- [vidéo : valider les dépendances d’architecture avec Visual Studio (Channel 9)](https://channel9.msdn.com/Events/Connect/2016/170)|
-|**Valider votre système avec les spécifications et la conception prévue**<br /><br />-Validez les dépendances de code avec des diagrammes de dépendance qui décrivent l’architecture prévue et empêchez les modifications susceptibles d’entrer en conflit avec la conception.|- [vidéo : valider les dépendances d’architecture avec Visual Studio (Channel 9)](https://channel9.msdn.com/Events/Connect/2016/170)|
-|**Personnaliser des modèles et des diagrammes**:<br /><br />-Créez vos propres langages spécifiques à un domaine.|[Kit de développement logiciel (SDK) - Modeling pour Visual Studio-langages spécifiques](../modeling/modeling-sdk-for-visual-studio-domain-specific-languages.md) à un domaine|
-|**Générer du texte à l’aide de modèles T4**:<br /><br />-Utilisez des blocs de texte et une logique de contrôle à l’intérieur de modèles pour générer des fichiers texte.<br /> -Génération de modèle T4 avec MSBuild inclus dans Visual Studio|- la [génération de code et les modèles de texte T4](../modeling/code-generation-and-t4-text-templates.md)|
+|**Visualiser le code**:<br /><br />-Consultez l’organisation et les relations du code en créant des cartes de code. Visualisez les dépendances entre les assemblys, les espaces de noms, les classes, les méthodes et ainsi de suite.<br />-Consultez la structure de classe et les membres d’un projet spécifique en créant des diagrammes de classes à partir du code.<br />-Recherchez des conflits entre votre code et sa conception en créant des diagrammes de dépendance pour valider le code.|- [Visualiser le code](../modeling/visualize-code.md)<br />- [Utilisation des classes et d’autres types (Concepteur de classes)](../ide/class-designer/designing-and-viewing-classes-and-types.md)<br />- [Vidéo : comprendre la conception à partir du code avec les cartes de code Visual Studio 2015](https://channel9.msdn.com/Events/Visual-Studio/Connect-event-2015/502)<br />- [Vidéo : valider vos dépendances d’architecture en temps réel](https://sec.ch9.ms/sessions/69613110-c334-4f25-bb36-08e5a93456b5/170ValidateArchitectureDependenciesWithVisualStudio.mp4)|
+|**Définir l’architecture**:<br /><br />-Définir et appliquer des contraintes sur les dépendances entre les composants de votre code en créant des diagrammes de dépendance.|- [Vidéo : valider les dépendances d’architecture avec Visual Studio (Channel 9)](https://channel9.msdn.com/Events/Connect/2016/170)|
+|**Valider votre système avec les spécifications et la conception prévue**<br /><br />-Validez les dépendances de code avec des diagrammes de dépendance qui décrivent l’architecture prévue et empêchez les modifications susceptibles d’entrer en conflit avec la conception.|- [Vidéo : valider les dépendances d’architecture avec Visual Studio (Channel 9)](https://channel9.msdn.com/Events/Connect/2016/170)|
+|**Personnaliser des modèles et des diagrammes**:<br /><br />-Créez vos propres langages spécifiques à un domaine.|- [Kit de développement logiciel de modélisation pour Visual Studio-langages spécifiques à un domaine](../modeling/modeling-sdk-for-visual-studio-domain-specific-languages.md)|
+|**Générer du texte à l’aide de modèles T4**:<br /><br />-Utilisez des blocs de texte et une logique de contrôle à l’intérieur de modèles pour générer des fichiers texte.<br /> -Génération de modèle T4 avec MSBuild inclus dans Visual Studio|- [Génération de code et modèles de texte T4](../modeling/code-generation-and-t4-text-templates.md)|
 |**Partager des modèles, des diagrammes et des cartes de code à l’aide du contrôle de version Team Foundation**:<br /><br />-Placez des cartes de code, des projets et des diagrammes de dépendance sous le contrôle de version Team Foundation afin de pouvoir les partager.| |
 
 Pour connaître les éditions de Visual Studio qui prennent en charge chaque fonctionnalité, consultez la page [prise en charge d’édition pour les outils d’architecture et de modélisation](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)
 
 ## <a name="types-of-models-and-typical-uses"></a>Types de modèles et utilisations classiques
 
-### <a name="code-maps"></a>Cartes du code
+### <a name="code-maps"></a>Cartes de code
 
 Les cartes de code vous aident à voir l’organisation et les relations dans votre code.
 
@@ -59,7 +59,7 @@ Les cartes de code vous aident à voir l’organisation et les relations dans vo
 
 - Examiner le code de programme pour mieux comprendre sa structure et ses dépendances, la manière de le mettre à jour, puis estimer le coût des modifications proposées.
 
-**Consultez les pages suivantes :**
+**Verr**
 
 - [Mapper les dépendances à travers vos solutions](../modeling/map-dependencies-across-your-solutions.md)
 - [Utiliser des cartes du code pour déboguer vos applications](../modeling/use-code-maps-to-debug-your-applications.md)
@@ -74,11 +74,11 @@ Les diagrammes de dépendance vous permettent de définir la structure d’une a
 - Stabiliser la structure de l’application au moyen de nombreuses modifications pendant sa durée de vie.
 - Détecter les conflits de dépendance involontaires avant d’archiver les modifications apportées au code.
 
-**Consultez les pages suivantes :**
+**Verr**
 
 - [Créer des diagrammes de dépendance à partir de votre code](../modeling/create-layer-diagrams-from-your-code.md)
 - [Diagrammes de dépendance : référence](../modeling/layer-diagrams-reference.md)
-- [Validation du code avec des diagrammes de dépendance](../modeling/validate-code-with-layer-diagrams.md)
+- [Valider du code avec des diagrammes de dépendance](../modeling/validate-code-with-layer-diagrams.md)
 
 ### <a name="domain-specific-language-dsl"></a>Langage spécifique à un domaine (DSL)
 
@@ -89,7 +89,7 @@ Un langage spécifique à un domaine est une notation que vous concevez dans un 
 - Générer ou configurer certaines parties de l’application. Un travail est requis pour développer la notation et les outils. Le résultat est ainsi plus adapté à votre domaine qu’une personnalisation UML.
 - Pour les grands projets ou dans les lignes de produits où l’investissement effectué dans le développement du langage spécifique à un domaine et ses outils est amorti par son utilisation dans plusieurs projets.
 
-**Consultez les pages suivantes :**
+**Verr**
 
 - [SDK de modélisation pour Visual Studio - Langages spécifiques à un domaine](../modeling/modeling-sdk-for-visual-studio-domain-specific-languages.md)
 

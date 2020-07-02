@@ -2,7 +2,7 @@
 title: Sélectionner et installer les interpréteurs Python
 description: La liste complète des interpréteurs Python pris en charge dans Visual Studio, accompagnée d’instructions brèves pour trouver les programmes d’installation associés.
 ms.date: 06/05/2019
-ms.topic: conceptual
+ms.topic: how-to
 author: JoshuaPartlow
 ms.author: joshuapa
 manager: jillfra
@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 13290aef7acfe599c7693af4be771c625e713596
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: fb1c657789e232307672d494710f330758780a67
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75735816"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85540723"
 ---
 # <a name="install-python-interpreters"></a>Installer les interpréteurs Python
 
@@ -32,7 +32,7 @@ Vous pouvez également installer manuellement l’un des interpréteurs figurant
 > Visual Studio prend en charge Python version 2.7, ainsi que la version 3.5 et les versions ultérieures. Bien qu’il soit possible d’utiliser Visual Studio pour modifier le code écrit dans d’autres versions de Python, ces versions ne sont pas officiellement prises en charge et des fonctionnalités comme IntelliSense et le débogage peuvent ne pas fonctionner.
 ::: moniker-end
 
-Pour **Visual Studio 2015 et plus tôt,** vous devez installer manuellement l’un des interprètes.
+Pour **Visual Studio 2015 et versions antérieures**, vous devez installer manuellement l’un des interpréteurs.
 
 Visual Studio (toutes versions) détecte automatiquement chacun des interpréteurs Python installés et l’environnement associé en consultant le Registre (conformément à [PEP 514 – Inscription de Python dans le Registre Windows](https://www.python.org/dev/peps/pep-0514/)). Les installations de Python se trouvent généralement sous **HKEY_LOCAL_MACHINE\SOFTWARE\Python** (32 bits) et **HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Python** (64 bits), puis dans les nœuds correspondant à la distribution (par exemple, **PythonCore** pour CPython et **ContinuumAnalytics** pour Anaconda).
 

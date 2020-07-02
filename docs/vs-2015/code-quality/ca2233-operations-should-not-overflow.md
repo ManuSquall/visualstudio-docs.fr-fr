@@ -15,17 +15,17 @@ caps.latest.revision: 21
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 70a0bab8cfb3bf14a763f759e0e44a754ad878d8
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: eff09fb8f4423560c4681c94507d909f5864c69e
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72662776"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85545234"
 ---
-# <a name="ca2233-operations-should-not-overflow"></a>CA2233 : Les opérations ne doivent pas déborder
+# <a name="ca2233-operations-should-not-overflow"></a>CA2233 : Les opérations ne doivent pas déborder
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Élément|Valeur|
 |-|-|
 |TypeName|OperationsShouldNotOverflow|
 |CheckId|CA2233|
@@ -36,7 +36,7 @@ ms.locfileid: "72662776"
  Une méthode effectue une opération arithmétique et ne valide pas les opérandes au préalable pour empêcher un dépassement de capacité.
 
 ## <a name="rule-description"></a>Description de la règle
- Les opérations arithmétiques ne doivent pas être effectuées sans valider au préalable les opérandes pour s’assurer que le résultat de l’opération n’est pas en dehors de la plage de valeurs possibles pour les types de données impliqués. En fonction du contexte d’exécution et des types de données impliqués, le dépassement arithmétique peut aboutir à un <xref:System.OverflowException?displayProperty=fullName> ou aux bits les plus significatifs du résultat rejeté.
+ Les opérations arithmétiques ne doivent pas être effectuées sans valider au préalable les opérandes pour s’assurer que le résultat de l’opération n’est pas en dehors de la plage de valeurs possibles pour les types de données impliqués. En fonction du contexte d’exécution et des types de données impliqués, le dépassement de capacité arithmétique peut entraîner la suppression de l’un <xref:System.OverflowException?displayProperty=fullName> ou des bits les plus significatifs du résultat.
 
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations
  Pour corriger une violation de cette règle, validez les opérandes avant d’effectuer l’opération.
@@ -47,14 +47,14 @@ ms.locfileid: "72662776"
 ## <a name="example-of-a-violation"></a>Exemple de violation
 
 ### <a name="description"></a>Description
- Une méthode dans l’exemple suivant manipule un entier qui enfreint cette règle. [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] nécessite la désactivation de l’option **supprimer** le dépassement sur les entiers pour qu’elle se déclenche.
+ Une méthode dans l’exemple suivant manipule un entier qui enfreint cette règle. [!INCLUDE[vbprvb](../includes/vbprvb-md.md)]nécessite la désactivation de l’option **supprimer** le dépassement sur les entiers pour qu’elle soit déclenchée.
 
 ### <a name="code"></a>Code
  [!code-csharp[FxCop.Usage.OperationOverflow#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Usage.OperationOverflow/cs/FxCop.Usage.OperationOverflow.cs#1)]
  [!code-vb[FxCop.Usage.OperationOverflow#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Usage.OperationOverflow/vb/FxCop.Usage.OperationOverflow.vb#1)]
 
-### <a name="comments"></a>Comments
- Si la méthode dans cet exemple est passée <xref:System.Int32.MinValue?displayProperty=fullName>, l’opération est dépassée. Le bit le plus significatif du résultat est alors ignoré. Le code suivant montre comment cela se produit.
+### <a name="comments"></a>Commentaires
+ Si la méthode dans cet exemple est passée <xref:System.Int32.MinValue?displayProperty=fullName> , l’opération est dépassée. Le bit le plus significatif du résultat est alors ignoré. Le code suivant montre comment cela se produit.
 
  [C#]
 
@@ -77,7 +77,7 @@ Public Shared Sub Main()
 End Sub
 ```
 
-### <a name="output"></a>Sortie
+### <a name="output"></a>Output
 
 ```
 2147483647
@@ -95,17 +95,17 @@ End Sub
 ## <a name="fix-with-a-checked-block"></a>Corriger avec un bloc Checked
 
 ### <a name="description"></a>Description
- L’exemple suivant résout la violation précédente en encapsulant l’opération dans un bloc Checked. Si l’opération provoque un dépassement de capacité, une <xref:System.OverflowException?displayProperty=fullName> sera levée.
+ L’exemple suivant résout la violation précédente en encapsulant l’opération dans un bloc Checked. Si l’opération provoque un dépassement de capacité, une <xref:System.OverflowException?displayProperty=fullName> est levée.
 
- Notez que les blocs activés ne sont pas pris en charge dans [!INCLUDE[vbprvb](../includes/vbprvb-md.md)].
+ Notez que les blocs vérifiés ne sont pas pris en charge dans [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] .
 
 ### <a name="code"></a>Code
  [!code-csharp[FxCop.Usage.OperationOverflowChecked#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Usage.OperationOverflowChecked/cs/FxCop.Usage.OperationOverflowChecked.cs#1)]
 
 ## <a name="turn-on-checked-arithmetic-overflowunderflow"></a>Activer le dépassement de capacité positif/négatif activé
- Si vous activez la case à cocher ou le dépassement C#de capacité positif, il est équivalent à l’encapsulation de chaque opération entière dans un bloc Checked.
+ Si vous activez la case à cocher de dépassement de capacité positif ou de dépassement de capacité négatif en C#, cela revient à encapsuler chaque opération entière dans un bloc Checked.
 
- **Pour activer le dépassement de capacité positif/négatif activé dansC#**
+ **Pour activer le dépassement de capacité positif ou négatif de la case à cocher en C #**
 
 1. Dans **Explorateur de solutions**, cliquez avec le bouton droit sur votre projet et choisissez **Propriétés**.
 
@@ -114,4 +114,4 @@ End Sub
 3. Sélectionnez **vérifier les dépassements de capacité arithmétiques/négatifs** , puis cliquez sur **OK**.
 
 ## <a name="see-also"></a>Voir aussi
- [ C# opérateurs](https://msdn.microsoft.com/library/0301e31f-22ad-49af-ac3c-d5eae7f0ac43) [de <xref:System.OverflowException?displayProperty=fullName> activés et désactivés](https://msdn.microsoft.com/library/a84bc877-2c7f-4396-8735-1ce97c42f35e)
+ <xref:System.OverflowException?displayProperty=fullName>[Opérateurs C#](https://msdn.microsoft.com/library/0301e31f-22ad-49af-ac3c-d5eae7f0ac43) [activés et désactivés](https://msdn.microsoft.com/library/a84bc877-2c7f-4396-8735-1ce97c42f35e)

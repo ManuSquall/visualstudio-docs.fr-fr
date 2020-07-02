@@ -15,17 +15,17 @@ caps.latest.revision: 20
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: f59a1c88701cf132a46c66eb6550f03eb870d63d
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 1e753083e9b4bda1e33553021ccb0027a2af2533
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72669176"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85544012"
 ---
-# <a name="ca1711-identifiers-should-not-have-incorrect-suffix"></a>CA1711 : Les identificateurs ne doivent pas porter un suffixe incorrect
+# <a name="ca1711-identifiers-should-not-have-incorrect-suffix"></a>CA1711 : Les identificateurs ne doivent pas porter un suffixe incorrect
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Élément|Valeur|
 |-|-|
 |TypeName|IdentifiersShouldNotHaveIncorrectSuffix|
 |CheckId|CA1711|
@@ -44,20 +44,20 @@ ms.locfileid: "72669176"
 |------------|--------------------------|
 |Attribut|<xref:System.Attribute?displayProperty=fullName>|
 |Collection|<xref:System.Collections.ICollection?displayProperty=fullName><br /><br /> <xref:System.Collections.IEnumerable?displayProperty=fullName><br /><br /> <xref:System.Collections.Queue?displayProperty=fullName><br /><br /> <xref:System.Collections.Stack?displayProperty=fullName><br /><br /> <xref:System.Collections.Generic.ICollection%601?displayProperty=fullName><br /><br /> <xref:System.Data.DataSet?displayProperty=fullName><br /><br /> <xref:System.Data.DataTable?displayProperty=fullName>|
-|Dictionary|<xref:System.Collections.IDictionary?displayProperty=fullName><br /><br /> <xref:System.Collections.Generic.IDictionary%602?displayProperty=fullName>|
+|Dictionnaire|<xref:System.Collections.IDictionary?displayProperty=fullName><br /><br /> <xref:System.Collections.Generic.IDictionary%602?displayProperty=fullName>|
 |EventArgs|<xref:System.EventArgs?displayProperty=fullName>|
 |Délégué|Délégué de gestionnaire d’événements|
 |Exception|<xref:System.Exception?displayProperty=fullName>|
 |Autorisation|<xref:System.Security.IPermission?displayProperty=fullName>|
 |File d'attente|<xref:System.Collections.Queue?displayProperty=fullName>|
-|Stack|<xref:System.Collections.Stack?displayProperty=fullName>|
-|Flux|<xref:System.IO.Stream?displayProperty=fullName>|
+|Pile|<xref:System.Collections.Stack?displayProperty=fullName>|
+|STREAM|<xref:System.IO.Stream?displayProperty=fullName>|
 
  En outre, les suffixes suivants ne doivent **pas** être utilisés :
 
-- délégué
+- Délégué
 
-- Enum
+- Énumération
 
 - Impl : utilisez’Core’à la place
 
@@ -72,7 +72,7 @@ ms.locfileid: "72669176"
  Ne supprimez pas un avertissement de cette règle, sauf si le suffixe a une signification non ambiguë dans le domaine d’application.
 
 ## <a name="related-rules"></a>Règles associées
- [CA1710 : Les identificateurs doivent avoir un suffixe correct](../code-quality/ca1710-identifiers-should-have-correct-suffix.md)
+ [CA1710 : Les identificateurs doivent être dotés d'un suffixe correct](../code-quality/ca1710-identifiers-should-have-correct-suffix.md)
 
 ## <a name="see-also"></a>Voir aussi
  Plume d' [attributs](https://msdn.microsoft.com/library/ee0038ef-b247-4747-a650-3c5c5cd58d8b) [: événements et délégués](https://msdn.microsoft.com/d98fd58b-fa4f-4598-8378-addf4355a115)

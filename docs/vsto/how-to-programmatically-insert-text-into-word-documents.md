@@ -1,7 +1,7 @@
 ---
-title: 'Procédure : Insérer du texte dans des documents Word par programmation'
+title: 'Comment : insérer du texte dans des documents Word par programmation'
 ms.date: 08/14/2019
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -16,14 +16,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 8ff5e0314e9834bd3d0f048bc82780d7e4af073d
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.openlocfilehash: aef597099964333771fd488e0541b4ea4daf4553
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69551804"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85541503"
 ---
-# <a name="how-to-programmatically-insert-text-into-word-documents"></a>Procédure : Insérer du texte dans des documents Word par programmation
+# <a name="how-to-programmatically-insert-text-into-word-documents"></a>Comment : insérer du texte dans des documents Word par programmation
   Il existe trois principaux moyens pour insérer du texte dans des documents Microsoft Office Word :
 
 - insérer du texte dans une plage ;
@@ -46,7 +46,7 @@ ms.locfileid: "69551804"
 
 1. Spécifiez une plage au début d’un document et insérer le texte **New Text**.
 
-     Vous pouvez utiliser l’exemple de code suivant dans une personnalisation au niveau du document.
+     L'exemple de code suivant peut être utilisé dans une personnalisation au niveau du document.
 
      [!code-vb[Trin_VstcoreWordAutomation#51](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#51)]
      [!code-csharp[Trin_VstcoreWordAutomation#51](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#51)]
@@ -68,7 +68,7 @@ ms.locfileid: "69551804"
 
 1. Créez un objet <xref:Microsoft.Office.Interop.Word.Range> comprenant les 12 premiers caractères du document.
 
-     Vous pouvez utiliser l’exemple de code suivant dans une personnalisation au niveau du document.
+     L'exemple de code suivant peut être utilisé dans une personnalisation au niveau du document.
 
      [!code-vb[Trin_VstcoreWordAutomation#53](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#53)]
      [!code-csharp[Trin_VstcoreWordAutomation#53](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#53)]
@@ -93,7 +93,7 @@ ms.locfileid: "69551804"
 
 ### <a name="to-insert-text-using-the-typetext-method"></a>Pour insérer du texte à l'aide de la méthode TypeText
 
-1. Déclarez une variable objet <xref:Microsoft.Office.Interop.Word.Selection> .
+1. Déclarez une variable objet <xref:Microsoft.Office.Interop.Word.Selection>,
 
     [!code-vb[Trin_VstcoreWordAutomation#57](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#57)]
     [!code-csharp[Trin_VstcoreWordAutomation#57](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#57)]
@@ -128,6 +128,6 @@ ms.locfileid: "69551804"
    [!code-csharp[Trin_VstcoreWordAutomation#56](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#56)]
 
 ## <a name="see-also"></a>Voir aussi
-- [Guide pratique pour Mettre en forme du texte dans des documents par programmation](../vsto/how-to-programmatically-format-text-in-documents.md)
-- [Guide pratique pour Définir et sélectionner des plages dans les documents par programmation](../vsto/how-to-programmatically-define-and-select-ranges-in-documents.md)
-- [Guide pratique : Étendre des plages dans les documents par programmation](../vsto/how-to-programmatically-extend-ranges-in-documents.md)
+- [Comment : mettre en forme du texte dans des documents par programmation](../vsto/how-to-programmatically-format-text-in-documents.md)
+- [Comment : définir et sélectionner des plages dans les documents par programmation](../vsto/how-to-programmatically-define-and-select-ranges-in-documents.md)
+- [Comment : étendre des plages dans des documents par programmation](../vsto/how-to-programmatically-extend-ranges-in-documents.md)

@@ -1,7 +1,7 @@
 ---
-title: 'Procédure : Configurer la sécurité de liste d’inclusion'
+title: 'Comment : configurer la sécurité de la liste d’inclusion'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -13,46 +13,46 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ef4d25088e56f2223cb392dbc00c8454e1a291ed
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 459cf3f33197939a916a5f11a94bbaf09e8142e3
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62826377"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85541633"
 ---
-# <a name="how-to-configure-inclusion-list-security"></a>Procédure : Configurer la sécurité de liste d’inclusion
-  Si vous disposez des autorisations d’administrateur, vous pouvez configurer le [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] invite d’approbation pour contrôler si les utilisateurs finaux reçoivent la possibilité d’installer les solutions Office en enregistrant une décision d’approbation dans la liste d’inclusion. Pour plus d’informations sur les listes d’inclusion, consultez [solutions Office faire confiance à l’aide de listes d’inclusion](../vsto/trusting-office-solutions-by-using-inclusion-lists.md).
+# <a name="how-to-configure-inclusion-list-security"></a>Comment : configurer la sécurité de la liste d’inclusion
+  Si vous disposez d’autorisations d’administrateur, vous pouvez configurer l' [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] invite d’approbation pour contrôler si les utilisateurs finaux ont la possibilité d’installer des solutions Office en enregistrant une décision d’approbation dans la liste d’inclusion. Pour plus d’informations sur les listes d’inclusion, consultez [approuver des solutions Office à l’aide de listes d’inclusion](../vsto/trusting-office-solutions-by-using-inclusion-lists.md).
 
  [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]
 
  Pour les solutions qui se trouvent dans chacune des cinq zones, vous pouvez définir les options suivantes :
 
-- Activer la [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] clé d’invite d’approbation et de la liste d’inclusion. Vous pouvez autoriser les utilisateurs finaux d’approuver des solutions Office qui sont signés avec n’importe quel certificat.
+- Activez la [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] clé d’invite d’approbation et la liste d’inclusion. Vous pouvez autoriser les utilisateurs finaux à accorder un niveau de confiance à des solutions Office signées avec n’importe quel certificat.
 
-- Restreindre la [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] clé d’invite d’approbation et de la liste d’inclusion. Vous pouvez autoriser les utilisateurs finaux installer les solutions Office signées avec un certificat qui identifie le serveur de publication, mais qui n’est pas approuvé.
+- Limitez la [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] clé d’invite d’approbation et la liste d’inclusion. Vous pouvez autoriser les utilisateurs finaux à installer des solutions Office signées avec un certificat qui identifie le serveur de publication, mais qui n’est pas déjà approuvé.
 
-- Désactiver la [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] clé d’invite d’approbation et de la liste d’inclusion. Vous pouvez empêcher les utilisateurs finaux à partir de l’installation de toute solution Office qui n’est pas signée avec un certificat explicitement approuvé.
+- Désactivez la [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] clé d’invite d’approbation et la liste d’inclusion. Vous pouvez empêcher les utilisateurs finaux d’installer une solution Office qui n’est pas signée avec un certificat explicitement approuvé.
 
 ## <a name="enable-the-inclusion-list"></a>Activer la liste d’inclusion
- Activer la liste d’inclusion d’une zone lorsque vous souhaitez que les utilisateurs finaux aient la possibilité d’installer et exécuter les solutions Office provenant de cette zone.
+ Activez la liste d’inclusion pour une zone lorsque vous souhaitez que les utilisateurs finaux aient la possibilité d’installer et d’exécuter une solution Office provenant de cette zone.
 
-### <a name="to-enable-the-inclusion-list-by-using-the-registry-editor"></a>Pour activer la liste d’inclusion à l’aide de l’Éditeur du Registre
+### <a name="to-enable-the-inclusion-list-by-using-the-registry-editor"></a>Pour activer la liste d’inclusion à l’aide de l’éditeur du Registre
 
-1. Ouvrez l’Éditeur du Registre :
+1. Ouvrez l’éditeur du Registre :
 
-    1. Cliquez sur **Démarrer** puis sur **Exécuter**.
+    1. Cliquez sur **Démarrer**, puis sur **Exécuter**.
 
-    2. Dans le **Open** , tapez **regedt32.exe**, puis cliquez sur **OK**.
+    2. Dans la zone **ouvrir** , tapez **regedt32.exe**, puis cliquez sur **OK**.
 
 2. Recherchez la clé de Registre suivante :
 
-     **\HKEY_LOCAL_MACHINE\SOFTWARE\MICROSOFT\\. NETFramework\Security\TrustManager\PromptingLevel**
+     **\ HKEY_LOCAL_MACHINE \SOFTWARE\MICROSOFT \\ . NETFramework\Security\TrustManager\PromptingLevel**
 
-     Si la clé n’existe pas, créez-le.
+     Si la clé n’existe pas, créez-la.
 
-3. Ajoutez les sous-clés suivantes en tant que **valeur de chaîne**, si elles n’existent pas déjà, avec les valeurs associées.
+3. Ajoutez les sous-clés suivantes comme **valeur de chaîne**, si elles n’existent pas déjà, avec les valeurs associées.
 
-    |Sous-clé de valeur de chaîne|Value|
+    |Sous-clé de valeur de chaîne|Valeur|
     |-------------------------|-----------|
     |**Internet**|**AuthenticodeRequired**|
     |**UntrustedSites**|**Désactivé**|
@@ -60,13 +60,13 @@ ms.locfileid: "62826377"
     |**LocalIntranet**|**Activé**|
     |**TrustedSites**|**Activé**|
 
-     Par défaut, **Internet** a la valeur **AuthenticodeRequired** et **UntrustedSites** a la valeur **désactivé**.
+     Par défaut, **Internet** a la valeur **AuthenticodeRequired** et **UntrustedSites** a la valeur **Disabled**.
 
 ### <a name="to-enable-the-inclusion-list-programmatically"></a>Pour activer la liste d’inclusion par programmation
 
-1. Créer une application console Visual Basic ou Visual c#.
+1. Créez une application console Visual Basic ou Visual C#.
 
-2. Ouvrez le *Program.vb* ou *Program.cs* fichier pour le modifier, puis ajoutez le code suivant.
+2. Ouvrez le fichier *Program. vb* ou *Program.cs* pour le modifier, puis ajoutez le code suivant.
 
     ```vb
     Dim key As Microsoft.Win32.RegistryKey
@@ -93,25 +93,25 @@ ms.locfileid: "62826377"
 3. Générez et exécutez l’application.
 
 ## <a name="restrict-the-inclusion-list"></a>Restreindre la liste d’inclusion
- Limiter la liste d’inclusion de sorte que les solutions doivent être signées avec des certificats Authenticode dont l’identité est connue avant que les utilisateurs soient invités à une décision d’approbation.
+ Limitez la liste d’inclusion afin que les solutions doivent être signées avec des certificats Authenticode dont l’identité est connue avant que les utilisateurs ne soient invités à prendre une décision d’approbation.
 
-### <a name="to-restrict-the-inclusion-list"></a>Pour restreindre la liste d’inclusion
+### <a name="to-restrict-the-inclusion-list"></a>Pour limiter la liste d’inclusion
 
-1. Ouvrez l’Éditeur du Registre :
+1. Ouvrez l’éditeur du Registre :
 
-    1. Cliquez sur **Démarrer** puis sur **Exécuter**.
+    1. Cliquez sur **Démarrer**, puis sur **Exécuter**.
 
-    2. Dans le **Open** , tapez **regedt32.exe**, puis cliquez sur **OK**.
+    2. Dans la zone **ouvrir** , tapez **regedt32.exe**, puis cliquez sur **OK**.
 
 2. Recherchez la clé de Registre suivante :
 
-     **\HKEY_LOCAL_MACHINE\SOFTWARE\MICROSOFT\\. NETFramework\Security\TrustManager\PromptingLevel**
+     **\ HKEY_LOCAL_MACHINE \SOFTWARE\MICROSOFT \\ . NETFramework\Security\TrustManager\PromptingLevel**
 
-     Si la clé n’existe pas, créez-le.
+     Si la clé n’existe pas, créez-la.
 
-3. Ajoutez les sous-clés suivantes en tant que **valeur de chaîne**, si elles n’existent pas déjà, avec les valeurs associées.
+3. Ajoutez les sous-clés suivantes comme **valeur de chaîne**, si elles n’existent pas déjà, avec les valeurs associées.
 
-    |Sous-clé de valeur de chaîne|Value|
+    |Sous-clé de valeur de chaîne|Valeur|
     |-------------------------|-----------|
     |**UntrustedSites**|**Désactivé**|
     |**Internet**|**AuthenticodeRequired**|
@@ -119,13 +119,13 @@ ms.locfileid: "62826377"
     |**LocalIntranet**|**AuthenticodeRequired**|
     |**TrustedSites**|**AuthenticodeRequired**|
 
-     Par défaut, **Internet** a la valeur **AuthenticodeRequired** et **UntrustedSites** a la valeur **désactivé**.
+     Par défaut, **Internet** a la valeur **AuthenticodeRequired** et **UntrustedSites** a la valeur **Disabled**.
 
-### <a name="to-restrict-the-inclusion-list-programmatically"></a>Pour restreindre la liste d’inclusion par programmation
+### <a name="to-restrict-the-inclusion-list-programmatically"></a>Pour limiter la liste d’inclusion par programmation
 
-1. Créer une application console Visual Basic ou Visual c#.
+1. Créez une application console Visual Basic ou Visual C#.
 
-2. Ouvrez le *Program.vb* ou *Program.cs* fichier pour le modifier, puis ajoutez le code suivant.
+2. Ouvrez le fichier *Program. vb* ou *Program.cs* pour le modifier, puis ajoutez le code suivant.
 
     ```vb
     Dim key As Microsoft.Win32.RegistryKey
@@ -152,23 +152,23 @@ ms.locfileid: "62826377"
 3. Générez et exécutez l’application.
 
 ## <a name="disable-the-inclusion-list"></a>Désactiver la liste d’inclusion
- Vous pouvez désactiver la liste d’inclusion afin que les utilisateurs finaux peuvent installer uniquement les solutions qui sont signées avec un certificat approuvé et connu.
+ Vous pouvez désactiver la liste d’inclusion afin que les utilisateurs finaux puissent uniquement installer les solutions signées avec un certificat approuvé et connu.
 
 ### <a name="to-disable-the-inclusion-list"></a>Pour désactiver la liste d’inclusion
 
-1. Ouvrez l’Éditeur du Registre :
+1. Ouvrez l’éditeur du Registre :
 
-    1. Cliquez sur **Démarrer** puis sur **Exécuter**.
+    1. Cliquez sur **Démarrer**, puis sur **Exécuter**.
 
-    2. Dans le **Open** , tapez **regedt32.exe**, puis cliquez sur **OK**.
+    2. Dans la zone **ouvrir** , tapez **regedt32.exe**, puis cliquez sur **OK**.
 
-2. Créez la clé de Registre suivante si cela n’existe pas déjà :
+2. Créez la clé de Registre suivante si elle n’existe pas déjà :
 
-     **\HKEY_LOCAL_MACHINE\SOFTWARE\MICROSOFT\\. NETFramework\Security\TrustManager\PromptingLevel**
+     **\ HKEY_LOCAL_MACHINE \SOFTWARE\MICROSOFT \\ . NETFramework\Security\TrustManager\PromptingLevel**
 
-3. Ajoutez les sous-clés suivantes en tant que **valeur de chaîne**, si elles n’existent pas déjà, avec les valeurs associées.
+3. Ajoutez les sous-clés suivantes comme **valeur de chaîne**, si elles n’existent pas déjà, avec les valeurs associées.
 
-    |Sous-clé de valeur de chaîne|Value|
+    |Sous-clé de valeur de chaîne|Valeur|
     |-------------------------|-----------|
     |**UntrustedSites**|**Désactivé**|
     |**Internet**|**Désactivé**|
@@ -178,9 +178,9 @@ ms.locfileid: "62826377"
 
 ### <a name="to-disable-the-inclusion-list-programmatically"></a>Pour désactiver la liste d’inclusion par programmation
 
-1. Créer une application console Visual Basic ou Visual c#.
+1. Créez une application console Visual Basic ou Visual C#.
 
-2. Ouvrez le *Program.vb* ou *Program.cs* fichier pour le modifier, puis ajoutez le code suivant.
+2. Ouvrez le fichier *Program. vb* ou *Program.cs* pour le modifier, puis ajoutez le code suivant.
 
     ```vb
     Dim key As Microsoft.Win32.RegistryKey
@@ -209,4 +209,4 @@ ms.locfileid: "62826377"
 
 ## <a name="see-also"></a>Voir aussi
 - [Approuver des solutions Office à l’aide de listes d’inclusion](../vsto/trusting-office-solutions-by-using-inclusion-lists.md)
-- [Sécurisez les solutions Office](../vsto/securing-office-solutions.md)
+- [Sécuriser les solutions Office](../vsto/securing-office-solutions.md)

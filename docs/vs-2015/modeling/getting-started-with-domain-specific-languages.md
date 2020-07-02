@@ -9,12 +9,12 @@ caps.latest.revision: 18
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: c7e8ca0fa1558ce0a2d37d4e11a35ba10a27fd2d
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.openlocfilehash: 6fe720b380133d15f9bc60485896d4b7acbf2c4b
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/13/2020
-ms.locfileid: "75919080"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85543193"
 ---
 # <a name="getting-started-with-domain-specific-languages"></a>Mise en route des langages spécifiques à un domaine
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -24,27 +24,27 @@ Cette rubrique explique les concepts de base de la définition et de l’utilisa
 ## <a name="what-can-you-do-with-a-domain-specific-language"></a>Que pouvez-vous faire avec un langage spécifique à un domaine ?
  Un langage spécifique à un domaine est une notation, généralement graphique, conçue pour être utilisée à des fins particulières. En revanche, les langages tels que UML sont à usage général. Dans une solution DSL, vous pouvez définir les types d’élément de modèle et leurs relations, et la façon dont ils sont présentés à l’écran.
 
- Lorsque vous avez conçu une solution DSL, vous pouvez la distribuer dans le cadre d’un package d’extension d’intégration Visual Studio (VSIX). Les utilisateurs travaillent avec la solution DSL dans [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]:
+ Lorsque vous avez conçu une solution DSL, vous pouvez la distribuer dans le cadre d’un package d’extension d’intégration Visual Studio (VSIX). Les utilisateurs travaillent avec la solution DSL dans [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] :
 
- ![Diagramme de l’arborescence des familles, boîte à outils et Explorateur](../modeling/media/familyt-instance.png "FamilyT_Instance")
+ ![Diagramme d'arbre généalogique, boîte à outils et explorateur](../modeling/media/familyt-instance.png "FamilyT_Instance")
 
  La notation n’est qu’une partie d’une DSL. Avec la notation, votre package VSIX comprend des outils que les utilisateurs peuvent appliquer pour les aider à modifier et à générer des documents à partir de leurs modèles.
 
  L’une des principales applications de DSL consiste à générer un code de programme, des fichiers de configuration et d’autres artefacts. En particulier dans les grands projets et les lignes de produits, où plusieurs variantes d’un produit seront créées, la génération d’un grand nombre des aspects variables à partir de DSL peut offrir une grande augmentation de la fiabilité et une réponse très rapide aux modifications des spécifications.
 
- Le reste de cette vue d’ensemble est une procédure pas à pas qui présente les opérations de base de création et d’utilisation d’un langage spécifique à un domaine dans [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].
+ Le reste de cette vue d’ensemble est une procédure pas à pas qui présente les opérations de base de création et d’utilisation d’un langage spécifique à un domaine dans [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] .
 
-## <a name="prerequisites"></a>Configuration requise
+## <a name="prerequisites"></a>Prérequis
  Pour définir un DSL, vous devez avoir installé les composants suivants :
 
-|||
+|Produit|Télécharger le lien|
 |-|-|
 |[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]|[http://go.microsoft.com/fwlink/?LinkId=185579](https://www.visualstudio.com/)|
 |[!INCLUDE[vssdk_current_short](../includes/vssdk-current-short-md.md)]|[http://go.microsoft.com/fwlink/?LinkId=185580](/azure/devops/integrate/index?view=azure-devops&viewFallbackFrom=vsts)|
 |SDK Modeling pour Visual Studio|[Télécharger MSDK](https://www.microsoft.com/download/details.aspx?id=48148)|
 
 ## <a name="creating-a-dsl-solution"></a>Création d’une solution DSL
- Pour créer un langage spécifique à un domaine, vous devez créer une nouvelle [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] solution à l’aide du modèle de projet de langage spécifique à un domaine.
+ Pour créer un langage spécifique à un domaine, vous devez créer une nouvelle solution à l' [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] aide du modèle de projet de langage spécifique à un domaine.
 
 #### <a name="to-create-a-dsl-solution"></a>Pour créer une solution DSL
 
@@ -54,7 +54,7 @@ Cette rubrique explique les concepts de base de la définition et de l’utilisa
 
 3. Cliquez sur **Concepteur Domain-specific language**.
 
-    ![Boîte de dialogue créer une DSL](../modeling/media/create-dsldialog.png "Create_DSLDialog")
+    ![Boîte de dialogue Créer DSL](../modeling/media/create-dsldialog.png "Create_DSLDialog")
 
 4. Dans la zone **nom** , tapez **FamilyTree**. Cliquez sur **OK**.
 
@@ -92,9 +92,9 @@ Cette rubrique explique les concepts de base de la définition et de l’utilisa
 
 - **Projet DSL** Ce projet contient du code qui définit le langage spécifique à un domaine.
 
-- **Projet DslPackage** Ce projet contient du code qui permet d’ouvrir et de modifier des instances du DSL dans [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].
+- **Projet DslPackage** Ce projet contient du code qui permet d’ouvrir et de modifier des instances du DSL dans [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] .
 
-## <a name="Debugging"></a>Exécution du DSL
+## <a name="running-the-dsl"></a><a name="Debugging"></a>Exécution du DSL
  Vous pouvez exécuter la solution DSL dès que vous l’avez créée. Ultérieurement, vous pouvez modifier la définition de la DSL progressivement, en réexécutant la solution après chaque modification.
 
 #### <a name="to-experiment-with-the-dsl"></a>Pour expérimenter le DSL
@@ -106,11 +106,11 @@ Cette rubrique explique les concepts de base de la définition et de l’utilisa
 
 2. Appuyez sur F5 ou, dans le menu **Déboguer** , cliquez sur **Démarrer le débogage**.
 
-    La solution DSL est générée et installée dans l’instance expérimentale de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].
+    La solution DSL est générée et installée dans l’instance expérimentale de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] .
 
-    Une instance expérimentale de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] démarre. L’instance expérimentale prend ses paramètres d’une sous-arborescence distincte du Registre, où les extensions de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] sont inscrites à des fins de débogage. Les instances normales de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] n’ont pas accès aux extensions inscrites à cet emplacement.
+    Une instance expérimentale de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] démarre. L’instance expérimentale prend ses paramètres d’une sous-arborescence distincte du Registre, où les [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] extensions sont inscrites à des fins de débogage. Les instances normales de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] n’ont pas accès aux extensions inscrites à cet emplacement.
 
-3. Dans l’instance expérimentale de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], ouvrez le fichier de modèle nommé **test** à partir de **Explorateur de solutions**.
+3. Dans l’instance expérimentale de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] , ouvrez le fichier de modèle nommé **test** à partir de **Explorateur de solutions**.
 
     \- ou -
 
@@ -128,7 +128,7 @@ Cette rubrique explique les concepts de base de la définition et de l’utilisa
 
 5. Cliquez sur les étiquettes des formes pour les modifier.
 
-   Vos [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] expérimentales ressemblent à l’exemple suivant :
+   Votre expérimentation [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ressemble à l’exemple suivant :
 
    ![](../modeling/media/dsl-min.png "DSL_min")
 
@@ -139,12 +139,12 @@ Cette rubrique explique les concepts de base de la définition et de l’utilisa
 
  Vous pouvez afficher un modèle sous la forme d’une arborescence dans l’affichage de l' **Explorateur** pendant que vous modifiez un modèle. À mesure que vous ajoutez des formes au diagramme, les éléments de modèle s’affichent également dans l’Explorateur. L’Explorateur peut être utilisé même s’il n’y a aucun diagramme.
 
- Si vous ne voyez pas l’Explorateur dans l’instance de débogage de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], dans le menu **affichage** , pointez sur **autres fenêtres**, puis cliquez sur *\<votre* **Explorateur**> de langue.
+ Si vous ne voyez pas l’Explorateur dans l’instance de débogage de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] , dans le menu **affichage** , pointez sur **autres fenêtres**, puis cliquez sur *\<Your Language>* **Explorateur**.
 
 ### <a name="the-api-of-your-dsl"></a>L’API de votre DSL
  Votre DSL génère une API qui vous permet de lire et de mettre à jour les modèles qui sont des instances du DSL. Une application de l’API consiste à générer des fichiers texte à partir d’un modèle. Pour plus d’informations, consultez [génération de code au moment du design à l’aide de modèles de texte T4](../modeling/design-time-code-generation-by-using-t4-text-templates.md).
 
- Dans la solution de débogage, ouvrez les fichiers de modèle avec l’extension « . TT ». Ces exemples montrent comment vous pouvez générer du texte à partir de modèles et vous permettre de tester l’API de votre DSL. L’un des exemples est écrit en [!INCLUDE[vbprvb](../includes/vbprvb-md.md)], l’autre dans [!INCLUDE[csprcs](../includes/csprcs-md.md)].
+ Dans la solution de débogage, ouvrez les fichiers de modèle avec l’extension « . TT ». Ces exemples montrent comment vous pouvez générer du texte à partir de modèles et vous permettre de tester l’API de votre DSL. L’un des exemples est écrit dans [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] [!INCLUDE[csprcs](../includes/csprcs-md.md)] .
 
  Sous chaque fichier de modèle se trouve le fichier qu’il génère. Développez le fichier de modèle dans Explorateur de solutions, puis ouvrez le fichier généré.
 
@@ -156,7 +156,7 @@ Cette rubrique explique les concepts de base de la définition et de l’utilisa
 
 ##### <a name="to-regenerate-text-files-after-you-change-the-model-file"></a>Pour régénérer des fichiers texte après avoir modifié le fichier de modèle
 
-1. Dans l’instance expérimentale de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], enregistrez le fichier de modèle.
+1. Dans l’instance expérimentale de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] , enregistrez le fichier de modèle.
 
 2. Assurez-vous que le paramètre de nom de fichier dans chaque fichier. TT fait référence au fichier de modèle que vous utilisez pour les expériences. Enregistrez le fichier. TT.
 
@@ -174,7 +174,7 @@ Cette rubrique explique les concepts de base de la définition et de l’utilisa
  Pour plus d’informations, consultez [génération de code à partir d’un langage spécifique à un domaine](../modeling/generating-code-from-a-domain-specific-language.md) et [écriture de code pour personnaliser un langage spécifique à un domaine](../modeling/writing-code-to-customise-a-domain-specific-language.md).
 
 ## <a name="customizing-the-dsl"></a>Personnalisation de la solution DSL
- Lorsque vous souhaitez modifier la définition DSL, fermez l’instance expérimentale et mettez à jour la définition dans l’instance de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] principale.
+ Lorsque vous souhaitez modifier la définition DSL, fermez l’instance expérimentale et mettez à jour la définition dans l' [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] instance principale.
 
 > [!NOTE]
 > Après avoir modifié la définition de la DSL, vous risquez de perdre des informations dans les modèles de test que vous avez créés à l’aide des versions antérieures.  Par exemple, la solution de débogage contient un fichier nommé Sample, qui contient des formes et des connecteurs. Une fois que vous avez commencé à développer votre définition DSL, celles-ci ne sont pas visibles, et elles sont perdues lorsque vous enregistrez le fichier.
@@ -190,7 +190,7 @@ Cette rubrique explique les concepts de base de la définition et de l’utilisa
 
 1. Dans le diagramme DslDefinition, renommez **ExampleModel** **FamilyTreeModel**, **ExampleElement** en **Person**, **Targets** to **parents**et **sources** to **Children**. Vous pouvez cliquer sur chaque étiquette pour la modifier.
 
-     ![Modèle d’arbre &#45; de famille du diagramme de définition DSL](../modeling/media/familyt-person.png "FamilyT_Person")
+     ![Diagramme de définition DSL &#45; modèle d’arbre généalogique](../modeling/media/familyt-person.png "FamilyT_Person")
 
 2. Renommez l’élément et les outils de connecteur.
 
@@ -198,7 +198,7 @@ Cette rubrique explique les concepts de base de la définition et de l’utilisa
 
     2. Ouvrez le Fenêtre Propriétés et positionnez-le de sorte que vous puissiez voir l’Explorateur et les propriétés DSL en même temps.
 
-    3. Dans l’Explorateur DSL, développez **éditeur**, **onglets de la boîte à outils**, *\<votre > DSL*, puis **Outils**.
+    3. Dans l’Explorateur DSL, développez **éditeur**, **onglets de la boîte à outils**, *\<your DSL>* , puis **Outils**.
 
     4. Cliquez sur **ExampleElement**. Il s’agit de l’élément de boîte à outils utilisé pour créer des éléments.
 
@@ -214,9 +214,9 @@ Cette rubrique explique les concepts de base de la définition et de l’utilisa
 
     2. Cliquez sur **transformer tous les modèles** dans la barre d’outils de Explorateur de solutions
 
-    3. Appuyez sur la touche F5. Attendez que l’instance expérimentale de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] apparaisse.
+    3. Appuyez sur F5. Attendez que l’instance expérimentale de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] s’affiche.
 
-4. Dans la solution de débogage de l’instance expérimentale de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], ouvrez un fichier de modèle de test. Faites glisser des éléments dans la boîte à outils. Notez que les légendes d’outils et les noms de type dans l’Explorateur DSL ont changé.
+4. Dans la solution de débogage de l’instance expérimentale de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] , ouvrez un fichier de modèle de test. Faites glisser des éléments dans la boîte à outils. Notez que les légendes d’outils et les noms de type dans l’Explorateur DSL ont changé.
 
 5. Enregistrez le fichier de modèle.
 
@@ -249,7 +249,7 @@ Cette rubrique explique les concepts de base de la définition et de l’utilisa
 
    4. Sélectionnez chaque nouvel élément décoratif, puis dans la Fenêtre Propriétés, définissez le champ **position** . Cela détermine l’emplacement où la valeur de propriété de domaine sera affichée sur la forme. Par exemple, définissez **InnerBottomLeft** et **InnerBottomRight**.
 
-        ![Définition de la forme de compartiment](../modeling/media/familyt-compartment.png "FamilyT_Compartment")
+        ![Définition de forme de compartiment](../modeling/media/familyt-compartment.png "FamilyT_Compartment")
 
 3. Mappez les éléments décoratifs aux propriétés.
 
@@ -265,7 +265,7 @@ Cette rubrique explique les concepts de base de la définition et de l’utilisa
 
 6. Dans un fichier. TT, vous pouvez ajouter du code qui obtient les propriétés de chaque personne.
 
-   ![Diagramme de l’arborescence des familles, boîte à outils et Explorateur](../modeling/media/familyt-instance.png "FamilyT_Instance")
+   ![Diagramme d'arbre généalogique, boîte à outils et explorateur](../modeling/media/familyt-instance.png "FamilyT_Instance")
 
 ### <a name="define-new-classes"></a>Définir de nouvelles classes
  Vous pouvez ajouter des classes de domaine et des relations à un modèle. Par exemple, vous pouvez créer une nouvelle classe pour représenter des villes et une nouvelle relation pour représenter qu’une personne est vécue dans une ville.
@@ -291,7 +291,7 @@ Cette rubrique explique les concepts de base de la définition et de l’utilisa
 
     1. Cliquez sur l’outil **relation de référence** , cliquez sur personne, puis cliquez sur ville.
 
-         ![Fragment de définition DSL : racine de l’arbre de famille](../modeling/media/familyt-root.png "FamilyT_Root")
+         ![Fragment de définition DSL : racine d'arbre généalogique](../modeling/media/familyt-root.png "FamilyT_Root")
 
         > [!NOTE]
         > Les relations de référence représentent des références croisées d’une partie de l’arborescence du modèle à une autre.
@@ -316,13 +316,13 @@ Cette rubrique explique les concepts de base de la définition et de l’utilisa
 
     2. Utilisez l’outil **mappage d’élément de diagramme** pour lier le nouveau connecteur à la relation entre personne et ville.
 
-         ![Définition d’arbre généalogique avec mappage de forme ajouté](../modeling/media/familyt-shapemap.png "FamilyT_ShapeMap")
+         ![Définition d'arbre généalogique avec mappage de forme ajouté](../modeling/media/familyt-shapemap.png "FamilyT_ShapeMap")
 
 6. Créez un outil d’élément pour créer une nouvelle ville.
 
     1. Dans l' **Explorateur DSL**, développez **éditeur** , puis onglets de la **boîte à outils**.
 
-    2. Cliquez avec le bouton droit sur *\<votre > DSL* , puis cliquez sur l' **outil Ajouter un nouvel élément**.
+    2. Cliquez avec le bouton droit sur *\<your DSL>* , puis cliquez sur **Ajouter un nouvel élément outil**.
 
     3. Définissez la propriété **Name** du nouvel outil et définissez sa propriété **Class** sur Town.
 
@@ -330,7 +330,7 @@ Cette rubrique explique les concepts de base de la définition et de l’utilisa
 
 7. Créez un outil de connecteur pour créer un lien entre des villes et des personnes.
 
-    1. Cliquez avec le bouton droit sur *\<votre > DSL* , puis cliquez sur **Ajouter un nouvel outil de connecteur**.
+    1. Cliquez avec le bouton droit sur *\<your DSL>* , puis cliquez sur **Ajouter un nouvel outil de connecteur**.
 
     2. Définissez la propriété Name du nouvel outil.
 
@@ -340,7 +340,7 @@ Cette rubrique explique les concepts de base de la définition et de l’utilisa
 
 8. Enregistrez la définition DSL, cliquez sur **transformer tous les modèles**, puis appuyez sur **F5**.
 
-9. Dans l’instance expérimentale de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], ouvrez un fichier de modèle de test. Utilisez les nouveaux outils pour créer des villes et des liens entre des villes et des personnes. Notez que vous pouvez uniquement créer des liens entre les types d’éléments corrects.
+9. Dans l’instance expérimentale de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] , ouvrez un fichier de modèle de test. Utilisez les nouveaux outils pour créer des villes et des liens entre des villes et des personnes. Notez que vous pouvez uniquement créer des liens entre les types d’éléments corrects.
 
 10. Créez le code qui répertorie la ville dans laquelle chaque personne vit. Les modèles de texte sont l’un des endroits où vous pouvez exécuter un tel code. Par exemple, vous pouvez modifier le fichier Sample.tt existant dans la solution de débogage pour qu’il contienne le code suivant :
 
@@ -375,26 +375,26 @@ Cette rubrique explique les concepts de base de la définition et de l’utilisa
  Vous pouvez également définir des commandes de menu que l’utilisateur peut appeler. Les commandes peuvent modifier le modèle. Ils peuvent également interagir avec d’autres modèles dans [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] et avec des ressources externes. Pour plus d’informations, consultez [Comment : modifier une commande de menu standard](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md).
 
 ## <a name="deploying-the-dsl"></a>Déploiement du DSL
- Pour permettre à d’autres utilisateurs d’utiliser le langage spécifique à un domaine, vous distribuez un fichier VSIX ([!INCLUDE[vsprvs](../includes/vsprvs-md.md)] extension). Elle est créée lorsque vous générez la solution DSL.
+ Pour permettre à d’autres utilisateurs d’utiliser le langage spécifique à un domaine, vous distribuez un [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] fichier d’extension (VSIX). Elle est créée lorsque vous générez la solution DSL.
 
  Recherchez le fichier. VSIX dans le dossier bin de votre solution. Copiez-le sur l’ordinateur sur lequel vous souhaitez l’installer. Sur cet ordinateur, double-cliquez sur le fichier VSIX. La DSL peut être utilisée dans toutes les instances de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] sur cet ordinateur.
 
- Vous pouvez utiliser la même procédure pour installer le DSL sur votre propre ordinateur afin de ne pas avoir à utiliser l’instance expérimentale de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].
+ Vous pouvez utiliser la même procédure pour installer le DSL sur votre propre ordinateur afin de ne pas avoir à utiliser l’instance expérimentale de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] .
 
  Pour plus d’informations, consultez [Déploiement de solutions de langage spécifique à un domaine](../modeling/deploying-domain-specific-language-solutions.md).
 
-## <a name="Reset"></a>Suppression des anciens DSL expérimentaux
- Si vous avez créé des DSL expérimentaux que vous ne voulez plus, vous pouvez les supprimer de votre ordinateur en réinitialisant l’instance expérimentale [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].
+## <a name="removing-old-experimental-dsls"></a><a name="Reset"></a>Suppression des anciens DSL expérimentaux
+ Si vous avez créé des DSL expérimentaux que vous ne voulez plus, vous pouvez les supprimer de votre ordinateur en réinitialisant l' [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] instance expérimentale.
 
- Cela supprimera de votre ordinateur toutes les DSL expérimentales et autres extensions expérimentales de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Il s’agit des extensions qui ont été exécutées en mode débogage.
+ Cette opération supprime de votre ordinateur tous les DSL expérimentaux et d’autres extensions expérimentales [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] . Il s’agit des extensions qui ont été exécutées en mode débogage.
 
- Cette procédure ne supprime pas DSL ou d’autres extensions de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] qui ont été entièrement installées en exécutant le fichier VSIX.
+ Cette procédure ne supprime pas DSL ou [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] d’autres extensions entièrement installées en exécutant le fichier VSIX.
 
 #### <a name="to-reset-the-visual-studio-experimental-instance"></a>Pour réinitialiser l’instance expérimentale de Visual Studio
 
 1. Cliquez **sur Démarrer**, sur **tous les programmes**, **Microsoft Visual Studio Kit de développement logiciel (SDK) 2010**, **Outils**, puis **réinitialisez l’instance Microsoft Visual Studio 2010 expérimentale**.
 
-2. Reconstruisez les DSL expérimentales ou d’autres extensions expérimentales [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] que vous souhaitez utiliser.
+2. Reconstruisez les DSL expérimentales ou d’autres extensions expérimentales [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] que vous souhaitez toujours utiliser.
 
 ## <a name="see-also"></a>Voir aussi
  [Comprendre les modèles, les classes et les relations](../modeling/understanding-models-classes-and-relationships.md) [comment définir un langage spécifique à un domaine](../modeling/how-to-define-a-domain-specific-language.md) [création et Modeling SDK](https://www.microsoft.com/download/details.aspx?id=48148)

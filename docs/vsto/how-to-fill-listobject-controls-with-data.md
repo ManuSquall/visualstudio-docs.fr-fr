@@ -1,7 +1,7 @@
 ---
 title: 'Comment : remplir des contrôles ListObject avec des données'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 48af9145ce069b426b86f05bf0aadfc5386a6271
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: 2941022cb434198298e9d098ef562efeaba4893f
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72985920"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85544818"
 ---
 # <a name="how-to-fill-listobject-controls-with-data"></a>Comment : remplir des contrôles ListObject avec des données
   Vous pouvez utiliser la liaison de données comme moyen pour ajouter rapidement des données à votre document. Après avoir lié les données à un objet de liste, vous pouvez déconnecter celui-ci de manière à ce qu’il affiche les données mais ne soit plus lié à leur source.

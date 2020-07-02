@@ -15,17 +15,17 @@ caps.latest.revision: 20
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 4c105a1224c405d0be9d74ac6500c875df28604d
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 792426615dd78241ade1d38a24ec1f4d5702cede
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72604035"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85545377"
 ---
-# <a name="ca1059-members-should-not-expose-certain-concrete-types"></a>CA1059 : Les membres ne doivent pas exposer certains types concrets
+# <a name="ca1059-members-should-not-expose-certain-concrete-types"></a>CA1059 : Les membres ne doivent pas exposer certains types concrets
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Élément|Valeur|
 |-|-|
 |TypeName|MembersShouldNotExposeCertainConcreteTypes|
 |CheckId|CA1059|
@@ -42,9 +42,9 @@ ms.locfileid: "72604035"
 
  Le tableau suivant répertorie les types concrets ciblés et leurs remplacements suggérés.
 
-|Type concret|Replacement|
+|Type concret|Remplacement|
 |-------------------|-----------------|
-|<xref:System.Xml.XPath.XPathDocument>|<xref:System.Xml.XPath.IXPathNavigable?displayProperty=fullName>.,<br /><br /> L’utilisation de l’interface dissocie le membre d’une implémentation spécifique d’une source de données XML.|
+|<xref:System.Xml.XPath.XPathDocument>|<xref:System.Xml.XPath.IXPathNavigable?displayProperty=fullName>.<br /><br /> L’utilisation de l’interface dissocie le membre d’une implémentation spécifique d’une source de données XML.|
 
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations
  Pour corriger une violation de cette règle, remplacez le type concret par l’interface suggérée.
@@ -53,4 +53,4 @@ ms.locfileid: "72604035"
  Il est possible de supprimer sans risque un message de cette règle si les fonctionnalités spécifiques fournies par le type concret sont requises.
 
 ## <a name="related-rules"></a>Règles associées
- [CA1011 : Envisagez de passer les types de base comme paramètres](../code-quality/ca1011-consider-passing-base-types-as-parameters.md)
+ [CA1011 : Si possible, transmettez les types de base en tant que paramètres](../code-quality/ca1011-consider-passing-base-types-as-parameters.md)

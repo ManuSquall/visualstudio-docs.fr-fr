@@ -15,17 +15,17 @@ caps.latest.revision: 22
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 7a2a296f5dd3680209c14849b5bd863c01e6351d
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 4e191ca10456f133e1213961ca2d1ed9cb8e040b
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72660248"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85544298"
 ---
 # <a name="ca2124-wrap-vulnerable-finally-clauses-in-outer-try"></a>CA2124 : Incluez dans un wrapper les clauses finally vulnérables dans un bloc try externe
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Élément|Valeur|
 |-|-|
 |TypeName|WrapVulnerableFinallyClausesInOuterTry|
 |CheckId|CA2124|
@@ -33,16 +33,16 @@ ms.locfileid: "72660248"
 |Modification avec rupture|Sans rupture|
 
 ## <a name="cause"></a>Cause
- Dans les versions 1,0 et 1,1 de la [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)], une méthode publique ou protégée contient un `try` / `catch` / bloc `finally`. Le bloc `finally` semble réinitialiser l’état de sécurité et n’est pas placé dans un bloc `finally`.
+ Dans les versions 1,0 et 1,1 du [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] , une méthode publique ou protégée contient un `try` / `catch` / `finally` bloc. Le `finally` bloc semble réinitialiser l’état de sécurité et n’est pas placé dans un `finally` bloc.
 
 ## <a name="rule-description"></a>Description de la règle
- Cette règle localise `try` / blocs `finally` dans le code qui ciblent les versions 1,0 et 1,1 du [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] qui peuvent être vulnérables aux filtres d’exceptions malveillants présents dans la pile des appels. Si des opérations sensibles telles que l’emprunt d’identité se produisent dans le bloc try et qu’une exception est levée, le filtre peut s’exécuter avant le bloc `finally`. Pour l’exemple d’emprunt d’identité, cela signifie que le filtre s’exécute en tant qu’utilisateur avec emprunt d’identité. Les filtres peuvent actuellement être implémentés uniquement dans Visual Basic.
+ Cette règle localise `try` / `finally` dans le code les blocs qui ciblent les versions 1,0 et 1,1 du [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] qui peuvent être vulnérables aux filtres d’exceptions malveillants présents dans la pile des appels. Si des opérations sensibles telles que l’emprunt d’identité se produisent dans le bloc try et qu’une exception est levée, le filtre peut s’exécuter avant le `finally` bloc. Pour l’exemple d’emprunt d’identité, cela signifie que le filtre s’exécute en tant qu’utilisateur avec emprunt d’identité. Les filtres peuvent actuellement être implémentés uniquement dans Visual Basic.
 
 > [!WARNING]
-> Dans les versions 2,0 et ultérieures de l' [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)], le runtime protège automatiquement un `try` / `catch` /  bloc `finally` des filtres d’exception malveillants, si la réinitialisation se produit directement dans la méthode qui contient le bloc d’exception.
+> Dans les versions 2,0 et ultérieures du [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] , le runtime protège automatiquement un `try` / `catch` /  `finally` bloc contre les filtres d’exceptions malveillants, si la réinitialisation se produit directement dans la méthode qui contient le bloc d’exception.
 
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations
- Placez le `try` non encapsulé / `finally` dans un bloc try externe. Consultez le deuxième exemple qui suit. Cela force le `finally` à s’exécuter avant le code de filtre.
+ Placez le désencapsulage `try` / `finally` dans un bloc try externe. Consultez le deuxième exemple qui suit. Cela force le `finally` à s’exécuter avant le code de filtre.
 
 ## <a name="when-to-suppress-warnings"></a>Quand supprimer les avertissements
  Ne supprimez aucun avertissement de cette règle.

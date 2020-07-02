@@ -25,12 +25,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b73a4660c9e0dad66ceb73c04852601765174264
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 210606af0f200d49b639d323456f85e0a7becd06
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79303056"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85543674"
 ---
 # <a name="view-the-structure-of-code-using-different-tool-windows"></a>Afficher la structure du code à l’aide de différentes fenêtres d’outils
 
@@ -52,23 +52,23 @@ Si votre projet est archivé dans le contrôle de code source, chaque élément 
 
 ### <a name="class-view-toolbar"></a>Barre d’outils Affichage de classes
 
-La **barre d’outils Class View** contient les commandes suivantes :
+La barre d’outils **affichage de classes** contient les commandes suivantes :
 
-|||
+|Nom|Description|
 |-|-|
-|**Nouveau dossier**|Crée un dossier ou sous-dossier virtuel dans lequel vous pouvez organiser les éléments fréquemment utilisés. Ils sont enregistrés dans le fichier solution active *(.suo).* Une fois que vous avez renommé ou supprimé un élément dans votre code, il peut apparaître dans un dossier virtuel en tant que nœud d'erreur. Pour corriger ce problème, supprimez le nœud d'erreur. Si vous avez renommé un élément, vous pouvez le déplacer de nouveau de la hiérarchie de projet vers le dossier.|
+|**Nouveau dossier**|Crée un dossier ou sous-dossier virtuel dans lequel vous pouvez organiser les éléments fréquemment utilisés. Elles sont enregistrées dans le fichier de solution active (*. suo*). Une fois que vous avez renommé ou supprimé un élément dans votre code, il peut apparaître dans un dossier virtuel en tant que nœud d'erreur. Pour corriger ce problème, supprimez le nœud d'erreur. Si vous avez renommé un élément, vous pouvez le déplacer de nouveau de la hiérarchie de projet vers le dossier.|
 |**Précédent**|Permet d'accéder à l'élément précédemment sélectionné.|
 |**Prédictif**|Permet d'accéder à l'élément sélectionné suivant.|
 |**Afficher le diagramme de classes** (projets de code managé uniquement)|Devient disponible quand vous sélectionnez un espace de noms ou un type dans **Affichage de classes**. Quand un espace de noms est sélectionné, le diagramme de classes affiche tous les types qu'il contient. Quand un type est sélectionné, le diagramme de classes affiche uniquement ce type.|
 
 ### <a name="class-view-settings"></a>Paramètres de l’affichage de classes
 
-Le bouton **Paramètres de vue de classe** sur la barre d’outils a les paramètres suivants :
+Le bouton **paramètres de affichage de classes** de la barre d’outils contient les paramètres suivants :
 
-|||
+|Nom|Description|
 |-|-|
 |**Afficher les types de base**|Les types de base sont affichés.|
-|**Afficher les références du projet**|Les références de projet sont affichées.|
+|**Afficher les références de projet**|Les références de projet sont affichées.|
 |**Afficher les types et les membres masqués**|Les types et membres masqués (non prévus pour être utilisés par les clients) sont affichés en gris clair.|
 |**Afficher les membres publics**|Les membres publics sont affichés.|
 |**Afficher les membres protégés**|Les membres protégés sont affichés.|
@@ -78,14 +78,14 @@ Le bouton **Paramètres de vue de classe** sur la barre d’outils a les paramè
 
 ### <a name="class-view-shortcut-menu"></a>Menu contextuel de la fenêtre Affichage de classes
 
-Le menu raccourci (ou clic droit) dans **Class View** peut contenir les commandes suivantes, selon le type de projet sélectionné :
+Le menu contextuel (ou clic droit) de **affichage de classes** peut contenir les commandes suivantes, selon le type de projet sélectionné :
 
-|||
+|Nom|Description|
 |-|-|
 |**Atteindre la définition**|Recherche la définition de l’élément dans le code source ou dans l’**Explorateur d’objets** si l’élément n’est pas défini dans le projet ouvert.|
 |**Parcourir les définitions**|Affiche l’élément sélectionné dans l’**Explorateur d’objets**.|
 |**Rechercher toutes les références**|Recherche l’élément de l’objet actuellement sélectionné et affiche les résultats dans une fenêtre **Résultats de la recherche**.|
-|**Appliquer le filtre au type** (code managé uniquement)|Affiche uniquement le type ou l'espace de noms sélectionné. Vous pouvez supprimer le filtre en choisissant le bouton **Clear Find** (**X)** à côté de la case **Trouver.**|
+|**Appliquer le filtre au type** (code managé uniquement)|Affiche uniquement le type ou l'espace de noms sélectionné. Vous pouvez supprimer le filtre en choisissant le bouton **effacer la recherche** (**X**) en regard de la zone **Rechercher** .|
 |**Copier**|Copie le nom qualifié complet de l'élément.|
 |**Trier par ordre alphabétique**|Répertorie les types et les membres dans l'ordre alphabétique par nom.|
 |**Trier les membres par type**|Répertorie les types et les membres dans l'ordre par type (de sorte que les classes précèdent les interfaces, les interfaces précèdent les délégués et les méthodes précèdent les propriétés).|
@@ -110,13 +110,13 @@ Le volet principal affiche les appels en direction et en provenance de la métho
 
 La fenêtre **Hiérarchie d’appels** ne recherche pas les références au groupe de méthodes qui incluent des emplacements où une méthode est ajoutée en tant que gestionnaire d’événements ou est assignée à un délégué. Pour trouver ces références, utilisez la commande **Rechercher toutes les références**.
 
-Le menu raccourci de la fenêtre **Call Hierarchy** contient les commandes suivantes :
+Le menu contextuel de la fenêtre **hiérarchie d’appels** contient les commandes suivantes :
 
-|||
+|Nom|Description|
 |-|-|
 |**Ajouter comme nouvelle racine**|Ajoute le nœud sélectionné en tant que nouveau nœud racine.|
 |**Supprimer racine**|Supprime le nœud racine sélectionné du volet d’arborescence.|
-|**Aller à la définition**|Navigue jusqu'à la définition d'origine d'une méthode.|
+|**Atteindre la définition**|Navigue jusqu'à la définition d'origine d'une méthode.|
 |**Rechercher toutes les références**|Recherche dans le projet toutes les références à la méthode sélectionnée.|
 |**Copier**|Copie le nœud sélectionné (mais pas ses sous-nœuds).|
 |**Actualisation**|Actualise les informations.|
@@ -125,7 +125,7 @@ Le menu raccourci de la fenêtre **Call Hierarchy** contient les commandes suiva
 
 La fenêtre **Explorateur d’objets** affiche les descriptions du code dans vos projets.
 
-Vous pouvez filtrer les composants que vous souhaitez afficher à l’aide de la liste déroulante en haut de la fenêtre. Les composants personnalisés peuvent inclure des exécutions de code gérées, des assemblages de bibliothèques, des bibliothèques de type et des fichiers *.ocx.* Il n'est pas possible d'ajouter des composants personnalisés C++.
+Vous pouvez filtrer les composants que vous souhaitez afficher à l’aide de la liste déroulante en haut de la fenêtre. Les composants personnalisés peuvent inclure des fichiers exécutables de code managé, des assemblys de bibliothèque, des bibliothèques de types et des fichiers *. ocx* . Il n'est pas possible d'ajouter des composants personnalisés C++.
 
 ::: moniker range="vs-2017"
 
@@ -141,7 +141,7 @@ Les paramètres personnalisés sont enregistrés dans le répertoire d’applica
 
 Le volet gauche de l’**Explorateur d’objets** montre les assemblys. Vous pouvez développer les assemblys pour afficher les espaces de noms qu’ils contiennent, puis développer les espaces de noms pour afficher les types qu’ils contiennent. Quand vous sélectionnez un type, ses membres (tels que les propriétés et les méthodes) sont répertoriés dans le volet droit. Le volet inférieur droit affiche des informations détaillées sur l'élément sélectionné.
 
-Vous pouvez rechercher un élément spécifique à l’aide de la zone **Rechercher** en haut de la fenêtre. Les recherches ne respectent pas la casse. Les résultats de recherche sont affichés dans le volet gauche. Pour effacer une recherche, choisissez le bouton **Clear Search** (**X**) à côté de la boîte **de recherche.**
+Vous pouvez rechercher un élément spécifique à l’aide de la zone **Rechercher** en haut de la fenêtre. Les recherches ne respectent pas la casse. Les résultats de recherche sont affichés dans le volet gauche. Pour effacer une recherche, cliquez sur le bouton **effacer la recherche** (**X**) en regard de la zone de **recherche** .
 
 L’**Explorateur d’objets** assure le suivi des sélections effectuées et vous pouvez naviguer entre vos sélections à l’aide des boutons **Suivant** et **Précédent** de la barre d’outils.
 
@@ -149,9 +149,9 @@ Vous pouvez utiliser l’**Explorateur d’objets** pour ajouter une référence
 
 ### <a name="object-browser-settings"></a>Paramètres de l’Explorateur d’objets
 
-En utilisant le bouton **Paramètres du navigateur d’objets** sur la barre d’outils, vous pouvez spécifier l’une des vues suivantes :
+À l’aide du bouton Paramètres de l' **Explorateur d’objets** de la barre d’outils, vous pouvez spécifier l’une des vues suivantes :
 
-|||
+|Nom|Description|
 |-|-|
 |**Afficher les espaces de noms**|Affiche les espaces de noms plutôt que les conteneurs physiques, dans le volet gauche. Les espaces de noms stockés dans plusieurs conteneurs physiques sont fusionnés.|
 |**Afficher les conteneurs**|Affiche les conteneurs physiques plutôt que les espaces de noms, dans le volet gauche. **Afficher les espaces de noms** et **Afficher les conteneurs** sont des paramètres qui s’excluent mutuellement.|
@@ -166,9 +166,9 @@ En utilisant le bouton **Paramètres du navigateur d’objets** sur la barre d�
 
 ### <a name="object-browser-shortcut-menu-commands"></a>Commandes du menu contextuel de l’Explorateur d’objets
 
-Le menu raccourci (ou clic droit) dans **Le navigateur d’objets** peut contenir les commandes suivantes, selon le type d’élément sélectionné :
+Le menu contextuel (ou clic droit) dans l' **Explorateur d’objets** peut contenir les commandes suivantes, selon le type d’élément sélectionné :
 
-|||
+|Nom|Description|
 |-|-|
 |**Parcourir les définitions**|Affiche le nœud principal de l'élément sélectionné.|
 |**Rechercher toutes les références**|Recherche l’élément de l’objet actuellement sélectionné et affiche les résultats dans une fenêtre **Résultats de la recherche**.|
@@ -191,32 +191,32 @@ La fenêtre **Définition de code** affiche la définition d’un type C++ ou me
 Cette fenêtre est en lecture seule mais vous pouvez y définir des points d'arrêt ou des signets. Pour modifier la définition affichée, choisissez **Modifier la définition** dans le menu contextuel. Cela ouvre le fichier source dans l'éditeur de code et place le point d'insertion sur la ligne où la définition commence.
 
 > [!NOTE]
-> À partir de Visual Studio 2015, la fenêtre **De définition de code** ne peut être utilisée qu’avec le code C.
+> À compter de Visual Studio 2015, la fenêtre **définition de code** ne peut être utilisée qu’avec du code C++.
 
 ### <a name="code-definition-shortcut-menu"></a>Menu contextuel de la fenêtre Définition de code
 
-Le menu raccourci (ou clic droit) de la fenêtre **de définition du code** peut contenir les commandes suivantes :
+Le menu contextuel (ou clic droit) dans la fenêtre **définition de code** peut contenir les commandes suivantes :
 
-|||
+|Nom|Description|
 |-|-|
 |**Actions rapides et refactorisations**||
 |**Renommer**||
-|**Générer graphique des fichiers inclus**||
-|**Définition de Peek**||
+|**Générer le graphique des fichiers include**||
+|**Aperçu de définition**||
 |**Atteindre la définition**|Recherche la définition (ou les définitions, pour des classes partielles) et l’affiche dans une fenêtre **Résultats de la recherche**.|
 |**Atteindre la déclaration**||
 |**Rechercher toutes les références**|Recherche les références au type ou au membre dans la solution.|
 |**Afficher la hiérarchie d’appels**|Affiche la méthode dans la fenêtre **Hiérarchie d’appels**.|
 |**Afficher ou masquer l'en-tête / le fichier de code**||
-|**Tests d’exécution**|S'il existe des tests unitaires dans le projet, exécute les tests pour le code sélectionné.|
-|**Debug Tests**||
-|**Breakpoint**|Insère un point d'arrêt (ou un point de trace).|
-|**Courir à Cursor**|Exécute le programme en mode débogage jusqu'à l'emplacement du curseur.|
+|**Exécuter les tests**|S'il existe des tests unitaires dans le projet, exécute les tests pour le code sélectionné.|
+|**Déboguer les tests**||
+|**Point d’arrêt**|Insère un point d'arrêt (ou un point de trace).|
+|**Exécuter jusqu’au curseur**|Exécute le programme en mode débogage jusqu'à l'emplacement du curseur.|
 |**Extrait**||
 |**Cut**, **Copy**, **Paste**||
-|**Annotation**||
-|**Mode Plan**|Commandes de mode Plan standard.|
-|**Relancer l’analyse**||
+|**Commentaire**||
+|**mode Plan**|Commandes de mode Plan standard.|
+|**Relancer**||
 |**Modifier la définition**|Déplace le point d'insertion vers la définition dans la fenêtre de code.|
 |**Choisir l’encodage**|Ouvre la fenêtre **Encodage** afin que vous puissiez définir un encodage pour le fichier.|
 
@@ -226,4 +226,4 @@ Vous pouvez utiliser la fenêtre **Structure du document** conjointement aux vue
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Icônes de la vue de classe et du navigateur d’objet](../ide/class-view-and-object-browser-icons.md)
+- [Icônes Affichage de classes et Explorateur d’objets](../ide/class-view-and-object-browser-icons.md)

@@ -14,17 +14,17 @@ caps.latest.revision: 15
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 3d340d69ee32de20142abf740f7fedc871c9733a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: a2e704202773447e353f041df66b05cb5f648c00
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72657475"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85545351"
 ---
-# <a name="ca1821-remove-empty-finalizers"></a>CA1821 : Supprimer les finaliseurs vides
+# <a name="ca1821-remove-empty-finalizers"></a>CA1821 : Supprimez les finaliseurs vides
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Élément|Valeur|
 |-|-|
 |TypeName|RemoveEmptyFinalizers|
 |CheckId|CA1821|
@@ -38,12 +38,12 @@ ms.locfileid: "72657475"
  Évitez autant que possible d'utiliser des finaliseurs en raison de la surcharge supplémentaire des performances impliquée dans le suivi de la durée de vie de l'objet. Le garbage collector exécutera le finaliseur avant de collecter l’objet. Cela signifie que deux collections seront nécessaires pour collecter l’objet. Un finaliseur vide entraîne cette surcharge ajoutée sans aucun avantage.
 
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations
- Supprimez le finaliseur vide. Si un finaliseur est requis pour le débogage, mettez l’ensemble du finaliseur dans `#if DEBUG / #endif` directives.
+ Supprimez le finaliseur vide. Si un finaliseur est requis pour le débogage, mettez l’ensemble du finaliseur dans des `#if DEBUG / #endif` directives.
 
 ## <a name="when-to-suppress-warnings"></a>Quand supprimer les avertissements
  Ne supprimez pas un message de cette règle. L’impossibilité de supprimer la finalisation diminue les performances et n’offre aucun avantage.
 
 ## <a name="example"></a>Exemple
- L’exemple suivant montre un finaliseur vide qui doit être supprimé, un finaliseur qui doit être placé dans les directives `#if DEBUG / #endif` et un finaliseur qui utilise correctement les directives `#if DEBUG / #endif`.
+ L’exemple suivant montre un finaliseur vide qui doit être supprimé, un finaliseur qui doit être placé dans `#if DEBUG / #endif` les directives et un finaliseur qui utilise `#if DEBUG / #endif` correctement les directives.
 
  [!code-csharp[FxCop.Performance.RemoveEmptyFinalizers#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Performance.RemoveEmptyFinalizers/cs/FxCop.Performance.RemoveEmptyFinalizers.cs#1)]

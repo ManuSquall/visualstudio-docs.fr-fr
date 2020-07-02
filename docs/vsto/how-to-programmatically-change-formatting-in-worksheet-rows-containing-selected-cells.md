@@ -1,7 +1,7 @@
 ---
-title: Modifier des formats dans les lignes contenant des cellules sélectionnées dans le code
+title: Modifier les formats des lignes contenant des cellules sélectionnées par le biais du code
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -14,36 +14,36 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e77f555728ee89d7d202a35a91c9dbddba6224f3
-ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
+ms.openlocfilehash: 23217b2107be4406cd193418e7d1ee2bfa631a9d
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/30/2019
-ms.locfileid: "66401379"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85541555"
 ---
-# <a name="how-to-programmatically-change-formatting-in-worksheet-rows-containing-selected-cells"></a>Procédure : Modifier la mise en forme dans les lignes de feuille de calcul contenant des cellules sélectionnées par programmation
-  Vous pouvez modifier la police d’une ligne entière qui contient une cellule sélectionnée afin que le texte est en gras.
+# <a name="how-to-programmatically-change-formatting-in-worksheet-rows-containing-selected-cells"></a>Comment : modifier la mise en forme des lignes de feuille de calcul contenant des cellules sélectionnées par programmation
+  Vous pouvez modifier la police d’une ligne entière qui contient une cellule sélectionnée afin que le texte soit gras.
 
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]
 
-## <a name="to-make-the-current-row-bold-and-the-previously-bolded-row-normal"></a>Pour afficher la ligne actuelle en gras et précédemment les lignes en gras normal
+## <a name="to-make-the-current-row-bold-and-the-previously-bolded-row-normal"></a>Pour mettre la ligne actuelle en gras et la ligne précédemment en gras normal
 
-1. Déclarez une variable statique pour effectuer le suivi de la ligne précédemment sélectionnée.
+1. Déclarez une variable statique pour effectuer le suivi de la ligne sélectionnée précédemment.
 
     [!code-csharp[Trin_VstcoreExcelAutomation#37](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#37)]
     [!code-vb[Trin_VstcoreExcelAutomation#37](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#37)]
 
-2. Récupérer une référence à la cellule en cours à l’aide du <xref:Microsoft.Office.Interop.Excel._Application.ActiveCell%2A> propriété.
+2. Récupérez une référence à la cellule active à l’aide de la <xref:Microsoft.Office.Interop.Excel._Application.ActiveCell%2A> propriété.
 
     [!code-csharp[Trin_VstcoreExcelAutomation#38](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#38)]
     [!code-vb[Trin_VstcoreExcelAutomation#38](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#38)]
 
-3. Style de l’actuelle ligne en gras à l’aide du <xref:Microsoft.Office.Interop.Excel.Range.EntireRow%2A> propriété de la cellule active.
+3. Style de la ligne actuelle en gras à l’aide <xref:Microsoft.Office.Interop.Excel.Range.EntireRow%2A> de la propriété de la cellule active.
 
     [!code-csharp[Trin_VstcoreExcelAutomation#39](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#39)]
     [!code-vb[Trin_VstcoreExcelAutomation#39](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#39)]
 
-4. Vérifiez que la valeur actuelle de `previousRow` est pas égal à 0. 0 (zéro) indique qu’il s’agit de la première fois sur ce code.
+4. Vérifiez que la valeur actuelle de `previousRow` n’est pas 0. 0 (zéro) indique qu’il s’agit de la première fois que ce code est utilisé.
 
     [!code-csharp[Trin_VstcoreExcelAutomation#40](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#40)]
     [!code-vb[Trin_VstcoreExcelAutomation#40](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#40)]
@@ -53,12 +53,12 @@ ms.locfileid: "66401379"
     [!code-csharp[Trin_VstcoreExcelAutomation#41](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#41)]
     [!code-vb[Trin_VstcoreExcelAutomation#41](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#41)]
 
-6. Récupérez une référence à une plage qui représente la ligne qui a été précédemment sélectionnée, jeu de cette ligne ne soit ne pas en gras.
+6. Récupérez une référence à une plage qui représente la ligne précédemment sélectionnée et définissez cette ligne pour qu’elle ne soit pas en gras.
 
     [!code-csharp[Trin_VstcoreExcelAutomation#42](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#42)]
     [!code-vb[Trin_VstcoreExcelAutomation#42](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#42)]
 
-7. Store la ligne actuelle afin qu’elle devienne la ligne précédente pour le test suivant.
+7. Stocke la ligne actuelle afin qu’elle puisse devenir la ligne précédente lors de la passe suivante.
 
     [!code-csharp[Trin_VstcoreExcelAutomation#43](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#43)]
     [!code-vb[Trin_VstcoreExcelAutomation#43](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#43)]
@@ -70,7 +70,7 @@ ms.locfileid: "66401379"
  [!code-vb[Trin_VstcoreExcelAutomation#36](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#36)]
 
 ## <a name="see-also"></a>Voir aussi
-- [Travailler avec des feuilles de calcul](../vsto/working-with-worksheets.md)
-- [Guide pratique pour Appliquer des styles à des plages dans les classeurs par programmation](../vsto/how-to-programmatically-apply-styles-to-ranges-in-workbooks.md)
-- [Guide pratique pour Copier des données et la mise en forme entre feuilles de calcul par programmation](../vsto/how-to-programmatically-copy-data-and-formatting-across-worksheets.md)
-- [Paramètres optionnels dans les solutions Office](../vsto/optional-parameters-in-office-solutions.md)
+- [Utiliser des feuilles de calcul](../vsto/working-with-worksheets.md)
+- [Comment : appliquer des styles à des plages dans des classeurs par programmation](../vsto/how-to-programmatically-apply-styles-to-ranges-in-workbooks.md)
+- [Comment : copier des données et la mise en forme par programmation dans des feuilles de calcul](../vsto/how-to-programmatically-copy-data-and-formatting-across-worksheets.md)
+- [Paramètres facultatifs dans les solutions Office](../vsto/optional-parameters-in-office-solutions.md)

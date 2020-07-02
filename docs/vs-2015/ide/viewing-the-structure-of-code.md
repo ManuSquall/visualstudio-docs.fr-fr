@@ -28,12 +28,12 @@ caps.latest.revision: 32
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 44036f519ae4d2b718c6eee40317e15fd4574077
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 1a860fbb88bb15786fad5fdf277f8f65b245056b
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72663095"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85545013"
 ---
 # <a name="viewing-the-structure-of-code"></a>Affichage de la structure du code
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,16 +48,16 @@ Vous pouvez examiner les objets et les membres dans des projets Visual Studio, a
 
  [Explorateur d’objets](#BKMK_ObjectBrowser)
 
- [Fenêtre Définition de code (C#, C++)](#BKMK_CodeDefinition)
+ [Fenêtre définition de code (C#, C++)](#BKMK_CodeDefinition)
 
- Vous pouvez également utiliser l’**Explorateur de solutions** pour parcourir les types et les membres dans vos projets, rechercher des symboles, afficher la hiérarchie d’appels d’une méthode, rechercher les références des symboles, etc., sans avoir à basculer entre les différentes fenêtres d’outils répertoriées précédemment.
+ Vous pouvez également utiliser **Explorateur de solutions** pour parcourir les types et les membres de vos projets, Rechercher des symboles, afficher la hiérarchie d’appels d’une méthode, Rechercher des références de symboles, etc. sans avoir à basculer entre les différentes fenêtres d’outils listées précédemment.
 
  Si vous disposez de Visual Studio Enterprise, vous pouvez utiliser les plans de code pour visualiser la structure de votre code et ses dépendances sur l’ensemble de la solution, et explorer les parties du code qui vous intéressent. Pour plus d’informations, consultez [Mapper les dépendances dans vos solutions](../modeling/map-dependencies-across-your-solutions.md).
 
 > [!NOTE]
 > L’édition de Visual Studio et les paramètres que vous utilisez peuvent affecter les fonctionnalités de l’environnement IDE. Elles peuvent différer de celles décrites dans cette rubrique.
 
-## <a name="BKMK_ClassView"></a> Affichage de classes (Visual Basic, C#, C++)
+## <a name="class-view-visual-basic-c-c"></a><a name="BKMK_ClassView"></a> Affichage de classes (Visual Basic, C#, C++)
  L’**affichage de classes** est illustré dans le cadre de l’**Explorateur de solutions** ainsi que dans une fenêtre distincte. La fenêtre **Affichage de classes** affiche les éléments d’une application. Le volet supérieur affiche les espaces de noms, les types, les interfaces, les énumérations et les classes, alors que le volet inférieur affiche les membres qui appartiennent au type sélectionné dans le volet supérieur. Cette fenêtre vous permet d’accéder aux définitions des membres dans le code source (ou dans l’**Explorateur d’objets** si l’élément est défini en dehors de votre solution).
 
  Il est inutile de compiler un projet pour afficher ses éléments dans la fenêtre **Affichage de classes**. La fenêtre est actualisée quand vous modifiez le code dans votre projet.
@@ -69,17 +69,17 @@ Vous pouvez examiner les objets et les membres dans des projets Visual Studio, a
 ### <a name="class-view-toolbar"></a>Barre d'outils Affichage de classes
  La barre d'outils Affichage de classes contient les commandes ci-dessous.
 
-|||
+|Commande|Description|
 |-|-|
 |**Nouveau dossier**|Crée un dossier ou sous-dossier virtuel dans lequel vous pouvez organiser les éléments fréquemment utilisés. Ils sont enregistrés dans le fichier solution (.suo) actif. Une fois que vous avez renommé ou supprimé un élément dans votre code, il peut apparaître dans un dossier virtuel en tant que nœud d'erreur. Pour corriger ce problème, supprimez le nœud d'erreur. Si vous avez renommé un élément, vous pouvez le déplacer de nouveau de la hiérarchie de projet vers le dossier.|
 |**Précédent**|Permet d'accéder à l'élément précédemment sélectionné.|
-|**Suivant**|Permet d'accéder à l'élément sélectionné suivant.|
+|**Prédictif**|Permet d'accéder à l'élément sélectionné suivant.|
 |**Afficher le diagramme de classes** (projets de code managé uniquement)|Devient disponible quand vous sélectionnez un espace de noms ou un type dans **Affichage de classes**. Quand un espace de noms est sélectionné, le diagramme de classes affiche tous les types qu'il contient. Quand un type est sélectionné, le diagramme de classes affiche uniquement ce type.|
 
 ### <a name="class-view-settings"></a>Paramètres de l'affichage de classes
  Le bouton **Paramètres de l’affichage de classes** dans la barre d’outils contient les paramètres ci-dessous.
 
-|||
+|Nom|Description|
 |-|-|
 |**Afficher les types de base**|Les types de base sont affichés.|
 |**Afficher les types dérivés**|Les types dérivés sont affichés.|
@@ -94,7 +94,7 @@ Vous pouvez examiner les objets et les membres dans des projets Visual Studio, a
 ### <a name="class-view-shortcut-menu"></a>Menu contextuel de la fenêtre Affichage de classes
  Le menu contextuel dans la fenêtre **Affichage de classes** peut contenir les commandes ci-dessous, selon le type de projet sélectionné.
 
-|||
+|Commande|Description|
 |-|-|
 |**Atteindre la définition**|Recherche la définition de l’élément dans le code source ou dans l’**Explorateur d’objets** si l’élément n’est pas défini dans le projet ouvert.|
 |**Parcourir les définitions**|Affiche l’élément sélectionné dans l’**Explorateur d’objets**.|
@@ -110,7 +110,7 @@ Vous pouvez examiner les objets et les membres dans des projets Visual Studio, a
 |**Atteindre la référence**|Affiche une référence au type ou au membre dans le code source, si elle est disponible.|
 |**Afficher la hiérarchie d’appels**|Affiche la méthode sélectionnée dans la fenêtre **Hiérarchie d’appels**.|
 
-## <a name="BKMK_CallHierarchy"></a> Hiérarchie d’appels (Visual Basic, C#, C++)
+## <a name="call-hierarchy-visual-basic-c-c"></a><a name="BKMK_CallHierarchy"></a> Hiérarchie d’appels (Visual Basic, C#, C++)
  La fenêtre **Hiérarchie d’appels** indique où une méthode donnée (ou une propriété ou un constructeur) est appelée, et répertorie les méthodes qui sont appelées à partir de cette méthode. Vous pouvez afficher plusieurs niveaux du graphique des appels, qui montre les relations appelant/appelé parmi les méthodes dans une portée spécifiée.
 
  Vous pouvez afficher la fenêtre **Hiérarchie d’appels** en sélectionnant une méthode (ou une propriété ou un constructeur), puis en choisissant **Afficher la hiérarchie d’appels** dans le menu contextuel. L'affichage doit ressembler à l'illustration suivante.
@@ -125,16 +125,16 @@ Vous pouvez examiner les objets et les membres dans des projets Visual Studio, a
 
  Le menu contextuel de la fenêtre **Hiérarchie d’appels** contient les commandes ci-dessous.
 
-|||
+|Commande|Description|
 |-|-|
 |**Ajouter comme nouvelle racine**|Ajoute le nœud sélectionné en tant que nouveau nœud racine.|
 |**Supprimer racine**|Supprime le nœud racine sélectionné du volet d’arborescence.|
 |**Atteindre la définition**|Navigue jusqu'à la définition d'origine d'une méthode.|
 |**Rechercher toutes les références**|Recherche dans le projet toutes les références à la méthode sélectionnée.|
 |**Copier**|Copie le nœud sélectionné (mais pas ses sous-nœuds).|
-|**Actualiser**|Actualise les informations.|
+|**Actualisation**|Actualise les informations.|
 
-## <a name="BKMK_ObjectBrowser"></a> Explorateur d’objets
+## <a name="object-browser"></a><a name="BKMK_ObjectBrowser"></a> Explorateur d’objets
  L’**Explorateur d’objets** affiche les descriptions du code dans vos projets.
 
  Vous pouvez filtrer ce que vous souhaitez afficher dans l’**Explorateur d’objets**. À l’aide de la liste déroulante située en haut de la fenêtre, vous pouvez choisir parmi les options suivantes :
@@ -160,7 +160,7 @@ Vous pouvez examiner les objets et les membres dans des projets Visual Studio, a
 ### <a name="object-browser-settings"></a>Paramètres de l'Explorateur d'objets
  Choisissez le bouton **Paramètres de l’Explorateur d’objets** dans la barre d’outils pour spécifier l’un des affichages suivants.
 
-|||
+|Nom|Description|
 |-|-|
 |**Afficher les espaces de noms**|Affiche les espaces de noms plutôt que les conteneurs physiques, dans le volet gauche. Les espaces de noms stockés dans plusieurs conteneurs physiques sont fusionnés.|
 |**Afficher les conteneurs**|Affiche les conteneurs physiques plutôt que les espaces de noms, dans le volet gauche. **Afficher les espaces de noms** et **Afficher les conteneurs** sont des paramètres qui s’excluent mutuellement.|
@@ -177,7 +177,7 @@ Vous pouvez examiner les objets et les membres dans des projets Visual Studio, a
 ### <a name="object-browser-shortcut-menu-commands"></a>Commandes du menu contextuel de l'Explorateur d'objets
  Le menu contextuel dans l’**Explorateur d’objets** peut contenir les commandes ci-dessous, selon le type d’élément sélectionné.
 
-|||
+|Commande|Description|
 |-|-|
 |**Parcourir les définitions**|Affiche le nœud principal de l'élément sélectionné.|
 |**Rechercher toutes les références**|Recherche l’élément de l’objet actuellement sélectionné et affiche les résultats dans une fenêtre **Résultats de la recherche**.|
@@ -193,7 +193,7 @@ Vous pouvez examiner les objets et les membres dans des projets Visual Studio, a
 |**Atteindre la référence**|Affiche une référence au type ou au membre dans le code source, si elle est disponible.|
 |**Afficher la hiérarchie d’appels**|Affiche la méthode sélectionnée dans la fenêtre **Hiérarchie d’appels**.|
 
-## <a name="BKMK_CodeDefinition"></a> Fenêtre Définition de code (C#, C++)
+## <a name="code-definition-window-c-c"></a><a name="BKMK_CodeDefinition"></a> Fenêtre Définition de code (C#, C++)
  La fenêtre **Définition de code** affiche la définition d’un type ou membre sélectionné dans le projet actif. Le type ou le membre peut être sélectionné dans l'éditeur de code ou dans une fenêtre d'affichage de code.
 
  Cette fenêtre est en lecture seule mais vous pouvez y définir des points d'arrêt ou des signets. Pour modifier la définition affichée, choisissez **Modifier la définition** dans le menu contextuel. Cela ouvre le fichier source dans l'éditeur de code et place le point d'insertion sur la ligne où la définition commence.
@@ -201,7 +201,7 @@ Vous pouvez examiner les objets et les membres dans des projets Visual Studio, a
 ### <a name="code-definition-shortcut-menu"></a>Menu contextuel de la fenêtre Définition de code
  Le menu contextuel dans la fenêtre **Définition de code** peut contenir les commandes répertoriées ci-dessous, selon le langage de programmation.
 
-|||
+|Commande|Description|
 |-|-|
 |**Créer des tests unitaires**|Crée des tests unitaires pour l'élément sélectionné.|
 |**Générer un diagramme de séquence**|Quand une méthode est sélectionnée, génère un diagramme de séquence.|
@@ -214,7 +214,7 @@ Vous pouvez examiner les objets et les membres dans des projets Visual Studio, a
 |**Point d’arrêt**|Insère un point d'arrêt (ou un point de trace).|
 |**Exécuter jusqu’au curseur**|Exécute le programme en mode débogage jusqu'à l'emplacement du curseur.|
 |**Copier**|Copie la ligne sélectionnée.|
-|**Mode Plan**|Commandes de mode Plan standard.|
+|**mode Plan**|Commandes de mode Plan standard.|
 |**Modifier la définition**|Déplace le point d'insertion vers la définition dans la fenêtre de code.|
 |**Choisir l’encodage**|Ouvre la fenêtre **Encodage** afin que vous puissiez définir un encodage pour le fichier.|
 
@@ -222,4 +222,4 @@ Vous pouvez examiner les objets et les membres dans des projets Visual Studio, a
  Vous pouvez utiliser la fenêtre **Structure du document** conjointement aux vues de concepteurs comme le concepteur pour une page XAML ou un concepteur Windows Form, ou avec des pages HTML. Cette fenêtre affiche les éléments dans une arborescence, afin que vous puissiez consulter la structure logique du formulaire ou de la page et rechercher des contrôles incorporés en profondeur ou masqués.
 
 ## <a name="see-also"></a>Voir aussi
- [Vue Classe et Explorateur d’objets, icônes](../ide/class-view-and-object-browser-icons.md)
+ [Icônes de l’Explorateur d’objets et de Affichage de classes](../ide/class-view-and-object-browser-icons.md)

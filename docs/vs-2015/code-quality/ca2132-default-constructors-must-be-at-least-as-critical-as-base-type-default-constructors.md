@@ -11,17 +11,17 @@ caps.latest.revision: 13
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 0ae271b116b372d4ae732d97ff3f9651ff9db426
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 401aa6f5ebec4dac99bedba6f12478c7c48d1dc5
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72643299"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85540814"
 ---
-# <a name="ca2132-default-constructors-must-be-at-least-as-critical-as-base-type-default-constructors"></a>CA2132 : Les constructeurs par défaut doivent être au moins aussi critiques que les constructeurs par défaut de type de base
+# <a name="ca2132-default-constructors-must-be-at-least-as-critical-as-base-type-default-constructors"></a>CA2132 : Les constructeurs par défaut doivent être au moins aussi critiques que les constructeurs par défaut de type de base
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Élément|Valeur|
 |-|-|
 |TypeName|DefaultConstructorsMustHaveConsistentTransparency|
 |CheckId|CA2132|
@@ -43,9 +43,9 @@ ms.locfileid: "72643299"
  Pour corriger la violation, supprimez le type ou ne dérivez pas de type non transparent de sécurité.
 
 ## <a name="when-to-suppress-warnings"></a>Quand supprimer les avertissements
- Ne supprimez pas les avertissements de cette règle. Les violations de cette règle par le code d’application entraînent le refus de CoreCLR de charger le type avec un <xref:System.TypeLoadException>.
+ Ne supprimez pas les avertissements de cette règle. Les violations de cette règle par le code d’application entraînent le refus de CoreCLR de charger le type avec un <xref:System.TypeLoadException> .
 
 ### <a name="code"></a>Code
  [!code-csharp[FxCop.Security.CA2132.DefaultConstructorsMustHaveConsistentTransparency#1](../snippets/csharp/VS_Snippets_CodeAnalysis/fxcop.security.ca2132.defaultconstructorsmusthaveconsistenttransparency/cs/ca2132 - defaultconstructorsmusthaveconsistenttransparency.cs#1)]
 
-### <a name="comments"></a>Comments
+### <a name="comments"></a>Commentaires

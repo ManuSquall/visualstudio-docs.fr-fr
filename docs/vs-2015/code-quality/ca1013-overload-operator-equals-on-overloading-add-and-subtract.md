@@ -19,17 +19,17 @@ caps.latest.revision: 24
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: dd1c144f04150e3965e2c0264b80147cbd9b8f19
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 2304b78073b806dfc4aec9686f061d946b379ded
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72663209"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85545416"
 ---
 # <a name="ca1013-overload-operator-equals-on-overloading-add-and-subtract"></a>CA1013 : Surchargez l'opérateur égal lors de la surcharge de l'opérateur d'addition et de soustraction
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Élément|Valeur|
 |-|-|
 |TypeName|OverloadOperatorEqualsOnOverloadingAddAndSubtract|
 |CheckId|CA1013|
@@ -40,9 +40,9 @@ ms.locfileid: "72663209"
  Un type public ou protégé implémente les opérateurs d'addition ou de soustraction sans implémenter l'opérateur d'égalité.
 
 ## <a name="rule-description"></a>Description de la règle
- Lorsque des instances d’un type peuvent être combinées à l’aide d’opérations telles que l’addition et la soustraction, vous devez presque toujours définir l’égalité pour retourner `true` pour deux instances qui ont les mêmes valeurs constitutives.
+ Lorsque des instances d’un type peuvent être combinées à l’aide d’opérations telles que l’addition et la soustraction, vous devez presque toujours définir l’égalité pour retourner les `true` deux instances qui ont les mêmes valeurs constitutives.
 
- Vous ne pouvez pas utiliser l’opérateur d’égalité par défaut dans une implémentation surchargée de l’opérateur d’égalité. Cela entraîne un dépassement de capacité de la pile. Pour implémenter l’opérateur d’égalité, utilisez la méthode Object. Equals dans votre implémentation. Lisez l'exemple suivant.
+ Vous ne pouvez pas utiliser l’opérateur d’égalité par défaut dans une implémentation surchargée de l’opérateur d’égalité. Cela entraîne un dépassement de capacité de la pile. Pour implémenter l’opérateur d’égalité, utilisez la méthode Object. Equals dans votre implémentation. Consultez l’exemple qui suit.
 
 ```vb
 If (Object.ReferenceEquals(left, Nothing)) Then
@@ -65,7 +65,7 @@ return left.Equals(right);
  Il est possible de supprimer sans risque un avertissement de cette règle lorsque l’implémentation par défaut de l’opérateur d’égalité fournit le comportement correct pour le type.
 
 ## <a name="example"></a>Exemple
- L’exemple suivant définit un type (`BadAddableType`) qui enfreint cette règle. Ce type doit implémenter l’opérateur d’égalité pour que deux instances ayant les mêmes valeurs de champ testent `true` pour l’égalité. Le type `GoodAddableType` montre l’implémentation corrigée. Notez que ce type implémente également l’opérateur d’inégalité et remplace <xref:System.Object.Equals%2A> pour satisfaire d’autres règles. Une implémentation complète implémenterait également <xref:System.Object.GetHashCode%2A>.
+ L’exemple suivant définit un type ( `BadAddableType` ) qui enfreint cette règle. Ce type doit implémenter l’opérateur d’égalité pour que deux instances qui ont les mêmes valeurs de champ testent l' `true` égalité. Le type `GoodAddableType` affiche l’implémentation corrigée. Notez que ce type implémente également l’opérateur d’inégalité et les remplacements <xref:System.Object.Equals%2A> pour satisfaire d’autres règles. Une implémentation complète implémenterait également <xref:System.Object.GetHashCode%2A> .
 
  [!code-csharp[FxCop.Design.AddAndSubtract#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Design.AddAndSubtract/cs/FxCop.Design.AddAndSubtract.cs#1)]
 
@@ -77,7 +77,9 @@ return left.Equals(right);
  Cet exemple produit la sortie suivante.
 
  **Type incorrect : {2,2} {2,2} sont égaux ? Aucun** 
-**type correct : {3,3} {3,3} sont égaux ? Oui** 
-**type correct : {3,3} 0 est = = ?   Oui** 1**type incorrect : 3 4 sont égaux ? Aucun** 5**type correct : 7 8 est = = ?   Non**
+ **type correct : {3,3} {3,3} sont égaux ? Oui**, 
+ **type correct : {3,3} {3,3} = = ?   Oui**, 
+ **type incorrect : {2,2} {9,9} sont-ils égaux ? Aucun** 
+ **type correct : {3,3} {9,9} est = = ?   Non**
 ## <a name="see-also"></a>Voir aussi
  [Opérateurs d’égalité](https://msdn.microsoft.com/library/bc496a91-fefb-4ce0-ab4c-61f09964119a)

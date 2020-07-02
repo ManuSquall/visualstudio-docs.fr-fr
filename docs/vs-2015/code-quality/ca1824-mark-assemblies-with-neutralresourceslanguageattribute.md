@@ -15,17 +15,17 @@ caps.latest.revision: 14
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: efa328fdff9c357e0183fc2ca80e4d77d4f6782e
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 19077a63d5aa22bda3f968943703a82488e2745d
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72661116"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85545286"
 ---
 # <a name="ca1824-mark-assemblies-with-neutralresourceslanguageattribute"></a>CA1824 : Marquer les assemblys avec NeutralResourcesLanguageAttribute
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Élément|Valeur|
 |-|-|
 |TypeName|MarkAssembliesWithNeutralResourcesLanguage|
 |CheckId|CA1824|
@@ -33,7 +33,7 @@ ms.locfileid: "72661116"
 |Modification avec rupture|Sans rupture|
 
 ## <a name="cause"></a>Cause
- Un assembly contient une ressource **resx**, mais le <xref:System.Resources.NeutralResourcesLanguageAttribute?displayProperty=fullName> n’est pas appliqué.
+ Un assembly contient une ressource **resx**, mais ne lui est pas <xref:System.Resources.NeutralResourcesLanguageAttribute?displayProperty=fullName> appliquée.
 
 ## <a name="rule-description"></a>Description de la règle
  L’attribut **NeutralResourcesLanguage** informe le **ResourceManager** de la langue utilisée pour afficher les ressources de la culture neutre d’un assembly. Lorsqu’il recherche des ressources dans la même culture que la langue des ressources neutres, le **ResourceManager** utilise automatiquement les ressources qui se trouvent dans l’assembly principal. Au lieu de rechercher un assembly satellite qui a la culture d’interface utilisateur actuelle pour le thread actuel. Cela permet d'améliorer les performances de recherche de la première ressource chargée et de réduire votre jeu de travail.

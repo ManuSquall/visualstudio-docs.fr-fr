@@ -13,12 +13,12 @@ caps.latest.revision: 21
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 445eaf5269ce59e6f6f8fa323020a80648567f54
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.openlocfilehash: df93a87285bdf1172e75b63ed956c1aa978fc71e
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68193628"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85545533"
 ---
 # <a name="channels-threads-view"></a>Canaux (vue Threads)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,7 +28,7 @@ Le visualiseur concurrentiel montre quatre types de canaux : les canaux de thre
 ## <a name="thread-channels"></a>Canaux de threads  
  Un canal de thread affiche l’état d’un seul thread, à l’aide d’un système de couleurs. Lorsque vous pointez sur le nom du canal, la fonction de démarrage du thread en question s’affiche. Le visualiseur concurrentiel détecte plusieurs types de threads. Les types les plus courants sont présentés dans le tableau suivant.  
   
-|||  
+|Thread|Description|  
 |-|-|  
 |Thread principal|Thread qui a démarré l’application.|  
 |Thread de travail|Thread qui a été créé par le thread principal de l’application.|  

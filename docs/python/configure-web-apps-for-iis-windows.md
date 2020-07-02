@@ -2,7 +2,7 @@
 title: Configurer des applications web Python pour IIS
 description: Guide pratique pour configurer des applications web Python afin de les exécuter avec Internet Information Services sur une machine virtuelle Windows.
 ms.date: 12/06/2018
-ms.topic: conceptual
+ms.topic: how-to
 author: JoshuaPartlow
 ms.author: joshuapa
 manager: jillfra
@@ -11,12 +11,12 @@ ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: 551cff18849f0e8ad9fcd6f2c1e08561291b177f
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 3c756f3d9a89294ecce054650037be3f7b26c291
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "62957370"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85540931"
 ---
 # <a name="configure-python-web-apps-for-iis"></a>Configurer des applications web Python pour IIS
 
@@ -86,7 +86,7 @@ Ensuite, modifiez le fichier *web.config* votre application en ajoutant les chem
     </system.webServer>
     ```
 
-1. Dans `<appSettings>` la section de *web.config* `WSGI_LOG` , ajouter `PYTHONPATH`des clés pour `WSGI_HANDLER`, (facultatif), et :
+1. Dans la `<appSettings>` section de *web.config*, ajoutez des clés pour `WSGI_HANDLER` , `WSGI_LOG` (facultatif) et `PYTHONPATH` :
 
     ```xml
     <appSettings>
@@ -139,7 +139,7 @@ Ensuite, modifiez le fichier *web.config* votre application en ajoutant les chem
     ALLOWED_HOSTS = ['1.2.3.4']
     ```
 
-    L’échec d’ajouter votre URL au tableau entraîne l’erreur **DisallowedHost\<à\>/ Invalid HTTP_HOST en-tête: ' URL du site '. Vous devrez peut-être\>ajouter «\<URL du site » à ALLOWED_HOSTS.**
+    Si vous n’ajoutez pas votre URL au tableau, l’erreur **DisallowedHost à l’en-tête HTTP_HOST at/non valide : ' \<site URL\> '. Vous devrez peut-être ajouter « \<site URL\> » à ALLOWED_HOSTS.**
 
     Remarque : lorsque le tableau est vide, Django autorise automatiquement « localhost » et « 127.0.0.1 », mais le fait d’ajouter votre URL de production a pour effet de retirer ces autorisations. C’est la raison pour laquelle vous pouvez souhaiter conserver des copies de développement et de production distinctes de *settings.py*, ou utiliser des variables d’environnement pour contrôler les valeurs d’exécution.
 

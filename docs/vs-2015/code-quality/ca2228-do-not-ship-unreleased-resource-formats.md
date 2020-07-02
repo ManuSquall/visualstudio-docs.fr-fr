@@ -15,17 +15,17 @@ caps.latest.revision: 16
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 9297ea0bb24eed54d0134a5f3c0fce87e6757adb
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 4adcae1c1cc616cdbcf5a7aa15342d221c2f4300
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72662883"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85540580"
 ---
-# <a name="ca2228-do-not-ship-unreleased-resource-formats"></a>CA2228 : Ne distribuez pas des formats de ressources non commercialisés
+# <a name="ca2228-do-not-ship-unreleased-resource-formats"></a>CA2228 : Ne distribuez pas des formats de ressources non commercialisés
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Élément|Valeur|
 |-|-|
 |TypeName|DoNotShipUnreleasedResourceFormats|
 |CheckId|CA2228|
@@ -33,13 +33,13 @@ ms.locfileid: "72662883"
 |Modification avec rupture|Sans rupture|
 
 ## <a name="cause"></a>Cause
- Un fichier de ressources a été créé à l’aide d’une version de la [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] qui n’est pas prise en charge actuellement.
+ Un fichier de ressources a été créé à l’aide d’une version de [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] qui n’est pas prise en charge actuellement.
 
 ## <a name="rule-description"></a>Description de la règle
  Les fichiers de ressources générés à l’aide des versions préliminaires du [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] peuvent ne pas être utilisables par les versions prises en charge du .NET Framework.
 
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations
- Pour corriger une violation de cette règle, générez la ressource à l’aide d’une version prise en charge du [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]k.
+ Pour corriger une violation de cette règle, générez la ressource à l’aide d’une version prise en charge de [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] k.
 
 ## <a name="when-to-suppress-warnings"></a>Quand supprimer les avertissements
  Ne supprimez aucun avertissement de cette règle.
