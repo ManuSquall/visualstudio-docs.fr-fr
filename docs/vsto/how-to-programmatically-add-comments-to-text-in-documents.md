@@ -1,7 +1,7 @@
 ---
-title: 'Procédure : Ajouter par programmation des commentaires à du texte dans des documents'
+title: 'Comment : ajouter des commentaires à du texte dans des documents par programmation'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -13,15 +13,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5aba4c6446b2dbcfcb31c423a28eedd552799b4e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 88350a0fb50c1d5feb0eba9706ef5b6ad56fd9df
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62967668"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85538111"
 ---
-# <a name="how-to-programmatically-add-comments-to-text-in-documents"></a>Procédure : Ajouter par programmation des commentaires à du texte dans des documents
-  La propriété de commentaires de la classe de Document ajoute un commentaire à une plage de texte dans un document Microsoft Office Word.
+# <a name="how-to-programmatically-add-comments-to-text-in-documents"></a>Comment : ajouter des commentaires à du texte dans des documents par programmation
+  La propriété Comments de la classe document ajoute un commentaire à une plage de texte dans un document Word Microsoft Office.
 
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]
 
@@ -34,7 +34,7 @@ ms.locfileid: "62967668"
      [!code-vb[Trin_VstcoreWordAutomation#118](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#118)]
      [!code-csharp[Trin_VstcoreWordAutomation#118](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#118)]
 
-## <a name="to-add-a-new-comment-to-text-in-a-vsto-add-in"></a>Pour ajouter un nouveau commentaire à du texte dans un complément, VSTO
+## <a name="to-add-a-new-comment-to-text-in-a-vsto-add-in"></a>Pour ajouter un nouveau commentaire à du texte dans un complément VSTO
 
 1. Appelez la méthode <xref:Microsoft.Office.Interop.Word.Comments.Add%2A> de la propriété <xref:Microsoft.Office.Interop.Word._Document.Comments%2A> et spécifiez une plage et le texte du commentaire.
 
@@ -47,5 +47,5 @@ ms.locfileid: "62967668"
  Pour modifier les initiales de l’utilisateur que Word ajoute aux commentaires, utilisez la propriété <xref:Microsoft.Office.Interop.Word._Application.UserInitials%2A> .
 
 ## <a name="see-also"></a>Voir aussi
-- [Guide pratique pour Supprimer par programmation tous les commentaires des documents](../vsto/how-to-programmatically-remove-all-comments-from-documents.md)
+- [Comment : supprimer tous les commentaires des documents par programmation](../vsto/how-to-programmatically-remove-all-comments-from-documents.md)
 - [Élément hôte de document](../vsto/document-host-item.md)

@@ -2,7 +2,7 @@
 title: Utiliser PyLint pour le code Python
 description: Exécutez PyLint dans Visual Studio pour vérifier les problèmes de code Python, y compris les options de ligne de commande pour personnaliser le linting.
 ms.date: 03/13/2019
-ms.topic: conceptual
+ms.topic: how-to
 author: JoshuaPartlow
 ms.author: joshuapa
 manager: jillfra
@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: bf503cff7d8de2c00a93385113de05de00059390
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: d410fd7575b6f71f272f6924d15249f89aa6ebcc
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "62956804"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85540099"
 ---
 # <a name="use-pylint-to-check-python-code"></a>Utiliser PyLint pour vérifier le code Python
 
@@ -50,7 +50,7 @@ Par exemple, pour supprimer les avertissements de type « missing docstring »
    pylint --generate-rcfile > .pylintrc
    ```
 
-1. Dans Visual Studio Solution Explorer, cliquez à droite sur votre projet, sélectionnez **Ajouter** > **l’élément existant,** naviguer vers le nouveau fichier *.pylintrc,* sélectionnez-le et **sélectionnez Ajouter**.
+1. Dans Visual Studio Explorateur de solutions, cliquez avec le bouton droit sur votre projet, sélectionnez **Ajouter un**  >  **élément existant**, accédez au nouveau fichier *. pylintrc* , sélectionnez-le, puis sélectionnez **Ajouter**.
 
 1. Ouvrez le fichier. Celui-ci contient plusieurs paramètres que vous pouvez changer. Pour désactiver un avertissement, recherchez la section `[MESSAGES CONTROL]`, puis localisez le paramètre `disable` dans cette section. Il existe une longue chaîne de messages spécifiques auxquels vous pouvez ajouter les avertissements de votre choix. Dans cet exemple, ajoutez `,missing-docstring` (y compris la virgule de délimitation).
 

@@ -17,16 +17,16 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5134e17c26ffd7b34c0277c571173ba03d758bee
-ms.sourcegitcommit: 9c1cecaff4d9955276eee7865b78d47679dd1e2a
+ms.openlocfilehash: d3a7c5eb8aa489da9ced0803e0f83855734825ff
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "80638783"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85537369"
 ---
 # <a name="measure-application-performance-by-analyzing-cpu-usage"></a>Mesurer les performances d’application en analysant l’utilisation de l’UC
 
-Vous pouvez utiliser les outils de profilage de Visual Studio pour analyser les problèmes de performances dans votre application. Cet article montre comment utiliser **l’onglet Utilisation CPU** des outils de diagnostic pour obtenir des données de performance pour votre application.
+Vous pouvez utiliser les outils de profilage de Visual Studio pour analyser les problèmes de performances dans votre application. Cet article explique comment utiliser l’onglet utilisation de l' **UC** des outils de diagnostic pour obtenir des données de performances pour votre application.
 
 Quand le débogueur est suspendu, l’outil **Utilisation de l’UC** collecte les informations relatives aux fonctions qui s’exécutent dans votre application. L’outil répertorie les fonctions qui ont effectué un travail et fournit un graphique chronologique que vous pouvez utiliser pour examiner des segments spécifiques d’une session d’échantillonnage.
 
@@ -35,7 +35,7 @@ Le hub de diagnostic propose de nombreuses autres options pour exécuter et gér
 > [!Important]
 > Les outils de diagnostics sont pris en charge pour le développement .NET dans Visual Studio (y compris ASP.NET) et pour le développement natif/C++.
 
-Dans cet article, nous allons décrire l’analyse de l’utilisation de l’UC dans un flux de travail de débogage normal. Vous pouvez également analyser l’utilisation du processeur sans un débbuggeur attaché ou en ciblant une application en cours d’exécution. Pour plus d’informations, voir [outils de profilage Run avec ou sans le débbugger](../profiling/running-profiling-tools-with-or-without-the-debugger.md). Vous pouvez également utiliser un autre outil de profilage, [PerfTips](../profiling/perftips.md), pour passer à travers le code et identifier combien de temps il faut des fonctions particulières ou des blocs de code pour remplir.
+Dans cet article, nous allons décrire l’analyse de l’utilisation de l’UC dans un flux de travail de débogage normal. Vous pouvez également analyser l’utilisation de l’UC sans débogueur ou en ciblant une application en cours d’exécution. Pour plus d’informations, consultez [exécuter les outils de profilage avec ou sans le débogueur](../profiling/running-profiling-tools-with-or-without-the-debugger.md). Vous pouvez également utiliser un autre outil de profilage, [PerfTips](../profiling/perftips.md), pour effectuer un pas à pas détaillé dans le code et identifier le temps nécessaire à l’exécution de fonctions ou de blocs de code particuliers.
 
 Vous pouvez utiliser les Outils de profilage sans débogueur avec Windows 7 et les versions ultérieures. Windows 8 et les versions ultérieures sont nécessaires pour exécuter les Outils de profilage avec le débogueur (fenêtre **Outils de diagnostic**).
 
@@ -53,27 +53,27 @@ Ce didacticiel présente les procédures suivantes :
 
     En définissant deux points d’arrêt, vous limitez la collecte de données aux sections de code que vous souhaitez analyser.
 
-3. La fenêtre **Outils diagnostiques** apparaît automatiquement à moins que vous ne l’ayez éteinte. Pour retouaître la fenêtre, cliquez sur **Debug** > **Windows** > **Show Diagnostic Tools**.
+3. La fenêtre **outils de diagnostic** s’affiche automatiquement, sauf si vous l’avez désactivée. Pour afficher à nouveau la fenêtre, cliquez sur **Déboguer**  >  **fenêtres**  >  **afficher les outils de diagnostic**.
 
-4. Vous pouvez choisir d’afficher **Utilisation de la mémoire**, [Utilisation de l’UC](../profiling/Memory-Usage.md) ou les deux, avec le paramètre **Sélectionner les outils** de la barre d’outils. Si vous exécutez Visual Studio Enterprise, vous pouvez également activer ou désactiver IntelliTrace dans **Tools** > **Options** > **IntelliTrace**.
+4. Vous pouvez choisir d’afficher **Utilisation de la mémoire**, [Utilisation de l’UC](../profiling/Memory-Usage.md) ou les deux, avec le paramètre **Sélectionner les outils** de la barre d’outils. Si vous exécutez Visual Studio Enterprise, vous pouvez également activer ou désactiver IntelliTrace dans **Outils**  >  **options**  >  **IntelliTrace**.
 
      ![Afficher les outils de diagnostic](../profiling/media/diag-tools-select-tool.png "DiagToolsSelectTool")
 
      Nous allons nous intéresser principalement à l’utilisation du processeur. Vérifiez donc que l’outil **Utilisation de l’UC** est activé (il est activé par défaut).
 
-5. Cliquez sur **Debug** > **Démarrer Debugging** (ou **Démarrer** sur la barre d’outils, ou **F5**).
+5. Cliquez sur **Déboguer**  >  **Démarrer le débogage** (ou **Démarrer** dans la barre d’outils, ou **F5**).
 
-     Lorsque l’application est chargée, la vue Résumé des outils de diagnostics s’affiche. Si vous avez besoin d’ouvrir la fenêtre, cliquez sur **Debug** > **Windows** > **Show Diagnostic Tools**.
+     Lorsque l’application est chargée, la vue Résumé des outils de diagnostics s’affiche. Si vous avez besoin d’ouvrir la fenêtre, cliquez sur **Déboguer**  >  **fenêtres**  >  **afficher les outils de diagnostic**.
 
-     ![Onglet résumé des outils de diagnostic](../profiling/media/diag-tools-summary-tab.png "DiagToolsSummaryTab")
+     ![Onglet Résumé des outils de diagnostic](../profiling/media/diag-tools-summary-tab.png "DiagToolsSummaryTab")
 
-     Pour plus d’informations sur les événements, voir [Rechercher et filtrer l’onglet Événements de la fenêtre Outils diagnostiques](https://devblogs.microsoft.com/devops/searching-and-filtering-the-events-tab-of-the-diagnostic-tools-window/).
+     Pour plus d’informations sur les événements, consultez [recherche et filtrage de l’onglet événements de la fenêtre outils de diagnostic](https://devblogs.microsoft.com/devops/searching-and-filtering-the-events-tab-of-the-diagnostic-tools-window/).
 
 6. Exécutez le scénario qui doit provoquer le premier point d’arrêt.
 
 7. Pendant que le débogueur est suspendu, activez la collecte des données d’utilisation du processeur, puis ouvrez l’onglet **Utilisation de l’UC**.
 
-     ![Les outils de diagnostic permettent le profilage de processeur](../profiling/media/diag-tools-enable-cpu-profiling.png "DiagToolsEnableCPUProfiling")
+     ![Les outils de diagnostics activent le profilage de l’UC](../profiling/media/diag-tools-enable-cpu-profiling.png "DiagToolsEnableCPUProfiling")
 
      Quand vous choisissez **Enregistrer le profil du processeur**, Visual Studio commence à enregistrer vos fonctions, ainsi que la durée de leur exécution. Vous pouvez uniquement afficher les données collectées lorsque votre application s’interrompt à un point d’arrêt.
 
@@ -83,20 +83,20 @@ Ce didacticiel présente les procédures suivantes :
 
      Le profileur commence la préparation des données de thread. Attendez qu’elle se termine.
 
-     ![Outils de diagnostic Préparant des fils](../profiling/media/diag-tools-preparing-data.png "DiagToolsPreparingThreads")
+     ![Outils de diagnostics préparation des threads](../profiling/media/diag-tools-preparing-data.png "DiagToolsPreparingThreads")
 
      L’outil Utilisation de l’UC affiche le rapport sous l’onglet **Utilisation de l’UC**.
 
-     ![Diagnostics Tools CPU Use Tab (en anglais)](../profiling/media/diag-tools-cpu-usage-tab.png "DiagToolsCPUUsageTab")
+     ![Onglet utilisation de l’UC des outils de diagnostic](../profiling/media/diag-tools-cpu-usage-tab.png "DiagToolsCPUUsageTab")
 
 9. Si vous souhaitez analyser une région de code plus spécifique, sélectionnez une région (qui affiche les données de profilage) dans la chronologie du processeur.
 
-     ![Outils de diagnostic Sélectionnant un segment de temps](../profiling/media/diag-tools-select-time-segment.png "DiagToolsSelectTimeSegment")
+     ![Outils de diagnostic sélectionnant un segment de temps](../profiling/media/diag-tools-select-time-segment.png "DiagToolsSelectTimeSegment")
 
      À ce stade, vous pouvez commencer à analyser les données.
 
      > [!TIP]
-     >  Lorsque vous essayez d’identifier les problèmes de performance, prenez plusieurs mesures. Les performances varient naturellement d’un run-to-run, et les chemins de code exécutent généralement plus lent la première fois qu’ils exécutent en raison de travaux de initialisation ponctuelles tels que le chargement des DLL, les méthodes de compilation JIT, et l’initialisation des caches. En prenant plusieurs mesures, vous obtenez une meilleure idée de la plage et la médiane de la métrique étant montrée, qui vous permet de comparer la première fois par rapport aux performances stables de l’état d’une zone de code.
+     >  Lorsque vous tentez d’identifier les problèmes de performances, effectuez plusieurs mesures. Les performances varient naturellement d’une exécution à l’autre, et les chemins de code s’exécutent généralement plus lentement la première fois qu’ils s’exécutent en raison d’un travail d’initialisation unique, tel que le chargement des dll, la compilation JIT des méthodes et l’initialisation des caches. En effectuant plusieurs mesures, vous avez une meilleure idée de la plage et de la valeur médiane de la mesure affichée, ce qui vous permet de comparer la première fois et les performances d’état stable d’une zone de code.
 
 ## <a name="step-2-analyze-cpu-usage-data"></a>Étape 2 : Analyser les données d’utilisation de l’UC
 
@@ -104,7 +104,7 @@ Nous vous recommandons de commencer à analyser vos données en examinant la lis
 
 1. Dans la liste des fonctions, examinez celles qui effectuent le plus de travail.
 
-    ![Liste de fonctions d’utilisation de processeurs d’outils diagnostiques](../profiling/media/diag-tools-cpu-usage-function-list.png "DiagToolsCPUUsageFunctionList")
+    ![Liste des fonctions d’utilisation de l’UC des outils de diagnostic](../profiling/media/diag-tools-cpu-usage-function-list.png "DiagToolsCPUUsageFunctionList")
 
     > [!TIP]
     > Les fonctions sont classées par ordre et ce sont celles qui effectuent le plus de travail qui figurent en haut de la liste (elles ne sont pas classées selon leur ordre d’appel). Ainsi, vous pouvez identifier rapidement les fonctions avec les temps d’exécution les plus longs.
@@ -113,7 +113,7 @@ Nous vous recommandons de commencer à analyser vos données en examinant la lis
 
     Lorsque vous double-cliquez sur une fonction, la vue **Appelant/appelé** s’ouvre dans le volet gauche.
 
-    ![Outils de diagnostic - Vue Appelant/appelé](../profiling/media/diag-tools-caller-callee.png "DiagToolsCallerCallee DiagToolsCallerCallee")
+    ![Outils de diagnostic - Vue Appelant/appelé](../profiling/media/diag-tools-caller-callee.png "DiagToolsCallerCallee")
 
     Dans cette vue, la fonction sélectionnée apparaît dans le titre et dans la zone **Fonction active** (ici, GetNumber). La fonction qui a appelé la fonction active s’affiche sur la gauche sous **Fonctions appelantes**, et toutes les fonctions appelées par la fonction active s’affichent dans la zone **Fonctions appelées** sur la droite. Vous pouvez sélectionner l’une ou l’autre de ces zones pour modifier la fonction active.
 
@@ -128,13 +128,13 @@ Nous vous recommandons de commencer à analyser vos données en examinant la lis
     Chaque zone numérotée dans l'illustration est en rapport avec une étape de la procédure.
 
     ::: moniker range=">=vs-2019"
-    ![Diagnostics Outils Call Tree](../profiling/media/vs-2019/diag-tools-call-tree.png "DiagToolsCallTree")
+    ![Arborescence des appels des outils de diagnostic](../profiling/media/vs-2019/diag-tools-call-tree.png "DiagToolsCallTree")
     ::: moniker-end
     ::: moniker range="vs-2017"
-    ![Diagnostics Outils Call Tree](../profiling/media/diag-tools-call-tree.png "DiagToolsCallTree")
+    ![Arborescence des appels des outils de diagnostic](../profiling/media/diag-tools-call-tree.png "DiagToolsCallTree")
     ::: moniker-end
 
-    |||
+    |Image|Description|
     |-|-|
     |![Étape 1](../profiling/media/ProcGuid_1.png "ProcGuid_1")|Le nœud de premier niveau des arborescences d'appels de l'outil Utilisation de l'UC est un pseudo-nœud|
     |![Étape 2](../profiling/media/ProcGuid_2.png "ProcGuid_2")|Dans la plupart des applications, quand l'option [Afficher le code externe](#view-external-code) est désactivée, le nœud de deuxième niveau est un nœud **[Code externe]** contenant le code système et de l'infrastructure qui démarre et arrête l'application, dessine l'interface utilisateur, contrôle la planification des threads et fournit d'autres services de niveau inférieur à l'application.|
@@ -152,7 +152,7 @@ Nous vous recommandons de commencer à analyser vos données en examinant la lis
     ::: moniker range=">=vs-2019"
     Pour afficher les appels de fonction qui présentent la plus grande consommation du processeur dans l’arborescence des appels, cliquez sur **Développer le chemin réactif**.
 
-    ![Diagnostics Outils Hot Path](../profiling/media/vs-2019/diag-tools-hot-path.png "DiagToolsHotPath")
+    ![Chemin réactif des outils de diagnostic](../profiling/media/vs-2019/diag-tools-hot-path.png "DiagToolsHotPath")
     ::: moniker-end
 
     > [!NOTE]
@@ -160,18 +160,18 @@ Nous vous recommandons de commencer à analyser vos données en examinant la lis
 
 ## <a name="view-external-code"></a>Afficher le code externe
 
-Le code externe correspond aux fonctions des composants système et de framework exécutés par le code que vous écrivez. Le code externe inclut les fonctions qui démarrent et arrêtent l'application, dessinent l'interface utilisateur, contrôlent les threads et fournissent d'autres services de bas niveau à l'application. Dans la plupart des cas, vous ne serez pas intéressé par le code externe, et donc l’outil d’utilisation du processeur rassemble les fonctions externes d’une méthode utilisateur en un nœud **[Code externe].**
+Le code externe correspond aux fonctions des composants système et de framework exécutés par le code que vous écrivez. Le code externe inclut les fonctions qui démarrent et arrêtent l'application, dessinent l'interface utilisateur, contrôlent les threads et fournissent d'autres services de bas niveau à l'application. Dans la plupart des cas, vous n’êtes pas intéressé par le code externe. l’outil utilisation de l’UC regroupe donc les fonctions externes d’une méthode utilisateur en un seul nœud **[code externe]** .
 
 Si vous voulez afficher les chemins d’appel du code externe, choisissez **Afficher le code externe** dans la liste **Filtrer la vue**, puis **Appliquer**.
 
-![Choisir Filtrer l'affichage, puis Afficher le code externe](../profiling/media/diag-tools-show-external-code.png "DiagToolsShowExternalCode (en anglais)")
+![Choisir Filtrer l'affichage, puis Afficher le code externe](../profiling/media/diag-tools-show-external-code.png "DiagToolsShowExternalCode")
 
-N'oubliez pas que de nombreuses chaînes d'appel en code externe sont profondément imbriquées, la largeur de la colonne Nom de fonction ne peut pas dépasser la largeur d'affichage de presque tous les moniteurs d'ordinateur, sauf les plus larges. Lorsque cela se produit, les noms de fonction sont affichés comme **[...]**.
+N'oubliez pas que de nombreuses chaînes d'appel en code externe sont profondément imbriquées, la largeur de la colonne Nom de fonction ne peut pas dépasser la largeur d'affichage de presque tous les moniteurs d'ordinateur, sauf les plus larges. Dans ce cas, les noms de fonction sont affichés sous la forme **[...]**.
 
 Utilisez la zone de recherche pour trouver le nœud que vous cherchez, puis utilisez la barre de défilement horizontal pour afficher les données dans la vue.
 
 > [!TIP]
-> Si vous profilez du code externe qui appelle des fonctions Windows, vous devez vérifier que vous disposez des fichiers .*pdb* les plus récents. Sans ces fichiers, vos vues de rapports répertorient des noms de fonctions Windows cryptés et difficiles à comprendre. Pour plus d’informations sur la façon de s’assurer que vous avez les fichiers dont vous avez besoin, voir [spécifier le symbole (.pdb) et les fichiers source dans le débogénaire](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md).
+> Si vous profilez du code externe qui appelle des fonctions Windows, vous devez vérifier que vous disposez des fichiers .*pdb* les plus récents. Sans ces fichiers, vos vues de rapports répertorient des noms de fonctions Windows cryptés et difficiles à comprendre. Pour plus d’informations sur la façon de s’assurer que vous disposez des fichiers dont vous avez besoin, consultez [spécifier les fichiers de symboles (. pdb) et les fichiers sources dans le débogueur](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md).
 
 ## <a name="next-steps"></a>Étapes suivantes
 

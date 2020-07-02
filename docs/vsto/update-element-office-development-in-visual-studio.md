@@ -1,7 +1,7 @@
 ---
-title: '&lt;mettre à jour&gt; élément (développement Office dans Visual Studio)'
+title: '&lt;Update &gt; , élément (développement Office dans Visual Studio)'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - VB
 - CSharp
@@ -14,15 +14,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 461fae79e3af346d64017166b6dae3ace67599e1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 241bddb8c79a01bb1ba6921486a4dc46d99940cc
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62967531"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85537382"
 ---
-# <a name="ltupdategt-element-office-development-in-visual-studio"></a>&lt;mettre à jour&gt; élément (développement Office dans Visual Studio)
-  Le `update` élément spécifie la fréquence à laquelle la solution vérifie les mises à jour.
+# <a name="ltupdategt-element-office-development-in-visual-studio"></a>&lt;Update &gt; , élément (développement Office dans Visual Studio)
+  L' `update` élément spécifie l’intervalle auquel la solution recherchera les mises à jour.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -43,24 +43,24 @@ ms.locfileid: "62967531"
 
 |Attribut|Description|
 |---------------|-----------------|
-|`enabled`|Obligatoire. Définissez activé sur l’une des valeurs suivantes :<br /><br /> -   **true** pour rechercher les mises à jour.<br />-   **false** pour empêcher la vérification des mises à jour.|
+|`enabled`|Obligatoire. Définissez Enabled sur l’une des valeurs suivantes :<br /><br /> -   **true** pour rechercher les mises à jour.<br />-   **false** pour empêcher la vérification des mises à jour.|
 
  L’élément `update` comporte les éléments enfants suivants.
 
 ### <a name="expiration"></a>expiration
- L’élément `expiration` est obligatoire et se trouve dans l’espace de noms `vstav3` . Cet élément spécifie l’intervalle auquel la solution vérifie les mises à jour.
+ L’élément `expiration` est obligatoire et se trouve dans l’espace de noms `vstav3` . Cet élément spécifie l’intervalle auquel la solution recherche les mises à jour.
 
  L’élément `expiration` a les attributs suivants.
 
 |Attribut|Description|
 |---------------|-----------------|
-|`maximumAge`| Obligatoire. Définissez ce paramètre en entier.|
-|`unit`|Obligatoire. Définissez `unit` à une des valeurs suivantes :<br /><br /> -   **Heures**<br />-   **Jours**<br />-   **Semaines**|
+|`maximumAge`| Obligatoire. Affectez-lui une valeur entière.|
+|`unit`|Obligatoire. Définissez l' `unit` une des valeurs suivantes :<br /><br /> -   **travaillé**<br />-   **précédant**<br />-   **semaines**|
 
-## <a name="example-of-always-checking-for-updates"></a>Exemple de recherche toujours les mises à jour
+## <a name="example-of-always-checking-for-updates"></a>Exemple de recherche systématique des mises à jour
 
 ### <a name="description"></a>Description
- L’exemple de code suivant illustre un `update` élément qui est défini sur toujours vérifier les mises à jour dans les solutions Office.
+ L’exemple de code suivant illustre un `update` élément qui est défini pour toujours rechercher les mises à jour dans les solutions Office.
 
 ### <a name="code"></a>Code
 
@@ -71,7 +71,7 @@ ms.locfileid: "62967531"
 ## <a name="example-of-setting-a-default-update-interval"></a>Exemple de définition d’un intervalle de mise à jour par défaut
 
 ### <a name="description"></a>Description
- L’exemple de code suivant illustre un `update` élément dans un manifeste d’application pour les solutions Office. Cet exemple de code fait partie d’un exemple plus complet fourni dans [manifestes d’Application pour les solutions Office](../vsto/application-manifests-for-office-solutions.md).
+ L’exemple de code suivant illustre un `update` élément dans un manifeste d’application pour les solutions Office. Cet exemple de code fait partie d’un exemple plus complet fourni dans [les manifestes d’application pour les solutions Office](../vsto/application-manifests-for-office-solutions.md).
 
 ### <a name="code"></a>Code
 

@@ -1,7 +1,7 @@
 ---
 title: Remplir des tableaux Word avec des propriétés de document par programmation
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -13,19 +13,19 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e296a63c208bc1c3316f89b7b4003f16daf3c93e
-ms.sourcegitcommit: 13ab9a5ab039b070b9cd9251d0b83dd216477203
+ms.openlocfilehash: 92d9b38c6a1e770749849966deec7f503f9eeb5d
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66177786"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85537811"
 ---
-# <a name="how-to-programmatically-populate-word-tables-with-document-properties"></a>Procédure : Remplir par programmation des tableaux Word avec des propriétés de document
+# <a name="how-to-programmatically-populate-word-tables-with-document-properties"></a>Comment : remplir des tableaux Word avec des propriétés de document par programmation
   L'exemple suivant crée un tableau Microsoft Office Word en haut du document et le remplit avec les propriétés du document hôte.
 
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]
 
-## <a name="populate-tables-in-a-document-level-customization"></a>Remplir les tables dans une personnalisation au niveau du document
+## <a name="populate-tables-in-a-document-level-customization"></a>Remplir des tables dans une personnalisation au niveau du document
 
 ### <a name="to-create-a-table-and-populate-it-with-document-properties"></a>Pour créer un tableau et le remplir avec des propriétés de document
 
@@ -59,7 +59,7 @@ ms.locfileid: "66177786"
    [!code-vb[Trin_VstcoreWordAutomation#89](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#89)]
    [!code-csharp[Trin_VstcoreWordAutomation#89](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#89)]
 
-## <a name="populate-tables-in-a-vsto-add-in"></a>Remplir les tables dans un composant logiciel complément VSTO
+## <a name="populate-tables-in-a-vsto-add-in"></a>Remplir des tables dans un complément VSTO
 
 ### <a name="to-create-a-table-and-populate-it-with-document-properties"></a>Pour créer un tableau et le remplir avec des propriétés de document
 
@@ -94,7 +94,7 @@ ms.locfileid: "66177786"
    [!code-csharp[Trin_VstcoreWordAutomationAddIn#89](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#89)]
 
 ## <a name="see-also"></a>Voir aussi
-- [Guide pratique pour Créer par programmation des tableaux Word](../vsto/how-to-programmatically-create-word-tables.md)
-- [Guide pratique pour Ajouter texte et mise en forme aux cellules des tableaux Word par programmation](../vsto/how-to-programmatically-add-text-and-formatting-to-cells-in-word-tables.md)
-- [Guide pratique pour Ajouter par programmation des lignes et colonnes à des tableaux Word](../vsto/how-to-programmatically-add-rows-and-columns-to-word-tables.md)
-- [Paramètres optionnels dans les solutions Office](../vsto/optional-parameters-in-office-solutions.md)
+- [Comment : créer des tableaux Word par programmation](../vsto/how-to-programmatically-create-word-tables.md)
+- [Comment : ajouter du texte et une mise en forme à des cellules dans des tableaux Word par programmation](../vsto/how-to-programmatically-add-text-and-formatting-to-cells-in-word-tables.md)
+- [Comment : ajouter des lignes et des colonnes à des tableaux Word par programmation](../vsto/how-to-programmatically-add-rows-and-columns-to-word-tables.md)
+- [Paramètres facultatifs dans les solutions Office](../vsto/optional-parameters-in-office-solutions.md)

@@ -15,17 +15,17 @@ caps.latest.revision: 17
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 7de098d264dbdd6d7d9daea385de2e03d4e1ba35
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 29cc322dd59dc0de66af8f92a46524d15b0022c7
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72653820"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85539579"
 ---
-# <a name="ca1053-static-holder-types-should-not-have-constructors"></a>CA1053 : Les types de conteneurs statiques ne doivent pas comporter de constructeur
+# <a name="ca1053-static-holder-types-should-not-have-constructors"></a>CA1053 : Les types de conteneurs statiques ne doivent pas comporter de constructeur
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Élément|Valeur|
 |-|-|
 |TypeName|StaticHolderTypesShouldNotHaveConstructors|
 |CheckId|CA1053|
@@ -48,6 +48,6 @@ ms.locfileid: "72653820"
  Ne supprimez aucun avertissement de cette règle. La présence du constructeur suggère que le type n’est pas un type static.
 
 ## <a name="example"></a>Exemple
- L’exemple suivant montre un type qui viole cette règle. Notez qu’il n’y a pas de constructeur par défaut dans le code source. Quand ce code est compilé dans un assembly, C# le compilateur insère un constructeur par défaut, ce qui viole cette règle. Pour corriger cela, déclarez un constructeur privé.
+ L’exemple suivant montre un type qui viole cette règle. Notez qu’il n’y a pas de constructeur par défaut dans le code source. Quand ce code est compilé dans un assembly, le compilateur C# insère un constructeur par défaut, ce qui viole cette règle. Pour corriger cela, déclarez un constructeur privé.
 
  [!code-csharp[FxCop.Design.StaticTypes#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Design.StaticTypes/cs/FxCop.Design.StaticTypes.cs#1)]
