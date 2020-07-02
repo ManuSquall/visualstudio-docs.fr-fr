@@ -14,29 +14,29 @@ caps.latest.revision: 20
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: d2916bd43571ddade68e3e642b5d006c26269670
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: 6bc2d05c6b6aae4b2f33d135c6859da7b17de963
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75850505"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85533157"
 ---
 # <a name="debug-store-apps-in-visual-studio"></a>Déboguer des applications du Windows Store dans Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Le débogueur Visual Studio vous permet de contrôler l'exécution d'un programme et d'examiner son état. Vous pouvez utiliser le débogueur pour trouver la cause des défauts de votre application Windows Store et pour comprendre le fonctionnement exact de votre application. Quand vous suspendez (pause) l'exécution dans le débogueur, Visual Studio affiche le fichier source qui contient le code en cours d'exécution et met en surbrillance l'instruction en cours d'exécution. Vous pouvez observer les valeurs des variables, la pile d'appels des fonctions en cours d'exécution et d'autres aspects de l'état de votre programme. Vous pouvez continuer à exécuter (parcourir) le programme instruction par instruction pour voir comment elles modifient les valeurs du programme. Dans les applications écrites en JavaScript, vous pouvez examiner et manipuler le modèle DOM de la page.
+Le débogueur Visual Studio vous permet de contrôler l'exécution d'un programme et d'examiner son état. Vous pouvez utiliser le débogueur pour trouver la cause des défauts de votre application Windows Store et pour comprendre le fonctionnement exact de votre application. Quand vous suspendez (pause) l'exécution dans le débogueur, Visual Studio affiche le fichier source qui contient le code en cours d'exécution et met en surbrillance l'instruction en cours d'exécution. Vous pouvez observer les valeurs des variables, la pile d'appels des fonctions en cours d'exécution et d'autres aspects de l'état de votre programme. Vous pouvez continuer à exécuter (parcourir) le programme instruction par instruction pour voir comment elles modifient les valeurs du programme. Dans les applications écrites en JavaScript, vous pouvez examiner et manipuler le DOM de la page.
 
 ## <a name="in-this-section"></a>Dans cette section
 
-|||
+|Intitulé|Description|
 |-|-|
-|[Démarrer une session de débogage (JavaScript)](../debugger/start-a-debugging-session-for-store-apps-in-visual-studio-javascript.md)|La rubrique Comment démarrer une session de débogage décrit les différentes options permettant de configurer et de démarrer une session de débogage pour une application JavaScript.|
-|[Contrôler l’exécution dans une session de débogage (JavaScript)](../debugger/control-execution-of-a-store-app-in-a-visual-studio-debug-session-for-windows-store-apps-javascript.md)|La rubrique Navigation dans le débogueur vous guide à travers une application simple qui explique comment démarrer et arrêter le débogage, naviguer dans le code et afficher l'état du programme.|
-|[Démarrage rapide : déboguer du code HTML et CSS](../debugger/quickstart-debug-html-and-css.md)|La rubrique Déboguer du code HTML et CSS explique comment déboguer de manière interactive une application JavaScript en affichant et en modifiant le code HTML et CSS à l'aide des outils d'inspection DOM.|
+|[Démarrer une session de débogage (JavaScript)](../debugger/start-a-debugging-session-for-store-apps-in-visual-studio-javascript.md)|La rubrique Comment démarrer une session de débogage décrit les différentes options permettant de configurer et démarrer une session de débogage pour une application JavaScript.|
+|[Contrôler l'exécution dans une session de débogage (JavaScript)](../debugger/control-execution-of-a-store-app-in-a-visual-studio-debug-session-for-windows-store-apps-javascript.md)|La navigation dans le débogueur vous guide à travers une application simple qui explique comment démarrer et arrêter le débogage, naviguer dans le code et afficher l'état du programme.|
+|[Démarrage rapide : déboguer du code HTML et CSS](../debugger/quickstart-debug-html-and-css.md)|La rubrique Déboguer du code HTML et CSS vous explique comment déboguer de manière interactive une application JavaScript à l'aide des outils d'inspection DOM pour afficher et modifier le code HTML et CSS.|
 |[Démarrage rapide : déboguer du code JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md)|Déboguer du code JavaScript à l’aide de la console vous montre comment déboguer de manière interactive une application JavaScript à l’aide des commandes de la [Console JavaScript](../debugger/javascript-console-commands.md).|
-|[Démarrer une session de débogage (VB, C#, C++ et XAML)](../debugger/start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md)|La rubrique Comment démarrer une session de débogage (Visual C++, Visual C# et Visual Basic) décrit les différentes options permettant de configurer et de démarrer une session de débogage pour une application écrite en Visual C++, Visual C# ou Visual Basic.|
-|[Parcourir une session de débogage (XAML et C#)](../debugger/navigate-a-debugging-session-in-visual-studio-xaml-and-csharp.md)|La navigation dans le débogueur vous guide à travers une application simple qui explique comment démarrer et arrêter le débogage, naviguer dans le code, et afficher et modifier l'état du programme.|
-|[Déclencher des événements de suspension, de reprise et d’arrière-plan pour Windows Store](../debugger/how-to-trigger-suspend-resume-and-background-events-for-windows-store-apps-in-visual-studio.md)|Le débogueur désactive les événements de gestion de la durée de vie des processus (PLM) qui suspendent, reprennent et arrêtent les applications. Vous pouvez déclencher ces événements à partir de la barre d'outils du débogueur.<br /><br /> Les tâches en arrière-plan vous permettent d'effectuer d'importantes opérations, même quand votre application a été suspendue. Le débogueur vous permet de démarrer et de déboguer ces tâches en arrière-plan.|
+|[Démarrer une session de débogage (VB, C#, C++ et XAML)](../debugger/start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md)|La rubrique Comment démarrer une session de débogage (Visual C++, Visual C# et Visual Basic) décrit les différentes options permettant de configurer et démarrer une session de débogage pour une application écrite en Visual C++, Visual C# ou Visual Basic.|
+|[Parcourir une session de débogage (Xaml et C#)](../debugger/navigate-a-debugging-session-in-visual-studio-xaml-and-csharp.md)|La navigation dans le débogueur vous guide à travers une application simple qui explique comment démarrer et arrêter le débogage, naviguer dans le code, et afficher et modifier l'état du programme.|
+|[Déclencher des événements de suspension, reprise et en arrière-plan pour Windows Store)](../debugger/how-to-trigger-suspend-resume-and-background-events-for-windows-store-apps-in-visual-studio.md)|Le débogueur désactive les événements de gestion de la durée de vie des processus (PLM) qui suspendent, reprennent et terminent les applications. Vous pouvez déclencher ces événements à partir de la barre d'outils du débogueur.<br /><br /> Les tâches en arrière-plan vous permettent d'effectuer d'importantes opérations, même quand votre application a été suspendue. Le débogueur vous permet de démarrer et déboguer ces tâches en arrière-plan.|
 
 ## <a name="see-also"></a>Voir aussi
  [Débogage dans Visual Studio (dans MSDN Library)](https://msdn.microsoft.com/library/sc65sadd(VS.110).aspx)

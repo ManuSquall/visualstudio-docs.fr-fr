@@ -2,7 +2,7 @@
 title: Fenêtre interactive Python (REPL)
 description: Utilisez la fenêtre interactive (REPL) pour développer rapidement du code Python dans Visual Studio.
 ms.date: 02/11/2019
-ms.topic: conceptual
+ms.topic: how-to
 author: JoshuaPartlow
 ms.author: joshuapa
 manager: jillfra
@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 7ceecffec577528484cd67fd13d3e04f368fb916
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 9608f273683865be767a44dd8f1d66106b97b7e0
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79302762"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85533547"
 ---
 # <a name="work-with-the-python-interactive-window"></a>Utiliser la fenêtre interactive Python
 
@@ -27,28 +27,28 @@ Visual Studio propose plusieurs modes REPL Python au choix :
 
 | REPL | Description | Modification | Débogage | Images |
 | --- | --- | --- | --- | --- |
-| standard | REPL par défaut, communique directement avec Python | Modification standard (multiligne, etc.). | Oui, via `$attach` | Non  |
-| Débogage | REPL par défaut, communique avec le processus Python débogué | Modification standard | Débogage uniquement | Non  |
-| IPython | REPL qui communique avec le serveur principal IPython | Commandes IPython, avantages de Pylab | Non  | Oui, inline dans REPL |
-| IPython sans Pylab | REPL qui communique avec le serveur principal IPython | IPython standard | Non  | Oui, fenêtre distincte |
+| Standard | REPL par défaut, communique directement avec Python | Modification standard (multiligne, etc.). | Oui, via `$attach` | Non |
+| Débogage | REPL par défaut, communique avec le processus Python débogué | Modification standard | Débogage uniquement | Non |
+| IPython | REPL qui communique avec le serveur principal IPython | Commandes IPython, avantages de Pylab | Non | Oui, inline dans REPL |
+| IPython sans Pylab | REPL qui communique avec le serveur principal IPython | IPython standard | Non | Oui, fenêtre distincte |
 
 Cet article décrit les modes REPL **Standard** et **Débogage**. Pour plus d’informations sur les modes IPython, consultez [Utiliser IPython REPL](interactive-repl-ipython.md).
 
-Pour une procédure pas à pas détaillée avec des exemples, y compris les interactions avec l’éditeur tels que **Ctrl**+**Enter**, voir Tutorial [Step 3: Utilisez la fenêtre REPL interactive](tutorial-working-with-python-in-visual-studio-step-03-interactive-repl.md).
+Pour obtenir une procédure pas à pas détaillée avec des exemples, notamment les interactions avec l’éditeur comme **CTRL** + **entrée**, consultez [le didacticiel étape 3 : utiliser la fenêtre REPL interactive](tutorial-working-with-python-in-visual-studio-step-03-interactive-repl.md).
 
 ## <a name="open-an-interactive-window"></a>Ouvrir une fenêtre interactive
 
 Il existe plusieurs façons d’ouvrir la fenêtre **interactive** pour un environnement.
 
-Tout d’abord, passez à la fenêtre Python Environments **(Voir** > **d’autres** > **environnements** De python Windows ou **Ctrl**+**K** > **Ctrl**+**`**) et sélectionnez la commande ou le bouton Open Interactive **Window** pour un environnement choisi.
+Tout d’abord, basculez vers la fenêtre environnements Python (**Afficher**d'  >  **autres**  >  **environnements Windows python** ou **CTRL** + **K**  >  **CTRL** + **`** ) et sélectionnez la commande ou le bouton **ouvrir une fenêtre interactive** pour un environnement choisi.
 
 ![Lien vers la fenêtre interactive dans la fenêtre des environnements Python](media/interactive-window-opening.png)
 
-Deuxièmement, près du bas du menu **View** > **Other Windows,** il existe une commande de fenêtre interactive **Python** pour votre environnement par défaut, ainsi qu’une commande pour passer à la fenêtre **Environnement** :
+Deuxièmement, près du bas du menu **Afficher**les  >  **autres fenêtres** , il existe une commande de **fenêtre interactive Python** pour votre environnement par défaut, ainsi qu’une commande pour basculer vers la fenêtre **environnements** :
 
 ![Éléments de menu de la fenêtre interactive dans View > Other Windows (Affichage > Autres fenêtres)](media/interactive-window-menu.png)
 
-En troisième lieu, ouvrez une fenêtre **Interactive** sur le fichier de démarrage de votre projet, ou pour un fichier autonome, en sélectionnant la commande de menu **Déboguer** > **Exécuter \<Projet | Fichier> en mode interactif Python ** (**Maj**+**Alt**+**F5**) :
+Troisièmement, vous pouvez ouvrir une fenêtre **interactive** sur le fichier de démarrage de votre projet, ou pour un fichier autonome, en sélectionnant la commande de menu **Déboguer**  >  **exécuter \<Project | File> dans python interactive** (**MAJ** + **ALT** + **F5**) :
 
 ![Exécution du projet dans le menu Python Interactive](media/interactive-execute-project.png)
 
@@ -62,16 +62,16 @@ Vous pouvez contrôler différents aspects de la fenêtre **Interactive** via **
 
 ## <a name="use-the-interactive-window"></a>Utiliser la fenêtre interactive
 
-Une fois la fenêtre **Interactive** ouverte, vous pouvez commencer ** \> \> ** à entrer le code ligne par ligne à l’invitation. La fenêtre **Interactive** exécute chaque ligne au fur et à mesure que vous y entrez, ce qui comprend l’importation de modules, la définition des variables, et ainsi de suite :
+Une fois la fenêtre **interactive** ouverte, vous pouvez commencer à entrer le code ligne par ligne à l' **\>\>\>** invite de commandes. La fenêtre **interactive** exécute chaque ligne au fur et à mesure de son entrée, ce qui comprend l’importation de modules, la définition de variables, etc. :
 
 ![Fenêtre interactive Python](media/interactive-window.png)
 
-L’exception se produit quand des lignes de code supplémentaires sont nécessaires pour élaborer une instruction complète, par exemple quand une instruction `for` se termine par un signe deux-points, comme illustré ci-dessus. Dans ce cas, l’invite de ligne devient **...** pour vous indiquer que vous devez entrer des lignes supplémentaires pour le bloc, comme illustré sur la quatrième et la cinquième ligne de la capture ci-dessus. Lorsque vous appuyez sur **Enter** sur une ligne blanche, la fenêtre **Interactive** ferme le bloc et l’exécute dans l’interprète.
+L’exception se produit quand des lignes de code supplémentaires sont nécessaires pour élaborer une instruction complète, par exemple quand une instruction `for` se termine par un signe deux-points, comme illustré ci-dessus. Dans ce cas, l’invite de ligne devient **...** pour vous indiquer que vous devez entrer des lignes supplémentaires pour le bloc, comme illustré sur la quatrième et la cinquième ligne de la capture ci-dessus. Lorsque vous appuyez sur **entrée** sur une ligne vide, la fenêtre **interactive** ferme le bloc et l’exécute dans l’interpréteur.
 
 > [!Tip]
-> La fenêtre **Interactive** améliore l’expérience HABITUELLE de la ligne de commande Python REPL en en indentant automatiquement les déclarations qui appartiennent à une portée environnante. Son historique (rappelé avec la flèche vers le haut) fournit également des éléments multilignes, tandis que la fonctionnalité REPL de la ligne de commande fournit uniquement des lignes uniques.
+> La fenêtre **interactive** améliore l’expérience de réplication de ligne de commande python habituelle en mettant automatiquement en retrait les instructions qui appartiennent à une portée environnante. Son historique (rappelé avec la flèche vers le haut) fournit également des éléments multilignes, tandis que la fonctionnalité REPL de la ligne de commande fournit uniquement des lignes uniques.
 
-<a name="meta-commands"></a>La fenêtre **Interactive** prend également en charge plusieurs méta-commandes. Toutes les métacommandes commencent par `$` ; vous pouvez taper `$help` pour obtenir la liste des métacommandes et `$help <command>` pour obtenir des détails relatifs à l’utilisation d’une commande spécifique.
+<a name="meta-commands"></a>La fenêtre **interactive** prend également en charge plusieurs commandes meta. Toutes les métacommandes commencent par `$` ; vous pouvez taper `$help` pour obtenir la liste des métacommandes et `$help <command>` pour obtenir des détails relatifs à l’utilisation d’une commande spécifique.
 
 | Métacommande | Description |
 | --- | --- |
@@ -88,11 +88,11 @@ Les commandes peuvent également être étendues par les extensions Visual Studi
 
 ## <a name="switch-scopes"></a>Changer d’étendue
 
-Par défaut, la fenêtre **Interactive** pour un projet est étendue au fichier de démarrage du projet comme si vous l’avez exécuté à partir de l’invite de commande. Pour un fichier autonome, elle se limite à ce fichier. Toutefois, vous pouvez changer l’étendue à tout moment pendant votre session REPL à l’aide du menu déroulant situé en haut de la fenêtre **Interactive** :
+Par défaut, la fenêtre **interactive** pour un projet est limitée au fichier de démarrage du projet comme si vous l’exécutiez à partir de l’invite de commandes. Pour un fichier autonome, elle se limite à ce fichier. Toutefois, vous pouvez changer l’étendue à tout moment pendant votre session REPL à l’aide du menu déroulant situé en haut de la fenêtre **Interactive** :
 
 ![Portées de la fenêtre interactive](media/interactive-scopes.png)
 
-Une fois que vous importez un module, par exemple en tapant `import importlib`, des options s’affichent dans la liste déroulante et vous permettent de basculer vers n’importe quelle portée de ce module. Un message dans la fenêtre **Interactive** indique également la nouvelle portée, de sorte que vous pouvez suivre comment vous êtes arrivé à un certain état au cours de votre session.
+Une fois que vous importez un module, par exemple en tapant `import importlib`, des options s’affichent dans la liste déroulante et vous permettent de basculer vers n’importe quelle portée de ce module. Un message dans la fenêtre **interactive** indique également la nouvelle étendue, ce qui vous permet d’effectuer le suivi de la façon dont vous avez atteint un certain état au cours de votre session.
 
 Si vous entrez `dir()` dans une portée, vous obtenez les identificateurs valides dans cette portée, notamment les noms des fonctions, les classes et les variables. Par exemple, si vous utilisez `import importlib` suivi de `dir()`, vous obtenez les informations suivantes :
 
@@ -100,14 +100,14 @@ Si vous entrez `dir()` dans une portée, vous obtenez les identificateurs valide
 
 ## <a name="send-to-interactive-command"></a>Commande Envoyer vers Interactive
 
-En plus de travailler directement dans la fenêtre **Interactive,** vous pouvez sélectionner le code dans l’éditeur, cliquer à droite, et choisir **Envoyer à Interactive** ou appuyez sur **Ctrl**+**Enter**.
+En plus de travailler directement dans la fenêtre **interactive** , vous pouvez sélectionner du code dans l’éditeur, cliquer avec le bouton droit, puis choisir **Envoyer vers interactive** ou appuyer sur **CTRL** + **entrée**.
 
 ![Commande de menu Envoyer vers Interactive](media/interactive-send-to.png)
 
-Cette commande est utile dans le cadre du développement de code itératif ou évolutionnaire, car elle permet notamment de tester votre code à mesure que vous le développez. Par exemple, une fois que vous avez envoyé un morceau de code à la fenêtre **Interactive** et vu sa sortie, vous pouvez appuyer sur la flèche vers le haut pour afficher le code à nouveau, le modifier, et le tester rapidement en appuyant sur **Ctrl**+**Enter**. (Pressing **Enter** à la fin de l’entrée l’exécute, mais en appuyant **Entrez** au milieu de l’entrée insère une nouvelle ligne.) Une fois que vous avez le code que vous voulez, vous pouvez facilement le copier dans votre fichier de projet.
+Cette commande est utile dans le cadre du développement de code itératif ou évolutionnaire, car elle permet notamment de tester votre code à mesure que vous le développez. Par exemple, une fois que vous avez envoyé un morceau de code à la fenêtre **interactive** et que vous avez vu sa sortie, vous pouvez appuyer sur la flèche vers le haut pour afficher à nouveau le code, le modifier et le tester rapidement en appuyant sur **CTRL** + **entrée**. (Appuyez sur **entrée** à la fin de l’entrée pour l’exécuter, mais Appuyez sur **entrée** au milieu de l’entrée insère un saut de ligne.) Une fois que vous avez le code souhaité, vous pouvez le copier à nouveau dans votre fichier projet.
 
 > [!Tip]
-> Par défaut, Visual **>>>** Studio supprime et **...** REPL invite lors du coller le code de la fenêtre **Interactive** à l’éditeur. Vous pouvez modifier ce comportement sur l’onglet **Tools** > **Options** > **Text Editor** > **Python** > **Advanced** à l’aide de la pâte supprime **l’option d’invite REPL.** Voir [Options - Options diverses](python-support-options-and-settings-in-visual-studio.md#miscellaneous-options).
+> Par défaut, Visual Studio supprime **>>>** et **...** Réplication des invites lors du collage du code à partir de la fenêtre **interactive** dans l’éditeur. Vous pouvez modifier ce comportement dans l’onglet **Outils**  >  **options**de l'  >  **éditeur de texte**  >  **python**  >  **avancé** en utilisant l’option **coller supprime les invites de réplication** . Consultez [options-options diverses](python-support-options-and-settings-in-visual-studio.md#miscellaneous-options).
 
 <!-- After 15.3 is released, you can also press **Undo** after pasting to restore prompts. Press **Undo** a second time to remove the pasted code entirely. -->
 
@@ -115,14 +115,14 @@ Cette commande est utile dans le cadre du développement de code itératif ou é
 
 Vous pouvez utiliser les cellules de code dans l’analyse de données. Elles sont prises en charge par divers éditeurs de texte.
 
-Par exemple, quand vous utilisez un fichier de code en tant que bloc-notes, vous avez souvent un petit bloc de code que vous souhaitez envoyer en une seule fois. Pour regrouper le code, marquez-le comme *cellule de code* en ajoutant un commentaire commençant par `#%%` au début de la cellule, ce qui met fin à la précédente. Les cellules de code peuvent être effondrées et élargies, et l’utilisation **de Ctrl**+**Enter** à l’intérieur d’une cellule de code envoie toute la cellule à la fenêtre **interactive** et se déplace vers la suivante.
+Par exemple, quand vous utilisez un fichier de code en tant que bloc-notes, vous avez souvent un petit bloc de code que vous souhaitez envoyer en une seule fois. Pour regrouper le code, marquez-le comme *cellule de code* en ajoutant un commentaire commençant par `#%%` au début de la cellule, ce qui met fin à la précédente. Les cellules de code peuvent être réduites et développées, et l’utilisation de la **touche Ctrl** + **entrée** à l’intérieur d’une cellule de code envoie la cellule entière à la fenêtre **interactive** et passe au suivant.
 
-Visual Studio détecte également les cellules de code commençant par des commentaires du type `# In[1]:`, qui est le format que vous obtenez lors de l’exportation d’un bloc-notes Jupyter sous forme de fichier Python. Cette détection facilite l’exécution d’un ordinateur portable à partir d’Azure [Notebooks](https://notebooks.azure.com/) en téléchargeant sous forme de fichier Python, en s’ouvrant dans Visual Studio et en utilisant **Ctrl**+**Enter** pour exécuter chaque cellule.
+Visual Studio détecte également les cellules de code commençant par des commentaires du type `# In[1]:`, qui est le format que vous obtenez lors de l’exportation d’un bloc-notes Jupyter sous forme de fichier Python. Cette détection facilite l’exécution d’un bloc-notes à partir de [Azure Notebooks](https://notebooks.azure.com/) en le téléchargeant sous forme de fichier Python, en l’ouvrant dans Visual Studio et en utilisant **CTRL** + **entrée** pour exécuter chaque cellule.
 
 ![Cellules de code interactif](media/interactive-code-cells.png)
 
 ## <a name="intellisense-behavior"></a>Comportement IntelliSense
 
-La fenêtre **Interactive** comprend IntelliSense basé sur les objets en direct, contrairement à l’éditeur de code dans lequel IntelliSense est basé sur l’analyse de code source seulement. Ces suggestions sont plus correctes dans la fenêtre **Interactive,** en particulier avec le code généré dynamiquement. L’inconvénient est que les fonctions qui comportent des effets secondaires (par exemple, la journalisation des messages) peuvent affecter votre expérience de développement.
+La fenêtre **interactive** comprend IntelliSense basé sur les objets actifs, contrairement à l’éditeur de code dans lequel IntelliSense est basé uniquement sur l’analyse du code source. Ces suggestions sont plus correctes dans la fenêtre **interactive** , en particulier avec le code généré dynamiquement. L’inconvénient est que les fonctions qui comportent des effets secondaires (par exemple, la journalisation des messages) peuvent affecter votre expérience de développement.
 
-Si ce comportement est un problème, modifiez les paramètres sous **Tools** > **Options** > **Python** > Interactive**Windows** dans le groupe **Mode d’achèvement,** tel que décrit sur Options - Options fenêtres [interactives](python-support-options-and-settings-in-visual-studio.md#interactive-windows-options).
+Si ce comportement est un problème, modifiez les paramètres sous **Outils**  >  **options**  >  **python**  >  **interactive Windows** dans le groupe **mode de saisie semi-automatique** , comme décrit dans [options-options Windows interactives](python-support-options-and-settings-in-visual-studio.md#interactive-windows-options).

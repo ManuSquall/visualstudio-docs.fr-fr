@@ -9,12 +9,12 @@ caps.latest.revision: 12
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: b242bd0eec4f7faa3f7a27923de289c494ccf798
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 6fb07e9bc6c308e27e3ad054c5aeb0b12c092054
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74298211"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85534002"
 ---
 # <a name="running-profiling-tools-with-or-without-the-debugger"></a>Exécution des outils de profilage avec ou sans le débogueur
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,18 +38,18 @@ Visual Studio offre désormais une sélection d’outils d’analyse des perform
   
      Les versions Debug ne proposent pas certaines optimisations offertes par les versions Release, comme l’incorporation des constantes et des appels de fonction, le nettoyage des chemins de code inutilisés ou encore le stockage des variables sans que celles-ci ne puissent être utilisées par le débogueur. Le débogueur lui-même affecte les performances, car il effectue certaines opérations qui sont nécessaires pour le débogage (notamment l'interception des événements d'exception et de chargement de module). Les valeurs des performances dans les outils intégrés au débogueur ont une marge de précision de l'ordre du dixième de milliseconde. Les valeurs des performances pour les configurations Release avec les outils non intégrés au débogueur sont beaucoup plus précises.  
   
-## <a name="BKMK_Quick_start__Collect_diagnostic_data"></a> Collecter les données de profilage pendant le débogage  
+## <a name="collect-profiling-data-while-debugging"></a><a name="BKMK_Quick_start__Collect_diagnostic_data"></a> Collecter les données de profilage pendant le débogage  
  La section suivante porte sur le débogage local. Vous pouvez trouver des informations à propos du débogage sur un appareil, ou débogage à distance, dans les sections suivantes.  
   
 1. Ouvrez le projet que vous voulez déboguer, puis cliquez sur **Déboguer/Démarrer le débogage** (ou **Démarrer** dans la barre d’outils ou **F5**).  
   
-2. La fenêtre **Outils de diagnostic** apparaît automatiquement, sauf si vous l’avez désactivée. Pour réafficher la fenêtre, cliquez sur **Déboguer / Fenêtres / Afficher les outils de diagnostic**.  
+2. La fenêtre **outils de diagnostic** s’affiche automatiquement, sauf si vous l’avez désactivée. Pour afficher à nouveau la fenêtre, cliquez sur **Déboguer / Fenêtres / Afficher les outils de diagnostic**.  
   
-3. Exécutez les scénarios pour lesquels vous souhaitez collecter des données.  
+3. Exécutez les scénarios pour lesquels vous voulez collecter des données.  
   
     Pendant l’exécution de la session, vous pouvez voir plus d’informations sur les événements, sur la mémoire du processus et sur l’utilisation de l’UC.  
   
-    L’illustration suivante montre la fenêtre **Outils de diagnostic** de Visual Studio 2015 Update 1 :  
+    Le graphique suivant montre la fenêtre de **outils de diagnostic** dans Visual Studio 2015 Update 1 :  
   
     ![Outils&#45;Update 1](../profiling/media/diagnostictools-update1.png "DiagnosticTools-Update1")  
   
@@ -72,7 +72,7 @@ Visual Studio offre désormais une sélection d’outils d’analyse des perform
 ## <a name="collect-profiling-data-without-debugging"></a>Collecter les données de profilage sans débogage  
  Certains outils de profilage nécessitent des privilèges d’administrateur pour s’exécuter. Vous pouvez démarrer Visual Studio en tant qu’administrateur, ou vous pouvez choisir d’exécuter les outils en tant qu’administrateur lorsque vous démarrez la session de diagnostic.  
   
-1. Ouvrez le projet dans Visual Studio.  
+1. Ouvrez le projet dans Visual Studio.  
   
 2. Dans le menu **Déboguer** , choisissez **profileur de performances...** (touche de raccourci : Alt + F2).  
   
@@ -86,7 +86,7 @@ Visual Studio offre désormais une sélection d’outils d’analyse des perform
   
     Pendant l'exécution de la session, certains outils affichent des graphiques de données en temps réel dans la page de lancement des outils de diagnostic.  
   
-    ![Collecter des données sur les performances et la pag de diagnostic](../profiling/media/pdhub-collectdata.png "PDHUB_CollectData")  
+    ![Collecter des données dans la page Performances et diagnostics](../profiling/media/pdhub-collectdata.png "PDHUB_CollectData")  
   
 6. Pour terminer la session de diagnostic, cliquez sur **Arrêter la collecte**.  
   
@@ -97,32 +97,32 @@ Visual Studio offre désormais une sélection d’outils d’analyse des perform
    ![Ouvrir un fichier de session de diagnostic enregistré](../profiling/media/pdhub-openexistingdiagsession.png "PDHUB_OpenExistingDiagSession")  
   
 ## <a name="the-profiling-report"></a>Le rapport de profilage  
- ![Rapport outils de diagnostic](../profiling/media/diag-report.png "DIAG_Report")  
+ ![Rapport d'outils de diagnostic](../profiling/media/diag-report.png "DIAG_Report")  
   
-|||  
+|Image|Description|  
 |-|-|  
-|![Étape 1](../profiling/media/procguid-1.png "ProcGuid_1")|La chronologie indique la durée de la session de profilage, les événements d'activation du cycle de vie de l'application et les marques utilisateur.|  
-|![Étape 2](../profiling/media/procguid-2.png "ProcGuid_2")|Vous pouvez limiter le rapport à une partie de la chronologie en faisant glisser les barres bleues pour sélectionner une zone de la chronologie.|  
-|![Étape 3](../profiling/media/procguid-3.png "ProcGuid_3")|Un outil affiche un ou plusieurs graphiques principaux. Si la session de diagnostic a été créée avec plusieurs outils, tous les graphiques principaux sont affichés.|  
-|![Étape 4](../profiling/media/procguid-4.png "ProcGuid_4")|Vous pouvez réduire et développer chacun des graphiques.|  
-|![Étape 5](../profiling/media/procguid-6.png "ProcGuid_6")|Quand vos données sont composées d'informations de plusieurs outils, les détails par outil sont collectés sous des onglets.|  
-|![Étape 6](../profiling/media/procguid-6a.png "ProcGuid_6a")|Un outil peut avoir une ou plusieurs vues détaillées. La vue est filtrée par la zone sélectionnée de la chronologie.|  
+|![Étape 1](../profiling/media/procguid-1.png "ProcGuid_1")|La chronologie indique la durée de la session de profilage, les événements d'activation du cycle de vie de l'application et les marques utilisateur.|  
+|![Étape 2](../profiling/media/procguid-2.png "ProcGuid_2")|Vous pouvez limiter le rapport à une partie de la chronologie en faisant glisser les barres bleues pour sélectionner une zone de la chronologie.|  
+|![Étape 3](../profiling/media/procguid-3.png "ProcGuid_3")|Un outil affiche un ou plusieurs graphiques principaux. Si votre session de diagnostic est créée avec plusieurs outils, tous les graphiques principaux sont affichés.|  
+|![Étape 4](../profiling/media/procguid-4.png "ProcGuid_4")|Vous pouvez réduire ou développer les graphiques individuels.|  
+|![Étape 5](../profiling/media/procguid-6.png "ProcGuid_6")|Lorsque vos données incluent les informations de plusieurs outils, les détails de l'outil sont collectés sous les onglets.|  
+|![Étape 6](../profiling/media/procguid-6a.png "ProcGuid_6a")|Un outil peut avoir une ou plusieurs vues de détail. La vue est filtrée par la zone sélectionnée de la chronologie.|  
   
 ## <a name="setting-the-analysis-target-to-another-device"></a>Définition de la cible de l’analyse sur un autre appareil  
- Vous pouvez non seulement démarrer votre application à partir du projet Visual Studio, mais également exécuter des sessions de diagnostic sur d'autres cibles. Par exemple, vous pouvez souhaiter diagnostiquer les problèmes de performances sur une version de votre application installée à partir du Windows Store.  
+ Outre le démarrage de votre application à partir du projet Visual Studio, vous pouvez également exécuter les sessions de diagnostic sur d'autres cibles. Par exemple, vous pouvez souhaiter diagnostiquer les problèmes de performances sur une version de votre application installée à partir du Windows Store.  
   
- ![Choisir la cible d’analyse des outils de diagnostic](../profiling/media/pdhub-chooseanalysistarget.png "PDHUB_ChooseAnalysisTarget")  
+ ![Choisir la cible d'analyse des outils de diagnostic](../profiling/media/pdhub-chooseanalysistarget.png "PDHUB_ChooseAnalysisTarget")  
   
  Vous pouvez démarrer des applications qui sont déjà installées sur un périphérique, ou vous pouvez attacher les outils de diagnostic à certaines applications qui sont déjà en cours d'exécution. Quand vous choisissez **Application en cours d’exécution** ou **Application installée**, vous sélectionnez l’application dans une liste qui identifie les applications sur la cible de déploiement spécifiée.  
   
- ![Choisir une application en cours d’exécution ou installée pour le diagnostic](../profiling/media/pdhub-selectrunningapp.png "PDHUB_SelectRunningApp")  
+ ![Choisir une application en cours d'exécution ou installée pour le diagnostic](../profiling/media/pdhub-selectrunningapp.png "PDHUB_SelectRunningApp")  
   
  Quand vous choisissez **Internet Explorer**, vous spécifiez l’URL et vous pouvez changer la cible de déploiement du téléphone.  
   
- ![Spécifier l’URL à afficher dans Internet Explorer](../profiling/media/pdhub-choosephoneanalysistarget.png "PDHUB_ChoosePhoneAnalysisTarget")  
+ ![Spécifier l'URL à afficher dans Internet Explorer](../profiling/media/pdhub-choosephoneanalysistarget.png "PDHUB_ChoosePhoneAnalysisTarget")  
   
-## <a name="remote-debugging"></a>Débogage distant  
- L’exécution d’une session de diagnostic sur un PC distant ou sur une tablette requiert que les outils de contrôle à distance Visual Studio soient installés et en cours d’exécution sur la cible distante. Pour les applications de bureau, consultez [Débogage distant](../debugger/remote-debugging.md).  Pour les applications universelles Windows, consultez [Exécuter des applications du Windows Store sur un ordinateur distant](../debugger/run-windows-store-apps-on-a-remote-machine.md).  
+## <a name="remote-debugging"></a>Remote Debugging  
+ L’exécution d’une session de diagnostic sur un PC distant ou sur une tablette requiert que les outils de contrôle à distance Visual Studio soient installés et en cours d’exécution sur la cible distante. Pour les applications pour ordinateur, consultez [Débogage à distance](../debugger/remote-debugging.md).  Pour les applications universelles Windows, consultez [Exécuter des applications du Windows Store sur un ordinateur distant](../debugger/run-windows-store-apps-on-a-remote-machine.md).  
   
 ## <a name="blog-posts-and-msdn-articles-from-the-diagnostics-development-team"></a>Billets de blog et articles MSDN de l’équipe de développement Diagnostics  
  [Magazine MSDN : Analyser les performances pendant le débogage dans Visual Studio 2015](https://msdn.microsoft.com/magazine/dn973013.aspx)  

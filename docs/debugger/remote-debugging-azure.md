@@ -11,12 +11,12 @@ ms.workload:
 - aspnet
 - dotnetcore
 - azure
-ms.openlocfilehash: 6983d3ac191b8eb85d38e1d40afa3244e97dbb17
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: debf44bfe8187a7fd84e04b4362283658f636f17
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84184248"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85536784"
 ---
 # <a name="remote-debug-aspnet-core-on-iis-in-azure-in-visual-studio"></a>ASP.NET Core de débogage à distance sur IIS dans Azure dans Visual Studio
 
@@ -96,7 +96,7 @@ Dans Visual Studio, vous pouvez rapidement publier et déboguer votre applicatio
 
     Le point d’arrêt doit être atteint dans Visual Studio.
 
-    Et c’est tout ! Les autres étapes de cette rubrique s’appliquent au débogage à distance sur une machine virtuelle Azure.
+    Et voilà ! Les autres étapes de cette rubrique s’appliquent au débogage à distance sur une machine virtuelle Azure.
 
 ## <a name="remote-debug-aspnet-core-on-an-azure-vm"></a><a name="remote_debug_azure_vm"></a>Débogage à distance ASP.NET Core sur une machine virtuelle Azure
 
@@ -175,15 +175,15 @@ Vous pouvez utiliser cette option pour créer un fichier de paramètres de publi
 
 [!INCLUDE [install-web-deploy-with-hosting-server](../deployment/includes/import-publish-settings-vs.md)]
 
-    > [!NOTE]
-    > If you restart an Azure VM, the IP address may change.
+> [!NOTE]
+> Si vous redémarrez une machine virtuelle Azure, l’adresse IP peut changer.
 
 Une fois l’application déployée, elle doit démarrer automatiquement. Si l’application ne démarre pas à partir de Visual Studio, démarrez l’application dans IIS pour vérifier qu’elle s’exécute correctement. Par ASP.NET Core, vous devez également vous assurer que le champ pool d’applications pour **DefaultAppPool** est défini sur **aucun code managé**.
 
 1. Dans la boîte de dialogue **paramètres** , activez le débogage en cliquant sur **suivant**, choisissez une configuration de **débogage** , puis choisissez **Supprimer les fichiers supplémentaires à la destination** sous les options de publication de **fichier** .
 
     > [!IMPORTANT]
-    > Si vous choisissez une configuration Release, vous désactivez le débogage dans le fichier *Web. config* lorsque vous publiez.
+    > Si vous choisissez une configuration Release, vous désactivez le débogage dans le fichier *web.config* lors de la publication.
 
 1. Cliquez sur **Enregistrer** , puis republiez l’application.
 
@@ -255,11 +255,11 @@ Téléchargez la version des outils de contrôle à distance qui correspond à v
 
 6. Tapez la première lettre de votre nom de processus pour trouver rapidement votre application.
 
-    * Si vous utilisez le [modèle d’hébergement in-process](/aspnet/core/host-and-deploy/aspnet-core-module?view=aspnetcore-3.1#hosting-models) sur IIS, sélectionnez le processus **w3wp. exe** correct. À compter de .NET Core 3, il s’agit de la valeur par défaut.
+    * Si vous utilisez le [modèle d’hébergement in-process](/aspnet/core/host-and-deploy/aspnet-core-module?view=aspnetcore-3.1#hosting-models) sur IIS, sélectionnez le processus de **w3wp.exe** approprié. À compter de .NET Core 3, il s’agit de la valeur par défaut.
 
-    * Dans le cas contraire, sélectionnez le processus **dotnet. exe** . (Il s’agit du modèle d’hébergement out-of-process.)
+    * Dans le cas contraire, sélectionnez le processus de **dotnet.exe** . (Il s’agit du modèle d’hébergement out-of-process.)
 
-    Si plusieurs processus indiquent *w3wp. exe* ou *dotnet. exe*, vérifiez la colonne **nom d’utilisateur** . Dans certains scénarios, la colonne **nom d’utilisateur** affiche le nom de votre pool d’applications, par exemple **IIS APPPOOL\DefaultAppPool**. Si vous voyez le pool d’applications, mais qu’il n’est pas unique, créez un nouveau pool d’applications nommé pour l’instance d’application que vous souhaitez déboguer, puis vous pouvez le trouver facilement dans la colonne **nom d’utilisateur** .
+    Si vous avez plusieurs processus qui indiquent *w3wp.exe* ou *dotnet.exe*, vérifiez la colonne **nom d’utilisateur** . Dans certains scénarios, la colonne **nom d’utilisateur** affiche le nom de votre pool d’applications, par exemple **IIS APPPOOL\DefaultAppPool**. Si vous voyez le pool d’applications, mais qu’il n’est pas unique, créez un nouveau pool d’applications nommé pour l’instance d’application que vous souhaitez déboguer, puis vous pouvez le trouver facilement dans la colonne **nom d’utilisateur** .
 
     ::: moniker range=">=vs-2019"
     ![RemoteDBG_AttachToProcess](../debugger/media/vs-2019/remotedbg-attachtoprocess-aspnetcore.png "RemoteDBG_AttachToProcess")

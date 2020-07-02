@@ -15,17 +15,17 @@ caps.latest.revision: 15
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 2ee166f8bbc14e66968cd4f7c265331854905ac9
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: a3c707fef5562b932b6232300131f6e6e6efef6a
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72662947"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85534561"
 ---
-# <a name="ca2212-do-not-mark-serviced-components-with-webmethod"></a>CA2212 : Ne marquez pas les composants pris en charge avec WebMethod
+# <a name="ca2212-do-not-mark-serviced-components-with-webmethod"></a>CA2212 : Ne marquez pas les composants pris en charge avec webMethod
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Élément|Valeur|
 |-|-|
 |TypeName|DoNotMarkServicedComponentsWithWebMethod|
 |CheckId|CA2212|
@@ -33,13 +33,13 @@ ms.locfileid: "72662947"
 |Modification avec rupture|Rupture|
 
 ## <a name="cause"></a>Cause
- Une méthode d’un type qui hérite de <xref:System.EnterpriseServices.ServicedComponent?displayProperty=fullName> est marquée avec <xref:System.Web.Services.WebMethodAttribute?displayProperty=fullName>.
+ Une méthode d’un type qui hérite de <xref:System.EnterpriseServices.ServicedComponent?displayProperty=fullName> est marquée avec <xref:System.Web.Services.WebMethodAttribute?displayProperty=fullName> .
 
 ## <a name="rule-description"></a>Description de la règle
- <xref:System.Web.Services.WebMethodAttribute> s’applique aux méthodes au sein d’un service Web XML qui ont été créées à l’aide de ASP.NET ; elle rend l’appel de la méthode à partir des clients Web distants. La méthode et la classe doivent être publiques et s’exécuter dans une application Web ASP.NET. les types <xref:System.EnterpriseServices.ServicedComponent> sont hébergés par des applications COM+ et peuvent utiliser des services COM+. <xref:System.Web.Services.WebMethodAttribute> n’est pas appliqué aux types <xref:System.EnterpriseServices.ServicedComponent>, car ils ne sont pas destinés aux mêmes scénarios. Plus précisément, l’ajout de l’attribut à la méthode <xref:System.EnterpriseServices.ServicedComponent> ne rend pas l’appel de la méthode à partir des clients Web distants. Étant donné que <xref:System.Web.Services.WebMethodAttribute> et une méthode <xref:System.EnterpriseServices.ServicedComponent> ont des comportements et des exigences en conflit pour le contexte et le workflow de transaction, le comportement de la méthode est incorrect dans certains scénarios.
+ <xref:System.Web.Services.WebMethodAttribute>s’applique aux méthodes d’un service Web XML qui ont été créées à l’aide de ASP.NET ; elle rend l’appel de la méthode à partir des clients Web distants. La méthode et la classe doivent être publiques et s’exécuter dans une application Web ASP.NET. <xref:System.EnterpriseServices.ServicedComponent>les types sont hébergés par des applications COM+ et peuvent utiliser des services COM+. <xref:System.Web.Services.WebMethodAttribute>n’est pas appliqué aux <xref:System.EnterpriseServices.ServicedComponent> types, car ils ne sont pas destinés aux mêmes scénarios. Plus précisément, l’ajout de l’attribut à la <xref:System.EnterpriseServices.ServicedComponent> méthode ne rend pas l’appel de la méthode à partir des clients Web distants. Étant donné que <xref:System.Web.Services.WebMethodAttribute> et une <xref:System.EnterpriseServices.ServicedComponent> méthode ont des comportements et des exigences en conflit pour le contexte et le workflow de transaction, le comportement de la méthode est incorrect dans certains scénarios.
 
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations
- Pour corriger une violation de cette règle, supprimez l’attribut de la méthode <xref:System.EnterpriseServices.ServicedComponent>.
+ Pour corriger une violation de cette règle, supprimez l’attribut de la <xref:System.EnterpriseServices.ServicedComponent> méthode.
 
 ## <a name="when-to-suppress-warnings"></a>Quand supprimer les avertissements
  Ne supprimez aucun avertissement de cette règle. Il n’existe aucun scénario dans lequel la combinaison de ces éléments est correcte.

@@ -11,17 +11,17 @@ caps.latest.revision: 12
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 0d32ebc08866a14755ddb8b2c70e2dd0c4ce61f1
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: ccd556a5929e56597de678ad4ad8ea6c101b7c7f
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72655492"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85535887"
 ---
-# <a name="ca2131-security-critical-types-may-not-participate-in-type-equivalence"></a>CA2131 : Les types critiques de sécurité ne peuvent pas participer à l'équivalence des types
+# <a name="ca2131-security-critical-types-may-not-participate-in-type-equivalence"></a>CA2131 : Les types critiques de sécurité ne peuvent pas participer à l'équivalence des types
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Élément|Valeur|
 |-|-|
 |TypeName|CriticalTypesMustNotParticipateInTypeEquivalence|
 |CheckId|CA2131|
@@ -29,7 +29,7 @@ ms.locfileid: "72655492"
 |Modification avec rupture|Rupture|
 
 ## <a name="cause"></a>Cause
- Un type participe à l’équivalence de type et un type lui-même, ou un membre ou champ du type, est marqué avec l’attribut <xref:System.Security.SecurityCriticalAttribute>.
+ Un type participe à l’équivalence de type et un type lui-même, ou un membre ou champ du type, est marqué avec l' <xref:System.Security.SecurityCriticalAttribute> attribut.
 
 ## <a name="rule-description"></a>Description de la règle
  Cette règle se déclenche sur tout type ou type critique contenant des méthodes critiques ou des champs qui participent à l’équivalence de type. Lorsque le CLR détecte un tel type, il ne peut pas le charger avec un <xref:System.TypeLoadException> au moment de l’exécution. En général, cette règle se déclenche uniquement lorsque les utilisateurs implémentent l’équivalence de type manuellement plutôt qu’en comptant sur tlbimp et les compilateurs pour faire l’équivalence de type.
@@ -46,4 +46,4 @@ ms.locfileid: "72655492"
  [!code-csharp[FxCop.Security.CA2131.CriticalTypesMustNotParticipateInTypeEquivalence#1](../snippets/csharp/VS_Snippets_CodeAnalysis/fxcop.security.ca2131.criticaltypesmustnotparticipateintypeequivalence/cs/ca2131 - criticaltypesmustnotparticipateintypeequivalence.cs#1)]
 
 ## <a name="see-also"></a>Voir aussi
- [Code transparent de sécurité, niveau 2](https://msdn.microsoft.com/library/4d05610a-0da6-4f08-acea-d54c9d6143c0)
+ [Code transparent de sécurité, niveau 2](https://msdn.microsoft.com/library/4d05610a-0da6-4f08-acea-d54c9d6143c0)

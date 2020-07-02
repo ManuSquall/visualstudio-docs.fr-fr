@@ -1,7 +1,7 @@
 ---
 title: Déploiement d'un processeur de directive personnalisé
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - text templates, custom directive processors
 author: JoshuaPartlow
@@ -9,12 +9,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8a10252d8465373c8637681763e59511b1e2d621
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 4762ad21f117bebe22ecfce1c846f15d154b1bf5
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75596669"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85536017"
 ---
 # <a name="deploying-a-custom-directive-processor"></a>Déploiement d'un processeur de directive personnalisé
 
@@ -52,25 +52,25 @@ Un fichier .vsix peut être créé de plusieurs façons. La procédure suivante 
 
     1. Dans l’éditeur de manifeste VSIX, sous l’onglet **composants** , choisissez **nouveau** et définissez les propriétés du nouvel élément :
 
-         **Type de contenu** = **VSPackage**
+         **Type**  =  de contenu **VSPackage**
 
-          = du **projet Source** \<*le projet en cours*>
+         **Projet source** = \<*the current project*>
 
     2. Cliquez sur **éditions sélectionnées** et vérifiez les types d’installation sur lesquels vous souhaitez que le processeur de directive soit utilisable.
 
 3. Ajoutez un fichier .pkgdef et définissez ses propriétés de sorte qu'il soit inclus dans l'extension VSIX.
 
-    1. Créez un fichier texte et nommez-le \<*assemblyName*>. pkgdef.
+    1. Créez un fichier texte et nommez-le \<*assemblyName*> . pkgdef.
 
-         \<> *AssemblyName*est généralement identique au nom du projet.
+         \<*assemblyName*>est généralement identique au nom du projet.
 
     2. Sélectionnez-le dans l'Explorateur de solutions et définissez ses propriétés comme suit :
 
          **Action de génération** = **Contenu**
 
-         **Copier dans le répertoire de sortie** = **toujours copier**
+         **Copier dans le répertoire**  =  de sortie **Toujours copier**
 
-         **Include dans VSIX** = **true**
+         **Inclure dans VSIX**  =  **True**
 
     3. Définissez le nom de l'extension VSIX et assurez-vous que l'ID est unique.
 
@@ -89,11 +89,11 @@ Un fichier .vsix peut être créé de plusieurs façons. La procédure suivante 
 
 5. Ajoutez les références suivantes au projet :
 
-    - **Microsoft.VisualStudio.TextTemplating.\*.0**
+    - **Microsoft. VisualStudio. TextTemplating. \* . entre**
 
-    - **Microsoft.VisualStudio.TextTemplating.Interfaces.\*.0**
+    - **Microsoft. VisualStudio. TextTemplating. interfaces. \* . entre**
 
-    - **Microsoft.VisualStudio.TextTemplating.VSHost.\*.0**
+    - **Microsoft. VisualStudio. TextTemplating. VSHost. \* . entre**
 
 6. Ajoutez la classe de votre processeur de directive personnalisé au projet.
 
@@ -124,7 +124,7 @@ Un fichier .vsix peut être créé de plusieurs façons. La procédure suivante 
 
 - Votre méthode `IsDirectiveSupported` doit retourner la valeur `true` lorsque le nom de votre `CustomDirective` lui est passé.
 
-- Si vous ne voyez pas l’extension dans le gestionnaire d’extensions, mais que le système ne vous autorise pas à l’installer, supprimez l’extension de **%localappdata%\Microsoft\VisualStudio\\\*. 0 \ Extensions\\** .
+- Si vous ne voyez pas l’extension dans le gestionnaire d’extensions, mais que le système ne vous autorise pas à l’installer, supprimez l’extension de **%LocalAppData%\Microsoft\VisualStudio. \\ \* 0 \ \\ Extensions**.
 
 - Ouvrez le fichier .vsix et inspectez son contenu. Pour l'ouvrir, remplacez l'extension de nom du fichier par .zip. Vérifiez qu'il contient les fichiers .dll, .pkgdef et extension.vsixmanifest. Le fichier extension.vsixmanifest doit comporter la liste appropriée dans le nœud SupportedProducts, ainsi qu'un nœud VsPackage sous le nœud de contenu :
 
@@ -156,7 +156,7 @@ Un fichier .vsix peut être créé de plusieurs façons. La procédure suivante 
  Cette méthode d'installation d'un processeur de directive personnalisé est la moins recommandée. Elle ne permet pas d'activer ni de désactiver facilement le processeur de directive, et ne fournit pas de méthode pour distribuer le processeur de directive aux autres utilisateurs.
 
 > [!CAUTION]
-> Une modification incorrecte du Registre peut endommager gravement votre système. Avant d'apporter des modifications au Registre, veillez à sauvegarder toutes les données importantes qui se trouvent sur l'ordinateur.
+> Une modification incorrecte du Registre peut sérieusement endommager votre système. Avant d'apporter des modifications au Registre, veillez à sauvegarder toutes les données importantes qui se trouvent sur l'ordinateur.
 
 #### <a name="to-register-a-directive-processor-by-setting-a-registry-key"></a>Pour inscrire un processeur de directive en définissant une clé de Registre
 
@@ -164,7 +164,7 @@ Un fichier .vsix peut être créé de plusieurs façons. La procédure suivante 
 
 2. Dans regedit, accédez à
 
-    **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\\*.0\TextTemplating\DirectiveProcessors**
+    **HKEY_LOCAL_MACHINE \SOFTWARE\Microsoft\VisualStudio \\ \* . 0 \ TextTemplating\DirectiveProcessors**
 
     Si vous souhaitez installer le processeur de directive dans la version expérimentale de Visual Studio, insérez « exp » après « 11,0 ».
 
@@ -182,19 +182,19 @@ Un fichier .vsix peut être créé de plusieurs façons. La procédure suivante 
 
    Si le processeur de directive personnalisé ne se trouve pas dans le GAC, les sous-clés de Registre doivent se présenter comme dans le tableau suivant :
 
-|Name|Type|Données|
+|Nom|Type|Données|
 |-|-|-|
-|(par défaut)|REG_SZ|(valeur non définie)|
-|Classe|REG_SZ|**Nom de l’espace de noms \<>. Nom de la classe\<**|
-|CodeBase|REG_SZ|**\<votre chemin d’accès >\\< le nom de votre assembly\>**|
+|(Par défaut)|REG_SZ|(valeur non définie)|
+|Classe|REG_SZ|**\<Namespace Name>.\<Class Name>**|
+|CodeBase|REG_SZ|**\<Your Path>\\<le nom de votre assembly\>**|
 
  Si l'assembly se trouve dans le GAC, les sous-clés de Registre doivent se présenter comme dans le tableau suivant :
 
-|Name|Type|Données|
+|Nom|Type|Données|
 |-|-|-|
-|(par défaut)|REG_SZ|(valeur non définie)|
-|Classe|REG_SZ|\<**votre nom de classe** complet>|
-|Assembly|REG_SZ|\<le **nom de votre assembly dans le GAC**>|
+|(Par défaut)|REG_SZ|(valeur non définie)|
+|Classe|REG_SZ|\<**Your Fully Qualified Class Name**>|
+|Assembly|REG_SZ|\<**Your Assembly Name in the GAC**>|
 
 ## <a name="see-also"></a>Voir aussi
 

@@ -11,15 +11,15 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: c9e6974f1b676b623c58eea451270bde98ddcff7
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: afe4063f2d96b2ae46664ec6642ec1a4e98ab892
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75585975"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85535263"
 ---
 # <a name="walkthrough-create-linq-to-sql-classes-by-using-single-table-inheritance-or-designer"></a>Procédure pas à pas : créer des classes LINQ to SQL à l’aide de l’héritage de table unique (Concepteur O/R)
-Les [outils de LINQ to SQL dans Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md) prennent en charge l’héritage d’une seule table, car il est généralement implémenté dans les systèmes relationnels. Cette procédure pas à pas s’appuie sur les étapes génériques fournies dans la rubrique [Comment : configurer l’héritage à l’aide du Concepteur O/R](../data-tools/how-to-configure-inheritance-by-using-the-o-r-designer.md) et fournit des données réelles pour illustrer l’utilisation de l’héritage dans le [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)].
+Les [outils de LINQ to SQL dans Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md) prennent en charge l’héritage d’une seule table, car il est généralement implémenté dans les systèmes relationnels. Cette procédure pas à pas s’appuie sur les étapes génériques fournies dans la rubrique [Comment : configurer l’héritage à l’aide du Concepteur O/R](../data-tools/how-to-configure-inheritance-by-using-the-o-r-designer.md) et fournit des données réelles pour illustrer l’utilisation de l’héritage dans le [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)] .
 
 Au cours de cette procédure pas à pas, vous effectuez les tâches suivantes :
 
@@ -38,7 +38,7 @@ Au cours de cette procédure pas à pas, vous effectuez les tâches suivantes :
 - Afficher les données sur un Windows Form.
 
 ## <a name="create-a-table-to-inherit-from"></a>Création d’une table de laquelle hériter
-Pour voir le fonctionnement de l’héritage, créez une petite table de `Person`, utilisez-la comme classe de base, puis créez un objet `Employee` qui hérite de celle-ci.
+Pour voir comment l’héritage fonctionne, créez une petite `Person` table, utilisez-la comme classe de base, puis créez un `Employee` objet qui hérite de celle-ci.
 
 ### <a name="to-create-a-base-table-to-demonstrate-inheritance"></a>Pour créer une table de base illustrant l'héritage
 
@@ -51,10 +51,10 @@ Pour voir le fonctionnement de l’héritage, créez une petite table de `Person
 
     |Nom de la colonne|Type de données|Null autorisé|
     |-----------------|---------------|-----------------|
-    |**ID**|**int**|**False**|
+    |**Identifiant**|**int**|**Fausses**|
     |**Type**|**int**|**True**|
-    |**FirstName**|**nvarchar(200)**|**False**|
-    |**LastName**|**nvarchar(200)**|**False**|
+    |**FirstName**|**nvarchar(200)**|**Fausses**|
+    |**LastName**|**nvarchar(200)**|**Fausses**|
     |**Manager**|**int**|**True**|
 
 3. Définissez la colonne d'ID comme clé primaire.
@@ -70,9 +70,8 @@ Pour pouvoir vérifier si l'héritage est configuré correctement, la table a be
 
 2. Copiez les données suivantes dans la table. (Vous pouvez la copier et la coller dans la table en sélectionnant la ligne entière dans le volet **résultats** .)
 
-    ||||||
+    |**Identifiant**|**Type**|**FirstName**|**LastName**|**Manager**|
     |-|-|-|-|-|
-    |**ID**|**Type**|**FirstName**|**LastName**|**Manager**|
     |**1**|**1**|**Anne**|**Wallace**|**NULL**|
     |**2**|**1**|**Carlos**|**Grilo**|**NULL**|
     |**3**|**1**|**Yael**|**Peled**|**NULL**|
@@ -86,14 +85,14 @@ Pour pouvoir vérifier si l'héritage est configuré correctement, la table a be
     |**11**|**2**|**Mindy**|**Martin**|**3**|
     |**12**|**2**|**Ken**|**Kwok**|**3**|
 
-## <a name="create-a-new-project"></a>Créer un projet
+## <a name="create-a-new-project"></a>Création d'un projet
 Maintenant que vous avez créé la table, créez un nouveau projet pour voir la configuration de l'héritage.
 
 ### <a name="to-create-the-new-windows-forms-application"></a>Pour créer l’application de Windows Forms
 
 1. Dans Visual Studio, dans le menu **Fichier**, sélectionnez **Nouveau** > **Projet**.
 
-2. Développez **Visual C#**  ou **Visual Basic** dans le volet gauche, puis sélectionnez **Bureau Windows**.
+2. Développez **Visual C#** ou **Visual Basic** dans le volet gauche, puis sélectionnez **Bureau Windows**.
 
 3. Dans le volet central, sélectionnez le type de projet d' **application Windows Forms** .
 
@@ -138,7 +137,7 @@ Configurez l’héritage en faisant glisser un objet **Héritage** de la **Boît
 
 11. Affectez à la propriété **Héritage par défaut** la valeur **Personnel**.
 
-12. créer le projet ;
+12. Créez le projet.
 
 ## <a name="query-the-inherited-class-and-display-the-data-on-the-form"></a>Interroger la classe héritée et afficher des données sur le formulaire
 Vous ajoutez à présent du code au formulaire qui interroge une classe spécifique dans le modèle objet.
@@ -174,8 +173,8 @@ Vous ajoutez à présent du code au formulaire qui interroge une classe spécifi
     }
     ```
 
-## <a name="test-the-application"></a>Tester l'application
-Exécutez l’application et vérifiez que les enregistrements affichés dans la zone de liste sont tous des employés (enregistrements qui ont une valeur 2 dans leur colonne **Type**).
+## <a name="test-the-application"></a>Test de l’application
+Exécutez l’application et vérifiez que les enregistrements affichés dans la zone de liste sont tous les employés (enregistrements qui ont une valeur de 2 dans leur colonne de **type** ).
 
 ### <a name="to-test-the-application"></a>Pour tester l'application
 
@@ -183,7 +182,7 @@ Exécutez l’application et vérifiez que les enregistrements affichés dans la
 
 2. Vérifiez que seuls les enregistrements qui ont une valeur 2 dans leur colonne **Type** sont affichés.
 
-3. Fermez le formulaire. (Dans le menu **Déboguer**, cliquez sur **Arrêter le débogage**.)
+3. Fermez le formulaire. (Dans le menu **Déboguer** , cliquez sur **arrêter le débogage**.)
 
 ## <a name="see-also"></a>Voir aussi
 
@@ -191,4 +190,4 @@ Exécutez l’application et vérifiez que les enregistrements affichés dans la
 - [Procédure pas à pas : Création de classes LINQ to SQL (Concepteur O/R)](how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-o-r-designer.md)
 - [Guide pratique pour affecter des procédures stockées pour effectuer des mises à jour, des insertions et des suppressions (Concepteur O/R)](../data-tools/how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-o-r-designer.md)
 - [LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index)
-- [Guide pratique pour générer le modèle objet en Visual Basic ou C#](/dotnet/framework/data/adonet/sql/linq/how-to-generate-the-object-model-in-visual-basic-or-csharp)
+- [Comment : générer le modèle objet dans Visual Basic ou C #](/dotnet/framework/data/adonet/sql/linq/how-to-generate-the-object-model-in-visual-basic-or-csharp)

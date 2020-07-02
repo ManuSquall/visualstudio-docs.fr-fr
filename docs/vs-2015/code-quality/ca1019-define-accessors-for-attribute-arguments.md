@@ -15,17 +15,17 @@ caps.latest.revision: 21
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 4e77f3a4eec7495e6b4abe13bec93d341f961463
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: ec9be9dae502ec48570a85576f483518ed0d75d6
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72662012"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85534951"
 ---
 # <a name="ca1019-define-accessors-for-attribute-arguments"></a>CA1019 : Définir des accesseurs pour les arguments d'attribut
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Élément|Valeur|
 |-|-|
 |TypeName|DefineAccessorsForAttributeArguments|
 |CheckId|CA1019|
@@ -67,14 +67,14 @@ ms.locfileid: "72662012"
 ### <a name="code"></a>Code
  [!code-csharp[FxCop.Design.AttributeAccessorsNamed#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Design.AttributeAccessorsNamed/cs/FxCop.Design.AttributeAccessorsNamed.cs#1)]
 
-### <a name="comments"></a>Comments
+### <a name="comments"></a>Commentaires
  L’exemple suivant montre comment appliquer l’attribut personnalisé à deux propriétés.
 
 ### <a name="code"></a>Code
  [!code-csharp[FxCop.Design.AttributeAccessorsNamedApplied#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Design.AttributeAccessorsNamedApplied/cs/FxCop.Design.AttributeAccessorsNamedApplied.cs#1)]
 
 ## <a name="related-rules"></a>Règles associées
- [CA1813 : Évitez les attributs unsealed](../code-quality/ca1813-avoid-unsealed-attributes.md)
+ [CA1813 : Évitez les attributs unsealed](../code-quality/ca1813-avoid-unsealed-attributes.md)
 
 ## <a name="see-also"></a>Voir aussi
  [Attributs](https://msdn.microsoft.com/library/ee0038ef-b247-4747-a650-3c5c5cd58d8b)

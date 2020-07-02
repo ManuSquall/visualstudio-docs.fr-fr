@@ -2,7 +2,7 @@
 title: Test unitaire de code Python
 description: La configuration des tests unitaires pour le code Python dans Visual Studio tire pleinement parti des fonctionnalités de l’Explorateur de tests pour la découverte, l’exécution et le débogage de tests.
 ms.date: 09/18/2019
-ms.topic: include
+ms.topic: how-to
 author: JoshuaPartlow
 ms.author: joshuapa
 manager: jillfra
@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 9843b47e38d5d33a25c455efe619dfcc033fb334
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 032732f19855b9ba5c97c2e5281e8385f9ace3be
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "71933455"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85535325"
 ---
 ## <a name="discover-and-view-tests"></a>Exécuter et voir les tests
 
@@ -39,27 +39,27 @@ Par convention, Visual Studio identifie les tests comme des méthodes dont le no
 
 1. Enregistrez le fichier si nécessaire, puis ouvrez l’**Explorateur de tests** avec la commande de menu **Test** > **Fenêtres** > **Explorateur de tests**.
 
-1. **Test Explorer** recherche vos tests et les affiche comme indiqué ci-dessous. Double-cliquez sur un test pour ouvrir son fichier source.
+1. L' **Explorateur de tests** recherche des tests dans votre projet et les affiche comme indiqué ci-dessous. Double-cliquez sur un test pour ouvrir son fichier source.
 
     ![Explorateur de tests indiquant le test_A par défaut](../../media/unit-test-A.png)
 
-1. En additionnant plus de tests à votre projet, vous pouvez organiser la vue dans **Test Explorer** à l’aide du **Groupe par** menu sur la barre d’outils :
+1. Lorsque vous ajoutez d’autres tests à votre projet, vous pouvez organiser l’affichage dans l' **Explorateur de tests** à l’aide du menu **regrouper par** de la barre d’outils :
 
     ![Menu Regrouper par de la barre d’outils de l’Explorateur de tests](../../media/unit-test-group-menu.png)
 
-1. Vous pouvez également entrer du texte dans le champ **de recherche** pour filtrer les tests par leur nom.
+1. Vous pouvez également entrer du texte dans le champ de **recherche** pour filtrer les tests par nom.
 
-Pour plus d’informations sur le module et les `unittest` tests d’écriture, consultez la documentation Python [2.7](https://docs.python.org/2/library/unittest.html) ou la documentation Python [3.7](https://docs.python.org/3/library/unittest.html) (python.org).
+Pour plus d’informations sur le `unittest` module et l’écriture de tests, consultez la [documentation Python 2,7](https://docs.python.org/2/library/unittest.html) ou la [documentation python 3,7](https://docs.python.org/3/library/unittest.html) (Python.org).
 
 ## <a name="run-tests"></a>Exécuter les tests
 
-Dans **Test Explorer,** vous pouvez exécuter des tests de diverses façons :
+Dans l' **Explorateur de tests** , vous pouvez exécuter des tests de plusieurs façons :
 
 - L’option **Exécuter tout** permet d’exécuter tous les tests affichés (sauf si des filtres sont appliqués).
-- Le menu **Run** vous donne l’ordre d’exécuter échoué, passé, ou ne pas exécuter des tests en tant que groupe.
+- Le menu **exécuter** vous donne les commandes permettant d’exécuter des tests ayant échoué, ayant réussi ou non exécutés en tant que groupe.
 - Vous pouvez sélectionner un ou plusieurs tests, cliquer dessus avec le bouton droit, puis sélectionner **Exécuter les tests sélectionnés**.
 
-Les tests sont exécutés en arrière-plan et **Test Explorer** met à jour l’état de chaque test au fur et à mesure qu’il se termine :
+Les tests s’exécutent en arrière-plan et l' **Explorateur de tests** met à jour l’état de chaque test à mesure qu’il se termine :
 
 - Les tests réussis sont marqués par une coche verte, accompagnée du temps nécessaire à l’exécution du test :
 
@@ -75,11 +75,11 @@ Les tests sont exécutés en arrière-plan et **Test Explorer** met à jour l’
 
 Étant donné que les tests unitaires sont des éléments de code, ils sont exposés à des bogues tout comme n’importe quel autre code et doivent parfois être exécutés dans un débogueur. Dans le débogueur, vous pouvez définir des points d’arrêt, examiner des variables et parcourir le code. Visual Studio fournit également des outils de diagnostic pour les tests unitaires.
 
-Pour commencer à débogage, définissez un point de rupture initial dans votre code, puis cliquez à droite sur le test (ou une sélection) dans **Test Explorer** et sélectionnez **Debug Selected Tests**. Visual Studio démarre le débogueur Python comme il le ferait pour un code d’application.
+Pour démarrer le débogage, définissez un point d’arrêt initial dans votre code, cliquez avec le bouton droit sur le test (ou une sélection) dans l' **Explorateur de tests** , puis sélectionnez **déboguer les tests sélectionnés**. Visual Studio démarre le débogueur Python comme il le ferait pour un code d’application.
 
 ![Débogage d’un test](../../media/unit-test-debugging.png)
 
-Vous pouvez également utiliser la **couverture du code d’analyse pour les tests sélectionnés**. Pour plus d’informations, consultez [Utiliser la couverture du code pour déterminer la quantité de code testé](../../../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md).
+Vous pouvez également utiliser l' **option analyser la couverture du code pour les tests sélectionnés**. Pour plus d’informations, consultez [Utiliser la couverture du code pour déterminer la quantité de code testé](../../../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md).
 
 ### <a name="known-issues"></a>Problèmes connus
 

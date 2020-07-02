@@ -13,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e912459f45086b1bf5f96a9458f006354e982ffd
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: ffd0f7378893b52e93480272c73acc2aa413320d
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "76542683"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85533717"
 ---
 # <a name="customize-build-and-debug-tasks-for-open-folder-development"></a>Personnaliser des tâches de génération et de débogage pour le développement « Ouvrir le dossier »
 
@@ -46,11 +46,11 @@ Vous pouvez automatiser les scripts de génération ou d’autres opérations ex
 
 Permet de créer (ou d’ouvrir) le fichier *tasks.vs.json* dans le dossier *.vs*. Vous pouvez définir une tâche de build ou n’importe quelle tâche dans ce fichier, puis l’appeler en utilisant le nom que vous lui avez attribué dans le menu contextuel (clic droit) de **l’Explorateur de solutions**.
 
-Des tâches personnalisée peuvent être ajoutées à chaque fichier ou à l’ensemble des fichiers d’un type spécifique. Par exemple, les fichiers de paquets NuGet peuvent être configurés pour avoir une tâche "Restore Packages", ou tous les fichiers source peuvent être configurés pour avoir une tâche d’analyse statique, comme un linter pour tous les fichiers *.js.*
+Des tâches personnalisée peuvent être ajoutées à chaque fichier ou à l’ensemble des fichiers d’un type spécifique. Par exemple, les fichiers de package NuGet peuvent être configurés pour avoir une tâche « restaurer les packages », ou tous les fichiers sources peuvent être configurés pour avoir une tâche d’analyse statique, par exemple un Linter pour tous les fichiers *. js* .
 
 ### <a name="define-custom-build-tasks"></a>Définir des tâches de génération personnalisées
 
-Si votre code base utilise des outils de génération personnalisés que Visual Studio ne reconnaît pas, vous ne pourrez pas exécuter et déboguer le code dans Visual Studio tant que vous n’aurez pas effectué certaines étapes de configuration. Visual Studio fournit des *tâches de génération* dans lesquelles vous pouvez indiquer à Visual Studio comment générer, regénérer et nettoyer votre code. Les *tâches.vs.json* construisent des couples de fichiers de tâches la boucle de développement intérieur Visual Studio aux outils de construction personnalisés utilisés par votre base de code.
+Si votre code base utilise des outils de génération personnalisés que Visual Studio ne reconnaît pas, vous ne pourrez pas exécuter et déboguer le code dans Visual Studio tant que vous n’aurez pas effectué certaines étapes de configuration. Visual Studio fournit des *tâches de génération* dans lesquelles vous pouvez indiquer à Visual Studio comment générer, regénérer et nettoyer votre code. Le *tasks.vs.jsfichier de tâche de* Build associe la boucle de développement interne de Visual Studio aux outils de génération personnalisée utilisés par votre code base.
 
 Prenons un code base composé d’un seul fichier cC# appelé *hello.cs*. Le fichier *makefile* d’un tel code base pourrait se présenter comme ceci :
 
@@ -130,7 +130,7 @@ Lorsque vous sélectionnez une de ces options, la tâche s’exécute. La sortie
 
 Vous pouvez définir des tâches arbitraires dans le fichier *tasks.vs.json* et faire ainsi à peu près tout ce que vous voulez. Par exemple, vous pouvez définir une tâche afin d’afficher le nom du fichier actuellement sélectionné dans la fenêtre **Sortie**, ou pour répertorier les fichiers d’un répertoire spécifié.
 
-L’exemple suivant montre un fichier *tasks.vs.json* qui définit une seule tâche. Lorsqu’elle est appelée, la tâche affiche le nom de fichier de fichier *.js* actuellement sélectionné.
+L’exemple suivant montre un *tasks.vs.jssur* un fichier qui définit une tâche unique. Lorsqu’elle est appelée, la tâche affiche le nom de fichier de fichier *.js* actuellement sélectionné.
 
 ```json
 {
@@ -182,7 +182,7 @@ Cette tâche s’applique à tous les fichiers. Lorsque vous ouvrez le menu cont
 
 ![Tâche arbitraire dans le menu contextuel](../ide/media/customize-arbitrary-task-menu.png)
 
-### <a name="settings-scope"></a>Portée des paramètres
+### <a name="settings-scope"></a>Étendue de paramètres
 
 Plusieurs fichiers *tasks.vs.json* peuvent exister à la racine et les sous-répertoires d’un code base. Cette conception offre la flexibilité de pouvoir bénéficier d’un comportement différent dans les divers sous-répertoires du code base. Visual Studio regroupe ou substitue les paramètres dans l’ensemble du code base, en hiérarchisation les fichiers dans l’ordre suivant :
 
@@ -201,7 +201,7 @@ Cette section décrit certaines des propriétés que vous pouvez spécifier dans
 
 Vous pouvez créer des tâches pour tout fichier ou dossier en spécifiant son nom dans le champ `appliesTo`, par exemple `"appliesTo": "hello.js"`. Les masques de fichier suivants peuvent être utilisés comme valeurs :
 
-|||
+|Masque de fichier|Description|
 |-|-|
 |`"*"`| la tâche est disponible pour tous les fichiers et dossiers dans l’espace de travail|
 |`"*/"`| la tâche est disponible pour tous les dossiers dans l’espace de travail|
@@ -213,19 +213,19 @@ Vous pouvez créer des tâches pour tout fichier ou dossier en spécifiant son n
 
 #### <a name="macros-for-tasksvsjson"></a>Macros pour tasks.vs.json
 
-|||
+|Macro|Description|
 |-|-|
 |`${env.<VARIABLE>}`| Spécifie toute variable d’environnement (par exemple, ${env.PATH}, ${env.COMSPEC}, etc.) définie pour l’invite de commandes développeur. Pour plus d’informations, consultez [Invite de commandes développeur pour Visual Studio](/dotnet/framework/tools/developer-command-prompt-for-vs).|
 |`${workspaceRoot}`| Le chemin complet vers le dossier de l’espace de travail (par exemple *C:\sources\hello*)|
 |`${file}`| Le chemin complet du fichier ou du dossier sur lequel exécuter cette tâche (par exemple *C:\sources\hello\src\hello.js*)|
 |`${relativeFile}`| Le chemin relatif du fichier ou du dossier (par exemple *src\hello.js*)|
 |`${fileBasename}`| Le nom du fichier sans chemin ni extension (par exemple *hello*)|
-|`${fileDirname}`| Le chemin complet vers le fichier, à l’exclusion du nom de fichier (par exemple, *C: 'sources’hello’src*)|
+|`${fileDirname}`| Chemin d’accès complet au fichier, à l’exclusion du nom de fichier (par exemple, *C:\sources\hello\src*)|
 |`${fileExtname}`| L’extension du fichier sélectionné (par exemple *.js*)|
 
 ## <a name="configure-debugging-with-launchvsjson"></a>Configurer le débogage avec launch.vs.json
 
-Pour configurer les projets CMake pour le débogage, voir [configurer les sessions de débogage de CMake](/cpp/build/configure-cmake-debugging-sessions).
+Pour configurer des projets CMake pour le débogage, consultez [configurer des sessions de débogage cmake](/cpp/build/configure-cmake-debugging-sessions).
 
 1. Afin de configurer votre code base pour le débogage, dans **l’Explorateur de solutions** choisissez l’élément de menu contextuel **Paramètres de débogage et de lancement** en cliquant avec le bouton droit sur votre fichier exécutable.
 
@@ -260,7 +260,7 @@ Pour configurer les projets CMake pour le débogage, voir [configurer les sessio
    Lorsque vous choisissez **F5**, le débogueur démarre et s’arrête au point d’arrêt que vous avez déjà défini. Toutes les fenêtres du débogueur habituelles sont disponibles et opérationnelles.
 
    > [!IMPORTANT]
-   > Pour plus de détails sur les tâches de construction et de débagé personnalisées dans les projets de dossiers ouverts de C, consultez [le support Open Folder pour les systèmes de construction de CMD dans Visual Studio](/cpp/build/open-folder-projects-cpp).
+   > Pour plus d’informations sur les tâches de génération et de débogage personnalisées dans les projets de dossiers ouverts C++, consultez [ouvrir la prise en charge des dossiers pour les systèmes de génération c++ dans Visual Studio](/cpp/build/open-folder-projects-cpp).
 
 ### <a name="specify-arguments-for-debugging"></a>Spécifier des arguments pour le débogage
 
@@ -312,7 +312,7 @@ Les paramètres lus à partir du fichier *.gitignore* sont appliqués à son ré
 ## <a name="see-also"></a>Voir aussi
 
 - [Développer du code sans projet ou solution](../ide/develop-code-in-visual-studio-without-projects-or-solutions.md)
-- [Ouvrir des projets de dossier pour C++](/cpp/build/open-folder-projects-cpp)
+- [Projets Dossier ouvert pour C++](/cpp/build/open-folder-projects-cpp)
 - [Projets CMake pour C++](/cpp/build/cmake-projects-in-visual-studio)
-- [Référence NMAKE](/cpp/build/reference/nmake-reference)
+- [Informations de référence sur NMAKE](/cpp/build/reference/nmake-reference)
 - [Fonctionnalités de l’éditeur de code](../ide/writing-code-in-the-code-and-text-editor.md)

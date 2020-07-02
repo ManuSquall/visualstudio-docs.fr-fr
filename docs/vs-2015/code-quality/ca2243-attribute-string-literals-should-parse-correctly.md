@@ -15,17 +15,17 @@ caps.latest.revision: 12
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 62a2adc6f01e5cb26a6af26d71a124f8b81e07fb
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 09e932651576f9b6d595657ad024b8f2697ad016
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72671977"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85535744"
 ---
-# <a name="ca2243-attribute-string-literals-should-parse-correctly"></a>CA2243 : Les littéraux de chaîne d'attribut doivent être correctement analysés
+# <a name="ca2243-attribute-string-literals-should-parse-correctly"></a>CA2243 : Les littéraux de chaîne d'attribut doivent être analysés correctement
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Élément|Valeur|
 |-|-|
 |TypeName|AttributeStringLiteralsShouldParseCorrectly|
 |CheckId|CA2243|
@@ -36,7 +36,7 @@ ms.locfileid: "72671977"
  Le paramètre de littéral de chaîne d’un attribut n’est pas analysé correctement pour une URL, un GUID ou une version.
 
 ## <a name="rule-description"></a>Description de la règle
- Étant donné que les attributs sont dérivés de <xref:System.Attribute?displayProperty=fullName>, et que les attributs sont utilisés au moment de la compilation, seules les valeurs constantes peuvent être passées à leurs constructeurs. Les paramètres d’attribut qui doivent représenter des URL, des GUID et des versions ne peuvent pas être de type <xref:System.Uri?displayProperty=fullName>, <xref:System.Guid?displayProperty=fullName> et <xref:System.Version?displayProperty=fullName>, car ces types ne peuvent pas être représentés en tant que constantes. Au lieu de cela, elles doivent être représentées par des chaînes.
+ Étant donné que les attributs sont dérivés de <xref:System.Attribute?displayProperty=fullName> , et que les attributs sont utilisés au moment de la compilation, seules les valeurs constantes peuvent être passées à leurs constructeurs. Les paramètres d’attribut qui doivent représenter des URL, des GUID et des versions ne peuvent pas être de type <xref:System.Uri?displayProperty=fullName> , <xref:System.Guid?displayProperty=fullName> et <xref:System.Version?displayProperty=fullName> , car ces types ne peuvent pas être représentés en tant que constantes. Au lieu de cela, elles doivent être représentées par des chaînes.
 
  Étant donné que le paramètre est tapé sous la forme d’une chaîne, il est possible qu’un paramètre mis en forme de manière incorrecte soit passé au moment de la compilation.
 
@@ -62,4 +62,4 @@ ms.locfileid: "72671977"
 - Les paramètres qui contiennent « URI », « urn » ou « URL » et ne peuvent pas être analysés sur System. Uri.
 
 ## <a name="see-also"></a>Voir aussi
- [CA1054 : Les paramètres d’URI ne doivent pas être des chaînes](../code-quality/ca1054-uri-parameters-should-not-be-strings.md)
+ [CA1054 : Les paramètres URI ne doivent pas être des chaînes](../code-quality/ca1054-uri-parameters-should-not-be-strings.md)

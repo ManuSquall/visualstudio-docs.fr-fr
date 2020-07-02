@@ -2,7 +2,7 @@
 title: Modèles d’éléments pour les projets Python
 description: Une liste de référence des modèles d’éléments pour les projets Python qui sont disponibles via la fonction Ajouter > Nouvel élément de boîte de dialogue dans Visual Studio.
 ms.date: 12/06/2018
-ms.topic: tutorial
+ms.topic: reference
 author: JoshuaPartlow
 ms.author: joshuapa
 manager: jillfra
@@ -10,16 +10,16 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: c093dad1364fd5209f51c8e87e3fb99b3c1d3c4a
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: 528606356c2d976de71ab2c0317a1a0236d2e63f
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "62430334"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85533391"
 ---
 # <a name="python-item-templates"></a>Modèles d’éléments Python
 
-Les modèles d’objets sont disponibles dans les projets Python via la commande **de** > menu Project**Add New Item,** ou la commande **Add** > **New Item** sur le menu context dans Solution **Explorer**.
+Les modèles d’élément sont disponibles dans les projets python **Project**par le biais de la  >  commande de menu**Ajouter un nouvel élément** du projet ou de la commande **Ajouter**  >  **un nouvel élément** du menu contextuel dans **Explorateur de solutions**.
 
 ![Boîte de dialogue Ajouter un nouvel élément](media/project-item-templates.png)
 
@@ -31,10 +31,10 @@ Le tableau suivant décrit brièvement l’effet de chaque modèle d’élément
 | --- | --- |
 | **Fichier Python vide** | Un fichier vide avec l’extension *.py*. |
 | **Classe Python** | Un fichier *.py* contenant une seule définition de classe Python vide. |
-| **Forfait Python** | Un dossier qui contient un * \_ \_fichier init\_\_.py.* |
+| **Package Python** | Dossier qui contient un fichier * \_ \_ init \_ \_ . py* . |
 | **Test unitaire Python** | Un fichier *.py* avec un test unitaire unique basé sur le framework `unittest`, ainsi qu’un appel à `unittest.main()` pour exécuter les tests dans le fichier. |
 | **Page HTML** | Un fichier *.html* avec une structure de page simple composée d’un élément `<head>` et d’un élément `<body>`. |
-| **Javascript** | Un fichier *.js* vide. |
+| **JavaScript** | Un fichier *.js* vide. |
 | **Feuille de style** | Un fichier *.css* contenant un style vide pour `body`. |
 | **Fichier texte** | Un fichier *.txt* vide. |
 | **Application Django 1.9**<br/>**Application Django 1.4** | Un dossier portant le nom de l’application, qui contient les principaux fichiers d’une application Django, comme indiqué dans [Découvrir Django dans Visual Studio, étape 2-2](learn-django-in-visual-studio-step-02-create-an-app.md#step-2-1-create-an-app-with-a-default-structure) pour Django 1.9. Pour Django 1.4, le dossier *migrations*, le fichier *admin.py* et le fichier *apps.py* ne sont pas inclus. |
