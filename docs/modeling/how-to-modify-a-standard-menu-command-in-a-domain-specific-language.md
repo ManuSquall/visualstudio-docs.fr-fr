@@ -1,21 +1,21 @@
 ---
 title: Modifier la commande de menu standard dans DSL
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - .vsct files, adding commands to a domain-specific language
 - Domain-Specific Language, adding custom commands
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4ae2aa04eb415ee5c4b7aaa41ea4c6abb49333f7
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: a7236c074bda17023c989c744042db2de4046558
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72605265"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85532494"
 ---
 # <a name="how-to-modify-a-standard-menu-command-in-a-domain-specific-language"></a>Comment : modifier une commande de menu standard dans un langage spécifique à un domaine
 
@@ -28,9 +28,9 @@ Vous pouvez modifier le comportement de certaines des commandes standard qui son
 
 ### <a name="to-discover-what-commands-you-can-modify"></a>Pour découvrir les commandes que vous pouvez modifier
 
-1. Dans le projet `DslPackage`, ouvrez `GeneratedCode\CommandSet.cs`. Ce C# fichier se trouve dans Explorateur de solutions en tant que filiale de `CommandSet.tt`.
+1. Dans le projet `DslPackage`, ouvrez `GeneratedCode\CommandSet.cs`. Ce fichier C# se trouve dans Explorateur de solutions en tant que filiale de `CommandSet.tt` .
 
-2. Recherchez dans ce fichier les classes dont le nom se termine par « `CommandSet` », par exemple `Language1CommandSet` et `Language1ClipboardCommandSet`.
+2. Recherchez dans ce fichier des classes dont les noms se terminent par « `CommandSet` », par exemple `Language1CommandSet` et `Language1ClipboardCommandSet` .
 
 3. Dans chaque classe de jeu de commandes, tapez « `override` » suivi d'un espace. IntelliSense affiche une liste des méthodes que vous pouvez substituer. Chaque commande à une paire de méthodes dont le nom commence par « `ProcessOnStatus` » et « `ProcessOnMenu` ».
 
@@ -53,9 +53,9 @@ Créez un fichier qui contient une déclaration partielle de la classe de jeu de
 
      `{ ...  internal partial class Language1CommandSet : ...`
 
-2. Dans **DslPackage**, créez un dossier nommé **code personnalisé**. Dans ce dossier, créez un fichier de classe nommé `CommandSet.cs`.
+2. Dans **DslPackage**, créez un dossier nommé **code personnalisé**. Dans ce dossier, créez un nouveau fichier de classe nommé `CommandSet.cs` .
 
-3. Dans le nouveau fichier, écrivez une déclaration partielle dont l'espace de noms et le nom sont les mêmes que ceux de la classe partielle générée. Exemple :
+3. Dans le nouveau fichier, écrivez une déclaration partielle dont l'espace de noms et le nom sont les mêmes que ceux de la classe partielle générée. Par exemple :
 
     ```csharp
     using System;
@@ -70,7 +70,7 @@ Créez un fichier qui contient une déclaration partielle de la classe de jeu de
 
 ## <a name="override-the-command-methods"></a>Substituer les méthodes de commande
 
-La plupart des commandes ont deux méthodes associées : la méthode avec un nom comme `ProcessOnStatus`... détermine si la commande doit être visible et activée. Elle est appelée chaque fois que l'utilisateur clique avec le bouton droit sur le diagramme et doit être exécutée rapidement et n'apporter aucune modification. `ProcessOnMenu`... est appelé quand l’utilisateur clique sur la commande et doit exécuter la fonction de la commande. Vous souhaiterez peut-être substituer l'une ou l'autre de ces méthodes, ou les deux.
+La plupart des commandes ont deux méthodes associées : la méthode avec un nom comme `ProcessOnStatus` ... détermine si la commande doit être visible et activée. Elle est appelée chaque fois que l'utilisateur clique avec le bouton droit sur le diagramme et doit être exécutée rapidement et n'apporter aucune modification. `ProcessOnMenu`... est appelé quand l’utilisateur clique sur la commande et doit exécuter la fonction de la commande. Vous souhaiterez peut-être substituer l'une ou l'autre de ces méthodes, ou les deux.
 
 ### <a name="to-change-when-the-command-appears-on-a-menu"></a>Pour modifier quand la commande apparaît dans un menu
 
@@ -129,17 +129,17 @@ Si votre code modifie le magasin, par exemple s'il crée, supprime ou met à jou
 
 Les fragments suivants sont souvent utiles dans ces méthodes :
 
-- `this.CurrentSelection`., La forme sur laquelle l'utilisateur a cliqué avec le bouton droit est toujours incluse dans cette liste de formes et de connecteurs. Si l'utilisateur clique sur une partie vierge du diagramme, ce dernier est le seul membre de la liste.
+- `this.CurrentSelection`. La forme sur laquelle l'utilisateur a cliqué avec le bouton droit est toujours incluse dans cette liste de formes et de connecteurs. Si l'utilisateur clique sur une partie vierge du diagramme, ce dernier est le seul membre de la liste.
 
-- `this.IsDiagramSelected()`  -  `true` si l’utilisateur a cliqué sur une partie vide du diagramme.
+- `this.IsDiagramSelected()` - `true`Si l’utilisateur a cliqué sur une partie vide du diagramme.
 
 - `this.IsCurrentDiagramEmpty()`
 
-- `this.IsSingleSelection()` - l'utilisateur n'a pas sélectionné plusieurs formes.
+- `this.IsSingleSelection()`-l’utilisateur n’a pas sélectionné plusieurs formes
 
-- `this.SingleSelection` - forme ou diagramme sur lequel l'utilisateur a cliqué avec le bouton droit.
+- `this.SingleSelection`-forme ou diagramme sur lequel l’utilisateur a cliqué avec le bouton droit
 
-- `shape.ModelElement as MyLanguageElement` - élément de modèle représenté par une forme.
+- `shape.ModelElement as MyLanguageElement`: élément de modèle représenté par une forme.
 
 Pour plus d’informations sur la façon de naviguer d’un élément à l’autre et sur la façon de créer des objets et des liens, consultez [navigation et mise à jour d’un modèle dans le code de programme](../modeling/navigating-and-updating-a-model-in-program-code.md).
 
@@ -147,7 +147,7 @@ Pour plus d’informations sur la façon de naviguer d’un élément à l’aut
 
 - <xref:System.ComponentModel.Design.MenuCommand>
 - [Écriture de code pour personnaliser un langage spécifique à un domaine](../modeling/writing-code-to-customise-a-domain-specific-language.md)
-- [Guide pratique pour ajouter une commande au menu contextuel](../modeling/how-to-add-a-command-to-the-shortcut-menu.md)
+- [Comment : ajouter une commande au menu contextuel](../modeling/how-to-add-a-command-to-the-shortcut-menu.md)
 - [Comment VSPackages ajoute des éléments de l’interface utilisateur](../extensibility/internals/how-vspackages-add-user-interface-elements.md)
 - [Fichiers Visual Studio Command Table (.Vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
 - [Schéma de référence XML VSCT](../extensibility/vsct-xml-schema-reference.md)

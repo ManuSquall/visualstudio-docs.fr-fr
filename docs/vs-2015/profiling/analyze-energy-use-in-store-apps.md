@@ -14,25 +14,25 @@ caps.latest.revision: 39
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: a3147a6bafc550383f96134f5a76932413eb8a22
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 82f5e6401ba65a0dfaffc268890ece0166432c08
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74299366"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85532949"
 ---
-# <a name="analyze-energy-use-in-store-apps"></a>Analyser l'utilisation de l'énergie dans les applications de Store
+# <a name="analyze-energy-use-in-store-apps"></a>Analyser l'utilisation de l'énergie dans les applications du Windows Store
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Le profileur **Consommation d'énergie** de Visual Studio vous aide à analyser la consommation de puissance et d'énergie des Applications Windows Store sur les tablettes de faible puissance qui fonctionnent constamment ou une partie du temps sur batterie. Sur un périphérique alimenté par batterie, une application trop gourmande en énergie peut entraîner le mécontentement du client, voire, éventuellement, sa désinstallation. L'optimisation de l'utilisation d'énergie peut augmenter la popularité et l'utilisation de votre application par les clients.  
   
-## <a name="BKMK_What_the_Energy_Consumption_tool_is__how_it_works__and_what_it_measures"></a> Présentation du profileur Consommation d’énergie, de son fonctionnement et de ce qu’il mesure  
- Le profileur Consommation d'énergie capture les activités de l'affichage, de l'UC et des connexions réseau d'un appareil pendant une session de profilage. Il génère alors des estimations de la puissance utilisée pour ces activités et de l'énergie totale nécessaire à la session de profilage.  
+## <a name="what-the-energy-consumption-profiler-is-how-it-works-and-what-it-measures"></a><a name="BKMK_What_the_Energy_Consumption_tool_is__how_it_works__and_what_it_measures"></a>Le profileur de consommation d’énergie, son fonctionnement et ce qu’il mesure  
+ Le profileur de consommation d'énergie capture les activités de l'affichage, de l'UC, et des connexions réseau d'un périphérique pendant une session de profilage. Il génère alors des estimations de la puissance utilisée pour ces activités et de l'énergie totale nécessaire à la session de profilage.  
   
 > [!NOTE]
-> Le profileur d'énergie estime l'utilisation d'énergie en utilisant un modèle logiciel d'appareil de référence standard, représentatif des tablettes de faible puissance sur lesquelles votre application peut s'exécuter. Pour obtenir les estimations les plus justes, nous vous recommandons de collecter les données de profil sur une tablette de faible puissance.  
+> Le profileur d'énergie estime l'utilisation de puissance et d'énergie à l'aide d'un modèle de logiciel de matériel de périphérique standard de référence, représentatif des tablettes de faible puissance sur lesquelles votre application est susceptible de s'exécuter. Pour obtenir les estimations les plus justes, nous vous recommandons de collecter les données de profil sur une tablette de faible puissance.  
 >   
-> Le modèle fournit, certes, de bonnes estimations pour divers appareils de faible puissance, mais les valeurs réelles de l'appareil que vous profilez seront probablement différentes. Utilisez ces valeurs pour découvrir les activités d'affichage, d'UC et de réseau très coûteuses en énergie par rapport à d'autres utilisations de ressources et que vous pourriez utiliser à des fins d'optimisation.  
+> Bien que le modèle fournit des estimations correctes pour un grand nombre de périphériques de faible puissance, les valeurs réelles du périphérique profilé seront probablement différentes. Utilisez ces valeurs pour découvrir les activités d'affichage, d'UC et de réseau très coûteuses en énergie par rapport à d'autres utilisations de ressources et que vous pourriez utiliser à des fins d'optimisation.  
   
  Le profileur de consommation d'énergie utilise les définitions de *puissance* et d' *énergie*suivantes :  
   
@@ -42,16 +42,16 @@ Le profileur **Consommation d'énergie** de Visual Studio vous aide à analyser 
   
 - L'*énergie* mesure la puissance totale, comme une capacité ou un potentiel, telle la capacité de puissance d'une batterie, ou comme la puissance totale consommée au cours d'une période donnée. L'unité d'énergie est le watt-heure, la quantité de puissance d'un watt constamment appliquée à une heure. Dans le **Résumé d'énergie**, les unités sont affichées sous forme de milliwatts heure **mW-h**.  
   
-  ![Capacité énergétique, énergie utilisée, énergie totale utilisée](../profiling/media/energyprof-capcitypowerused.png "ENERGYPROF_CapcityPowerUsed")  
+  ![Capacité d’énergie, énergie utilisée, énergie totale utilisée](../profiling/media/energyprof-capcitypowerused.png "ENERGYPROF_CapcityPowerUsed")  
   
-  Par exemple, la batterie entièrement chargée d'une tablette stocke une certaine quantité d'énergie. Lorsque l'énergie est utilisée pour effectuer des tâches telles que la communication sur un réseau, le calcul de valeurs, ou l'affichage de graphiques, la puissance de la batterie se dissipe à des taux différents. Pour une période donnée, la puissance totale consommée est également mesurée en énergie.  
+  Par exemple, la batterie entièrement chargée d'une tablette stocke une certaine quantité d'énergie. Lorsque l'énergie est utilisée pour effectuer des tâches telles que la communication sur un réseau, le calcul de valeurs, ou l'affichage de graphiques, la puissance de la batterie se dissipe à des taux différents. Pour une période définie, le total de puissance consommé est également mesuré en énergie.  
   
-## <a name="BKMK_Identify_scenarios_with_user_marks"></a> Identifier des scénarios avec des marques utilisateur  
+## <a name="identify-scenarios-with-user-marks"></a><a name="BKMK_Identify_scenarios_with_user_marks"></a> Identifier des scénarios avec des marques utilisateur  
  Vous pouvez ajouter des *marques utilisateur* à vos données de profilage pour vous aider à identifier des zones dans la chronologie.  
   
  ![Marques utilisateur dans la chronologie](../profiling/media/profilers-usermarktimeline.png "PROFILERS_UserMarkTimeline")  
   
- La marque apparaît sous la forme d'un triangle orange dans la chronologie quand la méthode est exécutée. Le message et l'heure sont affichés sous la forme d'une info-bulle lorsque vous pointez sur la marque. Si plusieurs marques utilisateur sont proches, les marques sont fusionnées et les données de l'info-bulle sont rassemblées. Vous pouvez effectuer un zoom avant sur la chronologie pour dissocier les marques.  
+ La marque apparaît sous la forme d'un triangle orange dans la chronologie lorsque la méthode est exécutée. Le message et l'heure sont affichés sous la forme d'une info-bulle lorsque vous pointez sur la marque. Si plusieurs marques utilisateur sont proches, les marques sont fusionnées et les données de l'info-bulle sont rassemblées. Vous pouvez effectuer un zoom avant sur la chronologie pour dissocier les marques.  
   
  **Ajouter des marques au code C#, Visual Basic, C++**  
   
@@ -61,7 +61,7 @@ Le profileur **Consommation d'énergie** de Visual Studio vous aide à analyser 
   
 > [!NOTE]
 > - Windows.Foundation.Diagnostics LoggingChannel implémente l’interface [Windows.Foundation.IClosable](https://msdn.microsoft.com/library/windows/apps/windows.foundation.iclosable.aspx) (projetée comme [System.IDisposable](https://msdn.microsoft.com/library/System.IDisposable.aspx) en C# et Visual Basic). Pour éviter la fuite de ressources du système d’exploitation, appelez [LoggingChannel.Close](https://msdn.microsoft.com/library/windows/apps/windows.foundation.diagnostics.loggingchannel.close.aspx)() (Windows.Foundation.Diagnostics.LoggingChannel.Dispose() en C# et Visual Basic) quand vous avez terminé d’utiliser un canal d’enregistrement.  
->   - Chaque canal d'enregistrement ouvert doit avoir un nom unique. Toute tentative de création d'un canal d'enregistrement avec un nom identique à celui d'un canal non supprimé provoque une exception.  
+>   - Chaque canal d'enregistrement ouvert doit avoir un nom unique. La tentative de création d'un canal d'enregistrement avec un nom identique comme un canal non supprimé entraîne une exception.  
   
  **Ajouter des marques au code JavaScript**  
   
@@ -75,35 +75,35 @@ if (performance && performance.mark) {
   
  *markDescription* est une chaîne contenant le message à afficher dans l'info-bulle de l'utilisateur.  
   
-## <a name="BKMK_Configure_your_environment_for_profiling"></a> Configurer votre environnement pour le profilage  
- Pour obtenir de bonnes estimations, vous devez profiler l'utilisation de l'énergie de l'application sur un appareil de faible puissance alimenté par ses batteries. Visual Studio ne s'exécutant pas sur la plupart de ces périphériques, vous devez connecter votre ordinateur Visual Studio au périphérique à l'aide des Outils de contrôle à distance Visual Studio. Pour se connecter à un appareil distant, vous devez configurer le projet Visual Studio et l'appareil distant. Pour plus d’informations, consultez [Exécuter des applications du Windows Store sur un ordinateur distant](../debugger/run-windows-store-apps-on-a-remote-machine.md).  
+## <a name="configure-your-environment-for-profiling"></a><a name="BKMK_Configure_your_environment_for_profiling"></a> Configurer votre environnement pour le profilage  
+ Pour obtenir des estimations correctes, effectuez le profilage de l'utilisation d'énergie de l'application sur un périphérique de faible puissance alimenté par batterie. Visual Studio ne s'exécutant pas sur la plupart de ces périphériques, vous devez connecter votre ordinateur Visual Studio au périphérique à l'aide des Outils de contrôle à distance Visual Studio. Pour se connecter à un appareil distant, vous devez configurer le projet Visual Studio et l'appareil distant. Pour plus d’informations, consultez [Exécuter des applications du Windows Store sur un ordinateur distant](../debugger/run-windows-store-apps-on-a-remote-machine.md).  
   
 > [!TIP]
-> - Nous déconseillons d'effectuer le profilage d'énergie sur le simulateur Windows Store ou sur l'ordinateur Visual Studio. Le profilage effectué sur l'appareil lui-même fournit des données beaucoup plus réalistes.  
->   - Profilez sur l'appareil cible pendant qu'il est alimenté par ses batteries.  
->   - Fermez les applications susceptibles d'utiliser les mêmes ressources (réseau, processeur ou affichage).  
+> - Nous ne recommandons pas le profilage d'énergie sur le simulateur Windows Store ou sur l'ordinateur Visual Studio. Les données collectées lors d'un profilage sur le périphérique réel sont beaucoup plus réalistes.  
+>   - Effectuez le profilage sur le périphérique cible alors qu'il est alimenté par batterie.  
+>   - Fermez les applications pouvant utiliser les mêmes ressources (réseau, UC, ou affichage).  
   
-## <a name="BKMK_Collect_energy_profile_data_for_your_app"></a> Collecter les données de profil d'énergie de votre application  
+## <a name="collect-energy-profile-data-for-your-app"></a><a name="BKMK_Collect_energy_profile_data_for_your_app"></a>Collecter les données de profil d’énergie pour votre application  
   
 1. Dans le menu **Déboguer** , choisissez **Démarrer les diagnostics sans débogage**.  
   
-     ![Choisir la consommation d’énergie dans le hub de diagnostic](../profiling/media/energyprof-diagnosticshub.png "ENERGYPROF_DiagnosticsHub")  
+     ![Choisir Consommation d'énergie dans le concentrateur de diagnostic](../profiling/media/energyprof-diagnosticshub.png "ENERGYPROF_DiagnosticsHub")  
   
 2. Choisissez **Consommation d'énergie** puis **Démarrer**.  
   
     > [!NOTE]
-    > Lorsque vous démarrez le profileur de **consommation d'énergie** , une fenêtre **Contrôle de compte d'utilisateur** apparaît, vous demandant l'autorisation d'exécuter VsEtwCollector.exe. Cliquez sur **Oui**.  
+    > Lorsque vous démarrez le profileur de **consommation d’énergie** , une fenêtre contrôle de **compte d’utilisateur** peut s’afficher pour demander l’autorisation d’exécuter VsEtwCollector.exe. Cliquez sur **Oui**.  
   
-3. Exécutez votre application pour recueillir des données.  
+3. Exercez votre application à collecter des données.  
   
 4. Pour arrêter le profilage, rebasculez vers Visual Studio (Alt + Tab) et cliquez sur **Arrêter la collecte** sur la page du hub de diagnostic.  
   
      ![Arrêter la collecte de données](../profiling/media/xamlprof-stopcollection.png "XAMLProf_StopCollection")  
   
-     Visual Studio analyse les données recueillies et affiche les résultats.  
+     Visual Studio analyse les données collectées et affiche les résultats.  
   
-## <a name="BKMK_Collect_energy_profile_data_for_an_installed_app"></a> Collecter les données de profil d'énergie d'une application installée  
- L'outil Consommation d'énergie peut uniquement être exécuté sur les applications du Windows Store pour Windows 8.1 lancées à partir d'une solution Visual Studio ou installées depuis le Windows Store. Lorsqu'une solution est ouverte dans Visual Studio, la cible par défaut est le **Projet de démarrage**. Pour cibler une application installée :  
+## <a name="collect-energy-profile-data-for-an-installed-app"></a><a name="BKMK_Collect_energy_profile_data_for_an_installed_app"></a>Collecter les données de profil d’énergie pour une application installée  
+ L'outil Consommation d'énergie ne peut être exécuté que sur des Applications Windows Store 8.1, lancées à partir d'une solution Visual Studio ou installées depuis le Windows Store. Lorsqu'une solution est ouverte dans Visual Studio, la cible par défaut est le **Projet de démarrage**. Pour cibler une application installée :  
   
 1. Choisissez **Modifier la cible** puis **Application installée**.  
   
@@ -115,16 +115,16 @@ if (performance && performance.mark) {
   
    Pour arrêter le profilage, rebasculez vers Visual Studio (Alt + Tab) et cliquez sur **Arrêter la collecte** sur la page du hub de diagnostic.  
   
-## <a name="BKMK_Analyze_energy_profile_data"></a> Analyser des données de profil d'énergie  
- Les données de profil d'énergie sont affichées dans la fenêtre de document de Visual Studio :  
+## <a name="analyze-energy-profile-data"></a><a name="BKMK_Analyze_energy_profile_data"></a>Analyser les données de profil d’énergie  
+ Les données de profil d'énergie s'affichent dans la fenêtre de document de Visual Studio :  
   
- ![Page de rapport du profileur d’énergie](../profiling/media/energyprof-all.png "ENERGYPROF_All")  
+ ![Page du rapport du profileur d'énergie](../profiling/media/energyprof-all.png "ENERGYPROF_All")  
   
-|||  
+|Image|Description|  
 |-|-|  
-|![Étape 1](../profiling/media/procguid-1.png "ProcGuid_1")|Le fichier de rapport est nommé Report*AAAAMMJJ-HHMM*.diagsession. Vous pouvez modifier ce nom si vous décidez d'enregistrer le rapport.|  
-|![Étape 2](../profiling/media/procguid-2.png "ProcGuid_2")|La chronologie indique la durée de la session de profilage, les événements d'activation du cycle de vie de l'application et les marques utilisateur.|  
-|![Étape 3](../profiling/media/procguid-3.png "ProcGuid_3")|Vous pouvez limiter le rapport à une partie de la chronologie en faisant glisser les barres bleues pour sélectionner une zone de la chronologie.|  
+|![Étape 1](../profiling/media/procguid-1.png "ProcGuid_1")|Le fichier de rapport est nommé Report*AAAAMMJJ-HHMM*.diagsession. Vous pouvez modifier le nom du rapport si vous décidez de l'enregistrer.|  
+|![Étape 2](../profiling/media/procguid-2.png "ProcGuid_2")|La chronologie indique la durée de la session de profilage, les événements d'activation du cycle de vie de l'application et les marques utilisateur.|  
+|![Étape 3](../profiling/media/procguid-3.png "ProcGuid_3")|Vous pouvez limiter le rapport à une partie de la chronologie en faisant glisser les barres bleues pour sélectionner une zone de la chronologie.|  
 |![Étape 4](../profiling/media/procguid-4.png "ProcGuid_4")|Le graphique **Consommation d'énergie** est un graphique à courbes qui affiche la modification de la puissance de sortie provoquée par une ressource de l'appareil pendant une session de profilage. Le profileur Consommation d'énergie suit l'énergie utilisée par le processeur, l'activité réseau et l'écran.|  
 |![Étape 5](../profiling/media/procguid-6.png "ProcGuid_6")|Le graphique **Ressources (activées/désactivées)**  fournit des détails sur les coûts d'énergie de réseau. La barre **Réseau** représente la durée d'ouverture de la connexion réseau. La barre enfant **Transfert de données** est la durée pendant laquelle l'application a reçu ou envoyé des données via le réseau.|  
 |![Étape 6](../profiling/media/procguid-6a.png "ProcGuid_6a")|Le **Résumé de la consommation d'énergie** montre le montant proportionnel de l'énergie totale utilisée dans la chronologie sélectionnée par le processeur, l'activité réseau et l'écran.|  
@@ -133,18 +133,18 @@ if (performance && performance.mark) {
   
  Recherchez une zone dans laquelle l'énergie utilisée par une ressource a atteint un pic. Comparez cette zone à la fonctionnalité de votre application. Puis, utilisez les barres de contrôle de chronologie sur la chronologie pour effectuer un zoom avant sur cette zone. Si vous avez le focus sur l'utilisation du réseau, développez le nœud **Réseau** dans le graphique **Ressources (activées/désactivées)**  pour comparer la durée pendant laquelle la connexion est restée ouverte à la durée pendant laquelle l'application a reçu ou transféré des données via la connexion. Réduire la durée d'ouverture inutile du réseau est une forme d'optimisation très efficace.  
   
-## <a name="BKMK_Optimize_energy_use"></a> Optimiser l'utilisation d'énergie  
- En plus de transmettre les données, les connexions réseau demandent des frais d'énergie pour initialiser, maintenir et arrêter la connexion. Certains réseaux maintiennent la connexion un certain temps après l'envoi ou la réception des données pour permettre la transmission de données supplémentaires sur une connexion unique. Vous pouvez utiliser le volet **Ressources (activées/désactivées)** pour examiner la façon dont votre application interagit avec la connexion.  
+## <a name="optimize-energy-use"></a><a name="BKMK_Optimize_energy_use"></a>Optimiser l’utilisation de l’énergie  
+ Outre la transmission des données, les connexions réseau entraînent des coûts énergétiques pour initialiser, gérer, et arrêter la connexion. Certains réseaux maintiennent la connexion un certain temps après l'envoi ou la réception des données pour permettre la transmission de données supplémentaires sur une connexion unique. Vous pouvez utiliser le volet **Ressources (activées/désactivées)** pour examiner la façon dont votre application interagit avec la connexion.  
   
- ![Volet &#40;des&#47;ressources&#41; sur OFF](../profiling/media/energyprof-resources.png "ENERGYPROF_Resources")  
+ ![&#40;des ressources sur&#47;désactivation du volet&#41;](../profiling/media/energyprof-resources.png "ENERGYPROF_Resources")  
   
  Si les barres **Réseau** et **Transfert de données** indiquent que la connexion est ouverte pendant de longues périodes pour transmettre par intermittence une série de petits paquets de données, vous pouvez traiter les données par lots pour les envoyer en une seule transmission, réduire la durée d'ouverture du réseau et économiser ainsi un coût énergétique.  
   
- ![Volet Résumé de la consommation d’énergie](../profiling/media/energyprof-summary.png "ENERGYPROF_Summary")  
+ ![Volet Résumé de la consommation d'énergie](../profiling/media/energyprof-summary.png "ENERGYPROF_Summary")  
   
- Vous avez moins de contrôle sur les coûts en énergie de l'écran. La plupart des écrans ont besoin de plus d'énergie pour afficher les couleurs claires que les couleurs foncées. L'utilisation d'un arrière-plan sombre permet donc de réduire les coûts.  
+ Vous avez moins de contrôle sur les coûts d'énergie de l'écran. La plupart des écrans requièrent davantage d'énergie pour afficher les couleurs claires que les couleurs sombres, l'utilisation d'un arrière-plan foncé est un moyen de réduire ces coûts.  
   
-## <a name="BKMK_Other_resources"></a> Autres ressources  
+## <a name="other-resources"></a><a name="BKMK_Other_resources"></a>Autres ressources  
   
 - Les sections **Gestion de l’état et des coûts de connexion** pour [C#/VB/C++ et XAML](https://msdn.microsoft.com/0ee0b706-8432-4d49-9801-306ed90764e1) et [JavaScript et HTML](https://msdn.microsoft.com/372afa6a-1c7c-4657-967d-03a77cd8e933) dans le Centre de développement Windows décrivent les API Windows qui fournissent les informations de connexion réseau que votre application peut utiliser pour réduire le coût du trafic réseau.  
   

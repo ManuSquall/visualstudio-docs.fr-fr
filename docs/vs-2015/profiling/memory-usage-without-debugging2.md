@@ -14,12 +14,12 @@ caps.latest.revision: 18
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 64f739039d17af7fbee9718da93e8610e2619a85
-ms.sourcegitcommit: da5ebc29544fdbdf625ab4922c9777faf2bcae4a
+ms.openlocfilehash: ce7d30b66106b8d0d861fcf782a77ee7f461196b
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "82586949"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85532039"
 ---
 # <a name="memory-usage-without-debugging"></a>Utilisation de la mémoire sans débogage
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -79,7 +79,7 @@ Vous pouvez utiliser l’outil **Utilisation de la mémoire** sans débogage pou
   
   Les éléments numérotés de l'image de la vue d'instantané sont des liens ouvrant les vues de rapport d'utilisation de la mémoire.  
   
-|||  
+|Image|Description|  
 |-|-|  
 |![Étape 1](../profiling/media/procguid-1.png "ProcGuid_1")|Le texte du lien indique le nombre total d'octets dans la mémoire au moment où l'instantané a été pris.<br /><br /> Choisissez ce lien pour afficher un rapport détaillé de l'instantané, trié selon la taille totale des instances du type.|  
 |![Étape 2](../profiling/media/procguid-2.png "ProcGuid_2")|Le texte du lien indique le nombre total d'objets dans la mémoire au moment où l'instantané a été pris.<br /><br /> Choisissez ce lien pour afficher un rapport détaillé de l'instantané, trié selon le nombre total d'instances des types.|  
@@ -135,7 +135,7 @@ Vous pouvez utiliser l’outil **Utilisation de la mémoire** sans débogage pou
   
  ![Arborescence de tas managé](../profiling/media/memuse-snapshotdetails-managedheaptree.png "MEMUSE__SnapshotDetails_ManagedHeapTree")  
   
-|||  
+|Nom|Description|  
 |-|-|  
 |**Type d'objet**|Nom du type ou instance de l'objet.|  
 |**Count**|Nombre d'instances d'objet du type. Le nombre est toujours égal à 1 pour une instance.|  
@@ -154,7 +154,7 @@ Vous pouvez utiliser l’outil **Utilisation de la mémoire** sans débogage pou
   
  ![Arborescence des objets référencés pour les instances](../profiling/media/memuse-snapshotdetails-referencedobjects-instance.png "MEMUSE_SnapshotDetails_ReferencedObjects_Instance")  
   
-|||  
+|Nom|Description|  
 |-|-|  
 |**Type d’objet/Instance**|Nom du type ou instance de l'objet.|  
 |**Taille (octets)**|Pour un type, taille de toutes les instances du type, sans compter la taille des objets contenus dans le type.<br /><br /> Pour une instance, taille de l'objet, sans compter la taille des objets contenus dans l'objet.|  
@@ -176,7 +176,7 @@ Vous pouvez utiliser l’outil **Utilisation de la mémoire** sans débogage pou
   
  Notez que les colonnes **Nombre**, **Taille (octets)** et **Taille inclusive (octets)** ont été réduites dans l’image.  
   
-|||  
+|Nom|Description|  
 |-|-|  
 |**Type d'objet**|Nom du type ou instance de l'objet.|  
 |**Count**|Nombre d'instances d'un type dans l'instantané principal. **Count** est toujours 1 pour une instance.|  
@@ -196,13 +196,13 @@ Vous pouvez utiliser l’outil **Utilisation de la mémoire** sans débogage pou
   
  ![Arborescence des objets référencés pour les instances](../profiling/media/memuse-snapshotdetails-referencedobjects-instance.png "MEMUSE_SnapshotDetails_ReferencedObjects_Instance")  
   
-|||  
+|Nom|Description|  
 |-|-|  
 |**Type d’objet/Instance**|Nom du type ou instance de l'objet.|  
 |**Taille (octets)**|Pour une instance, taille de l'objet dans l'instantané principal, sans compter la taille des objets contenus dans l'instance.<br /><br /> Pour un type, taille totale des instances du type dans l'instantané principal, sans compter la taille des objets contenus dans l'instance.|  
 |**Taille inclusive (octets)**|Taille des objets dans l'instantané principal, y compris la taille des objets contenus dans les objets.|  
   
-## <a name="see-also"></a> Voir aussi  
+## <a name="see-also"></a>Voir aussi  
  [Mémoire JavaScript](../profiling/javascript-memory.md)   
  [Analyser les performances de l’application](https://msdn.microsoft.com/library/58acb30b-8428-41a6-b195-b0fdedb89575)   
  [Exécuter les outils de diagnostic et de performances](https://msdn.microsoft.com/library/788279d8-f56b-40a0-9bef-facc3dfba471)   

@@ -1,18 +1,18 @@
 ---
 title: 'Comment : étendre le concepteur de langage spécifique à un domaine'
 ms.date: 11/04/2016
-ms.topic: conceptual
-author: jillre
-ms.author: jillfra
+ms.topic: how-to
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: aa03e43276c7c995c5f494c5325dd79716dcf998
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: aa5b3166606312bb74560f207e6e1d0e6065bb2c
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72605596"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85532584"
 ---
 # <a name="how-to-extend-the-domain-specific-language-designer"></a>Comment : étendre le concepteur de langage spécifique à un domaine
 
@@ -68,7 +68,7 @@ Pour tester l’une des extensions de cette rubrique, générez et exécutez la 
 
 Pour déployer les extensions sur le Visual Studio principal et sur d’autres ordinateurs, procédez comme suit :
 
-1. Recherchez le fichier d’installation VSIX dans votre projet VSIX dans bin \\ * \\ \*. vsix
+1. Recherchez le fichier d’installation VSIX dans votre projet VSIX dans bin \\ * \\ \* . vsix
 
 2. Copiez ce fichier sur l’ordinateur cible, puis dans l’Explorateur Windows (ou l’Explorateur de fichiers), double-cliquez dessus.
 
@@ -84,7 +84,7 @@ Pour désinstaller l’extension, procédez comme suit :
 
 Pour qu’une commande de menu contextuel s’affiche sur la surface de Concepteur DSL ou dans la fenêtre de l’Explorateur DSL, écrivez une classe ressemblant à ce qui suit.
 
-La classe doit implémenter `ICommandExtension` et doit avoir l’attribut `DslDefinitionModelCommandExtension`.
+La classe doit implémenter `ICommandExtension` et doit avoir l’attribut `DslDefinitionModelCommandExtension` .
 
 ```csharp
 using System.Collections.Generic;

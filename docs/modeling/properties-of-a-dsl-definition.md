@@ -4,17 +4,17 @@ ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - Domain-Specific Language, definition file
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1ae26dc54c8f57348ed00196d86629e3515a1835
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: ee23e15e6cc389ea5a8bdcdd793648365d08c30d
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72748338"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85532300"
 ---
 # <a name="properties-of-a-dsl-definition"></a>Propriétés d'une définition DSL
 Les propriétés DslDefinition définissent des propriétés de définition du *langage spécifique à un domaine* , telles que la numérotation des versions. Les propriétés DslDefinition s’affichent dans la fenêtre **Propriétés** lorsque vous cliquez sur une zone ouverte du diagramme dans le *Concepteur Domain-specific language*.
@@ -23,24 +23,24 @@ Les propriétés DslDefinition définissent des propriétés de définition du *
 
  DslDefinition possède les propriétés dans le tableau suivant :
 
-|Property|Description|Valeur par défaut|
+|Propriété|Description|Default|
 |-|-|-|
-|Modificateur d'accès|Détermine si le modificateur d’accès pour la classe de domaine est public ou Internal.|public|
-|Attributs personnalisés|Attributs définis personnalisés pour la classe de domaine.<br /><br /> **Remarque** Utilisez le bouton Parcourir pour ajouter un attribut.|\<aucune>|
-|Nom de la société|Nom de la société actuelle dans le registre système.|Nom de la société actuelle|
-|Name|Nom de cette classe de domaine.|Nom actuel|
+|Modificateur d'accès|Détermine si le modificateur d'accès pour la classe de domaine est public ou interne.|public|
+|Attributs personnalisés|Attributs définis personnalisés pour la classe de domaine.<br /><br /> **Remarque** Utilisez le bouton Parcourir pour ajouter un attribut.|\<none>|
+|Nom de l’entreprise|Nom de la société actuelle dans le registre système.|Nom de la société actuelle|
+|Nom|Nom de cette classe de domaine.|Nom actuel|
 |Espace de noms|Espace de noms affilié à cette classe de domaine.|Espace de noms actuel|
-|GUID du package|GUID du package Visual Studio généré pour ce DSL.|\<aucune>|
-|Espace de noms du package|Espace de noms du package Visual Studio généré pour ce DSL.|\<aucune>|
-|Nom du produit|Nom du produit qui sera inscrit pour le package Visual Studio généré pour ce DSL.|\<aucune>|
-|Notes|Notes associées à cette classe de domaine.|\<aucune>|
-|Description|Description de cette classe de domaine.|\<aucune>|
-|Display Name|Nom qui sera affiché dans le concepteur généré pour cette classe de domaine.|\<aucune>|
-|Help Keyword|Mot clé d’aide associé à cette classe de domaine.|\<aucune>|
-|Générer|Numéro de build incrémentiel pour cette définition de langage spécifique à un domaine.|0|
-|Version principale|Numéro de build majeur incrémentiel pour cette définition de langage spécifique à un domaine.|1|
+|GUID du package|GUID du package Visual Studio généré pour ce langage spécifique à un domaine.|\<none>|
+|Espace de noms du package|Espace de noms du package Visual Studio généré pour ce langage spécifique à un domaine.|\<none>|
+|Nom du produit|Nom du produit qui sera enregistré pour le package Visual Studio généré pour ce langage spécifique à un domaine.|\<none>|
+|Notes|Notes associées à cette classe de domaine.|\<none>|
+|Description|Description de cette classe de domaine.|\<none>|
+|Nom complet|Nom qui sera affiché dans le concepteur généré pour cette classe de domaine.|\<none>|
+|Help Keyword|Mot clé d’aide associé à cette classe de domaine.|\<none>|
+|Build|Numéro de build incrémentiel pour cette définition de langage spécifique à un domaine.|0|
+|Version majeure|Numéro de build majeur incrémentiel pour cette définition de langage spécifique à un domaine.|1|
 |Version mineure|Numéro de build mineure incrémentiel pour cette définition de langage spécifique à un domaine.|0|
-|Revision|Numéro de build de révision incrémentielle pour cette définition de langage spécifique à un domaine.|0|
+|Révision|Numéro de build de révision incrémentielle pour cette définition de langage spécifique à un domaine.|0|
 
 ## <a name="see-also"></a>Voir aussi
 

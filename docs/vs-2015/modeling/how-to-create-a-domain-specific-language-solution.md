@@ -15,22 +15,22 @@ caps.latest.revision: 43
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: e17171b79e06a273e9a9f4bb5032781963e8d818
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.openlocfilehash: 227838334067d33c8a50c81d3a3c013c6baee356
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/13/2020
-ms.locfileid: "75918825"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85533079"
 ---
 # <a name="how-to-create-a-domain-specific-language-solution"></a>Comment : créer une solution de langage spécifique à un domaine
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Un langage spécifique à un domaine (DSL) est créé à l’aide d’une solution de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] spécialisée.
+Un langage spécifique à un domaine (DSL) est créé à l’aide d’une [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] solution spécialisée.
 
-## <a name="prerequisites"></a>Configuration requise
+## <a name="prerequisites"></a>Prérequis
  Avant de commencer cette procédure, vous devez d’abord installer les composants suivants :
 
-|||
+|Produit|Télécharger le lien|
 |-|-|
 |[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]|[https://www.visualstudio.com/](https://www.visualstudio.com/)|
 |[!INCLUDE[vssdk_current_short](../includes/vssdk-current-short-md.md)]|[SDK Visual Studio](../extensibility/visual-studio-sdk.md)|
@@ -44,7 +44,7 @@ Un langage spécifique à un domaine (DSL) est créé à l’aide d’une soluti
 
    1. Dans le menu **Fichier** , pointez sur **Nouveau**, puis cliquez sur **Projet**.
 
-   2. La boîte de dialogue **Nouveau projet** s’affiche.
+   2. La boîte de dialogue **Nouveau projet** apparaît.
 
    3. Sous **types de projets**, développez le nœud **autres types de projets** , puis cliquez sur **extensibilité**.
 
@@ -55,9 +55,9 @@ Un langage spécifique à un domaine (DSL) est créé à l’aide d’une soluti
        L' **assistant concepteur Domain-specific language** s’affiche.
 
       > [!NOTE]
-      > De préférence, le nom que vous tapez doit être un identificateur C# visuel valide, car il peut être utilisé pour générer du code.
+      > De préférence, le nom que vous tapez doit être un identificateur Visual C# valide, car il peut être utilisé pour générer du code.
 
-      ![Boîte de dialogue créer une DSL](../modeling/media/create-dsldialog.png "Create_DSLDialog")
+      ![Boîte de dialogue Créer DSL](../modeling/media/create-dsldialog.png "Create_DSLDialog")
 
 2. Choisissez un modèle DSL.
 
@@ -67,9 +67,9 @@ Un langage spécifique à un domaine (DSL) est créé à l’aide d’une soluti
 
 3. Entrez une extension de nom de **fichier** dans la page extension de fichier. Elle doit être unique sur votre ordinateur et sur tous les ordinateurs sur lesquels vous souhaitez installer le DSL. Vous devez voir le message **aucune application ou éditeur Visual Studio n’utilise cette extension**.
 
-   - Si vous avez utilisé l’extension de nom de fichier dans les DSL expérimentaux précédents qui n’ont pas été entièrement installés, vous pouvez les supprimer à l’aide de l’outil **réinitialisation de l’instance expérimentale** , qui se trouve dans le menu du kit de développement logiciel (SDK) [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].
+   - Si vous avez utilisé l’extension de nom de fichier dans les DSL expérimentaux précédents qui n’ont pas été entièrement installés, vous pouvez les supprimer à l’aide de l’outil **réinitialisation de l’instance expérimentale** , qui se trouve dans le [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] menu du kit de développement logiciel (SDK).
 
-   - Si une autre extension de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] qui utilise cette extension de fichier a été entièrement installée sur votre ordinateur, envisagez de la désinstaller. Dans le menu **Outils** , cliquez sur **Gestionnaire d’extensions**.
+   - Si une autre [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] extension qui utilise cette extension de fichier a été entièrement installée sur votre ordinateur, envisagez de la désinstaller. Dans le menu **Outils** , cliquez sur **Gestionnaire d’extensions**.
 
 4. Inspectez et, si nécessaire, ajustez les champs dans les pages restantes de l’Assistant. Lorsque vous êtes satisfait des paramètres, cliquez sur **Terminer**. Pour plus d’informations sur les paramètres, consultez [Concepteur DSL pages](#settings)de l’Assistant.
 
@@ -78,7 +78,7 @@ Un langage spécifique à un domaine (DSL) est créé à l’aide d’une soluti
    > [!NOTE]
    > Si un message s’affiche pour vous avertir que vous n’exécutez pas de modèles de texte provenant de sources non approuvées, cliquez sur **OK**. Vous pouvez définir ce message pour qu’il ne s’affiche plus.
 
-## <a name="settings"></a>Pages de l’Assistant Concepteur DSL
+## <a name="the-dsl-designer-wizard-pages"></a><a name="settings"></a>Pages de l’Assistant Concepteur DSL
  Vous pouvez ne pas modifier les valeurs par défaut de plusieurs champs. Toutefois, veillez à définir le champ extension de fichier.
 
 ### <a name="solution-settings-page"></a>Page Paramètres de la solution
@@ -86,7 +86,7 @@ Un langage spécifique à un domaine (DSL) est créé à l’aide d’une soluti
 Choisissez un modèle similaire à la DSL que vous souhaitez créer. Les différents modèles offrent des points de départ pratiques. Lorsque vous sélectionnez un modèle de solution, l’Assistant affiche une description. Pour plus d’informations sur les modèles de solution, consultez [choix d’un modèle de solution de langage spécifique à un domaine](../modeling/choosing-a-domain-specific-language-solution-template.md).
 
  **Comment voulez-vous nommer votre langage spécifique à un domaine ?**
-La valeur par défaut est le nom de la solution. Le code est généré à partir de cette valeur. Il doit être valide en tant C# que nom de classe.
+La valeur par défaut est le nom de la solution. Le code est généré à partir de cette valeur. Elle doit être valide en tant que nom de classe C#.
 
 ### <a name="file-extension-page"></a>Page extension de fichier
  **Quelle extension les fichiers doivent-ils utiliser ?**
@@ -102,11 +102,11 @@ Tapez une nouvelle extension de fichier.
 
      \- ou -
 
-- Réinitialisez l’instance expérimentale [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Cela annule l’enregistrement de tous les DSL que vous avez générés précédemment. Dans le menu **Démarrer** , cliquez **sur tous les programmes**, **Microsoft Visual Studio 2010 SDK**, **Outils**, puis **réinitialisez l’instance Microsoft Visual Studio 2010 expérimentale**. Vous pouvez régénérer tout autre DSL que vous souhaitez réutiliser.
+- Réinitialisez l' [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] instance expérimentale. Cela annule l’enregistrement de tous les DSL que vous avez générés précédemment. Dans le menu **Démarrer** , cliquez **sur tous les programmes**, **Microsoft Visual Studio 2010 SDK**, **Outils**, puis **réinitialisez l’instance Microsoft Visual Studio 2010 expérimentale**. Vous pouvez régénérer tout autre DSL que vous souhaitez réutiliser.
 
      \- ou -
 
-- Si une extension de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] qui utilise cette extension de fichier a été entièrement installée sur votre ordinateur, désinstallez-la. Dans le menu **Outils** , cliquez sur **Gestionnaire d’extensions**.
+- Si une [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] extension qui utilise cette extension de fichier a été entièrement installée sur votre ordinateur, désinstallez-la. Dans le menu **Outils** , cliquez sur **Gestionnaire d’extensions**.
 
 ### <a name="product-settings-page"></a>Page Paramètres du produit
  **Quel est le nom du produit auquel appartient le nouveau langage spécifique à un domaine ?**

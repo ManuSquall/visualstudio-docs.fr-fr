@@ -2,7 +2,7 @@
 title: Mesurer les performances du code Python
 description: Utilisez le profileur Visual Studio pour vérifier les performances du code Python lors de l’utilisation d’interpréteurs CPython.
 ms.date: 11/12/2018
-ms.topic: conceptual
+ms.topic: how-to
 author: JoshuaPartlow
 ms.author: joshuapa
 manager: jillfra
@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: e31286a9b0ea3852ad1fe788d4ff6c4c66e7e4f0
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 64cd7db0131843ab48410b6676551c8563b8ffbd
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "62784281"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85531779"
 ---
 # <a name="profile-python-code"></a>Profiler du code Python
 
@@ -23,7 +23,7 @@ Vous pouvez profiler une application Python si des interpréteurs CPython sont u
 
 ## <a name="profiling-for-cpython-based-interpreters"></a>Profilage pour les interpréteurs CPython
 
-Le profilage est commencé par la commande de menu de profilage **Analyze** > **Launch Python,** qui ouvre un dialogue de configuration :
+Le profilage est démarré par le biais de la commande de menu **analyser**le  >  **lancement python** , qui ouvre une boîte de dialogue de configuration :
 
 ![Boîte de dialogue de configuration du profilage](media/profiling-start.png)
 

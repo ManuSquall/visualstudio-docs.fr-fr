@@ -1,30 +1,30 @@
 ---
 title: 'Comment : migrer un langage spécifique à un domaine vers une nouvelle version'
 ms.date: 11/04/2016
-ms.topic: conceptual
-author: jillre
-ms.author: jillfra
+ms.topic: how-to
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6be4a8205935d131d880923e721e342ea904134d
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: f8bdaea1267d0bf69078aec5739291e72db8dfda
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72747552"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85532609"
 ---
 # <a name="how-to-migrate-a-domain-specific-language-to-a-new-version"></a>Comment : migrer un langage spécifique à un domaine vers une nouvelle version
-Vous pouvez migrer des projets qui définissent et utilisent le langage spécifique à un domaine pour [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)] à partir de la version de [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] qui a été distribuée avec [!INCLUDE[vs_orcas_long](../debugger/includes/vs_orcas_long_md.md)].
+Vous pouvez migrer des projets qui définissent et utilisent le langage spécifique à un domaine à [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)] partir de la version de [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] qui a été distribuée avec [!INCLUDE[vs_orcas_long](../debugger/includes/vs_orcas_long_md.md)] .
 
- Un outil de migration est fourni dans le cadre de [!INCLUDE[vssdk_current_long](../misc/includes/vssdk_current_long_md.md)]. L’outil convertit des projets et des solutions Visual Studio qui utilisent ou définissent des outils DSL.
+ Un outil de migration est fourni dans le cadre de [!INCLUDE[vssdk_current_long](../misc/includes/vssdk_current_long_md.md)] . L’outil convertit des projets et des solutions Visual Studio qui utilisent ou définissent des outils DSL.
 
  Vous devez exécuter l’outil de migration explicitement : il n’est pas lancé automatiquement lorsque vous ouvrez une solution dans Visual Studio. L’outil et le document d’aide détaillé se trouvent dans ce chemin d’accès :
 
  **% Program Files%\Microsoft Visual Studio 2010 SDK\VisualStudioIntegration\Tools\DSLTools\DslProjectsMigrationTool.exe**
 
 ## <a name="before-you-migrate-your-dsl-projects"></a>Avant de migrer vos projets DSL
- L’outil de migration modifie les fichiers de projet Visual Studio ( **. csproj**) et les fichiers solution ( **. sln**).
+ L’outil de migration modifie les fichiers de projet Visual Studio (**. csproj**) et les fichiers solution (**. sln**).
 
 #### <a name="to-prepare-projects-for-migration"></a>Pour préparer des projets pour la migration.
 
@@ -59,9 +59,9 @@ Vous pouvez migrer des projets qui définissent et utilisent le langage spécifi
 
    1. Cliquez sur **convertir**.
 
-        Avant la conversion de chaque fichier projet, une copie de _Project_ **. csproj** est enregistrée en tant que _projet_ **. VS2008. csproj**
+        Avant la conversion de chaque fichier projet, une copie de _Project_**. csproj** est enregistrée en tant que _projet_**. VS2008. csproj**
 
-        Une copie de chaque _solution_ **. sln** est enregistrée en tant que _solution_ **. VS2008. sln**
+        Une copie de chaque _solution_**. sln** est enregistrée en tant que _solution_**. VS2008. sln**
 
    2. Examinez toutes les conversions ayant échoué signalées.
 
@@ -86,4 +86,4 @@ Vous pouvez migrer des projets qui définissent et utilisent le langage spécifi
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Billets de blog associés](https://devblogs.microsoft.com/devops/the-visual-studio-modeling-sdk-is-now-available-with-visual-studio-2017/)
+- [Billets de blog connexes](https://devblogs.microsoft.com/devops/the-visual-studio-modeling-sdk-is-now-available-with-visual-studio-2017/)

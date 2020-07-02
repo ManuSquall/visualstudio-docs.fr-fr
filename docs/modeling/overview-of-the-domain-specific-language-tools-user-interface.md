@@ -1,7 +1,7 @@
 ---
 title: Vue d'ensemble de l'interface utilisateur des outils de langage spécifique à un domaine
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: overview
 f1_keywords:
 - vs.dsltools.dsldesigner.editor
 helpviewer_keywords:
@@ -11,12 +11,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 51d6139caa84be5097ececd700c73aa6e231174f
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: af28ca94639b1c6a800c0c43e41d3ccabb74d9bb
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75566109"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85532403"
 ---
 # <a name="overview-of-the-domain-specific-language-tools-user-interface"></a>Vue d'ensemble de l'interface utilisateur des outils de langage spécifique à un domaine
 Lorsque vous ouvrez pour la première fois une solution Outils Domain-Specific Language (outils DSL) dans Visual Studio, l’interface utilisateur doit ressembler à l’image suivante.
@@ -48,6 +48,6 @@ Lorsque vous ouvrez pour la première fois une solution Outils Domain-Specific L
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Vue d’ensemble des outils de langage spécifique à un domaine](../modeling/overview-of-domain-specific-language-tools.md)
+- [Vue d'ensemble des outils de langage spécifique à un domaine](../modeling/overview-of-domain-specific-language-tools.md)
 - [Glossaire des Outils Domain-Specific Language](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)
 - [Personnalisation et extension d’un langage spécifique à un domaine](../modeling/customizing-and-extending-a-domain-specific-language.md)

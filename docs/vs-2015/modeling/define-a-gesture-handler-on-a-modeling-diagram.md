@@ -12,12 +12,12 @@ caps.latest.revision: 36
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 67946ffb674a7f4a2346229b958ba8316d6ff919
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: af4123b24ab9286e306a1034de4416a31ae76f2b
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75850494"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85533066"
 ---
 # <a name="define-a-gesture-handler-on-a-modeling-diagram"></a>Définir un gestionnaire de mouvements sur un diagramme de modélisation
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,7 +26,7 @@ Dans Visual Studio,vous pouvez définir des commandes qui sont exécutées quand
 
  Si un comportement intégré existe déjà pour le type de diagramme et le type d’élément que vous souhaitez faire glisser, il se peut que vous ne puissiez pas effectuer d’ajouts à ce comportement ni le substituer.
 
-## <a name="requirements"></a>Configuration requise pour
+## <a name="requirements"></a>Spécifications
  Consultez [Spécifications](../modeling/extend-uml-models-and-diagrams.md#Requirements).
 
  Pour connaître les versions de Visual Studio qui prennent en charge cette fonctionnalité, consultez [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
@@ -34,9 +34,9 @@ Dans Visual Studio,vous pouvez définir des commandes qui sont exécutées quand
 ## <a name="creating-a-gesture-handler"></a>Création d’un gestionnaire de mouvements
  Pour définir un gestionnaire de mouvements pour un concepteur UML, vous devez créer une classe qui définit le comportement du gestionnaire de mouvements, puis incorporer cette classe dans une extension d’intégration Visual Studio (VSIX). Cette dernière joue le rôle d’un conteneur capable d’installer le gestionnaire. Deux autres méthodes permettent de définir un gestionnaire de mouvements :
 
-- **Créer un gestionnaire de mouvements dans son propre VSIX à l’aide d’un modèle de projet.** . Il s’agit de la méthode la plus rapide. Choisissez cette méthode si vous ne souhaitez pas combiner votre gestionnaire avec d’autres types d’extensions, telles que les extensions de validation, les éléments de boîte à outils personnalisés ou les commandes de menu.
+- **Créer un gestionnaire de mouvements dans son propre VSIX à l’aide d’un modèle de projet** . Il s’agit de la méthode la plus rapide. Choisissez cette méthode si vous ne souhaitez pas combiner votre gestionnaire avec d’autres types d’extensions, telles que les extensions de validation, les éléments de boîte à outils personnalisés ou les commandes de menu.
 
-- **Créer des gestionnaires de mouvements et des projets VSIX distincts.** Adoptez cette approche si vous souhaitez combiner plusieurs types d’extensions dans la même extension VSIX. Par exemple, si votre gestionnaire de mouvements prévoit que le modèle observe des contraintes spécifiques, vous pouvez l’incorporer au même VSIX en tant que méthode de validation.
+- **Créer des gestionnaires de mouvements et des projets VSIX distincts** Adoptez cette approche si vous souhaitez combiner plusieurs types d’extensions dans la même extension VSIX. Par exemple, si votre gestionnaire de mouvements prévoit que le modèle observe des contraintes spécifiques, vous pouvez l’incorporer au même VSIX en tant que méthode de validation.
 
 #### <a name="to-create-a-gesture-handler-in-its-own-vsix"></a>Pour créer un gestionnaire de mouvements dans son propre VSIX
 
@@ -48,7 +48,7 @@ Dans Visual Studio,vous pouvez définir des commandes qui sont exécutées quand
 
 3. Appuyez sur F5 pour tester le gestionnaire de mouvements. Pour plus d’informations, consultez [Exécution du gestionnaire de mouvements](#Executing).
 
-4. Installez le gestionnaire de mouvements sur un autre ordinateur en copiant le fichier **bin\\\*\\\*. vsix** généré par votre projet. Pour plus d’informations, consultez [Installation et désinstallation d’une extension](#Installing).
+4. Installez le gestionnaire de mouvements sur un autre ordinateur en copiant le fichier **bin \\ \* \\ \* . vsix** généré par votre projet. Pour plus d’informations, consultez [Installation et désinstallation d’une extension](#Installing).
 
    Voici une autre procédure :
 
@@ -56,7 +56,7 @@ Dans Visual Studio,vous pouvez définir des commandes qui sont exécutées quand
 
 1. Créez un projet de bibliothèque de classes dans une nouvelle solution [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ou dans une solution existante.
 
-   1. Dans le menu **Fichier** , choisissez **Nouveau**, **Projet**.
+   1. Dans le menu **Fichier**, sélectionnez **Nouveau**, **Projet**.
 
    2. Sous **Modèles installés**, développez **Visual C#** ou **Visual Basic**, puis dans la colonne du milieu, choisissez **Bibliothèque de classes**.
 
@@ -208,7 +208,7 @@ Dans Visual Studio,vous pouvez définir des commandes qui sont exécutées quand
 
 2. Créez un projet VSIX, sauf si votre solution en comporte déjà un.
 
-    1. Dans l’ **Explorateur de solutions**, dans le menu contextuel de la solution, choisissez **Ajouter**, puis **Nouveau projet**.
+    1. Dans **Explorateur de solutions**, dans le menu contextuel de la solution, choisissez **Ajouter**, puis **nouveau projet**.
 
     2. Sous **Modèles installés**, développez **Visual C#** ou **Visual Basic**, puis sélectionnez **Extensibilité**. Dans la colonne du milieu, choisissez **Projet VSIX**.
 
@@ -224,13 +224,13 @@ Dans Visual Studio,vous pouvez définir des commandes qui sont exécutées quand
 
     3. Sous l’onglet **Composants** , choisissez **Nouveau**puis, dans la boîte de dialogue, définissez :
 
-         **Type** = **Composant MEF**
+         **Type**  =  **Composant MEF**
 
-         **Source** = **Projet dans la solution actuelle**
+         **Source**  =  **Projet dans la solution actuelle**
 
-         **Projet** = *Votre projet de bibliothèque de classes*
+         **Projet**  =  *Votre projet de bibliothèque de classes*
 
-## <a name="Executing"></a>Exécution du gestionnaire de mouvements
+## <a name="executing-the-gesture-handler"></a><a name="Executing"></a>Exécution du gestionnaire de mouvements
  À des fins de test, exécutez votre gestionnaire de mouvements en mode débogage.
 
 #### <a name="to-test-the-gesture-handler"></a>Pour tester le gestionnaire de mouvements
@@ -243,7 +243,7 @@ Dans Visual Studio,vous pouvez définir des commandes qui sont exécutées quand
 
    - Si vous avez plusieurs projets, vérifiez que le projet VSIX est défini comme projet de démarrage de la solution.
 
-   - Dans l'Explorateur de solutions, dans le menu contextuel du projet de démarrage ou du projet unique, choisissez Propriétés. Dans l’éditeur de propriétés du projet, choisissez l’onglet **Déboguer** . Assurez-vous que la chaîne dans le champ **Démarrer le programme externe** correspond au chemin d’accès complet de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], généralement :
+   - Dans l’Explorateur de solutions, dans le menu contextuel du projet de démarrage ou unique, choisissez Propriétés. Dans l’éditeur de propriétés du projet, choisissez l’onglet **Déboguer** . Assurez-vous que la chaîne dans le champ **Démarrer le programme externe** est le chemin complet de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] , généralement :
 
         `C:\Program Files\Microsoft Visual Studio [version]\Common7\IDE\devenv.exe`
 
@@ -265,12 +265,12 @@ Dans Visual Studio,vous pouvez définir des commandes qui sont exécutées quand
 
 - Aucune fonctionnalité intégrée n’est déjà définie pour ce type de cible et d’élément déposé.
 
-## <a name="Implementing"></a>Implémentation du gestionnaire de mouvements
+## <a name="implementing-the-gesture-handler"></a><a name="Implementing"></a>Implémentation du gestionnaire de mouvements
 
 ### <a name="the-gesture-handler-methods"></a>Méthodes du gestionnaire de mouvements
  La classe du gestionnaire de mouvements implémente et exporte <xref:Microsoft.VisualStudio.Modeling.Diagrams.ExtensionEnablement.IGestureExtension>. Les méthodes que vous devez définir sont les suivantes :
 
-|||
+|Signature|Description|
 |-|-|
 |`bool CanDragDrop (ShapeElement target, DiagramDragEventArgs dragEvent)`|Retournez la valeur `true` pour autoriser le déplacement de l’élément source référencé dans `dragEvent` vers cette cible.<br /><br /> Cette méthode ne doit pas apporter de modifications au modèle. Elle doit fonctionner rapidement, car elle permet de déterminer l’état de la flèche à mesure que l’utilisateur déplace la souris.|
 |`void OnDragDrop (ShapeElement target, DiagramDragEventArgs dragEvent)`|Mettez à jour le modèle basé sur l’objet source référencé dans `dragEvent`et la cible.<br /><br /> Appelée quand l’utilisateur relâche le bouton de la souris après avoir effectué un glissement.|
@@ -282,7 +282,7 @@ Dans Visual Studio,vous pouvez définir des commandes qui sont exécutées quand
 
 - `ShapeElement target`. Forme ou diagramme sur lequel l’utilisateur a fait glisser quelque chose.
 
-    `ShapeElement` est une classe dans l’implémentation qui est sous-jacente aux outils de modélisation UML. Pour réduire le risque de mettre le modèle UML et les diagrammes dans un état incohérent, nous vous recommandons de ne pas utiliser directement les méthodes de cette classe. Au lieu de cela, encapsulez l’élément dans un `IShape`, puis utilisez les méthodes décrites dans [afficher un modèle UML sur des diagrammes](../modeling/display-a-uml-model-on-diagrams.md).
+    `ShapeElement` est une classe dans l’implémentation qui est sous-jacente aux outils de modélisation UML. Pour réduire le risque de mettre le modèle UML et les diagrammes dans un état incohérent, nous vous recommandons de ne pas utiliser directement les méthodes de cette classe. Au lieu de cela, encapsulez l’élément dans un `IShape` , puis utilisez les méthodes décrites dans [afficher un modèle UML sur des diagrammes](../modeling/display-a-uml-model-on-diagrams.md).
 
   - Pour obtenir un `IShape`:
 
@@ -348,7 +348,7 @@ foreach (IElement element in modelStore.AllInstances<IUseCase>) {...}
 
  Pour plus d’informations, consultez [naviguer dans le modèle UML](../modeling/navigate-the-uml-model.md).
 
-## <a name="Installing"></a>Installation et désinstallation d’une extension
+## <a name="installing-and-uninstalling-an-extension"></a><a name="Installing"></a>Installation et désinstallation d’une extension
  Vous pouvez installer une extension [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] sur votre propre ordinateur et sur d’autres ordinateurs.
 
 #### <a name="to-install-an-extension"></a>Pour installer une extension
@@ -357,9 +357,9 @@ foreach (IElement element in modelStore.AllInstances<IUseCase>) {...}
 
     1. Dans l’ **Explorateur de solutions**, dans le menu contextuel du projet VSIX, choisissez **Ouvrir le dossier dans l’Explorateur Windows**.
 
-    2. Recherchez le fichier **bin\\\*\\** _YourProject_ **. vsix**
+    2. Recherchez le fichier **bin \\ \* \\ **_YourProject_**. vsix**
 
-2. Copiez le fichier **.vsix** sur l’ordinateur cible sur lequel vous souhaitez installer l’extension. Il peut s’agir de votre propre ordinateur ou d’un autre ordinateur.
+2. Copiez le fichier **.vsix** sur l’ordinateur cible sur lequel vous souhaitez installer l’extension. Il peut s’agir de votre propre ordinateur ou d’un autre.
 
      L’ordinateur cible doit disposer de l’une des éditions de [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] que vous avez spécifiées dans **source.extension.vsixmanifest**.
 
@@ -379,9 +379,9 @@ foreach (IElement element in modelStore.AllInstances<IUseCase>) {...}
 
    Exceptionnellement, une extension défaillante ne parvient pas à se charger et crée un rapport dans la fenêtre d’erreur, mais ne s’affiche pas dans le Gestionnaire d’extensions. Dans ce cas, vous pouvez supprimer l’extension en supprimant le fichier de l’emplacement suivant :
 
-   *% LocalAppData%* **\Local\Microsoft\VisualStudio\\[version] \Extensions**
+   *% LocalAppData%* **\Local\Microsoft\VisualStudio \\ [version] \Extensions**
 
-## <a name="DragExample"></a> Exemple
+## <a name="example"></a><a name="DragExample"></a> Exemple
  L’exemple suivant montre comment créer des lignes de vie dans un diagramme de séquence, en fonction des parties et des ports d’un composant ayant fait l’objet d’un glissement à partir d’un diagramme de composant.
 
  Pour le tester, appuyez sur F5. Une instance expérimentale de Visual Studio s’ouvre. Dans cette instance, ouvrez un modèle UML et créez un composant sur un diagramme de composant. Ajoutez à ce composant quelques interfaces et parties internes de composant. Sélectionnez les interfaces et les parties. Faites ensuite glisser les interfaces et les parties sur un diagramme de séquence. (Faites glisser le diagramme de composant vers le haut jusqu’à l’onglet du diagramme de séquence, puis vers le haut dans le diagramme de séquence). Une vie s’affiche pour chaque interface et chaque partie.

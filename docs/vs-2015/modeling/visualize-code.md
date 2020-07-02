@@ -13,12 +13,12 @@ caps.latest.revision: 49
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 4ffd105032cda050ab16132b6a4c2d54488028b8
-ms.sourcegitcommit: da5ebc29544fdbdf625ab4922c9777faf2bcae4a
+ms.openlocfilehash: 665dc76126eac964f405be06605c40b5b30cc9a5
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "82586770"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85532936"
 ---
 # <a name="visualize-code"></a>Visualiser du code
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,7 +39,7 @@ Vous pouvez utiliser les outils de modélisation et de visualisation dans Visual
 
 ## <a name="what-do-you-want-to-do"></a>Que voulez-vous faire ?
 
-|||
+|Scénario|Articles|
 |-|-|
 |**Comprendre le code et ses relations :**<br /><br /> Mapper des relations entre des éléments de code spécifiques.<br /><br /> Voir une présentation des relations dans votre code pour l'ensemble de la solution.<br /><br /> **Remarque**: dans cette version de Visual Studio, le terme *carte de code* est utilisé à la place de *graphique de dépendance*.|-   [Mapper les dépendances dans vos solutions](../modeling/map-dependencies-across-your-solutions.md)<br />-   [Utiliser des cartes de code pour déboguer vos applications](../modeling/use-code-maps-to-debug-your-applications.md)<br />-   [Rechercher des problèmes potentiels à l’aide d’analyseurs de carte de code](../modeling/find-potential-problems-using-code-map-analyzers.md)<br />-   [Mapper les méthodes sur la pile des appels pendant le débogage](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md)|
 |**Comprendre les structures de classes :**<br /><br /> Visualiser la structure des classes dans un projet en créant des diagrammes de classes à partir du code.|[Guide pratique pour ajouter des diagrammes de classes aux projets (Concepteur de classes)](../ide/how-to-add-class-diagrams-to-projects-class-designer.md)|
@@ -54,5 +54,5 @@ Vous pouvez utiliser les outils de modélisation et de visualisation dans Visual
 |**Blogs**|[Blog Visual Studio ALM + Team Foundation Server](https://devblogs.microsoft.com/devops/welcome-to-the-visual-studio-alm-team-foundation-server-blog/)|
 |**Articles et journaux techniques**|[Forum sur l’architecture MSDN](https://msdn.microsoft.com/architecture/default.aspx)|
 
-## <a name="see-also"></a> Voir aussi
+## <a name="see-also"></a>Voir aussi
  [Scénario : modifier votre conception à l’aide de la visualisation et de la modélisation](../modeling/scenario-change-your-design-using-visualization-and-modeling.md) [analyse et modélisation architecture](../modeling/analyze-and-model-your-architecture.md) [créer des modèles pour votre modèle d’application](../modeling/create-models-for-your-app.md) modèle d' [impératifs de l’utilisateur](../modeling/model-user-requirements.md) [l’architecture de votre application](../modeling/model-your-app-s-architecture.md) [utilise des modèles dans votre processus de développement](../modeling/use-models-in-your-development-process.md)
