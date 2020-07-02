@@ -1,7 +1,7 @@
 ---
-title: 'Procédure : Appliquer des styles à des plages dans les classeurs par programmation'
+title: 'Comment : appliquer des styles à des plages dans des classeurs par programmation'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -14,14 +14,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f74b2d08a268bc79bcd7d2fd33513b5ccf5b1415
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d6f115468bccc2d805b019b9a0ef15cea3605f36
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62817451"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85546157"
 ---
-# <a name="how-to-programmatically-apply-styles-to-ranges-in-workbooks"></a>Procédure : Appliquer des styles à des plages dans les classeurs par programmation
+# <a name="how-to-programmatically-apply-styles-to-ranges-in-workbooks"></a>Comment : appliquer des styles à des plages dans des classeurs par programmation
   Vous pouvez appliquer des styles nommés à des zones dans les classeurs. Excel fournit différents styles prédéfinis.
 
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]
@@ -59,7 +59,7 @@ ms.locfileid: "62817451"
      [!code-csharp[Trin_VstcoreExcelAutomationAddIn#29](../vsto/codesnippet/CSharp/trin_vstcoreexcelautomationaddin/ThisAddIn.cs#29)]
      [!code-vb[Trin_VstcoreExcelAutomationAddIn#29](../vsto/codesnippet/VisualBasic/trin_vstcoreexcelautomationaddin/ThisAddIn.vb#29)]
 
-## <a name="to-clear-a-style-from-a-named-range-in-a-vsto-add-in"></a>Pour supprimer un style à partir d’une plage nommée dans un complément, VSTO
+## <a name="to-clear-a-style-from-a-named-range-in-a-vsto-add-in"></a>Pour effacer un style d’une plage nommée dans un complément VSTO
 
 1. Appliquez le style Normal à la plage.
 
@@ -67,7 +67,7 @@ ms.locfileid: "62817451"
      [!code-vb[Trin_VstcoreExcelAutomation#56](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#56)]
 
 ## <a name="see-also"></a>Voir aussi
-- [Travailler avec des plages](../vsto/working-with-ranges.md)
-- [NamedRange (contrôle)](../vsto/namedrange-control.md)
+- [Utiliser des plages](../vsto/working-with-ranges.md)
+- [NamedRange, contrôle](../vsto/namedrange-control.md)
 - [Accès global aux objets dans les projets Office](../vsto/global-access-to-objects-in-office-projects.md)
-- [Paramètres optionnels dans les solutions Office](../vsto/optional-parameters-in-office-solutions.md)
+- [Paramètres facultatifs dans les solutions Office](../vsto/optional-parameters-in-office-solutions.md)

@@ -8,17 +8,17 @@ helpviewer_keywords:
 - list call stack command
 - Debug.ListCallStack command
 ms.assetid: a8b20bf2-81d2-4069-aea8-23e6b15b4347
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7f62852550c161566832a7ab78d4058d1d14028f
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 34de768f41079311505ae7948502bb4356814ec7
+ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "72748719"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85770679"
 ---
 # <a name="list-call-stack-command"></a>Afficher la pile des appels, commande
 Affiche la pile des appels actuelle.
@@ -85,7 +85,7 @@ Thread:`n`
 
 facultatif. Affiche la pile des appels pour le thread `n`. Si aucun thread n’est spécifié, affiche la pile des appels pour le thread actuel.
 
-## <a name="remarks"></a>Notes 
+## <a name="remarks"></a>Remarques
 Les modifications apportées aux arguments ou aux commutateurs s’appliquent aux futurs appels de cette commande. Exécutée seule, la commande Debug.ListCallStackby affiche toute la pile des appels. Si vous spécifiez un index, par exemple,
 
 ```cmd
@@ -102,7 +102,7 @@ kb 2
 
 pour définir le frame de pile actuel sur le deuxième frame.
 
-## <a name="example"></a> Exemple
+## <a name="example"></a>Exemple
 
 ```cmd
 >Debug.CallStack /Count:4 /ShowTypes:yes
@@ -110,9 +110,9 @@ pour définir le frame de pile actuel sur le deuxième frame.
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Afficher le code machine, commande](../../ide/reference/list-disassembly-command.md)
-- [Répertorier les threads, commande](../../ide/reference/list-threads-command.md)
-- [Commandes de studio visuel](../../ide/reference/visual-studio-commands.md)
-- [Commande, fenêtre](../../ide/reference/command-window.md)
-- [Boîte de recherche/commande](../../ide/find-command-box.md)
-- [Alias de commande de studio visuel](../../ide/reference/visual-studio-command-aliases.md)
+- [List code machine, commande](../../ide/reference/list-disassembly-command.md)
+- [Liste des threads, commande](../../ide/reference/list-threads-command.md)
+- [Commandes Visual Studio](../../ide/reference/visual-studio-commands.md)
+- [Fenêtre commande](../../ide/reference/command-window.md)
+- [Zone Rechercher/commande](../../ide/find-command-box.md)
+- [Alias de commandes Visual Studio](../../ide/reference/visual-studio-command-aliases.md)

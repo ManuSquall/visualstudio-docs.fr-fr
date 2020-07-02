@@ -1,7 +1,7 @@
 ---
 title: Guide pratique pour afficher des URL en tant que liens dans l'Éditeur
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - URLs, opening
 - Code Editor, displaying URLs
@@ -12,12 +12,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: aefabb480830f7fc649bc73d47a3b47594100616
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 80ad0fcc7409bd91f24ef197ef12ed64610a2e0b
+ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75569086"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85770344"
 ---
 # <a name="how-to-display-urls-as-links-in-the-editor"></a>Guide pratique pour afficher des URL en tant que liens dans l'Éditeur
 
@@ -27,7 +27,7 @@ Vous pouvez choisir de configurer l’éditeur de code pour qu’il traite les U
 
 - affichent une **info-bulle** lorsque vous pointez dessus ;
 
-- Tentative d’ouvrir le site Indiqué lorsque vous cliquez**sur** **Ctrl**+sur le lien. Par défaut, le site web apparaît dans le navigateur web interne.
+- Essayez d’ouvrir le site Web indiqué lorsque **vous** + **cliquez** sur le lien. Par défaut, le site web apparaît dans le navigateur web interne.
 
 ## <a name="display-urls-as-links"></a>Afficher les URL sous forme de liens
 

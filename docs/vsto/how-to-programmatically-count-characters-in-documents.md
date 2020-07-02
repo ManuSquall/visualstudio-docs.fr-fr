@@ -1,7 +1,7 @@
 ---
-title: 'Procédure : Compter les caractères dans les documents par programmation'
+title: 'Comment : compter des caractères dans les documents par programmation'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -14,14 +14,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: fb4bbb124575346c930fa5539801deb3c9981cac
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 81ee7c3d798ae2c38ed80b261a6d87190daa59a2
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62575242"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85546066"
 ---
-# <a name="how-to-programmatically-count-characters-in-documents"></a>Procédure : Compter les caractères dans les documents par programmation
+# <a name="how-to-programmatically-count-characters-in-documents"></a>Comment : compter des caractères dans les documents par programmation
   Le premier caractère dans un document est à la position de caractère 0, qui représente le point d’insertion. La position du dernier caractère est égale au nombre total de caractères dans le document. Vous pouvez déterminer le nombre de caractères dans un document à l’aide de la propriété <xref:Microsoft.Office.Interop.Word.Characters.Count%2A> de la collection <xref:Microsoft.Office.Interop.Word.Characters> .
 
  Tous les caractères du document sont comptés, y compris les espaces, les marques de paragraphe et autres caractères normalement masqués. Même un document vide retourne un nombre de caractères égal à « 1 », car il contient une marque de paragraphe.
@@ -40,7 +40,7 @@ ms.locfileid: "62575242"
      [!code-vb[Trin_VstcoreWordAutomation#99](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#99)]
      [!code-csharp[Trin_VstcoreWordAutomation#99](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#99)]
 
-## <a name="to-display-the-number-of-characters-in-a-vsto-add-in"></a>Pour afficher le nombre de caractères dans un complément, VSTO
+## <a name="to-display-the-number-of-characters-in-a-vsto-add-in"></a>Pour afficher le nombre de caractères dans un complément VSTO
 
 1. Sélectionnez tout le document. L’exemple suivant sélectionne le document actif.
 
@@ -53,5 +53,5 @@ ms.locfileid: "62575242"
      [!code-csharp[Trin_VstcoreWordAutomationAddIn#99](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#99)]
 
 ## <a name="see-also"></a>Voir aussi
-- [Guide pratique pour Récupérer par programme des caractères de début et de fin dans les plages](../vsto/how-to-programmatically-retrieve-start-and-end-characters-in-ranges.md)
-- [Guide pratique pour Définir et sélectionner des plages dans les documents par programmation](../vsto/how-to-programmatically-define-and-select-ranges-in-documents.md)
+- [Comment : récupérer des caractères de début et de fin dans les plages par programmation](../vsto/how-to-programmatically-retrieve-start-and-end-characters-in-ranges.md)
+- [Comment : définir et sélectionner des plages dans les documents par programmation](../vsto/how-to-programmatically-define-and-select-ranges-in-documents.md)

@@ -1,8 +1,8 @@
 ---
-title: EmplacementField Element (Visual Studio Project Templates) Microsoft Docs
+title: Élément LocationField (modèles de projet Visual Studio) | Microsoft Docs
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/vstemplate/2005#LocationField
 helpviewer_keywords:
@@ -13,19 +13,20 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d993e84bec41486ef4dce6ad98c61f23ab2a46bd
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.openlocfilehash: 8a5f2f47eef9c3cb047b5550e466585ef70e8f4e
+ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2020
-ms.locfileid: "80702883"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85770017"
 ---
 # <a name="locationfield-element-visual-studio-project-templates"></a>Élément LocationField (modèles de projet Visual Studio)
-Précise si la boîte de texte **de localisation** de la boîte de dialogue du **nouveau projet** est activée, désactivée ou cachée pour le modèle de projet.
+Spécifie si la zone de texte **emplacement** dans la boîte de dialogue **nouveau projet** est activée, désactivée ou masquée pour le modèle de projet.
 
- \<VSTemplate> \<TemplateData> \<LocationField>
+ \<VSTemplate> \<TemplateData>
+ \<LocationField>
 
-## <a name="syntax"></a>Syntaxe
+## <a name="syntax"></a>Syntax
 
 ```
 <LocationField> Enabled/Disabled/Hidden </LocationField>
@@ -44,25 +45,25 @@ Précise si la boîte de texte **de localisation** de la boîte de dialogue du *
 
 |Élément|Description|
 |-------------|-----------------|
-|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Élément requis.<br /><br /> Catégorise le modèle et définit la façon dont il s’affiche dans le **nouveau projet**.|
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Élément requis.<br /><br /> Classe le modèle dans une catégorie et définit la manière dont il s’affiche dans le **nouveau projet**.|
 
 ## <a name="text-value"></a>Valeur texte
  Une valeur texte est requise.
 
- Les valeurs de texte valides sont les :
+ Les valeurs de texte valides sont :
 
-- `Enabled`, qui précise que la boîte de **localisation** de la boîte de dialogue **du nouveau projet** est activée.
+- `Enabled`, qui spécifie que la zone **emplacement** de la boîte de dialogue **nouveau projet** est activée.
 
-- `Disabled`, qui précise que la boîte de **localisation** de la boîte de dialogue **du nouveau projet** est désactivée.
+- `Disabled`, qui spécifie que la zone **emplacement** de la boîte de dialogue **nouveau projet** est désactivée.
 
-- `Hidden`, qui précise que la boîte de **localisation** de la boîte de dialogue **du nouveau projet** est cachée.
+- `Hidden`, qui spécifie que la zone **emplacement** de la boîte de dialogue **nouveau projet** est masquée.
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
  La valeur par défaut est `Enabled`.
 
- La boîte de texte **de localisation** dans la boîte de dialogue **New Project** permet aux utilisateurs de modifier l’annuaire par défaut dans lequel de nouveaux projets sont sauvegardés.
+ La zone de texte **emplacement** dans la boîte de dialogue **nouveau projet** permet aux utilisateurs de modifier le répertoire par défaut dans lequel les nouveaux projets sont enregistrés.
 
- La valeur spécifiée dans l’élément `Location` n’est honorée que par la boîte de dialogue si le système de projet sous-jacent le prend en charge.
+ La valeur spécifiée dans l' `Location` élément est honorée uniquement par la boîte de dialogue si le système de projet sous-jacent le prend en charge.
 
 ## <a name="example"></a>Exemple
  L'exemple suivant illustre les métadonnées d'un modèle [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)].
@@ -93,5 +94,5 @@ Précise si la boîte de texte **de localisation** de la boîte de dialogue du *
 ```
 
 ## <a name="see-also"></a>Voir aussi
-- [Référence de schéma de modèle de studio visuel](../extensibility/visual-studio-template-schema-reference.md)
-- [Création de modèles de projets et d’objets](../ide/creating-project-and-item-templates.md)
+- [Référence du schéma de modèle Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
+- [Création de modèles de projet et d’élément](../ide/creating-project-and-item-templates.md)

@@ -15,17 +15,17 @@ caps.latest.revision: 17
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: c3f1cca5dd33047a4d19c78013dd535e0e9dd6f2
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: d375b64bbc877cb377157f13b3e4cfa7c7cf1592
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72607754"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85547873"
 ---
 # <a name="ca1504-review-misleading-field-names"></a>CA1504 : Vérifier les noms de champs trompeurs
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Élément|Valeur|
 |-|-|
 |TypeName|ReviewMisleadingFieldNames|
 |CheckId|CA1504|
@@ -33,13 +33,13 @@ ms.locfileid: "72607754"
 |Modification avec rupture|Sans rupture|
 
 ## <a name="cause"></a>Cause
- Le nom d’un champ d’instance commence par « s_ » ou le nom d’un `static` (`Shared` dans [!INCLUDE[vbprvb](../includes/vbprvb-md.md)]) le champ commence par « m _ ».
+ Le nom d’un champ d’instance commence par « s_ » ou le nom d' `static` un `Shared` champ (dans [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] ) commence par « m_ ».
 
 ## <a name="rule-description"></a>Description de la règle
- Les noms de champs qui commencent par « s_ » sont associés à des données statiques par de nombreux utilisateurs. De même, les noms de champs qui commencent par « m _ » sont associés à des données d’instance (membre). Pour faciliter la maintenance du code, les noms doivent respecter les conventions généralement utilisées.
+ Les noms de champs qui commencent par « s_ » sont associés à des données statiques par de nombreux utilisateurs. De même, les noms de champs qui commencent par « m_ » sont associés à des données d’instance (membre). Pour faciliter la maintenance du code, les noms doivent respecter les conventions généralement utilisées.
 
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations
- Pour corriger une violation de cette règle, renommez le champ en utilisant le préfixe approprié. Vous pouvez également faire en sorte que le champ accepte le suffixe actuel en ajoutant ou en supprimant le modificateur `static`.
+ Pour corriger une violation de cette règle, renommez le champ en utilisant le préfixe approprié. Vous pouvez également faire en sorte que le champ accepte le suffixe actuel en ajoutant ou en supprimant le `static` modificateur.
 
 ## <a name="when-to-suppress-warnings"></a>Quand supprimer les avertissements
  Ne supprimez aucun avertissement de cette règle.

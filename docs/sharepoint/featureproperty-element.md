@@ -22,7 +22,7 @@ ms.locfileid: "85546521"
 # <a name="featureproperty-element"></a>FeatureProperty (élément)
   Représente une propriété personnalisée qui est incluse avec une fonctionnalité lorsqu’elle est déployée sur SharePoint. Une fois qu’une fonctionnalité a été déployée, vous pouvez accéder à la propriété dans votre code.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Syntaxe
 
 ```xml
 <FeatureProperty Key = "Key of the property value"

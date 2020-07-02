@@ -1,7 +1,7 @@
 ---
-title: Enregistrer les pièces jointes à partir d’éléments de messagerie Outlook par programmation
+title: Enregistrer des pièces jointes à partir d’éléments de messagerie Outlook par programmation
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - CSharp
 helpviewer_keywords:
@@ -15,14 +15,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e7e0cff4761b26bac8265592b681d4e56f2ad92f
-ms.sourcegitcommit: 7eb2fb21805d92f085126f3a820ac274f2216b4e
+ms.openlocfilehash: 9fbe6099a8928397a7d885ac72c4f34da2da6af0
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/22/2019
-ms.locfileid: "67328960"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85545884"
 ---
-# <a name="how-to-programmatically-save-attachments-from-outlook-email-items"></a>Procédure : Enregistrer des pièces jointes à partir d’éléments de messagerie Outlook par programmation
+# <a name="how-to-programmatically-save-attachments-from-outlook-email-items"></a>Comment : enregistrer des pièces jointes à partir d’éléments de messagerie Outlook par programmation
 
 Cet exemple enregistre les pièces jointes de messagerie électronique dans un dossier spécifié lorsque le courrier est reçu dans la Boîte de réception.
 
@@ -37,7 +37,7 @@ Cet exemple enregistre les pièces jointes de messagerie électronique dans un d
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Travailler avec des éléments de messagerie](../vsto/working-with-mail-items.md)
-- [Guide pratique pour Récupérer par programme un dossier par nom](../vsto/how-to-programmatically-retrieve-a-folder-by-name.md)
-- [Guide pratique pour Effectuer des actions par programme lorsqu’un message électronique est reçu.](../vsto/how-to-programmatically-perform-actions-when-an-e-mail-message-is-received.md)
-- [Guide pratique pour Rechercher par programmation dans un dossier spécifique](../vsto/how-to-programmatically-search-within-a-specific-folder.md)
+- [Utiliser des éléments de messagerie](../vsto/working-with-mail-items.md)
+- [Comment : récupérer un dossier par nom par programmation](../vsto/how-to-programmatically-retrieve-a-folder-by-name.md)
+- [Comment : effectuer des actions par programmation lors de la réception d’un message électronique](../vsto/how-to-programmatically-perform-actions-when-an-e-mail-message-is-received.md)
+- [Comment : effectuer une recherche par programmation dans un dossier spécifique](../vsto/how-to-programmatically-search-within-a-specific-folder.md)

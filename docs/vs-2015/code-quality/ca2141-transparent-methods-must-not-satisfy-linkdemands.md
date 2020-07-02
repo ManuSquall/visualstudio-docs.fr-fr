@@ -11,17 +11,17 @@ caps.latest.revision: 16
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 5e8e88401a6fbe3ab7dc635dadee9215b049b2d5
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: bee810ed938d316e92095ad47062ed5ad9cd456f
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72602841"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85546443"
 ---
 # <a name="ca2141transparent-methods-must-not-satisfy-linkdemands"></a>CA2141 : Les méthodes transparentes ne répondent pas aux LinkDemands
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Élément|Valeur|
 |-|-|
 |TypeName|TransparentMethodsMustNotSatisfyLinkDemands|
 |CheckId|CA2141|
@@ -29,15 +29,15 @@ ms.locfileid: "72602841"
 |Modification avec rupture|Rupture|
 
 ## <a name="cause"></a>Cause
- Une méthode transparente de sécurité appelle une méthode dans un assembly qui n’est pas marqué avec l’attribut <xref:System.Security.AllowPartiallyTrustedCallersAttribute> (APTCA), ou une méthode transparente de sécurité satisfait un `.LinkDemand` <xref:System.Security.Permissions.SecurityAction> pour un type ou une méthode.
+ Une méthode transparente de sécurité appelle une méthode dans un assembly qui n’est pas marqué avec l' <xref:System.Security.AllowPartiallyTrustedCallersAttribute> attribut (APTCA), ou une méthode transparente de sécurité satisfait un <xref:System.Security.Permissions.SecurityAction> `.LinkDemand` pour un type ou une méthode.
 
 ## <a name="rule-description"></a>Description de la règle
  La satisfaction d’un LinkDemand est une opération sensible à la sécurité qui peut entraîner une élévation non intentionnelle des privilèges. Le code transparent de sécurité ne doit pas répondre aux LinkDemands, car il n’est pas soumis aux mêmes exigences d’audit de sécurité que le code critique de sécurité. Les méthodes transparentes dans les assemblys du niveau 1 de l’ensemble de règles de sécurité entraînent la conversion de tous les LinkDemands qu’ils satisfont en demandes complètes au moment de l’exécution, ce qui peut entraîner des problèmes de performances. Dans les assemblys de niveau 2 de l’ensemble de règles de sécurité, les méthodes transparentes ne peuvent pas être compilées dans le compilateur juste-à-temps (JIT) si elles essaient de satisfaire un LinkDemand.
 
- Dans les assemblys qui useent la sécurité de niveau 2, les tentatives effectuées par une méthode transparente de sécurité pour satisfaire un LinkDemand ou appeler une méthode dans un assembly non APTCA lèvent une <xref:System.MethodAccessException> ; dans les assemblys de niveau 1, le LinkDemand devient une demande complète.
+ Dans les assemblys qui useent la sécurité de niveau 2, les tentatives effectuées par une méthode transparente de sécurité pour satisfaire un LinkDemand ou appeler une méthode dans un assembly non APTCA lèvent un <xref:System.MethodAccessException> ; dans les assemblys de niveau 1, le LinkDemand devient une demande complète.
 
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations
- Pour corriger une violation de cette règle, marquez la méthode d’accès avec l’attribut <xref:System.Security.SecurityCriticalAttribute> ou <xref:System.Security.SecuritySafeCriticalAttribute>, ou supprimez le LinkDemand de la méthode accédée.
+ Pour corriger une violation de cette règle, marquez la méthode d’accès avec <xref:System.Security.SecurityCriticalAttribute> l' <xref:System.Security.SecuritySafeCriticalAttribute> attribut ou, ou supprimez le LinkDemand de la méthode accédée.
 
 ## <a name="when-to-suppress-warnings"></a>Quand supprimer les avertissements
  Ne supprimez aucun avertissement de cette règle.

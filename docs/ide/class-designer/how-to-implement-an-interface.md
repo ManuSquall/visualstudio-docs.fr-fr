@@ -1,7 +1,7 @@
 ---
 title: 'Comment : implémenter une interface (Concepteur de classes)'
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - interfaces [Visual Studio], implementing
 - interfaces [Visual Studio]
@@ -11,12 +11,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fbe8db6c6bd7df5285880f7f860df5bb26db736a
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 81b6815dd96894acd574de59c5616371220d2999
+ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75590109"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85770103"
 ---
 # <a name="how-to-implement-an-interface-in-class-designer"></a>Guide pratique pour implémenter une interface dans le Concepteur de classes
 
@@ -39,7 +39,7 @@ Pour plus d’informations, consultez [Guide pratique pour créer un héritage e
 
 1. Sur le diagramme de classes, affichez la classe choisie pour implémenter cette interface.
 
-2. Ouvrez **la vue de classe** et localisez l’interface.
+2. Ouvrez **affichage de classes** et recherchez l’interface.
 
     > [!TIP]
     > Si **l’Affichage de classes** n’est pas ouvert, ouvrez **l’Affichage de classes** à partir du menu **Affichage** ou appuyez sur **Ctrl**+**Maj**+**C**.
@@ -53,4 +53,4 @@ Pour plus d’informations, consultez [Guide pratique pour créer un héritage e
 - [Guide pratique pour créer des types à l’aide du Concepteur de classes](how-to-create-types.md)
 - [Guide pratique pour afficher les types existants](how-to-view-existing-types.md)
 - [Guide pratique pour créer l’héritage entre les types](how-to-create-inheritance-between-types.md)
-- [Refactoriser les classes et les types](refactoring-classes-and-types.md)
+- [Refactorisation des classes et des types](refactoring-classes-and-types.md)

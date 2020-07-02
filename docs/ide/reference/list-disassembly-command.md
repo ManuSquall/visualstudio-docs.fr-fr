@@ -8,22 +8,22 @@ helpviewer_keywords:
 - Debug.ListDisassembly command
 - list disassembly command
 ms.assetid: eb363e35-e86a-4121-966f-991210c27e2a
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: aaeab2e65088b8f1bfce3a6a12f8cd66c3245b75
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 91319a8d25aaec6bdd676ed6d709dffc47100195
+ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "72747919"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85770648"
 ---
 # <a name="list-disassembly-command"></a>Afficher le code machine, commande
 Commence le processus de débogage et permet de spécifier comment les erreurs sont gérées.
 
-## <a name="syntax"></a>Syntaxe
+## <a name="syntax"></a>Syntax
 
 ```cmd
 Debug.ListDisassembly [/count:number] [/endaddress:expression]
@@ -58,7 +58,7 @@ facultatif. Spécifie si les noms de symbole doivent être affichés. La valeur 
 
 facultatif. Active l’affichage des numéros de ligne associés au code source. Le commutateur /source doit avoir la valeur `yes` pour utiliser le commutateur /linenumbers.
 
-## <a name="example"></a> Exemple
+## <a name="example"></a>Exemple
 
 ```cmd
 >Debug.ListDisassembly
@@ -66,9 +66,9 @@ facultatif. Active l’affichage des numéros de ligne associés au code source.
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Afficher la pile d’appels, commande](../../ide/reference/list-call-stack-command.md)
-- [Répertorier les threads, commande](../../ide/reference/list-threads-command.md)
-- [Commandes de studio visuel](../../ide/reference/visual-studio-commands.md)
-- [Commande, fenêtre](../../ide/reference/command-window.md)
-- [Boîte de recherche/commande](../../ide/find-command-box.md)
-- [Alias de commande de studio visuel](../../ide/reference/visual-studio-command-aliases.md)
+- [Afficher la pile des appels, commande](../../ide/reference/list-call-stack-command.md)
+- [Liste des threads, commande](../../ide/reference/list-threads-command.md)
+- [Commandes Visual Studio](../../ide/reference/visual-studio-commands.md)
+- [Fenêtre commande](../../ide/reference/command-window.md)
+- [Zone Rechercher/commande](../../ide/find-command-box.md)
+- [Alias de commandes Visual Studio](../../ide/reference/visual-studio-command-aliases.md)

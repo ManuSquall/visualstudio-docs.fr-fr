@@ -17,17 +17,17 @@ caps.latest.revision: 19
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 5c3e624e4210e59406fd1d5955cd37c2e83ed79a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 6f11125f43fd06b0442d1c40cbd4da41e346fd1d
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72602867"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85546456"
 ---
-# <a name="ca2140-transparent-code-must-not-reference-security-critical-items"></a>CA2140 : Le code transparent ne doit pas faire référence à des éléments critiques de sécurité
+# <a name="ca2140-transparent-code-must-not-reference-security-critical-items"></a>CA2140 : Le code transparent ne doit pas faire référence à des éléments critiques de sécurité
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Élément|Valeur|
 |-|-|
 |TypeName|TransparentMethodsMustNotReferenceCriticalCode|
 |CheckId|CA2140|
@@ -54,16 +54,16 @@ ms.locfileid: "72602867"
 - retourne un type marqué comme critique de sécurité
 
 ## <a name="rule-description"></a>Description de la règle
- Un élément de code marqué avec l’attribut <xref:System.Security.SecurityCriticalAttribute> est critique de sécurité. Une méthode transparente ne peut pas utiliser un élément critique de sécurité. Si un type transparent tente d’utiliser un type critique de sécurité, un <xref:System.TypeAccessException>, <xref:System.MethodAccessException> ou <xref:System.FieldAccessException> est déclenché.
+ Un élément de code marqué avec l' <xref:System.Security.SecurityCriticalAttribute> attribut est critique de sécurité. Une méthode transparente ne peut pas utiliser un élément critique de sécurité. Si un type transparent essaie d’utiliser un type critique de sécurité <xref:System.TypeAccessException> , <xref:System.MethodAccessException> ou <xref:System.FieldAccessException> est déclenché.
 
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations
  Pour corriger une violation de cette règle, effectuez l’une des opérations suivantes :
 
-- Marquer l’élément de code qui utilise le code critique de sécurité avec l’attribut <xref:System.Security.SecurityCriticalAttribute>
+- Marquer l’élément de code qui utilise le code critique de sécurité avec l' <xref:System.Security.SecurityCriticalAttribute> attribut
 
      \- ou -
 
-- Supprimez l’attribut <xref:System.Security.SecurityCriticalAttribute> des éléments de code marqués comme critiques de sécurité et marquez-les à la place avec l’attribut <xref:System.Security.SecuritySafeCriticalAttribute> ou <xref:System.Security.SecurityTransparentAttribute>.
+- Supprimez l' <xref:System.Security.SecurityCriticalAttribute> attribut des éléments de code marqués comme critiques de sécurité et marquez-les à la place avec l' <xref:System.Security.SecuritySafeCriticalAttribute> <xref:System.Security.SecurityTransparentAttribute> attribut ou.
 
 ## <a name="when-to-suppress-warnings"></a>Quand supprimer les avertissements
  Ne supprimez aucun avertissement de cette règle.

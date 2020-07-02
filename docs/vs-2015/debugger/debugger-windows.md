@@ -1,5 +1,5 @@
 ---
-title: Débogueur Windows | Microsoft Docs
+title: Fenêtres du débogueur | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -9,45 +9,44 @@ caps.latest.revision: 10
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 78a81b2392959b968e8905ae33a6f0751e73f2ff
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 1395aba0ea2f40e0df95435a340f4104c9f25d03
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65686772"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85545624"
 ---
 # <a name="debugger-windows"></a>Fenêtres du débogueur
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous pouvez ouvrir la plupart des fenêtres du débogueur pendant le débogage de votre programme. Pour afficher la liste des fenêtres du débogueur, définir un point d’arrêt et démarrer le débogage. Quand vous atteignez le point d’arrêt et que l’exécution s’interrompt, cliquez sur **Déboguer/Fenêtres**.  
+Vous pouvez ouvrir la plupart des fenêtres du débogueur pendant le débogage de votre programme. Pour afficher la liste des fenêtres du débogueur, définir un point d’arrêt et démarrer le débogage. Quand vous atteignez le point d’arrêt et que l’exécution s’arrête, cliquez sur **Déboguer/fenêtres**.  
   
-||||  
+|**Window**|**Touche d’accès rapide**|**Consultez la rubrique**|  
 |-|-|-|  
-|**Fenêtre**|**Touche d’accès rapide**|**Consultez la rubrique**|  
-|Points d’arrêt|Ctrl+Alt+B|[Utilisation des points d’arrêt](../debugger/using-breakpoints.md)|  
+|Points d’arrêt|Ctrl+Alt+B|[Utilisation des points d'arrêt](../debugger/using-breakpoints.md)|  
 |Paramètres d’exception|Ctrl+Alt+E|[Gestion des exceptions avec le débogueur](../debugger/managing-exceptions-with-the-debugger.md)|  
-|Sortie|Ctrl+Alt+O|[Sortie (fenêtre)](../ide/reference/output-window.md)|  
-|Threads GPU|-|[Guide pratique pour utiliser la fenêtre Threads GPU](../debugger/how-to-use-the-gpu-threads-window.md)|  
+|Output|Ctrl+Alt+O|[Sortie, fenêtre](../ide/reference/output-window.md)|  
+|Threads GPU|-|[Comment : utiliser la fenêtre threads GPU](../debugger/how-to-use-the-gpu-threads-window.md)|  
 |Tâches|Ctrl+Maj+D, K|[Utilisation de la fenêtre Tâches](../debugger/using-the-tasks-window.md)|  
 |Piles parallèles|Ctrl+Maj+D, S|[Utilisation de la fenêtre Piles parallèles](../debugger/using-the-parallel-stacks-window.md)|  
 |Espion parallèle|Ctrl+Maj+D, (1, 2, 3, 4)|[Utilisation de la fenêtre Piles parallèles](../debugger/using-the-parallel-stacks-window.md)|  
-|Watch|Ctrl+Alt+W, (1, 2, 3, 4)|[Espion et Espion express, fenêtres](../debugger/watch-and-quickwatch-windows.md)|  
+|Espion|Ctrl+Alt+W, (1, 2, 3, 4)|[Espion et Espion express, fenêtres](../debugger/watch-and-quickwatch-windows.md)|  
 |Espion express|Maj+F9|[Espion et Espion express, fenêtres](../debugger/watch-and-quickwatch-windows.md)|  
 |Auto|Ctrl+Alt+V, A|[Fenêtres de variables](https://msdn.microsoft.com/library/ce0a67f6-2502-4b7a-ba45-cc32f8aeba3e)|  
-|Variables locales|Ctrl+Alt+V, L|[Fenêtres de variables](https://msdn.microsoft.com/library/ce0a67f6-2502-4b7a-ba45-cc32f8aeba3e)|  
-|Immédiat|Ctrl+Alt+I|[Exécution, fenêtre](../ide/reference/immediate-window.md)|  
-|Python Debug Interactive|Maj+Alt+I|[Bien démarrer avec PTVS : Interactive Python](../python/getting-started-with-ptvs-interactive-python.md)|  
+|Locals|Ctrl+Alt+V, L|[Fenêtres de variables](https://msdn.microsoft.com/library/ce0a67f6-2502-4b7a-ba45-cc32f8aeba3e)|  
+|Immédiat|Ctrl+Alt+I|[Fenêtre exécution](../ide/reference/immediate-window.md)|  
+|Python Debug Interactive|Maj+Alt+I|[Bien démarrer avec PTVS . Interactive Python](../python/getting-started-with-ptvs-interactive-python.md)|  
 |Console JavaScript|Ctrl+Alt+V, C|[Démarrage rapide : déboguer du code JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md)|  
 |Explorateur DOM|Ctrl+Alt+V, D|[Déboguer la disposition avec l’Explorateur DOM](../debugger/debug-layout-using-dom-explorer.md)|  
 |Arborescence d’éléments visuels en direct|-|[Inspecter les propriétés XAML en phase de débogage](../debugger/inspect-xaml-properties-while-debugging.md)|  
 |Explorateur de propriétés en direct|-|[Inspecter les propriétés XAML en phase de débogage](../debugger/inspect-xaml-properties-while-debugging.md)|  
-|Piles des appels|Ctrl+Alt+C|[Guide pratique pour utiliser la fenêtre Pile des appels](../debugger/how-to-use-the-call-stack-window.md)|  
-|Threads|Ctrl+Alt+H|[Guide pratique pour utiliser la fenêtre Threads](../debugger/how-to-use-the-threads-window.md)|  
-|Modules|Ctrl+Alt+U|[Guide pratique pour utiliser la fenêtre Modules](../debugger/how-to-use-the-modules-window.md)|  
-|Processus|Ctrl+Alt+Z|[Déboguer les threads et les processus](../debugger/debug-threads-and-processes.md)|  
+|Pile des appels|Ctrl+Alt+C|[Comment : utiliser la fenêtre Pile des appels](../debugger/how-to-use-the-call-stack-window.md)|  
+|Threads|Ctrl+Alt+H|[Comment : utiliser la fenêtre threads](../debugger/how-to-use-the-threads-window.md)|  
+|Modules|Ctrl+Alt+U|[Comment : utiliser la fenêtre Modules](../debugger/how-to-use-the-modules-window.md)|  
+|Processus|Ctrl+Alt+Z|[Déboguer les threads et processus](../debugger/debug-threads-and-processes.md)|  
 |Mémoire|Ctrl+Alt+M, (1, 2, 3, 4)|[Fenêtres Mémoire](../debugger/memory-windows.md)|  
-|Code Machine|Ctrl+Alt+D|[Guide pratique pour utiliser la fenêtre Code Machine](../debugger/how-to-use-the-disassembly-window.md)|  
-|Registres|Ctrl+Alt+G|[Guide pratique pour utiliser la fenêtre Registres](../debugger/how-to-use-the-registers-window.md)|  
+|Code Machine|Ctrl+Alt+D|[Comment : utiliser la fenêtre Code Machine](../debugger/how-to-use-the-disassembly-window.md)|  
+|Registres|CTRL+ALT+G|[Comment : utiliser la fenêtre Registres](../debugger/how-to-use-the-registers-window.md)|  
   
 ## <a name="see-also"></a>Voir aussi  
  [Principes de base du débogueur](../debugger/debugger-basics.md)

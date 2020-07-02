@@ -16,23 +16,23 @@ caps.latest.revision: 31
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 0f5789b514d645fc670acf9307e4714c160c3b4c
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.openlocfilehash: c87836f99684c7e16c022e3e9f15bf546ba82d62
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/13/2020
-ms.locfileid: "75918171"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85547782"
 ---
 # <a name="ca1801-review-unused-parameters"></a>CA1801 : Passez en revue les paramètres inutilisés
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Pour obtenir la documentation la plus récente sur Visual Studio, consultez [CA1801 : examiner les paramètres inutilisés](/visualstudio/code-quality/ca1801-review-unused-parameters).
 
-|||
+|Élément|Valeur|
 |-|-|
 |TypeName|ReviewUnusedParameters|
 |CheckId|CA1801|
-|Catégorie|Microsoft.Usage|
+|Category|Microsoft. usage|
 |Modification avec rupture|Sans rupture : si le membre n’est pas visible à l’extérieur de l’assembly, quelle que soit la modification que vous apportez.<br /><br /> Sans rupture : Si vous modifiez le membre pour utiliser le paramètre dans son corps.<br /><br /> Avec rupture : Si vous supprimez le paramètre et qu’il est visible à l’extérieur de l’assembly.|
 
 ## <a name="cause"></a>Cause
@@ -42,13 +42,13 @@ Pour obtenir la documentation la plus récente sur Visual Studio, consultez [CA1
 
 - Méthodes utilisées comme gestionnaires d’événements.
 
-- Les méthodes déclarées avec le modificateur `abstract` (`MustOverride` dans Visual Basic).
+- Méthodes déclarées avec `abstract` le `MustOverride` modificateur (en Visual Basic).
 
-- Les méthodes déclarées avec le modificateur `virtual` (`Overridable` dans Visual Basic).
+- Méthodes déclarées avec `virtual` le `Overridable` modificateur (en Visual Basic).
 
-- Les méthodes déclarées avec le modificateur `override` (`Overrides` dans Visual Basic).
+- Méthodes déclarées avec `override` le `Overrides` modificateur (en Visual Basic).
 
-- Les méthodes déclarées avec le modificateur `extern` (`Declare` instruction Visual Basic).
+- Les méthodes déclarées avec le `extern` `Declare` modificateur (instruction dans Visual Basic).
 
 ## <a name="rule-description"></a>Description de la règle
  Passez en revue les paramètres des méthodes non virtuelles qui ne sont pas utilisées dans le corps de la méthode pour vous assurer qu’il n’existe pas d’exactitude pour l’accès à ces derniers. Les paramètres inutilisés entraînent des coûts de maintenance et de performances.
@@ -67,8 +67,8 @@ Pour obtenir la documentation la plus récente sur Visual Studio, consultez [CA1
  [!code-csharp[FxCop.Usage.ReviewUnusedParameters#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Usage.ReviewUnusedParameters/cs/FxCop.Usage.ReviewUnusedPerameters.cs#1)]
 
 ## <a name="related-rules"></a>Règles associées
- [CA1811 : Évitez le recours à du code privé non appelé](../code-quality/ca1811-avoid-uncalled-private-code.md)
+ [CA1811 : Évitez le recours à du code privé non appelé](../code-quality/ca1811-avoid-uncalled-private-code.md)
 
- [CA1812 : Évitez les classes internes non instanciées](../code-quality/ca1812-avoid-uninstantiated-internal-classes.md)
+ [CA1812 : Évitez les classes internes non instanciées](../code-quality/ca1812-avoid-uninstantiated-internal-classes.md)
 
- [CA1804 : Supprimez les variables locales inutilisées](../code-quality/ca1804-remove-unused-locals.md)
+ [CA1804 : Supprimez les variables locales inutilisées](../code-quality/ca1804-remove-unused-locals.md)

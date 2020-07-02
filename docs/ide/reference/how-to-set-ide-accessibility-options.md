@@ -4,7 +4,7 @@ description: Découvrez comment définir les options d’accessibilité dans Vis
 ms.date: 08/23/2019
 ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - accessibility [Visual Studio]
 ms.assetid: ddc96c4c-0600-46c1-8267-7dce4c44ad24
@@ -13,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 63bba4e8defcd727f05dbc209aa2f48f7d5f2c92
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: ac857d961b1ae736645ba2cfda3f1ef5755d0fa1
+ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "70107782"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85770279"
 ---
 # <a name="how-to-set-ide-accessibility-options"></a>Guide pratique pour définir les options d’accessibilité IDE
 
@@ -38,7 +38,7 @@ En outre, Visual Studio prend en charge les dispositions de clavier Dvorak, qui 
 
 ## <a name="editors-dialogs-and-tool-windows"></a>Éditeurs, boîtes de dialogue et fenêtres d’outils
 
-Par défaut, les boîtes de dialogue et les fenêtres d’outils de Visual Studio utilisent les mêmes taille de police et couleurs que le système d’exploitation. Les paramètres de couleur pour le cadre de l’IDE, les boîtes de dialogue, les barres d’outils et les fenêtres d’outils sont basés sur un modèle de couleurs : clair ou sombre. Vous pouvez modifier le thème de couleur actuel dans la [boîte de dialogue Options: Environnement > général](../../ide/reference/general-environment-options-dialog-box.md).
+Par défaut, les boîtes de dialogue et les fenêtres d’outils de Visual Studio utilisent les mêmes taille de police et couleurs que le système d’exploitation. Les paramètres de couleur pour le cadre de l’IDE, les boîtes de dialogue, les barres d’outils et les fenêtres d’outils sont basés sur un modèle de couleurs : clair ou sombre. Vous pouvez modifier le thème de couleur actuel dans la [boîte de dialogue Options : environnement > général](../../ide/reference/general-environment-options-dialog-box.md).
 
 Vous pouvez également afficher des fenêtres indépendantes dans le mode Code de l’éditeur. Ces fenêtres peuvent vous demander de fournir des membres disponibles sur l’objet en cours et les paramètres pour exécuter une fonction ou une instruction. Ces fenêtres peuvent être utiles si vous avez des difficultés à taper. Toutefois, elles interfèrent avec le focus dans l’éditeur de code, ce qui peut être problématique pour certains utilisateurs.
 
@@ -46,7 +46,7 @@ Voici comment désactiver les fenêtres indépendantes :
 
 1. Dans le menu **Outils** , choisissez **Options**.
 
-1. Choisissez **Text Editor** > **All Languages** > **General**.
+1. Choisissez **éditeur de texte**  >  **tous les langages**  >  **général**.
 
 1. Désactivez les cases à cocher **Répertorier automatiquement les membres** et **Informations sur les paramètres**.
 
@@ -62,7 +62,7 @@ Vous pouvez également modifier les paramètres d’affichage du texte dans l’
 
 1. Dans le menu **Outils** , choisissez **Options**.
 
-1. Choisissez **Environment** > **Fonts and Colors**.
+1. Choisissez **Environment**  >  **les polices et les couleurs de**l’environnement.
 
 1. Sélectionnez une option dans le menu déroulant **Afficher les paramètres de**.
 
@@ -102,7 +102,7 @@ Vous pouvez choisir de modifier les couleurs par défaut pour le texte, les indi
 1. Choisissez **OK**.
 
 > [!TIP]
-> Pour utiliser des couleurs de contraste élevé pour toutes les fenêtres d’application sur votre système d’exploitation, appuyez sur **Left Alt**+**Left Shift**+**PrtScn**. Si Visual Studio est ouvert, fermez-le et rouvrez-le pour implémenter complètement les couleurs à contraste élevé.
+> Pour utiliser des couleurs à contraste élevé pour toutes les fenêtres d’application sur votre système d’exploitation, appuyez sur **ALT**gauche + **MAJ gauche** + **Impr**. écran. Si Visual Studio est ouvert, fermez-le et rouvrez-le pour implémenter complètement les couleurs à contraste élevé.
 
 ## <a name="toolbars"></a>Barres d'outils
 
@@ -130,6 +130,6 @@ Pour améliorer l’accessibilité et la facilité d’utilisation de la barre d
 
 ## <a name="see-also"></a>Voir aussi
 
-* [Caractéristiques d’accessibilité de Visual Studio](../../ide/reference/accessibility-features-of-visual-studio.md)
+* [Fonctionnalités d’accessibilité de Visual Studio](../../ide/reference/accessibility-features-of-visual-studio.md)
 * [Accessibilité de Visual Studio pour Mac](/visualstudio/mac/accessibility/)
-* [Ressources pour concevoir des applications accessibles](../../ide/reference/resources-for-designing-accessible-applications.md)
+* [Ressources pour la conception d’applications accessibles](../../ide/reference/resources-for-designing-accessible-applications.md)

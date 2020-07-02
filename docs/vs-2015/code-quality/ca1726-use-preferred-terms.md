@@ -14,23 +14,23 @@ caps.latest.revision: 24
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 639a42e26442e31f7bbbbb2245af0289c6a04fd8
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.openlocfilehash: 96e0614bc5c08c83008af4e67a2aa865f08f74f3
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/13/2020
-ms.locfileid: "75918222"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85547808"
 ---
 # <a name="ca1726-use-preferred-terms"></a>CA1726 : Utilisez les termes par défaut
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Pour obtenir la documentation la plus récente sur Visual Studio, consultez [CA1726 : utiliser les termes préférés](/visualstudio/code-quality/ca1726-use-preferred-terms).
 
-|||
+|Élément|Valeur|
 |-|-|
 |TypeName|UsePreferredTerms|
 |CheckId|CA1726|
-|Catégorie|Microsoft.Naming|
+|Category|Microsoft. Naming|
 |Modification avec rupture|Avec rupture : en cas de déclenchement sur les assemblys<br /><br /> Sans rupture-en cas de déclenchement sur les paramètres de type|
 
 ## <a name="cause"></a>Cause
@@ -73,4 +73,4 @@ Pour obtenir la documentation la plus récente sur Visual Studio, consultez [CA1
  Supprimez un avertissement de cette règle uniquement si le nom de l’identificateur est intentionnel et s’applique spécifiquement au terme d’origine au lieu du terme préféré.
 
 ## <a name="related-rules"></a>Règles associées
- [Avertissements liés à l’affectation de noms](../code-quality/naming-warnings.md)
+ [Avertissements d’attribution de noms](../code-quality/naming-warnings.md)

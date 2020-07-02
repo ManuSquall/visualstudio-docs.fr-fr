@@ -15,29 +15,29 @@ caps.latest.revision: 31
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 1e85929202d36be2e6dcc2b08b5b2a60e7656b27
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.openlocfilehash: fe362a58a047c8594d09bc6985c48d16f21d3b76
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/13/2020
-ms.locfileid: "75919186"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85545598"
 ---
 # <a name="ca1715-identifiers-should-have-correct-prefix"></a>CA1715 : Les identificateurs doivent être dotés d'un préfixe correct
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Pour obtenir la documentation la plus récente sur Visual Studio, consultez [CA1715 : les identificateurs doivent avoir un préfixe correct](/visualstudio/code-quality/ca1715-identifiers-should-have-correct-prefix).
 
-|||
+|Élément|Valeur|
 |-|-|
 |TypeName|IdentifiersShouldHaveCorrectPrefix|
 |CheckId|CA1715|
-|Catégorie|Microsoft.Naming|
+|Category|Microsoft. Naming|
 |Modification avec rupture|Avec rupture : lorsqu’elle est déclenchée sur les interfaces.<br /><br /> Sans rupture-en cas de déclenchement sur des paramètres de type générique.|
 
 ## <a name="cause"></a>Cause
  Le nom d’une interface extérieurement visible ne commence pas par un « I » majuscule.
 
- \- ou -
+ -ou-
 
  Le nom d’un paramètre de type générique sur un type ou une méthode extérieurement visible ne commence pas par un « t » majuscule.
 
@@ -48,7 +48,7 @@ Pour obtenir la documentation la plus récente sur Visual Studio, consultez [CA1
 
  Les noms de paramètre de type générique doivent commencer par un « t » majuscule et éventuellement être suivis par une autre lettre majuscule. Cette règle signale des violations pour les noms de paramètre de type générique tels que’V’et’type'.
 
- Les conventions d’affectation de noms fournissent une apparence commune pour les bibliothèques qui ciblent le common language runtime. Cela réduit la courbe d’apprentissage requise pour les nouvelles bibliothèques logicielles et augmente la confiance des clients dans la mesure où la bibliothèque a été développée par une personne ayant une expertise dans le développement de code géré.
+ Les conventions d’affectation de noms fournissent une recherche commune pour les bibliothèques qui ciblent le common language runtime. Cela réduit la courbe d’apprentissage requise pour les nouvelles bibliothèques logicielles et augmente la confiance des clients dans la mesure où la bibliothèque a été développée par une personne ayant une expertise dans le développement de code géré.
 
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations
  Renommez l’identificateur afin qu’il soit correctement préfixé.
@@ -85,4 +85,4 @@ Pour obtenir la documentation la plus récente sur Visual Studio, consultez [CA1
  [!code-vb[FxCop.Naming.IdentifiersShouldHaveCorrectPrefix4#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Naming.IdentifiersShouldHaveCorrectPrefix4/vb/FxCop.Naming.IdentifiersShouldHaveCorrectPrefix4.vb#1)]
 
 ## <a name="related-rules"></a>Règles associées
- [CA1722 : Les identificateurs ne doivent pas avoir un préfixe incorrect](../code-quality/ca1722-identifiers-should-not-have-incorrect-prefix.md)
+ [CA1722 : Les identificateurs ne doivent pas porter un préfixe incorrect](../code-quality/ca1722-identifiers-should-not-have-incorrect-prefix.md)

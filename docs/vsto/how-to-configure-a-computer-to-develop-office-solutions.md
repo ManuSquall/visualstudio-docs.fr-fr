@@ -1,7 +1,7 @@
 ---
 title: 'Comment : configurer un ordinateur pour développer des solutions Office'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: eb29dc4151bc457eb60ce836986817bc1b0137c9
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: 3b13aa65e4dd5868a36e0dd833351b1d1751d8b0
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72985961"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85546170"
 ---
 # <a name="how-to-configure-a-computer-to-develop-office-solutions"></a>Comment : configurer un ordinateur pour développer des solutions Office
   Pour configurer un ordinateur de développement de manière à pouvoir utiliser les Outils de développement Microsoft Office dans Visual Studio, suivez les instructions de cette rubrique. Vous devez détenir des privilèges d'administrateur sur l'ordinateur de développement pour effectuer ces étapes.
@@ -31,10 +31,10 @@ ms.locfileid: "72985961"
 
      Assurez-vous également d'installer les assemblys PIA pour la version d'Office que vous installez. Les assemblys PIA sont installés avec Office par défaut. Si vous modifiez le programme d’installation d’Office, assurez-vous que la fonctionnalité **prise en charge de la programmabilité .net** est sélectionnée pour les applications que vous souhaitez cibler.
 
-3. Si vous disposez d’une version anglaise de Visual Studio, mais que vous utilisez des paramètres autres que l’anglais pour Windows, vous pouvez installer le module linguistique [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] pour afficher [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] messages dans la même langue que celle de Windows. Les versions non anglaises de Visual Studio installent automatiquement le module linguistique. Le module linguistique est disponible dans le [Centre de téléchargement Microsoft](https://www.microsoft.com/download/details.aspx?id=54246).
+3. Si vous disposez d’une version anglaise de Visual Studio, mais que vous utilisez des paramètres autres que l’anglais pour Windows, vous pouvez installer le [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] module linguistique pour afficher les [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] messages dans la même langue que celle de Windows. Les versions non anglaises de Visual Studio installent automatiquement le module linguistique. Le module linguistique est disponible dans le [Centre de téléchargement Microsoft](https://www.microsoft.com/download/details.aspx?id=54246).
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Prise en &#40;main du développement Office dans Visual Studio&#41;](../vsto/getting-started-office-development-in-visual-studio.md)
+- [Prise en main &#40;le développement Office dans Visual Studio&#41;](../vsto/getting-started-office-development-in-visual-studio.md)
 - [Comment : installer le Visual Studio Tools pour le package redistribuable Office Runtime](../vsto/how-to-install-the-visual-studio-tools-for-office-runtime-redistributable.md)
 - [Comment : installer les assemblys PIA (Primary Interop Assembly) Office](../vsto/how-to-install-office-primary-interop-assemblies.md)

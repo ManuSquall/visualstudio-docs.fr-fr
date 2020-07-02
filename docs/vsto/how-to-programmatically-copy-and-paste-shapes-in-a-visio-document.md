@@ -1,7 +1,7 @@
 ---
-title: Copier et coller des formes dans le document Visio par programmation
+title: Copier et coller des formes dans un document Visio par programmation
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -13,14 +13,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 074a276fe37ef713d38078f60c4bee95145c4d8b
-ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
+ms.openlocfilehash: 05b0d20ba7bd560fc60090bba84b78691bb3e753
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/30/2019
-ms.locfileid: "66402222"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85546092"
 ---
-# <a name="how-to-programmatically-copy-and-paste-shapes-in-a-visio-document"></a>Procédure : Copier et coller des formes dans un document Visio par programme
+# <a name="how-to-programmatically-copy-and-paste-shapes-in-a-visio-document"></a>Comment : copier et coller des formes dans un document Visio par programmation
   Vous pouvez copier des formes par programmation sur une page d’un document, et les coller dans une nouvelle page du même document. Vous pouvez choisir de les coller à l’emplacement par défaut (au centre de la fenêtre active) ou aux mêmes coordonnées que dans la page d’origine.
 
 ## <a name="copy-and-paste-shapes"></a>Copier et coller des formes
@@ -36,7 +36,7 @@ ms.locfileid: "66402222"
 ## <a name="copy-and-paste-shapes-with-the-same-positions"></a>Copier et coller des formes avec les mêmes positions
  Pour plus d’informations sur le modèle objet, consultez la documentation de référence VBA sur les méthodes [Microsoft.Office.Interop.Visio.Shape.DrawRectangle](/office/vba/api/Visio.Shape.DrawRectangle), [Microsoft.Office.Interop.Visio.Shape.DrawOval](/office/vba/api/Visio.Shape.DrawOval), [Microsoft.Office.Interop.Visio.Shape.Copy](/office/vba/api/Visio.Shape.Copy)et [Microsoft.Office.Interop.Visio.Shape.Paste](/office/vba/api/Visio.Shape.Paste) , ainsi que sur l’indicateur [Microsoft.Office.Interop.Visio.VisCutCopyPasteCodes.visCopyPasteNoTranslate](/office/vba/api/Visio.viscutcopypastecodes) .
 
- Si vous avez besoin contrôler le format des informations collées et (éventuellement) établir un lien vers un fichier source (par exemple, un document Microsoft Office Word), utilisez la méthode PasteSpecial.
+ Si vous devez contrôler le format des informations collées et (éventuellement) établir un lien vers un fichier source (par exemple, un Microsoft Office document Word), utilisez la méthode PasteSpecial.
 
 ### <a name="to-copy-shapes-and-shape-locations-to-another-page"></a>Pour copier des formes et des emplacements de forme vers une autre page
 
@@ -47,6 +47,6 @@ ms.locfileid: "66402222"
 
 ## <a name="see-also"></a>Voir aussi
 - [Solutions Visio](../vsto/visio-solutions.md)
-- [Présentation du modèle objet de Visio](../vsto/visio-object-model-overview.md)
-- [Utilisez des formes Visio](../vsto/working-with-visio-shapes.md)
-- [Guide pratique pour Ajouter par programmation des formes à un document Visio](../vsto/how-to-programmatically-add-shapes-to-a-visio-document.md)
+- [Vue d’ensemble du modèle objet Visio](../vsto/visio-object-model-overview.md)
+- [Utiliser des formes Visio](../vsto/working-with-visio-shapes.md)
+- [Comment : ajouter des formes à un document Visio par programmation](../vsto/how-to-programmatically-add-shapes-to-a-visio-document.md)

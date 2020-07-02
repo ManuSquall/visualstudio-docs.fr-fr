@@ -1,7 +1,7 @@
 ---
-title: 'Procédure : Supprimer des rendez-vous par programmation'
+title: 'Comment : supprimer des rendez-vous par programmation'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -14,14 +14,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 1a5fc7f15a7fe4ec0f267eef669fc99af38375dc
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ddd3d65202ad0e6673ed436203b253e691372f7c
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63001004"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85545962"
 ---
-# <a name="how-to-programmatically-delete-appointments"></a>Procédure : Supprimer des rendez-vous par programmation
+# <a name="how-to-programmatically-delete-appointments"></a>Comment : supprimer des rendez-vous par programmation
   Cet exemple supprime une instance d’un rendez-vous périodique. L’exemple part du principe qu’une instance d’un rendez-vous périodique se produit le 28 juin 2006 à 08:00.
 
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]
@@ -32,7 +32,7 @@ ms.locfileid: "63001004"
 
 ## <a name="see-also"></a>Voir aussi
 - [Utiliser des éléments de calendrier](../vsto/working-with-calendar-items.md)
-- [Commencer à programmer des Compléments VSTO](../vsto/getting-started-programming-vsto-add-ins.md)
-- [Guide pratique pour Créer des rendez-vous par programmation](../vsto/how-to-programmatically-create-appointments.md)
-- [Guide pratique pour Créer un calendrier personnalisé par programmation](../vsto/how-to-programmatically-create-a-custom-calendar.md)
-- [Guide pratique pour Créer par programmation une demande de réunion](../vsto/how-to-programmatically-create-a-meeting-request.md)
+- [Prise en main de la programmation de compléments VSTO](../vsto/getting-started-programming-vsto-add-ins.md)
+- [Comment : créer des rendez-vous par programmation](../vsto/how-to-programmatically-create-appointments.md)
+- [Comment : créer un calendrier personnalisé par programmation](../vsto/how-to-programmatically-create-a-custom-calendar.md)
+- [Comment : créer une demande de réunion par programmation](../vsto/how-to-programmatically-create-a-meeting-request.md)

@@ -3,7 +3,7 @@ title: Utiliser Visual Studio sans souris
 titleSuffix: ''
 description: Découvrez comment naviguer et écrire du code dans l’environnement de développement intégré (IDE) Visual Studio en utilisant uniquement le clavier.
 ms.date: 05/10/2019
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - Toolbox, shortcut keys
 - shortcut keys [Visual Studio]
@@ -16,12 +16,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3b1beb2ccb6b3e3e2b74ed7deaf2f31443ee2466
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 5a8c14f59b87be1e59b5d115ea84b555677cda32
+ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75569021"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85770231"
 ---
 # <a name="how-to-use-the-keyboard-exclusively"></a>Guide pratique pour utiliser uniquement le clavier
 
@@ -43,9 +43,9 @@ Pour obtenir la liste complète des touches de raccourci de commande de Visual S
 
 Pour ajouter un contrôle sur la boîte à outils à un formulaire ou concepteur sans utiliser la souris :
 
-1. Sur la barre de menu, choisissez **View** > **Toolbox**.
+1. Dans la barre de menus, choisissez **Afficher**la  >  **boîte à outils**.
 
-2. Utilisez la flèche **Ctrl**+**Up** ou les touches**fléchées** **Ctrl**+Down pour vous déplacer parmi les sections de l’onglet **Toolbox.**
+2. Utilisez les touches **CTRL** + **haut** ou **CTRL** + **bas** pour vous déplacer parmi les sections de l’onglet **boîte à outils** .
 
 3. Utilisez les touches **Haut** ou **Bas** pour vous déplacer entre les contrôles dans une section.
 
@@ -63,17 +63,17 @@ Pour vous déplacer entre les options d’une boîte de dialogue et modifier les
 
    - Pour les cases à cocher, utilisez la touche **Barre d’espace** pour cocher ou décocher.
 
-   - Pour les listes d’abandon, utilisez la flèche **Alt**+**Down** pour afficher les éléments, puis utilisez la flèche **Up** et les touches de flèche vers le **bas** pour modifier l’élément sélectionné.
+   - Pour les listes déroulantes, **Utilisez** + la**flèche vers le bas** Alt pour afficher les éléments, puis utilisez les touches de direction **haut** et **bas** pour modifier l’élément sélectionné.
 
    - Pour les boutons, appuyez sur **Entrée** pour les actionner.
 
-   - Pour les grilles, utilisez les touches de direction pour naviguer. Pour les listes d’abandon dans les grilles, utilisez **la**+flèche Shift**Alt**+**Down** pour afficher les éléments, puis utilisez la flèche **Up** et les touches de flèche vers le **bas** pour modifier l’élément sélectionné.
+   - Pour les grilles, utilisez les touches de direction pour naviguer. Pour les listes déroulantes dans les grilles, utilisez **MAJ** + **ALT** + **flèche bas** pour afficher les éléments, puis utilisez les flèches **haut** et **bas** pour modifier l’élément sélectionné.
 
 ## <a name="navigate-between-windows-and-files"></a>Naviguer entre fenêtres et fichiers
 
-- Pour vous déplacer entre les fichiers d’un éditeur ou d’un concepteur, choisissez le raccourci clavier **Ctrl**+**Tab** pour afficher le navigateur IDE avec des **fichiers actifs** sélectionnés. Choisissez la touche **Entrée** pour accéder au fichier mis en surbrillance.
+- Pour vous déplacer entre des fichiers dans un éditeur ou un concepteur **Ctrl**, choisissez le + raccourci clavier de l'**onglet** Ctrl pour afficher le navigateur IDE avec les **fichiers actifs** sélectionnés. Choisissez la touche **Entrée** pour accéder au fichier mis en surbrillance.
 
-- Pour vous déplacer entre les fenêtres à outils amarrées, choisissez le raccourci clavier **Alt**+**F7** pour afficher le navigateur IDE avec **Active Tool Windows** sélectionné. Choisissez la touche **Entrée** pour accéder à la fenêtre mise en surbrillance.
+- Pour vous déplacer parmi les fenêtres d’outils ancrées, choisissez le raccourci clavier **ALT** + **F7** pour afficher le navigateur IDE avec les **fenêtres d’outils actives** sélectionnées. Choisissez la touche **Entrée** pour accéder à la fenêtre mise en surbrillance.
 
 ## <a name="move-and-dock-tool-windows"></a>Déplacer et ancrer les fenêtres Outil
 
@@ -81,7 +81,7 @@ Pour vous déplacer entre les options d’une boîte de dialogue et modifier les
 
 2. Dans le menu **Fenêtre**, sélectionnez l’option **Ancrable**.
 
-3. Appuyez sur **Alt**+**Spacebar**, puis choisissez **Move**.
+3. Appuyez sur **ALT** + **espace**, puis choisissez **déplacer**.
 
    Le losange d’ancrage s’affiche.
 

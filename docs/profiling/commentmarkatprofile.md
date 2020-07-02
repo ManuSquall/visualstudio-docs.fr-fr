@@ -12,12 +12,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 51028dce1d60c0d01c83cee509a1ed7321855437
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: ee9eb5353109bcf5df6903e7e607a11b8bfd0536
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74777840"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85545611"
 ---
 # <a name="commentmarkatprofile"></a>CommentMarkAtProfile
 La méthode `CommentMarkAtProfile` insère une valeur d’horodatage, une marque numérique et une chaîne de commentaire dans le fichier *.vsp*. La valeur d’horodatage peut être utilisée pour synchroniser des événements externes. Pour que la marque et le commentaire soient insérés, le profilage du thread qui contient la fonction CommentMarkAtProfile doit être activé.
@@ -57,7 +57,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI CommentMarkAtProfile (
 |MARK_TEXTTOOLONG|La chaîne dépasse le maximum de 256 caractères. La chaîne de commentaire est tronquée, et la marque et le commentaire sont enregistrés.|
 |MARK_OK|MARK_OK est retourné pour indiquer la réussite.|
 
-## <a name="remarks"></a>Notes 
+## <a name="remarks"></a>Remarques
  L’état du profilage du thread qui contient la fonction de profil de marque doit être Activé lors de l’insertion de marques et de commentaires avec la commande Mark ou des fonctions de l’API (CommentMarkAtProfile, CommentMarkProfile ou MarkProfile). Les marques de profil sont globales dans l’étendue. Par exemple, une marque de profil insérée dans un thread peut être utilisée pour marquer le début ou la fin d’un segment de données dans n’importe quel thread dans le fichier .vsp.
 
 > [!IMPORTANT]
@@ -68,13 +68,13 @@ PROFILE_COMMAND_STATUS PROFILERAPI CommentMarkAtProfile (
 
 ## <a name="function-information"></a>Informations sur la fonction
 
-|||
+|Élément|Valeur|
 |-|-|
 |**En-tête**|Inclure *VSPerf.h*|
 |**Bibliothèque**|Utiliser *VSPerf.lib*|
 |**Unicode**|Implémenté en tant que CommentMarkAtProfileW (Unicode) et CommentMarkAtProfileA (ANSI).|
 
-## <a name="example"></a> Exemple
+## <a name="example"></a>Exemple
  Le code suivant illustre l’utilisation de l’appel de fonction générique CommentMarkAtProfile. L’exemple suppose l’utilisation de macros de chaîne Win32 et les paramètres de compilateur pour ANSI afin de déterminer si le code appelle la fonction compatible ANSI.
 
 ```cpp
@@ -116,4 +116,4 @@ void ExerciseCommentMarkAtProfile(void)
 ```
 
 ## <a name="see-also"></a>Voir aussi
-- [Visual Studio Profiler API référence (native)](../profiling/visual-studio-profiler-api-reference-native.md)
+- [Informations de référence sur l’API du profileur Visual Studio (natif)](../profiling/visual-studio-profiler-api-reference-native.md)

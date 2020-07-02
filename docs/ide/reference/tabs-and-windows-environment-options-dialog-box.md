@@ -5,18 +5,18 @@ ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Environment.TabsAndWindows
 ms.assetid: f5167564-0a4e-4f98-9580-fc6cb7d9dd8d
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0bd6358189c3bd39bad57332f87dfe8c43894cd0
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 30040a986ee271ac7512139738422ec6ca150cf8
+ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "72645041"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85769987"
 ---
-# <a name="options-dialog-box-environment--tabs-and-windows"></a>Boîte de dialogue \> d’options : onglets et fenêtres d’environnement
+# <a name="options-dialog-box-environment--tabs-and-windows"></a>Boîte de dialogue Options : \> onglets et fenêtres d’environnement
 
-Utilisez cette page pour définir les options permettant de déterminer le comportement des fenêtres à onglets dans le volet de l’éditeur, ainsi que des fenêtres Outil. Pour plus d’informations, voir [personnaliser les mises en page des fenêtres dans Visual Studio](../../ide/customizing-window-layouts-in-visual-studio.md)
+Utilisez cette page pour définir les options permettant de déterminer le comportement des fenêtres à onglets dans le volet de l’éditeur, ainsi que des fenêtres Outil. Pour plus d’informations, consultez [personnaliser les dispositions de fenêtres dans Visual Studio](../../ide/customizing-window-layouts-in-visual-studio.md)

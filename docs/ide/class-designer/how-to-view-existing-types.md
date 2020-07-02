@@ -1,7 +1,7 @@
 ---
 title: 'Comment : afficher des types existants (Concepteur de classes)'
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - vs.classdesigner.CannotShowBaseType
 helpviewer_keywords:
@@ -14,12 +14,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 04b109bfa5741a5d4349f2d503bd1c821e19029d
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: fa27489844bc59bc0d4da32440cc1caa74ecbea6
+ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75588705"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85770014"
 ---
 # <a name="how-to-view-existing-types-in-class-designer"></a>Guide pratique pour afficher des types existants dans le Concepteur de classes
 
@@ -27,13 +27,13 @@ Pour voir un type existant et ses membres, ajoutez sa forme à un diagramme de c
 
 Vous pouvez voir les types locaux et les types référencés. Un type local existe dans le projet actuellement ouvert et est disponible en lecture/écriture. Un type référencé existe dans un autre projet ou dans un assembly référencé et est en lecture seule.
 
-Pour concevoir de nouveaux types sur des diagrammes de classe, voir [Comment créer des types en utilisant Class Designer](how-to-create-types.md).
+Pour concevoir de nouveaux types sur des diagrammes de classes, consultez [Comment : créer des types à l’aide de concepteur de classes](how-to-create-types.md).
 
 ## <a name="to-see-types-in-a-project-on-a-class-diagram"></a>Pour voir les types d'un projet dans un diagramme de classes
 
-1. À partir d’un projet dans **Solution Explorer**, ouvrez un fichier de diagramme de classe existant (.cd). Ou, s'il n'existe aucun diagramme de classes, ajoutez un nouveau diagramme de classes au projet. Voir [comment : Ajouter des diagrammes de classe aux projets](how-to-add-class-diagrams-to-projects.md).
+1. À partir d’un projet dans **Explorateur de solutions**, ouvrez un fichier de diagramme de classes (. CD) existant. Ou, s'il n'existe aucun diagramme de classes, ajoutez un nouveau diagramme de classes au projet. Consultez [Comment : ajouter des diagrammes de classes aux projets](how-to-add-class-diagrams-to-projects.md).
 
-2. Du projet dans **Solution Explorer**, faites glisser un fichier de code source au diagramme de classe.
+2. À partir du projet dans **Explorateur de solutions**, faites glisser un fichier de code source vers le diagramme de classes.
 
     > [!NOTE]
     > Si votre solution contient un projet qui partage du code dans plusieurs applications, vous pouvez faire glisser des fichiers ou du code vers un diagramme de classes uniquement à partir des sources suivantes :
@@ -45,24 +45,24 @@ Pour concevoir de nouveaux types sur des diagrammes de classe, voir [Comment cr�
 
     Les formes représentant les types définis dans le fichier de code source apparaissent sur le diagramme à l'emplacement où vous avez fait glisser le fichier.
 
-Vous pouvez également afficher les types dans le projet en faisant glisser un ou plusieurs types du nœud de projet dans **Class View** au diagramme de classe.
+Vous pouvez également afficher les types du projet en faisant glisser un ou plusieurs types du nœud de projet dans **affichage de classes** vers le diagramme de classes.
 
 > [!TIP]
-> Si **Class View** n’est pas ouvert, ouvrez la vue de **classe** depuis le menu **View.**
+> Si **affichage de classes** n’est pas ouvert, ouvrez **affichage de classes** à partir du menu **affichage** .
 
-Pour afficher les types à des endroits par défaut sur le diagramme, sélectionnez un ou plusieurs types dans **Class View**, cliquez à droite sur les types sélectionnés, et choisissez View **Class Diagram**.
+Pour afficher les types à des emplacements par défaut sur le diagramme, sélectionnez un ou plusieurs types dans **affichage de classes**, cliquez avec le bouton droit sur les types sélectionnés, puis choisissez **afficher le diagramme de classes**.
 
 > [!NOTE]
-> Si un diagramme de classes fermé contenant le type existe déjà dans le projet, le diagramme de classes s'ouvre et affiche la forme du type. Toutefois, si aucun diagramme de classe contenant le type n’existe dans le projet, **Class Designer** crée un nouveau diagramme de classe dans le projet et l’ouvre pour afficher le type.
+> Si un diagramme de classes fermé contenant le type existe déjà dans le projet, le diagramme de classes s'ouvre et affiche la forme du type. Toutefois, si aucun diagramme de classes contenant le type n’existe dans le projet, **Concepteur de classes** crée un nouveau diagramme de classes dans le projet et l’ouvre pour afficher le type.
 
 Lorsque vous affichez un type sur le diagramme pour la première fois, sa forme apparaît réduite par défaut. Vous pouvez développer la forme pour afficher son contenu.
 
 ### <a name="to-display-the-contents-of-a-project-in-a-class-diagram"></a>Pour afficher le contenu d'un projet dans un diagramme de classes
 
-Dans **Solution Explorer** ou Class **View**, cliquez à droite sur le projet et choisissez **View**, puis choisissez View **Class Diagram**. Un diagramme de classes est alors créé et rempli automatiquement.
+Dans **Explorateur de solutions** ou **affichage de classes**, cliquez avec le bouton droit sur le projet et choisissez **Afficher**, puis choisissez **afficher le diagramme de classes**. Un diagramme de classes est alors créé et rempli automatiquement.
 
 ## <a name="see-also"></a>Voir aussi
 
 - [Guide pratique pour afficher l’héritage entre des types](how-to-view-inheritance-between-types.md)
-- [Comment : Personnaliser les diagrammes de classe](how-to-customize-class-diagrams.md)
-- [Types et relations d’affichage](designing-and-viewing-classes-and-types.md)
+- [Comment : personnaliser des diagrammes de classes](how-to-customize-class-diagrams.md)
+- [Affichage des types et des relations](designing-and-viewing-classes-and-types.md)

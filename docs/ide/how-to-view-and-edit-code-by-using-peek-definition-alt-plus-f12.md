@@ -1,18 +1,18 @@
 ---
 title: Utilisation de l’Aperçu de définition
 ms.date: 01/10/2018
-ms.topic: conceptual
+ms.topic: how-to
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9eac5c8c47c208f39f74f542fbbff89c8340a93f
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: daa1148a47919c12fa423bd90f6d63c030cf743c
+ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75591344"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85770519"
 ---
 # <a name="how-to-view-and-edit-code-by-using-peek-definition-altf12"></a>Guide pratique pour afficher et modifier le code avec l’Aperçu de définition (ALT+F12)
 
@@ -24,7 +24,7 @@ Vous pouvez utiliser **Aperçu de définition** avec du code C#, Visual Basic e
 
 ### <a name="open-a-peek-definition-window"></a>Ouvrir une fenêtre Aperçu de la définition
 
-1. Vous pouvez afficher l’aperçu d’une définition en choisissant **Aperçu de la définition** dans le menu contextuel (clic droit) d’un type ou membre que vous souhaitez explorer. Si l’option est activée, vous pouvez également afficher l’aperçu d’une définition à l’aide de la souris en appuyant sur **Ctrl** (ou sur une autre touche de modification) et en cliquant sur le nom du membre. Ou, à partir du clavier, appuyez sur **Alt**+**F12**.
+1. Vous pouvez afficher l’aperçu d’une définition en choisissant **Aperçu de la définition** dans le menu contextuel (clic droit) d’un type ou membre que vous souhaitez explorer. Si l’option est activée, vous pouvez également afficher l’aperçu d’une définition à l’aide de la souris en appuyant sur **Ctrl** (ou sur une autre touche de modification) et en cliquant sur le nom du membre. Ou, à partir du clavier, appuyez sur **ALT** + **F12**.
 
      Cette illustration représente la fenêtre **Aperçu de définition** pour une méthode nommée `Print()` :
 
@@ -58,7 +58,7 @@ Quand vous commencez à apporter des modifications dans une fenêtre **Aperçu d
 
 ### <a name="to-change-options-for-peek-definition"></a>Pour changer les options d’aperçu de la définition
 
-1. Aller à **Tools** > **Options** > **Text Editor** > **General**.
+1. Accédez à **Outils**  >  **options**  >  **éditeur de texte**  >  **général**.
 
 1. Sélectionnez l’option **Ouvrir la définition dans l’aperçu**.
 
@@ -70,14 +70,14 @@ Quand vous commencez à apporter des modifications dans une fenêtre **Aperçu d
 
 Vous pouvez utiliser les raccourcis clavier suivants avec la fenêtre **Aperçu de définition** :
 
-|Fonctionnalités|Raccourci clavier|
+|Fonctionnalité|Raccourci clavier|
 |-------------------|:-----------------------:|
-|Ouvrir la fenêtre de définition|**Alt**+**F12**|
+|Ouvrir la fenêtre de définition|**ALT** + **F12**|
 |Fermer la fenêtre de définition|**Échap**|
-|Promouvoir la fenêtre de définition en onglet de document standard|**Shift**+**Alt**+**Accueil**|
-|Naviguer entre les fenêtres de définition|**Ctrl**+**Alt** + **-** et **Ctrl**+**Alt**+**=**|
+|Promouvoir la fenêtre de définition en onglet de document standard|**MAJ** + **ALT** + **Page d’hébergement**|
+|Naviguer entre les fenêtres de définition|**CTRL** + **Alt** + Alt **-** et **CTRL** + **ALT**+**=**|
 |Naviguer entre plusieurs résultats|**F8** et **Maj**+**F8**|
-|Permuter entre la fenêtre de l'éditeur de code et la fenêtre de définition|**Esc De décalage**+**Esc**|
+|Permuter entre la fenêtre de l'éditeur de code et la fenêtre de définition|**MAJ** + **Echap**|
 
 > [!NOTE]
 > Pour modifier le code dans une fenêtre **Aperçu de définition**, vous pouvez utiliser les mêmes raccourcis clavier que vous utilisez ailleurs dans Visual Studio.

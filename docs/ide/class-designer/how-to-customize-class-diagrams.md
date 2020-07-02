@@ -1,7 +1,7 @@
 ---
 title: 'Comment : personnaliser des diagrammes de classes (Concepteur de classes)'
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - class diagrams, customizing
 - shapes, removing type from class diagrams
@@ -13,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f4c55204983f9e7a546867621ec21070c8d69645
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 4e8e4665790aa228bb30aac05ea4782cfe4a62f1
+ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75590161"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85770173"
 ---
 # <a name="how-to-customize-class-diagrams"></a>Guide pratique pour personnaliser des diagrammes de classes
 
@@ -29,15 +29,15 @@ Par exemple, vous pouvez ajuster le niveau de zoom d'un diagramme de classes ent
 > [!NOTE]
 > Personnaliser la façon dont les formes apparaissent dans le diagramme ne modifie pas le code sous-jacent pour les types représentés dans le diagramme.
 
-Les sections qui contiennent des membres de type, comme la section **Propriétés** dans une classe, sont appelées compartiments. Vous pouvez masquer ou afficher des compartiments spécifiques et des membres de type.
+Les sections qui contiennent des membres de type, telles que la section **Propriétés** d’une classe, sont appelées compartiments. Vous pouvez masquer ou afficher des compartiments spécifiques et des membres de type.
 
 ## <a name="zoom-in-and-out-of-the-class-diagram"></a>Effectuer un zoom avant et arrière dans le diagramme de classes
 
-1. Ouvrez et sélectionnez un fichier de diagramme de classe dans **Class Designer**.
+1. Ouvrez et sélectionnez un fichier de diagramme de classes dans **Concepteur de classes**.
 
-2. Sur la **barre d’outils Class Designer,** cliquez sur le bouton **Zoom In** ou **Zoom Out** pour modifier le niveau de zoom de la surface du concepteur.
+2. Dans la barre d’outils **Concepteur de classes** , cliquez sur le bouton **Zoom avant** ou **Zoom arrière** pour modifier le niveau de zoom de l’aire du concepteur.
 
-     or
+     ou
 
      Spécifiez une valeur de zoom particulière. Vous pouvez utiliser la liste déroulante **Zoom** ou taper un niveau de zoom valide (la plage valide est comprise entre 10 % et 400 %).
 
@@ -46,7 +46,7 @@ Les sections qui contiennent des membres de type, comme la section **Propriété
 
 ## <a name="customize-grouping-and-sorting-of-type-members"></a>Personnaliser le regroupement et le tri des membres de type
 
-1. Ouvrez et sélectionnez un fichier de diagramme de classe dans **Class Designer**.
+1. Ouvrez et sélectionnez un fichier de diagramme de classes dans **Concepteur de classes**.
 
 2. Cliquez avec le bouton droit sur une zone vide de l’aire de conception et pointez sur **Membres du groupe**.
 
@@ -60,7 +60,7 @@ Les sections qui contiennent des membres de type, comme la section **Propriété
 
 ## <a name="hide-compartments-on-a-type"></a>Masquer des compartiments sur un type
 
-1. Ouvrez et sélectionnez un fichier de diagramme de classe dans le **concepteur de classe**.
+1. Ouvrez et sélectionnez un fichier de diagramme de classes dans le **Concepteur de classes**.
 
 2. Cliquez avec le bouton droit sur la catégorie de membre dans le type que vous souhaitez personnaliser (par exemple, sélectionnez le nœud **Méthodes** dans une classe).
 
@@ -70,7 +70,7 @@ Les sections qui contiennent des membres de type, comme la section **Propriété
 
 ## <a name="hide-individual-members-on-a-type"></a>Masquer des membres spécifiques sur un type
 
-1. Ouvrez et sélectionnez un fichier de diagramme de classe dans **Class Designer**.
+1. Ouvrez et sélectionnez un fichier de diagramme de classes dans **Concepteur de classes**.
 
 2. Cliquez avec le bouton droit sur le membre dans le type que vous souhaitez masquer.
 
@@ -80,7 +80,7 @@ Les sections qui contiennent des membres de type, comme la section **Propriété
 
 ## <a name="show-hidden-compartments-and-members-on-a-type"></a>Afficher des compartiments et des membres masqués sur un type
 
-1. Ouvrez et sélectionnez un fichier de diagramme de classe dans **Class Designer**.
+1. Ouvrez et sélectionnez un fichier de diagramme de classes dans **Concepteur de classes**.
 
 2. Cliquez avec le bouton droit sur le nom du type avec le compartiment masqué.
 
@@ -90,7 +90,7 @@ Les sections qui contiennent des membres de type, comme la section **Propriété
 
 ## <a name="hide-relationships"></a>Masquer les relations
 
-1. Ouvrez et sélectionnez un fichier de diagramme de classe dans **Class Designer**.
+1. Ouvrez et sélectionnez un fichier de diagramme de classes dans **Concepteur de classes**.
 
 2. Cliquez avec le bouton droit sur la ligne d'association ou d'héritage que vous souhaitez masquer.
 
@@ -102,7 +102,7 @@ Les sections qui contiennent des membres de type, comme la section **Propriété
 
 ## <a name="show-hidden-relationships"></a>Afficher les relations masquées
 
-1. Ouvrez et sélectionnez un fichier de diagramme de classe dans **Class Designer**.
+1. Ouvrez et sélectionnez un fichier de diagramme de classes dans **Concepteur de classes**.
 
 2. Cliquez avec le bouton droit sur le type avec l'association ou l'héritage masqué.
 
@@ -129,4 +129,4 @@ Vous pouvez supprimer une forme de type dans le diagramme de classes sans affect
 
 - [Guide pratique pour changer la notation entre les membres et les associations](how-to-change-between-member-notation-and-association-notation.md)
 - [Guide pratique pour afficher les types existants](how-to-view-existing-types.md)
-- [Types et relations d’affichage](designing-and-viewing-classes-and-types.md)
+- [Affichage des types et des relations](designing-and-viewing-classes-and-types.md)

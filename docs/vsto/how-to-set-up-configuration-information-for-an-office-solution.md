@@ -1,7 +1,7 @@
 ---
-title: Configurer les informations de configuration pour une solution Office
+title: Configurer les informations de configuration d’une solution Office
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -13,15 +13,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c477068b3aee3325acae0887e11da908d6c33a85
-ms.sourcegitcommit: 7eb2fb21805d92f085126f3a820ac274f2216b4e
+ms.openlocfilehash: 8a0868019247e20b9154690469d4c291f1f8e0d6
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/22/2019
-ms.locfileid: "67328900"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85545806"
 ---
-# <a name="how-to-set-up-configuration-information-for-an-office-solution"></a>Procédure : Configurer les informations de configuration pour une solution Office
-  Vous pouvez utiliser des fichiers de configuration pour configurer les paramètres qui sont spécifiques à vos solutions Office. Vous pouvez spécifier des paramètres tels que la stratégie de liaison d’assembly, les objets de communication à distance, paramètres de débogage et trace.
+# <a name="how-to-set-up-configuration-information-for-an-office-solution"></a>Comment : configurer les informations de configuration d’une solution Office
+  Vous pouvez utiliser des fichiers de configuration pour configurer des paramètres spécifiques à vos solutions Office. Vous pouvez spécifier des paramètres tels que la stratégie de liaison d’assembly, les objets de communication à distance, le débogage et les paramètres de trace.
 
  [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]
 
@@ -31,19 +31,19 @@ ms.locfileid: "67328900"
 
 1. Dans le menu **Projet** , cliquez sur **Ajouter un nouvel élément**.
 
-2. Dans le **catégories** volet, cliquez sur **général**.
+2. Dans le volet **catégories** , cliquez sur **général**.
 
-3. Dans le **modèles** volet, sélectionnez **fichier de Configuration d’Application**.
+3. Dans le volet **modèles** , sélectionnez **fichier de configuration**de l’application.
 
-4. Dans le **nom** , tapez le même nom que l’assembly ainsi que l’extension *.config*. Par exemple, un fichier de configuration pour un assembly de projet Excel appelé *ExcelWorkbook1.dll* serait nommé *ExcelWorkbook1.dll.config*.
+4. Dans la zone **nom** , tapez le même nom que l’assembly et l’extension *. config*. Par exemple, un fichier de configuration pour un assembly de projet Excel appelé *ExcelWorkbook1.dll* serait nommé *ExcelWorkbook1.dll.config*.
 
 5. Cliquez sur **Ajouter**.
 
-6. Créez votre fichier de configuration selon le schéma de fichier de configuration application. Pour plus d’informations, consultez [schéma de fichier de Configuration pour le .NET Framework](/dotnet/framework/configure-apps/file-schema/index).
+6. Créez votre fichier de configuration selon le schéma du fichier de configuration de l’application. Pour plus d’informations, consultez [schéma du fichier de configuration pour le .NET Framework](/dotnet/framework/configure-apps/file-schema/index).
 
-   Il n’existe aucune considération particulière pour l’utilisation de fichiers de configuration avec les projets Office.
+   Il n’existe aucune considération particulière pour l’utilisation de fichiers de configuration avec des projets Office.
 
 ## <a name="see-also"></a>Voir aussi
-- [Schéma de fichier de configuration pour le .NET Framework](/dotnet/framework/configure-apps/file-schema/index)
+- [Schéma du fichier de configuration pour le .NET Framework](/dotnet/framework/configure-apps/file-schema/index)
 - [Concevoir et créer des solutions Office](../vsto/designing-and-creating-office-solutions.md)
 - [Déployer une solution Office](../vsto/deploying-an-office-solution.md)

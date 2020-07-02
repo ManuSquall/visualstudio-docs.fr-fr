@@ -1,7 +1,7 @@
 ---
-title: 'Procédure : Créer des classeurs par programmation'
+title: 'Comment : créer des classeurs par programmation'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -13,14 +13,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 030bc801399ddcc73f145c0b45ca065c9a9ecc7a
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: 6a23f4b089d580d482193d278f22e4990d343097
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71251874"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85545975"
 ---
-# <a name="how-to-programmatically-create-new-workbooks"></a>Procédure : Créer des classeurs par programmation
+# <a name="how-to-programmatically-create-new-workbooks"></a>Comment : créer des classeurs par programmation
   Quand vous créez un classeur par programmation, il correspond à un objet <xref:Microsoft.Office.Interop.Excel.Workbook> natif et non pas à un élément hôte <xref:Microsoft.Office.Tools.Excel.Workbook>.
 
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]
@@ -41,9 +41,9 @@ ms.locfileid: "71251874"
 - [Étendre des documents Word et des classeurs Excel dans des compléments VSTO au moment de l’exécution](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)
 - [Ajouter des contrôles aux documents Office au moment de l’exécution](../vsto/adding-controls-to-office-documents-at-run-time.md)
 - [Utiliser des classeurs](../vsto/working-with-workbooks.md)
-- [Guide pratique pour Ouvrir des classeurs par programmation](../vsto/how-to-programmatically-open-workbooks.md)
-- [Guide pratique pour Enregistrer des classeurs par programmation](../vsto/how-to-programmatically-save-workbooks.md)
-- [Guide pratique pour Fermer des classeurs par programmation](../vsto/how-to-programmatically-close-workbooks.md)
+- [Comment : ouvrir des classeurs par programmation](../vsto/how-to-programmatically-open-workbooks.md)
+- [Comment : enregistrer des classeurs par programmation](../vsto/how-to-programmatically-save-workbooks.md)
+- [Comment : fermer des classeurs par programmation](../vsto/how-to-programmatically-close-workbooks.md)
 - [Limitations de programmation des éléments hôtes et des contrôles hôtes](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)
 - [Paramètres facultatifs dans les solutions Office](../vsto/optional-parameters-in-office-solutions.md)
 - [Vue d’ensemble des éléments hôtes et des contrôles hôtes](../vsto/host-items-and-host-controls-overview.md)
