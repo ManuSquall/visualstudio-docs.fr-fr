@@ -1,8 +1,8 @@
 ---
-title: ProjectItem Element (Visual Studio Item Templates) Microsoft Docs
+title: ProjectItem, élément (modèles d’élément Visual Studio) | Microsoft Docs
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/vstemplate/2005#ProjectItem
 helpviewer_keywords:
@@ -14,22 +14,23 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6826440ed12e90f1ffced63dfef45bb3d86177ac
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.openlocfilehash: 885d0fbb50204f23a30fa43c1ffad45c9d67f829
+ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2020
-ms.locfileid: "80701872"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85770719"
 ---
-# <a name="projectitem-element-visual-studio-item-templates"></a>Élément ProjectItem (modèles d’objets Visual Studio)
+# <a name="projectitem-element-visual-studio-item-templates"></a>ProjectItem, élément (modèles d’élément Visual Studio)
 Spécifie un fichier qui est inclus dans le modèle d’élément.
 
 > [!NOTE]
-> L’élément `ProjectItem` accepte différents attributs selon que le modèle est pour un projet ou un élément. Ce sujet `ProjectItem` explique l’élément pour l’élément. Pour une explication `ProjectItem` de l’élément pour les modèles de projet, voir [l’élément ProjectItem (modèles de projets Visual Studio)](../extensibility/projectitem-element-visual-studio-project-templates.md).
+> L' `ProjectItem` élément accepte des attributs différents selon que le modèle est destiné à un projet ou à un élément. Cette rubrique explique l' `ProjectItem` élément pour l’élément. Pour obtenir une explication de l' `ProjectItem` élément pour les modèles de projet, consultez [ProjectItem, élément (modèles de projet Visual Studio)](../extensibility/projectitem-element-visual-studio-project-templates.md).
 
- \<VSTemplate> \<TemplateContent> \<ProjectItem>
+ \<VSTemplate> \<TemplateContent>
+ \<ProjectItem>
 
-## <a name="syntax"></a>Syntaxe
+## <a name="syntax"></a>Syntax
 
 ```
 <ProjectItem
@@ -49,11 +50,11 @@ Spécifie un fichier qui est inclus dans le modèle d’élément.
 
 | Attribut | Description |
 |---------------------| - |
-| `SubType` | Attribut facultatif.<br /><br /> Spécifie le sous-type d’un élément dans un modèle d’élément multi-fichiers. Cette valeur est utilisée pour [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] déterminer l’éditeur qui utilisera pour ouvrir l’article. |
-| `CustomTool` | Attribut facultatif.<br /><br /> Définit l’élément CustomTool pour l’élément dans le fichier du projet. |
-| `ItemType` | Attribut facultatif.<br /><br /> Définit l’itemType pour l’élément dans le fichier du projet. |
-| `ReplaceParameters` | Attribut facultatif.<br /><br /> Une valeur Boolean qui précise si l’élément a des valeurs de paramètres qui doivent être remplacées lorsqu’un projet est créé à partir du modèle. La valeur par défaut est `false`. |
-| `TargetFileName` | Attribut facultatif.<br /><br /> Spécifie le nom de l’élément qui est créé à partir du modèle. Cet attribut est utile pour utiliser le remplacement des paramètres pour créer un nom d’élément. |
+| `SubType` | Attribut facultatif.<br /><br /> Spécifie le sous-type d’un élément dans un modèle d’élément multifichier. Cette valeur est utilisée pour déterminer l’éditeur qui [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] sera utilisé pour ouvrir l’élément. |
+| `CustomTool` | Attribut facultatif.<br /><br /> Définit le CustomTool pour l’élément dans le fichier projet. |
+| `ItemType` | Attribut facultatif.<br /><br /> Définit le ItemType pour l’élément dans le fichier projet. |
+| `ReplaceParameters` | Attribut facultatif.<br /><br /> Valeur booléenne qui spécifie si l’élément a des valeurs de paramètres qui doivent être remplacées lors de la création d’un projet à partir du modèle. La valeur par défaut est `false`. |
+| `TargetFileName` | Attribut facultatif.<br /><br /> Spécifie le nom de l’élément créé à partir du modèle. Cet attribut est utile pour l’utilisation du remplacement de paramètre pour créer un nom d’élément. |
 
 ### <a name="child-elements"></a>Éléments enfants
  Aucun.
@@ -67,21 +68,21 @@ Spécifie un fichier qui est inclus dans le modèle d’élément.
 ## <a name="text-value"></a>Valeur texte
  Une valeur texte est requise.
 
- Un `string` qui représente le nom d’un fichier dans le fichier *.zip* modèle.
+ `string`Qui représente le nom d’un fichier dans le fichier *. zip* du modèle.
 
-## <a name="remarks"></a>Notes
- `ProjectItem`est un enfant `TemplateContent`optionnel de .
+## <a name="remarks"></a>Remarques
+ `ProjectItem`est un enfant facultatif de `TemplateContent` .
 
- L’attribut `TargetFileName` peut être utilisé pour renommer les fichiers avec des paramètres. Par exemple, si le fichier *MyFile.vb* existe dans l’annuaire racine du fichier *.zip* modèle, mais vous voulez que le fichier soit nommé en fonction du nom de fichier fourni par l’utilisateur dans la boîte de dialogue **Add New Item,** vous utiliseriez le XML suivant :
+ L' `TargetFileName` attribut peut être utilisé pour renommer des fichiers avec des paramètres. Par exemple, si le fichier *MyFile. vb* existe dans le répertoire racine du fichier *. zip* du modèle, mais que vous souhaitez que le fichier soit nommé en fonction du nom de fichier fourni par l’utilisateur dans la boîte de dialogue **Ajouter un nouvel élément** , utilisez le code XML suivant :
 
 ```xml
 <ProjectItem TargetFileName="$fileinputname$.vb">MyFile.vb</ProjectItem>
 ```
 
- Lorsqu’un élément est créé à partir de ce modèle, le nom du fichier est basé sur le nom que l’utilisateur a inscrit dans la boîte de dialogue **Add New Item.** Ceci est utile lors de la création de modèles d’éléments multi-fichiers. Pour plus d’informations, voir [Comment : Créer des modèles d’éléments multi-fichiers](../ide/how-to-create-multi-file-item-templates.md) et des paramètres [Template](../ide/template-parameters.md).
+ Lorsqu’un élément est créé à partir de ce modèle, le nom de fichier est basé sur le nom que l’utilisateur a entré dans la boîte de dialogue **Ajouter un nouvel élément** . Cela est utile lors de la création de modèles d’élément multifichier. Pour plus d’informations, consultez [Comment : créer des modèles d’élément multifichier](../ide/how-to-create-multi-file-item-templates.md) et des [paramètres de modèle](../ide/template-parameters.md).
 
 ## <a name="example"></a>Exemple
- L’exemple suivant illustre les métadonnées du [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] modèle d’élément standard pour une classe.
+ L’exemple suivant illustre les métadonnées pour le modèle d’élément standard d’une [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] classe.
 
 ```
 <VSTemplate Type="Item" Version="3.0.0"
@@ -100,7 +101,7 @@ Spécifie un fichier qui est inclus dans le modèle d’élément.
 ```
 
 ## <a name="see-also"></a>Voir aussi
-- [Référence de schéma de modèle de studio visuel](../extensibility/visual-studio-template-schema-reference.md)
-- [Création de modèles de projets et d’objets](../ide/creating-project-and-item-templates.md)
+- [Référence du schéma de modèle Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
+- [Création de modèles de projet et d’élément](../ide/creating-project-and-item-templates.md)
 - [Guide pratique pour créer des modèles d’élément multifichiers](../ide/how-to-create-multi-file-item-templates.md)
 - [Paramètres de modèle](../ide/template-parameters.md)

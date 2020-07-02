@@ -3,7 +3,7 @@ title: L’utilisation d’un mot clé pour un identificateur n’est pas valide
 ms.date: 01/18/2017
 ms.prod: visual-studio-windows
 ms.technology: vs-javascript
-ms.topic: reference
+ms.topic: error-reference
 f1_keywords:
 - VS.WebClient.Help.SCRIPT1048
 dev_langs:
@@ -14,16 +14,16 @@ ms.assetid: 04951b3b-a8b5-4d36-94f8-d2daee1ce0f8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d4de3dd669dfb54fc01704b03989fa90d4412cfe
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5518c865ba1d0c7b1d1f4938983dd9b3278e6557
+ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63006180"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85816037"
 ---
 # <a name="the-use-of-a-keyword-for-an-identifier-is-invalid"></a>L'utilisation d'un mot clé pour un identificateur n'est pas valide
-1048: L'utilisation d'un mot clé pour un identificateur n'est pas valide  
+1048 : l’utilisation d’un mot clé pour un identificateur n’est pas valide  
   
- Vous ne pouvez pas utiliser un mot clé en tant que le nom d’une variable, fonction ou tout autre identificateur défini par l’utilisateur.  
+ Vous ne pouvez pas utiliser un mot clé comme nom d’une variable, d’une fonction ou d’un autre identificateur défini par l’utilisateur.  
   
- Pour plus d’informations sur les mots clés, consultez [mots réservés JavaScript](../../javascript/reference/javascript-reserved-words.md) et [des mots réservés JavaScript futur](../../javascript/reference/javascript-future-reserved-words.md).
+ Pour plus d’informations sur les mots clés, consultez mots [réservés JavaScript](../../javascript/reference/javascript-reserved-words.md) et [Mots réservés JavaScript futurs](../../javascript/reference/javascript-future-reserved-words.md).

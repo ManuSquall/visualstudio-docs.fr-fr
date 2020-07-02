@@ -3,7 +3,7 @@ title: Vue d’ensemble de Visual Studio
 titleSuffix: ''
 ms.date: 03/19/2019
 ms.technology: vs-ide-general
-ms.topic: conceptual
+ms.topic: overview
 ms.custom: vs-get-started
 author: TerryGLee
 f1_keywords:
@@ -13,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3707e06aa41c4f232a5525ca4422f3941fbe2d1a
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 5790d652ad98c684786efaa39a1fd23948d3b36e
+ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75589355"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85770881"
 ---
 # <a name="welcome-to-the-visual-studio-ide"></a>Bienvenue dans l’IDE Visual Studio
 
@@ -34,7 +34,7 @@ Explorez davantage Visual Studio en suivant l’un de ces articles d’introduct
 
 Si vous êtes prêt à aller plus loin dans le codage, l’un des guides de démarrage rapide spécifiques au langage est une bonne prochaine étape :
 
-- [Utilisez Visual Studio pour créer votre première application web Python](../ide/quickstart-python.md)
+- [Utiliser Visual Studio pour créer votre première application Web python](../ide/quickstart-python.md)
 
 - [Utiliser Visual Studio pour créer votre première application web C#](../ide/quickstart-aspnet-core.md)
 
@@ -42,7 +42,7 @@ Si vous êtes prêt à aller plus loin dans le codage, l’un des guides de dém
 
 - [Utiliser Visual Studio pour créer votre première application Node.js](../ide/quickstart-nodejs.md)
 
-- [Utilisez Visual Studio pour créer votre première application de console CMD](/cpp/get-started/tutorial-console-cpp)
+- [Utiliser Visual Studio pour créer votre première application console C++](/cpp/get-started/tutorial-console-cpp)
 
 ## <a name="see-also"></a>Voir aussi
 

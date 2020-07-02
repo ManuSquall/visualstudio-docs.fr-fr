@@ -1,7 +1,7 @@
 ---
 title: Guide pratique pour créer un type Nullable (Concepteur de classes)
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - nullable types, Class Designer
 - Class Designer [Visual Studio], nullable types
@@ -14,18 +14,18 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 5be8b553dfead4b8c05f29bbd18c16fcef847130
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: ad371f987ab7ff0e50dc7d2fe4effeba5205e74e
+ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75592228"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85770986"
 ---
 # <a name="how-to-create-a-nullable-type-in-class-designer"></a>Guide pratique pour créer un type Nullable dans le Concepteur de classes
 
 Certains types valeur n’ont pas, ou n’ont pas besoin d’avoir, systématiquement une valeur définie. Il s’agit d’une pratique courante dans les bases de données, où certains champs peuvent ne se voir assigner aucune valeur. Par exemple, vous pouvez assigner une valeur null à un champ de base de données, qu’il conservera jusqu’à ce qu’une valeur lui soit affectée.
 
-Un *type Nullable* est un type de valeur que vous étendez afin qu’il accepte la plage ordinaire de valeurs de ce type, ainsi qu’une valeur null. Par exemple, un type Nullable `Int32`, également appelé Nullable\<Int32>, peut se voir assigner n’importe quelle valeur entre -2147483648 et 2147483647, ou une valeur null. Un type Nullable\<bool> peut se voir assigner les valeurs `True`, `False` ou null (aucune valeur).
+Un *type Nullable* est un type de valeur que vous étendez afin qu’il accepte la plage ordinaire de valeurs de ce type, ainsi qu’une valeur null. Par exemple, un Nullable de `Int32` , également désigné comme Nullable \<Int32> , peut se voir attribuer n’importe quelle valeur comprise entre-2147483648 et 2147483647, ou une valeur NULL peut lui être assignée. Une \<bool> valeur NULL peut être assignée aux valeurs `True` , `False` ou null (aucune valeur).
 
 Les types Nullable sont des instances de la structure <xref:System.Nullable%601>. Chaque instance d’un type Nullable a deux propriétés publiques en lecture seule, `HasValue` et `Value` :
 
@@ -88,7 +88,7 @@ Pour plus d’informations sur les types Nullable dans C#, consultez [Types Null
 ## <a name="see-also"></a>Voir aussi
 
 - <xref:System.Nullable%601>
-- [Types nuls](/dotnet/csharp/programming-guide/nullable-types/index)
+- [Types Nullable](/dotnet/csharp/programming-guide/nullable-types/index)
 - [Utilisation de types Nullable](/dotnet/csharp/programming-guide/nullable-types/using-nullable-types)
 - [Comment : identifier un type Nullable](/dotnet/csharp/programming-guide/nullable-types/how-to-identify-a-nullable-type)
-- [Types de valeur nuls](/dotnet/visual-basic/programming-guide/language-features/data-types/nullable-value-types)
+- [Types valeur Nullable](/dotnet/visual-basic/programming-guide/language-features/data-types/nullable-value-types)

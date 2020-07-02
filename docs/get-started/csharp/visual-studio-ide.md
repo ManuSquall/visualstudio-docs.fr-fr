@@ -3,7 +3,7 @@ title: Vue d’ensemble pour les développeurs C#
 ms.date: 03/19/2019
 ms.technology: vs-ide-general
 ms.custom: get-started
-ms.topic: conceptual
+ms.topic: overview
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
@@ -11,12 +11,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: da164414cfcca9631eaf59b5e2f6044e70ac9cc5
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: ade9dbfb17aa4330b572ac96080117562498a338
+ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79301873"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85771127"
 ---
 # <a name="welcome-to-the-visual-studio-ide--c"></a>Bienvenue dans l’IDE Visual Studio | C\#
 
@@ -26,7 +26,7 @@ ms.locfileid: "79301873"
 
 Nous allons configurer Visual Studio pour utiliser les paramètres d’environnement adaptés aux développeurs C#.
 
-1. Sur la barre de menu, choisissez **Outils** > **Import and Export Settings**.
+1. Dans la barre de menus, choisissez **Outils**  >  **importation et exportation de paramètres**.
 
 2. Dans l’Assistant **Importation et exportation de paramètres**, sélectionnez **Réinitialiser tous les paramètres** dans la première page, puis **Suivant**.
 

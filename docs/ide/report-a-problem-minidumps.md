@@ -1,7 +1,7 @@
 ---
 title: Créer des minidumps avec toutes les piles des appels
 ms.date: 06/27/2019
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - minidumps for Visual Studio issues"
 author: corob-msft
@@ -14,12 +14,12 @@ dev_langs:
 ms.workload:
 - multiple
 ms.description: Collect minidumps to send to Microsoft for help with troubleshooting issues with Visual Studio
-ms.openlocfilehash: 7b3be91e5d0d2e1f14724dd647670fc4885bcd4d
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 8af2ef642a1c2422d470c716e14dca7d2e0168eb
+ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77271190"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85770847"
 ---
 # <a name="create-minidumps-for-a-visual-studio-process-with-all-call-stacks"></a>Créer des minidumps pour un processus Visual Studio avec toutes les piles des appels
 
@@ -28,19 +28,19 @@ Dans certains cas, Microsoft peut demander un minidump d’un processus Visual S
 ## <a name="create-the-minidump-file"></a>Créer le fichier de minividage
 
 1. Ouvrez une nouvelle instance de Visual Studio.
-1. Parmi le menu principal, choisissez **Debug** > **Attach To Process**.
+1. Dans le menu principal, choisissez **Déboguer**  >  **attacher au processus**.
 1. Cochez les cases correspondantes **Managé** et **Natif** et appuyez sur **Joindre**.
 
    ![Attacher au processus](../ide/media/attach-to-process.png)
 
 1. Sélectionnez l’autre instance de Visual Studio à joindre dans la liste des processus en cours.
-1. Parmi le menu principal, choisissez **Debug** > **Break All**.
-1. Parmi le menu principal, choisissez **Debug** > **Save Dump As**.
+1. Dans le menu principal, choisissez **Déboguer**  >  **arrêter tout**.
+1. Dans le menu principal, choisissez **Déboguer**  >  **enregistrer le vidage sous**.
 
 ## <a name="get-the-call-stacks-from-the-minidump"></a>Obtenir les piles des appels du minidump
 
 1. Ouvrez le fichier de vidage dans Visual Studio.
-1. Rendez-vous sur **Tools** > **Options** > **Debugging** > **Symbols** et assurez-vous que microsoft Symbol Servers est vérifié dans les **emplacements** du **fichier Symbol (.pdb).**
+1. Accédez à **Outils**  >  **options**de  >  **débogage**  >  **symboles** et assurez-vous que les **serveurs de symboles Microsoft** sont vérifiés dans les **emplacements du fichier de symboles (. pdb)**.
 1. Ouvrir la fenêtre **Commande** (**Afficher** > **Autre fenêtres** > **fenêtre Commande**)
 1. Saisissez ‘~*k’. La fenêtre affiche toutes les piles des appels des conversations.
 1. Copiez tout le texte de la fenêtre Commande et enregistrez le dans un fichier texte.

@@ -1,19 +1,19 @@
 ---
 title: Examiner des nœuds à l’aide de la vue de modèle de contenu dans le concepteur de schémas XML
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 ms.assetid: c42ddac8-b0e3-48d6-9832-112a19d6c104
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f5a7e6e311a4fbd02973edf94c6eb117f69d6cea
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 81bf6294aeac9a23168bf9cf9aaec26efbfc6c1f
+ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75592709"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85815979"
 ---
 # <a name="how-to-examine-the-content-model-of-nodes-using-the-content-model-view"></a>Comment : examiner le modèle de contenu des nœuds à l’aide de la vue de modèle de contenu
 
@@ -27,9 +27,9 @@ Cette rubrique explique comment explorer vos nœuds à l’aide de la [vue de mo
 
 3. Copiez l’exemple de code XML à partir de exemple de schéma [XML : schéma de bon de commande](../xml-tools/sample-xsd-file-purchase-order-schema.md) , puis collez-le pour remplacer le code qui a été ajouté par défaut au nouveau fichier XSD.
 
-4. Sélectionnez l’élément `purchaseOrder` dans l’Explorateur de schémas en cliquant avec le bouton droit sur l’élément `purchaseOrder` dans l’éditeur XML, puis en sélectionnant **afficher dans l’Explorateur XML**.
+4. Sélectionnez l' `purchaseOrder` élément dans l’Explorateur de schémas en cliquant avec le bouton droit sur l' `purchaseOrder` élément dans l’éditeur XML et en sélectionnant **afficher dans l’Explorateur XML**.
 
-5. Cliquez avec le bouton droit sur le `purchaseOrder` dans l’Explorateur XML et sélectionnez **afficher en vue de modèle de contenu**.
+5. Cliquez avec le bouton droit sur `purchaseOrder` dans l’Explorateur XML et sélectionnez **afficher dans la vue de modèle de contenu**.
 
      La vue de modèle de contenu affiche l'élément `purchaseOrder` sur son aire de conception.
 
@@ -41,4 +41,4 @@ Cette rubrique explique comment explorer vos nœuds à l’aide de la [vue de mo
 
 8. Cliquez sur le bouton **afficher la documentation** dans la barre d’outils XSD pour activer ou désactiver la documentation. Vous pouvez également cliquer avec le bouton droit sur l'aire de conception pour basculer vers la documentation.
 
-9. Cliquez avec le bouton droit sur le nœud `purchaseOrder`, puis sélectionnez **générer un exemple de code XML** pour afficher le document de l’instance XML.
+9. Cliquez avec le bouton droit sur le `purchaseOrder` nœud, puis sélectionnez **générer un exemple de code XML** pour afficher le document de l’instance XML.

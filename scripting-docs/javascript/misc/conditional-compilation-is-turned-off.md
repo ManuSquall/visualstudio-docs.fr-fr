@@ -3,7 +3,7 @@ title: La compilation conditionnelle est désactivée | Microsoft Docs
 ms.date: 01/18/2017
 ms.prod: visual-studio-windows
 ms.technology: vs-javascript
-ms.topic: reference
+ms.topic: error-reference
 f1_keywords:
 - VS.WebClient.Help.SCRIPT1030
 dev_langs:
@@ -14,15 +14,15 @@ ms.assetid: 59a030b0-a6c6-47f2-b90e-c0ed204d5116
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 56621d6f7fcc195a4ece7654adeafd1096c37e8b
-ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.openlocfilehash: da272529768f3227ce6e0ee3e0ebbf086140dd15
+ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72572932"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85816122"
 ---
 # <a name="conditional-compilation-is-turned-off"></a>La compilation conditionnelle est désactivée
-Vous avez tenté d’utiliser une variable de compilation conditionnelle sans activer d’abord la compilation conditionnelle sur. L’activation de la compilation conditionnelle indique au compilateur [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] d’interpréter les identificateurs commençant par @ comme des variables de compilation conditionnelles. Pour ce faire, commencez votre code conditionnel par l’instruction suivante :  
+Vous avez tenté d’utiliser une variable de compilation conditionnelle sans activer d’abord la compilation conditionnelle sur. L’activation de la compilation conditionnelle indique au [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] compilateur d’interpréter les identificateurs commençant par @ comme des variables de compilation conditionnelles. Pour ce faire, commencez votre code conditionnel par l’instruction suivante :  
   
 ```js
 /*@cc_on @*/  
@@ -37,8 +37,8 @@ Vous avez tenté d’utiliser une variable de compilation conditionnelle sans ac
     ```  
   
 ## <a name="see-also"></a>Voir aussi  
-   de [compilation conditionnelle](../../javascript/advanced/conditional-compilation-javascript.md)  
+ [Compilation conditionnelle](../../javascript/advanced/conditional-compilation-javascript.md)   
  [Variables de compilation conditionnelle](../../javascript/advanced/conditional-compilation-variables-javascript.md)   
- [instruction@cc_on](../../javascript/reference/at-cc-on-statement-javascript.md)   
- [instruction@if](../../javascript/reference/at-if-statement-javascript.md)   
- [@set Instruction](../../javascript/reference/at-set-statement-javascript.md)
+ [@cc_onGestion](../../javascript/reference/at-cc-on-statement-javascript.md)   
+ [@ifGestion](../../javascript/reference/at-if-statement-javascript.md)   
+ [@setGestion](../../javascript/reference/at-set-statement-javascript.md)

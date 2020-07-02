@@ -1,7 +1,7 @@
 ---
 title: Développement d'applications avec Workflow Designer
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - DefaultWorkflowDesigner
 - DefaultWorkflowDesigner.UI
@@ -16,32 +16,32 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 51c38a16ddbdca376dbc9788ca49783c7956d101
-ms.sourcegitcommit: 95f26af1da51d4c83ae78adcb7372b32364d8a2b
+ms.openlocfilehash: 9f1b7aa37794618cd051cfdaaacb9359087cc664
+ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79301726"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85814718"
 ---
 # <a name="develop-apps-with-the-workflow-designer"></a>Développer des applications avec le Concepteur de flux de travail
 
-Le Workflow Designer est un concepteur visuel et débogage pour la construction graphique et le débogage des applications de [windows Workflow Foundation](/dotnet/framework/windows-workflow-foundation/index) (WF) dans Visual Studio. Il vous permet de composer une application composite de flux de travail, une bibliothèque d’activités ou un service de la Fondation Windows Communication (WCF) grâce à l’utilisation de modèles et de concepteurs d’activités.
+Le Concepteur de flux de travail est un concepteur visuel et un débogueur pour la construction graphique et le débogage des applications [Windows Workflow Foundation](/dotnet/framework/windows-workflow-foundation/index) (WF) dans Visual Studio. Elle vous permet de composer une application de workflow composite, une bibliothèque d’activités ou un service Windows Communication Foundation (WCF) à l’aide de modèles et de concepteurs d’activités.
 
 ## <a name="install-windows-workflow-foundation"></a>Installer Windows Workflow Foundation
 
-Pour utiliser les modèles de projet Workflow dans Visual Studio, installez d’abord le composant **Windows Workflow Foundation.**
+Pour utiliser des modèles de projet de workflow dans Visual Studio, installez d’abord le composant **Windows Workflow Foundation** .
 
-1. Installateur de studio visuel ouvert. Un moyen rapide de l’ouvrir est en sélectionnant **Tools** > **Get Tools and Features** dans Visual Studio.
+1. Ouvrez Visual Studio Installer. Pour l’ouvrir rapidement, vous pouvez sélectionner **Outils**  >  **obtenir des outils et des fonctionnalités** dans Visual Studio.
 
-1. Dans Visual Studio Installateur, sélectionnez l’onglet **Composants Individuels.**
+1. Dans Visual Studio Installer, sélectionnez l’onglet **composants individuels** .
 
-1. Faites défiler vers le bas à la catégorie **des activités de développement,** puis sélectionnez le composant **Windows Workflow Foundation.**
+1. Faites défiler jusqu’à la catégorie **activités de développement** , puis sélectionnez le composant **Windows Workflow Foundation** .
 
-   ![Composant de la Fondation Windows Workflow pour Visual Studio](media/windows-workflow-foundation-component.png)
+   ![Composant Windows Workflow Foundation pour Visual Studio](media/windows-workflow-foundation-component.png)
 
 1. Sélectionnez **Modifier**.
 
-   Visual Studio installe le composant **Windows Workflow Foundation.**
+   Visual Studio installe le composant **Windows Workflow Foundation** .
 
 ## <a name="see-also"></a>Voir aussi
 

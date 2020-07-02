@@ -1,7 +1,7 @@
 ---
 title: Création et configuration de membres de type (Concepteur de classes)
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - vs.classdetails.method
 - vs.classdetails.property
@@ -29,12 +29,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bfed51812b034d63f250a56548b88f09a98214fe
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 2bb65cc70bfec5e8eafc4a823d24f609166d4327
+ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75590408"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85771054"
 ---
 # <a name="create-and-configure-type-members-in-class-designer"></a>Créer et configurer des membres de type dans le Concepteur de classes
 
@@ -43,11 +43,11 @@ Vous pouvez ajouter ces membres aux types dans un diagramme de classes et config
 |**Type**|**Membres qu’il peut contenir**|
 |--------------| - |
 |Classe|méthode, propriété (pour C# et Visual Basic), champ, événement (pour C# et Visual Basic), constructeur (méthode), destructeur (méthode), constante|
-|Enum|member|
+|Énumération|member|
 |Interface|méthode, propriété, événement (pour C# et Visual Basic)|
 |Classe abstraite|méthode, propriété (pour C# et Visual Basic), champ, événement (pour C# et Visual Basic), constructeur (méthode), destructeur (méthode), constante|
 |Structure (Struct en C#)|méthode, propriété (pour C# et Visual Basic) champ, événement (pour C# et Visual Basic), constructeur (méthode), constante|
-|Déléguer|paramètre|
+|Délégué|paramètre|
 |Module (VB uniquement)|méthode, propriété, champ, événement, constructeur, constante|
 
 > [!NOTE]
@@ -57,7 +57,7 @@ Vous pouvez ajouter ces membres aux types dans un diagramme de classes et config
 
 |Tâche|Contenu de support|
 |----------| - |
-|**Bien démarrer** : avant de créer et de configurer des membres de type, vous devez ouvrir la fenêtre **Détails de classe**.|- [Ouvrez la fenêtre Class Details](creating-and-configuring-type-members.md#open-the-class-details-window)<br />- [Notes d’utilisation des détails de classe](creating-and-configuring-type-members.md#class-details-usage-notes)<br />- [Affichage d’informations lues uniquement](creating-and-configuring-type-members.md#display-of-read-only-information)<br />- [Raccourcis clavier et souris dans le diagramme de classe et la fenêtre de détails de classe](keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window.md)|
+|**Bien démarrer** : avant de créer et de configurer des membres de type, vous devez ouvrir la fenêtre **Détails de classe**.|- [Ouvrir la fenêtre Détails de classe](creating-and-configuring-type-members.md#open-the-class-details-window)<br />- [Remarques sur l’utilisation des détails de classe](creating-and-configuring-type-members.md#class-details-usage-notes)<br />- [Affichage d’informations en lecture seule](creating-and-configuring-type-members.md#display-of-read-only-information)<br />- [Raccourcis clavier et souris dans le diagramme de classes et dans la fenêtre Détails de classe](keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window.md)|
 |**Créer et modifier les membres de type** : vous pouvez créer d’autres membres, modifier des membres existants et ajouter des paramètres à une méthode à l’aide de la fenêtre **Détails de classe**.|- [Créer des membres](creating-and-configuring-type-members.md#create-members)<br />- [Modifier les membres de type](creating-and-configuring-type-members.md#modify-type-members)<br />- [Ajouter des paramètres aux méthodes](creating-and-configuring-type-members.md#add-parameters-to-methods)|
 
 ## <a name="open-the-class-details-window"></a>Ouvrir la fenêtre Détails de classe
@@ -66,7 +66,7 @@ Par défaut, la fenêtre **Détails de classe** s’affiche automatiquement quan
 
 - Cliquez avec le bouton droit sur une classe du diagramme pour afficher un menu contextuel, puis sélectionnez **Détails de classe**.
 
-- Sélectionnez **Voir** > **d’autres** > détails**de classe** Windows de la barre de menu.
+- Sélectionnez **Afficher**  >  d'**autres**  >  **Détails de classe** Windows dans la barre de menus.
 
 ## <a name="create-members"></a>Créer des membres
 
@@ -98,7 +98,7 @@ Vous pouvez créer un membre à l'aide de l'un des outils suivants :
 
      Le type obtient le focus et son contenu est affiché dans la fenêtre **Détails de classe**.
 
-2. Dans la barre d’outils de la fenêtre **Détails de classe**, cliquez sur l’icône supérieure et sélectionnez **Nouveau \<membre>** dans la liste déroulante.
+2. Dans la barre d’outils de la fenêtre **Détails de classe** , cliquez sur l’icône supérieure et sélectionnez **nouveau \<member> ** dans la liste déroulante.
 
      Le curseur se déplace sur le champ **Nom** d’une ligne pour le genre de membre que vous souhaitez ajouter. Par exemple, si vous avez cliqué sur **Nouvelle propriété**, le curseur se déplace sur une nouvelle ligne dans la section **Propriétés** de la fenêtre **Détails de classe**.
 
@@ -114,7 +114,7 @@ Vous pouvez créer un membre à l'aide de l'un des outils suivants :
 
      Le type obtient le focus et son contenu est affiché dans la fenêtre **Détails de classe**.
 
-2. Dans la fenêtre **Détails de classe**, dans la section contenant le genre de membre que vous souhaitez ajouter, cliquez sur **\<ajouter un membre>**. Par exemple, si vous souhaitez ajouter ** \< **un champ, cliquez sur ajouter des>de champ .
+2. Dans la fenêtre **Détails de classe** , dans la section qui contient le genre de membre que vous souhaitez ajouter, cliquez sur **\<add member>** . Par exemple, si vous souhaitez ajouter un champ, cliquez sur **\<add field>** .
 
 3. Tapez le nom du membre que vous voulez créer et appuyez sur Entrée.
 
@@ -139,7 +139,7 @@ Chaque ligne membre affiche les éléments suivants :
 
      Chaque genre de membre est représenté par sa propre icône. Pointez la souris sur l’icône de membre pour afficher la signature du membre. Cliquez sur l'icône de membre ou sur l'espace blanc à gauche de l'icône de membre pour sélectionner la ligne.
 
-- **Member Name**
+- **Nom du membre**
 
      La colonne **Nom** d’une ligne membre affiche le nom du membre. Ce nom est également affiché dans la propriété **Nom** de la fenêtre Propriétés. Utilisez cette cellule pour modifier le nom d'un membre qui dispose d'autorisations en lecture-écriture.
 
@@ -153,9 +153,9 @@ Chaque ligne membre affiche les éléments suivants :
 
      Modifiez le modificateur de visibilité d’un membre en `Public` (`public`), `Private` (`private`), `Friend` (`internal`) `Protected` (`protected`), `Protected Friend` (`protected internal`) ou `Default`.
 
-- **\<ajouter des>membres**
+- **\<add member>**
 
-     La dernière ligne de la fenêtre **Détails de classe** contient le texte **\<ajouter un membre>** dans la cellule **Nom**. Si vous cliquez sur cette cellule, vous pouvez créer un membre. Pour plus d’informations, consultez [Créer des membres](creating-and-configuring-type-members.md#create-members).
+     La dernière ligne de la fenêtre **Détails de classe** contient le texte **\<add member>** dans la cellule **nom** . Si vous cliquez sur cette cellule, vous pouvez créer un membre. Pour plus d’informations, consultez [Créer des membres](creating-and-configuring-type-members.md#create-members).
 
 - **Propriétés du membre dans la fenêtre Propriétés**
 
@@ -186,7 +186,7 @@ Ajoutez des paramètres aux méthodes à l’aide de la fenêtre **Détails de c
 
 Les lignes de paramètres contiennent les éléments suivants :
 
-- **Nom   **
+- **Nom**
 
      La colonne **Nom** d’une ligne de paramètre affiche le nom du paramètre. Ce nom est également affiché dans la propriété **Nom** de la fenêtre Propriétés. Vous pouvez utiliser cette cellule pour modifier le nom d'un paramètre ayant les autorisations en lecture-écriture.
 
@@ -204,11 +204,11 @@ Les lignes de paramètres contiennent les éléments suivants :
 
      La cellule **Résumé** d’une ligne de paramètre permet d’entrer des commentaires de code qui s’affichent dans IntelliSense lors de la saisie du paramètre dans l’éditeur de code.
 
-- **\<ajouter des>de paramètre**
+- **\<add parameter>**
 
      La dernière ligne de paramètres d’un membre contient le texte **<ajouter un paramètre\>** dans la cellule **Nom**. Cliquez sur cette cellule pour créer un nouveau paramètre. Pour plus d’informations, consultez [Pour ajouter un paramètre à une méthode](creating-and-configuring-type-members.md#add-parameters-to-methods).
 
-La fenêtre **Propriétés** affiche les mêmes propriétés de paramètres affichées dans la fenêtre **De détail de classe** : **Nom,** **Type,** **Modificateur,** **Résumé,** ainsi que la propriété **par défaut facultative.** La modification d'une propriété dans un emplacement met à jour la valeur de la propriété de manière globale, y compris l'affichage de sa valeur dans l'autre emplacement.
+La fenêtre **Propriétés** affiche les mêmes propriétés de paramètre que celles affichées dans la fenêtre **Détails de classe** : **nom**, **type**, **modificateur**, **Résumé**, ainsi que la propriété **par défaut facultative** . La modification d'une propriété dans un emplacement met à jour la valeur de la propriété de manière globale, y compris l'affichage de sa valeur dans l'autre emplacement.
 
 > [!NOTE]
 > Pour ajouter un paramètre à un délégué, consultez [Créer des membres](creating-and-configuring-type-members.md#create-members).
@@ -224,9 +224,9 @@ La fenêtre **Propriétés** affiche les mêmes propriétés de paramètres affi
 
 2. Dans la fenêtre **Détails de classe**, développez la ligne de la méthode à laquelle vous souhaitez ajouter un paramètre.
 
-     Une ligne de paramètre en retrait apparaît, ne contenant qu’une paire de parenthèses et les mots ** \<ajoutent le paramètre>.**
+     Une ligne de paramètre en retrait s’affiche, contenant uniquement une paire de parenthèses et les mots ** \<add parameter> .**
 
-3. Cliquez ** \<sur ajouter le paramètre>**, tapez le nom du nouveau paramètre, et appuyez **sur Enter**.
+3. Cliquez sur **\<add parameter>** , tapez le nom du nouveau paramètre, puis appuyez sur **entrée**.
 
      Le nouveau paramètre est ajouté à la méthode et à son code. Il apparaît dans la fenêtre **Détails de classe** et dans la fenêtre Propriétés.
 
@@ -240,9 +240,9 @@ La fenêtre **Propriétés** affiche les mêmes propriétés de paramètres affi
 
 2. Dans la fenêtre **Détails de classe**, développez la ligne de la méthode à laquelle vous souhaitez ajouter un paramètre optionnel.
 
-     Une ligne de paramètre en retrait apparaît, ne contenant qu’une paire de parenthèses et les mots ** \<ajoutent le paramètre>.**
+     Une ligne de paramètre en retrait s’affiche, contenant uniquement une paire de parenthèses et les mots ** \<add parameter> .**
 
-3. Cliquez ** \<sur ajouter le paramètre>**, tapez le nom du nouveau paramètre, et appuyez **sur Enter**.
+3. Cliquez sur **\<add parameter>** , tapez le nom du nouveau paramètre, puis appuyez sur **entrée**.
 
      Le nouveau paramètre est ajouté à la méthode et à son code. Il apparaît dans la fenêtre **Détails de classe** et dans la fenêtre Propriétés.
 

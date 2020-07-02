@@ -3,19 +3,19 @@ title: Utilisation de Visual Studio Tools pour Unity | Microsoft Docs
 ms.custom: ''
 ms.date: 07/03/2018
 ms.technology: vs-unity-tools
-ms.topic: conceptual
+ms.topic: how-to
 ms.assetid: e67ec9a2-a449-413e-8930-9a471bd43a06
 author: therealjohn
 ms.author: johmil
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: d1bca9bed18de822de71ca441387adeaefc65ec3
-ms.sourcegitcommit: ade07bd1cf69b8b494d171ae648cfdd54f7800d3
+ms.openlocfilehash: f65945f28a577201c1308694bb7196d464330dc1
+ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "81649396"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85815160"
 ---
 # <a name="use-visual-studio-tools-for-unity"></a>Utiliser Visual Studio Tools pour Unity
 
@@ -33,7 +33,7 @@ Vous pouvez aussi lancer Visual Studio sans ouvrir de script dans l’éditeur d
 
 Vous pouvez accéder rapidement à la documentation sur les scripts Unity à partir de Visual Studio. Si Visual Studio Tools pour Unity ne trouve pas la documentation de l'API en local, il la recherche en ligne.
 
-- Dans Visual Studio, mettre en évidence ou placer le curseur sur l’API Unity que vous voulez en apprendre davantage, puis appuyez sur **Ctrl**+**Alt**+**M**, **Ctrl**+**H**
+- Dans Visual Studio, mettez en surbrillance ou placez le curseur sur l’API Unity pour laquelle vous souhaitez en savoir plus, puis appuyez sur **CTRL** + **ALT** + **M**, **CTRL** + **H**
 
 ## <a name="intellisense-for-unity-api-messages"></a>IntelliSense pour les messages de l’API Unity
 
@@ -71,7 +71,7 @@ Vous pouvez utiliser l’Assistant MonoBehavior pour afficher la liste de toutes
 
 Pour créer des définitions de méthode MonoBehavior vides avec l’Assistant MonoBehavior :
 
-1. Dans Visual Studio, positionnez le curseur où vous voulez que les méthodes soient insérées, puis appuyez sur **Ctrl**+**Shift**+**M** pour lancer le magicien MonoBehavior.
+1. Dans Visual Studio, placez le curseur à l’endroit où vous souhaitez insérer les méthodes, puis appuyez sur **CTRL** + **MAJ** + **M** pour lancer l’Assistant monobehavior.
 
 2. Dans la fenêtre **Créer des méthodes de script**, cochez la case à côté du nom de chaque méthode que vous voulez ajouter.
 
@@ -91,7 +91,7 @@ Pour créer des définitions de méthode MonoBehavior vides avec l’Assistant M
 
 L’Explorateur de projets Unity affiche tous les fichiers projet et répertoires Unity de la même manière que l’éditeur Unity. Ce n’est pas la même chose que de parcourir les scripts Unity avec l’Explorateur de solutions normal de Visual Studio, qui les organise en projets et une solution générée par Visual Studio.
 
-- Dans le menu principal de Visual Studio, choisissez **Affichage > Explorateur de projets Unity**. Raccourci clavier: **Alt**+**Shift**+**E**
+- Dans le menu principal de Visual Studio, choisissez **Affichage > Explorateur de projets Unity**. Raccourci clavier : **ALT** + **MAJ** + **E**
 
    ![Afficher la fenêtre de l'explorateur de projet Unity.](../cross-platform/media/vstu_view_unity_project_explorer.png "vstu_view_unity_project_explorer")
 
@@ -194,7 +194,7 @@ Notez que le scénario décrit ici suppose que vous disposiez du code source, au
 
    ![Définissez l'infrastructure Unity comme infrastructure cible de la DLL.](../cross-platform/media/vstu_debugging_dll_target_framework.png "vstu_debugging_dll_target_framework")
 
-3. Copiez la DLL dans le dossier Composants de votre projet Unity. Dans Unity, les composants désignent les fichiers regroupés et déployés au même titre que votre application Unity afin de pouvoir être chargés au moment de l'exécution. Étant donné que les LPL sont liés à l’heure de l’exécution, les LPL doivent être déployés comme actifs. Pour que la DLL soit déployée comme composant, l'éditeur Unity requiert que les DLL soient placées dans le dossier Composants de votre projet Unity. Il existe deux façons de procéder :
+3. Copiez la DLL dans le dossier Composants de votre projet Unity. Dans Unity, les composants désignent les fichiers regroupés et déployés au même titre que votre application Unity afin de pouvoir être chargés au moment de l'exécution. Étant donné que les dll sont liées au moment de l’exécution, les dll doivent être déployées en tant que ressources. Pour que la DLL soit déployée comme composant, l'éditeur Unity requiert que les DLL soient placées dans le dossier Composants de votre projet Unity. Il existe deux façons de procéder :
 
    - Modifier les paramètres de génération de votre projet DLL pour inclure une tâche post-génération qui copie les fichiers DLL et PDB résultants de son dossier de sortie vers le dossier **Composants** de votre projet Unity.
 
@@ -212,9 +212,9 @@ Vous pouvez accéder rapidement aux fonctionnalités des outils Unity pour Visua
 
 |Commande|Raccourci|Nom de la commande du raccourci|
 |-------------|--------------|---------------------------|
-|Ouvrir l'Assistant MonoBehavior|**Ctrl**+**Shift**+**M**|**EditorContextMenus.CodeWindow.ImplementMonoBehaviours**|
-|Ouvrir l'Explorateur de projets Unity|**Alt**+**Shift**+**E**|**View.UnityProjectExplorer**|
-|Accéder à la documentation Unity|**Ctrl**+**Alt**+**M, Ctrl**+**H**|**Help.UnityAPIReference**|
-|Attacher au débogueur Unity (lecteur ou éditeur)|**_pas de défaut_**|**Debug.AttachUnityDebugger**|
+|Ouvrir l'Assistant MonoBehavior|**CTRL** + **MAJ** + **M**|**EditorContextMenus.CodeWindow.ImplementMonoBehaviours**|
+|Ouvrir l'Explorateur de projets Unity|**ALT** + **MAJ** + **E**|**View.UnityProjectExplorer**|
+|Accéder à la documentation Unity|**CTRL** + **ALT** + **M, CTRL** + **H**|**Help.UnityAPIReference**|
+|Attacher au débogueur Unity (lecteur ou éditeur)|**_pas de valeur par défaut_**|**Debug.AttachUnityDebugger**|
 
 Vous pouvez modifier les combinaisons de touches de raccourci si vous n'aimez pas la valeur par défaut. Pour plus d’informations sur la modification des combinaisons par défaut, consultez [Identifier et personnaliser les raccourcis clavier dans Visual Studio](../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md).

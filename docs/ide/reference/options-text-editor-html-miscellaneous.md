@@ -5,21 +5,21 @@ ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.HTML.Miscellaneous
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3b100defd8f50b4a487e46eef4183457e724a015
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 8aa26144a7c0a2f7edad58ecfb26e3a7d402a994
+ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "72666182"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85770906"
 ---
 # <a name="options-text-editor-html-web-forms-miscellaneous"></a>Options, Éditeur de texte, HTML (Web Forms), Divers
 
-Utilisez la page options **Divers** pour définir les préférences quant à la façon dont l’éditeur HTML gère les éléments collés dans la page. Pour accéder à cette page, sur la barre de menu, choisissez **Tools** > **Options**, puis développez Text **Editor** > **HTML (Web Forms)** > **Divers**.
+Utilisez la page options **Divers** pour définir les préférences quant à la façon dont l’éditeur HTML gère les éléments collés dans la page. Pour accéder à cette page, dans la barre de menus, choisissez **Outils**  >  **options**, puis développez **éditeur**  >  **de texte html (Web Forms)**  >  **divers**.
 
 ## <a name="miscellaneous-html-options"></a>Options HTML diverses
 
@@ -29,8 +29,8 @@ Utilisez la page options **Divers** pour définir les préférences quant à la 
 
 - **Nécessite ’< ’ pour déclencher la fenêtre de saisie semi-automatique des balises**
 
-   Quand cette case est cochée, la fenêtre de saisie semi-automatique des balises apparaît quand vous tapez le signe inférieur à (« < »).
+   Lorsque cette case à cocher est activée, la fenêtre de saisie semi-automatique des balises s’affiche lorsque vous tapez le caractère inférieur à (« < »).
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Général, Environnement, Options Dialog Box](../../ide/reference/general-environment-options-dialog-box.md)
+- [Général, environnement, boîte de dialogue Options](../../ide/reference/general-environment-options-dialog-box.md)

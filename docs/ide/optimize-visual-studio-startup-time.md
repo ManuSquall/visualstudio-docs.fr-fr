@@ -1,7 +1,7 @@
 ---
 title: Augmenter la vitesse de démarrage
 ms.date: 11/15/2017
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - startup time [Visual Studio]
 - optimizing performance [Visual Studio]
@@ -14,12 +14,12 @@ f1_keywords:
 - vs.performancecenter
 ms.workload:
 - multiple
-ms.openlocfilehash: 4824939b4ef3ed1bc7fa48b2508fc891c984a3c5
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 399bab1b95a7f17166f205902d04a1abec10e6dd
+ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79301866"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85770966"
 ---
 # <a name="optimize-visual-studio-startup-time"></a>Améliorer la vitesse de démarrage de Visual Studio
 
@@ -29,7 +29,7 @@ Visual Studio est conçu pour démarrer aussi rapidement et efficacement que pos
 
 Pour ne pas allonger le temps de démarrage, Visual Studio utilise une approche de chargement _à la demande_ pour charger les extensions. Ce comportement signifie que les extensions ne s’ouvrent pas immédiatement au démarrage de Visual Studio, mais en fonction des besoins. En outre, les fenêtres d’outils restées ouvertes dans une session antérieure de Visual Studio pouvant ralentir la vitesse de démarrage, Visual Studio ouvre les fenêtres d’outils de façon plus intelligente pour ne pas affecter la vitesse de démarrage.
 
-Si Visual Studio détecte un démarrage lent, un message s’affiche pour vous signaler l’extension ou la fenêtre d’outils qui en est la cause. Le message fournit un lien vers la boîte de dialogue **Gérer le niveau de performance de Visual Studio**. Vous pouvez également accéder à cette boîte de dialogue en choisissant **Help** > **Manage Visual Studio Performance** à partir de la barre de menu.
+Si Visual Studio détecte un démarrage lent, un message s’affiche pour vous signaler l’extension ou la fenêtre d’outils qui en est la cause. Le message fournit un lien vers la boîte de dialogue **Gérer le niveau de performance de Visual Studio**. Vous pouvez également accéder à cette boîte de dialogue en choisissant **aide**  >  **gérer les performances de Visual Studio** dans la barre de menus.
 
 ![Fenêtre Gérer le niveau de performance de Visual Studio indiquant « Nous avons constaté que l’extension... ralentit Visual Studio »](../ide/media/vside_perfdialog_popup.png)
 
@@ -45,7 +45,7 @@ La boîte de dialogue répertorie les fenêtres des extensions et outils qui aff
 
 2. Choisissez l’extension que vous voulez désactiver, puis le bouton **Désactiver**.
 
-Vous pouvez toujours ré-activer l’extension pour les sessions futures en utilisant le **gestionnaire d’extension** ou la boîte de dialogue **Manage Visual Studio Performance.**
+Vous pouvez toujours réactiver l’extension pour les sessions ultérieures à l’aide du **Gestionnaire d’extensions** ou de la boîte de dialogue gérer les **performances de Visual Studio** .
 
 ## <a name="to-change-tool-window-settings-to-improve-startup-time"></a><a name="tool-windows" />Pour changer les paramètres de la fenêtre Outil afin d’améliorer les temps de démarrage
 

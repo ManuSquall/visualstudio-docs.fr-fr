@@ -3,7 +3,7 @@ title: L’objet ne prend pas en charge cette propriété ou cette méthode | Mi
 ms.date: 01/18/2017
 ms.prod: visual-studio-windows
 ms.technology: vs-javascript
-ms.topic: reference
+ms.topic: error-reference
 f1_keywords:
 - VS.WebClient.Help.SCRIPT438
 dev_langs:
@@ -14,12 +14,12 @@ ms.assetid: 35f7a9b4-74fa-4ddb-b9f2-1a92345cb2ff
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ad324af24b7a5555803e8b897343030d8bf210bf
-ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.openlocfilehash: 7a63b73e27de4e33aaa5c833c79f339da66954d3
+ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72573748"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85815732"
 ---
 # <a name="object-doesnt-support-this-property-or-method"></a>Propriété ou méthode non prise en charge par cet objet
 Vous avez spécifié une propriété ou une méthode qui n'existe pas pour cet objet. Tous les objets ne prennent pas en charge toutes les propriétés et toutes les méthodes.  
@@ -33,5 +33,5 @@ Vous avez spécifié une propriété ou une méthode qui n'existe pas pour cet o
 - Pour plus d'informations, voir la documentation de l'objet.  
   
 ## <a name="see-also"></a>Voir aussi  
- Objet [objet](../../javascript/reference/object-object-javascript.md)   
+ [Objet Object](../../javascript/reference/object-object-javascript.md)   
  [Objets JavaScript](../../javascript/reference/javascript-objects.md)

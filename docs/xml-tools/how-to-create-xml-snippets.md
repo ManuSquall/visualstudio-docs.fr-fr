@@ -1,19 +1,19 @@
 ---
 title: 'Procédure : créer des extraits XML'
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 ms.assetid: d8556dd7-1382-4af7-ba80-3e873c9416be
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: df3c2592036f085fcf89d80bcefb1a469b3c1e15
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 2b86962221dcdeff59b1152baf7b7cddcc55293e
+ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75592748"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85815394"
 ---
 # <a name="how-to-create-xml-snippets"></a>Comment : créer des extraits XML
 
@@ -33,7 +33,7 @@ Pour créer un nouvel extrait de code XML, créez un nouveau fichier XML et util
 
 5. Apportez les modifications voulues au nouvel extrait.
 
-6. Dans le menu **fichier** , sélectionnez **Enregistrer xmlfile. xml**.
+6. Dans le menu **fichier** , sélectionnez **Enregistrer XMLFile.xml**.
 
      La boîte de dialogue **enregistrer le fichier sous** s’affiche.
 
@@ -56,9 +56,9 @@ L'éditeur prend en charge deux types d'extraits :
 </SnippetTypes>
 ```
 
-Le type de `Expansion` détermine si l’extrait apparaît lorsque vous appelez la commande **Insérer un extrait** . Le type de `SurroundsWith` détermine si l’extrait apparaît lorsque vous appelez la commande **entourer de** .
+Le `Expansion` type détermine si l’extrait apparaît lorsque vous appelez la commande **Insérer un extrait** . Le `SurroundsWith` type détermine si l’extrait apparaît lorsque vous appelez la commande **entourer de** .
 
-### <a name="code-element"></a>élément de code
+### <a name="code-element"></a>Élément de code
 
 L'élément `Code` définit le texte XML qui sera inséré lorsque l'extrait sera appelé.
 
@@ -104,7 +104,7 @@ L'élément `Literal` permet d'identifier le texte de remplacement qui peut êtr
 </Literal
 ```
 
-Les littéraux peuvent également faire référence à des fonctions. L’éditeur XML comprend une fonction nommée **LookupPrefix**. La fonction **LookupPrefix** recherche l’URI d’espace de noms donné à partir de l’emplacement dans le document XML à partir duquel cet extrait de code est appelé et retourne le préfixe d’espace de noms défini pour cet espace de noms, le cas échéant, et il comprend le signe deux-points ( :) dans ce nom. Voici un exemple d’un élément `Literal` qui utilise la fonction **LookupPrefix** .
+Les littéraux peuvent également faire référence à des fonctions. L’éditeur XML comprend une fonction nommée **LookupPrefix**. La fonction **LookupPrefix** recherche l’URI d’espace de noms donné à partir de l’emplacement dans le document XML à partir duquel cet extrait de code est appelé et retourne le préfixe d’espace de noms défini pour cet espace de noms, le cas échéant, et il comprend le signe deux-points ( :) dans ce nom. L’exemple suivant illustre un `Literal` élément qui utilise la fonction **LookupPrefix** .
 
 ```xml
 <Literal Editable="false">

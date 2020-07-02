@@ -1,7 +1,7 @@
 ---
 title: 'Comment : ajouter des commentaires aux diagrammes de classes (Concepteur de classes)'
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - vs.classdesigner.comment
 helpviewer_keywords:
@@ -14,12 +14,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a46ad971fa9b68de25b55c6c4c882f29c71d6b68
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: d8e7514e8ab55697bdfc01f58c5ceffe4228721c
+ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75592254"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85771017"
 ---
 # <a name="how-to-add-comments-to-class-diagrams"></a>Guide pratique pour ajouter des commentaires aux diagrammes de classes
 
@@ -38,4 +38,4 @@ Vous pouvez redimensionner une zone de commentaire. Toutefois, vous ne pouvez pa
 ## <a name="see-also"></a>Voir aussi
 
 - [Utiliser des diagrammes de classes](designing-and-viewing-classes-and-types.md)
-- [Comment : Personnaliser les diagrammes de classe](how-to-customize-class-diagrams.md)
+- [Comment : personnaliser des diagrammes de classes](how-to-customize-class-diagrams.md)

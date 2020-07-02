@@ -1,7 +1,7 @@
 ---
 title: 'Procédure pas à pas : Créer un extrait de code'
 ms.date: 03/31/2020
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - code snippets, creating
 - code snippets, shortcut
@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 1bfadb4b8d1836d131b669ea43f28f522f3fbd8b
-ms.sourcegitcommit: ce3d0728ec1063ab548dac71c8eaf26d20450acc
+ms.openlocfilehash: 8f46dc6a1871b6d44c37c1931bf65f1b4a11c9ae
+ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/01/2020
-ms.locfileid: "80472806"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85770784"
 ---
 # <a name="walkthrough-create-a-code-snippet"></a>Procédure pas à pas : Créer un extrait de code
 
@@ -54,7 +54,7 @@ Le code XML suivant est le modèle d’extrait de code de base :
 
 2. Entrez un titre pour l’extrait de code dans l’élément **Title**. Utilisez le titre **Square Root**.
 
-3. Indiquez le langage de l’extrait dans l’attribut **Languages** de l’élément **Code**. Pour le C, utilisez **CSharp**, pour Visual Basic, utilisez **VB**, et pour C, utilisez **le RPC**.
+3. Indiquez le langage de l’extrait dans l’attribut **Languages** de l’élément **Code**. Pour C#, utilisez **CSharp**, pour Visual Basic, utilisez **VB**et pour C++, utilisez **CPP**.
 
    > [!TIP]
    > Pour voir toutes les valeurs de langue disponibles, parcourez la [section Attributs de l’élément de code](code-snippets-schema-reference.md#attributes) dans la page [Référence de schéma des extraits de code](code-snippets-schema-reference.md).
@@ -84,7 +84,7 @@ Le code XML suivant est le modèle d’extrait de code de base :
 
 ## <a name="import-a-code-snippet"></a>Importer un extrait de code
 
-1. Vous pouvez importer un extrait de code dans votre installation Visual Studio en utilisant le **Gestionnaire des extraits de code**. Ouvrez-le en choisissant **Tools** > **Code Snippets Manager**.
+1. Vous pouvez importer un extrait de code dans votre installation Visual Studio en utilisant le **Gestionnaire des extraits de code**. Ouvrez-le en choisissant **Outils**  >  **Gestionnaire des extraits de code**.
 
 2. Cliquez sur le bouton **Importer**.
 
@@ -96,19 +96,19 @@ Le code XML suivant est le modèle d’extrait de code de base :
 
    ::: moniker range="vs-2017"
 
-   *%USERPROFILE % -Documents-Visual Studio 2017-Code Snippets-Visual C-My Code Snippets*
-    *%USERPROFILE% -Documents-Visual Studio 2017-Code Snippets-Visual Basic-My Code Snippets*
+   *Extraits de code C# \Mes%USERPROFILE%\Documents\Visual Studio 2017 \ code Snippets\Visual* 
+    *Extraits de code Basic\My%USERPROFILE%\Documents\Visual Studio 2017 \ code Snippets\Visual*
 
    ::: moniker-end
 
    ::: moniker range=">=vs-2019"
 
-   *%USERPROFILE % -Documents-Visual Studio 2019-Code Snippets-Visual C-My Code Snippets*
-    *%USERPROFILE% -Documents-Visual Studio 2019-Code Snippets-Visual Basic-My Code Snippets*
+   *%USERPROFILE%\Documents\Visual Studio 2019 \ code Snippets\Visual C# \Mes code extraits* 
+    de code *%USERPROFILE%\Documents\Visual Studio 2019 \ code Snippets\Visual Basic\My extraits de code*
 
    ::: moniker-end
 
-6. Testez votre extrait de code en ouvrant un projet C# ou Visual Basic. Avec un fichier de code ouvert dans l’éditeur, choisissez **Snippets** > **Insert Snippet** à partir du menu à clic droit, puis **My Code Snippets**. Vous devez voir un extrait de code nommé **Square Root**. Double-cliquez dessus.
+6. Testez votre extrait de code en ouvrant un projet C# ou Visual Basic. Quand un fichier de code est ouvert dans l’éditeur, choisissez **extraits**  >  **Insérer un extrait** dans le menu contextuel, puis **mes extraits de code**. Vous devez voir un extrait de code nommé **Square Root**. Double-cliquez dessus.
 
    L’extrait de code est inséré dans le fichier de code.
 
@@ -129,9 +129,9 @@ Le code XML suivant est le modèle d’extrait de code de base :
    > [!TIP]
    > Comme vous modifiez le fichier dans le répertoire où Visual Studio l’a placé, vous n’avez pas besoin de le réimporter dans Visual Studio.
 
-2. Ajoutez des éléments **d’auteur** et **de description** à l’élément **d’en-tête** et remplissez-les.
+2. Ajoutez des éléments d' **auteur** et de **Description** à l’élément d' **en-tête** , puis remplissez-les.
 
-3. **L’élément d’en-tête** devrait ressembler à ceci:
+3. L’élément d' **en-tête** doit se présenter comme suit :
 
    ```xml
    <Header>
@@ -141,7 +141,7 @@ Le code XML suivant est le modèle d’extrait de code de base :
    </Header>
    ```
 
-4. Ouvrez le **Gestionnaire de Code Snippets** et sélectionnez votre extrait de code. Dans le volet droit, notez que les champs **Description** et **Author** sont maintenant renseignés.
+4. Ouvrez le **Gestionnaire des extraits de code** et sélectionnez votre extrait de code. Dans le volet droit, notez que les champs **Description** et **Author** sont maintenant renseignés.
 
    ![Description de l’extrait de code dans le Gestionnaire des extraits de code](media/code-snippet-description-author.png)
 

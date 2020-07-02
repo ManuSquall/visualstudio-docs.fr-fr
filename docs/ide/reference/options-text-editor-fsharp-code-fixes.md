@@ -4,21 +4,21 @@ ms.date: 01/16/2019
 ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.F%2523.Code_Fixes
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: a5c736be59c257d98085831971d6b7b9dc2a0ef3
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: c20646c8da4101ac674a64c5ca1ed23a3b1fd7b5
+ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "72666281"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85770929"
 ---
-# <a name="options-text-editor--f--code-fixes"></a>Options : L’éditeur de texte > les correctifs de code > de F
+# <a name="options-text-editor--f--code-fixes"></a>Options : éditeur de texte > les correctifs de code > F #
 
-Utilisez la page d’options Correctifs du code pour spécifier les paramètres qui peuvent aider à identifier les erreurs de code et à proposer des solutions. Pour accéder à cette page d’options, choisissez **Tools** > **Options,** puis choisissez **Text Editor** > **F '** > **Code Fixes**.
+Utilisez la page d’options Correctifs du code pour spécifier les paramètres qui peuvent aider à identifier les erreurs de code et à proposer des solutions. Pour accéder à cette page d’options, choisissez **Outils**  >  **options**, puis **éditeur de texte**  >  **F #**  >  **correctifs de code**.
 
 ## <a name="code-fixes"></a>Correctifs du code
 
@@ -40,5 +40,5 @@ Utilisez la page d’options Correctifs du code pour spécifier les paramètres 
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Général, Environnement, Options Dialog Box](../../ide/reference/general-environment-options-dialog-box.md)
+- [Général, environnement, boîte de dialogue Options](../../ide/reference/general-environment-options-dialog-box.md)
 - [Rechercher les modifications de code et d’autres historiques avec CodeLens](../../ide/find-code-changes-and-other-history-with-codelens.md)

@@ -1,7 +1,7 @@
 ---
 title: Méthodes de débogage du code XSLT
 ms.date: 03/05/2019
-ms.topic: conceptual
+ms.topic: overview
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
@@ -9,12 +9,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: f6f4a1ce60f04bcea6e21b52db9347a95292dab2
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: d8e3885aa895cec5ed080b7a8b4d22522d2e9edf
+ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75592852"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85815615"
 ---
 # <a name="debugging-xslt"></a>Débogage XSLT
 
@@ -33,11 +33,11 @@ Vous pouvez démarrer le débogueur quand une feuille de style ou un fichier XML
 
 1. Ouvrez la feuille de style ou le fichier XML dans Visual Studio.
 
-1. Sélectionnez **Démarrer le débogage XSLT** dans le menu **XML** ou appuyez sur **ALT**+**F5**.
+1. Sélectionnez **Démarrer le débogage XSLT** dans le menu **XML** ou appuyez sur **ALT** + **F5**.
 
 ## <a name="debug-from-an-app-that-uses-xslt"></a>Déboguer à partir d’une application qui utilise XSLT
 
-Vous pouvez effectuer un pas à pas détaillé dans XSLT lors du débogage d’une application. Quand vous appuyez sur **F11** sur un appel <xref:System.Xml.Xsl.XslCompiledTransform.Transform%2A?displayProperty=fullName>, le débogueur peut effectuer un pas à pas détaillé dans le code XSLT.
+Vous pouvez effectuer un pas à pas détaillé dans XSLT lors du débogage d’une application. Quand vous appuyez sur **F11** sur un <xref:System.Xml.Xsl.XslCompiledTransform.Transform%2A?displayProperty=fullName> appel, le débogueur peut effectuer un pas à pas détaillé dans le code XSLT.
 
 > [!NOTE]
 > L'exécution d'un pas à pas détaillé de XSLT à partir de la classe <xref:System.Xml.Xsl.XslTransform> n'est pas prise en charge. La classe <xref:System.Xml.Xsl.XslCompiledTransform> est le seul processeur XSLT prenant en charge l'exécution d'un pas à pas détaillé du code XSLT pendant le débogage.

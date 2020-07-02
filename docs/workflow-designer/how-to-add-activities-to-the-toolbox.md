@@ -1,19 +1,19 @@
 ---
 title: 'Concepteur de flux de travail-comment : ajouter des activités à la boîte à outils'
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 ms.assetid: b3a8a785-5928-457a-8a50-30267e29503d
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d3cde4f3a41a1a07f982f85c0c19e9f16b047068
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 0ebe3f4c3daf5ee3a0f64a0197967b6da62a467b
+ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75593926"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85815823"
 ---
 # <a name="how-to-add-activities-to-the-toolbox"></a>Comment : ajouter des activités à la boîte à outils
 
@@ -25,7 +25,7 @@ Les activités peuvent être ajoutées à la **boîte à outils** dans votre sol
 
 2. Ajoutez une logique personnalisée à votre activité.
 
-3. créer le projet ; Si la génération a réussi, une nouvelle catégorie de la **boîte à outils** nommée «\<*nom du projet*> » avec l’activité personnalisée incluse dans cette catégorie s’affiche.
+3. Créez le projet. Si la génération a réussi, une nouvelle catégorie de la **boîte à outils** nommée « \<*project name*> » avec l’activité personnalisée incluse dans cette catégorie s’affiche.
 
     > [!NOTE]
     > Si la boîte à outils est réinitialisée, des activités personnalisées sont supprimées, même si la solution est générée à nouveau. Pour remplir à nouveau la boîte à outils avec des activités personnalisées après sa réinitialisation, redémarrez Visual Studio.
@@ -40,7 +40,7 @@ Les activités peuvent être ajoutées à la **boîte à outils** dans votre sol
 
 1. Ouvrez une solution qui contient au moins un projet de workflow, ainsi qu'un projet de bibliothèque d'activités personnalisées ou un autre projet de workflow qui définit une activité personnalisée.
 
-2. Générez les deux projets. Si les builds sont réussies, une nouvelle catégorie de la **boîte à outils** nommée «\<*nom du projet*> » avec l’activité personnalisée incluse dans cette catégorie s’affiche.
+2. Générez les deux projets. Si les builds ont réussi, une nouvelle catégorie de la **boîte à outils** nommée « \<*project name*> » avec l’activité personnalisée incluse dans cette catégorie s’affiche.
 
 ## <a name="to-add-an-activity-to-the-toolbox-from-an-assembly"></a>Pour ajouter une activité à la boîte à outils à partir d'un assembly
 

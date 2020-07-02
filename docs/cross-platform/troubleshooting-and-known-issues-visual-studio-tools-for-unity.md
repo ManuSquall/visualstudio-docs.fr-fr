@@ -3,19 +3,19 @@ title: Problèmes connus et dépannage (Outils Visual Studio pour Unity)
 ms.custom: ''
 ms.date: 07/03/2018
 ms.technology: vs-unity-tools
-ms.topic: conceptual
+ms.topic: troubleshooting
 ms.assetid: 8f5db192-8d78-4627-bd07-dbbc803ac554
 author: therealjohn
 ms.author: johmil
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: d6856ff73f9aab2325a31e164e7983a919097d46
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 0173c076a04c4c725565e63c41396b7c4d235952
+ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "66261115"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85815056"
 ---
 # <a name="troubleshooting-and-known-issues-visual-studio-tools-for-unity"></a>Problèmes connus et dépannage (Outils Visual Studio pour Unity)
 
@@ -25,7 +25,7 @@ Dans cette section, vous allez trouver les solutions aux problèmes courants ren
 
 ### <a name="confirm-editor-attaching-is-enabled"></a>Vérifier que l’attachement de l’éditeur est activé
 
-Dans le menu Unity, sélectionnez **Modifier > Préférences,** puis sélectionnez **l’onglet Outils externes.** Confirmez que la case à **cocher d’édition** est activée. Pour plus d’informations, voir la [documentation sur les préférences d’Unity](https://docs.unity3d.com/Manual/Preferences.html).
+Dans le menu Unity, sélectionnez **modifier > préférences** , puis sélectionnez l’onglet **outils externes** . Vérifiez que la case à cocher **attacher l’éditeur** est activée. Pour plus d’informations, voir la [documentation sur les préférences d’Unity](https://docs.unity3d.com/Manual/Preferences.html).
 
 ### <a name="unable-to-attach"></a>Impossible de s’attacher
 
@@ -124,7 +124,7 @@ Tentez de mettre à niveau Visual Studio 2015 vers la mise à jour 3.
 
 ##### <a name="to-report-that-visual-studio-freezes-while-debugging-with-visual-studio-tools-for-unity"></a>Pour signaler que Visual Studio se bloque pendant le débogage avec Visual Studio Tools pour Unity
 
-*Sur Windows:*
+*Sur Windows :*
 
 1. Ouvrez une nouvelle instance de Visual Studio.
 
@@ -168,4 +168,4 @@ Tentez de mettre à niveau Visual Studio 2015 vers la mise à jour 3.
     bt all
     ```
 
-Enfin, envoyez le thread-dump à [vstusp@microsoft.com](mailto:vstusp@microsoft.com), avec une description de ce que vous faisiez quand Visual Studio est devenu gelé.
+Enfin, envoyez le vidage de thread à [vstusp@microsoft.com](mailto:vstusp@microsoft.com) , ainsi qu’une description de ce que vous avez fait quand Visual Studio est devenu figé.

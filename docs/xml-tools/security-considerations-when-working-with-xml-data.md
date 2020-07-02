@@ -3,17 +3,17 @@ title: Considérations de sécurité lors de l'utilisation de données XML
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: fce2b708-1aef-454f-be59-52b76f359351
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a0eb38118f7e71bd8cab0cf3faf367c01700cae0
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: e18d2c2e47c3cc1f7e1b3be0112e49e2710e45c8
+ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72604595"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85815836"
 ---
 # <a name="security-considerations-when-working-with-xml-data"></a>Considérations relatives à la sécurité lors de l’utilisation de données XML
 
@@ -23,13 +23,13 @@ Cette rubrique décrit les problèmes de sécurité que vous devez connaître lo
 
 L’éditeur XML est basé sur l’éditeur de texte Visual Studio. Il repose sur les classes <xref:System.Xml> et <xref:System.Xml.Xsl> pour traiter la plupart des processus XML.
 
-- Les transformations XSLT s'exécutent dans un nouveau domaine d'application. Les transformations XSLT sont en *mode bac à sable (sandbox)* ; autrement dit, la stratégie de sécurité d’accès du code de votre ordinateur est utilisée pour déterminer les autorisations restreintes en fonction de l’emplacement de la feuille de style XSLT. Par exemple, les feuilles de style provenant d'un emplacement Internet ont les autorisations les plus limitées, tandis que les feuilles de style copiées vers votre disque dur s'exécutent en Confiance totale.
+- Les transformations XSLT s'exécutent dans un nouveau domaine d'application. Les transformations XSLT sont en *mode bac à sable (sandbox)*; autrement dit, la stratégie de sécurité d’accès du code de votre ordinateur est utilisée pour déterminer les autorisations restreintes en fonction de l’emplacement de la feuille de style XSLT. Par exemple, les feuilles de style provenant d'un emplacement Internet ont les autorisations les plus limitées, tandis que les feuilles de style copiées vers votre disque dur s'exécutent en Confiance totale.
 
 - La classe <xref:System.Xml.Xsl.XslCompiledTransform> permet de compiler le XSLT en un langage intermédiaire Microsoft afin d'accélérer l'exécution.
 
 - Les schémas qui pointent vers un emplacement externe dans le fichier catalogue sont automatiquement téléchargés lors du premier chargement de l’éditeur XML. La classe <xref:System.Xml.Schema.XmlSchemaSet> permet de compiler les schémas. Le fichier catalogue fourni avec l’éditeur XML ne contient pas de liens vers des schémas externes. L’utilisateur doit ajouter explicitement une référence au schéma externe pour que l’éditeur XML télécharge le fichier de schéma. Le téléchargement HTTP peut être désactivé via la page **Outils divers options** de l’éditeur XML.
 
-- L’éditeur XML utilise les classes <xref:System.Net> pour télécharger des schémas
+- L’éditeur XML utilise les <xref:System.Net> classes pour télécharger des schémas
 
 ## <a name="xslt-debugger"></a>débogueur XSLT
 

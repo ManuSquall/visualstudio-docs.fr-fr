@@ -1,9 +1,9 @@
 ---
-title: "'with' non disponible dans le profil Compact ECMA 327 | Microsoft Docs"
+title: "'with’non disponible dans le profil compact ECMA 327 | Microsoft Docs"
 ms.date: 01/18/2017
 ms.prod: visual-studio-windows
 ms.technology: vs-javascript
-ms.topic: reference
+ms.topic: error-reference
 f1_keywords:
 - VS.WebClient.Help.SCRIPT1036
 dev_langs:
@@ -14,16 +14,16 @@ ms.assetid: 4599f851-bf59-4b70-a5eb-9b779d2a7618
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 17aa9d00bca0b7835309e123478b9621a9260d51
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c5a8858cb11a66d10ed7ca1896f9f2b589ba1a54
+ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63000977"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85815238"
 ---
 # <a name="with-not-available-in-the-ecma-327-compact-profile"></a>'with' non disponible dans le profil compact ECMA 327
-'with' non disponible dans le profil Compact ECMA 327 (ErrWithNotInCP  
+'with’non disponible dans le profil compact ECMA 327 (ErrWithNotInCP  
   
- Vous n’êtes pas autorisé à utiliser le mot clé dans le profil Compact.  
+ Vous n’êtes pas autorisé à utiliser le mot clé with dans le profil compact.  
   
- Pour plus d’informations sur le mot clé, consultez [avec l’instruction](../../javascript/reference/with-statement-javascript.md).
+ Pour plus d’informations sur le mot clé with, consultez [with, instruction](../../javascript/reference/with-statement-javascript.md).

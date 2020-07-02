@@ -18,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 238b963aceebd2bfdae38c2f4032955c1bd0c0c6
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: 62f372be9ffa6ae76503550616c6b3612aad6146
+ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85288947"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85770866"
 ---
 # <a name="common-msbuild-project-properties"></a>Propriétés communes des projets MSBuild
 
@@ -51,7 +51,7 @@ Le tableau suivant répertorie les propriétés fréquemment utilisées qui sont
 | CleanFile | Tous | Nom du fichier qui sera utilisé comme « nettoyeur de cache ». Ce fichier contient une liste de fichiers générés à supprimer pendant l'opération de nettoyage. Le fichier est placé dans le chemin de sortie intermédiaire par le processus de génération.<br /><br /> Cette propriété spécifie uniquement des noms de fichier qui n'ont pas d'informations de chemin d'accès. |
 | CodePage | .NET | Spécifie la page de codes à utiliser pour tous les fichiers de code source inclus dans la compilation. Cette propriété est équivalente au commutateur `/codepage` du compilateur. |
 | CompilerResponseFile | .NET | Fichier réponse facultatif qui peut être passé aux tâches du compilateur. |
-| Configuration | Tous | Configuration que vous générez, "Debug" ou "Release". |
+| Configuration | Tous | La configuration que vous générez, généralement `Debug` ou `Release` , mais qui peut être configurée au niveau de la solution et du projet. |
 | CscToolPath | C# | Le chemin d’accès de *csc.exe*, le compilateur C#. |
 | CustomBeforeMicrosoftCommonTargets | Tous | Nom d'un fichier projet ou fichier de cibles qui doit être importé automatiquement avant l'importation des cibles communes. |
 | DebugSymbols | Tous | Valeur booléenne qui indique si les symboles sont générés par la procédure.<br /><br /> La définition de **-p :DebugSymbols = false** sur la ligne de commande désactive la génération de fichiers de symboles de base de données du programme (*. pdb*). |

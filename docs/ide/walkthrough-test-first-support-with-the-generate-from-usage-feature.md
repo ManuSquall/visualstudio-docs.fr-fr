@@ -4,7 +4,7 @@ ms.date: 10/09/2017
 dev_langs:
 - VB
 - CSharp
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - Generate From Usage
 - Test-First Development
@@ -13,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9bf9a7e613a482167a01739320282f9ba8fdea26
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: ceed19ab052584ea47629244372af4402835beb5
+ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75596890"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85770801"
 ---
 # <a name="walkthrough-test-first-development-with-the-generate-from-usage-feature"></a>Procédure pas à pas : développement basé d’abord sur les tests avec la fonctionnalité Générer à partir de l’utilisation
 
@@ -60,7 +60,7 @@ Vous pouvez utiliser la fonctionnalité **Générer à partir de l’utilisation
 
 ### <a name="generate-a-new-class-from-a-unit-test"></a>Générer une nouvelle classe à partir d’un test unitaire
 
-1. Le projet de test contient un fichier qui s’appelle *UnitTest1*. Double-cliquez sur ce fichier dans **Solution Explorer** pour l’ouvrir dans l’éditeur de code. Une classe de test et une méthode de test ont été générées.
+1. Le projet de test contient un fichier nommé *UnitTest1*. Double-cliquez sur ce fichier dans **Explorateur de solutions** pour l’ouvrir dans l’éditeur de code. Une classe de test et une méthode de test ont été générées.
 
 2. Recherchez la déclaration de classe `UnitTest1` et renommez-la `AutomobileTest`.
 
@@ -83,7 +83,7 @@ Vous pouvez utiliser la fonctionnalité **Générer à partir de l’utilisation
 
 7. Cliquez sur **OK** pour fermer la boîte de dialogue et créer le fichier.
 
-8. Dans **Solution Explorer**, regardez sous le **GFUDemo_VB** ou **GFUDemo_CS** nœud de projet pour vérifier que le nouveau fichier *Automobile.vb* ou *Automobile.cs* est là. Dans l’éditeur de code, le focus est toujours dans `AutomobileTest.DefaultAutomobileIsInitializedCorrectly`, ce qui vous permet de continuer à écrire votre test avec un minimum d’interruption.
+8. Dans **Explorateur de solutions**, examinez le nœud du projet **GFUDemo_VB** ou **GFUDemo_CS** pour vérifier que le nouveau fichier *automobile. vb* ou *automobile.cs* est présent. Dans l’éditeur de code, le focus est toujours dans `AutomobileTest.DefaultAutomobileIsInitializedCorrectly`, ce qui vous permet de continuer à écrire votre test avec un minimum d’interruption.
 
 ### <a name="generate-a-property-stub"></a>Générer un stub de propriété
 Supposez que la spécification de produit indique que la classe `Automobile` a deux propriétés publiques nommées `Model` et `TopSpeed`. Ces propriétés doivent être initialisées avec les valeurs par défaut `"Not specified"` et `-1` par le constructeur par défaut. Le test unitaire suivant vérifie que le constructeur par défaut affecte les valeurs par défaut correctes aux propriétés.
@@ -131,7 +131,7 @@ Supposez que la spécification stipule qu’un nouvel élément `Automobile` peu
 
 1. Dans le menu **Test**, choisissez **Exécuter** > **Tous les tests**.
 
-     La commande **Run** > **All Tests** exécute tous les tests dans tous les cadres de test qui sont écrits pour la solution actuelle. Il y a ici deux tests, qui échouent comme prévu. Le test `DefaultAutomobileIsInitializedCorrectly` échoue car la condition `Assert.IsTrue` retourne `False`. Le test `AutomobileWithModelNameCanStart` échoue car la méthode `Start` dans la classe `Automobile` lève une exception.
+     La commande **exécuter**  >  **tous les tests** exécute tous les tests dans toutes les infrastructures de test écrites pour la solution actuelle. Il y a ici deux tests, qui échouent comme prévu. Le test `DefaultAutomobileIsInitializedCorrectly` échoue car la condition `Assert.IsTrue` retourne `False`. Le test `AutomobileWithModelNameCanStart` échoue car la méthode `Start` dans la classe `Automobile` lève une exception.
 
      La fenêtre **Résultats des tests** est illustrée ci-dessous.
 
@@ -163,6 +163,6 @@ Supposez que la spécification stipule qu’un nouvel élément `Automobile` peu
 
 - [Générer à partir de l’utilisation](../ide/visual-csharp-intellisense.md#generate-from-usage)
 - [Fonctionnalités de l’éditeur de code](../ide/writing-code-in-the-code-and-text-editor.md)
-- [Utiliser IntelliSense](../ide/using-intellisense.md)
+- [Utilisez IntelliSense](../ide/using-intellisense.md)
 - [Test unitaire de votre code](../test/unit-test-your-code.md)
 - [Actions rapides](../ide/quick-actions.md)

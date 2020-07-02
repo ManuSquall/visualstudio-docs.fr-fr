@@ -1,16 +1,16 @@
 ---
 title: 'Procédure pas à pas : utilisation de XSLT Hierarchy'
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: 892c166504b9a33fdcbbe0af2605e8268a2b06e7
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 940185687544b22325d3f75751eb92e950deb685
+ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75592449"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85815030"
 ---
 # <a name="walkthrough-use-xslt-hierarchy"></a>Procédure pas à pas : utiliser la hiérarchie XSLT
 
@@ -103,11 +103,11 @@ L'exemple dans cette rubrique illustre le débogage dans une feuille de style r�
     </xsl:stylesheet>
     ```
 
-4. Ajoutez un point d’arrêt au niveau de l’instruction `<xsl:include href="xslincludefile.xsl" />`.
+4. Ajoutez un point d’arrêt au niveau de l’instruction `<xsl:include href="xslincludefile.xsl" />` .
 
 5. Démarrez le débogage.
 
-6. Lorsque le débogueur s’arrête au niveau de l’instruction `<xsl:include href="xslincludefile.xsl" />`, appuyez sur le bouton **pas à pas détaillé** . Le débogage peut être poursuivi dans la feuille de style référencée. La hiérarchie est visible et le concepteur affiche le chemin d’accès correct.
+6. Lorsque le débogueur s’arrête au niveau de l’instruction `<xsl:include href="xslincludefile.xsl" />` , appuyez sur le bouton **pas à pas détaillé** . Le débogage peut être poursuivi dans la feuille de style référencée. La hiérarchie est visible et le concepteur affiche le chemin d’accès correct.
 
 ## <a name="see-also"></a>Voir aussi
 

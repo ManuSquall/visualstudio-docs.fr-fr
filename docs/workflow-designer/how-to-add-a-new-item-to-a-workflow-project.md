@@ -1,19 +1,19 @@
 ---
 title: 'Concepteur de flux de travail : ajouter un nouvel élément au projet de workflow'
 ms.date: 06/25/2018
-ms.topic: conceptual
+ms.topic: how-to
 ms.assetid: 5c6180ca-af10-4513-b0cb-7d478fd84eab
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d7bedc36af2e8fbe19fbb3cc85d82be09d8673de
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 53737eb421f4194b00354899e373441ff0a97227
+ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75593952"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85814614"
 ---
 # <a name="how-to-add-a-new-item-to-a-workflow-project"></a>Comment : ajouter un nouvel élément à un projet de workflow
 
@@ -21,12 +21,12 @@ Une fois que vous avez créé un projet de workflow, vous pouvez ajouter des act
 
 Le tableau suivant répertorie les éléments de Windows Workflow Foundation (WF) que vous pouvez ajouter à un projet de flux de travail :
 
-| Name | Description |
+| Nom | Description |
 |-| - |
 | Activité | Activité à composer d'autres activités. La sélection de cet élément ajoute le même fichier XAML au projet que celui obtenu lors de la sélection du modèle **bibliothèque d’activités** pour un nouveau projet. Pour plus d’informations sur cette procédure, consultez [créer un projet de flux de travail](creating-a-workflow-project.md). |
-| Concepteur de l'activité | Concepteur pour personnaliser l’expérience au moment du design d’une activité. La sélection de cet élément ajoute les mêmes fichiers au projet que ceux obtenus lors de la sélection du modèle **bibliothèque du concepteur d’activités** pour un nouveau projet. |
+| Concepteur d'activités | Concepteur pour personnaliser l’expérience au moment du design d’une activité. La sélection de cet élément ajoute les mêmes fichiers au projet que ceux obtenus lors de la sélection du modèle **bibliothèque du concepteur d’activités** pour un nouveau projet. |
 | Activité de code | Activité avec logique d'exécution écrite dans le code. Un fichier de code source avec substitution de la méthode <xref:System.Activities.CodeActivity.Execute%2A> est déjà généré automatiquement. |
-| Services de flux de travail WCF | Service [!INCLUDE[indigo2](../workflow-designer/includes/indigo2_md.md)] construit à l'aide d'activités de workflow. La sélection de cet élément ajoute les mêmes fichiers au projet que ceux obtenus lors de la sélection du modèle d' **application de service de workflow WCF** pour un nouveau projet. Pour plus d’informations sur cette procédure, consultez [Comment : créer une application de service de flux de travail WCF](creating-a-workflow-project.md). |
+| Service de workflow WCF | Service [!INCLUDE[indigo2](../workflow-designer/includes/indigo2_md.md)] construit à l'aide d'activités de workflow. La sélection de cet élément ajoute les mêmes fichiers au projet que ceux obtenus lors de la sélection du modèle d' **application de service de workflow WCF** pour un nouveau projet. Pour plus d’informations sur cette procédure, consultez [Comment : créer une application de service de flux de travail WCF](creating-a-workflow-project.md). |
 
 ## <a name="to-add-a-new-item-to-a-workflow-project"></a>Pour ajouter un nouvel élément à un projet de workflow
 
