@@ -1,25 +1,25 @@
 ---
 title: Exécuter une transformation XSLT
 ms.date: 03/05/2019
-ms.topic: conceptual
+ms.topic: how-to
 ms.assetid: 56a0fe82-5231-487d-8b6e-a08a9b04e0fc
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3bd26eaadf921d13fc425a91031a39df5a80ea2a
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 1e74beb2903cd133dfdd322ce4c297692eae3411
+ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75592696"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85817188"
 ---
 # <a name="how-to-execute-an-xslt-transformation-from-the-xml-editor"></a>Procédure : exécuter une transformation XSLT à partir de l’éditeur XML
 
 L’éditeur XML vous permet d’associer une feuille de style XSLT à un document XML, d’effectuer la transformation et d’afficher la sortie. Le résultat de la transformation XSLT est affiché dans une nouvelle fenêtre de document.
 
-La propriété **Output** spécifie le nom de fichier de la sortie. Si la propriété de **sortie** est vide, un nom de fichier est généré dans votre répertoire temporaire. L’extension de fichier est basée sur l’élément `xsl:output` dans votre feuille de style et peut être. *XML*,. *txt* ou. *htm*.
+La propriété **Output** spécifie le nom de fichier de la sortie. Si la propriété de **sortie** est vide, un nom de fichier est généré dans votre répertoire temporaire. L’extension de fichier est basée sur l' `xsl:output` élément de votre feuille de style et peut être.* XML*,. *txt* ou. *htm*.
 
 Si la propriété de **sortie** spécifie un nom de fichier avec un. *htm* ou. extension *HTML* , la sortie XSLT est prévisualisée à l’aide d’un navigateur Web. Toutes les autres extensions de fichier sont ouvertes à l’aide de l’éditeur par défaut choisi par Visual Studio. Par exemple, si l’extension de fichier est. *XML*, Visual Studio utilise l’éditeur XML.
 
@@ -29,13 +29,13 @@ Si la propriété de **sortie** spécifie un nom de fichier avec un. *htm* ou. e
 
 2. Associez une feuille de style XSLT au document XML.
 
-    - Ajoutez une instruction de traitement `xml-stylesheet` au document XML. Par exemple, ajoutez la ligne suivante au prologue du document : `<?xml-stylesheet type='text/xsl' href='filename.xsl'?>`
+    - Ajoutez une instruction de traitement `xml-stylesheet` au document XML. Par exemple, ajoutez la ligne suivante au prologue du document :`<?xml-stylesheet type='text/xsl' href='filename.xsl'?>`
 
-       \- ou -
+       -ou-
 
     - Ajoutez la feuille de style XSLT à l’aide de la fenêtre **Propriétés** . Après avoir ouvert le fichier XML dans l’éditeur, cliquez avec le bouton droit n’importe où dans l’éditeur et choisissez **Propriétés**. Dans la fenêtre **Propriétés** , cliquez dans le champ **feuille de style** et choisissez le bouton Parcourir (...). Sélectionnez la feuille de style XSLT, puis choisissez **ouvrir**.
 
-3. Dans la barre de menus, choisissez **XML** > **Démarrer XSLT sans débogage**. Ou appuyez sur **Ctrl**+**ALT**+**F5**.
+3. Dans la barre de menus, choisissez **XML**  >  **Démarrer XSLT sans débogage**. Ou appuyez sur **CTRL** + **ALT** + **F5**.
 
    La sortie de la transformation XSLT s’affiche dans une nouvelle fenêtre de document.
 
@@ -51,7 +51,7 @@ Si la propriété de **sortie** spécifie un nom de fichier avec un. *htm* ou. e
    > [!NOTE]
    > Le document XML est le document d'entrée utilisé pour la transformation. Si aucun document n’est spécifié lors du démarrage de la transformation XSLT, la boîte de dialogue **ouvrir un fichier** s’affiche et vous pouvez spécifier un document à ce moment-là.
 
-3. Dans la barre de menus, choisissez **XML** > **Démarrer XSLT sans débogage**. Ou appuyez sur **Ctrl**+**ALT**+**F5**.
+3. Dans la barre de menus, choisissez **XML**  >  **Démarrer XSLT sans débogage**. Ou appuyez sur **CTRL** + **ALT** + **F5**.
 
    La sortie de la transformation XSLT s’affiche dans une nouvelle fenêtre de document.
 

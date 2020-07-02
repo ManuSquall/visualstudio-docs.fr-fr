@@ -1,19 +1,19 @@
 ---
 title: 'Schéma XML : imprimer des diagrammes dans la vue graphique & vue de modèle de contenu'
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 ms.assetid: 7e1785e4-4aaf-4c66-8735-51e7ca035565
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d1253e5470b176f04d715adc4caa10cec202a4c9
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: e5aef4b2a7bc040a75a97bc66f26526053f4cada
+ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75592623"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85817123"
 ---
 # <a name="how-to-print-diagrams-from-the-graph-view-and-the-content-model-view"></a>Comment : imprimer des diagrammes à partir de la vue du graphique et de la vue de modèle de contenu
 
@@ -31,6 +31,6 @@ Cette rubrique explique comment imprimer un diagramme à partir de la vue du gra
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Vue Graphique](../xml-tools/graph-view.md)
+- [Vue du graphique](../xml-tools/graph-view.md)
 - [Vue Modèle de contenu](../xml-tools/content-model-view.md)
-- [Espace de travail du concepteur de schémas XML](../xml-tools/xml-schema-designer-workspace.md)
+- [Espace de travail du Concepteur de schémas XML](../xml-tools/xml-schema-designer-workspace.md)

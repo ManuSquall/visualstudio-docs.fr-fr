@@ -1,7 +1,7 @@
 ---
 title: Éditeur de schéma et éditeur XML
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: overview
 f1_keywords:
 - vb.xmldesigner
 helpviewer_keywords:
@@ -32,22 +32,22 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 87a5f069d5255a744e256bc9f7d1b48a135e85d8
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: e763fa3475f26b9742ea5fb7061978e711eb22ea
+ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75592306"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85816421"
 ---
-# <a name="xml-tools-in-visual-studio"></a>Outils XML dans Visual Studio
+# <a name="overview-of-xml-tools-in-visual-studio"></a>Vue d’ensemble des outils XML dans Visual Studio
 
-*Langage XML (Extensible Markup)* est un langage de balisage qui fournit un format de description des données. XML sépare les données et leur présentation à l’aide de feuilles de style associées telles que le langage XSL (Extensible Stylesheet Language) et les feuilles de style en cascade (CSS). Visual Studio comprend des outils et des fonctions qui facilitent l'utilisation de XML, de XSLT et des schémas XML.
+*Extensible Markup Language (XML)* est un langage de balisage qui fournit un format pour la description des données. XML sépare les données et leur présentation à l’aide de feuilles de style associées telles que le langage XSL (Extensible Stylesheet Language) et les feuilles de style en cascade (CSS). Visual Studio comprend des outils et des fonctions qui facilitent l'utilisation de XML, de XSLT et des schémas XML.
 
 ## <a name="xml-editor"></a>Éditeur XML
 
 L' [éditeur XML](xml-editor.md) permet de modifier des documents XML. Il fournit la vérification de la syntaxe XML complète, la validation de schéma pendant que vous tapez, le codage en couleurs et IntelliSense. Si un schéma ou une définition de type de document est fournie, IntelliSense l'utilise pour répertorier les éléments et attributs possibles.
 
-Autres fonctionnalités de l’éditeur :
+Les fonctionnalités supplémentaires sont les suivantes :
 
 - Prise en charge des extraits XML, y compris les extraits générés par schéma
 

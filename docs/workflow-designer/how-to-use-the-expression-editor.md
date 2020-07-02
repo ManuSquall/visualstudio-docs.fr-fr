@@ -1,7 +1,7 @@
 ---
 title: 'Concepteur de flux de travail-comment : utiliser l’éditeur d’expressions'
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - System.Activities.Presentation.View.ExpressionTextBox.UI
 ms.assetid: b5f961dd-6dda-41a9-9cae-0383d479ef3d
@@ -10,18 +10,18 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: aff5654214809cf2f57767005153ba557df487c1
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 04c0fdaab87c88028b8c14ca59e93fa93e74be74
+ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75584541"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85817435"
 ---
 # <a name="how-to-use-the-expression-editor"></a>Procédure : utiliser l'éditeur d'expressions
 
 L’éditeur d’expressions est un contrôle Concepteur de flux de travail utilisé dans de nombreuses activités de flux de travail pour entrer et évaluer des expressions. L’éditeur d’expressions fournit une expérience d’édition IDE complète, notamment IntelliSense, la colorisation, ParamInfo et, les tildes d’erreur, entre autres fonctionnalités. Le compilateur valide l’expression après qu’elle a été entrée. Si l'expression n'est pas valide, une icône d'erreur s'affiche. L’éditeur peut également être ouvert en tant que boîte de dialogue **éditeur d’expressions** .
 
-Les expressions sont des valeurs littérales ou du code Visual Basic liés à des arguments ou des propriétés. Elles contiennent des éléments de valeur (par exemple, des variables, des constantes, des littéraux, des propriétés) qui sont associés à des opérations afin de produire une nouvelle valeur. Les expressions sont écrites à l'aide de la syntaxe VB.NET même si l'application se trouve dans un programme utilisant C#. Cela signifie que la mise en majuscules n’a pas d’importance. la comparaison est effectuée à l’aide d’un seul signe égal (« = » au lieu de « = = »), les opérateurs booléens sont les mots « and » et « or » au lieu des symboles « & & » et « | | », et **rien** n’est utilisé à la place de **null**. Pour plus d’informations sur les expressions et les opérateurs dans Visual Basic et pour obtenir des exemples, consultez [opérateurs et expressions dans Visual Basic](/previous-versions/visualstudio/visual-studio-2010/a1w3te48(v=vs.100)).
+Les expressions sont des valeurs littérales ou du code Visual Basic liés à des arguments ou des propriétés. Elles contiennent des éléments de valeur (par exemple, des variables, des constantes, des littéraux, des propriétés) qui sont associés à des opérations afin de produire une nouvelle valeur. Les expressions sont écrites à l'aide de la syntaxe VB.NET même si l'application se trouve dans un programme utilisant C#. Cela signifie que la mise en majuscules n’a pas d’importance. la comparaison est effectuée à l’aide d’un seul signe égal (« = » au lieu de « = = »), les opérateurs booléens sont les mots « and » et « or » au lieu des symboles « && » et « | | », et **rien** n’est utilisé à la place de **null**. Pour plus d’informations sur les expressions et les opérateurs dans Visual Basic et pour obtenir des exemples, consultez [opérateurs et expressions dans Visual Basic](/previous-versions/visualstudio/visual-studio-2010/a1w3te48(v=vs.100)).
 
 L' **éditeur d’expressions** se comporte comme suit :
 
@@ -45,7 +45,7 @@ L' **éditeur d’expressions** se comporte comme suit :
 
 3. Cliquez sur l'éditeur d'expressions à gauche dans le concepteur d'activités pour l'activité <xref:System.Activities.Statements.Assign>.
 
-     Les chaînes en filigrane gris **\<pour >** et **\<entrer une expression VB >** sont les chaînes de texte par défaut pour les éditeurs d’expressions dans l’activité <xref:System.Activities.Statements.Assign>.
+     Les chaînes de filigrane gris **\<To>** et **\<Enter a VB Expression>** sont les chaînes de texte par défaut pour les éditeurs d’expressions dans l' <xref:System.Activities.Statements.Assign> activité.
 
 4. Entrez votre expression. Si vous entrez une chaîne, n'oubliez pas de l'entourer de guillemets. Si vous choisissez de lier l’argument Expression à une variable, n’utilisez pas de guillemets.
 

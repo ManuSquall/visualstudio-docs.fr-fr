@@ -3,7 +3,7 @@ title: Résumé des opérateurs (JavaScript) | Microsoft Docs
 ms.date: 01/18/2017
 ms.prod: visual-studio-windows
 ms.technology: vs-javascript
-ms.topic: reference
+ms.topic: error-reference
 dev_langs:
 - JavaScript
 - TypeScript
@@ -12,25 +12,25 @@ ms.assetid: 3bc55336-912f-4ff8-8d28-1e26e0144840
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: dadd47684978bf4be6c9029646d4b6041cb431ee
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 995a286140464e58635bc485478bb570871f5e09
+ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63006473"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85816785"
 ---
 # <a name="operator-summary-javascript"></a>Résumé des opérateurs (JavaScript)
-Les tableaux suivants répertorient [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] opérateurs dans leurs catégories respectives.  
+Les tableaux suivants répertorient les [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] opérateurs dans leurs catégories respectives.  
   
 ## <a name="computational-operators"></a>Opérateurs de calcul  
   
 |Opérateur|Symbole|  
 |--------------|------------|  
-|[Addition](../../javascript/reference/addition-operator-decrement-javascript.md)|+|  
-|[Décrément](../../javascript/reference/increment-and-decrement-operators-javascript.md)|--|  
+|[Complément](../../javascript/reference/addition-operator-decrement-javascript.md)|+|  
+|[Décrémentation](../../javascript/reference/increment-and-decrement-operators-javascript.md)|--|  
 |[Division](../../javascript/reference/division-operator-decrement-javascript.md)|/|  
-|[Incrément](../../javascript/reference/increment-and-decrement-operators-javascript.md).|++|  
-|[reste](../../javascript/reference/modulus-operator-decrementjavascript.md)|%|  
+|[Lier](../../javascript/reference/increment-and-decrement-operators-javascript.md)|++|  
+|[Remainder](../../javascript/reference/modulus-operator-decrementjavascript.md)|%|  
 |[Multiplication](../../javascript/reference/multiplication-operator-decrement-javascript.md)|*|  
 |[Soustraction](../../javascript/reference/subtraction-operator-decrement-javascript.md)|-|  
 |[Négation unaire](../../javascript/reference/subtraction-operator-decrement-javascript.md)|-|  
@@ -39,7 +39,7 @@ Les tableaux suivants répertorient [!INCLUDE[javascript](../../javascript/inclu
   
 |Opérateur|Symbole|  
 |--------------|------------|  
-|[Virgule](../../javascript/reference/comma-operator-decrement-javascript.md)|,|  
+|[Comma](../../javascript/reference/comma-operator-decrement-javascript.md)|,|  
 |[Conditionnel (ternaire)](../../javascript/reference/conditional-ternary-operator-decrement-javascript.md)|?:|  
 |[Égalité](../../javascript/reference/comparison-operators-javascript.md)|==|  
 |[Supérieur à](../../javascript/reference/comparison-operators-javascript.md)|>|  
@@ -50,17 +50,17 @@ Les tableaux suivants répertorient [!INCLUDE[javascript](../../javascript/inclu
 |[Inférieur ou égal à](../../javascript/reference/comparison-operators-javascript.md)|<=|  
 |[AND logique](../../javascript/reference/logical-and-operator-decrement-javascript.md)|&&|  
 |[NOT logique](../../javascript/reference/logical-not-operator-decrement-exclpt-javascript.md)|!|  
-|[Logique ou](../../javascript/reference/logical-or-operator-decrement-javascript.md)|&#124;&#124;|  
+|[Ou logique](../../javascript/reference/logical-or-operator-decrement-javascript.md)|&#124;&#124;|  
 |[Non-identité](../../javascript/reference/comparison-operators-javascript.md)|!==|  
   
 ## <a name="bitwise-operators"></a>Opérateurs au niveau du bit  
   
 |Opérateur|Symbole|  
 |--------------|------------|  
-|[AND au niveau du bit](../../javascript/reference/bitwise-and-operator-decrement-javascript.md)|&|  
+|[ET au niveau du bit](../../javascript/reference/bitwise-and-operator-decrement-javascript.md)|&|  
 |[Décalage vers la gauche au niveau du bit](../../javascript/reference/bitwise-left-shift-operator-decrement-javascript.md)|<\<|  
 |[NOT au niveau du bit](../../javascript/reference/bitwise-not-operator-decrement-tilde-javascript.md)|~|  
-|[Au niveau du bit ou](../../javascript/reference/bitwise-or-operator-decrement-javascript.md)|&#124;|  
+|[Or au niveau du bit](../../javascript/reference/bitwise-or-operator-decrement-javascript.md)|&#124;|  
 |[Décalage vers la droite au niveau du bit](../../javascript/reference/bitwise-right-shift-operator-decrement-javascript.md)|>>|  
 |[XOR au niveau du bit](../../javascript/reference/bitwise-xor-operator-decrement-hat-javascript.md)|^|  
 |[Décalage vers la droite non signé](../../javascript/reference/unsigned-right-shift-operator-decrement-javascript.md)|>>>|  
@@ -75,11 +75,11 @@ Les tableaux suivants répertorient [!INCLUDE[javascript](../../javascript/inclu
   
  [instanceof](../../javascript/reference/instanceof-operator-decrementjavascript.md)  
   
- [new](../../javascript/reference/new-operator-decrementjavascript.md)  
+ [Nouveau](../../javascript/reference/new-operator-decrementjavascript.md)  
   
  [typeof](../../javascript/reference/typeof-operator-decrementjavascript.md)  
   
  [void](../../javascript/reference/void-operator-decrementjavascript.md)  
   
-## <a name="requirements"></a>Configuration requise  
+## <a name="requirements"></a>Spécifications  
  [!INCLUDE[jsv1](../../javascript/misc/includes/jsv1-md.md)]

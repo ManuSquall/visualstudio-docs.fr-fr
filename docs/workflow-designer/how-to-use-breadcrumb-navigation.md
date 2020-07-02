@@ -1,19 +1,19 @@
 ---
 title: 'Concepteur de flux de travail : utilisation de la navigation dans le chemin d’accès'
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 ms.assetid: 4a688056-37dc-406a-9071-be2141e192fe
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 291badb04c791305f655e187ff7853fc8c5087a1
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 2a432d7cfc40ad6116f570d0e7beb4bfc5b40493
+ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75584567"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85817461"
 ---
 # <a name="how-to-use-breadcrumb-navigation"></a>Procédure : utiliser l'exploration à l'aide de la barre de navigation
 
@@ -47,7 +47,7 @@ Il existe trois méthodes principales pour modifier l’ensemble des activités 
 2. Une fois que vous avez appliqué un état développer tout ou réduire tout, vous pouvez cliquer sur le bouton **restaurer** qui s’affiche pour revenir à l’état précédemment appliqué à chaque activité.
 
     > [!WARNING]
-    > Si une activité, telle que <xref:System.Activities.Statements.Flowchart>, est désactivée sur place, les fonctionnalités associées aux boutons **développer tout** et **réduire tout** sont désactivées sur le concepteur d' **organigrammes** . Pour plus d’informations sur le concepteur d' **organigrammes** , consultez la rubrique [organigramme](../workflow-designer/flowchart-activity-designer.md) .
+    > Si une activité, telle que <xref:System.Activities.Statements.Flowchart> , a désactivé l’expansion sur place, les fonctionnalités associées aux boutons **développer tout** et **réduire tout** sont désactivées sur le concepteur d' **organigrammes** . Pour plus d’informations sur le concepteur d' **organigrammes** , consultez la rubrique [organigramme](../workflow-designer/flowchart-activity-designer.md) .
 
     > [!WARNING]
     > L’option développer tout a également un effet spécial dans les concepteurs d’activités **switch** et **TryCatch** . Quand vous cliquez sur **développer tout**, tous les cas de basculement et tous les blocs try/catch/finally s’affichent. Si vous cliquez sur **restaurer** ou **réduire tout** , ces concepteurs sont rétablis à leur état par défaut, à partir duquel vous pouvez cliquer sur un bloc/cas individuel pour afficher son contenu.

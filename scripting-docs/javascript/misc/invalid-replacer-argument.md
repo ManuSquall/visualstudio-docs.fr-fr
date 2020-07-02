@@ -3,7 +3,7 @@ title: Argument de remplacement non valide | Microsoft Docs
 ms.date: 01/18/2017
 ms.prod: visual-studio-windows
 ms.technology: vs-javascript
-ms.topic: reference
+ms.topic: error-reference
 f1_keywords:
 - VS.WebClient.Help.SCRIPT5035
 dev_langs:
@@ -15,19 +15,19 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9ba76a2121dfb3853e38bacbdf49c985103c2a35
-ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.openlocfilehash: 452af60c37e4a56996438cc2957e9b69ccee98ef
+ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72573807"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85816824"
 ---
 # <a name="invalid-replacer-argument"></a>Argument de remplacement incorrect
-Une tentative a été effectuée pour appeler `JSON.stringify` avec un argument qui n’est pas valide. L’argument `replacer` doit être une fonction ou un tableau.  
+Une tentative a été effectuée pour appeler `JSON.stringify` avec un argument qui n’est pas valide. L' `replacer` argument doit être une fonction ou un tableau.  
   
 ### <a name="to-correct-this-error"></a>Pour corriger cette erreur  
   
-- Remplacez l’argument `replacer` par une fonction ou un tableau.  
+- Remplacez l' `replacer` argument par une fonction ou un tableau.  
   
 ## <a name="example"></a>Exemple  
  Le code de cet exemple provoque une erreur d’exécution, car `memberfilter` est un objet au lieu d’une fonction ou d’un tableau.  
@@ -45,6 +45,6 @@ var jsontext = JSON.stringify(contact, memberfilter, "\t");
 ```  
   
 ## <a name="see-also"></a>Voir aussi  
- @No__t_1 d' [objets JSON](../../javascript/reference/json-object-javascript.md)  
- @No__t_1 de la [fonction JSON. Parse](../../javascript/reference/json-parse-function-javascript.md)  
+ [Objet JSON](../../javascript/reference/json-object-javascript.md)   
+ [JSON. Parse, fonction](../../javascript/reference/json-parse-function-javascript.md)   
  [Erreurs d’exécution JavaScript](../../javascript/reference/javascript-run-time-errors.md)

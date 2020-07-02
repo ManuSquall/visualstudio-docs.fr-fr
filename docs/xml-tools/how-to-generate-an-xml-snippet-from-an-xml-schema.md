@@ -1,19 +1,19 @@
 ---
 title: "Procédure : générer un extrait XML à partir d'un schéma XML"
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 ms.assetid: 2c128d2a-aaa6-4814-aa95-e07056afe338
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ec320018cc64e774751c312ca4cdeb94a6d53a9c
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 3c7dff8e1bb211343ccc44e0d1fd33d96c102283
+ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75592683"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85817175"
 ---
 # <a name="how-to-generate-an-xml-snippet-from-an-xml-schema"></a>Comment : générer un extrait XML à partir d’un schéma XML
 
@@ -56,7 +56,7 @@ Les étapes de cette section vous montrent comment utiliser la fonctionnalité d
 
      Un nouveau fichier s'ouvre dans l'éditeur. Il contient une déclaration XML par défaut, `<?xml version="1.0" encoding="utf-8">`.
 
-3. Dans la fenêtre Propriétés du document, cliquez sur le bouton Parcourir ( **...** ) du champ **schémas** .
+3. Dans la fenêtre Propriétés du document, cliquez sur le bouton Parcourir (**...**) du champ **schémas** .
 
      La boîte de dialogue **schémas XSD** s’affiche.
 
@@ -88,9 +88,9 @@ Les étapes de cette section vous montrent comment utiliser la fonctionnalité d
 
      L’éditeur ajoute l’étiquette de début `<Contact` et place le curseur après le nom de l’élément.
 
-4. Appuyez sur **Tab** pour générer des données XML pour l’élément `Contact` en fonction de ses informations de schéma.
+4. Appuyez sur **Tab** pour générer des données XML pour l' `Contact` élément en fonction de ses informations de schéma.
 
-## <a name="input"></a>Input
+## <a name="input"></a>Entrée
 
 La procédure pas à pas utilise le fichier de schéma suivant.
 
@@ -141,7 +141,7 @@ La procédure pas à pas utilise le fichier de schéma suivant.
 
 ### <a name="output"></a>Output
 
-Voici les données XML générées sur la base des informations de schéma associées à l'élément `Contact`. Les éléments marqués comme `bold` désigner les champs modifiables dans l’extrait XML.
+Voici les données XML générées sur la base des informations de schéma associées à l'élément `Contact`. Les éléments marqués comme `bold` désignent des champs modifiables dans l’extrait XML.
 
 ```xml
 <Contact>

@@ -3,7 +3,7 @@ title: Objet ATTENDU | Microsoft Docs
 ms.date: 01/18/2017
 ms.prod: visual-studio-windows
 ms.technology: vs-javascript
-ms.topic: reference
+ms.topic: error-reference
 f1_keywords:
 - VS.WebClient.Help.SCRIPT5007
 dev_langs:
@@ -14,12 +14,12 @@ ms.assetid: 5d88c93d-e5b5-4b11-9bb5-bf1a5e41ccc3
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1611596d844d43ef72663154dc48791830dfe29f
-ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.openlocfilehash: 28eec125914f0207fbdf79a39ea2140dd74d6d0d
+ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72573732"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85816226"
 ---
 # <a name="object-expected"></a>Objet attendu
 Vous avez tenté d’appeler une méthode ou propriété sur un objet d’un type autre qu’`Object`, ou vous avez passé un argument d’un type autre qu’`Object` quand un `Object` était nécessaire.  
@@ -47,5 +47,5 @@ Vous avez tenté d’appeler une méthode ou propriété sur un objet d’un typ
     ```  
   
 ## <a name="see-also"></a>Voir aussi  
- Objet [objet](../../javascript/reference/object-object-javascript.md)   
+ [Objet Object](../../javascript/reference/object-object-javascript.md)   
  [Objets et tableaux](../../javascript/objects-and-arrays-javascript.md)

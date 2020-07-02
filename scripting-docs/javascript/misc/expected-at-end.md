@@ -1,9 +1,9 @@
 ---
-title: "' @No__t_0 'attendu | Microsoft Docs"
+title: "' @end 'Attendu | Microsoft Docs"
 ms.date: 01/18/2017
 ms.prod: visual-studio-windows
 ms.technology: vs-javascript
-ms.topic: reference
+ms.topic: error-reference
 f1_keywords:
 - VS.WebClient.Help.SCRIPT1029
 dev_langs:
@@ -14,20 +14,20 @@ ms.assetid: c2608995-944e-4d35-8b7e-1cfe264d2458
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 46748d7f516b21fc529e99a3e047040e82036650
-ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.openlocfilehash: 7ff759681ca3e4f48f264e00f9e376487dfe4d24
+ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72573443"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85817305"
 ---
-# <a name="expected-end"></a>' @No__t_0end’attendu
-Vous avez tenté de créer un bloc de code compilé de manière conditionnelle, mais n’avez pas inclus l’instruction <strong>@end</strong> à la fin. les instructions [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] peuvent être compilées de façon conditionnelle en les plaçant dans un bloc de <strong>@end @if/</strong> .  
+# <a name="expected-end"></a>' \@ End’attendu
+Vous avez tenté de créer un bloc de code compilé de manière conditionnelle, mais n’avez pas inclus l' <strong>@end</strong> instruction à la fin. [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]les instructions peuvent être compilées de façon conditionnelle en les mettant dans un <strong>@if/@end</strong> bloc.  
   
 ### <a name="to-correct-this-error"></a>Pour corriger cette erreur  
   
-- Ajoutez l’instruction <strong>@end</strong> correspondante.  
+- Ajoutez l' <strong>@end</strong> instruction correspondante.  
   
 ## <a name="see-also"></a>Voir aussi  
- @No__t_1 de [compilation conditionnelle](../../javascript/advanced/conditional-compilation-javascript.md)  
+ [Compilation conditionnelle](../../javascript/advanced/conditional-compilation-javascript.md)   
  [Variables de compilation conditionnelle](../../javascript/advanced/conditional-compilation-variables-javascript.md)

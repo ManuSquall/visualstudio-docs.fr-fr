@@ -3,7 +3,7 @@ title: Fonction attendue | Microsoft Docs
 ms.date: 01/18/2017
 ms.prod: visual-studio-windows
 ms.technology: vs-javascript
-ms.topic: reference
+ms.topic: error-reference
 f1_keywords:
 - VS.WebClient.Help.SCRIPT5002
 dev_langs:
@@ -14,15 +14,15 @@ ms.assetid: f62ade94-9f6f-4832-9b9b-49a06a385bbe
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 988ca00613d3dec4c55309fd77bc43705a6038ae
-ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.openlocfilehash: f177bf81a43c45dcff4cef3040c64425ed544057
+ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72576594"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85816967"
 ---
 # <a name="function-expected"></a>Fonction attendue
-Soit vous avez tenté d’appeler l’une des méthodes de **prototype de fonction** sur un objet qui n’était pas un objet `Function`, soit vous avez utilisé un objet dans un contexte d’appel de fonction. Par exemple, le code suivant génère cette erreur, car l' **exemple** n’est pas une fonction.  
+Soit vous avez tenté d’appeler l’une des méthodes de **prototype de fonction** sur un objet qui n’était pas un `Function` objet, soit vous avez utilisé un objet dans un contexte d’appel de fonction. Par exemple, le code suivant génère cette erreur, car l' **exemple** n’est pas une fonction.  
   
 ```JavaScript  
 var example = new Object();  // Create a new object called "example".  
@@ -31,9 +31,9 @@ var x = example();           // Try and call example as if it were a function.
   
 ### <a name="to-correct-this-error"></a>Pour corriger cette erreur  
   
-- Appelez uniquement les méthodes de **prototype de fonction** sur les objets `Function`.  
+- Appelez uniquement les méthodes de **prototype de fonction** sur les `Function` objets.  
   
-- Veillez à utiliser l’opérateur d’appel de fonction `()` pour appeler des fonctions uniquement.  
+- Veillez à utiliser l’opérateur d’appel `()` de fonction pour appeler des fonctions uniquement.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Objet de fonction](../../javascript/reference/function-object-javascript.md)   

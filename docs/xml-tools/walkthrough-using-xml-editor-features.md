@@ -1,19 +1,19 @@
 ---
 title: 'Procédure pas à pas : utilisation des fonctionnalités de l’éditeur XML'
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 ms.assetid: ea8dc357-2e66-455a-aec2-7ccaccfc9adf
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d2cf35730b70fc8c8bbec392c73b444b6e8e0aaa
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 1cebf6f7621fb5fada37b8e4592efd429bdc85e6
+ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75592462"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85817396"
 ---
 # <a name="walkthrough-use-xml-editor-features"></a>Procédure pas à pas : utiliser les fonctionnalités de l’éditeur XML
 
@@ -30,7 +30,7 @@ Les étapes de cette procédure pas à pas expliquent la création d'un document
 
      Un nouveau fichier s'ouvre dans l'éditeur. Il contient une déclaration XML par défaut, `<?xml version="1.0" encoding="utf-8">`.
 
-3. Dans la fenêtre Propriétés du document, cliquez sur le bouton Parcourir ( **...** ) du champ **schémas** .
+3. Dans la fenêtre Propriétés du document, cliquez sur le bouton Parcourir (**...**) du champ **schémas** .
 
      La boîte de dialogue **schémas XSD** s’affiche.
 
@@ -58,13 +58,13 @@ Les étapes de cette procédure pas à pas expliquent la création d'un document
 
     - **employé** pour ajouter l’élément racine.
 
-2. Sélectionnez **&lt;!--** pour ajouter un nœud de commentaire et appuyez sur **entrée**.
+2. Sélectionnez ** &lt; !--** pour ajouter un nœud de commentaire et appuyez sur **entrée**.
 
      L'éditeur insère une balise de fin de commentaire et place le curseur entre les balises de début et de fin du commentaire.
 
 3. Tapez dans **test XML file**.
 
-4. Sur une nouvelle ligne, tapez `<`, puis sélectionnez **Employee** dans la liste des membres.
+4. Sur une nouvelle ligne, tapez `<` , puis sélectionnez **Employee** dans la liste des membres.
 
      L'éditeur ajoute le début d'un élément XML, `<employee`. À ce stade, vous pouvez ajouter des attributs à l'élément ou fermer la balise de fin en entrant `>`.
 
@@ -88,7 +88,7 @@ Les étapes de cette procédure pas à pas expliquent la création d'un document
 
      Le soulignement ondulé et l' **info-bulle** sont effacés sous la valeur de l’élément ID. L' **info-bulle** de la balise de fin Employee affiche maintenant le message : **l’élément « Employee » a un contenu incomplet. 'Hire-date’attendu**.
 
-11. Placez le curseur après la balise de fin ID, tapez `<`, sélectionnez **Hire-date** dans la liste des membres, puis tapez `>`.
+11. Placez le curseur après la balise de fin ID, entrez `<` , sélectionnez **Hire-date** dans la liste des membres, puis tapez `>` .
 
      L’éditeur ajoute l’élément XML `<hire-date></hire-date>` et place le curseur après l’étiquette de début hire-date.
 
@@ -96,7 +96,7 @@ Les étapes de cette procédure pas à pas expliquent la création d'un document
 
 ## <a name="to-format-the-xml-document"></a>Pour mettre en forme le document XML
 
-- Sélectionnez le bouton **mettre le document en forme** dans la barre d’outils de l’éditeur XML, ou appuyez sur **CTRL**+**E**,**D**.
+- Sélectionnez le bouton **mettre le document en forme** dans la barre d’outils de l’éditeur XML, ou appuyez sur **CTRL** + **E**,**D**.
 
    ![Bouton mettre en forme le document XML dans Visual Studio](media/format-xml-document.png)
 
@@ -104,9 +104,9 @@ Les étapes de cette procédure pas à pas expliquent la création d'un document
 
 ## <a name="to-save-the-xml-document"></a>Pour enregistrer le document XML
 
-1. Dans le menu **Fichier** , sélectionnez **Enregistrer sous**.
+1. Dans le menu **Fichier**, sélectionnez **Enregistrer sous**.
 
-     La boîte de dialogue **enregistrer le fichier sous** s’affiche. Le nom de fichier par défaut est *« XMLFile1 »* .
+     La boîte de dialogue **enregistrer le fichier sous** s’affiche. Le nom de fichier par défaut est *« XMLFile1 »*.
 
 2. Entrez le nom de fichier et l’emplacement du document XML, puis cliquez sur **Enregistrer**.
 
