@@ -1464,5 +1464,7 @@
           href: ide/report-a-problem-perfview.md
     - name: Suggérer une fonctionnalité
       href: ide/suggest-a-feature.md
-    - name: Confidentialité des données de la communauté des développeurs
+    - name: Consignes Developer Community
+      href: ide/developer-community-guidelines.md
+    - name: Confidentialité des données Developer Community
       href: ide/developer-community-privacy.md
