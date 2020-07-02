@@ -5,7 +5,7 @@ ms.date: 01/18/2017
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: reference
 helpviewer_keywords:
 - Smart Host Helper Interfaces, implementing
 ms.assetid: b9c44246-4d4d-469e-91be-00c8f5796fa5
@@ -13,12 +13,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9b387999d71690deaf5bea30a07439677065d63d
-ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.openlocfilehash: deac5827aa38039099f1d0f5e621d473db96743d
+ms.sourcegitcommit: 9a9c61ca115c22d33bb902153eb0853789c7be4c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72574385"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "85835600"
 ---
 # <a name="implementing-smart-host-helper-interfaces"></a>Implémentation des interfaces d'assistance d'hôte intelligent
 [L’interface IDebugDocumentHelper](../winscript/reference/idebugdocumenthelper-interface.md) simplifie considérablement la tâche de création d’un hôte intelligent pour le débogage, car elle fournit des implémentations pour de nombreuses interfaces nécessaires pour l’hébergement intelligent.  
@@ -105,4 +105,4 @@ pddh->CreateDebugDocumentContext(ulStartPos + uCharacterOffset, cChars, &pddcNew
 - Fournir un nom de chemin dans le système de fichiers pour le document. Certaines interfaces utilisateur de débogage utilisent cela afin d’autoriser l’utilisateur à modifier et à enregistrer les modifications apportées au document. [IDebugDocumentHost::NotifyChanged](../winscript/reference/idebugdocumenthost-notifychanged.md) est appelée pour avertir l’hôte une fois que le document a été enregistré.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Présentation du débogage de script actif](../winscript/active-script-debugging-overview.md)
+ [Débogage de script actif (présentation)](../winscript/active-script-debugging-overview.md)

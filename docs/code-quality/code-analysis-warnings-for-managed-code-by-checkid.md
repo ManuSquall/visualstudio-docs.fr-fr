@@ -187,6 +187,7 @@ f1_keywords:
 - CA2013
 - CA2014
 - CA2015
+- CA2016
 - CA2100
 - CA2101
 - CA2102
@@ -289,12 +290,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 3f8188a83a11811cc73a3b38c45df8dd7d27d1c1
-ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
+ms.openlocfilehash: 7539ad5b7973c9f87222de19ca9c975b04918a35
+ms.sourcegitcommit: 9a9c61ca115c22d33bb902153eb0853789c7be4c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85814802"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "85835431"
 ---
 # <a name="code-analysis-warnings-for-managed-code-by-checkid"></a>Avertissements d’analyse du code pour le code managé par CheckId
 
@@ -433,7 +434,7 @@ Le tableau suivant répertorie les avertissements d'analyse du code pour le code
 | CA1801 | [CA1801 : Passez en revue les paramètres inutilisés](../code-quality/ca1801.md) | Une signature de méthode inclut un paramètre qui n'est pas utilisé dans le corps de la méthode. |
 | CA1802 |[CA1802 : Utilisez des littéraux quand cela est approprié](../code-quality/ca1802.md) |Un champ est déclaré statique et en lecture seule (Shared et ReadOnly en [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]), et est initialisé avec une valeur qui est calculable à la compilation. Étant donné que la valeur assignée au champ ciblé peut être calculée au moment de la compilation, remplacez la déclaration par un champ const (const in [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] ) afin que la valeur soit calculée au moment de la compilation plutôt qu’au moment de l’exécution. |
 | CA1804 | [CA1804 : Supprimez les variables locales inutilisées](../code-quality/ca1804.md) | Les variables locales inutilisées et les assignations inutiles augmentent la taille d'un assembly et font baisser les performances. |
-| CA1805 | [CA1805 : ne pas initialiser inutilement](../code-quality/ca1805.md) | Le Runtime .NET initialise tous les champs de type référence à leurs valeurs par défaut avant d’exécuter le constructeur. Dans la plupart des cas, l’initialisation explicite d’un champ à sa valeur par défaut est redondante, ce qui augmente les coûts de maintenance et peut dégrader les performances (par exemple, avec une taille d’assembly accrue). |
+| CA1805 | [CA1805 : Ne pas initialiser inutilement](../code-quality/ca1805.md) | Le Runtime .NET initialise tous les champs de type référence à leurs valeurs par défaut avant d’exécuter le constructeur. Dans la plupart des cas, l’initialisation explicite d’un champ à sa valeur par défaut est redondante, ce qui augmente les coûts de maintenance et peut dégrader les performances (par exemple, avec une taille d’assembly accrue). |
 | CA1806 | [CA1806 : N'ignorez pas les résultats des méthodes](../code-quality/ca1806.md) | Un nouvel objet est créé mais jamais utilisé ; ou une méthode qui crée et retourne une nouvelle chaîne est appelée et la nouvelle chaîne n'est jamais utilisée ; ou une méthode COM ou P/Invoke retourne un code HRESULT ou d'erreur qui n'est jamais utilisé. |
 | CA1809 |[CA1809 : Évitez le surplus de variables locales](../code-quality/ca1809.md) | Une méthode d'optimisation des performances courante consiste à stocker une valeur dans un registre de processeur au lieu de la mémoire ; cette méthode est appelée « enregistrement de la valeur ». Pour augmenter les chances d'enregistrement de toutes les variables locales, limitez le nombre de variables locales à 64. |
 | CA1810 | [CA1810 : Initialisez les champs statiques de type référence en ligne](../code-quality/ca1810.md) | Lorsqu'un type déclare un constructeur statique explicite, le compilateur juste-à-temps (JIT, Just-In-Time) ajoute une vérification à chacun des méthodes statiques et constructeurs d'instances du type afin de garantir que le constructeur statique a été appelé précédemment. Les vérifications des constructeurs statiques peuvent diminuer les performances. |
@@ -475,6 +476,7 @@ Le tableau suivant répertorie les avertissements d'analyse du code pour le code
 | Ca2013 | [CA2013 : Ne pas utiliser ReferenceEquals avec des types valeur](ca2013.md) | Lors de la comparaison de valeurs à l’aide <xref:System.Object.ReferenceEquals%2A?displayProperty=fullName> de, si objA et objB sont des types valeur, ils sont boxed avant d’être passés à la <xref:System.Object.ReferenceEquals%2A> méthode. Cela signifie que même si objA et objB représentent la même instance d’un type valeur, la <xref:System.Object.ReferenceEquals%2A> méthode retourne néanmoins false. |
 | Ca2014 | [Ca2014 : n’utilisez pas stackalloc dans les boucles.](ca2014.md) | L’espace de pile alloué par stackalloc est libéré uniquement à la fin de l’appel de la méthode actuelle.  Son utilisation dans une boucle peut entraîner une croissance de pile illimitée et des conditions de dépassement de capacité de pile éventuelles. |
 | Ca2015 | [Ca2015 : ne définissez pas de finaliseur pour les types dérivés de MemoryManager &lt; T&gt;](ca2015.md) | L’ajout d’un finaliseur à un type dérivé de <xref:System.Buffers.MemoryManager%601> peut permettre la libération de la mémoire pendant qu’il est toujours utilisé par un <xref:System.Span%601> . |
+| Ca2016 | [CA2016 : Transférer le paramètre CancellationToken aux méthodes qui l’acceptent](ca2016.md) | Transférez le `CancellationToken` paramètre aux méthodes qui prennent une pour garantir que les notifications d’annulation d’opération sont correctement propagées, ou transmettez `CancellationToken.None` explicitement pour indiquer intentionnellement que le jeton n’est pas propagé. |
 | CA2100 | [CA2100 : Vérifier si les requêtes SQL présentent des failles de sécurité](../code-quality/ca2100.md) | Une méthode définit la propriété System.Data.IDbCommand.CommandText à l’aide d’une chaîne générée à partir d’un argument de chaîne à la méthode. Cette règle suppose que l’argument de chaîne contient des entrées d’utilisateur. Une chaîne de commande SQL générée par une entrée d'utilisateur est vulnérable aux attaques par injection de code SQL. |
 | CA2101 |[CA2101 : spécifiez le marshaling pour les arguments de chaîne P/Invoke](../code-quality/ca2101.md) | Un membre d’appel de code non managé autorise les appelants dotés d’un niveau de confiance partielle, présente un paramètre de chaîne et ne marshale pas explicitement la chaîne. Cela peut provoquer une faille de sécurité potentielle. |
 | CA2102 | [CA2102 : Interceptez les exceptions non CLSCompliant dans les gestionnaires généraux](../code-quality/ca2102.md) | Un membre dans un assembly qui n'est pas marqué avec RuntimeCompatibilityAttribute ou qui est marqué avec RuntimeCompatibility(WrapNonExceptionThrows = false) contient un bloc catch qui gère System.Exception et ne contient pas de bloc catch général immédiatement après. |
