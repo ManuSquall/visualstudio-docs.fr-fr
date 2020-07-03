@@ -1,74 +1,74 @@
 ---
-title: Création d’une ornement de vue, de commandes et de paramètres . Microsoft Docs
+title: Création d’un ornement de vue, commandes et paramètres | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 ms.assetid: 4a2df0a3-42da-4f7b-996f-ee16a35ac922
 author: acangialosi
 ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4aab9e0ede95eebe6f8f54cc3f01e7e7d5f98d1c
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.openlocfilehash: 392c4be60f2285edb986d5ca7a1cf4a2202e03c7
+ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2020
-ms.locfileid: "80697645"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "85905039"
 ---
-# <a name="walkthrough-create-a-view-adornment-commands-and-settings-column-guides"></a>Procédure pas à pas : Créez une parure de vue, des commandes et des paramètres (guides de colonne)
-Vous pouvez étendre l’éditeur de texte/code Visual Studio avec commandes et effets de vue. Cet article vous montre comment commencer avec une fonction d’extension populaire, guides de colonnes. Les guides de colonne sont des lignes visuellement légères dessinées sur la vue de l’éditeur de texte pour vous aider à gérer votre code à des largeurs de colonne spécifiques. Plus précisément, le code formaté peut être important pour les échantillons que vous incluez dans les documents, les billets de blog ou les rapports de bogues.
+# <a name="walkthrough-create-a-view-adornment-commands-and-settings-column-guides"></a>Procédure pas à pas : créer un ornement, des commandes et des paramètres d’affichage (repères de colonne)
+Vous pouvez étendre l’éditeur de texte/Code de Visual Studio avec des commandes et des effets de vue. Cet article explique comment prendre en main une fonctionnalité d’extension populaire, repères de colonne. Les repères de colonne sont des lignes visuelles qui s’affichent dans la vue de l’éditeur de texte pour vous aider à gérer votre code à des largeurs de colonne spécifiques. Plus précisément, le code mis en forme peut être important pour les exemples que vous incluez dans des documents, des billets de blog ou des rapports de bogues.
 
 Lors de cette procédure pas à pas, vous allez effectuer les opérations suivantes :
 - Créer un projet VSIX
-- Ajouter une parure de vue d’éditeur
-- Ajoutez un support pour enregistrer et obtenir des paramètres (où dessiner des guides de colonne et leur couleur)
-- Ajouter des commandes (ajouter/supprimer les guides de colonne, changer de couleur)
-- Placez les commandes sur le menu Edit et les menus contextuels de documents texte
-- Ajoutez un support pour invoquer les commandes de la fenêtre de commande de studio visuel
+- Ajouter un ornement de vue de l’éditeur
+- Ajouter la prise en charge de l’enregistrement et de l’obtention des paramètres (où vous pouvez dessiner des repères de colonne et leur couleur)
+- Ajouter des commandes (ajouter/supprimer des repères de colonne, modifier leur couleur)
+- Placez les commandes dans les menus contextuels du menu Edition et du document texte
+- Ajouter la prise en charge de l’appel des commandes à partir de la fenêtre commande de Visual Studio
 
-  Vous pouvez essayer une version de la fonction guides de colonne avec cette[extension](https://marketplace.visualstudio.com/items?itemName=PaulHarrington.EditorGuidelines)Visual Studio Gallery .
+  Vous pouvez essayer une version de la fonctionnalité repères de colonne avec cette[extension](https://marketplace.visualstudio.com/items?itemName=PaulHarrington.EditorGuidelines)de la Galerie Visual Studio.
 
   > [!NOTE]
-  > Dans cette procédure pas à pas, vous collez une grande quantité de code dans quelques fichiers générés par les modèles d’extension Visual Studio. Mais, bientôt cette procédure pas à pas se référera à une solution complète sur GitHub avec d’autres exemples d’extension. Le code terminé est légèrement différent en ce qu’il a de véritables icônes de commande au lieu d’utiliser des icônes génériques.
+  > Dans cette procédure pas à pas, vous collez une grande quantité de code dans quelques fichiers générés par les modèles d’extension Visual Studio. Mais bientôt, cette procédure pas à pas fera référence à une solution terminée sur GitHub avec d’autres exemples d’extensions. Le code complet est légèrement différent en ce qu’il contient des icônes de commandes réelles au lieu d’utiliser des icônes generictemplate.
 
 ## <a name="get-started"></a>Bien démarrer
-A partir de Visual Studio 2015, vous n’installez pas le Visual Studio SDK à partir du centre de téléchargement. Il est inclus comme une fonctionnalité facultative dans la configuration Visual Studio. Vous pouvez également installer le VS SDK plus tard. Pour plus d’informations, voir [Installer le Studio Visuel SDK](../extensibility/installing-the-visual-studio-sdk.md).
+À compter de Visual Studio 2015, vous n’installez pas le kit de développement logiciel (SDK) Visual Studio à partir du centre de téléchargement. Il est inclus en tant que fonctionnalité facultative dans le programme d’installation de Visual Studio. Vous pouvez également installer le kit de développement logiciel (SDK) Visual Studio plus tard. Pour plus d’informations, consultez [installer le kit de développement logiciel (SDK) Visual Studio](../extensibility/installing-the-visual-studio-sdk.md).
 
 ## <a name="set-up-the-solution"></a>Configurer la solution
-Tout d’abord, vous créez un projet VSIX, ajoutez une parure de vue d’éditeur, puis ajoutez une commande (qui ajoute un VSPackage pour posséder la commande). L’architecture de base est la suivante:
-- Vous avez un auditeur de création `ColumnGuideAdornment` de vue de texte qui crée un objet par vue. Cet objet est à l’écoute des événements concernant le changement de vue ou les paramètres changeant, mettant à jour ou redessinant les guides de colonne au besoin.
-- Il ya `GuidesSettingsManager` un qui gère la lecture et l’écriture à partir du stockage des paramètres Visual Studio. Le gestionnaire des paramètres dispose également d’opérations de mise à jour des paramètres qui prennent en charge les commandes de l’utilisateur (ajouter la colonne, supprimer la colonne, changer de couleur).
-- Il ya un paquet VSIP qui est nécessaire si vous avez des commandes utilisateur, mais c’est juste le code de la plaque chauffante qui initialise l’objet de mise en œuvre des commandes.
-- Il y `ColumnGuideCommands` a un objet qui exécute les commandes de l’utilisateur et accroche les gestionnaires de commande pour les commandes déclarées dans le fichier *.vsct.*
+Tout d’abord, vous créez un projet VSIX, vous ajoutez un ornement de vue de l’éditeur, puis vous ajoutez une commande (qui ajoute un VSPackage pour propriétaire de la commande). L’architecture de base est la suivante :
+- Vous disposez d’un écouteur de création de vue de texte qui crée un `ColumnGuideAdornment` objet par vue. Cet objet écoute les événements relatifs aux repères de colonne modification ou modification des paramètres, mise à jour ou redessination, si nécessaire.
+- Il y a un `GuidesSettingsManager` qui gère la lecture et l’écriture à partir du stockage des paramètres de Visual Studio. Le gestionnaire de paramètres comporte également des opérations de mise à jour des paramètres qui prennent en charge les commandes utilisateur (ajouter une colonne, supprimer une colonne, modifier la couleur).
+- Un package VSIP est nécessaire si vous avez des commandes utilisateur, mais il s’agit simplement d’un code réutilisable qui initialise l’objet d’implémentation de commandes.
+- Il existe un `ColumnGuideCommands` objet qui exécute les commandes utilisateur et raccorde les gestionnaires de commandes pour les commandes déclarées dans le fichier *. vsct* .
 
-  **VSIX**. Utilisez **File &#124; Nouvelle commande ...** pour créer un projet. Choisissez le nœud **Extensibility** sous **le** volet de navigation gauche et choisissez **le projet VSIX** dans le volet droit. Entrez le nom **ColumnGuides** et choisissez **OK** pour créer le projet.
+  **VSIX**. Utilisez la commande **File &#124; New...** pour créer un projet. Choisissez le nœud **extensibilité** sous **C#** dans le volet de navigation gauche, puis choisissez **projet VSIX** dans le volet droit. Entrez le nom **ColumnGuides** , puis choisissez **OK** pour créer le projet.
 
-  **Voir l’ornement .** Appuyez sur le bouton pointeur droit sur le nœud de projet dans l’explorer de solution. Choisissez **l’ajouter &#124; nouvel article ...** commande pour ajouter un nouvel élément d’ornement de vue. Choisissez **Extensibility &#124; Editor** dans le volet de navigation gauche et choisissez **l’éditeur Viewport Adornment** dans le volet droit. Entrez le nom **ColumnGuideAdornment** comme nom de l’élément et choisissez **Ajouter** pour l’ajouter.
+  **Afficher l’ornement**. Appuyez sur le bouton de pointeur droit sur le nœud du projet dans la Explorateur de solutions. Choisissez la commande **ajouter &#124; nouvel élément...** pour ajouter un nouvel élément d’ornement de vue. Choisissez **extensibilité &#124; Editor** dans le volet de navigation gauche, puis choisissez l’ornement de la **fenêtre d’affichage** de l’éditeur dans le volet droit. Entrez le nom **ColumnGuideAdornment** comme nom d’élément, puis choisissez **Ajouter** pour l’ajouter.
 
-  Vous pouvez voir ce modèle d’élément ajouté deux fichiers au projet (ainsi que des références, et ainsi de suite): **ColumnGuideAdornment.cs** et **ColumnGuideAdornmentTextViewCreationListener.cs**. Les modèles dessinent un rectangle violet sur la vue. Dans la section suivante, vous changez quelques lignes dans l’auditeur de création de vue et remplacez le contenu de **ColumnGuideAdornment.cs**.
+  Vous pouvez voir que ce modèle d’élément a ajouté deux fichiers au projet (ainsi que des références, et ainsi de suite) : **ColumnGuideAdornment.cs** et **ColumnGuideAdornmentTextViewCreationListener.cs**. Les modèles dessinent un rectangle violet sur la vue. Dans la section suivante, vous modifiez deux lignes dans l’écouteur de création de vue et remplacez le contenu de **ColumnGuideAdornment.cs**.
 
-  **Commandes**. Dans **Solution Explorer**, appuyez sur le bouton de pointeur droit sur le nœud de projet. Choisissez **l’ajouter &#124; nouvel article ...** commande pour ajouter un nouvel élément d’ornement de vue. Choisissez **Extensibility &#124; VSPackage** dans le volet de navigation gauche et choisissez **Custom Command** dans le volet droit. Entrez le nom **ColumnGuideCommands** comme nom de l’élément et choisissez **Ajouter**. En plus de plusieurs références, l’ajout des commandes et du paquet a également ajouté **ColumnGuideCommands.cs**, **ColumnGuideCommandsPackage.cs**, et **ColumnGuideCommandsPackage.vsct**. Dans la section suivante, vous remplacez le contenu des premiers et derniers fichiers pour définir et implémenter les commandes.
+  **Commandes**. Dans **Explorateur de solutions**, appuyez sur le bouton de pointeur droit sur le nœud du projet. Choisissez la commande **ajouter &#124; nouvel élément...** pour ajouter un nouvel élément d’ornement de vue. Choisissez **extensibilité &#124; VSPackage** dans le volet de navigation gauche et choisissez **commande personnalisée** dans le volet droit. Entrez le nom **ColumnGuideCommands** comme nom d’élément, puis choisissez **Ajouter**. En plus de plusieurs références, l’ajout des commandes et du package a également ajouté **ColumnGuideCommands.cs**, **ColumnGuideCommandsPackage.cs**et **ColumnGuideCommandsPackage. vsct**. Dans la section suivante, vous allez remplacer le contenu des premier et dernier fichiers pour définir et implémenter les commandes.
 
-## <a name="set-up-the-text-view-creation-listener"></a>Configurez l’auditeur de création de vue de texte
-Ouvrez *ColumnGuideAdornmentTextViewCreationListener.cs* dans l’éditeur. Ce code implémente un gestionnaire chaque fois que Visual Studio crée des vues de texte. Il y a des attributs qui contrôlent lorsque le gestionnaire est appelé en fonction des caractéristiques de la vue.
+## <a name="set-up-the-text-view-creation-listener"></a>Configurer l’écouteur de création d’un affichage de texte
+Ouvrez *ColumnGuideAdornmentTextViewCreationListener.cs* dans l’éditeur. Ce code implémente un gestionnaire pour chaque fois que Visual Studio crée des affichages de texte. Des attributs contrôlent le moment où le gestionnaire est appelé, selon les caractéristiques de la vue.
 
-Le code doit également déclarer une couche d’ornement. Lorsque l’éditeur met à jour les vues, il obtient les couches d’ornement pour la vue et de ce qui obtient les éléments d’ornement. Vous pouvez déclarer la commande de votre couche par rapport à d’autres avec des attributs. Remplacer la ligne suivante :
+Le code doit également déclarer une couche d’ornement. Lorsque l’éditeur met à jour des vues, il obtient les couches d’ornement pour la vue et de qui obtient les éléments d’ornement. Vous pouvez déclarer le classement de votre couche par rapport aux autres avec des attributs. Remplacez la ligne suivante :
 
 ```csharp
 [Order(After = PredefinedAdornmentLayers.Caret)]
 ```
 
-avec ces deux lignes:
+avec ces deux lignes :
 
 ```csharp
 [Order(Before = PredefinedAdornmentLayers.Text)]
 [TextViewRole(PredefinedTextViewRoles.Document)]
 ```
 
-La ligne que vous avez remplacée est dans un groupe d’attributs qui déclarent une couche d’ornement. La première ligne que vous avez modifiée ne change que lorsque les lignes de guidage de colonne apparaissent. Tracer les lignes "avant" le texte dans la vue signifie qu’ils apparaissent derrière ou en dessous du texte. La deuxième ligne déclare que les ornements guide de colonne sont applicables aux entités de texte qui correspondent à votre notion d’un document, mais vous pouvez déclarer l’ornement, par exemple, pour fonctionner uniquement pour le texte modifiable. Il y a plus d’informations dans [le service de langue et les points d’extension de l’éditeur](../extensibility/language-service-and-editor-extension-points.md)
+La ligne que vous avez remplacée se trouve dans un groupe d’attributs qui déclarent une couche d’ornement. La première ligne vous avez modifié uniquement les modifications où les lignes de repère de colonne apparaissent. Le fait de dessiner les lignes avant le texte de la vue signifie qu’elles apparaissent derrière le texte ou en dessous. La deuxième ligne déclare que les ornements du repère de colonne s’appliquent aux entités de texte qui correspondent à votre notion de document, mais vous pouvez déclarer l’ornement, par exemple, pour travailler uniquement pour du texte modifiable. Il y a plus d’informations sur [les points d’extension du service de langage et](../extensibility/language-service-and-editor-extension-points.md) de l’éditeur
 
-## <a name="implement-the-settings-manager"></a>Implémenter le gestionnaire des paramètres
-Remplacer le contenu du *GuidesSettingsManager.cs* par le code suivant (expliqué ci-dessous):
+## <a name="implement-the-settings-manager"></a>Implémenter le gestionnaire de paramètres
+Remplacez le contenu de *GuidesSettingsManager.cs* par le code suivant (décrit ci-dessous) :
 
 ```csharp
 using Microsoft.VisualStudio.Settings;
@@ -319,32 +319,32 @@ namespace ColumnGuides
 
 ```
 
-La plupart de ce code crée et analyse le\<format paramètres:\<"RGB (int\<>, int \<>, int>) int>, \<int>, ...".  Les entiers à la fin sont les colonnes à base unique où vous voulez des guides de colonne. L’extension des guides de colonne capture tous ses paramètres dans une seule chaîne de valeur de réglage.
+La majeure partie de ce code crée et analyse le format des paramètres : « RGB ( \<int> , \<int> , \<int> ) \<int> , \<int> ,... ».  Les entiers à la fin sont les colonnes de base 1 où vous souhaitez insérer des repères de colonne. L’extension repères de colonne capture tous ses paramètres dans une chaîne de valeur de paramètre unique.
 
-Il ya quelques parties du code à mettre en évidence. La ligne de code suivante permet d’obtenir l’emballage géré Visual Studio pour le stockage des paramètres. Pour la plupart, cela abstrait sur le registre Windows, mais cette API est indépendante du mécanisme de stockage.
+Certaines parties du code méritent une mise en évidence. La ligne de code suivante obtient le wrapper managé Visual Studio pour le stockage des paramètres. Pour l’essentiel, cela se résume au registre Windows, mais cette API est indépendante du mécanisme de stockage.
 
 ```csharp
 internal static SettingsManager VsManagedSettingsManager =
     new ShellSettingsManager(ServiceProvider.GlobalProvider);
 ```
 
-Le stockage des paramètres Visual Studio utilise un identifiant de catégorie et un identifiant de paramètre pour identifier uniquement tous les paramètres :
+Le stockage des paramètres de Visual Studio utilise un identificateur de catégorie et un identificateur de paramètre pour identifier de manière unique tous les paramètres :
 
 ```csharp
 private const string _collectionSettingsName = "Text Editor";
 private const string _settingName = "Guides";
 ```
 
-Vous n’avez `"Text Editor"` pas à utiliser comme nom de catégorie. Tu peux choisir ce que tu veux.
+Vous n’avez pas besoin d’utiliser `"Text Editor"` comme nom de catégorie. Vous pouvez choisir tout ce que vous aimez.
 
-Les premières fonctions sont les points d’entrée pour modifier les paramètres. Ils vérifient les contraintes de haut niveau comme le nombre maximum de guides autorisés.  Ensuite, ils `WriteSettings`appellent , qui compose une `GuideLinesConfiguration`chaîne de réglages et définit la propriété . La configuration de cette propriété permet d’économiser `SettingsChanged` la valeur des `ColumnGuideAdornment` paramètres au magasin de paramètres Visual Studio et déclenche l’événement pour mettre à jour tous les objets, chacun associé à une vue textuelle.
+Les premières fonctions sont les points d’entrée pour modifier les paramètres. Ils vérifient les contraintes de haut niveau, comme le nombre maximal de guides autorisés.  Ensuite, ils appellent `WriteSettings` , qui compose une chaîne de paramètres et définit la propriété `GuideLinesConfiguration` . La définition de cette propriété enregistre la valeur des paramètres dans le magasin de paramètres de Visual Studio et déclenche l' `SettingsChanged` événement pour mettre à jour tous les `ColumnGuideAdornment` objets associés à un affichage de texte.
 
-Il ya un couple de fonctions `CanAddGuideline`de point d’entrée, tels que , qui sont utilisés pour implémenter des commandes qui changent les paramètres. Lorsque Visual Studio affiche des menus, il interroge les implémentations de commande pour voir si la commande est actuellement activée, quel est son nom, et ainsi de suite.  Ci-dessous vous voyez comment brancher ces points d’entrée pour les implémentations de commande. Pour plus d’informations sur les commandes, voir [Menus et commandes Extend](../extensibility/extending-menus-and-commands.md).
+Il existe deux fonctions de point d’entrée, telles que `CanAddGuideline` , qui permettent d’implémenter des commandes qui modifient les paramètres. Lorsque Visual Studio affiche des menus, il interroge les implémentations de commande pour déterminer si la commande est actuellement activée, son nom, etc.  Vous trouverez ci-dessous comment raccorder ces points d’entrée pour les implémentations de commande. Pour plus d’informations sur les commandes, consultez [étendre des menus et des commandes](../extensibility/extending-menus-and-commands.md).
 
-## <a name="implement-the-columnguideadornment-class"></a>Mettre en œuvre la classe ColumnGuideAdornment
-La `ColumnGuideAdornment` classe est instantanée pour chaque vue de texte qui peut avoir des ornements. Cette classe est à l’écoute des événements sur les changements de vue ou les paramètres changeants, et les guides de colonne de mise à jour ou de redessinage si nécessaire.
+## <a name="implement-the-columnguideadornment-class"></a>Implémenter la classe ColumnGuideAdornment
+La `ColumnGuideAdornment` classe est instanciée pour chaque vue de texte qui peut avoir des ornements. Cette classe écoute les événements relatifs à la modification de l’affichage ou à la modification des paramètres, ainsi qu’aux repères de colonne de mise à jour ou de redessination, si nécessaire.
 
-Remplacer le contenu du *ColumnGuideAdornment.cs* par le code suivant (expliqué ci-dessous):
+Remplacez le contenu de *ColumnGuideAdornment.cs* par le code suivant (décrit ci-dessous) :
 
 ```csharp
 using System;
@@ -486,33 +486,33 @@ namespace ColumnGuides
 }
 ```
 
-Les instances de cette <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextView> classe s’accrochent à l’associé et une liste d’objets `Line` dessinés sur la vue.
+Les instances de cette classe contiennent le associé <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextView> et une liste d' `Line` objets dessinés sur la vue.
 
-Le constructeur (appelé `ColumnGuideAdornmentTextViewCreationListener` à partir de quand Visual `Line` Studio crée de nouvelles vues) crée les objets de guidage de colonne.  Le constructeur ajoute également des `SettingsChanged` gestionnaires pour `GuidesSettingsManager`l’événement `LayoutChanged` (défini dans ) et les événements de vue et `Closed`.
+Le constructeur (appelé à partir de `ColumnGuideAdornmentTextViewCreationListener` Lorsque Visual Studio crée des vues) crée les objets de repère de colonne `Line` .  Le constructeur ajoute également des gestionnaires pour l' `SettingsChanged` événement (défini dans `GuidesSettingsManager` ) et les événements d’affichage `LayoutChanged` et `Closed` .
 
-L’événement `LayoutChanged` s’allume en raison de plusieurs types de changements dans la vue, y compris lorsque Visual Studio crée la vue. Le `OnViewLayoutChanged` gestionnaire `AddGuidelinesToAdornmentLayer` appelle à exécuter. Le code `OnViewLayoutChanged` détermine s’il doit mettre à jour les positions de ligne en fonction de modifications telles que les modifications de la taille des polices, les gouttières, le défilement horizontal, etc. Le code `UpdatePositions` dans les causes des lignes de guidage à dessiner entre les caractères ou juste après la colonne de texte qui est dans le caractère spécifié compensé dans la ligne de texte.
+L' `LayoutChanged` événement se déclenche en raison de plusieurs types de modifications dans la vue, y compris lorsque Visual Studio crée la vue. Le `OnViewLayoutChanged` Gestionnaire appelle `AddGuidelinesToAdornmentLayer` pour exécuter. Le code dans `OnViewLayoutChanged` détermine s’il doit mettre à jour les positions des lignes en fonction des modifications telles que les modifications de la taille de la police, afficher les gouttières, le défilement horizontal, etc. Le code dans `UpdatePositions` provoque le dessin des lignes de repère entre les caractères ou juste après la colonne de texte qui se trouve dans l’offset de caractère spécifié dans la ligne de texte.
 
-Chaque fois `SettingsChanged` que les paramètres `Line` changent la fonction recrée juste tous les objets avec quels que soient les nouveaux paramètres. Après avoir défini les positions de `Line` ligne, `ColumnGuideAdornment` le code supprime tous les objets précédents de la couche d’ornement et en ajoute les nouveaux.
+Chaque fois que des paramètres modifient la `SettingsChanged` fonction, il suffit de recréer tous les `Line` objets avec les nouveaux paramètres. Après avoir défini les positions de ligne, le code supprime tous les `Line` objets précédents de la `ColumnGuideAdornment` couche d’ornement et en ajoute les nouveaux.
 
-## <a name="define-the-commands-menus-and-menu-placements"></a>Définissez les commandes, les menus et les emplacements de menu
-Il peut y avoir beaucoup à déclarer des commandes et des menus, placer des groupes de commandes ou des menus sur divers autres menus, et brancher les gestionnaires de commande. Cette procédure pas à pas met en évidence le fonctionnement des commandes dans cette extension, mais pour des informations plus [approfondies,](../extensibility/extending-menus-and-commands.md)voir Extend menus et commandes .
+## <a name="define-the-commands-menus-and-menu-placements"></a>Définir les commandes, menus et placements de menus
+Il peut être important de déclarer des commandes et des menus, de placer des groupes de commandes ou de menus dans d’autres menus et de raccorder des gestionnaires de commandes. Cette procédure pas à pas explique comment les commandes fonctionnent dans cette extension, mais pour plus d’informations, consultez [étendre des menus et des commandes](../extensibility/extending-menus-and-commands.md).
 
-### <a name="introduction-to-the-code"></a>Introduction au code
-L’extension des Guides de colonne montre la déclaration d’un groupe de commandes qui appartiennent ensemble (ajouter la colonne, supprimer la colonne, changer la couleur de la ligne), puis placer ce groupe sur un sous-menu du menu contextuelle de l’éditeur.  L’extension des Guides de colonne ajoute également les commandes au menu **Principal Edit,** mais les garde invisibles, discutés comme un modèle commun ci-dessous.
+### <a name="introduction-to-the-code"></a>Présentation du code
+L’extension repères de colonne illustre la déclaration d’un groupe de commandes qui appartiennent à la fois (ajouter une colonne, supprimer une colonne, modifier la couleur de la ligne), puis placer ce groupe dans un sous-menu du menu contextuel de l’éditeur.  L’extension repères de colonne ajoute également les commandes au menu **Edition** principal, mais les empêche de les masquer, comme le montre le modèle courant ci-dessous.
 
-Il y a trois parties à la mise en œuvre des commandes : ColumnGuideCommandsPackage.cs, ColumnGuideCommandsPackage.vsct, et ColumnGuideCommands.cs. Le code généré par les modèles met une commande sur le menu **Tools** qui apparaît une boîte de dialogue comme l’implémentation. Vous pouvez regarder comment cela est mis en œuvre dans les fichiers *.vsct* et *ColumnGuideCommands.cs* car il est simple. Vous remplacez le code dans ces fichiers ci-dessous.
+L’implémentation des commandes comporte trois parties : ColumnGuideCommandsPackage.cs, ColumnGuideCommandsPackage. vsct et ColumnGuideCommands.cs. Le code généré par les modèles met une commande dans le menu **Outils** qui affiche une boîte de dialogue en tant qu’implémentation. Vous pouvez examiner la manière dont la méthode est implémentée dans les fichiers *. vsct* et *ColumnGuideCommands.cs* , car elle est simple. Vous remplacez le code dans ces fichiers ci-dessous.
 
-Le code de paquet contient des déclarations de plaque chauffante nécessaires pour Visual Studio pour découvrir que l’extension offre des commandes et pour trouver où placer les commandes. Lorsque le paquet est paralé, il instantanéise la classe de mise en œuvre des commandes. Pour plus d’informations sur les forfaits relatifs aux commandes, voir [Les menus et les commandes Extend](../extensibility/extending-menus-and-commands.md).
+Le code du package contient les déclarations de réutilisance nécessaires à Visual Studio pour découvrir que l’extension offre des commandes et pour déterminer où placer les commandes. Lorsque le package est initialisé, il instancie la classe d’implémentation Commands. Pour plus d’informations sur les packages relatifs aux commandes, consultez [étendre des menus et des commandes](../extensibility/extending-menus-and-commands.md).
 
-### <a name="a-common-commands-pattern"></a>Un modèle de commande commun
-Les commandes dans l’extension des Guides de colonnes sont un exemple d’un modèle très commun dans Visual Studio. Vous mettez des commandes connexes dans un groupe, et vous mettez`<CommandFlag>CommandWellOnly</CommandFlag>`ce groupe sur un menu principal, souvent avec " mis à rendre la commande invisible.  Mettre des commandes sur les menus principaux (tels que **Edit**) leur donne de beaux noms (tels que **Edit.AddColumnGuide**), qui sont utiles pour trouver des commandes lors de la réaffectation des liaisons clés dans **Tools Options**. Il est également utile pour obtenir l’achèvement lors de l’invocation des commandes de la fenêtre de **commandement**.
+### <a name="a-common-commands-pattern"></a>Modèle de commandes courant
+Les commandes de l’extension repères de colonne sont un exemple de modèle très courant dans Visual Studio. Vous placez les commandes associées dans un groupe et vous placez ce groupe dans un menu principal, souvent avec « `<CommandFlag>CommandWellOnly</CommandFlag>` » défini pour rendre la commande invisible.  Le fait de placer des commandes dans les menus principaux (par exemple, **modifier**) leur donne des noms intéressants (tels que **Edit. AddColumnGuide**), qui sont utiles pour rechercher des commandes lors de la réaffectation des combinaisons de touches dans les **Options des outils**. Elle est également utile pour l’obtention de la saisie semi-automatique lors de l’appel de commandes à partir de la **fenêtre commande**.
 
-Vous ajoutez ensuite le groupe de commandes aux menus contextuels ou sous-menus où vous vous attendez à ce que l’utilisateur utilise les commandes. Visual Studio `CommandWellOnly` se traite comme un drapeau d’invisibilité pour les menus principaux seulement. Lorsque vous placez le même groupe de commandes sur un menu contextuelle ou un sous-menu, les commandes sont visibles.
+Vous ajoutez ensuite le groupe de commandes aux menus contextuels ou aux sous-menus où vous prévoyez que l’utilisateur utilise les commandes. Visual Studio traite `CommandWellOnly` comme un indicateur d’invisibilité pour les menus principaux uniquement. Lorsque vous placez le même groupe de commandes dans un menu contextuel ou sous-menu, les commandes sont visibles.
 
-Dans le cadre du modèle commun, l’extension des Guides de colonnes crée un deuxième groupe qui contient un seul sous-menu. Le sous-menu contient à son tour le premier groupe avec les commandes de guide à quatre colonnes. Le deuxième groupe qui détient le sous-menu est l’actif réutilisable que vous placez sur différents menus contextuels, qui met un sous-menu sur ces menus contextuels.
+Dans le cadre du modèle commun, l’extension repères de colonne crée un deuxième groupe qui contient un seul sous-menu. Le sous-menu contient à son tour le premier groupe avec les commandes du repère à quatre colonnes. Le deuxième groupe qui contient le sous-menu est l’élément réutilisable que vous placez dans différents menus contextuels, qui place un sous-menu sur ces menus contextuels.
 
-### <a name="the-vsct-file"></a>Le fichier .vsct
-Le fichier *.vsct* déclare les commandes et où ils vont, avec des icônes et ainsi de suite. Remplacer le contenu du fichier *.vsct* par le code suivant (expliqué ci-dessous):
+### <a name="the-vsct-file"></a>Fichier. vsct
+Le fichier *. vsct* déclare les commandes et leur emplacement, ainsi que les icônes, etc. Remplacez le contenu du fichier *. vsct* par le code suivant (indiqué ci-dessous) :
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -748,22 +748,22 @@ Le fichier *.vsct* déclare les commandes et où ils vont, avec des icônes et a
 
 ```
 
-**GUIDS**. Pour Visual Studio pour trouver vos gestionnaires de commande et les invoquer, vous devez vous assurer que le paquet GUID déclaré dans le fichier *ColumnGuideCommandsPackage.cs* (généré à partir du modèle d’élément de projet) correspond au paquet GUID déclaré dans le fichier *.vsct* (copié d’en haut). Si vous réutilisationz ce code d’échantillon, vous devez vous assurer d’avoir un GUID différent afin de ne pas entrer en conflit avec quelqu’un d’autre qui peut avoir copié ce code.
+**GUID**. Pour permettre à Visual Studio de rechercher vos gestionnaires de commandes et de les appeler, vous devez vous assurer que le GUID du package déclaré dans le fichier *ColumnGuideCommandsPackage.cs* (généré à partir du modèle d’élément de projet) correspond au GUID du package déclaré dans le fichier *. vsct* (copié à partir de la version ci-dessus). Si vous réutilisez cet exemple de code, vous devez vous assurer que vous disposez d’un GUID différent afin de ne pas entrer en conflit avec les autres personnes qui ont peut-être copié ce code.
 
-Trouvez cette ligne dans *ColumnGuideCommandsPackage.cs* et copiez le GUID entre les guillemets :
+Recherchez cette ligne dans *ColumnGuideCommandsPackage.cs* et copiez le GUID entre les guillemets :
 
 ```csharp
 public const string PackageGuidString = "ef726849-5447-4f73-8de5-01b9e930f7cd";
 ```
 
-Ensuite, collez le GUID dans le fichier *.vsct* afin `Symbols` d’avoir la ligne suivante dans vos déclarations:
+Collez ensuite le GUID dans le fichier *. vsct* pour que vous disposiez de la ligne suivante dans vos `Symbols` déclarations :
 
 ```xml
 <GuidSymbol name="guidColumnGuideCommandsPkg"
             value="{ef726849-5447-4f73-8de5-01b9e930f7cd}" />
 ```
 
-Les GUIDs pour l’ensemble de commande et le fichier d’image bitmap doivent être uniques pour vos extensions, aussi:
+Les GUID pour le jeu de commandes et le fichier image bitmap doivent également être uniques pour vos extensions :
 
 ```xml
 <GuidSymbol name="guidColumnGuidesCommandSet"
@@ -771,36 +771,36 @@ Les GUIDs pour l’ensemble de commande et le fichier d’image bitmap doivent �
 <GuidSymbol name="guidImages" value="{2C99F852-587C-43AF-AA2D-F605DE2E46EF}">
 ```
 
-Mais, vous n’avez pas besoin de changer l’ensemble de commande et les GUIDs image bitmap dans cette procédure pas à pas pour obtenir le code de fonctionner. Le défini de commande GUID doit correspondre à la déclaration dans le fichier *ColumnGuideCommands.cs,* mais vous remplacez le contenu de ce fichier, aussi; par conséquent, les GUIDs correspondront.
+Toutefois, vous n’avez pas besoin de modifier le jeu de commandes et les GUID d’image bitmap dans cette procédure pas à pas pour que le code fonctionne. Le GUID du jeu de commandes doit correspondre à la déclaration dans le fichier *ColumnGuideCommands.cs* , mais vous remplacez également le contenu de ce fichier ; par conséquent, les GUID correspondent.
 
-D’autres GUID dans le fichier *.vsct* identifient les menus préexistants auxquels les commandes de guide de colonne sont ajoutées, de sorte qu’elles ne changent jamais.
+D’autres GUID dans le fichier *. vsct* identifient les menus préexistants auxquels les commandes de guide de colonne sont ajoutées, afin qu’elles ne changent jamais.
 
-**Sections de fichiers**. Le *.vsct* a trois sections extérieures: commandes, placements et symboles. La section commandes définit les groupes de commande, les menus, les boutons ou les éléments de menu, et les bitmaps pour les icônes. La section placements déclare où les groupes vont sur les menus ou les placements supplémentaires sur les menus préexistants. La section des symboles déclare les identifiants utilisés ailleurs dans le fichier *.vsct,* ce qui rend le code *.vsct* plus lisible que d’avoir des GUIDs et des numéros hex partout.
+**Sections de fichier**. Le *. vsct* comporte trois sections externes : commandes, placements et symboles. La section commandes définit des groupes de commandes, des menus, des boutons ou des éléments de menu et des bitmaps pour les icônes. La section positionnements déclare où les groupes se trouvent dans des menus ou des emplacements supplémentaires sur des menus préexistants. La section Symbols déclare les identificateurs utilisés ailleurs dans le fichier *. vsct* , ce qui rend le code *. vsct* plus lisible que les GUID et les nombres hexadécimaux partout.
 
-**Section des commandes, définitions des groupes**. La section des commandes définit d’abord les groupes de commandement. Les groupes de commandes sont des commandes que vous voyez dans les menus avec de légères lignes grises séparant les groupes. Un groupe peut également remplir un sous-menu entier, comme dans cet exemple, et vous ne voyez pas les lignes de séparation grises dans ce cas. Les fichiers *.vsct* déclarent `GuidesMenuItemsGroup` deux groupes, `IDM_VS_MENU_EDIT` le qui est parenté `GuidesContextMenuGroup` à la (le menu **principal Edit)** et le qui est parent à la `IDM_VS_CTXT_CODEWIN` (menu contexte de l’éditeur de code).
+**Section commandes, définitions de groupes**. La section Commands définit tout d’abord les groupes de commandes. Les groupes de commandes sont des commandes qui s’affichent dans les menus avec de légers traits gris séparés par des groupes. Un groupe peut également remplir un sous-menu entier, comme dans cet exemple, et vous ne voyez pas les lignes de séparation grises dans ce cas. Les fichiers *. vsct* déclarent deux groupes, le `GuidesMenuItemsGroup` qui est apparenté au `IDM_VS_MENU_EDIT` (menu **édition** principal) et le `GuidesContextMenuGroup` qui est apparenté au `IDM_VS_CTXT_CODEWIN` (menu contextuel de l’éditeur de code).
 
-La deuxième déclaration `0x0600` de groupe a une priorité :
+La deuxième déclaration de groupe a une `0x0600` priorité :
 
 ```xml
 <Group guid="guidColumnGuidesCommandSet" id="GuidesContextMenuGroup"
              priority="0x0600">
 ```
 
-L’idée est de mettre le sous-menu des guides de colonne à la fin de n’importe quel menu contextuelle auquel vous ajoutez le groupe de sous-menu. Mais, vous ne devriez pas supposer que vous savez mieux et forcer `0xFFFF`le sous-menu à toujours être le dernier en utilisant une priorité de . Vous devez expérimenter avec le numéro pour voir où se trouve votre sous-menu sur les menus contextuels où vous le placez. Dans ce `0x0600` cas, est assez élevé pour le mettre à la fin des menus autant que vous pouvez voir, mais il laisse place à quelqu’un d’autre pour concevoir leur extension pour être inférieur à l’extension des guides de colonne si c’est souhaitable.
+L’idée est de placer le sous-menu repères de colonne à la fin de n’importe quel menu contextuel auquel vous ajoutez le groupe de sous-menu. Toutefois, vous ne devez pas supposer que vous savez mieux et forcer le sous-menu à toujours être le dernier en utilisant une priorité de `0xFFFF` . Vous devez faire des essais avec le nombre pour voir où votre sous-menu se trouve dans les menus contextuels où vous le placez. Dans ce cas, `0x0600` est suffisamment élevé pour le placer à la fin des menus autant que vous pouvez le voir, mais il laisse de l’espace pour qu’une autre personne puisse concevoir son extension pour qu’elle soit inférieure à l’extension de repères de colonne si cela est souhaitable.
 
-**Section commandes, définition du menu**. Ensuite, la section de commande `GuidesSubMenu`définit le `GuidesContextMenuGroup`sous-menu , parenté à la . Le `GuidesContextMenuGroup` groupe que vous ajoutez à tous les menus de contexte pertinents. Dans la section placements, le code place le groupe avec les commandes de guide à quatre colonnes sur ce sous-menu.
+**Section commandes, définition de menu**. Ensuite, la section de commande définit le sous-menu `GuidesSubMenu` , apparenté à `GuidesContextMenuGroup` . `GuidesContextMenuGroup`Est le groupe que vous ajoutez à tous les menus contextuels pertinents. Dans la section positionnements, le code place le groupe avec les commandes du repère à quatre colonnes dans ce sous-menu.
 
-**Section commandes, définitions de boutons**. La section commandes définit ensuite les éléments de menu ou les boutons qui sont les commandes de guides à quatre colonnes. `CommandWellOnly`, discuté ci-dessus, signifie que les commandes sont invisibles lorsqu’elles sont placées sur un menu principal. Deux des déclarations de bouton d’élément de menu `AllowParams` (ajouter le guide et supprimer le guide) ont également un drapeau :
+**Section commandes, définitions de boutons**. La section commandes définit ensuite les éléments de menu ou les boutons qui représentent les commandes de repères à quatre colonnes. `CommandWellOnly`, comme indiqué ci-dessus, signifie que les commandes sont invisibles lorsqu’elles sont placées dans un menu principal. Deux des déclarations de bouton d’élément de menu (ajouter un guide et supprimer le guide) ont également un `AllowParams` indicateur :
 
 ```xml
 <CommandFlag>AllowParams</CommandFlag>
 ```
 
-Ce drapeau permet, en plus d’avoir des emplacements de menu principal, la commande de recevoir des arguments lorsque Visual Studio invoque le gestionnaire de commande.  Si l’utilisateur exécute la commande à partir de la fenêtre de commande, l’argument est transmis au gestionnaire de commande dans les arguments de l’événement.
+Cet indicateur active, ainsi que les emplacements de menu principal, la commande pour recevoir des arguments quand Visual Studio appelle le gestionnaire de commandes.  Si l’utilisateur exécute la commande à partir de la fenêtre commande, l’argument est passé au gestionnaire de commandes dans les arguments de l’événement.
 
-**Sections de commande, définitions de bitmaps**. Enfin, la section commandes déclare les bitmaps ou les icônes utilisées pour les commandes. Cette section est une déclaration simple qui identifie la ressource du projet et répertorie les index à une base des icônes utilisées. La section symboles du fichier *.vsct* déclare les valeurs des identificateurs utilisés comme index. Cette procédure pas à pas utilise la bande de bitmap fournie avec le modèle d’élément de commande personnalisé ajouté au projet.
+**Sections de commande, définitions bitmaps**. Enfin, la section Commands déclare les bitmaps ou les icônes utilisées pour les commandes. Cette section est une déclaration simple qui identifie la ressource de projet et répertorie les index de base 1 des icônes utilisées. La section Symbols du fichier *. vsct* déclare les valeurs des identificateurs utilisés comme index. Cette procédure pas à pas utilise la bande bitmap fournie avec le modèle d’élément de commande personnalisé ajouté au projet.
 
-**Section Placements**. Après la section des commandes est la section de placements. Le premier est l’endroit où le code ajoute le premier groupe discuté ci-dessus qui détient les commandes de guide à quatre colonnes au sous-menu où les commandes apparaissent:
+**Section placements**. Une fois que la section Commands est la section emplacements. La première est l’endroit où le code ajoute le premier groupe abordé ci-dessus, qui contient les commandes du repère à quatre colonnes dans le sous-menu où les commandes s’affichent :
 
 ```xml
 <CommandPlacement guid="guidColumnGuidesCommandSet" id="GuidesMenuItemsGroup"
@@ -809,14 +809,14 @@ Ce drapeau permet, en plus d’avoir des emplacements de menu principal, la comm
 </CommandPlacement>
 ```
 
-Tous les autres placements `GuidesContextMenuGroup` ajoutent le `GuidesSubMenu`(qui contient le ) à d’autres menus de contexte d’éditeur. Lorsque le code `GuidesContextMenuGroup`a déclaré le , il a été parenté au menu de contexte de l’éditeur de code. C’est pourquoi vous ne voyez pas de placement pour le menu contextuelle de l’éditeur de code.
+Tous les autres emplacements ajoutent le `GuidesContextMenuGroup` (qui contient le `GuidesSubMenu` ) à d’autres menus contextuels de l’éditeur. Lorsque le code a déclaré le `GuidesContextMenuGroup` , il a été apparenté au menu contextuel de l’éditeur de code. C’est pourquoi vous ne voyez pas d’emplacement pour le menu contextuel de l’éditeur de code.
 
-**Section symboles**. Comme indiqué ci-dessus, la section des symboles déclare les identificateurs utilisés ailleurs dans le fichier *.vsct,* ce qui rend le code *.vsct* plus lisible que d’avoir des GUIDs et des numéros hex partout. Les points importants de cette section sont que le paquet GUID doit être d’accord avec la déclaration dans la catégorie des paquets. Et, le jeu de commande GUID doit être d’accord avec la déclaration dans la classe de mise en œuvre de commande.
+**Section de symboles**. Comme indiqué ci-dessus, la section Symbols déclare des identificateurs utilisés ailleurs dans le fichier *. vsct* , ce qui rend le code *. vsct* plus lisible que les GUID et les nombres hexadécimaux partout. Les points importants de cette section sont que le GUID du package doit accepter la déclaration dans la classe de package. Et, le GUID du jeu de commandes doit accepter la déclaration dans la classe d’implémentation de la commande.
 
-## <a name="implement-the-commands"></a>Mettre en œuvre les commandes
-Le *fichier ColumnGuideCommands.cs* implémente les commandes et connecte les gestionnaires. Lorsque Visual Studio charge le paquet et l’initialise, le paquet fait à son tour appel `Initialize` à la classe de mise en œuvre des commandes. L’initialisation des commandes n’a qu’instantanéise la classe, et le constructeur branche tous les maîtres de commande.
+## <a name="implement-the-commands"></a>Implémenter les commandes
+Le fichier *ColumnGuideCommands.cs* implémente les commandes et raccorde les gestionnaires. Lorsque Visual Studio charge le package et l’initialise, le package appelle à son tour la `Initialize` classe d’implémentation des commandes. L’initialisation des commandes instancie simplement la classe et le constructeur raccorde tous les gestionnaires de commandes.
 
-Remplacer le contenu du *fichier ColumnGuideCommands.cs* par le code suivant (expliqué ci-dessous) :
+Remplacez le contenu du fichier *ColumnGuideCommands.cs* par le code suivant (indiqué ci-dessous) :
 
 ```csharp
 using System;
@@ -1157,11 +1157,11 @@ namespace ColumnGuides
 
 ```
 
-**Correction des références**. Vous manquez une référence à ce stade. Appuyez sur le bouton pointeur droit sur le nœud Références dans la Solution Explorer. Choisissez la commande **Add ....** Le dialogue **Add Reference** dispose d’une boîte de recherche dans le coin supérieur droit. Entrez "éditeur" (sans les citations doubles). Choisissez l’élément **Microsoft.VisualStudio.Editor** (vous devez cocher la case à gauche de l’élément, pas seulement sélectionner l’élément) et choisissez **OK** pour ajouter la référence.
+**Corriger les références**. Vous ne disposez pas d’une référence à ce stade. Appuyez sur le bouton de pointeur droit sur le nœud références dans le Explorateur de solutions. Choisissez la commande **Ajouter...** . La boîte de dialogue **Ajouter une référence** comporte une zone de recherche dans l’angle supérieur droit. Entrez « éditeur » (sans les guillemets doubles). Choisissez l’élément **Microsoft. VisualStudio. Editor** (vous devez activer la case à cocher à gauche de l’élément, et non simplement l’élément), puis choisissez **OK** pour ajouter la référence.
 
-**Initialisation**.  Lorsque la classe de paquets `Initialize` est initiale, elle fait appel à la classe de mise en œuvre des commandes. L’initialisation `ColumnGuideCommands` permet d’instantanéiser la classe et d’économiser l’instance de classe et la référence du paquet chez les membres de la classe.
+**Initialisation**.  Quand la classe de package est initialisée, elle appelle `Initialize` la classe d’implémentation Commands. L' `ColumnGuideCommands` initialisation instancie la classe et enregistre l’instance de classe et la référence de package dans les membres de la classe.
 
-Examinons l’un des raccordements de gestionnaire de commande du constructeur de classe :
+Examinons l’un des raccordements du gestionnaire de commandes à partir du constructeur de classe :
 
 ```csharp
 _addGuidelineCommand =
@@ -1172,17 +1172,17 @@ _addGuidelineCommand =
 
 ```
 
-Vous créez `OleMenuCommand`un . Visual Studio utilise le système de commande Microsoft Office. Les arguments clés lors `OleMenuCommand` de l’instantanéise d’un est la fonction qui implémente la commande (`AddColumnGuideExecuted`), la fonction à appeler lorsque Visual Studio affiche un menu avec la commande (`AddColumnGuideBeforeQueryStatus`), et l’ID de commande. Le studio visuel appelle la fonction de statut de requête avant d’afficher une commande sur un menu de sorte que la commande puisse se rendre invisible ou grisé dehors pour un affichage particulier du menu (par exemple, désactivant **la copie** s’il n’y a pas de sélection), changez son icône, ou même changez son nom (par exemple, d’ajouter quelque chose à enlever quelque chose), et ainsi de suite. L’ID de commande doit correspondre à une pièce d’identité de commande déclarée dans le fichier *.vsct.* Les chaînes pour l’ensemble de commande et les guides de colonne ajoutent la commande doit correspondre entre le fichier *.vsct* et le *ColumnGuideCommands.cs*.
+Vous créez un `OleMenuCommand` . Visual Studio utilise le système de commande Microsoft Office. Les arguments de clé lors de l’instanciation d’un `OleMenuCommand` est la fonction qui implémente la commande ( `AddColumnGuideExecuted` ), la fonction à appeler quand Visual Studio affiche un menu avec la commande ( `AddColumnGuideBeforeQueryStatus` ) et l’ID de commande. Visual Studio appelle la fonction d’état de la requête avant d’afficher une commande dans un menu afin que la commande puisse se rendre invisible ou grisée pour un affichage particulier du menu (par exemple, en désactivant la **copie** s’il n’y a aucune sélection), changer son icône ou même changer son nom (par exemple, ajouter un élément à supprimer un élément), et ainsi de suite. L’ID de commande doit correspondre à un ID de commande déclaré dans le fichier *. vsct* . Les chaînes pour le jeu de commandes et la commande Ajouter des repères de colonne doivent correspondre entre le fichier *. vsct* et le *ColumnGuideCommands.cs*.
 
-La ligne suivante fournit une assistance pour quand les utilisateurs invoquent la commande via la fenêtre de commande (expliquée ci-dessous) :
+La ligne suivante fournit une assistance pour les cas où les utilisateurs appellent la commande par le biais de la fenêtre commande (comme indiqué ci-dessous) :
 
 ```csharp
 _addGuidelineCommand.ParametersDescription = "<column>";
 ```
 
- **Statut de requête**. L’état de `AddColumnGuideBeforeQueryStatus` la `RemoveColumnGuideBeforeQueryStatus` requête fonctionne et vérifie certains paramètres (comme le nombre maximum de guides ou de colonnes max) ou s’il y a un guide de colonne à supprimer. Ils permettent les commandes si les conditions sont bonnes.  Les fonctions d’état de requête doivent être efficaces parce qu’elles s’exécutent chaque fois que Visual Studio affiche un menu et pour chaque commande sur le menu.
+ **État**de la requête. Les fonctions d’état `AddColumnGuideBeforeQueryStatus` de la requête et `RemoveColumnGuideBeforeQueryStatus` vérifient certains paramètres (par exemple, le nombre maximal de guides ou la colonne max) ou s’il existe un repère de colonne à supprimer. Ils activent les commandes si les conditions sont correctes.  Les fonctions d’état de la requête doivent être efficaces, car elles s’exécutent chaque fois que Visual Studio affiche un menu et pour chaque commande du menu.
 
- **Fonction AddColumnGuideExecuted**. La partie intéressante de l’ajout d’un guide est de comprendre la vue actuelle de l’éditeur et l’emplacement caret.  Tout d’abord, cette fonction appelle `GetApplicableColumn`, qui vérifie s’il ya un argument fourni par l’utilisateur dans les arguments de l’événement du gestionnaire de commande, et s’il n’y en a pas, la fonction vérifie le point de vue de l’éditeur:
+ **Fonction AddColumnGuideExecuted**. La partie intéressante de l’ajout d’un guide consiste à déterminer la vue actuelle de l’éditeur et l’emplacement du signe insertion.  Tout d’abord, cette fonction appelle `GetApplicableColumn` , qui vérifie s’il existe un argument fourni par l’utilisateur dans les arguments d’événement du gestionnaire de commandes, et s’il n’y en a aucun, la fonction vérifie la vue de l’éditeur :
 
 ```csharp
 private int GetApplicableColumn(EventArgs e)
@@ -1201,7 +1201,7 @@ private int GetApplicableColumn(EventArgs e)
 
 ```
 
-`GetCurrentEditorColumn`doit creuser un peu <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextView> pour obtenir une vue du code.  Si vous `GetActiveTextView`tracez à travers , `GetActiveView`, et `GetTextViewFromVsTextView`, vous pouvez voir comment le faire. Le code suivant est le code pertinent abstrait, en commençant par la sélection actuelle, puis obtenir <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView>le cadre <xref:Microsoft.VisualStudio.TextManager.Interop.IVsUserData> de la sélection, puis obtenir docView du cadre comme un , puis obtenir un de l’IVsTextView, puis obtenir un hôte de vue, et enfin l’IWpfTextView:
+`GetCurrentEditorColumn`doit approfondir un peu pour obtenir une <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextView> vue du code.  Si vous `GetActiveTextView` `GetActiveView` effectuez le suivi, et `GetTextViewFromVsTextView` , vous pouvez voir comment procéder. Le code suivant est le code abstrait, en commençant par la sélection actuelle, puis en obtenant le frame de la sélection, puis en obtenant le DocView du frame en tant que <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> , en obtenant un <xref:Microsoft.VisualStudio.TextManager.Interop.IVsUserData> à partir du IVsTextView, puis en obtenant un hôte de vue et enfin le IWpfTextView :
 
 ```csharp
    IVsMonitorSelection selection =
@@ -1257,7 +1257,7 @@ ErrorHandler.ThrowOnFailure(selection.GetCurrentElementValue(
 
 ```
 
-Une fois que vous avez un IWpfTextView, vous pouvez obtenir la colonne où le caret est situé:
+Une fois que vous disposez d’un IWpfTextView, vous pouvez obtenir la colonne dans laquelle se trouve le signe insertion :
 
 ```csharp
 private static int GetCaretColumn(IWpfTextView textView)
@@ -1272,19 +1272,19 @@ private static int GetCaretColumn(IWpfTextView textView)
 
 ```
 
-Avec la colonne actuelle en main où l’utilisateur a cliqué, le code appelle simplement le gestionnaire de paramètres pour ajouter ou supprimer la colonne. Le gestionnaire des paramètres déclenche `ColumnGuideAdornment` l’événement auquel tous les objets écoutent. Lorsque l’événement s’allume, ces objets mettent à jour leurs vues de texte associées avec de nouveaux paramètres de guide de colonne.
+Une fois que l’utilisateur a cliqué sur la colonne actuelle, le code appelle simplement le gestionnaire de paramètres pour ajouter ou supprimer la colonne. Le gestionnaire de paramètres déclenche l’événement dans lequel tous les `ColumnGuideAdornment` objets écoutent. Lorsque l’événement se déclenche, ces objets mettent à jour leurs affichages de texte associés avec les nouveaux paramètres du repère de colonne.
 
-## <a name="invoke-command-from-the-command-window"></a>Invoquer le commandement de la fenêtre de commandement
-L’échantillon de guides de colonne permet aux utilisateurs d’invoquer deux commandes de la fenêtre de commande comme une forme d’extéabilité. Si vous utilisez la **vue &#124; d’autres** windows &#124; commande de fenêtre de commande, vous pouvez voir la fenêtre de commande. Vous pouvez interagir avec la fenêtre de commande en entrant « modifier », et avec l’achèvement du nom de commande et en fournissant l’argument 120, vous avez le résultat suivant :
+## <a name="invoke-command-from-the-command-window"></a>Appeler une commande à partir de la fenêtre commande
+L’exemple repères de colonne permet aux utilisateurs d’appeler deux commandes à partir de la fenêtre de commande sous forme d’extensibilité. Si vous utilisez la commande **afficher &#124; autres fenêtres commande Windows &#124;** , vous pouvez voir la fenêtre de commande. Vous pouvez interagir avec la fenêtre de commande en entrant « Edit », et avec la saisie semi-automatique du nom de la commande et en fournissant l’argument 120, vous obtenez le résultat suivant :
 
 ```csharp
 > Edit.AddColumnGuide 120
 >
 ```
 
-Les pièces de l’échantillon qui permettent ce comportement sont `ColumnGuideCommands` dans les déclarations de fichiers *.vsct,* le constructeur de classe quand il accroche les gestionnaires de commande, et les implémentations de gestionnaire de commande qui vérifient les arguments d’événement.
+Les parties de l’exemple qui permettent ce comportement se trouvent dans les déclarations de fichier *. vsct* , le `ColumnGuideCommands` constructeur de classe lorsqu’il raccorde les gestionnaires de commandes et les implémentations du gestionnaire de commandes qui vérifient les arguments de l’événement.
 
-Vous avez`<CommandFlag>CommandWellOnly</CommandFlag>`vu " dans le fichier *.vsct* ainsi que les placements dans le menu principal **Edit,** même si les commandes ne sont pas affichées dans **l’interface** utilisateur du menu Edit. Les avoir sur le menu **Principal Edit** leur donne des noms comme **Edit.AddColumnGuide**. La déclaration de groupe de commandes qui détient les quatre commandes a placé le groupe sur le menu **Edit** directement :
+Vous avez vu « `<CommandFlag>CommandWellOnly</CommandFlag>` » dans le fichier *. vsct* , ainsi que les emplacements dans le menu principal de **modification** , même si les commandes ne sont pas affichées dans l’interface utilisateur du menu **Edition** . Leur présence dans le menu **Edition** principal leur donne des noms tels que **Edit. AddColumnGuide**. La déclaration de groupe commandes qui contient les quatre commandes ont placé le groupe dans le menu **Edition** directement :
 
 ```xml
 <Group guid="guidColumnGuidesCommandSet" id="GuidesMenuItemsGroup"
@@ -1294,7 +1294,7 @@ Vous avez`<CommandFlag>CommandWellOnly</CommandFlag>`vu " dans le fichier *.vsct
 
 ```
 
-La section des boutons a `CommandWellOnly` déclaré plus tard les commandes de `AllowParams`les garder invisibles sur le menu principal et les a déclarés avec :
+La section Buttons a ensuite déclaré les commandes `CommandWellOnly` pour les masquer dans le menu principal et les avoir déclarées avec `AllowParams` :
 
 ```xml
 <Button guid="guidColumnGuidesCommandSet" id="cmdidAddColumnGuide"
@@ -1306,14 +1306,14 @@ La section des boutons a `CommandWellOnly` déclaré plus tard les commandes de 
 
 ```
 
-Vous avez vu le gestionnaire `ColumnGuideCommands` de commande brancher le code dans le constructeur de classe a fourni une description du paramètre autorisé :
+Vous avez vu le code de raccordement du gestionnaire de commandes dans le `ColumnGuideCommands` constructeur de classe fourni une description du paramètre autorisé :
 
 ```csharp
 _addGuidelineCommand.ParametersDescription = "<column>";
 
 ```
 
-Vous avez `GetApplicableColumn` vu `OleMenuCmdEventArgs` les vérifications de fonction pour une valeur avant de vérifier la vue de l’éditeur pour une colonne en cours:
+Vous avez vu que la `GetApplicableColumn` fonction recherche `OleMenuCmdEventArgs` une valeur avant de vérifier la vue de l’éditeur pour une colonne actuelle :
 
 ```csharp
 private int GetApplicableColumn(EventArgs e)
@@ -1330,19 +1330,19 @@ private int GetApplicableColumn(EventArgs e)
 ```
 
 ## <a name="try-your-extension"></a>Essayez votre extension
-Vous pouvez maintenant appuyer sur **F5** pour exécuter votre extension De guides de colonnes. Ouvrez un fichier texte et utilisez le menu contextuel de l’éditeur pour ajouter des lignes de guidage, les supprimer et changer de couleur. Cliquez sur le texte (pas l’espace blanc passé la fin de la ligne) pour ajouter un guide de colonne, ou l’éditeur l’ajoute à la dernière colonne sur la ligne. Si vous utilisez la fenêtre de commande et invoquez les commandes avec un argument, vous pouvez ajouter des guides de colonne n’importe où.
+Vous pouvez maintenant appuyer sur **F5** pour exécuter votre extension repères de colonnes. Ouvrez un fichier texte et utilisez le menu contextuel de l’éditeur pour ajouter des lignes de repère, les supprimer et modifier leur couleur. Cliquez dans le texte (et non sur l’espace blanc à la fin de la ligne) pour ajouter un repère de colonne, ou l’éditeur l’ajoute à la dernière colonne de la ligne. Si vous utilisez la fenêtre de commande et appelez les commandes avec un argument, vous pouvez ajouter des repères de colonne n’importe où.
 
-Si vous voulez essayer différents placements de commande, changer de nom, changer d’icônes, et ainsi de suite, et vous avez des problèmes avec Visual Studio vous montrant le dernier code dans les menus, vous pouvez réinitialiser la ruche expérimentale dans laquelle vous débogage. Apportez le **menu Windows Start** et tapez "reset". Rechercher et exécuter la commande, **Réinitialiser la prochaine instance expérimentale Visual Studio**. Cette commande nettoie la ruche expérimentale de registre de tous les composants d’extension. Il ne nettoie pas les paramètres à partir de composants, de sorte que tous les guides que vous aviez lorsque vous arrêtez la ruche expérimentale de Visual Studio sont toujours là lorsque votre code lit le magasin des paramètres sur le lancement prochain.
+Si vous souhaitez essayer différents placements de commandes, modifier des noms, changer d’icône, etc. et que vous avez des problèmes avec Visual Studio qui vous montrent le code le plus récent dans les menus, vous pouvez réinitialiser la ruche expérimentale dans laquelle vous effectuez le débogage. Ouvrez le **menu Démarrer de Windows** et tapez « réinitialiser ». Recherchez et exécutez la commande, **réinitialisez l’instance expérimentale Visual Studio suivante**. Cette commande nettoie la ruche de Registre expérimentale de tous les composants d’extension. Il n’efface pas les paramètres des composants. par conséquent, tous les guides dont vous disposiez lors de l’arrêt de la ruche expérimentale de Visual Studio sont toujours là quand votre code lit le magasin de paramètres au prochain lancement.
 
-## <a name="finished-code-project"></a>Projet de code fini
-Il y aura bientôt un projet GitHub d’échantillons visual Studio Extensibility, et le projet terminé sera là. Cet article sera mis à jour pour indiquer quand cela se produit. Le projet d’échantillon terminé peut avoir des guids différents et aura une bande de bitmaps différente pour les icônes de commande.
+## <a name="finished-code-project"></a>Projet de code terminé
+Il y aura bientôt un projet GitHub d’exemples d’extensibilité Visual Studio et le projet terminé sera présent. Cet article sera mis à jour pour pointer vers ce moment-là. L’exemple de projet terminé peut avoir des GUID différents et disposer d’une bande bitmaps différente pour les icônes de commande.
 
-Vous pouvez essayer une version de la fonction guides de colonne avec cette[extension](https://marketplace.visualstudio.com/items?itemName=PaulHarrington.EditorGuidelines)Visual Studio Gallery .
+Vous pouvez essayer une version de la fonctionnalité repères de colonne avec cette[extension](https://marketplace.visualstudio.com/items?itemName=PaulHarrington.EditorGuidelines)de la Galerie Visual Studio.
 
 ## <a name="see-also"></a>Voir aussi
-- [À l’intérieur de l’éditeur](../extensibility/inside-the-editor.md)
-- [Étendre les services d’éditeur et de langue](../extensibility/extending-the-editor-and-language-services.md)
-- [Service linguistique et points d’extension de l’éditeur](../extensibility/language-service-and-editor-extension-points.md)
-- [Étendre les menus et les commandes](../extensibility/extending-menus-and-commands.md)
-- [Ajouter un sous-mois à un menu](../extensibility/adding-a-submenu-to-a-menu.md)
-- [Créez une extension avec un modèle d’élément d’éditeur](../extensibility/creating-an-extension-with-an-editor-item-template.md)
+- [Dans l’éditeur](../extensibility/inside-the-editor.md)
+- [Étendre l’éditeur et les services de langage](../extensibility/extending-the-editor-and-language-services.md)
+- [Points d’extension du service de langage et de l’éditeur](../extensibility/language-service-and-editor-extension-points.md)
+- [Étendre des menus et des commandes](../extensibility/extending-menus-and-commands.md)
+- [Ajouter un sous-menu à un menu](../extensibility/adding-a-submenu-to-a-menu.md)
+- [Créer une extension avec un modèle d’élément d’éditeur](../extensibility/creating-an-extension-with-an-editor-item-template.md)

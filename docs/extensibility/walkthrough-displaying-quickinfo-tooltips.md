@@ -1,7 +1,7 @@
 ---
-title: 'Procédure pas à pas : Affichage de QuickInfo Tooltips (fr) Microsoft Docs'
+title: 'Procédure pas à pas : affichage des info-bulles Info-bulle | Microsoft Docs'
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - QuickInfo
 ms.assetid: 23fb8384-4f12-446f-977f-ce7910347947
@@ -13,143 +13,143 @@ ms.workload:
 dev_langs:
 - csharp
 - vb
-ms.openlocfilehash: 47a14ca0692ad0338b56fd1d372307fb0e2ccc4c
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.openlocfilehash: 0eb70e5d39708ffd532fe39d6d597043621158d5
+ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2020
-ms.locfileid: "80697439"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "85904828"
 ---
-# <a name="walkthrough-display-quickinfo-tooltips"></a>Procédure pas à pas: Afficher des outils QuickInfo
-QuickInfo est une fonctionnalité IntelliSense qui affiche les signatures et les descriptions de la méthode lorsqu’un utilisateur déplace le pointeur sur un nom de méthode. Vous pouvez implémenter des fonctionnalités basées sur la langue telles que QuickInfo en définissant les identifiants pour lesquels vous souhaitez fournir des descriptions QuickInfo, puis en créant un outil pour afficher le contenu. Vous pouvez définir QuickInfo dans le contexte d’un service linguistique, ou vous pouvez définir votre propre extension de nom de fichier et le type de contenu et afficher le QuickInfo pour ce type, ou vous pouvez afficher QuickInfo pour un type de contenu existant (comme "texte"). Ce pas-là montre comment afficher QuickInfo pour le type de contenu "texte".
+# <a name="walkthrough-display-quickinfo-tooltips"></a>Procédure pas à pas : afficher les info-bulles Info Express
+Info Express est une fonctionnalité IntelliSense qui affiche des signatures et des descriptions de méthode lorsqu’un utilisateur déplace le pointeur sur un nom de méthode. Vous pouvez implémenter des fonctionnalités basées sur le langage, telles que Info Express, en définissant les identificateurs pour lesquels vous souhaitez fournir des descriptions Info Express, puis en créant une info-bulle dans laquelle afficher le contenu. Vous pouvez définir Info Express dans le contexte d’un service de langage, ou vous pouvez définir votre propre extension de nom de fichier et type de contenu et afficher l’info-automatique pour ce type, ou vous pouvez afficher info Express pour un type de contenu existant (tel que « texte »). Cette procédure pas à pas montre comment afficher info Express pour le type de contenu « texte ».
 
- L’exemple QuickInfo dans cette procédure pas à pas affiche les outils lorsqu’un utilisateur déplace le pointeur sur un nom de méthode. Cette conception vous oblige à implémenter ces quatre interfaces :
+ L’exemple info-bulle de cette procédure pas à pas affiche les info-bulles lorsqu’un utilisateur déplace le pointeur sur un nom de méthode. Cette conception vous oblige à implémenter ces quatre interfaces :
 
 - interface source
 
-- interface fournisseur source
+- interface du fournisseur source
 
-- interface de contrôleur
+- interface du contrôleur
 
-- interface fournisseur de contrôleur
+- interface du fournisseur de contrôleur
 
-  Les fournisseurs de sources et de contrôleurs sont des composants du Cadre d’exténuabilité gérée (MEF) <xref:Microsoft.VisualStudio.Text.ITextBufferFactoryService>et sont responsables de l’exportation <xref:Microsoft.VisualStudio.Language.Intellisense.IQuickInfoBroker>des classes de source et de contrôleur et des services d’importation et des courtiers tels que le , qui crée le tampon texte tooltip, et le , qui déclenche la session QuickInfo.
+  Les fournisseurs de sources et de contrôleurs sont des composants Managed Extensibility Framework (MEF) et sont responsables de l’exportation des classes source et contrôleur et de l’importation des services et des courtiers tels que le <xref:Microsoft.VisualStudio.Text.ITextBufferFactoryService> , qui crée la mémoire tampon de texte info-bulle et le <xref:Microsoft.VisualStudio.Language.Intellisense.IQuickInfoBroker> , qui déclenche la session Info Express.
 
-  Dans cet exemple, la source QuickInfo utilise une liste codée de noms et de descriptions de méthodes, mais dans des implémentations complètes, le service linguistique et la documentation linguistique sont responsables de fournir ce contenu.
+  Dans cet exemple, la source Info Express utilise une liste codée en dur des noms et des descriptions des méthodes, mais dans les implémentations complètes, le service de langage et la documentation du langage sont responsables de la fourniture de ce contenu.
 
 ## <a name="prerequisites"></a>Prérequis
- A partir de Visual Studio 2015, vous n’avez pas besoin d’installer le Visual Studio SDK à partir du centre de téléchargement. Il est inclus comme une fonctionnalité facultative dans la configuration Visual Studio. Vous pouvez également installer le VS SDK plus tard. Pour plus d’informations, voir [Installer le Studio Visuel SDK](../extensibility/installing-the-visual-studio-sdk.md).
+ À compter de Visual Studio 2015, vous n’avez pas besoin d’installer le kit de développement logiciel (SDK) Visual Studio à partir du centre de téléchargement. Il est inclus en tant que fonctionnalité facultative dans le programme d’installation de Visual Studio. Vous pouvez également installer le kit de développement logiciel (SDK) Visual Studio plus tard. Pour plus d’informations, consultez [installer le kit de développement logiciel (SDK) Visual Studio](../extensibility/installing-the-visual-studio-sdk.md).
 
 ## <a name="create-a-mef-project"></a>Créer un projet MEF
 
 ### <a name="to-create-a-mef-project"></a>Pour créer un projet MEF
 
-1. Créez un projet VSIX CMD. (Dans le dialogue du **nouveau projet,** sélectionnez **Visual C / Extensibility**, puis **VSIX Project**.) Nommez `QuickInfoTest`la solution .
+1. Créez un projet VSIX C#. (Dans la boîte de dialogue **nouveau projet** , sélectionnez **Visual C#/extensibilité**, puis **projet VSIX**.) Nommez la solution `QuickInfoTest` .
 
-2. Ajoutez un modèle d’élément Classificateur d’éditeur au projet. Pour plus d’informations, voir [Créer une extension avec un modèle d’élément d’éditeur](../extensibility/creating-an-extension-with-an-editor-item-template.md).
+2. Ajoutez un modèle d’élément de classifieur d’éditeur au projet. Pour plus d’informations, consultez [créer une extension avec un modèle d’élément d’éditeur](../extensibility/creating-an-extension-with-an-editor-item-template.md).
 
 3. Supprimez les fichiers de classe existants.
 
-## <a name="implement-the-quickinfo-source"></a>Implémenter la source QuickInfo
- La source QuickInfo est responsable de la collecte de l’ensemble des identifiants et de leurs descriptions et de l’ajout du contenu au tampon de texte de l’outil lorsque l’un des identificateurs est rencontré. Dans cet exemple, les identificateurs et leurs descriptions sont juste ajoutés dans le constructeur source.
+## <a name="implement-the-quickinfo-source"></a>Implémenter la source Info Express
+ La source Info Express est chargée de collecter le jeu d’identificateurs et leurs descriptions, et d’ajouter le contenu à la mémoire tampon de texte info-bulle lorsque l’un des identificateurs est rencontré. Dans cet exemple, les identificateurs et leurs descriptions sont simplement ajoutés dans le constructeur source.
 
-#### <a name="to-implement-the-quickinfo-source"></a>Pour implémenter la source QuickInfo
+#### <a name="to-implement-the-quickinfo-source"></a>Pour implémenter la source Info Express
 
 1. Ajoutez un fichier de classe et nommez-le `TestQuickInfoSource`.
 
-2. Ajouter une référence à *Microsoft.VisualStudio.Language.IntelliSense*.
+2. Ajoutez une référence à *Microsoft. VisualStudio. Language. IntelliSense*.
 
 3. Ajoutez les importations suivantes.
 
      [!code-vb[VSSDKQuickInfoTest#1](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-quickinfo-tooltips_1.vb)]
      [!code-csharp[VSSDKQuickInfoTest#1](../extensibility/codesnippet/CSharp/walkthrough-displaying-quickinfo-tooltips_1.cs)]
 
-4. Déclarez une classe <xref:Microsoft.VisualStudio.Language.Intellisense.IQuickInfoSource>qui met `TestQuickInfoSource`en œuvre, et nommez-le .
+4. Déclarez une classe qui implémente <xref:Microsoft.VisualStudio.Language.Intellisense.IQuickInfoSource> et nommez-la `TestQuickInfoSource` .
 
      [!code-vb[VSSDKQuickInfoTest#2](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-quickinfo-tooltips_2.vb)]
      [!code-csharp[VSSDKQuickInfoTest#2](../extensibility/codesnippet/CSharp/walkthrough-displaying-quickinfo-tooltips_2.cs)]
 
-5. Ajoutez des champs pour le fournisseur de source QuickInfo, le tampon de texte et un ensemble de noms de méthode et de signatures de méthode. Dans cet exemple, les noms et signatures `TestQuickInfoSource` de la méthode sont parasécés dans le constructeur.
+5. Ajoutez des champs pour le fournisseur de source Info Express, la mémoire tampon de texte et un ensemble de noms de méthode et de signatures de méthode. Dans cet exemple, les noms et les signatures de méthode sont initialisés dans le `TestQuickInfoSource` constructeur.
 
      [!code-vb[VSSDKQuickInfoTest#3](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-quickinfo-tooltips_3.vb)]
      [!code-csharp[VSSDKQuickInfoTest#3](../extensibility/codesnippet/CSharp/walkthrough-displaying-quickinfo-tooltips_3.cs)]
 
-6. Ajoutez un constructeur qui définit le fournisseur de source QuickInfo et le tampon de texte, et peuple l’ensemble des noms de méthode, et les signatures et descriptions de la méthode.
+6. Ajoutez un constructeur qui définit le fournisseur de source Info Express et la mémoire tampon de texte, et remplit l’ensemble de noms de méthodes, ainsi que les signatures et les descriptions de méthode.
 
      [!code-vb[VSSDKQuickInfoTest#4](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-quickinfo-tooltips_4.vb)]
      [!code-csharp[VSSDKQuickInfoTest#4](../extensibility/codesnippet/CSharp/walkthrough-displaying-quickinfo-tooltips_4.cs)]
 
-7. Implémentez la méthode <xref:Microsoft.VisualStudio.Language.Intellisense.IQuickInfoSource.AugmentQuickInfoSession%2A>. Dans cet exemple, la méthode trouve le mot actuel, ou le mot précédent si le curseur est à la fin d’une ligne ou d’un tampon de texte. Si le mot est l’un des noms de méthode, la description de ce nom de méthode est ajoutée au contenu QuickInfo.
+7. Implémentez la méthode <xref:Microsoft.VisualStudio.Language.Intellisense.IQuickInfoSource.AugmentQuickInfoSession%2A>. Dans cet exemple, la méthode recherche le mot actuel ou le mot précédent si le curseur se trouve à la fin d’une ligne ou d’une mémoire tampon de texte. Si le mot est l’un des noms de méthode, la description de ce nom de méthode est ajoutée au contenu Info Express.
 
      [!code-vb[VSSDKQuickInfoTest#5](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-quickinfo-tooltips_5.vb)]
      [!code-csharp[VSSDKQuickInfoTest#5](../extensibility/codesnippet/CSharp/walkthrough-displaying-quickinfo-tooltips_5.cs)]
 
-8. Vous devez également mettre en œuvre une méthode Dispose() puisque <xref:Microsoft.VisualStudio.Language.Intellisense.IQuickInfoSource> les impléments <xref:System.IDisposable>:
+8. Vous devez également implémenter une méthode Dispose (), puisque <xref:Microsoft.VisualStudio.Language.Intellisense.IQuickInfoSource> implémente <xref:System.IDisposable> :
 
      [!code-vb[VSSDKQuickInfoTest#6](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-quickinfo-tooltips_6.vb)]
      [!code-csharp[VSSDKQuickInfoTest#6](../extensibility/codesnippet/CSharp/walkthrough-displaying-quickinfo-tooltips_6.cs)]
 
-## <a name="implement-a-quickinfo-source-provider"></a>Implémenter un fournisseur de source QuickInfo
- Le fournisseur de la source QuickInfo sert principalement à s’exporter comme une partie de composant MEF et à instantanéifier la source QuickInfo. Parce qu’il s’agit d’une partie composante MEF, il peut importer d’autres composants MEF.
+## <a name="implement-a-quickinfo-source-provider"></a>Implémenter un fournisseur de source Info Express
+ Le fournisseur de la source Info-Express sert principalement à s’exporter en tant que composant MEF et à instancier la source Info-Express. Étant donné qu’il s’agit d’une partie du composant MEF, il peut importer d’autres composants MEF.
 
-#### <a name="to-implement-a-quickinfo-source-provider"></a>Pour implémenter un fournisseur de source QuickInfo
+#### <a name="to-implement-a-quickinfo-source-provider"></a>Pour implémenter un fournisseur de source Info Express
 
-1. Déclarez un fournisseur `TestQuickInfoSourceProvider` de source <xref:Microsoft.VisualStudio.Language.Intellisense.IQuickInfoSourceProvider>QuickInfo nommé <xref:Microsoft.VisualStudio.Utilities.NameAttribute> qui implémente, et <xref:Microsoft.VisualStudio.Utilities.OrderAttribute> exportez-le avec un <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute> de "ToolTip QuickInfo Source", un de Avant "par défaut", et un de "texte".
+1. Déclarez un fournisseur de source info `TestQuickInfoSourceProvider` -bulle nommé qui implémente <xref:Microsoft.VisualStudio.Language.Intellisense.IQuickInfoSourceProvider> , puis exportez-le avec un <xref:Microsoft.VisualStudio.Utilities.NameAttribute> de « ToolTip source info-bulle », un <xref:Microsoft.VisualStudio.Utilities.OrderAttribute> de Before = « default » et un <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute> de « Text ».
 
      [!code-vb[VSSDKQuickInfoTest#7](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-quickinfo-tooltips_7.vb)]
      [!code-csharp[VSSDKQuickInfoTest#7](../extensibility/codesnippet/CSharp/walkthrough-displaying-quickinfo-tooltips_7.cs)]
 
-2. Importer deux services <xref:Microsoft.VisualStudio.Text.Operations.ITextStructureNavigatorSelectorService> <xref:Microsoft.VisualStudio.Text.ITextBufferFactoryService>d’éditeur, `TestQuickInfoSourceProvider`et , comme propriétés de .
+2. Importez deux services de l’éditeur, <xref:Microsoft.VisualStudio.Text.Operations.ITextStructureNavigatorSelectorService> et <xref:Microsoft.VisualStudio.Text.ITextBufferFactoryService> , en tant que propriétés de `TestQuickInfoSourceProvider` .
 
      [!code-vb[VSSDKQuickInfoTest#8](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-quickinfo-tooltips_8.vb)]
      [!code-csharp[VSSDKQuickInfoTest#8](../extensibility/codesnippet/CSharp/walkthrough-displaying-quickinfo-tooltips_8.cs)]
 
-3. Mise <xref:Microsoft.VisualStudio.Language.Intellisense.IQuickInfoSourceProvider.TryCreateQuickInfoSource%2A> en œuvre pour retourner un nouveau `TestQuickInfoSource`.
+3. Implémentez <xref:Microsoft.VisualStudio.Language.Intellisense.IQuickInfoSourceProvider.TryCreateQuickInfoSource%2A> pour retourner un nouveau `TestQuickInfoSource` .
 
      [!code-vb[VSSDKQuickInfoTest#9](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-quickinfo-tooltips_9.vb)]
      [!code-csharp[VSSDKQuickInfoTest#9](../extensibility/codesnippet/CSharp/walkthrough-displaying-quickinfo-tooltips_9.cs)]
 
-## <a name="implement-a-quickinfo-controller"></a>Implémenter un contrôleur QuickInfo
- Les contrôleurs QuickInfo déterminent quand QuickInfo est affiché. Dans cet exemple, QuickInfo apparaît lorsque le pointeur est au-dessus d’un mot qui correspond à l’un des noms de méthode. Le contrôleur QuickInfo implémente un gestionnaire d’événements de vol stationnaire de souris qui déclenche une session QuickInfo.
+## <a name="implement-a-quickinfo-controller"></a>Implémenter un contrôleur Info Express
+ Les contrôleurs d’info-Express déterminent le moment où Info Express est affiché. Dans cet exemple, info Express s’affiche lorsque le pointeur se trouve sur un mot qui correspond à l’un des noms de méthode. Le contrôleur Info-Express implémente un gestionnaire d’événements de pointage de la souris qui déclenche une session Info Express.
 
-### <a name="to-implement-a-quickinfo-controller"></a>Pour implémenter un contrôleur QuickInfo
+### <a name="to-implement-a-quickinfo-controller"></a>Pour implémenter un contrôleur Info Express
 
-1. Déclarez une classe <xref:Microsoft.VisualStudio.Language.Intellisense.IIntellisenseController>qui met `TestQuickInfoController`en œuvre, et nommez-le .
+1. Déclarez une classe qui implémente <xref:Microsoft.VisualStudio.Language.Intellisense.IIntellisenseController> et nommez-la `TestQuickInfoController` .
 
      [!code-vb[VSSDKQuickInfoTest#10](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-quickinfo-tooltips_10.vb)]
      [!code-csharp[VSSDKQuickInfoTest#10](../extensibility/codesnippet/CSharp/walkthrough-displaying-quickinfo-tooltips_10.cs)]
 
-2. Ajoutez des champs privés pour la vue textuelle, les tampons de texte représentés dans la vue de texte, la session QuickInfo et le fournisseur de contrôleur QuickInfo.
+2. Ajoutez des champs privés pour l’affichage de texte, les mémoires tampons de texte représentées dans l’affichage de texte, la session Info Express et le fournisseur de contrôleur Info Express.
 
      [!code-vb[VSSDKQuickInfoTest#11](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-quickinfo-tooltips_11.vb)]
      [!code-csharp[VSSDKQuickInfoTest#11](../extensibility/codesnippet/CSharp/walkthrough-displaying-quickinfo-tooltips_11.cs)]
 
-3. Ajoutez un constructeur qui définit les champs et ajoute le gestionnaire d’événements de vol stationnaire de souris.
+3. Ajoutez un constructeur qui définit les champs et ajoute le gestionnaire d’événements de pointage de la souris.
 
      [!code-vb[VSSDKQuickInfoTest#12](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-quickinfo-tooltips_12.vb)]
      [!code-csharp[VSSDKQuickInfoTest#12](../extensibility/codesnippet/CSharp/walkthrough-displaying-quickinfo-tooltips_12.cs)]
 
-4. Ajoutez le gestionnaire d’événements de vol stationnaire de souris qui déclenche la session QuickInfo.
+4. Ajoutez le gestionnaire d’événements de pointage de la souris qui déclenche la session Info Express.
 
      [!code-vb[VSSDKQuickInfoTest#13](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-quickinfo-tooltips_13.vb)]
      [!code-csharp[VSSDKQuickInfoTest#13](../extensibility/codesnippet/CSharp/walkthrough-displaying-quickinfo-tooltips_13.cs)]
 
-5. Implémentez la <xref:Microsoft.VisualStudio.Language.Intellisense.IIntellisenseController.Detach%2A> méthode de sorte qu’elle supprime le gestionnaire d’événements de vol stationnaire de souris lorsque le contrôleur est détaché de la vue de texte.
+5. Implémentez la <xref:Microsoft.VisualStudio.Language.Intellisense.IIntellisenseController.Detach%2A> méthode afin qu’elle supprime le gestionnaire d’événements de pointage de la souris lorsque le contrôleur est détaché de la vue de texte.
 
      [!code-vb[VSSDKQuickInfoTest#14](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-quickinfo-tooltips_14.vb)]
      [!code-csharp[VSSDKQuickInfoTest#14](../extensibility/codesnippet/CSharp/walkthrough-displaying-quickinfo-tooltips_14.cs)]
 
-6. Implémenter <xref:Microsoft.VisualStudio.Language.Intellisense.IIntellisenseController.ConnectSubjectBuffer%2A> <xref:Microsoft.VisualStudio.Language.Intellisense.IIntellisenseController.DisconnectSubjectBuffer%2A> la méthode et la méthode comme méthodes vides pour cet exemple.
+6. Implémentez la <xref:Microsoft.VisualStudio.Language.Intellisense.IIntellisenseController.ConnectSubjectBuffer%2A> méthode et la <xref:Microsoft.VisualStudio.Language.Intellisense.IIntellisenseController.DisconnectSubjectBuffer%2A> méthode comme méthodes vides pour cet exemple.
 
      [!code-vb[VSSDKQuickInfoTest#15](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-quickinfo-tooltips_15.vb)]
      [!code-csharp[VSSDKQuickInfoTest#15](../extensibility/codesnippet/CSharp/walkthrough-displaying-quickinfo-tooltips_15.cs)]
 
-## <a name="implementing-the-quickinfo-controller-provider"></a>Mise en œuvre du fournisseur de contrôleurs QuickInfo
- Le fournisseur du contrôleur QuickInfo sert principalement à s’exporter comme une partie de composant MEF et à instantanéiser le contrôleur QuickInfo. Parce qu’il s’agit d’une partie composante MEF, il peut importer d’autres composants MEF.
+## <a name="implementing-the-quickinfo-controller-provider"></a>Implémentation du fournisseur de contrôleur Info Express
+ Le fournisseur du contrôleur Info-Express sert principalement à s’exporter en tant que composant MEF et à instancier le contrôleur Info Express. Étant donné qu’il s’agit d’une partie du composant MEF, il peut importer d’autres composants MEF.
 
-### <a name="to-implement-the-quickinfo-controller-provider"></a>Pour implémenter le fournisseur de contrôleurs QuickInfo
+### <a name="to-implement-the-quickinfo-controller-provider"></a>Pour implémenter le fournisseur de contrôle d’info-Express
 
-1. Déclarez une `TestQuickInfoControllerProvider` classe <xref:Microsoft.VisualStudio.Language.Intellisense.IIntellisenseControllerProvider>nommée qui implémente, et exportez-la avec un <xref:Microsoft.VisualStudio.Utilities.NameAttribute> «ToolTip QuickInfo Controller» et un <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute> de «texte»:
+1. Déclarez une classe nommée `TestQuickInfoControllerProvider` qui implémente <xref:Microsoft.VisualStudio.Language.Intellisense.IIntellisenseControllerProvider> et exportez-la avec un <xref:Microsoft.VisualStudio.Utilities.NameAttribute> de type « ToolTip info Controller » et un <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute> de « Text » :
 
      [!code-vb[VSSDKQuickInfoTest#16](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-quickinfo-tooltips_16.vb)]
      [!code-csharp[VSSDKQuickInfoTest#16](../extensibility/codesnippet/CSharp/walkthrough-displaying-quickinfo-tooltips_16.cs)]
@@ -159,23 +159,23 @@ QuickInfo est une fonctionnalité IntelliSense qui affiche les signatures et les
      [!code-vb[VSSDKQuickInfoTest#17](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-quickinfo-tooltips_17.vb)]
      [!code-csharp[VSSDKQuickInfoTest#17](../extensibility/codesnippet/CSharp/walkthrough-displaying-quickinfo-tooltips_17.cs)]
 
-3. Implémenter la <xref:Microsoft.VisualStudio.Language.Intellisense.IIntellisenseControllerProvider.TryCreateIntellisenseController%2A> méthode en instantanéisant le contrôleur QuickInfo.
+3. Implémentez la <xref:Microsoft.VisualStudio.Language.Intellisense.IIntellisenseControllerProvider.TryCreateIntellisenseController%2A> méthode en instanciant le contrôleur Info Express.
 
      [!code-vb[VSSDKQuickInfoTest#18](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-quickinfo-tooltips_18.vb)]
      [!code-csharp[VSSDKQuickInfoTest#18](../extensibility/codesnippet/CSharp/walkthrough-displaying-quickinfo-tooltips_18.cs)]
 
-## <a name="build-and-test-the-code"></a>Construire et tester le Code
- Pour tester ce code, créez la solution QuickInfoTest et exécutez-la dans l’instance expérimentale.
+## <a name="build-and-test-the-code"></a>Générer et tester le code
+ Pour tester ce code, générez la solution QuickInfoTest et exécutez-la dans l’instance expérimentale.
 
-### <a name="to-build-and-test-the-quickinfotest-solution"></a>Pour construire et tester la solution QuickInfoTest
+### <a name="to-build-and-test-the-quickinfotest-solution"></a>Pour générer et tester la solution QuickInfoTest
 
 1. Générez la solution.
 
-2. Lorsque vous exécutez ce projet dans le débbugger, une deuxième instance de Visual Studio est lancée.
+2. Quand vous exécutez ce projet dans le débogueur, une deuxième instance de Visual Studio est démarrée.
 
-3. Créez un fichier texte et tapez un texte qui inclut les mots « ajouter » et « soustraire ».
+3. Créez un fichier texte et tapez du texte qui comprend les mots « ajouter » et « soustraire ».
 
-4. Déplacez le pointeur sur l’un des événements de "ajouter". La signature et la `add` description de la méthode doivent être affichées.
+4. Déplacez le pointeur sur l’une des occurrences de « Add ». La signature et la description de la `add` méthode doivent être affichées.
 
 ## <a name="see-also"></a>Voir aussi
-- [Procédure pas à pas : liez un type de contenu à une extension de nom de fichier](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)
+- [Procédure pas à pas : liaison d’un type de contenu à une extension de nom de fichier](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)

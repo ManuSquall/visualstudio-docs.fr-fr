@@ -5,22 +5,22 @@ ms.author: v-evwin
 manager: lank
 ms.assetid: 4c099fe8-883e-4789-9468-387ce5697dfe
 ms.date: 03/03/2020
-ms.topic: conceptual
+ms.topic: overview
 description: Découvrez comment bien démarrer avec la gestion des abonnements Visual Studio de votre organisation via le portail d’administration des abonnements.
-ms.openlocfilehash: 279f1d926bd81bafd8fd79e5cdddbf67b96899f1
-ms.sourcegitcommit: 1f7aed335c48215dff5c151f76f22e3f10e8b564
+ms.openlocfilehash: 94ce9e8ceec46403ef816c39115a5418f1ee9e03
+ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/07/2020
-ms.locfileid: "80808361"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "85902939"
 ---
-# <a name="overview-of-the-visual-studio-subscriptions-administrator-portal"></a>Aperçu du portail d’administrateurs d’abonnements Visual Studio
+# <a name="overview-of-the-visual-studio-subscriptions-administrator-portal"></a>Vue d’ensemble du portail d’administration des abonnements Visual Studio
 
 Le portail d’administration des abonnements Visual Studio vous offre les outils nécessaires pour gérer les abonnements de votre organisation dans un seul emplacement. 
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4t9aW]
 
-## <a name="important-considerations"></a>Points importants à prendre en compte
+## <a name="important-considerations"></a>Considérations importantes
 Quand vous utilisez le portail d’administration des abonnements Visual Studio, gardez à l’esprit les points suivants :
 - **Les abonnements Visual Studio sont fournis avec une licence par utilisateur.** Chaque abonné peut utiliser les logiciels sur un nombre illimité d’ordinateurs à des fins de développement et de test.
 - **Attribuez un seul niveau d’abonnement à chaque abonné**, en fonction de l’abonnement Visual Studio que votre organisation a acheté. Si des abonnés ont plusieurs niveaux d’abonnement, modifiez leurs paramètres de sorte qu’un seul niveau d’abonnement leur soit attribué.
@@ -28,7 +28,7 @@ Quand vous utilisez le portail d’administration des abonnements Visual Studio,
 - **Ne partagez pas d’abonnements entre abonnés.** Les abonnements doivent être attribués à des personnes nommées.  L’attribution d’abonnements à des équipes n’est pas autorisée.  Vous devez attribuer un abonnement à chaque personne qui utilise la totalité ou une partie des avantages de l’abonnement (logiciels de développement et de test, Microsoft Azure, eLearning, etc.).
 
 ## <a name="the-subscribers-page"></a>Page Abonnés
-Une fois que vous avez attribué des abonnements, l’onglet Abonnés Gérer fournit des informations détaillées sur vos abonnés, notamment :
+Une fois que vous avez attribué des abonnements, l’onglet gérer les abonnés fournit des informations détaillées sur vos abonnés, notamment :
 - Nom et prénom des abonnés.
 - Leur adresse e-mail.
 - Niveau d’abonnement qui leur a été attribué.
@@ -40,14 +40,14 @@ Une fois que vous avez attribué des abonnements, l’onglet Abonnés Gérer fou
 - Langue choisie pour l’e-mail de communication d’attribution envoyé par le portail d’administration.
 - Champ facultatif indiquant une adresse e-mail pour les communications différente de celle pour la connexion.
 
-En haut à gauche de la page, il existe plusieurs icônes que vous pouvez sélectionner pour révéler une vue d’ensemble de l’affectation d’abonnement, les détails de l’accord et le rapport d’utilisation maximum.
+Sur le côté supérieur gauche de la page, vous pouvez choisir plusieurs icônes pour afficher une vue d’ensemble de l’affectation d’abonnement, les détails du contrat et le rapport d’utilisation maximal.
 
-Pour voir des informations supplémentaires sur le nombre de licences d’abonnement achetées, attribuées et toujours disponibles dans votre organisation pour chaque accord, cliquez sur l’icône supérieure pour activer le panneau de diapositives.
+Pour afficher des informations supplémentaires sur le nombre de licences d’abonnement achetées, affectées et toujours disponibles dans votre organisation pour chaque contrat, cliquez sur l’icône en haut pour activer le panneau coulissant.
 > [!div class="mx-imgBorder"]
 > ![Page Abonnés dans le portail d’administration des abonnements Visual Studio](_img/using-admin-portal/subscribers-page.png)
 
 ## <a name="the-details-page"></a>Page Détails
-Pour plus d’informations sur l’accord que vous consultez, sélectionnez la deuxième icône pour voir l’onglet Détails de l’Accord. Le panneau de diapositives montre l’état de l’accord, le compte d’achat, les détails org, les super-admins et d’autres informations pertinentes.
+Pour plus d’informations sur l’accord que vous consultez, cliquez sur la deuxième icône pour afficher l’onglet Détails du contrat. Le panneau coulissant affiche l’état du contrat, le compte d’achat, les détails de l’organisation, les super-administrateurs et d’autres informations pertinentes.
 > [!div class="mx-imgBorder"]
 > ![Page Détails dans le portail d’administration des abonnements Visual Studio](_img/using-admin-portal/details-page.png)
 
@@ -58,7 +58,7 @@ Pour plus d’informations sur l’accord que vous consultez, sélectionnez la d
 - [Prise en charge des abonnements et de l’administration de Visual Studio](https://visualstudio.microsoft.com/support/support-overview-vs)
 
 ## <a name="see-also"></a>Voir aussi
-- [Documentation Visual Studio](https://docs.microsoft.com/visualstudio/)
+- [Documentation de Visual Studio](https://docs.microsoft.com/visualstudio/)
 - [Documentation Azure DevOps](https://docs.microsoft.com/azure/devops/)
 - [Documentation Azure](https://docs.microsoft.com/azure/)
 - [Documentation Microsoft 365](https://docs.microsoft.com/microsoft-365/)

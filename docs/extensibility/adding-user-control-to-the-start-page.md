@@ -1,7 +1,7 @@
 ---
-title: Ajout du contrôle utilisateur à la page de démarrage (fr) Microsoft Docs
+title: Ajout d’un contrôle utilisateur à la page de démarrage | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - start page dll
 - custom start page
@@ -13,38 +13,38 @@ manager: jillfra
 ms.workload:
 - vssdk
 monikerRange: vs-2017
-ms.openlocfilehash: b426cfbbfca2e301797644a1fc73f188054d0cfa
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.openlocfilehash: 8000c6cc067f61a64c71b8c8ac4f5c0176504cd4
+ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2020
-ms.locfileid: "80740132"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "85903390"
 ---
-# <a name="add-user-control-to-the-start-page"></a>Ajouter le contrôle utilisateur à la page de démarrage
+# <a name="add-user-control-to-the-start-page"></a>Ajouter un contrôle utilisateur à la page de démarrage
 
-Ce pas-là montre comment ajouter une référence DLL à une page de démarrage personnalisée. L’exemple ajoute un contrôle utilisateur à la solution, construit le contrôle de l’utilisateur, puis fait référence à l’assemblage construit à partir du fichier Start Page *.xaml.* Un nouvel onglet héberge le contrôle de l’utilisateur, qui fonctionne comme un navigateur Web de base.
+Cette procédure pas à pas montre comment ajouter une référence de DLL à une page de démarrage personnalisée. L’exemple ajoute un contrôle utilisateur à la solution, génère le contrôle utilisateur, puis référence l’assembly généré à partir du fichier Start page *. Xaml* . Un nouvel onglet héberge le contrôle utilisateur, qui fonctionne comme un navigateur Web de base.
 
-Vous pouvez utiliser le même processus pour ajouter n’importe quel assemblage qui peut être appelé à partir d’un fichier *.xaml.*
+Vous pouvez utiliser le même processus pour ajouter n’importe quel assembly pouvant être appelé à partir d’un fichier *. Xaml* .
 
 ## <a name="add-a-wpf-user-control-to-the-solution"></a>Ajouter un contrôle utilisateur WPF à la solution
 
-Tout d’abord, ajoutez un contrôle utilisateur de la Windows Presentation Foundation (WPF) à la solution Start Page.
+Tout d’abord, ajoutez un contrôle utilisateur Windows Presentation Foundation (WPF) à la solution page de démarrage.
 
-1. Créez une page de démarrage en utilisant nous avons créé dans [Créer une page de démarrage personnalisée](../extensibility/creating-a-custom-start-page.md).
+1. Créez une page de démarrage à l’aide de la création d' [une page de démarrage personnalisée](../extensibility/creating-a-custom-start-page.md).
 
-2. Dans **Solution Explorer**, cliquez à droite sur la solution, cliquez sur **Ajouter,** puis cliquez sur **New Project**.
+2. Dans **Explorateur de solutions**, cliquez avec le bouton droit sur la solution, cliquez sur **Ajouter**, puis sur **nouveau projet**.
 
-3. Dans le volet gauche de la boîte de dialogue **New Project,** étendre le nœud **Visual Basic** ou **Visual CMD,** et cliquez sur **Windows**. Dans le volet du milieu, sélectionnez **WPF User Control Library**.
+3. Dans le volet gauche de la boîte de dialogue **nouveau projet** , développez le nœud **Visual Basic** ou **Visual C#** , puis cliquez sur **Windows**. Dans le volet central, sélectionnez **bibliothèque de contrôles utilisateur WPF**.
 
-4. Nommez `WebUserControl` le contrôle, puis cliquez **sur OK**.
+4. Nommez le contrôle `WebUserControl` , puis cliquez sur **OK**.
 
-## <a name="implement-the-user-control"></a>Mettre en œuvre le contrôle de l’utilisateur
+## <a name="implement-the-user-control"></a>Implémenter le contrôle utilisateur
 
-Pour implémenter un contrôle utilisateur WPF, créez l’interface utilisateur (interface utilisateur) dans XAML, puis écrivez les événements de code-derrière dans C ou une autre langue .NET.
+Pour implémenter un contrôle utilisateur WPF, générez l’interface utilisateur (IU) en XAML, puis écrivez les événements code-behind en C# ou un autre langage .NET.
 
-### <a name="to-write-the-xaml-for-the-user-control"></a>Pour écrire le XAML pour le contrôle de l’utilisateur
+### <a name="to-write-the-xaml-for-the-user-control"></a>Pour écrire le XAML pour le contrôle utilisateur
 
-1. Ouvrez le fichier XAML pour le contrôle de l’utilisateur. Dans `<Grid>` l’élément, ajoutez les définitions de ligne suivantes au contrôle.
+1. Ouvrez le fichier XAML pour le contrôle utilisateur. Dans l' `<Grid>` élément, ajoutez les définitions de ligne suivantes au contrôle.
 
     ```vb
     <Grid.RowDefinitions>
@@ -54,7 +54,7 @@ Pour implémenter un contrôle utilisateur WPF, créez l’interface utilisateur
 
     ```
 
-2. Dans l’élément principal, `<Grid>` `<Grid>` ajoutez le nouvel élément suivant, qui contient une boîte de texte pour taper des adresses Web et un bouton pour définir la nouvelle adresse.
+2. Dans l' `<Grid>` élément principal, ajoutez le nouvel `<Grid>` élément suivant, qui contient une zone de texte pour la saisie d’adresses Web et un bouton pour définir la nouvelle adresse.
 
     ```xml
     <Grid Grid.Row="0">
@@ -67,13 +67,13 @@ Pour implémenter un contrôle utilisateur WPF, créez l’interface utilisateur
     </Grid>
     ```
 
-3. Ajoutez le cadre suivant à `<Grid>` l’élément `<Grid>` de haut niveau juste après l’élément qui contient le bouton et la boîte à texte.
+3. Ajoutez le frame suivant à l’élément de niveau supérieur `<Grid>` juste après l' `<Grid>` élément qui contient le bouton et la zone de texte.
 
     ```vb
     <Frame Grid.Row="1" x:Name="WebFrame" Source="http://www.bing.com" Navigated="WebFrame_Navigated" />
     ```
 
-4. L’exemple suivant montre le XAML complété pour le contrôle de l’utilisateur.
+4. L’exemple suivant montre le code XAML terminé pour le contrôle utilisateur.
 
     ```xml
     <UserControl x:Class="WebUserControl.UserControl1"
@@ -102,13 +102,13 @@ Pour implémenter un contrôle utilisateur WPF, créez l’interface utilisateur
 
     ```
 
-### <a name="to-write-the-code-behind-events-for-the-user-control"></a>Pour écrire les événements de code-derrière pour le contrôle de l’utilisateur
+### <a name="to-write-the-code-behind-events-for-the-user-control"></a>Pour écrire les événements code-behind pour le contrôle utilisateur
 
-1. Dans le concepteur XAML, cliquez double sur le bouton **Set Address** que vous avez ajouté au contrôle.
+1. Dans le concepteur XAML, double-cliquez sur le bouton **définir une adresse** que vous avez ajouté au contrôle.
 
-    Le *fichier UserControl1.cs* s’ouvre dans l’éditeur de code.
+    Le fichier *UserControl1.cs* s’ouvre dans l’éditeur de code.
 
-2. Remplissez le gestionnaire d’événements SetButton_Click comme suit.
+2. Renseignez le gestionnaire d’événements SetButton_Click comme suit.
 
     ```csharp
     private void SetButton_Click(object sender, RoutedEventArgs e)
@@ -124,9 +124,9 @@ Pour implémenter un contrôle utilisateur WPF, créez l’interface utilisateur
     }
     ```
 
-    Ce code définit l’adresse Web qui est tapée dans la boîte de texte comme cible pour le navigateur Web. Si l’adresse n’est pas valide, le code lance une erreur.
+    Ce code définit l’adresse Web qui est tapée dans la zone de texte en tant que cible du navigateur Web. Si l’adresse n’est pas valide, le code génère une erreur.
 
-3. Vous devez également vous occuper de l’événement WebFrame_Navigated :
+3. Vous devez également gérer l’événement WebFrame_Navigated :
 
     ```csharp
     private void WebFrame_Navigated(object sender, EventArgs e)
@@ -137,33 +137,33 @@ Pour implémenter un contrôle utilisateur WPF, créez l’interface utilisateur
 
 ## <a name="add-the-user-control-to-the-start-page"></a>Ajouter le contrôle utilisateur à la page de démarrage
 
-Pour mettre ce contrôle à la disposition du projet Start Page, dans le dossier du projet Start Page, ajoutez une référence à la nouvelle bibliothèque de contrôle. Ensuite, vous pouvez ajouter le contrôle à la page de démarrage XAML balisage.
+Pour rendre ce contrôle disponible pour le projet de page de démarrage, dans le fichier projet de la page de démarrage, ajoutez une référence à la nouvelle bibliothèque de contrôles. Vous pouvez ensuite ajouter le contrôle au balisage XAML de la page de démarrage.
 
-1. Dans **Solution Explorer**, dans le projet Start Page, cliquez à droite **Références,** puis cliquez sur **Ajouter référence**.
+1. Dans **Explorateur de solutions**, dans le projet page de démarrage, cliquez avec le bouton droit sur **références** , puis cliquez sur **Ajouter une référence**.
 
-2. Sur l’onglet **Projets,** sélectionnez **WebUserControl,** puis cliquez **sur OK**.
+2. Sous l’onglet **projets** , sélectionnez **webusercontrol** , puis cliquez sur **OK**.
 
 3. Dans le menu **Générer**, cliquez sur **Générer la solution**.
 
-    La construction de la solution rend le contrôle utilisateur disponible pour IntelliSense pour d’autres fichiers dans la solution.
+    La génération de la solution rend le contrôle utilisateur disponible pour IntelliSense pour d’autres fichiers de la solution.
 
-    Pour ajouter le contrôle à la balisage Start Page XAML, ajoutez une référence d’espace nom à l’assemblage, puis mettez le contrôle sur la page.
+    Pour ajouter le contrôle au balisage XAML de la page de démarrage, ajoutez une référence d’espace de noms à l’assembly, puis placez le contrôle sur la page.
 
-### <a name="to-add-the-control-to-the-markup"></a>Pour ajouter le contrôle à la majoration
+### <a name="to-add-the-control-to-the-markup"></a>Pour ajouter le contrôle à la balise
 
-1. Dans **Solution Explorer**, ouvrez le fichier Start Page *.xaml.*
+1. Dans **Explorateur de solutions**, ouvrez le fichier Start page *. Xaml* .
 
-2. Dans la vitre **XAML,** ajoutez la déclaration d’espace nom suivant à l’élément de haut niveau. <xref:System.Windows.Controls.Grid>
+2. Dans le volet **XAML** , ajoutez la déclaration d’espace de noms suivante à l’élément de niveau supérieur <xref:System.Windows.Controls.Grid> .
 
    ```xml
    xmlns:vsc="clr-namespace:WebUserControl;assembly=WebUserControl"
    ```
 
-3. Dans la vitre **XAML,** \<faites défiler la section Grid>.
+3. Dans le volet **XAML** , faites défiler jusqu’à la \<Grid> section.
 
-    La section <xref:System.Windows.Controls.TabControl> contient un <xref:System.Windows.Controls.Grid> élément dans un élément.
+    La section contient un <xref:System.Windows.Controls.TabControl> élément dans un <xref:System.Windows.Controls.Grid> élément.
 
-4. Ajoutez \<un élément TabControl> \<contenant un> TabItem qui contient une référence à votre contrôle utilisateur.
+4. Ajoutez un \<TabControl> élément contenant un \<TabItem> qui contient une référence à votre contrôle utilisateur.
 
     ```xml
 
@@ -173,23 +173,23 @@ Pour mettre ce contrôle à la disposition du projet Start Page, dans le dossier
 
     ```
 
-    Maintenant, vous pouvez tester le contrôle.
+    Vous pouvez maintenant tester le contrôle.
 
-## <a name="test-a-manually-created-custom-start-page"></a>Testez une page de démarrage personnalisée créée manuellement
+## <a name="test-a-manually-created-custom-start-page"></a>Tester une page de démarrage personnalisée créée manuellement
 
-1. Copiez votre fichier XAML, et tous les fichiers texte à l’appui ou fichiers de *balisage, au\\ dossier %USERPROFILE%-My Documents-Visual Studio 2015-StartPages.*
+1. Copiez votre fichier XAML, ainsi que tous les fichiers texte de prise en charge ou fichiers de balisage, dans le dossier *%UserProfile%\My Documents\Visual Studio 2015 \ StartPages \\ *
 
-2. Si votre page de démarrage fait référence à des contrôles ou des types dans des assemblages qui ne sont pas installés par Visual Studio, copiez les assemblages et collez-les dans le _dossier d’installation Visual Studio_**'Common7'IDE’PrivateAssemblies\\**.
+2. Si votre page de démarrage fait référence à des contrôles ou des types dans des assemblys qui ne sont pas installés par Visual Studio, copiez les assemblys, puis collez-les dans le _dossier d’installation de Visual Studio_** \\ \Common7\IDE\PrivateAssemblies**.
 
-3. Lors d’une invite de commande Visual Studio, type **devenv/rootsuffix Exp** pour ouvrir une instance expérimentale de Visual Studio.
+3. À une invite de commandes Visual Studio, tapez **devenv/Rootsuffix exp** pour ouvrir une instance expérimentale de Visual Studio.
 
-4. Dans le cas expérimental, rendez-vous sur la page **Tools** > **Options** > **Environment** > **Startup** et sélectionnez votre fichier XAML à partir de la page De démarrage **personnalisée.**
+4. Dans l’instance expérimentale, accédez à la **Tools**  >  page de démarrage de l’environnement**options**  >  **Environment**  >  **Startup** des outils et sélectionnez votre fichier XAML dans la liste déroulante personnaliser la **page de démarrage** .
 
 5. Dans le menu **Affichage** , cliquez sur **Page de démarrage**.
 
-    Votre page de démarrage personnalisée doit être affichée. Si vous souhaitez modifier des fichiers, vous devez fermer l’instance expérimentale, apporter les modifications, copier et coller les fichiers modifiés, puis rouvrir l’instance expérimentale pour afficher les modifications.
+    Votre page de démarrage personnalisée doit être affichée. Si vous souhaitez modifier des fichiers, vous devez fermer l’instance expérimentale, apporter les modifications, copier et coller les fichiers modifiés, puis rouvrir l’instance expérimentale pour voir les modifications.
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Contrôles des conteneurs WPF](https://msdn.microsoft.com/library/a0177167-d7db-4205-9607-8ae316952566)
-- [Procédure pas à pas : Ajoutez XAML personnalisé à la page de départ](../extensibility/walkthrough-adding-custom-xaml-to-the-start-page.md)
+- [Contrôles de conteneur WPF](https://msdn.microsoft.com/library/a0177167-d7db-4205-9607-8ae316952566)
+- [Procédure pas à pas : ajouter du code XAML personnalisé à la page de démarrage](../extensibility/walkthrough-adding-custom-xaml-to-the-start-page.md)

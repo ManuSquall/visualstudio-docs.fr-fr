@@ -1,7 +1,7 @@
 ---
 title: Ajout d’une liste des derniers fichiers utilisés à un sous-menu | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - MRU lists
 - menus, creating MRU list
@@ -12,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5624fe4a4f3c9ba774313e862f9e84a6f6d70862
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: 3f73f948befc7665ecc3a40f816389bfaae8e4fd
+ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84183273"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "85904205"
 ---
 # <a name="add-a-most-recently-used-list-to-a-submenu"></a>Ajouter une liste des derniers fichiers utilisés à un sous-menu
 Cette procédure pas à pas s’appuie sur les démonstrations dans [Ajouter un sous-menu à un menu](../extensibility/adding-a-submenu-to-a-menu.md)et montre comment ajouter une liste dynamique à un sous-menu. La liste dynamique forme la base de la création d’une liste des derniers fichiers utilisés.

@@ -1,75 +1,75 @@
 ---
-title: Découverte de modèles de dépannage dans Visual Studio (fr) Microsoft Docs
+title: Résoudre les problèmes de découverte de modèles dans Visual Studio | Microsoft Docs
 ms.date: 01/02/2018
-ms.topic: conceptual
+ms.topic: troubleshooting
 author: acangialosi
 ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 078d06c797c3b228c1ea5b1d836dceb0394b3174
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.openlocfilehash: c5225c741206e6a43ff024a5f184404f1ac2bc63
+ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2020
-ms.locfileid: "80698935"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "85904496"
 ---
-# <a name="troubleshooting-template-installation"></a>Installation de modèle de dépannage
+# <a name="troubleshooting-template-installation"></a>Dépannage de l’installation du modèle
 
-Si vous rencontrez des problèmes de déploiement de votre projet ou de vos modèles d’objets, vous pouvez activer l’enregistrement diagnostique.
+Si vous rencontrez des problèmes lors du déploiement de vos modèles de projet ou d’élément, vous pouvez activer la journalisation des Diagnostics.
 
 ::: moniker range="vs-2017"
 
-1. Créez un fichier pkgdef dans le dossier *Common7-IDE-CommonExtensions* pour votre installation. Par exemple, *les fichiers C:-Program (x86) -Microsoft Visual Studio-2017-Enterprise-Common7-IDE-CommonExtensions-EnablePkgDefLogging.pkgdef*.
+1. Créez un fichier pkgdef dans le dossier *Common7\IDE\CommonExtensions* de votre installation. Par exemple, *C:\Program Files (x86) \Microsoft Visual Studio\2017\Enterprise\Common7\IDE\CommonExtensions\EnablePkgDefLogging.pkgdef*.
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-1. Créez un fichier pkgdef dans le dossier *Common7-IDE-CommonExtensions* pour votre installation. Par exemple, *les fichiers C:-Program (x86) -Microsoft Visual Studio-2019-Enterprise-Common7-IDE-CommonExtensions-EnablePkgDefLogging.pkgdef*.
+1. Créez un fichier pkgdef dans le dossier *Common7\IDE\CommonExtensions* de votre installation. Par exemple, *C:\Program Files (x86) \Microsoft Visual Studio\2019\Enterprise\Common7\IDE\CommonExtensions\EnablePkgDefLogging.pkgdef*.
 
 ::: moniker-end
 
-2. Ajouter ce qui suit au fichier pkgdef :
+2. Ajoutez le code suivant au fichier pkgdef :
 
     ```
     [$RootKey$\VsTemplate]
     "EnableTemplateDiscoveryLog"=dword:00000001
     ```
 
-3. Ouvrez une invite de commande `devenv /updateConfiguration`de [développeur](/dotnet/framework/tools/developer-command-prompt-for-vs) pour votre installation et exécutez.
+3. Ouvrez une [invite de commandes développeur](/dotnet/framework/tools/developer-command-prompt-for-vs) pour votre installation et exécutez `devenv /updateConfiguration` .
 
 ::: moniker range="vs-2017"
 
-4. Ouvrez Visual Studio et lancez les boîtes de dialogue New Project et New Item pour initialiser les deux arbres modèles.
+4. Ouvrez Visual Studio et lancez les boîtes de dialogue Nouveau projet et nouvel élément pour initialiser les deux arborescences de modèles.
 
-   Le journal de modèle apparaît maintenant dans **%LOCALAPPDATA%-Microsoft-VisualStudio-15.0[instanceid]-VsTemplateDiagnosticsList.csv** (instanceid correspond à l’ID d’installation de votre instance de Visual Studio). Chaque modélisation de l’arbre appendule les entrées à ce journal.
+   Le journal de modèle apparaît désormais dans **%LocalAppData%\Microsoft\VisualStudio\15.0_ [InstanceId] \VsTemplateDiagnosticsList.csv** (InstanceId correspond à l’ID d’installation de votre instance de Visual Studio). Chaque initialisation d’arborescence de modèle ajoute des entrées à ce journal.
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-4. Ouvrez Visual Studio et **lancez** le Créer un nouveau projet et des boîtes de dialogue **New Item** pour initialiser les deux arbres modèles.
+4. Ouvrez Visual Studio et lancez les boîtes de dialogue **créer un nouveau projet** et **nouvel élément** pour initialiser les deux arborescences de modèles.
 
-   Le journal de modèle apparaît maintenant dans **%LOCALAPPDATA%-Microsoft-VisualStudio-16.0[instanceid]-VsTemplateDiagnosticsList.csv** (instanceid correspond à l’ID d’installation de votre instance de Visual Studio). Chaque modélisation de l’arbre appendule les entrées à ce journal.
+   Le journal de modèle apparaît désormais dans **%LocalAppData%\Microsoft\VisualStudio\16.0_ [InstanceId] \VsTemplateDiagnosticsList.csv** (InstanceId correspond à l’ID d’installation de votre instance de Visual Studio). Chaque initialisation d’arborescence de modèle ajoute des entrées à ce journal.
 
 ::: moniker-end
 
-Le fichier journal contient les colonnes suivantes :
+Le fichier journal contient les colonnes suivantes :
 
-- **FullPathToTemplate**, qui a les valeurs suivantes:
+- **FullPathToTemplate**, qui a les valeurs suivantes :
 
-  - 1 pour le déploiement à base de manifestes
+  - 1 pour un déploiement basé sur un manifeste
 
   - 0 pour le déploiement sur disque
 
-- **TemplateFileName (en)**
+- **TemplateFileName**
 
 - Autres propriétés de modèle
 
 > [!NOTE]
-> Pour désactiver l’enregistrement, soit supprimer le fichier pkgdef, ou changer la valeur de `EnableTemplateDiscoveryLog` , puis exécuter `dword:00000000` `devenv /updateConfiguration` à nouveau.
+> Pour désactiver la journalisation, supprimez le fichier pkgdef ou modifiez la valeur de `EnableTemplateDiscoveryLog` en `dword:00000000` , puis réexécutez `devenv /updateConfiguration` .
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Création de modèles de projets et d’objets personnalisés](creating-custom-project-and-item-templates.md)
+- [Création de modèles de projet et d’élément personnalisés](creating-custom-project-and-item-templates.md)

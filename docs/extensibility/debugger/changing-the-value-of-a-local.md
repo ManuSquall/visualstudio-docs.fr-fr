@@ -1,7 +1,7 @@
 ---
-title: Changer la valeur d’une section locale Microsoft Docs
+title: Modification de la valeur d’un local | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - debugging [Debugging SDK], expression evaluation
 - expression evaluation, changing values programmatically
@@ -11,40 +11,40 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 98e40e4b6ea10bb6ff1242f23f1b6dd83ce0c0cd
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.openlocfilehash: 565ae9f27b9f5a113e51520724f525599ad5eda7
+ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2020
-ms.locfileid: "80739139"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "85904271"
 ---
-# <a name="change-the-value-of-a-local"></a>Modifier la valeur d’un
+# <a name="change-the-value-of-a-local"></a>Modifier la valeur d’un local
 > [!IMPORTANT]
-> Dans Visual Studio 2015, cette façon de mettre en œuvre les évaluateurs d’expression est dépréciée. Pour obtenir de l’information sur la mise en œuvre des évaluateurs de l’expression CLR, veuillez consulter [les évaluateurs d’expression CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) et [l’échantillon d’évaluateur d’expression gérée.](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)
+> Dans Visual Studio 2015, cette façon d’implémenter les évaluateurs d’expression est déconseillée. Pour plus d’informations sur l’implémentation des évaluateurs d’expression CLR, consultez [évaluateur d’expression CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) et [exemple évaluateur d’expression managée](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).
 
- Lorsqu’une nouvelle valeur est tapée dans le champ de valeur de la fenêtre **Locals,** le paquet de débaillement passe la chaîne, comme tapé, à l’évaluateur d’expression (EE). L’EE évalue cette chaîne, qui peut contenir une valeur simple ou une expression, et stocke la valeur résultante dans le local associé.
+ Quand une nouvelle valeur est tapée dans le champ valeur de la fenêtre **variables locales** , le package de débogage transmet la chaîne, telle qu’elle est tapée, à l’évaluateur d’expression (EE). L’EE évalue cette chaîne, qui peut contenir une valeur simple ou une expression, et stocke la valeur résultante dans le local associé.
 
- Il s’agit d’un aperçu du processus de modification de la valeur d’un local :
+ Il s’agit d’une vue d’ensemble du processus de modification de la valeur d’une variable locale :
 
-1. Une fois que l’utilisateur entre dans la nouvelle valeur, Visual Studio appelle [SetValueAsString](../../extensibility/debugger/reference/idebugproperty2-setvalueasstring.md) sur [l’objet IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md) associé au local.
+1. Une fois que l’utilisateur a entré la nouvelle valeur, Visual Studio appelle [SetValueAsString](../../extensibility/debugger/reference/idebugproperty2-setvalueasstring.md) sur l’objet [IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md) associé au local.
 
 2. `IDebugProperty2::SetValueAsString` effectue les tâches suivantes :
 
    1. Évalue la chaîne pour produire une valeur.
 
-   2. Lie l’objet [IDebugField](../../extensibility/debugger/reference/idebugfield.md) associé pour obtenir un objet [IDebugObject.](../../extensibility/debugger/reference/idebugobject.md)
+   2. Lie l’objet [IDebugField](../../extensibility/debugger/reference/idebugfield.md) associé pour obtenir un objet [IDebugObject](../../extensibility/debugger/reference/idebugobject.md) .
 
    3. Convertit la valeur en une série d’octets.
 
-   4. Appels [SetValue](../../extensibility/debugger/reference/idebugobject-setvalue.md) pour mettre les octets de la valeur dans la mémoire afin que le programme étant débogé peut y accéder.
+   4. Appelle [SetValue](../../extensibility/debugger/reference/idebugobject-setvalue.md) pour placer les octets de la valeur dans la mémoire afin que le programme en cours de débogage puisse y accéder.
 
-3. Visual Studio rafraîchit l’affichage **local** (voir [Afficher les habitants](../../extensibility/debugger/displaying-locals.md) pour plus de détails).
+3. Visual Studio actualise l’affichage des **variables locales** (pour plus d’informations, consultez [affichage des variables locales](../../extensibility/debugger/displaying-locals.md) ).
 
-   Cette procédure est également utilisée pour modifier la valeur d’une `IDebugProperty2` variable dans la fenêtre **Watch,** sauf que c’est l’objet associé à la valeur du local qui est utilisé au lieu de l’objet `IDebugProperty2` associé au local lui-même.
+   Cette procédure est également utilisée pour modifier la valeur d’une variable dans la fenêtre **Espion** , sauf qu’il s’agit de l' `IDebugProperty2` objet associé à la valeur de l’objet local utilisé à la place de l' `IDebugProperty2` objet associé au local lui-même.
 
-## <a name="in-this-section"></a>Contenu de cette section
- [Exemple de mise en œuvre de valeurs changeantes](../../extensibility/debugger/sample-implementation-of-changing-values.md) Utilise l’échantillon MyCEE pour passer à travers le processus de changement de valeurs.
+## <a name="in-this-section"></a>Dans cette section
+ [Exemple d’implémentation de la modification de valeurs](../../extensibility/debugger/sample-implementation-of-changing-values.md) Utilise l’exemple MyCEE pour parcourir le processus de modification des valeurs.
 
 ## <a name="see-also"></a>Voir aussi
-- [Rédaction d’un évaluateur d’expression CLR](../../extensibility/debugger/writing-a-common-language-runtime-expression-evaluator.md)
-- [Affichage des habitants](../../extensibility/debugger/displaying-locals.md)
+- [Écriture d’un évaluateur d’expression CLR](../../extensibility/debugger/writing-a-common-language-runtime-expression-evaluator.md)
+- [Affichage des variables locales](../../extensibility/debugger/displaying-locals.md)

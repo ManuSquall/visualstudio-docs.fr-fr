@@ -5,14 +5,14 @@ ms.author: lank
 manager: lank
 ms.assetid: 83efe4ee-9a9d-4776-b27c-852d89dadafd
 ms.date: 03/09/2020
-ms.topic: conceptual
+ms.topic: how-to
 description: Comment attribuer des abonnements Visual Studio à vos utilisateurs finaux, pour les partenaires du réseau MPN.
-ms.openlocfilehash: aecc9892b60951f869c6a6bc721b746d2c013db5
-ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
+ms.openlocfilehash: fc35178a0d66a048a41ee04d27ae2993949972c8
+ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "80232428"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "85902872"
 ---
 # <a name="manage-visual-studio-subscriptions-offered-through-the-microsoft-partner-network-mpn"></a>Gérer les abonnements Visual Studio offerts via le réseau MPN
 Les partenaires qui acquièrent une compétence ou qui achètent l’Action Pack MPN sont éligibles aux abonnements Visual Studio. Ces abonnements sont concédés sous licence par utilisateur et sont valides uniquement quand ils sont attribués à un utilisateur nommé spécifique qui travaille pour la société partenaire.
@@ -29,9 +29,9 @@ Abonné Microsoft Action Pack et abonnements Visual Studio
 6. Sélectionnez **Privilèges**
 7. Sélectionnez **Abonnements Visual Studio** (remarque : mise à jour de l’abonnement Visual Studio en attente)
 8. Sélectionnez la **personne** souhaitée
-9. Cliquez **sur Soumettre**
+9. Cliquez sur **Envoyer**
 10. La personne reçoit un e-mail
-11. La personne affectée [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs) aura accès à la connexion
+11. La personne affectée aura accès [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs) à la connexion
 12. Une page de profil Visual Studio peut s’afficher, notamment :
     - Prénom
     - Nom
@@ -43,9 +43,9 @@ Abonné Microsoft Action Pack et abonnements Visual Studio
 2. Sélectionnez **Privilèges**
 3. Sélectionnez **Abonnements MSDN** (Remarque : cette option sera prochainement renommée « Abonnements Visual Studio »)
 4. Recherchez la **personne** souhaitée
-5. Cliquez **sur Soumettre**
+5. Cliquez sur **Envoyer**
 6. La personne reçoit un e-mail
-7. La personne affectée [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs) aura accès à la connexion
+7. La personne affectée aura accès [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs) à la connexion
 8. Une page de profil Visual Studio peut s’afficher
     - Prénom
     - Nom
@@ -61,7 +61,7 @@ Abonné Microsoft Action Pack et abonnements Visual Studio
   - Pg 8 - Attribution d’abonnements Visual Studio pour les partenaires de compétence
 
 ## <a name="see-also"></a>Voir aussi
-- [Documentation Visual Studio](https://docs.microsoft.com/visualstudio/)
+- [Documentation de Visual Studio](https://docs.microsoft.com/visualstudio/)
 - [Documentation Azure DevOps](https://docs.microsoft.com/azure/devops/)
 - [Documentation Azure](https://docs.microsoft.com/azure/)
 - [Documentation Microsoft 365](https://docs.microsoft.com/microsoft-365/)

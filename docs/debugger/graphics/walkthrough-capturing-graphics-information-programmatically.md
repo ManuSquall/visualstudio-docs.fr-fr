@@ -7,12 +7,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e2036588fe04825b0fe1a1aa2db7ae8f7e0b5ad4
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 7533c205b95b016c43bd2eef614b4c2825596e74
+ms.sourcegitcommit: 9a9c61ca115c22d33bb902153eb0853789c7be4c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72734771"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "85835652"
 ---
 # <a name="walkthrough-capturing-graphics-information-programmatically"></a>Procédure pas à pas : capture d'informations Graphics par programmation
 Vous pouvez utiliser les outils Graphics Diagnostics de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] pour capturer par programmation les informations graphiques d'une application Direct3D.
@@ -23,9 +23,9 @@ La capture par programmation est particulièrement utile dans les scénarios sui
 
 - Commencez la capture par programmation quand votre application n'effectue aucun rendu, par exemple, quand elle utilise DirectCompute pour les calculs.
 
-- L’appel `CaptureCurrentFrame`when un problème de rendu est difficile à anticiper et à capturer dans les tests manuels, mais peut être prédit par programmation à l’aide d’informations sur l’état de l’application au moment de l’exécution.
+- Appelez `CaptureCurrentFrame` quand un problème de rendu est difficile à anticiper et à capturer dans les tests manuels, mais peut être prédit par programmation à l’aide d’informations sur l’état de l’application au moment de l’exécution.
 
-## <a name="CaptureDX11_2"></a> Capture par programmation dans Windows 10
+## <a name="programmatic-capture-in-windows-10"></a><a name="CaptureDX11_2"></a> Capture par programmation dans Windows 10
 Cette partie de la procédure pas à pas illustre la capture par programmation dans des applications qui utilisent l’API DirectX 11.2 dans Windows 10, qui elle-même utilise la méthode de capture robuste.
 
 Cette section montre comment effectuer ces tâches :
@@ -37,7 +37,7 @@ Cette section montre comment effectuer ces tâches :
 - Capture d'informations graphiques
 
 > [!NOTE]
-> Les implémentations précédentes de la capture par programmation utilisaient Outils de contrôle à distance de Visual Studio pour [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] pour fournir des fonctionnalités de capture.
+> Les implémentations précédentes de la capture par programmation s’appuyaient sur Outils de contrôle à distance de Visual Studio pour fournir des fonctionnalités de capture.
 
 ### <a name="preparing-your-app-to-use-programmatic-capture"></a>Préparation de votre application à l'utilisation de la capture par programmation
 Pour utiliser la capture par programmation dans votre application, celle-ci doit inclure les en-têtes nécessaires. Ces en-têtes font partie du Kit SDK Windows 10.
@@ -63,7 +63,7 @@ Pour utiliser la capture par programmation dans votre application, celle-ci doit
 Avant de pouvoir capturer les informations graphiques de DirectX 11.2, vous devez obtenir l'interface de débogage DXGI.
 
 > [!IMPORTANT]
-> Lorsque vous utilisez la capture par programmation, vous devez toujours exécuter votre application dans Graphics Diagnostics (Alt + F5 dans [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]) ou sous l' [outil de capture en ligne de commande](command-line-capture-tool.md).
+> Lorsque vous utilisez la capture par programmation, vous devez toujours exécuter votre application dans Graphics Diagnostics (Alt + F5 dans [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ) ou sous l' [outil de capture en ligne de commande](command-line-capture-tool.md).
 
 ##### <a name="to-get-the-idxgraphicsanalysis-interface"></a>Pour obtenir l'interface IDXGraphicsAnalysis
 
@@ -107,7 +107,7 @@ Maintenant que vous avez une interface `IDXGraphicsAnalysis` valide, vous pouvez
     ...
     ```
 
-- Après l’appel à `EndCapture`, Libérez l’objet Graphics.
+- Après l’appel à `EndCapture` , Libérez l’objet Graphics.
 
 ## <a name="next-steps"></a>Étapes suivantes
 Cette procédure pas à pas vous a montré comment capturer des informations graphiques par programmation. Pour franchir une étape supplémentaire, envisagez cette possibilité :
@@ -115,6 +115,6 @@ Cette procédure pas à pas vous a montré comment capturer des informations gra
 - Découvrez comment analyser les informations graphiques capturées à l'aide des outils Graphics Diagnostics. Consultez [vue d’ensemble](overview-of-visual-studio-graphics-diagnostics.md).
 
 ## <a name="see-also"></a>Voir aussi
-- [Procédure pas à pas : capture d’informations graphiques](walkthrough-capturing-graphics-information.md)
-- [Capturing Graphics Information](capturing-graphics-information.md)
-- [Outil de capture en ligne de commande](command-line-capture-tool.md)
+- [Procédure pas à pas : capture d'informations Graphics](walkthrough-capturing-graphics-information.md)
+- [Capture d'informations graphiques](capturing-graphics-information.md)
+- [Outil en ligne de commande de capture](command-line-capture-tool.md)

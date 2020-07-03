@@ -1,0 +1,104 @@
+---
+title: Consignes Developer Community
+description: Décrit les instructions à suivre pour travailler avec la communauté de développeurs Visual Studio.
+ms.date: 6/30/2020
+ms.topic: conceptual
+author: madskristensen
+ms.author: madsk
+manager: jillfra
+ms.workload:
+- multiple
+ms.openlocfilehash: 53b29cc0b6af8fed9ee64a92b2d43e29062b498a
+ms.sourcegitcommit: 9a9c61ca115c22d33bb902153eb0853789c7be4c
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "85837752"
+---
+# <a name="developer-community-guidelines"></a>Consignes Developer Community
+
+La communauté des développeurs suit des problèmes et des suggestions de fonctionnalités pour Visual Studio.
+
+## <a name="submitting-problems-and-suggestions"></a>Envoi de problèmes et de suggestions
+
+La [communauté de développeurs Visual Studio](https://developercommunity.visualstudio.com/) effectue le suivi des problèmes et des suggestions de fonctionnalités pour Visual Studio.
+
+### <a name="before-submitting-an-issue"></a>Avant de soumettre un problème
+
+Recherchez votre problème sur la communauté de développeurs Visual Studio pour vous assurer qu’il n’existe pas déjà. Si vous trouvez que votre problème existe déjà, effectuez les commentaires appropriés et effectuez un cast de votre vote.
+
+Si votre problème est une question, demandez à la communauté [Stack Overflow](https://stackoverflow.com/questions/tagged/visual-studio?tab=Newest) à l’aide de la balise _Visual Studio_. Nous proposons au personnel du support technique la surveillance de cette balise et vous aideront à répondre aux questions.
+
+Si vous ne trouvez pas de problème existant qui décrit votre bogue ou votre fonctionnalité, soumettez un problème à l’aide des instructions ci-dessous.
+
+### <a name="writing-a-good-bug-report-or-feature-suggestion"></a>Écriture d’un rapport de bogues ou d’une suggestion de fonctionnalité appropriée
+
+- Fichier un seul problème ou demande de fonctionnalité par problème.
+
+  - La combinaison de plusieurs problèmes ou demandes de fonctionnalités en un seul problème rend le diagnostic plus difficile pour nous, et il est plus difficile pour les autres utilisateurs de voter pour votre problème.
+  - N’ajoutez pas votre problème en tant que commentaire à un problème existant, sauf s’il s’agit d’une entrée identique. De nombreux problèmes semblent similaires mais ont des causes différentes, ce qui complique le diagnostic de votre problème.
+
+- Plus vous pouvez fournir d’informations, plus il sera facile de reproduire et résoudre votre problème.
+- Incluez les étapes suivantes pour chaque problème.
+
+  - Étapes reproductibles (1... 2... 3...) et ce que vous attendiez par rapport à ce que vous avez rencontré.
+  - Des images, des animations ou un lien vers une vidéo. Les images et les animations illustrent la reproduction des étapes, mais ne les remplacent _pas_ .
+  - Le cas échéant, un extrait de code qui illustre le problème ou un lien vers un référentiel de code que nous pouvons facilement extraire sur notre ordinateur pour recréer le problème.
+
+- N’oubliez pas d’effectuer les étapes suivantes :
+
+  - Recherche pour voir s’il existe un doublon. Si c’est le cas, voter le problème existant, en fournissant des commentaires supplémentaires ou des clarifications si nécessaire.
+  - Recréez le problème après la désactivation de toutes les extensions. Si vous trouvez que le problème est causé par une extension que vous avez installée, envoyez un problème à l’extension, respectivement.
+  - Simplifiez votre code autour du problème afin de pouvoir mieux isoler le problème.
+
+Même avec des problèmes incluant des détails enrichis, nous pouvons ne pas être en mesure de reproduire le problème et de demander plus d’informations.
+
+## <a name="managing-problem-reports"></a>Gestion des rapports de problèmes
+
+Le triage d’un problème est un processus à plusieurs étapes qui est réalisé de façon collaborative au sein de l’équipe des fonctionnalités. Le triage prend généralement une semaine, mais peut prendre plus de temps. L’objectif du triage est de vous permettre de comprendre clairement ce qui se passe à votre problème. Par exemple, après triage, vous savez si nous prévoyons de résoudre votre problème ou d’attendre d’autres commentaires sur la communauté.
+
+Une fois que vous signalez un problème, les états indiquent où en est votre envoi dans son cycle de vie. Au fur et à mesure que vos commentaires sont examinés par les équipes de produit Visual Studio, ils sont définis avec un état approprié. Suivez la progression de vos rapports de problèmes en référençant les [États et le Forum aux questions](https://docs.microsoft.com/visualstudio/ide/report-a-problem).
+
+Lorsqu’il manque des informations importantes dans un problème, nous attribuons l’état _plus_ d’informations. Nous nous penchons sur le problème avec les informations spécifiques dont nous avons besoin et vous recevrez une notification par courrier électronique. Si nous ne recevons pas les informations dans les sept jours, nous vous enverrons un rappel. Après cela, nous fermons le ticket au bout de 14 jours d’inactivité.
+
+### <a name="wont-fix-bugs"></a>Ne corrigera pas les bogues
+
+Nous fermons certains bogues lorsqu’il y a un équilibre coût-bénéfice négatif. Par exemple, si le correctif est tellement complexe, il risque de régression pour de nombreux utilisateurs, la résolution peut ne pas être raisonnable. Quand nous fermons un bogue comme celui-ci, nous expliquons pourquoi nous le faisons.
+
+#### <a name="additional-information"></a>Informations supplémentaires
+
+- [Comment augmenter les chances de résolution d’un problème de performances](https://docs.microsoft.com/visualstudio/ide/how-to-increase-chances-of-performance-issue-being-fixed)
+- [Détecter un problème et créer des journaux pour les problèmes MSBuild](https://docs.microsoft.com/visualstudio/ide/msbuild-logs)
+
+## <a name="managing-feature-suggestions"></a>Gestion des suggestions de fonctionnalités
+
+Les suggestions de fonctionnalités sont un moyen de communication entre nous et les membres de la communauté des développeurs. Techniquement, nous pourrions conserver toutes les demandes de fonctionnalités ouvertes à l’infini. Toutefois, le maintien des problèmes ouverts réduit la visibilité de la communauté à l’état réel d’une fonctionnalité. Nous fermons donc les demandes de fonctionnalités que nous ne traiterons pas et affectons les fonctionnalités que nous pouvons adresser à l’étiquette en _cours de vérification_ .
+
+Si vous avez suggéré une fonctionnalité, il est possible que nous ne prévoyons pas de traiter votre demande. Nous comprenons cela. Nous avons tous déjà participé à ce projet ou à d’autres personnes. Nous sommes donc assurés que nous aimons tous vos commentaires. Ne vous inquiétez pas de l’infraction personnelle quand nous fermons ou attribuons l’étiquette en _cours de révision_ à votre suggestion. Si vous estimez que votre suggestion de fonctionnalité mérite de rester ouverte, Clarifiez votre cas d’utilisation et contactez-nous ou rassemblez plus de votes.
+
+Dans le processus de prise de décision, nous examinons les caractéristiques suivantes de la suggestion de fonctionnalité :
+
+- Pouvons-nous nous permettre de la générer et de la gérer ?
+- S’aligne-t-il avec notre stratégie générale de feuille de [route](https://docs.microsoft.com/visualstudio/productinfo/vs-roadmap) ?
+- Bénéficie-t-il d’un support communautaire, comme indiqué par les votes et les commentaires ?
+- Nous l’aimons, même avec une faible prise en charge de la communauté ?
+
+Quand nous ne pouvons pas répondre « oui » à l’une de ces questions, nous allons la fermer. Mais souvent, la suggestion reste ouverte en cours d' _examen_ pour recueillir des commentaires sur la communauté.
+
+Suivez la progression de votre suggestion de fonctionnalité en référençant les [États de suggestion et le Forum aux questions](https://docs.microsoft.com/visualstudio/ide/report-a-problem).
+
+## <a name="discussion-etiquette"></a>Étiquette de discussion
+
+Pour que la conversation reste claire et transparente, limitez la discussion à l’anglais et gardez les choses pertinentes pour le problème. Envisagez d’autres personnes et essayez toujours d’être courtois et professionnel.
+
+Pour plus d’informations, consultez le [Code de la communauté Microsoft](https://answers.microsoft.com/page/codeofconduct).
+
+Toute violation de l’étiquette de discussion peut entraîner la suppression du commentaire et éventuellement interdire l’utilisateur.
+
+## <a name="data-privacy"></a>Confidentialité des données
+
+Les commentaires et les réponses sont visibles publiquement, mais tous les fichiers joints sont partagés en privé avec Microsoft uniquement. Cette visibilité est avantageuse, car elle permet à la communauté entière de voir les problèmes et solutions détectés par d’autres utilisateurs. Si vous êtes préoccupé par la confidentialité de vos données ou de votre identité, vous disposez d’options. En savoir plus sur la confidentialité des données de la [communauté des développeurs](https://docs.microsoft.com/visualstudio/ide/developer-community-privacy).
+
+## <a name="next-steps"></a>Étapes suivantes
+
+Connectez-vous à la [communauté de développeurs Visual Studio](https://developercommunity.visualstudio.com/) pour signaler des problèmes, suggérer des fonctionnalités ou parcourir les tickets existants. Vous n’avez plus qu’à l’utiliser !

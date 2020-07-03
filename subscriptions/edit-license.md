@@ -5,14 +5,14 @@ ms.author: lank
 manager: lank
 ms.assetid: 97ac8e4d-7a03-42f8-98cb-15bcaa90ef65
 ms.date: 03/03/2020
-ms.topic: conceptual
+ms.topic: how-to
 description: Découvrez comment les administrateurs peuvent modifier des attributions d’abonnement.
-ms.openlocfilehash: a0f72bf6a6561060fd4eddcf2fc11f0f4cf97f15
-ms.sourcegitcommit: 1b7412f1a5b039b2b294c6001013f399ea7aa5bc
+ms.openlocfilehash: 32d430ac4afe88541fd839827652ec7613ba03b1
+ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "82564223"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "85902930"
 ---
 # <a name="edit-visual-studio-subscription-assignments"></a>Modifier des attributions d’abonnements Visual Studio
 En tant qu’administrateur des abonnements, vous pouvez apporter des modifications aux abonnements attribués à des personnes au sein de votre organisation.  Cet article décrit les types de modifications que vous pouvez apporter et indique les étapes à suivre.

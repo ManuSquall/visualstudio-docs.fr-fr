@@ -5,14 +5,14 @@ ms.author: v-evwin
 manager: cabuschl
 ms.assetid: d1257931-392a-4a65-bf26-177737505122
 ms.date: 06/24/2020
-ms.topic: conceptual
+ms.topic: how-to
 description: En savoir plus sur et installer des applications Microsoft 365 pour l’entreprise
-ms.openlocfilehash: 95eaece45d6d261605a653efbb80bc03d6199dbf
-ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
+ms.openlocfilehash: 341598e323b004463d9af2f1b18d5096dea9f3b2
+ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/25/2020
-ms.locfileid: "85364095"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "85902977"
 ---
 # <a name="microsoft-365-apps-for-enterprise-in-visual-studio-subscriptions"></a>Applications Microsoft 365 pour l’entreprise dans les abonnements Visual Studio
 Les applications Microsoft 365 pour l’entreprise (anciennement Office 365 Pro plus) sont disponibles dans les abonnements Visual Studio sélectionnés. 

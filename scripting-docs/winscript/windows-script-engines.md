@@ -5,7 +5,7 @@ ms.date: 01/18/2017
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: reference
 helpviewer_keywords:
 - Windows script engines
 ms.assetid: e576853d-7252-4eb9-81eb-9d5bb7626ab4
@@ -13,12 +13,12 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 94fca3befc13e32e6e2859c7b1ef6330af7b812f
-ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.openlocfilehash: 27a500f9df91738e2db563f7e37ee646925b674e
+ms.sourcegitcommit: 9a9c61ca115c22d33bb902153eb0853789c7be4c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72568942"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "85835691"
 ---
 # <a name="windows-script-engines"></a>Windows Script, moteurs
 Pour implémenter un moteur Microsoft Windows Script, créez un objet OLE COM qui prend en charge les interfaces suivantes.  
@@ -43,7 +43,7 @@ Pour implémenter un moteur Microsoft Windows Script, créez un objet OLE COM qu
 |||  
 |-|-|  
 |Category|Description|  
-|CATID_ActiveScript|Indique que les identificateurs de classe (CLSID) sont des moteurs de Windows Script qui, au minimum, prennent en charge l’interface [IActiveScript](../winscript/reference/iactivescript.md) et un mécanisme de persistance (l’interface `IPersistStorage`, `IPersistStreamInit`, ou IPersistPropertyBag).|  
+|CATID_ActiveScript|Indique que les identificateurs de classe (CLSID) sont des moteurs de script Windows qui prennent en charge, au minimum, l’interface [IActiveScript](../winscript/reference/iactivescript.md) et un mécanisme de persistance (l' `IPersistStorage` `IPersistStreamInit` interface, ou IPersistPropertyBag).|  
 |CATID_ActiveScriptParse|Indique que les CLSID sont des moteurs Windows Script qui, au minimum, prennent en charge les interfaces [IActiveScript](../winscript/reference/iactivescript.md) et [IActiveScriptParse](../winscript/reference/iactivescriptparse.md).|  
   
  Bien qu’[IActiveScriptParse](../winscript/reference/iactivescriptparse.md) ne soit pas un véritable mécanisme de persistance, il prend en charge la méthode [IActiveScriptParse::InitNew](../winscript/reference/iactivescriptparse-initnew.md) qui équivaut du point de vue fonctionnel à `IPersist*::InitNew`.  
@@ -53,13 +53,13 @@ Pour implémenter un moteur Microsoft Windows Script, créez un objet OLE COM qu
   
 |||  
 |-|-|  
-|État|Description|  
+|State|Description|  
 |non initialisé|Le script n’a pas été initialisé ou chargé à l’aide d’une interface IPersist*, ou aucune interface [IActiveScriptSite](../winscript/reference/iactivescriptsite.md) n’a été définie. Le moteur de script est généralement inutilisable à partir de cet état tant que le script n’est pas chargé.|  
 |initialisé|Le script a été initialisé avec une interface `IPersist*` et une interface [IActiveScriptSite](../winscript/reference/iactivescriptsite.md) est définie, mais il n’est pas connecté aux objets hôtes et aux événements de réception. Notez que cet état signifie simplement que la méthode `IPersist*::Load`, `IPersist*::InitNew`, ou [IActiveScriptParse::InitNew](../winscript/reference/iactivescriptparse-initnew.md) a été exécutée et que la méthode [IActiveScript::SetScriptSite](../winscript/reference/iactivescript-setscriptsite.md) a été appelée. Le moteur ne peut pas exécuter le code dans ce mode. Le moteur met en file d’attente le code que l’hôte lui passe par le biais de la méthode [IActiveScriptParse::ParseScriptText](../winscript/reference/iactivescriptparse-parsescripttext.md) et exécute le code après la transition à l’état démarré.<br /><br /> Étant donné que les langages peuvent varier énormément sur le plan sémantique, les moteurs de script ne sont pas obligés de prendre en charge cette transition d’état. Toutefois, les moteurs qui prennent en charge la méthode [IActiveScript::Clone](../winscript/reference/iactivescript-clone.md) doivent prendre en charge cette transition d’état. Les hôtes doivent préparer cette transition et prendre les mesures appropriées : libérer le moteur de script actuel, créer un moteur de script et appeler `IPersist*::Load`, `IPersist*::InitNew` ou [IActiveScriptParse::InitNew](../winscript/reference/iactivescriptparse-initnew.md) (et éventuellement appeler [IActiveScriptParse::ParseScriptText](../winscript/reference/iactivescriptparse-parsescripttext.md)). L’utilisation de cette transition doit être considérée comme une optimisation de la procédure ci-dessus. Notez que les informations que le moteur de script a obtenu sur les noms des éléments nommés et les informations de type décrivant les éléments nommés restent valides.<br /><br /> Compte tenu des différences considérables entre les langages, il est difficile de définir la sémantique exacte de cette transition. Au minimum, le moteur de script doit se déconnecter de tous les événements et libérer tous les pointeurs SCRIPTINFO_IUNKNOWN obtenus en appelant la méthode [IActiveScriptSite::GetItemInfo](../winscript/reference/iactivescriptsite-getiteminfo.md). Le moteur doit obtenir à nouveau ces pointeurs une fois que le script est réexécuté. Le moteur de script doit également réinitialiser le script à un état initial, qui est approprié pour la langue. Par exemple, VBScript réinitialise toutes les variables et conserve le code ajouté de manière dynamique en appelant [IActiveScriptParse::ParseScriptText](../winscript/reference/iactivescriptparse-parsescripttext.md) avec l’indicateur SCRIPTTEXT_ISPERSISTENT défini. Les autres langages devront peut-être conserver les valeurs actuelles (comme Lisp en raison de la non-séparation du code/des données) ou revenir à un état connu (notamment les langages avec des variables initialisées de manière statique).<br /><br /> Notez que la transition à l’état démarré doit avoir la même sémantique (c’est-à-dire qu’elle doit laisser le moteur de script dans le même état) qu’un appel à `IPersist*::Save` pour enregistrer le moteur de script, suivi d’un appel à `IPersist*::Load` pour charger un nouveau moteur de script ; ces actions doivent avoir la même sémantique qu’[IActiveScript::Clone](../winscript/reference/iactivescript-clone.md). Les moteurs de script qui ne prennent pas encore en charge `IActiveScript::Clone` ou `IPersist*` doivent évaluer avec soin le comportement de la transition à l’état démarré pour qu’elle ne viole pas les conditions ci-dessus si la prise en charge d’`IActiveScript::Clone` ou d’`IPersist*` a été ajoutée par la suite.<br /><br /> Durant cette transition à l’état démarré, le moteur de script se déconnecte des récepteurs d’événements après l’exécution des destructeurs appropriés, etc. dans le script. Pour empêcher l’exécution de ces destructeurs, l’hôte peut d’abord faire passer le script à l’état déconnecté avant de le faire passer à l’état démarré.<br /><br /> Utilisez [IActiveScript::InterruptScriptThread](../winscript/reference/iactivescript-interruptscriptthread.md) pour annuler un thread de script en cours d’exécution sans attendre la fin de l’exécution des événements actuels, etc.|  
 |démarré|Quand il passe de l’état initialisé à l’état démarré, le moteur exécute le code qui a été mis en file d’attente dans l’état initialisé. Le moteur peut exécuter du code dans l’état démarré, mais il n’est pas connecté aux événements ajoutés par le biais de la méthode [IActiveScript::AddNamedItem](../winscript/reference/iactivescript-addnameditem.md). Le moteur peut exécuter du code en appelant l’interface IDispatch obtenue à partir de la méthode [IActiveScript::GetScriptDispatch](../winscript/reference/iactivescript-getscriptdispatch.md) ou en appelant [IActiveScriptParse::ParseScriptText](../winscript/reference/iactivescriptparse-parsescripttext.md). Il est possible qu’une initialisation en arrière-plan (chargement progressif) soit toujours en cours et que l’appel de la méthode [IActiveScript::SetScriptState](../winscript/reference/iactivescript-setscriptstate.md) avec l’indicateur SCRIPTSTATE_CONNECTED défini provoque le blocage du script tant que l’initialisation n’est pas terminée.|  
-|connecté|Le script est chargé et connecté pour la réception d’événements à partir des objets hôtes. S’il s’agit d’une transition à partir de l’état initialisé, le moteur de script doit passer par l’état démarré et effectuer les actions nécessaires avant de passer à l’état connecté et de se connecter à des événements.|  
+|connected|Le script est chargé et connecté pour la réception d’événements à partir des objets hôtes. S’il s’agit d’une transition à partir de l’état initialisé, le moteur de script doit passer par l’état démarré et effectuer les actions nécessaires avant de passer à l’état connecté et de se connecter à des événements.|  
 |déconnecté|Le script est chargé dans un état d’exécution, mais la réception d’événements d’objets hôtes est temporairement déconnectée. Cela peut être effectué logiquement (en ignorant les événements reçus) ou physiquement (en appelant IConnectionPoint::Unadvise sur les points de connexion appropriés). S’il s’agit d’une transition à partir de l’état initialisé, le moteur de script doit passer par l’état démarré et effectuer les actions nécessaires avant de passer à l’état déconnecté. Les récepteurs d’événements qui sont en cours d’exécution sont terminés avant le changement de l’état (utilisez [IActiveScript::InterruptScriptThread](../winscript/reference/iactivescript-interruptscriptthread.md) pour annuler un thread de script en cours d’exécution). Cet état se distingue de l’état initialisé par les caractéristiques suivantes : la transition à cet état ne provoque pas la réinitialisation du script, l’état d’exécution du script n’est pas réinitialisée et aucune procédure d’initialisation de script n’est exécutée.|  
-|fermé|Le script a été fermé. Le moteur de script ne fonctionne plus et retourne des erreurs pour la plupart des méthodes.|  
+|Fermé|Le script a été fermé. Le moteur de script ne fonctionne plus et retourne des erreurs pour la plupart des méthodes.|  
   
  L’illustration suivante montre les relations entre les différents états de moteur de script et présente les méthodes qui provoquent des transitions d’un état à un autre.  
   
@@ -77,4 +77,4 @@ Pour implémenter un moteur Microsoft Windows Script, créez un objet OLE COM qu
  Le site du script n’est jamais appelé à partir du contexte d’une méthode de contrôle d’état simple des threads (par exemple, la méthode [IActiveScript::InterruptScriptThread](../winscript/reference/iactivescript-interruptscriptthread.md)) ou à partir de la méthode [IActiveScript::Clone](../winscript/reference/iactivescript-clone.md).  
   
 ## <a name="see-also"></a>Voir aussi  
- [Interfaces de script Windows](../winscript/windows-script-interfaces.md)
+ [Windows Script, interfaces](../winscript/windows-script-interfaces.md)

@@ -1,7 +1,7 @@
 ---
-title: Création de groupes de boutons réutilisables (fr) Microsoft Docs
+title: Création de groupes de boutons réutilisables | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - button groups, creating in VSPackages
 - VSPackages, creating reusable button groups
@@ -12,25 +12,25 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ddfba6701890f73ce6438ddc03a338912841a37d
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.openlocfilehash: 477014ed77b60821ad191ba6842999be6f528fee
+ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2020
-ms.locfileid: "80739467"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "85903643"
 ---
-# <a name="create-reusable-groups-of-buttons"></a>Créer des groupes réutilisables de boutons
-Un groupe de commande est une collection de commandes qui apparaissent toujours ensemble sur un menu ou une barre d’outils. N’importe quel groupe de commande peut être réutiliser en l’assignant à différents menus parentaux dans la section CommandPlacements du fichier *.vsct.*
+# <a name="create-reusable-groups-of-buttons"></a>Créer des groupes de boutons réutilisables
+Un groupe de commandes est une collection de commandes qui s’affichent toujours ensemble sur un menu ou une barre d’outils. Tout groupe de commandes peut être réutilisé en l’affectant à différents menus parents dans la section CommandPlacements du fichier *. vsct* .
 
- Les groupes de commande contiennent généralement des boutons, mais ils peuvent également contenir d’autres menus ou des boîtes combo.
+ Les groupes de commandes contiennent généralement des boutons, mais ils peuvent également contenir d’autres menus ou zones de liste modifiable.
 
-## <a name="to-create-a-reusable-group-of-buttons"></a>Créer un groupe de boutons réutilisables
+## <a name="to-create-a-reusable-group-of-buttons"></a>Pour créer un groupe de boutons réutilisable
 
-1. Créer un projet `ReusableButtons`VSIX nommé . Pour plus d’informations, voir [Créer une extension avec une commande de menu](../extensibility/creating-an-extension-with-a-menu-command.md).
+1. Créez un projet VSIX nommé `ReusableButtons` . Pour plus d’informations, consultez [créer une extension à l’aide d’une commande de menu](../extensibility/creating-an-extension-with-a-menu-command.md).
 
-2. Lorsque le projet s’ouvre, ajoutez un modèle d’élément de commande personnalisé nommé **ReusableCommand**. Dans la **Solution Explorer**, cliquez à droite sur le nœud du projet et sélectionnez **Ajouter** > **un nouvel article**. Dans le dialogue **Add New Item,** rendez-vous sur **Visual C’Extensibility** > **Extensibility** et **sélectionnez Custom Command**. Dans le champ **nom** au bas de la fenêtre, changer le nom du fichier de commande pour *ReusableCommand.cs*.
+2. Lorsque le projet s’ouvre, ajoutez un modèle d’élément de commande personnalisé nommé **ReusableCommand**. Dans le **Explorateur de solutions**, cliquez avec le bouton droit sur le nœud du projet et sélectionnez **Ajouter**  >  **un nouvel élément**. Dans la boîte de dialogue **Ajouter un nouvel élément** , accédez à extensibilité **Visual C#**  >  **Extensibility** et sélectionnez **commande personnalisée**. Dans le champ **nom** en bas de la fenêtre, remplacez le nom du fichier de commandes par *ReusableCommand.cs*.
 
-3. Dans le fichier *.vsct,* allez à la section Symboles et trouvez l’élément GuidSymbol qui contient des groupes et des commandes pour le projet. Il doit être nommé guidReusableCommandPackageCmdSet.
+3. Dans le fichier *. vsct* , accédez à la section symboles et recherchez l’élément GuidSymbol qui contient des groupes et des commandes pour le projet. Il doit être nommé guidReusableCommandPackageCmdSet.
 
 4. Ajoutez un IDSymbol pour chaque bouton que vous ajouterez au groupe, comme dans l’exemple suivant.
 
@@ -42,9 +42,9 @@ Un groupe de commande est une collection de commandes qui apparaissent toujours 
     </GuidSymbol>
     ```
 
-     Par défaut, le modèle d’élément de commande crée un groupe nommé **MyMenuGroup** et un bouton qui a le nom que vous avez fourni, ainsi qu’une entrée IDSymbol pour chacun.
+     Par défaut, le modèle d’élément de commande crée un groupe nommé **MyMenuGroup** et un bouton qui porte le nom que vous avez fourni, ainsi qu’une entrée IDSymbol pour chacun d’entre eux.
 
-5. Dans la section Groupes, créez un élément de groupe qui a les mêmes attributs de GUID et d’identification que ceux donnés dans la section Symboles. Vous pouvez également utiliser un groupe existant, ou utiliser l’entrée qui est fournie par le modèle de commande, comme dans l’exemple suivant. Ce groupe apparaît sur le menu **Tools**
+5. Dans la section groupes, créez un élément de groupe avec les mêmes attributs GUID et ID que ceux fournis dans la section Symbols. Vous pouvez également utiliser un groupe existant ou l’entrée fournie par le modèle de commande, comme dans l’exemple suivant. Ce groupe apparaît dans le menu **Outils** .
 
     ```xml
     <Groups>
@@ -54,11 +54,11 @@ Un groupe de commande est une collection de commandes qui apparaissent toujours 
     </Groups>
     ```
 
-## <a name="to-create-a-group-of-buttons-for-reuse"></a>Créer un groupe de boutons pour la réutilisation
+## <a name="to-create-a-group-of-buttons-for-reuse"></a>Pour créer un groupe de boutons à réutiliser
 
-1. Vous pouvez mettre une commande ou un menu dans un groupe soit en utilisant le groupe comme parent dans la définition de la commande ou du menu, soit en mettant la commande ou le menu dans le groupe en utilisant la section CommandPlacements.
+1. Vous pouvez placer une commande ou un menu dans un groupe soit en utilisant le groupe en tant que parent dans la définition de la commande ou du menu, soit en plaçant la commande ou le menu dans le groupe à l’aide de la section CommandPlacements.
 
-     Dans la section Boutons, définissez un bouton qui a votre groupe comme parent, ou utilisez le bouton fourni par le modèle de paquet, comme indiqué dans l’exemple suivant.
+     Dans la section boutons, définissez un bouton qui a votre groupe comme parent, ou utilisez le bouton fourni par le modèle de package, comme indiqué dans l’exemple suivant.
 
     ```xml
     <Button guid="guidReusableCommandPackageCmdSet" id="ReusableCommandId" priority="0x0100" type="Button">
@@ -70,7 +70,7 @@ Un groupe de commande est une collection de commandes qui apparaissent toujours 
     </Button>
     ```
 
-2. Si un bouton doit apparaître dans plus d’un groupe, créez une entrée pour elle dans la section CommandPlacements, qui doit être placée après la section Commandes. Définissez les attributs GUID et ID de l’élément CommandPlacement pour correspondre à ceux du bouton que vous souhaitez positionner, puis définissez le GUID et l’ID de son élément Parent à ceux du groupe cible, comme indiqué dans l’exemple suivant.
+2. Si un bouton doit apparaître dans plusieurs groupes, créez une entrée pour celui-ci dans la section CommandPlacements, qui doit être placée après la section Commands. Définissez les attributs GUID et ID de l’élément Commandplacement ayant pour qu’ils correspondent à ceux du bouton que vous souhaitez positionner, puis définissez le GUID et l’ID de son élément parent sur ceux du groupe cible, comme indiqué dans l’exemple suivant.
 
     ```xml
     <CommandPlacements>
@@ -81,13 +81,13 @@ Un groupe de commande est une collection de commandes qui apparaissent toujours 
     ```
 
     > [!NOTE]
-    > La valeur du champ Prioritaire détermine la position du commandant dans le nouveau groupe de commandement. Les priorités définies dans l’élément CommandPlacement l’emportent sur celles définies dans la définition de l’élément. Les commandes dont les valeurs de priorité sont inférieures sont affichées avant les commandes qui ont des valeurs prioritaires plus élevées. Les valeurs prioritaires en double sont autorisées, mais la position relative des commandes qui ont la même valeur prioritaire ne peut être garantie parce que l’ordre dans lequel la commande **devenv/setup** crée l’interface finale du registre peut ne pas être cohérente.
+    > La valeur du champ Priority détermine la position de la commande dans le nouveau groupe de commandes. Les priorités définies dans l’élément Commandplacement ayant remplacent celles définies dans la définition de l’élément. Les commandes qui ont des valeurs de priorité inférieure sont affichées avant les commandes qui ont des valeurs de priorité plus élevée. Les valeurs de priorité en double sont autorisées, mais la position relative des commandes qui ont la même valeur de priorité ne peut pas être garantie, car l’ordre dans lequel la commande **devenv/setup** crée l’interface finale à partir du Registre peut ne pas être cohérent.
 
-## <a name="to-put-a-reusable-group-of-buttons-on-a-menu"></a>Mettre un groupe de boutons réutilisables sur un menu
+## <a name="to-put-a-reusable-group-of-buttons-on-a-menu"></a>Pour placer un groupe de boutons réutilisable dans un menu
 
-1. Créez une entrée `CommandPlacements` dans la section. Définissez le GUID `CommandPlacement` et l’ID de l’élément à ceux de votre groupe, et définissez le GUID et l’ID parent à ceux de l’emplacement cible.
+1. Créez une entrée dans la `CommandPlacements` section. Définissez le GUID et l’ID de l' `CommandPlacement` élément sur ceux de votre groupe, puis définissez le GUID et l’ID parents sur ceux de l’emplacement cible.
 
-    La section CommandPlacements doit être placée juste après la section Commandes :
+    La section CommandPlacements doit être placée juste après la section commands :
 
    ```xml
    <CommandTable>
@@ -98,9 +98,9 @@ Un groupe de commande est une collection de commandes qui apparaissent toujours 
    </CommandTable>
    ```
 
-    Un groupe de commande peut être inclus sur plus d’un menu. Le menu parent peut être celui que vous [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] avez créé, celui qui est fourni par (comme décrit dans *ShellCmdDef.vsct* ou *SharedCmdDef.vsct*), ou celui qui est défini dans un autre VSPackage. Le nombre de couches parentales est illimité tant que [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] le menu parent est éventuellement connecté à ou à un menu raccourci qui est affiché par un VSPackage.
+    Un groupe de commandes peut être inclus dans plusieurs menus. Le menu parent peut être celui que vous avez créé, qui est fourni par [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] (comme décrit dans *ShellCmdDef. vsct* ou *SharedCmdDef. vsct*), ou qui est défini dans un autre VSPackage. Le nombre de couches de parent est illimité tant que le menu parent est finalement connecté à [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] un menu contextuel qui est affiché par un VSPackage.
 
-    L’exemple suivant met le groupe sur la barre d’outils **Solution Explorer,** à droite des autres boutons.
+    L’exemple suivant place le groupe dans la barre d’outils **Explorateur de solutions** , à droite des autres boutons.
 
    ```xml
    <CommandPlacements>

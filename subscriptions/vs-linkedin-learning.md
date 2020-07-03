@@ -5,14 +5,14 @@ ms.author: v-evwin
 manager: lank
 ms.assetid: 5bba2205-d32f-413d-9b58-724a24993842
 ms.date: 04/17/2020
-ms.topic: conceptual
+ms.topic: how-to
 description: Découvrez l’avantage LinkedIn Learning, qui est lié à un abonnement LinkedIn Premium inclus dans certains abonnements Visual Studio.
-ms.openlocfilehash: a0b837ce4a86b48acb690030c1a96064b336cd61
-ms.sourcegitcommit: ade07bd1cf69b8b494d171ae648cfdd54f7800d3
+ms.openlocfilehash: f3ce676232742f712a926dbeb70e8fd2505ff18a
+ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "81649528"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "85904417"
 ---
 # <a name="the-linkedin-learning-benefit-in-visual-studio-subscriptions"></a>Avantage LinkedIn Learning dans les abonnements Visual Studio
 
@@ -40,11 +40,11 @@ Pour activer votre abonnement LinkedIn Premium et l’avantage LinkedIn Learning
 
 7. Vous indiquez ensuite quelques informations sur vous-même pour votre profil.  Indiquez si vous êtes étudiant ou spécifiez votre fonction la plus récente, votre entreprise et son secteur d’activité.
 
-8. Dans cette étape, vous pouvez indiquer les domaines qui vous intéressent.  Pour accélérer le processus de création de compte, cliquez **sur Pas encore sûr.  Je suis ouvert !**  (Vous pouvez indiquer vos domaines d’intérêt ultérieurement.)
+8. Dans cette étape, vous pouvez indiquer les domaines qui vous intéressent.  Pour accélérer le processus de création du compte, cliquez sur **ne pas encore confirmer.  Je suis ouvert !**  (Vous pouvez indiquer vos domaines d’intérêt ultérieurement.)
 
 9. Quand vous avez indiqué votre adresse e-mail, vous avez reçu un message contenant un code de confirmation.  Ce message provient de « Messages LinkedIn ».  Si vous ne le trouvez dans votre boîte de réception, vérifiez vos dossiers de courrier indésirable.  Entrez le code du message et cliquez sur **Vérifier**.
 
-10. Si vous voulez importer vos contacts depuis le compte e-mail que vous avez entré précédemment, vous pouvez le faire maintenant.  Sinon, cliquez sur **Ignorer**. (Si vous choisissez d’ignorer cette étape, vous êtes invité à confirmer votre choix.  Cliquez **oui**.)
+10. Si vous voulez importer vos contacts depuis le compte e-mail que vous avez entré précédemment, vous pouvez le faire maintenant.  Sinon, cliquez sur **Ignorer**. (Si vous choisissez d’ignorer cette étape, vous êtes invité à confirmer votre choix.  Cliquez sur **Oui**.)
 
 11. Les alertes d’emploi vous permettent d’être averti des emplois dans votre région qui peuvent vous intéresser.  Vous pouvez choisir de définir une alerte d’emploi maintenant ou d’ignorer cette étape pour poursuivre la création de votre compte.
 
@@ -71,20 +71,20 @@ Pour activer votre abonnement LinkedIn Premium et l’avantage LinkedIn Learning
 
 | Niveau de l’abonnement                                                 |     Canaux                                            | Avantage                                                          | Renouvelable ?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
-| Visual Studio Enterprise (Standard)   | VL, Azure, Retail, sélectionné NFR<sup>1</sup> | 6 mois       |  Non.  Disponible pour les nouveaux abonnés uniquement          |
-| Visual Studio Enterprise avec GitHub Enterprise   | Vl | 6 mois       |  Non.  Disponible pour les nouveaux abonnés uniquement          |
+| Visual Studio Enterprise (Standard)   | VL, Azure, vente au détail, NFR sélectionnés<sup>1</sup> | 6 mois       |  Non.  Disponible pour les nouveaux abonnés uniquement          |
+| Visual Studio Enterprise avec GitHub Enterprise   | LV | 6 mois       |  Non.  Disponible pour les nouveaux abonnés uniquement          |
 | Visual Studio Professional (Standard) | Licences en volume, Azure, Détail                                       | 3 mois                                                            |Non.  Disponible pour les nouveaux abonnés uniquement         |
-| Visual Studio Professional avec GitHub Enterprise | Vl | 3 mois      | Non.  Disponible pour les nouveaux abonnés uniquement         |
+| Visual Studio Professional avec GitHub Enterprise | LV | 3 mois      | Non.  Disponible pour les nouveaux abonnés uniquement         |
 | Visual Studio Test Professional (Standard)                         | Licences en volume, Détail                                              | Non disponible                                            |  N/D         |
 | Plateformes MSDN (Standard)                                          | Licences en volume, Détail                                              | Non disponible                                              | N/D         |
 | Visual Studio Enterprise, Visual Studio Professional (cloud mensuel) | Azure                                       | Non disponible                                                           |N/D|
 
-<sup>1</sup>  *Comprend: Pas pour la revente (NFR), Visual Studio Industry Partner (VSIP).  Exclut : Microsoft Partner Network (MPN), FTE, MCT Software & Services Developer, BizSpark, Imagine, Most Valuable Professional (MVP), Regional Director (RD).  MCT Software & Services.*
+<sup>1</sup>  *comprend : non pour la revente (NFR), VSIP (Visual Studio Industry Partner).  Exclut : Microsoft Partner Network (MPN), FTE, MCT Software & Developer Services Developer, BizSpark, imagine, MVP (Most Valuable Professional), RD (Regional Director).  Services de & de logiciel MCT.*
 
 > [!NOTE]
-> Microsoft ne propose plus d’abonnements annuels Visual Studio Professional et Visual Studio Enterprise dans les abonnements cloud. L’expérience des clients n’en sera pas altérée ; il leur sera par ailleurs toujours possible de renouveler, d’augmenter, de diminuer ou d’annuler leur abonnement. Les nouveaux clients sont [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) encouragés à aller explorer différentes options pour acheter Visual Studio.
+> Microsoft ne propose plus d’abonnements annuels Visual Studio Professional et Visual Studio Enterprise dans les abonnements cloud. L’expérience des clients n’en sera pas altérée ; il leur sera par ailleurs toujours possible de renouveler, d’augmenter, de diminuer ou d’annuler leur abonnement. Les nouveaux clients sont encouragés à accéder à [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) pour explorer les différentes options d’achat de Visual Studio.
 
-Vous n’êtes pas sûr de l’abonnement que vous utilisez ?  Connectez-vous [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) pour voir tous les abonnements attribués à votre adresse e-mail. Si vous ne retrouvez pas tous vos abonnements, certains ont peut-être été attribués à une autre adresse e-mail.  Dans ce cas, vous devez vous connecter via l’adresse e-mail correspondante pour afficher ces abonnements.
+Vous n’êtes pas sûr de l’abonnement que vous utilisez ?  Connectez-vous à [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) pour afficher tous les abonnements attribués à votre adresse de messagerie. Si vous ne retrouvez pas tous vos abonnements, certains ont peut-être été attribués à une autre adresse e-mail.  Dans ce cas, vous devez vous connecter via l’adresse e-mail correspondante pour afficher ces abonnements.
 
 ## <a name="frequently-asked-questions"></a>Forum aux questions
 ### <a name="q-if-i-renew-my-subscription-does-my-linkedin-learning-benefit-also-renew"></a>Q : Si je renouvelle mon abonnement, mon avantage LinkedIn Learning est-il également renouvelé ?
@@ -94,16 +94,16 @@ R : Non, l’offre LinkedIn Learning est réservée uniquement aux nouveaux abo
 - Besoin d’aide avec LinkedIn Learning ?  Consultez les ressources suivantes :
   - Aide sur [l’utilisation de LinkedIn Learning](https://www.linkedin.com/help/learning).
   - Aide sur des questions générales relatives à [LinkedIn](https://www.linkedin.com/help/linkedin), telles que la création de comptes et de profils, ou la gestion de votre réseau.
-- Pour obtenir de l’aide pour les ventes, les abonnements, les comptes et la facturation des abonnements Visual Studio, contactez Visual Studio [Subscriptions Support](https://visualstudio.microsoft.com/subscriptions/support/).
+- Pour obtenir de l’aide sur les ventes, les abonnements, les comptes et la facturation des abonnements Visual Studio, contactez le [support des abonnements](https://visualstudio.microsoft.com/subscriptions/support/)Visual Studio.
 - Vous avez des questions concernant l’IDE Visual Studio, Azure DevOps Services, ou d’autres produits ou services Visual Studio ?  Consultez le [support Visual Studio](https://visualstudio.microsoft.com/support/).
 
 ## <a name="see-also"></a>Voir aussi
-- [Documentation Visual Studio](https://docs.microsoft.com/visualstudio/)
+- [Documentation de Visual Studio](https://docs.microsoft.com/visualstudio/)
 - [Documentation Azure DevOps](https://docs.microsoft.com/azure/devops/)
 - [Documentation Azure](https://docs.microsoft.com/azure/)
 - [Documentation Microsoft 365](https://docs.microsoft.com/microsoft-365/)
 
 ## <a name="next-steps"></a>Étapes suivantes
-Découvrez le reste des grands avantages inclus avec votre abonnement. Visite [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
+Découvrez les autres avantages inclus dans votre abonnement. Rendez-vous sur [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
 
-Si vous n’avez pas déjà activé l’avantage de crédit individuel [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) Azure DevTest qui vient avec votre abonnement, visitez et cliquez sur la tuile Azure dans la catégorie Outils pour configurer votre abonnement Azure et échanger votre crédit individuel Azure DevTest.
+Si vous n’avez pas encore activé l’avantage de crédit DevTest Azure fourni avec votre abonnement, accédez à [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) la vignette Azure et cliquez dessus dans la catégorie outils pour configurer votre abonnement Azure et échanger votre crédit Azure DevTest individuel.
