@@ -1,7 +1,7 @@
 ---
-title: 'Comment : Mettre en œuvre des projets imbriqués Microsoft Docs'
+title: 'Comment : implémenter des projets imbriqués | Microsoft Docs'
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - nested projects, implementing
 - projects [Visual Studio SDK], nesting
@@ -11,83 +11,83 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8d9dfe567db0b8788b93b13aeb760d45f4c05b57
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.openlocfilehash: 3b1ac3c147962b943499172435c3f601115d36a9
+ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2020
-ms.locfileid: "80707983"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "85905352"
 ---
-# <a name="how-to-implement-nested-projects"></a>Comment : Mettre en œuvre des projets imbriqués
+# <a name="how-to-implement-nested-projects"></a>Comment : implémenter des projets imbriqués
 
-Lorsque vous créez un type de projet imbriqué, il y a plusieurs étapes supplémentaires qui doivent être mises en œuvre. Un projet parent assume certaines des mêmes responsabilités que la solution pour ses projets imbriqués (enfants). Le projet parent est un conteneur de projets semblables à une solution. En particulier, il y a plusieurs événements qui doivent être soulevés par la solution et par les projets parentaux pour construire la hiérarchie des projets imbriqués. Ces événements sont décrits dans le processus suivant pour la création de projets imbriqués.
+Lorsque vous créez un type de projet imbriqué, plusieurs étapes supplémentaires doivent être implémentées. Un projet parent prend en compte les mêmes responsabilités que celles de la solution pour ses projets imbriqués (enfants). Le projet parent est un conteneur de projets similaire à une solution. En particulier, il existe plusieurs événements qui doivent être déclenchés par la solution et par les projets parents pour générer la hiérarchie des projets imbriqués. Ces événements sont décrits dans le processus suivant pour créer des projets imbriqués.
 
 ## <a name="create-nested-projects"></a>Créer des projets imbriqués
 
-1. L’environnement de développement intégré (IDE) charge le dossier de <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFactory> projet et les informations de démarrage du projet parent en appelant l’interface. Le projet parent est créé et ajouté à la solution.
+1. L’environnement de développement intégré (IDE) charge le fichier projet du projet parent et les informations de démarrage en appelant l' <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFactory> interface. Le projet parent est créé et ajouté à la solution.
 
     > [!NOTE]
-    > À ce stade, il est trop tôt dans le processus pour le projet parent de créer le projet imbriqué parce que le projet parent doit être créé avant que les projets pour enfants puissent être créés. À la suite de cette séquence, le projet parent peut appliquer des paramètres aux projets pour enfants et les projets pour enfants peuvent obtenir de l’information auprès des projets parentaux si nécessaire. Cette séquence est si elle est nécessaire sur par les clients tels que le contrôle du code source (SCC) et **Solution Explorer**.
+    > À ce stade, il est trop tôt dans le processus pour que le projet parent crée le projet imbriqué, car le projet parent doit être créé avant que les projets enfants puissent être créés. À la suite de cette séquence, le projet parent peut appliquer des paramètres aux projets enfants et les projets enfants peuvent obtenir des informations à partir des projets parents, si nécessaire. Cette séquence est si nécessaire sur les clients tels que le contrôle de code source (SCC) et **Explorateur de solutions**.
 
-     Le projet parent doit <xref:Microsoft.VisualStudio.Shell.Interop.IVsParentProject.OpenChildren%2A> attendre que la méthode soit appelée par l’IDE avant de pouvoir créer son projet ou projets imbriqués (enfant).
+     Le projet parent doit attendre que la <xref:Microsoft.VisualStudio.Shell.Interop.IVsParentProject.OpenChildren%2A> méthode soit appelée par l’IDE avant de pouvoir créer son ou ses projets imbriqués (enfants).
 
-2. L’IDE `QueryInterface` fait appel <xref:Microsoft.VisualStudio.Shell.Interop.IVsParentProject>au projet parent pour . Si cet appel réussit, l’IDE appelle la <xref:Microsoft.VisualStudio.Shell.Interop.IVsParentProject.OpenChildren%2A> méthode du parent pour ouvrir tous les projets imbriqués pour le projet parent.
+2. L’IDE appelle `QueryInterface` sur le projet parent pour <xref:Microsoft.VisualStudio.Shell.Interop.IVsParentProject> . Si cet appel a échoué, l’IDE appelle la <xref:Microsoft.VisualStudio.Shell.Interop.IVsParentProject.OpenChildren%2A> méthode du parent pour ouvrir tous les projets imbriqués pour le projet parent.
 
-3. Le projet parent <xref:Microsoft.VisualStudio.Shell.Interop.IVsFireSolutionEvents.FireOnBeforeOpeningChildren%2A> appelle la méthode pour aviser les auditeurs que les projets imbriqués sont sur le point d’être créés. SCC, par exemple, est à l’écoute de ces événements pour savoir si les étapes du processus de création de solutions et de projets sont en ordre. Si les étapes sont hors d’état de la marche, la solution peut ne pas être enregistrée correctement avec le contrôle du code source.
+3. Le projet parent appelle la <xref:Microsoft.VisualStudio.Shell.Interop.IVsFireSolutionEvents.FireOnBeforeOpeningChildren%2A> méthode pour notifier les écouteurs de la création des projets imbriqués. SCC, par exemple, écoute les événements pour savoir si les étapes du processus de création de la solution et du projet se produisent dans l’ordre. Si les étapes se produisent dans le désordre, la solution n’est peut-être pas inscrite correctement avec le contrôle de code source.
 
-4. Le projet <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution.AddVirtualProject%2A> parent appelle <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution.AddVirtualProjectEx%2A> la méthode ou la méthode sur chacun de ses projets pour enfants.
+4. Le projet parent appelle la <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution.AddVirtualProject%2A> méthode ou la <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution.AddVirtualProjectEx%2A> méthode sur chacun de ses projets enfants.
 
-     Vous passez <xref:Microsoft.VisualStudio.Shell.Interop.__VSADDVPFLAGS> à `AddVirtualProject` la méthode pour indiquer que le projet virtuel (imbriqué) doit être ajouté à la fenêtre du projet, exclu de la construction, ajouté au contrôle du code source, et ainsi de suite. `VSADDVPFLAGS`vous permet de contrôler la visibilité du projet imbriqué et d’indiquer quelles fonctionnalités y sont associées.
+     Vous transmettez <xref:Microsoft.VisualStudio.Shell.Interop.__VSADDVPFLAGS> à la `AddVirtualProject` méthode pour indiquer que le projet virtuel (imbriqué) doit être ajouté à la fenêtre du projet, exclu de la génération, ajouté au contrôle de code source, et ainsi de suite. `VSADDVPFLAGS`vous permet de contrôler la visibilité du projet imbriqué et d’indiquer les fonctionnalités qui lui sont associées.
 
-     Si vous rechargez un projet d’enfant déjà existant qui a un projet GUID `AddVirtualProjectEx`stocké dans le dossier de projet du projet parent, le projet parent appelle . La seule `AddVirtualProject` différence `AddVirtualProjectEX` entre `AddVirtualProjectEX` et est celle qui a un `guidProjectID` paramètre pour permettre <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution.GetProjectOfGuid%2A> <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution.GetProjectOfProjref%2A> au projet parent de spécifier un par exemple pour le projet enfant pour activer et fonctionner correctement.
+     Si vous rechargez un projet enfant existant qui a un GUID de projet stocké dans le fichier projet du projet parent, le projet parent appelle `AddVirtualProjectEx` . La seule différence entre `AddVirtualProject` et `AddVirtualProjectEX` est que `AddVirtualProjectEX` a un paramètre pour permettre au projet parent de spécifier un par instance `guidProjectID` pour que le projet enfant active <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution.GetProjectOfGuid%2A> et <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution.GetProjectOfProjref%2A> fonctionne correctement.
 
-     S’il n’y a pas de GUID disponible, par exemple lorsque vous ajoutez un nouveau projet imbriqué, la solution en crée une pour le projet au moment où elle est ajoutée au parent. Il incombe au projet parent de poursuivre ce projet GUID dans son dossier de projet. Si vous supprimez un projet imbriqué, le GUID pour ce projet peut également être supprimé.
+     Si aucun GUID n’est disponible, par exemple lorsque vous ajoutez un nouveau projet imbriqué, la solution en crée un pour le projet au moment où il est ajouté au parent. Il incombe au projet parent de conserver ce GUID de projet dans son fichier projet. Si vous supprimez un projet imbriqué, le GUID de ce projet peut également être supprimé.
 
-5. L’IDE <xref:Microsoft.VisualStudio.Shell.Interop.IVsParentProject.OpenChildren> appelle la méthode sur chaque projet enfant du projet parent.
+5. L’IDE appelle la <xref:Microsoft.VisualStudio.Shell.Interop.IVsParentProject.OpenChildren> méthode sur chaque projet enfant du projet parent.
 
-     Le projet parent `IVsParentProject` doit être mis en œuvre si vous voulez nicher des projets. Mais le projet `QueryInterface` parent `IVsParentProject` n’exige jamais, même s’il a des projets parentaux en dessous. La solution gère l’appel vers `IVsParentProject` et, `OpenChildren` s’il est mis en œuvre, appelle à créer les projets imbriqués. `AddVirtualProjectEX`est toujours `OpenChildren`appelé de . Il ne devrait jamais être appelé par le projet parent pour maintenir les événements de création de hiérarchie en ordre.
+     Le projet parent doit implémenter `IVsParentProject` si vous souhaitez imbriquer des projets. Toutefois, le projet parent n’appelle jamais `QueryInterface` pour `IVsParentProject` , même s’il a des projets parents en dessous. La solution gère l’appel à `IVsParentProject` et, si elle est implémentée, appelle `OpenChildren` pour créer les projets imbriqués. `AddVirtualProjectEX`est toujours appelé à partir de `OpenChildren` . Elle ne doit jamais être appelée par le projet parent pour conserver les événements de création de hiérarchie dans l’ordre.
 
-6. L’IDE <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEvents3.OnAfterOpenProject%2A> appelle la méthode sur le projet enfant.
+6. L’IDE appelle la <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEvents3.OnAfterOpenProject%2A> méthode sur le projet enfant.
 
-7. Le projet parent <xref:Microsoft.VisualStudio.Shell.Interop.IVsFireSolutionEvents.FireOnAfterOpeningChildren%2A> appelle la méthode pour informer les auditeurs que les projets pour enfants pour le parent ont été créés.
+7. Le projet parent appelle la <xref:Microsoft.VisualStudio.Shell.Interop.IVsFireSolutionEvents.FireOnAfterOpeningChildren%2A> méthode pour notifier les écouteurs que les projets enfants pour le parent ont été créés.
 
-8. L’IDE <xref:Microsoft.VisualStudio.Shell.Interop.IVsFireSolutionEvents.FireOnAfterOpenProject%2A> appelle la méthode sur le projet parent après que tous les projets d’enfants ont été ouverts.
+8. L’IDE appelle la <xref:Microsoft.VisualStudio.Shell.Interop.IVsFireSolutionEvents.FireOnAfterOpenProject%2A> méthode sur le projet parent une fois tous les projets enfants ouverts.
 
-     S’il n’existe pas déjà, le projet parent crée `CoCreateGuid`un GUID pour chaque projet imbriqué en appelant .
-
-    > [!NOTE]
-    > `CoCreateGuid`est une API COM appelée lorsqu’un GUID doit être créé. Pour plus d’informations, voir `CoCreateGuid` et GUIDs dans la bibliothèque MSDN.
-
-     Le projet parent stocke cette GUID dans son dossier de projet pour être récupéré la prochaine fois qu’il est ouvert dans l’IDE. Voir l’étape 4 pour plus `AddVirtualProjectEX` d’informations sur l’appel de récupérer le `guidProjectID` projet pour l’enfant.
-
-9. La <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.GetProperty%2A> méthode est alors demandée pour le parent ItemID que par convention vous déléguez dans le projet imbriqué. Le <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.GetProperty%2A> récupère les propriétés du nœud qui niche un projet que vous voulez déléguer quand il est appelé sur le parent.
-
-     Étant donné que les projets parent et enfant sont instantanés sur le plan programmatique, vous pouvez définir des propriétés pour des projets imbriqués à ce stade.
+     S’il n’existe pas déjà, le projet parent crée un GUID pour chaque projet imbriqué en appelant `CoCreateGuid` .
 
     > [!NOTE]
-    > Non seulement vous recevez l’information contextuelle du projet imbriqué, mais vous pouvez également demander si le projet parent a un contexte pour cet article en vérifiant [__VSHPROPID. VSHPROPID_UserContext](<xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID.VSHPROPID_UserContext>). De cette façon, vous pouvez ajouter des attributs d’aide dynamique supplémentaires et des options de menu spécifiques aux projets imbriqués individuels.
+    > `CoCreateGuid`est une API COM appelée lorsqu’un GUID doit être créé. Pour plus d’informations, consultez `CoCreateGuid` et GUID dans MSDN Library.
 
-10. La hiérarchie est conçue pour l’affichage <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.GetNestedHierarchy%2A> dans Solution **Explorer** avec un appel à la méthode.
+     Le projet parent stocke ce GUID dans son fichier projet à récupérer la prochaine fois qu’il est ouvert dans l’IDE. Pour plus d’informations sur l’appel de `AddVirtualProjectEX` pour récupérer le `guidProjectID` pour le projet enfant, consultez l’étape 4.
 
-     Vous passez la hiérarchie à `GetNestedHierarchy` l’environnement à travers pour construire la hiérarchie pour l’affichage dans Solution Explorer. De cette manière, la solution sait que le projet existe et peut être géré pour la construction par le gestionnaire de construction, ou peut permettre aux fichiers dans le projet d’être mis sous contrôle de code source.
+9. La <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.GetProperty%2A> méthode est ensuite appelée pour le ItemId parent, par convention que vous déléguez au projet imbriqué. <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.GetProperty%2A>Récupère les propriétés du nœud qui imbrique un projet que vous souhaitez déléguer lorsqu’il est appelé sur le parent.
 
-11. Lorsque tous les projets imbriqués pour le projet1 ont été créés, le contrôle est transmis à la solution et le processus est répété pour le projet2.
+     Étant donné que les projets parents et enfants sont instanciés par programme, vous pouvez définir des propriétés pour les projets imbriqués à ce stade.
 
-     Ce même processus de création de projets imbriqués se produit pour un projet pour enfants qui a un enfant. Dans ce cas, si BuildProject1, qui est un enfant du projet1, avait des projets pour enfants, ils seraient créés après BuildProject1 et avant Project2. Le processus est récursif et la hiérarchie est construite de haut en bas.
+    > [!NOTE]
+    > Non seulement vous recevez les informations de contexte à partir du projet imbriqué, mais vous pouvez également demander si le projet parent possède un contexte pour cet élément en vérifiant [__VSHPROPID. VSHPROPID_UserContext](<xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID.VSHPROPID_UserContext>). De cette façon, vous pouvez ajouter des attributs d’aide dynamique supplémentaires et des options de menu spécifiques à des projets imbriqués individuels.
 
-     Lorsqu’un projet imbriqué est fermé parce que l’utilisateur a `IVsParentProject` <xref:Microsoft.VisualStudio.Shell.Interop.IVsParentProject.CloseChildren%2A>fermé la solution ou le projet spécifique lui-même, l’autre méthode sur , , est appelé. Le projet parent enveloppe <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution.RemoveVirtualProject%2A> les appels <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEvents3.OnBeforeClosingChildren%2A> à <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEvents3.OnAfterClosingChildren%2A> la méthode avec le et les méthodes pour informer les auditeurs de solutions événements que les projets imbriqués sont en cours de fermeture.
+10. La hiérarchie est générée pour s’afficher dans **Explorateur de solutions** avec un appel à la <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.GetNestedHierarchy%2A> méthode.
 
-Les sujets suivants traitent de plusieurs autres concepts à considérer lorsque vous mettez en œuvre des projets imbriqués :
+     Vous transmettez la hiérarchie à l’environnement par le biais `GetNestedHierarchy` de pour créer la hiérarchie à afficher dans Explorateur de solutions. De cette manière, la solution sait que le projet existe et peut être géré pour être généré par le gestionnaire de build, ou peut permettre aux fichiers du projet d’être placés sous contrôle de code source.
 
-- [Considérations pour le déchargement et le rechargement des projets imbriqués](../../extensibility/internals/considerations-for-unloading-and-reloading-nested-projects.md)
-- [Soutien des sorciers pour les projets imbriqués](../../extensibility/internals/wizard-support-for-nested-projects.md)
-- [Mettre en œuvre la gestion des commandes pour les projets imbriqués](../../extensibility/internals/implementing-command-handling-for-nested-projects.md)
+11. Lorsque tous les projets imbriqués pour Projet1 ont été créés, le contrôle est renvoyé à la solution et le processus est répété pour project2.
+
+     Pour créer des projets imbriqués, le même processus se produit pour un projet enfant qui a un enfant. Dans ce cas, si BuildProject1, qui est un enfant de Project1, avait des projets enfants, il serait créé après BuildProject1 et avant project2. Le processus est récursif et la hiérarchie est créée de haut en haut.
+
+     Quand un projet imbriqué est fermé parce que l’utilisateur a fermé la solution ou le projet spécifique lui-même, l’autre méthode sur `IVsParentProject` , <xref:Microsoft.VisualStudio.Shell.Interop.IVsParentProject.CloseChildren%2A> , est appelée. Le projet parent encapsule les appels à la <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution.RemoveVirtualProject%2A> méthode avec les <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEvents3.OnBeforeClosingChildren%2A> <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEvents3.OnAfterClosingChildren%2A> méthodes et pour notifier les écouteurs aux événements de solution que les projets imbriqués sont fermés.
+
+Les rubriques suivantes traitent de plusieurs autres concepts à prendre en compte lorsque vous implémentez des projets imbriqués :
+
+- [Considérations sur le déchargement et le rechargement des projets imbriqués](../../extensibility/internals/considerations-for-unloading-and-reloading-nested-projects.md)
+- [Prise en charge de l’Assistant pour les projets imbriqués](../../extensibility/internals/wizard-support-for-nested-projects.md)
+- [Implémenter la gestion des commandes pour les projets imbriqués](../../extensibility/internals/implementing-command-handling-for-nested-projects.md)
 - [Filtrer la boîte de dialogue AddItem pour les projets imbriqués](../../extensibility/internals/filtering-the-additem-dialog-box-for-nested-projects.md)
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Ajouter des éléments à la boîte de dialogue Add New Item](../../extensibility/internals/adding-items-to-the-add-new-item-dialog-boxes.md)
-- [Enregistrer les modèles de projets et d’objets](../../extensibility/internals/registering-project-and-item-templates.md)
-- [Liste de contrôle : Créer de nouveaux types de projets](../../extensibility/internals/checklist-creating-new-project-types.md)
+- [Ajouter des éléments à la boîte de dialogue Ajouter un nouvel élément](../../extensibility/internals/adding-items-to-the-add-new-item-dialog-boxes.md)
+- [Inscrire des modèles de projet et d’élément](../../extensibility/internals/registering-project-and-item-templates.md)
+- [Liste de vérification : créer des types de projets](../../extensibility/internals/checklist-creating-new-project-types.md)
 - [Paramètres de contexte](../../extensibility/internals/context-parameters.md)
-- [Fichier Wizard (.vsz)](../../extensibility/internals/wizard-dot-vsz-file.md)
+- [Fichier Assistant (. vsz)](../../extensibility/internals/wizard-dot-vsz-file.md)

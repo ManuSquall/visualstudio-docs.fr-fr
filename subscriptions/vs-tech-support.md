@@ -5,14 +5,14 @@ ms.author: v-evwin
 manager: lank
 ms.assetid: 2e0fd8bb-8f20-487c-b350-b8fde405ea5e
 ms.date: 03/26/2020
-ms.topic: conceptual
+ms.topic: how-to
 description: Découvrez comment activer l’avantage Support technique inclus dans votre abonnement Visual Studio.
-ms.openlocfilehash: cad820977df6351f665944a878b6dcebd1c12a38
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: f195c0f2a165dae1d17697fb351ee6f576864a37
+ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85289428"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "85906095"
 ---
 # <a name="activate-and-use-the-technical-support-benefit-in-visual-studio-subscriptions"></a>Activer et utiliser l’avantage Support technique dans les abonnements Visual Studio
 L’avantage Support technique dans les abonnements Visual Studio permet de résoudre les problèmes couverts par la garantie de réparation et d’assistance dans les **environnements hors production** pour les produits se trouvant toujours dans la phase de support standard du [cycle de vie du support](https://support.microsoft.com/lifecycle/search). Les abonnements standard et cloud annuels Visual Studio Enterprise acceptent quatre incidents, tandis que les abonnements standard et cloud annuels Visual Studio Professional en acceptent deux (pendant un an à compter de l’activation de l’avantage). L’avantage doit être activé quand l’abonnement est actif.
@@ -83,7 +83,7 @@ Quand vous signalez un incident en ligne, vous êtes d’abord invité à vous c
    > [!div class="mx-imgBorder"]
    > ![Avantage Support technique, signalement d’un incident - Ajouter un contrat](_img/vs-tech-support/vs-tech-support-add-contract.png)
 
-4. Entrez votre **ID d’accès** et votre **ID de contrat**.  Cliquez sur **Add**.
+4. Entrez votre **ID d’accès** et votre **ID de contrat**.  Cliquez sur **Ajouter**.
 
    > [!div class="mx-imgBorder"]
    > ![Avantage Support technique, signalement d’un incident - Ajouter un ID contrat](_img/vs-tech-support/vs-tech-support-add-contract-id.png)

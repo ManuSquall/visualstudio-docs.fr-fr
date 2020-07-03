@@ -1,19 +1,19 @@
 ---
 title: Images et icônes pour Visual Studio | Microsoft Docs
 ms.date: 04/26/2017
-ms.topic: conceptual
+ms.topic: overview
 ms.assetid: f410325e-9cf2-4f39-b6d7-b672121c2691
 author: acangialosi
 ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7de4488a8304b21b578b2ad5ac2c29deafcf1b0a
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.openlocfilehash: edbf1542277189f37565e7ff415a52025094e595
+ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "85537538"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "85906120"
 ---
 # <a name="images-and-icons-for-visual-studio"></a>Images et icônes pour Visual Studio
 ## <a name="image-use-in-visual-studio"></a><a name="BKMK_ImageUseInVisualStudio"></a>Utilisation d’images dans Visual Studio
@@ -281,7 +281,7 @@ ms.locfileid: "85537538"
 ##### <a name="examples"></a>Exemples
  Le vert est utilisé pour les modificateurs d’action positifs tels que « ajouter », « exécuter », « lire » et « valider ».
 
-|Exécutez|Exécuter la requête|Lire toutes les étapes|Ajouter un contrôle|
+|Exécuter|Exécuter la requête|Lire toutes les étapes|Ajouter un contrôle|
 |-|-|-|-|
 |![Icône d'exécution](../../extensibility/ux-guidelines/media/0405-03_actionmodifierrun.png "0405-03_ActionModifierRun")|![Icône Exécuter la requête](../../extensibility/ux-guidelines/media/0405-04_executequery.png "0405-04_ExecuteQuery")|![Icône Lire toutes les étapes](../../extensibility/ux-guidelines/media/0405-05_playallsteps.png "0405-05_PlayAllSteps")|![Icône Ajouter le contrôle](../../extensibility/ux-guidelines/media/0405-06_addcontrol.png "0405-06_AddControl")|
 
@@ -306,7 +306,7 @@ ms.locfileid: "85537538"
 #### <a name="special-cases"></a>Cas particuliers
  Dans certains cas, un modificateur d’action coloré peut être utilisé indépendamment comme icône autonome. La couleur utilisée pour l’icône reflète les actions auxquelles l’icône est associée. Cette utilisation est limitée à un petit sous-ensemble d’icônes, notamment :
 
-|Exécutez|Arrêter|DELETE|Enregistrer|Naviguer vers l'arrière|
+|Exécuter|Arrêter|Supprimer|Enregistrer|Naviguer vers l'arrière|
 |-|-|-|-|-|
 |![Icône d'exécution](../../extensibility/ux-guidelines/media/0405-03_actionmodifierrun.png "0405-03_ActionModifierRun")|![Icône Arrêter](../../extensibility/ux-guidelines/media/0405-19_stop.png "0405-19_Stop")|![Icône Supprimer](../../extensibility/ux-guidelines/media/0405-20_delete.png "0405-20_Delete")|![Icône Enregistrer](../../extensibility/ux-guidelines/media/0405-21_save.png "0405-21_Save")|![Icône Naviguer vers l'arrière](../../extensibility/ux-guidelines/media/0405-22_navigateback.png "0405-22_NavigateBack")|
 

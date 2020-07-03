@@ -5,14 +5,14 @@ ms.author: lank
 manager: lank
 ms.assetid: f39a2672-c283-4755-93d3-31c7c7a032d0
 ms.date: 03/11/2020
-ms.topic: conceptual
+ms.topic: how-to
 description: Découvrez comment vous connecter à vos abonnements Visual Studio avec votre compte professionnel ou scolaire.
-ms.openlocfilehash: e1f80f88cf3a377cc6fcc8f8bef266ee59b90067
-ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
+ms.openlocfilehash: 74007dbca34294b580c1dacac7a8fef0da883f9b
+ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "80233215"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "85906123"
 ---
 # <a name="signing-in-to-visual-studio-subscriptions-with-your-work-or-school-account"></a>Connexion à vos abonnements Visual Studio avec votre compte professionnel ou scolaire 
 
@@ -22,7 +22,7 @@ Cet article décrit les étapes à suivre pour vous connecter avec une adresse e
 
 ## <a name="signing-in-with-your-work-or-school-account"></a>Connexion avec votre compte professionnel ou scolaire
 
-1. S’il vous plaît visitez [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs).
+1. Veuillez consulter [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs) .
 2. Entrez l’adresse e-mail qui est associée au nouvel abonnement Visual Studio.
 
    > [!NOTE]
@@ -31,7 +31,7 @@ Cet article décrit les étapes à suivre pour vous connecter avec une adresse e
 3. Cliquez sur **Continuer**.
 4. Vous êtes redirigé vers la page de connexion de votre entreprise.
 5. Saisissez votre mot de passe.
-6. Cliquez **sur Signez**
+6. Cliquer sur **se connecter**
 7. À ce stade, la page « Avantages » doit être affichée
 
 Le type d’abonnement que vous utilisez s’affiche maintenant dans la barre bleue dans la partie supérieure du portail.
@@ -40,7 +40,7 @@ Vous pouvez également voir votre abonnement actuellement sélectionné dans le 
 
 ## <a name="using-your-microsoft-account-msa-to-sign-in-to-a-work-or-school-account"></a>Utilisation de votre compte Microsoft (MSA) pour vous connecter à un compte professionnel ou scolaire
 
-1. Aller [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs)à .
+1. Accédez à [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs).
 2. Entrez l’adresse e-mail qui est associée au nouvel abonnement Visual Studio attribué
 
    > [!NOTE]
@@ -49,7 +49,7 @@ Vous pouvez également voir votre abonnement actuellement sélectionné dans le 
 3. Cliquez sur **Continuer**.
 4. Vous allez être redirigé vers une page de sélection.
     - Sélectionnez **Compte professionnel ou scolaire** si l’abonnement est attribué à un compte « professionnel ou scolaire » qui est associé à un locataire Azure Active Directory (AAD).
-    - Sélectionnez **Personnel** si l’abonnement est associé à une adresse e-mail "Corporate", mais a également été converti en un compte Microsoft "Personnel" (MSA).
+    - Sélectionnez **personnel** si l’abonnement est associé à une adresse de messagerie d’entreprise, mais qu’il a également été converti en compte Microsoft « personnel » (MSA).
 
         > [!NOTE]
         > C’est le cas pour de nombreux abonnés qui ont utilisé des abonnements Visual Studio (anciennement MSDN) par le passé.
@@ -61,21 +61,21 @@ Vous pouvez également voir votre abonnement actuellement sélectionné dans le 
 7. À ce stade, la page « Avantages » doit être affichée.
 
 ## <a name="frequently-asked-questions"></a>Forum aux questions
-### <a name="q--im-unable-to-sign-in-using-my-work-or-school-email-address"></a>Q: Je ne suis pas en mesure de me connecter en utilisant mon adresse e-mail de travail ou d’école.  
-R : La cause la plus fréquente de connexion aux problèmes est d’essayer de se connecter à un compte différent de celui associé à l’abonnement.  Si vous avez plusieurs adresses e-mail différentes, il est possible que celle que vous utilisez pour tenter de vous connecter soit incorrecte.  Essayez de vous connecter avec une autre adresse.  En cas d’échec, vous pouvez contacter notre équipe de [support des abonnements](https://visualstudio.microsoft.com/subscriptions/support/) pour obtenir de l’aide.  
+### <a name="q--im-unable-to-sign-in-using-my-work-or-school-email-address"></a>Q : je ne parviens pas à me connecter en utilisant mon adresse de messagerie professionnelle ou scolaire.  
+R : la cause la plus courante de problèmes de connexion consiste à tenter de se connecter avec un compte différent de celui associé à l’abonnement.  Si vous avez plusieurs adresses e-mail différentes, il est possible que celle que vous utilisez pour tenter de vous connecter soit incorrecte.  Essayez de vous connecter avec une autre adresse.  En cas d’échec, vous pouvez contacter notre équipe de [support des abonnements](https://visualstudio.microsoft.com/subscriptions/support/) pour obtenir de l’aide.  
 
-### <a name="q--i-cant-see-my-subscription-where-is-it"></a>Q: Je ne vois pas mon abonnement. Où se trouve Azure ?
-R: De nombreux utilisateurs ont plus d’un abonnement.  Si vous pouvez vous connecter au portail des abonnements à l’adresse https://my.visualstudio.com, mais que vous ne voyez pas votre abonnement, il existe deux causes courantes :
+### <a name="q--i-cant-see-my-subscription-where-is-it"></a>Q : je ne peux pas voir mon abonnement. Où se trouve Azure ?
+R : de nombreux utilisateurs disposent de plusieurs abonnements.  Si vous pouvez vous connecter au portail des abonnements à l’adresse https://my.visualstudio.com, mais que vous ne voyez pas votre abonnement, il existe deux causes courantes :
 1. Vous êtes connecté avec un autre compte Microsoft.  Il est possible que vous ayez plusieurs abonnements, par exemple un abonnement Professional ou Enterprise, et un abonnement Visual Studio Dev Essentials, et qu’ils soient associés à des adresses e-mail distinctes. Pour voir les autres abonnements, déconnectez-vous et reconnectez-vous à l’aide de l’autre MSA.
 2. Vous avez plusieurs abonnements associés à la même adresse e-mail.  Pour voir tous les abonnements associés à votre adresse e-mail, accédez à https://my.visualstudio.com/subscriptions, puis choisissez l’abonnement à utiliser. 
 
 Si le problème persiste, vous pouvez contacter notre équipe de [support des abonnements](https://visualstudio.microsoft.com/subscriptions/support/) pour obtenir de l’aide.  
 
 ## <a name="see-also"></a>Voir aussi
-- [Documentation Visual Studio](https://docs.microsoft.com/visualstudio/)
+- [Documentation de Visual Studio](https://docs.microsoft.com/visualstudio/)
 - [Documentation Azure DevOps](https://docs.microsoft.com/azure/devops/)
 - [Documentation Azure](https://docs.microsoft.com/azure/)
 - [Documentation Microsoft 365](https://docs.microsoft.com/microsoft-365/)
 
 ## <a name="next-steps"></a>Étapes suivantes
-Après avoir signé avec succès le portail d’abonnements, nous https://my.visualstudio.com/benefits vous recommandons de visiter la page Avantages et d’explorer les grands outils, services et offres à votre disposition.  
+Une fois que vous êtes connecté au portail des abonnements, nous vous recommandons de consulter la page des avantages à l’adresse https://my.visualstudio.com/benefits et d’explorer les outils, services et offres exceptionnels dont vous disposez.  

@@ -5,14 +5,14 @@ ms.author: lank
 manager: lank
 ms.assetid: 19038bb0-2858-49df-9624-cbf8bfbb5d39
 ms.date: 03/11/2020
-ms.topic: conceptual
+ms.topic: how-to
 description: Guide pratique pour vous connecter à votre abonnement Visual Studio avec votre compte Microsoft (MSA)
-ms.openlocfilehash: 6bc71eac42ac582b7d714706567be69e78dfa383
-ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
+ms.openlocfilehash: 566829318404b4231b37e53ae7ec34500a3a7838
+ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "80233216"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "85906143"
 ---
 # <a name="signing-in-to-your-visual-studio-subscriptions-with-your-microsoft-account-msa"></a>Connexion à vos abonnements Visual Studio avec votre compte Microsoft (MSA)
 
@@ -21,7 +21,7 @@ Les étapes de connexion à votre abonnement Visual Studio varient selon le type
 Cet article décrit les étapes à suivre pour vous connecter avec votre compte Microsoft (MSA).
 
 ## <a name="signing-in-with-your-microsoft-account-msa"></a>Connexion avec votre compte Microsoft (MSA)
-1. S’il vous plaît visitez [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs).
+1. Veuillez consulter [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs) .
 2. Entrez l’adresse e-mail que vous avez fournie lorsque vous avez configuré ou acheté votre abonnement Visual Studio.
 
    > [!NOTE]
@@ -32,21 +32,21 @@ Cet article décrit les étapes à suivre pour vous connecter avec votre compte 
 5. À ce stade, la page « Avantages » doit être affichée.
 
 ## <a name="frequently-asked-questions"></a>Forum aux questions
-### <a name="q--im-unable-to-sign-in-using-my-msa"></a>Q: Je ne suis pas en mesure de me connecter à l’aide de mon MSA.  
-R : La cause la plus fréquente de connexion dans les problèmes est d’essayer de s’inscrire à un MSA différent de celui associé à l’abonnement.  Si vous avez plusieurs adresses e-mail différentes, il est possible que celle que vous utilisez pour tenter de vous connecter soit incorrecte.  Essayez de vous connecter avec une autre adresse.  En cas d’échec, vous pouvez contacter notre équipe de [support des abonnements](https://visualstudio.microsoft.com/subscriptions/support/) pour obtenir de l’aide.  
+### <a name="q--im-unable-to-sign-in-using-my-msa"></a>Q : je ne parviens pas à me connecter avec mon MSA.  
+R : la cause la plus courante de problèmes de connexion consiste à tenter de se connecter avec un MSA différent de celui associé à l’abonnement.  Si vous avez plusieurs adresses e-mail différentes, il est possible que celle que vous utilisez pour tenter de vous connecter soit incorrecte.  Essayez de vous connecter avec une autre adresse.  En cas d’échec, vous pouvez contacter notre équipe de [support des abonnements](https://visualstudio.microsoft.com/subscriptions/support/) pour obtenir de l’aide.  
 
-### <a name="q--i-cant-see-my-subscription-where-is-it"></a>Q: Je ne vois pas mon abonnement. Où se trouve Azure ?
-R: De nombreux utilisateurs ont plus d’un abonnement.  Si vous pouvez vous connecter au portail des abonnements à l’adresse https://my.visualstudio.com, mais que vous ne voyez pas votre abonnement, il existe deux causes courantes :
+### <a name="q--i-cant-see-my-subscription-where-is-it"></a>Q : je ne peux pas voir mon abonnement. Où se trouve Azure ?
+R : de nombreux utilisateurs disposent de plusieurs abonnements.  Si vous pouvez vous connecter au portail des abonnements à l’adresse https://my.visualstudio.com, mais que vous ne voyez pas votre abonnement, il existe deux causes courantes :
 - Vous êtes connecté avec un autre compte Microsoft.  Il est possible que vous ayez plusieurs abonnements, par exemple un abonnement Professional ou Enterprise, et un abonnement Visual Studio Dev Essentials, et qu’ils soient associés à des adresses e-mail distinctes. Pour voir les autres abonnements, déconnectez-vous et reconnectez-vous à l’aide de l’autre MSA.
 - Vous avez plusieurs abonnements associés au même MSA.  Pour voir tous les abonnements associés à votre MSA, accédez à https://my.visualstudio.com/subscriptions, puis choisissez l’abonnement à utiliser. 
 
 Si le problème persiste, vous pouvez contacter notre équipe de [support des abonnements](https://visualstudio.microsoft.com/subscriptions/support/) pour obtenir de l’aide.  
 
 ## <a name="see-also"></a>Voir aussi
-- [Documentation Visual Studio](https://docs.microsoft.com/visualstudio/)
+- [Documentation de Visual Studio](https://docs.microsoft.com/visualstudio/)
 - [Documentation Azure DevOps](https://docs.microsoft.com/azure/devops/)
 - [Documentation Azure](https://docs.microsoft.com/azure/)
 - [Documentation Microsoft 365](https://docs.microsoft.com/microsoft-365/)
 
 ## <a name="next-steps"></a>Étapes suivantes
-Après avoir signé avec succès le portail d’abonnements, nous https://my.visualstudio.com/benefits vous recommandons de visiter la page Avantages et d’explorer les grands outils, services et offres à votre disposition.  
+Une fois que vous êtes connecté au portail des abonnements, nous vous recommandons de consulter la page des avantages à l’adresse https://my.visualstudio.com/benefits et d’explorer les outils, services et offres exceptionnels dont vous disposez.  

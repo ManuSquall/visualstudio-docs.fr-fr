@@ -1,7 +1,7 @@
 ---
-title: 'Procédure pas à pas : Création d’un service de langue héritée (fr) Microsoft Docs'
+title: 'Procédure pas à pas : création d’un service de langage hérité | Microsoft Docs'
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - language services [managed package framework], creating
 ms.assetid: 6a5dd2c2-261b-4efd-a3f4-8fb90b73dc82
@@ -10,21 +10,21 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 59ec18ab0c97ec89422e06f5b33804adcc750d5a
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.openlocfilehash: dbdad85dd1c0f62b22bb33b5ed6ab2c597e62164
+ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2020
-ms.locfileid: "80703685"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "85905986"
 ---
 # <a name="walkthrough-creating-a-legacy-language-service"></a>Procédure pas à pas : création d’un service de langage hérité
-Il est simple d’utiliser les cours de langue [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] du cadre de forfait géré (MPF) pour mettre en œuvre un service linguistique. Vous avez besoin d’un VSPackage pour accueillir le service linguistique, le service linguistique lui-même, et un analyseur pour votre langue.
+L’utilisation des classes de langage de Managed package Framework (MPF) pour implémenter un service de langage dans [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] est simple. Vous avez besoin d’un VSPackage pour héberger le service de langage, le service de langage lui-même et un analyseur pour votre langue.
 
 ## <a name="prerequisites"></a>Prérequis
- Pour suivre cette procédure pas à pas, vous devez installer le Kit de développement logiciel (SDK) Visual Studio. Pour plus d’informations, voir [Visual Studio SDK](../../extensibility/visual-studio-sdk.md).
+ Pour suivre cette procédure pas à pas, vous devez installer le Kit de développement logiciel (SDK) Visual Studio. Pour plus d’informations, consultez [Kit de développement logiciel (SDK) Visual Studio](../../extensibility/visual-studio-sdk.md).
 
 ## <a name="locations-for-the-visual-studio-package-project-template"></a>Emplacements du modèle de projet de package Visual Studio
- Le modèle de projet de paquet de studio visuel peut être trouvé dans trois emplacements différents de modèle dans la boîte de dialogue **de nouveau projet** :
+ Le modèle de projet de package Visual Studio se trouve dans trois emplacements de modèle différents dans la boîte de dialogue **nouveau projet** :
 
 1. Sous l’extensibilité Visual Basic. Le langage par défaut du projet est Visual Basic.
 
@@ -34,101 +34,101 @@ Il est simple d’utiliser les cours de langue [!INCLUDE[csprcs](../../data-tool
 
 ### <a name="create-a-vspackage"></a>Créer un VSPackage
 
-1. Créez un nouveau VSPackage avec le modèle de projet Visual Studio Package.
+1. Créez un nouveau VSPackage avec le modèle de projet de package Visual Studio.
 
-    Si vous ajoutez un service linguistique à un VSPackage existant, sautez les étapes suivantes et allez directement à la procédure « Créer la classe de service linguistique ».
+    Si vous ajoutez un service de langage à un VSPackage existant, ignorez les étapes suivantes et passez directement à la procédure « créer la classe de service de langage ».
 
-2. Entrez MyLanguagePackage pour le nom du projet et cliquez **sur OK**.
+2. Entrez MyLanguagePackage pour le nom du projet et cliquez sur **OK**.
 
-    Vous pouvez utiliser le nom que vous voulez. Ces procédures détaillées ici supposent MyLanguagePackage comme le nom.
+    Vous pouvez utiliser le nom de votre choix. Les procédures décrites ici supposent que MyLanguagePackage est le nom.
 
-3. Sélectionnez [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] comme langue et la possibilité de générer un nouveau fichier clé. Cliquez sur **Suivant**.
+3. Sélectionnez [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] comme langue et l’option permettant de générer un nouveau fichier de clé. Cliquez sur **Suivant**.
 
-4. Entrez les informations appropriées sur l’entreprise et l’emballage. Cliquez sur **Suivant**.
+4. Entrez les informations appropriées sur la société et le package. Cliquez sur **Suivant**.
 
-5. Sélectionnez **Menu Command**. Cliquez sur **Suivant**.
+5. Sélectionnez la **commande de menu**. Cliquez sur **Suivant**.
 
-    Si vous n’avez pas l’intention de prendre en charge les extraits de code, vous pouvez simplement cliquer sur Finition et ignorer l’étape suivante.
+    Si vous n’envisagez pas de prendre en charge les extraits de code, vous pouvez simplement cliquer sur Terminer et ignorer l’étape suivante.
 
-6. **Entrez Insérer Snippet** comme **nom de commande** et `cmdidInsertSnippet` pour l’ID de **commande**. Cliquez sur **Terminer**.
+6. Entrez l' **extrait** de code d’insertion comme **nom de commande** et `cmdidInsertSnippet` pour l' **ID de commande**. Cliquez sur **Terminer**.
 
-    Le **nom de commande** et **l’ID de commande** peuvent être ce que vous voulez, ce ne sont que des exemples.
+    Le **nom de commande** et l' **ID de commande** peuvent être les mêmes que vous le souhaitez. il s’agit simplement d’exemples.
 
-### <a name="create-the-language-service-class"></a>Créer la classe de service linguistique
+### <a name="create-the-language-service-class"></a>Créer la classe de service de langage
 
-1. Dans **Solution Explorer**, cliquez à droite sur le projet MyLanguagePackage, choisissez **Ajouter**, **Référence**, puis choisissez le bouton Ajouter une **nouvelle référence.**
+1. Dans **Explorateur de solutions**, cliquez avec le bouton droit sur le projet MyLanguagePackage, choisissez **Ajouter**, **référence**, puis cliquez sur le bouton **Ajouter une nouvelle référence** .
 
-2. Dans la boîte de dialogue **Add Reference,** sélectionnez **Microsoft.VisualStudio.Package.LanguageService** dans **l’onglet .NET** et cliquez **sur OK**.
+2. Dans la boîte de dialogue **Ajouter une référence** , sélectionnez **Microsoft. VisualStudio. Package. LanguageService** dans l’onglet **.net** , puis cliquez sur **OK**.
 
-     Cela ne doit être fait qu’une seule fois pour le projet de paquet linguistique.
+     Cette opération ne doit être effectuée qu’une seule fois pour le projet de package de langue.
 
-3. Dans **Solution Explorer**, cliquez à droite sur le projet VSPackage et sélectionnez **Ajouter**, **Classe**.
+3. Dans **Explorateur de solutions**, cliquez avec le bouton droit sur le projet VSPackage, puis sélectionnez **Ajouter**, **classe**.
 
-4. Assurez-vous que **la classe** est sélectionnée dans la liste des modèles.
+4. Assurez-vous que **classe** est sélectionné dans la liste modèles.
 
-5. Entrez **MyLanguageService.cs** pour le nom du fichier de classe et cliquez sur **Ajouter**.
+5. Entrez **MyLanguageService.cs** pour le nom du fichier de classe, puis cliquez sur **Ajouter**.
 
-     Vous pouvez utiliser le nom que vous voulez. Ces procédures détaillées `MyLanguageService` ici supposent comme le nom.
+     Vous pouvez utiliser le nom de votre choix. Ces procédures sont décrites ici `MyLanguageService` comme nom.
 
-6. Dans le fichier MyLanguageService.cs, ajoutez `using` les directives suivantes.
+6. Dans le fichier MyLanguageService.cs, ajoutez les `using` directives suivantes.
 
      [!code-csharp[CreatingALanguageService(ManagedPackageFramework)#1](../../extensibility/internals/codesnippet/CSharp/walkthrough-creating-a-legacy-language-service_1.cs)]
      [!code-vb[CreatingALanguageService(ManagedPackageFramework)#1](../../extensibility/internals/codesnippet/VisualBasic/walkthrough-creating-a-legacy-language-service_1.vb)]
 
-7. Modifier `MyLanguageService` la classe pour <xref:Microsoft.VisualStudio.Package.LanguageService> dériver de la classe :
+7. Modifiez la `MyLanguageService` classe pour qu’elle dérive de la <xref:Microsoft.VisualStudio.Package.LanguageService> classe :
 
      [!code-csharp[CreatingALanguageService(ManagedPackageFramework)#2](../../extensibility/internals/codesnippet/CSharp/walkthrough-creating-a-legacy-language-service_2.cs)]
      [!code-vb[CreatingALanguageService(ManagedPackageFramework)#2](../../extensibility/internals/codesnippet/VisualBasic/walkthrough-creating-a-legacy-language-service_2.vb)]
 
-8. Placez le curseur sur "LanguageService" et à partir du menu **Edit**, **IntelliSense,** **sélectionnez Implement Abstract Class**. Cela ajoute les méthodes minimales nécessaires à la mise en œuvre d’une classe de service linguistique.
+8. Placez le curseur sur « LanguageService » et, dans le menu **Edit**, **IntelliSense** , sélectionnez **implement abstract class**. Cela ajoute les méthodes minimales nécessaires pour implémenter une classe de service de langage.
 
-9. Mettre en œuvre les méthodes abstraites décrites dans [la mise en œuvre d’un service de langue héritée](../../extensibility/internals/implementing-a-legacy-language-service2.md).
+9. Implémentez les méthodes abstraites, comme décrit dans [implémentation d’un service de langage hérité](../../extensibility/internals/implementing-a-legacy-language-service2.md).
 
-### <a name="register-the-language-service"></a>Enregistrer le service linguistique
+### <a name="register-the-language-service"></a>Inscrire le service de langage
 
-1. Ouvrez le fichier MyLanguagePackagePackage.cs et `using` ajoutez les directives suivantes :
+1. Ouvrez le fichier MyLanguagePackagePackage.cs et ajoutez les `using` directives suivantes :
 
      [!code-vb[CreatingALanguageService(ManagedPackageFramework)#3](../../extensibility/internals/codesnippet/VisualBasic/walkthrough-creating-a-legacy-language-service_3.vb)]
      [!code-csharp[CreatingALanguageService(ManagedPackageFramework)#3](../../extensibility/internals/codesnippet/CSharp/walkthrough-creating-a-legacy-language-service_3.cs)]
 
-2. Enregistrez votre classe de service linguistique tel que décrit dans [l’enregistrement d’un service de langue héritée](../../extensibility/internals/registering-a-legacy-language-service1.md). Cela comprend les attributs ProvideXX et les sections « Fournir le service linguistique ». Utilisez MyLanguageService où ce sujet utilise TestLanguageService.
+2. Inscrivez votre classe de service de langage comme décrit dans [inscription d’un service de langage hérité](../../extensibility/internals/registering-a-legacy-language-service1.md). Cela comprend les attributs ProvideXX et les sections « proffering the Language Service ». Utilisez MyLanguageService là où cette rubrique utilise TestLanguageService.
 
-### <a name="the-parser-and-scanner"></a>Le Parser et scanner
+### <a name="the-parser-and-scanner"></a>Analyseur et analyseur
 
-1. Implémentez un analyseur et un scanner pour votre langue tel que décrit dans [Legacy Language Service Parser et Scanner](../../extensibility/internals/legacy-language-service-parser-and-scanner.md).
+1. Implémentez un analyseur et un scanneur pour votre langue, comme décrit dans l’analyseur [et le scanneur du service de langage hérité](../../extensibility/internals/legacy-language-service-parser-and-scanner.md).
 
-     La façon dont vous implémentez votre analyseur et scanner est entièrement à vous et est au-delà de la portée de ce sujet.
+     La façon dont vous implémentez votre analyseur et votre scanneur dépend entièrement du cadre de cette rubrique.
 
-## <a name="language-service-features"></a>Caractéristiques du service linguistique
- Pour implémenter chaque fonctionnalité du service linguistique, vous dérivez généralement une classe de la classe de service linguistique MPF appropriée, implémentez toutes les méthodes abstraites au besoin et l’emportez sur les méthodes appropriées. Les classes que vous créez et/ou dont vous dérivez dépendent des fonctionnalités que vous avez l’intention de prendre en charge. Ces fonctionnalités sont discutées en détail dans [Legacy Language Service Features](../../extensibility/internals/legacy-language-service-features1.md). La procédure suivante est l’approche générale pour retirer une classe des classes du MPF.
+## <a name="language-service-features"></a>Fonctionnalités du service de langage
+ Pour implémenter chaque fonctionnalité dans le service de langage, vous dérivez généralement une classe de la classe de service de langage MPF appropriée, implémentez les méthodes abstraites nécessaires et substituez les méthodes appropriées. Les classes que vous créez et/ou dérivez dépendent des fonctionnalités que vous envisagez de prendre en charge. Ces fonctionnalités sont décrites en détail dans [fonctionnalités du service de langage hérité](../../extensibility/internals/legacy-language-service-features1.md). La procédure suivante est l’approche générale de la dérivation d’une classe à partir des classes MPF.
 
-#### <a name="deriving-from-an-mpf-class"></a>Dérivé d’une classe MPF
+#### <a name="deriving-from-an-mpf-class"></a>Dérivation à partir d’une classe MPF
 
-1. Dans **Solution Explorer**, cliquez à droite sur le projet VSPackage et sélectionnez **Ajouter**, **Classe**.
+1. Dans **Explorateur de solutions**, cliquez avec le bouton droit sur le projet VSPackage, puis sélectionnez **Ajouter**, **classe**.
 
-2. Assurez-vous que **la classe** est sélectionnée dans la liste des modèles.
+2. Assurez-vous que **classe** est sélectionné dans la liste modèles.
 
-     Entrez un nom approprié pour le fichier de classe et cliquez sur **Ajouter**.
+     Entrez un nom approprié pour le fichier de classe, puis cliquez sur **Ajouter**.
 
-3. Dans le nouveau fichier de `using` classe, ajoutez les directives suivantes.
+3. Dans le nouveau fichier de classe, ajoutez les `using` directives suivantes.
 
      [!code-csharp[CreatingALanguageService(ManagedPackageFramework)#4](../../extensibility/internals/codesnippet/CSharp/walkthrough-creating-a-legacy-language-service_4.cs)]
      [!code-vb[CreatingALanguageService(ManagedPackageFramework)#4](../../extensibility/internals/codesnippet/VisualBasic/walkthrough-creating-a-legacy-language-service_4.vb)]
 
-4. Modifier la classe pour dériver de la classe MPF souhaitée.
+4. Modifiez la classe pour qu’elle dérive de la classe MPF souhaitée.
 
-5. Ajoutez un constructeur de classe qui prend au moins les mêmes paramètres que le constructeur de la classe de base et transmettez les paramètres du constructeur au constructeur de la classe de base.
+5. Ajoutez un constructeur de classe qui accepte au moins les mêmes paramètres que le constructeur de la classe de base et transmettez les paramètres du constructeur au constructeur de la classe de base.
 
-     Par exemple, le constructeur d’une <xref:Microsoft.VisualStudio.Package.Source> classe dérivée de la classe peut ressembler à ce qui suit :
+     Par exemple, le constructeur d’une classe dérivée de la <xref:Microsoft.VisualStudio.Package.Source> classe peut se présenter comme suit :
 
      [!code-csharp[CreatingALanguageService(ManagedPackageFramework)#5](../../extensibility/internals/codesnippet/CSharp/walkthrough-creating-a-legacy-language-service_5.cs)]
      [!code-vb[CreatingALanguageService(ManagedPackageFramework)#5](../../extensibility/internals/codesnippet/VisualBasic/walkthrough-creating-a-legacy-language-service_5.vb)]
 
-6. À partir du menu **Edit**, **IntelliSense,** **sélectionnez Implémentez** la classe abstraite si la classe de base a des méthodes abstraites qui doivent être mises en œuvre.
+6. Dans le menu **modifier**, **IntelliSense** , sélectionnez **implémenter une classe abstraite** si la classe de base a des méthodes abstraites qui doivent être implémentées.
 
-7. Sinon, placez le caret à l’intérieur de la classe et entrez dans la méthode pour être remplacé.
+7. Sinon, placez le signe insertion à l’intérieur de la classe et entrez la méthode à substituer.
 
-     Par exemple, `public override` tapez pour voir une liste de toutes les méthodes qui peuvent être remplacées dans cette classe.
+     Par exemple, tapez `public override` pour afficher la liste de toutes les méthodes qui peuvent être substituées dans cette classe.
 
 ## <a name="see-also"></a>Voir aussi
 - [Implémentation d’un service de langage hérité](../../extensibility/internals/implementing-a-legacy-language-service1.md)

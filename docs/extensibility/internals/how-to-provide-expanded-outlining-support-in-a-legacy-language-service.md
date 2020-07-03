@@ -1,7 +1,7 @@
 ---
-title: Fournir un soutien décrivant dans un service linguistique Microsoft Docs
+title: Fournir une prise en charge du mode plan dans un service de langage | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - editors [Visual Studio SDK], outlining support
 - language services, supporting outlining
@@ -12,45 +12,45 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 37deafa92477289a2124ecee101dd254e68ef01d
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.openlocfilehash: 450ef1430e86467d116cc635a27600756bc36075
+ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2020
-ms.locfileid: "80707971"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "85905282"
 ---
-# <a name="how-to-provide-expanded-outlining-support-in-a-legacy-language-service"></a>Comment : Fournir un soutien élargi dans un service linguistique hérité
-Il existe deux options pour étendre le soutien à votre langue au-delà de l’appui de la commande **Collapse to Definitions.** Vous pouvez ajouter des régions de contour contrôlées par l’éditeur et ajouter des régions de contour contrôlées par le client.
+# <a name="how-to-provide-expanded-outlining-support-in-a-legacy-language-service"></a>Comment : fournir une prise en charge développée du mode plan dans un service de langage hérité
+Il existe deux options pour étendre la prise en charge du mode plan à votre langage au-delà de la prise en charge de la commande **réduire aux définitions** . Vous pouvez ajouter des régions de plan contrôlées par l’éditeur et ajouter des zones de plan contrôlées par le client.
 
-## <a name="adding-editor-controlled-outline-regions"></a>Ajout de régions de contour contrôlées par l’éditeur
- Utilisez cette approche pour créer une région de contour et ensuite permettre à l’éditeur de gérer si la région est élargie, effondrée, et ainsi de suite. Parmi les deux options pour fournir un soutien, cette option est la moins robuste. Pour cette option, vous créez une nouvelle région <xref:Microsoft.VisualStudio.TextManager.Interop.IVsOutliningSession.AddOutlineRegions%2A>de contour sur une durée spécifiée de texte à l’aide de . Une fois cette région créée, son comportement est contrôlé par l’éditeur. Utilisez la procédure suivante pour mettre en œuvre les régions à contours contrôlées par l’éditeur.
+## <a name="adding-editor-controlled-outline-regions"></a>Ajout d’une région de plan contrôlée par l’éditeur
+ Utilisez cette approche pour créer une zone de plan, puis autorisez l’éditeur à gérer si la région est développée, réduite et ainsi de suite. Parmi les deux options disponibles pour la prise en charge du mode plan, cette option est la moins fiable. Pour cette option, vous créez une nouvelle région en mode plan sur une étendue de texte spécifiée à l’aide de <xref:Microsoft.VisualStudio.TextManager.Interop.IVsOutliningSession.AddOutlineRegions%2A> . Une fois cette région créée, son comportement est contrôlé par l’éditeur. Utilisez la procédure suivante pour implémenter des régions de plan contrôlées par l’éditeur.
 
-### <a name="to-implement-an-editor-controlled-outline-region"></a>Mettre en œuvre une région de contour contrôlée par les éditeurs
+### <a name="to-implement-an-editor-controlled-outline-region"></a>Pour implémenter une région en mode plan contrôlée par l’éditeur
 
-1. Appel `QueryService` pour<xref:Microsoft.VisualStudio.TextManager.Interop.SVsTextManager>
+1. Appeler `QueryService` pour<xref:Microsoft.VisualStudio.TextManager.Interop.SVsTextManager>
 
-     Cela renvoie <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextManager>un pointeur à .
+     Cela retourne un pointeur vers <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextManager> .
 
-2. Appelez, <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextManager.GetHiddenTextSession%2A>en passant dans un pointeur pour un tampon de texte donné. Cela renvoie un <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextSession> pointeur à l’objet pour le tampon.
+2. Appelle <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextManager.GetHiddenTextSession%2A> , en passant un pointeur pour une mémoire tampon de texte donnée. Cela retourne un pointeur vers l' <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextSession> objet pour la mémoire tampon.
 
-3. Faites appel <xref:System.Runtime.InteropServices.Marshal.QueryInterface%2A> à <xref:Microsoft.VisualStudio.TextManager.Interop.IVsOutliningSession>un pointeur pour . <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextSession>
+3. Appelez <xref:System.Runtime.InteropServices.Marshal.QueryInterface%2A> on <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextSession> pour un pointeur vers <xref:Microsoft.VisualStudio.TextManager.Interop.IVsOutliningSession> .
 
-4. Appelez <xref:Microsoft.VisualStudio.TextManager.Interop.IVsOutliningSession.AddOutlineRegions%2A> pour ajouter une ou plusieurs nouvelles régions à la fois.
+4. Appelez <xref:Microsoft.VisualStudio.TextManager.Interop.IVsOutliningSession.AddOutlineRegions%2A> pour ajouter une ou plusieurs nouvelles régions en mode plan à la fois.
 
-     Cette méthode vous permet de spécifier la durée du texte à décrire, si les régions de contour existantes sont supprimées ou préservées, et si la région de contour est élargie ou effondrée par défaut.
+     Cette méthode vous permet de spécifier l’étendue de texte à présenter, si les régions de plan existantes sont supprimées ou conservées, et si la zone de plan est développée ou réduite par défaut.
 
-## <a name="add-client-controlled-outline-regions"></a>Ajouter des régions de contour contrôlées par le client
- Utilisez cette approche pour mettre en œuvre des données contrôlées par le client (ou intelligentes) comme celles utilisées par les [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] services linguistiques et [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] les services linguistiques. Un service linguistique qui gère ses propres moniteurs de description du contenu tampon de texte afin de détruire les anciennes régions à contours lorsqu’elles deviennent invalides et de créer de nouvelles régions à contours au besoin.
+## <a name="add-client-controlled-outline-regions"></a>Ajouter des régions de plan contrôlées par le client
+ Utilisez cette approche pour implémenter un mode de mise en plan contrôlé par le client (ou intelligent) comme celui utilisé par les [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] services de langage et. Un service de langage qui gère son propre mode plan surveille le contenu de la mémoire tampon de texte afin de détruire les anciennes zones de plan lorsqu’elles deviennent non valides et de créer de nouvelles régions en mode plan en fonction des besoins.
 
-### <a name="to-implement-a-client-controlled-outline-region"></a>Mettre en œuvre une région de contour contrôlée par le client
+### <a name="to-implement-a-client-controlled-outline-region"></a>Pour implémenter une région en mode plan contrôlé par le client
 
-1. Appel `QueryService` <xref:Microsoft.VisualStudio.TextManager.Interop.SVsTextManager>pour . Cela renvoie <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextManager>un pointeur à .
+1. Appelez `QueryService` pour <xref:Microsoft.VisualStudio.TextManager.Interop.SVsTextManager> . Cela retourne un pointeur vers <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextManager> .
 
-2. Appelez, <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextManager.GetHiddenTextSession%2A>en passant dans un pointeur pour un tampon de texte donné. Cela détermine si une session de texte cachée existe déjà pour le tampon.
+2. Appelle <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextManager.GetHiddenTextSession%2A> , en passant un pointeur pour une mémoire tampon de texte donnée. Cela détermine si une session de texte masqué existe déjà pour la mémoire tampon.
 
-3. Si une session de texte existe déjà, alors vous n’avez <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextSession> pas besoin d’en créer une, et un pointeur de l’objet existant est retourné. Utilisez ce pointeur pour énumérer et créer des régions de contour. Sinon, <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextManager.CreateHiddenTextSession%2A> appelez pour créer une session de texte cachée pour le tampon. Un pointeur <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextSession> de l’objet est retourné.
+3. Si une session de texte existe déjà, vous n’avez pas besoin d’en créer une, et un pointeur vers l' <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextSession> objet existant est retourné. Utilisez ce pointeur pour énumérer et créer des régions de plan. Sinon, appelez <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextManager.CreateHiddenTextSession%2A> pour créer une session de texte masqué pour la mémoire tampon. Un pointeur vers l' <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextSession> objet est retourné.
 
     > [!NOTE]
-    > Lorsque vous <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextManager.CreateHiddenTextSession%2A>appelez, vous pouvez spécifier <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextClient> un client de texte caché (c’est-à-dire un objet). Ce client vous informe lorsqu’un texte caché ou une région de contour est élargi ou effondré par l’utilisateur.
+    > Lorsque vous appelez <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextManager.CreateHiddenTextSession%2A> , vous pouvez spécifier un client de texte masqué (autrement dit, un <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextClient> objet). Ce client vous avertit lorsqu’une zone de texte ou de plan masquée est développée ou réduite par l’utilisateur.
 
-4. Paramètres <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextSession.AddHiddenRegions%2A> de structure d’appel) `iType` : Spécifier une valeur de la part du <xref:Microsoft.VisualStudio.TextManager.Interop.NewHiddenRegion> <xref:Microsoft.VisualStudio.TextManager.Interop.HIDDEN_REGION_TYPE> membre de la structure pour indiquer que vous créez une région de contour, plutôt qu’une région cachée. Précisez si la région est contrôlée par le `dwBehavior` client <xref:Microsoft.VisualStudio.TextManager.Interop.NewHiddenRegion> ou contrôlée par le rédacteur en chef dans le membre de la structure. Votre mise en œuvre intelligente peut contenir un mélange de régions de contour contrôlées par l’éditeur et le client. Spécifier le texte de la bannière qui s’affiche `pszBanner` lorsque votre <xref:Microsoft.VisualStudio.TextManager.Interop.NewHiddenRegion> région de contour est effondrée, comme «..., dans le membre de la structure. Le texte par défaut de la bannière de l’éditeur pour une région cachée est "...".
+4. Call <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextSession.AddHiddenRegions%2A> structure) : spécifiez une valeur <xref:Microsoft.VisualStudio.TextManager.Interop.HIDDEN_REGION_TYPE> dans le `iType` membre de la <xref:Microsoft.VisualStudio.TextManager.Interop.NewHiddenRegion> structure pour indiquer que vous créez une région en mode plan, plutôt qu’une zone masquée. Spécifiez si la région est contrôlée par le client ou contrôlée par l’éditeur dans le `dwBehavior` membre de la <xref:Microsoft.VisualStudio.TextManager.Interop.NewHiddenRegion> structure. Votre implémentation de la mise en plan intelligente peut contenir une combinaison de zones de plan de l’éditeur et contrôlées par le client. Spécifiez le texte de la bannière qui s’affiche lorsque votre zone de plan est réduite, par exemple « ... », dans le `pszBanner` membre de la <xref:Microsoft.VisualStudio.TextManager.Interop.NewHiddenRegion> structure. Le texte de bannière par défaut de l’éditeur pour une zone masquée est « ... ».

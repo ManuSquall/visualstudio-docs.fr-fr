@@ -1,7 +1,7 @@
 ---
-title: 'Procédure pas à pas : Décrivant Microsoft Docs'
+title: 'Procédure pas à pas : mode plan | Microsoft Docs'
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - outlining
 ms.assetid: d75a44aa-265a-44d4-9c28-457f59c4ff9f
@@ -10,118 +10,118 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 97b9dcbb2a24f1a3ed336a4a6bb7de4a15e907b4
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.openlocfilehash: cb338803d50b2ecc9af8c8db6a6b6dc2f3631161
+ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2020
-ms.locfileid: "80697215"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "85906180"
 ---
 # <a name="walkthrough-outlining"></a>Procédure pas à pas : mode Plan
-Configurez des fonctionnalités basées sur la langue telles que la définition des types de régions textuelles que vous souhaitez élargir ou s’effondrer. Vous pouvez définir des régions dans le cadre d’un service linguistique, ou définir votre propre extension de nom de fichier et type de contenu et appliquer la définition de la région uniquement à ce type, ou appliquer les définitions de la région à un type de contenu existant (comme le « texte »). Ce pas-là montre comment définir et afficher les régions décrivantes.
+Configurez des fonctionnalités basées sur le langage, telles que le mode plan, en définissant les genres de zones de texte que vous souhaitez développer ou réduire. Vous pouvez définir des régions dans le contexte d’un service de langage, ou définir votre propre extension de nom de fichier et type de contenu, appliquer la définition de région à ce type uniquement ou appliquer les définitions de régions à un type de contenu existant (tel que « texte »). Cette procédure pas à pas montre comment définir et afficher des régions en mode plan.
 
 ## <a name="prerequisites"></a>Prérequis
- A partir de Visual Studio 2015, vous n’installez pas le Visual Studio SDK à partir du centre de téléchargement. Il est inclus comme une fonctionnalité facultative dans la configuration Visual Studio. Vous pouvez également installer le VS SDK plus tard. Pour plus d’informations, voir [Installer le Studio Visuel SDK](../extensibility/installing-the-visual-studio-sdk.md).
+ À compter de Visual Studio 2015, vous n’installez pas le kit de développement logiciel (SDK) Visual Studio à partir du centre de téléchargement. Il est inclus en tant que fonctionnalité facultative dans le programme d’installation de Visual Studio. Vous pouvez également installer le kit de développement logiciel (SDK) Visual Studio plus tard. Pour plus d’informations, consultez [installer le kit de développement logiciel (SDK) Visual Studio](../extensibility/installing-the-visual-studio-sdk.md).
 
-## <a name="create-a-managed-extensibility-framework-mef-project"></a>Créer un projet de cadre d’exténuabilité gérée (MEF)
+## <a name="create-a-managed-extensibility-framework-mef-project"></a>Créer un projet Managed Extensibility Framework (MEF)
 
 ### <a name="to-create-a-mef-project"></a>Pour créer un projet MEF
 
 1. Créez un projet VSIX. Nommez la solution `OutlineRegionTest`.
 
-2. Ajoutez un modèle d’élément Classificateur d’éditeur au projet. Pour plus d’informations, voir [Créer une extension avec un modèle d’élément d’éditeur](../extensibility/creating-an-extension-with-an-editor-item-template.md).
+2. Ajoutez un modèle d’élément de classifieur d’éditeur au projet. Pour plus d’informations, consultez [créer une extension avec un modèle d’élément d’éditeur](../extensibility/creating-an-extension-with-an-editor-item-template.md).
 
 3. Supprimez les fichiers de classe existants.
 
-## <a name="implement-an-outlining-tagger"></a>Mettre en œuvre un tagger décrivant
- Les régions qui distinguent sont<xref:Microsoft.VisualStudio.Text.Tagging.OutliningRegionTag>marquées par une sorte d’étiquette (). Cette balise fournit le comportement standard décrivant. La région décrite peut être élargie ou effondrée. La région décrite est marquée par**+** un signe Plus ( )**-** si elle s’est effondrée ou un signe Minus ( ) si elle est élargie, et la région élargie est délimitée par une ligne verticale.
+## <a name="implement-an-outlining-tagger"></a>Implémenter une balise de mode plan
+ Les régions en mode plan sont marquées par un type de balise ( <xref:Microsoft.VisualStudio.Text.Tagging.OutliningRegionTag> ). Cette balise fournit le comportement de mode plan standard. La zone en mode plan peut être développée ou réduite. La zone en mode plan est marquée par un signe plus ( **+** ) si elle est réduite ou un signe moins ( **-** ) si elle est développée, et la région développée est délimitée par une ligne verticale.
 
- Les étapes suivantes montrent comment définir un tagger qui crée des régions décrivantes pour toutes les régions délimitées par les parenthèses (**[****, ]**).
+ Les étapes suivantes montrent comment définir une balise qui crée des régions en mode plan pour toutes les régions délimitées par des crochets (**[**,**]**).
 
-### <a name="to-implement-an-outlining-tagger"></a>Mettre en œuvre un tagger décrivant
+### <a name="to-implement-an-outlining-tagger"></a>Pour implémenter une balise de mode plan
 
 1. Ajoutez un fichier de classe et nommez-le `OutliningTagger`.
 
-2. Importez les espaces nom suivants.
+2. Importez les espaces de noms suivants.
 
      [!code-csharp[VSSDKOutlineRegionTest#1](../extensibility/codesnippet/CSharp/walkthrough-outlining_1.cs)]
      [!code-vb[VSSDKOutlineRegionTest#1](../extensibility/codesnippet/VisualBasic/walkthrough-outlining_1.vb)]
 
-3. Créez une `OutliningTagger`classe nommée , <xref:Microsoft.VisualStudio.Text.Tagging.ITagger%601>et faites-la implémenter :
+3. Créez une classe nommée `OutliningTagger` et mettez-la en œuvre <xref:Microsoft.VisualStudio.Text.Tagging.ITagger%601> :
 
      [!code-csharp[VSSDKOutlineRegionTest#2](../extensibility/codesnippet/CSharp/walkthrough-outlining_2.cs)]
      [!code-vb[VSSDKOutlineRegionTest#2](../extensibility/codesnippet/VisualBasic/walkthrough-outlining_2.vb)]
 
-4. Ajoutez quelques champs pour suivre le tampon de texte et l’instantané et pour accumuler les ensembles de lignes qui doivent être étiquetés comme des régions décrivantes. Ce code comprend une liste d’objets régionaux (à définir plus tard) qui représentent les régions encles.
+4. Ajoutez des champs pour effectuer le suivi de la mémoire tampon de texte et de l’instantané, et pour accumuler les ensembles de lignes qui doivent être balisés en tant que régions en mode plan. Ce code comprend une liste d’objets Region (à définir ultérieurement) qui représentent les régions en mode plan.
 
      [!code-csharp[VSSDKOutlineRegionTest#3](../extensibility/codesnippet/CSharp/walkthrough-outlining_3.cs)]
      [!code-vb[VSSDKOutlineRegionTest#3](../extensibility/codesnippet/VisualBasic/walkthrough-outlining_3.vb)]
 
-5. Ajoutez un constructeur de tagger qui initialise les champs, analyse le tampon <xref:Microsoft.VisualStudio.Text.ITextBuffer.Changed> et ajoute un gestionnaire d’événements à l’événement.
+5. Ajoutez un constructeur de balises qui initialise les champs, analyse la mémoire tampon et ajoute un gestionnaire d’événements à l' <xref:Microsoft.VisualStudio.Text.ITextBuffer.Changed> événement.
 
      [!code-csharp[VSSDKOutlineRegionTest#4](../extensibility/codesnippet/CSharp/walkthrough-outlining_4.cs)]
      [!code-vb[VSSDKOutlineRegionTest#4](../extensibility/codesnippet/VisualBasic/walkthrough-outlining_4.vb)]
 
-6. Implémenter la <xref:Microsoft.VisualStudio.Text.Tagging.ITagger%601.GetTags%2A> méthode, qui instantanément les travées d’étiquette. Cet exemple suppose que les <xref:Microsoft.VisualStudio.Text.NormalizedSpanCollection> travées dans le passage à la méthode sont contigus, bien qu’il ne soit pas toujours le cas. Cette méthode instantanément une nouvelle durée d’étiquette pour chacune des régions décrivant.
+6. Implémentez la <xref:Microsoft.VisualStudio.Text.Tagging.ITagger%601.GetTags%2A> méthode, qui instancie les étendues de balise. Cet exemple suppose que les étendues dans le <xref:Microsoft.VisualStudio.Text.NormalizedSpanCollection> passé à la méthode sont contiguës, bien que cela ne soit pas toujours le cas. Cette méthode instancie une nouvelle étendue de balise pour chacune des régions en mode plan.
 
      [!code-csharp[VSSDKOutlineRegionTest#5](../extensibility/codesnippet/CSharp/walkthrough-outlining_5.cs)]
      [!code-vb[VSSDKOutlineRegionTest#5](../extensibility/codesnippet/VisualBasic/walkthrough-outlining_5.vb)]
 
-7. Déclarez `TagsChanged` un gestionnaire d’événements.
+7. Déclarez un `TagsChanged` Gestionnaire d’événements.
 
      [!code-csharp[VSSDKOutlineRegionTest#6](../extensibility/codesnippet/CSharp/walkthrough-outlining_6.cs)]
      [!code-vb[VSSDKOutlineRegionTest#6](../extensibility/codesnippet/VisualBasic/walkthrough-outlining_6.vb)]
 
-8. Ajoutez `BufferChanged` un gestionnaire d’événements qui répond aux <xref:Microsoft.VisualStudio.Text.ITextBuffer.Changed> événements en analyseant le tampon de texte.
+8. Ajoutez un `BufferChanged` Gestionnaire d’événements qui répond aux <xref:Microsoft.VisualStudio.Text.ITextBuffer.Changed> événements en analysant la mémoire tampon de texte.
 
      [!code-csharp[VSSDKOutlineRegionTest#7](../extensibility/codesnippet/CSharp/walkthrough-outlining_7.cs)]
      [!code-vb[VSSDKOutlineRegionTest#7](../extensibility/codesnippet/VisualBasic/walkthrough-outlining_7.vb)]
 
-9. Ajoutez une méthode qui analyse le tampon. L’exemple donné ici est pour illustration seulement. Il analyse synchronisée le tampon en régions de grande réserve imbriquées.
+9. Ajoutez une méthode qui analyse la mémoire tampon. L’exemple donné ici est fourni à titre d’illustration uniquement. Il analyse de façon synchrone la mémoire tampon dans des régions en mode plan imbriquées.
 
      [!code-csharp[VSSDKOutlineRegionTest#8](../extensibility/codesnippet/CSharp/walkthrough-outlining_8.cs)]
      [!code-vb[VSSDKOutlineRegionTest#8](../extensibility/codesnippet/VisualBasic/walkthrough-outlining_8.vb)]
 
-10. La méthode d’aide suivante obtient un intégrateur qui représente le niveau de la mise en évidence, de sorte que 1 est la paire d’accolade la plus gauche.
+10. La méthode d’assistance suivante obtient un entier qui représente le niveau du mode plan, de sorte que 1 est la paire d’accolades la plus à gauche.
 
      [!code-csharp[VSSDKOutlineRegionTest#9](../extensibility/codesnippet/CSharp/walkthrough-outlining_9.cs)]
      [!code-vb[VSSDKOutlineRegionTest#9](../extensibility/codesnippet/VisualBasic/walkthrough-outlining_9.vb)]
 
-11. La méthode d’assistance suivante traduit une région (définie plus tard dans cet article) en un SnapshotSpan.
+11. La méthode d’assistance suivante traduit une région (définie plus loin dans cet article) en SnapshotSpan.
 
      [!code-csharp[VSSDKOutlineRegionTest#10](../extensibility/codesnippet/CSharp/walkthrough-outlining_10.cs)]
      [!code-vb[VSSDKOutlineRegionTest#10](../extensibility/codesnippet/VisualBasic/walkthrough-outlining_10.vb)]
 
-12. Le code suivant est pour illustration seulement. Il définit une classe partiale qui contient le numéro de ligne et la compensation du début d’une région décrivante, et une référence à la région mère (le cas échéant). Ce code permet au parser de mettre en place des régions de mise en valeur imbriquées. Une classe de région dérivée contient une référence au numéro de ligne de la fin d’une région décrivante.
+12. Le code suivant est uniquement à titre d’illustration. Il définit une classe PartialRegion qui contient le numéro de ligne et le décalage du début d’une région en mode plan, ainsi qu’une référence à la région parente (le cas échéant). Ce code permet à l’analyseur de configurer des régions en mode plan imbriquées. Une classe de région dérivée contient une référence au numéro de ligne de la fin d’une région en mode plan.
 
      [!code-csharp[VSSDKOutlineRegionTest#11](../extensibility/codesnippet/CSharp/walkthrough-outlining_11.cs)]
      [!code-vb[VSSDKOutlineRegionTest#11](../extensibility/codesnippet/VisualBasic/walkthrough-outlining_11.vb)]
 
-## <a name="implement-a-tagger-provider"></a>Mettre en œuvre un fournisseur de tagger
- Exportez un fournisseur de tagger pour votre tagger. Le fournisseur de `OutliningTagger` tagger crée un tampon pour un tampon `OutliningTagger` du type de contenu "texte", ou bien retourne un si le tampon a déjà un.
+## <a name="implement-a-tagger-provider"></a>Implémenter un fournisseur de balises
+ Exportez un fournisseur de balises pour votre balise. Le fournisseur de balises crée un `OutliningTagger` pour une mémoire tampon du type de contenu « text », ou sinon retourne un `OutliningTagger` si la mémoire tampon en a déjà un.
 
-### <a name="to-implement-a-tagger-provider"></a>Mettre en œuvre un fournisseur de tagger
+### <a name="to-implement-a-tagger-provider"></a>Pour implémenter un fournisseur de balises
 
-1. Créez une `OutliningTaggerProvider` classe nommée <xref:Microsoft.VisualStudio.Text.Tagging.ITaggerProvider>qui implémente et exportez-la avec les attributs ContentType et TagType.
+1. Créez une classe nommée `OutliningTaggerProvider` qui implémente <xref:Microsoft.VisualStudio.Text.Tagging.ITaggerProvider> et exportez-la avec les attributs ContentType et TagType.
 
      [!code-csharp[VSSDKOutlineRegionTest#12](../extensibility/codesnippet/CSharp/walkthrough-outlining_12.cs)]
      [!code-vb[VSSDKOutlineRegionTest#12](../extensibility/codesnippet/VisualBasic/walkthrough-outlining_12.vb)]
 
-2. Implémenter <xref:Microsoft.VisualStudio.Text.Tagging.ITaggerProvider.CreateTagger%2A> la `OutliningTagger` méthode en ajoutant un aux propriétés du tampon.
+2. Implémentez la <xref:Microsoft.VisualStudio.Text.Tagging.ITaggerProvider.CreateTagger%2A> méthode en ajoutant un `OutliningTagger` aux propriétés de la mémoire tampon.
 
      [!code-csharp[VSSDKOutlineRegionTest#13](../extensibility/codesnippet/CSharp/walkthrough-outlining_13.cs)]
      [!code-vb[VSSDKOutlineRegionTest#13](../extensibility/codesnippet/VisualBasic/walkthrough-outlining_13.vb)]
 
-## <a name="build-and-test-the-code"></a>Construire et tester le code
- Pour tester ce code, créez la solution OutlineRegionTest et exécutez-la dans le cas expérimental.
+## <a name="build-and-test-the-code"></a>Générer et tester le code
+ Pour tester ce code, générez la solution OutlineRegionTest et exécutez-la dans l’instance expérimentale.
 
-### <a name="to-build-and-test-the-outlineregiontest-solution"></a>Construire et tester la solution OutlineRegionTest
+### <a name="to-build-and-test-the-outlineregiontest-solution"></a>Pour générer et tester la solution OutlineRegionTest
 
 1. Générez la solution.
 
-2. Lorsque vous exécutez ce projet dans le débbugger, une deuxième instance de Visual Studio est lancée.
+2. Quand vous exécutez ce projet dans le débogueur, une deuxième instance de Visual Studio est démarrée.
 
-3. Créer un fichier texte. Tapez un texte qui inclut à la fois les supports d’ouverture et les supports de fermeture.
+3. Créer un fichier texte. Tapez du texte qui comprend à la fois les crochets ouvrants et les crochets fermants.
 
     ```
     [
@@ -129,7 +129,7 @@ Configurez des fonctionnalités basées sur la langue telles que la définition 
     ]
     ```
 
-4. Il devrait y avoir une région qui comprend les deux parenthèses. Vous devriez être en mesure de cliquer sur le signe Moins à gauche de la parenthèse ouverte pour effondrer la région de la ligne de délindation. Lorsque la région est effondrée, le symbole d’élipèse (*...*) devrait apparaître à gauche de la région effondrée, et un popup contenant le **texte planant** du texte devrait apparaître lorsque vous déplacez le pointeur sur l’ellipsis.
+4. Il doit y avoir une région en mode plan qui inclut les deux crochets. Vous devez être en mesure de cliquer sur le signe moins à gauche du crochet ouvrant pour réduire la région en mode plan. Lorsque la région est réduite, le symbole des points de suspension (*...*) doit apparaître à gauche de la zone réduite et une fenêtre contextuelle contenant le **texte de pointage** s’affiche lorsque vous déplacez le pointeur sur les points de suspension.
 
 ## <a name="see-also"></a>Voir aussi
-- [Procédure pas à pas : liez un type de contenu à une extension de nom de fichier](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)
+- [Procédure pas à pas : liaison d’un type de contenu à une extension de nom de fichier](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)

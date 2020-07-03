@@ -1,58 +1,58 @@
 ---
-title: Présentation de l’extensibilité Visual Studio ouvrir le dossier | Microsoft Docs
+title: Vue d’ensemble de l’extensibilité des dossiers ouverts Visual Studio | Microsoft Docs
 ms.date: 02/21/2018
-ms.topic: conceptual
+ms.topic: overview
 ms.assetid: 94c3f8bf-1de3-40ea-aded-7f40c4b314c7
 author: vukelich
 ms.author: svukel
 manager: viveis
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2bb74703f639848d643f536edf620e30b1836310
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d213a7add358c46f7088f504d8c54352cda44a1c
+ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62806451"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "85905967"
 ---
-# <a name="open-folder-extensibility"></a>Extensibilité de dossier ouverte
+# <a name="open-folder-extensibility"></a>Ouvrir l’extensibilité des dossiers
 
-Le [ouvrir le dossier](../ide/develop-code-in-visual-studio-without-projects-or-solutions.md) fonctionnalité permet aux utilisateurs d’ouvrir une base de code dans Visual Studio sans la nécessité pour les fichiers projet ou solution. Ouvrir le dossier fournit que les fonctionnalités que les utilisateurs attendent à partir de Visual Studio, telles que :
+La fonctionnalité [ouvrir le dossier](../ide/develop-code-in-visual-studio-without-projects-or-solutions.md) permet aux utilisateurs d’ouvrir n’importe quel code base dans Visual Studio sans avoir besoin de fichiers projet ou solution. Ouvrir un dossier fournit les fonctionnalités que les utilisateurs attendent de Visual Studio, par exemple :
 
-* Recherche et intégration de l’Explorateur de solutions
+* Intégration et recherche de Explorateur de solutions
 * Colorisation de l’éditeur
-* Aller à la navigation
+* Accéder à la navigation
 * Rechercher dans la recherche de fichiers
 
-Lorsqu’il est utilisé avec les charges de travail par exemple, pour le développement .NET et C++, les utilisateurs obtiennent également :
+Lorsqu’ils sont utilisés avec des charges de travail telles que pour le développement .NET et C++, les utilisateurs obtiennent également :
 
-* Rich Intellisense
+* IntelliSense enrichi
 * Fonctionnalités spécifiques au langage
 
-Avec ouvrir le dossier, les auteurs d’extension peuvent créer des fonctionnalités riches pour n’importe quel langage. Il existe des API pour la prise en charge de génération, de débogage et de recherche de symbole de code de base de n’importe quel fichier dans un utilisateur. Les extendeurs actuels peuvent mettre à jour leurs fonctionnalités existantes de Visual Studio pour comprendre le code sans le soutien de projets ou d’une solution.
+Avec un dossier ouvert, les créateurs d’extensions peuvent créer des fonctionnalités riches pour n’importe quel langage. Il existe des API pour prendre en charge la génération, le débogage et la recherche de symbole pour tout fichier dans le code base d’un utilisateur. Les extendeurs actuels peuvent mettre à jour leurs fonctionnalités Visual Studio existantes pour comprendre le code sans la sauvegarde de projets ou d’une solution.
 
-## <a name="an-api-without-project-systems"></a>Une API sans les systèmes de projet
+## <a name="an-api-without-project-systems"></a>API sans système de projet
 
-Historiquement, Visual Studio compris uniquement les fichiers dans une solution et ses projets à l’aide de systèmes de projet. Un système de projet est chargé pour les interactions utilisateur et les fonctionnalités d’un projet chargé. Il sait quels fichiers son projet contient, la représentation visuelle du contenu du projet, les dépendances sur d’autres projets, et le fichier de projet de modification de l’objet sous-jacent. Il s’effectue via ces hiérarchies et les fonctionnalités autres composants ne fonctionnent pas pour le compte de l’utilisateur. Pas tous les codes base sont également représentées dans une structure de projet et solution. Langages de script et le code open source écrit en C++ pour Linux sont de bons exemples. Ouvrir le dossier, Visual Studio fournit aux utilisateurs une nouvelle façon d’interagir avec leur code source.
+Historiquement, Visual Studio ne comprisa que les fichiers d’une solution et ses projets utilisant des systèmes de projet. Un système de projet est responsable de la fonctionnalité et des interactions utilisateur d’un projet chargé. Il comprend les fichiers qu’il contient, la représentation visuelle du contenu du projet, les dépendances sur d’autres projets et la modification du fichier projet sous-jacent. C’est à travers ces hiérarchies et fonctionnalités que les autres composants fonctionnent pour le compte de l’utilisateur. Toutes les bases de code ne sont pas bien représentées dans une structure de projet et de solution. Les langages de script et le code open source écrits en C++ pour Linux sont de bons exemples. Avec un dossier ouvert, Visual Studio offre aux utilisateurs une nouvelle façon d’interagir avec leur code source.
 
-Les API de dossier ouvert sont sous la `Microsoft.VisualStudio.Workspace.*` espace de noms et sont disponibles pour les extendeurs produire et consommer des données ou des actions au sein d’ouvrir le dossier des fichiers. Extensions peuvent utiliser ces API pour fournir des fonctionnalités pour plusieurs domaines, notamment :
+Les API des dossiers ouverts se trouvent sous l' `Microsoft.VisualStudio.Workspace.*` espace de noms et sont disponibles pour les extendeurs pour produire et consommer des données ou des actions autour des fichiers dans un dossier ouvert. Les extensions peuvent utiliser ces API pour fournir des fonctionnalités pour de nombreuses zones, notamment :
 
-- [Espaces de travail](workspaces.md) - l’extensibilité de point d’ouvrir le dossier de démarrage est l’espace de travail et ses API.
-- [Fichier de contextes et les actions](workspace-file-contexts.md) -fichier intelligence de code spécifiques fournie par le biais des contextes de fichier.
-- [L’indexation](workspace-indexing.md) : collecter et conserver les données sur les espaces de travail d’ouvrir le dossier.
-- [Services de langage](workspace-language-services.md) -intégrer des services de langage dans les espaces de travail d’ouvrir le dossier.
-- [Build](workspace-build.md) -prise en charge des espaces de travail d’ouvrir le dossier de Build.
+- [Espaces de travail](workspaces.md) : le point de départ de l’extensibilité des dossiers ouverts est l’espace de travail et ses API.
+- [Contextes de fichier et actions](workspace-file-contexts.md) : informations de code spécifiques aux fichiers fournies par le biais de contextes de fichier.
+- [Indexation](workspace-indexing.md) : collecte et conserve les données sur les espaces de travail de dossier ouverts.
+- [Services de langage](workspace-language-services.md) : intégrez les services de langage dans les espaces de travail de dossier ouverts.
+- [Build](workspace-build.md) -générer la prise en charge des espaces de travail de dossier ouverts.
 
-Fonctionnalités qui utilisent les types suivants devront adopter les nouvelles API pour prendre en charge d’ouvrir le dossier :
+Les fonctionnalités qui utilisent les types suivants devront adopter de nouvelles API pour prendre en charge l’ouverture de dossier :
 
 - `IVsHierarchy`
 - `IVsProject`
 - `DTE`
 
-## <a name="feedback-comments-issues"></a>Commentaires, les commentaires, les problèmes
+## <a name="feedback-comments-issues"></a>Commentaires, commentaires, problèmes
 
-Ouvrez le dossier et le `Microsoft.VisualStudio.Workspace.*` API sont en cours de développement. Si vous voyez un comportement inattendu, puis consultez les problèmes connus pour la version d’intérêt. [Communauté de développeurs](https://developercommunity.visualstudio.com) est l’emplacement recommandé pour voter et de créer des problèmes. Pour chaque évaluation, nous vous recommandons une description détaillée de votre problème. Inclure la version de Visual Studio que vous développez, les API que vous utilisez (ce que vous avez implémenté et ce que vous interagissez avec), le résultat attendu et le résultat réel. Si possible, inclure une image du processus devenv.exe. Utiliser pour fournir des commentaires sur ce de suivi des problèmes de GitHub et de la documentation connexe.
+Ouvrez le dossier et les API sont en cours de `Microsoft.VisualStudio.Workspace.*` développement. Si vous constatez un comportement inattendu, consultez les problèmes connus pour la publication d’intérêt. La [communauté des développeurs](https://developercommunity.visualstudio.com) est l’endroit recommandé pour voter et créer des problèmes. Pour chaque commentaire, nous vous recommandons vivement de fournir une description détaillée de votre problème. Incluez la version de Visual Studio pour laquelle vous développez, les API que vous utilisez (ce que vous avez implémenté et ce que vous utilisez), le résultat attendu et le résultat réel. Si possible, incluez un vidage du processus de devenv.exe. Utilisez le suivi des problèmes de GitHub pour fournir des commentaires sur ce et la documentation associée.
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-* [Espaces de travail](workspaces.md) -en savoir plus sur l’espace de travail du dossier Open API.
+* [Espaces de travail](workspaces.md) : en savoir plus sur l’API ouvrir un dossier d’espace de travail.

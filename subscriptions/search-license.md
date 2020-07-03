@@ -5,14 +5,14 @@ ms.author: lank
 manager: lank
 ms.assetid: 9c0b9a4f-b9a3-491c-a68f-6e4bac7f7b3d
 ms.date: 03/03/2020
-ms.topic: conceptual
+ms.topic: how-to
 description: Découvrez comment les administrateurs peuvent rechercher des abonnés individuels ou des groupes d’abonnés dans le portail d’administration.
-ms.openlocfilehash: e2ca2683d1c14180fb70a5f80a781f774ed65e71
-ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
+ms.openlocfilehash: c7ef5cd61a689be1757793b223ebc1a9295bf8bd
+ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "80233271"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "85906165"
 ---
 # <a name="search-and-filter-subscribers-in-visual-studio-subscriptions"></a>Rechercher et filtrer des abonnés dans les abonnements Visual Studio
 Le portail d’administration des abonnements Visual Studio vous permet de rechercher un groupe spécifique d’abonnés selon différents critères. Vous pouvez filtrer la liste des abonnés par nom, adresse e-mail, niveau d’abonnement et autres critères.
@@ -30,7 +30,7 @@ Le portail d’administration des abonnements Visual Studio vous permet de reche
    > [!NOTE]
    > Le champ **Nom** est trié par prénom.
 
-   Notez que l’icône **Du filtre** est mise en surbrillance, indiquant qu’un filtre est appliqué.  Un choix **de filtre clair** est également affiché. 
+   Notez que l’icône de **filtre** est mise en surbrillance, ce qui indique qu’un filtre est appliqué.  Un choix de **filtre clair** est également affiché. 
 
 3. Pour effacer le filtre et restaurer la liste non filtrée, cliquez sur l’onglet **Effacer le filtre** en haut à droite. 
    > [!div class="mx-imgBorder"]
@@ -38,7 +38,7 @@ Le portail d’administration des abonnements Visual Studio vous permet de reche
 
 
 ## <a name="see-also"></a>Voir aussi
-- [Documentation Visual Studio](https://docs.microsoft.com/visualstudio/)
+- [Documentation de Visual Studio](https://docs.microsoft.com/visualstudio/)
 - [Documentation Azure DevOps](https://docs.microsoft.com/azure/devops/)
 - [Documentation Azure](https://docs.microsoft.com/azure/)
 - [Documentation Microsoft 365](https://docs.microsoft.com/microsoft-365/)
@@ -46,6 +46,6 @@ Le portail d’administration des abonnements Visual Studio vous permet de reche
 
 ## <a name="next-steps"></a>Étapes suivantes
 - Maintenant que vous savez comment trouver un abonné, découvrez comment [modifier](edit-license.md) son abonnement.
-- Vous avez besoin d’aide sur l’utilisation du portail d’administration ?  Contactez [Visual Studio Administration et Subscriptions Support](https://visualstudio.microsoft.com/support/support-overview-vs).
+- Vous avez besoin d’aide sur l’utilisation du portail d’administration ?  Contactez la [prise en charge de l’administration et des abonnements Visual Studio](https://visualstudio.microsoft.com/support/support-overview-vs).
 
 

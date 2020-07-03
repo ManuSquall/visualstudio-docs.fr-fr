@@ -1,19 +1,19 @@
 ---
 title: Comment aller-retour des extensions
 ms.date: 06/25/2017
-ms.topic: conceptual
+ms.topic: how-to
 ms.assetid: 2d6cf53c-011e-4c9e-9935-417edca8c486
 author: willbrown
 ms.author: madsk
 manager: justinclareburt
 ms.workload:
 - willbrown
-ms.openlocfilehash: d6de945e7221d2239e1b4f00185a5b16c04b717d
-ms.sourcegitcommit: e3c3d2b185b689c5e32ab4e595abc1ac60b6b9a8
+ms.openlocfilehash: ff2865080b7d36f1a7c3b8a7680d867b92ec9c08
+ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/18/2020
-ms.locfileid: "76269061"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "85905779"
 ---
 # <a name="how-to-make-extensions-compatible-with-visual-studio-20192017-and-visual-studio-2015"></a>Comment : rendre des extensions compatibles avec Visual Studio 2019/2017 et Visual Studio 2015
 
@@ -29,7 +29,7 @@ Voici un aperçu des étapes que vous allez effectuer dans ce document pour effe
 1. Importez les packages NuGet appropriés.
 2. Mettre à jour le manifeste d’extension :
     * Cible d’installation
-    * Prerequisites
+    * Prérequis
 3. Mettre à jour CSProj :
     * Mettez à jour `<MinimumVisualStudioVersion>`.
     * Ajouter la propriété `<VsixType>`
@@ -49,16 +49,16 @@ Ce document suppose que les éléments suivants sont installés sur votre ordina
 
 Il est vivement recommandé de démarrer cette mise à niveau avec Visual Studio 2015 au lieu de Visual Studio 2019 ou 2017. Le principal avantage du développement dans Visual Studio 2015 est de vous assurer que vous ne référencez pas les assemblys qui ne sont pas disponibles dans Visual Studio 2015. Si vous effectuez un développement dans Visual Studio 2019 ou 2017, vous risquez d’introduire une dépendance sur un assembly qui existe uniquement dans Visual Studio 2019 ou 2017.
 
-## <a name="ensure-there-is-no-reference-to-projectjson"></a>S’assurer qu’il n’existe aucune référence à Project. JSON
+## <a name="ensure-there-is-no-reference-to-projectjson"></a>Assurez-vous qu’il n’existe aucune référence à project.js
 
-Plus loin dans ce document, nous allons insérer des instructions Import conditionnelles dans votre fichier * *. csproj* . Cela ne fonctionnera pas si vos références NuGet sont stockées dans *Project. JSON*. Par conséquent, il est recommandé de déplacer toutes les références NuGet dans le fichier *packages. config* .
-Si votre projet contient un fichier *Project. JSON* :
+Plus loin dans ce document, nous allons insérer des instructions Import conditionnelles dans votre fichier **. csproj* . Cela ne fonctionnera pas si vos références NuGet sont stockées dans *project.jssur*. Par conséquent, il est recommandé de déplacer toutes les références NuGet vers le fichier *packages.config* .
+Si votre projet contient un *project.jssur* le fichier :
 
-* Prenez note des références dans *Project. JSON*.
-* À partir de la **Explorateur de solutions**, supprimez le fichier *Project. JSON* du projet. Cela supprime le fichier *Project. JSON* et le supprime du projet.
+* Prenez note des références dans *project.jssur*.
+* À partir de la **Explorateur de solutions**, supprimez le *project.jssur* le fichier du projet. Cela supprime le *project.jsdans* le fichier et le supprime du projet.
 * Rajoutez les références NuGet dans le projet :
   * Cliquez avec le bouton droit sur la **solution** et choisissez **gérer les packages NuGet pour la solution**.
-  * Visual Studio crée automatiquement le fichier *packages. config* pour vous.
+  * Visual Studio crée automatiquement le fichier *packages.config* pour vous.
 
 > [!NOTE]
 > Si votre projet contenait des packages EnvDTE, vous devrez peut-être les ajouter en cliquant avec le bouton droit sur **références** , en sélectionnant **Ajouter une référence** et en ajoutant la référence appropriée. L’utilisation de packages NuGet peut créer des erreurs lors de la tentative de génération de votre projet.
@@ -71,8 +71,8 @@ Pour créer et déployer un VSIXv3 dans Visual Studio 2015 et 2019/2017, vous au
 
 Version | Outils intégrés
 --- | ---
-Visual Studio 2015 | Microsoft.VisualStudio.Sdk.BuildTasks.14.0
-Visual Studio 2019 ou 2017 | Microsoft.VSSDK.BuildTool
+Visual Studio 2015 | Microsoft. VisualStudio. Sdk. BuildTasks. 14.0
+Visual Studio 2019 ou 2017 | Microsoft. VSSDK. BuildTool
 
 Pour ce faire :
 
@@ -136,10 +136,10 @@ Il est fortement recommandé d’utiliser une référence à un. csproj modifié
 
 ### <a name="2-add-the-vsixtype-property"></a>2. Ajoutez la propriété VsixType.
 
-* Ajoutez la balise `<VsixType>v3</VsixType>` suivante à un groupe de propriétés.
+* Ajoutez la balise suivante `<VsixType>v3</VsixType>` à un groupe de propriétés.
 
 > [!NOTE]
-> Il est recommandé de l’ajouter sous la balise `<OutputType></OutputType>`.
+> Il est recommandé de l’ajouter sous la `<OutputType></OutputType>` balise.
 
 ### <a name="3-add-the-debugging-properties"></a>3. ajouter les propriétés de débogage
 
@@ -163,7 +163,7 @@ Il est fortement recommandé d’utiliser une référence à un. csproj modifié
 
 ### <a name="4-add-conditions-to-the-build-tools-imports"></a>4. ajouter des conditions aux importations des outils de génération
 
-* Ajoutez des instructions conditionnelles supplémentaires aux balises `<import>` qui ont une référence Microsoft. VSSDK. BuildTools. Insérez `'$(VisualStudioVersion)' != '14.0' And` au début de l’instruction de condition. Ces instructions s’affichent dans l’en-tête et le pied de page du fichier csproj.
+* Ajoutez des instructions conditionnelles supplémentaires aux `<import>` balises qui ont une référence Microsoft. VSSDK. BuildTools. Insérez `'$(VisualStudioVersion)' != '14.0' And` au début de l’instruction de condition. Ces instructions s’affichent dans l’en-tête et le pied de page du fichier csproj.
 
 Par exemple :
 
@@ -171,7 +171,7 @@ Par exemple :
 <Import Project="packages\Microsoft.VSSDK.BuildTools.15.0.26201…" Condition="'$(VisualStudioVersion)' != '14.0' And Exists(…" />
 ```
 
-* Ajoutez des instructions conditionnelles supplémentaires aux balises `<import>` qui ont un Microsoft. VisualStudio. Sdk. BuildTasks. 14.0. Insérez `'$(VisualStudioVersion)' == '14.0' And` au début de l’instruction de condition. Ces instructions s’affichent dans l’en-tête et le pied de page du fichier csproj.
+* Ajoutez des instructions conditionnelles supplémentaires aux `<import>` balises qui ont un Microsoft. VisualStudio. Sdk. BuildTasks. 14.0. Insérez `'$(VisualStudioVersion)' == '14.0' And` au début de l’instruction de condition. Ces instructions s’affichent dans l’en-tête et le pied de page du fichier csproj.
 
 Par exemple :
 
@@ -179,7 +179,7 @@ Par exemple :
 <Import Project="packages\Microsoft.VisualStudio.Sdk.BuildTasks.14.0.14.0…" Condition="'$(VisualStudioVersion)' == '14.0' And Exists(…" />
 ```
 
-* Ajoutez des instructions conditionnelles supplémentaires aux balises `<Error>` qui ont une référence Microsoft. VSSDK. BuildTools. Pour ce faire, insérez `'$(VisualStudioVersion)' != '14.0' And` au début de l’instruction de condition. Ces instructions s’affichent dans le pied de page du fichier csproj.
+* Ajoutez des instructions conditionnelles supplémentaires aux `<Error>` balises qui ont une référence Microsoft. VSSDK. BuildTools. Pour ce faire, insérez `'$(VisualStudioVersion)' != '14.0' And` au début de l’instruction de condition. Ces instructions s’affichent dans le pied de page du fichier csproj.
 
 Par exemple :
 
@@ -187,7 +187,7 @@ Par exemple :
 <Error Condition="'$(VisualStudioVersion)' != '14.0' And Exists('packages\Microsoft.VSSDK.BuildTools.15.0.26201…" />
 ```
 
-* Ajoutez des instructions conditionnelles supplémentaires aux balises `<Error>` qui ont un Microsoft. VisualStudio. Sdk. BuildTasks. 14.0. Insérez `'$(VisualStudioVersion)' == '14.0' And` au début de l’instruction de condition. Ces instructions s’affichent dans le pied de page du fichier csproj.
+* Ajoutez des instructions conditionnelles supplémentaires aux `<Error>` balises qui ont un Microsoft. VisualStudio. Sdk. BuildTasks. 14.0. Insérez `'$(VisualStudioVersion)' == '14.0' And` au début de l’instruction de condition. Ces instructions s’affichent dans le pied de page du fichier csproj.
 
 Par exemple :
 
@@ -207,7 +207,7 @@ Par exemple :
 * Accédez au répertoire de votre projet.
 * Ouvrez le dossier *\bin\Debug* .
 * Double-cliquez sur le fichier VSIX et installez votre extension sur Visual Studio 2015 et Visual Studio 2019/2017.
-* Assurez-vous que vous pouvez voir l’extension dans **outils** > **extensions et mises à jour** dans la section **installé** .
+* Assurez-vous que vous pouvez voir l’extension dans **Outils**  >  **extensions et mises à jour** dans la section **installé** .
 * Essayez d’exécuter/d’utiliser l’extension pour vérifier qu’elle fonctionne.
 
 ![Rechercher une extension VSIX](media/finding-a-VSIX-example.png)
