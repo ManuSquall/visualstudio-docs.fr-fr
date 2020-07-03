@@ -1,31 +1,32 @@
 ---
-title: Introduction à Azure Functions
+title: Présentation d’Azure Functions
 description: Utilisation des fonctions Azure dans Visual Studio pour Mac.
 author: heiligerdankgesang
 ms.author: dominicn
 ms.date: 05/06/2018
 ms.technology: vs-ide-install
 ms.assetid: 25CD47A4-5B32-4734-8EF3-E24A02AABF29
-ms.openlocfilehash: 85e66711c8bfe65319bf6af90ce0452478c4b7f8
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.topic: how-to
+ms.openlocfilehash: f2621ab30099baae5521c8b2226f288ec1a2531b
+ms.sourcegitcommit: 2ce59c2ffeba5ba7f628c2e6c75cba4731deef8a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "74983471"
+ms.lasthandoff: 07/03/2020
+ms.locfileid: "85938859"
 ---
-# <a name="introduction-to-azure-functions"></a>Introduction à Azure Functions
+# <a name="introduction-to-azure-functions"></a>Présentation d’Azure Functions
 
 Azure Functions permet de créer et d’exécuter dans le cloud des fonctions, à savoir des extraits de code basés sur des événements, sans devoir provisionner ni gérer explicitement l’infrastructure. Pour plus d’informations, consultez la [documentation sur Azure Functions](/azure/azure-functions/).
 
-## <a name="requirements"></a>Spécifications
+## <a name="requirements"></a>Configuration requise
 
 Les outils Azure Functions sont inclus dans **Visual Studio pour Mac 7.5**.
 
-Pour créer et déployer des fonctions, vous avez également [https://azure.com/free](https://azure.com/free)besoin d’un abonnement Azure, qui est disponible gratuitement à partir de .
+Pour créer et déployer des fonctions, vous avez également besoin d’un abonnement Azure, disponible gratuitement à partir de [https://azure.com/free](https://azure.com/free) .
 
 ## <a name="creating-your-first-azure-functions-project"></a>Création d’un premier projet Azure Functions
 
-1. Dans Visual Studio pour Mac, sélectionnez **File > Nouvelle Solution**.
+1. Dans Visual Studio pour Mac, sélectionnez **fichier > nouvelle solution**.
 2. Dans la boîte de dialogue Nouveau projet, sélectionnez le modèle Azure Functions sous **Cloud > Général**, puis cliquez sur **Suivant** :
 
     ![Boîte de dialogue Nouveau projet montrant l’option Azure Functions](media/azure-functions-image1.png)
@@ -86,18 +87,18 @@ Les modèles de fonctions vous permettent de créer rapidement des fonctions à 
 
     Une liste de modèles Azure Functions est fournie dans la section [Modèles de fonctions disponibles](#available-function-templates).
 
-Vous pouvez utiliser la procédure ci-dessus pour ajouter des fonctions à votre projet d’application de fonction. Chaque fonction dans le projet peut avoir un déclencheur différent, mais une fonction ne doit avoir qu’un seul déclencheur. Pour plus d’informations, voir [Azure Functions déclenche et lie les concepts](/azure/azure-functions/functions-triggers-bindings).
+Vous pouvez utiliser la procédure ci-dessus pour ajouter des fonctions à votre projet d’application de fonction. Chaque fonction dans le projet peut avoir un déclencheur différent, mais une fonction ne doit avoir qu’un seul déclencheur. Pour plus d’informations, consultez [Concepts des déclencheurs et liaisons Azure Functions](/azure/azure-functions/functions-triggers-bindings).
 
 ## <a name="publish-to-azure"></a>Publication dans Azure
 
-1. Cliquez à droite sur le nom du projet et ![ **sélectionnez Publier > Publier sur Azure**: Publier sur l’option menu azur](media/azure-functions-image5.png)
+1. Cliquez avec le bouton droit sur le nom du projet et sélectionnez **publier > publier sur Azure**: ![ option de menu publier sur Azure](media/azure-functions-image5.png)
 2. Si vous avez déjà connecté votre compte Azure à Visual Studio pour Mac, une liste des services d’application disponibles s’affiche. Si vous ne vous êtes pas connecté, vous êtes invité à le faire.
 3. Dans la boîte de dialogue **Publier sur Azure App Service**, sélectionnez un service d’application existant, ou créez un service en cliquant sur **Nouveau**.
 4. Dans la boîte de dialogue **Créer un App Service**, entrez vos paramètres : ![Option de menu Publier sur Azure](media/azure-functions-image7.png)
 
     |Paramètre  |Description  |
     |---------|---------|
-    |**Nom du service d’application**|Nom global unique qui identifie votre nouvelle application de fonction.|
+    |**Nom de l’App Service**|Nom global unique qui identifie votre nouvelle application de fonction.|
     |**Abonnement**|Sélectionnez l’abonnement Azure à utiliser.|
     |**[Groupe de ressources](/azure/azure-resource-manager/resource-group-overview)**|Nom du groupe de ressources où créer votre application de fonction. Choisissez **+** de créer un nouveau groupe de ressources.|
     |**[Plan de service](/azure/azure-functions/functions-scale)**|Choisissez un plan existant, ou créez un plan personnalisé. Choisissez un emplacement dans une région proche de chez vous, ou proche d’autres services auxquels vos fonctions ont accès.|
@@ -111,7 +112,7 @@ Vous pouvez utiliser la procédure ci-dessus pour ajouter des fonctions à votre
 
 6. Cliquez sur **Créer** pour créer une application de fonctions et les ressources associées dans Azure avec ces paramètres et déployer votre code de projet de fonction.
 
-7. Durant la publication, une boîte de dialogue vous invite éventuellement à « Mettre à jour la version de Functions sur Azure ». Cliquez **oui**:
+7. Durant la publication, une boîte de dialogue vous invite éventuellement à « Mettre à jour la version de Functions sur Azure ». Cliquez sur **Oui**:
 
     ![Option de menu Publier sur Azure](media/azure-functions-image12.png)
 
@@ -122,7 +123,7 @@ Vous pouvez utiliser la procédure ci-dessus pour ajouter des fonctions à votre
 
 Les paramètres que vous avez ajoutés au fichier local.settings.json doivent être également ajoutés à l’application de fonction dans Azure. Ces paramètres ne sont pas chargés automatiquement quand vous publiez le projet.
 
-Pour accéder aux paramètres de votre application, rendez-vous sur le portail azur à [https://ms.portal.azure.com/](https://ms.portal.azure.com/). Sous **Function Apps**, sélectionnez **Function Apps**, puis sélectionnez le nom de votre fonction :
+Pour accéder aux paramètres de votre application, accédez au portail Azure à l’adresse [https://ms.portal.azure.com/](https://ms.portal.azure.com/) . Sous **Function Apps**, sélectionnez **Function Apps**, puis sélectionnez le nom de votre fonction :
 
 ![menu Azure Functions](media/azure-functions-image9.png)
 

@@ -1,39 +1,40 @@
 ---
 title: Utilisation des options d’accessibilité macOS
-description: Utilisation d’options et de fonctionnalités d’accessibilité macOS, telles que le contraste élevé, la navigation du clavier et VoiceOver
+description: Utilisation des options et des fonctionnalités d’accessibilité macOS, telles que le contraste élevé, la navigation à l’aide du clavier et VoiceOver
 author: alanjclark
 ms.author: dominicn
 ms.date: 09/23/2019
 ms.assetid: 598FC25A-6DA3-44BB-B128-AD979E9F86EA
-ms.openlocfilehash: 095a65ab27bdcac6521eb771dcca1936b87409cd
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.topic: how-to
+ms.openlocfilehash: b74a150e21e29ddbee51d02be6dda91740a060f1
+ms.sourcegitcommit: 2ce59c2ffeba5ba7f628c2e6c75cba4731deef8a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "74985088"
+ms.lasthandoff: 07/03/2020
+ms.locfileid: "85938464"
 ---
-# <a name="accessibility-features-of-macos"></a>Caractéristiques d’accessibilité de macOS
+# <a name="accessibility-features-of-macos"></a>Fonctionnalités d’accessibilité de macOS
 
-macOS est un système d’exploitation accessible, avec un certain nombre de fonctionnalités pour aider les utilisateurs de capacités variables. Ces fonctionnalités comprennent un mode à contraste élevé, la navigation du clavier et VoiceOver (le lecteur d’écran macOS).
+macOS est un système d’exploitation accessible, avec un certain nombre de fonctionnalités pour aider les utilisateurs à faire varier leurs capacités. Parmi ces fonctionnalités, citons le mode de contraste élevé, la navigation au clavier et VoiceOver (le lecteur d’écran macOS).
 
-## <a name="enable-accessibility-features"></a>Activer les caractéristiques d’accessibilité
+## <a name="enable-accessibility-features"></a>Activer les fonctionnalités d’accessibilité
 
-Dans Visual Studio for Mac, le support pour les technologies d’assistance est désactivé par défaut. Pour permettre un soutien à l’accessibilité :
+Dans Visual Studio pour Mac, la prise en charge des technologies d’assistance est désactivée par défaut. Pour activer la prise en charge de l’accessibilité :
 
-1. Aller à **Visual Studio (menu)** > **Préférences** > **Autres**, et sélectionnez **Accessibilité**.
+1. Accédez à **Visual Studio (menu)**  >  **Préférences**  >  **autres**, puis sélectionnez **accessibilité**.
 
-1. Sélectionnez la case à cocher **Enable Accessibility.**
+1. Activez la case à cocher **activer l’accessibilité** .
 
-   ![Capture d’écran des préférences d’accessibilité, avec Enable Accessibility sélectionné](media/accessibility-preferences.png)
+   ![Capture d’écran des préférences d’accessibilité, avec l’option Activer l’accessibilité sélectionnée](media/accessibility-preferences.png)
 
-1. Sélectionnez **Restart Visual Studio** pour faciliter le soutien aux technologies d’assistance d’Apple.
+1. Sélectionnez **redémarrer Visual Studio** pour activer la prise en charge des technologies d’assistance Apple.
 
-## <a name="increase-the-contrast-in-macos"></a>Augmenter le contraste dans le macOS
+## <a name="increase-the-contrast-in-macos"></a>Augmenter le contraste dans macOS
 
-Visual Studio for Mac prend en charge un contraste accru dans le macOS, augmentant le contraste des éléments d’interface utilisateur et rendant les contours plus définis. Pour ce faire :
+Visual Studio pour Mac prend en charge l’augmentation du contraste dans macOS, en augmentant le contraste des éléments d’interface utilisateur et en rendant les plans plus définis. Pour l’activer :
 
-1. Préférences **système ouverte**.
+1. Ouvrez **Préférences système**.
 
-1. Aller à **l’accessibilité**, et sélectionnez **Affichage**.
+1. Accédez à **accessibilité**, puis sélectionnez **Afficher**.
 
-1. Sélectionnez la case à cocher **de contraste d’augmentation.**
+1. Activez la case à cocher **augmenter le contraste** .

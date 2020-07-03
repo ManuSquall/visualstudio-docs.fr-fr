@@ -5,22 +5,23 @@ author: jmatthiesen
 ms.author: jomatthi
 ms.date: 05/06/2018
 ms.assetid: 4AD51385-B0A8-4BA7-B2D4-BF2BD167A142
-ms.openlocfilehash: a14630c5448632a939e1768040b910caf6276c2a
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.topic: overview
+ms.openlocfilehash: 28ea53826a19a9ec97349060702cf13c68342ad2
+ms.sourcegitcommit: 2ce59c2ffeba5ba7f628c2e6c75cba4731deef8a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "67692917"
+ms.lasthandoff: 07/03/2020
+ms.locfileid: "85939002"
 ---
 # <a name="managing-references-in-a-project"></a>Gestion des références dans un projet
 
 Visual Studio pour Mac fournit deux moyens d’ajouter des références supplémentaires à votre projet :
 
-![Références du projet](media/projects-and-solutions-image10.png)
+![Références de projets](media/projects-and-solutions-image10.png)
 
 Ces règles sont les suivantes :
 
-* References
+* Références
 * NuGets (ajouté via le dossier Packages)
 
 Des références web et des références natives peuvent également être ajoutées à tout projet.

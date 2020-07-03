@@ -6,12 +6,13 @@ ms.author: dominicn
 ms.date: 05/06/2018
 ms.technology: vs-ide-debug
 ms.assetid: BB7A084D-9AC2-48B5-8076-6C8518796BBA
-ms.openlocfilehash: f62ebe21dcc5eb60927c0bc14617051aba3363e8
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.topic: overview
+ms.openlocfilehash: 5db0cd7a9c1fc21f5b109a3c103a06a35d348755
+ms.sourcegitcommit: 2ce59c2ffeba5ba7f628c2e6c75cba4731deef8a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "74985013"
+ms.lasthandoff: 07/03/2020
+ms.locfileid: "85938798"
 ---
 # <a name="debugging-with-xamarin"></a>Débogage avec Xamarin
 
@@ -37,7 +38,7 @@ Pour définir un point d’arrêt dans votre IDE, cliquez sur la zone de marge d
 
 ![Définition d’un point d’arrêt dans la marge](media/debugging-image0.png)
 
-Vous pouvez afficher tous les points d’arrêt qui ont été définis dans votre code en allant sur le **pad Breakpoints**:
+Vous pouvez afficher tous les points d’arrêt qui ont été définis dans votre code en accédant au panneau **points d’arrêt**:
 
 ![Liste des points d’arrêt](media/debugging-image0a.png)
 
@@ -80,9 +81,9 @@ Quand un point d’arrêt a été atteint, les outils de débogage vous permette
 Voici les quatre boutons :
 
 * **Lecture** : commence l’exécution du code, jusqu’au point d’arrêt suivant.
-* **Étape plus** - Cela exécutera la prochaine ligne de code. Si la ligne suivante est un appel de fonction, Step Over exécutera la fonction, et s’arrêtera à la ligne suivante de code *après* la fonction.
-* **Étape -** Cela exécutera également la prochaine ligne de code. Si la ligne suivante est un appel de fonction, Pas à pas détaillé s’arrête à la première ligne de la fonction, ce qui vous permet de continuer le débogage ligne par ligne de la fonction. Si la ligne suivante n’est pas une fonction, il se comporte comme Pas à pas principal.
-* **Sortir** - Cela reviendra à la ligne où la fonction actuelle a été appelée.
+* **Pas à pas principal** : cette opération exécute la ligne de code suivante. Si la ligne suivante est un appel de fonction, pas à pas principal exécute la fonction et s’arrête à la ligne de code suivante *après* la fonction.
+* **Pas à pas** détaillé : cette opération exécute également la ligne de code suivante. Si la ligne suivante est un appel de fonction, Pas à pas détaillé s’arrête à la première ligne de la fonction, ce qui vous permet de continuer le débogage ligne par ligne de la fonction. Si la ligne suivante n’est pas une fonction, il se comporte comme Pas à pas principal.
+* **Pas à pas sortant** : cette opération retourne à la ligne où la fonction active a été appelée.
 
 ## <a name="debugging-monos-class-libraries"></a>Débogage des bibliothèques de classes de Mono
 

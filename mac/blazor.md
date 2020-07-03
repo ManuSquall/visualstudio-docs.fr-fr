@@ -6,12 +6,13 @@ ms.author: jogallow
 ms.date: 12/17/2019
 ms.technology: vs-ide-general
 ms.assetid: D2717D3A-9225-40A8-8155-7D0143B2CA60
-ms.openlocfilehash: 978e3676d587bcd54a8e9d0b8b81f5d6c52a92bc
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.topic: how-to
+ms.openlocfilehash: ac7fcd9044aa6367f140ac4aa96e6aaf4a9f5885
+ms.sourcegitcommit: 2ce59c2ffeba5ba7f628c2e6c75cba4731deef8a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84180275"
+ms.lasthandoff: 07/03/2020
+ms.locfileid: "85939149"
 ---
 # <a name="create-blazor-web-apps"></a>Créer des applications Web éblouissantes
 
@@ -76,9 +77,9 @@ Ce dossier contient les pages Web d’un projet, qui utilisent une extension de 
 
 Ce dossier comprend des composants partagés, également à l’aide de l’extension *. Razor* . Vous verrez que cela comprend *MainLayout. Razor*, qui est utilisé pour définir une disposition commune à travers l’application. Il comprend également le composant partagé *NavMenu. Razor* , qui est utilisé sur toutes les pages. Si vous créez des composants réutilisables, ceux-ci sont placés dans le dossier **partagé** .
 
-### <a name="app-settings"></a>Paramètres d’application
+### <a name="app-settings"></a>Paramètres de l’application
 
-Le fichier *appSettings. JSON* contient des données de configuration telles que des chaînes de connexion.
+Le *appSettings.js* fichier contient des données de configuration telles que des chaînes de connexion.
 
 Pour plus d’informations sur la configuration, consultez la section [configuration dans ASP.net Guide](/aspnet/core/fundamentals/configuration/index).
 

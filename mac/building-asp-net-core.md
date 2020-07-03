@@ -5,12 +5,13 @@ author: sayedihashimi
 ms.author: sayedha
 ms.date: 05/30/2019
 ms.assetid: 771C2F8E-46BC-4280-AFE8-ED9D5C7790CE
-ms.openlocfilehash: 5600fd2f0b6d83a3bd27350a4d4f0137ea44ced2
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.topic: how-to
+ms.openlocfilehash: b0337f283fe5bb78f2f63e2f3da12eb9f2679450
+ms.sourcegitcommit: 2ce59c2ffeba5ba7f628c2e6c75cba4731deef8a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "75398281"
+ms.lasthandoff: 07/03/2020
+ms.locfileid: "85939191"
 ---
 # <a name="building-aspnet-core-applications-in-visual-studio-for-mac"></a>Création d’applications ASP.NET Core dans Visual Studio pour Mac
 
@@ -25,17 +26,17 @@ Dans ce labo, vous allez créer et explorer une application ASP.NET Core avec Vi
 > * Explorer le modèle d’hébergement, de configuration et de middleware (intergiciel) d’ASP.NET Core
 > * Déboguer une application web ASP.NET Core
 
-## <a name="prerequisites"></a>Conditions préalables requises
+## <a name="prerequisites"></a>Prérequis
 
-- [Studio visuel pour Mac](https://www.visualstudio.com/vs/visual-studio-mac)
+- [Visual Studio pour Mac](https://www.visualstudio.com/vs/visual-studio-mac)
 
 ## <a name="intended-audience"></a>Public concerné
 
 Ce labo s’adresse aux développeurs qui connaissent C#. Une expérience approfondie n’est toutefois pas nécessaire.
 
-## <a name="task-1-creating-a-new-aspnet-core-application"></a>Tâche 1 : Création d’une nouvelle application ASP.NET Core
+## <a name="task-1-creating-a-new-aspnet-core-application"></a>Tâche 1 : création d’une application de ASP.NET Core
 
-1. Lancer **Visual Studio pour Mac**.
+1. Lancez **Visual Studio pour Mac**.
 
 2. Sélectionnez **Fichier > Nouvelle solution**.
 
@@ -47,7 +48,7 @@ Ce labo s’adresse aux développeurs qui connaissent C#. Une expérience approf
 
     ![](media/netcore-image2.png)
 
-## <a name="task-2-touring-the-solution"></a>Tâche 2 : Visiter la solution
+## <a name="task-2-touring-the-solution"></a>Tâche 2 : vélo de la solution
 
 1. Le modèle par défaut génère une solution avec un seul projet ASP.NET Core nommé **CoreLab**. Développez le nœud de projet pour exposer son contenu.
 
@@ -73,11 +74,11 @@ Ce labo s’adresse aux développeurs qui connaissent C#. Une expérience approf
 
     ![](media/netcore-image8.png)
 
-7. Il existe également plusieurs fichiers de configuration qui servent à gérer le projet, ses packages et l’application au moment de l’exécution. Par exemple, la [configuration](/aspnet/core/fundamentals/configuration) d’application par défaut est stockée dans **appsettings.json**. Niché en dessous du fichier appsettings.json est les **appsettings. Fichier Development.json.** Ici, vous pouvez remplacer certains/tous ces paramètres par environnement. Visual Studio pour Mac nichera les fichiers de cette manière en utilisant la même logique que Visual Studio pour Windows, de sorte que les fichiers que vous devez accéder plus souvent sont à l’avant-garde. 
+7. Il existe également plusieurs fichiers de configuration qui servent à gérer le projet, ses packages et l’application au moment de l’exécution. Par exemple, la [configuration](/aspnet/core/fundamentals/configuration) d’application par défaut est stockée dans **appsettings.json**. Le **appsettings.Development.jsdans** le fichier est imbriqué sous le appsettings.jsfichier. Ici, vous pouvez remplacer certains de ces paramètres en fonction de l’environnement. Visual Studio pour Mac imbriquera les fichiers de cette manière à l’aide de la même logique que Visual Studio pour Windows, de sorte que les fichiers auxquels vous devez accéder plus souvent sont au niveau de la Forefront. 
 
     ![](media/netcore-build-nested.png)
 
-## <a name="task-3-understanding-how-the-application-is-hosted"></a>Tâche 3 : Comprendre comment l’application est hébergée
+## <a name="task-3-understanding-how-the-application-is-hosted"></a>Tâche 3 : comprendre comment l’application est hébergée
 
 1. À partir de l’**Explorateur de solutions**, ouvrez **Program.cs**. C’est le programme d’amorçage chargé d’exécuter votre application.
 
@@ -111,7 +112,7 @@ Ce labo s’adresse aux développeurs qui connaissent C#. Une expérience approf
 
     ![](media/netcore-image17.png)
 
-## <a name="task-4-running-and-debugging-the-application"></a>Tâche 4 : Exécution et débogage de l’application
+## <a name="task-4-running-and-debugging-the-application"></a>Tâche 4 : exécution et débogage de l’application
 
 1. Dans l’**Explorateur de solutions**, cliquez avec le bouton droit sur le nœud de projet **CoreLab** et sélectionnez **Options**.
 
@@ -125,7 +126,7 @@ Ce labo s’adresse aux développeurs qui connaissent C#. Une expérience approf
 
     ![](media/netcore-image19.png)
 
-5. Appuyez sur **F5** pour construire et exécuter l’application. Vous pouvez également sélectionner **Run > Start Debugging** (Exécuter > Démarrer le débogage).
+5. Appuyez sur **F5** pour générer et exécuter l’application. Vous pouvez également sélectionner **Run > Start Debugging** (Exécuter > Démarrer le débogage).
 
 6. Visual Studio pour Mac lance deux fenêtres. La première est une fenêtre de console qui vous donne un aperçu de l’application serveur auto-hébergée.
 
@@ -171,7 +172,7 @@ Ce labo s’adresse aux développeurs qui connaissent C#. Une expérience approf
 
 18. Fermez la fenêtre de navigateur de test et la console d’application. Cette action arrête également le débogage.
 
-## <a name="task-5-application-startup-configuration"></a>Tâche 5 : Configuration de démarrage d’application
+## <a name="task-5-application-startup-configuration"></a>Tâche 5 : configuration du démarrage de l’application
 
 1. Dans l’**Explorateur de solutions**, ouvrez **Startup.cs**. Vous remarquerez peut-être des soulignements ondulés rouges pendant que les packages NuGet sont restaurés en arrière-plan et que le compilateur Roslyn génère une image complète des dépendances du projet.
 
@@ -197,7 +198,7 @@ Ce labo s’adresse aux développeurs qui connaissent C#. Une expérience approf
 
     ![](media/netcore-image35.png)
 
-## <a name="task-6-inserting-application-middleware"></a>Tâche 6: Insertion d’application middleware
+## <a name="task-6-inserting-application-middleware"></a>Tâche 6 : insertion d’un intergiciel d’application
 
 1. Recherchez la méthode **Configure** dans la classe **Startup**. C’est là que sont configurés tous les middlewares afin de pouvoir être insérés dans le pipeline HTTP et utilisés pour traiter chaque demande adressée au serveur. Bien que cette méthode soit appelée une seule fois, le contenu des méthodes (telles que la méthode **UseStaticFiles**) peut être exécuté à chaque demande.
 

@@ -6,12 +6,13 @@ ms.author: johmil
 ms.date: 5/13/2020
 ms.technology: vs-ide-debug
 ms.assetid: BB7A084D-9AC2-48B5-8076-6C8518796BBA
-ms.openlocfilehash: a81eb9bbae905599cc5d953f27ac3a8d06441f8b
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.topic: overview
+ms.openlocfilehash: 09a761a8269fa40c3fab49a34b3e43a7f0ec63cd
+ms.sourcegitcommit: 2ce59c2ffeba5ba7f628c2e6c75cba4731deef8a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84183979"
+ms.lasthandoff: 07/03/2020
+ms.locfileid: "85939075"
 ---
 # <a name="debugging-with-visual-studio-for-mac"></a>Débogage avec Visual Studio pour Mac
 
@@ -89,7 +90,7 @@ Voici les quatre boutons :
 
 ## <a name="change-which-statement-is-executed-next"></a>Modifier l’instruction qui est exécutée ensuite
 
-Pendant que le débogueur est suspendu, une flèche dans la marge indique la ligne de code qui sera exécutée ensuite. Vous pouvez cliquer et faire glisser la flèche vers une autre ligne de code pour modifier l’instruction qui sera exécutée. Pour obtenir la même chose, vous pouvez également cliquer avec le bouton droit sur une ligne de code et sélectionner **définir l’instruction suivante** dans le menu contextuel.
+Lorsque le débogueur est suspendu, une flèche dans la marge indique la ligne de code qui sera exécutée ensuite. Vous pouvez cliquer et faire glisser la flèche vers une autre ligne de code afin d’exécuter une autre instruction. Pour obtenir la même chose, vous pouvez également cliquer avec le bouton droit sur une ligne de code et sélectionner **définir l’instruction suivante** dans le menu contextuel.
 
 ![Flèche glisser-déplacer pour définir l’instruction suivante](media/debugger-drag-setnextstatement.gif)
 

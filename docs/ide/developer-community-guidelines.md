@@ -8,12 +8,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 53b29cc0b6af8fed9ee64a92b2d43e29062b498a
-ms.sourcegitcommit: 9a9c61ca115c22d33bb902153eb0853789c7be4c
+ms.openlocfilehash: 5189278f8efe42e6e7916562e7ce4f5d6a964061
+ms.sourcegitcommit: 2ce59c2ffeba5ba7f628c2e6c75cba4731deef8a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "85837752"
+ms.lasthandoff: 07/03/2020
+ms.locfileid: "85938260"
 ---
 # <a name="developer-community-guidelines"></a>Consignes Developer Community
 
@@ -91,7 +91,7 @@ Suivez la progression de votre suggestion de fonctionnalité en référençant l
 
 Pour que la conversation reste claire et transparente, limitez la discussion à l’anglais et gardez les choses pertinentes pour le problème. Envisagez d’autres personnes et essayez toujours d’être courtois et professionnel.
 
-Pour plus d’informations, consultez le [Code de la communauté Microsoft](https://answers.microsoft.com/page/codeofconduct).
+Pour plus d’informations, consultez le [Code de la communauté Microsoft](https://answers.microsoft.com/en-us/page/codeofconduct).
 
 Toute violation de l’étiquette de discussion peut entraîner la suppression du commentaire et éventuellement interdire l’utilisateur.
 

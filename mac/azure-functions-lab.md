@@ -1,17 +1,18 @@
 ---
-title: 'Tutoriel : Azure Functions'
+title: 'Tutoriel : Azure Functions'
 description: Utilisation des fonctions Azure dans Visual Studio pour Mac.
 author: sayedihashimi
 ms.author: sayedha
 ms.date: 05/06/2018
 ms.technology: vs-ide-install
 ms.assetid: 38FD2070-5151-482E-B0A9-993715128736
-ms.openlocfilehash: 1a3c4f3283ab10cfc4f8ee8364113dcb7f075af8
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.topic: tutorial
+ms.openlocfilehash: 99373d7da8c7f83c8703b237ff83c63f9d1b6a53
+ms.sourcegitcommit: 2ce59c2ffeba5ba7f628c2e6c75cba4731deef8a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "75398174"
+ms.lasthandoff: 07/03/2020
+ms.locfileid: "85939094"
 ---
 # <a name="tutorial-getting-started-with-azure-functions"></a>Tutoriel : Bien démarrer avec Azure Functions
 
@@ -24,14 +25,14 @@ Dans cet atelier, vous allez apprendre à créer des fonctions Azure à l’aide
 > * Intégrer des fonctions à des ressources de stockage web et Azure
 > * Orchestrer un flux de travail impliquant plusieurs fonctions Azure
 
-## <a name="requirements"></a>Spécifications
+## <a name="requirements"></a>Configuration requise
 
 - Visual Studio pour Mac 7.5 ou ultérieur
-- Un abonnement Azure (disponible gratuitement à partir de [https://azure.com/free](https://azure.com/free?ref=visualstudio)).
+- Un abonnement Azure (disponible gratuitement [https://azure.com/free](https://azure.com/free?ref=visualstudio) ).
 
 ## <a name="exercise-1-creating-an-azure-functions-project"></a>Exercice 1 : Création d’un projet Azure Functions
 
-1. Lancer **Visual Studio pour Mac**.
+1. Lancez **Visual Studio pour Mac**.
 
 2. Sélectionnez **Fichier > Nouvelle solution**.
 
@@ -54,7 +55,7 @@ Dans cet atelier, vous allez apprendre à créer des fonctions Azure à l’aide
 
 ## <a name="exercise-2-creating-an-azure-storage-account"></a>Exercice 2 : Création d’un compte de stockage Azure
 
-1. Connectez-vous à votre [https://portal.azure.com](https://portal.azure.com)compte Azure à .
+1. Connectez-vous à votre compte Azure à l’adresse [https://portal.azure.com](https://portal.azure.com) .
 
 1. Sous la section **Favoris** située à gauche de l’écran, sélectionnez **Comptes de stockage** :
 
@@ -68,7 +69,7 @@ Dans cet atelier, vous allez apprendre à créer des fonctions Azure à l’aide
 
     ![Détails du nouveau compte de stockage](media/azure-functions-lab-image6.png)
 
-1. Cliquez sur **Créer**. La création d’un compte de stockage peut prendre quelques minutes. Vous recevrez une notification une fois l’opération terminée.
+1. Cliquez sur **Créer**. La création d’un compte de stockage peut prendre quelques minutes. Vous recevrez une notification une fois l’opération terminée.
 
     ![Notification de la réussite du déploiement](media/azure-functions-lab-image7.png)
 
@@ -88,7 +89,7 @@ Dans cet atelier, vous allez apprendre à créer des fonctions Azure à l’aide
 
 ## <a name="example-3-creating-and-debugging-an-azure-function"></a>Exemple 3 : Création et débogage d’une fonction Azure
 
-1. Vous êtes prêt à ajouter du code. Quand vous utilisez une bibliothèque de classes .NET, les fonctions Azure sont ajoutées comme méthodes statiques. De **Solution Pad**, cliquez à droite sur le nœud du projet **AzureFunctions** et **sélectionnez Ajouter > Fonction Add**:
+1. Vous êtes prêt à ajouter du code. Quand vous utilisez une bibliothèque de classes .NET, les fonctions Azure sont ajoutées comme méthodes statiques. Dans **panneau solutions**, cliquez avec le bouton droit sur le nœud de projet **AzureFunctions** et sélectionnez **Ajouter > fonction Ajouter**:
 
     ![Option Ajouter une fonction](media/azure-functions-lab-image11.png)
 
@@ -126,7 +127,7 @@ Dans cet atelier, vous allez apprendre à créer des fonctions Azure à l’aide
 
     ![Nouvelle méthode Run avec l’attribut FunctionName mis en surbrillance](media/azure-functions-lab-image13.png)
 
-1. Ensuite, la méthode est marquée comme étant une méthode publique statique (**public static**). Cette étape est obligatoire. Vous remarquerez également que la valeur de retour est un **int**. Sauf indication contraire à l’aide d’attributs de méthode, toute valeur de retour non vide d’une fonction Azure est retournée au client sous forme de texte. Par défaut, elle est retournée au format **XML**, mais vous pourrez la retourner au format **JSON** plus loin dans cet atelier.
+1. Ensuite, la méthode est marquée comme étant une méthode publique statique (**public static**). Cette étape est obligatoire. Vous remarquerez également que la valeur de retour est un **entier**. Sauf spécification contraire à l’aide des attributs de méthode, toute valeur de retour non void d’une fonction Azure est retournée au client sous forme de texte. Par défaut, elle est retournée au format **XML**, mais vous pourrez la retourner au format **JSON** plus loin dans cet atelier.
 
     ![Nouvelle méthode Run avec mise en surbrillance de l’initialisation de la méthode](media/azure-functions-lab-image14.png)
 
@@ -162,7 +163,7 @@ Dans cet atelier, vous allez apprendre à créer des fonctions Azure à l’aide
 
 1. Supprimez le point d’arrêt en suivant la même méthode que celle utilisée plus haut pour l’ajouter (cliquez sur la marge ou sélectionnez la ligne et appuyez sur **F9**).
 
-1. Appuyez sur **F5** pour continuer à courir.
+1. Appuyez sur **F5** pour continuer l’exécution.
 
 1. Le navigateur affiche le résultat XML de la méthode. Comme prévu, l’opération d’addition codée en dur produit une somme plausible. Si vous voyez seulement « 3 » dans Safari, accédez à **Safari > Préférences > Avancées** et cochez la case **Afficher le menu Développement dans la barre de menus**. Ensuite, rechargez la page.
 
@@ -298,7 +299,7 @@ Dans cet atelier, vous allez apprendre à créer des fonctions Azure à l’aide
 
     ![URL pour les fonctions HTTP](media/azure-functions-lab-image31.png)
 
-1. Retournez la fenêtre **http://localhost:7071/api/Adder/3/5**du navigateur et naviguez vers .
+1. Retournez la fenêtre du navigateur et accédez à **http://localhost:7071/api/Adder/3/5** .
 
 1. La méthode aboutit une fois de plus, tirant (pull) les paramètres du chemin et produisant une somme.
 
@@ -347,7 +348,7 @@ Les services que vous générez sont souvent beaucoup plus complexes que ceux qu
 
 1. Appuyez sur **F5** pour générer et exécuter le projet.
 
-1. Dans l’onglet navigateur, naviguez vers **http://localhost:7071/api/Process/4/6**. Un autre message est placé dans la file d’attente, ce qui doit aboutir à l’ajout d’une nouvelle ligne à la table.
+1. Dans l’onglet navigateur, accédez à **http://localhost:7071/api/Process/4/6** . Un autre message est placé dans la file d’attente, ce qui doit aboutir à l’ajout d’une nouvelle ligne à la table.
 
 1. Revenez au **Terminal** et observez la requête entrante **4 + 6**.
 
@@ -380,11 +381,11 @@ Les services que vous générez sont souvent beaucoup plus complexes que ceux qu
 
 1. Appuyez sur **F5** pour générer et exécuter le projet.
 
-1. Dans l’onglet navigateur, **http://localhost:7071/api/Process/4/6**actualisez l’URL à . Étant donné que la ligne de table pour cet enregistrement existe, elle doit être retournée immédiatement et sans erreur. Comme il n’y a pas de sortie HTTP, vous pouvez voir la sortie dans le Terminal.
+1. Dans l’onglet navigateur, actualisez l’URL à l’adresse **http://localhost:7071/api/Process/4/6** . Étant donné que la ligne de table pour cet enregistrement existe, elle doit être retournée immédiatement et sans erreur. Comme il n’y a pas de sortie HTTP, vous pouvez voir la sortie dans le Terminal.
 
     ![Sortie du Terminal montrant que la ligne de la table existe déjà](media/azure-functions-lab-image33.png)
 
-1. Mettre à jour l’URL pour refléter **http://localhost:7071/api/Process/5/7**une combinaison qui n’a pas encore été testée, comme . Notez le message dans le Terminal qui indique que la ligne de table est introuvable (comme prévu).
+1. Mettez à jour l’URL pour refléter une combinaison non encore testée, telle que **http://localhost:7071/api/Process/5/7** . Notez le message dans le Terminal qui indique que la ligne de table est introuvable (comme prévu).
 
     ![Sortie du Terminal montrant un nouveau processus](media/azure-functions-lab-image34.png)
 

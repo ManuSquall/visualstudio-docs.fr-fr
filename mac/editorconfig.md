@@ -6,12 +6,13 @@ ms.author: cobey
 ms.date: 05/06/2018
 ms.technology: vs-ide-install
 ms.assetid: 26A0DE31-2FBF-4E1B-99FB-083111AA1680
-ms.openlocfilehash: 6f6241c114d636cc8cb01cf5c4bf9ba2b5106701
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.topic: how-to
+ms.openlocfilehash: adeab06341c0691bdb902a3bb8a813ac38d786f6
+ms.sourcegitcommit: 2ce59c2ffeba5ba7f628c2e6c75cba4731deef8a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "73716889"
+ms.lasthandoff: 07/03/2020
+ms.locfileid: "85938523"
 ---
 # <a name="creating-and-editing-a-custom-editorconfig-file"></a>Création et modification d’un fichier EditorConfig personnalisé
 
@@ -79,13 +80,13 @@ Si votre projet ou solution contient déjà un fichier `.editorconfig`, aucune i
 
 Vous pouvez réutiliser un fichier `.editorconfig` existant dans votre projet. Pour ajouter un fichier existant, effectuez ce qui suit :
 
-1. Cliquez à droite sur le dossier que vous souhaitez l’ajouter et sélectionnez **Ajouter > Ajouter des fichiers**.
+1. Cliquez avec le bouton droit sur le dossier auquel vous souhaitez l’ajouter, puis sélectionnez **ajouter > ajouter des fichiers**.
 
 2. Accédez au répertoire du fichier nécessaire.
 
 3. Les fichiers qui commencent par `.` (par exemple `.editorconfig`) sont des fichiers masqués dans macOS. Vous devez donc appuyer sur **Commande + Maj + .** pour rendre le fichier `.editorconfig` visible.
 
-4. Sélectionnez `.editorconfig` le fichier et cliquez sur **Open**:
+4. Sélectionnez le `.editorconfig` fichier, puis cliquez sur **ouvrir**:
 
     ![fenêtre d’ajout de nouveau fichier](media/editorconfig-image3b.png)
 

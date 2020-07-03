@@ -5,12 +5,13 @@ author: heiligerdankgesang
 ms.author: dominicn
 ms.date: 05/06/2018
 ms.assetid: 4071689D-1C21-42D7-8963-550E7BCB4B67
-ms.openlocfilehash: 94bb56fba0b90f29c291bc2c4b95976810dd21c6
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.topic: how-to
+ms.openlocfilehash: 14f1b08464f1bc0f9e1db8a4e7ddbad23a84573e
+ms.sourcegitcommit: 2ce59c2ffeba5ba7f628c2e6c75cba4731deef8a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "67692960"
+ms.lasthandoff: 07/03/2020
+ms.locfileid: "85938491"
 ---
 # <a name="adding-and-removing-project-items"></a>Ajout et suppression d'éléments de projet
 
@@ -24,7 +25,7 @@ La boîte de dialogue Nouveau fichier apparaît et fournit des modèles de fichi
 
 ## <a name="adding-existing-files"></a>Ajout de fichiers existants
 
-Vous pouvez ajouter des fichiers existants à votre projet en cliquant à droite sur le nœud du projet et en sélectionnant **Ajouter > Ajouter des fichiers...**. Alternativement, pour ajouter un dossier entier, sélectionnez **Ajouter > Ajouter le dossier existant...**. Cela affiche le navigateur de fichiers, qui vous permet de rechercher votre système pour l’élément requis à ajouter.
+Vous pouvez ajouter des fichiers existants à votre projet en cliquant avec le bouton droit sur le nœud du projet et en sélectionnant **ajouter > ajouter des fichiers...**. Sinon, pour ajouter un dossier entier, sélectionnez **ajouter > ajouter un dossier existant...**. L’Explorateur de fichiers s’affiche, ce qui vous permet de Rechercher l’élément requis à ajouter à votre système.
 
 ## <a name="removing-items"></a>Suppression d’éléments
 
