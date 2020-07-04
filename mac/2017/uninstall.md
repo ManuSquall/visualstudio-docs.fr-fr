@@ -6,12 +6,13 @@ ms.author: dominicn
 ms.date: 05/06/2018
 ms.technology: vs-ide-install
 ms.assetid: 4EB95F75-BC2E-4982-9564-2975805712D8
-ms.openlocfilehash: ad0be8546b88fbd01f54faf7eb00f71ddd6aa632
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.topic: how-to
+ms.openlocfilehash: f8452094f0059a1ffa4421d1ccd02ee244559c72
+ms.sourcegitcommit: 5335a9864d5747bc917ed28d4ebeade3076b10e7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "76892153"
+ms.lasthandoff: 07/03/2020
+ms.locfileid: "85950340"
 ---
 # <a name="uninstalling-visual-studio-for-mac"></a>Désinstallation de Visual Studio pour Mac
 

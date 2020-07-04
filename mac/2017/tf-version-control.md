@@ -6,12 +6,13 @@ ms.author: dominicn
 ms.date: 06/25/2019
 ms.technology: vs-ide-general
 ms.assetid: 52D3D26A-4D01-4FD1-AAA1-AE7D7BD39746
-ms.openlocfilehash: b7b160d58cead031a0eece2a522501d8c2060bd2
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.topic: troubleshooting
+ms.openlocfilehash: 33d00d853c7496e23cb5cd97a0b9abbe05e3accc
+ms.sourcegitcommit: 5335a9864d5747bc917ed28d4ebeade3076b10e7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "74985197"
+ms.lasthandoff: 07/03/2020
+ms.locfileid: "85950586"
 ---
 # <a name="connecting-to-team-foundation-version-control"></a>Connexion à Team Foundation Version Control
 
@@ -20,7 +21,7 @@ ms.locfileid: "74985197"
 >
 > Si vous avez précédemment utilisé la version de préversion de l’extension TFVC pour Visual Studio pour Mac, elle n’est plus prise en charge lors de la mise à niveau vers Visual Studio 2019 pour Mac.
 
-Azure Repos fournit deux modèles de contrôle de version : [Git](/azure/devops/repos/git/?view=azure-devops), un système de contrôle de version distribué, et [Team Foundation Version Control](/azure/devops/repos/tfvc/index?view=azure-devops) (TFVC), un système de contrôle de version centralisé.
+Azure Repos fournit deux modèles de contrôle de version : [git](/azure/devops/repos/git/?view=azure-devops), système de gestion de version distribué et [Team Foundation version Control](/azure/devops/repos/tfvc/index?view=azure-devops) (TFVC), un système de gestion de version centralisé.
 
 Visual Studio pour Mac assure une prise en charge complète des référentiels Git, mais des solutions de contournement sont nécessaires pour pouvoir travailler avec TFVC. Si vous utilisez actuellement TFVC pour la gestion de versions, voici quelques solutions qui vous permettront d’accéder à votre code source hébergé dans TFVC :
 
@@ -30,7 +31,7 @@ Visual Studio pour Mac assure une prise en charge complète des référentiels G
 
 La suite de cet article décrit les options ci-dessus.
 
-## <a name="requirements"></a>Spécifications
+## <a name="requirements"></a>Configuration requise
 
 * Visual Studio Community, Professional ou Enterprise pour Mac version 7.8 et ultérieure.
 * Azure DevOps Services, Team Foundation Server 2013 (ou version ultérieure) ou Azure DevOps Server 2018 (ou version ultérieure).
@@ -124,7 +125,7 @@ Suivez les invites pour installer l’extension. Une fois qu’elle est install�
 
 ### <a name="updating-the-extension"></a>Mise à jour de l’extension
 
-Les mises à jour de l’extension TFVC sont effectuées régulièrement. Pour accéder aux mises à jour, choisissez **Visual Studio > Extensions...** à partir du menu et sélectionnez **l’onglet Mises à jour.** Sélectionnez l’extension de la liste et appuyez sur le bouton **Mise à jour** :
+Les mises à jour de l’extension TFVC sont effectuées régulièrement. Pour accéder aux mises à jour, sélectionnez **Visual Studio > extensions...** dans le menu, puis sélectionnez l’onglet **mises à jour** . Sélectionnez l’extension dans la liste et appuyez sur le bouton **mettre à jour** :
 
 Appuyez sur **Installer** dans la boîte de dialogue suivante pour désinstaller l’ancien package et installer le nouveau.
 
@@ -146,7 +147,7 @@ Quand vous sélectionnez un projet qui est hébergé dans Azure Repos, vous ête
 
 #### <a name="tfs-authentication"></a>Authentification TFS
 
-Pour vous connecter à TFS, entrez les détails du serveur et les informations d’identification de votre compte. Entrez un domaine pour utiliser l’authentification NTLM, sinon laissez vide pour utiliser l’authentification de base. Sélectionnez **Ajouter un serveur** :
+Pour vous connecter à TFS, entrez les détails du serveur et les informations d’identification de votre compte. Entrez un domaine pour utiliser l’authentification NTLM, sinon laissez vide pour utiliser l’authentification de base. Sélectionnez **Ajouter un serveur**:
 
 ![Se connecter à un serveur TFS](media/tfvc-login.png)
 
@@ -237,7 +238,7 @@ Une fois votre espace de travail configuré, vous pouvez le changer ou le suppri
 Vous pouvez utiliser les options suivantes pour vous authentifier auprès d’un serveur :
 
 - OAuth
-- De base
+- Basic
 - Ntlm
 
 Pour utiliser l’authentification de base, il est nécessaire d’activer **Informations d’identification d’authentification alternatives** dans Azure DevOps Services, en suivant les étapes ci-dessous :

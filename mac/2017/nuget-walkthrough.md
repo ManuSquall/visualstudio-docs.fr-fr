@@ -6,12 +6,13 @@ ms.author: dominicn
 ms.date: 04/14/2017
 ms.assetid: 5C800815-0B13-4B27-B017-95FCEF1A0EA2
 ms.custom: video
-ms.openlocfilehash: 728a225f4a1d14af986039cae7cb2fc8a493ecc9
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.topic: how-to
+ms.openlocfilehash: 58d749a1d014288754dcd9eb7e620730933d742a
+ms.sourcegitcommit: 5335a9864d5747bc917ed28d4ebeade3076b10e7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "74983302"
+ms.lasthandoff: 07/03/2020
+ms.locfileid: "85950409"
 ---
 # <a name="include-a-nuget-package-in-your-project"></a>Inclure un package NuGet dans votre projet
 
@@ -23,7 +24,7 @@ Cet article explique comment inclure un package NuGet dans un projet. De plus, i
 
 Pour illustrer les fonctionnalités des packages NuGet, nous allons d’abord créer une application et y ajouter un package. Nous présenterons ensuite les fonctionnalités de l’IDE qui aident à gérer les packages.
 
-## <a name="create-a-new-project"></a>Création d'un projet
+## <a name="create-a-new-project"></a>Créer un projet
 
 Pour commencer, créez un projet nommé `HelloNuget`, comme illustré ci-dessous. Cet exemple montre le modèle Application avec affichage unique pour iOS, mais tous les types de projet pris en charge fonctionnent également :
 
@@ -31,15 +32,15 @@ Pour commencer, créez un projet nommé `HelloNuget`, comme illustré ci-dessous
 
 ## <a name="adding-a-package"></a>Ajout d’un package
 
-Avec l’ouverture du projet en Visual Studio pour Mac, cliquez à droite sur le dossier **Paquets** dans le **plate-forme de solution** et sélectionnez **Ajouter des paquets**:
+Une fois le projet ouvert dans Visual Studio pour Mac, cliquez avec le bouton droit sur le dossier **packages** dans le **panneau solutions** et sélectionnez **Ajouter des packages**:
 
 ![Action contextuelle Ajouter un nouveau package NuGet](media/nuget-walkthrough-PackagesMenu.png)
 
-Cela lance la fenêtre **Add Packages.** Vérifiez que la liste déroulante Source est définie sur `nuget.org` :
+La fenêtre **Ajouter des packages** s’ouvre. Vérifiez que la liste déroulante Source est définie sur `nuget.org` :
 
 ![Liste déroulante Source](media/nuget-walkthrough-Source.png)
 
-Lorsque la fenêtre s’ouvre, il charge une liste de paquets à partir de la source de paquet par défaut: nuget.org. Les premiers résultats ressemblent à ceci :
+Quand la fenêtre s’ouvre, elle charge une liste de packages à partir de la source de package par défaut : nuget.org. Les résultats initiaux ressemblent à ceci :
 
 ![Répertorier les packages NuGet](media/nuget-walkthrough-AddPackages1.png)
 
@@ -93,9 +94,9 @@ Vous pouvez aussi cliquer avec le bouton droit sur des packages individuels pour
 
 ## <a name="adding-package-sources"></a>Ajout de sources de packages
 
-Les colis disponibles à l’installation sont initialement récupérés à partir de nuget.org. Cependant, vous pouvez ajouter d’autres emplacements de paquets à Visual Studio pour Mac. Ceci peut être pratique pour tester vos propres packages NuGet en cours de développement, ou pour utiliser un serveur NuGet privé au sein de votre entreprise ou organisation.
+Les packages disponibles pour l’installation sont initialement récupérés à partir de nuget.org. Toutefois, vous pouvez ajouter d’autres emplacements de package à Visual Studio pour Mac. Ceci peut être pratique pour tester vos propres packages NuGet en cours de développement, ou pour utiliser un serveur NuGet privé au sein de votre entreprise ou organisation.
 
-Dans Visual Studio for Mac, naviguez vers **Visual Studio > Préférences > NuGet > Sources** pour afficher et modifier la liste des sources de paquets. Notez que les sources peuvent être un serveur distant (spécifié par une URL) ou un répertoire local.
+Dans Visual Studio pour Mac, accédez à **Visual Studio > préférences > les sources de > NuGet** pour afficher et modifier la liste des sources de packages. Notez que les sources peuvent être un serveur distant (spécifié par une URL) ou un répertoire local.
 
 ![Sources de packages](media/nuget-walkthrough-PackageSource.png)
 
@@ -107,7 +108,7 @@ Vous pouvez sélectionner différentes sources lors de la recherche de packages�
 
 ![Ajouter des sources de packages](media/nuget-walkthrough-PackageSource3.png)
 
-## <a name="version-control"></a>Contrôle de version
+## <a name="version-control"></a>Gestion de version
 
 La documentation de NuGet traite de [l’utilisation de NuGet sans validation des packages auprès de contrôle de code source](/nuget/consume-packages/packages-and-source-control). Si vous préférez ne pas stocker les fichiers binaires et les informations non utilisées dans le contrôle de code source, vous pouvez configurer Visual Studio pour Mac pour restaurer automatiquement les packages à partir du serveur. En d’autres termes, quand un développeur récupère le projet à partir du contrôle de code source pour la première fois, Visual Studio pour Mac télécharge et installe automatiquement les packages nécessaires.
 

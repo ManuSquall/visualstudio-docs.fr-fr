@@ -5,12 +5,13 @@ author: therealjohn
 ms.author: johmil
 ms.date: 06/18/2019
 ms.assetid: 339F6051-5F90-48DC-8237-EBBC8A03A32B
-ms.openlocfilehash: 31fb7fa4c2a87820285809d24b98fe8e59a6be01
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.topic: overview
+ms.openlocfilehash: e40d9640ca2e62148e4ad166845d8f59854367ff
+ms.sourcegitcommit: 5335a9864d5747bc917ed28d4ebeade3076b10e7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "73714480"
+ms.lasthandoff: 07/03/2020
+ms.locfileid: "85950666"
 ---
 # <a name="xamarin-mobile-app-development"></a>Développement d’applications mobiles Xamarin
 
@@ -18,11 +19,11 @@ La prise en charge poussée de [Xamarin](/xamarin) permet de développer des exp
 
 ## <a name="xamarinforms"></a>Xamarin.Forms
 
-XAML Hot Reload pour Xamarin.Forms est intégré dans Visual Studio pour Mac dans la version 8.3 et plus tard. Avec cette fonctionnalité, les modifications activées sont instantanément reflétées dans votre application en cours d’exécution chaque fois que vous enregistrez le fichier.
+Le rechargement à chaud XAML pour Xamarin. Forms est intégré à Visual Studio pour Mac dans la version 8,3 et les versions ultérieures. Lorsque cette fonctionnalité est activée, les modifications sont instantanément reflétées dans votre application en cours d’exécution chaque fois que vous enregistrez le fichier.
 
-XAML Hot Reload peut être activé en vérifiant la case **à cocher Enable Xamarin Hot Reload** à **Visual Studio > Préférences > Projets > Xamarin Hot Reload**.
+Vous pouvez activer le rechargement à chaud XAML en activant la case à cocher **activer le rechargement à chaud Xamarin** dans **Visual Studio > préférences > projets > le rechargement à chaud Xamarin**.
 
-Pour plus d’informations sur Hot Reload, consultez le [guide XAML Hot Reload for Xamarin.Forms](/xamarin/xamarin-forms/xaml/hot-reload) dans la documentation.
+Pour plus d’informations sur le rechargement à chaud, consultez le [Guide de rechargement à chaud XAML pour Xamarin. Forms](/xamarin/xamarin-forms/xaml/hot-reload) dans la documentation.
 
 ## <a name="android"></a>Android
 

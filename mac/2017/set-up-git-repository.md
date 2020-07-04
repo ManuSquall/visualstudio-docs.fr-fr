@@ -5,12 +5,13 @@ author: heiligerdankgesang
 ms.author: dominicn
 ms.date: 02/15/2018
 ms.assetid: E992FA1D-B2AD-4A28-ADC6-47E4FC471060
-ms.openlocfilehash: e6dbe3b04a39a1ffd9a6e1b8f241b497ba8a6563
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.topic: how-to
+ms.openlocfilehash: 1d381bbfd0e83008b962968816c77f540e6a52f5
+ms.sourcegitcommit: 5335a9864d5747bc917ed28d4ebeade3076b10e7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "74984847"
+ms.lasthandoff: 07/03/2020
+ms.locfileid: "85950458"
 ---
 # <a name="set-up-a-git-repository"></a>Configurer un dépôt Git
 
@@ -62,7 +63,7 @@ Si vous avez un projet qui _n’est pas_ déjà dans la gestion de versions, eff
 
     Il est également possible d’utiliser le protocole SSH pour la connexion à Git.
 
-5. Pour tenter de publier l’application sur Git, sélectionnez le référentiel et assurez-vous que les champs de nom du **module** et de texte **de message** sont complétés :
+5. Pour tenter de publier l’application sur git, sélectionnez le référentiel et assurez-vous que les champs **nom du module** et texte du **message** sont renseignés :
 
     ![Essayer de publier le projet sur Git](media/version-control-git7.png)
 
@@ -131,7 +132,7 @@ Visual Studio pour Mac enverra désormais les modifications à votre dépôt dis
 
 Vous serez probablement obligé d’utiliser un dépôt GitHub qui existe uniquement à un emplacement distant, et non sur votre machine locale. Visual Studio pour Mac vous permet d’extraire ce dépôt rapidement. Suivez les étapes ci-dessous pour le cloner sur votre ordinateur :
 
-1. Dans la barre de menu, sélectionnez **Contrôle de version > Checkout**:
+1. Dans la barre de menus, sélectionnez **contrôle de Version > Checkout**:
 
 2. L’onglet **Se connecter au référentiel** s’affiche :
 
@@ -141,7 +142,7 @@ Vous serez probablement obligé d’utiliser un dépôt GitHub qui existe unique
 
     ![url github affichée](media/version-control-git14.png)
 
-4. Remplacez tout le texte dans le champ **d’entrée DE l’URL** dans l’onglet **Connect to Repository.** Cela remplira la plupart des autres champs dans cet onglet pour vous, comme illustré dans l’image à l’étape #2.
+4. Remplacez tout le texte dans le champ d’entrée d' **URL** sous l’onglet **se connecter au référentiel** . La plupart des autres champs de cet onglet sont renseignés pour vous, comme illustré dans l’image de l’étape #2.
 
 5. Entrez le répertoire dans lequel vous souhaitez cloner le dépôt et appuyez sur **Extraire**.
 

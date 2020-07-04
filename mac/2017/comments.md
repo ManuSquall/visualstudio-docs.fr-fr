@@ -5,12 +5,13 @@ author: heiligerdankgesang
 ms.author: dominicn
 ms.date: 05/06/2018
 ms.assetid: 0FE5E929-1846-4F48-B5E3-70990FAF9504
-ms.openlocfilehash: 038c2bf7205ccc642d613893635b9323afe613b9
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.topic: how-to
+ms.openlocfilehash: 44eee75b4803b4317bb7d3cd02cb19b55f41a067
+ms.sourcegitcommit: 5335a9864d5747bc917ed28d4ebeade3076b10e7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "74982649"
+ms.lasthandoff: 07/03/2020
+ms.locfileid: "85949991"
 ---
 # <a name="comments"></a>Commentaires
 
@@ -30,7 +31,7 @@ Vous pouvez utiliser ces méthodes pour ajouter et supprimer des marques de comm
 
 Les commentaires sont également utiles pour documenter le code à l’attention des développeurs susceptibles d’intervenir dessus. Ils se présentent généralement sous la forme de commentaires multilignes, qui sont ajoutés de la façon suivante dans chaque langage :
 
-**C #**
+**C#**
 
 ```csharp
 /*
@@ -39,7 +40,7 @@ Les commentaires sont également utiles pour documenter le code à l’attention
 */
 ```
 
-**F #**
+**F#**
 
 ```fsharp
 (*

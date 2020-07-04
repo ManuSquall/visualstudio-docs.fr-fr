@@ -6,12 +6,13 @@ ms.author: jomatthi
 ms.date: 09/02/2019
 ms.technology: vs-ide-general
 ms.assetid: 52D3D26A-4D01-4FD1-AAA1-AE7D7BD39746
-ms.openlocfilehash: e56aec03aabe818731c65acb30eafcc18f170ac3
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.topic: troubleshooting
+ms.openlocfilehash: c51f3cd50598cd0c33b019c09f95554cc5f9058b
+ms.sourcegitcommit: 5335a9864d5747bc917ed28d4ebeade3076b10e7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "73714512"
+ms.lasthandoff: 07/03/2020
+ms.locfileid: "85950493"
 ---
 # <a name="does-visual-studio-for-mac-support-team-foundation-version-control"></a>Visual Studio pour Mac prend-il en charge Team Foundation Version Control ?
 
@@ -21,7 +22,7 @@ ms.locfileid: "73714512"
 
 ## <a name="alternative-version-control-options-in-visual-studio-for-mac"></a>Options Version Control alternatives dans Visual Studio pour Mac
 
-Pour la meilleure expérience de contrôle de version sur macOS, nous vous recommandons d’utiliser **Git** au lieu de Team Foundation Version Control (TFVC). 
+Pour une expérience de contrôle de version optimale sur macOS, nous vous recommandons d’utiliser **git** au lieu de Team Foundation version Control (TFVC). 
 
 Git est pris en charge dans Visual Studio pour Mac ; il s’agit de l’option par défaut pour les référentiels hébergés dans Team Foundation Server (TFS)/Azure DevOps. Pour en savoir plus sur Git avec TFS/Azure DevOps, consultez le guide [Configurer un référentiel Git](/visualstudio/mac/set-up-git-repository).
 
@@ -29,14 +30,14 @@ Git est pris en charge dans Visual Studio pour Mac ; il s’agit de l’option p
 
 Bien que Visual Studio pour Mac ne prenne pas en charge TFVC officiellement, le reste de ce guide fournit des solutions de contournement pour travailler avec TFVC sur macOS. Si vous utilisez actuellement TFVC pour la gestion de versions, voici quelques solutions qui vous permettront d’accéder à votre code source hébergé dans TFVC :
 
-* Option 1. [Utilisez Visual Studio Code et l’extension Azure Repos, pour une interface utilisateur graphique](#use-visual-studio-code-and-the-azure-repos-extension)
+* Option 1. [Utiliser Visual Studio Code et l’extension Azure Repos pour une interface utilisateur graphique](#use-visual-studio-code-and-the-azure-repos-extension)
 * Option 2. [Se connecter au référentiel avec le client en ligne de commande Team Explorer Everywhere (TEE-CLC)](#connecting-using-the-team-explorer-everywhere-command-line-client)
 
-### <a name="option-1--use-visual-studio-code-and-the-azure-repos-extension"></a>Option 1. <a id="use-visual-studio-code-and-the-azure-repos-extension"></a>Utilisez Visual Studio Code et l’extension Azure Repos
+### <a name="option-1--use-visual-studio-code-and-the-azure-repos-extension"></a>Option 1. <a id="use-visual-studio-code-and-the-azure-repos-extension"></a>Utiliser Visual Studio Code et l’extension Azure Repos
 
 Si vous préférez travailler avec une interface graphique pour gérer vos fichiers dans la gestion de version, l’extension Azure Repos pour Visual Studio Code représente une solution Microsoft prise en charge. Pour commencer, téléchargez [Visual Studio Code](https://code.visualstudio.com) et apprenez à [configurer l’extension Azure Repos](https://marketplace.visualstudio.com/items?itemName=ms-vsts.team).
 
-### <a name="option-2--connecting-using-the-team-explorer-everywhere-command-line-client"></a>Option 2. <a id="connecting-using-the-team-explorer-everywhere-command-line-client"></a>Connexion à l’aide du client de l’équipe Explorer Everywhere Command Line
+### <a name="option-2--connecting-using-the-team-explorer-everywhere-command-line-client"></a>Option 2. <a id="connecting-using-the-team-explorer-everywhere-command-line-client"></a>Connexion à l’aide du client de ligne de commande Team Explorer Everywhere
 
 > [!IMPORTANT]
 > Comme pour le fichier Lisez-moi Team Explorer Everywhere, ce projet [n’est plus conservé](https://github.com/microsoft/team-explorer-everywhere).
