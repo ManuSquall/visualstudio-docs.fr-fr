@@ -1,6 +1,6 @@
 - name: JavaScript et TypeScript
   href: index.yml
-- name: Vue d’ensemble
+- name: Vue d'ensemble
   items:
     - name: "JavaScript dans Visual Studio\_2019"
       href: javascript-in-vs-2019.md
@@ -38,9 +38,9 @@
       href: nodejs-interactive-repl.md
     - name: IntelliSense JavaScript
       href: /visualstudio/ide/javascript-intellisense?toc=/visualstudio/javascript/toc.json
-    - name: Déboguer une application JavaScript
+    - name: Débogage
       href: debug-nodejs.md
-    - name: Test unitaire de JavaScript
+    - name: Test unitaire
       href: unit-testing-javascript-with-visual-studio.md
 - name: Ressources
   items:
