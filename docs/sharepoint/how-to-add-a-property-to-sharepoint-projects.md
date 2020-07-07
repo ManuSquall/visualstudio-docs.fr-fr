@@ -1,7 +1,7 @@
 ---
-title: 'Procédure : Ajouter une propriété à des projets SharePoint | Microsoft Docs'
+title: 'Comment : ajouter une propriété à des projets SharePoint | Microsoft Docs'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -14,66 +14,65 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a6f1ecd427b1c715649bc2118be5ab384a74c585
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MT
+ms.openlocfilehash: eb72b0546b504e2df1a7e93ea9d4def350143d1d
+ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62967212"
+ms.lasthandoff: 07/06/2020
+ms.locfileid: "86015916"
 ---
-# <a name="how-to-add-a-property-to-sharepoint-projects"></a>Procédure : Ajouter une propriété à des projets SharePoint
-  Vous pouvez utiliser une extension de projet pour ajouter une propriété à un projet SharePoint. La propriété apparaît dans le **propriétés** fenêtre lorsque le projet est sélectionné dans **l’Explorateur de solutions**.
+# <a name="how-to-add-a-property-to-sharepoint-projects"></a>Comment : ajouter une propriété à des projets SharePoint
+  Vous pouvez utiliser une extension de projet pour ajouter une propriété à un projet SharePoint. La propriété s’affiche dans la fenêtre **Propriétés** lorsque le projet est sélectionné dans **Explorateur de solutions**.
 
- Les étapes suivantes supposent que vous avez déjà créé une extension de projet. Pour plus d'informations, voir [Procédure : Créer une extension de projet SharePoint](../sharepoint/how-to-create-a-sharepoint-project-extension.md).
+ Les étapes suivantes supposent que vous avez déjà créé une extension de projet. Pour plus d’informations, consultez [Comment : créer une extension de projet SharePoint](../sharepoint/how-to-create-a-sharepoint-project-extension.md).
 
 ### <a name="to-add-a-property-to-a-sharepoint-project"></a>Pour ajouter une propriété à un projet SharePoint
 
-1. Définir une classe avec une propriété publique qui représente la propriété que vous ajoutez à des projets SharePoint. Si vous souhaitez ajouter plusieurs propriétés, vous pouvez définir toutes les propriétés dans la même classe ou dans différentes classes.
+1. Définissez une classe avec une propriété publique qui représente la propriété que vous ajoutez aux projets SharePoint. Si vous souhaitez ajouter plusieurs propriétés, vous pouvez définir toutes les propriétés dans la même classe ou dans des classes différentes.
 
-2. Dans le <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectExtension.Initialize%2A> méthode de votre <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectExtension> implémentation, gérez le <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectEvents.ProjectPropertiesRequested> événements de la *projectService* paramètre.
+2. Dans la <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectExtension.Initialize%2A> méthode de votre <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectExtension> implémentation, gérez l' <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectEvents.ProjectPropertiesRequested> événement du paramètre *ProjectService* .
 
-3. Dans le Gestionnaire d’événements pour le <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectEvents.ProjectPropertiesRequested> événement, ajoutez une instance de votre classe de propriétés pour le <xref:Microsoft.VisualStudio.SharePoint.SharePointProjectPropertiesRequestedEventArgs.PropertySources%2A> collection l’arguments du paramètre d’événement.
+3. Dans le gestionnaire d’événements pour l' <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectEvents.ProjectPropertiesRequested> événement, ajoutez une instance de votre classe de propriétés à la <xref:Microsoft.VisualStudio.SharePoint.SharePointProjectPropertiesRequestedEventArgs.PropertySources%2A> collection du paramètre d’arguments d’événement.
 
 ## <a name="example"></a>Exemple
- L’exemple de code suivant montre comment ajouter deux propriétés à des projets SharePoint. Une propriété conserve ses données dans le fichier projet des options utilisateur (le *. csproj.user* fichier ou *. vbproj.user* fichier). L’autre propriété conserve ses données dans le fichier projet (*.csproj* fichier ou *.vbproj* fichier).
+ L’exemple de code suivant montre comment ajouter deux propriétés aux projets SharePoint. Une propriété rend ses données persistantes dans le fichier d’options utilisateur du projet (fichier *. csproj. User* ou *. vbproj. User* ). L’autre propriété rend ses données persistantes dans le fichier projet (fichier *. csproj* ou *. vbproj* ).
 
  [!code-vb[SpExt_SPCustomPrjProperty#1](../sharepoint/codesnippet/VisualBasic/customspproperty/customproperty.vb#1)]
  [!code-csharp[SpExt_SPCustomPrjProperty#1](../sharepoint/codesnippet/CSharp/customspproperty/customproperty.cs#1)]
 
 ### <a name="understand-the-code"></a>Comprendre le code
- Pour vous assurer que la même instance de la `CustomProjectProperties` classe est utilisée chaque fois que le <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectEvents.ProjectPropertiesRequested> événement se produit, l’exemple de code ajoute l’objet de propriétés pour le <xref:Microsoft.VisualStudio.SharePoint.IAnnotatedObject.Annotations%2A> propriété de la projet la première fois que cet événement se produit. Le code récupère cet objet chaque fois que cet événement se produit à nouveau. Pour plus d’informations sur l’utilisation de la <xref:Microsoft.VisualStudio.SharePoint.IAnnotatedObject.Annotations%2A> propriété pour associer les données avec les projets, consultez [associer des données personnalisées à SharePoint extensions d’outils](../sharepoint/associating-custom-data-with-sharepoint-tools-extensions.md).
+ Pour vous assurer que la même instance de la `CustomProjectProperties` classe est utilisée chaque fois que l' <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectEvents.ProjectPropertiesRequested> événement se produit, l’exemple de code ajoute l’objet de propriétés à la <xref:Microsoft.VisualStudio.SharePoint.IAnnotatedObject.Annotations%2A> propriété du projet la première fois que cet événement se produit. Le code récupère cet objet chaque fois que cet événement se reproduit. Pour plus d’informations sur l’utilisation <xref:Microsoft.VisualStudio.SharePoint.IAnnotatedObject.Annotations%2A> de la propriété pour associer des données à des projets, consultez [associer des données personnalisées à des extensions d’outils SharePoint](../sharepoint/associating-custom-data-with-sharepoint-tools-extensions.md).
 
- Pour conserver les modifications apportées aux valeurs de propriété, le **définir** accesseurs pour les propriétés utilisent les API suivantes :
+ Pour conserver les modifications apportées aux valeurs de propriété, les accesseurs **Set** des propriétés utilisent les API suivantes :
 
-- `CustomUserFileProperty` utilise le <xref:Microsoft.VisualStudio.SharePoint.ISharePointProject.ProjectUserFileData%2A> propriété pour enregistrer sa valeur dans le fichier projet des options utilisateur.
+- `CustomUserFileProperty`utilise la <xref:Microsoft.VisualStudio.SharePoint.ISharePointProject.ProjectUserFileData%2A> propriété pour enregistrer sa valeur dans le fichier d’options utilisateur du projet.
 
-- `CustomProjectFileProperty` utilise le <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage.SetPropertyValue%2A> méthode pour enregistrer sa valeur dans le fichier projet.
+- `CustomProjectFileProperty`utilise la <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage.SetPropertyValue%2A> méthode pour enregistrer sa valeur dans le fichier projet.
 
-  Pour plus d’informations sur la conservation des données dans ces fichiers, consultez [enregistrer les données dans les extensions du système de projet SharePoint](../sharepoint/saving-data-in-extensions-of-the-sharepoint-project-system.md).
+  Pour plus d’informations sur la persistance des données dans ces fichiers, consultez [enregistrer des données dans les extensions du système de projet SharePoint](../sharepoint/saving-data-in-extensions-of-the-sharepoint-project-system.md).
 
 ### <a name="specify-the-behavior-of-custom-properties"></a>Spécifier le comportement des propriétés personnalisées
- Vous pouvez définir la façon dont une propriété personnalisée apparaît et se comporte de la **propriétés** fenêtre en appliquant des attributs à partir de la <xref:System.ComponentModel> la définition de propriété de l’espace de noms. Les attributs suivants sont utiles dans de nombreux scénarios :
+ Vous pouvez définir la façon dont une propriété personnalisée apparaît et se comporte dans la fenêtre **Propriétés** en appliquant des attributs de l' <xref:System.ComponentModel> espace de noms à la définition de propriété. Les attributs suivants sont utiles dans de nombreux scénarios :
 
-- <xref:System.ComponentModel.DisplayNameAttribute>: Spécifie le nom de la propriété qui s’affiche dans le **propriétés** fenêtre.
+- <xref:System.ComponentModel.DisplayNameAttribute>: Spécifie le nom de la propriété qui s’affiche dans la fenêtre **Propriétés** .
 
-- <xref:System.ComponentModel.DescriptionAttribute>: Spécifie la chaîne de description qui apparaît en bas de la **propriétés** fenêtre lorsque la propriété est sélectionnée.
+- <xref:System.ComponentModel.DescriptionAttribute>: Spécifie la chaîne de description qui apparaît en bas de la fenêtre **Propriétés** lorsque la propriété est sélectionnée.
 
 - <xref:System.ComponentModel.DefaultValueAttribute>: Spécifie la valeur par défaut de la propriété.
 
-- <xref:System.ComponentModel.TypeConverterAttribute>: Spécifie une conversion personnalisée entre la chaîne qui est affichée dans le **propriétés** fenêtre et une valeur de propriété de non-chaîne.
+- <xref:System.ComponentModel.TypeConverterAttribute>: Spécifie une conversion personnalisée entre la chaîne affichée dans la fenêtre **Propriétés** et une valeur de propriété qui n’est pas une chaîne.
 
 - <xref:System.ComponentModel.EditorAttribute>: Spécifie un éditeur personnalisé à utiliser pour modifier la propriété.
 
 ## <a name="compile-the-code"></a>Compiler le code
  Cet exemple nécessite des références aux assemblys suivants :
 
-- Microsoft.VisualStudio.SharePoint
+- Microsoft. VisualStudio. SharePoint
 
-- Microsoft.VisualStudio.Shell
+- Microsoft. VisualStudio. Shell
 
-- Microsoft.VisualStudio.Shell.Interop
+- Microsoft. VisualStudio. Shell. Interop
 
-- Microsoft.VisualStudio.Shell.Interop.8.0
+- Microsoft. VisualStudio. Shell. Interop. 8.0
 
 - System.ComponentModel.Composition
 
@@ -82,6 +81,6 @@ ms.locfileid: "62967212"
 
 ## <a name="see-also"></a>Voir aussi
 - [Étendre des projets SharePoint](../sharepoint/extending-sharepoint-projects.md)
-- [Guide pratique pour Créer une extension de projet SharePoint](../sharepoint/how-to-create-a-sharepoint-project-extension.md)
-- [Guide pratique pour Ajouter un élément de menu contextuel à des projets SharePoint](../sharepoint/how-to-add-a-shortcut-menu-item-to-sharepoint-projects.md)
+- [Comment : créer une extension de projet SharePoint](../sharepoint/how-to-create-a-sharepoint-project-extension.md)
+- [Comment : ajouter un élément de menu contextuel à des projets SharePoint](../sharepoint/how-to-add-a-shortcut-menu-item-to-sharepoint-projects.md)
 - [Étendre le système de projet SharePoint](../sharepoint/extending-the-sharepoint-project-system.md)

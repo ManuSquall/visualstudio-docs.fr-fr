@@ -1,7 +1,7 @@
 ---
 title: Création de composants WebPart pour SharePoint | Microsoft Docs
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: overview
 f1_keywords:
 - Microsoft.SharePoint.WebControls.DateTimeControl
 - Microsoft.SharePoint.WebControls.CssLink
@@ -23,12 +23,11 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 82e0d860f21f0fe2744c8c05c4ebeb3590be68fc
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
-ms.translationtype: MT
+ms.openlocfilehash: 3825ef7d2c1c90f63a90f5028063c74332543841
+ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72984476"
+ms.lasthandoff: 07/06/2020
+ms.locfileid: "86015045"
 ---
 # <a name="create-web-parts-for-sharepoint"></a>Créer des composants WebPart pour SharePoint
   À l’aide de composants WebPart, vous pouvez modifier le contenu, l’apparence et le comportement des pages d’un site SharePoint à l’aide d’un navigateur. Les composants WebPart sont des contrôles côté serveur qui s’exécutent dans une page de composants WebPart : ils sont les blocs de construction des pages qui s’affichent sur un site SharePoint. Consultez le [bloc de construction : composants WebPart](/previous-versions/office/developer/sharepoint-2010/ee535520(v=office.14)).
@@ -45,7 +44,7 @@ ms.locfileid: "72984476"
 
 |Fichier|Description|
 |----------|-----------------|
-|*Éléments. Xml*|Contient des informations que le fichier de définition de fonctionnalité dans votre projet utilise pour déployer le composant WebPart.|
+|*Elements.xml*|Contient des informations que le fichier de définition de fonctionnalité dans votre projet utilise pour déployer le composant WebPart.|
 |fichier. WebPart|Fournit des informations dont SharePoint a besoin pour afficher votre composant WebPart dans une galerie de composants WebPart.|
 |Fichier de code|Contient des méthodes qui ajoutent des contrôles au composant WebPart et qui génèrent du contenu personnalisé dans le composant WebPart.|
 
@@ -91,16 +90,16 @@ ms.locfileid: "72984476"
 
    Bien que vous puissiez ajouter le code JavaScript Inline à un fichier de balisage côté serveur, le débogage n’est pas pris en charge pour les points d’arrêt ajoutés au balisage. Pour déboguer du code JavaScript, référencez un fichier JavaScript externe dans le fichier de balisage, puis définissez les points d’arrêt dans le fichier JavaScript.
 
-- Le débogage du code inline [!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)] doit être effectué dans le fichier de code généré au lieu du fichier de balisage.
+- Le débogage du code inline [!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)] doit être effectué dans le fichier de code généré et non dans le fichier de balisage.
 
-- Les composants Visual Web Parts ne prennent pas en charge l’utilisation de la directive `<@ Assembly Src=`.
+- Les composants WebPart visuels ne prennent pas en charge l’utilisation de la `<@ Assembly Src=` directive.
 
-- Les contrôles Web SharePoint et certains contrôles de [!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)] ne sont pas pris en charge dans l’environnement de bac à sable (sandbox) SharePoint. Si des contrôles non pris en charge sont utilisés sur un composant WebPart visuel dans une solution bac à sable (sandbox), l’erreur « le type ou le nom de l’espace de noms’Theme’n’existe pas dans l’espace de noms’Microsoft. SharePoint. WebControls' » s’affiche.
+- Les contrôles Web SharePoint et certains [!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)] contrôles ne sont pas pris en charge dans l’environnement de bac à sable (sandbox) SharePoint. Si des contrôles non pris en charge sont utilisés sur un composant WebPart visuel dans une solution bac à sable (sandbox), l’erreur « le type ou le nom de l’espace de noms’Theme’n’existe pas dans l’espace de noms’Microsoft. SharePoint. WebControls' » s’affiche.
 
   Pour plus d’informations sur les solutions bac à sable (sandbox), consultez [différences entre les solutions sandbox et les solutions de batterie de serveurs](../sharepoint/differences-between-sandboxed-and-farm-solutions.md).
 
 ## <a name="create-older-style-sharepoint-based-web-parts"></a>Créer des composants WebPart SharePoint de type ancien
- Vous pouvez utiliser les modèles dans Visual Studio pour créer des composants WebPart [!INCLUDE[vstecasplong](../sharepoint/includes/vstecasplong-md.md)] personnalisés pour SharePoint. [!INCLUDE[vstecasplong](../sharepoint/includes/vstecasplong-md.md)] composants WebPart sont basés sur l’infrastructure de composants WebPart [!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)] et sont le type recommandé pour les nouveaux projets.
+ Vous pouvez utiliser les modèles dans Visual Studio pour créer [!INCLUDE[vstecasplong](../sharepoint/includes/vstecasplong-md.md)] des composants WebPart personnalisés pour SharePoint. [!INCLUDE[vstecasplong](../sharepoint/includes/vstecasplong-md.md)]les composants WebPart sont basés sur l' [!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)] infrastructure de composants WebPart et sont le type recommandé pour les nouveaux projets.
 
  Dans très rares cas, vous devrez peut-être créer un composant WebPart à l’aide de l’ancien composant WebPart SharePoint. Vous pouvez utiliser Visual Studio pour créer ces types de composants WebPart, mais Visual Studio ne fournit pas de modèles conçus spécifiquement pour vous aider à les créer.
 
@@ -108,7 +107,7 @@ ms.locfileid: "72984476"
 
 ## <a name="related-topics"></a>Rubriques connexes
 
-|Titre|Description|
+|Intitulé|Description|
 |-----------|-----------------|
 |[Comment : créer un composant WebPart SharePoint](../sharepoint/how-to-create-a-sharepoint-web-part.md)|Montre comment créer des composants WebPart pour les pages SharePoint.|
 |[Comment : créer un composant WebPart SharePoint à l’aide d’un concepteur](../sharepoint/how-to-create-a-sharepoint-web-part-by-using-a-designer.md)|Montre comment créer des composants WebPart pour SharePoint à l’aide d’une aire de conception visuelle.|

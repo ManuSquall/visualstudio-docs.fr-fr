@@ -1,7 +1,7 @@
 ---
 title: Création de pages pour SharePoint | Microsoft Docs
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: overview
 dev_langs:
 - VB
 - CSharp
@@ -17,12 +17,11 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 297ebf0e7c2ed1273dd5a8ac973ce497c4c64781
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
-ms.translationtype: MT
+ms.openlocfilehash: 942891bc9281c07966160ea9df065408fcbfd5ff
+ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72986355"
+ms.lasthandoff: 07/06/2020
+ms.locfileid: "86015173"
 ---
 # <a name="create-pages-for-sharepoint"></a>Créer des pages pour SharePoint
   Vous pouvez créer des pages d’application, des pages de site, des pages maîtres et des mises en page pour un site SharePoint.
@@ -39,7 +38,7 @@ ms.locfileid: "72986355"
 |Pages d’application|Créer une page d’application si vous souhaitez que la page contienne du code personnalisé ou que vous souhaitiez que la page soit partagée entre plusieurs sites. Dans le cas contraire, une page de site peut être le meilleur choix.|
 |Pages de site|Créez une page de site si vous souhaitez effectuer l’une des tâches suivantes :<br /><br /> -Ajoutez la page à une bibliothèque SharePoint.<br />-Activer la page pour héberger des fonctionnalités telles que des composants WebPart dynamiques et des zones de composants WebPart.<br />-Permettre aux utilisateurs de personnaliser la page à l’aide de SharePoint Designer.<br /><br /> Ne créez pas de page de site si vous souhaitez que la page contienne du code personnalisé. Bien que vous puissiez ajouter du code personnalisé à une page de site, le code cesse de s’exécuter lorsque l’utilisateur personnalise la page à l’aide de SharePoint Designer.|
 |Pages maîtres|Créez une page maître si vous souhaitez définir une structure commune pour les pages de site et les pages d’application.|
-|Mises en page|Les mises en page sont spécifiques à [!INCLUDE[moss_14_long](../sharepoint/includes/moss-14-long-md.md)] et vous permettent de définir plus précisément une structure commune pour les pages de site et les pages d’application.|
+|Dispositions de pages|Les mises en page sont spécifiques à [!INCLUDE[moss_14_long](../sharepoint/includes/moss-14-long-md.md)] et vous permettent de définir plus précisément une structure commune pour les pages de site et les pages d’application.|
 
  Pour obtenir une vue d’ensemble de chaque type de page, consultez [bloc de construction : pages et interface utilisateur](/previous-versions/office/developer/sharepoint-2010/ee539040(v=office.14)), et [mises en page et pages maîtres](/previous-versions/office/developer/sharepoint-2010/ms543497(v=office.14)).
 
@@ -62,7 +61,7 @@ ms.locfileid: "72986355"
 
 ## <a name="related-topics"></a>Rubriques connexes
 
-|Titre|Description|
+|Intitulé|Description|
 |-----------|-----------------|
 |[Créer des pages d’application pour SharePoint](../sharepoint/creating-application-pages-for-sharepoint.md)|Décrit comment ajouter des pages d’applications : le contenu *. aspx* qui est fusionné avec une page maître SharePoint.|
 |[Comment : créer une page d’application](../sharepoint/how-to-create-an-application-page.md)|Montre comment créer des pages ASP.NET qui s’exécutent sur un site SharePoint.|

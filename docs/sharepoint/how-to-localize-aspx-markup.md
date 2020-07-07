@@ -1,7 +1,7 @@
 ---
-title: 'Procédure : Localiser le balisage ASPX | Microsoft Docs'
+title: 'Comment : localiser le balisage ASPX | Microsoft Docs'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -13,46 +13,45 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 4cd3c17a9e771ad9a1aee7526f24e3a8282f208d
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 63bd8ee614a78752069002820689a2cc6c0be783
+ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63443103"
+ms.lasthandoff: 07/06/2020
+ms.locfileid: "86016283"
 ---
-# <a name="how-to-localize-aspx-markup"></a>Procédure : Localiser le balisage ASPX
-  [!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)] pages (.aspx) utilisent généralement des valeurs de chaîne codées en dur. Pour localiser ces chaînes, remplacez-les par les expressions qui référencent des ressources localisées.
+# <a name="how-to-localize-aspx-markup"></a>Comment : localiser le balisage ASPX
+  [!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)]les pages (. aspx) utilisent généralement des valeurs de chaîne codées en dur. Pour localiser ces chaînes, remplacez-les par des expressions qui référencent des ressources localisées.
 
 ## <a name="localize-aspx-markup"></a>Localiser le balisage ASPX
 
 #### <a name="to-localize-aspx-markup"></a>Pour localiser le balisage ASPX
 
-1. Ajouter des fichiers de ressources distincts : un pour la langue par défaut et un pour chaque langue localisée.
+1. Ajoutez des fichiers de ressources distincts : un pour la langue par défaut et un pour chaque langue localisée.
 
-     Si vous localisez le balisage uniquement et pas de code, ajoutez un élément de projet fichier de ressources globales. Si vous localisez le code et le balisage, ajoutez un élément de projet fichier de ressources.
+     Si vous localisez uniquement le balisage et non le code, ajoutez un élément de projet de fichier de ressources global. Si vous localisez le code et le balisage, ajoutez un élément de projet de fichier de ressources.
 
-    1. Pour ajouter un fichier de ressources globales dans **l’Explorateur de solutions**, ouvrez le menu contextuel pour un élément de projet SharePoint, puis choisissez **ajouter** > **un nouvel élément**. Sous SharePoint **2010** nœud, choisissez le **fichier de ressources Global** modèle.
+    1. Pour ajouter un fichier de ressources globales, dans **Explorateur de solutions**, ouvrez le menu contextuel d’un élément de projet SharePoint, puis choisissez **Ajouter**  >  **un nouvel élément**. Sous le nœud SharePoint **2010** , choisissez le modèle de **fichier de ressources globales** .
 
-    2. Pour ajouter un fichier de ressources dans **l’Explorateur de solutions**, ouvrez le menu contextuel pour un élément de projet SharePoint, puis choisissez **ajouter** > **un nouvel élément**. Sous le **Visual Basic** ou **Visual C#** nœud, choisissez le **fichier de ressources** modèle.
+    2. Pour ajouter un fichier de ressources, dans **Explorateur de solutions**, ouvrez le menu contextuel d’un élément de projet SharePoint, puis choisissez **Ajouter**  >  **un nouvel élément**. Sous le nœud **Visual Basic** ou **Visual C#** , choisissez le modèle de **fichier de ressources** .
 
     > [!NOTE]
-    > Veillez à ajouter les fichiers de ressources à un élément de projet SharePoint pour activer la propriété Type de déploiement. Cette propriété est requise plus loin dans cette procédure. Si votre solution n’a pas un élément de projet SharePoint, vous pouvez ajouter un projet SharePoint vide et supprimer sa valeur par défaut *Elements.xml* fichier.
+    > Veillez à ajouter les fichiers de ressources à un élément de projet SharePoint pour activer la propriété type de déploiement. Cette propriété est requise plus loin dans cette procédure. Si votre solution n’a pas d’élément de projet SharePoint, vous pouvez ajouter un projet SharePoint vide et supprimer son fichier *Elements.xml* par défaut.
 
-2. Nommez le fichier de ressources de langue par défaut de votre choix, avec un *.resx* extension, par exemple MyAppResources.resx. Utiliser le même nom de base pour chaque fichier de ressources localisé, mais ajouter la culture [!INCLUDE[TLA2#tla_id](../sharepoint/includes/tla2sharptla-id-md.md)]. Par exemple, nom un allemand localisé ressource *MyAppResources.de-de.resx*.
+2. Donnez au fichier de ressources de langue par défaut le nom de votre choix, ajouté avec une extension *. resx* , par exemple MyAppResources. resx. Utilisez le même nom de base pour chaque fichier de ressources localisé, mais ajoutez la culture [!INCLUDE[TLA2#tla_id](../sharepoint/includes/tla2sharptla-id-md.md)] . Par exemple, nommez une ressource localisée allemande *MyAppResources.de-de. resx*.
 
-3. Modifiez la valeur de la **Type de déploiement** propriété de chaque fichier de ressources à **AppGlobalResource** pour provoquer la déployer sur le dossier App_GlobalResources du serveur.
+3. Modifiez la valeur de la propriété **type de déploiement** de chaque fichier de ressources en **AppGlobalResource** pour qu’ils soient déployés sur le dossier du serveur App_GlobalResources.
 
-4. Si vous utilisez les ressources pour localiser le code en plus du balisage ASPX, conservez la valeur de la **Action de génération** propriété de chaque fichier en tant que **ressource incorporée**. Si vous utilisez les fichiers de ressources uniquement pour localiser le balisage, vous pouvez éventuellement modifier la valeur de propriété des fichiers à **contenu**. Pour plus d’informations, consultez [solutions SharePoint localiser](../sharepoint/localizing-sharepoint-solutions.md).
+4. Si vous utilisez les ressources pour localiser le code en plus du balisage ASPX, laissez la valeur de la propriété **action de génération** de chaque fichier en tant que **ressource incorporée**. Si vous utilisez uniquement les fichiers de ressources pour localiser le balisage, vous pouvez éventuellement modifier la valeur de la propriété des fichiers en **contenu**. Pour plus d’informations, consultez [localiser des solutions SharePoint](../sharepoint/localizing-sharepoint-solutions.md).
 
-5. Ouvrez chaque fichier de ressources et ajoutez des chaînes localisées, à l’aide de la même chaîne ID dans chaque fichier.
+5. Ouvrez chaque fichier de ressources et ajoutez des chaînes localisées, en utilisant les mêmes ID de chaîne dans chaque fichier.
 
-6. Dans le [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] balisage pour la page ASPX ou un contrôle, remplacez les chaînes codées en dur avec des valeurs qui utilisent le format suivant :
+6. Dans le [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] balisage de la page ou du contrôle aspx, remplacez les chaînes codées en dur par des valeurs qui utilisent le format suivant :
 
     ```aspx-csharp
     <%$Resources:Resource File Name, String ID%>
     ```
 
-     Par exemple, pour localiser le texte d’un contrôle label sur une page d’application, vous modifieriez :
+     Par exemple, pour localiser le texte d’un contrôle Label dans une page d’application, vous devez modifier :
 
     ```aspx-csharp
     <asp:Content ID="Main" ContentPlaceHolderID="PlaceHolderMain" runat="server">
@@ -60,7 +59,7 @@ ms.locfileid: "63443103"
     </asp:Content>
     ```
 
-     par celle-ci :
+     to
 
     ```aspx-csharp
     <asp:Content ID="Main" ContentPlaceHolderID="PlaceHolderMain" runat="server">
@@ -68,14 +67,14 @@ ms.locfileid: "63443103"
     </asp:Content>
     ```
 
-7. Choisissez le **F5** clé pour générer et exécuter l’application.
+7. Appuyez sur la touche **F5** pour générer et exécuter l’application.
 
-8. Dans SharePoint, modifiez la langue d’affichage à partir de la valeur par défaut.
+8. Dans SharePoint, modifiez la langue d’affichage par défaut.
 
-     Les chaînes localisées s’affichent dans l’application. Pour afficher les ressources localisées, le serveur SharePoint doit avoir installé un module linguistique qui correspond à la culture du fichier de ressources.
+     Les chaînes localisées s’affichent dans l’application. Pour afficher les ressources localisées, le serveur SharePoint doit disposer d’un module linguistique qui correspond à la culture du fichier de ressources.
 
 ## <a name="see-also"></a>Voir aussi
 - [Localiser des solutions SharePoint](../sharepoint/localizing-sharepoint-solutions.md)
-- [Guide pratique pour Localiser une fonctionnalité](../sharepoint/how-to-localize-a-feature.md)
-- [Guide pratique pour Ajouter un fichier de ressources](../sharepoint/how-to-add-a-resource-file.md)
-- [Guide pratique pour Localiser le code](../sharepoint/how-to-localize-code.md)
+- [Comment : localiser une fonctionnalité](../sharepoint/how-to-localize-a-feature.md)
+- [Comment : ajouter un fichier de ressources](../sharepoint/how-to-add-a-resource-file.md)
+- [Comment : localiser du code](../sharepoint/how-to-localize-code.md)

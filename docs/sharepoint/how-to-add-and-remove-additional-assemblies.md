@@ -1,7 +1,7 @@
 ---
 title: 'Comment : ajouter et supprimer des assemblys supplémentaires | Microsoft Docs'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - VS.SharePointTools.RAD.CustomAssembly
 dev_langs:
@@ -14,12 +14,11 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: bdcc1c478bead4df89622a7311b074965cdc0226
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
-ms.translationtype: MT
+ms.openlocfilehash: 07b9016a4e246d3ed5a2697d924f556517a8226f
+ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72985232"
+ms.lasthandoff: 07/06/2020
+ms.locfileid: "86014830"
 ---
 # <a name="how-to-add-and-remove-additional-assemblies"></a>Comment : ajouter et supprimer des assemblys supplémentaires
   Si un package SharePoint dépend d’autres assemblys pour des fonctionnalités ou des données, vous pouvez ajouter les assemblys à votre package de solution (. wsp). De cette façon, le serveur SharePoint vérifie que les assemblys personnalisés sont installés avec un package.
@@ -33,7 +32,7 @@ ms.locfileid: "72985232"
 
 1. Ouvrez le **Concepteur de packages**. Pour plus d’informations, consultez [Comment : personnaliser un package de solution SharePoint](../sharepoint/how-to-customize-a-sharepoint-solution-package.md).
 
-2. Choisissez l’onglet **avancé** .
+2. Sélectionnez l’onglet **Avancé**.
 
 3. Cliquez sur le bouton **Ajouter** , puis choisissez **Ajouter un assembly existant** dans la liste.
 
@@ -41,7 +40,7 @@ ms.locfileid: "72985232"
 
 4. Cliquez sur les points de suspension (![ellipse ASP.net Mobile designer](../sharepoint/media/mwellipsis.gif "Bouton de sélection du concepteur ASP.NET mobile")), puis sélectionnez l’assembly que vous souhaitez ajouter. Nous vous recommandons d’utiliser un chemin d’accès relatif à l’assembly sélectionné à des fins de portabilité.
 
-5. Pour la **cible de déploiement**, sélectionnez la case d’option **GlobalAssemblyCache** pour déployer l’assembly sur le global assembly cache ou choisissez la case d’option **WebApplication** pour déployer l’assembly dans le dossier WebApplication du serveur qui exécute SharePoint.
+5. Pour la **cible de déploiement**, sélectionnez la case d’option **GlobalAssemblyCache** pour déployer l’assembly sur le global assembly cache ou choisissez la case d’option **WebApplication** pour déployer l’assembly dans le dossier WebApplication sur le serveur qui exécute SharePoint.
 
 #### <a name="to-add-an-assembly-from-project-output"></a>Pour ajouter un assembly à partir de la sortie du projet
 
@@ -49,7 +48,7 @@ ms.locfileid: "72985232"
 
      Pour plus d’informations, consultez [Comment : personnaliser un package de solution SharePoint](../sharepoint/how-to-customize-a-sharepoint-solution-package.md).
 
-2. Choisissez l’onglet **avancé** .
+2. Sélectionnez l’onglet **Avancé**.
 
 3. Cliquez sur le bouton **Ajouter** , puis choisissez **Ajouter un assembly à partir** de la sortie du projet dans la liste.
 
@@ -57,7 +56,7 @@ ms.locfileid: "72985232"
 
 4. Dans la liste **projet source** , choisissez le projet source que vous souhaitez ajouter.
 
-5. Pour la **cible de déploiement**, sélectionnez la case d’option **GlobalAssemblyCache** pour déployer l’assembly sur le global assembly cache ou choisissez la case d’option **WebApplication** pour déployer l’assembly dans le dossier WebApplication du serveur qui exécute SharePoint.
+5. Pour la **cible de déploiement**, sélectionnez la case d’option **GlobalAssemblyCache** pour déployer l’assembly sur le global assembly cache ou choisissez la case d’option **WebApplication** pour déployer l’assembly dans le dossier WebApplication sur le serveur qui exécute SharePoint.
 
 #### <a name="to-add-a-safe-control"></a>Pour ajouter un contrôle sécurisé
 
@@ -86,11 +85,11 @@ ms.locfileid: "72985232"
 
 1. Ouvrez le **Concepteur de packages**. Pour plus d’informations, consultez [Comment : personnaliser un package de solution SharePoint](../sharepoint/how-to-customize-a-sharepoint-solution-package.md).
 
-2. Choisissez l’onglet **avancé** .
+2. Sélectionnez l’onglet **Avancé**.
 
 3. Dans le volet **assemblys supplémentaires** , choisissez l’assembly personnalisé que vous souhaitez supprimer.
 
-4. Choisissez le bouton **supprimer** .
+4. Choisissez le bouton **Supprimer**.
 
 #### <a name="to-delete-a-safe-control-for-an-assembly"></a>Pour supprimer un contrôle sécurisé d’un assembly
 

@@ -1,7 +1,7 @@
 ---
 title: Créer une colonne de site, un type de contenu et une liste pour SharePoint
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - VS.SharePointTools.ListDesigner.GeneralMessageHelp
 - Microsoft.VisualStudio.SharePoint.Designers.ListDesigner.ViewModels.ListViewModel.SortingAndGrouping
@@ -19,12 +19,11 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: cc6782e4a83f259eb17632addec36c7804b27858
-ms.sourcegitcommit: 174c992ecdc868ecbf7d3cee654bbc2855aeb67d
-ms.translationtype: MT
+ms.openlocfilehash: 9ce76c72bad138a5c6c40afe717aadafec02c677
+ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/06/2019
-ms.locfileid: "74879349"
+ms.lasthandoff: 07/06/2020
+ms.locfileid: "86015273"
 ---
 # <a name="walkthrough-create-a-site-column-content-type-and-list-for-sharepoint"></a>Procédure pas à pas : création d’une colonne de site, d’un type de contenu et d’une liste pour SharePoint
   Les procédures suivantes montrent comment créer des colonnes de site SharePoint personnalisées, ou des *champs*, ainsi qu’un type de contenu qui utilise les colonnes de site. Il montre également comment créer une liste qui utilise le nouveau type de contenu.
@@ -41,8 +40,8 @@ ms.locfileid: "74879349"
 
   [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]
 
-## <a name="prerequisites"></a>Configuration requise
- Pour exécuter cette procédure pas à pas, vous devez disposer des composants suivants :
+## <a name="prerequisites"></a>Prérequis
+ Vous devez disposer des éléments suivants pour exécuter cette procédure pas à pas :
 
 - Éditions prises en charge de Windows et SharePoint.
 
@@ -53,21 +52,21 @@ ms.locfileid: "74879349"
 
 #### <a name="to-create-the-project"></a>Pour créer le projet
 
-1. Dans le menu [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] **fichier** , choisissez **nouveau** > **projet**.
+1. Dans le [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] menu **fichier** , choisissez **nouveau**  >  **projet**.
 ::: moniker range="=vs-2017"
-2. Dans la boîte de dialogue **nouveau projet** , sous **Visual C#**  ou **Visual Basic**, développez le nœud **Office/SharePoint** , puis sélectionnez **solutions SharePoint**.
+2. Dans la boîte de dialogue **nouveau projet** , sous **Visual C#** ou **Visual Basic**, développez le nœud **Office/SharePoint** , puis sélectionnez **solutions SharePoint**.
 
 3. Dans le volet **modèles** , choisissez le **projet SharePoint vide** pour la version particulière de SharePoint que vous avez installée. Par exemple, si vous avez SharePoint 2016 installer, sélectionnez le modèle **de projet sharepoint 2016-vide** .  
 
 4. Remplacez le nom du projet par **Clinic**, puis choisissez le bouton **OK** .
 
-5. Dans la boîte de dialogue **spécifier le site et le niveau de sécurité pour le débogage** , entrez l’URL du site SharePoint local auquel vous souhaitez ajouter le nouvel élément de champ personnalisé ou utilisez l’emplacement par défaut (`http://<`*SystemName*`>/)`.
+5. Dans la boîte de dialogue **spécifier le site et le niveau de sécurité pour le débogage** , entrez l’URL du site SharePoint local auquel vous souhaitez ajouter le nouvel élément de champ personnalisé ou utilisez l’emplacement par défaut ( `http://<` *SystemName* `>/)` .
 
-6. Dans la section **qu’est-ce que le niveau de confiance pour cette solution SharePoint ?** , utilisez la valeur par défaut **déployer en tant que solution bac à sable (sandbox)** .
+6. Dans la section **qu’est-ce que le niveau de confiance pour cette solution SharePoint ?** , utilisez la valeur par défaut **déployer en tant que solution bac à sable (sandbox)**.
 
      Pour plus d’informations sur les solutions sandbox et de batterie de serveurs, consultez Considérations sur les [solutions bac à sable (sandbox)](../sharepoint/sandboxed-solution-considerations.md).
 
-7. Choisissez le bouton **Terminer** . Le projet est maintenant listé dans **Explorateur de solutions**.
+7. Cliquez sur le bouton **Terminer**. Le projet est maintenant listé dans **Explorateur de solutions**.
 ::: moniker-end
 ::: moniker range=">=vs-2019"
 2.  Dans la boîte de dialogue **créer un nouveau projet** , sélectionnez le **projet SharePoint vide** pour la version particulière de SharePoint que vous avez installée. Par exemple, si vous avez SharePoint 2016 installer, sélectionnez le modèle **de projet sharepoint 2016-vide** .
@@ -75,22 +74,22 @@ ms.locfileid: "74879349"
 
 3. Remplacez le nom du projet par **Clinic**, puis choisissez le bouton **créer** .
 
-4. Dans la boîte de dialogue **spécifier le site et le niveau de sécurité pour le débogage** , entrez l’URL du site SharePoint local auquel vous souhaitez ajouter le nouvel élément de champ personnalisé ou utilisez l’emplacement par défaut (`http://<`*SystemName*`>/)`.
+4. Dans la boîte de dialogue **spécifier le site et le niveau de sécurité pour le débogage** , entrez l’URL du site SharePoint local auquel vous souhaitez ajouter le nouvel élément de champ personnalisé ou utilisez l’emplacement par défaut ( `http://<` *SystemName* `>/)` .
 
-5. Dans la section **qu’est-ce que le niveau de confiance pour cette solution SharePoint ?** , utilisez la valeur par défaut **déployer en tant que solution bac à sable (sandbox)** .
+5. Dans la section **qu’est-ce que le niveau de confiance pour cette solution SharePoint ?** , utilisez la valeur par défaut **déployer en tant que solution bac à sable (sandbox)**.
 
      Pour plus d’informations sur les solutions sandbox et de batterie de serveurs, consultez Considérations sur les [solutions bac à sable (sandbox)](../sharepoint/sandboxed-solution-considerations.md).
 
-6. Choisissez le bouton **Terminer** . Le projet est maintenant listé dans **Explorateur de solutions**.
+6. Cliquez sur le bouton **Terminer**. Le projet est maintenant listé dans **Explorateur de solutions**.
 ::: moniker-end
 
 #### <a name="to-add-site-columns"></a>Pour ajouter des colonnes de site
 
-1. Ajoutez une nouvelle colonne de site. Pour ce faire, dans **Explorateur de solutions**, cliquez avec le bouton droit sur le projet **Clinic** , puis choisissez **Ajouter** > **nouvel élément**.
+1. Ajoutez une nouvelle colonne de site. Pour ce faire, dans **Explorateur de solutions**, cliquez avec le bouton droit sur le projet **Clinic** , puis choisissez **Ajouter**  >  **un nouvel élément**.
 
 2. Dans la boîte de dialogue **Ajouter un nouvel élément** , choisissez **colonne de site**, changez le nom en **PatientName**, puis cliquez sur le bouton **Ajouter** .
 
-3. Dans le fichier *Elements. xml* de la colonne de site, laissez le paramètre de **type** **texte**, puis modifiez le paramètre de **groupe** en **colonnes de site Clinic**. Lorsque vous avez terminé, le fichier *Elements. xml* de la colonne de site doit ressembler à l’exemple suivant.
+3. Dans le fichier *Elements.xml* de la colonne de site, laissez le paramètre de **type** **texte**, puis modifiez le paramètre de **groupe** en **colonnes de site Clinic**. Lorsque vous avez terminé, le fichier *Elements.xml* de la colonne de site doit ressembler à l’exemple suivant.
 
     ```xml
     <Field
@@ -116,9 +115,9 @@ ms.locfileid: "74879349"
 
 1. Ajoutez un type de contenu au projet. Pour ce faire, dans **Explorateur de solutions**, choisissez le nœud du projet.
 
-2. Dans la barre de menus, choisissez **Projet** > **Ajouter un nouvel élément**.
+2. Dans la barre de menus, choisissez **projet**  >  **Ajouter un nouvel élément**.
 
-3. Sous **Visual C#**  ou **Visual Basic**, développez le nœud **SharePoint** , puis choisissez le nœud **2010** .
+3. Sous **Visual C#** ou **Visual Basic**, développez le nœud **SharePoint** , puis choisissez le nœud **2010** .
 
 4. Dans le volet **modèles** , choisissez le modèle de **type de contenu** , remplacez le nom par **patient info**, puis cliquez sur le bouton **Ajouter** .
 
@@ -141,7 +140,7 @@ ms.locfileid: "74879349"
 
 10. Modifiez **nom du groupe** en **types de contenu Clinic**et laissez les autres paramètres à leurs valeurs par défaut.
 
-11. Dans la barre de menus, choisissez **fichier** > **enregistrer tout**, puis fermez le concepteur de types de contenu.
+11. Dans la barre de menus, choisissez **fichier**  >  **enregistrer tout**, puis fermez le concepteur de types de contenu.
 
 ## <a name="create-a-list"></a>Créer une liste
  À présent, créez une liste qui utilise le nouveau type de contenu et les nouvelles colonnes de site.
@@ -150,13 +149,13 @@ ms.locfileid: "74879349"
 
 1. Ajoutez une liste au projet. Pour ce faire, dans **Explorateur de solutions**, choisissez le nœud du projet.
 
-2. Dans la barre de menus, choisissez **Projet** > **Ajouter un nouvel élément**.
+2. Dans la barre de menus, choisissez **projet**  >  **Ajouter un nouvel élément**.
 
-3. Sous  **C# Visual** ou **Visual Basic**, développez le nœud **SharePoint** .
+3. Sous **Visual C#** ou **Visual Basic**, développez le nœud **SharePoint** .
 
 4. Dans le volet **modèles** , choisissez le modèle de **liste** , remplacez le nom par **patients**, puis cliquez sur le bouton **Ajouter** .
 
-5. Laissez la liste **personnaliser la liste en fonction** du paramètre **par défaut (liste personnalisée)** , puis choisissez le bouton **Terminer** .
+5. Laissez la liste **personnaliser la liste en fonction** du paramètre **par défaut (liste personnalisée)**, puis choisissez le bouton **Terminer** .
 
 6. Dans le concepteur de listes, choisissez le bouton **types de contenu** pour afficher la boîte de dialogue Paramètres du **type de contenu** .
 
@@ -176,7 +175,7 @@ ms.locfileid: "74879349"
 
     - Nom du médecin
 
-    - Comments
+    - Commentaires
 
 9. Sous **nom d’affichage**de la colonne, choisissez une ligne vide, ajoutez une colonne de liste personnalisée et nommez-la **hospitalier**. Laissez son type de données **une seule ligne de texte**.
 
@@ -211,18 +210,18 @@ ms.locfileid: "74879349"
 
     - Hôpitaux
 
-    - Comments
+    - Commentaires
 
 14. Dans la liste **Propriétés** , choisissez la propriété de **Tri et de regroupement** , puis cliquez sur l’icône de ![points](../sharepoint/media/ellipsisicon.gif "Icône du bouton de sélection (...)") de suspension du bouton de sélection pour afficher la boîte de dialogue de **Tri et de regroupement** .
 
 15. Dans la liste **nom** de la colonne, choisissez **nom du patient**, assurez-vous que la colonne de **Tri** est définie sur **croissant**, puis choisissez le bouton **OK** .
 
-## <a name="test-the-application"></a>Tester l'application
+## <a name="test-the-application"></a>Test de l’application
  Maintenant que les colonnes de site personnalisées, le type de contenu et la liste sont prêts, déployez-les sur SharePoint et exécutez l’application pour la tester.
 
 #### <a name="to-test-the-application"></a>Pour tester l'application
 
-1. Dans la barre de menus, sélectionnez **Fichier** > **Enregistrer tout**.
+1. Dans la barre de menus, choisissez **fichier**  >  **enregistrer tout**.
 
 2. Appuyez sur la touche **F5** pour exécuter l’application.
 
@@ -230,7 +229,7 @@ ms.locfileid: "74879349"
 
 3. Dans la barre de navigation rapide, choisissez le lien **patients** pour afficher la liste des **patients** .
 
-     Les noms de colonnes de la liste doivent correspondre à ceux que vous avez entrés sous l’onglet **vues** dans [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].
+     Les noms de colonnes de la liste doivent correspondre à ceux que vous avez entrés dans l’onglet **affichages** dans [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] .
 
 4. Choisissez le lien **Ajouter un nouvel élément** pour créer une carte d’informations sur les patients.
 

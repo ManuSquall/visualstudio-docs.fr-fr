@@ -1,7 +1,7 @@
 ---
 title: 'Procédure pas à pas : déploiement d’une définition de Liste des tâches de projet | Microsoft Docs'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -12,12 +12,11 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c0b7f1b0668af8218017c5cc96712384ed5f275c
-ms.sourcegitcommit: 77ef1dcc71057cd5fdc4733ff0cb6085bd6113e0
-ms.translationtype: MT
+ms.openlocfilehash: b5639fe7a1b35dea41b14be3730986ad7c7309b7
+ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "73661876"
+ms.lasthandoff: 07/06/2020
+ms.locfileid: "86015769"
 ---
 # <a name="walkthrough-deploy-a-project-task-list-definition"></a>Procédure pas à pas : déployer une définition de liste de tâches de projet
 
@@ -25,7 +24,7 @@ Cette procédure pas à pas explique comment créer, personnaliser, déboguer et
 
 [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]
 
-## <a name="prerequisites"></a>Configuration requise
+## <a name="prerequisites"></a>Prérequis
 
 - Éditions prises en charge de Microsoft Windows et SharePoint.
 
@@ -43,7 +42,7 @@ Créez un projet de liste SharePoint et associez la définition de liste aux tâ
 
 3. Spécifiez le site SharePoint local que vous utilisez pour le débogage, sélectionnez la case d’option **déployer en tant que solution de batterie** , puis cliquez sur le bouton **Terminer** .
 
-4. Ouvrez le menu contextuel du projet, puis choisissez **ajouter** > **nouvel élément**.
+4. Ouvrez le menu contextuel du projet, puis choisissez **Ajouter**  >  **un nouvel élément**.
 
 5. Dans le volet **modèles** , choisissez le modèle de **liste** , puis cliquez sur le bouton **Ajouter** .
 
@@ -73,7 +72,7 @@ Dans la liste de tâches, vous pouvez ajouter un récepteur d’événements per
 
      Un nouveau nœud récepteur d’événements est ajouté au projet avec un fichier de code nommé **ProjectTaskListEventReceiver**.
 
-6. Ajoutez du code à la méthode `ItemAdded` dans le fichier de code **ProjectTaskListEventReceiver** . Chaque fois qu’une nouvelle tâche est ajoutée, une date d’échéance par défaut et une description sont ajoutées à la tâche. La date d’échéance par défaut est le 1er juillet 2009.
+6. Ajoutez du code à la `ItemAdded` méthode dans le fichier de code **ProjectTaskListEventReceiver** . Chaque fois qu’une nouvelle tâche est ajoutée, une date d’échéance par défaut et une description sont ajoutées à la tâche. La date d’échéance par défaut est le 1er juillet 2009.
 
      [!code-vb[SPProjectTaskList#1](../sharepoint/codesnippet/VisualBasic/projecttasklist1/projecttasklisteventreceiver/projecttasklisteventreceiver.vb#1)]
      [!code-csharp[SPProjectTaskList#1](../sharepoint/codesnippet/CSharp/projecttasklist/projecttasklisteventreceiver/projecttasklisteventreceiver.cs#1)]
@@ -136,31 +135,31 @@ Après avoir généré et testé la liste des tâches du projet, vous pouvez la 
 
 ### <a name="to-deploy-the-project-task-list-to-the-local-system"></a>Pour déployer la liste des tâches de projet sur le système local
 
-Dans la barre de menus de Visual Studio, choisissez **générer** > **déployer la solution**.
+Dans la barre de menus de Visual Studio, choisissez **générer**  >  **déployer la solution**.
 
-Visual Studio recycle le pool d’applications IIS, retire toutes les versions existantes de la solution, copie le fichier de package de solution ( *. wsp*) vers SharePoint, puis active ses fonctionnalités. Vous pouvez maintenant utiliser la solution dans SharePoint. Pour plus d’informations sur les étapes de configuration du déploiement, consultez [procédure : modifier une configuration de déploiement SharePoint](../sharepoint/how-to-edit-a-sharepoint-deployment-configuration.md).
+Visual Studio recycle le pool d’applications IIS, retire toutes les versions existantes de la solution, copie le fichier de package de solution (*. wsp*) vers SharePoint, puis active ses fonctionnalités. Vous pouvez maintenant utiliser la solution dans SharePoint. Pour plus d’informations sur les étapes de configuration du déploiement, consultez [procédure : modifier une configuration de déploiement SharePoint](../sharepoint/how-to-edit-a-sharepoint-deployment-configuration.md).
 
 ### <a name="to-deploy-the-project-task-list-to-a-remote-system"></a>Pour déployer la liste des tâches de projet sur un système distant
 
-1. Dans la barre de menus de Visual Studio, choisissez **générer** > **publier**.
+1. Dans la barre de menus de Visual Studio, choisissez **générer**  >  **publier**.
 
 2. Dans la boîte de dialogue **publier** , choisissez la case **d’option publier sur le système de fichiers** .
 
      Vous pouvez modifier l’emplacement cible dans la boîte de dialogue **publier** en cliquant sur l' ![icône de sélection](../sharepoint/media/ellipsisicon.gif "Icône du bouton de sélection (...)") du bouton de sélection, puis en accédant à un autre emplacement.
 
-3. Choisissez le bouton **publier** .
+3. Choisissez le bouton **Publier**.
 
      Un fichier *. wsp* est créé pour la solution.
 
 4. Copiez le fichier *. wsp* dans le système SharePoint distant.
 
-5. Utilisez la commande PowerShell `Add-SPUserSolution` pour installer le package sur l’installation SharePoint distante. (Pour les solutions de batterie de serveurs, utilisez la commande `Add-SPSolution`.)
+5. Utilisez la `Add-SPUserSolution` commande PowerShell pour installer le package sur l’installation SharePoint distante. (Pour les solutions de batterie de serveurs, utilisez la `Add-SPSolution` commande.)
 
-     Par exemple, `Add-SPUserSolution C:\MyProjects\ProjectTaskList\ProjectTaskList\bin\Debug\ProjectTaskList.wsp`.
+     Par exemple : `Add-SPUserSolution C:\MyProjects\ProjectTaskList\ProjectTaskList\bin\Debug\ProjectTaskList.wsp`.
 
-6. Utilisez la commande PowerShell `Install-SPUserSolution` pour déployer la solution. (Pour les solutions de batterie de serveurs, utilisez la commande `Install-SPSolution`.)
+6. Utilisez la `Install-SPUserSolution` commande PowerShell pour déployer la solution. (Pour les solutions de batterie de serveurs, utilisez la `Install-SPSolution` commande.)
 
-     Par exemple, `Install-SPUserSolution -Identity ProjectTaskList.wsp -Site http://NewSiteName`.
+     Par exemple : `Install-SPUserSolution -Identity ProjectTaskList.wsp -Site http://NewSiteName`.
 
      Pour plus d’informations sur le déploiement à distance, consultez [utilisation de solutions](/previous-versions/office/developer/sharepoint-2010/ee534972(v=office.14)) et [Ajout et déploiement de solutions avec PowerShell dans SharePoint 2010](http://www.dotnetmafia.com/blogs/dotnettipoftheday/archive/2009/12/02/adding-and-deploying-solutions-with-powershell-in-sharepoint-2010.aspx).
 

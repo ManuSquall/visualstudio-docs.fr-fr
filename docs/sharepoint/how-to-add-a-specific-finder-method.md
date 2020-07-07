@@ -1,7 +1,7 @@
 ---
 title: 'Comment : ajouter une méthode de recherche spécifique | Microsoft Docs'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -17,12 +17,11 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 732921b021d7887faf31dd3f602f5400c1d06a59
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
-ms.translationtype: MT
+ms.openlocfilehash: 403213b6dcd87251df0b24333c759c8de8720afd
+ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72985264"
+ms.lasthandoff: 07/06/2020
+ms.locfileid: "86014812"
 ---
 # <a name="how-to-add-a-specific-finder-method"></a>Comment : ajouter une méthode de recherche spécifique
   Vous pouvez retourner une instance d’entité unique en créant une méthode de *recherche spécifique* . Le service de connectivité de données métiers (BDC) exécute la méthode de recherche spécifique lorsqu’un utilisateur choisit une entité dans un composant WebPart de données métier ou une liste externe. Pour plus d’informations, consultez [concevoir un modèle de connectivité de données métiers](../sharepoint/designing-a-business-data-connectivity-model.md).
@@ -33,7 +32,7 @@ ms.locfileid: "72985264"
 
     Pour plus d’informations sur l’ajout d’une entité au **concepteur BDC** dans Visual Studio, consultez [Comment : ajouter une entité à un modèle](../sharepoint/how-to-add-an-entity-to-a-model.md).
 
-2. Dans la barre de menus, choisissez **afficher** > **autres fenêtres**, détails de la **méthode BDC**.
+2. Dans la barre de menus, choisissez **Afficher**  >  **les autres fenêtres**, détails de la **méthode BDC**.
 
     La fenêtre Détails de la **méthode BDC** s’ouvre. Pour plus d’informations sur cette fenêtre, consultez [vue d’ensemble des outils de conception de modèle BDC](../sharepoint/bdc-model-design-tools-overview.md).
 
@@ -71,7 +70,7 @@ ms.locfileid: "72985264"
 
     Le fichier de code du service d’entité s’ouvre dans l’éditeur de code. Pour plus d’informations sur le fichier de code du service d’entité, consultez [créer un modèle de connectivité de données métiers](../sharepoint/creating-a-business-data-connectivity-model.md).
 
-9. Ajoutez du code à la méthode de recherche spécifique. Ce code exécute les tâches suivantes :
+9. Ajoutez du code à la méthode de recherche spécifique. Ce code effectue les tâches suivantes :
 
    - Récupère un enregistrement à partir d’une source de données.
 
@@ -80,7 +79,7 @@ ms.locfileid: "72985264"
      L’exemple suivant retourne un contact à partir de l’exemple de base de données AdventureWorks pour SQL Server.
 
      > [!NOTE]
-     > Remplacez la valeur du champ `ServerName` par le nom de votre serveur.
+     > Remplacez la valeur du `ServerName` champ par le nom de votre serveur.
 
      [!code-csharp[SP_BDC#3](../sharepoint/codesnippet/CSharp/SP_BDC/bdcmodel1/contactservice.cs#3)]
      [!code-vb[SP_BDC#3](../sharepoint/codesnippet/VisualBasic/sp_bdc/bdcmodel1/contactservice.vb#3)]

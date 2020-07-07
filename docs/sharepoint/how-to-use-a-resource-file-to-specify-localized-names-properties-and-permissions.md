@@ -1,7 +1,7 @@
 ---
 title: 'Comment : utiliser un fichier de ressources pour spécifier des noms localisés, des propriétés et des autorisations | Microsoft Docs'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -19,12 +19,11 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: fa2fec260921d66328b2c16075d44b38686c08de
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
-ms.translationtype: MT
+ms.openlocfilehash: a87cc8a3eb8f98ea19a87e93c37aae5303151ecf
+ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72982555"
+ms.lasthandoff: 07/06/2020
+ms.locfileid: "86015402"
 ---
 # <a name="how-to-use-a-resource-file-to-specify-localized-names-properties-and-permissions"></a>Comment : utiliser un fichier de ressources pour spécifier des noms localisés, des propriétés et des autorisations
   À l’aide d’un fichier de ressources, vous pouvez fournir des noms localisés, définir des propriétés et appliquer des autorisations correspondant aux objets définis dans un modèle de connectivité de données métiers (BDC). Pour spécifier ces informations, vous ajoutez un élément de **ressource de connectivité de données métiers** à un projet qui contient un élément de **modèle de connectivité de données métiers** . Ensuite, vous spécifiez des noms, des propriétés et des autorisations en modifiant le XML pour le fichier de ressources.
@@ -33,7 +32,7 @@ ms.locfileid: "72982555"
 
 1. Dans **Explorateur de solutions**, développez le dossier du projet SharePoint, puis choisissez le dossier qui contient le modèle BDC.
 
-2. Dans la barre de menus, choisissez **Projet** > **Ajouter un nouvel élément**.
+2. Dans la barre de menus, choisissez **projet**  >  **Ajouter un nouvel élément**.
 
 3. Développez le nœud **SharePoint** , puis choisissez le nœud **2010** .
 

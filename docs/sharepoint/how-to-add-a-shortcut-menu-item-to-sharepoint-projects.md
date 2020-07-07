@@ -1,7 +1,7 @@
 ---
-title: 'Procédure : Ajouter un élément de Menu contextuel à des projets SharePoint | Microsoft Docs'
+title: 'Comment : ajouter un élément de menu contextuel à des projets SharePoint | Microsoft Docs'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -14,36 +14,35 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5b5db3fe3aaf8dc57c7df6a63810106ae9fb30fb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MT
+ms.openlocfilehash: 4e43d8d7717302eb8ab250935188bc2db3bdd66a
+ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62967120"
+ms.lasthandoff: 07/06/2020
+ms.locfileid: "86014846"
 ---
-# <a name="how-to-add-a-shortcut-menu-item-to-sharepoint-projects"></a>Procédure : Ajouter un élément de menu contextuel à des projets SharePoint
-  Vous pouvez ajouter un élément de menu contextuel à un projet SharePoint. L’élément de menu s’affiche quand un utilisateur clique sur un nœud de projet dans **l’Explorateur de solutions**.
+# <a name="how-to-add-a-shortcut-menu-item-to-sharepoint-projects"></a>Comment : ajouter un élément de menu contextuel à des projets SharePoint
+  Vous pouvez ajouter un élément de menu contextuel à n’importe quel projet SharePoint. L’élément de menu s’affiche lorsqu’un utilisateur clique avec le bouton droit sur un nœud de projet dans **Explorateur de solutions**.
 
- Les étapes suivantes supposent que vous avez déjà créé une extension de projet. Pour plus d'informations, voir [Procédure : Créer une extension de projet SharePoint](../sharepoint/how-to-create-a-sharepoint-project-extension.md).
+ Les étapes suivantes supposent que vous avez déjà créé une extension de projet. Pour plus d’informations, consultez [Comment : créer une extension de projet SharePoint](../sharepoint/how-to-create-a-sharepoint-project-extension.md).
 
 ### <a name="to-add-a-shortcut-menu-item-to-sharepoint-projects"></a>Pour ajouter un élément de menu contextuel à des projets SharePoint
 
-1. Dans le <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectExtension.Initialize%2A> méthode de votre <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectExtension> implémentation, gérez le <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectEvents.ProjectMenuItemsRequested> événements de la *projectService* paramètre.
+1. Dans la <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectExtension.Initialize%2A> méthode de votre <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectExtension> implémentation, gérez l' <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectEvents.ProjectMenuItemsRequested> événement du paramètre *ProjectService* .
 
-2. Dans votre gestionnaire d’événements pour le <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectEvents.ProjectMenuItemsRequested> événement, ajoutez une nouvelle <xref:Microsoft.VisualStudio.SharePoint.IMenuItem> de l’objet à la <xref:Microsoft.VisualStudio.SharePoint.SharePointProjectMenuItemsRequestedEventArgs.ActionMenuItems%2A> ou <xref:Microsoft.VisualStudio.SharePoint.SharePointProjectMenuItemsRequestedEventArgs.AddMenuItems%2A> collection l’arguments du paramètre d’événement.
+2. Dans votre gestionnaire d’événements pour l' <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectEvents.ProjectMenuItemsRequested> événement, ajoutez un nouvel <xref:Microsoft.VisualStudio.SharePoint.IMenuItem> objet à <xref:Microsoft.VisualStudio.SharePoint.SharePointProjectMenuItemsRequestedEventArgs.ActionMenuItems%2A> la <xref:Microsoft.VisualStudio.SharePoint.SharePointProjectMenuItemsRequestedEventArgs.AddMenuItems%2A> collection ou du paramètre d’arguments d’événement.
 
-3. Dans le <xref:Microsoft.VisualStudio.SharePoint.IMenuItem.Click> Gestionnaire d’événements pour le nouveau <xref:Microsoft.VisualStudio.SharePoint.IMenuItem> de l’objet, effectuez les tâches à exécuter lorsqu’un utilisateur clique sur votre élément de menu contextuel.
+3. Dans le <xref:Microsoft.VisualStudio.SharePoint.IMenuItem.Click> Gestionnaire d’événements du nouvel <xref:Microsoft.VisualStudio.SharePoint.IMenuItem> objet, effectuez les tâches que vous souhaitez exécuter lorsqu’un utilisateur clique sur l’élément de menu contextuel.
 
 ## <a name="example"></a>Exemple
- L’exemple de code suivant montre comment ajouter un élément de menu contextuel aux nœuds de projet SharePoint de **l’Explorateur de solutions**. Lorsque l’utilisateur clique sur un nœud de projet et clique sur le **écrire le Message dans la fenêtre sortie** élément de menu, Visual Studio affiche un message dans le **sortie** fenêtre. Cet exemple utilise le service de projet SharePoint pour afficher le message. Pour plus d’informations, consultez [utiliser le service de projet SharePoint](../sharepoint/using-the-sharepoint-project-service.md).
+ L’exemple de code suivant montre comment ajouter un élément de menu contextuel à des nœuds de projet SharePoint dans **Explorateur de solutions**. Quand l’utilisateur clique avec le bouton droit sur un nœud de projet et clique sur l’élément **de menu écrire un message dans fenêtre Sortie** , Visual Studio affiche un message dans la fenêtre **sortie** . Cet exemple utilise le service de projet SharePoint pour afficher le message. Pour plus d’informations, consultez [utiliser le service de projet SharePoint](../sharepoint/using-the-sharepoint-project-service.md).
 
  [!code-csharp[SPExtensibility.ProjectExtension.Menu#1](../sharepoint/codesnippet/CSharp/projectmenu/extension/projectitemextensionmenu.cs#1)]
  [!code-vb[SPExtensibility.ProjectExtension.Menu#1](../sharepoint/codesnippet/VisualBasic/projectmenu/extension/projectitemextensionmenu.vb#1)]
 
 ## <a name="compile-the-code"></a>Compiler le code
- Cet exemple requiert un projet de bibliothèque de classes avec des références aux assemblys suivants :
+ Cet exemple nécessite un projet de bibliothèque de classes avec des références aux assemblys suivants :
 
-- Microsoft.VisualStudio.SharePoint
+- Microsoft. VisualStudio. SharePoint
 
 - System.ComponentModel.Composition
 
@@ -52,5 +51,5 @@ ms.locfileid: "62967120"
 
 ## <a name="see-also"></a>Voir aussi
 - [Étendre des projets SharePoint](../sharepoint/extending-sharepoint-projects.md)
-- [Guide pratique pour Créer une extension de projet SharePoint](../sharepoint/how-to-create-a-sharepoint-project-extension.md)
-- [Guide pratique pour Ajouter une propriété à des projets SharePoint](../sharepoint/how-to-add-a-property-to-sharepoint-projects.md)
+- [Comment : créer une extension de projet SharePoint](../sharepoint/how-to-create-a-sharepoint-project-extension.md)
+- [Comment : ajouter une propriété à des projets SharePoint](../sharepoint/how-to-add-a-property-to-sharepoint-projects.md)

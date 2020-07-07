@@ -1,7 +1,7 @@
 ---
 title: Déboguer une application SharePoint à l’aide d’IntelliTrace
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -16,12 +16,11 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: fe1130880db42e920e656d5efef1ea6a5af4d2d0
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
-ms.translationtype: MT
+ms.openlocfilehash: 041a110ee39ae7711756b8d689bdf68ae2368caf
+ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72984144"
+ms.lasthandoff: 07/06/2020
+ms.locfileid: "86015755"
 ---
 # <a name="walkthrough-debug-a-sharepoint-application-by-using-intellitrace"></a>Procédure pas à pas : déboguer une application SharePoint à l’aide d’IntelliTrace
 
@@ -31,11 +30,11 @@ Avec IntelliTrace, vous pouvez déboguer plus facilement des solutions SharePoin
 
  **S’applique à :** Les informations contenues dans cette rubrique s’appliquent aux solutions SharePoint 2010 et SharePoint 2013 qui ont été créées dans Visual Studio.
 
- Cette procédure pas à pas décrit les tâches suivantes :
+ Cette procédure pas à pas décrit les tâches suivantes :
 
 - [Créer un récepteur de fonctionnalité](#create-a-feature-receiver)
 
-- [Ajouter du code au récepteur de fonctionnalité](#add-code-to-the-feature-receiver)
+- [Ajouter le code au récepteur de fonctionnalité](#add-code-to-the-feature-receiver)
 
 - [Tester le projet](#test-the-project)
 
@@ -45,9 +44,9 @@ Avec IntelliTrace, vous pouvez déboguer plus facilement des solutions SharePoin
 
   [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]
 
-## <a name="prerequisites"></a>Configuration requise
+## <a name="prerequisites"></a>Prérequis
 
-Pour exécuter cette procédure pas à pas, vous devez disposer des composants suivants :
+Vous devez disposer des éléments suivants pour exécuter cette procédure pas à pas :
 
 - Éditions prises en charge de Windows et SharePoint.
 
@@ -73,9 +72,9 @@ Tout d’abord, vous créez un projet SharePoint vide qui possède un récepteur
 
 ## <a name="add-code-to-the-feature-receiver"></a>Ajouter du code au récepteur de fonctionnalité
 
-Ensuite, ajoutez du code à deux méthodes dans le récepteur de fonctionnalité : `FeatureActivated` et `FeatureDeactivating`. Ces méthodes se déclenchent lorsqu’une fonctionnalité est activée ou désactivée dans SharePoint, respectivement.
+Ensuite, ajoutez du code à deux méthodes dans le récepteur de fonctionnalité : `FeatureActivated` et `FeatureDeactivating` . Ces méthodes se déclenchent lorsqu’une fonctionnalité est activée ou désactivée dans SharePoint, respectivement.
 
-1. En haut de la classe `Feature1EventReceiver`, ajoutez le code suivant, qui déclare les variables qui spécifient le site et le sous-site SharePoint :
+1. En haut de la `Feature1EventReceiver` classe, ajoutez le code suivant, qui déclare les variables qui spécifient le site et le sous-site SharePoint :
 
     ```vb
     ' SharePoint site and subsite.
@@ -295,7 +294,7 @@ Si vous installez Microsoft Monitoring Agent sur le système qui exécute ShareP
 
 3. Dans la fenêtre PowerShell, exécutez la commande [Stop-WebApplicationMonitoring](/previous-versions/system-center/powershell/system-center-2012-r2/dn472753(v=sc.20)) pour créer le fichier. iTrace, arrêtez la surveillance, puis redémarrez votre solution SharePoint.
 
-     **Stop-WebApplicationMonitoring**  *"\<SharePointSite >\\< SharePointAppName\>"*
+     **Stop-WebApplicationMonitoring***« \<SharePointSite> \\<SharePointAppName \> »*  
 
 ## <a name="debug-and-fix-the-sharepoint-solution"></a>Déboguer et corriger la solution SharePoint
 

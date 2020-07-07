@@ -1,7 +1,7 @@
 ---
 title: 'Comment : marquer des contrôles comme des contrôles sécurisés | Microsoft Docs'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -14,17 +14,16 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 232fef4908a6168d550d510a0d753fe8e39db02b
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
-ms.translationtype: MT
+ms.openlocfilehash: cd7ed13504d3d91f4239a8ea070454e1c31b1114
+ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72982726"
+ms.lasthandoff: 07/06/2020
+ms.locfileid: "86016260"
 ---
 # <a name="how-to-mark-controls-as-safe-controls"></a>Comment : marquer des contrôles comme des contrôles sécurisés
-  Pour la sécurité, SharePoint fait la distinction entre les contrôles Web protégés contre l’injection de scripts et les contrôles Web qui ne le sont pas. Les contrôles protégés, ou *contrôles sécurisés*, sont accessibles aux utilisateurs non approuvés. Vous pouvez marquer des contrôles comme sécurisés dans la propriété entrées de contrôle sécurisé d’un élément de projet SharePoint ou dans le **Concepteur de packages** lorsque vous ajoutez un assembly au package. Pour plus d'informations, voir
+  Pour la sécurité, SharePoint fait la distinction entre les contrôles Web protégés contre l’injection de scripts et les contrôles Web qui ne le sont pas. Les contrôles protégés, ou *contrôles sécurisés*, sont accessibles aux utilisateurs non approuvés. Vous pouvez marquer des contrôles comme sécurisés dans la propriété entrées de contrôle sécurisé d’un élément de projet SharePoint ou dans le **Concepteur de packages** lorsque vous ajoutez un assembly au package. Pour plus d'informations, consultez la rubrique
 
-- les [paramètres du fichier Web. config changent](/previous-versions/office/developer/sharepoint-2007/bb802890(v=office.12)) et [inscrivent un assembly de composant WebPart en tant que contrôle sécurisé](/previous-versions/office/developer/sharepoint2003/dd587360(v=office.11)).
+- [web.config les paramètres de fichier changent](/previous-versions/office/developer/sharepoint-2007/bb802890(v=office.12)) et [inscrivent un assembly de composant WebPart en tant que contrôle sécurisé](/previous-versions/office/developer/sharepoint2003/dd587360(v=office.11)).
 
 > [!IMPORTANT]
 > Ces procédures sont fournies à titre d’illustration. Marquez les contrôles comme sécurisés uniquement si vous êtes certain qu’ils sont sécurisés.
@@ -63,7 +62,7 @@ ms.locfileid: "72982726"
 
      Prenez note de l’espace de noms du contrôle, car il est utilisé ultérieurement.
 
-3. Dans la barre de menus, choisissez **générer** > **générer la solution** pour générer le projet.
+3. Dans la barre de menus, choisissez **générer**  >  **générer la solution** pour générer le projet.
 
 4. Créez une autre solution SharePoint.
 
@@ -85,12 +84,12 @@ ms.locfileid: "72982726"
 
 12. Entrez les valeurs des propriétés à partir du tableau suivant.
 
-    |Nom de propriété|valeur|
+    |Nom de la propriété|Valeur|
     |-------------------|-----------|
     |Espace de noms|Espace de noms qualifié complet pour le contrôle, tel que **BdcModelProject1. VisualWebPart1**.|
     |Nom de type|Button1|
     |Nom de l'assembly|Un nom d’assembly fort, tel que : Microsoft. Office. SharePoint. ClientExtensions, version = 14.0.0.0, culture = neutral, PublicKeyToken = 71e9bce111e9429c.|
-    |Safe|Désactivez la case à cocher **sécurisé** .|
+    |Sécurisé|Désactivez la case à cocher **sécurisé** .|
     |Protégé contre les scripts|Laissez la case à cocher **sécuriser contre les scripts** désactivée.|
 
     > [!NOTE]
@@ -102,12 +101,12 @@ ms.locfileid: "72982726"
 
 15. Entrez les valeurs des propriétés à partir du tableau suivant.
 
-    |Nom de propriété|valeur|
+    |Nom de la propriété|Valeur|
     |-------------------|-----------|
     |Espace de noms|Espace de noms qualifié complet pour le contrôle, tel que **BdcModelProject1. VisualWebPart1**.|
     |Nom de type|TextBox1|
     |Nom de l'assembly|Un nom d’assembly fort, tel que : Microsoft. Office. SharePoint. ClientExtensions, version = 14.0.0.0, culture = neutral, PublicKeyToken = 71e9bce111e9429c.|
-    |Safe|Activez la case à cocher **sécurisé** .|
+    |Sécurisé|Activez la case à cocher **sécurisé** .|
     |Protégé contre les scripts|Activez la case à cocher **protégé contre les scripts** .|
 
 16. Choisissez la touche **Tab** , puis choisissez le bouton **OK** pour fermer la boîte de dialogue.
