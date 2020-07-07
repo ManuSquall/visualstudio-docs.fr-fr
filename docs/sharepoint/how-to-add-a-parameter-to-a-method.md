@@ -1,7 +1,7 @@
 ---
 title: 'Comment : ajouter un paramètre à une méthode | Microsoft Docs'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -17,12 +17,11 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: eb1a1c1e8f11ac6daa46f9fe1468a1ff3509e135
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
-ms.translationtype: MT
+ms.openlocfilehash: 6d0496d0fd6a347683d56630990e50af585520ba
+ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72986235"
+ms.lasthandoff: 07/06/2020
+ms.locfileid: "86016709"
 ---
 # <a name="how-to-add-a-parameter-to-a-method"></a>Comment : ajouter un paramètre à une méthode
   Utilisez un paramètre pour passer des informations dans la méthode ou pour retourner des informations à partir d’une méthode. Toutes les méthodes doivent avoir au moins un paramètre. Pour plus d’informations sur la conception d’un paramètre pour prendre en charge le type de méthode que vous souhaitez créer, consultez [conception d’un modèle de connectivité de données métiers](../sharepoint/designing-a-business-data-connectivity-model.md).
@@ -33,7 +32,7 @@ ms.locfileid: "72986235"
 
 1. Ajoutez une méthode à une entité.
 
-2. Dans la barre de menus, choisissez **afficher** > **autres Windows > les** détails de la **méthode BDC**.
+2. Dans la barre de menus, choisissez **Afficher**  >  **les autres**détails de la  >  **méthode BDC**Windows.
 
      La fenêtre Détails de la **méthode BDC** s’ouvre. Pour plus d’informations, consultez [vue d’ensemble des outils de conception de modèle BDC](../sharepoint/bdc-model-design-tools-overview.md).
 
@@ -43,7 +42,7 @@ ms.locfileid: "72986235"
 
      Un nouveau paramètre apparaît sous le nœud **paramètres** .
 
-5. Dans la barre de menus, choisissez **afficher** > **fenêtre Propriétés**.
+5. Dans la barre de menus, choisissez **Afficher**la  >  **fenêtre Propriétés**.
 
 6. Dans la fenêtre **Propriétés** , affectez à la propriété **nom** n’importe quel nom qui est pertinent. Par exemple, si la méthode retourne des clients, vous pouvez nommer la méthode **GetCustomers**.
 

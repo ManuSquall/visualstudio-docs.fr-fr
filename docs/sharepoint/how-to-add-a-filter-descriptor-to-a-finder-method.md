@@ -1,7 +1,7 @@
 ---
 title: 'Comment : ajouter un descripteur de filtre à une méthode de recherche | Microsoft Docs'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -15,12 +15,11 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f9dd853142d970cd14de20f4782accb3ce3e17eb
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
-ms.translationtype: MT
+ms.openlocfilehash: 228afb2f49f4d528fa9b806e9bf8d2531f7de901
+ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72986247"
+ms.lasthandoff: 07/06/2020
+ms.locfileid: "86016734"
 ---
 # <a name="how-to-add-a-filter-descriptor-to-a-finder-method"></a>Comment : ajouter un descripteur de filtre à une méthode de recherche
   Les descripteurs de filtre permettent aux consommateurs du modèle de passer des valeurs aux méthodes avant leur exécution. Pour plus d’informations, consultez [concevoir un modèle de connectivité de données métiers](../sharepoint/designing-a-business-data-connectivity-model.md).
@@ -33,7 +32,7 @@ ms.locfileid: "72986247"
 
 2. Dans la fenêtre **Détails de méthode** , choisissez le descripteur de type du paramètre.
 
-3. Dans la barre de menus, choisissez **afficher** > **fenêtre Propriétés**.
+3. Dans la barre de menus, choisissez **Afficher**la  >  **fenêtre Propriétés**.
 
 4. Dans la fenêtre **Propriétés** , définissez la propriété **nom du type** sur un type de données approprié pour le filtre.
 
@@ -45,7 +44,7 @@ ms.locfileid: "72986247"
 
      Un nouveau descripteur de filtre apparaît sous le nœud **descripteurs de filtre** .
 
-7. Dans la barre de menus, choisissez **afficher** > **fenêtre Propriétés**.
+7. Dans la barre de menus, choisissez **Afficher**la  >  **fenêtre Propriétés**.
 
 8. Dans la fenêtre **Propriétés** , choisissez la propriété **type** .
 
@@ -62,7 +61,7 @@ ms.locfileid: "72986247"
      L’exemple suivant retourne les commandes client qui ont la date de commande spécifiée.
 
     > [!NOTE]
-    > Remplacez la valeur du champ `ServerName` par le nom de votre serveur.
+    > Remplacez la valeur du `ServerName` champ par le nom de votre serveur.
 
      [!code-csharp[SP_BDC#11](../sharepoint/codesnippet/CSharp/SP_BDC/bdcmodel1/salesorderservice.cs#11)]
      [!code-vb[SP_BDC#11](../sharepoint/codesnippet/VisualBasic/sp_bdc/bdcmodel1/salesorderservice.vb#11)]

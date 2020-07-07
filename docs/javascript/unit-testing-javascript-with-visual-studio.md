@@ -1,7 +1,7 @@
 ---
 title: Tests unitaires JavaScript et TypeScript
 description: Visual Studio fournit la prise en charge des tests unitaires du code JavaScript et TypeScript à l’aide de Node.js Tools pour Visual Studio
-ms.date: 06/06/2018
+ms.date: 07/06/2020
 ms.topic: how-to
 ms.devlang: javascript
 author: mikejo5000
@@ -11,12 +11,11 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: acac3eb306d12ff6976e19ae5dc1ad772691094c
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
-ms.translationtype: MT
+ms.openlocfilehash: cdaff34c7eb2f9eba7c075127647c2eacbb736f9
+ms.sourcegitcommit: bcddb4647815e9ce2e175d9258e8df1b795e3e85
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85288999"
+ms.lasthandoff: 07/07/2020
+ms.locfileid: "86033349"
 ---
 # <a name="unit-testing-javascript-and-typescript-in-visual-studio"></a>Test unitaire JavaScript et TypeScript dans Visual Studio
 
@@ -72,25 +71,32 @@ Après l’ouverture de l’Explorateur de tests (choisissez **tester**l’Explo
 ![Explorateur de tests](../javascript/media/UnitTestsDiscoveryMocha.png)
 
 > [!NOTE]
-> N’utilisez pas l’option `outdir` ni `outfile` dans *tsconfig.json*, car l’Explorateur de tests ne sera pas en mesure de trouver vos tests unitaires dans les fichiers TypeScript.
+> Pour la machine à écrire, n’utilisez pas l' `outdir` `outfile` option ou dans *tsconfig.js*, car l’Explorateur de tests ne pourra pas trouver vos tests unitaires.
 
 ## <a name="run-tests"></a>Exécuter les tests
 
-Vous pouvez exécuter des tests dans Visual Studio 2017 ou à partir de la ligne de commande.
+Vous pouvez exécuter des tests dans Visual Studio ou à partir de la ligne de commande.
 
-### <a name="run-tests-in-visual-studio-2017"></a>Exécuter des tests dans Visual Studio 2017
+### <a name="run-tests-in-visual-studio"></a>Exécuter des tests dans Visual Studio
 
+::: moniker range=">=vs-2019"
+Vous pouvez exécuter les tests en cliquant sur le lien **Exécuter tout** dans l’Explorateur de tests. Ou bien, vous pouvez exécuter des tests en sélectionnant un ou plusieurs tests ou groupes, en cliquant avec le bouton droit et en sélectionnant **exécuter** dans le menu contextuel. Les tests sont exécutés en arrière-plan et l’Explorateur de tests met automatiquement à jour et affiche les résultats. En outre, vous pouvez également déboguer les tests sélectionnés en cliquant avec le bouton droit et en sélectionnant **Déboguer**.
+::: moniker-end
+::: moniker range="vs-2017"
 Vous pouvez exécuter les tests en cliquant sur le lien **Exécuter tout** dans l’Explorateur de tests. Vous pouvez aussi exécuter des tests en sélectionnant un ou plusieurs tests ou groupes, en effectuant un clic droit, puis en sélectionnant **Exécuter les tests sélectionnés** dans le menu contextuel. Les tests sont exécutés en arrière-plan et l’Explorateur de tests met automatiquement à jour et affiche les résultats. En outre, vous pouvez également déboguer les tests sélectionnés en sélectionnant **Déboguer les tests sélectionnés**.
+::: moniker-end
 
-> [!Warning]
-> Le débogage des tests unitaires à l’aide de Node 8+ fonctionne pour l’instant uniquement avec les fichiers de test JavaScript ; les fichiers de test TypeScript ne parviennent pas à atteindre les points d’arrêt. Pour résoudre ce problème, utilisez le mot clé `debugger`.
+Pour la machine à écrire, les tests unitaires sont exécutés sur le code JavaScript généré.
+
+> [!NOTE]
+> Dans la plupart des scénarios de création d’une machine à écrire, vous pouvez déboguer un test unitaire en définissant un point d’arrêt dans le **Debug**code machine à écrire, en cliquant avec le bouton droit sur un test dans l’Explorateur de tests, puis Dans les scénarios plus complexes, tels que certains scénarios qui utilisent des mappages de source, vous pouvez avoir des difficultés à atteindre des points d’arrêt dans le code machine à écrire. Pour résoudre ce problème, essayez d’utiliser le `debugger` mot clé.
 
 > [!NOTE]
 > Nous ne prenons actuellement pas en charge les tests de profilage, ou couverture du code.
 
 ### <a name="run-tests-from-the-command-line"></a>Exécuter des tests à partir de la ligne de commande
 
-Vous pouvez exécuter les tests à partir de [l’invite de commandes développeur](/dotnet/framework/tools/developer-command-prompt-for-vs) pour Visual Studio 2017 à l’aide de la commande suivante :
+Vous pouvez exécuter les tests à partir de l' [invite de commandes développeur](/dotnet/framework/tools/developer-command-prompt-for-vs) pour Visual Studio à l’aide de la commande suivante :
 
 ```
 vstest.console.exe <path to project file>\NodejsConsoleApp23.njsproj /TestAdapterPath:<VisualStudioFolder>\Common7\IDE\Extensions\Microsoft\NodeJsTools\TestAdapter

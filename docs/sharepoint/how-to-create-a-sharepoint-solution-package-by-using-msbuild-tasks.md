@@ -1,7 +1,7 @@
 ---
-title: Créer le package de solution SharePoint à l’aide de tâches MSBuild
+title: Créer un package de solution SharePoint à l’aide de tâches MSBuild
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -12,25 +12,24 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 432daff22616950e0a97164190a94082bf2db354
-ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
-ms.translationtype: MT
+ms.openlocfilehash: c59a38e1153a57c1bd886121eeac244075045a42
+ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/30/2019
-ms.locfileid: "66401495"
+ms.lasthandoff: 07/06/2020
+ms.locfileid: "86017018"
 ---
-# <a name="how-to-create-a-sharepoint-solution-package-by-using-msbuild-tasks"></a>Procédure : Créer un Package de Solution SharePoint à l’aide de tâches MSBuild
-  Vous pouvez générer, nettoyer et valider un package SharePoint ( *.wsp*) à l’aide des tâches MSBuild de ligne de commande sur un ordinateur de développement. Vous pouvez également utiliser ces commandes pour automatiser le processus de génération à l’aide de Team Foundation Server sur un ordinateur de build.
+# <a name="how-to-create-a-sharepoint-solution-package-by-using-msbuild-tasks"></a>Comment : créer un package de solution SharePoint à l’aide de tâches MSBuild
+  Vous pouvez générer, nettoyer et valider un package SharePoint (*. wsp*) à l’aide de tâches MSBuild de ligne de commande sur un ordinateur de développement. Vous pouvez également utiliser ces commandes pour automatiser le processus de génération à l’aide de Team Foundation Server sur un ordinateur de Build.
 
 ## <a name="build-a-sharepoint-package"></a>Créer un package SharePoint
 
-#### <a name="to-build-a-sharepoint-package"></a>Pour générer un package SharePoint
+#### <a name="to-build-a-sharepoint-package"></a>Pour créer un package SharePoint
 
-1. Sur le Windows **Démarrer** menu, choisissez **tous les programmes** > **Accessoires** > **invite de commandes**.
+1. Dans le menu **Démarrer** de Windows, choisissez **tous les programmes**  >  **accessoires**  >  **invite de commandes**.
 
 2. Accédez au répertoire où se trouve votre projet SharePoint.
 
-3. Entrez la commande suivante pour créer un package pour le projet. Remplacez *ProjectFileName* avec le nom du projet.
+3. Entrez la commande suivante pour créer un package pour le projet. Remplacez *ProjectFileName* par le nom du projet.
 
     ```cmd
     msbuild /t:Package ProjectFileName
@@ -47,11 +46,11 @@ ms.locfileid: "66401495"
 
 #### <a name="to-clean-a-sharepoint-package"></a>Pour nettoyer un package SharePoint
 
-1. Ouvrez une fenêtre d’invite de commandes.
+1. Ouvrir une fenêtre d’invite de commandes.
 
 2. Accédez au répertoire où se trouve votre projet SharePoint.
 
-3. Entrez la commande suivante pour nettoyer un package pour le projet. Remplacez *ProjectFileName* avec le nom du projet.
+3. Entrez la commande suivante pour nettoyer un package pour le projet. Remplacez *ProjectFileName* par le nom du projet.
 
     ```cmd
     msbuild /t:CleanPackage ProjectFileName
@@ -68,11 +67,11 @@ ms.locfileid: "66401495"
 
 #### <a name="to-validate-a-sharepoint-package"></a>Pour valider un package SharePoint
 
-1. Ouvrez une fenêtre d’invite de commandes.
+1. Ouvrir une fenêtre d’invite de commandes.
 
 2. Accédez au répertoire où se trouve votre projet SharePoint.
 
-3. Entrez la commande suivante pour valider un package pour le projet. Remplacez *ProjectFileName* avec le nom du projet.
+3. Entrez la commande suivante pour valider un package pour le projet. Remplacez *ProjectFileName* par le nom du projet.
 
     ```cmd
     msbuild /t:ValidatePackage ProjectFileName
@@ -85,27 +84,27 @@ ms.locfileid: "66401495"
     msbuild /t:ValidatePackage ListDefinition1.csproj
     ```
 
-## <a name="set-properties-in-a-sharepoint-package"></a>Définir les propriétés dans un package SharePoint
+## <a name="set-properties-in-a-sharepoint-package"></a>Définir des propriétés dans un package SharePoint
 
 #### <a name="to-set-a-property-in-a-sharepoint-package"></a>Pour définir une propriété dans un package SharePoint
 
-1. Ouvrez une fenêtre d’invite de commandes.
+1. Ouvrir une fenêtre d’invite de commandes.
 
 2. Accédez au répertoire où se trouve votre projet SharePoint.
 
-3. Entrez la commande suivante pour définir une propriété dans un package pour le projet. Remplacez *PropertyName* avec la propriété que vous souhaitez définir.
+3. Entrez la commande suivante pour définir une propriété dans un package pour le projet. Remplacez *PropertyName* par la propriété que vous souhaitez définir.
 
     ```cmd
     msbuild /property:PropertyName=Value
     ```
 
-     Par exemple, vous pouvez exécutez la commande suivante pour définir le niveau d’avertissement.
+     Par exemple, vous pouvez exécuter la commande suivante pour définir le niveau d’avertissement.
 
     ```cmd
     msbuild /property:WarningLevel = 2
     ```
 
 ## <a name="see-also"></a>Voir aussi
-- [Créer des fonctionnalités de SharePoint](../sharepoint/creating-sharepoint-features.md)
-- [Guide pratique pour Personnaliser une fonctionnalité SharePoint](../sharepoint/how-to-customize-a-sharepoint-feature.md)
-- [Guide pratique pour Ajouter et supprimer des éléments dans des fonctionnalités SharePoint](../sharepoint/how-to-add-and-remove-items-to-sharepoint-features.md)
+- [Créer des fonctionnalités SharePoint](../sharepoint/creating-sharepoint-features.md)
+- [Comment : personnaliser une fonctionnalité SharePoint](../sharepoint/how-to-customize-a-sharepoint-feature.md)
+- [Comment : ajouter et supprimer des éléments dans des fonctionnalités SharePoint](../sharepoint/how-to-add-and-remove-items-to-sharepoint-features.md)

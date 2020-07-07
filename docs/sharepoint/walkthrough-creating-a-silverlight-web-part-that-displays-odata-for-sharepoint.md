@@ -1,7 +1,7 @@
 ---
 title: Créer un composant WebPart Silverlight affichant OData pour SharePoint
 ms.date: 02/22/2017
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - VS.SharePointTools.SPE.SilverlightWebPart
 dev_langs:
@@ -12,24 +12,23 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: bd2e42f48a6881b533a2f098e47ac92511b85aa3
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
-ms.translationtype: MT
+ms.openlocfilehash: 75653f0357bcc605e666ee271a527b616985b641
+ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72984822"
+ms.lasthandoff: 07/06/2020
+ms.locfileid: "86017170"
 ---
 # <a name="walkthrough-create-a-silverlight-web-part-that-displays-odata-for-sharepoint"></a>Procédure pas à pas : créer un composant WebPart Silverlight qui affiche OData pour SharePoint
   SharePoint 2010 expose ses données de liste au moyen d’OData. Dans SharePoint, le service OData est implémenté par le service RESTful ListData. svc. Cette procédure pas à pas montre comment créer un composant WebPart SharePoint qui héberge une application Silverlight. L’application Silverlight affiche les informations de liste d’annonces SharePoint à l’aide de ListData. svc. Pour plus d’informations, consultez [interface REST de SharePoint Foundation](/previous-versions/office/developer/sharepoint-2010/ff521587(v=office.14)) et [Open Data Protocol](https://www.odata.org/).
 
  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]
 
-## <a name="prerequisites"></a>Configuration requise
- Pour exécuter cette procédure pas à pas, vous devez disposer des composants suivants :
+## <a name="prerequisites"></a>Prérequis
+ Vous devez disposer des éléments suivants pour exécuter cette procédure pas à pas :
 
 - Éditions prises en charge de Microsoft Windows et SharePoint.
 
-- [!INCLUDE[vs_dev11_long](../sharepoint/includes/vs-dev11-long-md.md)].,
+- [!INCLUDE[vs_dev11_long](../sharepoint/includes/vs-dev11-long-md.md)].
 
 ## <a name="create-a-silverlight-application-and-silverlight-web-part"></a>Créer une application Silverlight et un composant WebPart Silverlight
  Tout d’abord, créez une application Silverlight dans Visual Studio. L’application Silverlight récupère les données de la liste des annonces SharePoint à l’aide du service ListData. svc.
@@ -39,9 +38,9 @@ ms.locfileid: "72984822"
 
 #### <a name="to-create-a-silverlight-application-and-silverlight-web-part"></a>Pour créer une application Silverlight et un composant WebPart Silverlight
 
-1. Dans la barre de menus, choisissez **fichier**  > **nouveau**  > **projet** pour afficher la boîte de dialogue **nouveau projet** .
+1. Dans la barre de menus, choisissez **fichier**  >  **nouveau**  >  **projet** pour afficher la boîte de dialogue **nouveau projet** .
 
-2. Développez le nœud **SharePoint** sous **Visual C#**  ou **Visual Basic**, puis choisissez le nœud **2010** .
+2. Développez le nœud **SharePoint** sous **Visual C#** ou **Visual Basic**, puis choisissez le nœud **2010** .
 
 3. Dans le volet modèles, choisissez le modèle **WebPart Silverlight SharePoint 2010** .
 
@@ -57,9 +56,9 @@ ms.locfileid: "72984822"
 
 7. Dans la section **Comment voulez-vous associer le composant WebPart Silverlight** de la page **spécifier les informations de configuration Silverlight** , sélectionnez la case d’option **créer un nouveau projet Silverlight et l’associer au composant WebPart** .
 
-8. Remplacez le **nom** par **SLApplication**, définissez **Language** sur **Visual Basic** ou **Visual C#** , puis définissez la version de **Silverlight** sur **Silverlight 4,0**.
+8. Remplacez le **nom** par **SLApplication**, définissez **Language** sur **Visual Basic** ou **Visual C#**, puis définissez version de **Silverlight** sur **Silverlight 4,0**.
 
-9. Choisissez le bouton **Terminer** . Les projets s’affichent dans **Explorateur de solutions**.
+9. Cliquez sur le bouton **Terminer**. Les projets s’affichent dans **Explorateur de solutions**.
 
      La solution contient deux projets : une application Silverlight et un composant WebPart Silverlight. L’application Silverlight récupère et affiche les données de liste à partir de SharePoint, et le composant WebPart Silverlight héberge l’application Silverlight, ce qui vous permet de l’afficher dans SharePoint.
 
@@ -77,13 +76,13 @@ ms.locfileid: "72984822"
 
 3. Dans la zone adresse de la boîte de dialogue **Ajouter une référence de service** , entrez l’URL de votre site SharePoint, par exemple **http://MySPSite** , puis choisissez le bouton **OK** .
 
-     Lorsque Silverlight localise le service OData SharePoint ListData. svc, il remplace l’adresse par l’URL de service complète. Pour cet exemple, http://myserver devient http://myserver/_vti_bin/ListData.svc.
+     Lorsque Silverlight localise le service OData SharePoint ListData. svc, il remplace l’adresse par l’URL de service complète. Pour cet exemple, http://myserver devient http://myserver/_vti_bin/ListData.svc .
 
 4. Choisissez le bouton **OK** pour ajouter la référence de service au projet et utilisez le nom de service par défaut, ServiceReference1.
 
-5. Dans la barre de menus, choisissez **Générer**  >  **Générer la solution**.
+5. Dans la barre de menus, choisissez **générer**  >  **générer la solution**.
 
-6. Ajoutez une nouvelle source de données au projet basé sur le service SharePoint. Pour ce faire, dans la barre de menus, choisissez **afficher**  >  autres**sources de données** **Windows**  > .
+6. Ajoutez une nouvelle source de données au projet basé sur le service SharePoint. Pour ce faire, dans la barre de menus, choisissez **Afficher**d'  >  **autres**  >  **sources de données**Windows.
 
      La fenêtre **sources de données** affiche toutes les données de liste SharePoint disponibles, telles que les tâches, les annonces et le calendrier.
 
@@ -93,7 +92,7 @@ ms.locfileid: "72984822"
 
 8. Redimensionnez le contrôle de grille en fonction de la page Silverlight.
 
-9. Dans le fichier de code MainPage. XAML (*MainPage.Xaml.cs* pour C# Visual ou *MainPage. Xaml. vb* pour Visual Basic), ajoutez les références d’espace de noms suivantes.
+9. Dans le fichier de code MainPage. XAML (*MainPage.Xaml.cs* pour Visual C# ou *MainPage. Xaml. vb* pour Visual Basic), ajoutez les références d’espace de noms suivantes.
 
     ```vb
     ' Add the following three Imports statements.
@@ -123,7 +122,7 @@ ms.locfileid: "72984822"
     DataServiceCollection<AnnouncementsItem> announcements = new DataServiceCollection<AnnouncementsItem>();
     ```
 
-11. Remplacez la procédure `UserControl_Loaded` par le code suivant.
+11. Remplacez la `UserControl_Loaded` procédure par le code suivant.
 
     ```vb
     Private Sub UserControl_Loaded_1(sender As Object, e As RoutedEventArgs)

@@ -1,7 +1,7 @@
 ---
 title: 'Comment : ajouter une entité à un modèle | Microsoft Docs'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - EntityTool
 dev_langs:
@@ -17,12 +17,11 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b1a7ec1eab5cdcf2e415a4803c51c9da91be29c9
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
-ms.translationtype: MT
+ms.openlocfilehash: b80f39494b98014a75d4265f228906be2ff45188
+ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72985244"
+ms.lasthandoff: 07/06/2020
+ms.locfileid: "86016669"
 ---
 # <a name="how-to-add-an-entity-to-a-model"></a>Comment : ajouter une entité à un modèle
   Pour créer une entité, ajoutez un contrôle d’entité à partir de la **boîte à outils** Visual Studio sur le concepteur de connectivité de données métiers (BDC).
@@ -33,7 +32,7 @@ ms.locfileid: "72985244"
 
 2. Dans la **boîte à outils**, à partir du groupe **BusinessDataCatalog** , ajoutez un contrôle d' **entité** sur le concepteur.
 
-     La nouvelle entité s’affiche sur le concepteur. Visual Studio ajoute un élément `<Entity>` au code XML du fichier de modèle BDC dans votre projet. Pour plus d’informations sur les attributs d’un élément d’entité, consultez [entité](/previous-versions/office/developer/sharepoint-2010/ee558325(v=office.14)).
+     La nouvelle entité s’affiche sur le concepteur. Visual Studio ajoute un `<Entity>` élément au XML du fichier de modèle BDC dans votre projet. Pour plus d’informations sur les attributs d’un élément d’entité, consultez [entité](/previous-versions/office/developer/sharepoint-2010/ee558325(v=office.14)).
 
 3. Dans le concepteur, ouvrez le menu contextuel de l’entité, choisissez **Ajouter**, puis **identificateur**.
 

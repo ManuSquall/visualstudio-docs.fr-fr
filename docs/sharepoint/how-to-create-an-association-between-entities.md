@@ -1,7 +1,7 @@
 ---
 title: 'Comment : créer une association entre des entités | Microsoft Docs'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - AssociationGroupTool
 dev_langs:
@@ -21,12 +21,11 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: cba9d712e2bcfa90ae37d47e3c518697f10b6add
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
-ms.translationtype: MT
+ms.openlocfilehash: 75d4fcc9b99c9c5e2960e152eb5dac1da1343109
+ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72981835"
+ms.lasthandoff: 07/06/2020
+ms.locfileid: "86016930"
 ---
 # <a name="how-to-create-an-association-between-entities"></a>Comment : créer une association entre des entités
   Vous pouvez définir des relations entre des entités dans votre modèle de connectivité de données métiers (BDC) en créant des associations. Visual Studio génère des méthodes qui fournissent aux consommateurs du modèle des informations sur chaque association. Ces méthodes peuvent être consommées par des composants WebPart SharePoint, des listes ou des applications personnalisées pour afficher les relations de données dans une interface utilisateur (IU).
@@ -45,11 +44,11 @@ ms.locfileid: "72981835"
 
     1. Dans la colonne **ID source** de la table de **mappage des identificateurs** , choisissez l’identificateur en regard de chaque descripteur de type correspondant qui apparaît dans la colonne **champ** .
 
-         Par exemple, dans la colonne **ID source** , sélectionnez `ContactID` en regard du descripteur de type `ReadList.salesOrderList.SalesOrderList.SalesOrder.ContactID` et du descripteur de type de `ReadItem.salesOrder.SalesOrder.ContactID`.
+         Par exemple, dans la colonne **ID source** , sélectionnez en `ContactID` regard du `ReadList.salesOrderList.SalesOrderList.SalesOrder.ContactID` descripteur de type et du `ReadItem.salesOrder.SalesOrder.ContactID` descripteur de type.
 
 4. Si vous souhaitez créer une association clé-moins étrangère, désactivez la case à cocher **est une association de clé étrangère** .
 
-5. Sélectionnez le bouton **OK** .
+5. Choisissez le bouton **OK**.
 
 6. Dans le concepteur BDC, une ligne qui représente l’Association apparaît entre l’entité source et l’entité de destination.
 

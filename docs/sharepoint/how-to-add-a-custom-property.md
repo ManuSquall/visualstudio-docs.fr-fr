@@ -1,7 +1,7 @@
 ---
-title: 'Procédure : Ajouter une propriété personnalisée | Microsoft Docs'
+title: 'Comment : ajouter une propriété personnalisée | Microsoft Docs'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - VS.SharePointTools.BDC.Property_Editor
 dev_langs:
@@ -17,31 +17,30 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: caf2d0e63db724c8eb3c1e72c79a109548af8f9c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MT
+ms.openlocfilehash: e79b18b4d2b388d2ff0387fed24778f8db03fd54
+ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62556845"
+ms.lasthandoff: 07/06/2020
+ms.locfileid: "86017081"
 ---
-# <a name="how-to-add-a-custom-property"></a>Procédure : Ajouter une propriété personnalisée
-  Vous pouvez ajouter des propriétés personnalisées au modèle à l’aide de la **éditeur de la propriété**. Vous pouvez accéder à ces propriétés dans le code pour récupérer des informations telles que des chaînes de connexion et autres données au moment de l’exécution.
+# <a name="how-to-add-a-custom-property"></a>Comment : ajouter une propriété personnalisée
+  Vous pouvez ajouter des propriétés personnalisées au modèle à l’aide de l' **éditeur de propriétés**. Vous pouvez accéder à ces propriétés dans le code pour récupérer des informations telles que les chaînes de connexion et d’autres données au moment de l’exécution.
 
 ### <a name="to-add-a-custom-property"></a>Pour ajouter une propriété personnalisée
 
-1. Dans le **Explorateur BDC**, choisissez le nœud qui représente l’élément de modèle auquel vous souhaitez appliquer une propriété personnalisée.
+1. Dans l' **Explorateur BDC**, choisissez le nœud qui représente l’élément de modèle auquel vous souhaitez appliquer une propriété personnalisée.
 
-2. Dans la barre de menus, choisissez **vue** > **fenêtre Propriétés**.
+2. Dans la barre de menus, choisissez **Afficher**la  >  **fenêtre Propriétés**.
 
-3. Dans le **propriétés** fenêtre, choisissez le **propriétés personnalisées** propriété, puis choisissez le bouton de sélection (![ellipse de concepteur ASP.NET Mobile](../sharepoint/media/mwellipsis.gif "ASP. Ellipse de NET Mobile concepteur")).
+3. Dans la fenêtre **Propriétés** , choisissez la propriété **propriétés personnalisées** , puis cliquez sur le bouton de sélection (![ellipse ASP.net Mobile designer](../sharepoint/media/mwellipsis.gif "Bouton de sélection du concepteur ASP.NET mobile")).
 
-     Le **éditeur de la propriété** boîte de dialogue s’affiche.
+     La boîte de dialogue **éditeur de propriétés** s’affiche.
 
-4. Dans la zone de texte dans le **nom** colonne, spécifiez le nom de la propriété.
+4. Dans la zone de texte de la colonne **nom** , spécifiez le nom de la propriété.
 
-5. Pour le **Type** champ de la propriété personnalisée, choisissez le type de données approprié.
+5. Pour le champ **type** de la propriété personnalisée, choisissez le type de données approprié.
 
-6. Pour le **valeur** champ de la propriété personnalisée, spécifiez une valeur, puis choisissez le **OK** bouton.
+6. Pour le champ **valeur** de la propriété personnalisée, spécifiez une valeur, puis choisissez le bouton **OK** .
 
 ## <a name="see-also"></a>Voir aussi
 - [Concevoir un modèle de connectivité de données métiers](../sharepoint/designing-a-business-data-connectivity-model.md)

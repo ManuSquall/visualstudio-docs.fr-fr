@@ -1,7 +1,7 @@
 ---
-title: 'Procédure : Créer un récepteur d’événements pour une Instance de liste spécifique | Microsoft Docs'
+title: 'Comment : créer un récepteur d’événements pour une instance de liste spécifique | Microsoft Docs'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -13,78 +13,77 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 34114c12ef47fb796de7354aa3133af1fc704267
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 54c384742afba3d5af7f08ee62a9ec56c7f1438c
+ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63408551"
+ms.lasthandoff: 07/06/2020
+ms.locfileid: "86016964"
 ---
-# <a name="how-to-create-an-event-receiver-for-a-specific-list-instance"></a>Procédure : Créer un récepteur d’événements pour une instance de liste spécifique
-  Un récepteur d’événements liste instance répond aux événements qui se produisent dans n’importe quelle instance d’une définition de liste. Bien que le modèle de récepteur d’événements n’active pas le ciblage d’une instance de liste spécifique, vous pouvez modifier un récepteur d’événements dont l’étendue correspond à une définition de liste pour répondre aux événements dans une instance de liste spécifique.
+# <a name="how-to-create-an-event-receiver-for-a-specific-list-instance"></a>Comment : créer un récepteur d’événements pour une instance de liste spécifique
+  Un récepteur d’événements de l’instance de liste répond aux événements qui se produisent dans une instance d’une définition de liste. Bien que le modèle de récepteur d’événements ne permette pas le ciblage d’une instance de liste spécifique, vous pouvez modifier un récepteur d’événements dont l’étendue correspond à une définition de liste pour répondre aux événements dans une instance de liste spécifique.
 
- Pour cibler une instance de liste spécifique, dans le *Elements.xml* pour le récepteur d’événements, remplacez `ListTemplateId` avec `ListUrl` et ajoutez l’URL de l’instance de liste.
+ Pour cibler une instance de liste spécifique, dans le *Elements.xml* pour le récepteur d’événements, remplacez `ListTemplateId` par `ListUrl` et ajoutez l’URL de l’instance de liste.
 
-## <a name="create-a-list-instance-event-receiver"></a>Créer un récepteur d’événements liste instance
- Les étapes suivantes montrent comment modifier un récepteur d’événements élément liste pour répondre uniquement aux événements qui se produisent dans une instance de liste d’annonces personnalisé.
+## <a name="create-a-list-instance-event-receiver"></a>Créer un récepteur d’événements d’instance de liste
+ Les étapes suivantes montrent comment modifier un récepteur d’événements de liste pour répondre uniquement aux événements qui se produisent dans une instance de liste d’annonces personnalisée.
 
-#### <a name="to-modify-an-event-receiver-to-respond-to-a-specific-list-instance"></a>Pour modifier un récepteur d’événements pour répondre à une instance de liste spécifique
+#### <a name="to-modify-an-event-receiver-to-respond-to-a-specific-list-instance"></a>Pour modifier un récepteur d’événements afin qu’il réponde à une instance de liste spécifique
 
 1. Dans un navigateur, ouvrez le site SharePoint.
 
-2. Dans le volet de navigation, **répertorie** lien.
+2. Dans le volet de navigation, **liste** liens.
 
-3. Dans le **tout le contenu du Site** page, choisissez le **créer** lien.
+3. Dans la page **tout le contenu du site** , choisissez le lien **créer** .
 
-4. Dans le **créer** boîte de dialogue, sélectionnez le **annonces** type, nom de l’annonce **TestAnnouncements**, puis choisissez le **créer**bouton.
+4. Dans la boîte de dialogue **créer** , choisissez le type **annonces** , nommez l’annonce **TestAnnouncements**, puis cliquez sur le bouton **créer** .
 
-5. Dans [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], créez un projet de récepteur d’événements.
+5. Dans [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] , créez un projet de récepteur d’événements.
 
-6. Dans le **quel type de récepteur d’événements voulez-vous ?** , choisissez **événements d’élément de liste**.
+6. Dans la liste **quel type de récepteur d’événements souhaitez-vous ?** , choisissez **liste des événements d’élément**.
 
     > [!NOTE]
-    > Vous pouvez également sélectionner n’importe quel autre type de récepteur d’événements qui définit une portée à une définition de liste, par exemple, **liste des événements de messagerie** ou **liste des événements de flux de travail**.
+    > Vous pouvez également sélectionner tout autre type de récepteur d’événements qui correspond à une définition de liste, par exemple **répertorier les événements de courrier électronique** ou **répertorier les événements de workflow**.
 
-7. Dans le **quel élément doit être la source d’événements ?** , choisissez **annonces**.
+7. Dans la liste **quel élément doit être la source de l’événement ?** , choisissez **annonces**.
 
-8. Dans le **gérer les événements suivants** liste, sélectionnez le **Ajout d’un élément** case à cocher, puis choisissez le **Terminer** bouton.
+8. Dans la liste **gérer les événements suivants** , activez la case à cocher **un élément est en cours d’ajout** , puis choisissez le bouton **Terminer** .
 
-9. Dans **l’Explorateur de solutions**, sous EventReceiver1, ouvrez *Elements.xml*.
+9. Dans **Explorateur de solutions**, sous EventReceiver1, ouvrez *Elements.xml*.
 
-     Le récepteur d’événements fait actuellement référence à la définition de liste d’annonces à l’aide de la ligne suivante :
+     Le récepteur d’événements référence actuellement la définition de liste d’annonces en utilisant la ligne suivante :
 
     ```xml
     <Receivers ListTemplateId="104">
     ```
 
-     Modifiez cette ligne au texte suivant :
+     Remplacez cette ligne par le texte suivant :
 
     ```xml
     <Receivers ListUrl="Lists/TestAnnouncements">
     ```
 
-     Il dirige le récepteur d’événements pour répondre uniquement aux événements qui se produisent dans le nouveau **TestAnnouncements** liste d’annonces que vous venez de créer. Vous pouvez modifier le `ListURL` attribut à faire référence à n’importe quelle instance de liste sur le serveur SharePoint.
+     Cela indique au récepteur d’événements de répondre uniquement aux événements qui se produisent dans la nouvelle liste d’annonces **TestAnnouncements** que vous venez de créer. Vous pouvez modifier l' `ListURL` attribut pour référencer n’importe quelle instance de liste sur le serveur SharePoint.
 
-10. Ouvrez le fichier de code pour le récepteur d’événements et placer un point d’arrêt dans la méthode ItemAdding.
+10. Ouvrez le fichier de code du récepteur d’événements et placez un point d’arrêt dans la méthode ItemAdding.
 
-11. Choisissez le **F5** clé pour générer et exécuter la solution.
+11. Appuyez sur la touche **F5** pour générer et exécuter la solution.
 
-12. Dans SharePoint, choisissez le **TestAnnouncements** lien dans le volet de navigation.
+12. Dans SharePoint, choisissez le lien **TestAnnouncements** dans le volet de navigation.
 
-13. Choisissez le **ajouter une nouvelle annonce** lien.
+13. Choisissez le lien **Ajouter une nouvelle annonce** .
 
-14. Entrez un titre pour l’annonce, puis choisissez le **enregistrer** bouton.
+14. Entrez un titre pour l’annonce, puis choisissez le bouton **Enregistrer** .
 
-     Notez que le point d’arrêt est atteint lorsque le nouvel élément est ajouté à la liste d’annonces personnalisé.
+     Notez que le point d’arrêt est atteint lorsque le nouvel élément est ajouté à la liste d’annonces personnalisée.
 
-15. Choisissez le **F5** clé à reprendre.
+15. Appuyez sur la touche **F5** pour reprendre.
 
-16. Dans le volet de navigation, choisissez le **répertorie** lier, puis choisissez le **annonces** lien.
+16. Dans le volet de navigation, choisissez le lien **listes** , puis choisissez le lien **annonces** .
 
-17. Ajouter une nouvelle annonce.
+17. Ajoutez une nouvelle annonce.
 
-     Notez que le récepteur d’événements ne déclenche pas sur la nouvelle annonce car le récepteur est configuré pour répondre uniquement aux événements dans l’instance de liste d’annonces personnalisées, **TestAnnouncements**.
+     Notez que le récepteur d’événements ne se déclenche pas sur la nouvelle annonce car le récepteur est configuré pour répondre uniquement aux événements de l’instance de liste d’annonces personnalisée, **TestAnnouncements**.
 
 ## <a name="see-also"></a>Voir aussi
-- [Guide pratique pour Créer un récepteur d’événements](../sharepoint/how-to-create-an-event-receiver.md)
+- [Comment : créer un récepteur d’événements](../sharepoint/how-to-create-an-event-receiver.md)
 - [Développer des solutions SharePoint](../sharepoint/developing-sharepoint-solutions.md)

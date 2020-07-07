@@ -1,7 +1,7 @@
 ---
-title: 'Procédure : Modifier une Configuration de déploiement SharePoint | Microsoft Docs'
+title: 'Procédure : modifier une configuration de déploiement SharePoint | Microsoft Docs'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - VS.SharePointTools.Project.DeploymentConfig
 dev_langs:
@@ -14,42 +14,41 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ffa7923bbe7e8a7b44fec280a5528ab023feed37
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 74f6377bad0f62aa2c470e72afe64b85b3017ee6
+ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63444699"
+ms.lasthandoff: 07/06/2020
+ms.locfileid: "86016776"
 ---
-# <a name="how-to-edit-a-sharepoint-deployment-configuration"></a>Procédure : Modifier une configuration de déploiement SharePoint
-  Vous pouvez créer une configuration de déploiement ou modifier une configuration de déploiement existante. Par exemple, vous pourrez exécuter une seule étape ou modifier l’ordre des étapes dans le processus de déploiement. Voulez-vous créer ou modifier des configurations de déploiement, car les configurations intégrées et ajoutées par programme ne peut pas être modifiées.
+# <a name="how-to-edit-a-sharepoint-deployment-configuration"></a>Procédure : modifier une configuration de déploiement SharePoint
+  Vous pouvez créer une configuration de déploiement ou modifier une configuration de déploiement existante. Par exemple, vous pouvez exécuter une seule étape ou modifier l’ordre des étapes du processus de déploiement. Vous pouvez créer ou modifier des configurations de déploiement, car les configurations intégrées et ajoutées par programmation ne peuvent pas être modifiées.
 
 ## <a name="create-a-sharepoint-deployment-configuration"></a>Créer une configuration de déploiement SharePoint
 
 #### <a name="to-create-a-sharepoint-deployment-configuration"></a>Pour créer une configuration de déploiement SharePoint
 
-1. Dans **l’Explorateur de solutions**, choisissez un projet SharePoint, puis, dans la barre de menus, choisissez **projet**, _nom_projet_**propriétés**.
+1. Dans **Explorateur de solutions**, choisissez un projet SharePoint, puis, dans la barre de menus, choisissez **projet**, _ProjectName_**Propriétés**ProjectName.
 
-2. Sur le **SharePoint** , choisir le **New** bouton.
+2. Sous l’onglet **SharePoint** , choisissez le bouton **nouveau** .
 
-     Le **ajouter une nouvelle Configuration de déploiement** boîte de dialogue s’affiche.
+     La boîte de dialogue **Ajouter une nouvelle configuration de déploiement** s’affiche.
 
-3. Dans le **nom** texte, entrez un nom pour la configuration de déploiement.
+3. Dans la zone de texte **nom** , entrez un nom pour la configuration de déploiement.
 
-4. Dans le **étapes de déploiement disponibles** volet, choisissez les étapes que vous souhaitez ajouter à la configuration de déploiement, cliquez sur le (**>**) bouton, puis choisissez le **OK** bouton.
+4. Dans le volet **étapes de déploiement disponibles** , choisissez les étapes que vous souhaitez ajouter à la configuration de déploiement, cliquez sur le **>** bouton (), puis choisissez le bouton **OK** .
 
     > [!NOTE]
-    > Si vous avez configuré une commande de prédéploiement ou une commande de post-déploiement, ces étapes s’exécutent uniquement si vous les ajoutez à une configuration de déploiement personnalisé.
+    > Si vous avez configuré une commande de prédéploiement ou une commande de redéploiement, ces étapes s’exécutent uniquement si vous les ajoutez à une configuration de déploiement personnalisée.
 
 ## <a name="change-the-active-deployment-configuration"></a>Modifier la configuration de déploiement active
 
 #### <a name="to-change-the-active-deployment-configuration"></a>Pour modifier la configuration de déploiement active
 
-1. Dans **l’Explorateur de solutions**, choisissez un projet SharePoint, puis, dans la barre de menus, choisissez **projet** > **\<*nom_projet*> Propriétés**.
+1. Dans **Explorateur de solutions**, choisissez un projet SharePoint, puis, dans la barre de menus, choisissez **Project**  >  ** \<*ProjectName*> Propriétés**du projet.
 
-2. Choisissez le **SharePoint** onglet.
+2. Choisissez l’onglet **SharePoint** .
 
-3. Dans le **Configuration de déploiement Active** zone de liste, choisissez le nom de la configuration de déploiement que vous souhaitez utiliser.
+3. Dans la zone de liste **configuration de déploiement active** , choisissez le nom de la configuration de déploiement que vous souhaitez utiliser.
 
 ## <a name="see-also"></a>Voir aussi
 - [Empaqueter et déployer des solutions SharePoint](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)

@@ -1,7 +1,7 @@
 ---
-title: 'Procédure : Ajouter un fichier de modèle BDC existant à un projet SharePoint | Microsoft Docs'
+title: 'Comment : ajouter un fichier de modèle BDC existant à un projet SharePoint | Microsoft Docs'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - VS.SharePointTools.BDC.ImportDialog
 dev_langs:
@@ -17,37 +17,36 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 9c10dcf48e5c047778b86c524b35b4e1d5d8cc8a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MT
+ms.openlocfilehash: 92063b5aeaf4f86919b9eabf783b102a9f5b8f34
+ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62967051"
+ms.lasthandoff: 07/06/2020
+ms.locfileid: "86016515"
 ---
-# <a name="how-to-add-an-existing-bdc-model-file-to-a-sharepoint-project"></a>Procédure : Ajouter un fichier de modèle BDC existant à un projet SharePoint
-  Vous pouvez personnaliser, empaqueter et redéployer un modèle de connectivité de données métiers (BDC) à l’aide de Visual Studio pour ajouter le fichier de modèle (*.bdcm*) à un projet de la batterie de serveurs SharePoint. Pour plus d’informations, consultez [créer un modèle de connectivité de données métiers](../sharepoint/creating-a-business-data-connectivity-model.md).
+# <a name="how-to-add-an-existing-bdc-model-file-to-a-sharepoint-project"></a>Comment : ajouter un fichier de modèle BDC existant à un projet SharePoint
+  Vous pouvez personnaliser, empaqueter et redéployer un modèle de connectivité de données métiers (BDC) à l’aide de Visual Studio pour ajouter le fichier de modèle (*. BDCM*) à n’importe quel projet de batterie de serveurs SharePoint. Pour plus d’informations, consultez [créer un modèle de connectivité de données métiers](../sharepoint/creating-a-business-data-connectivity-model.md).
 
 ### <a name="to-add-a-bdc-model-file-to-a-sharepoint-project"></a>Pour ajouter un fichier de modèle BDC à un projet SharePoint
 
-1. Dans **l’Explorateur de solutions**, choisissez le dossier d’un projet SharePoint.
+1. Dans **Explorateur de solutions**, choisissez le dossier d’un projet SharePoint.
 
-2. Dans la barre de menus, choisissez **projet** > **ajouter un élément existant**.
+2. Dans la barre de menus, choisissez **projet**  >  **Ajouter un élément existant**.
 
-3. Dans le **ajouter un élément existant** boîte de dialogue, accédez à l’emplacement du fichier de définition de modèle que vous souhaitez ajouter à votre projet, choisissez le fichier, puis le **ajouter** bouton.
+3. Dans la boîte de dialogue **Ajouter un élément existant** , accédez à l’emplacement du fichier de définition de modèle que vous souhaitez ajouter à votre projet, sélectionnez le fichier, puis cliquez sur le bouton **Ajouter** .
 
-    Si le modèle ne définit pas un *système métier (LOB) de type assembly .NET*, le **LobSystem d’assembly .NET ajouter** boîte de dialogue s’ouvre.
+    Si le modèle ne définit pas un *système métier de type assembly .net*, la boîte de dialogue **Ajouter un LobSystem d’assembly .net** s’ouvre.
 
-4. Si la boîte de dialogue s’affiche, effectuez l’une des étapes suivantes :
+4. Si la boîte de dialogue s’affiche, effectuez l’une des opérations suivantes :
 
-   - Si vous souhaitez écrire du code personnalisé et utiliser un concepteur pour définir les métadonnées du modèle importé, choisissez le **Oui** bouton, nommez le système, puis choisissez le **OK** bouton.
+   - Si vous souhaitez écrire du code personnalisé et utiliser un concepteur pour définir les métadonnées du modèle importé, choisissez le bouton **Oui** , nommez le système, puis choisissez le bouton **OK** .
 
-   - Sinon, choisissez le **non** bouton, puis choisissez le **OK** bouton.
+   - Dans le cas contraire, choisissez le bouton **non** , puis choisissez le bouton **OK** .
 
-     Le **modèle de connectivité de données métiers** élément est ajouté au projet.
+     L’élément de **modèle de connectivité de données métiers** est ajouté au projet.
 
 ## <a name="see-also"></a>Voir aussi
 - [Créer un modèle de connectivité de données métiers](../sharepoint/creating-a-business-data-connectivity-model.md)
-- [Guide pratique pour Créer un modèle BDC](../sharepoint/how-to-create-a-bdc-model.md)
-- [Guide pratique pour Utilisez un fichier de ressources pour spécifier des autorisations, les propriétés et les noms localisés](../sharepoint/how-to-use-a-resource-file-to-specify-localized-names-properties-and-permissions.md)
-- [Guide pratique pour Inclure un assembly personnalisé dans une fonctionnalité BDC](../sharepoint/how-to-include-a-custom-assembly-in-a-bdc-feature.md)
+- [Comment : créer un modèle BDC](../sharepoint/how-to-create-a-bdc-model.md)
+- [Comment : utiliser un fichier de ressources pour spécifier des noms localisés, des propriétés et des autorisations](../sharepoint/how-to-use-a-resource-file-to-specify-localized-names-properties-and-permissions.md)
+- [Comment : inclure un assembly personnalisé dans une fonctionnalité BDC](../sharepoint/how-to-include-a-custom-assembly-in-a-bdc-feature.md)
 - [Intégration de données métiers dans SharePoint](../sharepoint/integrating-business-data-into-sharepoint.md)

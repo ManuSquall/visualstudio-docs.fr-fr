@@ -1,7 +1,7 @@
 ---
-title: 'Procédure : Personnaliser un Package de Solution SharePoint | Microsoft Docs'
+title: 'Comment : personnaliser un package de solution SharePoint | Microsoft Docs'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - VS.SharePointTools.RAD.PackageDesignerAdvanced
 - VS.SharePointTools.RAD.PackageDesigner.Manifest
@@ -17,75 +17,74 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 0aa124d25e279b7e44292645d81d80829f5d3f8f
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 77b66160d489f711b5588fdcdd024d13769d734f
+ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63420198"
+ms.lasthandoff: 07/06/2020
+ms.locfileid: "86016868"
 ---
-# <a name="how-to-customize-a-sharepoint-solution-package"></a>Procédure : Personnaliser un package de solution SharePoint
-  Vous pouvez utiliser le Concepteur de packages pour créer et personnaliser un package (*.wsp*). Par exemple, vous pouvez ajouter des éléments de projet SharePoint et des fonctionnalités, spécifiez si le serveur Web est réinitialisé lorsque la solution est déployée, définissez le type de serveur de déploiement.
+# <a name="how-to-customize-a-sharepoint-solution-package"></a>Comment : personnaliser un package de solution SharePoint
+  Vous pouvez utiliser le concepteur de packages pour créer et personnaliser un package (*. wsp*). Par exemple, vous pouvez ajouter des fonctionnalités et des éléments de projet SharePoint, spécifier si le serveur Web est réinitialisé lorsque la solution est déployée et définir le type de serveur de déploiement.
 
-## <a name="open-the-package-designer"></a>Ouvrez le Concepteur de packages
+## <a name="open-the-package-designer"></a>Ouvrir le concepteur de packages
 
-#### <a name="to-open-the-package-designer"></a>Pour ouvrir le Concepteur de packages
+#### <a name="to-open-the-package-designer"></a>Pour ouvrir le concepteur de packages
 
-- Dans **l’Explorateur de solutions**, double-cliquez sur **Package**, ou choisissez **Concepteur de vue** dans le menu contextuel pour **Package**.
+- Dans **Explorateur de solutions**, double-cliquez sur **package**, ou choisissez **Concepteur de vues** dans le menu contextuel du **package**.
 
-## <a name="view-the-packaged-manifestffile"></a>Afficher le manifestfFile empaquetée
- Vous pouvez utiliser le Concepteur de packages pour modifier et générer le fichier manifeste de package. Ensuite, vous pouvez afficher le code XML de ce fichier dans Visual Studio.
+## <a name="view-the-packaged-manifestffile"></a>Afficher les manifestfFile empaquetés
+ Vous pouvez utiliser le concepteur de packages pour modifier et générer le fichier manifeste empaqueté. Ensuite, vous pouvez afficher le code XML de ce fichier dans Visual Studio.
 
-#### <a name="to-view-the-xml-source-file"></a>Pour afficher le fichier de source XML
+#### <a name="to-view-the-xml-source-file"></a>Pour afficher le fichier source XML
 
 1. Dans le **Concepteur de packages**, choisissez **manifeste**.
 
-#### <a name="to-view-the-packaged-manifest-file-by-using-solution-explorer"></a>Pour afficher le fichier manifeste de package à l’aide de l’Explorateur de solutions
+#### <a name="to-view-the-packaged-manifest-file-by-using-solution-explorer"></a>Pour afficher le fichier manifeste empaqueté à l’aide de Explorateur de solutions
 
 1. Dans l’**Explorateur de solutions**, choisissez **Afficher tous les fichiers**.
 
-2. Développez le Package, développez le package et ouvrez le *Package.Template.xml* fichier.
+2. Développez package, développez package. Package, puis ouvrez le fichier *Package.Template.xml* .
 
     > [!NOTE]
-    > Lorsque vous ouvrez le fichier XML de manifeste pour le modèle de package, les fichiers sont validés automatiquement, et vous pouvez ignorer les avertissements qui apparaissent dans la fenêtre liste d’erreurs.
+    > Lorsque vous ouvrez le fichier manifeste XML pour le modèle de package, les fichiers sont validés automatiquement et vous pouvez ignorer les avertissements qui s’affichent dans la fenêtre de Liste d’erreurs.
 
 ## <a name="change-the-manifest-template"></a>Modifier le modèle de manifeste
- Vous pouvez modifier le code XML du fichier manifest du package dans l’éditeur XML de Visual Studio ou dans le volet modèle de manifeste. Toutes les modifications au code XML sont fusionnées dans le fichier manifest de package pour le package.
+ Vous pouvez modifier le code XML du fichier manifeste empaqueté dans l’éditeur XML de Visual Studio ou dans le volet modèle de manifeste. Toutes les modifications apportées au code XML sont fusionnées dans le fichier manifeste empaqueté pour le package.
 
 #### <a name="to-change-the-manifest-template-by-using-the-xml-editor"></a>Pour modifier le modèle de manifeste à l’aide de l’éditeur XML
 
-1. Dans le **Concepteur de packages**, choisissez le **manifeste** onglet, développez le **modifier les Options** nœud, puis choisissez le **ouvert dans l’éditeur XML** lien.
+1. Dans le **Concepteur de packages**, choisissez l’onglet **manifeste** , développez le nœud **options de modification** , puis cliquez sur le lien **ouvrir dans l’éditeur XML** .
 
-     Modifications apportées au document XML sont fusionnées dans le fichier manifest de package.
+     Les modifications apportées au code XML sont fusionnées dans le fichier manifeste empaqueté.
 
-#### <a name="to-change-the-manifest-template-by-using-the-manifest-template-pane"></a>Pour modifier le modèle de manifeste en utilisant le volet modèle de manifeste
+#### <a name="to-change-the-manifest-template-by-using-the-manifest-template-pane"></a>Pour modifier le modèle de manifeste à l’aide du volet modèle de manifeste
 
-1. Dans le **Concepteur de packages**, choisissez le **manifeste** onglet, développez le **modifier les Options** nœud et modifiez le code XML qui s’affiche dans le volet modèle de manifeste.
+1. Dans le **Concepteur de packages**, choisissez l’onglet **manifeste** , développez le nœud **options de modification** , puis modifiez le XML qui s’affiche dans le volet modèle de manifeste.
 
-     Modifications apportées au document XML s’affichent dans le **aperçu du manifeste ajouté au package** volet.
+     Les modifications apportées au XML s’affichent dans le volet **Aperçu du manifeste du package** .
 
-## <a name="overwrite-the-packaged-manifest-file"></a>Remplacer le fichier manifeste de package
- Vous pouvez désactiver le Concepteur de packages et créer le *manifest.xml* fichier manuellement. La première fois que vous procédez ainsi, les paramètres actuels dans le Concepteur de packages sont enregistrés au fichier XML de modèle de package. Ensuite, vous pouvez modifier ou remplacer le code XML.
+## <a name="overwrite-the-packaged-manifest-file"></a>Remplacer le fichier manifeste empaqueté
+ Vous pouvez désactiver le concepteur de packages et créer le fichier *manifest.xml* manuellement. La première fois que vous effectuez cette procédure, les paramètres actuels du concepteur de packages sont enregistrés dans le fichier XML du modèle de package. Ensuite, vous pouvez modifier ou remplacer le code XML.
 
 > [!NOTE]
-> Si vous ajoutez ou supprimez des éléments de projet SharePoint et des fonctionnalités dans le fichier XML tandis que le Concepteur de packages est désactivé, ces éléments de projet et les fonctionnalités ne sont pas empaquetées.
+> Si vous ajoutez ou supprimez des éléments de projet SharePoint et des fonctionnalités dans le fichier XML alors que le concepteur de packages est désactivé, ces éléments et fonctionnalités de projet ne sont pas empaquetés.
 
-#### <a name="to-overwrite-packaged-manifest-file-by-disabling-the-designer"></a>Pour remplacer le fichier manifest de package en désactivant le Concepteur
+#### <a name="to-overwrite-packaged-manifest-file-by-disabling-the-designer"></a>Pour remplacer le fichier manifeste empaqueté en désactivant le concepteur
 
-1. Dans le **Concepteur de packages**, choisissez le **manifeste** onglet.
+1. Dans le **Concepteur de packages**, choisissez l’onglet **manifeste** .
 
-2. Développez le **modifier les Options** nœud, choisissez le **remplacement généré XML et modifier le manifeste dans l’éditeur XML** lier, puis choisissez le **Oui** bouton.
+2. Développez le nœud **options de modification** , choisissez le lien remplacer le fichier **XML généré et modifier le manifeste dans l’éditeur XML** , puis choisissez le bouton **Oui** .
 
-     Le modèle est mis à jour avec le fichier de manifeste de package actuel.
+     Le modèle est mis à jour avec le fichier manifeste empaqueté actuel.
 
-## <a name="enable-the-package-designer"></a>Activer le Concepteur de packages
- Vous pouvez réactiver le Concepteur de packages pour personnaliser le *manifest.xml* fichier.
+## <a name="enable-the-package-designer"></a>Activer le concepteur de packages
+ Vous pouvez réactiver le concepteur de packages pour personnaliser le fichier *manifest.xml* .
 
-#### <a name="to-re-enable-the-designer"></a>Pour réactiver le Concepteur
+#### <a name="to-re-enable-the-designer"></a>Pour réactiver le concepteur
 
-1. Dans le **Concepteur de packages**, choisissez le **rejet modifications du manifeste et réactivez le concepteur** lier, puis choisissez le **Oui** bouton.
+1. Dans le **Concepteur de packages**, choisissez le lien **Ignorer les modifications du manifeste et réactiver le concepteur** , puis choisissez le bouton **Oui** .
 
-     Le modèle est actualisée avec le texte d’origine, et les modifications au code XML sont perdues.
+     Le modèle est actualisé avec le texte d’origine et toute modification apportée au code XML est perdue.
 
 ## <a name="see-also"></a>Voir aussi
 - [Empaqueter et déployer des solutions SharePoint](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)
