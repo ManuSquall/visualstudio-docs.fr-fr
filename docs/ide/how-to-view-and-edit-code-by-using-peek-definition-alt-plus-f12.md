@@ -7,12 +7,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: daa1148a47919c12fa423bd90f6d63c030cf743c
-ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
+ms.openlocfilehash: 753d26e2c48f6263ccbc9c403f255948b5077924
+ms.sourcegitcommit: a466720759426265b18b0f8d74a970e72493d700
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85770519"
+ms.lasthandoff: 07/08/2020
+ms.locfileid: "86092308"
 ---
 # <a name="how-to-view-and-edit-code-by-using-peek-definition-altf12"></a>Guide pratique pour afficher et modifier le code avec l’Aperçu de définition (ALT+F12)
 
@@ -70,11 +70,11 @@ Quand vous commencez à apporter des modifications dans une fenêtre **Aperçu d
 
 Vous pouvez utiliser les raccourcis clavier suivants avec la fenêtre **Aperçu de définition** :
 
-|Fonctionnalité|Raccourci clavier|
+|Fonctionnalités|Raccourci clavier|
 |-------------------|:-----------------------:|
 |Ouvrir la fenêtre de définition|**ALT** + **F12**|
 |Fermer la fenêtre de définition|**Échap**|
-|Promouvoir la fenêtre de définition en onglet de document standard|**MAJ** + **ALT** + **Page d’hébergement**|
+|Promouvoir la fenêtre de définition en onglet de document standard|**CTRL** + **ALT** + **Page d’hébergement**|
 |Naviguer entre les fenêtres de définition|**CTRL** + **Alt** + Alt **-** et **CTRL** + **ALT**+**=**|
 |Naviguer entre plusieurs résultats|**F8** et **Maj**+**F8**|
 |Permuter entre la fenêtre de l'éditeur de code et la fenêtre de définition|**MAJ** + **Echap**|

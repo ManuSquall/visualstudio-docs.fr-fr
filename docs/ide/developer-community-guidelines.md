@@ -8,12 +8,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5189278f8efe42e6e7916562e7ce4f5d6a964061
-ms.sourcegitcommit: 2ce59c2ffeba5ba7f628c2e6c75cba4731deef8a
+ms.openlocfilehash: fb7f821a7b815b29c9f85b6ab0686edb0292866d
+ms.sourcegitcommit: 4d5cd0b9de7a87efb69f17b02c2331b749e6ec8d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/03/2020
-ms.locfileid: "85938260"
+ms.lasthandoff: 07/08/2020
+ms.locfileid: "86137565"
 ---
 # <a name="developer-community-guidelines"></a>Consignes Developer Community
 
@@ -64,6 +64,17 @@ Lorsqu’il manque des informations importantes dans un problème, nous attribuo
 ### <a name="wont-fix-bugs"></a>Ne corrigera pas les bogues
 
 Nous fermons certains bogues lorsqu’il y a un équilibre coût-bénéfice négatif. Par exemple, si le correctif est tellement complexe, il risque de régression pour de nombreux utilisateurs, la résolution peut ne pas être raisonnable. Quand nous fermons un bogue comme celui-ci, nous expliquons pourquoi nous le faisons.
+
+### <a name="other-product"></a>Autre produit
+
+Parfois, lorsque vous signalez un problème, il s’avère qu’il est dû à un autre produit et non à Visual Studio. Il peut s’agir d’une autre application associée ou d’une extension. 
+
+Lorsque cela se produit, nous allons fermer le problème et vous demander de l’ouvrir avec l’autre produit. Voici quelques emplacements courants pour les fichiers de ces problèmes :
+
+* [SQL Server](https://feedback.azure.com/forums/908035-sql-server)
+* [Support Visual Studio Subscription](https://feedback.azure.com/forums/908035-sql-server)
+* [Office](https://support.office.com/article/how-do-i-give-feedback-on-microsoft-office-2b102d44-b43f-4dd2-9ff4-23cf144cfb11)
+* [Windows](https://support.microsoft.com/help/4021566/windows-10-send-feedback-to-microsoft-with-feedback-hub-app)
 
 #### <a name="additional-information"></a>Informations supplémentaires
 
