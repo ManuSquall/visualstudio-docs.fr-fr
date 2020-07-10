@@ -16,24 +16,24 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: d52dd064e895b1e35230b93c85a7a8499032943e
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 1c658d97ed678950869c9a011af04e04eeacf5b1
+ms.sourcegitcommit: 46547f0bf3fc1a81e1a906762106dec5855e6e4a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "76114833"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "86156817"
 ---
 # <a name="create-an-offline-installation-of-visual-studio"></a>Créer une installation hors connexion de Visual Studio
 
 ::: moniker range="vs-2017"
 
-Nous avons conçu Visual Studio 2017 pour qu’il fonctionne correctement dans un large éventail de configurations réseau et informatiques. Bien que nous vous recommandons d’essayer [l’installateur](https://visualstudio.microsoft.com/vs/older-downloads)&mdash;Web Visual Studio qui est un&mdash;petit fichier et vous permet de rester à jour avec toutes les dernières corrections et fonctionnalités, nous comprenons que vous pourriez ne pas être en mesure de.
+Nous avons conçu Visual Studio 2017 pour qu’il fonctionne correctement dans un large éventail de configurations réseau et informatiques. Nous vous recommandons d’essayer le [programme d’installation Web de Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads) &mdash; , qui est un petit fichier qui vous permet de vous tenir informé de tous les correctifs et fonctionnalités les plus récents &mdash; que vous ne pourrez peut-être pas.
 
 ::: moniker-end
 
 ::: moniker range="vs-2019"
 
-Nous avons conçu Visual Studio 2019 pour qu’il fonctionne correctement dans un large éventail de configurations réseau et informatiques. Bien que nous vous recommandons d’essayer [l’installateur](https://visualstudio.microsoft.com/downloads)&mdash;Web Visual Studio qui est un&mdash;petit fichier et vous permet de rester à jour avec toutes les dernières corrections et fonctionnalités, nous comprenons que vous pourriez ne pas être en mesure de.
+Nous avons conçu Visual Studio 2019 pour qu’il fonctionne correctement dans un large éventail de configurations réseau et informatiques. Nous vous recommandons d’essayer le [programme d’installation Web de Visual Studio](https://visualstudio.microsoft.com/downloads) &mdash; , qui est un petit fichier qui vous permet de vous tenir informé de tous les correctifs et fonctionnalités les plus récents &mdash; que vous ne pourrez peut-être pas.
 
 ::: moniker-end
 
@@ -46,7 +46,7 @@ Par exemple, vous avez peut-être une connexion Internet non fiable ou une bande
 
 ::: moniker range="vs-2017"
 
-[**Nouveau dans la version 15.8**](/visualstudio/releasenotes/vs2017-relnotes-v15.8#install): Après avoir téléchargé l’installateur web, sélectionnez le nouveau **Télécharger tous, puis installez** l’option à partir de l’installateur Visual Studio. Poursuivez ensuite l’installation.
+[**Nouveauté de la version 15,8**](/visualstudio/releasenotes/vs2017-relnotes-v15.8#install): après avoir téléchargé le programme d’installation Web, sélectionnez l’option nouveau **Télécharger tout, puis installer** à partir du Visual Studio installer. Poursuivez ensuite l’installation.
 
    ![Option « Tout télécharger, puis installer »](media/download-all-then-install.png)
 
@@ -77,9 +77,9 @@ Vous devez avoir une connexion Internet pour terminer cette étape.
 
 ::: moniker range="vs-2017"
 
-Pour obtenir un bootstrapper pour Visual Studio 2017, consultez la page de téléchargement [des versions précédentes de Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/) pour plus de détails sur la façon de le faire.
+Pour obtenir un programme d’amorçage pour Visual Studio 2017, consultez la page de téléchargement des [versions précédentes de Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/) pour plus d’informations sur la façon de procéder.
 
-Votre configuration&mdash;exécutable ou pour être&mdash;plus spécifique, le fichier bootstrapper doit correspondre ou être similaire à l’un des éléments suivants.
+L’exécutable de votre programme d’installation &mdash; ou pour être plus précis, le fichier du programme d’amorçage &mdash; doit correspondre ou être similaire à l’un des éléments suivants.
 
 | Édition | Nom de fichier |
 |-------------|-----------------------|
@@ -104,7 +104,7 @@ Commencez par télécharger le programme d’amorçage de Visual Studio pour l�
 ::: moniker-end
 
 >[!TIP]
->Si vous avez déjà téléchargé un fichier bootstrapper et que vous souhaitez vérifier sa version, voici comment. Dans Windows, ouvrez File Explorer, cliquez à droite sur le fichier bootstrapper, choisissez **les propriétés,** choisissez l’onglet **Détails,** puis consultez le numéro **de version produit.** Pour correspondre à ce nombre à une sortie de Visual Studio, voir le [Visual Studio construire des numéros et la](visual-studio-build-numbers-and-release-dates.md) page de dates de sortie.
+>Si vous avez précédemment téléchargé un fichier de programme d’amorçage et que vous souhaitez vérifier sa version, voici comment procéder. Dans Windows, ouvrez l’Explorateur de fichiers, cliquez avec le bouton droit sur le fichier du programme d’amorçage, choisissez **Propriétés**, cliquez sur l’onglet **Détails** , puis affichez le numéro de **version du produit** . Pour faire correspondre ce nombre à une version de Visual Studio, consultez la page [numéros de build et dates de publication de Visual Studio](visual-studio-build-numbers-and-release-dates.md) .
 
 ### <a name="step-2---create-a-local-install-cache"></a>Étape 2 : Créer un cache d’installation local
 
@@ -145,14 +145,14 @@ Ouvrez une invite de commandes et utilisez l’une des commandes des exemples su
 ::: moniker range="vs-2017"
 
    > [!NOTE]
-   > Une disposition Visual Studio complète nécessite un minimum de 35 Go d’espace disque. Pour plus d’informations, voir [exigences du système](/visualstudio/productinfo/vs2017-system-requirements-vs/). Pour plus d’informations sur la façon de créer une disposition comprenant seulement les composants que vous souhaitez installer, consultez [Utiliser les paramètres de ligne de commande pour installer Visual Studio](use-command-line-parameters-to-install-visual-studio.md).
+   > Une disposition Visual Studio complète nécessite un minimum de 35 Go d’espace disque. Pour plus d’informations, consultez [Configuration système requise](/visualstudio/productinfo/vs2017-system-requirements-vs/). Pour plus d’informations sur la façon de créer une disposition comprenant seulement les composants que vous souhaitez installer, consultez [Utiliser les paramètres de ligne de commande pour installer Visual Studio](use-command-line-parameters-to-install-visual-studio.md).
 
 ::: moniker-end
 
 ::: moniker range="vs-2019"
 
    > [!NOTE]
-   > Une disposition Visual Studio complète nécessite un minimum de 35 Go d’espace disque. Pour plus d’informations, voir [exigences du système](/visualstudio/releases/2019/system-requirements/). Pour plus d’informations sur la façon de créer une disposition comprenant seulement les composants que vous souhaitez installer, consultez [Utiliser les paramètres de ligne de commande pour installer Visual Studio](use-command-line-parameters-to-install-visual-studio.md).
+   > Une disposition Visual Studio complète nécessite un minimum de 35 Go d’espace disque. Pour plus d’informations, consultez [Configuration système requise](/visualstudio/releases/2019/system-requirements/). Pour plus d’informations sur la façon de créer une disposition comprenant seulement les composants que vous souhaitez installer, consultez [Utiliser les paramètres de ligne de commande pour installer Visual Studio](use-command-line-parameters-to-install-visual-studio.md).
 
 ::: moniker-end
 
@@ -165,7 +165,7 @@ Si vous souhaitez installer une autre langue que l’anglais, remplacez `en-US` 
 
 ::: moniker range="vs-2019"
 > [!IMPORTANT]
-> Pour les installations hors ligne, si vous obtenez un message d’erreur qui dit "Un `--noweb` produit correspondant aux paramètres suivants ne peut pas être trouvé", assurez-vous que vous utilisez le commutateur avec la version 16.3.5 ou plus tard.
+> Pour les installations hors connexion, si vous recevez un message d’erreur indiquant « un produit correspondant aux paramètres suivants est introuvable », vérifiez que vous utilisez le `--noweb` commutateur avec la version 16.3.5 ou ultérieure.
 >
 ::: moniker-end
 
@@ -178,17 +178,17 @@ vs_community.exe --layout c:\vslayout --add Microsoft.VisualStudio.Workload.Mana
 Utilisez ensuite cette commande pour exécuter l’installation :
 
 ```cmd
-c:\vslayout\vs_community.exe --add Microsoft.VisualStudio.Workload.ManagedDesktop --add Microsoft.VisualStudio.Workload.NetWeb --add Component.GitHub.VisualStudio --includeOptional
+c:\vslayout\vs_community.exe --noweb --add Microsoft.VisualStudio.Workload.ManagedDesktop --add Microsoft.VisualStudio.Workload.NetWeb --add Component.GitHub.VisualStudio --includeOptional
 ```
 
-Pour plus d’exemples de la façon d’utiliser les paramètres de la ligne de commande , voir les [exemples](use-command-line-parameters-to-install-visual-studio.md)de paramètres de ligne de commande pour la page [d’installation Visual Studio.](command-line-parameter-examples.md) 
+Pour obtenir plus d’exemples d’utilisation des [paramètres de ligne de commande](use-command-line-parameters-to-install-visual-studio.md), consultez la page d’installation des [exemples de paramètres de ligne de commande pour Visual Studio](command-line-parameter-examples.md) . 
 
 > [!NOTE]
 > Si vous obtenez une erreur indiquant qu’une signature n’est pas valide, vous devez installer les certificats mis à jour. Ouvrez le dossier des certificats dans votre cache hors connexion. Double-cliquez sur chacun des fichiers de certificat, puis suivez les étapes de l’Assistant du Gestionnaire de certificats. Si un mot de passe vous est demandé, n’indiquez rien.
 
 ### <a name="list-of-language-locales"></a>Liste des paramètres régionaux de langue
 
-| **Paramètres régionaux de langue** | **Langue** |
+| **Paramètres régionaux de langue** | **Langage** |
 | ----------------------- | --------------- |
 | cs-CZ | Tchèque |
 | de-DE | Allemand |

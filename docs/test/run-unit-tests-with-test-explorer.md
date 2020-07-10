@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6de463fbc941273bed9b949958b9463be6ea1fa3
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: 35bd6f26b56ea7c3a1d578e5721504a91f60b74c
+ms.sourcegitcommit: 46547f0bf3fc1a81e1a906762106dec5855e6e4a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85285632"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "86156842"
 ---
 # <a name="run-unit-tests-with-test-explorer"></a>Exécuter des tests unitaires avec l'Explorateur de tests
 
@@ -211,11 +211,21 @@ Vous pouvez créer et enregistrer une liste de tests que vous souhaitez exécute
 
 La sélection s’ouvre dans un nouvel onglet de l’Explorateur de tests. Vous pouvez utiliser cette playlist une seule fois, puis la supprimer, ou vous pouvez cliquer sur le bouton **Enregistrer** dans la barre d’outils de la fenêtre de sélection, puis sélectionner un nom et un emplacement pour enregistrer la sélection.
 
-![La playlist s’ouvre sous un onglet distinct de l’Explorateur de tests](../test/media/vs-2019/test-explorer-playlist-tab-16-2.png)
+![La playlist s’ouvre sous un onglet distinct de l’Explorateur de tests](../test/media/vs-2019/test-explorer-playlist-tab-16-7.png)
 
 **Pour créer une sélection**, sélectionnez un ou plusieurs tests dans l'Explorateur de tests. Cliquez avec le bouton droit et choisissez **Ajouter à la sélection**  >  **nouvelle sélection**.
 
 **Pour ouvrir une playlist**, choisissez l’icône de playlist dans la barre d’outils de Visual Studio, puis sélectionnez dans le menu un fichier de playlist enregistré.
+
+**Pour modifier une sélection**, vous pouvez cliquer avec le bouton droit sur n’importe quel test et utiliser les options de menu pour l’ajouter ou la supprimer d’une sélection.
+
+À compter de Visual Studio 2019 version 16,7, vous pouvez cliquer sur le bouton **modifier** dans la barre d’outils. Les cases à cocher s’affichent en regard de vos tests et indiquent les tests qui sont inclus et exclus dans la sélection. Modifiez les groupes selon vos besoins.
+
+![Bouton modifier la sélection](../test/media/vs-2019/test-explorer-playlist-edit-16-7.png)
+
+Vous pouvez également cocher ou décocher les cases des groupes parents dans la hiérarchie. Cette action crée une sélection dynamique qui met toujours à jour la sélection en fonction des tests qui se trouvent dans ce groupe. Par exemple, si vous placez une coche en regard d’une classe, tout test ajouté à partir de cette classe devient une partie de cette playlist. Si vous supprimez un test de cette classe, il est supprimé de la sélection. Vous pouvez en savoir plus sur les règles en enregistrant la sélection à l’aide du bouton enregistrer dans la barre d’outils et en ouvrant le fichier *. playlist* créé sur votre disque. Ce fichier répertorie toutes les règles et les tests individuels qui composent une sélection.
+
+![Fichier XML de sélection](../test/media/vs-2019/test-explorer-playlist-xml-file.png)
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
