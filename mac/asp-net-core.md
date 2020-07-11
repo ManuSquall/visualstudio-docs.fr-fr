@@ -6,13 +6,16 @@ ms.author: sayedha
 ms.date: 04/02/2019
 ms.assetid: 6E8B0C90-33D6-4546-8207-CE0787584565
 ms.custom: video
+no-loc:
+- Blazor
+- Blazor WebAssembly
 ms.topic: how-to
-ms.openlocfilehash: 5e9eb15ee006ba23328c53511263724140bca1f9
-ms.sourcegitcommit: 2ce59c2ffeba5ba7f628c2e6c75cba4731deef8a
+ms.openlocfilehash: ed92205388202c457f4d6c8e3fbba567a0d5944e
+ms.sourcegitcommit: 5e82a428795749c594f71300ab03a935dc1d523b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/03/2020
-ms.locfileid: "85939031"
+ms.lasthandoff: 07/10/2020
+ms.locfileid: "86211660"
 ---
 # <a name="getting-started-with-aspnet-core"></a>Bien démarrer avec ASP.NET Core
 
@@ -30,14 +33,14 @@ Ouvrez Visual Studio pour Mac. Dans l’écran de démarrage, sélectionnez **No
 
 La boîte de dialogue Nouveau projet s’affiche et vous permet de sélectionner un modèle pour créer votre application.
 
-Il existe un grand nombre de projets qui vous offrent un modèle prédéfini pour commencer à créer votre application ASP.NET Core. Ces règles sont les suivantes :
+Il existe un grand nombre de projets qui vous offrent un modèle prédéfini pour commencer à créer votre application ASP.NET Core. Les voici :
 
 - **.NET Core > Vide**
 - **.NET Core > API**
 - **.NET Core > Application web**
 - **.NET Core > Application web (modèle-vue-contrôleur)**
-- **Application serveur éblouissante .NET Core >**
-- **Application webassembly éblouissante de .NET Core >**
+- **Application de serveur > .NET Core Blazor**
+- **Application > .NET Core Blazor WebAssembly**
 
 ![Options des projets ASP.NET](media/asp-net-core-2019-new-asp-core.png)
 
@@ -225,7 +228,7 @@ Pour ajouter un contrôleur, procédez comme suit :
 
     ![Exécution de l’application dans le navigateur avec des arguments](media/asp-net-core-image10.png)
 
-## <a name="troubleshooting"></a>Résolution des problèmes
+## <a name="troubleshooting"></a>Dépannage
 
 Si vous devez installer .NET Core manuellement sur Mac OS 10.12 (Sierra) et ultérieur, effectuez les opérations suivantes :
 
@@ -235,7 +238,7 @@ Si vous devez installer .NET Core manuellement sur Mac OS 10.12 (Sierra) et ult
 
 Veillez à effectuer correctement toutes les étapes pour garantir que .NET Core est bien installé.
 
-## <a name="summary"></a>Résumé
+## <a name="summary"></a>Récapitulatif
 
 Ce guide était une introduction à ASP.NET Core. Il explique ce que c’est et quand l’utiliser, et fournit des informations sur son utilisation dans Visual Studio pour Mac.
 Pour plus d’informations sur les étapes à suivre à partir d’ici, consultez les guides suivants :
