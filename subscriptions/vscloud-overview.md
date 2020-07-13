@@ -7,12 +7,12 @@ ms.assetid: af1f7888-6942-4515-9475-0928ecf49dab
 ms.date: 03/24/2020
 ms.topic: overview
 description: Louez Visual Studio Professional ou Visual Studio Enterprise sur une base mensuelle ou annuelle, sans contrat à long terme.
-ms.openlocfilehash: 936216702113fbba2ec7251363418ab6182ade4a
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.openlocfilehash: 8824ff5f233f580d49fe91f79e6f3d348391ab68
+ms.sourcegitcommit: 5e82a428795749c594f71300ab03a935dc1d523b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "85906023"
+ms.lasthandoff: 07/10/2020
+ms.locfileid: "86211631"
 ---
 # <a name="buy-visual-studio-professional-and-visual-studio-enterprise-cloud-subscriptions"></a>Acheter des abonnements cloud Visual Studio Enterprise et Visual Studio Professional
 Vous pouvez acheter des [abonnements Visual Studio Professional et Visual Studio Enterprise](https://visualstudio.microsoft.com/subscriptions/) à partir du [Visual Studio Marketplace](https://marketplace.visualstudio.com). On les appelle des **« abonnements cloud »**.
@@ -40,7 +40,7 @@ Toute personne disposant d’un accès [propriétaire](https://docs.microsoft.co
 
 4. Sélectionnez le nombre d’abonnements à acheter.
     > [!div class="mx-imgBorder"]
-    > ![Sélectionner le nombre d’abonnements](_img/buy-vs-subscriptions/buy-vs-sub-users.png)
+    > ![Sélectionner le nombre d’abonnements](_img/buy-vs-subscriptions/buy-vs-sub-users.png "Choisissez le nombre d’abonnements à acheter")
 
     Si vous ne voulez pas que les abonnements vous soient affectés, désactivez **M'attribuer cet abonnement**.
 
@@ -62,12 +62,18 @@ Si vous avez acheté plusieurs abonnements, accédez au [portail d’administrat
 
 ## <a name="cancel-renewals-of-cloud-subscriptions-youve-purchased"></a><a name="manage-subscriptions"></a>Annuler le renouvellement des abonnements cloud que vous avez achetés
 
-* Pour changer le nombre d’abonnements achetés :
+Pour annuler des abonnements, vous devez simplement définir le nombre d’abonnements pour votre contrat sur zéro (0).  Pour réduire le nombre d’abonnements, procédez comme suit :
+1. Connectez-vous à<https://manage.visualstudio.com>
+1. Si vous avez plus d’un accord, choisissez l’accord souhaité dans la liste déroulante.
+1. Cliquez sur l’icône **vue d’ensemble** en haut à gauche pour afficher des informations sur vos abonnements.  
+> [!div class="mx-imgBorder"]
+> ![Afficher la vue d’ensemble de l’abonnement](_img/buy-vs-subscriptions/overview-button.png "Cliquez sur le bouton vue d’ensemble pour afficher les détails de l’abonnement")
+
+4. Recherchez l’entrée correspondant aux abonnements que vous souhaitez annuler, puis cliquez sur **modifier la quantité**.
+1. Définissez la quantité sur zéro (0). Vos abonnements resteront en place jusqu’à la date de facturation planifiée, mais ils ne seront pas renouvelés lorsque la date de facturation sera atteinte.   
 
 > [!div class="mx-imgBorder"]
-> ![Changer les abonnements](_img/buy-vs-subscriptions/manage-subscriptions.png)
-
-* Pour annuler ces abonnements, réduisez le nombre d’abonnements à zéro (0). Ils ne seront pas renouvelés au début de la prochaine période de facturation (le premier jour du mois suivant pour les abonnements cloud mensuels ; 12 mois plus tard pour les abonnements cloud annuels).
+> ![Modifier les abonnements](_img/buy-vs-subscriptions/manage-subscriptions.png "Cliquez sur « modifier la quantité » pour annuler les abonnements")
 
 ## <a name="frequently-asked-questions"></a>Forum aux questions
 

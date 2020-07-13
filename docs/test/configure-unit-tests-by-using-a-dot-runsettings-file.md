@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: e3ae90ae493fb216d89f0e0ee79fdf7e173a3e72
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: e03400cf916319f963457af5740139bc88fc5105
+ms.sourcegitcommit: 5e82a428795749c594f71300ab03a935dc1d523b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85288765"
+ms.lasthandoff: 07/10/2020
+ms.locfileid: "86211608"
 ---
 # <a name="configure-unit-tests-by-using-a-runsettings-file"></a>Configurer des tests unitaires à l’aide d’un fichier *. RunSettings*
 
@@ -67,7 +67,7 @@ Il existe trois façons de spécifier un fichier de paramètres d’exécution d
     </Project>
     ```
 
-- Placez un fichier de paramètres d’exécution nommé « . RunSettings » à la racine de votre solution.
+- Placez un fichier de paramètres d’exécution nommé *. RunSettings* à la racine de votre solution.
 
   Si la détection automatique des fichiers de paramètres d’exécution est activée, les paramètres de ce fichier sont appliqués dans l’ensemble des tests exécutés. Vous pouvez activer la détection automatique des fichiers RunSettings à partir de deux emplacements :
   
@@ -112,7 +112,7 @@ Pour exécuter des tests depuis la ligne de commande, utilisez *vstest.console.e
    vstest.console.exe MyTestAssembly.dll /EnableCodeCoverage /Settings:CodeCoverage.runsettings
    ```
 
-   ou
+   or
 
    ```cmd
    vstest.console.exe --settings:test.runsettings test.dll
@@ -205,6 +205,11 @@ Le code XML suivant illustre le contenu d’un fichier *.runsettings* type. Chaq
           </MediaRecorder>
         </Configuration>
       </DataCollector>
+
+      <!-- Configuration for blame data collector -->
+      <DataCollector friendlyName="blame" enabled="True">
+      </DataCollector>
+
     </DataCollectors>
   </DataCollectionRunSettings>
 
@@ -233,6 +238,7 @@ Le code XML suivant illustre le contenu d’un fichier *.runsettings* type. Chaq
           <LogFileName>foo.html</LogFileName>
         </Configuration>
       </Logger>
+      <Logger friendlyName="blame" enabled="True" />
     </Loggers>
   </LoggerRunSettings>
 
@@ -311,6 +317,16 @@ Le collecteur de données vidéo capture un enregistrement de l’écran quand d
 
 Pour personnaliser un autre type d’adaptateur de données de diagnostic, utilisez un [fichier de paramètres de test](../test/collect-diagnostic-information-using-test-settings.md).
 
+
+### <a name="blame-data-collector"></a>Collecteur de données de responsabilité
+
+```xml
+<DataCollector friendlyName="blame" enabled="True">
+</DataCollector>
+```
+
+Cette option peut vous aider à isoler un test problématique qui provoque un blocage de l’hôte de test. L’exécution du collecteur crée un fichier de sortie (*Sequence.xml*) dans *TestResults*, qui capture l’ordre d’exécution du test avant l’incident. 
+
 ### <a name="testrunparameters"></a>TestRunParameters
 
 ```xml
@@ -356,7 +372,7 @@ Pour utiliser les paramètres de série de tests, ajoutez un champ <xref:Microso
   </LoggerRunSettings>
 ```
 
-`LoggerRunSettings`la section définit un ou plusieurs enregistreurs d’événements à utiliser pour la série de tests. Les journaux les plus courants sont console, TRX et html. 
+La `LoggerRunSettings` section définit un ou plusieurs enregistreurs d’événements à utiliser pour la série de tests. Les journaux les plus courants sont console, TRX et html. 
 
 ### <a name="mstest-run-settings"></a>Paramètres d’exécution MSTest
 
@@ -386,6 +402,33 @@ Ces paramètres sont spécifiques à l’adaptateur de test qui exécute les mé
 |**MapInconclusiveToFailed**|false|Si un test se termine avec un état Non concluant, il est mappé à l’état Ignoré dans **l’Explorateur de tests**. Si vous voulez que les tests non concluants s’affichent comme ayant échoué, définissez la valeur sur **true**.|
 |**InProcMode**|false|Si vous souhaitez que vos tests soient exécutés dans le même processus que l’adaptateur de test Microsoft, définissez cette valeur sur **true**. Ce paramètre offre un gain de performances mineur. Mais si un test s’arrête à cause d’une exception, les tests restants ne s’exécutent pas.|
 |**AssemblyResolution**|false|Vous pouvez spécifier des chemins d’assemblys supplémentaires pour la recherche et l’exécution des tests unitaires. Par exemple, utilisez ces chemins pour les assemblys de dépendance qui ne se trouvent pas dans le même répertoire que l’assembly de test. Pour spécifier un chemin, utilisez un élément **Directory Path**. Les chemins peuvent inclure des variables d’environnement.<br /><br />`<AssemblyResolution>  <Directory Path="D:\myfolder\bin\" includeSubDirectories="false"/> </AssemblyResolution>`|
+
+## <a name="specify-environment-variables-in-the-runsettings-file"></a>Spécifier des variables d’environnement dans le fichier *. RunSettings*
+
+Les variables d’environnement peuvent être définies dans le fichier *. RunSettings* , qui peut interagir directement avec l’hôte de test. La spécification de variables d’environnement dans le fichier *. RunSettings* est nécessaire pour prendre en charge des projets non triviales qui requièrent la définition de variables d’environnement comme *DOTNET_ROOT*. Ces variables sont définies lors de la génération dynamique du processus hôte de test et sont disponibles dans l’hôte.
+
+### <a name="example"></a>Exemple
+
+Le code suivant est un fichier Sample *. RunSettings* qui transmet les variables d’environnement :
+
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<!-- File name extension must be .runsettings -->
+<RunSettings>
+  <RunConfiguration>
+    <EnvironmentVariables>
+      <!-- List of environment variables we want to set-->
+      <DOTNET_ROOT>C:\ProgramFiles\dotnet</DOTNET_ROOT>
+      <SDK_PATH>C:\Codebase\Sdk</SDK_PATH>
+    </EnvironmentVariables>
+  </RunConfiguration>
+</RunSettings>
+```
+
+Le nœud **RunConfiguration** doit contenir un nœud **EnvironmentVariables** . Une variable d’environnement peut être spécifiée sous la forme d’un nom d’élément et de sa valeur.
+
+> [!NOTE]
+> Étant donné que ces variables d’environnement doivent toujours être définies lorsque l’hôte de test est démarré, les tests doivent toujours s’exécuter dans un processus séparé. Pour ce faire, l’indicateur */InIsolation* est défini lorsqu’il existe des variables d’environnement afin que l’hôte de test soit toujours appelé.
 
 ## <a name="see-also"></a>Voir aussi
 
