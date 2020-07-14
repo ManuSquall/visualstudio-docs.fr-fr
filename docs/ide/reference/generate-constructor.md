@@ -1,18 +1,18 @@
 ---
 title: Action rapide Générer un constructeur
-ms.date: 01/26/2018
+ms.date: 07/10/2020
 ms.topic: reference
-author: TerryGLee
-ms.author: tglee
+author: mikadumont
+ms.author: midumont
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 3c8259841af4511bd782bca1be222353634638f5
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: ead3242c348acdf846fb57ec06057cc50c4b1c3b
+ms.sourcegitcommit: 8b1314ceab58e0d562cdbb1367fa738fdca7bf1e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79301810"
+ms.lasthandoff: 07/13/2020
+ms.locfileid: "86285409"
 ---
 # <a name="generate-a-constructor-in-visual-studio"></a>Générer un constructeur dans Visual Basic
 
@@ -31,7 +31,8 @@ Cette génération de code s’applique à :
 **Comment :** il existe plusieurs façons de générer un constructeur :
 
 - [Générer un constructeur et choisir des membres](#pick)
-- [Générer constructeur à partir de champs sélectionnés](#selection)
+- [Générer un constructeur avec des propriétés](#with)
+- [Générer le constructeur à partir des champs sélectionnés](#selection)
 - [Générer un constructeur à partir d’une nouvelle utilisation](#usage)
 - [Ajouter un paramètre au constructeur existant](#addparameter)
 - [Créer et initialiser le champ/la propriété à partir d’un paramètre de constructeur](#create)
@@ -45,7 +46,7 @@ Cette génération de code s’applique à :
 1. Effectuez ensuite l'une des opérations suivantes :
 
    - **Clavier**
-      - Appuyez **sur Ctrl**+**.** pour afficher le menu **Actions rapides et refactorisations**.
+      - Appuyez sur **CTRL** + **.** pour afficher le menu **Actions rapides et refactorisations**.
    - **Souris**
       - Cliquez avec le bouton droit et sélectionnez le menu **Actions rapides et refactorisations**.
       - Cliquez sur le bouton ![Tournevis](media/screwdriver.png) qui apparaît dans la marge de gauche si le curseur de texte se trouve déjà sur la ligne vide dans la classe.
@@ -67,6 +68,16 @@ Cette génération de code s’applique à :
 
    ![Résultat de l’action Générer le constructeur](media/constructor1-result-cs.png)
 
+## <a name="generate-constructor-with-properties-c-only"></a><a id = "with"></a>Générer un constructeur avec des propriétés (C# uniquement)
+
+1. Placez le curseur sur l’instance.
+
+2. Appuyez sur **CTRL** + **.** pour afficher le menu **Actions rapides et refactorisations**.
+
+3. Sélectionnez **générer le constructeur dans `<QualifiedName>` (avec les propriétés)**.
+
+   ![Aperçu Générer le constructeur](media/generate-constructor-with-properties.png)
+
 ## <a name="generate-constructor-from-selected-fields-c-only"></a><a id="selection"></a> Générer le constructeur à partir des champs sélectionnés (C# uniquement)
 
 1. Mettez en surbrillance les membres à inclure dans votre constructeur généré :
@@ -76,7 +87,7 @@ Cette génération de code s’applique à :
 1. Effectuez ensuite l'une des opérations suivantes :
 
    - **Clavier**
-      - Appuyez **sur Ctrl**+**.** pour afficher le menu **Actions rapides et refactorisations**.
+      - Appuyez sur **CTRL** + **.** pour afficher le menu **Actions rapides et refactorisations**.
    - **Souris**
       - Cliquez avec le bouton droit et sélectionnez le menu **Actions rapides et refactorisations**.
       - Cliquez sur le bouton ![Tournevis](media/screwdriver.png) qui apparaît dans la marge de gauche si le curseur de texte se trouve déjà sur la ligne avec la sélection.
@@ -104,7 +115,7 @@ Cette génération de code s’applique à :
 2. Effectuez ensuite l'une des opérations suivantes :
 
    - **Clavier**
-      - Appuyez **sur Ctrl**+**.** pour afficher le menu **Actions rapides et refactorisations**.
+      - Appuyez sur **CTRL** + **.** pour afficher le menu **Actions rapides et refactorisations**.
    - **Souris**
       - Cliquez avec le bouton droit et sélectionnez le menu **Actions rapides et refactorisations**.
       - Placez le curseur sur la ligne ondulée rouge, puis cliquez sur l’icône ![ampoule d’erreur](media/error-bulb.png) qui apparaît.
@@ -138,7 +149,7 @@ Cette génération de code s’applique à :
 3. Effectuez ensuite l'une des opérations suivantes :
 
    - **Clavier**
-      - Appuyez **sur Ctrl**+**.** pour afficher le menu **Actions rapides et refactorisations**.
+      - Appuyez sur **CTRL** + **.** pour afficher le menu **Actions rapides et refactorisations**.
    - **Souris**
       - Cliquez avec le bouton droit et sélectionnez le menu **Actions rapides et refactorisations**.
       - Placez le curseur sur la ligne ondulée rouge, puis cliquez sur l’icône ![ampoule d’erreur](media/error-bulb.png) qui apparaît.
@@ -165,7 +176,7 @@ Vous pouvez également ajouter un paramètre à une méthode existante. Pour plu
 1. Effectuez ensuite l'une des opérations suivantes :
 
    - **Clavier**
-      - Appuyez **sur Ctrl**+**.** pour afficher le menu **Actions rapides et refactorisations**.
+      - Appuyez sur **CTRL** + **.** pour afficher le menu **Actions rapides et refactorisations**.
    - **Souris**
       - Cliquez avec le bouton droit et sélectionnez le menu **Actions rapides et refactorisations**.
       - Cliquez sur le bouton ![Tournevis](media/screwdriver.png) qui apparaît dans la marge de gauche si le curseur de texte se trouve déjà sur la ligne avec le paramètre ajouté.
@@ -180,5 +191,5 @@ Vous pouvez également ajouter un paramètre à une méthode existante. Pour plu
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Génération de codes](../code-generation-in-visual-studio.md)
-- [Aperçu des modifications](../../ide/preview-changes.md)
+- [Génération de code](../code-generation-in-visual-studio.md)
+- [Prévisualiser les modifications](../../ide/preview-changes.md)

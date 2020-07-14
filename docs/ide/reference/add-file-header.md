@@ -1,20 +1,20 @@
 ---
 title: Ajouter un en-tête de fichier
-ms.date: 06/08/2020
+ms.date: 07/10/2020
 ms.topic: reference
 author: mikadumont
 ms.author: midumont
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 24b0905eed167a99f8a75086c9b5ec6cbbdd8b6a
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: 44cf9c34a69d665186a9f386e7ec34c5a59b8cdc
+ms.sourcegitcommit: 8b1314ceab58e0d562cdbb1367fa738fdca7bf1e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85290346"
+ms.lasthandoff: 07/13/2020
+ms.locfileid: "86285379"
 ---
-# <a name="add-debuggerdisplay-attribute"></a>Ajouter l’attribut DebuggerDisplay
+# <a name="add-file-header"></a>Ajouter un en-tête de fichier
 
 Cette génération de code s’applique à :
 
