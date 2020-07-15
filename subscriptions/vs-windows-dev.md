@@ -7,12 +7,12 @@ ms.assetid: 588480a3-8806-4ea5-9915-c25974770069
 ms.date: 04/20/2020
 ms.topic: how-to
 description: Découvrez le compte de développeur Windows inclus dans votre abonnement Visual Studio.
-ms.openlocfilehash: a39b52f98cb476858e02ae34a4a9422e55dee888
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.openlocfilehash: 659c2b1d792eb02d74ac5d52773f81bdda198a7a
+ms.sourcegitcommit: c2b3bf0de44cd379fd1ad5110385021d0ec950ed
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "85905994"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "86301458"
 ---
 # <a name="windows-developer-account-in-visual-studio-subscriptions"></a>Compte de développeur Windows dans les abonnements Visual Studio
 Votre compte de développeur Windows, inclus avec certains abonnements Visual Studio, vous permet de proposer des applications Windows gratuites et payantes dans le Windows Store.
@@ -26,7 +26,7 @@ Nous vous recommandons d’ouvrir une nouvelle fenêtre de navigateur « privé
 2. Recherchez la vignette du compte de développeur Windows dans la section Outils et cliquez sur le lien **Obtenir le code** en bas de la vignette de l’avantage.  Copiez le code dans le presse-papiers, puis cliquez sur **activer**.
    > [!div class="mx-imgBorder"]
    > ![Vignette de l’avantage Compte de développeur Windows](_img/vs-windows-dev/vs-windows-dev-tile.png)
-3. Sur le [https://developer.microsoft.com](https://developer.microsoft.com) site, vous pouvez commencer le processus d’inscription.  Cliquez sur **S’inscrire** pour continuer.
+3. Sur le [https://developer.microsoft.com/store/register/](https://developer.microsoft.com/store/register/) site, vous pouvez commencer le processus d’inscription.  Cliquez sur **S’inscrire** pour continuer.
    > [!div class="mx-imgBorder"]
    > ![Avantage Compte de développeur Windows, Inscription](_img/vs-windows-dev/vs-windows-dev-register1-cropped.png)
 4. Connectez-vous à votre abonnement.  Si vous avez plusieurs comptes, choisissez celui qui est associé à votre abonnement Enterprise.
@@ -73,6 +73,6 @@ Vous n’êtes pas sûr de l’abonnement que vous utilisez ?  Connectez-vous à
 
 ## <a name="next-steps"></a>Étapes suivantes
 Veillez à activer ces avantages intéressants pour tirer le meilleur parti de votre abonnement Visual Studio :
-- [Visual Studio](vs-ide-benefit.md)
+- [Visual Studio](vs-ide-benefit.md)
 - [Azure DevOps](vs-azure-devops.md)
 - [Crédit individuel Azure DevTest](vs-azure.md)

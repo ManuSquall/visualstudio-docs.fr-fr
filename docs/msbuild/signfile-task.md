@@ -18,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ee018b42fc23b0a520b510235117cb74729fd4b6
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 319afb810ba755d0201d3edaebcb06a493b59047
+ms.sourcegitcommit: c2b3bf0de44cd379fd1ad5110385021d0ec950ed
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79094518"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "86301445"
 ---
 # <a name="signfile-task"></a>SignFile (tâche)
 
@@ -41,15 +41,15 @@ Signe le fichier spécifié à l'aide du certificat spécifié.
 |Paramètre|Description|
 |---------------|-----------------|
 |`CertificateThumbprint`|Paramètre `String` requis.<br /><br /> Spécifie le certificat à utiliser pour la signature. Ce certificat doit se trouver dans le magasin personnel de l'utilisateur actuel.|
-|`SigningTarget`|Paramètre <xref:Microsoft.Build.Framework.ITaskItem> requis.<br /><br /> Spécifie les fichiers à signer avec le certificat.|
+|`SigningTarget`|Paramètre <xref:Microsoft.Build.Framework.ITaskItem> requis.<br /><br /> Spécifie les fichiers à signer avec le certificat, de type. exe ou. dll.|
 |`TimestampUrl`|Paramètre `String` facultatif.<br /><br /> Spécifie l'URL d'un serveur d'horodatage.|
 |`TargetFrameworkVersion`|Version du .NET Framework utilisée pour la cible.|
 
-## <a name="remarks"></a>Notes 
+## <a name="remarks"></a>Notes
 
- En plus des paramètres énumérés ci-dessus, cette tâche hérite des paramètres de la classe <xref:Microsoft.Build.Utilities.Task>. Pour une liste de ces paramètres supplémentaires et de leurs descriptions, voir [Classe de base de tâche](../msbuild/task-base-class.md).
+ En plus des paramètres énumérés ci-dessus, cette tâche hérite des paramètres de la classe <xref:Microsoft.Build.Utilities.Task>. Pour obtenir la liste de ces paramètres supplémentaires et leurs descriptions, consultez [classe de base de tâche](../msbuild/task-base-class.md).
 
-## <a name="example"></a> Exemple
+## <a name="example"></a>Exemple
 
  L'exemple suivant utilise la tâche `SignFile` pour signer les fichiers spécifiés dans la collection d'éléments `FilesToSign` avec le certificat spécifié par la propriété `CertificateThumbprint`.
 
