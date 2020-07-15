@@ -335,6 +335,8 @@
                   href: ide/reference/generate-equals-structs.md
                 - name: Ajouter un en-tête de fichier
                   href: ide/reference/add-file-header.md
+                - name: Ajouter un attribut d’affichage du débogueur
+                  href: ide/reference/add-debugger-display-attribute.md
                 - name: Ajouter un cast explicite
                   href: ide/reference/add-explicit-cast.md
                 - name: Ajouter un paramètre à une méthode
@@ -1466,5 +1468,5 @@
       href: ide/suggest-a-feature.md
     - name: Consignes Developer Community
       href: ide/developer-community-guidelines.md
-    - name: Confidentialité des données Developer Community
+    - name: Confidentialité des données de la communauté des développeurs
       href: ide/developer-community-privacy.md
