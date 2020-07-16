@@ -5,16 +5,17 @@ metadata:
   title: Débogage dans Visual Studio
   description: Découvrez comment utiliser Visual Studio pour déboguer des applications et du code.
   ms.topic: landing-page
+  ms.technology: vs-ide-debug
   author: mikejo5000
   ms.author: mikejo
   manager: jillfra
   ms.date: 09/20/2019
-  ms.openlocfilehash: 7bb755fc13215b7087a0023a8e2a19442415092b
-  ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
+  ms.openlocfilehash: f1d2a1577f01dcca9763a775a28f27691928bb43
+  ms.sourcegitcommit: ad13d7b427303b0e801d54dc521dfb3c1e2bf6e4
   ms.translationtype: HT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 03/21/2020
-  ms.locfileid: "77579264"
+  ms.lasthandoff: 07/15/2020
+  ms.locfileid: "86405420"
 landingContent:
 - title: À propos du débogage
   linkLists:
@@ -74,7 +75,7 @@ landingContent:
       url: using-the-debuggerdisplay-attribute.md
     - text: Déboguer les problèmes de performances > >
       url: ../profiling/profiling-feature-tour.md
-- title: Travailler en collaboration
+- title: Collaborer
   linkLists:
   - linkListType: tutorial
     links:
