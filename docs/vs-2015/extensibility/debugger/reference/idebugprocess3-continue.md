@@ -1,5 +1,5 @@
 ---
-title: IDebugProcess3::Continue | Microsoft Docs
+title: 'IDebugProcess3 :: continuer | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,20 +12,20 @@ ms.assetid: 57506242-5763-4c08-adb9-8a78ce02cebb
 caps.latest.revision: 8
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 8e7167a5425566936c196960d5014fcf5d7c8709
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 92a36bb7e89d8afaa6d76f7d7b3772bd1714ffa7
+ms.sourcegitcommit: a77158415da04e9bb8b33c332f6cca8f14c08f8c
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63405835"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "86386236"
 ---
 # <a name="idebugprocess3continue"></a>IDebugProcess3::Continue
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Continue ce processus en cours d’exécution à partir d’un état arrêté. N’importe quel état de l’exécution précédente (par exemple, une étape) est conservé, et le processus commence à s’exécuter à nouveau.  
+Poursuit l’exécution de ce processus à partir d’un état arrêté. Tout état d’exécution précédent (par exemple, une étape) est préservé et le processus recommence à s’exécuter.  
   
 > [!NOTE]
-> Cette méthode doit être utilisée à la place de [continuer](../../../extensibility/debugger/reference/idebugprogram2-continue.md).  
+> Cette méthode doit être utilisée à la place de [continue](../../../extensibility/debugger/reference/idebugprogram2-continue.md).  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -43,15 +43,15 @@ int Continue(
   
 #### <a name="parameters"></a>Paramètres  
  `pThread`  
- [in] Un [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) objet qui représente le thread de se poursuivre.  
+ dans Objet [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) qui représente le thread à continuer.  
   
 ## <a name="return-value"></a>Valeur de retour  
- En cas de réussite, retourne `S_OK`; sinon, retourne le code d’erreur.  
+ En cas de réussite, retourne `S_OK` ; sinon, retourne le code d’erreur.  
   
 ## <a name="remarks"></a>Notes  
- Cette méthode est appelée sur ce processus, quel que soit le nombre de processus est en cours de débogage, ou le processus qui a généré l’événement de l’arrêt. L’implémentation doit conserver l’état de l’exécution précédente (par exemple, une étape) et poursuivre l’exécution comme s’il n’avait jamais arrêté avant la fin de sa précédente exécution. Autrement dit, si un thread dans ce processus a été effectuant une opération de pas à pas principal, a été arrêté car un autre processus s’est arrêté, puis `Continue` a été appelée, le texte spécifié thread doit terminer l’opération de pas à pas principal d’origine.  
+ Cette méthode est appelée sur ce processus, quel que soit le nombre de processus en cours de débogage, ou le processus qui a généré l’événement d’arrêt. L’implémentation doit conserver l’état d’exécution précédent (par exemple, une étape) et continuer l’exécution comme si elle n’avait jamais été arrêtée avant la fin de son exécution. Autrement dit, si un thread de ce processus effectue une opération de pas à pas et s’est arrêté parce qu’un autre processus s’est arrêté, puis `Continue` a été appelé, le thread spécifié doit terminer l’opération de pas à pas d’origine.  
   
- **Avertissement** n’envoient pas d’un événement d’arrêt ou un événement (synchrone) immédiat [événement](../../../extensibility/debugger/reference/idebugeventcallback2-event.md) lors du traitement de cet appel ; sinon, le débogueur peut se bloquer.  
+ **Avertissement** N’envoyez pas d’événement d’arrêt ou d’événement immédiat (synchrone) à un [événement](../../../extensibility/debugger/reference/idebugeventcallback2-event.md) lors de la gestion de cet appel ; dans le cas contraire, le débogueur peut cesser de répondre.  
   
 ## <a name="see-also"></a>Voir aussi  
  [IDebugProcess3](../../../extensibility/debugger/reference/idebugprocess3.md)   

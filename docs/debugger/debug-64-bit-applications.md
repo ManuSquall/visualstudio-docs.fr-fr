@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ca7feade173db9ccf8c86daaeb1399ef3e10a08b
-ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
+ms.openlocfilehash: 6cc84f690962cd83f45245758f88f7fd8261e500
+ms.sourcegitcommit: a77158415da04e9bb8b33c332f6cca8f14c08f8c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/25/2020
-ms.locfileid: "85350769"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "86386249"
 ---
 # <a name="debug-64-bit-applications"></a>Déboguer des applications 64 bits
 Vous pouvez déboguer une application 64 bits qui s'exécute sur l'ordinateur local ou sur un ordinateur distant.
@@ -50,7 +50,7 @@ Vous pouvez déboguer une application 64 bits qui s'exécute sur l'ordinateur lo
 
 - Un logiciel de sécurité réseau installé sur votre ordinateur altère la fiabilité de la pile de mise en réseau, et il a ignoré des paquets qui passent sur localhost. Essayez de désactiver tous les logiciels de sécurité réseau et voyez si le problème est résolu. Si tel est le cas, signalez à votre fournisseur de logiciels de sécurité réseau que le logiciel interfère avec le trafic de localhost.
 
-- Vous rencontrez un problème de blocage ou de performances avec Visual Studio. Si le problème se produit régulièrement, vous pouvez collecter les dumps de Visual Studio (devenv.exe) et le processus de travail (msvsmon.exe), puis les envoyer à Microsoft. Pour plus d’informations sur le signalement d’un problème, consultez [How to Report a Problem with Visual Studio](../ide/how-to-report-a-problem-with-visual-studio.md).
+- Vous rencontrez un problème où Visual Studio cesse de répondre ou d’autres problèmes de performances. Si le problème se produit régulièrement, vous pouvez collecter les dumps de Visual Studio (devenv.exe) et le processus de travail (msvsmon.exe), puis les envoyer à Microsoft. Pour plus d’informations sur le signalement d’un problème, consultez [How to Report a Problem with Visual Studio](../ide/how-to-report-a-problem-with-visual-studio.md).
 
 ## <a name="see-also"></a>Voir aussi
 

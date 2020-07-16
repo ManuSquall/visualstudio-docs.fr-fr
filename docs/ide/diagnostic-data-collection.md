@@ -7,12 +7,12 @@ ms.author: michma
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9702439569fa9db1ff8687e914d5c9d20865e2b0
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: b3f3774a816ca31bfcdd4013d35dadbb1737e5ab
+ms.sourcegitcommit: a77158415da04e9bb8b33c332f6cca8f14c08f8c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "72652471"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "86387250"
 ---
 # <a name="system-generated-logs-collected-by-visual-studio"></a>Journaux générés par le système et collectés par Visual Studio
 
@@ -20,11 +20,11 @@ Visual Studio collecte les journaux générés par le système pour résoudre le
 
 ## <a name="types-of-collected-data"></a>Types de données collectées
 
-Visual Studio collecte les journaux générés par le système sur les plantages, les blocages, l’absence de réactivité de l’IU et l’utilisation élevée de l’UC ou de la mémoire. Nous collectons également des informations sur les erreurs rencontrées durant l’installation ou l’utilisation du produit. Les données collectées varient en fonction de l’erreur. Elles peuvent comporter des rapports des appels de procédure, des images mémoire et des informations sur les exceptions :
+Visual Studio collecte les journaux générés par le système pour les pannes, l’absence de réponse de l’interface utilisateur et l’utilisation intensive du processeur ou de la mémoire. Nous collectons également des informations sur les erreurs rencontrées durant l’installation ou l’utilisation du produit. Les données collectées varient en fonction de l’erreur. Elles peuvent comporter des rapports des appels de procédure, des images mémoire et des informations sur les exceptions :
 
 - En ce qui concerne l’utilisation élevée de l’UC et l’absence de réactivité, les rapports des appels de procédure relatifs aux threads Visual Studio appropriés sont collectés.
 
-- Dans les cas où les rapports des appels de procédure de certains threads ne suffisent pas pour déterminer la cause racine du problème, par exemple des plantages, des blocages ou une utilisation élevée de la mémoire, nous collectons une *image mémoire*. L’image mémoire représente l’état du processus au moment où l’erreur s’est produite.
+- Dans les cas où les traces de pile de certains threads ne sont pas suffisantes pour déterminer la cause racine du problème, par exemple, des pannes, une absence de réponse ou une utilisation élevée de la mémoire, nous collectons une *image*mémoire. L’image mémoire représente l’état du processus au moment où l’erreur s’est produite.
 
 - Pour les conditions d’erreurs inattendues, par exemple, une exception durant une tentative d’écriture dans un fichier sur le disque, nous collectons des informations sur l’exception. Les informations incluent le nom de l’exception, le rapport des appels de procédure du thread où l’exception s’est produite, le message associé à l’exception et d’autres informations spécifiques à l’exception.
 
@@ -52,7 +52,7 @@ Le flux de travail permettant de déterminer la cause racine d’une erreur vari
 
 ### <a name="error-classification"></a>Classification de l’erreur
 
-En fonction des journaux, les erreurs sont classées et comptabilisées pour faire l’objet d’une hiérarchisation des recherches. Par exemple, nous pouvons découvrir que l’erreur « System.IO.\__Error.WinIOError » sur « System.IO.FileStream.Init » s’est produite 500 fois dans la version \<x> du produit, et qu’elle a le taux d’occurrence le plus élevé dans cette version.
+En fonction des journaux, les erreurs sont classées et comptabilisées pour faire l’objet d’une hiérarchisation des recherches. Par exemple, nous pouvons découvrir que «System.IO. \_ _Error. WinIOError» à « System.IO.FileStream.Init » s’est produite 500 fois dans \<x> la version du produit et a le taux d’occurrence le plus élevé dans cette version.
 
 ### <a name="work-items-for-tracking"></a>Éléments de travail pour le suivi
 
@@ -72,5 +72,5 @@ Compte tenu de la finalité des données que nous collectons et des contraintes 
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Programme d’amélioration du produit Visual Studio](visual-studio-experience-improvement-program.md)
+- [Programme d’amélioration de l’expérience utilisateur Visual Studio](visual-studio-experience-improvement-program.md)
 - [Diagnostics, commentaires et confidentialité dans Windows 10](https://privacy.microsoft.com/windows-10-feedback-diagnostics-and-privacy)

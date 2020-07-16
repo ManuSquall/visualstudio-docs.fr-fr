@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: eb66615abbd7124fd6b781598bd8eb28ea34756d
-ms.sourcegitcommit: 0b90e1197173749c4efee15c2a75a3b206c85538
+ms.openlocfilehash: 3155c2cdc9ea3dc5208a52e5fe37f697a4ad5ef6
+ms.sourcegitcommit: a77158415da04e9bb8b33c332f6cca8f14c08f8c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/07/2019
-ms.locfileid: "74903863"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "86386119"
 ---
 # <a name="disable-the-just-in-time-debugger"></a>Désactiver le débogueur juste-à-temps
 
@@ -32,15 +32,15 @@ Si vous n’avez pas installé Visual Studio, vous pouvez empêcher le débogage
 
 - Si vous essayez d’exécuter une application Web, désactivez le débogage de script :
 
-  Dans **le panneau de configuration** Windows > **Options Internet** > **réseau et Internet** , sélectionnez **désactiver le débogage de script (Internet Explorer)** et **désactivez le débogage de script (autre)** . Les étapes et les paramètres exacts dépendent de votre version de Windows et de votre navigateur.
+  Dans **le panneau de configuration**Windows  >  **Network and Internet**  >  **Options Internet**et Internet, sélectionnez **désactiver le débogage de script (Internet Explorer)** et **désactivez le débogage de script (autre)**. Les étapes et les paramètres exacts dépendent de votre version de Windows et de votre navigateur.
 
   ![Options Internet JIT](../debugger/media/jitinternetoptions.png "Options Internet JIT")
 
 - Si vous hébergez une application Web ASP.NET dans IIS, désactivez le débogage côté serveur :
 
   1. Dans l' **affichage fonctionnalités**du gestionnaire des services Internet, sous la section **ASP.net** , double-cliquez sur **compilation .net**, ou sélectionnez-la, puis sélectionnez **ouvrir la fonctionnalité** dans le volet **actions** .
-  1. Sous **comportement** > **Déboguer**, sélectionnez **false**. Les étapes sont différentes dans les versions antérieures d’IIS.
+  1. Sous **comportement**  >  **Debug**, sélectionnez **false**. Les étapes sont différentes dans les versions antérieures d’IIS.
 
 Une fois que vous avez désactivé le débogage juste-à-temps, l’application peut être en mesure de gérer l’erreur et de s’exécuter normalement.
 
-Si l’application a toujours une erreur non gérée, vous pouvez voir un message d’erreur, ou l’application peut se bloquer ou se bloquer. L’application ne s’exécute pas normalement tant que l’erreur n’est pas corrigée. Vous pouvez essayer de contacter le propriétaire de l’application et de lui demander de le résoudre.
+Si l’application a toujours une erreur non gérée, vous pouvez voir un message d’erreur ou l’application peut se bloquer ou cesser de répondre. L’application ne s’exécute pas normalement tant que l’erreur n’est pas corrigée. Vous pouvez essayer de contacter le propriétaire de l’application et de lui demander de le résoudre.

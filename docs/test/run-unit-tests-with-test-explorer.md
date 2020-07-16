@@ -1,7 +1,7 @@
 ---
-title: Exécuter et déboguer des tests unitaires avec l’Explorateur de tests
-description: Découvrez comment exécuter des tests avec l’Explorateur de tests dans Visual Studio. Cette rubrique explique comment activer des séries de tests automatiques après une génération, voir les résultats des tests, regrouper et filtrer la liste de tests, créer des sélections, déboguer les tests et utiliser des raccourcis de test.
-ms.date: 07/29/2019
+title: Exécuter des tests unitaires avec l'Explorateur de tests
+description: Découvrez comment exécuter des tests avec l’Explorateur de tests dans Visual Studio. Cette rubrique explique comment activer les séries de tests automatiques après la génération, afficher les résultats des tests, regrouper et filtrer la liste de tests, créer des sélections et utiliser des raccourcis de test.
+ms.date: 07/14/2020
 ms.topic: how-to
 f1_keywords:
 - vs.unittesting.testexplorer.overview
@@ -10,24 +10,31 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 35bd6f26b56ea7c3a1d578e5721504a91f60b74c
-ms.sourcegitcommit: 46547f0bf3fc1a81e1a906762106dec5855e6e4a
+ms.openlocfilehash: c2d7dc38f1a25826ba275738cd8e758a2ad5d90e
+ms.sourcegitcommit: a77158415da04e9bb8b33c332f6cca8f14c08f8c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "86156842"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "86386639"
 ---
 # <a name="run-unit-tests-with-test-explorer"></a>Exécuter des tests unitaires avec l'Explorateur de tests
 
-Utilisez l’Explorateur de tests pour exécuter des tests unitaires à partir de projets de tests unitaires Visual Studio ou tiers. Vous pouvez également utiliser l’Explorateur de tests pour regrouper les tests par catégories, filtrer la liste de tests, et créer, enregistrer et exécuter des playlists de tests. Vous pouvez déboguer des tests et analyser les performances des tests et la couverture du code.
+Utilisez l’Explorateur de tests pour exécuter des tests unitaires à partir de projets de tests unitaires Visual Studio ou tiers. Vous pouvez également utiliser l’Explorateur de tests pour regrouper les tests par catégories, filtrer la liste de tests, et créer, enregistrer et exécuter des playlists de tests. Vous pouvez également analyser la couverture du code et [Déboguer des tests unitaires](../test/debug-unit-tests-with-test-explorer.md).
+
+**L’Explorateur de tests** peut exécuter des tests à partir de plusieurs projets de tests dans une solution et à partir de classes de test qui font partie des projets de code en production. Les projets de test peuvent utiliser différentes infrastructures de tests unitaires. Quand le code testé est écrit pour .NET, le projet de test peut être écrit dans n’importe quel langage qui cible également .NET, quel que soit le langage du code cible. Les projets de code C/C++ natifs doivent être testés à l'aide d'une infrastructure de tests unitaires C++.
+
+## <a name="build-your-test-project"></a>Générer votre projet de test
+
+Si vous n’avez pas encore de projet de test configuré dans votre solution Visual Studio, vous devez d’abord créer et générer un projet de test.
+
+- [Prise en main du test unitaire (.NET)](../test/getting-started-with-unit-testing.md)
+- [Écrire des tests unitaires pour C/C++](writing-unit-tests-for-c-cpp.md)
 
 Visual Studio inclut les infrastructures de tests unitaires Microsoft pour le code managé comme pour le code natif. Toutefois, l'Explorateur de tests peut également exécuter toute infrastructure de tests unitaires qui a implémenté un adaptateur pour l'Explorateur de tests. Pour plus d’informations sur l’installation des frameworks de tests unitaires tiers, consultez [Installer des frameworks de tests unitaires tiers](../test/install-third-party-unit-test-frameworks.md).
 
-**L’Explorateur de tests** peut exécuter des tests à partir de plusieurs projets de tests dans une solution et à partir de classes de test qui font partie des projets de code en production. Les projets de test peuvent utiliser différentes infrastructures de tests unitaires. Quand le code testé est écrit pour .NET, le projet de test peut être écrit dans n’importe quel langage qui cible également .NET, quel que soit le langage du code cible. Les projets de code C/C++ natifs doivent être testés à l'aide d'une infrastructure de tests unitaires C++. Pour plus d’informations, consultez [Écrire des tests unitaires pour C/C++](writing-unit-tests-for-c-cpp.md).
-
 ## <a name="run-tests-in-test-explorer"></a>Exécuter des tests dans l’explorateur de tests
 
-Lorsque vous [Générez le projet de test](../test/getting-started-with-unit-testing.md), les tests s’affichent dans l’Explorateur de tests. Si l’explorateur de tests n’est pas visible, sélectionnez **Test** dans le menu Visual Studio et choisissez **Fenêtres**, puis **Explorateur de tests**.
+Quand vous générez le projet de test, les tests s’affichent dans l’explorateur de tests. Si l’explorateur de tests n’est pas visible, sélectionnez **Test** dans le menu Visual Studio et choisissez **Fenêtres**, puis **Explorateur de tests**.
 
 ::: moniker range="vs-2017"
 ![Explorateur de tests unitaires](../test/media/ute_failedpassednotrunsummary.png)
@@ -81,7 +88,7 @@ Vous pouvez exécuter tous les tests dans la solution, tous les tests dans un gr
 
 ### <a name="run-tests-after-every-build"></a>Exécuter des tests après chaque génération
 ::: moniker range="vs-2017"
-|Bouton|Description|
+|Button|Description|
 |-|-|
 |![Exécuter après les builds](../test/media/ute_runafterbuild_btn.png)|Pour exécuter vos tests unitaires après chaque génération locale, choisissez **Test** dans le menu standard, puis **Exécuter les tests après la génération** dans la barre d’outils de **l’Explorateur de tests**.|
 
@@ -304,23 +311,6 @@ FilterName:"Criteria" -FilterName:"SubsetCriteria"
 
 Par exemple, `FullName:"MyClass" - FullName:"PerfTest"` retourne tous les tests qui incluent « MyClass » dans leur nom, sauf ceux qui incluent également « PerfTest » dans leur nom.
 
-## <a name="debug-and-analyze-unit-tests"></a>Déboguer et analyser des tests unitaires
-
-Vous pouvez utiliser l'Explorateur de tests pour démarrer une session de débogage de vos tests. L’exécution pas à pas de votre code avec le débogueur Visual Studio vous conduit de manière transparente à des allers et retours entre les tests unitaires et le projet testé. Pour démarrer le débogage :
-
-1. Dans l’éditeur Visual Studio, définissez un point d’arrêt dans une ou plusieurs méthodes de test que vous souhaitez déboguer.
-
-    > [!NOTE]
-    > Comme les méthodes de test peuvent s’exécuter dans n’importe quel ordre, définissez les points d’arrêt dans toutes les méthodes de test que vous souhaitez déboguer.
-
-2. Dans l’Explorateur de tests, sélectionnez les méthodes de test, puis choisissez **Déboguer les tests sélectionnés** dans le menu contextuel (clic droit).
-
-   Pour plus d’informations sur le débogueur, consultez [Déboguer dans Visual Studio](../debugger/debugger-feature-tour.md).
-
-### <a name="diagnose-test-method-performance-issues"></a>Diagnostiquer les problèmes de performances de méthode de test
-
-Pour diagnostiquer la lenteur d’une méthode de test, sélectionnez-la dans l’Explorateur de tests, puis choisissez **Profiler le test sélectionné** dans le menu contextuel. Consultez [rapport de profilage par instrumentation](../profiling/understanding-instrumentation-data-values.md?view=vs-2017).
-
 ### <a name="analyze-unit-test-code-coverage"></a>Analyser la couverture du code de test unitaire
 
 Vous pouvez déterminer la quantité de code produit qui est réellement testée par vos tests unitaires à l'aide de l'outil de couverture de code Visual Studio disponible dans l’édition Visual Studio Enterprise. Vous pouvez exécuter la couverture de code sur les tests sélectionnés ou sur tous les tests d'une solution.
@@ -351,7 +341,7 @@ Pour plus d’informations, consultez [Utiliser la couverture du code pour déte
 
 ## <a name="test-shortcuts"></a>Raccourcis pour les tests
 
-Les tests peuvent être exécutés à partir de l’Explorateur de tests en cliquant avec le bouton droit dans l’éditeur de code sur un test, puis en sélectionnant **exécuter le test** ou en utilisant les raccourcis de l' [Explorateur de tests](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_testexplorerGLOBAL) par défaut dans Visual Studio. Certains raccourcis dépendent du contexte. Cela signifie qu’ils exécutent ou déboguent les tests en fonction de l’endroit où se trouve votre curseur dans l’éditeur de code. Si le curseur est à l’intérieur d’une méthode de test, cette méthode de test s’exécute. Si le curseur est au niveau de la classe, tous les tests de cette classe s’exécutent. C’est pareil pour le niveau d’espace de noms.
+Les tests peuvent être exécutés à partir de l’Explorateur de tests en cliquant avec le bouton droit dans l’éditeur de code sur un test, puis en sélectionnant **exécuter le test** ou en utilisant les raccourcis de l' [Explorateur de tests](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_testexplorerGLOBAL) par défaut dans Visual Studio. Certains raccourcis dépendent du contexte. Cela signifie qu’ils exécutent ou [déboguent des tests](../test/debug-unit-tests-with-test-explorer.md) en fonction de l’emplacement de votre curseur dans l’éditeur de code. Si le curseur est à l’intérieur d’une méthode de test, cette méthode de test s’exécute. Si le curseur est au niveau de la classe, tous les tests de cette classe s’exécutent. C’est pareil pour le niveau d’espace de noms.
 
 |Commandes fréquentes| Raccourcis clavier|
 |-|------------------------|
@@ -366,5 +356,6 @@ Les tests peuvent être exécutés à partir de l’Explorateur de tests en cliq
 ## <a name="see-also"></a>Voir aussi
 
 - [Test unitaire de votre code](../test/unit-test-your-code.md)
+- [Déboguer des tests unitaires avec l’Explorateur de tests](../test/debug-unit-tests-with-test-explorer.md)
 - [Exécuter un test unitaire comme processus 64 bits](../test/run-a-unit-test-as-a-64-bit-process.md)
 - [Questions fréquentes (FAQ) sur l’Explorateur de tests](test-explorer-faq.md)

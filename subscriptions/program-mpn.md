@@ -7,12 +7,12 @@ ms.assetid: 7f4399d8-41da-41e5-a666-acc34958b8c0
 ms.date: 03/09/2020
 ms.topic: conceptual
 description: MPN donne des détails sur les abonnements proposés, sur les règles qui s’appliquent et sur le nombre d’abonnements.
-ms.openlocfilehash: fb19f84c480fb1291d225dcce8c0e140a953826b
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: da7f4cccab1354d0ab563868f3a874539f63c7c6
+ms.sourcegitcommit: a77158415da04e9bb8b33c332f6cca8f14c08f8c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84183052"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "86387146"
 ---
 # <a name="visual-studio-subscriptions-offered-to-partners-in-the-microsoft-partner-network-mpn"></a>Abonnements Visual Studio offerts aux partenaires du réseau MPN (Microsoft Partner Network)
 
@@ -44,7 +44,7 @@ Quel que soit le nombre de compétences qu’un partenaire gagne, le nombre d’
 
 | Quantité maximale d’avantages pour les partenaires ayant uniquement des compétences Silver                   | Quantité maximale d’avantages pour les partenaires ayant au moins une compétence Gold               |
 |------------------------------------------------------------------------------|------------------------------------------------------------------------------|
-| 25 abonnements Visual Studio Enterprise par pays ; 75 dans le monde entier          | 50 abonnements Visual Studio Enterprise par pays ; 150 dans le monde entier         |
+| 25 abonnements Visual Studio Enterprise par pays/région ; 75 dans le monde entier          | 50 abonnements Visual Studio Enterprise par pays/région ; 150 dans le monde entier         |
 
 ## <a name="subscriptions-for-partners-purchasing-the-action-pack"></a>Abonnements pour les partenaires achetant l’Action Pack
 

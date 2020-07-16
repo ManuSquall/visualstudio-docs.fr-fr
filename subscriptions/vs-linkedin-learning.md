@@ -7,12 +7,12 @@ ms.assetid: 5bba2205-d32f-413d-9b58-724a24993842
 ms.date: 04/17/2020
 ms.topic: how-to
 description: Découvrez l’avantage LinkedIn Learning, qui est lié à un abonnement LinkedIn Premium inclus dans certains abonnements Visual Studio.
-ms.openlocfilehash: f3ce676232742f712a926dbeb70e8fd2505ff18a
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.openlocfilehash: 580b565ad2eeecc0c5923963243ee63c1069b86f
+ms.sourcegitcommit: a77158415da04e9bb8b33c332f6cca8f14c08f8c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "85904417"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "86387133"
 ---
 # <a name="the-linkedin-learning-benefit-in-visual-studio-subscriptions"></a>Avantage LinkedIn Learning dans les abonnements Visual Studio
 
@@ -36,7 +36,7 @@ Pour activer votre abonnement LinkedIn Premium et l’avantage LinkedIn Learning
 
 5. Entrez vos informations personnelles, choisissez un nom d’utilisateur et un mot de passe, puis cliquez sur **S’inscrire**.
 
-6. Spécifiez votre pays et le code postal, puis cliquez sur **Suivant**.
+6. Spécifiez votre pays/région et votre code postal, puis cliquez sur **suivant**.
 
 7. Vous indiquez ensuite quelques informations sur vous-même pour votre profil.  Indiquez si vous êtes étudiant ou spécifiez votre fonction la plus récente, votre entreprise et son secteur d’activité.
 
@@ -91,7 +91,7 @@ Vous n’êtes pas sûr de l’abonnement que vous utilisez ?  Connectez-vous à
 R : Non, l’offre LinkedIn Learning est réservée uniquement aux nouveaux abonnés.
 
 ## <a name="support-resources"></a>Ressources de support
-- Besoin d’aide avec LinkedIn Learning ?  Consultez les ressources suivantes :
+- Besoin d’aide avec LinkedIn Learning ?  Consultez les ressources suivantes :
   - Aide sur [l’utilisation de LinkedIn Learning](https://www.linkedin.com/help/learning).
   - Aide sur des questions générales relatives à [LinkedIn](https://www.linkedin.com/help/linkedin), telles que la création de comptes et de profils, ou la gestion de votre réseau.
 - Pour obtenir de l’aide sur les ventes, les abonnements, les comptes et la facturation des abonnements Visual Studio, contactez le [support des abonnements](https://visualstudio.microsoft.com/subscriptions/support/)Visual Studio.

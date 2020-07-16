@@ -10,12 +10,12 @@ ms.author: johmil
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: 0173c076a04c4c725565e63c41396b7c4d235952
-ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
+ms.openlocfilehash: 7858846585467de3b5b820902938d6019b0d09ff
+ms.sourcegitcommit: a77158415da04e9bb8b33c332f6cca8f14c08f8c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85815056"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "86386262"
 ---
 # <a name="troubleshooting-and-known-issues-visual-studio-tools-for-unity"></a>Problèmes connus et dépannage (Outils Visual Studio pour Unity)
 
@@ -50,9 +50,9 @@ Votre problème devrait être résolu. Si le problème persiste, exécutez une i
  devenv /setup
 ```
 
-## <a name="visual-studio-hangs"></a>Visual Studio se bloque
+## <a name="visual-studio-stops-responding"></a>Visual Studio ne répond plus
 
-Plusieurs plug-ins Unity comme Parse, FMOD, UMP (Universal Media Player), ZFBrowser ou Embedded Browser utilisent des threads natifs. Un problème se pose quand un plug-in finit par attacher un thread natif au runtime, ce qui aboutit ensuite à des appels bloquants pour le système d’exploitation. Cela signifie qu’Unity ne peut pas interrompre ce thread pour le débogueur (ou le rechargement de domaine) et se bloque.
+Plusieurs plug-ins Unity comme Parse, FMOD, UMP (Universal Media Player), ZFBrowser ou Embedded Browser utilisent des threads natifs. Un problème se pose quand un plug-in finit par attacher un thread natif au runtime, ce qui aboutit ensuite à des appels bloquants pour le système d’exploitation. Cela signifie que Unity ne peut pas interrompre ce thread pour le débogueur (ou le rechargement de domaine) et cesser de répondre.
 
 Pour FMOD, il existe une solution, vous pouvez passer [l’indicateur](https://www.fmod.com/resources/documentation-studio?version=2.0&page=https://fmod.com/resources/documentation-api?version=2.0&page=studio-api-system.html#fmod_studio_initflags) d’initialisation `FMOD_STUDIO_INIT_SYNCHRONOUS_UPDATE` pour désactiver le traitement asynchrone et effectuer tout le traitement sur le thread principal.
 

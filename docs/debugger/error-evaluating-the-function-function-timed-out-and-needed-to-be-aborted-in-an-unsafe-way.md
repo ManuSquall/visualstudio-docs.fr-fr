@@ -9,18 +9,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f687672de4bc3511fa0c9198f7ad4145b26dcd11
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.openlocfilehash: 76a655e2994e1eaa1c5ac65e7b8782ec5b9d6f72
+ms.sourcegitcommit: a77158415da04e9bb8b33c332f6cca8f14c08f8c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/27/2020
-ms.locfileid: "85460796"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "86386717"
 ---
 # <a name="error-evaluating-the-function-39function39-timed-out-and-needed-to-be-aborted-in-an-unsafe-way"></a>Erreur : l’évaluation de la fonction &#39;fonction&#39; a dépassé le délai d’attente et devait être abandonnée de manière non sécurisée
 
 Texte complet du message : l’évaluation de la fonction’fonction’a expiré et devait être abandonnée de manière non sécurisée. Cela peut avoir endommagé le processus cible.
 
-Pour faciliter l’inspection de l’état des objets .NET, le débogueur force automatiquement le processus débogué à exécuter du code supplémentaire (en général, les méthodes d’accesseur Get de propriété et les fonctions ToString). Dans la plupart des scénarios, ces fonctions se terminent rapidement et facilitent grandement le débogage. Toutefois, le débogueur n’exécute pas l’application dans un bac à sable (sandbox). Par conséquent, une méthode Getter ou ToString de propriété qui appelle une fonction native qui se bloque peut entraîner des délais d’attente longs qui peuvent ne pas être récupérables. Si vous rencontrez ce message d’erreur, cela s’est produit.
+Pour faciliter l’inspection de l’état des objets .NET, le débogueur force automatiquement le processus débogué à exécuter du code supplémentaire (en général, les méthodes d’accesseur Get de propriété et les fonctions ToString). Dans la plupart des scénarios, ces fonctions se terminent rapidement et facilitent grandement le débogage. Toutefois, le débogueur n’exécute pas l’application dans un bac à sable (sandbox). Par conséquent, une méthode Getter ou ToString de propriété qui appelle une fonction native qui ne répond plus peut entraîner des délais d’attente longs qui peuvent ne pas être récupérables. Si vous rencontrez ce message d’erreur, cela s’est produit.
 
 Ce problème est souvent dû au fait que lorsque le débogueur évalue une propriété, il autorise uniquement le thread en cours d’inspection à s’exécuter. Par conséquent, si la propriété attend que d’autres threads s’exécutent à l’intérieur de l’application déboguée, et si elle attend dans le cas où le Runtime .NET n’est pas en mesure d’interrompre, ce problème se produit.
 

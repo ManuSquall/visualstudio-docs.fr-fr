@@ -18,16 +18,16 @@ ms.topic: conceptual
 ms.workload:
 - multiple
 monikerRange: vs-2017
-ms.openlocfilehash: de26054894783df283d38223a59741c0500d0bc5
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: f7cc538fed6011dd3d972df7763a221c3deee985
+ms.sourcegitcommit: a77158415da04e9bb8b33c332f6cca8f14c08f8c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74955034"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "86386847"
 ---
 # <a name="whats-new-in-visual-studio-2017"></a>Nouveautés de Visual Studio 2017
 
-**Mise à jour pour la [version 15.9](/visualstudio/releasenotes/vs2017-relnotes?context=visualstudio/default&contextView=vs-2017)**
+**Mise à jour pour la [version 15,9](/visualstudio/releasenotes/vs2017-relnotes?context=visualstudio/default&contextView=vs-2017)**
 
 Vous envisagez de mettre à niveau une version antérieure de Visual Studio ? Visual Studio 2017 peut vous apporter une productivité inégalée pour l’ensemble des développements, applications et plateformes. Utilisez Visual Studio 2017 afin de développer des applications pour Android, iOS, Windows, le web et le Cloud. Écrivez votre code rapidement, déboguez et diagnostiquez facilement, testez souvent et publiez en toute confiance. Vous pouvez également étendre et personnaliser Visual Studio en créant vos propres extensions. Avec cette version, utilisez la gestion de versions, soyez agile et collaborez efficacement !
 
@@ -36,17 +36,17 @@ Vous envisagez de mettre à niveau une version antérieure de Visual Studio ? V
 
 Voici un récapitulatif général des changements par rapport à la version antérieure, Visual Studio 2015 :
 
-* **[Principes fondamentaux redéfinis](#redefined-fundamentals)**. Une nouvelle expérience d’installation signifie que vous pouvez installer plus rapidement ce que vous voulez et quand vous en avez besoin.
-* **[Performance et productivité](#performance-and-productivity)**. Nous nous sommes concentrés sur les fonctionnalités nouvelles et modernes du développement d’applications mobiles, de bureau et cloud. En outre, Visual Studio démarre plus vite, est plus réactif et utilise moins de mémoire qu’auparavant.
+* **[Notions de base redéfinies](#redefined-fundamentals)**. Une nouvelle expérience d’installation signifie que vous pouvez installer plus rapidement ce que vous voulez et quand vous en avez besoin.
+* **[Performances et productivité](#performance-and-productivity)**. Nous nous sommes concentrés sur les fonctionnalités nouvelles et modernes du développement d’applications mobiles, de bureau et cloud. En outre, Visual Studio démarre plus vite, est plus réactif et utilise moins de mémoire qu’auparavant.
 * **[Développement d’applications Cloud avec Azure](#cloud-app-development-with-azure)**. Une suite intégrée d’outils Azure vous permet de créer facilement des applications prioritairement centrées sur le cloud et optimisées par Microsoft Azure. Visual Studio vous permet de facilement configurer, générer, déboguer, packager et déployer des applications et services sur Azure.
-* **[Développement de l’application Windows](#windows-app-development)**. Avec les modèles UWP fournis dans Visual Studio 2017, créez un projet unique pour tous les appareils Windows 10 &ndash; PC, tablette, téléphone, Xbox, HoloLens, Surface Hub, etc.
+* **[Développement d’applications Windows](#windows-app-development)**. Avec les modèles UWP fournis dans Visual Studio 2017, créez un projet unique pour tous les appareils Windows 10 &ndash; PC, tablette, téléphone, Xbox, HoloLens, Surface Hub, etc.
 * **[Développement d’applications mobiles](#mobile-app-development)**. Innovez et obtenez des résultats rapides grâce à Xamarin, qui unifie vos exigences pour les mobiles multi-plateformes en une seule base de code et à un même ensemble de compétences.
 * **[Développement multiplateforme](#cross-platform-development)**. Livrez sans plus d’effort des logiciels pour toutes les plateformes ciblées. Étendez les processus DevOps à SQL Server à l’aide de Redgate Data Tools et automatisez en toute sécurité les déploiements de bases de données à partir de Visual Studio. Sinon, utilisez .NET Core pour écrire des applications et des bibliothèques qui s’exécutent sans modification sur les systèmes d’exploitation Windows, Linux et macOS.
-* **[Développement des jeux](#games-development)**. Avec Visual Studio Tools for Unity (VSTU), vous pouvez utiliser Visual Studio pour écrire des scripts d'éditeur et de jeu en C#, puis utiliser son débogueur performant pour rechercher et corriger les erreurs.
-* **[Développement de l’IA](#ai-development)**. Avec Visual Studio Tools for AI, vous pouvez utiliser les fonctionnalités de productivité de Visual Studio pour accélérer l’innovation en matière d’intelligence artificielle (IA). Générez, testez et déployez des solutions de Deep Learning / IA qui s’intègrent directement à Azure Machine Learning pour des fonctionnalités d’expérimentation robustes.
+* **[Développement de jeux](#games-development)**. Avec Visual Studio Tools for Unity (VSTU), vous pouvez utiliser Visual Studio pour écrire des scripts d'éditeur et de jeu en C#, puis utiliser son débogueur performant pour rechercher et corriger les erreurs.
+* **[Développement ai](#ai-development)**. Avec Visual Studio Tools for AI, vous pouvez utiliser les fonctionnalités de productivité de Visual Studio pour accélérer l’innovation en matière d’intelligence artificielle (IA). Générez, testez et déployez des solutions de Deep Learning / IA qui s’intègrent directement à Azure Machine Learning pour des fonctionnalités d’expérimentation robustes.
 
 > [!NOTE]
-> Pour une liste complète des nouvelles fonctionnalités et fonctionnalités dans Visual Studio 2017, voir les [notes de sortie actuelles](/visualstudio/releasenotes/vs2017-relnotes?context=visualstudio/default&contextView=vs-2017). Et pour un coup d’oeil à l’offre de fonctionnalités futures, voir les [notes de sortie Preview](/visualstudio/releasenotes/vs2017-preview-relnotes?context=visualstudio/default&contextView=vs-2017).
+> Pour obtenir la liste complète des nouvelles fonctions et fonctionnalités de Visual Studio 2017, consultez les [notes de publication actuelles](/visualstudio/releasenotes/vs2017-relnotes?context=visualstudio/default&contextView=vs-2017). Pour obtenir un aperçu des offres de fonctionnalités futures, consultez les [notes de publication de la version préliminaire](/visualstudio/releasenotes/vs2017-preview-relnotes?context=visualstudio/default&contextView=vs-2017).
 
 Voici des informations détaillées sur quelques-unes des nouvelles fonctionnalités et des améliorations les plus marquantes de Visual Studio 2017.
 
@@ -90,7 +90,7 @@ Le nouveau Centre de performances Visual Studio peut vous aider à optimiser le 
 
 ### <a name="faster-on-demand-loading-of-extensions"></a>Accélération du chargement des extensions à la demande
 
-Visual Studio déplace ses extensions (et fonctionne également avec des extensions tierces) pour un chargement à la demande, plutôt qu’au démarrage de l’IDE. Vous êtes curieux de savoir quelles extensions ont un impact sur le démarrage, le chargement de solution et les performances de la frappe ? Vous pouvez voir ces informations dans **Help** > **Manage Visual Studio Performance**.
+Visual Studio déplace ses extensions (et fonctionne également avec des extensions tierces) pour un chargement à la demande, plutôt qu’au démarrage de l’IDE. Vous êtes curieux de savoir quelles extensions ont un impact sur le démarrage, le chargement de solution et les performances de la frappe ? Vous pouvez consulter ces informations dans **l’aide**  >  **gérer les performances de Visual Studio**.
 
   ![Boîte de dialogue Option de Visual Studio 2017](media/vs2017ide-manage-vs-perf.png)
 
@@ -98,7 +98,7 @@ Visual Studio déplace ses extensions (et fonctionne également avec des extensi
 
 Il est plus facile de configurer chaque environnement de développement avec vos extensions préférées quand vous vous connectez à Visual Studio. Le nouveau Gestionnaire d’extensions itinérantes effectue le suivi de toutes vos extensions préférées en créant une liste synchronisée dans le Cloud.
 
-Pour voir une liste de vos extensions dans Visual Studio, cliquez sur **Tools** > **Extensions & Mises à jour,** puis cliquez sur le **gestionnaire d’extension d’itinérance**.
+Pour afficher la liste de vos extensions dans Visual Studio, cliquez sur **Outils**  >  **Extensions & mises à jour**, puis cliquez sur **Gestionnaire d’extensions itinérantes**.
 
 ![Visual Studio 2017 - Boîte de dialogue Extensions et mises à jour](media/vs2017ide-extensions-and-updates.png)
 
@@ -145,7 +145,7 @@ Pour plus d’informations, consultez la section [Sélection avec signes inserti
 
 #### <a name="keep-keybinding-profiles-consistent"></a>Maintenir la cohérence des profils de combinaison de touches
 
-**Nouveauté de la version 15.8** : désormais, vous pouvez maintenir la cohérence de vos combinaisons de touches entre les outils à l’aide de deux nouveaux profils de clavier : Visual Studio Code et ReSharper (Visual Studio). Vous pouvez trouver ces schémas sous **Tools** > **Options** > **General** > **Keyboard** et le menu déroulant haut.
+**Nouveauté de la version 15.8** : désormais, vous pouvez maintenir la cohérence de vos combinaisons de touches entre les outils à l’aide de deux nouveaux profils de clavier : Visual Studio Code et ReSharper (Visual Studio). Ces schémas sont disponibles sous **Outils**  >  **options**  >  **General**  >  **clavier** général et le menu déroulant supérieur.
 
   ![Nouveaux profils de combinaison de touches pour Visual Studio Code et ReSharper](media/vs-keyboard-mappings-code-resharper.png)
 
@@ -174,15 +174,15 @@ Lorsque vous travaillez avec un projet dans Visual Studio, vous pouvez installer
 
 Nous avons actualisé l’expérience de navigation pour permettre le déplacement d’un point A vers un point B de manière plus fiable et directe.
 
-* **Nouveau en 15.4**: **Go To Definition** (**Ctrl**+**click** ou **F12**) &ndash; Les utilisateurs de souris ont un moyen plus facile de naviguer vers la définition d’un membre en appuyant sur **Ctrl,** puis en cliquant sur le membre. Vous pouvez également appuyer sur **Ctrl** et pointer sur un symbole de code pour le souligner et le transformer en lien. Pour plus d’informations, consultez [Atteindre la définition et Aperçu de la définition](go-to-and-peek-definition.md).
+* **Nouveauté de 15,4**: **atteindre la définition** (**CTRL +** + **clic** **F12**) &ndash; les utilisateurs de la souris ont un moyen plus simple d’accéder à la définition d’un membre en appuyant sur **CTRL** , puis en cliquant sur le membre. Vous pouvez également appuyer sur **Ctrl** et pointer sur un symbole de code pour le souligner et le transformer en lien. Pour plus d’informations, consultez [Atteindre la définition et Aperçu de la définition](go-to-and-peek-definition.md).
 
-* **Go To Implementation** (**Ctrl**+**F12**) &ndash; Naviguez de n’importe quel type de base ou membre à ses différentes implémentations.
+* **Accédez à implémentation** (**CTRL** + **F12**) &ndash; naviguer d’un type ou membre de base à ses diverses implémentations.
 
-* **Go To All** (**Ctrl**+**T** &ndash; ou **Ctrl**+**,**) Naviguez directement vers n’importe quel fichier/type/membre/déclaration de symbole. Vous pouvez filtrer votre liste de résultats ou utiliser la syntaxe de requête (par exemple, « f searchTerm » pour les fichiers, « t searchTerm » pour les types, etc.).
+* **Atteindre tout** (**CTRL** + **T** ou **CTRL** + **,**) &ndash; accéder directement à n’importe quelle déclaration de fichier/type/membre/symbole. Vous pouvez filtrer votre liste de résultats ou utiliser la syntaxe de requête (par exemple, « f searchTerm » pour les fichiers, « t searchTerm » pour les types, etc.).
 
   ![Amélioration de la fonctionnalité Atteindre tout](media/vs2017ide-navigation-go-to.png)
 
-* **Trouver toutes les références** ( &ndash; **Shift**+**F12**) Avec la colorisation syntaxe, vous pouvez regrouper tous les résultats de référence par une combinaison de projet, de définition et de chemin. Vous pouvez également « verrouiller » les résultats afin de pouvoir continuer à rechercher d’autres références sans perdre les résultats d’origine.
+* **Rechercher toutes les références** (**Shift** + **F12**) &ndash; avec la coloration de la syntaxe, vous pouvez regrouper les résultats de la recherche de toutes les références par une combinaison de projet, définition et chemin d’accès. Vous pouvez également « verrouiller » les résultats afin de pouvoir continuer à rechercher d’autres références sans perdre les résultats d’origine.
 
   ![Nouvel outil Rechercher toutes les références](media/vs2017ide-find-all-references.png)
 
@@ -190,15 +190,15 @@ Nous avons actualisé l’expérience de navigation pour permettre le déplaceme
 
   ![Visualiseur de structure Visual Studio 2017](media/vsIDE-StructureVisualizer.png)
 
-Pour plus d’informations sur les nouvelles fonctionnalités de productivité, consultez le [blog Visual Studio 2017: Productivity, Performance, and Partners.](https://devblogs.microsoft.com/visualstudio/visual-studio-2017-productivity-performance-and-partners/)
+Pour plus d’informations sur les nouvelles fonctionnalités de productivité, consultez le billet de blog [Visual Studio 2017 : Productivity, performance et Partners](https://devblogs.microsoft.com/visualstudio/visual-studio-2017-productivity-performance-and-partners/) .
 
 ### <a name="visual-c"></a>Visual C++
 
 Nous avons également ajouté plusieurs améliorations à Visual Studio, notamment la distribution des instructions de base C++ avec Visual Studio, la mise à jour du compilateur grâce à l’amélioration de la prise en charge des fonctionnalités C++ 11 et C++, ainsi que l’ajout et la mise à jour des fonctionnalités dans les bibliothèques C++. Nous avons également amélioré les performances de l’IDE de C++, les charges de travail d’installation et bien plus encore.
 
-De plus, nous avons corrigé plus de 250 bogues et signalé des problèmes dans le compilateur et les outils, dont beaucoup ont été soumis par les clients par l’intermédiaire de la [communauté des développeurs pour C .](https://developercommunity.visualstudio.com/spaces/62/index.html "Communauté de développeurs pour C")
+En outre, nous avons corrigé plus de 250 bogues et signalé des problèmes dans le compilateur et les outils, un grand nombre soumis par les clients via la [communauté de développeurs pour C++](https://developercommunity.visualstudio.com/spaces/62/index.html "Communauté des développeurs pour C++").
 
-Pour plus de détails, consultez la page [What’s new for Visual CMMD in Visual 2017.](/cpp/top/what-s-new-for-visual-cpp-in-visual-studio)
+Pour plus d’informations, consultez la page [Nouveautés de Visual C++ dans Visual 2017](/cpp/top/what-s-new-for-visual-cpp-in-visual-studio) .
 
 ### <a name="debugging-and-diagnostics"></a>Débogage et diagnostics
 
@@ -220,9 +220,9 @@ Pour plus d’informations, consultez le billet de blog [Use the new Exception H
 
 **Nouveauté de 15.5** : Le retour en arrière IntelliTrace prend automatiquement une capture instantanée de votre application à chaque point d’arrêt et chaque étape du débogueur. Les captures instantanées enregistrées vous permettent de revenir à des étapes ou points d’arrêt précédents pour afficher un état antérieur de l’application. Le retour en arrière IntelliTrace peut vous faire gagner du temps quand vous souhaitez afficher un état précédent de l’application sans avoir à redémarrer le débogage ou à recréer l’état de l’application souhaité.
 
-Vous pouvez naviguer et afficher des instantanés en utilisant les boutons **Step Backward** et **Step Forward** dans la barre d’outils **Debug.** Utilisez ces boutons pour accéder aux événements figurant sous l’onglet **Événements** de la fenêtre **Outils de diagnostic**. Quand vous passez à l’étape précédente ou suivante d’un événement, vous activez automatiquement le débogage d’historique pour l’événement sélectionné.
+Vous pouvez parcourir et afficher des instantanés à l’aide des boutons pas à pas **détaillé** et **étape** précédente dans la barre d’outils **Déboguer** . Utilisez ces boutons pour accéder aux événements figurant sous l’onglet **Événements** de la fenêtre **Outils de diagnostic**. Quand vous passez à l’étape précédente ou suivante d’un événement, vous activez automatiquement le débogage d’historique pour l’événement sélectionné.
 
-![Boîte de dialogue de la nouvelle assistance d’exception dans Visual Studio](../debugger/media/intellitrace-step-back-icons-description.png  "Avancez vers l’arrière et en avant")
+![Boîte de dialogue de la nouvelle assistance d’exception dans Visual Studio](../debugger/media/intellitrace-step-back-icons-description.png  "Boutons précédent et suivant")
 
 Pour plus d’informations, consultez la page [Afficher des captures instantanées avec le retour en arrière IntelliTrace](../debugger/view-historical-application-state.md).
 
@@ -232,7 +232,7 @@ Les conteneurs augmentent la densité des applications et réduisent les coûts 
 
 #### <a name="docker-container-tooling"></a>Outils des conteneurs Docker
 
-**Nouveau en 15.5**:
+**Nouveauté de 15,5**:
 
 * Visual Studio fournit des outils pour les conteneurs Docker qui prennent maintenant en charge les fichiers Dockerfile à plusieurs étapes, ce qui simplifie la création d’images conteneur optimisées.
 * Par défaut, Visual Studio tire (pull), génère et exécute automatiquement les images de conteneur nécessaires en arrière-plan quand vous ouvrez un projet qui prend en charge Docker. Vous pouvez désactiver cette option via le paramètre **Démarrer automatiquement les conteneurs en arrière-plan** dans Visual Studio.
@@ -243,7 +243,7 @@ Les conteneurs augmentent la densité des applications et réduisent les coûts 
 
 Dans le cadre de la charge de travail du « développement Azure », nous avons ajouté des outils pour vous aider à développer des fonctions Azure avec des bibliothèques de classes C# précompilées. Vous pouvez désormais créer, exécuter et déboguer sur votre ordinateur de développement local, puis publier directement sur Azure depuis Visual Studio.
 
-Pour plus d’informations, consultez la page [Azure Functions pour Visual Studio.](/azure/azure-functions/functions-develop-vs)
+Pour plus d’informations, consultez la page [outils Azure Functions pour Visual Studio](/azure/azure-functions/functions-develop-vs) .
 
 ### <a name="debug-live-aspnet-apps-using-snappoints-and-logpoints-in-live-azure-applications"></a>Déboguer des applications ASP.NET en production à l’aide de points d’ancrage et de journalisation dans des applications Azure en production
 
@@ -283,13 +283,13 @@ Pour plus d’informations, consultez la page [Visual Studio et Xamarin](/xamari
 
 ### <a name="entitlements-editor"></a>Éditeur de droits
 
-**Nouveauté de 15.3** : pour vos besoins de développement iOS, nous avons ajouté un éditeur de droits autonome. Il offre une interface utilisateur conviviale, facile à parcourir. Pour le lancer, cliquez deux fois sur votre fichier *entitlements.plist.*
+**Nouveauté de 15.3** : pour vos besoins de développement iOS, nous avons ajouté un éditeur de droits autonome. Il offre une interface utilisateur conviviale, facile à parcourir. Pour le lancer, double-cliquez sur votre fichier *Entitlements. plist* .
 
 ![Éditeur de droits pour Xamarin](media/xamarin-entitlements-editor.png)
 
 ### <a name="visual-studio-tools-for-xamarin"></a>Visual Studio Tools pour Xamarin
 
-**Nouveauté de la version 15.4** : Xamarin Live permet aux développeurs de déployer, tester et déboguer en continu leurs applications, directement sur des appareils iOS et Android. Après avoir téléchargé Xamarin Live Player &mdash;disponible dans l’App Store ou sur Google Play&mdash;, vous pouvez associer votre appareil avec Visual Studio et révolutionner la façon dont vous créez des applications mobiles. Cette fonctionnalité est maintenant incluse dans Visual Studio et peut être activée en allant à **Tools** > **Options** > **Xamarin** > **Other** > Enable**Xamarin Live Player**.
+**Nouveauté de la version 15.4** : Xamarin Live permet aux développeurs de déployer, tester et déboguer en continu leurs applications, directement sur des appareils iOS et Android. Après avoir téléchargé Xamarin Live Player &mdash;disponible dans l’App Store ou sur Google Play&mdash;, vous pouvez associer votre appareil avec Visual Studio et révolutionner la façon dont vous créez des applications mobiles. Cette fonctionnalité est désormais incluse dans Visual Studio et peut être activée en accédant à **Outils** > **Options** > **Xamarin** > **Autres** > **Activer Xamarin Live Player**.
 
 ![Animation de l’association, du déploiement et des modes d’édition Xamarin Live Player](media/xamarinliveplayer.gif)
 
@@ -313,7 +313,7 @@ Pour plus d’informations, consultez [Accélération matérielle pour les perfo
 
   ![Environnement de test Visual Studio App Center](media/app-center-test-env.png)
 
-Pour plus d’informations, consultez le [Centre d’applications Introducing: Build, test, distribute and monitor apps in the cloud](https://blogs.msdn.microsoft.com/vsappcenter/introducing-visual-studio-app-center/) blog post.
+Pour plus d’informations, consultez le billet de blog [App Center présentation de la génération, du test, de la distribution et de la surveillance des applications dans le Cloud](https://blogs.msdn.microsoft.com/vsappcenter/introducing-visual-studio-app-center/) .
 
 ## <a name="cross-platform-development"></a>Développement multiplateforme
 
@@ -342,7 +342,7 @@ Il offre aussi maintenant la prise en charge de Docker.
 
 **Nouveauté de 15.3** : Visual Studio 2017 version 15.3 prend en charge le développement de .NET Core 2.0. L’utilisation de .NET Core 2.0 nécessite de télécharger et d’installer le kit SDK .NET Core 2.0 séparément.
 
-Pour plus d’informations, consultez la page [guide .NET Core.](/dotnet/core/index)
+Pour plus d’informations, consultez la page [Guide .net Core](/dotnet/core/index) .
 
 ## <a name="games-development"></a>Développement de jeux
 
@@ -366,7 +366,7 @@ Pour plus d’informations, consultez la page [Visual Studio Tools pour AI](../a
 
 Nous mettons souvent à jour Visual Studio 2017 avec de nouvelles fonctionnalités susceptibles de faciliter l’expérience de développement. Voici un récapitulatif des principales mises à jour actuellement en préversion expérimentale :
 
-* **[Live Share](https://visualstudio.microsoft.com/services/live-share/)**, un nouvel outil qui vous permet de partager une base de code et son contexte avec un coéquipier et d’obtenir une collaboration bidirectionnelle instantanée directement à partir de Visual Studio. Avec Live Share, un collègue peut lire, accéder, modifier et déboguer un projet que vous avez partagé avec lui, de manière sécurisée et fluide.<br><br>Pour plus d’informations, consultez le [FAQ sur Live Share](/visualstudio/liveshare/faq).<br><br>
+* **[Live share](https://visualstudio.microsoft.com/services/live-share/)**, un nouvel outil qui vous permet de partager un code base et son contexte avec un coéquipier et d’obtenir une collaboration bidirectionnelle instantanée directement à partir de Visual Studio. Avec Live Share, un collègue peut lire, accéder, modifier et déboguer un projet que vous avez partagé avec lui, de manière sécurisée et fluide.<br><br>Pour plus d’informations, consultez le [FAQ sur Live Share](/visualstudio/liveshare/faq).<br><br>
 * **[IntelliCode](https://visualstudio.microsoft.com/services/intellicode/)**, une nouvelle fonctionnalité qui simplifie le développement de logiciel en faisant appel à l’IA pour fournir une complétion de code plus performante et sensible au contexte. Elle guide les développeurs afin qu’ils codent conformément aux modèles et aux styles de l’équipe, recherche les problèmes de code difficiles à intercepter et focalise les revues de code sur les zones les plus importantes. <br><br>Pour plus d’informations, consultez [Questions fréquentes (FAQ) sur IntelliCode](/visualstudio/intellicode/faq).
 
 Vous souhaitez en savoir plus sur les autres fonctionnalités prévues pour Visual Studio 2017 ? Consultez la page [Feuille de route Visual Studio](/visualstudio/productinfo/vs2018-roadmap).
@@ -381,14 +381,14 @@ Si vous souhaitez faire des suggestions sur la façon dont nous pouvons amélior
 
 ### <a name="report-a-problem"></a>Signaler un problème
 
-Parfois, un message ne suffit pas pour transmettre l’impact complet du problème que vous avez rencontré. Si vous rencontrez un blocage, un incident ou un autre problème de performance, vous pouvez utiliser l’outil **Signaler un problème** pour nous envoyer facilement les étapes de reproduction du problème et les fichiers utiles pour le support technique (captures d’écran, fichiers de trace et heap dump, par exemple). Pour plus d’informations sur la façon d’utiliser cet outil, voir comment signaler une page [de problème.](how-to-report-a-problem-with-visual-studio.md)
+Parfois, un message ne suffit pas pour transmettre l’impact complet du problème que vous avez rencontré. Si vous rencontrez un problème où Visual Studio cesse de répondre, plante ou autre problème de performances, vous pouvez facilement partager les étapes de reproduction et les fichiers de prise en charge (tels que les captures d’écran, les fichiers de vidage de tas et de trace) avec nous à l’aide de l’outil **signaler un problème** . Pour plus d’informations sur l’utilisation de cet outil, consultez la page [Comment signaler un problème](how-to-report-a-problem-with-visual-studio.md) .
 
 ## <a name="see-also"></a>Voir aussi
 
-* [Notes de sortie de Visual Studio 2017](/visualstudio/releasenotes/vs2017-relnotes)
+* [Notes de publication de Visual Studio 2017](/visualstudio/releasenotes/vs2017-relnotes)
 * [Nouveautés du SDK Visual Studio 2017](../extensibility/what-s-new-in-the-visual-studio-2017-sdk.md)
-* [Quoi de neuf dans Visual CM](/cpp/top/what-s-new-for-visual-cpp-in-visual-studio)
+* [Nouveautés de Visual C++](/cpp/top/what-s-new-for-visual-cpp-in-visual-studio)
 * [Nouveautés de C#](/dotnet/csharp/whats-new)
 * [Nouveautés de Team Foundation Server](/azure/devops/server/whats-new)
-* [Quoi de neuf dans Visual Studio pour Mac](https://visualstudio.microsoft.com/vs/visual-studio-mac/)
+* [Nouveautés de Visual Studio pour Mac](https://visualstudio.microsoft.com/vs/visual-studio-mac/)
 * [Nouveautés de Visual Studio 2019](whats-new-visual-studio-2019.md)

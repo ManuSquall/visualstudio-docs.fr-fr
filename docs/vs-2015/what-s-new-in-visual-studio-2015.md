@@ -14,12 +14,12 @@ caps.latest.revision: 364
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 758e2bbf69c7b48a1027819377839cbdce9204fe
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.openlocfilehash: 5bdfae6235e7efb833eca0b87631af9204b4a678
+ms.sourcegitcommit: a77158415da04e9bb8b33c332f6cca8f14c08f8c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/13/2020
-ms.locfileid: "75919255"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "86387107"
 ---
 # <a name="what39s-new-in-visual-studio-2015"></a>Nouveautés de Visual Studio 2015
 [!INCLUDE[vs2017banner](./includes/vs2017banner.md)]
@@ -35,7 +35,7 @@ Pour en savoir plus sur les nombreuses améliorations et nouvelles fonctionnalit
 
  L'expérience d'installation de Visual Studio 2015 a été organisée en composants pour que vous n'ayez à installer que les composants dont vous avez besoin. Cela accélère l'installation pour de nombreux scénarios courants impliquant le développement web ou .NET. Si vous effectuez d'autres types de développement, tels que le développement multiplateforme pour appareils mobiles, ou que vous travaillez en C++ ou F#, choisissez l'installation **Personnalisée** , puis les composants et les Kits SDK facultatifs tiers dont vous avez besoin. Vous pouvez également installer les composants personnalisés ultérieurement. Par exemple, si vous choisissez l'installation de base et que vous tentez ensuite de créer un projet C++, vous serez invité à télécharger les outils de développement C++.
 
- ![Boîte de dialogue d’installation de Visual Studio 2015](./ide/media/vs2015-setup-screen.png "VS2015_Setup_screen")
+ ![Boîte de dialogue d'installation de Visual Studio 2015](./ide/media/vs2015-setup-screen.png "VS2015_Setup_screen")
 
 ## <a name="sign-in-across-multiple-accounts"></a>Se connecter sur plusieurs comptes
  Avec Visual Studio 2015, la nouvelle expérience de connexion simplifiée est conçue pour simplifier considérablement l'accès aux ressources en ligne, même si vous possédez plusieurs comptes Visual Studio. Une fois connecté à Visual Studio, vous êtes automatiquement connecté à toutes les instances de Visual Studio 2015 et de Blend sur votre ordinateur. La connexion démarre automatiquement l'itinérance de vos paramètres. Dans Visual Studio 2015, votre compte est partagé entre les différentes fonctionnalités. Ainsi, tant que vous disposez d’un jeton approprié, vous pouvez accéder à vos comptes Visual Studio Team Services à partir de **Team Explorer**, ainsi qu’aux ressources et sites web de votre abonnement Microsoft Azure dans l’Explorateur de serveurs. Vos ressources Azure sont aussi visibles dans la boîte de dialogue Nouveau projet pour les projets Application Insights. Quant à vos comptes Azure Mobile, Azure Storage, [Microsoft Office 365](https://msdn.microsoft.com/office/aa905340.aspx) et [développeur Saleforce.com](https://developer.salesforce.com/) , ils sont répertoriés dans la nouvelle boîte de dialogue **Ajouter un service connecté** .
@@ -61,7 +61,7 @@ Pour en savoir plus sur les nombreuses améliorations et nouvelles fonctionnalit
 ### <a name="cross-platform-apps-and-libraries-for-native-c"></a>Applications et bibliothèques multiplateformes pour du code C++ natif
  C++ est un langage disponible en mode natif sur la plupart des appareils mobiles. Vous pouvez l'utiliser pour écrire des bibliothèques de code partagé multiplateformes qui peuvent être générées pour plusieurs plateformes mobiles cibles. Vous pouvez même créer des applications mobiles tout en C++. Visual C++ offre les outils nécessaires pour modifier, générer, déployer et déboguer votre code multiplateforme. Outre les modèles pour les applications Windows, vous pouvez créer des projets à partir de modèles pour des applications Android Native Activity, des applications iOS ou des projets de bibliothèque de code partagé pour plusieurs plateformes qui incluent des applications hybrides Xamarin. La technologie IntelliSense spécifique à la plateforme vous permet d'explorer les API et de générer le code approprié pour des cibles Android, iOS ou Windows. Vous pouvez configurer votre build pour les plateformes natives x86 ou ARM et déployer votre code dans un simulateur iOS ou sur des appareils iOS sur un Mac connecté au réseau, sur des appareils Android directement connectés, ou exploiter les performances de l'émulateur Microsoft Visual Studio pour Android à des fins de test. Vous pouvez définir des points d'arrêt, espionner des variables, consulter la pile et exécuter le code C++ pas à pas dans le débogueur Visual Studio. Vous pouvez partager tout le code (hormis le plus spécifique à une plateforme) entre plusieurs plateformes d'applications, puis générer l'ensemble avec une seule solution dans Visual Studio.
 
- Pour commencer à utiliser multiplateforme C++, consultez [créer des applications mobiles multiplateformes avec Visual C++ ](./misc/build-cross-platform-mobile-apps-with-visual-cpp.md)
+ Pour commencer à utiliser le langage C++ multiplateforme, consultez [créer des applications mobiles multiplateformes avec Visual C++](./misc/build-cross-platform-mobile-apps-with-visual-cpp.md)
 
 ### <a name="universal-windows-apps-for-any-windows-10-device"></a>Applications Windows universelles pour tout appareil Windows 10
  Avec la plateforme Windows universelle et notre noyau Windows, vous pouvez exécuter la même application sur n’importe quel appareil Windows 10, des téléphones jusqu’aux ordinateurs de bureau. Créez ces applications Windows universelles avec Visual Studio 2015 et les outils de développement d’applications Windows universelles.
@@ -73,7 +73,7 @@ Pour en savoir plus sur les nombreuses améliorations et nouvelles fonctionnalit
  Utilisez le langage C#, Visual Basic, C++ ou JavaScript pour créer des [applications Windows universelles](https://msdn.microsoft.com/library/dn975273.aspx).
 
 ### <a name="web"></a>Web
- ASP.NET 5 est une mise à jour majeure de MVC, WebAPI et SignalR, et s’exécute sur Windows, Mac et Linux.  ASP.NET 5 a été conçu de toutes pièces pour vous fournir une pile .NET adaptée et composable pour la génération d'applications cloud modernes. Les outils de Visual Studio 2015 sont intégrés plus étroitement aux outils de développement web populaires tels que Bower et Grunt. Pour commencer, consultez les nombreuses publications de blog sur le  [blog relatif aux outils et au développement web .NET](https://devblogs.microsoft.com/aspnet/).
+ ASP.NET 5 est une mise à jour majeure de MVC, WebAPI et SignalR, et s'exécute sur Windows, Mac et Linux.  ASP.NET 5 a été conçu de toutes pièces pour vous fournir une pile .NET adaptée et composable pour la génération d'applications cloud modernes. Les outils de Visual Studio 2015 sont intégrés plus étroitement aux outils de développement web populaires tels que Bower et Grunt. Pour commencer, consultez les nombreuses publications de blog sur le  [blog relatif aux outils et au développement web .NET](https://devblogs.microsoft.com/aspnet/).
 
 ### <a name="classic-desktop-and-windows-store"></a>Bureau classique et Windows Store
  Visual Studio 2015 continue à prendre en charge le développement d'applications de bureau classiques et d'applications du Windows Store. Visual Studio évolue parallèlement à Windows.  Dans Visual Studio 2015, les bibliothèques et langages du .NET et C++ bénéficient d'avancées très importantes qui s'appliquent à toutes les versions de Windows.
@@ -92,12 +92,12 @@ Pour en savoir plus sur les nombreuses améliorations et nouvelles fonctionnalit
 #### <a name="c"></a>C++
  Visual C++ offre des avancées significatives en matière de conformité au langage C++11/14. De plus, il prend en charge le développement multiplateforme pour appareils mobiles et les fonctions avec capacité de reprise et d'attente (normalisation actuellement prévue dans C++17), et présente des améliorations et des résolutions de bogue dans les implémentations de la bibliothèque Runtime C (CRT) et de la bibliothèque standard C++ (STL), des boîtes de dialogue redimensionnables dans MFC, de nouvelles optimisations du compilateur, de meilleures performances en matière de génération, de nouvelles fonctions de diagnostic et de nouveaux outils de productivité dans l'éditeur de code.
 
- Pour plus d’informations, consultez [Nouveautés de Visual C++ ](https://msdn.microsoft.com/library/1cc09fad-85a2-43c2-b022-bb99f5fe0ad7) et le [blog visuel C++ ](https://devblogs.microsoft.com/cppblog/).
+ Pour plus d’informations, consultez [Nouveautés de Visual C++](https://msdn.microsoft.com/library/1cc09fad-85a2-43c2-b022-bb99f5fe0ad7) et le [blog Visual C++](https://devblogs.microsoft.com/cppblog/).
 
 ## <a name="device-preview-menu-bar"></a>Barre de menus Aperçu de l'appareil
  Dans les projets de plateforme Windows universelle, la barre de menus Aperçu de l'appareil vous permet de voir comment votre interface utilisateur basée sur XAML sera rendue dans différentes tailles d'écran.
 
- ![Menu d’aperçu de l’appareil](./ide/media/vs2015-device-preview.png "vs2015_device_preview")
+ ![Menu Aperçu de l'appareil](./ide/media/vs2015-device-preview.png "vs2015_device_preview")
 
 ## <a name="visual-studio-graphics-diagnostics"></a>Diagnostics des graphiques Visual Studio
  Depuis Visual Studio 2013, Diagnostics des graphiques Visual Studio a ajouté de nombreuses nouvelles fonctionnalités, y compris l'analyse des frames, la prise en charge de Windows Phone, la modification et l'application de nuanceur, ainsi que des outils de capture de ligne de commande. La prise en charge du débogage des applications DirectX12 a également été ajoutée. Pour plus d'informations, consultez [Diagnostics des graphiques Visual Studio](./debugger/visual-studio-graphics-diagnostics.md).
@@ -107,7 +107,7 @@ Pour en savoir plus sur les nombreuses améliorations et nouvelles fonctionnalit
 
 1. Azure Mobile Services
 
-2. Azure Storage
+2. Stockage Azure
 
 3. Office 365 (e-mails, contacts, calendriers, fichiers, utilisateurs et groupes)
 
@@ -115,7 +115,7 @@ Pour en savoir plus sur les nombreuses améliorations et nouvelles fonctionnalit
 
    De nouveaux services seront ajoutés sur une base continue. Vous pouvez les découvrir en cliquant sur le lien « Rechercher de nouveaux services » dans l'Assistant.
 
-   ![Boîte de dialogue Ajouter un Services connectés](./ide/media/vs2015-addconnectedservicedialog.png "VS2015_AddConnectedServiceDialog")
+   ![Boîte de dialogue Ajouter un service connecté](./ide/media/vs2015-addconnectedservicedialog.png "VS2015_AddConnectedServiceDialog")
 
 ## <a name="design-your-ui"></a>Concevoir votre interface utilisateur
  L'expérience Blend de conception d'interfaces utilisateur XAML a été considérablement améliorée. Blend a été complètement repensé pour offrir une interface utilisateur plus intuitive, des fonctionnalités d'édition XAML plus puissantes, dont IntelliSense, et une meilleure intégration à Visual Studio. Pour plus d’informations, consultez [Conception XAML dans Visual Studio et Blend pour Visual Studio](./designers/designing-xaml-in-visual-studio.md).
@@ -139,10 +139,10 @@ Pour plus d’informations sur les nouveautés des diagnostics, consultez [Nouve
 
 Voici une liste d'outils nouveaux ou améliorés qui effectuent différents types d'analyses et de diagnostics sur votre code :
 
-### <a name="perftips"></a>conseils sur les performances
+### <a name="perftips"></a>Conseils sur les performances
  Les conseils pour les performances indiquent le temps d'exécution des méthodes durant le débogage, ce qui vous permet d'identifier rapidement les goulots d'étranglement, sans avoir à invoquer le profileur. Pour commencer, consultez [Conseils sur les performances : Performance Information at-a-glance while Debugging with Visual Studio](https://devblogs.microsoft.com/devops/perftips-performance-information-at-a-glance-while-debugging-with-visual-studio/)
 
-### <a name="error-list"></a>Liste d’erreurs
+### <a name="error-list"></a>Liste d'erreurs
  La liste d'erreurs prend désormais en charge le filtrage sur n'importe quelle colonne. Elle affiche aussi une vue dynamique des erreurs, des avertissements et de l'analyse du code dans l'ensemble de votre solution C# ou Visual Basic, au fur et à mesure que vous tapez, même quand un changement de code produit des milliers d'avertissements. La nouvelle liste d'erreurs est compatible avec les usages existants. Pour plus d'informations, consultez [Error List Window](./ide/reference/error-list-window.md).
 
 ### <a name="gpu-usage-tool"></a>Outil Utilisation du GPU
@@ -164,17 +164,17 @@ Voici une liste d'outils nouveaux ou améliorés qui effectuent différents type
 ### <a name="title-case-menus"></a>Menus avec 1re lettre des mots en majuscule
  Nous vous avons entendus. Les menus de Visual Studio comportent à nouveau la 1re lettre des mots en majuscule, par défaut. Toutefois, si vous aimez le style TOUT EN MAJUSCULES, vous pouvez le définir au démarrage ou dans la page de propriétés **Outils > Options > Général** :
 
- ![Commandes du menu principal de la casse de Visual Studio 2015](./ide/media/vs2015-mainmenu.png "VS2015_MainMenu")
+ ![Commandes du menu principal Visual Studio 2015 avec la 1re lettre des mots en majuscule](./ide/media/vs2015-mainmenu.png "VS2015_MainMenu")
 
 ### <a name="high-resolution-images-and-touch-support"></a>Images en haute résolution et prise en charge de l'interface tactile
  L'IDE de Visual Studio dispose désormais de véritables images en haute définition pour les affichages plus denses (dans les zones comme les menus, les menus contextuels, les barres de commandes de la fenêtre Outil, ainsi que dans certains projets de l'Explorateur de solutions). En outre, sur un écran tactile, dans la fenêtre de l'éditeur de code Visual Studio, vous pouvez maintenant utiliser des actions telles que maintenir appuyé, pincer, appuyer, etc., pour zoomer, faire défiler, sélectionner du texte ou appeler des menus contextuels.
 
- ![Prise en charge tactile dans l’éditeur](./ide/media/vs2015-touchsupport.png "VS2015_TouchSupport")
+ ![Prise en charge de l’interface tactile dans l’éditeur](./ide/media/vs2015-touchsupport.png "VS2015_TouchSupport")
 
 ### <a name="custom-layouts"></a>Dispositions personnalisées
  Vous pouvez créer, stocker et rendre itinérantes des dispositions de fenêtres personnalisées. Par exemple, vous pouvez définir une disposition favorite à utiliser sur votre ordinateur de bureau, et une autre disposition à utiliser sur un ordinateur portable ou un appareil avec un petit écran. Vous pouvez également préférer une disposition particulière pour un projet d'interface utilisateur, et une autre pour un projet de base de données. Les combinaisons de touches vous permettent de passer rapidement d'une disposition à une autre. Ces dispositions sont accessibles dans toutes les instances de Visual Studio quand vous êtes connecté. Pour plus d'informations, consultez [Créer des dispositions de fenêtres personnalisées](./misc/create-custom-window-layouts.md).
 
- ![Élément de menu de disposition personnalisée de Visual Studio](./ide/media/vs2015-customlayout.png "VS2015_CustomLayout")
+ ![Élément de menu Disposition personnalisée Visual Studio](./ide/media/vs2015-customlayout.png "VS2015_CustomLayout")
 
 ### <a name="notification-hub"></a>Hub de notification
  L'interface utilisateur du hub de notification a été simplifiée pour faciliter des analyses rapides. Des types de notifications ont été ajoutés, qui concernent notamment des problèmes de performances, des problèmes de rendu et des défaillances. Vous pouvez aussi désormais indiquer à Visual Studio d'arrêter d'afficher une notification. Pour plus d’informations, consultez [Notifications de Visual Studio](./ide/visual-studio-notifications.md).
@@ -186,11 +186,11 @@ Voici une liste d'outils nouveaux ou améliorés qui effectuent différents type
 
 - Obtenir l'historique d'un fichier de code entier dans l'éditeur Visual Studio.
 
-   ![CodeLens : afficher les détails du fichier de code](./ide/media/codelensfilelevel.png "CodeLensFileLevel")
+   ![CodeLens : obtenir des détails sur le fichier de code](./ide/media/codelensfilelevel.png "CodeLensFileLevel")
 
 - Consulter un graphique indiquant les personnes qui ont modifié votre code. Cette fonctionnalité vous permet de découvrir des modèles dans les modifications effectuées par votre équipe, et d’en évaluer l’impact.
 
-   ![CodeLens : Voir l’historique des modifications du code sous forme de graphique](./ide/media/codelens.png "CodeLens")
+   ![CodeLens : voir l'historique des modifications du code sous forme de graphique](./ide/media/codelens.png "CodeLens")
 
 - Afficher rapidement la date de dernière modification de votre code.
 
@@ -205,7 +205,7 @@ Voici une liste d'outils nouveaux ou améliorés qui effectuent différents type
 
  Dans cette version, nous avons simplifié l'utilisation des liens et des menus contextuels pour les éléments de code en regroupant les commandes dans des sections en rapport avec la sélection, la modification, la gestion des groupes et la modification de la disposition du contenu des groupes. Notez également que les projets de test sont affichés dans un style différent des autres projets et que nous avons mis à jour les icônes des éléments sur la carte avec des versions plus appropriées.
 
- ![Afficher les éléments sélectionnés sur une nouvelle carte de code](./ide/media/codemapsshowonnewmap.png "CodeMapsShowOnNewMap")
+ ![Afficher les éléments sélectionnés dans une nouvelle carte du code](./ide/media/codemapsshowonnewmap.png "CodeMapsShowOnNewMap")
 
  Voici quelques autres améliorations qui ont été apportées :
 
@@ -231,13 +231,13 @@ Voici une liste d'outils nouveaux ou améliorés qui effectuent différents type
 
   Consultez [Map dependencies across your solutions](./modeling/map-dependencies-across-your-solutions.md).
 
-  **Autres modifications de conception et de modélisation dans cette version :**
+  **Autres modifications de conception et de modélisation dans cette version :**
 
 - **Diagrammes de couche**. Mettez à jour ces diagrammes à l'aide de l'Affichage de classes et de l'Explorateur d'objets. Pour répondre aux exigences de conception de logiciel, utilisez des diagrammes de couche pour décrire les dépendances souhaitées pour votre logiciel. Assurez la cohérence du code avec cette conception en recherchant le code qui ne respecte pas ces contraintes et en validant le code ultérieur avec cette ligne de base.
 
 - **Diagrammes UML**. Vous ne pouvez plus créer des diagrammes de classes UML et des diagrammes de séquence à partir du code. Pour créer ces diagrammes, vous devez à présent utiliser de nouveaux éléments UML.
 
-- **Navigateur de l'architecture**. Vous ne pouvez plus utiliser le Navigateur de l'architecture pour créer des diagrammes. Mais vous pouvez toujours utiliser l'Explorateur de solutions.
+- **Navigateur**de l’architecture. Vous ne pouvez plus utiliser le Navigateur de l'architecture pour créer des diagrammes. Mais vous pouvez toujours utiliser l'Explorateur de solutions.
 
 ## <a name="visual-studio-extensibility-tools"></a>Outils d'extensibilité de Visual Studio
  Il n'a jamais été aussi facile d'installer les outils d'extensibilité Visual Studio (Kit de développement logiciel Visual Studio et modèles), car ils sont désormais inclus en tant que composant facultatif lors de l'installation.  Les outils d'extensibilité permettent aux développeurs d'écrire des extensions pour personnaliser et ajouter des fonctionnalités à Visual Studio. Pour plus d'informations sur l'extensibilité de Visual Studio, consultez [Kit de développement logiciel Visual Studio](./extensibility/visual-studio-sdk.md)
@@ -252,15 +252,15 @@ Voici une liste d'outils nouveaux ou améliorés qui effectuent différents type
 
  Cliquez simplement sur l'émoticône jaune dans la barre de titre, dites-nous ce qui vous plaît, puis cliquez sur le bouton **Envoyer un sourire** .
 
- C'est tout ! Votre commentaire est alors transmis à l'équipe concernée qui peut s'en servir pour améliorer encore plus la fonctionnalité.
+ Et voilà ! Votre commentaire est alors transmis à l'équipe concernée qui peut s'en servir pour améliorer encore plus la fonctionnalité.
 
 ### <a name="send-a-frown"></a>Envoyer un smiley mécontent
  Il est important pour nous d'identifier les zones du produit à améliorer. Cela nous permet de mieux gérer notre backlog et de nous pencher en priorité sur ce qui importe le plus à nos clients. Si quelque chose vous importune, utilisez la fonctionnalité **Envoyer un smiley mécontent** pour nous en faire part directement dans l'IDE. La procédure à suivre est très simple :
 
- Cliquez sur l'émoticône jaune dans la barre de titre, puis cliquez sur **Envoyer un smiley mécontent**. Indiquez ce qui vous dérange, puis cliquez sur le bouton Envoyer un smiley mécontent. Pour plus d’informations, consultez [Nous contacter](./ide/talk-to-us.md).
+ Cliquez sur l'émoticône jaune dans la barre de titre, puis cliquez sur **Envoyer un smiley mécontent**. Indiquez ce qui vous dérange, puis cliquez sur le bouton Envoyer un smiley mécontent. Pour plus d'informations, consultez [Talk to Us](./ide/talk-to-us.md).
 
-### <a name="report-crashes-hangs-and-performance-issues"></a>Signaler les accidents, blocages et problèmes de performance
- Parfois, une note rapide dans un smiley mécontent ne suffit pas à rendre pleinement compte d'un problème. Si vous vous heurtez à un blocage, un incident ou un problème de performance, vous pouvez facilement partager les étapes de reproduction, les vidages sur incident et les fichiers de trace dans la boîte de dialogue qui apparaît après l'envoi d'un smiley mécontent.
+### <a name="report-crashes-unresponsive-and-performance-issues"></a>Signaler des incidents, des problèmes de réponse et des problèmes de performances
+ Parfois, une note rapide dans un smiley mécontent ne suffit pas à rendre pleinement compte d'un problème. Pour les moments où Visual Studio cesse de répondre, plante ou rencontre un autre problème de performances, vous pouvez facilement partager les étapes de reproduction, les vidages sur incident et les fichiers de trace à l’aide de la boîte de dialogue qui s’affiche une fois que vous avez envoyé un Smiley mécontent.
 
  Tout d'abord, envoyez un smiley mécontent comme décrit ci-dessus. Ensuite, dans la boîte de dialogue qui s'affiche, vous pouvez marquer vos commentaires à l'aide de l'une des étiquettes par défaut ou créer votre propre étiquette. Les étiquettes nous aident à transmettre vos commentaires à la bonne équipe. Dans la liste déroulante **Choisir une catégorie** , sélectionnez l'option correspondant au problème que vous rencontrez, puis suivez les étapes pour reproduire le problème. Des étapes détaillées sur la façon d'utiliser Visual Studio pour signaler des commentaires sont également disponibles. Pour plus d’informations, consultez [Envoyer des instructions pour les sourires dans Visual Studio](https://msdn.microsoft.com/library/5cc9b67a-54d0-41b0-aa8f-80dff4475a6b).
 
@@ -273,4 +273,4 @@ Voici une liste d'outils nouveaux ou améliorés qui effectuent différents type
 * [Utiliser plusieurs comptes d’utilisateur](./ide/work-with-multiple-user-accounts.md)
 * [Créer des dispositions de fenêtres personnalisées](./misc/create-custom-window-layouts.md)
 * [Effectuer des actions rapides avec des ampoules](./ide/perform-quick-actions-with-light-bulbs.md)
-* [Nouveautés de Visual Studio 2017](/visualstudio/ide/how-to-report-a-problem-with-visual-studio-2017)
+* [Nouveautés de Visual Studio 2017](/visualstudio/ide/how-to-report-a-problem-with-visual-studio-2017)

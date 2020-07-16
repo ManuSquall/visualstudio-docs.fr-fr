@@ -1,5 +1,5 @@
 ---
-title: IDebugProgram2::Step | Microsoft Docs
+title: 'IDebugProgram2 :: étape | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,20 +12,20 @@ ms.assetid: e4c2ffce-9810-4088-8162-eac9ef04f2a9
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 0473cf7061cb18dad569910af5214742ba774a87
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: dd9d314865eb2051b67d7c127a6c5cc2395b1863
+ms.sourcegitcommit: a77158415da04e9bb8b33c332f6cca8f14c08f8c
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63445782"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "86387224"
 ---
 # <a name="idebugprogram2step"></a>IDebugProgram2::Step
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Effectue une étape.  
+Exécute une étape.  
   
 > [!NOTE]
-> Cette méthode est dépréciée. Utilisez le [étape](../../../extensibility/debugger/reference/idebugprocess3-step.md) méthode à la place.  
+> Cette méthode est déconseillée. Utilisez plutôt la méthode [Step](../../../extensibility/debugger/reference/idebugprocess3-step.md) .  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -47,22 +47,22 @@ int Step( 
   
 #### <a name="parameters"></a>Paramètres  
  `pThread`  
- [in] Un [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) objet qui représente le thread en cours en escalier.  
+ dans Objet [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) qui représente le thread en cours d’exécution pas à pas.  
   
  `sk`  
- [in] Une valeur comprise entre le [STEPKIND](../../../extensibility/debugger/reference/stepkind.md) énumération qui spécifie le type d’étape.  
+ dans Valeur de l’énumération [STEPKIND](../../../extensibility/debugger/reference/stepkind.md) qui spécifie le type d’étape.  
   
  `step`  
- [in] Une valeur comprise entre le [STEPUNIT](../../../extensibility/debugger/reference/stepunit.md) énumération qui spécifie l’unité d’étape (par exemple, par l’instruction ou l’instruction).  
+ dans Valeur de l’énumération [STEPUNIT](../../../extensibility/debugger/reference/stepunit.md) qui spécifie l’unité de l’étape (par exemple, par instruction ou instruction).  
   
 ## <a name="return-value"></a>Valeur de retour  
- En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.  
+ En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.  
   
 ## <a name="remarks"></a>Notes  
- En cas de toute synchronisation de threads ou de la communication entre les threads, les autres threads dans le programme doivent s’exécuter lorsqu’un thread particulier est exécution pas à pas.  
+ En cas de synchronisation de threads ou de communication entre les threads, les autres threads du programme doivent s’exécuter quand un thread particulier s’exécute pas à pas.  
   
 > [!WARNING]
-> Ne pas envoyer un événement d’arrêt ou un événement (synchrone) immédiat [événement](../../../extensibility/debugger/reference/idebugeventcallback2-event.md) lors du traitement de cet appel ; sinon, le débogueur peut se bloquer.  
+> N’envoyez pas d’événement d’arrêt ou d’événement immédiat (synchrone) à un [événement](../../../extensibility/debugger/reference/idebugeventcallback2-event.md) lors de la gestion de cet appel ; dans le cas contraire, le débogueur peut cesser de répondre.  
   
 ## <a name="see-also"></a>Voir aussi  
  [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)   

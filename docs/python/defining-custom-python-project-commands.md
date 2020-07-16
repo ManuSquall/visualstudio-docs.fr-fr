@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: f0e56b7db76d308a55f7d6bd24930e258385b0f9
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.openlocfilehash: 6e9e7fe418528bb888672b1b73d421d811b9e69e
+ms.sourcegitcommit: a77158415da04e9bb8b33c332f6cca8f14c08f8c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "85540866"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "86386983"
 ---
 # <a name="define-custom-commands-for-python-projects"></a>Définir des commandes personnalisées pour les projets Python
 
@@ -347,7 +347,7 @@ Pour explorer comment les commandes **Démarrer le serveur** et **Démarrer le s
 
 *À partir de [fxthomas/Example.pyproj.xml](https://gist.github.com/fxthomas/5c601e3e0c1a091bcf56aed0f2960cfa) (GitHub), utilisé avec l’autorisation.*
 
-## <a name="troubleshooting"></a>Résolution des problèmes
+## <a name="troubleshooting"></a>Dépannage
 
 ### <a name="message-the-project-file-could-not-be-loaded"></a>Message : « Impossible de charger le fichier projet. »
 
@@ -384,7 +384,7 @@ Indique que le contenu de l’élément `<Target>` ou `<CreatePythonCommandItem>
 
 Les valeurs d’attribut peuvent être vides si vous faites référence à une propriété qui n’est pas définie. Par exemple, si vous utilisez le jeton `$(StartupFile)` mais qu’aucun fichier de démarrage n’a été défini dans le projet, le jeton est résolu en chaîne vide. Dans ce cas, vous souhaiterez sans doute définir la valeur par défaut. Par exemple, les commandes **Exécuter le serveur** et **Exécuter le serveur de débogage** définies dans les modèles de projet Bottle, Flask et Django ont par défaut la valeur *manage.py* si aucun fichier de démarrage de serveur n’a été spécifié dans les propriétés du projet.
 
-### <a name="visual-studio-hangs-and-crashes-when-running-the-command"></a>Visual Studio se bloque durant l’exécution de la commande
+### <a name="visual-studio-stops-responding-and-crashes-when-running-the-command"></a>Visual Studio cesse de répondre et se bloque lors de l’exécution de la commande
 
 Vous tentez probablement d’exécuter une commande de console avec `ExecuteIn="output"`, auquel cas Visual Studio peut se bloquer quand il tente d’analyser la sortie. Utilisez `ExecuteIn="console"` à la place. (Consultez le [problème 3682](https://github.com/Microsoft/PTVS/issues/3681).)
 

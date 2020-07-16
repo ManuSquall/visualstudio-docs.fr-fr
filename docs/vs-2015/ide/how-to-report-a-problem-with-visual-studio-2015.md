@@ -9,12 +9,12 @@ caps.latest.revision: 15
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: e75215d2693b5fe2bf879c4b293ae853b42905e7
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.openlocfilehash: db9267fe9f06569dadea240e5d78c8b35c84b8c4
+ms.sourcegitcommit: a77158415da04e9bb8b33c332f6cca8f14c08f8c
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72651780"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "86386548"
 ---
 # <a name="how-to-report-a-problem-with-visual-studio-2015"></a>Guide pratique pour signaler un problème avec Visual Studio 2015
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,7 +45,7 @@ Cliquez sur l’icône des commentaires utilisateur à côté de **Lancement rap
 
 ## <a name="provide-a-screenshot-optional"></a>Fournir une capture d’écran (facultatif)
 
-Choisissez **Inclure une capture d’écran** pour envoyer l’écran actuellement affiché à Microsoft. L’outil permet de rogner l’image de façon à ne montrer que la partie de l’écran qui illustre le problème. Vous pouvez joindre d’autres captures d’écran ou fichiers en cliquant sur le bouton **Joindre des fichiers supplémentaires** .
+Choisissez **Inclure une capture d’écran** pour envoyer l’écran actuellement affiché à Microsoft. L’outil vous permet de rogner l’image pour afficher uniquement la partie de l’écran qui illustre le problème. Vous pouvez joindre d’autres captures d’écran ou fichiers en cliquant sur le bouton **Joindre des fichiers supplémentaires**.
 
 ## <a name="provide-a-trace-and-heap-dump-optional"></a>Fournir un fichier dump de tas et de suivi (facultatif)
 
@@ -53,7 +53,7 @@ Choisissez **Inclure une capture d’écran** pour envoyer l’écran actuelleme
 
 1. Les fichiers dump de tas et de suivi s’avèrent très utiles pour nous aider à diagnostiquer les problèmes.   Nous vous remercions beaucoup d’employer l’outil Signaler un problème pour enregistrer les étapes de reproduction du problème ainsi que d’envoyer les données à Microsoft.
 
-2. Cliquez sur le chevron en regard de **Enregistrez vos actions pour reproduire le problème**. Si le problème est tel que Visual Studio se bloque ou tombe en panne, ouvrez une autre instance de Visual Studio et sélectionnez-la dans l’affichage de liste.
+2. Cliquez sur le chevron en regard de **Enregistrez vos actions pour reproduire le problème**. Si votre problème est dû au fait que Visual Studio cesse de répondre ou se bloque, ouvrez une autre instance de Visual Studio et sélectionnez-la dans l’affichage de liste.
 
 3. Cliquez sur **Démarrer l’enregistrement** et effectuez les étapes pour reproduire le problème. Quand vous avez terminé, cliquez sur le bouton **Arrêter l’enregistrement** dans la fenêtre flottante.
 

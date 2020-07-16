@@ -15,12 +15,12 @@ ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: 6b5058e0f1fabbf834a1adfb20d4f3a9a11094f5
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: 28c8e647943b6e99946c2a9123ee17e2be8cc5c2
+ms.sourcegitcommit: a77158415da04e9bb8b33c332f6cca8f14c08f8c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85283591"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "86387042"
 ---
 # <a name="whats-new-in-visual-studio-2019"></a>Nouveautés de Visual Studio 2019
 
@@ -220,7 +220,7 @@ Vous vous demandez peut-être quel est l'intérêt d'envoyer des commentaires à
 
 * Si vous avez des suggestions sur la façon dont nous pouvons améliorer Visual Studio, utilisez l’outil [Suggérer une fonctionnalité](suggest-a-feature.md) pour nous les communiquer.
 
-* Si vous rencontrez un blocage, un plantage ou d’autres problèmes de performances, vous pouvez facilement partager avec nous les étapes de reproduction et les fichiers de prise en charge à l’aide de l’outil [Signaler un problème](how-to-report-a-problem-with-visual-studio.md).
+* Si vous rencontrez un problème où Visual Studio cesse de répondre, plante ou autre problème de performances, vous pouvez facilement partager les étapes de reproduction et les fichiers de prise en charge avec nous à l’aide de l’outil [signaler un problème](how-to-report-a-problem-with-visual-studio.md) .
 
 ## <a name="see-also"></a>Voir aussi
 

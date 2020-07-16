@@ -17,12 +17,12 @@ caps.latest.revision: 38
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 56e5b76b000fd269d76d535e635ba86e72912bad
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.openlocfilehash: c0eaa719bb3eeca2eb3dfe558184699ccca42819
+ms.sourcegitcommit: a77158415da04e9bb8b33c332f6cca8f14c08f8c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/13/2020
-ms.locfileid: "75916001"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "86387198"
 ---
 # <a name="debug-64-bit-applications"></a>Déboguer des applications 64 bits
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -55,11 +55,11 @@ Vous pouvez déboguer une application 64 bits qui s'exécute sur l'ordinateur lo
   
 - Un logiciel de sécurité réseau installé sur votre ordinateur altère la fiabilité de la pile de mise en réseau, et il a ignoré des paquets qui passent sur localhost. Essayez de désactiver tous les logiciels de sécurité réseau et voyez si le problème est résolu. Si tel est le cas, signalez à votre fournisseur de logiciels de sécurité réseau que le logiciel interfère avec le trafic de localhost.  
   
-- Vous rencontrez un problème de blocage ou de performances avec Visual Studio. Si le problème se produit régulièrement, vous pouvez collecter les dumps de Visual Studio (devenv.exe) et le processus de travail (msvsmon.exe), puis les envoyer à Microsoft. 
+- Vous rencontrez un problème où Visual Studio cesse de répondre ou d’autres problèmes de performances. Si le problème se produit régulièrement, vous pouvez collecter les dumps de Visual Studio (devenv.exe) et le processus de travail (msvsmon.exe), puis les envoyer à Microsoft. 
   
 ## <a name="see-also"></a>Voir aussi  
- [Applications 64 bits](https://msdn.microsoft.com/library/fd4026bc-2c3d-4b27-86dc-ec5e96018181)   
- [Configuration des programmes pour les processeurs 64 bits](https://msdn.microsoft.com/library/cb99f72b-8c74-48f4-846a-8921b37b97e9)   
+ [Applications 64 bits](https://msdn.microsoft.com/library/fd4026bc-2c3d-4b27-86dc-ec5e96018181)   
+ [Configuration des programmes pour 64 bits](https://msdn.microsoft.com/library/cb99f72b-8c74-48f4-846a-8921b37b97e9)   
  [Prise en charge de l’IDE Visual Studio 64 bits](../ide/visual-studio-ide-64-bit-support.md)   
- [Utilisation des fichiers de vidage](../debugger/using-dump-files.md)   
- [Remote Debugging](../debugger/remote-debugging.md)
+ [Utilisation des fichiers dump](../debugger/using-dump-files.md)   
+ [Débogage à distance](../debugger/remote-debugging.md)

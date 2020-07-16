@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 2fdbd2e7f47e75b4d80d07f6af3a6f998dfd72d6
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.openlocfilehash: 094305e901624e13df147030899981f8fedb80d1
+ms.sourcegitcommit: a77158415da04e9bb8b33c332f6cca8f14c08f8c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "85541152"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "86387029"
 ---
 # <a name="debug-your-python-code"></a>Déboguer votre code Python
 
@@ -253,7 +253,7 @@ Les étapes suivantes permettent le débogage dans la session active de Visual S
 
     ![Sortie de la journalisation du débogueur dans la Fenêtre Sortie](media/debugger-logging-output.png)
 
-1. Si Visual Studio se bloque ou que vous ne parvenez pas à accéder à la Fenêtre **Sortie**, redémarrez Visual Studio, ouvrez une Fenêtre Commande et entrez la commande suivante :
+1. Si Visual Studio ne répond plus ou si vous ne parvenez pas à accéder à la fenêtre **sortie** , redémarrez Visual Studio, ouvrez une fenêtre de commande, puis entrez la commande suivante :
 
     ```ps
     DebugAdapterHost.Logging /On

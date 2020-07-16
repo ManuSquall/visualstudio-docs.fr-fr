@@ -1,18 +1,18 @@
 ---
 title: Installer des frameworks de tests unitaires tierces
-ms.date: 04/01/2019
+ms.date: 07/09/2020
 ms.topic: how-to
 ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: fb9a08d0d3119724e8db631841aca35c6c6e9fe5
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: c274f203b9bf2746716c0625c61141aaa332977a
+ms.sourcegitcommit: a77158415da04e9bb8b33c332f6cca8f14c08f8c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85286971"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "86387185"
 ---
 # <a name="install-unit-test-frameworks"></a>Installer des frameworks de tests unitaires
 
@@ -20,7 +20,12 @@ L’Explorateur de tests Visual Studio peut exécuter des tests depuis n’impor
 
 Une solution Visual Studio peut contenir des projets de test unitaire qui utilisent des frameworks différents et qui sont destinés à des langages différents.
 
+::: moniker range=">=vs-2019"
+Pour .NET, [MSTest, nunit et xUnit](getting-started-with-unit-testing.md) sont les frameworks de test fournis par Visual Studio, qui sont installés par défaut.
+::: moniker-end
+::: moniker range="vs-2017"
 [MSTest](getting-started-with-unit-testing.md) est le framework de tests fourni par Visual Studio et installé par défaut.
+::: moniker-end
 
 ## <a name="acquire-frameworks"></a>Acquérir des frameworks
 

@@ -9,17 +9,17 @@ caps.latest.revision: 28
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: ecef4536ec11d2319007602b195c96a9df7d3719
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
-ms.translationtype: MTE95
+ms.openlocfilehash: a9af78dc373734905c703a3b9ee5c9462af3e116
+ms.sourcegitcommit: a77158415da04e9bb8b33c332f6cca8f14c08f8c
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74298058"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "86386678"
 ---
 # <a name="how-to-upgrade-from-a-trial-edition-of-visual-studio"></a>Comment : effectuer une mise à niveau à partir d'une version d'évaluation de Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous pouvez évaluer la version préliminaire de Visual Studio pendant 14 jours sans enregistrer le produit. Une fois que vous êtes inscrit à l’aide d’un compte Microsoft, la licence préliminaire est valide jusqu’à la date d’expiration.
+Vous pouvez évaluer la version préliminaire de Visual Studio pendant 14 jours sans enregistrer le produit. Après vous être inscrit en vous connectant avec un compte Microsoft, la licence de la version préliminaire est valide jusqu’à la date d’expiration.
 
  Vous pouvez évaluer la version commerciale des éditions Professional et Enterprise de Visual Studio pendant 30 jours, à partir de la date d’installation du produit. La [connexion à Visual Studio](../ide/signing-in-to-visual-studio.md) ajoute 60 jours à la période d’évaluation pour l’amener à un total de 90 jours. Si vous n'enregistrez pas une édition d'évaluation de Visual Studio dans les 30 jours, la période d'évaluation expire 30 jours après l'installation.
 

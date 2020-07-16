@@ -9,12 +9,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 48fa03dec65bcdc1e6c3af94200cfb6c46907e49
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: d743749ebf1c31c25345c89922fee2434c3284bd
+ms.sourcegitcommit: a77158415da04e9bb8b33c332f6cca8f14c08f8c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77476872"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "86386730"
 ---
 # <a name="make-code-work-in-visual-studio"></a>Faire fonctionner le code dans Visual Studio
 
@@ -40,17 +40,17 @@ Quand la build réussit, des résultats similaires à ceux-ci apparaissent dans 
 
 ## <a name="review-the-error-list"></a>Examiner la Liste d’erreurs
 
-À moins que vous n’ayez apporté aucune modification au code précédemment compilé avec succès, une erreur s’est probablement produite. Si vous codez depuis peu, il y en a peut-être beaucoup. Si certaines erreurs sont évidentes, comme une simple erreur de syntaxe ou un nom de variable incorrect, d’autres sont parfois plus ardues à comprendre. Et ce n’est pas le code obscur associé à celles-ci qui va davantage vous aider. Pour une vue plus propre des problèmes, naviguez vers le bas de la fenêtre **de sortie** de construction, et cliquez sur **l’onglet Liste d’erreur.** Cela vous amène à une vue plus organisée des erreurs et des avertissements pour votre projet, et vous donne quelques options supplémentaires ainsi.
+À moins que vous n’ayez apporté aucune modification au code précédemment compilé avec succès, une erreur s’est probablement produite. Si vous codez depuis peu, il y en a peut-être beaucoup. Si certaines erreurs sont évidentes, comme une simple erreur de syntaxe ou un nom de variable incorrect, d’autres sont parfois plus ardues à comprendre. Et ce n’est pas le code obscur associé à celles-ci qui va davantage vous aider. Pour obtenir une vue plus claire des problèmes, accédez au bas de la fenêtre **sortie** de la génération, puis cliquez sur l’onglet **liste d’erreurs** . Vous accédez ainsi à une vue plus organisée des erreurs et des avertissements pour votre projet et vous offre également des options supplémentaires.
 
 ![Sortie et liste d’erreurs de Visual Studio](../ide/media/vs_ide_gs_debug_bad_build_error_list.png)
 
-Cliquez sur la ligne de l’erreur dans la fenêtre **Liste d’erreurs** pour accéder directement à la ligne où l’erreur s’est produite. (Ou activez les numéros de ligne en appuyant sur **Ctrl**+**Q**, en tapant les numéros de **ligne,** puis en choisissant les numéros de **ligne De virage allumés ou éteints** à partir des résultats. C’est le moyen le plus rapide d’obtenir la boîte de dialogue **Options** qui vous permet d’activer les numéros de ligne.)
+Cliquez sur la ligne de l’erreur dans la fenêtre **Liste d’erreurs** pour accéder directement à la ligne où l’erreur s’est produite. (Ou activez les numéros de ligne en appuyant sur **CTRL** + **Q**, en tapant les **numéros de ligne**, puis en choisissant l' **option Activer ou désactiver les numéros de ligne** dans les résultats. C’est le moyen le plus rapide d’obtenir la boîte de dialogue **Options** qui vous permet d’activer les numéros de ligne.)
 
 ![Éditeur Visual Studio avec des numéros de ligne](../ide/media/vs_ide_gs_debug_line_numbers.png)
 
 ![Option des numéros de ligne Visual Studio](../ide/media/vs_ide_gs_debug_options_line_numbers.png)
 
-Appuyez sur **Ctrl**+**G** pour sauter rapidement au numéro de ligne où l’erreur s’est produite.
+Appuyez sur **CTRL** + **G** pour accéder rapidement au numéro de ligne où l’erreur s’est produite.
 
 L’erreur est identifiée par un trait de soulignement rouge ondulé. Pointez dessus pour obtenir plus d'informations. Apportez la correction nécessaire pour faire disparaître ce trait. Notez toutefois que vous risquez d'introduire une nouvelle erreur. (Cela s’appelle une « régression ».)
 
@@ -74,13 +74,13 @@ Les analyseurs de code recherchent les problèmes de code courants qui peuvent c
 
 ### <a name="c-and-visual-basic-code-analysis"></a>Analyse du code C# et Visual Basic
 
-Visual Studio comprend un ensemble prédéfini d’[analyseurs .NET Compiler Platform](../code-quality/roslyn-analyzers-overview.md) qui examinent le code C# et Visual Basic au fur et à mesure que vous l’écrivez. Vous pouvez installer des analyseurs supplémentaires sous la forme d’une extension Visual Studio ou d’un package NuGet. Si des violations de règles sont constatées, elles sont signalées à la fois dans la liste d’erreurs et dans l’éditeur de code comme un squiggle en vertu du code incriminé.
+Visual Studio comprend un ensemble prédéfini d’[analyseurs .NET Compiler Platform](../code-quality/roslyn-analyzers-overview.md) qui examinent le code C# et Visual Basic au fur et à mesure que vous l’écrivez. Vous pouvez installer des analyseurs supplémentaires sous la forme d’une extension Visual Studio ou d’un package NuGet. Si des violations de règle sont détectées, elles sont signalées dans l’Liste d’erreurs et dans l’éditeur de code sous la forme d’un tilde sous le code incriminé.
 
 ### <a name="c-code-analysis"></a>Analyse du code C++
 
 Pour analyser du code C++, exécutez une [analyse statique du code](/cpp/code-quality/quick-start-code-analysis-for-c-cpp). Prenez l’habitude d’effectuer cette analyse après avoir résolu les erreurs évidentes qui font obstacle à la génération, et consacrez du temps au traitement des avertissements qu’elle peut produire. Cela vous épargnera quelques maux de tête, et vous pouvez même apprendre quelques techniques relatives au style du code.
 
-Appuyez sur **Alt**+**F11** (ou sélectionnez Analyse**de code d’exécution d’analyse** **Analyze** > sur la solution à partir du menu supérieur) pour commencer l’analyse statique du code.
+Appuyez sur **ALT** + **F11** (ou sélectionnez **analyser**  >  **exécuter l’analyse du code sur la solution** dans le menu supérieur) pour démarrer l’analyse statique du code.
 
 ![Élément de menu Analyse du code de Visual Studio](../ide/media/vs_ide_gs_debug_run_code_analysis.png)
 
@@ -90,7 +90,7 @@ Les avertissements nouveaux ou mis à jour apparaissent sous l’onglet **Liste 
 
 ## <a name="use-quick-actions-to-fix-or-refactor-code"></a>Utiliser les actions rapides pour corriger ou refactoriser du code
 
-Les [actions rapides](../ide/quick-actions.md), disponibles à partir de l’icône d’ampoule ou de tournevis, permettent de refactoriser le code inline. Elles vous permettent de résoudre facilement et rapidement des avertissements courants dans du code C#, C++ et Visual Basic. Pour y accéder, cliquez avec le bouton droit sur le trait de soulignement ondulé d’un avertissement et sélectionnez **Actions rapides et refactorisations**. Ou, lorsque votre curseur est sur la ligne avec le gribouillis coloré, appuyez sur **Ctrl**+**.** ou sélectionnez l’icône d’ampoule, d’ampoule d’erreur ou de tournevis dans la marge. Vous voyez alors une liste des corrections ou des refactorisations possibles que vous pouvez appliquer à cette ligne de code.
+Les [actions rapides](../ide/quick-actions.md), disponibles à partir de l’icône d’ampoule ou de tournevis, permettent de refactoriser le code inline. Elles vous permettent de résoudre facilement et rapidement des avertissements courants dans du code C#, C++ et Visual Basic. Pour y accéder, cliquez avec le bouton droit sur le trait de soulignement ondulé d’un avertissement et sélectionnez **Actions rapides et refactorisations**. Ou, lorsque le curseur se trouve sur la ligne avec le tilde de couleur, appuyez sur **CTRL** + **.** ou sélectionnez l’icône d’ampoule, d’ampoule d’erreur ou de tournevis dans la marge. Vous voyez alors une liste des corrections ou des refactorisations possibles que vous pouvez appliquer à cette ligne de code.
 
 ![Aperçu d’une ampoule dans Visual Studio](../ide/media/quick-actions-options.png)
 
@@ -98,17 +98,17 @@ Vous pouvez utiliser des actions rapides là où les analyseurs de code détermi
 
 ![Texte « Aucune action rapide disponible »](../ide/media/vs_ide_gs_debug_light_bulb_no_options.png)
 
-Avec l’expérience, vous pouvez rapidement utiliser les touches fléchées et **Ctrl**+**.** pour vérifier les opportunités de refactorisation simples et nettoyer votre code.
+Avec l’expérience, vous pouvez rapidement utiliser les touches de direction et **CTRL** + **.** pour vérifier les opportunités de refactorisation simples et nettoyer votre code.
 
 ::: moniker range="vs-2019"
 
-## <a name="run-code-cleanup"></a>Nettoyage du code d’exécution
+## <a name="run-code-cleanup"></a>Exécuter le nettoyage du code
 
-Visual Studio fournit le [formatage à la demande de votre fichier de code C,](code-styles-and-code-cleanup.md#apply-code-styles)y compris les préférences de style de code, par le bouton **Code Cleanup** en bas de l’éditeur.
+Visual Studio fournit la [mise en forme à la demande de votre fichier de code C#](code-styles-and-code-cleanup.md#apply-code-styles), y compris les préférences de style de code, via le bouton **nettoyage de code** en bas de l’éditeur.
 
 ![Bouton de nettoyage du code dans Visual Studio 2019](media/execute-code-cleanup.png)
 
-En plus de formater votre fichier pour les espaces, les indents, et cetera, **Code Cleanup** applique également un ensemble de conventions de style de code que vous définissez. Vos préférences pour chaque style de code sont lues à partir du [fichier EditorConfig](code-styles-and-code-cleanup.md#code-styles-in-editorconfig-files), si vous en avez un pour le projet, ou à partir des [paramètres de style de code](code-styles-and-code-cleanup.md#code-styles-in-the-options-dialog-box) dans la boîte de dialogue **Options**.
+Outre la mise en forme de votre fichier pour les espaces, les retraits et les etc, le **nettoyage du code** applique également un ensemble de conventions de style de code que vous définissez. Vos préférences pour chaque style de code sont lues à partir du [fichier EditorConfig](code-styles-and-code-cleanup.md#code-styles-in-editorconfig-files), si vous en avez un pour le projet, ou à partir des [paramètres de style de code](code-styles-and-code-cleanup.md#code-styles-in-the-options-dialog-box) dans la boîte de dialogue **Options**.
 
 ::: moniker-end
 
@@ -118,9 +118,9 @@ Maintenant que vous avez généré votre code et procédé à quelques tâches d
 
 ![Fenêtres Automatique et Pile des appels de Visual Studio](../ide/media/vs_ide_gs_debug_autos_and_call_stack.png)
 
-Arrêtez votre application en appuyant sur **Shift**+**F5** ou en cliquant sur le bouton **Stop.** Ou, vous pouvez simplement fermer la fenêtre principale de l’application (ou le dialogue de commande-ligne).
+Arrêtez votre application en appuyant sur **MAJ** + **F5** ou en cliquant sur le bouton **arrêter** . Vous pouvez aussi fermer la fenêtre principale de l’application (ou la boîte de dialogue de ligne de commande).
 
-Si votre code s'exécute parfaitement et exactement comme prévu, félicitations ! Toutefois, si votre code se bloque, qu’il s’arrête ou qu’il produit des résultats inattendus, vous devez rechercher la source de ces problèmes et résoudre les bogues.
+Si votre code s'exécute parfaitement et exactement comme prévu, félicitations ! Toutefois, s’il cesse de répondre ou s’est bloqué, ou a donné des résultats étranges, vous devez rechercher la source de ces problèmes et résoudre les bogues.
 
 ### <a name="set-simple-breakpoints"></a>Définir des points d’arrêt simples
 
@@ -132,7 +132,7 @@ Définissez un point d’arrêt en cliquant à l’extrémité de la marge de la
 
 Parmi les utilisations courantes des points d'arrêt, citons les suivantes :
 
-- Pour cibler la source d’un plantage ou d’un blocage, disséminez des points d’arrêt à l’intérieur et tout autour du code de l’appel de méthode qui semble être à l’origine de l’échec. À mesure que vous exécutez le code dans le débogueur, supprimez les points d’arrêt, puis rapprochez-les les uns des autres jusqu’à identifier la ligne de code incriminée. Pour découvrir comment exécuter du code dans le débogueur, consultez la section suivante.
+- Pour limiter la source d’un programme de blocage ou de non-réponse, vous pouvez faire circuler des points d’arrêt dans le code de l’appel de méthode, ce qui est à l’origine de l’échec. À mesure que vous exécutez le code dans le débogueur, supprimez les points d’arrêt, puis rapprochez-les les uns des autres jusqu’à identifier la ligne de code incriminée. Pour découvrir comment exécuter du code dans le débogueur, consultez la section suivante.
 
 - Quand vous introduisez du nouveau code, définissez un point d’arrêt au début de celui-ci, puis exécutez le code pour vérifier qu’il se comporte comme prévu.
 
@@ -168,6 +168,6 @@ Pour plus d’informations sur les tests unitaires dans Visual Studio et comment
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Premier regard sur le débbugger](../debugger/debugger-feature-tour.md)
+- [Présentation du débogueur](../debugger/debugger-feature-tour.md)
 - [En savoir plus sur l’utilisation du débogueur](../debugger/index.yml)
 - [Générer et corriger du code](../ide/code-generation-in-visual-studio.md)

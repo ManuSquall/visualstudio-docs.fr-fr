@@ -9,12 +9,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1c985d6699c75a78900366204c8bd5275f4c051d
-ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
+ms.openlocfilehash: 15a1d497b5b4217cd7a404cb591c20bb1196b04b
+ms.sourcegitcommit: a77158415da04e9bb8b33c332f6cca8f14c08f8c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85769932"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "86387315"
 ---
 # <a name="how-to-report-a-problem-with-visual-studio-or-visual-studio-installer"></a>Guide pratique pour signaler un problème avec Visual Studio ou Visual Studio Installer
 
@@ -69,7 +69,7 @@ Les fichiers heap dump et de trace nous sont utiles pour faciliter le diagnostic
 
 1. Sélectionnez l’onglet **Enregistrer**.
 
-1. Sous **Enregistrer vos actions**, sélectionnez l’instance actuelle de Visual Studio si vous pouvez y reproduire le problème. Si ce n’est pas le cas, par exemple, si Visual Studio est bloqué, sélectionnez **\<Create a new instance>** cette option pour enregistrer les actions dans une nouvelle instance de Visual Studio.
+1. Sous **Enregistrer vos actions**, sélectionnez l’instance actuelle de Visual Studio si vous pouvez y reproduire le problème. Si ce n’est pas le cas, par exemple, si Visual Studio ne répond plus, sélectionnez **\<Create a new instance>** cette option pour enregistrer les actions dans une nouvelle instance de Visual Studio.
 
 1. Sélectionnez **Démarrer l’enregistrement**. Accordez l’autorisation d’exécuter l’outil.
 
