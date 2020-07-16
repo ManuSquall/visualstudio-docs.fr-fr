@@ -730,6 +730,20 @@
                   href: ca2328.md
                 - name: 'CA2329 : Ne désérialisez pas avec JsonSerializer à l’aide d’une configuration non sécurisée'
                   href: ca2329.md
+                - name: "CA2350\_: Vérifier que l’entrée de DataTable.ReadXml() est approuvée"
+                  href: ca2350.md
+                - name: "CA2351\_: Vérifier que l’entrée de DataSet.ReadXml() est approuvée"
+                  href: ca2351.md
+                - name: "CA2352\_: Un jeu de données ou une table de données non sécurisé(e) dans un type sérialisable peut être vulnérable aux attaques par exécution de code à distance"
+                  href: ca2352.md
+                - name: "CA2353\_: Jeu de données ou table de données non sécurisé(e) dans un type sérialisable"
+                  href: ca2353.md
+                - name: "CA2354\_: Un jeu de données ou une table de données non sécurisé(e) dans un graphe d’objets désérialisé peut être vulnérable à une attaque par exécution de code à distance"
+                  href: ca2354.md
+                - name: "CA2355\_: Jeu de données ou table de données non sécurisé(e) dans un graphe d’objets désérialisé"
+                  href: ca2355.md
+                - name: "CA2356\_: Type de jeu de données ou de table de données non sécurisé dans un graphe d’objets désérialisé web"
+                  href: ca2356.md
                 - name: 'CA2330 : Vérifiez que JsonSerializer a une configuration sécurisée lors de la désérialisation.'
                   href: ca2330.md
                 - name: "CA3001\_: Passez en revue le code pour détecter les vulnérabilités de l’injection SQL"

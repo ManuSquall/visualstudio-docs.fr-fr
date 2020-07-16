@@ -42,6 +42,8 @@
       items:
         - name: Exécuter des tests unitaires avec l'Explorateur de tests
           href: run-unit-tests-with-test-explorer.md
+        - name: Déboguer des tests unitaires avec l’Explorateur de tests
+          href: debug-unit-tests-with-test-explorer.md
         - name: Questions fréquentes (FAQ) sur l’Explorateur de tests
           href: test-explorer-faq.md
     - name: Exécuter des tests à partir de la ligne de commande
@@ -103,7 +105,7 @@
       items:
         - name: Exécuter un test unitaire d’une DLL C++ UWP
           href: unit-testing-a-visual-cpp-dll-for-store-apps.md
-        - name: 'Exécuter un test unitaire de code Visual C# dans des applications UWP'
+        - name: Exécuter un test unitaire de code Visual C# dans des applications UWP
           href: unit-testing-visual-csharp-code-in-a-store-app.md
         - name: "Procédure pas à pas\_: Créer et exécuter des tests unitaires pour des applications UWP"
           href: walkthrough-creating-and-running-unit-tests-for-windows-store-apps.md
