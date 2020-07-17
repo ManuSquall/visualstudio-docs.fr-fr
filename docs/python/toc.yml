@@ -1,6 +1,6 @@
 - name: Python dans Visual Studio
   href: index.yml
-- name: Vue d’ensemble
+- name: Vue d'ensemble
   items:
     - name: Vue d’ensemble de la prise en charge de Python
       href: overview-of-python-tools-for-visual-studio.md
@@ -85,7 +85,7 @@
           href: python-django-web-application-project-template.md
         - name: Modèle de service cloud Azure
           href: python-azure-cloud-service-project-template.md
-    - name: Kit SDK Azure pour Python
+    - name: Kit de développement logiciel (SDK) Azure pour Python
       href: /python/azure/?view=azure-python
 - name: Guides pratiques
   items:
@@ -139,11 +139,11 @@
           href: debugging-symbols-for-mixed-mode-c-cpp-python.md
     - name: Profilage
       href: profiling-python-code-in-visual-studio.md
-    - name: Test des unités
+    - name: Test unitaire
       href: unit-testing-python-in-visual-studio.md
     - name: Utilisation de l’extension Cookiecutter
       href: using-python-cookiecutter-templates.md
-- name: Reference
+- name: Référence
   items:
     - name: Modèles d'élément
       href: python-item-templates.md

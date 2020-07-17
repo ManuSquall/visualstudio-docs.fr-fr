@@ -20,7 +20,7 @@
           items:
             - name: 'Création de colonnes de sites, de types de contenu et de listes pour SharePoint'
               href: creating-site-columns-content-types-and-lists-for-sharepoint.md
-            - name: "Procédure pas à pas\_: création d'une colonne de site, d'un type de contenu et d'une liste pour SharePoint"
+            - name: "Procédure pas à pas\_: Création d'une colonne de site, d'un type de contenu et d'une liste pour SharePoint"
               href: walkthrough-create-a-site-column-content-type-and-list-for-sharepoint.md
         - name: Créer un récepteur d’événements
           href: how-to-create-an-event-receiver.md
@@ -32,15 +32,15 @@
               href: creating-sharepoint-workflow-solutions.md
             - name: Prise en charge des formulaires dans les flux de travail
               href: form-support-in-workflows.md
-            - name: "Procédure pas à pas\_: création et débogage d'une solution de flux de travail SharePoint"
+            - name: "Procédure pas à pas\_: Créer et déboguer une solution de flux de travail SharePoint"
               href: walkthrough-creating-and-debugging-a-sharepoint-workflow-solution.md
-            - name: "Procédure pas à pas\_: création d'un flux de travail avec des formulaires d'association et d'initiation"
+            - name: "Procédure pas à pas\_: Créer un flux de travail avec des formulaires d'association et d'initiation"
               href: walkthrough-creating-a-workflow-with-association-and-initiation-forms.md
-            - name: "Procédure pas à pas\_: ajout d'une page d'application à un flux de travail"
+            - name: "Procédure pas à pas\_: Ajouter une page d'application à un flux de travail"
               href: walkthrough-add-an-application-page-to-a-workflow.md
-            - name: "Procédures pas à pas\_: création d'une activité de workflow de site personnalisée"
+            - name: "Procédure pas à pas\_: Créer une activité de flux de travail de site personnalisée"
               href: walkthrough-create-a-custom-site-workflow-activity.md
-            - name: 'Procédure pas à pas : importation d''un flux de travail réutilisable de SharePoint Designer dans Visual Studio'
+            - name: "Procédure pas à pas\_: Importer un flux de travail SharePoint Designer réutilisable dans Visual Studio"
               href: walkthrough-import-a-sharepoint-designer-reusable-workflow-into-visual-studio.md
         - name: Création de pages pour SharePoint
           items:
@@ -50,7 +50,7 @@
               href: creating-application-pages-for-sharepoint.md
             - name: Créer une page d’application
               href: how-to-create-an-application-page.md
-            - name: 'Procédure pas à pas : création d''une page d''application SharePoint'
+            - name: "Procédure pas à pas\_: Création d'une page d'application SharePoint"
               href: walkthrough-creating-a-sharepoint-application-page.md
         - name: Création de composants WebPart pour SharePoint
           items:
@@ -60,11 +60,11 @@
               href: how-to-create-a-sharepoint-web-part.md
             - name: Créer un composant WebPart SharePoint à l’aide d’un concepteur
               href: how-to-create-a-sharepoint-web-part-by-using-a-designer.md
-            - name: "Procédure pas à pas\_: création d'un composant WebPart pour SharePoint"
+            - name: "Procédure pas à pas\_: Créer un composant WebPart pour SharePoint"
               href: walkthrough-creating-a-web-part-for-sharepoint.md
-            - name: "Procédure pas à pas\_: création d'un composant WebPart pour SharePoint à l'aide d'un concepteur"
+            - name: "Procédure pas à pas\_: Créer un composant WebPart pour SharePoint à l'aide d'un concepteur"
               href: walkthrough-creating-a-web-part-for-sharepoint-by-using-a-designer.md
-            - name: "Procédure pas à pas\_: création d'un composant WebPart Silverlight qui affiche OData pour SharePoint"
+            - name: "Procédure pas à pas\_: Création d'un composant WebPart Silverlight qui affiche OData pour SharePoint"
               href: walkthrough-creating-a-silverlight-web-part-that-displays-odata-for-sharepoint.md
         - name: Création de contrôles réutilisables pour les composants WebPart ou les pages d'application
           items:
@@ -120,25 +120,25 @@
                   href: creating-an-association-between-entities.md
                 - name: Créer une association entre des entités
                   href: how-to-create-an-association-between-entities.md
-                - name: 'Procédure pas à pas : création d''une liste externe dans SharePoint à l''aide de données métiers'
+                - name: "Procédure pas à pas\_: Créer une liste externe dans SharePoint à l'aide de données métier"
                   href: walkthrough-creating-an-external-list-in-sharepoint-by-using-business-data.md
         - name: Création de définitions de site pour SharePoint
           items:
             - name: Création de définitions de site pour SharePoint
               href: creating-site-definitions-for-sharepoint.md
-            - name: 'Procédure pas à pas : création d''un projet de définition de site de base'
+            - name: "Procédure pas à pas\_: Création d'un projet de définition de site de base"
               href: walkthrough-create-a-basic-site-definition-project.md
         - name: Importation d'éléments d'un site SharePoint existant
           items:
             - name: Importation d'éléments d'un site SharePoint existant
               href: importing-items-from-an-existing-sharepoint-site.md
-            - name: "Procédure pas à pas\_: importation d'éléments d'un site SharePoint existant"
+            - name: "Procédure pas à pas\_: Importer des éléments à partir d'un site SharePoint existant"
               href: walkthrough-import-items-from-an-existing-sharepoint-site.md
             - name: Directives pour l'importation de flux de travail réutilisables
               href: guidelines-for-importing-reusable-workflows.md
             - name: Importer une page maître ou un thème
               href: how-to-import-a-master-page-or-theme.md
-            - name: "Procédure pas à pas\_: importation d'une page maître et d'une page de site personnalisées avec une image"
+            - name: "Procédure pas à pas\_: Importation d'une page maître et d'une page de site personnalisées avec une image"
               href: walkthrough-import-a-custom-master-page-and-site-page-with-an-image.md
         - name: Utilisation de modules pour inclure des fichiers dans la solution
           items:
@@ -192,13 +192,13 @@
           items:
             - name: Vérification et débogage du code SharePoint
               href: verifying-and-debugging-sharepoint-code.md
-            - name: 'Procédure pas à pas : débogage d''une application SharePoint avec IntelliTrace'
+            - name: "Procédure pas à pas\_: Débogage d'une application SharePoint avec IntelliTrace"
               href: walkthrough-debugging-a-sharepoint-application-by-using-intellitrace.md
         - name: Profilage des performances des applications SharePoint
           items:
             - name: Profilage des performances des applications SharePoint
               href: profiling-the-performance-of-sharepoint-applications.md
-            - name: "Procédure pas à pas\_: profilage d'une application SharePoint"
+            - name: "Procédure pas à pas\_: Profilage d'une application SharePoint"
               href: walkthrough-profiling-a-sharepoint-application.md
         - name: Différences entre les solutions bac à sable (sandbox) et les solutions de batterie
           href: differences-between-sandboxed-and-farm-solutions.md
@@ -222,7 +222,7 @@
               href: how-to-add-and-remove-items-to-sharepoint-features.md
             - name: Ajouter et supprimer des dépendances de fonctionnalités
               href: how-to-add-and-remove-feature-dependencies.md
-            - name: "Procédure pas à pas\_: ajout de récepteurs d'événements de fonctionnalité"
+            - name: "Procédure pas à pas\_: Ajouter des récepteurs d'événements de fonctionnalités"
               href: walkthrough-add-feature-event-receivers.md
         - name: Création de packages de solution SharePoint
           items:
@@ -252,7 +252,7 @@
               href: how-to-set-sharepoint-deployment-commands.md
             - name: Modifier une configuration de déploiement SharePoint
               href: how-to-edit-a-sharepoint-deployment-configuration.md
-            - name: "Procédure pas à pas\_: déploiement d’une définition de liste de tâches de projet"
+            - name: "Procédure pas à pas\_: Déployer une définition de liste de tâches de projet"
               href: walkthrough-deploying-a-project-task-list-definition.md
         - name: Paramètres remplaçables
           href: replaceable-parameters.md
@@ -290,13 +290,13 @@
                   href: how-to-add-a-property-to-a-custom-sharepoint-project-item-type.md
                 - name: Création de modèles d'élément et de modèles de projet pour les éléments de projet SharePoint
                   href: creating-item-templates-and-project-templates-for-sharepoint-project-items.md
-                - name: "Procédure pas à pas\_: création d'un élément de projet d'action personnalisé avec un modèle d'élément, première\_partie"
+                - name: "Procédure pas à pas\_: Création d'un élément de projet d'action personnalisé avec un modèle d'élément, première\_partie"
                   href: walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1.md
-                - name: "Procédure pas à pas\_: création d'un élément de projet d'action personnalisé avec un modèle d'élément, deuxième\_partie"
+                - name: "Procédure pas à pas\_: Création d'un élément de projet d'action personnalisé avec un modèle d'élément, deuxième\_partie"
                   href: walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-2.md
-                - name: 'Procédure pas à pas : création d''un élément de projet Colonne de site avec un modèle de projet, première partie'
+                - name: "Procédure pas à pas\_: Création d'un élément de projet Colonne de site avec un modèle de projet, première partie"
                   href: walkthrough-creating-a-site-column-project-item-with-a-project-template-part-1.md
-                - name: 'Procédure pas à pas : création d''un élément de projet Colonne de site avec un modèle de projet, deuxième partie'
+                - name: "Procédure pas à pas\_: Création d'un élément de projet Colonne de site avec un modèle de projet, deuxième partie"
                   href: walkthrough-creating-a-site-column-project-item-with-a-project-template-part-2.md
             - name: Extension d'éléments de projet SharePoint
               items:
@@ -308,7 +308,7 @@
                   href: how-to-add-a-shortcut-menu-item-to-a-sharepoint-project-item-extension.md
                 - name: Ajouter une propriété à une extension d’élément de projet SharePoint
                   href: how-to-add-a-property-to-a-sharepoint-project-item-extension.md
-                - name: "Procédure pas à pas\_: extension d'un type d'élément de projet SharePoint"
+                - name: "Procédure pas à pas\_: Extension d’un type d’élément de projet SharePoint"
                   href: walkthrough-extending-a-sharepoint-project-item-type.md
             - name: Extension de projets SharePoint
               items:
@@ -320,7 +320,7 @@
                   href: how-to-add-a-shortcut-menu-item-to-sharepoint-projects.md
                 - name: Ajouter une propriété à des projets SharePoint
                   href: how-to-add-a-property-to-sharepoint-projects.md
-                - name: "Procédure pas à pas\_: création d'une extension de projet SharePoint"
+                - name: "Procédure pas à pas\_: Création d’une extension de projet SharePoint"
                   href: walkthrough-creating-a-sharepoint-project-extension.md
             - name: Extension de la création de packages et du déploiement SharePoint
               items:
@@ -332,7 +332,7 @@
                   href: how-to-run-code-when-a-sharepoint-project-is-deployed-or-retracted.md
                 - name: Gérer les conflits de déploiement
                   href: how-to-handle-deployment-conflicts.md
-                - name: "Procédure pas à pas\_: création d'une étape de déploiement personnalisée pour des projets SharePoint"
+                - name: "Procédure pas à pas\_: Création d'une étape de déploiement personnalisée pour des projets SharePoint"
                   href: walkthrough-creating-a-custom-deployment-step-for-sharepoint-projects.md
                 - name: Créer des règles de validation de fonctionnalité et de package personnalisées pour les solutions SharePoint
                   href: how-to-create-custom-feature-and-package-validation-rules-for-sharepoint-solutions.md
@@ -350,7 +350,7 @@
               href: how-to-add-a-custom-sharepoint-node-to-server-explorer.md
             - name: Obtenir des données pour un nœud SharePoint intégré dans l’Explorateur de serveurs
               href: how-to-get-data-for-a-built-in-sharepoint-node-in-server-explorer.md
-            - name: "Procédure pas à pas\_: extension de l'Explorateur de serveurs pour afficher des WebParts"
+            - name: "Procédure pas à pas\_: Extension de l'Explorateur de serveurs pour afficher des composants WebPart"
               href: walkthrough-extending-server-explorer-to-display-web-parts.md
         - name: Concepts et fonctionnalités de programmation des extensions d'outils SharePoint
           items:
@@ -364,7 +364,7 @@
                   href: how-to-create-a-sharepoint-command.md
                 - name: Exécuter une commande SharePoint
                   href: how-to-execute-a-sharepoint-command.md
-                - name: "Procédure pas à pas\_: appel du modèle d'objet client SharePoint à partir d'une extension de l'Explorateur de serveurs"
+                - name: "Procédure pas à pas\_: Appel du modèle d'objet client SharePoint à partir d'une extension de l'Explorateur de serveurs"
                   href: walkthrough-calling-into-the-sharepoint-client-object-model-in-a-server-explorer-extension.md
             - name: Utilisation du service de projet SharePoint
               items:
@@ -378,9 +378,9 @@
           href: debugging-extensions-for-the-sharepoint-tools-in-visual-studio.md
         - name: Déploiement d'extensions pour les outils SharePoint dans Visual Studio
           href: deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md
-        - name: Reference
+        - name: Référence
           items:
-            - name: Reference
+            - name: Référence
               href: reference-sharepoint-tools-extensibility.md
             - name: Référence du schéma d'élément de projet SharePoint
               items:

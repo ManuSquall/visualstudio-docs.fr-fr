@@ -1,6 +1,6 @@
-- name: 'Didacticiels C#'
+- name: Didacticiels C#
   href: index.yml
-- name: Vue d’ensemble
+- name: Vue d'ensemble
   items:
     - name: À propos de Visual Studio
       href: visual-studio-ide.md
@@ -13,7 +13,7 @@
 - name: Créer une application
   expanded: true
   items:
-    - name: 'Créer votre première application C#'
+    - name: Créer votre première application C#
       href: tutorial-console.md
     - name: Créer une application web
       href: tutorial-aspnet-core.md
@@ -48,7 +48,7 @@
       href: ../../ide/compiling-and-building-in-visual-studio.md
     - name: Déboguer votre code
       href: ../csharp/tutorial-debugger.md
-    - name: Test des unités
+    - name: Test unitaire
       href: ../../test/getting-started-with-unit-testing.md?toc=/visualstudio/get-started/csharp/toc.json&bc=/visualstudio/get-started/csharp/breadcrumb/toc.json
     - name: Déployer votre projet
       href: ../../deployment/index.yml

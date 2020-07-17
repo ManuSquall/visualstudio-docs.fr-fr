@@ -1,6 +1,6 @@
 # [SDK Debug Interface Access](debug-interface-access-sdk.md)
 ## [Prise en main](getting-started-debug-interface-access-sdk.md)
-### [Vue d'ensemble](overview-debug-interface-access-sdk.md)
+### [Vue d’ensemble](overview-debug-interface-access-sdk.md)
 ### [Interrogation du fichier .Pdb](querying-the-dot-pdb-file.md)
 ## [Symboles et étiquettes de symbole](symbols-and-symbol-tags.md)
 ### [Emplacements des symboles](symbol-locations.md)

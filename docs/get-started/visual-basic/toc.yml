@@ -1,6 +1,6 @@
 - name: Tutoriels Visual Basic
   href: index.yml
-- name: Vue d’ensemble
+- name: Vue d'ensemble
   items:
     - name: À propos de Visual Studio
       href: visual-studio-ide.md
@@ -34,7 +34,7 @@
       href: ../../ide/compiling-and-building-in-visual-studio.md
     - name: Déboguer votre code
       href: ../visual-basic/tutorial-debugger.md
-    - name: Test des unités
+    - name: Test unitaire
       href: ../../test/getting-started-with-unit-testing.md?toc=/visualstudio/get-started/visual-basic/toc.json&bc=/visualstudio/get-started/visual-basic/breadcrumb/toc.json
     - name: Déployer votre projet
       href: ../../deployment/index.yml
