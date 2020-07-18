@@ -1,17 +1,17 @@
 ---
 title: Organiser les objets en conteneurs de disposition dans le concepteur XAML
-ms.date: 11/04/2016
+ms.date: 07/17/2020
 ms.topic: conceptual
 ms.assetid: 29c80c38-0fa3-48d6-b3a8-3b864f482e44
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: 3f05874459553b0b83c5e43f326a5deb6b0d4798
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: ebe96ec84d957c5ac8dcb6bad0a388ba3318c0fb
+ms.sourcegitcommit: 1fcdb5dae881a1c3a93413bb940d63c232bf96f3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75592937"
+ms.lasthandoff: 07/18/2020
+ms.locfileid: "86459292"
 ---
 # <a name="organize-objects-into-layout-containers-in-xaml-designer"></a>Organiser les objets en conteneurs de disposition dans le concepteur XAML
 
@@ -43,7 +43,7 @@ Permet de disposer les objets dans des régions de grille égales ou uniformes. 
 
 ![Panneau de disposition UniformGrid](../designers/media/928b9284-a7e8-4678-875a-656b80b78076.png)
 
-### <a name="canvas"></a>Zone de dessin
+### <a name="canvas"></a>Canvas
 
 Permet de disposer les objets librement. Quand les utilisateurs exécutent votre application, ces éléments ont des positions fixes sur l'écran.
 
@@ -71,7 +71,7 @@ Permet de disposer les objets de telle sorte qu’il restent, ou s’*ancrent*, 
 
 ![Panneau de disposition DockPanel](../designers/media/72d46b58-9a49-4dd5-8af7-6843c0440226.png)
 
-**Regardez une brève vidéo :** ![bouton de lecture](../designers/media/bldadminconsoleinitialconfigicon.PNG) [WPF-DockPanel](https://www.youtube.com/watch?v=EBH_OIM-zPo)
+**Regarder une courte vidéo :** ![Bouton Lecture](../designers/media/bldadminconsoleinitialconfigicon.PNG) [WPF - DockPanel](https://www.youtube.com/watch?v=EBH_OIM-zPo).
 
 ## <a name="layout-controls"></a>Contrôles de disposition
 
@@ -98,8 +98,6 @@ Permet aux utilisateurs de faire défiler une page ou l’une de ses zones vers 
 ### <a name="viewbox"></a>Viewbox
 
 Met à l'échelle les objets à la façon d'un contrôle de zoom. Vous ne pouvez ajouter qu’un seul objet à un **Viewbox**. Si vous voulez appliquer cet effet à plusieurs objets, ajoutez un panneau de disposition au **ViewBox**, puis ajoutez vos contrôles à ce panneau.
-
-(Disponible seulement pour les projets WPF)
 
 ![Contrôle de disposition ViewBox](../designers/media/f5b13c66-d918-4141-8a16-bd8f8628687a.png)
 

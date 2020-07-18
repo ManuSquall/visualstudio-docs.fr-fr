@@ -171,6 +171,7 @@ f1_keywords:
 - CA1832
 - CA1833
 - CA1835
+- CA1836
 - CA1900
 - CA1901
 - CA1903
@@ -290,12 +291,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 7539ad5b7973c9f87222de19ca9c975b04918a35
-ms.sourcegitcommit: 9a9c61ca115c22d33bb902153eb0853789c7be4c
+ms.openlocfilehash: 4ecf66c26838b6e276188eea1c6fa04d3f5d1799
+ms.sourcegitcommit: 510a928153470e2f96ef28b808f1d038506cce0c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "85835431"
+ms.lasthandoff: 07/17/2020
+ms.locfileid: "86454187"
 ---
 # <a name="code-analysis-warnings-for-managed-code-by-checkid"></a>Avertissements d’analyse du code pour le code managé par CheckId
 
@@ -460,6 +461,7 @@ Le tableau suivant répertorie les avertissements d'analyse du code pour le code
 | CA1832 |[CA1832 : Utiliser AsSpan ou AsMemory à la place d’indexeurs basés sur Range pour obtenir la partie ReadOnlySpan ou ReadOnlyMemory d’un tableau](../code-quality/ca1832.md) | Lors de l’utilisation d’un indexeur de plages sur un tableau et de l’assignation implicite de la valeur à un <xref:System.ReadOnlySpan%601> <xref:System.ReadOnlyMemory%601> type ou, la méthode <xref:System.Runtime.CompilerServices.RuntimeHelpers.GetSubArray%2A> est utilisée à la place de <xref:System.Span%601.Slice%2A?#System_Span_1_Slice_System_Int32_System_Int32_> , ce qui produit une copie de la partie demandée du tableau. |
 | CA1833 |[CA1833 : Utiliser AsSpan ou AsMemory à la place d’indexeurs basés sur Range pour obtenir la partie Span ou Memory d’un tableau](../code-quality/ca1833.md) | Lors de l’utilisation d’un indexeur de plages sur un tableau et de l’assignation implicite de la valeur à un <xref:System.Span%601> <xref:System.Memory%601> type ou, la méthode <xref:System.Runtime.CompilerServices.RuntimeHelpers.GetSubArray%2A> est utilisée à la place de <xref:System.Span%601.Slice%2A?#System_Span_1_Slice_System_Int32_System_Int32_> , ce qui produit une copie de la partie demandée du tableau. |
 | CA1835 |[CA1835 : préférer les surcharges « Memory' » pour « ReadAsync » et « WriteAsync »](../code-quality/ca1835.md) | 'Stream’a une surcharge’ReadAsync’qui accepte’Memory &lt; Byte &gt; 'comme premier argument et une surcharge’WriteAsync’qui prend un’ReadOnlyMemory &lt; Byte &gt; 'comme premier argument. Préférez appeler les surcharges basées sur la mémoire, qui sont plus efficaces. |
+| CA1836 |[CA1836 : préférer `IsEmpty` le `Count` cas échéant](../code-quality/ca1836.md) | Préférer `IsEmpty` la propriété qui est plus efficace `Count` que `Length` , <xref:System.Linq.Enumerable.Count%60%601%28System.Collections.Generic.IEnumerable%7B%60%600%7D%29> ou <xref:System.Linq.Enumerable.LongCount%60%601%28System.Collections.Generic.IEnumerable%7B%60%600%7D%29> pour déterminer si l’objet contient ou non des éléments. |
 | CA1900 | [CA1900 : Les champs de type valeur doivent être portables](../code-quality/ca1900.md) | Cette règle vérifie que les structures déclarées avec une disposition explicite s'aligneront correctement lorsqu'elles seront marshalées pour le code non managé sur les systèmes d'exploitation 64 bits. |
 | CA1901 | [CA1901 : les déclarations P/Invoke doivent être portables](../code-quality/ca1901.md) | Cette règle évalue la taille de chaque paramètre et la valeur de retour d’un P/Invoke, puis vérifie que la taille du paramètre est correcte lorsqu’elle est marshalée au code non managé sur les systèmes d’exploitation 32 bits et 64 bits. |
 | CA1903 | [CA1903 : Utiliser uniquement l'API à partir du Framework cible](../code-quality/ca1903.md) | Un membre ou un type utilise un membre ou un type qui a été introduit dans un Service Pack qui ne figurait pas dans le Framework ciblé du projet. |

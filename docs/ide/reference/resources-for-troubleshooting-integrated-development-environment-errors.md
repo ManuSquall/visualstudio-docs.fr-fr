@@ -1,6 +1,6 @@
 ---
 title: Ressources disponibles pour la résolution des erreurs
-ms.date: 11/04/2016
+ms.date: 07/17/2020
 ms.topic: troubleshooting
 f1_keywords:
 - VS.Message.0x00005A89
@@ -93,12 +93,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dc3b1524b97b68e54574badcb003e608924e476d
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 0a7b4dea467c0ed233b2db917e231a5a4d787f09
+ms.sourcegitcommit: 1fcdb5dae881a1c3a93413bb940d63c232bf96f3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75593614"
+ms.lasthandoff: 07/18/2020
+ms.locfileid: "86459279"
 ---
 # <a name="resources-for-troubleshooting-integrated-development-environment-errors"></a>Ressources pour résoudre les erreurs d’environnement de développement intégré
 
@@ -109,7 +109,7 @@ Les messages d’erreur n’ont pas tous une rubrique d’aide associée. Si les
 
 ## <a name="knowledge-base-articles"></a>Articles de la Base de connaissances
 
-Vous pouvez explorer la Base de connaissances en ligne pour rechercher des articles sur les problèmes du produit. Tous les problèmes ne possèdent pas un article dans la Base de connaissances, mais les erreurs rencontrées par un nombre significatif de clients sont en principe documentées. Vous pouvez accéder aux articles de la Base de connaissances sur le site web [Support Microsoft](https://support.microsoft.com).
+Vous pouvez explorer la Base de connaissances en ligne pour rechercher des articles sur les problèmes du produit. Tous les problèmes ne possèdent pas un article dans la Base de connaissances, mais les erreurs rencontrées par un nombre significatif de clients sont en principe documentées. Vous pouvez accéder aux articles de la Base de connaissances sur le site web [Support Microsoft](https://support.microsoft.com). Vous pouvez également afficher une collection d’Articles de la base de connaissances pour Visual Studio sur la page de [résolution des problèmes de Visual Studio](/troubleshoot/visualstudio/welcome-visual-studio/) .
 
 ## <a name="developer-forums"></a>Forums des développeurs
 
@@ -117,9 +117,9 @@ Dans les forums, vous pouvez dialoguer avec les autres développeurs et avec les
 
 Vous pouvez accéder aux forums, blogs, conversations et autres ressources sur le site web [Communautés techniques Microsoft](https://techcommunity.microsoft.com/t5/Communities/ct-p/communities).
 
-## <a name="product-support"></a>Support technique
+## <a name="product-support"></a>Prise en charge du produit
 
-Si vous avez encore des questions après avoir essayé les autres ressources, vous pouvez contacter les services de support Microsoft en visitant le site web [Support Microsoft](https://support.microsoft.com/en-us). Pour plus d’informations sur le support produit disponible dans votre région, consultez la page [d’options de rétroaction Visual Studio.](../../ide/feedback-options.md)
+Si vous avez encore des questions après avoir essayé les autres ressources, vous pouvez contacter les services de support Microsoft en visitant le site web [Support Microsoft](https://support.microsoft.com/en-us). Pour plus d’informations sur le support technique disponible dans votre région, consultez la page des [options de commentaires de Visual Studio](../../ide/feedback-options.md) .
 
 ## <a name="see-also"></a>Voir aussi
 
