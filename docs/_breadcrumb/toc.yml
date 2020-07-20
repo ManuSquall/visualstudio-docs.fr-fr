@@ -70,12 +70,21 @@
               tocHref: /visualstudio/extensibility/debugger/
               topicHref: /visualstudio/extensibility/debugger/visual-studio-debugger-extensibility
               items:
-                - name: Informations de référence
+                - name: Référence
                   tocHref: /visualstudio/extensibility/debugger/reference/
                   topicHref: /visualstudio/extensibility/debugger/reference/reference-visual-studio-debugging-apis
             - name: Conseils sur l’expérience utilisateur
               tocHref: /visualstudio/extensibility/ux-guidelines/
               topicHref: /visualstudio/extensibility/ux-guidelines/visual-studio-user-experience-guidelines
+        - name: Démarrage (CSharp)
+          tocHref: /visualstudio/get-started/csharp/
+          topicHref: /visualstudio/get-started/csharp/index
+        - name: Démarrage (Visual Basic)
+          tocHref: /visualstudio/get-started/visual-basic/
+          topicHref: /visualstudio/get-started/visual-basic/index
+        - name: Outils de conteneur
+          tocHref: /visualstudio/containers/
+          topicHref: /visualstudio/containers/index
         - name: MSBuild
           tocHref: /visualstudio/msbuild/
           topicHref: /visualstudio/msbuild/msbuild

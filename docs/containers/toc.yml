@@ -2,7 +2,7 @@
   href: index.yml
   expanded: true
   items:
-    - name: Vue d’ensemble
+    - name: Vue d'ensemble
       href: overview.md
     - name: Démarrage rapide
       expanded: true
@@ -11,15 +11,13 @@
           href: container-tools.md
         - name: Application monopage React.js dans un conteneur
           href: container-tools-react.md
-        - name: Développement Kubernetes avec Azure Dev Spaces > >
-          href: /azure/dev-spaces/quickstart-netcore-visualstudio
+        - name: Développement Kubernetes
+          href: local-process-kubernetes.md
     - name: Didacticiels
       expanded: true
       items:
         - name: Application à plusieurs conteneurs avec Docker Compose
           href: tutorial-multicontainer.md
-        - name: Kubernetes dans Visual Studio
-          href: tutorial-kubernetes-tools.md
     - name: Procédure
       items:
         - name: Déboguer une application dans un conteneur Docker local
@@ -40,7 +38,7 @@
           href: container-build.md
     - name: Résolution des problèmes
       href: troubleshooting-docker-errors.md
-    - name: Reference
+    - name: Référence
       items:
         - name: Propriétés MSBuild pour les projets de conteneur
           href: container-msbuild-properties.md
@@ -48,3 +46,11 @@
           href: docker-compose-properties.md
         - name: Paramètres de lancement
           href: container-launch-settings.md
+- name: Développer avec Kubernetes
+  items:
+    - name: Kubernetes dans Visual Studio
+      href: tutorial-kubernetes-tools.md
+    - name: Local Process avec Kubernetes (préversion)
+      href: local-process-kubernetes.md
+    - name: Fonctionnement de Local Process avec Kubernetes (préversion)
+      href: overview-local-process-kubernetes.md
