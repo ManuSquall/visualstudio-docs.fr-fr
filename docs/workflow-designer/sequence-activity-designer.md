@@ -5,17 +5,17 @@ ms.topic: reference
 f1_keywords:
 - System.Activities.Statements.Sequence.UI
 ms.assetid: 51c8d3cb-4d43-458f-9631-b63755f9ac94
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 116e8c31a6d7cad2e5c6da95bc66e34a0d11163a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 77980077a580724f6db6bb5a544200890421d8e5
+ms.sourcegitcommit: 186c0c250d85ac74274fa1e438b4c7c7108d8a36
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72649950"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "86875967"
 ---
 # <a name="sequence-activity-designer"></a>Concepteur d'activités Sequence
 
@@ -25,17 +25,17 @@ Une autre façon d'exécuter un ensemble d'activités dans l'ordre consiste à u
 
 ## <a name="using-the-sequence-activity-designer"></a>Utilisation du concepteur d'activités Sequence
 
-Pour ajouter une activité <xref:System.Activities.Statements.Sequence>, faites glisser le concepteur d’activités **Sequence** de la **boîte à outils** et déposez-le sur l’aire de concepteur de flux de travail. Pour ajouter une activité enfant à cette <xref:System.Activities.Statements.Sequence> activité, faites glisser une autre activité de la **boîte à outils** et déposez-la sur le triangle dans la zone avec le texte d’indication « déposer l’activité ici ».
+Pour ajouter une <xref:System.Activities.Statements.Sequence> activité, faites glisser le concepteur d’activités **Sequence** de la **boîte à outils** et déposez-le sur l’aire de concepteur de flux de travail. Pour ajouter une activité enfant à cette <xref:System.Activities.Statements.Sequence> activité, faites glisser une autre activité de la **boîte à outils** et déposez-la sur le triangle dans la zone avec le texte d’indication « déposer l’activité ici ».
 
 ### <a name="sequence-activity-properties-in-the-workflow-designer"></a>Propriétés de l'activité Sequence dans le concepteur de workflow
 
 Le tableau suivant présente les propriétés de <xref:System.Activities.Statements.Sequence> et décrit comment elles sont utilisées dans le concepteur. Ces propriétés peuvent être modifiées dans la grille des propriétés ou dans l'aire du concepteur.
 
-|Nom de propriété|Obligatoire|Utilisation|
+|Nom de la propriété|Obligatoire|Usage|
 |-|--------------|-|
 |<xref:System.Activities.Activity.DisplayName%2A>|False|Spécifie le nom convivial du concepteur d'activités <xref:System.Activities.Statements.Sequence> dans l'en-tête. Sequence est la valeur par défaut. La valeur peut être modifiée dans la grille Propriétés ou directement dans l'en-tête du concepteur d'activités.<br /><br /> Bien que la propriété <xref:System.Activities.Activity.DisplayName%2A> ne soit pas strictement obligatoire, il est recommandé d'en utiliser une.|
 
 ## <a name="see-also"></a>Voir aussi
 
 - [Organigramme](../workflow-designer/flowchart-activity-designer.md)
-- [Flux de contrôle](../workflow-designer/control-flow-activity-designers.md)
+- [Workflow de contrôle](../workflow-designer/control-flow-activity-designers.md)

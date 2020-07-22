@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 0918ee1fc0676f37445f14b078c48c365144644c
-ms.sourcegitcommit: 8217b2ff48028f43c05c5590a293d358897c8651
+ms.openlocfilehash: 1a840d4aca1a6eda3f549278e36a1d64725cd8ad
+ms.sourcegitcommit: 363f3e6e30dd54366ade0d08920755da5951535c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/20/2020
-ms.locfileid: "86476015"
+ms.lasthandoff: 07/21/2020
+ms.locfileid: "86869618"
 ---
 # <a name="configure-unit-tests-by-using-a-runsettings-file"></a>Configurer des tests unitaires à l’aide d’un fichier *. RunSettings*
 
@@ -238,9 +238,7 @@ Cette option peut vous aider à isoler un test problématique qui provoque un bl
 </DataCollector>
 ```
 
-## <a name="testrunparameters-element"></a>Élément TestRunParameters
-
-Les paramètres de série de tests offrent un moyen de définir des variables et des valeurs qui sont disponibles pour les tests au moment de l’exécution. 
+### <a name="testrunparameters"></a>TestRunParameters
 
 ```xml
 <TestRunParameters>
@@ -249,17 +247,20 @@ Les paramètres de série de tests offrent un moyen de définir des variables et
 </TestRunParameters>
 ```
 
-Dans votre code de test, accédez aux paramètres à l’aide de la <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext.Properties%2A?displayProperty=nameWithType> propriété :
+Les paramètres de série de tests offrent un moyen de définir des variables et des valeurs qui sont disponibles pour les tests au moment de l’exécution. Accédez aux paramètres à l’aide de la <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext.Properties%2A?displayProperty=nameWithType> propriété MSTest (ou de nunit [TestContext](https://docs.nunit.org/articles/nunit/writing-tests/TestContext.html)) :
 
 ```csharp
-[TestMethod]
+private string _appUrl;
+public TestContext TestContext { get; set; }
+
+[TestMethod] // [Test] for NUnit
 public void HomePageTest()
 {
-    string appURL = TestContext.Properties["webAppUrl"];
+    string _appURL = TestContext.Properties["webAppUrl"];
 }
 ```
 
-Pour utiliser les paramètres de série de tests, ajoutez un champ <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext> privé et une propriété <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext> publique à votre classe de test.
+Pour utiliser les paramètres de série de tests, ajoutez une <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext> propriété publique à votre classe de test.
 
 ## <a name="loggerrunsettings-element"></a>Élément LoggerRunSettings
 

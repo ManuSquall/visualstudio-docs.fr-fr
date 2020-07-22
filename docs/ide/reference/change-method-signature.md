@@ -1,7 +1,7 @@
 ---
 title: Changer la signature de la méthode
 description: Ajoutez, supprimez ou modifiez l’ordre des paramètres d’une méthode. Cliquez avec le bouton droit sur la méthode, sélectionnez Actions rapides et refactorisations, puis sélectionnez Changer la signature.
-ms.date: 06/08/2020
+ms.date: 07/20/2020
 ms.topic: reference
 author: mikadumont
 ms.author: midumont
@@ -14,12 +14,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 947f44700ef43815eb29bc3e90563afe1be68f2b
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: 2d91406b65950515afb3659c0d5918841465b2fc
+ms.sourcegitcommit: 363f3e6e30dd54366ade0d08920755da5951535c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85283872"
+ms.lasthandoff: 07/21/2020
+ms.locfileid: "86869566"
 ---
 # <a name="change-a-method-signature-refactoring"></a>Changer une signature de méthode (refactorisation)
 
@@ -75,18 +75,9 @@ Cette refactorisation s’applique à :
 
     ![Boîte de dialogue Ajouter un paramètre-C #](media/add-parameter-dialog.png)
 
-5. Lorsque vous avez terminé d’ajouter un paramètre, cliquez sur le bouton **OK** pour afficher un aperçu des modifications.
+5. Lorsque vous avez terminé d’ajouter un paramètre, cliquez sur **OK** pour afficher un aperçu des modifications.
 
     ![Boîte de dialogue Modifier la signature](media/change-signature.png)
-
-6. Appuyez sur **OK** pour afficher les modifications.
-   - C# :
-
-      ![Résultat du changement de la signature (C#)](media/changesignature-result-cs.png)
-
-   - Visual Basic :
-
-      ![Résultat du changement de la signature (Visual Basic)](media/changesignature-result-vb.png)
 
 ## <a name="see-also"></a>Voir aussi
 

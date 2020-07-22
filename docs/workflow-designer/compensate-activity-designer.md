@@ -5,21 +5,21 @@ ms.topic: reference
 f1_keywords:
 - System.Activities.Statements.Compensate.UI
 ms.assetid: 7347c947-bfff-4bad-becd-5cd23e7b24cd
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 65203663214e6bc82a4a7b20af9caa25bfd98ee4
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 5332b6d9ec087f4e1b127d93563dc0f2fe5fdd15
+ms.sourcegitcommit: 186c0c250d85ac74274fa1e438b4c7c7108d8a36
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72650653"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "86876149"
 ---
 # <a name="compensate-activity-designer"></a>Concepteur d'activités Compensate
 
-Le concepteur d’activités **Compensate** est utilisé pour créer et configurer une activité <xref:System.Activities.Statements.Compensate>.
+Le concepteur d’activités **Compensate** est utilisé pour créer et configurer une <xref:System.Activities.Statements.Compensate> activité.
 
 ## <a name="the-compensate-activity"></a>Activité Compensate
 
@@ -29,15 +29,15 @@ L'objet <xref:System.Activities.Statements.CompensationToken> spécifié par la 
 
 ### <a name="using-the-compensate-activity-designer"></a>Utilisation du concepteur d'activités Compensate
 
-Le concepteur d’activités **Compensate** se trouve dans la catégorie **transaction** de la **boîte à outils**. Pour ouvrir la **boîte à outils**, sélectionnez l’onglet **boîte à outils** sur le côté gauche de la concepteur de flux de travail. Vous pouvez également sélectionner **boîte à outils** dans le menu **affichage** ou appuyer sur **CTRL** +**ALT** +**X**.
+Le concepteur d’activités **Compensate** se trouve dans la catégorie **transaction** de la **boîte à outils**. Pour ouvrir la **boîte à outils**, sélectionnez l’onglet **boîte à outils** sur le côté gauche de la concepteur de flux de travail. Vous pouvez également sélectionner **boîte à outils** dans le menu **affichage** ou appuyer sur **CTRL** + **ALT** + **X**.
 
-Le concepteur d’activités **Compensate** peut être déplacé de la **boîte à outils** et déposé dans l’aire de concepteur de flux de travail, là où les activités sont placées, par exemple à l’intérieur d’une <xref:System.Activities.Statements.Sequence>. La suppression du concepteur d’activités crée une activité <xref:System.Activities.Statements.Compensate> avec un <xref:System.Activities.Activity.DisplayName%2A> par défaut de compenser. La valeur <xref:System.Activities.Activity.DisplayName%2A> peut être modifiée dans l’en-tête du concepteur d’activités **Compensate** ou dans la zone **DisplayName** de la grille des propriétés.
+Le concepteur d’activités **Compensate** peut être déplacé de la **boîte à outils** et déposé dans l’aire de concepteur de flux de travail, là où les activités sont placées, par exemple dans un <xref:System.Activities.Statements.Sequence> . La suppression du concepteur d’activités crée une <xref:System.Activities.Statements.Compensate> activité avec <xref:System.Activities.Activity.DisplayName%2A> compenser par défaut. La <xref:System.Activities.Activity.DisplayName%2A> valeur peut être modifiée dans l’en-tête du concepteur d’activités **Compensate** ou dans la zone **DisplayName** de la grille des propriétés.
 
 ### <a name="the-compensate-properties"></a>Propriétés de Compensate
 
-Le tableau suivant présente les propriétés de <xref:System.Activities.Statements.CancellationScope> et décrit comment elles sont utilisées dans le concepteur. La propriété <xref:System.Activities.Activity.DisplayName%2A> peut être modifiée dans la grille des propriétés ou sur Concepteur de flux de travail surface. Modifiez la propriété <xref:System.Activities.Statements.Compensate.Target%2A> dans la grille des propriétés.
+Le tableau suivant présente les propriétés de <xref:System.Activities.Statements.CancellationScope> et décrit comment elles sont utilisées dans le concepteur. La <xref:System.Activities.Activity.DisplayName%2A> propriété peut être modifiée dans la grille des propriétés ou sur Concepteur de flux de travail surface. Modifiez la <xref:System.Activities.Statements.Compensate.Target%2A> propriété dans la grille des propriétés.
 
-|Nom de propriété|Obligatoire|Utilisation|
+|Nom de la propriété|Obligatoire|Usage|
 |-|--------------|-|
 |<xref:System.Activities.Activity.DisplayName%2A>|False|Spécifie le nom convivial facultatif de l'activité <xref:System.Activities.Statements.Compensate>. La valeur par défaut est Compensate.|
 |<xref:System.Activities.Statements.Compensate.Target%2A>|True|Spécifie l'objet <xref:System.Activities.InArgument%601> qui contient l'objet <xref:System.Activities.Statements.CompensationToken> pour cette activité <xref:System.Activities.Statements.Compensate>.|
@@ -46,6 +46,6 @@ Le tableau suivant présente les propriétés de <xref:System.Activities.Stateme
 
 - [Transaction](../workflow-designer/transaction-activity-designers.md)
 - [CompensableActivity](../workflow-designer/compensableactivity-activity-designer.md)
-- [Concepteur d’activités Compensate](../workflow-designer/compensate-activity-designer.md)
-- [Confirm](../workflow-designer/confirm-activity-designer.md)
+- [Concepteur d'activités Compensate](../workflow-designer/compensate-activity-designer.md)
+- [Répond](../workflow-designer/confirm-activity-designer.md)
 - [TransactionScope](../workflow-designer/transactionscope-activity-designer.md)

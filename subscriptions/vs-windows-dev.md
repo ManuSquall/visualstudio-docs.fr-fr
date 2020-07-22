@@ -7,12 +7,12 @@ ms.assetid: 588480a3-8806-4ea5-9915-c25974770069
 ms.date: 04/20/2020
 ms.topic: how-to
 description: Découvrez le compte de développeur Windows inclus dans votre abonnement Visual Studio.
-ms.openlocfilehash: 659c2b1d792eb02d74ac5d52773f81bdda198a7a
-ms.sourcegitcommit: c2b3bf0de44cd379fd1ad5110385021d0ec950ed
+ms.openlocfilehash: 02d968875bec5d23fe25daaea5d2829f29a67111
+ms.sourcegitcommit: 186c0c250d85ac74274fa1e438b4c7c7108d8a36
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "86301458"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "86875473"
 ---
 # <a name="windows-developer-account-in-visual-studio-subscriptions"></a>Compte de développeur Windows dans les abonnements Visual Studio
 Votre compte de développeur Windows, inclus avec certains abonnements Visual Studio, vous permet de proposer des applications Windows gratuites et payantes dans le Windows Store.
@@ -52,7 +52,7 @@ Nous vous recommandons d’ouvrir une nouvelle fenêtre de navigateur « privé
 | Visual Studio Enterprise, Visual Studio Professional (cloud mensuel) | Azure                                       | Non disponible                                                           |N/D|
 ||
 
-<sup>1</sup>  *comprend : la revente interdite (NFR), FTE, Visual Studio Industry Partner (VSIP), BizSpark, MCT Software & Services Developer. Exclut : Microsoft Partner Network (MPN), imaginez, MVP (Most Valuable Professional), RD (Regional Director), MCT Software & services.*
+<sup>1</sup>  *comprend : la revente interdite (NFR), FTE, Visual Studio Industry Partner (VSIP), BizSpark, MCT Software & services DEVELOPer, MVP (Most Valuable Professional), Bureau régional. Exclut : Microsoft Partner Network (MPN), imagine, MCT Software & services.*
 
 > [!NOTE]
 > Microsoft ne propose plus d’abonnements annuels Visual Studio Professional et Visual Studio Enterprise dans les abonnements cloud. L’expérience des clients n’en sera pas altérée ; il leur sera par ailleurs toujours possible de renouveler, d’augmenter, de diminuer ou d’annuler leur abonnement. Les nouveaux clients sont encouragés à accéder à [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) pour explorer les différentes options d’achat de Visual Studio.
@@ -73,6 +73,6 @@ Vous n’êtes pas sûr de l’abonnement que vous utilisez ?  Connectez-vous à
 
 ## <a name="next-steps"></a>Étapes suivantes
 Veillez à activer ces avantages intéressants pour tirer le meilleur parti de votre abonnement Visual Studio :
-- [Visual Studio](vs-ide-benefit.md)
+- [Visual Studio](vs-ide-benefit.md)
 - [Azure DevOps](vs-azure-devops.md)
 - [Crédit individuel Azure DevTest](vs-azure.md)

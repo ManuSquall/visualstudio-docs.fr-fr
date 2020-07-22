@@ -1,6 +1,6 @@
 ---
 title: Options de ligne de commande VSTest.Console.exe
-ms.date: 07/12/2018
+ms.date: 07/17/2020
 ms.topic: reference
 helpviewer_keywords:
 - vstest.console.exe
@@ -10,12 +10,12 @@ author: mikejo5000
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: eaf282ca647310010c2e75e7279f11cbc90aad76
-ms.sourcegitcommit: 5e82a428795749c594f71300ab03a935dc1d523b
+ms.openlocfilehash: 8264aebcbced16f95c177d255e226cfffdbee0ce
+ms.sourcegitcommit: 363f3e6e30dd54366ade0d08920755da5951535c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/10/2020
-ms.locfileid: "86211560"
+ms.lasthandoff: 07/21/2020
+ms.locfileid: "86869592"
 ---
 # <a name="vstestconsoleexe-command-line-options"></a>Options de ligne de commande VSTest.Console.exe
 
@@ -35,7 +35,7 @@ Le tableau suivant répertorie toutes les options de *VSTest.Console.exe*, ainsi
 | Option | Description |
 |---|---|
 |**[*noms de fichiers de test*]**|Exécutez les tests à partir des fichiers spécifiés. Séparez les noms de fichiers de test par des espaces.<br />Exemples : `mytestproject.dll`, `mytestproject.dll myothertestproject.exe`|
-|**/Settings:[*nom de fichier*]**|Exécutez les tests avec d'autres paramètres tels que les collecteurs de données.<br />Exemple : `/Settings:Local.RunSettings`|
+|**/Settings:[*nom de fichier*]**|Exécutez les tests avec d'autres paramètres tels que les collecteurs de données. Pour plus d’informations, consultez [configurer des tests unitaires à l’aide d’un fichier. RunSettings](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md)<br />Exemple : `/Settings:local.runsettings`|
 |**/Tests:[*nom du test*]**|Exécutez les tests avec les noms qui contiennent les valeurs fournies. Pour fournir plusieurs valeurs, séparez-les par des virgules.<br />Exemple : `/Tests:TestMethod1,testMethod2`<br />L’option de ligne de commande **/Tests** ne peut pas être utilisée avec l’option de ligne de commande **/TestCaseFilter**.|
 |**/Parallel**|Spécifie que les tests doivent être exécutés en parallèle. Par défaut, tout ou partie des cœurs disponibles sur la machine peuvent être utilisés. Vous pouvez configurer le nombre de cœurs à utiliser dans un fichier de paramètres.|
 |**/Enablecodecoverage**|Active l'adaptateur de données de diagnostic CodeCoverage dans la série de tests.<br />Les paramètres par défaut sont utilisés s'ils ne sont pas spécifiés à l'aide du fichier de paramètres.|
