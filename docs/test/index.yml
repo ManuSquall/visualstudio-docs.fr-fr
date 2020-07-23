@@ -10,12 +10,12 @@ metadata:
   ms.author: mikejo
   manager: jillfra
   ms.date: 03/23/2020
-  ms.openlocfilehash: 345cc23893a335ba7876ca3d6aef202beaac693b
-  ms.sourcegitcommit: ad13d7b427303b0e801d54dc521dfb3c1e2bf6e4
+  ms.openlocfilehash: 15b531b3c74a5ad0f18841619a0d80ea44ca913e
+  ms.sourcegitcommit: 363f3e6e30dd54366ade0d08920755da5951535c
   ms.translationtype: HT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 07/15/2020
-  ms.locfileid: "86405392"
+  ms.lasthandoff: 07/21/2020
+  ms.locfileid: "86869579"
 landingContent:
 - title: À propos des outils de test
   linkLists:
@@ -47,7 +47,7 @@ landingContent:
     links:
     - text: Couverture du code - Déterminer la quantité de code actuellement testé
       url: using-code-coverage-to-determine-how-much-code-is-being-tested.md
-    - text: Microsoft Fakes - Isoler le code testé
+    - text: Microsoft Fakes – Isoler le code testé
       url: isolating-code-under-test-with-microsoft-fakes.md
     - text: Interface utilisateur codée (dépréciée)
       url: use-ui-automation-to-test-your-code.md
