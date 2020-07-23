@@ -1,7 +1,7 @@
 - name: Documentation sur l’IDE Visual Studio
   href: ide/index.yml
   pdf_name: Visual Studio documentation
-- name: Vue d'ensemble
+- name: Vue d’ensemble
   expanded: true
   items:
     - name: À propos de Visual Studio
@@ -82,6 +82,8 @@
               href: install/update-a-network-installation-of-visual-studio.md
             - name: Mettre à jour Visual Studio tout en étant sur une ligne de base de maintenance
               href: install/update-servicing-baseline.md
+            - name: Mettre à jour Visual Studio avec une disposition hors connexion minimale
+              href: install/update-minimal-layout.md
             - name: Contrôler les mises à jour applicables aux déploiements de Visual Studio
               href: install/controlling-updates-to-visual-studio-deployments.md
             - name: Gérer les changements de charge utile de package
@@ -948,7 +950,7 @@
       href: ide/reference/accessibility-tips-and-tricks.md
     - name: Services et produits d'accessibilité de Microsoft
       href: ide/reference/accessibility-products-and-services-from-microsoft.md
-- name: Référence
+- name: Informations de référence
   items:
     - name: Raccourcis clavier
       items:
