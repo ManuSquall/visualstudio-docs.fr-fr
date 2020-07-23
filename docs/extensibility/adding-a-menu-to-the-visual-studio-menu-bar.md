@@ -11,12 +11,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 39dee051991efe05b9a661ce1d213e71b456590b
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.openlocfilehash: 61321555a6896fad926d2ee38c5d73d50801d6b9
+ms.sourcegitcommit: cb0c6e55ae560960a493df9ab56e3e9d9bc50100
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "85904251"
+ms.lasthandoff: 07/23/2020
+ms.locfileid: "86972346"
 ---
 # <a name="add-a-menu-to-the-visual-studio-menu-bar"></a>Ajouter un menu à la barre de menus de Visual Studio
 
@@ -26,7 +26,7 @@ Avant d’ajouter un nouveau menu à la barre de menus de Visual Studio, déterm
 
 Les menus sont déclarés dans le fichier *. vsct* du projet. Pour plus d’informations sur les menus et les fichiers *. vsct* , consultez [commandes, menus et barres d’outils](../extensibility/internals/commands-menus-and-toolbars.md).
 
-En suivant cette procédure pas à pas, vous pouvez créer un menu nommé **TestMenu** qui contient une commande.
+En suivant cette procédure pas à pas, vous pouvez créer un menu nommé **test** qui contient une commande.
 
 :::moniker range=">=vs-2019"
 > [!NOTE]
@@ -41,7 +41,17 @@ En suivant cette procédure pas à pas, vous pouvez créer un menu nommé **Test
 
 1. Créez un projet VSIX nommé `TopLevelMenu` . Vous pouvez trouver le modèle de projet VSIX dans la boîte de dialogue **nouveau projet** en recherchant « VSIX ».  Pour plus d’informations, consultez [créer une extension à l’aide d’une commande de menu](../extensibility/creating-an-extension-with-a-menu-command.md).
 
+::: moniker range="vs-2017"
+
 2. Lorsque le projet s’ouvre, ajoutez un modèle d’élément de commande personnalisé nommé **test**. Dans le **Explorateur de solutions**, cliquez avec le bouton droit sur le nœud du projet et sélectionnez **Ajouter**  >   **un nouvel élément**. Dans la boîte de dialogue **Ajouter un nouvel élément** , accédez à **Visual C#/extensibilité** et sélectionnez **commande personnalisée**. Dans le champ **nom** en bas de la fenêtre, remplacez le nom du fichier de commandes par *TestCommand.cs*.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+2. Lorsque le projet s’ouvre, ajoutez un modèle d’élément de commande personnalisé nommé **test**. Dans le **Explorateur de solutions**, cliquez avec le bouton droit sur le nœud du projet et sélectionnez **Ajouter**  >   **un nouvel élément**. Dans la boîte de dialogue **Ajouter un nouvel élément** , accédez à **Visual C#/extensibilité** et sélectionnez **commande**. Dans le champ **nom** en bas de la fenêtre, remplacez le nom du fichier de commandes par *TestCommand.cs*.
+
+::: moniker-end
 
 ## <a name="create-a-menu-on-the-ide-menu-bar"></a>Créer un menu dans la barre de menus de l’IDE
 
@@ -49,13 +59,13 @@ En suivant cette procédure pas à pas, vous pouvez créer un menu nommé **Test
 
 1. Dans **Explorateur de solutions**, ouvrez *TestCommandPackage. vsct*.
 
-    À la fin du fichier se trouve un \<Symbols> nœud qui contient plusieurs \<GuidSymbol> nœuds. Dans le nœud nommé guidTestCommandPackageCmdSet, ajoutez un nouveau symbole, comme suit :
+    À la fin du fichier se trouve un `<Symbols>` nœud qui contient plusieurs `<GuidSymbol>` nœuds. Dans le nœud nommé `guidTestCommandPackageCmdSet` , ajoutez un nouveau symbole, comme suit :
 
    ```xml
    <IDSymbol name="TopLevelMenu" value="0x1021"/>
    ```
 
-2. Créez un \<Menus> nœud vide dans le \<Commands> nœud, juste avant \<Groups> . Dans le \<Menus> nœud, ajoutez un \<Menu> nœud, comme suit :
+2. Créez un `<Menus>` nœud vide dans le `<Commands>` nœud, juste avant `<Groups>` . Dans le `<Menus>` nœud, ajoutez un `<Menu>` nœud, comme suit :
 
    ```xml
    <Menus>
@@ -63,8 +73,7 @@ En suivant cette procédure pas à pas, vous pouvez créer un menu nommé **Test
            <Parent guid="guidSHLMainMenu"
                    id="IDG_VS_MM_TOOLSADDINS" />
            <Strings>
-             <ButtonText>TestMenu</ButtonText>
-             <CommandName>TestMenu</CommandName>
+             <ButtonText>Test Menu</ButtonText>
            </Strings>
        </Menu>
    </Menus>
@@ -74,9 +83,9 @@ En suivant cette procédure pas à pas, vous pouvez créer un menu nommé **Test
 
     Les `guid` `id` valeurs et du parent positionnent le menu sur la section de la barre de menus de Visual Studio qui contient les menus outils et compléments.
 
-    La valeur de la `CommandName` chaîne indique que le texte doit s’afficher dans l’élément de menu.
+    L' `<ButtonText>` élément spécifie que le texte doit apparaître dans l’élément de menu.
 
-3. Dans la \<Groups> section, recherchez le \<Group> et modifiez l' \<Parent> élément pour qu’il pointe vers le menu que nous venons d’ajouter :
+3. Dans la `<Groups>` section, recherchez le `<Group>` et modifiez l' `<Parent>` élément pour qu’il pointe vers le menu que nous venons d’ajouter :
 
    ```xml
    <Groups>
@@ -94,13 +103,13 @@ En suivant cette procédure pas à pas, vous pouvez créer un menu nommé **Test
 
 1. Dans **Explorateur de solutions**, ouvrez *TopLevelMenuPackage. vsct*.
 
-    À la fin du fichier se trouve un \<Symbols> nœud qui contient plusieurs \<GuidSymbol> nœuds. Dans le nœud nommé guidTopLevelMenuPackageCmdSet, ajoutez un nouveau symbole, comme suit :
+    À la fin du fichier se trouve un `<Symbols>` nœud qui contient plusieurs `<GuidSymbol>` nœuds. Dans le nœud nommé `guidTopLevelMenuPackageCmdSet` , ajoutez un nouveau symbole, comme suit :
 
    ```xml
    <IDSymbol name="TopLevelMenu" value="0x1021"/>
    ```
 
-2. Créez un \<Menus> nœud vide dans le \<Commands> nœud, juste avant \<Groups> . Dans le \<Menus> nœud, ajoutez un \<Menu> nœud, comme suit :
+2. Créez un `<Menus>` nœud vide dans le `<Commands>` nœud, juste avant `<Groups>` . Dans le `<Menus>` nœud, ajoutez un `<Menu>` nœud, comme suit :
 
    ```xml
    <Menus>
@@ -108,8 +117,7 @@ En suivant cette procédure pas à pas, vous pouvez créer un menu nommé **Test
            <Parent guid="guidSHLMainMenu"
                    id="IDG_VS_MM_TOOLSADDINS" />
            <Strings>
-             <ButtonText>TestMenu</ButtonText>
-             <CommandName>TestMenu</CommandName>
+             <ButtonText>Test Menu</ButtonText>
            </Strings>
        </Menu>
    </Menus>
@@ -119,9 +127,9 @@ En suivant cette procédure pas à pas, vous pouvez créer un menu nommé **Test
 
     Les `guid` `id` valeurs et du parent positionnent le menu sur la section de la barre de menus de Visual Studio qui contient les menus outils et compléments.
 
-    La valeur de la `CommandName` chaîne indique que le texte doit s’afficher dans l’élément de menu.
+    L' `<ButtonText>` élément spécifie que le texte doit apparaître dans l’élément de menu.
 
-3. Dans la \<Groups> section, recherchez le \<Group> et modifiez l' \<Parent> élément pour qu’il pointe vers le menu que nous venons d’ajouter :
+3. Dans la `<Groups>` section, recherchez le `<Group>` et modifiez l' `<Parent>` élément pour qu’il pointe vers le menu que nous venons d’ajouter :
 
    ```xml
    <Groups>
@@ -135,7 +143,9 @@ En suivant cette procédure pas à pas, vous pouvez créer un menu nommé **Test
 
 ::: moniker-end
 
-4. Recherchez la section `Buttons`. Notez que le [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] modèle de package a généré un `Button` élément dont le parent a la valeur `MyMenuGroup` . Par conséquent, cette commande s’affiche dans votre menu.
+4. Dans la `<Buttons>` section, recherchez le `<Button>` nœud. Ensuite, dans le `<Strings>` nœud, remplacez l' `<ButtonText>` élément par `Test Command` .
+
+    Notez que le [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] modèle de package a généré un `Button` élément dont le parent a la valeur `MyMenuGroup` . Par conséquent, cette commande s’affiche dans votre menu.
 
 ## <a name="build-and-test-the-extension"></a>Générer et tester l’extension
 
@@ -143,19 +153,19 @@ En suivant cette procédure pas à pas, vous pouvez créer un menu nommé **Test
 
 ::: moniker range="vs-2017"
 
-2. La barre de menus de l’instance expérimentale doit contenir un menu **TestMenu** .
+2. La barre de menus de l’instance expérimentale doit contenir un menu de **menu de test** .
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-2. Le menu **Extensions** de l’instance expérimentale doit contenir un menu **TestMenu** .
+2. Le menu **Extensions** de l’instance expérimentale doit contenir un menu de **menu test** .
 
 ::: moniker-end
 
-3. Dans le menu **TestMenu** , cliquez sur **appeler la commande de test**.
+3. Dans le menu **test** , cliquez sur **commande de test**.
 
-     Une boîte de message doit apparaître et afficher le message « package test dans TopLevelMenu. test. MenuItemCallback () ».
+    Une boîte de message doit apparaître et afficher le message « test dans TopLevelMenu. test. MenuItemCallback () ».
 
 ## <a name="see-also"></a>Voir aussi
 

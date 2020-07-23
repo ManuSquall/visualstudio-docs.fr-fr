@@ -13,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9f9e9963e05b0991beaea7da4027f4db3df4e4eb
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.openlocfilehash: 7c8639ede4a01157718f0ab1a1514927e620fa8d
+ms.sourcegitcommit: cb0c6e55ae560960a493df9ab56e3e9d9bc50100
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "85903921"
+ms.lasthandoff: 07/23/2020
+ms.locfileid: "86972333"
 ---
 # <a name="create-an-extension-with-a-menu-command"></a>Créer une extension avec une commande de menu
 
@@ -32,7 +32,17 @@ Cette procédure pas à pas montre comment créer une extension avec une command
 
 1. Créez un projet VSIX nommé **FirstMenuCommand**. Vous pouvez trouver le modèle de projet VSIX dans la boîte de dialogue **nouveau projet** en recherchant « VSIX ».
 
+::: moniker range="vs-2017"
+
 2. Lorsque le projet s’ouvre, ajoutez un modèle d’élément de commande personnalisé nommé **FirstCommand**. Dans le **Explorateur de solutions**, cliquez avec le bouton droit sur le nœud du projet et sélectionnez **Ajouter**  >  **un nouvel élément**. Dans la boîte de dialogue **Ajouter un nouvel élément** , accédez à extensibilité **Visual C#**  >  **Extensibility** et sélectionnez **commande personnalisée**. Dans le champ **nom** en bas de la fenêtre, remplacez le nom du fichier de commandes par *FirstCommand.cs*.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+2. Lorsque le projet s’ouvre, ajoutez un modèle d’élément de commande personnalisé nommé **FirstCommand**. Dans le **Explorateur de solutions**, cliquez avec le bouton droit sur le nœud du projet et sélectionnez **Ajouter**  >  **un nouvel élément**. Dans la boîte de dialogue **Ajouter un nouvel élément** , accédez à extensibilité **Visual C#**  >  **Extensibility** et sélectionnez **commande**. Dans le champ **nom** en bas de la fenêtre, remplacez le nom du fichier de commandes par *FirstCommand.cs*.
+
+::: moniker-end
 
 3. Générez le projet et commencez le débogage.
 
@@ -50,7 +60,7 @@ Cette procédure pas à pas montre comment créer une extension avec une command
 
 ::: moniker-end
 
-Maintenant, accédez au menu **Outils** de l’instance expérimentale. La commande **Invoke FirstCommand** doit s’afficher. À ce stade, la commande affiche une boîte de message indiquant **FirstCommandPackage dans FirstMenuCommand. FirstCommand. MenuItemCallback ()**. Nous verrons comment démarrer le bloc-notes à partir de cette commande dans la section suivante.
+Maintenant, accédez au menu **Outils** de l’instance expérimentale. La commande **Invoke FirstCommand** doit s’afficher. À ce stade, la commande affiche une boîte de message indiquant **FirstCommand dans FirstMenuCommand. FirstCommand. MenuItemCallback ()**. Nous verrons comment démarrer le bloc-notes à partir de cette commande dans la section suivante.
 
 ## <a name="change-the-menu-command-handler"></a>Modifier le gestionnaire de commandes de menu
 
@@ -77,11 +87,13 @@ Maintenant, accédez au menu **Outils** de l’instance expérimentale. La comma
     }
     ```
 
-3. Supprimez la `MenuItemCallback` méthode et ajoutez une `StartNotepad` méthode, qui démarre simplement le bloc-notes :
+3. Supprimez la `Execute` méthode et ajoutez une `StartNotepad` méthode, qui démarre simplement le bloc-notes :
 
     ```csharp
     private void StartNotepad(object sender, EventArgs e)
     {
+        ThreadHelper.ThrowIfNotOnUIThread();
+
         Process proc = new Process();
         proc.StartInfo.FileName = "notepad.exe";
         proc.Start();
@@ -102,7 +114,7 @@ Vous pouvez accéder à ce script de deux manières :
 
 2. À partir de la ligne de commande, exécutez ce qui suit :
 
-    ```xml
+    ```cmd
     <VSSDK installation>\VisualStudioIntegration\Tools\Bin\CreateExpInstance.exe /Reset /VSInstance=<version> /RootSuffix=Exp && PAUSE
 
     ```
@@ -113,7 +125,7 @@ Maintenant que votre extension d’outil fonctionne comme vous le souhaitez, il 
 
 Vous pouvez trouver le fichier *. vsix* pour cette extension dans le répertoire bin *FirstMenuCommand* . En particulier, en supposant que vous ayez créé la configuration Release, elle sera dans :
 
-*\<code directory>\FirstMenuCommand\FirstMenuCommand\bin\Release\ FirstMenuCommand. vsix*
+*\<code directory>\FirstMenuCommand\FirstMenuCommand\bin\Release\FirstMenuCommand.vsix*
 
 Pour installer l’extension, votre ami doit fermer toutes les instances ouvertes de Visual Studio, puis double-cliquer sur le fichier *. vsix* , qui affiche le **programme d’installation VSIX**. Les fichiers sont copiés dans le répertoire *%LocalAppData%\Microsoft\VisualStudio \<version> \Extensions*
 

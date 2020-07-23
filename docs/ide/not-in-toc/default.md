@@ -1,6 +1,6 @@
 ---
 title: Page par défaut de l’Aide F1
-ms.date: 02/28/2018
+ms.date: 07/20/2020
 ms.topic: troubleshooting
 robots: noindex,nofollow
 f1_keywords:
@@ -9,12 +9,12 @@ f1_keywords:
 manager: jillfra
 author: TerryGLee
 ms.author: tglee
-ms.openlocfilehash: 48c93cf8abeb573a3a75e6825a8400355c133f2b
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 3fabd640b503c480662239dac4920aa9875d62c9
+ms.sourcegitcommit: 239a8ed2c4474769297b42b5ce1f7c8694d62856
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75597007"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "86944566"
 ---
 # <a name="f1-help"></a>Aide (F1)
 
@@ -22,11 +22,12 @@ Nous n’avons apparemment pas trouvé ce que vous recherchiez ; nous en sommes 
 
 ## <a name="cursor-position"></a>Position du curseur
 
-Si vous recherchez de l’aide (F1) sur un mot clé ou sur un nom d’API, veillez à positionner le curseur sur le mot ou juste à droite avant d’appuyer sur **F1**. Si cela ne fonctionne toujours pas, choisissez dans la liste des [liens utiles](#useful-links) ou effectuez une recherche sur https://docs.microsoft.com.
+Si vous recherchez de l’aide via la touche F1 sur un mot clé ou un nom d’API, veillez à positionner le curseur à l’intérieur ou juste à droite du mot avant d’appuyer sur **F1**. Si cela ne fonctionne toujours pas, sélectionnez dans la liste [des liens utiles](#useful-links) suivante ou effectuez une recherche sur https://docs.microsoft.com .
 
 ## <a name="useful-links"></a>Liens utiles
 
 - Recherchez la documentation de référence sur le [navigateur de l’API .NET](/dotnet/api/).
+- Parcourez une liste d’Articles de la base de connaissances sur la page de [résolution des problèmes de Visual Studio](/troubleshoot/visualstudio/welcome-visual-studio/) .
 - Pour de l’aide sur C#, consultez le [Guide de C#](/dotnet/csharp/index).
 - Pour de l’aide sur Visual Basic, consultez le [Guide de Visual Basic](/dotnet/visual-basic/).
 - Pour de l’aide sur F#, consultez le [Guide de F#](/dotnet/fsharp/).

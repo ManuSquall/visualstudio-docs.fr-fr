@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 0871361d25131b493838bac12945a64a19a0f173
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.openlocfilehash: d79c9d0d1b9c62d5afd78696ee2654c4eecdbe57
+ms.sourcegitcommit: cb0c6e55ae560960a493df9ab56e3e9d9bc50100
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "85543726"
+ms.lasthandoff: 07/23/2020
+ms.locfileid: "86972359"
 ---
 # <a name="create-a-c-extension-for-python"></a>Créer une extension C++ pour Python
 
@@ -122,7 +122,7 @@ Suivez les instructions de cette section pour créer deux projets C++ identiques
 
     | Onglet | Propriété | Valeur |
     | --- | --- | --- |
-    | **Généralités** | **Général**  >  **Nom** de la cible | Spécifiez le nom du module comme vous voulez y faire référence à partir de Python dans les instructions `from...import`. Vous utilisez ce même nom dans le code C++ lors de la définition du module pour Python. Si vous souhaitez utiliser le nom du projet comme nom de module, laissez la valeur par défaut **$(ProjectName)**. |
+    | **Général** | **Général**  >  **Nom** de la cible | Spécifiez le nom du module comme vous voulez y faire référence à partir de Python dans les instructions `from...import`. Vous utilisez ce même nom dans le code C++ lors de la définition du module pour Python. Si vous souhaitez utiliser le nom du projet comme nom de module, laissez la valeur par défaut **$(ProjectName)**. |
     | | **Général**  >  **Extension cible** | **.pyd** |
     | | **Valeurs par défaut**  >  du projet **Type de configuration** | **Bibliothèque dynamique (.dll)** |
     | **C/C++**  >  **Général** | **Autres répertoires Include** | Ajoutez le dossier *include* Python en fonction de votre installation, par exemple `c:\Python36\include`.  |
@@ -183,7 +183,7 @@ Si vous utilisez Python 2.7, reportez-vous plutôt aux rubriques [Extending Pyth
     #include <Python.h>
     ```
 
-1. Modifiez la méthode `tanh_impl` pour accepter et retourner des types Python (autrement dit, un `PyOjbect*`) :
+1. Modifiez la méthode `tanh_impl` pour accepter et retourner des types Python (autrement dit, un `PyObject*`) :
 
     ```cpp
     PyObject* tanh_impl(PyObject *, PyObject* o) {
