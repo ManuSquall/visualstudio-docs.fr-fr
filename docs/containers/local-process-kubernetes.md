@@ -1,17 +1,17 @@
 ---
-title: Utiliser Processus local avec Kubernetes avec Visual Studio (préversion)
+title: Utiliser un processus local avec Kubernetes avec Visual Studio (préversion)
 ms.technology: vs-azure
 ms.date: 06/02/2020
 ms.topic: conceptual
 description: Découvrez comment utiliser le processus local avec Kubernetes avec Visual Studio pour connecter votre ordinateur de développement à un cluster Kubernetes
 keywords: Processus local avec Kubernetes, Azure Dev Spaces, les espaces de développement, docker, Kubernetes, Azure, conteneurs
 monikerRange: '>=vs-2019'
-ms.openlocfilehash: b057670f60554a066356ad34525f0276d8dc826c
-ms.sourcegitcommit: 510a928153470e2f96ef28b808f1d038506cce0c
+ms.openlocfilehash: fd2e456f1ffdaaea90c0594b73d5367e51c8f655
+ms.sourcegitcommit: debf31a8fb044f0429409bd0587cdb7d5ca6f836
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/17/2020
-ms.locfileid: "86454322"
+ms.lasthandoff: 07/24/2020
+ms.locfileid: "87133994"
 ---
 # <a name="use-local-process-with-kubernetes-preview"></a>Utiliser un processus local avec Kubernetes (préversion)
 

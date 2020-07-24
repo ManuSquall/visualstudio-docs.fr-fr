@@ -6,12 +6,12 @@ ms.topic: conceptual
 description: Décrit les processus d’utilisation de Processus local avec Kubernetes pour connecter votre ordinateur de développement à votre cluster Kubernetes
 keywords: Processus local avec Kubernetes, docker, Kubernetes, Azure, conteneurs
 monikerRange: '>=vs-2019'
-ms.openlocfilehash: adde9d8ecab93bdb6f0aebbd74730ef60bd80cf6
-ms.sourcegitcommit: 510a928153470e2f96ef28b808f1d038506cce0c
+ms.openlocfilehash: 93bfc509eb21545cde812b8d6d71bb9a93a109e8
+ms.sourcegitcommit: debf31a8fb044f0429409bd0587cdb7d5ca6f836
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/17/2020
-ms.locfileid: "86454334"
+ms.lasthandoff: 07/24/2020
+ms.locfileid: "87133972"
 ---
 # <a name="how-local-process-with-kubernetes-works"></a>Fonctionnement de Processus local avec Kubernetes
 
@@ -40,6 +40,44 @@ Lorsque Processus local avec Kubernetes établit une connexion à votre cluster�
 
 Après avoir établi une connexion à votre cluster, vous pouvez exécuter et déboguer du code en mode natif sur votre ordinateur, sans conteneur, et le code peut interagir directement avec le reste de votre cluster. Tout trafic réseau que l’agent distant reçoit est redirigé vers le port local spécifié pendant la connexion, de sorte que votre code s’exécutant en mode natif peut accepter et traiter ce trafic. Les variables d’environnement, volumes et secrets de votre cluster sont mis à la disposition du code s’exécutant sur votre ordinateur de développement. Par ailleurs, en raison des entrées de fichier hosts et du transfert de port que le Processus local avec Kubernetes a ajoutés à votre ordinateur de développement, votre code peut envoyer le trafic réseau à des services s’exécutant sur votre cluster en utilisant les noms de service de votre cluster, et ce trafic est transféré aux services s’exécutant dans votre cluster. Le trafic est routé entre votre ordinateur de développement et votre cluster pendant toute la durée de votre connexion.
 
+## <a name="using-routing-capabilities-for-developing-in-isolation"></a>Utilisation des fonctionnalités de routage pour le développement en isolation
+
+Par défaut, le processus local avec Kubernetes redirige tout le trafic d’un service vers votre ordinateur de développement. Vous avez également la possibilité d’utiliser les fonctionnalités de routage pour rediriger uniquement les demandes vers un service provenant d’un sous-domaine vers votre ordinateur de développement. Ces fonctionnalités de routage vous permettent d’utiliser le processus local avec Kubernetes pour développer de manière isolée et éviter de perturber le reste du trafic dans votre cluster.
+
+L’animation suivante montre deux développeurs qui travaillent sur le même cluster de manière isolée :
+
+![GIF animé illustrant l’isolation](media/local-process-kubernetes/lpk-graphic-isolated.gif)
+
+Lorsque vous activez l’isolation, le processus local avec Kubernetes effectue les opérations suivantes en plus de la connexion à votre cluster Kubernetes :
+
+* Vérifie que Azure Dev Spaces n’est pas activé pour le cluster Kubernetes.
+* Réplique le service choisi dans le cluster dans le même espace de noms et ajoute une étiquette *Routing.VisualStudio.IO/route-from=service_name* et *Routing.VisualStudio.IO/route-on-Header=kubernetes-route-As : GENERATED_NAME* annotation.
+* Configure et démarre le gestionnaire de routage dans le même espace de noms sur le cluster Kubernetes. Le gestionnaire de routage utilise un sélecteur d’étiquette pour Rechercher l’étiquette *Routing.VisualStudio.IO/route-from=service_name* et l’annotation *Routing.VisualStudio.IO/route-on-Header=kubernetes-route-As : GENERATED_NAME* lors de la configuration du routage dans votre espace de noms.
+
+Si le processus local avec Kubernetes détecte que Azure Dev Spaces est activé sur votre cluster Kubernetes, vous êtes invité à désactiver Azure Dev Spaces pour pouvoir utiliser le processus local avec Kubernetes.
+
+Le gestionnaire de routage effectue les opérations suivantes au démarrage :
+* Duplique toutes les entrées trouvées dans l’espace de noms à l’aide de la *GENERATED_NAME* pour le sous-domaine. 
+* Crée un bloc d’envoi pour chaque service associé à des entrées en double avec le sous-domaine *GENERATED_NAME* .
+* Crée un complément d’envoi supplémentaire pour le service sur lequel vous travaillez en isolation. Cela permet d’acheminer les demandes avec le sous-domaine vers votre ordinateur de développement.
+* Configure les règles de routage pour chaque envoi de bloc afin de gérer le routage pour les services avec le sous-domaine.
+
+Lorsqu’une demande avec le sous-domaine *GENERATED_NAME* est reçue sur le cluster, un en-tête *kubernetes-route-As = GENERATED_NAME* est ajouté au à la demande. Les Pod Envoy gèrent le routage qui demande au service approprié dans le cluster. Si la demande est routée vers le service sur lequel le travail est en cours d’isolation, cette demande est redirigée vers votre ordinateur de développement par l’agent distant.
+
+Lorsqu’une demande sans le sous-domaine *GENERATED_NAME* est reçue sur le cluster, aucun en-tête n’est ajouté à la demande. Les Pod Envoy gèrent le routage qui demande au service approprié dans le cluster. Si la demande est routée vers le service qui est remplacé, cette demande est routée vers le service d’origine au lieu de l’agent distant.
+
+> [!IMPORTANT]
+> Chaque service de votre cluster doit transférer l’en-tête *kubernetes-route-As = GENERATED_NAME lors de* l’exécution de demandes supplémentaires. Par exemple, lorsque *servicea* reçoit une demande, il envoie ensuite une requête à *serviceB* avant de renvoyer une réponse. Dans cet exemple, *servicea* doit transférer l’en-tête *kubernetes-route-As = GENERATED_NAME* dans sa demande à *serviceB*. Certains langages, tels que [ASP.net][asp-net-header], peuvent avoir des méthodes pour gérer la propagation d’en-tête.
+
+Lorsque vous vous déconnectez de votre cluster, par défaut, le processus local avec Kubernetes supprime tous les modules d’envoi et le service dupliqué. 
+
+> OBSERVE Le déploiement et le service du gestionnaire de routage resteront en cours d’exécution dans votre espace de noms. Pour supprimer le déploiement et le service, exécutez les commandes suivantes pour votre espace de noms.
+>
+> ```azurecli
+> kubectl delete deployment routingmanager-deployment -n NAMESPACE
+> kubectl delete service routingmanager-service -n NAMESPACE
+> ```
+
 ## <a name="diagnostics-and-logging"></a>Diagnostics et journalisation
 
 Lorsque vous utilisez Processus local avec Kubernetes pour vous connecter à votre cluster, les journaux de diagnostic de votre cluster sont enregistrés dans le [répertoire temporaire][azds-tmp-dir] de votre ordinateur de développement.
@@ -52,11 +90,17 @@ Un processus local avec Kubernetes présente les limitations suivantes :
 * Pour pouvoir se connecter à un service, celui-ci doit être sauvegardé par un seul pod. Vous ne pouvez pas vous connecter à un service comportant plusieurs pod, tel qu’un service avec des réplicas.
 * Un pod ne peut comprendre qu’un seul conteneur en cours d’exécution pour qu’un processus local avec Kubernetes se connecte correctement. Un processus local avec Kubernetes ne peut pas se connecter à des services comportant des pods ayant des conteneurs supplémentaires, tels que des conteneurs sidecar injectés par des mailles de services.
 * Un processus local avec Kubernetes a besoin d’autorisations élevées pour s’exécuter sur votre ordinateur de développement afin de modifier votre fichier hosts.
+* Le processus local avec Kubernetes ne peut pas être utilisé sur des clusters avec Azure Dev Spaces activé.
+
+### <a name="local-process-with-kubernetes-and-clusters-with-azure-dev-spaces-enabled"></a>Processus local avec Kubernetes et les clusters avec Azure Dev Spaces activé
+
+Vous ne pouvez pas utiliser le processus local avec Kubernetes sur un cluster avec Azure Dev Spaces activé. Si vous souhaitez utiliser le processus local avec Kubernetes sur un cluster avec Azure Dev Spaces activé, vous devez désactiver Azure Dev Spaces avant de vous connecter à votre cluster.
 
 ## <a name="next-steps"></a>Étapes suivantes
 
 Pour commencer à utiliser le processus local avec Kubernetes pour vous connecter à votre ordinateur de développement local à votre cluster, consultez [utiliser le processus local avec Kubernetes](local-process-kubernetes.md).
 
+[asp-net-header]: https://www.nuget.org/packages/Microsoft.AspNetCore.HeaderPropagation/
 [azds-cli]: /azure/dev-spaces/how-to/install-dev-spaces#install-the-client-side-tools
 [azds-tmp-dir]: /azure/dev-spaces/troubleshooting#before-you-begin
 [azure-cli]: /cli/azure/install-azure-cli?view=azure-cli-latest

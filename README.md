@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: 09d58e682424e09f0e8d5c37c1c6e0b8839495d4
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: cf93d619ddeb385960eae74de8b64a7f11b7be4d
+ms.sourcegitcommit: 8c4dc60b665e7065a5231d6b61380731221d9fc5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "62422083"
+ms.lasthandoff: 07/23/2020
+ms.locfileid: "87115295"
 ---
 # <a name="visual-studio-documentation"></a>Documentation de Visual Studio
 
@@ -12,11 +12,11 @@ Bienvenue ! Ce dépôt contient des fichiers sources pour la documentation tech
 
 Ce référentiel a été déplacé de https://github.com/Microsoft/vsdocs le 23 juin 2017. Le trafic vers les anciennes URL est redirigé ici.
 
-La documentation de Visual Basic et Visual C# se trouve dans le [dépôt dotnet docs](https://github.com/dotnet/docs/tree/master/docs) et celle de Visual C++ se trouve dans le [dépôt C++ docs](http://github.com/MicrosoftDocs/cpp-docs).
+La documentation de Visual Basic et Visual C# se trouve dans le [dépôt dotnet docs](https://github.com/dotnet/docs/tree/master/docs) et celle de Visual C++ se trouve dans le [dépôt C++ docs](https://github.com/MicrosoftDocs/cpp-docs).
 
 ## <a name="contribute-to-the-documentation"></a>Contribuer à la documentation
 
-Nous nous félicitons de vos contributions pour nous aider à améliorer les docs Visual Studio. Tous les articles de ce référentiel utilisent une marque aromatisée à GitHub.
+Nous accueillons vos contributions pour nous aider à améliorer la documentation de Visual Studio. Tous les Articles de ce référentiel utilisent la démarque GitHub.
 
 Plusieurs fonctionnalités de Visual Studio ont leurs propres dossiers dans ce dépôt, comme **debugger** pour les rubriques sur le débogage, **ide** pour les rubriques sur l’environnement de développement intégré (IDE) de Visual Studio, et ainsi de suite. Le sous-dossier **/media** dans chaque dossier contient les fichiers art pour les rubriques.
 
