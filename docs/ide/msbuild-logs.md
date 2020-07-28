@@ -15,12 +15,12 @@ dev_langs:
 ms.workload:
 - multiple
 ms.description: Generate build logs for msbuild projects to collect helpful information when troubleshooting issues.
-ms.openlocfilehash: ae91f7b9c90f0b06c449d26f67fe4fcc3434518e
-ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
+ms.openlocfilehash: 24df9f7c44ea2dbb9e9899abf68823683422da71
+ms.sourcegitcommit: 9a7fb8556a5f3dbb4459122fefc7e7a8dfda753a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85768697"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87235067"
 ---
 # <a name="troubleshoot-and-create-logs-for-msbuild-problems"></a>Détecter un problème et créer des journaux pour les problèmes MSBuild
 
@@ -106,7 +106,7 @@ Si vous compilez dans l’IDE Visual Studio (avec commentaires relatifs à la Fe
     Msbuild /p:Configuration="MyConfiguration";Platform="x86" /bl MySolution.sln
     ```
 
-    ou
+    or
 
     ```cmd
     Msbuild /p:/p:SolutionDir="c:\MySolutionDir\";Configuration="MyConfiguration";Platform="Win32" /bl MyProject.vcxproj
@@ -124,10 +124,14 @@ Un fichier Msbuild.binlog sera créé dans le répertoire à partir duquel que v
     Msbuild /p:Configuration="MyConfiguration";Platform="x86" /fl MySolution.sln
     ```
 
-    ou
+    or
 
     ```cmd
     Msbuild /p:/p:SolutionDir="c:\MySolutionDir\";Configuration="MyConfiguration";Platform="Win32" /fl MyProject.vcxproj
     ```
 
     Un fichier Msbuild.log sera créé dans le répertoire à partir duquel que vous avez exécuté msbuild.
+
+## <a name="see-also"></a>Voir aussi
+
+- [Résolution des problèmes de Visual Studio](/troubleshoot/visualstudio/welcome-visual-studio/)

@@ -10,12 +10,12 @@ ms.author: johmil
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: 7858846585467de3b5b820902938d6019b0d09ff
-ms.sourcegitcommit: a77158415da04e9bb8b33c332f6cca8f14c08f8c
+ms.openlocfilehash: 41ef89bbb7b3595c24de5a482eed805e75eb2cdb
+ms.sourcegitcommit: 9a7fb8556a5f3dbb4459122fefc7e7a8dfda753a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/15/2020
-ms.locfileid: "86386262"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87235080"
 ---
 # <a name="troubleshooting-and-known-issues-visual-studio-tools-for-unity"></a>Problèmes connus et dépannage (Outils Visual Studio pour Unity)
 
@@ -169,3 +169,7 @@ Tentez de mettre à niveau Visual Studio 2015 vers la mise à jour 3.
     ```
 
 Enfin, envoyez le vidage de thread à [vstusp@microsoft.com](mailto:vstusp@microsoft.com) , ainsi qu’une description de ce que vous avez fait quand Visual Studio est devenu figé.
+
+## <a name="see-also"></a>Voir aussi
+
+- [Résolution des problèmes de Visual Studio](/troubleshoot/visualstudio/welcome-visual-studio/)

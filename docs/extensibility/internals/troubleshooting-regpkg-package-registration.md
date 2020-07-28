@@ -10,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 65acd78ef2591a84a1f48bd6a694996f48078d68
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.openlocfilehash: b5266579ff235a0f6c4f3e555d79d5a00de2c194
+ms.sourcegitcommit: 9a7fb8556a5f3dbb4459122fefc7e7a8dfda753a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "85905131"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87234859"
 ---
 # <a name="troubleshooting-regpkg-package-registration"></a>Résolution des problèmes d’inscription du package RegPkg
 > [!NOTE]
@@ -38,3 +38,4 @@ ms.locfileid: "85905131"
 
 ## <a name="see-also"></a>Voir aussi
 - [VSPackages](../../extensibility/internals/vspackages.md)
+- [Résolution des problèmes de Visual Studio](/troubleshoot/visualstudio/welcome-visual-studio/)

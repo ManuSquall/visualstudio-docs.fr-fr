@@ -7,12 +7,12 @@ ms.assetid: 0fe9eaa4-f589-429e-a443-13bf86637d5a
 ms.date: 03/17/2020
 ms.topic: conceptual
 description: Découvrir comment définir les préférences pour la langue, les contacts, le niveau d’abonnement et d’autres éléments dans le portail d’administration
-ms.openlocfilehash: b719e60771ef8cca9b956626ca6e9e3dd91edce5
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: e34b9cf1ed32abc81b9c2ebb3ef7c370818c9089
+ms.sourcegitcommit: 9a7fb8556a5f3dbb4459122fefc7e7a8dfda753a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84183494"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87234612"
 ---
 # <a name="set-preferences-for-your-agreements-in-the-administration-portal"></a>Définir les préférences pour vos contrats dans le portail d’administration
 Les super administrateurs peuvent définir certaines préférences dans le portail d’administration (portail d’administration) qui seront appliquées globalement pour chaque contrat.  Ces préférences remplissent automatiquement les détails de l’abonnement pour vos administrateurs lorsqu’ils ajoutent des abonnés et peuvent uniquement être modifiées globalement par les super administrateurs.  
@@ -24,13 +24,13 @@ Pour définir vos préférences :
 1. Connectez-vous au portail d’administration avec un ID disposant de privilèges de super administrateur.
 2. Cliquez sur l’onglet **Gérer les administrateurs**.
    > [!div class="mx-imgBorder"]
-   > ![Bouton Préférences pour les administrateurs](_img/admin-prefs/admin-prefs-button.png)
+   > ![Bouton Préférences pour les administrateurs](_img/admin-prefs/admin-prefs-button.png "Cliquez sur gérer les administrateurs, puis sur Préférences d’accord pour afficher les préférences")
 
 3. Cliquez sur **Préférences des contrats**.
 Un panneau s’ouvre à droite et les préférences disponibles s’affichent. 
 
    > [!div class="mx-imgBorder"]
-   > ![Boîte de dialogue du menu volant Préférences pour les administrateurs](_img/admin-prefs/admin-prefs-flyout.png)
+   > ![Boîte de dialogue du menu volant Préférences pour les administrateurs](_img/admin-prefs/admin-prefs-flyout.png "Définissez vos préférences, puis cliquez sur Enregistrer")
 
 ## <a name="set-your-preferences"></a>Définir vos préférences
 Nous allons explorer chacune des préférences disponibles et leurs effets. 
@@ -58,7 +58,7 @@ Vous pouvez utiliser ce paramètre pour déterminer quel niveau d’abonnement i
 ### <a name="default-communication-preferences"></a>Préférences de communication par défaut
 La définition de la langue et des paramètres régionaux de communication par défaut permet de simplifier le processus d’attribution des abonnements.  Par exemple, si votre équipe de développement est basée dans un pays différent de celui de votre équipe d’administration, vous pouvez définir les préférences les mieux adaptées à l’emplacement des abonnés. Ces paramètres peuvent néanmoins toujours être modifiés par tous les administrateurs pour des abonnés individuels. 
 
-## <a name="frequently-asked-questions"></a>Questions fréquentes (FAQ)
+## <a name="frequently-asked-questions"></a>Forum aux questions
 ### <a name="q--can-i-disable-the-contact-email-address-so-subscribers-cannot-contact-administrators"></a>Q : puis-je désactiver l' **adresse de messagerie du contact** afin que les abonnés ne puissent pas contacter les administrateurs ?
 R : non-si vous pouvez déterminer quels administrateurs sont contactés à l’aide d’un groupe de sécurité, d’un alias de messagerie de groupe ou d’une adresse de messagerie individuelle, la fonctionnalité ne peut pas être désactivée.
 
@@ -86,6 +86,3 @@ En savoir plus sur la gestion des abonnements Visual Studio.
 - [Attribuer plusieurs abonnements](assign-license-bulk.md)
 - [Modifier des abonnements](edit-license.md)
 - [Déterminer l’utilisation maximale](maximum-usage.md)
-
-
-

@@ -11,12 +11,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2141d2fd7d046f61ba6febecc427066d7a09ba18
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.openlocfilehash: f79bfcb73749992365b167bae84a15de17d2440d
+ms.sourcegitcommit: 9a7fb8556a5f3dbb4459122fefc7e7a8dfda753a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "85904479"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87235028"
 ---
 # <a name="troubleshooting-vspackages"></a>Dépannage de VSPackages
 Voici les problèmes courants que vous pouvez rencontrer avec le VSPackage et des conseils pour résoudre les problèmes.
@@ -125,3 +125,4 @@ Voici les problèmes courants que vous pouvez rencontrer avec le VSPackage et de
 
 ## <a name="see-also"></a>Voir aussi
 - [VSPackages](../extensibility/internals/vspackages.md)
+- [Résolution des problèmes de Visual Studio](/troubleshoot/visualstudio/welcome-visual-studio/)

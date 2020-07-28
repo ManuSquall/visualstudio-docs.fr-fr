@@ -12,16 +12,16 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 695b1600aedb30a9e75a7829af4bac400f069922
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: c46120c369fa130e83620549ca0bc084a5075f7f
+ms.sourcegitcommit: 9a7fb8556a5f3dbb4459122fefc7e7a8dfda753a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "75584606"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87235145"
 ---
-# <a name="learn-to-use-the-code-editor"></a>Apprendre à utiliser l’éditeur de code
+# <a name="learn-to-use-the-code-editor-with-visual-basic"></a>En savoir plus sur l’utilisation de l’éditeur de code avec Visual Basic
 
-Dans cette présentation de 10 minutes de l’éditeur de code de Visual Studio, vous allez ajouter du code dans un fichier pour découvrir de quelles façons Visual Studio facilite l’écriture, la navigation et la compréhension du code.
+Dans cette présentation de 10 minutes de l’éditeur de code de Visual Studio, nous allons ajouter du code à un fichier pour examiner certaines façons dont Visual Studio facilite l’écriture, la navigation et la compréhension du code Visual Basic.
 
 ::: moniker range="vs-2017"
 
@@ -80,7 +80,7 @@ Visual Studio fournit des *extraits de code* qui vous aident à créer rapidemen
 
    La présentation de la procédure Sub `MySub()` est ajoutée au fichier.
 
-Les extraits de code disponibles diffèrent en fonction des langages de programmation. Vous pouvez regarder les extraits de code disponibles pour Visual Basic en choisissant **Edit** > **IntelliSense** > **Insert Snippet** (ou appuyez sur **Ctrl**+**K**, **Ctrl**+**X**). Dans Visual Basic, les extraits de code sont disponibles pour les catégories suivantes :
+Les extraits de code disponibles diffèrent en fonction des langages de programmation. Vous pouvez consulter les extraits de code disponibles pour Visual Basic en choisissant **modifier**  >  **IntelliSense**  >  **Insérer un extrait** (ou en appuyant sur **CTRL** + **K**, **CTRL** + **X**). Dans Visual Basic, les extraits de code sont disponibles pour les catégories suivantes :
 
 ![Liste des extraits de code Visual Basic](media/tutorial-code-snippet-list.png)
 
@@ -88,7 +88,7 @@ Il existe des extraits de code pour déterminer si un fichier existe sur l’ord
 
 ## <a name="comment-out-code"></a>Commenter du code
 
-La barre d’outils, qui est la ligne de boutons sous la barre de menus dans Visual Studio, peut aider à augmenter votre productivité quand vous codez. Par exemple, vous pouvez activer ou désactiver le mode de saisie semi-automatique IntelliSense, augmenter ou réduire un retrait d’une ligne, ou commenter du code que vous ne voulez pas compiler. ([IntelliSense](../../ide/using-intellisense.md) est une aide de codage qui affiche une liste de méthodes correspondantes, entre autres choses.) Dans cette section, nous allons commenter un certain code.
+La barre d’outils, qui est la ligne de boutons sous la barre de menus dans Visual Studio, peut aider à augmenter votre productivité quand vous codez. Par exemple, vous pouvez activer ou désactiver le mode de saisie semi-automatique IntelliSense, augmenter ou réduire un retrait d’une ligne, ou commenter du code que vous ne voulez pas compiler. ([IntelliSense](../../ide/using-intellisense.md) est une aide au codage qui affiche une liste de méthodes correspondantes, entre autres choses.) Dans cette section, nous allons commenter du code.
 
 ![Boutons de la barre d'outils de l’éditeur](media/tutorial-editor-toolbar.png)
 
@@ -116,7 +116,7 @@ La barre d’outils, qui est la ligne de boutons sous la barre de menus dans Vis
                Select word
    ```
 
-1. Nous n’utilisons pas le tableau `morewords`, mais nous n’allons pas le supprimer complètement car nous en aurons peut-être besoin plus tard. Au lieu de cela, nous allons commenter ces lignes. Sélectionnez toute la définition de `morewords` jusqu’à l’accolade de fin, puis choisissez le bouton **Commenter les lignes sélectionnées** dans la barre d’outils. Si vous préférez utiliser le clavier, appuyez sur **Ctrl**+**K**, **Ctrl**+**C**.
+1. Nous n’utilisons pas le tableau `morewords`, mais nous n’allons pas le supprimer complètement car nous en aurons peut-être besoin plus tard. Au lieu de cela, nous allons commenter ces lignes. Sélectionnez toute la définition de `morewords` jusqu’à l’accolade de fin, puis choisissez le bouton **Commenter les lignes sélectionnées** dans la barre d’outils. Si vous préférez utiliser le clavier, appuyez sur **CTRL** + **K**, **CTRL** + **C**.
 
    ![Bouton Commenter](media/tutorial-comment-out.png)
 
@@ -124,17 +124,17 @@ La barre d’outils, qui est la ligne de boutons sous la barre de menus dans Vis
 
 ## <a name="collapse-code-blocks"></a>Réduire les blocs de code
 
-Vous pouvez réduire des sections de code pour vous concentrer uniquement sur les parties qui vous intéressent. Pour nous entraîner, nous allons réduire le tableau `_words` à une seule ligne de code. Choisissez la petite case grise avec le signe moins qui se trouve dans la marge de la ligne indiquant `Dim _words = New String() {`. Ou, si vous êtes un utilisateur de clavier, placez le curseur n’importe où dans la définition de tableau et appuyez sur **Ctrl**+**M**, **Ctrl**+**M**.
+Vous pouvez réduire des sections de code pour vous concentrer uniquement sur les parties qui vous intéressent. Pour nous entraîner, nous allons réduire le tableau `_words` à une seule ligne de code. Choisissez la petite case grise avec le signe moins qui se trouve dans la marge de la ligne indiquant `Dim _words = New String() {`. Ou, si vous êtes un utilisateur du clavier, placez le curseur n’importe où dans la définition du tableau et appuyez sur **CTRL** + **m**, **CTRL** + **m**.
 
 ![Bouton de réduction du mode Plan](media/tutorial-collapse.png)
 
-Le bloc de code est réduit de façon à afficher uniquement la première ligne, suivie de points de suspension (`...`). Pour étendre le bloc de code à nouveau, cliquez sur la même boîte grise qui a maintenant un signe plus en elle, ou appuyez sur **Ctrl**+**M**, **Ctrl**+**M** nouveau. Cette fonctionnalité, appelée [Mode Plan](../../ide/outlining.md), est très utile pour réduire des méthodes longues ou des classes entières.
+Le bloc de code est réduit de façon à afficher uniquement la première ligne, suivie de points de suspension (`...`). Pour rajouter le bloc de code, cliquez sur la zone grise qui contient maintenant un signe plus (+) ou appuyez de nouveau sur **CTRL** + **m**, **CTRL** + **m** . Cette fonctionnalité, appelée [Mode Plan](../../ide/outlining.md), est très utile pour réduire des méthodes longues ou des classes entières.
 
 ## <a name="view-symbol-definitions"></a>Afficher les définitions de symbole
 
-L’éditeur Visual Studio permet d’inspecter facilement la définition d’un type, d’une méthode, etc. Une façon est de naviguer vers le fichier qui contient la définition, par exemple en choisissant **Go to Definition** partout où le symbole est référencé. Une autre façon encore plus rapide, sans avoir à déplacer le focus en dehors du fichier dans lequel vous travaillez, consiste à utiliser la fonctionnalité [Aperçu de la définition](../../ide/go-to-and-peek-definition.md#peek-definition). Vous allez afficher un aperçu de la définition du type `String`.
+L’éditeur Visual Studio facilite l’inspection de la définition d’un type, d’une méthode, etc. L’une des méthodes consiste à naviguer jusqu’au fichier qui contient la définition, par exemple en choisissant **atteindre la définition** partout où le symbole est référencé. Une autre façon encore plus rapide, sans avoir à déplacer le focus en dehors du fichier dans lequel vous travaillez, consiste à utiliser la fonctionnalité [Aperçu de la définition](../../ide/go-to-and-peek-definition.md#peek-definition). Vous allez afficher un aperçu de la définition du type `String`.
 
-1. Cliquez avec le bouton droit sur le mot `String`, puis choisissez **Aperçu de la définition** dans le menu de contenu. Ou, appuyez sur **Alt**+**F12**.
+1. Cliquez avec le bouton droit sur le mot `String`, puis choisissez **Aperçu de la définition** dans le menu de contenu. Ou appuyez sur **ALT** + **F12**.
 
    Une fenêtre indépendante s’affiche, avec la définition de la classe `String`. Vous pouvez faire défiler le contenu de la fenêtre indépendante, ou même afficher un aperçu de la définition d’un autre type à partir du code en aperçu.
 
@@ -144,7 +144,7 @@ L’éditeur Visual Studio permet d’inspecter facilement la définition d’un
 
 ## <a name="use-intellisense-to-complete-words"></a>Utiliser IntelliSense pour compléter des mots
 
-[IntelliSense](../../ide/using-intellisense.md) est une ressource inestimable lorsque vous codez. Cette fonctionnalité peut afficher des informations sur les membres d’un type disponibles, ou les détails des paramètres des différentes surcharges d’une méthode. Vous pouvez également utiliser IntelliSense pour compléter un mot automatiquement quand vous avez tapé suffisamment de caractères pour lever toute ambiguïté sur le mot. Nous allons ajouter une ligne de code pour imprimer les chaînes ordonnées dans la fenêtre de console, qui est l’emplacement standard pour la sortie du programme.
+[IntelliSense](../../ide/using-intellisense.md) est une ressource précieuse lors du codage. Cette fonctionnalité peut afficher des informations sur les membres d’un type disponibles, ou les détails des paramètres des différentes surcharges d’une méthode. Vous pouvez également utiliser IntelliSense pour compléter un mot automatiquement quand vous avez tapé suffisamment de caractères pour lever toute ambiguïté sur le mot. Nous allons ajouter une ligne de code pour imprimer les chaînes ordonnées dans la fenêtre de console, qui est l’emplacement standard pour la sortie du programme.
 
 1. Sous la variable `query`, commencez à taper le code suivant :
 
@@ -191,7 +191,7 @@ Aucun développeur ne réussit à créer un code parfait dès le départ. L’un
 
 - [Extraits de code](../../ide/code-snippets.md)
 - [Naviguer dans le code](../../ide/navigating-code.md)
-- [Mode Plan](../../ide/outlining.md)
+- [mode Plan](../../ide/outlining.md)
 - [Atteindre la définition et Aperçu de la définition](../../ide/go-to-and-peek-definition.md)
 - [Refactorisation](../../ide/refactoring-in-visual-studio.md)
-- [Utiliser IntelliSense](../../ide/using-intellisense.md)
+- [Utilisez IntelliSense](../../ide/using-intellisense.md)

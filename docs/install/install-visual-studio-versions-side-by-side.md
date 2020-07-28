@@ -1,6 +1,6 @@
 ---
 title: Installer des versions de Visual Studio côte à côte
-ms.date: 03/05/2019
+ms.date: 07/24/2019
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.topic: conceptual
@@ -11,12 +11,12 @@ helpviewer_keywords:
 author: ornellaalt
 ms.author: ornella
 manager: jillfra
-ms.openlocfilehash: 428c41a96de90494167d04ded8722d49c76afc71
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: a2b77315363c404cd0647555e5a6ad21d36ac86b
+ms.sourcegitcommit: 9a7fb8556a5f3dbb4459122fefc7e7a8dfda753a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "76114648"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87234989"
 ---
 # <a name="install-visual-studio-versions-side-by-side"></a>Installer des versions de Visual Studio côte à côte
 
@@ -46,6 +46,22 @@ Avant d’installer plusieurs versions sur la même machine, vérifiez que les c
 
 * Visual Studio ne met pas automatiquement à niveau les extensions, car elles ne sont pas toutes compatibles. Vous devez réinstaller les extensions à partir de [Visual Studio Marketplace](https://marketplace.visualstudio.com/) ou de l’éditeur du logiciel.
 
+## <a name="install-minor-visual-studio-versions-side-by-side"></a>Installer côte à côte des versions mineures de Visual Studio
+
+Lors de la mise à niveau d’une version mineure de Visual Studio vers la suivante, le programme d’installation de Visual Studio met à jour votre installation actuelle vers la version suivante de ce canal par défaut. Par exemple, lors de l’installation de la version préliminaire de 16.6.4, le programme d’installation tente de remplacer votre installation actuelle de 16.6.3 Preview, car les deux versions se trouvent dans le canal 16,6 Preview. Cela permet de s’assurer que les versions antérieures de Visual Studio n’occupent pas de place sur votre ordinateur. Dans certains cas spécifiques, il peut être utile d’installer les versions mineures côte à côte. Dans notre exemple, cela signifie que 16.6.3 et 16.6.4 se trouvent tous deux sur le même ordinateur.
+
+1. Téléchargez le [fichier du programme d’amorçage de Visual Studio](https://docs.microsoft.com/visualstudio/releases/2019/history#installing-an-earlier-release) pour la version mineure que vous souhaitez installer côte à côte avec vos versions existantes de Visual Studio.
+2. Ouvrez l’invite de commandes en mode administrateur. Pour ce faire, ouvrez le menu Démarrer de Windows, tapez « cmd », cliquez avec le bouton droit sur le résultat de la recherche de l’invite de commandes, puis sélectionnez **exécuter en tant qu’administrateur**. Dans l’invite de commandes, remplacez le répertoire par le dossier où se trouve votre fichier de programme d’amorçage de Visual Studio.
+3. Exécutez la commande ci-dessous, en spécifiant un nouveau chemin d’accès au dossier pour l’emplacement d’installation et en remplaçant le nom du fichier. exe par le nom du programme d’amorçage approprié pour la version de Visual Studio que vous installez. Le nom du fichier. exe doit correspondre à l’un des fichiers suivants :
+   * vs_community.exe pour Visual Studio Community
+   * vs_professional.exe pour Visual Studio Professional
+   * vs_enterprise.exe pour Visual Studio Enterprise
+
+```
+vs_Enterprise.exe --installPath "C:\Program Files (x86)\Microsoft Visual Studio\<2019 AddNewPath>"
+```
+4. Suivez les boîtes de dialogue du programme d’installation pour sélectionner les composants dont vous avez besoin pour votre installation. Pour plus d’informations, consultez [installer Visual Studio](install-visual-studio.md#step-4---choose-workloads).
+
 ## <a name="net-framework-versions-and-side-by-side-installations"></a>Versions du .NET Framework et installations côte à côte
 
 Les projets Visual Basic, Visual C# et Visual F# utilisent l’option **Framework cible** dans le **Concepteur de projets** pour spécifier la version du .NET Framework qu’un projet utilise. Pour un projet C++, vous pouvez changer manuellement la version cible du .NET Framework en modifiant le fichier .vcxproj. Pour plus d’informations, consultez la page [Compatibilité de versions dans le .NET Framework](/dotnet/framework/migration-guide/version-compatibility).
@@ -58,17 +74,17 @@ Pour des informations spécifiques au langage, consultez la rubrique appropriée
 
 | Langage | Rubrique |
 |--------------|-----------|
-| Visual Basic | [Page Application, Concepteur de projets (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md?view=vs-2017) |
-| Visual C#  | [Page Application, Concepteur de projets (C#)](../ide/reference/application-page-project-designer-csharp.md?view=vs-2017) |
+| Visual Basic | [Page Application, Concepteur de projet (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md?view=vs-2017) |
+| Visual C# | [Page Application, Concepteur de projet (C#)](../ide/reference/application-page-project-designer-csharp.md?view=vs-2017) |
 | Visual F# | [Développer avec Visual F# dans Visual Studio](../ide/fsharp-visual-studio.md?view=vs-2017) |
-|C++ | [Comment : Modifier le cadre cible et l’outil de plate-forme](/cpp/build/how-to-modify-the-target-framework-and-platform-toolset/) |
+|C++ | [Procédure : modifier le framework cible et l’ensemble d’outils de plateforme](/cpp/build/how-to-modify-the-target-framework-and-platform-toolset/) |
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
 ## <a name="see-also"></a>Voir aussi
 
 * [Installer Visual Studio](install-visual-studio.md?view=vs-2017)
-* [Port, migrer et mettre à niveau les projets Visual Studio](../porting/port-migrate-and-upgrade-visual-studio-projects.md?view=vs-2017)
+* [Porter, migrer et mettre à niveau des projets Visual Studio](../porting/port-migrate-and-upgrade-visual-studio-projects.md?view=vs-2017)
 * [Génération d’applications isolées et d’assemblys côte à côte C/C++](/cpp/build/building-c-cpp-isolated-applications-and-side-by-side-assemblies/)
 
 ::: moniker-end
@@ -77,17 +93,17 @@ Pour des informations spécifiques au langage, consultez la rubrique appropriée
 
 | Langage | Rubrique |
 |--------------|-----------|
-| Visual Basic | [Page Application, Concepteur de projets (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md) |
-| Visual C#  | [Page Application, Concepteur de projets (C#)](../ide/reference/application-page-project-designer-csharp.md) |
+| Visual Basic | [Page Application, Concepteur de projet (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md) |
+| Visual C# | [Page Application, Concepteur de projet (C#)](../ide/reference/application-page-project-designer-csharp.md) |
 | Visual F# | [Développer avec Visual F# dans Visual Studio](../ide/fsharp-visual-studio.md) |
-| C++ | [Comment : Modifier le cadre cible et l’outil de plate-forme](/cpp/build/how-to-modify-the-target-framework-and-platform-toolset/) |
+| C++ | [Procédure : modifier le framework cible et l’ensemble d’outils de plateforme](/cpp/build/how-to-modify-the-target-framework-and-platform-toolset/) |
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
 ## <a name="see-also"></a>Voir aussi
 
 * [Installer Visual Studio](install-visual-studio.md)
-* [Port, migrer et mettre à niveau les projets Visual Studio](../porting/port-migrate-and-upgrade-visual-studio-projects.md)
+* [Porter, migrer et mettre à niveau des projets Visual Studio](../porting/port-migrate-and-upgrade-visual-studio-projects.md)
 * [Génération d’applications isolées et d’assemblys côte à côte C/C++](/cpp/build/building-c-cpp-isolated-applications-and-side-by-side-assemblies/)
 
 ::: moniker-end

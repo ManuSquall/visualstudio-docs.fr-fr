@@ -2,7 +2,7 @@
 title: Se connecter à Visual Studio
 titleSuffix: ''
 ms.custom: seodec18
-ms.date: 03/10/2020
+ms.date: 07/24/2020
 ms.topic: conceptual
 ms.assetid: b9531c25-e4cf-43ae-b331-a9f31a8cd171
 author: ornellaalt
@@ -10,12 +10,12 @@ ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 85d4be9ffd8d1f5ccc6c6d1a1ba5f83e7f0fccf6
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: 4d6bf69050348cbe078cfdf7ae2d419f1dd13745
+ms.sourcegitcommit: 9a7fb8556a5f3dbb4459122fefc7e7a8dfda753a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85285294"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87235197"
 ---
 # <a name="sign-in-to-visual-studio"></a>Se connecter à Visual Studio
 
@@ -38,7 +38,7 @@ Quand vous vous connectez, vous bénéficiez de nombreux avantages supplémentai
 Voici une liste complète de tous les avantages dont vous pouvez éventuellement bénéficier après votre connexion :
 - **Prolongez la période d’évaluation de Visual Studio** : vous pouvez utiliser Visual Studio Professional ou Visual Studio Enterprise pendant 90 jours supplémentaires, au lieu de vous limiter à la période d’évaluation de 30 jours. Pour plus d’informations, consultez [étendre une version d’évaluation ou mettre à jour une licence](../ide/how-to-unlock-visual-studio.md).
 
-- **Déverrouillez l’édition Visual Studio Community** : si l’installation de votre édition Community vous demande une licence, connectez-vous à l’IDE pour vous débloquer.
+- **Continuer à utiliser l’édition Visual Studio Community** : si l’installation de votre édition Community vous demande une licence, connectez-vous à l’IDE pour continuer à utiliser Visual Studio Community **gratuitement**. 
 
 - **Déverrouillez Visual Studio si vous utilisez un compte associé à un abonnement Visual Studio ou à une organisation Azure DevOps**. Pour obtenir des instructions détaillées, consultez [étendre une version d’évaluation ou mettre à jour une licence](../ide/how-to-unlock-visual-studio.md).
 

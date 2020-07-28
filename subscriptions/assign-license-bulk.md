@@ -7,12 +7,12 @@ ms.assetid: c2853359-18fd-4be4-97a6-02230c862f92
 ms.date: 05/10/2020
 ms.topic: how-to
 description: Découvrez comment les administrateurs peuvent attribuer des licences à plusieurs abonnés à l’aide de la fonctionnalité d’ajout en bloc ou de groupes de Microsoft Azure Active Directory
-ms.openlocfilehash: 459220c7fb2103da05f15607787390963863e622
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.openlocfilehash: 8bda423ccd5362fba6389195814a44cca286b5a7
+ms.sourcegitcommit: 9a7fb8556a5f3dbb4459122fefc7e7a8dfda753a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "85903283"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87235132"
 ---
 # <a name="assign-subscriptions-to-multiple-users"></a>Attribuer des abonnements à plusieurs utilisateurs
 Le portail d’administration des abonnements vous permet d’ajouter des utilisateurs un à la fois ou dans des grands groupes.  Pour ajouter des utilisateurs individuels, consultez [Ajouter des utilisateurs uniques](assign-license.md).
@@ -30,7 +30,7 @@ Pour ajouter des groupes d’utilisateurs importants, vous pouvez utiliser la fo
 
 1. L’ajout en bloc utilise un modèle Microsoft Excel pour télécharger les informations de l’abonné. Dans la boîte de dialogue permettant de charger plusieurs abonnés, cliquez sur **Télécharger** pour télécharger le modèle.
    > [!div class="mx-imgBorder"]
-   > ![Télécharger le modèle Excel pour charger plusieurs abonnés](media/download-template-upload-subscribers.png)
+   > ![Télécharger le modèle Excel pour charger plusieurs abonnés](media/download-template-upload-subscribers.png "Téléchargez le modèle Excel vide pour commencer le processus d’attribution en bloc.")
    >
    > [!NOTE]
    > Téléchargez toujours la dernière version du modèle. L’utilisation d’une version antérieure peut faire échouer le chargement en bloc.
@@ -50,17 +50,17 @@ Pour ajouter des groupes d’utilisateurs importants, vous pouvez utiliser la fo
 
 1. Revenez au portail d’administration des abonnements Visual Studio. Dans la boîte de dialogue permettant de **charger plusieurs abonnés**, cliquez sur **Parcourir**.
    > [!div class="mx-imgBorder"]
-   > ![Accéder à votre modèle enregistré pour charger plusieurs abonnés](media/bulk-add-browse-saved-template.png)
+   > ![Accéder à votre modèle enregistré pour charger plusieurs abonnés](media/bulk-add-browse-saved-template.png "Vous pouvez accéder à l’emplacement du fichier ou le glisser-déplacer dans cette boîte de dialogue.")
 
 1. Accédez au fichier Excel que vous avez enregistré, puis cliquez sur **OK**.
    > [!div class="mx-imgBorder"]
-   > ![Charger le modèle Excel pour charger plusieurs abonnés](media/bulk-upload-subscribers.png)
+   > ![Charger le modèle Excel pour charger plusieurs abonnés](media/bulk-upload-subscribers.png "Le modèle avec vos données s’affiche ici.  Cliquez sur OK pour commencer le chargement.")
 
     Une boîte de dialogue de progression du chargement s’affiche.
 
     Si le modèle contient des erreurs, le chargement échoue et les erreurs rencontrées s’affichent pour vous aider à corriger le modèle. Réessayez ensuite le chargement en bloc.
    > [!div class="mx-imgBorder"]
-   > ![Message d’erreur si le chargement de plusieurs abonnés échoue](_img/assign-license-bulk/bulk-add-upload-failure.png)
+   > ![Message d’erreur si le chargement de plusieurs abonnés échoue](_img/assign-license-bulk/bulk-add-upload-failure.png "Ce message s’affiche si le fichier que vous avez chargé contient des erreurs.  Résolvez les erreurs et effectuez à nouveau le processus d’ajout en bloc.")
 
    Si vous rencontrez un échec, procédez comme suit :
    1. Ouvrez le fichier Excel que vous avez créé, corrigez les problèmes, puis enregistrez le fichier.
@@ -72,7 +72,7 @@ Pour ajouter des groupes d’utilisateurs importants, vous pouvez utiliser la fo
 
     Quand le chargement est réussi, vous voyez s’afficher la liste des abonnés et un message de confirmation.
    > [!div class="mx-imgBorder"]
-   > ![Message de confirmation si le chargement de plusieurs abonnés réussit](_img/assign-license-bulk/bulk-add-upload-success.png)
+   > ![Message de confirmation si le chargement de plusieurs abonnés réussit](_img/assign-license-bulk/bulk-add-upload-success.png "Lorsque le téléchargement se termine correctement, vous recevez un message de confirmation.")
 
 ## <a name="use-azure-active-directory-groups-to-assign-subscriptions"></a>Utiliser des groupes de Azure Active Directory pour affecter des abonnements 
 Grâce à cette fonctionnalité, il est facile de rester au-dessus de vos affectations d’abonnement. Vous pouvez ajouter Azure Active Directory groupes de sécurité dans le portail d’administration des abonnements, ce qui garantit que tous les individus du groupe se voient attribuer un abonnement. Et pour faciliter la tâche, lorsque les individus sortent de votre organisation et sont supprimés de Azure Active Directory, leur accès aux abonnements est également supprimé. 
@@ -100,14 +100,14 @@ Grâce à cette fonctionnalité, il est facile de rester au-dessus de vos affect
 3. Choisissez l’onglet **Ajouter** , puis sélectionnez **Azure Active Directory groupe** dans la liste déroulante.  
 
    > [!div class="mx-imgBorder"]
-   > ![Choisir l’ajout en bloc à l’aide de Azure AD](_img/assign-license-bulk/bulk-add-aad.png)
+   > ![Choisir l’ajout en bloc à l’aide de Azure AD](_img/assign-license-bulk/bulk-add-aad.png "Choisissez la fonctionnalité Ajouter en bloc à l’aide de Azure AD pour extraire les abonnés de votre groupe de Azure Active Directory.")
 
 4. Commencez par entrer le nom du groupe de Azure AD que vous souhaitez ajouter dans le champ de formulaire. Cela permet de rechercher les groupes de Azure AD disponibles au sein de votre organisation. 
 
 5. Lorsque vous sélectionnez le groupe, le champ est automatiquement renseigné avec le nom du groupe. Vous avez la possibilité d’afficher les utilisateurs de ce groupe avant de les ajouter. Ensuite, vous pouvez choisir le niveau d’abonnement, les droits de téléchargement et les préférences de communication pour le groupe. Si vous le souhaitez, vous pouvez ajouter des détails dans le champ de référence. 
 
    > [!div class="mx-imgBorder"]
-   > ![Choisir l’ajout en bloc à l’aide de Azure AD](_img/assign-license-bulk/bulk-add-aad-details.png)
+   > ![Choisir votre groupe de Azure AD](_img/assign-license-bulk/bulk-add-aad-details.png "Choisissez le nom de votre groupe de Azure AD pour ajouter des abonnés à ce groupe.")
 
 6. Cliquez sur **Ajouter** , puis sur **confirmer**. 
 
@@ -126,7 +126,7 @@ R : non--tous les membres du groupe reçoivent le même abonnement.
 ### <a name="q-can-i-edit-subscriber-details-of-individuals-added-in-an-azure-ad-group"></a>Q : puis-je modifier les détails de l’abonné des personnes ajoutées à un groupe de Azure AD ?  
 R : non--pour modifier les informations d’un abonné individuel, vous devez les supprimer du groupe de sécurité Azure AD et leur attribuer un abonnement individuellement.  
 
-### <a name="q-i-added-someone-to-my-azure-ad-security-group-but-i-dont-see-them-added-in-the-subscriptions-administration-portal-and-they-dont-have-a-subscription-why-not"></a>Q : J’ai ajouté une personne à mon Azure AD groupe de sécurité, mais je ne l’ai pas ajoutée dans le portail d’administration des abonnements et il n’y a pas d’abonnement. Pourquoi ?  
+### <a name="q-i-added-someone-to-my-azure-ad-security-group-but-i-dont-see-them-added-in-the-subscriptions-administration-portal-and-they-dont-have-a-subscription-why-not"></a>Q : J’ai ajouté une personne à mon Azure AD groupe de sécurité, mais je ne l’ai pas ajoutée dans le portail d’administration des abonnements et il n’y a pas d’abonnement. Pourquoi cela ne fonctionne-t-il pas ?  
 R : selon la façon dont votre organisation a configuré Azure AD, vous pouvez constater des retards jusqu’à 24 heures avant l’ajout de l’utilisateur. S’il s’agit d’une durée supérieure à 24 heures, [Contactez le support technique](https://visualstudio.microsoft.com/support/support-overview-vs).  
 
 ## <a name="see-also"></a>Voir aussi
@@ -137,4 +137,4 @@ R : selon la façon dont votre organisation a configuré Azure AD, vous pouvez 
 
 ## <a name="next-steps"></a>Étapes suivantes
 - Vous n’avez qu’un ou deux abonnés à ajouter ?  Consultez [Ajouter des utilisateurs uniques](assign-license.md)
-- Besoin d'aide ? Contactez la [prise en charge de l’administration et des abonnements Visual Studio](https://visualstudio.microsoft.com/support/support-overview-vs).
+- Vous avez besoin d’aide ? Contactez la [prise en charge de l’administration et des abonnements Visual Studio](https://visualstudio.microsoft.com/support/support-overview-vs).
