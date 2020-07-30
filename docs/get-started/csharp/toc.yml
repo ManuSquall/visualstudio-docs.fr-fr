@@ -1,6 +1,6 @@
 - name: Didacticiels C#
   href: index.yml
-- name: Vue d'ensemble
+- name: Vue d’ensemble
   items:
     - name: À propos de Visual Studio
       href: visual-studio-ide.md
@@ -14,7 +14,12 @@
   expanded: true
   items:
     - name: Créer votre première application C#
-      href: tutorial-console.md
+      expanded: true
+      items:
+        - name: "Partie 1\_: Créer une application console\_C#"
+          href: tutorial-console.md
+        - name: "Partie 2\_: Étendre votre application console\_C#"
+          href: tutorial-console-part-2.md
     - name: Créer une application web
       href: tutorial-aspnet-core.md
     - name: Créer une application UWP

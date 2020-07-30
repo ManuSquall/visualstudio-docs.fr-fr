@@ -415,6 +415,8 @@
                   href: ca1414.md
                 - name: 'CA1415 : Déclarer correctement les méthodes P-Invoke'
                   href: ca1415.md
+                - name: "CA1417\_: Ne pas utiliser OutAttribute sur les paramètres de chaîne pour les P/Invoke"
+                  href: ca1417.md
             - name: Avertissements liés à la maintenabilité
               items:
                 - name: Vue d'ensemble

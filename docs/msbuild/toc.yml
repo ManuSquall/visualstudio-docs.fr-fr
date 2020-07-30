@@ -449,6 +449,8 @@
           href: msbuild-well-known-item-metadata.md
         - name: Fichiers réponse MSBuild
           href: msbuild-response-files.md
+        - name: Filtres de solution dans MSBuild
+          href: solution-filters.md
         - name: Référence WPF
           items:
             - name: Vue d'ensemble
