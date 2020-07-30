@@ -7,12 +7,12 @@ ms.assetid: 64455e79-229a-42f0-9d65-c2cca8ab8513
 ms.date: 03/07/2020
 ms.topic: how-to
 description: Découvrez comment contacter l’administrateur de votre abonnement pour obtenir de l’aide concernant sur des questions ou des problèmes.
-ms.openlocfilehash: 2bf4857ebb794baef8098194d90cff7fee1ecc8f
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.openlocfilehash: 1ee5b5091c9321a76117f7d7e1c232973f3c2dd5
+ms.sourcegitcommit: b8ce85a6d9c7fcceaad0fba625202f5ecf8f368c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "85904570"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "87434255"
 ---
 # <a name="get-assistance-from-your-subscriptions-administrator"></a>Obtenir de l’aide auprès de votre administrateur d’abonnements
 Si votre abonnement Visual Studio vous est fourni par votre entreprise ou votre établissement scolaire, il est probable qu’il vous a été attribué par un administrateur d’abonnements.  Les administrateurs peuvent attribuer ou supprimer des abonnements, changer les adresses e-mail de connexion, déterminer si vous avez la possibilité de télécharger des logiciels et remplir d’autres fonctions liées à votre abonnement.
@@ -24,7 +24,7 @@ Compte tenu de la taille et de la complexité de nombreuses organisations, vous 
 2. Cliquez sur l’onglet **Abonnements**. 
 3. Cliquez sur le bouton **Contacter mon administrateur** en haut à droite. 
    > [!div class="mx-imgBorder"]
-   > ![Contacter mon administrateur](_img/contact-my-admin/contact-my-admin-button.png)
+   > ![Contacter mon administrateur](_img/contact-my-admin/contact-my-admin-button.png "Cliquez sur le bouton contacter mon administrateur, entrez votre message, puis cliquez sur Envoyer.")
 4. Entrez le message destiné à votre administrateur.
 5. Si vous voulez recevoir une copie du message envoyé à votre administrateur, cliquez sur la case à cocher **M’envoyer une copie**. 
 6. Enfin, cliquez sur **Envoyer**.

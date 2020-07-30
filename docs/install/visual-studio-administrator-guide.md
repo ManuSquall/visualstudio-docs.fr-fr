@@ -2,7 +2,7 @@
 title: Guide de l’administrateur Visual Studio
 titleSuffix: ''
 description: En savoir plus sur le déploiement de Visual Studio dans un environnement d’entreprise.
-ms.date: 03/09/2020
+ms.date: 07/29/2020
 ms.custom: seodec18
 ms.topic: overview
 helpviewer_keywords:
@@ -17,12 +17,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 70eb53c2e2a1625f167844d1e774915fdb1304ac
-ms.sourcegitcommit: 9e15138a34532b222e80f6b42b1a9de7b2fe0175
+ms.openlocfilehash: db1e57097b492a8847be6d96719054a6b917e4bd
+ms.sourcegitcommit: dda98068c0f62ccd1a19fdfde4bdb822428d0125
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "85419261"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "87425405"
 ---
 # <a name="visual-studio-administrator-guide"></a>Guide de l’administrateur Visual Studio
 
@@ -40,13 +40,17 @@ Avant de déployer Visual Studio à l’échelle de votre organisation, vous ave
 
 * Déterminez vos besoins de maintenance.
 
-  Si votre entreprise a besoin de rester plus longtemps sur un ensemble de fonctionnalités, mais qu’elle souhaite quand même bénéficier de mises à jour de maintenance régulières, envisagez d’utiliser un planning de référence pour la maintenance. Pour plus d’informations, consultez la section ***options de support pour les entreprises et les clients professionnels*** de la page [cycle de vie et maintenance du produit Visual Studio](/visualstudio/releases/2019/servicing#support-options-for-enterprise-and-professional-customers) , ainsi que la page [Comment : mettre à jour Visual Studio sur une ligne de base de maintenance](update-servicing-baseline.md) .
+  Si votre entreprise a besoin de rester plus longtemps sur un ensemble de fonctionnalités, mais qu’elle souhaite quand même bénéficier de mises à jour de maintenance régulières, envisagez d’utiliser un planning de référence pour la maintenance. Pour plus d’informations, consultez la section ***options de support pour les entreprises et les clients professionnels*** de la page [cycle de vie et maintenance du produit Visual Studio](/visualstudio/releases/2019/servicing#support-options-for-enterprise-and-professional-customers) , ainsi que la page [mettre à jour Visual Studio sur une ligne de base de maintenance](update-servicing-baseline.md) .
 
   Si vous envisagez d’appliquer des mises à jour de maintenance parallèlement aux mises à jour cumulatives des fonctionnalités, vous pouvez choisir les derniers composants.
 
 * Choisissez le modèle de mise à jour.
 
   D’où doivent provenir les mises à jour pour les machines clientes ? Concrètement, déterminez si vous voulez obtenir les mises à jour d’Internet ou d’un partage local à l’échelle de l’entreprise. Ensuite, si vous choisissez d’utiliser un partage local, décidez si chaque utilisateur doit pouvoir mettre à jour son propre client ou si vous voulez qu’un administrateur mette à jour les clients par programmation.
+
+  Il est possible de mettre à jour une disposition d’installation réseau de Visual Studio avec les dernières mises à jour de produit afin qu’elles puissent être utilisées comme point d’installation pour la dernière mise à jour de Visual Studio, ainsi que pour gérer les installations déjà déployées sur les stations de travail clientes. Pour plus d’informations, consultez [mettre à jour une installation réseau de Visual Studio](../install/update-a-network-installation-of-visual-studio.md).
+
+  Pour les ordinateurs qui ne sont pas connectés à Internet, la création d’une disposition minimale est le moyen le plus simple et le plus rapide de mettre à jour vos instances de Visual Studio hors connexion. Pour plus d’informations, consultez [mettre à jour Visual Studio à l’aide d’une disposition hors connexion minimale](update-minimal-layout.md).
 
 * Déterminez les [charges de travail et les composants](workload-and-component-ids.md?view=vs-2019) dont a besoin votre entreprise.
 
@@ -62,13 +66,17 @@ Avant de déployer Visual Studio à l’échelle de votre organisation, vous ave
 
 * Déterminez vos besoins de maintenance.
 
-  Si votre entreprise a besoin de rester plus longtemps sur un ensemble de fonctionnalités, mais qu’elle souhaite quand même bénéficier de mises à jour de maintenance régulières, envisagez d’utiliser un planning de référence pour la maintenance. Pour plus d’informations, consultez la section ***prise en charge des versions antérieures de Visual Studio*** de la page de [maintenance et du cycle de vie des produits Visual Studio](/visualstudio/releases/2019/servicing#support-for-older-versions-of-visual-studio) , ainsi que la page [Comment : mettre à jour Visual Studio sur une ligne de base de maintenance](update-servicing-baseline.md) .
+  Si votre entreprise a besoin de rester plus longtemps sur un ensemble de fonctionnalités, mais qu’elle souhaite quand même bénéficier de mises à jour de maintenance régulières, envisagez d’utiliser un planning de référence pour la maintenance. Pour plus d’informations, consultez la section ***prise en charge des versions antérieures de Visual Studio*** dans la page de [maintenance et de cycle de vie des produits Visual Studio](/visualstudio/releases/2019/servicing#support-for-older-versions-of-visual-studio) , ainsi que la page [mise à jour de Visual Studio sur une ligne de base de maintenance](update-servicing-baseline.md) .
 
   Si vous envisagez d’appliquer des mises à jour de maintenance parallèlement aux mises à jour cumulatives des fonctionnalités, vous pouvez choisir les derniers composants.
 
 * Choisissez le modèle de mise à jour.
 
   D’où doivent provenir les mises à jour pour les machines clientes ? Concrètement, déterminez si vous voulez obtenir les mises à jour d’Internet ou d’un partage local à l’échelle de l’entreprise. Ensuite, si vous choisissez d’utiliser un partage local, décidez si chaque utilisateur doit pouvoir mettre à jour son propre client ou si vous voulez qu’un administrateur mette à jour les clients par programmation.
+
+  Il est possible de mettre à jour une disposition d’installation réseau de Visual Studio avec les dernières mises à jour de produit afin qu’elles puissent être utilisées comme point d’installation pour la dernière mise à jour de Visual Studio, ainsi que pour gérer les installations déjà déployées sur les stations de travail clientes. Pour plus d’informations, consultez [mettre à jour une installation réseau de Visual Studio](../install/update-a-network-installation-of-visual-studio.md).
+
+  Pour les ordinateurs qui ne sont pas connectés à Internet, la création d’une disposition minimale est le moyen le plus simple et le plus rapide de mettre à jour vos instances de Visual Studio hors connexion. Pour plus d’informations, consultez [mettre à jour Visual Studio à l’aide d’une disposition hors connexion minimale](update-minimal-layout.md).
 
 * Déterminez les [charges de travail et les composants](workload-and-component-ids.md?view=vs-2017) dont a besoin votre entreprise.
 

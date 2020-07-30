@@ -2,17 +2,17 @@
 title: Téléchargement de logiciels inclus dans les abonnements Visual Studio | Microsoft Docs
 author: evanwindom
 ms.author: lank
-manager: lank
+manager: cabuschl
 ms.assetid: e2f2619c-7736-47e5-a066-5940d5994db9
-ms.date: 03/07/2020
+ms.date: 07/29/2020
 ms.topic: conceptual
 description: Découvrir comment localiser et télécharger des logiciels Microsoft inclus dans des abonnements Visual Studio
-ms.openlocfilehash: 5b21a87f0dc84189381f63274343f5fd7a384c5c
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: bf2afafc99993b2b3717f0264fee89b747eab58a
+ms.sourcegitcommit: b8ce85a6d9c7fcceaad0fba625202f5ecf8f368c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84180231"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "87434295"
 ---
 # <a name="downloading-software-titles-in-visual-studio-subscriptions"></a>Téléchargement de logiciels inclus dans les abonnements Visual Studio
 En fonction de votre abonnement Visual Studio, de nombreux logiciels Microsoft sont peut-être à votre disposition.  Cet article explique comment localiser et télécharger les logiciels dont vous avez besoin pour tirer le meilleur parti de votre abonnement. 
@@ -27,11 +27,11 @@ Si votre abonnement est fourni par votre entreprise ou votre établissement scol
 ## <a name="how-do-i-find-downloads-in-the-subscriber-portal"></a>Comment trouver des téléchargements dans le portail des abonnés ?
 Quand vous visitez la page [Téléchargements](https://my.visualstudio.com/downloads/featured?wt.mc_id=o~msft~docs), les téléchargements les plus populaires s’affichent organisés en groupes par type de produit.  Vous pouvez sélectionner l’un des téléchargements les plus fréquents affichés, ou rechercher un produit à l’aide de la barre de recherche située en haut de la page.
 > [!div class="mx-imgBorder"]
-> ![Page des téléchargements réservés aux abonnés](_img/subscriber-downloads/subscriber-downloads-resized.png)
+> ![Page des téléchargements réservés aux abonnés](_img/subscriber-downloads/subscriber-downloads-resized.png "Les téléchargements les plus populaires s’affichent lorsque vous cliquez sur le panneau téléchargements.")
 
 Par exemple, si vous choisissez **Visual Studio 2019** dans la liste des outils de développement, la liste des téléchargements Visual Studio 2019 disponibles s’affiche.
 > [!div class="mx-imgBorder"]
-> ![Téléchargements Visual Studio 2019](_img/subscriber-downloads/vs2019-product-list.png)
+> ![Téléchargements Visual Studio 2019](_img/subscriber-downloads/vs2019-product-list.png "Lorsque vous sélectionnez un produit, une liste des versions disponibles s’affiche.")
 
 Vous pouvez facilement sélectionner l’architecture, la langue et le type de fichier appropriés dans les menus déroulants. Choisissez les options souhaitées, puis cliquez sur **Télécharger** pour démarrer le téléchargement du produit.
 
@@ -41,16 +41,16 @@ Vous pouvez facilement sélectionner l’architecture, la langue et le type de f
 ### <a name="displaying-download-details"></a>Affichage des détails du téléchargement
 Cliquez sur le nom du produit ou sur le lien **Info** pour afficher les détails du téléchargement et consulter les notes de version du produit.
 > [!div class="mx-imgBorder"]
-> ![Détails des téléchargements Visual Studio 2019](_img/subscriber-downloads/vs2019-info.png)
+> ![Détails des téléchargements Visual Studio 2019](_img/subscriber-downloads/vs2019-info.png "L’onglet info affiche des informations sur le téléchargement et donne accès aux notes de publication.")
 
 Dans le volet d’informations, vous pouvez également cliquer sur l’onglet **Clés** pour vérifier l’état de vos clés de produit.
 > [!div class="mx-imgBorder"]
-> ![Clés de produit Visual Studio 2019](_img/subscriber-downloads/vs2019-keys.png)
+> ![Clés de produit Visual Studio 2019](_img/subscriber-downloads/vs2019-keys.png "L’onglet clés affiche le nombre de clés restantes et vous permet de demander des clés disponibles.")
 
 ### <a name="obtaining-product-keys"></a>Obtention de clés de produit
 Pour obtenir une clé de produit en vue du téléchargement, cliquez sur la clé bleue intitulée **Obtenir une clé** ou, si vous êtes déjà dans le volet d’informations, cliquez sur **Demander une clé** sous l’onglet **Clés**.
 > [!div class="mx-imgBorder"]
-> ![Réclamation de clés de produit Visual Studio 2019](_img/subscriber-downloads/vs2019-claim-keys.png)
+> ![Réclamation de clés de produit Visual Studio 2019](_img/subscriber-downloads/vs2019-claim-keys.png "Cliquez sur clé de revendication pour revendiquer les clés restantes.")
 
 ## <a name="see-also"></a>Voir aussi
 - [Documentation de Visual Studio](https://docs.microsoft.com/visualstudio/)
@@ -67,7 +67,3 @@ Découvrez comment tirer parti d’autres avantages tels que :
 - [Crédit individuel Azure DevTest](vs-azure.md)
 - [Azure DevOps](vs-azure-devops.md)
 - [IDE Visual Studio](vs-ide-benefit.md)
-
-
-
-

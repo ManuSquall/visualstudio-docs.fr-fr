@@ -7,12 +7,12 @@ ms.assetid: e49242bc-e9f2-49e8-8caa-f574d508aba6
 ms.date: 06/16/2020
 ms.topic: how-to
 description: Découvrez comment les administrateurs peuvent supprimer des attributions d’abonnement
-ms.openlocfilehash: e6ce84aa84e25bcdeb44b93954289a65a3454010
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.openlocfilehash: 4f952f574132afbd405c82c75fcddfc952bffb48
+ms.sourcegitcommit: b8ce85a6d9c7fcceaad0fba625202f5ecf8f368c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "85902905"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "87434271"
 ---
 # <a name="delete-assignments-in-visual-studio-subscriptions"></a>Supprimer des attributions dans les abonnements Visual Studio
 Quand un abonné n’a plus besoin d’un abonnement Visual Studio, par exemple quand il quitte l’entreprise, termine un projet ou change de fonction, vous pouvez supprimer son abonnement et l’attribuer à une autre personne. Notez que lorsque vous réattribuez un abonnement, tous les avantages de l’abonné ne sont pas réinitialisés.  Le nouvel utilisateur peut demander les clés non demandées et afficher celles précédemment demandées, mais le nombre maximal de demandes autorisées n’est **pas** réinitialisé.  Pour les organisations qui ont des contrats Entreprise, les avantages qui ont été utilisés par l’utilisateur initial, comme une formation Pluralsight, seront réinitialisés. 
@@ -24,7 +24,7 @@ Quand un abonné n’a plus besoin d’un abonnement Visual Studio, par exemple 
 2. Pour supprimer le ou les abonnés sélectionnés, cliquez sur **Supprimer**.
 3. Quand le message de confirmation de la suppression s’affiche, cliquez sur **OK**.
    > [!div class="mx-imgBorder"]
-   > ![Supprimer des abonnés](_img/delete-license/delete-subscribers.png)
+   > ![Supprimer des abonnés](_img/delete-license/delete-subscribers.png "Choisissez le ou les utilisateurs que vous souhaitez supprimer, puis cliquez sur supprimer. Vous pouvez utiliser les touches CTRL et Maj pour sélectionner plusieurs abonnés.")
 
    > [!NOTE]
    > La suppression en bloc à l’aide d’un modèle n’est pas disponible. Pour les organisations qui gèrent des affectations d’abonnements via des groupes de sécurité Azure Active Directory, consultez [notre article](assign-license-bulk.md#use-azure-active-directory-groups-to-assign-subscriptions) pour plus d’informations sur la façon dont les suppressions se produisent.  
