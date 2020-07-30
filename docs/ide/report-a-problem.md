@@ -1,5 +1,5 @@
 ---
-title: 'Rapport un problème : États et FAQ'
+title: 'Signaler un problème : États et FAQ'
 description: Fournit une vue d’ensemble de l’outil Signaler un problème et inclut des définitions et états de problèmes
 ms.date: 11/15/2018
 ms.custom: seodec18
@@ -9,14 +9,14 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6172be3995596807562c1dc7956a1ca8952e5ad4
-ms.sourcegitcommit: 22deb247ad951e4971f27fdab413b158415d0584
+ms.openlocfilehash: 95623d72e70e572ca7605c34e2e25e7186c284e1
+ms.sourcegitcommit: 4a77403b6bd33c5a6e66a3eefd42c81c39fb67ca
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81276473"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "87330958"
 ---
-# <a name="report-a-problem-states-and-faq"></a>Rapport un problème : États et FAQ
+# <a name="report-a-problem-states-and-faq"></a>Signaler un problème : États et FAQ
 
 L’outil Signaler un problème permet à la Communauté des développeurs Visual Studio de soumettre des problèmes. Chacun de vos signalements de problème devient un élément de travail dans notre système d’ingénierie, ce qui vous permet d’interagir directement avec nos équipes de produit pour nous aider à identifier et à résoudre les problèmes à fort impact. Les commentaires que vous soumettez avec des informations de diagnostics complètes sont essentiels pour améliorer la famille de produits Visual Studio. Nous vous sommes très reconnaissants de prendre le temps de signaler des problèmes.
 
@@ -95,12 +95,6 @@ L’état **Fermé - Informations insuffisantes** indique que nous n’avons pas
 ![État Fermé - Autre produit pour le signalement de problème auprès de la Communauté des développeurs](../ide/media/ProblemStates/ClosedOtherProduct.jpg)
 
 L’état **Fermé - Autre produit** indique que nous avons déterminé que votre problème concerne un autre produit. Consultez le commentaire de Microsoft pour connaître le produit externe concerné et les liens connexes.
-
-- - -
-
-![État Fermé - Ne sera pas résolu pour le signalement de problème auprès de la Communauté des développeurs](../ide/media/ProblemStates/ClosedWontFix.jpg)
-
-L’état **Fermé - Ne sera pas résolu** indique que nous ne suivons pas le problème en raison de facteurs tels que le manque d’impact sur la Communauté ou d’alignement sur l’orientation du produit. Pour plus d’informations, consultez le commentaire de Microsoft.  Bien que nous ne puissions pas résoudre ce problème particulier, soyez assuré que tous vos commentaires sont précieux pour améliorer Visual Studio.
 
 - - -
 
