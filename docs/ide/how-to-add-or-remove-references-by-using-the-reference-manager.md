@@ -21,12 +21,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5f67c41f860417a27a6003a19672d4cd617d37a6
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: f02dcc5f38bf8eb4acc702c5d8a1ee466a6a4a71
+ms.sourcegitcommit: 9179c33a78c2ac690ce908d7c73eef50b6e367f0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85284724"
+ms.lasthandoff: 07/29/2020
+ms.locfileid: "87390260"
 ---
 # <a name="how-to-add-or-remove-references-by-using-the-reference-manager"></a>Guide pratique pour ajouter ou supprimer des références à l’aide du Gestionnaire de références
 
@@ -47,6 +47,9 @@ La boîte de dialogue Gestionnaire de références affiche différentes catégor
 - **Windows**, avec les sous-groupes **Principal** et **Extensions** Vous pouvez explorer les références dans le SDK Windows ou les SDK de l’extension à l’aide de l’**Explorateur d’objets**.
 
 - **Parcourir**, avec le sous-groupe **Récent**
+ 
+    > [!NOTE]
+    > Vous ne verrez peut-être pas **Parcourir** dans la boîte de dialogue Gestionnaire de références si vous développez des projets C++.
 
 ## <a name="add-a-reference"></a>Ajouter une référence
 
