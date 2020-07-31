@@ -7,12 +7,12 @@ ms.assetid: 196c6d04-9a33-47d5-b0f1-038e7c3a7ac9
 ms.date: 03/09/2020
 ms.topic: conceptual
 description: Découvrez comment tirer le meilleur parti de vos abonnements Visual Studio.
-ms.openlocfilehash: 7d883092372d58f4a5bcc787daed0a99124a1704
-ms.sourcegitcommit: 7b60e81414a82c6d34f6de1a1f56115c9cd26943
+ms.openlocfilehash: 19b4bd7c6fce88aa99b336d98d6bf471509af556
+ms.sourcegitcommit: b8ec700fc4c14c68c6ce280f29c19870261990d8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "81444871"
+ms.lasthandoff: 07/31/2020
+ms.locfileid: "87453688"
 ---
 # <a name="managing-subscriptions"></a>Gestion des abonnements
 
@@ -26,14 +26,14 @@ Le portail des abonnements Visual Studio regroupe tous vos abonnements et logici
 
 Dans la page Avantages, l’abonnement actif est affiché en surbrillance dans la bannière bleue. Il est également affiché en haut à droite de la page.
 > [!div class="mx-imgBorder"]
-> ![Abonnement actif](_img/manage-vs-subscriptions/current-subscription-cropped.png)
+> ![Abonnement actif](_img/manage-vs-subscriptions/current-subscription-cropped.png "Votre abonnement actuel est affiché en haut de la page et dans la liste déroulante abonnements.")
 
 ### <a name="to-switch-between-subscriptions-you-can"></a>Vous pouvez passer d’un abonnement à un autre des deux manières suivantes :
 
 - Cliquez sur la liste déroulante en haut à droite et sélectionnez l’abonnement dans la liste.
 - Cliquez sur l’onglet Abonnements, puis cliquez sur l’abonnement souhaité.
   > [!div class="mx-imgBorder"]
-  > ![Changer d’abonnement](_img/manage-vs-subscriptions/change-subscription-resized.png)
+  > ![Changer d’abonnement](_img/manage-vs-subscriptions/change-subscription-resized.png "Cliquez sur l’onglet abonnements pour afficher des informations détaillées sur tous vos abonnements et basculer entre eux.")
 
 ### <a name="if-your-subscription-is-not-visible"></a>Si votre abonnement n’est pas affiché...
 
@@ -70,7 +70,7 @@ Vous pouvez facilement modifier les informations de contact et les préférences
 
 1. Cliquez sur votre nom dans le coin supérieur droit du portail de l’abonné.
 2. Cliquez sur le bouton **Modifier le profil**.
-3. Sous l’onglet **À propos de**, vous pouvez modifier votre nom, votre adresse e-mail, votre pays/région, votre image de profil et vos préférences de contact. Sur l’onglet Préférences, vous pouvez sélectionner votre langue, vos habitudes de date et d’heure **préférées,** votre fuseau horaire et votre thème d’interface utilisateur.
+3. Sous l’onglet **À propos de**, vous pouvez modifier votre nom, votre adresse e-mail, votre pays/région, votre image de profil et vos préférences de contact. Sous l’onglet **Préférences** , vous pouvez sélectionner la langue, les modèles de date et d’heure, le fuseau horaire et le thème de l’interface utilisateur par défaut.
 4. Quand vous avez effectué toutes les modifications souhaitées, cliquez sur **Enregistrer**.
 5. Cliquez sur le bouton **Précédent** dans votre navigateur pour revenir à la page Avantages.
 
@@ -78,7 +78,7 @@ Vous pouvez facilement modifier les informations de contact et les préférences
 Si vous souhaitez recevoir des mises à jour périodiques sur votre abonnement et ses avantages, dont le bulletin d’informations mensuel Visual Studio Subscription, [mettez à jour vos préférences](https://app.vsaex.visualstudio.com/me?workflowID=devprogram&tab=edit) en cochant la case pour Visual Studio Subscription dans votre profil Visual Studio. Vous pouvez modifier ces préférences et vous désabonner à tout moment. 
 
    > [!div class="mx-imgBorder"]
-   > ![Définition des préférences](_img/manage-vs-subscriptions/change-prefs.png)
+   > ![Définition des préférences](_img/manage-vs-subscriptions/change-prefs.png "Cliquez sur la case à cocher e-mails du programme des abonnements Visual Studio pour recevoir les mises à jour.")
    
 ### <a name="linking-my-subscription-to-existing-azure-devops-services-or-azure-subscriptions"></a>Association de mon abonnement à des abonnements Azure DevOps Services ou Azure existants
 Si vous vous connectez à votre abonnement avec un compte Microsoft personnel et que vous avez un abonnement qui inclut Azure DevOps Services ou Microsoft Azure avec un compte professionnel ou scolaire géré par Azure, vous pouvez lier les deux abonnements. Il s’agit d’un « compte alternatif » qui vous permet d’utiliser votre compte MSA pour vous connecter à votre abonnement et d’accéder en parallèle aux ressources Azure, Azure DevOps Services ou IDE existantes qui sont associées à votre compte scolaire ou professionnel.
@@ -99,13 +99,13 @@ Une fois que vous avez ajouté un autre compte, vous pouvez le mettre à jour ou
 ### <a name="q-if-i-do-not-renew-my-subscription-how-long-will-microsoft-keep-my-data"></a>Q : Si je ne renouvelle pas mon abonnement, combien de temps Microsoft conserve mes données ?
 R : En fonction du canal d’achat, Microsoft conserve les données des clients pendant une durée définie.
 
-| Channel                                                | Durée (jours) |
+| Canal                                                | Durée (jours) |
 |--------------------------------------------------------|-----------------|
 |    Vente au détail (par exemple, via le Microsoft Store)               |    360          |
 |    Centre de gestion des licences en volume (VLSC)              |    180          |
 |    MPSA (Microsoft Products and Services Agreement)    |    180          |
 |    Abonnements cloud à Visual Studio                   |    180          |
-|    Programme (p. ex. MCT, MPN, Imagine)          |    180          |
+|    Programme (par exemple, MCT, MPN, imagine)          |    180          |
 |    Revente interdite (par exemple, MVP, MSP)                      |    180          |
 |    DevEssentials                                       |    30           |
 
@@ -114,14 +114,14 @@ R : En fonction du canal d’achat, Microsoft conserve les données des clients
 > - Nous ne supprimons pas entièrement toutes vos données personnelles si vous avez des abonnements actifs.
 
 ## <a name="see-also"></a>Voir aussi
-- [Documentation Visual Studio](https://docs.microsoft.com/visualstudio/)
+- [Documentation de Visual Studio](https://docs.microsoft.com/visualstudio/)
 - [Documentation Azure DevOps](https://docs.microsoft.com/azure/devops/)
 - [Documentation Azure](https://docs.microsoft.com/azure/)
 - [Documentation Microsoft 365](https://docs.microsoft.com/microsoft-365/)
 
 ## <a name="next-steps"></a>Étapes suivantes
-Gérez-vous les abonnements pour votre organisation ?  En savoir plus sur la gestion des abonnements Visual Studio :
-- [Attribuer des abonnements individuels](assign-license.md)
+Gérez-vous les abonnements de votre organisation ?  En savoir plus sur la gestion des abonnements Visual Studio :
+- [Affecter des abonnements individuels](assign-license.md)
 - [Attribuer plusieurs abonnements](assign-license-bulk.md)
 - [Modifier des abonnements](edit-license.md)
 - [Supprimer des abonnements](delete-license.md)

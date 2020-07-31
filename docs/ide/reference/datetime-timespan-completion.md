@@ -1,6 +1,6 @@
 ---
 title: Saisie semi-automatique des valeurs DateTime et TimeSpan via le menu IntelliSense
-ms.date: 06/08/2020
+ms.date: 07/31/2020
 ms.topic: reference
 author: mikadumont
 ms.author: midumont
@@ -9,12 +9,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: eaa8a344e46c031b37b52106ba9aef25dac59b0c
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: 36b6d5440e532653845638f87f7f1d7066af6ba3
+ms.sourcegitcommit: 43df639b2cd99200f725a8ebb941477481a6f0ff
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85290340"
+ms.lasthandoff: 07/31/2020
+ms.locfileid: "87471550"
 ---
 # <a name="datetime-and-timespan-completion-through-intellisense-menu"></a>Saisie semi-automatique des valeurs DateTime et TimeSpan via le menu IntelliSense
 
@@ -22,15 +22,15 @@ Cette refactorisation s’applique à :
 
 - C#
 
-**Ce qui suit :** Saisie semi-automatique des littéraux de chaîne DateTime et TimeSpan via le menu IntelliSense.
+**Ce qui suit :** Littéral de chaîne DateTime et TimeSpan et saisie semi-automatique de la chaîne de format via le menu IntelliSense.
 
-Dans les **cas suivants :** Vous souhaitez écrire des littéraux de chaîne DateTime et TimeSpan. IntelliSense vous offre une saisie semi-automatique de base et une explication de ce que signifient chacun des caractères. 
+Dans les **cas suivants :** Vous souhaitez écrire un littéral de chaîne DateTime et TimeSpan et une chaîne de format. IntelliSense vous offre une saisie semi-automatique de base et une explication de ce que signifient chacun des caractères. 
 
 **Pourquoi :** La mémorisation des formats DateTime est difficile et IntelliSense peut vous aider à les écrire.
 
 ## <a name="how-to"></a>Procédures
 
-1. Placez votre curseur dans le littéral de chaîne DateTime ou TimeSpan.
+1. Placez votre curseur dans la chaîne de format DateTime ou TimeSpan.
 2. Appuyez sur **CTRL** + **Space** pour déclencher le menu **IntelliSense** .
 3. Sélectionnez le caractère que vous souhaitez ajouter.
 

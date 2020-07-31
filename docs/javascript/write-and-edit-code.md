@@ -10,19 +10,19 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 0f4fff1b13f8e3827d685ee16ccea55e78f733a6
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: f48e7a8be8d902a487ae4f7fdac9e6d85f7b5517
+ms.sourcegitcommit: b8ec700fc4c14c68c6ce280f29c19870261990d8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85289090"
+ms.lasthandoff: 07/31/2020
+ms.locfileid: "87453762"
 ---
 # <a name="learn-to-use-the-code-editor"></a>Apprendre à utiliser l’éditeur de code
 
 Dans cette présentation de l’éditeur de code de Visual Studio, nous allons découvrir de quelles façons Visual Studio facilite l’écriture, la navigation et la compréhension du code.
 
 > [!TIP]
-> Si vous n’avez pas encore installé Visual Studio, accédez à la page [Téléchargements Visual Studio](https://visualstudio.microsoft.com/downloads/) pour l’installer gratuitement. Selon le type de développement d’applications que vous exécutez, vous devrez peut-être installer la **charge de travail de développement Node.js** avec Visual Studio.
+> Si vous n’avez pas encore installé Visual Studio, accédez à la page [Téléchargements Visual Studio](https://visualstudio.microsoft.com/downloads/) pour l’installer gratuitement. Selon le type de développement d’applications que vous exécutez, vous devrez peut-être installer la **charge de travail de développement Node.js** avec Visual Studio. Pour plus d’informations sur l’obtention du service de langage pour la machine à écrire, consultez [prise en charge](../javascript/javascript-in-vs-2019.md#typescript-support)de la machine à écrire.
 
 Cet article part du principe que vous connaissez déjà le développement JavaScript. Si ce n’est pas le cas, nous vous suggérons de consulter un tutoriel comme [Créer une application Node.js et Express](../javascript/tutorial-nodejs.md) pour commencer.
 
@@ -65,6 +65,8 @@ Dans le volet inférieur, vous pouvez cliquer sur l’onglet **Liste d’erreurs
 ![Afficher la liste des erreurs](../javascript/media/write-code-error-list.png)
 
 Vous pouvez corriger ce code en ajoutant la virgule (`,`) avant `"data"`.
+
+Pour plus d’informations sur les linters, consultez la rubrique sur les [linters](https://github.com/microsoft/JSTSdocs/blob/master/articles/editor/linting.md).
 
 ## <a name="comment-out-code"></a>Commenter du code
 
