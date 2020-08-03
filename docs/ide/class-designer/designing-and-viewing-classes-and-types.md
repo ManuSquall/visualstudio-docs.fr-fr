@@ -4,6 +4,7 @@ ms.date: 05/08/2018
 ms.topic: conceptual
 f1_keywords:
 - vs.classdesigner.diagram
+- vs.classdesigner.enum
 helpviewer_keywords:
 - Class Designer [Visual Studio]
 - Class Designer, about Class Designer
@@ -16,16 +17,16 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c65be2b5afe91f9ee20a5eecde57d790a0cbcb2c
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 80668f3b999d9e022de3d22abb383f2dbd10730a
+ms.sourcegitcommit: e359b93c93c6ca316c0d8b86c2b6e566171fd1ea
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75590395"
+ms.lasthandoff: 08/01/2020
+ms.locfileid: "87507909"
 ---
 # <a name="design-and-view-classes-and-types-with-class-designer"></a>Concevoir et afficher des classes et des types avec le Concepteur de classes
 
-Concevez, visualisez et refactorez des cours et d’autres types dans votre code avec **Class Designer** in Visual Studio. Utilisez les diagrammes de classes pour créer et modifier des classes dans votre projet C#, Visual Basic ou C++. Vous pouvez également utiliser des diagrammes de classes pour mieux comprendre la structure de votre projet ou réorganiser votre code.
+Concevez, Visualisez et refactorisez des classes et d’autres types dans votre code avec **Concepteur de classes** dans Visual Studio. Utilisez les diagrammes de classes pour créer et modifier des classes dans votre projet C#, Visual Basic ou C++. Vous pouvez également utiliser des diagrammes de classes pour mieux comprendre la structure de votre projet ou réorganiser votre code.
 
 ## <a name="what-you-can-do-with-class-diagrams"></a>Ce que vous pouvez faire avec les diagrammes de classes
 

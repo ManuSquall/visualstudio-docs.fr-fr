@@ -2,16 +2,19 @@
 title: Utiliser un processus local avec Kubernetes avec Visual Studio (préversion)
 ms.technology: vs-azure
 ms.date: 06/02/2020
-ms.topic: conceptual
+ms.topic: how-to
 description: Découvrez comment utiliser le processus local avec Kubernetes avec Visual Studio pour connecter votre ordinateur de développement à un cluster Kubernetes
 keywords: Processus local avec Kubernetes, Azure Dev Spaces, les espaces de développement, docker, Kubernetes, Azure, conteneurs
 monikerRange: '>=vs-2019'
-ms.openlocfilehash: fd2e456f1ffdaaea90c0594b73d5367e51c8f655
-ms.sourcegitcommit: debf31a8fb044f0429409bd0587cdb7d5ca6f836
+ms.author: ghogen
+author: ghogen
+manager: jillfra
+ms.openlocfilehash: 29a3c8563660507a2378a58595ba5ea64788b417
+ms.sourcegitcommit: e359b93c93c6ca316c0d8b86c2b6e566171fd1ea
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/24/2020
-ms.locfileid: "87133994"
+ms.lasthandoff: 08/01/2020
+ms.locfileid: "87507896"
 ---
 # <a name="use-local-process-with-kubernetes-preview"></a>Utiliser un processus local avec Kubernetes (préversion)
 
@@ -137,6 +140,10 @@ Supprimez le point d’arrêt en plaçant votre curseur sur la ligne 26 dans `Bi
 >
 > Si Visual Studio met soudainement fin à la connexion au cluster ou s’arrête, le service que vous redirigez peut ne pas être restauré à son état d’origine avant la connexion avec Processus local avec Kubernetes. Pour résoudre ce problème, consultez le [Guide de résolution des problèmes][troubleshooting].
 
+## <a name="additional-configuration"></a>Configuration supplémentaire
+
+Le processus local avec Kubernetes peut gérer le trafic de routage et répliquer les variables d’environnement sans aucune configuration supplémentaire. Si vous devez télécharger des fichiers montés sur le conteneur de votre cluster Kubernetes, tel qu’un fichier élément configmap, vous pouvez créer un `KubernetesLocalProcessConfig.yaml` pour télécharger ces fichiers sur votre ordinateur de développement. Pour plus d’informations, consultez [utilisation de KubernetesLocalProcessConfig. YAML pour une configuration supplémentaire avec pour le processus local avec Kubernetes][kubernetesLocalProcessConfig-yaml].
+
 ## <a name="using-logging-and-diagnostics"></a>Utilisation de la journalisation et des diagnostics
 
 Les journaux de diagnostic sont disponibles dans le répertoire `Azure Dev Spaces` se trouvant dans le [répertoire *TEMP* de votre ordinateur de développement][azds-tmp-dir].
@@ -170,3 +177,4 @@ Découvrez comment fonctionne le processus local Kubernetes.
 [troubleshooting]: /azure/dev-spaces/troubleshooting#fail-to-restore-original-configuration-of-deployment-on-cluster
 [visual-studio]: https://www.visualstudio.com/vs/
 [lpk-extension]: https://marketplace.visualstudio.com/items?itemName=ms-azuretools.mindaro
+[kubernetesLocalProcessConfig-yaml]: configure-local-process-with-kubernetes.md
