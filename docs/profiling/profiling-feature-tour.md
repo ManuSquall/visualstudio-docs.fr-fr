@@ -3,7 +3,11 @@ title: Mesurer les performances avec des outils de profilage
 description: Examinez brièvement les différents outils de diagnostic disponibles dans Visual Studio.
 ms.custom: mvc
 ms.date: 06/03/2020
-ms.topic: quickstart
+ms.topic: overview
+f1_keywords:
+- vs.diagnosticshub.overview
+dev_langs:
+- CSharp
 helpviewer_keywords:
 - diagnostic tools
 ms.assetid: d2ee0301-ea78-43d8-851a-71b7b2043d73
@@ -12,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7c1f2583b0624691405ec3ef5a88aa11cb796327
-ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
+ms.openlocfilehash: e890a3d595b98276883c7e75547bb7edb338ca55
+ms.sourcegitcommit: e359b93c93c6ca316c0d8b86c2b6e566171fd1ea
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85816694"
+ms.lasthandoff: 08/01/2020
+ms.locfileid: "87507987"
 ---
 # <a name="first-look-at-profiling-tools"></a>Découvrir les outils de profilage
 
@@ -131,7 +135,7 @@ Pour les applications .NET Core qui utilisent ADO.NET ou Entity Framework Core, 
 
 L’outil affiche chaque requête dans un affichage de liste. Vous pouvez voir des informations telles que l’heure de début et la durée de la requête.
 
-![Louer](./media/db-gotosource.png "Allocation")
+![Allocation](./media/db-gotosource.png "Allocation")
 
 ::: moniker-end
 
@@ -168,7 +172,7 @@ Pour diagnostiquer la réactivité de l’interface utilisateur, la lenteur du t
 ::: moniker range="vs-2017"
 ## <a name="analyze-network-usage-uwp"></a>Analyser l’utilisation du réseau (UWP)
 
-Dans les applications UWP, vous pouvez analyser les opérations réseau exécutées par le biais de l’API `Windows.Web.Http`. Cet outil peut vous aider à résoudre des problèmes tels que les problèmes d’accès et d’authentification, l’utilisation incorrecte du cache et les mauvaises performances d’affichage et de téléchargement. Pour utiliser l’outil, choisissez **Réseau** dans le profileur de performances, puis choisissez **Démarrer**. Dans votre application, effectuez le scénario qui utilise `Windows.Web.Http`, puis choisissez **Arrêter la collecte** pour générer le rapport.
+Dans les applications UWP, vous pouvez analyser les opérations réseau effectuées à l’aide de l' `Windows.Web.Http` API. Cet outil peut vous aider à résoudre des problèmes tels que les problèmes d’accès et d’authentification, l’utilisation incorrecte du cache et les performances d’affichage et de téléchargement médiocres. Pour utiliser l’outil, choisissez **Réseau** dans le profileur de performances, puis choisissez **Démarrer**. Dans votre application, effectuez le scénario qui utilise `Windows.Web.Http`, puis choisissez **Arrêter la collecte** pour générer le rapport.
 
 ![Outil de profilage de l’utilisation du réseau](../profiling/media/prof-tour-network-usage.png "Utilisation du réseau de diagnostic")
 
