@@ -2,7 +2,7 @@
 title: Nouveautés de Visual Studio 2019
 titleSuffix: ''
 description: Découvrez les nouvelles fonctionnalités de Visual Studio 2019.
-ms.date: 05/20/2020
+ms.date: 08/05/2020
 helpviewer_keywords:
 - Visual Studio, what's new
 - what's new [Visual Studio]
@@ -15,16 +15,16 @@ ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: 28c8e647943b6e99946c2a9123ee17e2be8cc5c2
-ms.sourcegitcommit: a77158415da04e9bb8b33c332f6cca8f14c08f8c
+ms.openlocfilehash: 333bb9ca24579758112199c13d5a4af3f60d6058
+ms.sourcegitcommit: d21f1a028628d0221b567ba496690b3b68cfded7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/15/2020
-ms.locfileid: "86387042"
+ms.lasthandoff: 08/05/2020
+ms.locfileid: "87818584"
 ---
 # <a name="whats-new-in-visual-studio-2019"></a>Nouveautés de Visual Studio 2019
 
-**Mise à jour pour la [version 16,6](/visualstudio/releases/2019/release-notes/)**
+**Mise à jour pour la [version 16,7](/visualstudio/releases/2019/release-notes/)**
 
 >[!div class="button"]
 >[Télécharger Visual Studio 2019](https://visualstudio.microsoft.com/downloads)
@@ -86,7 +86,7 @@ Pour plus d’informations sur IntelliCode, consultez les billets de blog [Annou
 
 ### <a name="code-cleanup"></a>Nettoyage du code
 
-Une nouvelle commande de nettoyage de code, associée à un nouvel indicateur d’intégrité de document, vous est proposée. Cette nouvelle commande permet d’identifier et de résoudre les avertissements et les suggestions d’un simple clic sur un bouton.
+Une nouvelle commande de nettoyage de code, associée à un nouvel indicateur d’intégrité de document, vous est proposée. Vous pouvez utiliser cette nouvelle commande pour identifier, puis corriger les avertissements et les suggestions en une seule action (ou en cliquant sur un bouton).
 
 Le nettoyage peut mettre en forme le code et appliquer les correctifs de code suggérés par les [paramètres actuels](code-styles-and-code-cleanup.md) et les [fichiers .editorconfig](create-portable-custom-editor-options.md).
 
@@ -118,7 +118,7 @@ Pour plus d’informations, consultez le billet de blog [Better multi-monitor ex
 
 Pour plus d’informations, consultez le billet de blog [annonçant .net Core 3,0](https://devblogs.microsoft.com/dotnet/announcing-net-core-3-0/) .
 
-## <a name="collaborate"></a>Travailler en collaboration
+## <a name="collaborate"></a>Collaborer
 
 Afficher la vidéo suivante pour en savoir plus sur la façon dont vous pouvez travailler en équipe pour résoudre les problèmes. <br><br>*Longueur vidéo : 4,22 minutes*
 
@@ -178,7 +178,7 @@ Il vous est sans doute déjà arrivé de rechercher une chaîne parmi un ensembl
 
    ![Animation qui montre la fenêtre de recherche de débogage dans Visual Studio 2019](media/vs-2019/debug-window-search.gif)
 
-Vous pouvez également mettre en forme une valeur pour changer son apparence dans les fenêtres Espion, Variables locales et Automatique.  Double-cliquez sur l’un des éléments dans les fenêtres et ajoutez une virgule (« , ») pour accéder à la liste déroulante des spécificateurs de format disponibles. Une description de l’effet de chaque spécificateur est fournie.
+Vous pouvez également mettre en forme une valeur pour changer son apparence dans les fenêtres Espion, Variables locales et Automatique. Sélectionnez (en double-cliquant sur) l’un des éléments de l’une des fenêtres et ajoutez une virgule (",") pour accéder à la liste déroulante des spécificateurs de format possibles, chacun d’entre eux incluant une description de son effet prévu.
 
    ![Nouvelle fenêtre Espion et fonctionnalité de mise en forme des valeurs dans Visual Studio 2019](media/search-watch-window.png)
 
@@ -212,7 +212,21 @@ Pour plus d’informations, consultez le billet de blog [Propriétés regroupeme
 
 Nous mettons souvent à jour Visual Studio 2019 avec de nouvelles fonctionnalités susceptibles de faciliter l’expérience de développement. Pour en savoir plus sur nos dernières innovations, consultez le [blog Visual Studio](https://devblogs.microsoft.com/visualstudio/). Pour obtenir un enregistrement de ce que nous avons publié dans la version préliminaire jusqu’à ce jour, consultez les [notes de publication](/visualstudio/releases/2019/release-notes-preview/)de la version préliminaire. Pour obtenir une liste de ce que nous envisageons de publier ensuite, consultez la feuille de [route de Visual Studio](/visualstudio/productinfo/vs-roadmap).
 
-Vous souhaitez en savoir plus sur les autres fonctionnalités prévues pour Visual Studio 2019 ? Consultez la [Feuille de route Visual Studio](/visualstudio/productinfo/vs-roadmap/).
+En attendant, voici quelques-unes de nos nouvelles fonctionnalités actuellement en cours d’utilisation.
+
+- **Prise en charge de Visual Studio 2019 pour Visual Studio Codespaces (version préliminaire)**
+
+  À l’heure actuelle, les développeurs jonglent avec plusieurs projets au travail et chez eux. Les nouvelles fonctionnalités, les correctifs de bogues, &amp; les revues de RP et les prototypes sont tous en concurrence pour le temps et nécessitent un basculement de contexte constant. [Visual Studio Codespaces](https://visualstudio.microsoft.com/services/visual-studio-codespaces/) peut vous aider. Vous pouvez développer entièrement dans le Cloud et créer des environnements dédiés et personnalisés pour chacun de vos projets, en quelques secondes. Avec Visual Studio 2019, vous pouvez vous connecter à votre codeSpace et travailler de la même façon que vous le feriez localement.
+
+  Pour plus d’informations, consultez la page [qu’est-ce que Visual Studio Codespaces](/visualstudio/codespaces/overview/what-is-vsonline/) .
+
+- **Amélioration de l’expérience git dans Visual Studio 2019 (version préliminaire)**
+
+   Nous continuons à itérer sur une expérience git revisitée pour améliorer votre productivité lorsque vous travaillez avec du code sur GitHub, Azure Repos et d’autres services d’hébergement à distance. Vous pouvez initialiser et pousser depuis Visual Studio 2019 en une seule action (ou en cliquant sur). Vous pouvez également créer des branches, gérer des branches actuelles et résoudre les conflits de fusion.
+
+   Pour plus d’informations, consultez le billet de blog [passionnant nouvelles mises à jour du git dans Visual Studio](https://devblogs.microsoft.com/visualstudio/exciting-new-updates-to-the-git-experience-in-visual-studio/) .
+
+Pour plus d’informations sur la version préliminaire &mdash; et un lien de téléchargement, si vous souhaitez l’essayer, &mdash; consultez la page **[Visual Studio Preview](https://visualstudio.microsoft.com/vs/preview/)** .
 
 ## <a name="give-us-feedback"></a>Envoyer vos commentaires
 

@@ -5,19 +5,19 @@ description: Liste des versions publiées et des numéros de build de Visual Stu
 author: ornellaalt
 ms.author: ornella
 manager: jillfra
-ms.date: 07/28/2020
+ms.date: 08/05/2020
 ms.topic: reference
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 open_to_public_contributors: false
-ms.openlocfilehash: 98b2a8cf7c4eece8bbbaeaed8e119b6eea342448
-ms.sourcegitcommit: c620d59578db1b89f80e64ae04b4898bc4ab292d
+ms.openlocfilehash: 702d8f1b99b801e483fc372c63553b912b1e352c
+ms.sourcegitcommit: c5e455fa5c030468ff7d0581e0dfd9484254e236
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/29/2020
-ms.locfileid: "87375909"
+ms.lasthandoff: 08/05/2020
+ms.locfileid: "87821675"
 ---
 # <a name="visual-studio-build-numbers-and-release-dates"></a>Numéros de builds et dates de publication de Visual Studio
 
@@ -29,6 +29,8 @@ Le tableau suivant liste les numéros de build et les dates de publication de Vi
 
 | **Version**| **Channel** | **Date de publication** | **Version de build** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
+| 16.8.0 | Preview 1 | 5 août 2020 | 16.8.30404.54 |
+| 16.7.0 | Libérer | 5 août 2020 | 16.7.30330.147 |
 | 16.7.0 | Préversion 6 | 28 juillet 2020 | 16.7.30323.103 |
 | 16.7.0 | Préversion 5 | 21 juillet 2020 | 16.7.30317.65 |
 | 16.6.5 | Libérer | 21 juillet 2020 | 16.6.30320.27 |
@@ -108,7 +110,7 @@ Le tableau suivant liste les numéros de build et les dates de publication de Vi
 | 16.0.7 | Libérer | 13 août 2019 | 16.0.28803.571 |
 | 16.2.1 | Libérer | 6 août 2019 | 16.2.29201.188 |
 | 16.2.0 | Libérer | 24 juillet 2019 | 16.2.29123.88 |
-| 16.3.0 | Preview 1 | 24 juillet 2019 | 16.3.29123.89 |
+| 16.3.0 | Preview 1 | 24 juillet 2019 | 16.3.29123.89 |
 | 16.2.0 | Preview 4 | 16 juillet 2019 | 16.2.29111.141 |
 | 16.1.6 | Libérer | 9 juillet 2019 | 16.1.29102.190 |
 | 16.0.6 | Libérer | 9 juillet 2019 | 16.0.28803.540 |
@@ -167,7 +169,7 @@ Le tableau suivant répertorie les numéros de build et les dates de publication
 | 15.9.25 | Libérer | 14 juillet 2020 | 15.9.28307.1216 |
 | 15.9.24 | Libérer | 9 juin 2020 | 15.9.28307.1177 |
 | 15.9.23 | Libérer | 12 mai 2020 | 15.9.28307.1146 |
-| 15.9.22 | Libérer | 14 avril 2020 | 15.9.28307.1093 |
+| 15.9.22 | Libérer | 14 avril 2020 | 15.9.28307.1093 |
 | 15.9.21 | Libérer | 10 mars 2020 | 15.9.28307.1064 |
 | 15.9.20 | Libérer | Février 11, 2020 | 15.9.28307.1033 |
 | 15.9.19 | Libérer | 14 janvier 2020 | 15.9.28307.1000 |
@@ -184,7 +186,7 @@ Le tableau suivant répertorie les numéros de build et les dates de publication
 | 15.0.24 | Libérer | 11 juin 2019 | 15.0.26228.88 |
 | 15.9.12 | Libérer | 14 mai 2019 | 15.9.28307.665 |
 | 15.0.23 | Libérer | 14 mai 2019 | 15.0.26228.85 |
-| 15.9.11 | Libérer | 2 avril 2019 | 15.9.28307.586 |
+| 15.9.11 | Libérer | 2 avril 2019 | 15.9.28307.586 |
 | 15.9.10 | Libérer | 25 mars 2019 | 15.9.28307.557 |
 | 15.9.9 | Libérer | 12 mars 2019 | 15.9.28307.518 |
 | 15.0.22 | Libérer | 12 mars 2019 | 15.0.26228.76 |
