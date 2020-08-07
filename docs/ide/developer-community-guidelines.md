@@ -8,12 +8,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fb7f821a7b815b29c9f85b6ab0686edb0292866d
-ms.sourcegitcommit: 4d5cd0b9de7a87efb69f17b02c2331b749e6ec8d
+ms.openlocfilehash: b39b62ade75687a61981712c47e9876a0ef082fd
+ms.sourcegitcommit: 615c8f39216ee2500161fa3aa1b3fe2f3e4386fa
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/08/2020
-ms.locfileid: "86137565"
+ms.lasthandoff: 08/07/2020
+ms.locfileid: "87972471"
 ---
 # <a name="developer-community-guidelines"></a>Consignes Developer Community
 
@@ -89,12 +89,15 @@ Si vous avez suggéré une fonctionnalité, il est possible que nous ne prévoyo
 
 Dans le processus de prise de décision, nous examinons les caractéristiques suivantes de la suggestion de fonctionnalité :
 
+- Correspond-il à notre orientation générale du produit ?
 - Pouvons-nous nous permettre de la générer et de la gérer ?
 - S’aligne-t-il avec notre stratégie générale de feuille de [route](https://docs.microsoft.com/visualstudio/productinfo/vs-roadmap) ?
 - Bénéficie-t-il d’un support communautaire, comme indiqué par les votes et les commentaires ?
 - Nous l’aimons, même avec une faible prise en charge de la communauté ?
 
 Quand nous ne pouvons pas répondre « oui » à l’une de ces questions, nous allons la fermer. Mais souvent, la suggestion reste ouverte en cours d' _examen_ pour recueillir des commentaires sur la communauté.
+
+Si une suggestion ne correspond pas à notre orientation globale du produit, nous allons la fermer en *dehors de l’étendue*. Par exemple, il peut y avoir des investissements similaires dans d’autres membres de la famille de produits Visual Studio. Ou la fonctionnalité suggérée ne peut être pertinente que pour quelques personnes, ce qui rend une extension mieux adaptée pour la fournir.
 
 Suivez la progression de votre suggestion de fonctionnalité en référençant les [États de suggestion et le Forum aux questions](https://docs.microsoft.com/visualstudio/ide/report-a-problem).
 
