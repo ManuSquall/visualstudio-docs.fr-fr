@@ -8,12 +8,12 @@ manager: jillfra
 ms.technology: vs-azure
 ms.workload:
 - azure
-ms.openlocfilehash: 02a672321a11889d88a8af3305e64a66fe779080
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: 7778019e73119a4b8b1a5842bb7a8c04ef017143
+ms.sourcegitcommit: 50bbb62525c91c5a31bab57e1caf37c5638872c8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85283188"
+ms.lasthandoff: 08/07/2020
+ms.locfileid: "87913301"
 ---
 # <a name="get-started-with-visual-studio-kubernetes-tools"></a>Prise en main des outils Kubernetes de Visual Studio
 
@@ -123,7 +123,7 @@ Les fichiers ajoutés sont les suivants :
 
 - *azds.yaml*. Il contient les paramètres de Azure Dev Spaces, qui offre une expérience de débogage rapide et itérative dans le service Azure Kubernetes. Pour plus d’informations, consultez [la documentation Azure dev Spaces](/azure/dev-spaces/azure-dev-spaces).
 
-::: moniker range="vs-2017"
+:::moniker range="vs-2017"
 
 ## <a name="publish-to-azure-kubernetes-service-aks"></a>Publier sur le service Azure Kubernetes (AKS)
 
@@ -165,7 +165,17 @@ Pour ce faire, vous devez d’abord vérifier que vous avez installé tout ce qu
 
 ::: moniker-end
 
-Félicitations ! Vous pouvez maintenant utiliser toute la puissance de Visual Studio pour l’ensemble de votre développement d’applications Kubernetes.
+Félicitations ! Vous pouvez maintenant utiliser toute la puissance de Visual Studio pour l’ensemble de votre développement d’applications Kubernetes.
+
+## <a name="remove-kubernetes-support"></a>Supprimer la prise en charge de Kubernetes
+
+1. Dans **Explorateur de solutions**, sous **propriétés**, ouvrez *launchSettings.js*.
+
+1. Supprimez le **conteneur de section dans Kubernetes**.
+
+1. Si vous revenez à Dockr compose, sélectionnez ce projet dans **Explorateur de solutions**, cliquez avec le bouton droit et choisissez **définir comme projet de démarrage**.
+
+1. Facultatif Vous pouvez également supprimer les autres artefacts répertoriés précédemment dans l’article, tels que le dossier **graphiques** et *azds. YAML*.
 
 ## <a name="next-steps"></a>Étapes suivantes
 

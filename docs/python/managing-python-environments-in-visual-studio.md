@@ -9,12 +9,12 @@ manager: jillfra
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: e8deed53d2789afb964989e4e995e3120e9842bd
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.openlocfilehash: 1b6782a95793f222ba15fe8f928ecd9d7337c90f
+ms.sourcegitcommit: 50bbb62525c91c5a31bab57e1caf37c5638872c8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "85543843"
+ms.lasthandoff: 08/07/2020
+ms.locfileid: "87913309"
 ---
 # <a name="how-to-create-and-manage-python-environments-in-visual-studio"></a>Comment créer et gérer des environnements Python dans Visual Studio
 
@@ -159,7 +159,7 @@ Vous créez un environnement conda à l’aide de l’outil `conda`, ou avec la 
 
     | Champ | Description |
     | --- | --- |
-    | Project | Projet dans lequel créer l’environnement (si vous avez plusieurs projets dans la même solution Visual Studio). |
+    | Projet | Projet dans lequel créer l’environnement (si vous avez plusieurs projets dans la même solution Visual Studio). |
     | Nom | Nom de l’environnement conda. |
     | Ajouter des packages depuis | Choisissez **Fichier d’environnement** si vous avez un fichier *environment.yml* décrivant vos dépendances de fichiers, ou choisissez **un ou plusieurs noms de packages Anaconda** et répertoriez au moins un package Python ou une version de Python dans le champ situé en dessous. La liste des packages indique à conda de créer un environnement Python. Pour installer la dernière version de Python, utilisez `python` ; pour installer une version spécifique, utilisez `python=,major>.<minor>` comme dans `python=3.7`. Vous pouvez également utiliser le bouton de package pour sélectionner des versions de Python et des packages communs à partir d’une série de menus. |
     | Définir en tant qu’environnement actuel | Active le nouvel environnement dans le projet sélectionné lorsque l’environnement est créé. |
@@ -262,7 +262,7 @@ Pour corriger un environnement que vous souhaitez conserver, essayez d’abord d
 Pour corriger un environnement qui n’a pas d’option de réparation, ou pour supprimer un environnement non valide, effectuez les étapes suivantes afin de modifier directement le Registre. Visual Studio met automatiquement à jour la fenêtre **environnements python** quand vous apportez des modifications au registre.
 
 1. Exécutez *regedit.exe*.
-1. Accédez à **HKEY_LOCAL_MACHINE\SOFTWARE\Python**. Pour IronPython, recherchez plutôt **IronPython**.
+1. Accédez à **HKEY_LOCAL_MACHINE \software\python** ou **HKEY_CURRENT_USER \software\python**. Pour IronPython, recherchez plutôt **IronPython**.
 1. Développez le nœud qui correspond à la distribution, tel que **PythonCore** pour CPython ou **ContinuumAnalytics** pour Anaconda. Pour IronPython, développez le nœud de numéro de version.
 1. Inspectez les valeurs sous le nœud **InstallPath** :
 
@@ -270,7 +270,8 @@ Pour corriger un environnement qui n’a pas d’option de réparation, ou pour 
 
     - Si l’environnement existe toujours sur votre ordinateur, remplacez la valeur de **ExecutablePath** par l’emplacement correct. Corrigez également les valeurs **(Par défaut)** et **WindowedExecutablePath** valeurs en fonction des besoins.
     - Si l’environnement n’existe plus sur votre ordinateur et que vous souhaitez le supprimer de la fenêtre **Environnements Python**, supprimez le nœud parent d’**InstallPath**, par exemple **3.6**, dans l’image ci-dessus.
-
+    - Paramètres non valides dans **HKEY_CURRENT_USER \software\python** remplacer les paramètres dans **HKEY_LOCAL_MACHINE \software\python**
+    
 ## <a name="see-also"></a>Voir aussi
 
 - [Installer les interpréteurs Python](installing-python-interpreters.md)
