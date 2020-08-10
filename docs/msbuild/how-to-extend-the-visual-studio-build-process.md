@@ -14,32 +14,31 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f6a465a752282f4a0dc00f3fb294ade4169bb19b
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: ac3bebc0a64f814e71e7b5ab30282a70fd7eb85e
+ms.sourcegitcommit: d293c0e3e9cc71bd4117b6dfd22990d52964addc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79093945"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "88041036"
 ---
 # <a name="how-to-extend-the-visual-studio-build-process"></a>Guide pratique pour étendre le processus de génération Visual Studio
 
-Le processus de construction Visual Studio est défini par une série de fichiers MSBuild *.targets* qui sont importés dans votre fichier de projet. Parmi ces fichiers importés, *Microsoft.Common.targets* peut être étendu de manière à exécuter des tâches personnalisées à différentes étapes du processus de génération. Cet article explique deux méthodes que vous pouvez utiliser pour étendre le processus de construction Visual Studio:
+Le processus de génération Visual Studio est défini par une série de fichiers MSBuild *. targets* importés dans votre fichier projet. Parmi ces fichiers importés, *Microsoft.Common.targets* peut être étendu de manière à exécuter des tâches personnalisées à différentes étapes du processus de génération. Cet article décrit deux méthodes que vous pouvez utiliser pour étendre le processus de génération de Visual Studio :
 
-- En prédéfinie des cibles spécifiques définies dans les cibles communes *(Microsoft.Common.targets* ou les fichiers qu’il importe).
+- Substitution de cibles prédéfinies spécifiques définies dans les cibles communes (*Microsoft. Common. targets* ou les fichiers qu’il importe).
 
-- Dépassement des propriétés "DependsOn" définies dans les cibles communes.
+- Substitution des propriétés « DependsOn » définies dans les cibles courantes.
 
 ## <a name="override-predefined-targets"></a>Substituer des cibles prédéfinies
 
-Les cibles communes contiennent un ensemble d’objectifs vides prédéfinis qui sont appelés avant et après certaines des principales cibles dans le processus de construction. Par exemple, MSBuild `BeforeBuild` appelle la `CoreBuild` cible `AfterBuild` avant la `CoreBuild` cible principale et la cible après la cible. Par défaut, les cibles vides dans les cibles communes ne font rien, mais vous pouvez passer outre à leur comportement par défaut en définissant les cibles que vous voulez dans un fichier de projet qui importe les cibles communes. En prépondérer les cibles prédéfinies, vous pouvez utiliser les tâches MSBuild pour vous donner plus de contrôle sur le processus de construction.
-Les cibles communes contiennent un ensemble d’objectifs vides prédéfinis qui sont appelés avant et après certaines des principales cibles dans le processus de construction. Par exemple, MSBuild `BeforeBuild` appelle la `CoreBuild` cible `AfterBuild` avant la `CoreBuild` cible principale et la cible après la cible. Par défaut, les cibles vides dans les cibles communes ne font rien, mais vous pouvez passer outre à leur comportement par défaut en définissant les cibles que vous voulez dans un fichier de projet qui importe les cibles communes. En prépondérer les cibles prédéfinies, vous pouvez utiliser les tâches MSBuild pour vous donner plus de contrôle sur le processus de construction.
+Les cibles courantes contiennent un ensemble de cibles vides prédéfinies qui sont appelées avant et après certaines des cibles majeures dans le processus de génération. Par exemple, MSBuild appelle la `BeforeBuild` cible avant la cible principale `CoreBuild` et la `AfterBuild` cible après la `CoreBuild` cible. Par défaut, les cibles vides dans les cibles courantes ne font rien, mais vous pouvez remplacer leur comportement par défaut en définissant les cibles souhaitées dans un fichier projet qui importe les cibles communes. En substituant les cibles prédéfinies, vous pouvez utiliser des tâches MSBuild pour mieux contrôler le processus de génération.
 
 > [!NOTE]
-> Les projets de type SDK ont une importation implicite de cibles *après la dernière ligne du dossier du projet.* Cela signifie que vous ne pouvez pas remplacer les cibles par défaut à moins que vous ne spécifiiez manuellement vos importations telles que décrites dans [Comment : Utilisez msBuild projet SDKs](how-to-use-project-sdk.md).
+> Les projets de style SDK ont une importation implicite des cibles *après la dernière ligne du fichier projet*. Cela signifie que vous ne pouvez pas remplacer les cibles par défaut, sauf si vous spécifiez vos importations manuellement, comme décrit dans Guide pratique [pour utiliser des kits de développement](how-to-use-project-sdk.md)logiciel (SDK) de projet MSBuild.
 
 #### <a name="to-override-a-predefined-target"></a>Pour substituer une cible prédéfinie
 
-1. Identifiez une cible prédéfinie dans les cibles communes que vous souhaitez remplacer. Consultez le tableau ci-dessous pour obtenir la liste complète des cibles que vous pouvez substituer en toute sécurité.
+1. Identifiez une cible prédéfinie dans les cibles courantes que vous souhaitez substituer. Consultez le tableau ci-dessous pour obtenir la liste complète des cibles que vous pouvez substituer en toute sécurité.
 
 2. Définissez la ou les cibles à la fin de votre fichier projet, juste avant la balise `</Project>`. Par exemple :
 
@@ -57,21 +56,21 @@ Les cibles communes contiennent un ensemble d’objectifs vides prédéfinis qui
 
 3. Générez le fichier projet.
 
-Le tableau suivant affiche toutes les cibles dans les cibles communes que vous pouvez remplacer en toute sécurité.
+Le tableau suivant répertorie toutes les cibles dans les cibles courantes que vous pouvez substituer en toute sécurité.
 
 |Nom de la cible|Description|
 |-----------------|-----------------|
 |`BeforeCompile`, `AfterCompile`|Les tâches insérées dans l’une de ces cibles sont exécutées avant ou après la compilation principale. La plupart des personnalisations sont effectuées dans l’une de ces deux cibles.|
 |`BeforeBuild`, `AfterBuild`|Les tâches insérées dans l’une de ces cibles s’exécutent avant ou après tout le reste lors de la génération. **Remarque :** Les cibles `BeforeBuild` et `AfterBuild` sont déjà définies dans les commentaires à la fin de la plupart des fichiers projet. Vous pouvez ainsi ajouter facilement des événements pré-build et post-build à votre fichier projet.|
-|`BeforeRebuild`, `AfterRebuild`|Les tâches insérées dans l’une de ces cibles sont exécutées avant ou après l’appel de la fonctionnalité de regénération principale. L’ordre d’exécution de cible dans `BeforeRebuild` `Clean` *Microsoft.Common.targets* est: , , `Build`, et puis `AfterRebuild`.|
+|`BeforeRebuild`, `AfterRebuild`|Les tâches insérées dans l’une de ces cibles sont exécutées avant ou après l’appel de la fonctionnalité de regénération principale. L’ordre d’exécution des cibles dans *Microsoft. Common. targets* est : `BeforeRebuild` , `Clean` , `Build` , puis `AfterRebuild` .|
 |`BeforeClean`, `AfterClean`|Les tâches insérées dans l’une de ces cibles sont exécutées avant ou après l’appel de la fonctionnalité de nettoyage principale.|
 |`BeforePublish`, `AfterPublish`|Les tâches insérées dans l’une de ces cibles sont exécutées avant ou après l’appel de la fonctionnalité de publication principale.|
 |`BeforeResolveReferences`, `AfterResolveReferences`|Les tâches insérées dans l’une de ces cibles sont exécutées avant ou après la résolution des références d’assembly.|
 |`BeforeResGen`, `AfterResGen`|Les tâches insérées dans l’une de ces cibles sont exécutées avant ou après la génération des ressources.|
 
-## <a name="example-aftertargets-and-beforetargets"></a>Exemple : AfterTargets et BeforeTargets
+## <a name="example-aftertargets-and-beforetargets"></a>Exemple : AfterTargets et BeforeTargets
 
-L’exemple suivant montre `AfterTargets` comment utiliser l’attribut pour ajouter une cible personnalisée qui fait quelque chose avec les fichiers de sortie. Dans ce cas, il copie les fichiers de sortie à un nouveau dossier *CustomOutput*.  L’exemple montre également comment nettoyer les fichiers créés `CustomClean` par l’opération de construction personnalisée avec une cible en utilisant un `BeforeTargets` attribut et en spécifiant que l’opération propre personnalisée s’exécute avant la `CoreClean` cible.
+L’exemple suivant montre comment utiliser l' `AfterTargets` attribut pour ajouter une cible personnalisée qui effectue une opération avec les fichiers de sortie. Dans ce cas, il copie les fichiers de sortie dans un nouveau dossier *CustomOutput*.  L’exemple montre également comment nettoyer les fichiers créés par l’opération de génération personnalisée avec une `CustomClean` cible à l’aide d’un `BeforeTargets` attribut et en spécifiant que l’opération de nettoyage personnalisée s’exécute avant la `CoreClean` cible.
 
 ```xml
 <Project Sdk="Microsoft.NET.Sdk">
@@ -106,13 +105,13 @@ L’exemple suivant montre `AfterTargets` comment utiliser l’attribut pour ajo
 ```
 
 > [!WARNING]
-> Assurez-vous d’utiliser des noms différents des cibles prédéfinis énumérées dans le tableau `CustomAfterBuild`dans `AfterBuild`la section précédente (par exemple, nous avons nommé la cible de construction personnalisée ici , pas ), puisque ces cibles prédéfinies sont annulées par l’importation SDK qui les définit également. Vous ne voyez pas l’importation du fichier cible qui l’emporte sur ces cibles, mais elle `Sdk` est implicitement ajoutée à la fin du fichier de projet lorsque vous utilisez la méthode d’attribut de référencement d’un SDK.
+> Veillez à utiliser des noms différents de ceux des cibles prédéfinies répertoriées dans le tableau de la section précédente (par exemple, nous avons nommé la cible build personnalisée ici `CustomAfterBuild` , pas `AfterBuild` ), car ces cibles prédéfinies sont remplacées par l’importation du kit de développement logiciel (SDK) qui les définit également. L’importation du fichier cible qui remplace ces cibles ne s’affiche pas, mais elle est implicitement ajoutée à la fin du fichier projet lorsque vous utilisez la `Sdk` méthode d’attribut de référencement d’un kit de développement logiciel (SDK).
 
 ## <a name="override-dependson-properties"></a>Substituer des propriétés DependsOn
 
-L’extension des cibles prédéfinies est un moyen facile d’étendre le processus de construction, mais, parce que MSBuild évalue la définition des cibles de façon séquentielle, il n’existe aucun moyen d’empêcher un autre projet qui importe votre projet de dépasser les cibles que vous avez déjà Substituée. Ainsi, par exemple, la dernière cible `AfterBuild` définie dans le fichier projet, une fois que tous les autres projets ont été importés, sera celle utilisée pour la génération.
+La substitution de cibles prédéfinies est un moyen simple d’étendre le processus de génération, mais comme MSBuild évalue la définition des cibles de manière séquentielle, il n’existe aucun moyen d’empêcher un autre projet qui importe votre projet de remplacer les cibles que vous avez déjà remplacées. Ainsi, par exemple, la dernière cible `AfterBuild` définie dans le fichier projet, une fois que tous les autres projets ont été importés, sera celle utilisée pour la génération.
 
-Vous pouvez vous prémunir contre les remplacements imprévus des `DependsOnTargets` cibles en l’emportent sur les propriétés DependsOn qui sont utilisées dans les attributs à travers les cibles communes. Par exemple, la cible `Build` contient une valeur d’attribut `DependsOnTargets` égale à `"$(BuildDependsOn)"`. Vous devez :
+Vous pouvez vous protéger contre les substitutions involontaires de cibles en substituant les propriétés DependsOn utilisées dans `DependsOnTargets` les attributs dans les cibles courantes. Par exemple, la cible `Build` contient une valeur d’attribut `DependsOnTargets` égale à `"$(BuildDependsOn)"`. Considérez les aspects suivants :
 
 ```xml
 <Target Name="Build" DependsOnTargets="$(BuildDependsOn)"/>
@@ -153,7 +152,7 @@ Les projets qui importent vos fichiers projet peuvent substituer ces propriété
 
 #### <a name="to-override-a-dependson-property"></a>Pour substituer une propriété DependsOn
 
-1. Identifiez une propriété DependsOn prédéfinie dans les cibles communes que vous souhaitez remplacer. Consultez le tableau ci-dessous pour obtenir la liste des propriétés DependsOn qui sont communément substituées.
+1. Identifiez une propriété DependsOn prédéfinie dans les cibles courantes que vous souhaitez substituer. Consultez le tableau ci-dessous pour obtenir la liste des propriétés DependsOn qui sont communément substituées.
 
 2. Définissez une autre instance de la ou des propriétés à la fin de votre fichier projet. Incluez la propriété d’origine (par exemple `$(BuildDependsOn)`) dans la nouvelle propriété.
 
@@ -169,11 +168,11 @@ Les projets qui importent vos fichiers projet peuvent substituer ces propriété
 |`CleanDependsOn`|Propriété à substituer si vous souhaitez nettoyer la sortie de votre processus de génération.|
 |`CompileDependsOn`|Propriété à substituer si vous souhaitez insérer des processus personnalisés avant ou après l’étape de compilation.|
 
-## <a name="example-builddependson-and-cleandependson"></a>Exemple : BuildDependsOn et CleanDependsOn
+## <a name="example-builddependson-and-cleandependson"></a>Exemple : BuildDependsOn et CleanDependsOn
 
-L’exemple suivant est `BeforeTargets` `AfterTargets` similaire à l’exemple et à celui-ci, mais montre comment obtenir des fonctionnalités similaires. Il étend la `BuildDependsOn` construction en utilisant `CustomAfterBuild` pour ajouter votre propre tâche qui copie `CustomClean` les `CleanDependsOn`fichiers de sortie après la construction, et ajoute également la tâche correspondante en utilisant .  
+L’exemple suivant est similaire à l' `BeforeTargets` `AfterTargets` exemple et, mais il montre comment obtenir des fonctionnalités similaires. Elle étend la génération à l’aide `BuildDependsOn` de pour ajouter votre propre tâche `CustomAfterBuild` qui copie les fichiers de sortie après la génération, et ajoute également la `CustomClean` tâche correspondante à l’aide de `CleanDependsOn` .  
 
-Dans cet exemple, il s’agit d’un projet de style SDK. Comme mentionné dans la note sur les projets de style SDK plus `Sdk` tôt dans cet article, vous devez utiliser la méthode d’importation manuelle au lieu de l’attribut que Visual Studio utilise quand il génère des fichiers de projet.
+Dans cet exemple, il s’agit d’un projet de type SDK. Comme mentionné dans la remarque à propos des projets de type SDK plus haut dans cet article, vous devez utiliser la méthode d’importation manuelle au lieu de l' `Sdk` attribut que Visual Studio utilise lors de la génération des fichiers projet.
 
 ```xml
 <Project>
@@ -221,10 +220,10 @@ Dans cet exemple, il s’agit d’un projet de style SDK. Comme mentionné dans 
 </Project>
 ```
 
-L’ordre des éléments est important. Le `BuildDependsOn` `CleanDependsOn` fichier et les éléments doivent apparaître après l’importation du fichier standard des cibles SDK.
+L’ordre des éléments est important. Les `BuildDependsOn` `CleanDependsOn` éléments et doivent apparaître après l’importation du fichier de cibles du kit de développement logiciel (SDK) standard.
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Intégration Visual Studio](../msbuild/visual-studio-integration-msbuild.md)
+- [Visual Studio, intégration](../msbuild/visual-studio-integration-msbuild.md)
 - [Concepts MSBuild](../msbuild/msbuild-concepts.md)
-- [.cibles fichiers](../msbuild/msbuild-dot-targets-files.md)
+- [fichiers. targets](../msbuild/msbuild-dot-targets-files.md)

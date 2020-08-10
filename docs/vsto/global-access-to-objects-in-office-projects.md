@@ -30,12 +30,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f05f18201a055ac88e4af90d7b8e4d9db8f4e4b6
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: f76a2e74315980764a2cdffe67af4403552de7fe
+ms.sourcegitcommit: d293c0e3e9cc71bd4117b6dfd22990d52964addc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71253444"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "88041049"
 ---
 # <a name="global-access-to-objects-in-office-projects"></a>Accès global aux objets dans les projets Office
   Lorsque vous créez un projet Office, Visual Studio génère automatiquement une classe nommée `Globals` dans le projet. Vous pouvez utiliser la classe `Globals` pour accéder à plusieurs éléments de projet différents au moment de l'exécution à partir du code du projet.
@@ -49,7 +49,7 @@ ms.locfileid: "71253444"
 
 - Classe `ThisDocument` dans un projet de modèle ou un document Word. Vous pouvez accéder à cet objet à l'aide de la propriété `Globals.ThisDocument` .
 
-- `ThisAddIn` Classe dans un projet de complément VSTO. Vous pouvez accéder à cet objet à l'aide de la propriété `Globals.ThisAddIn` .
+- `ThisAddIn`Classe dans un projet de complément VSTO. Vous pouvez accéder à cet objet à l'aide de la propriété `Globals.ThisAddIn` .
 
 - Tous les rubans de votre projet que vous avez personnalisés en utilisant le Concepteur de ruban. Vous pouvez accéder aux rubans à l'aide de la propriété `Globals.Ribbons` . Pour plus d’informations, consultez [accéder au ruban au moment de l’exécution](../vsto/accessing-the-ribbon-at-run-time.md).
 
@@ -57,21 +57,20 @@ ms.locfileid: "71253444"
 
 - Un objet de fabrique qui vous permet de créer des contrôles de ruban et des éléments hôtes au moment de l'exécution dans les projets qui ciblent [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] ou [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)]. Vous pouvez accéder à cet objet à l'aide de la propriété `Globals.Factory` . Cet objet est une instance d'une classe qui implémente l'une des interfaces suivantes :
 
-  - <xref:Microsoft.Office.Tools.Factory>
+  - [Microsoft. Office. Tools. Factory](xref:Microsoft.Office.Tools.Factory)
 
-  - <xref:Microsoft.Office.Tools.Excel.Factory>
+  - [Microsoft. Office. Tools. Excel. Factory](xref:Microsoft.Office.Tools.Excel.Factory)
 
-  - <xref:Microsoft.Office.Tools.Outlook.Factory>
+  - [Microsoft. Office. Tools. Outlook. Factory](xref:Microsoft.Office.Tools.Outlook.Factory)
 
-  - <xref:Microsoft.Office.Tools.Word.Factory>
+  - [Microsoft. Office. Tools. Word. Factory](xref:Microsoft.Office.Tools.Word.Factory)
 
   Par exemple, vous pouvez utiliser la propriété `Globals.Sheet1` pour insérer le texte dans un contrôle <xref:Microsoft.Office.Tools.Excel.NamedRange> sur `Sheet1` lorsqu'un utilisateur clique sur un bouton du volet Actions dans un projet de niveau document pour Excel.
 
   [!code-vb[Trin_VstcoreProgramming#1](../vsto/codesnippet/VisualBasic/Trin_VstcoreProgrammingExcelVB/Sheet1.vb#1)]
   [!code-csharp[Trin_VstcoreProgramming#1](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingExcelCS/Sheet1.cs#1)]
 
-## <a name="initialize-the-globals-class"></a>Initialiser la classe Globals
- Le code qui tente d’utiliser `Globals` la classe avant l’initialisation du document ou du complément VSTO peut lever une exception au moment de l’exécution. Par exemple, l'utilisation de `Globals` lors de la déclaration d'une variable au niveau de la classe peut échouer, car la classe `Globals` peut ne pas être initialisée avec des références à tous les éléments hôtes avant l'instanciation de l'objet déclaré.
+ Le code qui tente d’utiliser la `Globals` classe avant l’initialisation du document ou du complément VSTO peut lever une exception au moment de l’exécution. Par exemple, l'utilisation de `Globals` lors de la déclaration d'une variable au niveau de la classe peut échouer, car la classe `Globals` peut ne pas être initialisée avec des références à tous les éléments hôtes avant l'instanciation de l'objet déclaré.
 
 > [!NOTE]
 > La classe `Globals` n'est jamais initialisée au moment du design, mais des instances de contrôle sont créées par le concepteur. Cela signifie que si vous créez un contrôle utilisateur qui utilise une propriété de la `Globals` classe à partir d’une classe de contrôle utilisateur, vous devez vérifier si la propriété retourne la **valeur null** avant d’essayer d’utiliser l’objet retourné.
