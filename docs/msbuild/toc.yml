@@ -8,7 +8,7 @@
       href: what-s-new-in-msbuild-15-0.md
     - name: Concepts MSBuild
       items:
-        - name: Vue d'ensemble
+        - name: Vue d’ensemble
           displayName: msbuild concepts
           href: msbuild-concepts.md
         - name: Comment MSBuild génère des projets
@@ -441,6 +441,8 @@
           href: common-msbuild-project-properties.md
         - name: Éléments communs des projets MSBuild
           href: common-msbuild-project-items.md
+        - name: Métadonnées communes d’éléments MSBuild
+          href: common-msbuild-item-metadata.md
         - name: Informations de référence sur la ligne de commande MSBuild
           href: msbuild-command-line-reference.md
         - name: Fichiers .targets MSBuild
