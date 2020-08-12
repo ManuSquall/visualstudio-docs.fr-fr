@@ -8,16 +8,16 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bbe6992bd48cfe28dfe3df20f5540aca76390bf1
-ms.sourcegitcommit: 22deb247ad951e4971f27fdab413b158415d0584
+ms.openlocfilehash: 2d8106463f306ddbc3fe6aefb337935cbe0d316c
+ms.sourcegitcommit: d9254e54079ae01cdf2d07b11f988faf688f80fc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81276486"
+ms.lasthandoff: 08/11/2020
+ms.locfileid: "88114207"
 ---
 # <a name="suggest-a-feature-for-visual-studio"></a>Proposer une fonctionnalité pour Visual Studio
 
-Nous avons introduit une nouvelle expérience de suggestion de fonctionnalités en parallèle de la fonctionnalité actuelle de signalement de problèmes dans la [Communauté des développeurs Visual Studio](https://developercommunity.visualstudio.com). Il s’agit d’une nouvelle façon de vous permettre de vous engager directement avec le flux de travail d’ingénierie de Visual Studio.
+Nous avons introduit une nouvelle expérience de suggestion de fonctionnalités en parallèle de la fonctionnalité actuelle de signalement de problèmes dans la [Communauté des développeurs Visual Studio](https://developercommunity.visualstudio.com). Il s’agit d’une nouvelle façon de vous permettre de participer directement au flux de travail d’ingénierie de Visual Studio.
 
 ![Suggérer un bouton Fonctionnalité sur la Communauté des développeurs](media/suggest-a-feature/suggest-feature-button.png)
 
@@ -83,9 +83,16 @@ L’état **Fermé - Autre produit** signifie que nous ne pouvons pas traiter vo
 
 ![État Closed – Not Enough Info des suggestions dans la Communauté des développeurs](../ide/media/SuggestStates/ClosedNotEnoughInfo.jpg)
 
-**Fermé - Not Enough Info** indique qu’après plusieurs tentatives, nous n’avons pas reçu assez d’informations pour comprendre votre suggestion de fonctionnalités pleinement. Nous devons la fermer, car il n’y a aucune action que nous puissions entreprendre à ce stade.
+**Closed-insuffisant info** indique qu’après plusieurs tentatives, nous n’avons pas reçu suffisamment d’informations pour comprendre entièrement votre suggestion de fonctionnalité. Nous devons la fermer, car il n’y a aucune action que nous puissions entreprendre à ce stade.
 
 Vous avez trouvé les informations que nous recherchions ? Vous pouvez à ce moment-là demander à réactiver le ticket.
+
+- - -
+
+![Fermé-à partir de l’état d’application pour des suggestions sur la communauté des développeurs](../ide/media/SuggestStates/closed-out-of-scope.png)
+
+**Fermé-hors de l’étendue** Si une suggestion ne correspond pas à notre orientation globale du produit, nous allons la fermer en *dehors de l’étendue*. Par exemple, il peut y avoir des investissements similaires dans d’autres membres de la famille de produits Visual Studio. Ou la fonctionnalité suggérée ne peut être pertinente que pour quelques personnes, ce qui rend une extension mieux adaptée pour la fournir.
+
 
 - - -
 
@@ -103,7 +110,7 @@ Vous avez trouvé les informations que nous recherchions ? Vous pouvez à ce mo
 
 ## <a name="faq"></a>Questions fréquentes (FAQ)
 
-### <a name="why-cant-i-see-my-user-voice-idea-in-developer-community"></a>Pourquoi ne puis-je pas voir mon idée de voix d’utilisateur dans la communauté des développeurs ?
+### <a name="why-cant-i-see-my-user-voice-idea-in-developer-community"></a>Pourquoi ne puis-je pas voir mon idée avec l’utilisateur dans la communauté des développeurs ?
 
 Les suggestions de nouvelles fonctionnalités de l’ancien forum UserVoice ont été migrées vers la Communauté des développeurs en fonction de leur impact sur l’ensemble de la Communauté et de nos priorités pour la feuille de route produit. Si vous pensez que nous avons oublié de migrer votre suggestion, créez-en une nouvelle pour la rajouter dans la Communauté des développeurs.
 

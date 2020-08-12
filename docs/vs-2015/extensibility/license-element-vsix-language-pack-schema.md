@@ -8,14 +8,14 @@ ms.assetid: 57dac3b7-0cdd-405c-9af5-30ed9ca45e53
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: f1299d97cbda78049732d3367a9231272397e2ec
-ms.sourcegitcommit: 374f5ec9a5fa18a6d4533fa2b797aa211f186755
+ms.openlocfilehash: 91f0792f64e09292836a3b2d60f669c67903b3a7
+ms.sourcegitcommit: d9254e54079ae01cdf2d07b11f988faf688f80fc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "77477074"
+ms.lasthandoff: 08/11/2020
+ms.locfileid: "88114168"
 ---
-# <a name="license-element-vsix-language-pack-schema"></a>License, élément (schéma du module linguistique VSIX)
+# <a name="license-element-vsix-language-pack-schema"></a>Élément License (schéma du module linguistique VSIX)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 facultatif. Chemin d’accès d’une version localisée du fichier de licence pour l’extension.  
@@ -47,22 +47,48 @@ facultatif. Chemin d’accès d’une version localisée du fichier de licence p
 |-------------|-----------------|  
 |[Élément VSIXLanguagePack](../extensibility/vsixlanguagepack-element-vsix-language-pack-schema.md)|Obligatoire. Fournit l’élément racine d’un module linguistique VSIX.|  
   
-## <a name="text-value"></a>Valeur de texte  
+## <a name="text-value"></a>Valeur texte  
  Chemin d’accès relatif du fichier de licence localisé à afficher.  
   
 ## <a name="remarks"></a>Notes  
- Si l’élément `License` est défini, le texte du fichier de licence désigné s’affiche pendant l’installation et l’utilisateur doit accepter la licence pour continuer.  
+ Si l' `License` élément est défini, le texte du fichier de licence désigné s’affiche pendant l’installation et l’utilisateur doit accepter la licence pour continuer.  
   
-## <a name="element-information"></a>Informations sur l'élément  
-  
-|                 |                                                           |
-|-----------------|-----------------------------------------------------------|
-|    Espace de noms    | `http://schemas.microsoft.com/developer/vsx-schema-lp/2010` |
-|   Nom du schéma   |                 Schéma du module linguistique VSIX                 |
-| Fichier de validation |                VSIXLanguagePackSchema. xsd                 |
-|  Peut être vide   |                      Non applicable                       |
+## <a name="element-information"></a>Informations sur les éléments  
+
+:::row:::
+    :::column:::
+        Espace de noms  
+    :::column-end:::
+    :::column:::
+        `http://schemas.microsoft.com/developer/vsx-schema-lp/2010`
+    :::column-end:::
+:::row-end:::
+:::row:::
+    :::column:::
+        Nom du schéma
+    :::column-end:::
+    :::column:::
+        Schéma du module linguistique VSIX
+    :::column-end:::
+:::row-end:::
+:::row:::
+    :::column:::
+        Fichier de validation
+    :::column-end:::
+    :::column:::
+        VSIXLanguagePackSchema. xsd
+    :::column-end:::
+:::row-end:::
+:::row:::
+    :::column:::
+        Peut être vide
+    :::column-end:::
+    :::column:::
+        Non applicable
+    :::column-end:::
+:::row-end:::
   
 ## <a name="see-also"></a>Voir aussi  
  [Référence de schéma du module linguistique VSX](../extensibility/vsx-language-pack-schema-reference.md)   
- [Localisation des packages VSIX](../extensibility/localizing-vsix-packages.md)   
+ [Localisation de packages VSIX](../extensibility/localizing-vsix-packages.md)   
  [Informations de référence sur le schéma d’extension VSIX 1,0](/previous-versions/dd393700(v=vs.110))

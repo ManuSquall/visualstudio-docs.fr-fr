@@ -12,12 +12,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 8fc43cef8526b2ca79bb0b88a1d56ef4f4a2a65a
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 1f182351cbb0351256ebe32b4ab70543022ed92c
+ms.sourcegitcommit: d9254e54079ae01cdf2d07b11f988faf688f80fc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77275254"
+ms.lasthandoff: 08/11/2020
+ms.locfileid: "88114243"
 ---
 # <a name="command-line-parameter-examples-for-visual-studio-installation"></a>Exemples de paramètres de ligne de commande pour l’installation de Visual Studio
 
@@ -51,7 +51,7 @@ Pour obtenir la liste des charges de travail et des composants que vous pouvez i
    ```
 
   > [!NOTE]
-  > Les deux commandes sont conseillées. La première commande met à jour le programme d’installation de Visual Studio. La seconde commande met à jour l’instance de Visual Studio. Pour éviter l’affichage d’une boîte de dialogue Contrôle de compte d’utilisateur, exécutez l’invite de commande en tant qu’administrateur.
+  > Les deux commandes sont recommandées. La première commande met à jour le programme d’installation de Visual Studio. La seconde commande met à jour l’instance de Visual Studio. Pour éviter l’affichage d’une boîte de dialogue Contrôle de compte d’utilisateur, exécutez l’invite de commande en tant qu’administrateur.
 
 * Installez une instance de bureau de Visual Studio en mode silencieux, avec le module linguistique français, avec un retour uniquement une fois le produit installé.
 
@@ -72,10 +72,11 @@ Pour obtenir la liste des charges de travail et des composants que vous pouvez i
    ```
 
    ```powershell
-   $exitCode = Start-Process -FilePath vs_enterprise.exe -ArgumentList "--installPath", "C:\VS", "--passive", "--wait" -Wait -PassThru
+   $process = Start-Process -FilePath vs_enterprise.exe -ArgumentList "--installPath", "C:\VS", "--passive", "--wait" -Wait -PassThru
+   Write-Output $process.ExitCode 
    ```
 
-   or
+   ou
 
    ```powershell
     $startInfo = New-Object System.Diagnostics.ProcessStartInfo
@@ -223,7 +224,7 @@ Ce paramètre de ligne de commande est **nouveau dans la version 15.9**. Pour p
 
 ## <a name="see-also"></a>Voir aussi
 
-* [Guide d’administrateur de studio visuel](visual-studio-administrator-guide.md)
+* [Guide de l’Administrateur Visual Studio](visual-studio-administrator-guide.md)
 * [Utiliser les paramètres de ligne de commande pour installer Visual Studio](use-command-line-parameters-to-install-visual-studio.md)
-* [Créer une installation hors ligne de Visual Studio](create-an-offline-installation-of-visual-studio.md)
+* [Créer une installation hors connexion de Visual Studio](create-an-offline-installation-of-visual-studio.md)
 * [ID de charge de travail et de composant Visual Studio](workload-and-component-ids.md)

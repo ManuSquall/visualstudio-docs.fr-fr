@@ -1,5 +1,5 @@
 ---
-title: Modèles composites pour Studio Visuel (fr) Microsoft Docs
+title: Modèles composites pour Visual Studio | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: e48ecfb2-f4b5-4d3a-b4a2-7a4d62fa4ec0
@@ -8,130 +8,130 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 500ea8ffe7c33c1d747590ea074bff43fa1a3ab3
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.openlocfilehash: ebc8f4f6c17af54f4dfdcfc0d0d05c5da9d2d88b
+ms.sourcegitcommit: d9254e54079ae01cdf2d07b11f988faf688f80fc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2020
-ms.locfileid: "80698617"
+ms.lasthandoff: 08/11/2020
+ms.locfileid: "88114074"
 ---
 # <a name="composite-patterns-for-visual-studio"></a>Modèles composites pour Visual Studio
-Les modèles composites combinent des éléments d’interaction et de conception dans des configurations distinctes. Voici quelques-uns des modèles composites les plus importants de Visual Studio en ce qui concerne la cohérence :
+Les modèles composites combinent des éléments d’interaction et de conception dans des configurations distinctes. Voici quelques-uns des modèles composites les plus importants dans Visual Studio en ce qui concerne la cohérence :
 
 - [Visualisation des données](../../extensibility/ux-guidelines/composite-patterns-for-visual-studio.md#BKMK_DataVisualization)
 
-- [L’interface utilisateur sur l’objet et le regard](../../extensibility/ux-guidelines/composite-patterns-for-visual-studio.md#BKMK_OnObjectUI)
+- [Interface utilisateur et aperçu en un objet](../../extensibility/ux-guidelines/composite-patterns-for-visual-studio.md#BKMK_OnObjectUI)
 
 - [Modèles de sélection](../../extensibility/ux-guidelines/composite-patterns-for-visual-studio.md#BKMK_SelectionModels)
 
-- [Paramètres de persistance et d’enregistrement](../../extensibility/ux-guidelines/composite-patterns-for-visual-studio.md#BKMK_PersistenceAndSavingSettings)
+- [Persistance et enregistrement des paramètres](../../extensibility/ux-guidelines/composite-patterns-for-visual-studio.md#BKMK_PersistenceAndSavingSettings)
 
 - [Entrée tactile](../../extensibility/ux-guidelines/composite-patterns-for-visual-studio.md#BKMK_TouchInput)
 
 ## <a name="data-visualization"></a><a name="BKMK_DataVisualization"></a>Visualisation des données
 
-### <a name="overview"></a>Vue d'ensemble
- Les graphiques sont un moyen visuel d’agréger et de visualiser les données afin d’améliorer la prise de décision. Ils peuvent aider les utilisateurs confrontés à beaucoup de données, mais peu de sens voir ce qui mérite l’attention et ce qui pourrait avoir besoin d’une action.
+### <a name="overview"></a>Vue d’ensemble
+ Les graphiques sont un moyen visuel d’agréger et de visualiser des données afin d’améliorer la prise de décision. Ils peuvent aider les utilisateurs à être confrontés à beaucoup de données, mais peu d’entre elles, voir ce qui mérite une attention et ce qui peut nécessiter une action.
 
- L’utilisateur bénéficiera d’un graphique si l’une des conditions suivantes est vraie :
+ L’utilisateur bénéficie d’un graphique si l’une des conditions suivantes est vraie :
 
-- Le graphique aidera-t-il les utilisateurs à identifier les tâches sur laquelle ils peuvent agir ?
+- Le graphique aide-t-il les utilisateurs à identifier les tâches sur lesquelles ils peuvent agir ?
 
-- Le graphique permettra-t-il aux utilisateurs de prévoir les conséquences des changements potentiels ?
+- Le graphique permettra-il aux utilisateurs de prévoir les conséquences des modifications potentielles ?
 
-- Le graphique aidera-t-il les utilisateurs à découvrir les tendances et à identifier les modèles ?
+- Le graphique aide-t-il les utilisateurs à découvrir les tendances et à identifier les modèles ?
 
-- Le graphique permettra-t-il aux utilisateurs de prendre de meilleures décisions ?
+- Le graphique permet-il aux utilisateurs de prendre de meilleures décisions ?
 
-- Le graphique aidera-t-il à répondre à une question spécifique que les utilisateurs peuvent avoir dans le contexte donné ?
+- Le graphique aide-t-il à répondre à une question spécifique que les utilisateurs peuvent avoir dans le contexte donné ?
 
 #### <a name="general-rules-for-charts"></a>Règles générales pour les graphiques
 
-- Étiquetez clairement les données. Illustrations sans explication sont juste de jolies images.
+- Étiquetez clairement les données. Les illustrations sans explication sont juste des images.
 
-- Démarrer les haches à zéro pour éviter de biaiser les proportions. La longueur de la ligne et la taille de la barre sont des repères visuels importants pour comprendre les relations entre les points de données.
+- Démarrer les axes à zéro pour éviter l’inclinaison des proportions. La longueur de ligne et la taille de la barre sont des indications visuelles importantes pour comprendre les relations entre les points de données.
 
-- Créez des graphiques, pas des infographies. Les infographies sont des représentations artistiques des données, et leur objectif principal est la narration visuelle. Les graphiques peuvent (et doivent) être visuellement attrayants, mais laissez les données parler d’elles-mêmes.
+- Créer des graphiques, et non infographies. Les infographies sont des représentations artistiques de données, et leur objectif principal est la narration visuelle. Les graphiques peuvent être visuellement attrayants, tout en permettant aux données de parler eux-mêmes.
 
-- Évitez le skeumorphisme, les graphiques à barres picturales, les hashmarks de contraste et d’autres touches infographic.
+- Évitez les skeumorphism, les graphiques à barres, les hashmarks de contraste et les autres touches infographie.
 
-- N’utilisez pas les effets 3D comme élément décoratif. Utilisez-les uniquement s’ils font vraiment partie intégrante de la capacité de l’utilisateur à comprendre l’information.
+- N’utilisez pas d’effets 3D en tant qu’élément décoratif. Utilisez-les uniquement s’ils sont véritablement intégrables à la capacité de l’utilisateur à comprendre les informations.
 
-- Évitez d’utiliser plusieurs lignes et remplissages, car plus de deux couleurs peuvent rendre ce type de graphique difficile à lire et à interpréter correctement.
+- Évitez d’utiliser plusieurs lignes et remplissages, car plus de deux couleurs peuvent rendre ce type de graphique difficile à lire et interpréter correctement.
 
-- N’utilisez pas un graphique (ou une illustration) comme seul moyen de comprendre un concept ou d’interagir avec les données. Cela présente des difficultés pour les utilisateurs ayant une déficience visuelle.
+- N’utilisez pas un graphique (ou une illustration) comme seul moyen de comprendre un concept ou d’interagir avec des données. Cela présente des difficultés pour les utilisateurs ayant des handicaps.
 
-- N’utilisez pas de graphiques comme éléments gratuits ou décoratifs sur une page. En d’autres termes, si un graphique n’ajoute aucune valeur ou n’aide pas les utilisateurs à résoudre un problème, ne l’utilisez pas.
+- N’utilisez pas de graphiques en tant qu’éléments non décoratives ou décoratives sur une page. En d’autres termes, si un graphique n’ajoute pas de valeur ou aide les utilisateurs à résoudre un problème, ne l’utilisez pas.
 
 ### <a name="chart-types"></a>Types de graphiques
- Les types de graphiques utilisés dans Visual Studio comprennent les graphiques à barres, les graphiques en ligne, un graphique à secteurs modifié connu sous le nom de graphique à anneaux ou « carte de beignet », les chronologies, les parcelles de dispersion (également appelées « graphiques à grappes ») et les graphiques Gantt. Chaque type de graphique est utile pour communiquer un type d’information différent.
+ Les types de graphiques utilisés dans Visual Studio incluent des graphiques à barres, des graphiques en courbes, un graphique à secteurs modifié connu sous le nom de graphique en anneau ou « graphique en anneau », des chronologies, des nuages de points (également appelés « diagrammes de cluster ») et des diagrammes de Gantt. Chaque type de graphique est utile pour la communication d’un type d’informations différent.
 
-### <a name="other-charting-considerations"></a>Autres considérations de cartographie
+### <a name="other-charting-considerations"></a>Autres considérations relatives aux graphiques
 
 #### <a name="color"></a>Couleur
- Il existe une palette spécifique de couleurs de cartographie définies pour une utilisation dans Visual Studio. La palette est accessible pour les principaux types de daltonisme, et les couleurs peuvent être différenciées même lorsqu’elles sont utilisées comme tranches de couleur très étroites. Vous pouvez utiliser ces couleurs dans n’importe quelle combinaison pour n’importe quel type de graphique ou graphique dans votre interface utilisateur. Vous n’avez pas besoin d’utiliser les sept couleurs si vous n’avez pas besoin que de nombreuses couleurs distinctes. Ces couleurs n’ont pas été conçues pour être utilisées avec des éléments de premier plan, donc ne placez pas de texte ou de glyphes sur le dessus de ces couleurs. Ces teintes doivent être codées et exposées à la personnalisation de l’utilisateur sous **Tools > Options** (voir couleurs [exposantes pour les utilisateurs finaux](../../extensibility/ux-guidelines/colors-and-styling-for-visual-studio.md#BKMK_ExposingColorsForEndUsers)).
+ Une palette spécifique de couleurs de graphiques est définie pour être utilisée dans Visual Studio. La palette est accessible pour les principaux types de cécité des couleurs, et les couleurs peuvent être différenciées même si elles sont utilisées comme des secteurs de couleur très étroits. Vous pouvez utiliser ces couleurs dans n’importe quelle combinaison pour n’importe quel type de graphique ou graphique dans votre interface utilisateur. Vous n’avez pas besoin d’utiliser les sept couleurs si vous n’avez pas besoin de nombreuses couleurs distinctes. Ces couleurs n’ont pas été conçues pour être utilisées avec des éléments de premier plan, par conséquent, ne placez pas de texte ou de glyphes par-dessus ces couleurs. Ces teintes doivent être codées en dur et exposées à la personnalisation utilisateur sous **outils > options** (voir [exposition des couleurs pour les utilisateurs finaux](../../extensibility/ux-guidelines/colors-and-styling-for-visual-studio.md#BKMK_ExposingColorsForEndUsers)).
 
-|Swatch|Hex|RGB|
+|Echantillon|Hex|RGB|
 |------------|---------|---------|
-|![Échantillon 71B252](../../extensibility/ux-guidelines/media/0711_71b252.png "0711_71B252")|#71B252|113,178,82|
-|![Échantillon BF3F00](../../extensibility/ux-guidelines/media/0711_bf3f00.png "0711_BF3F00")|#BF3F00|191,63,0|
-|![Échantillon FCB714](../../extensibility/ux-guidelines/media/0711_fcb714.png "0711_FCB714")|#FCB714|252,183,20|
-|![Échantillon 903F8B](../../extensibility/ux-guidelines/media/0711_903f8b.png "0711_903F8B")|#903F8B|144,63,139|
-|![Échantillon 117AD1](../../extensibility/ux-guidelines/media/0711_117ad1.png "0711_117AD1")|#117AD1|17,122,209|
-|![Échantillon 79D7F2](../../extensibility/ux-guidelines/media/0711_79d7f2.png "0711_79D7F2")|#79D7F2|121,215,242|
-|![Échantillon B5B5B5](../../extensibility/ux-guidelines/media/0711_b5b5b5.png "0711_B5B5B5")|#B5B5B5|181,181,181|
+|![Échantillon 71B252](../../extensibility/ux-guidelines/media/0711_71b252.png "0711_71B252")|#71B252|113178, 82|
+|![Échantillon BF3F00](../../extensibility/ux-guidelines/media/0711_bf3f00.png "0711_BF3F00")|#BF3F00|191, 63, 0|
+|![Échantillon FCB714](../../extensibility/ux-guidelines/media/0711_fcb714.png "0711_FCB714")|#FCB714|252183, 20|
+|![Échantillon 903F8B](../../extensibility/ux-guidelines/media/0711_903f8b.png "0711_903F8B")|#903F8B|144, 63139|
+|![Échantillon 117AD1](../../extensibility/ux-guidelines/media/0711_117ad1.png "0711_117AD1")|#117AD1|17 122 209|
+|![Échantillon 79D7F2](../../extensibility/ux-guidelines/media/0711_79d7f2.png "0711_79D7F2")|#79D7F2|121 215 242|
+|![Échantillon B5B5B5](../../extensibility/ux-guidelines/media/0711_b5b5b5.png "0711_B5B5B5")|#B5B5B5|181 181 181|
 
-## <a name="on-object-ui-and-peeking"></a><a name="BKMK_OnObjectUI"></a>L’interface utilisateur sur l’objet et le regard
- Cette section donne un contexte à l’aperçu, également connu sous le nom de vue d’aperçu du code, un type d’interface utilisateur sur l’objet unique à Visual Studio.
+## <a name="on-object-ui-and-peeking"></a><a name="BKMK_OnObjectUI"></a>Interface utilisateur et aperçu en un objet
+ Cette section fournit un contexte de lecture, également appelé vue d’aperçu du code, un type d’interface utilisateur sur objet unique à Visual Studio.
 
-### <a name="overview"></a>Vue d'ensemble
+### <a name="overview"></a>Vue d’ensemble
 
-- L’interface utilisateur sur l’objet devrait donner à l’utilisateur plus d’informations ou d’interactivité sans nuire à sa tâche principale.
+- L’interface utilisateur sur l’objet doit fournir à l’utilisateur des informations supplémentaires ou une interactivité sans dépasser de sa tâche principale.
 
-- Le modèle principal pour l’interface utilisateur sur l’objet dans Visual Studio est connu comme "information au point d’attention."
+- Le modèle principal de l’interface utilisateur sur l’objet dans Visual Studio est appelé « informations à l’attention ».
 
-- L’interface utilisateur sur objet dans Visual Studio est soit en ligne, soit flottante et durable ou transitoire.
+- L’interface utilisateur sur l’objet dans Visual Studio est soit en ligne, soit flottante, soit durable soit transitoire.
 
-  - La vue d’aperçu du code, un type d’interface utilisateur sur objet dans Visual Studio, est en ligne et durable.
+  - La vue aperçu du code, un type d’interface utilisateur sur l’objet dans Visual Studio, est inline et durable.
 
-  - CodeLens, un type d’interface utilisateur sur objet dans Visual Studio, flotte et transitoire
+  - CodeLens, un type d’interface utilisateur on-Object dans Visual Studio, est flottant et temporaire
 
-  Comprendre comment fonctionne un morceau de code, ou trouver des détails sur ce code, nécessite souvent un développeur de changer de contexte et d’aller à d’autres contenus ou une autre fenêtre. Ces changements de contexte peuvent être perturbateurs, car les utilisateurs peuvent perdre l’accent sur leur tâche initiale s’ils quittent leur fenêtre principale. En outre, obtenir ce contexte d’origine de retour peut être difficile, surtout si la commutation des fenêtres a causé leur code d’origine d’être obscurci par d’autres interfaces utilisateur.
+  La compréhension du fonctionnement d’un morceau de code, ou la recherche de détails sur ce code, requiert souvent un développeur pour changer de contexte et accéder à d’autres contenus ou à une autre fenêtre. Ces décalages de contexte peuvent être perturbés, car les utilisateurs peuvent perdre leur attention sur leur tâche d’origine s’ils laissent leur fenêtre principale. En outre, il peut être difficile de faire en sorte que le contexte d’origine soit difficile, en particulier si le changement de Windows a provoqué la masquage de son code d’origine par une autre interface utilisateur.
 
-  L’interface utilisateur sur objet suit un modèle appelé « information au point d’attention ». Ces messages, fenêtres contexturées et boîtes de dialogue donnent aux utilisateurs des informations supplémentaires et pertinentes qui ajoutent des éclaircissements ou de l’interactivité sans perdre l’accent sur leur tâche principale. Des exemples d’interface utilisateur sur objet incluent des fenêtres pop-up qui apparaissent lorsqu’un utilisateur plane sur un pointeur sur une icône dans la zone de notification, le mouvement rouge sous un mot mal orthographié, et la vue d’oeil introduite dans Visual Studio 2013.
+  L’interface utilisateur sur l’objet suit un modèle appelé « informations à l’attention ». Ces messages, fenêtres contextuelles et boîtes de dialogue fournissent aux utilisateurs des informations supplémentaires pertinentes qui ajoutent des éclaircissements ou une interactivité sans perdre leur attention à leur tâche principale. Les fenêtres contextuelles qui s’affichent lorsqu’un utilisateur place le pointeur sur une icône dans la zone de notification, le tilde rouge sous un mot mal orthographié et l’aperçu présenté dans Visual Studio 2013 sont des exemples d’interface utilisateur.
 
 ### <a name="decision-points"></a>Points de décision
- Au sein de Visual Studio, il existe plusieurs façons d’utiliser ce modèle d’information au point d’attention. Le choix du bon mécanisme et sa mise en œuvre d’une manière cohérente et prévisible sont essentiels à l’expérience globale. Dans le cas contraire, les utilisateurs pourraient être présentés avec une expérience déroutante ou incohérente qui nuit à se concentrer sur le contenu lui-même.
+ Dans Visual Studio, il existe plusieurs façons d’utiliser ce modèle d’informations à l’attention. Choisir le mécanisme approprié et l’implémenter de manière cohérente et prévisible est essentiel à l’expérience globale. Dans le cas contraire, les utilisateurs peuvent être confrontés à une expérience confuse ou incohérente qui détournent le focus du contenu lui-même.
 
-#### <a name="relationships-between-master-and-detail-content"></a>Relations entre le contenu maître et le contenu détaillé
- Les informations au point d’attention sont utilisées pour afficher une relation entre le contenu sur lequel l’utilisateur se concentre (le contenu « maître ») et le contenu connexe supplémentaire (le contenu « détaillé »). Dans ce modèle, le contenu détaillé est clairement lié au contenu avec lequel l’utilisateur travaille et peut être affiché à proximité du contenu principal. Les informations supplémentaires ou les informations qui ne peuvent pas être résumées sans accabler le contenu principal doivent suivre un autre modèle, comme une fenêtre d’outil.
+#### <a name="relationships-between-master-and-detail-content"></a>Relations entre le contenu maître et le contenu de détail
+ Les informations à l’attention sont utilisées pour afficher une relation entre le contenu sur lequel l’utilisateur se concentre (le contenu « maître ») et le contenu connexe supplémentaire (le contenu « détail »). Dans ce modèle, le contenu détaillé est clairement lié au contenu utilisé par l’utilisateur et peut être affiché à proximité du contenu maître. Informations supplémentaires ou informations qui ne peuvent pas être résumées sans trop d’informations le contenu maître doit suivre un autre modèle, tel qu’une fenêtre outil.
 
-- **Affichez toujours** le contenu détaillé à proximité du contenu principal.
+- Affiche **toujours** le contenu détaillé à proximité du contenu maître.
 
-- **Assurez-vous toujours** que le contenu détaillé permet toujours à un utilisateur de rester concentré sur le contenu principal. Souvent, la meilleure façon d’y parvenir est de rendre le contenu détaillé aussi proche que possible du contenu principal. Cela peut être fait en rendant le contenu détaillé dans une fenêtre pop-up à côté du contenu maître, ou en rendant le contenu détaillé en ligne sous le contenu principal.
+- Vérifiez **toujours** que le contenu détaillé permet toujours à un utilisateur de rester concentré sur le contenu maître. Souvent, la meilleure façon d’y parvenir consiste à afficher le contenu de détail aussi près que possible du contenu maître. Pour ce faire, vous pouvez restituer le contenu de détail dans une fenêtre indépendante en regard du contenu maître ou afficher le contenu de détail en ligne sous le contenu maître.
 
-- **N’utilisez jamais** d’informations au point d’attention qui éloigne l’utilisateur du contenu principal. Si les utilisateurs ont besoin de visualiser le contenu détaillé séparément, exposez une action explicite qui permet à l’utilisateur de le faire.
+- **N’utilisez jamais** d’informations au point d’attention qui éloignent l’utilisateur du contenu maître. Si les utilisateurs ont besoin d’afficher le contenu des détails séparément, exposez une action explicite qui permet à l’utilisateur de le faire.
 
-#### <a name="design-details"></a>Détails de conception
- Une fois que vous avez déterminé que l’interface utilisateur sur l’objet est le bon choix, il ya quatre considérations de conception principales:
+#### <a name="design-details"></a>Détails de la conception
+ Une fois que vous avez déterminé que l’interface utilisateur de l’objet est le bon choix, il existe quatre considérations principales en matière de conception :
 
-1. **Persistance :** le contenu devrait-il être durable ou transitoire ?
-   Les utilisateurs voudront-ils garder les informations visibles pour se référer ou interagir avec? Ou les utilisateurs voudront-ils rapidement jeter un coup d’œil à l’information et ensuite continuer avec leur tâche principale?
+1. **Persistance :** le contenu est-il censé être durable ou transitoire ?
+   Les utilisateurs devront-ils conserver les informations visibles pour y faire référence ou interagir ? Ou les utilisateurs voudront-ils rapidement en savoir plus sur les informations, puis continuer leurs tâches principales ?
 
-2. **Type de contenu :** le contenu sera-t-il informationnel, exploitable ou navigationnel ?
-   L’utilisateur a-t-il besoin de détails supplémentaires sur le contenu du maître ? L’utilisateur doit-il accomplir une tâche qui affecte le contenu principal ? Ou l’utilisateur doit-il être dirigé vers une autre ressource ?
+2. **Type de contenu :** le contenu sera-t-il à titre informatif, exploitable ou de navigation ?
+   L’utilisateur a-t-il besoin de détails supplémentaires sur le contenu maître ? L’utilisateur a-t-il besoin d’effectuer une tâche qui affecte le contenu maître ? Ou l’utilisateur doit-il être dirigé vers une autre ressource ?
 
-3. **Type d’indicateur :** un indicateur ambiant a-t-il un sens ?
-   L’information peut-elle être résumée de manière utile et affichée sans accabler le contenu principal ?
+3. **Type d’indicateur :** un indicateur ambiant a-t-il un sens ?
+   Les informations peuvent-elles être résumées de façon utile et s’afficher sans trop le contenu maître ?
 
-4. **Gestes :** quels gestes seront utilisés pour invoquer et rejeter l’interface utilisateur ?
-   Comment l’utilisateur va-t-il mettre en place le contenu des détails et l’envoyer ? Est-il utile d’ajouter un geste comme l’épinglage pour passer d’un état transitoire à un état durable?
+4. **Gestes :** quels gestes seront utilisés pour appeler et faire disparaître l’interface utilisateur ?
+   Comment l’utilisateur affichera-t-il le contenu détaillé et l’enverra ? Y a-t-il une valeur pour ajouter un mouvement tel que l’épinglage pour basculer entre les États temporaires et durables ?
 
-   Chacun de ces quatre points de décision aura un impact sur les principales composantes de l’interface utilisateur sur l’objet.
+   Chacun de ces quatre points de décision aura un impact sur les principaux composants de l’interface utilisateur de l’objet.
 
-### <a name="on-object-ui-components"></a>Composants d’interface utilisateur sur objet
+### <a name="on-object-ui-components"></a>Composants de l’interface utilisateur sur l’objet
 
-1. Type de conteneur (présentateur de contenu)
+1. Type de conteneur (Content Presenter)
 
     - Virgule flottante
 
@@ -139,23 +139,23 @@ Les modèles composites combinent des éléments d’interaction et de conceptio
 
 2. Type de contenu
 
-    - Informationnel : données qui peuvent être statiques ou dynamiques
+    - Information : données qui peuvent être statiques ou dynamiques
 
-    - Actionnable : commandes qui modifient le contenu principal
+    - Actionable : commandes qui modifient le contenu maître
 
-    - Navigation : liens qui adviment l’utilisateur vers une autre fenêtre ou une autre application, comme MSDN
+    - Navigation : liens qui permettent à l’utilisateur d’accéder à une autre fenêtre ou application, comme MSDN
 
 3. Mouvements
 
     - Invocation
 
-    - Licenciement
+    - Ignorées
 
     - Épinglage
 
     - Autres interactions
 
-4. Modèle de persistance et d’engagement
+4. Persistance et modèle de validation
 
     - Temporaire
 
@@ -167,104 +167,104 @@ Les modèles composites combinent des éléments d’interaction et de conceptio
 
 5. Indicateurs ambiants (facultatif)
 
-    - Squiggle souligner
+    - Souligné en tilde
 
-    - Icône intelligente de tag
+    - Icône de balise active
 
     - Autres indicateurs ambiants
 
-#### <a name="container-content-presenter-type"></a>Type de conteneur (présentateur de contenu)
- Il existe deux options majeures disponibles pour présenter le contenu au point d’attention :
+#### <a name="container-content-presenter-type"></a>Type de conteneur (Content Presenter)
+ Deux options majeures sont disponibles pour présenter le contenu au point d’attention :
 
-1. **Inline:** un présentateur en ligne, comme la vue d’oeil qui a été introduit dans le Visual Studio 2013 Code Editor, fait de l’espace pour de nouveaux contenus en déplaçant le contenu existant.
+1. **Inline :** un présentateur Inline, tel que la vue d’aperçu introduite dans l’éditeur de code Visual Studio 2013, crée de l’espace pour le nouveau contenu en décalant le contenu existant.
 
-    - **Préférez les** présentateurs en ligne si vous vous attendez à ce que les utilisateurs veuillent passer beaucoup de temps à se référer ou à interagir avec le contenu que vous présentez.
+    - **Préférez** les présentateurs Inline si vous vous attendez à ce que les utilisateurs souhaitent consacrer un temps considérable à la référence ou à l’interaction avec le contenu que vous présentez.
 
-    - **Évitez les** présentateurs en ligne si vous vous attendez à ce que les utilisateurs voudront jeter un coup d’œil à l’information que vous présentez, puis continuer avec leur tâche principale avec un minimum de perturbation.
+    - **Évitez** les présentateurs Inline si vous vous attendez à ce que les utilisateurs souhaitent en savoir plus sur les informations que vous présentez, puis poursuivez avec leurs tâches principales avec une interruption minimale.
 
-2. **Flottant :** un présentateur flottant est positionné le plus près possible du contenu sélectionné, mais ne modifie pas la mise en page du contenu existant. Diverses stratégies peuvent être utilisées, telles que l’affichage d’un panneau de contenu flottant sur l’espace blanc disponible le plus proche du symbole sélectionné.
+2. **Flottant :** un présentateur flottant est positionné aussi près que possible du contenu sélectionné, mais ne modifie pas la disposition du contenu existant. Différentes stratégies peuvent être utilisées, telles que l’affichage d’un panneau de contenu flottant sur l’espace blanc le plus proche du symbole sélectionné.
 
-    - **Préférez les** présentateurs flottants si vous vous attendez à ce que les utilisateurs voudront jeter un coup d’œil à l’information que vous présentez, puis continuer avec leur tâche principale avec un minimum de perturbation.
+    - **Préférer** les présentateurs flottants si vous vous attendez à ce que les utilisateurs souhaitent en savoir plus sur les informations que vous présentez, puis poursuivez avec leurs tâches principales avec une interruption minimale.
 
-    - **Évitez les** présentateurs flottants si vous vous attendez à ce que les utilisateurs veuillent passer beaucoup de temps à se référer ou à interagir avec le contenu que vous présentez.
+    - **Évitez** les présentateurs flottants si vous vous attendez à ce que les utilisateurs souhaitent consacrer un temps considérable à la référence ou à l’interaction avec le contenu que vous présentez.
 
 #### <a name="content-type"></a>Type de contenu
- Il existe trois principaux types de contenu qui peuvent être affichés à l’intérieur de n’importe quel conteneur d’interface utilisateur sur l’objet. Toute combinaison de ces types d’informations peut être montrée. Les trois types sont les :
+ Il existe trois types de contenu principaux qui peuvent être affichés dans n’importe quel conteneur d’interface utilisateur. Vous pouvez afficher n’importe quelle combinaison de ces types d’informations. Les trois types sont :
 
-1. **Informations :** la plupart des conteneurs d’interface utilisateur sur l’objet afficheront une sorte de contenu d’information. Le contenu peut représenter des informations sur l’état actuel de l’environnement ou il peut représenter des informations sur un état futur potentiel de l’environnement. Par exemple, il pourrait être utilisé pour montrer l’effet d’une commande particulière, comme une refactoration, sur le code existant.
+1. **Informations :** la plupart des conteneurs d’interface utilisateur sur l’objet affichent un certain type de contenu d’information. Le contenu peut représenter des informations sur l’état actuel de l’environnement ou il peut représenter des informations sur un état futur potentiel de l’environnement. Par exemple, il peut être utilisé pour afficher l’effet d’une commande particulière, telle qu’une refactorisation, sur le code existant.
 
-    - **Utilisez toujours** la représentation canonique des informations que vous affichez. Par exemple, le code doit ressembler à du code, avec mise en évidence de la syntaxe, et doit respecter les paramètres de police et d’autres paramètres de l’environnement que l’utilisateur a définis.
+    - Utilisez **toujours** la représentation canonique des informations que vous affichez. Par exemple, le code doit ressembler à du code, à la mise en surbrillance de la syntaxe et doit respecter la police et les autres paramètres d’environnement définis par l’utilisateur.
 
-    - **Envisagez toujours** de prendre en charge toute action sur le contenu d’information qui serait possible si ces mêmes informations sont présentées comme du contenu maître. Par exemple, si vous présentez du code existant à l’intérieur d’un conteneur d’interface utilisateur sur objet, envisagez fortement de prendre en charge la possibilité de naviguer et de modifier ce code.
+    - Envisagez **toujours** de prendre en charge toutes les actions sur le contenu d’information qui serait possible si ces mêmes informations sont présentées sous forme de contenu maître. Par exemple, si vous présentez du code existant à l’intérieur d’un conteneur d’interface utilisateur, envisagez fortement de prendre en charge la possibilité de parcourir et de modifier ce code.
 
-    - **Envisagez toujours** d’utiliser une couleur de fond différente si vous présentez du contenu d’information qui représente un état futur potentiel.
+    - Envisagez **toujours** d’utiliser une autre couleur d’arrière-plan si vous présentez du contenu informatif qui représente un état futur potentiel.
 
-2. Actionnable : certains conteneurs d’interface utilisateur sur l’objet permettront d’effectuer une action sur le contenu principal, comme l’exécution d’une opération de refactoration.
+2. Actionable : certains conteneurs d’interface utilisateur sur l’objet offrent la possibilité d’effectuer certaines actions sur le contenu maître, comme effectuer une opération de refactorisation.
 
-    - **Positionnez toujours** les commandes exploitables séparément du contenu d’information.
+    - Placez **toujours** les commandes actionnables séparément du contenu d’information.
 
-    - **Activez** et désactivez toujours les actions le cas échéant.
+    - Activez et désactivez **toujours** les actions, le cas échéant.
 
-    - **Consultez toujours** les lignes directrices standard pour représenter les commandes à l’intérieur des boîtes de dialogue.
+    - Reportez-vous **toujours** aux instructions standard pour représenter les commandes dans les boîtes de dialogue.
 
-    - **Maintenez toujours** le nombre d’actions exposées dans un conteneur d’interface utilisateur sur l’objet à un minimum absolu. Interagir avec l’interface utilisateur sur l’objet devrait être une expérience légère et rapide. L’utilisateur ne devrait pas avoir à dépenser de l’énergie sur la gestion du conteneur d’interface utilisateur sur l’objet lui-même.
+    - Conservez **toujours** le nombre d’actions exposées dans un conteneur d’interface utilisateur sur l’objet à un minimum absolu. L’interaction avec l’interface utilisateur sur un objet doit être une expérience légère et rapide. L’utilisateur n’a pas besoin d’utiliser de l’énergie pour gérer le conteneur d’interface utilisateur sur l’objet lui-même.
 
-    - **Considérez toujours** comment et quand un conteneur d’assurance-chômage sur l’objet sera fermé ou rejeté. Comme meilleure pratique, toute action qui conclut le dialogue entre le maître et le contenu détaillé devrait également fermer le conteneur d’interface utilisateur sur l’objet lorsque cette action est invoquée.
+    - Déterminez **toujours** comment et quand un conteneur d’interface utilisateur est fermé ou ignoré. En guise de meilleure pratique, toute action qui conclut le dialogue entre le contenu maître et le contenu de détail doit également fermer le conteneur de l’interface utilisateur sur l’objet lorsque cette action est appelée.
 
-3. **Navigation :** certains conteneurs d’interface utilisateur sur l’objet incluent des liens qui auent l’utilisateur vers une autre fenêtre ou une autre application, comme l’ouverture d’un article MSDN dans le navigateur Web de l’utilisateur.
+3. **Navigation :** certains conteneurs d’interface utilisateur sur l’objet incluent des liens qui permettent à l’utilisateur d’accéder à une autre fenêtre ou application, par exemple en ouvrant un article MSDN dans le navigateur Web de l’utilisateur.
 
-    - **Toujours** prépendez n’importe quel lien de navigation avec "Open" de sorte que les utilisateurs ne seront pas surpris d’être navigué vers un autre contenu.
+    - Ajoutez **toujours** un lien de navigation avec « Open » afin que les utilisateurs ne soient pas surpris par la navigation vers d’autres contenus.
 
-    - **Séparez toujours** les liens de navigation des liens exploitables.
+    - Séparez **toujours** les liens de navigation des liens exploitables.
 
 #### <a name="ambient-indicators-optional"></a>Indicateurs ambiants (facultatif)
- Les indicateurs ambiants peuvent être subtils, y compris le texte présenté dans une couleur contrastante du reste du code, ou évident, y compris les symboles chatouilleux tels que les souligne de gribouillis et les icônes intelligentes de tag. Les indicateurs ambiants communiquent la disponibilité d’informations supplémentaires et pertinentes. Idéalement, ils fournissent des informations utiles, même sans exiger de l’utilisateur d’interagir avec eux.
+ Les indicateurs ambiants peuvent être discrets, y compris le texte présenté dans une couleur contrastée du reste du code, ou bien évident, y compris les symboles tickler tels que les soulignements en tilde et les icônes de balise active. Les indicateurs ambiants communiquent la disponibilité d’informations supplémentaires pertinentes. Idéalement, elles fournissent des informations utiles même sans que l’utilisateur ne soit obligé d’interagir avec elles.
 
-- **Toujours** positionner un indicateur ambiant de sorte qu’il ne distrait pas ou ne submerge pas l’utilisateur. S’il est impossible de positionner un indicateur ambiant de cette manière, envisager une autre solution.
+- Placez **toujours** un indicateur ambiant de manière à ce qu’il ne gêne pas ou ne surcharge pas l’utilisateur. S’il est impossible de positionner un indicateur ambiant d’une telle manière, envisagez une autre solution.
 
-- **Toujours** positionner l’indicateur ambiant aussi proche que possible du contenu qu’il est lié à.
+- Placez **toujours** l’indicateur ambiant aussi près que possible du contenu auquel il est lié.
 
-- **Essayez toujours** de créer un indicateur qui résume l’information qu’il met à disposition. Envisagez de fournir un compte-compte du nombre d’éléments de données disponibles (par exemple, « 3 références » au lieu de simplement « Références ») ou pensez à une autre façon de résumer les données.
+- Essayez **toujours** de créer un indicateur qui synthétise les informations qu’il rend disponibles. Envisagez de fournir un décompte du nombre d’éléments de données disponibles (par exemple, « 3 références » au lieu de « références » simplement) ou d’une autre façon de synthétiser les données.
 
-  - Dans les cas où les données d’un indicateur ne peuvent pas toujours être calculées et affichées, envisagez immédiatement de fournir une rétroaction progressive au fur et à mesure que les valeurs sont calculées. Par exemple, envisagez d’animer les modifications qui reflètent les mises à jour des données disponibles, semblables à la façon dont la tuile en direct sur Windows Phone se rafraîchit à mesure que le nombre d’e-mails non lus augmente.
+  - Dans les cas où les données d’un indicateur ne peuvent pas toujours être calculées et affichées, pensez immédiatement à fournir des commentaires progressifs à mesure que les valeurs sont calculées. Par exemple, envisagez d’animer les modifications qui reflètent les mises à jour des données disponibles, de la même façon que la vignette de messagerie dynamique sur Windows Phone est actualisée à mesure que le nombre d’e-mails non lus augmente.
 
-- **N’ajoutez jamais** plus d’indicateurs qu’un utilisateur ne peut raisonnablement prendre pour un morceau donné de contenu. Les indicateurs ambiants doivent être utiles sans nécessiter d’interaction de la part de l’utilisateur. Les indicateurs perdent leur ambiance s’ils ont besoin de débordement et d’autres contrôles de gestion pour les mettre en vue.
+- **N’ajoutez jamais** plus d’indicateurs qu’un utilisateur ne peut raisonnablement prendre dans le cas d’une partie de contenu donnée. Les indicateurs ambiants doivent être utiles sans nécessiter l’intervention de l’utilisateur. Les indicateurs perdent leur ambiance s’ils nécessitent un dépassement de capacité et d’autres contrôles de gestion pour les mettre en vue.
 
 #### <a name="gestures"></a>Mouvements
- Un aspect clé de permettre à l’utilisateur de maintenir l’accent sur le contenu principal est en soutenant les bons gestes pour ouvrir et rejeter le contenu détaillé supplémentaire.
+ L’un des aspects clés de la possibilité pour l’utilisateur de conserver le focus sur le contenu maître est de prendre en charge les gestes appropriés pour ouvrir et ignorer le contenu de détail supplémentaire.
 
-- **Exigez toujours** que l’utilisateur effectue un geste explicite pour ouvrir le contenu supplémentaire. Les gestes ouverts courants comprennent :
+- Demandez **toujours** à l’utilisateur d’effectuer des mouvements explicites pour ouvrir le contenu supplémentaire. Les gestes ouverts courants sont les suivants :
 
-  - **Hover :** outils ou contenu d’information non interactif
+  - **Pointage :** info-bulles ou contenu informatif non interactif
 
-  - **Commande explicite :** présentateur en ligne
+  - **Commande explicite :** présentateur Inline
 
-  - **Double clic de l’indicateur ambiant :** Fenêtre pop-up CodeLens
+  - **Double-cliquez sur l’indicateur ambiant :** Fenêtre contextuelle CodeLens
 
-- **Rejetez toujours** le contenu du détail chaque fois que l’utilisateur appuie sur la touche Esc.
+- Faites **toujours** disparaître le contenu des détails chaque fois que l’utilisateur appuie sur la touche ÉCHAP.
 
-- **Tenez toujours** compte du contexte de l’interface utilisateur sur l’objet. Pour les présentateurs de contenu qui permettent l’interaction à l’intérieur du conteneur, examinez attentivement s’il faut afficher des informations supplémentaires sur le vol stationnaire, ce qui est susceptible d’être perturbateur pour le flux de travail de l’utilisateur.
+- Tenez **toujours** compte du contexte de l’interface utilisateur sur l’objet. Pour les présentateurs de contenu qui autorisent l’interaction au sein du conteneur, déterminez attentivement s’il faut afficher des informations supplémentaires sur le pointage, ce qui risque de perturber le flux de travail de l’utilisateur.
 
-- **N’affichez jamais de** contenu sur le plan plan stationnaire qui semble être modifiable ou invite à l’interaction utilisateur. Ce comportement peut frustrer les utilisateurs s’ils essaient de déplacer le curseur sur le contenu de détail, comme le comportement standard pour un tooltip est de rejeter immédiatement lorsque le curseur n’est plus sur le contenu maître qui l’a produit.
+- **N'** Affichez jamais le contenu au pointage qui semble modifiable ou qui invite l’interaction de l’utilisateur. Ce comportement peut nuire aux utilisateurs s’ils essaient de déplacer le curseur sur le contenu de détail, car le comportement standard d’une info-bulle consiste à faire disparaître immédiatement lorsque le curseur ne se trouve plus sur le contenu maître qui l’a généré.
 
 ## <a name="selection-models"></a><a name="BKMK_SelectionModels"></a>Modèles de sélection
 
-### <a name="overview"></a>Vue d'ensemble
- Un modèle de sélection est le mécanisme utilisé pour indiquer et confirmer les opérations sur un ou plusieurs objets d’intérêt au sein de l’interface utilisateur. Ce sujet traite des modèles d’interaction de sélection au sein des éditeurs de documents Visual Studio : éditeurs de texte, surfaces de conception et surfaces de modélisation.
+### <a name="overview"></a>Vue d’ensemble
+ Un modèle de sélection est le mécanisme utilisé pour indiquer et confirmer les opérations sur un ou plusieurs objets intéressants au sein de l’interface utilisateur. Cette rubrique décrit les modèles d’interaction de sélection dans les éditeurs de documents Visual Studio : les éditeurs de texte, les aires de conception et les surfaces de modélisation.
 
- Les utilisateurs doivent avoir un moyen d’indiquer à Visual Studio ce sur quoi ils travaillent, et Visual Studio doit répondre de façon prévisible avec des commentaires aux utilisateurs sur ce qu’il fonctionne sur. Les différences ou une mauvaise communication entre l’utilisateur et l’interface utilisateur peuvent faire en sorte que l’utilisateur ne s’en amarie pas à une action, ce qui peut avoir des conséquences imprévues. Souvent, l’erreur passe inaperçue jusqu’à ce que l’utilisateur voit que quelque chose manque ou a changé. Les modèles de sélection sont donc l’une des pièces les plus critiques de la conception de l’interface utilisateur. Bien que les modèles de sélection dans Visual Studio sont compatibles avec Windows, il ya de légères variations.
+ Les utilisateurs doivent avoir un moyen d’indiquer à Visual Studio ce qu’ils travaillent, et Visual Studio doit répondre de façon prévisible aux commentaires des utilisateurs sur ce qu’il utilise. Des différences ou une communication incorrecte entre l’utilisateur et l’interface utilisateur peuvent empêcher l’utilisateur de remarquer une action, ce qui peut avoir des conséquences inattendues. Souvent, l’erreur est inaperçue jusqu’à ce que l’utilisateur constate qu’un problème est manquant ou a changé. Les modèles de sélection sont donc l’un des éléments les plus importants de la conception de l’interface utilisateur. Bien que les modèles de sélection dans Visual Studio soient cohérents avec Windows, il y a de légères variations.
 
- Dans Visual Studio, comme dans Windows, les modèles de sélection diffèrent selon le contexte dans lequel l’interaction se produit. Les sélections peuvent se faire dans quatre types d’objets :
+ Dans Visual Studio, comme dans Windows, les modèles de sélection diffèrent selon le contexte dans lequel l’interaction se produit. Vous pouvez effectuer des sélections dans quatre types d’objets :
 
 - Texte
 
 - Objets graphiques
 
-- Listes et arbres
+- Listes et arborescences
 
 - Grilles
 
-  Dans ces objets, il existe trois types de sélections :
+  Au sein de ces objets, il existe trois types de sélection :
 
 - Contiguë
 
@@ -272,168 +272,168 @@ Les modèles composites combinent des éléments d’interaction et de conceptio
 
 - Région
 
-#### <a name="scope"></a>Étendue
- L’élément le plus important de la sélection est de s’assurer que l’utilisateur sait dans quelle fenêtre il travaille (activation) et où l’accent est situé (sélection). Visual Studio étend la fonctionnalité de gestion des fenêtres dans Windows, mais le schéma d’activation est le même: interagir avec une fenêtre apporte la mise au point à la fenêtre. Visual Studio dispose de deux indicateurs d’activation : l’un pour les fenêtres de documents et l’autre pour les fenêtres d’outils.
+#### <a name="scope"></a>Scope (Étendue)
+ Le composant le plus important de la sélection consiste à s’assurer que l’utilisateur sait dans quelle fenêtre il travaille (activation) et où se trouve le focus (sélection). Visual Studio étend les fonctionnalités de gestion des fenêtres dans Windows, mais le schéma d’activation est le même : l’interaction avec une fenêtre met le focus sur la fenêtre. Visual Studio a deux indicateurs d’activation : un pour les fenêtres de document et un pour les fenêtres outil.
 
- Pour les fenêtres de document, la fenêtre active est indiquée par un onglet de fenêtre de document venant à l’avant et changeant sa couleur de fond :
+ Pour les fenêtres de document, la fenêtre active est indiquée par un onglet de fenêtre de document à l’avant et en modifiant sa couleur d’arrière-plan :
 
  ![Sélection de l'onglet actif dans Visual Studio](../../extensibility/ux-guidelines/media/0713-01_activetab.png "0713-01_ActiveTab")
 
- **Sélection active de l’onglet**
+ **Sélection de l’onglet actif**
 
- Pour les fenêtres d’outils, la fenêtre active est indiquée par un changement de couleur de la zone de barre de titre de la fenêtre d’outil :
+ Pour les fenêtres outil, la fenêtre active est indiquée par une modification de la couleur de la zone de barre de titre de la fenêtre outil :
 
  ![Sélection de la fenêtre Outil active dans Visual Studio](../../extensibility/ux-guidelines/media/0713-02_activetoolwindow.png "0713-02_ActiveToolWindow")
 
- **Fenêtre d’outil active affichant la sélection primaire d’un nœud**
+ **Fenêtre outil active présentant la sélection principale d’un nœud**
 
  ![Sélection de la fenêtre Outil inactive dans Visual Studio](../../extensibility/ux-guidelines/media/0713-03_inactivetoolwindow.png "0713-03_InactiveToolWindow")
 
- **Fenêtre d’outil inactive, montrant la sélection latente du nœud**
+ **Fenêtre outil inactive, présentant la sélection latente du nœud**
 
- Une fois qu’une fenêtre est active, son objectif est indiqué selon les modèles de sélection décrits dans cette section des lignes directrices.
+ Une fois qu’une fenêtre est active, son focus est indiqué en fonction des modèles de sélection décrits dans cette section des instructions.
 
 #### <a name="context"></a>Context
- Visual Studio a été conçu pour conserver un concept de contexte solide, en gardant une trace de l’endroit où l’utilisateur travaille. Une seule fenêtre est active, qu’il s’agisse d’un outil ou d’une fenêtre de document. Cependant, la fenêtre de document la plus haute conserve toujours une sélection latente. Bien que l’accent puisse être mis sur une fenêtre d’outil, la fenêtre de document qui a été la dernière active affiche une sélection, même dans un état inactif. Ceci est fait pour conserver le contexte de l’utilisateur dans le document qu’ils éditaient, ce qui montre que Visual Studio a conservé son état afin qu’il puisse revenir et passer de manière transparente entre les fenêtres d’outils et les fenêtres de documents.
+ Visual Studio a été conçu pour conserver un concept solide de contexte, en gardant le suivi de l’emplacement de travail de l’utilisateur. Une seule fenêtre est active, qu’il s’agisse d’un outil ou d’une fenêtre de document. Toutefois, la fenêtre de document en haut conserve toujours une sélection latente. Même si le focus peut se trouver dans une fenêtre outil, la fenêtre de document qui était active affiche une sélection, même dans un état inactif. Cela permet de conserver le contexte de l’utilisateur dans le document qu’il a modifié, en les signalant que Visual Studio a conservé son état afin qu’il puisse retourner et basculer en toute transparence entre les fenêtres outil et les fenêtres de document.
 
 ### <a name="text-selection"></a>Sélection de texte
- Les éditeurs de Visual Studio qui sont strictement textuels, tels que l’éditeur de texte intégré, utilisent le même modèle de sélection de texte et l’apparence décrite dans la page [Mouse and Pointers](/windows/desktop/uxguide/inter-mouse) des lignes directrices d’interaction de l’expérience utilisateur de Windows sur MSDN. L’accent sur l’entrée dans l’éditeur de texte est indiqué par une barre verticale appelée le point d’insertion. Le point d’insertion est un pixel unique d’épaisseur et coloré comme l’inverse de tout ce qui apparaît derrière elle. Il clignote en fonction du taux fixé par le réglage du **taux de clignotement Cursor** dans l’onglet **Vitesse** de la pomme **de clavier** dans le panneau de contrôle.
+ Les éditeurs Visual Studio qui sont strictement textuels, tels que l’éditeur de texte intégré, utilisent le même modèle de sélection de texte et l’apparence décrits dans la page [souris et pointeurs](/windows/desktop/uxguide/inter-mouse) des instructions d’interaction avec l’expérience utilisateur Windows sur MSDN. Le focus d’entrée dans l’éditeur de texte est indiqué par une barre verticale appelée point d’insertion. Le point d’insertion est un pixel épais et coloré comme inverse de tout ce qui se trouve derrière lui. Il clignote en fonction de la vitesse définie par le paramètre **taux de clignotement du curseur** dans l’onglet **Vitesse** de l’applet clavier du panneau de **configuration** .
 
-#### <a name="contiguous-and-disjoint-selection"></a>Sélection contigue et décousue
- La sélection au sein de l’éditeur de texte est contigu seulement. Les sélections de textes disjoints ne sont pas autorisées, mais doivent être abordées dans les éditeurs d’objets graphiques. Lorsque le pointeur de souris de l’utilisateur est au-dessus d’une zone de texte, le curseur change à un I-faisceau. Un seul clic place le point d’insertion dans l’éditeur de texte à l’emplacement du clic. Tenir le bouton de la souris vers le bas commence un point culminant de sélection et la libération du bouton de la souris termine le point culminant de sélection.
+#### <a name="contiguous-and-disjoint-selection"></a>Sélection contiguë et disjointe
+ La sélection dans l’éditeur de texte est contiguë uniquement. Les sélections de texte disjoint ne sont pas autorisées, mais elles doivent être traitées dans les éditeurs d’objets graphiques. Lorsque le pointeur de la souris de l’utilisateur se trouve sur une zone de texte, le curseur se transforme en I. Un clic simple place le point d’insertion dans l’éditeur de texte à l’emplacement de clic. Maintenez le bouton de la souris enfoncé pour démarrer une sélection et relâcher le bouton de la souris pour mettre la sélection en surbrillance.
 
-#### <a name="region-selection-box-selection"></a>Sélection de la région (sélection de la boîte)
- Visual Studio prend en charge les sélections de régions dans l’éditeur de texte, et c’est ce qu’on appelle la sélection de la boîte. La sélection de la boîte permet à l’utilisateur de sélectionner une région de texte qui ne suit pas le flux texte régulier. Comme pour la sélection de texte standard, la sélection doit être contigu. La sélection de la boîte est initiée en maintenant la clé Alt tout en traînant avec la souris. La sélection des boîtes peut également être initiée en maintenant les touches Alt et Shift tout en utilisant les touches fléchées pour indiquer la région de sélection. La sélection de la boîte utilise le point culminant de sélection normal et montre le curseur de point d’insertion clignotant à la fin de la zone de sélection.
+#### <a name="region-selection-box-selection"></a>Sélection de la région (sélection de zone)
+ Visual Studio prend en charge les sélections de régions dans l’éditeur de texte, et c’est ce que l’on appelle la sélection de zone. La sélection de zone permet à l’utilisateur de sélectionner une zone de texte qui ne suit pas le flux de texte normal. Comme pour la sélection de texte standard, la sélection doit être contiguë. La sélection de la zone est lancée en maintenant la touche Alt enfoncée tout en faisant glisser la souris. La sélection de zone peut également être lancée en maintenant les touches Alt et Maj enfoncées tout en utilisant les touches de direction pour indiquer la région de sélection. La sélection de zone utilise la sélection normale en surbrillance et affiche le curseur de point d’insertion clignotant à la fin de la zone de sélection.
 
- ![Sélection régionale&#41; boîte &#40;dans Visual Studio](../../extensibility/ux-guidelines/media/0713-04_boxselection.png "0713-04_BoxSelection")
+ ![Boîte de &#40;régionale&#41; sélection dans Visual Studio](../../extensibility/ux-guidelines/media/0713-04_boxselection.png "0713-04_BoxSelection")
 
- **Sélection de la région (boîte) en Visual Studio**
+ **Sélection d’une région (zone) dans Visual Studio**
 
-#### <a name="text-selection-appearance"></a>Apparence de sélection de texte
- Les couleurs utilisées pour la sélection active et inactive dans l’éditeur peuvent être personnalisées. Pour personnaliser l’apparence visuelle de l’éditeur, un utilisateur peut aller à **Tools > Options**, puis regarder sous Environnement > **Fonts et Couleurs > Éditeur de texte**.
+#### <a name="text-selection-appearance"></a>Apparence de la sélection de texte
+ Les couleurs utilisées pour la sélection active et inactive dans l’éditeur peuvent être personnalisées. Pour personnaliser l’apparence visuelle de l’éditeur, un utilisateur peut accéder à **outils > options**, puis sous **environnement > polices et couleurs > éditeur de texte**.
 
 ### <a name="graphical-selection"></a>Sélection graphique
 
 #### <a name="interaction"></a>Interaction
- La sélection d’objets graphiques peut être complexe et dépend d’un certain nombre de facteurs :
+ La sélection d’objets graphiques peut être complexe et dépend d’un certain nombre de facteurs :
 
-- **Le modèle de sélection principal de l’éditeur.** Les éditeurs qui contiennent des objets graphiques peuvent également être utilisés pour modifier du texte ou des grilles. Par exemple, l’éditeur peut être un éditeur basé sur le texte qui prend également en charge le placement d’objets graphiques, tels que le concepteur Visual Studio XAML. Prendre en charge plusieurs types d’objets peut affecter la façon dont l’utilisateur sélectionne des groupes constitués de différents types d’objets.
+- **Modèle de sélection principal de l’éditeur.** Les éditeurs qui contiennent des objets graphiques peuvent également être utilisés pour modifier du texte ou des grilles. Par exemple, l’éditeur peut être un éditeur textuel qui prend également en charge le placement d’objets graphiques, tels que le concepteur XAML Visual Studio. La prise en charge de plusieurs types d’objets peut affecter la façon dont l’utilisateur sélectionne des groupes composés de différents types d’objets.
 
-- **Soutien aux états de sélection primaire et secondaire.** Un éditeur peut fournir des états de sélection primaire et secondaire afin que les objets puissent être édités à l’unisson, alignés les uns avec les autres, resized ensemble, et ainsi de suite.
+- **Prise en charge des États de sélection primaire et secondaire.** Un éditeur peut fournir des États de sélection principaux et secondaires afin que les objets puissent être modifiés en interaction, alignés les uns avec les autres, redimensionnés ensemble, etc.
 
-- **Support d’édition sur place.** Les éditeurs peuvent également permettre l’édition du contenu de leurs objets graphiques. Par exemple, une forme de rectangle peut également contenir du texte à l’intérieur qui peut être modifié par l’utilisateur. En outre, ce texte pourrait être centré ou justifié. L’édition place implique un niveau plus détaillé d’interaction utilisateur et nécessite donc un ensemble approprié d’indices visuels pour présenter des informations d’état à l’utilisateur.
+- **Prise en charge de la modification sur place.** Les éditeurs peuvent également permettre la modification du contenu de leurs objets graphiques. Par exemple, une forme de rectangle peut également contenir du texte à l’intérieur qui peut être modifié par l’utilisateur. En outre, ce texte peut être centré ou justifié. La modification sur place implique un niveau d’interaction utilisateur plus détaillé et requiert donc un ensemble approprié de signaux visuels pour la présentation des informations d’État à l’utilisateur.
 
-#### <a name="mouse-interaction"></a>Interaction de souris
+#### <a name="mouse-interaction"></a>Interaction avec la souris
 
 |Entrée|Résultats|
 |-----------|------------|
-|Cliquez sur un objet non sélectionné|Sélectionne l’objet et affiche une ligne pointillée et des poignées de sélection, si l’objet est resizable.|
-|Cliquez sur un objet sélectionné|Active l’édition place si l’objet le prend en charge. Cliquer à l’extérieur de l’objet désactive le mode d’édition place.|
-|Double-clic d’un objet|Ouvre le code derrière l’objet pour l’édition, et peut insérer un gestionnaire d’événement par défaut, le cas échéant.|
-|Pointez vers un objet|Change le pointeur au curseur de mouvement. L’apparence de l’objet, comme sa luminosité ou sa couleur, peut changer.|
-|Pointez vers une poignée de sélection|Change le pointeur au curseur de resize. Pour les objets qui prennent en charge la rotation, certaines poignées de sélection peuvent changer le pointeur en curseur de rotation au fur et à mesure que le pointeur est positionné différemment (par exemple, déplacé plus loin) en ce qui concerne la poignée de sélection.|
-|Glissement|Même si l’objet n’est pas préalablement sélectionné, change le pointeur vers le curseur de mouvement et déplace l’objet.|
-|L’éditeur perd son attention|Désactiver le mode d’édition en place, bien que l’objet conserve le contenu et l’apparence qu’il avait lors de son dernier état d’opération/sélection.|
-|Sélection d’objets|Indiqué par une bordure, une ligne pointillée, ou tout autre traitement visuellement distinct pour mettre en évidence la limite de l’objet.|
-|Resize un objet sélectionné|Indiqué par les poignées de sélection.<br /><br /> Un objet resizable a huit poignées, représentant chaque direction dans laquelle il peut être resized. Moins de poignées peuvent être utilisées si l’objet ne peut être resized que dans certaines directions. Lorsque l’utilisateur taille un objet jusqu’à l’endroit où huit poignées ne seraient pas interactives, alors quatre poignées peuvent être utilisées. La taille de la poignée doit être liée à la bordure de fenêtre et aux mesures de bord avec la fonction **aPI GetSystemMetrics** à la taille proportionnelle à la résolution d’affichage.<br /><br /> ![Poignées de redimensionnement](../../extensibility/ux-guidelines/media/0713-05_resizehandles.png "0713-05_ResizeHandles")|
+|Cliquer sur un objet non sélectionné|Sélectionne l’objet et affiche une ligne en pointillés et des poignées de sélection, si l’objet est redimensionnable.|
+|Cliquer sur un objet sélectionné|Active la modification sur place si l’objet la prend en charge. En cliquant en dehors de l’objet, vous désactivez le mode d’édition sur place.|
+|Double-cliquez sur un objet.|Ouvre le code derrière l’objet pour modification et peut insérer un gestionnaire d’événements par défaut, le cas échéant.|
+|Pointer vers un objet|Remplace le pointeur par le curseur de déplacement. L’apparence de l’objet, telle que sa luminosité ou sa couleur, peut changer.|
+|Pointer sur une poignée de sélection|Remplace le pointeur par le curseur de redimensionnement. Pour les objets qui prennent en charge la rotation, certains handles de sélection peuvent remplacer le pointeur par un curseur de rotation, car le pointeur est positionné différemment (par exemple, déplacé plus loin) par rapport au handle de sélection.|
+|Glissement|Même si l’objet n’est pas sélectionné précédemment, remplace le pointeur par le curseur déplacer et déplace l’objet.|
+|L’éditeur perd le focus|Désactive le mode d’édition sur place, bien que l’objet conserve le contenu et l’apparence qu’il avait lors de sa dernière opération/état de sélection.|
+|Sélection de l’objet|Indiqué par une bordure, une ligne en pointillés ou un autre traitement visuel distinct pour mettre en surbrillance la limite de l’objet.|
+|Redimensionner un objet sélectionné|Indiqué par les poignées de sélection.<br /><br /> Un objet redimensionnable a huit handles, représentant chaque direction dans laquelle il peut être redimensionné. Moins de handles peuvent être utilisés si l’objet ne peut être redimensionné que dans certaines directions. Lorsque l’utilisateur redimensionne un objet jusqu’à ce que huit descripteurs ne soient pas interactifs, quatre descripteurs peuvent être utilisés. Les tailles des handles doivent être liées à la bordure de la fenêtre et aux métriques de l’arête avec la fonction d’API **GetSystemMetrics** pour une taille proportionnelle à la résolution d’affichage.<br /><br /> ![Poignées de redimensionnement](../../extensibility/ux-guidelines/media/0713-05_resizehandles.png "0713-05_ResizeHandles")|
 |Faire pivoter un objet sélectionné|![Poignées de rotation](../../extensibility/ux-guidelines/media/0713-06_rotate.png "0713-06_Rotate")|
 
-#### <a name="keyboard-interaction"></a>Interaction clavier
+#### <a name="keyboard-interaction"></a>Interaction du clavier
 
 |Entrée|Résultats|
 |-----------|------------|
-|Onglet|Déplace l’indicateur de mise au point parmi l’ordre logique des objets dans l’éditeur. Cela peut être de gauche à droite ou de haut en bas en fonction de la valeur de propriété **TabIndex** (ou équivalent), de l’ordre de création d’objets et de l’objectif global de l’éditeur. Shift-Tab inverse la direction de l’indicateur de mise au point.|
-|Espace|Active le mode panoramique pendant que la frappe est maintenue. Une entrée supplémentaire de la souris est nécessaire pour panoramiquer la position du port de vue.|
-|Ctrl+Barre d'espace|Active le mode zoom pendant que la frappe est maintenue. Une entrée supplémentaire de la souris est nécessaire pour augmenter et diminuer le facteur de zoom.|
-|Signe Ctrl-Alt-Minus|Diminue le facteur zoom d’un niveau.|
-|Signe de Ctrl-Alt-Plus|Augmente le facteur zoom d’un niveau.|
-|Shift OU Ctrl|Ajoute l’objet au groupe de sélection. Ctrl vous permet également de supprimer les objets individuellement du groupe de sélection.|
-|Entrez|Exécute la commande par défaut pour l’objet (généralement ouvert ou modifier).|
-|F2|Active l’édition place de l’objet.|
-|Touches de direction|Déplace l’objet sélectionné dans la direction de la clé de flèche pressée, par petites incréments (par exemple, 1 pixel à la fois)|
-|Touches Ctrl-flèche|Déplace l’objet sélectionné dans la direction de la clé de flèche pressée, par tranches plus grandes (par exemple, 10 pixels à la fois)|
-|Touches de shift-arrow|Resizes l’objet sélectionné dans la direction respective, par petites incréments (par exemple, 1 pixel à la fois)|
-|Touches de flècheS Ctrl-Shift|Resizes l’objet sélectionné dans la direction respective, par tranches plus grandes (par exemple, 10 pixels à la fois)|
+|Onglet|Déplace l’indicateur de focus parmi l’ordre logique des objets dans l’éditeur. Il peut s’agir de gauche à droite ou de haut en bas en fonction de la valeur de propriété **TabIndex** (ou équivalente), de l’ordre de création de l’objet et de l’objectif global de l’éditeur. Maj + Tab inverse le sens de l’indicateur de focus.|
+|Espace|Active le mode panoramique pendant que la frappe est maintenue. Une entrée de souris supplémentaire est nécessaire pour effectuer un panoramique de la position de la fenêtre d’affichage.|
+|Ctrl+Barre d'espace|Active le mode de zoom lorsque la frappe est maintenue. Une entrée de souris supplémentaire est nécessaire pour augmenter et diminuer le facteur de zoom.|
+|CTRL + ALT + signe moins|Réduit le facteur de zoom d’un niveau.|
+|CTRL + ALT + signe plus|Augmente le facteur de zoom d’un niveau.|
+|Maj ou Ctrl|Ajoute l’objet au groupe de sélection. La touche Ctrl vous permet également de supprimer des objets individuellement du groupe de sélection.|
+|Entrez|Exécute la commande par défaut pour l’objet (généralement Open ou Edit).|
+|F2|Active la modification sur place pour l’objet.|
+|Touches de direction|Déplace le ou les objets sélectionnés dans le sens de la touche de direction appuyée, par petits incréments (par exemple, 1 pixel à la fois)|
+|CTRL + touches de direction|Déplace le ou les objets sélectionnés dans le sens de la touche de direction appuyée, en incréments plus larges (par exemple, 10 pixels à la fois)|
+|Maj + touches de direction|Redimensionne le ou les objets sélectionnés dans la direction correspondante, par petits incréments (par exemple, 1 pixel à la fois)|
+|Ctrl + Maj + touches de direction|Redimensionne le ou les objets sélectionnés dans le sens respectif, en incréments plus larges (par exemple, 10 pixels à la fois)|
 
- Lorsque les utilisateurs modifient les contrôles en place, il peut être logique que les objets se resizent automatiquement avec l’entrée de l’utilisateur. Par exemple, si l’utilisateur modifie un contrôle d’étiquette, alors l’étiquette doit se développer pour afficher le texte que l’utilisateur vient d’taper. Si cela n’est pas fait, l’utilisateur doit resize le contrôle manuellement après l’édition du texte. Si l’utilisateur a beaucoup de contrôles, cela devient une tâche rote et improductive.
+ Lorsque les utilisateurs modifient les contrôles en place, il peut être judicieux que les objets se redimensionnent automatiquement avec l’entrée d’utilisateur. Par exemple, si l’utilisateur modifie un contrôle Label, l’étiquette doit croître pour afficher le texte que l’utilisateur vient de taper. Si ce n’est pas le cas, l’utilisateur doit redimensionner le contrôle manuellement après la modification du texte. Si l’utilisateur possède un grand nombre de contrôles, cela devient une tâche tâches répétitives et unproduction.
 
 #### <a name="graphical-containers"></a>Conteneurs graphiques
- Dans certains cas, les éditeurs graphiques fournissent des conteneurs pour d’autres objets graphiques, tels que le contrôle du panneau de formulaires Windows ou le contrôle de mise en page de grille dans le concepteur HTML. Si votre éditeur fournit des conteneurs pour d’autres objets graphiques, alors le modèle de sélection suivant ne doit être utilisé que pour le conteneur (les objets dans le conteneur suivent le modèle standard tel que décrit ci-dessus) :
+ Dans certains cas, les éditeurs graphiques fournissent des conteneurs pour d’autres objets graphiques, tels que le contrôle de panneau Windows Forms ou le contrôle de disposition de grille dans le Concepteur HTML. Si votre éditeur fournit des conteneurs pour d’autres objets graphiques, le modèle de sélection suivant doit être utilisé uniquement pour le conteneur (les objets du conteneur suivent le modèle standard, comme décrit ci-dessus) :
 
 |Entrée|Résultats|
 |-----------|------------|
-|En un seul clic sur le conteneur|Sélectionne l’objet de conteneur sans sélectionner directement aucun des objets contenus. Le conteneur peut être déplacé et/ou resized avec l’entrée standard de la souris et du clavier (comme décrit ci-dessus). Les objets contenus sont déplacés par rapport au conteneur, mais les objets contenus ne sont pas resized à moins qu’ils ne soient également sélectionnés directement.|
-|Planer au-dessus de la région limite du conteneur|Transforme la souris en curseur de mouvement, indiquant que le récipient peut être déplacé.|
-|Faites glisser la région limite du conteneur|Change la souris vers le curseur de déplacement et déplace le récipient (et les objets contenus à l’intérieur). Le conteneur ne peut pas être déplacé sans d’abord être sélectionné en un seul clic.|
-|En un seul clic sur un objet à l’intérieur du conteneur|Désélections le conteneur (s’il est sélectionné) et ne sélectionne que l’objet cliqué.|
-|Shift-click OU Ctrl-cliquez sur un objet et/ou un conteneur contenu|Ajoute l’objet cliqué à un groupe de sélection ou de sélection existant. Si l’objet cliqué est déjà membre du groupe de sélection, il est retiré du groupe de sélection.|
+|Un simple clic sur le conteneur|Sélectionne l’objet conteneur sans sélectionner directement les objets qu’il contient. Le conteneur peut être déplacé et/ou redimensionné avec une entrée de souris et de clavier standard (comme décrit ci-dessus). Les objets contenus sont déplacés par rapport au conteneur, mais les objets contenus ne sont pas redimensionnés, sauf s’ils sont également directement sélectionnés.|
+|Pointez sur la région des limites du conteneur|Convertit la souris en curseur de déplacement, indiquant que le conteneur peut être déplacé.|
+|Faites glisser la région limite du conteneur|Remplace la souris par le curseur de déplacement et déplace le conteneur (et les objets contenus dans). Le conteneur ne peut pas être déplacé sans avoir préalablement sélectionné un seul clic.|
+|Un simple clic sur un objet dans le conteneur|Désélectionne le conteneur (s’il est sélectionné) et sélectionne uniquement l’objet sur lequel vous avez cliqué.|
+|Maj + clic ou Ctrl + clic sur un objet et/ou un conteneur contenu|Ajoute l’objet cliqué à un groupe de sélection ou de sélection existant. Si l’objet cliqué est déjà membre du groupe de sélection, il est supprimé du groupe de sélection.|
 
- Les objets contenus doivent adhérer au modèle de sélection de base tel que décrit dans la section précédente. À partir des tests de convivialité du concepteur de formulaires Windows, les utilisateurs s’attendaient à un accès sans faille aux objets contenus sans intervenir (imposé par l’objet de confinement).
+ Les objets contenus doivent adhérer au modèle de sélection de base comme décrit dans la section précédente. Du test de l’utilisation de Windows Forms Designer, les utilisateurs attendaient un accès transparent aux objets contenus sans étapes intermédiaires (imposées par l’objet de relation contenant-contenu).
 
-#### <a name="disjoint-and-region-selections"></a>Sélections disjointes et régions
- Les éditeurs d’objets graphiques doivent prendre en charge les sélections de disjoints. Veuillez noter que ce graphique ne montre pas l’apparence de contrôle pour Visual Studio. Voir [l’apparence de sélection d’objets graphiques](../../extensibility/ux-guidelines/composite-patterns-for-visual-studio.md#BKMK_GraphicalObjectSelectionAppearance) pour des spécifications visuelles détaillées.
+#### <a name="disjoint-and-region-selections"></a>Sélections disjointes et régionales
+ Les éditeurs d’objets graphiques doivent prendre en charge les sélections disjointes. Notez que ce graphique n’affiche pas l’apparence du contrôle pour Visual Studio. Consultez [apparence de la sélection d’objets graphiques](../../extensibility/ux-guidelines/composite-patterns-for-visual-studio.md#BKMK_GraphicalObjectSelectionAppearance) pour obtenir des spécifications visuelles détaillées.
 
  ![Sélecteurs de régions et disjoints](../../extensibility/ux-guidelines/media/0713-07_disjointregionselectors.png "0713-07_DisjointRegionSelectors")
 
- **Sélection de disjoints**
+ **Sélection disjointe**
 
- Les éditeurs graphiques devraient également fournir des sélections de régions avec un indicateur de sélection de type chapiteau. Si l’éditeur graphique prend en charge d’autres types d’objets (comme le texte), les sélections de régions peuvent ne pas être possibles en fonction des contraintes de ces autres types d’objets.
+ Les éditeurs graphiques doivent également fournir des sélections de régions avec un indicateur de sélection de type texte défilant. Si l’éditeur graphique prend en charge d’autres types d’objets (tels que du texte), les sélections de régions peuvent ne pas être possibles en fonction des contraintes de ces autres types d’objets.
 
  ![Sélection de texte défilant](../../extensibility/ux-guidelines/media/0713-08_marqueeselection.png "0713-08_MarqueeSelection")
 
  **Sélection de texte défilant**
 
-#### <a name="primary-and-secondary-selections"></a>Sélections primaires et secondaires
- Certains éditeurs d’objets graphiques permettent à l’utilisateur de modifier ou d’aligner des objets en groupes. Dans ce cas, le concept de sélections primaires et secondaires doit être introduit. La sélection principale est l’objet auquel tous les autres objets répondent pour les opérations de groupe. L’objet que l’utilisateur sélectionne d’abord devient le contrôle principal, et les sélections ultérieures deviennent les sélections secondaires. La sélection primaire a un traitement visuel distinct de la sélection secondaire pour indiquer quel objet est primaire :
+#### <a name="primary-and-secondary-selections"></a>Sélections principales et secondaires
+ Certains éditeurs d’objets graphiques permettent à l’utilisateur de modifier ou d’aligner des objets dans des groupes. Dans ce cas, le concept de sélections principales et secondaires doit être introduit. La sélection principale est l’objet auquel tous les autres objets répondent pour les opérations de groupe. L’objet que l’utilisateur sélectionne en premier devient le contrôle principal et les sélections suivantes deviennent les sélections secondaires. La sélection principale a un traitement visuel distinct de la ou des sélections secondaires pour indiquer l’objet principal :
 
  ![Sélection principale et secondaire](../../extensibility/ux-guidelines/media/0713-09_primarysecondary.png "0713-09_PrimarySecondary")
 
- **Sélection primaire avec deux sélections secondaires**
+ **Sélection principale avec deux sélections secondaires**
 
-#### <a name="graphical-object-selection-appearance"></a><a name="BKMK_GraphicalObjectSelectionAppearance"></a>Apparence de sélection d’objets graphiques
- Les poignées de sélection sont des carrés dessinés dans un motif rectangulaire autour de la boîte de délimitation de l’objet. Le tableau ci-dessous montre des exemples des différents états qu’un objet graphique peut avoir avec la poignée, le dimensionnement et l’apparence d’édition en place. La taille des poignées doit être liée à la bordure de fenêtre et aux mesures de bord à l’aide de l’API **GetSystemMetrics.**
+#### <a name="graphical-object-selection-appearance"></a><a name="BKMK_GraphicalObjectSelectionAppearance"></a>Apparence de la sélection d’objets graphiques
+ Les poignées de sélection sont des carrés dessinés dans un motif rectangulaire autour du cadre englobant de l’objet. Le graphique ci-dessous montre des exemples des différents États qu’un objet graphique peut avoir avec la poignée, le dimensionnement et l’apparence de modification sur place. La taille des handles doit être liée à la bordure de fenêtre et aux métriques de bord à l’aide de l’API **GetSystemMetrics** .
 
-| State | Apparence | Détails visuels |
+| State (État) | Apparence | Détails visuels |
 |-------------------------|---------------| - |
 | **Non sélectionné** | Default | ![État du bouton par défaut](../../extensibility/ux-guidelines/media/0713-10_defaultstate.png "0713-10_DefaultState") |
-| **Sélection primaire** | Redimensionnable | ![Sélection principale avec des poignées de redimensionnement](../../extensibility/ux-guidelines/media/0713-11_primaryresize.png "0713-11_PrimaryResize") |
-| **Sélection primaire** | Non resizable | ![Sélection principale sans poignées de redimensionnement](../../extensibility/ux-guidelines/media/0713-13_primarynoresize.png "0713-13_PrimaryNoResize") |
-| **Sélection primaire** | Verrouillé | ![Sélection principale verrouillée](../../extensibility/ux-guidelines/media/0713-15_primarylocked.png "0713-15_PrimaryLocked") |
+| **Sélection principale** | Redimensionnable | ![Sélection principale avec des poignées de redimensionnement](../../extensibility/ux-guidelines/media/0713-11_primaryresize.png "0713-11_PrimaryResize") |
+| **Sélection principale** | Non redimensionnable | ![Sélection principale sans poignées de redimensionnement](../../extensibility/ux-guidelines/media/0713-13_primarynoresize.png "0713-13_PrimaryNoResize") |
+| **Sélection principale** | Verrouillé | ![Sélection principale verrouillée](../../extensibility/ux-guidelines/media/0713-15_primarylocked.png "0713-15_PrimaryLocked") |
 | **Sélection secondaire** | Redimensionnable | ![Sélection secondaire avec des poignées de redimensionnement](../../extensibility/ux-guidelines/media/0713-17_secondaryresize.png "0713-17_SecondaryResize") |
-| **Sélection secondaire** | Non resizable | ![Sélection secondaire sans poignées de redimensionnement](../../extensibility/ux-guidelines/media/0713-19_secondarynoresize.png "0713-19_SecondaryNoResize") |
+| **Sélection secondaire** | Non redimensionnable | ![Sélection secondaire sans poignées de redimensionnement](../../extensibility/ux-guidelines/media/0713-19_secondarynoresize.png "0713-19_SecondaryNoResize") |
 | **Sélection secondaire** | Verrouillé | ![Sélection secondaire verrouillée](../../extensibility/ux-guidelines/media/0713-21_secondarylocked.png "0713-21_SecondaryLocked") |
-| **Assurance-chômage active** | Default | ![État actif de l'interface utilisateur](../../extensibility/ux-guidelines/media/0713-23_uiactive.png "0713-23_UIActive") |
+| **Interface utilisateur active** | Default | ![État actif de l'interface utilisateur](../../extensibility/ux-guidelines/media/0713-23_uiactive.png "0713-23_UIActive") |
 
 ### <a name="view-selection-models"></a>Afficher les modèles de sélection
 
 #### <a name="tree-view"></a>Arborescence
- La sélection dans une vue d’arbre est montrée avec un point culminant simple. Si l’utilisateur clique sur un nom de nœud ou une icône de nœud, le nœud est sélectionné. Les glyphes triangulaires à gauche du nœud se dilatent ou contractent le contrôle de l’arbre mais n’affectent pas la sélection de l’utilisateur, à une exception près : en faisant un nœud parent lorsque la sélection est sur un enfant de ce nœud, la sélection passe au parent.
+ La sélection dans une arborescence s’affiche avec une simple mise en surbrillance. Si l’utilisateur clique sur un nom de nœud ou sur une icône de nœud, le nœud est sélectionné. Les glyphes triangulaires à gauche du nœud développent ou contractent le contrôle d’arborescence, mais n’affectent pas la sélection de l’utilisateur, à une exception près : lors de la réduction d’un nœud parent lorsque la sélection est sur un enfant de ce nœud, la sélection se déplace vers le parent.
 
  ![Arborescence classique dans Visual Studio](../../extensibility/ux-guidelines/media/0713-25_treeview.png "0713-25_TreeView")
 
  **Arborescence classique dans Visual Studio**
 
- Les vues sur les arbres peuvent soutenir les sélections contigus et décousues, même à plusieurs niveaux de l’arbre. Des sélections multiples contigues ou décousues doivent être faites sur des nœuds d’arbres visibles. Si un nœud s’effondre, la sélection de disjoints est perdue et le nœud qui s’est effondré obtient la sélection. De cette façon, l’utilisateur peut voir les nœuds qui seront affectés par une opération. Lorsque les nœuds sont effondrés, il devient difficile de savoir quels nœuds pourraient être touchés.
+ Les arborescences peuvent prendre en charge des sélections contiguës et disjointes, même sur plusieurs niveaux de l’arborescence. Les sélections multiples contiguës ou disjointes doivent être effectuées sur les nœuds d’arbre visibles. Si un nœud est réduit, la sélection disjointe est perdue et le nœud qui a été réduit obtient la sélection. De cette façon, l’utilisateur peut voir les nœuds qui seront affectés par une opération. Lorsque les nœuds sont réduits, les nœuds susceptibles d’être affectés ne sont pas effacés.
 
- Lorsqu’un nœud parental est choisi, l’opération doit s’appliquer au parent, bien qu’il puisse y avoir des cas où il est logique qu’une opération s’applique au parent et à tous ses enfants. Dans ce cas, fournir une interface utilisateur supplémentaire pendant l’opération, comme une case à cocher ou un dialogue de confirmation pour rendre l’option « appliquer à tous les enfants » explicite à l’utilisateur.
+ Lorsqu’un nœud parent est sélectionné, l’opération doit s’appliquer au parent, bien qu’il puisse y avoir des cas où il est logique qu’une opération s’applique au parent et à tous ses enfants. Dans ce cas, fournissez une interface utilisateur supplémentaire pendant l’opération, par exemple une case à cocher ou une boîte de dialogue de confirmation pour rendre l’option « appliquer à tous les enfants » explicite à l’utilisateur.
 
 ##### <a name="renaming"></a>Renommage
- Si les nœuds dans le support de l’arbre renommage, le changement de nom doit être fait en place. L’opération sur place devrait être la norme sur tous les contrôles d’arbres de Visual Studio. Fournir une commande de renom qui active immédiatement le mode d’édition en place, avec la sélection de texte couvrant l’ensemble du nom du nœud, prêt à accepter l’entrée de l’utilisateur. Si le nœud représente un fichier, le nom de fichier doit contenir l’extension. Le point culminant de sélection doit inclure seulement le corps du nom de fichier et non l’extension.
+ Si les nœuds de l’arborescence prennent en charge le changement de nom, le changement de nom doit être effectué sur place. L’opération sur place doit être la norme pour tous les contrôles d’arborescence dans Visual Studio. Fournissez une commande Rename qui active immédiatement le mode d’édition sur place, avec la sélection de texte couvrant le nom entier du nœud, prêt à accepter l’entrée utilisateur. Si le nœud représente un fichier, le nom de fichier doit contenir l’extension. La surbrillance de sélection doit inclure uniquement le corps du nom de fichier et non l’extension.
 
 |Entrée|Résultats|
 |-----------|------------|
-|Entrée (touche)|Engage l’opération de renommage|
-|Clé Esc|Annule l’opération de renommage|
-|Cliquer en dehors de la région d’édition sur place|Engage l’opération de renommage|
-|Annuler|Fournir un défaire facile pour annuler l’opération de renom|
+|Entrée (touche)|Valide l’opération de changement de nom|
+|Touche Échap|Annule l’opération de changement de nom|
+|Cliquer en dehors de la zone d’édition sur place|Valide l’opération de changement de nom|
+|Annuler|Fournir une annulation facile pour annuler l’opération de changement de nom|
 
-#### <a name="selection-within-lists-and-grid-controls"></a>Sélection dans les listes et les contrôles de grille
- Le concept clé dans la sélection de liste est qu’il est basé sur la rangée, ce qui signifie que lorsqu’une sélection est faite toute la rangée est sélectionnée comme une unité. En revanche, les grilles peuvent permettre de sélectionner des cellules spécifiques sans affecter aucun autre aspect de la ligne. Les grilles peuvent également contenir une hiérarchie de rangées imbriquées (comme dans un TreeGrid) qui permettent de sélectionner et de désélectionner des branches entières de la hiérarchie en interagissant avec les lignes parentes. La sélection dans les listes est affichée par une couleur de surbrillance simple sur toute la rangée de données. La mise au point est affichée par une bordure pointillée d’un pixel autour de la ligne ou de la cellule modifiable actuelle (ligne si toutes les cellules sont lues uniquement).
+#### <a name="selection-within-lists-and-grid-controls"></a>Sélection dans des listes et des contrôles de grille
+ Le concept clé dans la sélection de liste est qu’il est basé sur les lignes, ce qui signifie que lorsqu’une sélection est effectuée, la ligne entière est sélectionnée en tant qu’unité. En revanche, les grilles peuvent permettre la sélection de cellules spécifiques sans affecter les autres aspects de la ligne. Les grilles peuvent également contenir une hiérarchie de lignes imbriquées (par exemple, dans un contrôle TreeGrid) qui permettent de sélectionner et désélectionner des branches entières de la hiérarchie en interagissant avec les lignes parentes. La sélection dans les listes est indiquée par une simple couleur de surbrillance sur l’intégralité de la ligne de données. Le focus est représenté par une bordure en pointillés d’un pixel autour de la ligne ou de la cellule modifiable en cours (ligne si toutes les cellules sont en lecture seule).
 
 > [!NOTE]
-> **La mise au point** et **la sélection** sont des concepts différents. *L’accent* est une indication de l’élément d’interface utilisateur visé pour recevoir des entrées non explicitement dirigées vers un autre objet, tandis que la *sélection* se réfère à l’état de l’inclusion d’un objet dans un ensemble d’objets sur lesquels des opérations ultérieures peuvent avoir lieu.
+> **Le focus** et la **sélection** sont des concepts différents. *Le focus* est une indication de l’élément d’interface utilisateur ciblé pour recevoir l’entrée qui n’est pas explicitement dirigée vers un autre objet, tandis que la *sélection* fait référence à l’état de l’inclusion d’un objet dans un ensemble d’objets sur lesquels des opérations ultérieures peuvent avoir lieu.
 
- Les sélections dans les listes peuvent être contigus, disjointes, ou région. Lorsque plusieurs sélections sont autorisées, la sélection contigue et décousue doit toujours être prise en charge, tandis que le soutien aux sélections de région (boîte) est facultatif. Les sélections de régions sont initiées en traînant dans l’espace blanc de l’organe de liste.
+ Les sélections dans les listes peuvent être contiguës, disjointes ou régionales. Lorsque plusieurs sélections sont autorisées, la sélection contiguë et disjointe doit toujours être prise en charge, tandis que la prise en charge des sélections de région (zone) est facultative. Les sélections de régions sont lancées en faisant glisser l’espace blanc du corps de la liste.
 
 | Object | Sélection |
 |--------|------------|
@@ -441,92 +441,92 @@ Les modèles composites combinent des éléments d’interaction et de conceptio
 | List | Disjoint |
 | List | Région |
 
- En cliquant une fois sur une liste sélectionne la ligne où le clic s’est produit. Si l’utilisateur arrive à cliquer dans une cellule de liste qui prend en charge l’édition sur place, la cellule est également immédiatement activée pour l’édition en place. Sinon, toute la rangée est immédiatement sélectionnée et montre un point culminant.
+ Cliquez une fois sur une liste pour sélectionner la ligne où le clic s’est produit. Si l’utilisateur clique dans une cellule de liste qui prend en charge la modification sur place, la cellule est également immédiatement activée pour la modification sur place. Dans le cas contraire, la ligne entière est immédiatement sélectionnée et montre une mise en surbrillance.
 
- Dragging dans le corps de liste fait l’une des trois choses:
+ Le glissement dans le corps de la liste effectue l’une des trois opérations suivantes :
 
-- Initie une sélection de région si la liste la prend en charge et que la souris est dans l’espace blanc
+- Lance une sélection de zone si la liste la prend en charge et que la souris est entourée d’un espace blanc
 
-- Initie une opération de drag/drop si la cellule de liste ou la ligne supporte d’être une source de drag
+- Lance une opération de glisser-déplacer si la cellule ou la ligne de liste prend en charge une source de glissement
 
 - Sélectionne la ligne actuelle
 
-##### <a name="in-place-editing"></a>Montage sur place
- Lorsque l’édition place est autorisée, il existe deux modèles de base : le contrôle de modification simple et le cueilleur de propriété. Avec un contrôle d’édition simple, le contenu est mis en surbrillance et prêt pour l’entrée de l’utilisateur dès que l’édition place est activée. Lorsqu’un cueilleur de propriété est implémenté, le bouton qui invoque le viseur de propriété est affiché une fois que le mode d’édition en place est activé, et la sélection actuelle n’est pas mise en évidence. Le bouton de cueilleur doit être justifié à juste titre dans la cellule. Pour des exemples d’édition sur place, consultez la fenêtre des **propriétés** et **la liste des tâches** dans Visual Studio.
+##### <a name="in-place-editing"></a>Modification sur place
+ Lorsque la modification sur place est autorisée, il existe deux modèles de base : le contrôle d’édition simple et le sélecteur de propriétés. Avec un contrôle d’édition simple, le contenu est mis en surbrillance et prêt pour l’entrée d’utilisateur dès que la modification sur place est activée. Lorsqu’un sélecteur de propriétés est implémenté, le bouton qui appelle le sélecteur de propriétés s’affiche une fois que le mode d’édition sur place est activé et que la sélection actuelle n’est pas mise en surbrillance. Le bouton du sélecteur doit être justifié à droite dans la cellule. Pour obtenir des exemples d’édition sur place, consultez la **fenêtre Propriétés** et **liste des tâches** dans Visual Studio.
 
 ##### <a name="keyboard-support"></a>Prise en charge du clavier
- Le support clavier pour la sélection dans les listes et les grilles suit les conventions Windows standard :
+ La prise en charge du clavier pour la sélection dans les listes et les grilles suit les conventions Windows standard :
 
-- Les touches de flèche naviguent dans la liste, en sélectionnant chaque rangée/cellule au fur et à mesure que l’accent est déplacé.
+- Les touches de direction parcourent la liste, en sélectionnant chaque ligne/cellule au fur et à mesure que le focus est déplacé.
 
-- Le décalage et la flèche effectuent une sélection contigu dans la direction des touches fléchées.
+- Maj + Flèche effectue une sélection contiguë dans le sens des touches de direction.
 
-- Ctrl - flèche suivie par Spacebar bascule entre l’ajout et la suppression des éléments de liste de la sélection, la création d’une sélection de décousu.
+- Ctrl + flèche suivi d’une barre d’espace permet de basculer entre l’ajout et la suppression d’éléments de liste dans la sélection, ce qui crée une sélection disjointe.
 
-- Pour les grilles qui contiennent des hiérarchies imbriquées, la clé droite de flèche étend une rangée de parents, et la clé de la Flèche gauche s’effondre.
+- Pour les grilles qui contiennent des hiérarchies imbriquées, la touche de direction droite développe une ligne parente et la touche de direction gauche réduit une ligne.
 
-- La clé Tab déplace la mise au point parmi les cellules de la rangée actuelle si les cellules sont modifiables.
+- La touche Tab déplace le focus entre les cellules de la ligne actuelle si les cellules sont modifiables.
 
-- La clé Enter effectue la commande par défaut sur l’élément de la liste (souvent **Ouvert**).
+- La touche entrée exécute la commande par défaut sur l’élément dans la liste (souvent **ouverte**).
 
-- La clé F2 active l’édition place pour la cellule actuellement sélectionnée.
+- La touche F2 active la modification sur place pour la cellule actuellement sélectionnée.
 
-## <a name="persistence-and-saving-settings"></a><a name="BKMK_PersistenceAndSavingSettings"></a>Paramètres de persistance et d’enregistrement
+## <a name="persistence-and-saving-settings"></a><a name="BKMK_PersistenceAndSavingSettings"></a>Persistance et enregistrement des paramètres
 
-### <a name="overview"></a>Vue d'ensemble
- Bien que chaque composant logiciel de Visual Studio soit généralement responsable de son état et de sa persistance, Visual Studio enregistre automatiquement les paramètres dans certains cas, comme avec la taille des fenêtres et les positions. Le tableau ci-dessous est une combinaison de paramètres enregistrés automatiquement et de paramètres qui nécessitent une action utilisateur ou programmée explicite à prendre.
+### <a name="overview"></a>Vue d’ensemble
+ Bien que chaque composant logiciel dans Visual Studio soit généralement responsable de son propre État et de sa persistance, Visual Studio enregistre automatiquement les paramètres dans certains cas, par exemple avec les tailles et les positions des fenêtres. Le tableau ci-dessous est une combinaison de paramètres enregistrés automatiquement et des paramètres qui nécessitent un utilisateur explicite ou une action programmée à entreprendre.
 
-|Object|Ce qu’il faut économiser|Quand enregistrer|Où économiser|
+|Object|Éléments à enregistrer|Quand enregistrer|Emplacement d’enregistrement|
 |------------|------------------|------------------|-------------------|
-|Objet sélectionnable (par exemple, une ligne de code)|Un point d’arrêt sur une ligne de code<br /><br /> Un raccourci utilisateur associé à la ligne de code|Lorsque le projet est sauvegardé|Le fichier **options utilisateur (.suo)** pour le projet|
-|Boîte de dialogue|L’emplacement du dialogue, s’il avait été déplacé<br /><br /> La vue que l’utilisateur a utilisé pour la dernière fois dans le dialogue|Lorsque le dialogue se termine<br /><br /> À la fin de la session Visual Studio|En mémoire<br /><br /> Registre en **HKEY_Current_User**|
-|Fenêtre|La taille et l’emplacement de la fenêtre|Quand la fenêtre se ferme<br /><br /> Lorsque le mode Visual Studio change<br /><br /> À la fin de la session Visual Studio|Le fichier **options utilisateur (.suo)** pour le projet<br /><br /> Fichier d’options personnalisées pour les paramètres de fenêtre|
-|Document|La sélection actuelle dans le document<br /><br /> La vue du document<br /><br /> Les derniers endroits que l’utilisateur a visités|Lorsque le document est enregistré|Le fichier **options utilisateur (.suo)** pour le projet|
-|Projet|Références aux fichiers<br /><br /> Références aux répertoires sur disque<br /><br /> Références à d’autres logiciels<br /><br /> Components<br /><br /> Informations de l’État sur le projet lui-même|Lorsque le projet est sauvegardé|Fichier projet|
-|Solution|Références aux projets<br /><br /> Références aux fichiers|Lorsque le projet ou la solution est sauvegardé|Le fichier **solution (.sln)**|
-|Paramètres dans **les outils > options**|Personnalisations de clavier<br /><br /> Personnalisations de barres d’outils<br /><br /> Schémas de couleurs|Lorsque le dialogue **Tools > Options** se termine<br /><br /> À la fin de la session Visual Studio|Registre en **HKEY_Current_User**|
+|Objet sélectionnable (par exemple, une ligne de code)|Point d’arrêt sur une ligne de code<br /><br /> Raccourci utilisateur associé à la ligne de code|Lors de l’enregistrement du projet|Fichier d' **options utilisateur (. suo)** pour le projet|
+|Boîte de dialogue|Emplacement de la boîte de dialogue, si elle a été déplacée<br /><br /> Affichage que l’utilisateur a utilisé en dernier dans la boîte de dialogue|Quand la boîte de dialogue se ferme<br /><br /> À la fin de la session Visual Studio|En mémoire<br /><br /> Registre dans **HKEY_CURRENT_USER**|
+|Fenêtre|La taille et l’emplacement de la fenêtre|Quand la fenêtre se ferme<br /><br /> En cas de modification du mode Visual Studio<br /><br /> À la fin de la session Visual Studio|Fichier d' **options utilisateur (. suo)** pour le projet<br /><br /> Fichier d’options personnalisées pour les paramètres de fenêtre|
+|Document|Sélection actuelle dans le document<br /><br /> Vue du document<br /><br /> Les derniers emplacements visités par l’utilisateur|Lors de l’enregistrement du document|Fichier d' **options utilisateur (. suo)** pour le projet|
+|Projet|Références aux fichiers<br /><br /> Références aux répertoires sur le disque<br /><br /> Références à d’autres logiciels<br /><br /> Components<br /><br /> Informations d’État sur le projet lui-même|Lors de l’enregistrement du projet|Fichier projet|
+|Solution|Références aux projets<br /><br /> Références aux fichiers|Lors de l’enregistrement du projet ou de la solution|Fichier **solution (. sln)**|
+|Paramètres dans **outils > options**|Personnalisations du clavier<br /><br /> Personnalisations de la barre d’outils<br /><br /> Modèles de couleurs|Quand la boîte de dialogue **outils > options** se ferme<br /><br /> À la fin de la session Visual Studio|Registre dans **HKEY_CURRENT_USER**|
 
- Ce que fait l’utilisateur, et quand il le fait, dicte si un paramètre est enregistré dans la mémoire (pendant la session), enregistré sur disque (à travers les sessions comme un paramètre de registre), dans le cadre du fichier de projet ou de solution lui-même, dans le cadre du fichier options de **solution (.suo),** ou comme un fichier de paramètres personnalisés que seul ce composant logiciel connaît. Le tableau ci-dessus montre plusieurs événements auxquels les paramètres peuvent être enregistrés. Cependant, il ya d’autres moments dans lesquels vous pourriez vouloir sauver l’état:
+ Ce que fait l’utilisateur et quand il le fait, détermine si un paramètre est enregistré en mémoire (pendant la session), enregistré sur le disque (entre les sessions en tant que paramètre de registre), dans le cadre du fichier de projet ou de solution lui-même, dans le cadre du fichier des **options de solution (.** Le tableau ci-dessus montre plusieurs événements auxquels les paramètres peuvent être enregistrés. Toutefois, il existe d’autres cas dans lesquels vous pouvez souhaiter enregistrer l’État :
 
-- Lorsque l’utilisateur change d’emplacement dans un dialogue ou une fenêtre
+- Quand l’utilisateur change d’emplacement dans une boîte de dialogue ou une fenêtre
 
-- Lorsque l’utilisateur transfère la mise au point vers une autre fenêtre
+- Lorsque l’utilisateur transfère le focus vers une autre fenêtre
 
-- Lorsque l’utilisateur passe du mode design au mode débogé
+- Quand l’utilisateur passe du mode conception au mode débogage
 
-- Lorsque l’utilisateur se connecte à son compte
+- Quand l’utilisateur ferme son compte
 
-- Lorsque l’ordinateur entre en hibernation ou s’arrête
+- Lorsque l’ordinateur passe en veille prolongée ou s’arrête
 
-- Lorsque l’ordinateur / disque dur est sur le point d’être reformaté et mis en place à nouveau
+- Lorsque l’ordinateur/disque dur va être reformaté et reconfiguré
 
-### <a name="window-configurations"></a>Configurations de fenêtre
- Une configuration de fenêtre est la présentation de base de l’environnement de développement - il s’agit d’un schéma composé de la liste des fenêtres d’outils présentes et de la façon dont elles sont disposées. Pour les fenêtres gérées par les fenêtres IDE (fenêtres IDE), les informations de mise en page sont persistantes par utilisateur, de sorte que lorsqu’un utilisateur lance l’IDE, la disposition de la fenêtre apparaît comme lors de leur dernière sortie visual Studio. L’état et la position des fenêtres IDE sont persistants dans un fichier d’options personnalisés en format XML. Les fenêtres d’outils qui sont créées par des paquets chargés dans l’IDE persistent leurs informations d’état dans le registre et peuvent ou non être par utilisateur.
+### <a name="window-configurations"></a>Configurations de fenêtres
+ La configuration d’une fenêtre est la présentation de base de l’environnement de développement. il s’agit d’un schéma qui se compose de la liste des fenêtres outil présentes et de la façon dont elles sont organisées. Pour Windows géré par l’IDE (Windows IDE), les informations de disposition sont conservées par utilisateur. par conséquent, quand un utilisateur lance l’IDE, la disposition de la fenêtre s’affiche de la même manière qu’à la dernière sortie de Visual Studio. L’État et la position des fenêtres de l’IDE sont conservées dans un fichier d’options personnalisé au format XML. Les fenêtres outil créées par des packages chargés dans l’IDE rendent leurs informations d’État persistantes dans le registre et peuvent ou non être par utilisateur.
 
-#### <a name="profile-specific-layouts"></a>Mises en page spécifiques au profil
- Chaque profil comprend des mises en page de fenêtre d’outils, organisées d’une manière familière à des personnalités spécifiques du développeur (les développeurs visualS CMD s’attendent à voir **l’explorer de solution** sur le côté gauche de l’IDE, tandis que les développeurs C ' s’attendent à voir **l’explorer de solution** sur la droite). Les mises en page des fenêtres spécifiques au profil sont chargées après que l’utilisateur a choisi un profil sur le démarrage. Un auteur de paquets doit déterminer la disposition de la fenêtre la plus adaptée à l’expérience de son client, sachant que les modifications apportées à la configuration de la fenêtre seront alors persistées.
+#### <a name="profile-specific-layouts"></a>Dispositions spécifiques au profil
+ Chaque profil comprend des dispositions de fenêtres outil, organisées de manière familière à des personnes de développeur spécifiques (Visual C++ les développeurs s’attendent à voir le **Explorateur de solutions** sur le côté gauche de l’IDE, tandis que les développeurs C# s’attendent à voir le **Explorateur de solutions** à droite). Les dispositions de fenêtres spécifiques au profil sont chargées une fois que l’utilisateur a choisi un profil au démarrage. Un auteur de package doit déterminer la disposition de fenêtre qui convient le mieux à l’expérience de son client, sachant que les modifications apportées par l’utilisateur à la configuration de la fenêtre seront conservées.
 
 ## <a name="touch-input"></a><a name="BKMK_TouchInput"></a>Entrée tactile
- Les utilisateurs utilisent de plus en plus les produits de développement Microsoft sur les appareils tactiles. Cependant, il existe des obstacles qui rendent difficile l’utilisation d’outils de développement sur les appareils tactiles. Les utilisateurs s’attendent à ce que nos produits offrent une expérience tactile fiable et précise. L’objectif de ces lignes directrices est d’éclairer les décisions concernant les capacités tactiles à intégrer et d’encourager une expérience tactile cohérente à travers Visual Studio et les produits connexes.
+ Les utilisateurs utilisent de plus en plus des produits de développement Microsoft sur des appareils tactiles. Toutefois, il existe des barrières qui compliquent l’utilisation des outils de développement sur des appareils tactiles. Les utilisateurs s’attendent à ce que nos produits fournissent une expérience tactile fiable et précise. L’objectif de ces instructions est d’informer les décisions concernant les fonctionnalités tactiles à incorporer et d’encourager une expérience tactile cohérente sur Visual Studio et les produits associés.
 
 ### <a name="levels-of-experience"></a>Niveaux d’expérience
- Les niveaux d’expérience suivants sont destinés à servir de guide pour aider les équipes à décider quelles capacités tactiles offrir en fonction de leur niveau souhaité d’intérêt d’investissement en contact.
+ Les niveaux d’expérience suivants sont destinés à servir de guide pour aider les équipes à déterminer les fonctionnalités tactiles à proposer en fonction de leur niveau d’intérêt d’investissement souhaité.
 
-- **L’expérience de base** est pour les équipes qui veulent fournir des capacités tactiles afin qu’il n’y ait pas d’impasses tout au long de leur travail.
+- L' **expérience de base** est destinée aux équipes qui souhaitent fournir des fonctionnalités tactiles afin qu’il n’y ait pas de fin mort tout au long de leur travail.
 
-- **L’expérience optimisée** est pour les équipes qui veulent fournir les capacités tactiles les plus courantes (par exemple, celles généralement disponibles dans les applications de navigateur Internet).
+- L' **expérience optimisée** est destinée aux équipes qui souhaitent fournir les fonctionnalités tactiles les plus courantes (par exemple, celles généralement disponibles dans les applications de navigateur Internet).
 
-- **L’expérience élevée** est pour les équipes qui veulent ajouter des capacités telles que des gestes ou d’autres capacités facultatives qui peuvent rendre leur application tactile d’abord amicale.
+- L' **expérience élevée** est destinée aux équipes qui souhaitent ajouter des fonctionnalités telles que les gestes ou d’autres fonctionnalités facultatives qui peuvent rendre leur application tactile pour la première fois.
 
 ||Expérience de base|Expérience optimisée|Expérience élevée|
 |-|----------------------|--------------------------|-------------------------|
-|Permet aux utilisateurs de ...|Fixer le code et la lecture au niveau de la solution/projet sans impasses|Effectuer des tâches d’entretien, de refacteurs et de navigation|Opérer dans une expérience cohérente, intuitive et fluide avec confiance|
-|Éditeur|Panoramique tactile et sélection<br /><br /> Touche de barre de défilement pour sauter et presser|Zoom de pincement<br /><br /> Défilement rapide<br /><br /> Sélection<br /><br /> Utilisation facile du menu contextuelle||
-|Fenêtres d’outils supérieures|Liste panoramique<br /><br /> Sélection d’élément<br /><br /> Touche de barre de défilement pour sauter et presser|Mise en défilement et sélection d’objets faciles||
-|Fenêtrage||Fenêtre resize<br /><br /> Accès rapide||
-|Bien documenter||Navigation facile entre les fichiers ouverts||
-|Mouvements||Veiller à ce que les gestes communs fonctionnent dans l’ensemble de l’IDE|Actions basées sur les gestes<br /><br /> Soutenir le drag-and-drop et les concepteurs|
-|Autres considérations|||Clavier personnalisé à l’écran|
+|**Permet aux utilisateurs de...**|Correction du code et de la solution/de la lecture au niveau du projet sans les fins mortes|Effectuer des tâches de maintenance, de refactorisation et de navigation|Travaillez dans une expérience cohérente, intuitive et fluide en toute confiance|
+|**Éditeur**|Panoramique tactile et sélection<br /><br /> Touche de défilement pour sauter et appuyer sur + glisser|Zoom de pince<br /><br /> Défilement rapide<br /><br /> Sélection<br /><br /> Utilisation facile du menu contextuel||
+|**Fenêtres d’outils principales**|Afficher le panorama<br /><br /> Sélection d’élément<br /><br /> Touche de défilement pour sauter et appuyer sur + glisser|Défilement et sélection faciles des éléments||
+|**Fenêtrage**||Redimensionner la fenêtre<br /><br /> Accès rapide||
+|**Barre d’outils document**||Navigation facile entre les fichiers ouverts||
+|**Mouvements**||S’assurer que les gestes courants fonctionnent dans l’IDE|Actions basées sur des mouvements<br /><br /> Prise en charge du glisser-déplacer et des concepteurs|
+|**Autres points à considérer**|||Clavier personnalisé à l’écran|
 
 #### <a name="gestures"></a>Mouvements
- Les gestes fournissent aux utilisateurs un raccourci vers des commandes qui pourraient autrement nécessiter une interaction plus compliquée. Reportez-vous aux directives De Windows sur les [gestes tactiles courants pour les applications de bureau,](/windows/desktop/wintouch/windows-touch-gestures-overview)et suivez ces conseils pour la plupart des gestes, y compris des gestes simples tels que panoramique et zoom.
+ Les gestes fournissent aux utilisateurs un raccourci vers des commandes qui, sans cela, nécessitent une interaction plus complexe. Reportez-vous aux instructions Windows sur les [gestes tactiles courants pour les applications de bureau](/windows/desktop/wintouch/windows-touch-gestures-overview)et suivez ces instructions pour la plupart des gestes, y compris les gestes simples tels que le panoramique et le zoom.

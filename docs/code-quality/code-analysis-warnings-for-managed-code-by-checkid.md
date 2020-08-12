@@ -286,18 +286,19 @@ f1_keywords:
 - CA2247
 - CA5122
 - CA5374
+- IL3000
 ms.assetid: 5cb221f6-dc59-4abf-9bfa-adbd6f907f96
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: b216252ca33495a065c1dbcc6e091a2e5244de78
-ms.sourcegitcommit: 9a7fb8556a5f3dbb4459122fefc7e7a8dfda753a
+ms.openlocfilehash: aca6889b46b58828db59be634275e99d6721ee49
+ms.sourcegitcommit: d9254e54079ae01cdf2d07b11f988faf688f80fc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87235093"
+ms.lasthandoff: 08/11/2020
+ms.locfileid: "88114147"
 ---
 # <a name="code-analysis-warnings-for-managed-code-by-checkid"></a>Avertissements d’analyse du code pour le code managé par CheckId
 
@@ -603,3 +604,4 @@ Le tableau suivant répertorie les avertissements d'analyse du code pour le code
 | Ca5400 | [Ca5400 Vérifiez que la vérification de la liste de révocation de certificats HttpClient n’est pas désactivée](../code-quality/ca5400.md) | Un certificat révoqué n’est plus approuvé. Elle peut être utilisée par des attaquants qui transmettent des données malveillantes ou dérobent des données sensibles dans la communication HTTPs. |
 | CA5401 | [CA5401 n’utilisez pas CreateEncryptor avec un vecteur d’aide non défini par défaut](../code-quality/ca5401.md) | Le chiffrement symétrique doit toujours utiliser un vecteur d’initialisation non renouvelable pour empêcher les attaques de dictionnaire. |
 | CA5402 | [CA5402 utiliser CreateEncryptor avec le vecteur d’aide par défaut](../code-quality/ca5402.md) | Le chiffrement symétrique doit toujours utiliser un vecteur d’initialisation non renouvelable pour empêcher les attaques de dictionnaire. |
+| IL3000 | [IL3000 éviter d’utiliser le chemin d’accès au fichier d’assembly lors de la publication sous la forme d’un fichier unique](../code-quality/il3000.md) | Évitez d’utiliser le chemin d’accès au fichier d’assembly lors de la publication sous la forme d’un fichier unique |

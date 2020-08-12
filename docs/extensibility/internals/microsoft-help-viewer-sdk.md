@@ -8,12 +8,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4f79ead04e1c8a77ba605d4463bf8b2009f7ce71
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.openlocfilehash: 6eff6ef8f5415ecd4dc1c6dcce5046c976ce0e7c
+ms.sourcegitcommit: d9254e54079ae01cdf2d07b11f988faf688f80fc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "85536186"
+ms.lasthandoff: 08/11/2020
+ms.locfileid: "88114256"
 ---
 # <a name="microsoft-help-viewer-sdk"></a>Kit SDK de Microsoft Help Viewer
 
@@ -445,7 +445,7 @@ Remarque : les variables notées par « {n} » ont des dépendances de code, 
 
 **Branding.xml**
 
-| | |
+| Fonctionnalité | Description |
 | - | - |
 | Fonctionnalités : | **CollapsibleArea** |
 | Utilisez : | Développer réduit le texte du contrôle de contenu |
@@ -459,7 +459,7 @@ Remarque : les variables notées par « {n} » ont des dépendances de code, 
 | ViewColorizedText | Afficher les couleurs |
 | CombinedVBTabDisplayLanguage | Visual Basic (exemple) |
 | VBDeclaration | Déclaration |
-| VBUsage | Utilisation |
+| VBUsage | Usage |
 | Fonctionnalités : | **Commentaires, pieds de page et logo** |
 | Utilisez : | Fournissez un contrôle de commentaires pour que le client fournisse des commentaires sur la rubrique en cours par courrier électronique.  Texte de copyright du contenu.  Définition du logo. |
 | **Élément** | **Valeur (ces chaînes peuvent être modifiées pour répondre aux besoins de l’adoption de contenu.)** |
@@ -563,7 +563,7 @@ Le fichier branding.js contient du code JavaScript utilisé par les éléments d
 
 Le package de personnalisation contient un ensemble de fichiers HTM qui prennent en charge des scénarios de communication des informations clés pour aider les utilisateurs du contenu, par exemple une page d’accueil contenant une section décrivant les jeux de contenu installés et des pages indiquant à l’utilisateur quand les rubriques sont introuvables dans l’ensemble de rubriques local. Ces fichiers HTM peuvent être modifiés par produit.  Les fournisseurs de l’interpréteur de commandes ISO sont en mesure de prendre le package de personnalisation par défaut et de modifier le comportement et le contenu de ces pages en fonction de leurs besoins.  Ces fichiers font référence à leur package de personnalisation respectif pour que les balises de personnalisation obtiennent le contenu correspondant à partir du fichier branding.xml.
 
-|**File**|**Utilisation**|**Source de contenu affichée**|
+|**Fichier**|**Utilisation**|**Source de contenu affichée**|
 |-|-|-|
 |homepage.htm|Il s’agit d’une page qui affiche le contenu actuellement installé et tout autre message approprié à présenter à l’utilisateur sur son contenu.  Ce fichier contient l’attribut de métadonnées supplémentaire « Microsoft.Help.Id » content = « -1 » qui place ce contenu en haut de la table des matières locale.||
 ||<META_HOME_PAGE_TITLE_ADD/>|Branding.xml, balise\<HomePageTitle>|
@@ -597,7 +597,7 @@ Personnalisation des fichiers. CSS inclut les définitions pour la présentation
 
 Le contenu Visual Studio affiche un logo Visual Studio, ainsi que d’autres graphiques.  La liste complète des fichiers graphiques dans le package de personnalisation de la visionneuse d’aide Visual Studio est indiquée ci-dessous.
 
-|**File**|**Utilisation**|**Exemples**|
+|**Fichier**|**Utilisation**|**Exemples**|
 |-|-|-|
 |clear.gif|Utilisé pour restituer la zone réductible||
 |footer_slice.gif|Présentation du pied de page||
