@@ -13,21 +13,20 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 56b2a749eb3553044bda5816639498a0682e37e0
-ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.openlocfilehash: dcf95f74e05ebff6e1cc430c32b9fd7bdb3b005f
+ms.sourcegitcommit: d281d2a04a5bc302650eebf369946d8f101e59dd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72570090"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "88144660"
 ---
 # <a name="iactivescriptsite"></a>IActiveScriptSite
 Implémenté par l’hôte pour créer un site pour le moteur de script Windows. En règle générale, ce site est associé au conteneur de tous les objets qui sont visibles par le script (par exemple, les contrôles ActiveX). En règle générale, ce conteneur correspond au document ou à la page affiché. Microsoft Internet Explorer, par exemple, crée un conteneur de ce type pour chaque page HTML affichée. Chaque contrôle ActiveX (ou autre objet Automation) sur la page et le moteur de script lui-même, seraient énumérables dans ce conteneur.  
   
 ## <a name="methods-in-vtable-order"></a>Méthodes dans l'ordre Vtable  
   
-|||  
-|-|-|  
-|Méthode|Description|  
+|Méthode|Description|
+|-|-|
 |[IActiveScriptSite::GetLCID](../../winscript/reference/iactivescriptsite-getlcid.md)|Récupère l’identificateur de paramètres régionaux utilisé par l’hôte pour afficher les éléments de l’interface utilisateur.|  
 |[IActiveScriptSite::GetItemInfo](../../winscript/reference/iactivescriptsite-getiteminfo.md)|Obtient des informations sur un élément qui a été ajouté à un moteur par un appel à la méthode [IActiveScript :: AddNamedItem](../../winscript/reference/iactivescript-addnameditem.md) .|  
 |[IActiveScriptSite::GetDocVersionString](../../winscript/reference/iactivescriptsite-getdocversionstring.md)|Récupère une chaîne définie par l’hôte qui identifie de façon unique la version du document actuel à partir du point de vue de l’hôte.|  

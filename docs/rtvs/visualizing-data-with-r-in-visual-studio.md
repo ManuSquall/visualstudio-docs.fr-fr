@@ -8,12 +8,12 @@ ms.author: kraigb
 manager: jillfra
 ms.workload:
 - data-science
-ms.openlocfilehash: a48ad7800f8ea2b992e848cfbf6b4fdac99b2062
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: fb16f4a573a7b905484982871dc838143b125591
+ms.sourcegitcommit: d281d2a04a5bc302650eebf369946d8f101e59dd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "62811081"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "88144699"
 ---
 # <a name="create-visual-data-plots-with-r"></a>Créer des tracés de données visuels avec R
 
@@ -21,9 +21,14 @@ Le traçage est une partie essentielle du flux de travail d’un scientifique de
 
 ![Image de traçage](media/plotting-hero-image.png)
 
-|   |   |
-|---|---|
-| ![Icône représentant une caméra pour les vidéos](../install/media/video-icon.png "Regarder une vidéo") | [Regardez une vidéo (youtube.com)](https://www.youtube.com/watch?v=ZTbKmz5RSgY) sur le traçage avec R (2 min 2 s). |
+:::row:::
+    :::column:::
+        ![Icône représentant une caméra pour les vidéos](../install/media/video-icon.png "Regarder une vidéo")
+    :::column-end:::
+    :::column:::
+        [Regardez une vidéo (youtube.com)](https://www.youtube.com/watch?v=ZTbKmz5RSgY) sur le traçage avec R (2 min 2 s).
+    :::column-end:::
+:::row-end:::
 
 ## <a name="the-plot-window"></a>La fenêtre de tracés
 
@@ -43,7 +48,7 @@ Le redimensionnement d’une fenêtre de tracé provoque toujours le réaffichag
 
 ## <a name="plot-window-commands"></a>Commandes de la fenêtre de tracés
 
-La barre d’outils de la fenêtre de l’intrigue contient des commandes applicables, dont la plupart sont également disponibles dans le menu **R Tools** > **Plots.**
+La barre d’outils de la fenêtre de tracés contient les commandes applicables, dont la **R Tools**plupart sont également disponibles via le menu des  >  **tracés** d’outils R.
 
 | Bouton | Commande | Description |
 | --- | --- | --- |
@@ -62,17 +67,17 @@ La barre d’outils de la fenêtre de l’intrigue contient des commandes applic
 
 Comme les scientifiques des données travaillent souvent avec de nombreux tracés provenant de différents datasets, RTVS vous permet de créer autant de fenêtres de tracés indépendantes que vous le souhaitez. Vous pouvez ensuite organiser ces fenêtres comme vous le souhaitez dans le cadre de Visual Studio ou en dehors de ce cadre. (Pour obtenir des informations générales sur l’ancrage et le redimensionnement des fenêtres, consultez [Personnalisation des dispositions de fenêtres dans Visual Studio](../ide/customizing-window-layouts-in-visual-studio.md).)
 
-Vous créez une nouvelle fenêtre d’intrigue à l’aide du bouton de la barre d’outils ou **R Tools** > **Plots** > **New Plot Window**. La nouvelle fenêtre de tracés devient la fenêtre *active*, qui est l’emplacement où les nouveaux tracés sont affichés. Pour changer la fenêtre active, basculez vers elle et sélectionnez le bouton de barre d’outils **Activer la fenêtre de tracés** ou cliquez sur **Outils R** > **Tracés** > **Activer la fenêtre de tracés**.
+Vous créez une nouvelle fenêtre de tracés à l’aide du **bouton de barre d’outils ou de**la  >  **Plots**  >  **fenêtre de tracés**tracés. La nouvelle fenêtre de tracés devient la fenêtre *active*, qui est l’emplacement où les nouveaux tracés sont affichés. Pour changer la fenêtre active, basculez vers elle et sélectionnez le bouton de barre d’outils **Activer la fenêtre de tracés** ou cliquez sur **Outils R** > **Tracés** > **Activer la fenêtre de tracés**.
 
 Les tracés sont aussi des objets indépendants, ce qui signifie que vous pouvez les copier ou les déplacer entre les fenêtres de tracés à l’aide d’une opération de glisser-déplacer avec la souris, ou à l’aide des commandes **Copier**, **Couper** et **Coller** du menu contextuel et du menu **Edition**.
 
-Le comportement par défaut pour drag-and-drop est copie; pour se déplacer, glisser et tomber tout en maintenant la clé **Shift.**
+Le comportement par défaut pour le glisser-déplacer est copier ; pour déplacer, glissez-déplacez tout en maintenant la touche **MAJ** enfoncée.
 
 ## <a name="plot-history"></a>Historique de tracés
 
-Les commandes de tracés sont conservées dans l’historique de tracés pour chaque fenêtre. Ainsi, tout le traçage dans une session est conservé. Pour naviguer dans l’histoire, utilisez les boutons de flèche sur la barre d’outils de fenêtre de l’intrigue, ou **Ctrl**+**Alt**+**F11** et **Ctrl**+**Alt**+**F12**. Vous pouvez également supprimer des parcelles simples ou effacer toutes les parcelles de la fenêtre à nouveau à l’aide de boutons de barre d’outils ou les commandes de menu **R Tools** > **Plots.**
+Les commandes de tracés sont conservées dans l’historique de tracés pour chaque fenêtre. Ainsi, tout le traçage dans une session est conservé. Pour naviguer dans l’historique, utilisez les boutons fléchés de la barre d’outils de la fenêtre de tracés, ou **Appuyez sur CTRL** + **ALT** + **F11** et **CTRL** + **ALT** + **F12**. Vous pouvez également supprimer des tracés uniques ou effacer tous les tracés de la fenêtre à l’aide des boutons de la barre d’outils ou des commandes de menu des **Outils R**  >  **Plots** .
 
-Pour voir toute la collection de parcelles, ouvrez la fenêtre d’histoire de l’intrigue à l’aide du bouton de la barre d’outils ou **R Tools** > **Plots Plots** > **Plot History Window**.
+Pour afficher l’intégralité de la collection de tracés, ouvrez la fenêtre historique des tracés **R Tools**à l’aide du bouton de barre d’outils ou de la  >  **Plots**  >  **fenêtre historique des tracés**des outils R.
 L’historique vous donne une liste des miniatures pour les tracés qui ont été affichés dans cette fenêtre, regroupés par fenêtres de tracés (ou appareils). Les boutons de zoom dans la barre d’outils permettent de changer la taille des miniatures.
 
 ![Fenêtre d’historique des tracés](media/plotting-plot-history-window.png)

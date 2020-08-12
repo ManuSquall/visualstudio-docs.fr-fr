@@ -10,12 +10,12 @@ ms.assetid: f33e454c-69d8-4cab-9150-d1e7fd04786d
 caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
-ms.openlocfilehash: e26b5cb1790cab38a6544a04307b7e336a952519
-ms.sourcegitcommit: 9a9c61ca115c22d33bb902153eb0853789c7be4c
+ms.openlocfilehash: 9fd497dcda7e40cf0dbe6409193019ddae84c80b
+ms.sourcegitcommit: d281d2a04a5bc302650eebf369946d8f101e59dd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "85835366"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "88144400"
 ---
 # <a name="iactivescriptparse32parsescripttext"></a>IActiveScriptParse32::ParseScriptText
 Analyse le scriptlet de code donné, en ajoutant des déclarations dans l’espace de noms et en évaluant le code comme il convient.  
@@ -38,7 +38,7 @@ HRESULT ParseScriptText(
   
 #### <a name="parameters"></a>Paramètres  
   
-|||  
+| Paramètre | Description |  
 |-|-|  
 |`pstrCode`|dans Adresse du texte scriptlet à évaluer. L’interprétation de cette chaîne dépend du langage de script.|  
 |`pstrItemName`|dans Adresse du nom de l’élément qui fournit le contexte dans lequel le scriptlet doit être évalué. Si ce paramètre a la valeur NULL, le code est évalué dans le contexte global du moteur de script.|  
@@ -54,15 +54,15 @@ HRESULT ParseScriptText(
 |SCRIPTTEXT_ISPERSISTENT|Indique que le code ajouté au cours de cet appel doit être enregistré en cas d’enregistrement du moteur de script (par exemple, via un appel à `IPersist*::Save` ), ou si le moteur de script est réinitialisé par le biais d’une transition vers l’état initialisé.|  
 |SCRIPTTEXT_ISVISIBLE|Indique que le texte du script doit être visible (et, par conséquent, peut être appelé par son nom) en tant que méthode globale dans l’espace de noms du script.|  
   
-|||  
+| Paramètre | Description |  
 |-|-|  
 |`pvarResult`|à Adresse d’une mémoire tampon qui reçoit les résultats du traitement du scriptlet, ou `NULL` si l’appelant n’attend aucun résultat (autrement dit, la valeur SCRIPTTEXT_ISEXPRESSION n’est pas définie).|  
 |`pexcepinfo`|à Adresse d’une structure qui reçoit des informations sur l’exception. Cette structure est remplie si `IActiveScriptParse::ParseScriptText` retourne DISP_E_EXCEPTION.|  
   
-## <a name="return-value"></a>Valeur renvoyée  
+## <a name="return-value"></a>Valeur de retour  
  Renvoie l'une des valeurs suivantes :  
   
-|Valeur renvoyée|Signification|  
+|Valeur de retour|Signification|  
 |------------------|-------------|  
 |`S_OK`|Réussite.|  
 |`DISP_E_EXCEPTION`|Une exception s’est produite lors du traitement du scriptlet. Le `pexcepinfo` paramètre contient des informations sur l’exception.|  
@@ -72,7 +72,7 @@ HRESULT ParseScriptText(
 |`E_UNEXPECTED`|L’appel n’était pas attendu (par exemple, le moteur de script se trouve dans l’état non initialisé ou fermé, ou l’indicateur de SCRIPTTEXT_ISEXPRESSION a été défini et le moteur de script est dans l’état initialisé).|  
 |`OLESCRIPT_E_SYNTAX`|Une erreur de syntaxe non spécifiée s’est produite dans le scriptlet.|  
   
-## <a name="remarks"></a>Remarques  
+## <a name="remarks"></a>Notes  
  Si le moteur de script se trouve dans l’État Initialized, aucun code n’est réellement évalué pendant cet appel ; au lieu de cela, ce code est mis en file d’attente et exécuté lorsque le moteur de script passe dans l’état Démarré (ou jusqu’à). Étant donné que l’exécution n’est pas autorisée dans l’État Initialized, c’est une erreur d’appeler cette méthode avec l’indicateur SCRIPTTEXT_ISEXPRESSION lorsque l’État est initialisé.  
   
  Le scriptlet peut être une expression, une liste d’instructions ou tout ce qui est autorisé par le langage de script. Par exemple, cette méthode est utilisée dans l’évaluation de la \<SCRIPT> balise HTML, qui permet d’exécuter des instructions au fur et à mesure de la construction de la page HTML, au lieu de les compiler uniquement dans l’état du script.  

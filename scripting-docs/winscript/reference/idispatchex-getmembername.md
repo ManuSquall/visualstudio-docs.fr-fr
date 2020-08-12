@@ -17,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f68b0157e8e352b34885ae94d14026a51c4a6e97
-ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.openlocfilehash: 8dbfb82e986ed6d1738bcc0cffeec35e5ba4515c
+ms.sourcegitcommit: d281d2a04a5bc302650eebf369946d8f101e59dd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72574108"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "88144608"
 ---
 # <a name="idispatchexgetmembername"></a>IDispatchEx::GetMemberName
 Récupère le nom d’un membre.  
@@ -44,11 +44,11 @@ HRESULT GetMemberName(
  Adresse d’un `BSTR` qui reçoit le nom du membre. L’application appelante est chargée de libérer cette valeur.  
   
 ## <a name="return-value"></a>Valeur de retour  
- Retourne l’une des valeurs suivantes :  
+ Renvoie l'une des valeurs suivantes :  
   
-|||  
+|Valeur|Signification|
 |-|-|  
-|`S_OK`|Opération réussie.|  
+|`S_OK`|Réussite.|  
 |`DISP_E_UNKNOWNNAME`|Le nom n’était pas connu.|  
   
 ## <a name="example"></a>Exemple  
@@ -75,6 +75,6 @@ HRESULT hr;
 ```  
   
 ## <a name="see-also"></a>Voir aussi  
-   de l' [interface IDispatchEx](../../winscript/reference/idispatchex-interface.md)  
- [IDispatchEx::GetDispID](../../winscript/reference/idispatchex-getdispid.md)   
+ [Interface IDispatchEx](../../winscript/reference/idispatchex-interface.md)   
+ [IDispatchEx :: GetDispID](../../winscript/reference/idispatchex-getdispid.md)   
  [IDispatchEx::GetNextDispID](../../winscript/reference/idispatchex-getnextdispid.md)

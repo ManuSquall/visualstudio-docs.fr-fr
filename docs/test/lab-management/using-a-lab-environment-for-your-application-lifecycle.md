@@ -9,12 +9,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 2f4733bd52e44409ec9c2cc9a1e8828864712ceb
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: 7ec0e4eed9036a0548c4f8f162331e92a416c0cb
+ms.sourcegitcommit: d281d2a04a5bc302650eebf369946d8f101e59dd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85286828"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "88144686"
 ---
 # <a name="use-a-lab-environment-for-your-devops"></a>Utiliser un environnement lab pour votre DevOps
 
@@ -34,9 +34,14 @@ Voici quelques-unes des topologies d’environnements lab les plus courantes :
 |![Environnement lab cloud](../media/topology_cloud.png)| Cet environnement lab fournit des fonctionnalités similaires, ainsi que des fonctionnalités comme la _topologie de type serveur_, mais élimine l’obligation pour les machines physiques ou virtuelles de s’exécuter dans un environnement local, ce qui peut réduire les temps d’installation, simplifier la maintenance et réduire les coûts. La configuration de plusieurs sites web et plusieurs machines virtuelles en même temps qu’une mise en réseau personnalisée est rapide et facile dans un environnement cloud comme Microsoft Azure.|
 |![Environnement lab du client serveur](../media/topology_clientserver.png)| Cet environnement lab a une *topologie de type client-serveur*, qui est souvent utilisée pour tester une application comprenant à la fois des composants serveur et client. Dans une topologie de type client/serveur, tous les ordinateurs clients et serveurs utilisés pour tester l'application se trouvent dans l'environnement lab. Cette topologie vous permet de collecter des données de test sur tous les ordinateurs concernés par vos tests.|
 
-| | |
-|---|---|
-| ![Icône représentant une caméra pour les vidéos](../../install/media/video-icon.png) | [Regardez une vidéo](https://channel9.msdn.com/Series/Visual-Studio-2012-Premium-and-Ultimate-Overview/Visual-Studio-Ultimate-2012-Managing-lab-environments-for-testing) sur la gestion des environnements lab en vue de tests. |
+:::row:::
+    :::column:::
+        ![Icône représentant une caméra pour les vidéos](../../install/media/video-icon.png)
+    :::column-end:::
+    :::column:::
+        [Regardez une vidéo](https://channel9.msdn.com/Series/Visual-Studio-2012-Premium-and-Ultimate-Overview/Visual-Studio-Ultimate-2012-Managing-lab-environments-for-testing) sur la gestion des environnements lab en vue de tests.
+    :::column-end:::
+:::row-end:::
 
 ## <a name="use-the-cloud-with-azure-pipelines-or-team-foundation-server-build-and-release"></a>Utiliser le cloud avec les fonctionnalités Build et mise en production d’Azure Pipelines ou de Team Foundation Server
 
@@ -129,7 +134,7 @@ Pour plus d'informations sur Lab Management, consultez :
 * [Configuration de Lab Management pour les environnements SCVMM](https://msdn.microsoft.com/library/dd380687%28v=vs.140%29.aspx)
 * [Gérer les autorisations](https://msdn.microsoft.com/library/dd380760%28v=vs.140%29.aspx)
 * [Modification des configurations Lab Management existantes](https://msdn.microsoft.com/library/ee704508%28v=vs.140%29.aspx)
-* [Résolution des problèmes](https://msdn.microsoft.com/library/ee853230%28v=vs.140%29.aspx)
+* [Dépannage](https://msdn.microsoft.com/library/ee853230%28v=vs.140%29.aspx)
 
 Pour plus d’informations sur la configuration des environnements, consultez :
 

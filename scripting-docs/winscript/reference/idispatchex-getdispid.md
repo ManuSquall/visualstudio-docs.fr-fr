@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 57f0faf6004e2219600f0dbd63749a7e65ca438c
-ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.openlocfilehash: 81bb33a1e793f38e15dc51b37c4fa062eb54e7fa
+ms.sourcegitcommit: d281d2a04a5bc302650eebf369946d8f101e59dd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72576603"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "88144531"
 ---
 # <a name="idispatchexgetdispid"></a>IDispatchEx::GetDispID
-Mappe un nom de membre unique à son DISPID correspondant, qui peut ensuite être utilisé lors des appels suivants à `IDispatchEx::InvokeEx`.  
+Mappe un nom de membre unique à son DISPID correspondant, qui peut ensuite être utilisé lors des appels suivants à `IDispatchEx::InvokeEx` .  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -44,10 +44,10 @@ HRESULT GetDispID(
  `grfdex`  
  Détermine les options d’obtention de l’identificateur de membre. Il peut s’agir d’une combinaison des valeurs suivantes :  
   
-|valeur|Signification|  
+|Valeur|Signification|  
 |-----------|-------------|  
 |fdexNameCaseSensitive|Demande que la recherche de nom s’effectue de façon sensible à la casse. Peut être ignoré par un objet qui ne prend pas en charge la recherche qui respecte la casse.|  
-|fdexNameEnsure|Demande que le membre soit créé s’il n’existe pas déjà. Le nouveau membre doit être créé avec la valeur `VT_EMPTY`.|  
+|fdexNameEnsure|Demande que le membre soit créé s’il n’existe pas déjà. Le nouveau membre doit être créé avec la valeur `VT_EMPTY` .|  
 |fdexNameImplicit|Indique que l’appelant recherche un ou plusieurs objets d’un nom particulier lorsque l’objet de base n’est pas spécifié explicitement.|  
 |fdexNameCaseInsensitive|Demande que la recherche de nom s’effectue sans respect de la casse. Peut être ignoré par un objet qui ne prend pas en charge la recherche ne respectant pas la casse.|  
   
@@ -55,20 +55,20 @@ HRESULT GetDispID(
  Pointeur vers l’emplacement alloué par l’appelant pour recevoir le résultat DISPID. Si une erreur se produit, `pid` contient DISPID_UNKNOWN.  
   
 ## <a name="return-value"></a>Valeur de retour  
- Retourne l’une des valeurs suivantes :  
+ Renvoie l'une des valeurs suivantes :  
   
-|||  
+|Valeur|Signification|
 |-|-|  
-|`S_OK`|Opération réussie.|  
+|`S_OK`|Réussite.|  
 |`E_OUTOFMEMORY`|Mémoire insuffisante.|  
 |`DISP_E_UNKNOWNNAME`|Le nom n’était pas connu.|  
   
 ## <a name="remarks"></a>Notes  
- `GetDispID` peut être utilisé à la place de `GetIDsOfNames` pour obtenir le DISPID d’un membre donné.  
+ `GetDispID`peut être utilisé `GetIDsOfNames` à la place de pour obtenir le DispId d’un membre donné.  
   
  Étant donné que `IDispatchEx` autorise l’ajout et la suppression de membres, l’ensemble des DISPID ne reste pas constant pour la durée de vie d’un objet.  
   
- Le paramètre de `riid` inutilisé dans `IDispatch::GetIDsOfNames` a été supprimé.  
+ Le paramètre inutilisé `riid` dans `IDispatch::GetIDsOfNames` a été supprimé.  
   
 ## <a name="example"></a>Exemple  
   

@@ -17,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2abb562f65885ee1d12f2ec9b2300fcddd3be37b
-ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.openlocfilehash: cf62972b192d73bd130d15066d79ea70fe24beb8
+ms.sourcegitcommit: d281d2a04a5bc302650eebf369946d8f101e59dd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72576617"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "88144595"
 ---
 # <a name="idispatchexdeletememberbyname"></a>IDispatchEx::DeleteMemberByName
 Supprime un membre par son nom.  
@@ -43,21 +43,21 @@ HRESULT DeleteMemberByName(
  `grfdex`  
  Détermine si le nom du membre respecte la casse. Il peut s’agir de l’une des valeurs suivantes :  
   
-|valeur|Signification|  
+|Valeur|Signification|  
 |-----------|-------------|  
 |fdexNameCaseSensitive|Demande que la recherche de nom s’effectue de façon sensible à la casse. Peut être ignoré par un objet qui ne prend pas en charge la recherche qui respecte la casse.|  
 |fdexNameCaseInsensitive|Demande que la recherche de nom s’effectue sans respect de la casse. Peut être ignoré par un objet qui ne prend pas en charge la recherche ne respectant pas la casse.|  
   
 ## <a name="return-value"></a>Valeur de retour  
- Retourne l’une des valeurs suivantes :  
+ Renvoie l'une des valeurs suivantes :  
   
-|||  
+|Valeur|Signification|
 |-|-|  
-|`S_OK`|Opération réussie.|  
+|`S_OK`|Réussite.|  
 |`S_FALSE`|Le membre existe mais ne peut pas être supprimé.|  
   
 ## <a name="remarks"></a>Notes  
- Si le membre est supprimé, le DISPID doit rester valide pour `GetNextDispID`.  
+ Si le membre est supprimé, le DISPID doit rester valide pour `GetNextDispID` .  
   
  Si un membre avec un nom donné est supprimé et qu’un membre du même nom est recréé, le DISPID doit être le même. (Si les membres qui diffèrent uniquement par la casse sont « identiques » dépend de l’objet).  
   

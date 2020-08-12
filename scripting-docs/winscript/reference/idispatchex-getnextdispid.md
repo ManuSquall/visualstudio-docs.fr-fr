@@ -1,5 +1,5 @@
 ---
-title: IDispatchEx::GetNextDispID | Microsoft Docs
+title: 'IDispatchEx :: GetNextDispID | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4d964a8744f1f0a28704dd0a1d5e0fd2e67aab1c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8811e828a6701769badf45ca7c37f9c53529150f
+ms.sourcegitcommit: d281d2a04a5bc302650eebf369946d8f101e59dd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62997353"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "88144427"
 ---
 # <a name="idispatchexgetnextdispid"></a>IDispatchEx::GetNextDispID
 
@@ -41,12 +41,12 @@ HRESULT GetNextDispID(
 ## <a name="parameters"></a>Paramètres
 
 `grfdex`\
-Détermine quel jeu d’éléments sont à énumérer. Cela peut être une combinaison des valeurs suivantes :
+Détermine l’ensemble d’éléments à énumérer. Il peut s’agir d’une combinaison des valeurs suivantes :
 
-|Value|Signification|
+|Valeur|Signification|
 |-----------|-------------|
-|fdexEnumDefault|Demande que l’objet énumère les éléments par défaut. L’objet est autorisé à énumérer n’importe quel jeu d’éléments.|
-|fdexEnumAll|Demande que l’objet énumère tous les éléments. L’objet est autorisé à énumérer n’importe quel jeu d’éléments.|
+|fdexEnumDefault|Demande que l’objet énumère les éléments par défaut. L’objet est autorisé à énumérer tout ensemble d’éléments.|
+|fdexEnumAll|Demande que l’objet énumère tous les éléments. L’objet est autorisé à énumérer tout ensemble d’éléments.|
 
 `id`\
 Identifie le membre actuel. GetNextDispID récupère l’élément dans l’énumération après celui-ci. Utilise GetDispID ou un appel précédent à GetNextDispID pour obtenir cet identificateur. Utilise la valeur DISPID_STARTENUM pour obtenir le premier identificateur du premier élément.
@@ -54,16 +54,16 @@ Identifie le membre actuel. GetNextDispID récupère l’élément dans l’énu
 `pid`\
 Adresse d’une variable DISPID qui reçoit l’identificateur de l’élément suivant dans l’énumération.
 
-Si un membre est supprimé par `DeleteMemberByName` ou `DeleteMemberByDispID`, le `DISPID` doit rester valide pour `GetNextDispID`.
+Si un membre est supprimé par `DeleteMemberByName` ou `DeleteMemberByDispID` , le `DISPID` doit rester valide pour `GetNextDispID` .
 
 ## <a name="return-value"></a>Valeur de retour
 
-Retourne une des valeurs suivantes :
+Renvoie l'une des valeurs suivantes :
 
-|||
+|Valeur|Signification|
 |-|-|
-|`S_OK`|Opération réussie.|
-|`S_FALSE`|L’énumération est effectuée.|
+|`S_OK`|Réussite.|
+|`S_FALSE`|L’énumération est terminée.|
 
 ## <a name="example"></a>Exemple
 
