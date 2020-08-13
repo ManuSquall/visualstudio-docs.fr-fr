@@ -983,3 +983,9 @@
                   href: ca2248.md
             - name: Suspension automatique de fonctionnalités
               href: automatic-feature-suspension.md
+            - name: Publier les avertissements
+              items:
+                - name: Vue d’ensemble
+                  displayName: publish warnings
+                - name: "IL3000\_: Éviter d’utiliser l’accès du chemin du fichier Assembly lors de la publication en tant qu’application monofichier"
+                  href: il3000.md
