@@ -8,12 +8,13 @@ ms.devlang: dotnet
 ms.topic: how-to
 ms.date: 07/23/2019
 ms.author: ghogen
-ms.openlocfilehash: f1c02e1fdc0c72ac23cb65605f324608a7fc33d7
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+monikerRange: '>=vs-2019'
+ms.openlocfilehash: cd17726d5ba09dcb901fd529e6bdfd97dee52f31
+ms.sourcegitcommit: 2c26d6e6f2a5c56ae5102cdded7b02f2d0fd686c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "85536888"
+ms.lasthandoff: 08/13/2020
+ms.locfileid: "88168633"
 ---
 # <a name="deploy-to-docker-hub"></a>Déployer sur Docker Hub
 
@@ -29,9 +30,13 @@ Si vous n’avez pas de référentiel du hub d’ancrage, créez-en un dans le h
 
 1. Cliquez avec le bouton droit sur le nœud du projet et choisissez **publier...**. Un écran affichant les options de déploiement s’affiche.
 
-   ![Capture d’écran des options de déploiement](media/deploy-docker-hub/container-tools-docker-hub-deploy.png)
+   ![Capture d’écran des options de déploiement](media/container-tools/vs-2019/docker-container-registry.png)
 
-1. Sous **choisir une cible de publication**, choisissez **Container Registry**, puis cliquez sur **hub d’ancrage**. La boîte de dialogue **hub d’ancrage** s’affiche.
+1. Sélectionnez l’Container Registry de l' **ancreur**, puis choisissez **hub d’ancrage**.
+
+   ![Capture d’écran de la boîte de dialogue publier-choisir un hub d’ancrage](media/deploy-docker-hub/container-tools-docker-hub-deploy.png)
+
+1. Entrez les informations d’identification de votre ancrage.
 
    ![Capture d’écran de la boîte de dialogue Hub Dockr](media/deploy-docker-hub/container-tools-docker-hub-credentials.png)
 

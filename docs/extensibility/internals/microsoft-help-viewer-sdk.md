@@ -8,12 +8,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6eff6ef8f5415ecd4dc1c6dcce5046c976ce0e7c
-ms.sourcegitcommit: d9254e54079ae01cdf2d07b11f988faf688f80fc
+ms.openlocfilehash: 4181fd11e6f1ba86e2965991aab704995210e6bc
+ms.sourcegitcommit: 2c26d6e6f2a5c56ae5102cdded7b02f2d0fd686c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/11/2020
-ms.locfileid: "88114256"
+ms.lasthandoff: 08/13/2020
+ms.locfileid: "88168734"
 ---
 # <a name="microsoft-help-viewer-sdk"></a>Kit SDK de Microsoft Help Viewer
 
@@ -445,16 +445,16 @@ Remarque : les variables notées par « {n} » ont des dépendances de code, 
 
 **Branding.xml**
 
-| Fonctionnalité | Description |
+| Élément | Description |
 | - | - |
 | Fonctionnalités : | **CollapsibleArea** |
 | Utilisez : | Développer réduit le texte du contrôle de contenu |
-| **Élément** | **Valeur** |
+| **Element** | **Valeur** |
 | ExpandText | Développez |
 | CollapseText | Réduire |
 | Fonctionnalités : | **CodeSnippet** |
 | Utilisez : | Texte de contrôle d’extrait de code.  Remarque : le contenu de l’extrait de code avec un espace insécable sera remplacé par espace. |
-| **Élément** | **Valeur** |
+| **Element** | **Valeur** |
 | CopyToClipboard | Copier dans le Presse-papiers |
 | ViewColorizedText | Afficher les couleurs |
 | CombinedVBTabDisplayLanguage | Visual Basic (exemple) |
@@ -462,7 +462,7 @@ Remarque : les variables notées par « {n} » ont des dépendances de code, 
 | VBUsage | Usage |
 | Fonctionnalités : | **Commentaires, pieds de page et logo** |
 | Utilisez : | Fournissez un contrôle de commentaires pour que le client fournisse des commentaires sur la rubrique en cours par courrier électronique.  Texte de copyright du contenu.  Définition du logo. |
-| **Élément** | **Valeur (ces chaînes peuvent être modifiées pour répondre aux besoins de l’adoption de contenu.)** |
+| **Element** | **Valeur (ces chaînes peuvent être modifiées pour répondre aux besoins de l’adoption de contenu.)** |
 | Intellectuelle | © 2013 Microsoft Corporation. Tous droits réservés. |
 | SendFeedback | \<a href="{0}" {1}>Envoyer \</a> des commentaires sur cette rubrique à Microsoft. |
 | FeedbackLink | |
@@ -471,7 +471,7 @@ Remarque : les variables notées par « {n} » ont des dépendances de code, 
 | LogoFileNameHC | vs_logo_wh.gif |
 | Fonctionnalités : | **AVERTISSEMENT** |
 | Utilisez : | Ensemble de exclusions spécifiques à la casse pour le contenu traduit par une machine. |
-| **Élément** | **Valeur** |
+| **Element** | **Valeur** |
 | MT_Editable | Cet article a été traduit par une machine. Si vous disposez d’une connexion Internet, sélectionnez Afficher cette rubrique en ligne pour afficher cette page en mode modifiable avec le contenu original en anglais en même temps. |
 | MT_NonEditable | Cet article a été traduit par une machine. Si vous disposez d’une connexion Internet, sélectionnez Afficher cette rubrique en ligne pour afficher cette page en mode modifiable avec le contenu original en anglais en même temps. |
 | MT_QualityEditable | Cet article a été traduit manuellement. Si vous disposez d’une connexion Internet, sélectionnez Afficher cette rubrique en ligne pour afficher cette page en mode modifiable avec le contenu original en anglais en même temps. |
@@ -480,14 +480,14 @@ Remarque : les variables notées par « {n} » ont des dépendances de code, 
 | MT_BetaRecycledContents | Cet article a été traduit manuellement pour une version préliminaire. Si vous disposez d’une connexion Internet, sélectionnez Afficher cette rubrique en ligne pour afficher cette page en mode modifiable avec le contenu original en anglais en même temps. |
 | Fonctionnalités : | **Élément LinkTable** |
 | Utilisez : | Prise en charge des liens de rubriques en ligne |
-| **Élément** | **Valeur** |
+| **Element** | **Valeur** |
 | LinkTableTitle | Lier une table |
 | TopicEnuLinkText | Affichez la version anglaise \</a> de cette rubrique qui est disponible sur votre ordinateur. |
 | TopicOnlineLinkText | Afficher cette rubrique \<a href="{0}" {1}> en ligne\</a> |
 | OnlineText | En ligne |
 | Fonctionnalités : | **Contrôle audio vidéo** |
 | Utilisez : | Éléments d’affichage et texte pour le contenu vidéo |
-| **Élément** | **Valeur** |
+| **Element** | **Valeur** |
 | MultiMediaNotSupported | Internet Explorer 9 ou version ultérieure doit être installé pour prendre en charge le {0} contenu. |
 | VideoText | affichage de la vidéo |
 | AudioText | streaming audio |
@@ -495,25 +495,25 @@ Remarque : les variables notées par « {n} » ont des dépendances de code, 
 | OnlineAudioLinkText | \<p>Pour écouter l’audio associé à cette rubrique, cliquez {0} \<a href="{1}"> {2} ici \</a> .\</p> |
 | Fonctionnalités : | **Contrôle de contenu non installé** |
 | Utilisez : | Éléments de texte (chaînes) utilisés pour le rendu des contentnotinstalled.htm |
-| **Élément** | **Valeur** |
+| **Element** | **Valeur** |
 | ContentNotInstalledTitle | Aucun contenu n’a été trouvé sur votre ordinateur. |
 | ContentNotInstalledDownloadContentText | \<p>Pour télécharger du contenu sur votre ordinateur, \<a href="{0}" {1}> cliquez sur l’onglet gérer \</a> .\</p> |
 | ContentNotInstalledText | \<p>Aucun contenu n’est installé sur votre ordinateur. Consultez votre administrateur pour l’installation du contenu de l’aide locale.\</p> |
 | Fonctionnalités : | **Contrôle de rubrique introuvable** |
 | Utilisez : | Éléments de texte (chaînes) utilisés pour le rendu des topicnotfound.htm |
-| **Élément** | **Valeur** |
+| **Element** | **Valeur** |
 | TopicNotFoundTitle | Impossible de trouver la rubrique demandée sur votre ordinateur. |
 | TopicNotFoundViewOnlineText | \<p>La rubrique que vous avez demandée est introuvable sur votre ordinateur, mais vous pouvez \<a href="{0}" {1}> afficher la rubrique en ligne \</a> .\</p> |
 | TopicNotFoundDownloadContentText | \<p>Consultez le volet de navigation pour obtenir des liens vers des rubriques similaires ou \<a href="{0}" {1}> cliquez sur l’onglet gérer \</a> pour télécharger du contenu sur votre ordinateur.\</p> |
 | TopicNotFoundText | \<p>La rubrique que vous avez demandée est introuvable sur votre ordinateur.\</p> |
 | Fonctionnalités : | **Contrôle endommagé de la rubrique** |
 | Utilisez : | Éléments de texte (chaînes) utilisés pour le rendu des topiccorrupted.htm |
-| **Élément** | **Valeur** |
+| **Element** | **Valeur** |
 | TopicCorruptedTitle | Impossible d’afficher la rubrique demandée. |
 | TopicCorruptedViewOnlineText | \<p>La visionneuse d’aide ne peut pas afficher la rubrique demandée. Il peut y avoir une erreur dans le contenu de la rubrique ou une dépendance du système sous-jacent.\</p> |
 | Fonctionnalités : | **Contrôle de page d’hébergement** |
 | Utilisez : | Texte qui prend en charge l’affichage du contenu du nœud de niveau supérieur de la visionneuse d’aide. |
-| **Élément** | **Valeur** |
+| **Element** | **Valeur** |
 | HomePageTitle | Page d’affichage de Help Viewer |
 | HomePageIntroduction | \<p>Bienvenue dans le Microsoft Help Viewer, une source d’informations essentielle pour tous ceux qui utilisent les outils, produits, technologies et services de Microsoft. La visionneuse d’aide vous permet d’accéder à des informations de référence, des exemples de code, des articles techniques et bien plus encore. Pour trouver le contenu dont vous avez besoin, parcourez la table des matières, utilisez la recherche en texte intégral ou parcourez le contenu à l’aide de l’index de mots clés.\</p> |
 | HomePageContentInstallText | \<p>\<br />Utilisez l' \<a href="{0}" {1}> onglet gérer \</a> le contenu pour effectuer les opérations suivantes : \<ul> \<li> Ajouter du contenu à votre ordinateur. \</li> \<li> Recherchez les mises à jour de votre contenu local. \</li> \<li> Supprimer le contenu de votre ordinateur.\</li>\</ul>\</p> |
@@ -563,7 +563,7 @@ Le fichier branding.js contient du code JavaScript utilisé par les éléments d
 
 Le package de personnalisation contient un ensemble de fichiers HTM qui prennent en charge des scénarios de communication des informations clés pour aider les utilisateurs du contenu, par exemple une page d’accueil contenant une section décrivant les jeux de contenu installés et des pages indiquant à l’utilisateur quand les rubriques sont introuvables dans l’ensemble de rubriques local. Ces fichiers HTM peuvent être modifiés par produit.  Les fournisseurs de l’interpréteur de commandes ISO sont en mesure de prendre le package de personnalisation par défaut et de modifier le comportement et le contenu de ces pages en fonction de leurs besoins.  Ces fichiers font référence à leur package de personnalisation respectif pour que les balises de personnalisation obtiennent le contenu correspondant à partir du fichier branding.xml.
 
-|**Fichier**|**Utilisation**|**Source de contenu affichée**|
+|**File**|**Utilisation**|**Source de contenu affichée**|
 |-|-|-|
 |homepage.htm|Il s’agit d’une page qui affiche le contenu actuellement installé et tout autre message approprié à présenter à l’utilisateur sur son contenu.  Ce fichier contient l’attribut de métadonnées supplémentaire « Microsoft.Help.Id » content = « -1 » qui place ce contenu en haut de la table des matières locale.||
 ||<META_HOME_PAGE_TITLE_ADD/>|Branding.xml, balise\<HomePageTitle>|
@@ -597,7 +597,7 @@ Personnalisation des fichiers. CSS inclut les définitions pour la présentation
 
 Le contenu Visual Studio affiche un logo Visual Studio, ainsi que d’autres graphiques.  La liste complète des fichiers graphiques dans le package de personnalisation de la visionneuse d’aide Visual Studio est indiquée ci-dessous.
 
-|**Fichier**|**Utilisation**|**Exemples**|
+|**File**|**Utilisation**|**Exemples**|
 |-|-|-|
 |clear.gif|Utilisé pour restituer la zone réductible||
 |footer_slice.gif|Présentation du pied de page||
@@ -704,7 +704,7 @@ Cette procédure pas à pas montre comment incorporer du contenu d’aide dans u
 
 2. [Redistribution de Shell isolé Visual Studio 2013](https://visualstudio.microsoft.com/vs/older-downloads/isolated-shell/)
 
-**Vue d’ensemble**
+**Vue d'ensemble**
 
 L' [!INCLUDE[vs_dev12](../../extensibility/includes/vs_dev12_md.md)] interpréteur de commandes est une version de l' [!INCLUDE[vs_dev12](../../extensibility/includes/vs_dev12_md.md)] IDE sur laquelle vous pouvez baser une application. De telles applications contiennent l’interpréteur de commandes isolé avec les extensions que vous créez. Utilisez les modèles de projet Shell isolé, inclus dans le [!INCLUDE[vs_dev12](../../extensibility/includes/vs_dev12_md.md)] Kit de développement logiciel (SDK), pour générer des extensions.
 

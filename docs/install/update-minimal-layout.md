@@ -12,12 +12,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 849cad46463ffb52e2f4f2a930f05daf66f7d737
-ms.sourcegitcommit: 363f3e6e30dd54366ade0d08920755da5951535c
+ms.openlocfilehash: 2b9c86c17b89258145613e867ba6a91b2219fe0d
+ms.sourcegitcommit: 2c26d6e6f2a5c56ae5102cdded7b02f2d0fd686c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/21/2020
-ms.locfileid: "86869891"
+ms.lasthandoff: 08/13/2020
+ms.locfileid: "88168747"
 ---
 # <a name="update-visual-studio-using-a-minimal-offline-layout"></a>Mettre à jour Visual Studio avec une disposition hors connexion minimale
 
@@ -56,12 +56,13 @@ Cet outil crée des dispositions de mise à jour pour Visual Studio 2017 (15,9) 
 #### <a name="commands"></a>Commandes
 * **Aperçu**: utilisez cette commande pour afficher un aperçu du nombre de packages à télécharger et de l’espace total utilisé pour créer cette disposition. 
 * **Générer**: utilisez cette commande pour générer la disposition minimale pour la mise à jour de Visual Studio.
-* **Régénérer**: utilisez cette commande pour régénérer une disposition à l’aide d’un fichier réponse de disposition minimale existant. Chaque disposition minimale produit un `MinimalLayout.json` fichier réponse qui contient les paramètres d’entrée de disposition minimale d’origine. Vous pouvez utiliser la commande **régénérer** et un `MinimalLayout.json` fichier réponse pour régénérer la disposition minimale. Cela est utile si vous souhaitez créer une disposition minimale pour une nouvelle mise à jour de Visual Studio en fonction du fichier de réponse de la disposition minimale précédente. 
-   - Pour cette commande, un `MinimalLayout.json` chemin d’accès de fichier d’une disposition déjà générée est requis. 
+* **Régénérer**: utilisez cette commande pour régénérer une disposition à l’aide d’un fichier réponse de disposition minimale existant. Chaque disposition minimale produit un `MinimalLayout.json` fichier réponse qui contient les paramètres d’entrée de disposition minimale d’origine. Vous pouvez utiliser la commande **régénérer** et un `MinimalLayout.json` fichier réponse pour régénérer la disposition minimale. Cela est utile si vous souhaitez créer une disposition minimale pour une nouvelle mise à jour de Visual Studio en fonction du fichier de réponse de la disposition minimale précédente.
 
-        ```cmd
-        MinimalLayout.exe regenerate --filePath C:\MinimalLayout\MinimalLayout.json
-        ```
+   Pour cette commande, un `MinimalLayout.json` chemin d’accès de fichier d’une disposition déjà générée est requis. 
+
+    ```cmd
+    MinimalLayout.exe regenerate --filePath C:\MinimalLayout\MinimalLayout.json
+    ```
 
 * **Vérifier**: utilisez cette commande pour déterminer si le dossier de disposition est endommagé.
 * **Correctif**: utilisez cette commande pour corriger un dossier de disposition endommagé, y compris pour remplacer tous les packages manquants du dossier de disposition.
