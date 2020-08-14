@@ -1,21 +1,21 @@
 ---
 title: Options, Éditeur de texte, C#, Avancé
-ms.date: 01/16/2019
+ms.date: 08/12/2020
 ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.CSharp.Outlining
 - VS.ToolsOptionsPages.Text_Editor.CSharp.Advanced
-author: TerryGLee
-ms.author: tglee
+author: akhera99
+ms.author: midumont
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: ff42473c6f56d69a56cfbd811f2687ba544c7c5e
-ms.sourcegitcommit: 4d932000a0f7e79c9475fe66c02fe9addcd7e47a
+ms.openlocfilehash: b8e515058b17205a65bab401c7b31c7205aa55bc
+ms.sourcegitcommit: 2946d802aec1418e87bfa779d81834eeb7be5c9d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "86181064"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "88214687"
 ---
 # <a name="options-text-editor-c-advanced"></a>Options, Éditeur de texte, C#, Avancé
 
@@ -128,7 +128,13 @@ Utilisez la page d’options **Avancé** pour modifier les paramètres de mise e
 Activez ces cases à cocher pour afficher les lignes verticales en pointillés entre les accolades ( **{}** ) dans votre code. Cela vous permet de voir facilement les blocs de code pour vos constructions au niveau des déclarations et au niveau du code.
 
 ## <a name="editor-help"></a>Aide de l'éditeur
-
+::: moniker range=">=vs-2019"
+- Indicateurs de nom de paramètre Inline 
+    
+    Lorsque cette option est sélectionnée, les indicateurs de nom de paramètre sont insérés pour les littéraux, les littéraux castés et les instanciations d’objets avant chaque argument dans les appels de fonction.  
+    
+    ![Indicateurs de nom de paramètre Inline pour CSharp](media/inline-parameter-name-hints-csharp.png)
+::: moniker-end
 - Générer des commentaires de documentation XML pour ///
 
    Quand cette option est sélectionnée et que vous tapez l’introduction de commentaires `///`, elle insère les éléments XML pour les commentaires de documentation XML. Pour plus d’informations sur la documentation XML, consultez [Commentaires de documentation XML (Guide de programmation C#)](/dotnet/csharp/programming-guide/xmldoc/xml-documentation-comments).

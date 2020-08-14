@@ -1,6 +1,6 @@
 ---
 title: Options, Éditeur de texte, Basic (VB), Avancé
-ms.date: 01/16/2019
+ms.date: 08/12/2020
 ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Visual_Basic.Editor
@@ -13,32 +13,32 @@ f1_keywords:
 helpviewer_keywords:
 - Basic Text Editor Options dialog box
 ms.assetid: 5a8cafca-f7b4-4a2d-92ce-6894a7673d00
-author: TerryGLee
-ms.author: tglee
+author: akhera99
+ms.author: midumont
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 562358ca90e223a07926aaa383ded41a5f7557cc
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 778cd1f9c126b176cafad8b33a147d284bea1b67
+ms.sourcegitcommit: 2946d802aec1418e87bfa779d81834eeb7be5c9d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79431473"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "88214644"
 ---
 # <a name="options-text-editor-basic-visual-basic-advanced"></a>Option, Éditeur de texte, Basic (Visual Basic), Avancé
 La page de propriétés **Spécifique à VB**, accessible par le biais du menu **Outils**, dans la boîte de dialogue **Options**, puis dans le dossier **Éditeur de texte** et son dossier **De base**, contient les propriétés suivantes :
 
 ## <a name="analysis"></a>Analyse
 
-- Analyse de code en direct ou portée d’analyse de fond
+- Analyse du code en temps réel ou étendue de l’analyse en arrière-plan
 
-   Configurer la portée d’analyse de fond pour le code géré. Pour plus d’informations, voir [Comment configurer la portée d’analyse de code en direct pour le code géré](../../code-quality/configure-live-code-analysis-scope-managed-code.md).
+   Configurez l’étendue de l’analyse en arrière-plan pour le code managé. Pour plus d’informations, consultez [Comment : configurer l’étendue de l’analyse du code en temps réel pour le code managé](../../code-quality/configure-live-code-analysis-scope-managed-code.md).
 
 ## <a name="using-directives"></a>Directives Using
 
 - Placer les directives « System » en premier lors du tri des usings
 
-   Lorsqu’il est sélectionné, la commande Supprimer et Trier `using` les **utilisations** dans le menu à clic droit trie les directives et place les espaces nominaux «Système» en haut de la liste.
+   Lorsque cette option est sélectionnée, la commande **supprimer et trier** les instructions using du menu contextuel trie les `using` directives et place les espaces de noms « System » en haut de la liste.
 
 - Séparer les groupes de directives using
 
@@ -55,9 +55,9 @@ La page de propriétés **Spécifique à VB**, accessible par le biais du menu *
 
  **Activer la mise en surbrillance des références et des mots clés**
 
-L’éditeur de texte peut mettre en surbrillance toutes les instances d’un symbole ou tous les mots clés dans une clause, par exemple `If..Then`, `While...End While` ou `Try...Catch...Finally`. Vous pouvez naviguer entre les références ou les mots clés mis en évidence en appuyant sur la flèche **Ctrl** + **Shift** + **Down** ou la flèche **Ctrl** + **Shift** + **Up**.
+L’éditeur de texte peut mettre en surbrillance toutes les instances d’un symbole ou tous les mots clés dans une clause, par exemple `If..Then`, `While...End While` ou `Try...Catch...Finally`. Vous pouvez naviguer entre les références ou les mots clés en surbrillance en appuyant sur **CTRL**  +  **MAJ**  +  **flèche bas** ou **CTRL**  +  **MAJ**  +  **flèche haut**.
 
-## <a name="outlining"></a>Mode Plan
+## <a name="outlining"></a>mode Plan
 
 **Activer le mode Plan**
 
@@ -78,6 +78,13 @@ L’éditeur de texte indique la portée visuelle des procédures. Une ligne est
 Quand cette option est sélectionnée, des lignes verticales alignées avec les blocs de code structurés sont affichées dans l’éditeur, ce qui vous permet d’identifier facilement les différents blocs de code. Par exemple, vous voyez une ligne entre `Sub` et `EndSub` dans une instruction `Sub`.
 
 ## <a name="editor-help"></a>Aide de l'éditeur
+
+::: moniker range=">=vs-2019"
+**Indicateurs de nom de paramètre Inline**    
+Lorsque cette option est sélectionnée, les indicateurs de nom de paramètre sont insérés pour les littéraux, les littéraux castés et les instanciations d’objets avant chaque argument dans les appels de fonction.  
+
+![Indicateurs de nom de paramètre Inline pour Visual Basic](media/inline-parameter-name-hints-visualbasic.png)
+::: moniker-end
 
 **Listing en mode Pretty (remise en forme) du code** L’éditeur de texte remet en forme votre code comme il convient. Quand cette option est sélectionnée, l’éditeur de code effectue les opérations suivantes :
 
@@ -109,5 +116,5 @@ L’éditeur de texte peut suggérer des solutions aux erreurs courantes et vous
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Général, Environnement, Options Dialog Box](../../ide/reference/general-environment-options-dialog-box.md)
+- [Général, environnement, boîte de dialogue Options](../../ide/reference/general-environment-options-dialog-box.md)
 - [Options, Éditeur de texte, Tous les langages, Tabulations](../../ide/reference/options-text-editor-all-languages-tabs.md)
