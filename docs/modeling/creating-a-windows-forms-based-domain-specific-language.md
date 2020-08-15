@@ -7,12 +7,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 57507775a03bcfd0649f4efbf8a7771fefc8e20b
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.openlocfilehash: c52b3bd352c2ecb2272ad8e229a0fe52a9ee5b41
+ms.sourcegitcommit: d8609a78b460d4783f5d59c0c89454910a4dbd21
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "85547314"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "88238359"
 ---
 # <a name="create-a-windows-forms-based-domain-specific-language"></a>Créer un langage spécifique à un domaine basé sur Windows Forms
 
@@ -30,10 +30,8 @@ Le modèle DSL du **Concepteur WinForm minimal** crée un DSL minimal que vous p
 
     Dans cette procédure pas à pas, les noms suivants sont utilisés :
 
-   | | |
-   |-|-|
-   | Nom de la solution et du DSL | FarmApp |
-   | Espace de noms | Société. FarmApp |
+    - Nom de la solution et du DSL : `FarmApp`
+    - Joint `Company.FarmApp`
 
 2. Expérimentez l’exemple initial fourni par le modèle :
 
@@ -51,9 +49,9 @@ Le modèle DSL du **Concepteur WinForm minimal** crée un DSL minimal que vous p
 
    Dans l’instance principale de Visual Studio, notez les points suivants sur la solution DSL :
 
-- `DslDefinition.dsl`ne contient aucun élément de diagramme. Cela est dû au fait que vous n’utiliserez pas de diagrammes DSL pour afficher les modèles d’instance de ce DSL. Au lieu de cela, vous allez lier un Windows Form au modèle, et les éléments du formulaire afficheront le modèle.
+- `DslDefinition.dsl` ne contient aucun élément de diagramme. Cela est dû au fait que vous n’utiliserez pas de diagrammes DSL pour afficher les modèles d’instance de ce DSL. Au lieu de cela, vous allez lier un Windows Form au modèle, et les éléments du formulaire afficheront le modèle.
 
-- En plus des `Dsl` projets et `DslPackage` , la solution contient un troisième projet nommé `UI.` projet d' **interface utilisateur** qui contient la définition d’un contrôle de Windows Forms. `DslPackage`dépend de `UI` , et `UI` dépend de `Dsl` .
+- En plus des `Dsl` projets et `DslPackage` , la solution contient un troisième projet nommé `UI.` projet d' **interface utilisateur** qui contient la définition d’un contrôle de Windows Forms. `DslPackage` dépend de `UI` , et `UI` dépend de `Dsl` .
 
 - Dans le `DslPackage` projet, `UI\DocView.cs` contient le code qui affiche le contrôle Windows Forms défini dans le `UI` projet.
 
@@ -86,9 +84,9 @@ La définition DSL suivante est utilisée dans cette procédure pas à pas.
 
 4. Utilisez l’outil **classe de domaine nommée** pour créer les classes de domaine suivantes :
 
-    - `Field`-Donnez à cette propriété de domaine supplémentaire nommée `Size` .
+    - `Field` -Donnez à cette propriété de domaine supplémentaire nommée `Size` .
 
-    - `Animal`-Dans le Fenêtre Propriétés, définissez le **modificateur d’héritage** sur **abstract**.
+    - `Animal` -Dans le Fenêtre Propriétés, définissez le **modificateur d’héritage** sur **abstract**.
 
 5. Utilisez l’outil **classe de domaine** pour créer les classes suivantes :
 
@@ -162,7 +160,7 @@ La définition DSL suivante est utilisée dans cette procédure pas à pas.
 
      Définissez la propriété **DataMember** sur **animaux** ou **champs**.
 
-10. Affectez à la propriété **DataSource** de la valeur `AnimalGridView` `AnimalBinding` et de `FieldGridView` à `FieldBinding` .
+10. Affectez à la propriété **DataSource** de la valeur `AnimalGridView` `AnimalBinding` et de  `FieldGridView` à `FieldBinding` .
 
 11. Ajustez la disposition du contrôle de la batterie de serveurs à votre goût.
 
@@ -220,7 +218,7 @@ La solution DSL peut désormais être générée et exécutée, bien que vous pu
 
 3. Dans l **'Explorateur FarmApp**, ouvrez le menu contextuel du nœud racine de la **batterie de serveurs** , puis choisissez **Ajouter un nouveau caprin**.
 
-     `Goat1`apparaît dans la vue **animaux** .
+     `Goat1` apparaît dans la vue **animaux** .
 
     > [!WARNING]
     > Vous devez utiliser le menu contextuel sur le nœud de la **batterie de serveurs** , et non sur le nœud **animaux** .

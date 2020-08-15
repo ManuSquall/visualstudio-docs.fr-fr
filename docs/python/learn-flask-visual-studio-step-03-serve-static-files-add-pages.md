@@ -11,14 +11,14 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 5aa952a00075cdad262803140ab4c0360f0c62a0
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: 69fd704976ee941cb053d75040a3d3ec7871a380
+ms.sourcegitcommit: d8609a78b460d4783f5d59c0c89454910a4dbd21
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "72985183"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "88238740"
 ---
-# <a name="step-3-serve-static-files-add-pages-and-use-template-inheritance"></a>Étape 3 : Prendre en charge les fichiers statiques, ajouter des pages et utiliser l’héritage du modèle
+# <a name="step-3-serve-static-files-add-pages-and-use-template-inheritance-with-flask-app"></a>Étape 3 : traiter les fichiers statiques, ajouter des pages et utiliser l’héritage de modèle avec l’application de la fiole
 
 **Étape précédente : [Créer une application Flask avec des vues et des modèles de page](learn-flask-visual-studio-step-02-create-app.md)**
 
@@ -58,7 +58,7 @@ Dans les deux cas, vous pouvez organiser les fichiers comme vous le souhaitez so
 
 1. Dans **l’Explorateur de solutions**, cliquez avec le bouton droit sur le dossier **HelloFlask** dans le projet Visual Studio, sélectionnez **Ajouter** > **Nouveau dossier** et nommez le dossier `static`.
 
-1. Cliquez avec le bouton droit sur le dossier **static** et sélectionnez **Ajouter** > **Nouvel élément**. Dans le dialogue qui apparaît, sélectionnez le `site.css`modèle **Stylesheet,** nommez le fichier et sélectionnez **OK**. Le fichier **site.css** apparaît dans le projet et est ouvert dans l’éditeur. Votre structure de dossiers doit apparaître semblable à l’image suivante :
+1. Cliquez avec le bouton droit sur le dossier **static** et sélectionnez **Ajouter** > **Nouvel élément**. Dans la boîte de dialogue qui s’affiche, sélectionnez le modèle de **feuille de style** , nommez le fichier `site.css` , puis sélectionnez **OK**. Le fichier **site.css** apparaît dans le projet et est ouvert dans l’éditeur. Votre structure de dossiers doit apparaître semblable à l’image suivante :
 
     ![Structure de fichier statique comme indiqué dans l’Explorateur de solutions](media/flask/step03-static-file-structure.png)
 
@@ -168,7 +168,7 @@ Les étapes suivantes ajoutent une page « About » au projet « HelloFlask » e
     <div><a href="about">About</a></div>
     ```
 
-1. Enregistrez tous les fichiers à l’aide de la commande de menu**Enregistrer tous** **les fichiers,** > ou appuyez simplement sur **Ctrl**+**Shift**+**S**. (Techniquement, cette étape n’est pas nécessaire puisque l’exécution du projet dans Visual Studio enregistre automatiquement les fichiers. Toutefois, c’est une commande bonne à connaître !)
+1. Enregistrez tous les fichiers à l’aide de la commande de menu **fichier**  >  **enregistrer tout** ou appuyez simplement sur **CTRL** + **MAJ** + **S**. (Techniquement, cette étape n’est pas nécessaire puisque l’exécution du projet dans Visual Studio enregistre automatiquement les fichiers. Toutefois, c’est une commande bonne à connaître !)
 
 1. Exécutez le projet pour observer les résultats et contrôler la navigation entre les pages. Arrêtez l’application quand c’est terminé.
 
@@ -188,7 +188,7 @@ Le système de création de modèles de Flask offre deux moyens de réutiliser d
 
 Dans les deux cas, `<template_path>` est relatif au dossier *templates* de l’application (`../` ou `./` sont également autorisés).
 
-Un modèle de *blocks* base `{% block <block_name> %}` délimite les blocs à l’aide et `{% endblock %}` les balises. Si un modèle de référence utilise ensuite des étiquettes portant le même nom de bloc, le contenu de son bloc remplace celui du modèle de base.
+Un modèle de base délimite les *blocs* à l’aide `{% block <block_name> %}` de `{% endblock %}` balises et. Si un modèle de référence utilise ensuite des étiquettes portant le même nom de bloc, le contenu de son bloc remplace celui du modèle de base.
 
 Les étapes suivantes démontrent l’héritage :
 

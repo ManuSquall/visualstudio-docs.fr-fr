@@ -1,5 +1,5 @@
 ---
-title: Présentation de l’IDE Visual Studio
+title: 'Démarrage rapide : visite guidée de l’IDE de Visual Studio'
 titleSuffix: ''
 ms.date: 02/21/2019
 ms.topic: quickstart
@@ -8,12 +8,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 490d3edddd35ad5d72733824e3af41888839e946
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: 08ec25312068d5c69cdb0df9b7c293ae0575f608
+ms.sourcegitcommit: d8609a78b460d4783f5d59c0c89454910a4dbd21
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "75596968"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "88238853"
 ---
 # <a name="quickstart-first-look-at-the-visual-studio-ide"></a>Démarrage rapide : premier aperçu de l'IDE Visual Studio
 
@@ -35,11 +35,11 @@ Si vous n’avez pas encore installé Visual Studio, accédez à la page [Télé
 
 ## <a name="start-page"></a>Page de démarrage
 
-Lorsque vous ouvrez Visual Studio, la première chose qui s’affiche en général est la **Page de démarrage**. La **page de démarrage** est conçue comme un « hub » pour vous aider à trouver les commandes et les fichiers de projet dont vous avez besoin plus rapidement. La section **Récent** affiche les projets et dossiers que vous avez utilisés récemment. Sous **Nouveau projet**, vous pouvez cliquer sur un lien pour afficher la boîte de dialogue **Nouveau projet**, ou sous **Ouvrir**, vous pouvez ouvrir un projet ou dossier de code existant. Vous trouverez à droite un flux des dernières informations pour les développeurs.
+Lorsque vous ouvrez Visual Studio, la première chose qui s’affiche en général est la **Page de démarrage**. La **page de démarrage** est conçue comme un « Hub » pour vous aider à trouver plus rapidement les commandes et fichiers projet dont vous avez besoin. La section **Récent** affiche les projets et dossiers que vous avez utilisés récemment. Sous **Nouveau projet**, vous pouvez cliquer sur un lien pour afficher la boîte de dialogue **Nouveau projet**, ou sous **Ouvrir**, vous pouvez ouvrir un projet ou dossier de code existant. Vous trouverez à droite un flux des dernières informations pour les développeurs.
 
 ![Page de démarrage dans Visual Studio](media/start-page.png)
 
-Si vous fermez la **page de démarrage** et que vous souhaitez la revoir, vous pouvez la rouvrir à partir du menu **Fichier.**
+Si vous fermez la **page de démarrage** et que vous souhaitez la voir à nouveau, vous pouvez la rouvrir à partir du menu **fichier** .
 
 ![Menu Fichier dans Visual Studio](media/quickstart-IDE-file-menu-large.png)
 
@@ -51,7 +51,7 @@ Si vous fermez la **page de démarrage** et que vous souhaitez la revoir, vous p
 
 Quand vous ouvrez Visual Studio, la première chose que vous voyez est la fenêtre de démarrage. La fenêtre de démarrage est conçue pour vous aider à « accéder au code » plus rapidement. Elle contient des options pour fermer ou extraire du code, ouvrir une solution ou un projet existant, créer un projet ou simplement ouvrir un dossier qui contient des fichiers de code.
 
-[![Fenêtre de départ dans Visual Studio 2019](media/vs-2019/start-window-labeled.png)](media/vs-2019/start-window-labeled.png#lightbox)
+[![Démarrer la fenêtre dans Visual Studio 2019](media/vs-2019/start-window-labeled.png)](media/vs-2019/start-window-labeled.png#lightbox)
 
 Si vous utilisez Visual Studio pour la première fois, votre liste des derniers projets est vide.
 
@@ -79,7 +79,7 @@ Pour continuer à explorer les fonctionnalités de Visual Studio, nous allons cr
 
 ::: moniker range=">=vs-2019"
 
-1. Sur la fenêtre de départ, choisissez **Créer un nouveau projet**.
+1. Dans la fenêtre Démarrer, choisissez **créer un nouveau projet**.
 
    Une boîte de dialogue indiquant **Créer un projet** s’affiche. Ici, vous pouvez rechercher, filtrer et sélectionner un modèle de projet. Elle montre également la liste des modèles de projet récemment utilisés.
 
@@ -99,7 +99,7 @@ Pour continuer à explorer les fonctionnalités de Visual Studio, nous allons cr
 
 ## <a name="solution-explorer"></a>Explorateur de solutions
 
-L’**Explorateur de solutions**, qui se trouve généralement sur le côté droit de Visual Studio, affiche une représentation graphique de la hiérarchie des fichiers et des dossiers dans votre projet, solution ou dossier de code. Vous pouvez parcourir la hiérarchie et naviguer vers un fichier dans **Solution Explorer**.
+L’**Explorateur de solutions**, qui se trouve généralement sur le côté droit de Visual Studio, affiche une représentation graphique de la hiérarchie des fichiers et des dossiers dans votre projet, solution ou dossier de code. Vous pouvez parcourir la hiérarchie et accéder à un fichier dans **Explorateur de solutions**.
 
 ![Explorateur de solutions dans Visual Studio](media/quickstart-IDE-solution-explorer.png)
 
@@ -123,7 +123,7 @@ La barre de menus en haut de la fenêtre de Visual Studio regroupe les commandes
 
 Ouvrez la fenêtre **Liste d’erreurs** en sélectionnant le menu **Affichage**, puis **Liste d’erreurs**.
 
-La **liste d’erreurs** vous montre des erreurs, des avertissements et des messages concernant l’état actuel de votre code. S’il existe des erreurs (par exemple, une accolade ou un point-virgule manquant) dans votre fichier, ou n’importe où dans votre projet, elles sont répertoriées ici.
+Le **liste d’erreurs** affiche les erreurs, les avertissements et les messages relatifs à l’état actuel de votre code. S’il existe des erreurs (par exemple, une accolade ou un point-virgule manquant) dans votre fichier, ou n’importe où dans votre projet, elles sont répertoriées ici.
 
 ![Liste d’erreurs dans Visual Studio](media/quickstart-IDE-error-list.png)
 
@@ -131,7 +131,7 @@ La **liste d’erreurs** vous montre des erreurs, des avertissements et des mess
 
 La fenêtre **Sortie** affiche les messages de sortie après la génération de votre projet et les messages retournés par votre fournisseur de contrôle de code source.
 
-Générons le projet pour afficher une sortie de génération. Dans le menu **Build,** choisissez **Build Solution**. La fenêtre **De sortie** obtient automatiquement la mise au point et affiche un message de construction réussi.
+Générons le projet pour afficher une sortie de génération. Dans le menu **générer** , choisissez **générer la solution**. La fenêtre **sortie** obtient automatiquement le focus et affiche un message de génération réussi.
 
 ![Fenêtre Sortie dans Visual Studio](media/build-output-minimal.png)
 
@@ -141,7 +141,7 @@ La zone de recherche permet d’accéder rapidement et facilement à quasiment n
 
 ::: moniker range="vs-2017"
 
-1. Localisez la zone de recherche **Lancement rapide** dans le coin supérieur droit de l’IDE. (Alternativement, appuyez sur **Ctrl**+**Q** pour y accéder.)
+1. Localisez la zone de recherche **Lancement rapide** dans le coin supérieur droit de l’IDE. (Vous pouvez également appuyer sur **CTRL** + **Q** pour y accéder.)
 
 2. Tapez **commentaires** dans la zone de recherche. Parmi les résultats affichés, choisissez **Projets et solutions --> Générer et exécuter** sous la catégorie **Options**.
 
@@ -153,7 +153,7 @@ La zone de recherche permet d’accéder rapidement et facilement à quasiment n
 
 ::: moniker range=">=vs-2019"
 
-1. Appuyez sur **Ctrl**+**Q** pour activer la zone de recherche dans la partie supérieure de l’IDE.
+1. Appuyez sur **CTRL** + **Q** pour activer la zone de recherche dans la partie supérieure de l’IDE.
 
 2. Tapez **commentaires** dans la zone de recherche. Parmi les résultats affichés, choisissez **Modifier les commentaires MSBuild**.
 
@@ -167,7 +167,7 @@ La zone de recherche permet d’accéder rapidement et facilement à quasiment n
 
 4. Regénérez le projet en cliquant avec le bouton droit sur le projet **ConsoleApp1** dans l’**Explorateur de solutions** et en choisissant **Regénérer** dans le menu contextuel.
 
-   Cette **fois,** la fenêtre output montre plus de connexion verbeuse à partir du processus de construction, y compris les fichiers ont été copiés où.
+   Cette fois, la fenêtre **sortie** affiche une journalisation plus détaillée du processus de génération, y compris les fichiers qui ont été copiés où.
 
    ![Sortie de génération avec commentaires dans Visual Studio](media/build-output-verbose.png)
 

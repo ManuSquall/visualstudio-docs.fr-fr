@@ -8,18 +8,18 @@ ms.author: kraigb
 manager: jillfra
 ms.workload:
 - data-science
-ms.openlocfilehash: 05a21da94dd643b04cea94b7840ca26d9379cb5a
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 31dfa975cea519d4d064856090a265b844f265f6
+ms.sourcegitcommit: d8609a78b460d4783f5d59c0c89454910a4dbd21
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "62969444"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "88238723"
 ---
-# <a name="code-snippets"></a>Extraits de code
+# <a name="code-snippets-for-r"></a>Extraits de code pour R
 
 Les extraits de code dans Visual Studio fournissent des raccourcis pour insérer rapidement des blocs de code de longueur arbitraire, ce qui vous évite de retaper du code similaire plusieurs fois de suite. Les Outils R pour Visual Studio (RTVS) ajoutent des dizaines d’extraits de code R utiles à la collection de Visual Studio.
 
-Pour insérer un extrait, tapez le nom abrégé d’extrait (IntelliSense est fourni), puis appuyez sur **Tab** pour insérer.
+Pour insérer un extrait de code, tapez le nom abrégé de l’extrait (IntelliSense est fourni), puis appuyez sur **Tab** pour l’insérer.
 
 Voici quelques exemples simples :
 
@@ -30,9 +30,9 @@ Les extraits de code peuvent apporter bien plus que la saisie semi-automatique d
 
 ![Animation de l’utilisation d’un extrait de code pour insérer un appel dans read.csv](media/code-snippet-expansion.gif)
 
-Dans ce cas, quand vous tapez `readc`, IntelliSense affiche une liste de saisie semi-automatique. Sélection de cet achèvement dans le drop-down et en appuyant **Tab** `readc`sélectionne, et en appuyant **sur Tab** élargit à nouveau l’extrait. (Pour cette raison, le développement de l’extrait de code est souvent évoqué comme « tapez l’extrait de code et appuyez deux fois sur Tab »). Dans la plupart des cas, le premier appui sur Tab effectue la sélection IntelliSense et le deuxième appui déclenche le développement.
+Dans ce cas, quand vous tapez `readc`, IntelliSense affiche une liste de saisie semi-automatique. En sélectionnant cette saisie semi-automatique dans la liste déroulante et **en appuyant** sur la touche Tab `readc` , puis en appuyant sur **Tab** , vous développez l’extrait. (Pour cette raison, le développement de l’extrait de code est souvent évoqué comme « tapez l’extrait de code et appuyez deux fois sur Tab »). Dans la plupart des cas, le premier appui sur Tab effectue la sélection IntelliSense et le deuxième appui déclenche le développement.
 
-Pour voir tous les extraits disponibles, ouvrez la boîte de dialogue **Tools** > **Code Snippets Manager** (**Ctrl**+**K**,**B**) et **sélectionnez R** for **Language**. Développez les groupes, puis sélectionnez les extraits de code individuels pour afficher une description et le texte de raccourci :
+Pour afficher tous les extraits de code disponibles, ouvrez **Tools**la  >  boîte de dialogue outils du**Gestionnaire des extraits de code** (**CTRL** + **K**,**B**), puis sélectionnez **R** pour **langue**. Développez les groupes, puis sélectionnez les extraits de code individuels pour afficher une description et le texte de raccourci :
 
 ![Boîte de dialogue Extraits de code pour R](media/code-snippet-dialog.png)
 

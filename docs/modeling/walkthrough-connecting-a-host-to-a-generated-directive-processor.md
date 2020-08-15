@@ -13,12 +13,12 @@ ms.workload:
 dev_langs:
 - CSharp
 - VB
-ms.openlocfilehash: c782b84f39419272c271f41d217442cc9e001b3f
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.openlocfilehash: 8dfca47159192c1f6fe25f703b54745b55d8e384
+ms.sourcegitcommit: d8609a78b460d4783f5d59c0c89454910a4dbd21
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "85535861"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "88237995"
 ---
 # <a name="walkthrough-connect-a-host-to-a-generated-directive-processor"></a>Procédure pas à pas : connecter un hôte à un processeur de directive généré
 
@@ -41,7 +41,7 @@ Cette procédure pas à pas comprend les tâches suivantes :
 
 Pour définir un DSL, vous devez avoir installé les composants suivants :
 
-| | |
+| Composant | Lien |
 |-|-|
 | Visual Studio | [http://go.microsoft.com/fwlink/?LinkId=185579](https://visualstudio.microsoft.com/) |
 | [!INCLUDE[vssdk_current_short](../modeling/includes/vssdk_current_short_md.md)] | [http://go.microsoft.com/fwlink/?LinkId=185580](/azure/devops/integrate/index) |
@@ -90,7 +90,7 @@ Une fois que vous avez généré le processeur de directive, vous connectez le p
 
 1. Ouvrez la solution CustomHost.
 
-2. Dans le menu **projet** , cliquez sur **Ajouter une référence**.
+2. Dans le menu **Projet**, cliquez sur **Ajouter une référence**.
 
      La boîte de dialogue **Ajouter une référence** s’ouvre et affiche l’onglet **.net** .
 

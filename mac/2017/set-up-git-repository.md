@@ -6,12 +6,12 @@ ms.author: dominicn
 ms.date: 02/15/2018
 ms.assetid: E992FA1D-B2AD-4A28-ADC6-47E4FC471060
 ms.topic: how-to
-ms.openlocfilehash: 1d381bbfd0e83008b962968816c77f540e6a52f5
-ms.sourcegitcommit: 5335a9864d5747bc917ed28d4ebeade3076b10e7
+ms.openlocfilehash: c226e1a8160d0eb1321d244b26177119ec3a5846
+ms.sourcegitcommit: d8609a78b460d4783f5d59c0c89454910a4dbd21
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/03/2020
-ms.locfileid: "85950458"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "88238554"
 ---
 # <a name="set-up-a-git-repository"></a>Configurer un dépôt Git
 
@@ -55,7 +55,7 @@ Si vous avez un projet qui _n’est pas_ déjà dans la gestion de versions, eff
 
 3. Choisissez l’onglet **Dépôts inscrits** et cliquez sur le bouton **Ajouter** :
 
-    ![](media/version-control-git5.png)
+    ![L’onglet dépôts inscrits de la boîte de dialogue Sélectionner le référentiel contient des boutons ajouter, supprimer et modifier, ainsi que des zones pour le nom et le message du module.](media/version-control-git5.png)
 
 4. Entrez le nom du dépôt à afficher localement et collez l’URL de l’étape 3. La boîte de dialogue de configuration de votre dépôt doit être similaire à ceci. Cliquez sur OK :
 
@@ -149,7 +149,7 @@ Vous serez probablement obligé d’utiliser un dépôt GitHub qui existe unique
 > [!NOTE]
 > Vous risquez de rencontrer des problèmes si le dépôt fait plus de 4 Go.
 
-## <a name="troubleshooting"></a>Dépannage
+## <a name="troubleshooting"></a>Résolution des problèmes
 
 Si vous avez des problèmes d’initialisation de votre projet avec un dépôt distant vide, vous pouvez essayer les étapes suivantes :
 

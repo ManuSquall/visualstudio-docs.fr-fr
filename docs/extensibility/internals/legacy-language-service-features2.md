@@ -1,5 +1,5 @@
 ---
-title: Caractéristiques du service linguistique de l’héritage2 Microsoft Docs
+title: Service de langage hérité Features2 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,44 +10,44 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 33f12e816476aa54f334988b99b9e86e820784f6
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.openlocfilehash: 04e7df7fc5c7532d2db45bc2b643a249d1e566c7
+ms.sourcegitcommit: d8609a78b460d4783f5d59c0c89454910a4dbd21
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2020
-ms.locfileid: "80707368"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "88237904"
 ---
-# <a name="legacy-language-service-features"></a>Fonctionnalités du service de langage hérité
-Les sujets suivants énumèrent quelques-unes des fonctionnalités de service linguistique héritées que vous pouvez fournir.
+# <a name="legacy-language-service-features-2"></a>Fonctionnalités du service de langage hérité 2
+Les rubriques suivantes répertorient certaines des fonctionnalités du service de langage hérité que vous pouvez fournir.
 
- Les services linguistiques hérités sont mis en œuvre dans le cadre d’un VSPackage, mais la nouvelle façon de mettre en œuvre des fonctionnalités de service linguistique est d’utiliser des extensions MEF. Pour en savoir plus sur la nouvelle façon de mettre en œuvre un service linguistique, consultez [Editor et Language Service Extensions](../../extensibility/editor-and-language-service-extensions.md).
+ Les services de langage hérités sont implémentés dans le cadre d’un VSPackage, mais la meilleure façon d’implémenter les fonctionnalités du service de langage consiste à utiliser les extensions MEF. Pour en savoir plus sur la nouvelle façon d’implémenter un service de langage, consultez [éditeur et extensions du service de langage](../../extensibility/editor-and-language-service-extensions.md).
 
 > [!NOTE]
-> Nous vous recommandons de commencer à utiliser le nouvel éditeur API dès que possible. Cela améliorera les performances de votre service linguistique et vous permettra de profiter des nouvelles fonctionnalités de l’éditeur.
+> Nous vous recommandons de commencer à utiliser la nouvelle API Editor dès que possible. Cela améliore les performances de votre service de langage et vous permet de tirer parti des nouvelles fonctionnalités de l’éditeur.
 
 ## <a name="in-this-section"></a>Dans cette section
 - [Couleurs de syntaxe dans un service de langage hérité](../../extensibility/internals/syntax-coloring-in-a-legacy-language-service.md)
 
- Explique comment implémenter la coloration syntaxe.
+ Explique comment implémenter la coloration de la syntaxe.
 
 - [Mise en forme automatique dans un service de langage hérité](../../extensibility/internals/automatic-formatting-in-a-legacy-language-service.md)
 
- Explique comment implémenter le formatage automatique.
+ Explique comment implémenter la mise en forme automatique.
 
 - [Informations sur les paramètres dans un service de langage hérité](../../extensibility/internals/parameter-info-in-a-legacy-language-service1.md)
 
- Explique comment implémenter l’outil d’information sur les paramètres IntelliSense.
+ Explique comment implémenter l’info-bulle informations sur les paramètres IntelliSense.
 
 - [Saisie semi-automatique des instructions dans un service de langage hérité](../../extensibility/internals/statement-completion-in-a-legacy-language-service.md)
 
- Explique comment mettre en œuvre la liste des relevés IntelliSense et la liste d’achèvement des membres.
+ Explique comment implémenter la liste des instructions IntelliSense et la liste de saisie semi-automatique des membres.
 
 - [Mode Plan et texte masqué dans un service de langage hérité](../../extensibility/internals/outlining-and-hidden-text-in-a-legacy-language-service.md)
 
- Explique comment implémenter des textes ou des textes cachés.
+ Explique comment implémenter le mode plan ou le texte masqué.
 
 - [Guide pratique pour fournir la prise en charge étendue du Mode Plan dans un service de langage hérité](../../extensibility/internals/how-to-provide-expanded-outlining-support-in-a-legacy-language-service.md)
 
- Explique quelques-unes des étapes dans la mise en œuvre du soutien de débbugger.
+ Explique certaines étapes de l’implémentation de la prise en charge du débogueur.
 
 ## <a name="related-sections"></a>Sections connexes

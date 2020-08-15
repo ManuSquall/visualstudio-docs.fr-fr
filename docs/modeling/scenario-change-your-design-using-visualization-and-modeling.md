@@ -15,12 +15,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1c0e971a2a38013ae75287467404e3321e3c4d37
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.openlocfilehash: db584adc01a3f0f161d451d73df6a8deab08b869
+ms.sourcegitcommit: d8609a78b460d4783f5d59c0c89454910a4dbd21
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "85544194"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "88238892"
 ---
 # <a name="scenario-change-your-design-using-visualization-and-modeling"></a>Scénario : modifier votre conception à l'aide de la visualisation et de la modélisation
 
@@ -75,11 +75,11 @@ Pour plus d’informations sur Team Foundation Server, consultez :
 
 - [Test, validation et archivage du code mis à jour](#TestValidateCheckInCode)
 
-## <a name="roles-of-architecture-and-modeling-diagrams-in-software-development"></a><a name="ModelingDiagramsTools"></a>Rôles des diagrammes d’architecture et de modélisation dans le développement de logiciels
+## <a name="roles-of-architecture-and-modeling-diagrams-in-software-development"></a><a name="ModelingDiagramsTools"></a> Rôles des diagrammes d’architecture et de modélisation dans le développement de logiciels
 
 Le tableau suivant décrit les rôles que ces outils peuvent jouer pendant diverses étapes du cycle de développement logiciel :
 
-||**Modélisation des besoins des utilisateurs**|**Modélisation des processus d’entreprise**|**Architecture et conception du système**|**Visualisation et exploration du code**|**Vérification**|
+|Outil/rôle|Modélisation des besoins des utilisateurs|Modélisation des processus d’entreprise|Architecture et conception du système|Visualisation et exploration du code|Vérification|
 |------|-|-|-|-|-|
 |Diagramme de langage spécifique à un domaine (DSL)|Oui|Oui|Oui|||
 |Diagramme de dépendance, validation de couche|||Oui|Oui|Oui|
@@ -167,7 +167,7 @@ Dinner Now doit estimer le coût de réalisation pour remplir le nouveau besoin.
 |-|-|
 |*Diagramme de classes basé sur le code*<br /><br /> Consultez [Guide pratique pour ajouter des diagrammes de classes aux projets (Concepteur de classes)](../ide/class-designer/how-to-add-class-diagrams-to-projects.md).|Classes existantes dans le code.|
 
-### <a name="keep-code-consistent-with-the-design"></a><a name="ValidatingCode"></a>Assurer la cohérence du code avec la conception
+### <a name="keep-code-consistent-with-the-design"></a><a name="ValidatingCode"></a> Assurer la cohérence du code avec la conception
  Dinner Now doit s’assurer que le code mis à jour demeure cohérent avec la conception. Ils créent des diagrammes de dépendance qui décrivent les couches de fonctionnalité dans le système, spécifient les dépendances autorisées entre eux et associent des artefacts de solution à ces couches.
 
 |**Diagramme**|**Éléments décrits**|
@@ -220,7 +220,7 @@ Consultez l'article :
 
 - [Créer votre journal des travaux en souffrance et vos tâches à l'aide de Project](/azure/devops/boards/backlogs/office/create-your-backlog-tasks-using-project)
 
-### <a name="test-validate-and-check-in-code"></a><a name="TestValidateCheckInCode"></a>Test, validation et archivage du code
+### <a name="test-validate-and-check-in-code"></a><a name="TestValidateCheckInCode"></a> Test, validation et archivage du code
 
 À mesure que les équipes effectuent chaque tâche, elles vérifient leur code dans le contrôle de code source et reçoivent des rappels de Team Foundation Server, si elles l’oublient. Avant que Team Foundation Server n’accepte leurs archivages, les équipes exécutent des tests unitaires et la validation des dépendances pour vérifier le code par rapport à leurs cas de test et à la conception. Ils utilisent Team Foundation Server pour exécuter régulièrement des builds, des tests unitaires automatisés et la validation des dépendances. Ainsi, elles vérifient que le code respecte les critères suivants :
 
@@ -262,7 +262,7 @@ Consultez l'article :
 
 - [Modéliser l’architecture de votre application](../modeling/model-your-app-s-architecture.md)
 
-### <a name="visualize-existing-code-code-maps"></a><a name="VisualizeCode"></a>Visualiser le code existant : cartes de code
+### <a name="visualize-existing-code-code-maps"></a><a name="VisualizeCode"></a> Visualiser le code existant : cartes de code
 
 Les cartes de code montrent l’organisation et les relations actuelles dans le code. Les éléments sont représentés par des *nœuds* dans la carte et les relations sont représentées par des *liens*. Les cartes de code peuvent vous aider à effectuer les types de tâches suivants :
 
@@ -332,7 +332,7 @@ Cette carte montre que la classe PaymentApprover se trouve maintenant dans l’e
 |Diagramme de dépendance|L’architecture logique du système. Utilisez la validation des dépendances pour vous assurer que le code reste cohérent avec la conception.<br /><br /> Pour vous aider à identifier les dépendances existantes ou les dépendances prévues, créez une carte de code et regroupez les éléments associés. Pour créer un diagramme de dépendance, consultez :<br /><br /> - [Créer des diagrammes de dépendance à partir de votre code](../modeling/create-layer-diagrams-from-your-code.md)<br />- [Diagrammes de dépendance : indications](../modeling/layer-diagrams-guidelines.md)|
 |Diagramme de classes (basé sur le code)|Classes existantes dans le code d’un projet spécifique.<br /><br /> Pour visualiser et modifier une classe existante dans le code, utilisez le Concepteur de classes.<br /><br /> Consultez [Guide pratique pour ajouter des diagrammes de classes aux projets (Concepteur de classes)](../ide/class-designer/how-to-add-class-diagrams-to-projects.md).|
 
-### <a name="define-a-glossary-of-types-class-diagrams"></a><a name="DefineClasses"></a>Définir un glossaire de types : diagrammes de classes
+### <a name="define-a-glossary-of-types-class-diagrams"></a><a name="DefineClasses"></a> Définir un glossaire de types : diagrammes de classes
  Les diagrammes de classes définissent les entités, les termes ou les concepts qui participent au système, et leurs relations. Par exemple, vous pouvez utiliser ces diagrammes pendant le développement pour décrire les attributs et les opérations de chaque classe, indépendamment de leur langage ou mode d’implémentation.
 
  Pour permettre à Lucerne de décrire et d’étudier les entités qui participent au cas d’usage Traiter le paiement, le diagramme suivant est dessiné :
@@ -401,7 +401,7 @@ Pour commencer l’exploration et l’examen des classes existantes, vous pouvez
 |Diagramme de dépendance|Définit l’architecture logique du système relative aux classes.<br /><br /> Utilisez la validation des dépendances pour vous assurer que le code reste cohérent avec la conception.<br /><br /> Consultez l'article :<br /><br /> - [Créer des diagrammes de dépendance à partir de votre code](../modeling/create-layer-diagrams-from-your-code.md)<br />- [Diagrammes de dépendance : référence](../modeling/layer-diagrams-reference.md)<br />- [Diagrammes de dépendance : indications](../modeling/layer-diagrams-guidelines.md)<br />- [Valider du code avec des diagrammes de dépendance](../modeling/validate-code-with-layer-diagrams.md)|
 |Carte de code|Permet de visualiser l’organisation et les relations dans le code existant.<br /><br /> Pour identifier les classes, leurs relations et leurs méthodes, créez une carte de code qui montre ces éléments.<br /><br /> Consultez l'article :<br /><br /> - [Mapper les dépendances dans vos solutions](../modeling/map-dependencies-across-your-solutions.md)|
 
-### <a name="describe-the-logical-architecture-dependency-diagrams"></a><a name="DescribeLayers"></a>Décrire l’architecture logique : diagrammes de dépendance
+### <a name="describe-the-logical-architecture-dependency-diagrams"></a><a name="DescribeLayers"></a> Décrire l’architecture logique : diagrammes de dépendance
  Les diagrammes de dépendance décrivent l’architecture logique d’un système en organisant les artefacts de votre solution en groupes abstraits ou *couches*. Les artefacts peuvent correspondre à beaucoup de choses, notamment des espaces de noms, des projets, des classes, des méthodes, etc. Les couches représentent et décrivent les rôles ou les tâches que les artefacts exécutent dans le système. Vous pouvez également inclure la validation de couche dans votre build et des opérations d’archivage pour vous assurer que le code reste cohérent avec sa conception.
 
  Pour garantir la cohérence du code avec la conception, Dinner Now et Lucerne utilisent le diagramme de dépendances suivant pour valider leur code à mesure qu’il évolue :

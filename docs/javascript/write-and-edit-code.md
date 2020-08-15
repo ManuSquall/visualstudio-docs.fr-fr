@@ -10,14 +10,14 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: f48e7a8be8d902a487ae4f7fdac9e6d85f7b5517
-ms.sourcegitcommit: b8ec700fc4c14c68c6ce280f29c19870261990d8
+ms.openlocfilehash: a033c0fe1fd80edc7959c5f49993714982ecc805
+ms.sourcegitcommit: d8609a78b460d4783f5d59c0c89454910a4dbd21
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/31/2020
-ms.locfileid: "87453762"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "88238178"
 ---
-# <a name="learn-to-use-the-code-editor"></a>Apprendre à utiliser l’éditeur de code
+# <a name="learn-to-use-the-code-editor-for-javascript"></a>En savoir plus sur l’utilisation de l’éditeur de code pour JavaScript
 
 Dans cette présentation de l’éditeur de code de Visual Studio, nous allons découvrir de quelles façons Visual Studio facilite l’écriture, la navigation et la compréhension du code.
 
@@ -40,11 +40,11 @@ Vous pouvez utiliser l’IDE pour ajouter de nouveaux fichiers à votre projet.
 
 IntelliSense est une aide précieuse quand vous écrivez du code. Cette fonctionnalité peut afficher des informations sur les membres d’un type disponibles, ou les détails des paramètres des différentes surcharges d’une méthode. Dans le code suivant, lorsque vous tapez `Router()`, vous voyez les types d’arguments que vous pouvez transmettre. Il s’agit d’une aide pour la signature.
 
-![Utilisez IntelliSense](../javascript/media/write-code-signature-checking.png)
+![Utiliser IntelliSense](../javascript/media/write-code-signature-checking.png)
 
 Vous pouvez également utiliser IntelliSense pour compléter un mot automatiquement quand vous avez tapé suffisamment de caractères pour lever toute ambiguïté sur le mot. Si vous placez votre curseur après la chaîne `data` dans le code suivant et tapez `get`, IntelliSense affiche les fonctions définies plus haut dans le code ou définies dans une bibliothèque tierce que vous avez ajoutée à votre projet.
 
-![Utilisez IntelliSense](../javascript/media/write-code-intellisense.png)
+![Utiliser IntelliSense](../javascript/media/write-code-intellisense.png)
 
 IntelliSense peut également afficher des informations sur les types lorsque vous pointez sur les éléments de programmation.
 
@@ -125,4 +125,4 @@ Vous pouvez consulter les extraits de code disponibles pour votre langage en cho
 - [mode Plan](../ide/outlining.md)
 - [Atteindre la définition et Aperçu de la définition](../ide/go-to-and-peek-definition.md)
 - [Refactorisation](../ide/refactoring-in-visual-studio.md)
-- [Utilisez IntelliSense](../ide/using-intellisense.md)
+- [Utiliser IntelliSense](../ide/using-intellisense.md)
