@@ -1,8 +1,8 @@
 ---
-title: 'Étape 5 : Déployer votre application de base ASP.NET à Azure'
+title: 'Étape 5 : déploiement de votre application ASP.NET Core sur Azure'
 description: Déployez votre application web ASP.NET Core sur Azure avec ce tutoriel vidéo et des instructions détaillées.
 ms.custom: get-started
-ms.date: 03/31/2019
+ms.date: 08/14/2020
 ms.technology: vs-ide-general
 ms.prod: visual-studio-windows
 monikerRange: vs-2019
@@ -16,14 +16,14 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: dc13dbdadb0c9bca25a816b15c5a99039bff454c
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: 55dd48ed2c319984fcc96e806c97a7ae24ce7170
+ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "77580030"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "88248672"
 ---
-# <a name="step-5-deploy-your-aspnet-core-app-to-azure"></a>Étape 5 : Déployez votre application ASP.NET Core à Azure
+# <a name="step-5-deploy-your-aspnet-core-app-to-azure"></a>Étape 5 : déploiement de votre application ASP.NET Core sur Azure
 
 Suivez ces étapes pour déployer votre application ASP.NET Core et sa base de données sur Azure.
 
@@ -37,17 +37,43 @@ Ouvrez votre application ASP.NET Core dans Visual Studio 2019. L’application d
 
 ## <a name="publish-to-azure-app-service"></a>Publier sur Azure App Service
 
-Cliquez avec le bouton droit sur le projet dans l’Explorateur de solutions, puis choisissez **Publier**. Conservez les paramètres par défaut de **App Service** et **Créer**, puis cliquez sur le bouton **Publier**. Si vous ne disposez pas d’un compte Azure, cliquez sur **Créez votre compte Azure gratuit** et suivez la courte procédure d’inscription.
+1. Cliquez avec le bouton droit sur le projet dans l’Explorateur de solutions, puis choisissez **Publier**. Dans l’Assistant **publication** , choisissez **Azure** comme cible.
 
-Ajoutez un serveur SQL. Spécifiez un nom d’utilisateur Administrateur et un mot de passe.
+   ![Capture d’écran de Azure App Service 1](media/vs-2019/app-service-screen-1.png)
 
-![Visual Studio 2019 – Créer un serveur SQL Azure](media/vs-2019/vs2019-azure-sql-server.png)
+1. Pour la cible spécifique, choisissez **Azure App service (Windows)**.
 
-Ajoutez Application Insights.
+   ![Capture d’écran de Azure App Service 2](media/vs-2019/app-service-screen-2.png)
 
-Cliquez sur le bouton **Créer** pour continuer.
+1. Choisissez **créer un Azure App service**. Si vous ne disposez pas d’un compte Azure, cliquez sur **Créez votre compte Azure gratuit** et suivez la courte procédure d’inscription.
 
-![Visual Studio 2019 – Créer un service Azure App Service](media/vs-2019/vs2019-azure-create-new-app-service.png)
+   ![Capture d’écran de Azure App Service 3](media/vs-2019/app-service-screen-3.png)
+
+1. Spécifiez un nom et un groupe de ressources, ou acceptez les valeurs par défaut, puis choisissez **créer**. Un groupe de ressources est simplement un moyen d’organiser les ressources associées dans Azure, telles que les services qui fonctionnent avec les comptes de stockage, les coffres de clés et les bases de données.
+
+   ![Capture d’écran de Azure App Service 4](media/vs-2019/app-service-screen-4.png)
+
+1. Cliquez sur **Terminer**. Les ressources sont créées dans Azure, l’application est déployée et l’onglet **publier** contient des informations sur ce que vous venez de créer. L’onglet **publier** fournit un bouton pour publier en un clic avec la même configuration, affiche des détails de configuration ou vous permet d’ajouter des services tels qu’une base de données.
+
+À présent, ajoutez une base de données Azure SQL Server.
+
+1. Sous l’onglet **publier** , sous **dépendances du service**, en regard de **SQL Server base de données**, choisissez **configurer**.
+
+1. Dans l’écran suivant, choisissez **Azure SQL Database**.
+
+   ![Capture d’écran de l’écran de Azure SQL Database](media/vs-2019/app-service-azure-sql-db.png)
+
+1. Dans l’écran **configurer SQL Database** , choisissez **créer un SQL Database**.
+
+   ![Capture d’écran de l’écran configurer SQL Database](media/vs-2019/app-service-azure-sql-db-2.png)
+
+1. Dans l’écran **Azure SQL Database : créer** , créez un nouveau serveur de base de données.
+
+   ![Capture d’écran Azure SQL Database : créer](media/vs-2019/app-service-azure-sql-db-3.png)
+
+1. Dans l’écran **SQL Server : créer** , choisissez un nom, un emplacement et spécifiez un nom d’utilisateur et un mot de passe d’administrateur.
+
+   ![Visual Studio 2019 – Créer un serveur SQL Azure](media/vs-2019/app-service-azure-sql-db-overlayed.png)
 
 ## <a name="exploring-the-azure-portal-and-your-hosted-app"></a>Explorer le Portail Azure et l’application hébergée
 
@@ -57,7 +83,7 @@ Une fois le service App Service créé, le site se lance dans un navigateur. Pen
 
 ### <a name="scalability"></a>Extensibilité
 
-Vous pouvez examiner les options pour mettre l’application à l’échelle ainsi que sur. L’intensification se réfère à l’augmentation des ressources données à chaque instance hébergeant votre application. Avec la montée en charge (scale out), il s’agit d’accroître le nombre d’instances hébergeant l’application. Vous pouvez configurer la mise à l’échelle automatique de votre application, afin d’augmenter automatiquement le nombre d’instances utilisées pour héberger votre application en réponse à une charge, puis de le réduire une fois que la charge a diminué.
+Vous pouvez examiner les options pour augmenter ou diminuer l’échelle de l’application. La montée en puissance fait référence à l’augmentation des ressources fournies à chaque instance hébergeant votre application. Avec la montée en charge (scale out), il s’agit d’accroître le nombre d’instances hébergeant l’application. Vous pouvez configurer la mise à l’échelle automatique de votre application, afin d’augmenter automatiquement le nombre d’instances utilisées pour héberger votre application en réponse à une charge, puis de le réduire une fois que la charge a diminué.
 
 ### <a name="security-and-compliance"></a>Sécurité et conformité
 
@@ -67,7 +93,7 @@ Le fait d’héberger une application sur Azure présente un autre avantage : la
 
 À l’occasion du déploiement d’une application, il se produit fréquemment un petit temps d’arrêt pendant le redémarrage de l’application. Les emplacements de déploiement évitent ce problème en offrant la possibilité d’effectuer le déploiement sur une instance ou un ensemble d’instances de préproduction distinct, préchauffé avant le passage en production. L’échange consiste simplement en une redirection instantanée et transparente du trafic. S’il se produit des problèmes en production après l’échange, vous pourrez toujours revenir à votre dernier état de production fonctionnel connu.
 
-## <a name="update-connection-string"></a>Mettre à jour la chaîne de connexion
+## <a name="update-connection-string"></a>Mettre à jour une chaîne de connexion
 
 Par défaut, Azure s’attend que la connexion d’une nouvelle application à sa nouvelle base de données SQL Server utilise une chaîne de connexion nommée `DefaultConnection`. L’application que nous avons créée dans cette série de tutoriels a actuellement recours à une chaîne de connexion nommée `AppDbContext`. Nous devons la modifier dans *appsettings.json* et *Startup.cs*, puis redéployer l’application.
 
@@ -75,7 +101,7 @@ Par défaut, Azure s’attend que la connexion d’une nouvelle application à s
 
 Accédez au chemin */Games* : vous devriez pouvoir ajouter un nouveau jeu et le voir apparaître. Ensuite, dans le chemin */swagger*, utilisez les points de terminaison d’API web pour vérifier que l’API de l’application fonctionne également.
 
-Félicitations ! Vous avez terminé cette série de tutoriels vidéo.
+Félicitations ! Vous avez terminé cette série de tutoriels vidéo.
 
 ## <a name="next-steps"></a>Étapes suivantes
 

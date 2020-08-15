@@ -10,20 +10,18 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 82c22143f70bc53a358cd25e6ff2ad91eff1e2e9
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.openlocfilehash: a1f8c145d7c9c072adcc902cae9f2b6ae36937cd
+ms.sourcegitcommit: d8609a78b460d4783f5d59c0c89454910a4dbd21
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "85541070"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "88246482"
 ---
 Visual Studio peut lancer et déboguer des applications python localement et à distance sur un ordinateur Windows (consultez [débogage distant](../../../debugger/remote-debugging.md)). Il peut également effectuer un débogage à distance sur un autre système d’exploitation, un appareil différent ou une implémentation Python autre que CPython à l’aide de la [bibliothèque ptvsd](https://pypi.python.org/pypi/ptvsd).
 
 Lorsque vous utilisez ptvsd, le code Python faisant l’objet du débogage héberge le serveur de débogage auquel Visual Studio peut être attaché. Cet hébergement nécessite une petite modification de votre code pour importer et activer le serveur, et peut exiger des configurations du réseau ou du pare-feu sur l’ordinateur distant pour autoriser les connexions TCP.
 
-|   |   |
-|---|---|
-| ![Icône représentant une caméra pour les vidéos](../../../install/media/video-icon.png "Regarder une vidéo") | Pour une introduction au débogage à distance, visionnez la vidéo [Deep Dive: Cross-platform remote debugging](https://youtu.be/y1Qq7BrV6Cc) (youtube.com, 6 minutes 22 secondes), qui est applicable à Visual Studio 2015 et 2017. |
+![icône d’appareil photo](../../../install/media/video-icon.png "Regarder une vidéo") vidéo Pour une introduction au débogage distant, consultez présentation [approfondie : débogage à distance multiplateforme](https://youtu.be/y1Qq7BrV6Cc) (YouTube.com, 6m22s), qui s’applique à la fois à Visual Studio 2015 et 2017.
 
 ## <a name="set-up-a-linux-computer"></a>Configurer un ordinateur Linux
 
@@ -116,7 +114,7 @@ Dans ces étapes, nous allons définir un point d’arrêt simple pour arrêter 
     - Si vous devez utiliser un port différent, vous pouvez le spécifier dans l’appel à `enable_attach` avec l’argument `address`, comme ceci : `ptvsd.enable_attach(address = ('0.0.0.0', 8080))`. Dans ce cas, ouvrez ce port spécifique dans le pare-feu.
 1. Vérifiez que la version du ptvsd installée sur l’ordinateur distant, et qui est retournée par `pip3 list`, correspond à celle utilisée par la version des outils Python utilisés dans Visual Studio, comme indiqué dans le tableau suivant. Si nécessaire, mettez à jour ptvsd sur l’ordinateur distant.
 
-    | Version de Visual Studio | Version des outils Python/ptvsd |
+    | Version Visual Studio | Version des outils Python/ptvsd |
     | --- | --- |
     | 2017 15.8 | 4.1.1a9 (débogueur hérité : 3.2.1.0) |
     | 2017 15.7 | 4.1.1a1 (débogueur hérité : 3.2.1.0) |

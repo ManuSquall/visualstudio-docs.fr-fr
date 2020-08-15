@@ -14,14 +14,14 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: cb559bc21b70b66d64bc44fb4269c97304dd81c3
-ms.sourcegitcommit: 054815dc9821c3ea219ae6f31ebd9cd2dc8f6af5
+ms.openlocfilehash: aec4b72e8393e241039e8c005d05275ab61111bb
+ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "80543941"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "88249250"
 ---
-# <a name="tutorial-create-your-first-universal-windows-platform-application-in-visual-studio-with-xaml-and-c35"></a>Tutorial: Créez votre première application universelle de plate-forme Windows dans Visual Studio avec XAML et C&#35;
+# <a name="tutorial-create-your-first-universal-windows-platform-application-in-visual-studio-with-xaml-and-c35"></a>Didacticiel : créer votre première plateforme Windows universelle application dans Visual Studio avec XAML et C&#35;
 
 Dans cette présentation de l’environnement de développement intégré (IDE) Visual Studio, vous allez créer une application « Hello World » qui s’exécute sur n’importe quel appareil Windows 10. Pour ce faire, vous allez utiliser un modèle de projet de plateforme Windows universelle (UWP), le langage XAML (Extensible Application Markup Language) et le langage de programmation C#.
 
@@ -44,7 +44,7 @@ Créez tout d’abord un projet de plateforme Windows universelle. Le type de pr
 1. Dans le volet gauche de la boîte de dialogue **Nouveau projet**, développez **Visual C#**, puis choisissez **Windows universel**. Dans le volet central, choisissez **Application vide (Windows universel)**. Ensuite, nommez le projet *HelloWorld* et choisissez **OK**.
 
    > [!NOTE]
-   > Assurez-vous que l’emplacement du projet source se trouve sur un lecteur formaté **du système de fichiers de nouvelle technologie (NTFS),** comme votre lecteur de système d’exploitation (OS). Sinon, vous pourriez avoir du mal à construire et à gérer votre projet. 
+   > Assurez-vous que l’emplacement du projet source se trouve sur un nouveau lecteur formaté en **NTFS** , tel que votre lecteur de système d’exploitation. Dans le cas contraire, vous risquez de rencontrer des problèmes pour générer et exécuter votre projet. 
 
    ![Modèle de projet Windows universel dans la boîte de dialogue Nouveau projet dans l’IDE Visual Studio](media/new-project-csharp-uwp-helloworld.png)
 
@@ -66,9 +66,9 @@ Créez tout d’abord un projet de plateforme Windows universelle. Le type de pr
    > [!NOTE]
    > Si vous ne voyez pas le modèle de projet **Application vide (Windows universel)**, cliquez sur le lient **Installer plus d’outils et de fonctionnalités**.<br><br>![Cliquer sur le lien Installer plus d’outils et de fonctionnalités](media/vs-2019/uwp-not-finding.png)<br><br>Visual Studio Installer est lancé. Choisissez la charge de travail **Développement pour la plateforme Windows universelle**, puis **Modifier**.<br><br>![Charge de travail Développement pour la plateforme Windows universelle dans le programme d’installation de Visual Studio](media/uwp-dev-workload.png)
 
-1. Donnez au projet un nom, _HelloWorld_, et choisissez **Create**.
+1. Donnez un nom à votre projet, _HelloWorld_, puis choisissez **créer**.
 
-   ![Configurer l’écran de votre projet](media/vs-2019/uwp-configure-your-project.png)
+   ![Écran de configuration de votre projet](media/vs-2019/uwp-configure-your-project.png)
 
 1. Acceptez les paramètres par défaut pour **Version cible** et **Version minimale** dans la boîte de dialogue **Nouveau projet de plateforme Windows universelle**.
 
@@ -79,7 +79,7 @@ Créez tout d’abord un projet de plateforme Windows universelle. Le type de pr
    > S’il s’agit de la première fois que vous avez utilisé Visual Studio pour créer une application UWP, une boîte de dialogue **Paramètres** peut s’afficher. Choisissez **Mode développeur**, puis **Oui**.<br><br>
    > ![Activer le mode développeur dans la boîte de dialogue Paramètres du projet UWP](media/enable-developer-mode.png)<br><br>Visual Studio installe un autre package en mode développeur pour vous. Une fois l’installation du package terminée, fermez la boîte de dialogue **Paramètres**.
 
-## <a name="create-the-application"></a>Création de l'application
+## <a name="create-the-application"></a>Créer l’application
 
 Il est temps de commencer à développer. Vous allez ajouter un contrôle bouton, ajouter une action au bouton, puis démarrer l’application « Hello World » pour voir à quoi elle ressemble.
 
@@ -102,9 +102,9 @@ Il est temps de commencer à développer. Vous allez ajouter un contrôle bouton
 
    ![Cliquer sur Boîte à outils pour ouvrir la fenêtre volante Boîte à outils](media/uwp-toolbox.png)
 
-   (Si vous ne voyez pas l’option **Boîte à outils,** vous pouvez l’ouvrir à partir de la barre de menu. Pour ce faire, choisissez **View** > **Toolbar**. Ou, appuyez sur **Ctrl**+**Alt**+**X**.)
+   (Si vous ne voyez pas l’option **boîte à outils** , vous pouvez l’ouvrir à partir de la barre de menus. Pour ce faire, choisissez **Afficher**la  >  **barre d’outils**. Ou appuyez sur **CTRL** + **ALT** + **X**.)
 
-1. Cliquez sur l’icône **Pin** pour amarrer la fenêtre de la boîte à outils.
+1. Cliquez sur l’icône **épingler** pour ancrer la fenêtre boîte à outils.
 
    ![Cliquer sur l’icône Épingler pour ancrer la fenêtre Boîte à outils](media/uwp-toolbox-autohide.png)
 
@@ -112,17 +112,17 @@ Il est temps de commencer à développer. Vous allez ajouter un contrôle bouton
 
    ![Cliquer sur le contrôle Button, puis le faire glisser dans la zone de conception](media/uwp-toolbox-add-button-control.png)
 
-   Si vous regardez le code dans **l’éditeur XAML**, vous verrez que le bouton a été ajouté là-bas, aussi:
+   Si vous examinez le code dans l' **éditeur XAML**, vous verrez que le bouton y a également été ajouté :
 
    ![Cliquer sur le contrôle Button, puis le faire glisser dans la zone de conception](media/uwp-xaml-control-code-window.png)
 
 ### <a name="add-a-label-to-the-button"></a>Ajouter une étiquette au bouton
 
-1. Dans **l’éditeur XAML**, changer la valeur de contenu bouton de "Button" à "Hello World!"
+1. Dans l' **éditeur XAML**, remplacez la valeur de contenu du bouton « Button » par « Hello World ! ».
 
    ![Remplacer la valeur de Button Content par Hello World](media/uwp-change-button-text-in-xaml-code-window.png)
 
-1. Notez que le bouton dans le **concepteur XAML** change, aussi.
+1. Notez que le bouton dans le **Concepteur XAML** change également.
 
    ![Le bouton devient Hello World dans la zone de conception](media/uwp-button-text-change-in-design-canvas.png)
 
@@ -132,13 +132,13 @@ Un « gestionnaire d’événements » semble compliqué, mais il s’agit simpl
 
 1. Double-cliquez sur le contrôle bouton dans la zone de conception.
 
-1. Modifiez le code de gestionnaire d’événements dans *MainPage.xaml.cs*, la page code-behind.
+1. Modifiez le code du gestionnaire d’événements dans *MainPage.xaml.cs*, la page code-behind.
 
-   C’est ici que les choses deviennent intéressantes. Voici à quoi ressemble le gestionnaire d’événements par défaut :
+   C’est ici que les choses deviennent intéressantes. Le gestionnaire d’événements par défaut se présente ceci :
 
    ![Gestionnaire d’événements Button_Click par défaut ](media/uwp-button-click-code.png)
 
-   Modifions-le afin qu’il ressemble à ceci :
+   Modifions-le de sorte qu’il se présente comme ceci :
 
    ![Nouveau gestionnaire d’événements Button_Click asynchrone ](media/uwp-add-hello-world-async-code.png)
 
@@ -155,12 +155,11 @@ Un « gestionnaire d’événements » semble compliqué, mais il s’agit simpl
          }
    ```
 
-#### <a name="what-did-we-just-do"></a>Que venons-nous de faire ?
+#### <a name="what-did-we-just-do"></a>Que venons-nous de faire ?
 
 Le code utilise des API Windows pour créer un objet de synthèse vocale, puis lui donne du texte à dire. (Pour plus d’informations sur l’utilisation de `SpeechSynthesis`, consultez <xref:System.Speech.Synthesis>.)
 
 ## <a name="run-the-application"></a>Exécution de l'application
-
 
 ::: moniker range="vs-2017"
 Il est temps de générer, déployer et lancer l’application UWP « Hello World » pour voir à quoi elle ressemble. Voici comment faire.
@@ -179,7 +178,7 @@ Il est temps de générer, déployer et lancer l’application UWP « Hello Worl
 
    Votre appareil Windows 10 dira littéralement « Hello, World ! »
 
-1. Pour fermer l’application, cliquez sur le bouton **Arrêter le débogage** dans la barre d’outils. (Alternativement, choisissez **Debug** > **Stop débogage** de la barre de menu, ou appuyez sur Shift-F5.)
+1. Pour fermer l’application, cliquez sur le bouton **Arrêter le débogage** dans la barre d’outils. (Vous pouvez également choisir **Déboguer**  >  **Arrêtez le débogage** à partir de la barre de menus, ou appuyez sur Maj + F5.)
 
 ::: moniker-end
 ::: moniker range=">=vs-2019"
@@ -199,7 +198,7 @@ Il est temps de générer, déployer et lancer l’application UWP « Hello Worl
 
    Votre appareil Windows 10 dira littéralement « Hello, World ! »
 
-1. Pour fermer l’application, cliquez sur le bouton **Arrêter le débogage** dans la barre d’outils. (Alternativement, choisissez **Debug** > **Stop débogage** de la barre de menu, ou appuyez sur Shift-F5.)
+1. Pour fermer l’application, cliquez sur le bouton **Arrêter le débogage** dans la barre d’outils. (Vous pouvez également choisir **Déboguer**  >  **Arrêtez le débogage** à partir de la barre de menus, ou appuyez sur Maj + F5.)
 
 ::: moniker-end
 
