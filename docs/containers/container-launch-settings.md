@@ -6,18 +6,19 @@ ms.author: ghogen
 ms.date: 08/15/2019
 ms.technology: vs-azure
 ms.topic: reference
-ms.openlocfilehash: 07dd9dd4c5c61014eecf245719b142cdbaecbc38
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: de0e3cc4e563f7082b91b904a110996cdb85b3b4
+ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85283331"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "88247984"
 ---
 # <a name="container-tools-launch-settings"></a>Paramètres de lancement des outils de conteneur
 
 Dans le dossier *Propriétés* d’un projet ASP.net Core, vous trouverez le launchSettings.jssur le fichier, qui contient des paramètres qui contrôlent la façon dont votre application Web est démarrée sur votre ordinateur de développement. Pour plus d’informations sur l’utilisation de ce fichier dans le développement ASP.NET, consultez [utiliser plusieurs environnements dans ASP.net Core](/aspnet/core/fundamentals/environments?view=aspnetcore-2.2). Dans *launchSettings.jssur*, les paramètres de la section de l' **ancrage** sont liés à la façon dont Visual Studio gère les applications en conteneur.
 
 ::: moniker range="vs-2017"
+
 ```json
     "Docker": {
       "commandName": "Docker",

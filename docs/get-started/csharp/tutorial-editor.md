@@ -12,14 +12,14 @@ dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: 72a74c967849703feeb427d89891a023326ca6b7
-ms.sourcegitcommit: 9a7fb8556a5f3dbb4459122fefc7e7a8dfda753a
+ms.openlocfilehash: 8122f42fb5d2ec4c31ec553407b644e59e9f4418
+ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87234963"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "88248285"
 ---
-# <a name="learn-to-use-the-code-editor-with-c"></a>En savoir plus sur l’utilisation de l’éditeur de code avec C #
+# <a name="learn-to-use-the-code-editor-with-c"></a>En savoir plus sur l’utilisation de l’éditeur de code avec C\#
 
 Dans cette présentation de 10 minutes de l’éditeur de code de Visual Studio, nous allons ajouter du code à un fichier pour examiner certaines façons dont Visual Studio facilite l’écriture, la navigation et la compréhension du code C#.
 
@@ -195,4 +195,4 @@ Aucun développeur ne réussit à créer un code parfait dès le départ. L’un
 - [mode Plan](../../ide/outlining.md)
 - [Atteindre la définition et Aperçu de la définition](../../ide/go-to-and-peek-definition.md)
 - [Refactorisation](../../ide/refactoring-in-visual-studio.md)
-- [Utilisez IntelliSense](../../ide/using-intellisense.md)
+- [Utiliser IntelliSense](../../ide/using-intellisense.md)

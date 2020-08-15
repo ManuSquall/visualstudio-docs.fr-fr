@@ -7,12 +7,12 @@ ms.assetid: d1257931-392a-4a65-bf26-177737505122
 ms.date: 06/24/2020
 ms.topic: how-to
 description: En savoir plus sur et installer des applications Microsoft 365 pour l’entreprise
-ms.openlocfilehash: 341598e323b004463d9af2f1b18d5096dea9f3b2
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.openlocfilehash: 8ece49244d5bdecadc5992cda4e56d0785666e2a
+ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "85902977"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "88250753"
 ---
 # <a name="microsoft-365-apps-for-enterprise-in-visual-studio-subscriptions"></a>Applications Microsoft 365 pour l’entreprise dans les abonnements Visual Studio
 Les applications Microsoft 365 pour l’entreprise (anciennement Office 365 Pro plus) sont disponibles dans les abonnements Visual Studio sélectionnés. 
@@ -25,30 +25,30 @@ Donnez le meilleur de vous-même. Travaillez partout où vous le souhaitez avec 
 ## <a name="activation-steps"></a>Étapes d’activation
 Le processus d’activation de vos applications Microsoft 365 pour l’abonnement Enterprise est simple.  Procédez comme suit pour activer votre abonnement et installer vos applications :
 
-1. Connectez-vous à votre abonnement Visual Studio à l’adresse[https://my.visualstudio.com](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs)
-1. Recherchez la vignette Microsoft 365 apps pour entreprise, puis cliquez sur **activer**.
+1. Connectez-vous à votre abonnement Visual Studio à l’adresse [https://my.visualstudio.com](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs)
+1. Recherchez la vignette Microsoft 365 apps pour entreprise et sélectionnez **activer**.
    > [!div class="mx-imgBorder"]
-   > ![Vignette Microsoft 365 apps pour entreprise](_img/microsoft-365-apps-for-enterprise/tile-activate.png "Cliquez sur Activer pour commencer à utiliser votre abonnement.")
+   > ![Vignette Microsoft 365 apps pour entreprise](_img/microsoft-365-apps-for-enterprise/tile-activate.png "Sélectionnez « Activer » pour commencer à utiliser votre abonnement.")
 
-1. Dans la boîte de dialogue « Bienvenue, je vais vous connaître », fournissez les informations de contact personnelles demandées, puis cliquez sur **suivant**.
+1. Dans la boîte de dialogue « Bienvenue, je vais vous connaître », fournissez les informations de contact personnelles demandées, puis sélectionnez **suivant**.
    > [!div class="mx-imgBorder"]
    > ![Microsoft 365 des applications pour les informations des clients d’entreprise](_img/microsoft-365-apps-for-enterprise/get-to-know-you.png "Entrez vos informations de contact")
 
-1. Dans la boîte de dialogue « créer votre ID d’utilisateur », créez votre nom d’utilisateur et votre mot de passe pour votre locataire, puis cliquez sur **créer mon gratuit**.
+1. Dans la boîte de dialogue « créer votre ID utilisateur », créez votre nom d’utilisateur et votre mot de passe pour votre locataire, puis sélectionnez **créer mon gratuit**.
    > [!div class="mx-imgBorder"]
    > ![Applications de Microsoft 365 pour la création d’ID d’utilisateur d’entreprise](_img/microsoft-365-apps-for-enterprise/create-your-user-id.png "Créer votre ID d’utilisateur et votre mot de passe")
 
-1. Ensuite, vous serez invité à fournir un code pour prouver que vous n’êtes pas un robot.  Vous pouvez faire en sorte que le code vous soit envoyé sous forme de message texte.  Entrez le code, puis cliquez sur **Suivant**. 
+1. Ensuite, vous serez invité à fournir un code pour prouver que vous n’êtes pas un robot.  Vous pouvez faire en sorte que le code vous soit envoyé sous forme de message texte.  Entrez le code, puis sélectionnez **suivant**. 
    > [!div class="mx-imgBorder"]
    > ![Microsoft 365 applications pour l’entreprise prouvez que vous n’êtes pas un robot](_img/microsoft-365-apps-for-enterprise/prove-youre-not-a-robot.png "Demandez un code et entrez-le pour continuer")
 
-1. Une fois votre compte créé, une boîte de dialogue s’affiche pour afficher la page de connexion du portail Office et votre nouvel ID utilisateur.  Prenez note de ces informations pour une utilisation ultérieure, puis cliquez sur **Démarrer le programme d’installation** pour commencer l’installation de vos applications Microsoft 365.
+1. Une fois votre compte créé, une boîte de dialogue s’affiche pour afficher la page de connexion du portail Office et votre nouvel ID utilisateur.  Prenez note de ces informations pour une utilisation ultérieure, puis sélectionnez **Démarrer le programme d’installation** pour commencer l’installation de vos applications Microsoft 365.
    > [!div class="mx-imgBorder"]
    > ![Microsoft 365 les applications pour l’entreprise enregistrer ces informations](_img/microsoft-365-apps-for-enterprise/save-this-info.png "Enregistrez votre nouvel ID d’utilisateur et le lien vers le portail Office.")
 
-1. Vous êtes automatiquement connecté au portail Office et vous êtes maintenant prêt à installer vos applications.  Cliquez sur le bouton **installer** pour commencer.
+1. Vous êtes automatiquement connecté au portail Office et vous êtes maintenant prêt à installer vos applications.  Sélectionnez le bouton **installer** pour commencer.
    > [!div class="mx-imgBorder"]
-   > ![Applications Microsoft 365 pour l’installation de l’entreprise](_img/microsoft-365-apps-for-enterprise/install-your-office-apps.png "Cliquez sur le bouton « installer » pour installer vos applications.")
+   > ![Applications Microsoft 365 pour l’installation de l’entreprise](_img/microsoft-365-apps-for-enterprise/install-your-office-apps.png "Sélectionnez le bouton « installer » pour installer vos applications.")
 1. Suivez les invites pour installer les applications sélectionnées.  
 
 ## <a name="eligibility"></a>Éligibilité

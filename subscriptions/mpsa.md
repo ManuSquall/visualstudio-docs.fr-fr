@@ -7,12 +7,12 @@ ms.assetid: b331c837-3524-42b7-820e-b4fdd5e12793
 ms.date: 03/03/2020
 ms.topic: conceptual
 description: Abonnements Visual Studio dans un programme MPSA (Microsoft Products and Services Agreement)
-ms.openlocfilehash: d38da1784eb543519f1a36ba7342f0b13ab2b1ac
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: 6ce2208e6d1028e1e697b216d41cdd825dfc0d33
+ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85289350"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "88247318"
 ---
 # <a name="visual-studio-subscriptions-in-a-microsoft-products-and-services-agreement-mpsa"></a>Abonnements Visual Studio dans un programme MPSA (Microsoft Products and Services Agreement)
 Si vous avez acheté des abonnements Visual Studio via le programme MPSA, il existe quelques éléments à connaître avant de devenir administrateur des abonnements Visual Studio et d’attribuer des abonnements à vos utilisateurs. Si vous avez déjà été configuré comme administrateur, vous pouvez accéder directement au [portail d’administration](https://manage.visualstudio.com/) des abonnements Visual Studio.
@@ -39,14 +39,14 @@ Voici quelques exigences/étapes nécessaires pour devenir administrateur des ab
 
 Une fois que vous répondez aux critères ci-dessus, vous pouvez procéder à l’association de votre compte d’achats à votre locataire en suivant les étapes ci-dessous.
 1. Connectez-vous à [Business Center](https://businessaccount.microsoft.com/Customer).
-2. Cliquez sur l’onglet **Compte** et sélectionnez **Associate Domains** (Associer les domaines).
+2. Sélectionnez l’onglet **compte** et choisissez **associer les domaines**.
 3. Sélectionnez votre **compte d’achats** (si vous en avez plusieurs).
 4. Sélectionnez votre **locataire** (autrement dit, contoso.onmicrosoft.com).
-5. Cliquez sur **Associate Domain** (Associer le domaine).
+5. Sélectionnez **associer un domaine**.
 
 Après l’association, tous les utilisateurs répondant aux critères vont généralement être provisionnés en tant qu’administrateurs des abonnements Visual Studio en quelques minutes. Toutefois, dans certains cas, cela peut prendre jusqu’à 24 heures. Une fois que votre locataire est provisionné, vous êtes en mesure d’accéder au portail d’administration des abonnements Visual Studio. Si cette opération prend plus de 24 heures, contactez le support MPSA en procédant comme suit :
-1. Se connecter à<https://www.microsoft.com/licensing/mpsa/default>
-2. Cliquez sur le menu **plus** en haut de la page. 
+1. Se connecter à <https://www.microsoft.com/licensing/mpsa/default>
+2. Sélectionnez le menu **plus** en haut de la page. 
 3. Choisir la **prise en charge**
 4. Choisir la **prise en charge des licences**
 5. Sélectionnez l’option de support qui correspond le mieux à vos besoins. 

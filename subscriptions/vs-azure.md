@@ -7,12 +7,12 @@ ms.assetid: 872c5746-5357-4764-949b-aa525a0adf1a
 ms.date: 04/28/2020
 ms.topic: how-to
 description: Découvrez comment activer l’offre Azure DevTest pour les crédits individuels inclus dans votre abonnement Visual Studio.
-ms.openlocfilehash: 3c529b746d647f0f26306e89c56c73171ba50c1d
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.openlocfilehash: 276475393de374970685202079831bb06bedea6f
+ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "85902916"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "88247322"
 ---
 # <a name="use-microsoft-azure-in-visual-studio-subscriptions"></a>Utiliser Microsoft Azure dans les abonnements Visual Studio
 En tant qu’abonné Visual Studio, vous pouvez utiliser Microsoft Azure sans frais supplémentaires.  Avec votre [crédit individuel Azure DevTest mensuel](https://azure.microsoft.com/pricing/member-offers/msdn-benefits-details/), Azure est votre bac à sable personnel pour le développement et les tests.  Vous pouvez provisionner des machines virtuelles, des services cloud et d’autres ressources Azure.  Les montants du crédit varient selon le niveau de votre abonnement.
@@ -20,19 +20,19 @@ En tant qu’abonné Visual Studio, vous pouvez utiliser Microsoft Azure sans fr
 ## <a name="activation-steps"></a>Étapes d’activation
 1. Connectez-vous à [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
 
-2. Recherchez la vignette Azure dans la section Outils de la page Avantages, puis cliquez sur le lien **Activer** en bas de la vignette de l’avantage.
+2. Recherchez la vignette Azure dans la section outils de la page avantages, puis sélectionnez **activer** le lien en bas de la vignette de l’avantage.
    > [!div class="mx-imgBorder"]
    > ![Vignette Azure](_img/vs-azure/vs-azure-tile.png)
 
-3. Si vous n’avez pas d’abonnement Azure, vous êtes invité à renseigner les informations requises pour créer votre abonnement Azure.  La première étape consiste à fournir vos informations personnelles, puis à cliquer sur **suivant**.
+3. Si vous n’avez pas d’abonnement Azure, vous êtes invité à renseigner les informations requises pour créer votre abonnement Azure.  La première étape consiste à fournir vos informations personnelles, puis à sélectionner **suivant**.
    > [!div class="mx-imgBorder"]
    > ![Inscription à Azure](_img/vs-azure/vs-azure-about-you.png)
 
-4. Ensuite, vous devez vérifier votre identité à l’aide d’un code de vérification simple. Indiquez votre numéro de téléphone et indiquez si vous souhaitez recevoir le code par SMS ou par téléphone.  Entrez le code que vous recevez, puis cliquez sur **vérifier le code**.   
+4. Ensuite, vous devez vérifier votre identité à l’aide d’un code de vérification simple. Indiquez votre numéro de téléphone et indiquez si vous souhaitez recevoir le code par SMS ou par téléphone.  Entrez le code que vous recevez, puis sélectionnez **vérifier le code**.   
    > [!div class="mx-imgBorder"]
    > ![Préparation d’Azure](_img/vs-azure/vs-azure-identity.png)
 
-5. Pour la dernière étape, cliquez sur la case à cocher pour accepter les termes du contrat, puis cliquez sur s' **inscrire**.  C’est tout !
+5. Pour l’étape finale, cochez la case pour accepter les termes du contrat, puis sélectionnez s' **inscrire**.  C’est tout !
    > [!div class="mx-imgBorder"]
    > ![Préparation d’Azure](_img/vs-azure/vs-azure-agreement.png)
 
@@ -110,8 +110,8 @@ Consultez la documentation [Support technique](vs-tech-support.md) pour plus de 
 R : la propriété intellectuelle produite par un employé créé sur les ressources fournies par cette société est donc la propriété intellectuelle de l’entreprise qui fournit la ressource. Ainsi, si vous avez reçu votre abonnement Visual Studio par le biais de votre employeur, ses politiques de propriété intellectuelle s’appliquent. 
 
 ## <a name="support-resources"></a>Ressources de support
-- Besoin d'aide avec Azure ?  Consultez les ressources suivantes :
-  - Support technique :[https://azure.microsoft.com/support/options/](https://azure.microsoft.com/support/options/)
+- Besoin d'aide avec Azure ?  Consultez les ressources suivantes :
+  - Support technique : [https://azure.microsoft.com/support/options/](https://azure.microsoft.com/support/options/)
   - [Astuces Azure & astuces](https://microsoft.github.io/AzureTipsAndTricks/ "Astuces Azure & astuces") 
 - Pour obtenir de l’aide sur les ventes, les abonnements, les comptes et la facturation des abonnements Visual Studio, contactez le [support des abonnements](https://visualstudio.microsoft.com/subscriptions/support/)Visual Studio.
 - Vous avez des questions concernant l’IDE Visual Studio, Azure DevOps Services, ou d’autres produits ou services Visual Studio ?  Consultez le [support Visual Studio](https://visualstudio.microsoft.com/support/).

@@ -7,12 +7,12 @@ ms.date: 05/03/2018
 ms.technology: vs-ide-general
 ms.assetid: F898CB6E-05ED-44CD-8DB6-427B2592CCC6
 ms.topic: how-to
-ms.openlocfilehash: 008052c9b78f93b84e650329cd7ebaf6200d21f1
-ms.sourcegitcommit: 5335a9864d5747bc917ed28d4ebeade3076b10e7
+ms.openlocfilehash: 26575367d7aff2b92c64dc5d07068b4900b24e7f
+ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/03/2020
-ms.locfileid: "85950528"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "88249536"
 ---
 # <a name="create-razor-web-apps"></a>Créer des applications Web Razor
 
@@ -48,16 +48,16 @@ Les applications Web Razor incluent les composants suivants.
 ### <a name="pages-folder"></a>Dossier Pages
 
 Ce dossier contient les pages Web d’un projet, ainsi que le code-behind pour chaque :
-   - Un fichier * \* . cshtml* pour le balisage HTML et syntaxe Razor.
-   - Un fichier * \* . cshtml.cs* pour votre code-behind C# pour gérer les événements de page.
+- Un fichier * \* . cshtml* pour le balisage HTML et syntaxe Razor.
+- Un fichier * \* . cshtml.cs* pour votre code-behind C# pour gérer les événements de page.
 
-Les fichiers de prise en charge ont des noms commençant par un trait de soulignement. Par exemple, le fichier _Layout.cshtml configure des éléments d’interface utilisateur communs à toutes les pages. Ce fichier configure le menu de navigation en haut de la page et la mention de droits d’auteur en bas. Pour plus d’informations, consultez [Disposition dans ASP.NET Core](/aspnet/core/mvc/views/layout).
+Les fichiers de prise en charge ont des noms commençant par un trait de soulignement. Par exemple, le fichier * \_ Layout. cshtml* configure les éléments d’interface utilisateur communs à toutes les pages. Ce fichier configure le menu de navigation en haut de la page et la mention de droits d’auteur en bas. Pour plus d’informations, consultez [Disposition dans ASP.NET Core](/aspnet/core/mvc/views/layout).
 
 ### <a name="launch-settings"></a>Paramètres de lancement
 
 Le fichier *launchSettings.js* contient les paramètres IIS, l’URL de l’application et d’autres paramètres associés.
 
-### <a name="app-settings"></a>Paramètres de l’application
+### <a name="app-settings"></a>Paramètres d’application
 
 Le *appSettings.js* fichier contient des données de configuration telles que des chaînes de connexion.
 
