@@ -6,12 +6,12 @@ author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.topic: conceptual
-ms.openlocfilehash: 8e7a5a5871b66fd388d7c5a9f774a22163d06729
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 749a267d4fc33153cfc609f331ecd1d269706e12
+ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75589563"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "88249964"
 ---
 # <a name="disable-dpi-awareness-in-visual-studio"></a>Désactiver la prise en charge DPI dans Visual Studio
 
@@ -29,12 +29,12 @@ Quand vous ouvrez un formulaire dans le **Concepteur Windows Forms** dans Visual
 
 ![Barre d’informations dans Visual Studio pour redémarrer en mode sans prise en charge DPI](./media/scaling-gold-bar.png)
 
-Le message se lit **À l’échelle sur votre écran principal est réglé à 200% (192 dpi). Cela peut causer des problèmes de rendu dans la fenêtre du concepteur.**
+Le message lectures **de la mise à l’échelle sur votre écran principal est défini sur 200% (192 PPP). Cela peut entraîner des problèmes de rendu dans la fenêtre du concepteur.**
 
 > [!NOTE]
 > Cette barre d’informations a été introduite dans Visual Studio 2017 version 15.8.
 
-Si vous ne travaillez pas dans le concepteur et que vous n’avez pas besoin d’ajuster la disposition de votre formulaire, vous pouvez ignorer la barre d’informations et continuer à travailler dans l’éditeur de code ou dans d’autres types de concepteurs. (Vous pouvez également [désactiver les notifications](#disable-notifications) afin que la barre d’information ne continue pas à apparaître.) Seul le **concepteur de formulaires Windows** est affecté. Si vous avez besoin de travailler dans le **Concepteur Windows Forms**, la section suivante vous aide à [résoudre le problème](#to-resolve-the-display-problem).
+Si vous ne travaillez pas dans le concepteur et que vous n’avez pas besoin d’ajuster la disposition de votre formulaire, vous pouvez ignorer la barre d’informations et continuer à travailler dans l’éditeur de code ou dans d’autres types de concepteurs. (Vous pouvez également [Désactiver les notifications](#disable-notifications) pour que la barre d’informations ne continue pas de s’afficher.) Seul le **Concepteur Windows Forms** est affecté. Si vous avez besoin de travailler dans le **Concepteur Windows Forms**, la section suivante vous aide à [résoudre le problème](#to-resolve-the-display-problem).
 
 ## <a name="to-resolve-the-display-problem"></a>Pour résoudre le problème d’affichage
 
@@ -48,19 +48,19 @@ Pour résoudre le problème d’affichage, vous avez trois options :
 
 Vous pouvez redémarrer Visual Studio comme processus sans prise en charge DPI en sélectionnant l’option dans la barre d’informations jaune. Il s’agit de la méthode recommandée pour résoudre le problème.
 
-Quand Visual Studio s’exécute comme processus sans prise en charge DPI, les problèmes de disposition du concepteur sont résolus, mais les polices peuvent apparaître floues. Visual Studio affiche un message d’information jaune différent lorsqu’il s’exécute comme un processus ignorant DPI qui dit **Visual Studio fonctionne comme un processus DPI-inconscient. Les concepteurs WPF et XAML peuvent ne pas afficher correctement.** La barre d’informations fournit également une option permettant de **redémarrer Visual Studio comme processus avec prise en charge DPI**.
+Quand Visual Studio s’exécute comme processus sans prise en charge DPI, les problèmes de disposition du concepteur sont résolus, mais les polices peuvent apparaître floues. Visual Studio affiche un message d’information jaune différent lorsqu’il s’exécute en tant que processus qui ne prend pas en charge la résolution PPP, indiquant que **Visual Studio s’exécute en tant que processus sans prise en charge dpi. Les concepteurs WPF et XAML peuvent ne pas s’afficher correctement.** La barre d’informations fournit également une option permettant de **redémarrer Visual Studio comme processus avec prise en charge DPI**.
 
 > [!NOTE]
 > - Si des fenêtres d’outil ne sont pas ancrées dans Visual Studio au moment de la sélection de l’option de redémarrage comme processus sans prise en charge DPI, la position de ces fenêtres peut changer.
-> - Si vous utilisez le profil Visual Basic par défaut ou si l’option **Enregistrer les nouveaux projets lors de leur création** est désélectionnée dans **Outils** > **Options** > **Projets et solutions**, Visual Studio ne peut pas rouvrir votre projet quand il redémarre comme processus sans prise en charge DPI. Toutefois, vous pouvez ouvrir le projet en le sélectionnant dans le cadre **de File** > **Recent Projects and Solutions**.
+> - Si vous utilisez le profil Visual Basic par défaut ou si l’option **Enregistrer les nouveaux projets lors de leur création** est désélectionnée dans **Outils** > **Options** > **Projets et solutions**, Visual Studio ne peut pas rouvrir votre projet quand il redémarre comme processus sans prise en charge DPI. Toutefois, vous pouvez ouvrir le projet en le sélectionnant sous **fichier**  >  **projets et solutions récents**.
 
-Il est important de redémarrer Visual Studio comme processus avec prise en charge DPI quand vous avez fini de travailler dans le **Concepteur Windows Forms**. Quand il s’exécute comme processus sans prise en charge DPI, les polices peuvent paraître floues et vous pouvez constater des problèmes dans d’autres concepteurs, notamment dans le **Concepteur XAML**. Si vous fermez et rouvrez Visual Studio quand il s’exécute en mode sans prise en charge DPI, il repasse en mode avec prise en charge DPI. Vous pouvez également cliquer sur l’option **Redémarrer Visual Studio comme processus avec prise en charge DPI** dans la barre d’informations.
+Il est important de redémarrer Visual Studio comme processus avec prise en charge DPI quand vous avez fini de travailler dans le **Concepteur Windows Forms**. Quand il s’exécute comme processus sans prise en charge DPI, les polices peuvent paraître floues et vous pouvez constater des problèmes dans d’autres concepteurs, notamment dans le **Concepteur XAML**. Si vous fermez et rouvrez Visual Studio quand il s’exécute en mode sans prise en charge DPI, il repasse en mode avec prise en charge DPI. Vous pouvez également sélectionner l’option **redémarrer Visual Studio en tant que processus prenant en charge les PPP** dans la barre d’informations.
 
 ### <a name="add-a-registry-entry"></a>Ajouter une entrée de Registre
 
 Vous pouvez marquer Visual Studio comme processus sans prise en charge DPI en modifiant le Registre. Ouvrez l’**Éditeur du Registre** et ajoutez une entrée à la sous-clé **HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows NT\CurrentVersion\AppCompatFlags\Layers** :
 
-**Entrée**: Selon que vous utilisez Visual Studio 2017 ou 2019, utilisez l’une de ces valeurs :
+**Entrée**: selon que vous utilisez Visual Studio 2017 ou 2019, utilisez l’une des valeurs suivantes :
 
 - C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\devenv.exe
 - C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\devenv.exe
@@ -85,7 +85,7 @@ Le fait de définir la mise à l’échelle de l’affichage avec la valeur 100�
 
 Vous pouvez choisir de ne pas être informé des problèmes de mise à l’échelle DPI dans Visual Studio. Vous pouvez par exemple désactiver les notifications si vous ne travaillez pas dans le concepteur.
 
-Pour désactiver les notifications, choisissez des options **d’outils** > **Options** pour ouvrir le dialogue **Options.** Ensuite, choisissez **Windows Forms Designer** > **General**, et définissez **DPI Scaling Notifications** à **False**.
+Pour désactiver les notifications, choisissez **Outils**  >  **options** pour ouvrir la boîte de dialogue **options** . Ensuite, choisissez **Concepteur Windows Forms**  >  **général**et définissez les **notifications de mise à l’échelle dpi** sur **false**.
 
 ![Option Notifications de mise à l’échelle PPP dans Visual Studio](./media/notifications-option.png)
 

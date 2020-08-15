@@ -7,19 +7,19 @@ ms.assetid: 21e0471d-ad59-4d21-9c6f-13f7147569af
 ms.date: 03/24/2020
 ms.topic: conceptual
 description: Questions relatives à la facturation pour les abonnements cloud.
-ms.openlocfilehash: a9845078a17425322dfd86bf417daa24238c7b0f
-ms.sourcegitcommit: dfa9476b69851c28b684ece66980bee735fef8fd
+ms.openlocfilehash: d09d9d4a3b21d0b96f0664451323dcc523d73cb3
+ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/26/2020
-ms.locfileid: "80273827"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "88249376"
 ---
 # <a name="visual-studio-cloud-subscriptions-billing-faq"></a>FAQ sur la facturation des abonnements cloud Visual Studio
 [Comparez les avantages des abonnements cloud et les prix](https://visualstudio.microsoft.com/vs/pricing/) afin de bien comprendre les avantages offerts par chaque abonnement Visual Studio. Découvrez les différences entre les abonnements standard et cloud de Visual Studio, obtenez des détails sur les avantages offerts aux abonnés et bien plus encore.
 
 ## <a name="general-purchasing-questions"></a>Questions générales relatives aux achats
 ### <a name="q-can-i-buy-visual-studio-cloud-subscriptions-using-a-purchase-order"></a>Q : Puis-je acheter des abonnements cloud Visual Studio à l’aide d’un bon de commande ?
-R : Non. Tous les abonnements cloud Visual Studio doivent être achetés à l’aide d’un abonnement Azure. (Considérez qu’il s’agit de votre compte de facturation Azure.)
+A : Non. Tous les abonnements cloud Visual Studio doivent être achetés à l’aide d’un abonnement Azure. (Considérez qu’il s’agit de votre compte de facturation Azure.)
 
 ### <a name="q-what-types-of-azure-subscriptions-can-be-used-to-buy-visual-studio-cloud-subscriptions"></a>Q : Quels types d’abonnements Azure peuvent être utilisés pour acheter des abonnements cloud Visual Studio ?
 R : La plupart des abonnements Azure peuvent être utilisés. Nous prenons en charge les abonnements Azure connectés à votre [Contrat Entreprise](https://azure.microsoft.com/pricing/enterprise-agreement/), les abonnements Azure configurés par des fournisseurs de solutions Cloud, les abonnements Azure configurés via des revendeurs Microsoft Open License, ainsi que les abonnements Azure avec paiement à l’utilisation.
@@ -34,7 +34,7 @@ R : Pas du tout. Si vous souhaitez uniquement acheter des abonnements cloud Vis
 R : Oui, c’est possible. Vous devez être propriétaire ou collaborateur d’un abonnement Azure qui a été créé pour votre contrat Entreprise. Veillez à effectuer vos achats d’abonnements cloud Visual Studio directement sur Visual Studio Marketplace. Vous ne pouvez pas acheter des abonnements cloud Visual Studio à l’aide d’un bon de commande.
 
 ### <a name="q-how-can-i-tell-whether-i-have-the-necessary-privileges-to-buy-services-in-the-visual-studio-marketplace-through-my-organizations-enterprise-agreement"></a>Q : Comment puis-je savoir si je dispose des privilèges nécessaires pour acheter des services sur Visual Studio Marketplace avec le contrat Entreprise de mon organisation ?
-R : L’approche la plus simple pour déterminer si vous avez les autorisations appropriées consiste à cliquer sur le bouton **Acheter** pour un service proposé sur Visual Studio Marketplace.
+R : l’approche la plus simple pour déterminer si vous disposez des privilèges appropriés consiste à sélectionner le bouton **acheter** pour un service proposé dans le Visual Studio Marketplace.
 Vous devez sélectionner un abonnement Azure (qui est un compte de facturation) dans la liste des abonnements Azure qui sont actuellement liés à votre connexion.
 Étant donné que le nom de l’abonnement Azure est par défaut le type de compte de facturation (« Paiement à l’utilisation », « Contrat Entreprise » et ainsi de suite), il est souvent facile de savoir si l’abonnement Azure fait partie de votre contrat Entreprise.
 
@@ -74,22 +74,22 @@ Par exemple, si vous achetez six abonnements mensuels Visual Studio Professional
 En outre, la remise s’applique uniquement aux frais durant une période de facturation mensuelle donnée. Ainsi, si vous achetez cinq abonnements annuels Visual Studio Professional durant un mois, et que vous achetez ensuite cinq abonnements supplémentaires le mois suivant, vous payez le prix normal pour les dix abonnements.
 
 > [!NOTE]
-> Microsoft ne propose plus d’abonnements annuels Visual Studio Professional et Visual Studio Enterprise dans les abonnements cloud. L’expérience des clients n’en sera pas altérée ; il leur sera par ailleurs toujours possible de renouveler, d’augmenter, de diminuer ou d’annuler leur abonnement. Les nouveaux clients sont [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) encouragés à aller explorer différentes options pour acheter Visual Studio.
+> Microsoft ne propose plus d’abonnements annuels Visual Studio Professional et Visual Studio Enterprise dans les abonnements cloud. L’expérience des clients n’en sera pas altérée ; il leur sera par ailleurs toujours possible de renouveler, d’augmenter, de diminuer ou d’annuler leur abonnement. Les nouveaux clients sont encouragés à accéder à [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) pour explorer les différentes options d’achat de Visual Studio.
 
 ## <a name="other-questions"></a>Autres questions
-### <a name="q-can-i-use-the-monthly-azure-devtest-individual-credit-as-a-visual-studio-subscriber-to-buy-more-visual-studio-cloud-subscriptions"></a>Q: Puis-je utiliser le crédit individuel Azure DevTest mensuel comme abonné Visual Studio pour acheter plus d’abonnements Cloud Visual Studio ?
-R: Non, vous ne pouvez pas utiliser votre [crédit individuel Azure DevTest mensuel](https://azure.microsoft.com/pricing/member-offers/credit-for-visual-studio-subscribers/) en tant qu’abonné Visual Studio pour payer les achats Visual Studio Marketplace. Tous les achats d’abonnements cloud Visual Studio seront facturés sur votre carte de crédit.
+### <a name="q-can-i-use-the-monthly-azure-devtest-individual-credit-as-a-visual-studio-subscriber-to-buy-more-visual-studio-cloud-subscriptions"></a>Q : puis-je utiliser le crédit individuel Azure DevTest mensuel en tant qu’abonné Visual Studio pour acheter davantage d’abonnements Cloud Visual Studio ?
+R : non, vous ne pouvez pas utiliser votre [crédit individuel Azure DevTest mensuel](https://azure.microsoft.com/pricing/member-offers/credit-for-visual-studio-subscribers/) en tant qu’abonné Visual Studio pour payer les achats de Visual Studio Marketplace. Tous les achats d’abonnements cloud Visual Studio seront facturés sur votre carte de crédit.
 Avant d’effectuer des achats, vous devrez [supprimer votre limite de dépense](https://azure.microsoft.com/pricing/spending-limits/).
 
 ### <a name="q-whats-the-difference-between-annual-and-monthly-cloud-subscriptions"></a>Q : Quelle est la différence entre les abonnements cloud annuels et mensuels ?
-R : Les abonnements cloud mensuels incluent Visual Studio, et l’utilisation d’Azure DevOps Services et de TFS. Les abonnements cloud annuels ont ceci aussi, mais incluent également des avantages d’abonné, y compris l’utilisation de Windows et d’autres logiciels de Microsoft pour installer et exécuter pour le développement et le test, un crédit individuel mensuel Azure DevTest à utiliser pour expérimenter avec Azure services et de faire le développement et les tests dans le cloud, la formation, le soutien, et bien plus encore.
+R : Les abonnements cloud mensuels incluent Visual Studio, et l’utilisation d’Azure DevOps Services et de TFS. Les abonnements de Cloud annuels y sont également inclus, mais incluent également les avantages de l’abonné, notamment l’utilisation de Windows et d’autres logiciels Microsoft pour l’installation et l’exécution pour le développement et le test, un crédit Azure DevTest individuel mensuel à utiliser pour expérimenter les services Azure et effectuer des opérations de développement et de test dans le Cloud, la formation, le support et bien plus encore.
 [Comparer les avantages et les tarifs des abonnements cloud](https://visualstudio.microsoft.com/vs/pricing/)
 
 ### <a name="q-do-i-get-new-versions-of-visual-studio-if-i-buy-a-visual-studio-cloud-subscription"></a>Q : Est-ce que j’ai accès aux nouvelles versions de Visual Studio si je souscris un abonnement cloud Visual Studio ?
 R : Oui. Vous pouvez télécharger et exécuter les nouvelles versions dès leur publication. Vous pouvez aussi continuer à exécuter les versions précédentes.
 
 ### <a name="q-can-i-buy-visual-studio-cloud-subscriptions-from-my-software-reseller"></a>Q : Puis-je acheter des abonnements cloud Visual Studio auprès de mon revendeur de logiciels ?
-R : Oui, vous pouvez, si votre revendeur participe au programme Cloud Solution Provider (CSP). Renseignez-vous auprès de lui.
+R : Oui, vous pouvez, si votre revendeur participe au programme fournisseur de solutions Cloud (CSP). Renseignez-vous auprès de lui.
 
 ## <a name="related-resources"></a>Ressources associées
 - [Portail d’administration des abonnements Visual Studio](https://manage.visualstudio.com/)
@@ -97,12 +97,12 @@ R : Oui, vous pouvez, si votre revendeur participe au programme Cloud Solution P
 - [Achat d’abonnements cloud Visual Studio pour les fournisseurs de solutions Cloud](vscloud-csp.md)
 
 ## <a name="see-also"></a>Voir aussi
-- [Documentation Visual Studio](https://docs.microsoft.com/visualstudio/)
+- [Documentation de Visual Studio](https://docs.microsoft.com/visualstudio/)
 - [Documentation Azure DevOps](https://docs.microsoft.com/azure/devops/)
 - [Documentation Azure](https://docs.microsoft.com/azure/)
 - [Documentation Microsoft 365](https://docs.microsoft.com/microsoft-365/)
 
 ## <a name="next-steps"></a>Étapes suivantes
 Acheter des abonnements cloud
-- [Visual Studio Professionnel mensuel](https://marketplace.visualstudio.com/items?itemName=ms.vs-professional-monthly)
-- [Visual Studio Enterprise mensuel](https://marketplace.visualstudio.com/items?itemName=ms.vs-enterprise-monthly)
+- [Visual Studio Professional mensuelle](https://marketplace.visualstudio.com/items?itemName=ms.vs-professional-monthly)
+- [Visual Studio Enterprise mensuelle](https://marketplace.visualstudio.com/items?itemName=ms.vs-enterprise-monthly)

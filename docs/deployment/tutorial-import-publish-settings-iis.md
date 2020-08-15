@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4b18d1b123e32807575ac2c6601166891d6c25be
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: fff3ded8607f7faf534e6e61a27bd4d3e38d9e38
+ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84183299"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "88247557"
 ---
 # <a name="publish-an-application-to-iis-by-importing-publish-settings-in-visual-studio"></a>Publier une application sur IIS en important des paramètres de publication dans Visual Studio
 
@@ -23,7 +23,7 @@ Vous pouvez utiliser l’outil **Publier** pour importer des paramètres de publ
 
 Ces étapes s’appliquent aux applications ASP.NET, ASP.NET Core et .NET Core dans Visual Studio.
 
-Dans ce tutoriel, vous allez :
+Ce didacticiel présente les procédures suivantes :
 
 > [!div class="checklist"]
 > * Configurer IIS pour pouvoir générer un fichier de paramètres de publication
@@ -58,15 +58,15 @@ Un fichier de paramètres de publication (* \* . publishsettings*) est différen
 
 1. Sur l’ordinateur exécutant Visual Studio, créez un projet.
 
-    Choisissez le modèle adéquat. Dans cet exemple, choisissez **Application web ASP.NET (.NET Framework)** ou (pour C# uniquement) **Application web ASP.NET Core**, puis cliquez sur **OK**.
+    Choisissez le modèle adéquat. Dans cet exemple, choisissez l' **application web ASP.net (.NET Framework)** ou (pour C# uniquement) **ASP.net Core application Web**, puis sélectionnez **OK**.
 
-    Si vous ne voyez pas les modèles de projet spécifiés, cliquez sur le lien **Ouvrir Visual Studio Installer** dans le volet gauche de la boîte de dialogue **Nouveau projet**. Visual Studio Installer est lancé. Installez la charge de travail **développement Web et ASP.net** .
+    Si vous ne voyez pas les modèles de projet spécifiés, accédez au lien **ouvrir Visual Studio installer** dans le volet gauche de la boîte de dialogue **nouveau projet** . Visual Studio Installer est lancé. Installez la charge de travail **développement Web et ASP.net** .
 
     Le modèle de projet que vous choisissez (ASP.NET ou ASP.NET Core) doit correspondre à la version installée d’ASP.NET sur le serveur web.
 
-1. Choisissez **MVC** (.NET Framework) ou **Application web (modèle-vue-contrôleur)** (pour .NET Core) et vérifiez que l’option **Aucune authentification** est sélectionnée, puis cliquez sur **OK**.
+1. Choisissez **MVC** (.NET Framework) ou **application Web (Model-View-Controller)** (pour .net Core) et assurez-vous qu' **aucune authentification** n’est sélectionnée, puis sélectionnez **OK**.
 
-1. Tapez un nom comme **MyDbgApp**, puis cliquez sur **OK**.
+1. Tapez un nom tel que **myWebApp** , puis sélectionnez **OK**.
 
     Visual Studio crée le projet.
 

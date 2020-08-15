@@ -9,12 +9,12 @@ ms.author: sashe
 manager: AndSter
 ms.workload:
 - multiple
-ms.openlocfilehash: f7ec98f8d17465e95369eb6e2ecd88051f8daa59
-ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
+ms.openlocfilehash: 81c15753b083256b97c9f67219b64565a8db8736
+ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "85330457"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "88247799"
 ---
 # <a name="analyze-memory-usage-by-using-the-net-object-allocation-tool"></a>Analyser l’utilisation de la mémoire à l’aide de l’outil d’allocation d’objets .NET
 
@@ -22,7 +22,7 @@ Vous pouvez voir la quantité de mémoire utilisée par votre application et les
 
 Après avoir exécuté l’outil, vous pouvez voir les chemins d’exécution des fonctions où les objets sont alloués. Vous pouvez ensuite effectuer le suivi jusqu’à la racine de l’arborescence des appels qui occupe la plus grande partie de la mémoire.
 
-## <a name="setup"></a>Programme d’installation
+## <a name="setup"></a>Configuration
 
 1. Appuyez sur **ALT + F2** pour ouvrir le profileur de performances dans Visual Studio.
 
@@ -118,11 +118,11 @@ La vue **fonctions** affiche les processus, les modules et les fonctions qui all
 - La colonne **nom** affiche les processus en tant que nœuds de niveau supérieur. Sous, les processus sont des modules et les modules sous sont des fonctions.
 - Ces colonnes affichent les mêmes informations que dans les vues **allocation** et **arborescence des appels** :
 
-   - **Total (allocations)**
-   - **Soi-même (allocations)**
-   - **Taille totale (octets)**
-   - **Taille automatique (octets)**
-   - **Taille moyenne (octets)**
+  - **Total (allocations)**
+  - **Soi-même (allocations)**
+  - **Taille totale (octets)**
+  - **Taille automatique (octets)**
+  - **Taille moyenne (octets)**
 
 ### <a name="collection"></a>Collection
 

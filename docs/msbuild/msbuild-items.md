@@ -11,12 +11,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d4689985d159bd832bc3cadfb54eb17fae2ae71a
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: 020983182706bd6d9382f4d0bd4885ffa0f86f52
+ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84183663"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "88247583"
 ---
 # <a name="msbuild-items"></a>Éléments MSBuild
 
@@ -144,7 +144,7 @@ Pour plus d’informations sur les caractères génériques, consultez [Guide pr
 </Project>
 ```
 
-### <a name="well-known-item-metadata"></a><a name="BKMK_WellKnownItemMetadata"></a>Métadonnées d’élément connues
+### <a name="well-known-item-metadata"></a><a name="BKMK_WellKnownItemMetadata"></a> Métadonnées d’élément connues
 
  Lorsqu’un élément est ajouté à un type d’élément, des métadonnées connues lui sont attribuées. Par exemple, tous les éléments ont les métadonnées%(connues \<Filename> ), dont la valeur est le nom de fichier de l’élément (sans l’extension). Pour plus d’informations, consultez [métadonnées d’éléments connus](../msbuild/msbuild-well-known-item-metadata.md).
 
@@ -191,7 +191,7 @@ Pour plus d’informations sur les caractères génériques, consultez [Guide pr
 
  Depuis .NET Framework 3.5, les éléments `Target` peuvent contenir des éléments [ItemGroup](../msbuild/itemgroup-element-msbuild.md) qui peuvent comporter des éléments Item. Les attributs de cette section sont valides s’ils sont spécifiés pour un élément d’un `ItemGroup` qui se trouve dans une `Target`.
 
-### <a name="remove-attribute"></a><a name="BKMK_RemoveAttribute"></a>Supprimer l’attribut
+### <a name="remove-attribute"></a><a name="BKMK_RemoveAttribute"></a> Supprimer l’attribut
 
  L’attribut `Remove` supprime des éléments spécifiques (fichiers) du type d’élément. Cet attribut a été introduit dans le .NET Framework 3,5 (dans les cibles internes uniquement). Les cibles internes et externes sont prises en charge à partir de MSBuild 15,0.
 
@@ -205,7 +205,7 @@ Pour plus d’informations sur les caractères génériques, consultez [Guide pr
 </Target>
 ```
 
-### <a name="keepmetadata-attribute"></a><a name="BKMK_KeepMetadata"></a>Attribut KeepMetadata
+### <a name="keepmetadata-attribute"></a><a name="BKMK_KeepMetadata"></a> Attribut KeepMetadata
 
  Si un élément est généré au sein d’une cible, l’élément Item peut contenir l’attribut `KeepMetadata`. Si cet attribut est spécifié, seules les métadonnées qui sont spécifiées dans la liste de noms séparés par des points-virgules sont transférées de l’élément source à l’élément cible. Pour cet attribut, utiliser une valeur vide revient à ne pas le spécifier. L’attribut `KeepMetadata` a été introduit dans .NET Framework 4.5.
 
@@ -248,7 +248,7 @@ Output:
 -->
 ```
 
-### <a name="removemetadata-attribute"></a><a name="BKMK_RemoveMetadata"></a>Attribut RemoveMetadata
+### <a name="removemetadata-attribute"></a><a name="BKMK_RemoveMetadata"></a> Attribut RemoveMetadata
 
  Si un élément est généré au sein d’une cible, l’élément Item peut contenir l’attribut `RemoveMetadata`. Si cet attribut est spécifié, toutes les métadonnées sont transférées de l’élément source vers l’élément cible, à l’exception des métadonnées dont les noms figurent dans la liste de noms séparés par des points-virgules. Pour cet attribut, utiliser une valeur vide revient à ne pas le spécifier. L’attribut `RemoveMetadata` a été introduit dans .NET Framework 4.5.
 
@@ -298,7 +298,7 @@ Output:
 -->
 ```
 
-### <a name="keepduplicates-attribute"></a><a name="BKMK_KeepDuplicates"></a>Attribut KeepDuplicates
+### <a name="keepduplicates-attribute"></a><a name="BKMK_KeepDuplicates"></a> Attribut KeepDuplicates
 
  Si un élément est généré au sein d’une cible, l’élément Item peut contenir l’attribut `KeepDuplicates`. `KeepDuplicates` est un attribut `Boolean` qui spécifie si un élément doit être ajouté au groupe cible si l’élément est une copie exacte d’un élément existant.
 
@@ -338,7 +338,7 @@ Output:
 -->
 ```
 
-##  <a name="updating-metadata-on-items-in-an-itemgroup-outside-of-a-target"></a>Mise à jour des métadonnées sur les éléments d’un ItemGroup en dehors d’une cible
+## <a name="updating-metadata-on-items-in-an-itemgroup-outside-of-a-target"></a>Mise à jour des métadonnées sur les éléments d’un ItemGroup en dehors d’une cible
 
 Les métadonnées existantes des éléments en dehors des cibles peuvent être mises à jour via l' `Update` attribut. Cet attribut n’est **pas** disponible pour les éléments sous cibles.
 

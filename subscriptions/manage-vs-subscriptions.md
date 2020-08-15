@@ -7,12 +7,12 @@ ms.assetid: 196c6d04-9a33-47d5-b0f1-038e7c3a7ac9
 ms.date: 03/09/2020
 ms.topic: conceptual
 description: Découvrez comment tirer le meilleur parti de vos abonnements Visual Studio.
-ms.openlocfilehash: 19b4bd7c6fce88aa99b336d98d6bf471509af556
-ms.sourcegitcommit: b8ec700fc4c14c68c6ce280f29c19870261990d8
+ms.openlocfilehash: da78c4f9212341636d85453ad19dde549ddb0e20
+ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/31/2020
-ms.locfileid: "87453688"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "88248428"
 ---
 # <a name="managing-subscriptions"></a>Gestion des abonnements
 
@@ -30,10 +30,10 @@ Dans la page Avantages, l’abonnement actif est affiché en surbrillance dans l
 
 ### <a name="to-switch-between-subscriptions-you-can"></a>Vous pouvez passer d’un abonnement à un autre des deux manières suivantes :
 
-- Cliquez sur la liste déroulante en haut à droite et sélectionnez l’abonnement dans la liste.
-- Cliquez sur l’onglet Abonnements, puis cliquez sur l’abonnement souhaité.
+- Sélectionnez la liste déroulante en haut à droite, puis choisissez l’abonnement dans la liste.
+- Sélectionnez l’onglet abonnements, puis sélectionnez l’abonnement souhaité.
   > [!div class="mx-imgBorder"]
-  > ![Changer d’abonnement](_img/manage-vs-subscriptions/change-subscription-resized.png "Cliquez sur l’onglet abonnements pour afficher des informations détaillées sur tous vos abonnements et basculer entre eux.")
+  > ![Changer d’abonnement](_img/manage-vs-subscriptions/change-subscription-resized.png "Sélectionnez l’onglet abonnements pour afficher des informations détaillées sur tous vos abonnements et basculer entre eux.")
 
 ### <a name="if-your-subscription-is-not-visible"></a>Si votre abonnement n’est pas affiché...
 
@@ -68,17 +68,17 @@ Le portail des abonnements vous permet de créer et de gérer un profil, ce qui 
 
 Vous pouvez facilement modifier les informations de contact et les préférences dans votre profil.
 
-1. Cliquez sur votre nom dans le coin supérieur droit du portail de l’abonné.
-2. Cliquez sur le bouton **Modifier le profil**.
+1. Sélectionnez votre nom dans l’angle supérieur droit du portail de l’abonné.
+2. Sélectionnez le bouton **modifier le profil** .
 3. Sous l’onglet **À propos de**, vous pouvez modifier votre nom, votre adresse e-mail, votre pays/région, votre image de profil et vos préférences de contact. Sous l’onglet **Préférences** , vous pouvez sélectionner la langue, les modèles de date et d’heure, le fuseau horaire et le thème de l’interface utilisateur par défaut.
-4. Quand vous avez effectué toutes les modifications souhaitées, cliquez sur **Enregistrer**.
-5. Cliquez sur le bouton **Précédent** dans votre navigateur pour revenir à la page Avantages.
+4. Une fois les modifications finalisées, sélectionnez **Enregistrer**.
+5. Sélectionnez le bouton **précédent** de votre navigateur pour revenir à la page des avantages.
 
 ### <a name="setting-communications-preferences"></a>Définition des préférences de communication
 Si vous souhaitez recevoir des mises à jour périodiques sur votre abonnement et ses avantages, dont le bulletin d’informations mensuel Visual Studio Subscription, [mettez à jour vos préférences](https://app.vsaex.visualstudio.com/me?workflowID=devprogram&tab=edit) en cochant la case pour Visual Studio Subscription dans votre profil Visual Studio. Vous pouvez modifier ces préférences et vous désabonner à tout moment. 
 
    > [!div class="mx-imgBorder"]
-   > ![Définition des préférences](_img/manage-vs-subscriptions/change-prefs.png "Cliquez sur la case à cocher e-mails du programme des abonnements Visual Studio pour recevoir les mises à jour.")
+   > ![Définition des préférences](_img/manage-vs-subscriptions/change-prefs.png "Cochez la case e-mails des abonnements Visual Studio pour recevoir les mises à jour.")
    
 ### <a name="linking-my-subscription-to-existing-azure-devops-services-or-azure-subscriptions"></a>Association de mon abonnement à des abonnements Azure DevOps Services ou Azure existants
 Si vous vous connectez à votre abonnement avec un compte Microsoft personnel et que vous avez un abonnement qui inclut Azure DevOps Services ou Microsoft Azure avec un compte professionnel ou scolaire géré par Azure, vous pouvez lier les deux abonnements. Il s’agit d’un « compte alternatif » qui vous permet d’utiliser votre compte MSA pour vous connecter à votre abonnement et d’accéder en parallèle aux ressources Azure, Azure DevOps Services ou IDE existantes qui sont associées à votre compte scolaire ou professionnel.
@@ -88,18 +88,18 @@ Même si les deux comptes utilisent la même adresse e-mail, vous devez ajouter
 Pour ajouter un autre compte :
 
 1. Connectez-vous au [portail Abonné](https://my.visualstudio.com?wt.mc_id=o~msft~docs) à l’aide de votre compte Microsoft (MSA).
-2. Cliquez sur l’onglet **Abonnements**.
+2. Sélectionnez l'onglet **Abonnements** .
 3. Sous **Liens connexes**, choisissez **Ajouter un autre compte**.
-4. Entrez l’adresse e-mail de votre compte professionnel ou scolaire, puis cliquez sur **Ajouter**.
+4. Entrez l’adresse e-mail de votre compte professionnel ou scolaire, puis sélectionnez **Ajouter**.
 
-Une fois que vous avez ajouté un autre compte, vous pouvez le mettre à jour ou le supprimer à tout moment en cliquant sur l’onglet **Abonnements** et en choisissant l’option appropriée dans la section **Liens connexes**.
+Une fois que vous avez ajouté un autre compte, vous pouvez le mettre à jour ou le supprimer à tout moment en sélectionnant l’onglet **abonnements** et en choisissant l’option appropriée dans la section **liens connexes** .
 
 ## <a name="frequently-asked-questions"></a>Forum aux questions
 
 ### <a name="q-if-i-do-not-renew-my-subscription-how-long-will-microsoft-keep-my-data"></a>Q : Si je ne renouvelle pas mon abonnement, combien de temps Microsoft conserve mes données ?
 R : En fonction du canal d’achat, Microsoft conserve les données des clients pendant une durée définie.
 
-| Canal                                                | Durée (jours) |
+| Channel                                                | Durée (jours) |
 |--------------------------------------------------------|-----------------|
 |    Vente au détail (par exemple, via le Microsoft Store)               |    360          |
 |    Centre de gestion des licences en volume (VLSC)              |    180          |

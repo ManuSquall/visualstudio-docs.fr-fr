@@ -7,12 +7,12 @@ ms.assetid: c2878e28-eb5d-4adb-8d7d-a95ffea703a9
 ms.date: 03/11/2020
 ms.topic: how-to
 description: Trouver une liste de téléchargements de logiciels inclus dans votre abonnement Visual Studio.
-ms.openlocfilehash: debf1904fc502f15f4fd6f52cc38e29a84dc763a
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.openlocfilehash: 767d53c38aeaa9a9717ecacffcc08813950c008a
+ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "85906108"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "88250697"
 ---
 # <a name="what-software-is-available-for-download"></a>Quels sont les logiciels disponibles en téléchargement ?
 
@@ -23,10 +23,10 @@ Si vous disposez déjà d’un abonnement Visual Studio :
 2. Connectez-vous à votre abonnement. (En savoir plus sur la connexion avec vos informations d’identification de [compte Microsoft](sign-in-msa.md), de [compte professionnel ou scolaire](sign-in-work.md) ou [GitHub](sign-in-github.md).)
 3. Une fois correctement connecté, vous pouvez rechercher les téléchargements souhaités.  Vous pouvez également voir une liste des téléchargements les plus populaires, qui peuvent être triés selon plusieurs critères.
 
-Pour rechercher rapidement des produits, utilisez les fonctions de recherche en haut de la page ou cliquez sur les différents types de produits à gauche.
+Pour rechercher rapidement des produits, utilisez les fonctions de recherche en haut de la page ou sélectionnez les différents types de produits sur la gauche.
 
 > [!TIP]
-> Si vous recherchez vos clés de produit, cliquez sur l’onglet **Clés de produit** en haut de la page.
+> Si vous recherchez vos clés de produit, sélectionnez l’onglet **clés de produit** en haut de la page.
 
 Vous pouvez également télécharger une feuille de calcul Excel contenant une liste complète des [noms des logiciels disponibles](https://download.microsoft.com/download/1/5/4/15454442-CF17-47B9-A65D-DF84EF88511B/Visual_Studio_by_Subscription_Level.xlsx) pour chaque type d’abonnement.
 

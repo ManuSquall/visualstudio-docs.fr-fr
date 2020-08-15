@@ -8,12 +8,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1ce3e41b2fe9dfdb080e23fb4270454bbd57f7ef
-ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
+ms.openlocfilehash: 02f078d9293fa8b02267c5003a92d1d60134e1a4
+ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85817201"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "88249508"
 ---
 # <a name="how-to-edit-xml-files"></a>Comment : modifier des fichiers XML
 
@@ -22,7 +22,7 @@ L’éditeur XML est le nouvel éditeur pour les fichiers XML. Il peut être uti
 > [!NOTE]
 > Les documents XHTML sont traités dans l'éditeur HTML.
 
-Pour modifier un fichier XML, double-cliquez sur le fichier que vous souhaitez modifier.
+Pour modifier un fichier XML, ouvrez le fichier que vous souhaitez modifier.
 
 ## <a name="add-a-new-xml-file-to-a-project"></a>Ajouter un nouveau fichier XML à un projet
 
@@ -50,7 +50,7 @@ Pour modifier un fichier XML, double-cliquez sur le fichier que vous souhaitez m
 
 2. Sélectionnez **fichier XML** pour créer un nouveau fichier XML. ou sélectionnez **fichier XSLT** pour créer une nouvelle feuille de style XSLT.
 
-3. Cliquez sur **Ouvrir**.
+3. Sélectionnez **Ouvrir**.
 
 ## <a name="create-an-empty-project-for-xml-files"></a>Créer un projet vide pour les fichiers XML
 
@@ -62,7 +62,7 @@ Pour modifier un fichier XML, double-cliquez sur le fichier que vous souhaitez m
 
 2. Sélectionnez le langage de code de votre choix, puis sélectionnez le modèle **projet vide (.NET Framework)** .
 
-3. Cliquez sur **OK**.
+3. Sélectionnez **OK**.
 
 ::: moniker-end
 
@@ -70,9 +70,9 @@ Pour modifier un fichier XML, double-cliquez sur le fichier que vous souhaitez m
 
 1. Dans le menu **Fichier**, sélectionnez **Nouveau** > **Projet**.
 
-2. Entrez un **projet vide** dans la zone de recherche du modèle, sélectionnez le modèle **projet vide (.NET Framework)** , puis cliquez sur **suivant**.
+2. Entrez un **projet vide** dans la zone de recherche du modèle, sélectionnez le modèle **projet vide (.NET Framework)** , puis sélectionnez **suivant**.
 
-3. Cliquez sur **Créer**.
+3. Sélectionnez **Create** (Créer).
 
 ::: moniker-end
 

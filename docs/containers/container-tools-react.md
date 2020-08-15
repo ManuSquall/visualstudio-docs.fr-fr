@@ -1,17 +1,17 @@
 ---
-title: Outils de conteneur Visual Studio avec ASP.NET Core et REACT. js
+title: Outils de conteneur Visual Studio avec ASP.NET Core et React.js
 author: ghogen
 description: Découvrir comment utiliser les outils de conteneur Visual Studio et le client Docker pour Windows
 ms.author: ghogen
 ms.date: 05/14/2020
 ms.technology: vs-azure
 ms.topic: quickstart
-ms.openlocfilehash: f7dfc0aa1346c4e888f64f7cd8f23add3056c070
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: 321d85537f210d17414be115b8f6b3f8b8d5b3c9
+ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84182784"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "88249194"
 ---
 # <a name="quickstart-use-docker-with-a-react-single-page-app-in-visual-studio"></a>Démarrage rapide : utiliser l’amarrage avec une application à page unique REACT dans Visual Studio
 
@@ -22,7 +22,7 @@ Avec Visual Studio, vous pouvez facilement générer, déboguer et exécuter des
 ::: moniker range="vs-2017"
 * [Docker Desktop](https://hub.docker.com/editions/community/docker-ce-desktop-windows)
 * [Visual Studio 2017](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) avec la charge de travail **Développement web**, **Azure Tools** et/ou la charge de travail **Développement multiplateforme .NET Core**
-* Pour publier sur Azure Container Registry, un abonnement Azure. [Inscrivez-vous pour obtenir une version d’évaluation gratuite](https://azure.microsoft.com/offers/ms-azr-0044p/).
+* Pour publier sur Azure Container Registry, un abonnement Azure. [Inscrivez-vous pour un essai gratuit](https://azure.microsoft.com/offers/ms-azr-0044p/).
 * [Node.JS](https://nodejs.org/en/download/)
 * Pour les conteneurs Windows, Windows 10 version 1903 ou ultérieure, pour utiliser les images de l’ancrage référencées dans cet article.
 ::: moniker-end
@@ -30,7 +30,7 @@ Avec Visual Studio, vous pouvez facilement générer, déboguer et exécuter des
 * [Docker Desktop](https://hub.docker.com/editions/community/docker-ce-desktop-windows)
 * [Visual Studio 2019](https://visualstudio.microsoft.com/downloads) avec la charge de travail **Développement web**, **Outils Azure** et/ou la charge de travail **Développement multiplateforme .NET Core** installée
 * [Outils de développement .NET core 2.2](https://dotnet.microsoft.com/download/dotnet-core/2.2) pour le développement avec .NET Core 2.2
-* Pour publier sur Azure Container Registry, un abonnement Azure. [Inscrivez-vous pour obtenir une version d’évaluation gratuite](https://azure.microsoft.com/offers/ms-azr-0044p/).
+* Pour publier sur Azure Container Registry, un abonnement Azure. [Inscrivez-vous pour un essai gratuit](https://azure.microsoft.com/offers/ms-azr-0044p/).
 * [Node.JS](https://nodejs.org/en/download/)
 * Pour les conteneurs Windows, Windows 10 version 1903 ou ultérieure, pour utiliser les images de l’ancrage référencées dans cet article.
 ::: moniker-end
@@ -72,7 +72,7 @@ L’étape suivante est différente selon que vous utilisez des conteneurs Linux
 
 Un *fichier Docker*, la recette permettant de créer une image Docker finale, est créé dans le projet. Reportez-vous à la [référence fichier dockerfile](https://docs.docker.com/engine/reference/builder/) pour connaître les commandes qu’il contient.
 
-Ouvrez le *Dockerfile* dans le projet et ajoutez les lignes suivantes pour installer Node.js 10.x dans le conteneur. Veillez à ajouter ces lignes dans la première section pour ajouter l’installation du gestionnaire de package node *NPM. exe* à l’image de base, ainsi que dans la `build` section.
+Ouvrez le *Dockerfile* dans le projet et ajoutez les lignes suivantes pour installer Node.js 10.x dans le conteneur. Veillez à ajouter ces lignes dans la première section, pour ajouter l’installation du gestionnaire de package de nœud *npm.exe* à l’image de base, ainsi que dans la `build` section.
 
 ```Dockerfile
 RUN curl -sL https://deb.nodesource.com/setup_10.x |  bash -
@@ -123,7 +123,7 @@ Ouvrez le fichier projet en double-cliquant sur le nœud du projet et mettez à 
 Mettez à jour le fichier dockerfile en ajoutant les lignes suivantes. Cela va copier node et NPM vers le conteneur.
 
    1. Ajouter ``# escape=` `` à la première ligne du fichier dockerfile
-   1. Ajoutez les lignes suivantes avant`FROM … base`
+   1. Ajoutez les lignes suivantes avant `FROM … base`
 
       ```Dockerfile
       FROM mcr.microsoft.com/powershell:nanoserver-1903 AS downloadnodejs
@@ -133,7 +133,7 @@ Mettez à jour le fichier dockerfile en ajoutant les lignes suivantes. Cela va c
       Rename-Item "C:\node-v10.16.3-win-x64" c:\nodejs
       ```
 
-   1. Ajoutez la ligne suivante avant et après`FROM … build`
+   1. Ajoutez la ligne suivante avant et après `FROM … build`
 
       ```Dockerfile
       COPY --from=downloadnodejs C:\nodejs\ C:\Windows\system32\
@@ -177,7 +177,7 @@ Mettez à jour le fichier dockerfile en ajoutant les lignes suivantes. Cela va c
       ENTRYPOINT ["dotnet", "WebApplication37.dll"]
       ```
 
-1. Mettez à jour le fichier. dockerignore en supprimant le `**/bin` .
+   1. Mettez à jour le fichier. dockerignore en supprimant le `**/bin` .
 
 ## <a name="debug"></a>Débogage
 
@@ -228,10 +228,10 @@ Une fois le cycle de développement et de débogage de l’application effectué
 
     | Paramètre      | Valeur suggérée  | Description                                |
     | ------------ |  ------- | -------------------------------------------------- |
-    | **Préfixe DNS** | Nom globalement unique | Nom qui identifie uniquement votre registre de conteneurs. |
+    | **Préfixe DNS** | Nom global unique | Nom qui identifie uniquement votre registre de conteneurs. |
     | **Abonnement** | Choisir votre abonnement | Sélectionnez l’abonnement Azure à utiliser. |
     | **[Groupe de ressources](/azure/azure-resource-manager/resource-group-overview)** | myResourceGroup |  Nom du groupe de ressources où créer votre registre de conteneurs. Choisissez **Nouveau** pour créer un groupe de ressources.|
-    | **[PAIRE](/azure/container-registry/container-registry-skus)** | standard | Niveau de service du registre de conteneurs  |
+    | **[PAIRE](/azure/container-registry/container-registry-skus)** | Standard | Niveau de service du registre de conteneurs  |
     | **Emplacement du registre** | Un emplacement proche de vous | Choisissez un emplacement dans une [région](https://azure.microsoft.com/regions/) près de chez vous ou près d’autres services que votre registre de conteneurs va utiliser. |
 
     ![Boîte de dialogue de création d’un registre de conteneurs Azure dans Visual Studio][0]

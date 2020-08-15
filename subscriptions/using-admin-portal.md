@@ -7,12 +7,12 @@ ms.assetid: 4c099fe8-883e-4789-9468-387ce5697dfe
 ms.date: 03/03/2020
 ms.topic: overview
 description: Découvrez comment bien démarrer avec la gestion des abonnements Visual Studio de votre organisation via le portail d’administration des abonnements.
-ms.openlocfilehash: 94ce9e8ceec46403ef816c39115a5418f1ee9e03
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.openlocfilehash: 7687a899b1c10e95ce161973c0d84701ce91fde6
+ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "85902939"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "88249864"
 ---
 # <a name="overview-of-the-visual-studio-subscriptions-administrator-portal"></a>Vue d’ensemble du portail d’administration des abonnements Visual Studio
 
@@ -42,7 +42,7 @@ Une fois que vous avez attribué des abonnements, l’onglet gérer les abonnés
 
 Sur le côté supérieur gauche de la page, vous pouvez choisir plusieurs icônes pour afficher une vue d’ensemble de l’affectation d’abonnement, les détails du contrat et le rapport d’utilisation maximal.
 
-Pour afficher des informations supplémentaires sur le nombre de licences d’abonnement achetées, affectées et toujours disponibles dans votre organisation pour chaque contrat, cliquez sur l’icône en haut pour activer le panneau coulissant.
+Pour afficher des informations supplémentaires sur le nombre de licences d’abonnement achetées, affectées et toujours disponibles dans votre organisation pour chaque accord, sélectionnez l’icône supérieure pour activer le panneau coulissant.
 > [!div class="mx-imgBorder"]
 > ![Page Abonnés dans le portail d’administration des abonnements Visual Studio](_img/using-admin-portal/subscribers-page.png)
 

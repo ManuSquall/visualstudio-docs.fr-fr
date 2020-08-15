@@ -14,11 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 7d8b5e05fb234e9997bce615f7b2de1d790c1ae0
-ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
+ms.openlocfilehash: 7fe560ae0c639ec8c400719738ea1f52b5315a9a
+ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/06/2020
-ms.locfileid: "86014576"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "88247658"
 ---
 # <a name="walkthrough-create-a-web-part-for-sharepoint"></a>Procédure pas à pas : créer un composant WebPart pour SharePoint
 
@@ -203,7 +204,7 @@ Pour remplir la grille de données qui s’affiche dans le composant WebPart, sp
 
 ## <a name="test-the-web-part-verb"></a>Tester le verbe du composant WebPart
 
-Affichez et masquez les employés qui ne sont pas responsables en cliquant sur un élément qui s’affiche dans le menu d’actions verbales du composant WebPart.
+Affichez et masquez les employés qui ne sont pas responsables en sélectionnant un élément qui apparaît dans le menu d’actions verbales du composant WebPart.
 
 1. Choisissez la flèche qui apparaît sur le côté droit du composant WebPart, puis choisissez **afficher les gestionnaires uniquement** dans le menu qui s’affiche.
 

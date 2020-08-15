@@ -28,12 +28,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5970e7e4408c826058cb27590254b278d4cdb9b7
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: f4b4a90cc06396f9fb6afb8a356385e966ed1b3d
+ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85281004"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "88249218"
 ---
 # <a name="attach-to-running-processes-with-the-visual-studio-debugger"></a>Attacher aux processus en cours d’exécution avec le débogueur Visual Studio
 
@@ -44,7 +44,7 @@ Vous pouvez utiliser **attacher au processus** pour déboguer des applications e
 > [!TIP]
 > Vous ne savez pas s’il faut utiliser l' **attachement au processus** pour votre scénario de débogage ? Consultez [scénarios de débogage courants](#BKMK_Scenarios).
 
-## <a name="attach-to-a-running-process-on-your-local-machine"></a><a name="BKMK_Attach_to_a_running_process"></a>Attacher à un processus en cours d’exécution sur votre ordinateur local
+## <a name="attach-to-a-running-process-on-your-local-machine"></a><a name="BKMK_Attach_to_a_running_process"></a> Attacher à un processus en cours d’exécution sur votre ordinateur local
 
 Pour vous rattacher rapidement à un processus que vous avez attaché précédemment, consultez [rattacher à un processus](#BKMK_reattach).
 
@@ -165,7 +165,7 @@ Si aucune de ces solutions n’est possible, la troisième option consiste à at
 
 Pour plus d’informations, consultez [Déboguer à distance .net Core s’exécutant sur Linux à l’aide de SSH](../debugger/remote-debugging-dotnet-core-linux-with-ssh.md).
 
-## <a name="attach-to-a-process-running-on-a-linux-docker-container"></a><a name="BKMK_Linux_Docker_Attach"></a>Attachement à un processus en cours d’exécution sur un conteneur d’ancrage Linux
+## <a name="attach-to-a-process-running-on-a-linux-docker-container"></a><a name="BKMK_Linux_Docker_Attach"></a> Attachement à un processus en cours d’exécution sur un conteneur d’ancrage Linux
 
 Vous pouvez attacher le débogueur Visual Studio à un processus en cours d’exécution dans un conteneur Linux Core Linux Core sur votre ordinateur local ou distant à l’aide de la boîte **de dialogue Attacher au processus** .
 
@@ -199,17 +199,15 @@ Vous pouvez attacher le débogueur Visual Studio à un processus en cours d’ex
         ![Se connecter à un système distant](../debugger/media/connect-remote-system.png "Se connecter à un système distant")
         1. Sélectionnez un conteneur en cours d’exécution auquel effectuer l’attachement après vous être connecté au démon SSH ou démon, puis cliquez sur **OK**.
 
-    
     1. ***Pour définir la cible sur un conteneur distant exécutant un processus via un [démon d’ancrage](https://docs.docker.com/engine/reference/commandline/dockerd/)***
         1. Spécifiez l’adresse du démon (par exemple, via TCP, IP, etc.) sous hôte de l' **ordinateur de point de connexion (facultatif)** , puis cliquez sur le lien Actualiser.
         1. Sélectionnez un conteneur en cours d’exécution auquel effectuer l’attachement après avoir réussi à vous connecter au démon et cliqué sur **OK**.
 
 4. Choisissez le processus de conteneur correspondant dans la liste des **processus disponibles** , puis sélectionnez **attacher** pour démarrer le débogage de votre processus de conteneur C# dans Visual Studio.
 
-    ![Menu attacher de l’ancrage terminé](../debugger/media/docker-attach-complete.png "Menu attacher de l’Ancreur Linux terminé")
-    
+    ![Menu attacher de l’ancrage terminé](../debugger/media/docker-attach-complete.png "Menu attacher de l’Ancreur Linux terminé")    
 
-## <a name="attach-to-a-process-running-on-a-windows-docker-container"></a><a name="BKMK_Windows_Docker_Attach"></a>Attacher à un processus en cours d’exécution sur un conteneur d’ancrage Windows
+## <a name="attach-to-a-process-running-on-a-windows-docker-container"></a><a name="BKMK_Windows_Docker_Attach"></a> Attacher à un processus en cours d’exécution sur un conteneur d’ancrage Windows
 
 Vous pouvez attacher le débogueur Visual Studio à un processus en cours d’exécution dans un conteneur d’ancrage Windows sur votre ordinateur local à l’aide de la boîte **de dialogue Attacher au processus** .
 
@@ -238,21 +236,19 @@ Vous pouvez attacher le débogueur Visual Studio à un processus en cours d’ex
 4. Choisissez le processus de conteneur correspondant dans la liste des **processus disponibles** , puis sélectionnez **attacher** pour démarrer le débogage de votre processus de conteneur C#.
 
     ![Menu attacher de l’ancrage terminé](../debugger/media/docker-attach-complete-windows.png "Menu attacher de l’Ancreur Windows terminé")
-    
 
 5.  Choisissez le processus de conteneur correspondant dans la liste des processus disponibles, puis choisissez **attacher** pour démarrer le débogage de votre processus de conteneur C#.
 
-
 ::: moniker-end
 
-## <a name="reattach-to-a-process"></a><a name="BKMK_reattach"></a>Rattacher à un processus
+## <a name="reattach-to-a-process"></a><a name="BKMK_reattach"></a> Rattacher à un processus
 
 Vous pouvez rattacher rapidement les processus auxquels vous étiez précédemment attaché en choisissant **Déboguer**  >  **rattacher au processus** (**MAJ** + **ALT** + **P**). Quand vous choisissez cette commande, le débogueur tente immédiatement d’attacher les derniers processus que vous avez attachés en tentant d’abord de faire correspondre l’ID de processus précédent et, en cas d’échec, en faisant correspondre le nom du processus précédent. Si aucune correspondance n’est trouvée, ou si plusieurs processus portent le même nom, la boîte **de dialogue Attacher au processus** s’ouvre et vous permet de sélectionner le processus approprié.
 
 > [!NOTE]
 > La commande **rattacher au processus** est disponible à partir de Visual Studio 2017.
 
-## <a name="common-debugging-scenarios"></a><a name="BKMK_Scenarios"></a>Scénarios de débogage courants
+## <a name="common-debugging-scenarios"></a><a name="BKMK_Scenarios"></a> Scénarios de débogage courants
 
 Pour vous aider à déterminer s’il faut utiliser l' **attachement au processus** et le processus à attacher, le tableau suivant présente quelques scénarios de débogage courants, avec des liens vers des instructions supplémentaires disponibles. (La liste n’est pas exhaustive.)
 
@@ -325,4 +321,4 @@ Si vous souhaitez des informations plus spécifiques sur la raison pour laquelle
 
 - [Déboguer plusieurs processus](../debugger/debug-multiple-processes.md)
 - [Débogage juste-à-temps](../debugger/just-in-time-debugging-in-visual-studio.md)
-- [Débogage distant](../debugger/remote-debugging.md)
+- [Débogage à distance](../debugger/remote-debugging.md)

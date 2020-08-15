@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 5b1e4362755bbbfa9ea220fcbdf92abf92723521
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.openlocfilehash: 6df882d50d0c1d052191246605af856743ffdf3d
+ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/27/2020
-ms.locfileid: "85462121"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "88249188"
 ---
 # <a name="how-to-configure-live-code-analysis-scope-for-managed-code"></a>Comment : configurer l’étendue de l’analyse du code en temps réel pour le code managé
 
@@ -25,17 +25,17 @@ ms.locfileid: "85462121"
 Visual Studio exécute une série d’analyses de code en direct, également appelées *analyse d’arrière-plan*, pendant que vous modifiez des fichiers sources dans l’éditeur. Une analyse minimale est nécessaire pour une expérience de modification de l’IDE de Visual Studio acceptable. Certaines d’entre elles sont destinées à améliorer la réactivité des fonctionnalités de l’IDE. Bien qu’il s’agit d’activer des fonctionnalités IDE supplémentaires, telles que les diagnostics et les correctifs de code des analyseurs Roslyn. Selon les fonctionnalités, ces analyses peuvent être regroupées comme suit :
 
 - **Calcul en arrière-plan des diagnostics**: analyse pour calculer les erreurs, les avertissements et les suggestions dans les fichiers sources. Ces diagnostics s’affichent sous la forme d’entrées dans la liste d’erreurs et de tildes dans l’éditeur. Elles peuvent être classées en deux catégories :
-    - Diagnostics du compilateur C# et Visual Basic
-    - Diagnostics de l’analyseur Roslyn, notamment :
+  - Diagnostics du compilateur C# et Visual Basic
+  - Diagnostics de l’analyseur Roslyn, notamment :
 
-        - Analyseurs IDE intégrés pour les suggestions de style de code et
-        - Packages de l’analyseur tiers [installés](./install-roslyn-analyzers.md) pour les projets de la solution actuelle.
+    - Analyseurs IDE intégrés pour les suggestions de style de code et
+    - Packages de l’analyseur tiers [installés](./install-roslyn-analyzers.md) pour les projets de la solution actuelle.
 
 - **Autres analyses en arrière-plan**: analyse pour améliorer la réactivité et l’interaction de Visual Studio pour les fonctionnalités IDE. Voici quelques exemples de ces analyses :
-    - Analyse en arrière-plan des fichiers ouverts.
-    - Compilation en arrière-plan de projets avec des fichiers ouverts pour réaliser des symboles afin d’améliorer la réactivité de certaines fonctionnalités de l’IDE.
-    - Génération de la syntaxe et des caches de symboles.
-    - Détection de l’Association de concepteur pour les fichiers sources, tels que les formulaires, les contrôles, etc.
+  - Analyse en arrière-plan des fichiers ouverts.
+  - Compilation en arrière-plan de projets avec des fichiers ouverts pour réaliser des symboles afin d’améliorer la réactivité de certaines fonctionnalités de l’IDE.
+  - Génération de la syntaxe et des caches de symboles.
+  - Détection de l’Association de concepteur pour les fichiers sources, tels que les formulaires, les contrôles, etc.
 
 ## <a name="default-analysis-scope"></a>Étendue de l’analyse par défaut
 

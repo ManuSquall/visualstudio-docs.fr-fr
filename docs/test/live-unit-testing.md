@@ -8,12 +8,12 @@ author: mikejo5000
 ms.author: mikejo
 ms.workload:
 - dotnet
-ms.openlocfilehash: 185d722f65dce0062dc58a06a05590aacb68138b
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.openlocfilehash: 1084b79fceda34cceed51ae8d4a5a84d7ebfb016
+ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "85906222"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "88249904"
 ---
 # <a name="how-to-configure-and-use-live-unit-testing"></a>Comment configurer et utiliser Live Unit Testing
 
@@ -142,7 +142,7 @@ Vous remarquerez peut-être dans la fenêtre de l' **Explorateur de tests** que 
 
 ![Échec du test dans l’Explorateur de tests](media/lut-test-explorer.png)
 
-Vous pouvez réexécuter tous les tests qui apparaissent estompés en sélectionnant les options **exécuter tout** ou **exécuter** dans le menu de l' **Explorateur de tests** . Ou sélectionnez un ou plusieurs tests dans le menu de l' **Explorateur de tests** , cliquez avec le bouton droit, puis sélectionnez **exécuter les tests sélectionnés** ou **déboguer les tests sélectionnés** dans le menu contextuel. À mesure que les tests sont exécutés, ils sont déplacent vers le haut de la liste.
+Vous pouvez réexécuter tous les tests qui apparaissent estompés en sélectionnant les options **exécuter tout** ou **exécuter** dans le menu de l' **Explorateur de tests** . Ou sélectionnez un ou plusieurs tests dans le menu de l'  **Explorateur de tests** , cliquez avec le bouton droit, puis sélectionnez **exécuter les tests sélectionnés** ou **déboguer les tests sélectionnés** dans le menu contextuel. À mesure que les tests sont exécutés, ils sont déplacent vers le haut de la liste.
 
 Il existe certaines différences entre l’exécution automatique des tests et la mise à jour des résultats de test de Live Unit Testing et l’exécution explicite des tests à partir de **l’Explorateur de tests**. Ces différences incluent :
 
@@ -191,16 +191,16 @@ Pour les solutions comportant de nombreux projets de test, vous pouvez contrôle
 
 Pour sélectionner les projets individuels dans les tests unitaires, procédez comme suit une fois Live Unit Testing démarré :
 
-1. Cliquez avec le bouton droit sur la solution dans **l’Explorateur de solutions** et choisissez **Live Tests** > **Exclure** pour exclure toute la solution.
-1. Cliquez avec le bouton droit sur chaque projet de test que vous souhaitez inclure dans les tests, puis choisissez **tests en direct**  >  **Include**.
+1. Cliquez avec le bouton droit sur la solution dans **Explorateur de solutions** et choisissez **Live Unit testing**  >  **exclure** pour exclure toute la solution.
+1. Cliquez avec le bouton droit sur chaque projet de test que vous souhaitez inclure dans les tests, puis choisissez **Live Unit testing**  >  **inclure**.
 
 ### <a name="exclude-individual-tests-from-the-code-editor-window"></a>Exclure des tests individuels de la fenêtre de l’éditeur de code
 
 Vous pouvez utiliser la fenêtre de l’éditeur de code pour inclure ou exclure des méthodes de test. Cliquez avec le bouton droit sur la signature de la méthode de test dans la fenêtre de l’éditeur de code, puis sélectionnez l’une des options suivantes :
 
-- **Tests**  >  en direct **Inclure \<selected method> **
-- **Tests**  >  en direct **Exclure \<selected method> **
-- **Tests**  >  en direct **Exclure tout sauf \<selected method> **
+- **Live Unit testing**  >  **Inclure \<selected method> **
+- **Live Unit testing**  >  **Exclure \<selected method> **
+- **Live Unit testing**  >  **Exclure tout sauf \<selected method> **
 
 ### <a name="exclude-tests-programmatically"></a>Exclure des tests par programmation
 

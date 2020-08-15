@@ -12,12 +12,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 0a37d58d1bd18ef19f610602ec8f2238816405e4
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: ecbabae86b762c9143dba6be5aa0e4683a92b0dd
+ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85285749"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "88250774"
 ---
 # <a name="understand-performance-collection-methods"></a>Présenter les méthodes de collecte des performances
 
@@ -86,21 +86,21 @@ Vous pouvez également collecter les compteurs de performance du processeur et d
 
 Le profilage d’accès concurrentiel collecte des informations sur les applications multithread. Le profilage de conflit de ressources collecte les informations détaillées de la pile d’appels chaque fois que les threads concurrents attendent l’accès à une ressource partagée. La visualisation concurrentielle collecte également des informations plus générales sur la façon dont votre application multithread interagit avec :
 
-  - Automatiquement.
-  - Le matériel.
-  - Système d'exploitation.
-  - Autres processus sur l’ordinateur hôte.
+- Automatiquement.
+- Le matériel.
+- Système d'exploitation.
+- Autres processus sur l’ordinateur hôte.
 
 Les rapports de conflit de ressources affichent le nombre total de conflits. Ils indiquent également la durée totale pendant laquelle les modules, les fonctions, les lignes de code source et les instructions ont attendu une ressource. Les graphiques chronologiques affichent les conflits tels qu’ils se sont produits.
 
 Le visualiseur concurrentiel affiche des informations graphiques pour vous aider à localiser :
 
-  - Goulots d’étranglement des performances.
-  - Sous-exploitation de l’UC.
-  - Conflit de threads.
-  - Migration de threads.
-  - Délais de synchronisation.
-  - Zones d’e/s avec chevauchement.
+- Goulots d’étranglement des performances.
+- Sous-exploitation de l’UC.
+- Conflit de threads.
+- Migration de threads.
+- Délais de synchronisation.
+- Zones d’e/s avec chevauchement.
 
   Dans la mesure du possible, la sortie graphique est liée aux données de la pile des appels et du code source. Les données de visualisation concurrentielle peuvent être collectées uniquement pour les applications de ligne de commande et les applications Windows.
 

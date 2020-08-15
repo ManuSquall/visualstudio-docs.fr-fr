@@ -7,12 +7,12 @@ ms.assetid: 4e529a43-7aed-4eee-895d-862a631952df
 ms.date: 03/02/2020
 ms.topic: conceptual
 description: Découvrez comment les administrateurs peuvent attribuer des licences aux abonnés
-ms.openlocfilehash: e8eba6ad97d0f5e7e1da0e75093c33658f26a56a
-ms.sourcegitcommit: 9a7fb8556a5f3dbb4459122fefc7e7a8dfda753a
+ms.openlocfilehash: aa3c219a605b552ea1c4b785ff8fb1f92edf04ac
+ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87235015"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "88249477"
 ---
 # <a name="assign-licenses-in-the-visual-studio-subscriptions-administration-portal"></a>Attribuer des licences dans le portail d’administration des abonnements Visual Studio
 En tant qu’administrateur des abonnements Visual Studio, vous pouvez utiliser le portail d’administration pour attribuer des abonnements à des utilisateurs individuels ou à des groupes d’utilisateurs.
@@ -34,7 +34,7 @@ Voici comment affecter un abonnement Visual Studio à un nouvel utilisateur afin
 1. Connectez-vous au [portail d’administration](https://manage.visualstudio.com).
 2. Pour attribuer une licence à un seul abonné Visual Studio, en haut du tableau, sélectionnez **Ajouter**, puis choisissez **abonné individuel**.
    > [!div class="mx-imgBorder"]
-   > ![Ajouter un seul abonné](_img/assign-license-add/add-subscriber-individual.png "Cliquez sur Ajouter, puis choisissez abonné individuel pour affecter un seul abonnement.")
+   > ![Ajouter un seul abonné](_img/assign-license-add/add-subscriber-individual.png "Sélectionnez Ajouter, puis choisissez abonné individuel pour affecter un seul abonnement.")
 3. Dans les champs de formulaire, entrez les informations relatives au nouvel abonné. Si votre organisation utilise Azure Active Directory, le champ **Nom** agit comme une fonction de recherche pour trouver les utilisateurs de votre annuaire actuel et sélectionner l’utilisateur approprié dans les résultats de la recherche. Une fois que vous avez sélectionné cette personne, son nom, son e-mail de connexion et son e-mail de notification sont renseignés automatiquement.
    > [!div class="mx-imgBorder"]
    > ![Détails de l’abonné](_img/assign-license-add/subscriber-details.png "Entrez le nom de l’abonné et d’autres détails, ou choisissez parmi les membres du locataire.")
@@ -53,10 +53,10 @@ Voici comment affecter un abonnement Visual Studio à un nouvel utilisateur afin
 
     Après avoir sélectionné les options et entré les données de l’abonné, choisissez **Ajouter** en bas du menu volant **Ajouter l’abonné**.
    > [!div class="mx-imgBorder"]
-   > ![Cliquez sur le bouton Ajouter](media/add-button.png "Cliquez sur Ajouter pour enregistrer les informations et attribuer l’abonnement à l’abonné.")
+   > ![Cliquez sur le bouton Ajouter](media/add-button.png "Sélectionnez Ajouter pour enregistrer les informations et attribuer l’abonnement à l’abonné.")
 
 ## <a name="resend-assignment-emails"></a>Renvoyer des e-mails d’attribution
-Une fois que vous avez ajouté un abonné, un e-mail d’attribution est envoyé automatiquement au nouvel abonné avec des instructions supplémentaires. Vous pouvez renvoyer l’e-mail d’attribution à tout moment en sélectionnant l’abonné et en cliquant sur le bouton **renvoyer** dans le menu supérieur.  Pour renvoyer des e-mails à plusieurs utilisateurs, maintenez la touche **CTRL** enfoncée tout en sélectionnant les abonnés.  Lorsque vous cliquez sur le bouton **renvoyer** , une boîte de dialogue s’affiche pour vous demander de confirmer que vous souhaitez renvoyer à ces abonnés.  
+Une fois que vous avez ajouté un abonné, un e-mail d’attribution est envoyé automatiquement au nouvel abonné avec des instructions supplémentaires. Vous pouvez renvoyer l’e-mail d’affectation à tout moment en sélectionnant l’abonné, puis en sélectionnant le bouton **renvoyer** dans le menu supérieur.  Pour renvoyer des e-mails à plusieurs utilisateurs, maintenez la touche **CTRL** enfoncée tout en sélectionnant les abonnés.  Lorsque vous sélectionnez le bouton **renvoyer** , une boîte de dialogue s’affiche pour vous demander de confirmer que vous souhaitez renvoyer à ces abonnés.  
 
 ## <a name="see-also"></a>Voir aussi
 - [Documentation de Visual Studio](https://docs.microsoft.com/visualstudio/)
@@ -67,6 +67,6 @@ Une fois que vous avez ajouté un abonné, un e-mail d’attribution est envoyé
 
 ## <a name="next-steps"></a>Étapes suivantes
 - Vous avez un grand nombre d’utilisateurs à ajouter ?  Découvrez comment attribuer des abonnements à [plusieurs abonnés](assign-license-bulk.md).
-- Vous avez besoin d’aide ?  Contactez la [prise en charge de l’administration et des abonnements Visual Studio](https://visualstudio.microsoft.com/support/support-overview-vs).
+- Besoin d'aide ?  Contactez la [prise en charge de l’administration et des abonnements Visual Studio](https://visualstudio.microsoft.com/support/support-overview-vs).
 
 

@@ -8,12 +8,12 @@ ms.author: kraigb
 manager: jillfra
 ms.workload:
 - data-science
-ms.openlocfilehash: 15b8a91c0b29b71b85ee5f82dc3b8d662c80549e
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: a30ec1a60b7bc19710e3184c7cd32e252acc9921
+ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "62581164"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "88248489"
 ---
 # <a name="welcome-to-r-tools-for-visual-studio"></a>Bienvenue dans Outils R pour Visual Studio
 
@@ -25,7 +25,7 @@ Nous vous remercions d’avoir installé Outils R pour Visual Studio (RTVS). Fa
 
 - [Documentation](index.md)
 - [Comment installer Outils R pour Visual Studio](installing-r-tools-for-visual-studio.md)
-- [Envoyer des bogues et des demandes de fonctionnalités à GitHub et les passer en revue](https://github.com/Microsoft/RTVS/issues)
+- [Envoyer et parcourir les bogues et les demandes de fonctionnalités sur GitHub](https://github.com/Microsoft/RTVS/issues)
 - [Explorer le code source et y contribuer](https://github.com/Microsoft/RTVS/blob/master/LICENSE)
 - Pour envoyer des commentaires sans passer par GitHub (méthode préférée), utilisez le menu **Outils R > Commentaires** dans Visual Studio.
 

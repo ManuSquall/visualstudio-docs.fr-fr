@@ -7,12 +7,12 @@ ms.assetid: c2853359-18fd-4be4-97a6-02230c862f92
 ms.date: 05/10/2020
 ms.topic: how-to
 description: Découvrez comment les administrateurs peuvent attribuer des licences à plusieurs abonnés à l’aide de la fonctionnalité d’ajout en bloc ou de groupes de Microsoft Azure Active Directory
-ms.openlocfilehash: 8bda423ccd5362fba6389195814a44cca286b5a7
-ms.sourcegitcommit: 9a7fb8556a5f3dbb4459122fefc7e7a8dfda753a
+ms.openlocfilehash: da7ce369e1d9aaa13b0c346005914b7f64ceb780
+ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87235132"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "88249617"
 ---
 # <a name="assign-subscriptions-to-multiple-users"></a>Attribuer des abonnements à plusieurs utilisateurs
 Le portail d’administration des abonnements vous permet d’ajouter des utilisateurs un à la fois ou dans des grands groupes.  Pour ajouter des utilisateurs individuels, consultez [Ajouter des utilisateurs uniques](assign-license.md).
@@ -28,7 +28,7 @@ Pour ajouter des groupes d’utilisateurs importants, vous pouvez utiliser la fo
 
 1. Pour ajouter plusieurs abonnés à la fois, accédez à l’onglet **gérer les abonnés** . Choisissez l’onglet **Ajouter** , puis choisissez **Ajouter en bloc** dans la liste déroulante.  
 
-1. L’ajout en bloc utilise un modèle Microsoft Excel pour télécharger les informations de l’abonné. Dans la boîte de dialogue permettant de charger plusieurs abonnés, cliquez sur **Télécharger** pour télécharger le modèle.
+1. L’ajout en bloc utilise un modèle Microsoft Excel pour télécharger les informations de l’abonné. Dans la boîte de dialogue Télécharger plusieurs abonnés, sélectionnez **Télécharger** pour télécharger le modèle.
    > [!div class="mx-imgBorder"]
    > ![Télécharger le modèle Excel pour charger plusieurs abonnés](media/download-template-upload-subscribers.png "Téléchargez le modèle Excel vide pour commencer le processus d’attribution en bloc.")
    >
@@ -48,13 +48,13 @@ Pour ajouter des groupes d’utilisateurs importants, vous pouvez utiliser la fo
     - Assurez-vous que tous les champs obligatoires sont remplis. 
     - Vérifiez la colonne **message d’erreur** .  Si des erreurs sont répertoriées, résolvez-les avant de tenter de charger le fichier. 
 
-1. Revenez au portail d’administration des abonnements Visual Studio. Dans la boîte de dialogue permettant de **charger plusieurs abonnés**, cliquez sur **Parcourir**.
+1. Revenez au portail d’administration des abonnements Visual Studio. Dans la boîte de dialogue **Télécharger plusieurs abonnés** , sélectionnez **Parcourir**.
    > [!div class="mx-imgBorder"]
    > ![Accéder à votre modèle enregistré pour charger plusieurs abonnés](media/bulk-add-browse-saved-template.png "Vous pouvez accéder à l’emplacement du fichier ou le glisser-déplacer dans cette boîte de dialogue.")
 
-1. Accédez au fichier Excel que vous avez enregistré, puis cliquez sur **OK**.
+1. Accédez au fichier Excel que vous avez enregistré, puis sélectionnez **OK**.
    > [!div class="mx-imgBorder"]
-   > ![Charger le modèle Excel pour charger plusieurs abonnés](media/bulk-upload-subscribers.png "Le modèle avec vos données s’affiche ici.  Cliquez sur OK pour commencer le chargement.")
+   > ![Charger le modèle Excel pour charger plusieurs abonnés](media/bulk-upload-subscribers.png "Le modèle avec vos données s’affiche ici.  Sélectionnez OK pour commencer le chargement.")
 
     Une boîte de dialogue de progression du chargement s’affiche.
 
@@ -66,8 +66,8 @@ Pour ajouter des groupes d’utilisateurs importants, vous pouvez utiliser la fo
    1. Ouvrez le fichier Excel que vous avez créé, corrigez les problèmes, puis enregistrez le fichier.
    0. Revenez au portail d’administration et choisissez **Ajouter**.
    0. Sélectionnez **Ajout en bloc**.
-   0. Étant donné que vous avez déjà enregistré le fichier Excel, vous n’avez pas besoin de télécharger le modèle.  Cliquez sur **Parcourir**, recherchez le fichier que vous venez d’enregistrer, puis cliquez sur **ouvrir**.
-   0. Cliquez sur **OK**.
+   0. Étant donné que vous avez déjà enregistré le fichier Excel, vous n’avez pas besoin de télécharger le modèle.  Sélectionnez **Parcourir**, localisez le fichier que vous venez d’enregistrer, puis sélectionnez **ouvrir**.
+   0. Sélectionnez **OK**.
 
 
     Quand le chargement est réussi, vous voyez s’afficher la liste des abonnés et un message de confirmation.
@@ -109,7 +109,7 @@ Grâce à cette fonctionnalité, il est facile de rester au-dessus de vos affect
    > [!div class="mx-imgBorder"]
    > ![Choisir votre groupe de Azure AD](_img/assign-license-bulk/bulk-add-aad-details.png "Choisissez le nom de votre groupe de Azure AD pour ajouter des abonnés à ce groupe.")
 
-6. Cliquez sur **Ajouter** , puis sur **confirmer**. 
+6. Sélectionnez **Ajouter** , puis **confirmer**. 
 
 7. Pour afficher le groupe ajouté, faites défiler la liste des utilisateurs vers le bas.  
 
@@ -137,4 +137,4 @@ R : selon la façon dont votre organisation a configuré Azure AD, vous pouvez 
 
 ## <a name="next-steps"></a>Étapes suivantes
 - Vous n’avez qu’un ou deux abonnés à ajouter ?  Consultez [Ajouter des utilisateurs uniques](assign-license.md)
-- Vous avez besoin d’aide ? Contactez la [prise en charge de l’administration et des abonnements Visual Studio](https://visualstudio.microsoft.com/support/support-overview-vs).
+- Besoin d'aide ? Contactez la [prise en charge de l’administration et des abonnements Visual Studio](https://visualstudio.microsoft.com/support/support-overview-vs).
