@@ -10,12 +10,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 04895e3dd72a7cb4f0373c970db0f12582506ef9
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: 3c5cb51232457a43200c8a71ace51cc4b8a63e02
+ms.sourcegitcommit: 8e5b0106061bb43247373df33d0850ae68457f5e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85285554"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88507984"
 ---
 # <a name="run-a-unit-test-as-a-64-bit-process"></a>Exécuter un test unitaire comme processus 64 bits
 
@@ -30,7 +30,7 @@ Si vous avez un ordinateur 64 bits, vous pouvez exécuter des tests unitaires e
    ::: moniker-end
 
     > [!TIP]
-    > Pour une flexibilité maximale, compilez vos projets de test avec la configuration **N’importe quelle UC**. Vous pouvez ensuite les exécuter sur des agents 32 bits et 64 bits. La compilation de projets de test avec la configuration **64 bits** ne présente aucun avantage particulier.
+    > Pour une flexibilité maximale, compilez vos projets de test avec la configuration **N’importe quelle UC**. Vous pouvez ensuite les exécuter sur des agents 32 bits et 64 bits. Il n’existe aucun avantage à compiler des projets de test avec la configuration **64 bits** , sauf si vous appelez du code qui est uniquement pris en charge sur 64 bits.
 
 2. Définissez les tests unitaires pour qu’ils s’exécutent en tant que processus 64 bits.
 

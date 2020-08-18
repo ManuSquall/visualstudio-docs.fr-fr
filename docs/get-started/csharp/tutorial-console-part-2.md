@@ -15,16 +15,16 @@ dev_langs:
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: aae83c43a106fd68b03a83124ad2ddcea4652c8d
-ms.sourcegitcommit: c620d59578db1b89f80e64ae04b4898bc4ab292d
+ms.openlocfilehash: 981f18857beb83ef2a4902f50985ca8e9f7ed901
+ms.sourcegitcommit: 8e5b0106061bb43247373df33d0850ae68457f5e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/29/2020
-ms.locfileid: "87377171"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88507954"
 ---
 # <a name="tutorial-extend-a-simple-c-console-app"></a>Didacticiel : étendre une application console C# simple
 
-Dans ce didacticiel, vous allez apprendre à utiliser Visual Studio pour étendre l’application console que vous avez créée dans la première partie. Vous découvrirez certaines des fonctionnalités de Visual Studio qui vous aideront à être plus productif en tant que développeur, par exemple en utilisant des fonctionnalités d’éditeur avancées et le débogage.
+Dans ce didacticiel, vous allez apprendre à utiliser Visual Studio pour étendre l’application console que vous avez créée dans la première partie. Vous apprendrez quelques-unes des fonctionnalités de Visual Studio dont vous aurez besoin pour le développement quotidien, telles que la gestion de plusieurs projets et le référencement de packages tiers.
 
 Si vous venez de terminer la [première partie](tutorial-console.md) de cette série, vous disposez déjà de l’application console Calculator.  Pour ignorer la partie 1, vous pouvez commencer par ouvrir le projet à partir d’un référentiel GitHub. L’application Calculatrice C# se trouve dans le [référentiel vs-Tutorial-Samples](https://github.com/MicrosoftDocs/vs-tutorial-samples). vous pouvez donc simplement suivre les étapes du [Didacticiel : ouvrir un projet à partir d’un référentiel](../tutorial-open-project-from-repo.md) pour commencer.
 

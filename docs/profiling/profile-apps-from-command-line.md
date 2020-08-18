@@ -14,12 +14,12 @@ manager: jillfra
 monikerRange: '>= vs-2019'
 ms.workload:
 - multiple
-ms.openlocfilehash: ba5915e687bd4e1f6afb200f4ca3e7a866c6151c
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: 56007fcb3b951f9b313a25092e89c234d52eb15e
+ms.sourcegitcommit: 8e5b0106061bb43247373df33d0850ae68457f5e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85285842"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88507997"
 ---
 # <a name="measure-application-performance-from-the-command-line"></a>Mesurer les performances d’une application à partir de la ligne de commande
 
@@ -41,9 +41,9 @@ Pour profiler une application à l’aide des outils CLI de diagnostics Visual S
 
 1. Démarrez le Bloc-notes, puis ouvrez le Gestionnaire des tâches pour obtenir son ID de processus (PID). Dans le Gestionnaire des tâches, recherchez le PID sous l’onglet **Détails**.
 
-1. Ouvrez une invite de commandes et passez au répertoire de l’exécutable de l’agent de collecte, qui se trouve généralement ici :
+1. Ouvrez une invite de commandes et accédez au répertoire contenant l’exécutable de l’agent de collecte, généralement ici (pour Visual Studio Enterprise).
 
-   ```<Visual Studio installation folder>\2019\Preview\Team Tools\DiagnosticsHub\Collector\```
+   ```<Visual Studio installation folder>\2019\Enterprise\Team Tools\DiagnosticsHub\Collector\```
 
 1. Démarrez *VSDiagnostics.exe* en tapant la commande suivante :
 
@@ -53,9 +53,15 @@ Pour profiler une application à l’aide des outils CLI de diagnostics Visual S
 
    Les arguments qui doivent être inclus sont les suivants :
 
-   * \<*id*>Identifie la session de collecte. L’ID doit être un nombre compris entre 1 et 255.
-   * \<*pid*>, PID du processus que vous souhaitez profiler, dans le cas présent, le PID que vous avez trouvé à l’étape 1
+   * \<*id*> Identifie la session de collecte. L’ID doit être un nombre compris entre 1 et 255.
+   * \<*pid*>, PID du processus que vous souhaitez profiler, dans le cas présent, le PID que vous avez trouvé à l’étape 1.
    * \<*configFile*>, fichier de configuration de l’agent de collecte que vous souhaitez lancer. Pour plus d’informations, consultez [Fichiers de configuration des agents](#config_file).
+
+   Par exemple, vous pouvez utiliser la commande suivante pour l’agent CPUUsageBase en remplaçant le *PID* comme décrit précédemment.
+
+   ```cmd
+   VSDiagnostics.exe start 1 /attach:<pid> /loadConfig:AgentConfigs\CPUUsageLow.json
+   ```
 
 1. Redimensionnez le Bloc-notes ou tapez quelque chose pour que des informations de profilage intéressantes soient collectées.
 
@@ -65,7 +71,9 @@ Pour profiler une application à l’aide des outils CLI de diagnostics Visual S
    VSDiagnostics.exe stop <id> /output:<path to file>
    ```
 
-1. Accédez à la sortie du fichier de la commande précédente et ouvrez-la dans Visual Studio pour examiner les informations collectées.
+1. Localisez la sortie du fichier *. diagsession* à partir de la commande précédente, puis ouvrez-la dans Visual Studio (**fichier**  >  **ouvert**) pour examiner les informations collectées.
+
+   Pour analyser les résultats, consultez la documentation de l’outil d’analyse des performances correspondant. Par exemple, il peut s’agir de l’utilisation de l' [UC](../profiling/cpu-usage.md), de l’outil d' [allocation d’objets .net](../profiling/dotnet-alloc-tool.md)ou de l’outil [de base de données](../profiling/analyze-database.md) .
 
 ## <a name="agent-configuration-files"></a><a name="config_file"></a> Fichiers de configuration des agents
 

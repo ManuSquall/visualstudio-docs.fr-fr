@@ -15,12 +15,12 @@ dev_langs:
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: 00798f5eb7261df0a039c82566018cbb0efe710a
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: 691e6c3b994649a9f0fa2d0e92a990f317a16208
+ms.sourcegitcommit: 8e5b0106061bb43247373df33d0850ae68457f5e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84183286"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88508176"
 ---
 # <a name="tutorial-create-a-simple-c-console-app-in-visual-studio"></a>Didacticiel : créer une application console C# simple dans Visual Studio
 
@@ -327,7 +327,7 @@ Plutôt que de nous appuyer sur la classe `program` pour gérer tout le code, no
 
 La classe `Calculator` gérera le gros du travail de calcul et la classe `Program` gèrera l’interface utilisateur et le travail de capture d’erreur.
 
-Nous pouvons commencer.
+C’est parti !
 
 1. Supprimez tout ce qui se trouve dans l' `Calculator` espace de noms entre ses accolades ouvrantes et fermantes :
 
@@ -600,10 +600,10 @@ namespace Calculator
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-Félicitations ! Vous avez terminé ce didacticiel. Pour plus d’informations, passez aux tutoriels suivants.
+Passez à la deuxième partie de ce didacticiel :
 
 > [!div class="nextstepaction"]
-> [Continuer avec d’autres tutoriels C#](/dotnet/csharp/tutorials/)
+> [Passez à la partie 2](tutorial-console-part-2.md)
 
 ## <a name="see-also"></a>Voir aussi
 
