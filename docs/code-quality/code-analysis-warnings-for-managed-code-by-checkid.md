@@ -288,18 +288,19 @@ f1_keywords:
 - CA5122
 - CA5374
 - IL3000
+- IL3001
 ms.assetid: 5cb221f6-dc59-4abf-9bfa-adbd6f907f96
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 040df1edf85f2879cd2666e79768e76969464522
-ms.sourcegitcommit: 2946d802aec1418e87bfa779d81834eeb7be5c9d
+ms.openlocfilehash: daaf6854b56b31419408691c27af245c4001ea42
+ms.sourcegitcommit: 328ab0d8e5770f1067e37dcc266c2b50ea07783c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "88214598"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "88612875"
 ---
 # <a name="code-analysis-warnings-for-managed-code-by-checkid"></a>Avertissements d’analyse du code pour le code managé par CheckId
 
@@ -375,7 +376,7 @@ Le tableau suivant répertorie les avertissements d'analyse du code pour le code
 | Ca1070 | [CA1070 : Ne pas déclarer de champs d’événement comme virtuels](../code-quality/ca1070.md) | Un [événement de type champ](/dotnet/csharp/language-reference/language-specification/classes#field-like-events) a été déclaré comme étant virtuel. |
 | Ca1200 | [CA1200 : Éviter d’utiliser des balises cref avec un préfixe](../code-quality/ca1200.md) | L’attribut [cref](/dotnet/csharp/programming-guide/xmldoc/cref-attribute) dans une balise de documentation XML signifie « référence du code ». Il indique que le texte interne de la balise est un élément de code tel qu’un type, une méthode ou une propriété. Évitez `cref` d’utiliser des balises avec des préfixes, car cela empêche le compilateur de vérifier les références. Cela empêche également l’environnement de développement intégré (IDE) de Visual Studio de rechercher et de mettre à jour ces références de symboles lors des refactorisations. |
 | CA1300 | [CA1300 : Spécifier MessageBoxOptions](../code-quality/ca1300.md) | Pour afficher correctement une boîte de message pour les cultures qui utilisent un sens de lecture de droite à gauche, les membres RightAlign et RtlReading de l'énumération MessageBoxOptions doivent être passés à la méthode Show. |
-| CA1301 | [CA1301 : Éviter les accélérateurs en double](../code-quality/ca1301.md) | Une touche d'accès rapide, également connue sous le nom d'accélérateur, autorise l'accès à un contrôle par le biais du clavier, à l'aide de la touche ALT. Lorsque plusieurs contrôles ont des clés d’accès en double, le comportement de la clé d’accès n’est pas bien défini. |
+| CA1301 | [CA1301 : Éviter les accélérateurs en double](../code-quality/ca1301.md) | Une touche d'accès rapide, également connue sous le nom d'accélérateur, autorise l'accès à un contrôle par le biais du clavier, à l'aide de la touche ALT. Lorsque plusieurs contrôles présentent des touches d'accès rapide en doublon, le comportement de ces dernières n'est pas correctement défini. |
 | CA1302 | [CA1302 : Ne pas coder en dur les chaînes spécifiques aux paramètres régionaux](../code-quality/ca1302.md) | L'énumération System.Environment.SpecialFolder contient des membres qui font référence à des dossiers système spéciaux. Les emplacements de ces dossiers peuvent avoir des valeurs distinctes selon le système d’exploitation ; l’utilisateur peut modifier certains des emplacements, et ces derniers sont localisés. La méthode Environment.GetFolderPath retourne les emplacements associés à l'énumération Environment.SpecialFolder, localisés et appropriés pour l'ordinateur en cours d'exécution. |
 | CA1303 | [CA1303 : Ne pas passer de littéraux en paramètres localisés](../code-quality/ca1303.md) | Une méthode visible de l’extérieur passe un littéral de chaîne en tant que paramètre à une méthode ou un constructeur .NET, et cette chaîne doit être localisable. |
 | CA1304 | [CA1304 : Spécifier CultureInfo](../code-quality/ca1304.md) | Une méthode ou un constructeur appelle un membre présentant une surcharge qui accepte un paramètre System.Globalization.CultureInfo, et la méthode ou le constructeur n'appelle pas la surcharge qui prend le paramètre CultureInfo. Lorsqu'un objet CultureInfo ou System.IFormatProvider n'est pas fourni, la valeur par défaut fournie par le membre surchargé peut ne pas avoir l'effet escompté selon les différents paramètres régionaux. |
@@ -606,4 +607,5 @@ Le tableau suivant répertorie les avertissements d'analyse du code pour le code
 | Ca5400 | [Ca5400 Vérifiez que la vérification de la liste de révocation de certificats HttpClient n’est pas désactivée](../code-quality/ca5400.md) | Un certificat révoqué n’est plus approuvé. Elle peut être utilisée par des attaquants qui transmettent des données malveillantes ou dérobent des données sensibles dans la communication HTTPs. |
 | CA5401 | [CA5401 n’utilisez pas CreateEncryptor avec un vecteur d’aide non défini par défaut](../code-quality/ca5401.md) | Le chiffrement symétrique doit toujours utiliser un vecteur d’initialisation non renouvelable pour empêcher les attaques de dictionnaire. |
 | CA5402 | [CA5402 utiliser CreateEncryptor avec le vecteur d’aide par défaut](../code-quality/ca5402.md) | Le chiffrement symétrique doit toujours utiliser un vecteur d’initialisation non renouvelable pour empêcher les attaques de dictionnaire. |
-| IL3000 | [IL3000 éviter d’utiliser le chemin d’accès au fichier d’assembly lors de la publication sous la forme d’un fichier unique](../code-quality/il3000.md) | Évitez d’utiliser le chemin d’accès au fichier d’assembly lors de la publication sous la forme d’un fichier unique |
+| IL3000 | [IL3000 éviter d’accéder au chemin d’accès du fichier d’assembly lors de la publication sous la forme d’un fichier unique](../code-quality/il3000.md) | Évitez d’utiliser le chemin d’accès au fichier d’assembly lors de la publication sous la forme d’un fichier unique |
+| IL3001 | [IL3001 éviter d’accéder au chemin d’accès du fichier d’assembly lors de la publication en tant que fichier unique](../code-quality/il3001.md) | Évitez d’accéder au chemin d’accès du fichier d’assembly lors de la publication sous la forme d’un fichier unique |
