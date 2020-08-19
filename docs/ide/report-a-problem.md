@@ -9,12 +9,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 95623d72e70e572ca7605c34e2e25e7186c284e1
-ms.sourcegitcommit: 4a77403b6bd33c5a6e66a3eefd42c81c39fb67ca
+ms.openlocfilehash: ca095bf424420fb73ba8f369f7e41daea92fe33d
+ms.sourcegitcommit: 98af63c1a53a732558f8207338dc2722abbbe49e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "87330958"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "88584500"
 ---
 # <a name="report-a-problem-states-and-faq"></a>Signaler un problème : États et FAQ
 
@@ -52,7 +52,7 @@ L’état **Examen en cours** indique que les ingénieurs font leur maximum pour
 
 ![État Besoin de plus d’informations pour le signalement de problème auprès de la Communauté des développeurs](../ide/media/ProblemStates/NeedMoreInfo.jpg)
 
-L’état **Besoin de plus d’informations** indique que nous avons besoin d’informations de diagnostic supplémentaires de votre part pour poursuivre l’investigation.  [Découvrez comment répondre aux demandes Besoin de plus d’informations.](./how-to-report-a-problem-with-visual-studio.md#when-further-information-is-needed-need-more-info)
+L’état **Besoin de plus d’informations** indique que nous avons besoin d’informations de diagnostic supplémentaires de votre part pour poursuivre l’investigation.  [Découvrez comment répondre aux demandes Besoin de plus d’informations.](./how-to-report-a-problem-with-visual-studio.md#when-further-information-is-needed)
 
 - - -
 

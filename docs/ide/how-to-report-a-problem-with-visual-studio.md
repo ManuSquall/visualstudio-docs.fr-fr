@@ -9,116 +9,85 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 15a1d497b5b4217cd7a404cb591c20bb1196b04b
-ms.sourcegitcommit: a77158415da04e9bb8b33c332f6cca8f14c08f8c
+ms.openlocfilehash: 2e5f64ebdf93384b7def728ac5d01bcbaf6b0271
+ms.sourcegitcommit: 98af63c1a53a732558f8207338dc2722abbbe49e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/15/2020
-ms.locfileid: "86387315"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "88584566"
 ---
 # <a name="how-to-report-a-problem-with-visual-studio-or-visual-studio-installer"></a>Guide pratique pour signaler un problème avec Visual Studio ou Visual Studio Installer
 
 > [!NOTE]
 > Pour Visual Studio pour Mac, consultez [Guide pratique pour signaler un problème dans Visual Studio pour Mac](/visualstudio/mac/report-a-problem).
 
-Il est possible de signaler un problème dans Visual Studio ou dans son programme d’installation à l’aide de l’outil Feedback Tool inclus. Ce dernier vous permet d’inclure facilement des informations de diagnostic dans vos commentaires et aide les équipes de Visual Studio à diagnostiquer et à résoudre les problèmes beaucoup plus efficacement. Voici les étapes à suivre pour signaler un problème.
+Vous pouvez signaler un problème à partir de Visual Studio ou de son programme d’installation. L’outil de commentaires intégré vous permet d’ajouter facilement des informations de diagnostic qui aident les équipes Visual Studio à diagnostiquer et à résoudre les problèmes. Voici les étapes à suivre pour signaler un problème.
 
 1. **Dans Visual Studio**, sélectionnez l’icône de commentaires en haut à droite et sélectionnez Signaler un problème. Vous pouvez également accéder à l’outil commentaires à partir du menu **aide**  >  **Envoyer des commentaires**  >  **signaler un problème**.
-![Signalez un problème lié à la communauté de développeurs Visual Studio ](media/vsfeedbackentry.png) . vous pouvez également signaler un problème dans **Visual Studio installer** si vous ne pouvez pas installer Visual Studio ou si vous ne parvenez pas à accéder à l’outil commentaires dans Visual Studio.  Dans le programme d’installation, sélectionnez l’icône de commentaires en haut à droite, puis Signaler un problème.
+![Signalez un problème lié à la communauté de développeurs Visual Studio ](media/feedback-button.png) . vous pouvez également signaler un problème dans **Visual Studio installer** si vous ne pouvez pas installer Visual Studio ou si vous ne parvenez pas à accéder à l’outil commentaires dans Visual Studio.  Dans le programme d’installation, sélectionnez l’icône de commentaires en haut à droite, puis Signaler un problème.
 ![Fenêtre contextuelle Signaler un problème sur la communauté des développeurs Visual Studio](media/installer.png)
 
-1. Si ce n’est pas déjà fait, sélectionnez **Se connecter** comme sur la capture d’écran suivante. Suivez les instructions à l’écran pour vous connecter.
+1. En cliquant sur **signaler un problème** , vous ouvrez votre navigateur par défaut et vous vous connectez à l’aide du même compte que celui utilisé pour vous connecter à Visual Studio.
 
-   ![Se connecter pour signaler un problème](../ide/media/sign-in-new-ux.png)
+   ![Se connecter pour signaler un problème](../ide/media/feedback-browser-top.png)
 
-   Une fois votre session ouverte, vous pouvez non seulement signaler un problème, mais aussi voter et commenter les retours d’expérience existants.
+1. Commencez par entrer le titre descriptif de votre rapport de bogue. Il doit comporter au moins 25 caractères.
 
-1. Vos **Problèmes** et votre **Activité** apparaissent sur l’écran **Éléments suivis**.
+    ![Signaler un problème](../ide/media/feedback-report.png)
 
-   ![Éléments suivis](../ide/media/items-i-follow.png)
+1. Une fois que vous commencez à taper, les doublons possibles sont affichés sous le champ titre
 
-1. Visual Studio fournit une interface pour rechercher votre problème et voir si d’autres personnes l’ont signalé. S’il a déjà été signalé par quelqu’un d’autre, rappelez-le nous en votant.
-   > [!NOTE]
-   > Pour effectuer une recherche, entrez le texte souhaité dans la zone de recherche et cliquez sur Entrée ou appuyez sur l’icône Rechercher.
+    ![Rechercher les doublons](../ide/media/feedback-search.png)
 
-   ![Rechercher et voter pour des problèmes similaires](../ide/media/search-and-vote.png)
+1. Sélectionnez les rapports de bogues qui peuvent être dupliqués pour voir si l’un d’eux correspond à votre propre problème. Si c’est le cas, votez pour lui au lieu de créer votre propre ticket.
 
-1. Si vous ne trouvez pas le problème que vous avez rencontré, choisissez **signaler un nouveau problème** en bas de l’écran.
+    ![Vote pour les doublons](../ide/media/feedback-duplicate.png)
 
-1. Créez un titre descriptif pour le problème, qui nous permet de l’adresser à l’équipe Visual Studio appropriée.
+2. Si aucun doublon n’a été trouvé, continuez en entrant une description du problème. Il est important d’être aussi clair que possible pour augmenter les chances d’être en mesure de reproduire le bogue. Veillez à inclure des étapes de reproduction claires.
 
-1. Donnez-nous des détails supplémentaires et, si possible, indiquez-nous les étapes de reproduction du problème.
+3. Si cela s’applique au rapport de bogue, prenez une capture d’écran en cochant la case *inclure la capture d’écran de Visual Studio* .
 
-   ![Signaler un nouveau problème](../ide/media/report-new-problem.png)
+    ![Prenez une capture d’écran ](../ide/media/feedback-screenshot.png) *seuls les ingénieurs Microsoft peuvent voir la capture d’écran*
 
-1. Sélectionnez **suivant** pour accéder à l’onglet **pièces jointes** . Ici, vous pouvez capturer votre écran actuel pour l’envoyer à Microsoft. Pour joindre d’autres captures d’écran ou d’autres fichiers, choisissez **Joindre des fichiers supplémentaires**.
+    Vous pouvez même rogner la capture d’écran directement dans le navigateur pour supprimer les parties sensibles ou non liées.
 
-   ![Joindre une capture d’écran à un rapport de problème Visual Studio](media/report-a-problem-screenshot.png)
+4. L’une des meilleures façons d’aider l’équipe d’ingénierie de Visual Studio à résoudre le problème, est de fournir un suivi et des fichiers de vidage du tas pour les examiner. Vous pouvez le faire facilement en enregistrant les étapes qui ont entraîné le bogue. 
 
-1. Si vous ne souhaitez pas joindre de capture d’écran ou [enregistrer une reproduction](#record-a-repro), sélectionnez **Suivant** pour accéder à l’onglet **Résumé**.
+    ![Enregistrer vos actions ](../ide/media/feedback-recording.png) *seuls les ingénieurs Microsoft peuvent voir l’enregistrement*
 
-1. Sélectionnez **Envoyer** pour envoyer votre rapport, ainsi que les images et fichiers d’image mémoire de tas ou de trace. (Si le bouton **Envoyer** est grisé, vérifiez que vous avez fourni un titre et une description pour le rapport.)
+5. Passez en revue les fichiers joints et chargez les fichiers supplémentaires si vous pensez que cela peut vous aider à diagnostiquer le problème.   
 
-   Pour plus d’informations sur les données collectées, consultez [Données que nous collectons](developer-community-privacy.md#data-we-collect).
+    ![Fichiers joints ](../ide/media/feedback-attachments.png) *seuls les ingénieurs Microsoft peuvent voir les fichiers joints*
 
-## <a name="record-a-repro"></a>Enregistrer une reproduction
+6. La dernière étape consiste à appuyer sur le bouton **Envoyer** . L’envoi du rapport l’enverra directement dans le système de rapports de bogues Visual Studio interne qui attend le triage.
 
-Les fichiers heap dump et de trace nous sont utiles pour faciliter le diagnostic des problèmes. Nous vous remercions d’employer l’outil **Signaler un problème** pour enregistrer les étapes de reproduction de votre problème et envoyer les données à Microsoft. Voici comment faire :
+## <a name="when-further-information-is-needed"></a>Quand des informations supplémentaires sont nécessaires
 
-1. Après avoir entré un titre et une description pour votre problème, sélectionnez **Suivant** afin d’accéder à l’onglet **Pièces jointes**.
+Lorsqu’il manque des informations importantes dans un problème, nous attribuons l’état **plus** d’informations. Nous nous penchons sur le problème avec les informations spécifiques dont nous avons besoin et vous recevrez une notification par courrier électronique. Si nous ne recevons pas les informations dans les sept jours, nous vous enverrons un rappel. Après cela, nous fermons le ticket au bout de 14 jours d’inactivité.
 
-1. Sélectionnez l’onglet **Enregistrer**.
+1. Suivez le lien du message électronique vers le rapport de problème ou accédez à mes commentaires pour voir tous les rapports dans l’état **needs more info** .
 
-1. Sous **Enregistrer vos actions**, sélectionnez l’instance actuelle de Visual Studio si vous pouvez y reproduire le problème. Si ce n’est pas le cas, par exemple, si Visual Studio ne répond plus, sélectionnez **\<Create a new instance>** cette option pour enregistrer les actions dans une nouvelle instance de Visual Studio.
+    ![Mes commentaires](../ide/media/feedback-my-feedback.png)
 
-1. Sélectionnez **Démarrer l’enregistrement**. Accordez l’autorisation d’exécuter l’outil.
+1. Si vous sélectionnez le lien fournir plus d’informations sur le rapport de problème, vous accédez à un nouvel écran. À partir de là, vous pouvez voir quelles sont les informations demandées.
 
-   ![Choisissez « Démarrer l’enregistrement » pour fournir un fichier d’image mémoire de tas et de trace dans un rapport de problème Visual Studio.](../ide/media/record-dialog-box.png)
-
-1. Quand l’outil **Enregistreur d’actions utilisateur** apparaît, effectuez les étapes qui reproduisent le problème.
-
-1. Quand vous avez terminé, choisissez le bouton **Arrêter l’enregistrement**.
-
-1. Attendez quelques minutes que Visual Studio collecte et compresse les informations que vous avez enregistrées.
-
-   Pour plus d’informations sur les données collectées, consultez [Données que nous collectons](developer-community-privacy.md#data-we-collect).
-
-## <a name="when-further-information-is-needed-need-more-info"></a>Quand d’autres informations sont nécessaires (Besoin de plus d’informations)
-
-À compter de Visual Studio 2017 version 15.5, il existe un nouveau flux de travail pour aider les utilisateurs à fournir des informations supplémentaires sur les rapports de problème.
-
-1. Quand un ingénieur Microsoft définit le problème de la [Communauté des développeurs Visual Studio](https://developercommunity.visualstudio.com/) à l’état **Besoin de plus d’informations**, tout utilisateur ayant voté, suivi ou commenté le problème reçoit une notification dans l’outil **Signaler un problème** dans Visual Studio.
-
-   ![Notification « Besoin de plus d’informations » dans Visual Studio](../ide/media/nmi-notification.png)
-
-1. Cliquez sur le lien **Afficher les problèmes** pour filtrer et trier la vue avec les problèmes nécessitant votre attention. Un indicateur figure également en regard de ces problèmes, afin de les différencier dans la recherche générale.
-
-1. Cliquez sur un problème pour en afficher les détails.
-
-   ![Notification « Besoin de plus d’informations »](../ide/media/nmi-details-view.png)
-
-1. Pour afficher la demande **Besoin de plus d’informations**, cliquez sur le lien **Afficher leurs demandes et y répondre** dans la vue de détails du problème. Une boîte de dialogue montre la demande.
-
-   ![Notification « Besoin de plus d’informations »](../ide/media/nmi-request.png)
+   ![Mes commentaires](../ide/media/feedback-need-more-info.png)
 
 1. Vous pouvez fournir plus d’informations en ajoutant des commentaires ou des pièces jointes, ou en enregistrant des étapes. Cette expérience est similaire au signalement d’un nouveau problème ou à l’apport d’informations supplémentaires lors du vote sur un problème.
 
 1. L’ingénieur Microsoft reçoit une notification concernant les informations supplémentaires fournies. S’il dispose de suffisamment d’informations pour étudier le problème, l’état du problème change. Sinon, l’ingénieur demande encore plus d’informations.
 
-   > [!NOTE]
-   > * Quand vous répondez, la notification disparaît. À la place apparaît une bannière qui vous remercie et permet de fournir encore plus d’informations.
-   > * Une fois que l’état du problème a changé, la notification disparaît pour tous les utilisateurs qui suivent le problème.
-   > * Plusieurs personnes peuvent répondre à la même demande **Besoin de plus d’informations**.
-   > * Il n’existe pas de flux de travail **Besoin de plus d’informations** sur le site web de la [Communauté des développeurs](https://developercommunity.visualstudio.com/) quand vous y accédez directement par le biais d’un navigateur web, mais vous pouvez également y ajouter des commentaires et des pièces jointes.
+Vous pouvez voir ces demandes sur l’écran **mes commentaires** , ainsi que tous les autres **problèmes** et **suggestions**.
 
 ## <a name="search-for-solutions-or-provide-feedback"></a>Rechercher des solutions ou fournir des commentaires
 
 Si vous ne souhaitez pas ou ne pouvez pas utiliser Visual Studio pour signaler un problème, il est possible que ce dernier ait déjà été signalé et qu’une solution ait été publiée sur la page de la [Communauté des développeurs Visual Studio](https://developercommunity.visualstudio.com/).
 
-Si vous n’avez pas de problème à signaler, mais que vous voulez suggérer une fonctionnalité, il existe pour cela un emplacement spécifique. Pour plus d’informations, consultez la page [Suggérer une fonctionnalité](https://developercommunity.visualstudio.com/content/idea/post.html?space=8).
+Si vous n’avez pas de problème à signaler, mais que vous souhaitez suggérer une fonctionnalité, il existe un emplacement pour faire cela. Pour plus d’informations, consultez la page [Suggérer une fonctionnalité](https://developercommunity.visualstudio.com/content/idea/post.html?space=8).
 
 ## <a name="see-also"></a>Voir aussi
 
+* [Recommandations de la communauté des développeurs](https://docs.microsoft.com/visualstudio/ide/developer-community-guidelines)
 * [Options de commentaires de Visual Studio](../ide/feedback-options.md)
 * [Signaler un problème avec Visual Studio pour Mac](/visualstudio/mac/report-a-problem)
 * [Signaler un problème avec C++](/cpp/how-to-report-a-problem-with-the-visual-cpp-toolset)
