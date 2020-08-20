@@ -10,14 +10,14 @@ metadata:
   ms.topic: landing-page
   ms.date: 12/05/2019
   ms.author: ghogen
-  ms.openlocfilehash: 7d993a357094f52bc633da7e6fd22540a613c338
-  ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
+  ms.openlocfilehash: 0ad3a0135b8e5ca955d9dad2301933133bbd05e7
+  ms.sourcegitcommit: 3ef987e99616c3eecf4731bf5ac89e16238e68aa
   ms.translationtype: HT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 03/21/2020
-  ms.locfileid: "76022304"
+  ms.lasthandoff: 08/20/2020
+  ms.locfileid: "88639326"
 landingContent:
-- title: Déployer sur Azure App Service
+- title: Déployer dans Azure App Service
   linkLists:
   - linkListType: tutorial
     links:
@@ -71,20 +71,20 @@ landingContent:
   linkLists:
   - linkListType: tutorial
     links:
-    - text: Stockage Azure
-      url: vs-azure-tools-connected-services-storage.md
-    - text: Azure Key Vault
-      url: /azure/key-vault/vs-key-vault-add-connected-service
     - text: Azure Active Directory
       url: /azure/active-directory/develop/vs-active-directory-add-connected-service
-    - text: Cognitive Services – Analyse de texte
-      url: /azure/cognitive-services/text-analytics/vs-text-connected-service
-    - text: Cognitive Services – Recherche d'actualités Bing
-      url: /azure/cognitive-services/bing-news-search/vs-bing-news-search-connected-service
-    - text: Cognitive Services – API Visage
-      url: /azure/cognitive-services/face/vs-face-connected-service
-    - text: Cognitive Services – Vision par ordinateur
-      url: /azure/cognitive-services/computer-vision/vs-computer-vision-connected-service
+    - text: Cache Azure pour Redis
+      url: azure-cache-for-redis-add-connected-service.md
+    - text: Azure CosmosDB
+      url: azure-cosmosdb-add-connected-service.md
+    - text: Azure Key Vault
+      url: /azure/key-vault/vs-key-vault-add-connected-service
+    - text: Azure SignalR
+      url: azure-signalr-add-connected-service.md
+    - text: Azure SQL Database
+      url: azure-sql-database-add-connected-service.md
+    - text: Stockage Azure
+      url: vs-azure-tools-connected-services-storage.md
 - title: Services cloud Azure
   linkLists:
   - linkListType: how-to-guide
@@ -117,5 +117,5 @@ landingContent:
       url: /azure/data-lake-analytics/data-lake-analytics-data-lake-tools-get-started
     - text: Stream Analytics
       url: /azure/stream-analytics/stream-analytics-quick-create-vs
-    - text: Service Fabric
+    - text: Service Fabric
       url: /azure/service-fabric/service-fabric-get-started
