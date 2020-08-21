@@ -1,5 +1,5 @@
 ---
-title: 'Erreur : le processus cible s’est terminé avec le code &#39;code&#39; lors de l’évaluation de la fonction &#39;fonction&#39; | Microsoft Docs'
+title: 'Erreur : le processus cible s’est terminé avec le code de code &apos; &apos; lors de l’évaluation de la fonction de fonction &apos; &apos; | Microsoft Docs'
 ms.date: 4/06/2018
 ms.topic: error-reference
 f1_keywords:
@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d1721196becf1f746d81fa7e3d4ff5f0371e3f57
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.openlocfilehash: 94effc8a5f75e7b38fb7275d175eb324c479a7a9
+ms.sourcegitcommit: de98ed7edc81383e47b87ae6e61143fbbbe7bc56
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/27/2020
-ms.locfileid: "85460776"
+ms.lasthandoff: 08/21/2020
+ms.locfileid: "88711636"
 ---
 # <a name="error-the-target-process-exited-with-code-39code39-while-evaluating-the-function-39function39"></a>Erreur : le processus cible s’est terminé avec le code &#39;code&#39; lors de l’évaluation de la fonction &#39;fonction&#39;
 
@@ -35,9 +35,9 @@ Le message d’erreur indique le nom de la fonction que le débogueur a essayé 
 Si vous pouvez modifier cette fonction, vous pouvez empêcher le débogueur d’appeler la méthode ou l’accesseur Get de propriété `ToString` . Essayez l’une des opérations suivantes :
 
 * Remplacez la méthode par un autre type de code, en plus d’une méthode Getter ou d’une méthode ToString de propriété. le problème disparaît.
-    -ou-
+    - ou -
 * (Pour `ToString` ) Définissez un `DebuggerDisplay` attribut sur le type et vous pouvez faire en sorte que le débogueur évalue autre chose que `ToString` .
-    -ou-
+    - ou -
 * (Pour un accesseur Get de propriété) Placez l' `[System.Diagnostics.DebuggerBrowsable(DebuggerBrowsableState.Never)]` attribut sur la propriété. Cela peut être utile si vous avez une méthode qui doit rester une propriété pour des raisons de compatibilité d’API, mais qu’elle doit être une méthode.
 
 Si vous ne pouvez pas modifier cette méthode, vous pourrez peut-être interrompre le processus cible à une autre instruction et retenter l’évaluation.

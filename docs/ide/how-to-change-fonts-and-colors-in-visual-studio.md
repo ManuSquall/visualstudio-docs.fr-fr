@@ -1,7 +1,9 @@
 ---
-title: Changer les polices et les couleurs
-ms.date: 06/01/2020
+title: Comment modifier les couleurs de police, la taille du texte et les options de contraste élevé
+description: Découvrez comment modifier la couleur de police et la taille du texte dans Visual Studio, et comment sélectionner les options de contraste pour les problèmes d’accessibilité.
+ms.date: 08/20/2020
 ms.topic: how-to
+ms.custom: contperfq1
 helpviewer_keywords:
 - Visual Studio, color themes
 - color themes, Visual Studio
@@ -11,16 +13,16 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0eb2373117b382cb19f374581ada45a5732b9c4c
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: 280873a2f855aa4c0d7e9951e141ca5492357b5a
+ms.sourcegitcommit: de98ed7edc81383e47b87ae6e61143fbbbe7bc56
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85284678"
+ms.lasthandoff: 08/21/2020
+ms.locfileid: "88711688"
 ---
-# <a name="how-to-change-fonts-and-colors-in-visual-studio"></a>Guide pratique pour changer les polices et les couleurs utilisées dans Visual Studio
+# <a name="how-to-change-fonts-colors-and-high-contrast-options-in-visual-studio"></a>Comment : modifier les polices, les couleurs et les options de contraste élevé dans Visual Studio
 
-Vous pouvez modifier les polices et les couleurs dans Visual Studio de plusieurs façons. Par exemple, vous pouvez remplacer le thème de couleur bleu par défaut par le thème sombre (également appelé « mode sombre ».) De plus, vous pouvez modifier la police et la taille du texte par défaut en leur attribuant une police et une taille différentes.
+Vous pouvez modifier les polices et les couleurs dans Visual Studio de plusieurs façons. Par exemple, vous pouvez remplacer le thème de couleur bleu par défaut par le thème sombre (également appelé « mode sombre »). De plus, vous pouvez modifier la police et la taille du texte par défaut en leur attribuant une police et une taille différentes. Vous pouvez également sélectionner un thème à contraste élevé si cela répond le mieux à vos besoins.
 
 ## <a name="change-the-color-theme"></a>Changer le thème de couleur
 

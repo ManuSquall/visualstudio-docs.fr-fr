@@ -1,5 +1,5 @@
 ---
-title: Nouveautés de MSBuild 15 | Microsoft Docs
+title: Nouveautés &apos; de MSBuild 15 | Microsoft Docs
 ms.date: 03/01/2017
 ms.topic: conceptual
 ms.assetid: 9976b6fd-d052-4017-b848-35b5bf4b2f66
@@ -9,12 +9,12 @@ manager: jillfra
 ms.workload:
 - multiple
 monikerRange: '>=vs-2017'
-ms.openlocfilehash: 2503040e074a62422d4c7c904f5ad3a2bd84d6c1
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 733c3253245e293a6e52953bc93fc35a1281a616
+ms.sourcegitcommit: de98ed7edc81383e47b87ae6e61143fbbbe7bc56
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77631027"
+ms.lasthandoff: 08/21/2020
+ms.locfileid: "88711675"
 ---
 # <a name="whats-new-in-msbuild-15"></a>Nouveautés de MSBuild 15
 
@@ -32,7 +32,7 @@ MSBuild fait désormais partie intégrante du [Kit de développement logiciel (S
 
 - `MSBuildToolsVersion` pour cette version des outils présente la valeur 15.0. La version de l’assembly est 15.1.0.0.
 
-- `MSBuildToolsPath` n’a plus d’emplacement fixe. Par défaut, il est situé dans le dossier *MSBuild-15.0-Bin* par rapport à l’emplacement d’installation Visual Studio, mais l’emplacement de l’installation Visual Studio peut être changé au moment de l’installation.
+- `MSBuildToolsPath` n’a plus d’emplacement fixe. Par défaut, il se trouve dans le dossier *MSBuild\15.0\Bin* relatif à l’emplacement d’installation de Visual Studio, mais l’emplacement d’installation de Visual Studio peut être modifié au moment de l’installation.
 
 - Les valeurs `ToolsVersion` ne sont plus définies dans le Registre.
 
@@ -40,10 +40,10 @@ MSBuild fait désormais partie intégrante du [Kit de développement logiciel (S
 
 ## <a name="updates"></a>Mises à jour
 
-- [L’élément](../msbuild/project-element-msbuild.md) du `SDK` projet a un nouvel attribut. Par ailleurs, l’attribut `Xmlns` est désormais facultatif. Pour plus d’informations sur l’attribut `SDK`, voir [Guide pratique pour utiliser les kits SDK de projet MSBuild](../msbuild/how-to-use-project-sdk.md), [Packages, métapaquets et frameworks](/dotnet/core/packages) et [Ajouts au format csproj pour .NET Core](/dotnet/core/tools/csproj).
-- [L’élément de l’élément](../msbuild/item-element-msbuild.md) extérieur des cibles a un nouvel `Update` attribut. En outre, la restriction sur l’attribut `Remove` a été supprimée.
-- *Directory.Build.props* est un fichier défini par l’utilisateur qui fournit des personnalisations aux projets sous un répertoire. Ce fichier est automatiquement importé de *Microsoft.Common.props* sauf si la propriété `ImportDirectoryBuildTargets` est configurée à **faux**. *Directory.Build.targets* est importé par *Microsoft.Common.targets*.
-- Toutes les métadonnées dont le nom n’entre pas en conflit avec la liste d’attributs actuelle peuvent être exprimées en option sous la forme d’un attribut. Pour plus d’informations, voir [élément élément](../msbuild/item-element-msbuild.md).
+- L' [élément de projet](../msbuild/project-element-msbuild.md) a un nouvel `SDK` attribut. Par ailleurs, l’attribut `Xmlns` est désormais facultatif. Pour plus d’informations sur l’attribut `SDK`, voir [Guide pratique pour utiliser les kits SDK de projet MSBuild](../msbuild/how-to-use-project-sdk.md), [Packages, métapaquets et frameworks](/dotnet/core/packages) et [Ajouts au format csproj pour .NET Core](/dotnet/core/tools/csproj).
+- L' [élément item](../msbuild/item-element-msbuild.md) en dehors des cibles a un nouvel `Update` attribut. En outre, la restriction sur l’attribut `Remove` a été supprimée.
+- *Directory. Build. props* est un fichier défini par l’utilisateur qui fournit des personnalisations aux projets situés dans un répertoire. Ce fichier est importé automatiquement à partir de *Microsoft. Common. props* , sauf si la propriété `ImportDirectoryBuildTargets` a la valeur **false**. *Directory.Build.targets* est importé par *Microsoft.Common.targets*.
+- Toutes les métadonnées dont le nom n’entre pas en conflit avec la liste d’attributs actuelle peuvent être exprimées en option sous la forme d’un attribut. Pour plus d’informations, consultez [Item, élément](../msbuild/item-element-msbuild.md).
 
 ## <a name="new-property-functions"></a>Nouvelles fonctions de propriété
 

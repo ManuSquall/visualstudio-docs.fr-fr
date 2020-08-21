@@ -18,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fea7763bf1cbce5fac36ce2cd5e54c40e1da989a
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: 5994e3f5b17f50d707c4c5a00666d60c2efd3184
+ms.sourcegitcommit: de98ed7edc81383e47b87ae6e61143fbbbe7bc56
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85289233"
+ms.lasthandoff: 08/21/2020
+ms.locfileid: "88711701"
 ---
 # <a name="msbuild-conditions"></a>Conditions MSBuild
 
@@ -31,11 +31,11 @@ MSBuild prend en charge un ensemble spécifique de conditions qui peuvent être 
 
 |Condition|Description|
 |---------------|-----------------|
-|'`stringA`' == '`stringB`'|A la valeur `true` si `stringA` équivaut à `stringB`.<br /><br /> Par exemple :<br /><br /> `Condition="'$(Configuration)'=='DEBUG'"`<br /><br /> Les guillemets simples ne sont pas requis pour les chaînes alphanumériques simples ou les valeurs booléennes, mais ils le sont pour les valeurs vides. Ce contrôle ne respecte pas la casse.|
-|'`stringA`' != '`stringB`'|A la valeur `true` si `stringA` est différent de `stringB`.<br /><br /> Par exemple :<br /><br /> `Condition="'$(Configuration)'!='DEBUG'"`<br /><br /> Les guillemets simples ne sont pas requis pour les chaînes alphanumériques simples ou les valeurs booléennes, mais ils le sont pour les valeurs vides. Ce contrôle ne respecte pas la casse.|
+|'`stringA`' == '`stringB`'|A la valeur `true` si `stringA` équivaut à `stringB`.<br /><br /> Par exemple :<br /><br /> `Condition="'$(Configuration)'=='DEBUG'"`<br /><br /> Les guillemets simples ne sont pas requis pour les chaînes alphanumériques simples ou les valeurs booléennes, mais ils le sont pour les valeurs vides. Ce contrôle ne respecte pas la casse.|
+|'`stringA`' != '`stringB`'|A la valeur `true` si `stringA` est différent de `stringB`.<br /><br /> Par exemple :<br /><br /> `Condition="'$(Configuration)'!='DEBUG'"`<br /><br /> Les guillemets simples ne sont pas requis pour les chaînes alphanumériques simples ou les valeurs booléennes, mais ils le sont pour les valeurs vides. Ce contrôle ne respecte pas la casse.|
 |\<, >, \<=, >=|Évalue les valeurs numériques des opérandes. Retourne `true` si l’évaluation relationnelle a la valeur true. Les opérandes doivent être un nombre décimal ou hexadécimal. Les nombres hexadécimaux doivent commencer par « 0x ». **Remarque :** au format XML, les caractères `<` et `>` doivent être insérés dans une séquence d’échappement. Le symbole `<` est représenté sous la forme `&lt;`. Le symbole `>` est représenté sous la forme `&gt;`.|
-|Exists(« `stringA` »)|A la valeur `true` si un fichier ou un dossier du nom `stringA` existe.<br /><br /> Par exemple :<br /><br /> `Condition="!Exists('$(Folder)')"`<br /><br /> Les guillemets simples ne sont pas requis pour les chaînes alphanumériques simples ou les valeurs booléennes, mais ils le sont pour les valeurs vides.|
-|HasTrailingSlash (« `stringA` »)|A la valeur `true` si la chaîne spécifiée contient une barre oblique inverse finale (\\) ou une barre oblique (/).<br /><br /> Par exemple :<br /><br /> `Condition="!HasTrailingSlash('$(OutputPath)')"`<br /><br /> Les guillemets simples ne sont pas requis pour les chaînes alphanumériques simples ou les valeurs booléennes, mais ils le sont pour les valeurs vides.|
+|Exists(« `stringA` »)|A la valeur `true` si un fichier ou un dossier du nom `stringA` existe.<br /><br /> Par exemple :<br /><br /> `Condition="!Exists('$(Folder)')"`<br /><br /> Les guillemets simples ne sont pas requis pour les chaînes alphanumériques simples ou les valeurs booléennes, mais ils le sont pour les valeurs vides.|
+|HasTrailingSlash (« `stringA` »)|A la valeur `true` si la chaîne spécifiée contient une barre oblique inverse finale (\\) ou une barre oblique (/).<br /><br /> Par exemple :<br /><br /> `Condition="!HasTrailingSlash('$(OutputPath)')"`<br /><br /> Les guillemets simples ne sont pas requis pour les chaînes alphanumériques simples ou les valeurs booléennes, mais ils le sont pour les valeurs vides.|
 |!|A la valeur `true` si l’opérande a la valeur `false`.|
 |`And`|A la valeur `true` si les deux opérandes ont la valeur `true`.|
 |`Or`|A la valeur `true` si l’un des opérandes au moins a la valeur `true`.|
@@ -58,8 +58,14 @@ Vous pouvez utiliser des méthodes de chaîne dans des conditions, comme indiqu�
 </Project>
 ```
 
+Dans les fichiers projet MSBuild, il n’existe pas de véritable type booléen. Les données booléennes sont représentées dans des propriétés qui peuvent être vides ou définies sur n’importe quelle valeur. Par conséquent, `'$(Prop)' == 'true'` signifie « si prop est » `true` , mais `'$(Prop)' != 'false'` signifie « si prop est `true` ou unset ou défini sur autre chose ».
+
+La logique booléenne n’est évaluée que dans le contexte des conditions, donc les paramètres de propriété tels que `<Prop2>'$(Prop1)' == 'true'</Prop>` sont représentés sous forme de chaîne (après l’expansion de la variable) et ne sont pas évalués comme valeurs booléennes.  
+
+MSBuild implémente quelques règles de traitement spéciales pour faciliter l’utilisation des propriétés de chaîne utilisées comme valeurs booléennes. Les littéraux booléens sont acceptés `Condition="true"` et `Condition="false"` fonctionnent comme prévu. MSBuild comprend également des règles spéciales pour prendre en charge l’opérateur de négation booléen. Ainsi, si `$(Prop)` a la valeur « true », se `!$(Prop)` développe à `!true` et ce compare la valeur à `false` , comme prévu.
+
 ## <a name="see-also"></a>Voir aussi
 
-- [Référence MSBuild](../msbuild/msbuild-reference.md)
+- [Informations de référence sur MSBuild](../msbuild/msbuild-reference.md)
 - [Constructions conditionnelles](../msbuild/msbuild-conditional-constructs.md)
-- [Procédure pas à pas : création d’un fichier projet MSBuild en partant de zéro](../msbuild/walkthrough-creating-an-msbuild-project-file-from-scratch.md)
+- [Procédure pas à pas : Créer un fichier projet MSBuild à partir de zéro](../msbuild/walkthrough-creating-an-msbuild-project-file-from-scratch.md)
