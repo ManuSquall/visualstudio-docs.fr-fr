@@ -1,5 +1,5 @@
 ---
-title: 'Erreur : le débogage n’est pas&#39;possible, car un débogueur du noyau est activé sur le système | Microsoft Docs'
+title: 'Erreur : le débogage &apos; n’est pas possible, car un débogueur du noyau est activé sur le système | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: error-reference
 f1_keywords:
@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 80c27ef642697a8514a0809095b980d8c38a47d8
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.openlocfilehash: 5c94d605459720722b0e1360ab3a56539667d51e
+ms.sourcegitcommit: de98ed7edc81383e47b87ae6e61143fbbbe7bc56
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/27/2020
-ms.locfileid: "85460863"
+ms.lasthandoff: 08/21/2020
+ms.locfileid: "88706631"
 ---
 # <a name="error-debugging-isn39t-possible-because-a-kernel-debugger-is-enabled-on-the-system"></a>Erreur : le débogage n’est pas&#39;possible, car un débogueur du noyau est activé sur le système
 Lorsque vous déboguez du code managé, le message d'erreur suivant peut s'afficher :
@@ -70,7 +70,7 @@ Debugging isn't possible because a kernel debugger is enabled on the system
     bcdedit /debug off
     ```
 
-2. Redémarrez l’ordinateur.
+2. Redémarrez l'ordinateur.
 
 #### <a name="to-disable-kernel-debugging-for-all-sessions-other-windows-operating-systems"></a>Pour désactiver le débogage du noyau pour toutes les sessions (systèmes d'exploitation autres que Windows)
 
@@ -88,7 +88,7 @@ Debugging isn't possible because a kernel debugger is enabled on the system
     /baudrate
     ```
 
-3. Redémarrez l’ordinateur.
+3. Redémarrez l'ordinateur.
 
 #### <a name="to-debug-with-the-kernel-debugger"></a>Pour déboguer avec le débogueur du noyau
 

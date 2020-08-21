@@ -1,5 +1,5 @@
 ---
-title: 'Erreur : l’évaluation de la fonction &#39;&#39; a dépassé le délai d’attente et devait être abandonnée de manière non sécurisée | Microsoft Docs'
+title: 'Erreur : l’évaluation de la fonction de fonction &apos; &apos; a expiré et devait être abandonnée de manière non sécurisée | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: error-reference
 f1_keywords:
@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 76a655e2994e1eaa1c5ac65e7b8782ec5b9d6f72
-ms.sourcegitcommit: a77158415da04e9bb8b33c332f6cca8f14c08f8c
+ms.openlocfilehash: 3d1b5860729b55f1c4ede253cd0f881e0ab56fcc
+ms.sourcegitcommit: de98ed7edc81383e47b87ae6e61143fbbbe7bc56
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/15/2020
-ms.locfileid: "86386717"
+ms.lasthandoff: 08/21/2020
+ms.locfileid: "88706553"
 ---
 # <a name="error-evaluating-the-function-39function39-timed-out-and-needed-to-be-aborted-in-an-unsafe-way"></a>Erreur : l’évaluation de la fonction &#39;fonction&#39; a dépassé le délai d’attente et devait être abandonnée de manière non sécurisée
 
@@ -33,9 +33,9 @@ Il existe plusieurs solutions possibles à ce problème.
 Le message d’erreur indique le nom de la fonction que le débogueur a essayé d’appeler. Si vous pouvez modifier cette fonction, vous pouvez empêcher le débogueur d’appeler la méthode Getter ou ToString de la propriété. Essayez l’une des opérations suivantes :
 
 * Remplacez la méthode par un autre type de code, en plus d’une méthode Getter ou d’une méthode ToString de propriété. le problème disparaît.
-    -ou-
+    - ou -
 * (Pour ToString) Définissez un attribut DebuggerDisplay sur le type et vous pouvez faire en sorte que le débogueur évalue autre chose que ToString.
-    -ou-
+    - ou -
 * (Pour un accesseur Get de propriété) Placez l' `[System.Diagnostics.DebuggerBrowsable(DebuggerBrowsableState.Never)]` attribut sur la propriété. Cela peut être utile si vous avez une méthode qui doit rester une propriété pour des raisons de compatibilité d’API, mais qu’elle doit être une méthode.
 
 ### <a name="solution-2-have-the-target-code-ask-the-debugger-to-abort-the-evaluation"></a>#2 de solution : demandez au débogueur d’abandonner l’évaluation du code cible

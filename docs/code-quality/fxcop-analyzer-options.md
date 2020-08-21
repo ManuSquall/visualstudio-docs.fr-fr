@@ -1,5 +1,5 @@
 ---
-title: Options de configuration de l’analyseur FxCop
+title: Options de configuration de l’analyseur de qualité du code .NET
 ms.date: 09/23/2019
 ms.topic: reference
 author: mikejo5000
@@ -7,21 +7,19 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 7d6b56bec2174ca71cc66f5424b7bdc309330d95
-ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
+ms.openlocfilehash: 0370688b53e87cf6ea1f5079d2e5c706777dd0c7
+ms.sourcegitcommit: de98ed7edc81383e47b87ae6e61143fbbbe7bc56
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/15/2020
-ms.locfileid: "88248792"
+ms.lasthandoff: 08/21/2020
+ms.locfileid: "88706566"
 ---
-# <a name="rule-scope-options-for-fxcop-analyzers"></a>Options d’étendue de règle pour les analyseurs FxCop
+# <a name="rule-scope-options-for-net-code-quality-analyzers"></a>Options d’étendue de règle pour les analyseurs de qualité du code .NET
 
-Certaines règles de l’analyseur FxCop vous permettent d’affiner les parties de votre code base à appliquer. Cette page répertorie les options de configuration d’étendue disponibles, leurs valeurs autorisées et les règles auxquelles elles peuvent être appliquées. Pour utiliser ces options, spécifiez-les dans un [fichier EditorConfig](../ide/create-portable-custom-editor-options.md#add-an-editorconfig-file-to-a-project).
-
-Ces options de configuration sont disponibles à partir de la version 2.6.3 du package NuGet [Microsoft. CodeAnalysis. FxCopAnalyzers](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers) .
+Certaines règles de l’analyseur de qualité du code .NET vous permettent d’affiner les parties de votre base de code auxquelles elles doivent s’appliquer. Cette page répertorie les options de configuration d’étendue disponibles, leurs valeurs autorisées et les règles auxquelles elles peuvent être appliquées. Pour utiliser ces options, spécifiez-les dans un [fichier EditorConfig](../ide/create-portable-custom-editor-options.md#add-an-editorconfig-file-to-a-project).
 
 > [!TIP]
-> Pour afficher la liste complète des options disponibles pour une version donnée du package FxCopAnalyzers, examinez le fichier Configuration.md de l' *analyseur* dans le dossier *documentation* du package. Le fichier se trouve dans *% UserProfile% \\ . nuget\packages\microsoft.codeanalysis.fxcopanalyzers \\ \<version\> \documentation\Analyzer configuration.MD*. Ce fichier de documentation de configuration est inclus dans chaque version du package, à partir de la version 2.6.5. Voici un exemple de la façon dont une option est documentée dans le fichier Configuration.md de l' *analyseur* :
+> Pour afficher la liste complète des options disponibles, consultez ce [fichier Configuration.MD de l’analyseur](https://github.com/dotnet/roslyn-analyzers/blob/master/docs/Analyzer%20Configuration.md). Voici un exemple de la façon dont une option est documentée dans le fichier Configuration.md de l' *analyseur* :
 >
 > Nom de l’option : `sufficient_IterationCount_for_weak_KDF_algorithm`\
 > Valeurs d’option : valeurs intégrales \
@@ -64,7 +62,7 @@ Ces options de configuration sont disponibles à partir de la version 2.6.3 du p
 | - | - | - | - |
 | Spécifie les modificateurs requis pour les API qui doivent être analysées | Une ou plusieurs valeurs de la table de modificateurs autorisées ci-dessous<br/><br/>Séparez plusieurs valeurs par une virgule (,) | Dépend de chaque règle | [CA1802](ca1802.md) |
 
-| Modificateur autorisé | Récapitulatif |
+| Modificateur autorisé | Résumé |
 | --- | --- |
 | `none` | Aucune exigence de modificateur |
 | `static` ou `Shared` | Doit être déclaré comme « static » (« Shared » dans Visual Basic) |

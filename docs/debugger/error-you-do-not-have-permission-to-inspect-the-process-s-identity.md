@@ -1,5 +1,5 @@
 ---
-title: 'Erreur : vous n’êtes pas autorisé à inspecter l’identité du processus&#39;s | Microsoft Docs'
+title: "Erreur : vous n’êtes pas autorisé à inspecter l' &apos; identité du processus | Microsoft Docs"
 ms.date: 11/04/2016
 ms.topic: error-reference
 dev_langs:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f8bd1bc11d42d8aed0b816a667fe5adcc139a42c
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.openlocfilehash: e91745b8910a9e87ccd4a22fe09c6764a2ab4c6a
+ms.sourcegitcommit: de98ed7edc81383e47b87ae6e61143fbbbe7bc56
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/27/2020
-ms.locfileid: "85459920"
+ms.lasthandoff: 08/21/2020
+ms.locfileid: "88706527"
 ---
 # <a name="error-you-do-not-have-permission-to-inspect-the-process39s-identity"></a>Erreur : vous n’êtes pas autorisé à inspecter l’identité du processus&#39;s
 Vous n'êtes pas autorisé à inspecter l'identité du processus. Cela peut être dû à la configuration de votre système.
@@ -44,7 +44,7 @@ Vous n'êtes pas autorisé à inspecter l'identité du processus. Cela peut êtr
 
 8. Cliquez sur **OK**.
 
-9. Redémarrez l’ordinateur.
+9. Redémarrez l'ordinateur.
 
      Cette procédure n'active pas automatiquement le Bureau à distance. Pour activer le Bureau à distance sur votre ordinateur, effectuez la procédure supplémentaire suivante.
 

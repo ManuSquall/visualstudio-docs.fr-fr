@@ -11,26 +11,26 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 51c125942f82b43cf786591bc0e364764dc1965e
-ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
+ms.openlocfilehash: f85c17321defe08dc96ccc04bc9dea717e3b4183
+ms.sourcegitcommit: de98ed7edc81383e47b87ae6e61143fbbbe7bc56
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/15/2020
-ms.locfileid: "88250537"
+ms.lasthandoff: 08/21/2020
+ms.locfileid: "88706514"
 ---
 # <a name="how-to-generate-code-metrics-data"></a>Comment : générer des données de métriques du code
 
 Vous pouvez générer des données de métriques du code de trois façons :
 
-- En installant les [analyseurs FxCop](#fxcop-analyzers-code-metrics-rules) et en activant les quatre règles de mesure du code (maintenabilité) qu’il contient.
+- En activant les [analyseurs de qualité du code .net](#net-code-quality-analyzers-code-metrics-rules) et en activant les quatre règles de mesure du code (maintenabilité) qu’il contient.
 
 - En choisissant la commande de menu [ **analyser**les  >  **métriques du code** ](#calculate-code-metrics-menu-command) dans Visual Studio.
 
 - À partir de la [ligne de commande](#command-line-code-metrics) pour les projets C# et Visual Basic.
 
-## <a name="fxcop-analyzers-code-metrics-rules"></a>Règles de métriques du code des analyseurs FxCop
+## <a name="net-code-quality-analyzers-code-metrics-rules"></a>Règles de mesure du code des analyseurs de qualité du code .NET
 
-Le [package NuGet FxCopAnalyzers](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers) comprend plusieurs règles d' [analyseur](roslyn-analyzers-overview.md) de métrique du code :
+Les analyseurs de qualité du code .NET incluent plusieurs règles de l' [analyseur](roslyn-analyzers-overview.md) de métrique du code :
 
 - [CA1501](ca1501-avoid-excessive-inheritance.md)
 - [CA1502](ca1502.md)
@@ -50,7 +50,7 @@ Ces règles sont désactivées par défaut, mais vous pouvez les activer à part
 
 ### <a name="configuration"></a>Configuration
 
-Vous pouvez configurer les seuils auxquels les règles de métriques du code dans le package des analyseurs FxCop sont activées.
+Vous pouvez configurer les seuils auxquels les règles de métriques du code se déclenchent.
 
 1. Créer un fichier texte. Par exemple, vous pouvez le nommer *CodeMetricsConfig.txt*.
 
