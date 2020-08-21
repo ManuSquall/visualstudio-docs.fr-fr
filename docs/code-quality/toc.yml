@@ -442,7 +442,7 @@
                   href: ca1509.md
             - name: Avertissements liés à la mobilité
               items:
-                - name: Vue d'ensemble
+                - name: Vue d’ensemble
                   displayName: mobility warnings
                   href: mobility-warnings.md
                 - name: 'CA1600 : Ne pas utiliser de priorité de processus inactif'
@@ -989,5 +989,7 @@
               items:
                 - name: Vue d’ensemble
                   displayName: publish warnings
-                - name: "IL3000\_: Éviter d’utiliser l’accès du chemin du fichier Assembly lors de la publication en tant qu’application monofichier"
+                - name: "IL3000\_: Éviter d’accéder au chemin du fichier Assembly lors de la publication en tant qu’application monofichier"
                   href: il3000.md
+                - name: "IL3001\_: Éviter d’accéder au chemin du fichier Assembly lors de la publication en tant qu’application monofichier"
+                  href: il3001.md
