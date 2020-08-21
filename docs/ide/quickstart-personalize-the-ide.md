@@ -1,5 +1,5 @@
 ---
-title: Comment utiliser le thème foncé et modifier la couleur du texte dans Visual Studio
+title: Comment utiliser le thème foncé et modifier la couleur du texte dans l’éditeur
 description: Découvrez comment définir le thème de couleur Visual Studio par défaut en mode Dark et modifier les couleurs de police dans l’éditeur de texte.
 ms.date: 08/20/2020
 ms.topic: how-to
@@ -9,12 +9,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ec0015f6abd434884d039407209d741febd41121
-ms.sourcegitcommit: de98ed7edc81383e47b87ae6e61143fbbbe7bc56
+ms.openlocfilehash: 3b0e7b11fae63b9a2233b7391805760d3fdd7d27
+ms.sourcegitcommit: cf5b5437f0b43c6d52c479e1a2c443338bd27cda
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 08/21/2020
-ms.locfileid: "88711714"
+ms.locfileid: "88724924"
 ---
 # <a name="how-to-personalize-the-visual-studio-ide-and-text-editor"></a>Comment : personnaliser l’éditeur de texte et l’IDE Visual Studio
 
@@ -68,7 +68,7 @@ Le thème de couleur par défaut de l’interface utilisateur de Visual Studio s
 
 ::: moniker-end
 
-## <a name="change-text-color"></a>Modifier la couleur du texte
+## <a name="change-text-colors-in-the-editor"></a>Modifier les couleurs de texte dans l’éditeur
 
 Nous allons maintenant personnaliser des couleurs de texte dans l’éditeur. Tout d’abord, créons un fichier XML pour voir les couleurs par défaut.
 
