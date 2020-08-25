@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 3a23afff970405bf7ae1bbd1c8aad326eb133780
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.openlocfilehash: 10430c6eba57c97dd46a706d0ec2f532cd08d4f3
+ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "85520378"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88801163"
 ---
 # <a name="how-visual-studio-uses-python-search-paths"></a>Comment Visual Studio utilise les chemins de recherche Python
 
@@ -29,7 +29,7 @@ Visual Studio ignore la variable d’environnement de chemin de recherche, même
 
 Visual Studio fournit ainsi un moyen permettant de spécifier les chemins de recherche directement dans les environnements et les projets. Le code que vous exécutez ou déboguez dans Visual Studio reçoit les chemins de recherche dans la valeur de `PYTHONPATH` (et autres variables équivalentes). En ajoutant des chemins de recherche, Visual Studio inspecte les bibliothèques de ces emplacements et génère des bases de données IntelliSense pour celles-ci lorsque nécessaire (Visual Studio 2017 version 15.5 et versions antérieures ; la construction de la base de données peut prendre un certain temps en fonction du nombre de bibliothèques).
 
-Pour ajouter un chemin de recherche, accédez à l’**Explorateur de solutions**, développez le nœud de votre projet, cliquez avec le bouton droit sur **Chemins de recherche**, puis sélectionnez **Ajouter le dossier au chemin de recherche** :
+Pour ajouter un chemin de recherche, accédez à **Explorateur de solutions**, développez le nœud de votre projet, cliquez avec le bouton droit sur **chemins de recherche**, puis sélectionnez Ajouter un **dossier au chemin de recherche**:
 
 ::: moniker range="vs-2017"
 ![Commande Ajouter le dossier au chemin de recherche dans l’Explorateur de solutions](media/search-paths-command.png)

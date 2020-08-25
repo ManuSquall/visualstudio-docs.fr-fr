@@ -12,12 +12,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 03c92476e8083106a0d301655be3a1779709c1c1
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: 3a94467dbfa0c11fdb7bb6ba7aa4d304fef3979f
+ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85282733"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88800630"
 ---
 # <a name="connect-to-data-in-an-access-database"></a>Se connecter à des données dans une base de données Access
 
@@ -29,7 +29,7 @@ Pour utiliser ces procédures, vous avez besoin d’un projet Windows Forms ou W
 
 ## <a name="create-a-dataset-for-an-accdb-file"></a>Créer un jeu de données pour un fichier. accdb
 
-Connectez-vous aux bases de données créées avec Office 365, Access 2013, Access 2010 ou Access 2007 à l’aide de la procédure suivante.
+Connectez-vous aux bases de données créées avec Microsoft 365, Access 2013, Access 2010 ou Access 2007 à l’aide de la procédure suivante.
 
 1. Ouvrez un Windows Forms ou un projet d’application WPF dans Visual Studio.
 

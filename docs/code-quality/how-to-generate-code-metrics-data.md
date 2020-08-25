@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f85c17321defe08dc96ccc04bc9dea717e3b4183
-ms.sourcegitcommit: de98ed7edc81383e47b87ae6e61143fbbbe7bc56
+ms.openlocfilehash: ab0bbed64f9f85b8b508c3fe14fda4ec59d45f10
+ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "88706514"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88800955"
 ---
 # <a name="how-to-generate-code-metrics-data"></a>Comment : générer des données de métriques du code
 
@@ -72,25 +72,25 @@ Vous pouvez configurer les seuils auxquels les règles de métriques du code se 
 
 ## <a name="calculate-code-metrics-menu-command"></a>Commande de menu calculer la métrique du code
 
-Générez des métriques de code pour un ou tous vos projets ouverts dans l’IDE à l’aide du menu **analyser**les  >  **métriques du code** .
+Générez des métriques de code pour un ou tous vos projets ouverts dans l’IDE en accédant au menu **analyser**les  >  **métriques du code** .
 
 ### <a name="generate-code-metrics-results-for-an-entire-solution"></a>Générer les résultats de la métrique du code pour une solution entière
 
 Vous pouvez générer des résultats de métriques du code pour une solution complète de l’une des manières suivantes :
 
-- Dans la barre de menus, choisissez **analyser**  >  **calculer la métrique**  >  **du code pour la solution**.
+- Dans la barre de menus, sélectionnez **analyser**  >  **calculer la métrique du code**  >  **pour la solution**.
 
-- Dans **Explorateur de solutions**, cliquez avec le bouton droit sur la solution, puis choisissez **calculer la métrique du code**.
+- Dans **Explorateur de solutions**, sélectionnez la solution et maintenez-la enfoncée (ou cliquez dessus avec le bouton droit), puis sélectionnez **calculer la métrique du code**.
 
-- Dans la fenêtre résultats de la **métrique du code** , choisissez le bouton calculer la métrique du **code pour la solution** .
+- Dans la fenêtre résultats de la **métrique du code** , sélectionnez le bouton calculer la métrique du **code pour la solution** .
 
 Les résultats sont générés et la fenêtre résultats de la **métrique du code** s’affiche. Pour afficher les détails des résultats, développez l’arborescence dans la colonne **hiérarchie** .
 
 ### <a name="generate-code-metrics-results-for-one-or-more-projects"></a>Générer les résultats de la métrique du code pour un ou plusieurs projets
 
-1. Dans **Explorateur de solutions**, sélectionnez un ou plusieurs projets.
+1. Dans **Explorateur de solutions**, choisissez un ou plusieurs projets.
 
-1. Dans la barre de menus, choisissez **analyser**  >  **calculer la métrique du code**  >  **pour le ou les projets sélectionnés**.
+1. Dans la barre de menus, sélectionnez **analyser**  >  **calculer la métrique du code**  >  **pour le ou les projets sélectionnés**.
 
 Les résultats sont générés et la fenêtre résultats de la **métrique du code** s’affiche. Pour afficher les détails des résultats, développez l’arborescence dans la **hiérarchie**.
 

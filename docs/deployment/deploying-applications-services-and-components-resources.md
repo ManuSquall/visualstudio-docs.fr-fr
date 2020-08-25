@@ -1,7 +1,8 @@
 ---
-title: Vue d’ensemble du déploiement | Microsoft Docs
-ms.custom: seodec18
-ms.date: 06/22/2018
+title: Déployer votre application Visual Studio dans un dossier, IIS, Azure ou une autre destination
+description: En savoir plus sur les options de publication pour votre application à l’aide de l’Assistant Publication
+ms.custom: contperfq1
+ms.date: 08/21/2020
 ms.topic: overview
 dev_langs:
 - FSharp
@@ -13,14 +14,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ff5091a7ca7136cd8b62f75ee7f317b1e5b1f3be
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: 7125be46a894072f034bf1fce3060d2bda564aff
+ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84173723"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88800829"
 ---
-# <a name="overview-of-deployment-in-visual-studio"></a>Vue d’ensemble du déploiement dans Visual Studio
+# <a name="deploy-your-app-to-a-folder-iis-azure-or-another-destination"></a>Déployer votre application dans un dossier, IIS, Azure ou une autre destination
 
 En déployant une application, un service ou un composant, vous le distribuez pour l'installation sur d'autres ordinateurs, périphériques, serveurs ou dans le cloud. Vous choisissez la méthode appropriée dans Visual Studio pour le type de déploiement dont vous avez besoin.
 
@@ -34,20 +35,28 @@ Pour de nombreux types d’application courants, vous pouvez déployer votre app
 
 - [Microsoft Azure](#azure)
 - [Container Registry d’ancrage](#docker-container-registry)
-- [Dossier](#folder)
-- [Cibles personnalisées (IIS, FTP)](#Custom targets (IIS, FTP))
-
-Sous l’onglet **Publier**, vous pouvez sélectionner un profil de publication existant, en importer un ou en créer un à l’aide des options décrites ici. Vous trouverez une présentation des options de publication dans l’environnement de développement intégré (IDE) pour différents types d’applications sur la page [Premier aperçu du déploiement](../deployment/deploying-applications-services-and-components.md).
+- [Folder](#folder)
+- [Serveur FTP/FTPS](#ftpftps-server)
+- [Serveur Web (IIS)](#web-server-iis)
+- [Importer le profil](#import-profile)
 
 ## <a name="azure"></a>Azure 
 
+Lorsque vous choisissez Azure, vous pouvez choisir entre les éléments suivants :
+
+- Azure App Service s’exécutant sur Windows, Linux ou en tant qu’image de l’arrimeur
+- Une image d’ancrage déployée sur Azure Container Registry
+- Une machine virtuelle Azure
+
+![Choisir un service Azure](../deployment/media/quickstart-choose-azure-service.png)
+
 ### <a name="azure-app-service"></a>Azure App Service
 
-[Azure App service](/azure/app-service/app-service-web-overview) qui aident les développeurs à créer rapidement des applications et des services Web évolutifs sans gérer l’infrastructure. Un plan App Service s’exécute sur des machines virtuelles hébergées dans le cloud Azure, mais ces machines virtuelles sont gérées pour vous. Chaque application d’un plan App Service reçoit une URL \*.azurewebsites.net unique. Tous les niveaux tarifaires payants permettent d’attribuer des noms de domaine personnalisés au site.
+[Azure App service](/azure/app-service/app-service-web-overview) aide les développeurs à créer rapidement des applications et des services Web évolutifs sans gérer l’infrastructure. Un plan App Service s’exécute sur des machines virtuelles hébergées dans le cloud Azure, mais ces machines virtuelles sont gérées pour vous. Chaque application d’un plan App Service reçoit une URL \*.azurewebsites.net unique. Tous les niveaux tarifaires payants permettent d’attribuer des noms de domaine personnalisés au site.
 
 Vous déterminez la puissance de calcul d’un service d’applications en choisissant un [plan ou niveau tarifaire](/azure/app-service/azure-web-sites-web-hosting-plans-in-depth-overview) pour le plan App Service qui le contient. Vous pouvez avoir plusieurs applications web (et d’autres types d’application) qui partagent le même plan App Service sans modifier le niveau tarifaire. Par exemple, vous pouvez héberger des applications web de développement, de préproduction et de production dans le même plan App Service.
 
-### <a name="when-to-choose-azure-app-service"></a>Quand choisir Azure App Service
+#### <a name="when-to-choose-azure-app-service"></a>Quand choisir Azure App Service
 
 - Vous voulez déployer une application web accessible par Internet.
 - Vous voulez automatiquement mettre à l’échelle votre application web en fonction de la demande sans avoir à la redéployer.
@@ -56,7 +65,18 @@ Vous déterminez la puissance de calcul d’un service d’applications en chois
 
 > Si vous voulez utiliser Azure App Service dans votre centre de données ou sur d’autres ordinateurs locaux, vous pouvez le faire à l’aide d’[Azure Stack](https://azure.microsoft.com/overview/azure-stack/).
 
-Pour plus d’informations sur la publication sur App Service, consultez [Démarrage rapide - Publier sur Azure App Service](quickstart-deploy-to-azure.md) et [Démarrage rapide - Publier ASP.NET Core sur Linux](quickstart-deploy-to-linux.md).
+Pour plus d’informations sur la publication sur App Service, consultez :
+- [Démarrage rapide : publier sur Azure App service](quickstart-deploy-to-azure.md) et [démarrage rapide-publier des ASP.net Core sur Linux](quickstart-deploy-to-linux.md).
+- [Résolvez les problèmes de ASP.net Core sur Azure App service et IIS](/aspnet/core/test/troubleshoot-azure-iis).
+
+### <a name="azure-container-registry"></a>Azure Container Registry
+
+[Azure Container Registry](/azure/container-registry/) vous permet de créer, de stocker et de gérer des images de conteneur et des artefacts d’ancrage dans un registre privé pour tous les types de déploiement de conteneur.
+
+#### <a name="when-to-choose-azure-container-registry"></a>Quand choisir Azure Container Registry
+
+- Lorsque vous disposez d’un pipeline de développement et de déploiement de conteneur d’ancrage.
+- Lorsque vous souhaitez créer des images de conteneur d’ancrage dans Azure.
 
 ### <a name="azure-virtual-machines"></a>Machines virtuelles Azure
 
@@ -66,7 +86,7 @@ La mise à l’échelle d’une application hébergée sur des machines virtuell
 
 Pour plus d’informations, reportez-vous à la [comparaison détaillée](https://azure.microsoft.com/documentation/articles/choose-web-site-cloud-service-vm/) d’Azure App Service, Machines virtuelles Azure et d’autres services Azure que vous pouvez utiliser comme cible de déploiement à l’aide de l’option Personnalisé dans Visual Studio.
 
-### <a name="when-to-choose-azure-app-virtual-machines"></a>Quand choisir le service Machines virtuelles Azure
+#### <a name="when-to-choose-azure-virtual-machines"></a>Quand choisir des machines virtuelles Azure
 
 - Vous voulez déployer une application web accessible par Internet, avec un contrôle total sur la durée de vie des adresses IP attribuées.
 - Vous avez besoin de personnaliser vos ordinateurs serveur, notamment installer des logiciels supplémentaires, par exemple, un système de base de données spécialisé, des configurations réseau spécifiques, des partitions de disque et ainsi de suite.
@@ -99,26 +119,61 @@ Notez que, si pour une raison quelconque (par exemple, l’accès à l’ordinat
 
 Pour plus d’informations, consultez [Démarrage rapide - Déployer dans un dossier local](quickstart-deploy-to-local-folder.md)
 
-## <a name="custom-targets-iis-ftp"></a>Cibles personnalisées (IIS, FTP)
+## <a name="ftpftps-server"></a>Serveur FTP/FTPS
 
-Une cible personnalisée vous permet de déployer votre application sur une autre cible qu’Azure App Service, les Machines virtuelles Azure ou le système de fichiers local. Elle peut effectuer le déploiement sur un système de fichiers ou tout autre serveur (Internet ou intranet) auquel vous avez accès, y compris sur d’autres services cloud. Elle peut fonctionner avec Web Deploy (fichiers ou. ZIP) et FTP.
+Un serveur FTP/FTPS vous permet de déployer votre application sur un serveur autre que Azure. Elle peut effectuer le déploiement sur un système de fichiers ou tout autre serveur (Internet ou intranet) auquel vous avez accès, y compris sur d’autres services cloud. Elle peut fonctionner avec Web Deploy (fichiers ou. ZIP) et FTP.
 
-Quand vous choisissez une cible personnalisée, Visual Studio vous demande un nom de profil, puis collecte des informations de **connexion** supplémentaires, y compris le serveur ou l’emplacement cible, un nom de site et des informations d’identification. Vous pouvez contrôler les comportements suivants sur l’onglet **Paramètres** :
+Lors du choix d’un serveur FTP/FTPS, Visual Studio vous invite à entrer un nom de profil, puis collecte des informations de **connexion** supplémentaires, y compris le serveur ou l’emplacement cible, un nom de site et des informations d’identification. Vous pouvez contrôler les comportements suivants sur l’onglet **Paramètres** :
 
 - La configuration que vous souhaitez déployer.
 - Si vous souhaitez supprimer des fichiers existants à partir de la destination.
 - Si vous souhaitez précompiler durant la publication.
 - Si vous souhaitez exclure des fichiers dans le dossier App_Data issu du déploiement.
 
-Vous pouvez créer autant de profils de déploiement personnalisés dans Visual Studio que nécessaire, ce qui permet de gérer les profils avec des paramètres différents.
+Vous pouvez créer un nombre quelconque de profils de déploiement FTP/FTPS dans Visual Studio, ce qui permet de gérer les profils avec des paramètres différents.
 
-### <a name="when-to-choose-custom-deployment"></a>Quand choisir le déploiement personnalisé
+### <a name="when-to-choose-ftpftps-server-deployment"></a>Quand choisir le déploiement du serveur FTP/FTPS
 
 - Vous utilisez des services cloud sur un autre fournisseur qu’Azure accessible via des URL.
 - Vous voulez effectuer le déploiement à l’aide d’autres informations d’identification que celles que vous utilisez dans Visual Studio ou que celles directement liées à vos comptes Azure.
 - Vous voulez supprimer les fichiers de la cible à chaque déploiement.
 
-Pour plus d’informations, consultez [Démarrage rapide - Déployer sur un site web](quickstart-deploy-to-a-web-site.md)
+## <a name="web-server-iis"></a>Serveur Web (IIS)
+
+Un serveur Web IIS vous permet de déployer votre application sur un serveur Web autre qu’Azure. Il peut être déployé sur un serveur IIS (Internet ou intranet) auquel vous avez accès, y compris sur d’autres services Cloud. Il peut fonctionner avec Web Deploy ou un package Web Deploy.
+
+Lors du choix d’un serveur Web IIS, Visual Studio vous invite à entrer un nom de profil, puis collecte des informations de **connexion** supplémentaires, y compris le serveur ou l’emplacement cible, un nom de site et des informations d’identification. Vous pouvez contrôler les comportements suivants sur l’onglet **Paramètres** :
+
+- La configuration que vous souhaitez déployer.
+- Si vous souhaitez supprimer des fichiers existants à partir de la destination.
+- Si vous souhaitez précompiler durant la publication.
+- Si vous souhaitez exclure des fichiers dans le dossier App_Data issu du déploiement.
+
+Vous pouvez créer un nombre quelconque de profils de déploiement de serveur Web IIS dans Visual Studio, ce qui permet de gérer les profils avec des paramètres différents.
+
+### <a name="when-to-choose-web-server-iis-deployment"></a>Quand choisir le déploiement de serveur Web (IIS)
+
+- Vous utilisez IIS pour publier un site ou un service accessible par le biais d’URL.
+- Vous voulez effectuer le déploiement à l’aide d’autres informations d’identification que celles que vous utilisez dans Visual Studio ou que celles directement liées à vos comptes Azure.
+- Vous voulez supprimer les fichiers de la cible à chaque déploiement.
+
+Pour plus d’informations, consultez [démarrage rapide-déployer sur un site Web](quickstart-deploy-to-a-web-site.md). Pour obtenir de l’aide sur la résolution des ASP.NET Core sur IIS, consultez [résoudre les problèmes ASP.net Core sur Azure App service et IIS](/aspnet/core/test/troubleshoot-azure-iis).
+
+## <a name="import-profile"></a>Profil d’importation
+
+Vous pouvez importer un profil lors de la publication sur IIS ou Azure App Service. Vous pouvez configurer le déploiement à l’aide d’un *fichier de paramètres de publication* (* \* . publishsettings*). Un fichier de paramètres de publication est créé par IIS ou Azure App Service, il peut aussi être créé manuellement, pour ensuite être importé dans Visual Studio.
+
+L’utilisation d’un fichier de paramètres de publication peut simplifier la configuration du déploiement et mieux fonctionner dans un environnement d’équipe, plutôt que de configurer manuellement chaque profil de déploiement.
+
+### <a name="when-to-choose-import-profile"></a>Quand choisir le profil d’importation
+
+- Vous publiez sur IIS et souhaitez simplifier la configuration du déploiement.
+- Vous publiez sur IIS ou Azure App Service et souhaitez accélérer la configuration du déploiement en vue de sa réutilisation ou de la publication des membres de l’équipe sur le même service.
+
+Pour plus d’informations, consultez les rubriques suivantes :
+
+- [Importer des paramètres de publication et déployer sur IIS](tutorial-import-publish-settings-iis.md)
+- [Importer des paramètres de publication et déployer sur Azure](tutorial-import-publish-settings-azure.md)
 
 ## <a name="next-steps"></a>Étapes suivantes
 

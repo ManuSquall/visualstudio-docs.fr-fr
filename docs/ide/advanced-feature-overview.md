@@ -7,12 +7,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f65ce2b986114dc553b87db846262c931d74b4c0
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 0785686c9292e346c698c6f2b233cfe20edf796a
+ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "78235197"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88800760"
 ---
 # <a name="features-of-visual-studio"></a>Fonctionnalités de Visual Studio
 
@@ -76,7 +76,7 @@ Pour plus d’informations, consultez [Outils web modernes](https://visualstudio
 
 Visual Studio vous permet de générer des applications et des jeux pour les appareils macOS, Linux et Windows, ainsi qu’Android, iOS et d’autres [appareils mobiles](https://visualstudio.microsoft.com/vs/mobile-app-development/).
 
-- Construisez des applications [.NET Core](/dotnet/core/) qui s’exécutent sur Windows, macOS et Linux.
+- Créez des applications [.net Core](/dotnet/core/) qui s’exécutent sur Windows, MacOS et Linux.
 
 - Générez des applications mobiles pour iOS, Android et Windows en C# et F# à l’aide de [Xamarin](https://developer.xamarin.com/guides/cross-platform/windows/visual-studio/).
 
@@ -90,7 +90,7 @@ Visual Studio vous permet de générer des applications et des jeux pour les app
 
 ## <a name="connect-to-databases"></a>Se connecter aux bases de données
 
-L’**Explorateur de serveurs** vous aide à parcourir et à gérer les instances et ressources SQL Server en local et à distance, et sur Azure, Salesforce.com, Office 365 et les sites web. Pour ouvrir **l’Explorateur de serveurs**, dans le menu principal, choisissez **Affichage** > **Explorateur de serveurs**. Pour plus d’informations sur l’utilisation de l’Explorateur de serveurs, consultez [Ajouter de nouvelles connexions](../data-tools/add-new-connections.md).
+**Explorateur de serveurs** vous aide à parcourir et à gérer les instances et les ressources SQL Server localement, à distance et sur Azure, Salesforce.com, Microsoft 365 et sites Web. Pour ouvrir **l’Explorateur de serveurs**, dans le menu principal, choisissez **Affichage** > **Explorateur de serveurs**. Pour plus d’informations sur l’utilisation de l’Explorateur de serveurs, consultez [Ajouter de nouvelles connexions](../data-tools/add-new-connections.md).
 
 [SQL Server Data Tools (SSDT)](/sql/ssdt/download-sql-server-data-tools-ssdt) est un environnement de développement puissant pour SQL Server, Azure SQL Database et Azure SQL Data Warehouse. Il vous permet de générer, déboguer, gérer et refactoriser des bases de données. Vous pouvez travailler avec un projet de base de données, ou directement avec une instance de base de données connectée, locale ou hors site.
 
@@ -126,7 +126,7 @@ L’illustration suivante montre la fenêtre **Team Explorer** pour une solution
 
 Vous pouvez automatiser votre processus de génération pour générer le code que les développeurs de votre équipe ont archivé dans la gestion de versions. Par exemple, vous pouvez générer un ou plusieurs projets la nuit ou chaque fois le code est archivé. Pour plus d’informations, consultez [Azure Pipelines](/azure/devops/pipelines/index?view=vsts).
 
-## <a name="extend-visual-studio"></a>Extension de Visual Studio
+## <a name="extend-visual-studio"></a>Étendre Visual Studio
 
 Si Visual Studio ne dispose pas de la fonctionnalité exacte dont vous avez besoin, vous pouvez l’ajouter ! Vous pouvez personnaliser l’IDE en fonction de votre flux de travail et du style, ajouter la prise en charge des outils externes non intégrés à Visual Studio et modifier des fonctionnalités existantes pour accroître votre productivité. Pour obtenir la dernière version des outils d’extensibilité de Visual Studio (Visual Studio SDK), consultez [Visual Studio SDK](../extensibility/visual-studio-sdk.md).
 
@@ -139,5 +139,5 @@ Pour en savoir plus sur l’extension de Visual Studio, consultez [Étendre l’
 ## <a name="see-also"></a>Voir aussi
 
 - [Vue d’ensemble de l’IDE de Visual Studio](../get-started/visual-studio-ide.md)
-- [Quoi de neuf dans Visual Studio 2017](../ide/whats-new-visual-studio-2017.md)
+- [Nouveautés de Visual Studio 2017](../ide/whats-new-visual-studio-2017.md)
 - [Nouveautés de Visual Studio 2019](../ide/whats-new-visual-studio-2019.md)

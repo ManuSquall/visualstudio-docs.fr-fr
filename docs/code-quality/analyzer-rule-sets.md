@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0b3ed77a309448a854d733453c932fc007f7f591
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 11b99bb08c82725f19f7985a97656edf65f112d5
+ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75573285"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88800214"
 ---
 # <a name="enable-a-category-of-rules"></a>Activer une catégorie de règles
 
@@ -27,18 +27,18 @@ Les packages de l’analyseur peuvent inclure des fichiers [EditorConfig](use-ro
 Le package NuGet Analyzer de FxCop comprend des ensembles de règles prédéfinis et des fichiers EditorConfig pour les catégories de règles suivantes :
 
 - Toutes les règles
-- Flux de données
-- Création
+- Dataflow
+- Conception
 - Documentation
 - Globalisation
 - Interopérabilité
 - Maintenabilité
-- Attribution des noms
+- Dénomination
 - Performances
 - Porté depuis FxCop
 - Fiabilité
 - Sécurité
-- Contrôle
+- Usage
 
 Chacune de ces catégories de règles a un fichier de EditorConfig ou d’ensemble de règles pour :
 
@@ -53,13 +53,13 @@ Chacune de ces catégories de règles a un fichier de EditorConfig ou d’ensemb
 
 ## <a name="predefined-editorconfig-files"></a>Fichiers EditorConfig prédéfinis
 
-Les fichiers EditorConfig prédéfinis pour le package de l’analyseur Microsoft. CodeAnalysis. FxCopAnalyzers se trouvent dans le répertoire *% UserProfile%\\. nuget\packages\microsoft.codeanalysis.fxcopanalyzers\\\<version\>\editorconfig* . Par exemple, le fichier EditorConfig pour activer toutes les règles de sécurité se trouve dans *% UserProfile%\\. nuget\packages\microsoft.codeanalysis.fxcopanalyzers\\\<version\>\editorconfig\SecurityRulesEnabled\\. EditorConfig*.
+Les fichiers EditorConfig prédéfinis pour le package de l’analyseur Microsoft. CodeAnalysis. FxCopAnalyzers se trouvent dans le répertoire *% UserProfile% \\ . nuget\packages\microsoft.CodeAnalysis.fxcopanalyzers \\ \<version\> \editorconfig* . Par exemple, le fichier EditorConfig pour activer toutes les règles de sécurité se trouve à l’emplacement *% UserProfile% \\ . nuget\packages\microsoft.CodeAnalysis.fxcopanalyzers \\ \<version\> \editorconfig\SecurityRulesEnabled \\ . EditorConfig*.
 
 Copiez le fichier. editorconfig choisi dans le répertoire racine de votre projet.
 
 ## <a name="predefined-rule-sets"></a>Ensembles de règles prédéfinis
 
-Les fichiers d’ensemble de règles prédéfinis pour le package de l’analyseur Microsoft. CodeAnalysis. FxCopAnalyzers se trouvent dans le répertoire *% UserProfile%\\. nuget\packages\microsoft.codeanalysis.fxcopanalyzers\\\<version\>\rulesets* . Par exemple, le fichier d’ensemble de règles permettant d’activer toutes les règles de sécurité se trouve à l’emplacement *% UserProfile%\\. nuget\packages\microsoft.codeanalysis.fxcopanalyzers\\\<version\>\rulesets\SecurityRulesEnabled.RuleSet*.
+Les fichiers d’ensemble de règles prédéfinis pour le package de l’analyseur Microsoft. CodeAnalysis. FxCopAnalyzers se trouvent dans le répertoire *% UserProfile% \\ . nuget\packages\microsoft.CodeAnalysis.fxcopanalyzers \\ \<version\> \rulesets* . Par exemple, le fichier de l’ensemble de règles permettant d’activer toutes les règles de sécurité se trouve dans *% UserProfile% \\ . nuget\packages\microsoft.CodeAnalysis.fxcopanalyzers \\ \<version\> \rulesets\SecurityRulesEnabled.RuleSet*.
 
 Copiez un ou plusieurs ensembles de règles et collez-les dans le répertoire qui contient votre projet Visual Studio ou directement dans **Explorateur de solutions**.
 
@@ -84,19 +84,19 @@ Pour qu’une règle définisse l’ensemble de règles actif pour l’analyse d
 
 Pour définir l’ensemble de règles actif en vue d’une analyse dans des projets .NET Framework, procédez comme suit :
 
-- Dans **Explorateur de solutions** , cliquez avec le bouton droit sur le projet et choisissez **Propriétés**.
+- Dans **Explorateur de solutions** , cliquez avec le bouton droit sur le projet, puis sélectionnez **Propriétés**.
 
 - Dans les pages de propriétés du projet, sélectionnez l’onglet **analyse du code** .
 
 ::: moniker range="vs-2017"
 
-- Sous **exécuter cet ensemble de règles**, sélectionnez **Parcourir**, puis sélectionnez l’ensemble de règles souhaité que vous avez copié dans le répertoire du projet.
+- Sous **exécuter cet ensemble de règles**, sélectionnez **Parcourir**, puis choisissez l’ensemble de règles souhaité que vous avez copié dans le répertoire du projet.
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-- Sous **règles actives**, sélectionnez **Parcourir**, puis sélectionnez l’ensemble de règles souhaité que vous avez copié dans le répertoire du projet.
+- Sous **règles actives**, sélectionnez **Parcourir**, puis choisissez l’ensemble de règles souhaité que vous avez copié dans le répertoire du projet.
 
 ::: moniker-end
 

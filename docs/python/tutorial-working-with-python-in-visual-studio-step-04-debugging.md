@@ -11,12 +11,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 3f6464986cb94ffa3ab3cc9264ab818112046ea9
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: d7fe5a8b2275248c0fc68f9237e9e259973c567b
+ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "63002806"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88801722"
 ---
 # <a name="step-4-run-code-in-the-debugger"></a>Étape 4 : Exécuter du code dans le débogueur
 
@@ -47,11 +47,11 @@ En plus de ses fonctionnalités de gestion de projets, de son expérience utilis
 1. Vérifiez que le code fonctionne correctement en appuyant sur **F5** ou en sélectionnant la commande de menu **Déboguer** > **Démarrer le débogage**. Cette commande exécute le code dans le débogueur mais, comme vous n’avez rien fait pour interrompre le programme pendant son exécution, il affiche simplement un motif de vague pour quelques itérations. Appuyez sur une touche pour fermer la fenêtre de sortie.
 
     > [!Tip]
-    > Pour fermer la fenêtre de sortie automatiquement lorsque le programme se termine, sélectionnez la commande du menu **Tools** > **Options,** élargissez le nœud **Python,** sélectionnez **Debugging,** puis effacez l’option **Attendez l’entrée lorsque**le processus sort normalement :
+    > Pour fermer automatiquement la fenêtre sortie une fois le programme terminé, sélectionnez la commande de menu **Outils**  >  **options** , développez le nœud **python** , sélectionnez **débogage**, puis désactivez l’option **attendre l’entrée quand le processus s’arrête normalement**:
     >
     > ![Option de débogage Python permettant de fermer la fenêtre Sortie quand l’utilisateur quitte le programme normalement](media/vs-getting-started-python-22-debugging5.png)
 
-1. Définissez un point `for` d’arrêt sur la déclaration en cliquant une fois dans la marge grise par cette ligne, ou en plaçant le caret dans cette ligne et en utilisant la commande **Debug** > **Toggle Breakpoint** (**F9**). Un point rouge apparaît dans la marge grise pour indiquer le point d’arrêt (comme indiqué par la flèche) :
+1. Définissez un point d’arrêt sur l' `for` instruction en cliquant une fois dans la marge grise en fonction de cette ligne, ou en plaçant le signe insertion dans cette ligne et en utilisant la commande **Déboguer**  >  **basculer le point d’arrêt** (**F9**). Un point rouge apparaît dans la marge grise pour indiquer le point d’arrêt (comme indiqué par la flèche) :
 
     ![Définition d'un point d'arrêt](media/vs-getting-started-python-18-debugging1.png)
 
@@ -70,33 +70,33 @@ En plus de ses fonctionnalités de gestion de projets, de son expérience utilis
     - **Redémarrer** (**Ctrl**+**Maj**+**F5**) arrête le programme où qu’il en soit, puis le redémarre à partir du début dans le débogueur.
     - **Afficher l’instruction suivante** (**Alt**+**Num** **&#42;**) passe à la ligne de code suivante à exécuter. Ceci est spécialement utile quand vous naviguez au sein de votre code pendant une session de débogage et que vous voulez retourner rapidement au point où le débogueur est en suspens.
     - **Pas à pas détaillé** (**F11**) exécute la ligne de code suivante, en entrant dans les fonctions appelées.
-    - **Step Over** (**F10**) exécute la ligne suivante de code sans entrer dans les fonctions appelées.
-    - **Step Out** (**Shift**+**F11**) exécute le reste de la fonction actuelle et s’arrête dans le code d’appel.
+    - **Pas à pas principal** (**F10**) exécute la ligne de code suivante sans entrer dans les fonctions appelées.
+    - **Pas à pas sortant** (**Shift** + **F11**) exécute le reste de la fonction active et s’interrompt dans le code appelant.
 
 1. Faites un pas à pas principal de l’instruction `for` en utilisant **Pas à pas principal**. *L’exécution pas à pas* signifie que le débogueur exécute la ligne de code active, y compris tous les appels de fonction, puis s’interrompt à nouveau immédiatement. Notez comment la variable `i` est maintenant définie dans les fenêtres **Variables locales** et **Automatique**.
 
-1. Faites un pas à pas principal de la ligne de code suivante, qui appelle `make_dot_string` et s’interrompt. **Étape ici** signifie spécifiquement que le débbuggeur exécute l’ensemble et s’arrête `make_dot_string` quand il revient. Le débogueur ne s’arrête pas à l’intérieur de cette fonction, sauf si un point d’arrêt distinct s’y trouve.
+1. Faites un pas à pas principal de la ligne de code suivante, qui appelle `make_dot_string` et s’interrompt. La **procédure pas à pas principal** signifie spécifiquement que le débogueur exécute l’ensemble de `make_dot_string` et s’interrompt lorsqu’il retourne. Le débogueur ne s’arrête pas à l’intérieur de cette fonction, sauf si un point d’arrêt distinct s’y trouve.
 
 1. Continuez à demander un certain nombre de fois l’exécution en pas à pas principal du code, et observez comment les valeurs changent dans les fenêtres **Variables locales** ou **Automatique**.
 
-1. Dans la fenêtre **Variables locales** ou **Automatique**, double-cliquez dans la colonne **Valeur** pour la variable `i` ou `s` et changez la valeur. Appuyez **sur Entrez** ou cliquez à l’extérieur de cette valeur pour appliquer toutes les modifications.
+1. Dans la fenêtre **Variables locales** ou **Automatique**, double-cliquez dans la colonne **Valeur** pour la variable `i` ou `s` et changez la valeur. Appuyez sur **entrée** ou cliquez sur une zone en dehors de cette valeur pour appliquer les modifications.
 
-1. Continuez à parcourir le code pas à pas en utilisant **Pas à pas détaillé**. **Step Into** signifie que le débogage entre à l’intérieur de n’importe quel appel de fonction pour lequel il a déboguer des informations, telles que `make_dot_string`. Une fois à l’intérieur de `make_dot_string`, vous pouvez examiner ses variables locales et exécuter son code spécifiquement.
+1. Continuez à parcourir le code pas à pas en utilisant **Pas à pas détaillé**. **Pas à pas détaillé** signifie que le débogueur entre dans un appel de fonction pour lequel il contient des informations de débogage, telles que `make_dot_string` . Une fois à l’intérieur de `make_dot_string`, vous pouvez examiner ses variables locales et exécuter son code spécifiquement.
 
-1. Continuez à entrer avec **Step Into** et `make_dot_string`remarquez que lorsque `for` vous atteignez la fin `s` de la , l’étape suivante revient à la boucle avec la nouvelle valeur de retour dans la variable. Lorsque vous remarquez à l’énoncé, `print` notez que Step **Into** on `print` n’entre pas dans cette fonction. La raison en est que `print` n’est pas écrit en Python, mais qu’il s’agit de code natif au sein du runtime Python.
+1. Continuez l’exécution pas à **pas avec pas à pas** détaillé et remarquez que lorsque vous atteignez la fin de la `make_dot_string` , l’étape suivante retourne à la `for` boucle avec la nouvelle valeur de retour dans la `s` variable. Au fur et à mesure que vous avancerez dans l' `print` instruction, Notez que pas à **pas détaillé** `print` n’entre dans cette fonction. La raison en est que `print` n’est pas écrit en Python, mais qu’il s’agit de code natif au sein du runtime Python.
 
-1. Continuer à utiliser **Step Into** jusqu’à ce que vous êtes à nouveau à mi-chemin dans `make_dot_string`. Utilisez ensuite **Pas à pas sortant** et notez que vous revenez alors à la boucle `for`. Avec **Step Out**, le débbuggeur exécute le reste de la fonction, puis s’arrête automatiquement dans le code d’appel. Ceci est très utile quand vous avez exécuté pas à pas une partie d’une fonction longue que vous souhaitez déboguer, mais que vous n’avez pas besoin d’en parcourir le reste pas à pas et que vous ne voulez pas définir un point d’arrêt explicite dans le code appelant.
+1. Continuez à utiliser le **pas à pas** détaillé jusqu’à ce que vous soyez à nouveau inséré `make_dot_string` . Utilisez ensuite **Pas à pas sortant** et notez que vous revenez alors à la boucle `for`. Avec **pas à pas sortant**, le débogueur exécute le reste de la fonction, puis s’interrompt automatiquement dans le code appelant. Ceci est très utile quand vous avez exécuté pas à pas une partie d’une fonction longue que vous souhaitez déboguer, mais que vous n’avez pas besoin d’en parcourir le reste pas à pas et que vous ne voulez pas définir un point d’arrêt explicite dans le code appelant.
 
-1. Pour continuer à exécuter le programme jusqu’à ce que le prochain point d’arrêt soit atteint, utilisez **Continuer** (**F5**). Étant donné que vous avez défini un point d’arrêt dans la boucle `for`, vous vous arrêtez sur l’itération suivante.
+1. Pour continuer l’exécution du programme jusqu’à ce que le point d’arrêt suivant soit atteint, utilisez **Continuer** (**F5**). Étant donné que vous avez défini un point d’arrêt dans la boucle `for`, vous vous arrêtez sur l’itération suivante.
 
-1. Parcourir pas à pas des centaines d’itérations d’une boucle peut être fastidieux : Visual Studio vous permet donc d’ajouter une *condition* à un point d’arrêt. Le débogueur interrompt alors le programme au point d’arrêt seulement quand la condition est remplie. Par exemple, vous pouvez utiliser une condition avec le point d’arrêt sur l’instruction `for` pour qu’elle s’interrompe seulement quand la valeur de `i` dépasse 1 600. Pour définir cette condition, cliquez avec le bouton droit sur le point rouge représentant le point d’arrêt, puis sélectionnez **Conditions** (**Alt**+**F9** > **C**). Dans la fenêtre contextuelle **Paramètres de point d’arrêt** qui s’affiche, entrez `i > 1600` comme expression et sélectionnez **Fermer**. Appuyez **sur F5** pour continuer et observer que le programme fonctionne de nombreuses itérations avant la prochaine pause.
+1. Parcourir pas à pas des centaines d’itérations d’une boucle peut être fastidieux : Visual Studio vous permet donc d’ajouter une *condition* à un point d’arrêt. Le débogueur interrompt alors le programme au point d’arrêt seulement quand la condition est remplie. Par exemple, vous pouvez utiliser une condition avec le point d’arrêt sur l’instruction `for` pour qu’elle s’interrompe seulement quand la valeur de `i` dépasse 1 600. Pour définir cette condition, cliquez avec le bouton droit sur le point rouge représentant le point d’arrêt, puis sélectionnez **Conditions** (**Alt**+**F9** > **C**). Dans la fenêtre contextuelle **Paramètres de point d’arrêt** qui s’affiche, entrez `i > 1600` comme expression et sélectionnez **Fermer**. Appuyez sur **F5** pour continuer et observez que le programme exécute de nombreuses itérations avant l’arrêt suivant.
 
     ![Définition d’une condition de point d’arrêt](media/vs-getting-started-python-21-debugging4.png)
 
-1. Pour exécuter le programme jusqu’à l’achèvement, désactiver le point d’arrêt en cliquant à droite et en sélectionnant **Disable breakpoint** (**Ctrl**+**F9**). Ensuite, sélectionnez **Continuer** (ou appuyez sur **F5**) pour exécuter le programme. Quand le programme se termine, Visual Studio arrête sa session de débogage et retourne au mode Édition. Notez que vous pouvez également supprimer le point d’arrêt en cliquant sur le point qui y correspond, mais ceci supprime également toutes les conditions que vous avez définies.
+1. Pour exécuter le programme jusqu’à la fin, désactivez le point d’arrêt en cliquant avec le bouton droit sur le point dans la marge et en sélectionnant **désactiver le point d’arrêt** (**CTRL** + **F9**). Sélectionnez ensuite **Continuer** (ou appuyez sur **F5**) pour exécuter le programme. Quand le programme se termine, Visual Studio arrête sa session de débogage et retourne au mode Édition. Notez que vous pouvez également supprimer le point d’arrêt en sélectionnant son point ou en cliquant avec le bouton droit sur le point et en sélectionnant **supprimer le point d’arrêt**, mais cela supprime également toutes les conditions que vous avez définies.
 
 > [!Tip]
-> Dans certaines situations, par exemple en cas d’échec du lancement de l’interpréteur Python lui-même, la fenêtre Sortie peut apparaître seulement brièvement, puis se fermer automatiquement sans vous donner la possibilité de visualiser les messages d’erreurs. Si cela se produit, cliquez à droite sur le projet dans Solution `-i` **Explorer**, sélectionnez **Propriétés**, sélectionnez **l’onglet Debug,** puis ajoutez au champ Arguments **d’interprète.** Cet argument provoque l’interprète à entrer en mode interactif après un programme terminé, gardant ainsi la fenêtre ouverte jusqu’à ce que vous entrez **Ctrl**+**Z** > **Entrez** à la sortie.
+> Dans certaines situations, par exemple en cas d’échec du lancement de l’interpréteur Python lui-même, la fenêtre Sortie peut apparaître seulement brièvement, puis se fermer automatiquement sans vous donner la possibilité de visualiser les messages d’erreurs. Dans ce cas, cliquez avec le bouton droit sur le projet dans **Explorateur de solutions**, sélectionnez **Propriétés**, sélectionnez l’onglet **Déboguer** , puis ajoutez `-i` au champ arguments de l' **interpréteur** . Cet argument fait en sorte que l’interpréteur passe en mode interactif à la fin d’un programme, ce qui maintient la fenêtre ouverte jusqu’à ce que vous entriez **CTRL** + **Z**  >  **entrée** pour quitter.
 
 ## <a name="next-step"></a>Étape suivante
 

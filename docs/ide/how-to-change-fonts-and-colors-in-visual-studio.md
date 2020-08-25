@@ -1,6 +1,6 @@
 ---
-title: Comment modifier les couleurs de police, la taille du texte et les options de contraste élevé
-description: Découvrez comment modifier la couleur de police et la taille du texte dans Visual Studio, et comment sélectionner les options de contraste pour les problèmes d’accessibilité.
+title: Modifier les thèmes, les polices, le texte et le contraste pour l’accessibilité
+description: Découvrez comment modifier les thèmes de couleurs, les couleurs de police, les tailles de texte et les couleurs de contraste supplémentaires de Visual Studio pour des raisons de simplicité d’utilisation et d’accessibilité.
 ms.date: 08/20/2020
 ms.topic: how-to
 ms.custom: contperfq1
@@ -13,16 +13,16 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 280873a2f855aa4c0d7e9951e141ca5492357b5a
-ms.sourcegitcommit: de98ed7edc81383e47b87ae6e61143fbbbe7bc56
+ms.openlocfilehash: b2410974ed95b1aa8dca3dc3e31a39c39df2d4a0
+ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "88711688"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88801436"
 ---
-# <a name="how-to-change-fonts-colors-and-high-contrast-options-in-visual-studio"></a>Comment : modifier les polices, les couleurs et les options de contraste élevé dans Visual Studio
+# <a name="how-to-change-fonts-colors-and-themes-in-visual-studio"></a>Comment : modifier les polices, les couleurs et les thèmes dans Visual Studio
 
-Vous pouvez modifier les polices et les couleurs dans Visual Studio de plusieurs façons. Par exemple, vous pouvez remplacer le thème de couleur bleu par défaut par le thème sombre (également appelé « mode sombre »). De plus, vous pouvez modifier la police et la taille du texte par défaut en leur attribuant une police et une taille différentes. Vous pouvez également sélectionner un thème à contraste élevé si cela répond le mieux à vos besoins.
+Vous pouvez modifier les polices et les couleurs dans Visual Studio de plusieurs façons. Par exemple, vous pouvez remplacer le thème de couleur bleu par défaut par le thème sombre (également appelé « mode sombre »). Vous pouvez également sélectionner un thème à contraste élevé si cela répond le mieux à vos besoins. Et vous pouvez modifier la police et la taille du texte par défaut dans l’IDE et l’éditeur de code.
 
 ## <a name="change-the-color-theme"></a>Changer le thème de couleur
 
@@ -124,5 +124,6 @@ Pour en savoir plus sur tous les éléments d’interface utilisateur pour lesqu
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Modifier les polices et les couleurs de l’éditeur de code](../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md)
+- [Comment : modifier les polices et les couleurs de l’éditeur dans Visual Studio](../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md)
 - [Fonctionnalités de l’éditeur de code Visual Studio](../ide/writing-code-in-the-code-and-text-editor.md)
+- [Personnaliser l’IDE de Visual Studio et l’éditeur](../ide/quickstart-personalize-the-ide.md)

@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 8f46dc6a1871b6d44c37c1931bf65f1b4a11c9ae
-ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
+ms.openlocfilehash: 46744decddcc2d50fd05ea86cc6ebfad9d210031
+ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85770784"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88800500"
 ---
 # <a name="walkthrough-create-a-code-snippet"></a>Procédure pas à pas : Créer un extrait de code
 
@@ -86,7 +86,7 @@ Le code XML suivant est le modèle d’extrait de code de base :
 
 1. Vous pouvez importer un extrait de code dans votre installation Visual Studio en utilisant le **Gestionnaire des extraits de code**. Ouvrez-le en choisissant **Outils**  >  **Gestionnaire des extraits de code**.
 
-2. Cliquez sur le bouton **Importer**.
+2. Cliquez sur le bouton **Import**.
 
 3. Accédez à l’emplacement où vous avez enregistré l’extrait de code dans la procédure précédente, sélectionnez-le, puis cliquez sur **Ouvrir**.
 
@@ -96,15 +96,15 @@ Le code XML suivant est le modèle d’extrait de code de base :
 
    ::: moniker range="vs-2017"
 
-   *Extraits de code C# \Mes%USERPROFILE%\Documents\Visual Studio 2017 \ code Snippets\Visual* 
-    *Extraits de code Basic\My%USERPROFILE%\Documents\Visual Studio 2017 \ code Snippets\Visual*
+   *Extraits de code C# \Mes%USERPROFILE%\Documents\Visual Studio 2017 \ code Snippets\Visual*  
+   *%USERPROFILE%\Documents\Visual Studio 2017\Code Snippets\Visual Basic\My Code Snippets*
 
    ::: moniker-end
 
    ::: moniker range=">=vs-2019"
 
-   *%USERPROFILE%\Documents\Visual Studio 2019 \ code Snippets\Visual C# \Mes code extraits* 
-    de code *%USERPROFILE%\Documents\Visual Studio 2019 \ code Snippets\Visual Basic\My extraits de code*
+   *%USERPROFILE%\Documents\Visual Studio 2019 \ code Snippets\Visual C# \Mes code extraits de code*  
+   *%USERPROFILE%\Documents\Visual Studio 2019\Code Snippets\Visual Basic\My Code Snippets*
 
    ::: moniker-end
 

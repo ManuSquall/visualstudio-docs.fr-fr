@@ -17,26 +17,26 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: d900c0f51b14450f38caf06738739daef2549235
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: f6d069bfa462b8aa75fc9247c08b3662c4a445fd
+ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "77580091"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88801800"
 ---
-# <a name="tutorial-create-your-first-aspnet-core-app-using-entity-framework-with-visual-studio-2019"></a>Tutorial: Créer votre première application ASP.NET Core en utilisant Entity Framework avec Visual Studio 2019
+# <a name="tutorial-create-your-first-aspnet-core-app-using-entity-framework-with-visual-studio-2019"></a>Didacticiel : créer votre première ASP.NET Core application à l’aide de Entity Framework avec Visual Studio 2019
 
 Ce tutoriel explique comment créer une application web ASP.NET Core qui utilise des données et la déployer sur Azure. Il se compose des étapes suivantes :
 
-- [Étape 1 : Installer Visual Studio 2019](#step-1-install-visual-studio-2019)
-- [Étape 2 : Créez votre première application web ASP.NET Core](tutorial-aspnet-core-ef-step-02.md)
-- [Étape 3 : Travailler avec les données à l’aide du Cadre d’entité](tutorial-aspnet-core-ef-step-03.md)
-- [Étape 4 : Exposez une API web à partir de votre application ASP.NET Core](tutorial-aspnet-core-ef-step-04.md)
-- [Étape 5 : Déployez votre application ASP.NET Core à Azure](tutorial-aspnet-core-ef-step-05.md)
+- [Étape 1 : installer Visual Studio 2019](#step-1-install-visual-studio-2019)
+- [Étape 2 : créer votre première ASP.NET Core application Web](tutorial-aspnet-core-ef-step-02.md)
+- [Étape 3 : utiliser des données à l’aide de Entity Framework](tutorial-aspnet-core-ef-step-03.md)
+- [Étape 4 : exposer une API Web à partir de votre application ASP.NET Core](tutorial-aspnet-core-ef-step-04.md)
+- [Étape 5 : déploiement de votre application ASP.NET Core sur Azure](tutorial-aspnet-core-ef-step-05.md)
 
-## <a name="step-1-install-visual-studio-2019"></a>Étape 1 : Installer Visual Studio 2019
+## <a name="step-1-install-visual-studio-2019"></a>Étape 1 : installer Visual Studio 2019
 
-Découvrez comment installer Visual Studio 2019 avec ce tutoriel vidéo et des instructions détaillées. Si vous avez déjà installé Visual Studio, passez à [l’étape 2 : Créez votre première application web ASP.NET Core](tutorial-aspnet-core-ef-step-02.md).
+Découvrez comment installer Visual Studio 2019 avec ce tutoriel vidéo et des instructions détaillées. Si vous avez déjà installé Visual Studio, passez directement à [l’étape 2 : créer votre première ASP.net Core application Web](tutorial-aspnet-core-ef-step-02.md).
 
 _Regardez cette vidéo et suivez les instructions pour installer Visual Studio et créer votre première application ASP.NET Core._
 
@@ -72,7 +72,7 @@ Visual Studio devrait se lancer automatiquement une fois l’installation termin
 
 Vous pouvez choisir le nom et l’emplacement de votre projet, puis sélectionner **Créer**. Sélectionnez le modèle à utiliser pour votre application ASP.NET Core. Vous pouvez choisir parmi les options suivantes :
 
-- Vide : modèle de projet vide permettant de partir de zéro.
+- Vide. modèle de projet vide permettant de partir de zéro.
 - . modèle idéal pour les API web.
 - Application web : application web ASP.NET Core standard conçue avec Razor Pages.
 - Application web (modèle-vue-contrôleur) : application web ASP.NET Core standard suivant le modèle modèle-vue-contrôleur.
@@ -85,10 +85,10 @@ Notez que, pour la plupart des modèles de projet, vous pouvez également choisi
 
 - Aucune authentification.
 - Comptes d’utilisateur individuels : comptes stockés dans une base de données locale ou Azure.
-- Comptes professionnels ou scolaires : authentification avec Active Directory, Azure AD ou Office 365.
+- Comptes professionnels ou scolaires : Cette option utilise Active Directory, Azure AD ou Microsoft 365 pour l’authentification.
 - Authentification Windows. authentification adaptée aux applications intranet.
 
-Sélectionnez le modèle d’application Web standard sans authentification et cliquez sur **Créer**.
+Sélectionnez le modèle application Web standard sans authentification, puis cliquez sur **créer**.
 
 ![Visual Studio 2019 – Choisir les options de projet ASP.NET Core](media/vs-2019/vs2019-choose-aspnetcore-project.png)
 
@@ -96,8 +96,8 @@ Sélectionnez le modèle d’application Web standard sans authentification et c
 
 Dans la vidéo suivante, vous aborderez votre premier projet ASP.NET Core.
 
-[Tutorial: Créer votre première ASP.NET’application Web de base](tutorial-aspnet-core-ef-step-02.md)
+[Didacticiel : création de votre première application Web ASP.NET Core](tutorial-aspnet-core-ef-step-02.md)
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Tutorial: Démarrer avec C et ASP.NET Core](tutorial-aspnet-core.md) Un tutoriel plus détaillé sans procédure vidéo
+- [Didacticiel : prise en main de C# et ASP.net Core](tutorial-aspnet-core.md) Didacticiel plus détaillé sans vidéo pas à pas

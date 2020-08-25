@@ -11,12 +11,12 @@ dev_langs:
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: b97655efac3fc42f5e5790e32c97de169e61a6b5
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.openlocfilehash: 943c0567e3726d014f7dae01915916864e09ed9b
+ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "85520586"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88801644"
 ---
 # <a name="welcome-to-the-visual-studio-ide--python"></a>Bienvenue dans l’IDE Visual Studio | Python
 
@@ -95,8 +95,8 @@ Voici quelques-unes des fonctionnalités populaires de Visual Studio qui vous ai
 ::: moniker-end
 
 - [Collaborer à l’aide de Visual Studio](/visualstudio/liveshare/)
-  
-    Visual Studio Live Share vous permet d’éditer et de déboguer en collaboration avec d’autres utilisateurs en temps réel, quel que soit le langage de programmation que vous utilisez ou les types d’applications que vous créez. 
+
+    Visual Studio Live Share vous permet d’éditer et de déboguer en collaboration avec d’autres utilisateurs en temps réel, quel que soit le langage de programmation que vous utilisez ou les types d’applications que vous créez.
 
 - [REPL interactif Python](python-interactive-repl-in-visual-studio.md)
 
@@ -110,7 +110,7 @@ Voici quelques-unes des fonctionnalités populaires de Visual Studio qui vous ai
 
     ![Déboguer du code Python dans Visual Studio](media/remote-debugging-breakpoint-hit.png)
 
-- [Interagir avec C++](working-with-c-cpp-python-in-visual-studio.md)
+- [Interaction avec C++](working-with-c-cpp-python-in-visual-studio.md)
 
     De nombreuses bibliothèques créées pour Python sont écrites en C++ pour offrir des performances optimales. Visual Studio propose de riches fonctionnalités pour le développement d’extensions C++, notamment le [débogage en mode mixte](debugging-mixed-mode-c-cpp-python-in-visual-studio.md).
 

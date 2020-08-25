@@ -11,23 +11,23 @@ ms.workload:
 - python
 - data-science
 monikerRange: '>= vs-2019'
-ms.openlocfilehash: ab234d9482cf9cbab49c15167ea45aff9ac2c7e6
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: a7bf174191a6a2fb013aa3d25880b01bc2e7f070
+ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "62431097"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88801670"
 ---
-# <a name="quickstart-open-and-run-python-code-in-a-folder"></a>Quickstart: Ouvrez et exécutez le code Python dans un dossier
+# <a name="quickstart-open-and-run-python-code-in-a-folder"></a>Démarrage rapide : ouvrir et exécuter du code python dans un dossier
 
 Une fois que vous avez [installé la prise en charge de Python dans Visual Studio 2019](installing-python-support-in-visual-studio.md), il est facile d’exécuter du code Python existant dans Visual Studio 2019 sans créer de projet Visual Studio.
 
 > [!Note]
-> Visual Studio 2017 et antérieur vous oblige à créer un projet Visual Studio pour exécuter du code Python, ce que vous pouvez faire facilement avec un modèle de projet intégré. Voir [Quickstart: Créer un projet Python à partir du code existant](quickstart-01-python-in-visual-studio-project-from-existing-code.md)
+> Visual Studio 2017 et antérieur vous oblige à créer un projet Visual Studio pour exécuter du code Python, ce que vous pouvez faire facilement avec un modèle de projet intégré. Consultez [démarrage rapide : créer un projet Python à partir de code existant](quickstart-01-python-in-visual-studio-project-from-existing-code.md)
 
 1. Pour cette procédure pas à pas, vous pouvez utiliser n’importe quel dossier avec le code Python que vous souhaitez. Pour suivre l’exemple présenté ici, clonez le référentiel GitHub gregmalcolm/python_koans sur votre ordinateur à l’aide de la commande `git clone https://github.com/gregmalcolm/python_koans` dans un dossier approprié.
 
-1. Lancez Visual Studio 2019 puis, dans la fenêtre de démarrage, sélectionnez **Ouvrir** en bas de la colonne **Prise en main**. Alternativement, si vous avez déjà Visual Studio en cours d’exécution, sélectionnez la commande **File** > **Open** > **Folder** à la place.
+1. Lancez Visual Studio 2019 puis, dans la fenêtre de démarrage, sélectionnez **Ouvrir** en bas de la colonne **Prise en main**. Sinon, si vous avez déjà installé Visual Studio, sélectionnez plutôt la commande **fichier**  >  **ouvrir**le  >  **dossier** .
 
     ![L’écran de démarrage de Visual Studio](media/quickstart-open-folder/01-open-local-folder.png)
 
@@ -50,7 +50,7 @@ Une fois que vous avez [installé la prise en charge de Python dans Visual Studi
     > [!Important]
     > Si votre élément de démarrage ne se trouve pas à la racine du dossier que vous avez ouvert, vous devez également ajouter une ligne au fichier JSON de configuration de démarrage comme décrit dans la section [Définir un répertoire de travail](#set-a-working-directory).
 
-1. Exécutez le code en appuyant sur **Ctrl**+**F5** ou en sélectionnant **Debug** > **Start sans Debugging**. Vous pouvez également sélectionner le bouton de barre d’outils qui affiche l’élément de démarrage avec un bouton de lecture, qui exécute du code dans le débogueur Visual Studio. Dans tous les cas, Visual Studio détecte que votre élément de démarrage est un fichier Python, il exécute ainsi automatiquement le code dans l’environnement Python par défaut. (Cet environnement est indiqué à droite de l’élément de démarrage sur la barre d’outils.)
+1. Exécutez le code en appuyant sur **CTRL** + **F5** ou en sélectionnant **Déboguer**  >  **exécuter sans débogage**. Vous pouvez également sélectionner le bouton de barre d’outils qui affiche l’élément de démarrage avec un bouton de lecture, qui exécute du code dans le débogueur Visual Studio. Dans tous les cas, Visual Studio détecte que votre élément de démarrage est un fichier Python, il exécute ainsi automatiquement le code dans l’environnement Python par défaut. (Cet environnement est indiqué à droite de l’élément de démarrage sur la barre d’outils.)
 
     ![Bouton de barre d’outils de démarrage du débogueur](media/quickstart-open-folder/07-start-debug-toolbar.png)
 
@@ -60,7 +60,7 @@ Une fois que vous avez [installé la prise en charge de Python dans Visual Studi
 
 1. Pour exécuter le code dans un autre environnement, sélectionnez ce dernier dans le contrôle de liste déroulante de la barre d’outils, puis relancez l’élément de démarrage.
 
-1. Pour fermer le dossier dans Visual Studio, sélectionnez la commande de menu **dossier File** > **Close.**
+1. Pour fermer le dossier dans Visual Studio, sélectionnez la commande de menu **fichier**  >  **Fermer le dossier** .
 
 ## <a name="set-a-working-directory"></a>Définir un répertoire de travail
 
@@ -77,7 +77,7 @@ Dans ce cas, vous devez également ajouter une ligne au fichier JSON de configur
     ![La commande Paramètres de débogage et de lancement pour un fichier Python](media/quickstart-open-folder/10-select-debugger.png)
 
     > [!Note]
-    > Si l’option **Par défaut** n’apparaît pas, vérifiez que vous avez bien cliqué avec le bouton droit sur un fichier Python *.py* lors de la sélection de la commande **Paramètres de débogage et de lancement**. Visual Studio utilise le type de fichier pour déterminer les options de débogueur à afficher.
+    > Si vous ne voyez pas la **valeur par défaut** , assurez-vous de choisir un fichier python *. py* lors de la sélection de la commande **Déboguer et lancer les paramètres** . Visual Studio utilise le type de fichier pour déterminer les options de débogueur à afficher.
 
 1. Visual Studio ouvre un fichier nommé *launch.vs.json*, qui se trouve dans le dossier *.vs* caché. Ce fichier décrit le contexte de débogage du projet. Pour spécifier un répertoire de travail, ajoutez une valeur pour `"workingDirectory"`, comme dans `"workingDirectory": "python3"` pour l’exemple python-koans :
 
@@ -111,6 +111,6 @@ Dans ce cas, vous devez également ajouter une ligne au fichier JSON de configur
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Quickstart: Créer un projet Python à partir du code existant](quickstart-01-python-in-visual-studio-project-from-existing-code.md)
-- [Quickstart: Créer un projet Python à partir d’un référentiel](quickstart-03-python-in-visual-studio-project-from-repository.md)
+- [Démarrage rapide : créer un projet Python à partir de code existant](quickstart-01-python-in-visual-studio-project-from-existing-code.md)
+- [Démarrage rapide : créer un projet Python à partir d’un référentiel](quickstart-03-python-in-visual-studio-project-from-repository.md)
 - [Identifier manuellement un interpréteur Python existant](managing-python-environments-in-visual-studio.md#manually-identify-an-existing-environment)

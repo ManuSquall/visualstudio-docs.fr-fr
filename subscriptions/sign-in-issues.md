@@ -7,18 +7,18 @@ ms.assetid: 176c7f11-b19d-49e9-a6dd-b2e5da5e8480
 ms.date: 03/11/2020
 ms.topic: conceptual
 description: Découvrez les problèmes qui peuvent se produire lors de la connexion aux abonnements Visual Studio.
-ms.openlocfilehash: de27f64f1d5c83ed01a1e561f4921dbed53c479c
-ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
+ms.openlocfilehash: 5d8a71115cd1a1aa7d850945806c22a64e7721cc
+ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "80233242"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88801878"
 ---
 # <a name="issues-signing-in-to-visual-studio-subscriptions"></a>Problèmes de connexion aux abonnements Visual Studio
 Pour utiliser votre abonnement Visual Studio, vous devez tout d’abord vous connecter.  En fonction de votre abonnement, vous l’aurez peut-être configuré avec un compte Microsoft (MSA) ou une identité Azure Active Directory (AAD).  Cet article décrit certains problèmes que vous pouvez rencontrer lors de la connexion à votre abonnement.
 
 ## <a name="microsoft-accounts-msa-cannot-be-created-using-workschool-email-addresses"></a>Les comptes Microsoft (MSA) ne peuvent pas être créés avec des adresses e-mail professionnelles ou scolaires
-La capacité à créer un nouveau compte Microsoft (MSA) personnel à l’aide d’une adresse e-mail professionnelle ou scolaire n’est plus autorisée quand le domaine de messagerie est configuré dans Azure AD. Qu’est-ce que cela signifie ? Si votre organisation utilise Office 365 ou d’autres services professionnels de Microsoft qui reposent sur Azure AD, et si vous avez ajouté un nom de domaine à votre locataire Azure AD, les utilisateurs ne pourront plus créer de compte Microsoft personnel à l’aide d’une adresse e-mail dans votre domaine.
+La capacité à créer un nouveau compte Microsoft (MSA) personnel à l’aide d’une adresse e-mail professionnelle ou scolaire n’est plus autorisée quand le domaine de messagerie est configuré dans Azure AD. Qu’est-ce que cela signifie ? Si votre organisation utilise Microsoft 365 ou d’autres services professionnels de Microsoft qui reposent sur Azure AD, et si vous avez ajouté un nom de domaine à votre locataire Azure AD, les utilisateurs ne seront plus en mesure de créer une compte Microsoft personnelle à l’aide d’une adresse de messagerie dans votre domaine.
 
 ### <a name="why-was-this-change-made"></a>Quelle est la raison de ce changement ?
 Avoir un compte Microsoft personnel avec une adresse professionnelle comme nom d’utilisateur peut générer de nombreux problèmes pour les utilisateurs finaux comme pour les services informatiques. Par exemple :
@@ -40,7 +40,7 @@ Toutefois, si vous tentez de vous inscrire à une application consommateur Micro
    > ![Comptes professionnels/scolaires pris en charge](_img/sign-in-issues/existing-account.png)
 
 ### <a name="are-existing-accounts-affected"></a>Les comptes existants sont-ils affectés ?
-Le bloc d’inscription décrit ici empêche uniquement la création de nouveaux comptes. Il n’a aucun impact sur les utilisateurs qui ont déjà un compte Microsoft avec une adresse e-mail professionnelle/scolaire. Si vous êtes déjà dans cette situation, nous avons simplifié le renommage de compte Microsoft personnel. Cet [article du support technique](https://windows.microsoft.com/en-US/Windows/rename-personal-microsoft-account) fournit des instructions pas à pas simples. Le renommage de votre compte Microsoft personnel implique de changer le nom d’utilisateur, et n’affecte pas votre adresse e-mail professionnelle ni votre mode de connexion aux services d’entreprise tels qu’Office 365. Cela n’affecte pas non plus vos informations personnelles, mais change uniquement la façon de vous y connecter. Vous pouvez utiliser une autre adresse e-mail (personnelle), obtenir une nouvelle adresse e-mail @outlook.com auprès de Microsoft, ou utiliser votre numéro de téléphone comme nouveau nom d’utilisateur.
+Le bloc d’inscription décrit ici empêche uniquement la création de nouveaux comptes. Il n’a aucun impact sur les utilisateurs qui ont déjà un compte Microsoft avec une adresse e-mail professionnelle/scolaire. Si vous êtes déjà dans cette situation, nous avons simplifié le renommage de compte Microsoft personnel. Cet [article du support technique](https://windows.microsoft.com/en-US/Windows/rename-personal-microsoft-account) fournit des instructions pas à pas simples. L’attribution d’un nouveau nom à votre compte Microsoft personnel consiste à modifier le nom d’utilisateur et n’a aucun impact sur votre adresse de messagerie professionnelle ou sur la façon dont vous vous connectez aux services professionnels tels que Microsoft 365. Cela n’affecte pas non plus vos informations personnelles, mais change uniquement la façon de vous y connecter. Vous pouvez utiliser une autre adresse e-mail (personnelle), obtenir une nouvelle adresse e-mail @outlook.com auprès de Microsoft, ou utiliser votre numéro de téléphone comme nouveau nom d’utilisateur.
 
 > [!NOTE]
 > Si votre service informatique vous a demandé de créer un compte Microsoft personnel avec votre e-mail professionnel ou scolaire, par exemple pour accéder à des services Microsoft tels que Support Premier, discutez avec votre équipe d’administration avant de renommer votre compte.
@@ -53,7 +53,7 @@ Pour éviter tout impact sur votre accès à l’abonnement, utilisez l’une de
 - Associez les identités AAD et MSA par le biais du locataire.
 
 ## <a name="signing-in-may-fail-when-using-aliases"></a>La connexion risque de ne pas fonctionner en cas d’utilisation d’alias
-Selon le type de compte utilisé pour se connecter, les abonnements disponibles peuvent ne pas être correctement affichés lors de la connexion à [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs). Ce cas peut se produire si l’utilisateur emploie des « alias » ou des « noms conviviaux » au lieu de l’identité de connexion à laquelle l’abonnement est affecté. On parle ici d’utilisation d’alias.
+Selon le type de compte utilisé pour la connexion, les abonnements disponibles peuvent ne pas s’afficher correctement lors de la connexion à [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs) . Ce cas peut se produire si l’utilisateur emploie des « alias » ou des « noms conviviaux » au lieu de l’identité de connexion à laquelle l’abonnement est affecté. On parle ici d’utilisation d’alias.
 
 ### <a name="what-is-aliasing"></a>Qu’est-ce que l’utilisation d’alias ?
 L’utilisation d’alias fait référence aux utilisateurs qui emploient des identités différentes pour se connecter à Windows (ou à leur compte Active Directory) et accéder à leur messagerie électronique.
@@ -64,7 +64,7 @@ Une entreprise peut par exemple posséder un service en ligne Microsoft pour sa 
 En tant qu’abonné, il est important de collaborer dans un premier temps avec votre administrateur pour bien comprendre la configuration des identités de votre entreprise. Si nécessaire, votre administrateur peut avoir à mettre à jour les paramètres de votre compte à partir de son portail d’administration, ou vous devrez peut-être créer un compte Microsoft (MSA) en utilisant votre adresse e-mail d’entreprise. Avant d’effectuer les étapes requises pour créer un compte MSA, contactez votre administrateur pour vous renseigner sur les stratégies ou problèmes liés à cette action. 
 
 ## <a name="see-also"></a>Voir aussi
-- [Documentation Visual Studio](https://docs.microsoft.com/visualstudio/)
+- [Documentation de Visual Studio](https://docs.microsoft.com/visualstudio/)
 - [Documentation Azure DevOps](https://docs.microsoft.com/azure/devops/)
 - [Documentation Azure](https://docs.microsoft.com/azure/)
 - [Documentation Microsoft 365](https://docs.microsoft.com/microsoft-365/)

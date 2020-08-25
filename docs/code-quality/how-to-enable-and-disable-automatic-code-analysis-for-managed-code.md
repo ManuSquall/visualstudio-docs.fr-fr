@@ -5,12 +5,12 @@ ms.topic: how-to
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 532fe62ceee3ab32fc203976af58dd867b97b453
-ms.sourcegitcommit: 48e93538f1e352fc1f972b642bb5fcce2f6834a2
+ms.openlocfilehash: eb4422a12620d7650b4fe150313b10fe59835064
+ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/25/2020
-ms.locfileid: "85371883"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88801020"
 ---
 # <a name="how-to-enable-and-disable-binary-code-analysis-for-managed-code"></a>Comment : activer et désactiver l’analyse du code binaire pour le code managé
 
@@ -21,9 +21,9 @@ Vous pouvez configurer l’analyse du code hérité (analyse binaire) pour qu’
 
 Pour activer ou désactiver l’analyse du code hérité :
 
-1. Dans **Explorateur de solutions**, cliquez avec le bouton droit sur le projet, puis choisissez **Propriétés**.
+1. Dans **Explorateur de solutions**, sélectionnez le projet et maintenez-le enfoncé (ou cliquez dessus avec le bouton droit), puis sélectionnez **Propriétés**.
 
-2. Dans la boîte de dialogue Propriétés du projet, choisissez l’onglet **analyse du code** .
+2. Dans la boîte de dialogue Propriétés du projet, accédez à l’onglet **analyse du code** .
 
 3. Spécifiez le type de build dans la **configuration** et la plateforme cible dans la **plateforme**. (Projets standard Non-.NET Core/. NET uniquement.)
 

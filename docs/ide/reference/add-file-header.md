@@ -7,12 +7,12 @@ ms.author: midumont
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 779092e277ac5b6eed3afcaceaf55b26ee2759dd
-ms.sourcegitcommit: 025816f8e388b29e58761d304b0fda755ac5a613
+ms.openlocfilehash: 2c69f73989e898c44bdef6cf008d48f6c918652a
+ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "86374167"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88801319"
 ---
 # <a name="add-file-header"></a>Ajouter un en-tête de fichier
 
@@ -34,12 +34,12 @@ Dans les **cas suivants :** Vous souhaitez ajouter facilement un en-tête de fi
 
 2. Ajoutez la règle suivante à votre fichier EditorConfig : *file_header_template*.
 
-3. Définissez la valeur de la règle pour qu’elle corresponde au texte d’en-tête que vous souhaitez appliquer.
+3. Définissez la valeur de la règle pour qu’elle corresponde au texte d’en-tête que vous souhaitez appliquer. Vous pouvez utiliser `{fileName}` comme espace réservé pour le nom de fichier.
 
     ![Règle d’en-tête de fichier EditorConfig](media/add-file-header-rule.png)
 
-> [!NOTE]
-> Vous ne pouvez pas avoir de multilignes explicites dans un EditorConfig et vous devrez utiliser le caractère de saut de ligne UNIX pour insérer de nouvelles lignes.
+    > [!NOTE]
+    > Vous ne pouvez pas avoir de multilignes explicites dans un EditorConfig et vous devrez utiliser le caractère de saut de ligne UNIX pour insérer de nouvelles lignes.
 
 4. Placez le signe insertion sur la première ligne de n’importe quel fichier C# ou Visual Basic.
 

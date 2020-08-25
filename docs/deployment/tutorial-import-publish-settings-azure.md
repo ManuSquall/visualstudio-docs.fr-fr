@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cd316956f8e6c385cd59c017af50452b07537dc6
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: 6d2c52d6db6ca3001712a692a1de059834c975ae
+ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84183312"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88801709"
 ---
 # <a name="publish-an-application-to-azure-app-service-by-importing-publish-settings-in-visual-studio"></a>Publier une application sur Azure App Service en important des paramètres de publication dans Visual Studio
 
@@ -23,7 +23,7 @@ Vous pouvez utiliser l’outil **Publier** pour importer des paramètres de publ
 
 Ces étapes s’appliquent aux applications ASP.NET, ASP.NET Core et .NET Core dans Visual Studio. Vous pouvez aussi importer des paramètres de publication pour les applications [Python](../python/publishing-python-web-applications-to-azure-from-visual-studio.md).
 
-Dans ce tutoriel, vous allez :
+Ce didacticiel présente les procédures suivantes :
 
 > [!div class="checklist"]
 > * Générer un fichier de paramètres de publication à partir d’Azure App Service
@@ -57,15 +57,15 @@ Un fichier de paramètres de publication (* \* . publishsettings*) est différen
 
 1. Sur l’ordinateur exécutant Visual Studio, créez un projet.
 
-    Choisissez le modèle adéquat. Dans cet exemple, choisissez **Application web ASP.NET (.NET Framework)** ou (pour C# uniquement) **Application web ASP.NET Core**, puis cliquez sur **OK**.
+    Choisissez le modèle adéquat. Dans cet exemple, choisissez l' **application web ASP.net (.NET Framework)** ou (pour C# uniquement) **ASP.net Core application Web**, puis sélectionnez **OK**.
 
-    Si vous ne voyez pas les modèles de projet spécifiés, cliquez sur le lien **Ouvrir Visual Studio Installer** dans le volet gauche de la boîte de dialogue **Nouveau projet**. Visual Studio Installer est lancé. Installez la charge de travail **développement Web et ASP.net** .
+    Si vous ne voyez pas les modèles de projet spécifiés, accédez au lien **ouvrir Visual Studio installer** dans le volet gauche de la boîte de dialogue **nouveau projet** . Visual Studio Installer est lancé. Installez la charge de travail **développement Web et ASP.net** .
 
     Le modèle de projet que vous choisissez (ASP.NET ou ASP.NET Core) doit correspondre à la version installée d’ASP.NET sur le serveur web.
 
-1. Choisissez **MVC** (.NET Framework) ou **Application web (modèle-vue-contrôleur)** (pour .NET Core) et vérifiez que l’option **Aucune authentification** est sélectionnée, puis cliquez sur **OK**.
+1. Choisissez **MVC** (.NET Framework) ou **application Web (Model-View-Controller)** (pour .net Core) et assurez-vous qu' **aucune authentification** n’est sélectionnée, puis sélectionnez **OK**.
 
-1. Tapez un nom comme **MyDbgApp**, puis cliquez sur **OK**.
+1. Tapez un nom tel que **myWebApp** , puis sélectionnez **OK**.
 
     Visual Studio crée le projet.
 
@@ -75,7 +75,7 @@ Un fichier de paramètres de publication (* \* . publishsettings*) est différen
 
 1. Dans le portail Azure, ouvrez Azure App Service.
 
-1. Cliquez sur **Obtenir le profil de publication** et enregistrez le profil localement.
+1. Accédez à **afficher le profil de publication** et enregistrez le profil localement.
 
     ![Obtenir le profil de publication](../deployment/media/tutorial-azure-app-service-get-publish-profile.png)
 

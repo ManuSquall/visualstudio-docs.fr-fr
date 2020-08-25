@@ -10,18 +10,18 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 026953ff52f4aa5c34dd4656432fed8ef2a48580
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.openlocfilehash: 2d58462b90039e14ae98fe450812ca4cfdb6cbbd
+ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "85535146"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88801579"
 ---
 # <a name="use-the-cookiecutter-extension"></a>Utiliser l’extension Cookiecutter
 
 [Cookiecutter](https://cookiecutter.readthedocs.io/en/latest/) fournit une interface utilisateur graphique pour découvrir des modèles, des options de modèle d’entrée et créer des projets et des fichiers. Cette extension est incluse avec Visual Studio 2017 et ultérieur, et peut être installée séparément dans les versions antérieures de Visual Studio.
 
-Cookiecutter nécessite Python 3.3 ou version ultérieure (32 bits ou 64 bits) ou Anaconda 3 4.2 ou version ultérieure (32 bits ou 64 bits). Si aucun interpréteur Python approprié n’est disponible, Visual Studio affiche un avertissement. Si vous installez un interpréteur python pendant que Visual Studio est en cours d’exécution, cliquez sur le bouton **démarrage** de la barre d’outils Cookiecutter pour détecter l’interpréteur nouvellement installé. (Consultez [environnements python](managing-python-environments-in-visual-studio.md) pour plus d’informations sur les environnements en général.)
+Cookiecutter nécessite Python 3.3 ou version ultérieure (32 bits ou 64 bits) ou Anaconda 3 4.2 ou version ultérieure (32 bits ou 64 bits). Si aucun interpréteur Python approprié n’est disponible, Visual Studio affiche un avertissement. Si vous installez un interpréteur python pendant que Visual Studio est en cours d’exécution, sélectionnez le bouton **démarrage** dans la barre d’outils Cookiecutter pour détecter l’interpréteur nouvellement installé. (Consultez [environnements python](managing-python-environments-in-visual-studio.md) pour plus d’informations sur les environnements en général.)
 
 Une fois l’installation terminée, sélectionnez **Afficher**  >  l'**Explorateur Cookiecutter** pour ouvrir sa fenêtre :
 
@@ -97,9 +97,9 @@ Il est possible d’améliorer ce rendu en spécifiant des métadonnées supplé
 
 | Propriété | Description |
 | --- | --- |
-| Etiquette | Spécifie ce qui apparaît au-dessus de l’éditeur pour la variable, au lieu du nom de la variable. |
+| Étiquette | Spécifie ce qui apparaît au-dessus de l’éditeur pour la variable, au lieu du nom de la variable. |
 | Description | Spécifie l’info-bulle qui apparaît sur le contrôle d’édition, au lieu de la valeur par défaut de cette variable. |
-| URL | Transforme l’étiquette en lien hypertexte, avec une info-bulle qui affiche l’URL. Un clic sur le lien hypertexte ouvre le navigateur par défaut de l’utilisateur pour une redirection vers cette URL. |
+| Adresse URL | Transforme l’étiquette en lien hypertexte, avec une info-bulle qui affiche l’URL. Le fait de sélectionner le lien hypertexte ouvre le navigateur par défaut de l’utilisateur sur cette URL. |
 | Sélecteur | Autorise la personnalisation de l’éditeur pour une variable. Les sélecteurs suivants sont actuellement pris en charge :<ul><li>`string` : zone de texte standard, valeur par défaut pour les chaînes.</li><li>`list` : zone de liste modifiable, valeur par défaut pour les listes.</li><li>`yesno` : zone de liste modifiable permettant de choisir entre `y` et `n`, pour les chaînes.</li><li>`odbcConnection`: Zone de texte avec un bouton **...** qui affiche une boîte de dialogue de connexion à la base de données.</li></ul> |
 
 Exemple :
@@ -189,7 +189,7 @@ Les arguments peuvent faire référence à d’autres variables Cookiecutter. Da
 
 Notez que la commande `Python.InstallProjectRequirements` fonctionne uniquement lorsque vous ajoutez des fichiers à un projet existant. Cette limitation existe, car la commande est traitée par le projet Python dans l’**Explorateur de solutions**, et il n’existe aucun projet pour recevoir le message dans **Explorateur de solutions** - **Affichage des dossiers**. Nous espérons que cette limitation gagne une version future (et offrira une meilleure prise en charge de l' **affichage des dossiers** en général).
 
-## <a name="troubleshooting"></a>Résolution des problèmes
+## <a name="troubleshooting"></a>Dépannage
 
 ### <a name="error-loading-template"></a>Erreur lors du chargement du modèle
 

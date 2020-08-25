@@ -1,6 +1,6 @@
 ---
-title: Comment utiliser le thème foncé et modifier la couleur du texte dans l’éditeur
-description: Découvrez comment définir le thème de couleur Visual Studio par défaut en mode Dark et modifier les couleurs de police dans l’éditeur de texte.
+title: Définir le thème Visual Studio Dark et modifier les couleurs du texte
+description: Découvrez comment changer le thème de couleur par défaut de Visual Studio en mode Dark et modifier les couleurs de police dans l’éditeur de code.
 ms.date: 08/20/2020
 ms.topic: how-to
 ms.custom: contperfq1
@@ -9,16 +9,16 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3b0e7b11fae63b9a2233b7391805760d3fdd7d27
-ms.sourcegitcommit: cf5b5437f0b43c6d52c479e1a2c443338bd27cda
+ms.openlocfilehash: d58bf3a00d3db208abfad23a67bd115914f14a15
+ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "88724924"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88801397"
 ---
-# <a name="how-to-personalize-the-visual-studio-ide-and-text-editor"></a>Comment : personnaliser l’éditeur de texte et l’IDE Visual Studio
+# <a name="how-to-personalize-the-visual-studio-ide-and-the-editor"></a>Comment : personnaliser l’IDE de Visual Studio et l’éditeur
 
-Dans cet article de procédure, nous allons personnaliser le thème de couleur de Visual Studio en sélectionnant le thème sombre. Nous allons également personnaliser les couleurs de deux types de texte différents dans l’éditeur de texte.
+Dans cet article de procédure, nous allons personnaliser le thème de couleur Visual Studio du thème bleu par défaut au thème sombre. Ensuite, nous allons personnaliser les couleurs de deux types de texte différents dans l’éditeur de code.
 
 ::: moniker range="vs-2017"
 
@@ -126,10 +126,10 @@ Nous allons maintenant personnaliser des couleurs de texte dans l’éditeur. To
 
    ![Fichier XML avec nouvelles couleurs de police](media/quickstart-personalize-xml-file-new-colors.png)
 
-Nous avons seulement exploré deux façons de personnaliser les couleurs dans Visual Studio. Nous espérons que vous explorerez les autres options de personnalisation dans la boîte de dialogue **Options** pour réellement vous familiariser avec Visual Studio.
+Nous avons seulement exploré deux façons de personnaliser les couleurs dans Visual Studio. Nous espérons que vous explorerez les autres options de personnalisation de la boîte de dialogue [**options**](../ide/reference/fonts-and-colors-environment-options-dialog-box.md) pour faire de vous-même Visual Studio.
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Modifier les polices, les couleurs et les options de contraste élevé dans Visual Studio](../ide/how-to-change-fonts-and-colors-in-visual-studio.md)
-- [Personnaliser l’éditeur](../ide/how-to-change-text-case-in-the-editor.md)
-- [Vue d’ensemble de l’IDE Visual Studio](../get-started/visual-studio-ide.md)
+- [Comment : modifier les polices, les couleurs et les thèmes dans Visual Studio](../ide/how-to-change-fonts-and-colors-in-visual-studio.md)
+- [Guide pratique pour changer la casse du texte dans l’éditeur](../ide/how-to-change-text-case-in-the-editor.md)
+- [Vue d’ensemble de l’IDE de Visual Studio](../get-started/visual-studio-ide.md)

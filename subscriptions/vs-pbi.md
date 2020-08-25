@@ -7,12 +7,12 @@ ms.assetid: 383fc910-3f4c-474a-a3f8-0f13525f05e9
 ms.date: 03/26/2020
 ms.topic: how-to
 description: Découvrez l’abonnement Power BI Pro inclus dans certains abonnements Visual Studio.
-ms.openlocfilehash: dd16d8f28f78a7496ad3c93ab1db8eb51ebcf43b
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.openlocfilehash: 9a16e827c45e600ff3b5edc8579b5941aa80ca90
+ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "85902996"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88801683"
 ---
 # <a name="power-bi-pro-in-visual-studio-subscriptions"></a>Power BI Pro dans les abonnements Visual Studio
 
@@ -29,7 +29,7 @@ Pour utiliser Power BI Pro, vous devez créer un compte ou vous connecter à l
    > [!div class="mx-imgBorder"]
    > ![Vignette de l’avantage Power BI Pro](_img/vs-pbi/vs-pbi-tile.png)
 
-3. Vous avez peut-être déjà un compte si vous avez activé des avantages d’autres abonnements, tels que l’abonnement Office 365 Developer ou Enterprise Mobility + Security.  Si effectivement vous avez un compte, vous avez le choix d’ajouter votre abonnement Power BI Pro à ce compte ou de vous inscrire pour créer un autre compte.  Nous vous recommandons vivement d’ajouter l’abonnement à votre compte existant pour pouvoir accéder à vos divers avantages à l’aide d’un identifiant utilisateur unique.
+3. Vous avez peut-être déjà un compte si vous avez activé certains autres avantages de l’abonnement, par exemple Microsoft 365 abonnement développeur ou Enterprise Mobility + Security.  Si effectivement vous avez un compte, vous avez le choix d’ajouter votre abonnement Power BI Pro à ce compte ou de vous inscrire pour créer un autre compte.  Nous vous recommandons vivement d’ajouter l’abonnement à votre compte existant pour pouvoir accéder à vos divers avantages à l’aide d’un identifiant utilisateur unique.
    > [!div class="mx-imgBorder"]
    > ![Avantage Power BI Pro, Compte existant](_img/vs-pbi/vs-pbi-existing-account.png)
 
@@ -55,9 +55,9 @@ Pour utiliser Power BI Pro, vous devez créer un compte ou vous connecter à l
     > [!div class="mx-imgBorder"]
     > ![Avantage Power BI Pro, Coordonnées](_img/vs-pbi/vs-pbi-payment-blurred-cropped.png)
 
-11. La page suivante confirme que vous êtes prêt à commencer à utiliser Power BI Pro.  Cette page contient un lien pour accéder à la page de connexion.  Nous vous recommandons d’enregistrer le lien vers la page de connexion, ainsi que votre identifiant utilisateur.  (Vous recevrez également un e-mail de bienvenue à l’adresse que vous avez fournie lors de la configuration du compte.)  Vous pouvez également voir une fenêtre Assistant Office 365 automatisée, que vous pouvez utiliser si vous avez des questions.  Cliquez sur **Démarrer** pour continuer.
+11. La page suivante confirme que vous êtes prêt à commencer à utiliser Power BI Pro.  Cette page contient un lien pour accéder à la page de connexion.  Nous vous recommandons d’enregistrer le lien vers la page de connexion, ainsi que votre identifiant utilisateur.  (Vous recevrez également un e-mail de bienvenue à l’adresse que vous avez fournie lors de la configuration du compte.)  Vous pouvez également voir une fenêtre Assistant Microsoft 365 automatisée, que vous pouvez utiliser si vous avez des questions.  Cliquez sur **Démarrer** pour continuer.
 
-12. Votre compte Power BI Pro est créé. Vous avez maintenant accès au Centre d’administration Office 365, où vous pouvez gérer les utilisateurs et les domaines, installer des logiciels Office et obtenir plus d’informations sur Office 365.  Et voilà !  Vous êtes prêt à commencer.
+12. Maintenant que vous avez configuré votre compte Power BI Pro, vous verrez le Microsoft 365 Centre d’administration, où vous pouvez gérer les utilisateurs et les domaines, installer les logiciels Office et en savoir plus sur Microsoft 365.  Et voilà !  Vous êtes prêt à commencer.
 
 ## <a name="eligibility"></a>Éligibilité
 
@@ -65,11 +65,11 @@ Pour utiliser Power BI Pro, vous devez créer un compte ou vous connecter à l
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise (Standard)   | VL, Azure, vente au détail, NFR sélectionnés<sup>1</sup> | Disponible       |  Oui|
 | Visual Studio Enterprise avec GitHub Enterprise  | LV | Disponible       |  Oui|
-| Visual Studio Professional (Standard, cloud mensuel) | Licences en volume, Azure, Détail                                       | Non disponible                                                            |N/D         |
-| Visual Studio Professional avec GitHub Enterprise | LV                                      | Non disponible                                                            |N/D         |
-| Visual Studio Test Professional (Standard)                         | Licences en volume, Détail                                              | Non disponible                                                            |N/D         |
+| Visual Studio Professional (Standard, cloud mensuel) | Licences en volume, Azure, Détail                                       | Non disponible                                                            |NA         |
+| Visual Studio Professional avec GitHub Enterprise | LV                                      | Non disponible                                                            |NA         |
+| Visual Studio Test Professional (Standard)                         | Licences en volume, Détail                                              | Non disponible                                                            |NA         |
 | Plateformes MSDN (Standard)                                          | Licences en volume, Détail                                              | Disponible       |  Oui|
-| Visual Studio Enterprise (cloud mensuel) | Azure                                       | Non disponible                                  |N/D|
+| Visual Studio Enterprise (cloud mensuel) | Azure                                       | Non disponible                                  |NA|
 ||
 
 <sup>1</sup>  *comprend : non pour la revente (NFR), Visual Studio Industry Partner (VSIP), BizSpark, MCT Software & Services Developer, MCT Software & service, MVP (Most Valuable Professional), Bureau régional.  Exclut : Microsoft Partner Network (MPN), FTE, imagine.*
@@ -91,7 +91,7 @@ R : Oui, vous pouvez l’utiliser dans un environnement de production, avec deu
 - Cet avantage Power BI Pro ne peut pas être utilisé sur des locataires de type Secteur public.
 
 ### <a name="q--when-i-try-to-activate-power-bi-pro-i-get-a-message-you-already-have-an-account-through-work--can-i-still-use-the-benefit"></a>Q : Lorsque j’essaie d’activer Power BI Pro, j’obtiens un message m’indiquant que je dispose déjà d’un compte dans le cadre professionnel.  Puis-je continuer à utiliser l’avantage ?
-R : Oui.  Ce message indique que vous êtes connecté à un domaine qui comprend déjà des locataires Office 365 actifs, dont vous n’êtes pas l’administrateur.  Pour ajouter Power BI Pro à un locataire, vous devez en être l’administrateur.  Si ce n’est pas le cas, suivez les étapes ci-dessous pour créer votre propre locataire.
+R : Oui.  Le message indique que vous êtes connecté à un domaine qui a déjà des locataires Microsoft 365 actifs sur lesquels vous n’êtes pas administrateur.  Pour ajouter Power BI Pro à un locataire, vous devez en être l’administrateur.  Si ce n’est pas le cas, suivez les étapes ci-dessous pour créer votre propre locataire.
 1. Lorsque vous voyez le message qui vous indique que vous disposez déjà d’un compte dans le cadre professionnel, cliquez sur **Créer un compte**.
 
 2. Dans l’écran suivant, entrez vos informations de contact, puis cliquez sur **Suivant**.

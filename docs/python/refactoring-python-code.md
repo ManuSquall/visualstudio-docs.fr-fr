@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: ea735dd5cc3da8d5509961dbc8b27eb6106fd2af
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.openlocfilehash: be93ac7b8bc0659da522abcf6000d97ec05d46b9
+ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "85520560"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88801332"
 ---
 # <a name="refactor-python-code"></a>Refactoriser du code Python
 
@@ -71,7 +71,7 @@ Enfin, si un élément doit normalement être exclu, mais qu’il a d’autres v
 
 Lors de l’écriture de code, il est facile de vous retrouver avec des instructions `import` concernant des modules qui ne sont pas utilisées du tout. Visual Studio analyse votre code et détermine automatiquement si une instruction `import` est nécessaire en regardant si les noms importés sont utilisés dans le cadre ci-dessous, où l’instruction s’exécute.
 
-Cliquez avec le bouton droit n’importe où dans l’éditeur, puis sélectionnez **Remove Imports** (Supprimer les importations), qui vous propose des suppressions à partir de **toutes les portées** ou uniquement de la **portée actuelle** :
+Cliquez avec le bouton droit n’importe où dans l’éditeur et sélectionnez **Supprimer les importations**, ce qui vous permet d’effectuer des suppressions dans **toutes les étendues** ou uniquement dans l' **étendue actuelle**:
 
 ![Menu Supprimer les importations](media/code-refactor-remove-imports-1.png)
 

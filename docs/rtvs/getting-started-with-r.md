@@ -8,12 +8,12 @@ ms.author: kraigb
 manager: jillfra
 ms.workload:
 - data-science
-ms.openlocfilehash: df46a2731f9923d85a16082f96c44947099db592
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: be0ba7b32af5247bb0dccccb68d900cb6797cc13
+ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "63000520"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88801176"
 ---
 # <a name="get-started-with-r-tools-for-visual-studio"></a>Bien démarrer avec Outils R pour Visual Studio
 
@@ -22,8 +22,8 @@ Après avoir installé Outils R pour Visual Studio (RTVS) (voir [Installation](
 ## <a name="create-an-r-project"></a>Créer un projet R
 
 1. Ouvrez Visual Studio.
-1. Choisissez **File** > **New** > **Project** (**Ctrl**+**Shift**+**N**)
-1. Sélectionnez "R Project" à partir de sous **Templates** > **R**, donner au projet un nom et un emplacement, et sélectionnez **OK:**
+1. Choisissez **fichier**  >  **nouveau**  >  **projet** (**CTRL** + **MAJ** + **N**)
+1. Sélectionnez « projet r » sous **modèles**  >  **r**, attribuez un nom et un emplacement au projet, puis sélectionnez **OK**:
 
    ![Boîte de dialogue Nouveau projet pour R dans Visual Studio (RTVS dans VS2017)](media/getting-started-01-new-project.png)
 
@@ -34,7 +34,7 @@ Après avoir installé Outils R pour Visual Studio (RTVS) (voir [Installation](
     - La fenêtre **R Interactive**, située en bas à gauche, vous permet de développer et de tester votre code de manière interactive.
 
 > [!Note]
-> Vous pouvez utiliser la fenêtre **R Interactive** si aucun projet n’est ouvert (et même si un type de projet différent est chargé). Il suffit de sélectionner **R Tools** > **Windows** > **R Interactive** à tout moment.
+> Vous pouvez utiliser la fenêtre **R Interactive** si aucun projet n’est ouvert (et même si un type de projet différent est chargé). Il vous suffit de sélectionner **Outils R**  >  **Windows**  >  **fenêtre interactive R** à tout moment.
 
 ## <a name="explore-the-interactive-window-and-intellisense"></a>Explorer la fenêtre interactive et IntelliSense
 
@@ -84,14 +84,14 @@ Par exemple, les étapes suivantes créent un petit extrait de code pour explore
     plot(density(pop), main = "Population Density", xlab = "X", ylab = "")
     ```
 
-1. Pour voir rapidement les résultats, sélectionnez tout le code (**Ctrl**+**A**), puis appuyez sur **Ctrl**+**Enter** ou clic droit et **sélectionnez Execute In Interactive**. Tout le code sélectionné est exécuté dans la fenêtre interactive comme si vous l’aviez tapé directement. Le résultat s’affiche dans une fenêtre de tracés :
+1. Pour afficher rapidement les résultats, sélectionnez tout le code (**CTRL** + **A**), puis appuyez sur **CTRL** + **entrée** ou cliquez avec le bouton droit et sélectionnez **exécuter en mode interactif**. Tout le code sélectionné est exécuté dans la fenêtre interactive comme si vous l’aviez tapé directement. Le résultat s’affiche dans une fenêtre de tracés :
 
     ![Affichage d’un tracé dans Visual Studio](media/getting-started-08-plot1.png)
 
-1. Pour une seule ligne, appuyez simplement sur **Ctrl**+**Enter** à tout moment pour exécuter cette ligne dans la fenêtre interactive.
+1. Pour une seule ligne, appuyez simplement sur **CTRL** + **entrée** à tout moment pour exécuter cette ligne dans la fenêtre interactive.
 
 > [!Tip]
-> Apprenez le modèle de faire des modifications et de presser **Ctrl**+**Enter** (ou de sélectionner tout avec **Ctrl**+**A,** puis en appuyant sur **Ctrl**+**Enter**) pour exécuter rapidement le code. Sur des opérations identiques, vous obtiendrez de meilleurs résultats qu’avec la souris.
+> Pour exécuter rapidement le code, Découvrez le modèle d’apport de modifications et appuyez sur **CTRL** + **entrée** (ou sélectionnez tout en appuyant **sur CTRL** + **A** , puis sur **CTRL** + **entrée**). Sur des opérations identiques, vous obtiendrez de meilleurs résultats qu’avec la souris.
 >
 > Par ailleurs, vous pouvez faire glisser et déplacer la fenêtre de tracés à l’extérieur du cadre de Visual Studio et placer tout autre élément désiré sur votre écran. Vous pouvez ensuite redimensionner la fenêtre de tracés à la taille souhaitée, puis l’enregistrer dans un fichier image ou PDF.
 
@@ -103,7 +103,7 @@ Par exemple, les étapes suivantes créent un petit extrait de code pour explore
     lines(density(samp.means))
     ```
 
-1. Appuyez **sur Ctrl**+**A** et **Ctrl**+**Enter** à nouveau pour exécuter le code, produisant le résultat suivant:
+1. Appuyez sur **CTRL** + **A** et appuyez de nouveau sur **CTRL +** + **entrée** pour exécuter le code, en produisant le résultat suivant :
 
     ![Tracé double mis à jour dans Visual Studio](media/getting-started-09-plot2.png)
 
@@ -125,7 +125,7 @@ Par exemple, les étapes suivantes créent un petit extrait de code pour explore
     lines(density(samp.means))
     ```
 
-1. **Ctrl**+**A** et **Ctrl**+**entrent** à nouveau pour voir le résultat :
+1. **CTRL** + **Et** **Appuyez**de + **Enter** nouveau sur Ctrl pour afficher le résultat :
 
     ![Tracé double mis à jour dans Visual Studio, mis à l’échelle correctement](media/getting-started-10-plot3.png)
 
@@ -135,9 +135,9 @@ L’éditeur offre bien d’autres fonctionnalités. Pour plus d’informations,
 
 L’un des atouts de Visual Studio est son interface utilisateur de débogage. Reposant sur cette fondation solide, RTVS ajoute des éléments d’interface utilisateur novateurs comme [l’explorateur de variables](variable-explorer.md). Ici, nous allons examiner succinctement le débogage.
 
-1. Pour commencer, réinitialisez l’espace de travail actuel pour effacer tout ce que vous avez fait jusqu’à présent en utilisant la commande de menu **R Tools** > **Session** > **Reset.** Par défaut, toutes les actions que vous réalisez dans la fenêtre interactive sont ajoutées à la session active, celle-ci étant ensuite utilisée par le débogueur. La réinitialisation de la session vous permet de démarrer la session de débogage sans données préexistantes. Toutefois, la commande **Réinitialiser** n’affecte pas votre fichier source *script.R*, car celui-ci est géré et enregistré en dehors de l’espace de travail.
+1. Pour commencer, réinitialisez l’espace de travail actuel pour effacer tout ce que vous avez **R Tools**effectué jusqu’à présent à l’aide de la  >  **Session**  >  commande de menu**réinitialisation** de session des outils R. Par défaut, toutes les actions que vous réalisez dans la fenêtre interactive sont ajoutées à la session active, celle-ci étant ensuite utilisée par le débogueur. La réinitialisation de la session vous permet de démarrer la session de débogage sans données préexistantes. Toutefois, la commande **Réinitialiser** n’affecte pas votre fichier source *script.R*, car celui-ci est géré et enregistré en dehors de l’espace de travail.
 
-1. Dans le fichier *script.R* créé dans la section précédente, définissez un point d’arrêt sur la ligne qui commence par `pop <-`. Pour cela, placez le signe insertion sur cette ligne et appuyez sur **F9**, ou sélectionnez la commande de menu **Déboguer** > **Point d’arrêt**. Sinon, cliquez simplement dans la marge de gauche (ou gouttière) de cette ligne où se trouve le point d’arrêt rouge :
+1. Dans le fichier *script.R* créé dans la section précédente, définissez un point d’arrêt sur la ligne qui commence par `pop <-`. Pour cela, placez le signe insertion sur cette ligne et appuyez sur **F9**, ou sélectionnez la commande de menu **Déboguer** > **Point d’arrêt**. Vous pouvez également cliquer dans la marge de gauche (ou gouttière) de cette ligne où le point de point d’arrêt rouge s’affiche :
 
     ![Définition d’un point d’arrêt dans l’éditeur](media/getting-started-11-debug1.png)
 
@@ -149,7 +149,7 @@ L’un des atouts de Visual Studio est son interface utilisateur de débogage. R
 
     ![Barre d’outils de débogage dans Visual Studio](media/getting-started-13-debug3.png)
 
-1. Quand l’exécution est arrêtée au niveau d’un point d’arrêt, vous pouvez examiner les valeurs des variables. Recherchez la fenêtre **Automatique** dans Visual Studio et sélectionnez l’onglet dans la partie inférieure nommé **Variables locales**. La fenêtre **Variables locales** affiche les variables locales au niveau du point actif dans le programme. Si vous êtes arrêté sur le point d’arrêt défini précédemment, vous pouvez constater que la variable `pop` n’est pas encore définie. Maintenant, utilisez le **Debug** > **Step Over** commande (**F10**), et vous voyez la valeur pour `pop` apparaître:
+1. Quand l’exécution est arrêtée au niveau d’un point d’arrêt, vous pouvez examiner les valeurs des variables. Recherchez la fenêtre **Automatique** dans Visual Studio et sélectionnez l’onglet dans la partie inférieure nommé **Variables locales**. La fenêtre **Variables locales** affiche les variables locales au niveau du point actif dans le programme. Si vous êtes arrêté sur le point d’arrêt défini précédemment, vous pouvez constater que la variable `pop` n’est pas encore définie. À présent, utilisez la commande **Déboguer**  >  **pas à pas principal** (**F10**) pour afficher la valeur `pop` :
 
     ![Fenêtre Variables locales dans Visual Studio](media/getting-started-14-debug4.png)
 
@@ -168,5 +168,5 @@ Dans cette procédure pas à pas, vous avez pu découvrir les bases des projets�
 - [Exemples de projets](getting-started-samples.md)
 - [Modification du code](editing-r-code-in-visual-studio.md)
 - [Débogage](debugging-r-in-visual-studio.md)
-- [Espaces](r-workspaces-in-visual-studio.md)
+- [Espaces de travail](r-workspaces-in-visual-studio.md)
 - [Visualisation des données](visualizing-data-with-r-in-visual-studio.md)

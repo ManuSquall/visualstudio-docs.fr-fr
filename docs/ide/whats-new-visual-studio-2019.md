@@ -2,7 +2,7 @@
 title: Nouveautés de Visual Studio 2019
 titleSuffix: ''
 description: Découvrez les nouvelles fonctionnalités de Visual Studio 2019.
-ms.date: 08/05/2020
+ms.date: 08/21/2020
 helpviewer_keywords:
 - Visual Studio, what's new
 - what's new [Visual Studio]
@@ -15,12 +15,12 @@ ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: 333bb9ca24579758112199c13d5a4af3f60d6058
-ms.sourcegitcommit: d21f1a028628d0221b567ba496690b3b68cfded7
+ms.openlocfilehash: 389315d7ec48c85fbab96b5270cbcef54faf7e8e
+ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2020
-ms.locfileid: "87818584"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88801059"
 ---
 # <a name="whats-new-in-visual-studio-2019"></a>Nouveautés de Visual Studio 2019
 
@@ -152,7 +152,7 @@ Pour plus d’informations, consultez les billets de blog [Visual Studio Live Sh
 
 Nous introduisons une nouvelle extension que vous pouvez télécharger et utiliser avec Visual Studio 2019. Cette nouvelle extension vous permet de réviser, d’exécuter et même de déboguer les demandes de tirage (pull requests) de votre équipe sans quitter Visual Studio. Nous prenons en charge le code dans les dépôts GitHub et Azure DevOps.
 
-   ![Capture d’écran de la nouvelle fenêtre de démarrage dans Visual Studio 2019](media/vs-2019/pr-experience.png)
+   ![Capture d’écran de la nouvelle extension des requêtes de tirage dans Visual Studio 2019](media/vs-2019/pr-experience.png)
 
 Pour plus d’informations, consultez le billet de blog [Code reviews using the Visual Studio Pull Requests extension](https://devblogs.microsoft.com/visualstudio/code-reviews-using-the-visual-studio-pull-requests-extension/).
 
@@ -241,9 +241,9 @@ Vous vous demandez peut-être quel est l'intérêt d'envoyer des commentaires à
 * [Notes de publication de Visual Studio 2019](/visualstudio/releases/2019/release-notes/)
 * [Notes de publication de Visual Studio 2019 pour Mac](/visualstudio/releasenotes/vs2019-mac-relnotes/)
 * [Nouveautés du kit de développement logiciel (SDK) Visual Studio 2019](../extensibility/whats-new-visual-studio-2019-sdk.md)
-* [Nouveautés de C++ dans Visual Studio](/cpp/overview/what-s-new-for-visual-cpp-in-visual-studio.md)
-* [Nouveautés de C# 8,0](/dotnet/csharp/whats-new/csharp-8.md)
-* [Nouveautés de .NET Core 3.1](/dotnet/core/whats-new/dotnet-core-3-1.md)
-* [Nouveautés de .NET Framework](/dotnet/framework/whats-new.md)
+* [Nouveautés de C++ dans Visual Studio](/cpp/overview/what-s-new-for-visual-cpp-in-visual-studio/)
+* [Nouveautés de C# 8,0](/dotnet/csharp/whats-new/csharp-8/)
+* [Nouveautés de .NET Core 3.1](/dotnet/core/whats-new/dotnet-core-3-1/)
+* [Nouveautés de .NET Framework](/dotnet/framework/whats-new/)
 * [Conférence Microsoft Build](https://www.microsoft.com/build)
 * [Conférence Microsoft Ignite](https://www.microsoft.com/ignite)

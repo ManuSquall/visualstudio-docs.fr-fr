@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 985f14446f17d1a4df3cfd14e156f21b7a7ce0de
-ms.sourcegitcommit: e359b93c93c6ca316c0d8b86c2b6e566171fd1ea
+ms.openlocfilehash: c94742b452bfd665dc35c59ef831bca2cdacf1f5
+ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/01/2020
-ms.locfileid: "87507857"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88801046"
 ---
 # <a name="how-to-configure-legacy-analysis-for-managed-code"></a>Comment : configurer l’analyse héritée pour le code managé
 
@@ -36,11 +36,11 @@ Dans Visual Studio, vous pouvez choisir dans une liste d’ensembles de [règles
 
 1. Ouvrez l’onglet **analyse du code** dans les pages de propriétés du projet. Plusieurs méthodes sont possibles :
 
-   - Dans **Explorateur de solutions**, sélectionnez le projet. Dans la barre de menus, sélectionnez **analyser**  >  **configurer l’analyse**  >  **du code pour \<projectname> **.
+   - Dans **Explorateur de solutions**, choisissez le projet. Dans la barre de menus, sélectionnez **analyser**  >  **configurer l’analyse**  >  **du code pour \<projectname> **.
 
    - Dans **Explorateur de solutions** , cliquez avec le bouton droit sur le projet, sélectionnez **Propriétés**, puis sélectionnez l’onglet **analyse du code** .
 
-2. Dans les listes **configuration** et **plateforme** , sélectionnez la configuration de build et la plateforme cible.
+2. Dans les listes **configuration** et **plateforme** , choisissez la configuration de build et la plateforme cible.
 
 ::: moniker range="vs-2017"
 
@@ -89,11 +89,11 @@ Par défaut, tous les projets managés d’une solution se voient affecter l’e
 
 4. Vous pouvez spécifier un ensemble de règles pour un ou plusieurs projets :
 
-    - Pour spécifier un ensemble de règles pour un projet individuel, sélectionnez le nom du projet.
+    - Pour spécifier un ensemble de règles pour un projet individuel, choisissez le nom du projet.
 
-    - Pour spécifier un ensemble de règles pour plusieurs projets, maintenez la **touche Ctrl** enfoncée et sélectionnez les noms de projet.
+    - Pour spécifier un ensemble de règles pour plusieurs projets, sélectionnez **CTRL** et les noms de projet.
 
-    - Pour spécifier tous les projets de la solution, maintenez la **touche Maj** enfoncée et cliquez dans la liste projet.
+    - Pour spécifier tous les projets de la solution, sélectionnez **Shift** et la liste de projets.
 
 5. Sélectionnez le champ **ensemble de règles** d’un projet, puis sélectionnez le nom de l’ensemble de règles que vous souhaitez appliquer.
 

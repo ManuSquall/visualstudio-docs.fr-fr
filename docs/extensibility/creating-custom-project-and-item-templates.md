@@ -8,12 +8,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2d520c92e84286ab05f13ad140a9e2e5a3454e09
-ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
+ms.openlocfilehash: eb6bcd63896a11f9ca1eabddddc17b3e52865e5b
+ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/15/2020
-ms.locfileid: "88248577"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88801254"
 ---
 # <a name="create-custom-project-and-item-templates"></a>Créer des modèles de projet et d’élément personnalisés
 
@@ -72,7 +72,7 @@ Pour les scénarios de création de modèles de base, vous devez utiliser l’As
 
 1. Créez un projet VSIX. Pour plus d’informations, consultez [modèle de projet VSIX](../extensibility/vsix-project-template.md).
 
-2. Définissez le projet VSIX comme projet de démarrage. Dans le **Explorateur de solutions**, sélectionnez le nœud de projet VSIX, sélectionnez-le et maintenez-le enfoncé (ou cliquez avec le bouton droit), puis sélectionnez **définir comme projet de démarrage**.
+2. Définissez le projet VSIX comme projet de démarrage. Dans le **Explorateur de solutions**, sélectionnez le nœud de projet VSIX, cliquez avec le bouton droit, puis sélectionnez **définir comme projet de démarrage**.
 
 3. Définissez le projet de modèle de projet en tant que ressource du projet VSIX. Ouvrez le fichier *. vsixmanifest* . Accédez à l’onglet **composants** , puis sélectionnez **nouveau**.
 

@@ -11,12 +11,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 716345cd2df3e941ea3d50cfc1519dc86dcd7077
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.openlocfilehash: d5dd8864484e2b41a1146f1da495251663afdb6a
+ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/13/2020
-ms.locfileid: "75918626"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88801501"
 ---
 # <a name="development-best-practices-for-com-vsto-and-vba-add-ins-in-office"></a>Meilleures pratiques de développement pour les compléments COM, VSTO et VBA dans Office
   Si vous développez des compléments COM, VSTO ou VBA pour Office, suivez les meilleures pratiques de développement décrites dans cet article.   afin de garantir :
@@ -57,7 +57,7 @@ Si la solution se compose d’un complément et d’un processus qui est externe
 Définissez le numéro de version des fichiers binaires dans votre solution et incrémentez-le à chaque mise à jour. Cela facilitera l’identification des modifications entre les versions et l’évaluation de la compatibilité.
 
 ## <a name="provide-support-statements-for-the-latest-versions-of-office"></a>Fournir des instructions de support pour les dernières versions d’Office
-Les clients demandent aux ISV de fournir des instructions de prise en charge pour leurs compléments COM, VSTO et VBA qui s’exécutent dans Office. La liste de vos relevés de support explicites permet aux clients utilisant les outils de préparation d’Office 365 ProPlus de comprendre votre support.
+Les clients demandent aux ISV de fournir des instructions de prise en charge pour leurs compléments COM, VSTO et VBA qui s’exécutent dans Office. La liste de vos instructions de prise en charge explicite permet aux clients qui utilisent des applications de Microsoft 365 pour Enterprise Readiness de comprendre votre support.
 
 Pour fournir des instructions de prise en charge pour les applications clientes Office (par exemple, Word ou Excel), vérifiez d’abord que vos compléments s’exécutent dans la version d’Office actuelle, puis validez pour fournir des mises à jour si votre complément s’arrête dans une version ultérieure. Vous n’avez pas besoin de tester vos compléments lorsque Microsoft publie une nouvelle version ou une mise à jour d’Office. Microsoft modifie rarement la plate-forme d’extensibilité COM, VSTO et VBA dans Office, et ces modifications sont bien documentées.
 

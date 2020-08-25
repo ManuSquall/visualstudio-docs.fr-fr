@@ -7,23 +7,23 @@ ms.assetid: b331c837-3524-42b7-820e-b4fdd5e12793
 ms.date: 03/03/2020
 ms.topic: conceptual
 description: Abonnements Visual Studio dans un programme MPSA (Microsoft Products and Services Agreement)
-ms.openlocfilehash: 6ce2208e6d1028e1e697b216d41cdd825dfc0d33
-ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
+ms.openlocfilehash: 90bfb27fcb80910f6add41c30d4c03ece1520ef4
+ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/15/2020
-ms.locfileid: "88247318"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88801462"
 ---
 # <a name="visual-studio-subscriptions-in-a-microsoft-products-and-services-agreement-mpsa"></a>Abonnements Visual Studio dans un programme MPSA (Microsoft Products and Services Agreement)
 Si vous avez acheté des abonnements Visual Studio via le programme MPSA, il existe quelques éléments à connaître avant de devenir administrateur des abonnements Visual Studio et d’attribuer des abonnements à vos utilisateurs. Si vous avez déjà été configuré comme administrateur, vous pouvez accéder directement au [portail d’administration](https://manage.visualstudio.com/) des abonnements Visual Studio.
 
-Les clients MPSA gèrent désormais les ressources achetées via MPSA dans un nouveau portail appelé [Business Center](https://businessaccount.microsoft.com/Customer), qui prend en charge des fonctionnalités similaires à celles du Centre de gestion des licences en volume (VLSC). Cela inclut l’affichage du récapitulatif des licences, des commandes, des téléchargements, des clés, des utilisateurs, etc. Toutefois, les abonnements Visual Studio dans MPSA se comportent de la même façon que les services Cloud. Business Center utilise également des comptes professionnels pour la connexion à la place des comptes Microsoft. Si votre organisation utilise des services cloud comme Office 365 ou Azure Active Directory, et que votre e-mail fait partie de l’un de ces deux services, il s’agit déjà d’un compte professionnel. Ceci vous permet de vous inscrire auprès de Business Center avec votre mot de passe existant. Si votre organisation n’utilise pas de services cloud et que votre e-mail n’est pas du tout un compte professionnel, vous pouvez l’utiliser pour vous inscrire auprès de Business Center.
+Les clients MPSA gèrent désormais les ressources achetées via MPSA dans un nouveau portail appelé [Business Center](https://businessaccount.microsoft.com/Customer), qui prend en charge des fonctionnalités similaires à celles du Centre de gestion des licences en volume (VLSC). Cela inclut l’affichage du récapitulatif des licences, des commandes, des téléchargements, des clés, des utilisateurs, etc. Toutefois, les abonnements Visual Studio dans MPSA se comportent de la même façon que les services Cloud. Business Center utilise également des comptes professionnels pour la connexion à la place des comptes Microsoft. Si votre organisation utilise des services Cloud tels que Microsoft 365 ou Azure Active Directory et que votre adresse e-mail fait partie de l’un de ces deux services, il s’agit déjà d’un compte professionnel. Ceci vous permet de vous inscrire auprès de Business Center avec votre mot de passe existant. Si votre organisation n’utilise pas de services cloud et que votre e-mail n’est pas du tout un compte professionnel, vous pouvez l’utiliser pour vous inscrire auprès de Business Center.
 
 En outre, le [portail d’administration](https://manage.visualstudio.com/) des abonnements Visual Studio est l’emplacement où les abonnements sont attribués aux abonnés une fois que vous devenez administrateur des abonnements Visual Studio. Dans MPSA, les abonnements Visual Studio doivent être provisionnés dans leur portail de gestion respectif, qui est le portail d’administration des abonnements Visual Studio. Pour ce faire, vous devez associer votre compte d’achats à un locataire (autrement dit, contoso.onmicrosoft.com).
 
 Notez qu’il existe deux types de locataires : les locataires gérés et les locataires non gérés. Un locataire géré fait référence à un locataire qui est déjà géré par des administrateurs au sein de l’organisation.
 
-Un locataire non géré est un locataire auquel aucun administrateur n’est affecté et qui ne peut pas être utilisé pour des services en ligne comme Office 365. Des locataires non gérés sont également créés lors de l’inscription auprès de Business Center avec un e-mail qui n’est pas un compte professionnel. Si vous avez été invité à créer un mot de passe lors de l’inscription auprès de Business Center, cela signifie que votre e-mail n’était pas un compte professionnel et qu’il a créé un locataire non géré.
+Un locataire non géré est un locataire sans aucun administrateur attribué et n’est pas utilisable pour les services en ligne tels que Microsoft 365. Des locataires non gérés sont également créés lors de l’inscription auprès de Business Center avec un e-mail qui n’est pas un compte professionnel. Si vous avez été invité à créer un mot de passe lors de l’inscription auprès de Business Center, cela signifie que votre e-mail n’était pas un compte professionnel et qu’il a créé un locataire non géré.
 
 Voici quelques exigences/étapes nécessaires pour devenir administrateur des abonnements Visual Studio avant d’effectuer l’association du locataire.
 

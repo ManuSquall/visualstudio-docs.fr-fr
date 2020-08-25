@@ -7,12 +7,12 @@ ms.assetid: e2f2619c-7736-47e5-a066-5940d5994db9
 ms.date: 07/29/2020
 ms.topic: conceptual
 description: Découvrir comment localiser et télécharger des logiciels Microsoft inclus dans des abonnements Visual Studio
-ms.openlocfilehash: aa0784694b3407c621e8efb1916ed5fe41aee0c7
-ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
+ms.openlocfilehash: d1d885bbe9322f6d15cecff7e44d879aceb63d4c
+ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/15/2020
-ms.locfileid: "88248225"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88801826"
 ---
 # <a name="downloading-software-titles-in-visual-studio-subscriptions"></a>Téléchargement de logiciels inclus dans les abonnements Visual Studio
 En fonction de votre abonnement Visual Studio, de nombreux logiciels Microsoft sont peut-être à votre disposition.  Cet article explique comment localiser et télécharger les logiciels dont vous avez besoin pour tirer le meilleur parti de votre abonnement. 
@@ -22,7 +22,7 @@ Seuls les téléchargements inclus dans votre abonnement s’affichent dans la p
 Si votre abonnement est fourni par votre entreprise ou votre établissement scolaire, l’administrateur de votre abonnement contrôle si vous avez accès aux téléchargements. La désactivation de l’accès aux téléchargements désactive également l’accès aux clés de produit. Si vous n’avez pas accès aux téléchargements et clés de produit et que vous en avez besoin, [Contactez votre administrateur](contact-my-admin.md).
 
 > [!NOTE]
-> Nous avons connaissance d’un problème concernant la disponibilité des clés de produit Office 365.  Nous étudions la cause et allons mettre à jour cet article lorsque le problème est résolu. 
+> Nous avons connaissance d’un problème concernant la disponibilité des clés de produit Microsoft 365.  Nous étudions la cause et allons mettre à jour cet article lorsque le problème est résolu. 
 
 ## <a name="how-do-i-find-downloads-in-the-subscriber-portal"></a>Comment trouver des téléchargements dans le portail des abonnés ?
 Quand vous visitez la page [Téléchargements](https://my.visualstudio.com/downloads/featured?wt.mc_id=o~msft~docs), les téléchargements les plus populaires s’affichent organisés en groupes par type de produit.  Vous pouvez sélectionner l’un des téléchargements les plus fréquents affichés, ou rechercher un produit à l’aide de la barre de recherche située en haut de la page.

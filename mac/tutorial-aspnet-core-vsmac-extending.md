@@ -1,17 +1,17 @@
 ---
-title: Extension d’une application web ASP.NET Core existante
+title: Étendre une application Web ASP.NET Core existante
 description: Ce document contient des didacticiels vidéo expliquant comment étendre l’exemple eShopOnWeb ASP.NET Core application.
 author: sayedihashimi
 ms.author: sayedha
 ms.date: 10/18/2019
 ms.assetid: 047f5e36-f38e-4bf6-a1c5-3fde32978b7d
 ms.topic: tutorial
-ms.openlocfilehash: 903d590658be6016cf58e83f981ceec2c3d1788f
-ms.sourcegitcommit: 5335a9864d5747bc917ed28d4ebeade3076b10e7
+ms.openlocfilehash: aa0267cc185a83249c381d22b995570a2f3f244d
+ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/03/2020
-ms.locfileid: "85949969"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88800787"
 ---
 # <a name="tutorial-extending-an-existing-aspnet-core-web-application"></a>Didacticiel : extension d’une application Web ASP.NET Core existante
 

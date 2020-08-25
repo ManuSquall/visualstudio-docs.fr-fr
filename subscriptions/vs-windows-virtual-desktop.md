@@ -7,19 +7,19 @@ ms.assetid: 872c5746-5357-4764-949b-aa525a0adf1a
 ms.date: 04/20/2020
 ms.topic: conceptual
 description: Découvrez comment vous pouvez tirer parti du bureau virtuel Microsoft Windows via votre abonnement Visual Studio
-ms.openlocfilehash: b84527f7bdaf3e9218585bd52af0743ef23a5637
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: 865e18d7b8672520fcb771a1db56141fb6fd9f0a
+ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84183585"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88800604"
 ---
 # <a name="access-windows-virtual-desktop-in-subscriptions"></a>Accéder au bureau virtuel Windows dans les abonnements 
 Les abonnés Visual Studio peuvent désormais utiliser leur crédit Azure dev/test pour les services de bureau virtuel Microsoft Windows.  
-Windows Virtual Desktop est un service de virtualisation d’applications et de postes de travail complet qui s’exécute dans le Cloud. Il s’agit de la seule infrastructure VDI (Virtual Desktop Infrastructure) qui offre une gestion simplifiée, plusieurs sessions Windows 10, des optimisations pour Office 365 ProPlus et la prise en charge des environnements Services Bureau à distance (RDS). Déployez et mettez à l’échelle vos applications et postes de travail Windows sur Azure en quelques minutes et bénéficiez de fonctionnalités de sécurité et de conformité intégrées.
+Windows Virtual Desktop est un service de virtualisation d’applications et de postes de travail complet qui s’exécute dans le Cloud. Il s’agit de la seule infrastructure VDI (Virtual Desktop Infrastructure) qui offre une gestion simplifiée, plusieurs sessions Windows 10, des optimisations pour les applications Microsoft 365 pour l’entreprise et la prise en charge des environnements Services Bureau à distance (RDS). Déployez et mettez à l’échelle vos applications et postes de travail Windows sur Azure en quelques minutes et bénéficiez de fonctionnalités de sécurité et de conformité intégrées.
 Voici ce que vous pouvez faire quand vous exécutez Windows Virtual Desktop sur Azure :
 - Configurer un déploiement Windows 10 multisession qui délivre une version complète de Windows 10 avec extensibilité
-- Virtualiser Office 365 ProPlus et l’optimiser pour une exécution dans des scénarios virtuels multiutilisateurs
+- Virtualisez les applications Microsoft 365 pour l’entreprise et optimisez-les pour qu’elles s’exécutent dans des scénarios virtuels multi-utilisateurs.
 - Fournir des bureaux virtuels Windows 7 avec Mises à jour de sécurité étendues gratuites
 - Tirer parti de vos applications et bureaux Windows Server et Services Bureau à distance existants sur n’importe quel ordinateur
 - Virtualiser des bureaux et des applications
@@ -37,7 +37,7 @@ Le bureau virtuel Windows requiert une Azure Active Directory (Azure AD) à laqu
 - Une machine virtuelle exécutant une promotion de contrôleur de domaine.  Cette option nécessite plus de travail pour la configuration, mais offre aux utilisateurs un coût d’exploitation inférieur.
 Pour obtenir la liste complète des conditions préalables à l’utilisation du bureau virtuel Windows, consultez la [page vue d’ensemble](https://docs.microsoft.com/azure/virtual-desktop/overview#requirements)du bureau virtuel Windows. 
 
-## <a name="get-started"></a>Prendre en main 
+## <a name="get-started"></a>Bien démarrer 
 Une fois que toutes les conditions préalables sont en place, vous pouvez effectuer plusieurs actions pour mettre en place votre implémentation.  Consultez ces didacticiels pour commencer :
 - [Créer un locataire Windows Virtual Desktop](https://docs.microsoft.com/azure/virtual-desktop/virtual-desktop-fall-2019/tenant-setup-azure-active-directory)
 - [Créer un pool hôte](https://docs.microsoft.com/azure/virtual-desktop/create-host-pools-azure-marketplace) à l’aide de l’portail Azure

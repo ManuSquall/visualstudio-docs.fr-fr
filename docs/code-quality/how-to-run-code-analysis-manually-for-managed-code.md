@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 874d95b65b99af4b5a6b00d45101236f62db3df1
-ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
+ms.openlocfilehash: 1077e2cdae790fe8a7b7309b1e6427cd3ef81b48
+ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85769368"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88800162"
 ---
 # <a name="how-to-run-code-analysis-manually-for-managed-code-requires-visual-studio-2019-version-165-or-later"></a>Comment : exécuter l’analyse du code manuellement pour le code managé (nécessite Visual Studio 2019 version 16,5 ou ultérieure)
 Par défaut, les analyseurs de code .NET Compiler Platform (« Roslyn ») analysent votre code C# ou Visual Basic au fur et à mesure que vous tapez en réalisant une analyse en temps réel, ainsi que pendant la génération. Par conséquent, vous n’avez normalement pas besoin de déclencher manuellement l’analyse du code. Toutefois, dans certains scénarios, vous pouvez être amené à déclencher manuellement l’analyse du code :
@@ -26,8 +26,8 @@ Par défaut, les analyseurs de code .NET Compiler Platform (« Roslyn ») anal
 
 ### <a name="run-code-analysis-manually"></a>Exécuter l’analyse du code manuellement
 
-1. Dans **Explorateur de solutions**, cliquez sur le projet.
+1. Dans **Explorateur de solutions**, choisissez le projet.
 
-2. Dans le menu **analyser** , cliquez sur **exécuter l’analyse du code sur** le nom du *projet*.
+2. Dans le menu **analyser** , sélectionnez **exécuter l’analyse du code sur le nom du** *projet*.
 
 L’analyse du code commence à s’exécuter en arrière-plan. Vous devez voir le message **exécution de l’analyse du code pour \<project> ...** dans la barre d’état de Visual Studio vers l’angle inférieur gauche. Une fois l’analyse du code terminée, le message d’état passe à l' **analyse \<project> du code terminée pour **. La liste d’erreurs sera bientôt actualisée avec tous les diagnostics d’analyse du code.

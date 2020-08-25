@@ -7,12 +7,12 @@ ms.assetid: fe826200-9600-4b29-a64e-0d66ba3caf3d
 ms.date: 07/22/2020
 ms.topic: conceptual
 description: Découvrez comment vous pouvez utiliser Azure DevOps en tant qu’abonné Visual Studio.
-ms.openlocfilehash: 591e6a3d781a17a292664847d6173aa371ff1a17
-ms.sourcegitcommit: 8c4dc60b665e7065a5231d6b61380731221d9fc5
+ms.openlocfilehash: 9f715cf5b9bd0278073b4a5f19a0f0a4f6a7a423
+ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/23/2020
-ms.locfileid: "87115316"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88801072"
 ---
 # <a name="azure-devops-benefits-for-visual-studio-subscribers"></a>Avantages Azure DevOps pour les abonnés Visual Studio
 En tant qu’abonné Visual Studio actif, vous avez accès à une large gamme de fonctionnalités dans Azure DevOps qui sont comprises dans votre abonnement sous forme d’avantages. Vous pouvez utiliser ces fonctionnalités dans chaque organisation Azure DevOps dont vous êtes membre, que vous ayez créé l’organisation ou que vous ayez été ajouté par quelqu’un d’autre.
@@ -23,7 +23,7 @@ En tant qu’abonné Visual Studio actif, vous avez accès à une large gamme de
    > ![Vignette Azure DevOps](_img/vs-azure-devops/vs-azure-devops-tile.png)
 
    
-Quand vous vous connectez à Azure DevOps avec l’identité que vous avez utilisée pour activer votre abonnement Visual Studio ou avec votre [identité secondaire](vs-alternate-identity.md), nous la reconnaissons automatiquement.  Ainsi, vous pouvez également ajouter un compte professionnel ou scolaire (que vous utilisez pour vous connecter à Visual Studio, à Office 365 ou à votre réseau d’entreprise ou d’établissement scolaire), ce qui vous permet d’accéder à Azure DevOps à la fois avec votre compte personnel, et avec votre compte professionnel ou scolaire.
+Quand vous vous connectez à Azure DevOps avec l’identité que vous avez utilisée pour activer votre abonnement Visual Studio ou avec votre [identité secondaire](vs-alternate-identity.md), nous la reconnaissons automatiquement.  De cette façon, vous pouvez également ajouter un compte professionnel ou scolaire (que vous utilisez pour vous connecter à Visual Studio, Microsoft 365 ou votre réseau d’entreprise ou d’établissement scolaire), ce qui vous permet d’accéder à Azure DevOps à l’aide de votre compte personnel et de votre compte professionnel ou scolaire.
 
 [S’inscrire pour une organisation Azure DevOps gratuite](https://visualstudio.microsoft.com/team-services/)
 
@@ -33,7 +33,7 @@ Quand vous vous connectez à Azure DevOps avec l’identité que vous avez utili
 | Visual Studio Enterprise (Standard, cloud mensuel)   | VL, Azure, vente au détail, NFR sélectionnés<sup>1</sup>  | Azure Boards & pensions (Basic<sup>2</sup>), Azure test plans, travaux parallèles auto-hébergés [en savoir plus](https://docs.microsoft.com/azure/devops/organizations/security/access-levels?view=azure-devops)     |  Oui          |
 | Visual Studio Enterprise avec GitHub Enterprise   | LV| Azure Boards & pensions (Basic<sup>2</sup>), Azure test plans, travaux parallèles auto-hébergés [en savoir plus](https://docs.microsoft.com/azure/devops/organizations/security/access-levels?view=azure-devops) |  Oui          |
 | Visual Studio Professional (Standard, cloud mensuel) | Licences en volume, Azure, Détail                                        | Azure Boards & pensions (Basic<sup>2</sup>) [en savoir plus](https://docs.microsoft.com/azure/devops/organizations/security/access-levels?view=azure-devops)                                                            |  Oui          |
-| Visual Studio Professional avec GitHub Enterprise | LV| Azure Boards & pensions (Basic<sup>2</sup>) [en savoir plus](https://docs.microsoft.com/azure/devops/organizations/security/access-levels?view=azure-devops)                                                            |  Oui          |
+| Visual Studio Professional avec GitHub Enterprise | LV| Azure Boards & pensions (Basic<sup>2</sup>)  [en savoir plus](https://docs.microsoft.com/azure/devops/organizations/security/access-levels?view=azure-devops)                                                            |  Oui          |
 | Visual Studio Test Professional (Standard)                         | Licences en volume, Détail                                              | Azure Boards & des pensions (Basic<sup>2</sup>), Azure test plans [en savoir plus](https://docs.microsoft.com/azure/devops/organizations/security/access-levels?view=azure-devops)                                             |  Oui          |
 | Plateformes MSDN (Standard)                                          | Licences en volume, Détail                                              | Azure Boards & des pensions (Basic<sup>2</sup>), Azure test plans [en savoir plus](https://docs.microsoft.com/azure/devops/organizations/security/access-levels?view=azure-devops)                                             |  Oui          |
 ||

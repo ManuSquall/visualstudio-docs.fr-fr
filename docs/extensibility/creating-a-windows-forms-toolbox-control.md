@@ -1,5 +1,6 @@
 ---
 title: Création d’un contrôle de boîte à outils Windows Forms | Microsoft Docs
+description: Cette procédure pas à pas montre comment utiliser le Windows Forms modèle de contrôle de boîte à outils pour créer un contrôle de compteur simple à l’aide du kit de développement logiciel (SDK) Visual Studio.
 ms.date: 3/16/2019
 ms.topic: how-to
 helpviewer_keywords:
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: cb0f0e66d623f53c641126f1e07edaa476d831ae
-ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
+ms.openlocfilehash: b8dd62c01bad3ac50a57062729fe96588a7ef5be
+ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/15/2020
-ms.locfileid: "88248598"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88801865"
 ---
 # <a name="create-a-windows-forms-toolbox-control"></a>Créer un contrôle de boîte à outils Windows Forms
 
@@ -35,7 +36,7 @@ Le Windows Forms modèle de contrôle de boîte à outils crée un contrôle uti
 
 1. Créez un projet VSIX nommé `MyWinFormsControl` . Vous pouvez trouver le modèle de projet VSIX dans la boîte de dialogue **nouveau projet** , en recherchant « VSIX ».
 
-2. Lorsque le projet s’ouvre, ajoutez un Windows Forms modèle d’élément de **contrôle de boîte à outils** nommé `Counter` . Dans le **Explorateur de solutions**, sélectionnez le nœud du projet et maintenez-le enfoncé (ou cliquez dessus avec le bouton droit), puis sélectionnez **Ajouter**  >  **un nouvel élément**. Dans la boîte de dialogue **Ajouter un nouvel élément** , accédez à extensibilité **Visual C#**  >  **Extensibility** et sélectionnez **Windows Forms contrôle de boîte à outils**
+2. Lorsque le projet s’ouvre, ajoutez un Windows Forms modèle d’élément de **contrôle de boîte à outils** nommé `Counter` . Dans le **Explorateur de solutions**, cliquez avec le bouton droit sur le nœud du projet et sélectionnez **Ajouter**  >  **un nouvel élément**. Dans la boîte de dialogue **Ajouter un nouvel élément** , accédez à extensibilité **Visual C#**  >  **Extensibility** et sélectionnez **Windows Forms contrôle de boîte à outils**
 
 3. Cela ajoute un contrôle utilisateur, un `ProvideToolboxControlAttribute` <xref:Microsoft.VisualStudio.Shell.RegistrationAttribute> pour placer le contrôle dans la **boîte à outils**et une entrée de ressource **Microsoft. VisualStudio. ToolboxControl** dans le manifeste VSIX pour le déploiement.
 
@@ -67,7 +68,7 @@ Le `Counter` contrôle expose une méthode pour incrémenter le compteur, un év
 
 #### <a name="to-code-the-user-control"></a>Pour coder le contrôle utilisateur
 
-1. Appuyez deux fois sur le formulaire ou double-cliquez dessus pour ouvrir son gestionnaire d’événements de chargement dans la fenêtre de code.
+1. Double-cliquez sur le formulaire pour ouvrir son gestionnaire d’événements de chargement dans la fenêtre de code.
 
 2. Au-dessus de la méthode de gestionnaire d’événements, dans la classe de contrôle, créez un entier pour stocker la valeur de compteur et une chaîne pour stocker le texte d’affichage comme indiqué dans l’exemple suivant.
 
@@ -130,7 +131,7 @@ Le `Counter` contrôle expose une méthode pour incrémenter le compteur, un év
 
     Les appelants peuvent ajouter des gestionnaires à cet événement pour répondre aux modifications apportées à la valeur du compteur.
 
-7. Revenez en mode création et double-cliquez sur le bouton **Réinitialiser** pour générer le gestionnaire d' `btnReset_Click` événements. Ensuite, remplissez-le comme indiqué dans l’exemple suivant.
+7. Revenez en mode conception et double-cliquez sur le bouton **Réinitialiser** pour générer le `btnReset_Click` Gestionnaire d’événements. Ensuite, remplissez-le comme indiqué dans l’exemple suivant.
 
     ```csharp
     private void btnReset_Click(object sender, EventArgs e)
@@ -162,7 +163,7 @@ Le `Counter` contrôle expose une méthode pour incrémenter le compteur, un év
 
 2. Dans l’instance expérimentale de Visual Studio, créez un projet d' **Application Windows Forms** .
 
-3. Dans **Explorateur de solutions**, double-cliquez sur *Form1.cs* ou double-cliquez dessus pour l’ouvrir dans le concepteur s’il n’est pas déjà ouvert.
+3. Dans **Explorateur de solutions**, double-cliquez sur *Form1.cs* pour l’ouvrir dans le concepteur s’il n’est pas déjà ouvert.
 
 4. Dans la **boîte à outils**, le `Counter` contrôle doit être affiché dans la section **général** .
 
@@ -172,7 +173,7 @@ Le `Counter` contrôle expose une méthode pour incrémenter le compteur, un év
 
 7. Faites glisser un <xref:System.Windows.Forms.Button> contrôle vers le formulaire, puis définissez les propriétés Name et Text du bouton sur `Test` .
 
-8. Appuyez deux fois sur le bouton ou double-cliquez sur le bouton pour ouvrir *Form1.cs* en mode Code et créer un gestionnaire de clics.
+8. Double-cliquez sur le bouton pour ouvrir *Form1.cs* en mode Code et créer un gestionnaire de clics.
 
 9. Dans le gestionnaire de clic, appelez `counter1.Increment()` .
 

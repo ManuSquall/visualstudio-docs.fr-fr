@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 8bcb349f8ff99d1567bf94b83a96be6b2824c208
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.openlocfilehash: 11808eeabee4d45d1d3d3b1b5cd5d6636249e7cb
+ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "85520469"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88801202"
 ---
 # <a name="how-to-select-a-python-environment-for-a-project"></a>Guide pratique pour sélectionner l’environnement Python d’un projet
 
@@ -46,7 +46,7 @@ Le menu contextuel sur le nœud **Environnements Python** propose également des
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
-Pour modifier l’environnement pour un projet, cliquez avec le bouton droit sur le nœud **Environnements Python** et sélectionnez **Ajouter un environnement**, ou sélectionnez **Ajouter un environnement** dans la liste déroulante d’environnements dans la barre d’outils Python.
+Pour modifier l’environnement d’un projet, cliquez avec le bouton droit sur le nœud **environnements python** et sélectionnez **Ajouter un environnement**. Vous pouvez également sélectionner **Ajouter un environnement** dans la liste déroulante environnement de la barre d’outils Python.
 
 Dans la boîte de dialogue **Ajouter un environnement**, sélectionnez l’onglet **Environnement existant**, puis sélectionnez un nouvel environnement dans la liste déroulante **Environnement** :
 
@@ -86,7 +86,7 @@ Vous pouvez créer un nouvel environnement virtuel directement dans Visual Studi
 
 1. Sélectionnez un environnement comme interpréteur de base et cliquez sur **Créer**. Visual Studio affiche une barre de progression pendant qu’il configure l’environnement et télécharge les packages nécessaires. Lorsque l’opération est terminée, l’environnement virtuel apparaît dans la fenêtre **Environnements Python** du projet auquel il appartient.
 
-1. L’environnement virtuel n’est pas activé par défaut. Pour l’activer pour le projet, cliquez dessus avec le bouton droit et sélectionnez **Activer l’environnement**.
+1. L’environnement virtuel n’est pas activé par défaut. Pour activer l’environnement virtuel pour le projet, cliquez dessus avec le bouton droit et sélectionnez **activer l’environnement**.
 
 > [!Note]
 > Si le chemin d’emplacement identifie un environnement virtuel existant, Visual Studio détecte automatiquement l’interpréteur de base (à l’aide du fichier *orig-prefix.txt* situé dans le répertoire *lib* de l’environnement), puis remplace le bouton **Créer** par **Ajouter**.
@@ -169,7 +169,7 @@ Sachez que les entrées affichées ne sont pas toujours exactes, et que l’inst
 Sachez également que Visual Studio ne prend pas en charge pour le moment l’utilisation de `conda` pour installer des packages dans un environnement conda. Utilisez plutôt `conda` en ligne de commande.
 
 > [!Tip]
-> Une situation courante dans laquelle PIP ne parvient pas à installer un package est lorsque le package contient du code source pour les composants natifs dans les fichiers * \* . pyd* . Si la version requise de Visual Studio n’est pas installée, pip n’est pas en mesure de compiler ces composants. Le message d’erreur affiché dans ce cas est **erreur : vcvarsall.bat est introuvable**. `easy_install`est souvent en mesure de télécharger des fichiers binaires précompilés, et vous pouvez télécharger un compilateur approprié pour les versions antérieures de Python à partir de [https://www.microsoft.com/download/details.aspx?id=44266](https://www.microsoft.com/download/details.aspx?id=44266) . Pour plus d’informations, consultez le billet [How to deal with the pain of "unable to find vcvarsallbat"](https://devblogs.microsoft.com/python/unable-to-find-vcvarsall-bat/) (Comment gérer l’erreur « unable to find vcvarsallbat ») sur le blog de l’équipe Python Tools.
+> Une situation courante dans laquelle PIP ne parvient pas à installer un package est lorsque le package contient du code source pour les composants natifs dans les fichiers * \* . pyd* . Si la version requise de Visual Studio n’est pas installée, pip n’est pas en mesure de compiler ces composants. Le message d’erreur affiché dans ce cas est **erreur : vcvarsall.bat est introuvable**. `easy_install` est souvent en mesure de télécharger des fichiers binaires précompilés, et vous pouvez télécharger un compilateur approprié pour les versions antérieures de Python à partir de [https://www.microsoft.com/download/details.aspx?id=44266](https://www.microsoft.com/download/details.aspx?id=44266) . Pour plus d’informations, consultez le billet [How to deal with the pain of "unable to find vcvarsallbat"](https://devblogs.microsoft.com/python/unable-to-find-vcvarsall-bat/) (Comment gérer l’erreur « unable to find vcvarsallbat ») sur le blog de l’équipe Python Tools.
 
 ## <a name="see-also"></a>Voir aussi
 

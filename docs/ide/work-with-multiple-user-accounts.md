@@ -7,16 +7,16 @@ ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 872089158b6e4dc0b55c26ad187e3b68d0501f26
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: abca888cda2d309951d6b8921cfd2078972ce195
+ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77027607"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88800227"
 ---
 # <a name="work-with-multiple-user-accounts"></a>Utiliser plusieurs comptes d’utilisateur
 
-Si vous avez plusieurs comptes Microsoft et/ou comptes professionnels ou scolaires, vous pouvez les ajouter à Visual Studio. Vous avez ainsi accès aux ressources de n'importe quel compte sans avoir à vous y connecter séparément. Azure, Application Insights, Azure DevOps et les services Office 365 prennent tous en charge l’expérience de connexion simplifiée.
+Si vous avez plusieurs comptes Microsoft et/ou comptes professionnels ou scolaires, vous pouvez les ajouter à Visual Studio. Vous avez ainsi accès aux ressources de n'importe quel compte sans avoir à vous y connecter séparément. Azure, Application Insights, Azure DevOps et Microsoft 365 services prennent tous en charge l’expérience de connexion rationalisée.
 
 Une fois que vous aurez ajouté plusieurs comptes sur un ordinateur, vous pourrez y accéder en vous connectant à Visual Studio sur un autre ordinateur.
 
@@ -25,7 +25,7 @@ Une fois que vous aurez ajouté plusieurs comptes sur un ordinateur, vous pourre
 
 Cet article explique comment ajouter plusieurs comptes à Visual Studio. Il montre également comment accéder aux ressources accessibles à partir de ces comptes dans des endroits comme la boîte de dialogue **Ajouter un service connecté**, **l’Explorateur de serveurs** et **Team Explorer**.
 
-## <a name="sign-in-to-visual-studio"></a>Connexion à Visual Studio
+## <a name="sign-in-to-visual-studio"></a>Se connecter à Visual Studio
 
 Connectez-vous à Visual Studio avec un compte Microsoft ou un compte professionnel. Votre nom d’utilisateur doit apparaître dans le coin supérieur de la fenêtre, comme ceci :
 
@@ -33,7 +33,7 @@ Connectez-vous à Visual Studio avec un compte Microsoft ou un compte profession
 
 ### <a name="access-your-azure-account-in-server-explorer"></a>Accès à votre compte Azure dans l'Explorateur de serveurs
 
-Pour ouvrir Server Explorer, choisissez **View** > **Server Explorer** (ou, si vous utilisez les paramètres de l’environnement « général », appuyez sur **Ctrl**+**Alt**+ [environment settings](../ide/environment-settings.md)**S**). Développez le nœud **Azure**. Il contient les ressources disponibles dans le compte Azure associé au compte que vous avez utilisé pour vous connecter à Visual Studio, comme sur l’illustration suivante :
+Pour ouvrir Explorateur de serveurs, choisissez **Afficher**  >  les**Explorateur de serveurs** (ou, si vous utilisez les [paramètres d’environnement](../ide/environment-settings.md)« général », appuyez sur **CTRL** + **ALT** + **S**). Développez le nœud **Azure**. Il contient les ressources disponibles dans le compte Azure associé au compte que vous avez utilisé pour vous connecter à Visual Studio, comme sur l’illustration suivante :
 
 ![Explorateur de serveurs avec nœud Azure développé](../ide/media/work-with-multiple-user-accounts/server-explorer.png)
 
@@ -53,7 +53,7 @@ La prochaine fois que vous ouvrirez **l’Explorateur de serveurs**, les ressour
 
 ### <a name="access-azure-active-directory-in-a-web-project"></a>Accès à Azure Active Directory dans un projet web
 
-Azure Active Directory (AAD) prend en charge l'authentification unique des utilisateurs finaux dans les applications web MVC ASP.NET ou l'authentification AD dans les services API web. L’authentification d’un domaine est différente de l’authentification d’un compte utilisateur en particulier. Les utilisateurs qui ont accès à votre domaine Active Directory peuvent utiliser leur compte AAD pour se connecter à vos applications web. Les applications Office 365 peuvent également utiliser l'authentification de domaine.
+Azure Active Directory (AAD) prend en charge l'authentification unique des utilisateurs finaux dans les applications web MVC ASP.NET ou l'authentification AD dans les services API web. L’authentification d’un domaine est différente de l’authentification d’un compte utilisateur en particulier. Les utilisateurs qui ont accès à votre domaine Active Directory peuvent utiliser leur compte AAD pour se connecter à vos applications web. Les applications Microsoft 365 peuvent également utiliser l’authentification de domaine.
 
 ::: moniker range="vs-2017"
 
@@ -75,7 +75,7 @@ Pour plus d’informations sur les différents types d’authentification dans A
 
 ### <a name="access-your-azure-devops-organization"></a>Accéder à une organisation Azure DevOps
 
-Parmi le menu principal, choisissez **Team** > **Manage Connections** pour ouvrir la fenêtre Team Explorer - **Connect.** Choisissez **Gérer les connexions** > **Connect to a Project**. Dans la boîte de dialogue **Se connecter à un projet**, sélectionnez un projet dans la liste (ou sélectionnez **Ajouter un serveur TFS** et entrez l’URL de votre serveur). Lorsque vous sélectionnez une URL, la connexion s’établit sans qu’il soit nécessaire d’entrer de nouveau les informations d'identification.
+Dans le menu principal, choisissez **équipe**  >  **gérer les connexions** pour ouvrir la fenêtre **Team Explorer-se connecter** . Sélectionnez **gérer les connexions**  >  **connexion à un projet**. Dans la boîte de dialogue **Se connecter à un projet**, sélectionnez un projet dans la liste (ou sélectionnez **Ajouter un serveur TFS** et entrez l’URL de votre serveur). Lorsque vous sélectionnez une URL, la connexion s’établit sans qu’il soit nécessaire d’entrer de nouveau les informations d'identification.
 
 Pour plus d’informations, voir [Se connecter à des projets dans Team Explorer](connect-team-project.md).
 
@@ -83,13 +83,13 @@ Pour plus d’informations, voir [Se connecter à des projets dans Team Explorer
 
 Pour ajouter un compte supplémentaire dans Visual Studio :
 
-1. Choisissez les paramètres **du** > **compte de fichiers**.
+1. Choisissez **File**  >  **paramètres du compte**de fichier.
 
 1. Sous **Tous les comptes**, choisissez **Ajouter un compte**.
 
 1. Sur la page **Connectez-vous à votre compte**, sélectionnez le compte ou choisissez **Utiliser un autre compte**. Suivez les instructions pour entrer les nouvelles informations d'identification du compte.
 
-(Facultatif) Vous pouvez maintenant accéder à **l’Explorateur de serveurs** et voir les services Azure associés au compte que vous venez d’ajouter. Dans **l’Explorateur de serveurs**, cliquez avec le bouton droit sur le nœud **Azure**, puis choisissez **Gérer et filtrer les abonnements**. Choisissez le nouveau compte en cliquant sur la flèche déroulante vers le bas située à côté du compte actif, puis choisissez les abonnements que vous voulez afficher dans **l’Explorateur de serveurs**. Vous devez voir tous les services associés à l’abonnement spécifié. Même si vous n’avez pas ouvert de session Visual Studio avec le deuxième compte, la connexion est établie avec les services et les ressources de ce compte. Il en va de même pour **Project** > **Add Connected Service** et **Team** > Connect to Team Foundation**Server**.
+(Facultatif) Vous pouvez maintenant accéder à **l’Explorateur de serveurs** et voir les services Azure associés au compte que vous venez d’ajouter. Dans **l’Explorateur de serveurs**, cliquez avec le bouton droit sur le nœud **Azure**, puis choisissez **Gérer et filtrer les abonnements**. Choisissez le nouveau compte en cliquant sur la flèche déroulante vers le bas située à côté du compte actif, puis choisissez les abonnements que vous voulez afficher dans **l’Explorateur de serveurs**. Vous devez voir tous les services associés à l’abonnement spécifié. Même si vous n’avez pas ouvert de session Visual Studio avec le deuxième compte, la connexion est établie avec les services et les ressources de ce compte. Il en va de même pour **Project**  >  **Add Connected service** et **Team**  >  **Connect to Team Foundation Server**.
 
 ### <a name="add-an-account-using-device-code-flow"></a>Ajouter un compte avec le flux de code d’appareil
 
@@ -99,7 +99,7 @@ Pour vous connecter avec le flux de code d’appareil :
 
 1. Ouvrez la page [**Comptes**](reference/accounts-environment-options-dialog-box.md) sous **Outils** > **Options** > **Environnement**, puis sélectionnez **Activer le flux de code d’appareil à l’ajout ou la réauthentification d’un compte**. Choisissez **OK** pour fermer les pages d’options.
 
-1. Choisissez les paramètres de compte **de** > **fichier** pour ouvrir la page de gestion de compte.
+1. Choisissez **fichier**  >  **paramètres du compte** pour ouvrir la page gestion des comptes.
 
 1. Choisissez **Ajouter un compte** sous **Tous les comptes**.
 
@@ -107,7 +107,7 @@ Pour vous connecter avec le flux de code d’appareil :
 
    ![URL et code de flux de code d’appareil](media/work-with-multiple-user-accounts/device-login-code.png)
 
-1. Appuyez sur **Ctrl**+**C** pour copier le texte du dialogue, puis choisissez **OK** pour fermer le dialogue. Collez le texte que vous avez copié dans un éditeur de texte comme le Bloc-notes, pour pouvoir copier plus facilement le code à l’étape suivante.
+1. Appuyez sur **CTRL** + **C** pour copier le texte de la boîte de dialogue, puis choisissez **OK** pour fermer la boîte de dialogue. Collez le texte que vous avez copié dans un éditeur de texte comme le Bloc-notes, pour pouvoir copier plus facilement le code à l’étape suivante.
 
 1. Accédez à l’URL de connexion de l’appareil sur l’ordinateur ou le navigateur web que vous souhaitez utiliser pour vous connecter à Visual Studio, puis collez ou entrez le code que vous avez copié dans la zone intitulée **Code**.
 
@@ -127,5 +127,5 @@ Pour vous connecter avec le flux de code d’appareil :
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Connexion à Visual Studio](signing-in-to-visual-studio.md)
+- [Se connecter à Visual Studio](signing-in-to-visual-studio.md)
 - [Se connecter à Visual Studio pour Mac](/visualstudio/mac/signing-in)

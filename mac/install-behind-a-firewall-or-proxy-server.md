@@ -1,16 +1,17 @@
 ---
-title: Installer et utiliser Visual Studio pour Mac derrière un pare-feu ou un serveur proxy
+title: Installer et utiliser Visual Studio pour Mac avec un pare-feu ou un serveur proxy
+titleSuffix: ''
 description: Ce document présente la liste des hôtes qui doivent figurer dans la liste verte du pare-feu pour permettre à Visual Studio pour Mac (et ses charges de travail, dont Xamarin) de fonctionner dans un environnement professionnel.
 ms.assetid: 79C0F1A3-0C13-4E55-A820-1138A4082B77
 author: heiligerdankgesang
 ms.author: dominicn
 ms.date: 09/18/2019
-ms.openlocfilehash: 817fce7958ce2b3e4bc3684e639197da8f69e40d
-ms.sourcegitcommit: 2ce59c2ffeba5ba7f628c2e6c75cba4731deef8a
+ms.openlocfilehash: 25a4597c8d523b63e7ceb0cf8b5eff71af58071a
+ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/03/2020
-ms.locfileid: "85938985"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88800409"
 ---
 # <a name="install-and-use-visual-studio-for-mac-behind-a-firewall-or-proxy-server"></a>Installer et utiliser Visual Studio pour Mac derrière un pare-feu ou un serveur proxy
 
@@ -26,7 +27,7 @@ Dans la mesure où le programme d’installation de Visual Studio pour Mac effec
 
 ### <a name="microsoft-domains"></a>Domaines Microsoft
 
-| Domaine| Objectif |
+| Domain| Objectif |
 | ----------------------------------- |---------------------------|
 | *.live.com| Gestion des informations d’identification |
 | app.vssps.visualstudio.com| Métadonnées du programme d’installation|
@@ -43,9 +44,9 @@ Dans la mesure où le programme d’installation de Visual Studio pour Mac effec
 
 ### <a name="third-party-domains"></a>Domaines tiers
 
-| Domaine| Objectif |
+| Domain| Objectif |
 | --------------------------|-------------------------|
-| dl.google.com | Kit de développement logiciel (SDK) Android |
+| dl.google.com | Kit de développement logiciel Android |
 | download.oracle.com | Kit de développement logiciel (SDK) Java|
 | api.apple-cloudkit.com| Services de sécurité Apple |
 
@@ -55,7 +56,7 @@ Nous vous recommandons, pour avoir accès à toutes les fonctionnalités dont vo
 
 ### <a name="general"></a>Général
 
-| Domaine | Port(s)|Objectif|
+| Domaine | Port(s)|Fonction|
 | ----------------------|------------------|------------------|
 | go.microsoft.com | 80/443|Résolution d’URL Microsoft |
 | vsstartpage.blob.core.windows.net| 80/443| Données de la page de démarrage|
@@ -64,9 +65,9 @@ Nous vous recommandons, pour avoir accès à toutes les fonctionnalités dont vo
 | visualstudio-devdiv-c2s.msedge.net | 80/443| Notifications et fonctionnalité expérimentale |
 | targetednotifications.azurewebsites.net|  80/443| Permet de filtrer une liste de notifications globale sur une liste qui s’applique uniquement à certains types de scénarios de machines/d’utilisation|
 
-### <a name="identity"></a>Identité
+### <a name="identity"></a>Fournisseur
 
-| Domaine | Port(s)|Objectif|
+| Domaine | Port(s)|Fonction|
 | ----------------------|------------------|------------------|
 | login.microsoftonline.com | 80/443| Fournisseur d’identité|
 | secure.aadcdn.microsoftonline-p.com | 80/443|Fournisseur d’identité|
@@ -75,14 +76,14 @@ Nous vous recommandons, pour avoir accès à toutes les fonctionnalités dont vo
 
 ### <a name="nuget"></a>NuGet
 
-| Domaine | Port(s)|Objectif|
+| Domaine | Port(s)|Fonction|
 | ----------------------|------------------|------------------|
 | api.nuget.org | 80/443|API NuGet|
 | secure.aadcdn.microsoftonline-p.com |80/443| Fournisseur d’identité|
 
 ### <a name="android-projects"></a>Projets Android
 
-| Domaine| Objectif|
+| Domain| Objectif|
 | ------------------------------------|------------------------------------|
 | time.android.com| Serveur de temps pour l’Émulateur Android |
 | connectivitycheck.gstatic.com | Connectivité pour l’Émulateur Android|

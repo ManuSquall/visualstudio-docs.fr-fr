@@ -10,12 +10,12 @@ ms.date: 11/13/2017
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: a83deb968811159cfaeddaf537624e21b37e98c7
-ms.sourcegitcommit: 9c1cecaff4d9955276eee7865b78d47679dd1e2a
+ms.openlocfilehash: ffa8c7634c0d97dd24ff69814ae73ad5ff12928b
+ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "80638579"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88800201"
 ---
 # <a name="installation"></a>Installation
 
@@ -27,17 +27,16 @@ Cette extension fonctionne avec Visual Studio 2015 et Visual Studio 2017 Commu
 
 Vous pouvez télécharger les outils sur [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=ms-toolsai.vstoolsai-vs2017) ou dans Visual Studio :
 
-1. Sélectionnez **outils** > **Extensions et mises à jour**.
+1. Sélectionnez **Outils**  >  **extensions et mises à jour**.
 
    ![Menu Extensions et mises à jour dans Visual Studio](media/installation/extensions.png)
 
 2. Dans la boîte de dialogue **Extensions et mises à jour**, sélectionnez **En ligne** sur le côté gauche.
 3. Dans la zone de recherche en haut à droite, tapez ou entrez « Tools for AI ».
 4. Sélectionnez **Visual Studio Tools for AI** dans les résultats.
-5. Cliquez sur **Télécharger**.
+5. Sélectionnez **Télécharger**.
 
 ## <a name="prepare-your-local-machine"></a>Préparer votre ordinateur local
-
 Avant d’entraîner des modèles de Deep Learning sur votre ordinateur local, vérifiez que les composants requis applicables sont installés, y compris la dernière version des pilotes et des bibliothèques de votre GPU NVIDIA (si vous en avez un). Veillez également à installer Python et les bibliothèques Python, notamment NumPy et SciPy, ainsi que les frameworks de Deep Learning, comme Microsoft Cognitive Toolkit (CNTK), TensorFlow, Caffe2, MXNet, Keras, Theano, PyTorch ou Chainer, que vous prévoyez d’utiliser dans votre projet.
 
 > [!NOTE]
@@ -214,7 +213,7 @@ Pour installer PyTorch, exécutez la commande suivante dans un terminal :
     pip3 install torchvision
     ```
 
-- **macOS**
+- **MacOS**
 
   ```bash
   pip3.5 install http://download.pytorch.org/whl/torch-0.2.0.post3-cp35-cp35m-macosx_10_7_x86_64.whl

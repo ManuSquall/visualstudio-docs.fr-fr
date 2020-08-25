@@ -8,12 +8,12 @@ ms.author: kraigb
 manager: jillfra
 ms.workload:
 - data-science
-ms.openlocfilehash: fb16f4a573a7b905484982871dc838143b125591
-ms.sourcegitcommit: d281d2a04a5bc302650eebf369946d8f101e59dd
+ms.openlocfilehash: dbb3984385e0042c669f8aad1d5bb4a2f64de917
+ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "88144699"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88801618"
 ---
 # <a name="create-visual-data-plots-with-r"></a>Créer des tracés de données visuels avec R
 
@@ -71,7 +71,7 @@ Vous créez une nouvelle fenêtre de tracés à l’aide du **bouton de barre d�
 
 Les tracés sont aussi des objets indépendants, ce qui signifie que vous pouvez les copier ou les déplacer entre les fenêtres de tracés à l’aide d’une opération de glisser-déplacer avec la souris, ou à l’aide des commandes **Copier**, **Couper** et **Coller** du menu contextuel et du menu **Edition**.
 
-Le comportement par défaut pour le glisser-déplacer est copier ; pour déplacer, glissez-déplacez tout en maintenant la touche **MAJ** enfoncée.
+Le comportement par défaut pour le glisser-déplacer est copier ; pour déplacer, glisser-déplacer tout en appuyant sur la touche **MAJ** .
 
 ## <a name="plot-history"></a>Historique de tracés
 
@@ -82,7 +82,7 @@ L’historique vous donne une liste des miniatures pour les tracés qui ont ét�
 
 ![Fenêtre d’historique des tracés](media/plotting-plot-history-window.png)
 
-Pour ouvrir un tracé dans sa fenêtre associée, double-cliquez sur ce tracé, sélectionnez-le, puis cliquez sur le bouton de barre d’outils **Afficher le tracé**, ou cliquez avec le bouton droit et sélectionnez **Afficher le tracé**. Vous pouvez également sélectionner un tracé spécifique et copier, couper ou supprimer à partir du menu contextuel ou du menu **Edition**.
+Pour ouvrir un tracé dans sa fenêtre associée, double-cliquez sur ce tracé, sélectionnez-le, puis sélectionnez le bouton **afficher le tracé** de la barre d’outils. Vous pouvez également cliquer avec le bouton droit sur le tracé et sélectionner **afficher le tracé**. Vous pouvez également sélectionner un tracé individuel et le copier, le couper ou le supprimer à partir du menu contextuel ou **Edit** .
 
 La durée de vie de votre historique de tracés dans toutes les fenêtres est liée à la durée de vie de votre session R interactive. Si vous réinitialisez votre session R, ou si vous quittez et redémarrez Visual Studio, votre historique de tracés est réinitialisé.
 

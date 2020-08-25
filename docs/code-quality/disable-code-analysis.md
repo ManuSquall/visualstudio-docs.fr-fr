@@ -8,12 +8,12 @@ helpviewer_keywords:
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 163b925423ba5afc62b84866e839c5d86a6444e0
-ms.sourcegitcommit: 48e93538f1e352fc1f972b642bb5fcce2f6834a2
+ms.openlocfilehash: d2cac7ad0502d82309aa664b8e8fe6bdd0301815
+ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/25/2020
-ms.locfileid: "85371935"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88800696"
 ---
 # <a name="how-to-disable-source-code-analysis-for-managed-code"></a>Comment désactiver l’analyse du code source pour le code managé
 
@@ -41,7 +41,7 @@ Pour ouvrir cette page, cliquez avec le bouton droit sur le nœud du projet dans
 - Pour désactiver l’analyse de la source dynamique, décochez l’option **exécuter sur l’analyse en direct** .
 
 > [!NOTE]
-> À compter de Visual Studio 2019 version 16,5, si vous préférez le flux de travail d’exécution de l’analyse du code à la demande, vous pouvez désactiver l’exécution de l’analyseur lors de l’analyse en direct et/ou générer et déclencher manuellement l’analyse du code sur un projet ou une solution à la demande. Pour plus d’informations sur l’exécution manuelle de l’analyse du code, consultez [Comment : exécuter l’analyse du code manuellement pour le code managé](how-to-run-code-analysis-manually-for-managed-code.md).  
+> À compter de Visual Studio 2019 version 16,5, si vous préférez le flux de travail d’exécution de l’analyse du code à la demande, vous pouvez désactiver l’exécution de l’analyseur lors de l’analyse en direct et/ou générer et déclencher manuellement l’analyse du code sur un projet ou une solution à la demande. Pour plus d’informations sur l’exécution manuelle de l’analyse du code, consultez [Comment : exécuter l’analyse du code manuellement pour le code managé](how-to-run-code-analysis-manually-for-managed-code.md).
 
 ## <a name="net-framework-projects"></a>Projets .NET Framework
 
@@ -67,7 +67,7 @@ Exemples :
 
 ## <a name="source-analysis"></a>Analyse du code source
 
-Vous ne pouvez pas désactiver l’analyse de la [source](roslyn-analyzers-overview.md) dans Visual Studio 2017. Si vous souhaitez effacer les erreurs de l’analyseur de la liste d’erreurs, vous pouvez supprimer toutes les violations en cours en choisissant **analyser**  >  **exécuter l’analyse du code et supprimer les problèmes actifs** dans la barre de menus. Pour plus d’informations, consultez [Supprimer les violations](use-roslyn-analyzers.md#suppress-violations).
+Vous ne pouvez pas désactiver l’analyse de la [source](roslyn-analyzers-overview.md) dans Visual Studio 2017. Si vous souhaitez effacer les erreurs de l’analyseur de la **liste d’erreurs**, vous pouvez supprimer toutes les violations en cours en sélectionnant **analyser**  >  **exécuter l’analyse du code et supprimer les problèmes actifs** dans la barre de menus. Pour plus d’informations, consultez [Supprimer les violations](use-roslyn-analyzers.md#suppress-violations).
 
 À compter de Visual Studio 2019 version 16,3, vous pouvez désactiver l’analyse du code source ou l’exécuter à la demande. Envisagez une mise à niveau vers Visual Studio 2019.
 
