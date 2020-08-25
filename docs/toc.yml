@@ -902,7 +902,7 @@
     - name: Personnaliser l’IDE
       displayName: Personalize
       href: ide/personalizing-the-visual-studio-ide.md
-    - name: "Démarrage rapide\_: Personnaliser les couleurs des thèmes et du texte"
+    - name: Personnaliser les couleurs des thèmes et du texte
       href: ide/quickstart-personalize-the-ide.md
     - name: Paramètres d’environnement
       displayName: profiles
@@ -1409,6 +1409,8 @@
       href: ide/whats-new-visual-studio-2017.md
     - name: "Nouveautés de Visual Studio\_2019"
       href: ide/whats-new-visual-studio-2019.md
+    - name: Nouveautés des documents Visual Studio
+      href: ide/whats-new-visual-studio-docs.md
     - name: Notes de publication et configuration requise
       items:
         - name: Fréquence des versions

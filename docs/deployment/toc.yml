@@ -1,6 +1,6 @@
 - name: Documentation sur le déploiement
   href: index.yml
-- name: Vue d'ensemble
+- name: Vue d’ensemble
   items:
     - name: Vue d’ensemble du déploiement
       href: deploying-applications-services-and-components-resources.md
@@ -302,3 +302,7 @@
               href: customerrorreporting-element-clickonce-deployment.md
         - name: Référence des API non managées ClickOnce
           href: clickonce-unmanaged-api-reference.md
+    - name: Référence des projets Visual Studio Installer
+      items:
+        - name: Extension des projets Visual Studio Installer et NET.Core 3.1
+          href: installer-projects-net-core.md
