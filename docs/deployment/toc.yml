@@ -2,12 +2,12 @@
   href: index.yml
 - name: Vue d’ensemble
   items:
-    - name: Vue d’ensemble du déploiement
+    - name: Présentation du déploiement
+      href: deploying-applications-services-and-components.md
+    - name: 'Déployer sur un dossier, IIS ou Azure'
       href: deploying-applications-services-and-components-resources.md
 - name: Démarrages rapides
   items:
-    - name: Présentation du déploiement
-      href: deploying-applications-services-and-components.md
     - name: Déployer sur Azure App Service
       href: quickstart-deploy-to-azure.md
     - name: Déployer sur App Service pour Linux
@@ -16,7 +16,7 @@
       href: quickstart-deploy-to-a-web-site.md
     - name: Déployer sur un dossier local
       href: quickstart-deploy-to-local-folder.md
-- name: Didacticiels
+- name: Tutoriels
   items:
     - name: .NET
       items:
