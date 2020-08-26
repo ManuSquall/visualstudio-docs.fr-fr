@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 796818d376df477df84f845b5b0a17ace60bd1f2
-ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
+ms.openlocfilehash: d1e53df97c0535f59d0b96e9608ad55f2cb5ab21
+ms.sourcegitcommit: 4d7c883ea3eedd795eeb4a9d3bd3dee82c8e093e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88801540"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88893305"
 ---
 # <a name="use-the-code-analysis-rule-set-editor"></a>Utiliser l’éditeur d’ensembles de règles d’analyse du code
 
@@ -26,10 +26,10 @@ Le tableau suivant présente les options de gravité :
 |Action (gravité)|Description|
 |-|-|
 |Avertissement|Génère un avertissement dans le **liste d’erreurs** et également au moment de la génération.|
-|Erreur|Génère une erreur dans le **liste d’erreurs** et également au moment de la génération.|
+|Error|Génère une erreur dans le **liste d’erreurs** et également au moment de la génération.|
 |Info|Génère un message dans le **liste d’erreurs**.|
 |Hidden|La violation n’est pas visible pour l’utilisateur. Toutefois, l’IDE est averti de la violation.|
-|Aucun|La règle est supprimée. Le comportement est le même que si la règle a été supprimée de l’ensemble de règles.|
+|None|La règle est supprimée. Le comportement est le même que si la règle a été supprimée de l’ensemble de règles.|
 
 L’éditeur affiche les règles dans une arborescence qui regroupe les règles par un champ d’ensemble de règles que vous spécifiez. Pour ajouter ou supprimer des règles dans un ensemble de règles, effectuez une ou plusieurs des étapes suivantes :
 
@@ -38,7 +38,7 @@ L’éditeur affiche les règles dans une arborescence qui regroupe les règles 
    > [!TIP]
    > Vous pouvez modifier la façon dont les règles sont regroupées dans la liste déroulante **regrouper par** .
 
-- Dans le champ **action** d’un groupe, spécifiez l’action à appliquer à toutes les règles du groupe.
+- Cliquez sur le champ **action** d’un groupe, spécifiez l’action à appliquer à toutes les règles du groupe.
 
 - Activez ou désactivez la case à cocher d’une règle individuelle. Lorsque vous activez la case à cocher d’une règle, la règle est définie sur l’action d' **Avertissement** .
 

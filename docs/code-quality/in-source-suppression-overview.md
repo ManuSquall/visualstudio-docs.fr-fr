@@ -14,12 +14,12 @@ dev_langs:
 - CPP
 ms.workload:
 - multiple
-ms.openlocfilehash: f1cc2fd460a2087eaaac40abbb1ba04c8126a9aa
-ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
+ms.openlocfilehash: 745bc0c53738370816ad74be9249b721f236ad87
+ms.sourcegitcommit: 4d7c883ea3eedd795eeb4a9d3bd3dee82c8e093e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88800851"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88893370"
 ---
 # <a name="suppress-code-analysis-warnings"></a>Supprimer les avertissements d’analyse du code
 
@@ -50,7 +50,7 @@ En C++/CLI, utilisez l’autorité de certification macros \_ supprimer le \_ me
 
 ## <a name="suppressmessage-attribute"></a>SuppressMessage (attribut)
 
-Quand vous sélectionnez **supprimer** dans le menu contextuel ou cliquez avec le bouton droit (ou sélectionnez et maintenez le bouton droit) d’un avertissement d’analyse du code dans le **liste d’erreurs**, un <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> attribut est ajouté dans votre code ou dans le fichier de suppression globale du projet.
+Lorsque vous sélectionnez **supprimer** dans le menu contextuel ou le menu contextuel d’un avertissement d’analyse du code dans la **liste d’erreurs**, un <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> attribut est ajouté dans votre code ou dans le fichier de suppression globale du projet.
 
 L' <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> attribut a le format suivant :
 

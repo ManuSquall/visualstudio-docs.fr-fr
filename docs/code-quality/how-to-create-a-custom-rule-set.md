@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 643ee48f798c90851d5ff323685070f9d7268f04
-ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
+ms.openlocfilehash: a4659efef9b233284a593fecd5c8404cb2650b0c
+ms.sourcegitcommit: 4d7c883ea3eedd795eeb4a9d3bd3dee82c8e093e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88801033"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88893266"
 ---
 # <a name="customize-a-rule-set"></a>Personnaliser un ensemble de règles
 
@@ -26,9 +26,9 @@ Vous pouvez créer un ensemble de règles personnalisé pour répondre à des be
 
 Pour créer un ensemble de règles personnalisé, vous pouvez ouvrir un ensemble de règles intégré dans l' **éditeur d’ensembles de règles**. À partir de là, vous pouvez ajouter ou supprimer des règles spécifiques, et vous pouvez modifier l’action qui se produit lorsqu’une règle est violée &mdash; , par exemple, afficher un avertissement ou une erreur.
 
-1. Dans **Explorateur de solutions**, sélectionnez le projet et maintenez-le enfoncé (ou cliquez dessus avec le bouton droit), puis sélectionnez **Propriétés**.
+1. Dans **Explorateur de solutions**, cliquez avec le bouton droit sur le projet, puis sélectionnez **Propriétés**.
 
-2. Dans les pages **Propriétés** , accédez à l’onglet **analyse du code** .
+2. Dans les pages **Propriétés** , sélectionnez l’onglet **analyse du code** .
 
 ::: moniker range="vs-2017"
 
@@ -57,7 +57,7 @@ Pour créer un ensemble de règles personnalisé, vous pouvez ouvrir un ensemble
 
 Vous pouvez créer un nouveau fichier d’ensemble de règles à partir de la boîte de dialogue **nouveau fichier** :
 
-1. Sélectionnez **fichier**  >  **nouveau**  >  **fichier**, ou **Appuyez sur CTRL** + **N**.
+1. Sélectionnez **fichier**  >  **nouveau**  >  **fichier**ou appuyez sur **CTRL** + **N**.
 
 2. Dans la boîte de dialogue **nouveau fichier** , sélectionnez la catégorie **général** sur la gauche, puis sélectionnez **ensemble de règles d’analyse du code**.
 
@@ -70,9 +70,9 @@ Vous pouvez créer un nouveau fichier d’ensemble de règles à partir de la bo
 > [!NOTE]
 > La procédure suivante ne s’applique pas aux projets .NET Core, qui n’ont pas d’onglet de propriété **analyse du code** .
 
-1. Dans **Explorateur de solutions**, sélectionnez le projet et maintenez-le enfoncé (ou cliquez dessus avec le bouton droit), puis sélectionnez **Propriétés**.
+1. Dans **Explorateur de solutions**, cliquez avec le bouton droit sur le projet, puis sélectionnez **Propriétés**.
 
-2. Dans les pages **Propriétés** , accédez à l’onglet **analyse du code** .
+2. Dans les pages **Propriétés** , sélectionnez l’onglet **analyse du code** .
 
 ::: moniker range="vs-2017"
 
