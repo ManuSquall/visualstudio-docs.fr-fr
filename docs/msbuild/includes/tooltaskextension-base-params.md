@@ -3,23 +3,23 @@ author: ghogen
 ms.author: ghogen
 ms.topic: include
 ms.date: 4/23/2020
-ms.openlocfilehash: 40108f56ee9d64688fc665fdef0e0ab731bddfff
-ms.sourcegitcommit: 596f92fcc84e6f4494178863a66aed85afe0bb08
+ms.openlocfilehash: 6fd0fc6fd4f2e54c0d15f649139b649797f8336f
+ms.sourcegitcommit: f4d734329c82f2c8005b36af4b2b5516d90e6c63
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/28/2020
-ms.locfileid: "82204425"
+ms.lasthandoff: 08/27/2020
+ms.locfileid: "89043002"
 ---
 ### <a name="tooltaskextension-parameters"></a>Paramètres ToolTaskExtension
 
-Cette tâche hérite de la <xref:Microsoft.Build.Tasks.ToolTaskExtension> classe, qui hérite de la <xref:Microsoft.Build.Utilities.ToolTask> classe, qui elle-même hérite <xref:Microsoft.Build.Utilities.Task> de la classe. Cette chaîne d'héritage ajoute plusieurs paramètres aux tâches qui en dérivent.
+Cette tâche hérite de la <xref:Microsoft.Build.Tasks.ToolTaskExtension> classe, qui hérite de la <xref:Microsoft.Build.Utilities.ToolTask> classe, qui elle-même hérite de la <xref:Microsoft.Build.Utilities.Task> classe. Cette chaîne d'héritage ajoute plusieurs paramètres aux tâches qui en dérivent.
 
 Le tableau suivant décrit les paramètres des classes de base :
 
 | Paramètre | Description |
 | - | - |
-| <xref:Microsoft.Build.Utilities.ToolTask.EchoOff%2A> | Paramètre `bool` facultatif.<br /><br /> Lorsque la valeur `true`est, cette tâche passe **/q** à la ligne de commande *cmd. exe* de sorte que la ligne de commande ne soit pas copiée dans stdout. |
-| <xref:Microsoft.Build.Utilities.ToolTask.EnvironmentVariables%2A> | Paramètres de tableau `String` facultatif.<br /><br /> Tableau de paires de variables d'environnement, séparées par un signe égal. Ces variables sont transmises à l'exécutable généré en plus ou en remplacement sélectif du bloc environnement normal. |
+| <xref:Microsoft.Build.Utilities.ToolTask.EchoOff%2A> | Paramètre `bool` facultatif.<br /><br /> Lorsque la valeur `true` est, cette tâche passe **/q** à la ligne de commande *cmd.exe* , de telle sorte que la ligne de commande ne soit pas copiée dans stdout. |
+| <xref:Microsoft.Build.Utilities.ToolTask.EnvironmentVariables%2A> | Paramètres de tableau `String` facultatif.<br /><br /> Tableau de définitions de variables d’environnement, séparées par des points-virgules. Chaque définition doit spécifier un nom et une valeur de variable d’environnement séparés par un signe égal. Ces variables sont transmises à l'exécutable généré en plus ou en remplacement sélectif du bloc environnement normal. Par exemple : `Variable1=Value1;Variable2=Value2`. |
 | <xref:Microsoft.Build.Utilities.ToolTask.ExitCode%2A> | Paramètre en lecture seule de sortie `Int32` facultatif.<br /><br /> Spécifie le code de sortie fourni par la commande exécutée. Si la tâche a journalisé des erreurs, alors que le processus avait un code de sortie de 0 (réussite), ce paramètre prend la valeur -1. |
 | <xref:Microsoft.Build.Utilities.ToolTask.LogStandardErrorAsError%2A> | Paramètre `bool` d'option.<br /><br /> Si la valeur est `true`, tous les messages reçus sur le flux d'erreur standard sont journalisés en tant qu'erreurs. |
 | <xref:Microsoft.Build.Utilities.ToolTask.LogStandardErrorAsError%2A> | Paramètre `bool` facultatif.<br /><br /> Si la valeur est `true`, tous les messages reçus sur le flux d'erreur standard sont journalisés en tant qu'erreurs. |
