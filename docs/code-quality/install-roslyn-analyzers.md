@@ -1,24 +1,24 @@
 ---
-title: Installer des analyseurs Roslyn
-ms.date: 08/03/2018
-ms.topic: how-to
+title: Installer des analyseurs tiers
+ms.date: 08/27/2020
+ms.topic: conceptual
 helpviewer_keywords:
 - code analysis, managed code
 - analyzers
 - Roslyn analyzers
-author: mikejo5000
-ms.author: mikejo
+author: mikadumont
+ms.author: midumont
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: ce30dd25c43f1ac8254dbdb6b04b747a976f3557
-ms.sourcegitcommit: 48e93538f1e352fc1f972b642bb5fcce2f6834a2
+ms.openlocfilehash: 9da78f4c8e76f4e5b79f4cbdb0739d34fc465330
+ms.sourcegitcommit: 016bcdc7cd3e3619457beb321800e98544efb6c9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/25/2020
-ms.locfileid: "85371753"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "89091449"
 ---
-# <a name="install-net-compiler-platform-code-analyzers"></a>Installer .NET Compiler Platform analyseurs de code
+# <a name="install-third-party-analyzers"></a>Installer des analyseurs tiers
 
 Visual Studio comprend un ensemble principal d’analyseurs de .NET Compiler Platform (*Roslyn*). Ces analyseurs sont toujours activés. Vous pouvez installer des analyseurs supplémentaires en tant que packages NuGet ou en tant qu’extensions Visual Studio dans des fichiers *VSIX* .
 
@@ -26,7 +26,7 @@ Visual Studio comprend un ensemble principal d’analyseurs de .NET Compiler Pla
 
 1. Recherchez le package de l’analyseur que vous souhaitez installer sur www.nuget.org.
 
-   Par exemple, vous souhaiterez peut-être [installer les analyseurs Microsoft FXCop](install-fxcop-analyzers.md#nuget-package) pour vérifier votre code en matière de problèmes de sécurité et de performances, entre autres. Ou installez [StyleCop. Analyzers](https://www.nuget.org/packages/stylecop.analyzers/) pour rechercher les problèmes de style dans votre base de code.
+   Par exemple, vous souhaiterez peut-être installer [StyleCop. Analyzers](https://www.nuget.org/packages/stylecop.analyzers/) pour rechercher les problèmes de style dans votre base de code.
 
 2. Installez le package dans Visual Studio, à l’aide de la [console du gestionnaire de package](/nuget/quickstart/install-and-use-a-package-in-visual-studio#package-manager-console) ou de l' [interface utilisateur du gestionnaire de package](/nuget/quickstart/install-and-use-a-package-in-visual-studio#package-manager-console).
 

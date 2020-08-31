@@ -1,12 +1,12 @@
 ---
-title: Supprimer les avertissements d’analyse du code
-ms.date: 12/01/2018
+title: Supprimer les violations d’analyse du code
+ms.date: 08/27/2020
 ms.topic: conceptual
 helpviewer_keywords:
 - source suppression, code analysis
 - code analysis, source suppression
-author: mikejo5000
-ms.author: mikejo
+author: mikadumont
+ms.author: midumont
 manager: jillfra
 dev_langs:
 - CSharp
@@ -14,14 +14,14 @@ dev_langs:
 - CPP
 ms.workload:
 - multiple
-ms.openlocfilehash: 745bc0c53738370816ad74be9249b721f236ad87
-ms.sourcegitcommit: 4d7c883ea3eedd795eeb4a9d3bd3dee82c8e093e
+ms.openlocfilehash: aa650197f291c48c0c025563098181ea1cfa19a7
+ms.sourcegitcommit: 016bcdc7cd3e3619457beb321800e98544efb6c9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88893370"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "89091436"
 ---
-# <a name="suppress-code-analysis-warnings"></a>Supprimer les avertissements d’analyse du code
+# <a name="suppress-code-analysis-violations"></a>Supprimer les violations d’analyse du code
 
 Il est souvent utile d’indiquer qu’un avertissement n’est pas applicable. Cela indique aux membres de l’équipe que le code a été révisé et que l’avertissement peut être supprimé. La suppression en source (ISS) utilise l' <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> attribut pour supprimer un avertissement. L’attribut peut être placé à proximité du segment de code qui a généré l’avertissement. Vous pouvez ajouter l' <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> attribut au fichier source en le tapant dans, ou vous pouvez utiliser le menu contextuel sur un avertissement dans le **liste d’erreurs** pour l’ajouter automatiquement.
 
