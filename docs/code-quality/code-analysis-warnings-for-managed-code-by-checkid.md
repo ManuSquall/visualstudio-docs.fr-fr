@@ -1,5 +1,5 @@
 ---
-title: Vue d’ensemble des règles de qualité du code
+title: Vue d’ensemble des règles de la qualité du code
 ms.date: 08/27/2020
 ms.topic: reference
 f1_keywords:
@@ -295,12 +295,12 @@ ms.author: midumont
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 485d3a066ec7d6044082367c36136db8bea03362
-ms.sourcegitcommit: 016bcdc7cd3e3619457beb321800e98544efb6c9
+ms.openlocfilehash: 61c15689e92132d4e3e089823bc94fc90852d4ed
+ms.sourcegitcommit: c4212f40df1a16baca1247cac2580ae699f97e4c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/29/2020
-ms.locfileid: "89091484"
+ms.lasthandoff: 08/31/2020
+ms.locfileid: "89176063"
 ---
 # <a name="code-analysis-warnings-for-managed-code-by-checkid"></a>Avertissements d’analyse du code pour le code managé par CheckId
 
@@ -577,6 +577,7 @@ Le tableau suivant répertorie les avertissements d'analyse du code pour le code
 | CA2245 | [CA2245 : Ne pas attribuer une propriété à elle-même](../code-quality/ca2245.md) | Une propriété a été accidentellement assignée à elle-même. |
 | CA2246 | [CA2246 : Ne pas attribuer un symbole et son membre dans la même instruction](../code-quality/ca2246.md) | L’assignation d’un symbole et de son membre, autrement dit, un champ ou une propriété, dans la même instruction n’est pas recommandée. Il n’est pas évident de préciser si l’accès au membre était destiné à utiliser l’ancienne valeur du symbole avant l’assignation ou la nouvelle valeur de l’assignation dans cette instruction. |
 | CA2247 | [CA2247 : l’argument passé au constructeur TaskCompletionSource doit être TaskCreationOptions enum au lieu de TaskContinuationOptions Enum.](../code-quality/ca2247.md) | TaskCompletionSource possède des constructeurs qui prennent des TaskCreationOptions qui contrôlent la tâche sous-jacente, et les constructeurs qui prennent l’état d’objet stocké dans la tâche.  Le passage accidentel d’un TaskContinuationOptions au lieu d’un TaskCreationOptions entraînera l’appel du traitement des options en tant qu’État. |
+| CA2249 | [CA2249 : CA2249 : envisagez d’utiliser String. Contains à la place de String. IndexOf](../code-quality/ca2249.md) | Les appels à `string.IndexOf` où le résultat est utilisé pour vérifier la présence ou l’absence d’une sous-chaîne peuvent être remplacés par `string.Contains` . |
 | CA5122 | [Les déclarations P/Invoke CA5122 : ne doivent pas être critiques en toute sécurité](../code-quality/ca5122.md) | Les méthodes sont marquées SecuritySafeCritical lorsqu’elles effectuent une opération relative à la sécurité, mais elle peuvent également être utilisées en toute sécurité par du code transparent. Le code transparent peut ne jamais appeler directement du code natif via P/Invoke. Par conséquent, marquer une méthode P/Invoke comme critique sécurisé ne permet pas au code transparent de l’appeler et s’avère trompeur pour l’analyse de sécurité. |
 | CA5359 | [CA5359 ne pas désactiver la validation de certificat](../code-quality/ca5359.md) | Un certificat peut aider à authentifier l’identité du serveur. Les clients doivent valider le certificat de serveur pour s’assurer que les demandes sont envoyées au serveur souhaité. Si le ServerCertificateValidationCallback retourne toujours `true` , les certificats sont validés. |
 | CA5360 | [Les CA5360 n’appellent pas de méthodes dangereuses dans la désérialisation](../code-quality/ca5360.md) | Une désérialisation non sécurisée est une vulnérabilité qui se produit lorsque des données non approuvées sont utilisées pour abuser de la logique d’une application, provoquer une attaque par déni de service (DoS) ou même exécuter du code arbitraire sur la désérialisation. Il est souvent possible pour les utilisateurs malveillants d’abuser de ces fonctionnalités de désérialisation lorsque l’application désérialise des données non approuvées qui sont sous leur contrôle. Plus précisément, appelez des méthodes dangereuses dans le processus de désérialisation. Des attaques de désérialisation non sécurisées pourraient permettre à une personne malveillante d’effectuer des attaques telles que les attaques par déni de l’authentification, les contournements d’authentification et l’exécution de code à distance. |
