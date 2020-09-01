@@ -1,2 +1,34 @@
-- name: Index
-  href: index.md
+- name: Docker
+  expanded: true
+  items:
+    - name: Présentation de Docker pour les utilisateurs de VS Code
+      expanded: true
+      items:
+        - name: Prise en main
+          href: tutorials/docker-tutorial.md
+        - name: "Partie 1\_: L'application"
+          href: tutorials/your-application.md
+        - name: "Partie 2\_: Mise à jour de votre application"
+          href: tutorials/update-your-app.md
+        - name: "Partie 3\_: Partage de votre application"
+          href: tutorials/share-your-app.md
+        - name: "Partie 4\_: Persistance de votre base de données"
+          href: tutorials/persist-your-data.md
+        - name: "Partie 5\_: Utilisation de montages de liaisons"
+          href: tutorials/use-bind-mounts.md
+        - name: "Partie 6\_: Applications multiconteneurs"
+          href: tutorials/multi-container-apps.md
+        - name: "Partie 7\_: Utiliser Docker Compose"
+          href: tutorials/use-docker-compose.md
+        - name: "Partie 8\_: Bonnes pratiques pour créer des images"
+          href: tutorials/image-building-best-practices.md
+        - name: Partie Déployer dans le cloud
+          href: tutorials/deploy-to-cloud.md
+        - name: "Et ensuite\_?"
+          href: tutorials/whats-next.md
+        - name: Sources
+          items:
+            - name: Exemples
+              href: 'https://github.com/docker/awesome-compose'
+            - name: Intégration de Docker ACI
+              href: 'https://github.com/docker/aci-integration-beta/'
