@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 2b6dd5269868f02582472bee86f19d23719c9a5b
-ms.sourcegitcommit: 4d7c883ea3eedd795eeb4a9d3bd3dee82c8e093e
+ms.openlocfilehash: e20427ae3d64a485bb25da2f4482bbbec51e3dda
+ms.sourcegitcommit: 26178b116cbf7353fee6ca989b8d872114f7b405
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88893422"
+ms.lasthandoff: 08/31/2020
+ms.locfileid: "89219775"
 ---
 # <a name="use-code-analyzers"></a>Utiliser des analyseurs de code
 
@@ -62,11 +62,11 @@ Le tableau suivant présente les différentes options de gravité :
 
 | Gravité (Explorateur de solutions) | Gravité (fichier EditorConfig) | Comportement au moment de la génération | Comportement de l’éditeur |
 |-|-|-|
-| Error | `error` | Les violations apparaissent comme des *Erreurs* dans les liste d’erreurs et dans la sortie de la génération en ligne de commande, et entraînent l’échec des builds.| Le code incriminé est souligné d’un tilde rouge et marqué d’une petite zone rouge dans la barre de défilement. |
+| Erreur | `error` | Les violations apparaissent comme des *Erreurs* dans les liste d’erreurs et dans la sortie de la génération en ligne de commande, et entraînent l’échec des builds.| Le code incriminé est souligné d’un tilde rouge et marqué d’une petite zone rouge dans la barre de défilement. |
 | Avertissement | `warning` | Les violations apparaissent en tant qu' *avertissements* dans le liste d’erreurs et dans la sortie de la génération en ligne de commande, mais ne provoquent pas l’échec des builds. | Le code incriminé est souligné d’un tilde vert et est marqué d’un petit cadre vert dans la barre de défilement. |
 | Info | `suggestion` | Les violations apparaissent sous la forme de *messages* dans le liste d’erreurs, et pas du tout dans la sortie de la génération de la ligne de commande. | Le code incriminé est souligné d’un tilde gris et marqué d’une petite zone grise dans la barre de défilement. |
 | Hidden | `silent` | Non visible par l’utilisateur. | Non visible par l’utilisateur. Toutefois, le diagnostic est signalé au moteur de diagnostic IDE. |
-| None | `none` | Entièrement supprimée. | Entièrement supprimée. |
+| Aucune | `none` | Entièrement supprimée. | Entièrement supprimée. |
 | Default | `default` | Correspond à la gravité par défaut de la règle. Pour déterminer la valeur par défaut d’une règle, recherchez dans la Fenêtre Propriétés. | Correspond à la gravité par défaut de la règle. |
 
 La capture d’écran suivante de l’éditeur de code montre trois violations différentes avec des gravités différentes. Notez la couleur du tilde et le petit carré de couleur de la barre de défilement à droite.
@@ -102,6 +102,9 @@ Vous pouvez définir la gravité d’une catégorie spécifique de règles de l�
 - Définir la gravité de la règle pour toutes les règles de l’analyseur :
 
 `dotnet_analyzer_diagnostic.severity = <severity>`
+
+> [!NOTE]
+> Les entrées permettant de configurer plusieurs règles de l’analyseur à la fois s’appliquent uniquement aux règles qui sont *activées par défaut*. Les règles de l’analyseur marquées comme désactivées par défaut dans le package de l’analyseur doivent être activées via des entrées explicites `dotnet_diagnostic.<rule ID>.severity = <severity>` .
 
 Si vous avez plusieurs entrées applicables à un ID de règle spécifique, voici l’ordre de priorité pour choisir l’entrée applicable :
 

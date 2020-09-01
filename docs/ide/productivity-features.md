@@ -1,5 +1,5 @@
 ---
-title: Guide de productivité
+title: " Guide de productivité"
 ms.date: 4/29/2020
 ms.topic: conceptual
 author: ornellaalt
@@ -7,12 +7,12 @@ ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 33eb146ce36bfa36dbe28fdcec0f7dfb85daa59b
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: aa4a768f8ebd8b39918fa3ba51d4eb9b3f773151
+ms.sourcegitcommit: 26178b116cbf7353fee6ca989b8d872114f7b405
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84184079"
+ms.lasthandoff: 08/31/2020
+ms.locfileid: "89219762"
 ---
 # <a name="productivity-guide-for-visual-studio"></a>Guide de productivité pour Visual Studio
 
@@ -20,11 +20,11 @@ Si vous souhaitez gagner du temps pendant que vous écrivez du code, vous êtes 
 
 Pour plus d’informations sur les raccourcis clavier utiles, consultez [Raccourcis de productivité](../ide/productivity-shortcuts.md). Pour obtenir la liste complète des raccourcis de commande, consultez [Raccourcis clavier par défaut](../ide/default-keyboard-shortcuts-in-visual-studio.md).
 
-## <a name="get-started"></a>Prendre en main
+## <a name="get-started"></a>Bien démarrer
 
 Gagnez du temps dans l’exploration des menus en recherchant rapidement les éléments dont vous avez besoin, notamment les commandes, les paramètres, la documentation et les options d’installation. Consultez Raccourcis clavier pour les commandes dans les résultats de la recherche dans Visual Studio afin de pouvoir les mémoriser plus facilement. 
 
-- **Code factice utilisant la liste des tâches**. Si vous n’avez pas suffisamment de spécifications pour terminer un morceau de code, utilisez Liste des tâches pour suivre les commentaires de code qui utilisent des jetons tels que `TODO` et `HACK` , ou des jetons personnalisés, et pour gérer les raccourcis qui vous permettent d’accéder directement à un emplacement prédéfini dans le code. Pour plus d’informations, consultez [utiliser l’liste des tâches](../ide/using-the-task-list.md.).
+- **Code factice utilisant la liste des tâches**. Si vous n’avez pas suffisamment de spécifications pour terminer un morceau de code, utilisez Liste des tâches pour suivre les commentaires de code qui utilisent des jetons tels que `TODO` et `HACK` , ou des jetons personnalisés, et pour gérer les raccourcis qui vous permettent d’accéder directement à un emplacement prédéfini dans le code. Pour plus d’informations, consultez [utiliser l’liste des tâches](../ide/using-the-task-list.md).
 
 - **Utilisez Explorateur de solutions des raccourcis**. Si vous ne connaissez pas Visual Studio, ces raccourcis vous seront utiles et vous permettront de gagner du temps lorsque vous serez à la vitesse d’une nouvelle base de code. Pour obtenir la liste complète des raccourcis, consultez [raccourcis clavier par défaut dans Visual Studio](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_solutionexplorerGLOBAL).
 
@@ -60,7 +60,7 @@ Gagnez du temps dans l’exploration des menus en recherchant rapidement les él
 
 - **Utiliser des exemples d’applications**. Vous pouvez accélérer le développement d'applications en téléchargeant et en installant des exemples d'applications à partir de [Microsoft Developer Network](https://code.msdn.microsoft.com/). Vous pouvez également apprendre une technologie ou un concept de programmation spécifiques en téléchargeant et en explorant un exemple de pack pour cette zone.
 
-- **Modifier la mise en forme des accolades avec la mise en forme/nouvelles lignes**. Utilisez la page Options de **mise en forme** pour définir les options de mise en forme du code dans l’éditeur de code, y compris les nouvelles lignes. Pour plus d’informations sur l’utilisation de ce paramètre en C#, consultez [boîte de dialogue Options : éditeur de texte > C# > style de Code > mise en forme](../ide/reference/options-text-editor-csharp-formatting.md). Pour C++, consultez [définir vos préférences de codage C++ dans Visual Studio](https://docs.microsoft.com/cpp/ide/how-to-set-preferences). Pour Python, consultez [formater le code python](../python/formatting-python-code.md).
+- **Modifier la mise en forme des accolades avec la mise en forme/nouvelles lignes**. Utilisez la page Options de **mise en forme**  pour définir les options de mise en forme du code dans l’éditeur de code, y compris les nouvelles lignes. Pour plus d’informations sur l’utilisation de ce paramètre en C#, consultez [boîte de dialogue Options : éditeur de texte > C# > style de Code > mise en forme](../ide/reference/options-text-editor-csharp-formatting.md). Pour C++, consultez [définir vos préférences de codage C++ dans Visual Studio](https://docs.microsoft.com/cpp/ide/how-to-set-preferences). Pour Python, consultez [formater le code python](../python/formatting-python-code.md).
 
 - **Modifiez votre mise en retrait à l’aide des onglets**. Utilisez les paramètres personnalisés de l’éditeur, adaptés à chaque code base, pour appliquer des styles de codage cohérents pour plusieurs développeurs qui travaillent sur le même projet dans différents éditeurs et IDE. Assurez-vous que toute votre équipe respecte les mêmes conventions de langage, conventions de nommage et règles de mise en forme. Étant donné que ces paramètres personnalisés sont portables et voyagent avec votre code, vous pouvez appliquer des styles de codage même en dehors de Visual Studio. Pour plus d’informations, consultez [options, éditeur de texte, tous les langages, onglets](../ide/reference/options-text-editor-all-languages-tabs.md#tabs).
 
@@ -134,7 +134,7 @@ Le débogage peut prendre beaucoup de temps, mais les conseils suivants peuvent 
 
      Pour ajouter un DataTip, le débogueur doit être en mode arrêt. Placez le curseur sur la variable, puis appuyez sur le bouton Pin sur le DataTip qui apparaît. Lorsque le débogage est arrêté, une icône d'épingle bleue apparaît dans le fichier source en regard de la ligne de code qui contient la variable. Si vous pointez l'épingle bleue, la valeur de la variable de la session de débogage la plus récente s'affiche.
 
-- **Effacer la fenêtre Exécution**. Vous pouvez effacer le contenu de la [fenêtre exécution](../ide/reference/immediate-window.md) au moment de la conception en entrant `>cls` ou`>Edit.ClearAll`
+- **Effacer la fenêtre Exécution**. Vous pouvez effacer le contenu de la [fenêtre exécution](../ide/reference/immediate-window.md) au moment de la conception en entrant `>cls` ou `>Edit.ClearAll`
 
      Pour plus d’informations sur les commandes supplémentaires, consultez [alias de commandes Visual Studio](../ide/reference/visual-studio-command-aliases.md).
 

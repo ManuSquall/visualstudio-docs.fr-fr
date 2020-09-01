@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 84b37bce062ec5f1f406bc6ef9f6507399820af9
-ms.sourcegitcommit: 596f92fcc84e6f4494178863a66aed85afe0bb08
+ms.openlocfilehash: c3d9c1dfa45251d0f64a93bb9a5142dcec76b7c7
+ms.sourcegitcommit: 26178b116cbf7353fee6ca989b8d872114f7b405
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/28/2020
-ms.locfileid: "82189474"
+ms.lasthandoff: 08/31/2020
+ms.locfileid: "89219723"
 ---
 # <a name="fxcop-rule-port-status"></a>État du port de la règle FXCop
 
@@ -27,7 +27,7 @@ La [page de documentation générée automatiquement](https://github.com/dotnet/
 
 À partir de la date de cette page, la liste des règles FxCop qui ont été portées aux [analyseurs FxCop](install-fxcop-analyzers.md) comprend les éléments suivants :
 
-ID de règle | Intitulé
+Identificateur de la règle | Titre
 --------|---------
 [CA1000](ca1000.md) | Ne pas déclarer de membres statiques sur les types génériques
 [CA1001](ca1001.md) | Les types qui possèdent des champs supprimables doivent être supprimables
@@ -68,14 +68,14 @@ ID de règle | Intitulé
 [CA1063](ca1063.md) | Implémenter IDisposable correctement
 [CA1064](ca1064.md) | Les exceptions doivent être publiques
 [CA1065](ca1065.md) | Ne pas lever d'exceptions dans les emplacements inattendus
-[Ca1066](ca1066.md) | Le {0} type doit implémenter IEquatable\<T>, car il remplace Equals
-[Ca1067](ca1067.md) | Remplace Object. Equals (Object) lors de l’implémentation\<de IEquatable T>
+[Ca1066](ca1066.md) | {0}Le type doit implémenter IEquatable \<T> , car il remplace égal à
+[Ca1067](ca1067.md) | Remplacer Object. Equals (Object) lors de l’implémentation de IEquatable\<T>
 [Ca1068](ca1068.md) | Les paramètres CancellationToken doivent venir en dernier
 Ca1200 | Éviter d’utiliser des balises cref avec un préfixe
 [CA1303](ca1303.md) | Ne pas passer de littéraux en paramètres localisés
 [CA1304](ca1304.md) | Spécifier CultureInfo
 [CA1305](ca1305.md) | Spécifier IFormatProvider
-[CA1307](ca1307.md) | Spécifier StringComparison
+[CA1307](ca1307.md) | Spécifier StringComparison pour plus de clarté
 [CA1308](ca1308.md) | Normaliser les chaînes en majuscules
 [CA1309](ca1309.md) | Utiliser la comparaison de chaînes ordinale
 [CA1401](ca1401.md) | Les P/Invoke ne doivent pas être visibles
@@ -119,7 +119,7 @@ CA1826 | N’utilisez pas de méthodes énumérables sur des collections indexab
 [CA2000](ca2000.md) | Supprimer les objets avant la mise hors de portée
 [CA2002](ca2002.md) | Ne définissez pas un verrou sur des objets à identité faible
 [Ca2007](ca2007.md) | Envisagez d’appeler ConfigureAwait sur la tâche attendue
-CA2008 | Ne pas créer de tâches sans passer un TaskScheduler
+[CA2008](ca2008.md) | Ne pas créer de tâches sans passer un TaskScheduler
 Ca2009 | N’appelez pas ToImmutableCollection sur une valeur ImmutableCollection
 CA2010 | Consomme toujours la valeur retournée par les méthodes marquées avec PreserveSigAttribute
 [CA2100](ca2100.md) | Vérifier si les requêtes SQL présentent des failles de sécurité
@@ -211,7 +211,7 @@ L’ensemble des règles qui n’ont pas été déplacées vers les [analyseurs 
 
 Les règles d’analyse héritées FxCop suivantes n’ont pas encore été implémentées en tant qu’analyseurs, mais peuvent toujours être. Cela peut être dû à une raison technique de blocage ou simplement que la règle est moins prioritaire. Pour plus d’informations sur l’état de portage de chaque règle, cliquez sur le lien dans la colonne **problème de suivi** .
 
-ID de règle | Suivi du problème
+Identificateur de la règle | Suivi du problème
 --- | ---
 [CA1002](ca1002.md) | [https://github.com/dotnet/roslyn-analyzers/issues/369](https://github.com/dotnet/roslyn-analyzers/issues/369)
 [CA1004](ca1004.md) | [https://github.com/dotnet/roslyn-analyzers/issues/370](https://github.com/dotnet/roslyn-analyzers/issues/370)

@@ -84,6 +84,7 @@ f1_keywords:
 - CA1307
 - CA1308
 - CA1309
+- CA1310
 - CA1400
 - CA1401
 - CA1402
@@ -173,6 +174,7 @@ f1_keywords:
 - CA1833
 - CA1835
 - CA1836
+- CA1837
 - CA1838
 - CA1900
 - CA1901
@@ -184,6 +186,7 @@ f1_keywords:
 - CA2004
 - CA2006
 - CA2007
+- CA2008
 - CA2009
 - CA2011
 - CA2012
@@ -295,12 +298,12 @@ ms.author: midumont
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 61c15689e92132d4e3e089823bc94fc90852d4ed
-ms.sourcegitcommit: c4212f40df1a16baca1247cac2580ae699f97e4c
+ms.openlocfilehash: 05937cef7187726134a7116edae4d74ee004de1d
+ms.sourcegitcommit: 26178b116cbf7353fee6ca989b8d872114f7b405
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 08/31/2020
-ms.locfileid: "89176063"
+ms.locfileid: "89219749"
 ---
 # <a name="code-analysis-warnings-for-managed-code-by-checkid"></a>Avertissements d’analyse du code pour le code managé par CheckId
 
@@ -382,9 +385,10 @@ Le tableau suivant répertorie les avertissements d'analyse du code pour le code
 | CA1304 | [CA1304 : Spécifier CultureInfo](../code-quality/ca1304.md) | Une méthode ou un constructeur appelle un membre présentant une surcharge qui accepte un paramètre System.Globalization.CultureInfo, et la méthode ou le constructeur n'appelle pas la surcharge qui prend le paramètre CultureInfo. Lorsqu'un objet CultureInfo ou System.IFormatProvider n'est pas fourni, la valeur par défaut fournie par le membre surchargé peut ne pas avoir l'effet escompté selon les différents paramètres régionaux. |
 | CA1305 | [CA1305 : Spécifier IFormatProvider](../code-quality/ca1305.md) | Une méthode ou un constructeur appelle un ou plusieurs membres présentant des surcharges qui acceptent un paramètre System.IFormatProvider, et la méthode ou le constructeur n'appelle pas la surcharge qui prend le paramètre IFormatProvider. Lorsqu'un objet System.Globalization.CultureInfo ou IFormatProvider n'est pas fourni, la valeur par défaut fournie par le membre surchargé peut ne pas avoir l'effet escompté selon les différents paramètres régionaux. |
 | CA1306 | [CA1306 : Définir les paramètres régionaux pour les types de données](../code-quality/ca1306.md) | Les paramètres régionaux déterminent des éléments de présentation des données spécifiques à la culture, telles que la mise en forme utilisée pour les valeurs numériques, les symboles monétaires et l'ordre de tri. Lorsque vous créez un DataTable ou un DataSet, vous devez définir les paramètres régionaux explicitement. |
-| CA1307 | [CA1307 : Spécifier StringComparison](../code-quality/ca1307.md) | Une opération de comparaison de chaînes utilise une surcharge de méthode qui ne définit pas de paramètre StringComparison. |
+| CA1307 | [CA1307 : spécifier StringComparison pour plus de clarté](../code-quality/ca1307.md) | Une opération de comparaison de chaînes utilise une surcharge de méthode qui ne définit pas de paramètre StringComparison. |
 | CA1308 |[CA1308 : Normaliser les chaînes en majuscules](../code-quality/ca1308.md) | Les chaînes doivent être normalisées en majuscules. En cas de conversion en minuscules, un petit groupe de caractères ne peut pas faire un aller-retour. |
 | CA1309 | [CA1309 : Utiliser StringComparison avec la valeur Ordinal](../code-quality/ca1309.md) | Opération de comparaison de chaînes non linguistique qui n'affecte pas la valeur Ordinal ou OrdinalIgnoreCase au paramètre StringComparison. En affectant explicitement au paramètre la valeur StringComparison.Ordinal ou StringComparison.OrdinalIgnoreCase, votre code gagne souvent en rapidité, tout en devenant plus correct et plus fiable. |
+| Ca1310 | [Ca1310 : spécifier StringComparison pour l’exactitude](../code-quality/ca1310.md) | Une opération de comparaison de chaînes utilise une surcharge de méthode qui ne définit pas de paramètre StringComparison et utilise par défaut la comparaison de chaînes propre à la culture. |
 | CA1400 | [CA1400 : des points d’entrée P/Invoke doivent exister](../code-quality/ca1400.md) |Une méthode publique ou protégée est marquée avec l'attribut System.Runtime.InteropServices.DllImportAttribute. La bibliothèque non managée n'a pas pu être localisée, ou la méthode n'a pu être mise en correspondance avec aucune fonction de la bibliothèque. |
 | CA1401 | [Ca1401 : les P/Invoke ne doivent pas être visibles](../code-quality/ca1401.md) | Une méthode publique ou protégée dans un type public a l'attribut System.Runtime.InteropServices.DllImportAttribute (également implémenté par le mot clé Declare en [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]). De telles méthodes ne doivent pas être exposées. |
 | CA1402 |[CA1402 : Éviter les surcharges dans les interfaces COM visibles](../code-quality/ca1402.md) | Lorsque les méthodes surchargées sont exposées aux clients COM, seule la première surcharge de méthode conserve son nom. Les surcharges suivantes sont renommées de manière unique par l'ajout d'un trait de soulignement (_) au nom et d'un entier qui correspond à l'ordre de déclaration de la surcharge. |
@@ -467,6 +471,7 @@ Le tableau suivant répertorie les avertissements d'analyse du code pour le code
 | CA1833 |[CA1833 : Utiliser AsSpan ou AsMemory à la place d’indexeurs basés sur Range pour obtenir la partie Span ou Memory d’un tableau](../code-quality/ca1833.md) | Lors de l’utilisation d’un indexeur de plages sur un tableau et de l’assignation implicite de la valeur à un <xref:System.Span%601> <xref:System.Memory%601> type ou, la méthode <xref:System.Runtime.CompilerServices.RuntimeHelpers.GetSubArray%2A> est utilisée à la place de <xref:System.Span%601.Slice%2A?#System_Span_1_Slice_System_Int32_System_Int32_> , ce qui produit une copie de la partie demandée du tableau. |
 | CA1835 |[CA1835 : préférer les surcharges « Memory' » pour « ReadAsync » et « WriteAsync »](../code-quality/ca1835.md) | 'Stream’a une surcharge’ReadAsync’qui accepte’Memory &lt; Byte &gt; 'comme premier argument et une surcharge’WriteAsync’qui prend un’ReadOnlyMemory &lt; Byte &gt; 'comme premier argument. Préférez appeler les surcharges basées sur la mémoire, qui sont plus efficaces. |
 | CA1836 |[CA1836 : préférer `IsEmpty` le `Count` cas échéant](../code-quality/ca1836.md) | Préférer `IsEmpty` la propriété qui est plus efficace `Count` que `Length` , <xref:System.Linq.Enumerable.Count%60%601%28System.Collections.Generic.IEnumerable%7B%60%600%7D%29> ou <xref:System.Linq.Enumerable.LongCount%60%601%28System.Collections.Generic.IEnumerable%7B%60%600%7D%29> pour déterminer si l’objet contient ou non des éléments. |
+| CA1837 | [CA1837 : utilisez à la `Environment.ProcessId` place de `Process.GetCurrentProcess().Id`](../code-quality/ca1837.md) | `Environment.ProcessId` est plus simple et plus rapide que `Process.GetCurrentProcess().Id` . |
 | CA1838 | [CA1838 : éviter `StringBuilder` les paramètres pour les P/Invoke](../code-quality/ca1838.md) | Le marshaling de « StringBuilder » crée toujours une copie de mémoire tampon native, ce qui entraîne plusieurs allocations pour une opération de marshaling. |
 | CA1900 | [CA1900 : Les champs de type valeur doivent être portables](../code-quality/ca1900.md) | Cette règle vérifie que les structures déclarées avec une disposition explicite s'aligneront correctement lorsqu'elles seront marshalées pour le code non managé sur les systèmes d'exploitation 64 bits. |
 | CA1901 | [CA1901 : les déclarations P/Invoke doivent être portables](../code-quality/ca1901.md) | Cette règle évalue la taille de chaque paramètre et la valeur de retour d’un P/Invoke, puis vérifie que la taille du paramètre est correcte lorsqu’elle est marshalée au code non managé sur les systèmes d’exploitation 32 bits et 64 bits. |
@@ -478,6 +483,7 @@ Le tableau suivant répertorie les avertissements d'analyse du code pour le code
 | CA2004 | [CA2004 : Supprimez les appels à GC.KeepAlive](../code-quality/ca2004.md) | Si vous envisagez d'utiliser SafeHandle, supprimez tous les appels à GC.KeepAlive (objet). Dans ce cas, les classes n'ont pas à appeler GC.KeepAlive. Cela suppose qu'elles n'ont pas de finaliseur mais qu'elles dépendent de SafeHandle pour finaliser le handle du système d'exploitation à leur place. |
 | CA2006 | [CA2006 : Utilisez SafeHandle pour encapsuler les ressources natives](../code-quality/ca2006.md) | L'utilisation de IntPtr dans du code managé peut être le signe d'un problème potentiel de sécurité et de fiabilité. Toute utilisation de IntPtr doit être passée en revue pour déterminer s’il est nécessaire de recourir à un SafeHandle ou une technologie similaire à la place. |
 | Ca2007 | [CA2007 : N’attendez pas directement une Tâche](ca2007.md) | Une méthode asynchrone [attend](/dotnet/csharp/language-reference/keywords/await) directement un <xref:System.Threading.Tasks.Task> . Lorsqu’une méthode asynchrone attend directement une <xref:System.Threading.Tasks.Task> , une continuation se produit dans le thread qui a créé la tâche. Ce comportement peut être coûteux en termes de performances et peut entraîner un blocage sur le thread d’interface utilisateur. Envisagez <xref:System.Threading.Tasks.Task.ConfigureAwait(System.Boolean)?displayProperty=nameWithType> d’appeler pour signaler votre intention de continuation. |
+| CA2008 | [CA2008 : ne pas créer de tâches sans passer un TaskScheduler](ca2008.md) | Une opération de création de tâche ou de continuation utilise une surcharge de méthode qui ne spécifie pas de <xref:System.Threading.Tasks.TaskScheduler> paramètre. |
 | Ca2009 | [CA2009 : N’appelez pas ToImmutableCollection sur une valeur ImmutableCollection](ca2009.md) | `ToImmutable` la méthode était inutilement appelée sur une collection immuable de l' <xref:System.Collections.Immutable> espace de noms. |
 | Ca2011 | [CA2011 : Ne pas assigner la propriété dans son setter](ca2011.md) | Une valeur a été assignée par erreur à une propriété dans son propre [accesseur Set](/dotnet/csharp/programming-guide/classes-and-structs/using-properties#the-set-accessor). |
 | Ca2012 | [CA2012 : Utiliser correctement ValueTasks](ca2012.md) | Les ValueTasks retournés par les appels de membres sont censés être attendus directement.  Toute tentative d’utilisation d’un ValueTask à plusieurs reprises ou d’un accès direct à l’un des résultats avant qu’il ne soit connu peut entraîner une exception ou une altération.  En ignorant ce ValueTask, il est probable qu’il s’agit d’une indication d’un bogue fonctionnel et peut nuire aux performances. |
