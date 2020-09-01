@@ -8,12 +8,12 @@ ms.assetid: 57dac3b7-0cdd-405c-9af5-30ed9ca45e53
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 91f0792f64e09292836a3b2d60f669c67903b3a7
-ms.sourcegitcommit: d9254e54079ae01cdf2d07b11f988faf688f80fc
+ms.openlocfilehash: f1299d97cbda78049732d3367a9231272397e2ec
+ms.sourcegitcommit: 26178b116cbf7353fee6ca989b8d872114f7b405
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/11/2020
-ms.locfileid: "88114168"
+ms.lasthandoff: 09/01/2020
+ms.locfileid: "89284380"
 ---
 # <a name="license-element-vsix-language-pack-schema"></a>Élément License (schéma du module linguistique VSIX)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,13 +33,13 @@ facultatif. Chemin d’accès d’une version localisée du fichier de licence p
   
 |Attribut|Description|  
 |---------------|-----------------|  
-|None||  
+|Aucune||  
   
 ### <a name="child-elements"></a>Éléments enfants  
   
 |Élément|Description|  
 |-------------|-----------------|  
-|None||  
+|Aucune||  
   
 ### <a name="parent-elements"></a>Éléments parents  
   
@@ -54,39 +54,13 @@ facultatif. Chemin d’accès d’une version localisée du fichier de licence p
  Si l' `License` élément est défini, le texte du fichier de licence désigné s’affiche pendant l’installation et l’utilisateur doit accepter la licence pour continuer.  
   
 ## <a name="element-information"></a>Informations sur les éléments  
-
-:::row:::
-    :::column:::
-        Espace de noms  
-    :::column-end:::
-    :::column:::
-        `http://schemas.microsoft.com/developer/vsx-schema-lp/2010`
-    :::column-end:::
-:::row-end:::
-:::row:::
-    :::column:::
-        Nom du schéma
-    :::column-end:::
-    :::column:::
-        Schéma du module linguistique VSIX
-    :::column-end:::
-:::row-end:::
-:::row:::
-    :::column:::
-        Fichier de validation
-    :::column-end:::
-    :::column:::
-        VSIXLanguagePackSchema. xsd
-    :::column-end:::
-:::row-end:::
-:::row:::
-    :::column:::
-        Peut être vide
-    :::column-end:::
-    :::column:::
-        Non applicable
-    :::column-end:::
-:::row-end:::
+  
+|                 |                                                           |
+|-----------------|-----------------------------------------------------------|
+|    Espace de noms    | `http://schemas.microsoft.com/developer/vsx-schema-lp/2010` |
+|   Nom du schéma   |                 Schéma du module linguistique VSIX                 |
+| Fichier de validation |                VSIXLanguagePackSchema. xsd                 |
+|  Peut être vide   |                      Non applicable                       |
   
 ## <a name="see-also"></a>Voir aussi  
  [Référence de schéma du module linguistique VSX](../extensibility/vsx-language-pack-schema-reference.md)   

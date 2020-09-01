@@ -8,12 +8,12 @@ ms.assetid: 57b7f502-3b04-42d9-90d5-f57772a7c757
 caps.latest.revision: 8
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 64d8430dbcf563ca232d1b8d850678925770219f
-ms.sourcegitcommit: d9254e54079ae01cdf2d07b11f988faf688f80fc
+ms.openlocfilehash: 58e491290122a9d525ff8129333ac0f52ac5f778
+ms.sourcegitcommit: 26178b116cbf7353fee6ca989b8d872114f7b405
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/11/2020
-ms.locfileid: "88114173"
+ms.lasthandoff: 09/01/2020
+ms.locfileid: "89284338"
 ---
 # <a name="localizedname-element-vsix-language-pack-schema"></a>Élément LocalizedName (schéma du module linguistique VSIX)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,13 +33,13 @@ Obligatoire. Nom localisé de l’extension à installer.
   
 |Attribut|Description|  
 |---------------|-----------------|  
-|None||  
+|Aucune||  
   
 ### <a name="child-elements"></a>Éléments enfants  
   
 |Élément|Description|  
 |-------------|-----------------|  
-|None||  
+|Aucune||  
   
 ### <a name="parent-elements"></a>Éléments parents  
   
@@ -51,39 +51,13 @@ Obligatoire. Nom localisé de l’extension à installer.
  Obligatoire. Nom du module linguistique dans la langue cible.  
   
 ## <a name="element-information"></a>Informations sur les éléments  
-
-:::row:::
-    :::column:::
-        Espace de noms
-    :::column-end:::
-    :::column:::
-        `http://schemas.microsoft.com/developer/vsx-schema-lp/2010`
-    :::column-end:::
-:::row-end:::
-:::row:::
-    :::column:::
-        Nom du schéma
-    :::column-end:::
-    :::column:::
-        Schéma du module linguistique VSIX
-    :::column-end:::
-:::row-end:::
-:::row:::
-    :::column:::
-        Fichier de validation
-    :::column-end:::
-    :::column:::
-        VSIXLanguagePackSchema. xsd
-    :::column-end:::
-:::row-end:::
-:::row:::
-    :::column:::
-        Peut être vide
-    :::column-end:::
-    :::column:::
-        Non applicable
-    :::column-end:::
-:::row-end:::
+  
+|                 |                                                           |
+|-----------------|-----------------------------------------------------------|
+|    Espace de noms    | `http://schemas.microsoft.com/developer/vsx-schema-lp/2010` |
+|   Nom du schéma   |                 Schéma du module linguistique VSIX                 |
+| Fichier de validation |                VSIXLanguagePackSchema. xsd                 |
+|  Peut être vide   |                      Non applicable                       |
   
 ## <a name="see-also"></a>Voir aussi  
  [Référence de schéma du module linguistique VSX](../extensibility/vsx-language-pack-schema-reference.md)   

@@ -8,12 +8,12 @@ ms.assetid: 3f07b67b-95c5-4ae8-8b7e-d643cbbb0348
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: e8012eb02d143a741cb7eea70c45cabc4ee92002
-ms.sourcegitcommit: d9254e54079ae01cdf2d07b11f988faf688f80fc
+ms.openlocfilehash: c583d67e1920080f11158a4001e191e93e234006
+ms.sourcegitcommit: 26178b116cbf7353fee6ca989b8d872114f7b405
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/11/2020
-ms.locfileid: "88114295"
+ms.lasthandoff: 09/01/2020
+ms.locfileid: "89284393"
 ---
 # <a name="moreinfourl-element-vsix-language-pack-schema"></a>Élément MoreInfoURL (schéma du module linguistique VSIX)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,13 +33,13 @@ facultatif. Lien vers les informations localisées relatives à l’extension.
   
 |Attribut|Description|  
 |---------------|-----------------|  
-|None||  
+|Aucune||  
   
 ### <a name="child-elements"></a>Éléments enfants  
   
 |Élément|Description|  
 |-------------|-----------------|  
-|None||  
+|Aucune||  
   
 ### <a name="parent-elements"></a>Éléments parents  
   
@@ -51,40 +51,14 @@ facultatif. Lien vers les informations localisées relatives à l’extension.
  facultatif. Lien vers un site Web. Le lien est une chaîne de texte.  
   
 ## <a name="element-information"></a>Informations sur les éléments  
-
-:::row:::
-    :::column:::
-        Espace de noms
-    :::column-end:::
-    :::column:::
-        `http://schemas.microsoft.com/developer/vsx-schema-lp/2010`
-    :::column-end:::
-:::row-end:::
-:::row:::
-    :::column:::
-        Nom du schéma
-    :::column-end:::
-    :::column:::
-        Schéma du module linguistique VSIX
-    :::column-end:::
-:::row-end:::
-:::row:::
-    :::column:::
-        Fichier de validation
-    :::column-end:::
-    :::column:::
-        VSIXLanguagePackSchema. xsd
-    :::column-end:::
-:::row-end:::
-:::row:::
-    :::column:::
-        Peut être vide
-    :::column-end:::
-    :::column:::
-        Non applicable
-    :::column-end:::
-:::row-end:::
-
+  
+|                 |                                                           |
+|-----------------|-----------------------------------------------------------|
+|    Espace de noms    | `http://schemas.microsoft.com/developer/vsx-schema-lp/2010` |
+|   Nom du schéma   |                 Schéma du module linguistique VSIX                 |
+| Fichier de validation |                VSIXLanguagePackSchema. xsd                 |
+|  Peut être vide   |                      Non applicable                       |
+  
 ## <a name="see-also"></a>Voir aussi  
  [Référence de schéma du module linguistique VSX](../extensibility/vsx-language-pack-schema-reference.md)   
  [Localisation de packages VSIX](../extensibility/localizing-vsix-packages.md)   

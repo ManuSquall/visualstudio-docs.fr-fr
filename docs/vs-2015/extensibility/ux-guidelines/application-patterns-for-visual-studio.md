@@ -8,17 +8,17 @@ ms.assetid: 8ed68602-4e28-46fe-b39f-f41979b308a2
 caps.latest.revision: 8
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: af70b191e4b9061d08acdc7f76ade843dee41709
-ms.sourcegitcommit: d9254e54079ae01cdf2d07b11f988faf688f80fc
+ms.openlocfilehash: cc14aadfafb16fcae571ab66e5811ea465cb55a9
+ms.sourcegitcommit: 26178b116cbf7353fee6ca989b8d872114f7b405
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/11/2020
-ms.locfileid: "88114119"
+ms.lasthandoff: 09/01/2020
+ms.locfileid: "89284405"
 ---
 # <a name="application-patterns-for-visual-studio"></a>Modèles d’application pour Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-## <a name="window-interactions"></a><a name="BKMK_WindowInteractions"></a>Interactions entre les fenêtres
+## <a name="window-interactions"></a><a name="BKMK_WindowInteractions"></a> Interactions entre les fenêtres
 
 ### <a name="overview"></a>Vue d’ensemble
  Les deux types de fenêtre principaux utilisés dans Visual Studio sont les éditeurs de documents et les fenêtres outil. Les boîtes de dialogue non modales sont rares, mais possibles. Bien qu’elles soient toutes non modales dans le shell, leurs modèles sont fondamentalement différents. Cette rubrique couvre la différence entre les fenêtres de document, les fenêtres outil et les boîtes de dialogue non modales. Les boîtes de dialogue modales sont traitées dans les [boîtes de dialogue](../../extensibility/ux-guidelines/application-patterns-for-visual-studio.md#BKMK_Dialogs).
@@ -37,10 +37,10 @@ ms.locfileid: "88114119"
 |**Position**|Toujours positionné dans le même document et n’est pas ancré autour des bords de l’IDE. Elle peut être « extraite » pour qu’elle flotte séparément de l’interpréteur de commandes principal.|Généralement, les onglets sont ancrés autour des bords de l’IDE, mais ils peuvent être personnalisés pour être flottants, masqués automatiquement (désépinglés) ou ancrés dans le même document.|Grande fenêtre flottante distincte de l’IDE.|
 |**Valider le modèle**|*Validation différée*<br /><br /> Pour enregistrer les données dans un document, l’utilisateur doit émettre la commande fichier/enregistrer, enregistrer sous ou enregistrer tout. Une fenêtre de document a le concept de données qui est « modifié », puis validé sur l’une des commandes d’enregistrement. Lors de la fermeture d’une fenêtre de document, tout le contenu est enregistré sur le disque ou perdu.|*Validation immédiate*<br /><br /> Il n’existe aucun modèle d’enregistrement. Pour les fenêtres outil de l’inspecteur qui aident à modifier un fichier, le fichier doit être ouvert dans l’éditeur ou le concepteur actif, et l’éditeur ou le concepteur est propriétaire de l’enregistrement.|*Validation différée ou immédiate*<br /><br /> La plupart du temps, une boîte de dialogue non modale nécessite une action pour valider les modifications et permet une opération d’annulation, qui annule toutes les modifications apportées dans la session de dialogue.  Cela fait la différence entre une boîte de dialogue non modale et une fenêtre outil dans laquelle les fenêtres outil disposent toujours d’un modèle de validation immédiate.|
 |**Visibilité**|*Ouvrir/créer (fichier) et fermer*<br /><br /> Pour ouvrir une fenêtre de document, vous pouvez ouvrir un document existant ou utiliser un modèle pour créer un nouveau document. Il n’y a aucune \<specific editor> commande « ouvrir ».|*Masquer et afficher*<br /><br /> Les fenêtres outil à instance unique peuvent être masquées ou affichées. Le contenu et les États au sein de la fenêtre outil sont rendus persistants en vue ou masqués. Les fenêtres outil multi-instances peuvent être fermées et masquées. Quand une fenêtre outil à instances multiples est fermée, le contenu et l’état de la fenêtre outil sont ignorés.|*Lancé à partir d’une commande*<br /><br /> Les boîtes de dialogue sont lancées à partir d’une commande basée sur des tâches.|
-|**Instances**|*Multi-instance*<br /><br /> Plusieurs éditeurs peuvent être ouverts en même temps et en modifiant des fichiers différents, tandis que certains éditeurs autorisent également l’ouverture du même fichier dans plusieurs éditeurs (à l’aide de la **fenêtre > commande nouvelle fenêtre** ).<br /><br /> Un seul éditeur peut modifier un ou plusieurs fichiers en même temps (Concepteur de projets).|*Une seule ou plusieurs instances*<br /><br /> Le contenu change pour refléter le contexte (comme dans l’Explorateur de propriétés) ou le focus ou le contexte Push vers d’autres fenêtres (Liste des tâches, Explorateur de solutions).<br /><br /> Les fenêtres outil à instance unique et à instances multiples doivent être associées à la fenêtre de document active, à moins qu’il y ait une raison impérieuse de ne pas les utiliser.|*Instance unique*|
+|**Fois**|*Multi-instance*<br /><br /> Plusieurs éditeurs peuvent être ouverts en même temps et en modifiant des fichiers différents, tandis que certains éditeurs autorisent également l’ouverture du même fichier dans plusieurs éditeurs (à l’aide de la **fenêtre > commande nouvelle fenêtre** ).<br /><br /> Un seul éditeur peut modifier un ou plusieurs fichiers en même temps (Concepteur de projets).|*Une seule ou plusieurs instances*<br /><br /> Le contenu change pour refléter le contexte (comme dans l’Explorateur de propriétés) ou le focus ou le contexte Push vers d’autres fenêtres (Liste des tâches, Explorateur de solutions).<br /><br /> Les fenêtres outil à instance unique et à instances multiples doivent être associées à la fenêtre de document active, à moins qu’il y ait une raison impérieuse de ne pas les utiliser.|*Instance unique*|
 |**Exemples**|**Éditeurs de texte**, tels que l’éditeur de code<br /><br /> Des **aires de conception**, telles qu’un concepteur de formulaires ou une surface de modélisation<br /><br /> **Contrôler les dispositions similaires aux boîtes de dialogue**, telles que le concepteur de manifeste|L' **Explorateur de solutions** fournit une solution et des projets contenus dans la solution.<br /><br /> L' **Explorateur de serveurs** fournit une vue hiérarchique des serveurs et des connexions de données que l’utilisateur choisit d’ouvrir dans la fenêtre. L’ouverture d’un objet à partir de la hiérarchie de la base de données, telle qu’une requête, ouvre une fenêtre de document et permet à l’utilisateur de modifier la requête.<br /><br /> L' **Explorateur de propriétés** affiche les propriétés de l’objet sélectionné dans une fenêtre de document ou dans une autre fenêtre outil. Les propriétés sont présentées dans une vue de grille hiérarchique ou dans des contrôles de type dialogue complexes et permettent à l’utilisateur de définir les valeurs de ces propriétés.||
 
-## <a name="tool-windows"></a><a name="BKMK_ToolWindows"></a>Fenêtres outil
+## <a name="tool-windows"></a><a name="BKMK_ToolWindows"></a> Fenêtres outil
 
 ### <a name="overview"></a>Vue d’ensemble
  Les fenêtres outil prennent en charge le travail de l’utilisateur qui se produit dans les fenêtres de document. Elles peuvent être utilisées pour afficher une hiérarchie qui représente un objet racine fondamental que Visual Studio fournit et peut manipuler.
@@ -119,7 +119,7 @@ ms.locfileid: "88114119"
 |**Autres**|Page de démarrage|Le portail de l’utilisateur vers Visual Studio, avec accès aux flux des actualités des développeurs, à l’aide de Visual Studio et aux projets récents. Les utilisateurs peuvent également créer des pages de démarrage personnalisées en copiant le fichier StartPage. Xaml à partir du répertoire des fichiers programme de Visual Studio « Common7\IDE\StartPages\ » dans le dossier StartPages du répertoire de documents Visual Studio, puis en modifiant le code XAML manuellement ou en l’ouvrant dans Visual Studio ou dans un autre éditeur de code.|
 |**Débogueur :** groupe de fenêtres spécifiques au débogage des tâches et des activités de surveillance.|Autos||
 |**Débogueur :** groupe de fenêtres spécifiques au débogage des tâches et des activités de surveillance.|Immédiat||
-|**Débogueur :** groupe de fenêtres spécifiques au débogage des tâches et des activités de surveillance.|Output|La fenêtre sortie peut être utilisée chaque fois que vous avez des événements textuels ou un État à déclarer.|
+|**Débogueur :** groupe de fenêtres spécifiques au débogage des tâches et des activités de surveillance.|Sortie|La fenêtre sortie peut être utilisée chaque fois que vous avez des événements textuels ou un État à déclarer.|
 |**Débogueur :** groupe de fenêtres spécifiques au débogage des tâches et des activités de surveillance.|Mémoire||
 |**Débogueur :** groupe de fenêtres spécifiques au débogage des tâches et des activités de surveillance.|Points d’arrêt||
 |**Débogueur :** groupe de fenêtres spécifiques au débogage des tâches et des activités de surveillance.|Exécution en cours||
@@ -131,7 +131,7 @@ ms.locfileid: "88114119"
 |**Débogueur :** groupe de fenêtres spécifiques au débogage des tâches et des activités de surveillance.|Registres||
 |**Débogueur :** groupe de fenêtres spécifiques au débogage des tâches et des activités de surveillance.|Threads||
 
-## <a name="document-editor-conventions"></a><a name="BKMK_DocumentEditorConventions"></a>Conventions de l’éditeur de document
+## <a name="document-editor-conventions"></a><a name="BKMK_DocumentEditorConventions"></a> Conventions de l’éditeur de document
 
 ### <a name="document-interactions"></a>Interactions de documents
  La « bonne partie du document » est l’espace le plus grand au sein de l’IDE et est l’endroit où l’utilisateur a généralement concentré son attention afin d’effectuer ses tâches, avec les fenêtres d’outils supplémentaires. Les éditeurs de documents représentent les unités de travail fondamentales que l’utilisateur ouvre et enregistre dans Visual Studio. Ils conservent un sens élevé de la sélection liée à Explorateur de solutions ou à d’autres fenêtres de hiérarchie actives. L’utilisateur doit pouvoir pointer vers l’une de ces fenêtres de hiérarchie et savoir où se trouve le document et sa relation avec la solution, le projet ou un autre objet racine fourni par un package Visual Studio.
@@ -239,7 +239,7 @@ ms.locfileid: "88114119"
 
 - Les utilisateurs doivent être en mesure d’interagir avec les contrôles à l’aide du clavier uniquement, soit en activant l’éditeur et en passant par les contrôles, soit en utilisant des mnémoniques standard.
 
-## <a name="dialogs"></a><a name="BKMK_Dialogs"></a>Boîtes
+## <a name="dialogs"></a><a name="BKMK_Dialogs"></a> Boîtes
 
 ### <a name="introduction"></a>Introduction
  Dans Visual Studio, les boîtes de dialogue doivent généralement prendre en charge une unité discrète du travail de l’utilisateur, puis être fermée.
@@ -295,14 +295,14 @@ ms.locfileid: "88114119"
 
 - Les [assistants](../../extensibility/ux-guidelines/application-patterns-for-visual-studio.md#BKMK_Wizards) sont utiles pour diriger l’utilisateur via une séquence logique d’étapes vers l’achèvement d’une tâche. Une série de choix est proposée dans des panneaux séquentiels, parfois en introduisant des flux de travail différents (« branches ») dépendants d’un choix effectué dans le panneau précédent.
 
-#### <a name="simple-dialogs"></a><a name="BKMK_SimpleDialogs"></a>Boîtes de dialogue simples
+#### <a name="simple-dialogs"></a><a name="BKMK_SimpleDialogs"></a> Boîtes de dialogue simples
  Une boîte de dialogue simple est une présentation de contrôles dans une seule fenêtre modale. Cette présentation peut inclure des variantes de modèles de contrôle complexes, tels qu’un sélecteur de champs. Pour les boîtes de dialogue simples, suivez la disposition générale standard, ainsi que toute disposition spécifique requise pour les regroupements de contrôles complexes.
 
  ![Boîte de dialogue simple dans Visual Studio](../../extensibility/ux-guidelines/media/0704-01-createstrongnamekey.png "0704-01_CreateStrongNameKey")
 
  **Créer une clé de nom fort est un exemple de boîte de dialogue simple dans Visual Studio.**
 
-#### <a name="layered-dialogs"></a><a name="BKMK_LayeredDialogs"></a>Boîtes de dialogue en couches
+#### <a name="layered-dialogs"></a><a name="BKMK_LayeredDialogs"></a> Boîtes de dialogue en couches
  Les boîtes de dialogue en couches incluent des onglets, des tableaux de bord et des arborescences incorporées. Ils sont utilisés pour optimiser le volume de biens immobiliers lorsqu’il existe plusieurs groupes de contrôles proposés dans une seule et même interface utilisateur. Les regroupements sont superposés afin que l’utilisateur puisse choisir le regroupement à afficher à un moment donné.
 
  Dans le cas le plus simple, le mécanisme de basculement entre les regroupements est un contrôle onglet. Plusieurs solutions sont disponibles. Pour savoir comment choisir le style le plus approprié, consultez hiérarchisation et structuration en couches.
@@ -313,7 +313,7 @@ ms.locfileid: "88114119"
 
  **Outils > options est un exemple de boîte de dialogue en couches dans Visual Studio.**
 
-#### <a name="wizards"></a><a name="BKMK_Wizards"></a>Assistants
+#### <a name="wizards"></a><a name="BKMK_Wizards"></a> Assistants
  Les assistants sont utiles pour diriger l’utilisateur via une séquence logique d’étapes dans l’exécution d’une tâche. Une série de choix est proposée dans des panneaux séquentiels, et l’utilisateur doit suivre chaque étape avant de passer à la suivante. Une fois que les valeurs par défaut disponibles sont suffisantes, le bouton **Terminer** est activé.
 
  Les assistants modaux sont utilisés pour les tâches qui :
@@ -331,7 +331,7 @@ ms.locfileid: "88114119"
 
  Pour obtenir des instructions spécifiques à la disposition, consultez [disposition pour Visual Studio](../../extensibility/ux-guidelines/layout-for-visual-studio.md).
 
-#### <a name="size"></a>Taille
+#### <a name="size"></a>Size
  Les boîtes de dialogue doivent tenir dans une résolution d’écran minimale de 1024 x 768, et la taille de la boîte de dialogue initiale ne doit pas dépasser 900x700 pixels. Les boîtes de dialogue peuvent être redimensionnables, mais ce n’est pas une condition requise.
 
  Il existe deux recommandations pour les boîtes de dialogue redimensionnables :
@@ -394,7 +394,7 @@ ms.locfileid: "88114119"
 #### <a name="imagery"></a>Images
  Utilisez des images avec modération dans les boîtes de dialogue. N’utilisez pas de grandes icônes dans les boîtes de dialogue simplement pour utiliser de l’espace. Utilisez des images uniquement si elles constituent une partie importante du transfert du message à l’utilisateur, telles que les icônes d’avertissement ou les animations d’État.
 
-### <a name="prioritizing-and-layering"></a><a name="BKMK_PrioritizingAndLayering"></a>Hiérarchisation et structuration en couches
+### <a name="prioritizing-and-layering"></a><a name="BKMK_PrioritizingAndLayering"></a> Hiérarchisation et structuration en couches
 
 #### <a name="prioritizing-your-ui"></a>Hiérarchisation de l’interface utilisateur
  Il peut être nécessaire d’amener certains éléments de l’interface utilisateur au Forefront et de placer des options et un comportement plus avancés (y compris des commandes obscures) dans des boîtes de dialogue. Mettez les fonctionnalités couramment utilisées dans le Forefront en y faisant de la place et, en le rendant visible par défaut dans l’interface utilisateur avec une étiquette de texte lorsque la boîte de dialogue s’affiche.
@@ -425,7 +425,7 @@ ms.locfileid: "88114119"
 ##### <a name="adaptive-ui"></a>Interface utilisateur adaptative
  L’affichage ou le masquage de l’interface utilisateur en fonction de l’utilisation ou de l’expérience auto-signalée d’un utilisateur est une autre façon de présenter l’interface utilisateur nécessaire tout en masquant d’autres parties. Cela n’est pas recommandé dans Visual Studio, car les algorithmes permettant de décider quand afficher ou masquer l’interface utilisateur peuvent être délicats, et les règles sont toujours incorrectes pour un ensemble de cas.
 
-## <a name="projects"></a><a name="BKMK_Projects"></a>Projet
+## <a name="projects"></a><a name="BKMK_Projects"></a> Projet
 
 ### <a name="projects-in-the-solution-explorer"></a>Projets dans le Explorateur de solutions
  La plupart des projets sont classés en base de référence, basé sur un répertoire ou mixte. Les trois types de projets sont pris en charge simultanément dans le Explorateur de solutions. La racine de l’expérience utilisateur dans l’utilisation des projets a lieu dans cette fenêtre. Bien que les différents nœuds de projet soient des projets de référence, de répertoire ou de type en mode mixte, il existe un modèle d’interaction commun qui doit être appliqué comme point de départ avant de se déformer en modèles utilisateur spécifiques au projet.
@@ -491,7 +491,7 @@ ms.locfileid: "88114119"
 #### <a name="reference-based-projects"></a>Projets basés sur la référence
  Le tableau suivant résume les opérations de glisser-déplacer (et de couper/copier/coller) qui doivent être exécutées en fonction de la nature de l’élément source et des touches de modification enfoncées pour les projets cibles référencés :
 
-|Modificateur|Opération|Élément source : référence/lien|Élément source : élément physique ou système de fichiers (CF_HDROP)|
+|||Élément source : référence/lien|Élément source : élément physique ou système de fichiers (CF_HDROP)|
 |-|-|----------------------------------|-------------------------------------------------------------|
 |Aucun modificateur|Action|Déplacer|Lien|
 |Aucun modificateur|Cible|Ajoute une référence à l’élément d’origine|Ajoute une référence à l’élément d’origine|
@@ -522,7 +522,7 @@ ms.locfileid: "88114119"
 #### <a name="directory-based-projects"></a>Projets basés sur des répertoires
  Le tableau suivant résume les opérations de glisser-déplacer (et de couper/copier/coller) qui doivent être exécutées en fonction de la nature de l’élément source et des touches de modification enfoncées pour les projets cibles basés sur les répertoires :
 
-|Modificateur|Opération|Élément source : référence/lien|Élément source : élément physique ou système de fichiers (CF_HDROP)|
+|||Élément source : référence/lien|Élément source : élément physique ou système de fichiers (CF_HDROP)|
 |-|-|----------------------------------|-------------------------------------------------------------|
 |Aucun modificateur|Action|Déplacer|Déplacer|
 |Aucun modificateur|Cible|Copie l’élément dans l’emplacement cible|Copie l’élément dans l’emplacement cible|
@@ -549,7 +549,7 @@ ms.locfileid: "88114119"
 #### <a name="mixed-target-projects"></a>Projets de cible mixte
  Le tableau suivant résume les opérations de glisser-déplacer (et de couper/copier/coller) qui doivent être exécutées en fonction de la nature de l’élément source et des touches de modification enfoncées pour les projets de cible mixte :
 
-|Modificateur|Opération|Élément source : référence/lien|Élément source : élément physique ou système de fichiers (CF_HDROP)|
+|||Élément source : référence/lien|Élément source : élément physique ou système de fichiers (CF_HDROP)|
 |-|-|----------------------------------|-------------------------------------------------------------|
 |Aucun modificateur|Action|Déplacer|Déplacer|
 |Aucun modificateur|Cible|Ajoute une référence à l’élément d’origine|Copie l’élément dans l’emplacement cible|

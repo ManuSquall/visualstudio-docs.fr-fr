@@ -14,17 +14,17 @@ helpviewer_keywords:
 - Project Designer, Compile page
 - Compile page in Project Designer
 ms.assetid: b2a80230-906e-4e85-b3e0-fcd9c40426e1
-author: TerryGLee
-ms.author: tglee
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9d7a97068b70a76dfe343de5fa68db77d2ce9781
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: d9ffdfe4abbef5701cc060171ecbc379ae3a9215
+ms.sourcegitcommit: 26178b116cbf7353fee6ca989b8d872114f7b405
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "76111308"
+ms.lasthandoff: 09/01/2020
+ms.locfileid: "89284315"
 ---
 # <a name="compile-page-project-designer-visual-basic"></a>Page Compiler, Concepteur de projets (Visual Basic)
 
@@ -59,7 +59,7 @@ Spécifie l'emplacement des fichiers de sortie pour cette configuration de proje
 
 Grâce aux configurations de build simplifiées, le système de projet détermine s’il faut générer une version Debug ou Release. Si vous cliquez sur la commande **Générer** dans le menu **Déboguer** (F5), la génération est placée dans l’emplacement de débogage, indépendamment du **Chemin de sortie** spécifié. Toutefois, avec la commande **Générer** du menu **Générer**, elle est placée dans l’emplacement spécifié.
 
-**Option explicite**
+**Option Explicit**
 
 Indique s’il faut autoriser la déclaration implicite de variables. Sélectionnez **On** pour exiger la déclaration explicite de variables. Ainsi, le compilateur doit signaler des erreurs si les variables ne sont pas déclarées avant leur utilisation. Sélectionnez **Off** pour autoriser la déclaration implicite de variables.
 
@@ -71,7 +71,7 @@ Quand vous créez un projet, le paramètre **Option Explicit** de la **page Comp
 
 Il n’est généralement pas recommandé d’affecter à **Option Explicit** la valeur `Off`. Vous risquez de mal orthographier un nom de variable dans un ou plusieurs emplacements, ce qui peut provoquer des résultats inattendus lors de l’exécution du programme.
 
-**Option stricte**
+**Option strict**
 
 Spécifie s’il faut appliquer la sémantique de type strict. Quand **Option Strict** a la valeur **On**, les conditions suivantes provoquent une erreur de compilation :
 
@@ -105,9 +105,9 @@ La section **Configurations des avertissements** de la **page Compiler** contien
 
 Quand vous affectez la valeur **On** à **Option Strict**, chacun de ces trois paramètres de configuration d’avertissement prend la valeur **Erreur**. Quand vous affectez la valeur **Off** à **Option Strict**, chacun des trois paramètres prend la valeur **Aucun**.
 
-Vous pouvez remplacer individuellement chaque paramètre de configuration d’avertissement par **Aucun**, **Avertissement** ou **Erreur**. Si les trois paramètres de configuration `On` d’avertissement sont configurés à `Option strict` **l’erreur,** apparaît dans la boîte. Si tous les **None**trois `Off` sont réglés à Aucun , apparaît dans cette boîte. Pour toute autre combinaison de ces paramètres, **(personnalisé)** s’affiche.
+Vous pouvez remplacer individuellement chaque paramètre de configuration d’avertissement par **Aucun**, **Avertissement** ou **Erreur**. Si les trois paramètres de configuration d’avertissement sont définis sur **erreur**, `On` apparaît dans la `Option strict` zone. Si les trois sont définis sur **aucun**, `Off` s’affiche dans cette zone. Pour toute autre combinaison de ces paramètres, **(personnalisé)** s’affiche.
 
-**Comparaison d’options**
+**Option compare**
 
 Spécifie le type de comparaison de chaînes à utiliser. Sélectionnez **Binary** pour indiquer au compilateur d’utiliser des comparaisons de chaînes binaires respectant la casse. Sélectionnez **Text** pour utiliser des comparaisons de chaînes de texte spécifiques aux paramètres régionaux, qui ne respectent pas la casse.
 
@@ -117,7 +117,7 @@ Si un fichier de code source contient une [instruction Option Compare](/dotnet/v
 
 Quand vous créez un projet, le paramètre **Option Compare** de la **page Compiler** prend la valeur du paramètre **Option Compare** dans la boîte de dialogue **Options**. Pour afficher ou modifier le paramètre dans cette boîte de dialogue, cliquez sur **Options** dans le menu **Outils**. Dans la boîte de dialogue **Options**, développez **Projets et solutions**, puis cliquez sur **Valeurs par défaut VB**. Le paramètre par défaut initial **Option Compare** dans **Valeurs par défaut VB** a la valeur **Binary**.
 
-**Option infère**
+**Option Infer**
 
 Indique s’il faut autoriser l’inférence de type de variable locale dans les déclarations de variables. Sélectionnez **On** pour autoriser l’utilisation de l’inférence de type de variable locale. Sélectionnez **Off** pour bloquer l’inférence de type de variable locale.
 
@@ -155,7 +155,7 @@ Par défaut, tous les avertissements du compilateur sont ajoutés à la liste de
 
 **Désactiver tous les avertissements**
 
-Spécifie s’il faut autoriser le compilateur à émettre des notifications comme indiqué dans le tableau **Condition et notification** décrit plus haut dans ce document. Par défaut, cette case est décochée. Cochez cette case pour indiquer au compilateur de ne pas émettre d’avertissements ni d’erreurs.
+Spécifie s’il faut autoriser le compilateur à émettre des notifications comme indiqué dans le tableau **Condition et notification** décrit plus haut dans ce document. Par défaut, cette case à cocher est désactivée. Cochez cette case pour indiquer au compilateur de ne pas émettre d’avertissements ni d’erreurs.
 
 Ce paramètre correspond à l’option du compilateur [/nowarn](/dotnet/visual-basic/reference/command-line-compiler/nowarn).
 
@@ -189,6 +189,6 @@ Cliquez sur ce bouton pour accéder à la boîte de dialogue **Paramètres avanc
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Comment : Spécifier des événements de construction (visual basic)](../../ide/how-to-specify-build-events-visual-basic.md)
+- [Comment : spécifier des événements de build (Visual Basic)](../../ide/how-to-specify-build-events-visual-basic.md)
 - [Compilateur de ligne de commande de Visual Basic](/dotnet/visual-basic/reference/command-line-compiler/index)
 - [Guide pratique pour créer et modifier des configurations](../../ide/how-to-create-and-edit-configurations.md)

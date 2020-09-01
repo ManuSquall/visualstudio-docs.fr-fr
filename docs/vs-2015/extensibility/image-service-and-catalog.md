@@ -6,12 +6,12 @@ ms.assetid: 34990c37-ae98-4140-9b1e-a91c192220d9
 caps.latest.revision: 38
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 7b351e9f4983f5a2497406f7ca49503254d9fb71
-ms.sourcegitcommit: d9254e54079ae01cdf2d07b11f988faf688f80fc
+ms.openlocfilehash: 102e41e45caac8d0567786579130e0953ec68b30
+ms.sourcegitcommit: 26178b116cbf7353fee6ca989b8d872114f7b405
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/11/2020
-ms.locfileid: "88114116"
+ms.lasthandoff: 09/01/2020
+ms.locfileid: "89284355"
 ---
 # <a name="image-service-and-catalog"></a>Catalogue et service d’images
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -88,7 +88,7 @@ Ce livre de recettes contient des conseils et des pratiques recommandées pour l
 </ImageManifest>  
 ```  
 
- **Sigle**  
+ **Symboles**  
 
  Pour faciliter la lecture et l’aide à la maintenance, le manifeste d’image peut utiliser des symboles pour les valeurs d’attribut. Les symboles sont définis comme suit :  
 
@@ -105,8 +105,8 @@ Ce livre de recettes contient des conseils et des pratiques recommandées pour l
 |-|-|  
 |Importer|Importe les symboles du fichier manifeste donné pour une utilisation dans le manifeste actuel|  
 |Guid|Le symbole représente un GUID et doit correspondre à la mise en forme du GUID|  
-|id|Le symbole représente un ID et doit être un entier non négatif|  
-|String|Le symbole représente une valeur de chaîne arbitraire|  
+|ID|Le symbole représente un ID et doit être un entier non négatif|  
+|Chaîne|Le symbole représente une valeur de chaîne arbitraire|  
 
  Les symboles respectent la casse et sont référencés à l’aide de la syntaxe $ (Symbol-Name) :  
 
@@ -144,7 +144,7 @@ Ce livre de recettes contient des conseils et des pratiques recommandées pour l
 |**Attribut**|**Définition**|  
 |-|-|  
 |Guid|Souhaitée La partie GUID du moniker d’image|  
-|id|Souhaitée La partie ID du moniker d’image|  
+|ID|Souhaitée La partie ID du moniker d’image|  
 |AllowColorInversion|[Facultatif, valeur par défaut true] Indique si les couleurs de l’image peuvent être inversées par programmation lorsqu’elles sont utilisées sur un arrière-plan sombre.|  
 
  **Source**  
@@ -157,14 +157,16 @@ Ce livre de recettes contient des conseils et des pratiques recommandées pour l
  </Source>  
 ```  
 
-|**Attribut**|**Définition**|  
-|-|-|  
-| Uri | Souhaitée URI qui définit l’emplacement à partir duquel l’image peut être chargée. Les valeurs possibles sont les suivantes :<br /><br /> -Un URI à en- [tête pack](https://msdn.microsoft.com/library/aa970069\(v=vs.100\).aspx) à l’aide de l’autorité application:///<br />-Référence de ressource de composant absolue<br />-Chemin d’accès à un fichier contenant une ressource native |
-| Arrière-plan  | Facultatif Indique le type d’arrière-plan auquel la source est destinée à être utilisée.<br /><br /> Les valeurs possibles sont les suivantes :<br /><br /> *Clair :* La source peut être utilisée sur un arrière-plan clair.<br /><br /> <em>Foncé :</em> La source peut être utilisée sur un arrière-plan sombre.<br /><br /> *Contraste élevé :* La source peut être utilisée sur n’importe quel arrière-plan en mode contraste élevé.<br /><br /> *HighContrastLight :* La source peut être utilisée sur un arrière-plan clair en mode contraste élevé.<br /><br /> *HighContrastDark :* La source peut être utilisée sur un arrière-plan sombre en mode contraste élevé.<br /><br /> Si l’attribut Background est omis, la source peut être utilisée sur n’importe quel arrière-plan.<br /><br /> Si Background est *clair*, *Dark*, *HighContrastLight*ou *HighContrastDark*, les couleurs de la source ne sont jamais inversées. Si Background est omis ou défini sur *HighContrast*, l’inversion des couleurs de la source est contrôlée par l’attribut **AllowColorInversion** de l’image. |
+|               |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
+|---------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Attribut** |                                                                                                                                                                                                                                                                                                                                                                                                                                                                            **Définition**                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
+|      Uri      |                                                                                                                                                                                                                                                                                                               Souhaitée URI qui définit l’emplacement à partir duquel l’image peut être chargée. Les valeurs possibles sont les suivantes :<br /><br /> -Un URI à en- [tête pack](https://msdn.microsoft.com/library/aa970069\(v=vs.100\).aspx) à l’aide de l’autorité application:///<br />-Référence de ressource de composant absolue<br />-Chemin d’accès à un fichier contenant une ressource native                                                                                                                                                                                                                                                                                                               |
+|  Arrière-plan   | Facultatif Indique le type d’arrière-plan auquel la source est destinée à être utilisée.<br /><br /> Les valeurs possibles sont les suivantes :<br /><br /> *Clair :* La source peut être utilisée sur un arrière-plan clair.<br /><br /> <em>Foncé :</em> La source peut être utilisée sur un arrière-plan sombre.<br /><br /> *Contraste élevé :* La source peut être utilisée sur n’importe quel arrière-plan en mode contraste élevé.<br /><br /> *HighContrastLight :* La source peut être utilisée sur un arrière-plan clair en mode contraste élevé.<br /><br /> *HighContrastDark :* La source peut être utilisée sur un arrière-plan sombre en mode contraste élevé.<br /><br /> Si l’attribut Background est omis, la source peut être utilisée sur n’importe quel arrière-plan.<br /><br /> Si Background est *clair*, *Dark*, *HighContrastLight*ou *HighContrastDark*, les couleurs de la source ne sont jamais inversées. Si Background est omis ou défini sur *HighContrast*, l’inversion des couleurs de la source est contrôlée par l’attribut **AllowColorInversion** de l’image. |
+|               |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
 
  Un \<Source> élément peut avoir exactement l’un des sous-éléments facultatifs suivants :  
 
-|**Élément**|**Attributs (tous obligatoires)**|**Définition**|  
+|**Element**|**Attributs (tous obligatoires)**|**Définition**|  
 |-|-|-|  
 |\<Size>|Valeur|La source sera utilisée pour les images de la taille donnée (en unités de périphérique). L’image sera carrée.|  
 |\<SizeRange>|MinSize, MaxSize|La source sera utilisée pour les images comprises entre MinSize et MaxSize (en unités de périphérique). L’image sera carrée.|  
@@ -180,7 +182,7 @@ Ce livre de recettes contient des conseils et des pratiques recommandées pour l
 |**Attribut**|**Définition**|  
 |-|-|  
 |Type|Souhaitée Type de la ressource native (XAML ou PNG)|  
-|id|Souhaitée La partie ID d’entier de la ressource native|  
+|ID|Souhaitée La partie ID d’entier de la ressource native|  
 
  **ImageList**  
 
@@ -196,7 +198,7 @@ Ce livre de recettes contient des conseils et des pratiques recommandées pour l
 |**Attribut**|**Définition**|  
 |-|-|  
 |Guid|Souhaitée La partie GUID du moniker d’image|  
-|id|Souhaitée La partie ID du moniker d’image|  
+|ID|Souhaitée La partie ID du moniker d’image|  
 |Externe|[Facultatif, valeur par défaut false] Indique si le moniker d’image référence une image dans le manifeste actuel.|  
 
  Le moniker de l’image contenue n’a pas besoin de référencer une image définie dans le manifeste actuel. Si l’image contenue est introuvable dans la bibliothèque d’images, une image d’espace réservé vide sera utilisée à la place.  
@@ -569,7 +571,7 @@ b714fcf7-855e-4e4c-802a-1fd87144ccad,2,fda30684-682d-421c-8be4-650a2967058e,200
 
    - Remplacez le GUID de chaque **ContainedImage**par $ (ImageCatalogGuid), remplacez l’ID de chaque **ContainedImage**par $ ( \<moniker> ) et ajoutez l’attribut External = "true" à chaque **ContainedImage**  
 
-       - \<moniker>doit être remplacé par le **KnownMoniker** qui correspond à l’image, mais avec le « KnownMonikers ». supprimé du nom.  
+       - \<moniker> doit être remplacé par le **KnownMoniker** qui correspond à l’image, mais avec le « KnownMonikers ». supprimé du nom.  
 
    - Ajoutez <importer manifest = "$ (ManifestFolder) \\<chemin d’accès du répertoire d’installation relatif à \> \Microsoft.VisualStudio.ImageCatalog.imagemanifest"/ \> en haut de la \<Symbols> section.  
 
@@ -665,7 +667,7 @@ b714fcf7-855e-4e4c-802a-1fd87144ccad,2,fda30684-682d-421c-8be4-650a2967058e,200
 
  L’outil visionneuse de la bibliothèque d’images peut charger des manifestes d’image et permet à l’utilisateur de les manipuler de la même façon que Visual Studio pour s’assurer que le manifeste est correctement créé. L’utilisateur peut modifier les paramètres de l’arrière-plan, des tailles, du paramètre ppp, du contraste élevé et d’autres paramètres. Il affiche également les informations de chargement pour rechercher les erreurs dans les manifestes et affiche les informations relatives à la source de chaque image dans le manifeste.  
 
-## <a name="faq"></a>Questions fréquentes (FAQ)  
+## <a name="faq"></a>Forum aux questions  
 
 - Existe-t-il des dépendances que vous devez inclure lors du chargement \<Reference Include="Microsoft.VisualStudio.*.Interop.14.0.DesignTime" /> ?  
 

@@ -8,12 +8,12 @@ ms.assetid: 767f5c22-8b87-49ca-92aa-a7a3f026469f
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: cd3ed1477d1c4d345e5fc6f6496d12044d4af244
-ms.sourcegitcommit: d9254e54079ae01cdf2d07b11f988faf688f80fc
+ms.openlocfilehash: e2e1df362fddeab5be98ff90460a8a1a7d4b7876
+ms.sourcegitcommit: 26178b116cbf7353fee6ca989b8d872114f7b405
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/11/2020
-ms.locfileid: "88114228"
+ms.lasthandoff: 09/01/2020
+ms.locfileid: "89284334"
 ---
 # <a name="vsixlanguagepack-element-vsix-language-pack-schema"></a>Élément VSIXLanguagePack (schéma du module linguistique VSIX)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -59,42 +59,16 @@ Obligatoire. Fournit l’élément racine d’un module linguistique VSIX. Le mo
   
 |Élément|Description|  
 |-------------|-----------------|  
-|None||  
+|Aucune||  
   
 ## <a name="element-information"></a>Informations sur les éléments  
-
-:::row:::
-    :::column:::
-        Espace de noms
-    :::column-end:::
-    :::column:::
-        `http://schemas.microsoft.com/developer/vsx-schema-lp/2010`
-    :::column-end:::
-:::row-end:::
-:::row:::
-    :::column:::
-        Nom du schéma
-    :::column-end:::
-    :::column:::
-        Schéma du module linguistique VSIX
-    :::column-end:::
-:::row-end:::
-:::row:::
-    :::column:::
-        Fichier de validation
-    :::column-end:::
-    :::column:::
-        VSIXLanguagePackSchema. xsd
-    :::column-end:::
-:::row-end:::
-:::row:::
-    :::column:::
-        Peut être vide
-    :::column-end:::
-    :::column:::
-        Non
-    :::column-end:::
-:::row-end:::
+  
+|                 |                                                           |
+|-----------------|-----------------------------------------------------------|
+|    Espace de noms    | `http://schemas.microsoft.com/developer/vsx-schema-lp/2010` |
+|   Nom du schéma   |                 Schéma du module linguistique VSIX                 |
+| Fichier de validation |                VSIXLanguagePackSchema. xsd                 |
+|  Peut être vide   |                            Non                             |
   
 ## <a name="see-also"></a>Voir aussi  
  [Référence de schéma du module linguistique VSX](../extensibility/vsx-language-pack-schema-reference.md) [localisation des packages VSIX](../extensibility/localizing-vsix-packages.md) [extension du schéma de l’extension VSIX 1,0](/previous-versions/dd393700(v=vs.110))
