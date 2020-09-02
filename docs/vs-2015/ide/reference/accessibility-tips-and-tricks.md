@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 4b4c7777600f66f4044588ccae91910143e567f5
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72670248"
 ---
 # <a name="accessibility-tips-and-tricks"></a>Conseils et astuces d'accessibilité
@@ -24,7 +24,7 @@ ms.locfileid: "72670248"
 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] inclut des fonctionnalités d’accessibilité intégrées pour utiliser le clavier facilement ainsi que des lecteurs d’écran ou d’autres appareils de technologie d’assistance. Cette rubrique propose des suggestions permettant d’optimiser [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] pour l’accessibilité, ainsi que certaines combinaisons de touches de raccourci utiles.
 
 > [!NOTE]
-> Les boîtes de dialogue et les commandes de menu qui s'affichent peuvent être différentes de celles qui sont décrites dans l'aide, en fonction de vos paramètres actifs ou de l'édition utilisée. Pour modifier vos paramètres, choisissez **Importation et exportation de paramètres** dans le menu **Outils** . Pour plus d’informations, consultez [Personnalisation des paramètres de développement dans Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).
+> Les boîtes de dialogue et les commandes de menu affichées peuvent différer de celles décrites dans l'Aide selon les paramètres actifs ou le mode d'édition. Pour modifier vos paramètres, choisissez **Paramètres d'importation et d'exportation** dans le menu **Outils** . Pour plus d’informations, consultez [Personnalisation des paramètres de développement dans Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).
 
 ## <a name="save-your-ide-settings"></a>Enregistrer vos paramètres IDE
  Vous pouvez personnaliser votre expérience IDE en enregistrant la disposition de vos fenêtres, le schéma de configuration du clavier et d’autres préférences. Pour plus d’informations, consultez [Personnalisation des paramètres de développement dans Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).
@@ -34,21 +34,21 @@ ms.locfileid: "72670248"
 
 |Description|Combinaison de touches|
 |-----------------|---------------------|
-|Activer et désactiver le contraste élevé|**Alt gauche + Maj gauche + Impr. écran**|
-|Cocher ou décocher une case dans une boîte de dialogue|**Barre d’espace**|
-|Afficher les propriétés de l’élément sélectionné Par exemple, place le focus dans la fenêtre Propriétés si un formulaire est sélectionné ou ouvre la boîte de dialogue Page de propriétés si un projet est sélectionné.|**Alt + Entrée**|
+|Activer et désactiver le contraste élevé|**ALT gauche + MAJ gauche + Impr. écran**|
+|Cocher ou décocher une case dans une boîte de dialogue|**TOUCHE**|
+|Afficher les propriétés de l’élément sélectionné Par exemple, place le focus dans la fenêtre Propriétés si un formulaire est sélectionné ou ouvre la boîte de dialogue Page de propriétés si un projet est sélectionné.|**ALT + entrée**|
 |Afficher les éléments de la liste active, comme une liste déroulante, dans une boîte de dialogue|**Alt** + Flèche bas|
-|Afficher les éléments d’une liste déroulante active dans une grille|**Maj** + **Alt** + **Flèche bas**|
+|Afficher les éléments d’une liste déroulante active dans une grille|**MAJ**  +  **ALT**  +  **flèche bas**|
 
 ## <a name="hidden-visual-studio-shortcut-key-combinations"></a>Combinaisons de touches de raccourci Visual Studio masquées
  Certaines fonctionnalités ont des touches de raccourci qui n’apparaissent pas dans la boîte de dialogue Options du volet Environnement/Clavier. Voici quelques-unes de ces combinaisons de touches de raccourci :
 
 |Fonctionnalité|Description|Combinaison de touches|
 |-------------|-----------------|---------------------|
-|Fenêtre Boîte à outils|Se déplacer entre les onglets de la boîte à outils|**Ctrl** + **Flèche haut**<br /><br /> et<br /><br /> **Ctrl** + **Flèche bas**|
-|Fenêtre Boîte à outils|Ajouter un contrôle à partir de la boîte à outils à un formulaire ou un concepteur|**Entrée**|
-|Clavier, Environnement, boîte de dialogue Options|Supprimer une combinaison de touches entrée dans l’option **Appuyer sur les touches de raccourci**|**Retour arrière**|
-|Toutes les fenêtres d’outil|Sélectionner le premier bouton de la barre d’outils de la fenêtre|**Maj** + **Alt**|
+|Fenêtre Boîte à outils|Se déplacer entre les onglets de la boîte à outils|**CTRL**  +  **Flèche vers le bas**<br /><br /> et<br /><br /> **CTRL**  +  **Flèche** vers le bas|
+|Fenêtre Boîte à outils|Ajouter un contrôle à partir de la boîte à outils à un formulaire ou un concepteur|**Entrez**|
+|Clavier, Environnement, boîte de dialogue Options|Supprimer une combinaison de touches entrée dans l’option **appuyer sur les touches de raccourci**|**RETOUR arrière**|
+|Toutes les fenêtres d’outil|Sélectionner le premier bouton de la barre d’outils de la fenêtre|**MAJ**  +  **ALT**|
 |Barres d’outils IDE|Sélectionner le premier bouton de la barre d’outils Standard|**Alt**, **Ctrl** + **TAB** **Remarque :** Rappuyez sur **Ctrl** + **TAB** pour sélectionner le premier bouton de la barre d’outils IDE suivante.|
 
 ## <a name="see-also"></a>Voir aussi

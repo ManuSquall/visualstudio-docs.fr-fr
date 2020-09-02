@@ -1,5 +1,5 @@
 ---
-title: Constantes (SDK Debug Interface Access) | Microsoft Docs
+title: Constantes (kit de développement logiciel de debug interface Access) | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -15,16 +15,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 931e1ab46793a5ff7e0434949330eaf4dbc820e8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68164429"
 ---
 # <a name="constants-debug-interface-access-sdk"></a>Constantes (Kit de développement logiciel Debug Interface Access)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Ces constantes de chaîne peuvent être utilisés pour identifier les différentes sections d’un fichier de base de données (PDB) de débogage de programme via le SDK DIA.  
+Ces constantes de chaîne peuvent être utilisées pour identifier les différentes sections d’un fichier de base de données de débogage de programme (PDB) via le kit de développement DIA (SDK).  
   
 ## <a name="constants"></a>Constantes  
  Les éléments suivants sont déclarés en tant que macros C/C++.  
@@ -41,7 +41,7 @@ Ces constantes de chaîne peuvent être utilisés pour identifier les différent
 |`DiaTable_FrameData`|L"FrameData"|  
   
 ## <a name="example"></a>Exemple  
- Voici un exemple d’utilisation de ces symboles :  
+ Voici un exemple utilisant l’un de ces symboles :  
   
 ```cpp#  
 HRESULT GetSymbolTable(IDiaEnumTables *pEnumTables, IDiaTable **pTable)  
@@ -56,10 +56,10 @@ HRESULT GetSymbolTable(IDiaEnumTables *pEnumTables, IDiaTable **pTable)
 ```  
   
 ## <a name="requirements"></a>Configuration requise  
- En-tête : dia2.h  
+ En-tête : Dia2. h  
   
 ## <a name="see-also"></a>Voir aussi  
- [Référence](../../debugger/debug-interface-access/debug-interface-access-sdk-reference.md)   
+ [Faire](../../debugger/debug-interface-access/debug-interface-access-sdk-reference.md)   
  [Énumérations et structures](../../debugger/debug-interface-access/enumerations-and-structures.md)   
- [Interfaces (Kit SDK Debug Interface Access)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
+ [Interfaces (kit de développement logiciel de debug interface Access)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
  [IDiaEnumTables::Item](../../debugger/debug-interface-access/idiaenumtables-item.md)

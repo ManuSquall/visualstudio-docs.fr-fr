@@ -14,13 +14,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 2d3247fb421800f87740a911563880b70abf3eed
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75844730"
 ---
-# <a name="da0018-32-bit-application-running-at-process-managed-memory-limits"></a>DA0018 : application 32 bits s'exécutant aux limites de la mémoire managée du processus
+# <a name="da0018-32-bit-application-running-at-process-managed-memory-limits"></a>DA0018 : Application 32 bits s’exécutant aux limites de la mémoire managée du processus
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 ID de règle | DA0018 |  
@@ -46,7 +46,7 @@ ID de règle | DA0018 |
  Lorsque la taille totale des tas managés approche de la limite définie par défaut, la surcharge de la gestion de mémoire augmente généralement jusqu’à affecter la réactivité et la scalabilité de l’application.  
   
 ## <a name="how-to-investigate-a-warning"></a>Comment rechercher la cause d’un avertissement  
- Double-cliquez sur le message dans la fenêtre Liste d’erreurs pour accéder à la vue [Marques](../profiling/marks-view.md). Accédez aux colonnes **Mémoire CLR .NET\\Nombre d’octets dans tous les tas** et **Nombre total d’octets validés**. Déterminez s’il existe des phases spécifiques de l’exécution du programme durant lesquelles l’allocation de mémoire allouée est plus importante. Comparez les valeurs de la colonne **Nombre d’octets dans tous les tas** au taux de garbage collection signalé dans les colonnes **Mémoire CLR .NET\\Nombre de collections de la génération 0**, **Mémoire CLR .NET\\Nombre de collections de la génération 1** et **Mémoire CLR .NET\\Nombre de collections de la génération 2**, pour déterminer si le modèle des allocations de mémoire managée affecte le taux de garbage collection.  
+ Double-cliquez sur le message dans la fenêtre Liste d’erreurs pour accéder à la vue [marques](../profiling/marks-view.md) . Accédez aux colonnes **Mémoire CLR .NET\\Nombre d’octets dans tous les tas** et **Nombre total d’octets validés**. Déterminez s’il existe des phases spécifiques de l’exécution du programme durant lesquelles l’allocation de mémoire allouée est plus importante. Comparez les valeurs de la colonne **Nombre d’octets dans tous les tas** au taux de garbage collection signalé dans les colonnes **Mémoire CLR .NET\\Nombre de collections de la génération 0**, **Mémoire CLR .NET\\Nombre de collections de la génération 1** et **Mémoire CLR .NET\\Nombre de collections de la génération 2**, pour déterminer si le modèle des allocations de mémoire managée affecte le taux de garbage collection.  
   
  Dans une application .NET Framework, le common language runtime limite la taille totale des tas managés à une taille légèrement inférieure à la moitié de la taille maximale de la partie privée d’un espace d’adressage de processus. Pour un processus 32 bits s’exécutant sur un ordinateur 32 bits, la taille maximale de la partie privée de l’espace d’adressage de processus est de 2 Go. Lorsque la taille totale des tas managés commence à approcher de la limite par défaut, la surcharge de la gestion de mémoire peut augmenter et entraîner une baisse des performances de l’application.  
   
@@ -54,7 +54,7 @@ ID de règle | DA0018 |
   
 - Optimisez la manière dont l’application utilise les ressources de mémoire managée.  
   
-   \- ou -  
+   -ou-  
   
 - Allégez les contraintes architecturales associées à la taille maximale de la mémoire virtuelle d’un processus 32 bits.  
   

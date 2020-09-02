@@ -14,10 +14,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 40ae0a08e1623e1b90046d164d8bfe04eaf67229
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72656865"
 ---
 # <a name="debugging-legacy-workflows"></a>Débogage de workflows hérités
@@ -27,7 +27,7 @@ Si vous utilisez le [!INCLUDE[wfd1](../includes/wfd1-md.md)] hérité dans [!INC
 > Si plusieurs versions de Visual Studio ont été installées et désinstallées sur votre ordinateur, le débogage WF3 peut échouer pour l'une des raisons suivantes :
 >
 > - Les points d'arrêt ne sont pas atteints.
->   - Le message suivant s'affiche :
+>   - Le message suivant s’affiche :
 >
 >   **Impossible de démarrer le débogage sur le serveur Web. Le débogueur n’est pas correctement installé.  Impossible de déboguer le type de code demandé.  Exécutez le programme d’installation pour installer ou réparer le débogueur.**
 >
@@ -62,12 +62,12 @@ Si vous utilisez le [!INCLUDE[wfd1](../includes/wfd1-md.md)] hérité dans [!INC
 
  [Désactivation du débogueur Visual Studio pour Windows Workflow Foundation (hérité)](../workflow-designer/disabling-the-visual-studio-debugger-for-windows-workflow-foundation-legacy.md)
 
- [Guide pratique pour déboguer des flux de travail basés sur ASP.NET (hérité)](../workflow-designer/how-to-debug-aspnet-based-workflows-legacy.md)
+ [Procédure : déboguer des workflows basés sur ASP.NET (héritée)](../workflow-designer/how-to-debug-aspnet-based-workflows-legacy.md)
 
  [Guide pratique pour définir des points d’arrêt dans les flux de travail (hérité)](../workflow-designer/how-to-set-breakpoints-in-workflows-legacy.md)
 
- [Débogage de flux de travail depuis un ordinateur distant (hérité)](../workflow-designer/debugging-workflows-from-a-remote-computer-legacy.md)
+ [Débogage de workflows d'un ordinateur distant (hérité)](../workflow-designer/debugging-workflows-from-a-remote-computer-legacy.md)
 
  [Options de débogage pas à pas (hérité)](../workflow-designer/debug-stepping-options-legacy.md)
 
- [Guide pratique pour modifier l’option de débogage pas à pas (hérité)](../workflow-designer/how-to-change-the-debug-stepping-option-legacy.md)
+ [Procédure : modifier l'option de débogage pas à pas (héritée)](../workflow-designer/how-to-change-the-debug-stepping-option-legacy.md)

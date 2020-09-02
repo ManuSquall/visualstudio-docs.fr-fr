@@ -1,5 +1,5 @@
 ---
-title: Vérification des sous-types d’un projet à l’heure de l’exécution (fr) Microsoft Docs
+title: Vérification des sous-types d’un projet au moment de l’exécution | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,18 +12,18 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: f0d739a9f8734dd8941e3254d03364cbf4c77350
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80698183"
 ---
-# <a name="verify-subtypes-of-a-project-at-run-time"></a>Vérifier les sous-types d’un projet à l’heure de l’exécution
-Un VSPackage qui dépend d’un sous-type de projet personnalisé devrait inclure la logique de rechercher ce sous-type afin qu’il puisse échouer gracieusement si le sous-type n’est pas présent. La procédure suivante montre comment vérifier la présence d’un sous-type spécifié.
+# <a name="verify-subtypes-of-a-project-at-run-time"></a>Vérifier les sous-types d’un projet au moment de l’exécution
+Un VSPackage qui dépend d’un sous-type de projet personnalisé doit inclure une logique pour rechercher ce sous-type afin qu’il puisse échouer correctement si le sous-type n’est pas présent. La procédure suivante montre comment vérifier la présence d’un sous-type spécifié.
 
-### <a name="to-verify-the-presence-of-a-subtype"></a>Vérifier la présence d’un sous-type
+### <a name="to-verify-the-presence-of-a-subtype"></a>Pour vérifier la présence d’un sous-type
 
-1. Obtenez la hiérarchie du projet et <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> les objets de solution comme objet en ajoutant le code suivant à votre VSPackage.
+1. Obtenir la hiérarchie de projet à partir des objets projet et solution en tant qu' <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> objet en ajoutant le code suivant à votre VSPackage.
 
     ```csharp
     EnvDTE.DTE dte;
@@ -40,7 +40,7 @@ Un VSPackage qui dépend d’un sous-type de projet personnalisé devrait inclur
 
     ```
 
-2. Jetez la <xref:Microsoft.VisualStudio.Shell.Flavor.IVsAggregatableProjectCorrected> hiérarchie à l’interface.
+2. Effectuez un cast de la hiérarchie en <xref:Microsoft.VisualStudio.Shell.Flavor.IVsAggregatableProjectCorrected> interface.
 
     ```csharp
     IVsAggregatableProjectCorrected AP;
@@ -48,14 +48,14 @@ Un VSPackage qui dépend d’un sous-type de projet personnalisé devrait inclur
 
     ```
 
-3. Obtenez la liste des GUIDs de <xref:Microsoft.VisualStudio.Shell.Flavor.IVsAggregatableProjectCorrected.GetAggregateProjectTypeGuids%2A>type projet en invoquant le .
+3. Obtient la liste des GUID de type de projet en appelant <xref:Microsoft.VisualStudio.Shell.Flavor.IVsAggregatableProjectCorrected.GetAggregateProjectTypeGuids%2A> .
 
     ```csharp
     string projTypeGuids = AP.GetAggregateProjectTypeGuids().ToUpper();
 
     ```
 
-4. Consultez la liste pour le GUID du sous-type spécifié.
+4. Vérifiez la liste du GUID du sous-type spécifié.
 
     ```csharp
     // Replace the string "MyGUID" with the GUID of the subtype.
@@ -67,6 +67,6 @@ Un VSPackage qui dépend d’un sous-type de projet personnalisé devrait inclur
     ```
 
 ## <a name="see-also"></a>Voir aussi
-- [Sous-types de projets](../extensibility/internals/project-subtypes.md)
+- [Sous-types de projet](../extensibility/internals/project-subtypes.md)
 - [Conception de sous-types de projet](../extensibility/internals/project-subtypes-design.md)
-- [Propriétés et méthodes étendues par des sous-types de projet](../extensibility/internals/properties-and-methods-extended-by-project-subtypes.md)
+- [Propriétés et méthodes étendues par les sous-types de projet](../extensibility/internals/properties-and-methods-extended-by-project-subtypes.md)

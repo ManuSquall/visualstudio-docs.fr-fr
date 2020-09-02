@@ -1,5 +1,5 @@
 ---
-title: Avec le Gestionnaire de texte pour surveiller les paramètres globaux | Microsoft Docs
+title: Utilisation du gestionnaire de texte pour surveiller les paramètres globaux | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,34 +12,34 @@ caps.latest.revision: 15
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: ece51450b8344ae4715a912399ec538171a26a5c
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65695469"
 ---
-# <a name="using-the-text-manager-to-monitor-global-settings"></a>Avec le Gestionnaire de texte pour surveiller les paramètres globaux
+# <a name="using-the-text-manager-to-monitor-global-settings"></a>Utilisation du gestionnaire de texte pour surveiller les paramètres globaux
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Si vous implémentez un éditeur de base, vous devez surveiller les modifications apportées aux paramètres globaux, étant donné que ces modifications peuvent affecter votre instance de l’éditeur. Vous pouvez suivre les modifications en écoutant les événements déclenchés par le Gestionnaire de texte. Par exemple, lorsque vous spécifiez une préférence globale pour l’apparence ou le comportement d’un composant dans l’éditeur principal, telles que son objet de données de document, le Gestionnaire de texte stocke ces informations et il communique avec tous les clients affectés.  
+Si vous implémentez un éditeur principal, vous devez surveiller les modifications apportées aux paramètres globaux, car ces modifications peuvent affecter votre instance de l’éditeur. Vous pouvez suivre les modifications en écoutant les événements déclenchés par le gestionnaire de texte. Par exemple, lorsque vous spécifiez une préférence globale pour l’apparence ou le comportement d’un composant dans l’éditeur principal, tel que son objet de données de document, le gestionnaire de texte stocke ces informations et les communique à tous les clients concernés.  
   
-## <a name="text-manager-functions"></a>Fonctions de gestionnaire de texte  
- Le Gestionnaire de texte déclenche des événements pour un certain nombre de paramètres, y compris les éléments suivants :  
+## <a name="text-manager-functions"></a>Fonctions du gestionnaire de texte  
+ Le gestionnaire de texte déclenche des événements pour un certain nombre de paramètres, y compris les éléments suivants :  
   
 - Si une mémoire tampon est sous contrôle de code source  
   
-- Comment s’inscrire aux notifications de modification de fichier  
+- Comment s’inscrire pour les notifications de modification de fichier  
   
-- Comment effectuer le suivi des vues sont associées à certaines mémoires tampons  
+- Comment effectuer le suivi des vues associées à certaines mémoires tampons  
   
-- Préférences de la colorisation de texte  
+- Préférences de colorisation du texte  
   
-- Onglet par rapport aux préférences de l’espace  
+- Préférences de tabulation et d’espace  
   
-  Les préférences sont uniques à un langage donné ne sont pas gérés par le Gestionnaire de texte. Ces paramètres doivent être gérés par chaque service de langage.  
+  Les préférences qui sont propres à une langue donnée ne sont pas gérées par le gestionnaire de texte. Ces paramètres doivent être gérés par chaque service de langage.  
   
-  Notification d’événement pour le Gestionnaire de texte est fournie par le <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextManagerEvents> interface. Implémentez cette interface sur votre client pour gérer des événements a déclenché le Gestionnaire de texte. Vous inscrire pour ces événements en utilisant le <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPointContainer> interface sur le Gestionnaire de texte.  
+  La notification d’événements pour le gestionnaire de texte est fournie par l' <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextManagerEvents> interface. Implémentez cette interface sur votre objet client pour gérer les événements déclenchés par le gestionnaire de texte. Vous vous inscrivez à ces événements à l’aide de l' <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPointContainer> interface sur le gestionnaire de texte.  
   
 ## <a name="see-also"></a>Voir aussi  
- [À l’intérieur de l’éditeur principal](../extensibility/inside-the-core-editor.md)   
+ [Dans l’éditeur de base](../extensibility/inside-the-core-editor.md)   
  [Fonctionnalités de l’éditeur](https://msdn.microsoft.com/bdac940d-1f14-4019-a01f-fd0bb3dc7198)

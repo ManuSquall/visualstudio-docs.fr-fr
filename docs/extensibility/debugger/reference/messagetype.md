@@ -1,5 +1,5 @@
 ---
-title: MESSAGETYPE (EN ANGLAIS) Microsoft Docs
+title: MESSAGETYPE | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,10 +16,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: b4d0fd12495a59427500c16ef6f37d9f8b6e61f5
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80714503"
 ---
 # <a name="messagetype"></a>MESSAGETYPE
@@ -52,34 +52,34 @@ public enum enum_MESSAGETYPE { 
 
 ## <a name="fields"></a>Champs
  `MT_OUTPUTSTRING`\
- Indique que le message doit être envoyé à la fenêtre de sortie. C’est mutuellement `MT_MESSAGEBOX`exclusif de .
+ Indique que le message doit être envoyé à la fenêtre sortie. Cela s’exclut mutuellement de `MT_MESSAGEBOX` .
 
  `MT_MESSAGEBOX`\
- Indique que le message doit être affiché dans une boîte de message. C’est mutuellement `MT_OUTPUTSTRING`exclusif de .
+ Indique que le message doit s’afficher dans une boîte de message. Cela s’exclut mutuellement de `MT_OUTPUTSTRING` .
 
  `MT_TYPE_MASK`\
- Une valeur de masque pour isoler la destination du message.
+ Valeur de masque pour isoler la destination du message.
 
  `MT_REASON_EXCEPTION`\
- Indique qu’une boîte de message est affichée à la suite d’une exception. C’est mutuellement `MT_REASON_TRACEPOINT`exclusif de .
+ Indique qu’une boîte de message est affichée à la suite d’une exception. Cela s’exclut mutuellement de `MT_REASON_TRACEPOINT` .
 
  `MT_REASON_TRACEPOINT`\
- Indique qu’une boîte de message est affichée à la suite de la frappe d’un point de trace. Cela s’exclut `MT_REASON_EXCEPTION`mutuellement de .
+ Indique qu’une boîte de message est affichée à la suite de l’atteinte d’un trace. Cela s’exclut mutuellement de `MT_REASON_EXCEPTION` .
 
  `MT_REASON_MASK`\
- Une valeur de masque pour isoler la raison du message montré.
+ Valeur de masque pour isoler la raison pour laquelle le message est affiché.
 
 ## <a name="remarks"></a>Notes
- Ces valeurs sont revenues des méthodes [GetMessage](../../../extensibility/debugger/reference/idebugmessageevent2-getmessage.md) et [GetErrorMessage.](../../../extensibility/debugger/reference/idebugerrorevent2-geterrormessage.md)
+ Ces valeurs sont retournées à partir des méthodes [GetMessage](../../../extensibility/debugger/reference/idebugmessageevent2-getmessage.md) et [GetErrorMessage](../../../extensibility/debugger/reference/idebugerrorevent2-geterrormessage.md) .
 
- L’une des valeurs de raison peut être combinée avec `OR`l’une des valeurs de destination de sortie en utilisant un peu plus.
+ L’une des raisons possibles peut être combinée avec l’une des valeurs de destination de sortie à l’aide d’une opération de bits `OR` .
 
-## <a name="requirements"></a>Spécifications
- En-tête: msdbg.h
+## <a name="requirements"></a>Configuration requise
+ En-tête : msdbg. h
 
- Namespace: Microsoft.VisualStudio.Debugger.Interop
+ Espace de noms : Microsoft. VisualStudio. Debugger. Interop
 
- Assemblage: Microsoft.VisualStudio.Debugger.Interop.dll
+ Assembly : Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>Voir aussi
 - [Énumérations](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)

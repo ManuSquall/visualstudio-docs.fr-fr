@@ -12,10 +12,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 9e56f2d8ef72121e8b34117436019251449fbb75
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75845047"
 ---
 # <a name="graphics-event-list"></a>Liste des événements Graphics
@@ -25,7 +25,7 @@ La liste des événements Graphics dans Visual Studio Graphics Analyzer vous per
   
  Voici la liste des événements :  
   
- ![Liste d’événements dont le nom contient « index ».](../debugger/media/gfx-diag-demo-event-list-orientation.png "gfx_diag_demo_event_list_orientation")  
+ ![Liste des événements ayant « Index » dans leur nom.](../debugger/media/gfx-diag-demo-event-list-orientation.png "gfx_diag_demo_event_list_orientation")  
   
 ## <a name="using-the-event-list"></a>Utilisation de la liste des événements  
  Quand vous sélectionnez un événement dans la liste des événements, cela se reflète aussitôt dans les informations affichées par les autres outils Graphics Analysis. En utilisant la liste des événements avec ces autres outils, vous pouvez examiner un problème de rendu en détail pour en identifier la cause. Pour en savoir plus sur la façon de résoudre les problèmes de rendu en combinant la liste des événements aux autres outils Graphics Analysis, consultez [Exemples](../debugger/graphics-diagnostics-examples.md).  
@@ -35,7 +35,7 @@ La liste des événements Graphics dans Visual Studio Graphics Analyzer vous per
 ### <a name="color-coded-events-in-direct3d-12"></a>Événements à code de couleurs dans Direct3D 12  
  Direct3D 12 expose plusieurs files d'attente qui correspondent à différentes fonctionnalités matérielles. Pour faciliter l'identification de la file d'attente associée à un événement graphique particulier dans Direct3D 12, les événements apparaissent dans la liste des événements sous forme d'événements à code de couleurs en fonction de leur file d'attente quand vous travaillez sur une capture d'une application Direct3D 12.  
   
-|File d'attente Direct3D 12|Color|  
+|File d'attente Direct3D 12|Couleur|  
 |-----------------------|-----------|  
 |File d'attente de rendu|Vert|  
 |File d'attente de calcul|Jaune|  
@@ -71,9 +71,9 @@ La liste des événements Graphics dans Visual Studio Graphics Analyzer vous per
 |Icône|Description de l'événement|  
 |----------|-----------------------|  
 |(pas d'icône)|Événement général<br /> Tout événement autre qu'un événement non défini par l'utilisateur, un groupe d'événements défini par l'utilisateur ou un événement de dessin.|  
-|![Icône d’événement de dessin](../debugger/media/vsg-eventlist-icon-draw.png "vsg_eventlist_icon_draw")|Événement de dessin<br /> Marque un événement de dessin qui s'est produit pendant le frame capturé.|  
-|![Icône du&#45;marqueur d’événement défini par l’utilisateur](../debugger/media/vsg-eventlist-icon-user.png "vsg_eventlist_icon_user")|Groupe d'événements définis par l'utilisateur<br /> Événements liés au groupe, tels que définis par l'application.|  
-|![Icône du&#45;marqueur d’événement défini par l’utilisateur](../debugger/media/vsg-eventlist-icon-user.png "vsg_eventlist_icon_user")|Marqueur d'événement défini par l'utilisateur<br /> Marque un emplacement spécifique, tel que défini par l'application.|  
+|![Icône d'événement de dessin](../debugger/media/vsg-eventlist-icon-draw.png "vsg_eventlist_icon_draw")|Événement de dessin<br /> Marque un événement de dessin qui s'est produit pendant le frame capturé.|  
+|![Icône de marqueur d’événement défini par l’utilisateur&#45;](../debugger/media/vsg-eventlist-icon-user.png "vsg_eventlist_icon_user")|Groupe d'événements définis par l'utilisateur<br /> Événements liés au groupe, tels que définis par l'application.|  
+|![Icône de marqueur d’événement défini par l’utilisateur&#45;](../debugger/media/vsg-eventlist-icon-user.png "vsg_eventlist_icon_user")|Marqueur d'événement défini par l'utilisateur<br /> Marque un emplacement spécifique, tel que défini par l'application.|  
   
 ## <a name="marking-user-defined-events-in-your-app"></a>Marquage des événements définis par l'utilisateur dans votre application  
  Les événements définis par l'utilisateur sont propres à votre application. Vous pouvez vous en servir pour établir une corrélation entre les événements importants qui se produisent dans votre application et les événements figurant dans la liste des événements Graphics. Par exemple, vous pouvez créer des groupes d'événements définis par l'utilisateur pour organiser les événements associés (par exemple, ceux qui affichent votre interface utilisateur) sous forme de groupes ou de hiérarchies afin de faciliter la navigation dans la liste des événements. De même, vous pouvez créer des marqueurs quand certains types d'objets sont dessinés afin de trouver facilement les événements graphiques correspondants dans la liste des événements.  
@@ -102,4 +102,4 @@ La liste des événements Graphics dans Visual Studio Graphics Analyzer vous per
  Vous pouvez utiliser n'importe laquelle de ces API à condition qu'elle soit prise en charge par votre version de Direct3D (par exemple, si vous visez l'API Direct3D 11.1, vous pouvez utiliser `SetMarker` ou `D3DPerf_SetMarker` pour créer un marqueur d'événement, mais pas `SetMarkerInt` , car elle n'est disponible que dans Direct3D 11.2). Vous pouvez même combiner dans une même application celles qui prennent en charge différentes versions de Direct3D.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Procédure pas à pas : objets manquants en raison de l’état de l’appareil](../debugger/walkthrough-missing-objects-due-to-device-state.md)
+ [Procédure pas à pas : objets manquants en raison de l’état de l’appareil](../debugger/walkthrough-missing-objects-due-to-device-state.md)

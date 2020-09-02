@@ -12,10 +12,10 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: 748f941d5a8f257b3765b06651ff3244793e0123
-ms.sourcegitcommit: d8609a78b460d4783f5d59c0c89454910a4dbd21
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/14/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "88238528"
 ---
 # <a name="step-3-serve-static-files-add-pages-and-use-template-inheritance-with-django-app"></a>Étape 3 : traiter les fichiers statiques, ajouter des pages et utiliser l’héritage de modèle avec l’application Django
@@ -180,7 +180,7 @@ Les étapes suivantes ajoutent une page « À propos » au projet « HelloDja
 
 1. Exécutez le projet pour observer les résultats et contrôler la navigation entre les pages. Fermez le serveur une fois terminé.
 
-### <a name="question-i-tried-using-index-for-the-link-to-the-home-page-but-it-didnt-work-why"></a>Question : j’ai essayé d’utiliser « index » pour le lien vers la page d’accueil, mais cela n’a pas fonctionné. Pourquoi ?
+### <a name="question-i-tried-using-index-for-the-link-to-the-home-page-but-it-didnt-work-why"></a>Question : j’ai essayé d’utiliser « index » pour le lien vers la page d’accueil, mais cela n’a pas fonctionné. Pourquoi ?
 
 Réponse : bien que la fonction d’affichage dans *views.py* soit nommée `index`, les modèles de routage d’URL dans le fichier *urls.py* du projet Django ne contiennent pas une expression régulière qui correspond à la chaîne « index ». Pour faire correspondre cette chaîne, vous devez ajouter une autre entrée pour le modèle `^index$`.
 

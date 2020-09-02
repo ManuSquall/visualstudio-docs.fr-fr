@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 443cbac0ea9d74c61f24d6714162ec08e2906a62
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72656877"
 ---
 # <a name="debug-stepping-options-legacy"></a>Options de débogage pas à pas (héritées)
@@ -27,9 +27,9 @@ Cette rubrique décrit comment déboguer des applications [!INCLUDE[wf](../inclu
 
  Lorsque vous déboguez des activités héritées qui ont une exécution simultanée, telle que **ParallelActivity** ou **ConditionedActivityGroup**, vous pouvez utiliser l’une des deux options suivantes pour parcourir votre code pas à pas.
 
-- **Exécution pas à pas de la branche.** Ce mode d’exécution pas à pas vous permet de parcourir et déboguer une branche particulière d’une activité composite, telle que **ParallelActivity** ou l’activité **ConditionalActivityGroup** . Lorsque vous utilisez cette option pour déboguer des activités, vous ne remarquerez aucune modification du contrôle due à l'exécution simultanée d'autres activités dans le workflow. Le débogueur parcourt uniquement les activités dans la branche sélectionnée pendant que d'autres activités peuvent s'exécuter en même temps dans le workflow. Par exemple, par défaut, la branche la plus à gauche dans une activité **ParallelActivity** et la première activité enfant d’une activité **ConditionedActivityGroup** sont utilisées pour l’exécution pas à pas. Si l'utilisateur souhaite déboguer toute autre branche ou toute autre activité enfant, un point d'arrêt explicite doit être placé sur cette branche ou cette activité enfant. Le pas à pas continue dans cette branche lorsque le point d'arrêt est déclenché.
+- **Débogage de branches pas à pas** Ce mode d’exécution pas à pas vous permet de parcourir et déboguer une branche particulière d’une activité composite, telle que **ParallelActivity** ou l’activité **ConditionalActivityGroup** . Lorsque vous utilisez cette option pour déboguer des activités, vous ne remarquerez aucune modification du contrôle due à l'exécution simultanée d'autres activités dans le workflow. Le débogueur parcourt uniquement les activités dans la branche sélectionnée pendant que d'autres activités peuvent s'exécuter en même temps dans le workflow. Par exemple, par défaut, la branche la plus à gauche dans une activité **ParallelActivity** et la première activité enfant d’une activité **ConditionedActivityGroup** sont utilisées pour l’exécution pas à pas. Si l'utilisateur souhaite déboguer toute autre branche ou toute autre activité enfant, un point d'arrêt explicite doit être placé sur cette branche ou cette activité enfant. Le pas à pas continue dans cette branche lorsque le point d'arrêt est déclenché.
 
-- **Exécution pas à pas de l’instance.** Ce mode de pas à pas vous permet de parcourir et déboguer des activités exécutées de manière simultanée dans le workflow. Avec cette option, vous remarquerez une modification du contrôle en cas d'activités exécutées simultanément dans le workflow.
+- **Débogage d'instances pas à pas** Ce mode de pas à pas vous permet de parcourir et déboguer des activités exécutées de manière simultanée dans le workflow. Avec cette option, vous remarquerez une modification du contrôle en cas d'activités exécutées simultanément dans le workflow.
 
   Par défaut, l’option de débogage de branches est sélectionnée et les utilisateurs peuvent alterner entre les deux options lorsqu’ils déboguent un workflow hérité.
 

@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: b8fc198573123c24a3c48068b50161d0aa7f3b60
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/27/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85464344"
 ---
 # <a name="idiasymbolget_age"></a>IDiaSymbol::get_age
@@ -41,7 +41,7 @@ HRESULT get_age ( 
 > [!NOTE]
 > Une valeur de retour `S_FALSE` signifie que la propriété n’est pas disponible pour le symbole.
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
  L’âge ne correspond pas nécessairement à une valeur d’heure connue ; Il est généralement utilisé pour déterminer si un fichier. pdb n’est pas synchronisé avec un fichier. exe correspondant.
 
 ## <a name="requirements"></a>Configuration requise

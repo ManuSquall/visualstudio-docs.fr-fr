@@ -1,5 +1,5 @@
 ---
-title: Debugger Concepts - France Microsoft Docs
+title: Concepts du débogueur | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,41 +11,41 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 9ad8a450f9e79c1d44b8e098c8a00bb4b816e1af
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80738980"
 ---
-# <a name="debugger-concepts"></a>Concepts Debugger
-Pour construire sur le paquet de débbug Visual Studio, vous devez être familier avec les concepts architecturaux utilisés dans la conception de l’emballage.
+# <a name="debugger-concepts"></a>Concepts du débogueur
+Pour générer le package de débogage Visual Studio, vous devez connaître les concepts architecturaux utilisés lors de la conception du package.
 
 ## <a name="in-this-section"></a>Contenu de cette section
- [Séance Debug](../../extensibility/debugger/debug-session.md) Explique le rôle d’une session dans l’architecture de débogage.
+ [Session de débogage](../../extensibility/debugger/debug-session.md) Explique le rôle d’une session dans l’architecture de débogage.
 
- [Serveurs](../../extensibility/debugger/servers-visual-studio-sdk.md) Définit ce qu’est un serveur en termes de débogage de l’architecture, en termes abstraits et physiques.
+ [Serveurs](../../extensibility/debugger/servers-visual-studio-sdk.md) Définit ce qu’un serveur est en termes d’architecture de débogage, en termes abstraits et physiques.
 
- [Fournisseurs portuaires](../../extensibility/debugger/port-suppliers.md) Définit ce qu’est un fournisseur de port en termes de débogage de l’architecture.
+ [Fournisseurs de port](../../extensibility/debugger/port-suppliers.md) Définit ce qu’un fournisseur de ports est en termes d’architecture de débogage.
 
- [Ports](../../extensibility/debugger/ports.md) Définit ce qu’est un port en termes de débogage de l’architecture.
+ [Ports](../../extensibility/debugger/ports.md) Définit ce qu’un port est en termes d’architecture de débogage.
 
- [Processus](../../extensibility/debugger/processes.md) Définit ce qu’est un processus en termes de débogage de l’architecture.
+ [Processus](../../extensibility/debugger/processes.md) Définit ce qu’un processus est en termes d’architecture de débogage.
 
- [Nœuds de programme](../../extensibility/debugger/program-nodes.md) Définit un nœud de programme en termes de débogage de l’architecture, y compris la façon dont il peut s’identifier et le processus dans lequel il est en cours d’exécution.
+ [Nœuds de programme](../../extensibility/debugger/program-nodes.md) Définit un nœud de programme en termes d’architecture de débogage, notamment la façon dont il peut s’identifier et le processus dans lequel il s’exécute.
 
- [Programmes](../../extensibility/debugger/programs.md) Définit un programme en termes de débogage de l’architecture.
+ [Programmes](../../extensibility/debugger/programs.md) Définit un programme en termes d’architecture de débogage.
 
- [Les fils](../../extensibility/debugger/threads.md) Définit les caractéristiques des threads en termes de débogage de l’architecture.
+ [Threads](../../extensibility/debugger/threads.md) Définit les caractéristiques des threads en termes d’architecture de débogage.
 
- [Piles de cadres](../../extensibility/debugger/stack-frames.md) Définit un cadre de pile en termes de débogage de l’architecture. Un cadre de pile est une abstraction d’une pile qui fournit le contexte d’exécution d’un thread.
+ [Frames de pile](../../extensibility/debugger/stack-frames.md) Définit un frame de pile en termes d’architecture de débogage. Un frame de pile est une abstraction d’une pile qui fournit le contexte d’exécution d’un thread.
 
- [Modules](../../extensibility/debugger/modules.md) Définit un module, en termes de débogage de l’architecture, comme un conteneur physique de code, comme un fichier exécutable ou un DLL.
+ [Modules](../../extensibility/debugger/modules.md) Définit un module, en termes d’architecture de débogage, comme un conteneur physique de code, tel qu’un fichier exécutable ou une DLL.
 
- [Points d’arrêt](../../extensibility/debugger/breakpoints-visual-studio-sdk.md) Définit les trois types de points d’arrêt — en attente, liés et erreurs — en termes de débogage de l’architecture.
+ [Points d’arrêt](../../extensibility/debugger/breakpoints-visual-studio-sdk.md) Définit les trois types de points d’arrêt (en attente, liés et erreur) en termes d’architecture de débogage.
 
 ## <a name="related-sections"></a>Sections connexes
- [Contextes Debugger](../../extensibility/debugger/debugger-contexts.md) Explique comment le moteur de débogé (DE) fonctionne simultanément dans les contextes de code, de documentation et d’évaluation de l’expression. Décrit, pour chacun des trois contextes, l’emplacement, le poste ou l’évaluation qui lui est pertinent.
+ [Contextes du débogueur](../../extensibility/debugger/debugger-contexts.md) Explique comment le moteur DE débogage fonctionne simultanément dans le code, la documentation et les contextes d’évaluation des expressions. Décrit, pour chacun des trois contextes, l’emplacement, la position ou l’évaluation qui s’y rapporte.
 
- [Composants Debugger](../../extensibility/debugger/debugger-components.md) Fournit un aperçu des composants Visual Studio Debugging, qui comprennent le moteur de débogage (DE), l’évaluateur d’expression (EE) et le gestionnaire de symboles (SH).
+ [Composants du débogueur](../../extensibility/debugger/debugger-components.md) Fournit une vue d’ensemble des composants de débogage de Visual Studio, notamment le moteur DE débogage (DE), l’évaluateur d’expression (EE) et le gestionnaire de symboles (SH).
 
- [Tâches de débogé](../../extensibility/debugger/debugging-tasks.md) Contient des liens vers diverses tâches de débogage, telles que le lancement d’un programme et l’évaluation des expressions.
+ [Tâches de débogage](../../extensibility/debugger/debugging-tasks.md) Contient des liens vers différentes tâches de débogage, telles que le lancement d’un programme et l’évaluation d’expressions.

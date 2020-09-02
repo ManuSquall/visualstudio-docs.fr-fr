@@ -28,10 +28,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 336a02927374e856a2d6f5a55eb03c5ae1ac7037
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75845188"
 ---
 # <a name="midl-task"></a>Tâche MIDL
@@ -44,7 +44,7 @@ Encapsule l’outil Compilateur MIDL (Microsoft Interface Definition Language), 
   
 - **AdditionalIncludeDirectories**  
   
-     Paramètre **String[]** facultatif.  
+     Paramètre **String []** facultatif.  
   
      Ajoute un répertoire à la liste des répertoires dans lesquels sont recherchés les fichiers IDL importés, y compris les fichiers d’en-tête, et les fichiers de configuration d’application (ACF).  
   
@@ -52,15 +52,15 @@ Encapsule l’outil Compilateur MIDL (Microsoft Interface Definition Language), 
   
 - **AdditionalOptions**  
   
-     Paramètre **String** facultatif.  
+     Paramètre de **chaîne** facultatif.  
   
-     Liste des options de ligne de commande. Par exemple, **«** _/option1 /option2 /option#_  ». Utilisez ce paramètre pour spécifier des options de ligne de commande qui ne sont pas représentées par un autre paramètre de tâche MIDL.  
+     Liste des options de ligne de commande. Par exemple, **«**_/option1/option2/option #_». Utilisez ce paramètre pour spécifier des options de ligne de commande qui ne sont pas représentées par un autre paramètre de tâche MIDL.  
   
      Pour plus d’informations, consultez « MIDL Command-Line Reference (Informations de référence sur les lignes de commande MIDL) » sur le site web [MSDN](https://msdn.microsoft.com/).  
   
 - **ApplicationConfigurationMode**  
   
-     Paramètre **Boolean** facultatif.  
+     Paramètre **booléen** facultatif.  
   
      Si `true`, vous permet d’utiliser certains mots clés ACF dans le fichier IDL.  
   
@@ -68,7 +68,7 @@ Encapsule l’outil Compilateur MIDL (Microsoft Interface Definition Language), 
   
 - **ClientStubFile**  
   
-     Paramètre **String** facultatif.  
+     Paramètre de **chaîne** facultatif.  
   
      Spécifie le nom du fichier stub client d’une interface RPC.  
   
@@ -76,7 +76,7 @@ Encapsule l’outil Compilateur MIDL (Microsoft Interface Definition Language), 
   
 - **CPreprocessOptions**  
   
-     Paramètre **String** facultatif.  
+     Paramètre de **chaîne** facultatif.  
   
      Spécifie les options à transmettre au préprocesseur C/C++. Spécifiez une liste d’options de préprocesseur séparées par des espaces.  
   
@@ -84,23 +84,23 @@ Encapsule l’outil Compilateur MIDL (Microsoft Interface Definition Language), 
   
 - **DefaultCharType**  
   
-     Paramètre **String** facultatif.  
+     Paramètre de **chaîne** facultatif.  
   
      Spécifie le type de caractère par défaut que le compilateur C utilisera pour compiler le code généré.  
   
      Spécifiez l'une des valeurs suivantes, chacune d'elles correspondant à une option de ligne de commande.  
   
-    |Value|Option de ligne de commande|  
+    |Valeur|Option de ligne de commande|  
     |-----------|--------------------------|  
-    |**Signed**|**/char signed**|  
-    |**Unsigned**|**/char unsigned**|  
-    |**Ascii**|**/char ascii7**|  
+    |**Abonné**|**/char signed**|  
+    |**Non signé**|**/char unsigned**|  
+    |**R**|**/char ascii7**|  
   
      Pour plus d’informations, consultez l’option **/char** dans la page « MIDL Command-Line Reference (Informations de référence sur les lignes de commande MIDL) » sur le site web [MSDN](https://msdn.microsoft.com/).  
   
 - **DllDataFileName**  
   
-     Paramètre **String** facultatif.  
+     Paramètre de **chaîne** facultatif.  
   
      Spécifie le nom du fichier *dlldata* généré pour une DLL de proxy.  
   
@@ -108,23 +108,23 @@ Encapsule l’outil Compilateur MIDL (Microsoft Interface Definition Language), 
   
 - **EnableErrorChecks**  
   
-     Paramètre **String** facultatif.  
+     Paramètre de **chaîne** facultatif.  
   
      Spécifie le type de vérification des erreurs que les stubs générés exécutent au moment de l’exécution.  
   
      Spécifiez l'une des valeurs suivantes, chacune d'elles correspondant à une option de ligne de commande.  
   
-    |Value|Option de ligne de commande|  
+    |Valeur|Option de ligne de commande|  
     |-----------|--------------------------|  
     |**Aucun**|**/error none**|  
-    |**EnableCustom**|**/error**|  
-    |**All**|**/error all**|  
+    |**EnableCustom**|**/Error**|  
+    |**Tout**|**/error all**|  
   
      Pour plus d’informations, consultez l’option **/error** dans la page « MIDL Command-Line Reference (Informations de référence sur les lignes de commande MIDL) » sur le site web [MSDN](https://msdn.microsoft.com/).  
   
 - **ErrorCheckAllocations**  
   
-     Paramètre **Boolean** facultatif.  
+     Paramètre **booléen** facultatif.  
   
      Si `true`, vérifie les erreurs de mémoire insuffisante.  
   
@@ -132,7 +132,7 @@ Encapsule l’outil Compilateur MIDL (Microsoft Interface Definition Language), 
   
 - **ErrorCheckBounds**  
   
-     Paramètre **Boolean** facultatif.  
+     Paramètre **booléen** facultatif.  
   
      Si `true`, vérifie la taille des tableaux ouverts et variables par rapport aux spécifications de durée de transmission.  
   
@@ -140,15 +140,15 @@ Encapsule l’outil Compilateur MIDL (Microsoft Interface Definition Language), 
   
 - **ErrorCheckEnumRange**  
   
-     Paramètre **Boolean** facultatif.  
+     Paramètre **booléen** facultatif.  
   
      Si `true`, vérifie que les valeurs enum sont comprises dans une plage autorisée.  
   
-     Pour plus d’informations, consultez l’option **/error enum** dans l’aide relative à la ligne de commande ( **/?** ) de midl.exe.  
+     Pour plus d’informations, consultez l’option **/Error enum** dans l’aide de la ligne de commande (**/ ?**) pour midl.exe.  
   
 - **ErrorCheckRefPointers**  
   
-     Paramètre **Boolean** facultatif.  
+     Paramètre **booléen** facultatif.  
   
      Si `true`, vérifie qu’aucun pointeur de référence null n’a été transmis à des stubs clients.  
   
@@ -156,7 +156,7 @@ Encapsule l’outil Compilateur MIDL (Microsoft Interface Definition Language), 
   
 - **ErrorCheckStubData**  
   
-     Paramètre **Boolean** facultatif.  
+     Paramètre **booléen** facultatif.  
   
      Si `true`, génère un stub qui intercepte les exceptions d’unmarshaling côté serveur et les propage de nouveau vers le client.  
   
@@ -164,37 +164,37 @@ Encapsule l’outil Compilateur MIDL (Microsoft Interface Definition Language), 
   
 - **GenerateClientFiles**  
   
-     Paramètre **String** facultatif.  
+     Paramètre de **chaîne** facultatif.  
   
      Spécifie si le compilateur génère les fichiers sources C côté client pour une interface RPC.  
   
      Spécifiez l'une des valeurs suivantes, chacune d'elles correspondant à une option de ligne de commande.  
   
-    |Value|Option de ligne de commande|  
+    |Valeur|Option de ligne de commande|  
     |-----------|--------------------------|  
     |**Aucun**|**/client none**|  
-    |**Stub**|**/client stub**|  
+    |**Talon**|**/client stub**|  
   
      Pour plus d’informations, consultez l’option **/client** dans la page « MIDL Command-Line Reference (Informations de référence sur les lignes de commande MIDL) » sur le site web [MSDN](https://msdn.microsoft.com/).  
   
 - **GenerateServerFiles**  
   
-     Paramètre **String** facultatif.  
+     Paramètre de **chaîne** facultatif.  
   
      Spécifie si le compilateur génère les fichiers sources C côté serveur pour une interface RPC.  
   
      Spécifiez l'une des valeurs suivantes, chacune d'elles correspondant à une option de ligne de commande.  
   
-    |Value|Option de ligne de commande|  
+    |Valeur|Option de ligne de commande|  
     |-----------|--------------------------|  
     |**Aucun**|**/server none**|  
-    |**Stub**|**/server stub**|  
+    |**Talon**|**/server stub**|  
   
      Pour plus d’informations, consultez l’option **/server** dans la page « MIDL Command-Line Reference (Informations de référence sur les lignes de commande MIDL) » sur le site web [MSDN](https://msdn.microsoft.com/).  
   
 - **GenerateStublessProxies**  
   
-     Paramètre **Boolean** facultatif.  
+     Paramètre **booléen** facultatif.  
   
      Si `true`, génère des stubs entièrement interprétés avec des proxies sans stub pour les interfaces objet.  
   
@@ -202,7 +202,7 @@ Encapsule l’outil Compilateur MIDL (Microsoft Interface Definition Language), 
   
 - **GenerateTypeLibrary**  
   
-     Paramètre **Boolean** facultatif.  
+     Paramètre **booléen** facultatif.  
   
      Si `true`, aucun fichier bibliothèque de types (.tlb) n’est généré.  
   
@@ -210,7 +210,7 @@ Encapsule l’outil Compilateur MIDL (Microsoft Interface Definition Language), 
   
 - **HeaderFileName**  
   
-     Paramètre **String** facultatif.  
+     Paramètre de **chaîne** facultatif.  
   
      Spécifie le nom du fichier d’en-tête généré.  
   
@@ -218,7 +218,7 @@ Encapsule l’outil Compilateur MIDL (Microsoft Interface Definition Language), 
   
 - **IgnoreStandardIncludePath**  
   
-     Paramètre **Boolean** facultatif.  
+     Paramètre **booléen** facultatif.  
   
      Si `true`, la tâche MIDL effectue des recherches uniquement dans les répertoires spécifiés à l’aide du commutateur **AdditionalIncludeDirectories**, et ignore le répertoire actuel ainsi que les répertoires spécifiés par la variable d’environnement INCLUDE.  
   
@@ -226,7 +226,7 @@ Encapsule l’outil Compilateur MIDL (Microsoft Interface Definition Language), 
   
 - **InterfaceIdentifierFileName**  
   
-     Paramètre **String** facultatif.  
+     Paramètre de **chaîne** facultatif.  
   
      Spécifie le nom du *fichier identificateur d’interface* d’une interface COM. Cette opération remplace le nom par défaut obtenu en ajoutant « _i.c » au nom de fichier IDL.  
   
@@ -242,7 +242,7 @@ Encapsule l’outil Compilateur MIDL (Microsoft Interface Definition Language), 
   
 - **MkTypLibCompatible**  
   
-     Paramètre **Boolean** facultatif.  
+     Paramètre **booléen** facultatif.  
   
      Si `true`, requiert que le format du fichier d’entrée soit compatible avec mktyplib.exe, version 2.03.  
   
@@ -250,7 +250,7 @@ Encapsule l’outil Compilateur MIDL (Microsoft Interface Definition Language), 
   
 - **OutputDirectory**  
   
-     Paramètre **String** facultatif.  
+     Paramètre de **chaîne** facultatif.  
   
      Spécifie le répertoire par défaut dans lequel la tâche MIDL écrit les fichiers de sortie.  
   
@@ -258,15 +258,15 @@ Encapsule l’outil Compilateur MIDL (Microsoft Interface Definition Language), 
   
 - **PreprocessorDefinitions**  
   
-     Paramètre **String[]** facultatif.  
+     Paramètre **String []** facultatif.  
   
-     Spécifie un ou plusieurs *définitions*, autrement dit, un nom et une valeur facultative à transmettre au préprocesseur C comme s’ils l’étaient par une directive `#define`. Forme de chaque définition : *name[=value]* .  
+     Spécifie un ou plusieurs *définitions*, autrement dit, un nom et une valeur facultative à transmettre au préprocesseur C comme s’ils l’étaient par une directive `#define`. Forme de chaque définition : *name[=value]*.  
   
      Pour plus d’informations, consultez l’option **/D** dans la page « MIDL Command-Line Reference (Informations de référence sur les lignes de commande MIDL) » sur le site web [MSDN](https://msdn.microsoft.com/). Reportez-vous également au paramètre **UndefinePreprocessorDefinitions** de ce tableau.  
   
 - **ProxyFileName**  
   
-     Paramètre **String** facultatif.  
+     Paramètre de **chaîne** facultatif.  
   
      Spécifie le nom du fichier proxy d’une interface COM.  
   
@@ -274,7 +274,7 @@ Encapsule l’outil Compilateur MIDL (Microsoft Interface Definition Language), 
   
 - **RedirectOutputAndErrors**  
   
-     Paramètre **String** facultatif.  
+     Paramètre de **chaîne** facultatif.  
   
      Redirige le résultat, par exemple les messages d’erreur et les avertissements, de la sortie standard vers le fichier spécifié.  
   
@@ -282,7 +282,7 @@ Encapsule l’outil Compilateur MIDL (Microsoft Interface Definition Language), 
   
 - **ServerStubFile**  
   
-     Paramètre **String** facultatif.  
+     Paramètre de **chaîne** facultatif.  
   
      Spécifie le nom du fichier stub serveur d’une interface RPC.  
   
@@ -296,15 +296,15 @@ Encapsule l’outil Compilateur MIDL (Microsoft Interface Definition Language), 
   
 - **StructMemberAlignment**  
   
-     Paramètre **String** facultatif.  
+     Paramètre de **chaîne** facultatif.  
   
      Spécifie l’alignement (*niveau de compression*) des structures sur le système cible.  
   
      Spécifiez l'une des valeurs suivantes, chacune d'elles correspondant à une option de ligne de commande.  
   
-    |Value|Option de ligne de commande|  
+    |Valeur|Option de ligne de commande|  
     |-----------|--------------------------|  
-    |**NotSet**|*\<aucune>*|  
+    |**NotSet**|*\<none>*|  
     |**1**|**/Zp1**|  
     |**2**|**/Zp2**|  
     |**4**|**/Zp4**|  
@@ -314,7 +314,7 @@ Encapsule l’outil Compilateur MIDL (Microsoft Interface Definition Language), 
   
 - **SuppressCompilerWarnings**  
   
-     Paramètre **Boolean** facultatif.  
+     Paramètre **booléen** facultatif.  
   
      Si `true`, supprime les messages d’avertissement de la tâche MIDL.  
   
@@ -330,18 +330,18 @@ Encapsule l’outil Compilateur MIDL (Microsoft Interface Definition Language), 
   
 - **TargetEnvironment**  
   
-     Paramètre **String** facultatif.  
+     Paramètre de **chaîne** facultatif.  
   
      Spécifie l’environnement dans lequel l’application s’exécute.  
   
      Spécifiez l'une des valeurs suivantes, chacune d'elles correspondant à une option de ligne de commande.  
   
-    |Value|Option de ligne de commande|  
+    |Valeur|Option de ligne de commande|  
     |-----------|--------------------------|  
-    |**NotSet**|*\<aucune>*|  
+    |**NotSet**|*\<none>*|  
     |**Win32**|**/env win32**|  
     |**Itanium**|**/env ia64**|  
-    |**X64**|**/env x64**|  
+    |**64x**|**/env x64**|  
   
      Pour plus d’informations, consultez l’option **/env** dans la page « MIDL Command-Line Reference (Informations de référence sur les lignes de commande MIDL) » sur le site web [MSDN](https://msdn.microsoft.com/).  
   
@@ -353,13 +353,13 @@ Encapsule l’outil Compilateur MIDL (Microsoft Interface Definition Language), 
   
 - **TypeLibFormat**  
   
-     Paramètre **String** facultatif.  
+     Paramètre de **chaîne** facultatif.  
   
      Spécifie le format du fichier bibliothèque de types.  
   
      Spécifiez l'une des valeurs suivantes, chacune d'elles correspondant à une option de ligne de commande.  
   
-    |Value|Option de ligne de commande|  
+    |Valeur|Option de ligne de commande|  
     |-----------|--------------------------|  
     |**NewFormat**|**/newtlb**|  
     |**OldFormat**|**/oldtlb**|  
@@ -368,7 +368,7 @@ Encapsule l’outil Compilateur MIDL (Microsoft Interface Definition Language), 
   
 - **TypeLibraryName**  
   
-     Paramètre **String** facultatif.  
+     Paramètre de **chaîne** facultatif.  
   
      Spécifie le nom du fichier bibliothèque de types.  
   
@@ -376,7 +376,7 @@ Encapsule l’outil Compilateur MIDL (Microsoft Interface Definition Language), 
   
 - **UndefinePreprocessorDefinitions**  
   
-     Paramètre **String[]** facultatif.  
+     Paramètre **String []** facultatif.  
   
      Supprime toute définition précédente d’un nom en le transmettant au préprocesseur C comme si c’était par l’action d’une directive `#undefine`. Spécifiez un ou plusieurs noms définis précédemment.  
   
@@ -402,13 +402,13 @@ Encapsule l’outil Compilateur MIDL (Microsoft Interface Definition Language), 
   
 - **WarningLevel**  
   
-     Paramètre **String** facultatif.  
+     Paramètre de **chaîne** facultatif.  
   
      Spécifie la gravité (*niveau d’avertissement*) des avertissements à émettre. Aucun avertissement n’est émis pour la valeur 0. Un avertissement est émis si son niveau est numériquement inférieur ou égal à la valeur spécifiée.  
   
      Spécifiez l'une des valeurs suivantes, chacune d'elles correspondant à une option de ligne de commande.  
   
-    |Value|Option de ligne de commande|  
+    |Valeur|Option de ligne de commande|  
     |-----------|--------------------------|  
     |**0**|**/W0**|  
     |**1**|**/W1**|  
@@ -418,7 +418,7 @@ Encapsule l’outil Compilateur MIDL (Microsoft Interface Definition Language), 
   
      Pour plus d’informations, consultez l’option **/W** dans la page « MIDL Command-Line Reference (Informations de référence sur les lignes de commande MIDL) » sur le site web [MSDN](https://msdn.microsoft.com/). Reportez-vous également au paramètre **WarnAsError** de ce tableau.  
   
-## <a name="remarks"></a>Remarques  
+## <a name="remarks"></a>Notes  
   
 ## <a name="see-also"></a>Voir aussi  
- [Task Reference (Informations de référence sur les tâches MSBuild)](../msbuild/msbuild-task-reference.md)
+ [Référence de tâche](../msbuild/msbuild-task-reference.md)

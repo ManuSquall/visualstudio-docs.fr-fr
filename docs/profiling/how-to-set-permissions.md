@@ -15,10 +15,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 03f508bd2ff904898d77cd5ac07c30992da63b46
-ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/24/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85328939"
 ---
 # <a name="how-to-set-permissions"></a>Guide pratique pour définir les autorisations
@@ -66,7 +66,7 @@ Les membres du groupe Utilisateurs peuvent exécuter les outils de profilage si 
 
      La boîte de dialogue ** \<folder name> Propriétés** s’affiche.
 
-3. Cliquez sur l’onglet **Sécurité**.
+3. Cliquez sur l’onglet **Security** .
 
 4. Cliquez sur le nom du compte de l’utilisateur dans la zone **Noms de groupes ou d’utilisateurs**.
 

@@ -1,5 +1,5 @@
 ---
-title: 'Procédure : Dépanner les Services | Microsoft Docs'
+title: 'Comment : dépanner les services | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -11,26 +11,26 @@ caps.latest.revision: 15
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 5311aa3ff390611942aa91cb1f2a53ca5a76258d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68204065"
 ---
-# <a name="how-to-troubleshoot-services"></a>Procédure : Dépanner les services
+# <a name="how-to-troubleshoot-services"></a>Guide pratique pour dépanner les services
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Il existe plusieurs problèmes courants qui peuvent se produire lorsque vous essayez d’obtenir un service :  
   
-- Le service n’est pas inscrit avec [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
+- Le service n’est pas inscrit auprès de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] .  
   
-- Le service est demandé par type d’interface et non par type de service.  
+- Le service est demandé par le type d’interface et non par le type de service.  
   
-- Le VSPackage demandant le service n’a pas été placé.  
+- Le VSPackage qui demande le service n’a pas été mis en place.  
   
-- Le fournisseur de service incorrect est utilisé.  
+- Le mauvais fournisseur de services est utilisé.  
   
-  Si le service demandé n’aboutit pas, l’appel à <xref:Microsoft.VisualStudio.Shell.Package.GetService%2A> retourne la valeur null. Vous devez toujours vérifier les valeurs null après la demande d’un service :  
+  Si le service demandé ne peut pas être obtenu, l’appel à <xref:Microsoft.VisualStudio.Shell.Package.GetService%2A> retourne la valeur null. Vous devez toujours tester la valeur null après avoir demandé un service :  
   
 ```csharp  
 IVsActivityLog log =   
@@ -38,11 +38,11 @@ IVsActivityLog log =
 if (log == null) return;  
 ```  
   
-### <a name="to-troubleshoot-a-service"></a>Pour résoudre les problèmes d’un service  
+### <a name="to-troubleshoot-a-service"></a>Pour dépanner un service  
   
-1. Examinez le Registre système pour voir si le service a été correctement inscrit. Pour plus d’informations, consultez [enregistrement des Services](../misc/registering-services.md).  
+1. Examinez le registre système pour voir si le service a été correctement inscrit. Pour plus d’informations, consultez la page [inscription de services](../misc/registering-services.md).  
   
-     Le fragment de fichier .reg suivant montre comment le service de SVsTextManager peut être inscrit :  
+     Le fragment de fichier. reg suivant montre comment le service SVsTextManager peut être inscrit :  
   
     ```  
     [HKEY_LOCAL_MACHINE\Software\Microsoft\VisualStudio\<version number>\Services\{F5E7E71D-1401-11d1-883B-0000F87579D2}]  
@@ -50,25 +50,25 @@ if (log == null) return;
     "Name"="SVsTextManager"  
     ```  
   
-     Dans l’exemple ci-dessus, le numéro de version est la version de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], telles que 12.0 ou 14.0, la clé {F5E7E71D-1401-11d1-883B-0000F87579D2} est l’identificateur de service (SID) du service, SVsTextManager et la {valeur par défaut F5E7E720-1401-11D1-883B-0000F87579D2} est le GUID du package le VSPackage, qui fournit le service de gestionnaire de texte.  
+     Dans l’exemple ci-dessus, le numéro de version est la version de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] , par exemple 12,0 ou 14,0, la clé {F5E7E71D-1401-11D1-883B-0000F87579D2} est l’identificateur de service (SID) du service, SVsTextManager, et la valeur par défaut {F5E7E720-1401-11D1-883B-0000F87579D2} est le GUID du package de Text Manager VSPackage, qui fournit le service.  
   
-2. Lorsque vous appelez la méthode GetService, utilisez le type de service et pas le type d’interface. Lors de la demande d’un service à partir de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], <xref:Microsoft.VisualStudio.Shell.Package> extrait le GUID du type. Un service sera introuvable si les conditions suivantes sont réunies :  
+2. Utilisez le type de service et non le type d’interface lorsque vous appelez GetService. Lors de la demande d’un service à partir de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] , <xref:Microsoft.VisualStudio.Shell.Package> extrait le GUID du type. Un service ne sera pas trouvé si les conditions suivantes sont réunies :  
   
-    1. Un type d’interface est passé à la méthode GetService au lieu du type de service.  
+    1. Un type interface est passé à GetService au lieu du type de service.  
   
-    2. Aucun GUID n’est explicitement affectée à l’interface. Par conséquent, le système crée un GUID par défaut pour un objet en fonction des besoins.  
+    2. Aucun GUID n’est explicitement affecté à l’interface. Par conséquent, le système crée un GUID par défaut pour un objet en fonction des besoins.  
   
-3. Assurez-vous que le VSPackage demandant le service a été placé. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] sites d’un VSPackage après la construction et avant d’appeler <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A>.  
+3. Assurez-vous que le VSPackage qui demande le service a été mis en place. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] site un VSPackage après l’avoir construit et avant d’appeler <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A> .  
   
-     Si vous avez le code dans un constructeur de VSPackage qui a besoin d’un service, déplacez-le vers la méthode Initialize.  
+     Si vous avez du code dans un constructeur VSPackage qui a besoin d’un service, déplacez-le vers la méthode Initialize.  
   
-4. N’oubliez pas que vous utilisez le fournisseur de service approprié.  
+4. Assurez-vous que vous utilisez le fournisseur de services approprié.  
   
-     Pas tous les fournisseurs de services sont similaires. Le fournisseur de services qui [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] transmet à une fenêtre outil diffère de celui qu’il transmet à un VSPackage. Le fournisseur de services de fenêtre outil connaît <xref:Microsoft.VisualStudio.Shell.Interop.STrackSelection>, mais ne connaît ne pas <xref:Microsoft.VisualStudio.Shell.Interop.SVsRunningDocumentTable>. Vous pouvez appeler <xref:Microsoft.VisualStudio.Shell.Package.GetGlobalService%2A> pour accéder à un fournisseur de services de package Visual Studio à partir de dans une fenêtre outil.  
+     Tous les fournisseurs de services ne sont pas identiques. Le fournisseur de services qui [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] passe à une fenêtre outil est différent de celui qu’il transmet à un VSPackage. Le fournisseur de services de la fenêtre outil connaît <xref:Microsoft.VisualStudio.Shell.Interop.STrackSelection> , mais ne connaît pas <xref:Microsoft.VisualStudio.Shell.Interop.SVsRunningDocumentTable> . Vous pouvez appeler <xref:Microsoft.VisualStudio.Shell.Package.GetGlobalService%2A> pour obtenir un fournisseur de services VSPackage dans une fenêtre outil.  
   
-     Si une fenêtre outil héberge un contrôle utilisateur ou tout autre conteneur de contrôle, le conteneur doit se trouver par le modèle de composant de Windows et qu’il n’aura pas accès à tout [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] services. Vous pouvez appeler <xref:Microsoft.VisualStudio.Shell.Package.GetGlobalService%2A> pour obtenir un fournisseur de services de VSPackage à partir d’un conteneur de contrôle.  
+     Si une fenêtre outil héberge un contrôle utilisateur ou tout autre conteneur de contrôle, le conteneur est installé par le modèle de composant Windows et n’a accès à aucun [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] service. Vous pouvez appeler <xref:Microsoft.VisualStudio.Shell.Package.GetGlobalService%2A> pour obtenir un fournisseur de services VSPackage à partir d’un conteneur de contrôle.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Liste des Services disponibles](../extensibility/internals/list-of-available-services.md)   
- [À l’aide et fourniture de Services](../extensibility/using-and-providing-services.md)   
+ [Liste des services disponibles](../extensibility/internals/list-of-available-services.md)   
+ [Utilisation et fourniture de services](../extensibility/using-and-providing-services.md)   
  [Éléments fondamentaux du service](../extensibility/internals/service-essentials.md)

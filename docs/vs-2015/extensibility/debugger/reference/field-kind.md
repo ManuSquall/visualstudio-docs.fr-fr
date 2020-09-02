@@ -13,16 +13,16 @@ caps.latest.revision: 15
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: ab972df2cf1b382498d2e57a5ae2e978c7230a34
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65692874"
 ---
-# <a name="fieldkind"></a>FIELD_KIND
+# <a name="field_kind"></a>FIELD_KIND
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Spécifie le type de champ contenue dans un [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) objet.  
+Spécifie le type de champ contenu dans un objet [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) .  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -125,10 +125,10 @@ public enum enum_FIELD_KIND {
   
 ## <a name="members"></a>Membres  
  FIELD_KIND_TYPE  
- Indique que le champ est uniquement un type.  
+ Indique que le champ est un type uniquement.  
   
  FIELD_KIND_SYMBOL  
- Indique que le champ est un symbole, avec un type, nom et d’autres informations.  
+ Indique que le champ est un symbole, avec le type, le nom et d’autres informations.  
   
  FIELD_TYPE_PRIMITIVE  
  Indique que le champ est un type de données primitif.  
@@ -143,7 +143,7 @@ public enum enum_FIELD_KIND {
  Indique que le champ est une interface.  
   
  FIELD_TYPE_UNION  
- Indique que le champ est une union.  
+ Indique que le champ est une Union.  
   
  FIELD_TYPE_ARRAY  
  Indique que le champ est un tableau.  
@@ -167,7 +167,7 @@ public enum enum_FIELD_KIND {
  Indique que le champ est un typedef.  
   
  FIELD_TYPE_BITFIELD  
- Indique que le champ est un champ de bits.  
+ Indique que le champ est un champ de binaire.  
   
  FIELD_TYPE_NAMESPACE  
  Indique que le champ est un espace de noms.  
@@ -215,25 +215,25 @@ public enum enum_FIELD_KIND {
  Réservé à un usage ultérieur.  
   
  FIELD_KIND_MASK  
- Indique un masque pour les types de champ.  
+ Indique un masque pour les genres de champs.  
   
  FIELD_TYPE_MASK  
  Indique un masque pour les types de champs.  
   
  FIELD_SYM_MASK  
- Indique un masque pour les informations de symboles.  
+ Indique un masque pour les informations de symbole.  
   
 ## <a name="remarks"></a>Notes  
- Retourné par un appel à la [GetKind](../../../extensibility/debugger/reference/idebugfield-getkind.md) (méthode).  
+ Retourné à partir d’un appel à la méthode [GetKind](../../../extensibility/debugger/reference/idebugfield-getkind.md) .  
   
- Selon le type de champ, [QueryInterface](https://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3) peut être appelée sur le [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) interface pour une forme plus spécifique de l’interface. Par exemple, si [GetKind](../../../extensibility/debugger/reference/idebugfield-getkind.md) retourne `FIELD_TYPE_METHOD`, vous pouvez ensuite appeler `QueryInterface` sur je`DebugField` pour obtenir le [IDebugMethodField](../../../extensibility/debugger/reference/idebugmethodfield.md) interface.  
+ Selon le type de champ, [QueryInterface](https://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3) peut être appelé sur l’interface [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) pour une forme d’interface plus spécifique. Par exemple, si [GetKind](../../../extensibility/debugger/reference/idebugfield-getkind.md) retourne `FIELD_TYPE_METHOD` , vous pouvez appeler `QueryInterface` sur I `DebugField` pour obtenir l’interface [IDebugMethodField](../../../extensibility/debugger/reference/idebugmethodfield.md) .  
   
 ## <a name="requirements"></a>Configuration requise  
- En-tête : sh.h  
+ En-tête : SH. h  
   
- Espace de noms : Microsoft.VisualStudio.Debugger.Interop  
+ Espace de noms : Microsoft. VisualStudio. Debugger. Interop  
   
- Assembly : Microsoft.VisualStudio.Debugger.Interop.dll  
+ Assembly : Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>Voir aussi  
  [Énumérations](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   

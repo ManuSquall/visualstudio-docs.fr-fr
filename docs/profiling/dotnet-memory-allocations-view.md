@@ -17,10 +17,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: ce16f65947fd69b5a54e564ba6bec061bc68e328
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74777375"
 ---
 # <a name="net-memory-allocations-view"></a>Mode Allocations de mémoire .NET
@@ -41,12 +41,12 @@ La vue Allocations liste les types qui ont été créés au cours de l’exécut
 
 |Colonne|Description|
 |------------|-----------------|
-|**Nom   **|Nom du type alloué ou de la fonction allouée.|
-|**ID du processus**|ID du processus (PID) de l'exécution du profilage.|
+|**Name**|Nom du type alloué ou de la fonction allouée.|
+|**ID de processus**|ID du processus (PID) de l'exécution du profilage.|
 |**Nom du processus**|Nom du processus.|
 |**Nom du module**|Nom du module qui contient le type ou la fonction.|
 |**Chemin du module**|Chemin du module qui contient le type ou la fonction.|
-|**Fichier source**|Fichier source contenant la définition pour le type ou la fonction.|
+|**Source File**|Fichier source contenant la définition pour le type ou la fonction.|
 |**Numéro de ligne de fonction**|Numéro de ligne du début de cette définition de type ou de cette fonction dans le fichier source.|
 |**Niveau**|Indique si les données concernent un type ou une fonction.|
 |**Allocations inclusives**|-   Pour une fonction, nombre total d’objets du type parent créés par la fonction. Ce nombre inclut les objets créés dans les fonctions enfants.<br />-   Pour un type, nombre total d’instances de ce type qui ont été créées.|

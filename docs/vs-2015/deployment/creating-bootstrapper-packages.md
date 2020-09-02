@@ -22,10 +22,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: daf72a4466cd0f02eb6ef3a357276ed690fd26bf
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75845518"
 ---
 # <a name="creating-bootstrapper-packages"></a>Création de packages de programme d'amorçage
@@ -100,9 +100,9 @@ HKLM\Software\Wow6432Node\Microsoft\GenericBootstrapper\11.0
   
  Le tableau suivant présente les propriétés qui sont automatiquement remplies par le programme d'amorçage.  
   
-|Les|Description|  
+|Propriété|Description|  
 |--------------|-----------------|  
-|ApplicationName|Nom de l'application.|  
+|ApplicationName|Le nom de l’application.|  
 |ProcessorArchitecture|Processeur et bits par mot de la plateforme ciblée par un exécutable. Les valeurs sont notamment les suivantes :<br /><br /> -   Intel<br />-   IA64<br />-   AMD64|  
 |[Version9x](https://msdn.microsoft.com/library/aa372490\(v=vs.140\).aspx)|Numéro de version des systèmes d'exploitation Microsoft Windows 95, Windows 98 ou Windows ME. La syntaxe de la version est Major.Minor.ServicePack.|  
 |[VersionNT](/windows/desktop/Msi/versionnt)|Numéro de version des systèmes d'exploitation Windows NT, Windows 2000, Windows XP, Windows Vista, Windows Server 2008 ou Windows 7. La syntaxe de la version est Major.Minor.ServicePack.|  
@@ -115,7 +115,7 @@ HKLM\Software\Wow6432Node\Microsoft\GenericBootstrapper\11.0
   
  `%ProgramFiles%\Microsoft.NET\RedistList`  
   
- La liste de composants redistribuables est un fichier XML que vous devez nommer en respectant le format suivant : *Nom de la société*.*Nom du composant*.RedistList.xml. Ainsi, par exemple, si le composant s'appelle Datawidgets et qu'il a été fait par Acme, utilisez Acme.DataWidgets.RedistList.xml. Voici un exemple de contenu de la liste de composants redistribuables :  
+ La liste redistribuable est un fichier XML que vous devez nommer en utilisant le format suivant : nom de la *société*. *Nom du composant*.RedistList.xml. Ainsi, par exemple, si le composant s'appelle Datawidgets et qu'il a été fait par Acme, utilisez Acme.DataWidgets.RedistList.xml. Voici un exemple de contenu de la liste de composants redistribuables :  
   
 ```  
 <?xml version="1.0" encoding="UTF-8"?>  
@@ -125,7 +125,7 @@ HKLM\Software\Wow6432Node\Microsoft\GenericBootstrapper\11.0
 ```  
   
 ## <a name="see-also"></a>Voir aussi  
- [Guide pratique pour installer des composants requis avec une application ClickOnce](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md)   
- [Composants requis, boîte de dialogue](../ide/reference/prerequisites-dialog-box.md)   
- [Référence du schéma de produit et de Package](../deployment/product-and-package-schema-reference.md)   
+ [Comment : installer les composants requis avec une application ClickOnce](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md)   
+ [Boîte de dialogue composants requis](../ide/reference/prerequisites-dialog-box.md)   
+ [Référence du schéma de produit et de package](../deployment/product-and-package-schema-reference.md)   
  [Utiliser le programme d’amorçage de Visual Studio 2005 pour démarrer rapidement votre installation](https://msdn.microsoft.com/magazine/cc163899.aspx)

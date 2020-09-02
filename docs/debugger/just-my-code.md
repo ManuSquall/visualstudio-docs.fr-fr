@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 867477fd3e490f91e81fb91c8be267ede83c8d2c
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85536563"
 ---
 # <a name="debug-only-user-code-with-just-my-code"></a>Déboguer uniquement le code utilisateur avec Uniquement mon code
@@ -45,7 +45,7 @@ Dans la fenêtre **pile des appels** ou **tâches** , uniquement mon code rédui
 >[!TIP]
 >Pour ouvrir les **modules**, **pile des appels**, **tâches**ou la plupart des autres fenêtres de débogage, vous devez être dans une session de débogage. Pendant le débogage, sous **Debug**  >  **fenêtres**de débogage, sélectionnez les fenêtres que vous souhaitez ouvrir.
 
-<a name="BKMK_Override_call_stack_filtering"></a>Pour afficher le code dans un frame **[code externe]** réduit, cliquez avec le bouton droit dans **la pile des appels** ou la fenêtre de **tâche** , puis sélectionnez **afficher le code externe** dans le menu contextuel. Les lignes de code externe développées remplacent le frame **[code externe**].
+<a name="BKMK_Override_call_stack_filtering"></a> Pour afficher le code dans un frame **[code externe]** réduit, cliquez avec le bouton droit dans **la pile des appels** ou la fenêtre de **tâche** , puis sélectionnez **afficher le code externe** dans le menu contextuel. Les lignes de code externe développées remplacent le frame **[code externe**].
 
 ![Afficher le code externe dans la fenêtre pile des appels](../debugger/media/dbg_justmycode_showexternalcode.png "Afficher le code externe")
 
@@ -60,9 +60,9 @@ Dans les projets .NET, Uniquement mon code utilise des fichiers de symboles (*. 
 
 Trois attributs du compilateur affectent également ce que le débogueur .NET considère comme étant du code utilisateur :
 
-- <xref:System.Diagnostics.DebuggerNonUserCodeAttribute>indique au débogueur que le code auquel il est appliqué n’est pas du code utilisateur.
+- <xref:System.Diagnostics.DebuggerNonUserCodeAttribute> indique au débogueur que le code auquel il est appliqué n’est pas du code utilisateur.
 - <xref:System.Diagnostics.DebuggerHiddenAttribute> masque le code au débogueur, même si l'option Uniquement mon code est désactivée.
-- <xref:System.Diagnostics.DebuggerStepThroughAttribute>indique au débogueur d’effectuer un pas à pas détaillé du code auquel il est appliqué, plutôt que d’effectuer un pas à pas détaillé dans le code.
+- <xref:System.Diagnostics.DebuggerStepThroughAttribute> indique au débogueur d’effectuer un pas à pas détaillé du code auquel il est appliqué, plutôt que d’effectuer un pas à pas détaillé dans le code.
 
 Le débogueur .NET considère que tout autre code est du code utilisateur.
 
@@ -83,7 +83,7 @@ Si les exceptions de première chance sont activées pour l’exception, la lign
 
 À compter de Visual Studio 2017 version 15,8, Uniquement mon code pour le code pas à pas est également pris en charge. Cette fonctionnalité nécessite également l’utilisation du commutateur de compilateur [/JMC (uniquement mon code)](/cpp/build/reference/jmc) . Le commutateur est activé par défaut dans les projets C++. Pour la prise en charge de la fenêtre **pile des appels** et de la pile des appels dans uniquement mon code, le commutateur/JMC n’est pas requis.
 
-<a name="BKMK_CPP_User_and_non_user_code"></a>Pour être classé comme code utilisateur, le fichier PDB pour le binaire contenant le code utilisateur doit être chargé par le débogueur (utilisez la fenêtre **modules** pour vérifier cela).
+<a name="BKMK_CPP_User_and_non_user_code"></a> Pour être classé comme code utilisateur, le fichier PDB pour le binaire contenant le code utilisateur doit être chargé par le débogueur (utilisez la fenêtre **modules** pour vérifier cela).
 
 Pour le comportement de la pile des appels, par exemple dans la fenêtre **pile des appels** , uniquement mon code en C++ considère uniquement ces fonctions comme du *code non-utilisateur*:
 
@@ -99,7 +99,7 @@ Pour le comportement d’exécution pas à pas du code, Uniquement mon code en C
 > [!NOTE]
 > Pour la prise en charge de l’exécution pas à pas du code dans Uniquement mon code, le code C++ doit être compilé à l’aide des compilateurs MSVC dans Visual Studio 15,8 Preview 3 ou version ultérieure, et le commutateur du compilateur/JMC doit être activé (il est activé par défaut). Pour plus d’informations, consultez [personnaliser la pile des appels C++ et le comportement](#BKMK_CPP_Customize_call_stack_behavior)de l’exécution du code) et ce billet de [blog](https://devblogs.microsoft.com/cppblog/announcing-jmc-stepping-in-visual-studio/). Pour le code compilé à l’aide d’un compilateur plus ancien, les fichiers *.. natstepfilter* sont le seul moyen de personnaliser l’exécution pas à pas du code, qui est indépendant de uniquement mon code. Consultez [personnaliser le comportement d’exécution pas à pas C++](#BKMK_CPP_Customize_stepping_behavior).
 
-<a name="BKMK_CPP_Stepping_behavior"></a>Lors du débogage C++ :
+<a name="BKMK_CPP_Stepping_behavior"></a> Lors du débogage C++ :
 
 - **Débogage**  >  **Pas à pas** détaillé (ou **F11**) des étapes de code non-utilisateur sur le code à la ligne suivante du code utilisateur.
 - **Débogage**  >  **Pas à pas sortant** (ou **MAJ** + **F11**) sur le code non-utilisateur s’exécute jusqu’à la ligne suivante du code utilisateur.
@@ -110,7 +110,7 @@ Si le débogueur s’arrête dans du code non-utilisateur (par exemple, vous uti
 
 Si le débogueur rencontre une exception, il s’arrête sur l’exception, qu’il soit en code utilisateur ou non-utilisateur. Les options **non gérées** par l’utilisateur dans la boîte de dialogue **paramètres d’exception** sont ignorées.
 
-### <a name="customize-c-call-stack-and-code-stepping-behavior"></a><a name="BKMK_CPP_Customize_call_stack_behavior"></a>Personnaliser la pile des appels C++ et le comportement du code pas à pas
+### <a name="customize-c-call-stack-and-code-stepping-behavior"></a><a name="BKMK_CPP_Customize_call_stack_behavior"></a> Personnaliser la pile des appels C++ et le comportement du code pas à pas
 
 Pour les projets C++, vous pouvez spécifier les modules, les fichiers sources et les fonctions que la fenêtre **pile des appels** traite comme du code non-utilisateur en les spécifiant dans des fichiers * \* .. natjmc* . Cette personnalisation s’applique également au code pas à pas si vous utilisez le compilateur le plus récent (consultez [C++ uniquement mon code](#BKMK_CPP_User_and_non_user_code)).
 
@@ -160,7 +160,7 @@ Un fichier *.. natjmc* est un fichier XML avec la syntaxe suivante :
 |`Module`|facultatif. Le nom ou le chemin d'accès complet au module qui contient la fonction. Vous pouvez utiliser cet attribut pour lever l'ambiguïté entre des fonctions du même nom.|
 |`ExceptionImplementation`|Quand la valeur est définie sur `true`, la pile des appels affiche la fonction qui a levé l'exception, au lieu de cette fonction.|
 
-### <a name="customize-c-stepping-behavior-independent-of-just-my-code-settings"></a><a name="BKMK_CPP_Customize_stepping_behavior"></a>Personnaliser le comportement d’exécution pas à pas C++ indépendamment des paramètres de Uniquement mon code
+### <a name="customize-c-stepping-behavior-independent-of-just-my-code-settings"></a><a name="BKMK_CPP_Customize_stepping_behavior"></a> Personnaliser le comportement d’exécution pas à pas C++ indépendamment des paramètres de Uniquement mon code
 
 Dans les projets C++, vous pouvez spécifier des fonctions pour effectuer un pas à pas principal en les répertoriant comme du code non-utilisateur dans des fichiers * \* .. natstepfilter* . Les fonctions répertoriées dans les fichiers * \* .. natstepfilter* ne dépendent pas des paramètres de uniquement mon code.
 
@@ -190,11 +190,11 @@ Un fichier *.. natstepfilter* est un fichier XML avec la syntaxe suivante :
 |`Function`|Obligatoire. Spécifie une ou plusieurs fonctions comme fonctions non-utilisateur.|
 |`Name`|Obligatoire. Une expression régulière mise en forme selon ECMA-262 spécifiant le nom complet de la fonction concernée. Par exemple :<br /><br /> `<Name>MyNS::MyClass.*</Name>`<br /><br /> indique au débogueur que toutes les méthodes de `MyNS::MyClass` doivent être considérées comme du code non-utilisateur. La recherche de correspondance respecte la casse.|
 |`Module`|facultatif. Une expression régulière mise en forme selon ECMA-262 spécifiant le chemin d'accès complet au module contenant la fonction. La recherche de correspondance ne respecte pas la casse.|
-|`Action`|Obligatoire. Une des valeurs suivantes (respectant la casse) :<br /><br /> `NoStepInto`: indique au débogueur d’effectuer un pas à pas principal dans la fonction.<br /> `StepInto`: indique au débogueur d’effectuer un pas à pas détaillé dans la fonction, en substituant tout autre élément `NoStepInto` pour la fonction correspondante.|
+|`Action`|Obligatoire. Une des valeurs suivantes (respectant la casse) :<br /><br /> `NoStepInto`  : indique au débogueur d’effectuer un pas à pas principal dans la fonction.<br /> `StepInto`  : indique au débogueur d’effectuer un pas à pas détaillé dans la fonction, en substituant tout autre élément `NoStepInto` pour la fonction correspondante.|
 
 ## <a name="javascript-just-my-code"></a><a name="BKMK_JavaScript_Just_My_Code"></a> Uniquement mon code JavaScript
 
-<a name="BKMK_JS_User_and_non_user_code"></a>JavaScript Uniquement mon code contrôle l’affichage pas à pas et la pile des appels en classant le code dans l’une de ces classifications :
+<a name="BKMK_JS_User_and_non_user_code"></a> JavaScript Uniquement mon code contrôle l’affichage pas à pas et la pile des appels en classant le code dans l’une de ces classifications :
 
 |classification ;|Description|
 |-|-|
@@ -220,7 +220,7 @@ Le reste du code est classé comme **MyCode**.
 
 Vous pouvez modifier les classifications par défaut et classer des fichiers et des URL spécifiques en tant que code utilisateur ou non utilisateur, en ajoutant un fichier *. JSON* nommé *mycode.jsdans* le dossier racine d’un projet JavaScript. Consultez [personnaliser les uniquement mon code JavaScript](#BKMK_JS_Customize_Just_My_Code).
 
-<a name="BKMK_JS_Stepping_behavior"></a>Lors du débogage JavaScript :
+<a name="BKMK_JS_Stepping_behavior"></a> Lors du débogage JavaScript :
 
 - Si une fonction est du code non-utilisateur, le **débogage**  >  **pas à pas** détaillé (ou **F11**) se comporte de la même façon que le **débogage**  >  **pas à pas principal** (ou **F10**).
 - Si une étape commence dans du code non-utilisateur (**LibraryCode** ou **UnrelatedCode**), l’exécution pas à pas se comporte temporairement comme si uniquement mon code n’est pas activé. Lorsque vous revenez au code utilisateur, Uniquement mon code pas à pas est réactivé.
@@ -234,7 +234,7 @@ Les points d’arrêt définis dans le code sont toujours atteints, mais le code
 - Si le `debugger` mot clé se trouve dans **LibraryCode**, le débogueur s’arrête toujours.
 - Si le `debugger` mot clé se trouve dans **UnrelatedCode**, le débogueur ne s’arrête pas.
 
-<a name="BKMK_JS_Exception_behavior"></a>Si une exception non gérée se produit dans le code **MyCode** ou **LibraryCode** , le débogueur s’arrête toujours.
+<a name="BKMK_JS_Exception_behavior"></a> Si une exception non gérée se produit dans le code **MyCode** ou **LibraryCode** , le débogueur s’arrête toujours.
 
 Si une exception non gérée se produit dans **UnrelatedCode**, et **MyCode** ou **LibraryCode** se trouve sur la pile des appels, le débogueur s’arrête.
 
@@ -243,7 +243,7 @@ Si les exceptions de première chance sont activées pour l’exception et que l
 - Si l’exception est gérée, le débogueur ne s’arrête pas.
 - Si l'exception n'est pas gérée, le débogueur s'arrête.
 
-### <a name="customize-javascript-just-my-code"></a><a name="BKMK_JS_Customize_Just_My_Code"></a>Personnaliser les Uniquement mon code JavaScript
+### <a name="customize-javascript-just-my-code"></a><a name="BKMK_JS_Customize_Just_My_Code"></a> Personnaliser les Uniquement mon code JavaScript
 
 Pour classer par catégorie le code utilisateur et non-utilisateur pour un seul projet JavaScript, vous pouvez ajouter un fichier *. JSON* nommé *mycode.jsdans* le dossier racine du projet.
 
@@ -281,7 +281,7 @@ Les paires clé-valeur **Eval**, **Function** et **ScriptBlock** déterminent co
 
 |Nom|Description|
 |-|-|
-|**Eval**|un script qui est exécuté en passant une chaîne à la fonction `eval` fournie par l'hôte. Par défaut, le script Eval est classifié comme **MyCode**.|
+|**Évaluation**|un script qui est exécuté en passant une chaîne à la fonction `eval` fournie par l'hôte. Par défaut, le script Eval est classifié comme **MyCode**.|
 |**Fonction**|un script qui est exécuté en passant une chaîne au constructeur `Function`. Par défaut, le script Function est classé comme **LibraryCode**.|
 |**ScriptBlock**|un script qui est exécuté en passant une chaîne aux fonctions `setTimeout`, `setImmediate` ou `setInterval`. Par défaut, le script ScriptBlock est classé comme **UnrelatedCode**.|
 
@@ -301,4 +301,4 @@ Les paires clé-valeur **MyCode**, **Libraries** et **Unrelated** spécifient le
 |**Bibliothèques**|Un tableau d’URL ou de fichiers qui sont classifiés comme **LibraryCode**.|
 |**Unrelated**|Un tableau d’URL ou de fichiers qui sont classés comme **UnrelatedCode**.|
 
-L’URL ou la chaîne de fichier peut avoir un ou plusieurs `*` caractères, qui correspondent à zéro ou plusieurs caractères. `*`est identique à l’expression régulière `.*` .
+L’URL ou la chaîne de fichier peut avoir un ou plusieurs `*` caractères, qui correspondent à zéro ou plusieurs caractères. `*` est identique à l’expression régulière `.*` .
