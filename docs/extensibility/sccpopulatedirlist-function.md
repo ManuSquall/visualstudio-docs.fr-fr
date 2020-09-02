@@ -1,5 +1,5 @@
 ---
-title: Fonction SccPopulateDirList (fr) Microsoft Docs
+title: SccPopulateDirList fonction) | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -13,14 +13,14 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 4ac1c51ac694acadd2efb0cd7d1c5a3f1d66ebc1
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80700557"
 ---
 # <a name="sccpopulatedirlist-function"></a>Fonction SccPopulateDirList
-Cette fonction détermine quels répertoires et fichiers (optionnellement) sont stockés dans le contrôle source, compte tenu d’une liste d’annuaires à examiner.
+Cette fonction détermine quels répertoires et (éventuellement) les fichiers sont stockés dans le contrôle de code source, à partir d’une liste de répertoires à examiner.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -38,30 +38,30 @@ SCCRTN SccPopulateDirList(
 #### <a name="parameters"></a>Paramètres
  pContext
 
-[dans] Le pointeur de contexte de plug-in de contrôle de source.
+dans Pointeur de contexte du plug-in de contrôle de code source.
 
- nDirs (nDirs)
+ nDirs
 
-[dans] Nombre de parcours dans `lpDirPaths` le tableau.
+dans Nombre de chemins d’accès aux répertoires dans le `lpDirPaths` tableau.
 
  lpDirPaths
 
-[dans] Array de parcours à examiner.
+dans Tableau de chemins d’accès aux répertoires à examiner.
 
  pfnPopulate
 
-[dans] Fonction de rappel pour appeler pour chaque chemin d’annuaire `lpDirPaths` et (optionnellement) nom de fichier (voir [POPDIRLISTFUNC](../extensibility/popdirlistfunc.md) pour plus de détails).
+dans Fonction de rappel à appeler pour chaque chemin d’accès de répertoire et (éventuellement) nom de fichier dans `lpDirPaths` (consultez [POPDIRLISTFUNC](../extensibility/popdirlistfunc.md) pour plus d’informations).
 
  pvCallerData
 
-[dans] Valeur qui doit être transmise inchangée à la fonction de rappel.
+dans Valeur qui doit être passée sans modification à la fonction de rappel.
 
  fOptions
 
-[dans] Une combinaison de valeurs qui contrôlent la façon dont les répertoires sont traités (voir la section "Drapeaux PopulateDirList" de [Bitflags utilisé par des commandes spécifiques](../extensibility/bitflags-used-by-specific-commands.md) pour les valeurs possibles).
+dans Combinaison de valeurs qui contrôlent le mode de traitement des répertoires (consultez la section « indicateurs PopulateDirList » de [indicateurs utilisés par des commandes spécifiques](../extensibility/bitflags-used-by-specific-commands.md) pour les valeurs possibles).
 
-## <a name="return-value"></a>Valeur de retour
- La mise en œuvre plug-in de cette fonction de contrôle source devrait renvoyer l’une des valeurs suivantes :
+## <a name="return-value"></a>Valeur renvoyée
+ L’implémentation du plug-in de contrôle de code source de cette fonction est supposée retourner l’une des valeurs suivantes :
 
 |Valeur|Description|
 |-----------|-----------------|
@@ -69,7 +69,7 @@ SCCRTN SccPopulateDirList(
 |SCC_E_UNKNOWNERROR|Une erreur est survenue.|
 
 ## <a name="remarks"></a>Notes
- Seuls les répertoires et les noms de fichiers (optionnellement) qui sont réellement dans le référentiel de contrôle source sont passés à la fonction de rappel.
+ Seuls les répertoires et (éventuellement) les noms de fichiers qui se trouvent dans le référentiel de contrôle de code source sont passés à la fonction de rappel.
 
 ## <a name="see-also"></a>Voir aussi
 - [Fonctions d’API du plug-in de contrôle de code source](../extensibility/source-control-plug-in-api-functions.md)

@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 06f9de6927d616d6cf08995c076246c8a45ec014
-ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85815966"
 ---
 # <a name="how-to-select-the-xml-schemas-to-use"></a>Procédure : sélectionner les schémas XML à utiliser
@@ -40,7 +40,7 @@ Les schémas que vous spécifiez sont enregistrés dans un fichier d’options u
 
    - Sélectionnez un schéma listé dans la boîte de dialogue **schémas XML** , cliquez sur la colonne **utiliser** , puis sélectionnez **utiliser ce schéma**.
 
-     -ou-
+     - ou -
 
    - Sélectionnez plusieurs schémas listés dans la boîte de dialogue **schémas XML** , cliquez avec le bouton droit et sélectionnez **utiliser ce schéma**.
 
@@ -52,7 +52,7 @@ Les schémas que vous spécifiez sont enregistrés dans un fichier d’options u
 
 1. Dans la fenêtre Propriétés du document, cliquez sur le bouton dans le champ **schémas** .
 
-2. Cliquez sur **Ajouter**.
+2. Cliquez sur **Add**.
 
    La boîte de dialogue **ouvrir le schéma XSD** s’ouvre.
 
