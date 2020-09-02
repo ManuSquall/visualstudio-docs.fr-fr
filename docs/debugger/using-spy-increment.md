@@ -1,5 +1,5 @@
 ---
-title: À l’aide de Spy ++ | Microsoft Docs
+title: Utilisation de Spy + + | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,31 +11,31 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 8751aa4bdd80b95406dcc588b469da43f7221a13
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62929908"
 ---
 # <a name="using-spy"></a>Utiliser Spy++
-Spy ++ (SPYXX. (EXE) est un utilitaire basé sur Win32 qui vous donne une vue graphique des processus, threads, windows et messages de fenêtre du système. Cette section de l’aide de Spy ++ inclut les rubriques d’aide suivantes :
+Spy + + (SPYXX.EXE) est un utilitaire Win32 qui vous donne une vue graphique des processus, des threads, des fenêtres et des messages de fenêtre du système. Cette section de l’aide de Spy + + comprend les rubriques d’aide suivantes :
 
 ## <a name="in-this-section"></a>Dans cette section
- [Présentation de Spy ++](../debugger/introducing-spy-increment.md) explique les types d’informations que vous pouvez afficher avec l’outil Spy ++.
+ [Présentation de Spy + +](../debugger/introducing-spy-increment.md) Explique les types d’informations que vous pouvez afficher avec l’outil Spy + +.
 
- [Guide pratique pour Démarrer Spy ++](../debugger/how-to-start-spy-increment.md) explique comment lancer Spy ++ dans le menu Outils.
+ [Comment : Démarrer Spy + +](../debugger/how-to-start-spy-increment.md) Explique comment lancer Spy + + à partir du menu outils.
 
- [Barre d’outils Spy ++](../debugger/spy-increment-toolbar.md) décrit les commandes disponibles dans la barre d’outils Spy ++.
+ [Barre d’outils Spy + +](../debugger/spy-increment-toolbar.md) Décrit les commandes disponibles dans la barre d’outils Spy + +.
 
- [Guide pratique pour Afficher des vues Spy ++](../debugger/how-to-display-spy-increment-views.md) comment afficher la vue de Windows, affichage des Messages, vue processus et la vue Threads.
+ [Comment : afficher les vues Spy + +](../debugger/how-to-display-spy-increment-views.md) Comment afficher la vue fenêtres, la vue messages, la vue processus et la vue threads.
 
- [Guide pratique pour Actualisez l’affichage](../debugger/how-to-refresh-the-view.md) explique la commande Actualiser.
+ [Comment : actualiser la vue](../debugger/how-to-refresh-the-view.md) Explique la commande Actualiser.
 
- [Guide pratique pour Modifier les polices](../debugger/how-to-change-fonts.md) explique comment modifier la façon dont s’affiche.
+ [Comment : modifier les polices](../debugger/how-to-change-fonts.md) Explique comment modifier le mode d’affichage d’une vue.
 
- [Guide pratique pour Développer et réduire les arborescences Spy ++](../debugger/how-to-expand-and-collapse-spy-increment-trees.md) explique comment manipuler une vue.
+ [Comment : développer et réduire des arborescences Spy + +](../debugger/how-to-expand-and-collapse-spy-increment-trees.md) Explique comment manipuler une vue.
 
-## <a name="related-sections"></a>Rubriques connexes
- [Vues Spy ++](../debugger/spy-increment-views.md) explique les arborescences Spy ++ de windows, les messages, les processus et les threads.
+## <a name="related-sections"></a>Sections connexes
+ [Vues Spy + +](../debugger/spy-increment-views.md) Explique les vues de l’arborescence Spy + + des fenêtres, des messages, des processus et des threads.
 
- [Référence Spy ++](../debugger/spy-increment-reference.md) comprend les sections décrivant chaque Spy ++ menu et boîte de dialogue.
+ [Référence Spy + +](../debugger/spy-increment-reference.md) Comprend des sections décrivant chaque menu et boîte de dialogue Spy + +.

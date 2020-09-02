@@ -1,5 +1,5 @@
 ---
-title: Message de boîte de dialogue Options | Microsoft Docs
+title: Boîte de dialogue Options des messages | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -12,35 +12,35 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 97704675e1135959744e60724e4e3381bccf2b30
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62931322"
 ---
 # <a name="message-options-dialog-box"></a>Options des messages, boîte de dialogue
-Utilisez cette boîte de dialogue pour sélectionner les messages sont répertoriés dans [vue Messages](../debugger/messages-view.md). Pour afficher cette boîte de dialogue, choisissez **Messages du journal** à partir de la **Spy** menu.
+Utilisez cette boîte de dialogue pour sélectionner les messages qui sont répertoriés dans la [vue messages](../debugger/messages-view.md). Pour afficher cette boîte de dialogue, choisissez **journaux des messages** dans le menu **Espion** .
 
 ## <a name="in-this-section"></a>Dans cette section
- [Onglet de Windows, la boîte de dialogue Options des messages](../debugger/windows-tab-message-options-dialog-box.md) permet de sélectionner les types de messages à la liste. Inclut l’outil de recherche.
+ [Onglet fenêtres de la boîte de dialogue Options des messages](../debugger/windows-tab-message-options-dialog-box.md) Utilisé pour sélectionner les types de messages à répertorier. Comprend l’outil Finder.
 
- [Onglet, la boîte de dialogue Options des messages messages](../debugger/messages-tab-message-options-dialog-box.md) permet de sélectionner les types de message à afficher.
+ [Onglet messages de la boîte de dialogue Options des messages](../debugger/messages-tab-message-options-dialog-box.md) Utilisé pour sélectionner les types de messages à afficher.
 
- [Onglet, la boîte de dialogue Options des messages de sortie](../debugger/output-tab-message-options-dialog-box.md) permet de spécifier les données de message à afficher.
+ [Onglet sortie de la boîte de dialogue Options des messages](../debugger/output-tab-message-options-dialog-box.md) Utilisé pour spécifier les données de message à afficher.
 
-## <a name="related-sections"></a>Rubriques connexes
- [Boîte de dialogue de recherche du message](../debugger/message-search-dialog-box.md) utilisé pour rechercher le nœud pour un message spécifique dans la vue de Message.
+## <a name="related-sections"></a>Sections connexes
+ [Boîte de dialogue recherche](../debugger/message-search-dialog-box.md) d’un message Utilisé pour rechercher le nœud pour un message spécifique dans la vue message.
 
- [Boîte de dialogue Propriétés du message](../debugger/message-properties-dialog-box.md) utilisé pour afficher les propriétés d’un message sélectionné dans la vue de Message.
+ [Boîte de dialogue Propriétés du message](../debugger/message-properties-dialog-box.md) Permet d’afficher les propriétés d’un message sélectionné dans la vue message.
 
- [Référence Spy ++](../debugger/spy-increment-reference.md) comprend les sections décrivant chaque Spy ++ menu et boîte de dialogue.
+ [Référence Spy + +](../debugger/spy-increment-reference.md) Comprend des sections décrivant chaque menu et boîte de dialogue Spy + +.
 
- [Recherche d’un Message dans la vue Messages](../debugger/how-to-search-for-a-message-in-messages-view.md) explique comment rechercher un message spécifique dans la vue Messages.
+ [Recherche d’un message dans la vue messages](../debugger/how-to-search-for-a-message-in-messages-view.md) Explique comment rechercher un message spécifique dans la vue messages.
 
- [Ouvrir la vue Messages à partir de la fenêtre Rechercher](../debugger/how-to-open-messages-view-from-find-window.md) explique comment ouvrir la vue Messages à partir de la boîte de dialogue Rechercher une fenêtre.
+ [Ouverture de la vue messages à partir de la fenêtre Rechercher](../debugger/how-to-open-messages-view-from-find-window.md) Explique comment ouvrir la vue messages à partir de la boîte de dialogue Rechercher une fenêtre.
 
- [La vue messages](../debugger/messages-view.md) affiche le flux de message associé à une fenêtre, un processus ou un thread.
+ [Vue messages](../debugger/messages-view.md) Affiche le flux de message associé à une fenêtre, un processus ou un thread.
 
- [Vues Spy ++](../debugger/spy-increment-views.md) explique les arborescences Spy ++ de windows, les messages, les processus et les threads.
+ [Vues Spy + +](../debugger/spy-increment-views.md) Explique les vues de l’arborescence Spy + + des fenêtres, des messages, des processus et des threads.
 
- [À l’aide de Spy ++](../debugger/using-spy-increment.md) présente l’outil Spy ++ et explique comment il peut être utilisé.
+ [Utilisation de Spy + +](../debugger/using-spy-increment.md) Présente l’outil Spy + + et explique comment l’utiliser.

@@ -1,5 +1,5 @@
 ---
-title: '&lt;assembly&gt; , élément (déploiement ClickOnce) | Microsoft Docs'
+title: '&lt;assembly &gt; , élément (déploiement ClickOnce) | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -17,14 +17,14 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 3b639a7f95cfb59844fa37963730e22ead450482
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62929077"
 ---
-# <a name="ltassemblygt-element-clickonce-deployment"></a>&lt;assembly&gt; , élément (déploiement ClickOnce)
-Élément de niveau supérieur pour le manifeste de déploiement.
+# <a name="ltassemblygt-element-clickonce-deployment"></a>&lt;assembly &gt; , élément (déploiement ClickOnce)
+Élément de niveau supérieur du manifeste de déploiement.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -36,16 +36,16 @@ ms.locfileid: "62929077"
 ```
 
 ## <a name="elements-and-attributes"></a>Éléments et attributs
- Le `assembly` élément est l’élément racine et est obligatoire. Le premier élément de relation contenant-contenu doit être un `assemblyIdentity` élément. Les éléments du manifeste doivent être dans les espaces de noms suivants : `urn:schemas-microsoft-com:asm.v1`, `urn:schemas-microsoft-com:asm.v2`, et `http://www.w3.org/2000/09/xmldsig#`. Les éléments enfants de l’assembly doivent également être dans ces espaces de noms, par héritage ou par balisage.
+ L' `assembly` élément est l’élément racine et est obligatoire. Son premier élément contenu doit être un `assemblyIdentity` élément. Les éléments de manifeste doivent se trouver dans les espaces de noms suivants : `urn:schemas-microsoft-com:asm.v1` , `urn:schemas-microsoft-com:asm.v2` et `http://www.w3.org/2000/09/xmldsig#` . Les éléments enfants de l’assembly doivent également figurer dans ces espaces de noms, par héritage ou par balisage.
 
  L’élément `assembly` comporte l’attribut suivant.
 
 |Attribut|Description|
 |---------------|-----------------|
-|`manifestVersion`|Obligatoire. Cet attribut doit être défini `1.0`.|
+|`manifestVersion`|Obligatoire. Cet attribut doit avoir la valeur `1.0` .|
 
 ## <a name="example"></a>Exemple
- L’exemple de code suivant illustre un `assembly` élément dans un manifeste de déploiement d’une application déployée à l’aide de [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]. Cet exemple de code fait partie d’un exemple plus complet fourni pour le [du manifeste de déploiement ClickOnce](../deployment/clickonce-deployment-manifest.md) rubrique.
+ L’exemple de code suivant illustre un `assembly` élément dans un manifeste de déploiement pour une application déployée à l’aide de [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] . Cet exemple de code fait partie d’un exemple plus complet fourni pour la rubrique du [manifeste de déploiement ClickOnce](../deployment/clickonce-deployment-manifest.md) .
 
 ```xml
 <asmv1:assembly
@@ -64,4 +64,4 @@ ms.locfileid: "62929077"
 
 ## <a name="see-also"></a>Voir aussi
 - [Manifeste de déploiement ClickOnce](../deployment/clickonce-deployment-manifest.md)
-- [\<assembly > élément](../deployment/assembly-element-clickonce-application.md)
+- [\<assembly> appartient](../deployment/assembly-element-clickonce-application.md)

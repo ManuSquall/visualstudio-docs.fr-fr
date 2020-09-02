@@ -1,5 +1,5 @@
 ---
-title: Déploiement des prérequis pour les Applications 64 bits | Microsoft Docs
+title: Déploiement des composants requis pour les applications 64 bits | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -19,10 +19,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 7c70b58577f8aa6e391215658afb7f8fa43c9bb5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62928890"
 ---
 # <a name="deploy-prerequisites-for-64-bit-applications"></a>Déployer des prérequis pour les applications 64 bits
@@ -42,6 +42,6 @@ Le déploiement ClickOnce prend en charge l'installation des applications sur le
 | Microsoft .NET Framework 4 Client Profile (x86 et x64) | Oui | |
 
 ## <a name="see-also"></a>Voir aussi
-- [Déployer des applications, services et composants](../deployment/deploying-applications-services-and-components.md)
-- [Guide pratique pour Installer les composants requis avec une application ClickOnce](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md)
+- [Déployer des applications, des services et des composants](../deployment/deploying-applications-services-and-components.md)
+- [Guide pratique pour installer les composants requis avec une application ClickOnce](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md)
 - [Applications 64 bits](/dotnet/framework/64-bit-apps)

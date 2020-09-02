@@ -1,5 +1,5 @@
 ---
-title: Boîte de dialogue Propriétés de fenêtre | Microsoft Docs
+title: Boîte de dialogue Propriétés de la fenêtre | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -11,37 +11,37 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: c27f10298f3a5621bc68e31bc2b150663955d6c9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62929211"
 ---
 # <a name="window-properties-dialog-box"></a>boîte de dialogue Propriétés de la fenêtre
-Utilisez cette boîte de dialogue pour en savoir plus sur une fenêtre spécifique. Pour afficher cette boîte de dialogue, déplacez le focus vers le [Windows vue](../debugger/windows-view.md) fenêtre. Sélectionnez n’importe quel nœud de fenêtre dans l’arborescence, puis choisissez **propriétés** à partir de la **vue** menu.
+Utilisez cette boîte de dialogue pour en savoir plus sur une fenêtre spécifique. Pour afficher cette boîte de dialogue, déplacez le focus sur la fenêtre [vue Windows](../debugger/windows-view.md) . Sélectionnez un nœud de fenêtre dans l’arborescence, puis choisissez **Propriétés** dans le menu **affichage** .
 
 ## <a name="in-this-section"></a>Dans cette section
- [Onglet Général. Boîte de dialogue Propriétés de fenêtre](../debugger/general-tab-window-properties-dialog-box.md) affiche des informations sur la fenêtre sélectionnée.
+ [Onglet général de la boîte de dialogue Propriétés de la fenêtre](../debugger/general-tab-window-properties-dialog-box.md) Affiche des informations sur la fenêtre sélectionnée.
 
- [Onglet Styles. Boîte de dialogue Propriétés de fenêtre](../debugger/styles-tab-window-properties-dialog-box.md) montre les styles appliqués à la fenêtre sélectionnée.
+ [Onglet styles de la boîte de dialogue Propriétés de la fenêtre](../debugger/styles-tab-window-properties-dialog-box.md) Affiche les styles appliqués à la fenêtre sélectionnée.
 
- [Onglet Fenêtres. Boîte de dialogue Propriétés de fenêtre](../debugger/windows-tab-window-properties-dialog-box.md) affiche des informations sur les fenêtres liées à la fenêtre sélectionnée.
+ [Onglet fenêtres de la boîte de dialogue Propriétés de la fenêtre](../debugger/windows-tab-window-properties-dialog-box.md) Affiche des informations sur les fenêtres associées à la fenêtre sélectionnée.
 
- [Onglet Classe. Boîte de dialogue Propriétés de fenêtre](../debugger/class-tab-window-properties-dialog-box.md) affiche des informations sur la classe de la fenêtre sélectionnée.
+ [Onglet classe de la boîte de dialogue Propriétés de la fenêtre](../debugger/class-tab-window-properties-dialog-box.md) Affiche des informations sur la classe de la fenêtre sélectionnée.
 
- [Onglet Processus. Boîte de dialogue Propriétés de fenêtre](../debugger/process-tab-window-properties-dialog-box.md) identifie le processus de la fenêtre sélectionnée.
+ [Onglet processus de la boîte de dialogue Propriétés de la fenêtre](../debugger/process-tab-window-properties-dialog-box.md) Identifie le processus de la fenêtre sélectionnée.
 
-## <a name="related-sections"></a>Rubriques connexes
- [Boîte de dialogue de recherche de fenêtre](../debugger/window-search-dialog-box.md) utilisé pour rechercher le nœud pour une fenêtre spécifique dans la vue de Windows.
+## <a name="related-sections"></a>Sections connexes
+ [Boîte de dialogue recherche de fenêtre](../debugger/window-search-dialog-box.md) Utilisé pour rechercher le nœud pour une fenêtre spécifique dans la vue Windows.
 
- [Référence Spy ++](../debugger/spy-increment-reference.md) comprend les sections décrivant chaque Spy ++ menu et boîte de dialogue.
+ [Référence Spy + +](../debugger/spy-increment-reference.md) Comprend des sections décrivant chaque menu et boîte de dialogue Spy + +.
 
- [À l’aide de l’outil recherche](../debugger/how-to-use-the-finder-tool.md) montre comment cet outil analyse windows pour les propriétés ou les messages.
+ [Utilisation de l’outil Finder](../debugger/how-to-use-the-finder-tool.md) Montre comment cet outil analyse les propriétés ou les messages de Windows.
 
- [Recherche d’une fenêtre dans la vue de Windows](../debugger/how-to-search-for-a-window-in-windows-view.md) explique comment rechercher une fenêtre spécifique dans la vue de Windows.
+ [Recherche d’une fenêtre dans la vue fenêtres](../debugger/how-to-search-for-a-window-in-windows-view.md) Explique comment rechercher une fenêtre spécifique dans la vue Windows.
 
- [Affichage de Windows](../debugger/windows-view.md) affiche une arborescence des contrôles et fenêtres disponibles.
+ [Vue Windows](../debugger/windows-view.md) Affiche une arborescence des fenêtres et des contrôles disponibles.
 
- [Vues Spy ++](../debugger/spy-increment-views.md) explique les arborescences Spy ++ de windows, les messages, les processus et les threads.
+ [Vues Spy + +](../debugger/spy-increment-views.md) Explique les vues de l’arborescence Spy + + des fenêtres, des messages, des processus et des threads.
 
- [À l’aide de Spy ++](../debugger/using-spy-increment.md) présente l’outil Spy ++ et explique comment il peut être utilisé.
+ [Utilisation de Spy + +](../debugger/using-spy-increment.md) Présente l’outil Spy + + et explique comment l’utiliser.

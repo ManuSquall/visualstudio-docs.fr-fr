@@ -1,5 +1,5 @@
 ---
-title: Espion de commandes de Menu | Microsoft Docs
+title: Commandes du menu Spy | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,23 +11,23 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 036a99fc0f25f2302c82d043fa20cf6e35687668
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62929754"
 ---
 # <a name="spy-menu-commands"></a>commandes du menu Spy
-Le **Spy** menu fournit des commandes pour travailler avec Spy ++ Windows et des vues.
+Le menu **Spy** fournit des commandes pour travailler avec les fenêtres et les vues Spy + +.
 
- **Windows** ouvre un nouvel affichage de Windows.
+ **Windows** Ouvre une nouvelle vue Windows.
 
- **Processus** ouvre une nouvelle vue de processus.
+ **Processus** Ouvre une nouvelle vue processus.
 
- **Threads** ouvre une nouvelle vue Threads.
+ **Threads** Ouvre une nouvelle vue threads.
 
- **Enregistrer les Messages** ouvre un nouvel affichage de Messages et ouvre le [la boîte de dialogue Options des messages](../debugger/message-options-dialog-box.md) pour la vue.
+ **Messages du journal** Ouvre une nouvelle vue messages et ouvre la [boîte de dialogue Options des messages](../debugger/message-options-dialog-box.md) pour la vue.
 
- **Rechercher une fenêtre** affiche le **FindWindow** boîte de dialogue pour sélectionner une fenêtre avec la souris.
+ **Rechercher une fenêtre** Affiche la boîte de dialogue **FindWindow** pour sélectionner une fenêtre à l’aide de la souris.
 
- **Sortie** ferme l’utilitaire Spy ++.
+ **Quitter** Ferme l’utilitaire Spy + +.

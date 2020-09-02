@@ -1,5 +1,5 @@
 ---
-title: '&lt;assemblyIdentity&gt; , élément (déploiement ClickOnce) | Microsoft Docs'
+title: '&lt;assemblyIdentity &gt; , élément (déploiement ClickOnce) | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -17,14 +17,14 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 56525cc0c0c754a7fa3a1f4c2c5b6cf2e941e9b0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62929065"
 ---
-# <a name="ltassemblyidentitygt-element-clickonce-deployment"></a>&lt;assemblyIdentity&gt; , élément (déploiement ClickOnce)
-Identifie l’assembly principal de le [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] application.
+# <a name="ltassemblyidentitygt-element-clickonce-deployment"></a>&lt;assemblyIdentity &gt; , élément (déploiement ClickOnce)
+Identifie l’assembly principal de l' [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] application.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -40,20 +40,20 @@ Identifie l’assembly principal de le [!INCLUDE[ndptecclick](../deployment/incl
 ```
 
 ## <a name="elements-and-attributes"></a>Éléments et attributs
- Le `assemblyIdentity` élément est requis. Il ne contient aucun élément enfant et a les attributs suivants.
+ L’élément `assemblyIdentity` est obligatoire. Il ne contient pas d’éléments enfants et a les attributs suivants.
 
 |Attribut|Description|
 |---------------|-----------------|
-|`name`|Obligatoire. Identifie le nom explicite du déploiement à titre d’information.<br /><br /> Si `name` contient des caractères spéciaux, tels que des guillemets simples ou doubles, l’application peut échouer à activer.|
-|`version`|Obligatoire. Spécifie le numéro de version de l’assembly, au format suivant : `major.minor.build.revision`.<br /><br /> Cette valeur doit être incrémentée dans un manifeste mis à jour pour déclencher une mise à jour de l’application.|
-|`publicKeyToken`|Obligatoire. Spécifie une chaîne hexadécimale de 16 caractères qui représente les 8 derniers octets de la valeur de hachage SHA-1 de la clé publique sous laquelle le manifeste de déploiement est signé. La clé publique qui est utilisée pour signer doit être de 2 048 bits ou supérieur.<br /><br /> Bien que la signature d’un assembly est recommandé mais facultatif, cet attribut est requis. Si un assembly n’est pas signé, vous devez copier une valeur à partir d’un assembly auto-signé ou utiliser une valeur « factice » de tous les zéros non significatifs.|
-|`processorArchitecture`|Obligatoire. Spécifie le processeur. Les valeurs valides sont `msil` pour tous les processeurs, `x86` pour Windows 32 bits, `IA64` pour Windows 64 bits, et `Itanium` pour les processeurs Itanium d’Intel 64 bits.|
-|`type`|Obligatoire. Pour assurer la compatibilité avec la technologie d’installation de côte à côte de Windows. La seule valeur autorisée est `win32`.|
+|`name`|Obligatoire. Identifie le nom explicite du déploiement à des fins d’information.<br /><br /> Si `name` contient des caractères spéciaux, tels que des guillemets simples ou doubles, l’activation de l’application peut échouer.|
+|`version`|Obligatoire. Spécifie le numéro de version de l’assembly au format suivant : `major.minor.build.revision` .<br /><br /> Cette valeur doit être incrémentée dans un manifeste mis à jour pour déclencher une mise à jour d’application.|
+|`publicKeyToken`|Obligatoire. Spécifie une chaîne hexadécimale de 16 caractères qui représente les 8 derniers octets de la valeur de hachage SHA-1 de la clé publique sous laquelle le manifeste de déploiement est signé. La clé publique utilisée pour signer doit être supérieure ou égale à 2048 bits.<br /><br /> Bien que la signature d’un assembly soit recommandée mais facultative, cet attribut est obligatoire. Si un assembly n’est pas signé, vous devez copier une valeur d’un assembly auto-signé ou utiliser une valeur « factice » de zéros.|
+|`processorArchitecture`|Obligatoire. Spécifie le processeur. Les valeurs valides sont `msil` pour tous les processeurs, `x86` pour Windows 32 bits, `IA64` pour Windows 64 bits et `Itanium` pour les processeurs Itanium Intel 64 bits.|
+|`type`|Obligatoire. Pour la compatibilité avec la technologie d’installation côte à côte de Windows. La seule valeur autorisée est `win32` .|
 
 ## <a name="remarks"></a>Notes
 
 ## <a name="example"></a>Exemple
- L’exemple de code suivant illustre un `assemblyIdentity` élément dans un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifeste de déploiement. Cet exemple de code fait partie d’un exemple plus complet fourni pour le [manifeste de déploiement ClickOnce](../deployment/clickonce-deployment-manifest.md) rubrique.
+ L’exemple de code suivant illustre un `assemblyIdentity` élément dans un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifeste de déploiement. Cet exemple de code fait partie d’un exemple plus complet fourni pour la rubrique du [manifeste de déploiement ClickOnce](../deployment/clickonce-deployment-manifest.md) .
 
 ```xml
 <!-- Identify the deployment. -->
@@ -68,4 +68,4 @@ Identifie l’assembly principal de le [!INCLUDE[ndptecclick](../deployment/incl
 
 ## <a name="see-also"></a>Voir aussi
 - [Manifeste de déploiement ClickOnce](../deployment/clickonce-deployment-manifest.md)
-- [\<assemblyIdentity>, élément](../deployment/assemblyidentity-element-clickonce-application.md)
+- [\<assemblyIdentity> appartient](../deployment/assemblyidentity-element-clickonce-application.md)
