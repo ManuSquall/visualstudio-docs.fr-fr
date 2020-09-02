@@ -10,10 +10,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: f5af6b366a1181187c23327449ade8e03e30107f
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74778061"
 ---
 # <a name="use-performance-rules-to-analyze-data"></a>Utiliser des règles de performance pour analyser des données
@@ -27,7 +27,7 @@ Les avertissements de performances des outils de profilage de [!INCLUDE[vsprvs](
 
  Fournit des informations sur la façon d’ouvrir la fenêtre **Liste d’erreurs** pour afficher les avertissements de performances du profileur.
 
-- [Comment : Configurer les règles de performance](../profiling/how-to-configure-performance-rules.md)
+- [Comment : configurer des règles de performance](../profiling/how-to-configure-performance-rules.md)
 
  Fournit des informations sur la façon d’activer ou de désactiver les avertissements de performances individuels.
 

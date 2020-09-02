@@ -1,5 +1,5 @@
 ---
-title: 'Procédure : Publier un projet qui a des paramètres régionaux spécifique | Microsoft Docs'
+title: 'Comment : publier un projet qui a des paramètres régionaux spécifiques | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-deployment
@@ -22,25 +22,25 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 42fc6e45e0e32e9b165251c7ec61d3d67b924e1c
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65697603"
 ---
-# <a name="how-to-publish-a-project-that-has-a-specific-locale"></a>Procédure : Publier un projet qui a des paramètres régionaux spécifiques
+# <a name="how-to-publish-a-project-that-has-a-specific-locale"></a>Comment : publier un projet qui a des paramètres régionaux spécifiques
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Une application peut contenir des composants ayant des paramètres régionaux différents. Dans ce scénario, vous devez créer une solution avec plusieurs projets, puis publier des projets distincts pour chacun des paramètres régionaux. Cette procédure montre comment utiliser une macro pour publier le premier projet dans une solution avec les paramètres régionaux « en ». Si vous souhaitez essayer cette procédure avec d'autres paramètres régionaux, veillez à définir `localeString` dans la macro pour que sa valeur corresponde aux paramètres régionaux que vous utilisez (par exemple, « fr » ou « fr-FR »).  
   
 > [!NOTE]
-> Quand vous utilisez cette macro, l'emplacement de publication doit être une URL ou un partage UNC (Universal Naming Convention) valide. De plus, les services IIS (Internet Information Services) doivent être installés sur votre ordinateur. Pour installer IIS, dans le menu **Démarrer**, cliquez sur **Panneau de configuration**. Double-cliquez sur **Ajouter ou supprimer des programmes**. Dans **Ajouter ou supprimer des programmes**, cliquez sur **Ajouter ou supprimer des composants Windows**. Dans l’**Assistant Composants Windows**, cochez la case **Gestionnaire des services Internet (IIS)** dans la liste **Composants**. Cliquez ensuite sur **Terminer** pour fermer l’Assistant.  
+> Quand vous utilisez cette macro, l'emplacement de publication doit être une URL ou un partage UNC (Universal Naming Convention) valide. De plus, les services IIS (Internet Information Services) doivent être installés sur votre ordinateur. Pour installer IIS, dans le menu **Démarrer**, cliquez sur **Panneau de configuration**. Double-cliquez sur **Ajouter ou supprimer des programmes**. Dans **Ajouter ou supprimer des programmes**, cliquez sur **Ajouter ou supprimer des composants Windows**. Dans l’**Assistant Composants Windows**, cochez la case **Gestionnaire des services Internet (IIS)** dans la liste **Composants**. Cliquez ensuite sur **Terminer** pour fermer l'Assistant.  
   
 ### <a name="to-create-the-publishing-macro"></a>Pour créer la macro de publication  
   
 1. Pour ouvrir l’Explorateur de macros, dans le menu **Outils**, pointez sur **Macros**, puis cliquez sur **Explorateur de macros**.  
   
-2. Créez un module de macro. Dans l’Explorateur de macros, sélectionnez **MyMacros**. Sur le **outils** menu, pointez sur **Macros**, puis cliquez sur **nouveau Module de Macro**. Nommez le module **PublishSpecificCulture**.  
+2. Créez un module de macro. Dans l’Explorateur de macros, sélectionnez **MyMacros**. Dans le menu **Outils** , pointez sur **macros**, puis cliquez sur **nouveau module macro**. Nommez le module **PublishSpecificCulture**.  
   
 3. Dans l’Explorateur de macros, développez le nœud **MyMacros**, puis ouvrez le module **PublishAllProjects** en double-cliquant dessus (ou, dans le menu **Outils**, pointez sur **Macros**, puis cliquez sur **Éditeur de macros**).  
   
@@ -152,11 +152,11 @@ Une application peut contenir des composants ayant des paramètres régionaux di
   
 4. Publiez PublishLocales à l'aide de l'IDE de Visual Studio.  
   
-     Dans **l’Explorateur de solutions**, sélectionnez PublishLocales. Dans le menu **Projet**, sélectionnez **Propriétés**. Dans le Concepteur de projets, sur le **publier** , spécifiez un emplacement de publication de **http://localhost/PublishLocales**, puis cliquez sur **publier maintenant**.  
+     Dans **Explorateur de solutions**, sélectionnez PublishLocales. Dans le menu **Projet**, sélectionnez **Propriétés**. Dans le concepteur de projet, sur la page **publier** , spécifiez un emplacement de publication **http://localhost/PublishLocales** , puis cliquez sur **publier maintenant**.  
   
      Quand la page web de publication apparaît, fermez-la. (Pour cette étape, vous devez uniquement publier le projet, sans l'installer.)  
   
-5. Publiez à nouveau PublishLocales en appelant la macro dans la fenêtre d'invite de commandes Visual Studio. Pour afficher la fenêtre d’invite de commandes, sur le **vue** menu, pointez sur **Windows autres** puis cliquez sur **fenêtre de commande**, ou appuyez sur CTRL + ALT + A. Dans la fenêtre d’invite de commandes, tapez `macros`; saisie semi-automatique fournit une liste des macros disponibles. Sélectionnez la macro suivante et appuyez sur ENTRÉE :  
+5. Publiez à nouveau PublishLocales en appelant la macro dans la fenêtre d'invite de commandes Visual Studio. Pour afficher la fenêtre d’invite de commandes, dans le menu **affichage** , pointez sur **autres fenêtres** , puis cliquez sur **fenêtre commande**, ou appuyez sur Ctrl + Alt + A. Dans la fenêtre d’invite de commandes, tapez `macros` ; la saisie semi-automatique fournit la liste des macros disponibles. Sélectionnez la macro suivante et appuyez sur ENTRÉE :  
   
      `Macros.MyMacros.PublishSpecificCulture.PublishProjectFirstProjectWithEnLocale`  
   
@@ -168,4 +168,4 @@ Une application peut contenir des composants ayant des paramètres régionaux di
  [Publication d’applications ClickOnce](../deployment/publishing-clickonce-applications.md)   
  [Environnement de développement des macros](https://msdn.microsoft.com/d23105d8-34fe-4ad9-8278-fae2c660aeac)   
  [Fenêtre Explorateur de macros](https://msdn.microsoft.com/762169e6-f83f-44b4-bffa-d0f107cae9a3)   
- [Guide pratique pour Modifier et créer des Macros par programmation](https://msdn.microsoft.com/6716f820-1feb-48ad-a718-27eb6b473c5a)
+ [Comment : modifier et créer des macros par programmation](https://msdn.microsoft.com/6716f820-1feb-48ad-a718-27eb6b473c5a)

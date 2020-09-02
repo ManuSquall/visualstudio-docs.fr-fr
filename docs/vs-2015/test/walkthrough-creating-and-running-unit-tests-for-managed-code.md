@@ -15,20 +15,20 @@ caps.latest.revision: 85
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 631a180789f5fff373799b78222c25a50ab32912
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72657100"
 ---
 # <a name="walkthrough-creating-and-running-unit-tests-for-managed-code"></a>Procédure pas à pas : création et exécution de tests unitaires pour le code managé
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Cette procédure pas à pas décrit la création, l’exécution et la personnalisation d’une série de tests unitaires à l’aide du framework de tests unitaires Microsoft pour le code managé et de l’explorateur de tests de Visual Studio. Vous commencez avec un projet C# qui est en développement, vous créez des tests qui utilisent son code, vous exécutez les tests et vous examinez les résultats. Ensuite, vous pouvez modifier le code de votre projet et réexécuter les tests.
+Cette procédure pas à pas décrit la création, l’exécution et la personnalisation d’une série de tests unitaires à l’aide de l’infrastructure de tests unitaires Microsoft pour le code managé et de l’explorateur de tests de Visual Studio. Vous commencez avec un projet C# qui est en développement, vous créez des tests qui utilisent son code, vous exécutez les tests et vous examinez les résultats. Ensuite, vous pouvez modifier le code de votre projet et réexécuter les tests.
 
  Cette rubrique contient les sections suivantes :
 
- [Préparation de la procédure pas à pas](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md#BKMK_Prepare_the_walkthrough)
+ [Préparer la procédure pas à pas](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md#BKMK_Prepare_the_walkthrough)
 
  [Créer un projet de test unitaire](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md#BKMK_Create_a_unit_test_project)
 
@@ -42,29 +42,29 @@ Cette procédure pas à pas décrit la création, l’exécution et la personnal
 
   [Générer et exécuter le test](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md#BKMK_Build_and_run_the_test)
 
-  [Vérifier votre code et exécuter à nouveau vos tests](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md#BKMK_Fix_your_code_and_rerun_your_tests)
+  [Corriger votre code et réexécuter vos tests](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md#BKMK_Fix_your_code_and_rerun_your_tests)
 
-  [Utiliser les tests unitaires pour améliorer votre code](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md#BKMK_Use_unit_tests_to_improve_your_code)
+  [Utiliser des tests unitaires pour améliorer votre code](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md#BKMK_Use_unit_tests_to_improve_your_code)
 
 > [!NOTE]
-> Cette procédure pas à pas utilise le framework de tests unitaires Microsoft pour le code managé. L’explorateur de tests peut également exécuter des tests depuis des frameworks de tests unitaires tiers qui ont des adaptateurs pour l’explorateur de tests. Pour plus d’informations, consultez [Installer des frameworks de tests unitaires tiers](../test/install-third-party-unit-test-frameworks.md)
+> Cette procédure pas à pas utilise le framework de tests unitaires Microsoft pour le code managé. L’explorateur de tests peut également exécuter des tests depuis des frameworks de tests unitaires tiers qui ont des adaptateurs pour l’explorateur de tests. Pour plus d’informations, consultez [installer des frameworks de tests unitaires tiers](../test/install-third-party-unit-test-frameworks.md)
 
 > [!NOTE]
 > Pour plus d’informations sur la façon d’exécuter des tests à partir d’une ligne de commande, consultez [Procédure pas à pas : utilisation de l’utilitaire de test de ligne de commande](https://msdn.microsoft.com/library/52c11992-9e94-4067-a4b7-59f19d69d867).
 
-## <a name="prerequisites"></a>Configuration requise
+## <a name="prerequisites"></a>Prérequis
 
 - Le projet Bank. Consultez [Exemple de projet pour la création de tests unitaires](../test/sample-project-for-creating-unit-tests.md).
 
-## <a name="BKMK_Prepare_the_walkthrough"></a> Préparer la procédure pas à pas
+## <a name="prepare-the-walkthrough"></a><a name="BKMK_Prepare_the_walkthrough"></a> Préparation de la procédure pas à pas
 
 1. Ouvrez Visual Studio.
 
-2. Dans le menu **Fichier** , pointez sur **Nouveau** , puis cliquez sur **Projet**.
+2. Dans le menu **fichier** , pointez sur **nouveau** , puis cliquez sur **projet**.
 
-    La boîte de dialogue **Nouveau projet** s’affiche.
+    La boîte de dialogue **Nouveau projet** apparaît.
 
-3. Sous **Modèles installés**, cliquez sur **Visual C#** .
+3. Sous **Modèles installés**, cliquez sur **Visual C#**.
 
 4. Dans la liste de types d’applications, cliquez sur **Bibliothèque de classes**.
 
@@ -84,7 +84,7 @@ Cette procédure pas à pas décrit la création, l’exécution et la personnal
 
 8. Enregistrez le fichier avec le nom BankAccount.cs
 
-9. Dans le menu **Générer** , cliquez sur **Générer la solution**.
+9. Dans le menu **Générer**, cliquez sur **Générer la solution**.
 
    Vous avez maintenant un projet nommé Bank. Il contient le code source à tester et des outils avec lesquels le tester. L’espace de noms pour Bank, **BankAccountNS**, contient la classe publique **BankAccount**, dont vous testerez les méthodes dans les procédures suivantes.
 
@@ -107,14 +107,14 @@ public void Debit(double amount)
 
 ```
 
-## <a name="BKMK_Create_a_unit_test_project"></a> Créer un projet de test unitaire
+## <a name="create-a-unit-test-project"></a><a name="BKMK_Create_a_unit_test_project"></a> Créer un projet de test unitaire
  **Condition préalable**: suivez les étapes de la procédure [Prepare the walkthrough](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md#BKMK_Prepare_the_walkthrough).
 
 #### <a name="to-create-a-unit-test-project"></a>Pour créer un projet de test unitaire
 
-1. Dans le menu **Fichier** , choisissez **Ajouter**, puis **Nouveau projet...** .
+1. Dans le menu **Fichier** , choisissez **Ajouter**, puis **Nouveau projet...**.
 
-2. Dans la boîte de dialogue Nouveau Projet, développez **Installé**, développez **Visual C#** , puis choisissez **Test**.
+2. Dans la boîte de dialogue Nouveau Projet, développez **Installé**, développez **Visual C#**, puis choisissez **Test**.
 
 3. Dans la liste des modèles, sélectionnez **Projet de test unitaire**.
 
@@ -128,7 +128,7 @@ public void Debit(double amount)
 
 6. Dans la boîte de dialogue Gestionnaire de références, développez **Solution** puis cochez l’élément **Bank** .
 
-## <a name="BKMK_Create_the_test_class"></a> Créer la classe de test
+## <a name="create-the-test-class"></a><a name="BKMK_Create_the_test_class"></a> Créer la classe de test
  Nous avons besoin d’une classe de test pour vérifier la classe `BankAccount` . Nous pouvons utiliser UnitTest1.cs qui a été généré par le modèle de projet, mais nous devons donner au fichier et à la classe des noms plus descriptifs. Nous pouvons effectuer cela en une seule étape en renommant le fichier dans l’Explorateur de solutions.
 
  **Changement du nom d’un fichier de classe**
@@ -163,7 +163,7 @@ namespace BankTests
 using BankAccountNS;
 ```
 
-### <a name="BKMK_Test_class_requirements"></a> Spécifications de la classe de test
+### <a name="test-class-requirements"></a><a name="BKMK_Test_class_requirements"></a> Spécifications de la classe de test
  La configuration minimale requise pour une classe de test est la suivante :
 
 - L’attribut `[TestClass]` est requis dans le framework de tests unitaires Microsoft pour le code managé pour toute classe qui contient les méthodes de test unitaire à exécuter dans l’explorateur de tests.
@@ -172,7 +172,7 @@ using BankAccountNS;
 
   Vous pouvez avoir d’autres classes dans un projet de test unitaire qui n’ont pas l’attribut `[TestClass]` , et vous pouvez avoir d’autres méthodes dans les classes de test qui n’ont pas l’attribut `[TestMethod]` . Vous pouvez utiliser ces autres classes et méthodes dans vos méthodes de test.
 
-## <a name="BKMK_Create_the_first_test_method"></a> Créer la première méthode de test
+## <a name="create-the-first-test-method"></a><a name="BKMK_Create_the_first_test_method"></a> Créer la première méthode de test
  Dans cette procédure, nous écrirons des méthodes de test unitaire pour vérifier le comportement de la méthode `Debit` de la classe `BankAccount` . La méthode est répertoriée ci-dessus.
 
  En analysant la méthode testée, nous déterminons qu’il existe au moins trois comportements qui doivent être vérifiés :
@@ -213,7 +213,7 @@ using BankAccountNS;
 
    La méthode est plutôt simple. Nous mettons en place un nouvel objet `BankAccount` avec un solde de début, puis nous retirons un montant valide. Nous utilisons la méthode du framework de tests unitaires Microsoft pour le code managé <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.AreEqual%2A> pour vérifier que le solde de fin correspond à ce que nous attendions.
 
-### <a name="BKMK_Test_method_requirements"></a> Exigences des méthodes de test
+### <a name="test-method-requirements"></a><a name="BKMK_Test_method_requirements"></a> Spécifications des méthodes de test
  Une méthode de test doit répondre aux spécifications suivantes :
 
 - La méthode doit être décorée avec l’attribut `[TestMethod]` .
@@ -222,7 +222,7 @@ using BankAccountNS;
 
 - La méthode ne peut pas avoir de paramètres.
 
-## <a name="BKMK_Build_and_run_the_test"></a> Générer et exécuter le test
+## <a name="build-and-run-the-test"></a><a name="BKMK_Build_and_run_the_test"></a> Générer et exécuter le test
 
 #### <a name="to-build-and-run-the-test"></a>Pour générer et exécuter le test
 
@@ -234,10 +234,10 @@ using BankAccountNS;
 
 3. Dans ce cas, le test échoue. La méthode de test est déplacée vers le groupe **Échecs de tests** . Sélectionnez la méthode dans l’explorateur de tests pour en afficher les détails en bas de la fenêtre.
 
-## <a name="BKMK_Fix_your_code_and_rerun_your_tests"></a> Vérifier votre code et exécuter à nouveau vos tests
+## <a name="fix-your-code-and-rerun-your-tests"></a><a name="BKMK_Fix_your_code_and_rerun_your_tests"></a> Vérifier votre code et exécuter à nouveau vos tests
  **Analyser les résultats des tests**
 
- Le résultat de test contient un message qui décrit l’échec. Pour la méthode `AreEquals`, un message affiche ce qui était attendu (le paramètre <strong>Expected\<*XXX*></strong>) et ce qui a été reçu réellement (le paramètre **Actual\<*YYY*>** ). Nous nous attendions à ce que le solde décline par rapport au solde de début, mais il a plutôt augmenté du montant du retrait.
+ Le résultat de test contient un message qui décrit l’échec. Pour la `AreEquals` méthode, le message affiche ce qui était attendu (le<strong>paramètre \<*XXX*> attendu</strong>) et ce qui a été reçu réellement (le paramètre **réel \<*YYY*> ** ). Nous nous attendions à ce que le solde décline par rapport au solde de début, mais il a plutôt augmenté du montant du retrait.
 
  Un réexamen du code Debit indique que le test unitaire a réussi à trouver un bogue. Le montant du retrait est ajouté au solde du compte quand il doit être soustrait.
 
@@ -259,7 +259,7 @@ m_balance -= amount;
 
  Dans l’explorateur de tests, choisissez **Exécuter tout** pour réexécuter le test. La barre rouge/verte devient verte, et le test est déplacé vers le groupe **Tests réussis** .
 
-## <a name="BKMK_Use_unit_tests_to_improve_your_code"></a> Utiliser les tests unitaires pour améliorer votre code
+## <a name="use-unit-tests-to-improve-your-code"></a><a name="BKMK_Use_unit_tests_to_improve_your_code"></a> Utiliser les tests unitaires pour améliorer votre code
  Cette section décrit comment un processus itératif d’analyse, de développement de test unitaire et de refactorisation peut vous aider à rendre votre code de production plus fiable et efficace.
 
  **Analyser les problèmes**

@@ -19,9 +19,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 9c2703bfdd4f47281a1fc19060cb69f8b312e7d2
-ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86017020"
 ---
 # <a name="import-items-from-an-existing-sharepoint-site"></a>Importer des éléments à partir d’un site SharePoint existant
@@ -90,7 +91,7 @@ ms.locfileid: "86017020"
 
  Par exemple, si vous importez la définition de liste ExpenseForms, une définition de liste portant ce nom apparaît sous le dossier **définitions de liste** dans **Explorateur de solutions** , ainsi que ses fichiers de *Elements.xml* et de *Schema.xml* . Toutefois, ses formulaires ASPX et HTML associés peuvent être placés dans un dossier nommé **ExpenseForms** sous le dossier **Autres fichiers importés** . Pour terminer l’importation, déplacez ces fichiers sous la définition de liste ExpenseForms dans l’ **Explorateur de solutions** et modifiez la propriété **DeploymentType** de chaque fichier de **NoDeployment** en **ElementFile**.
 
- Lorsque vous importez des récepteurs d’événements, le fichier *Elements.xml* est copié à l’emplacement correct, mais vous devez inclure manuellement l’assembly dans le package de solution pour qu’il soit déployé avec la solution. [!INCLUDE[crabout](../sharepoint/includes/crabout-md.md)]pour ce faire, consultez [Comment : ajouter et supprimer des assemblys supplémentaires](../sharepoint/how-to-add-and-remove-additional-assemblies.md).
+ Lorsque vous importez des récepteurs d’événements, le fichier *Elements.xml* est copié à l’emplacement correct, mais vous devez inclure manuellement l’assembly dans le package de solution pour qu’il soit déployé avec la solution. [!INCLUDE[crabout](../sharepoint/includes/crabout-md.md)] pour ce faire, consultez [Comment : ajouter et supprimer des assemblys supplémentaires](../sharepoint/how-to-add-and-remove-additional-assemblies.md).
 
  Quand vous importez des flux de travail, les formulaires InfoPath sont copiés dans le dossier **Autres fichiers importés** . Si le fichier *. wsp* contient un modèle Web, il est défini comme page de démarrage dans **Explorateur de solutions**.
 

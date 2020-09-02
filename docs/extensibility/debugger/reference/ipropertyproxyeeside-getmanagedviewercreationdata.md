@@ -1,5 +1,5 @@
 ---
-title: IPropertyProxyEESide::GetManagedViewerCreationData (fr) Microsoft Docs
+title: 'IPropertyProxyEESide :: GetManagedViewerCreationData | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 2e72922b348c8744f10037e199e93f735ff4be8e
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80714962"
 ---
 # <a name="ipropertyproxyeesidegetmanagedviewercreationdata"></a>IPropertyProxyEESide::GetManagedViewerCreationData
-Récupère des informations sur le spectateur pour ce type de propriété afin d’instantanéer ce spectateur.
+Récupère des informations sur la visionneuse pour ce type de propriété afin d’instancier cette visionneuse.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -51,28 +51,28 @@ int GetManagedViewerCreationData(
 
 ## <a name="parameters"></a>Paramètres
 `assemName`\
-[out] Retourne le nom de l’assemblage contenant cet objet.
+à Retourne le nom de l’assembly contenant cet objet.
 
 `assemBytes`\
-[out] Renvoie un objet [IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md) contenant les octets d’assemblage de cet objet (il s’agit d’une valeur nulle si aucun octet n’est disponible).
+à Retourne un objet [IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md) contenant les octets de l’assembly de cet objet (il s’agit d’une valeur null si aucun octet n’est disponible).
 
 `assemPdb`\
-[out] Renvoie `IEEDataStorage` un objet contenant les informations de magasin de symboles pour cet objet (il s’agit d’une valeur nulle si aucun magasin de symbole n’est disponible).
+à Retourne un `IEEDataStorage` objet contenant les informations du magasin de symboles pour cet objet (il s’agit d’une valeur null si aucun magasin de symboles n’est disponible).
 
 `className`\
-[out] Retourne le nom de classe contenant cet objet.
+à Retourne le nom de la classe contenant cet objet.
 
 `alr`\
-[out] Retourne une valeur du recensement [ASSEMBLYLOCRESOLUTION](../../../extensibility/debugger/reference/assemblylocresolution.md) indiquant l’emplacement de l’assemblage.
+à Retourne une valeur de l’énumération [ASSEMBLYLOCRESOLUTION](../../../extensibility/debugger/reference/assemblylocresolution.md) indiquant l’emplacement de l’assembly.
 
 `replacementOk`\
-[out] Retourne nonzero`TRUE`( ) si la valeur de cet objet peut être changée ; zéro`FALSE`( ) si l’objet est lu seulement.
+à Retourne une valeur différente `TRUE` de zéro () si la valeur de cet objet peut être modifiée ; zéro ( `FALSE` ) si l’objet est en lecture seule.
 
-## <a name="return-value"></a>Valeur de retour
+## <a name="return-value"></a>Valeur renvoyée
  En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
 ## <a name="remarks"></a>Notes
- Cette méthode est utilisée par des visualisateurs de type pour instantanéiser un spectateur géré.
+ Cette méthode est utilisée par les visualiseurs de type pour instancier une visionneuse managée.
 
 ## <a name="see-also"></a>Voir aussi
 - [IPropertyProxyEESide](../../../extensibility/debugger/reference/ipropertyproxyeeside.md)

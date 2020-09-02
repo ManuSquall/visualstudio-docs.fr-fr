@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 094c095b5d9e25ebe4a12f8f44b1e13555b0c249
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/12/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65698220"
 ---
-# <a name="idiasymbolgetnoreturn"></a>IDiaSymbol::get_noReturn
+# <a name="idiasymbolget_noreturn"></a>IDiaSymbol::get_noReturn
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Récupère un indicateur qui spécifie si la fonction a été marquée comme retournant jamais avec les [noreturn](https://msdn.microsoft.com/library/9c6517e5-22d7-4051-9974-3d2200ae4d1d) attribut.  
+Récupère un indicateur qui spécifie si la fonction a été marquée comme ne retournant jamais avec l’attribut [noreturn](https://msdn.microsoft.com/library/9c6517e5-22d7-4051-9974-3d2200ae4d1d) .  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -35,20 +35,20 @@ HRESULT get_noReturn(
   
 #### <a name="parameters"></a>Paramètres  
  pFlag  
- [out] Retourne `TRUE` si la fonction a été déclarée comme retournant jamais avec les `noreturn` attribut ; sinon, retourne `FALSE`.  
+ à Retourne `TRUE` si la fonction a été déclarée comme ne retournant jamais avec l' `noreturn` attribut ; sinon, retourne `FALSE` .  
   
-## <a name="return-value"></a>Valeur de retour  
- En cas de réussite, retourne `S_OK`; sinon, retourne `S_FALSE` ou un code d’erreur.  
+## <a name="return-value"></a>Valeur renvoyée  
+ En cas de réussite, retourne `S_OK` ; sinon, retourne `S_FALSE` ou un code d’erreur.  
   
 > [!NOTE]
-> La valeur de retour `S_FALSE` signifie que la propriété n’est pas disponible pour le symbole.  
+> Une valeur de retour `S_FALSE` signifie que la propriété n’est pas disponible pour le symbole.  
   
 ## <a name="requirements"></a>Configuration requise  
   
-|Prérequis|Description|  
+|Condition requise|Description|  
 |-----------------|-----------------|  
 |En-tête :|dia2.h|  
-|Version :|DIA SDK 8.0|  
+|Version :|DIA SDK v 8.0|  
   
 ## <a name="see-also"></a>Voir aussi  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   

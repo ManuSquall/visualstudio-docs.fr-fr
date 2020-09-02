@@ -18,10 +18,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 673cc3d9b936131e6423a015af5c78486846fbe7
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75847705"
 ---
 # <a name="trusted-application-deployment-overview"></a>Trusted Application Deployment Overview
@@ -39,7 +39,7 @@ Cette rubrique offre une vue d’ensemble du déploiement d’applications [!INC
   
 |Objet ou rôle|Description|  
 |--------------------|-----------------|  
-|Administrateur de|Entité organisationnelle responsable de la mise à jour et la maintenance des ordinateurs client|  
+|administrator|Entité organisationnelle responsable de la mise à jour et la maintenance des ordinateurs client|  
 |gestionnaire de confiance|Sous-système dans le Common Language Runtime (CLR) chargé d'appliquer la sécurité des applications clientes.|  
 |publisher|Entité qui écrit et gère l'application.|  
 |système de déploiement|Entité qui assemble et distribue l'application aux utilisateurs.|  
@@ -69,7 +69,7 @@ Cette rubrique offre une vue d’ensemble du déploiement d’applications [!INC
 5. Publier le déploiement d'applications sur les ordinateurs clients.  
   
 ### <a name="obtain-a-certificate-for-the-publisher"></a>Obtenir un certificat pour l'éditeur  
- Les certificats numériques sont un composant principal du système de sécurité et d'authentification de Microsoft Authenticode. Authenticode est un composant standard du système d'exploitation Windows. Toutes les applications [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] doivent être signées avec un certificat numérique, qu'elles participent ou non au déploiement d'applications approuvées. Pour obtenir une explication complète du fonctionnement d’Authenticode avec [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)], consultez [ClickOnce et Authenticode](../deployment/clickonce-and-authenticode.md).  
+ Les certificats numériques sont un composant principal du système de sécurité et d'authentification de Microsoft Authenticode. Authenticode est un composant standard du système d'exploitation Windows. Toutes les applications [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] doivent être signées avec un certificat numérique, qu'elles participent ou non au déploiement d'applications approuvées. Pour obtenir une explication complète du fonctionnement d’Authenticode avec [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] , consultez [ClickOnce et Authenticode](../deployment/clickonce-and-authenticode.md).  
   
 ### <a name="add-the-publisher-to-the-trusted-publishers-store"></a>Ajouter l'éditeur au magasin d'éditeurs approuvés  
  Pour que votre application [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] reçoive un niveau supérieur de confiance, vous devez ajouter votre certificat en tant qu'éditeur approuvé à chaque ordinateur client sur lequel l'application s'exécutera. Cette tâche est une configuration unique. Une fois terminée, vous pouvez déployer autant d'applications [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] signées avec le certificat de votre éditeur que vous souhaitez, et elles s'exécuteront toutes avec un niveau de confiance élevé.  
@@ -78,9 +78,9 @@ Cette rubrique offre une vue d’ensemble du déploiement d’applications [!INC
   
  Si vous ne déployez pas votre application dans un environnement de bureau géré, vous disposez des options suivantes pour ajouter un certificat au magasin d'éditeurs approuvés :  
   
-- Espace de noms <xref:System.Security.Cryptography?displayProperty=fullName> .  
+- Espace de noms <xref:System.Security.Cryptography?displayProperty=fullName>.  
   
-- CertMgr.exe, composant d'Internet Explorer qui, par conséquent, existe sur Windows 98 et toutes les versions ultérieures. Pour plus d’informations, consultez [Certmgr. exe (outil de gestionnaire de certificats)](https://msdn.microsoft.com/library/7e953b43-1374-4bbc-814f-53ca1b6b52bb).  
+- CertMgr.exe, composant d'Internet Explorer qui, par conséquent, existe sur Windows 98 et toutes les versions ultérieures. Pour plus d’informations, consultez [Certmgr.exe (outil Certificate Manager)](https://msdn.microsoft.com/library/7e953b43-1374-4bbc-814f-53ca1b6b52bb).  
   
 ### <a name="create-a-clickonce-application"></a>Créer une application ClickOnce  
  Une application [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] est une application cliente [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] combinée avec des fichiers manifestes qui décrivent l'application et fournissent les paramètres d'installation. Vous pouvez transformer votre programme en application [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] à l'aide de la commande **Publier** dans [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Vous pouvez également générer tous les fichiers requis pour le déploiement [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] à l'aide des outils inclus dans le [!INCLUDE[winsdklong](../includes/winsdklong-md.md)]. Pour obtenir des instructions détaillées sur [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] déploiement, consultez [procédure pas à pas : déploiement manuel d'une application ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md).  
@@ -93,9 +93,9 @@ Cette rubrique offre une vue d’ensemble du déploiement d’applications [!INC
 > [!CAUTION]
 > Nous ne recommandons pas le déploiement de l'application avec un certificat de test.  
   
- Vous pouvez également signer l'application à l'aide des outils des SDK Mage.exe ou MageUI.exe. Pour plus d’informations, consultez [procédure pas à pas : déploiement manuel d’une application ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md). Pour obtenir la liste complète des options de ligne de commande relatives à la signature de déploiement, consultez [Mage. exe (outil Manifest Generation and Editing)](https://msdn.microsoft.com/library/77dfe576-2962-407e-af13-82255df725a1).  
+ Vous pouvez également signer l'application à l'aide des outils des SDK Mage.exe ou MageUI.exe. Pour plus d’informations, consultez [procédure pas à pas : déploiement manuel d’une application ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md). Pour obtenir la liste complète des options de ligne de commande relatives à la signature de déploiement, consultez [Mage.exe (outil Manifest Generation and Editing)](https://msdn.microsoft.com/library/77dfe576-2962-407e-af13-82255df725a1).  
   
-### <a name="publish-the-application"></a>Publier l'application  
+### <a name="publish-the-application"></a>Publication de l'application  
  Dès que vous avez signé vos manifestes [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] , l'application est prête à être publiée dans votre emplacement d'installation. L'emplacement d'installation peut être un serveur web, un partage de fichiers ou le disque local. Quand un client accède au manifeste de déploiement pour la première fois, le Gestionnaire de confiance doit déterminer si l'application [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] a été autorisée ou non à ne pas s'exécuter à un niveau de confiance supérieur par un éditeur approuvé installé. Le Gestionnaire de confiance fait ce choix en comparant le certificat utilisé pour signer le déploiement aux certificats stockés dans le magasin d'éditeurs approuvés du client. Si le Gestionnaire de confiance trouve une correspondance, l'application s'exécute avec un niveau de confiance élevé.  
   
 ## <a name="trusted-application-deployment-and-permission-elevation"></a>Déploiement d'applications approuvées et élévation d'autorisations  
@@ -105,5 +105,5 @@ Cette rubrique offre une vue d’ensemble du déploiement d’applications [!INC
  Vous pouvez utiliser le déploiement d'applications approuvées pour accorder une confiance élevée aux applications [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] déployées sur le web ou via un partage de fichiers d'entreprise. Vous n'êtes pas obligé d'utiliser le déploiement d'applications approuvées pour les applications [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] distribuées sur un CD, car, par défaut, ces applications ont un niveau de confiance totale.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Mage.exe (outil Manifest Generation and Editing)](https://msdn.microsoft.com/library/77dfe576-2962-407e-af13-82255df725a1)   
+ [Mage.exe (Outil Manifest Generation and Editing)](https://msdn.microsoft.com/library/77dfe576-2962-407e-af13-82255df725a1)   
  [Procédure pas à pas : déploiement manuel d’une application ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)

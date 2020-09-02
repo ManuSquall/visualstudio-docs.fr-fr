@@ -27,10 +27,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 962c724e231275c9fa716d6c823b7451292392cf
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75848385"
 ---
 # <a name="javascript-intellisense"></a>IntelliSense JavaScript
@@ -54,7 +54,7 @@ IntelliSense vous aide à écrire du code plus vite et avec moins d'erreurs en f
 
 - [Traitement des informations IntelliSense](#ProcessingIntelliSenseInformation)
 
-- [Fonctionnalités de JavaScript IntelliSense](#Features)
+- [Fonctionnalités JavaScript IntelliSense](#Features)
 
 - [Extensibilité JavaScript IntelliSense](#Extensibility)
 
@@ -62,7 +62,7 @@ IntelliSense vous aide à écrire du code plus vite et avec moins d'erreurs en f
 
   Pour plus d'informations sur les fonctionnalités IntelliSense de [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)], consultez [Utilisation des fonctionnalités IntelliSense](../ide/using-intellisense.md).
 
-## <a name="DeterminingIntelliSenseContext"></a>Détermination du contexte IntelliSense
+## <a name="determining-intellisense-context"></a><a name="DeterminingIntelliSenseContext"></a> Détermination du contexte IntelliSense
  JavaScript IntelliSense fournit des choix de programmation qui s'appuient sur l'ensemble du script et qui correspondent à votre contexte de script actuel. Cela inclut des éléments de script dans le fichier courant. Cela comprend également tout code référencé directement ou indirectement depuis votre script, comme les références de fichier de script, les références de script d'assembly, les références de service et les références associées aux pages.
 
  Votre contexte de script actuel est créé sur la base des éléments suivants :
@@ -84,7 +84,7 @@ IntelliSense vous aide à écrire du code plus vite et avec moins d'erreurs en f
     > [!NOTE]
     > IntelliSense n'est pas pris en charge pour le script qui se trouve dans les attributs de gestionnaire d'événements sur les éléments HTML, ou qui est défini dans les attributs `href`.
 
-## <a name="ProcessingIntelliSenseInformation"></a>Traitement des informations IntelliSense
+## <a name="processing-intellisense-information"></a><a name="ProcessingIntelliSenseInformation"></a> Traitement des informations IntelliSense
  Pour fournir JavaScript IntelliSense, le service de langage effectue les opérations suivantes :
 
 - Crée une liste de fichiers JavaScript dépendants basés sur les références contenues dans le document actif et sur l'examen récursif des références de script dans les fichiers référencés.
@@ -95,7 +95,7 @@ IntelliSense vous aide à écrire du code plus vite et avec moins d'erreurs en f
 
 - Surveille les fichiers pour les modifications qui peuvent affecter la liste IntelliSense et met à jour la liste si nécessaire. Les scripts sur les magasins distants (tels que ceux référencés à l'aide du protocole HTTP) ne sont pas analysés.
 
-## <a name="Features"></a>Fonctionnalités de JavaScript IntelliSense
+## <a name="javascript-intellisense-features"></a><a name="Features"></a>Fonctionnalités de JavaScript IntelliSense
  JavaScript IntelliSense prend en charge les objets suivants :
 
 - [Éléments DOM (Document Object Model)](#HTMLDom)
@@ -118,21 +118,21 @@ IntelliSense vous aide à écrire du code plus vite et avec moins d'erreurs en f
 
   Si IntelliSense ne parvient pas à déterminer le type d'un objet, il fournit des options pour compléter automatiquement les instructions à l'aide d'identificateurs dans le document actif. Pour plus d'informations, consultez [Saisie semi-automatique des instructions pour les identificateurs](../ide/statement-completion-for-identifiers.md).
 
-### <a name="HTMLDom"></a> Éléments DOM HTML
+### <a name="html-dom-elements"></a><a name="HTMLDom"></a> Éléments DOM HTML
  JavaScript IntelliSense fournit des références de programmation pour les éléments DOM DHTML (Dynamic HTML), tels que `body`, `form` et `div`. Seuls les éléments inclus dans le document actuel et la page maître sont affichés par IntelliSense. JavaScript IntelliSense prend en charge également les objets `window` et `document`, ainsi que leurs membres.
 
-### <a name="IntrinsicObjects"></a> Objets intrinsèques
+### <a name="intrinsic-objects"></a><a name="IntrinsicObjects"></a> Objets intrinsèques
  JavaScript IntelliSense fournit des références de programmation pour les objets intrinsèques tels que `Array`, `String`, `Math`, `Date` et `Number`. Pour plus d'informations sur les objets intrinsèques, consultez [Objets intégrés standard](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects).
 
-### <a name="UserDefined"></a>Variables, fonctions et objets définis par l’utilisateur
+### <a name="user-defined-variables-functions-and-objects"></a><a name="UserDefined"></a> Variables, fonctions et objets définis par l’utilisateur
  Lorsque vous modifiez un fichier JavaScript, [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] analyse les documents ouverts et référencés pour déterminer toutes les ressources de code disponibles. Ceci inclut les variables, fonctions et objets que vous avez créés. Ces ressources sont ensuite disponibles pour JavaScript IntelliSense.
 
  Pour plus d'informations sur les variables, fonctions et objets définis par l'utilisateur, consultez [Création de vos propres objets](https://msdn.microsoft.com/library/202863ha.aspx) sur le site web MSDN.
 
-### <a name="External"></a>Références de fichiers externes
+### <a name="external-file-references"></a><a name="External"></a>Références de fichiers externes
  Vous pouvez inclure divers types de références de fichiers externes pour mettre en place la prise en charge d'IntelliSense dans votre code. Les références de fichiers externes peuvent être des références de script ou des directives de référence, ou elles peuvent être spécifiées à l'aide de groupes de référence.
 
-#### <a name="Script"></a>Références de script
+#### <a name="script-references"></a><a name="Script"></a>Références de script
  Au lieu d'écrire tout le script client dans une page, vous pouvez référencer des fichiers externes qui incluent le code de script. Cela vous simplifie la réutilisation du code entre les pages et permet la mise en cache du script client par le navigateur.
 
  Si vous ne travaillez pas avec une page Web compatible ASP.NET AJAX, vous pouvez référencer un fichier de script externe en utilisant l'attribut `src` dans la balise d'ouverture d'un élément `script`. L'attribut `src` spécifie l'URL pour un fichier externe qui contient le code source ou les données.
@@ -157,9 +157,9 @@ IntelliSense vous aide à écrire du code plus vite et avec moins d'erreurs en f
 </asp:ScriptManager>
 ```
 
- IntelliSense prend également en charge des fichiers de script qui sont incorporés comme ressources dans un assembly des applications Web ASP.NET AJAX. Pour plus d'informations sur les ressources de script incorporées, consultez [Procédure pas à pas : Incorporation d’un fichier JavaScript en tant que ressource dans un assembly](https://msdn.microsoft.com/library/d8cb78cd-95a9-4dc6-92df-391866817e89).
+ IntelliSense prend également en charge des fichiers de script qui sont incorporés comme ressources dans un assembly des applications Web ASP.NET AJAX. Pour plus d'informations sur les ressources de script incorporées, consultez [Procédure pas à pas : Incorporation d'un fichier JavaScript en tant que ressource dans un assembly](https://msdn.microsoft.com/library/d8cb78cd-95a9-4dc6-92df-391866817e89).
 
-#### <a name="ReferenceDirectives"></a>Directives de référence
+#### <a name="reference-directives"></a><a name="ReferenceDirectives"></a>Directives de référence
  Une directive `reference` permet à [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] d'établir une relation entre le script vous modifiez actuellement et d'autres scripts. La directive `reference` vous permet d'inclure un fichier de script dans le contexte de script du fichier de script actuel. Cela permet à IntelliSense de référencer des fonctions définies extérieurement, des types et des champs lors de l'écriture de code.
 
  Vous créez une directive `reference` dans le formulaire d'un commentaire XML. La directive doit être déclarée dans le fichier avant tout script. Une directive `reference` peut inclure une référence de script sur disque, une référence de script basée sur un assembly, une référence de script basée sur un service ou une référence de script basée sur une page.
@@ -219,7 +219,7 @@ IntelliSense vous aide à écrire du code plus vite et avec moins d'erreurs en f
 
 - Les directives de référence dans les pages référencées ne sont pas traitées ; autrement dit, les directives de référence ne sont pas résolues de manière récursive pour les pages. Seul le script qui est référencé directement par la page est inclus.
 
-#### <a name="ReferenceGroups"></a>Groupes de référence
+#### <a name="reference-groups"></a><a name="ReferenceGroups"></a>Groupes de référence
  Vous pouvez utiliser les groupes de référence prédéfinis pour spécifier que des fichiers .js IntelliSense particuliers figurent dans la portée de différents projets JavaScript. Les types de groupe de référence suivants sont disponibles :
 
 - Implicite (Windows) pour les applications [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] en JavaScript. Les fichiers inclus dans ce groupe figurent dans la portée de chaque fichier .js ouvert dans l'éditeur de code pour le projet du type spécifié.
@@ -246,7 +246,7 @@ IntelliSense vous aide à écrire du code plus vite et avec moins d'erreurs en f
 > [!WARNING]
 > Si vous activez cette fonctionnalité et que vous observez un ralentissement dans l’éditeur de code, nous vous recommandons de la désactiver.
 
-### <a name="XMLDocComments"></a>Commentaires sur la documentation XML
+### <a name="xml-documentation-comments"></a><a name="XMLDocComments"></a> Commentaires de documentation XML
  Les commentaires de documentation XML sont des descriptions textuelles des éléments de code que vous ajoutez au script. Ces descriptions textuelles s'affichent dans IntelliSense lorsque vous référencez le script commenté. Par exemple, vous pouvez fournir des informations sur les paramètres et la valeur de retour d'une fonction. Les commentaires de documentation XML sont disponibles uniquement à partir de fichiers, d'assemblys et de services référencés. Pour plus d'informations, consultez [Commentaires sur la documentation XML](../ide/xml-documentation-comments-javascript.md) et [Créer des commentaires sur la documentation XML](../ide/create-xml-documentation-comments-for-javascript-intellisense.md).
 
  IntelliSense peut afficher les commentaires de documentation XML dans les scénarios suivants :
@@ -259,30 +259,30 @@ IntelliSense vous aide à écrire du code plus vite et avec moins d'erreurs en f
 
   IntelliSense n'est pas disponible lorsqu'un fichier .aspx référence un autre fichier .aspx.
 
-### <a name="ASPNet"></a>Objets ASP.NET AJAX
+### <a name="aspnet-ajax-objects"></a><a name="ASPNet"></a> Objets ASP.NET AJAX
  ASP.NET AJAX prend également en charge JavaScript IntelliSense. ASP.NET AJAX inclut une infrastructure cliente qui étend les types standard disponibles dans ECMAScript (JavaScript). Pour permettre à JavaScript IntelliSense de fournir des détails à propos des objets ASP.NET AJAX, des commentaires de documentation XML ont été ajoutés dans [!INCLUDE[atlaslib_current_ext](../includes/atlaslib-current-ext-md.md)]. Ces commentaires de documentation XML sont affichés lorsque vous utilisez des types et des membres contenus dans ASP.NET AJAX Library.
 
 > [!NOTE]
 > Les membres privés ne sont pas affichés par JavaScript IntelliSense. Les membres privés sont dénotés dans ASP.NET AJAX comme des membres qui commencent par un trait de soulignement (_).
 
-## <a name="Extensibility"></a>Extensibilité JavaScript IntelliSense
+## <a name="javascript-intellisense-extensibility"></a><a name="Extensibility"></a> Extensibilité JavaScript IntelliSense
  JavaScript Language Service fournit des objets et des fonctions qui vous permettent de modifier l’expérience IntelliSense pour les développeurs qui utilisent des bibliothèques tierces. Ces fonctionnalités sont particulièrement utiles lorsque le service de langage par défaut ne peut pas fournir toutes les informations que vous souhaitez fournir aux clients. Pour plus d'informations, consultez [Extension de JavaScript IntelliSense](../ide/extending-javascript-intellisense.md).
 
-## <a name="Validation"></a>Validation JavaScript
+## <a name="javascript-validation"></a><a name="Validation"></a> Validation JavaScript
  La validation de script JavaScript se déroule sans interruption en arrière-plan. Lorsque [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] détecte des erreurs de syntaxe dans le code JavaScript, des commentaires sont fournis de différentes façons :
 
 - Éléments soulignés dans l'éditeur. Les soulignements rouges ondulés indiquent des erreurs. Si vous maintenez le pointeur de la souris sur l'erreur, une info-bulle affiche la description de l'erreur.
 
-- Fenêtre **Liste d'erreurs**. La fenêtre **Liste d'erreurs** affiche la description de l'erreur, le fichier où l'erreur s'est produite, les numéros de ligne et de colonne, et le projet. Pour afficher la fenêtre **Liste d'erreurs**, dans le menu **Affichage**, cliquez sur **Liste d'erreurs**.
+- **Liste d’erreurs** fenêtre. La fenêtre **Liste d'erreurs** affiche la description de l'erreur, le fichier où l'erreur s'est produite, les numéros de ligne et de colonne, et le projet. Pour afficher la fenêtre **Liste d'erreurs**, dans le menu **Affichage**, cliquez sur **Liste d'erreurs**.
 
 - La fenêtre Sortie indique les références qui n'ont pas été chargées.
 
 ## <a name="see-also"></a>Voir aussi
-- [Utilisation de la fonctionnalité IntelliSense](../ide/using-intellisense.md)
+- [Utilisation d’IntelliSense](../ide/using-intellisense.md)
 - [Créer des commentaires de documentation XML](../ide/create-xml-documentation-comments-for-javascript-intellisense.md)
 - [Extension de JavaScript IntelliSense](../ide/extending-javascript-intellisense.md)
 - [Saisie semi-automatique des instructions pour les identificateurs](../ide/statement-completion-for-identifiers.md)
-- [Commentaires sur la documentation XML](../ide/xml-documentation-comments-javascript.md)
+- [Commentaires de documentation XML](../ide/xml-documentation-comments-javascript.md)
 - [À propos du modèle objet DHTML](https://msdn2.microsoft.com/library/ms533022.aspx)
-- [Liste des membres](https://msdn.microsoft.com/1b9cc469-9cd4-4d42-9999-1f9479635ff8)
+- [Lister les membres](https://msdn.microsoft.com/1b9cc469-9cd4-4d42-9999-1f9479635ff8)
 - [Attribut SRC &#124; Propriété src](https://msdn2.microsoft.com/library/ms534642.aspx)

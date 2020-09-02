@@ -15,10 +15,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 36c9f3b33eab8428cd14aa26896c3813422d3dd7
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85537070"
 ---
 # <a name="da0002-vsperfcorprofdll-is-missing"></a>DA0002 : VSPerfCorProf.dll est manquant
@@ -31,7 +31,7 @@ ms.locfileid: "85537070"
 |Message|Il semble que le fichier ait été collecté sans définir correctement les variables d’environnement avec *VSPerfCLREnv. cmd*. Les symboles pour des fichiers binaires managés peuvent ne pas être résolus.|
 |Type de règle|Information|
 
-## <a name="cause"></a>Cause
+## <a name="cause"></a>Cause :
  Le profileur n’a pas trouvé *VSPerfCorProf.dll* lors de l’exécution du profilage. Cet avertissement se produit quand les outils en ligne de commande pour la collecte de données du profileur sont utilisés sans l’outil *VSPerfCLREnv.cmd* pour initialiser les variables d’environnement nécessaires. L’avertissement peut également se déclencher si un autre profileur est en cours d’exécution quand les outils de profilage démarrent.
 
 ## <a name="rule-description"></a>Description de la règle

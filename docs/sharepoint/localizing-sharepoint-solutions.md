@@ -18,9 +18,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 0a7b04ab1f77eba15f2bc617f89514a8d0952674
-ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86017142"
 ---
 # <a name="localize-sharepoint-solutions"></a>Localiser des solutions SharePoint
@@ -108,7 +109,7 @@ $Resources:String ID
 ### <a name="localize-code"></a>Localiser du code
  En plus de la localisation des chaînes de fonctionnalités et [!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)] du balisage, vous devez également localiser les chaînes de message et d’erreur qui s’affichent dans le code de votre solution. Les messages d’information et d’erreur localisés sont contenus dans des assemblys satellites. Les assemblys satellites contiennent des chaînes qui sont visibles par les utilisateurs, telles que [!INCLUDE[TLA2#tla_ui](../sharepoint/includes/tla2sharptla-ui-md.md)] des messages texte et de sortie tels que des exceptions.
 
- [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]utilise le modèle Hub et spoke de .NET Framework standard. Le concentrateur, ou assembly de programme principal, contient les ressources de langue par défaut. Les spokes, ou assemblys satellites, contiennent les ressources spécifiques à une langue. Pour plus d’informations, consultez [Empaquetage et déploiement de ressources](/previous-versions/dotnet/netframework-4.0/sb6a8618(v=vs.100)). Les assemblys satellites sont compilés à partir de fichiers de ressources (*. resx*). Lorsque vous ajoutez des fichiers de ressources spécifiques à une langue à votre projet et au package de solution, [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] compile les fichiers de ressources dans des assemblys satellites nommés *{Project Name} .resources.dll*.
+ [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] utilise le modèle Hub et spoke de .NET Framework standard. Le concentrateur, ou assembly de programme principal, contient les ressources de langue par défaut. Les spokes, ou assemblys satellites, contiennent les ressources spécifiques à une langue. Pour plus d’informations, consultez [Empaquetage et déploiement de ressources](/previous-versions/dotnet/netframework-4.0/sb6a8618(v=vs.100)). Les assemblys satellites sont compilés à partir de fichiers de ressources (*. resx*). Lorsque vous ajoutez des fichiers de ressources spécifiques à une langue à votre projet et au package de solution, [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] compile les fichiers de ressources dans des assemblys satellites nommés *{Project Name} .resources.dll*.
 
  Comme avec le balisage ASPX, localisez le code de l’application SharePoint en ajoutant des éléments de projet de fichier de ressources séparés à votre projet. une pour la langue par défaut et une pour chaque langue localisée. Toutefois, comme mentionné précédemment, si vous avez déjà des fichiers de ressources pour la localisation du balisage ASPX, vous pouvez les réutiliser pour localiser le code. Si vous devez créer des fichiers de ressources, attribuez au fichier de ressources de langue par défaut le nom de votre choix, ajouté avec une extension *. resx* . Nommez les fichiers de ressources localisés dont le nom est identique à celui de la culture spécifique à la langue [!INCLUDE[TLA2#tla_id](../sharepoint/includes/tla2sharptla-id-md.md)] . Affectez à la propriété action de génération de chaque fichier de ressources la valeur ressource incorporée pour permettre la création d’assemblys de ressources satellites.
 

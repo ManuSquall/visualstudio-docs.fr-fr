@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: b3b7a5a8c65c850cac33e93f69dd9a11589e2a3d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68150574"
 ---
-# <a name="idiasectioncontribgetaddresssection"></a>IDiaSectionContrib::get_addressSection
+# <a name="idiasectioncontribget_addresssection"></a>IDiaSectionContrib::get_addressSection
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Récupère la partie de la section d’adresse de la contribution.  
+Récupère la partie de la section de l’adresse de la contribution.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -35,10 +35,10 @@ HRESULT get_addressSection ( 
   
 #### <a name="parameters"></a>Paramètres  
  `pRetVal`  
- [out] Retourne la partie de la section d’adresse de la contribution.  
+ à Retourne la partie de la section de l’adresse de la contribution.  
   
-## <a name="return-value"></a>Valeur de retour  
- En cas de réussite, retourne `S_OK`. Retourne `S_FALSE` si cette propriété n’est pas pris en charge. Sinon, retourne un code d'erreur.  
+## <a name="return-value"></a>Valeur renvoyée  
+ En cas de réussite, retourne `S_OK`. Retourne `S_FALSE` si cette propriété n’est pas prise en charge. Sinon, retourne un code d'erreur.  
   
 ## <a name="see-also"></a>Voir aussi  
  [IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md)

@@ -12,16 +12,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: f388671f7efeeefa05704d934ccf5307578e7d3e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68150457"
 ---
 # <a name="idiasessionfindacceleratorinlineesbylinenum"></a>IDiaSession::findAcceleratorInlineesByLinenum
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Retourne une énumération de symboles pour les frames en ligne qui correspondent à l’emplacement source spécifié.  
+Retourne une énumération de symboles pour les frames inclus qui correspondent à l’emplacement source spécifié.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -37,22 +37,22 @@ HRESULT findAcceleratorInlineeLinesByName ( 
   
 #### <a name="parameters"></a>Paramètres  
  `parent`  
- [in] Un `IDiaSymbol` qui correspond à la fonction de stub accélérateur qui doit être recherché.  
+ dans `IDiaSymbol` Qui correspond à la fonction stub d’accélérateur à laquelle doit porter la recherche.  
   
  `file`  
- [in] Le `IDiaSourceFile` de l’emplacement source.  
+ dans `IDiaSourceFile` De l’emplacement source.  
   
  `linenum`  
- [in] Le numéro de ligne de l’emplacement source.  
+ dans Numéro de ligne de l’emplacement source.  
   
  `colnum`  
- [in] Le numéro de colonne de l’emplacement source.  
+ dans Numéro de colonne de l’emplacement source.  
   
  `ppResult`  
- [out] Un pointeur vers un `IDiaEnumLineNumbers` pointeur d’interface qui est initialisé avec le résultat.  
+ à Pointeur vers un `IDiaEnumLineNumbers` pointeur d’interface qui est initialisé avec le résultat.  
   
-## <a name="return-value"></a>Valeur de retour  
- En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.  
+## <a name="return-value"></a>Valeur renvoyée  
+ En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.  
   
 ## <a name="see-also"></a>Voir aussi  
  [IDiaSession](../../debugger/debug-interface-access/idiasession.md)   

@@ -7,13 +7,13 @@ ms.author: pozandev
 manager: jillfra
 ms.workload: multiple
 ms.openlocfilehash: e8b35a566eb0f2457d6eb8ae3a33235df2a64cd3
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75849149"
 ---
-# <a name="how-to-diagnose-ui-delays-caused-by-extensions"></a>Comment : diagnostiquer des retards de l’interface utilisateur provoqués par des extensions
+# <a name="how-to-diagnose-ui-delays-caused-by-extensions"></a>Guide pratique pour diagnostiquer les délais de l’interface utilisateur causés par les extensions
 
 Lorsque l’interface utilisateur ne répond pas, Visual Studio examine la pile des appels du thread d’interface utilisateur, en commençant par la feuille et en travaillant vers la base. Si Visual Studio détermine qu’un frame de pile d’appels appartient à un module qui fait partie d’une extension installée et activée, il affiche une notification.
 
@@ -43,7 +43,7 @@ Pour diagnostiquer un retard de l’interface utilisateur, vous devez d’abord 
 
 ## <a name="restart-vs-with-activity-logging-on"></a>Redémarrer et avec la journalisation des activités
 
-Visual Studio peut générer un « journal d’activité » qui fournit des informations utiles lors du débogage d’un problème. Pour activer la journalisation des activités dans Visual Studio, ouvrez Visual Studio à l’aide de l’option de ligne de commande `/log`. Après le démarrage de Visual Studio, le journal d’activité est stocké à l’emplacement suivant :
+Visual Studio peut générer un « journal d’activité » qui fournit des informations utiles lors du débogage d’un problème. Pour activer la journalisation des activités dans Visual Studio, ouvrez Visual Studio avec l' `/log` option de ligne de commande. Après le démarrage de Visual Studio, le journal d’activité est stocké à l’emplacement suivant :
 
 ```DOS
 %APPDATA%\Microsoft\VisualStudio\<vs_instance_id>\ActivityLog.xml
@@ -71,7 +71,7 @@ Pour arrêter la collecte des traces, utilisez simplement le bouton **arrêter l
 
 ## <a name="examine-the-activity-log-to-get-the-delay-id"></a>Examiner le journal d’activité pour connaître l’ID de délai
 
-Comme mentionné précédemment, vous trouverez le journal d’activité sur *%APPDATA%\Microsoft\VisualStudio\<vs_instance_id > \ActivityLog.xml*. Chaque fois que Visual Studio détecte un délai de l’interface utilisateur d’extension, il écrit un nœud dans le journal d’activité avec `UIDelayNotifications` comme source. Ce nœud contient quatre éléments d’informations sur le délai de l’interface utilisateur :
+Comme mentionné précédemment, vous trouverez le journal d’activité sur *%APPDATA%\Microsoft\VisualStudio \<vs_instance_id>\ActivityLog.xml*. Chaque fois que Visual Studio détecte un délai de l’interface utilisateur d’extension, il écrit un nœud dans le journal d’activité avec `UIDelayNotifications` comme source. Ce nœud contient quatre éléments d’informations sur le délai de l’interface utilisateur :
 
 - L’ID de délai de l’interface utilisateur, un numéro séquentiel qui identifie de façon unique un délai de l’interface utilisateur dans une session VS
 - L’ID de session, qui identifie de façon unique votre session Visual Studio, du début à la fermeture
@@ -102,7 +102,7 @@ Ensuite, ouvrez le fichier de trace. Vous pouvez effectuer cette opération à l
 Ensuite, sélectionnez le fichier de trace dans le volet gauche et ouvrez-le en choisissant **ouvrir** dans le menu contextuel.
 
 > [!NOTE]
-> Par défaut, PerfView génère une archive zip. Lorsque vous ouvrez *trace. zip*, il décompresse automatiquement l’archive et ouvre la trace. Vous pouvez ignorer ce code en désactivez la case à cocher **zip** pendant la collecte des traces. Toutefois, si vous envisagez de transférer et d’utiliser des traces sur différents ordinateurs, nous vous recommandons vivement de décocher la case **zip** . Sans cette option, les fichiers PDB requis pour les assemblys Ngen ne sont pas joints à la trace et, par conséquent, les symboles des assemblys Ngen ne sont pas résolus sur l’ordinateur de destination. (Consultez [ce](https://devblogs.microsoft.com/devops/creating-ngen-pdbs-for-profiling-reports/) billet de blog pour plus d’informations sur les fichiers PDB pour les assemblys Ngen.)
+> Par défaut, PerfView génère une archive zip. Lorsque vous ouvrez *trace.zip*, il décompresse automatiquement l’archive et ouvre la trace. Vous pouvez ignorer ce code en désactivez la case à cocher **zip** pendant la collecte des traces. Toutefois, si vous envisagez de transférer et d’utiliser des traces sur différents ordinateurs, nous vous recommandons vivement de décocher la case **zip** . Sans cette option, les fichiers PDB requis pour les assemblys Ngen ne sont pas joints à la trace et, par conséquent, les symboles des assemblys Ngen ne sont pas résolus sur l’ordinateur de destination. (Consultez [ce](https://devblogs.microsoft.com/devops/creating-ngen-pdbs-for-profiling-reports/) billet de blog pour plus d’informations sur les fichiers PDB pour les assemblys Ngen.)
 
 Le traitement et l’ouverture de la trace peuvent prendre plusieurs minutes. Une fois la trace ouverte, une liste des différents « affichages » s’affiche.
 
@@ -111,10 +111,10 @@ Le traitement et l’ouverture de la trace peuvent prendre plusieurs minutes. Un
 Nous allons tout d’abord utiliser la vue **événements** pour obtenir l’intervalle de temps du délai de l’interface utilisateur :
 
 1. Ouvrez la vue **événements** en sélectionnant `Events` nœud sous la trace et en choisissant **ouvrir** dans le menu contextuel.
-2. Dans le volet gauche, sélectionnez «`Microsoft-VisualStudio/ExtensionUIUnresponsiveness`».
-3. Appuyez sur entrée
+2. `Microsoft-VisualStudio/ExtensionUIUnresponsiveness`Dans le volet gauche, sélectionnez «».
+3. Appuyez sur Entrée
 
-La sélection est appliquée et tous les événements de `ExtensionUIUnresponsiveness` s’affichent dans le volet droit.
+La sélection est appliquée et tous les `ExtensionUIUnresponsiveness` événements s’affichent dans le volet droit.
 
 ![Sélection d’événements dans la vue événements](media/perfview-event-selection.png)
 
@@ -137,7 +137,7 @@ Lors de l’ouverture de la vue **piles de temps du thread** , choisissez le pro
 Dans l’affichage **piles de temps du thread** , dans l’angle supérieur gauche de la page, vous pouvez définir l’intervalle de temps sur les valeurs calculées à l’étape précédente et appuyer sur **entrée** pour ajuster la plage horaire.
 
 > [!NOTE]
-> Déterminer quel thread est le thread d’interface utilisateur (démarrage) peut être non intuitifs si la collecte de trace est démarrée une fois que Visual Studio est déjà ouvert. Toutefois, les premiers éléments de la pile du thread d’interface utilisateur (Startup) sont généralement toujours des dll du système d’exploitation (*ntdll. dll* et *Kernel32. dll*) suivis de `devenv!?`, puis `msenv!?`. Cette séquence peut aider à identifier le thread d’interface utilisateur.
+> Déterminer quel thread est le thread d’interface utilisateur (démarrage) peut être non intuitifs si la collecte de trace est démarrée une fois que Visual Studio est déjà ouvert. Toutefois, les premiers éléments de la pile du thread d’interface utilisateur (Startup) sont généralement toujours des dll du système d’exploitation (*ntdll.dll* et *kernel32.dll*) suivis de, `devenv!?` puis `msenv!?` . Cette séquence peut aider à identifier le thread d’interface utilisateur.
 
  ![Identification du thread de démarrage](media/ui-delay-startup-thread.png)
 
@@ -156,4 +156,4 @@ PerfView dispose de conseils détaillés dans le menu **aide** , qui vous permet
 Vous pouvez également utiliser les nouveaux analyseurs statiques Visual Studio pour les extensions (package NuGet [ici](https://www.nuget.org/packages/microsoft.visualstudio.sdk.analyzers)), qui fournissent des conseils sur les meilleures pratiques pour l’écriture d’extensions efficaces. Consultez la liste des analyseurs de [Visual Studio SDK](https://github.com/Microsoft/VSSDK-Analyzers/blob/master/doc/index.md) et des [analyseurs de thread](https://github.com/Microsoft/vs-threading/blob/master/doc/analyzers/index.md).
 
 > [!NOTE]
-> Si vous ne parvenez pas à résoudre la non-réponse en raison des dépendances dont vous n’avez pas le contrôle (par exemple, si votre extension doit appeler les services VS synchrones sur le thread d’interface utilisateur), nous aimerions le savoir. Si vous êtes membre de notre programme partenaires Visual Studio, vous pouvez nous contacter en soumettant une demande de support pour les développeurs. Dans le cas contraire, utilisez l’outil « signaler un problème » pour envoyer vos commentaires et inclure `"Extension UI Delay Notifications"` dans le titre. Incluez également une description détaillée de votre analyse.
+> Si vous ne parvenez pas à résoudre la non-réponse en raison des dépendances dont vous n’avez pas le contrôle (par exemple, si votre extension doit appeler les services VS synchrones sur le thread d’interface utilisateur), nous aimerions le savoir. Si vous êtes membre de notre programme partenaires Visual Studio, vous pouvez nous contacter en soumettant une demande de support pour les développeurs. Dans le cas contraire, utilisez l’outil « signaler un problème » pour envoyer vos commentaires et `"Extension UI Delay Notifications"` les inclure dans le titre. Incluez également une description détaillée de votre analyse.

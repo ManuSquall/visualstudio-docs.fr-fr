@@ -18,9 +18,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 6f257dfed2fe439c5ab22ab9951b6258116c6567
-ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86017124"
 ---
 # <a name="walkthrough-create-a-workflow-with-association-and-initiation-forms"></a>Procédure pas à pas : créer un flux de travail avec des formulaires d’association et d’initiation
@@ -167,7 +168,7 @@ ms.locfileid: "86017124"
 
 2. Dans la barre de menus, choisissez **projet**  >  **Ajouter un nouvel élément** pour afficher la boîte de dialogue **Ajouter un nouvel élément** .
 
-3. Dans la vue de l’arborescence de la boîte de dialogue, développez **Visual C#** ou **Visual Basic** (selon le langage de votre projet), développez le nœud **SharePoint** , puis choisissez le nœud **2010** .
+3. Dans la vue de l’arborescence de la boîte de dialogue, développez **Visual C#** ou **Visual Basic**  (selon le langage de votre projet), développez le nœud **SharePoint** , puis choisissez le nœud **2010** .
 
 4. Dans la liste des modèles, choisissez le modèle de **formulaire d’initiation de flux de travail** .
 

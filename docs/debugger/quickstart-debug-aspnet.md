@@ -1,6 +1,6 @@
 ---
-title: Debug ASP.NET cœur
-description: Debug ASP.NET Core à l’aide du debugger Visual Studio
+title: ASP.NET Core de débogage
+description: ASP.NET Core de débogage à l’aide du débogueur Visual Studio
 ms.custom: mvc
 ms.date: 08/06/2018
 ms.topic: quickstart
@@ -13,13 +13,13 @@ manager: jillfra
 ms.workload:
 - aspnet
 ms.openlocfilehash: bbe3d23301f0853626a930855acf4b595c6a2923
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/20/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75847872"
 ---
-# <a name="quickstart-debug-aspnet-core-with-the-visual-studio-debugger"></a>Quickstart: Debug ASP.NET Core avec le debugger Visual Studio
+# <a name="quickstart-debug-aspnet-core-with-the-visual-studio-debugger"></a>Démarrage rapide : déboguer ASP.NET Core avec le débogueur Visual Studio
 
 Le débogueur Visual Studio fournit de nombreuses fonctionnalités puissantes pour vous aider à déboguer vos applications. Cette rubrique vous offre un moyen rapide de vous familiariser avec quelques-unes des fonctionnalités de base.
 
@@ -31,7 +31,7 @@ Le débogueur Visual Studio fournit de nombreuses fonctionnalités puissantes po
     Appuyez sur **Échap** pour fermer la fenêtre de démarrage. Tapez **Ctrl+Q** pour ouvrir la zone de recherche, tapez **asp.net**, choisissez **Modèles**, puis choisissez **Créer une application web ASP.NET Core**. Dans la boîte de dialogue qui apparaît, choisissez **Créer**.
     ::: moniker-end
     ::: moniker range="vs-2017"
-    De la barre de menu haut, choisissez **File** > **New** > **Project**. Dans le volet gauche de la boîte de dialogue **Nouveau projet**, sous **Visual C#**, choisissez **Web** puis, dans le volet central, choisissez **Application web ASP.NET Core**. Tapez un nom comme **MyDbgApp**, puis cliquez sur **OK**.
+    Dans la barre de menus supérieure, choisissez **fichier**  >  **nouveau**  >  **projet**. Dans le volet gauche de la boîte de dialogue **Nouveau projet**, sous **Visual C#**, choisissez **Web** puis, dans le volet central, choisissez **Application web ASP.NET Core**. Tapez un nom comme **MyDbgApp**, puis cliquez sur **OK**.
 
     Dans la boîte de dialogue qui s’affiche, choisissez **Application web** dans le volet central, puis cliquez sur **OK**.
 
@@ -127,7 +127,7 @@ Si vous identifiez une modification que vous voulez tester dans votre code penda
 
 1. Appuyez plusieurs fois sur **F10** (ou **Déboguer > Pas à pas principal**) pour faire avancer le débogueur et pour exécuter le code modifié.
 
-    ![Modifier &amp; Continuer](../debugger/media/dbg-qs-edit-and-continue-aspnet.png "Modifier & Continuer")
+    ![Modifier & continuer](../debugger/media/dbg-qs-edit-and-continue-aspnet.png "Modifier & Continuer")
 
     **F10** fait avancer le débogueur d’une instruction à la fois, mais il effectue un pas à pas principal sur les fonctions au lieu d’un pas à pas détaillé (le code que vous ignorez s’exécute tout de même).
 
@@ -138,4 +138,4 @@ Pour plus d’informations sur l’utilisation de Modifier & Continuer et sur l
 Dans ce tutoriel, vous avez découvert comment démarrer le débogueur, parcourir le code pas à pas et inspecter des variables. Vous pouvez obtenir une présentation générale des fonctionnalités du débogueur et suivre des liens qui donnent accès à plus d’informations.
 
 > [!div class="nextstepaction"]
-> [Premier regard sur le débbugger](../debugger/debugger-feature-tour.md)
+> [Présentation du débogueur](../debugger/debugger-feature-tour.md)

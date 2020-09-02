@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: a852b0e5ac6c6a677caab97279a0b0cb0299d27f
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72670638"
 ---
 # <a name="how-to-track-your-code-by-customizing-the-scrollbar"></a>Comment : suivre votre code en personnalisant la barre de défilement
@@ -25,7 +25,7 @@ Quand vous travaillez sur de longs fichiers de code, il peut être difficile de 
 
 1. Vous pouvez configurer la barre de défilement pour y afficher les modifications du code, les points d'arrêt, les erreurs et les signets.
 
-     Ouvrez la page d’options **barre de défilement** (**Outils, options éditeur de texte). Tous les langages** ou une langue spécifique, ou tapez **barre de défilement** dans la fenêtre lancement rapide).
+     Ouvrez la page d’options **barre de défilement** (**Outils, options éditeur de texte). Tous les langages** ou une langue spécifique, ou tapez  **barre de défilement** dans la fenêtre lancement rapide).
 
 2. Sélectionnez **Afficher les annotations au-dessus de la barre de défilement verticale**, puis sélectionnez les annotations à afficher. (L’option **Marques** inclut les points d’arrêt et les signets.)
 
@@ -33,11 +33,11 @@ Quand vous travaillez sur de longs fichiers de code, il peut être difficile de 
 
      Voici à quoi ressemble la barre de défilement après la recherche d'une chaîne. Notez que toutes les instances de la chaîne sont affichées.
 
-     ![Barre de défilement après la recherche d’une chaîne.](../ide/media/enhancedscrollbarsearch.png "EnhancedScrollbarSearch")
+     ![Barre de défilement après recherche d’une chaîne.](../ide/media/enhancedscrollbarsearch.png "EnhancedScrollbarSearch")
 
      Voici la barre de défilement après le remplacement de toutes les instances de la chaîne. Vous voyez immédiatement que l'opération a causé quelques problèmes.
 
-     ![La barre de défilement après le remplacement d’une chaîne par des erreurs](../ide/media/enhancedscrollbarreplace.png "EnhancedScrollbarReplace")
+     ![Barre de défilement après remplacement d'une chaîne sans erreurs](../ide/media/enhancedscrollbarreplace.png "EnhancedScrollbarReplace")
 
 ### <a name="to-set-the-display-mode-for-the-scroll-bar"></a>Pour définir le mode d'affichage de la barre de défilement
 
@@ -47,9 +47,9 @@ Quand vous travaillez sur de longs fichiers de code, il peut être difficile de 
 
      Voici comment se présente l'exemple de recherche avec le mode mappage et une largeur moyenne :
 
-     ![Barre de défilement en mode carte](../ide/media/enhancedscrollbar.png "EnhancedScrollbar")
+     ![Barre de défilement dans la carte du code](../ide/media/enhancedscrollbar.png "EnhancedScrollbar")
 
-2. En mode mappage, pour activer les aperçus du code quand vous déplacez le curseur vers le haut et le bas dans la barre de défilement, sélectionnez l’option **Afficher l’info-bulle d’aperçu**. Voici le résultat :
+2. En mode mappage, pour activer les aperçus du code quand vous déplacez le curseur vers le haut et le bas dans la barre de défilement, sélectionnez l’option **Afficher l’info-bulle d’aperçu**. Voici à quoi cela ressemble :
 
      ![Barre de défilement avec une info-bulle](../ide/media/enhancedscrollbarsearchtooltip.png "EnhancedScrollbarSearchTooltip")
 

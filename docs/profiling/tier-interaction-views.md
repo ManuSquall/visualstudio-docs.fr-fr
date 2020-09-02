@@ -11,10 +11,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 96b5fed31238fbc0e46d9982080b3acb1082e9f9
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74778126"
 ---
 # <a name="tier-interaction-views"></a>Interaction de couche, vues
@@ -25,4 +25,4 @@ L’affichage des interactions de couche n’est possible que dans Visual Studio
 
 ## <a name="in-this-section"></a>Contenu de cette section
 
-[Interactions de couche, vue](../profiling/tier-interactions-view.md)
+[Interactions de couche (vue)](../profiling/tier-interactions-view.md)

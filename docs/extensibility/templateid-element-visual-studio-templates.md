@@ -1,5 +1,5 @@
 ---
-title: Élément TemplateID (Modèles de studio visuel) Microsoft Docs
+title: TemplateID, élément (modèles Visual Studio) | Microsoft Docs
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -15,16 +15,17 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 8eb5abac9c837b3022354d6da743ac8f21d5e41d
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80699065"
 ---
 # <a name="templateid-element-visual-studio-templates"></a>TemplateID, élément (modèles Visual Studio)
-Spécifie un identifiant pour un modèle d’élément qui est classé dans un groupe de modèles d’éléments par l’élément [TemplateGroupID.](../extensibility/templategroupid-element-visual-studio-templates.md)
+Spécifie un identificateur pour un modèle d’élément qui est catégorisé en un groupe de modèles d’élément par l’élément [TemplateGroupID](../extensibility/templategroupid-element-visual-studio-templates.md) .
 
- \<VSTemplate> \<TemplateData> \<TemplateID>
+ \<VSTemplate> \<TemplateData>
+ \<TemplateID>
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -48,14 +49,14 @@ Spécifie un identifiant pour un modèle d’élément qui est classé dans un g
 |[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Élément requis.<br /><br /> Définit la catégorie du modèle et comment il s’affiche dans la boîte de dialogue **Nouveau projet** ou **Ajouter un nouvel élément** .|
 
 ## <a name="text-value"></a>Valeur texte
- Un `string` qui représente un identifiant pour un modèle d’élément qui `TemplateGroupID` est classé dans un groupe de modèles d’élément par l’élément.
+ `string`Qui représente un identificateur pour un modèle d’élément qui est catégorisé en un groupe de modèles d’élément par l' `TemplateGroupID` élément.
 
 ## <a name="remarks"></a>Notes
  `TemplateID` est un élément facultatif.
 
- Si un fichier .vstemplate `TemplateID` omet l’élément, l’élément [Nom](../extensibility/name-element-visual-studio-templates.md) est utilisé comme identifiant pour le modèle.
+ Si un fichier. vstemplate omet l' `TemplateID` élément, l’élément [Name](../extensibility/name-element-visual-studio-templates.md) est utilisé comme identificateur pour le modèle.
 
- La valeur `TemplateID` de l’élément est utilisée avec l’enregistrement du système de projet (HKEY_LOCAL_MACHINE-SOFTWARE-Microsoft-VisualStudio-11.0-Projets\\) pour filtrer les modèles qui apparaissent dans la boîte de dialogue Add New **Item.**
+ La valeur de l' `TemplateID` élément est utilisée avec l’inscription du système de projet (HKEY_LOCAL_MACHINE \software\microsoft\visualstudio\11.0\Projects \\ ) pour filtrer les modèles qui s’affichent dans la boîte de dialogue **Ajouter un nouvel élément** .
 
 ## <a name="see-also"></a>Voir aussi
 - [Référence du schéma de modèle Visual Studio](../extensibility/visual-studio-template-schema-reference.md)

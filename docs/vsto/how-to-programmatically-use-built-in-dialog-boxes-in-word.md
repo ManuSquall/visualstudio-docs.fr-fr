@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 2c3273b22d98be1c22cf0c8cea2cb57e277b9b48
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85537616"
 ---
 # <a name="how-to-programmatically-use-built-in-dialog-boxes-in-word"></a>Comment : utiliser des boîtes de dialogue intégrées dans Word par programmation

@@ -1,5 +1,5 @@
 ---
-title: 'Erreur : Débogage en mode mixte pour les processus IA64 non pris en charge | Microsoft Docs'
+title: 'Erreur : le débogage en mode mixte des processus IA64 n’est pas pris en charge | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -17,13 +17,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 33dfa4fb7a303b02121098b0e517f95d6e40f586
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65697440"
 ---
-# <a name="error-mixed-mode-debugging-for-ia64-processes-is-unsupported"></a>Erreur : Le débogage en mode mixte des processus IA64 n’est pas pris en charge
+# <a name="error-mixed-mode-debugging-for-ia64-processes-is-unsupported"></a>Erreur : Le débogage en mode mixte des processus IA64 n'est pas pris en charge
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Le débogueur de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ne prend pas en charge le code natif et managé mixte de débogage dans un processus basé sur Itanium.  

@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 501b7f040cb841d19c06ccc8fe7615a5b4a5e70d
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72657345"
 ---
 # <a name="how-to-generate-templates-from-templates-by-using-escape-sequences"></a>Comment : générer des modèles à partir de modèles à l'aide de séquences d'échappement
@@ -25,7 +25,7 @@ Vous pouvez créer un modèle de texte qui crée un autre modèle de texte comme
 
 ### <a name="to-generate-a-text-template-from-within-a-text-template"></a>Pour générer un modèle de texte à partir d’un modèle de texte
 
-- Utilisez la barre oblique inverse (\\) comme caractère d’échappement pour produire les balises de balisage nécessaires dans le modèle de texte pour les directives, les instructions, les expressions et les fonctionnalités de classe dans un fichier de modèle de texte séparé.
+- Utilisez la barre oblique inverse ( \\ ) comme caractère d’échappement pour produire les balises de balisage nécessaires dans le modèle de texte pour les directives, les instructions, les expressions et les fonctionnalités de classe dans un fichier de modèle de texte séparé.
 
     ```
     \<#@ directive \#>
@@ -35,7 +35,7 @@ Vous pouvez créer un modèle de texte qui crée un autre modèle de texte comme
     ```
 
 ## <a name="example"></a>Exemple
- L’exemple suivant utilise des caractères d’échappement pour produire un modèle de texte à partir d’un modèle de texte. La directive `output` définit le type de fichier de destination sur le type de fichier de modèle de texte (. TT).
+ L’exemple suivant utilise des caractères d’échappement pour produire un modèle de texte à partir d’un modèle de texte. La `output` directive définit le type de fichier de destination sur le type de fichier de modèle de texte (. TT).
 
 ```csharp
 \<#@ output extension=".tt" \#>
