@@ -1,5 +1,5 @@
 ---
-title: Bibliothèque de contrôles (Code managé) Web | Microsoft Docs
+title: Bibliothèque de contrôles Web (code managé) | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -18,10 +18,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 031f894eb2e117a213f4f9fbbf08ac57a1512d61
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65688174"
 ---
 # <a name="web-control-library-managed-code"></a>Bibliothèque de contrôles Web (code managé)
@@ -47,9 +47,9 @@ Le modèle de projet de bibliothèque de contrôles Web permet de créer une DLL
   
 1. Créez le projet d'application hôte et le projet de contrôle Web dans la même solution.  
   
-2. Dans **l’Explorateur de solutions**, cliquez sur l’application hôte et choisissez **ajouter une référence**.  
+2. Dans **Explorateur de solutions**, cliquez avec le bouton droit sur l’application hôte et choisissez **Ajouter une référence**.  
   
 3. Ajoutez une référence au projet de contrôle Web.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Applications web ASP.NET](../debugger/debugging-preparation-aspnet-web-applications.md)
+ [Applications Web ASP.NET](../debugger/debugging-preparation-aspnet-web-applications.md)

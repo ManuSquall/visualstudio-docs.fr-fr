@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 62dddacaea1846c8e5d5da404ad7a16fde90f209
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72662415"
 ---
 # <a name="options-page-text-editor-node-properties"></a>Page Options, Éditeur de texte, propriétés de nœud
@@ -29,7 +29,7 @@ Ce document décrit certaines pages (ou collections de propriétés) associées 
 ## <a name="general"></a>Général
  `DTE.Properties("TextEditor", "General")`
 
-|Nom de l'élément de propriété|Value|Description|
+|Nom de l'élément de propriété|Valeur|Description|
 |------------------------|-----------|-----------------|
 |GoToAnchorAfterEscape|Get/Set (booléen)|Si la valeur est `True`, le fait d'appuyer sur Échap durant une sélection déplace le point d'insertion là où l'action qui a créé la sélection a été initiée. Si la valeur est `False`, le point d'insertion est déplacé à l'autre bout de la sélection.|
 |DragNDropTextEditing|Get/Set (booléen)|Détermine si vous pouvez faire glisser, dans le document, d'un emplacement à un autre, une zone de texte sélectionnée dans le cadre d'une opération Copier ou Couper/coller.|
@@ -48,7 +48,7 @@ Ce document décrit certaines pages (ou collections de propriétés) associées 
 
  Les options d'éditeur `PlainText` affectent les paramètres d'éditeur lorsque les fichiers texte sont modifiés. Chaque langage de programmation et package [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] dispose de ses propres paramètres **Éditeur de texte**. Par exemple, pour afficher ou modifier les paramètres d'éditeur [!INCLUDE[csprcs](../../includes/csprcs-md.md)], utilisez `DTE.Properties("TextEditor", "CSharp") or DTE.Properties("TextEditor", "CSharp-Specific")`. Pour les paramètres de l’éditeur de **SQL Script**, utilisez `DTE.Properties("TextEditor", "SQL ")`.
 
-|Nom de l'élément de propriété|Value|Description|
+|Nom de l'élément de propriété|Valeur|Description|
 |------------------------|-----------|-----------------|
 |AutoListMembers|Get/Set (booléen)|Détermine si une liste des membres disponibles s'affiche automatiquement lorsqu'un utilisateur tape un point à la suite d'une référence variable.|
 |AutoListParams|Get/Set (booléen)|Détermine si la description d'une liste d'arguments s'affiche automatiquement lorsque l'utilisateur tape une parenthèse ouvrante, ( , à la suite d'un nom de fonction.|
@@ -58,7 +58,7 @@ Ce document décrit certaines pages (ou collections de propriétés) associées 
 |WordWrapGlyphs|Get/Set (booléen)|Affiche un glyphe à la fin d'une ligne ; cela indique qu'elle se poursuit à la ligne suivante.|
 |EnableLeftClickForURLs|Get/Set (booléen)|Détermine si l'éditeur souligne les URL et permet d'accéder à l'URL en cliquant une fois sur le bouton gauche dans le navigateur Web inscrit du système.|
 |IndentStyle|Get/Set (<xref:EnvDTE.vsIndentStyle>)|Détermine le style de mise en retrait : Par défaut, Smart ou aucun.|
-|TabSize|Get/Set (Long)|Représente le nombre d'espaces auquel équivaut une tabulation. Échec s'il ne s'agit pas d'un entier compris entre 1 et 60.|
+|TabSize|Get/Set (Long)|Représente le nombre d’espaces qui correspondent à un onglet. La définition d’un entier en dehors de la plage comprise entre 1 et 60 (inclusive) échoue.|
 |InsertTabs|Get/Set (booléen)|En cas de valeur `True`, des caractères de tabulation sont utilisés pour le retrait.|
 |IndentSize|Get/Set (Long)|Représente le nombre d'espaces qui équivaut à un niveau de retrait. Échec s'il ne s'agit pas d'une valeur entière comprise entre 1 et 60.|
 |ShowLineNumbers|Get/Set (booléen)|Détermine si l'affichage d'un document de l'éditeur principal affiche des numéros de ligne dans la marge de gauche.|

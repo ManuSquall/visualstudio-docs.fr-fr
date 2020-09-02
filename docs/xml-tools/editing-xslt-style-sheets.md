@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 81bab324c58c06cc1ca553bae2f81faf474c4ad0
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75592839"
 ---
 # <a name="edit-xslt-style-sheets"></a>Modification des feuilles de style XSLT
@@ -25,7 +25,7 @@ Le tableau suivant décrit les fonctions spécifiques à la manipulation des feu
 
 **Coloration de la syntaxe**
 
-Les mots clés XSLT, tels que `template` et `match`, s’affichent dans la couleur de mot clé XSLT spécifiée par les paramètres des **polices et des couleurs** .
+Les mots clés XSLT, tels que `template` et `match` , sont affichés dans la couleur de mot clé XSLT spécifiée par les paramètres des **polices et des couleurs** .
 
 **Traits de soulignement ondulés**
 
@@ -35,11 +35,11 @@ L’éditeur XML utilise le fichier *XSLT. xsd* installé pour valider les feuil
 
 Le code placé dans des blocs de script est pris en charge par le débogueur XSLT ; vous pouvez donc définir des points d'arrêt et effectuer une exécution pas à pas dans le code du bloc de script.
 
-**Afficher la sortie XSLT**
+**Affichage de la sortie XSLT**
 
 Vous pouvez exécuter une transformation XSL et afficher la sortie de l’éditeur XML. Pour plus d’informations, consultez [procédure : exécution d’une transformation XSLT à partir de l’éditeur XML](../xml-tools/how-to-execute-an-xslt-transformation-from-the-xml-editor.md).
 
-**Déboguer XSLT**
+**Débogage XSLT**
 
 Vous pouvez lancer le débogueur XSLT à partir d’un fichier XSLT dans l’éditeur XML. Le débogueur prend en charge la définition de points d'arrêt dans le fichier XSLT, l'affichage de l'état d'exécution de XSLT, etc. Lorsque le pointeur est placé sur une variable XSLT, une info-bulle apparaît et affiche la valeur de la variable. Le débogueur peut permettre de déboguer une feuille de style ou une transformation XSLT compilée invoquée depuis une autre application. Pour plus d’informations, consultez [débogage XSLT](../xml-tools/debugging-xslt.md).
 

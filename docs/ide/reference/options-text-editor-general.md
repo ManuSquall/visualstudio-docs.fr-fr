@@ -34,13 +34,13 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: ed55d65555425b04749696b5510cfe799d2a1194
-ms.sourcegitcommit: ce3d0728ec1063ab548dac71c8eaf26d20450acc
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80472824"
 ---
-# <a name="options-dialog-box-text-editor--general"></a>Boîte de dialogue d’options : Rédacteur général de texte \>
+# <a name="options-dialog-box-text-editor--general"></a>Boîte de dialogue Options : éditeur de texte \> général
 
 Cette boîte de dialogue vous permet de modifier les paramètres globaux de l’éditeur de code et de texte de Visual Studio. Pour afficher cette boîte de dialogue, sélectionnez **Options** dans le menu **Outils**, développez le dossier **Éditeur de texte**, puis sélectionnez **Général**.
 
@@ -94,15 +94,15 @@ Quand elle est sélectionnée, cette option affiche une zone grise autour de la 
 
 Quand cette option est sélectionnée, des lignes verticales alignées avec les blocs de code structurés sont affichées dans l’éditeur, ce qui vous permet d’identifier facilement les différents blocs de code.
 
-### <a name="show-file-health-indicator"></a>Afficher l’indicateur de santé du fichier
+### <a name="show-file-health-indicator"></a>Afficher l’indicateur d’intégrité du fichier
 
-Une fois sélectionnée, une barre d’indicateur de santé (erreurs, avertissements), avec des options de nettoyage de code, sera affichée dans le coin inférieur gauche de l’éditeur.
+Lorsque cette option est sélectionnée, une barre d’état des indicateurs d’intégrité de fichier (erreurs, avertissements), avec les options de nettoyage du code, s’affiche dans le coin inférieur gauche de l’éditeur.
 
 ## <a name="see-also"></a>Voir aussi
 
 - [Options, Éditeur de texte, Tous les langages](../../ide/reference/options-text-editor-all-languages.md)
 - [Options, Éditeur de texte, Tous les langages, Tabulations](../../ide/reference/options-text-editor-all-languages-tabs.md)
 - [Options, Éditeur de texte, Extension de fichier](../../ide/reference/options-text-editor-file-extension.md)
-- [Identifier et personnaliser les raccourcis clavier](../../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md)
-- [Personnaliser l’éditeur](../how-to-change-text-case-in-the-editor.md)
-- [Using IntelliSense](../../ide/using-intellisense.md)
+- [Identification et personnalisation des raccourcis clavier](../../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md)
+- [Personnalisation de l’éditeur](../how-to-change-text-case-in-the-editor.md)
+- [Utilisation d’IntelliSense](../../ide/using-intellisense.md)

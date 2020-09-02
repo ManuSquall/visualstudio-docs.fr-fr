@@ -20,10 +20,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: eb21495954801d55c1db0bb9156a813ab73db683
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65687096"
 ---
 # <a name="wpf-msbuild-task-reference"></a>Référence des tâches MSBuild WPF
@@ -57,7 +57,7 @@ Le processus de génération de Windows Presentation Foundation (WPF) étend Mic
  Vérifie, met à jour ou supprime les identificateurs uniques (UID) pour localiser tous les éléments [!INCLUDE[TLA#tla_xaml](../includes/tlasharptla-xaml-md.md)] inclus dans les fichiers [!INCLUDE[TLA2#tla_xaml](../includes/tla2sharptla-xaml-md.md)] sources.  
   
  [UpdateManifestForBrowserApplication](../msbuild/updatemanifestforbrowserapplication-task.md)  
- Ajoute l’élément **\<hostInBrowser />** au manifeste d’application (*nom_projet*.exe.manifest) quand un projet [!INCLUDE[TLA#tla_xbap](../includes/tlasharptla-xbap-md.md)] est généré.  
+ Ajoute l' **\<hostInBrowser />** élément au manifeste d’application (*NomProjet*. exe. manifest) quand un [!INCLUDE[TLA#tla_xbap](../includes/tlasharptla-xbap-md.md)] projet est généré.  
   
 ## <a name="see-also"></a>Voir aussi  
  [MSBuild](https://msdn.microsoft.com/7c49aba1-ee6c-47d8-9de1-6f29a906e20b)

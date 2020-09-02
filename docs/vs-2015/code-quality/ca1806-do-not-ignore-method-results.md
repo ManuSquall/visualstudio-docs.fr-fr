@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 726cde42eb08ee5508481887fae2e9d2b059256c
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85543869"
 ---
 # <a name="ca1806-do-not-ignore-method-results"></a>CA1806 : N'ignorez pas les résultats des méthodes
@@ -32,7 +32,7 @@ ms.locfileid: "85543869"
 |Category|Microsoft. usage|
 |Modification avec rupture|Sans rupture|
 
-## <a name="cause"></a>Cause
+## <a name="cause"></a>Cause :
  Il existe plusieurs raisons possibles pour cet avertissement :
 
 - Un nouvel objet est créé, mais n’est jamais utilisé.
@@ -52,7 +52,7 @@ ms.locfileid: "85543869"
 
  Si la méthode A appelle la méthode B, mais n’utilise pas la nouvelle instance de chaîne que la méthode B retourne. Transmettez l’instance comme argument à une autre méthode, assignez l’instance à une variable. Ou supprimez l’appel s’il n’est pas nécessaire.
 
- -ou-
+ - ou -
 
  Si la méthode A appelle la méthode B, mais n’utilise pas le HRESULT ou le code d’erreur retourné par la méthode. Utilisez le résultat dans une instruction conditionnelle, assignez le résultat à une variable ou transmettez-le en tant qu’argument à une autre méthode.
 

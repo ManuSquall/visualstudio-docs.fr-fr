@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentTextEvents2::onInsertText Microsoft Docs
+title: 'IDebugDocumentTextEvents2 :: onInsertText | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: ce03984d199fd404b7430b5342a06b51801af2e4
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80731485"
 ---
 # <a name="idebugdocumenttextevents2oninserttext"></a>IDebugDocumentTextEvents2::onInsertText
-Informe le paquet de déboise que le texte a été inséré dans le document.
+Notifie le package de débogage que du texte a été inséré dans le document.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -43,12 +43,12 @@ int onInsert( 
 
 ## <a name="parameters"></a>Paramètres
 `pos`\
-[dans] Une [structure TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) qui indique où le texte a été inséré.
+dans Structure [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) qui indique où le texte a été inséré.
 
 `dwNumToInsert`\
-[dans] Spécifie le nombre de caractères de texte qui ont été insérés.
+dans Spécifie le nombre de caractères du texte inséré.
 
-## <a name="return-value"></a>Valeur de retour
+## <a name="return-value"></a>Valeur renvoyée
  En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
 ## <a name="see-also"></a>Voir aussi

@@ -7,10 +7,10 @@ ms.date: 12/20/2019
 ms.technology: vs-ide-sdk
 ms.assetid: D5245AB0-8404-426B-B538-F49125E672B2
 ms.openlocfilehash: dd4db2502c65e9330bde5f475fc97b2e86a49e4a
-ms.sourcegitcommit: 054815dc9821c3ea219ae6f31ebd9cd2dc8f6af5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80544025"
 ---
 # <a name="extending-visual-studio-for-mac"></a>Extension de Visual Studio pour Mac
@@ -23,7 +23,7 @@ Pour personnaliser Visual Studio pour Mac, vous pouvez créer un package d’ext
 
 ![Architecture des compléments](media/extending-visual-studio-mac-addin1.png)
 
-Pour qu’un package d’extension soit créé à partir de Visual Studio pour Mac, il doit avoir des extensions qui sont créées à partir de points d’extension préexistants dans l’IDE Visual Studio pour Mac. Lorsqu’un paquet d’extension repose sur un point d’extension défini dans un hôte add-in, il est dit avoir une _dépendance_ à ce paquet d’extension.
+Pour qu’un package d’extension soit créé à partir de Visual Studio pour Mac, il doit avoir des extensions qui sont créées à partir de points d’extension préexistants dans l’IDE Visual Studio pour Mac. Lorsqu’un package d’extension repose sur un point d’extension défini dans un hôte de complément, il est dit qu’il a une _dépendance_   sur ce package d’extension.
 
 L’avantage de cette conception modulaire est que Visual Studio pour Mac est extensible : il existe de nombreux points d’extension sur lesquels peuvent être créés des packages d’extension personnalisés. La prise en charge de C# et de F#, des outils de débogage et des modèles de projet sont des exemples de packages d’extension existants.
 
@@ -36,7 +36,7 @@ Cette section présente les différents fichiers générés par Add-in Maker et 
 
 ## <a name="attribute-files"></a>Fichiers d’attributs
 
-Les packages d’extension stockent des métadonnées sur leur nom, leur version, leurs dépendances et d’autres informations dans des attributs C#. Add-in Maker crée deux fichiers, `AddinInfo.cs` et `AssemblyInfo.cs`, pour stocker et organiser ces informations. Les paquets d’extension doivent avoir * `Addin` *un ID unique et un espace de nom spécifiés dans leur attribut :
+Les packages d’extension stockent des métadonnées sur leur nom, leur version, leurs dépendances et d’autres informations dans des attributs C#. Add-in Maker crée deux fichiers, `AddinInfo.cs` et `AssemblyInfo.cs`, pour stocker et organiser ces informations. Les packages d’extension doivent avoir un ID et un espace de noms uniques spécifiés dans leur * `Addin` attribut*:
 
 ```csharp
 [assembly:Addin (
@@ -180,13 +180,13 @@ Avant de nous pencher sur les détails de l’extension spécifique à Visual St
 * [Points d’extension du service de langage et de l’éditeur](/visualstudio/extensibility/language-service-and-editor-extension-points)
 * [Une vidéo de présentation de l’architecture de l’éditeur](https://www.youtube.com/watch?v=PkYVztKjO9A)
 
-Avec ces ressources en main, les concepts primaires que [`ITextBuffer`](/dotnet/api/microsoft.visualstudio.text.itextbuffer) vous [`ITextView`](/dotnet/api/microsoft.visualstudio.text.editor.itextview)devez connaître sont un et un :
+Avec ces ressources en main, les principaux concepts auxquels vous devez être familiarisé sont un [`ITextBuffer`](/dotnet/api/microsoft.visualstudio.text.itextbuffer) et un [`ITextView`](/dotnet/api/microsoft.visualstudio.text.editor.itextview) :
 
 * Un `ITextBuffer` est une représentation de texte en mémoire qui peut être modifiée au fil du temps. La propriété `CurrentSnapshot` sur `ITextBuffer` retourne une représentation *immuable* du contenu actuel de la mémoire tampon, une instance de `ITextSnapshot`. Lorsqu’une modification est effectuée sur la mémoire tampon, la propriété CurrentSnapshot est mise à jour vers la dernière version. Les analyseurs peuvent inspecter l’instantané de texte sur n’importe quel thread et son contenu a l’assurance de ne jamais changer.
 
 * Un `ITextView` est la représentation de l’interface utilisateur de la façon dont `ITextBuffer` est rendu sur un écran dans le contrôle d'édition. Il contient une référence à sa mémoire tampon de texte, ainsi que `Caret`, `Selection` et d’autres concepts liés à l’interface utilisateur.
 
-Pour une [`MonoDevelop.Ide.Gui.Document`](http://source.monodevelop.com/#MonoDevelop.Ide/MonoDevelop.Ide.Gui/Document.cs,4e960d4735f089b5)donnée, vous pouvez `ITextBuffer` `ITextView` récupérer `Document.GetContent<ITextBuffer>()` `Document.GetContent<ITextView>()` le sous-jacent associé et via et respectivement.
+Pour un donné [`MonoDevelop.Ide.Gui.Document`](http://source.monodevelop.com/#MonoDevelop.Ide/MonoDevelop.Ide.Gui/Document.cs,4e960d4735f089b5) , vous pouvez récupérer les sous-jacents `ITextBuffer` et `ITextView` via `Document.GetContent<ITextBuffer>()` et `Document.GetContent<ITextView>()` respectivement.
 
 ## <a name="additional-information"></a>Informations supplémentaires
 

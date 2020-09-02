@@ -11,21 +11,21 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: d4864cc20813bc57b35e315a3b415cb6902e6361
-ms.sourcegitcommit: 054815dc9821c3ea219ae6f31ebd9cd2dc8f6af5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80544003"
 ---
 # <a name="net-naming-conventions-for-editorconfig"></a>Conventions de nommage .NET pour EditorConfig
 
-Les conventions de nommage concernent le nommage d’éléments de code tels que les classes, les propriétés et les méthodes. Par exemple, vous pouvez spécifier que les membres `_`du public doivent être capitalisés ou que les champs privés doivent commencer par . Vous pouvez appliquer ces règles en les spécifiant dans un [fichier .editorconfig](../ide/create-portable-custom-editor-options.md). Les violations des règles de nommage apparaissent dans la **Liste d’erreurs** ou sous forme de suggestion sous le nom, selon la gravité choisie pour vos règles. Il n’est pas nécessaire de générer le projet pour afficher les violations.
+Les conventions de nommage concernent le nommage d’éléments de code tels que les classes, les propriétés et les méthodes. Par exemple, vous pouvez spécifier que les membres publics doivent être en majuscules ou que les champs privés doivent commencer par `_` . Vous pouvez appliquer ces règles en les spécifiant dans un [fichier .editorconfig](../ide/create-portable-custom-editor-options.md). Les violations des règles de nommage apparaissent dans la **Liste d’erreurs** ou sous forme de suggestion sous le nom, selon la gravité choisie pour vos règles. Il n’est pas nécessaire de générer le projet pour afficher les violations.
 
 Pour chaque convention de nommage, vous devez spécifier les symboles auxquels elle s’applique, un style de nommage et un niveau de gravité pour l’application de la convention, en utilisant les propriétés décrites ci-dessous. L’ordre des propriétés n’est pas important.
 
 Pour commencer, choisissez un titre pour votre règle de nommage que vous utiliserez dans chacune des propriétés nécessaires pour décrire complètement la règle. Par exemple, `public_members_must_be_capitalized` est un nom descriptif correct pour une règle de nommage. Cette page se référera au titre que vous choisissez par **<namingRuleTitle\>** dans les sections qui suivent.
 
-## <a name="symbols"></a>Symboles
+## <a name="symbols"></a>symboles
 
 Tout d’abord, identifiez un groupe de symboles auxquels appliquer la règle de nommage. Cette propriété se présente sous la forme suivante :
 
@@ -58,7 +58,7 @@ La liste suivante répertorie les valeurs autorisées, et vous pouvez spécifier
 - local_function
 
 > [!NOTE] 
-> Les membres tuple ne sont pas actuellement pris en charge.
+> Les membres de tuple ne sont pas pris en charge actuellement.
 
 ### <a name="accessibility-levels-of-symbols"></a>Niveaux d’accessibilité des symboles
 
@@ -187,7 +187,7 @@ Les conventions de nommage doivent être classées de la plus spécifique à la 
 
 ::: moniker range=">=vs-2019"
 
-À partir de Visual Studio 2019 version 16.2, l’ordre dans lequel les règles de nommage sont définies dans un fichier EditorConfig n’a pas d’importance. À la place, Visual Studio trie automatiquement les règles de nommage en fonction de la définition des règles proprement dites. [L’extension du service linguistique EditorConfig](https://marketplace.visualstudio.com/items?itemName=MadsKristensen.EditorConfig) peut analyser un fichier EditorConfig et signaler les cas où la commande de règles dans le fichier est différente de ce que le compilateur utilisera au moment de l’exécution.
+À partir de Visual Studio 2019 version 16.2, l’ordre dans lequel les règles de nommage sont définies dans un fichier EditorConfig n’a pas d’importance. À la place, Visual Studio trie automatiquement les règles de nommage en fonction de la définition des règles proprement dites. L' [extension du service de langage EditorConfig](https://marketplace.visualstudio.com/items?itemName=MadsKristensen.EditorConfig) peut analyser un fichier EditorConfig et signaler les cas où l’ordonnancement des règles dans le fichier est différent de ce que le compilateur utilisera au moment de l’exécution.
 
 Si vous utilisez une version antérieure de Visual Studio, les conventions de nommage doivent être classées de la plus spécifique à la moins spécifique dans le fichier EditorConfig. La première règle applicable rencontrée est la seule règle appliquée. Toutefois, s’il existe plusieurs *propriétés* de règle portant le même nom, la propriété la plus récemment trouvée portant ce nom est prioritaire. Pour plus d’informations, consultez [Priorité et hiérarchie des fichiers](create-portable-custom-editor-options.md#file-hierarchy-and-precedence).
 
@@ -229,7 +229,7 @@ Remplaçons maintenant la gravité de la violation par `warning` :
 dotnet_naming_rule.public_members_must_be_capitalized.severity = warning
 ```
 
-Si vous fermez et rouvrez votre fichier de code, au lieu de voir la suggestion sous la violation du nom, vous voyez un squiggle vert et un avertissement dans la liste d’erreur:
+Si vous fermez et rouvrez votre fichier de code, au lieu de voir la suggestion sous la violation de nom, vous voyez un tilde vert et un avertissement dans le Liste d’erreurs :
 
 ![Avertissement de règle de nommage](media/editorconfig-naming-rule-warning.png)
 
@@ -239,4 +239,4 @@ Si vous fermez et rouvrez votre fichier de code, au lieu de voir la suggestion s
 - [Conventions de mise en forme](editorconfig-formatting-conventions.md)
 - [Conventions d'affectation de noms Roslyn](https://github.com/dotnet/roslyn/blob/master/.editorconfig#L63)
 - [Créer des options d’éditeur personnalisé portables](../ide/create-portable-custom-editor-options.md)
-- [Paramètres de convention de codage .NET pour EditorConfig](editorconfig-code-style-settings-reference.md)
+- [Paramètres de Convention de codage .NET pour EditorConfig](editorconfig-code-style-settings-reference.md)

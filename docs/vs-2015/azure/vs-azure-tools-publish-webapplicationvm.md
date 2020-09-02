@@ -12,10 +12,10 @@ ms.topic: conceptual
 ms.date: 11/11/2016
 ms.author: ghogen
 ms.openlocfilehash: e35f5decee2a908a9d1075ff3f6365a1d358c7b2
-ms.sourcegitcommit: dae5dfd626277b58ebd7b21a75757f683f1eacc5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/06/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "70739320"
 ---
 # <a name="publish-webapplicationvm-windows-powershell-script"></a>Publish-WebApplicationVM (script Windows PowerShell)
@@ -35,81 +35,81 @@ Publish-WebApplicationVM
 ### <a name="configuration"></a>Configuration
 Le chemin d'accès au fichier de configuration JSON qui décrit les détails du déploiement.
 
-| Alias | none |
+| Alias | Aucun |
 | --- | --- |
-| Obligatoire ? |true |
-| Position |named |
-| Valeur par défaut |none |
-| Accepter l'entrée de pipeline ? |False |
-| Accepter les caractères génériques ? |False |
+| Requis ? |true |
+| Position |nommée |
+| Valeur par défaut |Aucun |
+| Accepter l'entrée de pipeline ? |false |
+| Accepter les caractères génériques ? |false |
 
 ### <a name="subscriptionname"></a>SubscriptionName
 Nom de l’abonnement Azure dans lequel vous souhaitez créer la machine virtuelle.
 
-| Alias | none |
+| Alias | Aucun |
 | --- | --- |
-| Obligatoire ? |False |
-| Position |named |
+| Requis ? |false |
+| Position |nommée |
 | Valeur par défaut |Utilise le premier abonnement dans le fichier d’abonnement |
-| Accepter l'entrée de pipeline ? |False |
-| Accepter les caractères génériques ? |False |
+| Accepter l'entrée de pipeline ? |false |
+| Accepter les caractères génériques ? |false |
 
 ### <a name="webdeploypackage"></a>WebDeployPackage
-Le chemin d’accès au package de déploiement web à publier sur la machine virtuelle. Vous pouvez créer ce package à l'aide de l'Assistant Publier le site web dans Visual Studio. Voir [Guide pratique pour Créer un package de déploiement web dans Visual Studio](https://msdn.microsoft.com/library/dd465323.aspx).
+Le chemin d’accès au package de déploiement web à publier sur la machine virtuelle. Vous pouvez créer ce package à l'aide de l'Assistant Publier le site web dans Visual Studio. Consultez [Création d’un package de déploiement web dans Visual Studio](https://msdn.microsoft.com/library/dd465323.aspx).
 
-| Alias | none |
+| Alias | Aucun |
 | --- | --- |
-| Obligatoire ? |False |
-| Position |named |
-| Valeur par défaut |none |
-| Accepter l'entrée de pipeline ? |False |
-| Accepter les caractères génériques ? |False |
+| Requis ? |false |
+| Position |nommée |
+| Valeur par défaut |Aucun |
+| Accepter l'entrée de pipeline ? |false |
+| Accepter les caractères génériques ? |false |
 
 ### <a name="allowuntrusted"></a>AllowUntrusted
 Si la valeur est true, autorise l’utilisation de certificats qui ne sont pas signés par une autorité racine approuvée.
 
-| Alias | none |
+| Alias | Aucun |
 | --- | --- |
-| Obligatoire ? |False |
-| Position |named |
-| Valeur par défaut |False |
-| Accepter l'entrée de pipeline ? |False |
-| Accepter les caractères génériques ? |False |
+| Requis ? |false |
+| Position |nommée |
+| Valeur par défaut |false |
+| Accepter l'entrée de pipeline ? |false |
+| Accepter les caractères génériques ? |false |
 
 ### <a name="vmpassword"></a>VMPassword
 Informations d’identification de votre compte de machine virtuelle. Exemple : -VMPassword @{Name = "admin"; Password = "mdp"}
 
-| Alias | none |
+| Alias | Aucun |
 | --- | --- |
-| Obligatoire ? |False |
-| Position |named |
-| Valeur par défaut |none |
-| Accepter l'entrée de pipeline ? |False |
-| Accepter les caractères génériques ? |False |
+| Requis ? |false |
+| Position |nommée |
+| Valeur par défaut |Aucun |
+| Accepter l'entrée de pipeline ? |false |
+| Accepter les caractères génériques ? |false |
 
 ### <a name="databaseserverpassword"></a>DatabaseServerPassword
 Informations d’identification de la base de données SQL Azure. Exemple : -DatabaseServerPassword @{Name = "admin"; Password = "mdp"}
 
-| Alias | none |
+| Alias | Aucun |
 | --- | --- |
-| Obligatoire ? |False |
-| Position |named |
-| Valeur par défaut |none |
-| Accepter l'entrée de pipeline ? |False |
-| Accepter les caractères génériques ? |False |
+| Requis ? |false |
+| Position |nommée |
+| Valeur par défaut |Aucun |
+| Accepter l'entrée de pipeline ? |false |
+| Accepter les caractères génériques ? |false |
 
 ### <a name="sendhostmessagestooutput"></a>SendHostMessagesToOutput
 Si true, imprime des messages à partir du script dans le flux de sortie.
 
-| Alias | none |
+| Alias | Aucun |
 | --- | --- |
-| Obligatoire ? |False |
-| Position |named |
-| Valeur par défaut |False |
-| Accepter l'entrée de pipeline ? |False |
-| Accepter les caractères génériques ? |False |
+| Requis ? |false |
+| Position |nommée |
+| Valeur par défaut |false |
+| Accepter l'entrée de pipeline ? |false |
+| Accepter les caractères génériques ? |false |
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
 Pour obtenir une explication complète de la façon d'utiliser le script pour créer des environnements de développement et de test, consultez [Utilisation des scripts Windows PowerShell pour la publication dans des environnements de développement et de test](vs-azure-tools-publishing-using-powershell-scripts.md).
 
 Le fichier de configuration JSON spécifie les détails de ce qui doit être déployé. Il inclut les informations que vous avez spécifiées lorsque vous avez créé le projet, comme le nom, le groupe d’affinités, l’image VHD et la taille de la machine virtuelle. Il inclut également les points de terminaison sur la machine virtuelle, les bases de données à configurer, le cas échéant, et les paramètres de déploiement web. Le code suivant montre un exemple de fichier de configuration JSON :

@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 627b798827cd0b966d1f34336c7e1119841f9d4a
-ms.sourcegitcommit: ce3d0728ec1063ab548dac71c8eaf26d20450acc
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80472630"
 ---
 # <a name="step-3-assign-a-random-icon-to-each-label"></a>Étape 3 : Affecter une icône aléatoire à chaque étiquette
@@ -26,17 +26,17 @@ Si les icônes se trouvent dans les mêmes cellules à chaque partie, le jeu ne 
 
 ## <a name="to-assign-a-random-icon-to-each-label"></a>Pour assigner une icône aléatoire à chaque contrôle Label
 
-1. Avant d'ajouter le code suivant, examinez le fonctionnement de la méthode. Il y a un `foreach` nouveau mot `For Each` clé : dans C et dans Visual Basic. (L'une des lignes est commentée exprès, comme expliqué à la fin de cette procédure.)
+1. Avant d'ajouter le code suivant, examinez le fonctionnement de la méthode. Il y a un nouveau mot clé : `foreach` en C# et `For Each` dans Visual Basic. (L'une des lignes est commentée exprès, comme expliqué à la fin de cette procédure.)
 
      [!code-csharp[VbExpressTutorial4Step2_3_4#2](../ide/codesnippet/CSharp/step-3-assign-a-random-icon-to-each-label_1.cs)]
      [!code-vb[VbExpressTutorial4Step2_3_4#2](../ide/codesnippet/VisualBasic/step-3-assign-a-random-icon-to-each-label_1.vb)]
 
       > [!IMPORTANT]
-      > Utilisez le contrôle du langage de programmation en haut à droite de cette page pour voir l’extrait de code CMD ou l’extrait de code Visual Basic.<br><br>![Contrôle linguistique de programmation pour Docs.Microsoft.com](../ide/media/docs-programming-language-control.png)
+      > Utilisez le contrôle de langage de programmation en haut à droite de cette page pour afficher l’extrait de code C# ou l’extrait de code Visual Basic.<br><br>![Contrôle du langage de programmation pour Docs.Microsoft.com](../ide/media/docs-programming-language-control.png)
 
 2. Ajoutez la méthode `AssignIconsToSquares()`, comme indiqué dans l'étape précédente. Vous pouvez l’insérer juste en dessous du code que vous avez ajouté à l’[Étape 2 : ajouter un objet aléatoire et une liste d’icônes](../ide/step-2-add-a-random-object-and-a-list-of-icons.md).
 
-     Comme mentionné précédemment, il ya `AssignIconsToSquares()` quelque chose `foreach` de nouveau `For Each` dans votre méthode: une boucle en C et dans Visual Basic. Vous pouvez utiliser une boucle `For Each` chaque fois que vous voulez répéter plusieurs fois une action. Ici, vous souhaitez exécuter les mêmes instructions pour chaque étiquette dans votre <xref:System.Windows.Forms.TableLayoutPanel>, comme l'illustre le code suivant. La première ligne crée une variable nommée `control` qui stocke chaque contrôle un par un, lorsque les instructions de la boucle de ce contrôle sont exécutées.
+     Comme mentionné précédemment, il existe un nouveau code dans votre `AssignIconsToSquares()` méthode : une `foreach` boucle en C# et `For Each` dans Visual Basic. Vous pouvez utiliser une boucle `For Each` chaque fois que vous voulez répéter plusieurs fois une action. Ici, vous souhaitez exécuter les mêmes instructions pour chaque étiquette dans votre <xref:System.Windows.Forms.TableLayoutPanel>, comme l'illustre le code suivant. La première ligne crée une variable nommée `control` qui stocke chaque contrôle un par un, lorsque les instructions de la boucle de ce contrôle sont exécutées.
 
      [!code-csharp[VbExpressTutorial4Step2_3_4#14](../ide/codesnippet/CSharp/step-3-assign-a-random-icon-to-each-label_2.cs)]
      [!code-vb[VbExpressTutorial4Step2_3_4#14](../ide/codesnippet/VisualBasic/step-3-assign-a-random-icon-to-each-label_2.vb)]
@@ -44,18 +44,18 @@ Si les icônes se trouvent dans les mêmes cellules à chaque partie, le jeu ne 
     > [!NOTE]
     > Les noms « iconLabel » et « control » sont utilisés car ils sont explicites. Vous pouvez les remplacer par des noms quelconques : le code fonctionnera exactement de la même façon à condition que vous modifiiez le nom dans chaque instruction à l'intérieur de la boucle.
 
-     La méthode `AssignIconsToSquares()` effectue une itération sur les contrôles Label dans le TableLayoutPanel et exécute les mêmes instructions pour chacun d'eux. Ces instructions tirent une icône aléatoire de la liste que vous avez ajoutée à l’[Étape 2 : ajouter un objet aléatoire et une liste d’icônes](../ide/step-2-add-a-random-object-and-a-list-of-icons.md). Pour rappel, chacune de ces icônes est une lettre dans la police Webdings, c’est pourquoi ils sont exprimés comme texte dans cette méthode. Vous avez inclus deux de chaque icône dans la liste, de sorte qu’il y aurait une paire d’icônes attribuées à des contrôles aléatoires d’étiquette.
+     La méthode `AssignIconsToSquares()` effectue une itération sur les contrôles Label dans le TableLayoutPanel et exécute les mêmes instructions pour chacun d'eux. Ces instructions tirent une icône aléatoire de la liste que vous avez ajoutée à l’[Étape 2 : ajouter un objet aléatoire et une liste d’icônes](../ide/step-2-add-a-random-object-and-a-list-of-icons.md). En guise de rappel, chacune de ces icônes est une lettre de la police Webdings, c’est pourquoi elles sont exprimées sous forme de texte dans cette méthode. Vous avez inclus deux de chaque icône dans la liste, afin qu’il y ait une paire d’icônes assignées aux contrôles d’étiquette aléatoires.
 
      Examinez plus attentivement le code qui s'exécute à l'intérieur de la boucle `foreach` ou `For Each`. Ce code est reproduit ici.
 
      [!code-csharp[VbExpressTutorial4Step2_3_4#16](../ide/codesnippet/CSharp/step-3-assign-a-random-icon-to-each-label_3.cs)]
      [!code-vb[VbExpressTutorial4Step2_3_4#16](../ide/codesnippet/VisualBasic/step-3-assign-a-random-icon-to-each-label_3.vb)]
 
-     La première ligne convertit la variable **contrôle** en étiquette nommée **iconLabel**. La ligne suivante est une instruction `if` qui vérifie si la conversion a été effectuée. Si tel n'est pas le cas, les instructions figurant dans l'instruction `if` sont exécutées. (Comme vous vous en souvenez peut-être des tutoriels précédents, la `if` déclaration est utilisée pour évaluer n’importe quelle condition que vous spécifiez.) La première ligne `if` de l’instruction crée une variable nommée **randomNumber** qui contient un nombre aléatoire qui correspond à l’un des éléments de la liste des icônes. Pour cela, elle utilise la méthode <xref:System.Random.Next> de l'objet <xref:System.Random> que vous avez créé précédemment. La méthode `Next` retourne le nombre aléatoire. Cette ligne utilise également la propriété <xref:System.Collections.Generic.List%601.Count> de la liste d’**icônes** pour déterminer la plage dans laquelle choisir le nombre aléatoire. La ligne suivante affecte un des éléments de la liste d'icônes à la propriété <xref:System.Windows.Forms.Label.Text> de l'étiquette. La ligne de commentaire est expliquée plus loin dans cette rubrique. Enfin, la dernière ligne de l'instruction `if` supprime de la liste l'icône ajoutée au formulaire.
+     La première ligne convertit la variable **contrôle** en étiquette nommée **iconLabel**. La ligne suivante est une instruction `if` qui vérifie si la conversion a été effectuée. Si tel n'est pas le cas, les instructions figurant dans l'instruction `if` sont exécutées. (Comme vous pouvez le rappeler dans les didacticiels précédents, l' `if` instruction est utilisée pour évaluer la condition que vous spécifiez.) La première ligne de l' `if` instruction crée une variable nommée **nombreal** qui contient un nombre aléatoire correspondant à l’un des éléments de la liste d’icônes. Pour cela, elle utilise la méthode <xref:System.Random.Next> de l'objet <xref:System.Random> que vous avez créé précédemment. La méthode `Next` retourne le nombre aléatoire. Cette ligne utilise également la propriété <xref:System.Collections.Generic.List%601.Count> de la liste d’**icônes** pour déterminer la plage dans laquelle choisir le nombre aléatoire. La ligne suivante affecte un des éléments de la liste d'icônes à la propriété <xref:System.Windows.Forms.Label.Text> de l'étiquette. La ligne de commentaire est expliquée plus loin dans cette rubrique. Enfin, la dernière ligne de l'instruction `if` supprime de la liste l'icône ajoutée au formulaire.
 
      Rappelez-vous que si vous n'êtes pas sûr de ce que fait une partie du code, vous pouvez placez le pointeur de la souris sur un élément du code et lire l'info-bulle qui s'affiche. Vous pouvez également parcourir pas à pas chaque ligne de code pendant l'exécution du programme en utilisant le débogueur Visual Studio. Pour plus d’informations, consultez [Comment utiliser le débogueur dans Visual Studio ?](https://msdn.microsoft.com/vstudio/ee672313.aspx) ou [Naviguer dans le code avec le débogueur](../debugger/navigating-through-code-with-the-debugger.md).
 
-3. Pour remplir la grille de jeu d'icônes, vous devez appeler la méthode `AssignIconsToSquares()` dès que le programme démarre. Si vous utilisez C, ajoutez une déclaration juste `InitializeComponent()` en dessous de l’appel à la méthode dans le _constructeur_ **Form1,** de sorte que votre formulaire appelle votre nouvelle méthode pour se configurer avant qu’elle ne soit affichée. Les constructeurs sont appelées lorsque vous créez un objet, tel qu'une classe ou un struct. Pour plus d’informations, consultez [Constructeurs (guide de programmation C#)](/dotnet/csharp/programming-guide/classes-and-structs/constructors) ou [Utilisation des constructeurs et des destructeurs](/previous-versions/visualstudio/visual-studio-2008/2z08e49e\(v\=vs.90\)) (Visual Basic).
+3. Pour remplir la grille de jeu d'icônes, vous devez appeler la méthode `AssignIconsToSquares()` dès que le programme démarre. Si vous utilisez C#, ajoutez une instruction juste sous l’appel à la `InitializeComponent()` méthode dans le constructeur **Form1** _constructor_, afin que votre formulaire appelle votre nouvelle méthode pour se configurer avant de s’afficher. Les constructeurs sont appelées lorsque vous créez un objet, tel qu'une classe ou un struct. Pour plus d’informations, consultez [Constructeurs (guide de programmation C#)](/dotnet/csharp/programming-guide/classes-and-structs/constructors) ou [Utilisation des constructeurs et des destructeurs](/previous-versions/visualstudio/visual-studio-2008/2z08e49e\(v\=vs.90\)) (Visual Basic).
 
      [!code-csharp[VbExpressTutorial4Step2_3_4#13](../ide/codesnippet/CSharp/step-3-assign-a-random-icon-to-each-label_4.cs)]
 
@@ -85,6 +85,6 @@ Si les icônes se trouvent dans les mêmes cellules à chaque partie, le jeu ne 
 
 ## <a name="to-continue-or-review"></a>Pour continuer ou examiner
 
-- Pour passer à l’étape suivante tutoriel, voir **[Étape 4: Ajouter un gestionnaire d’événements cliquez sur chaque étiquette](../ide/step-4-add-a-click-event-handler-to-each-label.md)**.
+- Pour passer à l’étape suivante du didacticiel, consultez **[étape 4 : ajouter un gestionnaire d’événements Click à chaque étiquette](../ide/step-4-add-a-click-event-handler-to-each-label.md)**.
 
 - Pour revenir à l’étape précédente du tutoriel, consultez [Étape 2 : ajouter un objet aléatoire et une liste d’icônes](../ide/step-2-add-a-random-object-and-a-list-of-icons.md).

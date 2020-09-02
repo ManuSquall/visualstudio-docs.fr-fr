@@ -10,10 +10,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: c167e98f9419842876aed713e008b8746064669a
-ms.sourcegitcommit: dab57cebd484228e6f0cf7ab1b9685c575410c06
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/25/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "82153034"
 ---
 # <a name="get-started-with-unit-testing"></a>Bien démarrer avec les tests unitaires
@@ -40,7 +40,7 @@ Cette section décrit comment créer un projet de test unitaire.
       }
    ```
 
-1. Dans l’**Explorateur de solutions**, sélectionnez le nœud de la solution. Puis, dans la barre de menus supérieure, sélectionnez **fichier** > **Ajouter** > **un nouveau projet**.
+1. Dans l’**Explorateur de solutions**, sélectionnez le nœud de la solution. Puis, dans la barre de menus supérieure, sélectionnez **fichier**  >  **Ajouter**  >  **un nouveau projet**.
 
 1. Dans la boîte de dialogue Nouveau projet, recherchez un modèle de projet de test unitaire pour le framework de test que vous voulez utiliser, puis sélectionnez-le.
 
@@ -145,7 +145,7 @@ Cette section décrit comment créer un projet de test unitaire.
    Pour ouvrir l’Explorateur de tests, sélectionnez **tester** > l' **Explorateur de tests** dans la barre de menus supérieure.
    ::: moniker-end
    ::: moniker range="vs-2017"
-   Pour ouvrir l’Explorateur de tests, choisissez **tester** > l' **Explorateur de tests** **Windows** > dans la barre de menus supérieure.
+   Pour ouvrir l’Explorateur de tests, choisissez **tester** > **Windows** > l' **Explorateur de tests** Windows dans la barre de menus supérieure.
    ::: moniker-end
 
 1. Exécutez vos tests unitaires en cliquant sur **Tout exécuter**.

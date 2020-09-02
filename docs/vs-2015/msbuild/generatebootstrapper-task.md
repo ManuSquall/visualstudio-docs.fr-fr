@@ -20,10 +20,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 488caf02a20b4f0855df1ba2ef64c85e70e1a6a4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68149627"
 ---
 # <a name="generatebootstrapper-task"></a>GenerateBootstrapper, tâche
@@ -95,11 +95,11 @@ Fournit un moyen automatisé de détecter, télécharger et installer une applic
   
    Indique un emplacement où le programme d’amorçage doit rechercher les composants requis à installer. Ce paramètre peut prendre les valeurs suivantes :  
   
-  - `HomeSite`: indique que le prérequis est hébergé par le fournisseur du composant.  
+  - `HomeSite` : indique que le composant requis est hébergé par le fournisseur du composant.  
   
-  - `Relative`: Indique que le composant requis est au même emplacement de l’application.  
+  - `Relative` : indique que le composant requis est au même emplacement que l’application.  
   
-  - `Absolute`: indique que tous les composants doivent se trouver à une URL centralisée. Cette valeur doit être utilisée conjointement avec le paramètre d’entrée `ComponentsUrl`.  
+  - `Absolute` : indique que tous les composants doivent se trouver dans une URL centralisée. Cette valeur doit être utilisée conjointement avec le paramètre d’entrée `ComponentsUrl`.  
   
     Si `ComponentsLocation` n’est pas spécifié, `HomeSite` est utilisé par défaut.  
   
@@ -113,7 +113,7 @@ Fournit un moyen automatisé de détecter, télécharger et installer une applic
   
    Paramètre `Boolean` facultatif.  
   
-   Si `true`, le programme d’amorçage copie tous les fichiers de sortie dans le chemin d’accès spécifié dans le paramètre `OutputPath`. Les valeurs du paramètre `BootstrapperComponentFiles` doivent toutes être basées sur ce chemin d’accès. Si `false`, les fichiers ne sont pas copiés, et les valeurs `BootstrapperComponentFiles` sont basées sur la valeur du paramètre `Path`.  La valeur par défaut de ce paramètre est `true`.  
+   Si `true`, le programme d’amorçage copie tous les fichiers de sortie dans le chemin d’accès spécifié dans le paramètre `OutputPath`. Les valeurs du paramètre `BootstrapperComponentFiles` doivent toutes être basées sur ce chemin d’accès. Si `false`, les fichiers ne sont pas copiés, et les valeurs `BootstrapperComponentFiles` sont basées sur la valeur du paramètre `Path`.  La valeur par défaut de ce paramètre est `true`.  
   
 - `Culture`  
   
@@ -149,10 +149,10 @@ Fournit un moyen automatisé de détecter, télécharger et installer une applic
   
    Paramètre `Boolean` facultatif.  
   
-   Si `true`, le programme d’amorçage exécute la validation XSD sur les éléments de programme d’amorçage d’entrée spécifiés. La valeur par défaut de ce paramètre est `false`.  
+   Si `true`, le programme d’amorçage exécute la validation XSD sur les éléments de programme d’amorçage d’entrée spécifiés. La valeur par défaut de ce paramètre est `false`.  
   
 ## <a name="remarks"></a>Notes  
- En plus des paramètres énumérés ci-dessus, cette tâche hérite des paramètres de la classe <xref:Microsoft.Build.Tasks.TaskExtension>, qui elle-même hérite de la classe <xref:Microsoft.Build.Utilities.Task>. Pour obtenir la liste de ces paramètres supplémentaires et leurs descriptions, consultez [TaskExtension Base Class](../msbuild/taskextension-base-class.md).  
+ En plus des paramètres énumérés ci-dessus, cette tâche hérite des paramètres de la classe <xref:Microsoft.Build.Tasks.TaskExtension> , qui elle-même hérite de la classe <xref:Microsoft.Build.Utilities.Task> . Pour obtenir la liste de ces paramètres supplémentaires et leurs descriptions, consultez [TaskExtension Base Class](../msbuild/taskextension-base-class.md).  
   
 ## <a name="example"></a>Exemple  
  L’exemple suivant utilise la tâche `GenerateBootstrapper` pour installer une application qui doit avoir le composant requis [!INCLUDE[dnprdnlong](../includes/dnprdnlong-md.md)] installé.  
@@ -179,5 +179,5 @@ Fournit un moyen automatisé de détecter, télécharger et installer une applic
 ```  
   
 ## <a name="see-also"></a>Voir aussi  
- [Tâches](../msbuild/msbuild-tasks.md)   
- [Task Reference (Informations de référence sur les tâches MSBuild)](../msbuild/msbuild-task-reference.md)
+ [Décrites](../msbuild/msbuild-tasks.md)   
+ [Référence de tâche](../msbuild/msbuild-task-reference.md)

@@ -10,13 +10,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: a8cd0f0e5a420155cfc6786e4a8542bc59f93ece
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65690219"
 ---
-# <a name="visualizing-eventsource-events-as-markers"></a>Visualisation des événements EventSource comme marqueurs
+# <a name="visualizing-eventsource-events-as-markers"></a>Visualisation des événements EventSource en tant que marqueurs
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Le visualiseur concurrentiel peut afficher des événements EventSource comme marqueurs, dont vous pouvez contrôler le mode d’affichage. Pour afficher les marqueurs EventSource, inscrivez le GUID du fournisseur ETW à l’aide de la boîte de dialogue [Paramètres avancés](../profiling/advanced-settings-dialog-box-concurrency-visualizer.md). Le visualiseur concurrentiel a des conventions par défaut pour représenter les événements EventSource comme [marqueurs d’indicateurs](../profiling/flag-markers.md), [marqueurs d’intervalles](../profiling/span-markers.md) et [marqueurs de messages](../profiling/message-markers.md). Vous pouvez personnaliser l’affichage des événements EventSource en ajoutant des champs personnalisés aux événements. Pour plus d’informations sur les marqueurs, consultez [Marqueurs du visualiseur concurrentiel](../profiling/concurrency-visualizer-markers.md). Pour plus d’informations sur les événements EventSource, consultez <xref:System.Diagnostics.Tracing>.  
@@ -37,11 +37,11 @@ Le visualiseur concurrentiel peut afficher des événements EventSource comme ma
   
 |Niveau ETW|Importance dans le visualiseur concurrentiel|  
 |---------------|---------------------------------------|  
-|win:LogAlways|Normale|  
+|win:LogAlways|Normal|  
 |win:Critical|Critique|  
 |win:Error|Critique|  
-|win:Warning|Haute|  
-|win:Informational|Normale|  
+|win:Warning|Élevé|  
+|win:Informational|Normal|  
 |win:Verbose|Faible|  
 |Supérieur à win:verbose|Faible|  
   
@@ -73,11 +73,11 @@ Le visualiseur concurrentiel peut afficher des événements EventSource comme ma
   
 |Valeur de cvImportance|Importance dans le visualiseur concurrentiel|  
 |------------------------|---------------------------------------|  
-|0|Normale|  
+|0|Normal|  
 |1|Critique|  
-|2|Haute|  
-|3|Haute|  
-|4|Normale|  
+|2|Élevé|  
+|3|Élevé|  
+|4|Normal|  
 |5|Faible|  
 |Toutes les autres erreurs|Faible|  
   

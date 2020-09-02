@@ -1,5 +1,5 @@
 ---
-title: Modifications requises pour les projets Office est migré vers .NET Framework 4, 4.5
+title: Modifications requises pour les projets Office migrés vers .NET Framework 4, 4,5
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -13,18 +13,18 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 82ae3f8a43b65e6ff617192dc38149691d229455
-ms.sourcegitcommit: cc5fd59e5dc99181601b7db8b28d7f8a83a36bab
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/11/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "66836056"
 ---
-# <a name="required-changes-to-run-office-projects-that-you-migrate-to-the-net-framework-4-or-the-net-framework-45"></a>Modifications requises pour exécuter les projets Office que vous migrez vers le .NET Framework 4 ou .NET Framework 4.5
-  Si le framework cible d’un projet Office est remplacé par la [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] ou version ultérieure à partir d’une version antérieure du .NET Framework, vous devez effectuer les tâches suivantes pour vous assurer que la solution puisse s’exécuter sur l’ordinateur de développement et sur les ordinateurs des utilisateurs finaux :
+# <a name="required-changes-to-run-office-projects-that-you-migrate-to-the-net-framework-4-or-the-net-framework-45"></a>Modifications requises pour exécuter des projets Office que vous migrez vers le .NET Framework 4 ou le .NET Framework 4,5
+  Si la version cible du .NET Framework d’un projet Office est remplacée par la [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] version ou ultérieure d’une version antérieure du .NET Framework, vous devez effectuer les tâches suivantes pour vous assurer que la solution peut s’exécuter sur l’ordinateur de développement et sur les ordinateurs des utilisateurs finaux :
 
 - Supprimez l'élément <xref:System.Security.SecurityTransparentAttribute> du projet si vous avez effectué une mise à niveau à partir de Visual Studio 2008.
 
-- Effectuer un **Clean** commande dans Visual Studio pour être en mesure d’exécuter ou déboguer le projet sur l’ordinateur de développement.
+- Exécutez une commande **Clean** dans Visual Studio pour être en mesure d’exécuter ou de déboguer le projet sur l’ordinateur de développement.
 
 - Mettez à jour le composant requis .NET Framework du projet.
 
@@ -35,7 +35,7 @@ ms.locfileid: "66836056"
 ## <a name="remove-the-securitytransparent-attribute-from-projects-that-you-upgrade-from-visual-studio-2008"></a>Supprimer l’attribut SecurityTransparent des projets que vous mettez à niveau à partir de Visual Studio 2008
  Si vous mettez à niveau un projet Office à partir de Visual Studio 2008 et que la version cible de .Net Framework du projet est ensuite remplacée par [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] ou une version ultérieure, vous devez supprimer <xref:System.Security.SecurityTransparentAttribute> du projet. Visual Studio ne supprime pas automatiquement cet attribut. Si vous ne supprimez pas cet attribut, un message d'erreur s'affiche lorsque vous compilez le projet.
 
- Pour plus d’informations sur les conditions dans lesquelles Visual Studio peut modifier le framework cible d’un projet mis à niveau vers la [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] ou [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)], consultez [mise à niveau et migrer des solutions Office](../vsto/upgrading-and-migrating-office-solutions.md).
+ Pour plus d’informations sur les conditions dans lesquelles Visual Studio peut modifier la version cible du .NET Framework d’un projet mis à niveau vers [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] ou [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)] , consultez [mettre à niveau et migrer des solutions Office](../vsto/upgrading-and-migrating-office-solutions.md).
 
 #### <a name="to-remove-the-securitytransparentattribute"></a>Pour supprimer l'attribut SecurityTransparentAttribute
 
@@ -56,18 +56,18 @@ ms.locfileid: "66836056"
     [assembly: SecurityTransparent()]
     ```
 
-## <a name="perform-the-clean-command-to-debug-or-run-a-project-on-the-development-computer"></a>Exécuter la commande clean pour déboguer ou exécuter un projet sur l’ordinateur de développement
- Si un projet Office a été créé avant que le framework cible du projet est modifié en le [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] ou version ultérieure, vous devez effectuer un **Clean** commande, puis régénérez le projet après la modification du framework cible. Si n’effectuent pas un **Clean** commande, vous recevrez un <xref:System.Runtime.InteropServices.COMException> lorsque vous essayez de déboguer ou exécuter le projet reciblé.
+## <a name="perform-the-clean-command-to-debug-or-run-a-project-on-the-development-computer"></a>Exécuter la commande nettoyer pour déboguer ou exécuter un projet sur l’ordinateur de développement
+ Si un projet Office a été généré avant la modification de la version cible du .NET Framework du projet [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] , vous devez exécuter une commande **Clean** , puis régénérer le projet après la modification du Framework cible. Si vous n’exécutez pas une commande **Clean** , vous recevrez un <xref:System.Runtime.InteropServices.COMException> lorsque vous essaierez de déboguer ou d’exécuter le projet reciblé.
 
- Pour plus d’informations sur la **Clean** de commande, consultez [solutions Office Build](../vsto/building-office-solutions.md).
+ Pour plus d’informations sur la commande **Clean** , consultez [créer des solutions Office](../vsto/building-office-solutions.md).
 
 ## <a name="update-the-prerequisites-for-deployment"></a>Mettre à jour les conditions préalables pour le déploiement
- Lorsque vous reciblez un projet Office vers [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] ou une version ultérieure, vous devez également mettre à jour les composants requis .NET Framework correspondants dans le **conditions préalables** boîte de dialogue. Sinon, le déploiement ClickOnce ou le projet InstallShield Limited Edition recherche et installe une version antérieure du .NET Framework.
+ Lorsque vous reciblez un projet Office vers [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] ou version ultérieure, vous devez également mettre à jour la condition préalable .NET Framework correspondante dans la boîte de dialogue **composants requis** . Sinon, le déploiement ClickOnce ou le projet InstallShield Limited Edition recherche et installe une version antérieure du .NET Framework.
 
- Pour plus d’informations sur la mise à jour de la configuration requise pour le déploiement pour les ordinateurs des utilisateurs finaux, consultez [Comment : Installer les composants requis sur les ordinateurs des utilisateurs finaux pour exécuter des solutions Office](https://msdn.microsoft.com/74dd2c52-838f-4abf-b2b4-4d7b0c2a0a98).
+ Pour plus d’informations sur la mise à jour des composants requis pour le déploiement sur les ordinateurs des utilisateurs finaux, consultez [procédure : installer les composants requis sur les ordinateurs des utilisateurs finaux pour exécuter des solutions Office](https://msdn.microsoft.com/74dd2c52-838f-4abf-b2b4-4d7b0c2a0a98).
 
-## <a name="reinstall-solutions-on-end-user-computers"></a>Réinstallation de solutions sur les ordinateurs des utilisateurs finaux
- Si vous utilisez ClickOnce pour déployer une solution Office qui cible .NET Framework 3.5, puis que vous reciblez le projet vers [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] ou une version ultérieure, les utilisateurs finaux doivent désinstaller la solution puis la réinstaller une fois que vous l'avez republiée. Si vous republiez la solution reciblée et si la solution est mis à jour sur les ordinateurs des utilisateurs finaux, les utilisateurs finaux recevront un <xref:System.Runtime.InteropServices.COMException> lorsqu’ils exécutent la solution mise à jour.
+## <a name="reinstall-solutions-on-end-user-computers"></a>Réinstaller des solutions sur les ordinateurs des utilisateurs finaux
+ Si vous utilisez ClickOnce pour déployer une solution Office qui cible .NET Framework 3.5, puis que vous reciblez le projet vers [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] ou une version ultérieure, les utilisateurs finaux doivent désinstaller la solution puis la réinstaller une fois que vous l'avez republiée. Si vous republiez la solution reciblée et que la solution est mise à jour sur les ordinateurs des utilisateurs finaux, les utilisateurs finaux recevront un <xref:System.Runtime.InteropServices.COMException> lorsqu’ils exécuteront la solution mise à jour.
 
 ## <a name="see-also"></a>Voir aussi
-- [Migrer des solutions Office vers .NET Framework 4 ou version ultérieure](../vsto/migrating-office-solutions-to-the-dotnet-framework-4-or-later.md)
+- [Migrer des solutions Office vers le .NET Framework 4 ou version ultérieure](../vsto/migrating-office-solutions-to-the-dotnet-framework-4-or-later.md)

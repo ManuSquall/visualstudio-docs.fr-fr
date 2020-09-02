@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 91daa7e195435f33b93e6286cb19d820b4418d48
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85903840"
 ---
 # <a name="create-an-extension-with-an-editor-item-template"></a>Créer une extension avec un modèle d’élément d’éditeur
@@ -36,7 +36,7 @@ Vous pouvez utiliser les modèles d’élément inclus dans le kit de développe
 
     - *EditorClassifier1ClassificationDefinition.cs* contient la `EditorClassifier1ClassificationDefinition` classe.
 
-    - *EditorClassifier1Format.cs* contient la `EditorClassifier1Format` classe.
+    - *EditorClassifier1Format.cs* contient la `EditorClassifier1Format`  classe.
 
     - *EditorClassifier1Provider.cs* contient la `EditorClassifier1Provider` classe.
 

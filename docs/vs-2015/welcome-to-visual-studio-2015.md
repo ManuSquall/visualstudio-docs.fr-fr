@@ -14,10 +14,10 @@ caps.latest.revision: 128
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: f3252ea7cada8261a97832e4e621849e0fb0c91e
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85543713"
 ---
 # <a name="welcome-to-visual-studio-2015"></a>Bienvenue dans Visual Studio 2015
@@ -38,7 +38,7 @@ Bienvenue dans Visual Studio ! Nous vous offrons tout ce dont vous avez besoin p
 
  Vous pouvez installer Visual Studio 2015 en le téléchargeant à partir de [Téléchargements Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/). Pour en savoir plus sur le processus d’installation, consultez [installer Visual Studio 2015](./install/install-visual-studio-2015.md).
 
-## <a name="extend-visual-studio"></a>Extension de Visual Studio
+## <a name="extend-visual-studio"></a>Étendre Visual Studio
  Ajoutez votre propre extension Visual Studio afin d’inclure un outil ou un script que vous utilisez souvent en codage. Vous pouvez créer des éléments de menu et des fenêtres d’outils personnalisés afin d’intégrer vos propres outils dans l’environnement de développement de Visual Studio. Vous pouvez prolonger l’éditeur Visual Studio pour analyser ou fixer le code, ou ajouter un nouveau type de projet de manière à inclure exactement ce dont vous avez besoin.
 
  Pour obtenir la dernière version des outils d’extensibilité de Visual Studio (Visual Studio SDK), consultez [Visual Studio SDK](./extensibility/visual-studio-sdk.md).
@@ -110,7 +110,7 @@ Bienvenue dans Visual Studio ! Nous vous offrons tout ce dont vous avez besoin p
 
 - [Python](./python/getting-started-with-python.md)
 
-## <a name="in-this-section"></a>Dans cette section
+## <a name="in-this-section"></a>Contenu de cette section
 
 - [Nouveautés de Visual Studio 2015](./what-s-new-in-visual-studio-2015.md)
 

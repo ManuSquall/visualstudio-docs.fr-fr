@@ -1,12 +1,12 @@
 ---
 ms.openlocfilehash: 034d4c1e528ff33343b6da1dab3a2de96a0228fc
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/20/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "70197126"
 ---
-## <a name="prerequisites"></a>Conditions préalables requises
+## <a name="prerequisites"></a>Prérequis
 
 ::: moniker range=">=vs-2019"
 
@@ -23,7 +23,7 @@ ms.locfileid: "70197126"
 ::: moniker-end
 
 * Un projet ASP.NET, ASP.NET Core, Python ou Node.js. Si vous n’avez pas encore de projet, sélectionnez une option ci-dessous :
-  * ASP.NET Core: Suivez [Quickstart: Utilisez Visual Studio pour créer votre première application web ASP.NET Core](../../ide/quickstart-aspnet-core.md), ou utilisez **File** > **New Project**, sélectionnez Visual C **.** > **.NET Core**, puis sélectionnez **ASP.NET’application Web de base**. À l’invite, sélectionnez le modèle **Application web (Model-View-Controller)**, vérifiez que l’option **Aucune authentification** est activée, puis sélectionnez **OK**.
+  * ASP.net Core : suivre [le Guide de démarrage rapide : utilisez Visual Studio pour créer votre première application Web ASP.net Core](../../ide/quickstart-aspnet-core.md)ou utilisez **fichier**  >  **nouveau projet**, sélectionnez **Visual C#**  >  **.net Core**, puis sélectionnez **ASP.net Core application Web**. À l’invite, sélectionnez le modèle **Application web (Model-View-Controller)**, vérifiez que l’option **Aucune authentification** est activée, puis sélectionnez **OK**.
   * Python : suivez [Démarrage rapide : créer votre première application web Python à l’aide de Visual Studio](../../ide/quickstart-python.md), ou utilisez **Fichier** > **Nouveau projet**, sélectionnez **Python **, puis **Projet web Flask**.
   * Node.js : suivez [Démarrage rapide : utiliser Visual Studio pour créer votre première application Node.js](../../ide/quickstart-nodejs.md), ou utilisez **Fichier** > **Nouveau projet**, sélectionnez **JavaScript**, puis **Application web Node.js vide**.
 

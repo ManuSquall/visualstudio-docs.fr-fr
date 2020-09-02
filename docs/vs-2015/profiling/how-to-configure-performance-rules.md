@@ -1,5 +1,5 @@
 ---
-title: 'Procédure : Configurer les règles de performance | Microsoft Docs'
+title: Guide pratique pour configurer les règles de performance | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -12,20 +12,20 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 71593496613c75485fd30481777d0fcc1102c11c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68179584"
 ---
-# <a name="how-to-configure-performance-rules"></a>Procédure : Configurer des règles de performance
+# <a name="how-to-configure-performance-rules"></a>Guide pratique pour configurer les règles de performance
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Les avertissements de performance des outils de profilage Visual Studio signalent les problèmes qui surviennent dans une application profilée et qui peuvent ralentir l’exécution du programme. Les avertissements peuvent également vous informer que vous devez changer de méthode de collecte pour collecter des données plus utiles. Les avertissements de performance sont générés automatiquement dans une session de profilage et s’affichent dans la fenêtre **Liste d’erreurs** lorsque vous ouvrez un fichier de données de profilage dans [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)]. Certains avertissements peuvent ne pas s’appliquer aux scénarios qui vous intéressent, et certains avertissements peuvent ne pas être déclenchés de manière appropriée. Vous pouvez configurer l’affichage et le masquage des avertissements de performance.  
   
 ### <a name="to-configure-profiler-performance-warnings"></a>Pour configurer les avertissements de performance du profileur  
   
-1. Dans le menu **Outils**, cliquez sur **Options**.  
+1. Dans le menu **Outils** , cliquez sur **Options**.  
   
 2. Développez **Outils d’analyse des performances**, puis cliquez sur **Règles**.  
   

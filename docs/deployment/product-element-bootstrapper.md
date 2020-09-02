@@ -1,5 +1,5 @@
 ---
-title: '&lt;Produit&gt; élément (programme d’amorçage) | Microsoft Docs'
+title: '&lt;Product &gt; , élément (programme d’amorçage) | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -16,14 +16,14 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: d6dca2c7838ce40f8d24e3afbd898206d0cb9191
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/06/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "66747449"
 ---
-# <a name="ltproductgt-element-bootstrapper"></a>&lt;Produit&gt; élément (programme d’amorçage)
-Le `Product` élément est l’élément XML de niveau supérieur à l’intérieur d’un fichier de produit.
+# <a name="ltproductgt-element-bootstrapper"></a>&lt;Product &gt; , élément (programme d’amorçage)
+L' `Product` élément est l’élément XML de niveau supérieur à l’intérieur d’un fichier produit.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -138,14 +138,14 @@ ProductCode
 ```
 
 ## <a name="elements-and-attributes"></a>Éléments et attributs
- Le `Product` élément est requis dans un fichier de produit. Il possède l’attribut suivant.
+ L' `Product` élément est requis dans un fichier de produit. Il a l’attribut suivant.
 
 |Attribut|Description|
 |---------------|-----------------|
-|`ProductCode`|Un identificateur unique pour le produit.|
+|`ProductCode`|Identificateur unique du produit.|
 
 ## <a name="example"></a>Exemple
- L’exemple de code suivant montre un fichier de produit complet pour l’installation du .NET Framework.
+ L’exemple de code suivant montre un fichier produit complet pour l’installation de l' .NET Framework.
 
 ```xml
 <?xml version="1.0" encoding="utf-8" ?>
@@ -250,4 +250,4 @@ ProductCode
 ```
 
 ## <a name="see-also"></a>Voir aussi
-- [Informations de référence sur le schéma de produit et de package](../deployment/product-and-package-schema-reference.md)
+- [Référence du schéma de produit et de package](../deployment/product-and-package-schema-reference.md)

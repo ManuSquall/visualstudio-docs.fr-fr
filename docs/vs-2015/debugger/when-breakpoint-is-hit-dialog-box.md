@@ -1,5 +1,5 @@
 ---
-title: Lorsque le point d’arrêt est boîte de dialogue de positionnement | Microsoft Docs
+title: Quand le point d’arrêt est atteint, boîte de dialogue | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -22,25 +22,25 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 9a7cd140a22c435df0875c089a69476d3e1e61cf
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68149406"
 ---
 # <a name="when-breakpoint-is-hit-dialog-box"></a>Lorsque le point d'arrêt est atteint, boîte de dialogue
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Avec cette boîte de dialogue, vous pouvez personnaliser l’action qui se produit lorsqu’un point d’arrêt est atteint.  
+Cette boîte de dialogue vous permet de personnaliser l’action qui se produit lorsqu’un point d’arrêt est atteint.  
   
 ## <a name="uielement-list"></a>Liste des éléments de l'interface utilisateur  
  **Imprimer un message**  
- Imprime un message, à l’aide de la syntaxe DebuggerDisplay. Pour plus d’informations, consultez [à l’aide de l’attribut DebuggerDisplay](../debugger/using-the-debuggerdisplay-attribute.md).  
+ Imprime un message à l’aide de la syntaxe DebuggerDisplay. Pour plus d’informations, consultez [utilisation de l’attribut DebuggerDisplay](../debugger/using-the-debuggerdisplay-attribute.md).  
   
  Cette zone de texte prend également en charge les mots clés spéciaux (tels que $ADDRESS) qui peuvent être utilisés par eux-mêmes ou entre les accolades d’une expression DebuggerDisplay. Les mots clés disponibles sont répertoriés dans la boîte de dialogue.  
   
  **Continuer l’exécution**  
- Ce contrôle est activé uniquement lorsque **imprimer un Message** est sélectionné. Ce contrôle est sélectionné, vous pouvez utiliser un point d’arrêt comme un point de trace pour effectuer le suivi de l’exécution de votre programme, au lieu d’arrêt lorsque l’emplacement est atteint.  
+ Ce contrôle est activé uniquement lorsque l’option **imprimer un message** est sélectionnée. Une fois ce contrôle sélectionné, vous pouvez utiliser un point d’arrêt comme point de trace pour suivre l’exécution de votre programme, au lieu de l’arrêter lorsque l’emplacement est atteint.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Utilisation des points d’arrêt](../debugger/using-breakpoints.md)   

@@ -11,10 +11,10 @@ dev_langs:
 ms.workload:
 - nodejs
 ms.openlocfilehash: ac917248915129b8d93dc776ac7d35a2ed227069
-ms.sourcegitcommit: b8ec700fc4c14c68c6ce280f29c19870261990d8
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/31/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "87454594"
 ---
 # <a name="compile-typescript-code-aspnet-core"></a>Compiler le code de la machine à écrire (ASP.NET Core)
@@ -75,7 +75,7 @@ Si Visual Studio est installé, la node.exe regroupée avec elle est automatique
 
    La configuration précédente fournit uniquement une présentation de base de la configuration de la machine à écrire. Pour plus d’informations sur les autres options, consultez [tsconfig.jssur](https://www.typescriptlang.org/docs/handbook/tsconfig-json.html).
 
-### <a name="build-the-application"></a>Générer l’application
+### <a name="build-the-application"></a>Créer l’application
 
 1. Ajoutez des fichiers de machine à écrire (*. TS*) ou de jsx (*. TSX*) à votre projet, puis ajoutez le code de la machine à écrire. Pour obtenir un exemple simple de la méthode de machine à écrire, utilisez ce qui suit :
 
@@ -110,7 +110,7 @@ Si vous rencontrez des problèmes où Visual Studio utilise une version de Node.
 
 ### <a name="nuget-package-structure-details"></a>Détails de la structure du package NuGet
 
-`Microsoft.TypeScript.MSBuild.nupkg`contient deux dossiers principaux :
+`Microsoft.TypeScript.MSBuild.nupkg` contient deux dossiers principaux :
 
 - dossier de *Build*
 

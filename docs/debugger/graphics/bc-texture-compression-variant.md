@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: c5faf19632d746105deed3a36af6943627594175
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72736160"
 ---
 # <a name="bc-texture-compression-variant"></a>Variante de compression de texture BC
@@ -54,11 +54,11 @@ Permet la compression de blocs sur les textures dont le format de pixel est une 
 
  Si le format de votre texture ne figure pas dans la liste, la texture n'est pas modifiée.
 
-## <a name="restrictions-and-limitations"></a>Restrictions et limitations
+## <a name="restrictions-and-limitations"></a>Limitations et restrictions
  Parfois, les textures créées avec une variation des formats d'image B8G8R8A8 ou R8G8B8A8 n'utilisent pas réellement le canal alpha, mais la variante n'a aucun moyen de savoir s'il est utilisé ou non. Pour assurer des résultats corrects dans le cas où le canal alpha est utilisé, la variante encode toujours ces formats au format BC3, qui est moins efficace. Vous pouvez aider l'analyse des frames graphiques à mieux identifier le potentiel de rendu de votre application avec cette variante en utilisant une variation du format d'image B8G8R8X8 quand vous n'utilisez pas le canal alpha. La variante pourra ainsi utiliser le format BC1, qui est plus efficace.
 
 ## <a name="example"></a>Exemple
  Cette variante compresse les blocs des textures au moment de l'exécution, avant l'appel à `CreateTexture2D`. Nous déconseillons cette approche pour le code de production, car les textures non compressées consomment plus d'espace disque et cette étape supplémentaire peut accroître sensiblement les temps de chargement dans votre application. De plus, la compression de blocs nécessite des ressources de calcul importantes pour l'encodage. Nous vous recommandons plutôt de compresser vos textures hors connexion en utilisant un éditeur ou un processeur d'images qui fait partie de votre pipeline de génération. Ces approches réduisent les besoins en espace disque, éliminent les surcharges de votre application au moment de l’exécution et autorisent un temps de traitement supérieur pour une qualité d’image optimale.
 
 ## <a name="see-also"></a>Voir aussi
-- [Variante de dimensions de la texture moitié/un quart](half-quarter-texture-dimensions-variant.md)
+- [Variante de dimensions de texture demi-quart](half-quarter-texture-dimensions-variant.md)

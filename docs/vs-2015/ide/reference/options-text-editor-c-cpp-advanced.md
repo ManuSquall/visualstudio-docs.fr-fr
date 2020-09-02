@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 236135cd4b4f813471ece7a0eeb1b221c7242df9
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72662365"
 ---
 # <a name="options-text-editor-cc-advanced"></a>Options, Éditeur de texte, C/C++, Avancé
@@ -27,10 +27,10 @@ ms.locfileid: "72662365"
 
 En modifiant ces options, vous pouvez changer le comportement lié à IntelliSense et la base de données de navigation quand vous programmez en C ou C++.
 
- Pour accéder à cette page, dans le volet gauche de la boîte de dialogue **Options**, développez **Éditeur de texte**, **C/C++** , puis choisissez **Avancé**.
+ Pour accéder à cette page, dans le volet gauche de la boîte de dialogue **Options**, développez **Éditeur de texte**, **C/C++**, puis choisissez **Avancé**.
 
 > [!NOTE]
-> Il est possible que pour certains des éléments de l'interface utilisateur de Visual Studio, votre ordinateur affiche des noms ou des emplacements différents de ceux indiqués dans les instructions suivantes. L’édition de Visual Studio dont vous disposez et les paramètres que vous utilisez déterminent ces éléments. Consultez [Personnalisation des paramètres de développement dans Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).
+> Il est possible que pour certains des éléments de l'interface utilisateur de Visual Studio, votre ordinateur affiche des noms ou des emplacements différents de ceux indiqués dans les instructions suivantes. L'édition de Visual Studio dont vous disposez et les paramètres que vous utilisez déterminent ces éléments. Consultez [Personnalisation des paramètres de développement dans Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).
 
 ## <a name="browsingnavigation"></a>Navigation de fichiers/répertoires
  Vous ne devez jamais utiliser ces options, sauf dans les rares cas où une solution est tellement volumineuse que l’activité de base de données consomme une quantité inacceptable de ressources système.
@@ -96,9 +96,9 @@ En modifiant ces options, vous pouvez changer le comportement lié à IntelliSen
 
  **Désactiver les tildes** Désactive les tildes d’erreur IntelliSense. Les « tildes » rouges ne s’affichent pas dans la fenêtre de l’éditeur, mais l’erreur apparaît toujours dans la fenêtre Liste d’erreurs.
 
- **Désactiver la saisie semi-automatique #include** Désactive la saisie semi-automatique des instructions `#include`.
+ **Désactiver la saisie semi-automatique #include** Désactive la saisie semi-automatique des `#include` instructions.
 
- **Utiliser la barre oblique dans #include la saisie semi-automatique** Déclenche la saisie semi-automatique des instructions `#include` lorsque « / » est utilisé. Le délimiteur par défaut est une barre oblique inverse « \ ». Le compilateur peut accepter les deux, donc utilisez cette option pour spécifier le délimiteur que votre base de code utilise.
+ **Utiliser la barre oblique dans #include la saisie semi-automatique** Déclenche la saisie semi-automatique des `#include` instructions lorsque « / » est utilisé. Le délimiteur par défaut est une barre oblique inverse « \ ». Le compilateur peut accepter les deux, donc utilisez cette option pour spécifier le délimiteur que votre base de code utilise.
 
  **Nombre maximal d’unités de traduction mises en cache** Nombre maximal d’unités de traduction qui restent actives à un moment donné pour les demandes IntelliSense. Vous devez spécifier une valeur entre 2 et 15. Ce nombre est directement lié au nombre maximal de processus VCPkgSrv.exe qui s’exécutent (pour une instance donnée de Visual Studio). La valeur par défaut est 2, mais si vous avez de la mémoire disponible, vous pouvez augmenter cette valeur et éventuellement obtenir des performances légèrement supérieures dans IntelliSense.
 
@@ -106,7 +106,7 @@ En modifiant ces options, vous pouvez changer le comportement lié à IntelliSen
 
  **Désactiver la liste agressive des membres** La liste des membres n’apparaît pas lorsque vous tapez le nom d’un type ou d’une variable. La liste s’affiche uniquement quand vous tapez l’un des caractères de validation, comme défini dans l’option **Caractères de validation des listes de membres**.
 
- **Désactiver les mots clés des listes de membres** Les mots clés de langage tels que `void`, `class` `switch` n’apparaissent pas dans les suggestions de liste de membres.
+ **Désactiver les mots clés des listes de membres** Les mots clés de langage tels que `void` , `class` , `switch` n’apparaissent pas dans les suggestions de liste de membres.
 
  **Désactiver les extraits de code** de la liste des membres Les extraits de code n’apparaissent pas dans les suggestions de la liste des membres.
 
@@ -126,4 +126,4 @@ En modifiant ces options, vous pouvez changer le comportement lié à IntelliSen
  **Désactiver la mise en surbrillance des références**
 
 ## <a name="see-also"></a>Voir aussi
- [Définition d’options d’éditeur spécifiques du langage](../../ide/reference/setting-language-specific-editor-options.md)
+ [Définition des options de l’éditeur spécifiques à une langue](../../ide/reference/setting-language-specific-editor-options.md)

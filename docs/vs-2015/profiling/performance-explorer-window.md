@@ -15,10 +15,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: a370ae802408ecc821de4cd15824f9d1fca42b75
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68195523"
 ---
 # <a name="performance-explorer-window"></a>Explorateur de performances, fenêtre
@@ -26,7 +26,7 @@ ms.locfileid: "68195523"
 
 La fenêtre **Explorateur de performances** de l’environnement de développement intégré (IDE) de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] vous permet de configurer et de démarrer des sessions de performance à l’aide des outils de profilage [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
- **Spécifications**  
+ **Configuration requise**  
   
 - [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
   
@@ -45,7 +45,7 @@ La fenêtre **Explorateur de performances** de l’environnement de développeme
   
 - **Attacher/Détacher** : affiche la boîte de dialogue **Attacher le profileur au processus** pour un processus en cours d’exécution auquel attacher le profileur.  
   
-## <a name="performance-explorer-window"></a>Fenêtre Explorateur de performances  
+## <a name="performance-explorer-window"></a>Explorateur de performances, fenêtre  
  La fenêtre **Explorateur de performances** contient un contrôle d’arborescence qui affiche les fichiers binaires et les fichiers de données des rapports d’une ou de plusieurs sessions de performance.  
   
 - **Nom de la session** : la racine du contrôle d’arborescence contient le nom de la session. Cliquez avec le bouton droit sur le nom de la session pour définir les propriétés de la session ou pour démarrer l’application cible et le profileur.  
@@ -56,5 +56,5 @@ La fenêtre **Explorateur de performances** de l’environnement de développeme
   
 ## <a name="see-also"></a>Voir aussi  
  [Vues d’ensemble](../profiling/overviews-performance-tools.md)   
- [Configuration de sessions de performance](../profiling/configuring-performance-sessions.md)   
+ [Configuration des sessions de performance](../profiling/configuring-performance-sessions.md)   
  [Contrôle de la collecte de données](../profiling/controlling-data-collection.md)

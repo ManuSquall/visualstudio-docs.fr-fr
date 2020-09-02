@@ -10,11 +10,11 @@ ms.workload:
 - multiple
 author: mikejo5000
 ms.openlocfilehash: 5010761213cf79756cf8da3d2fffe60dd0b61efd
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79302615"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "89315185"
 ---
 # <a name="static-helper-classes"></a>Classes d’assistance statiques
 
@@ -48,7 +48,7 @@ public void TestSomething(int i, int j) {
 }
 ```
 
-**Notes **
+**Remarques**
 
 Le code ci-dessus est équivaut presque à :
 
@@ -87,7 +87,7 @@ Classe statique qui fournit des valeurs d’entrée auxiliaires à un test, qui 
 
 La classe **PexChoose** ne permet pas de déterminer si un test réussit ou échoue pour des valeurs d’entrée particulières. **PexChoose** fournit simplement des valeurs d’entrée, qui s’appellent des *choix*. Il revient toujours à l’utilisateur de limiter les valeurs d’entrée et d’écrire des assertions pour définir quand un test réussit ou échoue.
 
-**Modes de fonctionnement**
+**Modes opératoires**
 
 La classe **PexChoose** peut fonctionner dans deux modes :
 

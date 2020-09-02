@@ -1,5 +1,5 @@
 ---
-title: IDebugEngine2::DestroyProgram - France Microsoft Docs
+title: IDebugEngine2 ::D estroyProgram | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: ce139dd22361d9914693cbe8ad723656ab7d4f26
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80731113"
 ---
 # <a name="idebugengine2destroyprogram"></a>IDebugEngine2::DestroyProgram
-Informe un moteur de débogé (DE) que le programme spécifié a été atypiquement terminé et que le DE devrait nettoyer toutes les références au programme et envoyer un événement de destruction de programme.
+Informe un moteur de débogage (DE) que le programme spécifié a été arrêté de manière atypique et que le DE doit nettoyer toutes les références au programme et envoyer un événement de destruction du programme.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -41,15 +41,15 @@ int DestroyProgram( 
 
 ## <a name="parameters"></a>Paramètres
 `pProgram`\
-[dans] Un objet [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) qui représente le programme qui a été atypiquement terminé.
+dans Objet [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) qui représente le programme qui s’est arrêté de façon inattendue.
 
-## <a name="return-value"></a>Valeur de retour
+## <a name="return-value"></a>Valeur renvoyée
  En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
 ## <a name="remarks"></a>Notes
- Après que cette méthode est appelée, le DE envoie par la suite un [IDebugProgramDestroyEvent2](../../../extensibility/debugger/reference/idebugprogramdestroyevent2.md) événement de retour au gestionnaire de débbug session (SDM).
+ Une fois cette méthode appelée, la méthode DE envoie par la suite un événement [IDebugProgramDestroyEvent2](../../../extensibility/debugger/reference/idebugprogramdestroyevent2.md) au gestionnaire de débogage de session (SDM).
 
- Cette méthode n’est `E_NOTIMPL`pas implémentée (retours) si le DE fonctionne dans le même processus que le programme étant débogé. Cette méthode n’est mise en œuvre que si le DE fonctionne dans le même processus que le SDM.
+ Cette méthode n’est pas implémentée (retourne `E_NOTIMPL` ) si le de s’exécute dans le même processus que le programme en cours de débogage. Cette méthode est implémentée uniquement si le DE s’exécute dans le même processus que le SDM.
 
 ## <a name="see-also"></a>Voir aussi
 - [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md)

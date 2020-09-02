@@ -9,17 +9,17 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 576f403d92ae1c80d9c7fba1757278ae5c5f25ac
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75592592"
 ---
 # <a name="integration-of-xml-literals-with-xml-schema-explorer"></a>Intégration de littéraux XML avec l’Explorateur de schémas XML
 
-Visual Basic prend en charge les littéraux XML, ce qui signifie que vous pouvez incorporer des fragments XML directement dans votre code Visual Basic. Pour plus d’informations, consultez [vue d’ensemble des littéraux XML](/dotnet/visual-basic/programming-guide/language-features/xml/xml-literals-overview).
+Visual Basic prend en charge les littéraux XML, ce qui signifie que vous pouvez incorporer directement des fragments XML dans votre code Visual Basic. Pour plus d’informations, consultez [vue d’ensemble des littéraux XML](/dotnet/visual-basic/programming-guide/language-features/xml/xml-literals-overview).
 
-## <a name="how-to"></a>Procédure
+## <a name="how-to"></a>Procédures
 
 Si un fichier XSD dans votre projet Visual Basic comprend un littéral XML, vous pouvez afficher le jeu de schémas XML dans l' **Explorateur de schémas XML**. Pour afficher le jeu de schémas associé à un littéral XML, cliquez avec le bouton droit sur un nœud XML dans un littéral XML ou une importation d’espace de noms XML, puis sélectionnez **afficher dans l’Explorateur de schémas**.
 
